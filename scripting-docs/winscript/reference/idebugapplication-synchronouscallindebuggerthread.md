@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::SynchronousCallInDebuggerThread | Dokumentacja firmy Microsoft
+title: 'IDebugApplication:: SynchronousCallInDebuggerThread | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d5460efaa3448c7812707e0baa7b2f5afe1d27a0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 134717b6ce30c87ccfb4bbb50ffe958717ae757f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990554"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574587"
 ---
 # <a name="idebugapplicationsynchronouscallindebuggerthread"></a>IDebugApplication::SynchronousCallInDebuggerThread
-Udostępnia mechanizm do obiektu wywołującego uruchomić kod w wątku debugera.  
+Zapewnia mechanizm wywołujący, aby uruchomić kod w wątku debugera.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -40,27 +40,27 @@ HRESULT SynchronousCallInDebuggerThread(
   
 #### <a name="parameters"></a>Parametry  
  `pptc`  
- [in] Obiekt do wywołania.  
+ podczas Obiekt, który ma zostać wywołany.  
   
  `dwParam1`  
- [in] Pierwszy parametr do przekazania do `IDebugThreadCall::ThreadCallHandler` metody.  
+ podczas Pierwszy parametr do przekazania do metody `IDebugThreadCall::ThreadCallHandler`.  
   
  `dwParam2`  
- [in] Drugi parametr do przekazania do `IDebugThreadCall::ThreadCallHandler` metody.  
+ podczas Drugi parametr, który zostanie przekazany do metody `IDebugThreadCall::ThreadCallHandler`.  
   
  `dwParam3`  
- [in] Trzeci parametr do przekazania do `IDebugThreadCall::ThreadCallHandler` metody.  
+ podczas Trzeci parametr do przekazania do metody `IDebugThreadCall::ThreadCallHandler`.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Aparaty języka i hosty zazwyczaj ta metoda umożliwia Implementowanie bezwątkowy obiektów na podstawie ich pojedynczej implementacji wątków.  
+ Aparaty i hosty języka zwykle używają tej metody do implementowania obiektów wolnych wątków na podstawie ich wielowątkowych implementacji.  
   
-## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugApplication](../../winscript/reference/idebugapplication-interface.md)   
+## <a name="see-also"></a>Zobacz także  
+ [IDebugApplication   interfejsu](../../winscript/reference/idebugapplication-interface.md)  
  [IDebugThreadCall, interfejs](../../winscript/reference/idebugthreadcall-interface.md)

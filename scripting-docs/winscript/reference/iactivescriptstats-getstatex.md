@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptStats::GetStatEx | Dokumentacja firmy Microsoft
+title: 'IActiveScriptStats:: GetStatEx | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3e5f25887d8fdd5b5fb774cc2e8619c1a93432c1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2ca7cdb81fd7e228b26bfaa12d45e81335674a74
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442777"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576123"
 ---
 # <a name="iactivescriptstatsgetstatex"></a>IActiveScriptStats::GetStatEx
-Zwraca statystyki skryptu niestandardowego.  
+Zwraca statystykę niestandardowego skryptu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -39,16 +39,16 @@ HRESULT GetStatEx(
   
 #### <a name="parameters"></a>Parametry  
  `guid`  
- [in] Określa statystykę do zwrócenia. Semantyka statystykę odnosi się do określonego identyfikatora GUID jest całkowicie zdefiniowane aparatu.  
+ podczas Określa, która Statystyka ma zostać zwrócona. Semantyka, której Statystyka odnosi się do określonego identyfikatora GUID, ma całkowicie zdefiniowany aparat.  
   
  `pluHi`  
- [out] Wysoka 32 bity 64-bitowa liczba całkowita bez znaku reprezentujący dane statystyczne.  
+ określoną Wysoka 32 bitów 64-bitowej liczby całkowitej bez znaku reprezentująca statystykę.  
   
  `pluLo`  
- [out] Niski 32 bity 64-bitowa liczba całkowita bez znaku reprezentujący dane statystyczne.  
+ określoną Niska 32 bitów z 64-bitową liczbą całkowitą bez znaku reprezentującą statystykę.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -56,11 +56,11 @@ HRESULT GetStatEx(
 |`E_NOTIMPL`|Metoda nie jest zaimplementowana.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda umożliwia aparatu niestandardowego skryptu przywrócić statystyki istotnych niestandardowego hosta.  
+ Ta metoda umożliwia aparatowi skryptu niestandardowego zwracanie statystyk istotnych dla hosta niestandardowego.  
   
 > [!NOTE]
 > Ta metoda nie jest obecnie zaimplementowana.  
   
-## <a name="see-also"></a>Zobacz też  
- [IActiveScriptStats::GetStat](../../winscript/reference/iactivescriptstats-getstat.md)   
+## <a name="see-also"></a>Zobacz także  
+ [IActiveScriptStats:: getstat](../../winscript/reference/iactivescriptstats-getstat.md)    
  [IActiveScriptStats, interfejs](../../winscript/reference/iactivescriptstats-interface.md)

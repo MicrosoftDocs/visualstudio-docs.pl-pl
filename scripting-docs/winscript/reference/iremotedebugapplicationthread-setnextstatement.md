@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationThread::SetNextStatement | Dokumentacja firmy Microsoft
+title: 'IRemoteDebugApplicationThread:: SetNextStatement | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0c4b19322a15e92adcf2609c479af6b21e2078bd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 71e690d0e5b7567aabc88aabde907b67517f12aa
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788144"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575507"
 ---
 # <a name="iremotedebugapplicationthreadsetnextstatement"></a>IRemoteDebugApplicationThread::SetNextStatement
-Wymusza wykonanie kontynuować możliwie blisko kontekst kodu podanego w kontekście danej ramki.  
+Wymusza, aby wykonanie było kontynuowane jak najbliżej danego kontekstu kodu w kontekście danej ramki.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -38,20 +38,20 @@ HRESULT SetNextStatement(
   
 #### <a name="parameters"></a>Parametry  
  `pStackFrame`  
- [in] Obiekt w ramce stosu. Ten argument może być NULL, co oznacza, że należy używać bieżącej ramki stosu.  
+ podczas Obiekt ramki stosu. Ten argument może mieć wartość NULL, co oznacza, że powinna zostać użyta bieżąca Ramka stosu.  
   
  `pCodeContext`  
- [in] Kontekst kodu. Ten argument może być NULL, co oznacza, że bieżący kontekst kodu powinny być używane.  
+ podczas Kontekst kodu. Ten argument może mieć wartość NULL, co oznacza, że powinien zostać użyty bieżący kontekst kodu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda wymusza możliwie blisko kontekst kodu określonego przez kontynuowanie wykonywania `pCodeContext`, w kontekście ramki określonego przez `pStackFrame`. Jedną z tych argumentów może być `NULL`, reprezentujący bieżące ramce lub kontekstu.  
+ Ta metoda wymusza wykonywanie operacji jak najbliżej kontekstu kodu określonego przez `pCodeContext` w kontekście ramki określonej przez `pStackFrame`. Jeden z tych argumentów może być `NULL`, reprezentujący bieżącą ramkę lub kontekst.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IRemoteDebugApplicationThread, interfejs](../../winscript/reference/iremotedebugapplicationthread-interface.md)

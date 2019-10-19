@@ -1,5 +1,5 @@
 ---
-title: Wyliczenie PROFILER_EVENT_MASK | Dokumentacja firmy Microsoft
+title: PROFILER_EVENT_MASK, Wyliczenie | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f7230e65e5559d53e56cf6424a34dd44aa4edda7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c1e1e7f3b604832014cb23245b105756d1126c5b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62831645"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572280"
 ---
-# <a name="profilereventmask-enumeration"></a>Wyliczenie PROFILER_EVENT_MASK
-Określa typy zdarzeń, które powinny być profilowane.  
+# <a name="profiler_event_mask-enumeration"></a>Wyliczenie PROFILER_EVENT_MASK
+Wskazuje typy zdarzeń, które powinny być profilowane.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -44,13 +44,13 @@ typedef enum {
   
 |Element członkowski|Opis|  
 |------------|-----------------|  
-|PROFILER_EVENT_MASK_TRACE_SCRIPT_FUNCTION_CALL|Funkcje profilów, które są zdefiniowane w skrypt napisany przez użytkownika i kod dynamicznych.|  
-|PROFILER_EVENT_MASK_TRACE_NATIVE_FUNCTION_CALL|Profile natywne funkcje, które są definiowane przez silnik wykonywania skryptów.|  
-|PROFILER_EVENT_MASK_TRACE_ALL|Profiluje wszystkie funkcje aparatu skryptów i zdefiniowanych przez użytkownika, z wyłączeniem wywołania do modelu DOM (Document Object).|  
-|PROFILER_EVENT_MASK_TRACE_DOM_FUNCTION_CALL|Funkcje profilów, które wywołują DOM.|  
-|PROFILER_EVENT_MASK_TRACE_ALL_WITH_DOM|Profiluje wszystkie funkcje, w tym wywołaniami DOM.|  
+|PROFILER_EVENT_MASK_TRACE_SCRIPT_FUNCTION_CALL|Funkcje profilów, które są zdefiniowane w skrypcie zapisanym przez użytkownika i dynamicznym kodzie.|  
+|PROFILER_EVENT_MASK_TRACE_NATIVE_FUNCTION_CALL|Profile natywnych funkcji, które są zdefiniowane przez aparat wykonywania skryptów.|  
+|PROFILER_EVENT_MASK_TRACE_ALL|Profiluje wszystkie funkcje aparatu zdefiniowane przez użytkownika i aparat skryptów, wykluczając wywołania do Document Object Model (DOM).|  
+|PROFILER_EVENT_MASK_TRACE_DOM_FUNCTION_CALL|Profile funkcje, które wywołują do modelu DOM.|  
+|PROFILER_EVENT_MASK_TRACE_ALL_WITH_DOM|Profile wszystkie funkcje, w tym wywołania do modelu DOM.|  
   
-## <a name="see-also"></a>Zobacz też  
- [Aktywnego skryptu Profiler stałe, wyliczenia i struktury](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)   
- [IActiveScriptProfilerControl::SetProfilerEventMask](../../winscript/reference/iactivescriptprofilercontrol-setprofilereventmask.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Stałe, wyliczenia i struktury profilera aktywnego skryptu](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)    
+ [IActiveScriptProfilerControl:: SetProfilerEventMask](../../winscript/reference/iactivescriptprofilercontrol-setprofilereventmask.md)    
  [IActiveScriptProfilerControl::StartProfiling](../../winscript/reference/iactivescriptprofilercontrol-startprofiling.md)

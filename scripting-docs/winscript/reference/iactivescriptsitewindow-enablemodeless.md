@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteWindow::EnableModeless | Microsoft Docs
+title: 'IActiveScriptSiteWindow:: EnableModeless | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4f15135273b98a65903a5d03de87c541fc032cce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 756bda6209b6209ff14f6d67fef18faaed0b5618
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992929"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574127"
 ---
 # <a name="iactivescriptsitewindowenablemodeless"></a>IActiveScriptSiteWindow::EnableModeless
-Powoduje, że host włączyć lub wyłączyć wyświetleniem głównego okna, a także Niemodalne okna dialogowe.  
+Powoduje włączenie lub wyłączenie okna głównego oraz niemodalnych okien dialogowych.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,15 +37,15 @@ HRESULT EnableModeless(
   
 #### <a name="parameters"></a>Parametry  
  `fEnable`  
- [in] Flaga, jeśli `TRUE`, umożliwia Niemodalne okna dialogowe i okna głównego lub, jeśli `FALSE`, wyłącza je.  
+ podczas Oflaguj, że jeśli `TRUE`, włącza okno główne i Niemodalne okna dialogowe lub, jeśli `FALSE`, wyłącza je.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Zwraca `S_OK` w przypadku powodzenia lub `E_FAIL` Jeśli wystąpił błąd.  
+ Zwraca `S_OK`, jeśli się powiedzie, lub `E_FAIL` w przypadku wystąpienia błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda jest taka sama jak `IOleInPlaceFrame::EnableModeless` metody.  
+ Ta metoda jest taka sama jak Metoda `IOleInPlaceFrame::EnableModeless`.  
   
- Mogą być zagnieżdżone wywołania tej metody.  
+ Wywołania tej metody mogą być zagnieżdżane.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IActiveScriptSiteWindow](../../winscript/reference/iactivescriptsitewindow.md)

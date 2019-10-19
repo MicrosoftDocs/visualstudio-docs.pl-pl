@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextEvents::onUpdateTextAttributes | Dokumentacja firmy Microsoft
+title: 'IDebugDocumentTextEvents:: onUpdateTextAttributes | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 746339cb281d4d039759f350bb5516456ce142cf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 044eec93516bc4e16044c4bf982b48d91269ebaa
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62989801"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575994"
 ---
 # <a name="idebugdocumenttexteventsonupdatetextattributes"></a>IDebugDocumentTextEvents::onUpdateTextAttributes
-Wskazuje, że atrybuty tekstu skojarzonych z zakresem pozycji podstawowego znak zostały zmienione.  
+Wskazuje, że atrybuty tekstu skojarzone z zakresem podstawowej pozycji znaku uległy zmianie.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -38,20 +38,20 @@ HRESULT onUpdateTextAttributes(
   
 #### <a name="parameters"></a>Parametry  
  `cCharacterPosition`  
- [in] Pozycja znaku pierwszy znak, który zmieniono atrybuty.  
+ podczas Pozycja znaku pierwszego znaku, który został zmieniony przez atrybuty.  
   
  `cNumToUpdate`  
- [in] Liczba znaków w zakresie.  
+ podczas Liczba znaków w zakresie.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda wskazuje, czy zmieniono atrybuty tekstu skojarzonych z zakresem pozycji podstawowego znak.  
+ Ta metoda wskazuje, że atrybuty tekstu skojarzone z zakresem podstawowej pozycji znaku uległy zmianie.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IDebugDocumentTextEvents, interfejs](../../winscript/reference/idebugdocumenttextevents-interface.md)

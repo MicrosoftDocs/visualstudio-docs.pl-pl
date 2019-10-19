@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame::GetCodeContext | Dokumentacja firmy Microsoft
+title: 'IDebugStackFrame:: GetCodeContext | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dadb440017969f3ea4c824c681c726645a5757b0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9b640238b9c1212f477c6a26a9cc251678758f22
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934715"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574287"
 ---
 # <a name="idebugstackframegetcodecontext"></a>IDebugStackFrame::GetCodeContext
-Zwraca bieżący kontekst kodu skojarzone z ramki stosu.  
+Zwraca bieżący kontekst kodu skojarzony z ramką stosu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,17 +37,17 @@ HRESULT GetCodeContext(
   
 #### <a name="parameters"></a>Parametry  
  `ppcc`  
- [out] Kontekst kodu skojarzone z ramki stosu.  
+ określoną Kontekst kodu skojarzony z ramką stosu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda zwraca bieżący kontekst kodu skojarzone z ramki stosu.  
+ Ta metoda zwraca bieżący kontekst kodu skojarzony z ramką stosu.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IDebugStackFrame, interfejs](../../winscript/reference/idebugstackframe-interface.md)

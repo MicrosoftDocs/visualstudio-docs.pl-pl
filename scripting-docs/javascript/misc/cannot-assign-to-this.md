@@ -1,5 +1,5 @@
 ---
-title: Nie można przypisać do "this" | Dokumentacja firmy Microsoft
+title: Nie można przypisać do elementu "This" | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,32 +14,32 @@ ms.assetid: ba2b0a2b-f0f8-4698-b335-a4ab6c166671
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4a4ba5d852a7d131a88930dd66931c026074549b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 73baa77cc63e3a43ac30e70f66081bbc7ade3020
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946592"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572347"
 ---
 # <a name="cannot-assign-to-this"></a>Nie można przypisać do „tego"
-Próba przypisania wartości do **to**. **to** jest [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] — słowo kluczowe, która odwołuje się do albo:
+Podjęto próbę przypisania wartości do **tego**elementu. jest **to** [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] słowo kluczowe odwołujące się do:
 
-- Obiekt metody, w trakcie wykonywania
+- Obiekt aktualnie wykonujący metodę,
 
-- Obiekt globalny, jeśli nie istnieje metoda bieżącego (lub metoda nie należy do żadnego innego obiektu).
+- Obiekt globalny, jeśli nie ma bieżącej metody (lub metoda nie należy do żadnego innego obiektu).
 
-Metoda jest [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] funkcję wywoływaną za pomocą obiektu. Wewnątrz metody **to** — słowo kluczowe jest odwołanie do obiektu, metoda została wywołana przy użyciu (które akurat jest obiekt utworzony przez wywołanie konstruktora klasy za pomocą **nowe** operator).
+Metoda jest funkcją [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)], która jest wywoływana za pomocą obiektu. Wewnątrz metody, słowo kluczowe **this** jest odwołaniem do obiektu, za pomocą którego wywołano metodę (co jest obiektem utworzonym przez wywoływanie konstruktora klasy z operatorem **New** ).
 
-Wewnątrz metody, można użyć **to** do odwoływania się do bieżącego obiektu, ale nie można przypisać nową wartość do **to**.
+Wewnątrz metody, można jej użyć do odwoływania **się do bieżącego** obiektu, ale nie można przypisać do **niego**nowej wartości.
 
 ## <a name="to-correct-this-error"></a>Aby poprawić ten błąd
 
-- Nie należy przypisywać **to**. Aby uzyskać dostęp do właściwości lub metody wystąpień obiektu, należy użyć operatora kropka (np. **circle.radius**).
+- Nie należy próbować przypisywać do **tego**elementu. Aby uzyskać dostęp do właściwości lub metody obiektu skonkretyzowanygo, użyj operatora kropki (np. **Circle. RADIUS**).
 
   > [!NOTE]
-  > Nie można nazwać zmienną użytkownik utworzył **to**; jest [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] słowa zarezerwowanego.
+  > Nie można nazwać **zmiennej utworzonej**przez użytkownika; jest to [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] zastrzeżone słowo.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [this, instrukcja](../../javascript/reference/this-statement-javascript.md)
 - [Rozwiązywanie problemów ze skryptami](../../javascript/advanced/troubleshooting-your-scripts-javascript.md)

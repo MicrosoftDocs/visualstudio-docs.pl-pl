@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationEvents::OnSetName | Dokumentacja firmy Microsoft
+title: IRemoteDebugApplicationEvents::Exception | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7cf72bb02a1ef934fcbf6a4fa32c9572a6e1afa7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cb2d3b301888015c2815725c5d1c7903758e319a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788435"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571936"
 ---
 # <a name="iremotedebugapplicationeventsonsetname"></a>IRemoteDebugApplicationEvents::OnSetName
-Obsługuje zdarzenie nazwę zestawu.  
+Obsługuje zdarzenie dotyczące ustawienia nazwy.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,17 +37,17 @@ HRESULT OnSetName(
   
 #### <a name="parameters"></a>Parametry  
  `pstrName`  
- [in] Nowa nazwa.  
+ podczas Nowa nazwa.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda obsługuje zdarzenie nazwę zestawu.  
+ Ta metoda obsługuje zdarzenie dotyczące ustawienia nazwy.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IRemoteDebugApplicationEvents, interfejs](../../winscript/reference/iremotedebugapplicationevents-interface.md)

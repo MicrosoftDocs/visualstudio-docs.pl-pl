@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::SetBody | Dokumentacja firmy Microsoft
+title: 'IScriptEntry:: setbody | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 46ebccb57885480d34d79cbd27e99dc6a35b343d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1af865c8366481204ee413377a083b09d8c97383
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787648"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575381"
 ---
 # <a name="iscriptentrysetbody"></a>IScriptEntry::SetBody
-Ustawia tekst, który znajduje się w treści `IScriptEntry` blok skryptu albo `IScriptScriptlet` scriptlet.  
+Ustawia tekst, który znajduje się w treści bloku skryptu `IScriptEntry` lub `IScriptScriptlet` Scriptlet.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,14 +37,14 @@ HRESULT SetBody(
   
 #### <a name="parameters"></a>Parametry  
  `psz`  
- [in] Aby uzyskać `IScriptEntry` blok skryptu `psz` jest tekstem w tagów skryptu.  
+ podczas Dla bloku skryptu `IScriptEntry` `psz` jest tekstem ujętym w Tagi skryptu.  
   
- Aby uzyskać `IScriptEntry` bloku funkcji `psz` stanowi treści funkcji.  
+ Dla bloku funkcji `IScriptEntry` `psz` jest treścią funkcji.  
   
- Aby uzyskać `IScriptScriptlet` obiektu (pochodzącą od `IScriptEntry`), `psz` znajduje się tekst skryptu scriptlet.  
+ Dla obiektu `IScriptScriptlet` (który pochodzi z `IScriptEntry`), `psz` jest tekstem skryptu Scriptlet.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ @No__t_0. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -52,6 +52,6 @@ HRESULT SetBody(
   
 ## <a name="remarks"></a>Uwagi  
   
-## <a name="see-also"></a>Zobacz też  
- [Interfejs IScriptEntry](../../winscript/reference/iscriptentry-interface.md)   
+## <a name="see-also"></a>Zobacz także  
+ [IScriptEntry   interfejsu](../../winscript/reference/iscriptentry-interface.md)  
  [IScriptEntry::GetBody](../../winscript/reference/iscriptentry-getbody.md)

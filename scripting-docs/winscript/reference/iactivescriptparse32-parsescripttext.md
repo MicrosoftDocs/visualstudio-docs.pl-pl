@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptParse32::ParseScriptText | Microsoft Docs
+title: IActiveScriptParse32::P arseScriptText | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -10,15 +10,15 @@ ms.assetid: f33e454c-69d8-4cab-9150-d1e7fd04786d
 caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 782c1d7bd2dd4c0708418ffd3e69c339dd993fde
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ec4e9539900ee39e99927bb9055a8c107f864653
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62954859"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574894"
 ---
-# <a name="iactivescriptparse32parsescripttext"></a>IActiveScriptParse32::ParseScriptText
-Analizuje danego skryptletu kodu, dodając deklaracje do przestrzeni nazw i oceniając kod, zgodnie z potrzebami.  
+# <a name="iactivescriptparse32parsescripttext"></a>IActiveScriptParse32::P arseScriptText
+Analizuje daną Scriptlet kodu, dodając deklaracje do przestrzeni nazw i oceniając kod zgodnie z potrzebami.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -40,46 +40,46 @@ HRESULT ParseScriptText(
   
 |||  
 |-|-|  
-|`pstrCode`|[in] Adres tekstu scriptlet do oceny. Interpretacja tego ciągu zależy od języka skryptów.|  
-|`pstrItemName`|[in] Adres nazwy elementu który podaje kontekst, w którym ma zostać obliczone scriptlet. Jeśli ten parametr ma wartość NULL, kod jest oceniany w kontekście globalnym silnika wykonywania skryptów.|  
-|`punkContext`|[in] Adres obiektu kontekstu. Ten obiekt jest zarezerwowany do użytku w środowisku debugowania, gdzie taki kontekst może być świadczona przez debuger do reprezentowania aktywnego kontekstu wykonywania. Jeśli ten parametr ma wartość NULL, aparat używa parametru `pstrItemName` do zidentyfikowania kontekstu.|  
-|`pstrDelimiter`|[in] Adres ogranicznika końcowego scriptlet. Gdy `pstrCode` jest analizowany ze strumienia tekstu, host zazwyczaj używa rozdzielnika, takiego jak dwa pojedyncze cudzysłowy ("), aby wykrywać koniec scriptletu. Ten parametr określa ogranicznik używany przez hosta, dzięki czemu silnik wykonywania skryptów zapewnić pierwotne przetwarzanie warunkowe (na przykład, zastępując pojedynczy znak cudzysłowu ['] dwoma pojedynczymi cudzysłowami do użytku w roli ogranicznika). Dokładnie jak (i czy) silnik wykonywania skryptów korzysta z tych informacji zależy od silnika wykonywania skryptów. Ustaw ten parametr na `NULL` Jeśli host nie korzystał z ogranicznika do oznaczenia końca scriptlet.|  
-|`dwSourceContextCookie`|[in] Plik cookie używany do debugowania.|  
-|`ulStartingLineNumber`|[in] Liczony od zera wartość, która określa, która linia będzie rozpoczynać analizę.|  
-|`dwFlags`|[in] Flagi skojarzone ze scriptlet. Może być kombinacją tych wartości:|  
+|`pstrCode`|podczas Adres tekstu Scriptlet do obliczenia. Interpretacja tego ciągu zależy od języka skryptowego.|  
+|`pstrItemName`|podczas Adres nazwy elementu, który zawiera kontekst, w którym ma zostać obliczony Scriptlet. Jeśli ten parametr ma wartość NULL, kod jest oceniany w kontekście globalnym aparatu skryptów.|  
+|`punkContext`|podczas Adres obiektu kontekstu. Ten obiekt jest zarezerwowany do użytku w środowisku debugowania, gdzie taki kontekst może być dostarczony przez debuger do reprezentowania aktywnego kontekstu czasu wykonywania. Jeśli ten parametr ma wartość NULL, aparat używa `pstrItemName` do identyfikowania kontekstu.|  
+|`pstrDelimiter`|podczas Adres ogranicznika końca Scriptlet. Gdy `pstrCode` jest analizowany ze strumienia tekstu, Host zwykle używa ogranicznika, takiego jak dwa znaki pojedynczego cudzysłowu (' '), aby wykryć koniec Scriptlet. Ten parametr określa ogranicznik używany przez hosta, który umożliwia aparatowi obsługi skryptów dostarczenie pewnych warunkowego przetwarzania wstępnego (na przykład zastępowanie pojedynczego cudzysłowu ['] dwoma pojedynczymi cudzysłowami do użycia jako ogranicznika). Dokładnie tak, jak (i jeśli) aparat skryptów używa tych informacji, zależy od aparatu skryptów. Ustaw ten parametr, aby `NULL`, Jeśli host nie używał ogranicznika do oznaczenia końca Scriptlet.|  
+|`dwSourceContextCookie`|podczas Plik cookie używany do celów debugowania.|  
+|`ulStartingLineNumber`|podczas Wartość zerowa, która określa, w którym wierszu rozpocznie się analizowanie.|  
+|`dwFlags`|podczas Flagi skojarzone z Scriptlet. Może być kombinacją następujących wartości:|  
   
 |Wartość|Znaczenie|  
 |-----------|-------------|  
-|SCRIPTTEXT_ISEXPRESSION|Jeśli rozróżnienie między wyrażeniem obliczeniowe oraz instrukcji jest ważne, ale składniowo niejednoznaczne w języku skryptów, ta flaga Określa, że skryptlet ma być interpretowany jako wyrażenie, a nie jako instrukcja lub lista instrukcji. Domyślnie przyjęto instrukcje, chyba że odpowiedni wybór można ustalić na podstawie składni tekstu scriptlet.|  
-|SCRIPTTEXT_ISPERSISTENT|Wskazuje, że kod dodany podczas tego wywołania powinien zostać zapisany, jeśli silnik wykonywania skryptów jest zapisany (na przykład poprzez wywołanie `IPersist*::Save`), lub jeśli silnik wykonywania skryptów jest resetowany za pomocą przejścia z powrotem do stanu zainicjowania.|  
-|SCRIPTTEXT_ISVISIBLE|Wskazuje, że tekst skryptu powinien być widoczny (i w związku z tym, możliwy do wywołania według nazwy) jako metoda globalna w przestrzeni nazw skryptu.|  
+|SCRIPTTEXT_ISEXPRESSION|Jeśli rozróżnienie między wyrażeniem obliczeniowym a instrukcją jest ważne, ale syntaktycznie niejednoznaczne w języku skryptu, ta flaga określa, że Scriptlet ma być interpretowana jako wyrażenie, a nie jako instrukcja lub Lista instrukcji. Domyślnie instrukcje są zakładane, chyba że odpowiedni wybór można ustalić na podstawie składni tekstu Scriptlet.|  
+|SCRIPTTEXT_ISPERSISTENT|Wskazuje, że kod dodany podczas tego wywołania powinien zostać zapisany, jeśli aparat skryptów jest zapisywany (na przykład przez wywołanie `IPersist*::Save`) lub jeśli aparat skryptów jest resetowany w wyniku przejścia z powrotem do stanu zainicjowania.|  
+|SCRIPTTEXT_ISVISIBLE|Wskazuje, że tekst skryptu powinien być widoczny (i w związku z tym wywoływany przez nazwę) jako metoda globalna w przestrzeni nazw skryptu.|  
   
 |||  
 |-|-|  
-|`pvarResult`|[out] Adres buforu, który otrzymuje wyniki przetwarzania scriptlet lub `NULL` Jeśli wywołujący nie oczekuje żadnego wyniku (czyli wartość SCRIPTTEXT_ISEXPRESSION nie jest ustawiona).|  
-|`pexcepinfo`|[out] Adres struktury, która otrzymuje informacje o wyjątku. Ta struktura jest wypełniana, jeśli `IActiveScriptParse::ParseScriptText` zwraca DISP_E_EXCEPTION.|  
+|`pvarResult`|określoną Adres buforu, który odbiera wyniki przetwarzania Scriptlet lub `NULL`, jeśli obiekt wywołujący oczekuje braku wyniku (oznacza to, że wartość SCRIPTTEXT_ISEXPRESSION nie jest ustawiona).|  
+|`pexcepinfo`|określoną Adres struktury, która otrzymuje informacje o wyjątku. Ta struktura jest wypełniana, jeśli `IActiveScriptParse::ParseScriptText` zwraca DISP_E_EXCEPTION.|  
   
 ## <a name="return-value"></a>Wartość zwracana  
  Zwraca jedną z następujących wartości:  
   
 |Wartość zwracana|Znaczenie|  
 |------------------|-------------|  
-|`S_OK`|Powodzenie.|  
-|`DISP_E_EXCEPTION`|Wystąpił wyjątek podczas przetwarzania scriptlet. `pexcepinfo` Parametr zawiera informacje o wyjątku.|  
-|`E_INVALIDARG`|Argument ten był nieprawidłowy.|  
+|`S_OK`|Prawnego.|  
+|`DISP_E_EXCEPTION`|Wystąpił wyjątek podczas przetwarzania Scriptlet. @No__t_0 parametr zawiera informacje o wyjątku.|  
+|`E_INVALIDARG`|Nieprawidłowy argument.|  
 |`E_POINTER`|Określono nieprawidłowy wskaźnik.|  
-|`E_NOTIMPL`|Ta metoda nie jest obsługiwana. Aparat skryptów nie obsługuje oceny wyrażeń lub instrukcji środowiska wykonawczego.|  
-|`E_UNEXPECTED`|Nie oczekiwano wywołania (na przykład aparat skryptów jest w stanie niezainicjowanym lub zamkniętym lub została ustawiona flaga SCRIPTTEXT_ISEXPRESSION i aparat skryptów znajduje się w stanie zainicjowanym).|  
-|`OLESCRIPT_E_SYNTAX`|Wystąpił nieokreślony błąd składniowy w scriptlet.|  
+|`E_NOTIMPL`|Ta metoda nie jest obsługiwana. Aparat obsługi skryptów nie obsługuje oceny wyrażeń ani instrukcji w czasie wykonywania.|  
+|`E_UNEXPECTED`|Wywołanie nie było oczekiwane (na przykład aparat skryptów jest w stanie niezainicjowanym lub zamkniętym albo ustawiono flagę SCRIPTTEXT_ISEXPRESSION, a aparat skryptów jest w stanie zainicjowania).|  
+|`OLESCRIPT_E_SYNTAX`|Wystąpił nieokreślony błąd składniowy w Scriptlet.|  
   
 ## <a name="remarks"></a>Uwagi  
- Jeśli silnik wykonywania skryptów jest w stanie zainicjowania, żaden kod faktycznie nie będzie oceniany podczas tego wywołania; zamiast takiego kodu jest w kolejce i wykonywany, gdy silnik wykonywania skryptów jest przenoszone do (lub przez) stanu uruchomienia. Ponieważ wykonanie nie jest dozwolone w stanie zainicjowania, jest błędem jest wywołanie tej metody z flagą SCRIPTTEXT_ISEXPRESSION, gdy jest w stanie inicjowania.  
+ Jeśli aparat skryptów jest w stanie zainicjowania, żaden kod nie będzie oceniany w trakcie tego wywołania; Zamiast tego kod jest umieszczany w kolejce i wykonywany, gdy aparat wykonywania skryptów jest przenoszony do (lub przez) stan uruchomienia. Ponieważ wykonywanie nie jest dozwolone w stanie zainicjowania, jest to błąd wywołania tej metody z flagą SCRIPTTEXT_ISEXPRESSION, gdy stan jest zainicjowany.  
   
- Scriptlet może być wyrażeniem, listę instrukcji lub czymkolwiek dozwolonym przez język skryptów. Na przykład, ta metoda jest używana podczas obliczania elementu HTML \<SCRIPT > tag, który umożliwia instrukcji do wykonania, ponieważ ta strona jest generowana, a nie tylko wkompilowywanie ich w stan skryptu.  
+ Scriptlet może być wyrażeniem, listą instrukcji lub wszelkimi dozwolonymi przez język skryptów. Na przykład ta metoda jest używana podczas obliczania znacznika > HTML \<SCRIPT, który umożliwia wykonywanie instrukcji, gdy jest tworzona strona HTML, a nie tylko kompiluje je do stanu skryptu.  
   
- Kod przekazany do tej metody musi być pełną, prawidłową częścią kodu. Na przykład w języku VBScript jest niedozwolone wywołanie tej metody raz z Sub Function(x) i następnie po raz drugi z `End Sub`. Parser nie musi czekać na drugie wywołanie zakończyć podprocedurę, ale musi wygenerować błąd analizy, ponieważ deklarację podprocedury rozpoczęte, ale nie zakończona.  
+ Kod przesłany do tej metody musi być prawidłowym, kompletnym fragmentem kodu. Na przykład w języku VBScript nie jest dozwolone wywoływanie tej metody raz z funkcją sub (x), a następnie za drugim razem z `End Sub`. Analizator nie może czekać na drugie wywołanie do wykonania procedury podrzędnej, ale raczej nie musi wygenerować błędu analizy, ponieważ deklaracja procedury podrzędnej została uruchomiona, ale nie została ukończona.  
   
- Aby uzyskać więcej informacji na temat stanów skryptów, zobacz sekcję stany aparatu obsługi skryptów [aparatów skryptów Windows](../../winscript/windows-script-engines.md).  
+ Więcej informacji o Stanach skryptów znajduje się w sekcji Stany aparatu skryptów w [aparatach skryptów systemu Windows](../../winscript/windows-script-engines.md).  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IActiveScriptParse32](../../winscript/reference/iactivescriptparse32.md)

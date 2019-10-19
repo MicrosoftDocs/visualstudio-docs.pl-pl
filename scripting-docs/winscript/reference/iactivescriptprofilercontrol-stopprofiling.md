@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerControl::StopProfiling | Microsoft Docs
+title: 'IActiveScriptProfilerControl:: StopProfiling | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 750693db9aa809e6b3521f0312cebcf45d8d720d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: da5900678093d57b3c995ac3bca8464ccd612fb2
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993011"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571541"
 ---
 # <a name="iactivescriptprofilercontrolstopprofiling"></a>IActiveScriptProfilerControl::StopProfiling
-Zatrzymuje profilowanie na silnik wykonywania skryptów. Ta metoda wywołuje [IActiveScriptProfilerCallback::Shutdown](../../winscript/reference/iactivescriptprofilercallback-shutdown.md) na obiekt profiler i następnie zwalnia go.  
+Powoduje zatrzymanie profilowania w aparacie obsługi skryptów. Ta metoda wywołuje [IActiveScriptProfilerCallback:: Shutdown](../../winscript/reference/iactivescriptprofilercallback-shutdown.md) obiektu profilera, a następnie zwalnia go.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -34,7 +34,7 @@ HRESULT StopProfiling(
   
 #### <a name="parameters"></a>Parametry  
  `hrShutdownReason`  
- [in] Wartość HRESULT, które zostaną przekazane jako parametr do [IActiveScriptProfilerCallback::Shutdown](../../winscript/reference/iactivescriptprofilercallback-shutdown.md) metody obiektu profilera.  
+ podczas Wartość HRESULT, która ma zostać przeniesiona jako parametr do metody [IActiveScriptProfilerCallback:: Shutdown](../../winscript/reference/iactivescriptprofilercallback-shutdown.md) obiektu profilera.  
   
 ## <a name="return-value"></a>Wartość zwracana  
  Zwraca wartość HRESULT. Dopuszczalne są następujące wartości:  
@@ -42,7 +42,7 @@ HRESULT StopProfiling(
 |Wartość zwracana|Znaczenie|  
 |------------------|-------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
-|`ACTIVPROF_E_PROFILER_ABSENT`|Profilowanie nie jest włączona.|  
+|`ACTIVPROF_E_PROFILER_ABSENT`|Profilowanie nie jest włączone.|  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IActiveScriptProfilerControl, interfejs](../../winscript/reference/iactivescriptprofilercontrol-interface.md)

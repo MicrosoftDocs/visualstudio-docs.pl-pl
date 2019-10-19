@@ -1,5 +1,5 @@
 ---
-title: Interfejs IDebugExtendedProperty | Dokumentacja firmy Microsoft
+title: Interfejs IDebugExtendedProperty | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,26 +13,26 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c1e042f75cf0ab0d8c4807c0c0db6ce04e8423f9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 24a93cb3bd230e2489b58d78f6d414ba1df006ed
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945877"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572492"
 ---
 # <a name="idebugextendedproperty-interface"></a>Interfejs IDebugExtendedProperty
-Rozszerza `IDebugProperty` interfejsu.  
+Rozszerza interfejs `IDebugProperty`.  
   
-## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
- Oprócz metod odziedziczone `IDebugProperty`, ten interfejs udostępnia następujące metody.  
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych  
+ Oprócz metod dziedziczonych z `IDebugProperty` ten interfejs uwidacznia następujące metody.  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[IDebugExtendedProperty::GetExtendedPropertyInfo](../../winscript/reference/idebugextendedproperty-getextendedpropertyinfo.md)|Pobiera `ExtendedDebugPropertyInfo` , który opisuje to `IDebugExtendedProperty``.`|  
-|[IDebugExtendedProperty::EnumExtendedMembers](../../winscript/reference/idebugextendedproperty-enumextendedmembers.md)|Wylicza członkowie właściwości rozszerzonej.|  
+|[IDebugExtendedProperty::GetExtendedPropertyInfo](../../winscript/reference/idebugextendedproperty-getextendedpropertyinfo.md)|Pobiera `ExtendedDebugPropertyInfo` opisujące to `IDebugExtendedProperty``.`|  
+|[IDebugExtendedProperty::EnumExtendedMembers](../../winscript/reference/idebugextendedproperty-enumextendedmembers.md)|Wylicza elementy członkowskie właściwości rozszerzonej.|  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: dbgprop.h  
+ Nagłówek: dbgprop. h  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IDebugProperty, interfejs](../../winscript/reference/idebugproperty-interface.md)

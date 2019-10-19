@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHost::OnCreateDocumentContext | Dokumentacja firmy Microsoft
+title: 'IDebugDocumentHost:: OnCreateDocumentContext | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a3b614cdc6aad17ab3a4f6e83927b59390005ac2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3fdfa64f66288cba47dec7c498db15238e55f954
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971098"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72569111"
 ---
 # <a name="idebugdocumenthostoncreatedocumentcontext"></a>IDebugDocumentHost::OnCreateDocumentContext
-Powiadamia hosta, że nowy kontekst dokumentu jest tworzona i Zezwalaj hostowi na opcjonalnie zwracać kontrolowanie nieznane w nowym kontekście.  
+Powiadamia hosta o tworzeniu nowego kontekstu dokumentu i umożliwia hostowi opcjonalne zwrócenie kontroli nieznanej dla nowego kontekstu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,18 +37,18 @@ HRESULT OnCreateDocumentContext(
   
 #### <a name="parameters"></a>Parametry  
  `ppunkOuter`  
- [out] Obiekt, który kontroluje nowy kontekst.  
+ określoną Obiekt, który steruje nowym kontekstem.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
-|`E_NOTIMPL`|Host nie udostępnia obiekt kontroli.|  
+|`E_NOTIMPL`|Host nie udostępnia obiektu sterującego.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda umożliwia hosta do dodawania nowych funkcji do dokumentów dostarczonych przez pomocnika kontekstów. Ta metoda może zwrócić **E_NOTIMPL** lub zewnętrzny obiekt z wartością null, w którym obiekt wywołujący jest odpowiedzialny za tworzenie kontekstu.  
+ Ta metoda umożliwia hostowi Dodawanie nowych funkcji do kontekstów dokumentu dostarczonych przez pomocnika. Ta metoda może zwrócić **E_NOTIMPL** lub pusty obiekt zewnętrzny, w takim przypadku wywołujący jest odpowiedzialny za tworzenie kontekstu.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IDebugDocumentHost, interfejs](../../winscript/reference/idebugdocumenthost-interface.md)

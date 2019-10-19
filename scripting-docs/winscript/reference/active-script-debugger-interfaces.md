@@ -1,5 +1,5 @@
 ---
-title: Interfejsy debugera aktywnego skryptu | Dokumentacja firmy Microsoft
+title: Interfejsy debugera aktywnego skryptu | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -14,21 +14,21 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ed8ff0361396deaaffd46f14ca1fc38869988593
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 477374d93e4d8d5139197dcd49fef0e930e5ff32
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422458"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572699"
 ---
 # <a name="active-script-debugger-interfaces"></a>Interfejsy debugera aktywnego skryptu
-Pliki nagłówkowe activdbg.h i zestawie activdbg100.h zapewniają interfejsy, wyliczenia i struktury wymienione w tej sekcji. Są one do debugowania skryptu.  
+Pliki nagłówkowe activdbg. h i activdbg100. h zapewniają interfejsy, wyliczenia i struktury wymienione w tej sekcji. Są one przeznaczone do debugowania skryptów.  
   
 > [!NOTE]
-> `IJSDebug*` Interfejsów i `IEnumJsStackFrames` interfejsu pierwszy zostały wydane w programie Internet Explorer 11 dla debugowanie kodu natywnego za pomocą skryptu. Plik nagłówka dla tych interfejsów znajduje się jscript9diag.h.  
+> Interfejsy `IJSDebug*` i interfejs `IEnumJsStackFrames` zostały najpierw wydane w programie Internet Explorer 11 do debugowania kodu natywnego za pomocą skryptu. Plik nagłówkowy dla tych interfejsów to Jscript9diag. h.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- Zezwalaj na następujących interfejsów, niezależny od języka, niezależny od hosta debugowania:  
+ Następujące interfejsy zezwalają na niezależny od języka, debugowanie neutralne od hosta:  
   
 - [Stałe, wyliczenia i struktury debugera aktywnego skryptu](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)  
   
@@ -178,9 +178,9 @@ Pliki nagłówkowe activdbg.h i zestawie activdbg100.h zapewniają interfejsy, w
   
 - [IWebAppDiagnosticsObjectInitialization, interfejs](../../winscript/reference/iwebappdiagnosticsobjectinitialization-interface.md)  
   
-  W poniższej sekcji przedstawiono stałe, wyliczenia i struktury, używane do debugowania:  
+  W poniższej sekcji wymieniono stałe, wyliczenia i struktury używane do debugowania:  
   
 - [Stałe, wyliczenia i struktury debugera aktywnego skryptu](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Przegląd debugowania aktywnego skryptu](../../winscript/active-script-debugging-overview.md)

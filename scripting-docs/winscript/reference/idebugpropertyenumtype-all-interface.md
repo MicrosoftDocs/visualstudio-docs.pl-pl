@@ -1,5 +1,5 @@
 ---
-title: Interfejs IDebugPropertyEnumType_All | Dokumentacja firmy Microsoft
+title: Interfejs IDebugPropertyEnumType_All | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b9ddd9fb24aa83a6027d6d705de6a748a96b2e28
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 737d1c5d4279a0a727f79326749dbf14a2fcd4c7
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979113"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574316"
 ---
-# <a name="idebugpropertyenumtypeall-interface"></a>Interfejs IDebugPropertyEnumType_All
-`IDebugPropertyEnumType` Interfejsy są zdefiniowane, tak aby każda z ich IID mogą być przekazywane jako filtr, aby `IDebugProperty::EnumMembers` podczas żądania odpowiedniego modułu wyliczającego.  
+# <a name="idebugpropertyenumtype_all-interface"></a>Interfejs IDebugPropertyEnumType_All
+Interfejsy `IDebugPropertyEnumType` są zdefiniowane w taki sposób, że każdy z ich IID można przesłać jako filtr do `IDebugProperty::EnumMembers` podczas żądania odpowiedniego modułu wyliczającego.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -33,13 +33,13 @@ ms.locfileid: "62979113"
 IDebugPropertyEnumType_All : IUnknown  
 ```  
   
-## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[IDebugPropertyEnumType_All::GetName](../../winscript/reference/idebugpropertyenumtype-all-getname.md)|Zwraca ciąg tekst opisujący nazwę|  
+|[IDebugPropertyEnumType_All::GetName](../../winscript/reference/idebugpropertyenumtype-all-getname.md)|Zwraca ciąg tekstowy opisujący nazwę|  
   
- Następujące interfejsy dziedziczyć `IDebugPropertyEnumType_All`, i mieć żadnych dodatkowych metod.  
+ Poniższe interfejsy dziedziczą z `IDebugPropertyEnumType_All` i nie mają żadnych dodatkowych metod.  
   
 ```cpp
 IDebugPropertyEnumType_Arguments : IDebugPropertyEnumType_All   
@@ -48,5 +48,5 @@ IDebugPropertyEnumType_LocalsPlusArgs : IDebugPropertyEnumType_All 
 IDebugPropertyEnumType_Registers : IDebugPropertyEnumType_All  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IDebugProperty::EnumMembers](../../winscript/reference/idebugproperty-enummembers.md)

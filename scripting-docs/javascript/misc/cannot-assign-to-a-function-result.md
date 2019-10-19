@@ -1,5 +1,5 @@
 ---
-title: Nie można przypisać do wyniku funkcji | Dokumentacja firmy Microsoft
+title: Nie można przypisać do wyniku funkcji | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,15 +14,15 @@ ms.assetid: ee8ffb3a-1451-4cb3-99bf-5e9cf8b77d79
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 226056f139e45f432d757aff8f8774b013742de3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aca09fe3b516fbb8f27def982bf34a22d33d4ada
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946605"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572363"
 ---
 # <a name="cannot-assign-to-a-function-result"></a>Nie można przypisać do wyniku funkcji
-Nastąpiła próba przypisania wartości do wyniku funkcji. Wynik funkcji można przypisać do zmiennej, ale nie można użyć jako zmienną. Jeśli chcesz przypisać nową wartość do samej funkcji, należy pominąć nawiasów (operator wywołania funkcji). W poniższym przykładzie pokazano sytuację, w którym ten błąd jest generowany.  
+Podjęto próbę przypisania wartości do wyniku funkcji. Wynik funkcji można przypisać do zmiennej, ale nie może być używany jako zmienna. Jeśli chcesz przypisać nową wartość do samej funkcji, Pomiń nawiasy (operator wywołania funkcji). Poniższy przykład demonstruje sytuację, w której ten błąd jest generowany.  
   
 ```js
 myFunction() = 42;  // Attempting to assign the value 42 to the result of the function call.  
@@ -30,19 +30,19 @@ myFunction() = 42;  // Attempting to assign the value 42 to the result of the fu
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
-- Nie używaj wartość wyniku wywołania funkcji jako coś, co możesz *przypisać*. Wynik wywołania funkcji można przypisać *ze zmienną* chociaż.  
+- Nie należy używać wartości wyniku wywołania funkcji jako elementu, do którego można *przypisać*. Wynik wywołania funkcji można przypisać *do zmiennej,* chociaż.  
   
     ```JavaScript  
     myVar = myFunction(42);  
     ```  
   
-- Alternatywnie można przypisać funkcja sam (a nie jej wartość zwracana) do zmiennej.  
+- Alternatywnie można przypisać do zmiennej samą funkcję (a nie jej wartość zwrotną).  
   
     ```JavaScript  
     myFunction = new Function("return 42;");  
     ```  
   
-## <a name="see-also"></a>Zobacz też  
- [Function — obiekt](../../javascript/reference/function-object-javascript.md)   
- [Pisanie kodu JavaScript](../../javascript/writing-javascript-code.md)   
+## <a name="see-also"></a>Zobacz także  
+ @No__t_1 [obiektu funkcji](../../javascript/reference/function-object-javascript.md)  
+ [Pisanie kodu JavaScript](../../javascript/writing-javascript-code.md)    
  [Funkcje](../../javascript/functions-javascript.md)

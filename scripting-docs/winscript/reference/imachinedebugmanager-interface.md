@@ -1,5 +1,5 @@
 ---
-title: Interfejs IMachineDebugManager | Dokumentacja firmy Microsoft
+title: Interfejs IMachineDebugManager | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,25 +13,25 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6db8989fc6c932723a9b95017854635396b0deda
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9d491b03ba04d346e3a14a08d5e2b6b9d34c7d97
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977646"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573918"
 ---
 # <a name="imachinedebugmanager-interface"></a>Interfejs IMachineDebugManager
-Podstawowy interfejs Menedżer debugowania komputera. Ten interfejs jest podobne do `IMachineDebugManagerCookie` interfejsu.  
+Podstawowy interfejs Menedżera debugowania maszynowego. Ten interfejs jest podobny do interfejsu `IMachineDebugManagerCookie`.  
   
- Oprócz metod odziedziczone `IUnknown`, `IMachineDebugManager` interfejsu udostępnia następujące metody.  
+ Oprócz metod dziedziczonych z `IUnknown` interfejs `IMachineDebugManager` udostępnia następujące metody.  
   
-## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[IMachineDebugManager::AddApplication](../../winscript/reference/imachinedebugmanager-addapplication.md)|Dodaje aplikację do uruchamiania listy aplikacji.|  
-|[IMachineDebugManager::RemoveApplication](../../winscript/reference/imachinedebugmanager-removeapplication.md)|Usuwa aplikację z uruchomionych listy aplikacji.|  
-|[IMachineDebugManager::EnumApplications](../../winscript/reference/imachinedebugmanager-enumapplications.md)|Zwraca moduł wyliczający bieżącą listę uruchomionych aplikacji.|  
+|[IMachineDebugManager::AddApplication](../../winscript/reference/imachinedebugmanager-addapplication.md)|Dodaje aplikację do listy uruchomionych aplikacji.|  
+|[IMachineDebugManager::RemoveApplication](../../winscript/reference/imachinedebugmanager-removeapplication.md)|Usuwa aplikację z listy uruchomionych aplikacji.|  
+|[IMachineDebugManager::EnumApplications](../../winscript/reference/imachinedebugmanager-enumapplications.md)|Zwraca moduł wyliczający bieżącej listy uruchomionych aplikacji.|  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IMachineDebugManagerCookie, interfejs](../../winscript/reference/imachinedebugmanagercookie-interface.md)

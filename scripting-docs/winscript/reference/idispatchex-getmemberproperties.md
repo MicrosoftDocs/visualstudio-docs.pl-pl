@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::GetMemberProperties | Dokumentacja firmy Microsoft
+title: 'IDispatchEx:: GetMemberProperties | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f607e06fe3c898a6839c0bbd2d51edee1f0ffb2c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8016eef7b6e0da9b9fc88695db845cba7f608ff3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000798"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574099"
 ---
 # <a name="idispatchexgetmemberproperties"></a>IDispatchEx::GetMemberProperties
 Pobiera właściwości elementu członkowskiego.  
@@ -39,45 +39,45 @@ HRESULT GetMemberProperties(
   
 #### <a name="parameters"></a>Parametry  
  `id`  
- Określa element członkowski. Używa `GetDispID` lub `GetNextDispID` można uzyskać identyfikatora wysyłania.  
+ Określa element członkowski. Używa `GetDispID` lub `GetNextDispID` do uzyskania identyfikatora wysyłania.  
   
  `grfdexFetch`  
- Określa właściwości, które można pobrać. Może to być kombinacją wartości na liście `pgrfdex` i/lub kombinacją następujących wartości:  
+ Określa, które właściwości mają być pobierane. Może to być kombinacja wartości wymienionych w obszarze `pgrfdex` i/lub kombinacji następujących wartości:  
   
 |Wartość|Znaczenie|  
 |-----------|-------------|  
-|grfdexPropCanAll|Łączy fdexPropCanGet, fdexPropCanPut, fdexPropCanPutRef, fdexPropCanCall fdexPropCanConstruct i fdexPropCanSourceEvents.|  
-|grfdexPropCannotAll|Łączy fdexPropCannotGet, fdexPropCannotPut, fdexPropCannotPutRef, fdexPropCannotCall fdexPropCannotConstruct i fdexPropCannotSourceEvents.|  
+|grfdexPropCanAll|Łączy fdexPropCanGet, fdexPropCanPut, fdexPropCanPutRef, fdexPropCanCall, fdexPropCanConstruct i fdexPropCanSourceEvents.|  
+|grfdexPropCannotAll|Łączy fdexPropCannotGet, fdexPropCannotPut, fdexPropCannotPutRef, fdexPropCannotCall, fdexPropCannotConstruct i fdexPropCannotSourceEvents.|  
 |grfdexPropExtraAll|Łączy fdexPropNoSideEffects i fdexPropDynamicType.|  
-|grfdexPropAll|Łączy w sobie grfdexPropCanAll grfdexPropCannotAll i grfdexPropExtraAll.|  
+|grfdexPropAll|Łączy grfdexPropCanAll, grfdexPropCannotAll i grfdexPropExtraAll.|  
   
  `pgrfdex`  
- Adres `DWORD` odbierająca żądanej właściwości. Może to być kombinacją następujących wartości:  
+ Adres `DWORD`, który odbiera żądane właściwości. Może to być kombinacja następujących wartości:  
   
 |Wartość|Znaczenie|  
 |-----------|-------------|  
 |fdexPropCanGet|Element członkowski można uzyskać za pomocą DISPATCH_PROPERTYGET.|  
-|fdexPropCannotGet|Element członkowski nie można uzyskać za pomocą DISPATCH_PROPERTYGET.|  
+|fdexPropCannotGet|Nie można uzyskać elementu członkowskiego przy użyciu DISPATCH_PROPERTYGET.|  
 |fdexPropCanPut|Element członkowski można ustawić za pomocą DISPATCH_PROPERTYPUT.|  
-|fdexPropCannotPut|Element członkowski nie można ustawić za pomocą DISPATCH_PROPERTYPUT.|  
+|fdexPropCannotPut|Nie można ustawić elementu członkowskiego za pomocą DISPATCH_PROPERTYPUT.|  
 |fdexPropCanPutRef|Element członkowski można ustawić za pomocą DISPATCH_PROPERTYPUTREF.|  
-|fdexPropCannotPutRef|Element członkowski nie można ustawić za pomocą DISPATCH_PROPERTYPUTREF.|  
-|fdexPropNoSideEffects|Element członkowski nie ma żadnych efektów ubocznych. Na przykład, debuger może bezpiecznie get/set/wywołanie tego elementu członkowskiego, bez zmiany stanu skryptu debugowane.|  
-|fdexPropDynamicType|Element członkowski jest elementem dynamicznym i zmieniać w okresie istnienia obiektu.|  
-|fdexPropCanCall|Element członkowski może zostać wywołana jako metody przy użyciu DISPATCH_METHOD.|  
-|fdexPropCannotCall|Element członkowski nie można wywołać jako metodę, przy użyciu DISPATCH_METHOD.|  
-|fdexPropCanConstruct|Element członkowski może zostać wywołana jako Konstruktor przy użyciu DISPATCH_CONSTRUCT.|  
-|fdexPropCannotConstruct|Nie można wywołać elementu członkowskiego jako Konstruktor przy użyciu DISPATCH_CONSTRUCT.|  
-|fdexPropCanSourceEvents|Element członkowski może wyzwalać zdarzeń.|  
-|fdexPropCannotSourceEvents|Element członkowski nie może wyzwalać zdarzeń.|  
+|fdexPropCannotPutRef|Nie można ustawić elementu członkowskiego za pomocą DISPATCH_PROPERTYPUTREF.|  
+|fdexPropNoSideEffects|Element członkowski nie ma żadnych efektów ubocznych. Na przykład debuger może bezpiecznie pobrać/ustawić/wywołać tego elementu członkowskiego bez zmiany stanu debugowanego skryptu.|  
+|fdexPropDynamicType|Element członkowski jest dynamiczny i może ulec zmianie w okresie istnienia obiektu.|  
+|fdexPropCanCall|Element członkowski może być wywoływany jako metoda przy użyciu DISPATCH_METHOD.|  
+|fdexPropCannotCall|Nie można wywołać elementu członkowskiego jako metody przy użyciu DISPATCH_METHOD.|  
+|fdexPropCanConstruct|Element członkowski może być wywoływany jako Konstruktor przy użyciu DISPATCH_CONSTRUCT.|  
+|fdexPropCannotConstruct|Nie można wywołać elementu członkowskiego jako konstruktora przy użyciu DISPATCH_CONSTRUCT.|  
+|fdexPropCanSourceEvents|Element członkowski może uruchamiać zdarzenia.|  
+|fdexPropCannotSourceEvents|Składowa nie może wyzwalać zdarzeń.|  
   
 ## <a name="return-value"></a>Wartość zwracana  
  Zwraca jedną z następujących wartości:  
   
 |||  
 |-|-|  
-|`S_OK`|Powodzenie.|  
-|`DISP_E_UNKNOWNNAME`|Nazwa nie jest znane.|  
+|`S_OK`|Prawnego.|  
+|`DISP_E_UNKNOWNNAME`|Nazwa jest nieznana.|  
   
 ## <a name="example"></a>Przykład  
   
@@ -96,7 +96,7 @@ BSTR bstrName;
    }  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
- [Interfejs IDispatchEx](../../winscript/reference/idispatchex-interface.md)   
- [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
+## <a name="see-also"></a>Zobacz także  
+ [IDispatchEx   interfejsu](../../winscript/reference/idispatchex-interface.md)  
+ [IDispatchEx:: getdispid](../../winscript/reference/idispatchex-getdispid.md)    
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

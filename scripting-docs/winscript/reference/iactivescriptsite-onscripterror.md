@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSite::OnScriptError | Dokumentacja firmy Microsoft
+title: 'IActiveScriptSite:: OnScriptError | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d76aa46cbbcdab9a3c5c7b561b91ee58cfcac4ac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9f0078b53515a881d7f2ac1475cf5565fa22a025
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992607"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72570270"
 ---
 # <a name="iactivescriptsiteonscripterror"></a>IActiveScriptSite::OnScriptError
-Informuje hosta, że wystąpił błąd wykonania, gdy aparat był uruchomiony skrypt.  
+Informuje hosta, że wystąpił błąd wykonywania, gdy aparat uruchomił skrypt.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,10 +37,10 @@ HRESULT OnScriptError(
   
 #### <a name="parameters"></a>Parametry  
  `pase`  
- [in] Adres obiektu błąd [IActiveScriptError](../../winscript/reference/iactivescripterror.md) interfejsu. Host może używać tego interfejsu, aby uzyskać informacje na temat błędu wykonania.  
+ podczas Adres interfejsu [IActiveScriptError](../../winscript/reference/iactivescripterror.md) obiektu błędu. Host może użyć tego interfejsu, aby uzyskać informacje o błędzie wykonania.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Zwraca `S_OK` czy błąd został prawidłowo obsłużony, OLE zdefiniowany kod błędu, w przeciwnym razie.  
+ Zwraca `S_OK`, jeśli błąd został poprawnie obsłużony, lub w przeciwnym razie kod błędu zdefiniowany przez OLE.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)

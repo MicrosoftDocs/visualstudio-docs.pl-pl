@@ -1,5 +1,5 @@
 ---
-title: IScriptScriptlet::SetSubItemName | Microsoft Docs
+title: 'IScriptScriptlet:: subitemname | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b9a4f67fb5a383666cb9f83fc2e0e38fbffb51f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ab4f7afec9302126ccbfcbe7f2abafc74cbf17d6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786565"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571860"
 ---
 # <a name="iscriptscriptletsetsubitemname"></a>IScriptScriptlet::SetSubItemName
-Ustawia identyfikator ostatniego w pełni kwalifikowaną nazwę hosta obiektu scriptlet.  
+Ustawia ostatni identyfikator w w pełni kwalifikowanej nazwie hosta obiektów Scriptlet.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,12 +37,12 @@ HRESULT SetSubItemName(
   
 #### <a name="parameters"></a>Parametry  
  `psz`  
- Jeśli host w pełni kwalifikowanej nazwy scriptlet ma więcej niż jeden poziom `psz` adres buforu identyfikatora na drugim poziomie.  
+ Jeśli w pełni kwalifikowana nazwa Scriptlet hosta ma więcej niż jeden poziom, `psz` jest adresem bufora identyfikatora na drugim poziomie.  
   
- Jeśli host w pełni kwalifikowanej nazwy scriptlet ma jeden poziom `psz` to adres buforu identyfikator pierwszego poziomu.  
+ Jeśli w pełni kwalifikowana nazwa Scriptlet hosta ma jeden poziom, `psz` jest adresem bufora identyfikatora na pierwszym poziomie.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ @No__t_0. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -50,5 +50,5 @@ HRESULT SetSubItemName(
   
 ## <a name="remarks"></a>Uwagi  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IScriptScriptlet, interfejs](../../winscript/reference/iscriptscriptlet-interface.md)

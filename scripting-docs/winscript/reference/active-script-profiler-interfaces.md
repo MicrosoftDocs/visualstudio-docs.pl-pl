@@ -1,5 +1,5 @@
 ---
-title: Interfejsy Profiler aktywnego skryptu | Dokumentacja firmy Microsoft
+title: Interfejsy profilera aktywnego skryptu | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -11,20 +11,20 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eeadf0de5563a4882c067960559414167e729173
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1e9395c392051e184bf61bea65e7ef7ac3c3fe2c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422235"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572680"
 ---
 # <a name="active-script-profiler-interfaces"></a>Interfejsy profilera aktywnego skryptu
-Aktywne interfejsy Profiler skryptu umożliwiają odbieranie zdarzeń profilowania z [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] aparatu.  
+Interfejsy profilera aktywnego skryptu umożliwiają odbieranie zdarzeń profilowania z aparatu [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
- Plik nagłówkowy activprof.h udostępnia interfejsy, które są wymienione w tej sekcji.  
+ Plik nagłówkowy activprof. h zawiera interfejsy, które są wymienione w tej sekcji.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- Następujące interfejsy Włącz profilowanie:  
+ Następujące interfejsy umożliwiają profilowanie:  
   
 - [IActiveScriptProfilerControl, interfejs](../../winscript/reference/iactivescriptprofilercontrol-interface.md)  
   
@@ -42,14 +42,14 @@ Aktywne interfejsy Profiler skryptu umożliwiają odbieranie zdarzeń profilowan
   
 - [IActiveScriptProfilerHeapEnum, interfejs](../../winscript/reference/iactivescriptprofilerheapenum-interface.md)  
   
-  W poniższej sekcji przedstawiono wyliczenia, które są używane na potrzeby profilowania:  
+  W poniższej sekcji wymieniono wyliczenia, które są używane do profilowania:  
   
 - [Stałe, wyliczenia i struktury profilera aktywnego skryptu](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)  
   
 > [!NOTE]
-> Aktywne interfejsy Profiler skryptu pierwszy zostały wydane z programu Internet Explorer 8. `IActiveScriptProfilerControl2` i `IActiveScriptProfilerCallback2` interfejsów pierwszy zostały wydane z programu Internet Explorer 9. [Interfejs IActiveScriptProfilerControl3](../../winscript/reference/iactivescriptprofilercontrol3-interface.md), [interfejs IActiveScriptProfilerCallback3](../../winscript/reference/iactivescriptprofilercallback3-interface.md), i [interfejs IActiveScriptProfilerHeapEnum](../../winscript/reference/iactivescriptprofilerheapenum-interface.md) zostały interfejsów najpierw wydane w programie Internet Explorer 10. [IActiveScriptProfilerControl5, interfejs](../../winscript/reference/iactivescriptprofilercontrol5-interface.md) został pierwotnie wydany w programie Internet Explorer 11.  
+> Interfejsy profilera aktywnego skryptu zostały po raz pierwszy wydane z programem Internet Explorer 8. Interfejsy `IActiveScriptProfilerControl2` i `IActiveScriptProfilerCallback2` zostały po raz pierwszy wydane w programie Internet Explorer 9. Interfejs [IActiveScriptProfilerControl3](../../winscript/reference/iactivescriptprofilercontrol3-interface.md), interfejs [IActiveScriptProfilerCallback3](../../winscript/reference/iactivescriptprofilercallback3-interface.md)i interfejsy [interfejsu IActiveScriptProfilerHeapEnum](../../winscript/reference/iactivescriptprofilerheapenum-interface.md) zostały po raz pierwszy wydane z programem Internet Explorer 10. [Interfejs IActiveScriptProfilerControl5](../../winscript/reference/iactivescriptprofilercontrol5-interface.md) został po raz pierwszy opublikowany w programie Internet Explorer 11.  
 >   
-> W programie Internet Explorer 8 oraz programu Internet Explorer 9, tylko [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] tych interfejsów w języku jest używany do obsługi profilowania skryptu.  
+> W programie Internet Explorer 8 i Internet Explorer 9, tylko język [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] używa tych interfejsów do obsługi profilowania skryptów.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Dokumentacja interfejsów skryptów systemu Windows](../../winscript/reference/windows-script-interfaces-reference.md)

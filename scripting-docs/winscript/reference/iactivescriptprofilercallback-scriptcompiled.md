@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerCallback::ScriptCompiled | Microsoft Docs
+title: 'IActiveScriptProfilerCallback:: ScriptCompiled | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a198667e7dc30969c32b556620b139d52f833543
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f7252134fc86bfd63b74a181b18327212a1b2dc1
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993238"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571662"
 ---
 # <a name="iactivescriptprofilercallbackscriptcompiled"></a>IActiveScriptProfilerCallback::ScriptCompiled
-Powiadamia program profilujący, że obiekt, który aparat skryptów skompilowany skrypt. Ta metoda jest wywoływana dla każdego skryptu, który jest kompilowany.  
+Powiadamia obiekt profilera, że aparat skryptów skompilowan skrypt. Ta metoda jest wywoływana dla każdego skompilowanego skryptu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -36,19 +36,19 @@ HRESULT ScriptCompiled(
   
 #### <a name="parameters"></a>Parametry  
  `scriptId`  
- [in] Unikatowy identyfikator skryptu, który został skompilowany. Ten identyfikator jest przypisywany przez silnik wykonywania skryptów.  
+ podczas Unikatowy identyfikator skompilowanego skryptu. Ten identyfikator jest przypisywany przez aparat obsługi skryptów.  
   
  `type`  
- [in] Typ skryptu, który został skompilowany. Wartości są zdefiniowane w [wyliczenie profiler_script_type Enumeration](../../winscript/reference/profiler-script-type-enumeration.md).  
+ podczas Typ skryptu, który został skompilowany. Wartości są zdefiniowane w [wyliczeniu PROFILER_SCRIPT_TYPE](../../winscript/reference/profiler-script-type-enumeration.md).  
   
  `pIDebugDocumentContext`  
- [in] Jeśli to możliwe, wskaźnik do `IUnknown` interfejs, który program profilujący musi szukać [interfejs IDebugDocumentContext](../../winscript/reference/idebugdocumentcontext-interface.md) wskaźnika. W przeciwnym razie będzie pusta.  
+ podczas Jeśli jest dostępny, wskaźnik do interfejsu `IUnknown`, który profiler musi wykonać zapytanie o wskaźnik [interfejsu IDebugDocumentContext](../../winscript/reference/idebugdocumentcontext-interface.md) . W przeciwnym razie będzie to miało wartość null.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Wartość zwracana przez tę metodę jest ignorowana przez silnik wykonywania skryptów.  
+ Zwracana wartość tej metody jest ignorowana przez aparat wykonywania skryptów.  
   
 ## <a name="remarks"></a>Uwagi  
- Aparat skryptów może zapewnić kontekstu dokumentu, tylko wtedy, gdy jest to obsługiwane przez hosta.  
+ Aparat obsługi skryptów może udostępnić kontekst dokumentu tylko wtedy, gdy jest obsługiwany przez hosta.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IActiveScriptProfilerCallback, interfejs](../../winscript/reference/iactivescriptprofilercallback-interface.md)

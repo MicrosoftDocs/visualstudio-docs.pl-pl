@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication110::CallableWaitForHandles | Dokumentacja firmy Microsoft
+title: 'IDebugApplication110:: CallableWaitForHandles | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,18 +13,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f74e3faa57e9ee4a38f77110334383bc2c72fe2f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 22af0e9dcf548bbd2f0f8c179b4889d5294eb284
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446397"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575084"
 ---
 # <a name="idebugapplication110callablewaitforhandles"></a>IDebugApplication110::CallableWaitForHandles
-W tym czasie czeka dla każdego określonego dojścia ma być zasygnalizowany pozwalając wywołania międzywątkowe wysyłany do tego wątku. Ta metoda musi zostać wywołana z wątku debugera.  
+Czeka na zasygnalizowanie któregokolwiek z określonych dojść, przy jednoczesnym umożliwieniu ogłaszania wywołań między wątkami w tym wątku. Ta metoda musi zostać wywołana z wątku debugera.  
   
 > [!IMPORTANT]
-> [Interfejs IDebugApplication110](../../winscript/reference/idebugapplication110-interface.md) jest implementowany przez program PDM w wersji 11.0 i nowszych. Znajduje się w zestawie activdbg100.h.  
+> [Interfejs IDebugApplication110](../../winscript/reference/idebugapplication110-interface.md) jest implementowany przez PDM v 11.0 i nowsze. Znajduje się w zestawie activdbg100.h.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -34,13 +34,13 @@ HRESULT CallableWaitForHandles([in] DWORD handleCount, [in, size_is(handleCount)
   
 #### <a name="parameters"></a>Parametry  
  `handleCount`  
- Liczba dojść oczekiwania.  
+ Liczba dojść do oczekiwania.  
   
  `pHandles`  
- Zestaw dojścia oczekiwania.  
+ Zestaw dojść do oczekiwania.  
   
  `pIndex`  
- Po wartość HRESULT S_OK, Indeksuj do `pHandles` na uchwyt, który zostało zasygnalizowane.  
+ Gdy wartość HRESULT to S_OK, indeks do `pHandles` dla uchwytu, który został zasygnalizowani.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IDebugApplication110, interfejs](../../winscript/reference/idebugapplication110-interface.md)

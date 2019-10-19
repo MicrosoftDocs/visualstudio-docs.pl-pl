@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::GetSignature | Dokumentacja firmy Microsoft
+title: 'IScriptEntry:: GetSignature | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 70cc1939ae4eb1e3c58d31b3d42b7f1b4603ce9e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e7b07ac64ce7e427a793f0af0db9a7905441d39b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787796"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575422"
 ---
 # <a name="iscriptentrygetsignature"></a>IScriptEntry::GetSignature
-Zwraca typ informacji dla `IScriptEntry` obiektu funkcyjnego.  
+Zwraca informacje o typie dla obiektu funkcji `IScriptEntry`.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -38,20 +38,20 @@ HRESULT GetSignature(
   
 #### <a name="parameters"></a>Parametry  
  `ppti`  
- [out] Wpisz informacje skojarzone z tym `IScriptEntry` obiektu funkcyjnego.  
+ określoną Informacje o typie skojarzone z tym obiektem funkcji `IScriptEntry`.  
   
  `piMethod`  
- [out] Metoda indeksu w `ITypeInfo` obiektu.  
+ określoną Indeks metody w obiekcie `ITypeInfo`.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ @No__t_0. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Należy określić przy użyciu informacji o typie [IScriptEntry::SetSignature](../../winscript/reference/iscriptentry-setsignature.md) lub [IScriptNode::CreateChildHandler](../../winscript/reference/iscriptnode-createchildhandler.md). Informacje o typie można również wygenerować we wpisie oparte na funkcji wewnętrznej reprezentacji.  
+ Informacje o typie są ustawiane za pomocą [IScriptEntry:: SetSignature](../../winscript/reference/iscriptentry-setsignature.md) lub [IScriptNode:: CreateChildHandler](../../winscript/reference/iscriptnode-createchildhandler.md). Informacje o typie mogą być również generowane przez wpis w oparciu o reprezentację funkcji wewnętrznej.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IScriptEntry, interfejs](../../winscript/reference/iscriptentry-interface.md)

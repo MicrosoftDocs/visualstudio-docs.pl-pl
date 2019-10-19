@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::ParseScriptText | Microsoft Docs
+title: IActiveScriptAuthor::P arseScriptText | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fe6870f3b19c5727fdbea0418b8373b990cb671a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 90d5ab0fa700ed29b5fb37b1c48617cedec871b9
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955085"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576149"
 ---
 # <a name="iactivescriptauthorparsescripttext"></a>IActiveScriptAuthor::ParseScriptText
-Analizuje tekst skryptu, dodaje tekst do skryptu tworzenia aparatu i tworzy `IScriptEntry` obiekt, który odnosi się do bloku skryptu.  
+Analizuje tekst skryptu, dodaje tekst do aparatu tworzenia skryptów i tworzy obiekt `IScriptEntry`, który odpowiada blokowi skryptu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,22 +41,22 @@ HRESULT ParseScriptText(
   
 #### <a name="parameters"></a>Parametry  
  `pszCode`  
- [in] Tekst skryptu można przeanalizować.  
+ podczas Tekst skryptu do analizy.  
   
  `pszItemName`  
- [in] Adres buforu, który zawiera nazwę elementu skojarzonego z blokiem skryptu.  
+ podczas Adres buforu, który zawiera nazwę elementu skojarzoną z blokiem skryptu.  
   
  `pszDelimiter`  
- [in] Adres ogranicznika końcowego elementu skrypt bloku. Gdy `pszCode` jest analizowany ze strumienia tekstu, host zazwyczaj używa rozdzielnika (takie jak dwa pojedyncze cudzysłowy), na końcu bloku skryptu do wykrywania. Ustaw ten parametr na wartość NULL, jeśli nie było ogranicznika do identyfikowania koniec bloku skryptu.  
+ podczas Adres ogranicznika bloku End-of-Script. Gdy `pszCode` jest analizowany ze strumienia tekstu, Host zwykle używa ogranicznika (takiego jak dwa znaki pojedynczego cudzysłowu) w celu wykrycia końca bloku skryptu. Ustaw ten parametr na wartość NULL, jeśli nie ma ogranicznika identyfikującego koniec bloku skryptu.  
   
  `dwCookie`  
- [in] Zdefiniowane przez aplikację wartość skojarzoną z nowymi `IScriptEntry` obiektu.  
+ podczas Zdefiniowana przez aplikację wartość, która jest skojarzona z nowym obiektem `IScriptEntry`.  
   
  `dwFlags`  
- [in] Nie jest używany.  
+ podczas Nieużywane.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ @No__t_0. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -64,5 +64,5 @@ HRESULT ParseScriptText(
   
 ## <a name="remarks"></a>Uwagi  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IActiveScriptAuthor, interfejs](../../winscript/reference/iactivescriptauthor-interface.md)

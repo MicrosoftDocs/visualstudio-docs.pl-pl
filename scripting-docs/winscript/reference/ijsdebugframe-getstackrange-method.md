@@ -1,5 +1,5 @@
 ---
-title: IJsDebugFrame::GetStackRange, metoda | Dokumentacja firmy Microsoft
+title: 'IJsDebugFrame:: GetStackRange — — Metoda | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 52dd6114d3ec462f91f8bce5e76f73c5487746ed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d1ac3cbee9d16296632477f4128ec36370ab0d4a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62558219"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574039"
 ---
 # <a name="ijsdebugframegetstackrange-method"></a>IJsDebugFrame::GetStackRange — Metoda
-Zwraca bezwzględny zakres adresów dla logicznej ramki stosu JavaScript.  
+Zwraca bezwzględny zakres adresów logicznej ramki stosu JavaScript.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -36,18 +36,18 @@ HRESULT GetStackRange(
   
 #### <a name="parameters"></a>Parametry  
  `pStart`  
- [out] Dolny wskaźnika stosu ramki.  
+ określoną Najbardziej dolny Wskaźnik stosu ramki.  
   
  `pEnd`  
- [out] Najważniejsze górna większa część wskaźnika ramki.  
+ określoną Największa Górna wartość wskaźnika układarki ramki.  
   
 ## <a name="return-value"></a>Wartość zwracana  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda jest przydatna do zszywania przeplotem śladów stosu zebranych z wielu modułów wykonawczych. Rozpoczęcia, zakończenia wskaźniki stosu może obejmować wiele ramek stosu maszyn fizycznych (dla interpretowanych ramek środowiska wykonawczego języka JavaScript). Start > kończy gdy stos rośnie od największej do niskiego adresu.  
+ Ta metoda jest przydatna w przypadku zszywania ze sobą zebranych śladów stosu z wielu środowisk uruchomieniowych. Wskaźniki Start i End stosu mogą obejmować wiele ramek stosu maszyn fizycznych (dla interpretowanych ramek środowiska uruchomieniowego JavaScript). Rozpocznij > zakończy się, ponieważ stos powiększa się od wysokiego do niskiego adresu.  
   
 ## <a name="requirements"></a>Wymagania  
- **Nagłówek:** jscript9diag.h  
+ **Nagłówek:** Jscript9diag. h  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IJsDebugFrame, interfejs](../../winscript/reference/ijsdebugframe-interface.md)

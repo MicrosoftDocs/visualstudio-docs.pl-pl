@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNodeEvents::onAttach | Dokumentacja firmy Microsoft
+title: 'IDebugApplicationNodeEvents:: OnAttach | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d606292eda60fbb367802dbd5df973b933f3fe14
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e45af6b931dad28a41f8f4453db9fab96405df3b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821966"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574691"
 ---
 # <a name="idebugapplicationnodeeventsonattach"></a>IDebugApplicationNodeEvents::onAttach
-Obsługuje zdarzenie, co oznacza, że obiekt węzła debugowania aplikacji został dołączony do węzła nadrzędnego.  
+Obsługuje zdarzenie oznaczające, że obiekt węzła aplikacji debugowania został podłączony do węzła nadrzędnego.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,21 +37,21 @@ HRESULT onAttach(
   
 #### <a name="parameters"></a>Parametry  
  `prddpParent`  
- [in] Węzeł aplikacji debugowania jest element nadrzędny tego węzła.  
+ podczas Węzeł aplikacji debugowania, który jest elementem nadrzędnym tego węzła.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda obsługuje zdarzenie, co oznacza, że obiekt węzła debugowania aplikacji został dołączony do węzła nadrzędnego.  
+ Ta metoda obsługuje zdarzenie oznaczające, że obiekt węzła aplikacji debugowania został podłączony do węzła nadrzędnego.  
   
- Implementujące obiekty z `IDebugApplicationNode` interfejsu Zgłoś to zdarzenie.  
+ Realizatory interfejsu `IDebugApplicationNode` powodują podnoszenie tego zdarzenia.  
   
-## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugApplicationNodeEvents](../../winscript/reference/idebugapplicationnodeevents-interface.md)   
- [IDebugApplicationNodeEvents::onDetach](../../winscript/reference/idebugapplicationnodeevents-ondetach.md)   
+## <a name="see-also"></a>Zobacz także  
+ [IDebugApplicationNodeEvents   interfejsu](../../winscript/reference/idebugapplicationnodeevents-interface.md)  
+ [IDebugApplicationNodeEvents:: onodłącz](../../winscript/reference/idebugapplicationnodeevents-ondetach.md)    
  [IDebugApplicationNode, interfejs](../../winscript/reference/idebugapplicationnode-interface.md)

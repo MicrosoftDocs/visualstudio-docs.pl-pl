@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerControl::SetProfilerEventMask | Microsoft Docs
+title: 'IActiveScriptProfilerControl:: SetProfilerEventMask | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 01e55d793d174f550e33e18558eccc19d417c80b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a4162cf2e5325bfb41bce9c3a47a52b1b36d74f2
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993093"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571581"
 ---
 # <a name="iactivescriptprofilercontrolsetprofilereventmask"></a>IActiveScriptProfilerControl::SetProfilerEventMask
-Ustawienie maski bitów 4-bajtowych, który określa typy zdarzeń, które powinny wywoływać silnik wykonywania skryptów.  
+Ustawia 4-bajtową maskę bitów, która określa typy zdarzeń, które aparat skryptów powinien podnieść.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -34,7 +34,7 @@ HRESULT SetProfilerEventMask(
   
 #### <a name="parameters"></a>Parametry  
  `dwEventMask`  
- [in] Maska bitów do 4-bajtowych, który określa typy zdarzeń. Bity są zdefiniowane w [wyliczenie PROFILER_EVENT_MASK](../../winscript/reference/profiler-event-mask-enumeration.md).  
+ podczas 4-bajtowa maska bitowa, która określa typy zdarzeń. Bity są zdefiniowane w [wyliczeniu PROFILER_EVENT_MASK](../../winscript/reference/profiler-event-mask-enumeration.md).  
   
 ## <a name="return-value"></a>Wartość zwracana  
  Zwraca wartość HRESULT. Dopuszczalne są następujące wartości:  
@@ -42,7 +42,7 @@ HRESULT SetProfilerEventMask(
 |Wartość zwracana|Znaczenie|  
 |------------------|-------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
-|`ACTIVPROF_E_PROFILER_ABSENT`|Profilowanie nie jest włączona.|  
+|`ACTIVPROF_E_PROFILER_ABSENT`|Profilowanie nie jest włączone.|  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IActiveScriptProfilerControl, interfejs](../../winscript/reference/iactivescriptprofilercontrol-interface.md)

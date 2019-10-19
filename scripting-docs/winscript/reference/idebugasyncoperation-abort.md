@@ -1,5 +1,5 @@
 ---
-title: IDebugAsyncOperation::Abort | Dokumentacja firmy Microsoft
+title: 'IDebugAsyncOperation:: Abort | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: be696f852f7038316141415494920c43580738c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b9ca6c5e1498229c84dc28a13cda2cce77b58a4f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822102"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573299"
 ---
 # <a name="idebugasyncoperationabort"></a>IDebugAsyncOperation::Abort
 Anuluje operację.  
@@ -37,7 +37,7 @@ HRESULT Abort();
  Ta metoda nie przyjmuje żadnych parametrów.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -45,9 +45,9 @@ HRESULT Abort();
 |E_NOTIMPL|Nie można anulować operacji.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda jest zazwyczaj wywoływana z wewnątrz wątku debugera, aby anulować operację, która nie odpowiada. Ta metoda powoduje `InProgressAbort` metody `IDebugSyncOperation` obiekt wywoływany.  
+ Ta metoda jest zwykle wywoływana z poziomu wątku debugera, aby anulować operację, która nie odpowiada. Ta metoda powoduje wywoływanie metody `InProgressAbort` w obiekcie `IDebugSyncOperation`.  
   
-## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugAsyncOperation](../../winscript/reference/idebugasyncoperation-interface.md)   
- [IDebugAsyncOperation::Start](../../winscript/reference/idebugasyncoperation-start.md)   
+## <a name="see-also"></a>Zobacz także  
+ [IDebugAsyncOperation   interfejsu](../../winscript/reference/idebugasyncoperation-interface.md)  
+ [IDebugAsyncOperation:: Start](../../winscript/reference/idebugasyncoperation-start.md)    
  [IDebugSyncOperation::InProgressAbort](../../winscript/reference/idebugsyncoperation-inprogressabort.md)

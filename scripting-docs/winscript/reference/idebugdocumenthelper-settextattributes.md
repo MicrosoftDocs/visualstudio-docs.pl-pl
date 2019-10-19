@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::SetTextAttributes | Dokumentacja firmy Microsoft
+title: 'IDebugDocumentHelper:: SetTextAttributes | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5d6ef4130cd9383cf4f59c2e3f5407bdb7780a0e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7cc5e5955652fd8b59d4c502e68d97a729ded141
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949022"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72569460"
 ---
 # <a name="idebugdocumenthelpersettextattributes"></a>IDebugDocumentHelper::SetTextAttributes
-Ustawia atrybuty zakres tekstu, zastępowanie inne atrybuty w tym tekście.  
+Ustawia atrybuty dla zakresu tekstu, zastępując inne atrybuty tego tekstu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -39,27 +39,27 @@ HRESULT SetTextAttributes(
   
 #### <a name="parameters"></a>Parametry  
  `ulCharOffset`  
- [in] Lokalizacja początku zakres tekstu.  
+ podczas Lokalizacja początku zakresu tekstu.  
   
  `cChars`  
- [in] Liczba znaków w zakresie.  
+ podczas Liczba znaków w zakresie.  
   
  `pstaTextAttr`  
- [in] Atrybuty tekst źródłowy zakres tekstu.  
+ podczas Atrybuty tekstu źródłowego dla zakresu tekstu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Jest to błąd, aby wywołać `SetTextAttributes` na zakres tekstu, zanim ten tekst jest dodawany do dokumentu. Wywołaj `AddDBCSText`, `AddUnicodeText`, lub `AddDeferredText` metod dodawania tekstu do dokumentu.  
+ Wystąpił błąd podczas wywoływania `SetTextAttributes` w zakresie tekstu przed dodaniem go do dokumentu. Wywołaj metody `AddDBCSText`, `AddUnicodeText` lub `AddDeferredText`, aby dodać tekst do dokumentu.  
   
-## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)   
- [IDebugDocumentHelper::AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)   
- [IDebugDocumentHelper::AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)   
- [IDebugDocumentHelper::AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)   
+## <a name="see-also"></a>Zobacz także  
+ [IDebugDocumentHelper   interfejsu](../../winscript/reference/idebugdocumenthelper-interface.md)  
+ [IDebugDocumentHelper:: AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)    
+ [IDebugDocumentHelper:: AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)    
+ [IDebugDocumentHelper:: AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)    
  [SOURCE_TEXT_ATTR, wyliczenie](../../winscript/reference/source-text-attr-enumeration.md)

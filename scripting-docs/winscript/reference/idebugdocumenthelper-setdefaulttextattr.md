@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::SetDefaultTextAttr | Dokumentacja firmy Microsoft
+title: 'IDebugDocumentHelper:: SetDefaultTextAttr | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 09f75e6f09639520462d5ef3983d67333097f76e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ea63f028497f1eb90803f59423f608d0a42960cf
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948957"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574637"
 ---
 # <a name="idebugdocumenthelpersetdefaulttextattr"></a>IDebugDocumentHelper::SetDefaultTextAttr
-Ustawia atrybuty domyślnych dla tekstu, który nie znajduje się w bloku skryptu.  
+Ustawia domyślne atrybuty do użycia dla tekstu, który nie znajduje się w bloku skryptu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,18 +37,18 @@ HRESULT SetDefaultTextAttr(
   
 #### <a name="parameters"></a>Parametry  
  `staTextAttr`  
- Atrybuty domyślne źródło tekstu.  
+ Domyślne atrybuty tekstu źródłowego.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- O ile domyślne atrybuty zostaną zmienione przez tę metodę, atrybuty domyślne tekst poza blok skryptu jest SOURCETEXT_ATTR_NONSOURCE. Interfejs użytkownika można użyć tych informacji do oznaczania tekst poza Bloki skryptu jako tylko do odczytu.  
+ O ile domyślne atrybuty nie są zmieniane przez tę metodę, atrybuty domyślne dla tekstu spoza bloku skryptu to SOURCETEXT_ATTR_NONSOURCE. Interfejs użytkownika może używać tych informacji do oznaczania tekstu poza blokami skryptów jako tylko do odczytu.  
   
-## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)   
+## <a name="see-also"></a>Zobacz także  
+ [IDebugDocumentHelper   interfejsu](../../winscript/reference/idebugdocumenthelper-interface.md)  
  [SOURCE_TEXT_ATTR, wyliczenie](../../winscript/reference/source-text-attr-enumeration.md)

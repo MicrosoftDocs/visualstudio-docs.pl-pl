@@ -1,5 +1,5 @@
 ---
-title: IScriptNode::GetIndexInParent | Dokumentacja firmy Microsoft
+title: 'IScriptNode:: GetIndexInParent | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 92f5ae074d65d2360bcfb3dda03903aa3c59209e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9251f65414a5ebd48ce56dae6a7dbfeec4e514e3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786979"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575045"
 ---
 # <a name="iscriptnodegetindexinparent"></a>IScriptNode::GetIndexInParent
-Zwraca indeks obiektu w liście elementów podrzędnych elementu nadrzędnego.  
+Zwraca indeks obiektu znajdującego się na liście elementów podrzędnych elementu nadrzędnego.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,12 +37,12 @@ HRESULT GetIndexInParent(
   
 #### <a name="parameters"></a>Parametry  
  `pisn`  
- [out] Zwraca indeks obiektu w liście elementów podrzędnych elementu nadrzędnego.  
+ określoną Zwraca indeks obiektu znajdującego się na liście elementów podrzędnych elementu nadrzędnego.  
   
- Jeśli ta metoda jest wywoływana `IScriptNode` obiektu, że reprezentuje strony sieci Web, ten parametr zwraca wartość 0.  
+ Jeśli ta metoda jest wywoływana przez obiekt `IScriptNode`, który reprezentuje stronę sieci Web, ten parametr zwraca wartość 0.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ @No__t_0. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -50,5 +50,5 @@ HRESULT GetIndexInParent(
   
 ## <a name="remarks"></a>Uwagi  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IScriptNode, interfejs](../../winscript/reference/iscriptnode-interface.md)

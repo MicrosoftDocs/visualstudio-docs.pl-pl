@@ -1,5 +1,5 @@
 ---
-title: IJsDebugDataTarget::ReadMemory, metoda | Dokumentacja firmy Microsoft
+title: 'IJsDebugDataTarget:: ReadMemory — — Metoda | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 705fff3bf2d4be78897c18c5a4c61bd74a8c2230
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 84da36433cf3546b34d3e044bb113916c9798117
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62582362"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572435"
 ---
 # <a name="ijsdebugdatatargetreadmemory-method"></a>IJsDebugDataTarget::ReadMemory — Metoda
 Odczytuje pamięć procesu docelowego.  
@@ -39,27 +39,27 @@ HRESULT ReadMemory(
   
 #### <a name="parameters"></a>Parametry  
  `address`  
- [in] Adres podstawowy, z którego można odczytać pamięć procesu docelowego.  
+ podczas Adres podstawowy, z którego ma zostać odczytana pamięć procesu docelowego.  
   
  `flags`  
- [in] Flagi sterujące zachowaniem ReadMemory.  
+ podczas Flagi kontrolujące zachowanie ReadMemory —.  
   
  `pBuffer`  
- [out] Bufor, który odbiera zawartość z przestrzeni adresowej procesu docelowego. W przypadku awarii zawartość tego buforu jest nieokreślona.  
+ określoną Bufor, który odbiera zawartość z przestrzeni adresowej procesu docelowego. W przypadku niepowodzenia zawartość tego buforu jest nieokreślona.  
   
  `size`  
- [in] Liczba bajtów do odczytu z procesu.  
+ podczas Liczba bajtów, które mają zostać odczytane z procesu.  
   
  `pBytesRead`  
- [out] Wskazuje liczbę bajtów odczytanych z procesu docelowego. Jeśli atrybut JsDebugAllowPartialRead jest pusty, w przypadku powodzenia, do których ta wartość będzie zawsze równa dokładnie rozmiarowi wejściowemu. Jeśli atrybut JsDebugAllowPartialRead jest określony w przypadku powodzenia ta wartość będzie większa niż zero.  
+ określoną Wskazuje liczbę bajtów odczytanych z procesu docelowego. Jeśli atrybut JsDebugAllowPartialRead jest jasne, po pomyślnym wykonaniu tej wartości zawsze będzie ona dokładnie równa rozmiarowi danych wejściowych. Jeśli atrybut JsDebugAllowPartialRead jest określony, po powodzeniu, ta wartość będzie większa od zera.  
   
 ## <a name="return-value"></a>Wartość zwracana  
   
 ## <a name="remarks"></a>Uwagi  
- Zwraca wartość S_OK w przypadku powodzenia i kody błędów są stosowane do wszystkich błędów. Zwraca wartość E_JsDEBUG_INVALID_MEMORY_ADDRESS, jeśli adres nie jest prawidłowy. Aby uzyskać więcej informacji zobacz JsDebugAllowPartialRead.  
+ Zwraca S_OK na sukcesie, a kody błędów są używane dla dowolnego błędu. Zwraca E_JsDEBUG_INVALID_MEMORY_ADDRESS, jeśli adres jest nieprawidłowy. Aby uzyskać więcej informacji, zobacz atrybut JsDebugAllowPartialRead.  
   
 ## <a name="requirements"></a>Wymagania  
- **Nagłówek:** jscript9diag.h  
+ **Nagłówek:** Jscript9diag. h  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IJsDebugDataTarget, interfejs](../../winscript/reference/ijsdebugdatatarget-interface.md)

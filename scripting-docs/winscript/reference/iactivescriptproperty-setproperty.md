@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProperty::SetProperty | Dokumentacja firmy Microsoft
+title: 'IActiveScriptProperty:: SetProperty | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d689b7b2a252b208ae578f9bfd95ab93777f7cc5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 0f8307a82f181be20205c7bfcc47e881b0fa1e90
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63385954"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571307"
 ---
 # <a name="iactivescriptpropertysetproperty"></a>IActiveScriptProperty::SetProperty
 Ustawia właściwość, która jest określona przez parametr.  
@@ -50,36 +50,36 @@ HRESULT SetProperty(
  `pvarValue`  
  Wartość właściwości.  
   
- Dozwolone wartości dla `dwProperty` są opisane w poniższej tabeli.  
+ Wartości dozwolone dla `dwProperty` są opisane w poniższej tabeli.  
   
 |Stała|Wartość|Znaczenie|  
 |--------------|-----------|-------------|  
-|SCRIPTPROP_INTEGERMODE|0x00003000|Wymusza silnik wykonywania skryptów do dzielenia w trybie całkowitą zamiast tryb punktu zmiennoprzecinkowego. Wartość domyślna to `False`.|  
-|SCRIPTPROP_STRINGCOMPAREINSTANCE|0x00003001|Umożliwia korzystanie z funkcji porównania ciągu aparatu obsługi skryptów, które ma zostać zastąpione.|  
-|SCRIPTPROP_ABBREVIATE_GLOBALNAME_RESOLUTION|0x70000002|Informuje o aparatów skryptów, który ma przyczyniają się do obiektów globalnych innych aparatów obsługi skryptów.|  
-|SCRIPTPROP_INVOKEVERSIONING|0x00004000|Wymusza [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] silnik wykonywania skryptów, aby wybrać zestaw funkcji języka, które są obsługiwane. Domyślny zestaw funkcji językowych obsługiwanych przez [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] silnik wykonywania skryptów jest odpowiednikiem zestawu funkcji języka, które pojawiło się w wersji 5.7 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] silnik wykonywania skryptów.|  
+|SCRIPTPROP_INTEGERMODE|0x00003000|Wymusza podział aparatu skryptów w tryb liczby całkowitej zamiast trybu zmiennoprzecinkowego. Wartość domyślna to `False`.|  
+|SCRIPTPROP_STRINGCOMPAREINSTANCE|0x00003001|Umożliwia zamianę funkcji porównywania ciągów aparatu skryptów.|  
+|SCRIPTPROP_ABBREVIATE_GLOBALNAME_RESOLUTION|0x70000002|Informuje aparat skryptów, że nie istnieją żadne inne aparaty skryptów do współtworzenia obiektu globalnego.|  
+|SCRIPTPROP_INVOKEVERSIONING|0x00004000|Wymusza, aby aparat skryptów [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] mógł wybrać zestaw funkcji języka, które mają być obsługiwane. Domyślny zestaw funkcji językowych obsługiwanych przez aparat skryptów [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] jest odpowiednikiem zestawu funkcji języka, który pojawił się w wersji 5,7 aparatu obsługi skryptów [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].|  
   
 ## <a name="return-value"></a>Wartość zwracana  
  Zwraca jedną z następujących wartości:  
   
 |Wartość zwracana|Znaczenie|  
 |------------------|-------------|  
-|`S_OK`|Powodzenie.|  
+|`S_OK`|Prawnego.|  
 |`E_INVALIDARG`|Argument jest nieprawidłowy.|  
-|`E_UNEXPECTED`|Nie oczekiwano wywołania (na przykład aparat skryptów jeszcze nie został załadowany lub zainicjowany).|  
+|`E_UNEXPECTED`|Wywołanie nie było oczekiwane (na przykład aparat skryptów nie został jeszcze załadowany lub zainicjowany).|  
   
 ## <a name="remarks"></a>Uwagi  
- Aby włączyć lub wyłączyć dzielenie liczby całkowitej, wywołaj `SetProperty` i przekonwertować `Boolean` do `Object`. Domyślnie wartość właściwości jest `False`. Jeśli ustawisz na `True`, operacji dzielenia zwróci tylko liczby całkowite.  
+ Aby włączyć lub wyłączyć dzielenie liczby całkowitej, wywołaj `SetProperty` i Przekształć `Boolean` na `Object`. Domyślnie wartość właściwości jest `False`. Jeśli ustawisz ją na `True`, operacje dzielenia będą zwracać tylko liczby całkowite.  
   
- Aby włączyć lub wyłączyć niestandardowy ciąg porównania, wywołaj `SetProperty` i przekazać `Object` wartość. Obiekt, który można przekazać musi implementować interfejs [interfejs IActiveScriptStringCompare](../../winscript/reference/iactivescriptstringcompare-interface.md). [StrComp](../../winscript/reference/iactivescriptstringcompare-strcomp.md) metody [interfejs IActiveScriptStringCompare](../../winscript/reference/iactivescriptstringcompare-interface.md) interfejsu nosi nazwę każdym wykonaniu funkcji porównania ciągu.  
+ Aby włączyć lub wyłączyć Porównywanie ciągów niestandardowych, wywołaj `SetProperty` i przekaż wartość `Object`. Obiekt, który przekazujesz, musi implementować interfejs [IActiveScriptStringCompare](../../winscript/reference/iactivescriptstringcompare-interface.md)interfejsu. Metoda [StrComp](../../winscript/reference/iactivescriptstringcompare-strcomp.md) interfejsu [interfejsu IActiveScriptStringCompare](../../winscript/reference/iactivescriptstringcompare-interface.md) jest wywoływana za każdym razem, gdy jest wykonywana funkcja porównywania ciągów.  
   
- Aby wybrać zestaw funkcji języka, które są obsługiwane podczas [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] silnik wykonywania skryptów jest inicjowany, wywołaj `SetProperty` i przekaż wartość, która odnosi się do języka zestaw funkcji, który można włączyć dla SCRIPTPROP_INVOKEVERSIONING. Jeśli ta właściwość jest ustawiona na 1 (SCRIPTLANGUAGEVERSION_5_7), funkcje językowe dostępne są takie same, jak te, które znajdowały się w wersji 5.7 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] silnik wykonywania skryptów. Jeśli jest ustawiona na 2 (SCRIPTLANGUAGEVERSION_5_8), funkcje językowe dostępne są te, które znajdowały się w wersji 5.7 Oprócz nowych funkcji, które zostały dodane w wersji 5.8. Domyślnie właściwość ta jest równa 0 (SCRIPTLANGUAGEVERSION_DEFAULT), który jest odpowiednikiem zestawu funkcji języka, które pojawiło się w wersji 5.7, chyba że host obsługuje różne domyślne zachowanie. Na przykład programu Internet Explorer 8 zdecyduje się na [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] funkcje językowe, które są obsługiwane przez wersję 5.8 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] silnik wykonywania skryptów domyślnie, gdy domyślny tryb dokumentu dla programu Internet Explorer 8 to tryb "Standardów programu Internet Explorer 8". Przełączanie trybu dokumentu programu Internet Explorer 8, aby standardów programu Internet Explorer 7 lub tryb Osobliwości resetuje [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] silnik wykonywania skryptów do obsługi tylko zestaw funkcji języka autonomiczności występujące w wersji 5.7 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] silnik wykonywania skryptów.  
+ Aby wybrać zestaw funkcji języka, które mają być obsługiwane po zainicjowaniu aparatu skryptów [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)], wywołaj `SetProperty` i przekaż wartość odpowiadającą funkcji języka ustawionej dla SCRIPTPROP_INVOKEVERSIONING. Jeśli ta właściwość ma wartość 1 (SCRIPTLANGUAGEVERSION_5_7), dostępne funkcje języka są takie same jak te, które pojawiły się w wersji 5,7 aparatu skryptów [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]. Jeśli jest ustawiona na 2 (SCRIPTLANGUAGEVERSION_5_8), dostępne funkcje języka są te, które pojawiły się w wersji 5,7, oprócz nowych funkcji, które zostały dodane w wersji 5,8. Domyślnie właściwość ta ma wartość 0 (SCRIPTLANGUAGEVERSION_DEFAULT), która jest równoważna z zestawem funkcji języka, który pojawił się w wersji 5,7, chyba że host obsługuje inne zachowanie domyślne. Na przykład program Internet Explorer 8 zażąda funkcji języka [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)], które są obsługiwane przez aparat obsługi skryptów w wersji 5,8 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] domyślnie, gdy domyślny tryb dokumentu programu Internet Explorer 8 jest trybem "Standardy programu Internet Explorer 8". Przełączenie trybu dokumentu programu Internet Explorer 8 do standardów programu Internet Explorer 7 lub tryb osobliwości resetuje aparat skryptów [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)], aby obsługiwał tylko zestaw funkcji języka, który istniał w wersji 5,7 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] aparatu obsługi skryptów.  
   
 > [!NOTE]
-> SCRIPTPROP_INVOKEVERSIONING powinna być ustawiona tylko wtedy, gdy [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] silnik wykonywania skryptów jest inicjowany.  
+> SCRIPTPROP_INVOKEVERSIONING należy ustawić tylko wtedy, gdy jest inicjowany aparat skryptów [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład pokazuje sposób wymusić silnik wykonywania skryptów, aby użyć dzielenie liczby całkowitej i umożliwić przeciążanie funkcji porównania.  
+ Poniższy przykład pokazuje, jak wymusić użycie przez aparat skryptów dzielenia liczb całkowitych i sposobu zezwalania na Przeciążenie funkcji porównywania.  
   
 ```c#  
 BMLScriptEngine bmlScriptEngine = new BMLScriptEngine();  
@@ -100,7 +100,7 @@ scriptProperties.SetProperty(SCRIPTPROP_STRCOMPINST,
     System.IntPtr.Zero, ref vtStrCmpInstance);  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
- [Definiowanie zgodności dokumentów](https://docs.microsoft.com/previous-versions/windows/internet-explorer/ie-developer/compatibility/cc288325(v=vs.85))   
- [IActiveScriptProperty](../../winscript/reference/iactivescriptproperty.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Definiowanie   zgodności dokumentów](https://docs.microsoft.com/previous-versions/windows/internet-explorer/ie-developer/compatibility/cc288325(v=vs.85))  
+ [IActiveScriptProperty](../../winscript/reference/iactivescriptproperty.md)    
  [Informacje o wersji](../../javascript/reference/javascript-version-information.md)

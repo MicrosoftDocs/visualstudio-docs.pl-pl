@@ -1,5 +1,5 @@
 ---
-title: Kod błędu SCRIPT_E_PROPAGATE | Dokumentacja firmy Microsoft
+title: Kod błędu SCRIPT_E_PROPAGATE | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -11,15 +11,15 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e6b1feac19be5f6506227b60515df70d9a737a2a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dc6b30d574d2d3585ec9fa46e8dc63fcbd4572a5
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840289"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574447"
 ---
-# <a name="scriptepropagate-error-code"></a>Kod błędu SCRIPT_E_PROPAGATE
-Błąd skryptu jest są propagowane do obiektu wywołującego, która może być w innym wątku. Host należy przekazać kod błędu do obiektu wywołującego.  
+# <a name="script_e_propagate-error-code"></a>Kod błędu SCRIPT_E_PROPAGATE
+Błąd skryptu jest propagowany do obiektu wywołującego, który może znajdować się w innym wątku. Host powinien przekazać kod błędu do obiektu wywołującego.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -27,5 +27,5 @@ Błąd skryptu jest są propagowane do obiektu wywołującego, która może być
 SCRIPT_E_PROPAGATE  0x80020102L  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Kody błędów, stałe i wyliczenia aktywnego skryptu](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHost::GetDeferredText | Dokumentacja firmy Microsoft
+title: 'IDebugDocumentHost:: GetDeferredText | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3e5800a6de15d2d59208022fa44d3c2f4c931e14
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 273b4eb52b7263d34c347dff3a00479945b809df
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446570"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72569427"
 ---
 # <a name="idebugdocumenthostgetdeferredtext"></a>IDebugDocumentHost::GetDeferredText
-Zwraca szeroką gamę znaków, które zostały dodane za pomocą `IDebugDocumentHelper::AddDeferredText` metody w oryginalnym dokumencie hosta.  
+Zwraca zakres znaków, które zostały dodane przy użyciu metody `IDebugDocumentHelper::AddDeferredText` w oryginalnym dokumencie hosta.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,22 +41,22 @@ HRESULT GetDeferredText(
   
 #### <a name="parameters"></a>Parametry  
  `dwTextStartCookie`  
- [in] Zdefiniowane przez hosta pliku cookie, który reprezentuje pozycję początkową tekstu.  
+ podczas Plik cookie zdefiniowany przez hosta, który reprezentuje pozycję początkową tekstu.  
   
  `pcharText`  
- [out w] Bufor tekstowy znaków. Ta metoda nie zwraca znaki, jeśli ten parametr jest `NULL`.  
+ [in. out] Bufor tekstowy znaku. Ta metoda nie zwraca znaków, jeśli ten parametr jest `NULL`.  
   
  `pstaTextAttr`  
- [out w] Buforu atrybut znaków. Ta metoda nie zwraca atrybuty, jeśli ten parametr jest `NULL`.  
+ [in. out] Bufor atrybutu znaku. Ta metoda nie zwraca atrybutów, jeśli ten parametr jest `NULL`.  
   
  `pcNumChars`  
- [out w] Wskazuje rzeczywistą liczbę znaków i atrybuty zwracane. Ten parametr musi być równa zero przed wywołaniem tej metody.  
+ [in. out] Wskazuje rzeczywistą liczbę zwracanych znaków/atrybutów. Ten parametr musi być ustawiony na wartość zero przed wywołaniem tej metody.  
   
  `cMaxChars`  
- [in] Maksymalna liczba znaków do zwrócenia.  
+ podczas Maksymalna liczba znaków do zwrócenia.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -64,12 +64,12 @@ HRESULT GetDeferredText(
 |`E_NOTIMPL`|Metoda nie jest zaimplementowana.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda może zwrócić `E_NOTIMPL`, jeśli host nie mogą wywoływać `IDebugDocumentHelper::AddDeferredText`.  
+ Ta metoda może zwracać `E_NOTIMPL`, Jeśli host nie wywoła `IDebugDocumentHelper::AddDeferredText`.  
   
 > [!NOTE]
-> Ta metoda zwraca tekst z oryginalnego dokumentu. Host nie zachować informacje o edycji lub innych zmian w dokumencie.  
+> Ta metoda zwraca tekst z oryginalnego dokumentu. Host nie śledzi edycji ani innych zmian w dokumencie.  
   
-## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugDocumentHost](../../winscript/reference/idebugdocumenthost-interface.md)   
- [IDebugDocumentHelper::AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)   
+## <a name="see-also"></a>Zobacz także  
+ [IDebugDocumentHost   interfejsu](../../winscript/reference/idebugdocumenthost-interface.md)  
+ [IDebugDocumentHelper:: AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)    
  [SOURCE_TEXT_ATTR, wyliczenie](../../winscript/reference/source-text-attr-enumeration.md)

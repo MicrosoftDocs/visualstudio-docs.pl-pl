@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextAuthor::RemoveText | Dokumentacja firmy Microsoft
+title: 'IDebugDocumentTextAuthor:: RemoveText | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 989031a6d4b207c69d1a58b2ff99e5797a629440
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 119a55d4ebd20e51890358ef8c5780a2ac8e4509
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63007771"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572051"
 ---
 # <a name="idebugdocumenttextauthorremovetext"></a>IDebugDocumentTextAuthor::RemoveText
 Usuwa tekst z dokumentu.  
@@ -38,13 +38,13 @@ HRESULT RemoveText(
   
 #### <a name="parameters"></a>Parametry  
  `cCharacterPosition`  
- [in] Rozpocznij zakres znaków, aby usunąć lokalizację.  
+ podczas Lokalizacja początkowa zakresu znaków do usunięcia.  
   
  `cNumToRemove`  
- [in] Liczba znaków do usunięcia.  
+ podczas Liczba znaków do usunięcia.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -53,6 +53,6 @@ HRESULT RemoveText(
 ## <a name="remarks"></a>Uwagi  
  Ta metoda usuwa tekst z dokumentu.  
   
-## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugDocumentTextAuthor](../../winscript/reference/idebugdocumenttextauthor-interface.md)   
+## <a name="see-also"></a>Zobacz także  
+ [IDebugDocumentTextAuthor   interfejsu](../../winscript/reference/idebugdocumenttextauthor-interface.md)  
  [IDebugDocumentTextAuthor::InsertText](../../winscript/reference/idebugdocumenttextauthor-inserttext.md)

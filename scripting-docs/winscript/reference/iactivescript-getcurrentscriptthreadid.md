@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::GetCurrentScriptThreadID | Microsoft Docs
+title: 'IActiveScript:: GetCurrentScriptThreadID | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9e1b6e7bae7d78c18e11cd1aac8d0844fb9e90a5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dedb16e0c007ed05370fb54835f84f00784c1ae4
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935659"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575765"
 ---
 # <a name="iactivescriptgetcurrentscriptthreadid"></a>IActiveScript::GetCurrentScriptThreadID
-Pobiera identyfikator aktualnie wykonywany wątek skryptów aparatu zdefiniowane. Identyfikator może być używany w kolejnych wywołaniach do metod Kontrola wykonywania wątków skryptu takich jak [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md) metody.  
+Pobiera identyfikator zdefiniowany przez aparat skryptów dla aktualnie wykonywanego wątku. Identyfikatora można użyć w kolejnych wywołaniach metod kontroli wykonywania wątku skryptu, takich jak Metoda [IActiveScript:: InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md) .  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,13 +37,13 @@ HRESULT GetCurrentScriptThreadID(
   
 #### <a name="parameters"></a>Parametry  
  `pstidThread`  
- [out] Adres zmiennej, która odbiera identyfikator wątku skryptu, które są skojarzone z bieżącym wątkiem. Interpretacja tego identyfikatora pozostało do silnika wykonywania skryptów, ale może być po prostu kopię Windows identyfikator wątku. Jeśli wątek Win32 kończy działanie, ten identyfikator staje się nieprzypisane i następnie można przypisać do innego wątku.  
+ określoną Adres zmiennej, która odbiera identyfikator wątku skryptu skojarzonego z bieżącym wątkiem. Interpretacja tego identyfikatora pozostała do aparatu skryptów, ale może to być tylko kopia identyfikatora wątku systemu Windows. Jeśli wątek Win32 zostanie przerwany, ten identyfikator stanie się nieprzypisany i następnie może zostać przypisany do innego wątku.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Zwraca `S_OK` w przypadku powodzenia lub `E_POINTER` Jeśli określono nieprawidłowy wskaźnik.  
+ Zwraca `S_OK`, jeśli się powiedzie, lub `E_POINTER`, jeśli określono nieprawidłowy wskaźnik.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda może być wywołana z wątków-base bez skutkuje objaśnienia-base na obiektach hosta lub do [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) interfejsu.  
+ Ta metoda może być wywoływana z wątków niebazowych bez wypełniania niepodstawowego wywołania obiektów hosta lub interfejsu [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) .  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IActiveScript](../../winscript/reference/iactivescript.md)

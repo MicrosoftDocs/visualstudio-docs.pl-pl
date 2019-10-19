@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteDebug::OnScriptErrorDebug | Microsoft Docs
+title: 'IActiveScriptSiteDebug:: OnScriptErrorDebug | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 50e8c7baa42d6f2f36dc71b768797dfe2a464bf3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 894767b3dae9db54e8bc438a82b27195308a4342
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992426"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572208"
 ---
 # <a name="iactivescriptsitedebugonscripterrordebug"></a>IActiveScriptSiteDebug::OnScriptErrorDebug
-Umożliwia hosta inteligentnego określić sposób obsługi błędów czasu wykonywania.  
+Umożliwia inteligentnemu hostowi określenie, jak obsługiwać błędy w czasie wykonywania.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -39,23 +39,23 @@ HRESULT OnScriptErrorDebug(
   
 #### <a name="parameters"></a>Parametry  
  `pErrorDebug`  
- [in] Błąd w czasie wykonywania, który wystąpił  
+ podczas Błąd czasu wykonywania, który wystąpił  
   
  `pfEnterDebugger`  
- [out] Flaga oznaczająca, czy błąd przekazać do debugera w celu debugowanie JIT.  
+ określoną Flaga oznaczająca, czy przekazać błąd do debugera, aby przeprowadzić debugowanie JIT.  
   
  `pfCallOnScriptErrorWhenContinuing`  
- [out] Flaga wskazująca, czy wywołać `IActiveScriptSite::OnScriptError` po użytkownik zdecyduje kontynuować bez debugowania.  
+ określoną Flaga oznaczająca, czy wywołać `IActiveScriptSite::OnScriptError`, gdy użytkownik zdecyduje się kontynuować bez debugowania.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Możliwe wartości obejmują, ale nie są ograniczone do wartości w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Możliwe wartości to m.in., ale nie są ograniczone do wartości w poniższej tabeli.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Jest host inteligentny ta metoda służy do określenia sposobu obsługi błędów czasu wykonywania.  
+ Inteligentny host może użyć tej metody, aby określić, jak obsługiwać błędy w czasie wykonywania.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IActiveScriptSiteDebug, interfejs](../../winscript/reference/iactivescriptsitedebug-interface.md)

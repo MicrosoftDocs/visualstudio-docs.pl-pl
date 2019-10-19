@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationThread::GetSystemThreadId | Microsoft Docs
+title: 'IRemoteDebugApplicationThread:: GetSystemThreadId | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9d5119db4108ef7fa0783bccc3f747fbd2ed26d0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 35c281047bd3333f8fdc3945ed97ad3f402c53a4
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788212"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575229"
 ---
 # <a name="iremotedebugapplicationthreadgetsystemthreadid"></a>IRemoteDebugApplicationThread::GetSystemThreadId
-Zwraca identyfikator działania — zależnym od systemu skojarzonych z wątkiem.  
+Zwraca identyfikator zależny od systemu operacyjnego skojarzony z wątkiem.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,17 +37,17 @@ HRESULT GetSystemThreadId(
   
 #### <a name="parameters"></a>Parametry  
  `dwThreadId`  
- [out] Identyfikator działania — zależnym od systemu, skojarzony z wątkiem.  
+ określoną Identyfikator zależny od systemu operacyjnego skojarzony z wątkiem.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Wartość `dwThreadId` nie musi być unikatowa w obrębie maszyn.  
+ Wartość `dwThreadId` nie musi być unikatowa dla wielu maszyn.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IRemoteDebugApplicationThread, interfejs](../../winscript/reference/iremotedebugapplicationthread-interface.md)

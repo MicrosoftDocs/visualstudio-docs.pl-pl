@@ -1,5 +1,5 @@
 ---
-title: Wyliczenie APPLICATION_NODE_EVENT_FILTER | Dokumentacja firmy Microsoft
+title: APPLICATION_NODE_EVENT_FILTER, Wyliczenie | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,18 +13,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3c1727c8d1526199d179fe137c9bf899959bc2ba
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 481e015ec84d833f52220276bffa4ce0163f98ff
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422213"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572645"
 ---
-# <a name="applicationnodeeventfilter-enumeration"></a>Wyliczenie APPLICATION_NODE_EVENT_FILTER
-Określa typy węzłów, które mają zostać wykluczone podczas filtrowania dokumentów kodu. Używane w [IDebugApplicationNode100::GetExcludedDocuments](../../winscript/reference/idebugapplicationnode100-getexcludeddocuments.md) i [IDebugApplicationNode100::SetFilterForEventSink](../../winscript/reference/idebugapplicationnode100-setfilterforeventsink.md)  
+# <a name="application_node_event_filter-enumeration"></a>Wyliczenie APPLICATION_NODE_EVENT_FILTER
+Określa typy węzłów, które mają zostać wykluczone podczas filtrowania dokumentów kodu. Używane w [IDebugApplicationNode100:: GetExcludedDocuments](../../winscript/reference/idebugapplicationnode100-getexcludeddocuments.md) i [IDebugApplicationNode100:: SetFilterForEventSink](../../winscript/reference/idebugapplicationnode100-setfilterforeventsink.md)  
   
 > [!IMPORTANT]
-> Te stałe są implementowane przez program PDM 10.0 lub nowszym. Znajduje się w zestawie activdbg100.h.  
+> Te stałe są implementowane przez PDM v 10.0 i nowsze. Znajduje się w zestawie activdbg100.h.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,8 +37,8 @@ typedef enum tagAPPLICATION_NODE_EVENT_FILTER {    FILTER_EXCLUDE_NOTHING = 0,  
 |Element członkowski|Wartość|Opis|  
 |------------|-----------|-----------------|  
 |FILTER_EXCLUDE_NOTHING|0x00000000|Wyślij wszystkie zdarzenia.|  
-|FILTER_EXCLUDE_ANONYMOUS_CODE|0x00000001|Wyklucz węzły anonimowe kodu. Węzły te są używane przez środowisko uruchomieniowe języka JScript dla `new Function([args,] <code>)'`.|  
-|FILTER_EXCLUDE_EVAL_CODE|0x00000002|Wyklucz węzły kod ewaluacyjny. Węzły te są używane przez środowisko uruchomieniowe języka JScript obsługę wersji ewaluacyjnej.|  
+|FILTER_EXCLUDE_ANONYMOUS_CODE|0x00000001|Wyklucz anonimowe węzły kodu. Te węzły są używane przez środowisko uruchomieniowe JScript dla `new Function([args,] <code>)'`.|  
+|FILTER_EXCLUDE_EVAL_CODE|0x00000002|Wyklucz węzły kodu eval. Te węzły są używane przez środowisko uruchomieniowe JScript do obsługi oceny.|  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Stałe, wyliczenia i struktury debugera aktywnego skryptu](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

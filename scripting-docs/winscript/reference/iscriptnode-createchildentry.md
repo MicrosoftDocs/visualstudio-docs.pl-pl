@@ -1,5 +1,5 @@
 ---
-title: 'IScriptNode:: CreateChildEntry | Dokumentacja firmy Microsoft'
+title: 'IScriptNode:: CreateChildEntry | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 75369df719b0cd140ce621e916215eb18cf30a9e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c58ff83c43a1418e6fb7bd8945afa181af60c68a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787622"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573615"
 ---
 # <a name="iscriptnode-createchildentry"></a>IScriptNode:: CreateChildEntry
-Dodaje wystąpienie podrzędnych `IScriptEntry`.  
+Dodaje wystąpienie podrzędne `IScriptEntry`.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -40,39 +40,39 @@ HRESULT CreateChildEntry(
   
 #### <a name="parameters"></a>Parametry  
  `isn`  
- [in] Indeks elementu podrzędnego w obiekcie nadrzędnym.  
+ podczas Indeks elementu podrzędnego w elemencie nadrzędnym.  
   
  `dwCookie`  
- [in] Zdefiniowane przez aplikację wartości używane do kojarzenia wpis podrzędnych za pomocą obiektu hosta.  
+ podczas Zdefiniowana przez aplikację wartość służąca do kojarzenia wpisu podrzędnego z obiektem hosta.  
   
  `pszDelimiter`  
- [in] Adres ogranicznika końcowego elementu skrypt bloku. Do analizowania, host zazwyczaj używa rozdzielnika (takie jak dwa pojedyncze cudzysłowy), aby wykrywać koniec bloku skryptu.  
+ podczas Adres ogranicznika bloku End-of-Script. W celu przeanalizowania Host zwykle używa ogranicznika (takiego jak dwa znaki pojedynczego cudzysłowu) w celu wykrycia końca bloku skryptu.  
   
- Ogranicznik umożliwia skryptu tworzenia aparatu, aby zapewnić przetwarzania wstępnego. Na przykład aparat może zastąpić znak pojedynczego cudzysłowu dwa znaki pojedynczego cudzysłowu jako ogranicznika. Aparat określa sposób korzystania z ogranicznikiem.  
+ Ogranicznik umożliwia aparatowi tworzenia skryptów zapewnienie wstępnego przetwarzania. Na przykład aparat może zamienić pojedynczy cudzysłów z dwoma pojedynczymi cudzysłowami do użycia jako ogranicznik. Aparat określa sposób użycia ogranicznika.  
   
- Wartość NULL, jeśli ogranicznika nie są oznaczane koniec bloku skryptu.  
+ Ustaw wartość NULL, jeśli ogranicznik nie oznacza końca bloku skryptu.  
   
  `ppse`  
- [out] Adres zmiennej, która otrzymuje wskaźnik `IScriptEntry` interfejsu, wystąpienia podrzędne.  
+ określoną Adres zmiennej, która otrzymuje wskaźnik do interfejsu `IScriptEntry` wystąpienia podrzędnego.  
   
- Aby uzyskać `IScriptNode` obiektów, które reprezentują strony sieci Web, ten parametr zwraca `IScriptEntry` wystąpienia, która określa Blok skryptu.  
+ W przypadku `IScriptNode` obiektów reprezentujących stronę sieci Web ten parametr zwraca wystąpienie `IScriptEntry`, które określa blok skryptu.  
   
- Aby uzyskać `IScriptEntry` obiektów, które reprezentują blok skryptu, ten parametr zwraca `IScriptEntry` wystąpienia, która określa obiekt funkcyjny.  
+ Dla `IScriptEntry` obiektów, które reprezentują blok skryptu, ten parametr zwraca wystąpienie `IScriptEntry`, które określa obiekt funkcji.  
   
- Aby uzyskać `IScriptEntry` obiektu obiektami, które reprezentują funkcję, ta metoda nie powiedzie się.  
+ W przypadku `IScriptEntry` obiektów, które reprezentują obiekt Function, ta metoda kończy się niepowodzeniem.  
   
- Aby uzyskać `IScriptScriptlet` obiektów, ta metoda nie powiedzie się.  
+ W przypadku obiektów `IScriptScriptlet` ta metoda kończy się niepowodzeniem.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ @No__t_0. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- `IScriptNode` Interfejs reprezentuje strony sieci Web lub jej elementów. `IScriptEntry` Interfejsu (który jest tworzony na podstawie `IScriptNode`) reprezentuje blok skryptu lub obiekt funkcyjny. `IScriptScriptlet` Interfejsu (który jest tworzony na podstawie `IScriptEntry`) reprezentuje program obsługi zdarzeń.  
+ Interfejs `IScriptNode` reprezentuje stronę sieci Web lub jej elementy. Interfejs `IScriptEntry` (pochodzący z `IScriptNode`) reprezentuje blok skryptu lub obiekt funkcji. Interfejs `IScriptScriptlet` (pochodzący z `IScriptEntry`) reprezentuje procedurę obsługi zdarzeń.  
   
-## <a name="see-also"></a>Zobacz też  
- [Interfejs IScriptNode](../../winscript/reference/iscriptnode-interface.md)   
+## <a name="see-also"></a>Zobacz także  
+ [IScriptNode   interfejsu](../../winscript/reference/iscriptnode-interface.md)  
  [IScriptEntry, interfejs](../../winscript/reference/iscriptentry-interface.md)

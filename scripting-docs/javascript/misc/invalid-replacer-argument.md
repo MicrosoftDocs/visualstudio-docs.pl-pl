@@ -1,5 +1,5 @@
 ---
-title: Nieprawidłowy argument zastępczy | Dokumentacja firmy Microsoft
+title: Nieprawidłowy argument zastępczy | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -15,22 +15,22 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 46e01a4e6bb989fad2da6f979c79b7aba13df63a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9ba76a2121dfb3853e38bacbdf49c985103c2a35
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63007317"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573806"
 ---
 # <a name="invalid-replacer-argument"></a>Nieprawidłowy argument zastępczy
-Podjęto próbę wywołania `JSON.stringify` z nieprawidłowym argumentem, który jest nieprawidłowy. `replacer` Argument musi być funkcją ani tablicą.  
+Podjęto próbę wywołania `JSON.stringify` z nieprawidłowym argumentem. Argument `replacer` musi być funkcją lub tablicą.  
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
-- Zmiana `replacer` argumentu dla funkcji lub tablicy.  
+- Zmień argument `replacer` na funkcję lub tablicę.  
   
 ## <a name="example"></a>Przykład  
- Kod, w tym przykładzie powoduje błąd w czasie wykonywania, ponieważ `memberfilter` jest obiektem, zamiast funkcji lub tablicy.  
+ Kod w tym przykładzie powoduje błąd w czasie wykonywania, ponieważ `memberfilter` jest obiektem, a nie funkcją lub tablicą.  
   
 ```JavaScript  
 var contact = new Object();  
@@ -44,7 +44,7 @@ var memberfilter = new Object();
 var jsontext = JSON.stringify(contact, memberfilter, "\t");  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
- [Obiekt JSON](../../javascript/reference/json-object-javascript.md)   
- [JSON.parse Function](../../javascript/reference/json-parse-function-javascript.md)   
+## <a name="see-also"></a>Zobacz także  
+ @No__t_1 [obiektu JSON](../../javascript/reference/json-object-javascript.md)  
+ [Funkcja JSON. parse](../../javascript/reference/json-parse-function-javascript.md)    
  [Błędy czasu wykonania JavaScript](../../javascript/reference/javascript-run-time-errors.md)

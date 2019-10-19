@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteDebug32::GetDocumentContextFromPosition | Dokumentacja firmy Microsoft
+title: 'IActiveScriptSiteDebug32:: GetDocumentContextFromPosition | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -10,15 +10,15 @@ ms.assetid: 53348dff-35a6-4303-b263-90c10af06bf3
 caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 9a52abcfa4defb49526f944469c95a2247f5d85c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7acbe2a5741fa94ac42470a85803d1720e0a8fa1
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992512"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574847"
 ---
 # <a name="iactivescriptsitedebug32getdocumentcontextfromposition"></a>IActiveScriptSiteDebug32::GetDocumentContextFromPosition
-Używane przez aparat języka, aby delegować `IDebugCodeContext::GetSourceContext`.  
+Używane przez Aparat języka do delegowania `IDebugCodeContext::GetSourceContext`.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -33,26 +33,26 @@ HRESULT GetDocumentContextFromPosition(
   
 #### <a name="parameters"></a>Parametry  
  `dwSourceContext`  
- [in] Zawartość źródłową udostępnionych `ParseScriptText` lub `AddScriptlet`.  
+ podczas Zawartość źródłowa zgodnie z `ParseScriptText` lub `AddScriptlet`.  
   
  `uCharacterOffset`  
- [in] Znak przesunięcie względem początku bloku skryptu lub scriptlet.  
+ podczas Przesunięcie znaku względem początku bloku skryptu lub Scriptlet.  
   
  `uNumChars`  
- [in] Liczba znaków w tym kontekście.  
+ podczas Liczba znaków w tym kontekście.  
   
  `ppsc`  
- [out] Kontekst dokumentu, odpowiadający tej pozycji znaku zakresu.  
+ określoną Kontekst dokumentu odpowiadający zakresowi pozycji znaku.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Aparaty języka ta metoda umożliwia delegowanie `IDebugCodeContext::GetSourceContext`.  
+ Aparaty języka używają tej metody do delegowania `IDebugCodeContext::GetSourceContext`.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IActiveScriptSiteDebug32, interfejs](../../winscript/reference/iactivescriptsitedebug32-interface.md)

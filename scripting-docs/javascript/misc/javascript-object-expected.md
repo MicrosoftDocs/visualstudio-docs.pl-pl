@@ -1,5 +1,5 @@
 ---
-title: Oczekiwany obiekt JavaScript | Dokumentacja firmy Microsoft
+title: Oczekiwano obiektu JavaScript | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,20 +14,20 @@ ms.assetid: cc7cc32b-e444-4afa-9be1-802c83fdf5ae
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ceaae323c974a1f41b6f5bd2a3ca093ef7c0b2d9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 20b9b6b17ac0e0aeeeeae99c39954bfd6b283fe2
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63007513"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573791"
 ---
 # <a name="javascript-object-expected"></a>JavaScript oczekiwany obiekt
-Próba przekazania innej niż[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] obiekt do wbudowanych funkcji, która oczekuje [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] obiektu. Różne funkcje wbudowane wymagają obiekty zdefiniowane w [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] (a nie obiekty zdefiniowane przez lub składników zewnętrznych, takich jak kontrolki hosta).  
+Podjęto próbę przekazania obiektu innego niż [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] do wbudowanej funkcji, która oczekuje obiektu [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]. Różne funkcje wbudowane wymagają obiektów zdefiniowanych w [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] (w przeciwieństwie do obiektów zdefiniowanych przez hosta lub składnika zewnętrznego, takiego jak kontrolka).  
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
-- Upewnij się, że obiekt, który jest przesyłany w jako parametr jest poprawnego typu.  
+- Upewnij się, że obiekt, który jest przekazywany jako parametr, jest poprawnego typu.  
   
-## <a name="see-also"></a>Zobacz też  
- [Obiekty i tablice](../../javascript/objects-and-arrays-javascript.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Obiekty i tablice](../../javascript/objects-and-arrays-javascript.md)    
  [Używanie tablic](../../javascript/advanced/using-arrays-javascript.md)

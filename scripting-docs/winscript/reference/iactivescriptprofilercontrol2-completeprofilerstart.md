@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerControl2::CompleteProfilerStart | Microsoft Docs
+title: 'IActiveScriptProfilerControl2:: CompleteProfilerStart | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,15 +13,15 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 36a1f5d6a1401e2860b65a29c8e383627e83c6be
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f0230ecb480792b5b24b7375f5b95926735d0a61
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993027"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571556"
 ---
 # <a name="iactivescriptprofilercontrol2completeprofilerstart"></a>IActiveScriptProfilerControl2::CompleteProfilerStart
-Powiadamia program profilujący do profilowania na wszystkich odpowiednich aparatów obsługi skryptów. Za pomocą tej metody, można uzyskać pełny stos wywołań, jeśli [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] działa w przypadku uruchamiania profilowania.  
+Powiadamia program profilujący o rozpoczęciu profilowania dla wszystkich odpowiednich aparatów skryptów. Korzystając z tej metody, można uzyskać kompletny stos wywołań, jeśli [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] jest uruchomiona po rozpoczęciu profilowania.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -38,14 +38,14 @@ HRESULT CompleteProfilerStart();
 |Wartość zwracana|Znaczenie|  
 |------------------|-------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
-|`E_FAIL`|Nie można rozpocząć profilowania.|  
-|`S_FALSE`|Profilowanie uruchomienia skryptu nie zostało uruchomione.|  
-|`ACTIVPROF_E_PROFILER_ABSENT`|Profilowanie nie jest włączona. Ustawiono bez wywołania zwrotnego.|  
+|`E_FAIL`|Nie można uruchomić profilowania.|  
+|`S_FALSE`|Profilowanie zostało uruchomione, gdy skrypt nie był uruchomiony.|  
+|`ACTIVPROF_E_PROFILER_ABSENT`|Profilowanie nie jest włączone. Nie ustawiono wywołania zwrotnego.|  
 |`E_OUTOFMEMORY`|Nie można uzyskać stosu wywołań ze względu na stan braku pamięci.|  
   
 ## <a name="remarks"></a>Uwagi  
- Wywoływanie `IActiveScriptProfilerControl2::CompleteProfilerStart` gwarantuje, że zdarzenia dla funkcji już w stosie wywołań są wysyłane. Ta metoda musi być wywoływana po profilowaniu rozpoczyna się silnik wykonywania skryptów, który znajduje się w bieżącej karcie. Metodę można wywołać dla dowolnego aparatu obsługi skryptów.  
+ Wywołanie `IActiveScriptProfilerControl2::CompleteProfilerStart` gwarantuje, że zdarzenia dla funkcji znajdujących się już w stosie wywołań są wysyłane. Ta metoda musi być wywoływana po uruchomieniu profilowania na dowolnym aparacie skryptów, który znajduje się na bieżącej karcie. Metodę można wywołać dla dowolnego aparatu skryptów.  
   
-## <a name="see-also"></a>Zobacz też  
- [IActiveScriptProfilerControl2::PrepareProfilerStop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md)   
+## <a name="see-also"></a>Zobacz także  
+ [IActiveScriptProfilerControl2::P repareprofilerstop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md)    
  [IActiveScriptProfilerControl2, interfejs](../../winscript/reference/iactivescriptprofilercontrol2-interface.md)

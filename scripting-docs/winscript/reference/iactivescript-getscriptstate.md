@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::GetScriptState | Dokumentacja firmy Microsoft
+title: 'IActiveScript:: GetScriptState | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0f9f3bedee9af9ae3cb145108d801f252267d5d2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d266e713879aafe1c5ca271d46b3030f3275460f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935751"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575737"
 ---
 # <a name="iactivescriptgetscriptstate"></a>IActiveScript::GetScriptState
-Pobiera bieżący stan silnika wykonywania skryptów. Ta metoda może być wywołana z wątków-base bez skutkuje objaśnienia-base na obiektach hosta lub do [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) interfejsu.  
+Pobiera bieżący stan aparatu obsługi skryptów. Ta metoda może być wywoływana z wątków niebazowych bez wypełniania niepodstawowego wywołania obiektów hosta lub interfejsu [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) .  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,10 +37,10 @@ HRESULT GetScriptState(
   
 #### <a name="parameters"></a>Parametry  
  `pss`  
- [out] Adres zmiennej, który otrzymuje wartość zdefiniowana w [wyliczenie SCRIPTSTATE](../../winscript/reference/scriptstate-enumeration.md) wyliczenia. Wartość wskazuje bieżący stan skojarzony wątek wywołujący silnik wykonywania skryptów.  
+ określoną Adres zmiennej, która otrzymuje wartość zdefiniowaną w wyliczeniu [wyliczenia SCRIPTSTATE](../../winscript/reference/scriptstate-enumeration.md) . Wartość wskazuje bieżący stan aparatu skryptów skojarzonego z wątkiem wywołującym.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Zwraca `S_OK` w przypadku powodzenia lub `E_POINTER` Jeśli określono nieprawidłowy wskaźnik.  
+ Zwraca `S_OK`, jeśli się powiedzie, lub `E_POINTER`, jeśli określono nieprawidłowy wskaźnik.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IActiveScript](../../winscript/reference/iactivescript.md)

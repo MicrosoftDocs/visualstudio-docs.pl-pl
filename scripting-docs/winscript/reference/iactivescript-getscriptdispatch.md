@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::GetScriptDispatch | Microsoft Docs
+title: 'IActiveScript:: GetScriptDispatch | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c329a4dbf42461369441b86f6d9ba18992916366
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ba53f2eccde18bd5b2d9c609ea680b50cb7261c9
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935603"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575760"
 ---
 # <a name="iactivescriptgetscriptdispatch"></a>IActiveScript::GetScriptDispatch
-Pobiera `IDispatch` interfejs służący do metod i właściwości skojarzone z aktualnie działającego skryptu.  
+Pobiera interfejs `IDispatch` dla metod i właściwości skojarzonych z aktualnie uruchomionym skryptem.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -38,24 +38,24 @@ HRESULT GetScriptDispatch(
   
 #### <a name="parameters"></a>Parametry  
  `pstrItemName`  
- [in] Adres buforu, który zawiera nazwę elementu, dla którego wywołujący musi mieć obiekt wysyłki skojarzone. Jeśli ten parametr jest `NULL`, obiekt wysyłania zawiera jako członków globalnych metod i właściwości definiowane przez skrypt. Za pomocą `IDispatch` interfejs oraz skojarzonych z nimi `ITypeInfo` interfejsu hosta można wywołać metody skryptów lub w widoku i modyfikować zmiennych skryptu.  
+ podczas Adres buforu, który zawiera nazwę elementu, dla którego obiekt wywołujący wymaga skojarzonego obiektu wysyłki. Jeśli ten parametr jest `NULL`, obiekt wysyłki zawiera jako członków wszystkie globalne metody i właściwości zdefiniowane przez skrypt. Za pomocą interfejsu `IDispatch` i skojarzonego interfejsu `ITypeInfo`, host może wywoływać metody skryptów lub wyświetlać i modyfikować zmienne skryptu.  
   
  `ppdisp`  
- [out] Adres zmiennej, która otrzymuje wskaźnik do obiektu skojarzone z właściwości i metody globalne skryptu. Jeśli silnik wykonywania skryptów nie obsługuje taki obiekt `NULL` jest zwracana.  
+ określoną Adres zmiennej, która otrzymuje wskaźnik do obiektu skojarzonego z globalnymi metodami i właściwościami skryptu. Jeśli aparat skryptów nie obsługuje takiego obiektu, `NULL` jest zwracana.  
   
 ## <a name="return-value"></a>Wartość zwracana  
  Zwraca jedną z następujących wartości:  
   
 |Wartość zwracana|Znaczenie|  
 |------------------|-------------|  
-|`S_OK`|Powodzenie.|  
-|`E_INVALIDARG`|Argument ten był nieprawidłowy.|  
+|`S_OK`|Prawnego.|  
+|`E_INVALIDARG`|Nieprawidłowy argument.|  
 |`E_POINTER`|Określono nieprawidłowy wskaźnik.|  
-|`E_UNEXPECTED`|Nie oczekiwano wywołania (na przykład aparat skryptów jeszcze nie został załadowany lub zainicjowany).|  
-|`S_FALSE`|Aparat skryptów nie obsługuje obiektu dispatch; `ppdisp` parametr ma wartość NULL.|  
+|`E_UNEXPECTED`|Wywołanie nie było oczekiwane (na przykład aparat skryptów nie został jeszcze załadowany lub zainicjowany).|  
+|`S_FALSE`|Aparat skryptów nie obsługuje obiektu wysyłania; parametr `ppdisp` ma wartość NULL.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ponieważ metody i właściwości mogą być dodawany przez wywołanie [IActiveScriptParse](../../winscript/reference/iactivescriptparse.md) interfejsu `IDispatch` zwracanego przez tę metodę interfejsu dynamicznie może obsługiwać nowe metody i właściwości. Podobnie `IDispatch::GetTypeInfo` metoda powinna zwrócić nowych, unikatowych `ITypeInfo` interfejsu dodanie metody i właściwości. Należy jednak pamiętać, nie może zmienić język aparatów `IDispatch` interfejsu w sposób niezgodny z dowolnego poprzedniego `ITypeInfo` zawracany interfejs. Oznacza to, na przykład, że DISPID nigdy nie zostanie ponownie.  
+ Ponieważ metody i właściwości można dodać przez wywołanie interfejsu [IActiveScriptParse](../../winscript/reference/iactivescriptparse.md) , interfejs `IDispatch` zwracany przez tę metodę może dynamicznie obsługiwać nowe metody i właściwości. Podobnie Metoda `IDispatch::GetTypeInfo` powinna zwracać nowy, unikatowy interfejs `ITypeInfo`, gdy są dodawane metody i właściwości. Należy jednak pamiętać, że aparaty języka nie mogą zmieniać interfejsu `IDispatch` w taki sposób, który jest niezgodny z żadnym z poprzednich `ITypeInfo` zwróconym interfejsem. Oznacza to, na przykład, że identyfikatory SPID nigdy nie będą ponownie używane.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IActiveScript](../../winscript/reference/iactivescript.md)

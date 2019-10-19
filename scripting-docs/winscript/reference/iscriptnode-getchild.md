@@ -1,5 +1,5 @@
 ---
-title: IScriptNode::GetChild | Dokumentacja firmy Microsoft
+title: 'IScriptNode:: GetChild | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 78b5c84c6ed9b3de9593f0d6ff02df93a0e9ba77
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 27ddde527be1ea4148e4166581ab2cb1a71d15f7
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787133"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573565"
 ---
 # <a name="iscriptnodegetchild"></a>IScriptNode::GetChild
-Zwraca element podrzędny, który jest umieszczony pod określonym indeksem w węźle.  
+Zwraca element podrzędny, który znajduje się w określonym indeksie w węźle.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -38,24 +38,24 @@ HRESULT GetChild(
   
 #### <a name="parameters"></a>Parametry  
  `isn`  
- [in] Indeks elementu podrzędnego w obiekcie nadrzędnym.  
+ podczas Indeks elementu podrzędnego w elemencie nadrzędnym.  
   
  `ppsn`  
- [out] Adres zmiennej, która otrzymuje wskaźnik `IScriptNode` interfejsu, wystąpienia podrzędne.  
+ określoną Adres zmiennej, która otrzymuje wskaźnik do interfejsu `IScriptNode` wystąpienia podrzędnego.  
   
- Aby uzyskać `IScriptNode` obiektów, które reprezentują strony sieci Web, ten parametr zwraca obiekt, który zawiera blok skryptu.  
+ W przypadku `IScriptNode` obiektów, które reprezentują stronę sieci Web, ten parametr zwraca obiekt, który zawiera blok skryptu.  
   
- Aby uzyskać `IScriptEntry` obiektów, które określają blok skryptu, ten parametr zwraca obiekt, który określa funkcję.  
+ Dla `IScriptEntry` obiektów, które określają blok skryptu, ten parametr zwraca obiekt, który określa funkcję.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ @No__t_0. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Dla `IScriptEntry` obiekty, które określają obiektu funkcyjnego i `IScriptScriptlet` obiektów, ta metoda nie powiedzie się, ponieważ nie ma żadnych wpisów podrzędnych.  
+ W przypadku `IScriptEntry` obiektów, które określają obiekt Function i dla obiektów `IScriptScriptlet`, ta metoda nie powiedzie się, ponieważ nie ma żadnych wpisów podrzędnych.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IScriptNode, interfejs](../../winscript/reference/iscriptnode-interface.md)

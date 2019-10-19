@@ -1,5 +1,5 @@
 ---
-title: Wyliczenie SCRIPTTHREADSTATE | Dokumentacja firmy Microsoft
+title: SCRIPTTHREADSTATE, Wyliczenie | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 906a309b25a1fe606fb37f8cbab70040e5a4c46f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bc4ef840310c27ccbadce2ed4f632514b555ef98
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840190"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575654"
 ---
 # <a name="scriptthreadstate-enumeration"></a>Wyliczenie SCRIPTTHREADSTATE
-Określa stan wątku w silnik wykonywania skryptów. To wyliczenie jest używane przez [IActiveScript::GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md) metody.  
+Określa stan wątku w aparacie skryptów. To wyliczenie jest używane przez metodę [IActiveScript:: GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md) .  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -36,12 +36,12 @@ typedef enum tagSCRIPTTHREADSTATE {
 } SCRIPTTHREADSTATE;  
 ```  
   
-## <a name="enumeration-values"></a>Wartości wyliczenia  
+## <a name="enumeration-values"></a>Wartości wyliczeniowe  
   
 |||  
 |-|-|  
-|SCRIPTTHREADSTATE_NOTINSCRIPT|Określony wątek nie jest obsługi zdarzenia ze skryptem, tekst skryptu przetwarzania wykonywane od razu, lub nie jest uruchomiona makro skryptu.|  
-|SCRIPTTHREADSTATE_RUNNING|Określony wątek jest aktywnie obsługi zdarzenia ze skryptem, tekst skryptu przetwarzania wykonywane od razu, lub uruchomienie skryptu makra.|  
+|SCRIPTTHREADSTATE_NOTINSCRIPT|Określony wątek nie obsługuje obecnie zdarzenia skryptowego, przetwarza natychmiast wykonanego skryptu lub uruchamia makro skryptu.|  
+|SCRIPTTHREADSTATE_RUNNING|Określony wątek aktywnie obsługuje zdarzenia inicjowane przez skrypty, przetwarza bezpośrednio wykonywane skrypty lub uruchamiając makro skryptu.|  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Kody błędów, stałe i wyliczenia aktywnego skryptu](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)

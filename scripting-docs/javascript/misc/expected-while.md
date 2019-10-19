@@ -1,5 +1,5 @@
 ---
-title: Oczekiwano instrukcji "while" | Dokumentacja firmy Microsoft
+title: Oczekiwano instrukcji "while" | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,20 +14,20 @@ ms.assetid: 867c10d0-7df6-4ba3-bbe6-7d5b3900cb22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4ec06ea25a6a6486a444d430e3ef15b888760650
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 89f744413b7ffa60b0a85d7ce0208ba2d529c96d
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433773"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575914"
 ---
 # <a name="expected-while"></a>Oczekiwano instrukcji „while"
-Nie dołączono `while` warunku w `do...while` pętli. A **czy** instrukcja musi mieć odpowiednią `while` testu na końcu bloku kodu.  
+Warunek `while` nie został uwzględniony w pętli `do...while`. Instrukcja **do** musi mieć odpowiedni test `while` na końcu bloku kodu.  
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
-- Obejmują `while` Testuj instrukcję po zamykającym nawiasie klamrowym.  
+- Uwzględnij instrukcję testową `while` po zamykającym nawiasie klamrowym.  
   
-## <a name="see-also"></a>Zobacz też  
- [while — instrukcja](../../javascript/reference/while-statement-javascript.md)   
+## <a name="see-also"></a>Zobacz także  
+ [while](../../javascript/reference/while-statement-javascript.md) ,   instrukcji  
  [Sterowanie przepływem programu](../../javascript/controlling-program-flow-javascript.md)

@@ -1,5 +1,5 @@
 ---
-title: IJsEnumDebugProperty, interfejs | Dokumentacja firmy Microsoft
+title: Interfejs IJsEnumDebugProperty | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -11,15 +11,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ec7bb508101f6de20bf979653a01b735b3cbf61e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1cb284b9fb1519b53efb7585559ec10f2f8b9e8e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977581"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573974"
 ---
 # <a name="ijsenumdebugproperty-interface"></a>IJsEnumDebugProperty — Interfejs
-Zawiera operacje przeglądania właściwość.  
+Zapewnia operacje przeglądania właściwości.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -34,10 +34,10 @@ IJsEnumDebugProperty : public IUnknown;
 |Nazwa|Opis|  
 |----------|-----------------|  
 |[IJsEnumDebugProperty::GetCount, metoda](../../winscript/reference/ijsenumdebugproperty-getcount-method.md)|Pobiera liczbę właściwości obiektu.|  
-|[IJsEnumDebugProperty::Next, metoda](../../winscript/reference/ijsenumdebugproperty-next-method.md)|Odczytuje właściwości tego obiektu.|  
+|[IJsEnumDebugProperty::Next, metoda](../../winscript/reference/ijsenumdebugproperty-next-method.md)|Odczytuje właściwości dla tego obiektu.|  
   
 ## <a name="requirements"></a>Wymagania  
- **Nagłówek:** jscript9diag.h  
+ **Nagłówek:** Jscript9diag. h  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Dokumentacja interfejsów skryptów systemu Windows](../../winscript/reference/windows-script-interfaces-reference.md)

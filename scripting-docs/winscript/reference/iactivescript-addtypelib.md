@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::AddTypeLib | Microsoft Docs
+title: 'IActiveScript:: AddTypeLib | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c4943d1305c2f25de4eec9e782949a66827de879
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 254a5133d42689020eaaae290a1016de4b848100
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955094"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575810"
 ---
 # <a name="iactivescriptaddtypelib"></a>IActiveScript::AddTypeLib
-Dodaje bibliotekę typów przestrzeń nazw dla skryptu. Jest to podobne do `#include` dyrektywy języka C/C++. Umożliwia zestaw wstępnie zdefiniowanych elementów, takich jak definicje klas `typedefs`i o nazwie stałych, które mają zostać dodane do środowiska wykonawczego dla skryptu.  
+Dodaje bibliotekę typów do przestrzeni nazw dla skryptu. Jest to podobne do dyrektywy `#include` w języku C/C++. Umożliwia ona dodanie zestawu wstępnie zdefiniowanych elementów, takich jak definicje klas, `typedefs` i nazwane stałe, które mają zostać dodane do środowiska wykonawczego dostępnego dla skryptu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -40,30 +40,30 @@ HRESULT AddTypeLib(
   
 #### <a name="parameters"></a>Parametry  
  `guidTypeLib`  
- [in] Identyfikator CLSID biblioteki typów do dodania.  
+ podczas Identyfikator CLSID biblioteki typów do dodania.  
   
  `dwMaj`  
- [in] Główny numer wersji.  
+ podczas Główny numer wersji.  
   
  `dwMin`  
- [in] Pomocniczy numer wersji.  
+ podczas Pomocniczy numer wersji.  
   
  `dwFlags`  
- [in] Flagi opcji. Mogą być następujące:  
+ podczas Flagi opcji. Mogą być następujące:  
   
 |Wartość|Znaczenie|  
 |-----------|-------------|  
-|SCRIPTTYPELIB_ISCONTROL|Biblioteka typów zawiera opis kontrolki ActiveX, który jest używany przez hosta.|  
+|SCRIPTTYPELIB_ISCONTROL|Biblioteka typów zawiera opis kontrolki ActiveX używanej przez hosta.|  
   
 ## <a name="return-value"></a>Wartość zwracana  
  Zwraca jedną z następujących wartości:  
   
 |Wartość zwracana|Znaczenie|  
 |------------------|-------------|  
-|`S_OK`|Powodzenie.|  
-|`E_INVALIDARG`|Argument ten był nieprawidłowy.|  
-|`E_UNEXPECTED`|Nie oczekiwano wywołania (na przykład aparat skryptów jeszcze nie został załadowany lub zainicjowany).|  
-|`TYPE_E_CANTLOADLIBRARY`|Nie można załadować określonej biblioteki typu.|  
+|`S_OK`|Prawnego.|  
+|`E_INVALIDARG`|Nieprawidłowy argument.|  
+|`E_UNEXPECTED`|Wywołanie nie było oczekiwane (na przykład aparat skryptów nie został jeszcze załadowany lub zainicjowany).|  
+|`TYPE_E_CANTLOADLIBRARY`|Nie można załadować określonej biblioteki typów.|  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IActiveScript](../../winscript/reference/iactivescript.md)

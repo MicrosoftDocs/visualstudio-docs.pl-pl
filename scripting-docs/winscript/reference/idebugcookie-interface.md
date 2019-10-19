@@ -1,5 +1,5 @@
 ---
-title: IDebugCookie Interface | Microsoft Docs
+title: Interfejs IDebugCookie | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,22 +13,22 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8ee129526113a1c8af8f918de81c1f286d5cb703
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 47b48b917ee3376c417beffd9972d76a444513ef
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974517"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573193"
 ---
 # <a name="idebugcookie-interface"></a>Interfejs IDebugCookie
-Zezwala na plik cookie debugowania, należy ustawić do użytku z programem `IMachineDebugManagerCookie` interfejsu. Aby uzyskać więcej informacji, zobacz [interfejs IMachineDebugManagerCookie](../../winscript/reference/imachinedebugmanagercookie-interface.md). Ten interfejs jest implementowany przez proces debugowania Menedżera (menedżerów PDM) i używane przez debugery skryptu.  
+Zezwala na ustawienie pliku cookie debugowania do użycia z interfejsem `IMachineDebugManagerCookie`. Aby uzyskać więcej informacji, zobacz [IMachineDebugManagerCookie Interface](../../winscript/reference/imachinedebugmanagercookie-interface.md). Ten interfejs jest implementowany przez Menedżera debugowania procesów (PDM) i używany przez debugera skryptów.  
   
 ## <a name="methods"></a>Metody  
- Oprócz metod odziedziczone `IUnknown`, `IDebugCookie` interfejsu udostępnia następujące metody.  
+ Oprócz metod dziedziczonych z `IUnknown` interfejs `IDebugCookie` udostępnia następujące metody.  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[IDebugCookie::SetDebugCookie](../../winscript/reference/idebugcookie-setdebugcookie.md)|Ustawia plik cookie debugowania aplikacji.|  
+|[IDebugCookie::SetDebugCookie](../../winscript/reference/idebugcookie-setdebugcookie.md)|Ustawia plik cookie aplikacji debugowania.|  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IMachineDebugManagerCookie, interfejs](../../winscript/reference/imachinedebugmanagercookie-interface.md)

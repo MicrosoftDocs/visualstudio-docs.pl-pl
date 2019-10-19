@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationThread::QueryIsCurrentThread | Dokumentacja firmy Microsoft
+title: 'IDebugApplicationThread:: QueryIsCurrentThread | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7d8871d197d662d179fa4d1ed8d420c48ecc5ab3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 189de2448d808b777a21b9353a7adc9f6e3dde24
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974569"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574552"
 ---
 # <a name="idebugapplicationthreadqueryiscurrentthread"></a>IDebugApplicationThread::QueryIsCurrentThread
-Określa, czy ten wątek jest aktualnie uruchomionemu wątkowi.  
+Określa, czy ten wątek jest aktualnie uruchomionym wątkiem.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,15 +37,15 @@ HRESULT QueryIsCurrentThread();
  Ta metoda nie przyjmuje żadnych parametrów.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
-|`S_OK`|Wykonanie metody powiodło się i jest to aktualnie uruchomionemu wątkowi.|  
-|`S_FALSE`|Nie jest aktualnie uruchomionemu wątkowi.|  
+|`S_OK`|Metoda powiodła się i jest to aktualnie uruchomiony wątek.|  
+|`S_FALSE`|To nie jest aktualnie uruchomiony wątek.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda określa, czy ten wątek aktualnie uruchomionemu wątkowi.  
+ Ta metoda określa, czy ten wątek jest aktualnie uruchomionym wątkiem.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IDebugApplicationThread, interfejs](../../winscript/reference/idebugapplicationthread-interface.md)

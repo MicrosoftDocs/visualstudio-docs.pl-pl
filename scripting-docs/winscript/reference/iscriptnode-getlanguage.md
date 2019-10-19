@@ -1,5 +1,5 @@
 ---
-title: IScriptNode::GetLanguage | Dokumentacja firmy Microsoft
+title: 'IScriptNode:: GetLanguage | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 36b7076bf7f261e462802174c6f9014403606ac8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 26fd5db22346292585be3cea751eaa8be1c284a9
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786961"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575691"
 ---
 # <a name="iscriptnodegetlanguage"></a>IScriptNode::GetLanguage
-Zwraca język skryptów, używany przez bieżącego węzła skryptu.  
+Zwraca język skryptów używany przez bieżący węzeł skryptu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,10 +37,10 @@ HRESULT GetLanguage(
   
 #### <a name="parameters"></a>Parametry  
  `pbstr`  
- [out] Wraca "JScript", jeśli węzeł skrypt używa języka JScript lub "VBScript", jeśli węzeł skrypt używa Visual Basic Scripting Edition (VBScript).  
+ określoną Zwraca wartość "JScript", jeśli węzeł skryptu używa języka JScript lub "VBScript", jeśli węzeł skryptu używa Visual Basic Scripting Edition (VBScript).  
   
 ## <a name="return-value"></a>Wartość zwracana  
- `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ @No__t_0. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -48,5 +48,5 @@ HRESULT GetLanguage(
   
 ## <a name="remarks"></a>Uwagi  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IScriptNode, interfejs](../../winscript/reference/iscriptnode-interface.md)

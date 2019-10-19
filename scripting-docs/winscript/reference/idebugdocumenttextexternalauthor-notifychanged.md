@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextExternalAuthor::NotifyChanged | Dokumentacja firmy Microsoft
+title: 'IDebugDocumentTextExternalAuthor:: NotifyChanged | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1290de76f8bec5018ad83eb4499c3d92cbf9eba9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ad02db80bd24a8a5ba96abaa61e85be9d69e553e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978539"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575953"
 ---
 # <a name="idebugdocumenttextexternalauthornotifychanged"></a>IDebugDocumentTextExternalAuthor::NotifyChanged
-Powiadamia hosta, że dokument źródłowy został zmieniony.  
+Powiadamia hosta o zmianie źródła dokumentu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,14 +37,14 @@ HRESULT NotifyChanged();
  Ta metoda nie przyjmuje żadnych parametrów.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda jest wywoływana przez edytor zewnętrzny po dokumentu oparte na plikach debuger został zmodyfikowany i zapisane w celu powiadomienia hosta, który zmienił się dokument źródłowy. Host następnie odświeża dokumentu z pliku źródłowego.  
+ Ta metoda jest wywoływana przez zewnętrzny edytor po zmodyfikowaniu i zapisaniu dokumentu debugera opartego na plikach w celu powiadomienia hosta o zmianie źródła dokumentu. Następnie Host odświeża dokument z pliku źródłowego.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IDebugDocumentTextExternalAuthor, interfejs](../../winscript/reference/idebugdocumenttextexternalauthor-interface.md)

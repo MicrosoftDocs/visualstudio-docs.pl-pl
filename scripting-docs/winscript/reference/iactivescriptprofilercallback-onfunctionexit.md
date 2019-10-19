@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerCallback::OnFunctionExit | Microsoft Docs
+title: 'IActiveScriptProfilerCallback:: OnFunctionExit | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9c84b64a12b1a6b61399f70b7209c86dd8d2a9a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 87801b7873e43498031264ff4719fb47eca99f40
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993335"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571671"
 ---
 # <a name="iactivescriptprofilercallbackonfunctionexit"></a>IActiveScriptProfilerCallback::OnFunctionExit
-Powiadamia program profilujący obiektu, aparat skryptów zakończono wykonywanie funkcji wywołaniu, które nie jest wywołaniem do modelu DOM (Document Object).  
+Powiadamia obiekt profilera, że aparat skryptów zakończył wywołanie funkcji, która nie jest wywołaniem do Document Object Model (DOM).  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -35,17 +35,17 @@ HRESULT OnFunctionExit(
   
 #### <a name="parameters"></a>Parametry  
  `scriptId`  
- [in] Unikatowy identyfikator skryptu, który jest ona częścią. Ten identyfikator jest przypisywany przez silnik wykonywania skryptów.  
+ podczas Unikatowy identyfikator skryptu, do którego należy ta funkcja. Ten identyfikator jest przypisywany przez aparat obsługi skryptów.  
   
  `functionId`  
- [in] Unikatowy identyfikator funkcji. Ten identyfikator jest przypisywany przez silnik wykonywania skryptów.  
+ podczas Unikatowy identyfikator funkcji. Ten identyfikator jest przypisywany przez aparat obsługi skryptów.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Wartość zwracana przez tę metodę jest ignorowana przez silnik wykonywania skryptów.  
+ Zwracana wartość tej metody jest ignorowana przez aparat wykonywania skryptów.  
   
 ## <a name="remarks"></a>Uwagi  
- Dla połączeń modelu DOM, wywołuje aparat skryptów [IActiveScriptProfilerCallback2::OnFunctionExitByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionexitbyname.md) zamiast `IActiveScriptProfilerCallback::OnFunctionExit`. Jest to spowodowane dużą liczbą unikatowy metod i właściwości w modelu DOM.  
+ W przypadku wywołań modelu DOM aparat skryptów wywołuje [IActiveScriptProfilerCallback2:: OnFunctionExitByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionexitbyname.md) , a nie `IActiveScriptProfilerCallback::OnFunctionExit`. Wynika to z dużej liczby unikatowych metod i właściwości w modelu DOM.  
   
-## <a name="see-also"></a>Zobacz też  
- [IActiveScriptProfilerCallback::OnFunctionEnter](../../winscript/reference/iactivescriptprofilercallback-onfunctionenter.md)   
+## <a name="see-also"></a>Zobacz także  
+ [IActiveScriptProfilerCallback:: OnFunctionEnter](../../winscript/reference/iactivescriptprofilercallback-onfunctionenter.md)    
  [IActiveScriptProfilerCallback, interfejs](../../winscript/reference/iactivescriptprofilercallback-interface.md)

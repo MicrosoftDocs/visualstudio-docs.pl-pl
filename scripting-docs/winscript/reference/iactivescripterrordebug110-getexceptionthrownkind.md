@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptErrorDebug110::GetExceptionThrownKind | Dokumentacja firmy Microsoft
+title: 'IActiveScriptErrorDebug110:: GetExceptionThrownKind | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,18 +13,18 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a58add60560f22681f18225d844814e3547b671f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d50ef1dfa3492fdc43a5010b624dae296c692722
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436071"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575057"
 ---
 # <a name="iactivescripterrordebug110getexceptionthrownkind"></a>IActiveScriptErrorDebug110::GetExceptionThrownKind
 Zwraca wartość wskazującą rodzaj zgłaszanego wyjątku.  
   
 > [!IMPORTANT]
-> [Interfejs IActiveScriptErrorDebug110](../../winscript/reference/iactivescripterrordebug110-interface.md) jest implementowany przez program PDM w wersji 11.0 i nowszych. Znajduje się w zestawie activdbg100.h.  
+> [Interfejs IActiveScriptErrorDebug110](../../winscript/reference/iactivescripterrordebug110-interface.md) jest implementowany przez PDM w wersji 11,0 i nowszej. Znajduje się w zestawie activdbg100.h.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -36,14 +36,14 @@ HRESULT GetExceptionThrownKind(
   
 #### <a name="parameters"></a>Parametry  
  `pExceptionKind`  
- [out] Rodzaj wyjątku, który jest generowany, (na przykład pierwszego rzędu lub nieobsługiwany), reprezentowana przez [wyliczenie SCRIPT_ERROR_DEBUG_EXCEPTION_THROWN_KIND](../../winscript/reference/script-error-debug-exception-thrown-kind-enumeration.md) wartość wyliczenia.  
+ określoną Rodzaj wygenerowanego wyjątku (na przykład pierwsza szansa lub nieobsłużony) reprezentowany przez wartość wyliczenia [SCRIPT_ERROR_DEBUG_EXCEPTION_THROWN_KIND](../../winscript/reference/script-error-debug-exception-thrown-kind-enumeration.md) .  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IActiveScriptErrorDebug110, interfejs](../../winscript/reference/iactivescripterrordebug110-interface.md)

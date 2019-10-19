@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::SetLongName | Dokumentacja firmy Microsoft
+title: 'IDebugDocumentHelper:: setlongname | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e10542b5e792f01c50d57bc3a7481d6b8c01090d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 312e60b7024cc2b93e0087c86fe78738c74df8c1
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949009"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72570037"
 ---
 # <a name="idebugdocumenthelpersetlongname"></a>IDebugDocumentHelper::SetLongName
-Ustawia długa nazwa dokumentu.  
+Ustawia długą nazwę dokumentu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,17 +37,17 @@ HRESULT SetLongName(
   
 #### <a name="parameters"></a>Parametry  
  `pszLongName`  
- [in] Ciąg zakończony wartością null zawierający długa nazwa dokumentu.  
+ podczas Ciąg zakończony znakiem null zawierający długą nazwę dokumentu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda określa nową nazwę długi dla dokumentu.  
+ Ta metoda ustawia nową długą nazwę dla dokumentu.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IDebugDocumentHelper, interfejs](../../winscript/reference/idebugdocumenthelper-interface.md)

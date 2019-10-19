@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationThread110::IsSuspendedForBreakPoint | Microsoft Docs
+title: 'IDebugApplicationThread110:: IsSuspendedForBreakPoint | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,18 +13,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 82b8957ae9f2b6674af7addf2239c745115e4e3f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b0e70993b95ccffcf6041bb04f37af90667fc4fd
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440525"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574457"
 ---
 # <a name="idebugapplicationthread110issuspendedforbreakpoint"></a>IDebugApplicationThread110::IsSuspendedForBreakPoint
-Określa, czy [IDebugApplicationThreadEvents110::OnSuspendForBreakPoint](../../winscript/reference/idebugapplicationthreadevents110-onsuspendforbreakpoint.md) została wywołana dla tego wątku i nie zostało jeszcze zakończone.  
+Określa, czy [IDebugApplicationThreadEvents110:: OnSuspendForBreakPoint](../../winscript/reference/idebugapplicationthreadevents110-onsuspendforbreakpoint.md) został wywołany w tym wątku i nie został jeszcze ukończony.  
   
 > [!IMPORTANT]
-> [Interfejs IDebugApplicationThread110](../../winscript/reference/idebugapplicationthread110-interface.md) jest implementowany przez program PDM w wersji 11.0 i nowszych. Znajduje się w zestawie activdbg100.h.  
+> [Interfejs IDebugApplicationThread110](../../winscript/reference/idebugapplicationthread110-interface.md) jest implementowany przez PDM v 11.0 i nowsze. Znajduje się w zestawie activdbg100.h.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -34,7 +34,7 @@ HRESULT IsSuspendedForBreakPoint([out, annotation("_Out_")] BOOL * pfIsSuspended
   
 #### <a name="parameters"></a>Parametry  
  `pfIsSuspended`  
- [out] `true` wątek jest zawieszona dla punktu przerwania, w przeciwnym razie `false`.  
+ [out] `true` Jeśli wątek jest zawieszony dla punktu przerwania, w przeciwnym razie `false`.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IDebugApplicationThread110, interfejs](../../winscript/reference/idebugapplicationthread110-interface.md)

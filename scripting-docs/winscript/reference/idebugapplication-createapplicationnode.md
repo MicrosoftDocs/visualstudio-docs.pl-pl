@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::CreateApplicationNode | Dokumentacja firmy Microsoft
+title: 'IDebugApplication:: CreateApplicationNode | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 02a15a67d8f8b6171e9f5893c7f8cd15f79776b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 13e94a561ca78781167843124a86febb3ef13da2
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991031"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573172"
 ---
 # <a name="idebugapplicationcreateapplicationnode"></a>IDebugApplication::CreateApplicationNode
-Tworzy nowy węzeł aplikacji, który jest skojarzony z dostawcą danego dokumentu.  
+Tworzy nowy węzeł aplikacji skojarzony z określonym dostawcą dokumentów.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,17 +37,17 @@ HRESULT CreateApplicationNode(
   
 #### <a name="parameters"></a>Parametry  
  `ppdanNew`  
- [out] Węzeł aplikacji skojarzonych z tym dostawcą dokumentu.  
+ określoną Węzeł aplikacji skojarzony z tym dostawcą dokumentów.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Nowy węzeł aplikacji nie jest widoczna, dopóki nie jest on dołączony do węzła nadrzędnego.  
+ Nowy węzeł aplikacji nie jest widoczny, dopóki nie zostanie dołączony do węzła nadrzędnego.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IDebugApplication, interfejs](../../winscript/reference/idebugapplication-interface.md)

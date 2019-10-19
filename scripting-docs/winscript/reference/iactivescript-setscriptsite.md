@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::SetScriptSite | Microsoft Docs
+title: 'IActiveScript:: SetScriptSite | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3fdf5f3ae84d1a991d67170b5f2b02114b91ee05
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 063dcc7b580334bff9780e9c209b621ef7e25656
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935557"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575327"
 ---
 # <a name="iactivescriptsetscriptsite"></a>IActiveScript::SetScriptSite
-Informuje silnik wykonywania skryptów z [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) lokacji interfejsu udostępniane przez hosta. Wywołanie tej metody przed wszystkimi pozostałymi [IActiveScript](../../winscript/reference/iactivescript.md) służy metod interfejsu.  
+Informuje aparat obsługi skryptów w witrynie interfejsu [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) dostarczonej przez hosta. Wywołaj tę metodę przed użyciem innych metod interfejsu [IActiveScript](../../winscript/reference/iactivescript.md) .  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,18 +37,18 @@ HRESULT SetScriptSite(
   
 #### <a name="parameters"></a>Parametry  
  `pScriptSite`  
- [in] Adres witryny dostarczony host skrypt ma zostać skojarzony z tym wystąpieniem silnik wykonywania skryptów. Lokacji należy jednoznacznie przypisać do tego wystąpienia aparatu skryptów; Nie można udostępnić z innych aparatów obsługi skryptów.  
+ podczas Adres witryny skryptu dostarczonej przez hosta, która ma zostać skojarzona z tym wystąpieniem aparatu skryptów. Lokacja musi być unikatowo przypisana do tego wystąpienia aparatu skryptów; nie może być współużytkowana z innymi aparatami skryptów.  
   
 ## <a name="return-value"></a>Wartość zwracana  
  Zwraca jedną z następujących wartości:  
   
 |Wartość zwracana|Znaczenie|  
 |------------------|-------------|  
-|`S_OK`|Powodzenie.|  
-|`E_FAIL`|Wystąpił nieokreślony błąd; aparat skryptów nie może zakończyć inicjowanie lokacji.|  
-|`E_INVALIDARG`|Argument ten był nieprawidłowy.|  
+|`S_OK`|Prawnego.|  
+|`E_FAIL`|Wystąpił nieokreślony błąd; aparat skryptów nie mógł zakończyć inicjowania lokacji.|  
+|`E_INVALIDARG`|Nieprawidłowy argument.|  
 |`E_POINTER`|Określono nieprawidłowy wskaźnik.|  
-|`E_UNEXPECTED`|Nie oczekiwano wywołania (na przykład lokacji został już ustawiony).|  
+|`E_UNEXPECTED`|Wywołanie nie było oczekiwane (na przykład witryna została już ustawiona).|  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IActiveScript](../../winscript/reference/iactivescript.md)

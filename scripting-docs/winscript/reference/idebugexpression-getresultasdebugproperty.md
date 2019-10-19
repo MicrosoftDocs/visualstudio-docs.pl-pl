@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression::GetResultAsDebugProperty | Dokumentacja firmy Microsoft
+title: 'IDebugExpression:: GetResultAsDebugProperty | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 06d9b513d40450e20bb87f07c460bef7ce2678c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 104c42f02d02be386711e687f02d333425834948
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978500"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575929"
 ---
 # <a name="idebugexpressiongetresultasdebugproperty"></a>IDebugExpression::GetResultAsDebugProperty
-Zwraca wynik obliczania wyrażenia jako właściwość debugowania i wartość zwracana wykonać operację.  
+Zwraca wynik obliczania wyrażenia jako właściwość Debug i wartość zwracaną operacji.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -38,24 +38,24 @@ HRESULT GetResultAsDebugProperty(
   
 #### <a name="parameters"></a>Parametry  
  `phrResult`  
- [out] Wartość zwracana wykonać operację.  
+ określoną Wartość zwracana przez operację.  
   
  `ppdp`  
- [out] Właściwości debugowania dla wyrażenia.  
+ określoną Właściwość Debug dla wyrażenia.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
-|`E_PENDING`|Ta operacja jest nadal oczekujące.|  
+|`E_PENDING`|Operacja jest nadal w stanie oczekiwania.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda zwraca wynik obliczania wyrażenia jako `IDebugProperty` i wykonać operację `HRESULT`.  
+ Ta metoda zwraca wynik oceny wyrażenia jako `IDebugProperty` i `HRESULT` operacji.  
   
  Ta metoda zwraca `S_OK` i `phrResult` zwraca `E_ABORT` Jeśli `Abort` przerywa operację.  
   
-## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugExpression](../../winscript/reference/idebugexpression-interface.md)   
+## <a name="see-also"></a>Zobacz także  
+ [IDebugExpression   interfejsu](../../winscript/reference/idebugexpression-interface.md)  
  [IDebugExpression::Abort](../../winscript/reference/idebugexpression-abort.md)

@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugStackFrames::Next | Dokumentacja firmy Microsoft
+title: 'IEnumDebugStackFrames:: Next | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0e4025af8cf0de76ff224bf5236ba7130d638deb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 17261f8ba9b2957d33ed7019c16f2e1423b6b42e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963354"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575546"
 ---
 # <a name="ienumdebugstackframesnext"></a>IEnumDebugStackFrames::Next
-Pobiera określoną liczbę segmentów w kolejności wyliczenia.  
+Pobiera określoną liczbę segmentów w sekwencji wyliczenia.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -39,24 +39,24 @@ HRESULT Next(
   
 #### <a name="parameters"></a>Parametry  
  `celt`  
- [in] Liczba segmentów do pobrania.  
+ podczas Liczba segmentów do pobrania.  
   
  `prgdsfd`  
- [out] Zwraca tablicę `DebugStackFrameDescriptor` interfejsy, które reprezentuje segmentów pobierania.  
+ określoną Zwraca tablicę `DebugStackFrameDescriptor` interfejsów, które reprezentują segmenty, które są pobierane.  
   
  `pceltFetched`  
- [out] Rzeczywista liczba segmentów pobrane przez moduł wyliczający.  
+ określoną Rzeczywista liczba segmentów pobranych przez moduł wyliczający.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda pobiera określoną liczbę segmentów w kolejności wyliczenia.  
+ Ta metoda pobiera określoną liczbę segmentów w sekwencji wyliczenia.  
   
-## <a name="see-also"></a>Zobacz też  
- [IEnumDebugStackFrames Interface](../../winscript/reference/ienumdebugstackframes-interface.md)   
+## <a name="see-also"></a>Zobacz także  
+ [IEnumDebugStackFrames   interfejsu](../../winscript/reference/ienumdebugstackframes-interface.md)  
  [DebugStackFrameDescriptor, struktura](../../winscript/reference/debugstackframedescriptor-structure.md)

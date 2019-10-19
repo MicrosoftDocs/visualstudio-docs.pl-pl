@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentInfo::GetDocumentClassId | Microsoft Docs
+title: 'IDebugDocumentInfo:: GetDocumentClassId | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c9e86c42954fafd4135956845f9465629cde9990
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 996e6d751807bba1e1a74cbb7e579db25193c32b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971085"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72569081"
 ---
 # <a name="idebugdocumentinfogetdocumentclassid"></a>IDebugDocumentInfo::GetDocumentClassId
-Zwraca `CLSID` określający typ dokumentu.  
+Zwraca `CLSID` identyfikujący typ dokumentu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,19 +37,19 @@ HRESULT GetDocumentClassId(
   
 #### <a name="parameters"></a>Parametry  
  `pclsidDocument`  
- [out] A `CLSID` określający typ dokumentu.  
+ określoną @No__t_0 identyfikujący typ dokumentu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda umożliwia debugerowi IDE przeglądarek niestandardowych hosta dla tego dokumentu.  
+ Ta metoda umożliwia środowisko IDE debugera do hostowania niestandardowych podglądów dla tego dokumentu.  
   
- Jeśli dokument nie jest możliwa do wyświetlenia danych, wartość zwracana przez `pclsidDocument` jest `CLSID_NULL`.  
+ Jeśli dokument nie ma widocznych danych, wartość zwracana `pclsidDocument` jest `CLSID_NULL`.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IDebugDocumentInfo, interfejs](../../winscript/reference/idebugdocumentinfo-interface.md)

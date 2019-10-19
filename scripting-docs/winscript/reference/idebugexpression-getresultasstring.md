@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression::GetResultAsString | Dokumentacja firmy Microsoft
+title: 'IDebugExpression:: GetResultAsString | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 84255e364630245564a0cbab5d38c6dff38df0a8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 56b8f637744227763f55b7c024745d7ae4448b40
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978475"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573526"
 ---
 # <a name="idebugexpressiongetresultasstring"></a>IDebugExpression::GetResultAsString
-Zwraca wynik obliczania wyrażenia jako ciąg i wartości zwracanej wykonać operację.  
+Zwraca wynik oceny wyrażenia jako ciąg i wartość zwracaną operacji.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -38,23 +38,23 @@ HRESULT GetResultAsString(
   
 #### <a name="parameters"></a>Parametry  
  `phrResult`  
- [out] Wartość zwracana wykonać operację.  
+ określoną Wartość zwracana przez operację.  
   
  `pbstrResult`  
- [out] Wynik obliczania wyrażenia.  
+ określoną Wynik obliczania wyrażenia.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
-|`E_PENDING`|Ta operacja jest nadal oczekujące.|  
+|`E_PENDING`|Operacja jest nadal w stanie oczekiwania.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda zwraca wynik obliczania wyrażenia jako ciąg i wykonać operację `HRESULT`.  
+ Ta metoda zwraca wynik oceny wyrażenia jako ciąg i `HRESULT` operacji.  
   
  Ta metoda zwraca `S_OK` i `phrResult` zwraca `E_ABORT` Jeśli `Abort` przerywa operację.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IDebugExpression, interfejs](../../winscript/reference/idebugexpression-interface.md)

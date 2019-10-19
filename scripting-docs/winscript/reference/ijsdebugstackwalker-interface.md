@@ -1,5 +1,5 @@
 ---
-title: IJsDebugStackWalker Interface | Microsoft Docs
+title: Interfejs IJsDebugStackWalker | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -11,15 +11,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d06af2c509339d9499f66e1f267c54c69951e225
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3b06b8c1f9282c42599c798030440c30450ef6dd
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977815"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574019"
 ---
 # <a name="ijsdebugstackwalker-interface"></a>IJsDebugStackWalker — Interfejs
-Przedstawia walker stosu dla określonego wątku.  
+Reprezentuje Analizator stosu dla określonego wątku.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -33,13 +33,13 @@ IJsDebugStackWalker : public IUnknown;
   
 |Nazwa|Opis|  
 |----------|-----------------|  
-|[IJsDebugStackWalker::GetNext, metoda](../../winscript/reference/ijsdebugstackwalker-getnext-method.md)|Pobiera następną klatkę.|  
+|[IJsDebugStackWalker::GetNext, metoda](../../winscript/reference/ijsdebugstackwalker-getnext-method.md)|Pobiera następną ramkę.|  
   
 ## <a name="remarks"></a>Uwagi  
- Walkery stosu można tworzyć tylko w przypadku, gdy element docelowy jest zatrzymany i są nieprawidłowe, gdy proces docelowy jest kontynuowane ponownie.  
+ Przeszukiwania stosu można tworzyć tylko w czasie, gdy element docelowy jest zatrzymany, i są nieprawidłowe, gdy proces docelowy jest kontynuowany ponownie.  
   
 ## <a name="requirements"></a>Wymagania  
- **Nagłówek:** jscript9diag.h  
+ **Nagłówek:** Jscript9diag. h  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Dokumentacja interfejsów skryptów systemu Windows](../../winscript/reference/windows-script-interfaces-reference.md)

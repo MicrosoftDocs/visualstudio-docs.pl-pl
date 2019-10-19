@@ -1,5 +1,5 @@
 ---
-title: Niezakończona stała typu string (JavaScript) | Dokumentacja firmy Microsoft
+title: Niezakończona stała typu String (JavaScript) | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,23 +14,23 @@ ms.assetid: 5083809e-9828-4aea-b9b0-80f46d6f3812
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c3c5f38ba41e2cadfd0a8234413c63cc96b6744a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a140c7587d4ca00c66590a471cfb32827cf5f780
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435645"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575891"
 ---
 # <a name="unterminated-string-constant-javascript"></a>Niezakończona stała typu string (JavaScript)
-Nie zakończył swojej stała typu string z cudzysłowu zamykającego. Stałe typu String muszą być ujęte w dwa znaki cudzysłowu.  
+Nie końcowa stała ciągu z zamykającym znakiem cudzysłowu. Stałe ciągów muszą być ujęte w parę znaków cudzysłowu.  
   
 > [!NOTE]
-> Można użyć dopasowania pary pojedynczych lub podwójnych cudzysłowów. Znaki podwójnego cudzysłowu mogą być zawarte w ciągach znaków objętych pojedynczymi znakami cudzysłowu, a znaki pojedynczego cudzysłowu mogą być zawarte w ciągach ujęty w podwójny cudzysłów.  
+> Można użyć pasujących par pojedynczych lub podwójnych cudzysłowów. Znaki podwójnego cudzysłowu mogą być zawarte w ciągach otoczonych pojedynczymi cudzysłowami, a znaki pojedynczego cudzysłowu mogą być zawarte w ciągach ujętych w podwójne cudzysłowy.  
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
-- Dodaj zamykającego znaku cudzysłowu do końca ciągu.  
+- Dodaj cudzysłów zamykający do końca ciągu.  
   
-## <a name="see-also"></a>Zobacz też  
- [String — obiekt](../../javascript/reference/string-object-javascript.md)   
+## <a name="see-also"></a>Zobacz także  
+ @No__t_1 [obiektu ciągu](../../javascript/reference/string-object-javascript.md)  
  [toString, metoda (Object)](../../javascript/reference/tostring-method-object-javascript.md)

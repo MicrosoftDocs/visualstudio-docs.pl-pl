@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText::GetContextOfPosition | Dokumentacja firmy Microsoft
+title: 'IDebugDocumentText:: GetContextOfPosition | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: df63362c422289652d45ed4bbc80f117e17fb73c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d6a35a85a6e4761e1bd0db67caafd0913e7e28a3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63008720"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572139"
 ---
 # <a name="idebugdocumenttextgetcontextofposition"></a>IDebugDocumentText::GetContextOfPosition
-Tworzy obiekt kontekstu dokumentu odpowiadający zakres pozycji podana znaków.  
+Tworzy obiekt kontekstu dokumentu odpowiadający podanemu zakresowi pozycji znaku.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -39,23 +39,23 @@ HRESULT GetContextOfPosition(
   
 #### <a name="parameters"></a>Parametry  
  `cCharacterPosition`  
- [in] Lokalizacja z zakresu znaków pozycja początkowa.  
+ podczas Lokalizacja początkowa zakresu pozycji znaku.  
   
  `cNumChars`  
- [in] Liczba znaków w zakresie.  
+ podczas Liczba znaków w zakresie.  
   
  `ppsc`  
- [out] Obiekt kontekstu dokumentu odpowiadający zakres pozycji określonego znaku.  
+ określoną Obiekt kontekstu dokumentu odpowiadający określonemu zakresowi pozycji znaku.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda tworzy obiekt kontekstu dokumentu odpowiadający zakres pozycji podana znaków.  
+ Ta metoda tworzy obiekt kontekstu dokumentu odpowiadający podanemu zakresowi pozycji znaku.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IDebugDocumentText, interfejs](../../winscript/reference/idebugdocumenttext-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::HandleRuntimeError | Dokumentacja firmy Microsoft
+title: 'IDebugApplication:: HandleRuntimeError | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c2c9a8b15b5095ac346ba047d6668aada7647a31
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2fd4ba2b811cd6c4e38c10a0c68c5808f2c0870a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412439"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574329"
 ---
 # <a name="idebugapplicationhandleruntimeerror"></a>IDebugApplication::HandleRuntimeError
-Powoduje, że bieżący wątek zablokować, a następnie wysyła powiadomienie z informacją o błędzie do debugera w IDE.  
+Powoduje, że bieżący wątek blokuje i wysyła powiadomienie o błędzie do środowiska IDE debugera.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,36 +41,36 @@ HRESULT HandleRuntimeError(
   
 #### <a name="parameters"></a>Parametry  
  `pErrorDebug`  
- [in] Błąd, który wystąpił.  
+ podczas Błąd, który wystąpił.  
   
  `pScriptSite`  
- [in] Witryna skryptu wątku.  
+ podczas Lokacja skryptu wątku.  
   
  `pbra`  
- [out] Akcja do wykonania, gdy debuger wznawia działanie aplikacji.  
+ określoną Akcja podejmowana, gdy debuger wznawia działanie aplikacji.  
   
  `perra`  
- [out] Akcja do wykonania, gdy debuger wznawia działanie aplikacji, jeśli występuje błąd.  
+ określoną Akcja podejmowana, gdy debuger wznawia działanie aplikacji, jeśli wystąpi błąd.  
   
  `pfCallOnScriptError`  
- [out] Flaga, która jest `TRUE` Jeśli silnik powinny wywoływać `IActiveScriptSite::OnScriptError` metody.  
+ określoną Flaga, która jest `TRUE`, jeśli aparat powinien wywołać metodę `IActiveScriptSite::OnScriptError`.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Aparat języka wywołuje tę metodę w kontekście wątku, która powoduje występowanie błędów czasu wykonywania. Ta metoda powoduje, że bieżący wątek zablokować i wysyła powiadomienia o błędzie do wysłania do debugera w IDE. Gdy debuger IDE powraca do aplikacji, ta metoda zwraca za pomocą akcji do wykonania.  
+ Aparat języka wywołuje tę metodę w kontekście wątku, który powoduje błąd w czasie wykonywania. Ta metoda powoduje, że bieżący wątek blokuje i wysyła powiadomienie o błędzie do wysłania do środowiska IDE debugera. Gdy środowisko IDE debugera wznawia działanie aplikacji, Metoda ta zwraca z akcją, która ma zostać wykonana.  
   
 > [!NOTE]
-> Podczas pracy w błędów czasu wykonywania, aparat języka może zostać wywołana przez wątek do wykonywania zadań, takich jak wyliczanie ramek stosu lub oceny wyrażenia.  
+> Podczas gdy błąd czasu wykonywania, Aparat języka może być wywoływany przez wątek w celu wykonywania takich zadań jak Wyliczenie ramek stosu lub obliczenia wyrażeń.  
   
-## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugApplication](../../winscript/reference/idebugapplication-interface.md)   
- [Interfejs IActiveScriptErrorDebug](../../winscript/reference/iactivescripterrordebug-interface.md)   
- [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)   
- [Wyliczenie BREAKRESUMEACTION](../../winscript/reference/breakresumeaction-enumeration.md)   
+## <a name="see-also"></a>Zobacz także  
+ [IDebugApplication   interfejsu](../../winscript/reference/idebugapplication-interface.md)  
+ [IActiveScriptErrorDebug   interfejsu](../../winscript/reference/iactivescripterrordebug-interface.md)  
+ [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)    
+ @No__t_1 [Wyliczenie BREAKRESUMEACTION](../../winscript/reference/breakresumeaction-enumeration.md)  
  [ERRORRESUMEACTION, wyliczenie](../../winscript/reference/errorresumeaction-enumeration.md)

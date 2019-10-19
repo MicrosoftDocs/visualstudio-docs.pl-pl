@@ -1,5 +1,5 @@
 ---
-title: Obiekt nie obsługuje tej właściwości lub metody | Dokumentacja firmy Microsoft
+title: Obiekt nie obsługuje tej właściwości lub metody | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,24 +14,24 @@ ms.assetid: 35f7a9b4-74fa-4ddb-b9f2-1a92345cb2ff
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 433972790310559b19ca5bc2c982c32e699e0e60
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ad324af24b7a5555803e8b897343030d8bf210bf
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63007446"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573747"
 ---
 # <a name="object-doesnt-support-this-property-or-method"></a>Obiekt nie obsługuje tej właściwości lub metody
-Możesz określić właściwości lub metody, która nie istnieje dla tego obiektu. Nie do wszystkich obiektów obsługuje wszystkie właściwości i metody.  
+Określono właściwość lub metodę, która nie istnieje dla tego obiektu. Nie wszystkie obiekty obsługują wszystkie właściwości i metody.  
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
-- Sprawdź właściwości i metody, aby upewnić się, że nie było żadnych błędów pisowni.  
+- Sprawdź właściwości i metody, aby upewnić się, że nie wystąpiły błędy podczas wpisywania.  
   
-- Sprawdź, czy typ środowiska uruchomieniowego obiektu jest typu oczekiwanego obiektu.  
+- Sprawdź, czy typ środowiska uruchomieniowego obiektu jest oczekiwanym typem obiektu.  
   
-- Zobacz dokumentację obiektu, aby uzyskać więcej informacji.  
+- Aby uzyskać więcej informacji, zobacz dokumentację obiektu.  
   
-## <a name="see-also"></a>Zobacz też  
- [Object — obiekt](../../javascript/reference/object-object-javascript.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Obiekt obiektu  ](../../javascript/reference/object-object-javascript.md)  
  [JavaScript — obiekty](../../javascript/reference/javascript-objects.md)

@@ -1,5 +1,5 @@
 ---
-title: EX_DBGPROP_INFO_FLAGS | Dokumentacja firmy Microsoft
+title: EX_DBGPROP_INFO_FLAGS | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 086a2b7544a95a302219ddc62c15c5b31dd1d9b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0094d49a7e528d312dc8206b02599651f192c6fb
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955239"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575851"
 ---
-# <a name="exdbgpropinfoflags"></a>EX_DBGPROP_INFO_FLAGS
-Używany do określenia `ExtendedDebugPropertyInfo` pola.  
+# <a name="ex_dbgprop_info_flags"></a>EX_DBGPROP_INFO_FLAGS
+Służy do określania pól `ExtendedDebugPropertyInfo`.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -50,11 +50,11 @@ enum {
  Inicjuje wartość właściwości.  
   
  EX_DBGPROP_INFO_LOCKBYTES  
- Inicjuje `plb` pola.  
+ Inicjuje pole `plb`.  
   
  EX_DBGPROP_INFO_DEBUGEXTPROP  
- Inicjuje `pDebugExtProp` pola, które zawiera `IDebugExtendedProperty` interfejsu.  
+ Inicjuje `pDebugExtProp` pole, które zawiera interfejs `IDebugExtendedProperty`.  
   
-## <a name="see-also"></a>Zobacz też  
- [ExtendedDebugPropertyInfo Structure](../../winscript/reference/extendeddebugpropertyinfo-structure.md)   
+## <a name="see-also"></a>Zobacz także  
+ @No__t_1 [struktury ExtendedDebugPropertyInfo](../../winscript/reference/extendeddebugpropertyinfo-structure.md)  
  [IDebugExtendedProperty, interfejs](../../winscript/reference/idebugextendedproperty-interface.md)

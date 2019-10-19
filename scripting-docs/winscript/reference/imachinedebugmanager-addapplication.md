@@ -1,5 +1,5 @@
 ---
-title: IMachineDebugManager::AddApplication | Dokumentacja firmy Microsoft
+title: 'IMachineDebugManager:: addapplication | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 96c1b865c722a3cceab331b81b1204ee682b911f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 54ff617ac96c0eb3498b796d4f7fe49f95e1cc96
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977851"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573966"
 ---
 # <a name="imachinedebugmanageraddapplication"></a>IMachineDebugManager::AddApplication
-Dodaje aplikację do uruchamiania listy aplikacji.  
+Dodaje aplikację do listy uruchomionych aplikacji.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -38,22 +38,22 @@ HRESULT AddApplication(
   
 #### <a name="parameters"></a>Parametry  
  `pda`  
- [in] Aplikacja z uruchomioną listy aplikacji.  
+ podczas Aplikacja na listę uruchomionych aplikacji.  
   
  `pdwAppCookie`  
- [out] Plik cookie, który służy do usuwania aplikacji Menedżer debugowania maszyny.  
+ określoną Plik cookie służący do usuwania aplikacji z Menedżera debugowania maszyny.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda jest wywoływana przez Menedżer debugowania procesów zawsze wtedy, gdy `IProcessDebugManager::AddApplication` jest wywoływana.  
+ Ta metoda jest wywoływana przez Menedżera debugowania procesów za każdym razem, gdy `IProcessDebugManager::AddApplication` jest wywoływana.  
   
-## <a name="see-also"></a>Zobacz też  
- [Interfejs IMachineDebugManager](../../winscript/reference/imachinedebugmanager-interface.md)   
- [IMachineDebugManager::RemoveApplication](../../winscript/reference/imachinedebugmanager-removeapplication.md)   
+## <a name="see-also"></a>Zobacz także  
+ [IMachineDebugManager   interfejsu](../../winscript/reference/imachinedebugmanager-interface.md)  
+ [IMachineDebugManager:: RemoveApplication](../../winscript/reference/imachinedebugmanager-removeapplication.md)    
  [IProcessDebugManager::AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)

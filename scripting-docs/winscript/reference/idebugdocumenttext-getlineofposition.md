@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText::GetLineOfPosition | Dokumentacja firmy Microsoft
+title: 'IDebugDocumentText:: GetLineOfPosition | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4d5d33a68b4bc87307281e37ff96f84834257a22
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e8ce32e46c42ee864a88e169a79539efb8b05633
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970877"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572114"
 ---
 # <a name="idebugdocumenttextgetlineofposition"></a>IDebugDocumentText::GetLineOfPosition
-Zwraca numer wiersza i, opcjonalnie, Przesunięcie znaku w wierszu, który odnosi się do danej pozycji znaku.  
+Zwraca numer wiersza i, opcjonalnie, Przesunięcie znaku w wierszu, który odnosi się do podanego położenia znaku.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -39,23 +39,23 @@ HRESULT GetLineOfPosition(
   
 #### <a name="parameters"></a>Parametry  
  `cCharacterPosition`  
- [in] Lokalizacja z zakresu znaków pozycja początkowa.  
+ podczas Lokalizacja początkowa zakresu pozycji znaku.  
   
  `pcLineNumber`  
- [out] Numer wiersza zakresu.  
+ określoną Numer wiersza zakresu.  
   
  `pcCharacterOffsetInLine`  
- [out w] Przesunięcie znaku zakresu, w wierszu `pcLineNumber`. Jeśli ten parametr jest `NULL`, metoda nie zwraca wartości.  
+ [in. out] Przesunięcie znaku zakresu w wierszu `pcLineNumber`. Jeśli ten parametr jest `NULL`, metoda nie zwraca wartości.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda zwraca numer wiersza i, opcjonalnie, Przesunięcie znaku w wierszu, który odnosi się do danej pozycji znaku.  
+ Ta metoda zwraca numer wiersza i, opcjonalnie, Przesunięcie znaku w wierszu, który odnosi się do podanego położenia znaku.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IDebugDocumentText, interfejs](../../winscript/reference/idebugdocumenttext-interface.md)

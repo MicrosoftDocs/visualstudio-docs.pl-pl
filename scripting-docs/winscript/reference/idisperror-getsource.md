@@ -1,5 +1,5 @@
 ---
-title: IDispError::GetSource | Dokumentacja firmy Microsoft
+title: 'IDispError:: GetSource | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8a84640f020a1ff255b8c7e5dd753752e0d310a7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 07c87585a92415f0b910210a56efa47e6f91417b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446885"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573087"
 ---
 # <a name="idisperrorgetsource"></a>IDispError::GetSource
-Zwraca identyfikator programowy zależne od języka dla klasy lub aplikacji, który spowodował błąd.  
+Zwraca identyfikator programistyczny zależny od języka dla klasy lub aplikacji, które spowodowały błąd.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,20 +37,20 @@ HRESULT GetSource(
   
 #### <a name="parameters"></a>Parametry  
  `pbstrSource`  
- [out] Ciąg, który zawiera identyfikator programowy, w postaci `progname.objectname`.  
+ określoną Ciąg, który zawiera identyfikator programowy, w postaci `progname.objectname`.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda jest używana do określenia klasy lub aplikacji, w którym wystąpił wyjątek. Identyfikator programowy mogą być zwracane w języku określonym przez podany w momencie wywołania identyfikator ustawień regionalnych (LCID).  
+ Ta metoda służy do określenia klasy lub aplikacji, w których wystąpił wyjątek. Identyfikator programistyczny może być zwracany w języku określonym przez identyfikator ustawień regionalnych (LCID) podany w czasie wywołania.  
   
 > [!NOTE]
 > Ta metoda nie jest zaimplementowana.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IDispError, interfejs](../../winscript/reference/idisperror-interface.md)

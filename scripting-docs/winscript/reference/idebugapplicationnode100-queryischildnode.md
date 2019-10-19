@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNode100::QueryIsChildNode | Microsoft Docs
+title: 'IDebugApplicationNode100:: QueryIsChildNode | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,18 +13,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 959de620e1e556d92a51dcab0062fa6ff055ec46
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 761b2800415adbcf298eb96f2231a74195b2291c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446662"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574745"
 ---
 # <a name="idebugapplicationnode100queryischildnode"></a>IDebugApplicationNode100::QueryIsChildNode
 Określa, czy określony dokument należy do jednego z węzłów podrzędnych tego węzła.  
   
 > [!IMPORTANT]
-> [Interfejs IDebugApplicationNode100](../../winscript/reference/idebugapplicationnode100-interface.md) jest implementowany przez program PDM 10.0 lub nowszym. Znajduje się w zestawie activdbg100.h.  
+> [Interfejs IDebugApplicationNode100](../../winscript/reference/idebugapplicationnode100-interface.md) jest implementowany przez PDM v 10.0 i nowsze. Znajduje się w zestawie activdbg100.h.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -36,5 +36,5 @@ HRESULT QueryIsChildNode(        [in] IDebugDocument* pSearchKey        );
  `pSearchKey`  
  Klucz wyszukiwania.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IDebugApplicationNode100, interfejs](../../winscript/reference/idebugapplicationnode100-interface.md)

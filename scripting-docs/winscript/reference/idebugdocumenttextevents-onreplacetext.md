@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextEvents::onReplaceText | Dokumentacja firmy Microsoft
+title: 'IDebugDocumentTextEvents:: onReplaceText | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b65496f3bf64dfaf1a4fc1f1180dd6715277cd59
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d037d45f1232ec8e70f7602df33532624fd0aa3b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946703"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576004"
 ---
 # <a name="idebugdocumenttexteventsonreplacetext"></a>IDebugDocumentTextEvents::onReplaceText
-Wskazuje, czy tekst został zastąpiony.  
+Wskazuje, że tekst został zastąpiony.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -38,20 +38,20 @@ HRESULT onReplaceText(
   
 #### <a name="parameters"></a>Parametry  
  `cCharacterPosition`  
- [in] Pozycja znaku pierwszego znaku zastąpione.  
+ podczas Pozycja znaku pierwszego znaku, który został zastąpiony.  
   
  `cNumToReplace`  
- [in] Liczba znaków.  
+ podczas Liczba zastąpionych znaków.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda wskazuje, czy tekst został zastąpiony.  
+ Ta metoda wskazuje, że tekst został zastąpiony.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IDebugDocumentTextEvents, interfejs](../../winscript/reference/idebugdocumenttextevents-interface.md)

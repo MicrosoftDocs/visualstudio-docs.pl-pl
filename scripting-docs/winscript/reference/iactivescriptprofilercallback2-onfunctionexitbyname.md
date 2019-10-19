@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerCallback2::OnFunctionExitByName | Microsoft Docs
+title: 'IActiveScriptProfilerCallback2:: OnFunctionExitByName | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,15 +13,15 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 87f0b7e7a3cea4e3e59fb43ef9ddc2d4934552e6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a70bc72dd1070759ad8b78e43926f06a2c56ec15
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993348"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571619"
 ---
 # <a name="iactivescriptprofilercallback2onfunctionexitbyname"></a>IActiveScriptProfilerCallback2::OnFunctionExitByName
-Powiadamia program profilujący, że obiekt, który aparat skryptów Zakończono wywołanie funkcji Document Object Model (DOM).  
+Powiadamia obiekt profilera, że aparat skryptów zakończył działanie wywołania funkcji Document Object Model (DOM).  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -34,17 +34,17 @@ HRESULT OnFunctionExitByName(
   
 #### <a name="parameters"></a>Parametry  
  `pwszFunctionName`  
- [in] Nazwa funkcji, że aparat skryptów zakończeniu pracy.  
+ podczas Nazwa funkcji, która zakończyła działanie aparatu skryptów.  
   
  `scriptType`  
- [in] Typ funkcji. Opisy prawidłowych wartości można znaleźć [wyliczenie profiler_script_type Enumeration](../../winscript/reference/profiler-script-type-enumeration.md).  
+ podczas Typ funkcji. Aby uzyskać opisy prawidłowych wartości, zobacz [Wyliczenie PROFILER_SCRIPT_TYPE](../../winscript/reference/profiler-script-type-enumeration.md).  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Wartość zwracana przez tę metodę jest ignorowana przez silnik wykonywania skryptów.  
+ Zwracana wartość tej metody jest ignorowana przez aparat wykonywania skryptów.  
   
 ## <a name="remarks"></a>Uwagi  
- Dla połączeń modelu DOM, aparat skryptów wywołuje tę metodę, zamiast wywoływać metodę [IActiveScriptProfilerCallback::OnFunctionExit](../../winscript/reference/iactivescriptprofilercallback-onfunctionexit.md). Jest to spowodowane dużą liczbą unikatowy metod i właściwości w modelu DOM.  
+ W przypadku wywołań modelu DOM aparat skryptów wywołuje tę metodę zamiast wywoływania [IActiveScriptProfilerCallback:: OnFunctionExit](../../winscript/reference/iactivescriptprofilercallback-onfunctionexit.md). Wynika to z dużej liczby unikatowych metod i właściwości w modelu DOM.  
   
-## <a name="see-also"></a>Zobacz też  
- [IActiveScriptProfilerCallback2::OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md)   
+## <a name="see-also"></a>Zobacz także  
+ [IActiveScriptProfilerCallback2:: OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md)    
  [IActiveScriptProfilerCallback2, interfejs](../../winscript/reference/iactivescriptprofilercallback2-interface.md)

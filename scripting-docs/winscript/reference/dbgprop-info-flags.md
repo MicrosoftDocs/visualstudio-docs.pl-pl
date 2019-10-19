@@ -19,15 +19,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c63cf941bca1965fc4a2e3997f0c0b50ebc44035
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5b8131531292e0f88108942648073883050dd609
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955305"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572579"
 ---
-# <a name="dbgpropinfoflags"></a>DBGPROP_INFO_FLAGS
-Używany do określenia `DebugPropertyInfo` pola  
+# <a name="dbgprop_info_flags"></a>DBGPROP_INFO_FLAGS
+Służy do określania pól `DebugPropertyInfo`  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -45,26 +45,26 @@ enum {
   
 ## <a name="members"></a>Elementy członkowskie  
  DBGPROP_INFO_NAME  
- Inicjuje `bstrName` pola.  
+ Inicjuje pole `bstrName`.  
   
  DBGPROP_INFO_TYPE  
- Inicjuje `bstrType` pola.  
+ Inicjuje pole `bstrType`.  
   
  DBGPROP_INFO_VALUE  
- Inicjuje `bstrValue` pola.  
+ Inicjuje pole `bstrValue`.  
   
  DBGPROP_INFO_FULLNAME  
- Inicjuje `bstrFullName` pola.  
+ Inicjuje pole `bstrFullName`.  
   
  DBGPROP_INFO_ATTRIBUTES  
- Inicjuje `dwAttrib` pola.  
+ Inicjuje pole `dwAttrib`.  
   
  DBGPROP_INFO_DEBUGPROP  
- Inicjuje `pDebugProp` pola, które zawiera `IDebugProperty` interfejsu.  
+ Inicjuje `pDebugProp` pole, które zawiera interfejs `IDebugProperty`.  
   
  DBGPROP_INFO_AUTOEXPAND  
- Oznacza, że wartość pola może zawierać wartość rozwinięte automatycznie, jeśli są dostępne dla tego typu obiektu.  
+ Określa, że pole wartości powinno zawierać wartość autoexpanded (jeśli jest dostępna) dla tego typu obiektu.  
   
-## <a name="see-also"></a>Zobacz też  
- [Struktura DebugPropertyInfo](../../winscript/reference/debugpropertyinfo-structure.md)   
+## <a name="see-also"></a>Zobacz także  
+ @No__t_1 [struktury DebugPropertyInfo](../../winscript/reference/debugpropertyinfo-structure.md)  
  [IDebugProperty, interfejs](../../winscript/reference/idebugproperty-interface.md)

@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f02827ebd5617485f180f4a16652b1cc841c41f4
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
+ms.openlocfilehash: 342a27571c9ad7b6ed1586fc762b2952ba86c3db
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314218"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575161"
 ---
 # <a name="step-7-add-multiplication-and-division-problems"></a>Krok 7. Dodawanie problemów mnożenia i dzielenia
 
@@ -48,7 +48,7 @@ W siódmej części tego samouczka dodasz problemy mnożenia i dzielenia, ale na
      [!code-vb[VbExpressTutorial3Step7#17](../ide/codesnippet/VisualBasic/step-7-add-multiplication-and-division-problems_3.vb)]
      [!code-csharp[VbExpressTutorial3Step7#17](../ide/codesnippet/CSharp/step-7-add-multiplication-and-division-problems_3.cs)]
 
-     Nie można łatwo wprowadzić znaku mnożenia (x) i znaku dzielenia (÷) przy użyciu klawiatury, dlatego Wizualizacja C# i Visual Basic akceptują gwiazdkę (*) dla mnożenia i ukośnika (/) dla dzielenia.
+     Nie można łatwo wprowadzić znaku mnożenia (×) i znaku dzielenia (÷) przy użyciu klawiatury, a więc C# Visual Basic Zaakceptuj gwiazdkę (*) dla mnożenia i ukośnika (/) dla dzielenia.
 
 4. Zmień ostatnią część programu obsługi zdarzeń <xref:System.Windows.Forms.Timer.Tick> czasomierza, aby wypełnił poprawną odpowiedź, gdy skończy się czas.
 

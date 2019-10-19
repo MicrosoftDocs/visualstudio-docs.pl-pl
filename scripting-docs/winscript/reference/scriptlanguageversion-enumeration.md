@@ -1,5 +1,5 @@
 ---
-title: Wyliczenie SCRIPTLANGUAGEVERSION | Dokumentacja firmy Microsoft
+title: SCRIPTLANGUAGEVERSION, Wyliczenie | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -11,15 +11,15 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6aab63989d1ae02f7c75fc9c20a14d59e8a05078
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 802a9f31cc7e3497c5e5fc54395d988552f75e84
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840216"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574361"
 ---
 # <a name="scriptlanguageversion-enumeration"></a>Wyliczenie SCRIPTLANGUAGEVERSION
-Określa możliwości skryptów wersji.  
+Określa możliwe wersje skryptów.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -27,14 +27,14 @@ Określa możliwości skryptów wersji.
 typedef enum tagSCRIPTLANGUAGEVERSION{    SCRIPTLANGUAGEVERSION_DEFAULT = 0,    SCRIPTLANGUAGEVERSION_5_7  = 1,    SCRIPTLANGUAGEVERSION_5_8  = 2,    SCRIPTLANGUAGEVERSION_MAX  = 255} SCRIPTLANGUAGEVERSION ;  
 ```  
   
-## <a name="enumeration-values"></a>Wartości wyliczenia  
+## <a name="enumeration-values"></a>Wartości wyliczeniowe  
   
 |||  
 |-|-|  
-|SCRIPTLANGUAGEVERSION_DEFAULT|Domyślna wersja. Wartość całkowita wynosi 0.|  
-|SCRIPTLANGUAGEVERSION_5_7|Windows Scripting wersji 5.7. Wartość liczby całkowitej to 1.|  
-|SCRIPTLANGUAGEVERSION_5_8|Windows Scripting wersję 5.8. Wartość całkowita to 2.|  
-|SCRIPTLANGUAGEVERSION_MAX|Maksymalna wersja. Wartość całkowita wynosi 255.|  
+|SCRIPTLANGUAGEVERSION_DEFAULT|Wersja domyślna. Wartość całkowita jest równa 0.|  
+|SCRIPTLANGUAGEVERSION_5_7|Obsługa skryptów systemu Windows w wersji 5,7. Wartość całkowita to 1.|  
+|SCRIPTLANGUAGEVERSION_5_8|Obsługa skryptów systemu Windows w wersji 5,8. Wartość całkowita to 2.|  
+|SCRIPTLANGUAGEVERSION_MAX|Maksymalna wersja. Wartość całkowita to 255.|  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Kody błędów, stałe i wyliczenia aktywnego skryptu](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)

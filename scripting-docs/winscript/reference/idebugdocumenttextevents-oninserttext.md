@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextEvents::onInsertText | Dokumentacja firmy Microsoft
+title: 'IDebugDocumentTextEvents:: onInsertText | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4f7f40178d64aaf654850ea54fafee65bc0a1c51
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c926caf8ff99cf183e41b2caf825aa828fb60de4
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946729"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572910"
 ---
 # <a name="idebugdocumenttexteventsoninserttext"></a>IDebugDocumentTextEvents::onInsertText
-Wskazuje, że dodano nowy tekst w dokumencie.  
+Wskazuje, że nowy tekst został dodany do dokumentu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -38,21 +38,21 @@ HRESULT onInsertText(
   
 #### <a name="parameters"></a>Parametry  
  `cCharacterPosition`  
- [in] Pozycja znaku, w którym dodano nowy tekst.  
+ podczas Pozycja znaku, w której został wstawiony nowy tekst.  
   
  `cNumToInsert`  
- [in] Liczba znaków, które zostały wstawione.  
+ podczas Liczba wstawionych znaków.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda jest zazwyczaj wywoływana przez hosta, który stopniowo ładuje zawartości, takiej jak przeglądarki sieci Web.  
+ Ta metoda jest zazwyczaj wywoływana przez hosta, który stopniowo ładuje zawartość, taką jak przeglądarka sieci Web.  
   
-## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugDocumentTextEvents](../../winscript/reference/idebugdocumenttextevents-interface.md)   
+## <a name="see-also"></a>Zobacz także  
+ [IDebugDocumentTextEvents   interfejsu](../../winscript/reference/idebugdocumenttextevents-interface.md)  
  [IDebugDocumentTextEvents::onRemoveText](../../winscript/reference/idebugdocumenttextevents-onremovetext.md)

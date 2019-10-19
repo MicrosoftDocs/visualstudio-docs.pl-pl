@@ -13,22 +13,22 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3691a874121c00dcccc69958eb5746a2c1d78122
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1ee680a3d00c6736549b03ce8fee5593a7a8c5af
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992024"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575896"
 ---
 # <a name="iactivescriptsitewindow"></a>IActiveScriptSiteWindow
-Ten interfejs jest implementowany przez hosty, które obsługują interfejs użytkownika na ten sam obiekt jako [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) . Hosty, które nie obsługują interfejs użytkownika, takich jak serwery, nie będzie implementować `IActiveScriptSiteWindow` interfejsu. Aparat skryptów uzyskuje dostęp do tego interfejsu, wywołując `QueryInterface` z `IActiveScriptSite`.  
+Ten interfejs jest implementowany przez hosty obsługujące interfejs użytkownika w tym samym obiekcie co [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) . Hosty, które nie obsługują interfejsu użytkownika, takie jak serwery, nie implementują interfejsu `IActiveScriptSiteWindow`. Aparat skryptów uzyskuje dostęp do tego interfejsu, wywołując `QueryInterface` z `IActiveScriptSite`.  
   
-## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[IActiveScriptSiteWindow::GetWindow](../../winscript/reference/iactivescriptsitewindow-getwindow.md)|Pobiera uchwyt okna, które mogą pełnić rolę właściciela okna podręcznego, który musi być wyświetlana przez silnik wykonywania skryptów.|  
-|[IActiveScriptSiteWindow::EnableModeless](../../winscript/reference/iactivescriptsitewindow-enablemodeless.md)|Powoduje, że host włączyć lub wyłączyć wyświetleniem głównego okna, a także Niemodalne okna dialogowe.|  
+|[IActiveScriptSiteWindow::GetWindow](../../winscript/reference/iactivescriptsitewindow-getwindow.md)|Pobiera uchwyt okna, który może działać jako właściciel okna podręcznego, który musi być wyświetlany przez aparat skryptów.|  
+|[IActiveScriptSiteWindow::EnableModeless](../../winscript/reference/iactivescriptsitewindow-enablemodeless.md)|Powoduje włączenie lub wyłączenie okna głównego oraz niemodalnych okien dialogowych.|  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Interfejsy aktywnego skryptu](../../winscript/reference/active-script-interfaces.md)

@@ -1,5 +1,5 @@
 ---
-title: IEnumRemoteDebugApplicationThreads::Clone | Dokumentacja firmy Microsoft
+title: 'IEnumRemoteDebugApplicationThreads:: Clone | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 12a6b7ccd34d0086314b1709ad7cc76bfdef6dbe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c92e77c748367fce727b64e64008423683bf5798
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62807228"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573457"
 ---
 # <a name="ienumremotedebugapplicationthreadsclone"></a>IEnumRemoteDebugApplicationThreads::Clone
-Tworzy moduł wyliczający, który zawiera ten sam stan jako bieżący modułu wyliczającego.  
+Tworzy moduł wyliczający, który zawiera ten sam stan co bieżący moduł wyliczający.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,17 +37,17 @@ HRESULT Clone(
   
 #### <a name="parameters"></a>Parametry  
  `pperdat`  
- [out] Zwraca `IEnumRemoteDebugApplicationThreads` interfejsu klonu modułu wyliczającego.  
+ określoną Zwraca interfejs `IEnumRemoteDebugApplicationThreads` klonowania modułu wyliczającego.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda tworzy moduł wyliczający, który zawiera ten sam stan jako bieżący modułu wyliczającego.  
+ Ta metoda tworzy moduł wyliczający, który zawiera ten sam stan co bieżący moduł wyliczający.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IEnumRemoteDebugApplicationThreads, interfejs](../../winscript/reference/ienumremotedebugapplicationthreads-interface.md)

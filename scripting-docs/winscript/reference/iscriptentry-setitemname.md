@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::SetItemName | Dokumentacja firmy Microsoft
+title: 'IScriptEntry:: setitemname | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d25ac4977f1fca44d63767c372db169f8cb61ea6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7ba226704f5b064c86b52c1b349650d509b2b549
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787661"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575371"
 ---
 # <a name="iscriptentrysetitemname"></a>IScriptEntry::SetItemName
-Ustawia nazwę elementu, który identyfikuje `IScriptEntry` obiektu.  
+Ustawia nazwę elementu, który identyfikuje obiekt `IScriptEntry`.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,10 +37,10 @@ HRESULT SetItemName(
   
 #### <a name="parameters"></a>Parametry  
  `psz`  
- [in] Adres buforu, który zawiera nazwę elementu. Nazwa elementu jest używany przez hosta do zidentyfikowania wpisu.  
+ podczas Adres buforu, który zawiera nazwę elementu. Nazwa elementu jest używana przez hosta do identyfikowania wpisu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ @No__t_0. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -48,10 +48,10 @@ HRESULT SetItemName(
 |`E_FAIL`|Metoda nie powiodła się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Aby uzyskać `IScriptEntry` obiektów, Metoda ta zwraca `S_OK`.  
+ W przypadku obiektów `IScriptEntry` ta metoda zwraca `S_OK`.  
   
- Aby uzyskać `IScriptScriptlet` obiektów (wynikającymi z `IScriptEntry`), ta metoda zwraca `E_FAIL`. Aby uzyskać `IScriptScriptlet` obiektów, nazwa elementu jest ustawiony [IActiveScriptAuthor::AddScriptlet](../../winscript/reference/iactivescriptauthor-addscriptlet.md) i nie można zmienić.  
+ W przypadku obiektów `IScriptScriptlet` (które pochodzą z `IScriptEntry`) Metoda ta zwraca `E_FAIL`. Dla `IScriptScriptlet` obiektów nazwa elementu jest ustawiana przez [IActiveScriptAuthor:: AddScriptlet](../../winscript/reference/iactivescriptauthor-addscriptlet.md) i nie można jej zmienić.  
   
-## <a name="see-also"></a>Zobacz też  
- [Interfejs IScriptEntry](../../winscript/reference/iscriptentry-interface.md)   
+## <a name="see-also"></a>Zobacz także  
+ [IScriptEntry   interfejsu](../../winscript/reference/iscriptentry-interface.md)  
  [IScriptEntry::GetItemName](../../winscript/reference/iscriptentry-getitemname.md)

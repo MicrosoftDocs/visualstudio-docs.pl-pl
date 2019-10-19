@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::StepOutComplete | Dokumentacja firmy Microsoft
+title: 'IDebugApplication:: StepOutComplete | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 04f8ecfb835199afa0a60f3fde3c8fbdc8812240
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f50d7e8a8936e52f4177450e7d163c4cfeaa55df
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990614"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571038"
 ---
 # <a name="idebugapplicationstepoutcomplete"></a>IDebugApplication::StepOutComplete
-Powiadamia Menedżer debugowania procesów, że aparat języka, w trybie pojedynczego kroku zostanie powrócić do obiektu wywołującego.  
+Powiadamia Menedżera debugowania procesów, że aparat języka w trybie pojedynczego kroku ma zwrócić do obiektu wywołującego.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,14 +37,14 @@ HRESULT StepOutComplete();
  Ta metoda nie przyjmuje żadnych parametrów.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Aparaty języka wywołać tę metodę w trybie pojedynczego kroku przed powrócą do wywołującego ich. Menedżer debugowania procesów używa tej możliwości, aby powiadomić wszystkich innych aparatów skryptów, które dzielą powinny one przy okazji pierwszego. Ta technika jest jak między językami kroku tryby są implementowane.  
+ Aparaty języka wywołują tę metodę w trybie pojedynczego kroku tuż przed zwróceniem ich do obiektu wywołującego. Menedżer debugowania procesów używa tej możliwości do powiadomienia wszystkich innych aparatów skryptów, które powinny być w pierwszej kolejności zerwane. Ta technika polega na tym, jak są implementowane tryby etapów wielu języków.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IDebugApplication, interfejs](../../winscript/reference/idebugapplication-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::HandleBreakPoint | Dokumentacja firmy Microsoft
+title: 'IDebugApplication:: HandleBreakPoint | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5e3444e6eedde9576216552e41abb0e97aafa2d7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 30937817424e88f80cfa6afa8c874adfd2b2687b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412377"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574966"
 ---
 # <a name="idebugapplicationhandlebreakpoint"></a>IDebugApplication::HandleBreakPoint
-Powoduje, że bieżący wątek zablokować, a następnie wysyła powiadomienie z informacją o punkt przerwania do debugera w IDE.  
+Powoduje, że bieżący wątek blokuje i wysyła powiadomienie o punkcie przerwania do środowiska IDE debugera.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -38,28 +38,28 @@ HRESULT HandleBreakPoint(
   
 #### <a name="parameters"></a>Parametry  
  `br`  
- [in] Powód przerwania.  
+ podczas Powód przerwania.  
   
  `pbra`  
- [out] Akcja do wykonania, gdy debuger wznawia działanie aplikacji.  
+ określoną Akcja podejmowana, gdy debuger wznawia działanie aplikacji.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Aparat języka wywołuje tę metodę w kontekście wątku, który trafienia punktu przerwania. Ta metoda blokują bieżący wątek i wysyła powiadomienie punkt przerwania do debugera w IDE. Gdy debuger wznowieniu działania aplikacji, `pbra` parametr określa, jaką akcję należy podjąć.  
+ Aparat języka wywołuje tę metodę w kontekście wątku, który trafi punkt przerwania. Ta metoda blokuje bieżący wątek i wysyła powiadomienie punktu przerwania do środowiska IDE debugera. Gdy debuger wznawia działanie aplikacji, parametr `pbra` określa akcję do wykonania.  
   
 > [!NOTE]
-> Aparat języka może zostać wywołana przez wątek wykonywania zadań, takich jak wyliczanie stosu ramki lub obliczać wyrażeń podczas punkt przerwania.  
+> Aparat języka może być wywoływany przez wątek w celu wykonywania zadań, takich jak wyliczanie ramek stosu lub obliczanie wyrażeń w punkcie przerwania.  
   
- Ta metoda powoduje `IApplicationDebugger::onHandleBreakPoint` do wywołania.  
+ Ta metoda powoduje wywoływanie `IApplicationDebugger::onHandleBreakPoint`.  
   
-## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugApplication](../../winscript/reference/idebugapplication-interface.md)   
- [IApplicationDebugger::onHandleBreakPoint](../../winscript/reference/iapplicationdebugger-onhandlebreakpoint.md)   
- [Wyliczenie BREAKREASON](../../winscript/reference/breakreason-enumeration.md)   
+## <a name="see-also"></a>Zobacz także  
+ [IDebugApplication   interfejsu](../../winscript/reference/idebugapplication-interface.md)  
+ [IApplicationDebugger:: onHandleBreakPoint](../../winscript/reference/iapplicationdebugger-onhandlebreakpoint.md)    
+ @No__t_1 [Wyliczenie BREAKREASON](../../winscript/reference/breakreason-enumeration.md)  
  [BREAKRESUMEACTION, wyliczenie](../../winscript/reference/breakresumeaction-enumeration.md)

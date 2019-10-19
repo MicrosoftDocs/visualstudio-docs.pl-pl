@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::SetName | Dokumentacja firmy Microsoft
+title: 'IScriptEntry:: SetName | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f6476869a54921cfdac34e9f1ed202adef909ddf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d9dfa27c6c8c58c0ee1599e17e1da5b5f424e416
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787604"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575351"
 ---
 # <a name="iscriptentrysetname"></a>IScriptEntry::SetName
-Wpisy, które reprezentują pojedynczy obiekt (na przykład funkcja) ustawia nazwę obiektu.  
+Dla wpisów reprezentujących pojedynczy obiekt (na przykład funkcja) ustawia nazwę obiektu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,10 +37,10 @@ HRESULT SetName(
   
 #### <a name="parameters"></a>Parametry  
  `psz`  
- [in] Nowa nazwa `IScriptEntry` obiektu.  
+ podczas Nowa nazwa obiektu `IScriptEntry`.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ @No__t_0. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -48,6 +48,6 @@ HRESULT SetName(
   
 ## <a name="remarks"></a>Uwagi  
   
-## <a name="see-also"></a>Zobacz też  
- [Interfejs IScriptEntry](../../winscript/reference/iscriptentry-interface.md)   
+## <a name="see-also"></a>Zobacz także  
+ [IScriptEntry   interfejsu](../../winscript/reference/iscriptentry-interface.md)  
  [IScriptEntry::GetName](../../winscript/reference/iscriptentry-getname.md)

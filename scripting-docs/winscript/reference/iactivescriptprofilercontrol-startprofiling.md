@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerControl::StartProfiling | Dokumentacja firmy Microsoft
+title: 'IActiveScriptProfilerControl:: StartProfiling | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 780886e4ca21abbe11580992244cee0d6a28b134
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cfc59dd43ac3eed433f92af2cdd0aefe40392c4a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993140"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571566"
 ---
 # <a name="iactivescriptprofilercontrolstartprofiling"></a>IActiveScriptProfilerControl::StartProfiling
-Rozpoczyna się profilowanie na silnik wykonywania skryptów. Aparat skryptów tworzy wystąpienie obiektu profiler poprzez wywołanie [CoCreateInstance](https://docs.microsoft.com/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance).  
+Uruchamia profilowanie w aparacie skryptów. Aparat tworzenia skryptów tworzy wystąpienie obiektu profilera, wykonując wywołanie funkcji [CoCreateInstance](https://docs.microsoft.com/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance).  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -36,13 +36,13 @@ HRESULT StartProfiling(
   
 #### <a name="parameters"></a>Parametry  
  `clsidProfilerObject`  
- [in] Klasa identyfikator (CLSID) obiekt profiler, który ma zostać utworzony.  
+ podczas Identyfikator klasy (CLSID) obiektu profilera, który ma zostać utworzony.  
   
  `dwEventMask`  
- [in] Maska bitów do 4-bajtowych, który określa typy zdarzeń. Bity są zdefiniowane w [wyliczenie PROFILER_EVENT_MASK](../../winscript/reference/profiler-event-mask-enumeration.md).  
+ podczas 4-bajtowa maska bitowa, która określa typy zdarzeń. Bity są zdefiniowane w [wyliczeniu PROFILER_EVENT_MASK](../../winscript/reference/profiler-event-mask-enumeration.md).  
   
  `dwContext`  
- [in] Wartość 4-bajtowych, który jest przekazywany do obiektu profilera.  
+ podczas Wartość 4-bajtowa, która jest przesyłana do obiektu profilera.  
   
 ## <a name="return-value"></a>Wartość zwracana  
  Zwraca wartość HRESULT. Dopuszczalne są następujące wartości:  
@@ -50,7 +50,7 @@ HRESULT StartProfiling(
 |Wartość zwracana|Znaczenie|  
 |------------------|-------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
-|`ACTIVPROF_E_PROFILER_PRESENT`|Profilowanie jest już włączony.|  
+|`ACTIVPROF_E_PROFILER_PRESENT`|Profilowanie jest już włączone.|  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IActiveScriptProfilerControl, interfejs](../../winscript/reference/iactivescriptprofilercontrol-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: Struktura DebugPropertyInfo | Dokumentacja firmy Microsoft
+title: Struktura DebugPropertyInfo | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 99208626b41f2463178bccecf73c21a1d15fa765
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 793c83b467460f0744abffe3f161f7510f56257a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955266"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575066"
 ---
 # <a name="debugpropertyinfo-structure"></a>Struktura DebugPropertyInfo
-Opisuje obiekt hierarchiczny charakter, który ma nazwę, typ i wartość. Służy do opisywania właściwości debugowania zmiennych lokalnych, parametrów, obejrzyj zmiennych i wyrażeń i rejestruje.  
+Opisuje obiekt o rodzaju hierarchicznej, który ma nazwę, typ i wartość. Służy do opisywania właściwości debugowania zmiennych lokalnych, parametrów, zmiennych i wyrażeń oraz rejestrów.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -43,27 +43,27 @@ typedef struct DebugPropertyInfo{
   
 ## <a name="members"></a>Elementy członkowskie  
  dwValidFields  
- Wyliczany typ danych używany do określenia, które pola są inicjowane.  
+ Wyliczany typ danych służący do określania, które pola są inicjowane.  
   
  bstrName  
  Nazwa właściwości w kontekście.  
   
- bstrType  
- Typ właściwości jako sformatowany ciąg.  
+ bstrtype  
+ Typ właściwości, jako sformatowany ciąg.  
   
  bstrValue  
- Wartość właściwości jako sformatowany ciąg.  
+ Wartość właściwości, jako sformatowany ciąg.  
   
  bstrFullName  
  Pełna nazwa właściwości.  
   
  dwAttrib  
- Wyliczenie, które określa flagi dla atrybutów właściwości debugowania.  
+ Wyliczenie określające flagi dla atrybutów właściwości debugowania.  
   
  pDebugProp  
- `IDebugProperty` Opisanego przez informacje zawarte w tym `DebugPropertyInfo` struktury.  
+ @No__t_0 opisany przez informacje zawarte w tej strukturze `DebugPropertyInfo`.  
   
-## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugProperty](../../winscript/reference/idebugproperty-interface.md)   
- [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)   
+## <a name="see-also"></a>Zobacz także  
+ [IDebugProperty   interfejsu](../../winscript/reference/idebugproperty-interface.md)  
+ [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)    
  [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)

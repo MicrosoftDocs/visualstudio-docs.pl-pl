@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerCallback::OnFunctionEnter | Microsoft Docs
+title: 'IActiveScriptProfilerCallback:: OnFunctionEnter | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1b8410fba08c1799d88532266c022d811c9553fd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6157638353712d6f376fa1eb46a68980b493a5c3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993387"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571686"
 ---
 # <a name="iactivescriptprofilercallbackonfunctionenter"></a>IActiveScriptProfilerCallback::OnFunctionEnter
-Powiadamia obiekt profiler, który ma wykonać wywołanie funkcji, która nie jest wywołaniem do modelu DOM (Document Object) silnik wykonywania skryptów.  
+Powiadamia obiekt profilera, że aparat skryptów ma wykonać wywołanie funkcji, które nie jest wywołaniem do Document Object Model (DOM).  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -35,17 +35,17 @@ HRESULT OnFunctionEnter(
   
 #### <a name="parameters"></a>Parametry  
  `scriptId`  
- [in] Unikatowy identyfikator skryptu, który jest ona częścią. Ten identyfikator jest przypisywany przez silnik wykonywania skryptów.  
+ podczas Unikatowy identyfikator skryptu, do którego należy ta funkcja. Ten identyfikator jest przypisywany przez aparat obsługi skryptów.  
   
  `functionId`  
- [in] Unikatowy identyfikator funkcji. Ten identyfikator jest przypisywany przez silnik wykonywania skryptów.  
+ podczas Unikatowy identyfikator funkcji. Ten identyfikator jest przypisywany przez aparat obsługi skryptów.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Wartość zwracana przez tę metodę jest ignorowana przez silnik wykonywania skryptów.  
+ Zwracana wartość tej metody jest ignorowana przez aparat wykonywania skryptów.  
   
 ## <a name="remarks"></a>Uwagi  
- Dla połączeń modelu DOM, wywołuje aparat skryptów [IActiveScriptProfilerCallback2::OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md) zamiast `IActiveScriptProfilerCallback::OnFunctionEnter`. Jest to spowodowane dużą liczbą unikatowy metod i właściwości w modelu DOM.  
+ W przypadku wywołań modelu DOM aparat skryptów wywołuje [IActiveScriptProfilerCallback2:: OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md) , a nie `IActiveScriptProfilerCallback::OnFunctionEnter`. Wynika to z dużej liczby unikatowych metod i właściwości w modelu DOM.  
   
-## <a name="see-also"></a>Zobacz też  
- [IActiveScriptProfilerCallback::OnFunctionExit](../../winscript/reference/iactivescriptprofilercallback-onfunctionexit.md)   
+## <a name="see-also"></a>Zobacz także  
+ [IActiveScriptProfilerCallback:: OnFunctionExit](../../winscript/reference/iactivescriptprofilercallback-onfunctionexit.md)    
  [IActiveScriptProfilerCallback, interfejs](../../winscript/reference/iactivescriptprofilercallback-interface.md)

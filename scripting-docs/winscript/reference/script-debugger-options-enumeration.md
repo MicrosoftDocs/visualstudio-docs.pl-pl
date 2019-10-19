@@ -1,5 +1,5 @@
 ---
-title: Wyliczenie SCRIPT_DEBUGGER_OPTIONS | Dokumentacja firmy Microsoft
+title: SCRIPT_DEBUGGER_OPTIONS, Wyliczenie | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,18 +13,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 404d3939e0a328beb5e2413d25885fddf8478ead
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c69d419732786442cda275bf85c74ab2b9d3e870
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443632"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574566"
 ---
-# <a name="scriptdebuggeroptions-enumeration"></a>Wyliczenie SCRIPT_DEBUGGER_OPTIONS
-Wskazuje zestaw opcji i/lub funkcje, które są stosowane do dołączonego debugera. Używane w [IDebugApplicationNode100::GetExcludedDocuments](../../winscript/reference/idebugapplicationnode100-getexcludeddocuments.md) i [IDebugApplicationNode100::SetFilterForEventSink](../../winscript/reference/idebugapplicationnode100-setfilterforeventsink.md)  
+# <a name="script_debugger_options-enumeration"></a>Wyliczenie SCRIPT_DEBUGGER_OPTIONS
+Wskazuje zestaw opcji i/lub możliwości, które mają zastosowanie do dołączonego debugera. Używane w [IDebugApplicationNode100:: GetExcludedDocuments](../../winscript/reference/idebugapplicationnode100-getexcludeddocuments.md) i [IDebugApplicationNode100:: SetFilterForEventSink](../../winscript/reference/idebugapplicationnode100-setfilterforeventsink.md)  
   
 > [!IMPORTANT]
-> Te stałe są implementowane przez program PDM 10.0 lub nowszym. Znajduje się w zestawie activdbg100.h.  
+> Te stałe są implementowane przez PDM v 10.0 i nowsze. Znajduje się w zestawie activdbg100.h.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -36,9 +36,9 @@ typedef SCRIPT_DEBUGGER_OPTIONS
   
 |Element członkowski|Wartość|Opis|  
 |------------|-----------|-----------------|  
-|SDO_NONE|0x00000000|Brak opcji są ustawione.|  
-|SDO_ENABLE_FIRST_CHANCE_EXCEPTIONS|0x00000001|Wskazuje, że wykonywania skryptów, powinny wywoływać zdarzenia BREAKREASON_ERROR, gdy wyjątek jest zgłaszany. Ta opcja może być ustawione przez debuger lub ustawiony przez kod użytkownika za pośrednictwem `Debug.enableFirstChanceExceptions(<true&#124;false>)`.|  
-|SDO_ENABLE_WEB_WORKER_SUPPORT|0x00000002|Wskazuje, że dołączony debuger obsługuje internetowych procesów roboczych.|  
+|SDO_NONE|0x00000000|Nie ustawiono żadnych opcji.|  
+|SDO_ENABLE_FIRST_CHANCE_EXCEPTIONS|0x00000001|Wskazuje, że środowisko uruchomieniowe skryptu ma zgłaszać zdarzenia BREAKREASON_ERROR, gdy wyjątek jest zgłaszany. Ta opcja może być ustawiana przez debuger lub ustawiana przez kod użytkownika za pośrednictwem `Debug.enableFirstChanceExceptions(<true&#124;false>)`.|  
+|SDO_ENABLE_WEB_WORKER_SUPPORT|0x00000002|Wskazuje, że dołączony debuger obsługuje internetowe procesy robocze.|  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Stałe, wyliczenia i struktury debugera aktywnego skryptu](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

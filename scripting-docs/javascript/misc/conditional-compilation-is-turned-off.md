@@ -1,5 +1,5 @@
 ---
-title: Kompilacja warunkowa jest wyłączona. | Dokumentacja firmy Microsoft
+title: Kompilacja warunkowa jest wyłączona | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,15 +14,15 @@ ms.assetid: 59a030b0-a6c6-47f2-b90e-c0ed204d5116
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8317121b840d82ab12d4a9e1ca50f6680eb1e21d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 56621d6f7fcc195a4ece7654adeafd1096c37e8b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946579"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572940"
 ---
 # <a name="conditional-compilation-is-turned-off"></a>Kompilacja warunkowa jest wyłączona
-Podjęto próbę użycia zmienną kompilacji warunkowej bez pierwszej kompilacji warunkowej zwroty na. Włączanie kompilacji warunkowej informuje [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] kompilatorze Interpretowanie identyfikatorów, począwszy od jako zmienne kompilacji warunkowej. Można to zrobić, począwszy od warunkowego kodu za pomocą instrukcji:  
+Podjęto próbę użycia zmiennej kompilacji warunkowej bez wcześniejszego włączenia kompilacji warunkowej. Włączenie kompilacji warunkowej instruuje kompilator [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)], aby interpretował identyfikatory zaczynające się od @ jako zmienne kompilacji warunkowej. Można to zrobić, zaczynając od kodu warunkowego za pomocą instrukcji:  
   
 ```js
 /*@cc_on @*/  
@@ -30,15 +30,15 @@ Podjęto próbę użycia zmienną kompilacji warunkowej bez pierwszej kompilacji
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
-- Na początku warunkowego kodu, dodaj następującą instrukcję:  
+- Dodaj następującą instrukcję na początku kodu warunkowego:  
   
     ```JavaScript  
     /*@cc_on @*/  
     ```  
   
-## <a name="see-also"></a>Zobacz też  
- [Kompilacja warunkowa](../../javascript/advanced/conditional-compilation-javascript.md)   
- [Zmienne kompilacji warunkowej](../../javascript/advanced/conditional-compilation-variables-javascript.md)   
- [@cc_on Instrukcja](../../javascript/reference/at-cc-on-statement-javascript.md)   
- [@if Instrukcja](../../javascript/reference/at-if-statement-javascript.md)   
+## <a name="see-also"></a>Zobacz także  
+ @No__t_1 [kompilacji warunkowej](../../javascript/advanced/conditional-compilation-javascript.md)  
+ [Zmienne kompilacji warunkowej](../../javascript/advanced/conditional-compilation-variables-javascript.md)    
+   [instrukcji @cc_on](../../javascript/reference/at-cc-on-statement-javascript.md)  
+   [instrukcji @if](../../javascript/reference/at-if-statement-javascript.md)  
  [@set, instrukcja](../../javascript/reference/at-set-statement-javascript.md)

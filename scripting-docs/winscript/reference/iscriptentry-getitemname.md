@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::GetItemName | Dokumentacja firmy Microsoft
+title: 'IScriptEntry:: getitemname | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9d8abc6d1264ce532adcbc59c262510a39ea7a91
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dcd1b83fa6d22fafc2123645f1f252fa1325f7f1
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787859"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575461"
 ---
 # <a name="iscriptentrygetitemname"></a>IScriptEntry::GetItemName
-Zwraca nazwę elementu, który identyfikuje `IScriptEntry` obiektu.  
+Zwraca nazwę elementu, który identyfikuje obiekt `IScriptEntry`.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,17 +37,17 @@ HRESULT GetItemName(
   
 #### <a name="parameters"></a>Parametry  
  `pbstr`  
- [out] Adres buforu, który zawiera nazwę elementu. Nazwa elementu jest używany przez hosta do zidentyfikowania wpisu.  
+ określoną Adres buforu, który zawiera nazwę elementu. Nazwa elementu jest używana przez hosta do identyfikowania wpisu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ @No__t_0. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Aby uzyskać `IScriptScriptlet` obiektów, należy określić nazwę elementu przy użyciu [IActiveScriptAuthor::AddScriptlet](../../winscript/reference/iactivescriptauthor-addscriptlet.md). Dla innych interfejsów, należy określić nazwę elementu przy użyciu [IScriptEntry::SetItemName](../../winscript/reference/iscriptentry-setitemname.md).  
+ Dla `IScriptScriptlet` obiektów należy ustawić nazwę elementu przy użyciu [IActiveScriptAuthor:: AddScriptlet](../../winscript/reference/iactivescriptauthor-addscriptlet.md). W przypadku innych interfejsów należy ustawić nazwę elementu przy użyciu [IScriptEntry:: Setitemname](../../winscript/reference/iscriptentry-setitemname.md).  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IScriptEntry, interfejs](../../winscript/reference/iscriptentry-interface.md)

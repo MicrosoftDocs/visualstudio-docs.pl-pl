@@ -1,5 +1,5 @@
 ---
-title: Niezakończony komentarz | Dokumentacja firmy Microsoft
+title: Niezakończony komentarz | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,15 +14,15 @@ ms.assetid: d4286315-814b-4966-b4c4-1ee19d796eff
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5bf7c570c832fb5db5489a2a9f9bec459f26f0a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 22bda5d6baabe8874d7514c137ddbcb3e11eb23b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63005958"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572525"
 ---
 # <a name="unterminated-comment"></a>Niezakończony komentarz
-Rozpoczęto blok komentarzy wielowierszowych, ale nie prawidłowo zakończyć je. Wielowierszowe komentarze zaczynają się od "/ *" połączenie oraz kończyć się odwrotnej "\*/" kombinacji. Oto przykład:  
+Rozpoczęto blok komentarza wielowierszowego, ale nie został on prawidłowo zakończony. Komentarze wielowierszowe zaczynają się od kombinacji "/*" i kończą się na odwrotnej kombinacji "\*/". Oto przykład:  
   
 ```JavaScript  
 /* This is a comment  
@@ -31,7 +31,7 @@ This is another part of the same comment.*/
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
-- Pamiętaj zakończyć Komentarze wielowierszowe "* /".  
+- Pamiętaj, aby zakończyć Komentarze wielowierszowe za pomocą znaku "*/".  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Instrukcje komentarzy](../../javascript/reference/comment-statements-javascript.md)

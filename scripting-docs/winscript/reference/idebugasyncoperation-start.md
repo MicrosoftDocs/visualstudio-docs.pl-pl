@@ -1,5 +1,5 @@
 ---
-title: IDebugAsyncOperation::Start | Dokumentacja firmy Microsoft
+title: 'IDebugAsyncOperation:: Start | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b3e02869abab65878412f96b77d5782b9717a1b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 485eb34ebe200e7f7898d9338effed37cbf2aa10
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821931"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573245"
 ---
 # <a name="idebugasyncoperationstart"></a>IDebugAsyncOperation::Start
-Powoduje, że operacja asynchroniczna rozpocząć.  
+Powoduje rozpoczęcie operacji asynchronicznej.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -40,18 +40,18 @@ HRESULT Start(
  Interfejs wywołania zwrotnego, który odbiera zdarzenia stanu z tej operacji.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
-|`E_UNEXPECTED`|Operacja jest już oczekujące.|  
+|`E_UNEXPECTED`|Operacja jest już w stanie oczekiwania.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda powoduje `IDebugSyncOperation::Execute` ma zostać wywołana asynchronicznie w wątku uzyskany z `IDebugSyncOperation::GetTargetThread`. Ta metoda powinna być wywoływana tylko z w wątku debuger; w przeciwnym razie nie zostanie zwrócone do czasu ukończenia operacji.  
+ Ta metoda powoduje, że `IDebugSyncOperation::Execute` być wywoływana asynchronicznie w wątku uzyskanym z `IDebugSyncOperation::GetTargetThread`. Ta metoda powinna być wywoływana tylko z poziomu wątku debugera; w przeciwnym razie nie będzie zwracana do momentu ukończenia operacji.  
   
-## <a name="see-also"></a>Zobacz też  
- [IDebugAsyncOperation::Abort](../../winscript/reference/idebugasyncoperation-abort.md)   
- [Interfejs IDebugAsyncOperation](../../winscript/reference/idebugasyncoperation-interface.md)   
- [IDebugSyncOperation::Execute](../../winscript/reference/idebugsyncoperation-execute.md)   
+## <a name="see-also"></a>Zobacz także  
+ [IDebugAsyncOperation:: Abort](../../winscript/reference/idebugasyncoperation-abort.md)    
+ [IDebugAsyncOperation   interfejsu](../../winscript/reference/idebugasyncoperation-interface.md)  
+ [IDebugSyncOperation:: Execute](../../winscript/reference/idebugsyncoperation-execute.md)    
  [IDebugSyncOperation::GetTargetThread](../../winscript/reference/idebugsyncoperation-gettargetthread.md)

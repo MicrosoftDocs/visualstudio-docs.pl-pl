@@ -1,5 +1,5 @@
 ---
-title: Wyliczenie SCRIPT_ERROR_DEBUG_EXCEPTION_THROWN_KIND | Dokumentacja firmy Microsoft
+title: SCRIPT_ERROR_DEBUG_EXCEPTION_THROWN_KIND, Wyliczenie | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -11,15 +11,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3be6989195eacdd4d70bd13790d55e4f6cfc769d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8eb089efbf608b488465809f997ffc82fc2c2e3c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443646"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574407"
 ---
-# <a name="scripterrordebugexceptionthrownkind-enumeration"></a>Wyliczenie SCRIPT_ERROR_DEBUG_EXCEPTION_THROWN_KIND
-Wskazuje rodzaj zgłaszanego wyjątku. To wyliczenie jest używane przez [IActiveScriptErrorDebug110::GetExceptionThrownKind](../../winscript/reference/iactivescripterrordebug110-getexceptionthrownkind.md) metody.  
+# <a name="script_error_debug_exception_thrown_kind-enumeration"></a>Wyliczenie SCRIPT_ERROR_DEBUG_EXCEPTION_THROWN_KIND
+Wskazuje rodzaj zgłaszanego wyjątku. To wyliczenie jest używane przez metodę [IActiveScriptErrorDebug110:: GetExceptionThrownKind](../../winscript/reference/iactivescripterrordebug110-getexceptionthrownkind.md) .  
   
 > [!IMPORTANT]
 > Te stałe są implementowane przez program PDM w wersji 11.0 i nowszych. Znajduje się w zestawie activdbg100.h.  
@@ -38,5 +38,5 @@ typedef SCRIPT_ERROR_DEBUG_EXCEPTION_THROWN_KIND
 |ETK_USER_UNHANDLED|0x00000001|Wyjątek nie jest obsługiwany w kodzie użytkownika.|  
 |ETK_UNHANDLED|0x00000002|Wyjątek nie jest obsługiwany w kodzie.|  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IActiveScriptErrorDebug110, interfejs](../../winscript/reference/iactivescripterrordebug110-interface.md)

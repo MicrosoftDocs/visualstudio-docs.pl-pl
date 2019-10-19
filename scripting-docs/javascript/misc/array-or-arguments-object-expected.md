@@ -1,5 +1,5 @@
 ---
-title: Tablica lub argumentów obiekt, oczekiwano | Dokumentacja firmy Microsoft
+title: Oczekiwano obiektu tablicy lub argumentów | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,21 +14,21 @@ ms.assetid: 22b83e2f-8916-46db-8d8c-50c8481b7c90
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 403972bfc7a8f6c061713dba4138ef6ccb08444a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6140dc9ef151577346dd2d5d321f1f2f5fc7de33
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817992"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576035"
 ---
 # <a name="array-or-arguments-object-expected"></a>Oczekiwanie obiektu typu Tablica lub argumentów
-Tablica nie zostały dostarczone jako argument. Ten błąd dotyczy **Function.prototype.apply** tylko metody. Jeśli zostanie określony, drugi argument do tej funkcji musi być albo `Array` obiektu lub **argumenty** obiektu.  
+Nie podano tablicy jako argumentu. Ten błąd dotyczy tylko metody **Function. prototype. Apply** . Jeśli ta wartość jest określona, drugi argument tej funkcji musi być obiektem `Array` lub obiektem **arguments** .  
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
-- Wybierz opcję `Array` lub **argumenty** obiektu jako drugi argument.  
+- Określ `Array` lub obiekt **arguments** jako drugi argument.  
   
-## <a name="see-also"></a>Zobacz też  
- [Używanie tablic](../../javascript/advanced/using-arrays-javascript.md)   
- [Apply — metoda (Function)](../../javascript/reference/apply-method-function-javascript.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Używanie tablic](../../javascript/advanced/using-arrays-javascript.md)    
+ [apply — Metoda (funkcja)](../../javascript/reference/apply-method-function-javascript.md)    
  [Funkcje](../../javascript/functions-javascript.md)

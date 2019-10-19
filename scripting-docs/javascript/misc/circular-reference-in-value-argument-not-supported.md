@@ -1,5 +1,5 @@
 ---
-title: Odwołanie cykliczne w argumencie wartości nie jest obsługiwane. | Dokumentacja firmy Microsoft
+title: Odwołanie cykliczne w argumencie wartości nie jest obsługiwane | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -15,22 +15,22 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a31b56b4b2d568b3bc3fd59f876f5052b9f6faff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 542fca58778a7b85b3044ce984b6ea049db12509
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946371"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572337"
 ---
 # <a name="circular-reference-in-value-argument-not-supported"></a>Odwołanie cykliczne w argumencie wartości nie jest obsługiwane
-Podjęto próbę wywołania `JSON.stringify` z wartością, która jest nieprawidłowa. `value` Argumentów, tablicę lub obiekt, zawiera odwołanie cykliczne.  
+Podjęto próbę wywołania `JSON.stringify` z nieprawidłową wartością. @No__t_0 argument, tablica lub obiekt, zawiera odwołanie cykliczne.  
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
-- Usuń odwołanie cykliczne w argumencie.  
+- Usuń odwołanie cykliczne z argumentu.  
   
 ## <a name="example"></a>Przykład  
- Kod, w tym przykładzie powoduje błąd w czasie wykonywania, ponieważ `john` odwołuje się do `mary` i `mary` odwołuje się do `john`. Aby usunąć odwołanie cykliczne, usunąć lub nie ustawiono właściwości `brother` z `mary` obiektu lub `sister` właściwość `john` obiektu.  
+ Kod w tym przykładzie powoduje błąd środowiska uruchomieniowego, ponieważ `john` ma odwołanie do `mary` i `mary` ma odwołanie do `john`. Aby usunąć odwołanie cykliczne, Usuń lub Wyłącz Właściwość `brother` z obiektu `mary` lub właściwości `sister` z obiektu `john`.  
   
 ```JavaScript  
 var john = new Object();  
@@ -42,7 +42,7 @@ mary.brother = john;
 var error = JSON.stringify(john);  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
- [Obiekt JSON](../../javascript/reference/json-object-javascript.md)   
- [JSON.parse Function](../../javascript/reference/json-parse-function-javascript.md)   
+## <a name="see-also"></a>Zobacz także  
+ @No__t_1 [obiektu JSON](../../javascript/reference/json-object-javascript.md)  
+ [Funkcja JSON. parse](../../javascript/reference/json-parse-function-javascript.md)    
  [Błędy czasu wykonania JavaScript](../../javascript/reference/javascript-run-time-errors.md)

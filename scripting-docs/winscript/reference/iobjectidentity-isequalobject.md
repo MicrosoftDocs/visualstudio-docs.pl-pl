@@ -1,5 +1,5 @@
 ---
-title: IObjectIdentity::IsEqualObject | Dokumentacja firmy Microsoft
+title: 'IObjectIdentity:: isequalobject | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c215a15a1239f07272079783366a1617c3a626e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 636dfa07b1fc94dfec2273220aa4101f5cd085b1
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944888"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571463"
 ---
 # <a name="iobjectidentityisequalobject"></a>IObjectIdentity::IsEqualObject
-Określa, jeśli obiekt jest taki sam jak bieżący obiekt.  
+Określa, czy obiekt jest równy bieżącemu obiektowi.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,10 +37,10 @@ HRESULT IsEqualObject(
   
 #### <a name="parameters"></a>Parametry  
  `punk`  
- [in] Adres obiekt do porównania z bieżącym obiektem.  
+ podczas Adres obiektu do porównania z bieżącym obiektem.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -48,7 +48,7 @@ HRESULT IsEqualObject(
 |`S_FALSE`|Obiekty nie są równe.|  
   
 ## <a name="remarks"></a>Uwagi  
- Implementacja `IsEqualObject` metoda powinna zwrócić `S_OK` tylko wtedy, gdy obiekty są takie same.  
+ Implementacja metody `IsEqualObject` powinna zwracać `S_OK` tylko wtedy, gdy obiekty są identyczne.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IObjectIdentity, interfejs](../../winscript/reference/iobjectidentity-interface.md)

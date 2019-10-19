@@ -1,5 +1,5 @@
 ---
-title: IJsDebugProperty, interfejs | Dokumentacja firmy Microsoft
+title: Interfejs IJsDebugProperty | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -11,15 +11,15 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e17bff10e2b876e4db2b9f3b55df29c2e87989ee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 990ae0b874042501b64f4e2e2b39874c25c9dc9c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977793"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574063"
 ---
 # <a name="ijsdebugproperty-interface"></a>IJsDebugProperty — Interfejs
-Przedstawia przeglądarkę właściwości.  
+Reprezentuje przeglądarkę właściwości.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,7 +37,7 @@ IJsDebugProperty : public IUnknown;
 |[IJsDebugProperty::GetPropertyInfo, metoda](../../winscript/reference/ijsdebugproperty-getpropertyinfo-method.md)|Pobiera informacje dla tego obiektu.|  
   
 ## <a name="requirements"></a>Wymagania  
- **Nagłówek:** jscript9diag.h  
+ **Nagłówek:** Jscript9diag. h  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Dokumentacja interfejsów skryptów systemu Windows](../../winscript/reference/windows-script-interfaces-reference.md)

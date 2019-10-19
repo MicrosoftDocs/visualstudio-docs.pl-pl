@@ -1,5 +1,5 @@
 ---
-title: Wyliczenie BREAKPOINT_STATE | Dokumentacja firmy Microsoft
+title: BREAKPOINT_STATE, Wyliczenie | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,14 +17,14 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: faca5ef7bc89bc16d646f66fb897f1dc44eb831a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8c56a8b135a0aa9a4f8ddf91e146d4d64367bb2b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955363"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572637"
 ---
-# <a name="breakpointstate-enumeration"></a>Wyliczenie BREAKPOINT_STATE
+# <a name="breakpoint_state-enumeration"></a>Wyliczenie BREAKPOINT_STATE
 Wskazuje stan punktu przerwania.  
   
 ## <a name="syntax"></a>Składnia  
@@ -41,9 +41,9 @@ typedef enum tagBREAKPOINT_STATE {
   
 |Element członkowski|Opis|  
 |------------|-----------------|  
-|BREAKPOINT_DELETED|Punkt przerwania już nie istnieje, ale nadal istnieją odwołania do niego.|  
-|BREAKPOINT_DISABLED|Punkt przerwania istnieje, ale jest wyłączona.|  
-|BREAKPOINT_ENABLED|Punkt przerwania istnieje i jest włączona.|  
+|BREAKPOINT_DELETED|Punkt przerwania już nie istnieje, ale nadal odwołuje się do niego.|  
+|BREAKPOINT_DISABLED|Punkt przerwania istnieje, ale jest wyłączony.|  
+|BREAKPOINT_ENABLED|Punkt przerwania istnieje i jest włączony.|  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Stałe, wyliczenia i struktury debugera aktywnego skryptu](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

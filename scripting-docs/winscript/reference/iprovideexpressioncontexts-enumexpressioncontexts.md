@@ -1,5 +1,5 @@
 ---
-title: IProvideExpressionContexts::EnumExpressionContexts | Microsoft Docs
+title: 'IProvideExpressionContexts:: EnumExpressionContexts | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 965147083bdc11a3544561fdd96cd85221ccd443
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f161c1591267af1398d5c04d00623381cfae2ad4
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63410149"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572389"
 ---
 # <a name="iprovideexpressioncontextsenumexpressioncontexts"></a>IProvideExpressionContexts::EnumExpressionContexts
-Zwraca moduł wyliczający kontekstów wyrażenie znane przez ten składnik.  
+Zwraca moduł wyliczający kontekstów wyrażenia znanych przez ten składnik.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,20 +37,20 @@ HRESULT EnumExpressionContexts(
   
 #### <a name="parameters"></a>Parametry  
  `ppedec`  
- [out] Moduł wyliczający kontekstów wyrażenie znane przez ten składnik.  
+ określoną Moduł wyliczający kontekstów wyrażenia znany przez ten składnik.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Menedżer debugowania procesów używa tej metody, aby znaleźć wszystkie konteksty wyrażenia globalnego skojarzone z danym wątku.  
+ Menedżer debugowania procesów używa tej metody do znajdowania wszystkich kontekstów wyrażenia globalnego skojarzonych z danym wątkiem.  
   
 > [!NOTE]
-> Ta metoda jest wywoływana z wewnątrz wątku zainteresowania. Jest implementujący do identyfikowania bieżącego wątku i zwraca moduł wyliczający odpowiednie.  
+> Ta metoda jest wywoływana z poziomu wątku zainteresowania. Aby zidentyfikować bieżący wątek i zwrócić odpowiedni moduł wyliczający, należy do realizatora.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IProvideExpressionContexts, interfejs](../../winscript/reference/iprovideexpressioncontexts-interface.md)

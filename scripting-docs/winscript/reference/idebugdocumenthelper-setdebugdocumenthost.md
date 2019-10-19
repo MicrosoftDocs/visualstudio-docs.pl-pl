@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::SetDebugDocumentHost | Dokumentacja firmy Microsoft
+title: 'IDebugDocumentHelper:: SetDebugDocumentHost | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 47c003657518edae0e8ffed13ffef9f6f072d296
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b32d14f3a7d65bee7bdb587a35dfe05bb06f5e1e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948996"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574657"
 ---
 # <a name="idebugdocumenthelpersetdebugdocumenthost"></a>IDebugDocumentHelper::SetDebugDocumentHost
-Zestawy `IDebugDocumentHost` dla tego dokumentu.  
+Ustawia `IDebugDocumentHost` dla tego dokumentu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,18 +37,18 @@ HRESULT SetDebugDocumentHost(
   
 #### <a name="parameters"></a>Parametry  
  `pddh`  
- [in] Host dokumentu debugowania.  
+ podczas Host dokumentu debugowania.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- `IDebugDocumentHost` Interfejs jest używany do kolorowanie składni inteligentnych hosta, pobieranie z opóźnieniem tekstu i zwracać obiekty kontrolujące, nowo utworzony dokumentu kontekstów.  
+ Interfejs `IDebugDocumentHost` służy do kolorowania składni inteligentnego hosta, pobierania odroczonego tekstu i zwracania obiektów kontrolujących nowo utworzonych kontekstów dokumentów.  
   
-## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)   
+## <a name="see-also"></a>Zobacz także  
+ [IDebugDocumentHelper   interfejsu](../../winscript/reference/idebugdocumenthelper-interface.md)  
  [IDebugDocumentHost, interfejs](../../winscript/reference/idebugdocumenthost-interface.md)

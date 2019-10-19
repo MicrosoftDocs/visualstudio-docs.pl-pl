@@ -1,5 +1,5 @@
 ---
-title: Krok 9. Wypróbowywanie innych funkcji
+title: Krok 9. Wypróbuj inne funkcje
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -10,14 +10,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aff87247afb79d62867da9e55f7a059192789d79
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: e5af132efde0c1a49e5404fa602363aab0554e6f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118843"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572466"
 ---
-# <a name="step-9-try-other-features"></a>Krok 9. Wypróbowywanie innych funkcji
+# <a name="step-9-try-other-features"></a>Krok 9. Wypróbuj inne funkcje
 Aby dowiedzieć się więcej, spróbuj zmienić ikony i kolory, dodać czasomierz gry i dźwięki. Aby gra była bardziej wymagająca, spróbuj zwiększyć planszę i dostosować czasomierz.
 
 Aby pobrać kompletną wersję przykładu, zobacz [kompletny przykładowy samouczek gry](https://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba).
@@ -37,7 +37,7 @@ Aby pobrać kompletną wersję przykładu, zobacz [kompletny przykładowy samouc
 - Dodaj dźwięk, gdy gracz znajdzie dopasowanie, inny dźwięk, gdy gracz odkrywa dwie ikony, które nie pasują, a trzeci dźwięk, gdy program ukrywa ikony ponownie.
 
     > [!TIP]
-    > Aby odtwarzać dźwięki, można użyć <xref:System.Media> przestrzeni nazw. Aby uzyskać więcej informacji, zobacz [OdtwórzC#dźwięki w aplikacji Windows Forms ()](http://youtu.be/qOh4ooHg1UU) lub [Odtwórz dźwięk w programie Visual Basic](http://youtu.be/-4oPDeQrtMs) .
+    > Aby odtwarzać dźwięki, można użyć przestrzeni nazw <xref:System.Media>. Aby uzyskać więcej informacji, zobacz [OdtwórzC#dźwięki w aplikacji Windows Forms ()](http://youtu.be/qOh4ooHg1UU) lub [Odtwórz dźwięk w programie Visual Basic](http://youtu.be/-4oPDeQrtMs) .
 
 - Utrudnij grę, zwiększając planszę.
 
@@ -48,8 +48,6 @@ Aby pobrać kompletną wersję przykładu, zobacz [kompletny przykładowy samouc
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
 
-- Jeśli masz problem lub pytania dotyczące programowania, spróbuj zadać pytanie na jednym z forów MSDN. Zobacz [forum Visual Basic](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vbgeneral) i [forum C# wizualne](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=csharpgeneral).
+- Są tam dostępne wspaniałe, bezpłatne materiały szkoleniowe wideo. Aby dowiedzieć się więcej na temat programowania w Visual Basic, zobacz [Visual Basic podstawy: Programowanie dla bezwzględnych początkujących](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners). Aby dowiedzieć się więcej na C#temat programowania w programie, zobacz [ C# podstawy: Programowanie dla bezwzględnych początkujących](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners).
 
-- Są tam dostępne wspaniałe, bezpłatne materiały szkoleniowe wideo. Aby dowiedzieć się więcej na temat programowania w [Visual Basic, zobacz Visual Basic podstawy: Programowanie dla bezwzględnych początkujących](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners). Aby dowiedzieć się więcej na temat C#programowania w [ wizualizacji, zobacz C# podstawy: Programowanie dla bezwzględnych początkujących](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners).
-
-- Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 8: Dodaj metodę, aby sprawdzić, czy odtwarzacz został](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md)wygrany.
+- Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 8: Dodaj metodę, aby sprawdzić, czy odtwarzacz wygrał](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md).

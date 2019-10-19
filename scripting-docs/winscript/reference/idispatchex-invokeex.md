@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::InvokeEx | Dokumentacja firmy Microsoft
+title: 'IDispatchEx:: InvokeEx | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 33494836e463c9c2fd74acf7835d7e4630747b0e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8a15acb3211c0d3dd19c0d262efb6cbd3327ab9a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000743"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575321"
 ---
 # <a name="idispatchexinvokeex"></a>IDispatchEx::InvokeEx
-Zapewnia dostęp do właściwości i metod udostępnianych przez `IDispatchEx` obiektu.  
+Zapewnia dostęp do właściwości i metod udostępnianych przez obiekt `IDispatchEx`.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -43,79 +43,79 @@ HRESULT InvokeEx(
   
 #### <a name="parameters"></a>Parametry  
  `id`  
- Określa element członkowski. Używa `GetDispID` lub `GetNextDispID` można uzyskać identyfikatora wysyłania.  
+ Określa element członkowski. Używa `GetDispID` lub `GetNextDispID` do uzyskania identyfikatora wysyłania.  
   
  `lcid`  
- Ustawienia regionalne kontekstu, w którym można interpretować argumenty. `lcid` Jest przekazywany do `InvokeEx` umożliwiające obiektu do interpretacji jej argumenty, które są specyficzne dla ustawień regionalnych.  
+ Ustawienia regionalne kontekstu, w którym można interpretować argumenty. @No__t_0 jest przenoszona do `InvokeEx`, aby umożliwić obiektowi interpretowanie argumentów specyficznych dla ustawień regionalnych.  
   
  `wFlags`  
- Wartości prawne `wFlags` są:  
+ Wartości prawne dla `wFlags` są następujące:  
   
- DISPATCH_PROPERTYGET &AMP;#124; DISPATCH_METHOD &AMP;#124; DISPATCH_PROPERTYPUT &AMP;#124; DISPATCH_PROPERTYPUTREF &AMP;#124; DISPATCH_CONSTRUCT  
+ DISPATCH_PROPERTYGET &#124; DISPATCH_METHOD &#124; DISPATCH_PROPERTYPUT &#124; DISPATCH_PROPERTYPUTREF &#124; DISPATCH_CONSTRUCT  
   
- Flagi opisujące kontekst `InvokeEx` wywołania:  
+ Flagi opisujące kontekst wywołania `InvokeEx`:  
   
 |Wartość|Znaczenie|  
 |-----------|-------------|  
-|DISPATCH_METHOD|Element członkowski jest wywoływana jako metoda. Jeśli właściwość ma taką samą nazwę, to i Flaga DISPATCH_PROPERTYGET może być ustawiona (zdefiniowany przez `IDispatch`).|  
-|DISPATCH_PROPERTYGET|Element członkowski jest pobierana jako element członkowski danych lub właściwości (zdefiniowany przez `IDispatch`).|  
-|DISPATCH_PROPERTYPUT|Element członkowski zostanie zmieniony jako element członkowski danych lub właściwości (zdefiniowany przez `IDispatch`).|  
-|DISPATCH_PROPERTYPUTREF|Element członkowski zostanie zmieniony przez przypisywanie odwołania, a nie przypisanie wartości. Ta flaga jest prawidłowy tylko wtedy, gdy właściwość akceptuje odwołanie do obiektu (zdefiniowany przez `IDispatch`).|  
-|DISPATCH_CONSTRUCT|Element członkowski jest używana jako Konstruktor. (Jest to nowa wartość zdefiniowana przez `IDispatchEx`). Wartości prawne `wFlags` są:<br /><br /> DISPATCH_PROPERTYGET DISPATCH_METHOD DISPATCH_PROPERTYPUT DISPATCH_PROPERTYPUTREF DISPATCH_CONSTRUCT|  
+|DISPATCH_METHOD|Element członkowski jest wywoływany jako metoda. Jeśli właściwość ma taką samą nazwę, można ustawić zarówno tę, jak i flagę DISPATCH_PROPERTYGET (zdefiniowaną przez `IDispatch`).|  
+|DISPATCH_PROPERTYGET|Element członkowski zostanie pobrany jako właściwość lub element członkowski danych (zdefiniowany przez `IDispatch`).|  
+|DISPATCH_PROPERTYPUT|Element członkowski zostanie zmieniony jako właściwość lub element członkowski danych (zdefiniowany przez `IDispatch`).|  
+|DISPATCH_PROPERTYPUTREF|Element członkowski zostanie zmieniony przez przypisanie odwołania, a nie przypisanie wartości. Ta flaga jest prawidłowa tylko wtedy, gdy Właściwość akceptuje odwołanie do obiektu (zdefiniowanego przez `IDispatch`).|  
+|DISPATCH_CONSTRUCT|Element członkowski jest używany jako Konstruktor. (Jest to nowa wartość zdefiniowana przez `IDispatchEx`). Wartości prawne dla `wFlags` są następujące:<br /><br /> DISPATCH_PROPERTYGET DISPATCH_METHOD DISPATCH_PROPERTYPUT DISPATCH_PROPERTYPUTREF DISPATCH_CONSTRUCT|  
   
  `pdp`  
- Wskaźnik do struktury zawiera tablicę argumentów, tablicę identyfikatorów DISPID argumentu dla nazwanych argumentów i zlicza liczbę elementów w tablicach. Zobacz `IDispatch` dokumentację dotyczącą pełen opis struktury DISPPARAMS.  
+ Wskaźnik do struktury zawiera tablicę argumentów, tablicę identyfikatorów DISPID argumentu dla nazwanych argumentów i zlicza liczbę elementów w tablicach. Pełny opis struktury DISPPARAMS można znaleźć w dokumentacji `IDispatch`.  
   
  `pVarRes`  
- Wskaźnik do lokalizacji, gdzie wynik jest przechowywanych lub wartość Null, jeśli obiekt wywołujący nie oczekuje żadnego wyniku. Ten argument jest ignorowana, jeśli określono DISPATCH_PROPERTYPUT lub DISPATCH_PROPERTYPUTREF.  
+ Wskaźnik do lokalizacji, w której ma być przechowywany wynik, lub wartość null, jeśli obiekt wywołujący oczekuje braku wyniku. Ten argument jest ignorowany, jeśli określono DISPATCH_PROPERTYPUT lub DISPATCH_PROPERTYPUTREF.  
   
  `pei`  
- Wskaźnik do struktury, która zawiera informacje o wyjątku. Ta struktura powinno być wypełnione if `DISP_E_EXCEPTION` jest zwracana. Może mieć wartości Null. Zobacz `IDispatch` dokumentację dotyczącą pełen opis `EXCEPINFO` struktury.  
+ Wskaźnik do struktury, która zawiera informacje o wyjątku. Ta struktura powinna zostać wprowadzona, jeśli `DISP_E_EXCEPTION` jest zwracana. Może mieć wartość null. Pełny opis struktury `EXCEPINFO` można znaleźć w dokumentacji `IDispatch`.  
   
  `pspCaller`  
- Wskaźnik do obiektu dostawcy usługi dostarczane przez obiekt wywołujący, który sprawia, że obiekt uzyskać usług od elementu wywołującego. Może mieć wartości Null.  
+ Wskaźnik do obiektu dostawcy usług dostarczonego przez obiekt wywołujący, który umożliwia obiektowi uzyskanie usług z elementu wywołującego. Może mieć wartość null.  
   
  `IDispatchEx::InvokeEx` udostępnia wszystkie te same funkcje co `IDispatch::Invoke` i dodaje kilka rozszerzeń:  
   
 |||  
 |-|-|  
-|DISPATCH_CONSTRUCT|Wskazuje, że element jest używana jako Konstruktor.|  
-|`pspCaller`|`pspCaller` Umożliwia uzyskanie obiektu dostępu do usług udostępnianych przez obiekt wywołujący. Określonych usług mogą być obsługiwane przez obiekt wywołujący, samego lub przekazać obiekty wywołujące dodatkowo łańcuch wywołań. Na przykład, jeśli aparat skryptów w przeglądarce sprawia, że `InvokeEx` wykonać wywołanie do obiektu zewnętrznego obiektu `pspCaller` łańcucha uzyskania usług z aparatu skryptów lub przeglądarki. (Należy pamiętać, że łańcuch wywołań nie jest taka sama jak w łańcuchu tworzenia — znana także jako łańcuch kontenera lub łańcucha lokacji. Tworzenie łańcucha mogą być dostępne w innym mechanizmem takich jak `IObjectWithSite`.)|  
-|`this` Wskaźnik|Gdy DISPATCH_METHOD jest ustawiona `wFlags`, może to być "parametr o nazwie" wartość "to". Identyfikator DISPID będzie DISPID_THIS i musi być pierwszy parametr o danej nazwie.|  
+|DISPATCH_CONSTRUCT|Wskazuje, że element jest używany jako Konstruktor.|  
+|`pspCaller`|@No__t_0 umożliwia dostęp obiektu do usług udostępnianych przez obiekt wywołujący. Określone usługi mogą być obsługiwane przez samego wywołującego lub delegowane do wywoływania w celu dalszej realizacji łańcucha wywołań. Na przykład jeśli aparat skryptu wewnątrz przeglądarki tworzy `InvokeEx` wywołanie do obiektu zewnętrznego, obiekt może następować przy użyciu łańcucha `pspCaller` w celu uzyskania usług z aparatu skryptu lub przeglądarki. (Należy zauważyć, że łańcuch wywołań nie jest taki sam jak łańcuch tworzenia — znany również jako łańcuch kontenerów lub łańcuch witryn. Łańcuch tworzenia może być dostępny za pomocą innego mechanizmu, takiego jak `IObjectWithSite`.)|  
+|`this` wskaźnik|Gdy DISPATCH_METHOD jest ustawiony w `wFlags`, może istnieć "nazwany parametr" dla wartości "This". Identyfikator DISPID zostanie DISPID_THIS i musi być pierwszym nazwanym parametrem.|  
   
- Nieużywane `riid` parametru w `IDispatch::Invoke` został usunięty.  
+ Nieużywany parametr `riid` w `IDispatch::Invoke` został usunięty.  
   
- `puArgArr` Parametru w `IDispatch::Invoke` został usunięty.  
+ Parametr `puArgArr` w `IDispatch::Invoke` został usunięty.  
   
- Zobacz `IDispatch::Invoke` dokumentacji w poniższych przykładach:  
+ Zapoznaj się z dokumentacją `IDispatch::Invoke` w następujących przykładach:  
   
- "Wywołanie metody bez argumentów"  
+ "Wywoływanie metody bez argumentów"  
   
- "Pobieranie i ustawianie właściwości"  
+ "Pobieranie i Ustawianie właściwości"  
   
  "Przekazywanie parametrów"  
   
- "Właściwości indeksowanej"  
+ "Właściwości indeksowane"  
   
- "Występowanie wyjątków podczas Invoke"  
+ "Wywoływanie wyjątków"  
   
- "Zwraca błędy"  
+ "Zwracanie błędów"  
   
 ## <a name="return-value"></a>Wartość zwracana  
  Zwraca jedną z następujących wartości:  
   
 |||  
 |-|-|  
-|`S_OK`|Powodzenie.|  
-|DISP_E_BADPARAMCOUNT|Liczba elementów udostępnionych DISPPARAMS różni się od liczby argumentów akceptowanych przez metodę lub właściwość.|  
-|DISP_E_BADVARTYPE|Jeden z argumentów `rgvarg` nie jest prawidłowym typem variant.|  
-|DISP_E_EXCEPTION|Aplikacja musi zgłosić wyjątek. W tym przypadku struktury przekazanej `pei` powinno być wypełnione.|  
-|DISP_E_MEMBERNOTFOUND|Żądany element nie istnieje, lub wywołanie `InvokeEx` próbowano ustawić wartość właściwości tylko do odczytu.|  
-|DISP_E_NONAMEDARGS|Ta implementacja `IDispatch` nie obsługuje argumenty nazwane.|  
-|DISP_E_OVERFLOW|Jeden z argumentów `rgvarg` nie można przekształcić do określonego typu.|  
-|DISP_E_PARAMNOTFOUND|Jeden z parametrów DISPID jest niezgodny z parametrem w metodzie.|  
-|DISP_E_TYPEMISMATCH|Nie można przekształcić co najmniej jeden z argumentów.|  
-|DISP_E_UNKNOWNLCID|Zinterpretował argumenty typu string według identyfikatora LCID, i nie został rozpoznany identyfikator LCID. Jeśli identyfikator LCID nie jest potrzebna można interpretować argumenty, ten błąd nie powinien być zwracany.|  
+|`S_OK`|Prawnego.|  
+|DISP_E_BADPARAMCOUNT|Liczba elementów dostarczonych do DISPPARAMS różni się od liczby argumentów zaakceptowanych przez metodę lub właściwość.|  
+|DISP_E_BADVARTYPE|Jeden z argumentów w `rgvarg` nie jest prawidłowym typem VARIANT.|  
+|DISP_E_EXCEPTION|Aplikacja musi zgłosić wyjątek. W takim przypadku struktura przeniesiona `pei` powinna zostać wypełniona.|  
+|DISP_E_MEMBERNOTFOUND|Żądany element członkowski nie istnieje lub wywołanie `InvokeEx` próbowało ustawić wartość właściwości tylko do odczytu.|  
+|DISP_E_NONAMEDARGS|Ta implementacja `IDispatch` nie obsługuje argumentów nazwanych.|  
+|DISP_E_OVERFLOW|Nie można przekształcić jednego z argumentów w `rgvarg` określonego typu.|  
+|DISP_E_PARAMNOTFOUND|Jeden z identyfikatorów SPID parametru nie odpowiada parametrowi metody.|  
+|DISP_E_TYPEMISMATCH|Nie można przekształcić co najmniej jednego z argumentów.|  
+|DISP_E_UNKNOWNLCID|Wywoływany element członkowski interpretuje argumenty ciągu zgodnie z identyfikatorem LCID i nie rozpoznano identyfikatora LCID. Jeśli identyfikator LCID nie jest wymagany do interpretacji argumentów, ten błąd nie powinien być zwracany.|  
 |DISP_E_PARAMNOTOPTIONAL|Wymagany parametr został pominięty.|  
   
 ## <a name="example"></a>Przykład  
@@ -136,7 +136,7 @@ VARIANT var;
    }  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
- [Interfejs IDispatchEx](../../winscript/reference/idispatchex-interface.md)   
- [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
+## <a name="see-also"></a>Zobacz także  
+ [IDispatchEx   interfejsu](../../winscript/reference/idispatchex-interface.md)  
+ [IDispatchEx:: getdispid](../../winscript/reference/idispatchex-getdispid.md)    
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

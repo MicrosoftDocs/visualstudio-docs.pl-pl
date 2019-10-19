@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::FireDebuggerEvent | Dokumentacja firmy Microsoft
+title: 'IDebugApplication:: FireDebuggerEvent | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ad865f05cc70f462d65d6fbead4143b82a9fa489
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 00d895ed484e37f0ba38636a409876156ed97287
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990916"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574999"
 ---
 # <a name="idebugapplicationfiredebuggerevent"></a>IDebugApplication::FireDebuggerEvent
-Wyzwala zdarzenie generyczne do debugera `IApplicationDebugger` interfejsu.  
+Uruchamia zdarzenie ogólne dla interfejsu `IApplicationDebugger` debugera.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -38,13 +38,13 @@ HRESULT FireDebuggerEvent(
   
 #### <a name="parameters"></a>Parametry  
  `riid`  
- [in] Identyfikator GUID dla obiektu.  
+ podczas Identyfikator GUID dla obiektu.  
   
  `punk`  
- [in] Obiekt zdarzenia do przekazania do debugera.  
+ podczas Obiekt zdarzenia do przekazania do debugera.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -52,12 +52,12 @@ HRESULT FireDebuggerEvent(
 |`E_NOTIMPL`|Metoda nie jest obecnie zaimplementowana.|  
   
 ## <a name="remarks"></a>Uwagi  
- Semantyka identyfikator GUID i `IUnknown` są całkowicie zdefiniowane aplikacji/debugera.  
+ Semantyka identyfikatora GUID i `IUnknown` są całkowicie zdefiniowane w aplikacji/debugerze.  
   
- Ta metoda umożliwia niestandardowe rozszerzenia modelu debuger; nie jest obecnie zaimplementowana.  
+ Ta metoda zezwala na niestandardowe rozszerzenia modelu debugera; nie jest ona obecnie zaimplementowana.  
   
- Ta metoda powoduje `IApplicationDebugger::onDebuggerEvent` do wywołania.  
+ Ta metoda powoduje wywoływanie `IApplicationDebugger::onDebuggerEvent`.  
   
-## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugApplication](../../winscript/reference/idebugapplication-interface.md)   
+## <a name="see-also"></a>Zobacz także  
+ [IDebugApplication   interfejsu](../../winscript/reference/idebugapplication-interface.md)  
  [IApplicationDebugger::onDebuggerEvent](../../winscript/reference/iapplicationdebugger-ondebuggerevent.md)

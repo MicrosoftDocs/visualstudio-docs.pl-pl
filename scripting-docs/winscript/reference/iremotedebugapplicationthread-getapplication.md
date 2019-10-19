@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationThread::GetApplication | Dokumentacja firmy Microsoft
+title: 'IRemoteDebugApplicationThread:: GetApplication | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: abe33d75f7e03944eb0a6f533f2955871ddee342
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b21715345d698e6bd42c1946e06002da2b97d5b3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788235"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575272"
 ---
 # <a name="iremotedebugapplicationthreadgetapplication"></a>IRemoteDebugApplicationThread::GetApplication
-Zwraca obiekt aplikacji skojarzonych z tym wątku.  
+Zwraca obiekt aplikacji skojarzony z tym wątkiem.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,17 +37,17 @@ HRESULT GetApplication(
   
 #### <a name="parameters"></a>Parametry  
  `pprda`  
- [out] Obiekt aplikacji skojarzonych z tym wątku.  
+ określoną Obiekt aplikacji skojarzony z tym wątkiem.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda zwraca obiekt aplikacji skojarzonych z tym wątku.  
+ Ta metoda zwraca obiekt aplikacji skojarzony z tym wątkiem.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IRemoteDebugApplicationThread, interfejs](../../winscript/reference/iremotedebugapplicationthread-interface.md)

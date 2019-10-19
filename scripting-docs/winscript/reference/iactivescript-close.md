@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::Close | Dokumentacja firmy Microsoft
+title: 'IActiveScript:: Close | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 53b71471ada55751de301391fdcc70387c1bb6c2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f858de42ef2948d218aac6c3194cc6af544da5e9
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935682"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575778"
 ---
 # <a name="iactivescriptclose"></a>IActiveScript::Close
-Powoduje, że aparat skryptów zrezygnowania z dowolnego aktualnie załadowanych skryptu, utraty stanu i zwolnij wszystkie wskaźniki interfejsu, które inne obiekty, w związku z tym wprowadzenie stanu zamkniętego. Obiekty sink zdarzenia, tekst skryptu natychmiast wykonane i wywołań makra, które są już w toku odbywa się przed zmianami stanu (Użyj [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md) anulowania uruchomionego wątku skryptu). Ta metoda musi wywoływana przez tworzenie hostów, przed udostępnieniem interfejsu, aby uniknąć problemów z odwołanie cykliczne.  
+Powoduje, że aparat skryptów porzuca każdy aktualnie załadowany skrypt, utraci swój stan i zwolni wszystkie wskaźniki interfejsu, które ma do innych obiektów, w tym samym momencie wprowadzając stan zamknięty. Ujścia zdarzeń, natychmiast wykonany tekst skryptu i wywołania makr, które są już w toku, są kończone przed zmianą stanu (Użyj [IActiveScript:: InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md) , aby anulować uruchomiony wątek skryptu). Ta metoda musi zostać wywołana przez tworzenie hosta przed zwolnieniem interfejsu, aby zapobiec problemom z odwołaniami cyklicznymi.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -38,10 +38,10 @@ HRESULT Close(void);
   
 |Wartość|Znaczenie|  
 |-----------|-------------|  
-|`S_OK`|Powodzenie.|  
-|`E_UNEXPECTED`|Nie oczekiwano wywołania (na przykład aparat skryptów był już w stanie zamkniętym).|  
-|`OLESCRIPT_S_PENDING`|Metoda zostało pomyślnie dodane do kolejki, ale nie zmienił się stan jeszcze. Podczas zmiany stanu, lokacja znajduje się nastąpi wywołanie zwrotne na [IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) metody.|  
-|`S_FALSE`|Wykonanie metody powiodło się, ale skrypt został już zamknięty.|  
+|`S_OK`|Prawnego.|  
+|`E_UNEXPECTED`|Wywołanie nie było oczekiwane (na przykład aparat skryptów był już w stanie zamknięte).|  
+|`OLESCRIPT_S_PENDING`|Metoda została pomyślnie umieszczona w kolejce, ale stan nie został jeszcze zmieniony. Po zmianie stanu lokacja jest wywoływana z powrotem w metodzie [IActiveScriptSite:: OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) .|  
+|`S_FALSE`|Metoda zakończyła się pomyślnie, ale skrypt został już zamknięty.|  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IActiveScript](../../winscript/reference/iactivescript.md)

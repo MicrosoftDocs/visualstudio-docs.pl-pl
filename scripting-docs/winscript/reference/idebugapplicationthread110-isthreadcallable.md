@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationThread110::IsThreadCallable | Microsoft Docs
+title: 'IDebugApplicationThread110:: IsThreadCallable | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,18 +13,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 90f0010a513adef67af1285ac15bc35d4573df57
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5ff81190247454a4471a4150843d3fb0aaed5999
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440513"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574465"
 ---
 # <a name="idebugapplicationthread110isthreadcallable"></a>IDebugApplicationThread110::IsThreadCallable
-Określa, czy ten wątek jest w stanie, który przetworzy wywołań za pomocą wątku menedżerów PDM przełączanie mechanizmów, takich jak SynchronousCallInThread.  
+Określa, czy ten wątek jest w stanie, który będzie przetwarzać wywołania wykonane przy użyciu mechanizmów przełączania wątków PDM, takich jak SynchronousCallInThread.  
   
 > [!IMPORTANT]
-> [Interfejs IDebugApplicationThread110](../../winscript/reference/idebugapplicationthread110-interface.md) jest implementowany przez program PDM w wersji 11.0 i nowszych. Znajduje się w zestawie activdbg100.h.  
+> [Interfejs IDebugApplicationThread110](../../winscript/reference/idebugapplicationthread110-interface.md) jest implementowany przez PDM v 11.0 i nowsze. Znajduje się w zestawie activdbg100.h.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -34,7 +34,7 @@ HRESULT IsThreadCallable([out, annotation("_Out_")] BOOL * pfIsCallable);
   
 #### <a name="parameters"></a>Parametry  
  `pfIsCallable`  
- [out] `true` Jeśli wątek jest wywoływane, w przeciwnym razie `false`.  
+ [out] `true` Jeśli wątek jest wywoływany, w przeciwnym razie `false`.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IDebugApplicationThread110, interfejs](../../winscript/reference/idebugapplicationthread110-interface.md)

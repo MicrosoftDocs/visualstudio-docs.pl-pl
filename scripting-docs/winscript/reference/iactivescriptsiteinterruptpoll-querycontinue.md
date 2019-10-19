@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteInterruptPoll::QueryContinue | Microsoft Docs
+title: 'IActiveScriptSiteInterruptPoll:: QueryContinue | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 63ce45c0973d65d240136d7b42aef0c078b00c9a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7ce2ad61b54dce510035dd8e97d0dfb2accbf7a7
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992293"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572237"
 ---
 # <a name="iactivescriptsiteinterruptpollquerycontinue"></a>IActiveScriptSiteInterruptPoll::QueryContinue
-Umożliwia hosta określić, że skrypt powinien wygasają.  
+Umożliwia hostowi określenie, że skrypt powinien zostać przerwany.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,18 +37,18 @@ HRESULT QueryContinue();
  Ta metoda nie przyjmuje żadnych parametrów.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
-|`S_OK`|Wywołanie zakończyło się pomyślnie, a host pozwala skryptu, aby kontynuować działanie.|  
-|`S_FALSE`|Powodzenie wywołania metody i żądań hosta, które zakończyć skryptu.|  
+|`S_OK`|Wywołanie zakończyło się pomyślnie, a host zezwala na kontynuowanie działania skryptu.|  
+|`S_FALSE`|Wywołanie zakończyło się pomyślnie, a host zażądał przerwania działania skryptu.|  
   
 ## <a name="remarks"></a>Uwagi  
- Skrypt hostowanej powinien wygasają, chyba że wartość zwracana przez `QueryContinue` metodą jest `S_OK`. Zwracana wartość wynosząca `S_FALSE` wskazuje, że host wyraźnie zażąda, że skrypt zakończyć.  
+ Skrypt hostowany powinien kończyć się, chyba że zwracana wartość metody `QueryContinue` jest `S_OK`. Wartość zwracana `S_FALSE` wskazuje, że host jawnie zażąda przerwania działania skryptu.  
   
- Wielowątkowe host może użyć `IActiveScript::InterruptScriptThread` metodę, aby zakończyć skryptu.  
+ Host wielowątkowy może użyć metody `IActiveScript::InterruptScriptThread`, aby przerwać skrypt.  
   
-## <a name="see-also"></a>Zobacz też  
- [IActiveScriptSiteInterruptPoll Interface](../../winscript/reference/iactivescriptsiteinterruptpoll-interface.md)   
+## <a name="see-also"></a>Zobacz także  
+ [IActiveScriptSiteInterruptPoll   interfejsu](../../winscript/reference/iactivescriptsiteinterruptpoll-interface.md)  
  [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)

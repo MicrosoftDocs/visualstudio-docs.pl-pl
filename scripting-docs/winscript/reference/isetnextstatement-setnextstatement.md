@@ -1,5 +1,5 @@
 ---
-title: ISetNextStatement::SetNextStatement | Dokumentacja firmy Microsoft
+title: 'ISetNextStatement:: SetNextStatement | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3f4add20384684b24a630a0799c50a9aaae58034
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e8b940e603deb0aa9715e89b49eb1afdd28832ac
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786298"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571905"
 ---
 # <a name="isetnextstatementsetnextstatement"></a>ISetNextStatement::SetNextStatement
-Ta metoda aktualizuje dalej kontekst kodu, która umożliwia wykonanie interpretera skryptu.  
+Ta metoda aktualizuje następny kontekst kodu, który może zostać wykonany przez interpreter skryptu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -36,13 +36,13 @@ HRESULT SetNextStatement(
   
 #### <a name="parameters"></a>Parametry  
  `pStackFrame`  
- [in] Wskaźnik na obiekt w ramce stosu.  
+ podczas Wskaźnik do obiektu ramki stosu.  
   
  `pCodeContext`  
- [in] Wskaźnik do obiektu kontekstu kodu.  
+ podczas Wskaźnik do obiektu kontekstu kodu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -50,5 +50,5 @@ HRESULT SetNextStatement(
   
 ## <a name="remarks"></a>Uwagi  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [ISetNextStatement, interfejs](../../winscript/reference/isetnextstatement-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: Oczekiwany obiekt Date | Dokumentacja firmy Microsoft
+title: Oczekiwany obiekt date | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,15 +14,15 @@ ms.assetid: d6ab82e6-ca64-46b4-a06c-5c6b0aa057cb
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2767ffc16b637c6b1e7bdf51cb0815d71f58edac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 10af48c4804df3b5513df71578b948abe73ff8c2
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946384"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572900"
 ---
 # <a name="date-object-expected"></a>Oczekiwany obiekt Date
-Podjęto próbę wywołania **Date.prototype.toString** lub **Date.prototype.valueOf** metody na obiekt typu innego niż `Date`. Obiekt tego typu wywołania musi być typu `Date`. Na przykład:  
+Podjęto próbę wywołania metody **Date. prototype. ToString** lub **Date. prototype. valueOf** na obiekcie typu innego niż `Date`. Obiekt tego typu wywołania musi być typu `Date`. Na przykład:  
   
 ```JavaScript  
 var o = new Object;  
@@ -32,9 +32,9 @@ o.f();
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
-- Tylko wywołania **Date.prototype.toString** lub **Date.prototype.valueOf** metod obiektów typu `Date`.  
+- Wywołaj metody **Date. prototype. ToString** lub **Date. prototype. valueOf** na obiektach typu `Date`.  
   
-## <a name="see-also"></a>Zobacz też  
- [Date — obiekt](../../javascript/reference/date-object-javascript.md)   
- [GETDATE — metoda (Date)](../../javascript/reference/getdate-method-date-javascript.md)   
+## <a name="see-also"></a>Zobacz także  
+ @No__t_1 [obiektu Date](../../javascript/reference/date-object-javascript.md)  
+ [getDate, Metoda (Date)](../../javascript/reference/getdate-method-date-javascript.md)    
  [Obiekty wewnętrzne](../../javascript/intrinsic-objects-javascript.md)

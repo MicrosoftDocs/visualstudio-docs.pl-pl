@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::GetRange | Dokumentacja firmy Microsoft
+title: 'IScriptEntry:: GetRange | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7baa284be4fa7f45f247df7f4b3d140869f254b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0a6e1b1600c93aa05bbe9669fb57a23a8c9344a1
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787740"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575434"
 ---
 # <a name="iscriptentrygetrange"></a>IScriptEntry::GetRange
-Zwraca pozycji początkowej i długości hasła.  
+Zwraca pozycję początkową i długość wpisu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -38,21 +38,21 @@ HRESULT GetRange(
   
 #### <a name="parameters"></a>Parametry  
  `pichMin`  
- [out] Aby uzyskać `IScriptEntry` zwraca wartość 0, obiekty, które określają blok skryptu.  
+ określoną Dla `IScriptEntry` obiektów, które określają blok skryptu, zwraca wartość 0.  
   
- Aby uzyskać `IScriptEntry` obiekty, które określają obiekt funkcji zwraca pozycja początkowa funkcji w bieżącym bloku skryptu.  
+ Dla `IScriptEntry` obiektów, które określają obiekt Function, zwraca pozycję początkową funkcji w bieżącym bloku skryptu.  
   
- Aby uzyskać `IScriptScriptlet` obiektów, funkcja zwraca 0.  
+ W przypadku obiektów `IScriptScriptlet` zwraca wartość 0.  
   
  `pcch`  
- [out] Aby uzyskać `IScriptEntry` obiekty, które określają blok skryptu zwraca długość tekstu.  
+ określoną Dla `IScriptEntry` obiektów, które określają blok skryptu, zwraca długość tekstu.  
   
- Aby uzyskać `IScriptEntry` obiekty, które określają obiekt funkcji zwraca długość definicji funkcji.  
+ Dla `IScriptEntry` obiektów, które określają obiekt Function, zwraca długość definicji funkcji.  
   
- Aby uzyskać `IScriptScriptlet` obiektów, funkcja zwraca długość wpisu.  
+ W przypadku obiektów `IScriptScriptlet` zwraca długość wpisu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ @No__t_0. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -60,5 +60,5 @@ HRESULT GetRange(
   
 ## <a name="remarks"></a>Uwagi  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IScriptEntry, interfejs](../../winscript/reference/iscriptentry-interface.md)

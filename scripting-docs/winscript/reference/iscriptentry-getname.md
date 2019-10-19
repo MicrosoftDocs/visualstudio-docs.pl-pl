@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::GetName | Dokumentacja firmy Microsoft
+title: 'IScriptEntry:: GetName | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d23843aa72ce5cf79f6442048b6493d17eb6ef64
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c99cda48a20efb41b2535645ccdb50be8bb6d6bc
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787773"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575449"
 ---
 # <a name="iscriptentrygetname"></a>IScriptEntry::GetName
-Wpisy, które reprezentują pojedynczy obiekt (na przykład funkcja) zwraca nazwę obiektu.  
+W przypadku wpisów reprezentujących pojedynczy obiekt (na przykład funkcja) zwraca nazwę obiektu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,12 +37,12 @@ HRESULT GetName(
   
 #### <a name="parameters"></a>Parametry  
  `pbstr`  
- [out] Nazwa obiektu reprezentowanego przez `IScriptEntry` bloku skryptu. Jeśli wpis nie reprezentuje pojedynczy obiekt, zwracana jest wartość NULL.  
+ określoną Nazwa obiektu reprezentowanego przez blok skryptu `IScriptEntry`. Jeśli wpis nie reprezentuje pojedynczego obiektu, zwracana jest wartość NULL.  
   
- Wpisy podrzędne reprezentuje obiekt jednej funkcji.  
+ Wpisy podrzędne reprezentują pojedynczy obiekt funkcji.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ @No__t_0. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -50,6 +50,6 @@ HRESULT GetName(
   
 ## <a name="remarks"></a>Uwagi  
   
-## <a name="see-also"></a>Zobacz też  
- [Interfejs IScriptEntry](../../winscript/reference/iscriptentry-interface.md)   
+## <a name="see-also"></a>Zobacz także  
+ [IScriptEntry   interfejsu](../../winscript/reference/iscriptentry-interface.md)  
  [IScriptNode:: CreateChildEntry](../../winscript/reference/iscriptnode-createchildentry.md)

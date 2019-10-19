@@ -1,5 +1,5 @@
 ---
-title: Wyświetlanie typów niestandardowych przy użyciu DebuggerTypeProxy | Dokumentacja firmy Microsoft
+title: Wyświetlanie typu niestandardowego za pomocą DebuggerTypeProxy | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,56 +17,56 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c379fbeb9d17f92dcc7067424ea06bb1a2805ed1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 091619353adacaeb9c6996653ac64a0bcd84bb5c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929642"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72568956"
 ---
-# <a name="tell-the-debugger-what-type-to-show-using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>Polecić debugerowi, jakiego typu do wyświetlenia, korzystanie z atrybutu DebuggerTypeProxy (C#, Visual Basic C++sposób niezamierzony)
+# <a name="tell-the-debugger-what-type-to-show-using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>Poinformuj debugera o typie, który ma być wyświetlany przyC#użyciu atrybutu DebuggerTypeProxy C++(, Visual Basic,/CLI)
 
-<xref:System.Diagnostics.DebuggerTypeProxyAttribute> Określa serwer proxy lub podstawiony dla typu i zmiany, które jej typ jest wyświetlana w oknach debugera. Po wyświetleniu zmiennej, która ma serwer proxy serwera proxy oznacza oryginalnego typu w **wyświetlić**. W oknie zmiennych debugera zostaną wyświetlone tylko publiczne składowe typ serwera proxy. Prywatne elementy członkowskie nie są wyświetlane.
+<xref:System.Diagnostics.DebuggerTypeProxyAttribute> Określa serwer proxy lub dodatek dla typu i zmienia sposób wyświetlania typu w oknach debugera. Podczas wyświetlania zmiennej, która ma serwer proxy, serwer proxy znajduje się dla oryginalnego typu na **ekranie**. W oknie zmienna debugera są wyświetlane tylko publiczne elementy członkowskie typu serwera proxy. Prywatne elementy członkowskie nie są wyświetlane.
 
-Ten atrybut można zastosować do:
+Ten atrybut może być stosowany do:
 
 - Struktury
 - Klasy
 - Zestawy
 
 > [!NOTE]
-> Dla kodu natywnego, ten atrybut jest obsługiwany tylko C++sposób niezamierzony kodu.
+> W przypadku kodu natywnego ten atrybut jest obsługiwany tylko C++w kodzie/CLI.
 
-Klasa proxy typu musi mieć konstruktora, który przyjmuje argument typu, który zastąpi serwer proxy. Debuger tworzy nowe wystąpienie klasy proxy typu za każdym razem, gdy wymaganych, aby wyświetlić zmienną typu docelowego. Może to mieć wpływ na wydajność. W rezultacie nie należy przeprowadzać więcej pracy w Konstruktorze niż jest to absolutnie konieczne.
+Klasa proxy typu musi mieć konstruktora, który przyjmuje argument typu, który zostanie zamieniony na serwer proxy. Debuger tworzy nowe wystąpienie klasy proxy typu za każdym razem, gdy musi wyświetlić zmienną typu docelowego. Może to mieć wpływ na wydajność. W związku z tym nie należy wykonywać więcej pracy w konstruktorze niż absolutnie konieczne.
 
-Aby zminimalizować spadku wydajności, Ewaluator wyrażeń nie analizuje atrybuty na serwerze proxy wyświetlania tego typu, chyba że typ jest rozwinięta, użytkownika, klikając pozycję + symboli w oknie debugera lub przy użyciu <xref:System.Diagnostics.DebuggerBrowsableAttribute>. W związku z tym nie należy umieszczać atrybutów na sam typ wyświetlania. Atrybuty można i powinny być używane w treści typ wyświetlania.
+Aby zminimalizować kary wydajności, ewaluatora wyrażeń nie bada atrybutów na ekranie proxy typu, chyba że typ jest rozwinięty przez użytkownika klikając symbol + w oknie debugera lub przez użycie <xref:System.Diagnostics.DebuggerBrowsableAttribute>. W związku z tym nie należy umieszczać atrybutów dla samego typu wyświetlania. Atrybuty mogą i powinny być używane w treści typu wyświetlania.
 
-Dobrym rozwiązaniem dla obiektu pośredniczącego typu jako prywatne klasa zagnieżdżona w klasie, docelowe atrybuty. Dzięki temu można łatwo dostęp do wewnętrznych składowych.
+Dobrym pomysłem jest, aby typ proxy był prywatną klasą zagnieżdżoną w klasie, do której odwołuje się atrybut. Dzięki temu można łatwo uzyskać dostęp do wewnętrznych członków.
 
-<xref:System.Diagnostics.DebuggerTypeProxyAttribute> mogą być dziedziczone, więc jeśli serwer proxy typ jest określony w klasie bazowej będzie stosowana do dowolnej klasy pochodnej, chyba że te klasy pochodne określić własne pośredniczącego typu.
+<xref:System.Diagnostics.DebuggerTypeProxyAttribute> można odziedziczyć, więc jeśli w klasie podstawowej określono serwer proxy typu, będzie on stosowany do wszystkich klas pochodnych, chyba że klasy pochodne określają własny typ proxy.
 
-Jeśli <xref:System.Diagnostics.DebuggerTypeProxyAttribute> jest używana na poziomie zestawu `Target` parametr określa typ, który zastąpi serwer proxy.
+Jeśli <xref:System.Diagnostics.DebuggerTypeProxyAttribute> jest używana na poziomie zestawu, parametr `Target` określa typ, który zostanie zamieniony na serwer proxy.
 
-Aby uzyskać przykład sposobu użycia tego atrybutu, wraz z <xref:System.Diagnostics.DebuggerDisplayAttribute> i <xref:System.Diagnostics.DebuggerTypeProxyAttribute>, zobacz[korzystanie z atrybutu DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md).
+Przykład korzystania z tego atrybutu wraz z <xref:System.Diagnostics.DebuggerDisplayAttribute> i <xref:System.Diagnostics.DebuggerTypeProxyAttribute> można znaleźć w temacie using the[DebuggerDisplay Attribute](../debugger/using-the-debuggerdisplay-attribute.md).
 
-## <a name="using-generics-with-debuggertypeproxy"></a>Za pomocą typów ogólnych za pomocą DebuggerTypeProxy
+## <a name="using-generics-with-debuggertypeproxy"></a>Używanie typów ogólnych z DebuggerTypeProxy
 
-Obsługa typów ogólnych jest ograniczona. Dla języka C# `DebuggerTypeProxy` obsługuje tylko Otwórz typy. Typem otwartym, jest określana skrótem typu unconstructed jest typ ogólny, który nie utworzono wystąpienia z argumentami dla jego parametrów typu. Zamknięte typy, nazywany również typy utworzone, nie są obsługiwane.
+Obsługa typów ogólnych jest ograniczona. Dla C#programu, `DebuggerTypeProxy` obsługuje tylko typy otwarte. Typ otwarty, nazywany również niekonstruowanym typem, jest typem ogólnym, który nie został skonkretyzowany przy użyciu argumentów dla parametrów typu. Typy zamknięte, nazywane również konstruowanymi typami, nie są obsługiwane.
 
-Składnia służąca do typu otwartego wygląda następująco:
+Składnia typu otwartego wygląda następująco:
 
 `Namespace.TypeName<,>`
 
-Jeśli używasz typu ogólnego jako cel w `DebuggerTypeProxy`, należy użyć następującej składni. `DebuggerTypeProxy` Mechanizm wnioskuje parametrów typu dla Ciebie.
+W przypadku użycia typu ogólnego jako elementu docelowego w `DebuggerTypeProxy` należy użyć tej składni. Mechanizm `DebuggerTypeProxy` wnioskuje o parametry typu.
 
-Aby uzyskać więcej informacji o typach otwarte i zamknięte w języku C# zobacz [specyfikacji języka C#](/dotnet/csharp/language-reference/language-specification), otwórz sekcję 20.5.2 i zamknięte typy.
+Aby uzyskać więcej informacji na temat typów otwartych i C# zamkniętych w temacie zobacz [ C# Specyfikacja języka](/dotnet/csharp/language-reference/language-specification), sekcja 20.5.2 typy otwarte i zamknięte.
 
-Visual Basic nie ma składni typu otwartego, więc nie możesz zrobić to samo w języku Visual Basic. Zamiast tego należy użyć ciąg reprezentujący nazwę typu otwartego.
+Visual Basic nie ma składni typu otwartego, dlatego nie można wykonać tej czynności w Visual Basic. Zamiast tego należy użyć ciągu reprezentującego nazwę typu otwartego.
 
 `"Namespace.TypeName'2"`
 
 ## <a name="see-also"></a>Zobacz też
 
 - [Używanie atrybutu DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)
-- [Tworzenie niestandardowych widoków obiektów .managed](../debugger/create-custom-views-of-dot-managed-objects.md)
+- [Tworzenie niestandardowych widoków obiektów zarządzanych](../debugger/create-custom-views-of-managed-objects.md)
 - [Udoskonalanie debugowania za pomocą atrybutów wyświetlania debugera](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

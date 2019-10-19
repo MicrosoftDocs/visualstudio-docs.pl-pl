@@ -1,5 +1,5 @@
 ---
-title: Funkcja nie zawiera prawidłowego prototypu obiektu | Dokumentacja firmy Microsoft
+title: Funkcja nie ma prawidłowego obiektu prototypu | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,20 +14,20 @@ ms.assetid: b9e34652-190f-4b57-b253-df2e8c4d09c6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 413f73a53a6d4f698219139a87c449be4c155831
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cb3cffa4bffd616560aa95ace4ad82a4368ebbd5
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63007506"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574601"
 ---
 # <a name="function-does-not-have-a-valid-prototype-object"></a>Funkcja nie zawiera prawidłowego prototypu obiektu
-Podjęto próbę użycia **instanceof** ustalenie, jeśli obiekt pochodzi z klasy określonej funkcji, ale zostało ponownie zdefiniowane obiektu `prototype` właściwości jako `null`, lub typu obiektu zewnętrznego (zarówno nieprawidłowy [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] obiektów). Obiekt modelu obiektu hosta (na przykład dokumentów programu Internet Explorer lub obiekt window) lub zewnętrznego obiektu COM, może być obiektu zewnętrznego.  
+Podjęto próbę użycia **InstanceOf** , aby określić, czy obiekt pochodzi z określonej klasy funkcji, ale ponownie zdefiniowano Właściwość `prototype` obiektu jako `null` lub typ obiektu zewnętrznego (nieprawidłowymi obiektami [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]). Obiektem zewnętrznym może być obiekt z modelu obiektów hosta (na przykład dokument lub obiekt okna programu Internet Explorer) albo zewnętrzny obiekt COM.  
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
-- Upewnij się, funkcja `prototype` właściwość odwołuje się do prawidłowego [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] obiektu.  
+- Upewnij się, że właściwość `prototype` funkcji odwołuje się do prawidłowego obiektu [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
-## <a name="see-also"></a>Zobacz też  
- [Function — obiekt](../../javascript/reference/function-object-javascript.md)   
+## <a name="see-also"></a>Zobacz także  
+ @No__t_1 [obiektu funkcji](../../javascript/reference/function-object-javascript.md)  
  [prototype, właściwość (Object)](../../javascript/reference/prototype-property-object-javascript.md)

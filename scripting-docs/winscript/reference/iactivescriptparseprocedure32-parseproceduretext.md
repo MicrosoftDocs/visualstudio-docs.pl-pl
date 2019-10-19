@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptParseProcedure32::ParseProcedureText | Microsoft Docs
+title: IActiveScriptParseProcedure32::P arseProcedureText | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -10,15 +10,15 @@ ms.assetid: ede37171-2f1e-4467-a358-17bd4a4f1869
 caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: e772d8276de5528f0aed25278a03725d09edb180
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 713421a43d24d8ed7060b3ec4dfbf0f1c42e6249
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993400"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574882"
 ---
-# <a name="iactivescriptparseprocedure32parseproceduretext"></a>IActiveScriptParseProcedure32::ParseProcedureText
-Analizuje procedury danego kodu i dodaje procedurę do przestrzeni nazw.  
+# <a name="iactivescriptparseprocedure32parseproceduretext"></a>IActiveScriptParseProcedure32::P arseProcedureText
+Analizuje daną procedurę kodu i dodaje procedurę do przestrzeni nazw.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -39,56 +39,56 @@ HRESULT ParseProcedureText(
   
 #### <a name="parameters"></a>Parametry  
  `pstrCode`  
- [in] Adres tekst procedury do oceny. Interpretacja tego ciągu zależy od języka skryptów.  
+ podczas Adres tekstu procedury do obliczenia. Interpretacja tego ciągu zależy od języka skryptowego.  
   
  `pstrFormalParams`  
- [in] Adres nazwy parametrów formalnych w procedurze. Nazwy parametrów muszą być oddzielone ogranicznikami odpowiednie dla silnika wykonywania skryptów. Nazwy nie powinna zostać ujęta w nawiasy.  
+ podczas Adres formalnych nazw parametrów dla procedury. Nazwy parametrów muszą być oddzielone odpowiednimi ogranicznikami aparatu obsługi skryptów. Nazwy nie powinny być ujęte w nawiasy.  
   
  `pstrProcedureName`  
- [in] Adres nazwę procedury do przeanalizowania.  
+ podczas Adres nazwy procedury do przeanalizowania.  
   
  `pstrItemName`  
- [in] Adres nazwy elementu który podaje kontekst, w którym ma zostać obliczone procedury. Jeśli ten parametr jest `NULL`, kod jest oceniany w kontekście globalnym silnika wykonywania skryptów.  
+ podczas Adres nazwy elementu, który zawiera kontekst, w którym ma zostać obliczona procedura. Jeśli ten parametr jest `NULL`, kod jest oceniany w kontekście globalnym aparatu skryptów.  
   
  `punkContext`  
- [in] Adres obiektu kontekstu. Ten obiekt jest zarezerwowany do użytku w środowisku debugowania, gdzie taki kontekst może być świadczona przez debuger do reprezentowania aktywnego kontekstu wykonywania. Jeśli ten parametr jest `NULL`, aparat używa parametru `pstrItemName` do zidentyfikowania kontekstu.  
+ podczas Adres obiektu kontekstu. Ten obiekt jest zarezerwowany do użytku w środowisku debugowania, gdzie taki kontekst może być dostarczony przez debuger do reprezentowania aktywnego kontekstu czasu wykonywania. Jeśli ten parametr jest `NULL`, aparat używa `pstrItemName` do identyfikowania kontekstu.  
   
  `pstrDelimiter`  
- [in] Adres ogranicznika końcowego wewnętrzny. Gdy `pstrCode` jest analizowany ze strumienia tekstu, host zazwyczaj używa rozdzielnika, takiego jak dwa pojedyncze cudzysłowy ("), aby wykrywać koniec procedury. Ten parametr określa ogranicznik używany przez hosta, dzięki czemu silnik wykonywania skryptów zapewnić pierwotne przetwarzanie warunkowe (na przykład, zastępując pojedynczy znak cudzysłowu ['] dwoma pojedynczymi cudzysłowami do użytku w roli ogranicznika). Dokładnie jak (i czy) silnik wykonywania skryptów korzysta z tych informacji zależy od silnika wykonywania skryptów. Ustaw ten parametr na `NULL` Jeśli host nie korzystał z ogranicznika do oznaczenia końca procedury.  
+ podczas Adres ogranicznika końca procedury. Gdy `pstrCode` jest analizowany ze strumienia tekstu, Host zwykle używa ogranicznika, takiego jak dwa znaki pojedynczego cudzysłowu (' '), w celu wykrycia końca procedury. Ten parametr określa ogranicznik używany przez hosta, który umożliwia aparatowi obsługi skryptów dostarczenie pewnych warunkowego przetwarzania wstępnego (na przykład zastępowanie pojedynczego cudzysłowu ['] dwoma pojedynczymi cudzysłowami do użycia jako ogranicznika). Dokładnie tak, jak (i jeśli) aparat skryptów używa tych informacji, zależy od aparatu skryptów. Ustaw ten parametr, aby `NULL`, Jeśli host nie używał ogranicznika do oznaczenia końca procedury.  
   
  `dwSourceContextCookie`  
- [in] Wartość zdefiniowanych przez aplikację, która jest używana na potrzeby debugowania.  
+ podczas Wartość zdefiniowana przez aplikację, która jest używana na potrzeby debugowania.  
   
  `ulStartingLineNumber`  
- [in] Liczony od zera wartość, która określa, która linia będzie rozpoczynać analizę.  
+ podczas Wartość zerowa, która określa, w którym wierszu rozpocznie się analizowanie.  
   
  `dwFlags`  
- [in] Flagi skojarzone z tą procedurą. Może być kombinacją tych wartości:  
+ podczas Flagi skojarzone z procedurą. Może być kombinacją następujących wartości:  
   
 |Wartość|Znaczenie|  
 |-----------|-------------|  
-|SCRIPTPROC_ISEXPRESSION|Oznacza to, że kod w `pstrCode` jest wyrażeniem, która reprezentuje wartość zwracaną przez procedurę. Domyślnie kod może zawierać wyrażenia, listę instrukcji lub czymkolwiek dozwolonym else w procedurze, za pomocą języka skryptów.|  
-|SCRIPTPROC_IMPLICIT_THIS|Oznacza to, że `this` wskaźnik myszy znajduje się w zakresie procedury.|  
-|SCRIPTPROC_IMPLICIT_PARENTS|Oznacza to, że nadrzędne `this` wskaźnika znajdują się w zakresie procedury.|  
+|SCRIPTPROC_ISEXPRESSION|Wskazuje, że kod w `pstrCode` jest wyrażeniem, które reprezentuje wartość zwracaną przez procedurę. Domyślnie kod może zawierać wyrażenie, listę instrukcji lub inne elementy dozwolone w procedurze przez język skryptu.|  
+|SCRIPTPROC_IMPLICIT_THIS|Wskazuje, że w zakresie procedury znajduje się wskaźnik `this`.|  
+|SCRIPTPROC_IMPLICIT_PARENTS|Wskazuje, że elementy nadrzędne wskaźnika `this` są zawarte w zakresie procedury.|  
   
  `ppdisp`  
- [out] Adres wskaźnika na obiekt zawierający właściwości i metody globalne skryptu. Jeśli silnik wykonywania skryptów nie obsługuje taki obiekt `NULL` jest zwracana.  
+ określoną Adres wskaźnika dla obiektu zawierającego globalne metody i właściwości skryptu. Jeśli aparat skryptów nie obsługuje takiego obiektu, `NULL` jest zwracana.  
   
 ## <a name="return-value"></a>Wartość zwracana  
  Zwraca jedną z następujących wartości:  
   
 |Wartość zwracana|Znaczenie|  
 |------------------|-------------|  
-|`S_OK`|Powodzenie.|  
-|`E_INVALIDARG`|Argument ten był nieprawidłowy.|  
+|`S_OK`|Prawnego.|  
+|`E_INVALIDARG`|Nieprawidłowy argument.|  
 |`E_POINTER`|Określono nieprawidłowy wskaźnik.|  
-|`E_NOTIMPL`|Ta metoda nie jest obsługiwana. Aparat skryptów nie obsługuje dodawania czasu wykonywania procedur do przestrzeni nazw.|  
-|`E_UNEXPECTED`|Nie oczekiwano wywołania (na przykład aparat skryptów jest w stanie niezainicjowanym lub zamkniętym).|  
-|`OLESCRIPT_E_SYNTAX`|Wystąpił nieokreślony błąd składniowy w procedurze.|  
-|`S_FALSE`|Aparat skryptów nie obsługuje obiektu dispatch; `ppdisp` parametr ma wartość `NULL`.|  
+|`E_NOTIMPL`|Ta metoda nie jest obsługiwana. Aparat skryptów nie obsługuje dodawania procedur do przestrzeni nazw w czasie wykonywania.|  
+|`E_UNEXPECTED`|Wywołanie nie było oczekiwane (na przykład aparat skryptów jest w stanie niezainicjowanym lub zamkniętym).|  
+|`OLESCRIPT_E_SYNTAX`|W procedurze Wystąpił nieokreślony błąd składniowy.|  
+|`S_FALSE`|Aparat skryptów nie obsługuje obiektu wysyłania; parametr `ppdisp` jest ustawiony na `NULL`.|  
   
 ## <a name="remarks"></a>Uwagi  
- Brak kodu skryptu jest oceniany podczas tego wywołania; przeciwnie procedura jest kompilowana w stan skryptu, w którym może być wywołany przez skrypt później.  
+ Kod skryptu nie jest oceniany podczas tego wywołania; Zamiast tego procedura jest kompilowana w stanie skryptu, w którym może być wywoływana przez skrypt później.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IActiveScriptParseProcedure32](../../winscript/reference/iactivescriptparseprocedure32.md)

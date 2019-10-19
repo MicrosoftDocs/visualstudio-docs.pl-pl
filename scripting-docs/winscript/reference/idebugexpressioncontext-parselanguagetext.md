@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionContext::ParseLanguageText | Microsoft Docs
+title: IDebugExpressionContext::P arseLanguageText | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 50f9f398b9193c776f8e2a823b78ce7b8da438b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0493adde76e029088b637be3c6aaf02c55caaace
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946280"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573155"
 ---
 # <a name="idebugexpressioncontextparselanguagetext"></a>IDebugExpressionContext::ParseLanguageText
 Tworzy wyrażenie debugowania dla określonego tekstu.  
@@ -41,31 +41,31 @@ HRESULT ParseLanguageText(
   
 #### <a name="parameters"></a>Parametry  
  `pstrCode`  
- [in] Zawiera tekst, wyrażenia lub instrukcji.  
+ podczas Zawiera tekst wyrażenia lub instrukcji.  
   
  `nRadix`  
- [in] Podstawy do użycia.  
+ podczas Podstawy do użycia.  
   
  `pstrDelimiter`  
- [in] Ogranicznik końcowy z skrypt bloku. Gdy `pstrCode` jest analizowany ze strumienia tekstu, host zazwyczaj używa rozdzielnika, takiego jak dwa pojedyncze cudzysłowy ("), aby wykrywać koniec bloku skryptu. Ten parametr określa ogranicznik używany przez hosta, dzięki czemu silnik wykonywania skryptów zapewnić pierwotne przetwarzanie warunkowe (na przykład, zastępując pojedynczy znak cudzysłowu ['] dwoma pojedynczymi cudzysłowami do użytku w roli ogranicznika). Dokładnie jak (i czy) używa aparatu skryptów, te informacje zależy od silnika wykonywania skryptów. Ustaw ten parametr na `NULL` Jeśli host nie korzystał z ogranicznika do oznaczenia końca bloku skryptu.  
+ podczas Ogranicznik blokowy końca skryptu. Gdy `pstrCode` jest analizowany ze strumienia tekstu, Host zwykle używa ogranicznika, takiego jak dwa znaki pojedynczego cudzysłowu (' '), w celu wykrycia końca bloku skryptu. Ten parametr określa ogranicznik używany przez hosta, który umożliwia aparatowi obsługi skryptów dostarczenie pewnych warunkowego przetwarzania wstępnego (na przykład zastępowanie pojedynczego cudzysłowu ['] dwoma pojedynczymi cudzysłowami do użycia jako ogranicznika). Dokładnie tak, jak (i jeśli) aparat skryptów używa tych informacji, zależy od aparatu skryptów. Ustaw ten parametr, aby `NULL`, Jeśli host nie używał ogranicznika do oznaczenia końca bloku skryptu.  
   
  `dwFlags`  
- [in] Kombinacja następujących flag tekstu debugowania:  
+ podczas Kombinacja następujących flag tekstu debugowania:  
   
 |Stała|Wartość|Opis|  
 |--------------|-----------|-----------------|  
-|DEBUG_TEXT_ISEXPRESSION|0x00000001|Wskazuje, czy tekst jest wyrażeniem, w przeciwieństwie do instrukcji. Ta flaga może mieć wpływ na sposób, w którym tekst jest analizowany przy niektórych języków.|  
-|DEBUG_TEXT_RETURNVALUE|0x00000002|Jeśli wartość zwracana jest dostępna, będzie używany przez obiekt wywołujący.|  
-|DEBUG_TEXT_NOSIDEEFFECTS|0x00000004|Nie zezwalaj na efekty uboczne. Jeśli ta flaga jest ustawiona, obliczania wyrażenia powinien zmienić bez stanu środowiska uruchomieniowego.|  
-|DEBUG_TEXT_ALLOWBREAKPOINTS|0x00000008|Umożliwia użycie punktów przerwania podczas obliczania wartości tekstu. Jeśli ta flaga nie jest ustawiona punkty przerwania zostaną zignorowane podczas obliczania wartości tekstu.|  
-|DEBUG_TEXT_ALLOWERRORREPORT|0x00000010|Umożliwia raportów o błędach podczas obliczania wartości tekstu. Jeśli ta flaga nie jest ustawiona. następnie błędy nie są zgłaszane na hoście podczas obliczania.|  
-|DEBUG_TEXT_EVALUATETOCODECONTEXT|0x00000020|Określa wyrażenie, które ma zostać obliczone dla kontekstu kodu, zamiast uruchamiać wyrażenia|  
+|DEBUG_TEXT_ISEXPRESSION|0x00000001|Wskazuje, że tekst jest wyrażeniem, a nie instrukcją. Ta flaga może mieć wpływ na sposób analizowania tekstu przez niektóre języki.|  
+|DEBUG_TEXT_RETURNVALUE|0x00000002|Jeśli wartość zwracana jest dostępna, będzie używana przez wywołującego.|  
+|DEBUG_TEXT_NOSIDEEFFECTS|0x00000004|Nie Zezwalaj na skutki uboczne. Jeśli ta flaga jest ustawiona, obliczenie wyrażenia nie powinno zmienić stanu środowiska uruchomieniowego.|  
+|DEBUG_TEXT_ALLOWBREAKPOINTS|0x00000008|Umożliwia używanie punktów przerwania podczas obliczania tekstu. Jeśli ta flaga nie jest ustawiona, punkty przerwania są ignorowane podczas obliczania tekstu.|  
+|DEBUG_TEXT_ALLOWERRORREPORT|0x00000010|Umożliwia raportowanie błędów podczas obliczania tekstu. Jeśli ta flaga nie jest ustawiona, błędy nie są zgłaszane do hosta podczas obliczania.|  
+|DEBUG_TEXT_EVALUATETOCODECONTEXT|0x00000020|Wskazuje, że wyrażenie ma być oceniane do kontekstu kodu, a nie do uruchomienia samego wyrażenia|  
   
  `ppe`  
- [out] Zwraca wyrażenie debugowania dla określonego tekstu.  
+ określoną Zwraca wyrażenie debugowania dla określonego tekstu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -74,5 +74,5 @@ HRESULT ParseLanguageText(
 ## <a name="remarks"></a>Uwagi  
  Ta metoda tworzy wyrażenie debugowania dla określonego tekstu.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IDebugExpressionContext, interfejs](../../winscript/reference/idebugexpressioncontext-interface.md)

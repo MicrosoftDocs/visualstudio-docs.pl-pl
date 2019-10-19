@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationEvents::OnLeaveBreakPoint | Dokumentacja firmy Microsoft
+title: 'IRemoteDebugApplicationEvents:: OnLeaveBreakPoint | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f10ffdd19abd2aada2a98d6d0ae523686abb2e7e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1f4be875f5b420ff96e22ee06cdbeb2929466381
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935027"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571954"
 ---
 # <a name="iremotedebugapplicationeventsonleavebreakpoint"></a>IRemoteDebugApplicationEvents::OnLeaveBreakPoint
-Obsługuje zdarzenie opuszczania punktu przerwania.  
+Obsługuje zdarzenie w przypadku opuszczania punktu przerwania.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,17 +37,17 @@ HRESULT OnLeaveBreakPoint(
   
 #### <a name="parameters"></a>Parametry  
  `prdat`  
- [in] Wątek aplikacji, która pozostanie punkt przerwania.  
+ podczas Wątek aplikacji, który opuścił punkt przerwania.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda obsługuje zdarzenie opuszczania punktu przerwania.  
+ Ta metoda obsługuje zdarzenie w przypadku opuszczania punktu przerwania.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IRemoteDebugApplicationEvents, interfejs](../../winscript/reference/iremotedebugapplicationevents-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::GetScriptThreadID | Microsoft Docs
+title: 'IActiveScript:: GetScriptThreadID | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d329e08e6a17d9edcdf26e14b468c3c56f036c00
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2a0fb1eebfcb6ed100056289fab6bce662f86a7b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935695"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575702"
 ---
 # <a name="iactivescriptgetscriptthreadid"></a>IActiveScript::GetScriptThreadID
-Pobiera skryptów aparatu-zdefiniowany przez identyfikator wątku skojarzone z danym wątek Win32.  
+Pobiera identyfikator zdefiniowany przez aparat skryptu dla wątku skojarzonego z danym wątkiem Win32.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,25 +37,25 @@ HRESULT GetScriptThreadID(
 ```  
   
 #### <a name="parameters"></a>Parametry  
- `dwWin32ThreadID` ,  
- [in] Identyfikator wątku uruchomiony wątek Win32 w bieżącym procesie. Użyj [IActiveScript::GetCurrentScriptThreadID](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md) funkcję, aby pobrać identyfikator wątku aktualnie wykonywany wątek.  
+ `dwWin32ThreadID`,  
+ podczas Identyfikator wątku działającego wątku Win32 w bieżącym procesie. Użyj funkcji [IActiveScript:: GetCurrentScriptThreadID](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md) , aby pobrać identyfikator wątku aktualnie wykonywanego wątku.  
   
- `pstidThread` ,  
- [out] Adres zmiennej, która odbiera identyfikator wątku skryptu, które są skojarzone z danym wątek Win32. Interpretacja tego identyfikatora pozostało do silnika wykonywania skryptów, ale może być po prostu kopię Windows identyfikator wątku. Pamiętaj, że jeśli kończy się wątek Win32, ten identyfikator staje się nieprzypisane i mogą być później przypisane do innego wątku.  
+ `pstidThread`,  
+ określoną Adres zmiennej, która odbiera identyfikator wątku skryptu skojarzonego z danym wątkiem Win32. Interpretacja tego identyfikatora pozostała do aparatu skryptów, ale może to być tylko kopia identyfikatora wątku systemu Windows. Należy pamiętać, że jeśli wątek Win32 zostanie zakończony, ten identyfikator zostanie cofnięty i może zostać przypisany do innego wątku.  
   
 ## <a name="return-value"></a>Wartość zwracana  
  Zwraca jedną z następujących wartości:  
   
 |Wartość zwracana|Znaczenie|  
 |------------------|-------------|  
-|`S_OK`|Powodzenie.|  
+|`S_OK`|Prawnego.|  
 |`E_POINTER`|Określono nieprawidłowy wskaźnik.|  
-|`E_UNEXPECTED`|Nie oczekiwano wywołania (na przykład aparat skryptów jeszcze nie został załadowany lub zainicjowany) i w związku z tym nie powiodła się.|  
+|`E_UNEXPECTED`|Wywołanie nie było oczekiwane (na przykład aparat skryptów nie został jeszcze załadowany lub zainicjowany) i w związku z tym nie powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Pobrano identyfikator może służyć w kolejnych wywołaniach metod kontroli wykonania skryptu w wątku takich jak [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md) metody.  
+ Pobranego identyfikatora można użyć w kolejnych wywołaniach metod sterowania wykonywaniem wątków skryptu, takich jak Metoda [IActiveScript:: InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md) .  
   
- Ta metoda może być wywołana z wątków-base bez skutkuje objaśnienia-base na obiektach hosta lub do [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md) interfejsu.  
+ Ta metoda może być wywoływana z wątków niebazowych bez wypełniania niepodstawowego wywołania do obiektów hosta lub interfejsu [IActiveScript:: InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md) .  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IActiveScript](../../winscript/reference/iactivescript.md)

@@ -1,5 +1,5 @@
 ---
-title: Wyliczenie DOCUMENTNAMETYPE | Dokumentacja firmy Microsoft
+title: DOCUMENTNAMETYPE, Wyliczenie | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5ee258602c47951f4731dc1378542cc83d57d72b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 401eb759523ed1a33d24c3a298db0b3de2b7d5a7
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955220"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575874"
 ---
 # <a name="documentnametype-enumeration"></a>Wyliczenie DOCUMENTNAMETYPE
 Wskazuje, który typ ma zostać pobrany dla dokumentu.  
@@ -42,11 +42,11 @@ DOCUMENTNAMETYPE_UNIQUE_TITLE,} DOCUMENTNAMETYPE;
   
 |Element członkowski|Opis|  
 |------------|-----------------|  
-|DOCUMENTNAMETYPE_APPNODE|Pobiera nazwę, która jest wyświetlana w drzewie aplikacji.|  
-|DOCUMENTNAMETYPE_TITLE|Pobiera nazwę wyświetlaną na pasku tytułu podglądu.|  
+|DOCUMENTNAMETYPE_APPNODE|Pobiera nazwę wyświetlaną w drzewie aplikacji.|  
+|DOCUMENTNAMETYPE_TITLE|Pobiera nazwę, która pojawia się na pasku tytułu przeglądarki.|  
 |DOCUMENTNAMETYPE_FILE_TAIL|Pobiera nazwę pliku bez ścieżki.|  
 |DOCUMENTNAMETYPE_URL|Pobiera adres URL dokumentu.|  
-|DOCUMENTNAMETYPE_UNIQUE_TITLE|Pobiera tytuł dołączany wraz z wyliczenia do identyfikacji.|  
+|DOCUMENTNAMETYPE_UNIQUE_TITLE|Pobiera tytuł dołączany z wyliczeniem do identyfikacji.|  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Stałe, wyliczenia i struktury debugera aktywnego skryptu](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

@@ -1,5 +1,5 @@
 ---
-title: ISimpleConnectionPoint::DescribeEvents | Dokumentacja firmy Microsoft
+title: ISimpleConnectionPoint::D escribeEvents | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1b5824f945ad25f177fc169b58157377bf53bcce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b5000689d588fe3f63ec5408893187bba8d13d63
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786422"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571823"
 ---
 # <a name="isimpleconnectionpointdescribeevents"></a>ISimpleConnectionPoint::DescribeEvents
-Zwraca identyfikator DISPID i nazwę dla każdego zdarzenia w określonym zakresie zdarzeń.  
+Zwraca identyfikator DISPID i nazwę każdego zdarzenia w określonym zakresie zdarzeń.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,31 +41,31 @@ HRESULT DescribeEvents(
   
 #### <a name="parameters"></a>Parametry  
  `iEvent`  
- [in] Indeks pierwszego zdarzenia do pobrania.  
+ podczas Indeks pierwszego zdarzenia do pobrania.  
   
  `cEvents`  
- [in] Liczba zdarzeń do pobrania.  
+ podczas Liczba zdarzeń do pobrania.  
   
  `prgid`  
- [out] Tablica wartości identyfikator DISPID zdarzenia.  
+ określoną Tablica wartości DISPID zdarzenia.  
   
  `prgbstr`  
- [out] Tablica nazw zdarzeń.  
+ określoną Tablica nazw zdarzeń.  
   
  `pcEventsFetched`  
- [out] Rzeczywista liczba zdarzeń pobrana.  
+ określoną Rzeczywista liczba pobranych zdarzeń.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
-|`S_FALSE`|Zażądano więcej zdarzeń, nie były dostępne. Niedostępne zdarzenia są reprezentowane z DISPID_NULL i BSTR o wartości null.|  
-|`E_INVALIDARG`|Może być pobierane żadne elementy.|  
+|`S_FALSE`|Zażądano więcej zdarzeń niż było dostępne. Niedostępne zdarzenia są reprezentowane za pomocą DISPID_NULL i typu BSTR o wartości null.|  
+|`E_INVALIDARG`|Nie można pobrać żadnych elementów.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda zwraca identyfikator DISPID i nazwę dla każdego zdarzenia w określonym zakresie zdarzeń.  
+ Ta metoda zwraca identyfikator DISPID i nazwę każdego zdarzenia w określonym zakresie zdarzeń.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [ISimpleConnectionPoint, interfejs](../../winscript/reference/isimpleconnectionpoint-interface.md)

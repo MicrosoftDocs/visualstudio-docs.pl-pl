@@ -1,5 +1,5 @@
 ---
-title: Interfejs IDebugApplicationNodeEvents | Dokumentacja firmy Microsoft
+title: Interfejs IDebugApplicationNodeEvents | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,26 +13,26 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7412e258c7f67f44bde6f69b593a1eecb1d84e07
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a2f72290e331a51f1b33746b22a6526c9bfbac7b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822278"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574716"
 ---
 # <a name="idebugapplicationnodeevents-interface"></a>Interfejs IDebugApplicationNodeEvents
-Udostępnia interfejs zdarzenia dla `IDebugApplicationNode` interfejsu.  
+Udostępnia interfejs zdarzenia dla interfejsu `IDebugApplicationNode`.  
   
- Oprócz metod odziedziczone `IUnknown`, `IDebugApplicationNodeEvents` interfejsu udostępnia następujące metody.  
+ Oprócz metod dziedziczonych z `IUnknown` interfejs `IDebugApplicationNodeEvents` udostępnia następujące metody.  
   
-## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[IDebugApplicationNodeEvents::onAddChild](../../winscript/reference/idebugapplicationnodeevents-onaddchild.md)|Obsługuje zdarzenie, gdy węzeł podrzędny zostanie dodany do obiektu węzła debugowania aplikacji.|  
-|[IDebugApplicationNodeEvents::onRemoveChild](../../winscript/reference/idebugapplicationnodeevents-onremovechild.md)|Obsługuje zdarzenie, gdy węzeł podrzędny zostanie usunięty z obiektu węzła debugowania aplikacji.|  
-|[IDebugApplicationNodeEvents::onDetach](../../winscript/reference/idebugapplicationnodeevents-ondetach.md)|Obsługuje zdarzenie, co oznacza, że obiekt węzła debugowania aplikacji została odłączona od węzła nadrzędnego.|  
-|[IDebugApplicationNodeEvents::onAttach](../../winscript/reference/idebugapplicationnodeevents-onattach.md)|Obsługuje zdarzenie, co oznacza, że obiekt węzła debugowania aplikacji został dołączony do węzła nadrzędnego.|  
+|[IDebugApplicationNodeEvents::onAddChild](../../winscript/reference/idebugapplicationnodeevents-onaddchild.md)|Obsługuje zdarzenie po dodaniu węzła podrzędnego do obiektu węzła debugowania aplikacji.|  
+|[IDebugApplicationNodeEvents::onRemoveChild](../../winscript/reference/idebugapplicationnodeevents-onremovechild.md)|Obsługuje zdarzenie po usunięciu węzła podrzędnego z obiektu węzła debugowania aplikacji.|  
+|[IDebugApplicationNodeEvents::onDetach](../../winscript/reference/idebugapplicationnodeevents-ondetach.md)|Obsługuje zdarzenie oznaczające, że obiekt węzła aplikacji debugowania został odłączony od węzła nadrzędnego.|  
+|[IDebugApplicationNodeEvents::onAttach](../../winscript/reference/idebugapplicationnodeevents-onattach.md)|Obsługuje zdarzenie oznaczające, że obiekt węzła aplikacji debugowania został podłączony do węzła nadrzędnego.|  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IDebugApplicationNode, interfejs](../../winscript/reference/idebugapplicationnode-interface.md)

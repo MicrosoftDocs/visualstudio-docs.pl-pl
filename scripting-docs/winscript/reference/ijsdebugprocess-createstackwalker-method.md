@@ -1,5 +1,5 @@
 ---
-title: IJsDebugProcess::CreateStackWalker, metoda | Dokumentacja firmy Microsoft
+title: 'IJsDebugProcess:: CreateStackWalker — Metoda | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cb084b665467ae023bb885ee0de221f0409a0160
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 70f5d4885abba3d891526723d3ca1f174549c348
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557736"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573836"
 ---
 # <a name="ijsdebugprocesscreatestackwalker-method"></a>IJsDebugProcess::CreateStackWalker — Metoda
-Metoda fabryki tworząca analizatora pamięci stosu.  
+Metoda fabryki analizatora stosu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -36,18 +36,18 @@ HRESULT CreateStackWalker(
   
 #### <a name="parameters"></a>Parametry  
  `threadId`  
- [in] Identyfikator wątku.  
+ podczas Identyfikator wątku.  
   
  `ppStackWalker`  
- [out] Nowy obiekt walker stosu.  
+ określoną Nowy obiekt analizatora stosu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
   
 ## <a name="remarks"></a>Uwagi  
- Zwraca wartość E_JsDEBUG_UNKNOWN_THREAD, jeśli wątek nie ma w sobie JavaScript. Ta metoda może zostać wywołana tylko, gdy proces docelowy został zatrzymany.  
+ Zwraca E_JsDEBUG_UNKNOWN_THREAD, jeśli wątek nie ma w nim języka JavaScript. Tę metodę można wywołać tylko w czasie, gdy proces docelowy został zatrzymany.  
   
 ## <a name="requirements"></a>Wymagania  
- **Nagłówek:** jscript9diag.h  
+ **Nagłówek:** Jscript9diag. h  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IJsDebugProcess, interfejs](../../winscript/reference/ijsdebugprocess-interface.md)

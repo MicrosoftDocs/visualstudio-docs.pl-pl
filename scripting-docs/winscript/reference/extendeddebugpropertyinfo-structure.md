@@ -1,5 +1,5 @@
 ---
-title: Struktura ExtendedDebugPropertyInfo | Dokumentacja firmy Microsoft
+title: Struktura ExtendedDebugPropertyInfo | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1fe0eef00d2bf064a8a002925f4ba5607d36f31c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 09f3c5a219fca9ec9b881e2ae8363aae4d48e03f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955201"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575832"
 ---
 # <a name="extendeddebugpropertyinfo-structure"></a>Struktura ExtendedDebugPropertyInfo
-Rozszerza `DebugPropertyInfo` strukturę dodatkowe elementy członkowskie w celu scharakteryzowania właściwości rozszerzonej.  
+Rozszerza strukturę `DebugPropertyInfo` z dodatkowymi elementami członkowskimi w celu scharakteryzowania właściwości rozszerzonej.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -48,7 +48,7 @@ typedef struct ExtendedDebugPropertyInfo{
   
 ## <a name="members"></a>Elementy członkowskie  
  `dwValidFields`  
- Wyliczany typ danych używany do określenia, które pola są inicjowane.  
+ Wyliczany typ danych służący do określania, które pola są inicjowane.  
   
  `bstrName`  
  Nazwa właściwości w kontekście.  
@@ -57,35 +57,35 @@ typedef struct ExtendedDebugPropertyInfo{
  Typ właściwości jako sformatowany ciąg.  
   
  `bstrValue`  
- Wartość właściwości jako ciąg formatowania.  
+ Wartość właściwości jako sformatowany ciąg.  
   
  `bstrFullName`  
  Pełna nazwa właściwości.  
   
  `dwAttrib`  
- Wyliczenie, które określa flagi dla atrybutów właściwości debugowania.  
+ Wyliczenie określające flagi dla atrybutów właściwości debugowania.  
   
  `pDebugProp`  
- `IDebugProperty` Obiekt odpowiadający to `ExtendedDebugPropertyInfo`.  
+ `IDebugProperty` obiekt odpowiadający tej `ExtendedDebugPropertyInfo`.  
   
  `nDISPID`  
- Identyfikator wysyłki.  
+ Identyfikator wysyłania.  
   
  `nType`  
  Typ właściwości rozszerzonej.  
   
  `varValue`  
- Wartość właściwości rozszerzonej, jeśli zmieści się w WARIANCIE.  
+ Wartość właściwości rozszerzonej, jeśli może pasować do WARIANTu.  
   
  `plbValue`  
- Bajty danych rzeczywistych wartości właściwości.  
+ Rzeczywiste bajty danych wartości właściwości.  
   
  `pDebugExtProp`  
- `IDebugExtendedProperty` Obiekt odpowiadający to `ExtendedDebugPropertyInfo`.  
+ `IDebugExtendedProperty` obiekt odpowiadający tej `ExtendedDebugPropertyInfo`.  
   
-## <a name="see-also"></a>Zobacz też  
- [Struktura DebugPropertyInfo](../../winscript/reference/debugpropertyinfo-structure.md)   
- [Interfejs IDebugProperty](../../winscript/reference/idebugproperty-interface.md)   
- [Interfejs IDebugExtendedProperty](../../winscript/reference/idebugextendedproperty-interface.md)   
- [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)   
+## <a name="see-also"></a>Zobacz także  
+ @No__t_1 [struktury DebugPropertyInfo](../../winscript/reference/debugpropertyinfo-structure.md)  
+ [IDebugProperty   interfejsu](../../winscript/reference/idebugproperty-interface.md)  
+ [IDebugExtendedProperty   interfejsu](../../winscript/reference/idebugextendedproperty-interface.md)  
+ [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)    
  [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)

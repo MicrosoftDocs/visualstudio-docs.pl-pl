@@ -1,5 +1,5 @@
 ---
-title: DBGPROP_ATTRIB_FLAGS | Dokumentacja firmy Microsoft
+title: DBGPROP_ATTRIB_FLAGS | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -19,15 +19,15 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0324353d716430148b4b3c7b8adf9262e0dc3b7b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3170e310aa3177e2ca7a1dd81ead02bcc4050114
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955279"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572595"
 ---
-# <a name="dbgpropattribflags"></a>DBGPROP_ATTRIB_FLAGS
-W tym artykule opisano różne atrybuty dla `IDebugProperty`. Członek `DebugPropertyInfo` struktury.  
+# <a name="dbgprop_attrib_flags"></a>DBGPROP_ATTRIB_FLAGS
+Opisuje różne atrybuty `IDebugProperty`. Składowa struktury `DebugPropertyInfo`.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -56,59 +56,59 @@ DBGPROP_ATTRIB_NO_ATTRIB  =0x00000000,
   
 ## <a name="members"></a>Elementy członkowskie  
  DBGPROP_ATTRIB_NO_ATTRIB  
- Wskazuje żadnych atrybutów.  
+ Nie wskazuje żadnych atrybutów.  
   
  DBGPROP_ATTRIB_VALUE_IS_INVALID  
- Oznacza to, że wartość w `DebugPropertyInfo::bstrValue` jest nieprawidłowy.  
+ Wskazuje, że wartość w `DebugPropertyInfo::bstrValue` jest nieprawidłowa.  
   
  DBGPROP_ATTRIB_VALUE_IS_EXPANDABLE  
- Wskazuje, że odwołanie lub właściwość ma elementy podrzędne.  
+ Wskazuje, że odwołanie lub właściwość zawiera elementy podrzędne.  
   
  DBGPROP_ATTRIB_VALUE_READONLY  
  Wskazuje, że wartość jest tylko do odczytu.  
   
  DBGPROP_ATTRIB_ACCESS_PUBLIC  
- Określa obiekt, który ma dostęp publiczny.  
+ Wskazuje obiekt, który ma dostęp publiczny.  
   
  DBGPROP_ATTRIB_ACCESS_PRIVATE  
- Określa obiekt, który ma dostęp prywatny.  
+ Wskazuje obiekt z dostępem prywatnym.  
   
  DBGPROP_ATTRIB_ACCESS_PROTECTED  
- Określa obiekt, który został ochroną dostępu.  
+ Wskazuje obiekt z dostępem chronionym.  
   
  DBGPROP_ATTRIB_ACCESS_FINAL  
- Określa obiekt, który ma dostęp do końcowej.  
+ Wskazuje obiekt, który ma końcowy dostęp.  
   
  DBGPROP_ATTRIB_STORAGE_GLOBAL  
- Wskazuje globalnej pamięci masowej.  
+ Wskazuje globalny magazyn.  
   
  DBGPROP_ATTRIB_STORAGE_STATIC  
- Wskazuje statycznego magazynu.  
+ Wskazuje magazyn statyczny.  
   
  DBGPROP_ATTRIB_STORAGE_FIELD  
- Określa obiekt, który jest właściwością.  
+ Wskazuje obiekt, który jest właściwością.  
   
  DBGPROP_ATTRIB_STORAGE_VIRTUAL  
- Wskazuje magazynu wirtualnego.  
+ Wskazuje magazyn wirtualny.  
   
  DBGPROP_ATTRIB_TYPE_IS_CONSTANT  
- Wskazuje, że typ obiektu jest stały.  
+ Wskazuje, że typem obiektu jest stała.  
   
  DBGPROP_ATTRIB_TYPE_IS_SYNCHRONIZED  
- Wskazuje, że to gniazdo jest synchronizowane wątku.  
+ Wskazuje, że to miejsce jest zsynchronizowane z wątkiem.  
   
  DBGPROP_ATTRIB_TYPE_IS_VOLATILE  
- Wskazuje to gniazdo volatile w odniesieniu do skorzystania z magazynu trwałego.  
+ Wskazuje, że to miejsce jest nietrwałe w odniesieniu do magazynu trwałego.  
   
  DBGPROP_ATTRIB_HAS_EXTENDED_ATTRIBS  
- Wskazuje, że to miejsce ma atrybuty niż te wstępnie zdefiniowane usługi bits.  
+ Wskazuje, że to miejsce ma atrybuty powyżej i wykracza poza te wstępnie zdefiniowane bity.  
   
  DBGPROP_ATTRIB_VALUE_IS_RETURN_VALUE  
- Wskazuje, że wartość jest wartość zwracaną przez funkcję.  
+ Wskazuje, że wartość jest wartością zwracaną z funkcji.  
   
 ## <a name="remarks"></a>Uwagi  
- Te flagi są również używane do filtrowania elementów podrzędnych obiektu. Wartości mogą być łączone z bitowe OR.  
+ Te flagi są również używane do filtrowania elementów podrzędnych obiektu. Wartości mogą być połączone z bitowym lub.  
   
-## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugProperty](../../winscript/reference/idebugproperty-interface.md)   
+## <a name="see-also"></a>Zobacz także  
+ [IDebugProperty   interfejsu](../../winscript/reference/idebugproperty-interface.md)  
  [DebugPropertyInfo, struktura](../../winscript/reference/debugpropertyinfo-structure.md)

@@ -1,5 +1,5 @@
 ---
-title: Wyliczenie SCRIPTGCTYPE | Dokumentacja firmy Microsoft
+title: SCRIPTGCTYPE, Wyliczenie | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -11,15 +11,15 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0a5de3ea949203ad7a6dca0ea777fdbc9514ba6d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7fce16c756cf06c8cf01937114402832570a0cd3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840242"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574393"
 ---
 # <a name="scriptgctype-enumeration"></a>Wyliczenie SCRIPTGCTYPE
-Typ wyrzucania elementów bezużytecznych do wykonania. Używane w [IActiveScriptGarbageCollector::CollectGarbage](../../winscript/reference/iactivescriptgarbagecollector-collectgarbage.md) metody.  
+Typ wyrzucania elementów bezużytecznych do wykonania. Używany w metodzie [IActiveScriptGarbageCollector:: Odzyskaj pamięć](../../winscript/reference/iactivescriptgarbagecollector-collectgarbage.md) .  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -27,12 +27,12 @@ Typ wyrzucania elementów bezużytecznych do wykonania. Używane w [IActiveScrip
 typedef enum tagSCRIPTGCTYPE {    SCRIPTGCTYPE_NORMAL           = 0,    SCRIPTGCTYPE_EXHAUSTIVE       = 1,} SCRIPTGCTYPE;  
 ```  
   
-## <a name="enumeration-values"></a>Wartości wyliczenia  
+## <a name="enumeration-values"></a>Wartości wyliczeniowe  
   
 |||  
 |-|-|  
-|SCRIPTGCTYPE_NORMAL|Wyrzucanie elementów bezużytecznych normalny. Wartość całkowita wynosi 0.|  
-|SCRIPTGCTYPE_EXHAUSTIVE|Wyrzucanie elementów bezużytecznych wyczerpujący. Wartość liczby całkowitej to 1.|  
+|SCRIPTGCTYPE_NORMAL|Wykonaj normalne odzyskiwanie pamięci. Wartość całkowita jest równa 0.|  
+|SCRIPTGCTYPE_EXHAUSTIVE|Wykonaj kompletną odzyskiwanie pamięci. Wartość całkowita to 1.|  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Kody błędów, stałe i wyliczenia aktywnego skryptu](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)

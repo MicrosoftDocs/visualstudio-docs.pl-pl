@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextExternalAuthor::GetPathName | Dokumentacja firmy Microsoft
+title: 'IDebugDocumentTextExternalAuthor:: getPathname | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5739e7cb0cb12661ee5683051fb7b687e62dfde4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e876b41ce1bde4defffd11267c6665f9d57da077
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978757"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575967"
 ---
 # <a name="idebugdocumenttextexternalauthorgetpathname"></a>IDebugDocumentTextExternalAuthor::GetPathName
-Zwraca pełną ścieżkę i nazwę dokumentu.  
+Zwraca pełną ścieżkę i nazwę pliku dokumentu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -38,23 +38,23 @@ HRESULT GetPathName(
   
 #### <a name="parameters"></a>Parametry  
  `pbstrLongName`  
- [out] Ciąg zawierający pełną ścieżkę i nazwę pliku.  
+ określoną Ciąg zawierający pełną ścieżkę i nazwę pliku.  
   
  `pfIsOriginalFile`  
- [out] Wartość logiczna wskazująca, jeśli ścieżka i nazwa pliku można znaleźć w oryginalnym dokumencie.  
+ określoną Wartość logiczna wskazująca, czy ścieżka i nazwa pliku odwołują się do oryginalnego dokumentu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
-|`E_FAIL`|Plik źródłowy nie można utworzyć ani określić.|  
+|`E_FAIL`|Nie można utworzyć lub określić pliku źródłowego.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda zwraca Pełna ścieżka i nazwa pliku dokumentu.  
+ Ta metoda zwraca pełną ścieżkę i nazwę pliku dokumentu.  
   
- Jeśli `pfIsOriginalFile` jest wartość FALSE, ścieżkę i nazwę pliku w `pbstrLongName` odwołuje się do nowo utworzonego pliku tymczasowego.  
+ Jeśli `pfIsOriginalFile` ma wartość FALSE, ścieżka i nazwa pliku w `pbstrLongName` odnoszą się do nowo utworzonego pliku tymczasowego.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IDebugDocumentTextExternalAuthor, interfejs](../../winscript/reference/idebugdocumenttextexternalauthor-interface.md)

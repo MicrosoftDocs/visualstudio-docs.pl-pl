@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::SetDocumentAttr | Dokumentacja firmy Microsoft
+title: 'IDebugDocumentHelper:: SetDocumentAttr | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b3c19e5b2091bf9dd30359f30e27019fa778b675
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e2210557a1ca2b23d19d151d6fe6f3b5d25e7082
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948970"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574608"
 ---
 # <a name="idebugdocumenthelpersetdocumentattr"></a>IDebugDocumentHelper::SetDocumentAttr
 Ustawia atrybuty dla tego dokumentu.  
@@ -37,18 +37,18 @@ HRESULT SetDocumentAttr(
   
 #### <a name="parameters"></a>Parametry  
  `pszAttributes`  
- [in] Atrybuty, które będą stosowane do dokumentu.  
+ podczas Atrybuty, które mają zostać zastosowane do dokumentu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda Ustawia atrybuty dla tego dokumentu.  
+ Ta metoda ustawia atrybuty dla tego dokumentu.  
   
-## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)   
+## <a name="see-also"></a>Zobacz także  
+ [IDebugDocumentHelper   interfejsu](../../winscript/reference/idebugdocumenthelper-interface.md)  
  [TEXT_DOC_ATTR, stałe](../../winscript/reference/text-doc-attr-constants.md)

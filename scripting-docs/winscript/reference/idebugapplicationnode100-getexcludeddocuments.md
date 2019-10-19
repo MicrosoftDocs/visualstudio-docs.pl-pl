@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNode100::GetExcludedDocuments | Dokumentacja firmy Microsoft
+title: 'IDebugApplicationNode100:: GetExcludedDocuments | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,18 +13,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b8b1793fc1a3aacb27cc612bb5212dc33e7ab7dc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c135aa85ca65a44f6f970e83d7975bb441ff56f5
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436048"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574757"
 ---
 # <a name="idebugapplicationnode100getexcludeddocuments"></a>IDebugApplicationNode100::GetExcludedDocuments
-Pobiera dokumenty tekstowe, ukryte przez określony filtr.  
+Pobiera dokumenty tekstowe, które są ukryte przez określony filtr.  
   
 > [!IMPORTANT]
-> [Interfejs IDebugApplicationNode100](../../winscript/reference/idebugapplicationnode100-interface.md) jest implementowany przez program PDM 10.0 lub nowszym. Znajduje się w zestawie activdbg100.h.  
+> [Interfejs IDebugApplicationNode100](../../winscript/reference/idebugapplicationnode100-interface.md) jest implementowany przez PDM v 10.0 i nowsze. Znajduje się w zestawie activdbg100.h.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -39,5 +39,5 @@ HRESULT GetExcludedDocuments(        [in] APPLICATION_NODE_EVENT_FILTER filter, 
  `pDocuments`  
  Zestaw dokumentów.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IDebugApplicationNode100, interfejs](../../winscript/reference/idebugapplicationnode100-interface.md)

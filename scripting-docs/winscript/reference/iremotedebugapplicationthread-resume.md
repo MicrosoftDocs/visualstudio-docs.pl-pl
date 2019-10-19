@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationThread::Resume | Microsoft Docs
+title: 'IRemoteDebugApplicationThread:: Resume | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5b1a40d16cf017215de42e6a83312d5b756f2081
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dc9ccb28604d3a185a1919eb8dc288df711630b6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788054"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571957"
 ---
 # <a name="iremotedebugapplicationthreadresume"></a>IRemoteDebugApplicationThread::Resume
-Wznawia działanie wątku.  
+Wznawia wątek.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,17 +37,17 @@ HRESULT Resume(
   
 #### <a name="parameters"></a>Parametry  
  `pdwCount`  
- [out] Wstrzymania liczenia wątku.  
+ określoną Liczba wstrzymań dla wątku.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Gdy ta metoda wznawia działanie wątku, jego zmniejsza suspend-count.  
+ Gdy ta metoda wznawia wątek, zmniejsza liczbę wstrzymania.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IRemoteDebugApplicationThread, interfejs](../../winscript/reference/iremotedebugapplicationthread-interface.md)

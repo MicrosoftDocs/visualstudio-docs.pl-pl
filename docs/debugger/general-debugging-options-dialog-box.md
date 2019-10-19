@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd90cb5eb55143a4a1916dfcee3f108ba7afb759
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
-ms.translationtype: HT
+ms.openlocfilehash: bbd99d260ba61d9e3ae9e877ecc1cefb1a22892e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72536032"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72569065"
 ---
 # <a name="general-debugging-options"></a>Ogólne opcje debugowania
 
@@ -95,7 +95,7 @@ Przekrocz **nad właściwościami i operatorami (tylko kod zarządzany)** : unie
 
 **Przekieruj cały tekst okna danych wyjściowych do okna bezpośredniego**: wysyła wszystkie komunikaty debugera, które zwykle pojawiają się w oknie **danych wyjściowych** do okna **bezpośredniego** .
 
-**Pokaż nieprzetworzoną strukturę obiektów w oknach zmiennych**: wyłącza wszystkie dostosowania widoku struktury obiektów. Aby uzyskać więcej informacji na temat dostosowań widoku, zobacz [Tworzenie niestandardowych widoków obiektów zarządzanych](../debugger/create-custom-views-of-dot-managed-objects.md).
+**Pokaż nieprzetworzoną strukturę obiektów w oknach zmiennych**: wyłącza wszystkie dostosowania widoku struktury obiektów. Aby uzyskać więcej informacji na temat dostosowywania widoku, zobacz [Tworzenie niestandardowych widoków obiektów zarządzanych](../debugger/create-custom-views-of-managed-objects.md).
 
 **Pomiń optymalizację JIT podczas ładowania modułu (tylko kod zarządzany)** : wyłącza optymalizację JIT kodu zarządzanego, gdy moduł jest ładowany i jest kompilowany w trybie JIT podczas dołączania debugera. Wyłączenie optymalizacji może ułatwić debugowanie niektórych problemów, ale kosztem wydajności. Jeśli używasz Tylko mój kod, pominięcie optymalizacji JIT może spowodować, że kod niebędący użytkownikiem będzie wyświetlany jako kod użytkownika ("mój kod"). Aby uzyskać więcej informacji, zobacz [Optymalizacja i debugowanie JIT](../debugger/jit-optimization-and-debugging.md).
 

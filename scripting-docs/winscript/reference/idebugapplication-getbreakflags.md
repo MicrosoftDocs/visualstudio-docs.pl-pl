@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::GetBreakFlags | Dokumentacja firmy Microsoft
+title: 'IDebugApplication:: GetBreakFlags | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 389f50cf6883cd59cd540ef278aa1b4f69a6a629
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a614429ebb8cc9271a0444536d14c45b69a9588f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990898"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574972"
 ---
 # <a name="idebugapplicationgetbreakflags"></a>IDebugApplication::GetBreakFlags
 Zwraca bieżące flagi przerwania dla aplikacji.  
@@ -38,13 +38,13 @@ HRESULT GetBreakFlags(
   
 #### <a name="parameters"></a>Parametry  
  `pabf`  
- [out] Bieżące flagi przerwania dla aplikacji.  
+ określoną Bieżące flagi przerwania dla aplikacji.  
   
  `pprdatSteppingThread`  
- [out] Aktualnie uruchomionemu wątkowi.  
+ określoną Aktualnie uruchomiony wątek.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -53,6 +53,6 @@ HRESULT GetBreakFlags(
 ## <a name="remarks"></a>Uwagi  
  Ta metoda zwraca bieżące flagi przerwania dla aplikacji.  
   
-## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugApplication](../../winscript/reference/idebugapplication-interface.md)   
+## <a name="see-also"></a>Zobacz także  
+ [IDebugApplication   interfejsu](../../winscript/reference/idebugapplication-interface.md)  
  [APPBREAKFLAGS, wyliczenie](../../winscript/reference/appbreakflags-enumeration.md)
