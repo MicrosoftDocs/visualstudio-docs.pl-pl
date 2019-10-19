@@ -1,7 +1,7 @@
 ---
-title: Polecenia konsoli JavaScript | Dokumentacja firmy Microsoft
+title: Polecenia konsoli języka JavaScript | Microsoft Docs
 ms.custom: ''
-ms.date: 03/28/2019
+ms.date: 10/17/2019
 ms.topic: reference
 helpviewer_keywords:
 - JavaScript Console commands [UWP apps]
@@ -10,77 +10,74 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: 40e32250378d92ac63e4a057a59ee847de6af810
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fead28e60116acb7b2ae311d98e5475c5da3ec35
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62905677"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72588984"
 ---
-# <a name="javascript-console-commands-in-visual-studio"></a>Polecenia konsoli JavaScript w programie Visual Studio
+# <a name="javascript-console-commands-in-visual-studio"></a>Polecenia konsoli języka JavaScript w programie Visual Studio
 
-::: moniker range=">=vs-2019"
-Polecenia umożliwiają wysyłanie komunikatów oraz wykonywania innych zadań w oknie konsoli JavaScript programu Visual Studio. Informacje przedstawione w tym temacie mają zastosowanie do aplikacji Node.js utworzone za pomocą programu Visual Studio z **programowania Node.js** zainstalowanym obciążeniem.
-::: moniker-end
-::: moniker range="vs-2017"
-Polecenia umożliwiają wysyłanie komunikatów oraz wykonywania innych zadań w oknie konsoli JavaScript programu Visual Studio. Przykłady pokazujące, jak można użyć tego okna, zobacz [Szybki Start: Debugowanie kodu JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017). Informacje przedstawione w tym temacie mają zastosowanie do aplikacji Node.js, platformy uniwersalnej systemu Windows aplikacje i aplikacje utworzone przy użyciu programu Visual Studio Tools for Apache Cordova. Aby uzyskać informacje na temat obsługiwanych konsoli poleceń w aplikacji Cordova, zobacz [Debug Your App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/).
-::: moniker-end
+Polecenia służą do wysyłania komunikatów i wykonywania innych zadań w oknie konsoli JavaScript programu Visual Studio. Aby zapoznać się z przykładami pokazującymi, jak korzystać z tego okna, zobacz [Szybki Start: debugowanie JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017). Informacje przedstawione w tym temacie dotyczą aplikacji node. js, aplikacji platformy UWP i aplikacji utworzonych przy użyciu Visual Studio Tools Apache Cordova.
 
-Jeśli nastąpi zamknięcie okna konsoli języka JavaScript, możesz go otworzyć podczas debugowania w programie Visual Studio, wybierając **debugowania** > **Windows** > **języka JavaScript Konsola**.
+Jeśli okno konsoli JavaScript jest zamknięte, można je otworzyć podczas debugowania w programie Visual Studio, wybierając pozycję **debuguj**  > **Windows**  > **konsoli JavaScript**.
 
 > [!NOTE]
-> Jeśli okno nie jest dostępne podczas sesji debugowania, upewnij się, że typ debugera jest ustawiona na **skryptu** właściwości debugowania projektu.
+> Jeśli okno nie jest dostępne podczas sesji debugowania, upewnij się, że typ debugera jest ustawiony na **skrypt** we właściwościach debugowania dla projektu.
 
-Aby uzyskać informacje na temat używania konsoli narzędzi dla deweloperów programu Microsoft Edge, zobacz [w tym temacie](/microsoft-edge/devtools-guide).
+Aby uzyskać informacje na temat korzystania z konsoli programu w narzędziach deweloperskich Microsoft Edge, zobacz [ten temat](/microsoft-edge/devtools-guide).
 
-## <a name="console-object-commands"></a>Konsola obiektu polecenia
-W poniższej tabeli przedstawiono składnię `console` obiekt polecenia, można użyć w oknie konsoli języka JavaScript lub służącego do wysyłania komunikatów do konsoli w kodzie. Ten obiekt udostępnia wiele form tak, aby rozróżnić komunikaty informacyjne i komunikaty o błędach, jeśli chcesz.
+## <a name="console-object-commands"></a>polecenia obiektu konsoli
 
-Można użyć dłużej formy polecenia `window.console.[command]` Jeśli potrzebujesz uniknąć możliwa pomyłka z lokalnych obiektów o nazwie konsoli.
+W tej tabeli przedstawiono składnię poleceń `console` obiektów, których można użyć w oknie konsoli JavaScript, lub można użyć do wysyłania komunikatów do konsoli programu z kodu. Ten obiekt zawiera wiele formularzy umożliwiających rozróżnienie komunikatów informacyjnych i komunikatów o błędach, jeśli chcesz.
+
+Możesz użyć dłuższego formularza polecenia `window.console.[command]`, jeśli chcesz uniknąć ewentualnych pomyłek z obiektami lokalnymi o nazwie konsola.
 
 > [!TIP]
-> Starsze wersje programu Visual Studio nie obsługują kompletny zestaw poleceń. Użyj funkcji IntelliSense w obiekcie konsoli, aby pobrać skróconych informacji o obsługiwanych poleceniach.
+> Starsze wersje programu Visual Studio nie obsługują pełnego zestawu poleceń. Użyj funkcji IntelliSense w obiekcie konsoli, aby uzyskać szybkie informacje o obsługiwanych poleceniach.
 
 |Polecenie|Opis|Przykład|
 |-------------|-----------------|-------------|
-|`assert(expression, message)`|Wysyła komunikat, jeżeli `expression` daje w wyniku **false**.|`console.assert((x == 1), "assert message: x != 1");`|
-|`clear()`|Usuwa wiadomości z okna konsoli, w tym komunikaty o błędach skryptów, a także czyści skryptu, który pojawia się w oknie konsoli. Czyści skrypt, który wprowadzono w wierszu polecenia konsoli danych wejściowych.|`console.clear();`|
-|`count(title)`|Wysyła liczbę prób wywołano polecenie liczba w oknie konsoli. Każde wywołanie do zliczenia jest unikatowo identyfikowana przez opcjonalny `title`.<br /><br /> Istniejący wpis w oknie konsoli jest identyfikowane za pomocą `title` parametru (jeśli istnieje) i aktualizowane przez polecenie count. Nie zostanie utworzony nowy wpis.|`console.count();`<br /><br /> `console.count("inner loop");`|
-|`debug(message)`|Wysyła `message` w oknie konsoli.<br /><br /> To polecenie jest taka sama jak dziennika console.log.<br /><br /> Obiekty, które są przekazywane za pomocą polecenia są konwertowane na wartość ciągu.|`console.debug("logging message");`|
-|`dir(object)`|Wysyła określony obiekt do okna konsoli i wyświetla go w wizualizatorze obiektu. Korzystanie z wizualizatora, aby sprawdzić właściwości w oknie konsoli.|`console.dir(obj);`|
-|`dirxml(object)`|Wysyła Podany węzeł XML `object` w oknie konsoli i wyświetla je jako węzeł drzewa XML.|`console.dirxaml(xmlNode);`|
-|`error(message)`|Wysyła `message` w oknie konsoli. Tekst komunikatu jest czerwonego i poprzedzone symbolem błędu.<br /><br /> Obiekty, które są przekazywane za pomocą polecenia są konwertowane na wartość ciągu.|`console.error("error message");`|
-|`group(title)`|Rozpoczyna się grupowanie komunikatów, które są wysyłane do okna konsoli, a następnie wysyła opcjonalnego `title` jako etykieta grupy. Grupy mogą być zagnieżdżane i są wyświetlane w widoku drzewa w oknie konsoli.<br /><br /> Polecenia grupy * może ułatwić wyświetlanie danych wyjściowych okna konsoli w niektórych scenariuszach, na przykład gdy model składników jest używana.|`console.group("Level 2 Header");` <br /> `console.log("Level 2");` <br /> `console.group();` <br /> `console.log("Level 3");` <br /> `console.warn("More of level 3");` <br /> `console.groupEnd();` <br /> `console.log("Back to level 2");` <br /> `console.groupEnd();` <br /> `console.debug("Back to the outer level");`|
-|`groupCollapsed(title)`|Rozpoczyna się grupowanie komunikatów, które są wysyłane do okna konsoli, a następnie wysyła opcjonalnego `title` jako etykieta grupy. Grupy, które są wysyłane przy użyciu `groupCollapsed` domyślnie wyświetlana w widoku zwiniętym. Grupy mogą być zagnieżdżane i są wyświetlane w widoku drzewa w oknie konsoli.|Użycie jest taka sama jak `group` polecenia.<br /><br /> Zobacz przykład `group` polecenia.|
-|`groupEnd()`|Kończy bieżącą grupę.<br /><br /> Wymagania:<br /><br /> Visual Studio 2013|Zobacz przykład `group` polecenia.|
-|`info(message)`|Wysyła `message` w oknie konsoli. Komunikat jest poprzedzone symbolem informacji.|`console.info("info message");`<br /><br /> Aby uzyskać więcej przykładów, zobacz [formatowanie danych wyjściowych dziennika console.log](#ConsoleLog) w dalszej części tego tematu.|
-|`log(message)`|Wysyła `message` w oknie konsoli.<br /><br /> W przypadku przekazania obiektu to polecenie wysyła tego obiektu w oknie konsoli i wyświetla go w wizualizatorze obiektu. Korzystanie z wizualizatora, aby sprawdzić właściwości w oknie konsoli.|`console.log("logging message");`|
-|`msIsIndependentlyComposed(element)`|Używane w aplikacji sieci web. Nie są obsługiwane w aplikacjach platformy UWP przy użyciu języka JavaScript.|Nieobsługiwane.|
-|`profile(reportName)`|Używane w aplikacji sieci web. Nie są obsługiwane w aplikacjach platformy UWP przy użyciu języka JavaScript.|Nieobsługiwane.|
-|`profileEnd()`|Używane w aplikacji sieci web. Nie są obsługiwane w aplikacjach platformy UWP przy użyciu języka JavaScript.|Nieobsługiwane.|
-|`select(element)`|Wybiera określony kod HTML `element` w [narzędzia DOM Explorer](../debugger/quickstart-debug-html-and-css.md).|console.select(element);|
-|`time (name)`|Uruchamia czasomierz, co jest identyfikowane za pomocą opcjonalnego `name` parametru. Gdy jest używane z `console.timeEnd`, oblicza czas, jaki upływa między `time` i `timeEnd`i wysyła wynik (mierzoną w ms) za pomocą konsoli `name` ciągu jako prefiksu. Używane w celu włączenia Instrumentacji kodu aplikacji do pomiaru wydajności.|`console.time("app start");  app.start();  console.timeEnd("app start");`|
-|`timeEnd(name)`|Zatrzymuje timer, która jest identyfikowane za pomocą opcjonalnego `name` parametru. Zobacz `time` polecenie konsoli.|`console.time("app start"); app.start(); console.timeEnd("app start");`|
-|`trace()`|Wysyła ślad stosu, w oknie konsoli. Śledzenie obejmuje pełny stos wywołań i zawiera informacje, takie jak nazwa pliku, numer wiersza i numer kolumny.|`console.trace();`|
-|`warn(message)`|Wysyła `message` w oknie konsoli poprzedzone symbolem ostrzeżenia.<br /><br /> Obiekty, które są przekazywane za pomocą polecenia są konwertowane na wartość ciągu.|`console.warn("warning message");`|
+|`assert(expression, message)`|Wysyła komunikat, jeśli `expression` ma **wartość false**.|`console.assert((x == 1), "assert message: x != 1");`|
+|`clear()`|Czyści komunikaty z okna konsoli, w tym komunikaty o błędach skryptu, a także czyści skrypt wyświetlany w oknie konsoli. Nie czyści skryptu wprowadzonego w monicie wejściowym konsoli.|`console.clear();`|
+|`count(title)`|Wysyła liczbę przypadków wywołania polecenia Count do okna konsoli. Każde wywołanie metody Count jest jednoznacznie identyfikowane przez opcjonalne `title`.<br /><br /> Istniejący wpis w oknie konsoli jest identyfikowany przez parametr `title` (jeśli istnieje) i aktualizowany przez polecenie Count. Nowy wpis nie został utworzony.|`console.count();`<br /><br /> `console.count("inner loop");`|
+|`debug(message)`|Wysyła `message` do okna konsoli.<br /><br /> To polecenie jest identyczne z konsolą. log.<br /><br /> Obiekty, które są przesyłane za pomocą polecenia, są konwertowane na wartość typu String.|`console.debug("logging message");`|
+|`dir(object)`|Wysyła określony obiekt do okna konsoli i wyświetla go w wizualizatorze obiektów. Możesz użyć wizualizatora, aby sprawdzić właściwości w oknie konsoli.|`console.dir(obj);`|
+|`dirxml(object)`|Wysyła określony węzeł XML `object` do okna konsoli i wyświetla go jako drzewo węzłów XML.|`console.dirxaml(xmlNode);`|
+|`error(message)`|Wysyła `message` do okna konsoli. Tekst komunikatu jest czerwony i poprzedzony symbolem błędu.<br /><br /> Obiekty, które są przesyłane za pomocą polecenia, są konwertowane na wartość typu String.|`console.error("error message");`|
+|`group(title)`|Uruchamia grupowanie komunikatów wysyłanych do okna konsoli i wysyła opcjonalny `title` jako etykietę grupy. Grupy mogą być zagnieżdżane i wyświetlane w widoku drzewa w oknie konsoli.<br /><br /> Polecenia Group * mogą ułatwić wyświetlanie danych wyjściowych okna konsoli w niektórych scenariuszach, na przykład gdy model składników jest używany.|`console.group("Level 2 Header");` <br /> `console.log("Level 2");` <br /> `console.group();` <br /> `console.log("Level 3");` <br /> `console.warn("More of level 3");` <br /> `console.groupEnd();` <br /> `console.log("Back to level 2");` <br /> `console.groupEnd();` <br /> `console.debug("Back to the outer level");`|
+|`groupCollapsed(title)`|Uruchamia grupowanie komunikatów wysyłanych do okna konsoli i wysyła opcjonalny `title` jako etykietę grupy. Grupy, które są wysyłane przy użyciu `groupCollapsed` są domyślnie wyświetlane w zwiniętym widoku. Grupy mogą być zagnieżdżane i wyświetlane w widoku drzewa w oknie konsoli.|Użycie jest takie samo jak `group` polecenie.<br /><br /> Zobacz przykład dla polecenia `group`.|
+|`groupEnd()`|Zamyka bieżącą grupę.<br /><br /> Wymagania<br /><br /> Visual Studio 2013|Zobacz przykład dla polecenia `group`.|
+|`info(message)`|Wysyła `message` do okna konsoli. Komunikat jest poprzedzony symbolem informacyjnym.|`console.info("info message");`<br /><br /> Aby uzyskać więcej przykładów, zobacz [Formatowanie konsoli. log dane wyjściowe](#ConsoleLog) w dalszej części tego tematu.|
+|`log(message)`|Wysyła `message` do okna konsoli.<br /><br /> W przypadku przekazania obiektu to polecenie wysyła ten obiekt do okna konsoli i wyświetla go w wizualizatorze obiektów. Możesz użyć wizualizatora, aby sprawdzić właściwości w oknie konsoli.|`console.log("logging message");`|
+|`msIsIndependentlyComposed(element)`|Używany w aplikacjach sieci Web. Nieobsługiwane w aplikacjach platformy UWP przy użyciu języka JavaScript.|Nieobsługiwane.|
+|`profile(reportName)`|Używany w aplikacjach sieci Web. Nieobsługiwane w aplikacjach platformy UWP przy użyciu języka JavaScript.|Nieobsługiwane.|
+|`profileEnd()`|Używany w aplikacjach sieci Web. Nieobsługiwane w aplikacjach platformy UWP przy użyciu języka JavaScript.|Nieobsługiwane.|
+|`select(element)`|Wybiera określony `element` HTML w [dom Explorer](../debugger/quickstart-debug-html-and-css.md).|Console. Select (element);|
+|`time (name)`|Uruchamia czasomierz, który jest identyfikowany przez opcjonalny parametr `name`. Gdy jest używany z `console.timeEnd`, oblicza czas upływający między `time` i `timeEnd` i wysyła wynik (mierzoną w MS) do konsoli przy użyciu ciągu `name` jako prefiksu. Służy do włączania Instrumentacji kodu aplikacji na potrzeby mierzenia wydajności.|`console.time("app start");  app.start();  console.timeEnd("app start");`|
+|`timeEnd(name)`|Wyłącza czasomierz identyfikowany przez opcjonalny parametr `name`. Zapoznaj się z konsolą `time`.|`console.time("app start"); app.start(); console.timeEnd("app start");`|
+|`trace()`|Wysyła ślad stosu do okna konsoli. Ślad zawiera kompletny stos wywołań i zawiera informacje, takie jak nazwa pliku, numer wiersza i numer kolumny.|`console.trace();`|
+|`warn(message)`|Wysyła `message` do okna konsoli, poprzedzone symbolem ostrzegawczym.<br /><br /> Obiekty, które są przesyłane za pomocą polecenia, są konwertowane na wartość typu String.|`console.warn("warning message");`|
 
-## <a name="miscellaneous-commands"></a>Inne polecenia
-Te polecenia są dostępne również w oknie konsoli języka JavaScript (nie są one dostępne z kodu).
+## <a name="miscellaneous-commands"></a>Różne polecenia
+Te polecenia są również dostępne w oknie konsoli JavaScript (nie są dostępne w kodzie).
 
 |Polecenie|Opis|Przykład|
 |-------------|-----------------|-------------|
-|`$0`, `$1`, `$2`, `$3`, `$4`|Zwraca określony element w oknie konsoli. `$0` Zwraca element aktualnie wybrane w Eksploratorze DOM `$1` zwraca element, który został wcześniej wybrane w Eksploratorze DOM i tak dalej, aż czwarty poprzednio wybranego elementu.|$3|
-|`$(id)`|Zwraca element według identyfikatora. To polecenie skrótu dla `document.getElementById(id)`, gdzie `id` jest ciągiem, który reprezentuje identyfikator elementu.|`$("contenthost")`|
-|`$$(selector)`|Zwraca tablicę elementy, które odpowiadają określony selektor za pomocą składni selektora CSS. To polecenie skrótu dla `document.querySelectorAll()`.|`$$(".itemlist")`|
-|`cd()`<br /><br /> `cd(window)`|Umożliwia zmianę kontekstu do obliczenia wyrażenia w oknie najwyższego poziomu domyślnej strony do okna ramki o określonym. Wywoływanie `cd()` bez parametrów zwraca kontekst do okna najwyższego poziomu.|`cd();`<br /><br /> `cd(myframe);`|
-|`select(element)`|Wybiera określony element w [narzędzia DOM Explorer](../debugger/quickstart-debug-html-and-css.md).|`select(document.getElementById("element"));`<br /><br /> `select($("element"));`<br /><br /> `select($1);`|
-|`dir(object)`|Zwraca Wizualizator dla określonego obiektu. Korzystanie z wizualizatora, aby sprawdzić właściwości w oknie konsoli.|`dir(obj);`|
+|`$0`, `$1`, `$2`, `$3`, `$4`|Zwraca określony element do okna konsoli. `$0` zwraca element aktualnie zaznaczony w DOM Explorer, `$1` zwraca element poprzednio wybrany w DOM Explorer i tak dalej, aż do czwartego poprzednio zaznaczonego elementu.|$3|
+|`$(id)`|Zwraca element o IDENTYFIKATORze. Jest to polecenie skrótu dla `document.getElementById(id)`, gdzie `id` jest ciągiem, który reprezentuje identyfikator elementu.|`$("contenthost")`|
+|`$$(selector)`|Zwraca tablicę elementów, które pasują do określonego selektora przy użyciu składni selektora CSS. To jest polecenie skrótu dla `document.querySelectorAll()`.|`$$(".itemlist")`|
+|`cd()`<br /><br /> `cd(window)`|Umożliwia zmianę kontekstu oceny wyrażenia z domyślnego okna najwyższego poziomu strony do okna określonej ramki. Wywołanie `cd()` bez parametrów zwraca kontekst do okna najwyższego poziomu.|`cd();`<br /><br /> `cd(myframe);`|
+|`select(element)`|Wybiera określony element w [dom Explorer](../debugger/quickstart-debug-html-and-css.md).|`select(document.getElementById("element"));`<br /><br /> `select($("element"));`<br /><br /> `select($1);`|
+|`dir(object)`|Zwraca wizualizator dla określonego obiektu. Możesz użyć wizualizatora, aby sprawdzić właściwości w oknie konsoli.|`dir(obj);`|
 
-## <a name="checking-whether-a-console-command-exists"></a>Sprawdzanie, czy istnieje polecenia konsoli
-Możesz sprawdzić, czy określone polecenie istnieje przed podjęciem próby wykonania z niego korzystać. W tym przykładzie, sprawdza istnienie `console.log` polecenia. Jeśli `console.log` istnieje, kod wywołuje on.
+## <a name="checking-whether-a-console-command-exists"></a>Sprawdzanie, czy istnieje polecenie konsoli
+Możesz sprawdzić, czy określone polecenie istnieje przed podjęciem próby jego użycia. Ten przykład sprawdza obecność polecenia `console.log`. Jeśli `console.log` istnieje, kod wywołuje go.
 
 ```javascript
 if (console && console.log) {
@@ -89,11 +86,11 @@ if (console && console.log) {
 
 ```
 
-## <a name="examining-objects-in-the-javascript-console-window"></a>Badanie obiektów w oknie konsoli języka JavaScript
-Możesz porozmawiać z dowolnego obiektu, który znajduje się w zakresie, korzystając z okna konsoli JavaScript. Aby przeprowadzić inspekcję obiekt poza zakresem w oknie konsoli, należy użyć `console.log` , `console.dir`, lub innych poleceń w kodzie. Alternatywnie możesz porozmawiać z obiektu z okna konsoli jest w zakresie przez ustawienie punktu przerwania w kodzie (**punktu przerwania** > **Wstaw punkt przerwania**).
+## <a name="examining-objects-in-the-javascript-console-window"></a>Badanie obiektów w oknie konsoli JavaScript
+Można korzystać z dowolnego obiektu, który znajduje się w zakresie w przypadku korzystania z okna konsoli JavaScript. Aby sprawdzić obiekt poza zakresem w oknie konsoli, użyj `console.log`, `console.dir` lub innych poleceń w kodzie. Alternatywnie można korzystać z obiektu z okna konsoli, gdy jest on w zasięgu przez ustawienie punktu przerwania w kodzie (**punkt przerwania**  > **Wstawianie punktu przerwania**).
 
-## <a name="ConsoleLog"></a> Formatowanie danych wyjściowych dziennika console.log
-W przypadku przekazania wiele argumentów `console.log`, konsolę będzie traktować argumenty jako tablica i połącz dane wyjściowe.
+## <a name="ConsoleLog"></a>Formatowanie danych wyjściowych konsoli. log
+W przypadku przekazania wielu argumentów do `console.log`, konsola będzie traktować argumenty jako tablicę i łączyć dane wyjściowe.
 
 ```javascript
 var user = new Object();
@@ -106,13 +103,13 @@ console.log(user.first, user.last);
 
 ```
 
-`console.log` obsługuje również wzorców podstawienia "printf", aby sformatować dane wyjściowe. Jeśli używasz wzorców podstawienia w pierwszym argumencie dodatkowe argumenty będzie służyć do zastąpienia określonego wzorce w kolejności, w której są one używane.
+`console.log` obsługuje również wzorce podstawiania "printf" do formatowania danych wyjściowych. Jeśli używasz wzorców podstawiania w pierwszym argumencie, dodatkowe argumenty zostaną użyte do zastąpienia określonych wzorców w kolejności, w jakiej są używane.
 
- Obsługiwane są następujące wzorce podstawienia:
+ Obsługiwane są następujące wzorce podstawiania:
 
-- %s - object - liczba całkowita %d - Liczba całkowita %f - float %o — ciąg %i %b - %x binarny - szesnastkowe %e - wykładnik
+- % s-String% i-Integer% d-Integer% f-float% o-Object% b-Binary% x-szesnastkowo% e-wykładnik
 
-  Poniżej przedstawiono kilka przykładów użycia wzorce podstawienia w `console.log`:
+  Poniżej przedstawiono kilka przykładów użycia wzorców podstawiania w `console.log`:
 
 ```javascript
 var user = new Object();
@@ -130,5 +127,5 @@ console.log("%s is %f years old!", user.first, user.age);
 ```
 
 ## <a name="see-also"></a>Zobacz też
-- [Szybki start: Debugowanie kodu JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)
-- [Szybki start: Debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)
+- [Szybki start: debugowanie kodu JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)
+- [Szybki start: debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)

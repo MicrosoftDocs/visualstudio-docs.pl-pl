@@ -12,12 +12,12 @@ manager: jillfra
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 40be42871bac0a138d15b11b86f34419f2a6c67d
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: 33ac236c9f9dd91bc0eef34e7ff9f3aa658cb4be
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72535294"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72589133"
 ---
 # <a name="troubleshooting-xaml-hot-reload"></a>Rozwiązywanie problemów z ponownym ładowaniem przy aktywnym kodzie XAML
 
@@ -48,7 +48,7 @@ Jeśli są wybrane te opcje, przejdź do aktywnego drzewa wizualnego (**Debug** 
 Funkcja ładowania gorącego XAML wymaga, aby zmienna środowiskowa `ENABLE_XAML_DIAGNOSTICS_SOURCE_INFO` była ustawiona na 1 podczas uruchamiania aplikacji. Program Visual Studio automatycznie ustawia tę wartość jako część **debugowania** > **Rozpocznij debugowanie** (lub **F5**). Jeśli chcesz użyć języka XAML do ponownego załadowania przy użyciu  >  **debugowania** **Dołącz do procesu** , a następnie Ustaw zmienną środowiskową samodzielnie.
 
 > [!NOTE]
-> Aby ustawić zmienną środowiskową, wyszukaj ciąg "zmienna środowiskowa" i wybierz polecenie **Edytuj zmienne środowiskowe systemu**. W otwartym oknie dialogowym wybierz **zmienne środowiskowe**, a następnie dodaj je jako zmienną użytkownika i ustaw wartość na `1`. Aby wyczyścić, Usuń zmienną po zakończeniu debugowania.
+> Aby ustawić zmienną środowiskową, użyj przycisku Start do wyszukania "zmienna środowiskowa" i wybierz polecenie **Edytuj zmienne środowiskowe systemu**. W otwartym oknie dialogowym wybierz **zmienne środowiskowe**, a następnie dodaj je jako zmienną użytkownika i ustaw wartość na `1`. Aby wyczyścić, Usuń zmienną po zakończeniu debugowania.
 
 ## <a name="verify-that-your-msbuild-properties-are-correct"></a>Sprawdź, czy właściwości programu MSBuild są poprawne
 

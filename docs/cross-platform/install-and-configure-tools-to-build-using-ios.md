@@ -1,7 +1,7 @@
 ---
-title: Instalowanie i Konfigurowanie narzędzi do kompilacji przy użyciu systemu iOS | Dokumentacja firmy Microsoft
+title: Instalowanie i Konfigurowanie narzędzi do kompilowania przy użyciu systemu iOS | Microsoft Docs
 ms.custom: ''
-ms.date: 05/13/2019
+ms.date: 10/17/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 dev_langs:
@@ -12,247 +12,247 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 411ab7f097a82fa850e3850c662d378f51ffd548
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
+ms.openlocfilehash: 33adad7117678ccc5550db86baada43a1c487916
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67586818"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72588871"
 ---
-# <a name="install-and-configure-tools-to-build-using-ios"></a>Instalowanie i Konfigurowanie narzędzia umożliwiające tworzenie za pomocą systemu iOS
+# <a name="install-and-configure-tools-to-build-using-ios"></a>Instalowanie i Konfigurowanie narzędzi do kompilowania przy użyciu systemu iOS
 
-Możesz używać Visual C++ for Cross-Platform Mobile Development, edytowanie, debugowanie i wdrażanie kodu z systemem iOS w narzędziu iOS Simulator lub na urządzeniu z systemem iOS, ale z powodu ograniczeń licencyjnych, kod musi można skompilować i uruchomić zdalnie na komputerach Mac. Aby skompilować i uruchomić aplikacje dla systemu iOS przy użyciu programu Visual Studio, musisz Instalowanie i Konfigurowanie agenta zdalnego [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988), na komputerze Mac. Obsługuje zdalnego agenta kompilacji żądania z programu Visual Studio i uruchamia aplikację na urządzeniu z systemem iOS podłączone do komputera Mac lub w narzędziu iOS Simulator na komputerze Mac.
+Możesz użyć programu Visual Studio z **programowaniem aplikacji mobilnych C++**  na wiele platform z narzędziami do edytowania, debugowania i wdrażania kodu systemu iOS w symulatorze systemu iOS lub na urządzeniu z systemem iOS. Jednak ze względu na ograniczenia licencjonowania kod musi być skompilowany i uruchamiany zdalnie na komputerze Mac. Aby kompilować i uruchamiać aplikacje dla systemu iOS przy użyciu programu Visual Studio, należy skonfigurować i skonfigurować agenta zdalnego, [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988)na komputerze Mac. Agent zdalny obsługuje żądania kompilacji z programu Visual Studio i uruchamia aplikację na urządzeniu z systemem iOS podłączonym do komputera Mac lub w symulatorze systemu iOS na komputerze Mac.
 
 > [!NOTE]
-> Aby uzyskać informacji na temat korzystania z usług hostowanych w chmurze Mac zamiast komputera Mac, zobacz [Konfigurowanie programu Visual Studio do łączenia się z Twoją chmurą hostowanych Mac](/visualstudio/cross-platform/tools-for-cordova/tips-workarounds/host-a-mac-in-the-cloud?view=toolsforcordova-2017#configure-visual-studio-to-connect-to-your-cloud-hosted-mac). Instrukcje dotyczą tworzenia przy użyciu programu Visual Studio Tools for Apache Cordova. W celu postępuj zgodnie z instrukcjami, aby kompilować przy użyciu języka C++, należy zastąpić vcremote dla polecenia remotebuild.
+> Aby uzyskać informacje na temat korzystania z usług Mac hostowanych w chmurze zamiast komputerów Mac, zobacz [Konfigurowanie programu Visual Studio do nawiązywania połączenia z hostowanym komputerem Mac w chmurze](/visualstudio/cross-platform/tools-for-cordova/tips-workarounds/host-a-mac-in-the-cloud?view=toolsforcordova-2017#configure-visual-studio-to-connect-to-your-cloud-hosted-mac). Instrukcje służą do kompilowania przy użyciu Visual Studio Tools Apache Cordova. Aby użyć instrukcji do kompilowania przy C++użyciu programu, należy zastąpić `vcremote` `remotebuild`.
 
-Po zainstalowaniu narzędzia do tworzenia przy użyciu systemu iOS można znaleźć w tym temacie, aby poznać sposoby szybko skonfigurować i zaktualizować agenta zdalnego dla programowania w systemie iOS w programie Visual Studio i na komputerze Mac.
+Po zainstalowaniu narzędzi do kompilowania przy użyciu systemu iOS zapoznaj się z tym artykułem, aby szybko skonfigurować i zaktualizować agenta zdalnego dla tworzenia aplikacji dla systemu iOS w programie Visual Studio i na komputerze Mac.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-Aby zainstalować i używać zdalnego agenta do tworzenia kodu dla systemu iOS, najpierw musisz mieć następujące wymagania wstępne:
+Aby zainstalować i użyć agenta zdalnego do opracowania kodu dla systemu iOS, należy najpierw spełnić te wymagania wstępne:
 
-- Komputerze Mac z systemem macOS w wersji Mojave, 10.14 lub nowszej
+- Komputer Mac z systemem macOS Mojave w wersji 10,14 lub nowszej
 
-- [Identyfikatora Apple ID](https://appleid.apple.com/)
+- [Identyfikator Apple ID](https://appleid.apple.com/)
 
-- Aktywne [Apple Developer Program](https://developer.apple.com/programs/) konta
+- Aktywne konto [programu Apple Developer](https://developer.apple.com/programs/)
 
-   Możesz uzyskać bezpłatne konto, umożliwiająca ładowania bezpośredniego aplikacji przeznaczonych na urządzenia z systemem iOS, aby tylko do testowania, ale nie do dystrybucji.
+   Możesz uzyskać bezpłatne konto, które umożliwia aplikacjom lokalnym na urządzeniu z systemem iOS testowanie tylko, ale nie do dystrybucji.
 
-- [Środowisko Xcode](https://developer.apple.com/xcode/downloads/) wersji 10.2.1 lub nowszy
+- [Xcode](https://developer.apple.com/xcode/downloads/) w wersji 10.2.1 lub nowszej
 
-   Środowisko Xcode, można pobrać z Store aplikacji.
+   Xcode można pobrać ze sklepu z aplikacjami.
 
-- Narzędzia wiersza polecenia programu Xcode
+- Narzędzia wiersza polecenia Xcode
 
-   Aby zainstalować narzędzia wiersza polecenia programu Xcode, Otwórz aplikację Terminal na komputerze Mac i wprowadź następujące polecenie:
+   Aby zainstalować narzędzia wiersza polecenia Xcode, Otwórz aplikację terminala na komputerze Mac i wprowadź następujące polecenie:
 
    `xcode-select --install`
 
-- Identyfikator Apple ID konto skonfigurowane w środowisku Xcode jako tożsamości podpisywania do podpisywania aplikacji
+- Konto Apple ID skonfigurowane w Xcode jako tożsamość podpisująca do podpisywania aplikacji
 
-   Aby wyświetlić lub ustaw tożsamość podpisywania w środowisku Xcode, otwórz **Xcode** menu i wybrać **preferencje**. Wybierz **kont** i wybierz identyfikator Apple ID, a następnie wybierz **Wyświetl szczegóły** przycisku. Zobacz [Dodaj swoje konto Apple ID](https://help.apple.com/xcode/mac/current/#/devaf282080a) szczegółowe informacje.
+   Aby wyświetlić lub ustawić tożsamość podpisywania w programie Xcode, otwórz menu **Xcode** i wybierz polecenie **Preferences (Preferencje**). Wybierz pozycję **konta** i wybierz swój identyfikator Apple ID, a następnie wybierz przycisk **Wyświetl szczegóły** . Aby uzyskać szczegółowe instrukcje, zobacz [Dodawanie konta Apple ID](https://help.apple.com/xcode/mac/current/#/devaf282080a) .
    
-   Szczegółowe informacje na temat wymagań dotyczących podpisywania, zobacz [co to jest podpisywania aplikacji](https://help.apple.com/xcode/mac/current/#/dev3a05256b8). 
+   Aby uzyskać szczegółowe informacje na temat wymagań dotyczących podpisywania, zobacz [co to jest podpisywanie aplikacji](https://help.apple.com/xcode/mac/current/#/dev3a05256b8). 
 
-- Jeśli używasz urządzenia z systemem iOS do tworzenia aplikacji, profilu inicjowania obsługi administracyjnej skonfigurowane w środowisku Xcode dla Twojego urządzenia
+- Jeśli używasz urządzenia z systemem iOS do tworzenia aplikacji, profil aprowizacji skonfigurowany w Xcode dla urządzenia
 
-   Środowisko Xcode zapewnia automatyczne podpisywanie, w którym tworzy certyfikaty podpisywania dla Ciebie zgodnie z potrzebami. Aby uzyskać szczegółowe informacje na temat Automatyczne podpisywanie programu Xcode zobacz [automatyczne podpisywanie](https://help.apple.com/xcode/mac/current/#/dev80cc24546).
+   Xcode zapewnia automatyczne podpisywanie, gdy w razie potrzeby tworzy certyfikaty podpisywania. Aby uzyskać szczegółowe informacje na temat Xcode automatycznego podpisywania, zobacz [Automatyczne podpisywanie](https://help.apple.com/xcode/mac/current/#/dev80cc24546).
 
-   Jeśli chcesz wykonać ręczne podpisywanie, musisz utworzyć profil inicjowania obsługi administracyjnej dla aplikacji. Aby uzyskać szczegółowe informacje na temat tworzenia profilów aprowizacji, zobacz [do projektowania, profil inicjowania obsługi administracyjnej](https://help.apple.com/developer-account/#/devf2eb157f8). 
+   Jeśli chcesz przeprowadzić ręczne podpisywanie, musisz utworzyć profil aprowizacji dla swojej aplikacji. Aby uzyskać szczegółowe informacje na temat tworzenia profilów aprowizacji, zobacz [Tworzenie profilu aprowizacji programistycznej](https://help.apple.com/developer-account/#/devf2eb157f8). 
 
-- [Node.js](https://nodejs.org/) wersji 8.11.3 i Menedżera npm w wersji 5.6.0
+- [Node. js](https://nodejs.org/) w wersji 8.11.3 i npm w wersji 5.6.0
 
-   Zainstaluj 8.11.3 wersję środowiska Node.js na komputerze Mac. Jeśli zainstalujesz pakiet Node.js, powinien mu towarzyszyć npm w wersji 5.6.0. Należy pamiętać, że inne wersje środowiska Node.js i narzędzie npm mogą nie obsługiwać niektóre moduły używane w vcremote agenta zdalnego, co może powodować niepowodzenie instalacji vcremote.
+   Zainstaluj wersję 8.11.3 środowiska Node. js na komputerze Mac. Jeśli instalujesz pakiet Node. js, powinien on mieć npm w wersji 5.6.0. Inne wersje środowiska Node. js i npm mogą nie obsługiwać niektórych modułów używanych w `vcremote` agenta zdalnego, co może spowodować niepowodzenie instalacji `vcremote`.
 
-## <a name="Install"></a> Zainstaluj agenta zdalnego dla systemu iOS
+## <a name="Install"></a>Zainstaluj agenta zdalnego dla systemu iOS
 
-Po zainstalowaniu programu Visual C++ for Cross-Platform Mobile Development w Visual Studio może komunikować się z [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988), zdalnego agenta uruchomionego na komputerze Mac do transferu plików, tworzenie i uruchamianie aplikacji systemu iOS oraz wysyłania poleceń do debugowania.
+Po zainstalowaniu opracowywania aplikacji mobilnych przy C++ użyciu obciążenia program Visual Studio może komunikować się z [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988), zdalnym agentem uruchomionym na komputerze Mac w celu transferu plików, kompilowania i uruchamiania aplikacji dla systemu iOS oraz wysyłania poleceń debugowania.
 
-Przed zainstalowaniem agenta zdalnego, upewnij się, że zostały spełnione [wymagania wstępne](#prerequisites) i zainstalowane [Visual C++ dla opracowywania aplikacji mobilnych dla wielu platform](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#install-the-tools).
+Przed zainstalowaniem agenta zdalnego upewnij się, że spełniono [wymagania wstępne](#prerequisites) i wykonano kroki instalacji w temacie [Instalowanie aplikacji mobilnych dla wielu platform za C++pomocą ](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#install-the-tools)programu.
 
-### <a name="DownloadInstall"></a> Aby pobrać i zainstalować agenta zdalnego
+### <a name="DownloadInstall"></a>Aby pobrać i zainstalować agenta zdalnego
 
-- W terminalu aplikacji na komputerze Mac wprowadź:
+- Z poziomu aplikacji terminalowej na komputerze Mac wpisz:
 
    `sudo npm install -g --unsafe-perm vcremote`
 
-   Globalne instalacji ( **-g**) przełącznik jest zalecane, ale nie jest wymagane.
+   Przełącznik instalacji globalnej ( **-g**) jest zalecany, ale nie jest wymagany.
 
-   Podczas instalacji vcremote zainstalowano i włączono tryb dewelopera na komputerze Mac. [Homebrew](https://brew.sh/) i dwa pakiety npm vcremote lib i vcremote utils, są również instalowane. Po zakończeniu instalacji jest bezpiecznie zignorować ostrzeżenia dotyczące pominiętych opcjonalne zależności.
+   Podczas instalacji `vcremote` jest zainstalowana i tryb dewelopera jest aktywowany na komputerze Mac. Instalowane są również [oprogramowania Homebrew](https://brew.sh/) i dwa pakiety npm, `vcremote-lib` i `vcremote-utils`. Po zakończeniu instalacji można bezpiecznie zignorować wszystkie ostrzeżenia dotyczące pominiętych zależności opcjonalnych.
 
    > [!NOTE]
-   > Aby zainstalować program Homebrew, musi mieć dostęp "sudo" (administrator). Jeśli musisz zainstalować vcremote bez "sudo", można ręcznie zainstalować Homebrew w lokalizacji usr/elementu lokalnego i dodać jego folder bin do ścieżki. Aby uzyskać więcej informacji, zobacz [dokumentacji Homebrew](https://github.com/Homebrew/homebrew/wiki/Installation). Aby ręcznie włączyć tryb dewelopera, wprowadź polecenie w terminalu aplikacji: `DevToolsSecurity -enable`
+   > Aby zainstalować oprogramowania homebrew, musisz mieć dostęp do programu sudo (Administrator). Jeśli musisz zainstalować `vcremote` bez sudo, możesz zainstalować oprogramowania Homebrew ręcznie w lokalizacji usr/local i dodać jej folder bin do ścieżki. Aby uzyskać więcej informacji, zapoznaj się z [dokumentacją oprogramowania Homebrew](https://github.com/Homebrew/homebrew/wiki/Installation). Aby ręcznie włączyć tryb dewelopera, wprowadź następujące polecenie w aplikacji terminalowej: `DevToolsSecurity -enable`
 
-Jeżeli zostanie zaktualizowany do nowej wersji programu Visual Studio, należy zaktualizować do bieżącej wersji agenta zdalnego. Aby zaktualizować agenta zdalnego, powtórz kroki, aby pobrać i zainstalować agenta zdalnego.
+W przypadku aktualizacji do nowej wersji programu Visual Studio należy również zaktualizować ją do bieżącej wersji agenta zdalnego. Aby zaktualizować agenta zdalnego, powtórz kroki, aby pobrać i zainstalować agenta zdalnego.
 
-## <a name="Start"></a> Uruchom agenta zdalnego
+## <a name="Start"></a>Uruchom agenta zdalnego
 
-Agent zdalny musi być uruchomiony dla programu Visual Studio skompilować i uruchomić kod dla systemu iOS. Program Visual Studio muszą być skojarzone z agentem zdalnym, zanim będzie mogła komunikować się. Domyślnie agent zdalny jest uruchamiany w trybie bezpiecznego połączenia, który wymaga numeru PIN łączyć się z programu Visual Studio.
+Aby program Visual Studio mógł skompilować i uruchomić kod systemu iOS, Agent zdalny musi być uruchomiony. Program Visual Studio musi być sparowany z agentem zdalnym, aby mógł się komunikować. Domyślnie zdalny Agent jest uruchamiany w trybie połączenia zabezpieczonego, który wymaga, aby numer PIN został sparowany z programem Visual Studio.
 
-### <a name="RemoteAgentStartServer"></a> Aby uruchomić agenta zdalnego
+### <a name="RemoteAgentStartServer"></a>Aby uruchomić agenta zdalnego
 
-- W terminalu aplikacji na komputerze Mac wprowadź:
+- Z poziomu aplikacji terminalowej na komputerze Mac wpisz:
 
    `vcremote`
 
-   Ten cykl zaczyna agent zdalny katalog kompilacji domyślnej ~ / vcremote. Aby uzyskać dodatkowe opcje konfiguracji, zobacz [konfigurowania zdalnego agenta na komputerze Mac](#ConfigureMac).
+   To polecenie uruchamia agenta zdalnego przy użyciu domyślnego katalogu kompilacji `~/vcremote`. Aby uzyskać dodatkowe opcje konfiguracji, zobacz [Konfigurowanie zdalnego agenta na komputerze Mac](#ConfigureMac).
 
-Przy pierwszym uruchomieniu agenta i każdym utworzeniu nowego certyfikatu klienta, użytkownicy otrzymywali wymaganych informacji w celu skonfigurowania agenta w programie Visual Studio, w tym nazwy hosta, portu i numer PIN.
+Przy pierwszym uruchomieniu agenta i za każdym razem, gdy tworzysz nowy certyfikat klienta, należy podać wymagane informacje, aby skonfigurować agenta w programie Visual Studio, w tym nazwę hosta, port i numer PIN.
 
-![Umożliwia generowanie numeru PIN bezpiecznego vcremote](../cross-platform/media/cppmdd_vcremote_generateclientcert.png "CPPMDD_vcremote_generateClientCert")
+![Użyj vcremote do wygenerowania bezpiecznego numeru PIN](../cross-platform/media/cppmdd_vcremote_generateclientcert.png "CPPMDD_vcremote_generateClientCert")
 
-Jeśli zamierzasz skonfigurować agenta zdalnego w programie Visual Studio przy użyciu nazwy hosta, należy wysłać polecenie ping Mac z Windows przy użyciu nazwy hosta, aby sprawdzić, czy jest dostępny. W przeciwnym razie konieczne może być zamiast tego użyj adresu IP.
+Jeśli zamierzasz skonfigurować agenta zdalnego w programie Visual Studio przy użyciu nazwy hosta, Wyślij polecenie ping do komputera Mac z systemu Windows przy użyciu nazwy hosta, aby sprawdzić, czy jest osiągalny. W przeciwnym razie może być konieczne użycie tego adresu IP.
 
-Wygenerowany kod PIN jest przeznaczony dla jednego czasu i jest prawidłowy tylko przez ograniczony czas. Visual Studio nie parowania z agentem zdalnym przed wygaśnięciem, należy wygenerować nowy kod PIN. Aby uzyskać więcej informacji, zobacz [Generowanie nowego zabezpieczającego numeru PIN](#GeneratePIN).
+Wygenerowany kod PIN jest używany do jednorazowego użycia i jest prawidłowy tylko przez ograniczony czas. Jeśli program Visual Studio nie zostanie sparowany z agentem zdalnym przed upływem czasu, konieczne będzie wygenerowanie nowego numeru PIN. Aby uzyskać więcej informacji, zobacz [generowanie nowego numeru PIN zabezpieczeń](#GeneratePIN).
 
-Za pomocą agenta zdalnego w trybie niezabezpieczona. W trybie niezabezpieczonym agenta zdalnego mogą być parowane do programu Visual Studio bez numeru PIN.
+Agenta zdalnego można używać w trybie niezabezpieczonym. W trybie niezabezpieczonym Agent zdalny może być sparowany z Visual Studio bez numeru PIN.
 
 #### <a name="to-disable-secured-connection-mode"></a>Aby wyłączyć tryb bezpiecznego połączenia
 
-- Aby wyłączyć tryb połączenia zabezpieczonego w vcremote, wprowadź polecenie w terminalu aplikacji na komputerze Mac:
+- Aby wyłączyć tryb bezpiecznego połączenia w `vcremote`, wprowadź to polecenie w aplikacji terminalowej na komputerze Mac:
 
    `vcremote --secure false`
 
-#### <a name="to-enable-secured-connection-mode"></a>Aby włączyć tryb bezpiecznego połączenia
+#### <a name="to-enable-secured-connection-mode"></a>Aby włączyć tryb połączenia zabezpieczonego
 
-- Aby włączyć tryb połączenia zabezpieczonego, wprowadź to polecenie:
+- Aby włączyć tryb połączenia zabezpieczonego, wprowadź następujące polecenie:
 
    `vcremote --secure true`
 
-Po uruchomieniu agenta zdalnego można użyć go w programie Visual Studio, dopóki nie zostanie zatrzymana.
+Po uruchomieniu zdalnego agenta można go użyć z programu Visual Studio, dopóki nie zostanie zatrzymany.
 
 #### <a name="to-stop-the-remote-agent"></a>Aby zatrzymać agenta zdalnego
 
-- W oknie terminalu działa vcremote, wprowadź **kontroli**+**C**.
+- W oknie terminalu `vcremote` jest uruchomiony program, wprowadź **Control** +**C**.
 
-## <a name="ConfigureVS"></a> Konfigurowanie agenta zdalnego w programie Visual Studio
+## <a name="ConfigureVS"></a>Konfigurowanie agenta zdalnego w programie Visual Studio
 
-Aby połączyć się z agentem zdalnym z programu Visual Studio, należy określić konfigurację zdalnego w opcjach programu Visual Studio.
+Aby połączyć się z agentem zdalnym z poziomu programu Visual Studio, należy określić konfigurację zdalną w opcjach programu Visual Studio.
 
-### <a name="to-configure-the-remote-agent-from-visual-studio"></a>Aby skonfigurować agenta zdalnego w programie Visual Studio
+### <a name="to-configure-the-remote-agent-from-visual-studio"></a>Aby skonfigurować agenta zdalnego z programu Visual Studio
 
-1. Jeśli agent nie jest już uruchomiona na komputerze Mac, wykonaj kroki opisane w [uruchomić agenta zdalnego](#Start). Komputer Mac musi być uruchomiona vcremote dla programu Visual Studio pomyślnie pair, łączenie i skompiluj projekt.
+1. Jeśli Agent nie jest jeszcze uruchomiony na komputerze Mac, wykonaj kroki opisane w sekcji [Uruchamianie zdalnego agenta](#Start). Na komputerze Mac musi działać `vcremote`, aby program Visual Studio mógł pomyślnie sparować, połączyć i skompilować projekt.
 
-1. Na komputerze Mac Pobierz nazwę hosta lub adres IP Twojego komputera Mac.
+1. Na komputerze Mac Pobierz nazwę hosta lub adres IP komputera Mac.
 
-   Adres IP można uzyskać za pomocą **ifconfig** polecenia w oknie terminala. Użyj adresu inet interfejsu sieciowego z aktywnego na liście.
+   Adres IP można uzyskać za pomocą polecenia **ifconfig** w oknie terminalu. Użyj adresu inet podanego w ramach aktywnego interfejsu sieciowego.
 
-1. Na pasku menu programu Visual Studio, wybierz **narzędzia**, **opcje**.
+1. Na pasku menu programu Visual Studio wybierz **Narzędzia**, **Opcje**.
 
-1. W **opcje** okna dialogowego rozwiń **Międzyplatformowe**, **C++** , **iOS**.
+1. W oknie dialogowym **Opcje** rozwiń pozycję **Międzyplatformowe**, **C++** system **iOS**.
 
-1. W **nazwy hosta** i **portu** wprowadź wartości określonych przez agenta zdalnego, po jego uruchomieniu. Nazwa hosta może zawierać nazwy DNS lub adres IP Twojego komputera Mac. Domyślny port to 3030.
+1. W polach **Nazwa hosta** i **port** wprowadź wartości określone przez agenta zdalnego podczas jego uruchamiania. Nazwą hosta może być nazwa DNS lub adres IP komputera Mac. Domyślnym portem jest 3030.
 
    > [!NOTE]
-   > Nie można wykonać polecenie ping Mac przy użyciu nazwy hosta, może być konieczne używanie adresu IP.
+   > Jeśli nie można wysłać polecenia ping do komputera Mac przy użyciu nazwy hosta, może być konieczne użycie adresu IP.
 
-1. Jeśli używasz zdalnego agenta w domyślnym trybie bezpiecznego połączenia, sprawdź **bezpiecznego** pole wyboru, wprowadź wartość numeru PIN, określony przez agenta zdalnego w **numeru Pin** pola. Jeśli używasz zdalnego agenta w trybie niezabezpieczone połączenie, wyczyść **bezpiecznego** pole wyboru i pozostawić **numeru Pin** pole puste.
+1. Jeśli używasz zdalnego agenta w domyślnym trybie bezpiecznego połączenia, zaznacz pole wyboru **bezpieczne** , a następnie wprowadź wartość numeru PIN określoną przez agenta zdalnego w polu **kod PIN** . Jeśli używasz zdalnego agenta w trybie niezabezpieczonego połączenia, wyczyść pole wyboru **bezpieczne** i pozostaw puste pole **numeru PIN** .
 
-1. Wybierz **pary** umożliwia kojarzenie.
+1. Wybierz **parę** , aby włączyć parowanie.
 
-   ![Konfigurowanie połączenia vcremote dla kompilacji dla systemu iOS](../cross-platform/media/cppmdd_options_ios.PNG "CPPMDD_Options_iOS")
+   ![Konfigurowanie połączenia vcremote dla kompilacji systemu iOS](../cross-platform/media/cppmdd_options_ios.PNG "CPPMDD_Options_iOS")
 
-   Parowanie będzie się powtarzać, dopóki nie zmienisz nazwę hosta lub portu. Jeśli zmienisz nazwę hosta lub port w **opcje** okno dialogowe, aby cofnąć zmianę, wybierz **Przywróć** przycisk, aby powrócić do poprzedniego parowania.
+   Parowanie jest zachowywane do momentu zmiany nazwy hosta lub portu. Jeśli zmienisz nazwę hosta lub port w oknie dialogowym **Opcje** , aby cofnąć zmianę, wybierz przycisk **Przywróć** , aby przywrócić poprzednią parowanie.
 
-   Jeśli skojarzenie nie powiedzie się, sprawdź, czy agent zdalny jest uruchomiony, wykonując kroki opisane w [uruchomić agenta zdalnego](#Start). Jeśli zbyt dużo czasu minęło od czasu wygenerowania agenta zdalnego numeru PIN, wykonaj kroki opisane w [Generowanie nowego zabezpieczającego numeru PIN](#GeneratePIN) na komputerach Mac i spróbuj wykonać operację ponownie. Jeśli używasz nazwę hosta komputera Mac, spróbuj użyć adresu IP w **nazwy hosta** zamiast tego pola.
+   Jeśli parowanie nie powiedzie się, sprawdź, czy Agent zdalny działa, wykonując kroki opisane w temacie [Uruchamianie zdalnego agenta](#Start). Jeśli upłynął zbyt dużo czasu od momentu wygenerowania numeru PIN agenta zdalnego, wykonaj kroki opisane w sekcji [generowanie nowego numeru PIN zabezpieczeń](#GeneratePIN) na komputerze Mac, a następnie spróbuj ponownie. Jeśli używasz nazwy hosta dla komputera Mac, zamiast tego spróbuj użyć adresu IP w polu **Nazwa hosta** .
 
-1. Zaktualizuj nazwę folderu, w **zdalny katalog główny** pola, aby wskazać folder, używane przez agenta zdalnego w domu ( *~* ) katalogu na komputerze Mac. Domyślnie zdalny agent używa /Users/`username`/vcremote jako zdalny katalog główny.
+1. Zaktualizuj nazwę folderu w polu **zdalny katalog główny** , aby określić folder używany przez agenta zdalnego w katalogu głównym ( *~* ) na komputerze Mac. Domyślnie agent zdalny używa `/Users/<username>/vcremote` jako zdalnego katalogu głównego.
 
-1. Wybierz **OK** można zapisać ustawień połączenia zdalnego parowania.
+1. Wybierz **przycisk OK** , aby zapisać ustawienia połączenia zdalnego parowania.
 
-Visual Studio używa te same informacje, aby nawiązać połączenie zdalnego agenta na komputerze Mac, zawsze możesz użyć. Nie trzeba wykonać parowania programu Visual Studio z agentem zdalnym ponownie chyba że Wygeneruj nowy certyfikat zabezpieczeń na komputerze Mac lub zmian adresów IP lub nazwy hosta.
+Program Visual Studio używa tych samych informacji do łączenia się z agentem zdalnym na komputerze Mac za każdym razem, gdy jest używany. Nie trzeba ponownie łączyć programu Visual Studio z agentem zdalnym, chyba że zostanie wygenerowany nowy certyfikat zabezpieczeń na komputerze Mac lub jego nazwa hosta lub adres IP.
 
-## <a name="GeneratePIN"></a> Generowanie nowego zabezpieczającego numeru PIN
+## <a name="GeneratePIN"></a>Generuj nowy zabezpieczający kod PIN
 
-Po uruchomieniu agenta zdalnego po raz pierwszy, wygenerowany kod PIN jest ważny przez ograniczony okres — domyślnie 10 minut. Visual Studio nie parowania z agentem zdalnym przed wygaśnięciem, należy wygenerować nowy kod PIN.
+Po pierwszym uruchomieniu zdalnego agenta wygenerowany kod PIN jest ważny przez ograniczoną ilość czasu — domyślnie 10 minut. Jeśli nie połączysz programu Visual Studio z agentem zdalnym przed upływem czasu, konieczne będzie wygenerowanie nowego numeru PIN.
 
 ### <a name="to-generate-a-new-pin"></a>Aby wygenerować nowy kod PIN
 
-1. Zatrzymaj agenta, lub Otwórz drugie okno terminala aplikacji na komputerze Mac, a następnie go użyć, aby wprowadzić polecenie.
+1. Zatrzymaj agenta lub Otwórz drugie okno aplikacji terminala na komputerze Mac i Użyj tego polecenia, aby wprowadzić polecenie.
 
-1. Wprowadź następujące polecenie w terminalu aplikacji:
+1. Wprowadź to polecenie w aplikacji terminalowej:
 
    `vcremote generateClientCert`
 
-   Agent zdalny generuje nowy tymczasowy numer PIN. Aby sparować programu Visual Studio za pomocą nowego numeru PIN, powtórz kroki opisane w [skonfigurować agenta zdalnego w programie Visual Studio](#ConfigureVS).
+   Agent zdalny generuje nowy tymczasowy numer PIN. Aby sparować program Visual Studio przy użyciu nowego numeru PIN, powtórz czynności opisane w sekcji [Konfigurowanie zdalnego agenta w programie Visual Studio](#ConfigureVS).
 
-## <a name="GenerateCert"></a> Wygeneruj nowy certyfikat serwera
+## <a name="GenerateCert"></a>Wygeneruj nowy certyfikat serwera
 
-Ze względów bezpieczeństwa serwera certyfikatów tej pary programu Visual Studio z agentem zdalnym są powiązane z nazwy hosta lub adres IP Twojego komputera Mac. W przypadku zmiany tych wartości, należy wygenerować nowy certyfikat serwera i następnie ponownie skonfigurować program Visual Studio z nowymi wartościami.
+Ze względów bezpieczeństwa certyfikaty serwera, które kojarzą program Visual Studio z agentem zdalnym, są powiązane z adresem IP lub nazwą hosta komputera Mac. Jeśli te wartości zmienią się, należy wygenerować nowy certyfikat serwera, a następnie ponownie skonfigurować program Visual Studio przy użyciu nowych wartości.
 
 ### <a name="to-generate-a-new-server-certificate"></a>Aby wygenerować nowy certyfikat serwera
 
-1. Zatrzymaj agenta vcremote.
+1. Zatrzymaj agenta `vcremote`.
 
-1. Wprowadź następujące polecenie w terminalu aplikacji:
+1. Wprowadź to polecenie w aplikacji terminalowej:
 
    `vcremote resetServerCert`
 
-1. Po wyświetleniu monitu o potwierdzenie, wprowadź `Y`.
+1. Po wyświetleniu monitu o potwierdzenie wprowadź `Y`.
 
-1. Wprowadź następujące polecenie w terminalu aplikacji:
+1. Wprowadź to polecenie w aplikacji terminalowej:
 
    `vcremote generateClientCert`
 
-   Spowoduje to wygenerowanie nowego, tymczasowego numeru PIN.
+   To polecenie generuje nowy tymczasowy numer PIN.
 
-1. Aby sparować programu Visual Studio za pomocą nowego numeru PIN, powtórz kroki opisane w [skonfigurować agenta zdalnego w programie Visual Studio](#ConfigureVS).
+1. Aby sparować program Visual Studio przy użyciu nowego numeru PIN, powtórz czynności opisane w sekcji [Konfigurowanie zdalnego agenta w programie Visual Studio](#ConfigureVS).
 
-## <a name="ConfigureMac"></a> Konfigurowanie zdalnego agenta na komputerze Mac
+## <a name="ConfigureMac"></a>Konfigurowanie zdalnego agenta na komputerze Mac
 
-Można skonfigurować agenta zdalnego przy użyciu różnych opcji wiersza polecenia. Na przykład można określić port do nasłuchiwania żądań kompilacji i określ maksymalną liczbę kompilacji do obsługi w systemie plików. Domyślnie limit wynosi 10 kompilacji. Spowoduje to usunięcie zdalnego agenta kompilacji, które przekraczają maksimum podczas zamykania.
+Agenta zdalnego można skonfigurować przy użyciu różnych opcji wiersza polecenia. Na przykład można określić port do nasłuchiwania żądań kompilacji i określić maksymalną liczbę kompilacji do utrzymania w systemie plików. Domyślnie limit wynosi 10 kompilacji. Agent zdalny usunie kompilacje, które przekraczają maksymalną wartość przy zamykaniu.
 
 ### <a name="to-configure-the-remote-agent"></a>Aby skonfigurować agenta zdalnego
 
-- Aby wyświetlić pełną listę poleceń agenta zdalnego, w aplikacji Terminal, wpisz:
+- Aby wyświetlić pełną listę poleceń agenta zdalnego, w aplikacji terminala wprowadź:
 
    `vcremote --help`
 
-- Aby wyłączyć tryb bezpieczny i prosty połączeń oparty na protokole HTTP, wpisz:
+- Aby wyłączyć tryb bezpieczny i włączyć proste połączenia oparte na protokole HTTP, wprowadź:
 
    `vcremote --secure false`
 
-   Usuń zaznaczenie tej opcji **bezpiecznego** pole wyboru i pozostawić **numeru Pin** pole puste, podczas konfigurowania agenta w programie Visual Studio.
+   W przypadku korzystania z tej opcji Wyczyść pole wyboru **bezpieczne** i pozostaw pole **numeru PIN** puste podczas konfigurowania agenta w programie Visual Studio.
 
-- Aby określić lokalizację dla plików agenta zdalnego, wpisz:
+- Aby określić lokalizację plików agenta zdalnego, wprowadź:
 
    `vcremote --serverDir directory_path`
 
-   gdzie *directory_path* znajduje się na komputerze Mac, aby umieścić pliki dziennika, kompilacji i certyfikaty serwera. Domyślnie ta lokalizacja jest */Users/\<nazwa_użytkownika > / vcremote*. Kompilacje są uporządkowane według numeru kompilacji w tej lokalizacji.
+   gdzie *directory_path* to lokalizacja na komputerze Mac, w której mają zostać umieszczone pliki dziennika, kompilacje i certyfikaty serwera. Domyślnie ta lokalizacja jest `/Users/<username>/vcremote`. Kompilacje są zorganizowane według numeru kompilacji w tej lokalizacji.
 
-- Na potrzeby przechwytywania przez proces w tle `stdout` i `stderr` do pliku o nazwie server.log, wpisz:
+- Aby użyć procesu w tle do przechwytywania `stdout` i `stderr` do pliku o nazwie Server. log, wpisz:
 
    `vcremote > server.log 2>&1 &`
 
-   Plik server.log mogą pomóc w rozwiązywaniu problemów z kompilacją.
+   Plik Server. log może pomóc w rozwiązywaniu problemów z kompilacją.
 
 - Aby uruchomić agenta przy użyciu pliku konfiguracji zamiast parametrów wiersza polecenia, wpisz:
 
    `vcremote --config config_file_path`
 
-   gdzie *config_file_path* jest ścieżka do pliku konfiguracji w formacie JSON. Opcje uruchamiania i ich wartości nie może zawierać łączników.
+   gdzie *config_file_path* jest ścieżką do pliku konfiguracji w formacie JSON. Opcje uruchamiania i ich wartości nie mogą zawierać kresek.
 
 ## <a name="troubleshoot-the-remote-agent"></a>Rozwiązywanie problemów z agentem zdalnym
 
 ### <a name="debugging-on-an-ios-device"></a>Debugowanie na urządzeniu z systemem iOS
 
-Jeśli debugowanie na urządzeniu z systemem iOS nie działa, mogą występować problemy z narzędziem [ideviceinstaller](https://github.com/libimobiledevice/ideviceinstaller), który jest używany do komunikacji z urządzenia z systemem iOS. To narzędzie jest zwykle instalowany z Homebrew podczas instalacji vcremote. Wykonaj poniższe kroki, aby uniknąć tego problemu.
+Jeśli debugowanie na urządzeniu z systemem iOS nie działa, mogą wystąpić problemy z [ideviceinstaller](https://github.com/libimobiledevice/ideviceinstaller)narzędzia, które jest używane do komunikowania się z urządzeniem z systemem iOS. To narzędzie jest zazwyczaj instalowane z oprogramowania Homebrew podczas instalacji `vcremote`. Wykonaj poniższe kroki jako obejście problemu.
 
-Otwórz aplikację Terminal i zaktualizuj ideviceinstaller i jego zależności, wykonując następujące czynności w kolejności:
+Otwórz aplikację terminala i zaktualizuj `ideviceinstaller` i jej zależności, uruchamiając następujące polecenia w kolejności:
 
-1. Upewnij się, że jest aktualizowany Homebrew
+1. Upewnij się, że oprogramowania Homebrew został zaktualizowany
 
    `brew update`
 
-1. Odinstaluj libimobiledevice i usbmuxd
+1. Odinstaluj `libimobiledevice` i `usbmuxd`
 
    `brew uninstall --ignore-dependencies libimobiledevice`
 
    `brew uninstall --ignore-dependencies usbmuxd`
 
-1. Zainstaluj najnowszą wersję libimobiledevice usbmuxd
+1. Zainstaluj najnowszą wersję programu `libimobiledevice` i `usbmuxd`
 
    `brew install --HEAD usbmuxd`
 
@@ -262,22 +262,22 @@ Otwórz aplikację Terminal i zaktualizuj ideviceinstaller i jego zależności, 
 
    `brew install --HEAD libimobiledevice`
 
-1. Odinstaluj i ponownie zainstaluj ideviceinstaller
+1. Odinstalowywanie i ponowna instalacja `ideviceinstaller`
 
    `brew uninstall ideviceinstaller`
 
    `brew install ideviceinstaller`
 
-Sprawdź, czy tego ideviceinstaller może komunikować się z urządzeniem poprzez podjęcie próby wyświetlić listę zainstalowanych na urządzeniu:
+Sprawdź, czy `ideviceinstaller` może komunikować się z urządzeniem, próbując wyświetlić listę aplikacji zainstalowanych na urządzeniu:
 
 `ideviceinstaller -l`
 
-Jeśli błędy ideviceinstaller, że nie można uzyskać dostęp do folderu `/var/db/lockdown`, zmienianie uprawnień w folderze przy użyciu:
+Jeśli `ideviceinstaller` błędy, które nie mogą uzyskać dostępu do folderu `/var/db/lockdown`, Zmień uprawnienie dla tego folderu na:
 
 `sudo chmod 777 /var/db/lockdown`
     
-Sprawdź ponownie, jeśli ideviceinstaller może komunikować się z urządzeniem.
+Następnie ponownie sprawdź, czy `ideviceinstaller` może komunikować się z urządzeniem.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Instalowanie języka Visual C++ dla opracowywania aplikacji mobilnych dla wielu platform](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)
+- [Instalowanie aplikacji mobilnych dla wielu platform za pomocą programuC++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Błąd: Nie można rozpocząć debugowania na serwerze sieci Web | Dokumentacja firmy Microsoft'
+title: 'Błąd: nie można rozpocząć debugowania na serwerze sieci Web | Microsoft Docs'
 ms.date: 05/23/2018
 ms.topic: troubleshooting
 f1_keywords:
@@ -26,138 +26,140 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53ffc893b63447ab75a439ea1e093ddaf4b75645
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 706a20a00792e7c67b39535322fbd2530f2a2ad3
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850100"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72588994"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Błąd: Nie można rozpocząć debugowania na serwerze sieci Web
 
-Podczas debugowania aplikacji ASP.NET uruchomionych na serwerze sieci Web, może wystąpić ten komunikat o błędzie: `Unable to start debugging on the Web server`.
+Podczas próby debugowania aplikacji ASP.NET działającej na serwerze sieci Web może zostać wyświetlony następujący komunikat o błędzie: `Unable to start debugging on the Web server`.
 
-Często ten błąd występuje, ponieważ wystąpił błąd podczas zmiany lub konfiguracji, wymagającego aktualizacji pul aplikacji i/lub resetowanie usług IIS. Możesz zresetować usług IIS, otwierając wiersz polecenia i wpisując `iisreset`.
+Często ten błąd występuje, ponieważ wystąpił błąd lub zmiana konfiguracji, która wymaga aktualizacji pul aplikacji, resetowania usług IIS lub obu. Możesz zresetować usługi IIS, otwierając wiersz polecenia z podwyższonym poziomem uprawnień i wpisując `iisreset`.
 
-## <a name="specificerrors"></a>Co to jest komunikat szczegółowy komunikat o błędzie?
+## <a name="specificerrors"></a>Co to jest szczegółowy komunikat o błędzie?
 
-`Unable to start debugging on the Web server` Jest ogólny komunikat. Zazwyczaj bardziej szczegółowy komunikat o błędzie, w której znajduje się w ciąg błędu i zidentyfikować przyczynę problemu lub Wyszukaj, aby dokładniej poprawki, może pomóc. Poniżej przedstawiono niektóre typowe komunikaty o błędach, które są dołączane do komunikatu o błędzie główne:
+Komunikat `Unable to start debugging on the Web server` jest ogólny. Zwykle w ciągu błędu jest zawarty bardziej szczegółowy komunikat, który może pomóc w zidentyfikowaniu przyczyny problemu lub wyszukaniu bardziej dokładnej poprawki. Poniżej przedstawiono kilka typowych komunikatów o błędach, które są dołączane do głównego komunikatu o błędzie:
 
-- [Usługi IIS nie ma witryny sieci Web, która pasuje do uruchomienia adresu url](#IISlist)
-- [Serwer sieci web nie jest poprawnie skonfigurowany.](#web_server_config)
-- [Nie można nawiązać połączenia z serwera sieci Web](#unabletoconnect)
-- [Serwer sieci web nie odpowiedział w odpowiednim czasie](#webservertimeout)
-- [Microsoft visual studio dla zdalnego debugowania monitor(msvsmon.exe) zdaje się nie być uruchomiona na komputerze zdalnym](#msvsmon)
+- [Usługi IIS nie wyświetlają witryny sieci Web zgodnej z adresem URL uruchamiania](#IISlist)
+- [Serwer sieci Web nie jest prawidłowo skonfigurowany](#web_server_config)
+- [Nie można nawiązać połączenia z serwerem](#unabletoconnect)
+- [Serwer sieci Web nie odpowiedział w odpowiednim czasie](#webservertimeout)
+- [Monitor zdalnego debugowania programu Microsoft Visual Studio (msvsmon. exe) prawdopodobnie nie jest uruchomiony na komputerze zdalnym](#msvsmon)
 - [Serwer zdalny zwrócił błąd](#server_error)
 - [Nie można rozpocząć debugowania ASP.NET](#aspnet)
-- [Debuger nie może połączyć się z komputerem zdalnym](#cannot_connect)
-- [Zobacz Pomoc dla typowych błędów konfiguracji. Uruchamianie na stronie sieci Web poza debugerem może dostarczyć więcej informacji.](#see_help)
+- [Debuger nie może nawiązać połączenia z komputerem zdalnym](#cannot_connect)
+- [Zobacz pomoc dotyczącą typowych błędów konfiguracji. Uruchomienie strony sieci Web poza debugerem może dostarczyć więcej informacji.](#see_help)
 
-## <a name="IISlist"></a> Usługi IIS nie ma witryny sieci Web, która pasuje do uruchomienia adresu url
+## <a name="IISlist"></a>Usługi IIS nie wyświetlają witryny sieci Web zgodnej z adresem URL uruchamiania
 
-- Uruchom program Visual Studio jako Administrator i spróbuj ponownie debugowanie. (Niektóre scenariusze debugowania ASP.NET wymaga podwyższonego poziomu uprawnień).
+- Uruchom ponownie program Visual Studio jako administrator i ponów próbę debugowania. (Niektóre scenariusze debugowania ASP.NET wymagają podniesionych uprawnień).
 
-    Można skonfigurować program Visual Studio można zawsze uruchomić się jako Administrator, klikając prawym przyciskiem myszy ikonę skrótu prowadzącą programu Visual Studio, wybierając **właściwości > Zaawansowane**, a następnie wybierając zawsze Uruchom jako Administrator.
+    Program Visual Studio można skonfigurować tak, aby zawsze był uruchamiany jako administrator, klikając prawym przyciskiem myszy ikonę skrótu programu Visual Studio, wybierając **właściwości > zaawansowane**, a następnie wybierając opcję Zawsze uruchamiaj jako administrator.
 
-## <a name="web_server_config"></a> Serwer sieci web nie jest poprawnie skonfigurowany.
+## <a name="web_server_config"></a>Serwer sieci Web nie jest prawidłowo skonfigurowany
 
-- Zobacz [błąd: Serwer sieci web nie jest poprawnie skonfigurowany](../debugger/error-the-web-server-is-not-configured-correctly.md).
+- Zobacz [błąd: serwer sieci Web nie jest prawidłowo skonfigurowany](../debugger/error-the-web-server-is-not-configured-correctly.md).
 
-## <a name="unabletoconnect"></a> Nie można nawiązać połączenia z serwera sieci Web
+## <a name="unabletoconnect"></a>Nie można nawiązać połączenia z serwerem
 
-- Uruchamianie programu Visual Studio i serwera sieci Web na tym samym komputerze i debugowanie przy użyciu **F5** (zamiast **dołączyć do procesu**)? Otwórz właściwości projektu i upewnij się, że projekt jest skonfigurowany nawiązać połączenie z właściwym serwerem sieci Web i adres URL do uruchomienia. (Otwórz **właściwości > sieci Web > serwery** lub **właściwości > debugowanie** w zależności od typu projektu. Projekt formularzy sieci Web otwórz **strony właściwości > opcje Start > serwer**.)
+- Czy używasz programu Visual Studio i serwera sieci Web na tym samym komputerze i debugowania przy użyciu klawisza **F5** (zamiast **dołączania do procesu**)? Otwórz właściwości projektu i upewnij się, że projekt jest skonfigurowany do nawiązywania połączenia z prawidłowym serwerem sieci Web i adresem URL uruchomienia. (Otwórz **właściwości > serwery > sieci Web** lub **Właściwości > Debugowanie** w zależności od typu projektu. W przypadku projektu formularzy sieci Web Otwórz **stronę właściwości > opcje uruchamiania > Server**).
 
-- W przeciwnym razie ponowne uruchomienie puli aplikacji, a następnie Zresetuj usługi IIS. Aby uzyskać więcej informacji, zobacz [Sprawdź konfigurację usług IIS](#vxtbshttpservererrorsthingstocheck).
+- W przeciwnym razie ponownie uruchom pulę aplikacji, a następnie zresetuj usługi IIS. Aby uzyskać więcej informacji, zobacz [Sprawdzanie konfiguracji usług IIS](#vxtbshttpservererrorsthingstocheck).
 
-## <a name="webservertimeout"></a> Serwer sieci web nie odpowiedział w odpowiednim czasie
+## <a name="webservertimeout"></a>Serwer sieci Web nie odpowiedział w odpowiednim czasie
 
-- Zresetuj usługi IIS i spróbuj ponownie debugowanie. Wiele wystąpień debugera może zostać dołączony do proces usług IIS; Resetowanie kończy je. Aby uzyskać więcej informacji, zobacz [Sprawdź konfigurację usług IIS](#vxtbshttpservererrorsthingstocheck).
+- Zresetuj usługi IIS i ponów próbę debugowania. Do procesu usług IIS mogą być dołączone wiele wystąpień debugera; Resetowanie kończy się. Aby uzyskać więcej informacji, zobacz [Sprawdzanie konfiguracji usług IIS](#vxtbshttpservererrorsthingstocheck).
 
-## <a name="msvsmon"></a> Microsoft visual studio dla zdalnego debugowania monitor(msvsmon.exe) zdaje się nie być uruchomiona na komputerze zdalnym
+## <a name="msvsmon"></a>Monitor zdalnego debugowania programu Microsoft Visual Studio (msvsmon. exe) prawdopodobnie nie jest uruchomiony na komputerze zdalnym
 
-- Jeśli debugujesz na komputerze zdalnym, upewnij się, masz [zainstalowane i działają zdalny debuger](../debugger/remote-debugging.md). Jeśli komunikat nazwa zapora, upewnij się, [Popraw porty w zaporze](../debugger/remote-debugger-port-assignments.md) są otwarte, zwłaszcza, jeśli używasz zapory innych firm.
-- Jeśli używasz pliku HOSTS, upewnij się, że został on poprawnie skonfigurowany. Na przykład, jeśli debugowanie przy użyciu **F5** (zamiast **dołączyć do procesu**), HOSTY plik musi zawierać ten sam adres URL projektu, tak jak w swojej właściwości projektu **właściwości > sieci Web > serwery**  lub **właściwości > debugowanie**, w zależności od typu projektu.
+- W przypadku debugowania na maszynie zdalnej upewnij się, że [zainstalowano i uruchomiono zdalny debuger](../debugger/remote-debugging.md). Jeśli komunikat zawiera informacje o zaporze, upewnij się, że [w zaporze są otwarte odpowiednie porty](../debugger/remote-debugger-port-assignments.md) , zwłaszcza jeśli używasz zapory innej firmy.
+- Jeśli używasz pliku HOSTs, upewnij się, że jest prawidłowo skonfigurowany. Na przykład jeśli debugowanie przy użyciu klawisza **F5** (zamiast **dołączania do procesu**), plik hosts musi zawierać taki sam adres URL projektu jak we właściwościach projektu, **Właściwości > > sieci Web** lub **Właściwości > Debugowanie**, w zależności od Typ projektu.
 
-## <a name="server_error"></a> Serwer zdalny zwrócił błąd
+## <a name="server_error"></a>Serwer zdalny zwrócił błąd
 
-Sprawdź swoje [pliku dziennika usług IIS](https://support.microsoft.com/help/943891/the-http-status-code-in-iis-7-0--iis-7-5--and-iis-8-0) kody błędów podrzędne i dodatkowe informacje oraz tym IIS 7 [wpis w blogu](https://blogs.iis.net/tomkmvp/troubleshoot-a-403).
+Sprawdź, czy w [pliku dziennika usług IIS zarejestrowano](https://support.microsoft.com/help/943891/the-http-status-code-in-iis-7-0--iis-7-5--and-iis-8-0) błędy i dodatkowe informacje oraz wpis w [blogu](https://blogs.iis.net/tomkmvp/troubleshoot-a-403)usług IIS 7.
 
-Ponadto poniżej przedstawiono niektóre typowe kody błędów i kilka propozycji.
-- (403) zabroniony. Istnieje wiele możliwych przyczyn tego błędu, dlatego należy sprawdzić plik dziennika i ustawienia zabezpieczeń programu IIS dla witryny sieci web. Upewnij się, zawiera web.config serwera `debug=true` w elemencie kompilacji. Upewnij się, że folder aplikacji sieci Web ma odpowiednie uprawnienia i czy konfigurację puli aplikacji jest poprawna, (mógł ulec zmianie hasła). Zobacz [Sprawdź konfigurację usług IIS](#vxtbshttpservererrorsthingstocheck). Jeśli debugujesz lokalnie te ustawienia są już prawidłowe, również sprawdzić, czy łączysz do poprawnego typu serwera i adres URL (w **właściwości > sieci Web > serwery** lub **właściwości > debugowanie**, w zależności od typu projektu).
-- Serwer (503) jest niedostępny. Pula aplikacji może została zatrzymana z powodu błędu lub konfiguracji zmiany. Ponowne uruchomienie puli aplikacji.
-- (404) nie można odnaleźć. Upewnij się, że pula aplikacji jest skonfigurowana dla odpowiedniej wersji programu ASP.NET.
+Ponadto poniżej przedstawiono niektóre typowe kody błędów i kilka sugestii.
+- (403) — dostęp zabroniony. Istnieje wiele możliwych przyczyn tego błędu, dlatego sprawdź plik dziennika oraz ustawienia zabezpieczeń usług IIS dla witryny sieci Web. Upewnij się, że plik Web. config serwera zawiera `debug=true` w elemencie compilation. Upewnij się, że folder aplikacji sieci Web ma odpowiednie uprawnienia i że konfiguracja puli aplikacji jest poprawna (hasło mogło ulec zmianie). Zobacz [Sprawdzanie konfiguracji usług IIS](#vxtbshttpservererrorsthingstocheck). Jeśli te ustawienia są już poprawne i debugowanie jest wykonywane lokalnie, należy również sprawdzić, czy łączysz się z prawidłowym typem serwera i adresem URL (w obszarze **właściwości > serwery > sieci Web** lub **Właściwości > Debugowanie**, w zależności od typu projektu).
+- (503) serwer jest niedostępny. Pula aplikacji mogła zostać zatrzymana z powodu błędu lub zmiany konfiguracji. Ponownie uruchom pulę aplikacji.
+- nie znaleziono (404). Upewnij się, że Pula aplikacji została skonfigurowana pod kątem poprawnej wersji ASP.NET.
 
-## <a name="aspnet"></a> Nie można rozpocząć debugowania ASP.NET
+## <a name="aspnet"></a>Nie można rozpocząć debugowania ASP.NET
 
-- Ponowne uruchomienie puli aplikacji i Zresetuj usługi IIS. Aby uzyskać więcej informacji, zobacz [Sprawdź konfigurację usług IIS](#vxtbshttpservererrorsthingstocheck).
-- Jeśli przeprowadzasz ponownie zapisuje adresu URL, test podstawowy plik web.config z nie ponownego adresu URL. Zobacz **Uwaga** o adresie URL Nadpisz modułu w [Sprawdź konfigurację usług IIS](#vxtbshttpservererrorsthingstocheck).
+- Ponownie uruchom pulę aplikacji i zresetuj usługi IIS. Aby uzyskać więcej informacji, zobacz [Sprawdzanie konfiguracji usług IIS](#vxtbshttpservererrorsthingstocheck).
+- Jeśli wykonujesz ponowne zapisywanie adresów URL, przetestuj podstawową sieć Web. config bez ponownego zapisywania adresów URL. Zapoznaj **się z informacjami na** temat modułu ponowne zapisywanie adresów URL w temacie [Sprawdzanie konfiguracji usług IIS](#vxtbshttpservererrorsthingstocheck).
 
-## <a name="cannot_connect"></a> Debuger nie może połączyć się z komputerem zdalnym
+## <a name="cannot_connect"></a>Debuger nie może nawiązać połączenia z komputerem zdalnym
 
-Jeśli debugujesz lokalnie, ten błąd może wystąpić, ponieważ program Visual Studio jest 32-bitowej aplikacji, więc używa 64-bitowej wersji zdalnego debugera do debugowania 64-bitowych aplikacji. Otwórz właściwości projektu i upewnij się, że projekt jest skonfigurowany do łączenia się prawidłowy serwer sieci Web i adres URL. (Otwórz **właściwości > sieci Web > serwery** lub **właściwości > debugowanie** w zależności od typu projektu.)
+Jeśli debugujesz lokalnie, Otwórz właściwości projektu w programie Visual Studio i upewnij się, że projekt jest skonfigurowany do nawiązywania połączenia z prawidłowym serwerem sieci Web i adresem URL. (Otwórz **właściwości > serwery > sieci Web** lub **Właściwości > Debugowanie** w zależności od typu projektu).
 
-Jeśli używasz pliku HOSTS, upewnij się, że został on poprawnie skonfigurowany. Na przykład hostów plik musi zawierać ten sam adres URL projektu, tak jak w swojej właściwości projektu **właściwości > sieci Web > serwery** lub **właściwości > debugowanie**, w zależności od typu projektu.
+Ten błąd może wystąpić w przypadku debugowania lokalnego, ponieważ program Visual Studio jest aplikacją 32-bitową, więc używa wersji 64-bitowej zdalnego debugera do debugowania aplikacji 64-bitowych. Sprawdź pulę aplikacji w usługach IIS, aby upewnić się, że dla opcji **Włącz aplikacje 32-bitowe** ustawiono `true`, uruchom ponownie usługi IIS i spróbuj ponownie.
 
-## <a name="see_help"></a> Zobacz Pomoc dla typowych błędów konfiguracji. Uruchamianie na stronie sieci Web poza debugerem może dostarczyć więcej informacji.
+Ponadto, jeśli używasz pliku HOSTs, upewnij się, że jest prawidłowo skonfigurowany. Na przykład plik HOSTs musi zawierać ten sam adres URL projektu, jak we właściwościach projektu, **właściwości > serwery > sieci Web** lub **Właściwości > Debugowanie**, w zależności od typu projektu.
 
-- Czy używasz programu Visual Studio i serwera sieci Web na tym samym komputerze? Otwórz właściwości projektu i upewnij się, że projekt jest skonfigurowany nawiązać połączenie z właściwym serwerem sieci Web i adres URL do uruchomienia. (Otwórz **właściwości > sieci Web > serwery** lub **właściwości > debugowanie** w zależności od typu projektu.)
+## <a name="see_help"></a>Zobacz pomoc dotyczącą typowych błędów konfiguracji. Uruchomienie strony sieci Web poza debugerem może dostarczyć więcej informacji.
 
-- Jeśli to nie pomoże, lub debugujesz zdalnie, wykonaj czynności opisane w [Sprawdź konfigurację usług IIS](#vxtbshttpservererrorsthingstocheck).
+- Czy używasz programu Visual Studio i serwera sieci Web na tym samym komputerze? Otwórz właściwości projektu i upewnij się, że projekt jest skonfigurowany do nawiązywania połączenia z prawidłowym serwerem sieci Web i adresem URL uruchomienia. (Otwórz **właściwości > serwery > sieci Web** lub **Właściwości > Debugowanie** w zależności od typu projektu).
 
-## <a name="vxtbshttpservererrorsthingstocheck"></a> Sprawdź konfigurację usług IIS
+- Jeśli to nie zadziała lub debugujesz zdalnie, wykonaj kroki opisane w sekcji [Sprawdzanie konfiguracji usług IIS](#vxtbshttpservererrorsthingstocheck).
 
-Po wykonaniu czynności przedstawione w tym miejscu w celu rozwiązania problemu i przed podjęciem ponownej próby debugowania konieczne może być Zresetuj usługi IIS. Możesz to zrobić, otwierając wiersz polecenia i wpisując `iisreset`.
+## <a name="vxtbshttpservererrorsthingstocheck"></a>Sprawdź konfigurację usług IIS
 
-* Zatrzymaj i uruchom ponownie pul aplikacji usług IIS, a następnie spróbuj ponownie.
+Po pomyślnym wykonaniu kroków w celu rozwiązania problemu i przed ponowieniem próby debugowania należy zresetować usługi IIS. Możesz to zrobić, otwierając wiersz polecenia z podwyższonym poziomem uprawnień i wpisując `iisreset`.
 
-    Pula aplikacji może mieć została zatrzymana, w wyniku błędu. Lub innej konfiguracji wprowadzone zmiany będą mogą wymagać zatrzymanie i ponowne uruchomienie puli aplikacji.
+* Zatrzymaj i uruchom ponownie pule aplikacji IIS, a następnie ponów próbę.
+
+    Pula aplikacji mogła zostać zatrzymana w wyniku błędu. Inna wprowadzona zmiana konfiguracji może wymagać zatrzymania i ponownego uruchomienia puli aplikacji.
 
     > [!NOTE]
-    > Przechowuje Zatrzymywanie puli aplikacji, może być konieczne odinstalowanie moduł ponowne zapisywanie adresów URL w Panelu sterowania. Można było go zainstalować za pomocą Instalatora platformy sieci Web (WebPI). Ten problem może wystąpić po uaktualnieniu systemu znaczące.
+    > Jeśli pula aplikacji pozostaje zatrzymana, może być konieczne odinstalowanie modułu ponowne zapisywanie adresów URL z panelu sterowania. Można zainstalować ją ponownie za pomocą Instalatora platformy sieci Web (Instalatora WebPI). Ten problem może wystąpić po znaczącym uaktualnieniu systemu.
 
-* Sprawdź konfigurację puli aplikacji, popraw go w razie potrzeby, a następnie ponów próbę wykonania.
+* Sprawdź konfigurację puli aplikacji, w razie konieczności Popraw ją, a następnie ponów próbę.
 
-    Pula aplikacji może być skonfigurowany dla wersji programu ASP.NET, która jest niezgodna z projektu programu Visual Studio. Zaktualizuj wersję platformy ASP.NET w puli aplikacji, a następnie uruchom go ponownie. Aby uzyskać szczegółowe informacje, zobacz [3.5 przy użyciu platformy ASP.NET w programie IIS 8.0 i program ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
+    Pula aplikacji może być skonfigurowana dla wersji ASP.NET, która nie jest zgodna z projektem programu Visual Studio. Zaktualizuj wersję ASP.NET w puli aplikacji i uruchom ją ponownie. Aby uzyskać szczegółowe informacje, zobacz [IIS 8,0 przy użyciu ASP.NET 3,5 i ASP.NET 4,5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
-    Ponadto jeśli poświadczeń haseł zostały zmienione, konieczne może być je zaktualizować w puli aplikacji lub witryny sieci Web.  W tej puli aplikacji, należy zaktualizować poświadczenia w **Zaawansowane ustawienia > Model procesu > tożsamości**. Dla witryny sieci Web, należy zaktualizować poświadczenia w **podstawowe ustawienia > Połącz jako...** . Ponowne uruchomienie puli aplikacji.
+    Ponadto jeśli poświadczenia hasła zostały zmienione, może być konieczne ich zaktualizowanie w puli aplikacji lub w witrynie sieci Web.  W puli aplikacji zaktualizuj poświadczenia w **ustawieniach zaawansowanych > model procesu > tożsamość**. W przypadku witryny sieci Web zaktualizuj poświadczenia w **ustawieniach podstawowych > Połącz jako...** . Ponownie uruchom pulę aplikacji.
 
 * Sprawdź, czy folder aplikacji sieci Web ma odpowiednie uprawnienia.
 
-    Upewnij się, że zapewniają IIS_IUSRS, IUSR, lub określonego użytkownika skojarzony z [puli aplikacji](/iis/manage/configuring-security/application-pool-identities) Odczyt i wykonywanie praw do folderu aplikacji sieci Web. Rozwiąż problem i ponowne uruchomienie puli aplikacji.
+    Upewnij się, że podajesz IIS_IUSRS, IUSR lub określony użytkownik skojarzony z [pulą aplikacji](/iis/manage/configuring-security/application-pool-identities) uprawnienia do odczytu i wykonywania dla folderu aplikacji sieci Web. Usuń problem i ponownie uruchom pulę aplikacji.
 
-* Upewnij się, że zainstalowano poprawną wersję platformy ASP.NET, w usługach IIS.
+* Upewnij się, że w usługach IIS została zainstalowana poprawna wersja programu ASP.NET.
 
-    Niezgodność wersji platformy ASP.NET w usługach IIS i w projekcie programu Visual Studio może być przyczyną tego problemu. Może być konieczne ustawienie wersji framework w pliku web.config. Aby zainstalować program ASP.NET w usługach IIS, należy użyć [Instalatora platformy sieci Web (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx). Zobacz też [3.5 przy użyciu platformy ASP.NET w programie IIS 8.0 i program ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) lub dla platformy ASP.NET Core [hosta w Windows z programem IIS](https://docs.asp.net/en/latest/publishing/iis.html).
+    Niezgodne wersje programu ASP.NET na serwerze IIS i w projekcie programu Visual Studio mogą spowodować ten problem. Może być konieczne ustawienie wersji platformy w pliku Web. config. Aby zainstalować ASP.NET w usługach IIS, użyj [Instalatora platformy sieci Web (Instalatora WebPI)](https://www.microsoft.com/web/downloads/platform.aspx). Należy również zapoznać się z artykułem [iis 8,0 przy użyciu ASP.NET 3,5 i ASP.NET 4,5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) lub, w przypadku ASP.NET Core, [hosta w systemie Windows z usługami IIS](https://docs.asp.net/en/latest/publishing/iis.html).
 
-* Rozwiązywanie błędów uwierzytelniania, jeśli używasz tylko adres IP
+* Rozwiązywanie problemów z uwierzytelnianiem, jeśli używany jest tylko adres IP
 
-     Domyślnie adresy IP są uważane za część Internet, a uwierzytelnianie NTLM nie odbywa się za pośrednictwem Internetu. Jeśli witryna sieci web jest skonfigurowana w usługach IIS, aby wymagać uwierzytelniania, uwierzytelnianie nie powiedzie się. Aby rozwiązać ten problem, można określić nazwę komputera zdalnego zamiast adresu IP.
+     Domyślnie adresy IP są traktowane jako część Internetu, a uwierzytelnianie NTLM nie odbywa się za pośrednictwem Internetu. Jeśli witryna sieci Web jest skonfigurowana w usługach IIS w celu wymagania uwierzytelniania, to uwierzytelnianie nie powiedzie się. Aby rozwiązać ten problem, można określić nazwę komputera zdalnego zamiast adresu IP.
 
 ## <a name="other-causes"></a>Inne przyczyny
 
-Jeśli konfiguracji usług IIS nie jest źródłem problemu, spróbuj wykonać następujące czynności:
+Jeśli konfiguracja usług IIS nie powoduje problemu, spróbuj wykonać następujące czynności:
 
-- Uruchom program Visual Studio z uprawnieniami administratora i spróbuj ponownie.
+- Uruchom ponownie program Visual Studio z uprawnieniami administratora i spróbuj ponownie.
 
-    Niektóre scenariusze debugowania ASP.NET, takich jak za pomocą narzędzia Web Deploy wymaga podwyższonego poziomu uprawnień dla programu Visual Studio.
+    Niektóre scenariusze debugowania ASP.NET, takie jak używanie Web Deploy wymagają podniesionych uprawnień dla programu Visual Studio.
 
-- Jeśli korzystasz z wielu wystąpień programu Visual Studio, otwórz projekt w jednym wystąpieniu programu Visual Studio (z uprawnieniami administratora), a następnie spróbuj ponownie.
+- Jeśli działa wiele wystąpień programu Visual Studio, Otwórz ponownie projekt w jednym wystąpieniu programu Visual Studio (z uprawnieniami administratora) i spróbuj ponownie.
 
-- Jeśli używasz pliku HOSTS przy użyciu adresów lokalnych, spróbuj użyć adresu sprzężenia zwrotnego zamiast adresu IP komputera.
+- Jeśli używasz pliku HOSTs z adresami lokalnymi, spróbuj użyć adresu sprzężenia zwrotnego zamiast adresu IP maszyny.
 
-    Jeśli nie używasz adresów lokalnych, upewnij się, plik hostów zawiera ten sam adres URL projektu, tak jak w swojej właściwości projektu **właściwości > sieci Web > serwery** lub **właściwości > debugowanie**, w zależności od usługi Typ projektu.
+    Jeśli nie korzystasz z adresów lokalnych, upewnij się, że plik HOSTs zawiera ten sam adres URL projektu, jak we właściwościach projektu, **właściwości > serwery > sieci Web** lub **Właściwości > Debugowanie**, w zależności od typu projektu.
 
-## <a name="more-troubleshooting-steps"></a>Dodatkowe kroki rozwiązywania
+## <a name="more-troubleshooting-steps"></a>Więcej kroków rozwiązywania problemów
 
-* Wyświetlenie strony hosta lokalnego, w przeglądarce na serwerze.
+* Wywołaj stronę localhost w przeglądarce na serwerze programu.
 
-     Jeśli usługi IIS nie jest zainstalowany poprawnie, powinny występują błędy podczas wpisywania tekstu `http://localhost` w przeglądarce.
+     Jeśli usługi IIS nie są poprawnie zainstalowane, należy uzyskać błędy podczas wpisywania `http://localhost` w przeglądarce.
 
-     Aby uzyskać więcej informacji na temat wdrażania usług IIS, zobacz [3.5 przy użyciu platformy ASP.NET w programie IIS 8.0 i program ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) i dla platformy ASP.NET Core [hosta w Windows z programem IIS](https://docs.asp.net/en/latest/publishing/iis.html).
+     Aby uzyskać więcej informacji na temat wdrażania usług IIS, zobacz [iis 8,0 przy użyciu ASP.NET 3,5 i ASP.NET 4,5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) oraz, w przypadku ASP.NET Core, [host w systemie Windows z usługami IIS](https://docs.asp.net/en/latest/publishing/iis.html).
 
-* Tworzenie podstawowej aplikacji ASP.NET na serwerze (lub przy użyciu pliku web.config podstawowych).
+* Utwórz podstawową aplikację ASP.NET na serwerze (lub użyj podstawowego pliku Web. config).
 
-    Jeśli nie można pobrać aplikację do pracy z debugerem, spróbuj utworzyć podstawową aplikację ASP.NET lokalnie na serwerze i spróbuj debugować podstawową aplikację. (Można użyć domyślnego szablonu platformy ASP.NET MVC.) Jeśli debugujesz podstawowej aplikacji, które pomogą Ci określenie, jakie są różnice między dwie konfiguracje. Poszukaj różnice w ustawieniach w pliku web.config, takie jak reguły ponownego zapisywania adresów URL.
+    Jeśli nie możesz pobrać aplikacji z debugerem, spróbuj utworzyć podstawową aplikację ASP.NET lokalnie na serwerze, a następnie spróbuj debugować podstawową aplikację. (Możesz chcieć użyć domyślnego szablonu MVC ASP.NET). Jeśli możesz debugować podstawową aplikację, która może pomóc w określeniu, czym się różnią między obiema konfiguracjami. Poszukaj różnic w ustawieniach w pliku Web. config, takich jak reguły ponownego zapisywania adresów URL.
 
 ## <a name="see-also"></a>Zobacz też
-- [Debugowanie aplikacji internetowych: Błędy i rozwiązywanie problemów](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+- [Debugowanie aplikacji internetowych: błędy i rozwiązywanie problemów](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

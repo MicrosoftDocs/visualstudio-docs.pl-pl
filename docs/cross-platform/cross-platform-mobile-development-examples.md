@@ -1,7 +1,7 @@
 ---
-title: Przykłady programowania aplikacji mobilnych na wiele Platform | Dokumentacja firmy Microsoft
+title: Przykłady tworzenia aplikacji mobilnych dla wielu platform | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/17/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 dev_langs:
@@ -12,44 +12,45 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: b3980273e746b5f6dacd2d8d612a5e5e7dfe2a8e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 31619757684811fb5090e6edb05c464be59fa4dd
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62819422"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72589002"
 ---
-# <a name="cross-platform-mobile-development-examples"></a>Przykłady programowania aplikacji mobilnych dla wielu platform
-Kompletne przykłady, których można użyć, aby dowiedzieć się więcej z kilku szablonów instalowane przez Visual C++ for Cross-Platform Mobile Development wygenerować. Ponadto Centrum deweloperów Windows ma kilka przykładowe aplikacje, które można pobrać i wypróbować w programie Visual Studio.
+# <a name="cross-platform-mobile-development-examples"></a>Przykłady tworzenia aplikacji mobilnych dla wielu platform
 
-- [Przykład aplikacji systemu Android interfejsem jni Hello](https://code.msdn.microsoft.com/hello-jni-Android-790ab73d)
+Kilka szablonów zainstalowanych przez **Programowanie aplikacji mobilnych za pomocą C++**  obciążeń generuje kompletne przykłady, których można użyć do uzyskania informacji. Ponadto Centrum deweloperów systemu Windows zawiera kilka przykładowych aplikacji, które można pobrać i wypróbować w programie Visual Studio.
 
-   W tym przykładzie jest port aplikacji interfejsem jni hello zestawu Android NDK. W przykładzie pokazano natywnego interfejsu języka Java end-to-end aplikacji "Hello World". Ładuje ciąg z metody natywnej zaimplementowane w bibliotece udostępnionej, a następnie wyświetli go w aplikacji.
+- [Przykład aplikacji Hello-JNI dla systemu Android](https://code.msdn.microsoft.com/hello-jni-Android-790ab73d)
 
-- [Przykład aplikacji systemu Android Hello gl2](https://code.msdn.microsoft.com/hello-gl2-Android-3b61896c)
+   Ten przykład to port aplikacji Hello-JNI systemu Android NDK. Przykład ilustruje kompleksową aplikację natywnego interfejsu Java "Hello world". Ładuje ciąg z metody natywnej zaimplementowanej w bibliotece udostępnionej, a następnie wyświetla ją w aplikacji.
 
-   W tym przykładzie jest portem zastosowania hello gl2 zestawu Android NDK. W przykładzie pokazano aplikację Java natywnego interfejsu dla systemu Android ze specyfikacji OpenGL end-to-end. Powoduje renderowanie trójkąt przy użyciu programu do cieniowania OpenGL ES 2.0 interfejsów API.
+- [Przykład aplikacji Hello-GL2 dla systemu Android](https://code.msdn.microsoft.com/hello-gl2-Android-3b61896c)
 
-- [Przykład aplikacji dla systemu Android osocza mapy bitowej](https://code.msdn.microsoft.com/Bitmap-Plasma-Android-77ae296a)
+   Ten przykład to port aplikacji Hello-GL2 systemu Android NDK. W przykładzie przedstawiono kompleksową aplikację języka Java natywnego interfejsu systemu Android OpenGL. Renderuje Trójkąt przy użyciu interfejsów API modułu cieniującego OpenGL ES 2,0.
 
-   W tym przykładzie jest port aplikacji dla systemu Android NDK mapy bitowej osocza. W przykładzie pokazano aplikację Java natywnego interfejsu dla systemu Android ze specyfikacji OpenGL ES 2.0 end-to-end. Pokazuje bezpośrednią manipulację buforów pikseli mapy bitowej systemu Android do generowania efekt osocza.
+- [Przykładowa aplikacja Android plazmy plazmowej](https://code.msdn.microsoft.com/Bitmap-Plasma-Android-77ae296a)
 
-- [Przykład biblioteki TwoLibs systemu Android](https://code.msdn.microsoft.com/TwoLibs-Android-Library-6396e5c4)
+   Ten przykład to port aplikacji plazmowej mapy bitowej systemu Android NDK. W przykładzie przedstawiono kompleksową aplikację Java natywnego interfejsu Android OpenGL ES 2,0. Pokazuje bezpośrednie manipulowanie buforami pikseli mapy bitowej systemu Android w celu wygenerowania efektu osocza.
 
-   W tym przykładzie jest portem dla systemu Android NDK TwoLibs próbki. Używa biblioteki współużytkowanej dynamicznie załadowane i C++ Android native bibliotekę statyczną, która implementuje metodę o nazwie z aplikacji natywnego interfejsu języka Java. W tym przykładzie jest dobry punkt wyjścia dla deweloperów zrozumieć, jak używać biblioteki udostępnione statycznym/dynamicznym do tworzenia aplikacji systemu Android, które są interfejsem JNI end-to-end przy użyciu programu Visual Studio 2015.
+- [Przykład biblioteki TwoLibs dla systemu Android](https://code.msdn.microsoft.com/TwoLibs-Android-Library-6396e5c4)
 
-- [Dzbanek do herbaty aplikacji dla systemu Android próbki](https://code.msdn.microsoft.com/Tea-Pot-Android-Application-e7c05d73)
+   Ten przykład to port przykładu TwoLibs NDK dla systemu Android. Używa ona zarówno dynamicznie załadowanej biblioteki udostępnionej, jak C++ i statycznej biblioteki natywnej systemu Android, która implementuje metodę wywoływaną z natywnej aplikacji interfejsu Java. Ten przykład jest dobrym punktem wyjścia dla deweloperów, aby zrozumieć, jak używać statycznych/dynamicznych bibliotek udostępnionych do tworzenia kompleksowej aplikacji JNI dla systemu Android za pomocą programu Visual Studio.
 
-   W tym przykładzie jest port aplikacji dla systemu Android NDK użyciu Czajniczka. W przykładzie pokazano aplikację Java natywnego interfejsu dla systemu Android ze specyfikacji OpenGL ES 2.0 end-to-end.
+- [Przykład aplikacji dla systemu Android z herbaty pot](https://code.msdn.microsoft.com/Tea-Pot-Android-Application-e7c05d73)
 
-- [MoreTeaPots Android przykładowej aplikacji](https://code.msdn.microsoft.com/MoreTeaPots-Android-a9bd8549)
+   Ten przykład jest portem aplikacji czajniczek dla systemu Android NDK. W przykładzie przedstawiono kompleksową aplikację Java natywnego interfejsu Android OpenGL ES 2,0.
 
-   W tym przykładzie jest port aplikacji dla systemu Android NDK MoreTeaPots. W przykładzie pokazano aplikację Java natywnego interfejsu dla systemu Android ze specyfikacji OpenGL end-to-end.
+- [Przykład aplikacji MoreTeaPots dla systemu Android](https://code.msdn.microsoft.com/MoreTeaPots-Android-a9bd8549)
 
-- [Przykład biblioteki systemu Android libstdcpp testu](https://code.msdn.microsoft.com/test-libstdcpp-Android-00b548f5)
+   Ten przykład jest portem aplikacji MoreTeaPots dla systemu Android NDK. W przykładzie przedstawiono kompleksową aplikację języka Java natywnego interfejsu systemu Android OpenGL.
 
-   W tym przykładzie jest port testu zestawu Android NDK-libstdc ++ próbki, specjalnie dla programu Visual Studio 2015. W tym przykładzie jest dobry punkt wyjścia dla deweloperów zrozumieć, jak używać biblioteki standardowej.
+- [Przykład biblioteki test-libstdcpp dla systemu Android](https://code.msdn.microsoft.com/test-libstdcpp-Android-00b548f5)
 
-  Aby otworzyć jeden z przykładów w programie Visual Studio, Pobierz plik zip, a następnie otwórz **właściwości** strony pobranego pliku w Eksploratorze. Wybierz **odblokowanie** przycisk, a następnie wybierz pozycję **OK**. Wyodrębnij zawartość pliku zip w dogodnym miejscu, a następnie otwórz folder języka C++ w przykładzie wyodrębniony i Otwórz plik rozwiązania.
+   Ten przykład jest portem zestawu Android NDK test-libstdc + +, przeznaczonym do użycia z programem Visual Studio. Ten przykład jest dobrym punktem wyjścia dla deweloperów, aby zrozumieć, jak korzystać z biblioteki standardowej.
 
-  Aby stworzyć próbkę, naciśnij klawisz **F7**, lub na pasku menu wybierz **kompilacji**, **Kompiluj rozwiązanie**.
+  Aby otworzyć jeden z przykładów w programie Visual Studio, Pobierz plik zip i Otwórz stronę **Właściwości** pobranego pliku w Eksploratorze. Wybierz przycisk **Odblokuj** , a następnie wybierz **OK**. Wyodrębnij zawartość pliku zip do wygodnej lokalizacji, a następnie otwórz C++ folder w wyodrębnionym przykładzie i Otwórz plik rozwiązania.
+
+  Aby skompilować przykład, naciśnij klawisz **F7**lub na pasku menu wybierz **kompilacja**, **Skompiluj rozwiązanie**.

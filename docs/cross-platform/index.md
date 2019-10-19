@@ -1,7 +1,7 @@
 ---
 layout: LandingPage
-title: Tworzenie aplikacji mobilnych w języku C++
-description: Tworzenie natywnych aplikacji C++ dla systemów iOS, z systemami Android i Windows z programem Visual Studio.
+title: Programowanie aplikacji mobilnych za pomocąC++
+description: Twórz aplikacje C++ natywne dla urządzeń z systemami iOS, Android i Windows za pomocą programu Visual Studio.
 ms.date: 10/31/2018
 author: jasongroce
 ms.author: jasgro
@@ -9,16 +9,16 @@ ms.topic: landing-page
 ms.technology: vs-ide-mobile
 ms.workload:
 - apexprodleads
-ms.openlocfilehash: f52b537a5e6a02dbaccb02f275c380d0ec355fdf
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
+ms.openlocfilehash: 237c2012dc1e96e294ffae2745933f63bbbca95b
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67160129"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72589084"
 ---
-# <a name="mobile-development-with-c-documentation"></a>Tworzenie aplikacji mobilnych za pomocą dokumentacji języka C++
+# <a name="mobile-development-with-c-documentation"></a>Opracowywanie aplikacji C++ mobilnych za pomocą dokumentacji
 
-Tworzenie natywnych aplikacji C++ dla systemów iOS, Android i Windows urządzenia z programem Visual Studio.
+Twórz aplikacje C++ natywne dla urządzeń z systemami iOS, Android i Windows za pomocą programu Visual Studio.
 
 <!-- markdownlint-disable MD033 -->
 
@@ -30,12 +30,12 @@ Tworzenie natywnych aplikacji C++ dla systemów iOS, Android i Windows urządzen
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_setup.svg" alt="Set up Visual C++ for cross-platform mobile apps">
+                            <img src="/media/common/i_setup.svg" alt="Set up Visual Studio for cross-platform mobile app development with C++">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Instalowanie języka Visual C++ dla opracowywania aplikacji mobilnych dla wielu platform</h3>
-                        <p>Konfigurowanie narzędzia wymagane do kompilowania aplikacji mobilnych dla wielu platform.</p>
+                        <h3>Instalowanie aplikacji mobilnych dla wielu platform za pomocą programuC++</h3>
+                        <p>Skonfiguruj narzędzia wymagane do kompilowania aplikacji mobilnych dla wielu platform.</p>
                     </div>
                 </div>
             </div>
@@ -49,12 +49,12 @@ Tworzenie natywnych aplikacji C++ dla systemów iOS, Android i Windows urządzen
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_learn-about.svg" alt="Learn about Visual C++ for cross-platform mobile development">
+                            <img src="/media/common/i_learn-about.svg" alt="Learn about Visual Studio tools for C++ cross-platform mobile development">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Dowiedz się więcej o Visual C++ dla opracowywania aplikacji mobilnych dla wielu platform</h3>
-                        <p>Omówienie tworzenia aplikacji mobilnych dla wielu platform przy użyciu języka Visual C++.</p>
+                        <h3>Poznaj narzędzia Visual Studio Tools dla C++ wieloplatformowego opracowywania aplikacji mobilnych</h3>
+                        <p>Zapoznaj się z omówieniem opracowywania aplikacji mobilnych dla C++wielu platform za pomocą programu.</p>
                     </div>
                 </div>
             </div>
@@ -72,8 +72,8 @@ Tworzenie natywnych aplikacji C++ dla systemów iOS, Android i Windows urządzen
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Przykłady programowania aplikacji mobilnych dla wielu platform</h3>
-                        <p>Zobacz przykłady ułatwiające rozpoczęcie pracy z aplikacji mobilnych dla wielu platform.</p>
+                        <h3>Przykłady tworzenia aplikacji mobilnych dla wielu platform</h3>
+                        <p>Zapoznaj się z przykładami, aby rozpocząć pracę z programowaniem aplikacji mobilnych na wiele platform.</p>
                     </div>
                 </div>
             </div>
@@ -91,8 +91,8 @@ Tworzenie natywnych aplikacji C++ dla systemów iOS, Android i Windows urządzen
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3><a href="/cpp/visual-cpp-in-visual-studio">Visual C++</a></h3>
-                        <p><a href="/cpp/ide/read-and-understand-code-cpp">Odczytywanie i Zapisywanie kodu</a><p>
+                        <h3><a href="/cpp/visual-cpp-in-visual-studio">Język C++ w programie Visual Studio</a></h3>
+                        <p><a href="/cpp/ide/read-and-understand-code-cpp">Odczytywanie i pisanie kodu</a><p>
                     </div>
                 </div>
             </div>
@@ -104,9 +104,9 @@ Tworzenie natywnych aplikacji C++ dla systemów iOS, Android i Windows urządzen
                 <div class="card">
                     <div class="cardText">
                         <h3>Platformy</h3>
-                        <p><a href="/cpp/cppcx/universal-windows-apps-cpp">Uniwersalne dokumentacji platformy Windows (UWP)</a></p>
-                        <p><a href="https://developer.apple.com/reference">Dokumentacja interfejsów API systemu iOS</a></p>
-                        <p><a href="https://developer.android.com/guide/index.html">Dokumentacja interfejsu API systemu android</a></p>
+                        <p><a href="/cpp/cppcx/universal-windows-apps-cpp">Dokumentacja platforma uniwersalna systemu Windows (platformy UWP)</a></p>
+                        <p><a href="https://developer.apple.com/reference">Dokumentacja interfejsu API systemu iOS</a></p>
+                        <p><a href="https://developer.android.com/guide/index.html">Dokumentacja interfejsu API systemu Android</a></p>
                     </div>
                 </div>
             </div>

@@ -1,7 +1,7 @@
 ---
-title: Visual C++ for Cross-Platform Mobile Development | Dokumentacja firmy Microsoft
+title: Programowanie aplikacji mobilnych dla wielu platform C++ za pomocą programu | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/17/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 dev_langs:
@@ -12,97 +12,97 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 1439e50eba4a0000a1bf78b3f24c74fb164c1faf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 61bb3e17b104759995852959a7396d5a76927cfb
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818143"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72589045"
 ---
-# <a name="visual-c-for-cross-platform-mobile-development"></a>Visual C++ dla opracowywania aplikacji mobilnych dla wielu platform
-Możesz tworzyć aplikacje natywne w języku C++ dla systemów iOS, Android i Windows i udziału wspólny kod w bibliotekach skompilowany dla systemów iOS, Android i Windows przy użyciu języka Visual C++ for Cross-Platform Mobile Development. Ta opcja jest dostępna w Visual Studio 2015, który instaluje zestawy SDK i narzędzia potrzebne do tworzenia aplikacji dla wielu platform, biblioteki udostępnione i natywne aplikacje. Po zainstalowaniu, można użyć Visual C++ do pisania kodu, który jest uruchamiany w systemach iOS i urządzenia z systemem Android i platformy, oprócz Windows, Windows Phone i Xbox.
+# <a name="cross-platform-mobile-development-with-c"></a>Programowanie aplikacji mobilnych na wiele platformC++
 
- Pisanie kodu dla wielu platform mogą być irytujące. Języki programowania podstawowego i narzędzia dla systemów iOS, Android i Windows różnią się na każdej platformie. Jednak wszystkie platformy obsługują pisanie kodu w języku C++. Jest to uniwersalność, którego można użyć, aby umożliwić ponowne użycie kodu core między platformami. Macierzystego kodu napisanego w języku C++ może być zarówno wydajniej i odporne na odtwarzanie. Ponowne wykorzystanie kodu może skrócić czas i nakład pracy, podczas tworzenia aplikacji dla wielu platform.
+Możesz tworzyć natywne C++ aplikacje dla urządzeń z systemami iOS, Android i Windows za pomocą międzyplatformowych narzędzi dostępnych w programie Visual Studio. **Programowanie aplikacji C++ mobilnych** w programie to obciążenie dostępne w Instalatorze programu Visual Studio. Instaluje zestawy SDK i narzędzia potrzebne do tworzenia międzyplatformowych bibliotek udostępnionych i aplikacji natywnych. Po zainstalowaniu programu możesz użyć C++ programu, aby utworzyć kod, który jest uruchamiany na urządzeniach z systemem iOS lub Android oraz na platformach, Windows, sklepie Windows i konsoli Xbox.
 
- Tworzenie rozwiązań za pomocą języka Visual C++ for Cross-Platform Mobile Development ma kilka zalet:
+Pisanie kodu dla wielu platform jest często frustrujące. Podstawowe języki deweloperskie i narzędzia dla systemów iOS, Android i Windows różnią się w zależności od platformy. Jednak wszystkie platformy obsługują pisanie kodu w C++. Jest to typowy mianownik, który umożliwia ponowne użycie kodu podstawowego na różnych platformach. Kod natywny pisany C++ w programie może być jednocześnie bardziej wydajny i odporny na odtwarzanie przez proces odtwarzania. Ponowne użycie kodu może zaoszczędzić czas i nakład pracy podczas tworzenia aplikacji dla wielu platform.
 
-1. **Łatwa instalacja.** Instalator programu Visual Studio pobiera i instaluje wymagane narzędzia innych firm i zestawy SDK, których potrzebujesz do tworzenia aplikacji lub biblioteki dla systemów Android i iOS. Konfiguracja i instalacja jest proste i przede wszystkim automatyczne.
+Programowanie za C++ pomocą aplikacji mobilnych dla wielu platform ma kilka zalet:
 
-2. **Środowisko zaawansowanych i dobrze znanych kompilacji.** Które można udostępnić rozwiązania dla wielu platform i projekty łatwo utworzyć za pomocą szablonów programu Visual Studio. Zarządzanie właściwościami dla wszystkich projektów za pomocą jednego wspólnego interfejsu. Edytuj kod w edytorze programu Visual Studio i korzystanie z zalet wbudowana funkcja IntelliSense dla wielu platform, uzupełniania kodu i wyróżniania błędów.
+- **Łatwa instalacja.** Instalator programu Visual Studio uzyskuje i instaluje wymagane narzędzia innych firm i zestawy SDK potrzebne do kompilowania aplikacji lub bibliotek dla systemów Android i iOS. Konfiguracja i konfiguracja są proste i najczęściej automatyczne.
 
-3. **Ujednolicone środowisko debugowania.** Umożliwia światowej klasy narzędziom do debugowania w programie Visual Studio wyrażenie kontrolne i Przechodź przez kod C++ na wszystkich platformach, w tym urządzeń z systemem Android i emulatorów, symulatorach systemu iOS wymaga urządzeń i urządzeń Windows lub Windows Phone i emulatorów.
+- **Zaawansowane i znane środowisko kompilacji.** Łatwo twórz udostępnione rozwiązania i projekty dla wielu platform za pomocą szablonów programu Visual Studio. Zarządzanie właściwościami wszystkich projektów przy użyciu jednego wspólnego interfejsu. Edytuj cały kod w edytorze programu Visual Studio i Skorzystaj z wbudowanej wieloplatformowej funkcji IntelliSense do uzupełniania kodu i wyróżniania błędów.
+
+- **Ujednolicone środowisko debugowania.** Korzystaj z światowej klasy narzędzi do debugowania w programie Visual Studio, aby oglądać C++ i przełączać kod na wszystkich platformach: urządzenia z systemem Android i emulatory, symulatory systemu iOS i urządzenia, a także systemy Windows i emulatory systemu Windows.
 
 ## <a name="get-the-tools"></a>Pobierz narzędzia
- W języku Visual C++ Cross-Platform Mobile Development jest opcją do zainstalowania, dostarczanego z Visual Studio 2015. Wymagania wstępne i instrukcje dotyczące instalacji, zobacz [zainstalować Visual C++ dla opracowywania aplikacji mobilnych dla wielu platform](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md). Aby skompilować kod dla systemu iOS, należy również na komputerze Mac oraz konto dewelopera systemu iOS firmy Apple. Aby uzyskać więcej informacji, zobacz [zainstalować i skonfigurować narzędzia umożliwiające tworzenie za pomocą systemu iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md).
 
-## <a name="come-up-to-speed"></a>Pochodzą się wszystkiego
- Jeśli podchodzisz od etapu programowania systemu Android lub iOS mamy kilka wspaniałych materiału o tym, jak rozpocząć pracę. Visual Studio to środowisko ekspresyjna i nadaje się do rozwoju. Aby dowiedzieć się, jak z niej korzystać, spróbuj [wprowadzenie dla deweloperów systemu Android](/previous-versions/windows/apps/dn275875\(v=win.10\)) lub [wprowadzenie dla deweloperów systemu iOS](/previous-versions/windows/apps/jj657966\(v=win.10\)). Te tematy podstawowe informacje na temat programu Visual Studio i pojęcia, potrzebne do opracowywania aplikacji dla wielu platform Windows i Windows Phone. Aby rozpocząć pracę, pisania pierwszej aplikacji dla wielu platform dla systemów iOS i Android, zobacz [tworzenie aplikacji OpenGL ES w systemach Android i iOS](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md).
+Programowanie aplikacji mobilnych C++ za pomocą programu to z możliwością instalacji, która jest dostarczana z programem Visual Studio. Aby uzyskać wymagania wstępne i instrukcje dotyczące instalacji, zobacz [Instalowanie aplikacji mobilnych dla C++wielu platform za pomocą programu ](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md). Do utworzenia kodu dla systemu iOS potrzebny jest również komputer Mac i konto dewelopera systemu Apple iOS. Aby uzyskać więcej informacji, zobacz [Instalowanie i Konfigurowanie narzędzi do kompilowania przy użyciu systemu iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md).
 
- W języku Visual C++ Cross-Platform Mobile Development zawiera kilka szablonów, aby pomóc Ci rozpocząć pracę w aplikacjach:
+## <a name="come-up-to-speed"></a>Szybsze
 
-- Aplikacja Opengles 2 (systemy Android i iOS, Windows Universal)
+Jeśli korzystasz z programowania w systemie Android lub iOS, mamy doskonały materiał na temat rozpoczynania pracy. Program Visual Studio jest środowiskiem deweloperskim i obsługującym. Aby dowiedzieć się, jak z niej korzystać, wypróbuj [deweloperów systemu Android](/previous-versions/windows/apps/dn275875\(v=win.10\)) lub Rozpocznij [pracę dla deweloperów systemu iOS](/previous-versions/windows/apps/jj657966\(v=win.10\)). Te artykuły zawierają wprowadzenie do programu Visual Studio i koncepcje potrzebne do tworzenia aplikacji dla wielu platform dla systemu Windows i sklepu Windows. Aby rozpocząć tworzenie pierwszej aplikacji dla wielu platform dla systemów iOS i Android, zobacz [Tworzenie aplikacji OpenGL ES w systemach Android i iOS](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md).
 
-     Tworzy to rozwiązanie, które zawiera zestaw projektów do kompilacji aplikacji Android Native Activity, aplikację systemu iOS i w przypadku aplikacji Universal Windows wraz z udostępnionej biblioteki kodu C++. Te aplikacje możliwe używanie bibliotek specyficzne dla platformy utworzone za pomocą wspólnego kodu C++ OpenGL ES do rysowania tego samego modułu rotowania w każdej aplikacji. Po zainstalowaniu programu Visual Studio, aby użyć tego szablonu, musi zawierać opcję Narzędzia do programowania uniwersalnych aplikacji Windows.
+Tworzenie aplikacji mobilnych przy C++ użyciu obciążeń obejmuje kilka szablonów, które ułatwiają rozpoczęcie pracy z aplikacjami:
 
-- Aplikacja klasy Nativeactivity (Android)
+- Aplikacja OpenGLs 2 (systemy Android, iOS, Universal Windows)
 
-     Tworzy pełnej aplikacji C++ OpenGL jako projekt Android Native Activity.
+  Tworzy rozwiązanie, które zawiera zestaw projektów do kompilowania aplikacji systemu Android Native Activity, aplikacji dla systemu iOS i uniwersalnej aplikacji systemu Windows wraz z udostępnioną C++ biblioteką kodu. Aplikacje te używają bibliotek specyficznych dla platformy utworzonych przy użyciu C++ wspólnego kodu OpenGL ES do rysowania tego samego obracającego się modułu w każdej aplikacji. Aby użyć tego szablonu, należy uwzględnić obciążenie **platformy uniwersalnej systemu Windows** podczas instalowania programu Visual Studio.
 
-- Aplikacja OpenGLES (Android, iOS)
+- Aplikacja natywna (Android)
 
-     Tworzy rozwiązanie z zestawem projektów do kompilacji aplikacji systemu iOS i aplikacji Android Native Activity. Te aplikacje możliwe używanie bibliotek specyficzne dla platformy utworzone za pomocą wspólnego kodu C++ OpenGL ES do rysowania tego samego modułu rotowania w każdej aplikacji.
+  Tworzy kompletną C++ aplikację OpenGL jako projekt natywnej aktywności systemu Android.
 
-- Biblioteka udostępniona (systemy Android i iOS)
+- Aplikacja OpenGLs (Android, iOS)
 
-     Tworzy rozwiązanie z projektami tworzenia plikiem systemu Android Biblioteka dynamiczna (SO) i plik biblioteka statyczna (.a) dla systemu iOS przy użyciu wspólnego kodu w języku C++ w projekcie udostępnionym.
+  Tworzy rozwiązanie z zestawem projektów do kompilowania zarówno aplikacji natywnej aktywności systemu Android, jak i aplikacji systemu iOS. Aplikacje te używają bibliotek specyficznych dla platformy utworzonych przy użyciu C++ wspólnego kodu OpenGL ES do rysowania tego samego obracającego się modułu w każdej aplikacji.
 
-- Podstawowa aplikacja (Android, Ant)
+- Biblioteka udostępniona (Android, iOS)
 
-     Tworzy aplikację Android "Hello, World" Projekt aplikacji, który używa tylko kod źródłowy Java i Ant system kompilacji.
+  Tworzy rozwiązanie z projektami, aby utworzyć plik biblioteki dynamicznej systemu Android (. so) i plik statycznej biblioteki systemu iOS (. a) przy użyciu C++ wspólnego kodu w projekcie udostępnionym.
 
-- Podstawowa aplikacja (Android, Gradle)
+- Aplikacja podstawowa (Android, ANT)
 
-     Tworzy aplikację Android "Hello, World" Projekt aplikacji, który używa tylko kod źródłowy Java i narzędzie Gradle system kompilacji.
+  Tworzy projekt aplikacji "Hello, World" dla systemu Android, który używa tylko kodu źródłowego Java i systemu kompilacji ANT.
 
-- Biblioteka podstawowa (Android, Ant)
+- Aplikacja podstawowa (Android, Gradle)
 
-     Tworzy aplikację Android projektu biblioteki "Hello, World", który używa tylko kod źródłowy Java i Ant system kompilacji.
+  Tworzy projekt aplikacji "Hello, World" dla systemu Android, który używa tylko kodu źródłowego Java i systemu kompilacji Gradle.
+
+- Biblioteka podstawowa (Android, ANT)
+
+  Tworzy projekt biblioteki dla systemu Android "Hello, World", który używa tylko kodu źródłowego Java i systemu kompilacji ANT.
 
 - Biblioteka podstawowa (Android, Gradle)
 
-     Tworzy aplikację Android projektu biblioteki "Hello, World", który używa tylko kod źródłowy Java i narzędzie Gradle system kompilacji.
+  Tworzy projekt biblioteki dla systemu Android "Hello, World", który używa tylko kodu źródłowego Java i systemu kompilacji Gradle.
 
-- Dynamiczna Biblioteka udostępniona (Android)
+- Dynamiczna biblioteka udostępniona (Android)
 
-     Tworzy plik dla systemu Android Biblioteka dynamiczna (SO) przy użyciu kodu w języku C++.
+  Tworzy plik biblioteki dynamicznej systemu Android (. so) za pomocą C++ kodu.
 
-- Aplikacja Opengles 2 (iOS)
+- Aplikacja OpenGLs 2 (iOS)
 
-     Tworzy rozwiązanie z zestawem projektów do kompilacji aplikacji systemu iOS ze specyfikacji OpenGL ES 2. Aplikacja używa biblioteki kodu C++ OpenGL ES, aby narysować modułu rotowania w aplikacji systemu iOS. Ta aplikacja może być dobry punkt wyjścia do zobaczenia jak zaimportować bibliotek C++ do aplikacji systemu iOS.
+  Tworzy rozwiązanie z zestawem projektów do kompilowania aplikacji dla systemu iOS w technologii OpenGL ES 2. Aplikacja używa biblioteki oprogramowania C++ OpenGL ES Code do rysowania obracającego się modułu w aplikacji systemu iOS. Ta aplikacja może być dobrym punktem wyjścia do wyświetlania sposobu importowania C++ bibliotek do aplikacji systemu iOS.
 
 - Biblioteka statyczna (Android)
 
-     Tworzy projekt do tworzenia biblioteki statycznej dla systemu Android. Możesz tylko jednego dynamicznego biblioteką w aplikacji systemu Android, ale możesz połączyć dowolną liczbę bibliotek statycznych.
+  Tworzy projekt do kompilowania biblioteki statycznej dla systemu Android. Można połączyć tylko jedną bibliotekę dynamiczną w aplikacji systemu Android, ale można połączyć dowolną liczbę bibliotek statycznych.
 
 - Biblioteka statyczna (iOS)
 
-     Tworzy projekt do tworzenia biblioteki statycznej dla systemu iOS.
+  Tworzy projekt do kompilowania biblioteki statycznej dla systemu iOS.
 
-- Projekt makefile (Android)
+- Projekt pliku reguł programu make (Android)
 
-     Tworzy otokę projektu dla projektów dla systemu Android pliku reguł programu make.
+  Tworzy otokę projektu dla własnych projektów programu make dla systemu Android.
 
 ## <a name="try-out-sample-code"></a>Wypróbuj przykładowy kod
- Pobierz przykłady pokazujące sposób tworzenia udostępnionych bibliotek kodu używanych w aplikacji systemu iOS, systemów Android i Windows oraz jak utworzyć działanie natywne aplikacje dla systemu Android. Aby rozpocząć pracę, zobacz [przykłady programowania aplikacji mobilnych dla wielu platform](../cross-platform/cross-platform-mobile-development-examples.md).
 
-## <a name="in-this-section"></a>W tej sekcji
+Pobierz przykłady pokazujące sposób tworzenia udostępnionych bibliotek kodu, których można używać w aplikacjach dla systemów Windows, Android i iOS. I Zobacz przykłady tworzenia kompletnych natywnych aplikacji aktywności dla systemu Android. Aby rozpocząć, zobacz [przykłady tworzenia aplikacji mobilnych dla wielu platform](../cross-platform/cross-platform-mobile-development-examples.md).
 
-1. [Instalowanie języka Visual C++ dla opracowywania aplikacji mobilnych dla wielu platform](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)
+## <a name="see-also"></a>Zobacz także
 
-2. [Instalowanie i Konfigurowanie narzędzia umożliwiające tworzenie za pomocą systemu iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md)
-
-3. [Tworzenie aplikacji dla systemu Android działania natywnego](../cross-platform/create-an-android-native-activity-app.md)
-
-4. [Tworzenie aplikacji OpenGL ES w systemach Android i iOS](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md)
-
-5. [Przykłady programowania aplikacji mobilnych dla wielu platform](../cross-platform/cross-platform-mobile-development-examples.md)
+[Instalowanie międzyplatformowego opracowywania aplikacji C++ mobilnych za pomocą](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md) \
+[Instalowanie i Konfigurowanie narzędzi do kompilowania przy użyciu \ systemu iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md)
+[Tworzenie aplikacji dla systemu Android native activity](../cross-platform/create-an-android-native-activity-app.md) \
+[Tworzenie aplikacji OpenGL ES w systemach Android i iOS](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md) \
+[Przykłady tworzenia aplikacji mobilnych dla wielu platform](../cross-platform/cross-platform-mobile-development-examples.md)
