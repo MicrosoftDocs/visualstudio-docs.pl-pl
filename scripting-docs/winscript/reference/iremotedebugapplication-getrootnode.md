@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication::GetRootNode | Microsoft Docs
+title: 'IRemoteDebugApplication:: GetRootNode | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ef8337e27bb5a666e8d5d8d38abcafb044da02ba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2a9d2579c15c2b986b3b7f6921ed0abc40cbf4f7
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944222"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577490"
 ---
 # <a name="iremotedebugapplicationgetrootnode"></a>IRemoteDebugApplication::GetRootNode
-Zwracanie węzła aplikacji w ramach której są dodawane wszystkie węzły, powiązane z daną aplikacją.  
+Zwraca węzeł aplikacji, w którym dodawane są wszystkie węzły skojarzone z aplikacją.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,17 +37,17 @@ HRESULT GetRootNode(
   
 #### <a name="parameters"></a>Parametry  
  `ppdanRoot`  
- [out] Węzeł aplikacji debugowania, w ramach której są dodawane wszystkie węzły, powiązane z daną aplikacją.  
+ określoną Węzeł aplikacji debugowania, pod którym dodawane są wszystkie węzły skojarzone z aplikacją.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda zwraca węzła aplikacji w ramach której są dodawane wszystkie węzły, powiązane z daną aplikacją.  
+ Ta metoda zwraca węzeł aplikacji, w którym dodawane są wszystkie węzły skojarzone z aplikacją.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IRemoteDebugApplication, interfejs](../../winscript/reference/iremotedebugapplication-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IPerPropertyBrowsing2::SetPredefinedValue | Dokumentacja firmy Microsoft
+title: 'IPerPropertyBrowsing2:: SetPredefinedValue | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4d35e087cc057608666e104681d65fa8009f8167
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1a823a04082b7e19b2c1bc475c1070cc501789e8
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944823"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576234"
 ---
 # <a name="iperpropertybrowsing2setpredefinedvalue"></a>IPerPropertyBrowsing2::SetPredefinedValue
-Ustawia wartość właściwości określone przez `dispID`. Wstępnie zdefiniowane wartości jest identyfikowane za pomocą tokenu `dwCookie.`  
+Ustawia wartość właściwości określonej przez `dispID`. Wstępnie zdefiniowana wartość jest identyfikowana przez token `dwCookie.`  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -38,13 +38,13 @@ HRESULT SetPredefinedValue(
   
 #### <a name="parameters"></a>Parametry  
  `dispid`  
- [in] Wyślij identyfikator właściwości, dla której wstępnie zdefiniowaną wartość jest ustawiona.  
+ podczas Identyfikator wysyłania właściwości, dla której jest ustawiana wstępnie zdefiniowana wartość.  
   
  `dwCookie`  
- [in] Token identyfikowanie wartość do ustawienia.  
+ podczas Token identyfikujący wartość do ustawienia.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Zwraca prawidłową `HRESULT`, zazwyczaj `S_OK`.  
+ Zwraca prawidłowy `HRESULT`, zazwyczaj `S_OK`.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IPerPropertyBrowsing2, interfejs 1](../../winscript/reference/iperpropertybrowsing2-interface-1.md)

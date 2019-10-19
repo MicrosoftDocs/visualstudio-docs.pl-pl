@@ -1,5 +1,5 @@
 ---
-title: Oczekiwano ";" | Dokumentacja firmy Microsoft
+title: Oczekiwano znaku ";" | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,23 +14,23 @@ ms.assetid: 3070cc6c-1138-4655-a7ac-723379f48f94
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9e5d0418f09d208d8919a2c431c818e236b62b29
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 27d9a36a36c3783048cdb7afb6c06da09bd21456
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433724"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576461"
 ---
 # <a name="expected-"></a>Oczekiwano znaku „;"
-Podjęto próbę umieścić więcej niż jedna instrukcja w wierszu, ale nie rozdziel średnikami. Średnikami służą do zakończenia instrukcji. Mimo że możesz umieścić kilka instrukcji w jednym wierszu, każdy z nich muszą być rozdzielane od następnego średnikiem.  
+Podjęto próbę umieszczenia więcej niż jednej instrukcji w wierszu, ale nie rozdzielić ich średnikami. Średniki są używane do kończenia instrukcji. Chociaż można umieścić kilka instrukcji w jednym wierszu, każdy z nich musi być rozdzielony od następnego z średnikiem.  
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
-- Znacznik końca każdej instrukcji średnikiem.  
+- Oznacz koniec każdej instrukcji średnikiem.  
   
-- Upewnij się, wywołania funkcji Użyj nawiasów, prawidłowo.  
+- Upewnij się, że funkcja wywołuje poprawne użycie nawiasów.  
   
-- Upewnij się, że pamiętasz średnikami w nagłówku **dla** pętli.  
+- Upewnij się, że nie pamiętasz średników wewnątrz nagłówka pętli **for** .  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Pisanie kodu JavaScript](../../javascript/writing-javascript-code.md)

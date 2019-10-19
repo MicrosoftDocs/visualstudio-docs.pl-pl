@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::GetScriptTextAttributes | Dokumentacja firmy Microsoft
+title: 'IActiveScriptAuthor:: GetScriptTextAttributes | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 75e0d5edf7cf2f83e814036cec56a1b19a89813e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f89c7b654cc2ac7248598ee6498a3a290d17e2ef
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955123"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72563151"
 ---
 # <a name="iactivescriptauthorgetscripttextattributes"></a>IActiveScriptAuthor::GetScriptTextAttributes
-Zwraca atrybuty tekst w bloku skryptu.  
+Zwraca atrybuty tekstu bloku skryptu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,28 +41,28 @@ HRESULT GetScriptTextAttributes(
   
 #### <a name="parameters"></a>Parametry  
  `pszCode`  
- [w size_is (`cch`)] tekst w bloku skryptu. Ten ciąg ma być zakończone znakiem null.  
+ [in, size_is (`cch`)] Tekst bloku skryptu. Ten ciąg nie musi być zakończony znakiem null.  
   
  `cch`  
- [in] Rozmiar umożliwiający `pszCode` i `pattr` parametrów.  
+ podczas Rozmiar używany dla parametrów `pszCode` i `pattr`.  
   
  `pszDelimiter`  
- [in] Adres ogranicznika końcowego elementu skryptu. Gdy `pszCode` jest analizowany ze strumienia tekstu, host zazwyczaj używa rozdzielnika (takie jak dwa pojedyncze cudzysłowy), na aby wykrywać koniec scriptletu. Ustaw ten parametr na wartość NULL, jeśli nie było ogranicznika do identyfikowania koniec bloku skryptu.  
+ podczas Adres ogranicznika końca skryptu. Gdy `pszCode` jest analizowany ze strumienia tekstu, Host zwykle używa ogranicznika (takiego jak dwa znaki pojedynczego cudzysłowu) w celu wykrycia końca Scriptlet. Ustaw ten parametr na wartość NULL, jeśli nie ma ogranicznika identyfikującego koniec bloku skryptu.  
   
  `dwFlags`  
- [in] Flagi, które są skojarzone z atrybutów tekstu w bloku skryptu. Może być kombinacją następujących wartości:  
+ podczas Flagi, które są skojarzone z atrybutami tekstu bloku skryptu. Może być kombinacją następujących wartości:  
   
 |Stała|Wartość|Opis|  
 |--------------|-----------|-----------------|  
-|GETATTRTYPE_DEPSCAN|0x0001|Określenie identyfikatorów, które mają atrybut SOURCETEXT_ATTR_IDENTIFIER i zidentyfikować kropka operatorów, które mają atrybut SOURCETEXT_ATTR_MEMBERLOOKUP.|  
-|GETATTRFLAG_THIS|0x0100|Zidentyfikuj bieżącego obiektu, który ma atrybut SOURCETEXT_ATTR_THIS.|  
-|GETATTRFLAG_HUMANTEXT|0x8000|Zidentyfikuj tekst zawartości i komentarz ciąg, który ma atrybut SOURCETEXT_ATTR_HUMANTEXT.|  
+|GETATTRTYPE_DEPSCAN|0x0001|Zidentyfikuj identyfikatory, które mają atrybut SOURCETEXT_ATTR_IDENTIFIER i Identyfikuj operatory punktów, które mają atrybut SOURCETEXT_ATTR_MEMBERLOOKUP.|  
+|GETATTRFLAG_THIS|0x0100|Zidentyfikuj bieżący obiekt, który ma atrybut SOURCETEXT_ATTR_THIS.|  
+|GETATTRFLAG_HUMANTEXT|0x8000|Zidentyfikuj zawartość ciągu i tekst komentarza, który ma atrybut SOURCETEXT_ATTR_HUMANTEXT.|  
   
  `pattr`  
- [w poziomie, size_is (`cch`)] informacji o kolorze do kodu bloku skryptu.  
+ [in, out, size_is (`cch`)] Informacje o kolorze dla kodu bloku skryptu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ @No__t_0. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -70,6 +70,6 @@ HRESULT GetScriptTextAttributes(
   
 ## <a name="remarks"></a>Uwagi  
   
-## <a name="see-also"></a>Zobacz też  
- [Interfejs IActiveScriptAuthor](../../winscript/reference/iactivescriptauthor-interface.md)   
+## <a name="see-also"></a>Zobacz także  
+ [IActiveScriptAuthor   interfejsu](../../winscript/reference/iactivescriptauthor-interface.md)  
  [SOURCE_TEXT_ATTR, wyliczenie](../../winscript/reference/source-text-attr-enumeration.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrameSnifferEx::EnumStackFramesEx | Dokumentacja firmy Microsoft
+title: 'IDebugStackFrameSnifferEx:: EnumStackFramesEx | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8969c279e4eb2c2966e297317a25a60f12be68a9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6a4062e7c0a9b3a82578daffa2ab7ef7e9ba614d
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63005722"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576707"
 ---
 # <a name="idebugstackframesnifferexenumstackframesex"></a>IDebugStackFrameSnifferEx::EnumStackFramesEx
 Zwraca moduł wyliczający ramek stosu dla bieżącego wątku.  
@@ -38,20 +38,20 @@ HRESULT EnumStackFramesEx(
   
 #### <a name="parameters"></a>Parametry  
  `dwSpMin`  
- [in] Dolny limit adres wyliczania ramki stosu.  
+ podczas Dolny limit adresów dla wyliczania ramek stosu.  
   
  `ppedsf`  
- [out] Moduł wyliczający ramek stosu dla bieżącego wątku.  
+ określoną Moduł wyliczający ramek stosu dla bieżącego wątku.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Moduł wyliczający ramek stosu zwraca ramek, począwszy od góry stosu, za pomocą najbardziej niedawno wypychanie ramki. Moduł wyliczający zawiera tylko ramek stosu adresy większe niż lub równa `dwSpMin`.  
+ Moduł wyliczający ramki stosu zwraca ramki zaczynające się na górze stosu z ostatnio wypchnięcią ramką. Moduł wyliczający zawiera tylko ramki stosu z adresami o wartości większej lub równej `dwSpMin`.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IDebugStackFrameSnifferEx, interfejs](../../winscript/reference/idebugstackframesnifferex-interface.md)

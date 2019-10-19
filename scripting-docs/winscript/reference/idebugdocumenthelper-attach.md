@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::Attach | Dokumentacja firmy Microsoft
+title: 'IDebugDocumentHelper:: Attach | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8f4fbd1686d27e594b748ca97c82c645de1b93de
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3400a5bf6cd3e4a9726fdf4b2f20bbf43b9fc989
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783138"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577033"
 ---
 # <a name="idebugdocumenthelperattach"></a>IDebugDocumentHelper::Attach
-Dodaje ten dokument w drzewie dokumentu.  
+Dodaje ten dokument do drzewa dokumentów.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,18 +37,18 @@ HRESULT Attach(
   
 #### <a name="parameters"></a>Parametry  
  `pddhParent`  
- [in] W drzewie dokumentu, gdzie ma zostać dodana w tym dokumencie. Może mieć wartości NULL.  
+ podczas Drzewo dokumentu, do którego zostanie dodany ten dokument. Może mieć wartość NULL.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Metoda ta umożliwia dodanie tego dokumentu do dokumentu drzewa, za pomocą `pddhParent` jako element nadrzędny. Jeśli `pddhParent` jest `NULL`, w tym dokumencie będzie dokumentów najwyższego poziomu.  
+ Ta metoda dodaje ten dokument do drzewa dokumentów przy użyciu `pddhParent` jako elementu nadrzędnego. Jeśli `pddhParent` jest `NULL`, dokument ten będzie dokumentem najwyższego poziomu.  
   
-## <a name="see-also"></a>Zobacz też  
- [IDebugDocumentHelper::Detach](../../winscript/reference/idebugdocumenthelper-detach.md)   
+## <a name="see-also"></a>Zobacz także  
+ [IDebugDocumentHelper::D etach](../../winscript/reference/idebugdocumenthelper-detach.md)    
  [IDebugDocumentHelper, interfejs](../../winscript/reference/idebugdocumenthelper-interface.md)

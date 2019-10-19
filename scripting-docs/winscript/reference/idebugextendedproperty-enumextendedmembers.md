@@ -1,5 +1,5 @@
 ---
-title: IDebugExtendedProperty::EnumExtendedMembers | Dokumentacja firmy Microsoft
+title: 'IDebugExtendedProperty:: EnumExtendedMembers | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c7e14d1bc8937221960d938f1bbfae8e307830f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f6fd225be9504254965eab77b912f50fb5c777e3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946148"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576389"
 ---
 # <a name="idebugextendedpropertyenumextendedmembers"></a>IDebugExtendedProperty::EnumExtendedMembers
-Wylicza członkowie właściwości rozszerzonej.  
+Wylicza elementy członkowskie właściwości rozszerzonej.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -39,18 +39,18 @@ HRESULT EnumExtendedMembers(
   
 #### <a name="parameters"></a>Parametry  
  `dwFieldSpec`  
- [in] Określa, że stałe EX_DBGPROP_INFO_FLAGS, które określają, że pola w wyliczany rozszerzony struktury właściwości debugowania mają być wypełnione.  
+ podczas Określa stałe EX_DBGPROP_INFO_FLAGS, które określają pola w wyliczeniowych strukturach właściwości rozszerzonego debugowania, które mają zostać wypełnione.  
   
  `nRadix`  
- [in] Podstawy do użycia w interpretacji wszelkie dane liczbowe.  
+ podczas Podstawy do użycia w interpretacji wszelkich informacji numerycznych.  
   
  `ppeepi`  
- [out] Zwraca `IEnumDebugExtendedPropertyInfo` interfejs, który wylicza właściwości elementu członkowskiego.  
+ określoną Zwraca interfejs `IEnumDebugExtendedPropertyInfo`, który wylicza właściwości elementu członkowskiego.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Zwraca prawidłową `HRESULT`, zazwyczaj `S_OK`.  
+ Zwraca prawidłowy `HRESULT`, zazwyczaj `S_OK`.  
   
-## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugExtendedProperty](../../winscript/reference/idebugextendedproperty-interface.md)   
- [EX_DBGPROP_INFO_FLAGS](../../winscript/reference/ex-dbgprop-info-flags.md)   
+## <a name="see-also"></a>Zobacz także  
+ [IDebugExtendedProperty   interfejsu](../../winscript/reference/idebugextendedproperty-interface.md)  
+ [EX_DBGPROP_INFO_FLAGS](../../winscript/reference/ex-dbgprop-info-flags.md)    
  [ExtendedDebugPropertyInfo, struktura](../../winscript/reference/extendeddebugpropertyinfo-structure.md)

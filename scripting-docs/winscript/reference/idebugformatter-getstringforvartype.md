@@ -1,5 +1,5 @@
 ---
-title: IDebugFormatter::GetStringForVarType | Dokumentacja firmy Microsoft
+title: 'IDebugFormatter:: GetStringForVarType | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3d83df97ac9cb6c38d989470b71da93aceb5d50b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b9b498f5b37a9fc34b0926d9c0a5601d89dde7c7
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979217"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576358"
 ---
 # <a name="idebugformattergetstringforvartype"></a>IDebugFormatter::GetStringForVarType
-Zwraca ciąg, który reprezentuje podana wartość VARTYPE.  
+Zwraca ciąg, który reprezentuje daną wartość VARTYPE.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -39,23 +39,23 @@ HRESULT GetStringForVarType(
   
 #### <a name="parameters"></a>Parametry  
  `vt`  
- [in] VARTYPE do reprezentowania jako ciąg.  
+ podczas Element VARTYPE do reprezentowania jako ciąg.  
   
  `ptdescArrayType`  
- [in] Tablica struktury, która opisuje typy.  
+ podczas Tablica struktur, które opisują typy.  
   
  `pbstr`  
- [out] Ciąg reprezentujący `vt`.  
+ określoną Ciąg reprezentujący `vt`.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Metoda zwraca ciąg reprezentujący podana wartość VARTYPE.  
+ Metoda zwraca ciąg, który reprezentuje daną wartość VARTYPE.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IDebugFormatter, interfejs](../../winscript/reference/idebugformatter-interface.md)

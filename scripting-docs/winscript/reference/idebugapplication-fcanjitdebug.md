@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::FCanJitDebug | Microsoft Docs
+title: 'IDebugApplication:: FCanJitDebug | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2d5dc03d7d2511f5b50969c062104759e78fcf03
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d68240ffd86935e9936642c09d5131f70b46e9ab
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990929"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576875"
 ---
 # <a name="idebugapplicationfcanjitdebug"></a>IDebugApplication::FCanJitDebug
-Określa, czy debuger just in time (JIT) jest zarejestrowany.  
+Określa, czy debuger just in Time (JIT) jest zarejestrowany.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,10 +37,10 @@ BOOL FCanJitDebug();
  Ta metoda nie przyjmuje żadnych parametrów.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli metoda się powiedzie, a zarejestrowany jest debugera JIT, metoda zwraca `TRUE`. W przeciwnym razie zwraca `FALSE`.  
+ Jeśli metoda zakończy się pomyślnie i zostanie zarejestrowany debuger JIT, metoda zwróci `TRUE`. W przeciwnym razie zwraca `FALSE`.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda określa, czy jest zarejestrowany debugera JIT.  
+ Ta metoda określa, czy debuger JIT jest zarejestrowany.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IDebugApplication, interfejs](../../winscript/reference/idebugapplication-interface.md)

@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8acc67aa82bb0d7cf81cf6794bfdbb4e0c912ebe
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
-ms.translationtype: HT
+ms.openlocfilehash: 4789248a129bcd41452af1184418f9f59ede7595
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314231"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72562574"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>Krok 6. Dodawanie problemu odejmowania
 W szóstej części tego samouczka dodasz problem odejmowania i dowiesz się, jak wykonywać następujące zadania:
@@ -76,7 +76,7 @@ W szóstej części tego samouczka dodasz problem odejmowania i dowiesz się, ja
      [!code-vb[VbExpressTutorial3Step5_6#14](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_4.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#14](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_4.cs)]
 
-     W wizualizacji C#`&&` jest operatorem `logical and`. W Visual Basic, odpowiednik operatora jest `AndAlso`. Te operatory wskazują, czy suma addend1 i addend2 jest równa wartości sumy NumericUpDown i jeśli odjemna minus odjemnik jest równa wartości różnicy NumericUpDown ". Metoda `CheckTheAnswer()` zwraca `true` tylko wtedy, gdy odpowiedzi na dodawanie i usuwanie problemów są poprawne.
+     W C#programie `&&` jest operatorem `logical and`. W Visual Basic, odpowiednik operatora jest `AndAlso`. Te operatory wskazują, czy suma addend1 i addend2 jest równa wartości sumy NumericUpDown i jeśli odjemna minus odjemnik jest równa wartości różnicy NumericUpDown ". Metoda `CheckTheAnswer()` zwraca `true` tylko wtedy, gdy odpowiedzi na dodawanie i usuwanie problemów są poprawne.
 
 4. Zamień ostatnią część programu obsługi zdarzeń taktu czasomierza na następujący kod, tak aby wypełniał poprawną odpowiedź, gdy skończy się czas.
 

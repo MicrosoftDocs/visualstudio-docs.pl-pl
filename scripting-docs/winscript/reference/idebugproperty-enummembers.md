@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty::EnumMembers | Dokumentacja firmy Microsoft
+title: 'IDebugProperty:: EnumMembers — | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 527bf9d3c51dad8ffe1645dc42081dc54189ad7b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5f8c5f2cbb107d55e9ffe602cb7d3492701de10c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979165"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72562421"
 ---
 # <a name="idebugpropertyenummembers"></a>IDebugProperty::EnumMembers
-Wylicza właściwości elementów członkowskich.  
+Wylicza elementy członkowskie właściwości.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -40,22 +40,22 @@ HRESULT EnumMembers (
   
 #### <a name="parameters"></a>Parametry  
  `dwFieldSpec`  
- [in] Określa `DBGPROP_INFO_FLAGS` stałych, które określają, pola, które w strukturach właściwości debugowania wyliczenia mają zostać wypełnione.  
+ podczas Określa `DBGPROP_INFO_FLAGS` stałe, które określają, które pola w strukturze właściwości debugowania mają być wypełnione.  
   
  `nRadix`  
- [in] Podstawy do użycia w interpretacji wszelkie dane liczbowe.  
+ podczas Podstawy do użycia w interpretacji wszelkich informacji numerycznych.  
   
  `refiid`  
- [in] IID jest przekazywany do filtrowania modułu wyliczającego. Identyfikator IID jest jednym z `IDebugPropertyEnumType` interfejsów, które dziedziczą z `IDebugPropertyEnumType_All`.  
+ podczas Ten identyfikator IID jest przesyłany do filtrowania modułu wyliczającego. Identyfikator IID to jeden z `IDebugPropertyEnumType` interfejsów, które dziedziczą z `IDebugPropertyEnumType_All`.  
   
  `ppEnum`  
- [out] Zwraca `IEnumDebugPropertyInfo` interfejs, który wylicza właściwości elementu członkowskiego.  
+ określoną Zwraca interfejs `IEnumDebugPropertyInfo`, który wylicza właściwości elementu członkowskiego.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Zwraca prawidłową `HRESULT`, zazwyczaj `S_OK`.  
+ Zwraca prawidłowy `HRESULT`, zazwyczaj `S_OK`.  
   
-## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugProperty](../../winscript/reference/idebugproperty-interface.md)   
- [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)   
- [Interfejs IDebugPropertyEnumType_All](../../winscript/reference/idebugpropertyenumtype-all-interface.md)   
+## <a name="see-also"></a>Zobacz także  
+ [IDebugProperty   interfejsu](../../winscript/reference/idebugproperty-interface.md)  
+ [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)    
+ [IDebugPropertyEnumType_All   interfejsu](../../winscript/reference/idebugpropertyenumtype-all-interface.md)  
  [IEnumDebugPropertyInfo, interfejs](../../winscript/reference/ienumdebugpropertyinfo-interface.md)

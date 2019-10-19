@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::InterruptScriptThread | Microsoft Docs
+title: 'IActiveScript:: InterruptScriptThread | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aa46bc95087b3defaf739cc3473c58e29a93071c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a436f973df05b945c0939f3a593640f567774277
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935511"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577264"
 ---
 # <a name="iactivescriptinterruptscriptthread"></a>IActiveScript::InterruptScriptThread
-Przerwanie wykonywania uruchomionemu wątkowi skryptu (obiekt sink zdarzenia, natychmiastowe wykonanie lub wywołanie makra). Ta metoda może służyć do zakończenia skryptu, który jest zablokowany (na przykład w pętli nieskończonej). Mogą być wywoływane z wątków-base bez skutkuje objaśnienia-base na obiektach hosta lub do [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) metody.  
+Przerywa wykonywanie działającego wątku skryptu (ujścia zdarzeń, natychmiastowe wykonywanie lub wywołanie makra). Ta metoda może służyć do kończenia działania skryptu, który jest zablokowany (na przykład w pętli nieskończonej). Może być wywoływana z wątków niebazowych bez wypełniania niepodstawowego wywołania do obiektów hosta lub metody [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) .  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -39,34 +39,34 @@ HRESULT InterruptScriptThread(
   
 #### <a name="parameters"></a>Parametry  
  `stidThread`  
- [in] Identyfikator wątku do przerwania lub jedną z następujących wartości identyfikatora wątku specjalne:  
+ podczas Identyfikator wątku do przerwania lub jedna z następujących wartości specjalnych identyfikatora wątku:  
   
 |Wartość|Znaczenie|  
 |-----------|-------------|  
-|SCRIPTTHREADID_ALL|Wszystkie wątki. Przerwanie jest stosowany do wszystkich metod skryptu w toku. Należy pamiętać, że chyba że obiekt wywołujący ma o odłączony skryptu, następne zdarzenie inicjowane przez skrypty powoduje, że kod skryptu, aby ponownie uruchomić, wywołując [IActiveScript::SetScriptState](../../winscript/reference/iactivescript-setscriptstate.md) metody z SCRIPTSTATE_DISCONNECTED lub Ustaw flagę SCRIPTSTATE_INITIALIZED.|  
-|SCRIPTTHREADID_BASE|Podstawowy wątek; oznacza to wątek, w którym skryptów aparatu została utworzona.|  
+|SCRIPTTHREADID_ALL|Wszystkie wątki. Przerwanie jest stosowane do wszystkich metod skryptów, które są obecnie w toku. Należy pamiętać, że jeśli obiekt wywołujący nie zażądał odłączenia skryptu, następne zdarzenie skryptowe powoduje ponowne uruchomienie kodu skryptu przez wywołanie metody [IActiveScript:: SetScriptState](../../winscript/reference/iactivescript-setscriptstate.md) z flagą SCRIPTSTATE_DISCONNECTED lub SCRIPTSTATE_INITIALIZED zbiór.|  
+|SCRIPTTHREADID_BASE|Wątek podstawowy; oznacza to, że wątek, w którym utworzono wystąpienie aparatu skryptów.|  
 |SCRIPTTHREADID_CURRENT|Aktualnie wykonywany wątek.|  
   
  `pexcepinfo`  
- [in] Adres `EXCEPINFO` struktury zawierającej informacje o błędzie, które powinny być raportowane do skryptu zostało przerwane.  
+ podczas Adres struktury `EXCEPINFO` zawierającej informacje o błędzie, które powinny zostać zgłoszone do przerwanego skryptu.  
   
  `dwFlags`  
- [in] Flagi opcji skojarzony czas przestoju. Może być jedną z następujących wartości:  
+ podczas Flagi opcji skojarzone z przerwaniem. Może być jedną z następujących wartości:  
   
 |Wartość|Znaczenie|  
 |-----------|-------------|  
-|SCRIPTINTERRUPT_DEBUG|Jeśli jest obsługiwany, wprowadź debuger aparatu skryptów w bieżącym punkcie Wykonywanie skryptu.|  
-|SCRIPTINTERRUPT_RAISEEXCEPTION|Jeśli jest obsługiwany przez język silnik wykonywania skryptów, niech skryptu obsłużyć wyjątek. W przeciwnym razie metoda skryptu zostało przerwane i kod błędu jest zwracany do obiektu wywołującego oznacza to, że zdarzenie źródła lub makro element wywołujący.|  
+|SCRIPTINTERRUPT_DEBUG|Jeśli jest obsługiwana, wprowadź debuger aparatu skryptów w bieżącym punkcie wykonywania skryptu.|  
+|SCRIPTINTERRUPT_RAISEEXCEPTION|Jeśli jest obsługiwana przez język aparatu skryptów, pozwól, aby skrypt obsłużył wyjątek. W przeciwnym razie Metoda skryptu jest przerywana i kod błędu jest zwracany do obiektu wywołującego; oznacza to, że źródło zdarzenia lub źródło makro.|  
   
 ## <a name="return-value"></a>Wartość zwracana  
  Zwraca jedną z następujących wartości:  
   
 |Wartość zwracana|Znaczenie|  
 |------------------|-------------|  
-|`S_OK`|Powodzenie.|  
-|`E_INVALIDARG`|Argument ten był nieprawidłowy.|  
+|`S_OK`|Prawnego.|  
+|`E_INVALIDARG`|Nieprawidłowy argument.|  
 |`E_POINTER`|Określono nieprawidłowy wskaźnik.|  
-|`E_UNEXPECTED`|Nie oczekiwano wywołania (na przykład aparat skryptów jeszcze nie został załadowany lub zainicjowany).|  
+|`E_UNEXPECTED`|Wywołanie nie było oczekiwane (na przykład aparat skryptów nie został jeszcze załadowany lub zainicjowany).|  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IActiveScript](../../winscript/reference/iactivescript.md)

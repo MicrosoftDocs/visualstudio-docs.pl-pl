@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::GetLanguageFlags | Dokumentacja firmy Microsoft
+title: 'IActiveScriptAuthor:: GetLanguageFlags | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d9f1a68db05ac0d909108ce77587ae4b071c9a2b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 68da16513050bd87642be2c96212a330a0916608
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935474"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576204"
 ---
 # <a name="iactivescriptauthorgetlanguageflags"></a>IActiveScriptAuthor::GetLanguageFlags
 Zwraca informacje o języku.  
@@ -37,25 +37,25 @@ HRESULT GetLanguageFlags(
   
 #### <a name="parameters"></a>Parametry  
  `pgrfasa`  
- [out] Flagi, które zawierają informacje o języku. Może być kombinacją następujących wartości:  
+ określoną Flagi zawierające informacje o języku. Może być kombinacją następujących wartości:  
   
 |Stała|Wartość|Opis|  
 |--------------|-----------|-----------------|  
-|fasaPreferInternalHandler|0x0001|Język preferowany Tworzenie procedury obsługi zdarzeń skryptu za pomocą skryptu tworzenia aparatu zamiast aplikacji.|  
-|fasaSupportInternalHandler|0x0002|Język obsługuje programy obsługi zdarzeń skryptu utworzone przez skrypt tworzenia aparatu.|  
-|fasaCaseSensitive|0x0004|Język skryptu jest uwzględniana wielkość liter.|  
+|fasaPreferInternalHandler|0x0001|Język preferuje Tworzenie obsługi zdarzeń skryptów przez aparat tworzenia skryptów zamiast aplikacji.|  
+|fasaSupportInternalHandler|0x0002|Język obsługuje procedury obsługi zdarzeń skryptów utworzone przez aparat tworzenia skryptów.|  
+|fasaCaseSensitive|0x0004|W języku skryptu jest rozróżniana wielkość liter.|  
   
 ## <a name="return-value"></a>Wartość zwracana  
- `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ @No__t_0. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Jeśli skrypt tworzenia aparatu zarządza procedury obsługi zdarzeń, Twoja aplikacja powinna wywołać `CreateChildHandler` z `IScriptEntry` obiektu. Spowoduje to utworzenie `IScriptScriptlet` obiekt, który odnosi się do programu obsługi zdarzeń. Aparat dodaje także procedury obsługi zdarzeń do wejścia skryptu. Procedura obsługi zdarzeń jest pusta funkcja, który zawiera informacje o określonej sygnaturze.  
+ Jeśli aparat tworzenia skryptów zarządza obsługą zdarzeń, aplikacja powinna wywołać `CreateChildHandler` z `IScriptEntry` obiektu. Spowoduje to utworzenie obiektu `IScriptScriptlet`, który odnosi się do programu obsługi zdarzeń. Aparat dodaje również procedurę obsługi zdarzeń do wpisu skryptu. Program obsługi zdarzeń jest pustą funkcją, która zawiera określone informacje o podpisie.  
   
- Jeśli aplikacja zarządza procedury obsługi zdarzeń, powinny wywoływać `CreateChildHandler` z `IScriptNode` obiekt, który reprezentuje scriptlet procedury obsługi zdarzeń. Spowoduje to utworzenie `IScriptScriptlet` obiekt, który jest skojarzony z scriptlet procedury obsługi zdarzeń. Aplikacja ma również dodać pusty funkcji jako zdarzenie obsługi na nową lub istniejącą `IScriptEntry` obiektu.  
+ Jeśli aplikacja zarządza procedurami obsługi zdarzeń, powinna wywołać `CreateChildHandler` z `IScriptNode` obiektu, który reprezentuje procedurę obsługi zdarzeń Scriptlet. Spowoduje to utworzenie obiektu `IScriptScriptlet` skojarzonego z programem obsługi zdarzeń Scriptlet. Aplikacja musi również dodać pustą funkcję jako procedurę obsługi zdarzeń do nowego lub istniejącego obiektu `IScriptEntry`.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IActiveScriptAuthor, interfejs](../../winscript/reference/iactivescriptauthor-interface.md)

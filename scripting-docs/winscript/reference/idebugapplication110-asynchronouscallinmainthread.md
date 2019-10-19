@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication110::AsynchronousCallInMainThread | Dokumentacja firmy Microsoft
+title: 'IDebugApplication110:: AsynchronousCallInMainThread | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,18 +13,18 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d1b5e52d65a5fd70c4ec7de9ced9a0175940d93f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 04c1a2962662d0046c6b9d323a287d580ee0f3e6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446401"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577389"
 ---
 # <a name="idebugapplication110asynchronouscallinmainthread"></a>IDebugApplication110::AsynchronousCallInMainThread
-Sprawia, że wywołanie asynchroniczne w wątku głównym.  
+Wykonuje asynchroniczne wywołanie dla głównego wątku.  
   
 > [!IMPORTANT]
-> [Interfejs IDebugApplication110](../../winscript/reference/idebugapplication110-interface.md) jest implementowany przez program PDM w wersji 11.0 i nowszych. Znajduje się w zestawie activdbg100.h.  
+> [Interfejs IDebugApplication110](../../winscript/reference/idebugapplication110-interface.md) jest implementowany przez PDM v 11.0 i nowsze. Znajduje się w zestawie activdbg100.h.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -34,7 +34,7 @@ HRESULT AsynchronousCallInMainThread([in] IDebugThreadCall* pptc, [in] DWORD_PTR
   
 #### <a name="parameters"></a>Parametry  
  `pptc`  
- [Interfejs IDebugThreadCall](../../winscript/reference/idebugthreadcall-interface.md) obiekt do wywołania.  
+ Obiekt [interfejsu IDebugThreadCall](../../winscript/reference/idebugthreadcall-interface.md) do wywołania.  
   
  `dwParam1`  
  Pierwszy parametr wywołania.  
@@ -48,5 +48,5 @@ HRESULT AsynchronousCallInMainThread([in] IDebugThreadCall* pptc, [in] DWORD_PTR
  `dwParam3`  
  Trzeci parametr wywołania.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IDebugApplication110, interfejs](../../winscript/reference/idebugapplication110-interface.md)

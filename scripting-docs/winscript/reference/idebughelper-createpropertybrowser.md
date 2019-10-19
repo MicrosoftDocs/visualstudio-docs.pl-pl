@@ -1,5 +1,5 @@
 ---
-title: IDebugHelper::CreatePropertyBrowser | Dokumentacja firmy Microsoft
+title: 'IDebugHelper:: CreatePropertyBrowser | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4fc1e4365deea4a3981d9cf457a2c0af37edcd43
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 99aa03470b49d02ee9f0ac1548bd1f8e27d0ab34
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979256"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72562503"
 ---
 # <a name="idebughelpercreatepropertybrowser"></a>IDebugHelper::CreatePropertyBrowser
-Zwraca przeglądarkę właściwości, która otacza wariant.  
+Zwraca przeglądarkę właściwości, która otacza ZMIENNĄ.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -40,28 +40,28 @@ HRESULT CreatePropertyBrowser(
   
 #### <a name="parameters"></a>Parametry  
  `pvar`  
- [in] Wariant głównego do przeglądania.  
+ podczas Wariant główny do przeglądania.  
   
  `bstrName`  
- [in] Nazwa do nadania katalogu głównego.  
+ podczas Nazwa, aby nadać katalogowi głównemu.  
   
  `pdat`  
- [in] Wątek, na którym należy żądać właściwości. Jeśli ten parametr ma wartość NULL, kierowania nie jest wykonywana.  
+ podczas Wątek, w którym należy zażądać właściwości. Jeśli ten parametr ma wartość NULL, kierowanie nie jest wykonywane.  
   
  `ppdob`  
- [out] Przeglądarkę właściwości.  
+ określoną Przeglądarka właściwości.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda zwraca przeglądarkę właściwości, która otacza wariant.  
+ Ta metoda zwraca przeglądarkę właściwości, która otacza ZMIENNĄ.  
   
-## <a name="see-also"></a>Zobacz też  
- [IDebugHelper::CreatePropertyBrowserEx](../../winscript/reference/idebughelper-createpropertybrowserex.md)   
- [Interfejs IDebugHelper](../../winscript/reference/idebughelper-interface.md)   
+## <a name="see-also"></a>Zobacz także  
+ [IDebugHelper:: CreatePropertyBrowserEx](../../winscript/reference/idebughelper-createpropertybrowserex.md)    
+ [IDebugHelper   interfejsu](../../winscript/reference/idebughelper-interface.md)  
  [IDebugProperty, interfejs](../../winscript/reference/idebugproperty-interface.md)

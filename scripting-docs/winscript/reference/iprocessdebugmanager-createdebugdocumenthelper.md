@@ -1,5 +1,5 @@
 ---
-title: IProcessDebugManager::CreateDebugDocumentHelper | Microsoft Docs
+title: 'IProcessDebugManager:: CreateDebugDocumentHelper | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 38de1e828ccd1715fb83cc76c06ba837818d2af0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a009fa5174ab897116c02b91e376e2dc41d67600
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002360"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577095"
 ---
 # <a name="iprocessdebugmanagercreatedebugdocumenthelper"></a>IProcessDebugManager::CreateDebugDocumentHelper
-Tworzy nowy Pomocnik dokumentu debugowania dla tej aplikacji.  
+Tworzy nowego pomocnika dokumentu debugowania dla tej aplikacji.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -38,20 +38,20 @@ HRESULT CreateDebugDocumentHelper(
   
 #### <a name="parameters"></a>Parametry  
  `punkOuter`  
- [in] Jeśli zwracany obiekt jest zagregowany, `punkOuter` jest wskaźnik interfejsu do sterowania `IUnknown`. W przeciwnym razie jest wskaźnikiem wartości null.  
+ podczas Jeśli zwracany obiekt ma być zagregowany, `punkOuter` jest wskaźnikiem interfejsu do kontrolki `IUnknown`. W przeciwnym razie jest wskaźnikiem o wartości null.  
   
  `pddh`  
- [out] Obiekt pomocnika dokumentu debugowania dla tej aplikacji.  
+ określoną Obiekt pomocnika dokumentu debugowania dla tej aplikacji.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda tworzy nowy Pomocnik dokumentu debugowania dla tej aplikacji.  
+ Ta metoda umożliwia utworzenie nowego pomocnika dokumentu debugowania dla tej aplikacji.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IProcessDebugManager, interfejs](../../winscript/reference/iprocessdebugmanager-interface.md)

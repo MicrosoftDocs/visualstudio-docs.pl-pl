@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationEvents::OnClose | Microsoft Docs
+title: 'IRemoteDebugApplicationEvents:: OnClose | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 33f394309c50488a08ff6f345e4720d866d5a0ec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: add58ebf0caabc8125bad3e30b0f1717c9776e8a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62943817"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72561528"
 ---
 # <a name="iremotedebugapplicationeventsonclose"></a>IRemoteDebugApplicationEvents::OnClose
 Obsługuje zdarzenie zamknięcia aplikacji.  
@@ -37,7 +37,7 @@ HRESULT OnClose();
  Ta metoda nie przyjmuje żadnych parametrów.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -46,5 +46,5 @@ HRESULT OnClose();
 ## <a name="remarks"></a>Uwagi  
  Ta metoda obsługuje zdarzenie zamknięcia aplikacji.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IRemoteDebugApplicationEvents, interfejs](../../winscript/reference/iremotedebugapplicationevents-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame::GetLanguageString | Dokumentacja firmy Microsoft
+title: 'IDebugStackFrame:: GetLanguageString | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cab0c0ab317754305ca2440748dd680e31750d8a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 83abb038cd8bc018d84cd0c5ddd2a413f8a02248
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934667"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576757"
 ---
 # <a name="idebugstackframegetlanguagestring"></a>IDebugStackFrame::GetLanguageString
-Zwraca krótki lub długo tekstowe Opis języka.  
+Zwraca krótki lub długi tekstowy opis języka.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -38,20 +38,20 @@ HRESULT GetLanguageString(
   
 #### <a name="parameters"></a>Parametry  
  `fLong`  
- [in] Flaga, gdzie `TRUE` zwraca długi opis i `FALSE` zwraca krótki opis.  
+ podczas Flaga, gdzie `TRUE` zwraca długi opis i `FALSE` zwraca Krótki opis.  
   
  `pbstrLanguage`  
- [out] Opis języka.  
+ określoną Opis języka.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Zazwyczaj Jeśli `fLong` jest `FALSE`, ta metoda zapewnia tylko nazwę języka skojarzone z ramki stosu. Gdy `fLong` jest `TRUE`, ta metoda może dostarczyć opis pełnej wersji produktu.  
+ Zazwyczaj jeśli `fLong` jest `FALSE`, ta metoda zawiera tylko nazwę języka skojarzonego z ramką stosu. Gdy `fLong` jest `TRUE`, ta metoda może dostarczyć pełny opis produktu.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IDebugStackFrame, interfejs](../../winscript/reference/idebugstackframe-interface.md)

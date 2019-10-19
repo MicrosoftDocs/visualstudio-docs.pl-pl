@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication::QueryAlive | Dokumentacja firmy Microsoft
+title: 'IRemoteDebugApplication:: QueryAlive | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: db17bd017b2fc1e1ca52ba8801eb1d197c4b3de7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3edc4fc007a2372c429b0bbece394cb1c30a2770
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944194"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577474"
 ---
 # <a name="iremotedebugapplicationqueryalive"></a>IRemoteDebugApplication::QueryAlive
-Wskazuje, czy aplikacja jest elastyczny.  
+Wskazuje, czy aplikacja jest odpowiedzią.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,16 +37,16 @@ HRESULT QueryAlive();
  Ta metoda nie przyjmuje żadnych parametrów.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda wskazuje, czy aplikacja jest elastyczny. Implementacje tej metody zawsze powinna zwrócić `S_OK`.  
+ Ta metoda wskazuje, czy aplikacja odpowiada. Implementacje tej metody powinny zawsze zwracać `S_OK`.  
   
- Jeśli proces aplikacji zostaje nieoczekiwanie zamknięty, COM zwraca błąd z serwera proxy kierujące do wywołania tej metody.  
+ Jeśli proces aplikacji nieoczekiwanie zakończy działanie, COM zwróci błąd z organizatora serwera proxy dla wywołań tej metody.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IRemoteDebugApplication, interfejs](../../winscript/reference/iremotedebugapplication-interface.md)

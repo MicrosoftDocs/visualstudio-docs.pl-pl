@@ -1,5 +1,5 @@
 ---
-title: IPerPropertyBrowsing2::MapPropertyToPage | Dokumentacja firmy Microsoft
+title: 'IPerPropertyBrowsing2:: MapPropertyToPage | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 77270bbe963f281a43a085cb7d15724b7b2ec14e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e9e3f821d9e02be567f970d8db1c238ee5cebd29
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944831"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577117"
 ---
 # <a name="iperpropertybrowsing2mappropertytopage"></a>IPerPropertyBrowsing2::MapPropertyToPage
-Zwraca identyfikator CLSID strony właściwości, które można edytować tej właściwości.  
+Zwraca identyfikator CLSID strony właściwości, za pomocą którego można edytować tę właściwość.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -38,13 +38,13 @@ HRESULT MapPropertyToPage(
   
 #### <a name="parameters"></a>Parametry  
  `dispid`  
- [in] Wyślij identyfikator właściwości zainteresowania.  
+ podczas Identyfikator wysyłania właściwości zainteresowania.  
   
  `pClsidPropPage`  
- [out] Wskaźnik do CLSID identyfikowanie na stronie właściwości skojarzony z właściwością. Jeśli ta metoda nie powiedzie się, *`pClsidPropPage` jest ustawiona na CLSID_NULL.  
+ określoną Wskaźnik do identyfikatora CLSID identyfikującego stronę właściwości skojarzoną z właściwością. Jeśli ta metoda zakończy się niepowodzeniem, * `pClsidPropPage` jest ustawiona na CLSID_NULL.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Zwraca prawidłową `HRESULT`, zazwyczaj `S_OK`.  
+ Zwraca prawidłowy `HRESULT`, zazwyczaj `S_OK`.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IPerPropertyBrowsing2, interfejs 1](../../winscript/reference/iperpropertybrowsing2-interface-1.md)

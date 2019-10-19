@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 71941b545a1059024ee6812ae64a15b08b8c4198
-ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
-ms.translationtype: HT
+ms.openlocfilehash: 97352f60bfc40df28876731ec1e8aee1bff1773c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72516642"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576281"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>Krok 2. Dodawanie losowego obiektu i listy ikon
 
@@ -40,7 +40,7 @@ W tym kroku utworzysz zestaw pasujących symboli dla gry. Każdy symbol jest dod
 
       Jeśli używasz programu C#, upewnij się, że kod został umieszczony po otwierającym nawiasie klamrowym i tuż po deklaracji klasy (`public partial class Form1 : Form`). Jeśli używasz Visual Basic, umieść kod bezpośrednio po deklaracji klasy (`Public Class Form1`).
 
-3. Podczas dodawania obiektu list należy zauważyć, że zostanie otwarte okno **IntelliSense** . Poniżej przedstawiono przykład Visual C#, ale podobny tekst jest wyświetlany po dodaniu listy w Visual Basic.
+3. Podczas dodawania obiektu list należy zauważyć, że zostanie otwarte okno **IntelliSense** . Poniżej znajduje się C# przykład, ale podobny tekst pojawia się po dodaniu listy w Visual Basic.
 
      okno ![Properties pokazujące zdarzenie kliknięcia ](../ide/media/express_listintellisense.png)<br/>*Okno **IntelliSense***
 
@@ -49,9 +49,9 @@ W tym kroku utworzysz zestaw pasujących symboli dla gry. Każdy symbol jest dod
 
      Jeśli spojrzysz na kod (i uwagi) w krótkich sekcjach, jest bardziej zrozumiały. Programy mogą używać obiektów list, aby śledzić wiele różnych typów elementów. Lista może zawierać liczby, wartości true/false, tekst lub inne obiekty. Można nawet mieć obiekt listy, który zawiera inne obiekty list. Elementy na liście są nazywane elementami, a każda lista zawiera tylko jeden typ elementu. Tak więc, lista liczb może zawierać tylko liczby — nie można dodać tekstu do tej listy. Podobnie nie można dodać liczb do listy wartości true/false.
 
-     Podczas tworzenia obiektu `List` przy użyciu instrukcji `new` należy określić rodzaj danych, które mają być w niej przechowywane. Dlatego etykietka narzędzia w górnej części okna **IntelliSense** pokazuje typy elementów na liście. Ponadto to `List<string>` (w wizualizacji C#) i `List(Of String)` (w Visual Basic) oznacza: jest to obiekt `List`, który zawiera elementy `string` typu danych. Ciąg jest używany przez program do przechowywania tekstu, co oznacza, że po prawej stronie okna **IntelliSense** jest wyświetlana etykietka narzędzia.
+     Podczas tworzenia obiektu `List` przy użyciu instrukcji `new` należy określić rodzaj danych, które mają być w niej przechowywane. Dlatego etykietka narzędzia w górnej części okna **IntelliSense** pokazuje typy elementów na liście. Ponadto to `List<string>` (in C#) i `List(Of String)` (w Visual Basic) oznacza: jest to obiekt `List`, który zawiera elementy `string` typu danych. Ciąg jest używany przez program do przechowywania tekstu, co oznacza, że po prawej stronie okna **IntelliSense** jest wyświetlana etykietka narzędzia.
 
-4. Zastanów się, dlaczego w Visual Basic należy najpierw utworzyć tablicę tymczasową, a w Visual C# lista może być utworzona za pomocą jednej instrukcji. Wynika to z faktu C# , że język wizualizacji ma *Inicjatory kolekcji*, przygotowując listę do akceptowania wartości. W Visual Basic można używać inicjatora kolekcji. Jednak ze względu na zgodność z poprzednią wersją Visual Basic, zalecamy używanie poprzedniego kodu.
+4. Rozważmy, dlaczego w Visual Basic należy najpierw utworzyć tablicę tymczasową, C#ale w programie można utworzyć listę z jedną instrukcją. Wynika to z C# faktu, że język ma *Inicjatory kolekcji*, przygotowując listę do akceptowania wartości. W Visual Basic można używać inicjatora kolekcji. Jednak ze względu na zgodność z poprzednią wersją Visual Basic, zalecamy używanie poprzedniego kodu.
 
      Gdy używasz inicjatora kolekcji z instrukcją `new` po utworzeniu nowego obiektu list, program wypełnia go danymi dostarczonymi wewnątrz nawiasów klamrowych. W tym przypadku otrzymujesz listę ciągów o nazwanych ikonach, a ta lista zostanie zainicjowana tak, aby zawierała szesnaste ciągi. Każdy z tych ciągów jest pojedynczą literą, a odpowiadają one wszystkim ikonom, które będą w etykietach. Tak więc gra będzie miała parę wykrzykników, parę wielkich liter N, parę przecinków itd. (Gdy te znaki są ustawione na czcionkę Webdings, będą wyświetlane jako symbole, takie jak magistrala, rower, Pająk itd.) Obiekt listy będzie zawierać szesnaste ciągi, po jednym dla każdej komórki w panelu TableLayoutPanel.
 

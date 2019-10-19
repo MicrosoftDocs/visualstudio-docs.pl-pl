@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication::EnumGlobalExpressionContexts | Microsoft Docs
+title: 'IRemoteDebugApplication:: EnumGlobalExpressionContexts | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 92ab12dc9944c328e744c7f39252facb8e91a3f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 594dc2c09a76cd6027a9abcb38b5951768cceef9
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944271"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576827"
 ---
 # <a name="iremotedebugapplicationenumglobalexpressioncontexts"></a>IRemoteDebugApplication::EnumGlobalExpressionContexts
-Wylicza kontekstów wyrażenie globalne dla wszystkich języków, działające w tej aplikacji.  
+Wylicza kontekst wyrażenia globalnego dla wszystkich języków uruchomionych w tej aplikacji.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,17 +37,17 @@ HRESULT EnumGlobalExpressionContexts(
   
 #### <a name="parameters"></a>Parametry  
  `ppedec`  
- [out] W przypadku moduł wyliczający, który wyświetla kontekstów wyrażenie globalne dla wszystkich języków, działające w tej aplikacji.  
+ określoną Moduł wyliczający, który wyświetla listę kontekstów wyrażenia globalnego dla wszystkich języków uruchomionych w tej aplikacji.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda ta zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda wylicza kontekstów wyrażenie globalne dla wszystkich języków, działające w tej aplikacji.  
+ Ta metoda wylicza kontekst wyrażeń globalnych dla wszystkich języków uruchomionych w tej aplikacji.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [IRemoteDebugApplication, interfejs](../../winscript/reference/iremotedebugapplication-interface.md)

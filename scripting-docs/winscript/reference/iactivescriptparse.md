@@ -13,23 +13,23 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a987b4be3430f2ed8b0562f41b51a94797f96dc4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 81f64352c15dce233058d49b70e35da7e2238688
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63009341"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72561638"
 ---
 # <a name="iactivescriptparse"></a>IActiveScriptParse
-Jeśli skrypt Windows aparat pozwala nieprzetworzony tekst skryptlety kodu do dodania do skryptu lub zezwala na tekst wyrażenie oceniane w czasie wykonywania, implementuje `IActiveScriptParse` interfejsu. Dla interpretowanych języków skryptów, które mają nie niezależnych środowisko tworzenia, np. VBScript, zapewnia to alternatywny mechanizm (inne niż `IPersist*`) pobierać kod skryptu do silnika wykonywania skryptów i Dołącz fragmenty skryptu do różnych obiektów zdarzenia.  
+Jeśli aparat skryptów systemu Windows umożliwia dodanie do skryptu niesformatowanego kodu tekstu skryptlety lub zezwala na ocenę tekstu wyrażenia w czasie wykonywania, implementuje interfejs `IActiveScriptParse`. W przypadku interpretowanych języków skryptów, które nie mają niezależnego środowiska autorskiego, takiego jak VBScript, zapewnia on alternatywny mechanizm (inny niż `IPersist*`), aby uzyskać kod skryptu do aparatu skryptów i dołączyć fragmenty skryptów do różnych zdarzeń obiektów .  
   
-## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych  
   
 |Metoda|Opis|  
 |------------|-----------------|  
 |[IActiveScriptParse::InitNew](../../winscript/reference/iactivescriptparse-initnew.md)|Inicjuje aparat skryptów.|  
-|[IActiveScriptParse::AddScriptlet](../../winscript/reference/iactivescriptparse-addscriptlet.md)|Dodaje skryptletu kodu do skryptu.|  
-|[IActiveScriptParse::ParseScriptText](../../winscript/reference/iactivescriptparse-parsescripttext.md)|Analizuje danego skryptletu kodu, dodając deklaracje do przestrzeni nazw i oceniając kod, zgodnie z potrzebami.|  
+|[IActiveScriptParse::AddScriptlet](../../winscript/reference/iactivescriptparse-addscriptlet.md)|Dodaje kod Scriptlet do skryptu.|  
+|[IActiveScriptParse::ParseScriptText](../../winscript/reference/iactivescriptparse-parsescripttext.md)|Analizuje daną Scriptlet kodu, dodając deklaracje do przestrzeni nazw i oceniając kod zgodnie z potrzebami.|  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Interfejsy aktywnego skryptu](../../winscript/reference/active-script-interfaces.md)
