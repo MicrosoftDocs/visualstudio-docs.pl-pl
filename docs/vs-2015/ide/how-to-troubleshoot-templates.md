@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Rozwiązywanie problemów z szablonami | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Rozwiązywanie problemów z szablonami | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -8,61 +8,59 @@ helpviewer_keywords:
 - Visual Studio templates, troubleshooting
 ms.assetid: 3e577ad2-f725-4c11-93b3-477f2404ec81
 caps.latest.revision: 13
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 246ce82eef63559060c9c4ea4daabd3ae1e5a284
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: acee84f582f2d6b8e2905e50db352cde794b73e7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435121"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670610"
 ---
-# <a name="how-to-troubleshoot-templates"></a>Instrukcje: Rozwiązywanie problemów z szablonami
+# <a name="how-to-troubleshoot-templates"></a>Porady: rozwiązywanie problemów z szablonami
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Jeśli szablon nie są ładowane w środowisku deweloperskim, istnieją zlokalizowania problemu na kilka sposobów.  
-  
-## <a name="validating-the-vstemplate-file"></a>Sprawdzanie poprawności pliku .vstemplate  
- Jeśli plik .vstemplate w szablonie nie pasuje do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] schemat szablonu, szablon nie może występować w **nowy projekt** okno dialogowe.  
-  
-#### <a name="to-validate-the-vstemplate-file"></a>Aby sprawdzić poprawność pliku .vstemplate  
-  
-1. Zlokalizuj plik .zip zawierający szablon.  
-  
-2. Wyodrębnij plik zip.  
-  
-3. Na **pliku** menu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], kliknij przycisk **Otwórz**, a następnie kliknij przycisk **pliku**.  
-  
-4. Wybierz plik .vstemplate szablonu, a następnie kliknij przycisk **Otwórz**.  
-  
-5. Sprawdź, czy kod XML w pliku .vstemplate działa zgodnie z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] schemat szablonu. Aby uzyskać więcej informacji na temat schematu .vstemplate, zobacz [odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md).  
-  
+Jeśli szablon nie zostanie załadowany w środowisku deweloperskim, istnieje kilka sposobów zlokalizowania problemu.
+
+## <a name="validating-the-vstemplate-file"></a>Weryfikowanie pliku. vstemplate
+ Jeśli plik. vstemplate w szablonie nie jest zgodny ze schematem szablonu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], szablon może nie pojawić się w oknie dialogowym **Nowy projekt** .
+
+#### <a name="to-validate-the-vstemplate-file"></a>Aby sprawdzić poprawność pliku. vstemplate
+
+1. Znajdź plik zip, który zawiera szablon.
+
+2. Wyodrębnij plik zip.
+
+3. W menu **plik** w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] kliknij pozycję **Otwórz**, a następnie kliknij pozycję **plik**.
+
+4. Wybierz plik vstemplate szablonu, a następnie kliknij przycisk **Otwórz**.
+
+5. Sprawdź, czy plik XML pliku. vstemplate jest zgodny ze schematem szablonu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Aby uzyskać więcej informacji na temat schematu. vstemplate, zobacz [Dokumentacja schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md).
+
     > [!NOTE]
-    > Aby uzyskać obsługę technologii IntelliSense podczas tworzenia pliku .vstemplate, Dodaj `xmlns` atrybutu `VSTemplate` elementu i przypisz jej wartość http://schemas.microsoft.com/developer/vstemplate/2005.  
-  
-6. Zapisz i zamknij plik .vstemplate.  
-  
-7. Wybierz pliki zawarte w szablonie, kliknij prawym przyciskiem myszy, wybierz opcję **Wyślij do**i kliknij przycisk **skompresowany Folder (zip)**. Wybrane pliki są kompresowane w pliku zip.  
-  
-8. W tym samym katalogu co stary plik zip, należy umieścić nowy plik zip.  
-  
-9. Usuń pliki szablonów wyodrębniony i stary plik zip szablonu.  
-  
-## <a name="monitoring-the-event-log"></a>Monitorowanie dziennika zdarzeń  
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dzienniki błędów napotkanych podczas przetwarzania plików zip szablonu. Jeśli szablon nie jest wyświetlany w **nowy projekt** okno dialogowe jako oczekiwana, możesz użyć **Podgląd zdarzeń** Aby rozwiązać ten problem.  
-  
-#### <a name="to-locate-template-errors-in-event-viewer"></a>Aby znaleźć błędy szablonu w Podglądzie zdarzeń  
-  
-1. W Windows, kliknij przycisk **Start**, kliknij przycisk **Panelu sterowania**, kliknij dwukrotnie **narzędzia administracyjne**, a następnie kliknij dwukrotnie **Podgląd zdarzeń**.  
-  
-2. W okienku po lewej stronie kliknij **aplikacji**.  
-  
-3. Wyszukaj zdarzenia z **źródła** wartość `Visual Studio - VsTemplate`.  
-  
-4. Kliknij dwukrotnie zdarzenie szablonu, aby wyświetlić błąd.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Dostosowywanie szablonów](../ide/customizing-project-and-item-templates.md)   
- [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)   
- [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+    > Aby uzyskać pomoc techniczną IntelliSense podczas tworzenia pliku. vstemplate, należy dodać atrybut `xmlns` do elementu `VSTemplate` i przypisać go do wartości http://schemas.microsoft.com/developer/vstemplate/2005.
+
+6. Zapisz i zamknij plik. vstemplate.
+
+7. Wybierz pliki dołączone do szablonu, kliknij prawym przyciskiem myszy, wybierz polecenie **Wyślij do**, a następnie kliknij **folder skompresowany (zip)** . Wybrane pliki są kompresowane do pliku zip.
+
+8. Umieść nowy plik zip w tym samym katalogu, w którym znajduje się stary plik. zip.
+
+9. Usuń wyodrębnione pliki szablonów i stary plik Template. zip.
+
+## <a name="monitoring-the-event-log"></a>Monitorowanie dziennika zdarzeń
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dzienniki błędów podczas przetwarzania plików Template. zip. Jeśli szablon nie jest wyświetlany w oknie dialogowym **Nowy projekt** w oczekiwany sposób, można użyć **Podgląd zdarzeń** , aby rozwiązać problem.
+
+#### <a name="to-locate-template-errors-in-event-viewer"></a>Aby zlokalizować błędy szablonów w Podgląd zdarzeń
+
+1. W systemie Windows kliknij przycisk **Start**, kliknij przycisk **Panel sterowania**, kliknij dwukrotnie przycisk **Narzędzia administracyjne**, a następnie kliknij dwukrotnie przycisk **Podgląd zdarzeń**.
+
+2. W lewym okienku kliknij pozycję **aplikacja**.
+
+3. Wyszukaj zdarzenia z wartością **źródłową** `Visual Studio - VsTemplate`.
+
+4. Kliknij dwukrotnie zdarzenie szablonu, aby wyświetlić błąd.
+
+## <a name="see-also"></a>Zobacz też
+ [Dostosowywanie szablonów](../ide/customizing-project-and-item-templates.md) [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md) [szablon programu Visual Studio — odwołanie do schematu](../extensibility/visual-studio-template-schema-reference.md)

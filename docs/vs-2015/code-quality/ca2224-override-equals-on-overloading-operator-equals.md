@@ -1,5 +1,5 @@
 ---
-title: 'CA2224: Przesłoń metodę equals, przeciążając operator equals | Dokumentacja firmy Microsoft'
+title: 'CA2224: Zastąp wartość Equals w przypadku przeciążania operatora Equals | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -13,89 +13,89 @@ helpviewer_keywords:
 - CA2224
 ms.assetid: 7312afd9-84ba-417f-923e-7a159b53bf70
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: b4c16ed5858f18456af59c4cc26f2e0d56e6006a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d35052bb2a1efb1a466ffc67c95c83e5b3a76533
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68142466"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72671875"
 ---
-# <a name="ca2224-override-equals-on-overloading-operator-equals"></a>CA2224: Przesłaniaj metodę equals w przypadku przeciążania operatora równości
+# <a name="ca2224-override-equals-on-overloading-operator-equals"></a>CA2224: Przesłoń metodę equals, przeciążając operator equals
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|OverrideEqualsOnOverloadingOperatorEquals|
 |CheckId|CA2224|
-|Kategoria|Microsoft.Usage|
-|Zmiana kluczowa|Bez podziału|
+|Kategoria|Microsoft. Usage|
+|Zmiana kluczowa|Bez przerywania|
 
 ## <a name="cause"></a>Przyczyna
  Typ publiczny implementuje operator równości, ale nie przesłania <xref:System.Object.Equals%2A?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Opis reguły
- Operator równości ma być syntaktycznie wygodny sposób uzyskać dostęp do funkcji <xref:System.Object.Equals%2A> metody. W przypadku zastosowania operatora równości swojej logiki musi być taka sama jak w przypadku <xref:System.Object.Equals%2A>.
+ Operator równości jest przeznaczony do składniowo wygodny sposób uzyskiwania dostępu do funkcjonalności metody <xref:System.Object.Equals%2A>. W przypadku zaimplementowania operatora równości jego logika musi być taka sama jak wartość <xref:System.Object.Equals%2A>.
 
- Kompilator języka C# generuje ostrzeżenie, jeśli kod narusza tę regułę.
+ C# Kompilator generuje ostrzeżenie, jeśli kod narusza tę regułę.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, należy albo usuń implementacja operatora równości lub zastąpić <xref:System.Object.Equals%2A> i mieć dwie metody zwracają takie same wartości. Operator równości nie wprowadza niespójne zachowanie, można naprawić naruszenia, zapewniając implementację <xref:System.Object.Equals%2A> wywołująca <xref:System.Object.Equals%2A> metody w klasie bazowej.
+ Aby naprawić naruszenie tej zasady, należy usunąć implementację operatora równości lub przesłonić <xref:System.Object.Equals%2A> i mieć dwie metody zwracają te same wartości. Jeśli operator równości nie wprowadza niespójnych zachowań, można naprawić naruszenie, dostarczając implementację <xref:System.Object.Equals%2A>, która wywołuje metodę <xref:System.Object.Equals%2A> w klasie bazowej.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Bezpiecznie Pomijaj ostrzeżeń dla tej reguły, jeśli operatora równości zwraca taką samą wartość jak dziedziczona implementacja <xref:System.Object.Equals%2A>. Sekcja przykład zawiera typ, który można bezpiecznie Pomijaj ostrzeżeń dla tej reguły.
+ Jeśli operator równości zwraca tę samą wartość, co dziedziczona implementacja <xref:System.Object.Equals%2A>, bezpiecznie jest pomijać ostrzeżenie z tej reguły. Przykładowa sekcja zawiera typ, który może bezpiecznie pominąć ostrzeżenie z tej reguły.
 
-## <a name="examples-of-inconsistent-equality-definitions"></a>Przykłady definicje niespójne równości
+## <a name="examples-of-inconsistent-equality-definitions"></a>Przykłady niespójnych definicji równości
 
 ### <a name="description"></a>Opis
- Poniższy przykład pokazuje typ z definicjami niespójne równości. `BadPoint` zmienia znaczenie równości, zapewniając implementację niestandardową operatora równości, lecz nie przesłania <xref:System.Object.Equals%2A> tak, aby zachowuje się tak samo.
+ W poniższym przykładzie przedstawiono typ z niespójnymi definicjami równości. `BadPoint` zmienia znaczenie, dostarczając niestandardową implementację operatora równości, ale nie przesłania <xref:System.Object.Equals%2A> tak, aby zachowywały się identycznie.
 
 ### <a name="code"></a>Kod
  [!code-csharp[FxCop.Usage.OperatorEqualsRequiresEquals#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OperatorEqualsRequiresEquals/cs/FxCop.Usage.OperatorEqualsRequiresEquals.cs#1)]
 
 ## <a name="example"></a>Przykład
- Poniższy kod sprawdza zachowanie `BadPoint`.
+ Poniższy kod testuje zachowanie `BadPoint`.
 
  [!code-csharp[FxCop.Usage.TestOperatorEqualsRequiresEquals#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.TestOperatorEqualsRequiresEquals/cs/FxCop.Usage.TestOperatorEqualsRequiresEquals.cs#1)]
 
  Ten przykład generuje następujące dane wyjściowe.
 
- **= (1,1 [0]) i b = (2,2 [1]) są takie same? Nie**
- **== b? Nie**
-**a1 i są równe? Tak**
-**a1 ==? Tak**
-**b i bcopy są takie same? Nie**
-**b == bcopy? Tak**
+ **a = ([0] 1, 1) i b = ([1] 2, 2) są równe? Nie** 
+**a = = b? Nie** 
+**a1 i a są równe? Tak** 
+**a1 = = a? Tak** 
+**b i bCopy są równe? Nie** 
+**b = = bCopy? Tak**
 ## <a name="example"></a>Przykład
- Poniższy przykład pokazuje typ, który z technicznego punktu widzenia narusza tę regułę, ale nie zachowywać się w sposób niezgodny.
+ Poniższy przykład pokazuje typ, który technicznie narusza tę regułę, ale nie działa w sposób niespójny.
 
  [!code-csharp[FxCop.Usage.ValueTypeEquals#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.ValueTypeEquals/cs/FxCop.Usage.ValueTypeEquals.cs#1)]
 
 ## <a name="example"></a>Przykład
- Poniższy kod sprawdza zachowanie `GoodPoint`.
+ Poniższy kod testuje zachowanie `GoodPoint`.
 
  [!code-csharp[FxCop.Usage.TestValueTypeEquals#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.TestValueTypeEquals/cs/FxCop.Usage.TestValueTypeEquals.cs#1)]
 
  Ten przykład generuje następujące dane wyjściowe.
 
- **= (1,1) a, b = (2,2) są takie same? Nie**
- **== b? Nie**
-**a1 i są równe? Tak**
-**a1 ==? Tak**
-**b i bcopy są takie same? Tak**
-**b == bcopy? Tak**
+ **a = (1, 1) i b = (2, 2) są równe? Nie** 
+**a = = b? Nie** 
+**a1 i a są równe? Tak** 
+**a1 = = a? Tak** 
+**b i bCopy są równe? Tak** 
+**b = = bCopy? Tak**
 ## <a name="class-example"></a>Przykład klasy
 
 ### <a name="description"></a>Opis
- Poniższy przykład przedstawia klasę (typ odwołania), która narusza tę regułę.
+ Poniższy przykład pokazuje klasę (typ referencyjny), która narusza tę regułę.
 
 ### <a name="code"></a>Kod
  [!code-csharp[FxCop.Usage.OverrideEqualsClassViolation#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OverrideEqualsClassViolation/cs/FxCop.Usage.OverrideEqualsClassViolation.cs#1)]
 
 ## <a name="example"></a>Przykład
- Poniższy przykład naprawia naruszenia przez zastąpienie <xref:System.Object.Equals%2A?displayProperty=fullName>.
+ Poniższy przykład naprawia naruszenie, zastępując <xref:System.Object.Equals%2A?displayProperty=fullName>.
 
  [!code-csharp[FxCop.Usage.OverrideEqualsClassFixed#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OverrideEqualsClassFixed/cs/FxCop.Usage.OverrideEqualsClassFixed.cs#1)]
 
@@ -108,17 +108,17 @@ ms.locfileid: "68142466"
  [!code-csharp[FxCop.Usage.OverrideEqualsStructViolation#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OverrideEqualsStructViolation/cs/FxCop.Usage.OverrideEqualsStructViolation.cs#1)]
 
 ## <a name="example"></a>Przykład
- Poniższy przykład naprawia naruszenia przez zastąpienie <xref:System.ValueType.Equals%2A?displayProperty=fullName>.
+ Poniższy przykład naprawia naruszenie, zastępując <xref:System.ValueType.Equals%2A?displayProperty=fullName>.
 
  [!code-csharp[FxCop.Usage.OverrideEqualsStructFixed#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OverrideEqualsStructFixed/cs/FxCop.Usage.OverrideEqualsStructFixed.cs#1)]
 
 ## <a name="related-rules"></a>Powiązane reguły
  [CA1046: Nie przeciążaj operatora równości w typach referencyjnych](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
 
- [CA2225: Operator overloads ma nazwanych zastępców](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
+ [CA2225: Przeciążenia operatora mają nazwane alternatywy](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
 
  [CA2226: Operatory powinny mieć symetryczne przeciążenia](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
 
- [CA2218: Przesłaniaj metodę GetHashCode w przesłaniania metody Equals](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
+ [CA2218: Przesłoń metodę GetHashCode przy przesłanianiu metody Equals](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
 
  [CA2231: Przeciążaj operator równości w przypadku przesłaniania metody ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)

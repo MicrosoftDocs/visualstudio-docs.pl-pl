@@ -1,5 +1,5 @@
 ---
-title: Omówienie platformy kompilacji | Dokumentacja firmy Microsoft
+title: Informacje na temat platform kompilacji | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,29 +14,25 @@ helpviewer_keywords:
 - build platforms [Visual Studio]
 ms.assetid: c1e5da1b-cda1-4545-b46c-0440fba27485
 caps.latest.revision: 10
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2f39bc76329ec891a6e239f7cd2ad816eea1979e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 191db7fa1079ef971e6e00a5f2618a6720b93e23
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68193358"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672688"
 ---
 # <a name="understanding-build-platforms"></a>Ogólne informacje o platformach kompilacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Można przechowywać różne wersje właściwości rozwiązania i projektu, które są stosowane do różnych platform. Na przykład można utworzyć konfiguracji debugowania, który jest przeznaczony dla x86 platformy i konfiguracji debugowania, który jest przeznaczony dla x64 platformy. Można szybko zmienić aktywnej platformy, dzięki czemu możesz łatwo tworzyć wielu konfiguracji.  
-  
-## <a name="in-this-section"></a>W tej sekcji  
- [Instrukcje: Konfigurowanie projektów pod kątem platform docelowych](../ide/how-to-configure-projects-to-target-platforms.md)  
- Wyjaśnia, jak skonfigurować projekt pod kątem określonej platformy.  
-  
- [Instrukcje: Konfigurowanie projektów pod kątem wielu platform docelowych](../ide/how-to-configure-projects-to-target-multiple-platforms.md)  
- Wyjaśnia, jak skonfigurować projekt pod kątem wielu platform docelowych.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Przewodnik: Tworzenie aplikacji](../ide/walkthrough-building-an-application.md)   
- [Kompilowanie oraz Oczyszczanie projektów i rozwiązań w programie Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
- [Kompilowanie i tworzenie](../ide/compiling-and-building-in-visual-studio.md)
+Można przechowywać różne wersje rozwiązań i właściwości projektu, które mają zastosowanie do różnych platform docelowych. Można na przykład utworzyć konfigurację debugowania, która jest przeznaczona dla platformy x86 i konfigurację debugowania, która jest przeznaczona dla platformy x64. Możesz szybko zmienić aktywną platformę, tak aby można było łatwo utworzyć wiele konfiguracji.
+
+## <a name="in-this-section"></a>W tej sekcji
+ [Instrukcje: Konfigurowanie projektów na platformach docelowych](../ide/how-to-configure-projects-to-target-platforms.md) Wyjaśnia, jak skonfigurować projekt jako docelowy określonej platformy.
+
+ [Instrukcje: Konfigurowanie projektów pod kątem wielu platform docelowych](../ide/how-to-configure-projects-to-target-multiple-platforms.md) Wyjaśniono, jak skonfigurować projekt przeznaczony do użycia na wielu platformach.
+
+## <a name="see-also"></a>Zobacz też
+ [Przewodnik: Tworzenie](../ide/walkthrough-building-an-application.md) [i czyszczenie projektów oraz rozwiązań w programie Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md) [Kompilowanie i kompilowanie](../ide/compiling-and-building-in-visual-studio.md)

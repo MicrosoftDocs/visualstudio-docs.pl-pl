@@ -1,5 +1,5 @@
 ---
-title: 'CA1007: Używaj typów ogólnych wszędzie, gdzie jest to odpowiednie | Dokumentacja firmy Microsoft'
+title: 'CA1007: Użyj typów ogólnych, jeśli są odpowiednie | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,46 +12,46 @@ helpviewer_keywords:
 - UseGenericsWhereAppropriate
 ms.assetid: eab780ea-3b1f-4d32-b15a-5d48da2df46b
 caps.latest.revision: 21
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 2d4f5f7749ad34f62e9dfa5718c6a778d6e7bebf
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 22c9bac17a957438ee8d2a6f4b634f30604ed1ff
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704291"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668955"
 ---
-# <a name="ca1007-use-generics-where-appropriate"></a>CA1007: Używaj typów ogólnych tam, gdzie to odpowiednie
+# <a name="ca1007-use-generics-where-appropriate"></a>CA1007: Używaj danych generycznych wszędzie, gdzie jest to odpowiednie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|UseGenericsWhereAppropriate|
 |CheckId|CA1007|
-|Kategoria|Microsoft.Design|
+|Kategoria|Microsoft. Design|
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Metoda widoczna na zewnątrz zawiera parametr przekazany przez odwołanie typu <xref:System.Object?displayProperty=fullName>, zawierające cele zestawu i [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)].
+ Widoczna na zewnątrz Metoda zawiera parametr referencyjny typu <xref:System.Object?displayProperty=fullName> i zawiera [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] elementy docelowe zestawu.
 
 ## <a name="rule-description"></a>Opis reguły
- Parametr przekazany przez odwołanie jest parametr, który jest modyfikowana przy użyciu `ref` (`ByRef` w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) — słowo kluczowe. Typ argumentu, który jest dostarczany dla parametru odwołania musi dokładnie odpowiadać typ parametru odwołania. Aby użyć typu, który pochodzi od typu parametru odwołania, typ najpierw należy przypisać do zmiennej typu parametru odwołania i rzutowania. Użyj metody ogólnej umożliwia wszystkich typów podlegających ograniczeniom, które zostaną przekazane do metody bez uprzedniego rzutowania typu do typu parametru odwołania.
+ Parametr Reference jest parametrem modyfikowanym za pomocą słowa kluczowego `ref` (`ByRef` w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]). Typ argumentu, który jest dostarczony dla parametru reference musi dokładnie odpowiadać typowi parametru Reference. Aby użyć typu, który jest pochodną typu parametru odwołania, należy najpierw rzutować i przypisać do zmiennej typu parametru odwołania. Użycie metody generycznej pozwala na przekazywanie wszystkich typów, które podlegają ograniczeniom, do metody bez uprzedniego rzutowania typu na typ parametru odwołania.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, wprowadzić metody rodzajowe i Zastąp <xref:System.Object> parametru za pomocą parametru typu.
+ Aby naprawić naruszenie tej zasady, należy określić metodę ogólna i zastąpić parametr <xref:System.Object> przy użyciu parametru typu.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Nie pomijaj ostrzeżeń dla tej reguły.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład pokazuje procedury wymiany ogólnego przeznaczenia, który jest implementowany jako metody zarówno nierodzajowych, jak i ogólnych. Należy pamiętać o tym, jak wydajnie ciągi są zamienione przy użyciu metody rodzajowej, w porównaniu do nierodzajowymi metody.
+ Poniższy przykład pokazuje procedurę wymiany ogólnego przeznaczenia, która jest zaimplementowana jako metody nierodzajowe i rodzajowe. Zwróć uwagę na to, jak efektywnie ciągi są zamieniane przy użyciu metody ogólnej w porównaniu do metody niegenerycznej.
 
  [!code-csharp[FxCop.Design.UseGenerics#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.UseGenerics/cs/FxCop.Design.UseGenerics.cs#1)]
  [!code-vb[FxCop.Design.UseGenerics#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.UseGenerics/vb/FxCop.Design.UseGenerics.vb#1)]
 
 ## <a name="related-rules"></a>Powiązane reguły
- [CA1005: Unikaj nadużywania parametrów na typach generycznych](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
+ [CA1005: Unikaj nadużywania parametrów w typach ogólnych](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
 
  [CA1010: Kolekcje powinny implementować interfejs ogólny](../code-quality/ca1010-collections-should-implement-generic-interface.md)
 
@@ -61,9 +61,9 @@ ms.locfileid: "65704291"
 
  [CA1006: Nie zagnieżdżaj typów ogólnych w sygnaturach składowych](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
 
- [CA1004: Metody ogólne powinny podawać parametr typu](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
+ [CA1004: Metody ogólne powinny udostępniać parametr typu](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
 
- [CA1003: Użyj wystąpień obsługi zdarzeń generycznych](../code-quality/ca1003-use-generic-event-handler-instances.md)
+ [CA1003: Użyj wystąpień ogólnej procedury obsługi zdarzeń](../code-quality/ca1003-use-generic-event-handler-instances.md)
 
 ## <a name="see-also"></a>Zobacz też
  [Typy ogólne](https://msdn.microsoft.com/library/75ea8509-a4ea-4e7a-a2b3-cf72482e9282)

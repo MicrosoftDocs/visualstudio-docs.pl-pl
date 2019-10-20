@@ -1,5 +1,5 @@
 ---
-title: Wartości metryk kodu | Dokumentacja firmy Microsoft
+title: Wartości metryk kodu | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -10,46 +10,46 @@ helpviewer_keywords:
 - measure code quality
 ms.assetid: bc38831e-2083-4ea4-8527-ee41499a342f
 caps.latest.revision: 22
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f103a1239996e1f68fb6dae7a9f0a41f55ad858e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 23dba7b7c29c05b55af2c461f36bdaa4b46b948f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437099"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667720"
 ---
 # <a name="code-metrics-values"></a>Wartości metryk kodów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Metryki kodu to zestaw miar oprogramowania, które dostarczają deweloperowi lepszy wgląd w kod rozwija. Dzięki wykorzystaniu metryki kodu, deweloperzy zrozumieć typy i/lub metody powinny być przekształcił lub bardziej dokładnie przetestowana. Zespoły deweloperów można zidentyfikować potencjalne zagrożenia, zrozumienie bieżącego stanu projektu i śledzenia postępu podczas tworzenia oprogramowania.  
-  
-## <a name="software-measurements"></a>Pomiarów oprogramowania  
- Na poniższej liście przedstawiono wyników metryk kodów [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] oblicza:  
-  
-- **Indeks łatwości utrzymania** — oblicza wartość indeksu od 0 do 100, która reprezentuje względną łatwość utrzymania kodu. Wysoka wartość oznacza lepsze łatwość konserwacji. Klasyfikacje oznaczone kolorem umożliwia szybką identyfikację aktywnych problemów w kodzie. Ocena zielony od 20 do 100 i wskazuje, że kod ma dużą łatwość utrzymania. Żółty ocena jest od 10 do 19 i wskazuje, że kod jest umiarkowanie łatwego w utrzymaniu. Ocena czerwony jest ma klasyfikację od 0 do 9 i wskazuje niski łatwość utrzymania.  
-  
-- **Złożoność Cyklomatyczna** — mierzy strukturalnych złożoności kodu. Zostanie utworzony, obliczając liczbę różne ścieżki przepływu programu. Program, który zawiera przepływ sterowania złożonych będzie wymagać więcej testów do osiągnięcia pokrycia kodu dobre i będzie mniej łatwego w utrzymaniu.  
-  
+Metryki kodu są zestawem miar oprogramowania, które zapewniają deweloperom lepszy wgląd w kod, który opracowuje. Dzięki wykorzystaniu metryk kodu deweloperzy mogą zrozumieć, które typy i/lub metody powinny być odwiedzane lub dokładniej przetestowane. Zespoły programistyczne mogą identyfikować potencjalne zagrożenia, zrozumieć bieżący stan projektu i śledzić postęp podczas opracowywania oprogramowania.
+
+## <a name="software-measurements"></a>Pomiary oprogramowania
+ Na poniższej liście przedstawiono wyniki metryk kodu, które [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] oblicza:
+
+- **Indeks utrzymania** — oblicza wartość indeksu z przedziału od 0 do 100, która reprezentuje względną łatwość utrzymywania kodu. Wysoka wartość to lepsza łatwość utrzymania. Klasyfikacje kodowane kolorami mogą szybko identyfikować problemy w kodzie. Zielona Ocena wynosi od 20 do 100 i wskazuje, że kod ma dobrą łatwość utrzymania. Żółta Klasyfikacja ma wartość z zakresu od 10 do 19 i wskazuje, że kod jest umiarkowanie konserwowany. Czerwona Ocena jest klasyfikacją od 0 do 9 i wskazuje na niską łatwość utrzymania.
+
+- **Złożoność cyklomatyczna** — mierzy strukturalną złożoność kodu. Jest on tworzony przez obliczenie liczby różnych ścieżek kodu w przepływie programu. Program, który ma złożony przepływ sterowania, będzie wymagał większej liczby testów w celu osiągnięcia dobrego pokrycia kodu i będzie mniej utrzymany.
+
     > [!NOTE]
-    > W niektórych przypadkach obliczenia złożoność cyklomatyczna metody w [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] różni się od wcześniejszych wersji. Aby uzyskać więcej informacji, zobacz "Zmiany w Visual Studio 2010 złożoność obliczeń sekcję kodu" z [Rozwiązywanie problemów metryki kodu](../code-quality/troubleshooting-code-metrics-issues.md).  
-  
-- **Głębokość dziedziczenia** — wskazuje liczbę definicji klasy, które rozszerzenia w katalogu głównym hierarchii klas. Głębiej hierarchii coraz trudniejszy do zrozumienia, gdzie są zdefiniowane określonej metody i pola może być lub / i zmieniony.  
-  
-- **Klasa sprzężenia** — mierzy sprzężenia unikatowy klasy za pomocą parametrów, zmienne lokalne, zwracanych typów, wywołania metody, wystąpień generyczny lub szablonu, klas bazowych, implementacji interfejsu, pól zdefiniowanych dla typów zewnętrznych i Atrybut dekoracji. Projektowania oprogramowania dobre nakazują, typów i metod powinni mieć wysoką spójność i mało sprzężenia. Sprzężenie wysoki wskazuje projekt, który jest trudny do ponownego użycia i utrzymywać ze względu na jej wielu współzależności na inne typy.  
-  
-- **Wiersze kodu** — Wskazuje przybliżoną liczbę wierszy w kodzie. Liczba zależy od kodu IL i dlatego nie dokładną liczbę wierszy w pliku kodu źródłowego. Bardzo wysoka liczba może wskazywać typ lub metoda próbuje wykonać dużo pracy i powinien być podziału. Może również wskazywać, że typ lub metoda może być trudne do utrzymania.  
-  
-## <a name="anonymous-methods"></a>Metody anonimowe  
- *Metody anonimowej* jest po prostu metody, która nie ma nazwy. Metody anonimowe są najczęściej używane do przekazywania bloku kodu jako parametr delegata. Wyniki metryk dla metody anonimowej, która jest zadeklarowana w elemencie członkowskim, na przykład metodę lub metodę dostępu, są skojarzone z elementu członkowskiego, która deklaruje metodę. Nie są one skojarzone z elementem członkowskim, który wywołuje metodę.  
-  
- Aby uzyskać więcej informacji na temat sposobu metryki kodu traktuje metod anonimowych, zobacz [metody anonimowe i analiza kodu](../code-quality/anonymous-methods-and-code-analysis.md).  
-  
-## <a name="generated-code"></a>Wygenerowany kod  
- Niektóre kompilatory i narzędzia generowania kodu, który został dodany do projektu i projektanta projektu, nie zobaczą albo nie należy zmieniać. Przede wszystkim metryki kodu ignoruje wygenerowany kod podczas obliczania wartości metryk. Dzięki temu wartości metryk, aby odzwierciedlić, co deweloper może wyświetlić i zmienić.  
-  
- Kod generowany dla formularzy Windows forms nie jest ignorowana, ponieważ jest kod, który deweloper może wyświetlić i zmienić.  
-  
-## <a name="see-also"></a>Zobacz też  
+    > W niektórych przypadkach Obliczanie złożoności cyklomatyczna dla metody w [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] różni się od wcześniejszych wersji. Aby uzyskać więcej informacji, zobacz sekcję "zmiany w sekcji obliczenia złożoności kodu w programie Visual Studio 2010" dotyczące [rozwiązywania problemów z metrykami kodu](../code-quality/troubleshooting-code-metrics-issues.md).
+
+- **Głębokość dziedziczenia** — wskazuje liczbę definicji klas, które zwiększają się do katalogu głównego hierarchii klas. Dokładniejsze hierarchia jest trudniejsza do zrozumienia, gdzie poszczególne metody i pola są zdefiniowane lub/i ponownie definiowane.
+
+- **Sprzęganie klas** — mierzy sprzężenie do unikatowych klas za pomocą parametrów, zmiennych lokalnych, typów zwracanych, wywołań metod, wystąpień ogólnych lub szablonów, klas bazowych, implementacji interfejsu, pól zdefiniowanych dla typów zewnętrznych i atrybutu dekorację. Dobre projektowanie oprogramowania oznacza, że typy i metody powinny mieć wysoką spójność i niskie sprzężenie. Duże sprzężenie wskazuje, że projekt jest trudno używany i konserwowany ze względu na wiele współzależności z innymi typami.
+
+- **Wiersze kodu** — wskazuje przybliżoną liczbę wierszy w kodzie. Liczba jest oparta na kodzie IL i dlatego nie jest dokładną liczbą wierszy w pliku kodu źródłowego. Bardzo duża liczba może wskazywać, że typ lub metoda próbuje wykonać zbyt dużo pracy i należy ją podzielić. Może również wskazywać, że typ lub metoda może być trudno zachować.
+
+## <a name="anonymous-methods"></a>Metody anonimowe
+ *Metoda anonimowa* to tylko Metoda, która nie ma nazwy. Metody anonimowe są najczęściej używane do przekazywania bloku kodu jako parametru delegata. Wyniki metryk dla anonimowej metody zadeklarowanej w elemencie członkowskim, takie jak metoda lub akcesor, są skojarzone z elementem członkowskim, który deklaruje metodę. Nie są one skojarzone z elementem członkowskim, który wywołuje metodę.
+
+ Aby uzyskać więcej informacji o sposobie traktowania metod anonimowych przez metryki kodu, zobacz [anonimowe metody i analiza kodu](../code-quality/anonymous-methods-and-code-analysis.md).
+
+## <a name="generated-code"></a>Wygenerowany kod
+ Niektóre narzędzia i kompilatory oprogramowania generują kod, który jest dodawany do projektu i deweloper projektu nie widzi lub nie powinien zmieniać się. Przede wszystkim metryki kodu ignorują wygenerowany kod podczas obliczania wartości metryk. Dzięki temu wartości metryk odzwierciedlają elementy, które Projektant może zobaczyć i zmienić.
+
+ Kod wygenerowany dla formularzy systemu Windows nie jest ignorowany, ponieważ jest to kod, który deweloper może zobaczyć i zmienić.
+
+## <a name="see-also"></a>Zobacz też
  [Mierzenie złożoności i poziomu łatwości konserwacji kodu zarządzanego](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

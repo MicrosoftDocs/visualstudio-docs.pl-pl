@@ -4,55 +4,55 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests, data-driven
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a3c9837f1babf3cb37d99eb1bb74c2c35c05eff9
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 101b678606febd7cc2a7e2f9cee0c8c281289c9a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870319"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665095"
 ---
-# <a name="create-a-data-driven-coded-ui-test"></a>Tworzenie opartych na danych kodowanego testu interfejsu użytkownika
+# <a name="create-a-data-driven-coded-ui-test"></a>Tworzenie kodowanego testu interfejsu użytkownika opartego na danych
 
-Na potrzeby testowania różnych warunków, można uruchomić testy wiele razy z wartościami różnych parametrów. Oparte na danych coded UI testy są wygodny sposób, aby to zrobić. Określ wartości parametrów w źródle danych, a każdy wiersz w źródle danych jest iteracji kodowanego testu interfejsu użytkownika. Ogólny wynik testu będzie zależeć od wyniku dla wszystkich iteracji. Na przykład w przypadku niepowodzenia jednej iteracji testu, ogólny wynik testu jest błąd.
+Aby przetestować inne warunki, można uruchomić testy wiele razy z różnymi wartościami parametrów. Kodowane testy interfejsu użytkownika obsługujące dane są wygodnym sposobem wykonania tej czynności. Możesz definiować wartości parametrów w źródle danych, a każdy wiersz w źródle danych jest iteracją kodowanego testu interfejsu użytkownika. Ogólny wynik testu będzie oparty na wynikach dla wszystkich iteracji. Na przykład jeśli jedna iteracja testu nie powiedzie się, ogólny wynik testu to niepowodzenie.
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-**Wymagania**
+**Requirements**
 
 - Visual Studio Enterprise
-- Kodowane składnik testu interfejsu użytkownika
+- Składnik kodowanego testu interfejsu użytkownika
 
-## <a name="create-a-test-project"></a>Utwórz projekt testu
+## <a name="create-a-test-project"></a>Tworzenie projektu testowego
 
-Ten przykład umożliwia utworzenie kodowanego testu interfejsu użytkownika, uruchamiane w aplikacji Windows kalkulatora. Je ze sobą dodaje dwie liczby i używa potwierdzenie, aby sprawdzić, czy suma jest poprawna. Następnie potwierdzenie i wartości parametrów dla dwóch liczb są kodowane stała się opartych na danych, jak i przechowywanych w wartości rozdzielanych przecinkami (*CSV*) pliku.
+Ten przykład tworzy kodowany test interfejsu użytkownika, który jest uruchamiany w aplikacji kalkulatora systemu Windows. Dodaje dwa liczby jednocześnie i używa potwierdzenia do sprawdzenia, czy suma jest poprawna. Następnie potwierdzenie i wartości parametrów dla dwóch liczb są kodowane jako dane i przechowywane w pliku z wartościami rozdzielanymi przecinkami (*CSV*).
 
-### <a name="step-1---create-a-coded-ui-test"></a>Krok 1 — Tworzenie kodowanego testu interfejsu użytkownika
+### <a name="step-1---create-a-coded-ui-test"></a>Krok 1. Tworzenie kodowanego testu interfejsu użytkownika
 
 1. Utwórz projekt.
 
     ![Utwórz projekt kodowanego testu interfejsu użytkownika](../test/media/cuit_datadriven_.png)
 
    > [!NOTE]
-   > Jeśli nie widzisz **projekt testu kodowanego interfejsu użytkownika** szablonu, trzeba [instalacji składnika należy kodowanego testu interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
+   > Jeśli szablon **projektu kodowanego testu interfejsu użytkownika** nie jest widoczny, należy [zainstalować składnik KODOWANEGO testu interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
 
-2. Możliwość **Zarejestruj akcje**.
+2. Wybierz **, aby zarejestrować akcje**.
 
-    ![Wybierz do rejestrowania akcji](../test/media/cuit_datadriven_generatecodedialog.png)
+    ![Wybierz, aby zarejestrować akcje](../test/media/cuit_datadriven_generatecodedialog.png)
 
 3. Otwórz aplikację Kalkulator i Rozpocznij nagrywanie testu.
 
-    ![Zarejestruj akcje](../test/media/cuit_datadriven_cuitbuilder.png)
+    ![Rejestruj akcje](../test/media/cuit_datadriven_cuitbuilder.png)
 
-4. Dodaj 1 i 2, Wstrzymaj Rejestrator i generować metodę testową. Firma Microsoft będzie później zastąpić wartości tych danych wejściowych użytkownika przy użyciu wartości z pliku danych.
+4. Dodaj 1 plus 2, Wstrzymaj Rejestrator i Wygeneruj metodę testową. Później zamienimy wartości tych danych wejściowych użytkownika na wartości z pliku danych.
 
     ![Generuj metodę testową](../test/media/cuit_datadriven_cuitbuildergencode.png)
 
-    Zamknąć Konstruktora testu. Metoda jest dodawana do testu:
+    Zamknij Konstruktor testów. Metoda jest dodawana do testu:
 
    ```csharp
    [TestMethod]
@@ -64,25 +64,25 @@ Ten przykład umożliwia utworzenie kodowanego testu interfejsu użytkownika, ur
    }
    ```
 
-5. Użyj `AddNumbers()` metodę, aby sprawdzić, że test jest uruchamiany. Umieść kursor w pokazanej powyżej metodzie testowej, otwórz menu dostępne po kliknięciu prawym przyciskiem myszy i wybierz polecenie **Uruchom testy**. (Skrót klawiaturowy: **Ctrl**+**R**,**T**).
+5. Użyj metody `AddNumbers()`, aby sprawdzić, czy testy są wykonywane. Umieść kursor w pokazanej powyżej metodzie testowej, otwórz menu dostępne po kliknięciu prawym przyciskiem myszy i wybierz polecenie **Uruchom testy**. (Skrót klawiaturowy: **Ctrl** +**R**,**t**).
 
-    Wynik testu, który pokazuje, jeśli test zakończony powodzeniem lub niepowodzeniem jest wyświetlana w **Eksploratora testów** okna. Aby otworzyć okno Eksploratora testów z **testu** menu, wybierz **Windows** , a następnie wybierz **Eksplorator testów**.
+    Wynik testu, który pokazuje, czy w oknie **Eksplorator testów** jest wyświetlany test zakończony powodzeniem lub niepowodzeniem. Aby otworzyć okno Eksplorator testów, z menu **test** wybierz pozycję **Windows** , a następnie wybierz **Eksplorator testów**.
 
-6. Ponieważ źródła danych można również o wprowadzenie wartości parametrów potwierdzenie — które są używane przez test, aby zweryfikować oczekiwane wartości — Dodajmy potwierdzenie można zweryfikować, czy sumę dwóch liczb jest poprawna. Umieść kursor w pokazanej powyżej metodzie testowej, otwórz menu dostępne po kliknięciu prawym przyciskiem myszy i wybierz polecenie **Generuj kod dla kodowanego testu interfejsu**użytkownika, a następnie **Użyj konstruktora KODOWANEGO testu interfejsu użytkownika**.
+6. Ze względu na to, że źródło danych może być również używane dla wartości parametrów potwierdzenia — które są używane przez test w celu sprawdzenia oczekiwanych wartości — Dodajmy potwierdzenie, aby sprawdzić, czy suma dwóch numerów jest poprawna. Umieść kursor w pokazanej powyżej metodzie testowej, otwórz menu dostępne po kliknięciu prawym przyciskiem myszy i wybierz polecenie **Generuj kod dla kodowanego testu interfejsu**użytkownika, a następnie **Użyj konstruktora KODOWANEGO testu interfejsu użytkownika**.
 
-    Mapowanie kontrolki tekstu w kalkulatorze, który wyświetla sumę.
+    Mapuj kontrolkę tekstową na Kalkulator, który wyświetla sumę.
 
-    ![Mapowanie interfejsu użytkownika kontrolki tekstu](../test/media/cuit_datadriven_addassertion.png)
+    ![Mapowanie kontrolki tekstowej interfejsu użytkownika](../test/media/cuit_datadriven_addassertion.png)
 
-7. Dodaj potwierdzenie, która weryfikuje, czy wartość sumy jest poprawna. Wybierz **Wyświetlany_tekst** właściwość, która ma wartość **3** , a następnie wybierz **Dodaj potwierdzenie**. Użyj **AreEqual** komparator i sprawdź, czy jest porównywana wartość **3**.
+7. Dodaj potwierdzenie, które sprawdza, czy wartość sumy jest poprawna. Wybierz właściwość **DisplayText** , która ma wartość **3** , a następnie wybierz pozycję **Dodaj potwierdzenie**. Użyj **AreEqual** komparator i sprawdź, czy wartość porównania to **3**.
 
-    ![Konfigurowanie potwierdzenia](../test/media/cuit_datadriven_builderaddassertion2.png)
+    ![Skonfiguruj potwierdzenie](../test/media/cuit_datadriven_builderaddassertion2.png)
 
-8. Po skonfigurowaniu potwierdzenie, ponownie generuje kod z konstruktora. Spowoduje to utworzenie nowej metody dla weryfikacji.
+8. Po skonfigurowaniu potwierdzenia Wygeneruj ponownie kod z konstruktora. Spowoduje to utworzenie nowej metody weryfikacji.
 
-    ![Generowanie metody asercji](../test/media/cuit_datadriven_assertiongencode.png)
+    ![Generowanie metody potwierdzenia](../test/media/cuit_datadriven_assertiongencode.png)
 
-    Ponieważ `ValidateSum` metoda sprawdza wyniki `AddNumbers` metody, przenieś go do dolnej części bloku kodu.
+    Ponieważ metoda `ValidateSum` sprawdza poprawność wyników metody `AddNumbers`, przenieś ją na dół bloku kodu.
 
    ```csharp
    public void CodedUITestMethod1()
@@ -92,39 +92,39 @@ Ten przykład umożliwia utworzenie kodowanego testu interfejsu użytkownika, ur
    }
    ```
 
-9. Sprawdź, czy test działa przy użyciu `ValidateSum()` metody. Umieść kursor w pokazanej powyżej metodzie testowej, otwórz menu dostępne po kliknięciu prawym przyciskiem myszy i wybierz polecenie **Uruchom testy**. (Skrót klawiaturowy: **Ctrl**+**R**,**T**).
+9. Sprawdź, czy test jest uruchamiany przy użyciu metody `ValidateSum()`. Umieść kursor w pokazanej powyżej metodzie testowej, otwórz menu dostępne po kliknięciu prawym przyciskiem myszy i wybierz polecenie **Uruchom testy**. (Skrót klawiaturowy: **Ctrl** +**R**,**t**).
 
-     W tym momencie wszystkich wartości parametrów są definiowane w ich metod jako stałe. Następnie utworzymy zestaw danych umożliwiają naszym teście opartych na danych.
+     W tym momencie wszystkie wartości parametrów są zdefiniowane w metodach jako stałe. Następnie Utwórzmy zestaw danych, aby umożliwić nasze testy oparte na danych.
 
-### <a name="step-2---create-a-data-set"></a>Krok 2 — Tworzenie zestawu danych
+### <a name="step-2---create-a-data-set"></a>Krok 2. Tworzenie zestawu danych
 
-1. Dodaj plik tekstowy do projektu dataDrivenSample o nazwie *data.csv*.
+1. Dodaj plik tekstowy do projektu dataDrivenSample o nazwie *Data. csv*.
 
-     ![Dodaj z pliku wartości rozdzielonych przecinkami do projektu](../test/media/cuit_datadriven_addcsvfile.png)
+     ![Dodawanie pliku wartości rozdzielanych przecinkami do projektu](../test/media/cuit_datadriven_addcsvfile.png)
 
-2. Wypełnij *CSV* pliku przy użyciu następujących danych:
+2. Wypełnij plik *CSV* następującymi danymi:
 
-    |Num1|Num2|Suma|
+    |Num1|Num2|Należności|
     |-|-|-|
     |3|4|7|
     |5|6|11|
-    |6|8|14|
+    |6|8|14,5|
 
-     Po dodaniu danych, plik powinien wyglądać następująco:
+     Po dodaniu danych plik powinien wyglądać następująco:
 
-     ![Wypełnij plik CSV z danymi](../test/media/cuit_datadriven_adddatatocsvfile.png)
+     ![Wypełnij plik CSV danymi](../test/media/cuit_datadriven_adddatatocsvfile.png)
 
-3. Jest ważne zapisać *CSV* plików przy użyciu kodowania poprawne. Na **pliku** menu, wybierz **zaawansowane opcje zapisywania** i wybierz polecenie **Unicode (UTF-8 bez podpisu) - strona kodowa 65001** jako kodowania.
+3. Ważne jest, aby zapisać plik *CSV* przy użyciu poprawnego kodowania. W menu **plik** wybierz pozycję **Zaawansowane opcje zapisywania** i wybierz pozycję **Unicode (UTF-8 bez podpisu)-CodePage 65001** jako kodowanie.
 
-4. *CSV* pliku, muszą zostać skopiowane do katalogu wyjściowego lub nie można uruchomić testu. Użyj **właściwości** okna, aby skopiować go.
+4. Plik *CSV* musi być skopiowany do katalogu wyjściowego lub test nie może zostać uruchomiony. Użyj okna **Właściwości** , aby je skopiować.
 
      ![Wdróż plik CSV](../test/media/cuit_datadriven_deploycsvfile.png)
 
-     Teraz, gdy zestaw danych utworzony, powiążmy danych do testu.
+     Teraz, po utworzeniu zestawu danych, powiążemy dane z testem.
 
-### <a name="step-3---add-data-source-binding"></a>Krok 3 — Dodawanie powiązania źródła danych
+### <a name="step-3---add-data-source-binding"></a>Krok 3. Dodawanie powiązania źródła danych
 
-1. Aby powiązać ze źródłem danych, należy dodać `DataSource` atrybut wewnątrz istniejącego `[TestMethod]` atrybut, który jest od razu powyżej metody testowej.
+1. Aby powiązać źródło danych, Dodaj atrybut `DataSource` w istniejącym atrybucie `[TestMethod]`, który jest bezpośrednio powyżej metody testowej.
 
     ```csharp
     [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\data.csv", "data#csv", DataAccessMethod.Sequential), DeploymentItem("data.csv"), TestMethod]
@@ -135,20 +135,20 @@ Ten przykład umożliwia utworzenie kodowanego testu interfejsu użytkownika, ur
     }
     ```
 
-     Źródło danych jest teraz dostępna do użycia w tej metodzie testowej.
+     Źródło danych jest teraz dostępne do użycia w tej metodzie testowej.
 
     > [!TIP]
-    > Zobacz [przykłady atrybut źródła danych](#CreateDataDrivenCUIT_QA_DataSourceAttributes) w funkcji pytań i odpowiedzi dotyczącej przykłady użycia innych typów źródeł danych, takich jak XML, SQL Express i programu Excel.
+    > Zobacz [Przykłady atrybutów źródła danych](#CreateDataDrivenCUIT_QA_DataSourceAttributes) w sekcji Q & sekcję, aby poznać przykłady użycia innych typów źródeł danych, takich jak XML, SQL Express i Excel.
 
 2. Uruchom test.
 
-     Należy zauważyć, że test jest uruchamiany za pomocą trzech iteracji. Jest to spowodowane źródło danych, który był powiązany zawiera trzy wiersze danych. Jednak zauważysz również, że test jest nadal przy użyciu wartości parametru o stałej i polega na dodaniu 1 + 2 z sumą 3 każdorazowo.
+     Zwróć uwagę, że test jest wykonywany przez trzy iteracje. Wynika to z faktu, że powiązane źródło danych zawiera trzy wiersze danych. Należy jednak zauważyć, że test nadal używa wartości parametrów stałych i dodaje 1 + 2 z sumą wartości 3 za każdym razem.
 
-     Następnie skonfigurujemy test, aby użyć wartości z pliku źródła danych.
+     Następnie skonfigurujemy test tak, aby korzystał z wartości w pliku źródła danych.
 
-### <a name="step-4---use-the-data-in-the-coded-ui-test"></a>Krok 4 — użyć danych w kodowanym teście interfejsu użytkownika
+### <a name="step-4---use-the-data-in-the-coded-ui-test"></a>Krok 4. Korzystanie z danych w kodowanym teście interfejsu użytkownika
 
-1. Dodaj `using Microsoft.VisualStudio.TestTools.UITesting.WinControls` na początku *CodedUITest.cs* pliku:
+1. Dodaj `using Microsoft.VisualStudio.TestTools.UITesting.WinControls` na początku pliku *CodedUITest.cs* :
 
     ```csharp
     using System;
@@ -164,7 +164,7 @@ Ten przykład umożliwia utworzenie kodowanego testu interfejsu użytkownika, ur
     using Microsoft.VisualStudio.TestTools.UITesting.WinControls;
     ```
 
-2. Dodaj `TestContext.DataRow[]` w `CodedUITestMethod1()` metody, które będą miały zastosowanie wartości ze źródła danych. Wartości źródła danych Zastąp stałe przypisany do kontrolki do UIMap za pomocą kontrolek na `SearchProperties`:
+2. Dodaj `TestContext.DataRow[]` w metodzie `CodedUITestMethod1()`, która będzie stosować wartości ze źródła danych. Wartości źródła danych zastępują stałe przypisane do formantów UIMap przy użyciu kontrolek `SearchProperties`:
 
    ```csharp
    public void CodedUITestMethod1()
@@ -177,35 +177,35 @@ Ten przykład umożliwia utworzenie kodowanego testu interfejsu użytkownika, ur
     }
     ```
 
-     Aby ustalić właściwości wyszukiwania, które o kodowaniu dane, użyj edytora kodowanego testu interfejsu użytkownika.
+     Aby ustalić, które właściwości wyszukiwania mają być używane do kodowania danych, użyj edytora kodowanego testu interfejsu użytkownika.
 
-    - Otwórz *UIMap.uitest* pliku.
+    - Otwórz plik *UIMap. UITest* .
 
-         ![Otwórz Edytor testu kodowanego interfejsu użytkownika](../test/media/cuit_datadriven_opentesteditor.png)
+         ![Otwórz Edytor kodowanego testu interfejsu użytkownika](../test/media/cuit_datadriven_opentesteditor.png)
 
-    - Wybierz akcję interfejsu użytkownika i sprawdź odpowiednie mapowanie kontrolek interfejsu użytkownika. Zwróć uwagę, jak mapowanie odnosi się do kodu, na przykład `this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button`.
+    - Wybierz akcję interfejsu użytkownika i obserwuj odpowiednie mapowanie formantów interfejsu użytkownika. Zwróć uwagę, jak mapowanie odpowiada kodowi, na przykład `this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button`.
 
-         ![Użyj edytora kodowanego testu interfejsu użytkownika, aby uzyskać pomoc przy użyciu kodu](../test/media/cuit_datadriven_testeditor.png)
+         ![Użyj edytora kodowanego testu interfejsu użytkownika, aby pomóc w kodzie](../test/media/cuit_datadriven_testeditor.png)
 
-    - W **właściwości** okna, otwórz **wyszukującą**. Właściwości wyszukiwania **nazwa** wartość to, co jest podlegający manipulowaniu w kodzie przy użyciu źródła danych. Na przykład `SearchProperties` trwa przypisywanie wartości w pierwszej kolumnie każdy wiersz danych: `UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`. Dla trzech iteracji tego testu spowoduje zmianę **nazwa** wartości dla właściwości wyszukiwania, aby 3, a następnie 5 i na koniec 6.
+    - W oknie **Właściwości** Otwórz **Właściwości wyszukiwania**. Wartość **nazwy** właściwości wyszukiwania to to, co jest manipulowane w kodzie przy użyciu źródła danych. Na przykład `SearchProperties` są przypisywane wartości w pierwszej kolumnie każdego wiersza danych: `UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`. Dla trzech iteracji ten test zmieni wartość **Nazwa** dla właściwości Wyszukaj na 3, a następnie 5 i finally 6.
 
-         ![Użyj właściwości wyszukiwania, aby uzyskać pomoc w kodowania](../test/media/cuit_datadriven_searchproperties.png)
+         ![Użyj właściwości wyszukiwania, aby pomóc w kodowaniu](../test/media/cuit_datadriven_searchproperties.png)
 
-3. Zapisywanie rozwiązania.
+3. Zapisz rozwiązanie.
 
 ### <a name="step-5---run-the-data-driven-test"></a>Krok 5 — Uruchamianie testu opartego na danych
 
-Sprawdź, czy test jest teraz opartych na danych, ponownie uruchamiając test.
+Sprawdź, czy test jest teraz sterowany danymi, ponownie uruchamiając test.
 
-Powinien zostać wyświetlony testu za pomocą trzech iteracji, używając wartości w *CSV* pliku. Sprawdzanie poprawności powinno działać tak dobrze w i testu powinien być wyświetlany jako zakończony powodzeniem w Eksploratorze testów.
+Należy sprawdzić przebieg testu przez trzy iteracje przy użyciu wartości z pliku *CSV* . Walidacja powinna również być poprawna, a test powinien być wyświetlany jako zakończono w Eksploratorze testów.
 
-## <a name="q--a"></a>Pytania i odpowiedzi
+## <a name="q--a"></a>p & A
 
-### <a name="CreateDataDrivenCUIT_QA_DataSourceAttributes"></a> Co to są atrybuty źródła danych dla innych typów źródła danych, takich jak program SQL Express lub XML?
+### <a name="CreateDataDrivenCUIT_QA_DataSourceAttributes"></a>Jakie są atrybuty źródła danych dla innych typów źródeł danych, takich jak SQL Express czy XML?
 
-**Z** W poniższej tabeli można użyć parametry źródła danych przykładowych, kopiując je do kodu i dokonując wymaganych dostosowaniach.
+Odp **.:** W poniższej tabeli można użyć ciągów przykładowego źródła danych, kopiując je do kodu i wprowadzając niezbędne dostosowania.
 
-**Typy źródeł danych i atrybuty**
+**Typy i atrybuty źródła danych**
 
 - CSV
 
@@ -215,7 +215,7 @@ Powinien zostać wyświetlony testu za pomocą trzech iteracji, używając warto
 
      `DataSource("System.Data.Odbc", "Dsn=ExcelFiles;Driver={Microsoft Excel Driver (*.xls)};dbq=|DataDirectory|\\Data.xls;defaultdir=.;driverid=790;maxbuffersize=2048;pagetimeout=5;readonly=true", "Sheet1$", DataAccessMethod.Sequential), DeploymentItem("Sheet1.xls"), TestMethod]`
 
-- Przypadek testowy w programie Team Foundation Server
+- Przypadek testowy w Team Foundation Server
 
      `[DataSource("Microsoft.VisualStudio.TestTools.DataSource.TestCase", "http://vlm13261329:8080/tfs/DefaultCollection;Agile", "30", DataAccessMethod.Sequential), TestMethod]`
 
@@ -227,11 +227,11 @@ Powinien zostać wyświetlony testu za pomocą trzech iteracji, używając warto
 
      `[DataSource("System.Data.SqlClient", "Data Source=.\\sqlexpress;Initial Catalog=tempdb;Integrated Security=True", "Data", DataAccessMethod.Sequential), TestMethod]`
 
-### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>PYTANIA Dlaczego nie mogę zmodyfikować kodu w pliku UIMap. Designer?
+### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>P: Dlaczego nie mogę zmodyfikować kodu w pliku UIMap. Designer?
 
-**Z** Wszelkie zmiany kodu wprowadzone w pliku *UIMapDesigner.cs* zostaną nadpisywane przy każdym wygenerowaniu kodu za pomocą konstruktora kodowanego testu interfejsu użytkownika UIMap. W tym przykładzie i w większości przypadków, zmiany kodu wymaganego do włączenia testów korzystających ze źródła danych może przyjąć pliku z kodem źródłowym testu (czyli *CodedUITest1.cs*).
+Odp **.:** Wszelkie zmiany kodu wprowadzone w pliku *UIMapDesigner.cs* zostaną nadpisywane przy każdym wygenerowaniu kodu za pomocą konstruktora kodowanego testu interfejsu użytkownika UIMap. W tym przykładzie i w większości przypadków zmiany kodu są konieczne, aby umożliwić testowi użycie źródła danych do pliku kodu źródłowego testu (czyli *CodedUITest1.cs*).
 
-Jeśli trzeba zmodyfikować nagraną metodę, należy skopiować go do *UIMap.cs* plików i zmień jego nazwę. *UIMap.cs* pliku może służyć do zastępowania metod i właściwości w *UIMapDesigner.cs* pliku. Należy usunąć odniesienia do oryginalnej metody w kodowany *UITest.cs* plik i zastąp go nazwą metody o zmienionej nazwie.
+Jeśli trzeba zmodyfikować nagraną metodę, należy skopiować ją do pliku *UIMap.cs* i zmienić jej nazwę. Plik *UIMap.cs* może służyć do przesłonięcia metod i właściwości w pliku *UIMapDesigner.cs* . Musisz usunąć odwołanie do oryginalnej metody w kodowanym pliku *UITest.cs* i zastąpić je nazwą metody o zmienionej nazwie.
 
 ## <a name="see-also"></a>Zobacz także
 
@@ -240,4 +240,4 @@ Jeśli trzeba zmodyfikować nagraną metodę, należy skopiować go do *UIMap.cs
 - [Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)
 - [Tworzenie kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md)
 - [Najlepsze praktyki dotyczące kodowanych testów interfejsu użytkownika](../test/best-practices-for-coded-ui-tests.md)
-- [Obsługiwane konfiguracje oraz platformy zakodowanych testów interfejsu użytkownika i nagrywania akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [Obsługiwane konfiguracje i platformy dla kodowanych testów interfejsu użytkownika i nagrań akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

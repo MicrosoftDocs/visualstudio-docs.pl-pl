@@ -1,5 +1,5 @@
 ---
-title: 'CA2003: Nie Traktuj włókien jak wątków | Dokumentacja firmy Microsoft'
+title: 'CA2003: nie Traktuj włókien jako wątków | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,34 +12,34 @@ helpviewer_keywords:
 - DoNotTreatFibersAsThreads
 ms.assetid: 15398fb1-f384-4bcc-ad93-00e1c0fa9ddf
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 0a1683c8cb9b9c6dc856f40ddbc7864d773f2101
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 943b52f9703e60f14756bde97ce6f27c0c6f5296
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68189058"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672505"
 ---
-# <a name="ca2003-do-not-treat-fibers-as-threads"></a>CA2003: Nie traktuj włókien jak wątków
+# <a name="ca2003-do-not-treat-fibers-as-threads"></a>CA2003: Nie traktuj włókien jako wątków
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|DoNotTreatFibersAsThreads|
 |CheckId|CA2003|
-|Kategoria|Microsoft.Reliability|
-|Zmiana kluczowa|Bez podziału|
+|Kategoria|Microsoft. niezawodność|
+|Zmiana kluczowa|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
- Zarządzane zarządzalny wątek jest traktowany jako wątek Win32.
+ Zarządzany wątek jest traktowany jako wątek Win32.
 
 ## <a name="rule-description"></a>Opis reguły
- Nie należy zakładać, że wątków zarządzanych jest wątek Win32. Jest włókien. Środowisko uruchomieniowe języka wspólnego (CLR) zostanie uruchomione wątki zarządzane jako włókien w kontekście rzeczywistych wątki, które są własnością SQL. Te wątki mogą być współużytkowane przez nawet baz danych i domen aplikacji w procesie programu SQL Server. Za pomocą zarządzanych wątków, działają magazynu lokalnego, ale nie możesz użyć pamięci lokalnej wątku niezarządzanym lub przyjęto założenie, że Twój kod zostaną ponownie uruchomione w bieżącym wątku systemu operacyjnego. Nie należy zmieniać ustawienia, takie jak ustawienia regionalne wątku. Nie należy wywoływać CreateCriticalSection lub Funkcja CreateMutex za pośrednictwem metody P/Invoke, ponieważ wymagają one, wątek, który wprowadzi blokadę należy również zamknąć blokady. Ponieważ to nie będzie w przypadku gdy używasz włókien, sekcje krytyczne Win32 i Muteksy są bezużyteczne w języku SQL. Bezpiecznie mogą korzystać z większości stan zarządzanego obiektu System.Thread. Obejmuje to lokalny magazyn wątków zarządzanych i bieżącej kultury interfejsu użytkownika wątku. Jednak podczas programowania modelu przyczyny, nie będzie można zmienić bieżącej kultury wątku, gdy używasz programu SQL; będzie to wymuszane za pośrednictwem nowych uprawnień.
+ Nie przyjmij wątku zarządzanego jako wątku Win32. Jest to włókna. Środowisko uruchomieniowe języka wspólnego (CLR) będzie uruchamiać wątki zarządzane jako włókien w kontekście rzeczywistych wątków, które są własnością bazy danych SQL. Te wątki mogą być współużytkowane przez domeny aplikacji i nawet bazy danych w procesie SQL Server. Korzystanie z lokalnego magazynu wątków zarządzanych będzie działać, ale nie można używać magazynu lokalnego wątku niezarządzanego lub założono, że kod zostanie uruchomiony ponownie w bieżącym wątku systemu operacyjnego. Nie należy zmieniać ustawień, takich jak ustawienia regionalne wątku. Nie wywołuj CreateCriticalSection ani muteksu za pośrednictwem P/Invoke, ponieważ wymagają one, aby wątek, który przechodził blokadę, również zakończył blokadę. Ponieważ nie będzie to miało znaczenia w przypadku używania włókien, sekcje krytyczne Win32 i muteksy będą bezużyteczny w programie SQL Server. Można bezpiecznie użyć większości stanu w zarządzanym obiekcie system. Thread. Obejmuje to magazyn lokalny wątku zarządzanego i kulturę bieżącego interfejsu użytkownika (UI) wątku. Jednak ze względu na model programowania nie będzie można zmienić bieżącej kultury wątku w przypadku korzystania z programu SQL Server. zostanie to wymuszone za pomocą nowego uprawnienia.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Sprawdź użycie wątków i odpowiednio zmień swój kod.
+ Sprawdź użycie wątków i odpowiednio zmień kod.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Ta zasada nie ma pomijać.
+ Nie należy pomijać tej reguły.

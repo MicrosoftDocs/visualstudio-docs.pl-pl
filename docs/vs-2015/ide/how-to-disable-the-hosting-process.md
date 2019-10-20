@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Wyłączanie procesu hostingu | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: wyłączanie procesu hostingu | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -9,42 +9,40 @@ helpviewer_keywords:
 - vshost.exe, disabling the hosting process
 ms.assetid: 9157488d-737f-454b-8d8d-36f99de38bb0
 caps.latest.revision: 12
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 813094285557171e9c7f021f597d0d643356b5d4
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 95dcd7da113bfe996d00e617b7c8e2f9b68864d7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65694410"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667972"
 ---
-# <a name="how-to-disable-the-hosting-process"></a>Instrukcje: Wyłączanie procesu hostingu
+# <a name="how-to-disable-the-hosting-process"></a>Porady: wyłączanie procesu hostingu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Wywołania niektórych interfejsów API mogą mieć wpływ na włączenie procesu hostingu. W takich przypadkach zachodzi konieczność wyłączanie procesu hostingu, aby zwracać poprawnych wyników.  
-  
-### <a name="to-disable-the-hosting-process"></a>Aby wyłączyć procesu hostingu  
-  
-1. Otwórz projekt wykonywalny w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Projekty, które nie tworzą pliki wykonywalne (na przykład klasy biblioteki lub usługi projektów) nie ma takiej możliwości.  
-  
-2. Na **projektu** menu, kliknij przycisk **właściwości**.  
-  
-3. Kliknij przycisk **debugowania** kartę.  
-  
-4. Wyczyść **włączyć procesu hostingu Visual Studio** pole wyboru.  
-  
-   Po wyłączeniu procesu hostingu kilka funkcji debugowania są niedostępne lub wystąpić obniżenie wydajności. Aby uzyskać więcej informacji, zobacz [debugowanie i proces hostingu](../debugger/debugging-and-the-hosting-process.md).  
-  
-   Ogólnie rzecz biorąc, gdy proces hostingu jest wyłączony:  
-  
-- Czas potrzebny, aby rozpocząć debugowanie [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] zwiększa aplikacji.  
-  
-- Obliczanie wyrażenia czasu projektowania jest niedostępny.  
-  
-- Debugowanie w częściowej relacji zaufania jest niedostępny.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Debugowanie i proces hostingu](../debugger/debugging-and-the-hosting-process.md)   
- [Proces hostingu (vshost.exe)](../ide/hosting-process-vshost-exe.md)   
- [Kompilacje podczas tworzenia aplikacji](https://msdn.microsoft.com/c9497d62-3b7b-4449-88e8-cf27acc9efe6)
+Na wywołania niektórych interfejsów API mogą być narażone zmiany, gdy proces hostingu jest włączony. W takich przypadkach należy wyłączyć proces hostingu, aby zwracał poprawne wyniki.
+
+### <a name="to-disable-the-hosting-process"></a>Aby wyłączyć proces hostingu
+
+1. Otwórz projekt wykonywalny w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Dla projektów, które nie generują plików wykonywalnych (na przykład biblioteki klas lub projektów usług), nie można korzystać z tej opcji.
+
+2. W menu **projekt** kliknij polecenie **Właściwości**.
+
+3. Kliknij kartę **debugowanie** .
+
+4. Wyczyść pole wyboru **Włącz proces hostingu programu Visual Studio** .
+
+   Gdy proces hostingu jest wyłączony, niektóre funkcje debugowania są niedostępne lub zmniejszają wydajność. Aby uzyskać więcej informacji, zobacz [debugowanie i proces hostingu](../debugger/debugging-and-the-hosting-process.md).
+
+   Ogólnie rzecz biorąc, gdy proces hostingu jest wyłączony:
+
+- Czas wymagany do rozpoczęcia debugowania [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] aplikacji.
+
+- Ocena wyrażenia czasu projektowania jest niedostępna.
+
+- Debugowanie częściowej relacji zaufania jest niedostępne.
+
+## <a name="see-also"></a>Zobacz też
+ [Debugowanie i](../debugger/debugging-and-the-hosting-process.md) proces hostingu procesów hostingu [(vshost. exe)](../ide/hosting-process-vshost-exe.md) [podczas opracowywania aplikacji](https://msdn.microsoft.com/c9497d62-3b7b-4449-88e8-cf27acc9efe6)

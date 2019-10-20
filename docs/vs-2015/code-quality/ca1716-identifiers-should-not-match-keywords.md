@@ -1,5 +1,5 @@
 ---
-title: 'CA1716: Identyfikatory nie powinny odpowiadać słowom | Dokumentacja firmy Microsoft'
+title: 'CA1716: identyfikatory nie powinny być zgodne ze słowami kluczowymi | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,33 +12,33 @@ helpviewer_keywords:
 - CA1716
 ms.assetid: 900cc8a1-1089-4069-a4ce-10b109ac4fab
 caps.latest.revision: 23
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 35a97e62e17895cb700a1420c7851878f329112a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f81aec5973d1915ba646c20c3b84186443678754
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68189112"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669100"
 ---
-# <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716: Identyfikatory nie powinny być zgodne ze słowami kluczowymi
+# <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716: Identyfikatory nie powinny odpowiadać słowom kluczowym
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|IdentifiersShouldNotMatchKeywords|
 |CheckId|CA1716|
-|Kategoria|Microsoft.Naming|
+|Kategoria|Microsoft. nazewnictwo|
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Nazwa przestrzeni nazw, typu lub elementu członkowskiego viritual lub interfejs odpowiada zastrzeżonym słowem kluczowym w języku programowania.
+ Nazwa przestrzeni nazw, typu lub viritual lub składowej interfejsu pasuje do zastrzeżonego słowa kluczowego w języku programowania.
 
 ## <a name="rule-description"></a>Opis reguły
- Identyfikatory przestrzeni nazw, typów, jak i wirtualnych i składowe interfejsu nie powinny odpowiadać słowom, które są definiowane przez języki przeznaczone dla środowiska uruchomieniowego języka wspólnego. W zależności od języka, który jest używany i słowo kluczowe błędy kompilatora i niejednoznaczności może utrudnić bibliotekę do użycia.
+ Identyfikatory przestrzeni nazw, typów i elementów członkowskich wirtualnych i interfejsów nie powinny być zgodne ze słowami kluczowymi, które są zdefiniowane przez Języki przeznaczone dla środowiska uruchomieniowego języka wspólnego. W zależności od używanego języka i słowa kluczowego, błędy kompilatora i niejasności mogą utrudniać korzystanie z biblioteki.
 
- Ta reguła sprawdza, czy przed słów kluczowych w następujących językach:
+ Ta reguła sprawdza słowa kluczowe w następujących językach:
 
 - Visual Basic
 
@@ -46,10 +46,10 @@ ms.locfileid: "68189112"
 
 - C++/CLI
 
-  Porównanie bez uwzględniania wielkości liter jest używana do [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] słów kluczowych i porównywanie uwzględniające wielkość liter jest używana w innych językach.
+  Porównanie bez uwzględniania wielkości liter jest używane dla [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] słów kluczowych, a porównanie z uwzględnieniem wielkości liter jest używane dla innych języków.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Wybierz nazwę, która nie ma na liście słów kluczowych.
+ Wybierz nazwę, która nie jest wyświetlana na liście słów kluczowych.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Ostrzeżenie od tej reguły można pominąć, jeśli są przekonane, że identyfikator nie należy mylić użytkowników interfejsu API i czy biblioteki można używać we wszystkich językach, które znajdują się w [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
+ Możesz pominąć ostrzeżenie z tej reguły, Jeśli wiesz, że identyfikator nie będzie mylić użytkowników interfejsu API i że biblioteka jest użyteczna we wszystkich dostępnych językach w [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].

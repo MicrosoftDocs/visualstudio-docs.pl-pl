@@ -9,21 +9,21 @@ helpviewer_keywords:
 - build Devenv switch
 - command-line builds
 ms.assetid: ced21627-7653-455b-8821-3e31c6a448cf
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67aba8d93514618fc09abe933cfd28023136a4d6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9aef4dcdc9069c1bbfe71a90bbaba214ebcd18ed
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790918"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667879"
 ---
 # <a name="build-devenvexe"></a>/Build (devenv.exe)
 
-Kompiluje rozwiązanie lub projekt przy użyciu pliku konfiguracji określonego rozwiązania.
+Kompiluje rozwiązanie lub projekt przy użyciu określonego pliku konfiguracji rozwiązania.
 
 ## <a name="syntax"></a>Składnia
 
@@ -35,39 +35,39 @@ devenv SolutionName /Build [SolnConfigName [/Project ProjName [/ProjectConfig Pr
 
 - *SolutionName*
 
-  Wymagana. Pełna ścieżka i nazwa pliku rozwiązania.
+  Wymagany. Pełna ścieżka i nazwa pliku rozwiązania.
 
 - *SolnConfigName*
 
-  Opcjonalna. Nazwa konfiguracji rozwiązania (takie jak `Debug` lub `Release`) ma być używany w celu skompilowania rozwiązania o nazwie w *SolutionName*. Jeśli dostępnych jest wiele platform rozwiązania, należy także określić platformy (na przykład `Debug|Win32`). Jeśli ten argument jest nieokreślona lub pusty ciąg (`""`), narzędzie użyje aktywnej konfiguracji rozwiązania.
+  Opcjonalny. Nazwa konfiguracji rozwiązania (na przykład `Debug` lub `Release`), która ma zostać użyta do skompilowania rozwiązania o nazwie w *SolutionName*. Jeśli dostępnych jest wiele platform rozwiązań, należy również określić platformę (na przykład `Debug|Win32`). Jeśli ten argument jest nieokreślony lub pusty ciąg (`""`), narzędzie używa aktywnej konfiguracji rozwiązania.
 
-- `/Project` *ProjName*
+- `/Project` *Projname*
 
-  Opcjonalna. Ścieżka i nazwa pliku projektu w rozwiązaniu. Możesz wprowadzić ścieżkę względną z *SolutionName* folderu pliku projektu lub nazwy wyświetlanej projektu, lub pełną ścieżkę i nazwę pliku projektu.
+  Opcjonalny. Ścieżka i nazwa pliku projektu w ramach rozwiązania. Można wprowadzić ścieżkę względną z folderu *SolutionName* do pliku projektu lub nazwę wyświetlaną projektu lub pełną ścieżkę i nazwę pliku projektu.
 
 - `/ProjectConfig` *ProjConfigName*
 
-  Opcjonalna. Nazwa projektu Konfiguracja kompilacji (takich jak `Debug` lub `Release`) ma być używany podczas kompilowania projektu o nazwie. Jeśli więcej niż jedną platformę rozwiązanie jest dostępne, należy także określić platformy (na przykład `Debug|Win32`). Jeśli ten parametr jest określony, zastępuje ona *SolnConfigName* argumentu.
+  Opcjonalny. Nazwa konfiguracji kompilacji projektu (na przykład `Debug` lub `Release`), która ma być używana podczas kompilowania nazwanego projektu. Jeśli jest dostępna więcej niż jedna platforma rozwiązania, należy również określić platformę (na przykład `Debug|Win32`). Jeśli ten przełącznik jest określony, zastępuje argument *SolnConfigName* .
 
 - `/Out` *OutputFilename*
 
-  Opcjonalna. Nazwa pliku, który chcesz wysłać narzędzia danych wyjściowych do. Jeśli plik już istnieje, narzędzie dołączyło dane wyjściowe na końcu pliku.
+  Opcjonalny. Nazwa pliku, do którego chcesz wysłać dane wyjściowe narzędzia. Jeśli plik już istnieje, narzędzie dołącza dane wyjściowe do końca pliku.
 
 ## <a name="remarks"></a>Uwagi
 
-- `/Build` Przełącznika wykonuje taką samą funkcję jak **Kompiluj rozwiązanie** polecenia menu w ramach zintegrowanego środowiska programistycznego (IDE).
+- Przełącznik `/Build` wykonuje tę samą funkcję co polecenie menu **rozwiązania kompilacji** w ramach zintegrowanego środowiska programistycznego (IDE).
 
-- Należy ująć ciągi zawierające spacje w cudzysłów.
+- Ujmij ciągi, które zawierają spacje w podwójnych cudzysłowach.
 
-- Podsumowanie informacji na temat kompilacji, w tym błędy, mogą być wyświetlane w oknie wiersza polecenia lub pliku dziennika określony za pomocą `/Out` przełącznika.
+- Informacje podsumowujące dla kompilacji, w tym błędy, mogą być wyświetlane w oknie wiersza polecenia lub w dowolnym pliku dziennika określonym za pomocą przełącznika `/Out`.
 
-- `/Build` Przełącznika tylko kompilacje projektów, które uległy zmianie od czasu ostatniej kompilacji. Aby utworzyć wszystkie projekty w rozwiązaniu, użyj [/rebuild](../../ide/reference/rebuild-devenv-exe.md) zamiast tego.
+- Przełącznik `/Build` kompiluje tylko projekty, które uległy zmianie od czasu ostatniej kompilacji. Aby skompilować wszystkie projekty w rozwiązaniu, należy zamiast tego użyć [/Rebuild](../../ide/reference/rebuild-devenv-exe.md) .
 
-- Jeśli otrzymasz komunikat o błędzie informujący, że **nieprawidłowa konfiguracja projektu**, upewnij się, że został określony platforma rozwiązania lub projektu platformy (na przykład `Debug|Win32`).
+- Jeśli zostanie wyświetlony komunikat o błędzie z informacją o **nieprawidłowej konfiguracji projektu**, upewnij się, że określono platformę rozwiązania lub platformę projektu (na przykład `Debug|Win32`).
 
 ## <a name="example"></a>Przykład
 
-Następujące polecenie tworzy projekt `CSharpWinApp`przy użyciu `Debug` konfigurację kompilacji projektu w ramach `MySolution`.
+Następujące polecenie kompiluje `CSharpWinApp` projektu przy użyciu konfiguracji kompilacji projektu `Debug` w `MySolution`.
 
 ```shell
 devenv "%USERPROFILE%\source\repos\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
@@ -76,7 +76,7 @@ devenv "%USERPROFILE%\source\repos\MySolution.sln" /build Debug /project "CSharp
 ## <a name="see-also"></a>Zobacz także
 
 - [Projekty i rozwiązania — kompilowanie i czyszczenie](../../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
-- [Przełączniki wiersza polecenia Devenv](../../ide/reference/devenv-command-line-switches.md)
-- [/ Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)
-- [/ Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md)
-- [/ Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)
+- [Przełączniki wiersza polecenia devenv](../../ide/reference/devenv-command-line-switches.md)
+- [/Rebuild (devenv. exe)](../../ide/reference/rebuild-devenv-exe.md)
+- [/Clean (devenv. exe)](../../ide/reference/clean-devenv-exe.md)
+- [/Out (devenv. exe)](../../ide/reference/out-devenv-exe.md)

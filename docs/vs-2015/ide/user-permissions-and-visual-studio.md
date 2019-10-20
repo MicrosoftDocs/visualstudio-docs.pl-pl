@@ -1,5 +1,5 @@
 ---
-title: Uprawnienia użytkownika | Dokumentacja firmy Microsoft
+title: Uprawnienia użytkownika | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -11,15 +11,15 @@ helpviewer_keywords:
 - permissions
 ms.assetid: 70485ed7-6342-41bf-8250-7a6826e21b98
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8bc4920c32d781d31a6aed88699efccf8be6b774
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: b7ffc3a6b3fe5ad5952ecfde6091cbe7e656f305
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65703990"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672674"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Uprawnienia użytkownika i program Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,38 +37,38 @@ Ze względów bezpieczeństwa należy uruchamiać Visual Studio jako zwykły uż
 ||Aktualizacja z wersji próbnej Visual Studio.|[Instrukcje: aktualizacja z wersji próbnej wersji programu Visual Studio](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md)|
 ||Instalowanie, aktualizowanie lub usuwanie lokalnej zawartości Pomocy.|[Instalowanie zawartości lokalnej i zarządzanie nią](../ide/install-and-manage-local-content.md)|
 |Typy aplikacji|Tworzenie rozwiązań dla programu SharePoint 2010.|[Wymagania związane z opracowywaniem rozwiązań SharePoint](https://msdn.microsoft.com/library/ae8ff69d-4540-4380-ab0b-845f7108e89c)|
-||Pobieranie licencji deweloperskiej dla [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)].|[Uzyskaj licencję dewelopera (aplikacje Windows Store)](http://go.microsoft.com/fwlink/?LinkID=241313)|
-|Przybornik|Dodawanie klasycznych formantów COM do **przybornika**.|[Korzystanie z przybornika](../ide/using-the-toolbox.md)|
+||Uzyskiwanie licencji dewelopera na [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)].|[Uzyskaj licencję dewelopera (aplikacje do sklepu Windows)](http://go.microsoft.com/fwlink/?LinkID=241313)|
+|Przybornik|Dodawanie klasycznych kontrolek COM do **przybornika**.|[Korzystanie z przybornika](../ide/using-the-toolbox.md)|
 |Dodatki|Instalowanie i używanie dodatków, które zostały napisane przy użyciu klasycznego modelu COM w IDE.|[Tworzenie dodatków i kreatorów](https://msdn.microsoft.com/library/c5a47c21-6668-4de3-898d-afa969317e73)|
 |Kompilowanie|Używanie zdarzeń mających miejsce po kompilacji, które rejestrują składnik.|[Ogólne informacje o niestandardowych krokach budowania lub zdarzeniach kompilacji](https://msdn.microsoft.com/library/beb2f017-3e9f-4b2c-9b57-2572fd2628e4)|
 ||Włączanie etapu rejestracji podczas kompilowania projektów języka C++.|[Ogólne informacje o niestandardowych krokach budowania lub zdarzeniach kompilacji](https://msdn.microsoft.com/library/beb2f017-3e9f-4b2c-9b57-2572fd2628e4)|
 |Debugowanie|Debugowanie aplikacji, które działają z podwyższonymi uprawnieniami.|[Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)|
 ||Debugowanie aplikacji, które działają na innym koncie użytkownika, takich jak witryny sieci Web programu ASP.NET.|[Debugowanie aplikacji ASP.NET i AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)|
 ||Debugowanie w strefie dla aplikacji przeglądarki XAML (XBAP).|[Host WPF (PresentationHost.exe)](https://msdn.microsoft.com/library/3215bfa1-722c-4ac8-a7c5-bdd02d30afbd)|
-||Używanie emulatora do debugowania projektów usług w chmurze dla systemu Microsoft Azure.|[Debugowanie usługi Chmurowej w programie Visual Studio](http://go.microsoft.com/fwlink/?LinkId=266725)|
+||Używanie emulatora do debugowania projektów usług w chmurze dla Microsoft Azure.|[Debugowanie usługi w chmurze w programie Visual Studio](http://go.microsoft.com/fwlink/?LinkId=266725)|
 ||Konfigurowanie zapory do zdalnego debugowania.|[Konfigurowanie narzędzi zdalnych na urządzeniu](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)|
 |Narzędzia wydajności|Profilowanie aplikacji.|[Profilowanie wydajności — przewodnik dla początkujących](../profiling/beginners-guide-to-performance-profiling.md)|
-|wdrażania|Wdrażanie aplikacji internetowej do usług Internet Information Services (IIS) na komputerze lokalnym.|[Wdrażanie aplikacji sieci Web ASP.NET u dostawcy hostingu przy użyciu programu Visual Studio lub Visual Web Developer: Wdrażanie w usługach IIS jako środowisku testowym](http://go.microsoft.com/fwlink/?LinkId=266478)|
-|Dostarczanie opinii do firmy Microsoft|Zmiana sposobu uczestnictwa w programie konsumenckim programu Visual Studio.|[Instrukcje: Prześlij opinię](../misc/how-to-send-feedback-about-visual-studio.md)|
+|wdrażania|Wdrażanie aplikacji internetowej do usług Internet Information Services (IIS) na komputerze lokalnym.|[Wdrażanie aplikacji sieci Web ASP.NET dla dostawcy hostingu przy użyciu programu Visual Studio lub Visual Web Developer: wdrażanie w usługach IIS jako środowisko testowe](http://go.microsoft.com/fwlink/?LinkId=266478)|
+|Dostarczanie opinii do firmy Microsoft|Zmiana sposobu uczestnictwa w programie konsumenckim programu Visual Studio.|[Instrukcje: wysyłanie opinii](../misc/how-to-send-feedback-about-visual-studio.md)|
 
 ## <a name="running-visual-studio-as-an-administrator"></a>Uruchamianie programu Visual Studio jako administrator
  Możesz uruchomić program Visual Studio z uprawnieniami administracyjnymi przy każdym uruchomieniu IDE lub zmodyfikować skrót aplikacji, aby program był zawsze uruchamiany z uprawnieniami administracyjnymi. Aby uzyskać więcej informacji, zobacz Pomoc systemu Windows.
 
-#### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin8includeswin8-mdmd-includewin81includeswin81-mdmd-includewinserver8includeswinserver8-mdmd-or-includewinblueserver2includeswinblue-server-2-mdmd"></a>Aby uruchomić program Visual Studio z uprawnieniami administracyjnymi [!INCLUDE[win8](../includes/win8-md.md)], [!INCLUDE[win81](../includes/win81-md.md)], [!INCLUDE[winserver8](../includes/winserver8-md.md)], lub [!INCLUDE[winblue_server_2](../includes/winblue-server-2-md.md)]
+#### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin8includeswin8-mdmd-includewin81includeswin81-mdmd-includewinserver8includeswinserver8-mdmd-or-includewinblue_server_2includeswinblue-server-2-mdmd"></a>Aby uruchomić program Visual Studio z uprawnieniami administracyjnymi dotyczącymi [!INCLUDE[win8](../includes/win8-md.md)], [!INCLUDE[win81](../includes/win81-md.md)], [!INCLUDE[winserver8](../includes/winserver8-md.md)] lub [!INCLUDE[winblue_server_2](../includes/winblue-server-2-md.md)]
 
-1. Na **Start** ekranu, wpisz **programu Visual Studio**. Powinna się pojawić wersja lub wersje programu Visual Studio, które zostały zainstalowane.
+1. Na ekranie **startowym** wpisz **Visual Studio**. Powinna się pojawić wersja lub wersje programu Visual Studio, które zostały zainstalowane.
 
 2. Wybierz wersję programu Visual Studio, którą chcesz uruchomić, a następnie wywołaj menu podręczne (wyświetla się u dołu ekranu). Wybierz **Uruchom jako administrator**.
 
      Po uruchomieniu programu Visual Studio **(Administrator)** pojawia się po nazwie produktu na pasku tytułu.
 
-#### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin7includeswin7-mdmd-or-includewinsvr08r2includeswinsvr08-r2-mdmd"></a>Aby uruchomić program Visual Studio z uprawnieniami administracyjnymi [!INCLUDE[win7](../includes/win7-md.md)] lub [!INCLUDE[winsvr08_r2](../includes/winsvr08-r2-md.md)]
+#### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin7includeswin7-mdmd-or-includewinsvr08_r2includeswinsvr08-r2-mdmd"></a>Aby uruchomić program Visual Studio z uprawnieniami administracyjnymi dotyczącymi [!INCLUDE[win7](../includes/win7-md.md)] lub [!INCLUDE[winsvr08_r2](../includes/winsvr08-r2-md.md)]
 
-1. Na **Start** menu, wybierz **wszystkie programy**.
+1. W menu **Start** wybierz polecenie **Wszystkie programy**.
 
-2. W **programu Microsoft Visual Studio** *wersji* wybierz folder **programu Visual Studio** *wersji* Otwórz menu skrótów, a następnie wybierz  **Uruchom jako administrator**.
+2. W folderze *wersja* Microsoft Visual Studio wybierz opcję *wersja* **programu Visual Studio** , otwórz menu skrótów, a następnie wybierz polecenie **Uruchom jako administrator**.
 
      Po uruchomieniu programu Visual Studio **(Administrator)** pojawia się po nazwie produktu na pasku tytułu.
 
 ## <a name="see-also"></a>Zobacz też
- [Przenoszenie, migrowanie i uaktualnianie projektów programu Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [instalowania programu Visual Studio 2015](../install/install-visual-studio-2015.md)
+ Przenoszenie [, migrowanie i uaktualnianie projektów programu Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [Instalowanie programu Visual Studio 2015](../install/install-visual-studio-2015.md)

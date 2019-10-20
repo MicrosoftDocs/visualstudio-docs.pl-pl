@@ -1,5 +1,5 @@
 ---
-title: Ustaw ramce bieżącego stosu — polecenie | Dokumentacja firmy Microsoft
+title: Ustaw bieżącą ramkę stosu — polecenie | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -11,39 +11,35 @@ helpviewer_keywords:
 - Debug.SetCurrentStackFrame command
 ms.assetid: 3dcf52c0-6781-4598-bac2-0094dce67c20
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 87d830e492420844de72a2cd34dbea336e365dfd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4fcb38e565ea4f30ed6e669f8b98df09c9d733ea
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68163358"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665455"
 ---
 # <a name="set-current-stack-frame-command"></a>Ustaw bieżącą ramkę stosu — Polecenie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Umożliwia ustawienie ramki określonego stosu.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```  
-Debug.SetCurrentStackFrame index  
-```  
-  
-## <a name="arguments"></a>Argumenty  
- `index`  
- Wymagane. Wybiera ramkę stosu według indeksu.  
-  
-## <a name="example"></a>Przykład  
-  
-```  
->Debug.SetCurrentStackFrame 1  
-```  
-  
-## <a name="see-also"></a>Zobacz też  
- [Visual Studio Commands](../../ide/reference/visual-studio-commands.md)   
- [Okno polecenia](../../ide/reference/command-window.md)   
- [Znajdź/Command — pole](../../ide/find-command-box.md)   
- [Visual Studio — aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)
+Pozwala ustawić konkretną ramkę stosu.
+
+## <a name="syntax"></a>Składnia
+
+```
+Debug.SetCurrentStackFrame index
+```
+
+## <a name="arguments"></a>Argumenty
+ Wymagane `index`. Wybiera ramkę stosu według jej indeksu.
+
+## <a name="example"></a>Przykład
+
+```
+>Debug.SetCurrentStackFrame 1
+```
+
+## <a name="see-also"></a>Zobacz też
+ Polecenia [programu Visual Studio](../../ide/reference/visual-studio-commands.md) [okno](../../ide/reference/command-window.md) poleceń [Znajdź/polecenie](../../ide/find-command-box.md) [programu Visual Studio — Aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)

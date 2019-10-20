@@ -1,5 +1,5 @@
 ---
-title: Podgląd Pomocy firmy Microsoft | Dokumentacja firmy Microsoft
+title: Podgląd Pomocy firmy Microsoft | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-help-viewer
@@ -17,65 +17,62 @@ helpviewer_keywords:
 - toolbar [Help Viewer 2.0]
 ms.assetid: 74e41666-2ce8-4ac0-a0e5-3723d1e322c2
 caps.latest.revision: 27
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3a1e9a3abd6b16ae0365279a6eb9cb067bfeb225
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 14bae318e052d0c1eb0e23638c0ad78b70e62f7d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430851"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670408"
 ---
 # <a name="microsoft-help-viewer"></a>Podgląd Pomocy firmy Microsoft
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Można zainstalować i wyświetlić zawartość dla różnych produktów i technologii na komputerze lokalnym przy użyciu Podglądu pomocy firmy Microsoft.  
-  
+Korzystając z Podgląd Pomocy firmy Microsoft, można zainstalować i wyświetlić zawartość dla różnych produktów i technologii na komputerze lokalnym.
+
 > [!WARNING]
-> Po zainstalowaniu programu Visual Studio, możesz uzyskać podgląd pomocy. Aby rozpocząć, Odczyt tematów pomocy w Podglądzie pomocy, a nie w witrynie pobierania MSDN, przejdź do **pomocy** menu w programie Visual Studio, wybierz **Ustaw preferencje pomocy**, a następnie wybierz **Uruchom w pomocy Podgląd**. Offline tematy pomocy dla danej wersji programu Visual Studio są dostępne tylko po ostatecznej wersji tej wersji.  
-  
- Możesz wykonać następujące czynności:  
-  
-- Znajdowanie i pobieranie zestawów zawartości, które są również określane jako książki.  
-  
-- Przeglądaj i Przeszukuj spis treści, aby znaleźć tematy według tytułów.  
-  
-- Wyszukuj przedmioty w indeksie.  
-  
-- Znajdowanie informacji przy użyciu wyszukiwania pełnotekstowego.  
-  
-- Wyświetl zakładki i Drukuj tematy.  
-  
-## <a name="navigating-the-help-viewer"></a>Nawigowanie w Podglądzie pomocy  
- Informacje w zainstalowanej treści, używając zakładek nawigacji, oglądać zainstalowaną treść w zakładce lub zakładkach tematów i zarządzać zawartością za pomocą **Zarządzaj zawartością** kartę. Można również wykonywać zadania dodatkowe za pomocą przycisków na pasku narzędzi i dodatkowe informacje można znaleźć w prawym dolnym rogu okna.  
-  
-|||  
-|-|-|  
-|Nawigacja|Za pomocą **zawartość** karcie, można wyświetlić zainstalowaną zawartość jako hierarchię i określić kryteria filtrowania tytułów, które są wyświetlane.<br /><br /> Za pomocą **wyszukiwania** karcie, można wyszukiwać terminy w dowolnym miejscu w treści, w tym tytuły kodu i tematu.<br /><br /> Za pomocą **indeksu** karcie w indeksie, określ kryteria filtrowania wpisów i wymagają indeksu zawierały lub rozpoczynały tekstem, który określisz wpisów.<br /><br /> Za pomocą **ulubione** kartę, może zapisywać łącza do tematów, które są często używane oraz wyświetlać listę tematów, które zostały wyświetlone w ostatnio.|  
-|Wyświetlanie tematu|Każdy temat jest wyświetlany na karcie, a w tym samym czasie można otworzyć wiele tematów.|  
-|Zarządzanie zawartością|Można zainstalować, zaktualizować, przenieść i usunąć zawartość przez użycie **Zarządzaj zawartością** kartę. W górnej części karty, można użyć **źródło instalacji** formantu, aby określić, czy zainstalować książki z lokalizacji sieciowej lub z dysku lub identyfikatora URI. **Ścieżka magazynu lokalnego** polu pokazuje, w którym są zainstalowane książki na komputerze lokalnym i przenieść do innej lokalizacji, wybierając **przenieść** przycisku.<br /><br /> Lista zawartości pokazuje, które książki można zainstalować lub są już zainstalowane, czy jest dostępna aktualizacja, i jak duże jest poszczególne książki. Można zainstalować lub usunąć jedną lub wiele ksiąg, wybierając odpowiednie **Dodaj** lub **Usuń** łącza, a następnie wybierając **aktualizacji** przycisku w obszarze **oczekujące zmiany** okienka. Jeśli aktualizacje są dostępne dla dowolnego książek, które zostały już zainstalowane, można odświeżyć tę zawartość, wybierając **kliknij tutaj, aby pobrać teraz** widocznego u dołu okna. Ponadto wszystkie zainstalowane książki zostaną odświeżone, jeśli aktualizacje są dostępne podczas instalowania dodatkowych książek. **Uwaga:**  Funkcje **zarządzanie zawartością** kartę mogą się różnić, jeśli administrator podglądu pomocy dezaktywuje tych funkcji lub Brak dostępu do Internetu jest dostępna.|  
-  
- Pasek narzędzi w oknie podglądu pomocy zawiera następujące przyciski:  
-  
-- **Pokaż temat w spisie treści** przycisk pokazuje lokalizację tematu w **zawartość** kartę.  
-  
-- **Dodaj do ulubionych** przycisk umożliwia dodanie aktywnego tematu do **ulubione** kartę.  
-  
-- **Znaleźć w temacie** przycisk wyróżnia wyszukiwany tekst w aktywnym temacie.  
-  
-- **Drukowania** przycisku drukuje lub pokazuje jego podgląd aktywnego tematu.  
-  
-- **Opcje podglądu** przycisk powoduje wyświetlenie ustawienia, takie jak rozmiar, jaki tekst jest wyświetlany, ile wyników wyszukiwania do zwrotu, jak wiele tematów pokazywanych w historii i czy chcesz sprawdzać dostępność aktualizacji w trybie online.  
-  
-- **Zarządzanie zawartością** przycisk sprawia, że **zarządzanie zawartością** kartą aktywną.  
-  
-- Mały trójkąt Otwiera listę kart, łącznie z kartami tematów i **zarządzanie zawartością** kartę. Można uaktywnić dowolne z tych zakładek, wybierając je.  
-  
-  Dolny obszar okna podglądu pomocy zawiera informacje o łącznym rozmiarze oczekujących plików do pobrania, ilości miejsca na dysku, którego wymagają i ilość miejsca na dysku, który jest dostępny. Ten obszar zawiera również informacje o błędach, które mogły wystąpić i łącze, które użytkownik może odświeżyć zainstalowaną zawartość, jeśli aktualizacje są dostępne.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Podręcznik administratora programu Podgląd pomocy](../ide/help-viewer-administrator-guide.md)   
- [Instalowanie i zarządzać zawartością lokalną](../ide/install-and-manage-local-content.md)   
- [Lokalizowanie informacji](../ide/locate-information.md)   
- [Rozwiązywanie problemów z Podglądem Pomocy](../ide/troubleshooting-the-help-viewer.md)
+> Po zainstalowaniu programu Visual Studio uzyskasz podgląd pomocy. Aby rozpocząć odczytywanie tematów pomocy w podglądzie pomocy, a nie w witrynie pobierania MSDN, przejdź do menu **Pomoc** w programie Visual Studio, wybierz opcję **Ustaw preferencję pomocy**, a następnie wybierz pozycję **Uruchom w podglądzie pomocy**. Tematy pomocy online dla danej wersji programu Visual Studio są dostępne dopiero po ostatecznej wersji tej wersji.
+
+ Można wykonać następujące czynności:
+
+- Znajdź i Pobierz zestawy zawartości, które są również nazywane książkami.
+
+- Przeglądaj i przeszukuj Spis treści, aby znaleźć tematy według tytułu.
+
+- Wyszukiwanie tematów w indeksie.
+
+- Znajdź informacje przy użyciu wyszukiwania pełnotekstowego.
+
+- Wyświetlanie, zakładanie i drukowanie tematów.
+
+## <a name="navigating-the-help-viewer"></a>Nawigowanie w podglądzie pomocy
+ Informacje w zainstalowanej zawartości można znaleźć, korzystając z kart nawigacyjnych, wyświetlić zainstalowaną zawartość na karcie tematu lub kartach i zarządzać zawartością przy użyciu karty **Zarządzanie zawartością** . Możesz również wykonywać dodatkowe zadania za pomocą przycisków na pasku narzędzi i znaleźć dodatkowe informacje w prawym dolnym rogu okna.
+
+|||
+|-|-|
+|Nawigacja|Za pomocą karty **zawartość** można wyświetlić zainstalowaną zawartość jako hierarchię i określić kryteria filtrowania wyświetlanych tytułów.<br /><br /> Korzystając z karty **Wyszukiwanie** , można wyszukiwać terminy w dowolnym miejscu w zawartości, w tym na tytuły kodu i tematu.<br /><br /> Za pomocą karty **indeks** można wyszukać indeks, określić kryteria filtrowania wpisów i wymagać, aby wpisy indeksu zawierały lub rozpoczynać się od określonego tekstu.<br /><br /> Za pomocą karty **Ulubione** można zapisywać linki do często używanych tematów, a także wyświetlać listę tematów, które były ostatnio oglądane.|
+|Wyświetlanie tematu|Każdy temat jest wyświetlany na karcie i można otworzyć wiele tematów w tym samym czasie.|
+|Zarządzanie zawartością|Można instalować, aktualizować, przenosić i usuwać zawartość za pomocą karty **Zarządzanie zawartością** . W górnej części karty można użyć kontroli **źródła instalacji** , aby określić, czy mają być instalowane książki z lokalizacji sieciowej, czy z dysku lub identyfikatora URI. Pole **ścieżka do magazynu lokalnego** pokazuje, gdzie są zainstalowane książki na komputerze lokalnym, a następnie można przenieść je do innej lokalizacji, wybierając przycisk **Przenieś** .<br /><br /> Lista zawartości zawiera informacje o książkach, które można zainstalować lub których instalacja została już zainstalowana, o tym, czy jest dostępna aktualizacja oraz jak duże są poszczególne książki. Możesz zainstalować lub usunąć jedną lub więcej książek, wybierając odpowiednie **Dodaj** lub **Usuń** linki, a następnie wybierając przycisk **Aktualizuj** w okienku **oczekujące zmiany** . Jeśli aktualizacje są dostępne dla dowolnych książek, które zostały już zainstalowane, możesz odświeżyć tę zawartość, wybierając link **kliknij tutaj, aby pobrać teraz** w dolnej części okna. Ponadto wszystkie zainstalowane książki będą odświeżane, jeśli aktualizacje są dostępne podczas instalacji dodatkowych książek. **Uwaga:**  Funkcje karty **Zarządzanie zawartością** mogą się różnić, jeśli administrator podglądu pomocy dezaktywuje te funkcje lub jeśli nie jest dostępny żaden dostęp do Internetu.|
+
+ Pasek narzędzi w oknie podglądu pomocy zawiera następujące przyciski:
+
+- Przycisk **Pokaż temat w spisie treści** pokazuje lokalizację tematu na karcie **zawartość** .
+
+- Przycisk **Dodaj do ulubionych** dodaje aktywny temat do karty **Ulubione** .
+
+- Przycisk **Znajdź w temacie** wyróżnia tekst wyszukiwania w aktywnym temacie.
+
+- Przycisk **Drukuj** drukuje lub pokazuje podgląd aktywnego tematu.
+
+- Przycisk **Opcje podglądu** wyświetla ustawienia, takie jak rozmiar wyświetlanego tekstu, liczba wyników wyszukiwania do zwrócenia, liczba tematów pokazywanych w historii i sprawdzanie dostępności aktualizacji w trybie online.
+
+- Przycisk **Zarządzaj zawartością** powoduje, że aktywna jest karta **Zarządzanie zawartością** .
+
+- Niewielki Trójkąt otwiera listę kart, w tym karty tematów i kartę **Zarządzaj zawartością** . Można uaktywnić dowolne z tych kart, wybierając je.
+
+  Dolny obszar okna podglądu pomocy zawiera informacje o łącznym rozmiarze oczekujących pobrań, ilości wolnego miejsca na dysku i ilości dostępnego miejsca na dysku. Ten obszar zawiera również informacje o błędach, które mogły wystąpić, oraz link umożliwiający odświeżenie zainstalowanej zawartości, jeśli są dostępne aktualizacje.
+
+## <a name="see-also"></a>Zobacz też
+ [Podręcznik administratora programu Help Viewer](../ide/help-viewer-administrator-guide.md) [Instalowanie i zarządzanie zawartością lokalną](../ide/install-and-manage-local-content.md) [lokalizowanie informacji](../ide/locate-information.md) [Rozwiązywanie problemów z podglądem pomocy](../ide/troubleshooting-the-help-viewer.md)

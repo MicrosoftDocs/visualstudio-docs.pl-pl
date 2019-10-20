@@ -1,5 +1,5 @@
 ---
-title: 'CA1600: Nie używaj priorytetu procesu bezczynności | Dokumentacja firmy Microsoft'
+title: 'CA1600: nie używaj priorytetu procesu bezczynności | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,34 +12,34 @@ helpviewer_keywords:
 - DoNotUseIdleProcessPriority
 ms.assetid: 9b0d073b-78b6-41be-8ef3-14692a735283
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 4002e17e3988ca3b449e141394ce762f95ffc78b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d4260db808d9c50f78388cf6ba976f7ace52e6a3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68189304"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669297"
 ---
-# <a name="ca1600-do-not-use-idle-process-priority"></a>CA1600: Nie używaj priorytetu procesu o wartości Bezczynny
+# <a name="ca1600-do-not-use-idle-process-priority"></a>CA1600: Nie używaj priorytetu procesu bezczynności
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|DoNotUseIdleProcessPriority|
 |CheckId|CA1600|
-|Kategoria|Microsoft.Mobility|
+|Kategoria|Microsoft. Mobility|
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Ta reguła jest uruchamiana podczas procesów są ustawione na `ProcessPriorityClass.Idle`.
+ Ta reguła występuje, gdy dla procesów ustawiono wartość `ProcessPriorityClass.Idle`.
 
 ## <a name="rule-description"></a>Opis reguły
- Nie należy ustawiać priorytetu procesu na Idle. Procesy, które mają `System.Diagnostics.ProcessPriorityClass.Idle` , zajmują Procesor, może być bezczynne, a zatem będą blokować stan wstrzymania.
+ Nie należy ustawiać priorytetu procesu na Idle. Procesy, które mają `System.Diagnostics.ProcessPriorityClass.Idle` będą zajmowały procesor CPU, gdy będzie w przeciwnym razie w stanie bezczynności.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Ustaw procesy `ProcessPriorityClass.BelowNormal`.
+ Ustaw procesy na `ProcessPriorityClass.BelowNormal`.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Ta reguła ma być pomijana, tylko wtedy, gdy priorytetu procesu bezczynności jest wymagany i zagadnienia dotyczące mobilności można bezpiecznie zignorować.
+ Ta reguła powinna być pomijana tylko wtedy, gdy wymagany jest priorytet bezczynnego procesu, a zagadnienia dotyczące mobilności można bezpiecznie zignorować.

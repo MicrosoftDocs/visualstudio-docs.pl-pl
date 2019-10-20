@@ -1,5 +1,5 @@
 ---
-title: 'CA1049: Typy, które posiadają natywne zasoby powinny być usuwalne | Dokumentacja firmy Microsoft'
+title: 'CA1049: typy posiadające zasoby natywne powinny być jednorazowe | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,54 +12,54 @@ helpviewer_keywords:
 - CA1049
 ms.assetid: 084e587d-0e45-4092-b767-49eed30d6a35
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 34a7b8352da8e8e8a3b92f36fe1d636633e3a8c9
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: aaaf95346c51e2cb5cadb01a39e482bb508bc764
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65686114"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668904"
 ---
-# <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049: Typy, do których należą natywne zasoby, powinny być możliwe do likwidacji
+# <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049: Typy, które posiadają natywne zasoby powinny być usuwalne
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|TypesThatOwnNativeResourcesShouldBeDisposable|
 |CheckId|CA1049|
-|Kategoria|Microsoft.Design|
-|Zmiana kluczowa|Bez podziału|
+|Kategoria|Microsoft. Design|
+|Zmiana kluczowa|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
- Odwołuje się do typu <xref:System.IntPtr?displayProperty=fullName> pola <xref:System.UIntPtr?displayProperty=fullName> pola lub <xref:System.Runtime.InteropServices.HandleRef?displayProperty=fullName> pola, ale nie implementuje <xref:System.IDisposable?displayProperty=fullName>.
+ Typ odwołuje się do pola <xref:System.IntPtr?displayProperty=fullName>, <xref:System.UIntPtr?displayProperty=fullName> lub pola <xref:System.Runtime.InteropServices.HandleRef?displayProperty=fullName>, ale nie implementuje <xref:System.IDisposable?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Opis reguły
- Reguła ta zakłada, że <xref:System.IntPtr>, <xref:System.UIntPtr>, i <xref:System.Runtime.InteropServices.HandleRef> pola Zapisz wskaźniki do niezarządzanych zasobów. Typy, które alokują niezarządzane zasoby, powinny implementować <xref:System.IDisposable> aby umożliwić wywołującym zwolnienie tych zasobów na żądanie i skrócenie czasu istnienia obiektów, które zawierają te zasoby.
+ Ta reguła zakłada, że pola <xref:System.IntPtr>, <xref:System.UIntPtr> i <xref:System.Runtime.InteropServices.HandleRef> przechowują wskaźniki do zasobów niezarządzanych. Typy, które przydzielą zasoby niezarządzane, powinny implementować <xref:System.IDisposable>, aby umożliwić wywoływanie tych zasobów na żądanie i skrócić okresy istnienia obiektów przechowujących zasoby.
 
- Zalecany wzorzec projektowania do wyczyścić niezarządzane zasoby ma na celu dostarczenie ukrytego i oznacza, że jawne zwolnienie tych zasobów za pomocą <xref:System.Object.Finalize%2A?displayProperty=fullName> metody i <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> metody, odpowiednio. Moduł odśmiecania pamięci wywołuje <xref:System.Object.Finalize%2A> metodę obiektu w nieokreślonym czasie po obiekt jest określany jako nie jest już dostępny. Po <xref:System.Object.Finalize%2A> jest wywoływana, dodatkowy wyrzucania elementów bezużytecznych jest wymagany w celu zwolnienia obiektu. <xref:System.IDisposable.Dispose%2A> Metoda umożliwia obiektowi wywołującemu jawnie zwalniać zasoby na żądanie, starsze niż zasoby zostaną zwolnione, jeśli pole pozostanie na wyrzucanie elementów bezużytecznych. Po go czyści niezarządzane zasoby <xref:System.IDisposable.Dispose%2A> powinny wywoływać <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> metodę, aby umożliwić poinformować, że moduł odśmiecania pamięci <xref:System.Object.Finalize%2A> nie ma już wywołane; to eliminuje potrzebę stosowania dodatkowych wyrzucania elementów bezużytecznych i skraca okres istnienia obiektu.
+ Zalecany Wzorzec projektowy w celu oczyszczenia zasobów niezarządzanych polega na dostarczeniu zarówno niejawnego, jak i jawnego środka do zwolnienia tych zasobów przy użyciu metody <xref:System.Object.Finalize%2A?displayProperty=fullName> i metody <xref:System.IDisposable.Dispose%2A?displayProperty=fullName>. Moduł wyrzucania elementów bezużytecznych wywołuje metodę <xref:System.Object.Finalize%2A> obiektu w pewnym nieokreślonym czasie po ustaleniu obiektu, aby nie był już osiągalny. Po wywołaniu <xref:System.Object.Finalize%2A> jest wymagane dodatkowe wyrzucanie elementów bezużytecznych w celu zwolnienia obiektu. Metoda <xref:System.IDisposable.Dispose%2A> umożliwia obiektowi wywołującemu jawne zwolnienie zasobów na żądanie, w przypadku gdy pozostawiono do modułu wyrzucania elementów bezużytecznych. Po oczyszczeniu zasobów niezarządzanych <xref:System.IDisposable.Dispose%2A> powinna wywołać metodę <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>, aby pozwolić modułowi wyrzucania elementów bezużytecznych, który nie <xref:System.Object.Finalize%2A> już wywoływany; Eliminuje to konieczność dodatkowego wyrzucania elementów bezużytecznych i skraca okres istnienia obiektu.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Aby naprawić naruszenie tej zasady, należy zaimplementować <xref:System.IDisposable>.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Jest bezpieczne pominąć ostrzeżenie od tej reguły, jeśli typ nie odwołuje się do niezarządzanego zasobu. W przeciwnym razie nie Pomijaj ostrzeżeń dla tej reguły, ponieważ nie można zaimplementować <xref:System.IDisposable> może spowodować, że zasoby niezarządzane stać się niedostępne lub rozłączania.
+ Jeśli typ nie odwołuje się do niezarządzanego zasobu, można bezpiecznie pominąć ostrzeżenie z tej reguły. W przeciwnym razie nie pomijaj ostrzeżenia z tej reguły, ponieważ błąd implementacji <xref:System.IDisposable> może spowodować, że niezarządzane zasoby staną się niedostępne lub nieużywane.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład przedstawia typ, który implementuje <xref:System.IDisposable> wyczyścić niezarządzany zasób.
+ Poniższy przykład przedstawia typ, który implementuje <xref:System.IDisposable> w celu oczyszczenia niezarządzanego zasobu.
 
  [!code-csharp[FxCop.Design.UnmanagedResources#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.UnmanagedResources/cs/FxCop.Design.UnmanagedResources.cs#1)]
  [!code-vb[FxCop.Design.UnmanagedResources#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.UnmanagedResources/vb/FxCop.Design.UnmanagedResources.vb#1)]
 
 ## <a name="related-rules"></a>Powiązane reguły
- [CA2115: Wywołaj GC. KeepAlive podczas korzystania z zasobów natywnych](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
+ [CA2115: Wywołaj funkcję GC.KeepAlive w przypadku korzystania z zasobów natywnych](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
 
- [CA1816: Wywołaj GC. SuppressFinalize poprawnie](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)
+ [CA1816: Wywołaj poprawnie metodę GC.SuppressFinalize](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)
 
- [CA2216: Typy możliwe do rozporządzania powinny deklarować finalizator](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
+ [CA2216: Typy możliwe do likwidacji powinny deklarować finalizator](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
 
- [CA1001: Typy, które posiadają pola usuwalne powinny być usuwalne](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)
+ [CA1001: Typy z polami możliwymi do likwidacji powinny być możliwe do likwidacji](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)
 
 ## <a name="see-also"></a>Zobacz też
   [Wzorzec Dispose](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)

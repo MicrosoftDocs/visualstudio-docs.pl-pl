@@ -1,5 +1,5 @@
 ---
-title: 'CA2215: Metody Dispose powinny wywoływać metodę dispose klasy bazowej | Dokumentacja firmy Microsoft'
+title: 'CA2215: metody Dispose powinny wywoływać metodę Dispose klasy bazowej | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -13,47 +13,47 @@ helpviewer_keywords:
 - CA2215
 ms.assetid: c772e7a6-a87e-425c-a70e-912664ae9042
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: bc934afd9289a6bce425084f3588a7e912baf9b9
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 89f3705169fb9d28a1ec773671d460f00b98d892
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65681193"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662851"
 ---
-# <a name="ca2215-dispose-methods-should-call-base-class-dispose"></a>CA2215: Metody Dispose powinny wywoływać metodę Dispose klasy bazowej
+# <a name="ca2215-dispose-methods-should-call-base-class-dispose"></a>CA2215: Metody Dispose powinny wywoływać operację usuwania klasy bazowej
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|DisposeMethodsShouldCallBaseClassDispose|
 |CheckId|CA2215|
-|Kategoria|Microsoft.Usage|
-|Zmiana kluczowa|Bez podziału|
+|Kategoria|Microsoft. Usage|
+|Zmiana kluczowa|Bez przerywania|
 
 ## <a name="cause"></a>Przyczyna
- Typ, który implementuje <xref:System.IDisposable?displayProperty=fullName> dziedziczy z typu, który także implementuje <xref:System.IDisposable>. <xref:System.IDisposable.Dispose%2A> Metoda dziedziczącej typu nie mogą wywoływać <xref:System.IDisposable.Dispose%2A> metodę typu nadrzędnego.
+ Typ, który implementuje <xref:System.IDisposable?displayProperty=fullName> dziedziczy z typu, który również implementuje <xref:System.IDisposable>. Metoda <xref:System.IDisposable.Dispose%2A> typu dziedziczenia nie wywołuje metody <xref:System.IDisposable.Dispose%2A> typu nadrzędnego.
 
 ## <a name="rule-description"></a>Opis reguły
- Jeśli typ dziedziczy z typu usuwalnego, musi on wywołać <xref:System.IDisposable.Dispose%2A> metody typu podstawowego z w obrębie własnej <xref:System.IDisposable.Dispose%2A> metody. Wywołanie metody typu podstawowego usuwania gwarantuje, czy wszystkie zasoby utworzone przez typ bazowy są wydawane.
+ Jeśli typ dziedziczy z typu jednorazowego, musi wywołać metodę <xref:System.IDisposable.Dispose%2A> typu podstawowego z poziomu własnej metody <xref:System.IDisposable.Dispose%2A>. Wywołanie metody Dispose typu podstawowego gwarantuje, że wszystkie zasoby utworzone przez typ podstawowy są wydane.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, należy wywołać `base`.<xref:System.IDisposable.Dispose%2A> w swojej <xref:System.IDisposable.Dispose%2A> metody.
+ Aby naprawić naruszenie tej reguły, wywołaj `base`. <xref:System.IDisposable.Dispose%2A> w metodzie <xref:System.IDisposable.Dispose%2A>.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Jest to bezpieczne pominąć ostrzeżenie od tej reguły, jeśli wywołanie `base`.<xref:System.IDisposable.Dispose%2A> występuje, dokładniejsze wywoływania niż sprawdzanie reguły.
+ Jeśli wywołanie do `base` było bezpieczne, można pominąć ostrzeżenie z tej reguły. <xref:System.IDisposable.Dispose%2A> występuje na bardziej szczegółowym poziomie wywoływania niż sprawdzanie reguł.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie pokazano typu `TypeA` implementującej <xref:System.IDisposable>.
+ W poniższym przykładzie przedstawiono typ `TypeA` implementujący <xref:System.IDisposable>.
 
  [!code-csharp[FxCop.Usage.IDisposablePattern#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.IDisposablePattern/cs/FxCop.Usage.IDisposablePattern.cs#1)]
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie pokazano typu `TypeB` który dziedziczy z typu `TypeA` i prawidłowo wywołuje jego <xref:System.IDisposable.Dispose%2A> metody.
+ W poniższym przykładzie przedstawiono typ `TypeB`, który dziedziczy po typie `TypeA` i prawidłowo wywołuje metodę <xref:System.IDisposable.Dispose%2A>.
 
  [!code-vb[FxCop.Usage.IDisposableBaseCalled#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.IDisposableBaseCalled/vb/FxCop.Usage.IDisposableBaseCalled.vb#1)]
 
 ## <a name="see-also"></a>Zobacz też
- <xref:System.IDisposable?displayProperty=fullName> [Wzorzec Dispose](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)
+ <xref:System.IDisposable?displayProperty=fullName> — [wzorzec usuwania](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)

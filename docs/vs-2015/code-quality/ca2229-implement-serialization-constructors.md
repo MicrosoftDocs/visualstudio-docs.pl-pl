@@ -1,5 +1,5 @@
 ---
-title: 'CA2229: Zaimplementuj konstruktory serializacji | Dokumentacja firmy Microsoft'
+title: 'CA2229: Implementuj konstruktory serializacji | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,51 +12,51 @@ helpviewer_keywords:
 - ImplementSerializationConstructors
 ms.assetid: 8e04d5fe-dfad-445a-972e-0648324fac45
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 41e296a979557a42a96c2f57ce49610d88b98a40
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 56d53717afc8cd966903e75f77e1745de0031745
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68201581"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662842"
 ---
-# <a name="ca2229-implement-serialization-constructors"></a>CA2229: Zaimplementuj konstruktory serializacji
+# <a name="ca2229-implement-serialization-constructors"></a>CA2229: Należy zaimplementować konstruktory serializacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|ImplementSerializationConstructors|
 |CheckId|CA2229|
-|Kategoria|Microsoft.Usage|
-|Zmiana kluczowa|Bez podziału|
+|Kategoria|Microsoft. Usage|
+|Zmiana kluczowa|Bez przerywania|
 
 ## <a name="cause"></a>Przyczyna
- Typ implementuje <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interfejsu, nie jest delegat lub interfejsu i jest spełniony jeden z następujących warunków:
+ Typ implementuje interfejs <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>, nie jest obiektem delegowanym ani interfejsem, a jeden z następujących warunków jest spełniony:
 
-- Typ nie ma konstruktora przyjmującego <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> obiektu i <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> obiektu (podpis konstruktora serializacji).
+- Typ nie ma konstruktora, który przyjmuje obiekt <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> i obiekt <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> (sygnatura konstruktora serializacji).
 
-- Niezapieczętowany typ i modyfikator dostępu dla jego konstruktora serializacji nie jest chroniony (rodzina).
+- Typ jest niezapieczętowany i modyfikator dostępu dla jego konstruktora serializacji nie jest chroniony (rodzina).
 
-- Typ nie jest zapieczętowany i nie jest prywatny modyfikator dostępu dla jego konstruktora serializacji.
+- Typ jest zapieczętowany i modyfikator dostępu dla jego konstruktora serializacji nie jest prywatny.
 
 ## <a name="rule-description"></a>Opis reguły
- Ta reguła ma znaczenie dla typów, które obsługują niestandardowej serializacji. Typ obsługuje niestandardowej serializacji, jeśli implementuje <xref:System.Runtime.Serialization.ISerializable> interfejsu. Konstruktor serializacji jest wymagany do deserializacji lub ponownie utworzyć obiekty, które zostały zserializowanym przy użyciu <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> metody.
+ Ta reguła ma zastosowanie do typów, które obsługują serializację niestandardowe. Typ obsługuje serializacji niestandardowej, jeśli implementuje interfejs <xref:System.Runtime.Serialization.ISerializable>. Konstruktor serializacji jest wymagany do deserializacji lub ponownego tworzenia obiektów, które zostały zserializowane przy użyciu metody <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName>.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Aby naprawić naruszenie tej zasady, należy zaimplementować konstruktora serializacji. Dla zamkniętej klasy należy ustawić konstruktor prywatny; w przeciwnym razie powinien być chroniony.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Nie pomijaj naruszenie reguły. Typ nie będzie można ich zdeserializować i nie będzie działać w wielu scenariuszach.
+ Nie pomijaj naruszenia reguły. Typ nie może być deserializowany i nie będzie działać w wielu scenariuszach.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład pokazuje typ, który spełnia reguły.
+ Poniższy przykład pokazuje typ, który spełnia regułę.
 
  [!code-csharp[FxCop.Usage.ISerializableCtor#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.ISerializableCtor/cs/FxCop.Usage.ISerializableCtor.cs#1)]
 
 ## <a name="related-rules"></a>Powiązane reguły
- [CA2237: Oznacz typy ISerializable atrybutem SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
+ [CA2237: Oznacz typy ISerializable za pomocą atrybutu SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
 
 ## <a name="see-also"></a>Zobacz też
  <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName><xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>

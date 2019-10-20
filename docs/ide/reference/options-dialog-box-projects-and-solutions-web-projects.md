@@ -5,35 +5,35 @@ ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Projects.WebProjects
 ms.assetid: ea813046-1ae6-4c9f-9784-dc41494101b9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0d645d8c1c204105f5e505cd34386a1fcc19b46
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9419721a7d18f694f3be0afe4f12c9a3c8594ad2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945667"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666405"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>Okno dialogowe Opcje, Projekty i rozwiązania, Projekty sieci Web
 
-Ustawia serwer sieci web, który projektów sieci web będzie używany do tworzenia aplikacji w ramach [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Aby uzyskać dostęp do tych opcji, należy zaznaczyć **Narzędzia > Opcje** rozwiń **projekty i rozwiązania**i wybierz **projektów sieci Web**.
+Ustawia serwer sieci Web, który będzie używany przez projekty sieci Web do programowania w ramach [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Aby uzyskać dostęp do tych opcji, wybierz pozycję **narzędzia > opcje** rozwiń pozycję **projekty i rozwiązania**, a następnie wybierz pozycję **projekty sieci Web**.
 
-Domyślnie uruchamianie projektu sieci web w programie Visual Studio używa serwera wdrożeniowego programu Visual Studio. Aby uzyskać więcej informacji, zobacz [serwerów sieci Web w programie Visual Studio dla projektów sieci Web platformy ASP.NET](/previous-versions/aspnet/58wxa9w5\(v\=vs.120\)).
+Domyślnie uruchamianie projektu sieci Web w programie Visual Studio korzysta z serwera deweloperskiego programu Visual Studio. Aby uzyskać więcej informacji, zobacz [serwery sieci Web w programie Visual Studio for ASP.NET — projekty sieci Web](/previous-versions/aspnet/58wxa9w5\(v\=vs.120\)).
 
 ## <a name="settings"></a>Ustawienia
 
-**Użyj 64-bitowej wersji usług IIS Express dla projektów i witryn sieci web**
+**Korzystanie z 64-bitowej wersji IIS Express dla witryn i projektów sieci Web**
 
-Wybierz tę opcję, aby używać usług IIS Express zamiast serwera wdrożeniowego programu Visual Studio. Aby uzyskać więcej informacji, zobacz [wprowadzenie do usług IIS Express](http://go.microsoft.com/?linkid=9747914) i [usług IIS Express — omówienie](http://go.microsoft.com/?linkid=9747915).
+Wybierz tę opcję, aby użyć IIS Express zamiast serwera deweloperskiego programu Visual Studio. Aby uzyskać więcej informacji, zobacz [wprowadzenie IIS Express](http://go.microsoft.com/?linkid=9747914) i [IIS Express przegląd](http://go.microsoft.com/?linkid=9747915).
 
-**Ostrzegaj przed uruchomieniem aplikacji sieci web, gdy występują błędy na liście błędów**
+**Ostrzegaj przed uruchomieniem aplikacji sieci Web, jeśli na liście błędów znajdują się błędy**
 
-Jeśli ta opcja jest ustawiona, zostanie wyświetlone ostrzeżenie, jeśli podczas próby uruchomienia aplikacji sieci web, gdy nie kompiluje się bez błędów.
+Jeśli ta opcja jest ustawiona, pojawi się ostrzeżenie, jeśli spróbujesz uruchomić aplikację sieci Web, gdy nie zostanie ona skompilowana bez błędów.
 
 ## <a name="see-also"></a>Zobacz też
 
 - [Okno dialogowe Opcje, projekty i rozwiązania](projects-and-solutions-options-dialog-box.md)
-- [Okno dialogowe Opcje, projekty i rozwiązania, kompilowanie i uruchamianie](options-dialog-box-projects-and-solutions-web-projects.md)
+- [Okno dialogowe Opcje, projekty i rozwiązania, kompilacja i uruchomienie](options-dialog-box-projects-and-solutions-web-projects.md)

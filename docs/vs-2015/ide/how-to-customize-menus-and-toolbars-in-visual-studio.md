@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Dostosowywanie menu i paski narzędzi'
+title: 'Porady: Dostosowywanie menu i pasków zadań'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -25,23 +25,23 @@ helpviewer_keywords:
 - toolbars [Visual Studio], customizing in the IDE
 ms.assetid: b570ae2f-5302-45dc-9cc9-8d4d1ad50603
 caps.latest.revision: 31
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 91223021ce6f05b91d47e7b7019fb0c5c02243db
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 500debe6faa62079c6a93185bac409e7a3bf2813
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416790"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668003"
 ---
-# <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Instrukcje: Dostosowywanie menu i pasków zadań w programie Visual Studio
+# <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Porady: Dostosowywanie menu i pasków zadań w Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Można dostosować Visual Studio nie tylko przez dodawanie i usuwanie pasków narzędzi i menu na pasku menu, ale także przez dodawanie i usuwanie poleceń dowolnego danego paska narzędzi lub menu.
 
 > [!WARNING]
-> Po dostosowaniu paska narzędzi lub menu, upewnij się, że jego pole wyboru pozostaje wybrane w **Dostosuj** okno dialogowe. W przeciwnym razie zmiany nie są zachowywane po zamknięciu i ponownym otwarciu Visual Studio.
+> Po dostosowaniu paska narzędzi lub menu upewnij się, że pole wyboru pozostaje zaznaczone w oknie dialogowym **Dostosowywanie** . W przeciwnym razie zmiany nie są zachowywane po zamknięciu i ponownym otwarciu Visual Studio.
 
  **W tym temacie:**
 
@@ -53,78 +53,78 @@ Można dostosować Visual Studio nie tylko przez dodawanie i usuwanie pasków na
 
 - [Resetowanie menu lub paska narzędzi](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#bkmk_reset)
 
-## <a name="bkmk_addmenu"></a> Dodawanie, usuwanie lub przenoszenie menu na pasku menu
+## <a name="bkmk_addmenu"></a>Dodawanie, usuwanie lub przenoszenie menu na pasku menu
 
-1. Na pasku menu wybierz **narzędzia**, **Dostosuj**.
+1. Na pasku menu wybierz **Narzędzia**, **Dostosuj**.
 
-     **Dostosuj** zostanie otwarte okno dialogowe.
+     Zostanie otwarte okno dialogowe **Dostosuj** .
 
-2. Na **polecenia** kartę, pozostaw **pasek Menu** wybrany przycisk opcji, należy pozostawić **pasek Menu** zaznaczony na liście obok tej opcji, a następnie wykonaj jedną z następujących zestawów kroki:
+2. Na karcie **polecenia** pozostaw wybrany przycisk opcji **pasek menu** , pozostaw **pasek menu** zaznaczony na liście obok tej opcji, a następnie wykonaj jeden z następujących zestawów czynności:
 
-    - Aby dodać menu, wybierz opcję **Dodaj nowe Menu** przycisku, wybierz polecenie **Modyfikuj zaznaczenie** przycisk, a następnie nadaj nazwę menu, które chcesz dodać.
+    - Aby dodać menu, wybierz przycisk **Dodaj nowe menu** , wybierz przycisk **Modyfikuj wybór** , a następnie nadaj nazwę menu, które chcesz dodać.
 
-         ![Dostosuj — okno dialogowe, w którym pokazano, jak dodać menu](../ide/media/addmenu.png "DodajMenu")
+         ![Dostosowywanie okna dialogowego przedstawiającego sposób dodawania menu](../ide/media/addmenu.png "AddMenu")
 
-    - Aby usunąć menu, wybierz je **kontrolki** , a następnie wybierz **Usuń** przycisku.
+    - Aby usunąć menu, wybierz je z listy **formanty** , a następnie wybierz przycisk **Usuń** .
 
-    - Aby przenieść menu na pasku menu, wybierz menu z **kontrolki** , a następnie wybierz **Przenieś w górę** lub **Przenieś w dół** przycisku.
+    - Aby przenieść menu na pasku menu, wybierz menu na liście **kontrolki** , a następnie wybierz przycisk **Przenieś w górę** lub **Przenieś w dół** .
 
-## <a name="bkmk_addtoolbar"></a> Dodawanie, usuwanie lub przenoszenie paska narzędzi
+## <a name="bkmk_addtoolbar"></a>Dodawanie, usuwanie lub przenoszenie paska narzędzi
 
-1. Na pasku menu wybierz **narzędzia**, **Dostosuj**.
+1. Na pasku menu wybierz **Narzędzia**, **Dostosuj**.
 
-     **Dostosuj** zostanie otwarte okno dialogowe.
+     Zostanie otwarte okno dialogowe **Dostosuj** .
 
-2. Na **narzędzi** karcie, wykonaj jedną z następujących zbiorów czynności:
+2. Na karcie **pasek narzędzi** wykonaj jeden z następujących zestawów czynności:
 
-    - Aby dodać pasek narzędzi, wybierz **New** przycisk, określ nazwę dla paska narzędzi, który chcesz dodać, a następnie wybierz **OK** przycisku.
+    - Aby dodać pasek narzędzi, wybierz przycisk **Nowy** , określ nazwę paska narzędzi, który chcesz dodać, a następnie wybierz przycisk **OK** .
 
-         ![Dostosuj — okno dialogowe, w którym pokazano, jak dodać pasek narzędzi](../ide/media/addtoolbar.png "AddToolbar")
+         ![Dostosuj okno dialogowe pokazujące, jak dodać pasek narzędzi](../ide/media/addtoolbar.png "AddToolBar")
 
-    - Aby usunąć niestandardowy pasek narzędzi, wybierz je **pasków narzędzi** , a następnie wybierz **Usuń** przycisku.
+    - Aby usunąć niestandardowy pasek narzędzi, wybierz go na liście **paski narzędzi** , a następnie wybierz przycisk **Usuń** .
 
         > [!IMPORTANT]
         > Możesz usunąć paski narzędzi, które utworzyłeś, ale nie domyślne paski narzędzi.
 
-    - Aby przenieść pasek narzędzi w inne miejsce dokowania, wybierz je **pasków narzędzi** wybierz **Modyfikuj zaznaczenie** przycisk, a następnie wybierz lokalizację na liście.
+    - Aby przenieść pasek narzędzi do innej lokalizacji dokowania, wybierz ją na liście **paski narzędzi** , wybierz przycisk **Modyfikuj wybór** , a następnie wybierz lokalizację na wyświetlonej liście.
 
          Możesz również przeciągnąć pasek narzędzi za jego lewą krawędź, aby przenieść go w dowolne miejsce w głównym obszarze dokowania.
 
         > [!NOTE]
-        > Aby uzyskać więcej informacji na temat sposobu zwiększania użyteczności i dostępności pasków narzędzi, zobacz [jak: Ustawianie opcji ułatwień dostępu IDE](../ide/reference/how-to-set-ide-accessibility-options.md).
+        > Aby uzyskać więcej informacji na temat zwiększania użyteczności i dostępności pasków narzędzi, zobacz [How to: Set opcje ułatwienia dostępu IDE](../ide/reference/how-to-set-ide-accessibility-options.md).
 
-## <a name="bkmk_customize"></a> Dostosowywanie menu lub paska narzędzi
+## <a name="bkmk_customize"></a>Dostosowywanie menu lub paska narzędzi
 
-1. Na pasku menu wybierz **narzędzia**, **Dostosuj**.
+1. Na pasku menu wybierz **Narzędzia**, **Dostosuj**.
 
-     **Dostosuj** zostanie otwarte okno dialogowe.
+     Zostanie otwarte okno dialogowe **Dostosuj** .
 
-2. Na **polecenia** karty, wybierz przycisk opcji dla typu elementu, który chcesz dostosować.
+2. Na karcie **polecenia** , wybierz przycisk opcji dla typu elementu, który chcesz dostosować.
 
 3. Na liście dla tego typu elementu wybierz menu lub pasek narzędzi, który chcesz dostosować, a następnie wykonaj jeden z następujących zbiorów czynności:
 
-    - Aby dodać polecenie, wybierz opcję **Dodaj polecenie** przycisku.
+    - Aby dodać polecenie, kliknij przycisk **Dodaj polecenie** .
 
-         W **Dodaj polecenie** okna dialogowego pole, wybierz element na liście **kategorie** listy, wybierz element na liście **polecenia** , a następnie wybierz **OK**przycisku.
+         W oknie dialogowym **Dodawanie polecenia** wybierz element na liście **Kategorie** , wybierz element na liście **polecenia** , a następnie wybierz przycisk **OK** .
 
-         ![Dodaj okno dialogowe polecenia w programie Visual Studio](../ide/media/addcommand.png "funkcji AddCommand")
+         ![Okno dialogowe Dodawanie polecenia w programie Visual Studio](../ide/media/addcommand.png "Użyciem AddCommand")
 
-    - Aby usunąć polecenie, wybierz je **kontrolki** , a następnie wybierz **Usuń** przycisku.
+    - Aby usunąć polecenie, wybierz je z listy **formanty** , a następnie wybierz przycisk **Usuń** .
 
-    - Aby zmienić kolejność poleceń, wybierz polecenie na liście **kontrolki** , a następnie wybierz **Przenieś w górę** lub **Przenieś w dół** przycisku.
+    - Aby zmienić kolejność poleceń, wybierz polecenie na liście **kontrolki** , a następnie wybierz przycisk **Przenieś w górę** lub **Przenieś w dół** .
 
-    - Aby podzielić polecenia w grupy, wybierz polecenie na liście **kontrolki** wybierz **Modyfikuj zaznaczenie** przycisk, a następnie wybierz **Rozpocznij grupę** w wyświetlonym menu.
+    - Aby oddzielić polecenia do grup, wybierz polecenie na liście **formanty** , wybierz przycisk **Modyfikuj wybór** , a następnie w wyświetlonym menu wybierz polecenie **Rozpocznij grupę** .
 
-## <a name="bkmk_reset"></a> Resetowanie menu lub paska narzędzi
+## <a name="bkmk_reset"></a>Resetowanie menu lub paska narzędzi
 
-1. Na pasku menu wybierz **narzędzia**, **Dostosuj**.
+1. Na pasku menu wybierz **Narzędzia**, **Dostosuj**.
 
-     **Dostosuj** zostanie otwarte okno dialogowe.
+     Zostanie otwarte okno dialogowe **Dostosuj** .
 
-2. Na **polecenia** karty, wybierz przycisk opcji dla typu elementu, który chcesz zresetować.
+2. Na karcie **polecenia** , wybierz przycisk opcji dla typu elementu, który chcesz zresetować.
 
 3. Na liście dla tego typu elementu wybierz menu lub pasek narzędzi, który chcesz zresetować.
 
-4. Wybierz **Modyfikuj zaznaczenie** przycisk, a następnie wybierz **resetowania** w wyświetlonym menu.
+4. Wybierz przycisk **Modyfikuj wybór** , a następnie w wyświetlonym menu wybierz polecenie **Zresetuj** .
 
-     Możesz także zresetować wszystkie menu i paski narzędzi, wybierając **Resetuj wszystko** przycisku.
+     Możesz również zresetować wszystkie menu i paski narzędzi, wybierając przycisk **Resetuj wszystko** .

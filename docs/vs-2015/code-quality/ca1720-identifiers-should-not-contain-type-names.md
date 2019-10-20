@@ -1,5 +1,5 @@
 ---
-title: 'CA1720: Identyfikatory nie powinny zawierać nazw typów | Dokumentacja firmy Microsoft'
+title: 'CA1720: identyfikatory nie powinny zawierać nazw typów | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - CA1720
 ms.assetid: c95ee48f-f23a-45f0-ac9e-a3c1ecfabdea
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 504c985bd276a891b76e8c9b2a7c0ef51c3a490a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 34ebe4848bbbe49b9a67449795f0aea7d104af8b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62576731"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72671636"
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720: Identyfikatory nie powinny zawierać nazw typów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,22 +29,22 @@ ms.locfileid: "62576731"
 |-|-|
 |TypeName|IdentifiersShouldNotContainTypeNames|
 |CheckId|CA1720|
-|Kategoria|Microsoft.Naming|
+|Kategoria|Microsoft. nazewnictwo|
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Nazwa parametru w widocznego na zewnątrz elemencie członkowskim zawiera nazwę typu danych.
+ Nazwa parametru w widocznym na zewnątrz elemencie członkowskim zawiera nazwę typu danych.
 
  —lub—
 
- Nazwa widocznego na zewnątrz elementu członkowskiego zawiera nazwę typu danych specyficznych dla języka.
+ Nazwa widocznego na zewnątrz elementu członkowskiego zawiera nazwę typu danych specyficzną dla języka.
 
 ## <a name="rule-description"></a>Opis reguły
- Nazwy parametrów i składowych lepiej są używane do komunikowania się ich znaczenie niż na Opisz ich typu, który powinien być dostarczona przez narzędzia programistyczne. Dla nazwy elementów członkowskich Jeśli nazwa typu danych należy użyć, należy użyć nazwy niezależny od języka zamiast jednego określonego języka. Na przykład zamiast C# typu nazwy "int", należy użyć nazwę typu danych niezależny od języka, Int32.
+ Nazwy parametrów i składowych są lepiej używane do przekazywania ich znaczenia niż opisywanie ich typu, który powinien być udostępniany przez narzędzia deweloperskie. W przypadku nazw członków, jeśli nazwa typu danych musi być użyta, należy użyć nazwy niezależnej od języka, a nie dla konkretnego języka. Na przykład zamiast nazwy C# typu "int" należy użyć nazwy typu danych niezależnej od języka, Int32.
 
- Każdy token dyskretnych nazwę parametru lub elementu członkowskiego jest porównywany następujące nazwy typów danych specyficznych dla języka, bez uwzględniania wielkości liter:
+ Każdy token dyskretny w nazwie parametru lub elementu członkowskiego jest sprawdzany pod kątem następujących nazw typów danych specyficznych dla języka, w sposób niezależny od wielkości liter:
 
-- Bool
+- Logiczna
 
 - WChar
 
@@ -52,7 +52,7 @@ ms.locfileid: "62576731"
 
 - UInt8
 
-- Krótkie
+- Wybierak
 
 - UShort
 
@@ -62,27 +62,27 @@ ms.locfileid: "62576731"
 
 - Liczba całkowita
 
-- Uinteger —
+- UInteger —
 
-- Długie
+- Długo
 
 - ULong
 
-- Bez znaku
+- Bajt
 
-- Podpisany
+- Opatrzon
 
 - Float
 
-- float32
+- Float32
 
-- float64
+- Float64
 
-  Ponadto nazwy parametru również są porównywane z następujących nazw typu danych niezależny od języka, bez uwzględniania wielkości liter:
+  Ponadto nazwy parametrów są również sprawdzane pod względem następujących nazw niezależnych od języka, bez uwzględniania wielkości liter:
 
 - Obiekt
 
-- Obj
+- Obiektów
 
 - Boolean
 
@@ -110,9 +110,9 @@ ms.locfileid: "62576731"
 
 - IntPtr
 
-- Ptr
+- PTR
 
-- Wskaźnik
+- Przytrzymaj
 
 - UInptr
 
@@ -126,25 +126,25 @@ ms.locfileid: "62576731"
 
 - Wartość dziesiętna
 
-- Guid
+- Ident
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- **Jeśli uruchamiany dla parametru:**
+ **Jeśli jest uruchamiany dla parametru:**
 
- Zamień na nazwę parametru identyfikatora typu danych terminu, który lepiej opis znaczenia lub terminem bardziej ogólnym, na przykład "value".
+ Zastąp identyfikator typu danych w nazwie parametru wyrażeniem, które lepiej opisuje jego znaczenie lub bardziej ogólny termin, na przykład "value".
 
- **Jeśli uruchamiane względem elementu członkowskiego:**
+ **Jeśli jest uruchamiany dla elementu członkowskiego:**
 
- Zastąpienie identyfikatora typu danych specyficznych dla języka nazwę elementu członkowskiego terminem, lepiej opisującą jego znaczenie, odpowiednik niezależny od języka lub terminem bardziej ogólnym, na przykład "value".
+ Zastąp charakterystyczny dla języka Identyfikator typu danych w nazwie elementu członkowskiego terminem, który lepiej opisuje jego znaczenie, odpowiednik niezależny od języka lub bardziej ogólny termin, na przykład "value".
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Sporadyczne użycie nazwy parametru i elementów członkowskich na podstawie typu może być odpowiednie. Jednak w przypadku nowych wdrożeń, Brak znanego scenariusze wystąpić, gdy powinna Pomijaj ostrzeżeń dla tej reguły. W przypadku bibliotek, które mają poprzedniego dostarczane może być ostrzeżenia od tej reguły.
+ Może być konieczne sporadyczne użycie nazw parametrów i elementów członkowskich opartych na typie. Jednak w przypadku nowych rozwiązań nie występują żadne znane scenariusze, w których należy pominąć ostrzeżenie z tej reguły. W przypadku bibliotek, które zostały wysłane wcześniej, może być konieczne pominięcie ostrzeżenia z tej reguły.
 
 ## <a name="related-rules"></a>Powiązane reguły
  [CA1709: Identyfikatory powinny mieć prawidłową wielkość liter](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
- [CA1708: Identyfikatory powinny różnić się przez więcej niż wielkością liter](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+ [CA1708: Identyfikatory powinny różnić się nie tylko wielkością liter](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
  [CA1707: Identyfikatory nie powinny zawierać podkreśleń](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
 
- [CA1719: Nazwy parametrów nie powinny odpowiadać nazwom elementu członkowskiego](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)
+ [CA1719: Nazwy parametrów nie powinny odpowiadać nazwom składowych](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)

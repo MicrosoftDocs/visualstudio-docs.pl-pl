@@ -1,5 +1,5 @@
 ---
-title: Powiązywanie kontrolek formularzy Windows Forms z danymi | Dokumentacja firmy Microsoft
+title: Powiązywanie formantów Windows Forms z danymi | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -16,51 +16,51 @@ helpviewer_keywords:
 - data [Windows Forms], displaying
 ms.assetid: 0163a34a-38cb-40b9-8f38-3058a90caf21
 caps.latest.revision: 31
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3541dada6167bd2f0a95913d9ccc385dc3e5ccc3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3cf93d96594b65b06670567e8c23cd83ccb7f1ab
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439473"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672976"
 ---
 # <a name="bind-windows-forms-controls-to-data"></a>Powiązywanie kontrolek Windows Forms z danymi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Źródła danych można powiązać formanty przeciągając obiekty z **źródeł danych** okna w formularzu Windows albo do istniejącego formantu w formularzu. Podczas przeciągania elementów, można ustawić typu formantu, który chcesz powiązać. W zależności od tego, czy wybierz tabelę, samego lub poszczególnych kolumn są wyświetlane różne wartości.  Można również ustawić wartości niestandardowych. W przypadku tabeli "Szczegóły" oznacza, że każda kolumna jest powiązana z oddzielnej kontrolce.  
-  
- ![Źródło danych należy powiązać DataGridView](../data-tools/media/raddata-bind-data-source-to-datagridview.png "źródła danych powiązania raddata DataGridView")  
-  
- [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
-  
-## <a name="bind-to--data-in-a-datagridview-control"></a>Powiązywanie danych w formancie DataGridView  
- Dla formantu DataGridView cała tabela jest powiązany do tego pojedynczego formantu. Podczas przeciągania DataGridView formularza narzędzia paska do nawigowania między rekordami (<xref:System.Windows.Forms.BindingNavigator>) pojawia się również. A [DataSet](../data-tools/dataset-tools-in-visual-studio.md), TableAdapter, <xref:System.Windows.Forms.BindingSource>, i <xref:System.Windows.Forms.BindingNavigator> są wyświetlane w zasobniku składnika. Na poniższej ilustracji TableAdapterManager również zostanie dodany, ponieważ tabela klientów zawiera relację z tabeli Orders. Te zmienne są wszystkie zadeklarowane w automatycznie wygenerowany kod jako prywatne składowe klasy formularza. Automatycznie wygenerowany kod do wypełniania formantu DataGridView znajduje się w obsłudze zdarzeń form_load. Kod do zapisywania danych do aktualizacji bazy danych znajduje się w program obsługi zdarzeń Zapisz BindingNavigator. Można przenieść lub zmodyfikuj ten kod, zgodnie z potrzebami.  
-  
- ![GridView za pomocą BindingNavigator](../data-tools/media/raddata-gridview-with-bindingnavigator.png "raddata GridView za pomocą BindingNavigator")  
-  
- Możesz dostosować zachowanie DataGridView i BindingNavigator, klikając tagu inteligentnego w prawym górnym rogu każdej:  
-  
- ![DataGridView i powiązanie Nawigator tagów inteligentnych](../data-tools/media/raddata-datagridview-and-binding-navigator-smart-tags.png "raddata DataGridView i powiązanie Nawigator tagów inteligentnych")  
-  
- Jeśli kontrolki aplikacji wymaga nie są dostępne z poziomu **źródeł danych** okna, można dodać kontrolki. Aby uzyskać więcej informacji, zobacz [Dodawanie niestandardowych formantów do okna źródeł danych](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
-  
- Można również przeciągać elementy z **źródeł danych** okna na znajdujących się już na formularzu można powiązać kontrolki z danymi. Formant, który jest już powiązany z danymi ma powiązań resetowania elementu ostatnio zostało przeciągnięte na jej danych. Za prawidłowe miejsca upuszczania, formanty musi umożliwiać wyświetlanie podstawowy typ danych elementu przeciąganego na go z **źródeł danych** okna. Na przykład nie jest prawidłową przeciągnij element, który ma typ danych <xref:System.DateTime> na <xref:System.Windows.Forms.CheckBox>, ponieważ <xref:System.Windows.Forms.CheckBox> nie jest zdolny do wyświetlania datę.  
-  
-## <a name="bind-to--data-in-individual-controls"></a>Powiąż z danymi w pojedynczych formantów  
- Gdy powiąże źródła danych "Szczegóły" każdej kolumny w zestawie danych jest powiązany z oddzielnej kontrolce.  
-  
- ![Powiązywanie źródła danych do szczegółów](../data-tools/media/raddata-bind-data-source-to-details.png "źródła danych powiązania raddata tak, aby uzyskać szczegółowe informacje")  
-  
+Źródła danych można powiązać z kontrolkami, przeciągając obiekty z okna **źródła danych** na formularz systemu Windows lub do istniejącej kontrolki w formularzu. Przed przeciągnięciem elementów można ustawić typ kontrolki, z którą ma zostać utworzone powiązanie. Różne wartości są wyświetlane w zależności od tego, czy wybrano tabelę lub pojedynczą kolumnę.  Możesz również ustawić wartości niestandardowe. Dla tabeli "Szczegóły" oznacza, że każda kolumna jest powiązana z osobną kontrolką.
+
+ ![Powiązywanie źródła danych z formantem DataGridView](../data-tools/media/raddata-bind-data-source-to-datagridview.png "raddata Powiązywanie źródła danych z formantem DataGridView")
+
+ [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
+
+## <a name="bind-to--data-in-a-datagridview-control"></a>Powiąż z danymi w formancie DataGridView
+ Dla formantu DataGridView cała tabela jest powiązana z tym pojedynczym formantem. Po przeciągnięciu formantu DataGridView do formularza pojawia się również pasek narzędzi dla nawigowania po rekordach (<xref:System.Windows.Forms.BindingNavigator>). [Zestaw danych](../data-tools/dataset-tools-in-visual-studio.md), TableAdapter, <xref:System.Windows.Forms.BindingSource> i <xref:System.Windows.Forms.BindingNavigator> pojawiają się na pasku składnika. Na poniższej ilustracji jest również dodawana TableAdapterManager, ponieważ tabela Customers zawiera relację z tabelą Orders. Te zmienne są zadeklarowane w automatycznie generowanym kodzie jako prywatne elementy członkowskie w klasie Form. Wygenerowany automatycznie kod służący do wypełniania formantu DataGridView znajduje się w obsłudze zdarzeń Form_Load. Kod służący do zapisywania danych w celu zaktualizowania bazy danych znajduje się w procedurze obsługi zdarzeń zapisywania dla elementu BindingNavigator. Ten kod można przenieść lub zmodyfikować zgodnie z wymaganiami.
+
+ ![GridView z parametrem BindingNavigator](../data-tools/media/raddata-gridview-with-bindingnavigator.png "raddata GridView z parametrem BindingNavigator")
+
+ Zachowanie DataGridView i BindingNavigator można dostosować, klikając tag inteligentny w prawym górnym rogu każdego:
+
+ ![Tagi inteligentne DataGridView i Binding nawigatora](../data-tools/media/raddata-datagridview-and-binding-navigator-smart-tags.png "Tagi inteligentne raddata DataGridView i Binding Navigator")
+
+ Jeśli kontrolki wymagane przez aplikację nie są dostępne w oknie **źródła danych** , można dodać kontrolki. Aby uzyskać więcej informacji, zobacz [Dodawanie niestandardowych kontrolek do okna źródła danych](../data-tools/add-custom-controls-to-the-data-sources-window.md).
+
+ Możesz również przeciągać elementy z okna **źródła danych** do kontrolek znajdujących się już w formularzu, aby powiązać formant z danymi. Kontrolka, która jest już powiązana z danymi, ma swoje powiązania danych resetowane do elementu, który ostatnio przeciągnięty do niego. Aby elementy docelowe upuszczania były prawidłowe, formanty muszą mieć możliwość wyświetlania bazowego typu danych elementu, który został przeciągnięty do niego z okna **źródła danych** . Na przykład nie można przeciągnąć elementu, który ma typ danych <xref:System.DateTime> na <xref:System.Windows.Forms.CheckBox>, ponieważ <xref:System.Windows.Forms.CheckBox> nie może wyświetlać daty.
+
+## <a name="bind-to--data-in-individual-controls"></a>Powiąż z danymi w poszczególnych kontrolkach
+ Po powiązaniu źródła danych z "szczegółami" Każda kolumna w zestawie danych jest powiązana z oddzielnym formantem.
+
+ ![Powiąż źródło danych ze szczegółami](../data-tools/media/raddata-bind-data-source-to-details.png "raddata Powiąż ze źródłem danych, aby uzyskać szczegółowe informacje")
+
 > [!IMPORTANT]
-> Należy pamiętać, że na poprzedniej ilustracji, możesz przeciągnąć z właściwości zamówienia w tabeli Customers, nie z tabeli zamówienia. Przez powiązanie z właściwością Customer.Orders, polecenia nawigacji w formancie DataGridView są natychmiast odzwierciedlone w kontrolkach szczegółowe informacje. Jeśli został przeciągnięty z tabeli Orders, formanty, nadal będzie można powiązać do zestawu danych, ale nie ich może nie zostać zsynchronizowany z formantu DataGridView.  
-  
- Poniższa ilustracja przedstawia domyślne formantów powiązanych z danymi, które są dodawane do formularza, po właściwości zamówienia w tabeli Customers jest powiązany z "Szczegóły" w **źródeł danych** okna.  
-  
- ![Powiązana tabela zamówienia szczegóły](../data-tools/media/raddata-orders-table-bound-to-details.png "tabeli Orders raddata powiązane szczegóły")  
-  
- Należy zauważyć, że każda kontrolka ma tagu inteligentnego. Ten tag umożliwia dostosowania, które dotyczą tylko tej kontrolki.  
-  
-## <a name="see-also"></a>Zobacz też  
+> Należy zauważyć, że na poprzedniej ilustracji przeciągniesz ją z właściwości Orders tabeli Customers, a nie z tabeli Orders. Dzięki powiązaniu z właściwością Customer. Orders polecenia nawigacji wykonywane w formancie DataGridView są natychmiast uwzględniane w kontrolkach szczegółów. Jeśli przeciągnięty z tabeli Orders, formanty nadal będą powiązane z zestawem danych, ale nie będą synchronizowane z kontrolką DataGridView.
+
+ Na poniższej ilustracji przedstawiono domyślne kontrolki powiązane z danymi, które są dodawane do formularza, gdy właściwość Orders w tabeli customerss jest powiązana z "Details" w oknie **źródła danych** .
+
+ ![Tabela zamówień została powiązana z szczegółami](../data-tools/media/raddata-orders-table-bound-to-details.png "tabela raddata Orders została powiązana z szczegółami")
+
+ Należy zauważyć, że każda kontrolka ma tag inteligentny. Ten tag włącza dostosowania, które mają zastosowanie tylko do tej kontrolki.
+
+## <a name="see-also"></a>Zobacz też
  [Wiązanie kontrolek Windows Forms z danymi w programie Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

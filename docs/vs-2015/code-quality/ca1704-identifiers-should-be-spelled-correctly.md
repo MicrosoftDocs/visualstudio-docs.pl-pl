@@ -1,5 +1,5 @@
 ---
-title: 'CA1704: Identyfikatory powinny być zapisane poprawnie | Dokumentacja firmy Microsoft'
+title: 'CA1704: Identyfikatory powinny być poprawnie napisane | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,56 +12,56 @@ helpviewer_keywords:
 - IdentifiersShouldBeSpelledCorrectly
 ms.assetid: f2c7a44d-1690-44ca-9cd0-681b04b12b2a
 caps.latest.revision: 27
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: d77e5ffcb7cc6688ea07cd99760e79e8f92aeb43
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 56ac5e60964621859c77bf53dc4f6c14480b4a83
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68189236"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669238"
 ---
-# <a name="ca1704-identifiers-should-be-spelled-correctly"></a>CA1704: Pisownia identyfikatorów powinna być poprawna
+# <a name="ca1704-identifiers-should-be-spelled-correctly"></a>CA1704: Identyfikatory powinny być napisane poprawnie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|IdentifiersShouldBeSpelledCorrectly|
 |CheckId|CA1704|
-|Kategoria|Microsoft.Naming|
+|Kategoria|Microsoft. nazewnictwo|
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Nazwa identyfikatora zawiera jeden lub więcej wyrazów, które nie są rozpoznawane przez bibliotekę sprawdzania pisowni Microsoft. Ta zasada nie Sprawdź konstruktorów lub członków o nazwie specjalne, takie jak pobieranie i ustaw metod dostępu do właściwości.
+ Nazwa identyfikatora zawiera jeden lub więcej wyrazów, które nie są rozpoznawane przez bibliotekę sprawdzania pisowni firmy Microsoft. Ta reguła nie sprawdza konstruktorów ani elementów członkowskich o specjalnej nazwie, takich jak metody dostępu get i Set.
 
 ## <a name="rule-description"></a>Opis reguły
- Ta reguła analizuje identyfikator na tokeny oraz sprawdzając pisownię każdego tokenu. Algorytm analizy wykonuje następujące przekształcenia:
+ Ta reguła analizuje identyfikator w tokenach i sprawdza pisownię każdego tokenu. Algorytm analizy wykonuje następujące przekształcenia:
 
-- Wielkie litery uruchomić nowy token. Na przykład MyNameIsJoe tokenizes "Mój", "Name", "Is", "Jan".
+- Wielkie litery zaczynają nowy token. Na przykład MyNameIsJoe tokenizes do "my", "name", "is", "Jan".
 
-- Wiele wielkich liter ostatni wielką literą rozpoczyna się nowy token. Na przykład GUIEditor tokenizes do "Graficznym interfejsem użytkownika", "Editor".
+- W przypadku wielu wielkich liter, Ostatnia Wielka litera zaczyna nowy token. Na przykład GUIEditor tokenizes do "GUI", "Edytor".
 
-- Początkowe i końcowe apostrofy są usuwane. Na przykład "nadawca" tokenizes do "sender".
+- Cudzysłowy wiodące i końcowe są usuwane. Na przykład "Sender" tokenizes do "Sender".
 
-- Podkreślenia oznaczającego koniec token i są usuwane. Na przykład Hello_world tokenizes do "Hello", "world".
+- Podkreślenia oznacza koniec tokenu i są usuwane. Na przykład hello_world tokenizes na "Hello", "World".
 
-- Takie osadzone znaki zostaną usunięte. Na przykład w przypadku & mat tokenizes do "format".
+- Osadzone znaki handlowe są usuwane. Na przykład dla & mat tokenizes "format".
 
-  Domyślnie używany jest język angielski (en) wersję modułu sprawdzania pisowni. Nie słowników językowych są obecnie dostępne.
+  Domyślnie używana jest wersja angielskojęzyczna (EN) modułu sprawdzania pisowni. Obecnie nie są dostępne żadne inne słowniki językowe.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, Popraw pisownię wyrazu, lub Dodaj ten wyraz do słownika niestandardowego, który nosi nazwę CustomDictionary.xml. Umieść słowniku, w katalogu instalacji narzędzia do katalogu projektu lub katalogu, który jest skojarzony z narzędzia w ramach profilu użytkownika (%USERPROFILE%\Application danych\\...). Aby dowiedzieć się, jak dodać słownika niestandardowego do projektu w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], zobacz [jak: Dostosowywanie słownika analizy kodu](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
+ Aby naprawić naruszenie tej zasady, Popraw pisownię wyrazu lub Dodaj słowo do słownika niestandardowego o nazwie CustomDictionary. XML. Umieść słownik w katalogu instalacyjnym narzędzia, katalogu projektu lub w katalogu, który jest skojarzony z narzędziem w profilu użytkownika (%USERPROFILE%\Application dane \\...). Aby dowiedzieć się, jak dodać słownik niestandardowy do projektu w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], zobacz [How to: Dostosowywanie słownika analizy kodu](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
 
-- Dodaj wyrazy, które nie powinny powodować naruszenie w ścieżce słów/słownik/Recognized.
+- Dodaj wyrazy, które nie powinny spowodować naruszenia w ramach słownika/słów/rozpoznanej ścieżki.
 
-- Dodawanie wyrazów, która powinna powodować naruszenie w ścieżce słów/słownik/nierozpoznane.
+- Dodaj wyrazy, które powinny spowodować naruszenie w przypadku słownika/słów/nierozpoznanej ścieżki.
 
-- Dodaj wyrazy, które powinny zostać oznaczone jako przestarzałe w ścieżce słów/słownik/przestarzały. Zobacz temat powiązane reguły [CA1726: Używaj preferowanych terminów](../code-quality/ca1726-use-preferred-terms.md)Aby uzyskać więcej informacji.
+- Dodaj wyrazy, które powinny być oflagowane jako przestarzałe w przypadku słownika/słów/przestarzałej ścieżki. Zobacz temat pokrewna reguła CA1726: Aby uzyskać więcej informacji, [Użyj preferowanych warunków](../code-quality/ca1726-use-preferred-terms.md).
 
-- Dodać wyjątki do reguł stosowania wielkości liter akronim ścieżkę akronimów/słownik/CasingExceptions.
+- Dodaj wyjątki do reguł wielkości liter akronimu do słownika/akronimów/CasingExceptions ścieżki.
 
-  Oto przykład struktury pliku słownika niestandardowego.
+  Poniżej znajduje się przykład struktury niestandardowego pliku słownika.
 
 ```
 <Dictionary>
@@ -87,16 +87,16 @@ ms.locfileid: "68189236"
 ```
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Pomijaj ostrzeżeń dla tej reguły, tylko wtedy, gdy dane słowo jest celowo błędnie napisane słowa mają zastosowanie do ograniczonego zestawu biblioteki. Poprawnie właściwej słów skrócić czas nauki, które jest wymagane nowe biblioteki oprogramowania.
+ Pomiń ostrzeżenie z tej reguły tylko wtedy, gdy słowo jest celowo błędne, a słowo dotyczy ograniczonego zestawu biblioteki. Prawidłowo napisane wyrazy zmniejszają krzywą uczenia, która jest wymagana w przypadku nowych bibliotek oprogramowania.
 
 ## <a name="related-rules"></a>Powiązane reguły
  [CA2204: Literały powinny być zapisane poprawnie](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
 
- [CA1703: Ciągi zasobów, które powinny być zapisane poprawnie](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
+ [CA1703: Ciągi zasobu powinny być zapisane poprawnie](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
 
  [CA1709: Identyfikatory powinny mieć prawidłową wielkość liter](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
- [CA1708: Identyfikatory powinny różnić się przez więcej niż wielkością liter](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+ [CA1708: Identyfikatory powinny różnić się nie tylko wielkością liter](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
  [CA1707: Identyfikatory nie powinny zawierać podkreśleń](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
 

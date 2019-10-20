@@ -2,32 +2,32 @@
 title: Tworzenie projektu testu jednostkowego
 ms.date: 01/29/2019
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: f04e999681899bb101dc0aeb70cc6f47094dc1d7
-ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
+author: jillre
+ms.openlocfilehash: 30edc1a894a64fb7b9d8b988cafaed14aeaebfdd
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68483821"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665119"
 ---
 # <a name="create-a-unit-test-project"></a>Tworzenie projektu testu jednostkowego
 
-Testy jednostkowe dublowanie często struktury kodu w ramach testu. Na przykład projekt testu jednostkowego zostałyby utworzone dla każdego projektu kodu, w ramach produktu. Projekt testowy może znajdować się w tym samym rozwiązaniu, jak kod w środowisku produkcyjnym lub może być w oddzielnym rozwiązaniu. Może mieć wiele jednostek projekty testowe w rozwiązaniu.
+Testy jednostkowe często duplikują strukturę testowanego kodu. Na przykład projekt testu jednostkowego zostanie utworzony dla każdego projektu kodu w produkcie. Projekt testowy może być w tym samym rozwiązaniu co kod produkcyjny lub może znajdować się w osobnym rozwiązaniu. W rozwiązaniu można mieć wiele projektów testów jednostkowych.
 
 > [!NOTE]
-> Lokalizacja testów jednostkowych dla kodu natywnego i struktury projektu testowego może różnić się od struktury opisanej w tym artykule. Aby uzyskać więcej informacji, zobacz [pisanie testów jednostkowych dla języka C/C++](writing-unit-tests-for-c-cpp.md).
+> Lokalizacja testów jednostkowych dla kodu natywnego i struktury projektu testowego może różnić się od struktury opisanej w tym artykule. Aby uzyskać więcej informacji, zobacz [pisanie testów jednostkowych dlaC++języka C/](writing-unit-tests-for-c-cpp.md).
 
 ## <a name="to-create-a-unit-test-project"></a>Aby utworzyć projekt testu jednostkowego
 
-1. W menu **plik** wybierz polecenie **Nowy** > **projekt**lub naciśnij **klawisze CTRL**+**SHIFT**+**N**.
+1. W menu **plik** wybierz polecenie **Nowy**  > **Project**lub naciśnij **klawisze CTRL** +**SHIFT** +**N**.
 
 ::: moniker range="vs-2017"
 
-2. W **nowy projekt** okna dialogowego rozwiń **zainstalowane** węzła, wybierz język, którego chcesz użyć dla projektu testowego, a następnie wybierz **testu**.
+2. W oknie dialogowym **Nowy projekt** rozwiń węzeł **zainstalowany** , wybierz język, który ma być używany dla projektu testowego, a następnie wybierz polecenie **Testuj**.
 
 3. Wybierz szablon projektu dla środowiska testowego, którego chcesz użyć, na przykład **projekt testu MSTest** lub **projekt testowy nunit**. Nazwij projekt, a następnie wybierz **przycisk OK**.
 
@@ -45,11 +45,11 @@ Testy jednostkowe dublowanie często struktury kodu w ramach testu. Na przykład
 
 ::: moniker-end
 
-4. W projekcie testu jednostki Dodaj odwołanie do testowanego kodu. Aby dodać odwołanie do projektu kodu w tym samym rozwiązaniu:
+4. W projekcie testów jednostkowych Dodaj odwołanie do testowanego kodu. Aby dodać odwołanie do projektu kodu w tym samym rozwiązaniu:
 
    1. Wybierz projekt testowy w **Eksplorator rozwiązań**.
 
-   2. Na **projektu** menu, wybierz **Dodaj odwołanie**.
+   2. W menu **projekt** wybierz polecenie **Dodaj odwołanie**.
 
    3. W **Menedżerze odwołań**wybierz węzeł **rozwiązania** w obszarze **projekty**. Wybierz projekt kodu, który chcesz przetestować, a następnie wybierz przycisk **OK**.
 
@@ -57,15 +57,15 @@ Testy jednostkowe dublowanie często struktury kodu w ramach testu. Na przykład
 
 ## <a name="next-steps"></a>Następne kroki
 
-Zobacz jeden z następujących sekcji:
+Zobacz jedną z następujących sekcji:
 
 **Pisanie testów jednostkowych**
 
-- [Kod testu jednostkowego](../test/unit-test-your-code.md)
+- [Testowanie jednostkowe kodu](../test/unit-test-your-code.md)
 
 - [Pisanie testów jednostkowych dla języka C/C++](writing-unit-tests-for-c-cpp.md)
 
-- [Użyj struktury MSTest w testach jednostkowych](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
+- [Używanie struktury MSTest w testach jednostkowych](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
 
 **Uruchamianie testów jednostkowych**
 

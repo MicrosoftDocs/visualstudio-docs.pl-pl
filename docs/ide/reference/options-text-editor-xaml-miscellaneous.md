@@ -23,36 +23,36 @@ helpviewer_keywords:
 - WPF Designer, XAML formatting
 - XAML view settings, attribute spacing
 ms.assetid: 2a420e58-a408-4e8d-9220-44eeb4f67801
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 9b124b86b98f86c775165d8fe33164a352d8e20a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 242daf82d405af4b3a1e529633fb82651aa6bdc9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969244"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666624"
 ---
 # <a name="options-text-editor-xaml-miscellaneous"></a>Opcje, Edytor tekstu, XAML, różne
 
-Użyj **różne** stronę właściwości, aby określić, jak sformatowane elementów i atrybutów w dokumencie XAML. Aby otworzyć **opcje** okno dialogowe, kliknij przycisk **narzędzia** menu, a następnie kliknij przycisk **opcje**. Aby uzyskać dostęp do **różne** właściwości rozwiń **edytora tekstów** > **XAML** > **różne**węzła.
+Na stronie właściwości **różne** można określić sposób formatowania elementów i atrybutów w dokumentach XAML. Aby otworzyć okno dialogowe **Opcje** , kliknij menu **Narzędzia** , a następnie kliknij przycisk **Opcje**. Aby uzyskać dostęp do strony właściwości **różne** , rozwiń węzeł **Edytor tekstu**  > **XAML**  > **różne** .
 
-## <a name="auto-insert"></a>Automatyczne wstawianie
+## <a name="auto-insert"></a>Autowstawianie
 
-To ustawienie służy do kontrolowania, kiedy tagów i cudzysłowy są generowane automatycznie.
+To ustawienie służy do określania, kiedy Tagi i cudzysłowy są generowane automatycznie.
 
 |||
 |-|-|
-|**Taga zamykającego**|Określa, czy tag zamykający elementu jest generowana automatycznie, gdy zamkniesz otwierający tag o rozmiarze większym niż znak większości (>).|
-|**Cudzysłowy atrybutu**|Określa, czy otaczającej cudzysłowy są generowane w przypadku wybrania wartości atrybutu z listy rozwijanej uzupełniania instrukcji.|
-|**Zamykające nawiasy klamrowe dla wyrażeń MarkupExtension**|Określa, czy rozszerzenie znaczników w zamykający nawias klamrowy (**}**) jest generowany automatycznie po wpisaniu otwierający nawias klamrowy znak (**{**).|
-|**Przecinków do oddzielenia parametry wyrażeń MarkupExtension**|Określa, czy przecinkami są generowane, gdy więcej niż jeden parametr jest typu rozszerzenia znaczników.|
+|**Tagi zamykające**|Określa, czy tag zamykający elementu jest generowany automatycznie po zamknięciu tagu otwierającego o znaku większości (>).|
+|**Cudzysłowy atrybutów**|Określa, czy otaczające cudzysłowy są generowane, gdy wartość atrybutu jest wybierana z listy rozwijanej uzupełniania instrukcji.|
+|**Zamykające nawiasy klamrowe dla wyrażeń MarkupExtension**|Określa, czy zamykający nawias klamrowy rozszerzenia znacznika ( **}** ) jest generowany automatycznie po wpisaniu otwierającego znaku nawiasu klamrowego ( **{** ).|
+|**Przecinki oddzielające parametry wyrażeń MarkupExtension**|Określa, czy przecinki są generowane po wpisaniu więcej niż jednego parametru w rozszerzeniu znacznika.|
 
 ## <a name="errors-and-warnings"></a>Błędy i ostrzeżenia
 
-To ustawienie służy do kontrolowania, kiedy błędy i ostrzeżenia są generowane automatycznie. Aby uzyskać więcej informacji, zobacz [XAML błędy i ostrzeżenia](../../designers/xaml-errors-warnings.md).
+To ustawienie służy do kontrolowania, kiedy błędy i ostrzeżenia są generowane automatycznie. Aby uzyskać więcej informacji, zobacz [błędy i ostrzeżenia XAML](../../designers/xaml-errors-warnings.md).
 
 ## <a name="see-also"></a>Zobacz także
 

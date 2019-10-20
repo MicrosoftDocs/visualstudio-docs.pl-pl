@@ -7,15 +7,15 @@ helpviewer_keywords:
 - load tests, scenarios
 - load tests, virtual users
 ms.assetid: 0ba0363b-7f50-4bde-a919-0e3bce7bc115
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5459f1b82dd83905f2672d198f503a741778287b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 8651b3a11b9db82d4c52ff600706b51855881f02
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926534"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665052"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Edytuj wzorce obciążenia, aby modelować działania użytkownika wirtualnego
 
@@ -42,7 +42,7 @@ Wzorzec obciążenia stałego jest używany do uruchamiania tego samego obciąż
 
 Wzorzec obciążenia etapów służy do określania obciążenia użytkownikami, które zwiększa się wraz z czasem do zdefiniowanego maksymalnego obciążenia użytkownikami. W przypadku obciążeń krokowych należy określić **początkową liczbę użytkowników**, **maksymalną liczbę użytkowników**, **czas trwania kroku (sekundy)** i **liczbę kroków użytkownika**.
 
-Przykładowo obciążenie etapem z **początkową liczbą użytkowników** o wartości 1 **, Maksymalna liczba użytkowników** wynoszącą 100, **czas trwania kroku (w sekundach)** o wartości 10, a **Liczba użytkowników** w ramach kroku wynoszący% tworzy wzorzec obciążenia użytkownika, który rozpoczyna się od 1, zwiększa się o 1 co 10 sekund do czasu osiągnie 100 użytkowników.
+Przykładowo obciążenie etapem z **początkową liczbą użytkowników** o wartości 1, **Maksymalna liczba użytkowników** wynoszącą 100, **czas trwania kroku (w sekundach)** o wartości 10, a **Liczba użytkowników** w ramach kroku wynoszący% tworzy wzorzec obciążenia użytkownika, który rozpoczyna się od 1, zwiększa się o 1 co 10 sekund do czasu osiągnie 100 użytkowników.
 
 > [!NOTE]
 > Jeśli łączny czas trwania testu jest krótszy niż czas wymagany do osiągnięcia maksymalnego obciążenia przez użytkownika, test zakończy się po upływie czasu trwania i nie osiągnie maksymalnej wartości docelowej **liczby użytkowników** .
@@ -57,15 +57,15 @@ Wzorzec obciążenia krokami może służyć do zwiększenia obciążenia serwer
 
 - **Początkowa liczba użytkowników**: 100
 
-- **Maksymalna liczba użytkowników**: 2000
+- **Maksymalna liczba użytkowników**: 2 000
 
-- **Czas trwania kroku (w sekundach)** : 1 800
+- **Czas trwania kroku (w sekundach)** : 1 800
 
 - **Czas pochylenia kroku (w sekundach)** : 20
 
 - **Liczba użytkowników kroku**: 100
 
-  Te ustawienia uruchamiają test obciążenia przez 30 minut (1 800 sekund) na obciążeniach użytkowników 100, 200, 300 i do 2 000. Właściwość **czas rampy kroku** jest warta szczególna wzmianki, ponieważ jest to jedyna z tych właściwości, które nie są dostępne do wyboru w **nowym Kreator testu obciążeniowego**. Ta właściwość pozwala na stopniowe przechodzenie między kolejnymi krokami (na przykład od 100 do 200 użytkowników). W tym przykładzie obciążenie użytkownikami zostanie zwiększone od 100 do 200 użytkowników w ciągu 20 sekund (co dwa w drugim okresie). Aby uzyskać więcej informacji, zobacz [jak: Określ właściwość czas rampy kroku dla wzorca](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)obciążenia kroku.
+  Te ustawienia uruchamiają test obciążenia przez 30 minut (1 800 sekund) na obciążeniach użytkowników 100, 200, 300 i do 2 000. Właściwość **czas rampy kroku** jest warta szczególna wzmianki, ponieważ jest to jedyna z tych właściwości, które nie są dostępne do wyboru w **nowym Kreator testu obciążeniowego**. Ta właściwość pozwala na stopniowe przechodzenie między kolejnymi krokami (na przykład od 100 do 200 użytkowników). W tym przykładzie obciążenie użytkownikami zostanie zwiększone od 100 do 200 użytkowników w ciągu 20 sekund (co dwa w drugim okresie). Aby uzyskać więcej informacji, zobacz [How to: Określ właściwość czasu rampy kroku dla wzorca ładowania kroku](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md).
 
 ### <a name="goal-based"></a>Oparte na celach
 
@@ -82,7 +82,7 @@ Wzorzec obciążenia oparty na celach przypomina wzorzec kroku, ale dostosowuje 
 |Grupa właściwości|Właściwość|Wartość|
 |-|--------------|-|
 |Licznik wydajności|Kategoria|Procesor|
-|Licznik wydajności|Computer|ContosoServer1|
+|Licznik wydajności|Komputerem|ContosoServer1|
 |Licznik wydajności|Licznik|Czas procesora (%)|
 |Licznik wydajności|Wystąpienie|_Total|
 |Zakres docelowy dla licznika wydajności|Duże zakończenie|90|
@@ -93,9 +93,9 @@ Wzorzec obciążenia oparty na celach przypomina wzorzec kroku, ale dostosowuje 
 |Limity liczby użytkowników|Maksymalny przyrost liczby użytkowników|5|
 |Limity liczby użytkowników|Minimalna liczba użytkowników|1|
 
-Te ustawienia powodują, że **Analizator testu obciążenia** dostosowuje obciążenie użytkownika między 1 a 100 podczas przebiegu testowego w taki sposób, że `% Processor Time` licznik webserver01 jest aktywowany między `70%` i`90%.`
+Te ustawienia powodują, że **Analizator testu obciążenia** dostosowuje obciążenie użytkownika między 1 a 100 podczas przebiegu testowego w taki sposób, aby **licznik** `% Processor Time` przesuwał się między `70%` i `90%.`
 
-Rozmiar każdej korekty obciążenia użytkownika zależy od maksymalnego przyrostu **liczby** użytkowników i maksymalnego **zmniejszenia liczby użytkowników** . Limity liczby użytkowników są ustawiane przez **maksymalną liczbę** użytkowników i **minimalne właściwości liczby użytkowników** .
+Rozmiar każdej korekty obciążenia użytkownika zależy od **maksymalnego przyrostu liczby** użytkowników i **maksymalnego zmniejszenia liczby użytkowników** . Limity liczby użytkowników są ustawiane przez **maksymalną liczbę** użytkowników i **minimalne właściwości liczby użytkowników** .
 
 #### <a name="goal-based-load-pattern-considerations"></a>Zagadnienia dotyczące wzorców obciążenia opartego na celach
 
@@ -109,22 +109,22 @@ Jednym z rzeczy, które należy obserwować, jest to, że jakiś inny zasób ogr
 
 |Zadania|Skojarzone tematy|
 |-|-----------------------|
-|**Określanie początkowego wzorca obciążenia dla testu obciążenia:** Podczas tworzenia testu obciążenia przy użyciu **nowego Kreator testu obciążeniowego**należy wybrać wzorzec obciążenia.|-   [Zmiana wzorca obciążenia](../test/edit-load-patterns-to-model-virtual-user-activities.md#change-the-load-pattern)|
-|**Edytowanie wzorca obciążenia dla testu obciążenia:** Po utworzeniu testu obciążenia można edytować wzorzec obciążenia w **Edytor testu obciążeniowego**.|-   [Jak: Określ właściwość czasu rampy kroku dla wzorca ładowania kroku](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
-|**Określanie, czy wirtualne użytkownicy w scenariuszu testu obciążenia powinny zawierać dane z pamięci podręcznej sieci Web:** Można zmienić **wartość procentowa właściwości New Users** , aby mieć wpływ na sposób, w jaki test obciążenia symuluje buforowanie sieci Web, które byłyby wykonywane przez przeglądarkę sieci Web dla użytkowników wirtualnych.|-   [Jak: Określ wartość procentową użytkowników wirtualnych korzystających z danych w pamięci podręcznej sieci Web](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)|
-|**Określanie czasu rampy kroku dla wzorca obciążenia krokami:** Właściwość **czas rampy kroku** pozwala zwiększyć się od jednego kroku do następnego (na przykład od 100 do 200 użytkowników), a nie od razu.|-   [Jak: Określ właściwość czasu rampy kroku dla wzorca ładowania kroku](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
+|**Określanie początkowego wzorca obciążenia dla testu obciążenia:** Podczas tworzenia testu obciążenia przy użyciu **nowego Kreator testu obciążeniowego**należy wybrać wzorzec obciążenia.|-   [zmienić wzorca obciążenia](../test/edit-load-patterns-to-model-virtual-user-activities.md#change-the-load-pattern)|
+|**Edytowanie wzorca obciążenia dla testu obciążenia:** Po utworzeniu testu obciążenia można edytować wzorzec obciążenia w **Edytor testu obciążeniowego**.|-   [jak określić właściwość czasu rampy kroku dla wzorca ładowania kroku](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
+|**Określanie, czy wirtualne użytkownicy w scenariuszu testu obciążenia powinny zawierać dane z pamięci podręcznej sieci Web:** Można zmienić **wartość procentowa właściwości New Users** , aby mieć wpływ na sposób, w jaki test obciążenia symuluje buforowanie sieci Web, które byłyby wykonywane przez przeglądarkę sieci Web dla użytkowników wirtualnych.|-   [jak określić wartość procentową dla użytkowników wirtualnych korzystających z danych w pamięci podręcznej sieci Web](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)|
+|**Określanie czasu rampy kroku dla wzorca obciążenia krokami:** Właściwość **czas rampy kroku** pozwala zwiększyć się od jednego kroku do następnego (na przykład od 100 do 200 użytkowników), a nie od razu.|-   [jak określić właściwość czasu rampy kroku dla wzorca ładowania kroku](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
 
 ## <a name="change-the-load-pattern"></a>Zmiana wzorca obciążenia
 
 Po utworzeniu testu obciążenia przy użyciu **nowego Kreator testu obciążeniowego**można użyć **Edytor testu obciążeniowego** , aby zmienić właściwości wzorca obciążenia powiązane z scenariuszem na poziomy spełniające cele testów.
 
 > [!NOTE]
-> Aby uzyskać pełną listę właściwości scenariusza testów obciążenia wraz z opisami, zobacz [właściwości scenariusza testów obciążenia](../test/load-test-scenario-properties.md).
+> Aby uzyskać pełną listę właściwości scenariusza testu obciążenia i ich opisów, zobacz [właściwości scenariusza testu obciążenia](../test/load-test-scenario-properties.md).
 
 Wzorzec obciążenia określa liczbę wirtualnych użytkowników aktywnych podczas testu obciążenia i szybkość dodawania nowych użytkowników. Można wybierać spośród trzech dostępnych wzorców: wzorzec kroku, stała i cel na podstawie. Aby uzyskać więcej informacji, zobacz [Określanie liczby wirtualnych użytkowników ze wzorcami obciążenia w scenariuszu testu obciążenia](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
 > [!NOTE]
-> Możesz również programowo zmienić właściwości obciążenia za pomocą wtyczki testu obciążenia. Aby uzyskać więcej informacji, zobacz [jak: Utwórz wtyczkę](../test/how-to-create-a-load-test-plug-in.md)testu obciążenia.
+> Możesz również programowo zmienić właściwości obciążenia za pomocą wtyczki testu obciążenia. Aby uzyskać więcej informacji, zobacz [How to: Create a test Load plug-in](../test/how-to-create-a-load-test-plug-in.md).
 
 ### <a name="to-change-the-load-pattern"></a>Aby zmienić wzorzec obciążenia
 
@@ -135,7 +135,7 @@ Wzorzec obciążenia określa liczbę wirtualnych użytkowników aktywnych podcz
     > [!NOTE]
     > Tekst węzła wzorca obciążenia, który jest wyświetlany w drzewie scenariuszy testu obciążenia, odzwierciedla profil obciążenia, który został wybrany podczas tworzenia testu obciążenia. Może to być **profil stałego ładowania** lub **krok ładowania**.
 
-3. Naciśnij klawisz **F4** do wyświetlenia **właściwości** okna.
+3. Naciśnij klawisz **F4** , aby wyświetlić okno **Właściwości** .
 
      **Wzorzec obciążenia** i kategorie **parametrów** są wyświetlane w oknie **Właściwości** .
 
@@ -153,5 +153,5 @@ Wzorzec obciążenia określa liczbę wirtualnych użytkowników aktywnych podcz
 ## <a name="see-also"></a>Zobacz także
 
 - [Edytowanie scenariuszy testu obciążenia](../test/edit-load-test-scenarios.md)
-- [Instrukcje: Określ wartość procentową użytkowników wirtualnych korzystających z danych w pamięci podręcznej sieci Web](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)
-- [Instrukcje: Określ właściwość czasu rampy kroku dla wzorca ładowania kroku](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)
+- [Instrukcje: Określanie procentu użytkowników wirtualnych korzystających z danych w pamięci podręcznej sieci Web](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)
+- [Instrukcje: Określanie właściwości czasu rampy kroku dla wzorca obciążenia krok po kroku](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)

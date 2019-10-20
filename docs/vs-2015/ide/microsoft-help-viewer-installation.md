@@ -1,5 +1,5 @@
 ---
-title: Instalacja podglądu pomocy firmy Microsoft | Dokumentacja firmy Microsoft
+title: Instalacja Podgląd Pomocy firmy Microsoft | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-help-viewer
@@ -9,20 +9,20 @@ helpviewer_keywords:
 - Help Viewer 2.0, installing
 ms.assetid: 51e72eac-d5d7-45e6-8899-04935499d1a6
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d8e3b53cbe31971ddcdc8e349133f52634e03e88
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 83ee97ea6b8b8f0f4026becd53413a17053cd1b8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68197731"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670426"
 ---
 # <a name="microsoft-help-viewer-installation"></a>Instalacja Podglądu Pomocy firmy Microsoft
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Kilka produktów Wyświetla Pomoc w Podglądzie pomocy firmy Microsoft. Instrukcje dotyczące instalacji różnią się w zależności od produktu, który zainstalował Podgląd pomocy.  
-  
-## <a name="locating-setup-information"></a>Lokalizowanie informacji o ustawieniach  
- Aby uzyskać informacje, które są specyficzne dla produktu zobacz jego plik readme.
+Kilka produktów wyświetla pomoc w Podgląd Pomocy firmy Microsoft. Instrukcje dotyczące instalacji różnią się w zależności od tego, który produkt został zainstalowany w podglądzie pomocy.
+
+## <a name="locating-setup-information"></a>Lokalizowanie informacji o instalacji
+ Aby uzyskać informacje dotyczące konkretnego produktu, zobacz jego plik Readme.

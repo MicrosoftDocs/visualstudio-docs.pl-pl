@@ -1,5 +1,5 @@
 ---
-title: Właściwości elementów na UML, diagramy sekwencji | Dokumentacja firmy Microsoft
+title: Właściwości elementów w diagramach sekwencji UML | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -12,45 +12,43 @@ helpviewer_keywords:
 - sequence diagrams, properties
 ms.assetid: 475c10f3-a2d2-4a1e-b366-dc28997d437e
 caps.latest.revision: 22
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a6008566f71a241fb5daccab8d6a5dcb68882452
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4d0753ea7396c9f21addcbb01ab7b90be066356a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444398"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72671427"
 ---
 # <a name="properties-of-elements-on-uml-sequence-diagrams"></a>Właściwości elementów w diagramach sekwencji UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Na diagramie sekwencji UML każdego elementu na diagramie ma właściwości. Aby wyświetlić właściwości elementu, kliknij prawym przyciskiem myszy element na diagramie lub w **Eksploratora modelu UML** a następnie kliknij przycisk **właściwości**. Właściwości są wyświetlane w **właściwości** okna.  
-  
+W diagramie sekwencji UML każdy element na diagramie ma właściwości. Aby wyświetlić właściwości elementu, kliknij prawym przyciskiem myszy element na diagramie lub w **Eksploratorze modelu UML** , a następnie kliknij polecenie **Właściwości**. Właściwości są wyświetlane w oknie **Właściwości** .
+
 > [!NOTE]
-> Ten temat dotyczy właściwości elementów w diagramach sekwencji UML. Aby uzyskać więcej informacji o tym, jak odczytać diagramy sekwencji UML, zobacz [UML Sequence Diagrams: Odwołanie](../modeling/uml-sequence-diagrams-reference.md). Aby uzyskać więcej informacji na temat narysować diagramy sekwencji UML, zobacz [UML Sequence Diagrams: Wytyczne dotyczące](../modeling/uml-sequence-diagrams-guidelines.md).  
-  
-## <a name="properties-of-elements"></a>Właściwości elementów  
-  
-|Właściwość|Domyślny|Element|Opis|  
-|--------------|-------------|-------------|-----------------|  
-|**Nazwa**|Domyślna nazwa|Wszystkie|Identyfikuje element.|  
-|**Kwalifikowana nazwa**|Pakiet:: Nazwa|Wszystkie|Jednoznacznie identyfikuje element. Prefiks kwalifikowaną nazwę pakietu, który go zawiera.|  
-|**Elementy robocze**|skojarzone 0|Wszystkie|Liczba elementów roboczych skojarzonych z tym elementem. Aby skojarzyć elementy robocze, zobacz [łączenie elementów modeli i elementów roboczych](../modeling/link-model-elements-and-work-items.md).|  
-|**Opis**|(pusty)|Wszystkie|Można wprowadzić ogólne uwagi dotyczące elementu w tym miejscu.|  
-|**Kolor**|(wartość domyślna dla typu elementu)|Linia życia, wiadomości|Kolor kształtu. Jest to właściwość kształtu, zamiast element Wyświetla.|  
-|**Typ**|(pusty)|Linia życia|Typ wystąpienia, która reprezentuje linii życia.<br /><br /> W przypadku symbolu odwołania wyświetlane w nagłówku linii życia, następnie tej klasy lub interfejsu w Eksploratorze modelu UML istnieje oddzielnie i mogą być wyświetlane na diagramie klasy.|  
-|**aktora**|False|Linia życia|Wskazuje, czy linia życia reprezentuje użytkownika, urządzenia lub oprogramowania składnik, który znajduje się poza składnik, który dotyczy diagramu.|  
-|**rodzaj**|**Pełne** — wiadomość, która ma zarówno nadawcy i odbiorcy.<br /><br /> **Znaleziono** -komunikat, który ma nieokreślony nadawcę.<br /><br /> **Utracono** -komunikat, który ma nieokreślony odbiorcy.|Komunikat|Wskazuje, której kończy się wiadomości są dołączone do linii życia.<br /><br /> Nie można zmienić tej właściwości. Podczas tworzenia komunikatu jest ustawiona.|  
-|**Sort**|**AsynchCall** -komunikatów asynchronicznych.<br /><br /> **SynchCall** -synchronicznego komunikatu.<br /><br /> **Odpowiedź** -return części synchronicznego komunikatu.<br /><br /> **CreateMessage** -komunikat utworzenia wystąpienia.|Komunikat|Typ komunikatu. Nie można zmienić tej właściwości. Zostanie ono określone przez to narzędzie umożliwia tworzenie komunikatu.|  
-|**Operacja**|(pusty)|Komunikat|Metoda wywoływana przez wiadomość na odbieranie linii życia.<br /><br /> Widoczne tylko wtedy, gdy odbieranie linii życia jest połączony interfejs lub klasę.|  
-|**Odwołuje się do**|Diagram sekwencji|Wykorzystanie interakcji|Diagram sekwencji, wywoływana przy użyciu tej interakcji.|  
-|**Operator interakcji**|Ustawiana, jeśli użyto **Otocz** polecenia|Połączony Fragment|Operator, reprezentowane przez ten fragment lub zbiór fragmentów.|  
-|**Ochrona**|(pusty)|Operand interakcji w połączony Fragment|Kolejność w fragment zostanie przeprowadzona, chyba że osłony ma wartość true.<br /><br /> Aby wybrać najważniejsze fragmentu wszelkie połączonego fragmentu, kliknij pod tytułem fragmentu.|  
-|**Wartość minimalna, maksymalna liczba**|(nie ograniczenia)|Pętla połączony Fragment|Minimalna i maksymalna liczba przypadków, gdy jest wykonywana pętla.|  
-|**Komunikaty**|(pusty)|Należy wziąć pod uwagę i<br /><br /> Ignoruj połączonego fragmentu|Komunikaty, które są uważane za lub ignorowane w tym fragmencie.|  
-  
-## <a name="see-also"></a>Zobacz też  
- [Diagramy sekwencji UML: Odwołanie](../modeling/uml-sequence-diagrams-reference.md)   
- [Diagramy sekwencji UML: Wytyczne dotyczące](../modeling/uml-sequence-diagrams-guidelines.md)   
- [Opisywanie przepływu sterowania przy użyciu fragmentów w diagramach sekwencji UML](../modeling/describe-control-flow-with-fragments-on-uml-sequence-diagrams.md)
+> Ten temat zawiera informacje o właściwościach elementów w diagramach sekwencji UML. Aby uzyskać więcej informacji na temat odczytywania diagramów sekwencji UML, zobacz [diagramy sekwencji UML: odwołanie](../modeling/uml-sequence-diagrams-reference.md). Aby uzyskać więcej informacji na temat rysowania diagramów sekwencji UML, zobacz [diagramy sekwencji UML: wytyczne](../modeling/uml-sequence-diagrams-guidelines.md).
+
+## <a name="properties-of-elements"></a>Właściwości elementów
+
+|Właściwość|Domyślny|Element|Opis|
+|--------------|-------------|-------------|-----------------|
+|**Nazwa**|Nazwa domyślna|Wszystkie|Identyfikuje element.|
+|**Kwalifikowana nazwa**|Pakiet:: Nazwa|Wszystkie|Jednoznacznie identyfikuje element. Poprzedzona nazwą kwalifikowaną pakietu, która go zawiera.|
+|**Elementy robocze**|0 skojarzone|Wszystkie|Liczba elementów roboczych skojarzonych z tym elementem. Aby skojarzyć elementy robocze, zobacz [łączenie elementów modelu i elementów roboczych](../modeling/link-model-elements-and-work-items.md).|
+|**Opis**|puste|Wszystkie|Tutaj możesz tworzyć ogólne uwagi na temat tego elementu.|
+|**Kolor**|(domyślnie dla typu elementu)|Linia życia, komunikat|Kolor kształtu. Jest to właściwość kształtu, a nie elementu, który jest wyświetlany.|
+|**Wprowadź**|puste|Linii życia|Typ wystąpienia reprezentowanego przez linię życia.<br /><br /> Jeśli w nagłówku linii życia jest wyświetlany symbol odwołania, ta klasa lub interfejs istnieje oddzielnie w Eksploratorze modelu UML i może być wyświetlany na diagramie klas.|
+|**Zewnętrzny**|False|Linii życia|Wskazuje, czy linia życia reprezentuje składnik użytkownika, urządzenia lub oprogramowania, który jest zewnętrzny względem składnika, na którym znajduje się diagram.|
+|**Natur**|**Ukończono** — komunikat z nadawcą i odbiornikiem.<br /><br /> **Znaleziono** — komunikat, który ma nieokreślony nadawcę.<br /><br /> **Utracono** komunikat z nieokreślonym odbiornikiem.|Komunikat|Wskazuje, które zakończenia komunikatu są dołączone do linii życia.<br /><br /> Nie można zmienić tej właściwości. Jest ona ustawiana podczas tworzenia wiadomości.|
+|**Porządku**|**AsynchCall** — komunikat asynchroniczny.<br /><br /> **SynchCall** — komunikat synchroniczny.<br /><br /> **Odpowiedź** — zwracanie części komunikatu synchronicznego.<br /><br /> **OnMessage** — komunikat tworzenia wystąpienia.|Komunikat|Typ komunikatu. Nie można zmienić tej właściwości. Jest ona określana przez narzędzie, którego można użyć do utworzenia wiadomości.|
+|**Operacje**|ciągiem|Komunikat|Metoda wywoływana przez komunikat w linii życia otrzymującej.<br /><br /> Widoczne tylko wtedy, gdy linia życia jest połączona z interfejsem lub klasą.|
+|**Odwołuje się do**|Diagram sekwencji|Użycie interakcji|Diagram sekwencji wywoływany przez to użycie interakcji.|
+|**Operator interakcji**|Ustaw, gdy użyto polecenia **przestrzenny with**|Połączony fragment|Operator reprezentowany przez ten fragment lub zbiór fragmentów.|
+|**Chroni**|ciągiem|Argument operacji interakcji w połączonym fragmencie|Sekwencja w fragmencie nie zostanie wykonana, chyba że funkcja Guard ma wartość true.<br /><br /> Aby wybrać górny fragment dowolnego połączonego fragmentu, kliknij poniżej tytuł fragmentu.|
+|**Minimum, maksimum**|(bez ograniczeń)|Połączony fragment pętli|Minimalna i Maksymalna liczba uruchomień pętli.|
+|**Komunikaty**|ciągiem|Weź pod uwagę i<br /><br /> Ignoruj połączone fragmenty|Komunikaty, które są uwzględniane lub ignorowane w tym fragmencie.|
+
+## <a name="see-also"></a>Zobacz też
+ [Diagramy sekwencji UML: odniesienia](../modeling/uml-sequence-diagrams-reference.md) [diagramy sekwencji UML: wytyczne](../modeling/uml-sequence-diagrams-guidelines.md) [opisują przepływ sterowania za pomocą fragmentów w diagramach sekwencji UML](../modeling/describe-control-flow-with-fragments-on-uml-sequence-diagrams.md)

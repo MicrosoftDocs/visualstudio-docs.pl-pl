@@ -1,5 +1,5 @@
 ---
-title: Otwórz projekt — polecenie | Dokumentacja firmy Microsoft
+title: Otwórz polecenie projektu | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -12,47 +12,43 @@ helpviewer_keywords:
 - Open Project command
 ms.assetid: baa85f86-041b-49f4-9ced-0c397dc180e1
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e2e945eb2faa492f576a0fd0a15fc0bd0e9b208e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 99596442f3aef9e4cb2d890438d29b96cdf4f083
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68199038"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72671919"
 ---
 # <a name="open-project-command"></a>Otwórz projekt — Polecenie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Otwiera istniejący projekt.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```  
-File.OpenProject filename  
-```  
-  
-## <a name="arguments"></a>Argumenty  
- `filename`  
- Wymagane. Pełna ścieżka i nazwa projektu, aby otworzyć.  
-  
- Składnia `filename` argument wymaga, że ścieżki zawierające spacje, użyj znaków cudzysłowu.  
-  
-## <a name="remarks"></a>Uwagi  
- Automatyczne uzupełnianie próbuje zlokalizować poprawną ścieżkę i nazwę pliku podczas wpisywania.  
-  
- To polecenie nie jest dostępne podczas debugowania.  
-  
-## <a name="example"></a>Przykład  
- W tym przykładzie otwiera [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] projektu Test1.  
-  
-```  
->File.OpenProject "C:\My Projects\Test1\Test1.vbproj"  
-```  
-  
-## <a name="see-also"></a>Zobacz też  
- [Visual Studio Commands](../../ide/reference/visual-studio-commands.md)   
- [Okno polecenia](../../ide/reference/command-window.md)   
- [Znajdź/Command — pole](../../ide/find-command-box.md)   
- [Visual Studio — aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)
+Otwiera istniejący projekt.
+
+## <a name="syntax"></a>Składnia
+
+```
+File.OpenProject filename
+```
+
+## <a name="arguments"></a>Argumenty
+ Wymagane `filename`. Pełna ścieżka i nazwa pliku projektu do otwarcia.
+
+ Składnia argumentu `filename` wymaga, aby ścieżki zawierające spacje używały znaków cudzysłowu.
+
+## <a name="remarks"></a>Uwagi
+ Funkcja automatycznego uzupełniania próbuje zlokalizować poprawną ścieżkę i nazwę pliku podczas wpisywania.
+
+ To polecenie jest niedostępne podczas debugowania.
+
+## <a name="example"></a>Przykład
+ W tym przykładzie zostanie otwarty projekt [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] test1.
+
+```
+>File.OpenProject "C:\My Projects\Test1\Test1.vbproj"
+```
+
+## <a name="see-also"></a>Zobacz też
+ Polecenia [programu Visual Studio](../../ide/reference/visual-studio-commands.md) [okno](../../ide/reference/command-window.md) poleceń [Znajdź/polecenie](../../ide/find-command-box.md) [programu Visual Studio — Aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)

@@ -1,5 +1,5 @@
 ---
-title: Właściwości elementów na UML, diagramy przypadków użycia | Dokumentacja firmy Microsoft
+title: Właściwości elementów na diagramach przypadków użycia UML | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -11,42 +11,41 @@ helpviewer_keywords:
 - use case diagrams, properties
 ms.assetid: 2728fb26-a275-4fce-8a2c-5a78af6bee04
 caps.latest.revision: 13
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b52afab80bc22c03dc5ff980b937cad53869f5db
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: db3dc649d979c87960a42d38ffa211e352be175b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444421"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72671415"
 ---
 # <a name="properties-of-elements-on-uml-use-case-diagrams"></a>Właściwości elementów na diagramach przypadków użycia UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Na diagramie przypadków użycia UML każdego elementu na diagramie ma właściwości. Aby wyświetlić właściwości elementu, kliknij prawym przyciskiem myszy element na diagramie lub w **Eksploratora modelu UML** a następnie kliknij przycisk **właściwości**. Właściwości są wyświetlane w **właściwości** okna.  
-  
+Na diagramie przypadku użycia UML każdy element na diagramie ma właściwości. Aby wyświetlić właściwości elementu, kliknij prawym przyciskiem myszy element na diagramie lub w **Eksploratorze modelu UML** , a następnie kliknij polecenie **Właściwości**. Właściwości są wyświetlane w oknie **Właściwości** .
+
 > [!NOTE]
-> Ten temat dotyczy właściwości elementów w diagramach przypadków użycia UML. Aby uzyskać więcej informacji o tym, jak odczytać diagramy aktywności UML, zobacz [diagramy przypadków użycia UML: Odwołanie](../modeling/uml-use-case-diagrams-reference.md). Aby uzyskać więcej informacji na temat narysować diagramy aktywności UML, zobacz [diagramy przypadków użycia UML: Wytyczne dotyczące](../modeling/uml-use-case-diagrams-guidelines.md).  
-  
-## <a name="properties-of-elements"></a>Właściwości elementów  
-  
-|Właściwość|Domyślny|Element|Opis|  
-|--------------|-------------|-------------|-----------------|  
-|**Nazwa**|Domyślna nazwa|Wszystkie|Identyfikuje element.|  
-|**Kwalifikowana nazwa**|Pakiet:: Nazwa|Wszystkie|Jednoznacznie identyfikuje element. Prefiks kwalifikowaną nazwę pakietu, który go zawiera.|  
-|**Elementy robocze**|skojarzone 0|Wszystkie|Liczba elementów roboczych skojarzonych z tym elementem. Aby skojarzyć elementy robocze, zobacz [łączenie elementów modeli i elementów roboczych](../modeling/link-model-elements-and-work-items.md).|  
-|**Opis**|(Brak)|Wszystkie|Można wprowadzić ogólne uwagi na temat elementu, w tym miejscu.|  
-|**Kolor**|(ustawienie domyślne)|Wszystkie|Kolor kształtu. W przeciwieństwie do innych właściwości, to nie jest właściwością elementu, który wyświetla kształtu.|  
-|**Ścieżka obrazu**|(Brak)|aktora|Ścieżka pliku obrazu, które mają być używane zamiast domyślnej ikony aktora. Ikona powinna być plik zasobów w ramach projektu programu Visual Studio.|  
-|**Tematy**|(Brak)|Przypadek użycia|Podsystem lub innego typu, który jest właścicielem przypadek użycia.<br /><br /> Jest on ustawiany przez umieszczenie przypadek użycia w podsystemie na diagramie.|  
-|**Widoczność**|Public|Użyj podsystemu przypadkach aktora,|**Publiczne** — jest to widoczne globalnie.<br /><br /> **Pakiet** — jest to widoczne w pakiecie.|  
-|**IsAbstract**|False|Użyj podsystemu przypadkach aktora,|W przypadku opcji true nie można utworzyć wystąpienia typu, a ma służyć jako podstawa specjalizacji przez inne definicje.|  
-|**Czy wystąpienie utworzono pośrednio**|Prawda|Podsystem|Podsystem istnieje tylko jako artefaktów projektu. W czasie wykonywania istnieje tylko jego części.|  
-|**Hyperlink**|(Brak)|Artefakt|Ścieżka adresu URL lub pliku diagramu lub dokument, do którego artefaktu z linkiem.|  
-  
- Aby uzyskać listę właściwości skojarzeń, zobacz [właściwości skojarzeń w UML, diagramy klas](../modeling/properties-of-associations-on-uml-class-diagrams.md).  
-  
-## <a name="see-also"></a>Zobacz też  
- [Diagramy przypadków użycia UML: Odwołanie](../modeling/uml-use-case-diagrams-reference.md)   
- [Diagramy przypadków użycia UML: wskazówki](../modeling/uml-use-case-diagrams-guidelines.md)
+> Ten temat zawiera informacje o właściwościach elementów w diagramach przypadków użycia UML. Aby uzyskać więcej informacji na temat odczytywania diagramów aktywności UML, zobacz [diagramy przypadków użycia UML: odwołanie](../modeling/uml-use-case-diagrams-reference.md). Aby uzyskać więcej informacji na temat rysowania diagramów aktywności UML, zobacz [diagramy przypadków użycia UML: wytyczne](../modeling/uml-use-case-diagrams-guidelines.md).
+
+## <a name="properties-of-elements"></a>Właściwości elementów
+
+|Właściwość|Domyślny|Element|Opis|
+|--------------|-------------|-------------|-----------------|
+|**Nazwa**|Nazwa domyślna|Wszystkie|Identyfikuje element.|
+|**Kwalifikowana nazwa**|Pakiet:: Nazwa|Wszystkie|Jednoznacznie identyfikuje element. Poprzedzona nazwą kwalifikowaną pakietu, która go zawiera.|
+|**Elementy robocze**|0 skojarzone|Wszystkie|Liczba elementów roboczych skojarzonych z tym elementem. Aby skojarzyć elementy robocze, zobacz [łączenie elementów modelu i elementów roboczych](../modeling/link-model-elements-and-work-items.md).|
+|**Opis**|dawaj|Wszystkie|Tutaj możesz tworzyć ogólne uwagi dotyczące elementu.|
+|**Kolor**|wartooć|Wszystkie|Kolor kształtu. W przeciwieństwie do innych właściwości, nie jest to właściwość elementu wyświetlanego przez kształt.|
+|**Ścieżka obrazu**|dawaj|Zewnętrzny|Ścieżka do pliku obrazu, który ma zostać użyty zamiast domyślnej ikony aktora. Ikona powinna być plikiem zasobów w projekcie programu Visual Studio.|
+|**Tematy**|dawaj|Przypadek użycia|Podsystem lub inny typ, który jest właścicielem przypadku użycia.<br /><br /> Można ją ustawić, umieszczając przypadek użycia w podsystemie na diagramie.|
+|**Propagowan**|Public|Przypadek użycia, aktor, podsystem|**Publiczny** — widoczny globalnie.<br /><br /> **Pakiet** widoczny w pakiecie.|
+|**IsAbstract**|False|Przypadek użycia, aktor, podsystem|Jeśli wartość jest równa true, typ nie może być skonkretyzowany i jest przeznaczony jako podstawa dla specjalizacji przez inne definicje.|
+|**Jest pośrednio skonkretyzowany**|Oznacza|wykonawc|Podsystem istnieje tylko jako artefakt projektowy. W czasie wykonywania tylko jego części istnieją.|
+|**Łącza**|dawaj|Artefaktu|Adres URL lub ścieżka pliku diagramu lub dokumentu, do którego artefakt zawiera link.|
+
+ Aby uzyskać listę właściwości skojarzeń, zobacz [Właściwości skojarzeń na diagramach klas UML](../modeling/properties-of-associations-on-uml-class-diagrams.md).
+
+## <a name="see-also"></a>Zobacz też
+ [Diagramy przypadków użycia UML: referencyjne](../modeling/uml-use-case-diagrams-reference.md) [diagramy przypadków użycia UML: wytyczne](../modeling/uml-use-case-diagrams-guidelines.md)

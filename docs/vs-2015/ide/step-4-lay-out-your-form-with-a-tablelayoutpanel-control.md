@@ -1,95 +1,86 @@
 ---
-title: Krok 4. Określić układ formularza z formantem TableLayoutPanel | Dokumentacja firmy Microsoft
+title: Krok 4. układ formularza przy użyciu formantu TableLayoutPanel | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: 61acde79-e115-4bad-bb06-1fbe37717a3e
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5ddd76bab4d007a9476dde75f46f3f2bc77be865
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ab16750694e1bc8bb74afa7d22d899dc492d7c7d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442529"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72671790"
 ---
-# <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Krok 4. Określanie układu formularza przy użyciu kontrolki TableLayoutPanel
+# <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Krok 4. Określenie układu formularza przy użyciu formantu TableLayoutPanel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W tym kroku dodasz `TableLayoutPanel` formantu do formularza. TableLayoutPanel pomaga poprawnie wyrównać formanty w formularzu, który zostanie dodany później.  
-  
- ![Link do wideo](../data-tools/media/playvideo.gif "PlayVideo")wersja wideo tego tematu, zobacz [samouczek 1: Tworzenie przeglądarki obrazów w Visual Basic – wideo 2](http://go.microsoft.com/fwlink/?LinkId=205211) lub [samouczek 1: Tworzenie przeglądarki obrazów w C# — wideo 2](http://go.microsoft.com/fwlink/?LinkId=205200). W tych filmach wideo użyj wcześniejszej wersji programu Visual Studio, więc istnieją drobne różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednakże pojęcia i procedury działają podobnie w bieżącej wersji programu Visual Studio.  
-  
-### <a name="to-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Aby zmienić układ formularza z formantem TableLayoutPanel  
-  
-1. Po lewej stronie programu Visual Studio IDE, Znajdź **przybornika** kartę. Wybierz **przybornika** kartę i Przybornik pojawi się. (Lub na pasku menu wybierz **widoku**, **przybornika**.)  
-  
-2. Wybierz symbol małego trójkąta obok **kontenery** grupę, aby ją otworzyć, jak pokazano na poniższej ilustracji.  
-  
-     ![Grupa kontenerów](../ide/media/express-toolbox.png "Express_Toolbox")  
-Grupa kontenerów  
-  
-3. Możesz dodać formanty, takie jak przyciski, pola wyboru i etykiet do formularza. Kliknij dwukrotnie `TableLayoutPanel` kontrolki z przybornika. (Można także można przeciągnąć kontrolki z przybornika do formularza). Gdy to zrobisz, IDE dodaje `TableLayoutPanel` sterowania do formularza, jak pokazano na poniższej ilustracji.  
-  
-     ![Formant TableLayoutPanel](../ide/media/express-formtablelayout.png "Express_FormTableLayout")  
-TableLayoutPanel — formant  
-  
+W tym kroku dodasz kontrolkę `TableLayoutPanel` do formularza. TableLayoutPanel pomaga prawidłowo wyrównać kontrolki w formularzu, który zostanie później dodany.
+
+ ![link do wideo](../data-tools/media/playvideo.gif "PlayVideo") Aby uzyskać wersję wideo tego tematu, zobacz [Samouczek 1: Tworzenie przeglądarki obrazów w Visual Basic — wideo 2](http://go.microsoft.com/fwlink/?LinkId=205211) lub [Samouczek 1: Tworzenie przeglądarki obrazów w C# pliku wideo 2](http://go.microsoft.com/fwlink/?LinkId=205200). Te filmy wideo korzystają ze starszej wersji programu Visual Studio, więc istnieją niewielkie różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednak koncepcje i procedury działają podobnie w bieżącej wersji programu Visual Studio.
+
+### <a name="to-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Aby określić układ formularza przy użyciu kontrolki TableLayoutPanel
+
+1. Po lewej stronie środowiska IDE programu Visual Studio Znajdź kartę **Przybornik** . Wybierz kartę **Przybornik** i pojawi się Przybornik. (Lub na pasku menu wybierz **Widok**, **Przybornik**).
+
+2. Wybierz mały trójkątny symbol obok grupy **kontenery** , aby go otworzyć, jak pokazano na poniższej ilustracji.
+
+     ![Grupa kontenerów](../ide/media/express-toolbox.png "Express_Toolbox") Grupa kontenerów
+
+3. Kontrolki, takie jak przyciski, pola wyboru i etykiety, można dodawać do formularza. Kliknij dwukrotnie formant `TableLayoutPanel` w przyborniku. (Możesz też przeciągnąć kontrolkę z przybornika na formularz). Gdy to zrobisz, IDE doda do formularza formant `TableLayoutPanel`, jak pokazano na poniższej ilustracji.
+
+     ![TableLayoutPanel — formant](../ide/media/express-formtablelayout.png "Express_FormTableLayout") TableLayoutPanel — formant
+
     > [!NOTE]
-    > Po dodaniu TableLayoutPanel, jeśli okno pojawia się wewnątrz formularza z tytułem **zadania formantu TableLayoutPanel**, wybierz dowolne miejsce wewnątrz formularza, aby je zamknąć. Więcej informacji na temat tego okna przedstawiono w dalszej części tego samouczka.  
-  
-     Zwróć uwagę, jak Przybornik rozszerza się do objęcia formularza po wybraniu jego karty i zamyka się po wybierz dowolne miejsce poza nią. To jest funkcja Autoukrywanie IDE. Można włączyć tej funkcji dla każdego okna wybierając ikonę pinezki w prawym górnym rogu okna, aby przełączać automatyczne ukrywanie i blokowanie w miejscu. Ikona Pinezka wygląda następująco.  
-  
-     ![Ikona pinezki](../ide/media/express-pushpintoolbox.png "Express_PushpinToolbox")  
-Ikona pinezki  
-  
-4. Upewnij się, **TableLayoutPanel** jest zaznaczone, wybierając ją. Możesz sprawdzić, jaki formant jest zaznaczony, patrząc na liście rozwijanej w górnej części **właściwości** okna, jak pokazano na poniższej ilustracji.  
-  
-     ![Okno właściwości pokazujące formant TableLayoutPanel](../ide/media/express-controlspropwin.png "Express_ControlsPropWin")  
-Okno właściwości pokazujące formant TableLayoutPanel  
-  
-5. Wybierz **alfabetycznie** przycisk na pasku narzędzi w **właściwości** okna. Powoduje to, że lista właściwości w **właściwości** okno, aby wyświetlić w kolejności alfabetycznej, co ułatwi lokalizowanie właściwości w tym samouczku.  
-  
-6. Selektor formantu to listy rozwijanej w górnej części **właściwości** okna. W tym przykładzie jej pokazują, że formant nazywany `tableLayoutPanel1` jest zaznaczone. Można wybierać formanty wybierając obszar w programie Windows Forms Designer lub wybierając z selektora formantów. Teraz, gdy `TableLayoutPanel` jest zaznaczone, Znajdź **Dock** właściwości i wybierz polecenie **Dock**, powinien być ustawiony na **Brak**. Należy zauważyć, że strzałki listy rozwijanej pojawia się obok wartości. Wybierz strzałkę, a następnie wybierz **wypełnienia** przycisku (duży przycisk na środku), jak pokazano na poniższej ilustracji.  
-  
-     ![Okno właściwości z zaznaczonym wypełnieniem](../ide/media/express-docktable.png "Express_DockTable")  
-Okno właściwości z zaznaczonym wypełnieniem  
-  
-     *Dokowanie* w programie Visual Studio odnosi się do gdy okno jest dołączone do innego okna lub obszaru w IDE. Na przykład okno właściwości może być oddokowane — czyli niezamocowane programu Visual Studio — i lub może być zadokowane przy **Eksploratora rozwiązań**.  
-  
-7. Po ustawieniu TableLayoutPanel **Dock** właściwości **wypełnienia**, panel wypełnia cały formularz. Jeśli zmienisz rozmiar formularza ponownie, obiekt TableLayoutPanel pozostaje zadokowany i zmienia się, aby dopasować rozmiar.  
-  
+    > Po dodaniu TableLayoutPanel, jeśli okno jest wyświetlane w formularzu z tytułem **zadania TableLayoutPanel**, Wybierz dowolne miejsce wewnątrz formularza, aby je zamknąć. Więcej informacji na temat tego okna znajdziesz w dalszej części tego samouczka.
+
+     Zauważ, jak Przybornik rozszerza się, aby pokryć formularz po wybraniu jego karty, i jest zamykany po wybraniu dowolnego miejsca poza nim. Jest to funkcja autoukrywania środowiska IDE. Można ją włączyć lub wyłączyć dla dowolnego systemu Windows, wybierając ikonę pinezki w prawym górnym rogu okna, aby przełączyć funkcję Autoukrywanie i zablokować ją w miejscu. Ikona pinezki jest wyświetlana w następujący sposób.
+
+     ![Ikona pinezki](../ide/media/express-pushpintoolbox.png "Express_PushpinToolbox") Ikona pinezki
+
+4. Upewnij się, że wybrano element **TableLayoutPanel** , wybierając go. Można sprawdzić, jaki formant jest zaznaczony, przeglądając listę rozwijaną w górnej części okna **Właściwości** , jak pokazano na poniższej ilustracji.
+
+     ![Okno właściwości pokazujący formant TableLayoutPanel](../ide/media/express-controlspropwin.png "Express_ControlsPropWin") okno Właściwości pokazujący formant TableLayoutPanel
+
+5. Wybierz przycisk **alfabetyczny** na pasku narzędzi w oknie **Właściwości** . Powoduje to, że lista właściwości w oknie **Właściwości** będzie wyświetlana w kolejności alfabetycznej, co ułatwia lokalizowanie właściwości w tym samouczku.
+
+6. Selektor kontrolki jest listą rozwijaną u góry okna **Właściwości** . W tym przykładzie pokazuje, że wybrano kontrolkę o nazwie `tableLayoutPanel1`. Możesz wybrać kontrolki, wybierając obszar w Projektant formularzy systemu Windows lub wybierając z selektora kontrolki. Teraz, gdy `TableLayoutPanel` jest zaznaczone, Znajdź właściwość **Dock** i wybierz opcję **Dock**, która powinna mieć wartość **none**. Zauważ, że obok wartości zostanie wyświetlona strzałka listy rozwijanej. Wybierz strzałkę, a następnie wybierz przycisk **wypełnienie** (duży przycisk w środku), jak pokazano na poniższej ilustracji.
+
+     ![Okno właściwości z wybranym wypełnieniem](../ide/media/express-docktable.png "Express_DockTable") okno Właściwości z wybranym wypełnieniem
+
+     *Dokowanie* w programie Visual Studio odnosi się do sytuacji, gdy okno jest dołączone do innego okna lub obszaru w IDE. Na przykład okno Właściwości mogą być oddokowane, czyli niedołączone i swobodne w programie Visual Studio — lub mogą być zadokowane względem **Eksplorator rozwiązań**.
+
+7. Po ustawieniu właściwości **Dock dokowania** na **wypełnienie**panel wypełnia cały formularz. Jeśli zmienisz rozmiar formularza ponownie, TableLayoutPanel zostanie zadokowane i dopasowuje się do dopasowania.
+
     > [!NOTE]
-    > Element TableLayoutPanel działa jak tabela w programie Microsoft Office Word: Ma ona wierszy i kolumn i pojedyncze komórki może obejmować wiele wierszy i kolumn. Każda komórka może zawierać jeden formant (jak przycisk, pole wyboru lub etykietę). Twój TableLayoutPanel będzie miał `PictureBox` obejmujące cały górny wiersz, formant `CheckBox` kontrolki w jego lewej dolnej komórce i cztery `Button` kontrolki w jej dolnej prawej komórce.  
-  
-8. Obecnie TableLayoutPanel ma dwa równe rzędy wielkości i dwie kolumny równej wielkości. Musisz zmienić ich rozmiar, aby górny wiersz i prawa kolumna były znacznie większe. W programie Windows Forms Designer wybierz obiekt TableLayoutPanel. W prawym górnym rogu jest przycisk mały trójkąt czarny, który wygląda następująco.  
-  
-     ![Przycisk z trójkątem](../ide/media/express-iconblacktriangle.gif "Express_IconBlackTriangle")  
-Trójkątny przycisk  
-  
-     Ten przycisk oznacza, że kontrolka ma zadań, które ułatwiają automatycznym ustawianiu jego właściwości.  
-  
-9. Wybierz trójkąt, aby wyświetlić listę zadań kontroli, jak pokazano na poniższej ilustracji.  
-  
-     ![Zadania TableLayoutPanel](../ide/media/express-tablepanel.png "Express_TablePanel")  
-Zadania TableLayoutPanel  
-  
-10. Wybierz **Edytuj wiersze i kolumny** zadanie, aby wyświetlić **Style kolumn i wierszy** okna. Wybierz **Kolumna1**i ustaw jej rozmiar na 15 procent, upewniając się, że **procent** przycisku jest zaznaczony i wprowadzono `15` w **procent** pole. (To `NumericUpDown` formantu, którego będziesz używać później w samouczku.) Wybierz **Kolumna2** i ustaw ją na 85 procent. Nie należy wybierać **OK** przycisk, ponieważ okno zostanie zamknięte. (Ale jeśli to zrobisz, możesz uruchomić go za pomocą listy zadań).  
-  
-     ![Style wierszy i kolumn TableLayoutPanel](../ide/media/vs-tablelayoutpanel-setup.png "VS_TableLayoutPanel_Setup")  
-Style wierszy i kolumn TableLayoutPanel  
-  
-11. Z **Pokaż** listy rozwijanej w górnej części okna wybierz **wierszy**. Ustaw **Row1** do 90 procent a **Row2** do 10 procent.  
-  
-12. Wybierz **OK** przycisku. Twój TableLayoutPanel teraz powinien mieć duży, górny wiersz, mały dolny wiersz, małą lewą kolumnę i dużą prawą kolumnę. Możesz zmienić rozmiar wierszy i kolumn w TableLayoutPanel wybierając tableLayoutPanel1 w formularzu, a następnie przeciągając jego obramowania wierszy i kolumn.  
-  
-     ![Formularz Form1 z o zmienionym rozmiarze TableLayoutPanel](../ide/media/vs-formafterlayoutpanel.png "VS_FormAfterLayoutPanel")  
-Formularz Form1 z po zmianie rozmiaru formantu TableLayoutPanel  
-  
-### <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć  
-  
-- Aby przejść do następnego kroku samouczka, zobacz [krok 5: Dodawanie formantów do formularza](../ide/step-5-add-controls-to-your-form.md).  
-  
+    > TableLayoutPanel działa jak tabela w Microsoft Office Word: zawiera wiersze i kolumny, a pojedyncza komórka może obejmować wiele wierszy i kolumn. Każda komórka może zawierać jedną kontrolkę (na przykład przycisk, pole wyboru lub etykietę). Obiekt TableLayoutPanel będzie miał `PictureBox`ą kontrolkę obejmującą cały górny wiersz, `CheckBox` kontrolkę w lewej dolnej komórce i cztery `Button` kontrolki w swojej prawej dolnej komórce.
+
+8. Obecnie TableLayoutPanel ma dwa wiersze o równym rozmiarze i dwie kolumny o równym rozmiarze. Należy zmienić ich rozmiar, aby górny wiersz i prawa kolumna były znacznie większe. W Projektant formularzy systemu Windows wybierz TableLayoutPanel. W prawym górnym rogu znajduje się mały czarny trójkątny przycisk, który pojawia się w następujący sposób.
+
+     ![Przycisk trójkąta](../ide/media/express-iconblacktriangle.gif "Express_IconBlackTriangle") Przycisk trójkąta
+
+     Ten przycisk oznacza, że Kontrolka zawiera zadania, które ułatwiają automatyczne ustawianie jego właściwości.
+
+9. Wybierz Trójkąt, aby wyświetlić listę zadań kontrolki, jak pokazano na poniższej ilustracji.
+
+     ![Zadania TableLayoutPanel](../ide/media/express-tablepanel.png "Express_TablePanel") Zadania TableLayoutPanel
+
+10. Wybierz zadanie **Edytuj wiersze i kolumny** , aby wyświetlić okno **Style kolumn i wierszy** . Wybierz pozycję **Kolumna1**i ustaw jej rozmiar na 15 procent, upewniając się, że jest zaznaczony przycisk **procent** i wprowadzając `15` w polu **procent** . (To jest formant `NumericUpDown`, którego będziesz używać w kolejnym samouczku). Wybierz pozycję **Kolumna2** i ustaw ją na 85 procent. Nie wybieraj jeszcze przycisku **OK** , ponieważ okno zostanie zamknięte. (Ale jeśli to zrobisz, możesz otworzyć go ponownie za pomocą listy zadań).
+
+     ![Kolumny TableLayoutPanel i style wierszy](../ide/media/vs-tablelayoutpanel-setup.png "VS_TableLayoutPanel_Setup") Kolumny TableLayoutPanel i style wierszy
+
+11. Z listy rozwijanej **Pokaż** w górnej części okna wybierz pozycję **wiersze**. Ustaw wartość **row1** na 90% i **Row2** na 10 procent.
+
+12. Wybierz przycisk **OK** . Obiekt TableLayoutPanel powinien teraz mieć duży górny wiersz, mały dolny wiersz, małą lewą kolumnę i dużą prawą kolumnę. Można zmienić rozmiar wierszy i kolumn w TableLayoutPanel, wybierając tableLayoutPanel1 w formularzu, a następnie przeciągając obramowania wierszy i kolumn.
+
+     ![Formularz Form1 ze zmienionym rozmiarem TableLayoutPanel](../ide/media/vs-formafterlayoutpanel.png "VS_FormAfterLayoutPanel") Formularz Form1 ze zmienionym rozmiarem TableLayoutPanel
+
+### <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
+
+- Aby przejść do następnego kroku samouczka, zobacz [krok 5: Dodawanie kontrolek do formularza](../ide/step-5-add-controls-to-your-form.md).
+
 - Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 3: Ustawianie właściwości formularza](../ide/step-3-set-your-form-properties.md).

@@ -1,34 +1,34 @@
 ---
-title: XSLT Profiler | Microsoft Docs
+title: Profiler XSLT | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 8e852628-99fc-4e6e-8602-e1c13dde3b95
 caps.latest.revision: 5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c42405a4c4fc850c80aa473dd846ededa281d66c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d090e5c570eb2700e3493ffd80f256c76d0d52ec
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438842"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669322"
 ---
 # <a name="xslt-profiler"></a>Profiler XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Profiler XSLT jest narzędzia profiler analizy wydajności, która ułatwia programowanie i debugowanie dokumentów XSLT. Profiler XSLT umożliwia deweloperom mierzyć i ocena problemów związanych z wydajnością w kodzie XSLT, tworząc szczegółowe raporty dotyczące wydajności XSLT. Profiler XSLT obejmuje, przydatne wskazówki dotyczące XSL i XSLT liczbą optymalizacje arkusza stylów, które są istotne dla aplikacji opartych na XSLT, wymagających maksymalnej wydajności.  
-  
- Profiler XSLT jest częścią programu Visual Studio 2010 i jest dostępna w programie Visual Studio **XML** menu.  
-  
- ![XSLT Profiler](../xml-tools/media/xsltprofilermenu.gif "XSLTProfilerMenu")  
-  
- Profiler XSLT została wprowadzona jako dodatek dla programu Visual Studio 2008. Aby uzyskać więcej informacji, zobacz sekcję powiązane zasoby na [Profiler XSLT do lutego 08 programu Visual Studio Community Technology Preview](http://go.microsoft.com/fwlink/?LinkId=142987) strony.  
-  
+Profiler XSLT jest narzędziem profilera analizy wydajności, które ułatwia tworzenie i debugowanie dokumentów XSLT. Profiler XSLT pozwala deweloperom mierzyć i szacować problemy związane z wydajnością w kodzie XSLT przez tworzenie szczegółowych raportów o wydajności XSLT. Profiler XSLT zawiera przydatne wskazówki dotyczące optymalizacji arkusza stylów XSL i XSLT, które są niezbędne dla aplikacji opartych na formacie XSLT, które wymagają maksymalnej wydajności.
+
+ Profiler XSLT jest częścią programu Visual Studio 2010 i jest dostępny w menu **XML** programu Visual Studio.
+
+ ![Profiler XSLT](../xml-tools/media/xsltprofilermenu.gif "XSLTProfilerMenu")
+
+ Profiler XSLT został po raz pierwszy wprowadzony jako dodatek dla programu Visual Studio 2008. Aby uzyskać więcej informacji, zobacz sekcję powiązane zasoby w narzędziu [XSLT Profiler dla programu Visual Studio luty 08 Community Technology Preview](http://go.microsoft.com/fwlink/?LinkId=142987) stronie.
+
 > [!NOTE]
-> Niektóre ekrany mogą wyglądać inaczej w programie Visual Studio 2010 niż na ich w tych dokumentach, ponieważ niektóre elementy wizualne zostały zmienione od czasu Visual Studio 2008.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Przewodnik: XSLT Profiler](../xml-tools/walkthrough-xslt-profiler.md)
+> Niektóre ekrany mogą wyglądać inaczej w programie Visual Studio 2010 niż w tych dokumentach, ponieważ niektóre elementy wizualne zostały zmienione od programu Visual Studio 2008.
+
+## <a name="see-also"></a>Zobacz też
+ [Przewodnik: Profiler XSLT](../xml-tools/walkthrough-xslt-profiler.md)

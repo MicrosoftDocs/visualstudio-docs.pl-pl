@@ -6,39 +6,39 @@ helpviewer_keywords:
 - Web performance tests, walkthroughs
 - Web performance tests, data binding (database)
 ms.assetid: 2ada376d-f168-455d-9643-6acb535360c1
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e6fad5424e74c8a65ea8ce889412b834cda6a790
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 8c17a1ce7b2bf775933be6e9bea3dd299d9fe717
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180145"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665430"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Dodawanie źródła danych do testu wydajności sieci Web
 
-Wiązanie danych, aby zapewnić różne wartości w ten sam test, na przykład, aby zapewnić różne wartości do formularza Parametry księgowania.
+Powiąż dane, aby podać różne wartości na tym samym teście, na przykład, aby podać różne wartości parametrów post formularza.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-![Wiązanie danych do testu wydajności sieci web](../test/media/web_test_databinding_conceptual.png)
+![Powiązywanie danych z testem wydajności sieci Web](../test/media/web_test_databinding_conceptual.png)
 
-Zamierzamy korzystanie z przykładowej aplikacji platformy ASP.NET. Posiada trzy *.aspx* strony — domyślną stronę, stronę czerwoną i niebieską stronę. Domyślna strona zawiera formant radiowy, do wyboru czerwony lub niebieski i przycisk Prześlij. Pozostałe dwa *.aspx* strony są bardzo proste. Jedna ma etykietę o nazwie czerwona, a druga ma etykietę o nazwie niebieska. Po wybraniu Prześlij na stronie domyślnej wyświetlamy jedną z innych stron. Możesz pobrać [ColorWebApp](https://code.msdn.microsoft.com/Sample-ColorWebApp-76ff7506) przykładowy lub po prostu wykonaj własną aplikację sieci web.
+Będziemy używać przykładowej aplikacji ASP.NET. Ma trzy strony *. aspx* — domyślną stronę, czerwoną stronę i niebieską stronę. Strona domyślna zawiera formant radiowy, aby wybrać czerwony lub niebieski i przycisk Prześlij. Pozostałe dwie strony *. aspx* są bardzo proste. Jedna ma etykietę o nazwie czerwona, a druga ma etykietę o nazwie niebieska. Po wybraniu opcji Prześlij na stronie domyślnej zostanie wyświetlona jedna z innych stron. Możesz pobrać przykład [ColorWebApp](https://code.msdn.microsoft.com/Sample-ColorWebApp-76ff7506) lub po prostu wykonać własną aplikację internetową.
 
-![Uruchamianie aplikacji sieci web do zbadania](../test/media/web_test_databinding_runwebapp.png)
+![Uruchamianie aplikacji sieci Web w celu przetestowania](../test/media/web_test_databinding_runwebapp.png)
 
-Twoje rozwiązanie powinien również zawierać test wydajności sieci web, który przegląda strony aplikacji sieci web.
+Rozwiązanie powinno również obejmować test wydajności sieci Web, który przegląda strony aplikacji sieci Web.
 
-![Rozwiązanie za pomocą testu wydajności sieci web](../test/media/web_test_databinding_solution.png)
+![Rozwiązanie z testem wydajności sieci Web](../test/media/web_test_databinding_solution.png)
 
 ## <a name="create-a-sql-database"></a>Tworzenie bazy danych SQL
 
 ::: moniker range="vs-2017"
 
-1. Jeśli nie masz programu Visual Studio Enterprise, możesz pobrać go z [pobieranie Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) strony.
+1. Jeśli nie masz Visual Studio Enterprise, możesz pobrać go ze strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) .
 
-2. Utwórz bazę danych SQL.
+2. Tworzenie bazy danych SQL.
 
      ![Dodawanie nowej bazy danych SQL](../test/media/web_test_databinding_sql_addnewdb.png)
 
@@ -56,19 +56,19 @@ Twoje rozwiązanie powinien również zawierać test wydajności sieci web, któ
 
 6. Opublikuj projekt bazy danych.
 
-     ![Opublikuj projekt bazy danych za pomocą Eksploratora rozwiązań](../test/media/web_test_databinding_sql_addnewdbpublish.png)
+     ![Publikowanie projektu bazy danych z Eksplorator rozwiązań](../test/media/web_test_databinding_sql_addnewdbpublish.png)
 
-7. Dodawanie danych do pola.
+7. Dodaj dane do pól.
 
-     ![Dodawanie danych do pola](../test/media/web_test_databinding_sql_addnewfieldsadddata.png)
+     ![Dodawanie danych do pól](../test/media/web_test_databinding_sql_addnewfieldsadddata.png)
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-1. Jeśli nie masz programu Visual Studio Enterprise, możesz pobrać go z [pobieranie Visual Studio](https://visualstudio.microsoft.com/downloads) strony.
+1. Jeśli nie masz Visual Studio Enterprise, możesz pobrać go ze strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads) .
 
-2. Utwórz bazę danych SQL.
+2. Tworzenie bazy danych SQL.
 
      ![Dodawanie nowej bazy danych SQL](../test/media/web_test_databinding_sql_addnewdb.png)
 
@@ -86,23 +86,23 @@ Twoje rozwiązanie powinien również zawierać test wydajności sieci web, któ
 
 6. Opublikuj projekt bazy danych.
 
-     ![Opublikuj projekt bazy danych za pomocą Eksploratora rozwiązań](../test/media/web_test_databinding_sql_addnewdbpublish.png)
+     ![Publikowanie projektu bazy danych z Eksplorator rozwiązań](../test/media/web_test_databinding_sql_addnewdbpublish.png)
 
-7. Dodawanie danych do pola.
+7. Dodaj dane do pól.
 
-     ![Dodawanie danych do pola](../test/media/web_test_databinding_sql_addnewfieldsadddata.png)
+     ![Dodawanie danych do pól](../test/media/web_test_databinding_sql_addnewfieldsadddata.png)
 
 ::: moniker-end
 
 ## <a name="add-the-data-source"></a>Dodawanie źródła danych
 
-1. Dodawanie źródła danych.
+1. Dodaj źródło danych.
 
-     ![Dodawanie źródła danych do testu wydajności sieci web](../test/media/web_test_databinding_sql_adddatasource.png)
+     ![Dodaj źródło danych do testu wydajności sieci Web](../test/media/web_test_databinding_sql_adddatasource.png)
 
 2. Wybierz typ źródła danych i nadaj mu nazwę.
 
-     ![Nazwa źródłowej bazy danych](../test/media/web_test_databinding_sql_adddatasourcedialog.png)
+     ![Nadaj nazwę źródłu bazy danych](../test/media/web_test_databinding_sql_adddatasourcedialog.png)
 
 3. Utwórz połączenie.
 
@@ -110,81 +110,81 @@ Twoje rozwiązanie powinien również zawierać test wydajności sieci web, któ
 
      Wprowadź szczegóły połączenia.
 
-     ![Wprowadź właściwości połączenia bazy danych SQL](../test/media/web_test_databinding_sql_adddatasourcedialogconnection.png)
+     ![Wprowadź właściwości połączenia z usługą SQL Database](../test/media/web_test_databinding_sql_adddatasourcedialogconnection.png)
 
-4. Wybierz tabelę, która ma być używana podczas testu.
+4. Wybierz tabelę, której chcesz użyć dla testu.
 
-     ![Dodawanie tabeli kolorów jako źródło danych](../test/media/web_test_databinding_sql_adddatasourcedialogaddtable.png)
+     ![Dodawanie tabeli kolorów jako źródła danych](../test/media/web_test_databinding_sql_adddatasourcedialogaddtable.png)
 
      Tabela jest powiązana z testem.
 
-     ![Węzeł źródła danych, Dodaj do testu wydajności sieci web](../test/media/web_test_databinding_requestnodeadded_mdb.png)
+     ![Węzeł źródeł danych Dodaj do testu wydajności sieci Web](../test/media/web_test_databinding_requestnodeadded_mdb.png)
 
 5. Zapisz test.
 
-## <a name="bind-the-data"></a>Powiązania danych
+## <a name="bind-the-data"></a>Powiąż dane
 
-1. Powiąż **ColorName** pola.
+1. Powiąż pole **ColorName** .
 
-     ![Powiązania pola ColorName RadioButtonList1 wartości](../test/media/web_test_databinding_sql_binddatasource.png)
+     ![Powiąż pole ColorName z wartością RadioButtonList1](../test/media/web_test_databinding_sql_binddatasource.png)
 
-2. Otwórz *Local.testsettings* w pliku **Eksploratora rozwiązań** i wybierz **jedno uruchomienie na wiersz źródła danych** opcji.
+2. Otwórz plik *Local. testsettings* w **Eksplorator rozwiązań** i wybierz opcję **jeden przebieg na wiersz źródła danych** .
 
-     ![Edytowanie pliku ustawień testu](../test/media/web_test_databinding_sql_testsettings.png)
+     ![Edytuj plik ustawień testu](../test/media/web_test_databinding_sql_testsettings.png)
 
-3. Zapisz test wydajności sieci web.
+3. Zapisz test wydajności sieci Web.
 
-## <a name="run-the-test-with-the-data"></a>Uruchom test przy użyciu danych
+## <a name="run-the-test-with-the-data"></a>Uruchom test z danymi
 
 1. Uruchom test.
 
-     ![Uruchom test wydajności sieci web, aby sprawdzić powiązania](../test/media/web_test_databinding_sql_runtest.png)
+     ![Uruchom test wydajności sieci Web, aby zweryfikować powiązanie](../test/media/web_test_databinding_sql_runtest.png)
 
-     Dwa przebiegi są wyświetlane dla każdego wiersza danych. Uruchom 1 wysyła żądanie dla strony *Red.aspx*, uruchom 2 wysyła żądanie dla strony *Blue.aspx*.
+     Dwa uruchomienia są wyświetlane dla każdego wiersza danych. Uruchomienie 1 powoduje wysłanie żądania dla strony *Red. aspx*i uruchomienia 2 wysyła żądanie dla strony *Blue. aspx*.
 
      ![Wyniki przebiegu testu](../test/media/web_test_databinding_sql_runresults.png)
 
-     Wiążąc się ze źródłem danych, możesz naruszyć regułę URL odpowiedzi domyślnej. W tym przypadku błąd w przebiegu 2 jest spowodowany przez regułę, która oczekuje *Red.aspx* strony z oryginalnego nagrania testu, ale teraz powiązanie danych kieruje go do *Blue.aspx* strony.
+     Po utworzeniu powiązania ze źródłem danych można naruszyć domyślną regułę adresu URL odpowiedzi. W takim przypadku błąd w przebiegu 2 jest spowodowany przez regułę, która oczekuje strony *Red. aspx* od oryginalnego nagrania testu, ale powiązanie danych teraz kieruje go do strony *Blue. aspx* .
 
-2. Popraw błąd sprawdzania poprawności, usuwając **adres URL odpowiedzi** reguła sprawdzania poprawności i ponownie uruchamiając test.
+2. Usuń błąd sprawdzania poprawności, usuwając regułę walidacji **adresu URL odpowiedzi** i ponownie uruchamiając test.
 
      ![Usuń regułę walidacji adresu URL odpowiedzi](../test/media/web_test_databinding_sql_deleteresponseurl.png)
 
-     Test wydajności sieci web kończy się powodzeniem używanie powiązania danych.
+     Test wydajności sieci Web przebiega teraz przy użyciu powiązania danych.
 
-     ![Test zakończy się pomyślnie używanie powiązania danych](../test/media/web_test_databinding_sql_deleteresponseurlrunresults.png)
+     ![Testy z użyciem powiązania danych](../test/media/web_test_databinding_sql_deleteresponseurlrunresults.png)
 
-## <a name="q--a"></a>Pytania i odpowiedzi
+## <a name="q--a"></a>p & A
 
-### <a name="q-what-databases-can-i-use-as-a-data-source"></a>PYTANIA Których baz danych można używać jako źródła danych?
+### <a name="q-what-databases-can-i-use-as-a-data-source"></a>P: jakich baz danych można używać jako źródła danych?
 
-**Z** Można użyć następujących:
+Odp **.:** Można użyć następujących:
 
-- Program Microsoft SQL Azure.
+- Microsoft SQL Azure.
 
-- Dowolna wersja programu Microsoft SQL Server 2005 lub nowszego.
+- Dowolna wersja Microsoft SQL Server 2005 lub nowsza.
 
-- Plik bazy danych programu Microsoft SQL Server (w tym programu SQL Express).
+- Plik bazy danych Microsoft SQL Server (w tym SQL Express).
 
 - Microsoft ODBC.
 
-- Plik programu Microsoft Access za pomocą dostawcy .NET Framework dla OLE DB.
+- Plik programu Microsoft Access z dostawcą .NET Framework dla OLE DB.
 
-- Oracle 7.3, 8i, 9i lub 10g.
+- Oracle 7,3, 8i, 9i lub 10g.
 
-### <a name="q-how-do-i-use-a-comma-separated-value-csv-text-file-as-a-data-source"></a>PYTANIA Jak mogę użyć pliku tekstowego z wartościami rozdzielanymi przecinkami (CSV) jako źródła danych?
+### <a name="q-how-do-i-use-a-comma-separated-value-csv-text-file-as-a-data-source"></a>P: Jak mogę użyć pliku tekstowego z wartościami rozdzielanymi przecinkami (CSV) jako źródła danych?
 
-**Z** Oto jak to zrobić:
+Odp **.:** Oto jak to zrobić:
 
-1. Utwórz folder do organizowania artefaktów projektów bazy danych i dodać element.
+1. Utwórz folder w celu zorganizowania artefaktów bazy danych projektów i dodania elementu.
 
      ![Dodaj nowy element do folderu danych](../test/media/web_test_databinding_foldernewitem.png)
 
 2. Utwórz plik tekstowy.
 
-     ![Nazwa nowego pliku tekstowego ColorData.csv](../test/media/web_test_databinding_foldernewitemtextfile.png)
+     ![Nazwij nowy plik tekstowy ColorData. csv](../test/media/web_test_databinding_foldernewitemtextfile.png)
 
-3. Edytuj plik tekstowy i Dodaj następujący kod:
+3. Edytuj plik tekstowy i Dodaj następujące elementy:
 
     ```text
     ColorId, ColorName
@@ -192,46 +192,46 @@ Twoje rozwiązanie powinien również zawierać test wydajności sieci web, któ
     1,Blue
     ```
 
-4. Użyj kroków w [Dodaj źródło danych](#add-the-data-source), ale wybierz plik CSV jako źródło danych.
+4. Wykonaj kroki opisane w sekcji [Dodawanie źródła danych](#add-the-data-source), ale wybierz plik CSV jako źródło danych.
 
      ![Wprowadź nazwę i wybierz plik CSV](../test/media/web_test_databinding_adddatasourcedialog.png)
 
-### <a name="q-what-if-my-existing-csv-file-does-not-contain-column-headers"></a>PYTANIA Co zrobić, jeśli mój istniejący plik CSV nie zawiera nagłówków kolumn?
+### <a name="q-what-if-my-existing-csv-file-does-not-contain-column-headers"></a>P: co zrobić, jeśli mój istniejący plik CSV nie zawiera nagłówków kolumn?
 
-**Z** Jeśli nie możesz dodać nagłówków kolumn, możesz użyć pliku opisu schematu, aby traktować plik CSV jako bazę danych.
+Odp **.:** Jeśli nie możesz dodać nagłówków kolumn, możesz użyć pliku opisu schematu, aby traktować plik CSV jako bazę danych.
 
-1. Dodaj nowy plik tekstowy o nazwie *schema.ini*.
+1. Dodaj nowy plik tekstowy o nazwie *Schema. ini*.
 
-     ![Dodaj plik schema.ini](../test/media/web_test_databinding_schemafile.png)
+     ![Dodaj plik Schema. ini](../test/media/web_test_databinding_schemafile.png)
 
-2. Edytuj *schema.ini* plik, aby dodać informacje opisujące strukturę danych. Na przykład plik schematu opisujący plik CSV może wyglądać następująco:
+2. Edytuj plik *Schema. ini* , aby dodać informacje opisujące strukturę danych. Na przykład plik schematu opisujący plik CSV może wyglądać następująco:
 
     ```text
     [testdata.csv]
     ColNameHeader=False
     ```
 
-3. Dodawanie źródła danych do testu.
+3. Dodaj źródło danych do testu.
 
-     ![Dodawanie źródła danych do testu wydajności sieci web](../test/media/web_test_databinding_sql_adddatasource.png)
+     ![Dodaj źródło danych do testu wydajności sieci Web](../test/media/web_test_databinding_sql_adddatasource.png)
 
-4. Jeśli używasz *schema.ini* plików, wybierz **bazy danych** (nie plik CSV) jako źródło danych i nadaj mu nazwę.
+4. Jeśli używasz pliku *Schema. ini* , wybierz pozycję **baza danych** (nie plik CSV) jako źródło danych i nadaj mu nazwę.
 
-     ![Dodawanie źródła danych bazy danych](../test/media/web_test_databinding_adddatasourcecolortext.png)
+     ![Dodaj źródło danych bazy danych](../test/media/web_test_databinding_adddatasourcecolortext.png)
 
 5. Utwórz nowe połączenie.
 
      ![Wybierz nowe połączenie](../test/media/web_test_databinding_sql_adddatasourcedialogconnectionnew.png)
 
-6. Wybierz pozycję .NET Framework Data Provider for OLE DB.
+6. Wybierz Dostawca danych .NET Framework OLE DB.
 
-     ![Wybieranie dostawcy danych .NET framework OLE DB](../test/media/web_test_databinding_adddatasourcecolortext2.png)
+     ![Wybierz dostawcę danych programu .NET Framework OLE DB](../test/media/web_test_databinding_adddatasourcecolortext2.png)
 
-7. Wybierz **zaawansowane**.
+7. Wybierz pozycję **Zaawansowane**.
 
-     ![Wybierz zaawansowane](../test/media/web_test_databinding_advanced.png)
+     ![Wybieranie zaawansowane](../test/media/web_test_databinding_advanced.png)
 
-8. Dla właściwości dostawca zaznacz wartość Microsoft.Jet.OLEDB.4.0, a następnie ustaw **właściwości rozszerzone** na tekst; HDR = NO.
+8. Dla właściwości dostawca wybierz pozycję Microsoft. Jet. OLEDB. 4.0, a następnie ustaw **właściwości rozszerzone** na tekst. HDR = NO.
 
      ![Zastosuj zaawansowane właściwości](../test/media/web_test_databinding_advancedproperties.png)
 
@@ -239,25 +239,25 @@ Twoje rozwiązanie powinien również zawierać test wydajności sieci web, któ
 
      ![Wprowadź ścieżkę do folderu danych](../test/media/web_test_databinding_adddatasourcecolortext5.png)
 
-10. Wybierz plik CSV, którego chcesz używać.
+10. Wybierz plik CSV, którego chcesz użyć.
 
      ![Wybierz plik tekstowy](../test/media/web_test_databinding_adddatasourcecolortext6.png)
 
-     Po zakończeniu plik CSV pojawia się jako tabela.
+     Po zakończeniu plik CSV zostanie wyświetlony jako tabela.
 
-     ![Źródła danych dodane do testu](../test/media/web_test_databinding_adddatasourcecolortext7.png)
+     ![Źródło danych dodane do testu](../test/media/web_test_databinding_adddatasourcecolortext7.png)
 
-### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>PYTANIA Jak mogę użyć pliku XML jako źródła danych?
+### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>P: Jak mogę używać pliku XML jako źródła danych?
 
-**Z** Tak.
+Odp **.:** Opcję.
 
-1. Utwórz folder do organizowania artefaktów projektów bazy danych i dodać element.
+1. Utwórz folder w celu zorganizowania artefaktów bazy danych projektów i dodania elementu.
 
      ![Dodaj nowy element do folderu danych](../test/media/web_test_databinding_foldernewitem.png)
 
 2. Utwórz plik XML.
 
-     ![Dodaj plik ColorData.xml](../test/media/web_test_databinding_additemxmlfile.png)
+     ![Dodawanie pliku ColorData. XML](../test/media/web_test_databinding_additemxmlfile.png)
 
 3. Edytuj plik XML i Dodaj dane:
 
@@ -275,19 +275,19 @@ Twoje rozwiązanie powinien również zawierać test wydajności sieci web, któ
     </ColorData>
     ```
 
-4. Użyj kroków w [Dodaj źródło danych](#add-the-data-source), ale wybierz plik XML jako źródła danych.
+4. Wykonaj kroki opisane w sekcji [Dodawanie źródła danych](#add-the-data-source), ale wybierz plik XML jako źródło danych.
 
      ![Wprowadź nazwę i wybierz plik XML](../test/media/web_test_databinding_adddatasourcedialogxml.png)
 
-### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>PYTANIA Czy można dodać powiązanie danych do żądania usługi sieci Web, które używa protokołu SOAP?
+### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>P: Czy można dodać powiązanie danych do żądania usługi sieci Web, które używa protokołu SOAP?
 
-**Z** Tak, musisz ręcznie zmienić kod XML protokołu SOAP.
+Odp **.:** Tak, musisz ręcznie zmienić kod XML protokołu SOAP.
 
-1. Wybierz żądanie usługi sieci web w drzewie żądań i w oknie dialogowym właściwości, wybierz wielokropek (...) we właściwości treść ciągu.
+1. Wybierz żądanie usługi sieci Web w drzewie żądań i w okno Właściwości wybierz wielokropek (...) we właściwości treść ciągu.
 
-     ![Edytuj ciąg tekstowy usługi sieci web](../test/media/web_test_databinding_webservicerequest.png)
+     ![Edytuj treść ciągu usługi sieci Web](../test/media/web_test_databinding_webservicerequest.png)
 
-2. Zastąp wartości w treści protokołu SOAP wartościami powiązanych z danymi przy użyciu następującej składni:
+2. Zastąp wartości w treści protokołu SOAP wartościami związanymi z danymi przy użyciu następującej składni:
 
     ```xml
     {{DataSourceName.TableName.ColumnName}}
@@ -306,7 +306,7 @@ Twoje rozwiązanie powinien również zawierać test wydajności sieci web, któ
     </soap:Envelope>
     ```
 
-    Możesz zmienić ją do tego:
+    Można to zmienić w następujący sposób:
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>

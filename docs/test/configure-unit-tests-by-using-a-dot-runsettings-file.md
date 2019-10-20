@@ -2,17 +2,17 @@
 title: Konfigurowanie testów jednostkowych przy użyciu pliku. runsettings
 ms.date: 06/14/2019
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 4194a392eee1d5c9beaa0640f4006d1f01ebbace
-ms.sourcegitcommit: 1a3c2ca995fd44fc72741b3a100c6e57f4f8702c
+author: jillre
+ms.openlocfilehash: 22fe1de176819807c5cd60d746f381e325601799
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72262315"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665139"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurowanie testów jednostkowych przy użyciu pliku *. runsettings*
 
@@ -38,7 +38,7 @@ Plik jest wyświetlany w menu Ustawienia testu i można go zaznaczyć lub usuną
 
 ::: moniker range=">=vs-2019"
 
-Aby określić plik parametrów uruchomieniowych w środowisku IDE, wybierz pozycję **testuj** > **Wybierz plik ustawień**. Przejdź do pliku *. runsettings* i wybierz go.
+Aby określić plik parametrów uruchomieniowych w środowisku IDE, wybierz pozycję **testuj**  > **Wybierz plik ustawień**. Przejdź do pliku *. runsettings* i wybierz go.
 
 ![Wybieranie menu plik ustawień testu w programie Visual Studio 2019](media/vs-2019/select-settings-file.png)
 
@@ -91,13 +91,13 @@ Aby dostosować testy przy użyciu pliku *. runsettings* , wykonaj następujące
 
 ::: moniker range="vs-2017"
 
-3. W menu **test** wybierz pozycję **Ustawienia testu** > **Wybierz plik ustawień testu**. Przejdź do utworzonego pliku *runsettings* , a następnie wybierz przycisk **OK**.
+3. W menu **test** wybierz pozycję **Ustawienia testu**  > **Wybierz plik ustawień testu**. Przejdź do utworzonego pliku *runsettings* , a następnie wybierz przycisk **OK**.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-3. Aby wybrać plik parametrów uruchomieniowych, wybierz opcję **testuj** > **Wybierz plik ustawień**. Przejdź do utworzonego pliku *runsettings* , a następnie wybierz przycisk **OK**.
+3. Aby wybrać plik parametrów uruchomieniowych, wybierz opcję **testuj**  > **Wybierz plik ustawień**. Przejdź do utworzonego pliku *runsettings* , a następnie wybierz przycisk **OK**.
 
 ::: moniker-end
 
@@ -149,7 +149,7 @@ Poniższy kod XML przedstawia zawartość typowego pliku *. runsettings* . Każd
             <AllowLowIntegrityProcesses>True</AllowLowIntegrityProcesses>
             <CollectFromChildProcesses>True</CollectFromChildProcesses>
             <CollectAspDotNet>False</CollectAspDotNet>
-            
+
           </CodeCoverage>
         </Configuration>
       </DataCollector>
@@ -211,7 +211,7 @@ Element **RunConfiguration** może zawierać następujące elementy:
 |Węzeł|Domyślny|Wartości|
 |-|-|-|
 |**ResultsDirectory**||Katalog, w którym są umieszczane wyniki testów.|
-|**TargetFrameworkVersion**|Framework40|`FrameworkCore10` dla źródeł .NET Core, `FrameworkUap10` dla źródeł opartych na platformy UWP, `Framework45` dla .NET Framework 4,5 i wyższych, `Framework40` dla .NET Framework 4,0 i `Framework35` dla .NET Framework 3,5.<br /><br />To ustawienie określa wersję struktury testów jednostkowych używanej do odnajdywania i wykonywania testów. Może ona być inna niż wersja platformy .NET określonej we właściwościach kompilacji projektu badania jednostki.<br /><br />W przypadku pominięcia `TargetFrameworkVersion` elementu z pliku *. runsettings* platforma automatycznie określi wersję platformy opartą na skompilowanych plikach binarnych.|
+|**TargetFrameworkVersion**|Framework40|`FrameworkCore10` dla źródeł .NET Core `FrameworkUap10` dla źródeł opartych na platformy UWP `Framework45` dla .NET Framework 4,5 i wyższych, `Framework40` .NET Framework 4,0 i `Framework35` .NET Framework 3,5.<br /><br />To ustawienie określa wersję struktury testów jednostkowych używanej do odnajdywania i wykonywania testów. Może ona być inna niż wersja platformy .NET określonej we właściwościach kompilacji projektu badania jednostki.<br /><br />W przypadku pominięcia `TargetFrameworkVersion` elementu z pliku *. runsettings* platforma automatycznie określi wersję platformy opartą na skompilowanych plikach binarnych.|
 |**TargetPlatform**|x86|x86, x64|
 |**TreatTestAdapterErrorsAsWarnings**|false|fałsz, prawda|
 |**TestAdaptersPaths**||Co najmniej jedna ścieżka do katalogu, w którym znajduje się TestAdapters|
@@ -266,7 +266,7 @@ public void HomePageTest()
 }
 ```
 
-Aby użyć parametrów przebiegu testowego, Dodaj pole private <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> i Właściwość Public <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> do klasy testowej.
+Aby użyć parametrów przebiegu testowego, Dodaj prywatne pole <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> i publiczną właściwość <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> do klasy testowej.
 
 ### <a name="mstest-run-settings"></a>MSTest Parametry uruchomieniowe
 
@@ -284,14 +284,14 @@ Aby użyć parametrów przebiegu testowego, Dodaj pole private <xref:Microsoft.V
 
 Te ustawienia są specyficzne dla adaptera testowego, który uruchamia metody testowe mające atrybut <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute>.
 
-|Konfigurowanie|Domyślny|Wartości|
+|Konfiguracja|Domyślny|Wartości|
 |-|-|-|
 |**ForcedLegacyMode**|false|W programie Visual Studio 2012 karta MSTest została zoptymalizowana tak, aby była szybsza i bardziej skalowalna. Niektóre zachowania, na przykład kolejność, w jakiej są uruchamiane testy, mogą nie być dokładnie takie same, jak w poprzednich wersjach programu Visual Studio. Ustaw tę wartość na **true** , aby użyć starszego adaptera testowego.<br /><br />Można na przykład użyć tego ustawienia, jeśli masz plik *App. config* określony dla testu jednostkowego.<br /><br />Zaleca się, aby rozważyć refaktoryzację testów pozwalającą na użycie nowszego adaptera.|
 |**IgnoreTestImpact**|false|Funkcja wpływu na testy określa priorytety testów, których dotyczą ostatnie zmiany, po uruchomieniu w programie MSTest lub Microsoft Test Manager. To ustawienie powoduje wyłączenie funkcji. Aby uzyskać więcej informacji, zobacz, [które testy należy uruchomić od poprzedniej kompilacji](https://msdn.microsoft.com/library/dd286589).|
 |**SettingsFile**||W tym miejscu możesz określić plik ustawień testu, który ma być używany z kartą MSTest. Możesz również określić plik ustawień testu [w menu Ustawienia](#ide).<br /><br />Jeśli określisz tę wartość, musisz także ustawić **ForcedlegacyMode** na **true**.<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
 |**KeepExecutorAliveAfterLegacyRun**|false|Po zakończeniu przebiegu testu MSTest jest zamykany. Każdy proces, który jest uruchamiany jako część testu, również zostanie zamknięty. Jeśli chcesz zatrzymać program wykonujący testy, ustaw wartość na **true**. Można na przykład użyć tego ustawienia, aby zachować działanie przeglądarki między kodowanymi testami interfejsu użytkownika.|
 |**DeploymentEnabled**|true|W przypadku ustawienia wartości **false**elementy wdrożenia określone w metodzie testowej nie są kopiowane do katalogu wdrożenia.|
-|**CaptureTraceOutput**|true|Można pisać do śladu debugowania z metody testowej przy użyciu <xref:System.Diagnostics.Trace.WriteLine%2A?displayProperty=nameWithType>.|
+|**CaptureTraceOutput**|true|Można pisać do śledzenia debugowania z metody testowej przy użyciu <xref:System.Diagnostics.Trace.WriteLine%2A?displayProperty=nameWithType>.|
 |**DeleteDeploymentDirectoryAfterTestRunIsComplete**|true|Aby zachować katalog wdrożenia po przebiegu testu, należy ustawić tę wartość na **false**.|
 |**MapInconclusiveToFailed**|false|Jeśli test zakończy się nieniejednoznacznie, jest mapowany do stanu pominięty w **Eksploratorze testów**. Jeśli chcesz, aby testy niejednoznaczne były wyświetlane jako nieudane, ustaw wartość na **true**.|
 |**Inprocmode**|false|Jeśli chcesz, aby testy były uruchamiane w tym samym procesie co karta MSTest, ustaw tę wartość na **true**. To ustawienie zapewnia mniejszy przyrost wydajności. Ale jeśli test kończy się wyjątkiem, pozostałe testy nie są uruchamiane.|

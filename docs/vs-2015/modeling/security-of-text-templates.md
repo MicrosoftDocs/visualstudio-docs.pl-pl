@@ -1,5 +1,5 @@
 ---
-title: Zabezpieczenia szablonów tekstowych | Dokumentacja firmy Microsoft
+title: Bezpieczeństwo szablonów tekstowych | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -8,31 +8,31 @@ helpviewer_keywords:
 - text templates, security
 ms.assetid: 567a2383-7d43-4acc-af4a-cd70b7a0151e
 caps.latest.revision: 25
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f21bfadd540ce365c7f585a35991c27395558c6e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e24a90d4e7af351fc4ba5807d2af7830edede9cb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68202690"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72671212"
 ---
 # <a name="security-of-text-templates"></a>Zabezpieczenia szablonów tekstowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Szablony tekstowe mają następujące problemy dotyczące zabezpieczeń:  
-  
-- Szablony tekstowe są narażone na wstawienia dowolnego kodu.  
-  
-- Jeśli mechanizm używany przez hosta można znaleźć procesor dyrektywy nie jest bezpieczne, można uruchomić złośliwe procesora dyrektywy.  
-  
-## <a name="arbitrary-code"></a>Dowolnego kodu  
- Podczas pisania szablonu można umieścić dowolny kod w ramach \<## > tagów. Umożliwia to dowolnego kodu do wykonania z w ramach szablonu tekstu.  
-  
- Upewnij się, że można uzyskać szablony z zaufanych źródeł. Upewnij się ostrzec użytkowników końcowych w aplikacji nie można wykonać szablonów, które nie pochodzą z zaufanych źródeł.  
-  
-## <a name="malicious-directive-processor"></a>Złośliwy procesora dyrektywy  
- Aparat szablonów tekstu współdziała z hosta przekształcania i co najmniej jeden procesor dyrektywy do przekształcania szablonu tekstu do pliku wyjściowego. Aby uzyskać więcej informacji, zobacz [proces przekształcania szablonu tekstowego](../modeling/the-text-template-transformation-process.md).  
-  
- Jeśli mechanizm używany przez hosta można znaleźć procesor dyrektywy nie jest bezpieczne, uruchamia ryzyko uruchomienia złośliwych procesora dyrektywy. Złośliwy procesor dyrektywy może dostarczyć kod, który jest uruchamiany w `FullTrust` tryb uruchamiania szablonu. Jeśli utworzono hosta przekształcania szablonu niestandardowego tekstu, należy użyć mechanizm bezpiecznego, takich jak rejestr, aparat do zlokalizowania procesory dyrektyw.
+Szablony tekstowe mają następujące kwestie dotyczące zabezpieczeń:
+
+- Szablony tekstowe są podatne na dowolne wstawienia kodu.
+
+- Jeśli mechanizm wykorzystywany przez hosta do znajdowania procesora dyrektywy nie jest zabezpieczony, może zostać uruchomiony złośliwy procesor dyrektywy.
+
+## <a name="arbitrary-code"></a>Dowolny kod
+ Podczas pisania szablonu można umieścić dowolny kod w tagach > \< # #. Umożliwia to wykonywanie dowolnego kodu z poziomu szablonu tekstu.
+
+ Upewnij się, że uzyskujesz szablony z zaufanych źródeł. Pamiętaj, aby ostrzec użytkowników końcowych aplikacji, aby nie wykonywały szablonów, które nie pochodzą z zaufanych źródeł.
+
+## <a name="malicious-directive-processor"></a>Procesor złośliwej dyrektywy
+ Aparat szablonu tekstu współdziała z hostem transformacji oraz co najmniej jednym procesorem dyrektywy w celu przekształcenia tekstu szablonu w plik wyjściowy. Aby uzyskać więcej informacji, zobacz [proces przekształcania szablonu tekstu](../modeling/the-text-template-transformation-process.md).
+
+ Jeśli mechanizm używany przez hosta do znajdowania procesora dyrektywy nie jest zabezpieczony, jest w nim wykonywane ryzyko uruchomienia procesora złośliwej dyrektywy. Procesor złośliwej dyrektywy może dostarczyć kod, który jest uruchamiany w trybie `FullTrust`, gdy szablon zostanie uruchomiony. W przypadku tworzenia niestandardowego hosta transformacji szablonu tekstu należy użyć mechanizmu bezpiecznego, takiego jak rejestr, aby aparat znalazł procesory dyrektywy.

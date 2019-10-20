@@ -1,5 +1,5 @@
 ---
-title: Edytor języka U-SQL, opcje formatowania
+title: Opcje formatowania edytora U-SQL
 ms.date: 01/17/2019
 ms.topic: reference
 f1_keywords:
@@ -8,47 +8,47 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.U-SQL.Formatting.Indentation
 - VS.ToolsOptionsPages.Text_Editor.U-SQL.Formatting
 - VS.ToolsOptionsPages.Text_Editor.U-SQL.Formatting.General
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c402033efe31b4cbbddbe02b73aec7be08914fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d1e57470c1afa0fad97265bdcebff4fd9a2a0a43
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778368"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666662"
 ---
-# <a name="options-text-editor-u-sql-formatting"></a>Options, Text Editor, U-SQL, Formatting
+# <a name="options-text-editor-u-sql-formatting"></a>Opcje, Edytor tekstu, U-SQL, formatowanie
 
-Użyj **formatowanie** Strona opcji, aby ustawić opcje formatowania kodu w edytorze kodu. Aby uzyskać dostęp do tej strony Opcje, wybierz opcję **narzędzia** > **opcje**. W **opcje** okna dialogowego wybierz **edytora tekstów** > **U-SQL** > **formatowanie**.
+Na stronie opcje **formatowania** można ustawić opcje formatowania kodu w edytorze kodu. Aby uzyskać dostęp do tej strony opcji, wybierz pozycję **narzędzia**  > **Opcje**. W oknie dialogowym **Opcje** wybierz pozycję **Edytor tekstu**  >  formatowanie**U-SQL**  > .
 
-## <a name="general-page"></a>Strona Ogólne
+## <a name="general-page"></a>Strona ogólna
 
 ### <a name="general-settings"></a>Ustawienia ogólne
 
-Te ustawienia mają wpływ na *podczas* edytora kodu stosuje opcji formatowania do kodu.
+Te ustawienia mają wpływ na to, *kiedy* Edytor kodu stosuje opcje formatowania do kodu.
 
-- **Automatycznie Formatuj skończoną instrukcję po wprowadzeniu średnika**
+- **Automatycznie Formatuj ukończoną instrukcję przy wprowadzaniu średnika**
 
-   Po wybraniu formatuje instrukcji po wybraniu klawisza średnik, zgodnie z opcjami formatowania, wybrany dla edytora.
+   Po wybraniu formatuje instrukcje w przypadku wybrania klucza średnika zgodnie z opcjami formatowania wybranymi dla edytora.
 
 - **Automatycznie Formatuj przy wklejaniu**
 
-   Po wybraniu formatuje tekst, który jest wklejany do edytora, aby dopasować opcje formatowania, wybrany dla edytora.
+   Gdy ta opcja jest zaznaczona, formatuje tekst wklejony do edytora, aby dopasować opcje formatowania wybrane dla edytora.
 
-## <a name="preview-windows"></a>Windows (wersja zapoznawcza)
+## <a name="preview-windows"></a>Okna wersji zapoznawczej
 
-**Wcięcia**, **nowe wiersze**, i **odstępy** podstrony każdego wyświetlić okno podglądu u dołu. Okno podglądu przedstawiono wpływ poszczególnych opcji. Aby użyć okno podglądu, wybierz opcję formatowania. Okno podglądu pokazano przykład odpowiadającego wybranej opcji. Gdy zmieniasz ustawienia, zaznaczając pole wyboru, aktualizuje okno podglądu, aby pokazać efekt nowe ustawienie.
+Podstrony **wcięcia**, **nowe wiersze**i **odstępy** są wyświetlane u dołu okna podglądu. Okno podglądu pokazuje efekt każdej opcji. Aby użyć okna podglądu, wybierz opcję formatowania. Okno podglądu zawiera przykład wybranej opcji. Gdy zmienisz ustawienie, zaznaczając pole wyboru, okno podglądu zostanie zaktualizowane, aby pokazać efekt nowego ustawienia.
 
-### <a name="indentation-remarks"></a>Uwagi wcięć
+### <a name="indentation-remarks"></a>Uwagi dotyczące wcięć
 
-Wcięcie opcji na **karty** stron dla każdego z języków tylko określić, gdzie edytora kodu umieszcza kursor po naciśnięciu klawisza **Enter** na końcu wiersza. Wcięcie opcji w obszarze **formatowanie** są stosowane, gdy kod jest formatowana automatycznie, na przykład:
+Opcje wcięć na stronach **kart** dla każdego języka określają, gdzie Edytor kodu umieszcza kursor po naciśnięciu klawisza **Enter** na końcu wiersza. Opcje wcięć w obszarze **Formatowanie** stosuje się, gdy kod jest formatowany automatycznie, na przykład:
 
-- Po wklejeniu kodu do pliku podczas **automatycznie Formatuj przy wklejaniu** jest zaznaczone
-- Gdy blok formatowana został wpisany ręcznie
+- Podczas wklejania kodu do pliku, gdy jest zaznaczone **Automatyczne formatowanie przy wklejaniu**
+- Gdy format jest formatowany ręcznie
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Okno dialogowe Ogólne, środowisko, opcje](../../ide/reference/general-environment-options-dialog-box.md)
+- [Ogólne, środowisko, Opcje — okno dialogowe](../../ide/reference/general-environment-options-dialog-box.md)

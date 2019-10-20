@@ -1,5 +1,5 @@
 ---
-title: Dokumentacja interfejsu API dla rozszerzalności modelowania UML | Dokumentacja firmy Microsoft
+title: Dokumentacja interfejsu API dla rozszerzalności modelowania UML | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -10,28 +10,27 @@ helpviewer_keywords:
 - UML model, API
 ms.assetid: 2b2ffe93-c358-4d28-a5e5-3d0474629b58
 caps.latest.revision: 11
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 12eadb9844df5da78b11367708fed715f1c13672
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e48bf723b8b1cb77cc1f7f4de9cfb562caccde84
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68159669"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672806"
 ---
 # <a name="api-reference-for-uml-modeling-extensibility"></a>Wykaz interfejsów API dla rozszerzalności modelowania UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Można napisać kod programu do odczytu i modyfikowania modeli utworzonych w programie Visual Studio. Dokumentacja interfejsu API zawiera informacje dotyczące określonej klasy do udzielenia odpowiedzi na to. Aby uzyskać więcej informacji zadań, zobacz Tematy w dziale [modeli i diagramów UML rozszerzyć](../modeling/extend-uml-models-and-diagrams.md). Aby dowiedzieć się, które wersje programu Visual Studio obsługują modeli UML, zobacz [obsługiwana wersja dla narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
-  
-## <a name="assemblies"></a>Zestawy  
-  
-|Zestaw|Co to pozwala zrobić|  
-|--------------|--------------------------------|  
-|Microsoft.VisualStudio.Uml.Interfaces.dll|— Przeczytaj i zmienić elementy modelu, takie jak IUseCase, IAssociation i tak dalej.<br />-Nawigowanie po relacjach między elementami.<br /><br /> Obszary nazw i typy odnoszą się do tych, które są zdefiniowane w specyfikacji UML.|  
-|Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll|— Tworzenie nowych wystąpień elementów modelu<br />-Dostęp i Modyfikuj kształty i diagramy.|  
-  
-## <a name="see-also"></a>Zobacz też  
- [Rozszerzanie modeli i diagramów UML](../modeling/extend-uml-models-and-diagrams.md)   
- [Odwołania API do modelowania SDK dla Visual Studio](../modeling/api-reference-for-modeling-sdk-for-visual-studio.md)
+Można napisać kod programu, aby odczytywać i modyfikować modele tworzone w programie Visual Studio. Dokumentacja interfejsu API zawiera informacje o określonych klasach, które ułatwiają to. Aby uzyskać więcej informacji zorientowanych na zadania, zapoznaj się z tematami w sekcji [rozszerzając modele UML i diagramy](../modeling/extend-uml-models-and-diagrams.md). Aby sprawdzić, które wersje programu Visual Studio obsługują modele UML, zobacz [Obsługa wersji dla narzędzi architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+
+## <a name="assemblies"></a>Zestawy
+
+|Zestaw|Co można zrobić|
+|--------------|--------------------------------|
+|Microsoft. VisualStudio. UML. Interfaces. dll|— Odczytywanie i zmiana elementów modelu, takich jak IUseCase, IAssociation i tak dalej.<br />-Nawigowanie między elementami.<br /><br /> Przestrzenie nazw i typy odpowiadają tym, które są zdefiniowane w specyfikacji UML.|
+|Microsoft. VisualStudio. ArchitectureTools. rozszerzalność. dll|-Utwórz nowe wystąpienia elementów modelu<br />— Dostęp i modyfikowanie kształtów i diagramów.|
+
+## <a name="see-also"></a>Zobacz też
+ [Rozszerzona dokumentacja modelu UML i diagramy](../modeling/extend-uml-models-and-diagrams.md) [interfejsów API dla zestawu SDK modelowania dla programu Visual Studio](../modeling/api-reference-for-modeling-sdk-for-visual-studio.md)

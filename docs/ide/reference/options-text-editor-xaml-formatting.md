@@ -24,92 +24,92 @@ helpviewer_keywords:
 - WPF Designer, XAML formatting
 - XAML view settings, attribute spacing
 ms.assetid: ad3820b1-0d94-4807-a74c-c3467ed973a2
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 3ed364d9c8995a93acb0de8002bafefd603c2d71
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ac7c3eebe9498f4ac596ed09ae063eefacf3b6b2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969257"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666642"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>Opcje, edytor tekstu, XAML, formatowanie
 
-Użyj **formatowanie** stronę właściwości, aby określić, jak sformatowane elementów i atrybutów w dokumencie XAML. Aby otworzyć **opcje** okno dialogowe, kliknij przycisk **narzędzia** menu, a następnie kliknij przycisk **opcje**. Aby uzyskać dostęp do **formatowanie** właściwości rozwiń **edytora tekstów** > **XAML** > **formatowanie** węzeł.
+Na stronie właściwości **formatowania** można określić sposób formatowania elementów i atrybutów w dokumentach XAML. Aby otworzyć okno dialogowe **Opcje** , kliknij menu **Narzędzia** , a następnie kliknij przycisk **Opcje**. Aby uzyskać dostęp do strony właściwości **formatowania** , rozwiń węzeł **Edytor tekstu**  > **XAML**  > **Formatowanie** .
 
-## <a name="auto-formatting-events"></a>Automatyczne formatowanie zdarzeń
+## <a name="auto-formatting-events"></a>Zdarzenia Autoformatowania
 
-Automatyczne formatowanie może wystąpić, gdy dowolne z następujących zdarzeń wykryte.
+Autoformatowanie może wystąpić, gdy zostanie wykryte dowolne z poniższych zdarzeń.
 
-- Uzupełnianie tagu końcowego lub prostego.
+- Ukończenie tagu końcowego lub tagu prostego.
 
-- Uzupełnianie tagu początkowego.
+- Wykonanie tagu początkowego.
 
-- Wklejanie ze Schowka.
+- Wklejanie ze schowka.
 
-- Formatowanie klawiaturowych.
+- Formatowanie poleceń klawiatury.
 
-Można określić, zdarzenia, które powodują automatyczne formatowanie.
+Można określić, które zdarzenia powodują Autoformatowanie.
 
-**Po zakończeniu tagu końcowego lub prostego**
+**Po zakończeniu tagu końcowego lub tagu prostego**
 
-Automatyczne formatowanie występuje po zakończeniu wpisywania tagu końcowego lub prostego tagu. Prostych tagów nie ma atrybutów, na przykład `<Button />`.
+Autoformatowanie występuje po zakończeniu wpisywania tagu końcowego lub tagu prostego. Tag prosty nie ma żadnych atrybutów, na przykład `<Button />`.
 
 **Po zakończeniu tagu początkowego**
 
-Automatyczne formatowanie występuje po zakończeniu wpisywania tagu początkowego.
+Autoformatowanie jest wykonywane po zakończeniu wpisywania tagu początkowego.
 
-**Przy wklejaniu ze Schowka**
+**Przy wklejaniu ze schowka**
 
-Automatyczne formatowanie występuje podczas wklejania XAML ze Schowka w widoku XAML.
+Autoformatowanie występuje po wklejeniu kodu XAML ze schowka do widoku XAML.
 
 ## <a name="quotation-mark-style"></a>Styl cudzysłowu
 
-To ustawienie wskazuje, czy wartości atrybutów są ujęte w pojedyncze lub podwójne znaki cudzysłowu. Użyj tego ustawienia, Autoformatowanie zostało i automatycznego uzupełniania IntelliSense.
+To ustawienie wskazuje, czy wartości atrybutów są ujęte w znaki pojedynczego lub podwójnego cudzysłowu. Funkcja autoformatującego i Autouzupełnianie IntelliSense używają tego ustawienia.
 
-Po ustawieniu tej opcji tylko atrybuty później dodane przy użyciu narzędzia Projektant lub ręcznie w widoku XAML dotyczy problem.
+Po ustawieniu tej opcji będzie to miało zastosowanie tylko atrybuty dodane w projektancie lub ręcznie w widoku XAML.
 
-**Podwójny cudzysłów (")**
+**Podwójne cudzysłowy (")**
 
 Wartości atrybutów są ujęte w cudzysłów.
 `<Button Name="button1">Hello</Button>`
 
-**Pojedynczy cudzysłów (')**
+**Apostrofy (')**
 
 Wartości atrybutów są ujęte w apostrofy.
 `<Button Name='button1'>Hello</Button>`
 
 ## <a name="tag-wrapping"></a>Zawijanie tagów
 
-Można określić długość wiersza zawijanie tagów. Po włączeniu zawijanie tagów XAML, wszystkie dodane przy użyciu narzędzia Projektant zostanie zawinięta odpowiednio.
+Możesz określić długość linii dla zawijania tagów. Gdy funkcja zawijania tagów jest włączona, wszystkie XAML dodane później za pomocą projektanta zostaną odpowiednio opakowane.
 
-**Zawijaj tagi przekraczające określoną długość**
+**Zawijaj tagi, które przekraczają określoną długość**
 
-Określa, czy wiersze są opakowane w określonej przez długość wiersza **długość**.
+Określa, czy linie są opakowane w długości linii określonej przez **Długość**.
 
 **Długość**
 
-Liczba znaków, które mogą zawierać wiersz. Jeśli to konieczne, niektóre linie XAML może przekraczać długości określonej linii.
+Liczba znaków, jaką może zawierać linia. W razie potrzeby niektóre linie XAML mogą przekroczyć określoną długość wiersza.
 
 ## <a name="attribute-spacing"></a>Odstępy między atrybutami
 
-To ustawienie służy do kontrolowania, jak atrybuty są rozmieszczone w dokumencie XAML
+Użyj tego ustawienia, aby kontrolować sposób, w jaki atrybuty są rozmieszczone w dokumencie XAML
 
-**Zachowaj tabulacji i spacje między atrybutami**
+**Zachowaj znaki nowego wiersza i odstępy między atrybutami**
 
-Automatyczne formatowanie nie dotyczy nowych wierszy i spacji między atrybutami.
+Autoformatowanie nie ma wpływ na nowe wiersze i odstępy między atrybutami.
 
 ```xml
 <Button Height="23"   Name="button1"
 Width="75">Hello</Button>
 ```
 
-**Wstaw odstęp między atrybutami**
+**Wstaw pojedyncze odstępy między atrybutami**
 
-Atrybuty zajmują jeden wiersz z jednego miejsca oddzielenie sąsiadujących atrybutów. Ustawienia zawijania tag są stosowane.
+Atrybuty zajmują jedną linię, z jedną spacją oddzielającą sąsiednie atrybuty. Ustawienia zawijania tagów są stosowane.
 
 ```xml
 <Button Height="23" Name="button1" Width="75">Hello</Button>
@@ -117,7 +117,7 @@ Atrybuty zajmują jeden wiersz z jednego miejsca oddzielenie sąsiadujących atr
 
 **Umieść każdy atrybut w osobnym wierszu**
 
-Każdy atrybut zajmuje osobnym wierszu, co jest przydatne, jeśli podano wiele atrybutów.
+Każdy atrybut zajmuje własny wiersz, który jest przydatny, gdy istnieje wiele atrybutów.
 
 ```xml
 <Button
@@ -126,9 +126,9 @@ Name="button1"
 Width="75">Hello</Button>
 ```
 
-**Pozycja pierwszego atrybutu w tym samym wierszu co tag początkowy**
+**Umieść pierwszy atrybut w tym samym wierszu co tag początkowy**
 
-Po zaznaczeniu tej opcji, w tym samym wierszu co tag początkowy element pojawi się pierwszy atrybut.
+Po zaznaczeniu ten pierwszy atrybut jest wyświetlany w tym samym wierszu co tag początkowy elementu.
 
 ```xml
 <Button Height="23"
@@ -136,9 +136,9 @@ Name="button1"
 Width="75">Hello</Button>
 ```
 
-## <a name="element-spacing"></a>Odstępy między elementami
+## <a name="element-spacing"></a>Odstępy elementów
 
-Użyj tego ustawienia, aby kontrolować sposób rozmieszczenia elementów w dokumencie XAML.
+To ustawienie służy do sterowania sposobem rozmieszczania elementów w dokumencie XAML.
 
 **Zachowaj nowe wiersze w zawartości**
 
@@ -152,9 +152,9 @@ Puste wiersze w zawartości elementu nie są usuwane.
 </Grid>
 ```
 
-**Zwiń wiele puste wiersze w zawartości w jeden wiersz**
+**Zwiń wiele pustych wierszy w zawartości do pojedynczego wiersza**
 
-Puste wiersze w zawartości elementu są zwinięte do pojedynczego wiersza.
+Puste wiersze w zawartości elementu są zwijane do jednego wiersza.
 
 ```xml
 <Grid>

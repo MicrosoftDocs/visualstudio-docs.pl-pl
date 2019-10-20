@@ -1,5 +1,5 @@
 ---
-title: 'CA1707: Identyfikatory nie powinny zawierać podkreśleń | Dokumentacja firmy Microsoft'
+title: 'CA1707: identyfikatory nie powinny zawierać podkreśleń | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,43 +12,43 @@ helpviewer_keywords:
 - IdentifiersShouldNotContainUnderscores
 ms.assetid: 5fb539ef-c304-4323-90c0-b14386da9774
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 7973646aab545484287f5628eb0fa3cf3629db84
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 526f0333cc4a233996c00576e3439bac4593c29f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68189204"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669213"
 ---
-# <a name="ca1707-identifiers-should-not-contain-underscores"></a>CA1707: Identyfikatory nie powinny zawierać znaków podkreślenia
+# <a name="ca1707-identifiers-should-not-contain-underscores"></a>CA1707: Identyfikatory nie powinny zawierać podkreśleń
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [CA1707: Identyfikatory nie powinny zawierać podkreśleń](https://docs.microsoft.com/visualstudio/code-quality/ca1707-identifiers-should-not-contain-underscores).  
-  
-|||  
-|-|-|  
-|TypeName|IdentifiersShouldNotContainUnderscores|  
-|CheckId|CA1707|  
-|Kategoria|Microsoft.Naming|  
-|Zmiana kluczowa|Istotne — gdy wywoływane zestawów<br /><br /> Dzielenie non - zgłoszony w parametrach typu|  
-  
-## <a name="cause"></a>Przyczyna  
- Nazwa identyfikatora zawiera znak podkreślenia (_).  
-  
-## <a name="rule-description"></a>Opis reguły  
- Przez konwencję identyfikatory nazw nie zawierają znaku podkreślenia (_). Reguła sprawdza przestrzenie nazw, typów, elementów członkowskich i parametry.  
-  
- Konwencje nazewnictwa Obejmij wygląd wspólnych bibliotek obiektu docelowego środowiska uruchomieniowego języka wspólnego. Zmniejsza to nauki, jest wymagany dla nowe biblioteki oprogramowania, która zwiększa poziom zaufania klientów, że biblioteka został opracowany przez osobę, która ma doświadczenie w tworzenie kodu zarządzanego.  
-  
-## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia  
- Usuń wszystkie znaki podkreślenia z nazwy.  
-  
-## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia  
- Nie pomijaj ostrzeżeń dla tej reguły.  
-  
-## <a name="related-rules"></a>Powiązane reguły  
- [CA1709: Identyfikatory powinny mieć prawidłową wielkość liter](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
-  
- [CA1708: Identyfikatory powinny różnić się przez więcej niż wielkością liter](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [CA1707: identyfikatory nie powinny zawierać podkreśleń](https://docs.microsoft.com/visualstudio/code-quality/ca1707-identifiers-should-not-contain-underscores).
+
+|||
+|-|-|
+|TypeName|IdentifiersShouldNotContainUnderscores|
+|CheckId|CA1707|
+|Kategoria|Microsoft. nazewnictwo|
+|Zmiana kluczowa|Przerywanie — gdy są wywoływane w zestawach<br /><br /> Rozdzielenie — gdy zostanie wywołane w parametrach typu|
+
+## <a name="cause"></a>Przyczyna
+ Nazwa identyfikatora zawiera znak podkreślenia (_).
+
+## <a name="rule-description"></a>Opis reguły
+ Przez konwencję identyfikatory nazw nie zawierają znaku podkreślenia (_). Reguła sprawdza przestrzenie nazw, typy, elementy członkowskie i parametry.
+
+ Konwencje nazewnictwa zapewniają typowy wygląd bibliotek przeznaczonych dla środowiska uruchomieniowego języka wspólnego. Zmniejsza to krzywą uczenia, która jest wymagana w przypadku nowych bibliotek oprogramowania i zwiększa zaufanie klienta, że biblioteka została opracowana przez kogoś, kto ma doświadczenie w tworzeniu kodu zarządzanego.
+
+## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
+ Usuń wszystkie znaki podkreślenia z nazwy.
+
+## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
+ Nie pomijaj ostrzeżeń dla tej reguły.
+
+## <a name="related-rules"></a>Powiązane reguły
+ [CA1709: Identyfikatory powinny mieć prawidłową wielkość liter](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+
+ [CA1708: Identyfikatory powinny różnić się nie tylko wielkością liter](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)

@@ -9,29 +9,29 @@ helpviewer_keywords:
 - security [.NET Framework], about security
 ms.assetid: 318c34ce-f643-468c-83a1-843196f5d845
 caps.latest.revision: 24
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 95c9b1ac60fa0ba0dc34adfc6cd4543c7b340a4e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 8d967bd1f7a425ccd9dda5a938535788d961352f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65688046"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672880"
 ---
 # <a name="security-in-visual-studio"></a>Zabezpieczenia w Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Należy rozważyć bezpieczeństwo we wszystkich aspektach programowania aplikacji, od projektowania do wdrożenia. Rozpocznij od uruchamianie programu Visual Studio w bezpieczny sposób. Zobacz [uprawnienia użytkownika](../ide/user-permissions-and-visual-studio.md).
+Należy rozważyć bezpieczeństwo we wszystkich aspektach programowania aplikacji, od projektowania do wdrożenia. Uruchom program Visual Studio jak najszybciej, jak to możliwe. Zobacz [uprawnienia użytkownika](../ide/user-permissions-and-visual-studio.md).
 
  Aby efektywnie rozwijać bezpieczne aplikacje, powinieneś rozumieć podstawy pojęć związanych z bezpieczeństwem i funkcji zabezpieczeń platform, dla których tworzysz. Należy również mieć świadomość bezpiecznych technik kodowania.
 
 ## <a name="understanding-security"></a>Opis zabezpieczeń
- [Zabezpieczenia](https://msdn.microsoft.com/library/9a9621d7-8883-4a4f-a874-65e8e09e20a6) zabezpieczenia dostępu kodu w tym artykule opisano .NET Framework, zabezpieczenia oparte na rolach, zasady zabezpieczeń i narzędzia zabezpieczeń.
+ [Zabezpieczenia](https://msdn.microsoft.com/library/9a9621d7-8883-4a4f-a874-65e8e09e20a6) Opisuje .NET Framework zabezpieczenia dostępu do kodu, zabezpieczeń opartych na rolach, zasad zabezpieczeń i narzędzi zabezpieczeń.
 
 ## <a name="coding-for-security"></a>Bezpieczne kodowanie
  Większość błędów kodowania, które powodują powstanie luk w zabezpieczeniach, występuje, ponieważ deweloperzy mogą stosować błędne założenia podczas pracy z danymi wejściowymi użytkownika lub ponieważ nie w pełni rozumieją platformę, dla której tworzą.
 
- [Kodowanie wytyczne dotyczące bezpiecznego](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) zawiera wskazówki dotyczące klasyfikacji składników, aby rozwiązywać problemy z bezpieczeństwem.
+ [Wytyczne dotyczące bezpiecznego kodowania](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) Zawiera wskazówki dotyczące klasyfikowania składników w celu rozwiązywania problemów z zabezpieczeniami.
 
- [Najlepsze rozwiązania dotyczące zabezpieczeń](https://msdn.microsoft.com/library/86acaccf-cdb4-4517-bd58-553618e3ec42) Discusses przepełnienia bufora oraz pełny obraz zabezpieczeń Microsoft Visual C++ umożliwia sprawdzenie funkcji dostarczanej przez flagę czasu kompilacji/GS.
+ [Najlepsze rozwiązania](https://msdn.microsoft.com/library/86acaccf-cdb4-4517-bd58-553618e3ec42) w zakresie zabezpieczeń Omawia przekroczenia buforu i pełny obraz funkcji Microsoft Visual C++ Security checks dostarczonej przez flagę kompilacja w czasie.

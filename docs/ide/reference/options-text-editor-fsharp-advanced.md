@@ -1,32 +1,32 @@
 ---
-title: Options, Text Editor, F#, Advanced
+title: Opcje, Edytor tekstu, F#, zaawansowane
 ms.date: 01/16/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.F%2523.Advanced
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3e28bd5b7ace34995dbf0778d59f42b5c5d383aa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aacc2b6aa47f7a250b161187146accc51736b586
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778986"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668945"
 ---
-# <a name="options-text-editor-f-advanced"></a>Options, Text Editor, F#, Advanced
+# <a name="options-text-editor-f-advanced"></a>Opcje, Edytor tekstu, F#, zaawansowane
 
-Użyj **zaawansowane** Strona opcji, aby zmodyfikować niektóre ustawienia edytora tekstu dla F#. Dostępu do tej opcji strony, wybierz **narzędzia** > **opcje**, a następnie wybierz **edytora tekstów**  >  **F#**  >  **Zaawansowane**.
+Na stronie opcje **Zaawansowane** można modyfikować niektóre ustawienia edytora tekstu F#. Aby uzyskać dostęp do tej strony opcji, wybierz pozycję **narzędzia**  > **Opcje**, a następnie wybierz**F#** pozycję **Edytor tekstu**  >   > **Zaawansowane**.
 
 ## <a name="block-structure-guides"></a>Prowadnice struktury blokowej
 
-Po wybraniu wyświetlane pionowe linie w edytorze tego wiersza się przy użyciu bloków kodu ze strukturą, co pozwala łatwo identyfikować poszczególnych bloków kodu.
+Po wybraniu linie pionowe pojawiają się w edytorze, który jest wierszem ze strukturą bloków kodu, dzięki czemu można łatwo identyfikować poszczególne bloki kodu.
 
 ## <a name="outlining"></a>Tworzenie konspektu
 
-Zaznacz to pole wyboru, aby automatycznie utworzyć konspekt pliku kodu, który tworzy zwijany bloków kodu.
+Zaznacz to pole wyboru, aby automatycznie utworzyć konspekt pliku kodu, który tworzy zwijane bloki kodu.
 
 ## <a name="see-also"></a>Zobacz także
 

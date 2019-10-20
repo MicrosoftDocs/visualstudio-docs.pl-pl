@@ -12,15 +12,15 @@ helpviewer_keywords:
 - load tests, using graphs
 - load test results, graphs
 ms.assetid: 4a919cd8-541c-40ee-be3b-352fabc56140
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8a0c9ca6f195640e3c356e9288300255570b196c
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 4efedd7fc7672331f04440f09d49b9339d90bdb2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926464"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665382"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>Analizowanie wyników testów obciążenia w widoku wykresy analizatora testu obciążenia
 
@@ -32,7 +32,7 @@ Aby wyświetlić wyniki testów jako wykresy, wybierz **Wykres** na pasku narzę
 
 Można wyświetlać maksymalnie cztery panele grafu. Można przełączać się między różnymi układami panelu przy użyciu przycisku paska narzędzi **układu panelu** .
 
-Dostępne są kilka wbudowanych grafów. Możesz użyć wbudowanych grafów jako programu lub można je dostosować. Ponadto można tworzyć własne wykresy. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie i usuwanie liczników na](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md) wykresach [oraz jak: Utwórz wykresy](../test/how-to-create-custom-graphs-in-load-test-results.md)niestandardowe.
+Dostępne są kilka wbudowanych grafów. Możesz użyć wbudowanych grafów jako programu lub można je dostosować. Ponadto można tworzyć własne wykresy. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie i usuwanie liczników na wykresach](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md) i [instrukcje: Tworzenie wykresów niestandardowych](../test/how-to-create-custom-graphs-in-load-test-results.md).
 
 ## <a name="built-in-graphs"></a>Wykresy wbudowane
 
@@ -52,7 +52,7 @@ Można wyświetlić różne liczniki na wykresie zarówno w czasie wykonywania, 
 > [!NOTE]
 > Tylko liczniki wydajności czasu odpowiedzi mogą zostać dodane do generowanego automatycznie wykresu czasu odpowiedzi.
 
-Informacje o licznikach są wyświetlane zarówno na grafie, jak i w legendzie poniżej wykresów. Możesz również powiększać w sekcji grafu. Aby uzyskać więcej informacji, zobacz [jak: Powiększ w obszarze wykresu](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
+Informacje o licznikach są wyświetlane zarówno na grafie, jak i w legendzie poniżej wykresów. Możesz również powiększać w sekcji grafu. Aby uzyskać więcej informacji, zobacz [jak: powiększanie w regionie grafu](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
 ## <a name="counters-displayed-in-graphs"></a>Liczniki wyświetlane na wykresach
 
@@ -66,30 +66,30 @@ Legenda zawiera następujące kolumny:
 |-|-|
 |Wystąpienie|Nazwa wystąpienia licznika.|
 |Kategoria|Nazwa kategorii licznika.|
-|Computer|Nazwa komputera, do którego zostanie zebrany licznik.|
+|Komputerem|Nazwa komputera, do którego zostanie zebrany licznik.|
 |Kolor|Kolor linii w grafie.|
 |Zakres|Wskazuje liczbę, która jest reprezentowana przez 100 na wykresie dla tego licznika. Na przykład dla zakresu, którego górną wartością jest 10 000, etykieta 100 w górnej części wykresu reprezentuje 10 000.|
-|Min.|Określa minimalną wartość licznika w milisekundach.|
-|Maks.|Wskazuje maksymalną wartość licznika w milisekundach.|
+|Długości|Określa minimalną wartość licznika w milisekundach.|
+|Maksymalny|Wskazuje maksymalną wartość licznika w milisekundach.|
 |Śr|Wskazuje średnią wartość licznika w milisekundach.|
-|Ostatnia|Pokazuje wartość licznika podczas ostatniego interwału próbkowania w milisekundach.|
+|ostatniego|Pokazuje wartość licznika podczas ostatniego interwału próbkowania w milisekundach.|
 
 ## <a name="tasks"></a>Zadania
 
 |Zadania|Skojarzone tematy|
 |-|-|
-|**Dostosuj wykresy przy użyciu legendy:** Legenda widok wykresów wyświetla informacje dla każdego licznika wydajności, który jest skojarzony z wykresem. Możesz użyć legendy do usuwania liczników wydajności, wyróżniania liczników wydajności na grafie i dostosowania opcji wykreślania.|-   [Korzystanie z legendy widoku wykresy do analizowania testów obciążenia](../test/use-the-graphs-view-legend-to-analyze-load-tests.md)|
-|**Wyświetl liczniki na wykresach:** Możesz dodać różne rodzaje danych do wykresu wyników testu obciążenia, umieszczając liczniki na wykresie.|-   [Jak: Dodawanie i usuwanie liczników na wykresach](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
-|**Powiększ wykresy:** Po zakończeniu testu obciążeniowego umożliwia powiększenie paski powiększyć obraz i przewiń do obszaru wykresu. Przez powiększyć, można sprawdzić dane, który został wygenerowany podczas testu obciążenia uruchamiane w bardziej szczegółowo.|-   [Jak: Powiększ w regionie wykresu](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)|
+|**Dostosuj wykresy przy użyciu legendy:** Legenda widok wykresów wyświetla informacje dla każdego licznika wydajności, który jest skojarzony z wykresem. Możesz użyć legendy do usuwania liczników wydajności, wyróżniania liczników wydajności na grafie i dostosowania opcji wykreślania.|-   [przy użyciu legendy widoku wykresy do analizowania testów obciążenia](../test/use-the-graphs-view-legend-to-analyze-load-tests.md)|
+|**Wyświetl liczniki na wykresach:** Możesz dodać różne rodzaje danych do wykresu wyników testu obciążenia, umieszczając liczniki na wykresie.|-   [: Dodawanie i usuwanie liczników na wykresach](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
+|**Powiększ wykresy:** Po zakończeniu testu obciążenia można użyć pasków powiększenia, aby powiększyć i przewinąć do regionu grafu. Powiększając, można sprawdzić dane, które zostały wygenerowane podczas przebiegu testu obciążenia, bardziej szczegółowo.|-   [: powiększanie w regionie wykresu](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)|
 |**Wykresy kafelkowe:** Wykresy wyników testów obciążenia można rozmieścić w jednym z kilku wzorców. Możesz podzielić na cztery wykresy.||
-|**Utwórz wykresy niestandardowe:** Można zaprojektować wykresów wyświetlających określone informacje na temat wyników testów obciążenia. Projektujesz niestandardowy wykres, określając liczniki testu obciążenia, które wykresie będą wyświetlane.|-   [Jak: Tworzenie wykresów niestandardowych](../test/how-to-create-custom-graphs-in-load-test-results.md)|
+|**Utwórz wykresy niestandardowe:** Można zaprojektować wykresy, które wyświetlają określone informacje na temat wyników testu obciążenia. Wykres niestandardowy można zaprojektować, określając liczniki testów obciążenia, które będą wyświetlane na wykresie.|-   [instrukcje: Tworzenie wykresów niestandardowych](../test/how-to-create-custom-graphs-in-load-test-results.md)|
 |**Wyeksportuj dane liczników wydajności na grafie:** Możesz wyeksportować dane wykresu do programu Microsoft Excel, używając przycisku **Eksportuj dane wykresu do programu Excel** na pasku narzędzi **analizatora testu obciążenia** , gdy jesteś w widoku **wykresy** .||
 
 ## <a name="related-tasks"></a>Zadania powiązane
 
 [Analizowanie wyników testów obciążenia i błędów w widoku tabel](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)
 
-[Instrukcje: Uzyskiwanie dostępu do wyników testu obciążenia na potrzeby analizy](../test/how-to-access-load-test-results-for-analysis.md)
+[Instrukcje: uzyskiwanie dostępu do wyników testu obciążenia na potrzeby analizy](../test/how-to-access-load-test-results-for-analysis.md)
 
 [Analizowanie wyników testów obciążenia](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 
@@ -97,4 +97,4 @@ Legenda zawiera następujące kolumny:
 
 - [Instrukcje: Dodawanie i usuwanie liczników na wykresach](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)
 - [Instrukcje: Tworzenie wykresów niestandardowych](../test/how-to-create-custom-graphs-in-load-test-results.md)
-- [Instrukcje: Powiększ w regionie wykresu](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)
+- [Instrukcje: powiększanie w regionie wykresu](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)

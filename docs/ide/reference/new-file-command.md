@@ -8,17 +8,17 @@ helpviewer_keywords:
 - File.NewFile command
 - New File command
 ms.assetid: 767868d6-a525-425b-a43b-2198f636ab6b
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7a71a6d313ce12a40cd5c30470f53b1e2a1b69e
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 65ea2f4bc06ee1db5042219d1dd3b4bb38f0a80e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919126"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666473"
 ---
 # <a name="new-file-command"></a>Nowy plik — Polecenie
 Tworzy nowy plik i otwiera go. Plik zostanie wyświetlony w folderze różne pliki.
@@ -32,15 +32,15 @@ File.NewFile [filename] [/t:templatename] [/editor:editorname]
 ## <a name="arguments"></a>Argumenty
 `filename`
 
-Opcjonalna. Nazwa pliku. Jeśli nie podano nazwy, zostanie podana nazwa domyślna. Jeśli na liście nie ma nazwy szablonu, tworzony jest plik tekstowy.
+Opcjonalny. Nazwa pliku. Jeśli nie podano nazwy, zostanie podana nazwa domyślna. Jeśli na liście nie ma nazwy szablonu, tworzony jest plik tekstowy.
 
 ## <a name="switches"></a>Przełączniki
-/t`templatename`\
-Opcjonalna. Określa typ pliku, który ma zostać utworzony.
+/t: `templatename` \
+Opcjonalny. Określa typ pliku, który ma zostać utworzony.
 
-Składnia/t:`templatename` argument odzwierciedla informacje znajdujące się w oknie dialogowym Nowy plik. Wprowadź nazwę kategorii, a następnie ukośnik odwrotny (`\`) i nazwę szablonu, a następnie umieść cały ciąg w cudzysłowie.
+Składnia argumentów/t: `templatename` odzwierciedla informacje znajdujące się w oknie dialogowym Nowy plik. Wprowadź nazwę kategorii, a następnie ukośnik odwrotny (`\`) i nazwę szablonu, a następnie umieść cały ciąg w cudzysłowie.
 
-Na przykład, aby utworzyć nowy [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] plik źródłowy, należy wprowadzić następujące polecenie dla/t:`templatename` argumentu.
+Na przykład, aby utworzyć nowy plik źródłowy [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)], należy wprowadzić następujące elementy dla argumentu/t: `templatename`.
 
 ```cmd
 /t:"Visual C++\C++ File (.cpp)"
@@ -48,12 +48,12 @@ Na przykład, aby utworzyć nowy [!INCLUDE[vcprvc](../../code-quality/includes/v
 
 Powyższy przykład wskazuje, że C++ szablon pliku znajduje się w kategorii wizualizacji C++ w oknie dialogowym **nowy plik** .
 
-/e`editorname`\
+/e: `editorname` \
 Opcjonalny. Nazwa edytora, w którym plik zostanie otwarty. Jeśli argument jest określony, ale nie zostanie podana nazwa edytora, pojawi się okno dialogowe **Otwórz za pomocą** .
 
-Składnia/e:`editorname` argument używa nazw edytorów, jak pojawiają się w oknie dialogowym Otwórz za pomocą, ujętym w cudzysłów.
+Składnia argumentów/e: `editorname` używa nazw edytorów, które są wyświetlane w oknie dialogowym Otwórz za pomocą, ujęte w cudzysłów.
 
-Na przykład, aby otworzyć plik w edytorze kodu źródłowego, należy wprowadzić następujące polecenie/e:`editorname` argument.
+Na przykład, aby otworzyć plik w edytorze kodu źródłowego, należy wprowadzić następujące polecenie dla argumentu/e: `editorname`.
 
 ```cmd
 /e:"Source Code (text) Editor"

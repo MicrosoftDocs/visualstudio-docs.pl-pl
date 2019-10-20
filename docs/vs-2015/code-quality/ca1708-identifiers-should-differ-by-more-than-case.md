@@ -1,5 +1,5 @@
 ---
-title: 'CA1708: Identyfikatory powinny różnić się przez więcej niż wielkością liter | Dokumentacja firmy Microsoft'
+title: 'CA1708: Identyfikatory powinny różnić się więcej niż wielkością liter | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,42 +12,42 @@ helpviewer_keywords:
 - IdentifiersShouldDifferByMoreThanCase
 ms.assetid: dac0f01d-dd21-484d-add1-c8cd2bf6969f
 caps.latest.revision: 23
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: a58e40ff973467e9a24a923410ff2f73981ecaab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f611cb899a2386c47e1370214a74c2a5da52584f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68189196"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669197"
 ---
-# <a name="ca1708-identifiers-should-differ-by-more-than-case"></a>CA1708: Identyfikatory powinny różnić się nie tylko wielkością liter
+# <a name="ca1708-identifiers-should-differ-by-more-than-case"></a>CA1708: Identyfikatory powinny różnić się czymś więcej niż wielkością liter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|IdentifiersShouldDifferByMoreThanCase|
 |CheckId|CA1708|
-|Kategoria|Microsoft.Naming|
+|Kategoria|Microsoft. nazewnictwo|
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Nazwy dwa typy, członków lub przestrzeni nazw FQDN parametrów są identyczne, gdy są one konwertowane na małe litery.
+ Nazwy dwóch typów, elementów członkowskich, parametrów lub w pełni kwalifikowanych przestrzeni nazw są identyczne w przypadku przekonwertowania na małe litery.
 
 ## <a name="rule-description"></a>Opis reguły
- Identyfikatory przestrzeni nazw, typów, elementów członkowskich i parametry nie mogą się różnić jedynie wielkością liter, ponieważ języki dla środowiska uruchomieniowego języka wspólnego nie muszą rozróżniać wielkości liter. Na przykład [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] to powszechnie używany język bez uwzględniania wielkości liter.
+ Identyfikatory przestrzeni nazw, typów, elementów członkowskich i parametry nie mogą się różnić jedynie wielkością liter, ponieważ języki dla środowiska uruchomieniowego języka wspólnego nie muszą rozróżniać wielkości liter. Na przykład [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] jest szeroko używanym językiem bez uwzględniania wielkości liter.
 
- Ta reguła jest uruchamiana na tylko członków publicznie widoczne.
+ Ta zasada jest uruchamiana tylko dla widocznych publicznie członków.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Wybierz nazwę, która jest unikatowa, gdy jest porównywana do innych identyfikatorów, bez uwzględniania wielkości liter.
+ Wybierz unikatową nazwę, która jest porównywana z innymi identyfikatorami w sposób niezależny od wielkości liter.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Nie pomijaj ostrzeżeń dla tej reguły. Biblioteki mogą nie być użyteczne we wszystkich językach, które znajdują się w [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
+ Nie pomijaj ostrzeżeń dla tej reguły. Biblioteka może nie być użyteczna we wszystkich dostępnych językach w [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
 
-## <a name="example-of-a-violation"></a>Przykładem naruszenia
- W poniższym przykładzie pokazano naruszenie tej zasady.
+## <a name="example-of-a-violation"></a>Przykład naruszenia
+ Poniższy przykład demonstruje naruszenie tej reguły.
 
  [!code-csharp[FxCop.Naming.IdentifiersShouldDifferByMoreThanCase#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Naming.IdentifiersShouldDifferByMoreThanCase/cs/FxCop.Naming.IdentifiersShouldDifferByMoreThanCase.cs#1)]
 

@@ -1,5 +1,5 @@
 ---
-title: Dodaj istniejący element — polecenie | Dokumentacja firmy Microsoft
+title: Dodaj istniejący element — polecenie | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -11,53 +11,48 @@ helpviewer_keywords:
 - Add Existing Item command
 ms.assetid: 41f56131-d4c7-4f81-83b7-bdac713ea870
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8ad1ab33de1aa0d25f7beff0dac43ebedbf0f6b4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c2f636c2a0eb2cfdcebf383fdc7eea70f72cb90e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62539948"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670235"
 ---
 # <a name="add-existing-item-command"></a>Dodaj istniejący element — Polecenie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Dodaje istniejący plik do bieżącego rozwiązania i otwiera go.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```  
-File.AddExistingItem filename [/e:editorname]  
-```  
-  
-## <a name="arguments"></a>Argumenty  
- `filename`  
- Wymagana. Pełna ścieżka i nazwa pliku, z rozszerzeniem element do dodania do bieżącego rozwiązania. Jeśli ścieżka do pliku lub nazwa pliku zawiera spacje, należy ująć w znaki cudzysłowu pełną ścieżkę.  
-  
-## <a name="switches"></a>Przełączniki  
- / e: `editorname`  
- Opcjonalna. Nazwa edytora, w którym będzie można otworzyć pliku. Jeśli argument jest określony, ale nazwa edytora nie został podany, **Otwórz za pomocą** pojawi się okno dialogowe.  
-  
- / E:`editorname` składnię argumentu używa nazw edytora, w jakiej występują w **Otwórz okno dialogowe za pomocą**, ujęty w znaki cudzysłowu. Na przykład, aby otworzyć arkusz stylów w edytorze kodu źródłowego, należy wprowadzić następujące / e:`editorname` argumentu.  
-  
-```  
-/e:"Source Code (text) Editor"  
-```  
-  
-## <a name="remarks"></a>Uwagi  
- Automatycznego uzupełniania próbuje zlokalizować poprawną ścieżkę i nazwę pliku podczas wpisywania.  
-  
-## <a name="example"></a>Przykład  
- Ten przykład dodaje plik Form1.frm, do bieżącego rozwiązania.  
-  
-```  
->File.AddExistingItem "C:\public\solution files\Form1.frm"  
-```  
-  
-## <a name="see-also"></a>Zobacz też  
- [Visual Studio Commands](../../ide/reference/visual-studio-commands.md)   
- [Okno polecenia](../../ide/reference/command-window.md)   
- [Znajdź/Command — pole](../../ide/find-command-box.md)   
- [Visual Studio — aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)
+Dodaje istniejący plik do bieżącego rozwiązania i otwiera go.
+
+## <a name="syntax"></a>Składnia
+
+```
+File.AddExistingItem filename [/e:editorname]
+```
+
+## <a name="arguments"></a>Argumenty
+ Wymagane `filename`. Pełna ścieżka i nazwa pliku z rozszerzeniem, elementu, który ma zostać dodany do bieżącego rozwiązania. Jeśli ścieżka pliku lub nazwa pliku zawiera spacje, należy ująć całą ścieżkę w cudzysłów.
+
+## <a name="switches"></a>Przełączniki
+ /e: `editorname` opcjonalny. Nazwa edytora, w którym plik zostanie otwarty. Jeśli argument jest określony, ale nie zostanie podana nazwa edytora, pojawi się okno dialogowe **Otwórz za pomocą** .
+
+ Składnia argumentów/e: `editorname` używa nazw edytorów, które są wyświetlane w **oknie dialogowym Otwórz za pomocą**, ujęte w cudzysłów. Na przykład, aby otworzyć arkusz stylów w edytorze kodu źródłowego, należy wprowadzić następujące polecenie dla argumentu/e: `editorname`.
+
+```
+/e:"Source Code (text) Editor"
+```
+
+## <a name="remarks"></a>Uwagi
+ Autouzupełnianie próbuje znaleźć poprawną ścieżkę i nazwę pliku podczas wpisywania.
+
+## <a name="example"></a>Przykład
+ Ten przykład dodaje plik Form1. frm do bieżącego rozwiązania.
+
+```
+>File.AddExistingItem "C:\public\solution files\Form1.frm"
+```
+
+## <a name="see-also"></a>Zobacz też
+ Polecenia [programu Visual Studio](../../ide/reference/visual-studio-commands.md) [okno](../../ide/reference/command-window.md) poleceń [Znajdź/polecenie](../../ide/find-command-box.md) [programu Visual Studio — Aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)

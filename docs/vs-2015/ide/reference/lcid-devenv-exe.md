@@ -1,5 +1,5 @@
 ---
-title: — Identyfikator LCID (devenv.exe) | Dokumentacja firmy Microsoft
+title: -LCID (devenv. exe) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,58 +14,55 @@ helpviewer_keywords:
 - /lcid Devenv switch
 ms.assetid: 3a3f4e70-ea66-4351-9d62-acb1dec30e8e
 caps.latest.revision: 15
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0b1d83cca1da917a08b8765dae66fb240ca1dc75
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: badb88abdf4b3ffd6140cb587b2b0add20630925
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68199217"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672700"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ustawia domyślny język używany dla tekstu, waluty i innych wartości w ramach zintegrowanego środowiska programistycznego (IDE).  
-  
-## <a name="syntax"></a>Składnia  
-  
-```  
-devenv {/LCID|/l} LocaleID  
-```  
-  
-## <a name="arguments"></a>Argumenty  
- `LocaleID`  
- Wymagana. Identyfikator LCID (identyfikator ustawień regionalnych) języka, które określisz.  
-  
-## <a name="remarks"></a>Uwagi  
- Ładuje środowisko IDE i ustawia domyślny język naturalny dla środowiska. Ta zmiana jest zachowywane między sesjami i przedstawiane na **ustawienia międzynarodowe** okienku **środowiska** opcji na liście **opcje** okno dialogowe w środowisku IDE.  
-  
- Jeśli określony język nie jest dostępne w systemie użytkownika, przełącznik/LCID jest ignorowany.  
-  
- Poniższa tabela zawiera identyfikatory LCID języków obsługiwanych przez [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
-  
-|Język|LCID|  
-|--------------|----------|  
-|Chiński uproszczony|2052|  
-|Chiński (tradycyjny)|1028|  
-|Angielski|1033|  
-|Francuski|1036|  
-|niemiecki|1031|  
-|Włoski|1040|  
-|japoński|1041|  
-|koreański|1042|  
-|Hiszpański|3082|  
-  
-## <a name="example"></a>Przykład  
- W tym przykładzie ładuje środowisko IDE z ciągów zasobów w języku angielskim.  
-  
-```  
-devenv /LCID 1033  
-```  
-  
-## <a name="see-also"></a>Zobacz też  
- [Przełączniki wiersza polecenia Devenv](../../ide/reference/devenv-command-line-switches.md)   
- [Okno dialogowe Opcje ustawienia międzynarodowe, środowisko,](../../ide/reference/international-settings-environment-options-dialog-box.md)   
- [Dostosowywanie układów okien](../../ide/customizing-window-layouts-in-visual-studio.md)
+Ustawia domyślny język używany dla tekstu, waluty i innych wartości w zintegrowanym środowisku programistycznym (IDE).
+
+## <a name="syntax"></a>Składnia
+
+```
+devenv {/LCID|/l} LocaleID
+```
+
+## <a name="arguments"></a>Argumenty
+ Wymagane `LocaleID`. Identyfikator LCID (identyfikatora ustawień regionalnych) określonego języka.
+
+## <a name="remarks"></a>Uwagi
+ Ładuje IDE i ustawia domyślny język naturalny dla środowiska. Ta zmiana jest utrwalana między sesjami i widoczna w okienku **Ustawienia międzynarodowe** opcji **środowisko** w oknie dialogowym **Opcje** w IDE.
+
+ Jeśli określony język nie jest dostępny w systemie użytkownika, przełącznik/LCID jest ignorowany.
+
+ W poniższej tabeli przedstawiono identyfikatory LCID języków obsługiwanych przez [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].
+
+|Język|ISTNIEJĄCYCH|
+|--------------|----------|
+|Chiński uproszczony|2052|
+|Chiński (tradycyjny)|1028|
+|angielski|1033|
+|francuski|1036|
+|niemiecki|1031|
+|Włoski|1040|
+|japoński|1041|
+|koreański|1042|
+|Hiszpański|3082|
+
+## <a name="example"></a>Przykład
+ Ten przykład ładuje środowisko IDE z ciągami zasobów w języku angielskim.
+
+```
+devenv /LCID 1033
+```
+
+## <a name="see-also"></a>Zobacz też
+ [Devenv przełączniki wiersza polecenia](../../ide/reference/devenv-command-line-switches.md) [Ustawienia międzynarodowe, środowisko, Opcje okno dialogowe](../../ide/reference/international-settings-environment-options-dialog-box.md) [Dostosowywanie układów okien](../../ide/customizing-window-layouts-in-visual-studio.md)
