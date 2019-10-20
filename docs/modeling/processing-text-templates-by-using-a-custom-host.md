@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - text templates, in application or VS extension
 - text templates, custom directive hosts
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f054bd91f16bb7621d4beebe7631a49cb406132e
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 171eb8810d74df5c1058ba055e598d04f9164633
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870473"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658292"
 ---
 # <a name="process-text-templates-by-using-a-custom-host"></a>Przetwarzanie szablonów tekstowych przy użyciu hosta niestandardowego
 
@@ -33,7 +33,7 @@ Jeśli aplikacja używa zestawu szablonów, które są ustalane w czasie kompila
 
 ## <a name="execute-a-text-template-in-your-application"></a>Wykonywanie szablonu tekstu w aplikacji
 
-Aby wykonać szablon tekstowy, należy wywołać metodę <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>ProcessTemplate:
+Aby wykonać szablon tekstowy, należy wywołać metodę ProcessTemplate <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>:
 
 ```csharp
 using Microsoft.VisualStudio.TextTemplating;
@@ -44,14 +44,14 @@ string output = engine.ProcessTemplate(templateString, host);
 
  Aplikacja musi znaleźć i dostarczyć szablon oraz musi obsłużyć dane wyjściowe.
 
- W parametrze należy podać klasę implementującą [ITextTemplatingEngineHost.](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)) `host` Jest to wywoływane zwrotnie przez aparat.
+ W parametrze `host` należy podać klasę implementującą [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). Jest to wywoływane zwrotnie przez aparat.
 
  Host musi mieć możliwość rejestrowania błędów, rozpoznawania odwołań do zestawu i dołączania plików, podawania domeny aplikacji, w której można wykonać szablon, a także wywoływania odpowiednich procesorów dla każdej dyrektywy.
 
- <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>jest zdefiniowane w **Microsoft. VisualStudio. TextTemplating.\*. wartości 0. dll**i [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)) są zdefiniowane w pliku **Microsoft. VisualStudio. TextTemplating. Interfaces.\*. 0. dll**.
+ <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> jest zdefiniowany w **pliku Microsoft. VisualStudio. TextTemplating. \* 0. dll**, a [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)) jest zdefiniowany w **Microsoft. VisualStudio. TextTemplating. Interfaces. \*.0. dll**.
 
 ## <a name="in-this-section"></a>W tej sekcji
- [Przewodnik: Tworzenie niestandardowego hosta](../modeling/walkthrough-creating-a-custom-text-template-host.md) szablonu tekstu pokazuje, jak utworzyć niestandardowy host szablonu tekstu, który sprawia, że funkcjonalność szablonu tekstu jest dostępna poza programem Visual Studio.
+ [Przewodnik: Tworzenie niestandardowego hosta szablonu tekstu](../modeling/walkthrough-creating-a-custom-text-template-host.md) Pokazuje, jak utworzyć niestandardowy host szablonu tekstu, który sprawia, że funkcjonalność szablonu tekstu jest dostępna poza programem Visual Studio.
 
 ## <a name="reference"></a>Tematy pomocy
  [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))

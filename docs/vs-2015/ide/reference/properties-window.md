@@ -1,5 +1,5 @@
 ---
-title: Okno właściwości | Dokumentacja firmy Microsoft
+title: Okno właściwości | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -18,72 +18,59 @@ helpviewer_keywords:
 - Properties window
 ms.assetid: e6e0fa4f-75c4-4a52-af15-281cd61876ca
 caps.latest.revision: 15
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 582905042938d79a1885279bd19c18f48b49bb84
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 959bd36995ca4086bf64020816b00aee6f777fbe
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438030"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662074"
 ---
 # <a name="properties-window"></a>Okno Właściwości
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-To okno służy do wyświetlania i zmieniania właściwości projektowania oraz zdarzeń zaznaczonych obiektów, które znajdują się w edytorach i projektantach. Można również użyć **właściwości** okna do edytowania i wyświetlania plików, projekt i właściwości rozwiązania. Możesz znaleźć **właściwości** okno na **widoku** menu. Możesz też go otworzyć, naciskając klawisz F4 lub wpisując **właściwości** w **Szybkie uruchamianie** okna.  
-  
- **Właściwości** oknie zostaną wyświetlone różne typy pól edycji, w zależności od potrzeb danej właściwości. Edytuj te pola zawierają pola tekstowe, listy rozwijane i łącza do niestandardowego edytora okien dialogowych. Właściwości zaznaczone na szaro są tylko do odczytu.  
-  
-## <a name="uielement-list"></a>Lista elementów UI  
- Nazwa obiektu  
- Wyświetla listę aktualnie zaznaczonego obiektu lub obiektów. Widoczne są tylko obiekty z aktywnego edytora lub projektanta. Po zaznaczeniu wielu obiektów są wyświetlane tylko właściwości wspólne dla wszystkich wybranych obiektów.  
-  
- Dzielony na kategorie  
- Wyświetla listę wszystkich właściwości i wartości właściwości dla wybranego obiektu, według kategorii. Można zwinąć kategorię, aby zmniejszyć liczbę widocznych właściwości. Po rozwinięciu lub zwinięciu kategorii wyświetlany jest plus (+) lub minus (-) z lewej strony nazwy kategorii. Kategorie są wymieniane alfabetycznie.  
-  
- Alfabetyczne  
- Sortuje alfabetycznie wszystkie właściwości projektowania i zdarzenia dla wybranych obiektów. Aby edytować niewygaszoną właściwość, kliknij w komórce po jego prawej stronie, a następnie wprowadź zmiany.  
-  
- Strony właściwości  
- Wyświetla **stron właściwości** okno dialogowe lub **projektanta projektu** dla wybranego elementu. Strony właściwości wyświetla podzbiór, taki sam lub nadzbiór właściwości dostępnych w **właściwości** okna. Ten przycisk służy do wyświetlania i edytowania właściwości powiązanych z aktywnej konfiguracji projektu.  
-  
- Właściwości  
- Wyświetla właściwości dla obiektu. Wiele obiektów ma także zdarzenia, które mogą być wyświetlane za pomocą **właściwości** okna.  
-  
- Sortuj według źródła właściwości  
- Grupuje właściwości według źródła, takiego jak dziedziczenie, zastosowanie style i powiązania. Dostępna tylko podczas edytowania plików XAML w projektancie.  
-  
- Zdarzenia  
- Wyświetla zdarzenia dla obiektu.  
-  
+To okno służy do wyświetlania i zmieniania właściwości czasu projektowania oraz zdarzeń wybranych obiektów, które znajdują się w edytorach i projektantach. Można również użyć okna **Właściwości** do edytowania i wyświetlania właściwości plików, projektów i rozwiązań. Okno **Właściwości** można znaleźć w menu **Widok** . Można go również otworzyć, naciskając klawisz F4 lub wpisując **Właściwości** w oknie **Szybkie uruchamianie** .
+
+ W oknie **Właściwości** są wyświetlane różne typy pól edycji, w zależności od potrzeb konkretnej właściwości. Te pola edycji obejmują pola edycji, listy rozwijane i linki do okien dialogowych edytorów niestandardowych. Właściwości oznaczone kolorem szarym są tylko do odczytu.
+
+## <a name="uielement-list"></a>Lista elementów UI
+ Nazwa obiektu wyświetla listę aktualnie zaznaczonego obiektu lub obiektów. Widoczne są tylko obiekty z aktywnego edytora lub projektanta. Po zaznaczeniu wielu obiektów pojawiają się tylko właściwości wspólne dla wszystkich wybranych obiektów.
+
+ Kategoryzacja wyświetla wszystkie właściwości i wartości właściwości dla wybranego obiektu według kategorii. Możesz zwinąć kategorię, aby zmniejszyć liczbę widocznych właściwości. Po rozwinięciu lub zwinięciu kategorii zobaczysz znak plus (+) lub minus (-) z lewej strony nazwy kategorii. Kategorie są wyświetlane alfabetycznie.
+
+ Alfabetyczne alfabetycznie sortuje wszystkie właściwości i zdarzenia czasu projektowania dla wybranych obiektów. Aby edytować Właściwość niewyszarzoną, kliknij w komórce po prawej stronie i wprowadź zmiany.
+
+ Na stronach właściwości jest wyświetlane okno dialogowe **strony właściwości** lub **Projektant projektu** dla wybranego elementu. Na stronach właściwości jest wyświetlany podzestaw, taki sam lub nadzbiór właściwości dostępnych w oknie **Właściwości** . Ten przycisk służy do wyświetlania i edytowania właściwości związanych z aktywną konfiguracją projektu.
+
+ Właściwości wyświetla właściwości obiektu. Wiele obiektów ma także zdarzenia, które można wyświetlić za pomocą okna **Właściwości** .
+
+ Sortuj wg właściwości grupy źródłowej właściwości według źródła, takie jak dziedziczenie, zastosowane style i powiązania. Dostępne tylko podczas edytowania plików XAML w projektancie.
+
+ Zdarzenia wyświetla zdarzenia dla obiektu.
+
 > [!NOTE]
-> To **właściwości** formant paska narzędzi okna tylko jest dostępna, gdy formularz lub Projektant formantów jest aktywny w kontekście [!INCLUDE[csprcs](../../includes/csprcs-md.md)] projektu. Podczas edycji plików XAML, zdarzenia są wyświetlane na osobnej karcie okna właściwości.  
-  
- Komunikaty  
- Wyświetla listę wszystkich komunikatów Windows. Umożliwia dodawanie lub usuwanie funkcji obsługi dla wiadomości przewidzianych dla wybranej klasy.  
-  
+> Ten formant paska narzędzi okna **Właściwości** jest dostępny tylko wtedy, gdy formularz lub Projektant formantów jest aktywny w kontekście projektu [!INCLUDE[csprcs](../../includes/csprcs-md.md)]. Podczas edytowania plików XAML zdarzenia są wyświetlane na osobnej karcie okna właściwości.
+
+ Komunikaty wyświetla wszystkie komunikaty systemu Windows. Umożliwia dodawanie lub usuwanie określonych funkcji programu obsługi dla komunikatów dostarczonych dla wybranej klasy.
+
 > [!NOTE]
-> To **właściwości** formant paska narzędzi okna jest dostępna tylko podczas **Widok klas** jest aktywnym oknem w kontekście [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] projektu.  
-  
- Overrides  
- Wyświetla listę wszystkich funkcji wirtualnych dla wybranej klasy i pozwala na dodawanie i usuwanie funkcji nadrzędnych.  
-  
+> Ten formant paska narzędzi okna **Właściwości** jest dostępny tylko wtedy, gdy **Widok klasy** jest aktywnym oknem w kontekście projektu [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)].
+
+ Zastąpień wyświetla wszystkie funkcje wirtualne dla wybranej klasy i umożliwia dodawanie lub usuwanie zastąpień funkcji.
+
 > [!NOTE]
-> To **właściwości** formant paska narzędzi okna jest dostępna tylko podczas **Widok klas** jest aktywnym oknem w kontekście [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] projektu.  
-  
- Okienko opisu  
- Pokazuje typ właściwości i krótki opis właściwości. Możesz wyłączyć opis właściwości i Włącz za pomocą polecenia opis w menu skrótów.  
-  
+> Ten formant paska narzędzi okna **Właściwości** jest dostępny tylko wtedy, gdy **Widok klasy** jest aktywnym oknem w kontekście projektu [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)].
+
+ W okienku opis jest wyświetlany typ właściwości i Krótki opis właściwości. Można wyłączyć opis właściwości i przy użyciu polecenia Description w menu skrótów.
+
 > [!NOTE]
-> To **właściwości** formant paska narzędzi okna nie jest dostępna podczas edycji plików XAML w projektancie.  
-  
- Widok miniatur  
- Pokazuje graficzną reprezentację obecnie wybranego elementu podczas edycji plików XAML w projektancie.  
-  
- Wyszukaj  
- Zawiera funkcję wyszukiwania dla właściwości i zdarzenia podczas edycji plików XAML w projektancie. Pole wyszukiwania reaguje na wyszukiwanie wyrazów częściowych i aktualizuje wyniki wyszukiwania podczas wpisywania.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Odwołanie do właściwości projektu](../../ide/reference/project-properties-reference.md)   
- [Dostosowywanie układów okien](../../ide/customizing-window-layouts-in-visual-studio.md)
+> Ten formant paska narzędzi okna **Właściwości** nie jest dostępny podczas EDYTOWANIA plików XAML w projektancie.
+
+ Widok miniatury przedstawia wizualną reprezentację aktualnie wybranego elementu podczas edycji plików XAML w projektancie.
+
+ Funkcja wyszukiwania udostępnia funkcję wyszukiwania dla właściwości i zdarzeń podczas edytowania plików XAML w projektancie. Pole wyszukiwania reaguje na wyszukiwanie częściowe wyrazów i aktualizuje wyniki wyszukiwania podczas wpisywania.
+
+## <a name="see-also"></a>Zobacz też
+ [Odwołania do właściwości projektu](../../ide/reference/project-properties-reference.md) [Dostosowywanie układów okna](../../ide/customizing-window-layouts-in-visual-studio.md)

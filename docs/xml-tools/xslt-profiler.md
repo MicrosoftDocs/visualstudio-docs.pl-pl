@@ -3,109 +3,109 @@ title: Wydajność XSLT
 ms.date: 03/05/2019
 ms.topic: conceptual
 ms.assetid: 87387c9a-2e89-4801-ad51-83740cd6ea25
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ecc5482c8519ceadfe1e6d5db7880c98b3d2ceb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2866e9b19ea2b79bf8435d81c93443bb20ff4fec
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62988050"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645905"
 ---
-# <a name="the-xslt-profiler"></a>The XSLT Profiler
+# <a name="the-xslt-profiler"></a>Profiler XSLT
 
-Profiler XSLT tworzy szczegółowe raporty wydajności XSLT, które ułatwiają pomiar i docelowe problemy związane z wydajnością w kodzie XSLT i oceny. Profiler XSLT obejmuje, przydatne wskazówki dotyczące optymalizacji o arkusza stylów XSL i XSLT. Dla aplikacji XSLT tego żądanie uzyskania maksymalnej wydajności to narzędzie może być istotne.
+Profiler XSLT tworzy szczegółowe raporty wydajności XSLT, które pomagają mierzyć, szacować i kierować problemy związane z wydajnością w kodzie XSLT. Profiler XSLT zawiera przydatne wskazówki dotyczące optymalizacji arkusza stylów XSL i XSLT. W przypadku aplikacji XSLT, które wymagają maksymalnej wydajności, to narzędzie może być niezbędne.
 
-Profiler XSLT jest częścią programu Visual Studio i jest dostępny na **XML** menu.
+Profiler XSLT jest częścią programu Visual Studio i jest dostępny w menu **XML** .
 
 ![Profiler XSLT](../xml-tools/media/profile-xslt-menu.png)
 
 > [!NOTE]
-> Profiler XSLT jest dostępna tylko w wersji Enterprise programu Visual Studio.
+> Profiler XSLT jest dostępny tylko w wersji Enterprise programu Visual Studio.
 
-## <a name="create-a-performance-report"></a>Tworzenie raportu wydajności
+## <a name="create-a-performance-report"></a>Tworzenie raportu o wydajności
 
-1. Otwórz dokument XSLT, ale w programie Visual Studio.
+1. Otwórz dokument XSLT w programie Visual Studio.
 
-2. Na pasku menu wybierz **XML** > **XSLT profilu**.
+2. Na pasku menu wybierz pozycję **XML**  > **profil XSLT**.
 
-3. Podaj wprowadź dokument XML. Jeśli dokument XML nie jest jeszcze otwarty, użytkownik jest monitowany dla pliku.
+3. Podaj wejściowy dokument XML. Jeśli dokument XML nie jest jeszcze otwarty, zostanie wyświetlony monit o podanie pliku.
 
-   Analiza zostanie uruchomiony, pasek postępu wyświetlany postęp w edytorze. Dane wyjściowe XSLT jest także widoczny.
+   Analiza rozpocznie się, a pasek postępu wyświetla postęp w edytorze. Widoczne jest również wyjście XSLT.
 
-4. Sprawdź raport wydajności do analizowania wydajności XSLT, po zakończeniu sesji wydajności.
+4. Po zakończeniu sesji wydajności Sprawdź raport wydajności, aby analizować wydajność XSLT.
 
 ## <a name="get-all-available-views"></a>Pobierz wszystkie dostępne widoki
 
-1. Kliknij pozycję **bieżący widok** listy rozwijanej, aby uzyskać wszystkie dostępne widoki.
+1. Kliknij listę rozwijaną **bieżący widok** , aby pobrać wszystkie dostępne widoki.
 
-2. Wybierz **Widok Podsumowanie** opcji **bieżący widok** listy rozwijanej. Domyślnie raport wydajności jest wyświetlana w **Widok Podsumowanie**. Ten widok jest punktem wyjścia do określenia problemów z wydajnością za pomocą dokumentów XSLT. **Widok Podsumowanie** Wyświetla następujących punktów danych:
+2. Wybierz opcję **Widok podsumowania** z listy rozwijanej **bieżący widok** . Raport dotyczący wydajności jest domyślnie wyświetlany w **widoku podsumowania**. Ten widok jest punktem wyjścia do określania problemów z wydajnością w dokumentach XSLT. **Widok podsumowania** zawiera następujące punkty danych:
 
-   - Funkcje wywoływane najczęściej
+   - Najczęściej wywoływane funkcje
 
-   - Funkcje z największą ilością indywidualnej pracy
+   - Funkcje z największą ilością pracy
 
-   - Funkcje zajmujące najwięcej czasu do wykonania
+   - Wykonywanie funkcji trwa najdłuższy czas
 
-   Domyślnie, istnieją trzy kolumny dla każdego punktu danych: Nazwa funkcji, liczba wywołań w wartościach bezwzględnych i wartość procentową o nazwie funkcji do wywołania całej funkcji. Z każdym danych do punktu w **Widok Podsumowanie**, możesz przejść do bardziej szczegółowych widoków przez kliknięcie prawym przyciskiem myszy punkty danych funkcji.
+   Domyślnie istnieją trzy kolumny dla każdego punktu danych: nazwę funkcji, liczbę wywołań w wartości bezwzględnej i wartość procentową nazwanej funkcji do całkowitego wywołania funkcji. Z każdego punktu danych w **widoku Podsumowanie**możesz przejść do bardziej szczegółowych widoków, klikając prawym przyciskiem myszy punkty danych funkcji.
 
-3. Wybierz **widoku funkcji** opcji **bieżący widok** listy rozwijanej. **Widoku funkcji** Wyświetla listę funkcji, wywoływany podczas profilowania. Dane można sortować, klikając nazwę kolumny. Kolumny domyślnie wyświetlane są:
+3. Wybierz opcję **Widok funkcji** z listy rozwijanej **bieżący widok** . **Widok funkcji** zawiera listę funkcji wywoływanych podczas profilowania. Dane można sortować, klikając nazwę kolumny. Domyślnie wyświetlane są następujące kolumny:
 
     - **Nazwa funkcji**
 
-    - **Całkowity czas, który upłynął**
+    - **Czas włączny, który upłynął**
 
     - **Czas wyłączny, który upłynął**
 
-    - **Całkowity czas aplikacji**
+    - **Czas włączny aplikacji**
 
-    - **Własny czas aplikacji**
+    - **Czas wyłączny aplikacji**
 
     - **Liczba wywołań**
 
-   Wszystkie kolumny godziny są wyświetlane zarówno w przypadku wartości bezwzględne, jak i wartości procentowe. Termin **wyłączne** odwołuje się do całkowitego czasu funkcji wykonywania zużyte, z wyłączeniem czasu poświęconego przez inne funkcje wywoływane podczas wykonywania tej funkcji.
+   Wszystkie kolumny czasu są wyświetlane zarówno jako wartości bezwzględne, jak i procentowe. **Termin ten** odnosi się do łącznego czasu, przez który funkcja wykorzystała z innych funkcji wywoływanych podczas wykonywania tej funkcji.
 
-   Termin **włącznie** odwołuje się do całkowity czas funkcję wykonywania, w tym czas wykonywania wszystkich funkcji, o nazwie oraz tego, czy którakolwiek z tych nazywane funkcjami o nazwie innych funkcji.
+   Termin " **włącznie** " dotyczy łącznego czasu wykonywania funkcji, w tym czasu wykonywania wszystkich funkcji, które wywołuje, oraz tego, czy każda z tych wywołanych funkcji nazywa się innymi funkcjami.
 
-## <a name="select-callercallee-view"></a>Wybierz widok wywołujący/wywoływany
+## <a name="select-callercallee-view"></a>Wybierz Widok wywołujący/wywoływany
 
-Wybierz **wywołujący/wywoływany** wyświetlać w **bieżący widok** listy rozwijanej. **Wywołujący/wywoływany** widok ma trzy oddzielne części:
+Wybierz widok **wywołujący/wywoływany** w **bieżącym widoku** listy rozwijanej. Widok **wywołujący/wywoływany** ma następujące trzy różne części:
 
-- **Funkcje, które wywołały**: Wszystkie funkcje, które wywołuje określoną funkcję znajduje się w górnej części widoku.
+- **Funkcje, które wywołały**: wszystkie funkcje, które wywołały określoną funkcję, są wyświetlane w górnej części widoku.
 
-- **Bieżąca funkcja**: Konkretną funkcję, która została wywołana znajduje się w środkowej części widoku.
+- **Bieżąca funkcja**: określona funkcja, która została wywołana, jest wymieniona w środkowej części widoku.
 
-- **Funkcje, które zostały wywołane przez**: Wszystkie funkcje, które zostały wywołane przez konkretną funkcję znajduje się w dolnej części widoku.
+- **Funkcje, które zostały wywołane przez**: wszystkie funkcje, które zostały wywołane przez określoną funkcję, są wyświetlane w dolnej części widoku.
 
-Jeśli funkcja o nazwie `SyncToNavigator` pojawia się w środkowej części widoku, funkcje, które wywoływały `SyncToNavigator` funkcji są wyświetlane w górnej części widoku, a wszystkie funkcje, które zostały wywołane przez `SyncToNavigator` są wyświetlane w dolnej części widoku.
+Jeśli funkcja o nazwie `SyncToNavigator` pojawia się w środkowej części widoku, wszystkie funkcje, które wywołały funkcję `SyncToNavigator`, pojawiają się w górnej części widoku, a wszystkie funkcje, które zostały wywołane przez `SyncToNavigator` pojawiają się w dolnej części widoku.
 
-- Funkcja w środkowej części widoku można zmienić, klikając dwukrotnie dowolny z wymienionych w dwóch częściach widoku funkcji. Widok jest następnie aktualizowany automatycznie zgodnie ze zmianami.
+- Funkcję można zmienić w środkowej części widoku przez dwukrotne kliknięcie dowolnej z funkcji wymienionych w pozostałych dwóch częściach widoku. Widok zostanie następnie zaktualizowany, aby odzwierciedlić zmiany automatycznie.
 
-- Można również sortować dane, klikając nazw kolumn.
+- Możesz również sortować dane, klikając pozycję nazwy kolumn.
 
 ## <a name="select-call-tree-view"></a>Wybierz widok drzewa wywołań
 
-- Wybierz **widok drzewa wywołań** w **bieżący widok** listy rozwijanej. Ten widok jest widok drzewa wykonywania programu.
+- Wybierz pozycję **Widok drzewa wywołań** na liście rozwijanej **bieżący widok** . Ten widok jest widokiem drzewa wykonywania programu.
 
-   **Widok drzewa wywołań** pokazuje drzewa jako nazwę procesu. Funkcje są węzły drzewa. Ten widok umożliwia przejście do śledzenia wywołań i analizować śledzenia, które mają największy wpływ na wydajność. Widok przypomina **widoku stosu wywołań** dostępne podczas debugowania. Oprócz kolumn w **widoku funkcji**w **widok drzewa wywołań**, ma dodatkową kolumnę do wyświetlenia **Nazwa modułu**.
+   **Widok drzewa wywołań** zawiera element główny drzewa jako nazwę procesu. Funkcje są węzłami drzewa. Ten widok umożliwia przechodzenie do szczegółów określonych śladów wywołań i analizowanie, które ślady mają największy wpływ na wydajność. Widok jest podobny do **widoku stosu wywołań** dostępnego podczas debugowania. Oprócz kolumn w **widoku funkcji**, w **widoku drzewa wywołań**, istnieje dodatkowa kolumna do wyświetlania **nazwy modułu**.
 
-- Wybierz **znaczniki** w **bieżący widok** listy rozwijanej.
+- Wybierz pozycję **znaczniki** z listy rozwijanej **bieżący widok** .
 
-   Profiler XSLT istnieją znaczniki, które pojawiają się w strumieniu zbierania danych z komentarzem skojarzone. Znaczniki są miejsca w kodzie, które mają liczników. W przypadku Poinformuj Profiler XSLT można zebrać liczników wydajności XSLT liczniki Pobierz zbierane za każdym razem, gdy jeden z tych znaków pobiera wykonywane. Dane są wyświetlane w tabeli zawierające **Identyfikator znacznika**, **Nazwa znacznika** (**Uruchom Program**, **Program zakończenia**), a  **Sygnatury czasu**. Znaki nie są agregowane i wyświetlane w kolejności chronologicznej w **widoku znaczniki** raportu wydajności.
+   Za pomocą profilera XSLT istnieją znaczniki, które są wyświetlane w strumieniu zbierania danych ze skojarzonym komentarzem. Znaczniki są umieszczane w kodzie, który ma liczniki. Po poinformowaniu profilera XSLT o zbieraniu liczników wydajności XSLT, liczniki są zbierane za każdym razem, gdy jeden z tych znaków zostanie wykonany. Dane są wyświetlane w tabeli zawierającej **Identyfikator znacznika**, **nazwę znacznika** (**program początkowy**, **program końcowy**) i **sygnaturę czasową**. Znaczniki nie są agregowane i wyświetlane w kolejności chronologicznej w **widoku znaczniki** raportu wydajności.
 
-## <a name="select-modules-in-the-current-view"></a>Wybierz moduł w bieżącym widoku
+## <a name="select-modules-in-the-current-view"></a>Wybierz moduły w bieżącym widoku
 
-- Wybierz **modułów** w **bieżący widok** listy rozwijanej.
+- Wybierz pozycję **moduły** z listy rozwijanej **bieżący widok** .
 
-   Widok modułów jest płaską listę wszystkich funkcji agregowane na poziomie modułu. Rozwiń lub Zwiń Nazwa modułu do wyświetlania lub zamknąć widok danych dotyczących wydajności modułu. Dane można sortować, klikając nazwę kolumny. Domyślnie istnieją zarówno wartości bezwzględne, jak i numery procent **upłynęło całkowity czas**, **, który upłynął czas wyłączny**, **całkowity czas aplikacji**, **Własny czas aplikacji**, i **liczbę wywołań**.
+   Widok modułów to płaska lista wszystkich funkcji agregowanych na poziomie modułu. Rozwiń lub Zwiń nazwę modułu, aby wyświetlić lub zamknąć widok danych wydajności modułu. Dane można sortować, klikając nazwę kolumny. Domyślnie istnieją zarówno wartości bezwzględne, jak i wartości procentowe dla **czasu**, który upłynął, **upłynął czas wyłączny** **, czas trwania aplikacji,** **wyłączny czas aplikacji**oraz **liczbę wywołań**.
 
-- Wybierz **procesu** w **bieżący widok** listy rozwijanej.
+- Wybierz pozycję **proces** z listy rozwijanej **bieżący widok** .
 
-   Widok procesu przedstawia tabelę, która zawiera **identyfikator procesu**, **nazwy procesu**, **czas rozpoczęcia**i **czas zakończenia**. Dane można sortować, klikając nazw kolumn.
+   Widok procesu przedstawia tabelę zawierającą **Identyfikator procesu**, **nazwę procesu**, **godzinę rozpoczęcia**i **godzinę zakończenia**. Dane można sortować, klikając pozycję nazwy kolumn.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Przewodnik: Korzystanie z hierarchii XSLT](../xml-tools/walkthrough-using-xslt-hierarchy.md)
+- [Przewodnik: używanie hierarchii XSLT](../xml-tools/walkthrough-using-xslt-hierarchy.md)

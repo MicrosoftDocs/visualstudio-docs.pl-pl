@@ -1,5 +1,5 @@
 ---
-title: 'Diagramy aktywności UML: Wytyczne dotyczące | Dokumentacja firmy Microsoft'
+title: 'Diagramy aktywności UML: wytyczne | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -12,425 +12,419 @@ helpviewer_keywords:
 - UML, activity diagrams
 ms.assetid: fe5dbe96-79ab-483a-b9bc-44d0d1d3efc2
 caps.latest.revision: 50
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 310e13e781997fd3a6431e4257918f8e61b9420d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: abcc83a301553ee0c6141502c25903ef2153258b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823577"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658489"
 ---
-# <a name="uml-activity-diagrams-guidelines"></a>Diagramy aktywności UML: Wytyczne dotyczące
+# <a name="uml-activity-diagrams-guidelines"></a>Diagramy aktywności UML: Zalecenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W programie Visual Studio można narysować diagram aktywności, aby opisują proces biznesowy lub algorytm oprogramowania jako przepływ pracy za pomocą szeregu akcji. Te akcje można wykonać osób, składniki oprogramowania lub urządzeń. Aby uzyskać demonstracyjne wideo – zobacz: [Przechwytywanie biznesowe przepływy pracy za pomocą diagramów aktywności](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-4-Capture-Business-Workflows/).  
-  
- Aby zobaczyć, które wersje programu Visual Studio obsługuje tę funkcję, zobacz [obsługiwana wersja dla narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
-  
- Aby utworzyć diagram aktywności UML na **architektury** menu, kliknij przycisk **nowe UML lub diagramu warstwowego**.  
-  
- Diagram aktywności można użyć do wielu celów:  
-  
-- Opis procesu biznesowego przepływu pracy między użytkownikami a systemem. Aby uzyskać więcej informacji, zobacz [modelowanie wymagań użytkowników](../modeling/model-user-requirements.md).  
-  
-- Do opisania czynności wykonywanych w przypadku użycia. Aby uzyskać więcej informacji, zobacz [diagramy przypadków użycia UML: Wytyczne dotyczące](../modeling/uml-use-case-diagrams-guidelines.md).  
-  
-- Do opisania metody, funkcja lub operacja w oprogramowaniu. Aby uzyskać więcej informacji, zobacz [modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md).  
-  
-  Rysowanie diagramu aktywności może pomóc ulepszyć proces. Diagram istniejący proces okaże się, że bardzo skomplikowane, można rozważyć, jak można uprościć proces.  
-  
-  Aby uzyskać informacje na temat elementów na diagramach aktywności, zobacz [diagramy aktywności UML: Odwołanie](../modeling/uml-activity-diagrams-reference.md).  
-  
-## <a name="Relationships"></a> Relacja z innymi diagramami  
- Możesz narysować diagram aktywności, aby opisać proces biznesowy oraz sposób, w którym użytkownicy korzystania z systemu, można narysować diagram przypadków użycia, aby wyświetlić inny widok tych samych informacji. Diagram przypadków użycia służy do rysowania akcje zgodnie z przypadkami użycia. Nadaj przypadków użycia takich samych nazwach jak odpowiednich akcji. Korzyści wynikające z widoku przypadków użycia są, możesz:  
-  
-- Pokaż w jednym diagramie jak większych akcji/zastosowań składają się z mniejszych, przy użyciu relacji obejmuje.  
-  
-- Każdy przypadek użycia akcji jawnie połączyć się z użytkowników lub systemów zewnętrznych, które są zaangażowane w jej wykonanie.  
-  
-- Rysuj granice wokół akcji/zastosowań obsługiwanych przez system lub każdego głównego składnika.  
-  
-  Możesz również narysować diagram aktywności, aby opisać projekt szczegółowe działania oprogramowania.  
-  
-  Na diagramie aktywności można pokazać przepływ danych przesyłanych między akcjami. Zobacz sekcję dotyczącą [opisujący przepływ danych](#DataFlows). Ale diagram aktywności nie opisano strukturę danych. W tym celu możesz narysować diagram klas UML. Aby uzyskać informacje, zobacz [diagramów klas UML: Wytyczne dotyczące](../modeling/uml-class-diagrams-guidelines.md).  
-  
-## <a name="BasicSteps"></a> Podstawowe kroki rysowania diagramów aktywności  
- Szczegółowe kroki tworzenia dowolnego diagramu modelowania zawiera są opisane w [modeli i diagramów UML Edytuj](../modeling/edit-uml-models-and-diagrams.md).  
-  
-#### <a name="to-draw-an-activity-diagram"></a>Aby narysować diagram aktywności  
-  
-1. Na **architektury** menu, kliknij przycisk **nowe UML lub diagramu warstwowego**.  
-  
-2. W obszarze **szablony**, kliknij przycisk **Diagram aktywności UML**.  
-  
-3. Nadaj nazwę diagramowi.  
-  
-4. W **Dodaj do projektu modelowania**, wybierz istniejący projekt modelowania w rozwiązaniu, lub **Utwórz nowy projekt modelowania**.  
-  
-#### <a name="to-draw-elements-on-an-activity-diagram"></a>Aby narysować elementy na diagramie aktywności  
-  
-1. Przeciągnij elementy z przybornika do diagramu.  
-  
-     Rozpocznij od wprowadzania główne czynności na diagramie, łącząc je, a następnie dodając wprowadzania ostatecznych poprawek, takich jak węzłów początkowych i końcowych.  
-  
+W programie Visual Studio możesz narysować diagram aktywności, aby opisać proces biznesowy lub algorytm oprogramowania jako przepływ pracy przez serię akcji. Te akcje mogą wykonać osoby, składniki oprogramowania lub urządzenia. Aby zapoznać się z pokazem wideo, zobacz: [przechwytywanie biznesowe przepływy pracy za pomocą diagramów aktywności](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-4-Capture-Business-Workflows/).
+
+ Aby sprawdzić, które wersje programu Visual Studio obsługują tę funkcję, zobacz [Obsługa wersji dla narzędzi architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+
+ Aby utworzyć diagram aktywności UML, w menu **Architektura** kliknij **Nowy UML lub diagram warstwowy**.
+
+ Diagram aktywności można użyć w wielu celach:
+
+- Aby opisać proces biznesowy lub przepływ pracy między użytkownikami i systemem. Aby uzyskać więcej informacji, zobacz [wymagania dotyczące modelu użytkownika](../modeling/model-user-requirements.md).
+
+- Do opisywania kroków wykonywanych w przypadku użycia. Aby uzyskać więcej informacji, zobacz [diagramy przypadków użycia UML: wytyczne](../modeling/uml-use-case-diagrams-guidelines.md).
+
+- Do opisywania metody, funkcji lub operacji w oprogramowaniu. Aby uzyskać więcej informacji, zobacz [modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md).
+
+  Rysowanie diagramu aktywności może pomóc w ulepszaniu procesu. Jeśli diagram istniejącego procesu jest bardzo skomplikowany, można rozważyć, jak można uprościć proces.
+
+  Informacje referencyjne dotyczące elementów na diagramach aktywności można znaleźć w temacie [diagramy aktywności UML: odwołanie](../modeling/uml-activity-diagrams-reference.md).
+
+## <a name="Relationships"></a>Relacje z innymi diagramami
+ W przypadku rysowania diagramu aktywności do opisywania procesu biznesowego lub sposobu, w jaki użytkownicy korzystają z systemu, możesz narysować diagram przypadków użycia, aby pokazać inny widok tych samych informacji. Na diagramie przypadku użycia są rysowane akcje jako przypadki użycia. Nadaj przypadki użycia takie same nazwy jak odpowiadające im akcje. Zalety widoku przypadku użycia są następujące:
+
+- Pokaż na jednym diagramie, jak większe działania/przypadki użycia składają się z mniejszych, przy użyciu relacji include.
+
+- Połącz poszczególne akcje/przypadki użycia jawnie z użytkownikami lub systemami zewnętrznymi związanymi z jego wykonywaniem.
+
+- Rysowanie granic wokół działań/przypadków użycia obsługiwanych przez system lub poszczególnych głównych składników.
+
+  Możesz również narysować diagram aktywności, aby opisać szczegółowy projekt operacji oprogramowania.
+
+  W diagramie aktywności można wyświetlić przepływ danych przesyłanych między akcjami. Zapoznaj się z sekcją [opisującą przepływ danych](#DataFlows). Jednak diagram aktywności nie opisuje struktury danych. W tym celu można narysować Diagram klas UML. Aby uzyskać informacje, zobacz [diagramy klas UML: wytyczne](../modeling/uml-class-diagrams-guidelines.md).
+
+## <a name="BasicSteps"></a>Podstawowe kroki rysowania diagramów aktywności
+ Szczegółowe instrukcje tworzenia dowolnego diagramu modelowania są opisane w sekcji [Edycja modeli UML i diagramów](../modeling/edit-uml-models-and-diagrams.md).
+
+#### <a name="to-draw-an-activity-diagram"></a>Aby narysować diagram aktywności
+
+1. W menu **Architektura** kliknij kolejno pozycje **Nowy UML lub diagram warstwowy**.
+
+2. W obszarze **Szablony**kliknij pozycję **Diagram aktywności UML**.
+
+3. Nadaj nazwę diagramowi.
+
+4. W obszarze **Dodaj do projektu modelowania**wybierz istniejący projekt modelowania w rozwiązaniu lub **Utwórz nowy projekt modelowania**.
+
+#### <a name="to-draw-elements-on-an-activity-diagram"></a>Aby narysować elementy na diagramie aktywności
+
+1. Przeciągnij elementy z przybornika na diagram.
+
+     Zacznij od umieszczenia głównych działań na diagramie, łącząc je, a następnie dodając do nich ostateczne elementy, takie jak początkowe i końcowe węzły.
+
     > [!NOTE]
-    > Nie można przeciągać istniejące elementy na diagram, z Eksploratora modelu UML.  
-  
-2. Aby połączyć elementy, wykonaj następujące kroki:  
-  
-    1. W **Diagram aktywności** przybornik, kliknij przycisk **łącznika**.  
-  
-    2. Na diagramie kliknij element źródła.  
-  
-    3. Kliknij element docelowy.  
-  
+    > Nie można przeciągać istniejących elementów na diagram z Eksploratora modelu UML.
+
+2. Aby połączyć elementy, wykonaj następujące kroki:
+
+    1. W przyborniku **Diagram aktywności** kliknij pozycję **Łącznik**.
+
+    2. Na diagramie kliknij element źródłowy.
+
+    3. Kliknij element docelowy.
+
         > [!NOTE]
-        > Aby użyć narzędzia wielokrotnie, kliknij dwukrotnie narzędzie w przyborniku.  
-  
-#### <a name="to-move-an-activity-to-another-package"></a>Aby przenieść działanie do innego pakietu  
-  
-- W **Eksploratora modelu UML**, przeciągnij działanie w pakiecie.  
-  
-     \- lub —  
-  
-- W **Eksploratora modelu UML**, kliknij prawym przyciskiem myszy działanie i kliknij przycisk **Wytnij**. Następnie kliknij prawym przyciskiem myszy pakiet i kliknij przycisk **Wklej**.  
-  
+        > Aby użyć narzędzia wiele razy, kliknij je dwukrotnie w przyborniku.
+
+#### <a name="to-move-an-activity-to-another-package"></a>Aby przenieść działanie do innego pakietu
+
+- W **Eksploratorze modelu UML**przeciągnij działanie do pakietu.
+
+     \- lub-
+
+- W **Eksploratorze modelu UML**, kliknij prawym przyciskiem myszy działanie, a następnie kliknij przycisk **Wytnij**. Następnie kliknij prawym przyciskiem myszy pakiet, a następnie kliknij przycisk **Wklej**.
+
     > [!NOTE]
-    > Działania będą wyświetlane w Eksploratorze modelu UML tylko po dodaniu pierwszego elementu na diagram.  
-  
-## <a name="SimpleControlFlow"></a> Opisywanie przepływu sterowania  
- Diagram aktywności opisuje algorytm procesu lub oprogramowania firmy jako szereg działań. Łącznik strzałki pokazują, jak kontrola jest przekazywana sekwencyjnie w ramach jednej akcji do następnego. Zazwyczaj akcji można uruchomić tylko po poprzedniej akcji.  
-  
- Następujący rysunek jest przykładem przedstawiającym sposób możesz wyświetlić sekwencję akcji przy użyciu akcji, łączniki, gałęzie i pętle. Każdy element jest omówione bardziej szczegółowo w poniższych sekcjach.  
-  
- ![Diagram prostego działania](../modeling/media/uml-actguidectrl.png "UML_ActGuideCtrl")  
-  
- Działanie diagramy użycia **akcje** i **łączników** do opisania systemie lub w aplikacji jako szereg działań z kontrolką przepływają sekwencyjnie od jednej akcji do następnego.  
-  
-- Tworzenie **akcji** (1) dla każdego zadania główne, które jest wykonywane przez użytkownika i/lub system we współpracy.  
-  
+    > Działanie będzie widoczne w Eksploratorze modelu UML tylko po dodaniu pierwszego elementu do diagramu.
+
+## <a name="SimpleControlFlow"></a>Opisywanie przepływu sterowania
+ Na diagramie aktywności opisano proces biznesowy lub algorytm oprogramowania w ramach szeregu akcji. Strzałki łączników pokazują, jak kontrolka jest przenoszona sekwencyjnie z jednej akcji do następnej. Zwykle akcja może zostać uruchomiona dopiero po zakończeniu poprzedniej akcji.
+
+ Na poniższej ilustracji przedstawiono przykład sposobu wyświetlania sekwencji akcji zawierających akcje, łączniki, gałęzie i pętle. Każdy element jest wyjaśniony bardziej szczegółowo w poniższych sekcjach.
+
+ ![Prosty diagram aktywności](../modeling/media/uml-actguidectrl.png "UML_ActGuideCtrl")
+
+ Diagramy aktywności wykorzystują **Akcje** i **Łączniki** do opisywania systemu lub aplikacji jako szereg akcji z kontrolką przepływa sekwencyjnie od jednej akcji do następnego.
+
+- Utwórz **akcję** (1) dla każdego zadania, które jest wykonywane przez użytkownika, system lub obie w obszarze współpraca.
+
   > [!NOTE]
-  > Spróbuj opis procesu algorytmu, gdy tylko kilka akcji. Możesz użyć **wywołać akcje zachowania** do definiowania każdej akcji w bardziej szczegółowo w oddzielnym diagramie, zgodnie z opisem w [opisujące działań podrzędnych za pomocą wywołania akcji zachowanie](#Subactivities).  
-  
-- Upewnij się, że tytuł każdej akcji jasno nie wskazuje, co powoduje to zazwyczaj osiągnięcie.  
-  
-- Łącze akcji w sekwencji **łączników** (2).  
-  
-- Każda akcja kończy się przed rozpoczęciem następnej akcji w przepływie sterowania. Jeśli użytkownik chce opisać akcje, które nakładają się na siebie, należy użyć **węzła rozwidlenia** zgodnie z opisem w sekcji [przepływy współbieżne](#Concurrent).  
-  
-  Mimo że na wykresie przedstawiono sekwencję akcji, nie opisano sposób wykonywania akcji lub jak sterowanie jest przekazywane z jedną akcję do następnego. Jeśli używasz diagramu do reprezentowania proces biznesowy kontroli mogą być przekazywane, na przykład, gdy jedna osoba wysyła wiadomość e-mail do innego. Jeśli używasz diagramu do reprezentowania projektu oprogramowania kontrolki mogą być przekazywane przy normalnym przepływem wykonania z jedną instrukcję do następnego.  
-  
-### <a name="describing-decisions-and-loops"></a>Opisujące decyzji i pętle  
-  
-- Użyj **węzła decyzji** (3), aby wskazać punkt, gdzie wynik decyzji decyduje o następnym krokiem. Możesz narysować dowolną liczbę ścieżek wychodzących.  
-  
-- Użycie diagram aktywności zdefiniować część aplikacji, należy zdefiniować osłony (4), aby było wiadomo, gdy są każdą ścieżkę należy podjąć. Kliknij prawym przyciskiem myszy łącznik, kliknij przycisk **właściwości**, a następnie w **właściwości** okna i wpisz wartość **Guard** pola.  
-  
-- Nie zawsze jest konieczne w celu zdefiniowania osłony. Na przykład w przypadku opisują proces biznesowy lub protokołu interakcji przy użyciu diagramu aktywności, gałąź definiuje zakres możliwości do użytkownika, lub ze składnikami interakcje.  
-  
-- Użyj **scalania węzła** (5), aby zebrać co najmniej dwóch alternatywnych przepływów, które rozgałęzione w **węzła decyzji**.  
-  
+  > Spróbuj opisać swój proces lub algorytm, korzystając z zaledwie kilku akcji. Możesz użyć **akcji zachowań wywołań** , aby zdefiniować poszczególne akcje bardziej szczegółowo na osobnym diagramie, zgodnie z opisem w artykule [opisywanie działań podrzędnych z akcjami zachowania wywoływania](#Subactivities).
+
+- Upewnij się, że tytuł każdej akcji jasno wskazuje na to, co zazwyczaj osiąga.
+
+- Połącz akcje w sekwencji z **łącznikami** (2).
+
+- Każda akcja zakończy się przed rozpoczęciem następnej akcji w przepływie sterowania. Jeśli chcesz opisać akcje, które się nakładają, użyj **węzła rozwidlenia** , zgodnie z opisem w sekcji [współbieżne przepływy](#Concurrent).
+
+  Mimo że diagram opisuje sekwencję akcji, nie opisuje sposobu wykonywania akcji lub sposobu przekazywania kontroli z jednej akcji do kolejnej. Jeśli diagram ma być używany do reprezentowania procesu biznesowego, może zostać przeniesiona kontrola, na przykład gdy jedna osoba wysyła wiadomość e-mail do innej osoby. W przypadku użycia diagramu do reprezentowania projektu oprogramowania kontrolka może zostać przeniesiona przez normalny przepływ wykonywania z jednej instrukcji do następnej.
+
+### <a name="describing-decisions-and-loops"></a>Opisywanie decyzji i pętli
+
+- Użyj **węzła decyzyjnego** (3) w celu wskazania punktu, w którym wynik decyzji wymusza następny krok. Możesz narysować dowolną liczbę ścieżek wychodzących.
+
+- Jeśli używasz diagramu aktywności do definiowania części aplikacji, należy zdefiniować osłony (4) tak, aby były jasne, gdy każda ścieżka powinna zostać wykonana. Kliknij prawym przyciskiem myszy łącznik, kliknij pozycję **Właściwości**, a następnie w oknie **Właściwości** wpisz wartość pola **Guard** .
+
+- Nie zawsze trzeba definiować osłony. Na przykład, jeśli używasz diagramu aktywności do opisywania procesu biznesowego lub protokołu interakcji, gałąź definiuje zakres opcji otwartych dla użytkownika lub interakcji ze składnikami.
+
+- Użyj **węzła scalania** (5) do łączenia dwóch lub więcej alternatywnych przepływów, rozgałęzienia w **węźle decyzyjnym**.
+
     > [!NOTE]
-    > Należy używać **scalania węzła** ze sobą alternatywnych przepływów, zamiast łączące przepływów w akcji. W tym przykładzie nie jest poprawna połączyć się z węzłem decyzji bezpośrednio z powrotem do **wybierz element Menu**. Jest to spowodowane akcji nie uruchamia się, dopóki wątków kontroli mogły przybyć wszystkich przychodzących łączników. W związku z tym można należy zebrać tylko przepływy współbieżne w akcji. Aby uzyskać więcej informacji, zobacz [przepływy współbieżne](#Concurrent).  
-  
-- Używanie gałęzi do opisania pętli, jak pokazano w przykładzie.  
-  
+    > Należy użyć **węzła scalania** do łączenia alternatywnych przepływów, zamiast przenosić przepływy w ramach akcji. W przykładzie nie będzie poprawna, aby połączyć się z węzła decyzyjnego bezpośrednio z powrotem do **Wybierz element menu**. Jest to spowodowane tym, że akcja nie zostanie uruchomiona, dopóki wątki kontroli nie dotarły do wszystkich łączników przychodzących. W związku z tym należy przenieść tylko współbieżne przepływy w ramach akcji. Aby uzyskać więcej informacji, zobacz [współbieżne przepływy](#Concurrent).
+
+- Używaj gałęzi do opisywania pętli, jak pokazano w przykładzie.
+
     > [!NOTE]
-    > Spróbuj zagnieździć pętli w sposób bezpieczny dobrze, jak w przypadku w kodzie programu. Jeśli są opisujące istniejący proces biznesowy, to może ujawnić niektóre możliwości poprawienia go.  
-  
-### <a name="starting-the-activity"></a>Uruchamianie działania  
- Istnieją dwa sposoby, aby wskazać punkty wejścia do działania:  
-  
-- **Węzeł początkowy**  
-  
-     Utwórz je **węzeł początkowy** (6), aby wskazać pierwszą akcję działania.  
-  
-     Ta metoda jest najbardziej użyteczne, są opisujących działania podrzędne lub w przypadku, gdy nie trzeba jawnie określać, jakie inicjuje działania. Na przykład działanie zamówienie posiłku wyraźnie rozpoczyna się, gdy klient pobiera hungry.  
-  
-- **Zaakceptuj węzła zdarzeń**  
-  
-     Tworzenie **zaakceptować węzłów zdarzeń**, zgodnie z opisem w sekcji [przepływy współbieżne](#Concurrent), aby wskazać uruchomienia wątku, który odpowiada na konkretne zdarzenie, takie jak dane wejściowe użytkownika. Nie wpisuj przychodzącego przepływu do węzła. Pominięcie przychodzącego przepływu wskazuje, czy wątek zostanie uruchomiony każdym wystąpieniu zdarzenia.  
-  
-     Ta metoda jest najbardziej przydatne, gdy opisują odpowiedzi na określone zdarzenie zewnętrzne.  
-  
-### <a name="ending-the-activity"></a>Kończenie działania  
- Użyj **działania ostatni węzeł** (7), aby wskazać koniec działania.  
-  
-- Gdy wątek kontroli osiągnie **działania ostatni węzeł**, zakończyć współbieżnych akcje i działania podrzędne wszystkich działań.  
-  
-- Więcej niż jeden węzeł końcowy działanie umożliwia zaśmiecać dodatkowe łączniki.  
-  
-### <a name="interrupting-the-activity"></a>Przerywania działania  
- Do opisywania, jak zwykłe przepływ działania może zostać przerwane, na przykład, jeśli użytkownik zdecyduje anulować proces, można utworzyć zaakceptować węzeł zdarzeń, który będzie nasłuchiwać pod kątem tego zdarzenia. Aby uzyskać więcej informacji, zobacz sekcję [przepływy współbieżne](#Concurrent). Utwórz przepływ sterowania od tego działania węzłem końcowym (7).  
-  
-### <a name="swimlanes"></a>Torów  
- Czasami jest to przydatne dla operacji działania do obszarów różnych obiektów lub ról biznesowych, wykonujące akcje. Te obszary tradycyjnie są rozmieszczone w kolumnach i są nazywane *torów*.  
-  
-- Użyj linie lub prostokąty z **kształty proste** sekcji przybornika Rysowanie ścieżek albo innych obszarów.  
-  
-- Aby dodać etykietę każdego toru, utworzyć komentarz i ustawić jej **przezroczysty** właściwości **True**.  
-  
-  Kształty proste nie stanowią części modelu UML i nie są wyświetlane w Eksploratorze modelu UML.  
-  
-## <a name="DataFlows"></a> Opisujący przepływ danych  
- Możesz opisać dane, przekazywanie i działania w jeden z dwóch sposobów:  
-  
-- Użyj **obiektu węzła**. Jest to najprostsza metoda opisujący dane przepływają między działaniami. Węzeł obiektu przypomina zmiennej w programie. Reprezentuje coś, co przechowuje jedną lub więcej wartości, które przechodzi do innego w ramach jednej akcji.  
-  
-- Użyj **Pin wyjściowy** i **wprowadzania numeru Pin**. Ta metoda umożliwia oddzielnie opisują dane wyjściowe z akcji i dane wejściowe do innego. Numery PIN są podobne parametry w programie. Numery PIN reprezentują porty, których obiekty można wprowadzać i pozostaw akcji.  
-  
+    > Spróbuj zagnieżdżać pętle w dobrze uporządkowany sposób, jak w kodzie programu. W przypadku opisywania istniejącego procesu biznesowego może to ujawnić pewne możliwości w celu poprawienia go.
+
+### <a name="starting-the-activity"></a>Uruchamianie działania
+ Istnieją dwa sposoby wskazywania punktów wejścia do działania:
+
+- **Węzeł początkowy**
+
+     Utwórz jeden **węzeł początkowy** (6), aby wskazać pierwszą akcję działania.
+
+     Ta metoda jest najbardziej przydatna w przypadku opisywania działania podrzędnego lub nie trzeba jawnie określać, co inicjuje działanie. Na przykład kolejność działań w ramach posiłku jasno rozpoczyna się, gdy klient uzyska zasobożernych.
+
+- **Zaakceptuj węzeł zdarzenia**
+
+     Utwórz **węzły zdarzeń Akceptuj**, zgodnie z opisem w sekcji [współbieżne przepływy](#Concurrent), aby wskazać początek wątku, który odpowiada na konkretne zdarzenie, takie jak dane wejściowe użytkownika. Nie dostarczaj przepływu przychodzącego do węzła. Pomijanie przepływu przychodzącego wskazuje, że wątek zostanie uruchomiony za każdym razem, gdy wystąpi zdarzenie.
+
+     Ta metoda jest najbardziej przydatna podczas opisywania odpowiedzi na konkretne zdarzenie zewnętrzne.
+
+### <a name="ending-the-activity"></a>Kończenie działania
+ Użyj **końcowego węzła działania** (7), aby wskazać koniec działania.
+
+- Gdy wątek kontrolki osiągnie **węzeł końcowy działania**, wszystkie akcje współbieżne i działania podrzędne działania są przerywane.
+
+- Można użyć więcej niż jednego węzła końcowego działania, aby zmniejszyć liczbę dodatkowych łączników.
+
+### <a name="interrupting-the-activity"></a>Przerywanie działania
+ Aby opisać sposób przerwania zwykłego przepływu działania, na przykład jeśli użytkownik zdecyduje się anulować proces, można utworzyć węzeł zdarzenia akceptacji, który nasłuchuje dla tego zdarzenia. Aby uzyskać więcej informacji, zobacz sekcję [współbieżne przepływy](#Concurrent). Utwórz przepływ sterowania z tego elementu do ostatniego węzła działania (7).
+
+### <a name="swimlanes"></a>Torów
+ Czasami warto rozmieścić działania działań w obszarach odpowiadających różnym obiektom lub rolom biznesowym, które wykonują działania. Te obszary są uporządkowane w kolumnach i nazywane są *torami*.
+
+- Użyj linii lub prostokątów z sekcji **proste kształty** w przyborniku, aby rysować ścieżki lub inne obszary.
+
+- Aby oznaczyć każdy tor, Utwórz komentarz i ustaw jego właściwość **transparent** na **true**.
+
+  Proste kształty nie są częścią modelu UML i nie są wyświetlane w Eksploratorze modelu UML.
+
+## <a name="DataFlows"></a>Opisywanie przepływu danych
+ Można opisać dane przekazywane i wychodzące z działania na jeden z dwóch sposobów:
+
+- Użyj **węzła obiektu**. Jest to najprostsza metoda opisywania informacji przepływających między działaniami. Węzeł obiektu jest podobny do zmiennej w programie. Reprezentuje element, który przechowuje co najmniej jedną wartość, która przechodzi z jednej akcji do innej.
+
+- Użyj **wyjściowego numeru PIN** i **wejściowego numeru PIN**. Ta metoda pozwala oddzielnie opisać dane wyjściowe z jednej akcji i dane wejściowe. Numery PIN są podobne do parametrów w programie. Numery PIN reprezentują porty, w których obiekty mogą wejść i opuszczają akcję.
+
     > [!NOTE]
-    > Omówienie elementy używane w tej sekcji, zobacz przepływu danych w sekcji tego tematu zobacz [diagramy aktywności UML: Odwołanie](../modeling/uml-activity-diagrams-reference.md).  
-  
-### <a name="describing-data-flow-with-object-nodes"></a>Opisujący przepływ danych za pomocą węzłów obiektowych  
- Większość przepływów sterowania przesyłania danych. Na przykład przepływ danych wyjściowych z akcji "Klienta zawiera szczegółowe informacje" zawiera odwołanie do adresu do wysyłki.  
-  
- Do opisania tych danych na diagramie, możesz zastąpić łącznika z węzeł obiektu i dwa łączniki, jak pokazano na poniższej ilustracji.  
-  
- ![Węzły obiektów można wyświetlić danych przesyłanych między akcjami](../modeling/media/uml-actguidedata.png "UML_ActGuideData")  
-  
- Należy zauważyć, że prostokąty zaokrąglonymi narożnikami, takich jak towarów wysyłania reprezentują działań, gdzie występuje przetwarzanie. Prostokąty prostokątnych narożnikach, takie jak adres dostawy reprezentują przepływ obiektów z jedną akcję do innego.  
-  
- Nazwij węzeł obiektu odzwierciedlającą rolę węzła kanał lub buforu obiektów, które przepływ między działaniami.  
-  
- Możesz ustawić **typu** węzła obiektu, w oknie dialogowym właściwości. Typ może być typem pierwotnym, takie jak liczba całkowita, lub klasą, interfejsem lub wyliczenie, które zostały zdefiniowane na diagramie klasy. Na przykład można utworzyć klasy adres dostawy z atrybutami adres ulicy, miejscowości i tak dalej, wraz z skojarzenia z innej klasy, który nosi nazwę klienta. Aby uzyskać więcej informacji, zobacz [diagramów klas UML: Wytyczne dotyczące](../modeling/uml-class-diagrams-guidelines.md).  
-  
+    > Aby zapoznać się z omówieniem elementów użytych w tej sekcji, zobacz sekcję przepływy danych w temacie zobacz [diagramy aktywności UML: odwołanie](../modeling/uml-activity-diagrams-reference.md).
+
+### <a name="describing-data-flow-with-object-nodes"></a>Opisywanie przepływu danych z węzłami obiektów
+ Większość przepływów sterowania wykonuje dane. Na przykład przepływ danych wyjściowych z akcji "Klient zawiera szczegóły" przenosi odwołanie do adresu dostawy.
+
+ Jeśli chcesz opisać te dane na diagramie, możesz zamienić łącznik na węzeł obiektu i dwa łączniki, jak pokazano na poniższej ilustracji.
+
+ ![Węzły obiektów mogą wyświetlać dane przesyłane między akcjami](../modeling/media/uml-actguidedata.png "UML_ActGuideData")
+
+ Zauważ, że prostokąty ze ściętymi wierzchołkami, takie jak towary wysyłki, reprezentują akcje, w których odbywa się przetwarzanie. Prostokąty kwadratowe, takie jak adres dostawy, reprezentują przepływ obiektów z jednej akcji do innej.
+
+ Nadaj obiektowi nazwę, która odzwierciedla rolę węzła jako strumień lub bufor obiektów, które przepływają między akcjami.
+
+ Można ustawić **Typ** węzła obiektu w okno właściwości. Typ może być typem pierwotnym, takim jak Integer, lub klasą, interfejsem lub wyliczeniem zdefiniowanym w diagramie klas. Na przykład można utworzyć adres dostawy klasy z atrybutami ulica, miasto i tak dalej, wraz z skojarzeniem z inną klasą o nazwie klient. Aby uzyskać więcej informacji, zobacz [diagramy klas UML: wytyczne](../modeling/uml-class-diagrams-guidelines.md).
+
 > [!NOTE]
-> Wpisz nazwę typu, który nie został jeszcze zdefiniowany element zostanie dodany w obszarze **nieokreślonym** w Eksploratorze modelu UML. Po zdefiniowaniu typu o takiej nazwie następnie na diagramie klasy, możesz zresetować typ węzła obiektu, dzięki czemu odwołuje się do nowego typu.  
-  
-#### <a name="buffering-data-in-object-nodes"></a>Buforowanie danych w węzłów obiektowych  
- Węzeł obiektu może działać jako bufor dla wielu obiektów. Na poniższej ilustracji, przepływ sterowania pokazuje, że użytkownik może go [Więcej opcji] pętli (1) wiele razy, podczas gdy elementy Menu wybrany węzeł obiektu (2) gromadzi wyborów użytkownika. Na koniec po ukończeniu jego wybór użytkownika kontrola przechodzi do akcji potwierdzenia zamówienia (3), która przyjmuje pełną listę wyboru z buforu wybrane elementy Menu.  
-  
- ![Buforowanie danych w węzłach obiektów](../modeling/media/uml-actguidebuffer.png "UML_ActGuideBuffer")  
-  
- Można określić, jak elementy w buforze są przechowywane przez ustawienie właściwości węzeł obiektu:  
-  
-- Ustaw **porządkowanie** właściwości:  
+> Jeśli wpiszesz nazwę typu, który nie został jeszcze zdefiniowany, element zostanie dodany w obszarze **nieokreślone typy** w EKSPLORATORZE modelu UML. Jeśli następnie zdefiniujesz typ tej nazwy w diagramie klas, należy zresetować typ węzła obiektu, tak aby odnosił się do nowego typu.
 
-  - **Nieuporządkowana** do określania kolejności losowej lub nieokreślony. (Ustawienie domyślne)  
+#### <a name="buffering-data-in-object-nodes"></a>Buforowanie danych w węzłach obiektów
+ Węzeł obiektu może działać jako bufor dla wielu obiektów. Na poniższej ilustracji przepływ sterowania pokazuje, że użytkownik może przekroczyć pętlę [Wybierz więcej] (1) wiele razy, podczas gdy wybrane elementy menu węzeł obiektu (2) gromadzi wybory użytkownika. Na koniec, gdy użytkownik zakończył swój wybór, sterowanie przechodzi do akcji Potwierdź zamówienie (3), która akceptuje pełną listę wyborów z wybranego buforu elementów menu.
 
-  - **Uporządkowane** można określić kolejność, zgodnie z określonym kluczem.  
+ ![Buforowanie danych w węzłach obiektów](../modeling/media/uml-actguidebuffer.png "UML_ActGuideBuffer")
 
-  - **FIFO** do określania kolejności pierwszy w zasadzie.  
+ Możesz określić, jak elementy w buforze są przechowywane przez ustawienie właściwości węzła obiektu:
 
-  - **LIFO** do określania kolejności ostatni na wejściu,.  
+- Ustaw właściwość **porządkowania** :
 
-- Ustaw **górną granicę** właściwość, aby określić maksymalną liczbę obiektów, które mogą być zawarte w buforze. Wartość domyślna to *. Oznacza to, że nie ma żadnego limitu.  
-  
-### <a name="describing-data-flow-with-input-and-output-pins"></a>Opisujący przepływ danych z wejścia i wyjścia  
- Użyj **Pin wyjściowy** i **wprowadzania numeru Pin** oddzielnie opisujący dane wyjściowe z akcji i dane wejściowe do innego.  
-  
- ![PinY wejściowe i wyjściowe są parametry akcji](../modeling/media/uml-actguidepins.png "UML_ActGuidePins")  
-  
- Aby utworzyć numer pin, kliknij przycisk **wprowadzania numeru Pin** lub **Pin wyjściowy** w przyborniku a następnie kliknij akcję. Można następnie przenieść numeru pin na obwodzie akcji i zmień jego nazwę. Można tworzyć dane wejściowe i wyjściowe pinterest na dowolny rodzaj działania, w tym **wywołać akcje zachowania**, **wywołaj operację akcje**, **wysyłać sygnał akcje**, i  **Zaakceptuj akcje zdarzenia**.  
-  
- Łącznik między dwa numery PIN reprezentuje przepływ obiektu, tak jak przepływy do i z węzeł obiektu.  
-  
- Nadaj każdej numeru pin nazwę, która wskazuje rolę obiektów produkuje lub zaakceptuje, takie jak nazwa parametru.  
-  
- Możesz ustawić typ obiektów przekazywane w **typu** właściwości. Musi to być typ, który został utworzony w diagramie klas UML.  
-  
- Obiekty odbywającym się między połączonych numerów PIN musi być zgodny w jakiś sposób. Może to być, ponieważ obiekty produkowane przez danych wyjściowych numer pin należy do typu pochodnego typu wprowadzania numeru pin.  
-  
- Alternatywnie można określić, że przepływ obiektu zawiera przekształcenia, które konwertuje dane między typ danych wyjściowych numer pin i typ wprowadzania numeru pin. Najbardziej typowe przekształcania tego rodzaju wyodrębnia tylko odpowiednie części z większych typu. Przykład pokazany na rysunku oznacza to istnienie transformacji, która wyodrębnia adresu wysyłkowego z szczegółów zamówienia.  
-  
-## <a name="Details"></a> Definiowanie akcji bardziej szczegółowo  
- Oprócz przy użyciu nazwy akcji, aby wyjaśnić, wynik, który zazwyczaj powinna osiągnąć, Oto kilka sposobów akcję można dodać więcej szczegółów:  
-  
-- Pisanie bardziej szczegółowy opis w **treści** właściwości. Na przykład można napisać fragment kodu programu lub pseudo kod lub pełny opis osiągnięte rezultaty.  
-  
-- Zamień akcji do wywołania akcji zachowanie i opisano jego szczegółowe zachowanie w diagramie aktywności na oddzielne. Zobacz [zawierająca opis działania podrzędne z akcjami zachowanie wywołania](#Subactivities).  
-  
-- Ustaw akcję **lokalnych warunków końcowych** i **lokalnego warunki wstępne** właściwości opisujących jej wynik szczegółowo bardziej szczegółowe. Aby uzyskać więcej informacji, zobacz [Definiowanie warunków końcowych i warunki wstępne](#Postcondition).  
-  
-### <a name="Subactivities"></a> Opisujący działania podrzędne z akcjami zachowanie wywołania  
- Możesz opisać szczegółowe zachowanie operacji za pomocą diagramu aktywności na oddzielne. O nazwie zachowanie jest przedstawione na diagramie głównego działania przez akcję zachowania wywołać diagram aktywności. Wywołanie zachowanie służy również do opisywania zachowanie współużytkowanych przez różne działania, aby nie masz do rysowania działania podrzędne wiele razy.  
-  
- Na poniższym rysunku na diagramie 1 przedstawiono działanie, które zawiera akcję zachowanie wywołania i Diagram 2 przedstawia diagram aktywności podrzędną, która pokazuje zachowanie o nazwie.  
-  
- ![Diagram oddzielnych działania pokazujący szczegółowe akcje](../modeling/media/uml-actguidedetail.png "UML_ActGuideDetail")  
-  
-##### <a name="to-describe-a-sub-activity-with-a-call-behavior-action"></a>Do opisania podrzędne działania przy użyciu akcji zachowanie wywołania  
-  
-1. Aby utworzyć diagram działania podrzędne w **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt modelowania, wskaż **Dodaj**, a następnie kliknij przycisk **nowy element**.  
-  
-2. W **Dodaj nowy element** okno dialogowe, w obszarze **szablony** kliknij **Diagram aktywności** i **nazwa** wpisz nazwę, który chcesz nadać Twoje **wywołanie zachowanie**.  
-  
-3. Rysuj przepływ pracy szczegółowe dla działania podrzędne. Jest to zachowanie o nazwie.  
-  
-    - Na diagramie aktywności podrzędną o nazwie **węzeł początkowy** wskazuje, gdzie kontrola rozpoczyna się po wywołaniu o nazwie zachowanie. **Działania ostatni węzeł** pokazuje, gdzie kontrolka powinna zwrócić do działania nadrzędnego.  
-  
-4. Ustaw **zachowanie** właściwość **wywołanie zachowanie** do odwoływania się do diagramu o nazwie zachowanie.  
-  
+  - **Nieuporządkowany** , aby określić losową lub nieokreśloną kolejność. (Wartość domyślna).
+
+  - **Uporządkowany** , aby określić zamówienie zgodnie z określonym kluczem.
+
+  - **FIFO** , aby określić kolejność pierwszego w pierwszej kolejności.
+
+  - **LIFO** , aby określić kolejność ostatniego, w pierwszej kolejności.
+
+- Ustaw **górną granicę** właściwości, aby określić maksymalną liczbę obiektów, które mogą być zawarte w buforze. Wartość domyślna to *. Oznacza to, że nie ma żadnego limitu.
+
+### <a name="describing-data-flow-with-input-and-output-pins"></a>Opisywanie przepływu danych za pomocą pinów wejściowych i wyjściowych
+ Użyj **wyjściowego numeru PIN** i **wejściowego numeru PIN** , aby osobno opisać dane wyjściowe z jednej akcji i dane wejściowe.
+
+ ![PIN wejściowe i wyjściowe są parametrami akcji](../modeling/media/uml-actguidepins.png "UML_ActGuidePins")
+
+ Aby utworzyć kod PIN, kliknij pozycję **wejściowy numer PIN** lub **wyjściowy numer PIN** w przyborniku, a następnie kliknij akcję. Następnie można przenieść numer PIN wokół obwodu akcji i zmienić jego nazwę. Można tworzyć pinezki wejściowe i wyjściowe na dowolnym rodzaju akcji, w tym **Akcje wywoływania**, **Akcje operacji wywołania**, **Akcje wysyłania sygnałów**i **Akcje akceptowania zdarzeń**.
+
+ Łącznik między dwoma pinezkami reprezentuje przepływ obiektu, tak jak przepływy do i z węzła obiektu.
+
+ Nadaj każdemu numerowi PIN nazwę wskazującą rolę obiektów, które generuje lub akceptuje, takich jak nazwa parametru.
+
+ Można ustawić typ obiektów transmitowanych we właściwości **Typ** . Musi to być typ utworzony na diagramie klas UML.
+
+ Obiekty przepływające między połączonymi pinezkami muszą być zgodne w jakiś sposób. Może to być spowodowane faktem, że obiekty utworzone przez wyjściowy kod PIN należą do typu pochodnego wejściowego numeru PIN.
+
+ Alternatywnie można określić, że przepływ obiektów obejmuje transformację, która konwertuje dane między typem wyjściowego numeru PIN a typem wejściowego numeru PIN. Najbardziej typowa transformacja tego rodzaju jedynie wyodrębnia odpowiednią część z większego typu. Przykład na rysunku oznacza istnienie transformacji, która wyodrębnia adres wysyłkowy z szczegółów zamówienia.
+
+## <a name="Details"></a>Definiowanie akcji bardziej szczegółowo
+ Oprócz używania nazwy akcji, aby wyczyścić wynik, który powinien być zwykle osiągnięty, poniżej przedstawiono kilka sposobów dodawania szczegółów do akcji:
+
+- Napisz bardziej szczegółowy opis we właściwości **Body** . Można na przykład napisać fragment kodu programu lub pseudo kod lub pełen opis uzyskanych wyników.
+
+- Zastąp akcję akcją zachowania wywołania i opisz jej szczegółowe zachowanie w ramach oddzielnego diagramu aktywności. Zobacz [Opis działań podrzędnych z akcjami zachowania wywoływania](#Subactivities).
+
+- Ustaw właściwości **lokalnych warunki końcowe** i **lokalnych warunków** wstępnych akcji, aby opisać jej wynik bardziej szczegółowy. Aby uzyskać więcej informacji, zobacz [Definiowanie warunki końcowe i warunków wstępnych](#Postcondition).
+
+### <a name="Subactivities"></a>Opisywanie działań podrzędnych z akcjami zachowania wywołania
+ Można opisać szczegółowe zachowanie akcji przy użyciu oddzielnego diagramu aktywności. Zachowanie wywoływane to diagram aktywności, który jest reprezentowany na głównym diagramie aktywności przez akcję zachowania wywołania. Za pomocą akcji zachowanie wywołania można także opisać zachowanie, które jest współużytkowane przez różne działania, aby nie trzeba było wielokrotnie rysować działania podrzędne.
+
+ Na poniższej ilustracji wykres 1 pokazuje działanie, które ma akcję zachowanie wywołania i diagram 2 przedstawia Diagram działania podrzędnego, który pokazuje wywoływane zachowanie.
+
+ ![Oddzielny diagram aktywności przedstawia szczegółowe akcje](../modeling/media/uml-actguidedetail.png "UML_ActGuideDetail")
+
+##### <a name="to-describe-a-sub-activity-with-a-call-behavior-action"></a>Aby opisać działanie podrzędne z akcją zachowania wywołania
+
+1. Aby utworzyć diagram dla działania podrzędnego, w **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt modelowania, wskaż polecenie **Dodaj**, a następnie kliknij pozycję **nowy element**.
+
+2. W oknie dialogowym **Dodaj nowy element** w obszarze **Szablony** kliknij pozycję **Diagram aktywności** , a następnie w polu **Nazwa** wpisz nazwę, która ma zostać przystosowana do **akcji zachowania wywoływania**.
+
+3. Narysuj szczegółowy przepływ pracy dla działania podrzędnego. Jest to wywołane zachowanie.
+
+    - W przypadku wywoływanego diagramu poddziałania **początkowy węzeł** wskazuje, gdzie formant jest uruchamiany w momencie wywołania wywoływanego zachowania. **Końcowy węzeł działania** pokazuje, gdzie formant powinien powrócić do działania nadrzędnego.
+
+4. Ustaw właściwość **Behavior** **akcji zachowanie wywołania** , aby odwoływać się do diagramu zachowań wywoływanych.
+
     > [!NOTE]
-    > Diagram aktywności podrzędne muszą mieć niektóre elementy na nim lub diagram nie będą dostępne na liście rozwijanej **zachowanie** właściwości. Ponadto trident ikony nie będą wyświetlane na Twojej **wywołanie zachowanie** kształtu, dopóki nie zostanie ustawiony jego **zachowanie** właściwości.  
-  
-5. Ustaw **jest synchroniczne** właściwość akcji, aby wskazać, czy Twoje działanie ma oczekiwać na zakończenie działania o nazwie.  
-  
-    - Jeśli ustawisz **jest synchroniczne** na wartość false, wskazujesz, że przepływ może w dalszym następnej akcji przed zakończeniem działania o nazwie. Dane wyjściowe nie powinna definiować numerów PIN lub dane wychodzące przepływy z akcji.  
-  
-### <a name="describing-data-flow-in-and-out-of-sub-activities"></a>Opisujący przepływ danych i działania podrzędne  
- Możesz opisać dane przepływające pojęcie działania podrzędne w taki sam sposób, jak używać parametrów w oprogramowaniu.  
-  
-- Tworzenie wejściowych i wyjściowych kody PIN (1) w przypadku akcji o nazwie zachowanie, dla każdego z nich dane, które przechodzą do lub z akcji. Nazwa każdego z nich odpowiednio.  
-  
-- Na diagramie aktywności podrzędnych, należy utworzyć **węzła parametru działania** (2) dla każdego wejściowe i wyjściowe numeru pin w przypadku wywoływania akcji. Nadaj każdy węzeł taką samą nazwę jak odpowiedni numer pin.  
-  
+    > Diagram działania podrzędnego musi mieć pewne elementy lub diagram nie będzie dostępny na liście rozwijanej dla właściwości **zachowanie** . Ponadto ikona Trident nie będzie widoczna dla kształtu **akcji zachowanie wywołania** , dopóki nie ustawisz jego właściwości **Behavior** .
+
+5. Ustaw właściwość **jest synchroniczna** akcji, aby wskazać, czy działanie czeka na zakończenie wywołanego działania.
+
+    - Jeśli ustawisz wartość **synchroniczną** na false, wskazujesz, że przepływ może przejść do następnej akcji przed ukończeniem wywoływanego działania. Nie należy definiować pinów wyjściowych ani wychodzących przepływów danych z akcji.
+
+### <a name="describing-data-flow-in-and-out-of-sub-activities"></a>Opisywanie przepływu danych w i poza działaniami podrzędnymi
+ Można opisać dane przepływające do i z działań podrzędnych w taki sam sposób jak w przypadku używania parametrów w oprogramowaniu.
+
+- Utwórz pinezki wejściowe i wyjściowe (1) dla wywoływanej akcji zachowań dla każdego elementu danych, który przechodzi do lub z akcji. Odpowiednio Nazwij każdy z nich.
+
+- W diagramie działania podrzędnego Utwórz **węzeł parametru działania** (2) dla każdego wejściowego i wyjściowego numeru PIN w akcji wywołującej. Nadaj każdemu węzłowi taką samą nazwę jak odpowiedni kod PIN.
+
   > [!NOTE]
-  > Węzeł parametru działania przypomina węzeł obiektu. Aby sprawdzić, jakiego rodzaju węzeł, który jest wyświetlany, kliknij prawym przyciskiem myszy węzeł, a następnie kliknij przycisk **właściwości**. Typ węzła jest wyświetlany w nagłówku w oknie właściwości.  
-  
-- Na diagramie aktywności podrzędnych narysuj łączników, które pokazują przepływ obiektów do i z każdego węzła parametru działania.  
-  
-  ![Przypina zachowanie wywołań na mapie w celu parametry działań](../modeling/media/uml-actguidesub.png "UML_ActGuideSub")  
-  
-### <a name="Postcondition"></a> Definiowanie warunków końcowych i warunków wstępnych  
- Możesz użyć **lokalnych warunków końcowych** i **lokalnego warunki wstępne** właściwości, aby określić szczegóły wyniku akcji. Te właściwości opisują efekt działania bez opisujące, jak to osiągnąć efekt.  
-  
- Aby ustawić te właściwości, kliknij ją prawym przyciskiem myszy, a następnie kliknij przycisk **właściwości**. Wpisz wartości do właściwości w oknie dialogowym właściwości.  
-  
-#### <a name="local-postconditions"></a>Lokalne warunków końcowych  
- Postcondition jest warunek, który powinien być spełnione, zanim akcja jest uznawana za ukończone. Przykład akcji Potwierdź zamówienia może być postcondition:  
-  
- Klient udostępnił kompletny i ważne szczegółowe informacje, które są wymagane do przetwarzania jej karty kredytowej.  
-  
- Postcondition można wyrazić relację między stanami, przed i po przeprowadzeniu akcji. Na przykład:  
-  
- Oprocentowanie jest double sprzed.  
-  
- Styl formalnej, można napisać warunków końcowych odwołujące się do określonych atrybutów danych omówione w akcjach. Przykład:  
-  
- `InvoiceTotal == Sum(OrderItem.MenuItem.Price)`  
-  
-#### <a name="local-preconditions"></a>Warunki wstępne lokalne  
- Warunkiem wstępnym jest warunek, który musi mieć wartość true, gdy akcja jest gotowy do rozpoczęcia. Na przykład akcja potwierdzenia zamówienia może mieć warunki wstępne:  
-  
- Klient wybierze co najmniej jeden element menu.  
-  
-### <a name="describing-calls-to-operations"></a>Opisujące wywołania operacji  
- Ogólnie rzecz biorąc Akcja opis pracy wykonywanej przez dowolnej kombinacji osób, oprogramowania lub maszyn. Jednak można użyć do wywołania operacji akcji do opisania wywołanie metody określone oprogramowanie lub funkcji.  
-  
-- Ustaw nazwę akcji operacji wywołania do wskazania, jakie działania jest nazywany i jakie obiektu lub składnika.  
-  
-- Dodaj PinY wejściowe i wyjściowe do wywołania operacji akcji do opisywania parametry i zwracane wartości.  
-  
-- Możesz ustawić **jest synchroniczne** właściwość akcji, aby wskazać, czy Twoje działanie ma oczekiwać na zakończenie operacji.  
-  
-  - Jeśli ustawisz **jest synchroniczne** na wartość false, wskazujesz, że przepływ może w dalszym następnej akcji przed ukończeniem operacji o nazwie. Dane wyjściowe nie powinna definiować numerów PIN lub dane wychodzące przepływy z akcji.  
-  
-## <a name="Concurrent"></a> Przepływy współbieżne  
- Możesz użyć **węzła rozwidlenia** i **dołączyć węzła** do opisania dwa lub więcej wątków działań, które mogą być wykonywane w tym samym czasie.  
-  
- ![Węzły rozwidlenia i sprzężenia Pokaż przepływy współbieżne](../modeling/media/uml-actguideconcurrent.png "UML_ActGuideConcurrent")  
-  
- Efekt **węzła rozwidlenia** (1) jest podzielić wątku kontroli na dwa lub więcej wątków. Po zakończeniu poprzedniej akcji, można uruchomić wszystkie akcje po stronie dane wyjściowe rozwidlenia.  
-  
- A **dołączyć węzła** (2) gromadzi współbieżnych wątków. Akcję po **dołączyć węzła** może rozpocząć się do wszystkich akcji, co prowadzi do **dołączyć węzła** są kompletne.  
-  
-### <a name="describing-signals-and-events"></a>Opisujące sygnały i zdarzenia  
- Możesz wyświetlić krok w procesie, który wysyła sygnał jako akcję wysyłania sygnału w działaniu. Możesz wyświetlić kroku, który oczekuje dla określonego sygnału lub zdarzeń, aby kontynuować ten krok jako Zaakceptuj akcję zdarzenia.  
-  
- Na przykład możesz wyświetlać kroku, który wysyła zamówienia, a następnie kolejny krok, który musi odebrać kolejności, zanim przetworzy on tej kolejności.  
-  
-#### <a name="sending-a-signal"></a>Wysyła sygnał  
- Użyj Wyślij akcji sygnałów (3), aby wskazać, sygnału lub komunikat pewnego rodzaju są wysyłane do innych działań lub procesów. Nazwa akcji umożliwia wskazanie, jaki rodzaj komunikat o wysyła.  
-  
-- Kontrola przechodzi bezpośrednio do następnego działania w przepływie sterowania jeśli taka istnieje.  
-  
-- Wysyłać sygnał akcji nie można użyć do opisywania sposobu proces na wszystkie zwrócone informacje. Aby to zrobić, należy użyć oddzielnych Zaakceptuj akcję zdarzenia.  
-  
-- Możesz wyświetlić przychodzący przepływ danych do wysyłania sygnału akcji, aby wskazać, jakie dane mogą być wysyłane z komunikatu wychodzącego. Aby uzyskać więcej informacji, zobacz [opisujący przepływ danych](#DataFlows).  
-  
-#### <a name="waiting-for-a-signal-or-event"></a>Oczekuje na sygnał lub zdarzenie  
- Zaakceptuj akcję zdarzenia (4) umożliwia wskazanie, że to działanie czeka, aż niektóre zdarzenia zewnętrznego lub komunikatu przychodzącego. Użyj nazwy akcji, aby wskazać typ zdarzenia, które oczekuje na.  
-  
-- Aby pokazać, że działania czeka na zdarzenie zewnętrzne lub komunikatów w określonym punkcie w jego przepływu, narysuj Zaakceptuj akcję zdarzenia z przychodzący przepływ w odpowiednim miejscu w ramach działania.  
-  
-- Aby pokazać, że swoje działania mogą odpowiadać na zdarzenie zewnętrzne lub wiadomości w dowolnym momencie, narysuj Zaakceptuj akcję zdarzenia bez żadnych przepływów przychodzących. W przypadku nazwanych zewnętrznego zdarzenia nowy wątek rozpocznie się w swojej działalności, zaczynając od Zaakceptuj akcję zdarzenia.  
-  
-- Zaakceptuj akcję zdarzenia nie można użyć do opisania każda wartość zwracana przez nadawcę sygnału. Użyj osobnej akcji wysyłać sygnał do tego celu.  
-  
-- Możesz wyświetlić wychodzące przepływy danych od akcji, aby pokazać, w jaki sposób działania przetwarza dane odebrane w sygnale. Jeśli chcesz wyświetlić więcej niż jeden przepływ danych wyjściowych, należy ustawić **IsUnmarshall** właściwość Zaakceptuj akcję zdarzenia, co oznacza akcję analizowania przychodzących sygnałów na jego osobne składniki. Aby uzyskać więcej informacji, zobacz [opisujący przepływ danych](#DataFlows).  
-  
-### <a name="describing-multiple-data-flows"></a>Opisu danych wiele przepływów  
- Możesz narysować więcej niż jeden przepływ sterowania lub przepływ obiektu pochodzącemu z akcji, aby wskazać, że więcej niż jeden wątek wynika, po zakończeniu działania. Efekt jest podobny, rozwidlenia, z tą różnicą, że możesz użyć kombinacji przepływów sterowania i obiektu.  
-  
- Poniższy przykład przedstawia wiele przepływów z i do działań.  
-  
- ![Równoległe przepływy obiektów](../modeling/media/uml-actguidemulti.png "UML_ActGuideMulti")  
-  
- Po ukończeniu akcji "Klienta zawiera szczegółowe informacje" tworzy dwa obiekty: "Wydanie address" i "Szczegóły karty kredytowej." Dwa obiekty przejść do przodu do przetworzenia przez różne akcje.  
-  
- Ponieważ akcji wymaga wszystkie jego danych wejściowych była dostępna, zanim będzie można ją uruchamiać, ostatnia akcja nie można uruchomić dopiero po zakończeniu wszystkich akcji, które mogą prowadzić do niego.  
-  
-### <a name="streams"></a>Strumienie  
- Diagram aktywności można użyć opisu potoku lub szereg działań, które są wykonywane w tym samym czasie i stale przekazywania danych z jednej akcji do innego.  
-  
- W poniższym przykładzie jest aby każda akcja generują obiektów i kontynuować pracę. Ponieważ nie zawiera żadnych przepływów sterowania, każdej akcji można uruchomić zaraz po odebraniu jej pierwszym obiektów.  
-  
- Zauważ, że łączników w tym przykładzie są przepływach obiektu, ponieważ wszystkie one mają co najmniej jeden z punktów końcowych w węźle parametru działania, węzeł obiektu lub dla danych wejściowych lub numeru Pin w danych wyjściowych.  
-  
- ![Przepływ danych](../modeling/media/uml-actguidestream.png "UML_ActGuideStream")  
-  
- 1. W przykładzie przedstawiono trzy węzły parametru działania, które reprezentują ich dane wejściowe i wyjściowe.  
-  
- 2. Węzły obiektów, pinów wejścia i wyjścia może reprezentować buforów. Możesz ustawić górną granicę właściwość węzeł obiektu do stanu obiektów ile może być w buforze, w tym samym czasie.  
-  
- 3. Węzły decyzji można użyć, aby pokazać, że dzieli strumienia, wysyłania różnych obiektów rozgałęzienia innej. Aby wyjaśnić, dzieląc kryterium jest, można użyć komentarze lub tytuły węzłów.  
-  
- 4. Można używać rozwidlenia węzłów, aby pokazać, czy dwie lub więcej kopii, obiekty zostaną wprowadzone, wysyłając na równoczesne przetwarzanie.  
-  
- 5. Można używać łączenia węzłów, aby pokazać, że dwa strumienie przetwarzania są scalane z powrotem jeden.  
-  
-### <a name="selection-and-transformation"></a>Wybór i przekształcenia  
- Można określić, że obiekty w przepływie obiektu są przekształcane, zaznaczone, lub obu. Przepływ obiektu jest przepływu z numeru pin lub węzeł obiektu.  
-  
-- Przekształcenia w tym artykule opisano sposób konwertowania obiektów, wprowadzając przepływ do innego typu.  
-  
-- Wybór w tym artykule opisano sposób tylko niektóre obiekty, wprowadzając przepływ są przekazywane do odbierania akcji.  
-  
-  W przykładzie pokazano przekształcenie. Pierwszą akcją w diagramie 1 generuje kod pocztowy lub kod pocztowy numeru pin w danych wyjściowych. To jest podłączony do wprowadzania numeru pin w drugiej akcji. A w przypadku drugiej akcji adresu pełni określona. Konwersja z jednego typu na inny jest określona w drugie działanie wyszukiwania na podstawie adresu. To jest wywoływany przez właściwość przekształcania przepływu obiektu. Działanie wyszukiwania na podstawie adresu zawiera jeden węzeł parametru aktywności dla przychodzących kodu pocztowego i wychodzących pełny adres innego węzła parametru działania.  
-  
-  ![Obiekt transformacji zdefiniowanych w innym diagramie](../modeling/media/uml-actguidetransform.png "UML_ActGuideTransform")  
-  
-  Przekształcenia lub wyboru można określić na dwa sposoby:  
-  
-- Dołącz komentarz do kodu pin wejściowych lub wyjściowych.  
-  
-  - Aby rozróżnić tego opisu, od ogólnego komentarza, można rozpocząć komentarz z <\<**przekształcania**>> lub <\<**wybór**>>.  
-  
-- Szczegółowo w diagramie aktywności na oddzielne, należy określić przekształcania lub zaznaczenia.  
-  
-  - Użycie tej metody, należy również dołączyć komentarz do ułatwiają Wyczyść, aby czytelnicy zdefiniowano transformacji.  
-  
-##### <a name="to-specify-a-transformation-or-selection-in-a-separate-activity-diagram"></a>Aby określić przekształcania lub zaznaczenia w diagramie aktywności na oddzielne  
-  
-1. Utwórz nowy Diagram aktywności, w którym opisuje przepływ przekształcenia lub zaznaczenia.  
-  
-   - W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt, wskaż **Dodaj**, kliknij przycisk **nowy element**, a następnie kliknij przycisk **Diagram aktywności**. Nadaj diagramu odpowiednią nazwę przepływu przekształcania lub zaznaczenia. Kliknij przycisk **Dodaj**.  
-  
-2. Na nowym diagramie:  
-  
-   1. Utwórz dwa węzły parametru działania: jeden dla danych wejściowych przepływu i jeden dla danych wyjściowych.  
-  
-   2. Tworzenie akcji, połączone ze sobą przy użyciu obiektu przepływów. Pokazuje, jak działa transformacja lub zaznaczenia.  
-  
-3. W dowolny diagram, w której chcesz używać przekształcania lub zaznaczenie:  
-  
-   1. Utwórz przepływ obiektu, oznacza to, że łącznik do lub z danych wejściowych lub numeru pin w danych wyjściowych, węzeł obiektu lub węzłem parametru działania.  
-  
-   2. Kliknij prawym przyciskiem myszy obiekt przepływu, a następnie kliknij przycisk **właściwości**.  
-  
-   3. W **przekształcania** lub **wybór** właściwości, wybierz diagram, gdzie określone Przepływ przekształcenia lub zaznaczenia.  
-  
-   Można również zdefiniować wybór dla węzła obiektu, a także na poszczególne dane wejściowe i dane wyjściowe numerów PIN. Zdefiniuj działania zaznaczenia, tak jak w poprzedniej procedurze, a następnie ustaw **wybór** właściwość węzeł obiektu lub danych wejściowych lub wyjściowych numer pin.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Edytowanie modeli i diagramów UML](../modeling/edit-uml-models-and-diagrams.md)   
- [Diagramy sekwencji UML: Odwołanie](../modeling/uml-sequence-diagrams-reference.md)   
- [Diagramy składników UML: Odwołanie](../modeling/uml-component-diagrams-reference.md)   
- [Diagramy przypadków użycia UML: Odwołanie](../modeling/uml-use-case-diagrams-reference.md)   
- [Diagramy klas UML: Odwołanie](../modeling/uml-class-diagrams-reference.md)   
- [Diagramy składników UML: Odwołanie](../modeling/uml-component-diagrams-reference.md)   
- [Wideo: Przechwytywanie biznesowe przepływy pracy za pomocą diagramów aktywności](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-4-Capture-Business-Workflows/)
+  > Węzeł parametru działania przypomina węzeł obiektu. Aby sprawdzić typ szukanego węzła, kliknij prawym przyciskiem myszy węzeł, a następnie kliknij polecenie **Właściwości**. Typ węzła jest wyświetlany w nagłówku okno Właściwości.
+
+- W diagramie działania podrzędnego należy narysować łączniki pokazujące przepływ obiektów do lub z każdego węzła parametru działania.
+
+  ![Pinezki na mapie zachowań wywołań do parametrów działania](../modeling/media/uml-actguidesub.png "UML_ActGuideSub")
+
+### <a name="Postcondition"></a>Definiowanie warunki końcowe i warunków wstępnych
+ Aby określić szczegółowo wynik akcji, można użyć **lokalnych właściwości warunki końcowe** i **lokalnych warunków** wstępnych. Te właściwości opisują efekt działania bez opisu sposobu osiągnięcia efektu.
+
+ Aby ustawić te właściwości, kliknij prawym przyciskiem myszy akcję, a następnie kliknij pozycję **Właściwości**. Wpisz wartości we właściwościach w okno Właściwości.
+
+#### <a name="local-postconditions"></a>Warunki końcowe lokalny
+ Błąd warunku końcowego to warunek, który powinien zostać spełniony, zanim będzie można uznać akcję za ukończoną. W przykładowym potwierdzeniu akcji błąd warunku końcowego może być:
+
+ Klient dostarczył pełne i ważne szczegóły, które są wymagane do przetworzenia karty kredytowej.
+
+ Błąd warunku końcowego może wyrazić relację między Stanami przed i po wykonaniu akcji. Na przykład:
+
+ Stawka odsetek jest podwójnie zawarto.
+
+ Można napisać warunki końcowe w bardziej formalnym stylu, odwołując się do określonych atrybutów danych objętych działaniami. Na przykład:
+
+ `InvoiceTotal == Sum(OrderItem.MenuItem.Price)`
+
+#### <a name="local-preconditions"></a>Lokalne warunki wstępne
+ Warunek wstępny to warunek, który powinien być prawdziwy, gdy akcja jest gotowa do rozpoczęcia. Na przykład akcja Potwierdź zamówienie może mieć warunek wstępny:
+
+ Klient wybrał co najmniej jeden element z menu.
+
+### <a name="describing-calls-to-operations"></a>Opisywanie wywołań operacji
+ Ogólnie rzecz biorąc, Akcja opisuje prace wykonywane przez dowolną kombinację osób, oprogramowania lub maszyn. Można jednak użyć akcji operacji wywołania do opisania wywołania określonej metody lub funkcji oprogramowania.
+
+- Ustaw nazwę akcji operacji wywołania, aby określić, jaka operacja jest wywoływana, oraz na jakie obiekty lub składniki.
+
+- Dodaj numery PIN wejścia i wyjścia do akcji wywołania operacji, aby opisać parametry i wartości zwracane.
+
+- Można ustawić właściwość **synchroniczną** akcji, aby wskazać, czy działanie czeka na ukończenie operacji.
+
+  - Jeśli ustawisz opcję **synchroniczne** na false, wskazujesz, że przepływ może przejść do następnej akcji przed ukończeniem wywołanej operacji. Nie należy definiować pinów wyjściowych ani wychodzących przepływów danych z akcji.
+
+## <a name="Concurrent"></a>Współbieżne przepływy
+ Za pomocą **węzła rozwidlenia** i **węzła Join** można opisać dwa lub więcej wątków działań, które mogą być wykonywane w tym samym czasie.
+
+ ![Węzły rozwidlenia i sprzęgania pokazują współbieżne przepływy](../modeling/media/uml-actguideconcurrent.png "UML_ActGuideConcurrent")
+
+ Efekt **węzła rozwidlenia** (1) polega na podzieleniu wątku kontroli na dwa lub więcej wątków. Po zakończeniu poprzedniej akcji można uruchomić wszystkie akcje na stronie wyjście rozwidlenia.
+
+ **Węzeł sprzężenia** (2) udostępnia współbieżne wątki. Akcja po **węźle sprzężenia** nie może się rozpocząć, dopóki nie zostaną zakończone wszystkie akcje prowadzące do **węzła Join** .
+
+### <a name="describing-signals-and-events"></a>Opisywanie sygnałów i zdarzeń
+ Możesz wyświetlić krok w procesie, który wysyła sygnał jako akcję wysłania sygnału w działaniu. Możesz wyświetlić krok czekający na konkretny sygnał lub zdarzenie, zanim krok będzie mógł kontynuować działanie jako akcję akceptowania zdarzenia.
+
+ Można na przykład wyświetlić krok, który wysyła zamówienie, a następnie inny krok, który musi otrzymać zamówienie, przed jego przetworzeniem.
+
+#### <a name="sending-a-signal"></a>Wysyłanie sygnału
+ Użyj akcji wysyłania sygnału (3), aby wskazać, że sygnał lub komunikat pewnego rodzaju są wysyłane do innych działań lub procesów. Użyj nazwy akcji, aby określić rodzaj wysyłanego komunikatu.
+
+- Kontrolka natychmiast przejdzie do następnej akcji w przepływie sterowania, jeśli istnieje.
+
+- Nie można użyć akcji wysyłania sygnału, aby opisać, w jaki sposób proces reaguje na wszelkie zwrócone informacje. W tym celu należy użyć oddzielnej akcji Zaakceptuj zdarzenie.
+
+- Możesz pokazać przepływ danych przychodzących do akcji wysyłania sygnału, aby wskazać, jakie dane mogą być wysyłane przy użyciu wiadomości wychodzącej. Aby uzyskać więcej informacji, zobacz [opisywanie przepływu danych](#DataFlows).
+
+#### <a name="waiting-for-a-signal-or-event"></a>Oczekiwanie na sygnał lub zdarzenie
+ Użyj akcji Akceptuj zdarzenie (4), aby wskazać, że to działanie oczekuje na niektóre zdarzenie zewnętrzne lub komunikat przychodzący. Użyj nazwy akcji, aby wskazać typ zdarzenia, które ma oczekiwać.
+
+- Aby pokazać, że działanie czeka na zdarzenie zewnętrzne lub komunikat w określonym punkcie w przepływie, należy narysować akcję Akceptuj zdarzenie z przepływem przychodzącym w odpowiednim miejscu w działaniu.
+
+- Aby pokazać, że działanie może reagować na zdarzenie zewnętrzne lub komunikat w dowolnym momencie, należy narysować akcję Zaakceptuj zdarzenie bez żadnego przepływu przychodzącego. Gdy wystąpi nazwane zdarzenie zewnętrzne, nowy wątek rozpocznie się w Twoim działaniu, rozpoczynając od akcji Zaakceptuj zdarzenie.
+
+- Nie można użyć akcji akceptowania zdarzenia do opisywania wartości zwracanej do nadawcy sygnału. Użyj oddzielnej akcji wysyłania sygnału do tego celu.
+
+- Można wyświetlić wychodzące przepływy danych z akcji, aby pokazać, jak działanie przetwarza dane odbierane w tym sygnale. Aby wyświetlić więcej niż jeden przepływ wyjściowy, należy ustawić właściwość **IsUnmarshall** akcji Akceptuj zdarzenie, która wskazuje, że akcja analizuje sygnał przychodzący w oddzielnych składnikach. Aby uzyskać więcej informacji, zobacz [opisywanie przepływu danych](#DataFlows).
+
+### <a name="describing-multiple-data-flows"></a>Opisywanie wielu przepływów danych
+ Można narysować więcej niż jeden przepływ sterowania lub przepływ obiektów, które wychodzą z akcji, aby wskazać, że po zakończeniu akcji zostanie przeprowadzone więcej niż jeden wątek. Efekt jest podobny do rozwidlenia, z tą różnicą, że można użyć kombinacji przepływów sterowania i obiektów.
+
+ Poniższy przykład pokazuje wiele przepływów z i do akcji.
+
+ ![Równoległe przepływy obiektów](../modeling/media/uml-actguidemulti.png "UML_ActGuideMulti")
+
+ Gdy akcja "Klient zawiera szczegóły" zostanie ukończona, generowane są dwa obiekty: "adres wysyłkowy" i "szczegóły karty kredytowej". Dwa obiekty przechodzą do przodu w celu przetworzenia przez różne akcje.
+
+ Ponieważ akcja wymaga, aby wszystkie dane wejściowe były dostępne przed rozpoczęciem, Ostatnia akcja nie zostanie uruchomiona, dopóki nie zostaną ukończone wszystkie akcje prowadzące do niej.
+
+### <a name="streams"></a>Strumienie
+ Możesz użyć diagramu aktywności, aby pomóc opisać potok lub serię akcji wykonywanych w tym samym czasie, i ciągle przekazywać dane z jednej akcji do innej.
+
+ Zamierzenie w poniższym przykładzie polega na tym, że poszczególne akcje mogą generować obiekty i kontynuować pracę. Ponieważ nie ma przepływów sterowania, każda akcja może zacząć się zaraz po odebraniu jej pierwszych obiektów.
+
+ Należy zauważyć, że łączniki w tym przykładzie są przepływami obiektów, ponieważ wszystkie mają co najmniej jeden koniec w węźle parametru działania, w węźle obiektu lub w numerze PIN danych wejściowych lub wyjściowych.
+
+ ![Przepływ danych](../modeling/media/uml-actguidestream.png "UML_ActGuideStream")
+
+ 1. Przykład ma trzy węzły parametrów działania, które reprezentują dane wejściowe i wyjściowe.
+
+ 2. Węzły obiektów, numery PIN wejściowe i numery PIN wyjściowe mogą reprezentować bufory. Można ustawić górną granicę właściwości węzła obiektu, aby określić, ile obiektów może znajdować się w buforze w tym samym czasie.
+
+ 3. Można użyć węzłów decyzyjnych, aby pokazać, że strumień jest podzielony, wysyłając różne obiekty w dół w różnych gałęziach. Możesz użyć komentarzy lub tytułów węzłów, aby wyjaśnić, co to jest kryterium dzielenia.
+
+ 4. Można użyć węzłów rozwidlenia, aby pokazać, że co najmniej dwie kopie obiektów są wykonywane, wysyłając je do współbieżnego przetwarzania.
+
+ 5. Można użyć węzłów sprzężenia, aby pokazać, że dwa strumienie przetwarzania są scalane z powrotem w jeden.
+
+### <a name="selection-and-transformation"></a>Wybór i transformacja
+ Można określić, że obiekty w przepływie obiektów są przekształcane, wybierane lub oba. Przepływ obiektów jest przepływem do lub z kodu PIN lub z węzła obiektu.
+
+- Przekształcenie opisuje sposób, w jaki obiekty wchodzące w przepływ są konwertowane na inny typ.
+
+- Wybór opisuje, w jaki sposób tylko niektóre obiekty wchodzące w skład przepływu są przesyłane do akcji przejmującej.
+
+  W przykładzie pokazano przekształcenie. Pierwsza akcja na diagramie 1 generuje kod pocztowy lub kod pocztowy w wyjściowym numerze PIN. Jest to połączenie z wejściowym numerem PIN dla drugiej akcji. Natomiast druga akcja oczekuje w pełni określonego adresu. Konwersja z jednego typu na inny jest określona w drugim działaniu, wyszukiwanie adresu. Jest to przywoływane z właściwości przekształcenia przepływu obiektów. Działanie wyszukiwania adresów zawiera jeden węzeł parametru działania dla przychodzącego kodu pocztowego oraz inny węzeł parametru działania dla wychodzącego pełnego adresu.
+
+  ![Transformacja obiektu zdefiniowana w innym diagramie](../modeling/media/uml-actguidetransform.png "UML_ActGuideTransform")
+
+  Można określić przekształcenie lub wybór na dwa sposoby:
+
+- Dołącz komentarz do wejściowego lub wyjściowego numeru PIN.
+
+  - Aby odróżnić ten opis od komentarza ogólnego, można rozpocząć dodawanie komentarza \<**transformacji**> > lub **< \< <** >.
+
+- Określ szczegóły transformacji lub wyboru w oddzielnym diagramie aktywności.
+
+  - Jeśli używasz tej metody, Dołącz komentarz również, aby był oczywisty dla czytelników, że transformacja została zdefiniowana.
+
+##### <a name="to-specify-a-transformation-or-selection-in-a-separate-activity-diagram"></a>Aby określić przekształcenie lub zaznaczenie na osobnym diagramie aktywności
+
+1. Utwórz nowy Diagram działania, w którym ma zostać opisany przepływ transformacji lub wyboru.
+
+   - W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt, wskaż polecenie **Dodaj**, kliknij pozycję **nowy element**, a następnie kliknij pozycję **Diagram aktywności**. Nadaj diagramowi odpowiednią nazwę dla przepływu transformacji lub zaznaczenia. Kliknij przycisk **Dodaj**.
+
+2. Na nowym diagramie:
+
+   1. Utwórz dwa węzły parametrów działania, jeden dla przepływu wejściowego i jeden dla danych wyjściowych.
+
+   2. Twórz akcje połączone z przepływami obiektów. Pokazuje, jak działa transformacja lub zaznaczenie.
+
+3. Na dowolnym diagramie, w którym chcesz użyć przekształcenia lub zaznaczenia:
+
+   1. Utwórz przepływ obiektów, czyli łącznik do lub z Pinu wejściowego lub wyjściowego, węzeł obiektu lub węzeł parametru działania.
+
+   2. Kliknij prawym przyciskiem myszy przepływ obiektów, a następnie kliknij polecenie **Właściwości**.
+
+   3. We właściwości **przekształcanie** lub **wybór** Wybierz diagram, w którym został określony przepływ przekształcania lub zaznaczania.
+
+   Można również zdefiniować wybór dla węzła obiektu i dla poszczególnych pinów wejściowych i wyjściowych. Zdefiniuj działanie wyboru jako w poprzedniej procedurze, a następnie ustaw właściwość **zaznaczania** węzła obiektu lub wejściowy lub wyjściowy numer PIN.
+
+## <a name="see-also"></a>Zobacz też
+ [Edycja modeli UML i diagramów](../modeling/edit-uml-models-and-diagrams.md) [diagramów sekwencji UML: referencyjne](../modeling/uml-sequence-diagrams-reference.md) [diagramy składników UML](../modeling/uml-component-diagrams-reference.md) : referencyjne diagramy [przypadków użycia UML](../modeling/uml-use-case-diagrams-reference.md) : referencyjne diagramy [klas UML](../modeling/uml-class-diagrams-reference.md) : referencyjne [diagramy składników UML: odwołanie](../modeling/uml-component-diagrams-reference.md) [ Wideo: Przechwyć biznesowe przepływy pracy za pomocą diagramów aktywności](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-4-Capture-Business-Workflows/)

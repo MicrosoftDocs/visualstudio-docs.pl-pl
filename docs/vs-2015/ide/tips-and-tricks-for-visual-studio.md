@@ -1,34 +1,34 @@
 ---
-title: Porady i wskazówki | Dokumentacja firmy Microsoft
+title: Porady i wskazówki | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: 20489db9-7441-4f8b-97de-c72070d569b1
 caps.latest.revision: 14
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5358c7e001a993c637cc4ac2dc267a668a7d6e13
-ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
+ms.openlocfilehash: d17a053a5620996f3462e2c79e0b68bd374adccd
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68740124"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654835"
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Visual Studio — Porady i wskazówki
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Możesz się przemieszczać w programie Visual Studio łatwiej za pomocą skrótów klawiaturowych w tym temacie. Aby uzyskać więcej informacji, zobacz [skróty klawiaturowe w programie Visual Studio](default-keyboard-shortcuts-in-visual-studio.md). Aby uzyskać informacji na temat optymalizowania programu Visual Studio dla ułatwień dostępu, zobacz [i porady dotyczące ułatwień dostępu](../ide/reference/accessibility-tips-and-tricks.md).
+Łatwiejsze nawigowanie w programie Visual Studio za pomocą skrótów w tym temacie. Aby uzyskać więcej ogólnych informacji, zobacz [skróty klawiaturowe w programie Visual Studio](default-keyboard-shortcuts-in-visual-studio.md). Aby uzyskać informacje o sposobach optymalizacji programu Visual Studio pod kątem ułatwień dostępu, zobacz [porady i wskazówki dotyczące ułatwień dostępu](../ide/reference/accessibility-tips-and-tricks.md).
 
 - [Zarządzanie oknem](../ide/tips-and-tricks-for-visual-studio.md#BKMK_WindowMgmt)
 
 - [Skróty okna](../ide/tips-and-tricks-for-visual-studio.md#BKMK_WindowShortcuts)
 
-- [Wyszukiwania usługi Visual Studio](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Search)
+- [Wyszukiwanie w programie Visual Studio](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Search)
 
-- [Znajdowanie w edytorze](../ide/tips-and-tricks-for-visual-studio.md#BKMK_EditorFind)
+- [Znajdź Edytor](../ide/tips-and-tricks-for-visual-studio.md#BKMK_EditorFind)
 
 - [Edytor kodu](../ide/tips-and-tricks-for-visual-studio.md#BKMK_CodeEditor)
 
@@ -38,85 +38,85 @@ Możesz się przemieszczać w programie Visual Studio łatwiej za pomocą skrót
 
 - [Zarządzanie cyklem życia aplikacji](../ide/tips-and-tricks-for-visual-studio.md#BKMK_ALM)
 
-## <a name="BKMK_WindowMgmt"></a> Zarządzanie oknem
+## <a name="BKMK_WindowMgmt"></a>Zarządzanie oknem
 
 |||
 |-|-|
-|Przeciągnij odciąganie przestawnych|CTRL + kliknięcie dla wyboru wielokrotnego|
+|Przeciągnij poza przestawne studzienki kart|Naciśnij klawisz Ctrl i kliknij, aby wybrać wybór wieloznaczny|
 |Maksymalizuj okno przestawne|Kliknij dwukrotnie pasek tytułu|
-|Przenieś okna przestawne|Ctrl + dwukrotne kliknięcie paska tytułu|
-|Zamknij dokument aktywny|Ctrl+F4|
-|Pokazywanie listy otwartych plików|Ctrl+Alt+Down|
-|Pokaż wszystkie Windows liczb zmiennoprzecinkowych|Ctrl+Shift+M|
+|Przedokuj okno przestawne|Ctrl + dwukrotne kliknięcie paska tytułu|
+|Zamknij aktywny dokument|Ctrl+F4|
+|Pokaż listę otwartych plików|Ctrl + Alt + Strzałka w dół|
+|Pokaż wszystkie okna przestawne|Ctrl+Shift+M|
 
-## <a name="BKMK_WindowShortcuts"></a> Skróty okna
-
-|||
-|-|-|
-|Przenieś/Dock liczb zmiennoprzecinkowych Windows|Win + Strzałka w lewo / Win + Strzałka w prawo|
-|Maksymalizuj/Minimalizuj Windows|Win + Strzałka w górę / Win + Strzałka w dół|
-|Pokazywanie listy szybkiego dostępu|Win+Alt+n|
-|Uruchom nowe wystąpienie|Win+Shift+n|
-|Przełączanie między Windows|Win+n|
-
-## <a name="BKMK_Search"></a> Wyszukiwania usługi Visual Studio
+## <a name="BKMK_WindowShortcuts"></a>Skróty okna
 
 |||
 |-|-|
-|Wyszukaj w Eksploratorze rozwiązań|Ctrl+;|
-|Umieść fokus w polu wyszukiwania w dowolnym oknie Narzędzie|ALT +' kiedy okno narzędzia ma fokus|
+|Przenoszenie/Dokowanie okien przestawnych|Win + w lewo/win + Strzałka w prawo|
+|Maksymalizuj/Minimalizuj okna|Win + up/win + Strzałka w dół|
+|Pokaż listę szybkiego dostępu|Win + Alt + n|
+|Uruchom nowe wystąpienie|Win + Shift + n|
+|Przełączanie między oknami|Win + n|
+
+## <a name="BKMK_Search"></a>Wyszukiwanie w programie Visual Studio
+
+|||
+|-|-|
+|Eksplorator rozwiązań wyszukiwanie|Ctrl+;|
+|Umieść fokus w polu wyszukiwania w dowolnym oknie narzędzi|Alt + ', gdy okno narzędzi ma fokus|
 |Szybkie uruchamianie|Ctrl+Q|
-|Wyniki zakresu pasek Szybkie uruchamianie|- @opt Opcje<br />- @cmd Poleceń<br />- @mru Ostatnio używane<br />- @doc Otwartych dokumentach|
-|Wyszukiwanie w opcjach narzędzi|Ctrl+E|
+|Wyniki zakresu szybkiego uruchamiania|-Opcje @opt<br />-@cmd polecenia<br />-@mru ostatnio używane<br />-@doc otwarte dokumenty|
+|Wyszukaj w opcjach narzędzi|Ctrl + E|
 
-## <a name="BKMK_EditorFind"></a> Znajdowanie w edytorze
+## <a name="BKMK_EditorFind"></a>Znajdź Edytor
 
 |||
 |-|-|
 |Szybkie wyszukiwanie|Ctrl+F|
-|Następny wynik szybkiego wyszukiwania|Enter|
-|Poprzedni wynik szybkiego wyszukiwania|Shift+Enter|
-|Szybkie znajdowanie rozwijania góra, dół|Alt+Down|
+|Szybkie szukanie następnego wyniku|Enter|
+|Szybkie szukanie poprzedniego wyniku|Shift+Enter|
+|Szybkie znajdowanie rozwiń listę rozwijaną|Alt + Strzałka w dół|
 |Odrzuć Znajdź|Esc|
 |Szybkie zamienianie|Ctrl+H|
-|Szybkie zamienianie Zamień następny|Alt+R|
-|Szybkie zamienianie Zamień wszystko|Alt+A|
+|Szybkie zastąpienie Zamień następny|Alt+R|
+|Szybkie zamienianie Zamień wszystko|Alt + A|
 |Znajdź w plikach|Ctrl+Shift+F|
 |Zastąp w plikach|Ctrl+Shift+H|
 
-## <a name="BKMK_CodeEditor"></a> Edytor kodu
+## <a name="BKMK_CodeEditor"></a>Edytor kodu
 
 |||
 |-|-|
-|Tryb sugestii IntelliSense|Ctrl + Alt + spacja (Przełącz)|
-|Wymuszaj pokazywanie IntelliSense|Ctrl+J|
+|Tryb sugestii IntelliSense|Ctrl + Alt + spacja (przełącznik)|
+|Wymuś wyświetlanie funkcji IntelliSense|Ctrl+J|
 |Tagi inteligentne|Ctrl+.|
-|Selektor fragmentu kodu|CTRL + K, X lub?, karta (VB)|
-|Otocz przez|Ctrl+K,S|
-|Pokaż szybkie informacje|Ctrl+K,I|
+|Selektor fragmentów kodu|CTRL + K, X lub?, TAB (VB)|
+|Otocz za pomocą|CTRL + K, S|
+|Pokaż szybkie informacje|CTRL + K, I|
 |Przejdź do|Ctrl+,|
 |Przejdź do definicji|F12|
-|Zobacz definicję|Alt+F12|
-|Przejdź do stosu definicji|Ctrl + Shift + 8 (tył), Ctrl + Shift + 7 (przód)|
-|Przejdź do wyróżnionych odwołań|Ctrl + Shift + Up (wstecz), Ctrl + Shift + Strzałka w dół (dalej)|
-|Powiększenie w edytorze|Ctrl+Shift+> (In), Ctrl+Shift+< (Out)|
-|Zablokuj zaznaczenie|Przytrzymaj klawisz Alt i przeciągnij mysz, Shift + Alt + klawisze strzałek|
-|Przenieś linię w górę/w dół|Alt + Strzałka w górę / Alt + Strzałka w dół|
-|Zobacz definicję|Alt+F12|
+|Definicja wglądu|Alt+F12|
+|Przejdź do stosu definicji|Ctrl + Shift + 8 (Wstecz), Ctrl + Shift + 7 (do przodu)|
+|Przejdź do wyróżnionych odwołań|Ctrl + Shift + Strzałka w górę (Wstecz), Ctrl + Shift + Strzałka w dół (dalej)|
+|Powiększenie edytora|CTRL + SHIFT + > (w), Ctrl + Shift + < (out)|
+|Zaznaczenie blokowe|Przytrzymaj klawisz Alt i przeciągnij mysz, Shift + Alt + klawisze strzałek|
+|Przenieś wiersz w górę/w dół|Alt + Strzałka w górę/Alt + Strzałka w dół|
+|Definicja wglądu|Alt+F12|
 |Zamknij okno definicji wglądu|Esc|
-|Promuj okno definicji wgląd do karty zwykłego dokumentu|Ctrl+Alt+Home|
+|Podwyższ poziom okna definicji wglądu do karty zwykłego dokumentu|Ctrl+Alt+Home|
 |Przechodzenie między wieloma oknami definicji wglądu|Ctrl+Alt+- i Ctrl+Alt+=|
-|Przechodzenie między wieloma wynikami wyglądu|F8 i Shift + F8|
-|Przełączanie się między oknem edytora kodu i okna Zobacz definicję|Shift + Esc|
+|Przechodzenie między wieloma wynikami wglądu|F8 i Shift + F8|
+|Przełącz między oknem edytora kodu i oknem definicji wglądu|Shift + Esc|
 
-## <a name="BKMK_Toolbars"></a> Paski narzędzi
+## <a name="BKMK_Toolbars"></a>Paski narzędzi
 
 |||
 |-|-|
-|Dodawanie przycisków|Kliknij przycisk paska narzędzi przepełnienia|
-|Znajdowanie pola kombi na pasku narzędzi Standardowy|Ctrl+D|
-|Znajdowanie trybu poleceń tekstowych|Typ ">"|
-|Utwórz nowy alias|> alias NewAlias, polecenie|
+|Dodaj przyciski|Przycisk przepełnienia paska narzędzi|
+|Znajdź pole kombi na standardowym pasku narzędzi|Ctrl+D|
+|Znajdź tryb polecenia TextBox|Wpisz ">"|
+|Utwórz nowy alias|> alias NewAlias — polecenie|
 
 ## <a name="BKMK_Debugging"></a> Debugowanie
 
@@ -124,25 +124,25 @@ Możesz się przemieszczać w programie Visual Studio łatwiej za pomocą skrót
 |-|-|
 |Rozpocznij debugowanie|F5|
 |Zatrzymaj debugowanie|Shift+F5|
-|Ponowne uruchamianie debugowania|Ctrl+Shift+F5|
+|Uruchom ponownie debugowanie|Ctrl+Shift+F5|
 |Przekrocz nad|F10|
-|Wkrocz|F11|
+|Wkrocz do|ALT+F11|
 |Wyjdź|Shift+F11|
 |Uruchom do kursora|Ctrl+F10|
 |Ustaw następną instrukcję|Ctrl+Shift+F10|
 |Ustawianie i przełączanie punktu przerwania|F9|
 |Wyłącz punkt przerwania|Ctrl+F9|
 |Okno bezpośrednie|Ctrl+Alt+I|
-|Tryb poleceń okna bezpośredniego|Typ ">"|
-|Bufor czyszczenia okna bezpośredniego|> ze specyfikacją cls|
-|Wartość do druku w oknie bezpośrednim|? nazwa_zmiennej|
+|Tryb poleceń okna bezpośredniego|Wpisz ">"|
+|Wyczyść bufor okna bezpośredniego|> CLS|
+|Wartość wydruku okna bezpośredniego|? nazwa_zmiennej|
 
-## <a name="BKMK_ALM"></a> Zarządzanie cyklem życia aplikacji
+## <a name="BKMK_ALM"></a>Zarządzanie cyklem życia aplikacji
 
-Zobacz [skróty klawiaturowe: Visual Studio Online, portal sieci Web programu TFS i](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts)Team Explorer.
+Zobacz [skróty klawiaturowe: Visual Studio Online, portal sieci Web TFS i Team Explorer](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts).
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Visual Studio Blog](http://blogs.msdn.com/b/visualstudio)
-- [Program Visual Studio — porady i wskazówki Blog](http://blogs.msdn.com/b/zainnab)
-- [Visual Studio Toolbox w witrynie Channel 9](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox)
+- [Blog programu Visual Studio](http://blogs.msdn.com/b/visualstudio)
+- [Blog Porady i wskazówki dotyczące programu Visual Studio](http://blogs.msdn.com/b/zainnab)
+- [Przybornik programu Visual Studio w witrynie Channel 9](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox)

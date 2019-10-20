@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Tworzenie projektów przepływu pracy (starsza wersja) | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Tworzenie projektów przepływu pracy (starsza wersja) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -9,55 +9,55 @@ helpviewer_keywords:
 - projects, workflow
 ms.assetid: 32299555-662c-469d-a90d-89f4700dc78c
 caps.latest.revision: 6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6d779294f991786f90faf8dd1de756749b6baffc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3cf68c1a28f662bfa4e271d3c402ef1c8946b6f1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444169"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668681"
 ---
 # <a name="how-to-create-workflow-projects-legacy"></a>Instrukcje: Tworzenie projektów przepływu pracy (starsza wersja)
-Wykonaj następujące kroki, aby utworzyć [!INCLUDE[wf](../includes/wf-md.md)] projektu, który jest przeznaczony dla [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]. Ta procedura wykorzystuje starszego [!INCLUDE[wfd1](../includes/wfd1-md.md)] dostarczone przez [!INCLUDE[vs2010](../includes/vs2010-md.md)].  
-  
-### <a name="to-create-a-workflow-project"></a>Aby utworzyć projekt przepływu pracy  
-  
-1. Rozpocznij [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)].  
-  
-2. Na **pliku** menu wskaż **New**, a następnie wybierz pozycję **projektu**.  
-  
-     **Nowy projekt** zostanie otwarte okno dialogowe.  
-  
-3. Wybierz opcję **.NET Framework 3.0** opcji lub **.NET Framework 3.5** opcji na liście rozwijanej listy w górnej części **nowy projekt** okna, aby uzyskać dostęp starsza wersja projektanta.  
-  
+Wykonaj następujące kroki, aby utworzyć projekt [!INCLUDE[wf](../includes/wf-md.md)], który jest przeznaczony dla [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]. Ta procedura korzysta ze starszej [!INCLUDE[wfd1](../includes/wfd1-md.md)] dostarczonej przez [!INCLUDE[vs2010](../includes/vs2010-md.md)].
+
+### <a name="to-create-a-workflow-project"></a>Aby utworzyć projekt przepływu pracy
+
+1. Rozpocznij [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)].
+
+2. W menu **plik** wskaż polecenie **Nowy**, a następnie wybierz pozycję **projekt**.
+
+     Zostanie otwarte okno dialogowe **Nowy projekt** .
+
+3. Wybierz opcję **.NET Framework 3,0** lub opcję **.NET Framework 3,5** na liście rozwijanej w górnej części okna **Nowy projekt** , aby uzyskać dostęp do starszego projektanta.
+
     > [!NOTE]
-    > Opcją domyślną w [!INCLUDE[vs2010](../includes/vs2010-md.md)] jest **.NET Framework 4**. Ta opcja służy do tworzenia [!INCLUDE[wf](../includes/wf-md.md)] aplikacji przeznaczonych dla [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] i używasz starszej wersji projektanta.  
-  
-4. W **typów projektów** okienku zaznacz projekty języka Visual C# lub projekty języka Visual Basic, a następnie wybierz **przepływu pracy**.  
-  
-5. W **szablony** okienku, wybierz jeden z szablonów projektów zainstalowane:  
-  
-    - Aplikacja Konsolowa sekwencyjnego przepływu pracy  
-  
-    - Biblioteka sekwencyjnego przepływu pracy  
-  
-    - Biblioteka działań przepływu pracy  
-  
-    - Aplikacja konsoli przepływu pracy automatu stanów  
-  
-    - Biblioteka przepływu pracy automatu stanów  
-  
-    - Pusty projekt przepływu pracy  
-  
-6. W **nazwa** wprowadź opisową nazwę projektu ułatwić identyfikowanie.  
-  
-7. W **lokalizacji** wprowadź katalog, w którym chcesz zapisać projekt, lub kliknij przycisk **Przeglądaj** przejdź do katalogu.  
-  
-     Katalog rozwiązania utworzone dla projektu, wybierz opcję **Utwórz katalog rozwiązania** pole wyboru, a następnie wprowadź nazwę w **Nazwa rozwiązania** pole.  
-  
-8. Kliknij przycisk **OK**.  
-  
-## <a name="see-also"></a>Zobacz też  
+    > Opcja domyślna w [!INCLUDE[vs2010](../includes/vs2010-md.md)] jest **.NET Framework 4**. Ta opcja służy do tworzenia aplikacji [!INCLUDE[wf](../includes/wf-md.md)] przeznaczonych dla [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] i nie korzysta z starszego projektanta.
+
+4. W okienku **typy projektów** wybierz pozycję projekty wizualne C# lub Visual Basic projekty, a następnie wybierz pozycję **przepływ pracy**.
+
+5. W okienku **Szablony** wybierz jeden z zainstalowanych szablonów projektu:
+
+    - Aplikacja konsolowa sekwencyjnego przepływu pracy
+
+    - Biblioteka sekwencyjnego przepływu pracy
+
+    - Biblioteka działań przepływu pracy
+
+    - Aplikacja konsolowa przepływu pracy automatu Stanów
+
+    - Biblioteka przepływu pracy automatu Stanów
+
+    - Pusty projekt przepływu pracy
+
+6. W polu **Nazwa** Wprowadź opisową nazwę projektu, aby ułatwić jego identyfikację.
+
+7. W polu **Lokalizacja** wprowadź katalog, w którym chcesz zapisać projekt, lub kliknij przycisk **Przeglądaj** , aby przejść do katalogu.
+
+     Jeśli chcesz utworzyć katalog rozwiązania dla projektu, zaznacz pole wyboru **Utwórz katalog dla rozwiązania** i wprowadź nazwę w polu **Nazwa rozwiązania** .
+
+8. Kliknij przycisk **OK**.
+
+## <a name="see-also"></a>Zobacz też
  [Tworzenie starszej wersji projektów przepływu pracy](../workflow-designer/creating-legacy-workflow-projects.md)

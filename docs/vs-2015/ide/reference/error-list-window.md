@@ -1,5 +1,5 @@
 ---
-title: Okno listy błędów | Dokumentacja firmy Microsoft
+title: Okno Lista błędów | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,84 +13,78 @@ helpviewer_keywords:
 - errors [Visual Studio], Error List window
 ms.assetid: b7f6d45a-733b-4ad8-bc2f-737a37509e56
 caps.latest.revision: 36
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1d481bbc71019639588c793fee64acd34d5739e8
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 35be5ddeedf0b081fa94e399f294151e73a157ed
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65680153"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657732"
 ---
 # <a name="error-list-window"></a>Okno listy błędów
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-UWAGA]
-> Lista błędów wyświetla informacje dotyczące konkretnego komunikatu o błędzie. Możesz skopiować numer błędu lub ciąg tekstu błędu błędu z okna danych wyjściowych. Aby wyświetlić okno danych wyjściowych, naciśnij klawisze Ctrl + Alt + O. Zobacz [okno danych wyjściowych](../../ide/reference/output-window.md).  
-  
- Można tworzyć aplikacje szybciej za pomocą **lista błędów** okna. Na przykład należy wykonać następujące zadania:  
-  
-- Wyświetl błędy, ostrzeżenia i komunikaty generowane podczas pisania kodu.  
-  
-- Znajdź błędy składniowe oznaczone przez technologię IntelliSense.  
-  
-- Znajdź błędy wdrażania, niektóre analizy statycznej błędy i błędy wykryte podczas stosowania zasad szablonu organizacji.  
-  
-- Kliknij dwukrotnie wpis komunikatu o błędzie, wszelkie można otworzyć pliku, gdzie występuje problem i przejść do lokalizacji błędu.  
-  
-- Filtruj, które wpisy są wyświetlane i które kolumny informacji są wyświetlane dla każdego wpisu.  
-  
-- Wyszukaj konkretne terminy i Ogranicz zakres wyszukiwania do tylko bieżącego projektu lub dokumentu.  
-  
-  Aby wyświetlić **lista błędów**, kliknij przycisk **widok / listę błędów**, lub **CTRL +\\+ E**.  
-  
-  Możesz wybrać **błędy**, **ostrzeżenia**, i **wiadomości** kart, aby wyświetlić różne poziomy informacji.  
-  
-  Aby posortować listę, kliknij nagłówek dowolnej kolumny. Aby ponownie sortować według dodatkowej kolumny, przytrzymaj wciśnięty klawisz SHIFT i kliknij inny nagłówek kolumny. Aby wybrać kolumny, które są wyświetlane, a które ukryte, wybierz **Pokaż kolumny** z menu skrótów. Aby zmienić kolejność wyświetlania kolumn, przeciągnij dowolny nagłówek kolumny w lewo lub w prawo.  
-  
+KORYGUJĄC
+> Lista błędów wyświetla informacje o określonym komunikacie o błędzie. Możesz skopiować numer błędu lub tekst ciągu błędu z okna danych wyjściowych. Aby wyświetlić okno dane wyjściowe, naciśnij kombinację klawiszy Ctrl + Alt + O. Zobacz [okno dane wyjściowe](../../ide/reference/output-window.md).
+
+ Aplikacje można opracowywać szybciej przy użyciu okna **Lista błędów** . Na przykład można wykonać następujące zadania:
+
+- Wyświetlanie błędów, ostrzeżeń i komunikatów generowanych podczas pisania kodu.
+
+- Znajdź błędy składniowe zanotowane przez funkcję IntelliSense.
+
+- Znajdź błędy wdrażania, niektóre błędy analizy statycznej i błędy wykryte podczas stosowania zasad szablonów przedsiębiorstwa.
+
+- Kliknij dwukrotnie dowolny wpis komunikatu o błędzie, aby otworzyć plik, w którym wystąpił problem, i przejdź do lokalizacji błędu.
+
+- Filtruj, które wpisy są wyświetlane, a kolumny informacji są wyświetlane dla każdego wpisu.
+
+- Wyszukaj określone terminy i zakres wyszukiwania tylko dla bieżącego projektu lub dokumentu.
+
+  Aby wyświetlić **Lista błędów**, kliknij przycisk **Wyświetl/Lista błędów**lub **Ctrl + \\ + E**.
+
+  Możesz wybrać karty **Błędy**, **ostrzeżenia**i **komunikaty** , aby zobaczyć różne poziomy informacji.
+
+  Aby posortować listę, kliknij dowolny nagłówek kolumny. Aby posortować ponownie według dodatkowej kolumny, przytrzymaj wciśnięty klawisz SHIFT i kliknij inny nagłówek kolumny. Aby wybrać kolumny, które są wyświetlane, a które są ukryte, wybierz polecenie **Pokaż kolumny** z menu skrótów. Aby zmienić kolejność wyświetlania kolumn, przeciągnij dowolny nagłówek kolumny w lewo lub w prawo.
+
 > [!NOTE]
-> Polecenia menu i okien dialogowych mogą różnić się od tych opisanych w tym miejscu, w zależności od ustawień aktywnych lub wersji. Aby zmienić swoje ustawienia, kliknij przycisk **narzędzia / Import i eksport ustawień**. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
-  
-## <a name="error-list-filters"></a>Filtry listy błędów  
- Istnieją dwa rodzaje filtru w dwa pola listy rozwijanej: jeden po prawej stronie paska narzędzi, a drugi z lewej strony paska narzędzi. Lista rozwijana na pasku narzędzi po lewej stronie określa zestaw plików kodu do użycia (**całe rozwiązanie**, **otwarte dokumenty**, **bieżący projekt**,  **Bieżący dokument**).  
-  
- Możesz ograniczyć zakres wyszukiwania do analizowania i działają na grupy błędów. Na przykład można skoncentrować się na podstawowych błędach, które uniemożliwiają kompilowania projektu. Opcje zakresu są następujące:  
-  
-1. **Otwieranie dokumentów**: Pokaż błędy, ostrzeżenia i komunikaty dla otwartych dokumentów.  
-  
-2. **Bieżący projekt**: Pokaż błędy, ostrzeżenia i komunikaty z projektu aktualnie wybranego dokumentu w **edytora** lub wybranego projektu w **Eksploratora rozwiązań**.  
-  
+> Okna dialogowe i polecenia menu mogą się różnić od opisanych tutaj, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, kliknij przycisk **Narzędzia/Importuj i Eksportuj ustawienia**. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień deweloperskich w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+
+## <a name="error-list-filters"></a>Filtry Lista błędów
+ Istnieją dwa typy filtrów w dwóch polach rozwijanych, jeden po prawej stronie paska narzędzi i jeden z lewej strony paska narzędzi. Lista rozwijana po lewej stronie paska narzędzi określa zestaw plików kodu do użycia (**całe rozwiązanie**, **otwarte dokumenty**, **bieżący projekt**, **bieżący dokument**).
+
+ Możesz ograniczyć zakres wyszukiwania do analizowania i działania w grupach błędów. Na przykład możesz chcieć skupić się na podstawowych błędach, które uniemożliwiają Kompilowanie projektu. Opcje zakresu obejmują:
+
+1. **Otwarte dokumenty**: Pokaż błędy, ostrzeżenia i komunikaty dla otwartych dokumentów.
+
+2. **Bieżący projekt**: Pokaż błędy, ostrzeżenia i komunikaty z projektu aktualnie wybranego dokumentu w **Edytorze** lub w wybranym projekcie w **Eksplorator rozwiązań**.
+
    > [!NOTE]
-   > Filtrowana lista błędy, ostrzeżenia i komunikaty ulegnie zmianie, jeśli projekt aktualnie wybranego dokumentu różni się od projektu wybranego w **Eksploratora rozwiązań**.  
-  
-3. **Bieżący dokument**: Pokaż błędy, ostrzeżenia i komunikaty dla aktualnie wybranego dokumentu w **edytora** lub **Eksploratora rozwiązań**.  
-  
-   Jeśli filtr jest obecnie stosowany do wyników wyszukiwania, nazwę filtra pojawia się w **lista błędów** paska tytułu. **Błędy**, **ostrzeżenia**, i **wiadomości** przyciski, a następnie wyświetla liczbę odfiltrowane elementy są wyświetlane wraz z całkowitą liczbą elementów; na przykład przyciski pokazują x z y błędów. Jeśli żaden filtr zostanie zastosowany, na pasku tytułu widać tylko "Lista błędów".  
-  
-   Listy po prawej stronie paska narzędzi, określa, czy błędy kompilacji (błędy wynikające z operacji kompilacji) lub z funkcji IntelliSense (błędy wykryte przed uruchomieniem kompilacji) lub obu.  
-  
-## <a name="search"></a>Wyszukaj  
- Użyj **lista wyszukiwania błędów** pola tekstowego po prawej stronie **lista błędów** narzędzi, aby znaleźć określone błędy na liście błędów. Możesz wyszukiwać według dowolnej widocznej kolumny na liście błędów, a wyniki wyszukiwania są zawsze sortowane w oparciu o kolumnę, która ma priorytet sortowania, a nie o kwerendę lub zastosowany filtr. Jeśli wybierzesz **Esc** klucza, gdy fokus jest ustawiony w **lista błędów**, może to wyczyszczenie wyszukiwanego terminu i przefiltrowanych wyników wyszukiwania. Możesz również kliknąć **X** po prawej stronie pola tekstowego, aby je wyczyścić.  
-  
-## <a name="save"></a>Zapisanie  
- Możesz skopiować listę błędów i zapisz go w pliku. Zaznacz błędy, aby skopiować i kliknij prawym przyciskiem myszy zaznaczenie, a następnie w menu kontekstowym wybierz **kopiowania**. Możesz następnie wkleić błędy do pliku. Jeśli wklejasz błędy do arkusza kalkulacyjnego programu Excel, pola są wyświetlane jako różne kolumny.  
-  
-## <a name="ui-element-list"></a>Lista elementów interfejsu użytkownika  
- Ważność  
- Wyświetla różne rodzaje **lista błędów** wejścia (**błąd**, **komunikat**, **ostrzeżenie**, **ostrzeżenie (aktywne)**, **Ostrzeżenie (nieaktywne)**.  
-  
- Kod  
- Wyświetla kod błędu.  
-  
- Opis  
- Wyświetla tekst wpisu.  
-  
- Projekt  
- Wyświetla nazwę bieżącego projektu.  
-  
- Plik  
- Wyświetla nazwę pliku.  
-  
- Wiersz  
- Wyświetla wiersz, w którym występuje problem.
+   > Filtrowana lista błędów, ostrzeżeń i komunikatów ulegnie zmianie, jeśli projekt aktualnie wybranego dokumentu różni się od projektu wybranego w **Eksplorator rozwiązań**.
+
+3. **Bieżący dokument**: Pokaż błędy, ostrzeżenia i komunikaty dla aktualnie wybranego dokumentu w **Edytorze** lub **Eksplorator rozwiązań**.
+
+   Jeśli filtr jest aktualnie stosowany do wyniku wyszukiwania, nazwa filtru pojawia się na pasku tytułu **Lista błędów** . Przyciski **Błędy**, **ostrzeżenia**i **komunikaty** wyświetlają liczbę elementów filtrowanych, które są wyświetlane wraz z łączną liczbą elementów; na przykład przyciski zawierają błędy x z y. Jeśli żaden filtr nie zostanie zastosowany, na pasku tytułu jest wyświetlany tylko komunikat "Lista błędów".
+
+   Lista po prawej stronie paska narzędzi określa, czy mają być wyświetlane błędy kompilacji (błędy spowodowane operacją kompilacji), czy z funkcji IntelliSense (błędy wykryte przed uruchomieniem kompilacji) lub z obu tych elementów.
+
+## <a name="search"></a>Wyszukaj
+ Użyj pola tekstowego **szukaj Lista błędów** po prawej stronie **Lista błędów** pasku narzędzi, aby znaleźć konkretne błędy na liście błędów. Możesz wyszukać dowolną widoczną kolumnę na liście błędów, a wyniki wyszukiwania są zawsze sortowane na podstawie kolumny, która ma priorytet sortowania zamiast zapytania lub zastosowany filtr. Jeśli wybierzesz klawisz **ESC** , gdy fokus znajduje się w **Lista błędów**, możesz wyczyścić wyszukiwany termin i wyniki wyszukiwania odfiltrowanego. Możesz również kliknąć **symbol X** po prawej stronie pola tekstowego, aby usunąć jego zaznaczenie.
+
+## <a name="save"></a>Zapisanie
+ Można skopiować listę błędów i zapisać ją w pliku. Wybierz błędy, które chcesz skopiować, a następnie kliknij prawym przyciskiem myszy zaznaczenie, a następnie w menu kontekstowym wybierz polecenie **Kopiuj**. Można następnie wkleić błędy do pliku. W przypadku wklejenia błędów do arkusza kalkulacyjnego programu Excel pola są wyświetlane jako różne kolumny.
+
+## <a name="ui-element-list"></a>Lista elementów interfejsu użytkownika
+ Ważność wyświetla różne typy wpisów **Lista błędów** (**błąd**, **komunikat**, **Ostrzeżenie**, **ostrzeżenie (aktywne)** , **ostrzeżenie (nieaktywne)** .
+
+ Kod wyświetla kod błędu.
+
+ Opis wyświetla tekst wpisu.
+
+ Projekt wyświetla nazwę bieżącego projektu.
+
+ Plik wyświetla nazwę pliku.
+
+ Wiersz wyświetla wiersz, w którym występuje problem.

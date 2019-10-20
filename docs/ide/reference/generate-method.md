@@ -1,22 +1,22 @@
 ---
-title: Generowanie metody
+title: Generuj metodę
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d815b638033e16796c90a362207b820bfe7cc57d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c85e3f849d7d74f326c1cf330b0e2c338d78fc6a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62794851"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668331"
 ---
-# <a name="generate-a-method-in-visual-studio"></a>Generuj metodę w programie Visual Studio
+# <a name="generate-a-method-in-visual-studio"></a>Generowanie metody w programie Visual Studio
 
-Dotyczy to generowanie kodu:
+Ta generacja kodu ma zastosowanie do:
 
 - C#
 
@@ -24,47 +24,47 @@ Dotyczy to generowanie kodu:
 
 **Co:** Umożliwia natychmiastowe dodanie metody do klasy.
 
-**Kiedy:** Wprowadzenie nowej metody i aby poprawnie Zadeklaruj go automatycznie.
+**Kiedy:** Należy wprowadzić nową metodę i chcieć ją prawidłowo zadeklarować automatycznie.
 
-**Dlaczego:** Można zadeklarować metody i parametrów przed użyciem, ale tej funkcji będzie generowana automatycznie deklaracji.
+**Dlaczego:** Można zadeklarować metodę i parametry przed użyciem, jednak ta funkcja będzie generować deklarację automatycznie.
 
 ## <a name="how-to"></a>Instrukcje
 
-1. Umieść kursor w wierszu gdzie znajduje się czerwona fala. Czerwona fala wskazuje metodę, która jeszcze nie istnieje.
+1. Umieść kursor w wierszu, w którym znajduje się czerwona zygzakowata. Czerwona zygzakowata wskazuje metodę, która jeszcze nie istnieje.
 
    - C#:
 
-       ![Wyróżniony kod C#](media/method-highlight-cs.png)
+       ![Wyróżniony kodC#](media/method-highlight-cs.png)
 
    - Visual Basic:
 
-       ![Wyróżniony Kod VB](media/method-highlight-vb.png)
+       ![Wyróżniony kod VB](media/method-highlight-vb.png)
 
 2. Następnie wykonaj jedną z następujących czynności:
 
-   - **Keyboard**
-      - Naciśnij klawisz **Ctrl**+**.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
-   - **Myszy**
-      - Kliknij prawym przyciskiem myszy i wybierz **szybkie akcje i Refaktoryzacje** menu.
-      - Umieść kursor nad czerwona fala, a następnie kliknij przycisk ![Błąd żarówka](media/error-bulb.png) Ikona wyświetlana.
-      - Kliknij ikonę ![Błąd żarówka](media/error-bulb.png) Ikona wyświetlana na lewym marginesie, jeśli kursor tekstu jest już w wierszu zawierającym czerwona fala.
+   - **Klawiatury**
+      - Naciśnij klawisz **Ctrl** + **.** Aby wyzwolić menu **szybkie akcje i operacje refaktoryzacji** .
+   - **Wskaźnik**
+      - Kliknij prawym przyciskiem myszy i wybierz menu **szybkie akcje i operacje refaktoryzacji** .
+      - Umieść kursor na czerwono, a następnie kliknij przycisk ![Żarówka błędów](media/error-bulb.png) zostanie wyświetlona ikona.
+      - Kliknij ikonę ![Żarówka błędów](media/error-bulb.png) ikona wyświetlana na lewym marginesie, jeśli kursor tekstu znajduje się już w wierszu z czerwonym obramowaniem.
 
-      ![Generowanie podglądu — metoda](media/method-preview-cs.png)
+      ![Generuj Podgląd metody](media/method-preview-cs.png)
 
-3. Wybierz **Generuj metodę** z menu rozwijanego.
+3. Wybierz pozycję **Generuj metodę** z menu rozwijanego.
 
    > [!TIP]
-   > Użyj **podgląd zmian** link w dolnej części okna podglądu [Aby wyświetlić wszystkie zmiany](../../ide/preview-changes.md) , zostaną wprowadzone przed dokonaniem wyboru.
+   > Użyj linku **Podgląd zmian** w dolnej części okna Podgląd, [Aby zobaczyć wszystkie zmiany](../../ide/preview-changes.md) , które zostaną wprowadzone przed dokonaniem wyboru.
 
-   Metoda jest tworzony z parametrów wywnioskować na podstawie jej użycie.
+   Metoda jest tworzona z dowolnymi parametrami wywnioskowanymi z użycia.
 
    - C#:
 
-       ![Generowanie metody powodują C#](media/method-result-cs.png)
+       ![Generowanie wyniku metodyC#](media/method-result-cs.png)
 
    - Visual Basic:
 
-       ![Generowanie metody powodują VB](media/method-result-vb.png)
+       ![Generuj wynik metody VB](media/method-result-vb.png)
 
 ## <a name="see-also"></a>Zobacz także
 

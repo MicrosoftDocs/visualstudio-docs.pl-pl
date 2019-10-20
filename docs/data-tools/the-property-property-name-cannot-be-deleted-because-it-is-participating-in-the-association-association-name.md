@@ -1,36 +1,36 @@
 ---
-title: Nie można usunąć właściwości, ponieważ uczestniczy w skojarzeniu
+title: Nie można usunąć właściwości, ponieważ uczestniczy ona w skojarzeniu.
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 389873cc-92dd-48da-bfca-0f6c8e0ae3c2
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d277919229316768cde27efdc9b2797d0351e9fe
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: e1890535fb008c8e8be6ee9dea0eda3ab3844da6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458501"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648147"
 ---
-# <a name="the-property-ltproperty-namegt-cannot-be-deleted-because-it-is-participating-in-the-association-ltassociation-namegt"></a>Właściwość &lt;nazwa właściwości&gt; nie można usunąć, ponieważ uczestniczy w skojarzeniu &lt;Nazwa skojarzenia&gt;
+# <a name="the-property-ltproperty-namegt-cannot-be-deleted-because-it-is-participating-in-the-association-ltassociation-namegt"></a>Nie można usunąć właściwości &lt;property &gt;, ponieważ uczestniczy ona w nazwie &lt;association skojarzenia &gt;
 
-Wybrana właściwość jest ustawiona jako **właściwość skojarzenia** skojarzenia między klasami wskazanego w komunikacie o błędzie. Nie można usunąć właściwości, jeśli są one skojarzenia między klasami danych.
+Wybrana właściwość jest ustawiana jako **Właściwość skojarzenia** dla skojarzenia między klasami wskazanymi w komunikacie o błędzie. Właściwości nie mogą zostać usunięte, jeśli uczestniczą w skojarzeniu między klasami danych.
 
-Ustaw **właściwość skojarzenia** różne właściwości klasy danych, aby umożliwić pomyślne usunięcie żądanej właściwości.
+Ustaw **Właściwość skojarzenia** na inną właściwość klasy danych, aby umożliwić pomyślne usunięcie żądanej właściwości.
 
 ## <a name="to-correct-this-error"></a>Aby poprawić ten błąd
 
-1. Wybierz linię skojarzenia na **O/R Designer** nawiązujący połączenie z klas danych wskazany w komunikacie o błędzie.
+1. Wybierz linię skojarzenie w **projektancie o/R** , który łączy klasy danych wskazane w komunikacie o błędzie.
 
-2. Kliknij dwukrotnie wiersz, aby otworzyć **Edytor skojarzeń** okno dialogowe.
+2. Kliknij dwukrotnie wiersz, aby otworzyć okno dialogowe **Edytor skojarzeń** .
 
-3. Usuń właściwość z **właściwości skojarzenia**.
+3. Usuń właściwość ze **właściwości skojarzenia**.
 
-4. Ponownie spróbuj usunąć właściwość.
+4. Spróbuj ponownie usunąć właściwość.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Narzędzi LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Narzędzia LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

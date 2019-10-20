@@ -1,5 +1,5 @@
 ---
-title: Opisywanie przepływu sterowania, przy użyciu fragmentów w diagramach sekwencji UML | Dokumentacja firmy Microsoft
+title: Opisywanie przepływu sterowania przy użyciu fragmentów w diagramach sekwencji UML | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -14,123 +14,121 @@ helpviewer_keywords:
 - sequence diagrams, control flow
 ms.assetid: efcc0949-be7e-4cf4-99ef-47c36b3803ae
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c296be2e3a00efcdf48bdd6e4442e88fc32b3695
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 40f48891107c2eb3250b6b050e00c3650812d386
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422539"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669813"
 ---
 # <a name="describe-control-flow-with-fragments-on-uml-sequence-diagrams"></a>Opisywanie przepływu sterowania przy użyciu fragmentów w diagramach sekwencji UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Na diagramie sekwencji UML *połączone fragmenty* pozwalają wyświetlić pętli, gałęzi i inne alternatywy.  
-  
- Połączony fragment składa się z co najmniej jeden *operandy interakcji*, a każdy z nich zawiera co najmniej jeden wiadomości, zastosowania interakcji lub połączonego fragmentu.  
-  
+W diagramie sekwencji UML *połączone fragmenty* pozwalają pokazać pętle, gałęzie i inne alternatywy.
+
+ Połączony fragment składa się z co najmniej jednego *operandu interakcji*, a każda z nich zawiera co najmniej jeden komunikat, interakcja lub połączone fragmenty.
+
 > [!NOTE]
-> Ten temat dotyczy fragmentów w diagramach sekwencji. Aby uzyskać więcej informacji o tym, jak odczytać diagramy sekwencji UML, zobacz [UML Sequence Diagrams: Odwołanie](../modeling/uml-sequence-diagrams-reference.md). Aby uzyskać więcej informacji na temat narysować diagramy sekwencji UML, zobacz [UML Sequence Diagrams: Wytyczne dotyczące](../modeling/uml-sequence-diagrams-guidelines.md).  
-  
- ![Połączone fragmentu przyjmuje dwa argumenty operacji interakcji](../modeling/media/uml-seqfragments.png "UML_SeqFragments")  
-  
- Dostępne są następujące elementy pokazano na rysunku.  
-  
-1. Połączony fragment. Istnieje kilka rodzajów połączonego fragmentu. W tym przykładzie jest Alt połączony fragment, którego można użyć, aby pokazać, że alternatywnych sekwencji komunikatów może wystąpić.  
-  
-2. Operandy interakcji. Każdy połączony fragment zawiera co najmniej jeden argument interakcji, który może zawierać wiadomości, zastosowania interakcji i mniejsze połączonego fragmentu. W tym przykładzie połączone Alt fragment ma dwie operacje interakcji, przedstawiający dwa alternatywnych sekwencji komunikatów.  
-  
-3. Każdy argument interakcji można wybrać, klikając pozycję wewnątrz niego oddzielnie. W tym przykładzie argument najważniejsze interakcji jest zaznaczone, tak, aby jego granicę są widoczne. Zwykle tylko jednoznaczny interakcji z operandów jest widoczna.  
-  
+> Ten temat dotyczy fragmentów w diagramach sekwencji. Aby uzyskać więcej informacji na temat odczytywania diagramów sekwencji UML, zobacz [diagramy sekwencji UML: odwołanie](../modeling/uml-sequence-diagrams-reference.md). Aby uzyskać więcej informacji na temat rysowania diagramów sekwencji UML, zobacz [diagramy sekwencji UML: wytyczne](../modeling/uml-sequence-diagrams-guidelines.md).
+
+ ![Połączony fragment z dwoma operandami interakcji](../modeling/media/uml-seqfragments.png "UML_SeqFragments")
+
+ Elementy wyświetlane na rysunku są następujące.
+
+1. Połączony fragment. Istnieje kilka rodzajów połączonych fragmentów. Ten przykład to osadzony połączony fragment, którego można użyć, aby pokazać, że mogą wystąpić Alternatywne sekwencje komunikatów.
+
+2. Operandy interakcji. Każdy połączony fragment zawiera co najmniej jeden operand interakcji, który może zawierać komunikaty, użycie interakcji i mniejsze połączone fragmenty. W tym przykładzie połączony fragment Alt ma dwie operacje interakcji, pokazując dwie alternatywne sekwencje komunikatów.
+
+3. Każdy operand interakcji można wybrać osobno, klikając wewnątrz niego. W tym przykładzie wybrano operand top Interaction, aby można było zobaczyć jego granicę. Zazwyczaj widoczna jest tylko linia podziału między operandami interakcji.
+
     > [!NOTE]
-    > Aby wybrać operand najważniejsze interakcji, możesz nie powinien klikać za blisko początku połączonego fragmentu.  
-  
-4. Osłony. Każdy argument interakcji można nadać ochrony. Opisuje warunku w ramach której zostanie wykonane komunikaty wewnątrz operand interakcji.  
-  
-## <a name="creating-combined-fragments"></a>Tworzenie połączone fragmentów  
- Aby uzyskać listę rodzajów fragment, można utworzyć, zobacz [rodzajów połączone fragmentu](#KindsOfFragment).  
-  
-#### <a name="to-create-a-combined-fragment"></a>Aby utworzyć połączony fragment  
-  
-1. Wybierz jeden komunikat lub sekwencję wiadomości, wszystkie rozpoczyna się w tej samej linii życia lub wykonywania wystąpienia.  
-  
+    > Aby wybrać operand najwyższej interakcji, nie można kliknąć zbyt blisko górnej części połączonego fragmentu.
+
+4. Chroni. Dla każdego operandu interakcji należy zapewnić ochronę. Opisano w nim warunek, pod którym będą wykonywane komunikaty wewnątrz operandu interakcji.
+
+## <a name="creating-combined-fragments"></a>Tworzenie połączonych fragmentów
+ Aby zapoznać się z listą rodzajów fragmentów, które można utworzyć, zobacz [rodzaje połączonego fragmentu](#KindsOfFragment).
+
+#### <a name="to-create-a-combined-fragment"></a>Aby utworzyć połączony fragment
+
+1. Wybierz jeden komunikat lub sekwencję komunikatów, które zaczynają się na tym samym wystąpieniu linii życia lub wykonania.
+
    > [!NOTE]
-   > Jeśli wybierzesz więcej niż jeden komunikat, tworzą one muszą nieprzerwanie sekwencji.  
-  
-2. Kliknij prawym przyciskiem myszy jeden z komunikatów, wskaż opcję **Otocz**, a następnie kliknij typ połączonego fragmentu, który ma, takich jak **fragmentu połączone Alt**.  
-  
-    Pojawi się nowy połączony fragment. Nagłówek wskazuje typ połączonego fragmentu wybrano, takich jak **Alt**.  
-  
-    Wewnątrz połączonego fragmentu jest fragmentu, który zawiera komunikaty, które zostały wybrane.  
-  
-   Możesz dodać więcej operandów interakcji do niektórych rodzajów połączonego fragmentu.  
-  
-   Po zmianie rozmieszczenia wiadomości w połączony fragment, wybierz **Zmień rozmieszczanie układu** w menu skrótów, aby zmienić rozmiar ramki połączonego fragmentu.  
-  
-#### <a name="to-add-a-new-interaction-operand-to-a-combined-fragment"></a>Aby dodać nowe operand interakcji do połączonego fragmentu  
-  
-1. Kliknij prawym przyciskiem myszy spację wewnątrz interakcji argument operacji [2], poza wszelkie zawarte fragmentu i poniżej nagłówka połączonego fragmentu.  
-  
-2. Wskaż **Dodaj**.  
-  
-3. Kliknij przycisk **argumentu interakcji przed**, lub **Operand interakcji po**.  
-  
-4. Można dodawać komunikaty wewnątrz nowych operand interakcji za pomocą narzędzi wiadomości lub przez kopiowanie i wklejanie istniejące wiadomości.  
-  
-   Możesz ustawić **Guard** właściwość operandu interakcji do opisania warunków, w których są wykonywane komunikaty wewnątrz niego. Na przykład w **pętli** połączone fragmentu, osłony można użyć do określenia warunków, w którym nadal pętli. W **Alt** połączone fragmentu, można określić oddzielne warunek każdy argument interakcji.  
-  
-#### <a name="to-set-the-guard-of-an-interaction-operand"></a>Aby ustawić osłony operand interakcji  
-  
-1. Kliknij spację wewnątrz operand interakcji (2), poza wszelkie zawarte fragmentu.  
-  
-    Obramowanie wyboru pojawia się wokół operand interakcji i wokół warunek zabezpieczenia.  
-  
-    W pozycji w **właściwości** Pokazuje okno **Operand interakcji**.  
-  
-2. Typ warunku zabezpieczenia.  
-  
-    Warunek pojawi się w górnej części fragmentu (4).  
-  
-   Można ustawić właściwości niektóre rodzaje połączonego fragmentu.  
-  
-#### <a name="to-set-or-view-the-properties-of-a-combined-fragment"></a>Aby ustawić lub wyświetlić właściwości połączony fragment  
-  
-- Kliknij prawym przyciskiem myszy w tytule połączonego fragmentu, a następnie kliknij przycisk **właściwości**.  
-  
+   > Jeśli wybierzesz więcej niż jeden komunikat, muszą one stanowić nieprzerwaną sekwencję.
+
+2. Kliknij prawym przyciskiem myszy jeden z komunikatów, wskaż polecenie **Otocz**, a następnie kliknij odpowiedni rodzaj połączonego fragmentu, taki jak **Alt połączony fragment**.
+
+    Zostanie wyświetlony nowy połączony fragment. Nagłówek wskazuje rodzaj wybranego fragmentu, na przykład **Alt**.
+
+    W połączonym fragmencie znajduje się fragment zawierający wybrane wiadomości.
+
+   Można dodać więcej argumentów operacji interakcji do niektórych rodzajów połączonego fragmentu.
+
+   Po ponownym rozmieszczeniu komunikatów w połączonym fragmencie wybierz pozycję **Zmień układ układu** w menu skrótów, aby zmienić rozmiar połączonej ramki fragmentu.
+
+#### <a name="to-add-a-new-interaction-operand-to-a-combined-fragment"></a>Aby dodać nowy operand interakcji do połączonego fragmentu
+
+1. Kliknij prawym przyciskiem myszy puste miejsce wewnątrz operandu interakcji (2) poza zawartym fragmentem i poniżej nagłówka połączonego fragmentu.
+
+2. Wskaż polecenie **Dodaj**.
+
+3. Kliknij przycisk **interakcji operand przed**lub z **argumentem operacji interakcji po**.
+
+4. Można dodawać komunikaty wewnątrz nowego operandu interakcji przy użyciu narzędzi komunikatów lub kopiując i wklejając istniejące komunikaty.
+
+   Właściwość **Guard** operandu interakcji można ustawić, aby opisać warunki, w których są wykonywane komunikaty. Na przykład w połączonym fragmencie **pętli** można użyć funkcji Guard, aby określić warunek, w którym pętla będzie kontynuowana. W **łącznym** połączonym fragmencie można określić oddzielny warunek dla każdego operandu interakcji.
+
+#### <a name="to-set-the-guard-of-an-interaction-operand"></a>Aby ustawić ochronę operandu interakcji
+
+1. Kliknij puste miejsce wewnątrz operandu interakcji (2) poza zawartym fragmentem.
+
+    Obramowanie zaznaczenia pojawia się wokół operandu interakcji i wokół warunku ochrony.
+
+    W nagłówku okna **Właściwości** zostanie wyświetlony **operand interakcji**.
+
+2. Wpisz warunek ochrony.
+
+    Warunek pojawi się w górnej części fragmentu (4).
+
+   Można ustawić właściwości niektórych rodzajów połączonych fragmentów.
+
+#### <a name="to-set-or-view-the-properties-of-a-combined-fragment"></a>Aby ustawić lub wyświetlić właściwości połączonego fragmentu
+
+- Kliknij prawym przyciskiem myszy tytuł połączonego fragmentu, a następnie kliknij polecenie **Właściwości**.
+
     > [!NOTE]
-    > Różne rodzaje połączonego fragmentu mają różne właściwości.  
-  
-## <a name="KindsOfFragment"></a> Rodzaje połączony Fragment  
-  
-### <a name="fragments-describing-control-flow"></a>Fragmenty opisywanie przepływu sterowania  
- Od prostego diagramu sekwencji pokazuje tylko jednej typowej sekwencji. Do opisania zmian, które mogą wystąpić w różnych przypadkach, można użyć następujących typów połączonego fragmentu.  
-  
-|Typ fragmentu|Opis|  
-|-------------------|-----------------|  
-|**zoptymalizowany pod kątem**|Opcjonalna. Otacza sekwencji, którzy mogą lub nie może mieć miejsce. Można określić, w guard, warunek, pod którym występuje.|  
-|**ALT**|Zawiera listę fragmentów, zawierające alternatywnych sekwencji wiadomości. Tylko jednej sekwencji występuje przy każdej okazji.<br /><br /> Strażnik można umieścić w każdego fragmentu, aby wskazać, pod warunkiem, jakie można uruchomić. Ochrona programu **else** wskazuje fragmentu, który należy uruchomić, jeśli nie innych guard ma wartość true. Chroni wszystkie mają wartość false, jeśli ma nie **else**, a następnie wykonuje Brak fragmenty.|  
-|**Loop**|Fragment powtarza pewną liczbę razy. Można wskazać w osłony warunek, pod którym należy powtórzyć.<br /><br /> Pętla połączone fragmenty mają właściwości podane **Min** i **Max**, które wskazują minimalną i maksymalną liczbę razy, które można powtarzać tego fragmentu. Wartość domyślna to Brak ograniczeń.|  
-|**BREAK**|Jeśli ten fragment jest wykonywane, zostanie porzucony pozostałej części sekwencji. Osłony służy do wskazania stanu, w którym nastąpi przerwanie.|  
-|**Par**|Równoległe. Mogą się przeplatać zdarzenia we fragmentach.|  
-|**Krytyczne**|Używane w obrębie fragmentu Par lub Seq. Wskazuje, czy wiadomości, w tym fragmencie nie muszą się przeplatać z inne komunikaty.|  
-|**SEQ**|Istnieją dwa lub więcej fragmentów operand. Komunikaty dotyczące tej samej linii życia, musi nastąpić zgodnie z kolejnością fragmenty. W przypadku, gdy nie obejmują tej samej linii życia, wiadomości z różnych fragmentów może być przemieszane równolegle.|  
-|**Strict**|Istnieją dwa lub więcej fragmentów operand. Fragmenty musi przypadać w podanej kolejności.|  
-  
-### <a name="fragments-about-how-to-interpret-the-sequence"></a>Fragmenty o tym, jak interpretować sekwencji  
- Domyślnie diagram sekwencji stanów szereg wiadomości, które mogą wystąpić. W działającym systemie inne komunikaty może się zdarzyć, że nie zostały wybrane do wyświetlenia na diagramie.  
-  
- Następujące typy fragment może służyć do zmiany tej interpretacji.  
-  
-|Typ fragmentu|Opis|  
-|-------------------|-----------------|  
-|**Należy wziąć pod uwagę**|Określa listę komunikatów, które opisano w tym fragmencie. Inne komunikaty mogą występować w działającym systemie, ale nie są istotne dla celów tego opisu.<br /><br /> Typ listy w **wiadomości** właściwości.|  
-|**Ignoruj**|Lista komunikatów, które nie są opisane w tym fragmencie. One może wystąpić w działającym systemie, ale nie są istotne dla celów tego opisu.<br /><br /> Typ listy w **wiadomości** właściwości.|  
-|**Assert**|Fragment argument określa jedyną prawidłową sekwencji. Zazwyczaj używane w obrębie fragmentu rozważ lub Ignoruj.|  
-|**minus**|Sekwencja przedstawione w tym fragmencie nie musi realizowane. Zazwyczaj używane w obrębie fragmentu rozważ lub Ignoruj.|  
-  
-## <a name="see-also"></a>Zobacz też  
- [Diagramy sekwencji UML: Wytyczne dotyczące](../modeling/uml-sequence-diagrams-guidelines.md)   
- [Diagramy sekwencji UML: Odwołanie](../modeling/uml-sequence-diagrams-reference.md)   
- [Edytowanie modeli i diagramów UML](../modeling/edit-uml-models-and-diagrams.md)
+    > Różne rodzaje połączonego fragmentu mają różne właściwości.
+
+## <a name="KindsOfFragment"></a>Rodzaje połączonego fragmentu
+
+### <a name="fragments-describing-control-flow"></a>Fragmenty opisujące przepływ sterowania
+ Prosty diagram sekwencji pokazuje tylko jedną typową sekwencję. Możesz użyć następujących typów połączonych fragmentów, aby opisać różnice, które mogą wystąpić w różnych przypadkach.
+
+|Typ fragmentu|Opis|
+|-------------------|-----------------|
+|**Uszlachetniania**|Opcjonalny. Obejmuje sekwencję, która może być lub może nie wystąpić. W strażniku można określić warunek, pod którym występuje.|
+|**+**|Zawiera listę fragmentów zawierających Alternatywne sekwencje komunikatów. Tylko jedna sekwencja występuje w dowolnym momencie.<br /><br /> W każdym fragmencie można umieścić funkcję Guard, aby wskazać, w jaki sposób można jej uruchomić. Funkcja **else** wskazuje fragment, który powinien zostać uruchomiony, jeśli żadna inna ochrona nie ma wartości true. Jeśli wszystkie zabezpieczenia mają wartość false i nie ma żadnych **innych**, nie są wykonywane żadne fragmenty.|
+|**For**|Fragment powtarza liczbę razy. W obszarze Ochrona można wskazać warunek, pod którym powinien on być powtarzany.<br /><br /> Połączone fragmenty pętli mają właściwości **min** i **Max**, które wskazują minimalną i maksymalną liczbę przypadków, w których fragment może być powtórzony. Wartość domyślna nie jest ograniczeniem.|
+|**Przerwij**|W przypadku wykonania tego fragmentu pozostała część sekwencji zostanie porzucona. Możesz użyć funkcji Guard, aby wskazać stan, w którym nastąpi przerwanie.|
+|**Cena**|Równoległ. Zdarzenia w fragmentach mogą być przeplatane.|
+|**Najistotniejsz**|Używany w fragmencie par lub SEQ. Wskazuje, że komunikaty w tym fragmencie nie mogą być przeplotem z innymi komunikatami.|
+|**Sekwencja**|Istnieją co najmniej dwa fragmenty operandu. Komunikaty dotyczące tej samej linii życia muszą wystąpić w kolejności fragmentów. W przypadku, gdy nie obejmują tych samych linii życia, komunikaty z różnych fragmentów mogą być przeplatane równolegle.|
+|**Surowszych**|Istnieją co najmniej dwa fragmenty operandu. Fragmenty muszą wystąpić w określonej kolejności.|
+
+### <a name="fragments-about-how-to-interpret-the-sequence"></a>Fragmenty informacji o sposobie interpretowania sekwencji
+ Domyślnie diagram sekwencji stanowi szereg komunikatów, które mogą być wykonywane. W uruchomionym systemie mogą wystąpić inne komunikaty, które nie zostały wybrane do wyświetlenia na diagramie.
+
+ Aby zmienić tę interpretację, można użyć następujących typów fragmentów.
+
+|Typ fragmentu|Opis|
+|-------------------|-----------------|
+|**Pod**|Określa listę komunikatów, które opisano w tym fragmencie. Inne komunikaty mogą wystąpić w uruchomionym systemie, ale nie są istotne do celów tego opisu.<br /><br /> Wpisz listę we właściwości **messages** .|
+|**Ignoruj**|Lista komunikatów, które nie opisują ten fragment. Mogą występować w uruchomionym systemie, ale nie są istotne do celów tego opisu.<br /><br /> Wpisz listę we właściwości **messages** .|
+|**Stanowcz**|Fragment operandu określa jedyne prawidłowe sekwencje. Zwykle używane w fragmencie rozważania lub ignorowania.|
+|**Śledz**|Sekwencja pokazana w tym fragmencie nie może wystąpić. Zwykle używane w fragmencie rozważania lub ignorowania.|
+
+## <a name="see-also"></a>Zobacz też
+ [Diagramy sekwencji UML: wytyczne](../modeling/uml-sequence-diagrams-guidelines.md) [diagramy sekwencji UML: dokumentacja](../modeling/uml-sequence-diagrams-reference.md) [Edycja modeli UML i diagramów](../modeling/edit-uml-models-and-diagrams.md)

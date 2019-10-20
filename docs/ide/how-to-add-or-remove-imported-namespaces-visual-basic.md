@@ -9,23 +9,23 @@ helpviewer_keywords:
 - imported namespaces [Visual Studio]
 - references [Visual Studio], imported namespaces
 ms.assetid: 44cebec3-0ea0-47c2-8406-4edeab6a997e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c443f966265f70a729e2fd433353c4856a1f8c6
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 8ff6ad1a07440b27b679fa3f749c24a6d3157dbd
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924050"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654653"
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Instrukcje: Dodawanie lub usuwanie importowanych przestrzeni nazw (Visual Basic)
 
-Importowanie przestrzeni nazw pozwala używać elementów z tej przestrzeni nazw w kodzie bez w pełni zakwalifikowania elementu. Na przykład jeśli `Create` chcesz uzyskać dostęp do metody `System.Messaging.MessageQueue` w klasie `System.Messaging` , możesz zaimportować przestrzeń nazw i odwołać się do elementu, który jest potrzebny w kodzie jako `MessageQueue.Create`.
+Importowanie przestrzeni nazw pozwala używać elementów z tej przestrzeni nazw w kodzie bez w pełni zakwalifikowania elementu. Na przykład jeśli chcesz uzyskać dostęp do metody `Create` w klasie `System.Messaging.MessageQueue`, możesz zaimportować przestrzeń nazw `System.Messaging` i po prostu odwołać się do elementu, którego potrzebujesz w kodzie jako `MessageQueue.Create`.
 
-Importowane przestrzenie nazw są zarządzane na stronie **odwołania** **projektanta projektu**. Importy określone w tym oknie dialogowym są przesyłane bezpośrednio do kompilatora ( */Imports —* ) i stosowane do wszystkich plików w projekcie. `Imports` Użyj instrukcji, aby użyć przestrzeni nazw w jednym pliku kodu źródłowego.
+Importowane przestrzenie nazw są zarządzane na stronie **odwołania** **projektanta projektu**. Importy określone w tym oknie dialogowym są przesyłane bezpośrednio do kompilatora ( */Imports —* ) i stosowane do wszystkich plików w projekcie. Użyj instrukcji `Imports`, aby użyć przestrzeni nazw w jednym pliku kodu źródłowego.
 
 ### <a name="to-add-an-imported-namespace"></a>Aby dodać zaimportowaną przestrzeń nazw
 
@@ -47,9 +47,9 @@ Importowane przestrzenie nazw są zarządzane na stronie **odwołania** **projek
 3. Na liście **zaimportowanych obszarów nazw** Usuń zaznaczenie pola wyboru dla przestrzeni nazw, która ma zostać usunięta.
 
 ## <a name="user-imports"></a>Importy użytkowników
-Importy użytkowników umożliwiają importowanie określonej klasy w przestrzeni nazw, a nie całej przestrzeni nazw. Na przykład aplikacja może mieć import dla <xref:System.Diagnostics> przestrzeni nazw, ale jedyną klasą w tej przestrzeni nazw, która Cię interesuje, `Debug` jest Klasa. Można zdefiniować <xref:System.Diagnostics.Debug> jako import użytkownika, a następnie usunąć import dla <xref:System.Diagnostics>.
+Importy użytkowników umożliwiają importowanie określonej klasy w przestrzeni nazw, a nie całej przestrzeni nazw. Na przykład aplikacja może mieć import dla przestrzeni nazw <xref:System.Diagnostics>, ale jedyną klasą w tej przestrzeni nazw, która Cię interesuje, jest Klasa `Debug`. Można zdefiniować <xref:System.Diagnostics.Debug> jako import użytkownika, a następnie usunąć import dla <xref:System.Diagnostics>.
 
-Jeśli później zmienisz zdanie i zdecydujesz, że naprawdę była to `EventLog` wymagana Klasa, możesz wprowadzić <xref:System.Diagnostics.EventLog> jako import i zastępować <xref:System.Diagnostics.Debug> użytkownika przy użyciu funkcji aktualizacji.
+Jeśli później zmienisz zdanie i zdecydujesz, że było to naprawdę konieczne `EventLog` klasie, możesz wprowadzić <xref:System.Diagnostics.EventLog> jako import i zastępować <xref:System.Diagnostics.Debug> przy użyciu funkcji aktualizacji.
 
 ### <a name="to-add-a-user-import"></a>Aby dodać Importowanie użytkownika
 

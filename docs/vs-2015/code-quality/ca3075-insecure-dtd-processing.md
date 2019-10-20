@@ -1,19 +1,19 @@
 ---
-title: 'CA3075: Niezabezpieczone przetwarzanie definicji DTD | Dokumentacja firmy Microsoft'
+title: 'CA3075: niezabezpieczone przetwarzanie DTD | Microsoft Docs'
 ms.date: 11/15/2016
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 ms.assetid: 65798d66-7a30-4359-b064-61a8660c1eed
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 694b72327d8e059fe12a227afdab79219081ef92
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 7cf9da2f295d94ac68c74039458f4cdbfda3ae5c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65693416"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661623"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075: Niezabezpieczone przetwarzanie definicji DTD
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,59 +23,59 @@ ms.locfileid: "65693416"
 |TypeName|InsecureDTDProcessing|
 |CheckId|CA3075|
 |Kategoria|Microsoft.Security|
-|Zmiana kluczowa|Bez podziału|
+|Zmiana kluczowa|Bez przerywania|
 
 ## <a name="cause"></a>Przyczyna
- Jeśli używasz niezabezpieczone <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> wystąpień lub odwołanie do jednostki zewnętrznej źródeł, analizator może akceptować niezaufanych danych wejściowych i ujawnienia poufnych informacji dla osób atakujących.
+ W przypadku używania niezabezpieczonych wystąpień <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> lub odwołań do zewnętrznych źródeł jednostek Analizator może akceptować niezaufane dane wejściowe i ujawniać poufne informacje osobom atakującym.
 
 ## <a name="rule-description"></a>Opis reguły
- A [definicji typu dokumentu (DTD)](https://msdn.microsoft.com/library/aa468547.aspx) jest jeden z dwóch sposobów analizatora XML można określić ważności dokumentu, zgodnie z definicją [World Wide Web Consortium (W3C) XML Extensible Markup Language () 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Ta reguła szuka właściwości i wystąpienia, gdzie niezaufanych danych jest akceptowany w celu otrzymania deweloperów o potencjalnych [ujawnienie informacji](https://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) zagrożenia, które mogą prowadzić do [przeprowadzenie ataku typu "odmowa usługi" (DoS)](https://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) ataków. Ta zasada wyzwala, gdy:
+ [Definicja typu dokumentu (DTD)](https://msdn.microsoft.com/library/aa468547.aspx) to jeden z dwóch sposobów, przez który parser XML może ustalić ważność dokumentu, zgodnie z definicją [organizacja World Wide Web Consortium (W3C) XML (XML) 1,0](http://www.w3.org/TR/2008/REC-xml-20081126/). Ta reguła umożliwia wyszukiwanie właściwości i wystąpień, w przypadku których niezaufane dane są akceptowane, aby ostrzec deweloperów o potencjalnych zagrożeniach związanych z [ujawnianiem informacji](https://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) , co może prowadzić do ataków [typu "odmowa usługi" (DOS)](https://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) . Ta zasada wyzwala następujące wyzwalacze:
 
-- Włączono XmlReaderSettings <xref:System.Xml.XmlReader> wystąpienia, który jest rozpoznawany jako zewnętrzne jednostki XML przy użyciu <xref:System.Xml.XmlUrlResolver>.
+- DtdProcessing jest włączona w wystąpieniu <xref:System.Xml.XmlReader>, które rozpoznaje zewnętrzne jednostki XML przy użyciu <xref:System.Xml.XmlUrlResolver>.
 
-- <xref:System.Xml.XmlNode.InnerXml%2A> Ustawiono właściwość w pliku XML.
+- Właściwość <xref:System.Xml.XmlNode.InnerXml%2A> w pliku XML jest ustawiona.
 
-- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> wartość właściwości jest równa analizy.
+- Właściwość <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> jest ustawiona na wartość Parse.
 
-- Niezaufane dane wejściowe zostanie przetworzona przy użyciu <xref:System.Xml.XmlResolver> zamiast <xref:System.Xml.XmlSecureResolver> .
+- Niezaufane dane wejściowe są przetwarzane przy użyciu <xref:System.Xml.XmlResolver>, a nie <xref:System.Xml.XmlSecureResolver>.
 
-- Element XmlReader.<xref:System.Xml.XmlReader.Create%2A> Metoda jest wywoływana za pomocą niezabezpieczonego <xref:System.Xml.XmlReaderSettings> wystąpienia lub nie wcale.
+- Element XmlReader. <xref:System.Xml.XmlReader.Create%2A> Metoda jest wywoływana z niezabezpieczonym wystąpieniem <xref:System.Xml.XmlReaderSettings> lub w ogóle nie ma żadnego wystąpienia.
 
-- <xref:System.Xml.XmlReader> jest tworzona przy użyciu ustawień domyślnych niezabezpieczone lub wartości.
+- <xref:System.Xml.XmlReader> jest tworzony z niezabezpieczonymi domyślnymi ustawieniami lub wartościami.
 
-  W każdym z tych przypadków, wynik jest taki sam: zawartość z dowolnego systemu lub sieci udziały plików na komputerze, gdzie jest przetwarzany plik XML, będzie ona widoczna dla osoby atakującej, może być następnie użyta jako wektor systemu DoS.
+  W każdym z tych przypadków wynik jest taki sam: zawartość z systemu plików lub udziałów sieciowych z komputera, na którym jest przetwarzany kod XML, zostanie uwidoczniona dla osoby atakującej, która może być następnie użyta jako wektor DoS.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-- CATCH i przetwórz wszystkie wyjątki klasy XmlTextReader poprawnie, aby uniknąć ujawnienia informacji ścieżki.
+- Należy prawidłowo przechwycić i przetworzyć wszystkie wyjątki XmlTextReader, aby uniknąć ujawnienia informacji o ścieżce.
 
-- Użyj <xref:System.Xml.XmlSecureResolver> do ograniczania zasobów, które mogą uzyskiwać dostęp do klasy XmlTextReader.
+- Użyj  <xref:System.Xml.XmlSecureResolver>, aby ograniczyć zasoby, do których XmlTextReader może uzyskać dostęp.
 
-- Nie zezwalaj na <xref:System.Xml.XmlReader> otworzyć dowolnych zasobów zewnętrznych, ustawiając <xref:System.Xml.XmlResolver> właściwości **null**.
+- Nie Zezwalaj  <xref:System.Xml.XmlReader> na otwieranie dowolnych zasobów zewnętrznych przez ustawienie właściwości <xref:System.Xml.XmlResolver> na **wartość null**.
 
-- Upewnij się, że <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A> właściwość <xref:System.Data.DataViewManager> jest przydzielany z zaufanego źródła.
+- Upewnij się, że właściwość <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A> <xref:System.Data.DataViewManager> jest przypisana z zaufanego źródła.
 
-  .NET 3.5 i starszych
+  .NET 3,5 i starsze
 
-- Wyłącz przetwarzanie DTD, jeśli masz do czynienia ze źródeł niezaufanych, ustawiając <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> właściwości **true** .
+- Wyłącz przetwarzanie DTD w przypadku postępowania z niezaufanymi źródłami, ustawiając właściwość  <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> na **wartość true** .
 
-- Klasy XmlTextReader ma dziedziczenia pełnego zaufania. Zobacz [Inheritancedemand](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) Aby uzyskać więcej informacji.
+- Klasa XmlTextReader ma pełne żądanie dziedziczenia zaufania. Aby uzyskać więcej informacji, zobacz [wymagania dotyczące dziedziczenia](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) .
 
   .NET 4 i nowsze
 
-- Unikaj włączania XmlReaderSettings, jeśli są zajmujących źródeł niezaufanych, ustawiając właściwość XmlReaderSettings [Zabroń lub Ignoruj](https://msdn.microsoft.com/library/system.xml.dtdprocessing.aspx)
+- Unikaj włączania DtdProcessing w przypadku korzystania z niezaufanych źródeł przez ustawienie właściwości DtdProcessing na wartość [Zabroń lub zignoruj](https://msdn.microsoft.com/library/system.xml.dtdprocessing.aspx)
 
-- Upewnij się, że metoda Load() przyjmuje instancję XmlReader we wszystkich przypadkach elementu.
+- Upewnij się, że metoda Load () przyjmuje wystąpienie elementu XmlReader we wszystkich przypadkach InnerXml.
 
 > [!NOTE]
-> Ta zasada może raportować pewnych wystąpień z prawidłową XmlSecureResolver wyników fałszywie dodatnich. Pracujemy nad rozwiązywania tego problemu przez mid 2016.
+> Ta reguła może zgłosić fałszywie dodatnie dla niektórych prawidłowych wystąpień XmlSecureResolver. Pracujemy nad rozwiązaniem tego problemu w witrynie Mid 2016.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Jeśli nie masz pewności, że dane wejściowe jest znany jako z zaufanego źródła, nie Pomijaj reguły z tego ostrzeżenia.
+ Jeśli nie masz pewności, że dane wejściowe są znane z zaufanego źródła, nie pomijaj reguły z tego ostrzeżenia.
 
-## <a name="pseudo-code-examples"></a>Przykłady pseudo-kodu
+## <a name="pseudo-code-examples"></a>Przykłady pseudo kodu
 
-### <a name="violation"></a>Naruszenie zasad
+### <a name="violation"></a>Krocz
 
 ```csharp
 using System.IO;
@@ -119,7 +119,7 @@ class TestClass
 }
 ```
 
-### <a name="violation"></a>Naruszenie zasad
+### <a name="violation"></a>Krocz
 
 ```csharp
 using System.Xml;
@@ -159,7 +159,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="violations"></a>Naruszenia
+### <a name="violations"></a>Ze
 
 ```csharp
 using System.Xml;
@@ -207,7 +207,7 @@ public static void TestMethod(string xml)
 }
 ```
 
-### <a name="violation"></a>Naruszenie zasad
+### <a name="violation"></a>Krocz
 
 ```csharp
 using System.IO;
@@ -248,7 +248,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="violation"></a>Naruszenie zasad
+### <a name="violation"></a>Krocz
 
 ```csharp
 using System.Xml;
@@ -285,7 +285,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="violation"></a>Naruszenie zasad
+### <a name="violation"></a>Krocz
 
 ```csharp
 using System.Xml;
@@ -313,7 +313,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="violations"></a>Naruszenia
+### <a name="violations"></a>Ze
 
 ```csharp
 using System.Xml;

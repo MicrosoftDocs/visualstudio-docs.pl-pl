@@ -1,32 +1,32 @@
 ---
-title: 'Instrukcje: Włączanie i wyłączanie automatycznej analizy kodu dla kodu zarządzanego | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Włączanie i wyłączanie automatycznej analizy kodu zarządzanego | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 ms.assetid: 7c22d194-5fea-4f23-b02d-19344fa64a64
 caps.latest.revision: 10
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: c4f5de2926cb38f570defa95463489523c694132
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d87cc57b31e63ae7aafa53c335df2b56f86a0409
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68142286"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658103"
 ---
-# <a name="how-to-enable-and-disable-automatic-code-analysis-for-managed-code"></a>Instrukcje: Włączanie i wyłączanie automatycznej analizy kodu dla kodu zarządzanego
+# <a name="how-to-enable-and-disable-automatic-code-analysis-for-managed-code"></a>Porady: włączanie i wyłączanie automatycznej analizy kodu dla zarządzanego kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Można skonfigurować analizy kodu do uruchomienia przed każdej kompilacji projektu kodu zarządzanego. Możesz ustawić różne właściwości analizy kodu dla każdego [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] konfiguracji.  
-  
-### <a name="to-enable-or-disable-automatic-code-analysis"></a>Włączanie lub wyłączanie automatycznej analizy kodu  
-  
-1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt, a następnie kliknij przycisk **właściwości**.  
-  
-2. W oknie dialogowym właściwości projektu, kliknij przycisk **analizy kodu**.  
-  
-3. Określ typ kompilacji w **konfiguracji** i platformy docelowej w **platformy**.  
-  
-4. Aby włączyć lub wyłączyć automatycznej analizy kodu, zaznacz lub wyczyść **Włącz analizę kodu podczas kompilacji (definiuje stałą CODE_ANALYSIS)** pole wyboru.
+Można skonfigurować analizę kodu do uruchomienia przed każdą kompilacją projektu kodu zarządzanego. Dla każdej konfiguracji [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] można ustawić różne właściwości analizy kodu.
+
+### <a name="to-enable-or-disable-automatic-code-analysis"></a>Aby włączyć lub wyłączyć automatyczną analizę kodu
+
+1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt, a następnie kliknij polecenie **Właściwości**.
+
+2. W oknie dialogowym właściwości projektu kliknij pozycję **Analiza kodu**.
+
+3. Określ typ kompilacji w obszarze **Konfiguracja** i platforma docelowa na **platformie**.
+
+4. Aby włączyć lub wyłączyć automatyczną analizę kodu, zaznacz lub wyczyść pole wyboru **Włącz analizę kodu podczas kompilacji (definiuje stałą CODE_ANALYSIS)** .

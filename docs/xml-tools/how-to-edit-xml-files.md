@@ -1,21 +1,21 @@
 ---
-title: 'Instrukcje: Edytowanie plików XML'
+title: 'Instrukcje: edytowanie plików XML'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 07fa3ecf-6345-4d30-9d85-d5ef5b083319
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bcc560c1e0cabd222da68e98de18d7b8bef6ec6
-ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
+ms.openlocfilehash: fd8671bf45230ec24a37d5006a2d32e5aabe8f28
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68483409"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645921"
 ---
-# <a name="how-to-edit-xml-files"></a>Instrukcje: Edytowanie plików XML
+# <a name="how-to-edit-xml-files"></a>Instrukcje: edytowanie plików XML
 
 Edytor XML jest nowym edytorem plików XML. Może być używany w autonomicznym pliku XML lub w pliku skojarzonym z projektem programu Visual Studio. Edytor XML jest skojarzony z następującymi rozszerzeniami plików: *. config*, *. DTD*, *. XML*, *. xsd*, *. XDR*, *. xsl*, *. XSLT*i *. vssettings*. Edytor XML jest również skojarzony z innym typem pliku, który nie ma określonego edytora, i zawiera zawartość XML lub DTD.
 
@@ -56,9 +56,9 @@ Aby edytować plik XML, kliknij dwukrotnie plik, który chcesz edytować.
 
 ::: moniker range="vs-2017"
 
-1. Z menu **plik** wybierz pozycję **Nowy** > **projekt**.
+1. Z menu **plik** wybierz pozycję **Nowy** **projekt**>.
 
-   **Nowy projekt** pojawi się okno dialogowe.
+   Pojawi się okno dialogowe **Nowy projekt** .
 
 2. Wybierz wybrany język kodu, a następnie wybierz szablon **pusty projekt (.NET Framework)** .
 
@@ -68,7 +68,7 @@ Aby edytować plik XML, kliknij dwukrotnie plik, który chcesz edytować.
 
 ::: moniker range=">=vs-2019"
 
-1. Z menu **plik** wybierz pozycję **Nowy** > **projekt**.
+1. Z menu **plik** wybierz pozycję **Nowy** **projekt**>.
 
 2. W polu wyszukiwania szablonu wprowadź **pusty projekt** , wybierz szablon **pusty projekt (.NET Framework)** , a następnie kliknij przycisk **dalej**.
 

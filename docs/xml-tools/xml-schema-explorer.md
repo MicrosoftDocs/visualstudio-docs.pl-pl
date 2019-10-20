@@ -3,21 +3,21 @@ title: Eksplorator schematu XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2fc39e98-b194-456b-a452-cfafb0a52d66
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 717a5d85a9d3a3251739b62728be572bee1487f6
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 9350e4ca41661e6bc9613d036ad4dd2a978a706d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926784"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72608093"
 ---
 # <a name="xml-schema-explorer"></a>Eksplorator schematu XML
 
-**Eksplorator schematu XML** jest zintegrowany z Microsoft Visual Studio i edytorem XML umożliwiającym współdziałanie z schematami języka definicji schematu XML (XSD). Po otwarciu pliku schematu XML węzeł **zestawu schematów** pojawia się w **Eksploratorze schematu XML**. Wszystkie dołączone, zaimportowane lub ponownie zdefiniowane schematy dla pliku docelowego, a także wszystkie pliki, do których odwołuje `include` się instrukcja lub `import` , również są wyświetlane w **Eksploratorze schematu XML**.
+**Eksplorator schematu XML** jest zintegrowany z Microsoft Visual Studio i edytorem XML umożliwiającym współdziałanie z schematami języka definicji schematu XML (XSD). Po otwarciu pliku schematu XML węzeł **zestawu schematów** pojawia się w **Eksploratorze schematu XML**. Wszystkie dołączone, zaimportowane lub ponownie zdefiniowane schematy dla pliku docelowego, a także wszystkie pliki, do których odwołuje się instrukcja `include` lub `import`, również są wyświetlane w **Eksploratorze schematu XML**.
 
 **Eksplorator schematu XML** umożliwia wykonywanie następujących czynności:
 
@@ -54,7 +54,7 @@ W **Eksploratorze schematu XML** są wyświetlane wstępnie skompilowane informa
 
 - Trzeci poziom zawiera pliki.
 
-- Czwarty poziom zawiera węzły globalne. Może to obejmować elementy, grupy, typy złożone, typy proste, atrybuty, grupy atrybutów i `include` `import` `redefine` instrukcje.
+- Czwarty poziom zawiera węzły globalne. Może to obejmować elementy, grupy, typy złożone, typy proste, atrybuty, grupy atrybutów i instrukcje `include`, `import` i `redefine`.
 
 Oto przykład struktury drzewa:
 
@@ -67,7 +67,7 @@ Aby uaktywnić węzeł, kliknij go dwukrotnie lub naciśnij klawisz **Enter** po
 
 - Aktywowanie węzła otwiera plik, w którym jest zdefiniowany ten węzeł (Jeśli plik nie jest jeszcze otwarty) i wybiera węzeł w pliku.
 
-- Aktywowanie węzła pliku otwiera wybrany plik (jeśli nie jest jeszcze otwarty) i podświetla `<schema>` węzeł.
+- Aktywowanie węzła pliku otwiera wybrany plik (jeśli nie jest jeszcze otwarty) i podświetla węzeł `<schema>`.
 
 - Aktywowanie węzła SchemaSet lub obszaru nazw nie robi nic.
 

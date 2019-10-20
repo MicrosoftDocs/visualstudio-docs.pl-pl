@@ -4,19 +4,19 @@ ms.date: 01/02/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - item templates [Visual Studio], creating
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a861843da139701c23e38df11c7ad380c047a846
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d213ef7cd1c45043efbaad9fca4317f7a693bf4f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823931"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655845"
 ---
 # <a name="how-to-create-item-templates"></a>Instrukcje: Tworzenie szablonów elementów
 
-W tym artykule pokazano, jak utworzyć szablon elementu za pomocą **Kreatora eksportowania szablonu**. Jeśli Twój szablon będzie składać się z wielu plików, zobacz [jak: Tworzenie szablonów elementów wielu plików](../ide/how-to-create-multi-file-item-templates.md).
+W tym artykule przedstawiono sposób tworzenia szablonu elementu przy użyciu **Kreatora eksportu szablonów**. Jeśli szablon będzie zawierać wiele plików, zobacz [jak: Tworzenie szablonów elementów wieloplikowych](../ide/how-to-create-multi-file-item-templates.md).
 
 ## <a name="add-an-item-template-to-the-add-new-item-dialog-box"></a>Dodaj szablon elementu do okna dialogowego Dodaj nowy element
 
@@ -24,59 +24,59 @@ W tym artykule pokazano, jak utworzyć szablon elementu za pomocą **Kreatora ek
 
 1. Dodaj element do projektu i zmodyfikuj go, jeśli chcesz.
 
-1. Zmodyfikuj plik kodu, aby wskazać, gdzie wymiany parametru powinny zostać wykonane. Aby uzyskać więcej informacji, zobacz [jak: Zastępowanie parametrów w szablonie](../ide/how-to-substitute-parameters-in-a-template.md).
+1. Zmodyfikuj plik kodu, aby wskazać miejsce zastąpienia parametrów. Aby uzyskać więcej informacji, zobacz [jak: zastępowanie parametrów w szablonie](../ide/how-to-substitute-parameters-in-a-template.md).
 
-1. Na **projektu** menu, wybierz **Eksportuj szablon**.
+1. W menu **projekt** wybierz polecenie **Eksportuj szablon**.
 
-1. Na **wybierz typ szablonu** wybierz **szablon elementu**, wybierz projekt, który zawiera element, a następnie wybierz **dalej**.
+1. Na stronie **Wybieranie typu szablonu** wybierz **szablon elementu**, wybierz projekt, który zawiera element, a następnie wybierz **dalej**.
 
-1. Na **wybierz element do eksportowania** wybierz element, który chcesz utworzyć szablon, a następnie wybierz **dalej**.
+1. Na stronie **Wybierz element do eksportowania** wybierz element, dla którego chcesz utworzyć szablon, a następnie wybierz przycisk **dalej**.
 
-1. Na **wybierz odwołania do elementu** wybierz odwołania do zestawów do uwzględnienia w szablonie, a następnie wybierz **dalej**.
+1. Na stronie **Wybierz odwołania do elementów** wybierz odwołania do zestawu do uwzględnienia w szablonie, a następnie wybierz **dalej**.
 
-1. Na **wybierz opcje szablonu** strony, wprowadź nazwę szablonu i opcjonalny opis, obraz ikony i obraz podglądu, a następnie wybierz **Zakończ**.
+1. Na stronie **Wybieranie opcji szablonu** wprowadź nazwę szablonu i opcjonalny opis, obraz ikony i obraz podglądu, a następnie wybierz przycisk **Zakończ**.
 
-    Pliki szablonu zostaną dodane do *zip* pliku i kopiowane do katalogu, określone w kreatorze. Domyślna lokalizacja to *%USERPROFILE%\Documents\Visual Studio \<wersji\>\My wyeksportowane szablony*.
+    Pliki szablonu są dodawane do pliku *zip* i kopiowane do katalogu określonego w kreatorze. Domyślna lokalizacja to *%USERPROFILE%\Documents\Visual Studio \<version \> \Moje wyeksportowane szablony*.
 
-1. Jeśli nie wybrana opcja **automatycznie zaimportuj szablon do programu Visual Studio** w **Kreatora eksportowania szablonu**, zlokalizuj wyeksportowanego szablonu. Następnie skopiuj go do katalogu szablonów elementu użytkownika. Domyślna lokalizacja to *%USERPROFILE%\Documents\Visual Studio \<wersji\>\Templates\ItemTemplates*.
+1. Jeśli nie wybrano opcji **automatycznie Importuj szablon do programu Visual Studio** w **Kreatorze eksportu szablonów**, zlokalizuj wyeksportowany szablon. Następnie skopiuj go do katalogu szablonów elementu użytkownika. Domyślna lokalizacja to *%USERPROFILE%\Documents\Visual Studio \<version \> \templates\itemtemplates*.
 
 1. Zamknij program Visual Studio, a następnie otwórz go ponownie.
 
-1. Utwórz nowy projekt lub Otwórz istniejący projekt, a następnie wybierz **projektu** > **Dodaj nowy element** lub naciśnij **Ctrl** +  **SHIFT**+**A**.
+1. Utwórz nowy projekt lub Otwórz istniejący projekt, a następnie wybierz **projekt**  > **Dodaj nowy element** lub naciśnij **klawisze CTRL** +**SHIFT** +**a**.
 
-   Szablon elementu jest wyświetlany w **Dodaj nowy element** okno dialogowe. Jeśli dodano opis w **Kreatora eksportowania szablonu**, opis, który jest wyświetlany po prawej stronie okna dialogowego.
+   Szablon elementu pojawia się w oknie dialogowym **Dodaj nowy element** . Jeśli dodano opis w **Kreatorze eksportu szablonów**, opis pojawia się po prawej stronie okna dialogowego.
 
-## <a name="enable-the-item-template-to-be-used-in-a-universal-windows-app-project"></a>Włącz szablon elementu, który ma być używany w projekcie aplikacji uniwersalnej Windows
+## <a name="enable-the-item-template-to-be-used-in-a-universal-windows-app-project"></a>Włącz szablon elementu, który ma być używany w projekcie aplikacji uniwersalnej systemu Windows
 
-Kreator wykonuje większość pracy, aby utworzyć podstawowy szablon, ale w wielu przypadkach należy ręcznie zmodyfikować *.vstemplate* pliku po wyeksportowaniu szablonu. Na przykład, jeśli chcesz, aby element był wyświetlany w **Dodaj nowy element** okno dialogowe projektu aplikacji uniwersalnej Windows, należy wykonać kilka dodatkowych kroków.
+Kreator wykonuje wiele zadań, aby utworzyć podstawowy szablon, ale w wielu przypadkach trzeba ręcznie zmodyfikować plik *vstemplate* po wyeksportowaniu szablonu. Na przykład jeśli chcesz, aby element pojawił się w oknie dialogowym **Dodaj nowy element** dla projektu uniwersalnej aplikacji systemu Windows, musisz wykonać kilka dodatkowych kroków.
 
 1. Wykonaj kroki opisane w poprzedniej sekcji, aby wyeksportować szablon elementu.
 
-1. Wyodrębnij *zip* pliku, który został utworzony i otwarty *.vstemplate* pliku w programie Visual Studio.
+1. Wyodrębnij utworzony plik *zip* , a następnie otwórz plik *. vstemplate* w programie Visual Studio.
 
-1. Aby uzyskać C# Universal Windows projektu, Dodaj następujący kod XML wewnątrz `<TemplateData>` elementu:
+1. W przypadku C# uniwersalnego projektu systemu Windows Dodaj następujący kod XML wewnątrz elementu `<TemplateData>`:
 
    ```xml
    <TemplateID>Microsoft.CSharp.Class</TemplateID>
    ```
 
-1. W programie Visual Studio, należy zapisać *.vstemplate* plik i zamknij go.
+1. W programie Visual Studio Zapisz plik *. vstemplate* i zamknij go.
 
-1. Skopiuj i Wklej *.vstemplate* pliku z powrotem na *zip* pliku.
+1. Skopiuj i wklej plik *. vstemplate* z powrotem do pliku *zip* .
 
-     Jeśli **kopiowania pliku** pojawi się okno dialogowe, wybierz **Kopiuj i Zamień** opcji.
+     Jeśli pojawi się okno dialogowe **Kopiuj plik** , wybierz opcję **Kopiuj i Zamień** .
 
-Możesz teraz dodać element oparty na tym szablonie do projektu Windows Universal z **Dodaj nowy element** okno dialogowe.
+Teraz można dodać element oparty na tym szablonie do uniwersalnego projektu systemu Windows w oknie dialogowym **Dodaj nowy element** .
 
-## <a name="enable-templates-for-specific-project-subtypes"></a>Włącz szablony dla określonego projektu podtypów
+## <a name="enable-templates-for-specific-project-subtypes"></a>Włączanie szablonów dla określonych podtypów projektów
 
-Można określić, czy szablon powinien pojawić się tylko dla tylko niektórych podtypy projektów, takich jak Windows, Office, bazy danych lub w sieci Web.
+Można określić, że szablon powinien występować tylko w przypadku niektórych podtypów projektów, takich jak Windows, Office, Database lub Web.
 
-1. Znajdź `ProjectType` element *.vstemplate* w pliku szablonu elementu.
+1. Znajdź `ProjectType` element w pliku *. vstemplate* szablonu elementu.
 
-1. Dodaj [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) element natychmiast po `ProjectType` elementu.
+1. Dodaj element [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) bezpośrednio po elemencie `ProjectType`.
 
-1. Ustaw wartość tekstowego elementu do jednego z następujących wartości:
+1. Ustaw wartość tekstową elementu na jedną z następujących wartości:
 
     - Windows
     - Office
@@ -85,7 +85,7 @@ Można określić, czy szablon powinien pojawić się tylko dla tylko niektóryc
 
 Na przykład: `<ProjectSubType>Database</ProjectSubType>`.
 
-W poniższym przykładzie pokazano szablon elementu dla **Office** projektów.
+Poniższy przykład pokazuje szablon elementu dla projektów **pakietu Office** .
 
 ```xml
 <VSTemplate Version="2.0.0" Type="Item" Version="2.0.0">
@@ -103,38 +103,38 @@ W poniższym przykładzie pokazano szablon elementu dla **Office** projektów.
 </VSTemplate>
 ```
 
-## <a name="manually-create-an-item-template"></a>Ręcznie utworzyć szablon elementu
+## <a name="manually-create-an-item-template"></a>Ręcznie Utwórz szablon elementu
 
-W niektórych przypadkach możesz chcieć ręcznie utworzyć szablon elementu od podstaw.
+W niektórych przypadkach może być konieczne ręczne utworzenie szablonu elementu od podstaw.
 
-1. Tworzenie projektu i elementu projektu.
+1. Utwórz projekt i element projektu.
 
-2. Zmodyfikuj element projektu, dopóki nie jest gotowa do zapisania jako szablonu.
+2. Zmodyfikuj element projektu do momentu, gdy będzie on gotowy do zapisania jako szablon.
 
-3. Zmodyfikuj plik kodu, aby wskazać, gdzie wymiany parametru wystąpi, jeśli w dowolnym miejscu. Aby uzyskać więcej informacji na temat wymiany parametru zobacz [jak: Zastępowanie parametrów w szablonie.](../ide/how-to-substitute-parameters-in-a-template.md)
+3. Zmodyfikuj plik kodu, aby wskazać miejsce zastąpienia parametru, jeśli jest to możliwe. Aby uzyskać więcej informacji na temat zastępowania parametrów, zobacz [How to: zastępowanie parametrów w szablonie.](../ide/how-to-substitute-parameters-in-a-template.md)
 
-4. Utwórz plik XML i zapisz go z *.vstemplate* rozszerzenie pliku, w tym samym katalogu co plik elementu projektu.
+4. Utwórz plik XML i Zapisz go przy użyciu rozszerzenia pliku *. vstemplate* w tym samym katalogu, w którym znajduje się plik elementu projektu.
 
-5. Edytuj *.vstemplate* plik XML do udostępnienia metadanych szablonu elementu. Aby uzyskać więcej informacji, zobacz [odwołanie do schematu szablonu (rozszerzalność)](../extensibility/visual-studio-template-schema-reference.md) i w przykładzie w poprzedniej sekcji.
+5. Edytuj plik XML *. vstemplate* , aby dostarczyć metadane szablonu elementu. Aby uzyskać więcej informacji, zobacz [Dokumentacja schematu szablonu (rozszerzalność)](../extensibility/visual-studio-template-schema-reference.md) i przykład w poprzedniej sekcji.
 
-6. Zapisz *.vstemplate* plik i zamknij go.
+6. Zapisz plik *. vstemplate* i zamknij go.
 
-7. W **Eksplorator Windows**, zaznacz pliki, które chcesz uwzględnić w szablonie. Kliknij prawym przyciskiem myszy zaznaczenie, a następnie wybierz **wysyłać** > **skompresowany folder (zip)**. Wybrane pliki są kompresowane do *zip* pliku.
+7. W **Eksploratorze Windows**wybierz pliki, które chcesz uwzględnić w szablonie. Kliknij prawym przyciskiem myszy zaznaczenie, a następnie wybierz polecenie **Wyślij do**  > **folderze skompresowanym (zip)** . Wybrane pliki są kompresowane do pliku *zip* .
 
 ::: moniker range="vs-2017"
 
-8. Kopiuj *zip* plików i wklej go w lokalizacji szablonów elementów użytkownika. Domyślny katalog jest *%USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates*. Aby uzyskać więcej informacji, zobacz [jak: Lokalizowanie i organizowanie szablonów projektów i elementów](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+8. Skopiuj plik *zip* i wklej go w lokalizacji szablonu elementu użytkownika. Domyślnym katalogiem jest *%USERPROFILE%\Documents\Visual Studio 2017 \ Templates\ItemTemplates*. Aby uzyskać więcej informacji, zobacz [How to: Lokalizowanie i organizowanie szablonów projektów i elementów](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-8. Kopiuj *zip* plików i wklej go w lokalizacji szablonów elementów użytkownika. Domyślny katalog jest *%USERPROFILE%\Documents\Visual Studio 2019\Templates\ItemTemplates*. Aby uzyskać więcej informacji, zobacz [jak: Lokalizowanie i organizowanie szablonów projektów i elementów](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+8. Skopiuj plik *zip* i wklej go w lokalizacji szablonu elementu użytkownika. Domyślnym katalogiem jest *%USERPROFILE%\Documents\Visual Studio 2019 \ Templates\ItemTemplates*. Aby uzyskać więcej informacji, zobacz [How to: Lokalizowanie i organizowanie szablonów projektów i elementów](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ::: moniker-end
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)
-- [Instrukcje: Tworzenie szablonów elementów wielu plików](../ide/how-to-create-multi-file-item-templates.md)
-- [Visual Studio odwołanie do schematu szablonu (rozszerzalność)](../extensibility/visual-studio-template-schema-reference.md)
+- [Instrukcje: Tworzenie szablonów elementów wieloplikowych](../ide/how-to-create-multi-file-item-templates.md)
+- [Odwołanie do schematu szablonu programu Visual Studio (rozszerzalność)](../extensibility/visual-studio-template-schema-reference.md)

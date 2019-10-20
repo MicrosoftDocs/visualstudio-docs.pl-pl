@@ -1,5 +1,5 @@
 ---
-title: Skróty klawiaturowe w Projektancie przepływu pracy | Dokumentacja firmy Microsoft
+title: Skróty klawiaturowe w Projektant przepływu pracy | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -8,83 +8,83 @@ f1_keywords:
 - WFDKeyboardShortcuts.UI
 ms.assetid: 9be75438-a4a3-4781-94e5-45b7ec082358
 caps.latest.revision: 4
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b1a03463d292fa1d4d980c62daa74b291d6a8cb1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6f7bc701c4a7009d402c778356a290ce4e129bb3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951960"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658974"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Skróty klawiaturowe w Projektancie przepływu pracy
-Wszystkie najważniejsze funkcje [!INCLUDE[wfd1](../includes/wfd1-md.md)] może zostać oceniony przez klawiatury.  
-  
-## <a name="navigating-the-workflow-designer-using-the-keyboard"></a>Nawigowanie w Projektancie przepływu pracy za pomocą klawiatury  
- Wewnątrz [!INCLUDE[vs2010](../includes/vs2010-md.md)], globalne skróty i debugowania skróty dotyczą [!INCLUDE[wfd2](../includes/wfd2-md.md)]. Ponadto wiele [!INCLUDE[wfd2](../includes/wfd2-md.md)] klawiszowych zostały utworzone. W [!INCLUDE[vs2010](../includes/vs2010-md.md)], wszystkie skróty klawiaturowe mogą być ponownie mapowany. Jednak w rehostowanym aplikacji, skróty klawiaturowe są zapisane na stałe.  
-  
-### <a name="workflow-designer-keyboard-shortcuts"></a>Skróty klawiaturowe w Projektancie przepływu pracy  
- W poniższej tabeli przedstawiono domyślne skróty klawiaturowe, przypisany do [!INCLUDE[wfd2](../includes/wfd2-md.md)] poleceń.  
-  
-|Skrót|Cel|  
-|--------------|-------------|  
-|CTRL+E, A|Pokazuje lub ukrywa projektanta argumentów.|  
-|CTRL+E, C|Zwija wybrane działanie w miejscu.|  
-|CTRL+E, E|Rozwija wybrane działanie w miejscu.|  
-|CTRL+E, F|Łączy wybrane działania w elemencie Schemat blokowy.|  
-|CTRL+E, I|Pokazuje lub ukrywa projektanta importów.|  
-|CTRL+E, M|Przenosi fokus klawiatury do następnego elementu w kolejności tabulacji.|  
-|CTRL+E, N|Tworzy nową zmienną zakresu wybranego działania (lub najbardziej).|  
-|CTRL+E, O|Pokazuje lub ukrywa mapowanie przeglądów.|  
-|CTRL+E, P|Powoduje przejście do elementu nadrzędnego wybranego działania. Przechodzi w górę o jeden poziom w nadrzędnych i zmienia działanie główne na powierzchni projektowej.|  
-|CTRL+E, S|Dodaje element z fokusem klawiatury do bieżącego zaznaczenia.|  
-|CTRL+E, V|Pokazuje lub ukrywa projektanta zmiennych.|  
-|CTRL+E, X|Rozwija wszystkie działania w przepływie pracy.|  
-|CTRL+ALT+F6|Przenosi fokus klawiatury z bieżącego obszaru interfejsu użytkownika do obszaru dalej w sekwencji. Kolejność jest następująca:<br /><br /> 1.  Pasek nawigacyjny łączy do stron nadrzędnych.<br />2.  Powierzchnia projektowa<br />3.  Projektanta argumentów/zmienne/importów, jeśli jest otwarty<br />4.  Powłoka|  
-  
-### <a name="flowchart"></a>Schemat blokowy  
- Na poniższej liście przedstawiono gestów, używaną do utworzenia schematu blokowego klawiatury. Tak jak w pozostałej części [!INCLUDE[wfd2](../includes/wfd2-md.md)], działania są dodawane do powierzchni projektanta za pomocą skrótów globalnego przybornika dołączonym [!INCLUDE[vs2010](../includes/vs2010-md.md)].  
-  
-- Aby przenieść działania, wybierz działanie, a następnie używaj klawiszy strzałek Aby zmienić położenie.  
-  
-- Aby zmienić rozmiar blokowego, Przenieś działanie poza granicą bieżącego schematu blokowego, używając klawiszy ze strzałkami. Schemat blokowy zmieniany jest automatycznie.  
-  
-- Aby ustawić działanie jako węzeł początkowy, użyj **ustawiony jako Węzeł_początkowy** polecenia w menu kontekstowym.  
-  
-- Aby połączyć działania:  
-  
-  1. Wybierz czynność źródła, przechodząc do działania.  
-  
-  2. Naciśnij klawisze CTRL + E, M tyle razy, zgodnie z potrzebami, aby przenieść fokus klawiatury na działanie docelowe.  
-  
-  3. Naciśnij klawisze CTRL + E, S, aby dodać działanie docelowe do wyboru.  
-  
-  4. Naciśnij klawisze CTRL + E, F, aby dodać łącznika ze źródła do miejsca docelowego.  
-  
-  Uwagi dotyczące łączenia działań przez klawiatury:  
-  
-- Aby włączyć wiele połączeń w tym samym czasie, dodając więcej działań do wyboru przed naciskając klawisze CTRL + E, F. Połączenia są nawiązywane w kolejności, czy działania zostały dodane do zaznaczenia.  
-  
-- Jeśli nie można połączyć dwa działania na przykład jeśli działania źródłowego ma już połączenia wychodzącego inne połączenia między działaniami w zaznaczeniu nadal zostały wprowadzone, jeśli to możliwe.  
-  
-- Gdy **FlowDecision** jest dołączony do zaznaczenia i **FlowDecision** ma Brak wychodzących łączników, łącznik jest umieszczany na **True** gałęzi.  
-  
-### <a name="expression-editing"></a>Edytowanie wyrażeń  
- Domyślnie, domyślne skróty klawiaturowe dla [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] edycji tekstu zastosować wewnątrz edytora wyrażeń w [!INCLUDE[wfd2](../includes/wfd2-md.md)], zastosowanie mają poniższe ograniczenia:  
-  
-- Ponowne mapowanie skróty klawiaturowe dla następujących poleceń nie ma znaczenia. Domyślne skróty klawiaturowe można używać tylko dostępu do tych poleceń podczas edycji wyrażenia.  
-  
-    1. Wytnij  
-  
-    2. Kopiuj  
-  
-    3. Wklej  
-  
-    4. Zaznacz wszystko  
-  
-    5. Cofnij  
-  
-    6. Wykonaj ponownie  
-  
-- Aby ponownie zamapować skróty klawiaturowe dla wyrażenia polecenia wewnątrz edycji [!INCLUDE[wfd2](../includes/wfd2-md.md)] w [!INCLUDE[vs2010](../includes/vs2010-md.md)], Edytuj skróty w [!INCLUDE[wfd2](../includes/wfd2-md.md)] zakresu. Zmiany wprowadzone w zakresie Edytor tekstu nie automatycznie dotyczą [!INCLUDE[wfd2](../includes/wfd2-md.md)]. Jeśli chcesz ponownie zmapować skróty w obu miejscach, należy najpierw zastosować zmiany dwukrotnie (raz dla każdego zakresu).
+Wszystkie podstawowe funkcje [!INCLUDE[wfd1](../includes/wfd1-md.md)] są dostępne na klawiaturze.
+
+## <a name="navigating-the-workflow-designer-using-the-keyboard"></a>Nawigowanie Projektant przepływu pracy przy użyciu klawiatury
+ Wewnątrz [!INCLUDE[vs2010](../includes/vs2010-md.md)], Skróty globalne i skróty debugowania mają zastosowanie do [!INCLUDE[wfd2](../includes/wfd2-md.md)]. Ponadto zostały utworzone różne [!INCLUDE[wfd2](../includes/wfd2-md.md)] skróty klawiaturowe. W [!INCLUDE[vs2010](../includes/vs2010-md.md)] wszystkie skróty klawiaturowe mogą być ponownie mapowane. Jednak w aplikacji przehostowanej te skróty klawiaturowe są stałe.
+
+### <a name="workflow-designer-keyboard-shortcuts"></a>Skróty klawiaturowe Projektant przepływu pracy
+ Poniższa tabela podsumowuje domyślne skróty klawiaturowe przypisane do poleceń [!INCLUDE[wfd2](../includes/wfd2-md.md)].
+
+|Skrót|Cel|
+|--------------|-------------|
+|CTRL + E, A|Pokazuje lub ukrywa projektanta argumentów.|
+|CTRL + E, C|Zwija wybrane działanie.|
+|CTRL + E, E|Rozwija wybrane działanie na miejscu.|
+|CTRL + E, F|Łączy wybrane działania w schemacie blokowym.|
+|CTRL + E, I|Pokazuje lub ukrywa projektanta importów.|
+|CTRL + E, M|Przesuwa fokus klawiatury do następnego elementu w kolejności tabulacji.|
+|CTRL + E, N|Tworzy nową zmienną w zakresie wybranego działania (lub najbliższą).|
+|CTRL + E, O|Pokazuje lub ukrywa mapę przeglądu.|
+|CTRL + E, P|Powoduje przejście do elementu nadrzędnego wybranego działania. Powoduje to przejście do jednego poziomu w nawigacji nawigacyjnej i zmianę działania głównego na powierzchni projektanta.|
+|CTRL + E, S|Dodaje element z fokusem klawiatury do bieżącego zaznaczenia.|
+|CTRL + E, V|Pokazuje lub ukrywa projektanta zmiennych.|
+|CTRL + E, X|Rozwija wszystkie działania w przepływie pracy.|
+|CTRL + ALT + F6|Przenosi fokus klawiatury z bieżącego obszaru interfejsu użytkownika do następnego obszaru w sekwencji. Kolejność jest następująca:<br /><br /> 1. pasek nawigacyjny.<br />2. powierzchnia projektanta<br />3. argumenty/zmienne/Importy projektant w przypadku otwarcia<br />4. Shell|
+
+### <a name="flowchart"></a>Schemat blokowy
+ Na poniższej liście przedstawiono gesty używane do konstruowania schematu blokowego za pomocą klawiatury. Tak jak w pozostałej części [!INCLUDE[wfd2](../includes/wfd2-md.md)] działania są dodawane do powierzchni projektanta przy użyciu globalnych skrótów przybornika dostępnych w [!INCLUDE[vs2010](../includes/vs2010-md.md)].
+
+- Aby przenieść działanie, wybierz działanie i użyj klawiszy strzałek, aby zmienić ich położenie.
+
+- Aby zmienić rozmiar schematu blokowego, Przenieś działanie poza bieżącą krawędź schematu blokowego za pomocą klawiszy strzałek. Automatycznie zmieniany jest rozmiar schematu blokowego.
+
+- Aby ustawić działanie jako węzeł początkowy, użyj polecenia **Set as parametr StartNode** w menu kontekstowym.
+
+- Aby połączyć działania:
+
+  1. Wybierz działanie źródłowe, naciskając klawisz Tab do działania.
+
+  2. Naciśnij klawisze CTRL + E, M tyle razy, ile jest to konieczne, aby przenieść fokus klawiatury do działania docelowego.
+
+  3. Naciśnij klawisze CTRL + E, aby dodać działanie docelowe do zaznaczenia.
+
+  4. Naciśnij klawisze CTRL + E, F, aby dodać łącznik ze źródła do miejsca docelowego.
+
+  Uwagi dotyczące łączenia działań według klawiatury:
+
+- Można utworzyć wiele połączeń w tym samym czasie, dodając więcej działań do zaznaczenia przed naciśnięciem kombinacji klawiszy CTRL + E, F. Połączenia są wykonywane w kolejności, w jakiej działania zostały dodane do zaznaczenia.
+
+- Jeśli para działań nie może być połączona, na przykład jeśli działanie źródłowe ma już połączenie wychodzące, inne połączenia między działaniami w ramach zaznaczenia nadal są wykonywane zawsze, gdy jest to możliwe.
+
+- Gdy **FlowDecision** jest dołączany do zaznaczenia, a **FlowDecision** nie ma łączników wychodzących, łącznik jest umieszczany w gałęzi **prawdy** .
+
+### <a name="expression-editing"></a>Edytowanie wyrażeń
+ Domyślnie domyślne skróty klawiaturowe do edycji tekstu [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] są stosowane w edytorze wyrażeń w programie [!INCLUDE[wfd2](../includes/wfd2-md.md)] z następującymi ograniczeniami:
+
+- Ponowne mapowanie skrótów klawiaturowych dla następujących poleceń nie ma żadnego wpływu. Możesz użyć domyślnych skrótów klawiaturowych, aby uzyskać dostęp do tych poleceń podczas edytowania wyrażenia.
+
+    1. Wytnij
+
+    2. Kopiuj
+
+    3. Wklej
+
+    4. Zaznacz wszystko
+
+    5. Anulowanie
+
+    6. Ponawia
+
+- Aby ponownie zamapować skróty klawiaturowe poleceń edycji wyrażeń wewnątrz [!INCLUDE[wfd2](../includes/wfd2-md.md)] w [!INCLUDE[vs2010](../includes/vs2010-md.md)], należy edytować skróty w zakresie [!INCLUDE[wfd2](../includes/wfd2-md.md)]. Zmiany wprowadzone w zakresie edytora tekstu nie są automatycznie stosowane do [!INCLUDE[wfd2](../includes/wfd2-md.md)]. Jeśli chcesz ponownie mapować skróty w obu miejscach, musisz zastosować zmiany dwukrotnie (raz dla każdego zakresu).

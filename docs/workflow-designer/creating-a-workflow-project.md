@@ -1,32 +1,32 @@
 ---
-title: Utwórz projekt Workflow Foundation
+title: Tworzenie projektu programu Workflow Foundation
 ms.date: 06/25/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - Workflow Designer, creating a workflow project
 - creating a workflow project
 ms.assetid: 235a125e-ebe7-4a98-bf77-86c8558728fb
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e19ec88a4dec7a13ecc3d77e5d4fc1f04bb114bd
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: f793e6ff468bdec6df499c5e5eb6b8524e9e4d5a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747803"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650574"
 ---
 # <a name="workflow-project-templates"></a>Szablony projektów przepływu pracy
 
-Przy użyciu szablonów projektów programu Visual Studio, można utworzyć przepływy pracy, usługi przepływu pracy usług Windows Communication Foundation (WCF), niestandardowych działań i projektanci działań niestandardowych. W tym artykule opisano sposób tworzenia bibliotek i aplikacji przy użyciu szablonów projektów dostępnych w programie Visual Studio.
+Za pomocą szablonów projektów programu Visual Studio można tworzyć przepływy pracy, Windows Communication Foundation (WCF), działania niestandardowe i niestandardowe projektantów działań. W tym artykule opisano sposób tworzenia bibliotek i aplikacji z szablonami projektu dostępnymi w programie Visual Studio.
 
 ## <a name="create-a-workflow-project"></a>Tworzenie projektu przepływu pracy
 
-Program Visual Studio oferuje cztery różne szablony projektu przepływu pracy:
+Program Visual Studio udostępnia cztery różne szablony projektów przepływu pracy:
 
-- Aplikacja konsoli przepływu pracy
+- Aplikacja konsolowa przepływu pracy
 
 - Aplikacja usługi przepływu pracy WCF
 
@@ -34,42 +34,42 @@ Program Visual Studio oferuje cztery różne szablony projektu przepływu pracy:
 
 - Biblioteka projektanta działań
 
-Aby uzyskać dostęp do tych szablonów, należy najpierw zainstalować **Windows Workflow Foundation** składnika programu Visual Studio. Aby uzyskać szczegółowe instrukcje, zobacz [Instalowanie programu Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
+Aby uzyskać dostęp do tych szablonów, najpierw Zainstaluj składnik **Windows Workflow Foundation** programu Visual Studio. Aby uzyskać szczegółowe instrukcje, zobacz [Install Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
-1. Po zainstalowaniu **Windows Workflow Foundation** składników, wybierz opcję **pliku** > **New** > **projektu**.
+1. Po zainstalowaniu składnika **Windows Workflow Foundation** wybierz pozycję **plik**  > **Nowy**  > **Project**.
 
-1. Wyszukaj i wybierz szablon projektu przepływu pracy, na przykład, **Aplikacja konsoli przepływu pracy** szablonu.
+1. Wyszukaj i wybierz szablon projektu przepływu pracy, na przykład szablon **aplikacji konsoli przepływu pracy** .
 
-1. Nadal za pomocą utworzyć projekt.
+1. Kontynuuj, aby utworzyć projekt.
 
    > [!NOTE]
-   > Jeśli chcesz dodać nowy projekt do istniejącego rozwiązania, otwórz rozwiązanie w programie Visual Studio kliknij prawym przyciskiem myszy rozwiązanie w **Eksploratora rozwiązań**i wybierz **Dodaj** > **New Projekt**.
+   > Jeśli chcesz dodać nowy projekt do istniejącego rozwiązania, Otwórz to rozwiązanie w programie Visual Studio, kliknij prawym przyciskiem myszy rozwiązanie w **Eksplorator rozwiązań**i wybierz polecenie **Dodaj**  > **Nowy projekt**.
 
-## <a name="workflow-console-app"></a>Aplikacja konsoli przepływu pracy
+## <a name="workflow-console-app"></a>Aplikacja konsolowa przepływu pracy
 
-Jeśli wybierzesz **Aplikacja konsoli przepływu pracy** szablon, Visual Studio tworzy definicję przepływu pracy w XAML. Projektant przepływu pracy otwiera i wyświetla kanwy dla przepływu pracy, który został utworzony. Do tworzenia przepływu pracy, przeciągnij działania lub inne elementy przepływu pracy z **przybornika** do powierzchni projektowej.
+W przypadku wybrania szablonu **aplikacja konsoli przepływu pracy** program Visual Studio utworzy definicję przepływu pracy w języku XAML. Zostanie otwarty Projektant przepływu pracy i zostanie wyświetlona Kanwa utworzonego przepływu pracy. Aby utworzyć przepływ pracy, przeciągnij działania lub inne elementy przepływu pracy z **przybornika** do powierzchni projektowej.
 
 ## <a name="wcf-workflow-service-app"></a>Aplikacja usługi przepływu pracy WCF
 
-Jeśli wybierzesz **aplikacja usługi przepływu pracy WCF** szablon, Visual Studio tworzy definicję usługi jako XAML. Zostanie otwarty projektant przepływu pracy do widoku projektu za pomocą <xref:System.Activities.Statements.Sequence> działania, który zawiera zbiór <xref:System.ServiceModel.Activities.Receive> i <xref:System.ServiceModel.Activities.SendReply> działań.
+W przypadku wybrania szablonu **aplikacja usługi przepływu pracy WCF** program Visual Studio utworzy definicję usługi jako kod XAML. Projektant przepływu pracy otwiera widok projektu z działaniem <xref:System.Activities.Statements.Sequence>, które zawiera zestaw działań <xref:System.ServiceModel.Activities.Receive> i <xref:System.ServiceModel.Activities.SendReply>.
 
 ## <a name="activity-library"></a>Biblioteka działań
 
-Jeśli wybierzesz **Biblioteka działań** szablon, Visual Studio umożliwia utworzenie definicji działania w XAML. Projektant przepływu pracy otwiera i wyświetla obszar roboczy dla działania niestandardowego. Przeciągnij działanie z **przybornika** do powierzchni projektu, które mają zostać objęte działanie niestandardowe.
+W przypadku wybrania szablonu **Biblioteka działań** program Visual Studio utworzy definicję działania w języku XAML. Projektant przepływu pracy zostanie otwarty i zostanie wyświetlona Kanwa niestandardowego działania. Przeciągnij działanie z **przybornika** na powierzchnię projektu, aby uwzględnić je w działaniu niestandardowym.
 
 > [!NOTE]
-> Możesz tylko jeden element podrzędny działania w treści działanie niestandardowe. Jednak działania podrzędne może być złożone działania, takie jak <xref:System.Activities.Statements.Sequence> działania lub <xref:System.Activities.Statements.Flowchart> działania.
+> W treści działania niestandardowego można używać tylko jednego działania podrzędnego. Jednak działanie podrzędne może być działaniem złożonym, takim jak działanie <xref:System.Activities.Statements.Sequence> lub <xref:System.Activities.Statements.Flowchart>.
 
 ## <a name="activity-designer-library"></a>Biblioteka projektanta działań
 
-Jeśli wybierzesz **Biblioteka projektanta działań** szablon, Visual Studio tworzy definicję projektanta działań w XAML i kodem pliku implementacji. Projektant przepływu pracy otwiera i wyświetla kanwy dla projektanta działań. Przeciągnij Windows Presentation Foundation (WPF) kontrolki z **przybornika** do powierzchni projektu, który z nich korzystać w swojej niestandardowego projektanta działań.
+W przypadku wybrania szablonu **Biblioteka programu Activity Designer** program Visual Studio tworzy definicję projektanta działań w języku XAML i plik implementacji związany z kodem. Zostanie otwarty Projektant przepływu pracy i zostanie wyświetlona Kanwa projektanta działań. Przeciągnij kontrolki Windows Presentation Foundation (WPF) z **przybornika** do powierzchni projektowej, aby użyć ich w niestandardowym projektancie działań.
 
-Na przykład sposób implementacji niestandardowego projektanta działań zobacz [jak: Tworzenie niestandardowego projektanta działań](/dotnet/framework/windows-workflow-foundation/how-to-create-a-custom-activity-designer).
+Aby zapoznać się z przykładem sposobu implementacji niestandardowego projektanta działań, zobacz [How to: Create an Custom Activity Designer](/dotnet/framework/windows-workflow-foundation/how-to-create-a-custom-activity-designer).
 
 > [!NOTE]
-> Niestandardowi Projektanci działań może służyć dla działań niestandardowych i domyślnych działań platformy .NET.
+> Niestandardowe Projektanci działań mogą służyć do działań niestandardowych i dla domyślnych działań programu .NET.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Za pomocą projektanta przepływu pracy](developing-applications-with-the-workflow-designer.md)
-- [Projektowanie przepływów pracy (.NET Framework)](/dotnet/framework/windows-workflow-foundation/designing-workflows)
+- [Użyj Projektant przepływu pracy](developing-applications-with-the-workflow-designer.md)
+- [Przepływy pracy projektowania (.NET Framework)](/dotnet/framework/windows-workflow-foundation/designing-workflows)

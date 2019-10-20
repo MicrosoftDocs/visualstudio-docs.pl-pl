@@ -5,39 +5,39 @@ ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Persist.UI
 ms.assetid: be8648dd-3eb9-4a50-8ec1-57a8be804692
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7be70d18b1fc8ff12e2d1fb177b41775954334ed
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 882a68e006ac139d717320b0b8b7ce4d75aceb38
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254848"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650115"
 ---
 # <a name="persist-activity-designer"></a>Persist, projektant działań
 
-Projektant działań **utrwalania** służy do tworzenia i konfigurowania <xref:System.Activities.Statements.Persist> działania.
+Projektant działań **utrwalania** służy do tworzenia i konfigurowania działania <xref:System.Activities.Statements.Persist>.
 
 ## <a name="the-persist-activity"></a>Działanie utrwalania
 
-<xref:System.Activities.Statements.Persist> Działanie zapisuje przepływ pracy na dysku, jeśli jest to możliwe. Działanie nie może zostać wykonane w strefie nietrwałości, jak na przykład <xref:System.Activities.Statements.TransactionScope> w ramach działania. <xref:System.Activities.Statements.Persist> Jeśli używasz <xref:System.Activities.Statements.Persist> działania w zakresie nietrwałości, wyjątek jest zgłaszany w czasie wykonywania.
+Działanie <xref:System.Activities.Statements.Persist> zapisuje przepływ pracy na dysku, jeśli jest to możliwe. Działanie <xref:System.Activities.Statements.Persist> nie może zostać wykonane w strefie nietrwałości, tak jak na przykład w działaniu <xref:System.Activities.Statements.TransactionScope>. Jeśli używasz działania <xref:System.Activities.Statements.Persist> w zakresie nietrwałości, wyjątek jest zgłaszany w czasie wykonywania.
 
 ### <a name="using-the-persist-activity-designer"></a>Korzystanie z projektanta działań utrwalania
 
 Projektanta działań **utrwalania** można znaleźć w kategorii **środowiska uruchomieniowego** **przybornika**, do którego uzyskuje się dostęp przez kliknięcie karty **przybornika** (można również wybrać **Przybornik** z menu **Widok** lub CTRL + ALT + X).
 
-Projektanta działań **utrwalania** można przeciągnąć z **przybornika** i porzucić na Projektant przepływu pracy powierzchnię, wszędzie tam, gdzie działania są zwykle umieszczane, na przykład <xref:System.Activities.Statements.Sequence>wewnątrz. Spowoduje to utworzenie <xref:System.Activities.Statements.Persist> działania z domyślną wartością **DisplayName** elementu utrwalania. Można edytować w nagłówku projektanta działań **trwałych** lub w polu DisplayName siatki właściwości. <xref:System.Activities.Activity.DisplayName%2A>
+Projektanta działań **utrwalania** można przeciągnąć z **przybornika** i porzucić na Projektant przepływu pracy powierzchnię, wszędzie tam, gdzie działania są zwykle umieszczane, na przykład wewnątrz <xref:System.Activities.Statements.Sequence>. Spowoduje to utworzenie działania <xref:System.Activities.Statements.Persist> z domyślną wartością **DisplayName** elementu utrwalania. @No__t_0 można edytować w nagłówku projektanta działań **trwałych** lub w polu **DisplayName** siatki właściwości.
 
 ### <a name="the-persist-properties"></a>Właściwości utrwalania
 
-W poniższej tabeli przedstawiono <xref:System.Activities.Statements.Persist> właściwości i opisano sposób ich użycia w projektancie. Te właściwości można edytować w siatce właściwości, a niektóre z nich można edytować na Projektant przepływu pracy powierzchni.
+W poniższej tabeli przedstawiono właściwości <xref:System.Activities.Statements.Persist> i opisano sposób ich używania w projektancie. Te właściwości można edytować w siatce właściwości, a niektóre z nich można edytować na Projektant przepływu pracy powierzchni.
 
 |Nazwa właściwości|Wymagane|Użycie|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Przyjazna nazwa <xref:System.Activities.Statements.Persist> działania. Wartość domyślna to utrwalanie. Chociaż nazwa wyświetlana nie jest ściśle wymagana, najlepszym rozwiązaniem jest użycie nazwy wyświetlanej.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Przyjazna nazwa działania <xref:System.Activities.Statements.Persist>. Wartość domyślna to utrwalanie. Chociaż nazwa wyświetlana nie jest ściśle wymagana, najlepszym rozwiązaniem jest użycie nazwy wyświetlanej.|
 
 ## <a name="see-also"></a>Zobacz także
 

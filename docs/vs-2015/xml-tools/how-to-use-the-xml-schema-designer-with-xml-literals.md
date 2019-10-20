@@ -1,75 +1,75 @@
 ---
-title: 'Instrukcje: Używanie projektanta schematu XML z literałami XML | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: korzystanie z projektanta schematu XML z literałami XML | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: d11803e7-f81a-41a2-a145-ba494a45cc93
 caps.latest.revision: 9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 05c32bfc6c3220739c433ef519b696953bc8b1b4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a9e82cf8387756cb4a4abe8b4c41d082485cdcdc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68190323"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656294"
 ---
-# <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Instrukcje: Używanie projektanta schematu XML z literałami XML
+# <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Instrukcje: korzystanie z projektanta schematu XML z literałami XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W tym temacie opisano sposób wyświetlania schemat jest skojarzony z danymi XML literału w projekcie Visual Basic.  
-  
-### <a name="to-create-a-new-visual-basic-console-application-project"></a>Aby utworzyć nowy projekt aplikacji konsoli Visual Basic  
-  
-1. Uruchom program Visual Studio 2010.  
-  
-2. Z **pliku** menu, wybierz opcję **New**, a następnie wybierz pozycję **projektu**. **Nowy projekt** pojawi się okno dialogowe. Aby uzyskać **typów projektów**, wybierz opcję **inne języki** , a następnie wybierz **języka Visual Basic**. Aby uzyskać **szablony**, wybierz aplikację konsoli. Następnie wpisz `XMLLiterals` w **nazwa** pola i lokalizację projektu w **lokalizacji** pola. Kliknij przycisk **OK**.  
-  
-     Zostanie utworzony nowy projektu zlecenie serwisowe. Projekt XMLLiterals zawiera jeden plik źródłowy języka Visual Basic, Module1.vb.  
-  
-### <a name="to-add-an-existing-xsd-file-to-the-project"></a>Aby dodać istniejący plik XSD do projektu  
-  
-1. Otwórz nowy tekst w pliku Notepad.Copy schematu XML przykładowego kodu z [schemat zamówienia zakupu](../xml-tools/sample-xsd-file-simple-schema.md) a następnie wklej je do pliku.  
-  
-2. Zapisz plik w lokalizacji o nazwie PurchaseOrderSchema.xsd.  
-  
-3. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy nazwę projektu, wybierz **Dodaj**, a następnie wybierz pozycję **istniejący element...** . **Elementu AddExisting** pojawi się okno dialogowe. Przejdź do pliku PurchaseOrderSchema.xsd, zaznacz go, a następnie kliknij **Dodaj**.  
-  
-     Projekt XMLLiterals zawiera teraz dwa pliki: Module1.VB i PurchaseOrderSchema.xsd.  
-  
-### <a name="to-add-visual-basic-code-with-an-xml-literal-based-on-the-xsd-file-included-in-the-project"></a>Aby dodać kod języka Visual Basic z literał, XML na podstawie pliku XSD, zawarty w projekcie  
-  
-1. Zastąp kod w pliku Module1.vb następującym kodem:  
-  
-    ```  
-    Imports <xmlns:ns="http://tempuri.org/PurchaseOrderSchema.xsd">  
-  
-    Module Module1  
-        Sub Main()  
-  
-            Dim XMLLiteral = <ns:PurchaseOrder OrderDate="1900-01-01">  
-                                 <ns:ShipTo country="US">  
-                                     <ns:name>name1</ns:name>  
-                                     <ns:street>street1</ns:street>  
-                                     <ns:city>city1</ns:city>  
-                                     <ns:state>state1</ns:state>  
-                                     <ns:zip>1</ns:zip>  
-                                 </ns:ShipTo>  
-                                 <ns:BillTo country="US">  
-                                     <ns:name>name1</ns:name>  
-                                     <ns:street>street1</ns:street>  
-                                     <ns:city>city1</ns:city>  
-                                     <ns:state>state1</ns:state>  
-                                     <ns:zip>1</ns:zip>  
-                                 </ns:BillTo>  
-                             </ns:PurchaseOrder>  
-  
-        End Sub  
-    End Module  
-    ```  
-  
-2. Kliknij prawym przyciskiem myszy dowolny węzeł XML w literał XML lub importu przestrzeni nazw XML, a następnie wybierz pozycję **Pokaż w Eksploratorze schematu**.  
-  
-     Eksplorator schematu XML jest wyświetlany obok pliku Visual Basic, który ma literał assotiated ze schematem XML XML zestawu.
+W tym temacie opisano sposób wyświetlania schematu skojarzonego z literałem XML w projekcie Visual Basic.
+
+### <a name="to-create-a-new-visual-basic-console-application-project"></a>Aby utworzyć nowy projekt aplikacji konsolowej Visual Basic
+
+1. Uruchom program Visual Studio 2010.
+
+2. Z menu **plik** wybierz pozycję **Nowy**, a następnie wybierz pozycję **projekt**. Pojawi się okno dialogowe **Nowy projekt** . W obszarze **typy projektów**wybierz pozycję **inne języki,** a następnie wybierz pozycję **Visual Basic**. W obszarze **Szablony**wybierz pozycję Aplikacja konsolowa. Następnie wpisz `XMLLiterals` w polu **Nazwa** i lokalizacji projektu w polu **Lokalizacja** . Kliknij przycisk **OK**.
+
+     Zostanie utworzony nowy poject. Projekt XMLLiterals zawiera jeden Visual Basic plik źródłowy, Module1. vb.
+
+### <a name="to-add-an-existing-xsd-file-to-the-project"></a>Aby dodać istniejący plik XSD do projektu
+
+1. Otwórz nowy plik tekstowy w Notatniku. Skopiuj przykładowy kod schematu XML z [schematu zamówienia zakupu](../xml-tools/sample-xsd-file-simple-schema.md) i wklej go do pliku.
+
+2. Zapisz plik w lokalizacji o nazwie PurchaseOrderSchema. xsd.
+
+3. W Eksplorator rozwiązań kliknij prawym przyciskiem myszy nazwę projektu, wybierz pozycję **Dodaj**, a następnie wybierz pozycję **istniejący element.** ... Zostanie wyświetlone okno dialogowe **AddExisting Item** . Przejdź do pliku PurchaseOrderSchema. xsd, zaznacz go, a następnie kliknij przycisk **Dodaj**.
+
+     Projekt XMLLiterals zawiera teraz dwa pliki: Module1. vb i PurchaseOrderSchema. xsd.
+
+### <a name="to-add-visual-basic-code-with-an-xml-literal-based-on-the-xsd-file-included-in-the-project"></a>Aby dodać kod Visual Basic za pomocą literału XML, na podstawie pliku XSD zawartego w projekcie
+
+1. Zastąp kod w pliku Module1. vb następującym kodem:
+
+    ```
+    Imports <xmlns:ns="http://tempuri.org/PurchaseOrderSchema.xsd">
+
+    Module Module1
+        Sub Main()
+
+            Dim XMLLiteral = <ns:PurchaseOrder OrderDate="1900-01-01">
+                                 <ns:ShipTo country="US">
+                                     <ns:name>name1</ns:name>
+                                     <ns:street>street1</ns:street>
+                                     <ns:city>city1</ns:city>
+                                     <ns:state>state1</ns:state>
+                                     <ns:zip>1</ns:zip>
+                                 </ns:ShipTo>
+                                 <ns:BillTo country="US">
+                                     <ns:name>name1</ns:name>
+                                     <ns:street>street1</ns:street>
+                                     <ns:city>city1</ns:city>
+                                     <ns:state>state1</ns:state>
+                                     <ns:zip>1</ns:zip>
+                                 </ns:BillTo>
+                             </ns:PurchaseOrder>
+
+        End Sub
+    End Module
+    ```
+
+2. Kliknij prawym przyciskiem myszy dowolny węzeł XML w literale XML lub Importuj przestrzeń nazw XML i wybierz **Pokaż w Eksploratorze schematu**.
+
+     Eksplorator schematu XML jest wyświetlany obok pliku Visual Basic, który ma literał XML assotiated z zestawem schematu XML.

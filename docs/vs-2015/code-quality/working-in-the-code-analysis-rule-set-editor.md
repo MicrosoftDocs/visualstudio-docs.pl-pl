@@ -1,5 +1,5 @@
 ---
-title: Praca w reguł analizy kodu edytorze zestawu | Dokumentacja firmy Microsoft
+title: Praca w edytorze zestawu reguł analizy kodu | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -8,71 +8,71 @@ f1_keywords:
 - vs.codeanalysis.ruleseteditor
 ms.assetid: 370c97bf-bb29-4b2f-b9ae-ba125bce7b2d
 caps.latest.revision: 14
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 57d3c21371cc824573e29657d0b41253e556f4c3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f25cc5a5f56c20f6a1696baa5aa3e9ee5ebdf2fc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68201136"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72621508"
 ---
 # <a name="working-in-the-code-analysis-rule-set-editor"></a>Praca w edytorze zestawu reguł analizy kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Z edytora zestawu reguł analizy kodu pozwala określić reguły, które są objęte niestandardowego zestawu reguł i określić akcję. Można również określić akcję do wykonania podczas analizy kodu napotka naruszenie reguły.  
-  
-|Akcja|Opis|  
-|------------|-----------------|  
-|**Ostrzeżenie**|Generuje ostrzeżenie w **lista błędów** okna.|  
-|**Error**|Generuje błąd w **lista błędów** okna.|  
-|**Brak**|Wyłącza regułę.|  
-  
- W edytorze są wyświetlane reguły w strukturze drzewa, które grupy reguł w regule ustawić pola, które określisz. Aby dodać lub usunąć reguły z zestawu reguł, należy wykonać co najmniej jeden z następujących czynności:  
-  
-- Zaznacz lub wyczyść pole wyboru w węźle grupy, aby dodać lub usunąć wszystkie reguły w grupie. Po wybraniu grupy, wszystkie reguły są ustawione na **ostrzeżenie** akcji.  
-  
-- Kliknij przycisk **akcji** pole grupy, a następnie określ akcję do zastosowania do wszystkich reguł w grupie.  
-  
-- Zaznacz lub wyczyść pole wyboru dla poszczególnych reguł. Po zaznaczeniu pola wyboru dla reguły ustawiono regułę ostrzeżenie akcję.  
-  
-## <a name="rule-set-editor-toolbar"></a>Pasek narzędzi edytora zestawu reguł  
- Na pasku narzędzi edytora zestawu reguł umożliwia grupowanie, filtrowanie i wyszukiwać dane, który pojawia się w siatce zestawu reguł.  
-  
- W poniższej tabeli opisano formanty na pasku narzędzi edytora zestawu reguł.  
-  
-|Toolbar — formant|Opis|  
-|---------------------|-----------------|  
-|**Rozwiń wszystko**|Zawiera reguły we wszystkich grupach.|  
-|**Zwiń wszystko**|Ukrywa reguł we wszystkich grupach.|  
-|**Group By**|Określa pole, według której reguły są grupowane. Kliknij przycisk  **\<Brak >** pokazanie reguły bez grup.|  
-|**Opcje kolumny**|Określa reguły pola do wyświetlenia.|  
-|**Ukryj reguły, których nie można zastosować do bieżącego rozwiązania**|Pokazuje lub ukrywa reguły, które nie są typu docelowego jako rozwiązanie.|  
-|**Pokaż reguły, które mogą generować błędy analizy kodu**|Pokazuje lub ukrywa reguł, które są przypisane akcji błędu.|  
-|**Pokaż reguły, które mogą generować ostrzeżenia analizy kodu**|Pokazuje lub ukrywa reguł, które są przypisane ostrzeżenie akcję.|  
-|**Pokaż reguły, które nie są włączone**|Pokazuje lub ukrywa reguł, które są przypisane żadne działania.|  
-|**Dodaj lub usuń podrzędne zestawy reguł**|Dodaje lub usuwa zasady w zestawach wybranej reguły.|  
-|**Wyszukaj reguły**|Wyszukuje ciąg, który należy określić wszystkie wartości pól.|  
-  
-## <a name="rule-set-fields"></a>Pola zestawu reguł  
- Zestaw reguł pól, wyświetlanie informacji o regule ustawić i może służyć do sortowania i grupowania z listy. Aby wyświetlić lub ukryć pól, kliknij przycisk **opcje kolumny** w regule zestawu narzędzi edytora i następnie zaznacz lub wyczyść pola wyboru pól, aby pokazać lub ukryć.  
-  
- W poniższej tabeli opisano pola zestawu reguł.  
-  
-|Pole|Opis|  
-|-----------|-----------------|  
-|**Identyfikator**|Identyfikator reguły.|  
-|**Kategoria**|Oprócz ich członkostwa w zestawy reguł reguł analizy kodu również są pogrupowane według kategorii. Aby uzyskać więcej informacji, zobacz [analiza kodu dla zarządzanego kodu ostrzeżenia](../code-quality/code-analysis-for-managed-code-warnings.md).|  
-|**Nazwa**|Tytuł reguły.|  
-|**Namespace**|Przestrzeń nazw reguły.|  
-|**Typ docelowy**|Wskazuje, czy reguła dla natywnego, zarządzanego lub bazy danych kodu.|  
-|**Akcja**|Akcja podejmowana, gdy naruszenia reguły analizy kodu, uruchom.<br /><br /> **Ostrzeżenie** — generuje ostrzeżenie.<br /><br /> **Błąd** — generuje błąd.<br /><br /> **Brak** — wyłącza reguły.<br /><br /> Można edytować pole akcji. Ustawienie wartości None jest taka sama jak wyczyszczenie pola wyboru dla tej reguły.|  
-|**Źródłowe zestawy reguł**|Zestaw reguł, który zawiera daną zasadę.|  
-  
-## <a name="sorting-and-filtering-rule-sets"></a>Sortowanie i filtrowanie zestawów reguł  
- Z nagłówków kolumn siatki zestaw reguł można sortować i filtrować zasady według wartości pola.  
-  
-- Aby posortować listy zestawu reguł, kliknij nagłówek kolumny, pola, według której chcesz posortować. Jeśli zestawy reguł są grupowane, każda grupa jest sortowana indywidualnie.  
-  
-- Aby filtrować zestawów reguł według wartości pola, kliknij przycisk filtru w nagłówku kolumny pola, według której chcesz filtrować. Zaznacz pole wyboru wartości, które mają być wyświetlane, a następnie wyczyść pola wyboru wartości, które chcesz ukryć.
+Edytor zestawu reguł analizy kodu umożliwia określenie reguł uwzględnionych w zestawie reguł niestandardowych i określenie akcji. Możesz również określić akcję, która ma zostać podjęta, gdy analiza kodu napotka naruszenie reguły.
+
+|Akcja|Opis|
+|------------|-----------------|
+|**Wyświetlania**|Generuje ostrzeżenie w oknie **Lista błędów** .|
+|**Błąd**|Generuje błąd w oknie **Lista błędów** .|
+|**Dawaj**|Wyłącza regułę.|
+
+ Edytor wyświetla reguły w strukturze drzewa, które grupuje reguły według określonego pola zestawu reguł. Aby dodać lub usunąć reguły z zestawu reguł, wykonaj co najmniej jedną z następujących czynności:
+
+- Zaznacz lub usuń zaznaczenie pola wyboru w węźle grupy, aby dodać lub usunąć wszystkie reguły w grupie. Po wybraniu grupy wszystkie reguły są ustawiane na akcję **Ostrzeżenie** .
+
+- Kliknij pole **Akcja** w grupie, a następnie określ akcję, która ma zostać zastosowana do wszystkich reguł w grupie.
+
+- Zaznacz lub wyczyść pole wyboru dla pojedynczej reguły. Po zaznaczeniu pola wyboru dla reguły, reguła jest ustawiana na akcję ostrzeżenia.
+
+## <a name="rule-set-editor-toolbar"></a>Pasek narzędzi edytora zestawu reguł
+ Możesz użyć paska narzędzi edytora zestawu reguł, aby grupować, filtrować i przeszukiwać dane, które pojawiają się w siatce zestawu reguł.
+
+ W poniższej tabeli opisano kontrolki na pasku narzędzi edytora zestawu reguł.
+
+|Pasek narzędzi — formant|Opis|
+|---------------------|-----------------|
+|**Rozwiń wszystko**|Pokazuje reguły we wszystkich grupach.|
+|**Zwiń wszystko**|Ukrywa reguły we wszystkich grupach.|
+|**Grupuj według**|Określa pole, według którego są grupowane reguły. Kliknij **\<None >** , aby wyświetlić reguły bez grup.|
+|**Opcje kolumn**|Określa pola reguły do wyświetlenia.|
+|**Ukryj reguły, które nie mają zastosowania do bieżącego rozwiązania**|Pokazuje lub ukrywa reguły, które nie są tego samego typu docelowego co rozwiązanie.|
+|**Pokaż reguły, które mogą generować błędy analizy kodu**|Pokazuje lub ukrywa reguły, do których przypisano akcję błędu.|
+|**Pokaż reguły, które mogą generować ostrzeżenia analizy kodu**|Pokazuje lub ukrywa reguły, do których przypisano akcję ostrzeżenia.|
+|**Pokaż reguły, które nie są włączone**|Pokazuje lub ukrywa reguły, do których przypisano akcję brak.|
+|**Dodaj lub usuń podrzędne zestawy reguł**|Dodaje lub usuwa reguły w wybranych zestawach reguł.|
+|**Reguły wyszukiwania**|Wyszukuje wszystkie wartości pól dla określonego ciągu.|
+
+## <a name="rule-set-fields"></a>Pola zestawu reguł
+ Pola zestawu reguł wyświetlają informacje o zestawie reguł i mogą być używane do sortowania i grupowania listy reguł. Aby wyświetlić lub ukryć pola, kliknij przycisk **Opcje kolumn** na pasku narzędzi edytora zestawu reguł, a następnie zaznacz lub wyczyść pola wyboru pól, aby pokazać lub ukryć.
+
+ W poniższej tabeli opisano pola zestawu reguł.
+
+|Pole|Opis|
+|-----------|-----------------|
+|**#C1**|Identyfikator reguły.|
+|**Kategorii**|Oprócz ich przynależności do zestawów reguł reguły analizy kodu są również pogrupowane według kategorii. Aby uzyskać więcej informacji, zobacz [Analiza kodu dla ostrzeżeń związanych z kodem zarządzanym](../code-quality/code-analysis-for-managed-code-warnings.md).|
+|**Nazwa**|Tytuł reguły.|
+|**Obszaru**|Przestrzeń nazw reguły.|
+|**Typ docelowy**|Wskazuje, czy reguła dotyczy kodu natywnego, zarządzanego lub bazy danych.|
+|**Transakcji**|Akcja podejmowana, gdy reguła jest naruszana w przebiegu analizy kodu.<br /><br /> **Ostrzeżenie** — generuje ostrzeżenie.<br /><br /> **Błąd** — generuje błąd.<br /><br /> **Brak** — wyłącza regułę.<br /><br /> Można edytować pole akcji. Ustawienie wartości none jest takie samo jak czyszczenie pola wyboru dla reguły.|
+|**Źródłowe zestawy reguł**|Zestaw reguł, który zawiera regułę.|
+
+## <a name="sorting-and-filtering-rule-sets"></a>Sortowanie i filtrowanie zestawów reguł
+ Z nagłówków kolumn siatki zestawu reguł można sortować i filtrować reguły według wartości pola.
+
+- Aby posortować listy zestawów reguł, kliknij nagłówek kolumny pola, według którego ma zostać wykonane sortowanie. Jeśli zestawy reguł są zgrupowane, każda grupa jest sortowana pojedynczo.
+
+- Aby odfiltrować zestawy reguł według wartości pola, kliknij przycisk Filtr w nagłówku kolumny pola, według którego chcesz filtrować. Zaznacz pola wyboru dla wartości, które chcesz wyświetlić, a następnie usuń zaznaczenie pól wyboru wartości, które chcesz ukryć.

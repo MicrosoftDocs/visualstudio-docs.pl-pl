@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Tworzenie aplikacji konsoli przepływu pracy automatu stanów (starsza wersja) | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Tworzenie aplikacji konsoli przepływu pracy automatu Stanów (starsza wersja) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -10,44 +10,43 @@ helpviewer_keywords:
 - state machine workflows, console applicationa
 ms.assetid: d6170b5d-5d4f-48e1-8257-c78604f27eac
 caps.latest.revision: 5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5235b990dc1eef80114188d3de40c6701008cee9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 48c7e06c2cb0e59de754b1ab36b693c4c9872985
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444201"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662718"
 ---
-# <a name="how-to-create-state-machine-workflow-console-applications-legacy"></a>Instrukcje: Tworzenie aplikacji konsoli przepływu pracy automatu stanów (starsza wersja)
-Wykonaj następujące kroki, aby utworzyć projekt aplikacji konsoli przepływu pracy maszyny stanu za pomocą starszego [!INCLUDE[wfd1](../includes/wfd1-md.md)] dostarczone przez [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Użyj starszego [!INCLUDE[wfd2](../includes/wfd2-md.md)] konieczność docelowy: [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
-  
-### <a name="to-create-a-state-machine-application-project"></a>Aby utworzyć projekt aplikacji maszyny stanu  
-  
-1. Uruchom program Visual Studio.  
-  
-2. Na **pliku** menu wskaż **New**, a następnie wybierz pozycję **projektu**.  
-  
-     **Nowy projekt** zostanie otwarte okno dialogowe.  
-  
-3. Wybierz opcję **.NET Framework 3.0** opcji lub **.NET Framework 3.5** opcji na liście rozwijanej listy w górnej części **nowy projekt** okna, aby uzyskać dostęp starsza wersja projektanta.  
-  
+# <a name="how-to-create-state-machine-workflow-console-applications-legacy"></a>Instrukcje: Tworzenie aplikacji konsoli przepływu pracy automatu Stanów (starsza wersja)
+Wykonaj następujące kroki, aby utworzyć projekt aplikacji konsoli przepływu pracy automatu Stanów przy użyciu starszej [!INCLUDE[wfd1](../includes/wfd1-md.md)] udostępnionej przez [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Użyj starszej [!INCLUDE[wfd2](../includes/wfd2-md.md)], jeśli chcesz wskazać [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+
+### <a name="to-create-a-state-machine-application-project"></a>Aby utworzyć projekt aplikacji automatu Stanów
+
+1. Uruchom program Visual Studio.
+
+2. W menu **plik** wskaż polecenie **Nowy**, a następnie wybierz pozycję **projekt**.
+
+     Zostanie otwarte okno dialogowe **Nowy projekt** .
+
+3. Wybierz opcję **.NET Framework 3,0** lub opcję **.NET Framework 3,5** na liście rozwijanej w górnej części okna **Nowy projekt** , aby uzyskać dostęp do starszego projektanta.
+
     > [!NOTE]
-    > Opcją domyślną w [!INCLUDE[vs2010](../includes/vs2010-md.md)] jest **.NET Framework 4**. Ta opcja służy do tworzenia [!INCLUDE[wf](../includes/wf-md.md)] aplikacji przeznaczonych dla [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] i używasz starszej wersji projektanta.  
-  
-4. W **typów projektów** okienku wybierz pozycję Visual C# lub Visual Basic (w obszarze **inne języki**), a następnie wybierz **przepływu pracy**.  
-  
-5. W **szablony** okienku wybierz **Aplikacja konsoli przepływu pracy maszyny stanu**.  
-  
-6. W **nazwa** wprowadź opisową nazwę projektu ułatwić identyfikowanie.  
-  
-7. W **lokalizacji** wprowadź katalog, w którym chcesz zapisać projekt, lub kliknij przycisk **Przeglądaj** można przejść do niego.  
-  
-     Katalog rozwiązania utworzone dla projektu, wybierz opcję **Utwórz katalog rozwiązania** pole wyboru, a następnie wprowadź nazwę w **Nazwa rozwiązania** pole.  
-  
-8. Kliknij przycisk **OK**.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Tworzenie starszej wersji projektów przepływu pracy](../workflow-designer/creating-legacy-workflow-projects.md)   
- [Instrukcje: Tworzenie biblioteki przepływu pracy automatu stanów (starsza wersja)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md)
+    > Opcja domyślna w [!INCLUDE[vs2010](../includes/vs2010-md.md)] jest **.NET Framework 4**. Ta opcja służy do tworzenia aplikacji [!INCLUDE[wf](../includes/wf-md.md)] przeznaczonych dla [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] i nie korzysta z starszego projektanta.
+
+4. W okienku **typy projektów** wybierz pozycję Wizualizacja C# lub Visual Basic (w obszarze **inne języki**), a następnie wybierz pozycję **przepływ pracy**.
+
+5. W okienku **Szablony** wybierz pozycję **stan Aplikacja konsolowa przepływ pracy**.
+
+6. W polu **Nazwa** Wprowadź opisową nazwę projektu, aby ułatwić jego identyfikację.
+
+7. W polu **Lokalizacja** wprowadź katalog, w którym chcesz zapisać projekt, lub kliknij przycisk **Przeglądaj** , aby przejść do niego.
+
+     Jeśli chcesz utworzyć katalog rozwiązania dla projektu, zaznacz pole wyboru **Utwórz katalog dla rozwiązania** i wprowadź nazwę w polu **Nazwa rozwiązania** .
+
+8. Kliknij przycisk **OK**.
+
+## <a name="see-also"></a>Zobacz też
+ [Tworzenie starszych projektów przepływu pracy](../workflow-designer/creating-legacy-workflow-projects.md) [: Tworzenie biblioteki przepływu pracy automatu Stanów (starsza wersja)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md)

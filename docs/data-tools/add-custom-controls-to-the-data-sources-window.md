@@ -12,15 +12,15 @@ helpviewer_keywords:
 - ComplexBindingPropertiesAttribute class, using
 - Data Sources Window, selecting controls
 ms.assetid: 8c43e7d2-ba94-4d9b-96de-3aa971955afd
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b81bd3237f3eb2aa9a4c096ddfeae2c7bcd08c09
-ms.sourcegitcommit: 6b0503ed8d25454d6e39a8e606910b3fa58cf1d2
+ms.openlocfilehash: b6334d233ccb2c4453d117b6bdfe942b6ea092e2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68980555"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648914"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Dodawanie kontrolek niestandardowych do okna źródeł danych
 
@@ -39,7 +39,7 @@ Aby dodać lub usunąć kontrolki z listy dostępnych kontrolek dla elementów w
 2. W oknie **źródła danych** kliknij element, który jest częścią źródła danych, które zostało dodane do okna, a następnie kliknij menu rozwijane dla elementu.
 
    > [!TIP]
-   > Jeśli okno źródła danych nie jest otwarte, otwórz je, wybierając opcję **Wyświetl** > inne**źródła danych** **systemu Windows** > .
+   > Jeśli okno źródła danych nie jest otwarte, otwórz je, wybierając opcję **wyświetl**  >  inne  > **źródła danych** **systemu Windows** .
 
 3. W menu rozwijanym kliknij opcję **Dostosuj**. Zostanie otwarte jedno z następujących okien dialogowych:
 
@@ -68,26 +68,26 @@ Aby dodać lub usunąć kontrolki z listy dostępnych kontrolek dla elementów w
 
 ## <a name="add-associated-controls"></a>Dodaj skojarzone kontrolki
 
-Jeśli chcesz skojarzyć formant z typem danych, ale formant nie pojawia się w skojarzonym polu **formantów** , musisz dodać formant do listy. Formant musi znajdować się w bieżącym rozwiązaniu lub w przywoływanym zestawie. Musi również być dostępna w przyborniku i mieć atrybut, który określa zachowanie powiązania danych formantu.
+Jeśli chcesz skojarzyć formant z typem danych, ale formant nie pojawia się w **skojarzonym polu formantów** , musisz dodać formant do listy. Formant musi znajdować się w bieżącym rozwiązaniu lub w przywoływanym zestawie. Musi również być dostępna w **przyborniku** i mieć atrybut, który określa zachowanie powiązania danych formantu.
 
 Aby dodać kontrolki do listy skojarzonych formantów:
 
-1. Dodaj żądany formant do **przybornika** , klikając go prawym przyciskiem myszy i wybierając **pozycję Wybierz elementy**.
+1. Dodaj żądany formant do **przybornika** , klikając go prawym przyciskiem **myszy i** wybierając **pozycję Wybierz elementy**.
 
      Kontrolka musi mieć jeden z następujących atrybutów:
 
     |Atrybut|Opis|
     |---------------|-----------------|
-    |<xref:System.ComponentModel.DefaultBindingPropertyAttribute>|Zaimplementuj ten atrybut w prostych kontrolkach, które wyświetlają pojedynczą kolumnę (lub właściwość) danych, <xref:System.Windows.Forms.TextBox>taką jak.|
-    |<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>|Zaimplementuj ten atrybut w kontrolkach, które wyświetlają listy (lub tabele) danych, <xref:System.Windows.Forms.DataGridView>takie jak.|
-    |<xref:System.ComponentModel.LookupBindingPropertiesAttribute>|Zaimplementuj ten atrybut w kontrolkach, które wyświetlają listy (lub tabele) danych, ale muszą również przedstawić pojedynczą kolumnę lub właściwość, taką <xref:System.Windows.Forms.ComboBox>jak.|
+    |<xref:System.ComponentModel.DefaultBindingPropertyAttribute>|Zaimplementuj ten atrybut w prostych kontrolkach, które wyświetlają pojedyncze kolumny (lub właściwości) danych, takie jak <xref:System.Windows.Forms.TextBox>.|
+    |<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>|Zaimplementuj ten atrybut w kontrolkach, które wyświetlają listy (lub tabele) danych, takie jak <xref:System.Windows.Forms.DataGridView>.|
+    |<xref:System.ComponentModel.LookupBindingPropertiesAttribute>|Zaimplementuj ten atrybut na kontrolkach, które wyświetlają listy (lub tabele) danych, ale muszą również przedstawić pojedynczą kolumnę lub właściwość, taką jak <xref:System.Windows.Forms.ComboBox>.|
 
 2. Aby uzyskać Windows Forms, w oknie dialogowym **Opcje** Otwórz stronę **Dostosowywanie interfejsu użytkownika danych** . Lub w przypadku platformy WPF Otwórz okno dialogowe **Dostosowywanie powiązania kontrolki** . Aby uzyskać więcej informacji, zobacz [Dostosowywanie listy formantów możliwych do powiązania dla typu danych](#customize-the-bindable-controls-list).
 
-3. W polu **skojarzone formanty** , formant, który właśnie został dodany do przybornika , powinien teraz zostać wyświetlony.
+3. W polu **skojarzone formanty** , formant, który właśnie został dodany do **przybornika** , powinien teraz zostać wyświetlony.
 
     > [!NOTE]
-    > Do listy skojarzonych formantów można dodawać tylko kontrolki znajdujące się w bieżącym rozwiązaniu lub w przywoływanym zestawie. (Kontrolki muszą także zaimplementować jeden z atrybutów powiązania danych w poprzedniej tabeli). Aby powiązać dane z kontrolką niestandardową, która nie jest dostępna w oknie źródła danych, przeciągnij kontrolkę z przybornika na powierzchnię projektu, a następnie przeciągnij element do elementu z okna **źródła danych** na kontrolkę.
+    > Do listy skojarzonych formantów można dodawać tylko kontrolki znajdujące się w bieżącym rozwiązaniu lub w przywoływanym zestawie. (Kontrolki muszą także zaimplementować jeden z atrybutów powiązania danych w poprzedniej tabeli). Aby powiązać dane z kontrolką niestandardową, która nie jest dostępna w oknie źródła danych, przeciągnij kontrolkę z **przybornika** na powierzchnię projektu, a następnie przeciągnij element do elementu z okna **źródła danych** na kontrolkę.
 
 ## <a name="see-also"></a>Zobacz także
 

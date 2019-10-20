@@ -1,5 +1,5 @@
 ---
-title: Zarządzanie narzędziami zewnętrznymi | Dokumentacja firmy Microsoft
+title: Zarządzanie narzędziami zewnętrznymi | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -54,72 +54,72 @@ helpviewer_keywords:
 - Resource Compiler
 ms.assetid: f382fd40-a98f-4934-8c9a-5aeae881acde
 caps.latest.revision: 41
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e568286a5e17b13b5009eccf01988d458fc9cd47
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 7a9ebda81f013f42aeac23c9c0a8cc5a0a41f5f0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65686961"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651342"
 ---
 # <a name="managing-external-tools"></a>Zarządzanie narzędziami zewnętrznymi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Możesz wywołać zewnętrznych narzędzi z poziomu programu Visual Studio. Kilka domyślne narzędzia są dostępne z **narzędzia** menu, ale można dodać inne elementy wykonywalne samodzielnie.  
-  
-## <a name="tools-available-on-the-visual-studio-tools-menu"></a>Narzędzia dostępne w Menu narzędzia programu Visual Studio  
- Możesz wywołać następujących narzędzi z **narzędzia** menu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Można również wywołać za pomocą nazwy z **Szybkie uruchamianie** okna. Na przykład, aby wywołać GuidGen.exe, wpisz **Utwórz GUID**.  
-  
-1. Utwórz identyfikator GUID: generuje identyfikator GUID.  
-  
-2. Wyszukiwanie błędów: pobiera komunikat o błędzie z wprowadzonej wartości. Aby uzyskać więcej informacji, zobacz [odwołanie ERRLOOK](https://msdn.microsoft.com/library/6040ffc1-2355-4a45-8998-84cbcba4ca91).  
-  
-3. Narzędzie śledzenia ATL/MFC: Pokazuje debugowania komunikaty śledzenia w źródłach ATL i MFC.  
-  
-4. PreEmptive Protection - Dotfuscator: Chroni programy platformy .NET dla odtwarzania.  
-  
-5. SPY++: Wyświetla w postaci graficznej procesy, wątki, windows i komunikatów okien.  
-  
-6. Edytor konfiguracji usługi WCF: Umożliwia tworzenie i modyfikowanie ustawień konfiguracji usługi WCF.  
-  
+Możesz wywoływać zewnętrzne narzędzia z wewnątrz programu Visual Studio. Dostępne są kilka domyślnych narzędzi z menu **Narzędzia** , ale można dodać inne własne pliki wykonywalne.
+
+## <a name="tools-available-on-the-visual-studio-tools-menu"></a>Narzędzia dostępne w menu Visual Studio Tools
+ Można wywołać następujące narzędzia z menu **Narzędzia** w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Możesz również wywołać je według nazwy z okna **szybkiego uruchamiania** . Na przykład, aby wywołać GuidGen. exe, wpisz **Create GUID**.
+
+1. Utwórz identyfikator GUID: generuje identyfikator GUID.
+
+2. Wyszukiwanie błędów: Pobiera komunikat o błędzie z wprowadzonej wartości. Aby uzyskać więcej informacji, zobacz [ERRLOOK Reference](https://msdn.microsoft.com/library/6040ffc1-2355-4a45-8998-84cbcba4ca91).
+
+3. Narzędzie śledzenia ATL/MFC: pokazuje komunikaty śledzenia debugowania w źródłach ATL i MFC.
+
+4. Ochrona przed zaDotfuscatorm: chroni programy .NET przed odwróceniem inżynierów.
+
+5. SPY + +: wyświetla graficznie procesy, wątki, okna i komunikaty okien.
+
+6. Edytor konfiguracji usługi WCF: umożliwia tworzenie i modyfikowanie ustawień konfiguracji usług WCF.
+
 > [!WARNING]
-> Może pojawić się różne listy zewnętrznych narzędzi w zależności od wersji programu Visual Studio zainstalowane a profilu ustawień zostały zastosowane. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
-  
-## <a name="adding-new-tools"></a>Dodawanie nowych narzędzi  
- Możesz dodać do zewnętrznego narzędzia **narzędzia** menu. Otwórz **zewnętrznych narzędzi** dialogowym i kliknij przycisk **Dodaj**, a następnie wypełnij informacje. Na przykład następujący wpis powoduje Eksploratora Windows, aby otworzyć znajduje się w katalogu pliku, który aktualnie otwarte w programie Visual Studio:  
-  
-1. Tytuł: Otwórz lokalizację pliku  
-  
-2. Polecenie: explorer.exe  
-  
-3. Argumenty: / root, "$(ItemDir)"  
-  
-## <a name="arguments-for-external-tools"></a>Argumenty dla zewnętrznych narzędzi  
- Następujące argumenty są zmiennymi programu Visual Studio, które przypisano podczas uruchamiania narzędzia zewnętrznego. Łącza do zewnętrznych narzędzi, takich jak Notatnik lub Spy ++, które mogą być wyświetlane na **narzędzia** menu, w oknie dialogowym narzędzia zewnętrzne.  
-  
+> Może zostać wyświetlona inna lista narzędzi zewnętrznych, w zależności od zainstalowanej wersji programu Visual Studio i profilu ustawień, który został zastosowany. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień deweloperskich w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+
+## <a name="adding-new-tools"></a>Dodawanie nowych narzędzi
+ Możesz dodać zewnętrzne narzędzie do menu **Narzędzia** . Otwórz okno dialogowe **zewnętrzne narzędzia** , a następnie kliknij przycisk **Dodaj**, a następnie Wypełnij informacje. Na przykład poniższy wpis powoduje otwarcie Eksploratora Windows w katalogu pliku, który jest aktualnie otwarty w programie Visual Studio:
+
+1. Title: Otwórz lokalizację pliku
+
+2. Polecenie: Explorer. exe
+
+3. Argumenty:/root, "$ (ItemDir)"
+
+## <a name="arguments-for-external-tools"></a>Argumenty narzędzi zewnętrznych
+ Następujące argumenty są zmiennymi programu Visual Studio, które są przypisywane po uruchomieniu zewnętrznego narzędzia. Linki do zewnętrznych narzędzi, takich jak Notepad lub Spy + +, można znaleźć w menu **Narzędzia** przy użyciu okna dialogowego narzędzia zewnętrzne.
+
 > [!NOTE]
-> Na pasku stanu IDE Wyświetla zmienne bieżący wiersz i bieżącej kolumny, aby wskazać, gdzie znajduje się w edytorze kodu aktywnego punktu wstawiania. Zmienna aktualny tekst zwraca tekst lub kod wybrane w tej lokalizacji.  
-  
-|Nazwa|Argument|Opis|  
-|----------|--------------|-----------------|  
-|Ścieżka elementu|$(ItemPath)|Pełnej nazwy pliku bieżącego pliku (dysk i ścieżkę pliku nazwa).|  
-|Element katalogu|$(ItemDir)|Katalog bieżącego pliku (dysku i ścieżki).|  
-|Nazwa pliku elementu|$(ItemFilename)|Nazwa pliku w bieżącym pliku (nazwa pliku).|  
-|Rozszerzenie elementu|$(ItemExt)|Rozszerzenie nazwy pliku bieżącego pliku.|  
-|Bieżący wiersz|$(CurLine)|Bieżący wiersz pozycja kursora w oknie kodu.|  
-|Bieżąca kolumna|$(CurCol)|Bieżąca kolumna pozycja kursora w oknie kodu.|  
-|Aktualny tekst|$(CurText)|Zaznaczony tekst.|  
-|Ścieżka docelowa|$(TargetPath)|Pełnej nazwy pliku elementu, który ma zostać utworzony (dysk i ścieżkę pliku nazwa).|  
-|Katalog docelowy|$(TargetDir)|Katalog elementu, który ma zostać utworzony.|  
-|Nazwa obiektu docelowego|$(TargetName)|Nazwa pliku elementu, który ma zostać utworzony.|  
-|Rozszerzenie docelowe|$(TargetExt)|Rozszerzenie nazwy pliku elementu, który ma zostać utworzony.|  
-|Katalog danych binarnych|$(BinDir)|Lokalizacji końcowej plik binarny, który jest konstruowany (zdefiniowany jako dysku i ścieżki). Na przykład:**\\... \My Studio \<wersji >\\< nazwa_projektu\>\bin\debug**|  
-|Katalog projektu|$(ProjDir)|Katalog bieżący projekt (dysku i ścieżki).|  
-|Nazwa pliku projektu|$(ProjFileName)|Nazwa pliku bieżącego projektu (dysk i ścieżkę pliku nazwa).|  
-|Katalog rozwiązania|$(SolutionDir)|Katalog bieżącego rozwiązania (dysku i ścieżki).|  
-|Nazwa pliku rozwiązania|$(SolutionFileName)|Nazwa pliku bieżącego rozwiązania (dysk i ścieżkę pliku nazwa).|  
-  
-## <a name="see-also"></a>Zobacz też  
+> Pasek stanu IDE wyświetla bieżący wiersz i bieżące zmienne kolumn, aby wskazać, gdzie punkt wstawiania znajduje się w aktywnym Edytorze kodu. Bieżąca zmienna tekstowa zwraca tekst lub kod wybrany w tej lokalizacji.
+
+|Nazwa|Argument|Opis|
+|----------|--------------|-----------------|
+|Ścieżka elementu|$ (Ścieżki elementu)|Pełna nazwa pliku bieżącego pliku (dysk + ścieżka + nazwa pliku).|
+|Katalog elementu|$ (ItemDir)|Katalog bieżącego pliku (dysk + ścieżka).|
+|Nazwa pliku elementu|$ (ItemFilename)|Nazwa pliku bieżącego pliku (nazwa pliku).|
+|Rozszerzenie elementu|$ (ItemExt)|Rozszerzenie nazwy pliku bieżącego pliku.|
+|Bieżący wiersz|$ (CurLine)|Pozycja bieżącego wiersza kursora w oknie kodu.|
+|Bieżąca kolumna|$ (CurCol)|Bieżąca pozycja kolumny kursora w oknie kodu.|
+|Bieżący tekst|$ (CurText)|Zaznaczony tekst.|
+|Ścieżka docelowa|$ (TargetPath)|Pełna nazwa pliku elementu do skompilowania (dysk + ścieżka + nazwa pliku).|
+|Katalog docelowy|$ (TargetDir)|Katalog elementu do skompilowania.|
+|Nazwa obiektu docelowego|$ (TargetName)|Nazwa pliku elementu do skompilowania.|
+|Rozszerzenie docelowe|$ (TargetExt)|Rozszerzenie nazwy pliku do skompilowania.|
+|Katalog binarny|$ (BinDir)|Końcowa lokalizacja tworzonego pliku binarnego (zdefiniowana jako dysk + ścieżka). Na przykład: **\\. ..\My Documents\Visual Studio \<Version > \\ < ProjectName \> \bin\debug**|
+|Katalog projektu|$ (ProjDir)|Katalog bieżącego projektu (dysk + ścieżka).|
+|Nazwa pliku projektu|$ (ProjFileName)|Nazwa pliku bieżącego projektu (dysk + ścieżka + nazwa pliku).|
+|Katalog rozwiązania|$ (SolutionDir)|Katalog bieżącego rozwiązania (dysk + ścieżka).|
+|Nazwa pliku rozwiązania|$ (SolutionFileName)|Nazwa pliku bieżącego rozwiązania (dysk + ścieżka + nazwa pliku).|
+
+## <a name="see-also"></a>Zobacz też
  [Narzędzia kompilacji C/C++](https://msdn.microsoft.com/library/48d9daf4-6bbf-473a-8ce2-bf2923b69f80)

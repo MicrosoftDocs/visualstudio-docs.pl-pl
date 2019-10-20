@@ -1,5 +1,5 @@
 ---
-title: Korzystanie z zasobów 3D w grach i aplikacjach
+title: Korzystanie z zasobów 3W w grach lub aplikacji
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,129 +10,129 @@ f1_keywords:
 - VC.Project.ShaderGraphContentTask.ContentOutput
 - VC.Project.ImageContentTask.GenerateMips
 ms.assetid: ea587909-e434-46a8-abf8-9b3e95a58b4f
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c595f4c8f344cfb9e8678d8f9c425a564baa9e4b
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 400e69ddaf9ebd3596edf3b926484b623225d672
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65459115"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72634534"
 ---
-# <a name="how-to-use-3d-assets-in-your-game-or-app"></a>Instrukcje: Korzystanie z zasobów 3D w grach i aplikacjach
+# <a name="how-to-use-3d-assets-in-your-game-or-app"></a>Instrukcje: korzystanie z zasobów 3D w grach lub aplikacjach
 
-W tym artykule opisano, jak można użyć programu Visual Studio do przetwarzania zasobów 3D i zawierania ich w kompilacji.
+W tym artykule opisano, jak można użyć programu Visual Studio do przetwarzania zasobów 3D i uwzględniania ich w kompilacjach.
 
-Po użyciu narzędzi w programie Visual Studio umożliwia tworzenie zasobów 3D, następnym krokiem jest ich używać w aplikacji. Jednak zanim można ich używać, obiekty muszą zostać przekształcone do formatu, który może zrozumieć program DirectX. Aby ułatwić przekształcenie zasobów, Visual Studio zawiera dostosowania kompilacji dla każdego rodzaju zasobów, które może wygenerować. Aby uwzględnić zasoby w kompilacji, trzeba będzie skonfigurować projekt do używania dostosowań kompilacji, dodać zasoby do projektu i konfigurowanie zasobów do użycia poprawnego dostosowywania kompilacji. Po tym można załadować zasoby do aplikacji i ich używać, tworząc i wypełniając zasoby DirectX tak jak w przypadku innych aplikacji DirectX.
+Po użyciu narzędzi w programie Visual Studio do tworzenia zasobów 3D następnym krokiem jest użycie ich w aplikacji. Jednak zanim będzie można korzystać z nich, zasoby muszą zostać przekształcone w format, który może być zrozumiały dla technologii DirectX. Aby ułatwić transformację elementów zawartości, program Visual Studio udostępnia dostosowania kompilacji dla każdego rodzaju elementu zawartości, który może wyprodukować. Aby uwzględnić zasoby w kompilacji, wystarczy skonfigurować projekt do korzystania z dostosowań kompilacji, dodać zasoby do projektu i skonfigurować zasoby do korzystania z poprawnego dostosowania kompilacji. Następnie można załadować zasoby do aplikacji i użyć ich przez tworzenie i wypełnianie zasobów DirectX tak samo jak w przypadku dowolnej innej aplikacji DirectX.
 
 ## <a name="configure-your-project"></a>Konfigurowanie projektu
 
-Przed wdrożeniem 3D zasobów jako część kompilacji programu Visual Studio musi poznać rodzaje obiektów, które mają zostać wdrożone. Program Visual Studio już zna wiele popularnych typów plików, ale ponieważ tylko niektóre rodzaje aplikacji używają zasobów 3D, Visual Studio nie zakłada, że projekt utworzy te rodzaje plików. Będzie widnieć napis programu Visual Studio, aplikacja używa tych rodzajów zasobów przy użyciu *lacji*— pliki, które informują sposób przetwarzania różnych typów plików w wygodny sposób programu Visual Studio — które są dostarczane dla każdego typu zasobu. Ponieważ te dostosowania są stosowane w poszczególnych projektów, trzeba będzie dodać odpowiednie dostosowania do projektu.
+Aby można było wdrożyć zasoby 3W w ramach kompilacji, program Visual Studio musi wiedzieć o typach zasobów, które mają zostać wdrożone. Program Visual Studio już wie o wielu wspólnych typach plików, ale ponieważ tylko niektóre aplikacje używają zasobów 3W, program Visual Studio nie zakłada, że projekt będzie kompilować te rodzaje plików. Możesz powiedzieć programowi Visual Studio, że aplikacja używa tych rodzajów zasobów przy użyciu *dostosowań kompilacji*— pliki, które poinformują program Visual Studio, jak przetwarzać różne typy plików w sposób przydatny, które są dostępne dla każdego typu zasobu. Ponieważ te dostosowania są stosowane do poszczególnych projektów, wystarczy dodać odpowiednie dostosowania do projektu.
 
 ### <a name="to-add-the-build-customizations-to-your-project"></a>Aby dodać dostosowania kompilacji do projektu
 
-1. W **Eksploratora rozwiązań**, otwórz menu skrótów dla projektu, a następnie wybierz **zależności kompilacji** > **dostosowania kompilacji**.
+1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla projektu, a następnie wybierz pozycję **kompilacja zależności**  > **dostosowania kompilacji**.
 
-   **Pliki z dostosowywania kompilacji Visual C++** pojawi się okno dialogowe.
+   Zostanie wyświetlone okno dialogowe **pliki dostosowania kompilacji wizualizacji C++**  .
 
-2. W obszarze **dostępne pliki dostosowania kompilacji**, zaznacz pole wyboru, które odpowiadają typom zasobów, które chcesz użyć w projekcie, zgodnie z opisem w poniższej tabeli:
+2. W obszarze **dostępne pliki dostosowania kompilacji**zaznacz pola wyboru odpowiadające typom zasobów, które mają być używane w projekcie, zgodnie z opisem w poniższej tabeli:
 
-    |Typ zasobu|Nazwa dostosowania kompilacji|
+    |Typ elementu zawartości|Nazwa dostosowania kompilacji|
     |----------------| - |
-    |Obrazami i teksturami|**ImageContentTask(.targets, .props)**|
-    |Modele 3D|**MeshContentTask (.targets, .props)**|
-    |Programy do cieniowania|**ShaderGraphContentTask(.targets, .props)**|
+    |Tekstury i obrazy|**ImageContentTask (. targets,. props)**|
+    |Modele 3W|**MeshContentTask (. targets,. props)**|
+    |Programy do cieniowania|**ShaderGraphContentTask (. targets,. props)**|
 
-3. Wybierz **OK** przycisku.
+3. Wybierz przycisk **OK** .
 
-## <a name="include-assets-in-your-build"></a>Objęte zasoby kompilacji
+## <a name="include-assets-in-your-build"></a>Uwzględnij zasoby w kompilacji
 
-Teraz, gdy projektu wie o różnych rodzajów zasobów 3D, które chcesz użyć, następnym krokiem jest stwierdzenie, które pliki są zasobami 3D i jakiego rodzaju zasobów są.
+Teraz, gdy Twój projekt wie o różnych typach zasobów 3W, które mają być używane, następnym krokiem jest poinformowanie o tym, które pliki są zasobami 3W i jakie rodzaje zasobów są im.
 
-### <a name="to-add-an-asset-to-your-build"></a>Aby dodać składnik aktywów do kompilacji
+### <a name="to-add-an-asset-to-your-build"></a>Aby dodać element zawartości do kompilacji
 
-1. W **Eksploratora rozwiązań**w swoim projekcie Otwórz menu skrótów elementu zawartości, a następnie wybierz **właściwości**.
+1. W **Eksplorator rozwiązań**w projekcie Otwórz menu skrótów elementu zawartości, a następnie wybierz polecenie **Właściwości**.
 
-   Zasób **strona właściwości** pojawi się okno dialogowe.
+   Zostanie wyświetlone okno dialogowe **Strona właściwości** zasobu.
 
-2. Upewnij się, że **konfiguracji** i **platformy** właściwości są ustawiane na wartości, do których mają zostać zastosowane zmiany.
+2. Upewnij się, że właściwości **konfiguracji** i **platformy** są ustawione na wartości, do których mają zostać zastosowane zmiany.
 
-3. W obszarze **właściwości konfiguracji**, wybierz **ogólne**, a następnie w siatce właściwości w obszarze **ogólne**ustaw **typu elementu** właściwości typem elementu potoku zawartości. Na przykład pliku obrazu lub tekstury wybierz **potok zawartości obrazu**.
+3. W obszarze **Właściwości konfiguracji**wybierz opcję **Ogólne**, a następnie w siatce właściwości w obszarze **Ogólne**ustaw właściwość **Typ elementu** na odpowiedni typ elementu potoku zawartości. Na przykład dla pliku obrazu lub tekstury wybierz pozycję **potok zawartości obrazu**.
 
     > [!IMPORTANT]
-    > Domyślnie program Visual Studio zakłada, że wiele rodzajów plików obrazu należy podzielić na kategorie za pomocą **obraz** elementu typu, która jest wbudowana w program Visual Studio. W związku z tym, należy zmienić **typu elementu** właściwość każdego obrazu, który ma być przetwarzany przez potok zawartości obrazu. Inne typy zawartości potoku pliki źródłowe dla modeli 3D i wizualnego modułu cieniującego grafiki domyślnie poprawny **typu elementu**.
+    > Domyślnie program Visual Studio zakłada, że wiele rodzajów plików obrazów należy klasyfikować przy użyciu typu elementu **obrazu** wbudowanego w program Visual Studio. W związku z tym należy zmienić właściwość **typu elementu** dla każdego obrazu, który ma być przetwarzany przez potok zawartości obrazu. Inne typy plików źródłowych potoku zawartości dla modeli 3D i grafiki programu Visual Shader są domyślne dla poprawnego **typu elementu**.
 
-4. Wybierz **OK** przycisku.
+4. Wybierz przycisk **OK** .
 
-Poniżej przedstawiono trzy typy elementów potoku zawartości i ich skojarzone źródło i dane wyjściowe typów plików.
+Poniżej przedstawiono trzy typy elementów potoku zawartości i skojarzone z nimi typy plików źródłowych i wyjściowych.
 
 |Typ elementu|Typy plików źródłowych|Format pliku wyjściowego|
 |---------------| - | - |
-|**Potok zawartości obrazu**|Portable Network Graphics (*.png*)<br /><br /> JPEG (*.jpg*, *.jpeg*, *.jpe*, *.jfif*)<br /><br /> Bezpośrednie powierzchni do rysowania (*.dds*)<br /><br /> Format GIF (*.gif*)<br /><br /> Mapa bitowa (*.bmp*, *.dib*)<br /><br /> Plik TIFF (*.tif*, *.tiff*)<br /><br /> Targa (*.tga*)|Powierzchnia DirectDraw (*.dds*)|
-|**Potok zawartości siatki**|Plik wymiany AutoDesk FBX (*.fbx*)<br /><br /> Plik Collada DAE (*.dae*)<br /><br /> Plik OBJ czoła fali (*.obj*)|Plik siatki 3D (*.cmo*)|
-|**Potok zawartości programu do cieniowania**|Wizualny wykres modułu cieniującego (*.dgsl*)|Skompilowane dane wyjściowe programu do cieniowania (*.cso*)|
+|**Potok zawartości obrazów**|Portable Network Graphics ( *. png*)<br /><br /> JPEG ( *. jpg*, *. jpeg*, *. jpe*, *. JFIF*)<br /><br /> Bezpośrednie rysowanie powierzchni ( *. DDS*)<br /><br /> Graphics Interchange Format ( *. gif*)<br /><br /> Mapa bitowa ( *. bmp*, *. dib*)<br /><br /> Tagged Image File Format ( *. tif*, *. TIFF*)<br /><br /> Targa ( *. tga*)|Powierzchnia DirectDraw ( *. DDS*)|
+|**Potok zawartości siatki**|Plik FBX Interchange ( *. FBX*)<br /><br /> Plik DAE formacie Collada ( *. DAE*)<br /><br /> Plik OBJ plik Wavefront ( *. obj*)|plik siatki 3D ( *. marketingu*)|
+|**Potok zawartości programu do cieniowania**|Graf cieniowania wizualnego ( *. dgsl*)|Skompilowane dane wyjściowe modułu cieniującego ( *. CSO*)|
 
 ## <a name="configure-asset-content-pipeline-properties"></a>Konfigurowanie właściwości potoku zawartości zasobów
 
-Można ustawić właściwości potoku zawartości każdego pliku zasobów, dzięki czemu zostanie skompilowany w określony sposób.
+Można ustawić właściwości potoku zawartości dla każdego pliku zasobów, aby można było go skompilować w określony sposób.
 
 ### <a name="to-configure-content-pipeline-properties"></a>Aby skonfigurować właściwości potoku zawartości
 
-1. W **Eksploratora rozwiązań**w swoim projekcie Otwórz menu skrótów dla pliku zasobów, a następnie wybierz **właściwości**.
+1. W **Eksplorator rozwiązań**w projekcie Otwórz menu skrótów dla pliku zasobów, a następnie wybierz polecenie **Właściwości**.
 
-   Zasób **strona właściwości** pojawi się okno dialogowe.
+   Zostanie wyświetlone okno dialogowe **Strona właściwości** zasobu.
 
-2. Upewnij się, że **konfiguracji** i **platformy** właściwości są ustawione na wartości, które mają zostać zastosowane do zmiany.
+2. Upewnij się, że właściwości **konfiguracji** i **platformy** są ustawione na wartości, do których mają zostać zastosowane zmiany.
 
-3. W obszarze **właściwości konfiguracji**, wybierz węzeł potoku zawartości (na przykład **potok zawartości obrazu** dla tekstur i obrazów), a następnie w siatce właściwości ustaw właściwości odpowiednie wartości. Na przykład, aby wygenerować mapy MIP dla trwałego tekstura w czasie kompilacji, należy ustawić **Generuj Mips** właściwości **tak**.
+3. W obszarze **Właściwości konfiguracji**wybierz węzeł potoku zawartości (na przykład **potok zawartości obrazu** dla tekstury i zasobów obrazu), a następnie w siatce właściwości ustaw odpowiednie wartości właściwości. Na przykład, aby wygenerować mipmapy dla elementu zawartości tekstury w czasie kompilacji, należy ustawić właściwość **Generuj MIPS** na **wartość tak**.
 
-4. Wybierz **OK** przycisku.
+4. Wybierz przycisk **OK** .
 
-### <a name="image-content-pipeline-configuration"></a>Konfiguracja potoku zawartości obrazów
+### <a name="image-content-pipeline-configuration"></a>Konfiguracja potoku zawartości obrazu
 
-Korzystając z narzędzia potoku zawartości obrazu do tworzenia zasobów tekstury, można kompresować tekstury na różne sposoby, wskazywać, czy poziomy MCI powinny być generowane w czasie kompilacji, a następnie zmień nazwę pliku wyjściowego.
+Korzystając z narzędzia potoku zawartości obrazów do tworzenia zasobów tekstury, można skompresować teksturę na różne sposoby, wskazać, czy poziomy MIP mają być generowane w czasie kompilacji, i zmienić nazwę pliku wyjściowego.
 
 |Właściwość|Opis|
 |--------------|-----------------|
-|**Kompresuj**|Określa typ kompresji, który jest używany dla pliku wyjściowego.<br /><br /> Dostępne opcje to:<br /><br /> -   **Bez kompresji**<br />-   **Kompresja bc1_unorm**<br />-   **Kompresja bc1_unorm_srgb**<br />-   **Kompresja bc2_unorm**<br />-   **Kompresja bc2_unorm_srgb**<br />-   **Kompresja bc3_unorm**<br />-   **Kompresja bc3_unorm_srgb**<br />-   **Kompresja bc4_unorm**<br />-   **Kompresja bc4_snorm**<br />-   **Kompresja bc5_unorm**<br />-   **Kompresja bc5_snorm**<br />-   **Kompresja bc6h_uf16**<br />-   **Kompresja bc6h_sf16**<br />-   **Kompresja bc7_unorm**<br />-   **Kompresja bc7_unorm_srgb**<br /><br /> Aby uzyskać informacje o kompresji formaty są obsługiwane w różnych wersjach programu DirectX, zobacz [przewodnik programowania w infrastrukturze dxgi](http://go.microsoft.com/fwlink/p/?LinkId=246265).|
-|Konwertuj na wstępnie przemnożonego alfa formatu|**Tak** konwersji obrazu wstępnie przemnożonego alfa format w pliku wyjściowym; w przeciwnym razie **nie**. Tylko plik wyjściowy zostanie zmieniony, obraz źródłowy pozostaje niezmieniony.|
-|**Generuj Mips**|**Tak** do generowania pełnego łańcucha MIP w czasie kompilacji i uwzględnić go w pliku wyjściowym; w przeciwnym razie **nie**. Jeśli **nie**, a plik źródłowy zawiera już łańcuch mipmappingu, plik wyjściowy będzie zawierał łańcuch MIP; w przeciwnym wypadku plik wyjściowy będzie zawierał żadnego łańcucha MIP.|
-|**Wyjście zawartości**|Określa nazwę pliku wyjściowego. **Ważne:**  Zmiana rozszerzenia nazwy pliku wyjściowego pliku nie ma wpływu na jego format pliku.|
+|**Kompresuj**|Określa typ kompresji, który jest używany dla pliku wyjściowego.<br /><br /> Dostępne opcje to:<br /><br /> -   **bez kompresji**<br />-   **kompresję BC1_UNORM**<br />-   **kompresję BC1_UNORM_SRGB**<br />-   **kompresję BC2_UNORM**<br />-   **kompresję BC2_UNORM_SRGB**<br />-   **kompresję BC3_UNORM**<br />-   **kompresję BC3_UNORM_SRGB**<br />-   **kompresję BC4_UNORM**<br />-   **kompresję BC4_SNORM**<br />-   **kompresję BC5_UNORM**<br />-   **kompresję BC5_SNORM**<br />-   **kompresję BC6H_UF16**<br />-   **kompresję BC6H_SF16**<br />-   **kompresję BC7_UNORM**<br />-   **kompresję BC7_UNORM_SRGB**<br /><br /> Aby uzyskać informacje o tym, które formaty kompresji są obsługiwane w różnych wersjach programu DirectX, zobacz [Przewodnik programowania dla infrastruktury dxgi](http://go.microsoft.com/fwlink/p/?LinkId=246265).|
+|Konwertuj na wstępnie przemnożony format alfa|**Tak** , aby przekonwertować obraz na wstępnie przemnożony format alfa w pliku wyjściowym; w przeciwnym razie **nie**. Tylko plik wyjściowy zostanie zmieniony, obraz źródłowy nie zmieni się.|
+|**Generuj MIPS**|**Wartość tak** powoduje wygenerowanie pełnego łańcucha MIP w czasie kompilacji i uwzględnienie go w pliku wyjściowym; w przeciwnym razie **nie**. Jeśli **nie**, a plik źródłowy zawiera już łańcuch mipmappingu, plik wyjściowy będzie miał łańcuch MCI; w przeciwnym razie plik wyjściowy nie będzie miał łańcucha MIP.|
+|**Dane wyjściowe zawartości**|Określa nazwę pliku wyjściowego. **Ważne:**  Zmiana rozszerzenia nazwy pliku wyjściowego nie ma wpływu na jego format pliku.|
 
 ### <a name="mesh-content-pipeline-configuration"></a>Konfiguracja potoku zawartości siatki
 
-Gdy używasz narzędzia potoku zawartości siatki do tworzenia zawartości siatki można zmienić nazwę pliku wyjściowego.
+Korzystając z narzędzia potoku zawartości siatki do tworzenia zasobów siatki, można zmienić nazwę pliku wyjściowego.
 
 |Właściwość|Opis|
 |--------------|-----------------|
-|**Wyjście zawartości**|Określa nazwę pliku wyjściowego. **Ważne:**  Zmiana rozszerzenia nazwy pliku wyjściowego pliku nie ma wpływu na jego format pliku.|
+|**Dane wyjściowe zawartości**|Określa nazwę pliku wyjściowego. **Ważne:**  Zmiana rozszerzenia nazwy pliku wyjściowego nie ma wpływu na jego format pliku.|
 
-### <a name="shader-content-pipeline-configuration"></a>Konfiguracja potoku zawartości modułu cieniującego
+### <a name="shader-content-pipeline-configuration"></a>Konfiguracja potoku zawartości programu do cieniowania
 
-Korzystając z narzędzia potoku zawartości modułu cieniującego do tworzenia zasobów programu do cieniowania, możesz zmienić nazwę pliku wyjściowego.
+Korzystając z narzędzia potoku zawartości programu do cieniowania, można zmienić nazwę pliku wyjściowego.
 
 |Właściwość|Opis|
 |--------------|-----------------|
-|**Wyjście zawartości**|Określa nazwę pliku wyjściowego. **Ważne:**  Zmiana rozszerzenia nazwy pliku wyjściowego pliku nie ma wpływu na jego format pliku.|
+|**Dane wyjściowe zawartości**|Określa nazwę pliku wyjściowego. **Ważne:**  Zmiana rozszerzenia nazwy pliku wyjściowego nie ma wpływu na jego format pliku.|
 
-## <a name="load-and-use-3d-assets-at-run-time"></a>Ładowanie i używanie zasobów 3D w czasie wykonywania
+## <a name="load-and-use-3d-assets-at-run-time"></a>Ładowanie i używanie zasobów 3W w czasie wykonywania
 
-### <a name="use-textures-and-images"></a>Użyj teksturami i obrazami
+### <a name="use-textures-and-images"></a>Używanie tekstur i obrazów
 
-Program Direct3D oferuje funkcje tworzenia zasobów tekstur. W interfejsie Direct3D 11 Biblioteka narzędzi D3DX11 oferuje dodatkowe funkcje tworzenia zasobów tekstury i widoków zasobów bezpośrednio z plików obrazu. Aby uzyskać więcej informacji na temat sposobu tworzenia zasobu tekstury w interfejsie Direct3D 11, zobacz [tekstury](http://go.microsoft.com/fwlink/p/?LinkID=246267). Aby uzyskać więcej informacji o sposobie używania biblioteki D3DX11 do utworzenia zasobu tekstury lub widoku zasobu z pliku obrazu, zobacz [jak: Inicjowanie tekstury z pliku](http://go.microsoft.com/fwlink/p/?LinkId=246268).
+Direct3D oferuje funkcje do tworzenia zasobów tekstury. W programie Direct3D 11 biblioteka narzędzi D3DX11 udostępnia dodatkowe funkcje do tworzenia zasobów tekstury i widoków zasobów bezpośrednio z plików obrazów. Aby uzyskać więcej informacji na temat sposobu tworzenia zasobu tekstury w programie Direct3D 11, zobacz [tekstury](http://go.microsoft.com/fwlink/p/?LinkID=246267). Aby uzyskać więcej informacji na temat używania biblioteki D3DX11 do tworzenia zasobów tekstury lub widoku zasobów na podstawie pliku obrazu, zobacz [How to: Initialize a Texture from a File](http://go.microsoft.com/fwlink/p/?LinkId=246268).
 
-### <a name="use-3d-models"></a>Modele 3D
+### <a name="use-3d-models"></a>Korzystanie z modeli 3D
 
-Direct3D 11 nie zapewnia funkcji tworzenia zasobów z modeli 3D. Zamiast tego trzeba napisać kod, który odczytuje plik modelu 3D i tworzy bufory wierzchołków i indeksów, które reprezentują 3D model i wszystkie zasoby, których wymaga model — na przykład tekstury lub cieniowania.
+Program Direct3D 11 nie udostępnia funkcji służących do tworzenia zasobów z modeli 3W. Zamiast tego należy napisać kod, który odczytuje plik modelu 3D i tworzy Bufory wierzchołków i indeksów reprezentujące model 3D i wszystkie zasoby wymagane przez model — na przykład tekstury lub cieniowania.
 
-### <a name="use-shaders"></a>Użyj programów do cieniowania
+### <a name="use-shaders"></a>Używanie programów do cieniowania
 
-Direct3D oferuje funkcje służące do tworzenia zasobów cieniowania i powiązania ich z rurociągiem programowanej grafiki. Aby uzyskać więcej informacji na temat sposobu tworzenia zasobu modułu cieniującego w interfejsie Direct3D i powiązania z potokiem, zobacz [przewodnik programowania w języku hlsl](http://go.microsoft.com/fwlink/p/?LinkID=261521).
+Direct3D oferuje funkcje do tworzenia zasobów programu do cieniowania i wiązania ich z programowalnym potokiem grafiki. Aby uzyskać więcej informacji na temat sposobu tworzenia zasobu modułu cieniującego w programie Direct3D i powiązania go z potokiem, zobacz [Przewodnik programowania dla HLSL](http://go.microsoft.com/fwlink/p/?LinkID=261521).
 
-W potoku programowanej grafiki każdy etap potoku musi dawać do kolejnego etapu potoku wynik, który jest sformatowany w sposób, który może zrozumieć. Ponieważ program Shader Designer może tworzyć tylko cieniowania pikseli, oznacza to, że to do aplikacji, aby upewnij się, że dane, które otrzymuje w formacie, którego oczekuje. Kilka programowalnych etapów modułu cieniującego występuje przed modułem do cieniowania pikseli i dokonuje przekształceń geometrycznych — moduł cieniujący wierzchołków, moduł cieniujący kadłuba, moduł cieniujący domeny i moduł cieniujący geometrii. Etap kafelkowania programowania występuje również przed modułem do cieniowania pikseli. Niezależnie od tego, który z tych etapów bezpośrednio poprzedza cieniowanie pikseli musi podać swój wynik w następującym formacie:
+W przypadku programowalnego potoku grafiki każdy etap potoku musi przydzielić do następnego etapu potoku wynik sformatowany w sposób, który może zrozumieć. Ponieważ projektant programu do cieniowania może tworzyć tylko cieniowanie pikseli, oznacza to, że jest to aplikacja, aby upewnić się, że odebrane dane są w oczekiwanym formacie. Kilka programowalnych etapów modułu cieniującego występuje przed cieniowanie pikseli i wykonywanie transformacji geometrycznych — cieniowania wierzchołków, cieniowania kadłuba, cieniowania domeny i cieniowania geometrycznego. Nieprogramowalny etap mozaikowania również występuje przed cieniowanie pikseli. Niezależnie od tego, który z tych etapów bezpośrednio poprzedza cieniowanie pikseli, musi podać swój wynik w tym formacie:
 
 ```hlsl
 struct PixelShaderInput
@@ -148,7 +148,7 @@ struct PixelShaderInput
 };
 ```
 
-W zależności od węzłów programu Shader Designer używanych w cieniowaniu, użytkownik może być również konieczne podane dodatkowych danych w formacie zgodnym z tymi definicjami:
+W zależności od węzłów projektanta modułu cieniującego, które są używane w module cieniującego, może być również konieczne podanie dodatkowych danych w formacie zgodnie z tymi definicjami:
 
 ```hlsl
 Texture2D Texture1 : register( t0 );
@@ -213,8 +213,8 @@ cbuffer MiscVars : register(b3)
 
 |Tytuł|Opis|
 |-----------|-----------------|
-|[Instrukcje: Eksportowanie tekstury zawierającej mipmapy](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Informacje dotyczące używania potoku zawartości obrazu do wyeksportowania tekstury, które zawierają wstępnie obliczone mipmapy.|
-|[Instrukcje: Eksportowanie tekstury wykorzystującej ma wstępnie przemnożony kanał alfa](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Informacje dotyczące używania potoku zawartości obrazu do eksportowania tekstur, które zawierają wstępnie przemnożone wartości alfa.|
-|[Instrukcje: Eksportowanie tekstury do użycia z Direct2D lub JavaScript aplikacji](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Informacje dotyczące używania potoku zawartości obrazu do wyeksportowania tekstury, które mogą być używane w aplikacji Direct2D lub JavaScript.|
-|[Praca z zasobami 3D dla gier i aplikacji](../designers/working-with-3-d-assets-for-games-and-apps.md)|Opisuje narzędzia edycji programu Visual Studio oferuje do tworzenia i manipulowania zasobami 3D, które obejmują tekstury i obrazy, modele 3D i cieniowania.|
-|[Instrukcje: Eksport cieniowania](../designers/how-to-export-a-shader.md)|Opisuje sposób eksportowania modułu cieniującego od projektanta modułu cieniującego.|
+|[Instrukcje: eksportowanie tekstury zawierającej mipmapy](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Opisuje sposób użycia potoku zawartości obrazu do wyeksportowania tekstury zawierającej wstępnie obliczony mipmapy.|
+|[Instrukcje: eksportowanie tekstury wykorzystującej wstępnie przemnożony kanał alfa](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Opisuje sposób użycia potoku zawartości obrazu do wyeksportowania tekstury zawierającej wstępnie przemnożone wartości alfa.|
+|[Instrukcje: eksportowanie tekstury do użycia z aplikacjami Direct2D lub JavaScript](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Opisuje sposób użycia potoku zawartości obrazu do wyeksportowania tekstury, która może być używana w aplikacji Direct2D lub JavaScript.|
+|[Praca z zasobami 3W dla gier i aplikacji](../designers/working-with-3-d-assets-for-games-and-apps.md)|Opisuje narzędzia do edycji, które program Visual Studio zapewnia do tworzenia i manipulowania zasobami 3W, w tym tekstury i obrazy, modele 3W i programy do cieniowania.|
+|[Instrukcje: eksportowanie cieniowania](../designers/how-to-export-a-shader.md)|Opisuje sposób eksportowania programu do cieniowania z projektanta cieniowania.|

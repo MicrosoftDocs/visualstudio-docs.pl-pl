@@ -1,53 +1,53 @@
 ---
-title: 'Instrukcje: Użyj do stron nadrzędnych | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: korzystanie z nawigacji z nawigacją | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: 4a688056-37dc-406a-9071-be2141e192fe
 caps.latest.revision: 5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 64f84d33a814937df74002ffeb2fe7453694377e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1c01e48e6aa34513e57b373150c605cb0a7f5b18
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444136"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659153"
 ---
-# <a name="how-to-use-breadcrumb-navigation"></a>Instrukcje: Używanie nawigacji za pomocą linków do stron nadrzędnych
-Istnieją trzy podstawowe sposoby zmianę zestawu działań, które są wyświetlane w [!INCLUDE[wfd1](../includes/wfd1-md.md)]:  
-  
-1. Kliknij dwukrotnie, aby przejść do działania podrzędnego.  
-  
-2. Kliknij przycisk na pasku nawigacji, aby przejść do działania w elemencie nadrzędnym.  
-  
-3. Rozwiń lub Zwiń działań w miejscu.  
-  
-### <a name="using-breadcrumb-navigation"></a>Przy użyciu nadrzędnych  
-  
-1. Kliknij dwukrotnie działanie [!INCLUDE[wfd2](../includes/wfd2-md.md)] zmienić działania głównego kliknięto działania. Kliknięto działania jest w pełni rozszerzany w katalogu głównym i jego elementów nadrzędnych są wyświetlane na pasku nawigacji. Jest to czasem nazywane przechodzenia do szczegółów w lub poza nią działania.  
-  
-2. Aby przejść do elementu nadrzędnego bieżącego działania głównego, kliknij działanie na pasku nawigacji.  
-  
-### <a name="expanding-or-collapsing-an-activity-in-place"></a>Rozwijanie lub zwijanie działania w miejscu  
-  
-1. Kliknij cudzysłów ostrokątny w działaniu rozwija lub zwija działania w miejscu.  
-  
-2. Po zmianie stanu stanu rozszerzenia, klikając przycisk Nowy stan rozszerzenia jest zapisywany w XAML.  
-  
+# <a name="how-to-use-breadcrumb-navigation"></a>Instrukcje: korzystanie z nawigacji ze stron nadrzędnych
+Istnieją trzy podstawowe sposoby zmiany zestawu działań, które są wyświetlane w [!INCLUDE[wfd1](../includes/wfd1-md.md)]:
+
+1. Kliknij dwukrotnie, aby przejść do działania podrzędnego.
+
+2. Kliknij przycisk na pasku nawigacyjnym, aby przejść do działania nadrzędnego.
+
+3. Rozwiń lub Zwiń działania na miejscu.
+
+### <a name="using-breadcrumb-navigation"></a>Używanie nawigacji ze stron nadrzędnych
+
+1. Kliknij dwukrotnie działanie [!INCLUDE[wfd2](../includes/wfd2-md.md)], aby zmienić działanie główne na kliknięte działanie. Kliknięte działanie jest następnie w pełni rozwinięte w katalogu głównym, a jego elementy nadrzędne są wyświetlane na pasku nawigacyjnym. Jest to czasami nazywane drążeniem do lub z działania.
+
+2. Aby przejść do elementu nadrzędnego bieżącego działania głównego, kliknij działanie na pasku nawigacyjnym.
+
+### <a name="expanding-or-collapsing-an-activity-in-place"></a>Rozwijanie lub zwijanie działania w miejscu
+
+1. Kliknięcie cudzysłowów w działaniu rozszerza lub zwija działanie na miejscu.
+
+2. Gdy stan rozwinięcia zostanie zmieniony przez kliknięcie przycisku, nowy stan rozwinięcia zostanie zapisany w języku XAML.
+
     > [!WARNING]
-    > Nie wszystkie działania można rozszerzać w miejscu. Istnieją dwa przypadki, gdy działanie nie może być rozwinięty w miejscu: albo nadrzędnym działania nie zezwala na jego elementów podrzędnych do wyodrębnienia w miejscu, (na przykład działania w elemencie Schemat blokowy nie może być rozwinięty w miejscu), lub nie zezwala na się Projektant działań można rozwinąć w miejscu. Mimo że żaden z Projektanci działań objętych [!INCLUDE[wfd2](../includes/wfd2-md.md)] ostatnie zachowanie, niektóre działania niestandardowe mogą stosować tego zachowania.  
-  
-### <a name="expanding-all-or-collapsing-all-activities"></a>Wszystkie rozwijanie lub zwijanie wszystkich działań  
-  
-1. Użyj **Rozwiń wszystko** i **Zwiń wszystkie** przycisków w interfejsie użytkownika, aby rozwinąć lub zwinąć wszystkie działania w bieżącym katalogu głównym łączy do stron nadrzędnych. Należy zauważyć, że Rozwiń wszystko i Zwiń wszystko są globalne stanów. Oznacza to, że podczas zmiany działania głównego przy użyciu nadrzędnych, Rozwiń wszystko lub Zwiń wszystkie stany będzie się powtarzał dopóki nie klikniesz **przywrócić**.  
-  
-2. Po zastosowaniu wszystkich rozwiń lub Zwiń wszystkie stany, możesz kliknąć **przywrócić** przycisk, który pojawia się, aby wrócić do wyszukiwania w stanie uprzednio zastosowane do każdego działania.  
-  
+    > Nie wszystkie działania mogą być rozwinięte. Istnieją dwa przypadki, w których działanie nie może być rozwinięte: element nadrzędny działania nie zezwala na rozszerzanie jego elementów podrzędnych, (na przykład działania w schemacie blokowym nie mogą być rozwinięte) lub Projektant działań nie zezwala na korzystanie z niego być rozwinięte. Chociaż żaden z projektantów działań uwzględnionych w [!INCLUDE[wfd2](../includes/wfd2-md.md)] nie ma tego samego zachowania, niektóre działania niestandardowe mogą spowodować takie zachowanie.
+
+### <a name="expanding-all-or-collapsing-all-activities"></a>Rozwijanie wszystkich lub zwijanie wszystkich działań
+
+1. Użyj przycisków **Rozwiń wszystko** i **Zwiń wszystkie** w interfejsie użytkownika, aby rozwinąć lub zwinąć wszystkie działania w ramach bieżącego katalogu głównego. Należy pamiętać, że Rozwiń wszystkie i Zwiń wszystkie są stanami globalnymi. Oznacza to, że po zmianie działania głównego przy użyciu nawigacji nawigacyjnej cały stan rozwiń wszystko lub Zwiń wszystko do momentu kliknięcia opcji **Przywróć**.
+
+2. Po zastosowaniu stanu rozwiń wszystko lub Zwiń wszystko można kliknąć przycisk **Przywróć** , który pojawia się z powrotem do przeglądania stanu poprzednio zastosowanego do poszczególnych działań.
+
     > [!WARNING]
-    > Jeśli działania, takie jak <xref:System.Activities.Statements.Flowchart>, wybrał poza rozwiń w miejscu, funkcje skojarzone z **Rozwiń wszystko** i **Zwiń wszystko** przycisków jest wyłączona na **schematu blokowego**  projektanta. [!INCLUDE[crabout](../includes/crabout-md.md)] **schemat blokowy** projektanta, zobacz [schemat blokowy](../workflow-designer/flowchart-activity-designer.md) tematu.  
-  
+    > Jeśli działanie, takie jak <xref:System.Activities.Statements.Flowchart>, wybrało rozwinięte miejsce, funkcjonalność skojarzona z przyciskami **Rozwiń wszystko** i **Zwiń wszystko** jest wyłączona w projektancie **schematów blokowych** . [!INCLUDE[crabout](../includes/crabout-md.md)] projektanta **schematów blokowych** , zobacz temat [schemat blokowy](../workflow-designer/flowchart-activity-designer.md) .
+
     > [!WARNING]
-    > Rozwiń wszystkie efekty specjalne zawiera również w **przełącznika** i **TryCatch** Projektanci działań. Po kliknięciu **Rozwiń wszystko**, zostaną wyświetlone wszystkie przypadki przełącznika i wszystkie bloki try/catch/finally. Klikając **przywrócić** lub **Zwiń wszystko** zwraca te projektantów do stanu domyślnego, z którego możesz kliknąć poszczególne przypadek/bloku, aby wyświetlić jego zawartość.
+    > Rozszerzenie ALL ma również szczególny efekt w projektantach działań **Switch** i **TryCatch** . Po kliknięciu przycisku **Rozwiń wszystko**wszystkie przypadki przełączania i wszystkie bloki try/catch/finally są wyświetlane. Kliknięcie przycisku **Przywróć** lub **Zwiń wszystko** zwraca tych projektantów do ich domyślnego stanu, z którego można kliknąć pojedynczy przypadek/blok, aby wyświetlić jego zawartość.

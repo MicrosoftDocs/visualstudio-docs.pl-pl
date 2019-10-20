@@ -1,5 +1,5 @@
 ---
-title: Pisanie kodu pod kątem dostosowywania języka specyficznego dla domeny | Dokumentacja firmy Microsoft
+title: Pisanie kodu w celu dostosowywania języka specyficznego dla domeny | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -8,72 +8,72 @@ helpviewer_keywords:
 - Domain-Specific Language, programming
 ms.assetid: a4a17f5b-9c97-4575-b2d1-3182c1896b72
 caps.latest.revision: 31
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 03b92c8ea9b764df517b02dc0dc256b5837a6c10
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4448e9a1c65ccba4a9ae48d0271f9fd91fc011b6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68187114"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662974"
 ---
 # <a name="writing-code-to-customise-a-domain-specific-language"></a>Pisanie kodu pod kątem dostosowywania języka specyficznego dla domeny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W tej sekcji dowiesz się, jak za pomocą niestandardowego kodu dostępu, modyfikowanie lub tworzenie modelu w języku specyficznym dla domeny.  
-  
- Istnieje kilka kontekstów, w których można napisać kod, który współdziała z języka DSL:  
-  
-- **Polecenia niestandardowe.** Można utworzyć polecenia, że użytkownicy mogą być wywoływane przez kliknięcie prawym przyciskiem myszy na diagramie i które można modyfikować modelu. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie polecenia do Menu skrótów](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
-  
-- **Sprawdzanie poprawności.** Można napisać kod, który sprawdza, czy model jest w poprawnym stanie. Aby uzyskać więcej informacji, zobacz [weryfikacji języka specyficznego dla domeny](../modeling/validation-in-a-domain-specific-language.md).  
-  
-- **Zastępowanie domyślnego zachowania.** Można modyfikować wiele aspektów kod, który jest generowany na podstawie DslDefinition.dsl. Aby uzyskać więcej informacji, zobacz [zastępowanie i rozszerzanie wygenerowanych klas](../modeling/overriding-and-extending-the-generated-classes.md).  
-  
-- **Transformacja tekstu.** Możesz tworzyć szablony tekstowe, które zawierają kod, który uzyskuje dostęp do modelu i generuje plik tekstowy, na przykład w celu generowania kodu programu. Aby uzyskać więcej informacji, zobacz [generowanie kodu z języka specyficznego dla domeny](../modeling/generating-code-from-a-domain-specific-language.md).  
-  
-- **Inne rozszerzenia programu Visual Studio.** Można napisać oddzielne rozszerzenia VSIX, które odczytują i modyfikowania modeli. Aby uzyskać więcej informacji, zobacz [jak: Otwieranie modelu z pliku w kodzie programu](../modeling/how-to-open-a-model-from-file-in-program-code.md)  
-  
-  Wystąpienia klas, które można zdefiniować w DslDefinition.dsl są przechowywane w strukturze danych o nazwie *Store In-Memory* (ISP) lub *Store*. Klas zdefiniowanych w DSL zawsze zająć Store jako argumentu do konstruktora. Jeśli na przykład modem DSL definiuje klasę o nazwie przykładowy:  
-  
-  `Example element = new Example (theStore);`  
-  
-  Przechowywanie obiektów w Store (a nie tylko jako zwykłe obiektów) zapewnia kilka korzyści.  
-  
-- **Transakcje**. Można grupować seria powiązanych zmian do transakcji:  
-  
-   `using (Transaction t = store.TransactionManager.BeginTransaction("updates"))`  
-  
-   `{`  
-  
-   `// make several changes to Store elements here`  
-  
-   `t.Commit();`  
-  
-   `}`  
-  
-   Jeśli wystąpi wyjątek podczas wprowadzania zmian, dzięki czemu końcowy Commit() nie jest wykonywane, Store zostaną zresetowane do jego poprzedniego stanu. Pomaga to upewnić się, że błędy nie spowodują pozostawienia modelu w stanie niespójnym. Aby uzyskać więcej informacji, zobacz [nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md).  
-  
-- **Relacje binarne**. Jeśli zdefiniujesz relacje między dwoma klasami, na obu końcach mają właściwości, która przechodzi do drugiej stronie. Po obu stronach są zawsze zsynchronizowane. Na przykład jeśli zdefiniujesz relacje planowania przy użyciu role o nazwach elementów nadrzędnych i podrzędnych, można napisać:  
-  
-   `John.Children.Add(Mary)`  
-  
-   Oba z następujących wyrażeń są teraz wartość true:  
-  
-   `John.Children.Contains(Mary)`  
-  
-   `Mary.Parents.Contains(John)`  
-  
-   Można również osiągnąć ten sam efekt, pisząc:  
-  
-   `Mary.Parents.Add(John)`  
-  
-   Aby uzyskać więcej informacji, zobacz [nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md).  
-  
-- **Reguły i zdarzenia**. Można zdefiniować reguły, które są uruchamiane zawsze, gdy określone zmiany zostały wprowadzone. Reguły są używane na przykład do kształtów na diagramie na bieżąco z elementami modelu, które stanowią one. Aby uzyskać więcej informacji, zobacz [reagowania na zagrożenia i propagowanie zmian](../modeling/responding-to-and-propagating-changes.md).  
-  
-- **Serializacja**. Store udostępnia standardowy sposób wykonywania serializacji obiektów, zawartych w pliku. Można dostosować zasady do serializacji i deserializacji. Aby uzyskać więcej informacji, zobacz [Dostosowywanie przechowywania plików i serializacji XML](../modeling/customizing-file-storage-and-xml-serialization.md).  
-  
-## <a name="see-also"></a>Zobacz też  
+W tej sekcji pokazano, jak używać niestandardowego kodu do uzyskiwania dostępu do modelu w języku specyficznym dla domeny, modyfikowania go lub tworzenia.
+
+ Istnieje kilka kontekstów, w których można napisać kod, który działa z DSL:
+
+- **Polecenia niestandardowe.** Można utworzyć polecenie, które użytkownicy mogą wywołać, klikając prawym przyciskiem myszy diagram, a następnie modyfikując model. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie polecenia do menu skrótów](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
+
+- **Zatwierdzenia.** Można napisać kod, który weryfikuje, czy model jest w poprawnym stanie. Aby uzyskać więcej informacji, zobacz [Walidacja w języku specyficznym dla domeny](../modeling/validation-in-a-domain-specific-language.md).
+
+- **Zastępowanie zachowania domyślnego.** Można modyfikować wiele aspektów kodu, który jest generowany z DslDefinition. DSL. Aby uzyskać więcej informacji, zobacz [przesłanianie i rozszerzanie wygenerowanych klas](../modeling/overriding-and-extending-the-generated-classes.md).
+
+- **Przekształcanie tekstu.** Można napisać szablony tekstowe, które zawierają kod, który uzyskuje dostęp do modelu i generuje plik tekstowy, na przykład w celu wygenerowania kodu programu. Aby uzyskać więcej informacji, zobacz [generowanie kodu z języka specyficznego dla domeny](../modeling/generating-code-from-a-domain-specific-language.md).
+
+- **Inne rozszerzenia programu Visual Studio.** Można napisać oddzielne rozszerzenia VSIX, które odczytują i modyfikują modele. Aby uzyskać więcej informacji, zobacz [jak to zrobić: otwieranie modelu z pliku w kodzie programu](../modeling/how-to-open-a-model-from-file-in-program-code.md)
+
+  Wystąpienia klas, które definiujesz w DslDefinition. DSL, są przechowywane w strukturze danych o nazwie *Magazyn w pamięci* (IMS) lub w *sklepie*. Klasy zdefiniowane w DSL zawsze przyjmują magazyn jako argument do konstruktora. Na przykład, jeśli DSL definiuje klasę o nazwie example:
+
+  `Example element = new Example (theStore);`
+
+  przechowywanie obiektów w sklepie (zamiast zwykłych obiektów) zapewnia kilka korzyści.
+
+- **Transakcje**. Można grupować serie powiązanych zmian w transakcji:
+
+   `using (Transaction t = store.TransactionManager.BeginTransaction("updates"))`
+
+   `{`
+
+   `// make several changes to Store elements here`
+
+   `t.Commit();`
+
+   `}`
+
+   Jeśli wystąpi wyjątek w czasie wprowadzania zmian, w związku z czym końcowe zatwierdzenie () nie zostanie wykonane, magazyn zostanie zresetowany do poprzedniego stanu. Dzięki temu można upewnić się, że błędy nie opuszczają modelu w stanie niespójnym. Aby uzyskać więcej informacji, zobacz [nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md).
+
+- **Relacje binarne**. Jeśli zdefiniujesz relację między dwoma klasami, wystąpienia na obu końcach mają właściwość, która przechodzi do drugiego końca. Dwa zakończenia są zawsze zsynchronizowane. Na przykład w przypadku zdefiniowania relacji Parenthood z rolami o nazwie rodzice i Children można napisać:
+
+   `John.Children.Add(Mary)`
+
+   Oba poniższe wyrażenia są teraz prawdziwe:
+
+   `John.Children.Contains(Mary)`
+
+   `Mary.Parents.Contains(John)`
+
+   Możesz również osiągnąć ten sam efekt, pisząc:
+
+   `Mary.Parents.Add(John)`
+
+   Aby uzyskać więcej informacji, zobacz [nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md).
+
+- **Zasady i zdarzenia**. Można zdefiniować reguły wyzwalane po wprowadzeniu określonych zmian. Reguły są używane na przykład w celu zachowania aktualności kształtów na diagramie przy użyciu elementów modelu, które są obecne. Aby uzyskać więcej informacji, zobacz [reagowanie na zmiany i propagowanie zmian](../modeling/responding-to-and-propagating-changes.md).
+
+- **Serializacja**. Magazyn zapewnia standardowy sposób serializacji obiektów, które zawiera do pliku. Można dostosować reguły serializacji i deserializacji. Aby uzyskać więcej informacji, zobacz [Dostosowywanie serializacji File Storage i XML](../modeling/customizing-file-storage-and-xml-serialization.md).
+
+## <a name="see-also"></a>Zobacz też
  [Dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md)

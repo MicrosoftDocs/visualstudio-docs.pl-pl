@@ -1,74 +1,74 @@
 ---
-title: Ogólne elementy interfejsu użytkownika | Dokumentacja firmy Microsoft
+title: Ogólne elementy interfejsu użytkownika | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
 ms.topic: reference
 ms.assetid: bc67652d-1001-4979-ba71-d57147d21928
 caps.latest.revision: 40
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a510ad25e741fc5924597d4b26841518c63f83a1
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: ff25c7b03f9287afe9b8070a656643d34d5ec478
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65690960"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661249"
 ---
 # <a name="general-user-interface-elements-visual-studio"></a>Ogólne elementy interfejsu użytkownika (Visual Studio)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 W tej sekcji opisano niektóre elementy interfejsu użytkownika zintegrowanego środowiska programistycznego (IDE).
 
 ## <a name="in-this-section"></a>W tej sekcji
- [Hierarchia wywołań](../../ide/reference/call-hierarchy.md) reprezentuje zestaw relacji wywołujący/wywoływany w kodzie.
+ [Hierarchia wywołań](../../ide/reference/call-hierarchy.md) Reprezentuje zestaw relacji wywołujących/wywoływanych w kodzie.
 
- [Selektor fragmentu kodu](../../ide/reference/code-snippet-picker.md) pozwala wybrać fragment z zestawu fragmentów dla danego języka.
+ [Selektor fragmentów kodu](../../ide/reference/code-snippet-picker.md) Umożliwia wybranie fragmentu kodu z zestawu fragmentów kodu dla danego języka.
 
- [Okno listy błędów](../../ide/reference/error-list-window.md) wyświetla błędy i ostrzeżenia kompilacji.
+ [Okno Lista błędów](../../ide/reference/error-list-window.md) Wyświetla błędy kompilacji i ostrzeżenia.
 
- [Przejdź do wiersza](../../ide/reference/go-to-line.md) pozwala na przechodzenie do określonego wiersza w pliku.
+ [Przejdź do wiersza](../../ide/reference/go-to-line.md) Umożliwia przejście do określonego wiersza w pliku.
 
- [Okno dialogowe Opcje](../../ide/reference/options-dialog-box-visual-studio.md) pozwala określić opcje.
+ [Opcje](../../ide/reference/options-dialog-box-visual-studio.md) — okno dialogowe Umożliwia określenie opcji.
 
- [Opcje, Edytor tekstu, ogólne](../../ide/reference/options-text-editor-general.md) pozwala określić ogólne opcje tekstu edytora.
+ [Opcje, Edytor tekstu, ogólne](../../ide/reference/options-text-editor-general.md) Umożliwia określenie opcji ogólnych dla edytora tekstu.
 
- [Opcje, Edytor tekstu, rozszerzenie pliku](../../ide/reference/options-text-editor-file-extension.md) umożliwia określanie rozszerzeń plików dla edytora.
+ [Opcje, Edytor tekstu, rozszerzenie pliku](../../ide/reference/options-text-editor-file-extension.md) Umożliwia określenie rozszerzeń plików dla edytora.
 
- [Opcje, Edytor tekstu wszystkie języki](../../ide/reference/options-text-editor-all-languages.md) pozwala określić opcje, które są wspólne dla wszystkich języków programowania.
+ [Opcje, Edytor tekstu, wszystkie języki](../../ide/reference/options-text-editor-all-languages.md) Pozwala określić opcje, które są wspólne dla wszystkich języków programowania.
 
- [Opcje, Edytor tekstu wszystkie języki, karty](../../ide/reference/options-text-editor-all-languages-tabs.md) umożliwia określenie opcji karty, które mogą być wspólne dla wszystkich języków programowania.
+ [Opcje, Edytor tekstu, wszystkie języki, karty](../../ide/reference/options-text-editor-all-languages-tabs.md) Umożliwia określenie opcji kart, które mogą być wspólne dla wszystkich języków programowania.
 
- [Opcje, Edytor tekstów, Basic (Visual Basic)](../../ide/reference/options-text-editor-basic-visual-basic.md) pozwala określić opcje dla plików języka Visual Basic.
+ [Opcje, Edytor tekstu, podstawowe (Visual Basic)](../../ide/reference/options-text-editor-basic-visual-basic.md) Pozwala określić opcje dla plików Visual Basic.
 
- [Opcje, Edytor tekstu, C/C++, formatowanie](../../ide/reference/options-text-editor-c-cpp-formatting.md) pozwala określić opcje formatowania dla plików C lub C++.
+ [Opcje, Edytor tekstu, C/C++, formatowanie](../../ide/reference/options-text-editor-c-cpp-formatting.md) pozwala określić opcje formatowania dla C lub C++ plików.
 
- [Zaawansowane opcje, Edytor tekstu, C/C++,](../../ide/reference/options-text-editor-c-cpp-advanced.md) umożliwia określenie opcji zaawansowanych dla plików C lub C++.
+ [Opcje, Edytor tekstu, C/C++, zaawansowane](../../ide/reference/options-text-editor-c-cpp-advanced.md) umożliwiają określenie opcji zaawansowanych dla C lub C++ plików.
 
- [Opcje, Edytor tekstu, C#, formatowanie](../../ide/reference/options-text-editor-csharp-formatting.md) pozwala określić opcje formatowania dla plików języka C#.
+ [Opcje, Edytor tekstu, C#, formatowanie](../../ide/reference/options-text-editor-csharp-formatting.md) pozwala określić opcje formatowania dla C# plików.
 
- [Opcje, Edytor tekstu, C#, zaawansowane](../../ide/reference/options-text-editor-csharp-advanced.md) umożliwia określenie opcji zaawansowanych dla plików języka C#.
+ [Opcje, Edytor tekstu, C#, zaawansowane —](../../ide/reference/options-text-editor-csharp-advanced.md) umożliwiają określenie opcji zaawansowanych dla C# plików.
 
- [Opcje, Edytor tekstu, C#, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md) pozwala określić opcje IntelliSense dla plików języka C#.
+ [Opcje, Edytor tekstu, C#funkcja IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md) umożliwia określenie opcji IntelliSense dla C# plików.
 
- [Opcje, Edytor tekstu, XAML, formatowanie](../../ide/reference/options-text-editor-xaml-formatting.md) pozwala określić opcje formatowania dla plików XAML.
+ [Opcje, Edytor tekstu, XAML, formatowanie](../../ide/reference/options-text-editor-xaml-formatting.md) Pozwala określić opcje formatowania dla plików XAML.
 
- [Odwołanie do właściwości projektu](../../ide/reference/project-properties-reference.md) umożliwia określenie właściwości projektu.
+ [Informacje o właściwościach projektu](../../ide/reference/project-properties-reference.md) Umożliwia określenie właściwości projektu.
 
- [Projekty i rozwiązania, okno dialogowe Opcje](../../ide/reference/projects-and-solutions-options-dialog-box.md) pozwala określić opcje projektu i rozwiązania.
+ [Projekty i rozwiązania, Opcje — okno dialogowe](../../ide/reference/projects-and-solutions-options-dialog-box.md) Umożliwia określenie opcji projektu i rozwiązania.
 
- [Okno właściwości](../../ide/reference/properties-window.md) Wyświetla właściwości dla projektów, plików, formantów i pól w oknach oraz projektantach IDE.
+ [Okno właściwości](../../ide/reference/properties-window.md) Wyświetla właściwości projektów, plików, formantów i pól w oknach i projektantach środowiska IDE.
 
- [Szybkie uruchamianie, środowisko, opcje Okno dialogowe](../../ide/reference/quick-launch-environment-options-dialog-box.md) umożliwia szybkie wyszukiwanie systemu windows, poleceń, opcji i menu programu Visual Studio.
+ [Szybkie uruchamianie, środowisko, Opcje — okno dialogowe](../../ide/reference/quick-launch-environment-options-dialog-box.md) Umożliwia szybkie znajdowanie okien, poleceń, opcji i menu programu Visual Studio.
 
- [Przybornik](../../ide/reference/toolbox.md) pozwala na dodawanie formantów do powierzchni projektowej.
+ [Zestaw narzędzi](../../ide/reference/toolbox.md) Umożliwia dodawanie kontrolek do powierzchni projektowej.
 
- [Przybornik, karta składniki](../../ide/reference/toolbox-components-tab.md) pozwala na dodawanie składników do powierzchni projektowej.
+ [Przybornik, karta składniki](../../ide/reference/toolbox-components-tab.md) Umożliwia dodanie składników do powierzchni projektowej.
 
- [Przybornik, karta dane](../../ide/reference/toolbox-data-tab.md) pozwala na dodawanie formantów danych do powierzchni projektowej.
+ [Przybornik, karta dane](../../ide/reference/toolbox-data-tab.md) Umożliwia dodawanie kontrolek danych do powierzchni projektowej.
 
- [Przybornik, karta HTML](../../ide/reference/toolbox-html-tab.md) pozwala na dodawanie tagów html do powierzchni projektowej.
+ [Przybornik, karta HTML](../../ide/reference/toolbox-html-tab.md) Umożliwia dodanie tagów HTML do powierzchni projektowej.
 
- [Ogólne, okno dialogowe Opcje CSS, Edytor tekstu,](https://msdn.microsoft.com/library/b33a7617-e69d-4a11-938e-2e218a34a10c) pozwala określić opcje dla plików CSS.
+ [Ogólne, CSS, Edytor tekstu, Opcje — okno dialogowe](https://msdn.microsoft.com/library/b33a7617-e69d-4a11-938e-2e218a34a10c) Pozwala określić opcje dla plików CSS.
 
- [Sprawdzanie poprawności, HTML, Edytor tekstu, okno dialogowe Opcje](https://msdn.microsoft.com/library/9c24ecfe-263e-4bf1-88de-d01be3992863) pozwala określić opcje dla stron HTML.
+ [Walidacja, HTML, Edytor tekstu, Opcje — okno dialogowe](https://msdn.microsoft.com/library/9c24ecfe-263e-4bf1-88de-d01be3992863) Pozwala określić opcje dla stron HTML.

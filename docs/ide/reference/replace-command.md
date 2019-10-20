@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Edit.Replace command
 - Replace command
 ms.assetid: a15767f1-5a3d-44f5-8c77-7b0f1157f340
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edcff51428451b50dc149b7b55cee11cb9ede853
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: efd6398e475f08d07b8c2fd2eadb3d580aa4255d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919047"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655587"
 ---
 # <a name="replace-command"></a>Zastąp — Polecenie
 Zamienia tekst w plikach za pomocą podzestawu opcji dostępnych na karcie **Zamień na pliki w** oknie **Znajdź i Zamień** .
@@ -34,11 +34,11 @@ Edit.Replace findwhat replacewith [/all] [/case]
 ## <a name="arguments"></a>Argumenty
 `findwhat`
 
-Wymagana. Tekst do dopasowania.
+Wymagany. Tekst do dopasowania.
 
 `replacewith`
 
-Wymagana. Tekst, który ma zostać zastąpiony dla dopasowanego tekstu.
+Wymagany. Tekst, który ma zostać zastąpiony dla dopasowanego tekstu.
 
 ## <a name="switches"></a>Przełączniki
 /All lub/a
@@ -47,11 +47,11 @@ Opcjonalny. Zamienia wszystkie wystąpienia szukanego tekstu na tekst zastępczy
 
 /Case lub/c
 
-Opcjonalny. Dopasowań występuje tylko wtedy, gdy wielkie i małe litery dokładnie pasują do znaków `findwhat` określonych w argumencie.
+Opcjonalny. Dopasowań występuje tylko wtedy, gdy wielkie i małe litery dokładnie pasują do znaków określonych w argumencie `findwhat`.
 
 /doc lub/d
 
-Opcjonalna. Przeszukuje tylko bieżący dokument. Określ tylko jeden z dostępnych zakresów wyszukiwania `/doc`,, `/proc`, `/open`lub `/sel`.
+Opcjonalny. Przeszukuje tylko bieżący dokument. Określ tylko jeden z dostępnych zakresów wyszukiwania, `/doc`, `/proc`, `/open` lub `/sel`.
 
 /Hidden lub/h
 
@@ -59,7 +59,7 @@ Opcjonalny. Wyszukuje tekst ukryty i zwinięty, taki jak metadane kontrolki czas
 
 /Open lub/o
 
-Opcjonalny. Przeszukuje wszystkie otwarte dokumenty, tak jakby były one jednym dokumentem. Określ tylko jeden z dostępnych zakresów wyszukiwania `/doc`,, `/proc`, `/open`lub `/sel`.
+Opcjonalny. Przeszukuje wszystkie otwarte dokumenty, tak jakby były one jednym dokumentem. Określ tylko jeden z dostępnych zakresów wyszukiwania, `/doc`, `/proc`, `/open` lub `/sel`.
 
 /Options lub/t
 
@@ -67,19 +67,19 @@ Opcjonalny. Wyświetla listę bieżących ustawień opcji Znajdź i nie wykonuje
 
 /proc lub/p
 
-Opcjonalny. Przeszukuje tylko bieżącą procedurę. Określ tylko jeden z dostępnych zakresów wyszukiwania `/doc`,, `/proc`, `/open`lub `/sel`.
+Opcjonalny. Przeszukuje tylko bieżącą procedurę. Określ tylko jeden z dostępnych zakresów wyszukiwania, `/doc`, `/proc`, `/open` lub `/sel`.
 
 /Regex lub/r
 
-Opcjonalny. Używa wstępnie zdefiniowanych znaków specjalnych w `findwhat` argumencie jako notacji, które reprezentują wzorce tekstu, a nie znaki literału. Aby uzyskać pełną listę znaków wyrażenia regularnego, zobacz [wyrażenia regularne](../../ide/using-regular-expressions-in-visual-studio.md).
+Opcjonalny. Używa wstępnie zdefiniowanych znaków specjalnych w argumencie `findwhat` jako notacji, które reprezentują wzorce tekstu, a nie znaki literału. Aby uzyskać pełną listę znaków wyrażenia regularnego, zobacz [wyrażenia regularne](../../ide/using-regular-expressions-in-visual-studio.md).
 
 /Reset lub/e
 
-Opcjonalna. Zwraca ustawienia domyślne opcji Znajdź i nie wykonuje wyszukiwania.
+Opcjonalny. Zwraca ustawienia domyślne opcji Znajdź i nie wykonuje wyszukiwania.
 
 /SEL lub/s
 
-Opcjonalna. Przeszukuje tylko bieżące zaznaczenie. Określ tylko jeden z dostępnych zakresów wyszukiwania `/doc`,, `/proc`, `/open`lub `/sel`.
+Opcjonalny. Przeszukuje tylko bieżące zaznaczenie. Określ tylko jeden z dostępnych zakresów wyszukiwania, `/doc`, `/proc`, `/open` lub `/sel`.
 
 /up lub/u
 
@@ -87,14 +87,14 @@ Opcjonalny. Przeszukuje bieżącą lokalizację w pliku w kierunku początku pli
 
 /Wild lub/l
 
-Opcjonalny. Używa wstępnie zdefiniowanych znaków specjalnych w `findwhat` argumencie jako notacji do reprezentowania znaku lub sekwencji znaków.
+Opcjonalny. Używa wstępnie zdefiniowanych znaków specjalnych w argumencie `findwhat` jako notacji do reprezentowania znaku lub sekwencji znaków.
 
 /Word lub/w
 
-Opcjonalna. Wyszukuje tylko całe wyrazy.
+Opcjonalny. Wyszukuje tylko całe wyrazy.
 
 ## <a name="example"></a>Przykład
-Ten przykład zastępuje `btnSend` przy `btnSubmit` użyciu we wszystkich otwartych dokumentach.
+Ten przykład zastępuje `btnSend` z `btnSubmit` we wszystkich otwartych dokumentach.
 
 ```
 >Edit.Replace btnSend btnSubmit /open

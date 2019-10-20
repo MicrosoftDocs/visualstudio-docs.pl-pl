@@ -3,26 +3,26 @@ title: Projektant schematu XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ffdf63ee-faa6-45b7-bbf9-a5644dc8aca2
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c56b87b46a916596a601d380254d4e4abcf093bf
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 90fc2474a7ede44d6407c527b2ea547ba4c3c055
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461316"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72608234"
 ---
-# <a name="xml-schema-designer-overview"></a>Omówienie projektanta schematu XML
+# <a name="xml-schema-designer-overview"></a>Projektant schematu XML — Omówienie
 
-Projektant schematu XML (XSD Designer) jest graficznego narzędzia, która pozwala na wizualizowanie schematu z zestawu na różnych poziomach abstrakcji. Dostępne są następujące główne składniki Projektant XSD:
+Projektant schematu XML (Projektant XSD) jest graficznym narzędziem, które pozwala na wizualizację zestawu schematów na różnych poziomach abstrakcji. Główne składniki projektanta XSD są następujące:
 
-- [Eksplorator schematu XML](../xml-tools/xml-schema-explorer.md), co umożliwia przeglądanie, przejdź w drzewie schematu XML i wyszukiwanie.
+- [Eksplorator schematu XML](../xml-tools/xml-schema-explorer.md), który umożliwia przeglądanie i nawigowanie po drzewie schematu XML i wykonywanie wyszukiwania.
 
-- [Widoku Start](../xml-tools/start-view.md), który jest doskonała platforma dla Projektant XSD. Z widoku startowego możesz przejść z innymi widokami Projektant XSD i wyświetlić szczegóły zestawu schematów.
+- [Widok początkowy](../xml-tools/start-view.md), który jest punktem uruchamiania projektanta XSD. W widoku Start można przechodzić do innych widoków projektanta XSD i przeglądać szczegóły zestawu schematów.
 
-- [Widoku wykresu](../xml-tools/graph-view.md), który umożliwia wyświetlenie Omówienie zestawu schematu i relacje między węzłami schematu.
+- [Widok wykresu](../xml-tools/graph-view.md), który umożliwia wyświetlenie przeglądu zestawu schematów i relacji między węzłami schematu.
 
-- [Widoku modelu zawartości](../xml-tools/content-model-view.md), która zapewnia graficzną reprezentację szczegóły węzłów lokalne i globalne schematu, w tym proste i złożone typy, elementy, grup, atrybuty i grupy atrybutów.
+- [Widok modelu zawartości](../xml-tools/content-model-view.md), który oferuje graficzną reprezentację szczegółów lokalnych i globalnych węzłów schematu, w tym prostych i złożonych typów, elementów, grup, atrybutów i grup atrybutów.

@@ -1,61 +1,61 @@
 ---
-title: Jak użycie fragmentów kodu polecenia Otocz przez | Dokumentacja firmy Microsoft
+title: Jak używać fragmentów kodu ze znakiem przestrzenny | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - surround-with snippets
 - snippets [C#], surround with
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bf279502c52c47a68ea7eb5fb5c193e7d31e4d6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3550efde20dbacb0afb17665a2ef1c811ac39946
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62428212"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656513"
 ---
-# <a name="how-to-use-surround-with-code-snippets"></a>Instrukcje: Użycie fragmentów kodu polecenia Otocz przez
+# <a name="how-to-use-surround-with-code-snippets"></a>Instrukcje: używanie fragmentów kodu w cudzysłowie
 
-W poniższych procedurach opisano sposób korzystania z funkcji Otocz przez fragmenty kodu. Otocz przez fragmenty kodu są dostępne trzy sposoby: za pomocą skrótu klawiaturowego za pośrednictwem **Edytuj** menu i za pośrednictwem menu kliknij prawym przyciskiem myszy lub kontekstu.
+W poniższych procedurach opisano, jak używać fragmentów kodu. Fragmenty kodu przestrzenny są dostępne na trzy sposoby: za pomocą skrótu klawiaturowego, menu **Edycja** i menu kontekstowego.
 
-## <a name="to-use-surround-with-code-snippets-through-keyboard-shortcut"></a>Aby korzystać z funkcji Otocz przez fragmenty kodu za pomocą skrótu klawiaturowego
+## <a name="to-use-surround-with-code-snippets-through-keyboard-shortcut"></a>Aby użyć fragmentów kodu ze znakiem skrótu klawiaturowego
 
-1. W programie Visual Studio IDE Otwórz plik, który chcesz edytować.
+1. W środowisku IDE programu Visual Studio Otwórz plik, który ma być edytowany.
 
-1. W **Edytor kodu**, zaznacz tekst otaczającego.
+1. W **edytorze kodu**wybierz opcję tekst do obprzestrzennia.
 
-1. Typ **Ctrl**+**K**, **Ctrl**+**S**.
+1. Wpisz **ctrl** +**K**, **Ctrl** +**S**.
 
-1. Wybierz fragment kodu, lista fragmentu kodu przy użyciu myszy lub wpisując nazwę fragmentu kodu, i naciskając klawisz **kartę** lub **Enter**.
+1. Wybierz fragment kodu z listy fragmentów kodu przy użyciu myszy lub wpisz nazwę fragmentu kodu, a następnie naciśnij klawisz **Tab** lub **Enter**.
 
-## <a name="to-use-surround-with-code-snippets-through-the-edit-menu"></a>Aby korzystać z funkcji Otocz przez fragmenty kodu za pomocą menu Edycja
+## <a name="to-use-surround-with-code-snippets-through-the-edit-menu"></a>Aby użyć fragmentów kodu z otaczaniem za pomocą menu Edycja
 
-1. W programie Visual Studio IDE Otwórz plik, który chcesz edytować.
+1. W środowisku IDE programu Visual Studio Otwórz plik, który ma być edytowany.
 
-1. W **Edytor kodu**, zaznacz tekst otaczającego.
+1. W **edytorze kodu**wybierz opcję tekst do obprzestrzennia.
 
-1. Z **Edytuj** menu, wybierz opcję **IntelliSense** , a następnie wybierz **Otocz** polecenia.
+1. Z menu **Edycja** wybierz pozycję **IntelliSense** , a następnie wybierz polecenie **Otocz za pomocą** polecenia.
 
-1. Wybierz fragment kodu z wstawek kodu, a następnie naciśnij klawisz **kartę** lub **Enter**.
+1. Wybierz fragment kodu ze wstawka fragmentu kodu, a następnie naciśnij klawisz **Tab** lub **Enter**.
 
-     Alternatywnie można wpisać nazwę fragmentu kodu, a następnie naciśnij klawisz **kartę** lub **Enter**.
+     Alternatywnie można wpisać nazwę fragmentu kodu, a następnie nacisnąć klawisz **Tab** lub **Enter**.
 
-## <a name="to-use-surround-with-code-snippets-through-the-context-menu"></a>Aby korzystać z funkcji Otocz przez fragmenty kodu za pomocą menu kontekstowego
+## <a name="to-use-surround-with-code-snippets-through-the-context-menu"></a>Aby skorzystać z fragmentów kodu otaczającego i z menu kontekstowego
 
-1. W programie Visual Studio IDE Otwórz plik, który chcesz edytować.
+1. W środowisku IDE programu Visual Studio Otwórz plik, który ma być edytowany.
 
-1. W **Edytor kodu**, zaznacz tekst otaczającego.
+1. W **edytorze kodu**wybierz opcję tekst do obprzestrzennia.
 
-1. Kliknij prawym przyciskiem myszy zaznaczony tekst, a następnie wybierz pozycję **Otocz** polecenia z menu kontekstowego.
+1. Kliknij prawym przyciskiem myszy zaznaczony tekst, a następnie wybierz polecenie **Otocz z** menu kontekstowego.
 
-1. Wybierz fragment kodu z wstawek kodu, a następnie naciśnij klawisz **kartę** lub **Enter**.
+1. Wybierz fragment kodu ze wstawka fragmentu kodu, a następnie naciśnij klawisz **Tab** lub **Enter**.
 
-     Alternatywnie można wpisać nazwę fragmentu kodu, a następnie naciśnij klawisz **kartę** lub **Enter**.
+     Alternatywnie można wpisać nazwę fragmentu kodu, a następnie nacisnąć klawisz **Tab** lub **Enter**.
 
 ## <a name="see-also"></a>Zobacz także
 
 - [C#fragmenty kodu](../ide/visual-csharp-code-snippets.md)
-- [Selektor wstawek kodu](../ide/reference/code-snippet-picker.md)
+- [Selektor fragmentów kodu](../ide/reference/code-snippet-picker.md)

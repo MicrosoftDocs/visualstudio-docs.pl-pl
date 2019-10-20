@@ -1,46 +1,46 @@
 ---
-title: 'Instrukcje: Tworzenie wykresów niestandardowych w wynikach testów obciążenia'
+title: 'Porady: tworzenie wykresów niestandardowych w wynikach testów obciążenia'
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - load test results graphs, creating
 - load test results graphs
 ms.assetid: 17fcafce-76f9-4411-9389-6e5376eab236
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6df80340f57ba40597af67d57ba1bda3da778f4b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9012fbea21f552b8057278b37f5d336718c0269f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949963"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653578"
 ---
-# <a name="how-to-create-custom-graphs-in-load-test-results"></a>Instrukcje: Tworzenie wykresów niestandardowych obciążenia wyników testu
+# <a name="how-to-create-custom-graphs-in-load-test-results"></a>Instrukcje: Tworzenie niestandardowych wykresów w wynikach testu obciążenia
 
-Można zaprojektować wykresów wyświetlających określone informacje na temat wyników testów obciążenia. Projektujesz niestandardowy wykres, określając liczniki testu obciążenia, które wykresie będą wyświetlane.
+Można zaprojektować wykresy, które wyświetlają określone informacje na temat wyników testu obciążenia. Wykres niestandardowy można zaprojektować, określając liczniki testów obciążenia, które będą wyświetlane na wykresie.
 
-Po uruchomieniu testu obciążeniowego lub po zakończeniu działania, można wykonać poniższą procedurę.
+Poniższą procedurę można wykonać w czasie, gdy test obciążenia jest uruchomiony lub po zakończeniu działania.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-## <a name="to-create-a-custom-load-test-results-graph"></a>Aby utworzyć wykres wyników testu obciążenia niestandardowe
+## <a name="to-create-a-custom-load-test-results-graph"></a>Aby utworzyć wykres wyników niestandardowego testu obciążenia
 
-1. Na **testu obciążeniowego** narzędzi, wybierz **Dodaj nowy wykres**.
+1. Na pasku narzędzi **testu obciążenia** wybierz pozycję **Dodaj nowy Graf**.
 
-     \- lub —
+     \- lub-
 
-     Na **analizatora testu obciążenia**, kliknij prawym przyciskiem myszy **liczniki** panel lub wykres, a następnie wybierz **Dodaj Graf**.
+     W **analizatorze testu obciążenia**kliknij prawym przyciskiem myszy w panelu **liczniki** lub w grafie, a następnie wybierz polecenie **Dodaj wykres**.
 
-     **Wprowadź nazwę wykresu** zostanie wyświetlone okno dialogowe.
+     Zostanie wyświetlone okno dialogowe **wprowadzanie nazwy grafu** .
 
-2. W obszarze **nazwa wykresu**, wpisz nazwę dla wykresu, a wybierz **OK**.
+2. W obszarze **Nazwa wykresu**wpisz nazwę wykresu, a następnie wybierz **przycisk OK**.
 
-     Nowy wykres, który pojawia się w **analizatora testu obciążenia**. Wygląda na to, w panelu aktualnie zaznaczonym wykresem; zastępuje wykres, który został wyświetlony w tym panelu.
+     Nowy wykres zostanie wyświetlony w **analizatorze testu obciążenia**. Pojawia się w aktualnie wybranym panelu wykresu; zastępuje wykres, który był wyświetlany w tym panelu.
 
 3. Dostosuj nowy wykres, dodając liczniki. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie i usuwanie liczników na wykresach](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md).
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Analizowanie wyników testów obciążenia w widoku wykresu](../test/analyze-load-test-results-in-the-graphs-view.md)
+- [Analizowanie wyników testów obciążenia w widoku wykresy](../test/analyze-load-test-results-in-the-graphs-view.md)
 - [Instrukcje: Dodawanie i usuwanie liczników na wykresach](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)

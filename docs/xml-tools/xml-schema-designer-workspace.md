@@ -3,48 +3,48 @@ title: Obszar roboczy projektanta schematu XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 588fa495-fe7f-4b16-8a9f-6b6b8d2d502a
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1350523b347d0dfb87831947b4fd1d9206521ca
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: d6e5efc4c192fbb9debeb9dd5f9ccf1eaec69efa
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461333"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72608260"
 ---
-# <a name="xml-schema-designer-workspace-views"></a>Widoki obszar roboczy Projektanta schematu XML
+# <a name="xml-schema-designer-workspace-views"></a>Widoki obszarów roboczych projektanta schematu XML
 
-Projektant schematu XML (XSD Designer) jest graficznego narzędzia, które ułatwia Eksplorowanie schematów XML. Oprócz [Eksploratora schematu XML](../xml-tools/xml-schema-explorer.md), co pozwala na przeglądanie, przejdź w drzewie schematu XML i wyszukuj, Projektant XSD zawiera trzy widoki, w którym możesz zapoznać się z bardziej szczegółowo schematu XSD.
+Projektant schematu XML (Projektant XSD) jest graficznym narzędziem ułatwiającym Eksplorowanie schematów XML. Oprócz [Eksploratora schematu XML](../xml-tools/xml-schema-explorer.md), który umożliwia przeglądanie i nawigowanie po drzewie schematu XML i wykonywanie wyszukiwania, Projektant XSD udostępnia trzy widoki, w których można EKSPLOROWAĆ schemat XSD bardziej szczegółowo.
 
-- **Widoku Start** to doskonała Projektant XSD; z widoku startowego możesz przejść z innymi widokami Projektant XSD i Szczegóły zestawu schematów.
-- **Widoku wykresu** umożliwia wyświetlenie Omówienie zestawu schematu i relacje między węzłami schematu.
-- **Widoku modelu zawartości** zawiera graficzną reprezentację szczegóły węzłów lokalne i globalne schematu, w tym proste i złożone typy, elementy, grup, atrybuty i grupy atrybutów.
+- **Widok startowy** jest punktem uruchamiania projektanta XSD; w widoku Start można przechodzić do innych widoków projektanta XSD i przeglądać szczegóły zestawu schematów.
+- **Widok grafu** umożliwia wyświetlenie przeglądu zestawu schematów i relacji między węzłami schematu.
+- **Widok model zawartości** zawiera graficzną reprezentację szczegółów lokalnych i globalnych węzłów schematu, w tym prostych i złożonych typów, elementów, grup, atrybutów i grup atrybutów.
 
-Aby rozpocząć eksplorowanie węzły, które interesują Cię, należy dodać je do obszaru roboczego. Obszar roboczy jest współużytkowana przez wszystkie widoki.
+Aby rozpocząć Eksplorowanie interesujących Cię węzłów, należy dodać je do obszaru roboczego. Obszar roboczy jest współużytkowany między wszystkimi widokami.
 
 ## <a name="add-nodes-to-the-workspace"></a>Dodawanie węzłów do obszaru roboczego
 
-Można dodać węzły do obszaru roboczego, w następujący sposób:
+Węzły można dodać do obszaru roboczego w następujący sposób:
 
-- W sekcji "Szczegóły zestawu schematów" [widoku Start](../xml-tools/start-view.md), kliknij przycisk **Dodaj** łącze obok typu globalnego węzła.
+- W sekcji "Szczegóły zestawu schematów" w [widoku Start](../xml-tools/start-view.md)kliknij link **Dodaj** obok typu węzła globalnego.
 
-- Przeciąganie i upuszczanie globalnego węzłów, węzły plików i węzły przestrzeni nazw z **Eksploratora schematu XML** na jeden z trzech widoków. Aby uzyskać więcej informacji, zobacz sekcję "Przeciąganie i upuszczanie węzły" w [Eksploratora schematu XML](../xml-tools/xml-schema-explorer.md).
+- Przeciągnij i upuść węzły globalne, węzły plików i węzły przestrzeni nazw z **Eksploratora schematu XML** do dowolnego z trzech widoków. Aby uzyskać więcej informacji, zobacz sekcję "przeciąganie i upuszczanie węzłów" w [Eksploratorze schematu XML](../xml-tools/xml-schema-explorer.md).
 
-- Skorzystaj z menu kontekstowego (kliknij prawym przyciskiem myszy) w **Eksploratora schematu XML**. Aby uzyskać więcej informacji, zobacz [menu kontekstowe](../xml-tools/context-menus-xml-schema-explorer.md).
+- Użyj menu kontekstowego (kliknij prawym przyciskiem myszy) w **Eksploratorze schematu XML**. Aby uzyskać więcej informacji, zobacz [menu kontekstowe](../xml-tools/context-menus-xml-schema-explorer.md).
 
-- Wykonaj wyszukiwanie w Eksploratorze XSD, a następnie kliknij przycisk **Dodaj wyróżnione węzły do obszaru roboczego** przycisk w okienku wyników podsumowania. Aby uzyskać więcej informacji, zobacz [wyszukiwanie zestawu schematów](../xml-tools/searching-the-schema-set.md).
+- Wykonaj wyszukiwanie w Eksploratorze XSD i kliknij przycisk **Dodaj wyróżnione węzły do obszaru roboczego** w okienku wyników podsumowania. Aby uzyskać więcej informacji, zobacz [Wyszukiwanie zestawu schematów](../xml-tools/searching-the-schema-set.md).
 
-## <a name="switch-views"></a>Przełączanie widoków
+## <a name="switch-views"></a>Przełącz widoki
 
-Aby przełączać widoki, należy użyć jednej z następujących czynności:
+Aby przełączyć widoki, użyj jednego z następujących elementów:
 
-- Pasek narzędzi Projektanta XSD.
+- Pasek narzędzi projektanta XSD.
 
-- Menu kontekstowe (kliknij prawym przyciskiem myszy), widoku modelu zawartości i widoku wykresu.
+- Menu kontekstowe (kliknij prawym przyciskiem myszy) widoku modelu zawartości i widok wykresu.
 
-- Znaki wodne, na stronie widoku Start lub znak wodny na pusty widok modelu zawartości lub w widoku wykresu.
+- Znaki wodne na stronie widok początkowy lub znak wodny w widoku pusty model zawartości lub widok wykresu.
 
-- Klawisze skrótu: **CTRL**+**1** dla widoku startowego **Ctrl**+**2** dla widoku wykresu i **Ctrl** + **3** dla widoku modelu zawartości.
+- Klawisze skrótu: **ctrl** +**1** dla widoku Start, **Ctrl** +**2** dla widoku wykresu i **Ctrl** +**3** dla widoku modelu zawartości.

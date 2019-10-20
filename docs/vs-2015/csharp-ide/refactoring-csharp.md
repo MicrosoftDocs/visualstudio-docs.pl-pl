@@ -1,5 +1,5 @@
 ---
-title: Refaktoryzacja (C#) | Dokumentacja firmy Microsoft
+title: Refaktoryzacja (C#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -15,97 +15,96 @@ helpviewer_keywords:
 - refactoring [C#]
 ms.assetid: a39e656a-f81f-4c87-b484-a23168ff1dfc
 caps.latest.revision: 23
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: fa8fbfd8837fb35617b79089fffd11ea3b8d2e93
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0415222645dce2f65e91b5b1c55a5a118cc26697
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444531"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667503"
 ---
 # <a name="refactoring-c"></a>Refaktoryzacja (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Refaktoryzacja to proces po została zapisana przez zmianę wewnętrznej struktury kodu bez zmiany zachowania zewnętrznego kodu w celu ulepszania kodu.  
-  
- Visual C# zawiera następujące polecenia refaktoryzacji **Refactoring** menu:  
-  
-- [Refaktoryzacja wyodrębniania metody (C#)](../csharp-ide/extract-method-refactoring-csharp.md)  
-  
-- [Refaktoryzacja zmiany nazwy (C#)](../csharp-ide/rename-refactoring-csharp.md)  
-  
-- [Refaktoryzacja hermetyzowania pola (C#)](../csharp-ide/encapsulate-field-refactoring-csharp.md)  
-  
-- [Refaktoryzacja wyodrębniania interfejsu (C#)](../csharp-ide/extract-interface-refactoring-csharp.md)  
-  
-- [Refaktoryzacja usuwania parametrów (C#)](../csharp-ide/remove-parameters-refactoring-csharp.md)  
-  
-- [Refaktoryzacja zmiany kolejności parametrów (C#)](../csharp-ide/reorder-parameters-refactoring-csharp.md)  
-  
-## <a name="multi-project-refactoring"></a>Refaktoryzacja wielu projektów  
- Program Visual Studio obsługuje wielu projektów, Refaktoryzacja dla projektów, które znajdują się w tym samym rozwiązaniu. Wszystkie operacje refaktoryzacji, które poprawić odwołań między plikami Popraw te odwołania we wszystkich projektach tego samego języka. Działa to w przypadku dowolnego odwołania projekt projekt. Na przykład, jeśli masz aplikację konsolową, która odwołuje się do biblioteki klas, po zmianie nazwy typu klasy biblioteki (przy użyciu `Rename` operacja refaktoryzacji), odwołania do typu biblioteki klas w aplikacji konsolowej również są aktualizowane.  
-  
-## <a name="changes-preview"></a>Podgląd zmian  
- Wiele operacji refaktoryzacji zapewnienia możliwości dla Ciebie przejrzeć wszystkie odwołania wprowadzone operacji refaktoryzacji wykona przed zatwierdzeniem tych zmian w kodzie. Te operacje, refaktoryzacji **podgląd zmian odwołań** opcja jest wyświetlana w oknie dialogowym refaktoryzacji. Po wybraniu tej opcji, a następnie akceptując operacji refaktoryzacji **okno dialogowe zmiany wersji zapoznawczej** będą wyświetlane. Należy zauważyć, że **podgląd zmian** okno dialogowe ma dwa widoki. Widok dołu zawiera kod dla wszystkich aktualizacji odwołania z powodu operacji refaktoryzacji. Naciśnięcie klawisza **anulować** na **podgląd zmian** okno dialogowe przestanie operacji refaktoryzacji, a zostaną wprowadzone nie zmiany w kodzie.  
-  
-## <a name="refactoring-warnings"></a>Refaktoryzacja ostrzeżenia  
- Jeśli kompilator nie ma dokładnego zrozumienia działania programu i jest możliwe, aparat refaktoryzacji może nie zaktualizować wszystkie odpowiednie odwołania, zostanie wyświetlone okno dialogowe ostrzeżenia. To okno dialogowe Ostrzeżenie udostępnia również możliwość nad wersją zapoznawczą swój kod w **podgląd zmian** okno dialogowe, aby zatwierdzić zmiany.  
-  
+Refaktoryzacja to proces ulepszania kodu po jego zapisaniu przez zmianę wewnętrznej struktury kodu bez zmiany zewnętrznego zachowania kodu.
+
+ Wizualizacja C# udostępnia następujące polecenia refaktoryzacji w menu **refaktoryzacji** :
+
+- [Refaktoryzacja wyodrębniania metody (C#)](../csharp-ide/extract-method-refactoring-csharp.md)
+
+- [Refaktoryzacja zmiany nazwy (C#)](../csharp-ide/rename-refactoring-csharp.md)
+
+- [Refaktoryzacja hermetyzowania pola (C#)](../csharp-ide/encapsulate-field-refactoring-csharp.md)
+
+- [Refaktoryzacja wyodrębniania interfejsu (C#)](../csharp-ide/extract-interface-refactoring-csharp.md)
+
+- [Refaktoryzacja usuwania parametrów (C#)](../csharp-ide/remove-parameters-refactoring-csharp.md)
+
+- [Refaktoryzacja zmiany kolejności parametrów (C#)](../csharp-ide/reorder-parameters-refactoring-csharp.md)
+
+## <a name="multi-project-refactoring"></a>Refaktoryzacja wieloprojektowa
+ Program Visual Studio obsługuje refaktoryzację wieloprojektową dla projektów, które znajdują się w tym samym rozwiązaniu. Wszystkie operacje refaktoryzacji, które korygują odwołania w plikach, korygują te odwołania we wszystkich projektach tego samego języka. Działa to w przypadku wszystkich odwołań między projektami. Na przykład jeśli masz aplikację konsolową, która odwołuje się do biblioteki klas, podczas zmiany nazwy typu biblioteki klas (przy użyciu operacji refaktoryzacji `Rename`) odwołania do typu biblioteki klas w aplikacji konsolowej również zostaną zaktualizowane.
+
+## <a name="changes-preview"></a>Podgląd zmian
+ Wiele operacji refaktoryzacji daje możliwość przejrzenia wszystkich zmian odniesienia, które wykonuje operacja refaktoryzacji w kodzie, przed zatwierdzeniem zmian. W przypadku tych operacji refaktoryzacji w oknie dialogowym Refaktoryzacja zostanie wyświetlona opcja **Podgląd zmian odwołania** . Po wybraniu tej opcji i zaakceptowaniu operacji refaktoryzacji zostanie wyświetlone okno **dialogowe Podgląd zmian** . Zwróć uwagę, że okno dialogowe **Podgląd zmian** ma dwa widoki. W dolnym widoku zostanie wyświetlony kod ze wszystkimi aktualizacjami odwołań spowodowanymi operacją refaktoryzacji. Naciśnięcie przycisku **Anuluj** w oknie dialogowym **Podgląd zmian** spowoduje zatrzymanie operacji refaktoryzacji i wprowadzenie zmian w kodzie nie będzie możliwe.
+
+## <a name="refactoring-warnings"></a>Ostrzeżenia refaktoryzacji
+ Jeśli kompilator nie ma kompletnego rozumienia programu i istnieje możliwość, że aparat refaktoryzacji może nie zaktualizować wszystkich odpowiednich odwołań, wyświetlane jest okno dialogowe ostrzeżenia. To okno dialogowe ostrzeżenia umożliwia również wyświetlenie podglądu kodu w oknie dialogowym **zmiany w wersji zapoznawczej** przed zatwierdzeniem zmian.
+
 > [!NOTE]
-> Jeśli metoda zawiera błąd składniowy (która IDE wskazuje czerwoną linią falistą), następnie aparat refaktoryzacji nie zaktualizuje wszystkie odwołania do elementu w ramach tej metody. W poniższym przykładzie przedstawiono to zachowanie.  
-  
- Domyślnie jeśli można wykonać operacji refaktoryzacji, bez odwołania podgląd zmian wykryto błąd kompilacji w programie, a następnie środowisko programistyczne wyświetla to okno dialogowe ostrzeżenia.  
-  
- Jeśli zostanie wykonana operacja refaktoryzacji, która ma **podgląd zmian odwołania** włączone wykryto błąd kompilacji w programie, a następnie środowisko programistyczne wyświetli następujący komunikat ostrzegawczy w dolnej części **Podgląd zmian** okno dialogowe, zamiast wyświetlania **refaktoryzacji ostrzeżenie** okno dialogowe:  
-  
- **Projekt lub jeden z jego elementów zależnych nie aktualnie są kompilowane. Odwołania nie może zostać zaktualizowany.**  
-  
- To ostrzeżenie refaktoryzacji jest dostępna tylko dla operacji refaktoryzacji, które zapewniają **podgląd zmian odwołania** opcji.  
-  
-## <a name="error-tolerant-refactoring-and-verification-results"></a>Refaktoryzacja błąd odpornej na uszkodzenia i wyniki weryfikacji  
- Refaktoryzacja błędu odpornego na błędy. Innymi słowy można wykonać, Refaktoryzacja w projekcie, który nie może utworzyć. Jednak w tych przypadkach proces refaktoryzacji może nie zaktualizować niejednoznacznego odwołania poprawnie.  
-  
- **Wyniki weryfikacji** okno dialogowe może powiadomić refaktoryzacji engine wykrywa błędy kompilacji lub wykrywa, że operacja refaktoryzacji przypadkowo powoduje, że odwołanie kodu można coś, co różni się od go powiązać pierwotnie powiązany (ponowne wiązanie problem).  
-  
- Aby włączyć wyniki weryfikacji funkcji na **narzędzia** menu, kliknij przycisk **opcje**. W **opcje** okna dialogowego rozwiń **edytora tekstów**, a następnie rozwiń węzeł **C#**. Kliknij przycisk **zaawansowane** i wybierz **Sprawdź wyniki refaktoryzacji** pole wyboru.  
-  
- **Wyniki weryfikacji** okno dialogowe wyróżnia różnicę między dwoma rodzajami ponowne wiązanie problemów.  
-  
-### <a name="references-whose-definition-will-no-longer-be-the-renamed-symbol"></a>Odwołania, którego definicja nie będzie już zmieniono nazwy symbolu  
- Tego rodzaju ponowne powiązywanie problem występuje, gdy odwołanie nie odwołuje się już do zmieniono nazwę symbolu. Na przykład rozważmy następujący kod:  
-  
-```csharp  
-class Example  
-{  
-    private int a;  
-    public Example(int b)  
-    {  
-        a = b;  
-    }  
-}  
-```  
-  
- Jeśli używasz Refaktoryzacja zmiany nazwy `a` do `b`, pojawi się okno dialogowe. Odwołanie do zmiennej których nazwy zostały zmienione `a` teraz wiąże parametr, który jest przekazywany do konstruktora zamiast powiązania do pola.  
-  
-### <a name="references-whose-definition-will-now-become-the-renamed-symbol"></a>Odwołania, którego definicja, stanie się zmieniło nazwę symbolu  
- Tego rodzaju ponowne powiązywanie problem występuje, gdy odwołanie, którego wcześniej nie odwołuje się do symbolu zmienionej nazwie teraz odwołuje się do symbolu, których nazwy zostały zmienione. Na przykład rozważmy następujący kod:  
-  
-```csharp  
-class Example  
-{  
-    private static void Method(object a) { }  
-    private static void OtherMethod(int a) { }  
-    static void Main(string[] args)  
-    {  
-        Method(5);  
-    }  
-}  
-```  
-  
- Jeśli używasz Refaktoryzacja zmiany nazwy `OtherMethod` do `Method`, pojawi się okno dialogowe. Odwołania w `Main` teraz odwołuje się do metody przeciążonej, który akceptuje `int` parametru zamiast przeciążona metoda, która akceptuje `object` parametru.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Używanie środowiska programistycznego Visual Studio dla języka C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)   
- [Instrukcje: Przywracanie refaktoryzowanych fragmentów kodu C#](../ide/how-to-restore-csharp-refactoring-snippets.md)
+> Jeśli metoda zawiera błąd składniowy (który IDE wskazuje czerwoną linią falistą), aparat refaktoryzacji nie zaktualizuje żadnych odwołań do elementu w tej metodzie. Poniższy przykład ilustruje to zachowanie.
+
+ Domyślnie, jeśli wykonujesz operację refaktoryzacji bez wyświetlania podglądów zmian odwołań i w programie wykryto błąd kompilacji, środowisko programistyczne wyświetla to okno dialogowe ostrzeżenia.
+
+ Jeśli wykonujesz operację refaktoryzacji, która ma włączone **zmiany w wersji zapoznawczej** , a w programie wykryto błąd kompilacji, w środowisku deweloperskim zostanie wyświetlony następujący komunikat ostrzegawczy dotyczący zmiany w **wersji zapoznawczej** zamiast wyświetlania okna dialogowego **ostrzeżenia refaktoryzacji** :
+
+ **Projekt lub jedna z jej zależności nie jest obecnie kompiluje. Odwołania nie mogą zostać zaktualizowane.**
+
+ To ostrzeżenie refaktoryzacji jest dostępne tylko w przypadku operacji refaktoryzacji, które udostępniają opcję **zmiany w wersji zapoznawczej** .
+
+## <a name="error-tolerant-refactoring-and-verification-results"></a>Refaktoryzacja odporna na błędy i wyniki weryfikacji
+ Refaktoryzacja jest odporna na błędy. Innymi słowy, można wykonać refaktoryzację w projekcie, który nie może skompilować. Jednak w takich przypadkach proces refaktoryzacji nie może poprawnie aktualizować niejednoznacznych odwołań.
+
+ W oknie dialogowym **wyniki weryfikacji** można powiadomić użytkownika, jeśli aparat refaktoryzacji wykryje błędy kompilacji lub odkryje, że operacja refaktoryzacji nieumyślnie powoduje powiązanie kodu z czymś innym niż to, z jakim było pierwotnie powiązane. ponowne wiązanie problemu).
+
+ Aby włączyć funkcję wyniki weryfikacji, w menu **Narzędzia** kliknij polecenie **Opcje**. W oknie dialogowym **Opcje** rozwiń pozycję **Edytor tekstu**, a następnie rozwiń węzeł **C#** . Kliknij przycisk **Zaawansowane** i zaznacz pole wyboru **Weryfikuj wyniki refaktoryzacji** .
+
+ W oknie dialogowym **wyniki weryfikacji** rozróżniana jest różnica między dwoma rodzajami problemów związanych z łączeniem.
+
+### <a name="references-whose-definition-will-no-longer-be-the-renamed-symbol"></a>Odwołania, których definicja nie będzie już symbolem zmiany nazwy
+ Ten rodzaj problemu ponownego powiązania występuje, gdy odwołanie nie odwołuje się już do symbolu o zmienionej nazwie. Rozważmy na przykład następujący kod:
+
+```csharp
+class Example
+{
+    private int a;
+    public Example(int b)
+    {
+        a = b;
+    }
+}
+```
+
+ Jeśli użyjesz refaktoryzacji, aby zmienić nazwę `a` na `b`, zostanie wyświetlone okno dialogowe. Odwołanie do zmiennej o zmienionej nazwie `a` teraz wiąże się z parametrem, który jest przesyłany do konstruktora zamiast do powiązania z polem.
+
+### <a name="references-whose-definition-will-now-become-the-renamed-symbol"></a>Odwołania, których definicja stanie się teraz symbolem o zmienionej nazwie
+ Ten rodzaj problemu ponownego powiązania występuje, gdy odwołanie, które wcześniej nie odwołuje się do symbolu o zmienionej nazwie, odwołuje się do symbolu o zmienionej nazwie. Rozważmy na przykład następujący kod:
+
+```csharp
+class Example
+{
+    private static void Method(object a) { }
+    private static void OtherMethod(int a) { }
+    static void Main(string[] args)
+    {
+        Method(5);
+    }
+}
+```
+
+ Jeśli użyjesz refaktoryzacji, aby zmienić nazwę `OtherMethod` na `Method`, zostanie wyświetlone okno dialogowe. Odwołanie w `Main` teraz odwołuje się do przeciążonej metody, która akceptuje parametr `int` zamiast przeciążonej metody, która akceptuje parametr `object`.
+
+## <a name="see-also"></a>Zobacz też
+ [Używanie środowiska deweloperskiego programu Visual Studio C# na potrzeby](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md) [: Przywracanie C# fragmentów kodu refaktoryzacji](../ide/how-to-restore-csharp-refactoring-snippets.md)

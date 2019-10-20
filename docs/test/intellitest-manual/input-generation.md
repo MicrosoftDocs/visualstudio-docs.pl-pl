@@ -1,138 +1,138 @@
 ---
-title: Dynamiczne symboliczne wykonywanie | Narzędzie Test Microsoft IntelliTest dla deweloperów
+title: Dynamiczne wykonywanie symboliczne | Narzędzie testowe dla deweloperów Microsoft IntelliTest
 ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Dynamic symbolic execution
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: fe0215b3474e72316d848c89f2284ab4e39f213b
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+author: jillre
+ms.openlocfilehash: 26befe6612c874c2565e44459cc90fe980296137
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746303"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653185"
 ---
-# <a name="input-generation-using-dynamic-symbolic-execution"></a>Generowanie danych wejściowych, za pomocą dynamiczne symboliczne wykonywanie
+# <a name="input-generation-using-dynamic-symbolic-execution"></a>Generowanie danych wejściowych przy użyciu dynamicznego wykonywania symbolicznego
 
-Funkcja IntelliTest generuje dane wejściowe dla [parametryzowane testy jednostki](test-generation.md#parameterized-unit-testing) , analizując warunków gałęzi w programie. Dane wejściowe testu są wybierane w zależności od tego, czy można uruchomić nowego zachowania rozgałęziania programu. Analiza jest procesem przyrostowe. Udoskonalanie predykat `q: I -> {true, false}` za pośrednictwem formalnych testu parametry wejściowe `I`. `q` reprezentuje zestaw zachowań, które ma zaobserwowane IntelliTest. Początkowo `q := false`, ponieważ nic nie został jeszcze zaobserwowany.
+IntelliTest generuje dane wejściowe dla [sparametryzowanych testów jednostkowych](test-generation.md#parameterized-unit-testing) przez analizowanie warunków gałęzi w programie. Dane wejściowe testów są wybierane na podstawie tego, czy mogą wyzwalać nowe zachowania rozgałęzienia programu. Analiza jest procesem przyrostowym. Udoskonalenie `q: I -> {true, false}` predykatu przez formalne parametry wejściowe testów `I`. `q` reprezentuje zestaw zachowań, które IntelliTest już zaobserwowane. Początkowo `q := false`, ponieważ nic nie zostało jeszcze zaobserwowane.
 
-Procedura pętli jest następująca:
+Kroki pętli to:
 
-1. Funkcja IntelliTest Określa dane wejściowe `i` tak, aby `q(i)=false` przy użyciu [moduł rozwiązywania ograniczeń](#constraint-solver). Wynikające z konstrukcji, dane wejściowe `i` zajmie ścieżką wykonywania nie zauważony. Oznacza to, że początkowo `i` może być dowolnych danych wejściowych, ponieważ wykryto jeszcze żadnej ścieżki wykonywania.
+1. IntelliTest określa dane wejściowe `i` takich, które `q(i)=false` przy użyciu [funkcji ograniczenia](#constraint-solver). W trakcie tworzenia `i` wejściowy wykona ścieżkę wykonywania. Początkowo oznacza to, że `i` mogą być dowolnymi danymi wejściowymi, ponieważ nie odnaleziono jeszcze ścieżki wykonywania.
 
-1. IntelliTest wykonuje test przy użyciu wybrane dane wejściowe `i`oraz monitoruje wykonanie testu i program w ramach testu.
+1. IntelliTest wykonuje test z wybranym `i` wejściowym i monitoruje wykonywanie testu i testowanego programu.
 
-1. Podczas wykonywania program pobiera określoną ścieżką, która jest określana przez wszystkie gałęzie warunkowego programu. Zestaw wszystkie warunki, które określają wykonywania jest nazywany *warunku ścieżki*, napisana jako predykat `p: I -> {true, false}` za pośrednictwem formalnych parametrów wejściowych. Funkcja IntelliTest oblicza reprezentację ten predykat.
+1. Podczas wykonywania program pobiera konkretną ścieżkę, która jest określana przez wszystkie uwarunkowane gałęzie programu. Zestaw wszystkich warunków określających wykonanie jest nazywany *warunkiem ścieżki*, zapisanym jako predykat `p: I -> {true, false}` przez formalne parametry wejściowe. IntelliTest oblicza reprezentację tego predykatu.
 
-1. Zestawy testów funkcji IntelliTest `q := (q or p)`. Innymi słowy, rejestruje fakt, że jego obserwowała, jak ścieżki, reprezentowane przez `p`.
+1. IntelliTest ustawia `q := (q or p)`. Inaczej mówiąc, rejestruje fakt, że pojawił się ścieżka reprezentowana przez `p`.
 
 1. Przejdź do kroku 1.
 
-W funkcji IntelliTest [moduł rozwiązywania ograniczeń](#constraint-solver) poradzenie sobie z wartości wszystkich typów, które mogą się pojawić w programach .NET:
+Funkcja [ograniczeń](#constraint-solver) IntelliTest może odnosić się do wartości wszystkich typów, które mogą być wyświetlane w programach .NET:
 
-* [Liczby całkowite](#integers-and-floats) i [liczby zmiennoprzecinkowe](#integers-and-floats)
+* [Liczby całkowite](#integers-and-floats) i [zmiennoprzecinkowe](#integers-and-floats)
 * [Obiekty](#objects)
 * [Struktury](#structs)
-* [Tablice](#arrays-and-strings) i [ciągów](#arrays-and-strings)
+* [Tablice](#arrays-and-strings) i [ciągi](#arrays-and-strings)
 
-Funkcja IntelliTest odfiltrowuje danych wejściowych, które naruszają podane założeń.
+IntelliTest filtruje dane wejściowe, które naruszają określone założenia.
 
-Oprócz natychmiastowego danych wejściowych (argumenty [parametryzowane testy jednostki](test-generation.md#parameterized-unit-testing)), test można narysować dalsze wartości wejściowe z [PexChoose](static-helper-classes.md#pexchoose) klasy statycznej. Opcje określają również zachowanie [sparametryzowane mocks](#parameterized-mocks).
+Oprócz bezpośrednich wejść (argumentów do [sparametryzowanych testów jednostkowych](test-generation.md#parameterized-unit-testing)) test może narysować dalsze wartości wejściowe z klasy statycznej [PexChoose](static-helper-classes.md#pexchoose) . Opcje te określają również zachowanie [makiet sparametryzowanych](#parameterized-mocks).
 
-## <a name="constraint-solver"></a>Moduł rozwiązywania ograniczeń
+## <a name="constraint-solver"></a>Funkcja ograniczeń — Solver
 
-IntelliTest używa moduł rozwiązywania ograniczeń w celu ustalenia odpowiednich wartości wejściowe testu, a program w ramach testu.
+IntelliTest używa ograniczenia Solver do określenia odpowiednich wartości wejściowych testu i testowanego programu.
 
-Używa funkcji IntelliTest [Z3](https://github.com/Z3Prover/z3/wiki) moduł rozwiązywania ograniczeń.
+IntelliTest używa funkcji ograniczenia [Z3](https://github.com/Z3Prover/z3/wiki) .
 
-## <a name="dynamic-code-coverage"></a>Pokrycie kodu dynamiczne
+## <a name="dynamic-code-coverage"></a>Dynamiczne pokrycie kodu
 
-Jako efekt uboczny środowiska uruchomieniowego, monitorowanie program IntelliTest zbiera dane pokrycia kodu dynamicznych.
-Jest to nazywane *dynamiczne* ponieważ IntelliTest tylko zna kod, który został wykonany, w związku z tym go nie można nadać wartości bezwzględne dla pokrycia w taki sam sposób jak inne narzędzie pokrycia zwykle.
+Jako efekt uboczny monitorowania środowiska uruchomieniowego IntelliTest zbiera dane dynamicznego pokrycia kodu.
+Ta metoda jest nazywana *dynamiczną* , ponieważ IntelliTest wie tylko o kodzie, który został wykonany, dlatego nie może dawać wartości bezwzględnych dla pokrycia w taki sam sposób jak w przypadku innych narzędzi pokrycia.
 
-Na przykład, gdy program IntelliTest zgłasza pokrycie dynamiczne jako 5/10 podstawowe bloki, oznacza to, że pięć bloków z 10 zostały pokryte, gdzie całkowita liczba bloków w wszystkie metody, które zostały osiągnięte do tej pory w analizie (w przeciwieństwie do wszystkich metod, które istnieją w zestawu w ramach testu) wynosi dziesięć.
-W dalszej części analizy, ponieważ więcej metod dostępne są odnajdywane licznika (5, w tym przykładzie) i może zwiększyć mianownik (10).
+Na przykład gdy IntelliTest zgłasza dynamiczne pokrycie jako bloki podstawowe 5/10, oznacza to, że zostały omówione pięć bloków z dziesięciu, gdzie łączna liczba bloków we wszystkich metodach, które zostały osiągnięte do tej pory przez analizę (w przeciwieństwie do wszystkich metod, które istnieją w ssembly pod testem) to dziesięć.
+W dalszej części analizy, jak bardziej osiągalne metody są odnajdywane, może wzrosnąć zarówno licznik (5 w tym przykładzie), jak i mianownik (10).
 
-## <a name="integers-and-floats"></a>Liczby całkowite i wartości zmiennoprzecinkowe
+## <a name="integers-and-floats"></a>Liczby całkowite i zmiennoprzecinkowe
 
-W funkcji IntelliTest [moduł rozwiązywania ograniczeń](#constraint-solver) określa wartości wejściowe testu typów podstawowych, takich jak **bajtów**, **int**, **float**wraz z innymi w kolejność, aby wyzwolić wykonywanie różnych ścieżek dla testu i program w ramach testu.
+Funkcja IntelliTest [Constraint](#constraint-solver) określa testowe wartości wejściowe typów pierwotnych, takich jak **Byte**, **int**, **float**i others, aby wyzwolić różne ścieżki wykonywania dla testu i testowanego programu.
 
 ## <a name="objects"></a>Obiekty
 
-IntelliTest mogą [tworzenia wystąpień klas .NET istniejących](#existing-classes), lub skorzystać z funkcją IntelliTest, aby automatycznie [tworzenia obiektów makiety](#parameterized-mocks) implementowania określonego interfejsu i zachowują się na różne sposoby w zależności od użycia.
+IntelliTest może [utworzyć wystąpienia istniejących klas .NET](#existing-classes)lub użyć IntelliTest do automatycznego [tworzenia obiektów](#parameterized-mocks) , które implementują określony interfejs i zachowują się na różne sposoby w zależności od użycia.
 
 <a name="existing-classes"></a>
-## <a name="instantiate-existing-classes"></a>Utwórz wystąpienie istniejących klas
+## <a name="instantiate-existing-classes"></a>Tworzenie wystąpień istniejących klas
 
-**Na czym polega problem?**
+**Jaki jest problem?**
 
-IntelliTest monitoruje instrukcje wykonany po uruchomieniu testu i program w ramach testu. W szczególności monitoruje wszelki dostęp do pola. Następnie używa [moduł rozwiązywania ograniczeń](#constraint-solver) ustalenie nowe dane wejściowe testu, tym obiekty i ich wartości pól w taki sposób, że test i programu w trakcie testu będzie się odbywać na innych interesujących sposobów.
+IntelliTest monitoruje wykonywane instrukcje, gdy uruchamia test i program w teście. W szczególności monitoruje cały dostęp do pól. Następnie korzysta z [ograniczenia Solver](#constraint-solver) , aby określić nowe dane wejściowe testu, w tym obiekty i ich wartości pól, w taki sposób, że test i program objęty testem zadziałają w inny sposób.
 
-Oznacza to, że program IntelliTest muszą do tworzenia obiektów określonego typu i ustaw ich wartości pól. Jeśli klasa jest [widoczne](#visibility) i ma [widoczne](#visibility) domyślnego konstruktora IntelliTest można utworzyć wystąpienia klasy.
-W przypadku wszystkich pól klasy [widoczne](#visibility), IntelliTest można ustawić pola automatycznie.
+Oznacza to, że IntelliTest musi utworzyć obiekty niektórych typów i ustawić ich wartości pól. Jeśli klasa jest [widoczna](#visibility) i ma [widoczny](#visibility) Konstruktor domyślny, IntelliTest może utworzyć wystąpienie klasy.
+Jeśli wszystkie pola klasy są [widoczne](#visibility), IntelliTest może automatycznie ustawiać pola.
 
-Typ nie jest widoczny, czy pola nie są [widoczne](#visibility), IntelliTest potrzebuje pomocy, aby utworzyć obiekty i ich dostosowania do Państwa interesujące do osiągnięcia pokrycia kodu maksymalny. IntelliTest można używać odbicia do tworzenia i inicjowania wystąpień w dowolny sposób, ale nie jest to zazwyczaj pożądane, ponieważ może ona Przenieś obiekt w stan, który nigdy nie mogą wystąpić podczas normalnego działania programu. Zamiast tego program IntelliTest opiera się na wskazówki od użytkownika.
+Jeśli typ nie jest widoczny lub pola nie są [widoczne](#visibility), IntelliTest potrzebuje pomocy przy tworzeniu obiektów i przeniesieniu ich do interesujących stanów w celu osiągnięcia maksymalnego pokrycia kodu. IntelliTest może używać odbicia do tworzenia i inicjowania wystąpień w dowolny sposób, ale zazwyczaj nie jest to pożądane, ponieważ może spowodować przeniesienie obiektu do stanu, który nigdy nie wystąpi podczas normalnego wykonywania programu. Zamiast tego IntelliTest opiera się na wskazówkach od użytkownika.
 
 ## <a name="visibility"></a>Widoczność
 
-.NET zawiera model wgląd w rozbudowane: typy, metody, pola i inne elementy Członkowskie mogą być **prywatnej**, **publicznych**, **wewnętrzny**i nie tylko.
+Platforma .NET ma rozbudowany model widoczności: typy, metody, pola i inne elementy członkowskie mogą być **prywatne**, **publiczne**, **wewnętrzne**i inne.
 
-IntelliTest, generując testy, podejmie próbę wykonania tylko te akcje (na przykład podczas wywoływania konstruktorów, metod i ustawianie pól), które są dopuszczalne w odniesieniu do reguły widoczności .NET z w kontekście wygenerowane testy.
+Gdy IntelliTest generuje testy, podejmie próbę wykonania tylko akcji (takich jak konstruktory wywoływania, metody i pola ustawień), które są dozwolone w odniesieniu do reguł widoczności .NET z poziomu kontekstu wygenerowanych testów.
 
-Dostępne są następujące reguły:
+Reguły są następujące:
 
-* **Widoczność składowe wewnętrzne**
-  * IntelliTest przyjęto założenie, że wygenerowane testy będą mieć dostęp do wewnętrznych składowych, które były widoczne dla otaczający [PexClass](attribute-glossary.md#pexclass).
-  .NET dotyczą **InternalsVisibleToAttribute** rozszerzeniu widoczności wewnętrznych składowych dla innych zestawów.
+* **Widoczność wewnętrznych elementów członkowskich**
+  * IntelliTest zakłada, że wygenerowane testy będą miały dostęp do wewnętrznych elementów członkowskich, które były widoczne dla otaczającego [PexClass](attribute-glossary.md#pexclass).
+  Platforma .NET ma **InternalsVisibleToAttribute** , aby zwiększyć widoczność wewnętrznych elementów członkowskich do innych zestawów.
 
-* **Widoczność prywatne i członków rodziny (chroniony w języku C#) [PexClass](attribute-glossary.md#pexclass)**
-  * Funkcja IntelliTest zawsze umieszcza wygenerowane testy bezpośrednio w [PexClass](attribute-glossary.md#pexclass) lub podklasę. W związku z tym, IntelliTest zakłada, że mogą używać w niej wszystkich członków rodziny widoczne (**chronione** w języku C#).
-  * Jeśli wygenerowane testy są umieszczane bezpośrednio w [PexClass](attribute-glossary.md#pexclass) (zazwyczaj przy użyciu klas częściowych), program IntelliTest zakłada, że mogą również używać wszystkim członkom prywatnej [PexClass](attribute-glossary.md#pexclass).
+* **Widoczność członków prywatnych i rodzinnych (chronionych C#w programie) [PexClass](attribute-glossary.md#pexclass)**
+  * IntelliTest zawsze umieszcza wygenerowane testy bezpośrednio w [PexClass](attribute-glossary.md#pexclass) lub w podklasie. W związku z tym IntelliTest zakłada, że może korzystać z wszystkich widocznych członków C#rodziny (**chronionych** w programie).
+  * Jeśli wygenerowane testy są umieszczane bezpośrednio w [PexClass](attribute-glossary.md#pexclass) (zazwyczaj przy użyciu klas częściowych), IntelliTest zakłada, że mogą również używać wszystkich prywatnych członków [PexClass](attribute-glossary.md#pexclass).
 
-* **Widoczność publiczne elementy członkowskie**
-  * Funkcja IntelliTest przyjęto założenie, może użyć wyeksportowanego wszystkie elementy członkowskie, które są widoczne w kontekście [PexClass](attribute-glossary.md#pexclass).
+* **Widoczność publicznych członków**
+  * IntelliTest zakłada, że może korzystać ze wszystkich wyeksportowanych elementów członkowskich widocznych w kontekście [PexClass](attribute-glossary.md#pexclass).
 
-## <a name="parameterized-mocks"></a>Mocks sparametryzowane
+## <a name="parameterized-mocks"></a>Makiety sparametryzowane
 
-Jak przetestować metodę, która ma parametr typu interfejsu? Lub klasą niezapieczętowaną? Funkcja IntelliTest nie zna implementacji, które zostaną użyte później, gdy ta metoda jest wywoływana. I prawdopodobnie nie ma jeszcze rzeczywistej implementacji dostępne w czasie testu.
+Jak przetestować metodę, która ma parametr typu interfejs? Lub klasy niezapieczętowanej? IntelliTest nie wie, które implementacje będą później używane, gdy ta metoda zostanie wywołana. A być może nie istnieje nawet rzeczywista implementacja dostępna w czasie testu.
 
-Konwencjonalne odpowiedzi jest użycie *testowanie obiektów* z zachowaniem jawnego.
+Tradycyjna odpowiedź polega na użyciu *obiektów imitacji* z jawnym zachowaniem.
 
-Makiety obiektu implementuje interfejs (lub rozszerza klasą niezapieczętowaną). Nie odpowiada on rzeczywistej implementacji, ale po prostu skrót, który zezwala na wykonywanie testów przy użyciu makiety obiektu. Jego zachowanie jest definiowane ręcznie w ramach każdego przypadku testowego, w którym jest używana. Istnieje wiele narzędzi, ułatwiających zdefiniowanie makiety obiektów i ich oczekiwane zachowanie, ale nadal należy ręcznie zdefiniować to zachowanie.
+Obiekt makiety implementuje interfejs (lub rozszerza klasę niesealną). Nie reprezentuje rzeczywistej implementacji, ale tylko skrót, który umożliwia wykonywanie testów przy użyciu obiektu makiety. Jego zachowanie jest definiowane ręcznie jako część każdego przypadku testowego, w którym jest używana. Istnieje wiele narzędzi, które ułatwiają Definiowanie obiektów makiety i ich oczekiwane zachowanie, ale takie zachowanie musi być zdefiniowane ręcznie.
 
-Zamiast zakodowanych wartości w obiektach makiety funkcji IntelliTest mogą generować wartości. Tak samo jak umożliwia [sparametryzowanych testów jednostkowych](test-generation.md#parameterized-unit-testing), IntelliTest umożliwia również mocks sparametryzowanych.
+Zamiast zakodowanych wartości w obiektach makiet, IntelliTest może generować wartości. Tak jak umożliwia to [sparametryzowane testowanie jednostkowe](test-generation.md#parameterized-unit-testing), IntelliTest również włącza makiety sparametryzowane.
 
-Sparametryzowany mocks mają dwa tryby wykonywania różnych:
+Makiety sparametryzowane mają dwa różne tryby wykonywania:
 
-* **Wybieranie**: podczas analizowania kodu, sparametryzowane mocks są źródłem dane wejściowe testu dodatkowe, a IntelliTest podejmie próbę wybierz interesujące wartości
-* **oparte na metodzie powtórzeń**: podczas wykonywania wcześniej wygenerowany test, sparametryzowane mocks zachowują się jak wycinków z zachowaniem (innymi słowy, wstępnie zdefiniowanych zachowanie).
+* **wybór**: podczas eksplorowania kodu, makiety sparametryzowane są źródłem dodatkowych testów wejściowych, a IntelliTest podejmie próbę wybrania interesujących wartości
+* **powtarzanie**: podczas wykonywania poprzednio wygenerowanego testu, imitacje sparametryzowane zachowują się jak podciągi z zachowaniem (innymi słowy, wstępnie zdefiniowane zachowanie).
 
-Użyj [PexChoose](static-helper-classes.md#pexchoose) można uzyskać wartości mocks sparametryzowanych.
+Użyj [PexChoose](static-helper-classes.md#pexchoose) , aby uzyskać wartości dla makiet sparametryzowanych.
 
 ## <a name="structs"></a>Struktury
 
-Program IntelliTest w wnioskowania o **struktury** wartości jest podobny sposób, ponieważ dotyczy on [obiektów](#objects).
+IntelliTest o wartości **struktury** są podobne do sposobu, w jaki zajmuje się [obiektami](#objects).
 
 ## <a name="arrays-and-strings"></a>Tablice i ciągi
 
-IntelliTest monitoruje instrukcje wykonanych podczas wykonywania testu, a program w ramach testu. W szczególności przestrzega, gdy program jest zależny od długość ciągu lub tablicy (i dolne granice i długości tablicy wielowymiarowej).
-Przestrzega również, jak program używa różnych elementów, string lub tablicy. Następnie używa [moduł rozwiązywania ograniczeń](#constraint-solver) Aby określić długości i element wartości, które mogą powodować testu i programu w trakcie testu będzie działać w różny sposób.
+IntelliTest monitoruje wykonywane instrukcje w miarę uruchomienia testu i testowanego programu. W szczególności, gdy program jest zależny od długości ciągu lub tablicy (oraz dolnych granic i długości tablicy wielowymiarowej).
+Zaobserwuje także, jak program używa różnych elementów ciągu lub tablicy. Następnie używa [funkcji ograniczającej ograniczenia](#constraint-solver) , aby określić, które długości i wartości elementów mogą spowodować, że test i program w ramach testu zadziałają w interesujący sposób.
 
-IntelliTest próbuje zminimalizować rozmiar macierzy i ciągi wymaganym do wyzwolenia interesujące zachowania programu.
+IntelliTest podejmuje próbę zminimalizowania rozmiaru tablic i ciągów wymaganych do wyzwolenia interesujących zachowań programu.
 
 <a name="additional-inputs"></a>
 ## <a name="obtain-additional-inputs"></a>Uzyskaj dodatkowe dane wejściowe
 
-[PexChoose](static-helper-classes.md#pexchoose) klasy statycznej może służyć do uzyskiwania dodatkowych danych wejściowych do testu i może służyć do implementowania [sparametryzowane mocks](#parameterized-mocks).
+Klasa statyczna [PexChoose](static-helper-classes.md#pexchoose) może służyć do uzyskania dodatkowych wejść do testu i może służyć do implementowania [makiet sparametryzowanych](#parameterized-mocks).
 
-## <a name="got-feedback"></a>Czy chcesz przesłać opinię?
+## <a name="got-feedback"></a>Masz opinię?
 
-Opublikuj swoje pomysły i funkcji żądania na [społeczności deweloperów](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
+Publikuj swoje pomysły i żądania funkcji w [społeczności deweloperów](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
 
-## <a name="further-reading"></a>Dalsze informacje
+## <a name="further-reading"></a>Dalsze odczytywanie
 
 * [Jak to działa?](https://devblogs.microsoft.com/devops/smart-unit-tests-a-mental-model/)

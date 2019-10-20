@@ -1,5 +1,5 @@
 ---
-title: Inicjowanie korelacji, okno dialogowe | Dokumentacja firmy Microsoft
+title: Okno dialogowe inicjowanie korelacji | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -8,29 +8,29 @@ f1_keywords:
 - InitializeCorrelation.UI
 ms.assetid: 2a0a1cd3-7b9e-493e-9264-fcf85289ffcf
 caps.latest.revision: 6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 75906a279c1047ff98c7ff8d82d7baf3efc8be0d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3ab913027a6a992494dad609b98ab11dbc6ae61c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62938251"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659050"
 ---
 # <a name="initialize-correlation-dialog-box"></a>Inicjowanie korelacji, okno dialogowe
-**Inicjowanie korelacji** okno dialogowe jest używany w [!INCLUDE[wfd1](../includes/wfd1-md.md)] edytować <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> właściwość <xref:System.ServiceModel.Activities.InitializeCorrelation> działania. [!INCLUDE[crdefault](../includes/crdefault-md.md)] [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md) tematu.  
-  
- W poniższej tabeli opisano elementy interfejsu użytkownika **inicjowanie korelacji** okno dialogowe.  
-  
-|Element interfejsu użytkownika|Opis|  
-|----------------|-----------------|  
-|**Korelacja**|<xref:System.ServiceModel.Activities.CorrelationHandle> Korelacji, aby zainicjować.|  
-|**Inicializace zapnuta**|Parą klucz/wartość, która zawiera dane do zainicjowania. Odpowiada to <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> właściwości. Przykładem pary prawidłowy klucz/wartość może być klucz o nazwie "OrderID", skojarzone ze zmienną o nazwie OrderID.|  
-  
-## <a name="to-launch-the-initialize-correlation-dialog-box"></a>Aby uruchomić okno dialogowe Inicjowanie korelacji  
-  
-- Kliknij przycisk **widoku** na **InitializeCorrelation** działanie projektanta lub wybierz <xref:System.ServiceModel.Activities.InitializeCorrelation> działania w [!INCLUDE[wfd2](../includes/wfd2-md.md)] a następnie kliknij przycisk wielokropka obok <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> właściwość siatki właściwości.  
-  
-## <a name="see-also"></a>Zobacz też  
+Okno dialogowe **Inicjowanie korelacji** jest używane w [!INCLUDE[wfd1](../includes/wfd1-md.md)], aby edytować Właściwość <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> działania <xref:System.ServiceModel.Activities.InitializeCorrelation>. [!INCLUDE[crdefault](../includes/crdefault-md.md)] tematu [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md) .
+
+ W poniższej tabeli opisano elementy interfejsu użytkownika (UI) okna dialogowego **Inicjowanie korelacji** .
+
+|Element interfejsu użytkownika|Opis|
+|----------------|-----------------|
+|**Korelacja**|@No__t_0 korelacji do zainicjowania.|
+|**Zainicjuj**|Para klucz/wartość, która zawiera dane do zainicjowania. Odpowiada właściwości <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>. Przykładem prawidłowej pary klucz/wartość będzie klucz o nazwie "IDZamówienia" sparowany ze zmienną o nazwie IDZamówienia.|
+
+## <a name="to-launch-the-initialize-correlation-dialog-box"></a>Aby uruchomić okno dialogowe inicjowanie korelacji
+
+- Kliknij przycisk **Wyświetl** w projektancie działań **InitializeCorrelation** lub wybierz działanie <xref:System.ServiceModel.Activities.InitializeCorrelation> w [!INCLUDE[wfd2](../includes/wfd2-md.md)] a następnie kliknij przycisk wielokropka obok właściwości <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> w siatce właściwości.
+
+## <a name="see-also"></a>Zobacz też
  [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)

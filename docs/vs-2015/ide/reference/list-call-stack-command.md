@@ -1,5 +1,5 @@
 ---
-title: Lista stosu wywołań — polecenie | Dokumentacja firmy Microsoft
+title: Lista poleceń stosu wywołań | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -11,98 +11,81 @@ helpviewer_keywords:
 - Debug.ListCallStack command
 ms.assetid: a8b20bf2-81d2-4069-aea8-23e6b15b4347
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 932dbc9e3971598748e462de92280ac7112f8c62
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9c44ac18468fbd26adab2cf973a21df58ebb28c1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68199203"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657662"
 ---
 # <a name="list-call-stack-command"></a>Lista stosu wywołań — Polecenie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Wyświetla bieżący stos wywołań.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```  
-Debug.ListCallStack [/Count:number] [/ShowTypes:yes|no]  
-[/ShowNames:yes|no] [/ShowValues:yes|no] [/ShowModule:yes|no]  
-[/ShowLineOffset:yes|no] [/ShowByteOffset:yes|no]  
-[/ShowLanguage:yes|no] [/IncludeCallsAcrossThreads:yes|no]  
-[/ShowExternalCode:yes|no] [Thread:n] [index]  
-```  
-  
-## <a name="arguments"></a>Argumenty  
- `index`  
- Opcjonalna. Ustawia bieżącej ramki stosu i nie wyświetla danych wyjściowych.  
-  
-## <a name="switches"></a>Przełączniki  
- Każdy przełącznik może być wywoływany przy użyciu jego wypełniony formularz lub krótka.  
-  
- / Liczba:`number` [i] / c:`number`  
- Opcjonalna. Maksymalna liczba stosy wywołań do wyświetlenia. Wartością domyślną jest nieograniczona.  
-  
- / ShowTypes:`yes` &#124; `no` [i] t:`yes`&#124;`no`  
- Opcjonalna. Określa, czy mają być wyświetlane typy parametrów. Wartość domyślna to `yes`.  
-  
- / ShowNames:`yes` &#124; `no` [i] / n:`yes`&#124;`no`  
- Opcjonalna. Określa, czy mają być wyświetlane nazwy parametrów. Wartość domyślna to `yes`.  
-  
- / ShowValues:`yes` &#124; `no` [i] / v:`yes`&#124;`no`  
- Opcjonalna. Określa, czy mają być wyświetlane wartości parametrów. Wartość domyślna to `yes`.  
-  
- / ShowModule:`yes` &#124; `no` [i] / m:`yes`&#124;`no`  
- Opcjonalna. Określa, czy ma być wyświetlana nazwa modułu. Wartość domyślna to `yes`.  
-  
- / ShowLineOffset:`yes` &#124; `no` [i] powrotu:`yes`&#124;`no`  
- Opcjonalny. Określa, czy mają być wyświetlane przesunięcie wiersza. Wartość domyślna to `no`.  
-  
- /ShowByteOffset:`yes`&#124;`no` [or] /B:`yes`&#124;`no`  
- Opcjonalny. Określa, czy należy wyświetlać przesunięcie bajtu. Wartość domyślna to `no`.  
-  
- / ShowLanguage:`yes` &#124; `no` [i] / l: wyświetlenie`yes`&#124;`no`  
- Opcjonalny. Określa, czy mają być wyświetlane w języku. Wartość domyślna to `no`.  
-  
- /IncludeCallsAcrossThreads:`yes`&#124;`no` [or] /I:`yes`&#124;`no`  
- Opcjonalna. Określa, czy dołączać wywołania do lub z innych wątków. Wartość domyślna to `no`.  
-  
- /ShowExternalCode:`yes`&#124;`no`  
- Opcjonalny. Określa, czy mają być wyświetlane tylko mój kod dla stosu wywołań. Gdy tylko mój kod jest wyłączona, wyświetlany jest cały kod niezwiązany z użytkownikiem. Po włączeniu tylko mój kod niebędący kodem użytkownika jest wyświetlany jako `[external]` w danych wyjściowych stosu wywołań.  
-  
- Wątek:`n`  
- Opcjonalny. Przedstawia stos wywołań dla wątku `n`. Jeśli żaden wątek nie zostanie określony, wyświetla stos wywołań dla bieżącego wątku.  
-  
-## <a name="remarks"></a>Uwagi  
- Zmiany wprowadzone do argumentów lub przełączników dotyczą przyszłych wywołań tego polecenia. Jeśli wydawane Debug.ListCallStackby sam Wyświetla cały stos wywołań. Jeśli na przykład określić indeks  
-  
-```  
-Debug.ListCallStack 2  
-```  
-  
- Bieżąca ramka stosu przybiera wartość do tej ramki (w tym przypadku drugiej ramki).  
-  
- Możesz również zapisywać dane tego polecenia, używając jego wstępnie zdefiniowanych aliasów kb. Na przykład można wprowadzić  
-  
-```  
-kb 2  
-```  
-  
- można ustawić bieżącej ramki stosu do drugiego ramki.  
-  
-## <a name="example"></a>Przykład  
-  
-```  
->Debug.CallStack /Count:4 /ShowTypes:yes  
-```  
-  
-## <a name="see-also"></a>Zobacz też  
- [Lista dezasemblacji — polecenie](../../ide/reference/list-disassembly-command.md)   
- [Lista wątków — polecenie](../../ide/reference/list-threads-command.md)   
- [Visual Studio Commands](../../ide/reference/visual-studio-commands.md)   
- [Okno polecenia](../../ide/reference/command-window.md)   
- [Znajdź/Command — pole](../../ide/find-command-box.md)   
- [Visual Studio — aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)
+Wyświetla bieżący stos wywołań.
+
+## <a name="syntax"></a>Składnia
+
+```
+Debug.ListCallStack [/Count:number] [/ShowTypes:yes|no]
+[/ShowNames:yes|no] [/ShowValues:yes|no] [/ShowModule:yes|no]
+[/ShowLineOffset:yes|no] [/ShowByteOffset:yes|no]
+[/ShowLanguage:yes|no] [/IncludeCallsAcrossThreads:yes|no]
+[/ShowExternalCode:yes|no] [Thread:n] [index]
+```
+
+## <a name="arguments"></a>Argumenty
+ `index` opcjonalny. Ustawia bieżącą ramkę stosu i nie wyświetla danych wyjściowych.
+
+## <a name="switches"></a>Przełączniki
+ Każdy przełącznik może być wywoływany przy użyciu kompletnego formularza lub krótkiej formy.
+
+ /Count: `number` [lub]/C: `number` opcjonalne. Maksymalna liczba stosów wywołań do wyświetlenia. Wartość domyślna to Unlimited.
+
+ /ShowTypes: `yes`&#124; `no` [lub]/t: `yes`&#124; `no` opcjonalne. Określa, czy mają być wyświetlane typy parametrów. Wartość domyślna to `yes`.
+
+ /ShowNames: `yes`&#124; `no` [lub]/n: `yes`&#124; `no` opcjonalne. Określa, czy mają być wyświetlane nazwy parametrów. Wartość domyślna to `yes`.
+
+ /ShowValues: `yes`&#124; `no` [lub]/v: `yes`&#124; `no` opcjonalne. Określa, czy mają być wyświetlane wartości parametrów. Wartość domyślna to `yes`.
+
+ /ShowModule: `yes`&#124; `no` [lub]/m: `yes`&#124; `no` opcjonalne. Określa, czy ma być wyświetlana nazwa modułu. Wartość domyślna to `yes`.
+
+ /ShowLineOffset: `yes`&#124; `no` [lub]/#: `yes`&#124; `no` opcjonalne. Określa, czy ma być wyświetlane przesunięcie wiersza. Wartość domyślna to `no`.
+
+ /ShowByteOffset: `yes`&#124; `no` [lub]/b: `yes`&#124; `no` opcjonalne. Określa, czy ma być wyświetlane przesunięcie bajtów. Wartość domyślna to `no`.
+
+ /ShowLanguage: `yes`&#124; `no` [lub]/l: `yes`&#124; `no` opcjonalne. Określa, czy ma być wyświetlany język. Wartość domyślna to `no`.
+
+ /IncludeCallsAcrossThreads: `yes`&#124; `no` [lub]/i: `yes`&#124; `no` opcjonalne. Określa, czy dołączać wywołania do lub z innych wątków. Wartość domyślna to `no`.
+
+ /ShowExternalCode: `yes`&#124; `no` opcjonalne. Określa, czy Tylko mój kod ma być wyświetlana dla stosu wywołań. Gdy Tylko mój kod jest wyłączona, zostanie wyświetlony cały kod niebędący użytkownikiem. Gdy Tylko mój kod jest włączona, kod niebędący użytkownikiem jest wyświetlany jako `[external]` w danych wyjściowych stosu wywołań.
+
+ Wątek: `n` opcjonalny. Wyświetla stosu wywołań dla wątku `n`. Jeśli żaden wątek nie zostanie określony, odstosu wywołań dla bieżącego wątku.
+
+## <a name="remarks"></a>Uwagi
+ Zmiany wprowadzone do argumentów lub przełączników stosują się do przyszłych wywołań tego polecenia. Jeśli zostanie wyświetlona wartość Debug. ListCallStackby, zostanie wyświetlony cały stos wywołań. Jeśli określisz indeks, na przykład
+
+```
+Debug.ListCallStack 2
+```
+
+ następnie bieżąca Ramka stosu jest ustawiona na tę ramkę (w tym przypadku druga ramka).
+
+ Możesz również napisać to polecenie przy użyciu wstępnie zdefiniowanego aliasu KB. Na przykład możesz wprowadzić
+
+```
+kb 2
+```
+
+ Aby ustawić bieżącą ramkę stosu na drugą klatkę.
+
+## <a name="example"></a>Przykład
+
+```
+>Debug.CallStack /Count:4 /ShowTypes:yes
+```
+
+## <a name="see-also"></a>Zobacz też
+ [Lista poleceń demontażu](../../ide/reference/list-disassembly-command.md) [listę wątków polecenie](../../ide/reference/list-threads-command.md) polecenia [Visual Studio](../../ide/reference/visual-studio-commands.md) Commands [okno](../../ide/reference/command-window.md) [Find/Command Box](../../ide/find-command-box.md) [Visual Studio Aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)

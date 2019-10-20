@@ -1,5 +1,5 @@
 ---
-title: 'CA1405: Typy podstawowe typu widocznego modelu COM powinny być widoczne dla modelu COM | Dokumentacja firmy Microsoft'
+title: 'CA1405: typy podstawowe typu widocznego dla modelu COM powinny być widoczne dla modelu COM | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,34 +12,34 @@ helpviewer_keywords:
 - ComVisibleTypeBaseTypesShouldBeComVisible
 ms.assetid: a762ea2f-5285-4f73-bfb9-9eb10aea4290
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f284c0e6e57a2ca359e765992db3f2d599fec328
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 13a6f80bb0500286dd44e9c5ca9378e95d4b891d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65705748"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661307"
 ---
-# <a name="ca1405-com-visible-type-base-types-should-be-com-visible"></a>CA1405: Typy podstawowe typów widocznych dla modelu COM powinny być widoczne dla modelu COM
+# <a name="ca1405-com-visible-type-base-types-should-be-com-visible"></a>CA1405: Typy podstawowe typu widocznego dla modelu COM powinny być widoczne dla modelu COM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|ComVisibleTypeBaseTypesShouldBeComVisible|
 |CheckId|CA1405|
-|Kategoria|Microsoft.Interoperability|
+|Kategoria|Microsoft. współdziałanie|
 |Zmiana kluczowa|DependsOnFix|
 
 ## <a name="cause"></a>Przyczyna
- Typ widoczny Component Object Model (COM) pochodzi z typu, który nie jest widoczne dla modelu COM.
+ Typ widoczny dla Component Object Model (COM) pochodzi z typu, który nie jest widoczny dla modelu COM.
 
 ## <a name="rule-description"></a>Opis reguły
- Gdy typem widoczne dla modelu COM, elementy członkowskie są dodawane w nowej wersji, należy przestrzegać ścisłe wytyczne w celu uniknięcia przerwanie klientów COM powiązanych do bieżącej wersji. Typ, który jest niewidoczna dla modelu COM przyjęto założenie, że nie trzeba należy wykonać następujące czynności COM wersji powoduje dodanie nowych elementów członkowskich. Jeśli jednak widoczne dla modelu COM typ pochodzi od typu niewidoczne COM i udostępnia interfejs klasy <xref:System.Runtime.InteropServices.ClassInterfaceType?displayProperty=fullName> lub <xref:System.Runtime.InteropServices.ClassInterfaceType> (ustawienie domyślne), wszystkie publiczne elementy członkowskie tego typu podstawowego (o ile są wyraźnie oznaczone jako COM niewidoczne, który zbyteczna) są widoczne dla modelu COM. Jeśli typ podstawowy dodaje nowych elementów członkowskich w kolejnej wersji, mogą przestać działać żadnych klientów COM, który należy powiązać interfejsu klasy typu pochodnego. Typy widoczne dla modelu COM powinny pochodzić tylko w typach widocznych dla modelu COM, aby zmniejszyć prawdopodobieństwo przerwanie klientów modelu COM.
+ Gdy typ widoczny dla modelu COM dodaje członków w nowej wersji, musi przestrzegać ścisłych wytycznych, aby uniknąć przerwania klientów COM, które są powiązane z bieżącą wersją. Typ, który jest niewidoczny dla modelu COM, zakłada, że nie musi on być zgodny z regułami dotyczącymi obsługi wersji modelu COM podczas dodawania nowych elementów członkowskich. Jeśli jednak typ widoczny dla modelu COM pochodzi od typu niewidocznego dla modelu COM i uwidacznia interfejs klasy <xref:System.Runtime.InteropServices.ClassInterfaceType?displayProperty=fullName> lub <xref:System.Runtime.InteropServices.ClassInterfaceType> (wartość domyślna), wszystkie publiczne elementy członkowskie typu podstawowego (chyba że są one jawnie oznaczone jako niewidoczne dla modelu COM, które byłyby nadmiarowe) są narażone na Dodatki. Jeśli typ podstawowy dodaje nowych członków w kolejnej wersji, każdy klient COM, który powiąże się z interfejsem klasy typu pochodnego może zostać zerwana. Typy widoczne dla modelu COM powinny dziedziczyć tylko z typów widocznych dla modelu COM, aby zmniejszyć prawdopodobieństwo przerwania klientów COM.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, ukrywanie typów podstawowych widoczne dla modelu COM lub typu pochodnego COM.
+ Aby naprawić naruszenie tej reguły, Zmień typy podstawowe modelu COM widoczne lub niewidoczny typ pochodny COM.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Nie pomijaj ostrzeżeń dla tej reguły.
@@ -51,4 +51,4 @@ ms.locfileid: "65705748"
  [!code-vb[FxCop.Interoperability.ComBaseTypes#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Interoperability.ComBaseTypes/vb/FxCop.Interoperability.ComBaseTypes.vb#1)]
 
 ## <a name="see-also"></a>Zobacz też
- <xref:System.Runtime.InteropServices.ClassInterfaceAttribute?displayProperty=fullName> [Wprowadzenie interfejsu klasy](https://msdn.microsoft.com/733c0dd2-12e5-46e6-8de1-39d5b25df024) [współdziałanie z niezarządzanego kodu](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)
+ <xref:System.Runtime.InteropServices.ClassInterfaceAttribute?displayProperty=fullName> [wprowadzenie do interfejsu klasy](https://msdn.microsoft.com/733c0dd2-12e5-46e6-8de1-39d5b25df024) [współdziałanie z kodem niezarządzanym](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)

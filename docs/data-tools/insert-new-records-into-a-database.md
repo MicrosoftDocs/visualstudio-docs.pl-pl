@@ -12,77 +12,77 @@ helpviewer_keywords:
 - records, inserting
 - saving data
 ms.assetid: ea118fff-69b1-4675-b79a-e33374377f04
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 64fc4735fd95c611dd1c2d905be6fa5b45c84664
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: aaca23e6aa81fab958fc813fa5e2331f8906a562
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715019"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648313"
 ---
 # <a name="insert-new-records-into-a-database"></a>Wstawianie nowych rekordów do bazy danych
 
-Wstawianie nowych rekordów do bazy danych, umożliwia `TableAdapter.Update` metody lub jednego z TableAdapter dbdirect — metody (w szczególności `TableAdapter.Insert` metody). Aby uzyskać więcej informacji, zobacz [TableAdapter](../data-tools/create-and-configure-tableadapters.md).
+Aby wstawić nowe rekordy do bazy danych, można użyć metody `TableAdapter.Update` lub jednej z metod DBDirect TableAdapter (w przypadku metody `TableAdapter.Insert`). Aby uzyskać więcej informacji, zobacz [TableAdapter](../data-tools/create-and-configure-tableadapters.md).
 
-Jeśli aplikacja nie używają adapterów tabel, możesz użyć polecenia obiektów (na przykład <xref:System.Data.SqlClient.SqlCommand>) do wstawianie nowych rekordów w bazie danych.
+Jeśli aplikacja nie używa TableAdapters, można użyć obiektów poleceń (na przykład <xref:System.Data.SqlClient.SqlCommand>) do wstawienia nowych rekordów w bazie danych.
 
-Jeśli aplikacja używa zestawów danych do przechowywania danych, użyj `TableAdapter.Update` metody. `Update` Metoda wysyła wszystkie zmiany (aktualizacji, wstawiania i usuwania) w bazie danych.
+Jeśli Twoja aplikacja korzysta z zestawów danych do przechowywania, użyj metody `TableAdapter.Update`. Metoda `Update` wysyła wszystkie zmiany (aktualizacje, wstawienia i usunięcia) do bazy danych programu.
 
-Jeśli aplikacja używa obiektów do przechowywania danych lub bardziej precyzyjną kontrolę nad tworzenia nowych rekordów w bazie danych, należy użyć `TableAdapter.Insert` metody.
+Jeśli aplikacja korzysta z obiektów do przechowywania danych lub jeśli chcesz mieć większą kontrolę nad tworzeniem nowych rekordów w bazie danych, użyj metody `TableAdapter.Insert`.
 
-Jeśli Twoje TableAdapter nie ma `Insert` metody, oznacza to, że albo Obiekt TableAdapter jest skonfigurowany do używania procedur składowanych lub jego `GenerateDBDirectMethods` właściwość jest ustawiona na `false`. Spróbuj ustawić TableAdapter `GenerateDBDirectMethods` właściwości `true` z poziomu **Projektanta obiektów Dataset**, a następnie Zapisz zestaw danych. Spowoduje to ponowne wygenerowanie TableAdapter. Jeśli w metodzie TableAdapter nie ma `Insert` metoda, tabeli prawdopodobnie nie dostarcza wystarczających informacji o schemacie rozróżnienie między poszczególnymi wierszami (na przykład może istnieć nie podstawowego zestawu kluczy w tabeli).
+Jeśli TableAdapter nie ma metody `Insert`, oznacza to, że TableAdapter jest skonfigurowany do korzystania z procedur składowanych lub jej Właściwość `GenerateDBDirectMethods` jest ustawiona na `false`. Spróbuj ustawić właściwość `GenerateDBDirectMethods` TableAdapter na `true` z **Projektant obiektów DataSet**, a następnie Zapisz zestaw danych. Spowoduje to ponowne wygenerowanie TableAdapter. Jeśli TableAdapter nadal nie ma metody `Insert`, tabela prawdopodobnie nie zawiera wystarczającej ilości informacji o schemacie do rozróżnienia między pojedynczymi wierszami (na przykład w tabeli może nie być ustawiony klucz podstawowy).
 
-## <a name="insert-new-records-by-using-tableadapters"></a>Wstawianie nowych rekordów za pomocą adapterów TableAdapter
+## <a name="insert-new-records-by-using-tableadapters"></a>Wstawianie nowych rekordów przy użyciu TableAdapters
 
-TableAdapters zapewniają różne sposoby wstawianie nowych rekordów do bazy danych, w zależności od wymagań aplikacji.
+TableAdapters umożliwiają różne sposoby wstawiania nowych rekordów do bazy danych, w zależności od wymagań aplikacji.
 
-Jeśli aplikacja używa zestawów danych do przechowywania danych, można po prostu Dodaj nowe rekordy na żądaną <xref:System.Data.DataTable> w zestawie danych, a następnie wywołania `TableAdapter.Update` metody. `TableAdapter.Update` Metoda wysyła wszystkie zmiany <xref:System.Data.DataTable> do bazy danych (w tym zmodyfikowane i usuniętych rekordów).
+Jeśli aplikacja korzysta z zestawów danych w celu przechowywania, można po prostu dodać nowe rekordy do żądanego <xref:System.Data.DataTable> w zestawie danych, a następnie wywołać metodę `TableAdapter.Update`. Metoda `TableAdapter.Update` wysyła wszystkie zmiany w <xref:System.Data.DataTable> do bazy danych (w tym zmodyfikowane i usunięte rekordy).
 
-### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterupdate-method"></a>Wstawianie nowych rekordów do bazy danych za pomocą TableAdapter.Update — metoda
+### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterupdate-method"></a>Aby wstawić nowe rekordy do bazy danych za pomocą metody TableAdapter. Update
 
-1. Dodawanie nowych rekordów do żądaną <xref:System.Data.DataTable> przez utworzenie nowego <xref:System.Data.DataRow> i dodanie go do <xref:System.Data.DataTable.Rows%2A> kolekcji.
+1. Dodaj nowe rekordy do żądanego <xref:System.Data.DataTable>, tworząc nowe <xref:System.Data.DataRow> i dodając je do kolekcji <xref:System.Data.DataTable.Rows%2A>.
 
-2. Po dodaniu nowych wierszy do <xref:System.Data.DataTable>, wywołaj `TableAdapter.Update` metody. Możesz kontrolować ilość danych, które można zaktualizować przez przekazanie albo cały <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, tablicę <xref:System.Data.DataRow>s lub pojedynczej <xref:System.Data.DataRow>.
+2. Po dodaniu nowych wierszy do <xref:System.Data.DataTable> Wywołaj metodę `TableAdapter.Update`. Ilość danych do zaktualizowania można kontrolować, przekazując cały <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, tablicę <xref:System.Data.DataRow>s lub jeden <xref:System.Data.DataRow>.
 
-   Poniższy kod przedstawia sposób dodawania nowego rekordu do <xref:System.Data.DataTable> , a następnie wywołać `TableAdapter.Update` metodę, aby zapisać nowy wiersz w bazie danych. (W tym przykładzie użyto `Region` tabeli w bazie danych Northwind.)
+   Poniższy kod pokazuje, jak dodać nowy rekord do <xref:System.Data.DataTable>, a następnie wywołać metodę `TableAdapter.Update`, aby zapisać nowy wiersz w bazie danych. (W tym przykładzie używa się tabeli `Region` w bazie danych Northwind).
 
    [!code-vb[VbRaddataSaving#14](../data-tools/codesnippet/VisualBasic/insert-new-records-into-a-database_1.vb)]
    [!code-csharp[VbRaddataSaving#14](../data-tools/codesnippet/CSharp/insert-new-records-into-a-database_1.cs)]
 
-### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterinsert-method"></a>Wstawianie nowych rekordów do bazy danych za pomocą TableAdapter.INSERT — metoda
+### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterinsert-method"></a>Aby wstawić nowe rekordy do bazy danych za pomocą metody TableAdapter. Insert
 
-Jeśli aplikacja używa obiektów do przechowywania danych, możesz użyć `TableAdapter.Insert` metodę w celu utworzenia nowych wierszy bezpośrednio w bazie danych. `Insert` Metoda przyjmuje jako parametry poszczególne wartości dla każdej kolumny. Wywołanie metody Wstawia nowy rekord do bazy danych przy użyciu wartości parametrów przekazanych.
+Jeśli aplikacja używa obiektów do przechowywania danych, można użyć metody `TableAdapter.Insert`, aby utworzyć nowe wiersze bezpośrednio w bazie danych. Metoda `Insert` akceptuje poszczególne wartości dla każdej kolumny jako parametry. Wywołanie metody powoduje wstawienie nowego rekordu do bazy danych z wartościami parametrów przekazaną.
 
-- Wywołaj TableAdapter `Insert` jest metoda wartości dla każdej kolumny jako parametry.
+- Wywołaj metodę `Insert` TableAdapter, przekazując wartości dla każdej kolumny jako parametry.
 
-Poniższa procedura demonstruje użycie `TableAdapter.Insert` metodę, aby wstawić wiersze. W tym przykładzie wstawia dane do `Region` tabeli w bazie danych Northwind.
+W poniższej procedurze pokazano, jak wstawić wiersze przy użyciu metody `TableAdapter.Insert`. W tym przykładzie dane są wstawiane do tabeli `Region` w bazie danych Northwind.
 
 > [!NOTE]
-> Jeśli nie masz dostępne wystąpienia, należy utworzyć wystąpienie TableAdapter, którego chcesz użyć.
+> Jeśli nie masz dostępnego wystąpienia, Utwórz wystąpienie TableAdapter, którego chcesz użyć.
 
 [!code-vb[VbRaddataSaving#15](../data-tools/codesnippet/VisualBasic/insert-new-records-into-a-database_2.vb)]
 [!code-csharp[VbRaddataSaving#15](../data-tools/codesnippet/CSharp/insert-new-records-into-a-database_2.cs)]
 
-## <a name="insert-new-records-by-using-command-objects"></a>Wstawianie nowych rekordów przy użyciu polecenia obiektów
+## <a name="insert-new-records-by-using-command-objects"></a>Wstawianie nowych rekordów przy użyciu obiektów poleceń
 
-Za wstawianie nowych rekordów bezpośrednio do bazy danych przy użyciu polecenia obiektów.
+Nowe rekordy można wstawiać bezpośrednio do bazy danych przy użyciu obiektów poleceń.
 
-### <a name="to-insert-new-records-into-a-database-by-using-command-objects"></a>Aby wstawianie nowych rekordów do bazy danych przy użyciu polecenia obiektów
+### <a name="to-insert-new-records-into-a-database-by-using-command-objects"></a>Aby wstawić nowe rekordy do bazy danych za pomocą obiektów poleceń
 
-- Utwórz nowy obiekt polecenia, a następnie ustaw jego `Connection`, `CommandType`, i `CommandText` właściwości.
+- Utwórz nowy obiekt polecenia, a następnie ustaw jego właściwości `Connection`, `CommandType` i `CommandText`.
 
-W poniższym przykładzie pokazano Wstawianie rekordów do bazy danych za pomocą obiektu polecenia. Wstawia dane do `Region` tabeli w bazie danych Northwind.
+Poniższy przykład ilustruje wstawianie rekordów do bazy danych przy użyciu obiektu polecenia. Wstawia dane do tabeli `Region` w bazie danych Northwind.
 
 [!code-vb[VbRaddataSaving#16](../data-tools/codesnippet/VisualBasic/insert-new-records-into-a-database_3.vb)]
 [!code-csharp[VbRaddataSaving#16](../data-tools/codesnippet/CSharp/insert-new-records-into-a-database_3.cs)]
 
-## <a name="net-security"></a>Zabezpieczenia platformy .net
+## <a name="net-security"></a>Zabezpieczenia platformy .NET
 
-Musi mieć dostęp do bazy danych, z którym próbujesz nawiązać połączenie, a także uprawnienia do wykonywania operacji wstawiania do żądanej tabeli.
+Musisz mieć dostęp do bazy danych, z którą próbujesz nawiązać połączenie, oraz uprawnienia do wykonywania operacji wstawiania do odpowiedniej tabeli.
 
 ## <a name="see-also"></a>Zobacz także
 

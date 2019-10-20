@@ -10,71 +10,71 @@ helpviewer_keywords:
 - data access [Visual Studio], objects
 - saving data
 ms.assetid: efd6135a-40cf-4b0d-8f8b-41a5aaea7057
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b15776b67ded2fc813f1b8bcf82d8aa91f212346
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 5208b7764949f6ba6d3e862c7a2102608afb7e24
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715031"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648215"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Zapisywanie danych z obiektu w bazie danych
 
-Można zapisać danych w obiektach do bazy danych przez przekazanie wartości z obiektu do jednej z TableAdapter dbdirect — metody (na przykład `TableAdapter.Insert`). Aby uzyskać więcej informacji, zobacz [TableAdapter](../data-tools/create-and-configure-tableadapters.md).
+Dane można zapisywać w obiektach w bazie danych, przekazując wartości z obiektu do jednej z metod DBDirect TableAdapter (na przykład `TableAdapter.Insert`). Aby uzyskać więcej informacji, zobacz [TableAdapter](../data-tools/create-and-configure-tableadapters.md).
 
-Aby zapisać dane z kolekcji obiektów, w pętli poprzez kolekcji obiektów (na przykład pętli for dalej) i wysyłać wartości dla każdego obiektu bazy danych przy użyciu jednej z TableAdapter `DBDirect` metody.
+Aby zapisać dane z kolekcji obiektów, należy wykonać pętlę przez kolekcję obiektów (na przykład pętlę for-Next) i wysłać wartości dla każdego obiektu do bazy danych przy użyciu jednej z TableAdapter metod `DBDirect`.
 
-Domyślnie `DBDirect` metody są tworzone na obiekt TableAdapter, który można uruchomić bezpośrednio w bazie danych. Te metody może być wywoływana bezpośrednio i nie wymagają <xref:System.Data.DataSet> lub <xref:System.Data.DataTable> obiektów uzgadniają zmiany w celu wysyłania aktualizacji do bazy danych.
+Domyślnie metody `DBDirect` są tworzone w TableAdapter, które mogą być uruchamiane bezpośrednio w bazie danych. Metody te mogą być wywoływane bezpośrednio i nie wymagają <xref:System.Data.DataSet> lub <xref:System.Data.DataTable> obiektów, aby uzgodnić zmiany w celu wysyłania aktualizacji do bazy danych.
 
 > [!NOTE]
-> Podczas konfiguracji TableAdapter główne zapytanie musi dostarczać wystarczających informacji dla `DBDirect` metod, które ma zostać utworzony. Na przykład, jeśli TableAdapter jest skonfigurowany do zapytania o dane z tabeli, która nie ma kolumny klucza podstawowego zdefiniowane, nie generuje ona `DBDirect` metody.
+> Podczas konfigurowania TableAdapter, zapytanie główne musi dostarczyć wystarczające informacje na potrzeby tworzenia metod `DBDirect`. Na przykład jeśli TableAdapter jest skonfigurowany do wykonywania zapytań dotyczących danych z tabeli, która nie ma zdefiniowanej kolumny klucza podstawowego, nie generują `DBDirect` metod.
 
-|TableAdapter dbdirect — metody|Opis|
+|TableAdapter DBDirect — Metoda|Opis|
 | - |-----------------|
-|`TableAdapter.Insert`|Dodanie nowych rekordów do bazy danych i umożliwia przekazywanie wartości poszczególnych kolumn jako parametry metody.|
-|`TableAdapter.Update`|Aktualizuje istniejące rekordy w bazie danych. `Update` Metoda przyjmuje wartości oryginalnego i nowych kolumn jako parametry metody. Oryginalne wartości są używane do lokalizowania oryginalnego rekordu, a nowe wartości są używane na zaktualizowanie rekordu.<br /><br /> `TableAdapter.Update` Metoda umożliwia również uzgadniają zmiany w zestawie danych w bazie danych, wykonując <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, <xref:System.Data.DataRow>, lub tablicę <xref:System.Data.DataRow>określane jako parametry metody.|
-|`TableAdapter.Delete`|Usuwa istniejące rekordy z bazy danych oparte na oryginalnych wartości kolumny przekazanych jako parametry metody.|
+|`TableAdapter.Insert`|Dodaje nowe rekordy do bazy danych i umożliwia przekazywanie wartości poszczególnych kolumn jako parametrów metody.|
+|`TableAdapter.Update`|Aktualizuje istniejące rekordy w bazie danych. Metoda `Update` przyjmuje wartości początkowe i nowe kolumny jako parametry metody. Oryginalne wartości są używane do lokalizowania oryginalnego rekordu, a nowe wartości są używane do aktualizowania tego rekordu.<br /><br /> Metoda `TableAdapter.Update` służy również do uzgadniania zmian w zestawie danych z powrotem do bazy danych, pobierając <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, <xref:System.Data.DataRow> lub tablicę <xref:System.Data.DataRow>s jako parametry metody.|
+|`TableAdapter.Delete`|Usuwa istniejące rekordy z bazy danych na podstawie wartości pierwotnej kolumny przekazaną jako parametry metody.|
 
-## <a name="to-save-new-records-from-an-object-to-a-database"></a>Aby zapisać nowe rekordy z obiektu do bazy danych
+## <a name="to-save-new-records-from-an-object-to-a-database"></a>Aby zapisać nowe rekordy z obiektu w bazie danych
 
-- Tworzenie rekordów przez przekazanie wartości do `TableAdapter.Insert` metody.
+- Utwórz rekordy, przekazując wartości do metody `TableAdapter.Insert`.
 
-     Poniższy przykład tworzy nowy rekord klienta `Customers` tabeli przez przekazanie wartości w `currentCustomer` obiekt `TableAdapter.Insert` metody.
+     Poniższy przykład tworzy nowy rekord klienta w tabeli `Customers`, przekazując wartości w obiekcie `currentCustomer` do metody `TableAdapter.Insert`.
 
      [!code-csharp[VbRaddataSaving#23](../data-tools/codesnippet/CSharp/save-data-from-an-object-to-a-database_1.cs)]
      [!code-vb[VbRaddataSaving#23](../data-tools/codesnippet/VisualBasic/save-data-from-an-object-to-a-database_1.vb)]
 
 ## <a name="to-update-existing-records-from-an-object-to-a-database"></a>Aby zaktualizować istniejące rekordy z obiektu do bazy danych
 
-- Modyfikowanie rekordów, wywołując `TableAdapter.Update` metody, przekazując nowe wartości w celu zaktualizowania rekordu, a w oryginalnych wartości, aby zlokalizować rekordu.
+- Zmodyfikuj rekordy, wywołując metodę `TableAdapter.Update`, przekazując nowe wartości w celu zaktualizowania rekordu i przekazując wartości pierwotne w celu zlokalizowania rekordu.
 
     > [!NOTE]
-    > Trzeba zachować oryginalne wartości, aby można było przekazać je do obiektu `Update` metody. W tym przykładzie użyto właściwości `orig` prefiks do przechowywania oryginalnych wartości.
+    > Obiekt musi zachować oryginalne wartości, aby przekazać je do metody `Update`. W tym przykładzie do przechowywania oryginalnych wartości są stosowane właściwości z prefiksem `orig`.
 
-     Poniższy przykład aktualizuje istniejący rekord w `Customers` tabeli przez przekazanie wartości nowymi i oryginalnymi `Customer` obiekt `TableAdapter.Update` metody.
+     Poniższy przykład aktualizuje istniejący rekord w tabeli `Customers` przez przekazanie nowych i oryginalnych wartości w obiekcie `Customer` do metody `TableAdapter.Update`.
 
      [!code-csharp[VbRaddataSaving#24](../data-tools/codesnippet/CSharp/save-data-from-an-object-to-a-database_2.cs)]
      [!code-vb[VbRaddataSaving#24](../data-tools/codesnippet/VisualBasic/save-data-from-an-object-to-a-database_2.vb)]
 
 ## <a name="to-delete-existing-records-from-a-database"></a>Aby usunąć istniejące rekordy z bazy danych
 
-- Usuń rekordy przez wywołanie metody `TableAdapter.Delete` metody i przekazywanie w oryginalnej wartości do wyszukania w rekordzie.
+- Usuń rekordy, wywołując metodę `TableAdapter.Delete` i przekazując wartości pierwotne w celu zlokalizowania rekordu.
 
     > [!NOTE]
-    > Trzeba zachować oryginalne wartości, aby można było przekazać je do obiektu `Delete` metody. W tym przykładzie użyto właściwości `orig` prefiks do przechowywania oryginalnych wartości.
+    > Obiekt musi zachować oryginalne wartości, aby przekazać je do metody `Delete`. W tym przykładzie do przechowywania oryginalnych wartości są stosowane właściwości z prefiksem `orig`.
 
-     Poniższy przykład usuwa rekord na podstawie `Customers` tabeli, przekazując oryginalnych wartości w `Customer` obiekt `TableAdapter.Delete` metody.
+     Poniższy przykład usuwa rekord z tabeli `Customers` przez przekazanie oryginalnych wartości w obiekcie `Customer` do metody `TableAdapter.Delete`.
 
      [!code-csharp[VbRaddataSaving#25](../data-tools/codesnippet/CSharp/save-data-from-an-object-to-a-database_3.cs)]
      [!code-vb[VbRaddataSaving#25](../data-tools/codesnippet/VisualBasic/save-data-from-an-object-to-a-database_3.vb)]
 
-## <a name="net-security"></a>Zabezpieczenia platformy .net
+## <a name="net-security"></a>Zabezpieczenia platformy .NET
 
-Musi mieć uprawnienia do wykonania wybranej `INSERT`, `UPDATE`, lub `DELETE` w tabeli w bazie danych.
+Musisz mieć uprawnienia do wykonywania wybranych `INSERT`, `UPDATE` lub `DELETE` w tabeli w bazie danych.
 
 ## <a name="see-also"></a>Zobacz także
 

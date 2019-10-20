@@ -1,5 +1,5 @@
 ---
-title: Właściwości diagramów | Dokumentacja firmy Microsoft
+title: Właściwości diagramów | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -10,44 +10,44 @@ helpviewer_keywords:
 - Domain-Specific Language, diagram
 ms.assetid: 00bba4b8-6aa6-4027-96cb-4f4c41a77d3c
 caps.latest.revision: 27
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7d669d01339b92c64cfe03ccb3ae897a1816aeac
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 31fb06512457f919b67d41c3fb4096e4c3477426
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65701763"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652028"
 ---
 # <a name="properties-of-diagrams"></a>Właściwości diagramów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Można ustawić właściwości, które określają, jak diagramy będzie wyświetlana w wygenerowanym projektancie. Na przykład można określić domyślny kolor tekstu na diagramie.  
-  
- Aby uzyskać więcej informacji, zobacz [sposób definiowania języka specyficznego dla domeny](../modeling/how-to-define-a-domain-specific-language.md). Aby uzyskać więcej informacji o tym, jak korzystać z tych właściwości, zobacz [dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md).  
-  
- Poniższa tabela zawiera listę właściwości diagramów.  
-  
-|Właściwość|Opis|Domyślny|  
-|--------------|-----------------|-------------|  
-|Kolor wypełnienia|Kolor wypełnienia dla diagramu.|Biały|  
-|Kolor tekstu|Kolor tekstu, która jest wyświetlana na diagramie.|Czarny|  
-|Modyfikator dostępu|Modyfikator dostępu dla klasy (wewnętrznego lub publicznego).|Public|  
-|Atrybuty niestandardowe|Służy do dodawania atrybutów do klasy wygenerowanego kodu.|\<Brak >|  
-|Generuje Double pochodne|Jeśli `True`, zostaną wygenerowane klasy podstawowej i klasy częściowej (obsługuje dostosowywania przy użyciu zastąpień). Aby uzyskać więcej informacji, zobacz [zastępowanie i rozszerzanie wygenerowanych klas](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
-|Ma konstruktora niestandardowego|Jeśli `True`, konstruktora niestandardowego, które będą dostępne w kodzie źródłowym. Aby uzyskać więcej informacji, zobacz [zastępowanie i rozszerzanie wygenerowanych klas](../modeling/overriding-and-extending-the-generated-classes.md)...|False|  
-|Modyfikator dziedziczenia|Opisuje typ dziedziczenia klasy kodu źródłowego, która jest generowany na podstawie diagramu (`none`, `abstract` lub `sealed`).|Brak|  
-|Podstawowy Diagram|Klasa bazowa ten diagram.|(Brak)|  
-|Nazwa|Nazwa tego diagramu.|Bieżąca nazwa|  
-|Przestrzeń nazw|Przestrzeń nazw, która jest połączona z tym diagramie.|Bieżąca przestrzeń nazw|  
-|Reprezentowana klasa|Klasa domeny katalogu głównego ten diagram przedstawia.|Bieżąca klasa głównego, jeśli ma to zastosowanie|  
-|Uwagi|Uwagi informacyjne, które są skojarzone z tym elementem.|\<Brak >|  
-|Kolor wypełnienia ujawnia jako właściwość|Jeśli `True`, użytkownik może ustawić kolor wypełnienia diagram wygenerowanego projektanta. Aby to ustawić, kliknij prawym przyciskiem myszy kształt diagramu, a następnie kliknij przycisk **Dodaj Explosed**.|False|  
-|Opisuje kolor tekstu jako właściwość|Jeśli `True`, użytkownik może ustawić kolor tekstu diagramu w wygenerowanym projektancie. Aby to ustawić, kliknij prawym przyciskiem myszy kształt diagramu, a następnie kliknij przycisk **Dodaj Explosed**.|False|  
-|Opis|Opis, który jest używany do dokumentu wygenerowanego projektanta.|\<Brak >|  
-|Nazwa wyświetlana|Nazwa, która będzie wyświetlana w wygenerowanym projektancie dla tego diagramu.|\<Brak >|  
-|Słowo kluczowe pomocy|Słowo kluczowe, które jest używane do indeksowania pomocy F1 dla okna ten diagram.|\<Brak >|  
-  
-## <a name="see-also"></a>Zobacz też  
- [Słownik narzędzi języka specyficznego dla domeny](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+Można ustawić właściwości określające sposób wyświetlania diagramów w wygenerowanym projektancie. Na przykład można określić domyślny kolor tekstu na diagramie.
+
+ Aby uzyskać więcej informacji, zobacz [jak zdefiniować język specyficzny dla domeny](../modeling/how-to-define-a-domain-specific-language.md). Aby uzyskać więcej informacji o sposobach korzystania z tych właściwości, zobacz [Dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md).
+
+ Poniższa tabela zawiera listę właściwości diagramów.
+
+|Właściwość|Opis|Domyślny|
+|--------------|-----------------|-------------|
+|Kolor wypełnienia|Kolor wypełnienia dla diagramu.|oficjaln|
+|Kolor tekstu|Kolor tekstu, który jest wyświetlany na diagramie.|gasić|
+|Modyfikator dostępu|Modyfikator dostępu klasy (Public lub internal).|Public|
+|Atrybuty niestandardowe|Służy do dodawania atrybutów do wygenerowanej klasy kodu.|\<none >|
+|Generuje podwójny pochodny|Jeśli `True`, zostaną wygenerowane zarówno klasę bazową, jak i Klasa częściowa (do obsługi dostosowywania za pomocą przesłonięć). Aby uzyskać więcej informacji, zobacz [przesłanianie i rozszerzanie wygenerowanych klas](../modeling/overriding-and-extending-the-generated-classes.md).|False|
+|Ma Konstruktor niestandardowy|Jeśli `True`, Konstruktor niestandardowy zostanie udostępniony w kodzie źródłowym. Aby uzyskać więcej informacji, zobacz [przesłanianie i rozszerzanie wygenerowanych klas](../modeling/overriding-and-extending-the-generated-classes.md)..|False|
+|Modyfikator dziedziczenia|Opisuje rodzaj dziedziczenia klasy kodu źródłowego, która jest generowana na podstawie diagramu (`none`, `abstract` lub `sealed`).|Brak|
+|Diagram podstawowy|Klasa bazowa tego diagramu.|dawaj|
+|Nazwa|Nazwa tego diagramu.|Bieżąca nazwa|
+|Przestrzeń nazw|Przestrzeń nazw, która jest powiązana z tym diagramem.|Bieżąca przestrzeń nazw|
+|Reprezentowane klasy|Klasa domeny głównej, którą reprezentuje ten diagram.|Bieżąca Klasa główna, jeśli ma zastosowanie|
+|Uwagi|Nieformalne uwagi, które są skojarzone z tym elementem.|\<none >|
+|Uwidacznia kolor wypełnienia jako właściwość|Jeśli `True`, użytkownik może ustawić kolor wypełnienia diagramu wygenerowanego projektanta. Aby ustawić tę opcję, kliknij prawym przyciskiem myszy kształt diagramu i kliknij polecenie **Dodaj eXplosed**.|False|
+|Uwidacznia kolor tekstu jako właściwość|Jeśli `True`, użytkownik może ustawić kolor tekstu diagramu w wygenerowanym projektancie. Aby ustawić tę opcję, kliknij prawym przyciskiem myszy kształt diagramu i kliknij polecenie **Dodaj eXplosed**.|False|
+|Opis|Opis używany do dokumentowania wygenerowanego projektanta.|\<none >|
+|Nazwa wyświetlana|Nazwa, która będzie wyświetlana w wygenerowanym projektancie dla tego diagramu.|\<none >|
+|Słowo kluczowe pomocy|Słowo kluczowe, które jest używane do indeksowania pomocy F1 dla tego diagramu.|\<none >|
+
+## <a name="see-also"></a>Zobacz też
+ [narzędzia języka specyficznego dla domeny słownik](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

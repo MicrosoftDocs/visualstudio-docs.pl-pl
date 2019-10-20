@@ -1,5 +1,5 @@
 ---
-title: 'CA1502: Unikaj nadmiernej złożoności | Dokumentacja firmy Microsoft'
+title: 'CA1502: Unikaj nadmiernej złożoności | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - AvoidExcessiveComplexity
 ms.assetid: d735454b-2f8f-47ce-907d-f7a5a5391221
 caps.latest.revision: 32
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: e1885a07f4c9edbbdea9be4f0e74aaf8e4d3a6f9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f7b830e9d3a045bb54394a91d94e036613af7d1f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68191255"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72607871"
 ---
 # <a name="ca1502-avoid-excessive-complexity"></a>CA1502: Unikaj nadmiernej złożoności
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,61 +29,61 @@ ms.locfileid: "68191255"
 |-|-|
 |TypeName|AvoidExcessiveComplexity|
 |CheckId|CA1502|
-|Kategoria|Microsoft.Maintainability|
-|Zmiana kluczowa|Bez podziału|
+|Kategoria|Microsoft. łatwość obsługi|
+|Zmiana kluczowa|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
- Metoda ma złożoność cyklomatyczną nadmierne.
+ Metoda ma nadmierną Złożoność cyklomatyczna.
 
 ## <a name="rule-description"></a>Opis reguły
- *Złożoność Cyklomatyczna* mierzy liczbę liniowo niezależnych ścieżek za pośrednictwem metody, która jest określana przez liczbę i złożoność rozgałęzień warunkowych. Złożoność cyklomatyczna niski na ogół wskazuje metodę, która jest łatwy do zrozumienia, testowania i obsługi. Złożoność cyklomatyczna jest obliczana na podstawie grafu przepływu sterowania, metody i znajduje się w następujący sposób:
+ *Złożoność cyklomatyczna* mierzy liczbę liniowo niezależnych ścieżek za pomocą metody, która jest określana przez liczbę i złożoność gałęzi warunkowych. Niska Złożoność cyklomatyczna zazwyczaj wskazuje metodę, która jest łatwa do zrozumienia, testowania i konserwowania. Złożoność cyklomatyczna jest obliczana na podstawie grafu przepływu sterowania metody i jest podawana w następujący sposób:
 
- złożoność cyklomatyczna = liczba krawędzi — liczba węzłów + 1
+ Złożoność cyklomatyczna = liczba krawędzi — liczba węzłów + 1
 
- gdy węzeł reprezentuje Rozgałęzienie logiki i krawędź reprezentuje linię między węzłami.
+ gdzie węzeł reprezentuje punkt rozgałęzienia logiki, a krawędź reprezentuje linię między węzłami.
 
- Reguły raporty naruszenie zasad, gdy złożoność cyklomatyczna jest więcej niż 25.
+ Reguła zgłasza naruszenie, gdy Złożoność cyklomatyczna jest większa niż 25.
 
- Dowiedz się więcej na temat metryk kodu [mierzenie złożoności i łatwości konserwacji zarządzanego kodu](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md),
+ Możesz dowiedzieć się więcej o metrykach kodu podczas [mierzenia złożoności i utrzymania kodu zarządzanego](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md),
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, Refaktoryzuj metody do jego złożoność cykliczną.
+ Aby naprawić naruszenie tej zasady, należy rozwiązać metodę, aby zmniejszyć jej złożoność cyklomatyczna.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Jest bezpieczne pominąć ostrzeżenie od tej reguły, jeśli nie łatwo można zmniejszyć złożoność i metoda jest łatwy do zrozumienia, testowania i obsługi. W szczególności metoda, która zawiera dużą `switch` (`Select` w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) instrukcja jest kandydatem do wykluczenia. Ryzyko destabilizing kod podstawowy zaległości w cyklu rozwoju lub wprowadzenia nieoczekiwanej zmianie w zachowania w czasie wykonywania w kodzie uprzednio wysłane może przeważyć zalety łatwości utrzymania refaktoryzacji kodu.
+ Jeśli złożoność nie zostanie łatwo zredukowana, można bezpiecznie pominąć ostrzeżenie z tej reguły, a metoda jest łatwa do zrozumienia, testowania i konserwowania. W szczególności Metoda, która zawiera duże `switch` (`Select` w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]), jest kandydatem do wykluczenia. Ryzyko destabilizacji podstawy kodu w cyklu programowania lub wprowadzenie nieoczekiwanej zmiany zachowania w czasie wykonywania w wcześniej dostarczonym kodzie może wzważyć korzyści płynące z refaktoryzacji kodu.
 
-## <a name="how-cyclomatic-complexity-is-calculated"></a>Jak obliczana jest złożoność Cyklomatyczna
- Złożoność cyklomatyczna jest obliczany przez dodanie 1 do następujących:
+## <a name="how-cyclomatic-complexity-is-calculated"></a>Jak jest obliczana Złożoność cyklomatyczna
+ Złożoność cyklomatyczna jest obliczana przez dodanie 1 do następujących:
 
-- Liczba gałęzi (takich jak `if`, `while`, i `do`)
+- Liczba gałęzi (takich jak `if`, `while` i `do`)
 
-- Liczba `case` instrukcje w `switch`
+- Liczba instrukcji `case` w `switch`
 
-  Poniższe przykłady przedstawiają metody, które mają różnej złożoności cyklomatycznej.
+  W poniższych przykładach przedstawiono metody, które mają różne złożone cyklomatyczna.
 
 ## <a name="example"></a>Przykład
- **Złożoność Cyklomatyczna 1**
+ **Złożoność cyklomatyczna 1**
 
  [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Maintainability.AvoidExcessiveComplexity/cpp/FxCop.Maintainability.AvoidExcessiveComplexity.cpp#1)]
  [!code-csharp[FxCop.Maintainability.AvoidExcessiveComplexity#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Maintainability.AvoidExcessiveComplexity/cs/FxCop.Maintainability.AvoidExcessiveComplexity.cs#1)]
  [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Maintainability.AvoidExcessiveComplexity/vb/FxCop.Maintainability.AvoidExcessiveComplexity.vb#1)]
 
 ## <a name="example"></a>Przykład
- **Złożoność Cyklomatyczna 2**
+ **Złożoność cyklomatyczna 2**
 
  [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#2](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Maintainability.AvoidExcessiveComplexity/cpp/FxCop.Maintainability.AvoidExcessiveComplexity.cpp#2)]
  [!code-csharp[FxCop.Maintainability.AvoidExcessiveComplexity#2](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Maintainability.AvoidExcessiveComplexity/cs/FxCop.Maintainability.AvoidExcessiveComplexity.cs#2)]
  [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#2](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Maintainability.AvoidExcessiveComplexity/vb/FxCop.Maintainability.AvoidExcessiveComplexity.vb#2)]
 
 ## <a name="example"></a>Przykład
- **Złożoność Cyklomatyczna 3**
+ **Złożoność cyklomatyczna 3**
 
  [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#3](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Maintainability.AvoidExcessiveComplexity/cpp/FxCop.Maintainability.AvoidExcessiveComplexity.cpp#3)]
  [!code-csharp[FxCop.Maintainability.AvoidExcessiveComplexity#3](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Maintainability.AvoidExcessiveComplexity/cs/FxCop.Maintainability.AvoidExcessiveComplexity.cs#3)]
  [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#3](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Maintainability.AvoidExcessiveComplexity/vb/FxCop.Maintainability.AvoidExcessiveComplexity.vb#3)]
 
 ## <a name="example"></a>Przykład
- **Złożoność Cyklomatyczna 8**
+ **Złożoność cyklomatyczna 8**
 
  [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#4](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Maintainability.AvoidExcessiveComplexity/cpp/FxCop.Maintainability.AvoidExcessiveComplexity.cpp#4)]
  [!code-csharp[FxCop.Maintainability.AvoidExcessiveComplexity#4](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Maintainability.AvoidExcessiveComplexity/cs/FxCop.Maintainability.AvoidExcessiveComplexity.cs#4)]

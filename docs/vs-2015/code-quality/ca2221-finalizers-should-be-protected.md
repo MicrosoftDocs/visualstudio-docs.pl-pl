@@ -1,5 +1,5 @@
 ---
-title: 'CA2221: Finalizatory powinny być chronione | Dokumentacja firmy Microsoft'
+title: 'CA2221: finalizatory powinny być chronione | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - CA2221
 ms.assetid: bda03aee-4cce-45d3-907d-17f4ee030acc
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 9e8deec8687e3ddb2b3d961aa9fc1e97a45c961d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 3e98c2ea598bcf73b919ba10ef1ea0b53c2a40f3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685133"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651958"
 ---
 # <a name="ca2221-finalizers-should-be-protected"></a>CA2221: Finalizatory powinny być chronione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,23 +29,23 @@ ms.locfileid: "65685133"
 |-|-|
 |TypeName|FinalizersShouldBeProtected|
 |CheckId|CA2221|
-|Kategoria|Microsoft.Usage|
-|Zmiana kluczowa|Bez podziału|
+|Kategoria|Microsoft. Usage|
+|Zmiana kluczowa|Bez przerywania|
 
 ## <a name="cause"></a>Przyczyna
- Typ publiczny implementuje finalizator, który nie określa rodziny dostępu (chroniony).
+ Typ publiczny implementuje finalizator, który nie określa dostępu rodziny (chronione).
 
 ## <a name="rule-description"></a>Opis reguły
- Finalizatory muszą korzystać z modyfikatora dostępu „family”. Ta zasada jest wymuszana przez kompilatory C#, Visual Basic i Visual C++.
+ Finalizatory muszą korzystać z modyfikatora dostępu „family”. Ta reguła jest wymuszana przez C#kompilatory, Visual Basic i C++ wizualizacje.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, należy zmienić finalizator dostępne rodziny.
+ Aby naprawić naruszenie tej zasady, należy zmienić finalizator na dostęp do rodziny.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Nie pomijaj ostrzeżeń dla tej reguły.
 
 ## <a name="example"></a>Przykład
- Ta zasada nie naruszone w dowolnym języku .NET wysokiego poziomu; można naruszone, jeśli piszesz języka Microsoft Intermediate Language.
+ Tej reguły nie można naruszać w żadnym języku .NET wysokiego poziomu; można je naruszyć w przypadku pisania języka pośredniego firmy Microsoft.
 
 ```
 // =============== CLASS MEMBERS DECLARATION ===================

@@ -1,5 +1,5 @@
 ---
-title: 'CA1800: Nie Rzutuj niepotrzebnie | Dokumentacja firmy Microsoft'
+title: 'CA1800: nie należy rzutować niepotrzebnie | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,50 +12,50 @@ helpviewer_keywords:
 - CA1800
 ms.assetid: b79a010a-6627-421e-8955-6007e32fa808
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 49ffc66b1b7047c7b88664ac0c5198fbd51c51c6
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 466309cef8905faa9b659e2d3652975d815767fb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65682075"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72663102"
 ---
-# <a name="ca1800-do-not-cast-unnecessarily"></a>CA1800: Nie rzutuj niepotrzebnie
+# <a name="ca1800-do-not-cast-unnecessarily"></a>CA1800: Nie przeprowadzaj niepotrzebnych operacji rzutowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|DoNotCastUnnecessarily|
 |CheckId|CA1800|
-|Kategoria|Microsoft.Performance|
-|Zmiana kluczowa|Bez podziału|
+|Kategoria|Microsoft. Performance|
+|Zmiana kluczowa|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
- Metoda wykonuje zduplikowane rzutowania na jednym z jego argumentów ani zmiennych lokalnych. Zakończenie analizy przez tę regułę przetestowane zestawu muszą zostać skompilowane przy użyciu informacji o debugowaniu i plik bazy danych (PDB) programu skojarzone muszą być dostępne.
+ Metoda wykonuje duplikaty rzutowania dla jednego z jego argumentów lub zmiennych lokalnych. Aby przeprowadzić pełną analizę według tej reguły, testowany zestaw musi być skompilowany przy użyciu informacji debugowania, a wymagany plik bazy danych programu (. pdb) musi być dostępny.
 
 ## <a name="rule-description"></a>Opis reguły
- Zduplikowane rzutowania zmniejszają wydajność, zwłaszcza gdy rzutowania są wykonywane w niedużej iteracji. W przypadku jawnego rzutowania zduplikowanych operacji przechować wynik rzutowania w zmiennej lokalnej, a następnie użyć zmiennej lokalnej zamiast operacji zduplikowane rzutowania.
+ Zduplikowane rzutowania zmniejszają wydajność, zwłaszcza gdy rzutowania są wykonywane w niedużej iteracji. W przypadku jawnych zduplikowanych operacji rzutowania Zapisz wynik rzutowania w zmiennej lokalnej i Użyj zmiennej lokalnej zamiast zduplikowanych operacji rzutowania.
 
- Jeśli C# `is` operator jest używany do sprawdzenia, czy rzutowanie zostanie wykonane pomyślnie, przed wykonaniem rzeczywiste rzutowania należy wziąć pod uwagę testowanie oddziaływania `as` operator zamiast tego. Dzięki temu te same funkcje bez operacji niejawne rzutowanie, która jest wykonywana przez `is` operatora.
+ Jeśli operator C# `is` jest używany do sprawdzania, czy rzutowanie zostanie wykonane pomyślnie przed rzeczywistym rzutem, rozważ przetestowanie wyniku dla operatora `as`. Zapewnia to te same funkcje bez niejawnej operacji rzutowania wykonywanej przez operator `is`.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, należy zmodyfikować implementacji metody, aby zminimalizować liczbę operacji rzutowania.
+ Aby naprawić naruszenie tej reguły, zmodyfikuj implementację metody w celu zminimalizowania liczby operacji rzutowania.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Jest bezpieczne, ostrzeżenia od tej reguły lub całkowicie, ignorowanie reguły, jeśli wydajność nie ma znaczenia.
+ Istnieje możliwość bezpiecznego pomijania ostrzeżenia z tej reguły lub w celu zignorowania jej w całości, jeśli wydajność nie jest istotna.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie pokazano metodę, która narusza regułę przy użyciu języka C# `is` operatora. Druga metoda spełnia reguły, zastępując `is` operatora z testem względem wynik `as` operatora, co zmniejsza liczbę operacji rzutowania na iterację od dwóch do jednego.
+ Poniższy przykład przedstawia metodę, która narusza regułę przy użyciu operatora C# `is`. Druga metoda spełnia regułę przez zamianę operatora `is` na test względem wyniku dla operatora `as`, który zmniejsza liczbę operacji rzutowania na iterację z dwóch do jednego.
 
  [!code-csharp[FxCop.Performance.UnnecessaryCastsAsIs#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.UnnecessaryCastsAsIs/cs/FxCop.Performance.UnnecessaryCastsAsIs.cs#1)]
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie pokazano metodę `start_Click`, ma wiele zduplikowanych ma jawnych rzutowań, który narusza regułę, a metoda `reset_Click`, spełniającego reguły, przechowując rzutowanie w zmiennej lokalnej.
+ Poniższy przykład przedstawia metodę `start_Click`, która ma wiele duplikatów jawnych, co narusza regułę i metodę `reset_Click`, która spełnia reguły przez przechowywanie rzutowania w zmiennej lokalnej.
 
  [!code-csharp[FxCop.Performance.UnnecessaryCasts#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.UnnecessaryCasts/cs/FxCop.Performance.UnnecessaryCasts.cs#1)]
  [!code-vb[FxCop.Performance.UnnecessaryCasts#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Performance.UnnecessaryCasts/vb/FxCop.Performance.UnnecessaryCasts.vb#1)]
 
 ## <a name="see-also"></a>Zobacz też
- [jako](https://msdn.microsoft.com/library/a9be126b-cbf4-4990-a70d-d0e1983cad0e) [jest](https://msdn.microsoft.com/library/bc62316a-d41f-4f90-8300-c6f4f0556e43)
+ [zgodnie z oczekiwaniami](https://msdn.microsoft.com/library/a9be126b-cbf4-4990-a70d-d0e1983cad0e) [](https://msdn.microsoft.com/library/bc62316a-d41f-4f90-8300-c6f4f0556e43)

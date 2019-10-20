@@ -1,5 +1,5 @@
 ---
-title: 'CA1027: Oznacz Typy wyliczeniowe atrybutem Flags | Dokumentacja firmy Microsoft'
+title: 'CA1027: Oznacz typy wyliczeniowe atrybutem FlagsAttribute | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,47 +12,47 @@ helpviewer_keywords:
 - MarkEnumsWithFlags
 ms.assetid: 249e882c-8cd1-4c00-a2de-7b6bdc1849ff
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 6603e0869a9eb7947735c52a4c438b39d64b9140
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6f2dc7dcd79fbcaf47a2db3cf49f22f3467a06ab
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68157712"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661935"
 ---
-# <a name="ca1027-mark-enums-with-flagsattribute"></a>CA1027: Oznacz typy wyliczeniowe atrybutem Flags
+# <a name="ca1027-mark-enums-with-flagsattribute"></a>CA1027: Oznaczaj wyliczenia za pomocą FlagsAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|MarkEnumsWithFlags|
 |CheckId|CA1027|
-|Kategoria|Microsoft.Design|
-|Zmiana kluczowa|Bez podziału|
+|Kategoria|Microsoft. Design|
+|Zmiana kluczowa|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
- Wartości wyliczenia publiczne są potęgi liczb lub kombinacji innych wartości, które są zdefiniowane w wyliczeniu, i <xref:System.FlagsAttribute?displayProperty=fullName> atrybut nie jest obecny. W celu zmniejszenia liczby wyników fałszywie dodatnich, ta reguła nie raportuje naruszenie dla wyliczenia, które mają wartości ciągłe.
+ Wartości wyliczenia publicznego są potęgami dwóch lub są kombinacją innych wartości, które są zdefiniowane w wyliczeniu, i atrybut <xref:System.FlagsAttribute?displayProperty=fullName> nie jest obecny. Aby zmniejszyć liczbę fałszywie dodatnich, ta reguła nie zgłasza naruszenia dla wyliczeń, które mają ciągłe wartości.
 
 ## <a name="rule-description"></a>Opis reguły
- Wyliczenie to typ wartości, który definiuje zestaw powiązanych, nazwanych stałych. Zastosuj <xref:System.FlagsAttribute> z wyliczeniem, gdy jego stałe nazwane mogą zostać sensownie połączone. Rozważmy na przykład wyliczenie dni tygodnia w aplikacji, która przechowuje informacje o dostępnych zasobów który dzień. Jeśli dostępność każdego zasobu jest zaszyfrowana przy użyciu wyliczenia, które ma <xref:System.FlagsAttribute> obecne i dowolną kombinację dni, które mogą być reprezentowane. Bez atrybutu może być reprezentowany tylko jeden dzień tygodnia.
+ Wyliczenie to typ wartości, który definiuje zestaw powiązanych, nazwanych stałych. Zastosuj <xref:System.FlagsAttribute> do wyliczenia, gdy jego nazwane stałe mogą być w znaczący sposób połączone. Rozważmy na przykład Wyliczenie dni tygodnia w aplikacji, która śledzi zasoby danego dnia. Jeśli dostępność każdego zasobu jest zaszyfrowana przy użyciu wyliczenia, które ma <xref:System.FlagsAttribute>, można przedstawić dowolną kombinację dni. Bez atrybutu, można przedstawić tylko jeden dzień tygodnia.
 
- W przypadku pól, które przechowują wyliczenia możliwych do łączenia wartości wyliczenia poszczególnych są traktowane jako grup bitów w polu. Dlatego takie pola są czasami określane jako *pola bitowe*. Aby połączyć wartości wyliczenia do przechowywania w pole bitowe, należy użyć logiczna operatorów warunkowych. Aby przetestować polem bitowym, aby ustalić, czy występuje wartość wyliczenia określonego, użyj operatorów logicznych logicznych. Pola bitowe do przechowywania i pobierania wartości wyliczenia połączone poprawnie każda wartość, która jest zdefiniowana w wyliczeniu musi być potęgą liczby dwa. Jeśli tak jest, wartość logiczna operatorów logicznych nie będzie można wyodrębnić wartości poszczególnych wyliczenia, które są przechowywane w polu.
+ W przypadku pól, które przechowują wyliczenia do przydzielenia, poszczególne wartości wyliczenia są traktowane jako grupy bitów w polu. W związku z tym takie pola są czasami określane jako *pola bitowe*. Aby połączyć wartości wyliczenia dla magazynu w polu bitowym, użyj operatorów warunkowych Boolean. Aby przetestować pole bitowe w celu ustalenia, czy określona wartość wyliczenia jest obecna, użyj logicznych operatorów logicznych. W przypadku pola bitowego do poprawnego przechowywania i pobierania połączonych wartości wyliczenia każda wartość zdefiniowana w wyliczeniu musi być potęgą liczby dwa. O ile tak nie jest, logiczne operatory logiczne nie będą mogły wyodrębnić poszczególnych wartości wyliczenia, które są przechowywane w polu.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, należy dodać <xref:System.FlagsAttribute> do wyliczenia.
+ Aby naprawić naruszenie tej reguły, Dodaj <xref:System.FlagsAttribute> do wyliczenia.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Pomijaj ostrzeżeń dla tej reguły, jeśli nie chcesz, aby wartości wyliczenia możliwych do łączenia się.
+ Pomiń ostrzeżenie z tej reguły, jeśli nie chcesz, aby wartości wyliczenia były możliwe do kombinacji.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie `DaysEnumNeedsFlags` jest wyliczeniem, który spełnia wymagania dotyczące korzystania z <xref:System.FlagsAttribute>, ale nie ma. `ColorEnumShouldNotHaveFlag` Wyliczenia nie ma wartości, które są potęgi liczby dwa, ale niepoprawnie Określa <xref:System.FlagsAttribute>. Narusza regułę [CA2217: Nie oznaczaj wyliczeń za pomocą FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md).
+ W poniższym przykładzie `DaysEnumNeedsFlags` jest wyliczeniem spełniającym wymagania dotyczące korzystania z <xref:System.FlagsAttribute>, ale nie ma go. Wyliczenie `ColorEnumShouldNotHaveFlag` nie zawiera wartości, które są potęgami dwóch, ale nieprawidłowo określa <xref:System.FlagsAttribute>. Narusza to reguły [CA2217: nie oznaczaj typów wyliczeniowych atrybutem FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md).
 
  [!code-csharp[FxCop.Design.EnumFlags#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.EnumFlags/cs/FxCop.Design.EnumFlags.cs#1)]
 
 ## <a name="related-rules"></a>Powiązane reguły
- [CA2217: Nie oznaczaj wyliczeń za pomocą FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+ [CA2217: Nie oznaczaj wyliczeń za pomocą atrybutu FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
 ## <a name="see-also"></a>Zobacz też
  <xref:System.FlagsAttribute?displayProperty=fullName>

@@ -1,5 +1,5 @@
 ---
-title: Powiąż z działaniem&#39;właściwość s, okno dialogowe (starsza wersja) | Dokumentacja firmy Microsoft
+title: Powiąż z oknem&#39;dialogowym właściwości działania (starsza wersja) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -10,31 +10,29 @@ helpviewer_keywords:
 - Bind to an Activity's Property dialog box
 ms.assetid: 19ebb207-e0a9-4642-8f5f-a5e31395c683
 caps.latest.revision: 5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 82582936f2d9165a0aebea9e6000af24baf59941
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b93f6787ef24a191385c0fd86672aa23ff72e3e5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977429"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659217"
 ---
-# <a name="bind-to-an-activity39s-property-dialog-box-legacy"></a>Powiąż z działaniem&#39;właściwość s, okno dialogowe (starsza wersja)
-W tym temacie opisano sposób użycia **powiązać właściwości działania** okno dialogowe w starszej wersji [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Użyj starszego [!INCLUDE[wfd2](../includes/wfd2-md.md)] konieczność docelowy: [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
-  
- Właściwości zależności typu wystąpienia może być powiązana z innego działania publiczna właściwość lub zdarzenie. Aby uzyskać więcej informacji na temat tworzenia powiązań działania zobacz [przy użyciu właściwości zależności](http://go.microsoft.com/fwlink?LinkID=65007).  
-  
- Wybierz właściwości, aby powiązać przy użyciu **powiązać właściwości działania** okno dialogowe. Otwórz okno dialogowe, klikając przycisk z wielokropkiem **[...]**  na końcu wybranej właściwości pola tekstowego w **właściwości** oknie lub klikając ikonę niebieskim wykrzyknikiem, która pojawia się obok nazwy właściwości w przeglądarce właściwości.  
-  
- W poniższej tabeli opisano elementy interfejsu użytkownika **powiązać właściwości działania** okno dialogowe.  
-  
-|Element interfejsu użytkownika|Opis|  
-|----------------|-----------------|  
-|**Powiąż z istniejącą składową**|Wybierz element członkowski, który chcesz powiązać w okienku widoku drzewa. W okienku poniżej w widoku drzewa wyświetla komunikat, który wskazuje, czy element członkowski jest prawidłowym typem można powiązać lub nie. Kliknij przycisk **OK** powiązać wybrany prawidłowy element członkowski.|  
-|**Powiąż z nowego członka**|Utwórz nowy element członkowski pola lub właściwości, które można powiązać. Wprowadź **nową nazwę elementu członkowskiego**. Wybierz, czy chcesz utworzyć właściwość zależności lub pole publiczne, wybierając **utworzyć pole** lub **Tworzenie właściwości**. Kliknij przycisk **OK** do utworzenia nowego elementu członkowskiego.|  
-  
-## <a name="see-also"></a>Zobacz też  
- [Za pomocą właściwości działania](http://go.microsoft.com/fwlink?LinkID=65013)   
- [Przy użyciu właściwości zależności](http://go.microsoft.com/fwlink?LinkID=65007)   
- [Starsza wersja projektanta pomocy interfejsu użytkownika programu Windows Workflow Foundation](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)
+# <a name="bind-to-an-activity39s-property-dialog-box-legacy"></a>Powiąż z oknem&#39;dialogowym właściwości działania (starsza wersja)
+W tym temacie opisano sposób użycia okna dialogowego **Powiązywanie z właściwością działania** w starszej [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Użyj starszej [!INCLUDE[wfd2](../includes/wfd2-md.md)], jeśli chcesz wskazać [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+
+ Typ wystąpienia właściwości zależności można powiązać z publiczną właściwością lub zdarzeniem innego działania. Aby uzyskać więcej informacji na temat powiązania działań, zobacz [Używanie właściwości zależności](http://go.microsoft.com/fwlink?LinkID=65007).
+
+ Należy wybrać właściwość do powiązania, aby użyć okna dialogowego **powiązania z właściwością działania** . Możesz otworzyć to okno dialogowe, klikając wielokropek **[...]** na końcu pola tekstowego wybranej właściwości w oknie **Właściwości** lub klikając ikonę niebiesko wykrzyknika widoczną obok nazwy właściwości w przeglądarce właściwości.
+
+ W poniższej tabeli opisano elementy interfejsu użytkownika w oknie dialogowym **powiązanie z właściwością działania** .
+
+|Element interfejsu użytkownika|Opis|
+|----------------|-----------------|
+|**Powiąż z istniejącym elementem członkowskim**|Wybierz element członkowski, z którym chcesz utworzyć powiązanie, w okienku widoku drzewa. Okienko poniżej widoku drzewa wyświetla komunikat wskazujący, czy element członkowski jest prawidłowym typem, z którym ma zostać utworzone powiązanie. Kliknij przycisk **OK** , aby powiązać z wybranym prawidłowym elementem członkowskim.|
+|**Powiąż z nowym członkiem**|Utwórz nowe pole lub właściwość elementu członkowskiego, z którym ma zostać utworzone powiązanie. Wprowadź **nową nazwę elementu członkowskiego**. Wybierz, czy chcesz utworzyć właściwość zależności, czy pole publiczne, wybierając pozycję **Utwórz pole** lub **Utwórz Właściwość**. Kliknij przycisk **OK** , aby utworzyć nowy element członkowski.|
+
+## <a name="see-also"></a>Zobacz też
+ [Korzystanie z właściwości działania](http://go.microsoft.com/fwlink?LinkID=65013) [przy użyciu właściwości zależności](http://go.microsoft.com/fwlink?LinkID=65007) [starszej wersji projektanta dla Windows Workflow Foundation pomocy interfejsu użytkownika](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)

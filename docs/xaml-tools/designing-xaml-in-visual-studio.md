@@ -4,21 +4,21 @@ titleSuffix: ''
 ms.date: 08/05/2019
 ms.topic: conceptual
 ms.assetid: 288e2415-9fcf-408e-bc35-9848315e14fd
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 88e03307f9f72d50fb77818ffaf632debbd830f6
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 50e378591330807bdddcc10277032aa82c914863
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72451144"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650944"
 ---
 # <a name="design-xaml-in-visual-studio-and-blend-for-visual-studio"></a>Projektuj kod XAML w programie Visual Studio i Blend for Visual Studio
 
 Programy Visual Studio i Blend for Visual Studio oferują narzędzia wizualne do tworzenia atrakcyjnych interfejsów użytkownika i bogate środowiska multimedialne przy użyciu języka XAML dla różnych typów aplikacji. Oba zintegrowane środowiska deweloperskie (IDE) udostępniają wspólny zestaw funkcji, w tym edytor języka Visual XAML (Projektant). Blend for Visual Studio, który obsługuje platformy WPF i platformy UWP, oferuje dodatkowe narzędzia do projektowania Stanów wizualnych i tworzenia animacji.
 
-Można przełączać się między programem Visual Studio i Blend for Visual Studio, a nawet w tym samym czasie może być otwarty w obu środowisk ideach. Zmiany zapisane w plikach XAML w jednym środowisku IDE mogą być stosowane przez automatyczne ponowne ładowanie po przełączeniu do innego środowiska IDE. Możesz kontrolować zachowanie ponownego ładowania, przechodząc do **narzędzi** > **Options** > **środowiska**@no__t 5**dokumentów** w obu IDE.
+Można przełączać się między programem Visual Studio i Blend for Visual Studio, a nawet w tym samym czasie może być otwarty w obu środowisk ideach. Zmiany zapisane w plikach XAML w jednym środowisku IDE mogą być stosowane przez automatyczne ponowne ładowanie po przełączeniu do innego środowiska IDE. Możesz kontrolować zachowanie ponownego ładowania, przechodząc do **narzędzi**  > **opcje**  > **środowisku**  > **dokumenty** w obu IDE.
 
 ## <a name="installation"></a>Instalacja
 
@@ -34,7 +34,7 @@ W przypadku większości podstawowych zadań programistycznych program Visual St
 
 - **Debugowanie:** Można debugować w programie [Visual Studio](../debugger/inspect-xaml-properties-while-debugging.md) i [Blend for Visual Studio](../xaml-tools/debug-xaml-in-blend.md), w tym ustawienia punktów przerwania w kodzie, aby debugować działającą aplikację i za pomocą funkcji [ponownego ładowania](../xaml-tools/xaml-hot-reload.md) , można zmienić kod XAML, gdy aplikacja jest uruchomiona. Aby zachować spójne środowisko debugowania w programie Visual Studio, Blend for Visual Studio zawiera większość okien debugowania i pasków narzędzi programu Visual Studio.
 
-- **Załaduj plik:** Pliki XAML można edytować w programie Visual Studio lub Blend for Visual Studio. Edytowane pliki, które zostały zapisane automatycznie Załaduj, podczas przełączania między środowisk IDE. Możesz kontrolować zachowanie ponownego ładowania, przechodząc do **narzędzi** > **Options** > **środowiska**@no__t 5**dokumentów** w obu IDE.
+- **Załaduj plik:** Pliki XAML można edytować w programie Visual Studio lub Blend for Visual Studio. Edytowane pliki, które zostały zapisane automatycznie Załaduj, podczas przełączania między środowisk IDE. Możesz kontrolować zachowanie ponownego ładowania, przechodząc do **narzędzi**  > **opcje**  > **środowisku**  > **dokumenty** w obu IDE.
 
 - **Zsynchronizowane układy i ustawienia:** Niestandardowe preferencje okna narzędzi i ustawienia dla programu Visual Studio lub Blend for Visual Studio są synchronizowane przez urządzenia i wersje po zalogowaniu się przy użyciu tego samego konta personalizacji. Zobacz [Synchronizowanie ustawień na wielu komputerach](../ide/synchronized-settings-in-visual-studio.md).
 

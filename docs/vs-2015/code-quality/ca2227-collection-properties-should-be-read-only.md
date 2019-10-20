@@ -1,5 +1,5 @@
 ---
-title: 'CA2227: Właściwości kolekcji powinny być tylko do odczytu | Dokumentacja firmy Microsoft'
+title: 'CA2227: właściwości kolekcji powinny być tylko do odczytu | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - CollectionPropertiesShouldBeReadOnly
 ms.assetid: 26967aaf-6fbe-438a-b4d3-ac579b5dc0f9
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 3182a254ed5e22c560523911f87dc852708a9eb1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8aee6f7172414de809d964652411c1f077fe0cdd
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68201583"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658867"
 ---
 # <a name="ca2227-collection-properties-should-be-read-only"></a>CA2227: Właściwości kolekcji powinny być tylko do odczytu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,25 +29,25 @@ ms.locfileid: "68201583"
 |-|-|
 |TypeName|CollectionPropertiesShouldBeReadOnly|
 |CheckId|CA2227|
-|Kategoria|Microsoft.Usage|
+|Kategoria|Microsoft. Usage|
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Widoczne na zewnątrz zapisywalną właściwość jest typu, który implementuje <xref:System.Collections.ICollection?displayProperty=fullName>. Tablice, indeksatory (właściwości o nazwie "Item") i zestawy uprawnień są ignorowane przez regułę.
+ Widoczna na zewnątrz właściwość z możliwością zapisu jest typem, który implementuje <xref:System.Collections.ICollection?displayProperty=fullName>. Tablice, indeksatory (właściwości o nazwie "Item") i zestawy uprawnień są ignorowane przez regułę.
 
 ## <a name="rule-description"></a>Opis reguły
- Właściwość zapisywalnej kolekcji pozwala użytkownikowi zastąpić kolekcję całkowicie inną kolekcję. Właściwość tylko do odczytu uniemożliwia zastępowanie kolekcji, ale nadal umożliwia ustawienie poszczególnych członków. Zastępowanie kolekcji celem jest wzorzec projektowy preferowanych czy metodę, aby usunąć wszystkie elementy z kolekcji i metodę, aby ponownie wypełnić kolekcji. Zobacz <xref:System.Collections.ArrayList.Clear%2A> i <xref:System.Collections.ArrayList.AddRange%2A> metody <xref:System.Collections.ArrayList?displayProperty=fullName> klasy, na przykład tego wzorca.
+ Właściwość kolekcji zapisywalnej umożliwia użytkownikowi zastąpienie kolekcji zupełnie inną kolekcją. Właściwość tylko do odczytu uniemożliwia zastępowanie kolekcji, ale nadal umożliwia ustawienie poszczególnych członków. Jeśli zastępowanie kolekcji jest celem, preferowanym wzorcem projektu jest dołączenie metody usuwania wszystkich elementów z kolekcji i metody ponownego wypełnienia kolekcji. Przykład ten wzorzec zawiera <xref:System.Collections.ArrayList.Clear%2A> i <xref:System.Collections.ArrayList.AddRange%2A> metod klasy <xref:System.Collections.ArrayList?displayProperty=fullName>.
 
- Plik binarny i serializacji XML obsługuje właściwości tylko do odczytu, które są kolekcjami. <xref:System.Xml.Serialization.XmlSerializer?displayProperty=fullName> Klasa ma określonych wymagań dotyczących typów, które implementują <xref:System.Collections.ICollection> i <xref:System.Collections.IEnumerable?displayProperty=fullName> aby podlegać serializacji.
+ Serializacji binarne i XML obsługują właściwości tylko do odczytu, które są kolekcjami. Klasa <xref:System.Xml.Serialization.XmlSerializer?displayProperty=fullName> ma określone wymagania dotyczące typów, które implementują <xref:System.Collections.ICollection> i <xref:System.Collections.IEnumerable?displayProperty=fullName>, aby można było je serializować.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, należy ustawić właściwość jako tylko do odczytu i jeśli projekt wymaga, Dodaj metody, aby usunąć i ponownie wypełnić kolekcji.
+ Aby naprawić naruszenie tej zasady, ustaw właściwość tylko do odczytu i, jeśli to konieczne, Dodaj metody, aby wyczyścić i ponownie wypełnić kolekcję.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Nie pomijaj ostrzeżeń dla tej reguły.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie przedstawiono typ z właściwość zapisywalnej kolekcji i pokazuje, jak kolekcji można zastąpić bezpośrednio. Ponadto preferowany sposób zastąpienia właściwość kolekcji tylko do odczytu za pomocą `Clear` i `AddRange` metody jest wyświetlana.
+ Poniższy przykład przedstawia typ z właściwością kolekcji zapisywalnej i pokazuje, jak można zamienić kolekcję bezpośrednio. Ponadto jest pokazywany preferowany sposób zamiany właściwości kolekcji tylko do odczytu przy użyciu metod `Clear` i `AddRange`.
 
  [!code-cpp[FxCop.Usage.PropertiesReturningCollections#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Usage.PropertiesReturningCollections/cpp/FxCop.Usage.PropertiesReturningCollections.cpp#1)]
  [!code-csharp[FxCop.Usage.PropertiesReturningCollections#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.PropertiesReturningCollections/cs/FxCop.Usage.PropertiesReturningCollections.cs#1)]

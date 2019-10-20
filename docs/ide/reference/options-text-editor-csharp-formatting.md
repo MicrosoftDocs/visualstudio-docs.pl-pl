@@ -1,5 +1,5 @@
 ---
-title: C# edytora opcje formatowania
+title: C#Opcje formatowania edytora
 ms.date: 08/14/2018
 ms.topic: reference
 f1_keywords:
@@ -13,87 +13,87 @@ f1_keywords:
 helpviewer_keywords:
 - formatting options [C#]
 - Text editor Options dialog box, formatting
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b555ede6ecf406f98c2e1ae9384b61664e8226cf
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.openlocfilehash: 8947f6e2fee2b8615c750b770ac3b0dea85bb991
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67260409"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666313"
 ---
-# <a name="options-dialog-box-text-editor--c--code-style--formatting"></a>Okno dialogowe Opcje: Edytor tekstu \> C# \> styl kodu \> formatowania
+# <a name="options-dialog-box-text-editor--c--code-style--formatting"></a>Opcje — okno dialogowe: Edytor tekstu C# \> \> stylu kodu \> formatowanie
 
-Użyj **formatowanie** Opcje strony i jego podstrony ([**wcięcia**](#indentation-page), **nowe wiersze**, **odstępy** a **zawijania**) można ustawić opcje formatowania kodu w edytorze kodu.
+Użyj strony opcje **formatowania** i jej podstrony ([**wcięcia**](#indentation-page), **nowe linie**, **odstępy**i **Zawijanie**), aby ustawić opcje formatowania kodu w edytorze kodu.
 
-Aby uzyskać dostęp do tej strony Opcje, wybierz opcję **narzędzia** > **opcje** z paska menu. W **opcje** okna dialogowego wybierz **edytora tekstów** > **C#**  > **styl kodu**  >  **Formatowanie**.
+Aby uzyskać dostęp do tej strony opcji, wybierz pozycję **narzędzia**  > **Opcje** na pasku menu. W oknie dialogowym **Opcje** wybierz **edytor tekstu**  > **C#**  > **styl kodu**  > **Formatowanie**.
 
 > [!TIP]
-> **Wcięcia**, **nowe wiersze**, **odstępy**, i **zawijania** podstrony każdego Wyświetla okno podglądu u dołu, który pokazuje wpływ każdej opcji. Aby użyć okno podglądu, wybierz opcję formatowania. Okno podglądu pokazano przykład odpowiadającego wybranej opcji. Po zmianie ustawienia przez wybranie przycisku radiowego lub okienka do zaznaczenia, aktualizacje okna (wersja zapoznawcza), aby pokazać efekt nowe ustawienie.
+> **Wcięcia**, **nowe wiersze**, **odstępy**i podstrony **zawijania** każdy wyświetlają okno podglądu u dołu, które pokazuje efekt poszczególnych opcji. Aby użyć okna podglądu, wybierz opcję formatowania. Okno podglądu zawiera przykład wybranej opcji. Po zmianie ustawienia przez wybranie przycisku radiowego lub pola wyboru okno podglądu zostanie zaktualizowane, aby pokazać efekt nowego ustawienia.
 
-## <a name="formatting-general-page"></a>Formatowanie strony (Ogólne)
+## <a name="formatting-general-page"></a>Strona formatowania (ogólna)
 
 ### <a name="general-settings"></a>Ustawienia ogólne
 
-Te ustawienia mają wpływ na *podczas* edytora kodu stosuje opcji formatowania do kodu.
+Te ustawienia mają wpływ na to, *kiedy* Edytor kodu stosuje opcje formatowania do kodu.
 
 |Etykieta|Opis|
 |-----------|-----------------|
-|**Formatuj automatycznie podczas pisania**|W przeciwnym wypadku **Formatuj instrukcję;** i **sformatuj blok w}** opcje zostaną wyłączone.|
-|**Automatycznie Formatuj instrukcję**|Po wybraniu formatuje instrukcji po ukończeniu zgodnie z opcjami formatowania, wybrany dla edytora.|
-|**Automatycznie sformatuj blok w}**|Po wybraniu formatów kodu bloki zgodnie z opcjami formatowania, wybrany dla edytora zaraz po wykonaniu bloku kodu.|
-|**Automatycznie Formatuj przy powrocie**|Po wybraniu formatowania tekstu po **Enter** jest wciśnięty, aby dopasować opcje formatowania, wybrany dla edytora.|
-|**Automatycznie Formatuj przy wklejaniu**|Po wybraniu formatuje tekst, który jest wklejany do edytora, aby dopasować opcje formatowania, wybrany dla edytora.|
+|**Automatycznie Formatuj przy wpisywaniu**|Po zaznaczeniu tej opcji, **instrukcja format na;** i **blok formatowania na}** opcje są wyłączone.|
+|**Automatyczne formatowanie instrukcji na;**|Po wybraniu formatuje instrukcje po zakończeniu zgodnie z opcjami formatowania wybranymi dla edytora.|
+|**Automatycznie Formatuj blok na}**|Po wybraniu format bloki kodu zgodnie z opcjami formatowania wybranych dla edytora zaraz po zakończeniu bloku kodu.|
+|**Automatycznie Formatuj przy zwrocie**|Gdy jest zaznaczone, formatuje tekst po naciśnięciu klawisza **Enter** , aby dopasować opcje formatowania wybrane dla edytora.|
+|**Automatycznie Formatuj przy wklejaniu**|Gdy ta opcja jest zaznaczona, formatuje tekst wklejony do edytora, aby dopasować opcje formatowania wybrane dla edytora.|
 
 ::: moniker range="vs-2019"
 
-Jeśli wcześniej zastosowane ustawienia stylu kodu dla C# plików przy użyciu **Formatuj dokument** w programie Visual Studio 2017, które funkcje są teraz dostępne jako polecenie [ **oczyszczania kodu** ](../code-styles-and-code-cleanup.md#apply-code-styles).
+Jeśli wcześniej zastosowano ustawienia stylu kodu dla C# plików przy użyciu polecenia **Formatuj dokument** w programie Visual Studio 2017, ta funkcja jest teraz dostępna jako [**oczyszczanie kodu**](../code-styles-and-code-cleanup.md#apply-code-styles).
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-### <a name="format-document-settings"></a>Format ustawień dokumentów
+### <a name="format-document-settings"></a>Formatowanie ustawień dokumentu
 
-Te ustawienia skonfigurować **Formatuj dokument** polecenia do wykonywania oczyszczania dodatkowy kod w pliku. Aby uzyskać więcej informacji na temat sposobu stosowania tych ustawień, zobacz [polecenia dokumentu w formacie](../code-styles-and-code-cleanup.md#apply-code-styles).
+Te ustawienia umożliwiają skonfigurowanie polecenia **Formatuj dokument** w celu przeprowadzenia dodatkowego czyszczenia kodu na pliku. Aby uzyskać więcej informacji o tym, jak te ustawienia są stosowane, zobacz [Formatowanie dokumentu — polecenie](../code-styles-and-code-cleanup.md#apply-code-styles).
 
-|Etykieta|Opis|Odpowiednie polecenie EditorConfig i narzędzia > Opcje zasad|
+|Etykieta|Opis|Odpowiednie reguły opcji > i narzędzi EditorConfig|
 |-----------|-----------------|-----------------|-----------------|
-|**Zastosuj wszystkie C# (wcięcia zawijania, odstępy) reguły formatowania**|**Formatuj dokument** polecenia zawsze poprawek formatowania problemów. Nie można zmienić tego ustawienia.| [Podstawowe opcje polecenia EditorConfig](../../ide/create-portable-custom-editor-options.md)<br/>[Opcje formatowania narzędzia .NET EditorConfig](../../ide/editorconfig-formatting-conventions.md)<br/><br/>**Narzędzia** > **opcje** > **edytora tekstów** > **C#**  > **Formatowanie**>[**wcięcia** lub **nowe wiersze** lub **odstępy** lub **zawijania**]|
-|**Wykonania oczyszczania kodu dodawania podczas formatowania**|Po wybraniu stosuje poprawki dla reguł określonych poniżej na **Edit.FormatDocument** polecenia.| Brak |
-|**Usuń niepotrzebne użycia**|Po wybraniu usuwa niepotrzebne `using` dyrektywy podczas **Edit.FormatDocument** zostanie wywołany.| Brak |
-|**Sortuj deklaracje Using**|Po wybraniu sortuje `using` dyrektywy podczas **Edit.FormatDocument** zostanie wywołany.| dotnet_sort_system_directives_first<br/><br/>**Narzędzia** > **opcje** > **edytora tekstów** > **C#**  > **zaawansowane** > **Miejsce "System" dyrektywy pierwsze podczas sortowania deklaracji Using** |
-|**Dodaj/Usuń nawiasy klamrowe dla instrukcji sterowania jednowierszowy**|Po wybraniu dodaje lub usuwa nawiasy klamrowe z instrukcji sterowania jednowierszowego podczas **Edit.FormatDocument** zostanie wywołany.| csharp_prefer_braces<br/><br/>**Narzędzia** > **opcje** > **edytora tekstów** > **C#**  > **styl kodu** > **Preferencje bloku kodu** > **Preferuj klamry** |
-|**Dodaj modyfikatory dostępności**|Po wybraniu dodaje brakujące modyfikatory dostępności podczas **Edit.FormatDocument** zostanie wywołany.| dotnet_style_require_accessibility_modifiers |
-|**Modyfikatory dostępności sortowania**|Po wybraniu sortuje modyfikatory dostępności podczas **Edit.FormatDocument** zostanie wywołany.| csharp_preferred_modifier_order<br/>visual_basic_preferred_modifier_order |
-|**Zastosuj preferencje treści wyrażenia lub blokowanie ich**|Po wybraniu konwertuje wyrażeniem elementów członkowskich, aby zablokować treści, lub na odwrót, gdy **Edit.FormatDocument** zostanie wywołany.| [Opcje polecenia EditorConfig wyrażeniem składowej](../../ide/editorconfig-language-conventions.md#expression-bodied-members)<br/><br/>**Narzędzia** > **opcje** > **edytora tekstów** > **C#**  > **styl kodu** > **Preferencje wyrażeń** > **Użyj treści wyrażenia dla metod, konstruktory itp.** |
-|**Zastosuj niejawnej/jawnej preferencjach**|Po wybraniu konwertuje `var` na typ jawny lub na odwrót, gdy **Edit.FormatDocument** zostanie wywołany.| [Opcje polecenia EditorConfig jawnego typu](../../ide/editorconfig-language-conventions.md#implicit-and-explicit-types)<br/><br/>**Narzędzia** > **opcje** > **edytora tekstów** > **C#**  > **styl kodu** > **preferencje "var"** |
-|**Zastosuj wbudowane zmienne preferencji "out"**|Po wybraniu inlines `out` zmienne gdzie to możliwe, gdy **Edit.FormatDocument** zostanie wywołany.| csharp_style_inlined_variable_declaration<br/><br/>**Narzędzia** > **opcje** > **edytora tekstów** > **C#**  > **styl kodu** > **Preferencje zmiennej** > **Preferuj śródwierszową deklarację zmiennej** |
-|**Zastosuj preferencjach języka/platformy**|Po wybraniu konwertuje typy języka na typy framework lub na odwrót, gdy **Edit.FormatDocument** zostanie wywołany.| dotnet_style_predefined_type_for_locals_parameters_members<br/>dotnet_style_predefined_type_for_member_access<br/><br/>**Narzędzia** > **opcje** > **edytora tekstów** > **C#**  > **styl kodu** > **wstępnie zdefiniowane preferencjach** |
-|**Zastosuj preferencje inicjowania obiektu/kolekcji**|Po wybraniu używa inicjatorów obiektów i kolekcji, jeśli jest to możliwe po **Edit.FormatDocument** zostanie wywołany.| dotnet_style_object_initializer<br/>dotnet_style_collection_initializer<br/><br/>**Narzędzia** > **opcje** > **edytora tekstów** > **C#**  > **styl kodu** > **Preferencje wyrażeń** > **Preferuj Inicjator obiektu** lub **Preferuj inicjator kolekcji** |
-|**Zastosuj "this." Preferencje kwalifikacji**|Po wybraniu stosuje `this.` preferencje podczas **Edit.FormatDocument** zostanie wywołany.| [Ta. Opcje polecenia EditorConfig kwalifikacji](../../ide/editorconfig-language-conventions.md#this-and-me)<br/><br/>**Narzędzia** > **opcje** > **edytora tekstów** > **C#**  > **styl kodu** > **preferencje "this".** |
-|**Wprowadź pola prywatne tylko do odczytu, gdy jest to możliwe**|Po wybraniu sprawia, że pola prywatne `readonly` gdzie to możliwe, gdy **Edit.FormatDocument** zostanie wywołany.| dotnet_style_readonly_field<br/><br/>**Narzędzia** > **opcje** > **edytora tekstów** > **C#**  > **styl kodu** > **Pola preferencje** > **Preferuj tylko do odczytu** |
-|**Usuń niepotrzebne rzutowanie**|Po wybraniu usuwa niepotrzebne rzutowanie, gdzie to możliwe po **Edit.FormatDocument** zostanie wywołany.| Brak |
-|**Usuń nieużywane zmienne**|Po wybraniu usuwa zmienne, które nie są używane, kiedy **Edit.FormatDocument** zostanie wywołany.| Brak |
+|**Zastosuj wszystkie C# reguły formatowania (wcięcia, zawijanie, odstępy)**|Polecenie **Formatuj dokument** zawsze rozwiązuje problemy związane z formatowaniem. Nie można zmienić tego ustawienia.| [Podstawowe opcje EditorConfig](../../ide/create-portable-custom-editor-options.md)<br/>[Opcje formatowania programu .NET EditorConfig](../../ide/editorconfig-formatting-conventions.md)<br/><br/>**Narzędzia**  > **Opcje**  > **edytora tekstów**  > **C#**  > **formatowania** > [**wcięcia** lub **nowe wiersze** , **odstępy** lub **Zawijanie**]|
+|**Wykonaj Dodawanie czyszczenia kodu podczas formatowania**|Po wybraniu programu stosuje poprawki dla reguł wymienionych poniżej w polecenie **Edit. FormatDocument** .| Brak |
+|**Usuń niepotrzebne użycia**|Po wybraniu powoduje usunięcie niepotrzebnych dyrektyw `using` podczas wyzwolenia **Edit. FormatDocument** .| Brak |
+|**Sortuj użycia**|Po wybraniu sortuje `using` dyrektywy, gdy zostanie wyzwolone polecenie **Edit. FormatDocument** .| dotnet_sort_system_directives_first<br/><br/>**Narzędzia**  > **Opcje**  > **edytora tekstów**  > **C#**  > **Zaawansowane** 0**Umieść dyrektywy "system" jako pierwsze podczas sortowania przy użyciu** |
+|**Dodawanie/usuwanie nawiasów klamrowych dla jednowierszowych instrukcji sterujących**|Po zaznaczeniu, dodaje lub usuwa nawiasy klamrowe z instrukcji kontroli jednowierszowej, gdy jest wyzwalany plik **Edit. FormatDocument** .| csharp_prefer_braces<br/><br/>**Narzędzia**  > **Opcje**  > **edytora tekstów**  > **C#**  > **stylu kodu** 0**Preferencje bloku kodu** 2**Preferuj nawiasy klamrowe** |
+|**Dodaj Modyfikatory dostępności**|Po wybraniu dodaje brakujące Modyfikatory dostępności podczas uruchamiania funkcji **Edit. FormatDocument** .| dotnet_style_require_accessibility_modifiers |
+|**Sortuj Modyfikatory dostępności**|Po wybraniu sortuje Modyfikatory dostępności podczas uruchamiania funkcji **Edit. FormatDocument** .| csharp_preferred_modifier_order<br/>visual_basic_preferred_modifier_order |
+|**Zastosuj preferencje dla treści wyrażenia/bloku**|Gdy ta opcja jest zaznaczona, konwertuje składowe wyrażeń w celu blokowania treści lub na odwrót, gdy zostanie wyzwolone polecenie **Edit. FormatDocument** .| [Opcje EditorConfig składowej w postaci wyrażeń](../../ide/editorconfig-language-conventions.md#expression-bodied-members)<br/><br/>**Narzędzia**  > **Opcje**  > **edytora tekstów**  > **C#**  > **stylu kodu** 0**preferencji wyrażenia** 2**użyć treści wyrażenia dla metod, konstruktorów itp.** |
+|**Zastosuj preferencje typu niejawnego/jawnego**|Gdy ta opcja jest zaznaczona, konwertuje `var` na typ jawny lub na odwrót, gdy zostanie wyzwolone polecenie **Edit. FormatDocument** .| [Opcje EditorConfig typu jawnego](../../ide/editorconfig-language-conventions.md#implicit-and-explicit-types)<br/><br/>**Narzędzia**  > **Opcje**  > **edytora tekstów**  > **C#**  > **stylu kodu** 0**Preferencje "var"** |
+|**Zastosuj preferencje wbudowanych zmiennych "out"**|Gdy ta pozycja jest zaznaczona, `out` zmienne, gdy jest to możliwe, gdy zostanie wyzwolone polecenie **Edit. FormatDocument** .| csharp_style_inlined_variable_declaration<br/><br/>**Narzędzia**  > **Opcje**  > **edytora tekstów**  > **C#**  > **stylu kodu** 0**preferencji zmiennej** 2 Preferuj niewbudowaną**deklarację zmiennej** |
+|**Zastosuj preferencje typu języka/platformy**|Gdy ta opcja jest zaznaczona, konwertuje typy języków na typy struktur lub na odwrót, gdy zostanie wyzwolone polecenie **Edit. FormatDocument** .| dotnet_style_predefined_type_for_locals_parameters_members<br/>dotnet_style_predefined_type_for_member_access<br/><br/>**Narzędzia**  > **Opcje**  > **edytora tekstów**  > **C#**  > **stylu kodu** 0**preferencji wstępnie zdefiniowanych typów** |
+|**Zastosuj preferencje inicjowania obiektów/kolekcji**|Po wybraniu program używa inicjatorów obiektów i kolekcji, gdy jest to możliwe, gdy zostanie wyzwolone polecenie **Edit. FormatDocument** .| dotnet_style_object_initializer<br/>dotnet_style_collection_initializer<br/><br/>**Narzędzia**  > **Opcje**  > **edytora tekstów**  > **C#**  > **stylu kodu** 0**preferencji wyrażenia** 2**Preferuj Inicjator obiektu** lub **Preferuj kolekcję Inicjator** |
+|**Zastosuj preferencje kwalifikacji "this."**|Po wybraniu programu stosuje się `this.` preferencji podczas wyzwalania **Edit. FormatDocument** .| [Ta. Opcje EditorConfig kwalifikacji](../../ide/editorconfig-language-conventions.md#this-and-me)<br/><br/>**Narzędzia**  > **Opcje**  > **edytora tekstów**  > **C#**  > **stylu kodu** 0**Preferencje "this."** |
+|**Ustaw prywatne pola jako tylko do odczytu, gdy jest to możliwe**|W przypadku wybrania pola prywatne `readonly`, gdy jest to możliwe, gdy zostanie wyzwolone polecenie **Edit. FormatDocument** .| dotnet_style_readonly_field<br/><br/>**Narzędzia**  > **Opcje**  > **edytora tekstów**  > **C#**  > **stylu kodu** 0**preferencji pola** 2**Preferuj tylko do odczytu** |
+|**Usuń niepotrzebne rzuty**|Gdy jest zaznaczone, program usuwa zbędne rzuty, gdy jest to możliwe, gdy zostanie wyzwolone polecenie **Edit. FormatDocument** .| Brak |
+|**Usuń nieużywane zmienne**|Po zaznaczeniu usuwa zmienne, które nie są używane podczas uruchamiania **Edit. FormatDocument** .| Brak |
 
-![Ustawienia oczyszczania kodu dla języka C# w programie Visual Studio](media/format-document-settings.png)
+![Ustawienia czyszczenia kodu dla C# programu Visual Studio](media/format-document-settings.png)
 
 ::: moniker-end
 
-## <a name="indentation-page"></a>Strona wcięć
+## <a name="indentation-page"></a>Strona wcięcia
 
-Opcje wcięcia na tej stronie są stosowane podczas automatycznego formatowania kodu. Jeden jest przykładem podczas automatycznego formatowania kodu, gdy Wklej kod do pliku podczas **automatycznie Formatuj przy wklejaniu** jest zaznaczone. ( **Automatycznie Formatuj przy wklejaniu** opcji podlega **formatowanie** > **ogólne**.)
+Opcje wcięć na tej stronie są stosowane, gdy kod jest formatowany automatycznie. Przykładem, gdy kod jest automatycznie formatowany jest podczas wklejania kodu do pliku, podczas gdy jest zaznaczone **Automatyczne formatowanie podczas wklejania** . (Opcja **automatycznego formatowania przy wklejaniu** jest w obszarze **Formatowanie**  > **Ogólne**).
 
-![C#Opcje wcięcia edytora tekstu w programie Visual Studio](media/csharp-indentation-options.png)
+![C#Opcje wcięć edytora tekstu w programie Visual Studio](media/csharp-indentation-options.png)
 
 > [!TIP]
-> Dostępne są również opcje wcięcia w **edytora tekstów** > **C#**  > **karty** Strona opcji. Te opcje tylko określić, gdzie edytora kodu umieszcza kursor po naciśnięciu klawisza **Enter** na końcu wiersza.
+> Dostępne są również opcje wcięć w **edytorze tekstu**  > **C#** stronie opcje**kart**  > . Te opcje określają tylko miejsce, w którym Edytor kodu umieszcza kursor po naciśnięciu klawisza **Enter** na końcu wiersza.
 >
-> ![C#Edytor tekstu karty Opcje w programie Visual Studio](media/csharp-tabs-options.png)
+> ![C#Opcje kart edytora tekstu w programie Visual Studio](media/csharp-tabs-options.png)
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Okno dialogowe Ogólne, środowisko, opcje](../../ide/reference/general-environment-options-dialog-box.md)
+- [Ogólne, środowisko, Opcje — okno dialogowe](../../ide/reference/general-environment-options-dialog-box.md)

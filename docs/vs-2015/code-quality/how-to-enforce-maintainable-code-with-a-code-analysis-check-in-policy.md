@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Wymuszanie kodu łatwego w utrzymaniu za pomocą zasad analizy kodu ewidencjonowania | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: wymuszanie kodu utrzymującego za pomocą zasad ewidencjonowania analizy kodu | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -8,57 +8,56 @@ helpviewer_keywords:
 - code analysis, check-in policies
 ms.assetid: d1b3b04f-4dd9-40e6-b2d4-b414d33fb647
 caps.latest.revision: 10
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 27593a450f7c2a1b34c1c84bc1d4e7ea5bb5919f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0d54ca9a31e8a1bbd2496bf8689a119e53580c79
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68142254"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660218"
 ---
-# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Instrukcje: Wymuszanie kodu łatwego w utrzymaniu za pomocą zasad ewidencjonowania analizy kodu
+# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Porady: wymuszanie kodu za pomocą zasad ewidencjonowania analizy kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Deweloperzy mogą używać narzędzia metryki kodu do mierzenie złożoności i łatwości konserwacji kodu, ale ich nie można wywołać metryki kodu jako części zasad ewidencjonowania. Jednak zespół można włączyć reguły analizy kodu Sprawdź zgodność kodu z normami metryki kodu i Wymuszanie reguł za pomocą zasad ewidencjonowania. Aby uzyskać więcej informacji na temat metryki kodu, zobacz [wartości metryk kodów](../code-quality/code-metrics-values.md).  
-  
- Deweloperzy mogą włączać głębokość dziedziczenia, sprzężenia klas, indeks łatwości utrzymania i złożoności wymuszanie kodu łatwego w utrzymaniu za pomocą zasad ewidencjonowania analizy kodu. Wszystkie cztery te zasady znajdują się w kategorii "Reguły utrzymania kodu" w edytorze zasad analizy kodu.  
-  
- Administratorzy wersji kontrola dla [!INCLUDE[esprfound](../includes/esprfound-md.md)] można dodać reguły utrzymania kodu analizy kodu do wymagań zasad ewidencjonowania. Te ewidencjonowania zasadami wymagających deweloperów uruchomić analizę kodu na podstawie tych reguł zmian przed zainicjowaniem ewidencjonowania.  
-  
-### <a name="to-open-the-code-analysis-policy-editor"></a>Aby otworzyć Edytor zasad analizy kodu  
-  
-1. W **Team Explorer**, kliknij prawym przyciskiem myszy projekt zespołowy, kliknij przycisk **ustawienia projektu zespołowego**, a następnie kliknij przycisk **kontroli źródła**.  
-  
-     **Kontroli źródła** pojawi się okno dialogowe.  
-  
-2. Na **zasad ewidencjonowania** kartę, a następnie kliknij przycisk **Dodaj**.  
-  
-     **Dodaj zasady ewidencjonowania** pojawi się okno dialogowe.  
-  
-3. W **zasad ewidencjonowania** listy wybierz **analizy kodu** pole wyboru, a następnie kliknij przycisk **OK**.  
-  
-     **Edytor zasad analizy kodu** pojawi się okno dialogowe.  
-  
-### <a name="to-enable-code-analysis-maintainability-rules"></a>Aby włączyć reguły utrzymania kodu analizy kodu  
-  
-1. W **Edytor zasad analizy kodu** dialogowego **ustawienia reguły**, rozwiń węzeł **reguły utrzymania kodu** węzła.  
-  
-2. Zaznacz pola wyboru dla następujących reguł:  
-  
-    - Głębokość dziedziczenia: **CA1501 AvoidExcessiveInheritance** -progu: Ostrzeżenie o więcej niż 5 poziomów w głąb  
-  
-    - Złożoność: **CA1502 AvoidExcessiveComplexity** -progu: Ostrzeżenie na więcej niż 25  
-  
-    - Indeks łatwości utrzymania: **CA1505 AvoidUnmaintainableCode** -progu: Ostrzeżenie w mniej niż 20  
-  
-    - Sprzężenia klas: **CA1506 AvoidExcessiveClassCoupling** -progu: Ostrzeżenie na więcej niż 80 dla klasy i więcej niż 30 dla metody  
-  
-    - Ponadto naruszenie reguły, aby uniemożliwić kompilacji, wybierz **Traktuj ostrzeżenie jako błąd** pole wyboru obok opis reguły.  
-  
-3. Kliknij przycisk **OK**. Nowe zasady ewidencjonowania dotyczy teraz przyszłych zaewidencjonowania.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Wartości metryk kodów](../code-quality/code-metrics-values.md)   
- [Tworzenie zasad zaewidencjonowania analizy kodu i korzystanie z nich](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
+Deweloperzy mogą używać narzędzia metryki kodu do mierzenia stopnia złożoności i utrzymania kodu, ale nie mogą wywoływać metryk kodu w ramach zasad ewidencjonowania. Jednak zespół może włączyć reguły analizy kodu, które weryfikują zgodność kodu z wzorcem metryk kodu i wymuszają reguły przy użyciu zasad ewidencjonowania. Aby uzyskać więcej informacji o metrykach kodu, zobacz [wartości metryk kodu](../code-quality/code-metrics-values.md).
+
+ Deweloperzy mogą włączać głębokość dziedziczenia, sprzęgania klas, indeks utrzymania i reguły złożoności, aby wymusić obsługę kodu za pomocą zasad ewidencjonowania analizy kodu. Wszystkie cztery te reguły są dostępne w kategorii "reguły utrzymania" w edytorze zasad analizy kodu.
+
+ Administratorzy kontroli wersji dla [!INCLUDE[esprfound](../includes/esprfound-md.md)] mogą dodać reguły utrzymania analizy kodu do wymagań zasad ewidencjonowania. Te zasady ewidencjonowania wymagają od deweloperów uruchomienia analizy kodu na podstawie tych zmian reguł przed zainicjowaniem zaewidencjonowania.
+
+### <a name="to-open-the-code-analysis-policy-editor"></a>Aby otworzyć Edytor zasad analizy kodu
+
+1. W **Team Explorer**kliknij prawym przyciskiem myszy projekt zespołowy, kliknij pozycję **Ustawienia projektu zespołowego**, a następnie kliknij pozycję **Kontrola źródła**.
+
+     Zostanie wyświetlone okno dialogowe **Kontrola źródła** .
+
+2. Na karcie **zasady ewidencjonowania** i kliknij przycisk **Dodaj**.
+
+     Zostanie wyświetlone okno dialogowe **Dodawanie zasad ewidencjonowania** .
+
+3. Na liście **zasad ewidencjonowania** zaznacz pole wyboru **Analiza kodu** , a następnie kliknij przycisk **OK**.
+
+     Zostanie wyświetlone okno dialogowe **Edytor zasad analizy kodu** .
+
+### <a name="to-enable-code-analysis-maintainability-rules"></a>Aby włączyć reguły utrzymania analizy kodu
+
+1. W oknie dialogowym **Edytor zasad analizy kodu** w obszarze **Ustawienia reguły**rozwiń węzeł **reguły utrzymania** .
+
+2. Zaznacz pola wyboru dla następujących reguł:
+
+    - Głębokość dziedziczenia: **CA1501 AvoidExcessiveInheritance** — próg: ostrzeżenie na ponad 5 poziomach głębokości
+
+    - Złożoność: **CA1502 AvoidExcessiveComplexity** — próg: Ostrzeżenie o więcej niż 25
+
+    - Indeks utrzymania: **CA1505 AvoidUnmaintainableCode** — próg: ostrzeżenie przy mniej niż 20
+
+    - Sprzęganie klas: **CA1506 AvoidExcessiveClassCoupling** -Threshold: Ostrzeżenie o więcej niż 80 dla klasy i ponad 30 dla metody
+
+    - Ponadto, jeśli chcesz, aby naruszenie reguły uniemożliwiło kompilację, zaznacz pole wyboru **Traktuj ostrzeżenie jako błąd** obok opisu reguły.
+
+3. Kliknij przycisk **OK**. Nowe zasady ewidencjonowania mają teraz zastosowanie do przyszłych zaewidencjonowania.
+
+## <a name="see-also"></a>Zobacz też
+ [Wartości metryk kodu](../code-quality/code-metrics-values.md) [tworzenia i używania zasad zaewidencjonowania analizy kodu](../code-quality/creating-and-using-code-analysis-check-in-policies.md)

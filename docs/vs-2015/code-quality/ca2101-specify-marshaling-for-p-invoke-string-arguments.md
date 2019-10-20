@@ -1,5 +1,5 @@
 ---
-title: 'CA2101: Należy określić marshaling dla argumentów ciągu P-Invoke | Dokumentacja firmy Microsoft'
+title: 'CA2101: Określ kierowanie dla argumentów ciągu P-Invoke | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,41 +12,41 @@ helpviewer_keywords:
 - SpecifyMarshalingForPInvokeStringArguments
 ms.assetid: 9d1abfc3-d320-41e0-9f6e-60cefe6ffe1b
 caps.latest.revision: 21
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 11916609f2efa9c0b6e208548ba51795bd276015
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 57b7214058baf63ffa5e3ee2c9a982bf411b60e7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68154396"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652184"
 ---
-# <a name="ca2101-specify-marshaling-for-pinvoke-string-arguments"></a>CA2101: Określ kierowanie dla argumentów ciągu P/Invoke
+# <a name="ca2101-specify-marshaling-for-pinvoke-string-arguments"></a>CA2101: Należy określić marshaling dla argumentów typu string P/Invoke
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|SpecifyMarshalingForPInvokeStringArguments|
 |CheckId|CA2101|
-|Kategoria|Microsoft.Globalization|
-|Zmiana kluczowa|Bez podziału|
+|Kategoria|Microsoft. Globalizacja|
+|Zmiana kluczowa|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
- Wywołania platformy elementu członkowskiego umożliwia częściowo zaufanych wywołań, ma parametr typu ciąg, a nie kieruje jawnie tego ciągu.
+ Element członkowski wywołania platformy zezwala na częściowo zaufane obiekty wywołujące, ma parametr String i nie jest jawnie zorganizowany przez ciąg.
 
 ## <a name="rule-description"></a>Opis reguły
- Podczas konwersji z Unicode ANSI jest to możliwe, że nie wszystkie znaki Unicode mogą być reprezentowane w określonej strony kodowej ANSI. *Mapowanie najlepszego dopasowania* próbuje rozwiązać ten problem, zastępując znak znak, który nie może być reprezentowana. Używanie tej funkcji może spowodować potencjalne luki w zabezpieczeniach, ponieważ nie można kontrolować znak, który jest wybierany. Na przykład złośliwy kod celowo utworzyć ciąg Unicode, który zawiera znaki, które nie znajdują się na stronie konkretnego kodu, które są konwertowane na system plików, znaków specjalnych, takich jak ".." lub "/". Należy zauważyć, że sprawdzanie zabezpieczeń dla znaków specjalnych często występują przed ten ciąg jest konwertowany na ANSI.
+ W przypadku konwersji z formatu Unicode na ANSI, istnieje możliwość, że nie wszystkie znaki Unicode mogą być reprezentowane na określonej stronie kodowej ANSI. *Najbardziej pasujące mapowanie* próbuje rozwiązać ten problem przez podstawianie znaku dla znaku, którego nie można reprezentować. Korzystanie z tej funkcji może spowodować potencjalną lukę w zabezpieczeniach, ponieważ nie można kontrolować wybranego znaku. Na przykład złośliwy kod może celowo utworzyć ciąg Unicode, który zawiera znaki, które nie znajdują się na określonej stronie kodowej, które są konwertowane na znaki specjalne systemu plików, takie jak ".." lub "/". Należy zauważyć, że sprawdzanie zabezpieczeń w przypadku znaków specjalnych często występuje przed konwersją ciągu na ANSI.
 
- Mapowanie najlepszego dopasowania jest ustawieniem domyślnym dla niezarządzanych konwersji WChar do MBajtów. Chyba że jawnie wyłącz mapowanie najlepszego dopasowania, Twój kod może zawierać luki w zabezpieczeniach możliwe do wykorzystania z powodu tego problemu.
+ Mapowanie najlepiej dopasowane jest wartością domyślną dla konwersji niezarządzanej, WChar do MB. O ile nie wyłączysz jawnie mapowania najlepszego dopasowania, kod może zawierać lukę w zabezpieczeniach, z powodu tego problemu.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, kieruje jawnie tego ciągu typów danych.
+ Aby naprawić naruszenie tej zasady, należy jawnie zorganizować typy danych ciągu.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Nie pomijaj ostrzeżeń dla tej reguły.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład przedstawia metodę, która narusza tę regułę, a następnie pokazano, jak naprawić naruszenia.
+ Poniższy przykład przedstawia metodę, która narusza tę regułę, a następnie pokazuje, jak naprawić naruszenie.
 
  [!code-csharp[FxCop.Security.PinvokeAnsiUnicode#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.PinvokeAnsiUnicode/cs/FxCop.Security.PinvokeAnsiUnicode.cs#1)]

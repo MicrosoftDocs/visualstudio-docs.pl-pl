@@ -1,5 +1,5 @@
 ---
-title: 'CA1404: Wywołaj metodę GetLastError natychmiast po P-Invoke | Dokumentacja firmy Microsoft'
+title: 'CA1404: wywołanie metody GetLastError natychmiast po wywołaniu P-Invoke | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,33 +12,33 @@ helpviewer_keywords:
 - CA1404
 ms.assetid: 52ae9eff-50f9-4b2f-8039-ca7e49fba88e
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: e33c724d2cebb9423f2e475d95bf42ac5e2cc966
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2664837c17894f7ca336d650a7e08e21c45d955f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68200314"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661328"
 ---
-# <a name="ca1404-call-getlasterror-immediately-after-pinvoke"></a>CA1404: Wywołaj metodę GetLastError bezpośrednio po elemencie P/Invoke
+# <a name="ca1404-call-getlasterror-immediately-after-pinvoke"></a>CA1404: Należy wywołać GetLastError natychmiast po P/Invoke
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|CallGetLastErrorImmediatelyAfterPInvoke|
 |CheckId|CA1404|
-|Kategoria|Microsoft.Interoperability|
-|Zmiana kluczowa|Bez podziału|
+|Kategoria|Microsoft. współdziałanie|
+|Zmiana kluczowa|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
- Połączenie jest nawiązywane w przypadku <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A?displayProperty=fullName> metody lub równoważne Win32 `GetLastError` funkcji i wywołanie, które pochodzą bezpośrednio przed nie jest to platforma wywołania metody.
+ Wykonano wywołanie metody <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A?displayProperty=fullName> lub równoważnej funkcji `GetLastError` Win32, a wywołanie, które jest bezpośrednio przed nie jest metodą wywołania platformy.
 
 ## <a name="rule-description"></a>Opis reguły
- Platforma wywołania metody uzyskuje dostęp do niezarządzanego kodu i jest definiowana za pomocą `Declare` — słowo kluczowe w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] lub <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> atrybutu. Ogólnie rzecz biorąc, w przypadku awarii funkcji niezarządzanych wywołanie Win32 `SetLastError` funkcję, aby ustawić kod błędu, który jest skojarzony z określonym błędem. Obiekt wywołujący zakończonej niepowodzeniem funkcji wywołuje funkcję Win32 `GetLastError` funkcję, aby pobrać kod błędu i ustalić przyczynę niepowodzenia. Kod błędu jest przechowywany w zasadzie na wątek i jest zastępowany przy następnym wywołaniu `SetLastError`. Po wywołanie nie powiodło się platformy wywołania metody, kodu zarządzanego, mogą pobrać kod błędu przez wywołanie metody <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> metody. Ponieważ kod błędu mogą zostać zastąpione przez wywołania wewnętrznego z innych metod biblioteki zarządzanej klasy `GetLastError` lub <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> metoda powinna być wywoływana bezpośrednio, po wywołaniu metody wywołania platformy.
+ Metoda Invoke platformy uzyskuje dostęp do kodu niezarządzanego i jest definiowana za pomocą słowa kluczowego `Declare` w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] lub atrybutu <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. Ogólnie rzecz biorąc, w przypadku awarii funkcje niezarządzane wywołują funkcję Win32 `SetLastError`, aby ustawić kod błędu, który jest skojarzony z błędem. Obiekt wywołujący nieudanej funkcji wywołuje funkcję Win32 `GetLastError`, aby pobrać kod błędu i określić przyczynę niepowodzenia. Kod błędu jest obsługiwany dla każdego wątku i jest zastępowany przez następne wywołanie `SetLastError`. Po wywołaniu metody wywołania niepowodzenia platformy kod zarządzany może pobrać kod błędu przez wywołanie metody <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A>. Ponieważ kod błędu może zostać zastąpiony przez wywołania wewnętrzne z innych metod biblioteki zarządzanej klasy, Metoda `GetLastError` lub <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> powinna być wywoływana natychmiast po wywołaniu metody przez platformę.
 
- Reguła ignoruje wywołania do następujących zarządzanych elementów członkowskich, kiedy występują one między wywołań do platformy wywołania metod i wywołanie <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A>. Te elementy członkowskie nie zmieniaj błąd kodu i są przydatne do określenia sukcesu niektóre platformy wywołania wywołania metody.
+ Reguła ignoruje wywołania następujących elementów zarządzanych, gdy występują między wywołaniem metody wywołania platformy i wywołaniem do <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A>. Te elementy członkowskie nie zmieniają kodu błędu i są przydatne do określania sukcesu niektórych wywołań metody wywołania.
 
 - <xref:System.IntPtr.Zero?displayProperty=fullName>
 
@@ -49,24 +49,24 @@ ms.locfileid: "68200314"
 - <xref:System.Runtime.InteropServices.SafeHandle.IsInvalid%2A?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, Przenieś wywołanie <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> tak, aby od razu następuje wywołanie platformy wywołania metody.
+ Aby naprawić naruszenie tej reguły, Przenieś wywołanie do <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> tak, aby od razu podążać za wywołaniem metody wywołania platformy.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Pomijaj ostrzeżeń dla tej reguły, jeśli kod między platformę wywołania wywołania metody można bezpiecznie i <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> wywołanie metody nie można jawnie lub niejawnie spowodować, że kod błędu, aby zmienić.
+ Można bezpiecznie pominąć ostrzeżenie z tej reguły, jeśli kod między wywołaniem metody wywoływanej przez platformę i wywołanie metody <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> nie może jawnie lub niejawnie spowodować zmiany kodu błędu.
 
 ## <a name="example"></a>Przykład
- Poniższy kod przedstawia metodę, która narusza regułę określającą, a metoda, która spełnia reguły.
+ Poniższy przykład pokazuje metodę, która narusza regułę i metodę, która spełnia kryteria.
 
  [!code-csharp[FxCop.Interoperability.LastErrorPInvoke#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Interoperability.LastErrorPInvoke/cs/FxCop.Interoperability.LastErrorPInvoke.cs#1)]
  [!code-vb[FxCop.Interoperability.LastErrorPInvoke#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Interoperability.LastErrorPInvoke/vb/FxCop.Interoperability.LastErrorPInvoke.vb#1)]
 
 ## <a name="related-rules"></a>Powiązane reguły
- [CA1060: Przenieś P/Invokes do klasy NativeMethods](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)
+ [CA1060: Przenieś wywołania P/Invoke do klasy NativeMethods](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)
 
  [CA1400: Powinny istnieć punkty wejścia P/Invoke](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)
 
- [CA1401: P/Invokes nie powinny być widoczne](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
+ [CA1401: Metody P/Invoke nie powinny być widoczne](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
 
- [CA2101: Należy określić marshaling dla argumentów ciągu P/Invoke](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
+ [CA2101: Określ marshaling dla argumentów ciągu wywołania P/Invoke](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
 
- [CA2205: Użyj zarządzanych odpowiedników funkcji Win32 API](../code-quality/ca2205-use-managed-equivalents-of-win32-api.md)
+ [CA2205: Użyj zarządzanych odpowiedników interfejsu API Win32](../code-quality/ca2205-use-managed-equivalents-of-win32-api.md)

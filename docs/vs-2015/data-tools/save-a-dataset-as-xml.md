@@ -1,5 +1,5 @@
 ---
-title: Zapisywanie zestawu danych jako XML | Dokumentacja firmy Microsoft
+title: Zapisywanie zestawu danych jako XML | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -16,38 +16,38 @@ helpviewer_keywords:
 - saving data
 ms.assetid: 68b8327c-ae05-49ff-b9ba-99183e70b52c
 caps.latest.revision: 14
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2e4331b59c532e681c7e10ab8e43b953e9f72b18
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e64c3c17934e5cdc5d6ca1f510c7164b86a77c1a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62559570"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652863"
 ---
 # <a name="save-a-dataset-as-xml"></a>Zapisywanie zestawu danych jako kodu XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Przez wywołanie metody dostępne metody XML zestawu danych można uzyskać dostępu do danych XML w zestawie danych. Aby zapisać dane w formacie XML, należy wywołać albo <xref:System.Data.DataSet.GetXml%2A> metody lub <xref:System.Data.DataSet.WriteXml%2A> metody <xref:System.Data.DataSet>.  
-  
- Wywoływanie <xref:System.Data.DataSet.GetXml%2A> metoda zwraca ciąg, który zawiera dane ze wszystkich tabel danych w zestawie danych, który jest w formacie XML.  
-  
- Wywoływanie <xref:System.Data.DataSet.WriteXml%2A> metoda wysyła dane w formacie XML do pliku, który określisz.  
-  
-### <a name="to-save-the-data-in-a-dataset-as-xml-to-a-variable"></a>Aby zapisać dane w zestawie danych jako XML do zmiennej  
-  
-- <xref:System.Data.DataSet.GetXml%2A> Metoda zwraca <xref:System.String>. Oznacza to, że Deklarujesz zmienną typu <xref:System.String> i przypisać jej wyniki <xref:System.Data.DataSet.GetXml%2A> metody.  
-  
+Dostęp do danych XML w zestawie danych można uzyskać, wywołując dostępne metody XML dla zestawu danych. Aby zapisać dane w formacie XML, można wywołać metodę <xref:System.Data.DataSet.GetXml%2A> lub <xref:System.Data.DataSet.WriteXml%2A> metodę <xref:System.Data.DataSet>.
+
+ Wywołanie metody <xref:System.Data.DataSet.GetXml%2A> zwraca ciąg, który zawiera dane ze wszystkich tabel danych w zestawie danych, który jest sformatowany jako XML.
+
+ Wywołanie metody <xref:System.Data.DataSet.WriteXml%2A> wysyła dane sformatowane w formacie XML do określonego pliku.
+
+### <a name="to-save-the-data-in-a-dataset-as-xml-to-a-variable"></a>Aby zapisać dane w zestawie danych jako XML do zmiennej
+
+- Metoda <xref:System.Data.DataSet.GetXml%2A> zwraca <xref:System.String>. oznacza to, że deklarujesz zmienną typu <xref:System.String> i przypiszesz jej wyniki metody <xref:System.Data.DataSet.GetXml%2A>.
+
      [!code-csharp[VbRaddataSaving#12](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Class1.cs#12)]
-     [!code-vb[VbRaddataSaving#12](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb#12)]  
-  
-### <a name="to-save-the-data-in-a-dataset-as-xml-to-a-file"></a>Aby zapisać dane w zestawie danych jako XML do pliku  
-  
-- <xref:System.Data.DataSet.WriteXml%2A> Metoda ma kilka przeciążeń. Poniższy kod przedstawia sposób zapisywania danych do pliku. Zadeklaruj zmienną i przypisać ją prawidłową ścieżkę, aby zapisać plik.  
-  
+     [!code-vb[VbRaddataSaving#12](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb#12)]
+
+### <a name="to-save-the-data-in-a-dataset-as-xml-to-a-file"></a>Aby zapisać dane w zestawie danych jako XML do pliku
+
+- Metoda <xref:System.Data.DataSet.WriteXml%2A> ma kilka przeciążeń. Poniższy kod przedstawia sposób zapisywania danych do pliku. Zadeklaruj zmienną i przypisz ją do prawidłowej ścieżki, aby zapisać plik w.
+
      [!code-csharp[VbRaddataSaving#13](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Class1.cs#13)]
-     [!code-vb[VbRaddataSaving#13](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb#13)]  
-  
-## <a name="see-also"></a>Zobacz też  
+     [!code-vb[VbRaddataSaving#13](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb#13)]
+
+## <a name="see-also"></a>Zobacz też
  [Zapisywanie danych z powrotem w bazie danych](../data-tools/save-data-back-to-the-database.md)

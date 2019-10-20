@@ -2,33 +2,33 @@
 title: Osadzanie diagramu w formularzu systemu Windows
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b2ed12175e986178d43ffe5e3da8b85e2ab22e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b0f6bbcfdfcf57902979d73b0181547cf779777b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62994578"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653751"
 ---
 # <a name="embed-a-diagram-in-a-windows-form"></a>Osadzanie diagramu w formularzu systemu Windows
 
-DSL diagram można osadzić w kontrolce Windows, która jest wyświetlana w oknie programu Visual Studio.
+Diagram DSL można osadzić w kontrolce systemu Windows, która jest wyświetlana w oknie programu Visual Studio.
 
-## <a name="embed-a-dsl-diagram-in-a-windows-control"></a>Osadzanie diagramu DSL w kontrolce Windows
+## <a name="embed-a-dsl-diagram-in-a-windows-control"></a>Osadzanie diagramu DSL w kontrolce systemu Windows
 
-1. Dodaj nową **kontrolki użytkownika** pliku do projektu DslPackage.
+1. Dodaj nowy plik **kontrolki użytkownika** do projektu DslPackage.
 
-2. Dodaj kontrolkę panelu do kontrolki użytkownika. Ten panel będzie zawierać DSL Diagram.
+2. Dodaj kontrolkę panel do kontrolki użytkownika. Ten panel będzie zawierać diagram DSL.
 
-     Dodaj inne kontrolki, których potrzebujesz.
+     Dodaj inne wymagane kontrolki.
 
-     Ustaw właściwości zakotwiczenia formantów.
+     Ustaw właściwości zakotwiczenia kontrolek.
 
-3. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy plik kontrolki użytkownika, a następnie kliknij przycisk **Wyświetl kod**. Dodaj ten konstruktor i zmiennej w kodzie:
+3. W Eksplorator rozwiązań kliknij prawym przyciskiem myszy plik kontrolki użytkownika, a następnie kliknij polecenie **Wyświetl kod**. Dodaj ten Konstruktor i zmienną do kodu:
 
     ```csharp
     internal UserControl1(MyDSLDocView docView, Control content)
@@ -40,7 +40,7 @@ DSL diagram można osadzić w kontrolce Windows, która jest wyświetlana w okni
     private MyDSLDocView docView;
     ```
 
-4. Dodaj nowy plik do projektu DslPackage, o następującej zawartości:
+4. Dodaj nowy plik do projektu DslPackage z następującą zawartością:
 
     ```csharp
     using System.Windows.Forms;
@@ -63,13 +63,13 @@ DSL diagram można osadzić w kontrolce Windows, która jest wyświetlana w okni
     } } } }
     ```
 
-5. Aby przetestować język DSL, naciśnij klawisz **F5** , a następnie otwórz przykładowy plik modelu. Diagram pojawia się wewnątrz formantu. Przybornik i inne funkcje działają normalnie.
+5. Aby przetestować DSL, naciśnij klawisz **F5** , a następnie otwórz przykładowy plik modelu. Diagram zostanie wyświetlony wewnątrz kontrolki. Przybornik i inne funkcje działają normalnie.
 
-## <a name="update-the-form-using-store-events"></a>Aktualizowanie formularza przy użyciu magazynu zdarzeń
+## <a name="update-the-form-using-store-events"></a>Aktualizowanie formularza przy użyciu zdarzeń ze sklepu
 
-1. W Projektancie formularza należy dodać **ListBox** o nazwie `listBox1`. Spowoduje to wyświetlenie listy elementów w modelu. Jest zsynchronizowany z modelu przy użyciu *przechowywania zdarzeń*. Aby uzyskać więcej informacji, zobacz [obsługi propagowanie zmian poza Model zdarzeń](../modeling/event-handlers-propagate-changes-outside-the-model.md).
+1. W projektancie formularzy Dodaj **pole listy** o nazwie `listBox1`. Spowoduje to wyświetlenie listy elementów w modelu. Jest on synchronizowany z modelem przy użyciu *zdarzeń ze sklepu*. Aby uzyskać więcej informacji, zobacz [programy obsługi zdarzeń propagują zmiany poza modelem](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
-2. W pliku kodu niestandardowego zastąpić dalsze metody do klasy DocView:
+2. W pliku kodu niestandardowego Zastąp dalsze metody do klasy DocView:
 
     ```csharp
     partial class MyDSLDocView
@@ -110,7 +110,7 @@ DSL diagram można osadzić w kontrolce Windows, która jest wyświetlana w okni
      }
     ```
 
-3. W kodzie kontrolki użytkownika należy wstawić metody do nasłuchiwania pod kątem elementów dodawane lub usuwane:
+3. W kodzie związanym z kontrolką użytkownika Wstaw metody do nasłuchiwania dla elementów dodanych i usuniętych:
 
     ```csharp
     public partial class UserControl1 : UserControl { ...
@@ -137,9 +137,9 @@ DSL diagram można osadzić w kontrolce Windows, która jest wyświetlana w okni
     }
     ```
 
-4. Aby przetestować język DSL, naciśnij klawisz **F5** i jest w doświadczalnym wystąpieniu programu Visual Studio, Otwórz przykładowy plik modelu.
+4. Aby przetestować DSL, naciśnij klawisz **F5** i w eksperymentalnym wystąpieniu programu Visual Studio Otwórz przykładowy plik modelu.
 
-     Należy zauważyć, że pole listy to lista elementów w modelu, i że jest on poprawny po albo i po Cofnij i ponów.
+     Zwróć uwagę, że pole listy zawiera listę elementów w modelu i że jest poprawna po dodaniu lub usunięciu, a następnie Cofnij i wykonaj ponownie.
 
 ## <a name="see-also"></a>Zobacz także
 

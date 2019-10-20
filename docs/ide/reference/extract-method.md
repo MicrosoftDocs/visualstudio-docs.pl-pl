@@ -3,8 +3,8 @@ title: Wyodrębnij metodę
 description: Zmień fragment kodu na własny metodę, wybierając kod i wpisując CTRL + R, Ctrl + M.
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 f1_keywords:
 - vs.csharp.refactoring.extractmethod
@@ -13,53 +13,53 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: a764fd0d95696866e914ec76a560a49d641acb47
-ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
+ms.openlocfilehash: a1ec6ca273f873c82a1bb2c730a9288b5e2ae4ed
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68483671"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654392"
 ---
-# <a name="extract-a-method-refactoring"></a>Wyodrębnij także refaktoryzację — metoda
+# <a name="extract-a-method-refactoring"></a>Wyodrębnianie metody refaktoryzacji
 
-Ta Refaktoryzacja mają zastosowanie do:
+To Refaktoryzacja dotyczy:
 
 - C#
 
 - Visual Basic
 
-**Whatman** Umożliwia włączenie fragmentu kodu w osobnym metodzie.
+**Co:** Umożliwia włączenie fragmentu kodu w osobnym metodzie.
 
-**Czasie** Istnieje fragment istniejącego kodu w pewnej metodzie, który musi zostać wywołany z innej metody.
+**Kiedy:** Istnieje fragment istniejącego kodu w pewnej metodzie, który musi zostać wywołany z innej metody.
 
-**Zalet** Można skopiować/wkleić ten kod, ale może to prowadzić do duplikacji. Lepszym rozwiązaniem jest Refaktoryzacja tego fragmentu do jego własnej metody, która może być wywoływany za darmo przez jakąkolwiek inną metodę.
+**Dlaczego:** Można skopiować/wkleić ten kod, ale może to prowadzić do duplikacji. Lepszym rozwiązaniem jest Refaktoryzacja tego fragmentu do własnej metody, która może być wywoływana swobodnie przez jakąkolwiek inną metodę.
 
 ## <a name="how-to"></a>Instrukcje
 
-1. Wyróżnij kod w celu wyodrębnienia:
+1. Zaznacz kod, który ma zostać wyodrębniony:
 
    - C#:
 
-       ![Wyróżnione kodu-C#](media/extractmethod-highlight-cs.png)
+       ![Wyróżniony kod —C#](media/extractmethod-highlight-cs.png)
 
    - Visual Basic:
 
-       ![Wyróżniony kod - języka Visual Basic](media/extractmethod-highlight-vb.png)
+       ![Wyróżniony kod — Visual Basic](media/extractmethod-highlight-vb.png)
 
 2. Następnie wykonaj jedną z następujących czynności:
 
-   - **Keyboard**
-      - Naciśnij klawisz **Ctrl + R**, następnie **Ctrl + M**. (Należy pamiętać, że skrót klawiaturowy może różnić się w oparciu o profilu, który wybrano.)
-      - Naciśnij klawisz **Ctrl**+ **.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu, a następnie wybierz **Wyodrębnij metodę** z menu podręcznego okna podglądu.
-   - **Myszy**
-      - Wybierz **Edytuj > Refaktoryzuj > Wyodrębnij metodę**.
-      - Kliknij prawym przyciskiem myszy ten kod, a następnie wybierz pozycję **Refaktoryzuj > Wyodrębnianie > Wyodrębnij metodę**.
-      - Kliknij prawym przyciskiem myszy ten kod, wybierz **szybkie akcje i Refaktoryzacje** menu, a następnie wybierz **Wyodrębnij metodę** z menu podręcznego okna podglądu.
+   - **Klawiatury**
+      - Naciśnij klawisze **Ctrl + R**, a następnie **Ctrl + M**. (Pamiętaj, że skrót klawiaturowy może się różnić w zależności od wybranego profilu).
+      - Naciśnij klawisz **Ctrl** + **.** Aby wyzwolić menu **szybkie akcje i refaktoryzacje** , a następnie wybierz polecenie **Wyodrębnij metodę** z menu podręcznego okna podglądu.
+   - **Wskaźnik**
+      - Wybierz pozycję **edytuj > refaktoryzacja > Metoda wyodrębnienia**.
+      - Kliknij prawym przyciskiem myszy kod i wybierz pozycję **refaktoryzacja > wyodrębnij > metodę wyodrębnienia**.
+      - Kliknij prawym przyciskiem myszy kod, zaznacz menu **szybkie akcje i refaktoryzacje** i wybierz polecenie **Wyodrębnij metodę** w menu podręcznym okna podglądu.
 
-   Metoda zostanie utworzona natychmiast. W tym miejscu można teraz zmienić nazwę metody po prostu wpisując nową nazwę.
+   Metoda zostanie natychmiast utworzona. W tym miejscu możesz teraz zmienić nazwę metody po prostu, wpisując nową nazwę.
 
    > [!TIP]
-   > Możesz także zaktualizować komentarze i innych ciągów, aby użyć tej nowej nazwy, jak i [podgląd zmian](../../ide/preview-changes.md) przed zapisaniem, za pomocą pola wyboru w **Zmień nazwę** wyświetlonym u góry rogu zintegrowanego środowiska Projektowego.
+   > Możesz również zaktualizować Komentarze i inne ciągi, aby użyć tej nowej nazwy, a także [wyświetlić podgląd zmian](../../ide/preview-changes.md) przed zapisaniem, używając pól wyboru w polu **Zmień nazwę** wyświetlaną w prawym górnym rogu środowiska IDE.
 
    - C#:
 
@@ -67,9 +67,9 @@ Ta Refaktoryzacja mają zastosowanie do:
 
    - Visual Basic:
 
-      ![Zmień nazwę metody - Visual Basic](media/extractmethod-rename-vb.png)
+      ![Zmień nazwę metody-Visual Basic](media/extractmethod-rename-vb.png)
 
-3. Po zakończeniu zmiany wybierz **Zastosuj** przycisk lub naciśnij klawisz **Enter** i zmiany zostaną zatwierdzone.
+3. Po zakończeniu wprowadzania zmian wybierz przycisk **Zastosuj** lub naciśnij klawisz **Enter** , a zmiany zostaną zatwierdzone.
 
 ## <a name="see-also"></a>Zobacz także
 

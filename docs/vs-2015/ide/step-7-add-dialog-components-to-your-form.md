@@ -1,59 +1,58 @@
 ---
-title: Krok 7. Dodawanie składników okna dialogowego do formularza | Dokumentacja firmy Microsoft
+title: Krok 7. Dodawanie składników okna dialogowego do formularza | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: ea98c55e-6213-4893-ba7b-f19d7f119527
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 54d2b83fab24aa3c9deabc979782d9b82ea5c482
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b58f76dc5137ac0e281f109ee78f3ed43f907400
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442474"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72646961"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>Krok 7. Dodawanie składników okna dialogowego do formularza
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aby umożliwić programowi otwieranie plików obrazów i Wybieranie koloru tła, w tym kroku należy dodać **OpenFileDialog** składnika i **ColorDialog** składnika do formularza.  
-  
- Składnik to podobnie jak kontrolka pod pewnymi względami. Używasz przybornika, aby dodać składnik do formularza i ustaw jego właściwości, za pomocą **właściwości** okna. Jednak w przeciwieństwie do formantu, dodawanie składnika do formularza nie powoduje dodania widocznego elementu, który użytkownik może wyświetlić w formularzu. Zamiast tego zapewnia pewne zachowania, które mogą wyzwalać przy użyciu kodu. Jest składnik, który otwiera **Otwórz plik** okno dialogowe.  
-  
- ![Link do wideo](../data-tools/media/playvideo.gif "PlayVideo")wersja wideo tego tematu, zobacz [samouczek 1: Tworzenie przeglądarki obrazów w Visual Basic – wideo 3](http://go.microsoft.com/fwlink/?LinkId=205213) lub [samouczek 1: Tworzenie przeglądarki obrazów w C# — wideo 3](http://go.microsoft.com/fwlink/?LinkId=205202). W tych filmach wideo użyj wcześniejszej wersji programu Visual Studio, więc istnieją drobne różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednakże pojęcia i procedury działają podobnie w bieżącej wersji programu Visual Studio.  
-  
-### <a name="to-add-dialog-components-to-your-form"></a>Aby dodać elementy dialogu do formularza  
-  
-1. Wybierz projektanta Windows Forms (Form1.cs [projekt] lub Form1.vb [projekt]), a następnie otwórz **okien dialogowych** grupy w przyborniku.  
-  
+Aby umożliwić programowi otwieranie plików obrazów i Wybieranie koloru tła, w tym kroku należy dodać składnik **OpenFileDialog** i składnik **ColorDialog** do formularza.
+
+ Składnik jest jak kontrolka na kilka sposobów. Za pomocą przybornika dodasz składnik do formularza i ustawisz jego właściwości przy użyciu okna **Właściwości** . Ale w przeciwieństwie do kontrolki Dodawanie składnika do formularza nie powoduje dodania widocznego elementu, który użytkownik może zobaczyć w formularzu. Zamiast tego zapewnia pewne zachowania, które można wyzwolić przy użyciu kodu. Jest to składnik, który otwiera okno dialogowe **Otwórz plik** .
+
+ ![link do wideo](../data-tools/media/playvideo.gif "PlayVideo") Aby uzyskać wersję wideo tego tematu, zobacz [Samouczek 1: Tworzenie przeglądarki obrazów w Visual Basic — wideo 3](http://go.microsoft.com/fwlink/?LinkId=205213) lub [Samouczek 1: Tworzenie przeglądarki obrazów w C# wideo 3](http://go.microsoft.com/fwlink/?LinkId=205202). Te filmy wideo korzystają ze starszej wersji programu Visual Studio, więc istnieją niewielkie różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednak koncepcje i procedury działają podobnie w bieżącej wersji programu Visual Studio.
+
+### <a name="to-add-dialog-components-to-your-form"></a>Aby dodać składniki okna dialogowego do formularza
+
+1. Wybierz Projektant formularzy systemu Windows (Form1.cs [projekt] lub Form1. vb [projekt]), a następnie otwórz grupę **okna dialogowe** w przyborniku.
+
     > [!NOTE]
-    > **Okien dialogowych** grupa w przyborniku zawiera składniki, które otwierają wiele przydatnych okien dialogowych, które mogą służyć do otwierania i zapisywania plików, przeglądania folderów i wybierania czcionek i kolorów. Używasz dwóch elementów dialogu w tym projekcie: **OpenFileDialog** i **ColorDialog**.  
-  
-2. Aby dodać składnik o nazwie **openFileDialog1** do formularza, kliknij dwukrotnie **OpenFileDialog**. Aby dodać składnik o nazwie **colorDialog1** do formularza, kliknij dwukrotnie **ColorDialog** w przyborniku. (Możesz użyć go w następnym kroku samouczka). Powinieneś widzieć obszar w dolnej części projektanta formularzy Windows (poniżej formularza Picture Viewer), który zawiera ikonę dla każdego z dwóch składników dialogu, które dodałeś, jak pokazano na poniższej ilustracji.  
-  
-     ![Składniki okna dialogowego](../ide/media/express-dialogsadded.png "Express_DialogsAdded")  
-Składniki okna dialogowego  
-  
-3. Wybierz **openFileDialog1** ikonę w obszarze w dolnej części projektanta Windows Forms. Ustaw dwie właściwości:  
-  
-    - Ustaw **filtru** właściwość następująco (możesz skopiować i wkleić):  
-  
-        ```  
-        JPEG Files (*.jpg)|*.jpg|PNG Files (*.png)|*.png|BMP Files (*.bmp)|*.bmp|All files (*.*)|*.*  
-        ```  
-  
-    - Ustaw **tytuł** właściwości do następującego: **Wybierz plik obrazu**  
-  
-         **Filtru** ustawienia właściwości określają rodzaje typów plików, które będą wyświetlane w **wybierz obraz** okno dialogowe pliku.  
-  
+    > Grupa **okien dialogowych** w przyborniku zawiera składniki otwierające wiele przydatnych okien dialogowych, które mogą być używane do otwierania i zapisywania plików, przeglądania folderów i wybierania czcionek i kolorów. W tym projekcie są używane dwa składniki okna dialogowego: **OpenFileDialog** i **ColorDialog**.
+
+2. Aby dodać składnik o nazwie **openFileDialog1** do formularza, kliknij dwukrotnie pozycję **OpenFileDialog**. Aby dodać składnik o nazwie **colorDialog1** do formularza, kliknij dwukrotnie pozycję **ColorDialog** w przyborniku. (W następnym kroku samouczka używany jest ten krok). Powinien zostać wyświetlony obszar u dołu Projektant formularzy systemu Windows (poniżej formularza przeglądarki obrazów), który ma ikonę dla każdego z dwóch składników okna dialogowego, które zostały dodane, jak pokazano na poniższej ilustracji.
+
+     ![Składniki okna dialogowego](../ide/media/express-dialogsadded.png "Express_DialogsAdded") Składniki okna dialogowego
+
+3. Wybierz ikonę **openFileDialog1** w obszarze u dołu Projektant formularzy systemu Windows. Ustaw dwie właściwości:
+
+    - Ustaw właściwość **Filter** na następującą (możesz ją skopiować i wkleić):
+
+        ```
+        JPEG Files (*.jpg)|*.jpg|PNG Files (*.png)|*.png|BMP Files (*.bmp)|*.bmp|All files (*.*)|*.*
+        ```
+
+    - Ustaw właściwość **title** na następującą: **Wybierz plik obrazu**
+
+         Ustawienia właściwości **filtru** określają rodzaje typów plików, które będą wyświetlane w oknie dialogowym Wybierz plik **obrazu** .
+
     > [!NOTE]
-    > Aby zobaczyć przykład **Otwórz plik** okno dialogowe w innej aplikacji, otwórz Notatnik lub Paint, a na pasku menu wybierz **pliku**, **Otwórz**. Zwróć uwagę, jak istnieje **pliki typu** listy rozwijanej u dołu. Użyłeś właśnie **filtru** właściwość **OpenFileDialog** składnik to skonfigurować. Zauważ również, jak **tytuł** i **filtru** właściwości są pogrubione w **właściwości** okna. IDE robi to, aby pokazać wszystkie właściwości, które zostały zmienione z wartościami domyślnymi.  
-  
-### <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć  
-  
-- Aby przejść do następnego kroku samouczka, zobacz [krok 8: Pisanie kodu dla programu obsługi zdarzeń przycisku Obraz](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).  
-  
-- Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 6: Nazw kontrolkom przycisków](../ide/step-6-name-your-button-controls.md).
+    > Aby zobaczyć przykład okna dialogowego **Otwórz plik** w innej aplikacji, Otwórz program Notepad lub Paint, a następnie na pasku menu wybierz **plik**, **Otwórz**. Zwróć uwagę na to, jak w dolnej części znajdują się pliki listy rozwijanej **typu** . Właściwość **Filter** w składniku **OpenFileDialog** została właśnie użyta w celu skonfigurowania tego ustawienia. Zwróć również uwagę na to, jak **tytuł** i właściwości **filtru** są pogrubione w oknie **Właściwości** . IDE robi to, aby wyświetlić wszystkie właściwości, które zostały zmienione z wartości domyślnych.
+
+### <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
+
+- Aby przejść do następnego kroku samouczka, zobacz [krok 8. Pisanie kodu dla programu obsługi zdarzeń przycisku Pokaż obraz](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).
+
+- Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 6. nazwa kontrolek przycisku](../ide/step-6-name-your-button-controls.md).

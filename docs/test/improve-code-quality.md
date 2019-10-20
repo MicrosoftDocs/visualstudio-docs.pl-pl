@@ -5,31 +5,31 @@ ms.topic: conceptual
 helpviewer_keywords:
 - testing tools [Visual Studio]
 - unit tests [Visual Studio]
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 153624ec6f0bdb13e4d89a92edf977d0badc7e62
-ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
+author: jillre
+ms.openlocfilehash: b68793e512cdb367375cc9f27d61ae5a85e4f078
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68712218"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653277"
 ---
 # <a name="testing-tools-in-visual-studio"></a>Narzędzia do testowania w programie Visual Studio
 
-Program Visual Studio, narzędzia do testowania pomaga i zespołowi opracowywać i utrzymywać wysokie standardy doskonałości kodu.
+Narzędzia do testowania programu Visual Studio mogą pomóc Ci w tworzeniu i utrzymaniu wysokich standardów doskonałości kodu.
 
 > [!NOTE]
-> Testy jednostkowe jest dostępna we wszystkich wersjach programu Visual Studio. Inne narzędzia do testowania, takie jak Live Unit Testing, IntelliTest i kodowany test interfejsu użytkownika, są dostępne tylko w wersji Visual Studio Enterprise. Aby uzyskać więcej informacji na temat wersji, zobacz [porównanie programu Visual Studio środowisk IDE](https://visualstudio.microsoft.com/vs/compare/).
+> Testy jednostkowe są dostępne we wszystkich wersjach programu Visual Studio. Inne narzędzia do testowania, takie jak Live Unit Testing, IntelliTest i kodowany test interfejsu użytkownika, są dostępne tylko w wersji Visual Studio Enterprise. Aby uzyskać więcej informacji na temat wersji, zobacz [porównanie programu Visual Studio środowisk IDE](https://visualstudio.microsoft.com/vs/compare/).
 
 ## <a name="test-explorer"></a>Eksplorator testów
 
-Okno **Eksplorator testów** ułatwia deweloperom tworzenie i uruchamianie testów jednostkowych oraz zarządzanie nimi. Można użyć frameworka testów jednostkowych firmy Microsoft lub jednego z kilku struktur innych firm i open source.
+Okno **Eksplorator testów** ułatwia deweloperom tworzenie i uruchamianie testów jednostkowych oraz zarządzanie nimi. Możesz użyć struktury testów jednostkowych firmy Microsoft lub jednej z kilku platform innych firm i środowisk typu open source.
 
 ::: moniker range="vs-2017"
-![Visual Studio Test Explorer](media/devtest-testexplorer.png)
+![Eksplorator testów programu Visual Studio](media/devtest-testexplorer.png)
 ::: moniker-end
 
 ::: moniker range="vs-2019"
@@ -47,7 +47,7 @@ Program Visual Studio jest również rozszerzalny i otwiera drzwi dla kart test�
 
 ## <a name="live-unit-testing"></a>Live Unit Testing
 
-[Live Unit Testing](../test/live-unit-testing.md) automatycznie uruchamia testy jednostkowe w tle i wyświetla w postaci graficznej wyniki pokrycia i testowanie kodu w edytorze kodu programu Visual Studio.
+[Live Unit Testing](../test/live-unit-testing.md) automatycznie uruchamia testy jednostkowe w tle, a graficznie wyświetla pokrycie kodu i wyniki testów w edytorze kodu programu Visual Studio.
 
 ## <a name="intellitest"></a>IntelliTest
 
@@ -61,13 +61,13 @@ IntelliTest automatycznie generuje testy jednostkowe i dane testowe dla kodu zar
 
 ## <a name="code-coverage"></a>Pokrycie kodu
 
-[Pokrycie kodu](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) Określa, jaka część kodu projektu jest faktycznie testowana przez zakodowane testy, takie jak testy jednostkowe. Aby skutecznie zabezpieczyć się przed błędami, testy powinny być wykonywane lub "pokrywające" znaczną część kodu.
+[Pokrycie kodu](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) określa, jaka część kodu projektu jest rzeczywiście testowana przez kodowane testy, takie jak testy jednostkowe. Aby skutecznie zabezpieczyć się przed błędami, testy powinny być wykonywane lub "pokrywające" znaczną część kodu.
 
 Analiza pokrycia kodu może być stosowana do kodu zarządzanego i niezarządzanego (natywnego).
 
 Pokrycie kodu jest opcją w przypadku uruchamiania metod testowych przy użyciu Eksploratora testów. Tabela wyników zawiera procent kodu, który został uruchomiony w każdym zestawie, każdej klasie i metodzie. Ponadto edytor źródła zawiera kod, który został przetestowany.
 
-* [Użycie pokrycia kodu, aby ustalić, ile kodu jest poddawana testom](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
+* [Użyj pokrycia kodu, aby określić, jaka część kodu jest testowana](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
 * [Testowanie jednostkowe, pokrycie kodu i analiza klonowania kodu za pomocą programu Visual Studio (Lab)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Unit%20Testing,%20Code%20Coverage%20and%20Code%20Clone%20Analysis%20with%20Visual%20Studio%202015.docx)
 * [Dostosowywanie analizy pokrycia kodu](customizing-code-coverage-analysis.md)
 
@@ -90,11 +90,11 @@ Bez względu na to, czy wybierasz najlepsze, kodowane testy interfejsu użytkown
 
 ## <a name="load-testing"></a>Testowanie obciążenia
 
-[Testowanie obciążeniowe](../test/quickstart-create-a-load-test-project.md) symuluje obciążenie aplikacji serwera, uruchamiając testy jednostkowe i testy wydajności sieci web.
+[Testowanie obciążenia](../test/quickstart-create-a-load-test-project.md) symuluje obciążenie aplikacji serwera przez uruchomienie testów jednostkowych i testów wydajności sieci Web.
 
-## <a name="related-scenarios"></a>Scenariusze pokrewne
+## <a name="related-scenarios"></a>Powiązane scenariusze
 
-* [Poznawcze i ręczne testowanie (planów testowych platformy Azure)](/azure/devops/test/index?view=vsts)
-* [Ładowanie testów (planów testowych platformy Azure)](/azure/devops/test/load-test/index?view=vsts)
-* [Ciągłe testowanie (planów testowych platformy Azure)](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
+* [Testowanie ręczne & badawcze (Azure Test Plans)](/azure/devops/test/index?view=vsts)
+* [Testowanie obciążenia (Azure Test Plans)](/azure/devops/test/load-test/index?view=vsts)
+* [Testowanie ciągłe (Azure Test Plans)](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
 * [Narzędzia do analizy kodu](../code-quality/code-analysis-for-managed-code-overview.md)

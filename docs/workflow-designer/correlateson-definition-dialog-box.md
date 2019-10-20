@@ -1,38 +1,38 @@
 ---
-title: Projektant przepływu pracy — Definiowanie CorrelatesOn, okno dialogowe
+title: Projektant przepływu pracy — okno dialogowe Definicja CorrelatesOn
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - CorrelatesOnDefinition.UI
 ms.assetid: 8b2b627a-f236-4479-aa09-525df65e3413
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7b7336a3f3b0c2725f4e52116d0add8bf13b90e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 401f72f55f23779f7c6257437034a4ebc294d219
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949825"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650601"
 ---
 # <a name="correlateson-definition-dialog-box"></a>Definicja wyrażenia CorrelatesOn, okno dialogowe
 
-**CorrelatesOn** okno dialogowe jest używany w Projektancie przepływu pracy do edytowania <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A> właściwość <xref:System.ServiceModel.Activities.Receive> działania. Aby uzyskać więcej informacji, zobacz [wyświetlony Projektant działań](../workflow-designer/receive-activity-designer.md).
+Okno dialogowe **CorrelatesOn** jest używane w Projektant przepływu pracy, aby edytować Właściwość <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A> działania <xref:System.ServiceModel.Activities.Receive>. Aby uzyskać więcej informacji, zobacz [Odbierz projektanta działań](../workflow-designer/receive-activity-designer.md).
 
-Korelacja między <xref:System.ServiceModel.Activities.Receive> działania określa, jak różne usługi operations łączyć się ze sobą w przepływie pracy.
+Korelacja między działaniami <xref:System.ServiceModel.Activities.Receive> określa, jak różne operacje usługi łączą się ze sobą w przepływie pracy.
 
-W poniższej tabeli opisano elementy interfejsu użytkownika **CorrelatesOn** okno dialogowe.
+W poniższej tabeli opisano elementy interfejsu użytkownika (UI) okna dialogowego **CorrelatesOn** .
 
 |Element interfejsu użytkownika|Opis|
 |-|-----------------|
-|**CorrelatesWith**|<xref:System.ServiceModel.Activities.CorrelationHandle> Służący do rozsyłania wiadomości dla wystąpienia przepływu pracy odpowiednie.|
-|**Zapytania XPath**|Parą klucz/wartość, która zawiera zapytania, używany do wyodrębniania danych korelacji z komunikatów przychodzących. Ta wartość odpowiada <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A> właściwości. Zapytania XPath są zawarte w <xref:System.ServiceModel.MessageQuerySet> obiektu.|
+|**CorrelatesWith**|@No__t_0, który jest używany do kierowania wiadomości do odpowiedniego wystąpienia przepływu pracy.|
+|**Zapytania XPath**|Para klucz/wartość, która zawiera zapytania używane do wyodrębniania danych korelacji z komunikatów przychodzących. Ta wartość odpowiada właściwości <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A>. Zapytania XPath są zawarte w obiekcie <xref:System.ServiceModel.MessageQuerySet>.|
 
 ## <a name="to-launch-the-correlateson-dialog-box"></a>Aby uruchomić okno dialogowe CorrelatesOn
 
-**Receive** projektanta działań mogą być przeciągnięte z **przybornika** i porzucić do powierzchni projektanta przepływów pracy wszędzie tam, gdzie działań są zazwyczaj umieszczone. Projektant działań porzucenie tworzy <xref:System.ServiceModel.Activities.Receive> działanie przy użyciu domyślnego <xref:System.Activities.Activity.DisplayName%2A> Receive. Aby otworzyć **definice Vlastnosti Correlateson** okno dialogowe, wybierz opcję **Receive** działania projektanta, a następnie w siatce właściwości wybierz przycisk wielokropka obok tekstu kolekcji dla  **Definiowanie CorrelatesOn** właściwości.
+Projektanta działań **odbioru** można przeciągnąć z **przybornika** i porzucić na Projektant przepływu pracy powierzchnię, wszędzie tam gdzie działania są zwykle umieszczane. Porzucenie projektanta działań powoduje utworzenie działania <xref:System.ServiceModel.Activities.Receive> z domyślnym <xref:System.Activities.Activity.DisplayName%2A> odbierania. Aby otworzyć okno dialogowe **Definicja CorrelatesOn** , wybierz projektanta działań **Odbierz** , a następnie w siatce właściwości wybierz przycisk wielokropka obok tekstu kolekcji dla właściwości **CorrelatesOn** .
 
 ## <a name="see-also"></a>Zobacz także
 

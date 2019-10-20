@@ -1,26 +1,26 @@
 ---
-title: 'Projektant przepływu pracy — jak: Dodawanie komentarzy do przepływu pracy'
+title: 'Projektant przepływu pracy — How to: Dodawanie komentarzy do przepływu pracy'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
 - System.Activities.Presentation.Annotations.Annotation.UI
 - Annotation
 ms.assetid: 9aa0e8d6-8129-4438-8389-d460611581a7
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: c7eb15c6d19ab40df6913dd67466dc20012492b7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+author: jillre
+ms.openlocfilehash: a627f5076c78747d86b0b96e4a6e9208b0191273
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950387"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650381"
 ---
-# <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>Instrukcje: Dodawanie komentarzy do przepływu pracy w Projektancie przepływu pracy
+# <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>Instrukcje: Dodawanie komentarzy do przepływu pracy w Projektant przepływu pracy
 
-W celu ułatwienia tworzenia większych i bardziej skomplikowanych przepływów pracy, .NET Framework 4.5 umożliwia deweloperom Dodawanie adnotacji do następujących typów elementów w Projektancie:
+Aby ułatwić tworzenie większych, bardziej skomplikowanych przepływów pracy, .NET Framework 4,5 umożliwia deweloperowi Dodawanie adnotacji do następujących typów elementów w projektancie:
 
 - <xref:System.Activities.Activity>
 
@@ -35,56 +35,56 @@ W celu ułatwienia tworzenia większych i bardziej skomplikowanych przepływów 
 - <xref:System.Activities.Argument>
 
 > [!IMPORTANT]
-> Zawartość adnotacji są zapisywane w postaci zwykłego tekstu do pliku XAML, skojarzone z przepływem pracy i potencjalnie może zostać odczytany przez innych użytkowników. Należy zachować ostrożność podczas wprowadzania informacji poufnych w adnotacji.
+> Zawartość adnotacji jest zapisywana w postaci zwykłego tekstu do pliku XAML skojarzonego z przepływem pracy i może być potencjalnie odczytana przez inne osoby. Należy zachować ostrożność, wprowadzając informacje poufne do adnotacji.
 
-## <a name="adding-an-annotation-to-an-activity-in-the-designer"></a>Dodawanie adnotacji do działania w Projektancie
+## <a name="adding-an-annotation-to-an-activity-in-the-designer"></a>Dodawanie adnotacji do działania w projektancie
 
-1. W Projektancie przepływu pracy, kliknij prawym przyciskiem myszy element w przepływie pracy projektanta i wybierz pozycję **adnotacje**, **Dodawanie adnotacji**.
+1. W Projektancie przepływu pracy kliknij prawym przyciskiem myszy element w Projektancie przepływów pracy i wybierz pozycję **Adnotacje**, **Dodaj adnotację**.
 
-1. Dodaj tekst adnotacji w podanym miejscu.
+1. Dodaj tekst adnotacji do podanego miejsca.
 
-   Element znajduje się ikona adnotacja. Kursor myszy na ikonie adnotacji Wyświetla tekst adnotacji.
+   Element pokazuje ikonę adnotacji. Umieszczenie kursora myszy na ikonie adnotacji powoduje wyświetlenie tekstu adnotacji.
 
-## <a name="displaying-an-annotation-in-an-activitys-designer"></a>Wyświetlanie adnotacji w Projektant działań
+## <a name="displaying-an-annotation-in-an-activitys-designer"></a>Wyświetlanie adnotacji w projektancie działania
 
-1. Za pomocą projektanta działań, który ma wyświetlanie adnotacji poza działania, kliknij przycisk **numeru Pin** ikonę adnotacja moduł definiowania układu.
+1. Za pomocą projektanta działań z adnotacją wyświetlaną poza aktywnością kliknij ikonę **pinezki** w obszarze definiowania układu.
 
-   Adnotacja jest wyświetlany w Projektancie tego działania. Na poniższym zrzucie ekranu adnotacji "Uruchamianie działanie w przepływie pracy" jest wyświetlany w Projektancie tego działania.
+   Adnotacja jest wyświetlana w projektancie działania. Na poniższym zrzucie ekranu adnotacja "Uruchamianie działania w przepływie pracy" jest wyświetlana w projektancie działania.
 
-   ![Adnotacja objętego Projektant działań](../workflow-designer/media/annotationindesigner.png)
+   ![Adnotacja wyświetlana w projektancie działań](../workflow-designer/media/annotationindesigner.png)
 
-2. Aby wyświetlić adnotacji poza projektanta działań, umieść kursor nad obszarem adnotacji w Projektancie działań, a następnie kliknij przycisk **Wypisz** ikony
+2. Aby wyświetlić adnotację poza projektantem działania, umieść kursor nad obszarem adnotacji w projektancie działania i kliknij ikonę **Odepnij**
 
-   ![Adnotacja wyświetlane poza Projektant działań](../workflow-designer/media/annotationoutsidedesigner.png)
+   ![Adnotacja wyświetlana poza projektantem działania](../workflow-designer/media/annotationoutsidedesigner.png)
 
-## <a name="showing-or-hiding-all-annotations"></a>Pokazywanie lub ukrywanie wszystkich adnotacji
+## <a name="showing-or-hiding-all-annotations"></a>Wyświetlanie lub ukrywanie wszystkich adnotacji
 
-1. Kliknij prawym przyciskiem myszy działanie, które ma adnotację. Wybierz **adnotacje**, **Pokaż wszystkie adnotacje**.
+1. Kliknij prawym przyciskiem myszy działanie, które ma adnotację. Wybierz **Adnotacje**, **Pokaż wszystkie adnotacje**.
 
-   Wszystkie adnotacje są wyświetlane w Projektanci działań.
+   Wszystkie adnotacje są wyświetlane w projektantach działania.
 
-1. Aby wyświetlić wszystkie adnotacje poza Projektanci działań, kliknij prawym przyciskiem myszy działanie, a następnie wybierz pozycję **adnotacje**, **ukryć wszystkie adnotacje**.
+1. Aby wyświetlić wszystkie adnotacje poza projektantami działania, kliknij prawym przyciskiem myszy działanie i wybierz pozycję **Adnotacje**, **Ukryj wszystkie adnotacje**.
 
 ## <a name="editing-or-deleting-an-annotation-for-an-activity"></a>Edytowanie lub usuwanie adnotacji dla działania
 
-1. Kliknij prawym przyciskiem myszy na działaniu, który ma adnotację.
+1. Kliknij prawym przyciskiem myszy działanie, które ma adnotację.
 
-1. Wybierz **adnotacje**, **Edytuj adnotację** lub **usuwanie adnotacji**.
+1. Wybierz **Adnotacje**, **Edytuj adnotację** lub **Usuń adnotację**.
 
-   Adnotacja jest otwarty do edycji lub usunięta.
+   Adnotacja jest otwierana do edycji lub usuwania.
 
-1. Aby usunąć wszystkie adnotacje jednocześnie, kliknij prawym przyciskiem myszy przepływu pracy projektanta i wybierz pozycję **adnotacji**, **Usuń wszystkie adnotacje**.
+1. Aby usunąć jednocześnie wszystkie adnotacje, kliknij prawym przyciskiem myszy projektanta przepływu pracy i wybierz pozycję **adnotacja**, **Usuń wszystkie adnotacje**.
 
-## <a name="adding-editing-and-deleting-an-annotation-for-a-variable-or-argument"></a>Dodawanie, edytowanie i usuwanie adnotacje do zmiennej lub argumentu
+## <a name="adding-editing-and-deleting-an-annotation-for-a-variable-or-argument"></a>Dodawanie, edytowanie i usuwanie adnotacji dla zmiennej lub argumentu
 
-1. Kliknij prawym przyciskiem myszy na zmiennej lub argumentu, a następnie wybierz Dodawanie adnotacji.
+1. Kliknij prawym przyciskiem myszy zmienną lub argument i wybierz polecenie Dodaj adnotację.
 
-1. Wprowadź tekst adnotacji. Wyświetla ikonę adnotacja, zmiennej lub argumentu.
+1. Wprowadź tekst adnotacji. Zmienna lub argument wyświetla ikonę adnotacji.
 
-1. Kliknij prawym przyciskiem myszy na zmiennej lub argumentu, który ma adnotację. Wybierz pozycję Edytuj adnotacji.
+1. Kliknij prawym przyciskiem myszy zmienną lub argument, który ma adnotację. Wybierz pozycję Edytuj adnotację.
 
-   Adnotacja jest otwarty do edycji.
+   Adnotacja jest otwierana do edycji.
 
-1. Kliknij prawym przyciskiem myszy na zmiennej lub argumentu, który ma adnotację. Wybierz pozycję Usuń adnotację.
+1. Kliknij prawym przyciskiem myszy zmienną lub argument, który ma adnotację. Wybierz pozycję Usuń adnotację.
 
-   Adnotacja jest usuwany.
+   Adnotacja zostanie usunięta.

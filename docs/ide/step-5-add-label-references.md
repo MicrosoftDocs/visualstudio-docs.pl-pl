@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fbe9b0005ce190eda6a88dea2f6b5f80890743c
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
-ms.translationtype: HT
+ms.openlocfilehash: 9a1fe8f4e8003da2db0e8a599c3eca504945f3e4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72562942"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647519"
 ---
 # <a name="step-5-add-label-references"></a>Krok 5. Dodawanie odwołań do etykiet
 Program musi śledzić, które kontrolki etykiet wybiera gracz. W tej chwili program pokazuje wszystkie etykiety wybrane przez gracza. Ale zaraz to zmienimy. Po wybraniu pierwszej etykiety program powinien wyświetlać ikonę etykiety. Po wybraniu drugiej etykiety program powinien wyświetlić obie ikony przez krótki czas i potem ponownie je ukryć. Program będzie teraz śledził, który formant Etykieta jest wybierany jako pierwszy, a który jest wybierany drugi przy użyciu *zmiennych odwołania*.
@@ -44,15 +44,15 @@ Program musi śledzić, które kontrolki etykiet wybiera gracz. W tej chwili pro
 
 3. Zapisz i uruchom program. Wybierz jeden z formantów etykiet, pojawi się jego ikona.
 
-4. Wybierz następny formant etykiety i zauważ, że nic się nie dzieje. Program śledzi już pierwszą etykietę, którą wybrał gracz, więc `firstClicked` nie równa się `null` w C# lub `Nothing` w Visual Basic. Gdy instrukcja `if` sprawdza `firstClicked`, aby określić, czy jest równa `null` lub `Nothing`, stwierdza, że nie, i nie wykonuje instrukcji w instrukcji `if`. Tak więc, tylko pierwsza wybrana ikona zmienia kolor na czarny, a inne ikony są niewidoczne, jak pokazano na poniższej ilustracji.
+4. Wybierz następny formant etykiety i zauważ, że nic się nie dzieje. Program śledzi już pierwszą etykietę, którą wybrał gracz, więc `firstClicked` nie równa się `null` w C# lub `Nothing` w Visual Basic. Gdy instrukcja `if` sprawdza `firstClicked`, aby określić, czy jest równa `null` lub `Nothing`, stwierdza, że nie, i nie wykonuje instrukcji w instrukcji `if`. Dlatego tylko pierwsza wybrana ikona powoduje zmianę czerni, a inne ikony są niewidoczne, jak pokazano na poniższej ilustracji.
 
      ![Matching gra pokazująca jedną ikonę ](../ide/media/express_tut4step5.png)<br/>
-**Gra w dopasowywanie** pokazująca jedną ikonę
+***Gra w dopasowywanie*** *pokazująca jedną ikonę*
 
      Tę sytuację należy rozwiązać w następnym kroku samouczka, dodając kontrolkę **czasomierz** .
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
 
-- Aby przejść do następnego kroku samouczka, zobacz [krok 6: Dodawanie czasomierza](../ide/step-6-add-a-timer.md).
+- Aby przejść do następnego kroku samouczka, zobacz **[krok 6: Dodawanie czasomierza](../ide/step-6-add-a-timer.md)** .
 
 - Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 4. Dodawanie obsługi zdarzeń kliknięcia do każdej etykiety](../ide/step-4-add-a-click-event-handler-to-each-label.md).

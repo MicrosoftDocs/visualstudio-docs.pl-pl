@@ -1,5 +1,5 @@
 ---
-title: Rozszerzanie JavaScript IntelliSense | Dokumentacja firmy Microsoft
+title: Rozszerzenie JavaScript IntelliSense | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -12,539 +12,538 @@ helpviewer_keywords:
 - IntelliSense [JavaScript], extending
 ms.assetid: 004e1ab6-bd7a-4327-9e01-89b9be96ba2f
 caps.latest.revision: 43
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: eea71ffe2b449e0ee5aff893efd05e12e4ecae73
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: bf16b6fdc307e11875f30cfad6e4bb35580b0b04
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824929"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665749"
 ---
 # <a name="extending-javascript-intellisense"></a>Rozszerzanie JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Funkcja rozszerzalność JavaScript IntelliSense umożliwia dostosowywanie wyników funkcji IntelliSense w edytorze języka JavaScript dla bibliotek innych firm. Może to poprawić środowisko deweloperów, którzy korzystają z tych bibliotek.  
-  
- Usługa języka JavaScript zawiera funkcje IntelliSense dla bibliotek JavaScript innych firm, które są dodawane do projektu. Większość bibliotek uzupełnianie instrukcji jest dostarczony automatycznie przez usługę języka. Na poniższej ilustracji przedstawiono przykład uzupełnianie instrukcji:  
-  
- ![Przykład uzupełnianie instrukcji](../ide/media/js-intellisense-completion.png "js_intellisense_completion")  
-  
- Jeśli Twoja biblioteka zawiera opisy zmienne, funkcje i obiekty w standardowych znaczników komentarza JavaScript (/ /), możesz automatycznie korzyści, od funkcji rozszerzalności IntelliSense, które dostarczają opisowe informacje w oknie podręcznym, które domyślnie pojawia się po prawej stronie elementy na liście uzupełniania lub po wpisaniu nawiasu otwierającego w wywołaniu funkcji. Komentarze w oknie podręcznym zawierają opis elementu członkowskiego. Poniższy przykład pokazuje wyskakujące okno na liście uzupełniania.  
-  
- ![Przykład pop Quick Info&#45;okno](../ide/media/js-intellisense-quickinfo.png "js_intellisense_quickinfo")  
-  
- Aby dodatkowo poprawić środowisko programistyczne, można dostarczyć informacji o typie dla deweloperów w oknie podręcznym. Możesz podać informacje o typie przy użyciu języka JavaScript [komentarze dokumentacji XML](../ide/xml-documentation-comments-javascript.md) zamiast znaczników standardowych komentarzy. Możesz dodać komentarze dokumentacji XML przy użyciu znaczniki komentarza z trzema ukośnikami (/ / /) i określony zbiór elementów XML.  
-  
- Alternatywnie możesz podać informacje o typie przy użyciu rozszerzalność JavaScript IntelliSense. Ta funkcja pozwala dostosować wyniki funkcji IntelliSense, Tworzenie rozszerzeń języka JavaScript i dodawane do kontekstu skryptu. W rozszerzeniu, czyli plik języka JavaScript, możesz zasubskrybować zdarzenia, które są dostępne w `intellisense` obiektu usługi języka. Rozszerzalność JavaScript IntelliSense jest preferowanym rozwiązaniem w przypadku bibliotek, jeśli wzorzec zachowania w bibliotece uniemożliwia dostarczanie żądany poziom obsługę funkcji IntelliSense usługa języka JavaScript, a zamiast deklaratywne XML Komentarze dokumentacji również jest wymagana. Dostosowując wyniki funkcji IntelliSense, możesz utworzyć najwyższej jakości środowisko IntelliSense, niezależnie od tego, wszystkie wzorce zachowania, które mogą wymagać ograniczenia możliwości domyślnej usługi językowej. Aby uzyskać więcej informacji, zobacz [uzupełnianie składni dla identyfikatorów](../ide/statement-completion-for-identifiers.md).  
-  
-## <a name="adding-an-extension-to-the-script-context"></a>Dodawanie rozszerzenia do kontekstu skryptu  
- Dla rozszerzenia IntelliSense do wykonania potrzebuje ona danych ma zostać dodany do bieżącego kontekstu skryptu. Rozszerzenia mogą być automatycznie dodawane do kontekstu skryptu za pomocą mechanizmu automatycznego odnajdowania lub można dodać rozszerzenia do kontekstu skryptu ręcznie przy użyciu grupy odwołania lub dyrektywy odwołania.  
-  
- Mechanizmu automatycznego odnajdowania umożliwia usłudze języka automatycznie znaleźć rozszerzenia, które należy wykonać Konwencję nazewnictwa plików *libraryname*. intellisense.js i które znajdują się w tym samym katalogu co biblioteki w celu zastosowanie rozszerzenia. Na przykład prawidłowe rozszerzenie biblioteki jQuery będzie jQuery.intellisense.js. Dla bardziej restrykcyjne jQuery rozszerzeń można użyć nazwy plików, np. jQuery-1.7.1.intellisense.js (z rozszerzeniem specyficzny dla wersji) lub jQuery.ui.intellisense.js (rozszerzenie biblioteki jQuery o określonym zakresie). Najbardziej restrykcyjną wersję rozszerzenia jest używana, jeśli znaleziono więcej niż jedno rozszerzenie dla danej biblioteki.  
-  
- Jeśli chcesz użyć rozszerzenia dla wszystkie pliki projektu JavaScript, można zamiast tego dodać rozszerzenie do grupy odwołań. Istnieją różne typy grup odwołań, albo takie, które zawierają odwołań niejawnych, które zawierają odwołania dedykowanych procesów roboczych. Aby dodać rozszerzenie, zazwyczaj należy dodać plik jako grupę niejawne odwołanie, albo **niejawna (Windows)** , **niejawna (sieć Web)** . Odwołań niejawnych znajdują się w zakresie dla każdego pliku .js otwartego w edytorze kodu. Korzystając z tej metody, należy dodać rozszerzenie i pliku który jest uzupełniające rozszerzenia.  
-  
- Użyj **IntelliSense** strony **opcje** okno dialogowe, aby dodać rozszerzenie jako grupa odwołań. Możesz uzyskać dostęp **IntelliSense** strony, wybierając **narzędzia**, **opcje** na pasku menu, a następnie wybierając **edytora tekstów**, **JavaScript**, **IntelliSense**, **odwołania**. Aby uzyskać więcej informacji na temat grup odwołań, zobacz [JavaScript IntelliSense](../ide/javascript-intellisense.md) i [opcje, Edytor tekstu, JavaScript, IntelliSense](../ide/reference/options-text-editor-javascript-intellisense.md).  
-  
- Jeśli chcesz użyć rozszerzenia dla określonego zestawu plików, należy użyć dyrektywy odwołania. Przy użyciu tej metody należy odwoływać się do zarówno rozszerzenia, jak i plik, który jest uzupełniające rozszerzenia. Aby dowiedzieć się, jak za pomocą dyrektywy odwołań, zobacz [JavaScript IntelliSense](../ide/javascript-intellisense.md).  
-  
-## <a name="handling-intellisense-events"></a>Obsługa zdarzeń funkcji IntelliSense  
- Funkcja rozszerzalności umożliwia dostosowywanie wyników IntelliSense przez subskrybowanie zdarzeń, takich jak `statementcompletion` zdarzeń usługa językowa `intellisense` obiektu. Poniższy przykład przedstawia proste rozszerzenie, który jest używany przez usługę języka do ukrywania elementów członkowskich, które zaczynają się od znaku podkreślenia z uzupełniania instrukcji. Ten kod jest zawarta w underscorefilter.js i znajduje się w \\ \\ *ścieżka instalacji programu Visual Studio*\JavaScript\References folderu.  
-  
-```javascript  
-intellisense.addEventListener('statementcompletion', function (event) {  
-    if (event.targetName === "this") return;  
-  
-    var filterRegex;  
-  
-    if (event.target === undefined || event.target === window)  
-        filterRegex = /^_.*\d{2,}/;  
-    else  
-        filterRegex = /^_.*/;  
-  
-    event.items = event.items.filter(function (item) {  
-        return !filterRegex.test(item.name);  
-    });  
-});  
-```  
-  
- W poprzednim kodzie, rozszerzenie sprawdza [targetName właściwość](#TargetName) i [właściwość docelowa](#Target) właściwości `statementcompletion` obiektu zdarzenia, aby wykluczyć obiekty, takie jak `this` i `window`i upewnij się, można zidentyfikować liście uzupełniania prawidłową instrukcję. Lista uzupełniania można zidentyfikować, rozszerzenie aktualizuje uzupełniania instrukcji [elementów właściwości](#Items) kolekcji przez filtrowanie elementów członkowskich, które zaczynają się od znaku podkreślenia.  
-  
- Dodatkowe przykłady można znaleźć \\ \\ *ścieżka instalacji programu Visual Studio*\JavaScript\References folderu. Plik showPlainComments.js, w tym folderze zawiera przykłady użycia innych zdarzeń, aby zapewnić obsługę funkcji IntelliSense domyślny dla standardowych znaczników komentarza JavaScript (/ /). Podobnie jak underscorefilter.js showPlainComments.js jest już dostępna jako rozszerzenie pracy, a widać wynikowy informacji IntelliSense, używając znaczników komentarzy w kodzie dla zmienne, funkcje i obiekty. Aby uzyskać więcej przykładów, zobacz [przykłady kodu](#CodeExamples).  
-  
+Funkcja rozszerzalności JavaScript IntelliSense umożliwia dostosowywanie wyników IntelliSense w edytorze JavaScript dla bibliotek innych firm. Może to poprawić doświadczenie deweloperów korzystających z tych bibliotek.
+
+ Usługa języka JavaScript udostępnia funkcje IntelliSense dla bibliotek języka JavaScript innych firm, które są dodawane do projektu. W przypadku większości bibliotek uzupełnianie instrukcji jest dostarczane automatycznie przez usługę języka. Na poniższej ilustracji przedstawiono przykład uzupełniania instrukcji:
+
+ ![Przykład uzupełniania instrukcji](../ide/media/js-intellisense-completion.png "js_intellisense_completion")
+
+ Jeśli biblioteka zawiera opisy zmiennych, funkcji i obiektów w standardowych tagach komentarzy języka JavaScript (//), automatycznie korzystamy z funkcji rozszerzalności IntelliSense, które udostępniają informacje opisowe w oknie podręcznym, które pojawia się po prawej stronie elementów na liście uzupełniania lub po wpisaniu nawiasu otwierającego w wywołaniu funkcji. Komentarze w polu podręcznym zawierają opis elementu członkowskiego. Poniższy przykład pokazuje podręczny pole listy uzupełniania.
+
+ ![Przykład szybkiej informacji w oknie&#45;podręcznym](../ide/media/js-intellisense-quickinfo.png "js_intellisense_quickinfo")
+
+ Aby dodatkowo ulepszyć środowisko deweloperskie, możesz chcieć podać informacje o typie dla deweloperów w polu podręcznym. Możesz podać informacje o typie, używając [komentarzy dokumentacji XML](../ide/xml-documentation-comments-javascript.md) języka JavaScript zamiast standardowych tagów komentarzy. Komentarze dokumentacji XML są dodawane przy użyciu tagów z komentarzem z potrójnym ukośnikiem (///) i zdefiniowanego zestawu elementów XML.
+
+ Alternatywnie można podać informacje o typie przy użyciu rozszerzalności JavaScript IntelliSense. Ta funkcja umożliwia dostosowywanie wyników IntelliSense przez tworzenie rozszerzeń języka JavaScript i dodawanie ich do kontekstu skryptu. W rozszerzeniu, który jest plikiem JavaScript, subskrybujesz zdarzenia, które są udostępniane przez obiekt `intellisense` usługi językowej. Rozszerzalność kodu JavaScript IntelliSense jest preferowanym rozwiązaniem dla bibliotek, Jeśli wzorzec zachowania w bibliotece uniemożliwia usłudze języka JavaScript podawanie żądanego poziomu obsługi technologii IntelliSense i jeśli alternatywą dla deklaratywnego kodu XML Komentarze do dokumentacji są również zbędne. Dostosowując wyniki funkcji IntelliSense, można utworzyć pierwsze środowisko funkcji IntelliSense, niezależnie od wzorców zachowania, które mogą ograniczać domyślne możliwości usługi językowej. Aby uzyskać więcej informacji, zobacz [uzupełnianie instrukcji dla identyfikatorów](../ide/statement-completion-for-identifiers.md).
+
+## <a name="adding-an-extension-to-the-script-context"></a>Dodawanie rozszerzenia do kontekstu skryptu
+ Aby rozszerzenie IntelliSense zostało wykonane, należy je dodać do bieżącego kontekstu skryptu. Rozszerzenie może być automatycznie dodawane do kontekstu skryptu przez mechanizm odnajdywania automatycznego lub można dodać rozszerzenie do kontekstu skryptu ręcznie przy użyciu grup referencyjnych lub dyrektywy referencyjnej.
+
+ Mechanizm automatycznego odnajdywania umożliwia usłudze języka Automatyczne znajdowanie rozszerzeń, które są zgodne z *biblioteką*konwencji nazewnictwa plików. IntelliSense. js, które znajdują się w tym samym katalogu, w którym znajduje się rozszerzenie dotyczy. Na przykład prawidłowe rozszerzenie biblioteki jQuery to jQuery. IntelliSense. js. W przypadku bardziej restrykcyjnych rozszerzeń jQuery można użyć nazw plików, takich jak jQuery-1.7.1. IntelliSense. js (rozszerzenie specyficzne dla wersji) lub jQuery. UI. IntelliSense. js (rozszerzenie dla biblioteki jQuery z zakresem). Najbardziej restrykcyjna wersja rozszerzenia jest używana w przypadku znalezienia więcej niż jednego rozszerzenia dla danej biblioteki.
+
+ Jeśli chcesz użyć rozszerzenia dla wszystkich plików projektu JavaScript, możesz zamiast tego dodać rozszerzenie do grupy odwołania. Istnieje kilka typów grup odniesienia, które zawierają odwołania niejawne i te, które zawierają dedykowane odwołania do procesu roboczego. Aby dodać rozszerzenie, zazwyczaj należy dodać plik jako niejawną grupę odwołania, **niejawny (Windows)** , **niejawny (sieć Web)** . Odwołania niejawne znajdują się w zakresie dla każdego pliku. js otwartego w edytorze kodu. Korzystając z tej metody, należy dodać zarówno rozszerzenie, jak i plik, który uzupełnia rozszerzenie.
+
+ Użyj strony **IntelliSense** okna dialogowego **Opcje** , aby dodać rozszerzenie jako grupę referencyjną. Dostęp do strony **IntelliSense** można uzyskać, wybierając pozycję **Narzędzia**, **Opcje** na pasku menu, a następnie wybierając **Edytor tekstu**, **JavaScript**, **IntelliSense**, **odwołania**. Aby uzyskać więcej informacji na temat grup referencyjnych, zobacz [JavaScript IntelliSense](../ide/javascript-intellisense.md) i [Opcje, Edytor tekstu, JavaScript, IntelliSense](../ide/reference/options-text-editor-javascript-intellisense.md).
+
+ Jeśli chcesz użyć rozszerzenia dla określonego zestawu plików, użyj dyrektywy Reference. Korzystając z tej metody, należy odwołać się zarówno do rozszerzenia, jak i do pliku, który uzupełnia rozszerzenie. Aby uzyskać informacje na temat używania dyrektywy Reference, zobacz [JavaScript IntelliSense](../ide/javascript-intellisense.md).
+
+## <a name="handling-intellisense-events"></a>Obsługa zdarzeń IntelliSense
+ Funkcja rozszerzalności pozwala dostosować wyniki funkcji IntelliSense, subskrybując zdarzenia, takie jak `statementcompletion` zdarzenie usługi językowej `intellisense` obiektu. W poniższym przykładzie pokazano proste rozszerzenie, które jest używane przez usługę języka do ukrycia elementów członkowskich, które zaczynają się od znaku podkreślenia od zakończenia instrukcji. Ten kod jest zawarty w underscorefilter. js i znajduje się w folderze \\ \\*ścieżka instalacji programu Visual Studio*\JavaScript\References.
+
+```javascript
+intellisense.addEventListener('statementcompletion', function (event) {
+    if (event.targetName === "this") return;
+
+    var filterRegex;
+
+    if (event.target === undefined || event.target === window)
+        filterRegex = /^_.*\d{2,}/;
+    else
+        filterRegex = /^_.*/;
+
+    event.items = event.items.filter(function (item) {
+        return !filterRegex.test(item.name);
+    });
+});
+```
+
+ W poprzednim kodzie rozszerzenie sprawdza [Właściwość TargetName](#TargetName) i [właściwość target](#Target) obiektu zdarzenia `statementcompletion`, aby wykluczyć obiekty takie jak `this` i `window` oraz aby upewnić się, że lista uzupełniania instrukcji może być określonej. Jeśli można zidentyfikować listę uzupełniania, rozszerzenie aktualizuje kolekcję [właściwości elementów](#Items) uzupełniania, filtrując elementy członkowskie, które zaczynają się od znaku podkreślenia.
+
+ Aby uzyskać dodatkowe przykłady, zajrzyj do folderu \\ \\*ścieżka instalacji programu Visual Studio*\JavaScript\References. Plik showPlainComments. js w tym folderze zawiera przykłady użycia innych zdarzeń w celu zapewnienia domyślnej obsługi technologii IntelliSense dla standardowych tagów komentarzy w języku JavaScript (//). Podobnie jak underscorefilter. js, showPlainComments. js jest już dostępny jako rozszerzenie robocze i można zobaczyć uzyskane informacje IntelliSense w przypadku używania tagów komentarzy w kodzie dla zmiennych, funkcji i obiektów. Aby uzyskać więcej przykładów, zobacz [przykłady kodu](#CodeExamples).
+
 > [!WARNING]
-> Jeśli zmodyfikujesz plików rozszerzeń dołączone do programu Visual Studio, można wyłączyć funkcji IntelliSense języka JavaScript lub funkcji obsługiwanej przez rozszerzenie.  
-  
- W kodzie rozszerzenia można utworzyć procedury obsługi dla następujących typów zdarzeń za pomocą `addEventListener`:  
-  
-- `statementcompletion`, która dodaje program obsługi zdarzeń uzupełniania instrukcji. Dokańczanie instrukcji zawiera listę elementów członkowskich dla określonego typu, który pojawia się po wpisaniu znaki specjalne, takie jak kropka (.) lub listę identyfikatorów, która pojawia się podczas wpisywania lub po naciśnięciu klawisza CTRL + J. Program obsługi odbiera zdarzenia obiektu typu `CompletionEvent`, który obsługuje następujące elementy członkowskie: [elementów właściwości](#Items), [właściwość docelowa](#Target), [targetName właściwość](#TargetName), i [zakresu właściwości](#Scope).  
-  
-- `signaturehelp`, która dodaje program obsługi dla funkcji IntelliSense o parametrach. Informacje o parametrach zapewnia informacje dotyczące liczby, nazw i typów parametrów wymaganych przez funkcję. Program obsługi odbiera zdarzenia obiektu typu `SignatureHelpEvent`, który obsługuje następujące elementy członkowskie: [właściwość docelowa](#Target), [parentObject właściwość](#ParentObject), [functionComments właściwość](#FunctionComments), [functionHelp właściwość](#FunctionHelp).  
-  
-- `statementcompletionhint`, która dodaje program obsługi dla szybkie informacje technologii IntelliSense. Okno podręczne szybkie informacje przedstawia pełną deklarację dla identyfikatorów w kodzie. Program obsługi odbiera zdarzenia obiektu typu `CompletionHintEvent`, który obsługuje następujące elementy członkowskie: [completionItem właściwość](#CompletionItem), i [symbolHelp właściwość](#SymbolHelp).  
-  
-  Przykłady pokazujące, funkcje IntelliSense, takich jak uzupełnianie instrukcji i informacje o parametrach, szybkie informacje, zobacz [za pomocą funkcji IntelliSense](../ide/using-intellisense.md).  
-  
+> Jeśli zmodyfikujesz pliki rozszerzeń dołączone do programu Visual Studio, możesz wyłączyć obsługę języka JavaScript IntelliSense lub funkcję obsługiwaną przez rozszerzenie.
+
+ W kodzie rozszerzenia można utworzyć programy obsługi dla następujących typów zdarzeń przy użyciu `addEventListener`:
+
+- `statementcompletion`, który dodaje procedurę obsługi dla zdarzenia ukończenia instrukcji. Uzupełnianie instrukcji zawiera listę elementów członkowskich określonego typu, które pojawiają się po wpisaniu znaku specjalnego, takiego jak kropka (.), lub listę identyfikatorów, które pojawiają się podczas wpisywania lub po naciśnięciu klawiszy CTRL + J. Program obsługi odbiera obiekt zdarzenia typu `CompletionEvent`, który obsługuje następujące elementy członkowskie: [Właściwość Items](#Items), [TargetName](#Target), [TargetName](#TargetName)i [SCOPE Property](#Scope).
+
+- `signaturehelp`, który dodaje procedurę obsługi dla informacji o parametrach IntelliSense. Informacje o parametrach umożliwiają uzyskanie informacji o liczbie, nazwach i typach parametrów wymaganych przez funkcję. Program obsługi odbiera obiekt zdarzenia typu `SignatureHelpEvent`, który obsługuje następujące elementy członkowskie: [Właściwość docelowa](#Target), właściwość [ParentObject](#ParentObject), właściwość [functionComments](#FunctionComments), właściwość [functionHelp](#FunctionHelp).
+
+- `statementcompletionhint`, który dodaje procedurę obsługi dla szybkich informacji IntelliSense. W oknie podręcznym szybkie informacje zostanie wyświetlona kompletna deklaracja identyfikatorów w kodzie. Program obsługi odbiera obiekt zdarzenia typu `CompletionHintEvent`, który obsługuje następujące elementy członkowskie: [Właściwość completionItem](#CompletionItem)i [Właściwość symbolHelp](#SymbolHelp).
+
+  Przykłady pokazujące funkcje IntelliSense, takie jak uzupełnianie instrukcji, informacje o parametrach i szybkie informacje, można znaleźć w temacie [using IntelliSense](../ide/using-intellisense.md).
+
 > [!NOTE]
-> W języku JavaScript szybkie informacje odnosi się do wyskakujące okno, który pojawia się po prawej stronie listy uzupełniania. Nie można ręcznie wywołać Quick Info.  
-  
-## <a name="intellisenseObject"></a> Obiekt IntelliSense  
- W poniższej tabeli przedstawiono funkcje, które są dostępne dla `intellisense` obiektu. `intellisense` Obiekt jest dostępny tylko w czasie projektowania.  
-  
-|Funkcja|Opis|  
-|--------------|-----------------|  
-|`addEventListener(type, handler);`|Dodaje program obsługi zdarzeń dla zdarzenia funkcji IntelliSense.<br /><br /> `type` jest to wartość ciągu. Prawidłowe wartości to `statementcompletion`, `signaturehelp`, i `statementcompletionhint`.<br /><br /> `handler` jest funkcji procedury obsługi zdarzeń, który odbiera obiektu zdarzenia w jednej z następujących typów:<br /><br /> -   `CompletionEvent`, umożliwiający `statementcompletion` zdarzeń.<br />-   `SignatureHelpEvent`, umożliwiający `signaturehelp` zdarzeń.<br />-   `CompletionHintEvent`, umożliwiający `statementcompletionhint` zdarzeń.<br /><br /> Aby uzyskać przykłady, które używają tej funkcji, zobacz [przykłady kodu](#CodeExamples).|  
-|`annotate(obj, doc);`|Określa dokumentacji dla obiektu, kopiując komentarzy do dokumentacji z jednego obiektu do innego obiektu.<br /><br /> `obj` Określa obiekt, do którego zostaną skopiowane z dokumentacją.<br /><br /> `doc` Określa obiekt, z którego można skopiować z dokumentacją.<br /><br /> Na przykład, który pokazuje, jak użyć tej funkcji, zobacz [dodawania adnotacji IntelliSense](#Annotations).|  
-|`getFunctionComments(func);`|Zwraca komentarzy do określonej funkcji.<br /><br /> `func` Określa funkcję, dla którego są zwracane komentarzy.<br /><br /> Możesz ustawić `func` parametru za pomocą `completionItem.value`.<br /><br /> Zwrócony `functionComments` obiekt zawiera następujące elementy członkowskie: `above`, `inside`, i `paramComment`. Aby uzyskać więcej informacji, zobacz [functionComments właściwość](#FunctionComments) właściwości.<br /><br /> `getFunctionComments` może być wywołana tylko z jednego z programów obsługi zdarzeń, które są zarejestrowane przez `addEventListener`.<br /><br /> Na przykład, który pokazuje, jak użyć tej funkcji, zobacz \\ \\ *ścieżka instalacji programu Visual Studio*\JavaScript\References\showPlainComments.js.|  
-|`logMessage(msg);`|Wysyła komunikaty diagnostyczne w oknie danych wyjściowych.<br /><br /> `msg` to jest ciąg zawierający komunikat.<br /><br /> Na przykład, który pokazuje, jak użyć tej funkcji, zobacz [wysyłania wiadomości do okna danych wyjściowych](#Logging).|  
-|`nullWithCompletionsOf(value);`|Zwraca specjalne wartość null, dla którego na liście uzupełniania jest określany przez obiekt przekazany w `value` parametru.<br /><br /> `value` Określa, na liście uzupełniania dla zwróconej wartości. `value` mogą być dowolnego typu.<br /><br /> Zwracana wartość null jest traktowana jako wartość null w czasie projektowania, ale na liście uzupełniania dla wartości zwracanej jest taki sam jak listy uzupełniania dla `value` parametru.<br /><br /> Jedno użycie tej funkcji jest zapewnienie technologii IntelliSense dla wartości zwracanej, typ zwracany jest przewidywalne w czasie wykonywania, kiedy wartość zwracana jest `null` w czasie projektowania.|  
-|`redirectDefinition(func, definition);`|Intelisense, które umożliwiają za pomocą podanej definicji funkcji zamiast oryginalnej Funkcja func pomocy parametru powoduje, że lub **przejdź do definicji** żądania.<br /><br /> `func` Określa funkcję docelowego.<br /><br /> `definition` Określa funkcję, która ma być używana zamiast funkcji docelowej, aby uzyskać informacje o parametrach i **przejdź do definicji**.|  
-|`setCallContext(func, thisArg);`|Ustawia Kontekst wywołania lub zakres dla określonej funkcji.<br /><br /> `func` Określa funkcję, dla której chcesz ustawić zakresu.<br /><br /> `thisArg` jest obiektem literału, do którego `this` — słowo kluczowe może odwoływać się do, która określa nowego zakresu dla elementu członkowskiego. Argumenty do przekazania w tym parametrze mogą obejmować na przykład `intellisense.setCallContext(func, { thisArg: "", args: [23,2] });`<br /><br /> `setCallContext` zapewnia zachowanie podobne do `Function.prototype.bind`, z tą różnicą, że użyta tylko w przypadku obsługi technologii IntelliSense w czasie projektowania. Możesz użyć `setCallContext` Aby ustawić zakres funkcji, jeśli chcesz symulować wywołanie do kodu, który jest w przeciwnym razie nieosiągalny, dzięki czemu podczas wywoływania funkcji, wywołanie funkcji będzie zawierać poprawny zakres i argumenty.|  
-|`undefinedWithCompletionsOf(value);`|Zwraca specjalne niezdefiniowaną wartość, dla którego na liście uzupełniania jest określany przez obiekt przekazany w `value` parametru.<br /><br /> `value` Określa, na liście uzupełniania dla zwróconej wartości. `value` mogą być dowolnego typu.<br /><br /> Niezdefiniowane zwraca wartość jest traktowana jako niezdefiniowane w czasie projektowania, ale zakończenia listy dla wartości zwracanej jest taki sam jak listy uzupełniania dla `value` parametru.<br /><br /> Jedno użycie tej funkcji jest zapewnienie technologii IntelliSense dla wartości zwracanej, typ zwracany jest przewidywalne w czasie wykonywania, kiedy wartość zwracana jest niezdefiniowana w czasie projektowania.|  
-|`version()`|Zwraca informacje o wersji programu Visual Studio.|  
-  
-## <a name="event-members"></a>Elementy członkowskie zdarzenia  
- W poniższych sekcjach opisano elementy członkowskie, które są widoczne w obiekcie zdarzenia dla następujących zdarzeń: `statementcompletion`, `signaturehelp`, i `statementcompletionhint`.  
-  
-### <a name="CompletionItem"></a> completionItem właściwości  
- Zwraca identyfikator, znane jako elementu ukończenia, dla którego żądana jest wyskakującym szybkie informacje. Ta właściwość jest dostępna dla `statementcompletionhint` obiektu zdarzenia i [elementów właściwości](#Items) właściwość `statementcompletion` obiektem zdarzenia.  
-  
- Wartość zwracana: `completionItem` obiektu  
-  
- Poniżej przedstawiono elementy członkowskie `completionItem` obiektu:  
-  
-- `name`. Odczyt/zapis, gdy są używane w `items` kolekcji; w przeciwnym razie tylko do odczytu. Zwraca ciąg, który identyfikuje elementu ukończenia.  
-  
-- `kind`. Odczyt/zapis, gdy są używane w `items` kolekcji; w przeciwnym razie tylko do odczytu. Zwraca ciąg, który reprezentuje typ elementu ukończenia. Możliwe wartości to metody, pola, właściwość, parametru, zmienna i zastrzeżone.  
-  
-- `glyph`. Odczyt/zapis, gdy są używane w `items` kolekcji; w przeciwnym razie tylko do odczytu. Zwraca ciąg, który reprezentuje ikonę która jest wyświetlana na liście uzupełniania. Możliwe wartości parametru `glyph` , użyj następującego formatu: vs:*glyphType*, gdzie *glyphType* odnosi się do elementów członkowskich niezależny od języka w <xref:Microsoft.VisualStudio.Language.Intellisense.StandardGlyphGroup> wyliczenia. Na przykład `vs:GlyphGroupMethod` to jedna z wartości dla `glyph`. Gdy `glyph` nie jest ustawiona, `kind` właściwość określa domyślną ikonę.  
-  
-- `parentObject`. Tylko do odczytu. Zwraca obiekt nadrzędny.  
-  
-- `value`. Tylko do odczytu. Zwraca obiekt reprezentujący wartość elementu ukończenia.  
-  
-- `comments`. Tylko do odczytu. Zwraca ciąg, który zawiera komentarze, które znajdują się powyżej pola lub zmiennej.  
-  
-- `scope`. Tylko do odczytu. Zwraca zakres elementu ukończenia. Możliwe wartości są lokalne, globalne, a parametr i elementu członkowskiego.  
-  
-### <a name="Items"></a> Właściwości elementów  
- Pobiera lub ustawia tablicę instrukcji elementy uzupełniania. Każdy element w tablicy jest [completionItem właściwość](#CompletionItem) obiektu. `items` Właściwość jest dostępna dla `statementcompletion` obiektem zdarzenia.  
-  
- Wartość zwracana: tablica  
-  
-### <a name="FunctionComments"></a> functionComments właściwości  
- Zwraca komentarze dla tej funkcji. Ta właściwość jest dostępna dla `signaturehelp` obiektem zdarzenia.  
-  
- Wartość zwracana: `comments` obiektu  
-  
- Poniżej przedstawiono elementy członkowskie `comments` obiektu:  
-  
-- `above`. Zwraca komentarze powyżej funkcji.  
-  
-- `inside`. Zwraca komentarze wewnątrz funkcji, zazwyczaj w formacie VSDoc.  
-  
-- `paramComments`. Zwraca tablicę reprezentujący komentarzy dla każdego parametru w funkcji. Elementy członkowskie tablicy obejmują:  
-  
-  - `name`. Zwraca ciąg reprezentujący nazwę parametru.  
+> W języku JavaScript szybkie informacje odnoszą się do okna podręcznego, które pojawia się po prawej stronie listy uzupełniania. Nie można ręcznie wywołać szybkich informacji.
 
-  - `comment`. Zwraca ciąg, który zawiera komentarz parametru.  
-  
-### <a name="FunctionHelp"></a> functionHelp właściwości  
- Zwraca pomocy dla tej funkcji. Ta właściwość jest dostępna dla `signaturehelp` obiektem zdarzenia.  
-  
- Wartość zwracana: `functionHelp` obiektu  
-  
- Poniżej przedstawiono elementy członkowskie `functionHelp` obiektu:  
-  
-- `functionName`. Odczyt/zapis. Zwraca ciąg zawierający nazwę funkcji.  
-  
-- `signatures`. Odczyt/zapis. Pobiera lub ustawia tablicę sygnatur funkcji. Każdy element w tablicy jest `signature` obiektu. Niektóre `signature` właściwości, takie jak `locid`, odpowiadają na typowe [komentarze dokumentacji XML](../ide/xml-documentation-comments-javascript.md) atrybutów.  
-  
-  Elementy członkowskie `signature` obiektu obejmują:  
+## <a name="intellisenseObject"></a>Obiekt IntelliSense
+ W poniższej tabeli przedstawiono funkcje, które są dostępne dla obiektu `intellisense`. Obiekt `intellisense` jest dostępny tylko w czasie projektowania.
 
-  - `description`. Odczyt/zapis. Zwraca ciąg, który opisuje funkcji.  
+|Funkcja|Opis|
+|--------------|-----------------|
+|`addEventListener(type, handler);`|Dodaje procedurę obsługi zdarzeń dla zdarzenia IntelliSense.<br /><br /> `type` jest wartością ciągu. Prawidłowe wartości to `statementcompletion`, `signaturehelp` i `statementcompletionhint`.<br /><br /> `handler` to funkcja obsługi zdarzeń, która odbiera obiekt zdarzenia jednego z następujących typów:<br /><br /> `CompletionEvent` -    używany dla zdarzenia `statementcompletion`.<br />`SignatureHelpEvent` -    używany dla zdarzenia `signaturehelp`.<br />`CompletionHintEvent` -    używany dla zdarzenia `statementcompletionhint`.<br /><br /> Przykłady korzystające z tej funkcji znajdują się w sekcji [przykłady kodu](#CodeExamples).|
+|`annotate(obj, doc);`|Określa dokumentację obiektu przez skopiowanie komentarzy do dokumentacji z jednego obiektu do innego obiektu.<br /><br /> `obj` określa obiekt, do którego ma zostać skopiowana dokumentacja.<br /><br /> `doc` określa obiekt, z którego ma zostać skopiowana dokumentacja.<br /><br /> Aby zapoznać się z przykładem, który pokazuje, jak używać tej funkcji, zobacz [Dodawanie adnotacji IntelliSense](#Annotations).|
+|`getFunctionComments(func);`|Zwraca komentarze dla określonej funkcji.<br /><br /> `func` określa funkcję, dla której są zwracane Komentarze.<br /><br /> Parametr `func` można ustawić przy użyciu `completionItem.value`.<br /><br /> Zwrócony obiekt `functionComments` zawiera następujących członków: `above`, `inside` i `paramComment`. Aby uzyskać więcej informacji, zobacz Właściwość [Właściwości functionComments](#FunctionComments) .<br /><br /> `getFunctionComments` można wywołać tylko z poziomu jednego z programów obsługi zdarzeń zarejestrowanych przez `addEventListener`.<br /><br /> Aby zapoznać się z przykładem, który pokazuje, jak używać tej funkcji, zobacz \\ \\*ścieżka instalacji programu Visual Studio*\JavaScript\References\showPlainComments.js.|
+|`logMessage(msg);`|Wysyła komunikaty diagnostyczne do okna danych wyjściowych.<br /><br /> `msg` jest ciągiem zawierającym komunikat.<br /><br /> Aby zapoznać się z przykładem, który pokazuje, jak używać tej funkcji, zobacz [wysyłanie komunikatów do okno dane wyjściowe](#Logging).|
+|`nullWithCompletionsOf(value);`|Zwraca specjalną wartość null, dla której lista uzupełniania jest określana przez obiekt przekazaną w parametrze `value`.<br /><br /> `value` określa listę uzupełniania dla zwracanej wartości. `value` może być dowolnego typu.<br /><br /> Wartość zwracana null jest traktowana jako null w czasie projektowania, ale lista uzupełniania dla wartości zwracanej jest taka sama jak lista uzupełniania dla parametru `value`.<br /><br /> Jednym z nich użycia dla tej funkcji jest dostarczenie IntelliSense wartości zwracanej, gdy typ zwracany jest przewidywalny w czasie wykonywania, ale wartość zwracana jest `null` w czasie projektowania.|
+|`redirectDefinition(func, definition);`|Instruuje funkcję IntelliSense, aby używała podanej funkcji definicji zamiast oryginalnej funkcji Func, gdy żądanie pomocy lub **Przechodzenie do definicji** jest wymagane.<br /><br /> `func` określa funkcję docelową.<br /><br /> `definition` określa funkcję, która ma być używana zamiast funkcji docelowej dla informacji o parametrach i **Przejdź do definicji**.|
+|`setCallContext(func, thisArg);`|Ustawia kontekst wywołań lub zakres dla określonej funkcji.<br /><br /> `func` określa funkcję, dla której ma zostać ustawiony zakres.<br /><br /> `thisArg` to literał obiektu, do którego `this` może odwoływać się słowo kluczowe, które określa nowy zakres dla elementu członkowskiego. Można dołączać argumenty do przekazania tego parametru, na przykład `intellisense.setCallContext(func, { thisArg: "", args: [23,2] });`<br /><br /> `setCallContext` zapewnia zachowanie podobne do `Function.prototype.bind`, z tą różnicą, że jest używane tylko do obsługi technologii IntelliSense w czasie projektowania. Za pomocą `setCallContext` można ustawić zakres funkcji, jeśli trzeba symulować wywołanie do kodu, który nie jest dostępny w inny sposób, więc po wywołaniu funkcji wywołanie funkcji będzie zawierać poprawny zakres i argumenty.|
+|`undefinedWithCompletionsOf(value);`|Zwraca specjalną niezdefiniowaną wartość, dla której lista uzupełniania jest określana przez obiekt przekazaną w parametrze `value`.<br /><br /> `value` określa listę uzupełniania dla zwracanej wartości. `value` może być dowolnego typu.<br /><br /> Niezdefiniowana wartość zwrotna jest traktowana jako niezdefiniowana w czasie projektowania, ale lista uzupełniania dla wartości zwracanej jest taka sama jak lista uzupełniania dla parametru `value`.<br /><br /> Jednym z nich użycia dla tej funkcji jest dostarczenie technologii IntelliSense dla wartości zwracanej, gdy typ zwracany jest przewidywalny w czasie wykonywania, ale wartość zwracana jest niezdefiniowana w czasie projektowania.|
+|`version()`|Zwraca wersję programu Visual Studio.|
 
-  - `locid`. Odczyt/zapis. Zwraca identyfikator ciągu, który zawiera informacje na temat funkcji lokalizacji.  
+## <a name="event-members"></a>Elementy członkowskie zdarzeń
+ W poniższych sekcjach opisano elementy członkowskie, które są uwidocznione w obiekcie Event dla następujących zdarzeń: `statementcompletion`, `signaturehelp` i `statementcompletionhint`.
 
-  - `helpKeyword`. Odczyt/zapis. Zwraca ciąg, który zawiera słowo kluczowe pomocy.  
+### <a name="CompletionItem"></a>Właściwość completionItem
+ Zwraca identyfikator, znany jako element uzupełniania, dla którego zażądano okna podręcznego szybkiej informacji. Ta właściwość jest dostępna dla obiektu zdarzenia `statementcompletionhint` i dla właściwości [Items](#Items) obiektu zdarzenia `statementcompletion`.
 
-  - `externalFile`. Odczyt/zapis. Zwraca ciąg reprezentujący plik, który zawiera identyfikator elementu członkowskiego.  
+ Wartość zwracana: `completionItem` obiektu
 
-  - `externalid`. Odczyt/zapis. Zwraca ciąg, który reprezentuje identyfikator elementu członkowskiego funkcji.  
+ Poniżej znajdują się elementy członkowskie obiektu `completionItem`:
 
-  - `params`. Odczyt/zapis. Pobiera lub ustawia tablicę parametrów funkcji. Każdy element w tablicy parametrów jest `parameter` obiekt, który ma właściwości, które odpowiadają na następujące atrybuty [ \<param >](../ide/param-javascript.md) elementu:  
+- `name`., Odczyt/zapis, gdy jest używany w kolekcji `items`. w przeciwnym razie, tylko do odczytu. Zwraca ciąg, który identyfikuje element uzupełniający.
 
-    - `name`. Odczyt/zapis. Zwraca ciąg reprezentujący nazwę parametru.  
+- `kind`., Odczyt/zapis, gdy jest używany w kolekcji `items`. w przeciwnym razie, tylko do odczytu. Zwraca ciąg, który reprezentuje typ elementu ukończenia. Możliwe wartości to metody, pola, właściwości, parametru, zmiennej i zastrzeżone.
 
-    - `type`. Odczyt/zapis. Zwraca ciąg, który reprezentuje typ parametru.  
+- `glyph`., Odczyt/zapis, gdy jest używany w kolekcji `items`. w przeciwnym razie, tylko do odczytu. Zwraca ciąg, który reprezentuje ikonę wyświetlaną na liście uzupełniania. Możliwe wartości `glyph` używają następującego formatu: vs:*symbolType*, gdzie *symbolType* odpowiada członkom niezależnym od języka w wyliczeniu <xref:Microsoft.VisualStudio.Language.Intellisense.StandardGlyphGroup>. Na przykład `vs:GlyphGroupMethod` jest jedną z możliwych wartości dla `glyph`. Gdy `glyph` nie jest ustawiona, właściwość `kind` określa ikonę domyślną.
 
-    - `elementType`. Odczyt/zapis. Jeśli typ jest `Array`, zwraca wartość typu ciąg, który reprezentuje typ elementów w tablicy.  
+- `parentObject`., Tylko do odczytu. Zwraca obiekt nadrzędny.
 
-    - `description`. Odczyt/zapis. Zwraca ciąg, który opisuje parametr.  
+- `value`., Tylko do odczytu. Zwraca obiekt, który reprezentuje wartość elementu ukończenia.
 
-    - `locid`. Odczyt/zapis. Zwraca identyfikator ciągu, który zawiera informacje na temat funkcji lokalizacji.  
+- `comments`., Tylko do odczytu. Zwraca ciąg zawierający komentarze powyżej pola lub zmiennej.
 
-    - `optional`. Odczyt/zapis. Zwraca ciąg, który wskazuje, czy parametr jest opcjonalny. `true` Wskazuje, że parametr jest opcjonalny; `false` wskazuje, że nie jest.  
+- `scope`., Tylko do odczytu. Zwraca zakres elementu ukończenia. Możliwe wartości to globalne, lokalne, parametr i składowa.
 
-  - `returnValue`. Odczyt/zapis. Pobiera lub ustawia obiekt o zwracanej wartości właściwości, które odpowiadają na następujące atrybuty [ \<zwraca >](../ide/returns-javascript.md) elementu:  
+### <a name="Items"></a>Items — właściwość
+ Pobiera lub ustawia tablicę elementów uzupełniania instrukcji. Każdy element w tablicy jest obiektem [Właściwości completionItem](#CompletionItem) . Właściwość `items` jest dostępna dla obiektu zdarzenia `statementcompletion`.
 
-    - `type`. Odczyt/zapis. Zwraca ciąg, który reprezentuje typ zwracany.  
+ Wartość zwracana: tablica
 
-    - `elementType`. Odczyt/zapis. Jeśli typ jest `Array`, zwraca wartość typu ciąg, który reprezentuje typ elementów w tablicy.  
+### <a name="FunctionComments"></a>Właściwość functionComments
+ Zwraca komentarze dla funkcji. Ta właściwość jest dostępna dla obiektu zdarzenia `signaturehelp`.
 
-    - `description`. Odczyt/zapis. Zwraca ciąg, który opisuje wartość zwracaną.  
+ Wartość zwracana: `comments` obiektu
 
-    - `locid`. Odczyt/zapis. Zwraca identyfikator ciągu, który zawiera informacje na temat funkcji lokalizacji.  
+ Poniżej znajdują się elementy członkowskie obiektu `comments`:
 
-    - `helpKeyword`. Odczyt/zapis. Zwraca ciąg, który zawiera słowo kluczowe pomocy.  
+- `above`., Zwraca komentarze powyżej funkcji.
 
-    - `externalFile`. Odczyt/zapis. Zwraca ciąg reprezentujący plik, który zawiera identyfikator elementu członkowskiego.  
+- `inside`., Zwraca komentarze wewnątrz funkcji, zazwyczaj w formacie VSDoc.
 
-    - `externalid`. Odczyt/zapis. Zwraca ciąg, który reprezentuje identyfikator elementu członkowskiego funkcji.  
-  
-### <a name="ParentObject"></a> parentObject właściwości  
- Zwraca wartość obiektu nadrzędnego dla funkcji członkowskiej. Na przykład w przypadku `document.getElementByID`, `parentObject` zwraca `document` obiektu. Ta właściwość jest dostępna dla `signaturehelp` obiektem zdarzenia.  
-  
- Wartość zwracana: obiekt  
-  
-### <a name="Target"></a> Właściwość docelowa  
- Zwraca obiekt, który reprezentuje element po lewej stronie znaku wyzwalacza, który jest znak kropki (.). W przypadku funkcji `target` zwraca funkcję, dla którego wnioskuje się o parametrach. Ta właściwość jest dostępna dla `statementcompletion` i `signaturehelp` obiekty zdarzeń.  
-  
- Wartość zwracana: obiekt  
-  
-### <a name="TargetName"></a> targetName właściwości  
- Zwraca ciąg, który reprezentuje element docelowy. Na przykład "this." `targetName` zwraca "this". Aby uzyskać "A.B" (gdy kursor znajduje się po "B") `targetName` zwraca "B". Ta właściwość jest dostępna dla `statementcompletion` obiektem zdarzenia.  
-  
- Wartość zwracana: ciąg  
-  
-### <a name="SymbolHelp"></a> symbolHelp właściwości  
- Zwraca element zakończenia, dla którego żądana jest wyskakującym Quick Info. Ta właściwość jest dostępna dla `statementcompletionhint` obiektem zdarzenia.  
-  
- Wartość zwracana: `symbolHelp` obiektu.  
-  
- Niektóre właściwości `symbolHelp` obiektów, takich jak `locid`, odpowiadają na typowe [komentarze dokumentacji XML](../ide/xml-documentation-comments-javascript.md) atrybutów.  
-  
- Poniżej przedstawiono elementy członkowskie `symbolHelp` obiektu:  
-  
-- `name`. Odczyt/zapis. Zwraca ciąg zawierający nazwę identyfikatora.  
-  
-- `symbolType`. Odczyt/zapis. Zwraca ciąg, który reprezentuje typ symbolu. Możliwe wartości to nieznany, atrybut typu wartość logiczna, numer, ciąg, obiekt, funkcji, tablicy, Data i wyrażeń regularnych.  
-  
-- `symbolDisplayType`. Odczyt/zapis. Zwraca ciąg zawierający nazwę typu do wyświetlenia. Jeśli `symbolDisplayType` nie ustawiono `symbolType` jest używany.  
-  
-- `elementType`. Odczyt/zapis. Jeśli `symbolType` jest `Array`, zwraca wartość typu ciąg, który reprezentuje typ elementów w tablicy.  
-  
-- `scope`. Odczyt/zapis. Zwraca ciąg, który reprezentuje zakres symbolu. Możliwe wartości to globalnego, lokalnych, parametrów i elementu członkowskiego.  
-  
-- `description`. Odczyt/zapis. Zwraca ciąg, który zawiera opis symbolu.  
-  
-- `locid`. Odczyt/zapis. Zwraca identyfikator ciągu, który zawiera informacje o lokalizacji o symbolu.  
-  
-- `helpKeyword`. Odczyt/zapis. Zwraca ciąg, który zawiera słowo kluczowe pomocy.  
-  
-- `externalFile`. Odczyt/zapis. Zwraca ciąg reprezentujący plik, który zawiera identyfikator elementu członkowskiego.  
-  
-- `externalid`. Odczyt/zapis. Zwraca ciąg, który reprezentuje identyfikator elementu członkowskiego symbolu.  
-  
-- `functionHelp`. Odczyt/zapis. Zwraca [functionHelp właściwość](#FunctionHelp), które mogą zawierać informacje podczas `symbolType` jest funkcją.  
-  
-### <a name="Scope"></a> Określanie zakresu właściwości  
- Zwraca wartość zakresu zakończenia zdarzenia. Możliwe wartości zakończenia zakresu są globalne i elementów członkowskich. Ta właściwość jest dostępna dla `statementcompletion` obiektem zdarzenia.  
-  
- Wartość zwracana: ciąg  
-  
-## <a name="debugging-intellisense-extensions"></a>Debugowanie rozszerzeń IntelliSense  
- Nie można debugować rozszerzenia, ale można użyć [intellisense obiektu ](#intellisenseObject) /funkcja do wysyłania informacji do okna programu Visual Studio danych wyjściowych. Na przykład, który pokazuje, jak użyć tej funkcji, zobacz [wysyłania wiadomości do okna danych wyjściowych](#Logging) w dalszej części tego tematu. Aby uzyskać `logMessage` do pracy, co najmniej jedna procedura obsługi zdarzeń musi być zarejestrowana w rozszerzeniu.  
-  
-## <a name="CodeExamples"></a> Przykłady kodu  
- Ta sekcja zawiera przykłady kodu, które pokazują, jak używać interfejsów API rozszerzania funkcji IntelliSense. Istnieją również inne sposoby korzystania z tych interfejsów API. Aby uzyskać dodatkowe przykłady, zobacz następujące pliki w \\ \\ *ścieżka instalacji programu Visual Studio*\JavaScript\References folderu. Działają one przykłady używane przez usługę języka JavaScript.  
-  
-- underscoreFilter.js. Ten kod powoduje ukrycie opcji prywatnych elementów członkowskich z technologii IntelliSense. Obejmuje programy obsługi zdarzeń dla `statementcompletion` zdarzeń.  
-  
-- showPlainComments.js. Ten kod zapewnia obsługę technologii IntelliSense dla standardowych komentarzy. Obejmuje programy obsługi zdarzeń dla `signaturehelp` i `statementcompletionhint` zdarzenia.  
-  
-### <a name="Annotations"></a> Dodawanie adnotacji IntelliSense  
- Poniższa procedura pokazuje, jak do obsługi technologii IntelliSense dokumentacji biblioteki innej firmy bez konieczności wprowadzania zmian bezpośrednio w bibliotece. Aby to zrobić, można użyć `intellisense.annotate` w rozszerzeniu.  
-  
- W tym przykładzie do pracy potrzebne są następujące pliki JavaScript w projekcie:  
-  
-- demoLib.js, czyli pliku projektu, który reprezentuje biblioteki innej firmy.  
-  
-- demoLib.intellisense.js, która jest rozszerzeniem IntelliSense. Ten plik nie musi być zawarty w projekcie, ale musi on znajdować się w tym samym folderze co exampleLib.js.  
-  
-- appCode.js, czyli pliku projektu, który reprezentuje kod aplikacji.  
-  
-##### <a name="to-add-an-intellisense-annotation"></a>Dodawanie adnotacji IntelliSense  
-  
-1. Dodaj następujący kod do demoLib.js.  
-  
-    ```javascript  
-    function someFunc(a) { };  
-    var rectangle;  
-  
-    ```  
-  
-2. Dodaj następujący kod do demoLib.intellisense.js.  
-  
-    ```javascript  
-    intellisense.annotate(someFunc, function (a) {  
-        /// <signature>  
-        /// <summary>Description of someFunc</summary>  
-        /// <param name="a">Param a</param>  
-        /// </signature>  
-    });  
-  
-    intellisense.annotate(window, {  
-        // This is a comment on a global variable named rectangle.  
-        rectangle: undefined  
-    });  
-    ```  
-  
-3. Dodaj następujące dyrektywy odwołania jako pierwszy wiersz w appCode.js. Ścieżka, w tym miejscu użyć wskazuje, czy pliki JavaScript, w tym samym folderze.  
-  
-    ```javascript  
-    /// <reference path="demoLib.js" />  
-  
-    ```  
-  
-4. W appCode.js wpisz następujący kod. Zobaczysz komentarze dokumentacji XML w rozszerzeniu wyświetlane jako informacje o parametrach funkcji IntelliSense.  
-  
-     ![Przykład przedstawiający zastosowanie intellisense.annotate](../ide/media/js-intellisense-annotate-paraminfo.png "js_intellisense_annotate_paraminfo")  
-  
-5. W appCode.js wpisz następujący kod. Podczas wpisywania, zobaczysz standardowych komentarzy w rozszerzeniu wyświetlane jako szybkie informacje technologii IntelliSense.  
-  
-     ![Przykład przedstawiający zastosowanie intellisense.annotate](../ide/media/js-intellisense-annotations.png "js_intellisense_annotations")  
-  
-### <a name="Logging"></a> Wysyłanie komunikatów do okna danych wyjściowych  
- Poniższa procedura pokazuje, jak wysyłać komunikaty do okna danych wyjściowych. Może wysyłać wiadomości, aby pomóc w debugowaniu rozszerzeń IntelliSense.  
-  
- W tym przykładzie do pracy potrzebne są następujące pliki JavaScript w projekcie:  
-  
-- exampleLib.js, czyli pliku projektu, który reprezentuje biblioteki innej firmy.  
-  
-- exampleLib.intellisense.js, która jest rozszerzeniem IntelliSense. Ten plik nie musi być zawarty w projekcie, ale musi on znajdować się w tym samym folderze co exampleLib.js.  
-  
-- appCode.js, czyli pliku projektu, który reprezentuje kod aplikacji.  
-  
-##### <a name="to-send-a-message-to-the-output-window"></a>Aby wysłać komunikat w oknie danych wyjściowych  
-  
-1. Dodaj następujący kod do exampleLib.js.  
-  
-    ```javascript  
-    var someVar = {  
-        a: 1,  
-        b: 'hello'  
-    };  
-    ```  
-  
-2. Dodaj następujący kod do exampleLib.intellisense.js.  
-  
-    ```javascript  
-    intellisense.addEventListener('statementcompletion', function (e) {  
-        // Prints out statement completion info: Either (1) the member   
-        // list, if the trigger character was typed, or (2) the   
-        // statement completion identifiers.  
-        // e.target represents the object left of the trigger character.  
-        intellisense.logMessage(  
-            e.target ? 'member list requested, target: ' + e.targetName : 'statement completion for current scope requested');  
-  
-        // Prints out all statement completion items.  
-        e.items.forEach(function (item) {  
-            intellisense.logMessage('[completion item] ' + item.name + ', kind:' + item.kind + ', scope:' + item.scope + ', value:' + item.value);  
-        });  
-    });  
-    ```  
-  
-3. Dodaj następujące dyrektywy odwołania jako pierwszy wiersz w appCode.js. Ścieżka, w tym miejscu użyć wskazuje, czy pliki JavaScript, w tym samym folderze.  
-  
-    ```javascript  
-    /// <reference path="exampleLib.js" />  
-  
-    ```  
-  
-4. W oknie danych wyjściowych wybierz **usługę językową JavaScript** w **Pokaż dane wyjściowe z** listy. (Zaznacz, aby wyświetlić okno danych wyjściowych **dane wyjściowe** z menu Widok.)  
-  
-5. W appCode.js wpisz następujący kod. Podczas wpisywania, w oknie danych wyjściowych zawiera komunikaty z usługi języka. Pierwszy komunikat w oknie danych wyjściowych wskazuje zażądano uzupełniania instrukcji dla bieżącego zakresu.  
-  
-    ```javascript  
-    some  
-    ```  
-  
-     Oto widok częściowy wynik, który powinien zostać wyświetlony.  
-  
-    ```scr  
-    03:16:14.3113: statement completion for current scope requested  
-    03:16:14.3113: [completion item] break, kind:reserved, scope:undefined, value:undefined  
-    03:16:14.3113: [completion item] case, kind:reserved, scope:undefined, value:undefined  
-    03:16:14.3113: [completion item] catch, kind:reserved, scope:undefined, value:undefined  
-  
-    …  
-    ```  
-  
-6. Wybierz **Wyczyść wszystko** przycisku w oknie danych wyjściowych.  
-  
-7. Wpisz następujący kod. Pierwszy komunikat w oknie dane wyjściowe wskazuje zażądano listy członków.  
-  
-    ```javascript  
-    someVar.  
-    ```  
-  
-     Oto widok częściowy wynik, który powinien zostać wyświetlony:  
-  
-    ```scr  
-    03:17:43.4032: member list requested, target: someVar  
-    03:17:43.4032: [completion item] a, kind:field, scope:member, value:1  
-    03:17:43.4032: [completion item] b, kind:field, scope:member, value:hello  
-    03:17:43.4032: [completion item] constructor, kind:method, scope:member, value:  
-  
-    …  
-    ```  
-  
-### <a name="Icons"></a> Zmiana ikony IntelliSense  
- Poniższa procedura pokazuje, jak zmienić ikony domyślnie wyświetlane przez technologię IntelliSense. Może to być przydatne, gdy zawierają IntelliSense informacji na temat pojęć specyficznych dla biblioteki, takich jak przestrzenie nazw, klasy, interfejsy i wyliczenia.  
-  
- Ikona dostępne wartości, zobacz <xref:Microsoft.VisualStudio.Language.Intellisense.StandardGlyphGroup>.  
-  
- W tym przykładzie do pracy potrzebne są następujące pliki JavaScript w projekcie:  
-  
-- exampleLib.js, czyli projektu pliku biblioteki represens innych firm.  
-  
-- exampleLib.intellisense.js, która jest rozszerzeniem IntelliSense. Ten plik nie musi być zawarty w projekcie, ale musi on znajdować się w tym samym folderze co exampleLib.js.  
-  
-- appCode.js, czyli pliku projektu, który reprezentuje kod aplikacji.  
-  
-##### <a name="to-change-the-icons"></a>Aby zmienić ikony  
-  
-1. Dodaj następujący kod do exampleLib.js.  
-  
-    ```javascript  
-    function Namespace(name) {  
-        this._isNamespace = true;  
-        window[name] = this;  
-    };  
-  
-    function Enum(values) {  
-        var e = Object.create(values);  
-        e._isEnum = true;  
-        return e;  
-    };  
-  
-    var SomeNamespace = new Namespace('SomeNamespace');  
-    // A constructor function is considered a class.  
-    SomeNamespace.SomeClass1 = function () { }  
-    SomeNamespace.Enum1 = new Enum({ VALUE1: 0, VALUE2: 1 });  
-    ```  
-  
-2. Dodaj następujący kod do exampleLib.intellisense.js.  
-  
-    ```javascript  
-    intellisense.addEventListener('statementcompletion', function (e) {  
-        e.items.forEach(function (item) {  
-            // Detect a namespace by using the _isNamespace flag.  
-            if (item.value && item.value._isNamespace) {  
-                item.glyph = 'vs:GlyphGroupNamespace';  
-                }  
-  
-            if (item.parentObject && item.parentObject._isNamespace) {  
-                // The item is a member of a namespace.   
-  
-                // All constructor functions that are part of a namespace   
-                // are considered classes.   
-                // A constructor function starts with  
-                // an uppercase letter by convention.    
-                if (typeof item.value == 'function' && (item.name[0].toUpperCase()   
-                    == item.name[0])) {  
-                    item.glyph = 'vs:GlyphGroupClass';  
-                }  
-  
-                // Detect an enumeration by using the _isEnum flag.  
-                if (item.value && item.value._isEnum) {  
-                    item.glyph = 'vs:GlyphGroupEnum';  
-                }  
-            }  
-        });  
-    });  
-  
-    intellisense.addEventListener('statementcompletionhint', function (e) {  
-        if (e.completionItem.value) {  
-            if (e.completionItem.value._isNamespace) {  
-                e.symbolHelp.symbolDisplayType = 'Namespace';  
-            }  
-            if (e.completionItem.value._isEnum) {  
-                e.symbolHelp.symbolDisplayType = 'Enum';  
-            }  
-        }  
-    });  
-    ```  
-  
-3. Dodaj następujące dyrektywy odwołania jako pierwszy wiersz w appCode.js. Ścieżka, w tym miejscu użyć wskazuje, czy pliki JavaScript, w tym samym folderze.  
-  
-    ```javascript  
-    /// <reference path="exampleLib.js" />  
-  
-    ```  
-  
-4. W appCode.js wpisz następujący kod. Podczas wpisywania, zobaczysz, że ikona przestrzeń nazw została zmieniona na "{}", ponieważ jest używany w języku C#.  
-  
-     ![Przykład: użycie właściwości symbol](../ide/media/js-intellisense-glyph-namespace.png "js_intellisense_glyph_namespace")  
-  
-5. W appCode.js wpisz następujący kod. Podczas wpisywania pojawi się nowa ikona wyliczenie dla elementu członkowskiego Enum1 i nową ikonę klasy dla elementu członkowskiego SomeClass1.  
-  
-     ![Przykład: użycie właściwości symbol](../ide/media/js-intellisense-glyph-class-enum.png "js_intellisense_glyph_class_enum")  
-  
-### <a name="Overriding"></a> Unikanie środowiska wykonawczego wpływ na wyniki funkcji IntelliSense  
- Usługa języka JavaScript działa kod w celu dynamicznego udostępniania informacji IntelliSense. W rezultacie zachowania w czasie wykonywania od czasu do czasu może zakłócać zakładanych wyników. Poniższa procedura przedstawia sposób przesłonięcia wyniki funkcji IntelliSense, gdy IntelliSense niepoprawne powoduje zachowanie w czasie wykonywania.  
-  
- W tym przykładzie do pracy potrzebne są następujące pliki JavaScript w projekcie:  
-  
-- exampleLib.js, czyli pliku projektu, który reprezentuje biblioteki innej firmy.  
-  
-- exampleLib.intellisense.js, która jest rozszerzeniem IntelliSense. Ten plik nie musi być zawarty w projekcie, ale musi on znajdować się w tym samym folderze co exampleLib.js.  
-  
-- appCode.js, czyli pliku projektu, który reprezentuje kod aplikacji.  
-  
-##### <a name="to-avoid-run-time-effects-on-intellisense-results"></a>Aby uniknąć środowiska wykonawczego wpływ na wyniki funkcji IntelliSense  
-  
-1. Dodaj następujący kod do exampleLib.js.  
-  
-    ```javascript  
-    function after(count, func) {  
-        return function () {  
-            if (--times < 1) {  
-                return func.apply(this, arguments);  
-            }  
-        };  
-    };  
-    ```  
-  
-     W poprzednim kodzie opakowana Funkcja ignoruje początkowego połączenia, na podstawie wartości z `count`, a nie zwracają wartości.  
-  
-2. Dodaj następujące dyrektywy odwołania jako pierwszy wiersz w appCode.js. Ścieżka, w tym miejscu użyć wskazuje, czy pliki JavaScript, w tym samym folderze.  
-  
-    ```javascript  
-    /// <reference path="exampleLib.js" />  
-  
-    ```  
-  
-3. W appCode.js wpisz następujący kod. Lista identyfikatorów pojawia się zamiast funkcji IntelliSense, ponieważ opakowana funkcja nigdy nie jest wywoływana, co oznacza, że `throttled` funkcja nie zwraca żadnych wyników.  
-  
-     ![Przykład zastępowanie wyniki intellisense](../ide/media/js-intellisense-override.png "js_intellisense_override")  
-  
-4. Dodaj następujący kod do exampleLib.intellisense.js. Spowoduje to zmianę zachowania w czasie projektowania, aby opakowana funkcja IntelliSense przedstawiono zgodnie z oczekiwaniami.  
-  
-    ```javascript  
-    window.after = function (count, func) {  
-        // Just return func.   
-        return func;  
-    };  
-    ```  
-  
-5. W appCode.js wyniki testów, wpisując ten sam kod, który wcześniej wpisane. Tym razem IntelliSense zawiera żądane informacje.  
-  
-     ![Przykład zastępowanie wyniki IntelliSense](../ide/media/js-intellisense-override-fixed.png "js_intellisense_override_fixed")  
-  
-## <a name="see-also"></a>Zobacz też  
- [JavaScript IntelliSense](../ide/javascript-intellisense.md)   
- [Uzupełnianie instrukcji dla identyfikatorów](../ide/statement-completion-for-identifiers.md)
+- `paramComments`., Zwraca tablicę reprezentującą komentarze dla każdego parametru w funkcji. Elementy członkowskie tablicy obejmują:
+
+  - `name`., Zwraca ciąg reprezentujący nazwę parametru.
+
+  - `comment`., Zwraca ciąg zawierający komentarz do parametru.
+
+### <a name="FunctionHelp"></a>Właściwość functionHelp
+ Zwraca pomoc dla funkcji. Ta właściwość jest dostępna dla obiektu zdarzenia `signaturehelp`.
+
+ Wartość zwracana: `functionHelp` obiektu
+
+ Poniżej znajdują się elementy członkowskie obiektu `functionHelp`:
+
+- `functionName`., Odczyt/zapis. Zwraca ciąg, który zawiera nazwę funkcji.
+
+- `signatures`., Odczyt/zapis. Pobiera lub ustawia tablicę sygnatur funkcji. Każdy element w tablicy jest obiektem `signature`. Niektóre `signature` właściwości, takie jak `locid`, odpowiadają typowym atrybutom [komentarzy dokumentacji XML](../ide/xml-documentation-comments-javascript.md) .
+
+  Elementy członkowskie obiektu `signature` obejmują:
+
+  - `description`., Odczyt/zapis. Zwraca ciąg opisujący funkcję.
+
+  - `locid`., Odczyt/zapis. Zwraca identyfikator ciągu, który zawiera informacje o lokalizacji funkcji.
+
+  - `helpKeyword`., Odczyt/zapis. Zwraca ciąg zawierający słowo kluczowe pomocy.
+
+  - `externalFile`., Odczyt/zapis. Zwraca ciąg reprezentujący plik, który zawiera identyfikator elementu członkowskiego.
+
+  - `externalid`., Odczyt/zapis. Zwraca ciąg, który reprezentuje identyfikator elementu członkowskiego funkcji.
+
+  - `params`., Odczyt/zapis. Pobiera lub ustawia tablicę parametrów dla funkcji. Każdy element w tablicy parametrów jest obiektem `parameter`, który ma właściwości, które odpowiadają następującym atrybutom [\<param >](../ide/param-javascript.md) elementu:
+
+    - `name`., Odczyt/zapis. Zwraca ciąg, który reprezentuje nazwę parametru.
+
+    - `type`., Odczyt/zapis. Zwraca ciąg, który reprezentuje typ parametru.
+
+    - `elementType`., Odczyt/zapis. Jeśli typ jest `Array`, zwraca ciąg, który reprezentuje typ elementów w tablicy.
+
+    - `description`., Odczyt/zapis. Zwraca ciąg opisujący parametr.
+
+    - `locid`., Odczyt/zapis. Zwraca identyfikator ciągu, który zawiera informacje o lokalizacji funkcji.
+
+    - `optional`., Odczyt/zapis. Zwraca ciąg, który wskazuje, czy parametr jest opcjonalny. `true` wskazuje, że parametr jest opcjonalny;  `false` wskazuje, że nie jest.
+
+  - `returnValue`., Odczyt/zapis. Pobiera lub ustawia obiekt wartości zwracanej z właściwościami odpowiadającymi następującym atrybutom [> \<returns](../ide/returns-javascript.md) elementu:
+
+    - `type`., Odczyt/zapis. Zwraca ciąg, który reprezentuje zwracany typ.
+
+    - `elementType`., Odczyt/zapis. Jeśli typ jest `Array`, zwraca ciąg, który reprezentuje typ elementów w tablicy.
+
+    - `description`., Odczyt/zapis. Zwraca ciąg, który opisuje wartość zwracaną.
+
+    - `locid`., Odczyt/zapis. Zwraca identyfikator ciągu, który zawiera informacje o lokalizacji funkcji.
+
+    - `helpKeyword`., Odczyt/zapis. Zwraca ciąg zawierający słowo kluczowe pomocy.
+
+    - `externalFile`., Odczyt/zapis. Zwraca ciąg reprezentujący plik, który zawiera identyfikator elementu członkowskiego.
+
+    - `externalid`., Odczyt/zapis. Zwraca ciąg, który reprezentuje identyfikator elementu członkowskiego funkcji.
+
+### <a name="ParentObject"></a>ParentObject — właściwość
+ Zwraca obiekt nadrzędny funkcji składowej. Na przykład w przypadku `document.getElementByID` `parentObject` zwraca obiekt `document`. Ta właściwość jest dostępna dla obiektu zdarzenia `signaturehelp`.
+
+ Wartość zwracana: obiekt
+
+### <a name="Target"></a>Target — właściwość
+ Zwraca obiekt, który reprezentuje element po lewej stronie znaku wyzwalacza, który jest kropką (.). W przypadku funkcji `target` zwraca funkcję, dla której żądane są informacje o parametrach. Ta właściwość jest dostępna dla obiektów zdarzeń `statementcompletion` i `signaturehelp`.
+
+ Wartość zwracana: obiekt
+
+### <a name="TargetName"></a>TargetName — właściwość
+ Zwraca ciąg, który reprezentuje element docelowy. Na przykład dla elementu "this." `targetName` zwraca wartość "This". Dla "A. B" (gdy kursor jest po "B"), `targetName` zwraca "B". Ta właściwość jest dostępna dla obiektu zdarzenia `statementcompletion`.
+
+ Wartość zwracana: ciąg
+
+### <a name="SymbolHelp"></a>Właściwość symbolHelp
+ Zwraca element ukończenia, dla którego zażądano okna podręcznego szybkiej informacji. Ta właściwość jest dostępna dla obiektu zdarzenia `statementcompletionhint`.
+
+ Wartość zwracana: `symbolHelp` obiektu.
+
+ Niektóre właściwości obiektu `symbolHelp`, takie jak `locid`, odpowiadają typowym atrybutom [komentarzy dokumentacji XML](../ide/xml-documentation-comments-javascript.md) .
+
+ Poniżej znajdują się elementy członkowskie obiektu `symbolHelp`:
+
+- `name`., Odczyt/zapis. Zwraca ciąg, który zawiera nazwę identyfikatora.
+
+- `symbolType`., Odczyt/zapis. Zwraca ciąg, który reprezentuje typ symbolu. Możliwe wartości to: nieznana, wartość logiczna, liczba, ciąg, obiekt, funkcja, tablica, Data i wyrażenie regularne.
+
+- `symbolDisplayType`., Odczyt/zapis. Zwraca ciąg, który zawiera nazwę typu do wyświetlenia. Jeśli `symbolDisplayType` nie jest ustawiona, `symbolType` jest używany.
+
+- `elementType`., Odczyt/zapis. Jeśli `symbolType` jest `Array`, zwraca ciąg, który reprezentuje typ elementów w tablicy.
+
+- `scope`., Odczyt/zapis. Zwraca ciąg, który reprezentuje zakres symbolu. Możliwe wartości to globalne, lokalne, parametr i składowa.
+
+- `description`., Odczyt/zapis. Zwraca ciąg, który zawiera opis symbolu.
+
+- `locid`., Odczyt/zapis. Zwraca identyfikator ciągu, który zawiera informacje o lokalizacji dotyczące symbolu.
+
+- `helpKeyword`., Odczyt/zapis. Zwraca ciąg zawierający słowo kluczowe pomocy.
+
+- `externalFile`., Odczyt/zapis. Zwraca ciąg reprezentujący plik, który zawiera identyfikator elementu członkowskiego.
+
+- `externalid`., Odczyt/zapis. Zwraca ciąg, który reprezentuje identyfikator elementu członkowskiego symbolu.
+
+- `functionHelp`., Odczyt/zapis. Zwraca [Właściwość functionHelp](#FunctionHelp), która może zawierać informacje, gdy `symbolType` jest funkcją.
+
+### <a name="Scope"></a>Właściwość Scope
+ Zwraca zakres ukończenia zdarzenia. Możliwe wartości dla zakresu ukończenia są globalne i składowe. Ta właściwość jest dostępna dla obiektu zdarzenia `statementcompletion`.
+
+ Wartość zwracana: ciąg
+
+## <a name="debugging-intellisense-extensions"></a>Debugowanie rozszerzeń IntelliSense
+ Nie można debugować rozszerzeń, ale można użyć funkcji [obiektu IntelliSense](#intellisenseObject) do wysyłania informacji do okna danych wyjściowych programu Visual Studio. Aby zapoznać się z przykładem, który pokazuje, jak używać tej funkcji, zobacz [wysyłanie komunikatów do okno dane wyjściowe](#Logging) w dalszej części tego tematu. Aby `logMessage` działały, co najmniej jeden program obsługi zdarzeń musi być zarejestrowany w rozszerzeniu.
+
+## <a name="CodeExamples"></a>Przykłady kodu
+ Ta sekcja zawiera przykłady kodu, które pokazują, jak używać interfejsów API rozszerzalności IntelliSense. Istnieją także inne sposoby korzystania z tych interfejsów API. Aby uzyskać więcej przykładów, zobacz następujące pliki w \\ \\ folderze*ścieżka instalacji programu Visual Studio*\JavaScript\References. Są to przykłady robocze używane przez usługę języka JavaScript.
+
+- underscoreFilter. js. Ten kod ukrywa prywatne elementy członkowskie z IntelliSense. Obejmuje obsługę zdarzeń dla zdarzenia `statementcompletion`.
+
+- showPlainComments. js. Ten kod zapewnia obsługę funkcji IntelliSense dla standardowych komentarzy. Obejmuje obsługę zdarzeń dla zdarzeń `signaturehelp` i `statementcompletionhint`.
+
+### <a name="Annotations"></a>Dodawanie adnotacji IntelliSense
+ Poniższa procedura pokazuje, jak zapewnić obsługę dokumentacji IntelliSense dla biblioteki innej firmy bez bezpośredniej modyfikacji biblioteki. W tym celu można użyć `intellisense.annotate` w rozszerzeniu.
+
+ Aby ten przykład działał, potrzebne są następujące pliki JavaScript w projekcie:
+
+- demoLib. js, który jest plikiem projektu, który reprezentuje bibliotekę innej firmy.
+
+- demoLib. IntelliSense. js, który jest rozszerzeniem IntelliSense. Ten plik nie musi być uwzględniony w projekcie, ale musi znajdować się w tym samym folderze co exampleLib. js.
+
+- Kodzie aplikacji. js, który jest plikiem projektu, który reprezentuje kod aplikacji.
+
+##### <a name="to-add-an-intellisense-annotation"></a>Aby dodać adnotację IntelliSense
+
+1. Dodaj następujący kod do demoLib. js.
+
+    ```javascript
+    function someFunc(a) { };
+    var rectangle;
+
+    ```
+
+2. Dodaj następujący kod do demoLib. IntelliSense. js.
+
+    ```javascript
+    intellisense.annotate(someFunc, function (a) {
+        /// <signature>
+        /// <summary>Description of someFunc</summary>
+        /// <param name="a">Param a</param>
+        /// </signature>
+    });
+
+    intellisense.annotate(window, {
+        // This is a comment on a global variable named rectangle.
+        rectangle: undefined
+    });
+    ```
+
+3. Dodaj następującą dyrektywę referencyjną jako pierwszy wiersz w kodzie aplikacji. js. Ścieżka użyta w tym miejscu wskazuje, że pliki JavaScript znajdują się w tym samym folderze.
+
+    ```javascript
+    /// <reference path="demoLib.js" />
+
+    ```
+
+4. W kodzie aplikacji. js wpisz poniższy kod. Zobaczysz komentarze dokumentacji XML w rozszerzeniu wyświetlanym jako informacje o parametrach IntelliSense.
+
+     ![Przykład przedstawiający użycie funkcji IntelliSense. Adnotuj](../ide/media/js-intellisense-annotate-paraminfo.png "js_intellisense_annotate_paraminfo")
+
+5. W kodzie aplikacji. js wpisz poniższy kod. Podczas wpisywania zobaczysz standardowe komentarze w rozszerzeniu wyświetlanym jako szybkie informacje IntelliSense.
+
+     ![Przykład przedstawiający użycie funkcji IntelliSense. Adnotuj](../ide/media/js-intellisense-annotations.png "js_intellisense_annotations")
+
+### <a name="Logging"></a>Wysyłanie komunikatów do Okno Dane wyjściowe
+ Poniższa procedura pokazuje, jak wysyłać komunikaty do okna danych wyjściowych. Można wysyłać komunikaty w celu ułatwienia debugowania rozszerzeń IntelliSense.
+
+ Aby ten przykład działał, potrzebne są następujące pliki JavaScript w projekcie:
+
+- exampleLib. js, który jest plikiem projektu, który reprezentuje bibliotekę innej firmy.
+
+- exampleLib. IntelliSense. js, który jest rozszerzeniem IntelliSense. Ten plik nie musi być uwzględniony w projekcie, ale musi znajdować się w tym samym folderze co exampleLib. js.
+
+- Kodzie aplikacji. js, który jest plikiem projektu, który reprezentuje kod aplikacji.
+
+##### <a name="to-send-a-message-to-the-output-window"></a>Aby wysłać komunikat do okna danych wyjściowych
+
+1. Dodaj następujący kod do exampleLib. js.
+
+    ```javascript
+    var someVar = {
+        a: 1,
+        b: 'hello'
+    };
+    ```
+
+2. Dodaj następujący kod do exampleLib. IntelliSense. js.
+
+    ```javascript
+    intellisense.addEventListener('statementcompletion', function (e) {
+        // Prints out statement completion info: Either (1) the member
+        // list, if the trigger character was typed, or (2) the
+        // statement completion identifiers.
+        // e.target represents the object left of the trigger character.
+        intellisense.logMessage(
+            e.target ? 'member list requested, target: ' + e.targetName : 'statement completion for current scope requested');
+
+        // Prints out all statement completion items.
+        e.items.forEach(function (item) {
+            intellisense.logMessage('[completion item] ' + item.name + ', kind:' + item.kind + ', scope:' + item.scope + ', value:' + item.value);
+        });
+    });
+    ```
+
+3. Dodaj następującą dyrektywę referencyjną jako pierwszy wiersz w kodzie aplikacji. js. Ścieżka użyta w tym miejscu wskazuje, że pliki JavaScript znajdują się w tym samym folderze.
+
+    ```javascript
+    /// <reference path="exampleLib.js" />
+
+    ```
+
+4. W oknie dane wyjściowe wybierz **JavaScript Language Service** z listy **Pokaż dane wyjściowe z** . (Aby wyświetlić okno dane wyjściowe, wybierz pozycję **dane wyjściowe** z menu Widok.)
+
+5. W kodzie aplikacji. js wpisz poniższy kod. Podczas wpisywania, w oknie danych wyjściowych są wyświetlane komunikaty z usługi językowej. Pierwszy komunikat w oknie danych wyjściowych wskazuje, że zażądano zakończenia instrukcji dla bieżącego zakresu.
+
+    ```javascript
+    some
+    ```
+
+     Poniżej znajduje się częściowy widok danych wyjściowych, który powinien zostać wyświetlony.
+
+    ```scr
+    03:16:14.3113: statement completion for current scope requested
+    03:16:14.3113: [completion item] break, kind:reserved, scope:undefined, value:undefined
+    03:16:14.3113: [completion item] case, kind:reserved, scope:undefined, value:undefined
+    03:16:14.3113: [completion item] catch, kind:reserved, scope:undefined, value:undefined
+
+    …
+    ```
+
+6. Wybierz przycisk **Wyczyść wszystko** w oknie danych wyjściowych.
+
+7. Wpisz następujący kod. Pierwszy komunikat w oknie danych wyjściowych wskazuje, że zażądano listy elementów członkowskich.
+
+    ```javascript
+    someVar.
+    ```
+
+     Poniżej znajduje się częściowy widok danych wyjściowych, który powinien zostać wyświetlony:
+
+    ```scr
+    03:17:43.4032: member list requested, target: someVar
+    03:17:43.4032: [completion item] a, kind:field, scope:member, value:1
+    03:17:43.4032: [completion item] b, kind:field, scope:member, value:hello
+    03:17:43.4032: [completion item] constructor, kind:method, scope:member, value:
+
+    …
+    ```
+
+### <a name="Icons"></a>Zmiana ikon IntelliSense
+ Poniższa procedura pokazuje, jak zmienić ikony wyświetlane domyślnie przez funkcję IntelliSense. Może to być przydatne w przypadku dostarczania informacji IntelliSense dotyczących pojęć specyficznych dla biblioteki, takich jak przestrzenie nazw, klasy, interfejsy i wyliczenia.
+
+ Aby uzyskać dostępne wartości ikon, zobacz <xref:Microsoft.VisualStudio.Language.Intellisense.StandardGlyphGroup>.
+
+ Aby ten przykład działał, potrzebne są następujące pliki JavaScript w projekcie:
+
+- exampleLib. js, który jest plikiem projektu, który represens bibliotekę innej firmy.
+
+- exampleLib. IntelliSense. js, który jest rozszerzeniem IntelliSense. Ten plik nie musi być uwzględniony w projekcie, ale musi znajdować się w tym samym folderze co exampleLib. js.
+
+- Kodzie aplikacji. js, który jest plikiem projektu, który reprezentuje kod aplikacji.
+
+##### <a name="to-change-the-icons"></a>Aby zmienić ikony
+
+1. Dodaj następujący kod do exampleLib. js.
+
+    ```javascript
+    function Namespace(name) {
+        this._isNamespace = true;
+        window[name] = this;
+    };
+
+    function Enum(values) {
+        var e = Object.create(values);
+        e._isEnum = true;
+        return e;
+    };
+
+    var SomeNamespace = new Namespace('SomeNamespace');
+    // A constructor function is considered a class.
+    SomeNamespace.SomeClass1 = function () { }
+    SomeNamespace.Enum1 = new Enum({ VALUE1: 0, VALUE2: 1 });
+    ```
+
+2. Dodaj następujący kod do exampleLib. IntelliSense. js.
+
+    ```javascript
+    intellisense.addEventListener('statementcompletion', function (e) {
+        e.items.forEach(function (item) {
+            // Detect a namespace by using the _isNamespace flag.
+            if (item.value && item.value._isNamespace) {
+                item.glyph = 'vs:GlyphGroupNamespace';
+                }
+
+            if (item.parentObject && item.parentObject._isNamespace) {
+                // The item is a member of a namespace.
+
+                // All constructor functions that are part of a namespace
+                // are considered classes.
+                // A constructor function starts with
+                // an uppercase letter by convention.
+                if (typeof item.value == 'function' && (item.name[0].toUpperCase()
+                    == item.name[0])) {
+                    item.glyph = 'vs:GlyphGroupClass';
+                }
+
+                // Detect an enumeration by using the _isEnum flag.
+                if (item.value && item.value._isEnum) {
+                    item.glyph = 'vs:GlyphGroupEnum';
+                }
+            }
+        });
+    });
+
+    intellisense.addEventListener('statementcompletionhint', function (e) {
+        if (e.completionItem.value) {
+            if (e.completionItem.value._isNamespace) {
+                e.symbolHelp.symbolDisplayType = 'Namespace';
+            }
+            if (e.completionItem.value._isEnum) {
+                e.symbolHelp.symbolDisplayType = 'Enum';
+            }
+        }
+    });
+    ```
+
+3. Dodaj następującą dyrektywę referencyjną jako pierwszy wiersz w kodzie aplikacji. js. Ścieżka użyta w tym miejscu wskazuje, że pliki JavaScript znajdują się w tym samym folderze.
+
+    ```javascript
+    /// <reference path="exampleLib.js" />
+
+    ```
+
+4. W kodzie aplikacji. js wpisz poniższy kod. Podczas pisania zobaczysz, że ikona dla przestrzeni nazw została zmieniona na "{}", jak jest używana w C#.
+
+     ![Przykład pokazujący użycie właściwości glifu](../ide/media/js-intellisense-glyph-namespace.png "js_intellisense_glyph_namespace")
+
+5. W kodzie aplikacji. js wpisz poniższy kod. Podczas pisania zobaczysz nową ikonę wyliczenia dla elementu członkowskiego Enum1 oraz nową ikonę klasy dla elementu członkowskiego SomeClass1.
+
+     ![Przykład pokazujący użycie właściwości glifu](../ide/media/js-intellisense-glyph-class-enum.png "js_intellisense_glyph_class_enum")
+
+### <a name="Overriding"></a>Unikanie efektów czasu wykonywania na wynikach funkcji IntelliSense
+ Usługa języka JavaScript uruchamia kod w celu dynamicznego dostarczania informacji IntelliSense. W efekcie zachowanie w czasie wykonywania może czasami zakłócać żądane wyniki. Poniższa procedura pokazuje, jak zastąpić wyniki IntelliSense, gdy zachowanie w czasie wykonywania skutkuje nieprawidłowym technologią IntelliSense.
+
+ Aby ten przykład działał, potrzebne są następujące pliki JavaScript w projekcie:
+
+- exampleLib. js, który jest plikiem projektu, który reprezentuje bibliotekę innej firmy.
+
+- exampleLib. IntelliSense. js, który jest rozszerzeniem IntelliSense. Ten plik nie musi być uwzględniony w projekcie, ale musi znajdować się w tym samym folderze co exampleLib. js.
+
+- Kodzie aplikacji. js, który jest plikiem projektu, który reprezentuje kod aplikacji.
+
+##### <a name="to-avoid-run-time-effects-on-intellisense-results"></a>Aby uniknąć efektów w czasie wykonywania na wynikach funkcji IntelliSense
+
+1. Dodaj następujący kod do exampleLib. js.
+
+    ```javascript
+    function after(count, func) {
+        return function () {
+            if (--times < 1) {
+                return func.apply(this, arguments);
+            }
+        };
+    };
+    ```
+
+     W poprzednim kodzie funkcja opakowana ignoruje początkowe wywołania, na podstawie wartości `count` i nie zwraca wyników.
+
+2. Dodaj następującą dyrektywę referencyjną jako pierwszy wiersz w kodzie aplikacji. js. Ścieżka użyta w tym miejscu wskazuje, że pliki JavaScript znajdują się w tym samym folderze.
+
+    ```javascript
+    /// <reference path="exampleLib.js" />
+
+    ```
+
+3. W kodzie aplikacji. js wpisz poniższy kod. Zostanie wyświetlona lista identyfikatorów zamiast IntelliSense, ponieważ funkcja opakowana nigdy nie jest wywoływana, co oznacza, że funkcja `throttled` nie zwraca żadnych wyników.
+
+     ![Przykład przesłaniania wyników IntelliSense](../ide/media/js-intellisense-override.png "js_intellisense_override")
+
+4. Dodaj następujący kod do exampleLib. IntelliSense. js. Spowoduje to zmianę zachowania w czasie projektowania, tak aby funkcja IntelliSense była wyświetlana dla funkcji opakowanej zgodnie z oczekiwaniami.
+
+    ```javascript
+    window.after = function (count, func) {
+        // Just return func.
+        return func;
+    };
+    ```
+
+5. W kodzie aplikacji. js Przetestuj wyniki, wpisując ten sam kod, który został wpisany wcześniej. Tym razem technologia IntelliSense udostępnia wymagane informacje.
+
+     ![Przykład przesłaniania wyników IntelliSense](../ide/media/js-intellisense-override-fixed.png "js_intellisense_override_fixed")
+
+## <a name="see-also"></a>Zobacz też
+ [](../ide/javascript-intellisense.md) [Uzupełnianie instrukcji języka JavaScript dla identyfikatorów](../ide/statement-completion-for-identifiers.md)

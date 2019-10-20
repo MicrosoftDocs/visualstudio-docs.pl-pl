@@ -5,36 +5,36 @@ ms.topic: conceptual
 f1_keywords:
 - WFDShellFeatures.UI
 ms.assetid: 14bfe312-9592-408e-92ce-e98585ad16e7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4519be8ec5c5d4ba8a611df1880ae770a83cf981
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c57beeec6859e9346953fd8047410200187a026f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433867"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649733"
 ---
 # <a name="workflow-designer-shell-features"></a>Funkcje powłoki Projektanta przepływu pracy
 
-Projektant przepływu pracy składa się z trzech głównych obszarach interfejsu użytkownika: powierzchni projektanta i nad nim za pomocą paska nawigacji powłoki poniżej. Na pasku nawigacji, umieszczony w górnej części ekranu służy do wyświetlania listy elementów nadrzędnych bieżącego działania głównego. Aby uzyskać więcej informacji, zobacz [jak: Użyj do stron nadrzędnych](../workflow-designer/how-to-use-breadcrumb-navigation.md). Powierzchni projektanta umieszczony na środku ekranu jest używana do tworzenia przepływów pracy. Powłoka, umieszczony w dolnej części ekranu zawiera szereg przyciski umożliwiające zarządzanie bieżącym widokiem.
+Projektant przepływu pracy składa się z trzech głównych obszarów interfejsu użytkownika: powierzchni projektanta, paska nawigacyjnego powyżej oraz powłoki poniżej. Pasek nawigacyjny, umieszczony w górnej części ekranu, służy do wyświetlania listy elementów nadrzędnych bieżącego działania głównego. Aby uzyskać więcej informacji, zobacz [How to: Use the webnawigacji](../workflow-designer/how-to-use-breadcrumb-navigation.md). Powierzchnia projektanta umieszczona na środku ekranu służy do tworzenia przepływów pracy. Powłoka umieszczona w dolnej części ekranu zawiera kilka przycisków służących do zarządzania bieżącym widokiem.
 
 ## <a name="shell-features"></a>Funkcje powłoki
- Powłoka zawiera przyciski po prawej stronie paska, który umożliwia powiększanie lub pomniejszanie przepływu pracy, do zawartości przepływu pracy do rozmiaru ekranu i Pokaż lub Ukryj mapowanie przeglądów. Użytkownik może również powiększyć lub pomniejszyć, przepływ pracy za pomocą skrótów klawiaturowych CTRL ++ i CTRL +-.
+ Powłoka zawiera przyciski znajdujące się po prawej stronie paska, za pomocą którego można powiększać lub wyłączać przepływ pracy, dopasowywać zawartość przepływu pracy do rozmiaru ekranu, a także wyświetlać lub ukrywać mapę przeglądu. Możesz również powiększyć lub pomniejszyć przepływ pracy za pomocą skrótów klawiaturowych CTRL + + i CTRL +-.
 
-## <a name="overview-map"></a>Mapowanie przeglądów
- Mapowanie przeglądów wyświetla małą wersję działanie całej głównym bieżącego łączy do stron nadrzędnych, w tym wszystkie jego elementy podrzędne i wszystkie rozwinięte dzieci. Ma okienka ekranu, prostokąt z obramowaniem pomarańczowego, które przedstawia część działania aktualnie wyświetlany w edytorze. Przeciągnięcie prostokąt wokół mapowanie przeglądów Przewija projektanta przepływów pracy i zmiany widoku edytora.
+## <a name="overview-map"></a>Mapa omówienia
+ Mapa przeglądu przedstawia małą wersję całego działania w bieżącym katalogu głównym, w tym wszystkie jego elementy podrzędne i wszystkie rozwinięte elementy podrzędne. Istnieje okienko ekranu, prostokąt z pomarańczowym obramowaniem, który wyróżnia część działania aktualnie wyświetlaną wewnątrz edytora. Przeciąganie prostokąta wokół mapy przeglądu powoduje przewinięcie projektanta przepływu pracy i zmianę widoku edytora.
 
 > [!NOTE]
-> Jest Zwirtualizowana interfejsu użytkownika projektanta przepływu pracy. Projektanci działań są renderowane tylko wtedy, gdy jest to wymagane. Jeśli nigdy nie został wystawiony przez część przepływu pracy na powierzchni projektowej, część pojawia się jako białe na mapie Przegląd. Przewijanie wokół mapowanie przeglądów całkowicie rysuje przepływu pracy.
+> Interfejs użytkownika Projektant przepływu pracy jest zwirtualizowany. Projektanci działań są renderowane tylko wtedy, gdy jest to wymagane. Jeśli część przepływu pracy nigdy nie została narysowana na powierzchni projektanta, ta część jest wyświetlana jako biała na mapie przeglądowej. Przewijanie do mapy przeglądowej całkowicie rysuje przepływ pracy.
 
 ## <a name="copying-or-saving-workflows-as-images"></a>Kopiowanie lub zapisywanie przepływów pracy jako obrazów
- Przepływy pracy można skopiować format mapy bitowej lub zapisane w formacie mapy bitowej lub wektora. Kopiowanie lub zapisywanie obrazu umożliwia eksportowanie widoku całej aktywności głównym bieżącego łączy do stron nadrzędnych, w tym wszystkie jego elementy podrzędne i wszystkie rozwinięte dzieci do innego programu.
+ Przepływy pracy można kopiować w formacie mapy bitowej lub zapisywać w formacie mapy bitowej lub wektora. Kopiowanie lub zapisywanie obrazu umożliwia wyeksportowanie widoku całego działania w bieżącym katalogu nadrzędnym, w tym wszystkich elementów podrzędnych i wszystkich ich rozwiniętych elementów podrzędnych do innego programu.
 
- Aby skopiować jako obraz, kliknij prawym przyciskiem myszy projektanta i wybierz pozycję **Kopiuj jako obraz**. Aby zapisać jako obraz, kliknij prawym przyciskiem myszy projektanta i wybierz pozycję **Zapisz jako obraz**. Przepływy pracy można zapisać w formacie JPG, PNG, GIF lub XPS. Wybrano format **Zapisz jako** okno dialogowe w **Zapisz jako typ:** listy rozwijanej listy w dolnej części okna.
+ Aby skopiować jako obraz, kliknij prawym przyciskiem myszy w dowolnym miejscu projektanta i wybierz polecenie **Kopiuj jako obraz**. Aby zapisać jako obraz, kliknij prawym przyciskiem myszy w dowolnym miejscu projektanta i wybierz polecenie **Zapisz jako obraz**. Przepływy pracy można zapisywać w formacie JPG, PNG, GIF lub XPS. Format jest wybierany w oknie dialogowym **Zapisz jako** w polu **Zapisz jako typ:** lista rozwijana w dół w dolnej części okna.
 
 ## <a name="fonts-and-colors"></a>Czcionki i kolory
 
-Czcionki używane w Projektancie przepływu pracy w programie Visual Studio są kontrolowane przez czcionka środowiska. Zmieniają się kolory, wyświetlana w Projektancie przepływu pracy, korzystając z dużego kontrastu schemat kolorów dla motywu systemu operacyjnego. Po wprowadzeniu zmian w ustawieniach czcionek i kolorów, aby zmiany zostały wprowadzone w Projektancie przepływu pracy, należy ponownie uruchomić program Visual Studio.
+Czcionki używane w Projektant przepływu pracy wewnątrz programu Visual Studio są kontrolowane przez czcionkę środowiska. Kolory wyświetlane w Projektant przepływu pracy zmienić, jeśli używasz schematu kolorów o dużym kontraście dla motywu systemu operacyjnego. Musisz ponownie uruchomić program Visual Studio po wprowadzeniu zmiany w ustawieniach czcionki lub koloru, zanim zmiany zaczną obowiązywać w Projektant przepływu pracy.

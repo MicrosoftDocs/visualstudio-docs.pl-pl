@@ -4,21 +4,21 @@ ms.date: 01/16/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.F%2523.Code_Fixes
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a73991702455fab54baf868499634e1a4f5bbf48
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: a5c736be59c257d98085831971d6b7b9dc2a0ef3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870745"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666273"
 ---
-# <a name="options-text-editor--f--code-fixes"></a>Opcje: > F# Edytora tekstu > poprawek kodu
+# <a name="options-text-editor--f--code-fixes"></a>Opcje: Edytor tekstu > F# > poprawek kodu
 
-Strona Opcje poprawek kodu służy do określania ustawień, które mogą ułatwić identyfikację błędów kodu i oferowanie rozwiązań. Aby uzyskać dostęp do tej strony opcji, wybierz**Opcje** **Narzędzia** > , a następnie wybierz**poprawki kodu** **edytora** > **F#**  > tekstu.
+Strona Opcje poprawek kodu służy do określania ustawień, które mogą ułatwić identyfikację błędów kodu i oferowanie rozwiązań. Aby uzyskać dostęp do tej strony opcji, wybierz pozycję **narzędzia**  > **Opcje**, a następnie wybierz**F#** pozycję **Edytor tekstu**  >   > **poprawki kodu**.
 
 ## <a name="code-fixes"></a>Poprawki kodu
 
@@ -28,11 +28,11 @@ Strona Opcje poprawek kodu służy do określania ustawień, które mogą ułatw
 
 - **Zawsze umieszczaj otwarte instrukcje na najwyższym poziomie**
 
-  Jeśli to pole wyboru jest zaznaczone i wpiszesz `open` instrukcję w kodzie, zostanie ona umieszczona na najwyższego poziomu.
+  Jeśli to pole wyboru jest zaznaczone i wpiszesz instrukcję `open` w kodzie, zostanie ona umieszczona na najwyższego poziomu.
 
 - **Usuń nieużywane otwarte instrukcje**
 
-  Jeśli to pole wyboru jest zaznaczone, dokumenty są analizowane pod kątem nieużywanych `open` instrukcji, a do usuwania wszystkich nieużywanych `open` instrukcji zostanie wyświetlona żarówka z szybką [akcją](../quick-actions.md) .
+  Jeśli to pole wyboru jest zaznaczone, dokumenty są analizowane pod kątem nieużywanych instrukcji `open` i zostanie wyświetlona żarówka [z akcją](../quick-actions.md) usuwania wszystkich nieużywanych instrukcji `open`.
 
 - **Analizowanie i sugerowanie poprawek dla nieużywanych wartości**
 

@@ -1,5 +1,5 @@
 ---
-title: Praca z modelem koncepcyjnym (WCF Data Services) | Dokumentacja firmy Microsoft
+title: Praca z modelem koncepcyjnym (Usługi danych programu WCF) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -15,43 +15,42 @@ helpviewer_keywords:
 - data [Visual Studio], querying an EDM
 ms.assetid: 2cd873cf-b010-49f2-a278-bb1277aaa934
 caps.latest.revision: 12
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 92ab4afc410f08690d54488cc12d4d7be1ffb41d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: ffaf1d932ea904807b3affcdc39c0fe0ccb7d842
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65694804"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657801"
 ---
-# <a name="working-with-a-conceptual-model-wcf-data-services"></a>Praca z modelem koncepcyjnym (WCF Data Services)
+# <a name="working-with-a-conceptual-model-wcf-data-services"></a>Praca z modelem koncepcyjnym (Usługi danych programu WCF)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Korzystając z modelu koncepcyjnego do opisu danych w bazie danych, można tworzyć zapytania danych przy użyciu obiektów zamiast konieczności translacji i z powrotem przez schemat bazy danych i modelu obiektu.  
-  
- Za pomocą modeli koncepcyjnych z aplikacjami usług danych WCF. Poniższe tematy przedstawiają sposób wykonywania zapytań o dane za pośrednictwem modelu koncepcyjnego.  
-  
-|Temat|Opis|  
-|-----------|-----------------|  
-|[Instrukcje: Wykonywanie zapytań usługi danych](https://msdn.microsoft.com/library/62997821-e0c6-4c4d-9fb7-1273fb5e5d18)|Pokazuje sposób tworzenia zapytań względem usługi danych z [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] aplikacji.|  
-|[Instrukcje: Projekt wyników zapytania](https://msdn.microsoft.com/library/474ac625-8770-43ba-8320-d3315ea9530f)|Pokazuje, jak zmniejszyć ilość danych zwracanych przez zapytanie usługi danych.|  
-  
- Korzystając z modelu koncepcyjnego, można określić, jakiego rodzaju dane jest prawidłowy w języku, który pasuje do Twojej domeny. Można zdefiniować prawidłowe dane w modelu, lub można dodać sprawdzanie poprawności do operacji wykonywanych w usłudze jednostki lub danych.  
-  
- Poniższe tematy przedstawiają sposób dodawania sprawdzania poprawności do aplikacji WCF Data Services.  
-  
-|Temat|Opis|  
-|-----------|-----------------|  
-|[Instrukcje: Przechwytywanie wiadomości usługi danych](https://msdn.microsoft.com/library/24b9df1b-b54b-4795-a033-edf333675de6)|Pokazuje, jak dodać sprawdzanie poprawności do operacji usługi danych.|  
-  
- W następujących tematach opisano sposób tworzenia, aktualizacji i usuwania danych, wykonując operacje na jednostkach.  
-  
-|Temat|Opis|  
-|-----------|-----------------|  
-|[Instrukcje: Dodawanie, modyfikowanie i usuwanie jednostek](https://msdn.microsoft.com/library/a00f8933-b232-4445-95ba-adc634f055d8)|Pokazuje, jak tworzenie, aktualizowanie i usuwanie danych jednostki w usłudze danych.|  
-|[Instrukcje: Definiowanie relacji jednostek](https://msdn.microsoft.com/library/cc255524-1534-4fae-b83c-250933d5a72b)|Pokazuje, jak tworzyć lub zmieniać relacje w niej danych.|  
-  
-## <a name="see-also"></a>Zobacz też  
- [Windows Communication Foundation i usługi danych WCF w programie Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)   
- [Wykonywanie zapytań do usługi danych](https://msdn.microsoft.com/library/823e9444-27aa-4f1f-be8e-0486d67f54c0)
+W przypadku używania modelu koncepcyjnego do opisywania danych w bazie danych, można wysyłać zapytania o dane za pomocą obiektów, a nie do ich przetłumaczenia między schematem bazy danych i modelem obiektów.
+
+ Modeli koncepcyjnych można używać w aplikacjach Usługi danych programu WCF. W poniższych tematach przedstawiono sposób wykonywania zapytań dotyczących danych za pomocą modelu koncepcyjnego.
+
+|Temat|Opis|
+|-----------|-----------------|
+|[Instrukcje: Wykonywanie zapytań usługi danych](https://msdn.microsoft.com/library/62997821-e0c6-4c4d-9fb7-1273fb5e5d18)|Pokazuje, w jaki sposób wysyłać zapytania do usługi danych z aplikacji [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].|
+|[Instrukcje: Projekt wyników zapytania](https://msdn.microsoft.com/library/474ac625-8770-43ba-8320-d3315ea9530f)|Pokazuje, jak zmniejszyć ilość danych zwracanych przez zapytanie usługi danych.|
+
+ Korzystając z modelu koncepcyjnego, można określić, jakiego rodzaju dane są prawidłowe w języku zgodnym z Twoją domeną. Można zdefiniować prawidłowe dane w modelu lub można dodać sprawdzanie poprawności operacji wykonywanych w ramach jednostki lub usługi danych.
+
+ W poniższych tematach pokazano, jak dodać sprawdzanie poprawności do aplikacji Usługi danych programu WCF.
+
+|Temat|Opis|
+|-----------|-----------------|
+|[Instrukcje: Przechwytywanie wiadomości usługi danych](https://msdn.microsoft.com/library/24b9df1b-b54b-4795-a033-edf333675de6)|Pokazuje, jak dodać weryfikację do operacji usługi danych.|
+
+ W poniższych tematach przedstawiono sposób tworzenia, aktualizowania i usuwania danych przez wykonywanie operacji na jednostkach.
+
+|Temat|Opis|
+|-----------|-----------------|
+|[Instrukcje: Dodawanie, modyfikowanie i usuwanie jednostek](https://msdn.microsoft.com/library/a00f8933-b232-4445-95ba-adc634f055d8)|Pokazuje, jak tworzyć, aktualizować i usuwać dane jednostki w usłudze danych.|
+|[Instrukcje: Definiowanie relacji jednostek](https://msdn.microsoft.com/library/cc255524-1534-4fae-b83c-250933d5a72b)|Pokazuje, jak utworzyć lub zmienić relacje w usłudze danych.|
+
+## <a name="see-also"></a>Zobacz też
+ [Windows Communication Foundation usług i usługi danych programu WCF w programie Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) do [wykonywania zapytań dotyczących usługi danych](https://msdn.microsoft.com/library/823e9444-27aa-4f1f-be8e-0486d67f54c0)

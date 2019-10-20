@@ -3,26 +3,26 @@ title: Brakuje właściwości połączenia w pliku ustawień aplikacji lub jest 
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 77724510-ff59-4d43-b933-a0434e1ac597
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: becbc5032c05af1edf5361a54fd0a80b4a0ff412
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 2619b5826002944bd728a7744e0b2507cb493dc4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458307"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648175"
 ---
 # <a name="the-connection-property-in-the-application-settings-file-is-missing-or-incorrect"></a>Brakuje właściwości połączenia w pliku ustawień aplikacji lub jest ona niepoprawna
 
-Właściwości połączenia w pliku ustawień aplikacji jest brakujące lub nieprawidłowe. Parametry połączenia z *dbml* plik został użyty w tym miejscu.
+Brak właściwości połączenia w pliku ustawień aplikacji lub jest ona niepoprawna. W jego miejscu użyto parametrów połączenia z pliku *. dbml* .
 
-*Dbml* plik zawiera odwołanie do parametrów połączenia w pliku ustawień aplikacji, którego nie można odnaleźć. To jest komunikat informacyjny; Ustawienie parametrów połączenia zostaną utworzone po **OK** kliknięciu.
+Plik *. dbml* zawiera odwołanie do parametrów połączenia w pliku ustawień aplikacji, których nie można znaleźć. Ten komunikat ma informacje; ustawienie parametrów połączenia zostanie utworzone po kliknięciu przycisku **OK** .
 
-Aby odpowiedzieć na tę wiadomość, wybierz **OK**. Informacje o połączeniu, który jest zawarty w *dbml* plik zostanie dodany do ustawień aplikacji.
+Aby odpowiedzieć na ten komunikat, wybierz **przycisk OK**. Informacje o połączeniu zawarte w pliku *. dbml* są dodawane do ustawień aplikacji.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Narzędzi LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Narzędzia LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

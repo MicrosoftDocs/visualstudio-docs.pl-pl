@@ -1,5 +1,5 @@
 ---
-title: Projektant przepływu pracy — Flowchart, Projektant działań
+title: Projektant przepływu pracy — Projektant działań schematu blokowego
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,44 +7,44 @@ f1_keywords:
 - System.Activities.Statements.FlowStep.UI
 - System.Activities.Core.Presentation.FlowStart.UI
 ms.assetid: d5af2276-5215-4138-880a-cf2b90bbf3a0
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad02dea2dcab30d65aaefecc5a5e54804c9baaff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5f56c7eac56572d8a3be1f8b478feb0543390481
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949659"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650457"
 ---
 # <a name="flowchart-activity-designer"></a>Flowchart, projektant działań
 
-<xref:System.Activities.Statements.Flowchart> To działanie służy do tworzenia przepływów pracy służących do definiowania i zarządzania kontrolek złożonych przepływów. Element <xref:System.Activities.Statements.Flowchart> można tworzyć w kodzie lub za pomocą projektanta przepływów pracy. Ten temat dokumenty środowisko projektanta przepływu pracy. Projektant działań przepływu pracy Workflow Designer umożliwia deweloperom tworzyć przepływy pracy w sposób naturalny.
+Działanie <xref:System.Activities.Statements.Flowchart> służy do tworzenia przepływów pracy, które definiują złożone kontrolki przepływu i zarządzają nimi. @No__t_0 można tworzyć w kodzie lub przy użyciu Projektant przepływu pracy. W tym temacie opisano środowisko Projektant przepływu pracy. Projektant działań przepływu pracy Projektant przepływu pracy umożliwia deweloperom tworzenie przepływów pracy w naturalny sposób.
 
-## <a name="the-flowchart-activity"></a>Schemat blokowy działania
+## <a name="the-flowchart-activity"></a>Działanie Flowchart
 
-<xref:System.Activities.Statements.Flowchart> Określa unikatową <xref:System.Activities.Statements.Flowchart.StartNode%2A> , jest wykonywany, gdy uruchamia przepływ pracy i używa połączone z siecią <xref:System.Activities.Statements.Flowchart.Nodes%2A> do utworzenia dowolnego pętli lub przekierowywać przepływem wykonania w dowolnym miejscu w przepływie pracy w danym momencie.
+@No__t_0 określa unikatowy <xref:System.Activities.Statements.Flowchart.StartNode%2A>, który jest wykonywany, gdy przepływ pracy zostanie uruchomiony i używa sieci połączonych <xref:System.Activities.Statements.Flowchart.Nodes%2A> do tworzenia dowolnych pętli lub do przepływu wykonania w dowolnym miejscu w przepływie pracy w dowolnym momencie.
 
-### <a name="using-the-flowchart-activity-designer"></a>Za pomocą Flowchart, Projektant działań
+### <a name="using-the-flowchart-activity-designer"></a>Korzystanie z projektanta działań Flowchart
 
-**Schemat blokowy** projektanta działań można znaleźć w **schemat blokowy** kategorii **przybornika**, które jest dostępne po kliknięciu **przybornika**karty w Projektancie przepływu pracy. Można także wybrać **przybornika** z **widoku** menu lub naciśnij klawisz **Ctrl**+**Alt** + **X**.
+Projektant działań **Flowchart** można znaleźć w kategorii **schemat blokowy** , do którego **uzyskuje się dostęp**, klikając kartę **Przybornik** na Projektant przepływu pracy. Alternatywnie wybierz pozycję **Przybornik** z menu **Widok** lub naciśnij **klawisze CTRL** +**Alt** +**X**.
 
-**Schemat blokowy** projektanta działań mogą być przeciągnięte z **przybornika** i porzucić do powierzchni projektanta przepływów pracy wszędzie tam, gdzie Projektanci działań są zazwyczaj umieszczone, jako działania głównego lub element podrzędny innego działanie przepływu sterowania. Jeśli **schemat blokowy** projektanta działań został upuszczony na puste powierzchnię projektanta przepływów pracy, jego tworzy <xref:System.Activities.Statements.Flowchart> działania, które domyślnie prezentowanie się rozwinięty widok, w którym jest węzeł początkowy, który inicjuje wykonywania reprezentowana jako zielony kulki. Jeśli **schemat blokowy** projektanta działań są przenoszone do kolejnego działania przepływu sterowania, wyświetla się w trybie zminimalizowanym widoku, który można rozszerzać przez dwukrotne kliknięcie **schemat blokowy** projektanta działań. Wszelkie działania w **przybornika** można przeciągać bezpośrednio **schemat blokowy** Projektant działań, w tym inne działania przepływu sterowania.
+Projektant działań **schematu blokowego** może być przeciągany z **przybornika** i upuszczany na Projektant przepływu pracy powierzchnię, gdy projektanci aktywności są zwykle umieszczane jako działania główne lub jako element podrzędny innego działania przepływu sterowania. Jeśli Projektant działań **Flowchart** zostanie porzucony na pustej powierzchni Projektant przepływu pracy, tworzy działanie <xref:System.Activities.Statements.Flowchart>, które domyślnie prezentuje się w rozwiniętym widoku, w którym węzeł początkowy inicjujący wykonywanie jest reprezentowany jako Zielona kulka. Jeśli Projektant działań **schematu blokowego** zostanie porzucony w innym działaniu przepływu sterowania, zostanie on wyświetlony w widoku zminimalizowanym, który można rozszerzyć przez dwukrotne kliknięcie projektanta działań **schematu blokowego** . Wszystkie działania w **przyborniku** można przeciągnąć bezpośrednio do projektanta działań **schematu blokowego** , łącznie z innymi działaniami przepływu sterowania.
 
-Po przeciągnięciu różnych Projektanci działań na kanwie projektanta przepływów pracy <xref:System.Activities.Activity> obiekty, które reprezentują one mogą być połączone ze sobą, aby określić kolejność wykonywania. Aby utworzyć łącze między działania źródłowego i działanie docelowe, myszy Projektanta działania źródłowego i kwadratowe uchwyty są wyświetlane na każdej stronie. Kliknij jeden z uchwytów, kwadratowych i przeciągnij go, przytrzymując przycisk myszy, aby jeden z uchwytów, które pojawia się w podobny sposób na działanie docelowe, po umieszczeniu wskaźnika myszy nad nim za pomocą myszy. Zwolnij przycisk myszy, a następnie tworzone jest połączenie między te dwa działania, które jest reprezentowany jako strzałka z projektanta źródła do docelowego projektanta.
+Po przeciągnięciu różnych projektantów działań na kanwę Projektant przepływu pracy obiekty <xref:System.Activities.Activity>, które reprezentują, mogą być połączone ze sobą, aby określić kolejność wykonywania. Aby utworzyć łącze między aktywnością źródłową a działaniem docelowym, wskaźnik myszy nad projektantem działania źródłowego i kwadratowe uchwyty pojawiają się po każdej stronie. Kliknij jeden z uchwytów kwadratowych i przeciągnij go, przytrzymując wciśnięty przycisk myszy do jednego z uchwytów, które pojawiają się w podobny sposób wokół działania docelowego po umieszczeniu na nim wskaźnika myszy. Zwolnij przycisk myszy i Utwórz link między tymi dwoma działaniami, które są reprezentowane jako strzałka z projektanta źródła do docelowego projektanta.
 
-### <a name="flowchart-activity-properties"></a>Schemat blokowy działania właściwości
+### <a name="flowchart-activity-properties"></a>Właściwości działania Flowchart
 
-W poniższej tabeli przedstawiono <xref:System.Activities.Statements.Flowchart> właściwości i w tym artykule opisano, jak są używane w projektancie. Te właściwości można edytować w siatce właściwości lub na powierzchni projektowej.
+W poniższej tabeli przedstawiono właściwości <xref:System.Activities.Statements.Flowchart> i opisano sposób ich używania w projektancie. Te właściwości można edytować w siatce właściwości lub na powierzchni projektanta.
 
 |Nazwa właściwości|Wymagane|Użycie|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Określa nazwę wyświetlaną, Projektant działań w nagłówku. Wartością domyślną jest blokowy. Wartość może być edytowana w **właściwości** okna lub bezpośrednio w nagłówku projektanta działań.<br /><br /> Mimo że <xref:System.Activities.Activity.DisplayName%2A> nie jest bezwzględnie konieczne jest najlepszym rozwiązaniem, aby użyć jednego.|
-|<xref:System.Activities.Statements.Flowchart.Variables%2A>|False|Kolekcja zmiennych, które są ograniczone w ramach tej <xref:System.Activities.Statements.Flowchart> udostępniania stanu między działania podrzędne.|
-|<xref:System.Activities.Statements.Flowchart.StartNode%2A>|False|<xref:System.Activities.Statements.FlowNode> Oznacza to wykonywane, kiedy <xref:System.Activities.Statements.Flowchart> rozpoczyna się.|
-|<xref:System.Activities.Statements.Flowchart.Nodes%2A>|False|Zawiera kolekcję <xref:System.Activities.Statements.FlowNode> obiekty w <xref:System.Activities.Statements.Flowchart>.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Określa nazwę wyświetlaną projektanta działań w nagłówku. Wartość domyślna to Flowchart. Wartość można edytować w oknie **Właściwości** lub bezpośrednio w nagłówku projektanta działań.<br /><br /> Mimo że <xref:System.Activities.Activity.DisplayName%2A> nie jest ściśle wymagane, najlepszym rozwiązaniem jest użycie jednego z nich.|
+|<xref:System.Activities.Statements.Flowchart.Variables%2A>|False|Kolekcja zmiennych, które są objęte zakresem w ramach tej <xref:System.Activities.Statements.Flowchart>, aby udostępnić stan w ramach działań podrzędnych.|
+|<xref:System.Activities.Statements.Flowchart.StartNode%2A>|False|@No__t_0, który jest wykonywany podczas uruchamiania <xref:System.Activities.Statements.Flowchart>.|
+|<xref:System.Activities.Statements.Flowchart.Nodes%2A>|False|Zawiera kolekcję obiektów <xref:System.Activities.Statements.FlowNode> w <xref:System.Activities.Statements.Flowchart>.|
 
 ## <a name="see-also"></a>Zobacz także
 

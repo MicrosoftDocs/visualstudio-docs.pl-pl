@@ -5,96 +5,96 @@ ms.topic: conceptual
 helpviewer_keywords:
 - requirements
 - stories
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d75bfd7634e068224b12168390193773c198957a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 68aa46b3dc07813b73921b8acb5970289c30aecc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62814576"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658414"
 ---
 # <a name="model-user-requirements"></a>Wymagania modelu użytkownika
 
-Program Visual Studio pozwala zrozumieć, omówienia i komunikują się potrzeby użytkowników, rysując diagramy dotyczące ich działania i część systemu jest odtwarzany w pozwala im to osiągnąć swoje cele. Modelu wymagań to zbiór tych diagramów, z których każdy koncentruje się na inny aspekt potrzeb użytkowników. Aby uzyskać demonstracyjne wideo – zobacz: [Modelowanie domeny biznesowej](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain).
+Program Visual Studio pomaga zrozumieć, omówić i komunikować się z potrzebami użytkowników, rysując diagramy związane z ich działaniami i część, która jest odtwarzana przez system w celu ułatwienia im osiągnięcia celów. Model wymagań to zbiór tych diagramów, z których każdy koncentruje się na różnych aspektach potrzeb użytkowników. Aby zapoznać się z prezentacją, zobacz: [modelowanie domeny biznesowej](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain).
 
-Aby zobaczyć, które wersje programu Visual Studio obsługuje każdy typ modelu, zobacz [obsługiwana wersja dla narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Aby sprawdzić, które wersje programu Visual Studio obsługują każdy typ modelu, zobacz [Obsługa wersji dla narzędzi architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-Wymagania modelu pomoże Ci:
+Model wymagań ułatwia:
 
-- Skup się na zachowaniu zewnętrznego systemu, niezależnie od jego wewnętrzną konstrukcją.
+- Skup się na zewnętrznym zachowaniu systemu, niezależnie od jego wewnętrznego projektu.
 
-- Opis użytkowników i udziałowców wymaga o wiele mniej niejednoznaczności niż w języku naturalnym.
+- Opisz potrzeby użytkowników i uczestników projektu o znacznie mniejszej niejednoznaczności niż w języku naturalnym.
 
-- Zdefiniuj spójne słownik terminów, używane przez użytkowników, deweloperów i testerów.
+- Zdefiniuj spójny słownik terminów, które mogą być używane przez użytkowników, deweloperów i testerów.
 
 - Ogranicz luki i niespójności w wymaganiach.
 
-- Zmniejsz czynności niezbędne do reagowania na zmiany wymagań.
+- Zmniejsz ilość pracy wymaganej do reagowania na zmiany wymagań.
 
-- Zaplanuj kolejność, w którym będą opracowywane funkcje.
+- Zaplanuj kolejność, w której będą rozwijane funkcje.
 
-- Na użytek modele jako podstawa testy systemu, co wyczyść relację między testy i wymagania. Gdy zmienią się wymagania tę relację pomaga poprawnie zaktualizować testy. To sprawia, że się, że system spełnia nowe wymagania.
+- Używaj modeli jako podstawy dla testów systemowych, co powoduje wyraźną relację między testami i wymaganiami. Po zmianie wymagań ta relacja pomaga zaktualizować testy prawidłowo. Pozwala to upewnić się, że system spełnia nowe wymagania.
 
-Modelu wymagań zapewnia największe korzyści, jeśli go użyć do dyskusji fokus z użytkowników lub ich przedstawicieli, a go ponownie na początku każdej iteracji. Nie masz Oznacz go jako ukończony szczegółowo przed napisaniem kodu. Częściowo działającą aplikację, nawet wtedy, gdy znacznie uproszczone, zazwyczaj są podstawą najbardziej pobudzania dyskusję na temat wymagań użytkowników. Model jest efektywny sposób podsumowywania wyniki tych dyskusji. Aby uzyskać więcej informacji, zobacz [używanie modeli w procesie tworzenia aplikacji](../modeling/use-models-in-your-development-process.md).
+Model wymagań zapewnia największą korzyść, jeśli jest używany do koncentracji dyskusji z użytkownikami lub ich przedstawicielami, a następnie ponownie odwiedzany na początku każdej iteracji. Przed zapisaniem kodu nie jest konieczne jego szczegółowe zakończenie. Częściowo działająca aplikacja, nawet jeśli bardzo uproszczone, zazwyczaj stanowi najbardziej stymulowaną podstawę do omówienia wymagań dla użytkowników. Model jest efektywnym sposobem podsumowywania wyników dyskusji. Aby uzyskać więcej informacji, zobacz [Używanie modeli w procesie tworzenia oprogramowania](../modeling/use-models-in-your-development-process.md).
 
 > [!NOTE]
-> W tych tematach "system" oznacza system lub aplikację, którą tworzysz. Może być duży zbiór wielu składniki sprzętu i oprogramowania; lub pojedynczej aplikacji; lub składnik oprogramowania w systemie większe. W każdym przypadku modelu wymagań w tym artykule opisano zachowanie, które nie jest widoczny spoza systemu, czy za pośrednictwem interfejsu użytkownika lub interfejsu API.
+> W tych tematach "system" oznacza system lub aplikację, którą tworzysz. Może to być duża kolekcja wielu składników oprogramowania i sprzętu. lub pojedynczej aplikacji; lub składnika oprogramowania w większym systemie. W każdym przypadku model wymagań opisuje zachowanie widoczne spoza systemu, niezależnie od tego, czy za pośrednictwem interfejsu użytkownika, czy interfejsu API.
 
 ## <a name="common-tasks"></a>Wspólne zadania
 
-Można utworzyć kilka różnych widoków wymagań użytkowników.  Każdy widok zawiera określonego typu informacji.  Podczas tworzenia tych widoków, najlepiej jest często przenieść z jednego do drugiego. Można uruchomić w dowolnym widoku.
+Można utworzyć kilka różnych widoków wymagań użytkowników.  Każdy widok zawiera informacje określonego typu.  Podczas tworzenia tych widoków najlepiej jest przebiegać często od jednego do drugiego. Możesz rozpocząć od dowolnego widoku.
 
-|Diagram lub dokumentu|Znaczenie w modelu wymagań|Sekcja|
+|Diagram lub dokument|Co opisano w modelu wymagań|Paragraf|
 |-|-|-|
-|Diagram koncepcyjny klas|Słownik typów, które są używane do opisywania wymagania dotyczące programu typy widoczne w interfejsie systemu.||
-|Dodatkowe dokumenty lub elementy robocze|Kryteria wydajności, bezpieczeństwa, użyteczność i niezawodność.|[Opisujące jakości wymagań](#QoSRequirements)|
-|Dodatkowe dokumenty lub elementy robocze|Ograniczenia i reguły nie jest specyficzne dla danego przypadku użycia|[Wyświetlanie reguły biznesowe](#BusinessRules)|
+|Diagram klasy koncepcyjnej|Słownik typów, które są używane do opisywania wymagań; typy widoczne w interfejsie systemu.||
+|Dodatkowe dokumenty lub elementy robocze|Kryteria wydajności, bezpieczeństwa, użyteczności i niezawodności.|[Opisywanie wymagań dotyczących jakości usług](#QoSRequirements)|
+|Dodatkowe dokumenty lub elementy robocze|Ograniczenia i reguły niespecyficzne dla określonego przypadku użycia|[Wyświetlanie reguł firmy](#BusinessRules)|
 
-Należy zauważyć, że większość typów diagram może służyć do innych celów. Omówienie typów na diagramie, zobacz [tworzenie modeli aplikacji](../modeling/create-models-for-your-app.md).
+Należy zauważyć, że większość typów diagramów może być używana do innych celów. Aby zapoznać się z omówieniem typów diagramów, zobacz [Tworzenie modeli dla aplikacji](../modeling/create-models-for-your-app.md).
 
-## <a name="BusinessRules"></a> Wyświetlanie reguły biznesowe
+## <a name="BusinessRules"></a>Wyświetlanie reguł firmy
 
-Reguły biznesowej jest wymagana, która nie jest skojarzony z konkretnego przypadku użycia, należy przestrzegać w całym systemie.
+Reguła biznesowa jest wymagana, która nie jest skojarzona z konkretnym przypadkiem użycia i powinna być zastosowana w całym systemie.
 
-Wiele reguł biznesowych są ograniczenia relacje klas pojęć. Można napisać te *reguły biznesowe statyczne* jako komentarze skojarzone z odpowiednich klas na diagramie klasy pojęć. Na przykład:
+Wiele reguł biznesowych to ograniczenia dotyczące relacji między klasami koncepcyjnymi. Te *statyczne reguły biznesowe* można napisać jako komentarze skojarzone z odpowiednimi klasami na diagramie klasy koncepcyjnej. Na przykład:
 
-![Reguła w komentarzu dołączona do klasy zamówienia.](../modeling/media/uml_reqmcd2.png)
+![Reguła w komentarzu dołączonym do klasy Order.](../modeling/media/uml_reqmcd2.png)
 
-*Reguły biznesowe dynamiczne* ograniczyć dozwolone sekwencja zdarzeń. Na przykład używasz diagramie sekwencji lub działania, aby pokazać, że użytkownik musi zalogować się przed przystąpieniem do wykonywania innych operacji w systemie.
+*Dynamiczne reguły biznesowe* ograniczają dozwolone sekwencje zdarzeń. Na przykład można użyć sekwencji lub diagramu aktywności, aby pokazać, że użytkownik musi się zalogować przed wykonaniem innych operacji w systemie.
 
-Jednak wiele dynamiczne reguły może być bardziej efektywne i objęty wyrażona przez zamianę statyczne reguły. Na przykład można dodać atrybutu logicznego rejestrowane w do klasy w model koncepcyjny klasy. Czy dodatek rejestrowane jako postcondition dziennika w przypadku użycia, a następnie dodaj go jako warunek wstępny do większości innych przypadków użycia. Takie podejście umożliwia Unikaj definiowania wszystkich możliwych kombinacji sekwencja zdarzeń. Jest również bardziej elastyczne, gdy trzeba dodać nowych przypadków użycia w modelu.
+Jednak wiele reguł dynamicznych może być bardziej wydajnych i ogólnie określonych przez zastępowanie ich regułami statycznymi. Na przykład, można dodać atrybut Boolean "zalogowany" do klasy w modelu klasy koncepcyjnej. Należy dodać zalogowany jako błąd warunku końcowego w przypadku użycia i dodać go jako warunek wstępny większości innych przypadków użycia. Takie podejście pozwala uniknąć definiowania wszystkich możliwych kombinacji sekwencji zdarzeń. Jest to również bardziej elastyczne, gdy trzeba dodać do modelu nowe przypadki użycia.
 
-Należy zauważyć, że w tym miejscu to o sposób definiowania wymagań i jest niezależne od sposobu implementacji wymagania w kodzie programu.
+Należy zauważyć, że w tym miejscu opisano sposób definiowania wymagań oraz to, że jest on niezależny od sposobu implementacji wymagań w kodzie programu.
 
-Więcej informacji można znaleźć w następujących tematach:
+Dodatkowe informacje znajdują się w następujących tematach:
 
 |Aby dowiedzieć się więcej o|Odczyt|
 |-|-|
-|Jak tworzyć kod, który działa zgodnie z regułami biznesowymi|[Modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md)|
+|Jak opracowywać kod zgodny z regułami biznesowymi|[Modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md)|
 
-## <a name="QoSRequirements"></a> Opisujące jakości wymagań
+## <a name="QoSRequirements"></a>Opisywanie wymagań Quality of Service
 
-Istnieje kilka kategorii wymagań dotyczących jakości usługi. Ulepszenia obejmują następujące czynności:
+Istnieje kilka kategorii wymagań dotyczących jakości usług. Należą do nich następujące elementy:
 
 - Wydajność
 
 - Zabezpieczenia
 
-- Użyteczność
+- Wykorzystania
 
 - Niezawodność
 
 - Niezawodność
 
-Niektóre z tych wymagań można uwzględnić w opisach przypadki użycia określonego. Inne wymagania nie są specyficzne dla przypadków użycia i najbardziej efektywne są zapisywane w osobnym dokumencie. Możliwe, to warto stosować się do słownictwa zdefiniowane za pomocą modelu wymagań. W poniższym przykładzie należy zauważyć, że głównym słowa używane wymaganie są tytuły aktorów, przypadki użycia i klas w poprzedniej ilustracji:
+Niektóre z tych wymagań można uwzględnić w opisach konkretnych przypadków użycia. Inne wymagania nie są specyficzne dla przypadków użycia i są najbardziej efektywnie zapisywane w osobnym dokumencie. Gdy jest to możliwe, warto przestrzegać słownictwa zdefiniowanego przez model wymagań. W poniższym przykładzie należy zauważyć, że główne wyrazy używane w wymaganiu są tytułami aktorów, przypadków użycia i klas na powyższych ilustracjach:
 
-Jeśli restauracji usunie element Menu, gdy klient jest zamawianie posiłku, dowolny element zamówienia, który odwołuje się do tego elementu Menu będą wyświetlane w kolorze czerwonym.
+Jeśli restauracji usunie element menu, gdy klient porządkuje posiłk, każdy element zamówienia, który odwołuje się do tego elementu menu będzie wyświetlany na czerwono.
 
-Zobacz [modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md) Aby dowiedzieć się, jak tworzyć kod, który jest zgodna z jakością wymagania dotyczące usługi.
+Zobacz [modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md) , aby dowiedzieć się, jak opracować kod, który jest zgodny z wymaganiami dotyczącymi jakości usług.
 
 ## <a name="see-also"></a>Zobacz także
 

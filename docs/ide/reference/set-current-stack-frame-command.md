@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Set Current Stack Frame command
 - Debug.SetCurrentStackFrame command
 ms.assetid: 3dcf52c0-6781-4598-bac2-0094dce67c20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24880f997d604d3db11ae19a6220c2789da7648f
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: a60b6eba07ed5d9594ec11cb6b9297d2a52ffd77
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926074"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645324"
 ---
 # <a name="set-current-stack-frame-command"></a>Ustaw bieżącą ramkę stosu — Polecenie
 Pozwala ustawić konkretną ramkę stosu.
@@ -32,7 +32,7 @@ Debug.SetCurrentStackFrame index
 ## <a name="arguments"></a>Argumenty
 `index`
 
-Wymagana. Wybiera ramkę stosu według jej indeksu.
+Wymagany. Wybiera ramkę stosu według jej indeksu.
 
 ## <a name="example"></a>Przykład
 

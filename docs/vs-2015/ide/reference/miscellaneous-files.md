@@ -1,5 +1,5 @@
 ---
-title: Różne pliki | Dokumentacja firmy Microsoft
+title: Różne pliki | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -18,38 +18,37 @@ helpviewer_keywords:
 - files [Visual Studio], Miscellaneous Files folder
 ms.assetid: 5b96640b-8efe-48a4-8d0a-1ae3f9587e44
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 266db8199160f58c62b7587f55029cff2bb26c29
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8dc11714fc8b2d5a345d94ddfe4c5de2c2cd7fe5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441704"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666852"
 ---
 # <a name="miscellaneous-files"></a>Folder różnych plików
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Możesz chcieć użyć [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] edytorów do wykonywania pracy na plikach z projektem lub rozwiązaniem. Chociaż to rozwiązanie, Otwórz, można otworzyć i zmodyfikować pliki bez dodawania ich do rozwiązania lub projektu. Pliki potrzebne do pracy z niezależnie od kontenery są nazywane różne pliki. Różne pliki są zewnętrzne w stosunku do rozwiązania i projekty nie są uwzględnione w kompilacji i nie może być dołączone rozwiązanie pod kontrolą źródła.  
-  
- Otwieranie plików niezależnie z kontenera jest przydatne w przypadku różnych powodów. Może mieć plik, który chcesz wyświetlić podczas opracowywania rozwiązania opartego na projektach, lecz nie jest integralną częścią rozwiązań. Typowe przykłady uwagi dotyczące rozwoju lub instrukcji, schemat bazy danych i klipów kodu. Ponadto możesz chcieć utworzyć autonomiczny plik.  
-  
- ![Rozwiązania projekty](../../ide/reference/media/projects-solutions-misc.gif "Projects_Solutions_Misc")  
-  
- Eksplorator rozwiązań można wyświetlić folder różne pliki, dla plików, gdy są włączone opcje dla folderu. Można ustawić opcji [dokumenty, środowisko, opcje, okno dialogowe](../../ide/reference/documents-environment-options-dialog-box.md). Po zamknięciu dodatkowych plików nie jest skojarzona z danego rozwiązania lub projektu, chyba że jest włączona opcja w tym także.  
-  
- Folder różnych plików reprezentuje pliki jako linki. Chociaż ten folder nie jest częścią rozwiązania, po otwarciu rozwiązania, niektóre lub wszystkie z dodatkowych plików, które były otwarte podczas ostatniego zamknięcia rozwiązania są ponownie otwarte, w zależności od ustawień dla folderu.  
-  
+Może być konieczne użycie edytorów [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] do pracy niezależnie od plików z projektu lub rozwiązania. Gdy masz otwarte rozwiązanie, możesz otwierać i modyfikować pliki bez dodawania ich do rozwiązania lub do projektu. Pliki, z którymi chcesz współpracować niezależnie od kontenerów, są nazywane różnymi plikami. Różne pliki są zewnętrzne dla rozwiązań i projektów, nie są uwzględniane w kompilacjach i nie mogą być dołączone do rozwiązania pod kontrolą źródła.
+
+ Otwieranie plików niezależnie od kontenera jest przydatne z różnych powodów. Może istnieć plik, który ma być wyświetlany podczas opracowywania rozwiązań opartych na projekcie, ale nie jest integralną częścią opracowywania rozwiązania. Typowe przykłady obejmują uwagi dotyczące programowania lub instrukcje, schemat bazy danych i klipy kodu. Ponadto możesz chcieć utworzyć plik autonomiczny.
+
+ ![Projekty rozwiązań](../../ide/reference/media/projects-solutions-misc.gif "Projects_Solutions_Misc")
+
+ Jeśli opcje dla tego folderu są włączone, Eksplorator rozwiązań może wyświetlić folder różne pliki. Opcje można ustawić za pomocą [okna dialogowego dokumenty, środowisko, opcje](../../ide/reference/documents-environment-options-dialog-box.md). Po zamknięciu różnego pliku nie jest on kojarzony z żadnym konkretnym rozwiązaniem lub projektem, chyba że jest ona również włączona.
+
+ Folder różne pliki reprezentuje pliki jako linki. Mimo że ten folder nie jest częścią rozwiązania, podczas otwierania rozwiązania niektóre lub wszystkie inne pliki, które zostały otwarte, gdy rozwiązanie zostało ostatnio zamknięte, są ponownie otwierane, w zależności od ustawień dla tego folderu.
+
 > [!NOTE]
-> Niektóre pliki, które nie pojawiają się w folderze różne pliki to pliki, których nie można zmodyfikować w środowisku IDE, takich jak pliki zip i doc. IDE nie będą śledzić pliki, które mogą być modyfikowane tylko przez edytor zewnętrzny.  
-  
-## <a name="commands-available-in-the-ide"></a>Poleceń dostępnych w środowisku IDE  
- Menu i paski narzędzi, polecenia, które zawierają zmiany na podstawie formatu pliku możesz otworzyć. Po otwarciu pliku tekstowego, na przykład, zostanie wyświetlony pasek narzędzi edytora tekstów i jego polecenia są dostępne. Jeśli następnie otwórz plik schematu XML, zostanie wyświetlony pasek narzędzi schematu XML. Podczas edytowania schematu XML, polecenia paska narzędzi edytora tekstów (lub na pasku narzędzi, sam) są niedostępne. Schemat XML jest aktywnym oknem i jako takie, ma bieżący kontekst zaznaczenia. Podczas przełączania między pliku projektu i inny plik zniknąć wszystkich poleceń związanych z projektem, i tylko te, które są bezpośrednio związane z różnych plików są wyświetlane.  
-  
-## <a name="folder-display-options"></a>Opcje wyświetlania folderu  
- Opcje wyświetlania dodatkowych folderów można ustawić tak, aby folder pojawia się, nawet jeśli nie została jeszcze otwarta różne pliki. Plik rozwiązania nie zarządza trwałe lista dodatkowych plików. Używa opcjonalna funkcja, która umożliwia mu do zapamiętania dla użytkownika ostatnio używanych (MRU) listę plików.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Rozwiązania i projekty](../../ide/solutions-and-projects-in-visual-studio.md)   
- [Dokumenty, Środowisko, Opcje — okno dialogowe](../../ide/reference/documents-environment-options-dialog-box.md)
+> Niektóre pliki, które nie są wyświetlane w folderze różne pliki, to pliki, których nie można modyfikować w środowisku IDE, takie jak pliki zip i pliki. doc. IDE nie śledzi plików, które mogą być modyfikowane tylko za pomocą zewnętrznego edytora.
+
+## <a name="commands-available-in-the-ide"></a>Polecenia dostępne w środowisku IDE
+ Menu, paski narzędzi i polecenia, które zawierają zmiany, na podstawie formatu otwartego pliku. Gdy otworzysz plik tekstowy, pojawi się pasek narzędzi Edytor tekstu, a jego polecenia są dostępne. Jeśli następnie otworzysz plik schematu XML, pojawi się pasek narzędzi schematu XML. Podczas edytowania schematu XML polecenia paska narzędzi edytora tekstu (lub samego paska narzędzi) są niedostępne. Schemat XML jest aktywnym oknem i w związku z tym ma bieżący kontekst zaznaczenia. Po przełączeniu między plikiem projektu a plikiem różne, wszystkie polecenia związane z projektem znikają i są wyświetlane tylko te, które są bezpośrednio powiązane z plikiem różne.
+
+## <a name="folder-display-options"></a>Opcje wyświetlania folderu
+ Można ustawić opcje wyświetlania dla folderu różne, aby folder pojawił się, mimo że nie zostały otwarte żadne różne pliki. Plik rozwiązania nie umożliwia trwałego zarządzania listą różnych plików. Korzysta ona z funkcji opcjonalnej, która pozwala na zapamiętanie listy plików ostatnio używanych (MRU) dla użytkownika.
+
+## <a name="see-also"></a>Zobacz też
+ [Rozwiązania i projekty](../../ide/solutions-and-projects-in-visual-studio.md) [dokumenty, środowisko, Opcje — okno dialogowe](../../ide/reference/documents-environment-options-dialog-box.md)

@@ -5,282 +5,282 @@ ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.imageeditor
 - vs.graphics.imageeditor
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9783029eab9597624be459fe88b51a495328b5be
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9f2430dddb4fe7de0d050ce26fc94e54c13a7779
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62897400"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635316"
 ---
 # <a name="image-editor"></a>Edytor obrazów
 
-W tym artykule opisano sposób pracy z programem Visual Studio **edytora obrazów** do wyświetlania i modyfikowania zasobów tekstur i obrazów.
+W tym artykule opisano sposób pracy z **edytorem obrazów** programu Visual Studio w celu wyświetlania i modyfikowania zasobów tekstury i obrazów.
 
-Możesz użyć **edytora obrazów** do pracy z rodzajami zaawansowanych formaty tekstur i obrazów, które są używane w rozwoju aplikacji DirectX. W tym obsługę formatów plików obrazów popularnych i kodowanie kolorów, funkcje, takie jak kanałów alfa i mapowanie MIP, a wiele tekstury wysoce skompresowanym, przyspieszanych sprzętowo formaty obsługiwane przez DirectX.
+Możesz użyć **edytora obrazów** do pracy z rodzajami bogatych formatów tekstury i obrazów, które są używane w rozwoju aplikacji DirectX. Obejmuje to obsługę popularnych formatów plików obrazów i kodowania kolorów, takich jak kanały alfa i usługi, a także wiele wysoce skompresowanych, przyspieszanych sprzętowo formatów tekstury obsługiwanych przez technologię DirectX.
 
 ## <a name="supported-formats"></a>Obsługiwane formaty
 
-**Edytora obrazów** obsługuje następujące formaty obrazów:
+**Edytor obrazów** obsługuje następujące formaty obrazów:
 
 |Nazwa formatu|Rozszerzenie nazwy pliku|
 |-----------------| - |
-|Portable Network Graphics|*.png*|
-|JPEG|*.jpg*, *.jpeg*, *.jpe*, *.jfif*|
-|Bezpośrednie powierzchni rysowania|*.dds*|
-|Graphics Interchange Format|*Obraz GIF*|
-|Mapy bitowej|*.bmp*, *.dib*|
-|Plik TIFF|*.tif*, *TIFF*|
-|TGA (Targa)|*.tga*|
+|Portable Network Graphics|*. png*|
+|JPEG|*. jpg*, *. jpeg*, *. jpe*, *. JFIF*|
+|Bezpośrednie rysowanie powierzchni|*. DDS*|
+|Graphics Interchange Format|*. gif*|
+|Mapy|*BMP*, *DIB*|
+|Tagged Image File Format|*. tif*, *. TIFF*|
+|TGA (Targa)|*. tga*|
 
 ## <a name="get-started"></a>Wprowadzenie
 
-W tej sekcji opisano, jak dodać obraz do projektu programu Visual Studio i skonfiguruj go zgodnie z wymaganiami dotyczącymi.
+W tej sekcji opisano sposób dodawania obrazu do projektu programu Visual Studio i konfigurowania go pod kątem wymagań.
 
 ### <a name="add-an-image-to-your-project"></a>Dodawanie obrazu do projektu
 
-1. W **Eksploratora rozwiązań**, otwórz menu skrótów dla projektu, który chcesz dodać obraz do, a następnie wybierz **Dodaj** > **nowy element**.
+1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla projektu, do którego chcesz dodać obraz, a następnie wybierz polecenie **Dodaj**  > **nowy element**.
 
-2. W **Dodaj nowy element** dialogowego **zainstalowane**, wybierz opcję **grafiki**, a następnie wybierz odpowiedni format pliku obrazu.
+2. W oknie dialogowym **Dodaj nowy element** w obszarze **zainstalowane**wybierz pozycję **grafika**, a następnie wybierz odpowiedni format pliku dla obrazu.
 
    > [!NOTE]
-   > Jeśli nie widzisz **grafiki** kategorii **Dodaj nowy element** okno dialogowe, użytkownik może być konieczne zainstalowanie **obrazów i modeli 3W edytory** składnika. Zamknij okno dialogowe, a następnie wybierz pozycję **narzędzia** > **Pobierz narzędzia i funkcje** na pasku menu, aby otworzyć **Instalatora programu Visual Studio**. Wybierz **poszczególne składniki** , a następnie wybierz pozycję **obrazów i modeli 3W edytory** składnika w obszarze **gier i aplikacji graficznych** kategorii. Wybierz **zmodyfikować**.
+   > Jeśli kategoria **grafika** nie jest widoczna w oknie dialogowym **Dodaj nowy element** , może być konieczne zainstalowanie składnika **Edytor obrazów i modelu 3W** . Zamknij okno dialogowe, a następnie wybierz pozycję **narzędzia**  > **Pobierz narzędzia i funkcje** z paska menu, aby otworzyć **Instalator programu Visual Studio**. Wybierz kartę **poszczególne składniki** , a następnie wybierz składnik **Edytor obrazów i modeli 3W** w kategorii **gry i grafika** . Wybierz pozycję **Modyfikuj**.
    >
-   > ![Obrazów i modeli 3W składnika edytorów](media/image-3d-model-editors-component.png)
+   > ![Składnik edytorów obrazów i modeli 3W](media/image-3d-model-editors-component.png)
 
-   Aby dowiedzieć się, jak wybrać format pliku, w zależności od wymagań, zobacz [wybierz format obrazu](#choose-the-image-format).
+   Aby uzyskać informacje na temat wybierania formatu pliku zgodnie z wymaganiami, zobacz [Wybieranie formatu obrazu](#choose-the-image-format).
 
-3. Określ **nazwa** pliku obrazu i **lokalizacji** której ma zostać utworzony.
+3. Określ **nazwę** pliku obrazu i **lokalizację** , w której ma zostać utworzony.
 
-4. Wybierz **Dodaj** przycisku.
+4. Wybierz przycisk **Dodaj** .
 
 ### <a name="choose-the-image-format"></a>Wybierz format obrazu
 
-W zależności od tego, jak zamierzasz korzystać z obrazu określonych formatów plików, może być bardziej odpowiednie niż inne. Na przykład niektóre formaty mogą nie obsługiwać format określony kolor, przezroczystość lub funkcji, których potrzebują, na przykład. Niektóre formaty mogą jednak nie zapewniać odpowiedni kompresji dla rodzaju zawartości obrazu, który zaplanowano.
+W zależności od sposobu, w jaki zamierzasz korzystać z obrazu, niektóre formaty plików mogą być bardziej odpowiednie niż inne. Na przykład niektóre formaty mogą nie obsługiwać wymaganej funkcji, na przykład przezroczystości lub określonego formatu koloru. Niektóre formaty mogą nie zapewniać odpowiedniej kompresji dla rodzaju zamierzonej zawartości obrazu.
 
-Poniższe informacje mogą pomóc Ci wybrać format obrazu, który odpowiada Twoim potrzebom:
+Poniższe informacje mogą pomóc wybrać format obrazu, który spełnia Twoje wymagania:
 
-**Obraz mapy bitowej (bmp)**
+**Obraz mapy bitowej (. bmp)**
 
-Format obrazu mapy bitowej. Format obrazu nieskompresowanych, który obsługuje 24-bitowe. Mapa bitowa nie obsługuje przezroczystość.
+Format obrazu mapy bitowej. Nieskompresowany format obrazu, który obsługuje 24-bitowy kolor. Format mapy bitowej nie obsługuje przezroczystości.
 
-**Obraz GIF (.gif)**
+**Obraz GIF (. gif)**
 
-Format obrazu Graphics (Interchange Format GIF). Format obrazu skompresowanej LZW, bezstratne, która obsługuje maksymalnie 256 kolorów. Nie nadaje się do fotografii i obrazów, które znacznej ilości szczegółów kolorów, ale zapewnia współczynniki kompresji dobre na samych obrazach niska color, które mają wysoki stopień spójności kolorów.
+Format obrazu Graphics Interchange Format (GIF). Format obrazu z kompresją LZW, który obsługuje do 256 kolorów. Nieodpowiednie dla zdjęć i obrazów, które mają znaczną ilość szczegółów koloru, ale zapewniają dobre proporcje dla obrazów o małym kolorze, które mają wysoki stopień spójności koloru.
 
-**JPG Image (.jpg)**
+**Obraz JPG (. jpg)**
 
-Format obrazu wspólnego fotograficzne ekspertów Group (JPEG). Format wysoce skompresowanym, stratnej obrazu, który obsługuje 24-bitowe i nadaje się do ogólnego przeznaczenia kompresji obrazów, które mają wysoki stopień spójności kolor.
+Format obrazu Joint Photographic Experts Group (JPEG). Wysoce skompresowany, niestratny format obrazu, który obsługuje 24-bitowy kolor i jest odpowiedni do kompresji obrazów ogólnego przeznaczenia, które mają wysoki stopień spójności koloru.
 
-**Obraz PNG (.png)**
+**Obraz PNG (. png)**
 
-Format obrazu Portable Network Graphics (PNG). Format obrazu średnio skompresowany, bezstratne, obsługującego 24-bitowe i alfa przezroczystości. Nadaje się do zarówno naturalnych, jak i sztuczne obrazy, ale nie zapewnia współczynniki kompresji tak dobrze, jak stratnej formatów, takich jak JPG lub GIF.
+Format obrazu Portable Network Graphics (PNG). Umiarkowanie skompresowany, bezstratny format obrazu, który obsługuje 24-bitowy kolor i przezroczystość alfa. Jest to odpowiednie dla obrazów naturalnych i sztucznych, ale nie zapewnia współczynnika kompresji tak jak formaty strat, takie jak JPG lub GIF.
 
-**Obraz TIFF (.tif)**
+**Obraz TIFF (. tif)**
 
-Format obrazu w formacie Tagged Image File Format (TIFF lub TIF). Format obrazu elastyczne, która obsługuje kilka systemów kompresji.
+Format obrazu Tagged Image File Format (TIFF lub TIF). Elastyczny format obrazu, który obsługuje kilka schematów kompresji.
 
-**Tekstura DDS (.dds)**
+**Tekstura DDS (. DDS)**
 
-Format tekstury DirectDraw Surface (DDS). Format wysoce skompresowanym, stratnej teksturę, która obsługuje 24-bitowe i alfa przezroczystości. Jego współczynniki kompresji może być możliwie jak 8:1. Jest ona oparta na kompresji tekstury S3, która może dekompresja w sprzęt graficzny.
+Format tekstury powierzchni programu DirectDraw (DDS). Wysoce skompresowany format tekstury, który obsługuje 24-bitowy kolor i przezroczystość alfa. Jego współczynnik kompresji może być tak duży, jak 8:1. Jest on oparty na kompresji tekstury S3, którą można zdekompresować na sprzęcie graficznym.
 
-**Obraz TGA (.tga)**
+**Obraz TGA (. TGA)**
 
-Format obrazu Truevision kartą grafiki (TGA) (znany także jako Targa). Format obrazu skompresowanej uszkodzone elementy RLE, bezstratne obsługuje zarówno mapowanych na kolor (palety kolorów) lub bezpośrednio kolor obrazy maksymalnie 24-bitowe i alfa przezroczystości. Nie nadaje się do fotografii i obrazów, które znacznej ilości szczegółów kolorów, ale zapewnia współczynniki kompresji dobre dla obrazów, które mają długi zakresów kolorów identyczne.
+Format obrazu karty graficznej TrueVision (TGA) (znany również jako Targa). Format obrazu z kompresją RLE i bezstratny, który obsługuje zarówno obrazy z zamapowanymi kolorami (Paleta kolorów), jak i kolorami bezpośrednimi, do 24-bitowego koloru i przezroczystości alfa. Nieodpowiednie dla zdjęć i obrazów, które mają znaczną ilość szczegółów koloru, ale zapewniają dobre współczynniki kompresji dla obrazów, które mają długie zakresy identycznych kolorów.
 
-### <a name="configure-the-image"></a>Skonfiguruj obraz
+### <a name="configure-the-image"></a>Konfigurowanie obrazu
 
-Przed rozpoczęciem pracy z obrazem, który został utworzony, można zmienić konfiguracji domyślnej. Na przykład możesz zmienić jego wymiary lub format koloru, która jest używana. Aby uzyskać informacje o sposobie konfigurowania tych i innych właściwości obrazu, zobacz [właściwości obrazu](#image-properties).
+Przed rozpoczęciem pracy z utworzonym obrazem można zmienić jego konfigurację domyślną. Można na przykład zmienić jej wymiary lub format koloru, którego używa. Aby uzyskać informacje na temat sposobu konfigurowania tych i innych właściwości obrazu, zobacz [Właściwości obrazu](#image-properties).
 
 > [!NOTE]
-> Aby zapisać swoją pracę, należy ustawić **Format koloru** właściwość, jeśli chcesz użyć formatu określony kolor. Jeśli format pliku obsługuje kompresję, można dostosować ustawienia kompresji podczas zapisywania pliku po raz pierwszy lub po wybraniu **Zapisz jako**.
+> Przed zapisaniem pracy upewnij się, że ustawiono właściwość **Format koloru** , jeśli chcesz użyć określonego formatu koloru. Jeśli format pliku obsługuje kompresję, można dostosować ustawienia kompresji podczas pierwszego zapisywania pliku lub po wybraniu opcji **Zapisz jako**.
 
-## <a name="work-with-the-image-editor"></a>Praca z edytora obrazów
+## <a name="work-with-the-image-editor"></a>Pracuj z edytorem obrazów
 
-W tej sekcji opisano sposób używania **edytora obrazów** do modyfikowania teksturami i obrazami.
+W tej sekcji opisano, jak modyfikować tekstury i obrazy przy użyciu **edytora obrazów** .
 
-Polecenia, które wpływają na stan **edytora obrazów** znajdują się na **tryb edytora obrazów** narzędzi oraz zaawansowane polecenia. Pasek narzędzi znajdują się wzdłuż krawędzi najwyższego poziomu **edytora obrazów** powierzchni projektowej. Narzędzia do rysowania znajdują się na **edytora obrazów** narzędzi wzdłuż lewej krawędzi **edytora obrazów** powierzchni projektowej.
+Polecenia, które mają wpływ na stan **edytora obrazu** , znajdują się na pasku narzędzi **Tryb edytora obrazów** razem z zaawansowanymi poleceniami. Pasek narzędzi znajduje się wzdłuż górnej krawędzi powierzchni projektowej **edytora obrazu** . Narzędzia do rysowania znajdują się na pasku narzędzi **edytora obrazu** wzdłuż lewej krawędzi powierzchni projektowej **edytora obrazu** .
 
 ### <a name="image-editor-mode-toolbar"></a>Pasek narzędzi tryb edytora obrazów
 
-![Pasek narzędzi tryb edytora obrazów w programie Visual Studio](../designers/media/digit-tre-modal-toolbar.png)
+![Pasek narzędzi trybu edytora obrazów w programie Visual Studio](../designers/media/digit-tre-modal-toolbar.png)
 
-W poniższej tabeli opisano elementy na **tryb edytora obrazów** narzędzi, które są wymienione w kolejności, w którym są wyświetlane od lewej do prawej:
+W poniższej tabeli opisano elementy na pasku narzędzi **Tryb edytora obrazów** , które są wymienione w kolejności, w jakiej są wyświetlane od lewej do prawej:
 
 |Element paska narzędzi|Opis|
 |------------------|-----------------|
-|**Select**|Umożliwia wybór prostokątny obszar obrazu. Po wybraniu regionu, można wycinania, kopiowania, przenieść, skalowanie, obracanie, przerzucić lub go usunąć. W przypadku aktywnego zaznaczenia narzędzi do rysowania dotyczą tylko wybranego regionu.|
-|**Zaznacz dowolny kształt**|Umożliwia wybór nieregularne obszaru obrazu. Po wybraniu regionu, można wycinania, kopiowania, przenieść, skalowanie, obracanie, przerzucić lub go usunąć. W przypadku aktywnego zaznaczenia narzędzi do rysowania dotyczą tylko wybranego regionu.|
-|**Wybór Różdżka**|Umożliwia wybór podobnym kolorze obszaru obrazu. *Tolerancji*— czyli maksymalna różnica między sąsiadujących kolorów w ramach których są one traktowane jako podobne — można skonfigurować, aby uwzględnić mniejszych lub szerszy zakres podobne kolory. Po wybraniu regionu, można wycinania, kopiowania, przenieść, skalowanie, obracanie, przerzucić lub go usunąć. W przypadku aktywnego zaznaczenia narzędzi do rysowania dotyczą tylko wybranego regionu.|
-|**Przesuwanie**|Umożliwia przenoszenie obrazu względem ramki okna. W **Pan** tryb, wybierz punkt na obrazie, a następnie przesuwaj go.<br /><br /> Można tymczasowo uaktywnić **Pan** tryb przez naciśnięcie i przytrzymanie **Ctrl** klucza.|
-|**Zoom**|Umożliwia wyświetlanie więcej lub mniej szczegółów obrazu względem ramki okna. W **powiększenia** tryb, wybierz punkt na obrazie a następnie przesuń w prawo lub w dół, aby powiększyć lub poziomie w lewo lub do powiększania.<br /><br /> Można powiększyć lub pomniejszyć przez naciśnięcie i przytrzymanie **Ctrl** podczas możesz użyć kółka myszy lub naciśnij znak plus ( **+** ) lub znak minus ( **-** ) .|
-|**Powiększ do rzeczywistego rozmiaru**|Wyświetla obraz przy użyciu relacji 1:1 między piksele obrazu i pikseli ekranu.|
-|**Dopasuj widok do rozmiaru**|Wyświetla pełnego obrazu w ramki okna.|
-|**Dopasuj widok do szerokości**|Wyświetla całą szerokość obrazu ramki okna.|
-|**Siatka**|Włącza lub wyłącza siatki, który pokazuje pikseli. Siatka mogą nie być wyświetlane, dopóki powiększenie obrazu.|
-|**Wyświetlanie następnego poziomu MIP**|Aktywuje następnego poziomu MIP większe w łańcuch mapy MIP. Aktywne poziom MIP jest wyświetlany na powierzchni projektowej. Ten element jest dostępna tylko dla tekstur, które mają poziomy MIP.|
-|**Wyświetl poprzedniego poziomu MIP**|Aktywuje następnego poziomu MIP mniejszych w łańcuch mapy MIP. Aktywne poziom MIP jest wyświetlany na powierzchni projektowej. Ten element jest dostępna tylko dla tekstur, które mają poziomy MIP.|
-|**Kanał czerwony**<br /><br /> **Kanał zielony**<br /><br /> **Kanał niebieski**<br /><br /> **Kanał alfa**|Włącza lub wyłącza kanał określony kolor. **Uwaga:**  Systematycznie włączając lub wyłączając kanałów koloru, można wyizolować problemy, które są powiązane z co najmniej jeden z nich. Na przykład można zidentyfikować niepoprawne alfa przezroczystości.|
-|**Tło**|Włącza lub wyłącza wyświetlanie tło przezroczyste fragmenty obrazu. Można skonfigurować sposób wyświetlania tła, wybierając następujące opcje:<br /><br /> **Szachownica**<br /> Użyto kolor zielony, wraz z określonego tłem, aby wyświetlić tło jako wzorzec szachownicy. Ta opcja umożliwia sprawić, że przezroczysty części obrazu bardziej oczywista.<br /><br /> Białe tło<br /> Użyto kolor biały, aby wyświetlić tło.<br /><br /> Czarne tło<br /> Użyto kolor czarny, aby wyświetlić tło.<br /><br /> Tło animowane<br /> Przesuwa wzorzec szachownicy powoli. Ta opcja umożliwia sprawić, że przezroczysty części obrazu bardziej oczywista.|
-|**Właściwości**|Zamiennie otwiera i zamyka **właściwości** okna.|
-|**Zaawansowane**|Zawiera dodatkowe polecenia i opcje.<br /><br /> **Filtry**<br /><br /> Zapewnia kilka wspólnych filtrów obrazu: **Czarno-biały**, **Rozmycie**, **rozjaśnić**, **ciemniejszy**, **wykrywania krawędzi**, **trójwymiarowej**, **Odwróć kolory**, **Ripple**, **ton Sepia**, i **doskonalenie**.<br /><br /> **Aparaty grafiki**<br /><br /> **Renderowanie z D3D11**<br /> Używa programu Direct3D 11 do renderowania **edytora obrazów** powierzchni projektowej.<br /><br /> **Renderowanie z D3D11WARP**<br /> Używa programu Direct3D 11 Windows Advanced rasteryzacji platformy WARP () do renderowania **edytora obrazów** powierzchni projektowej.<br /><br /> **Narzędzia**<br /><br /> **Przerzuć w poziomie**<br /> Podstawianie obrazu wokół jego osi poziomej lub x.<br /><br /> **Przerzuć w pionie**<br /> Podstawianie obrazu wokół jego osi pionowej lub y.<br /><br /> **Generuj Mips**<br /> Generuje poziomów MIP dla obrazu. Jeśli istnieje poziomów MIP, są ponownie tworzone z największego poziomu MIP. Wszelkie zmiany wprowadzone w mniejszym poziomom MIP zostaną utracone. Aby zapisać poziomów MIP, które zostały wygenerowane, należy użyć *.dds* formatu w celu zapisania obrazu.<br /><br /> **Widok**<br /><br /> **Szybkość klatek**<br /> Po włączeniu Wyświetla szybkość klatek w prawym górnym rogu powierzchni projektowej. Szybkość odtwarzania to liczba ramek wyświetlanych na sekundę. **Porada:** Możesz wybrać **zaawansowane** przycisk, aby ponownie uruchomić ostatnie polecenie.|
+|**Wybór**|Umożliwia wybór prostokątnego regionu obrazu. Po wybraniu regionu można wyciąć, skopiować, przenieść, skalować, obrócić, przerzucić lub usunąć. Gdy jest aktywny wybór, narzędzia do rysowania mają wpływ tylko na wybrany region.|
+|**Nieregularne zaznaczenie**|Umożliwia wybór nieprawidłowego regionu obrazu. Po wybraniu regionu można wyciąć, skopiować, przenieść, skalować, obrócić, przerzucić lub usunąć. Gdy jest aktywny wybór, narzędzia do rysowania mają wpływ tylko na wybrany region.|
+|**Wybór Różdżka**|Umożliwia wybór regionu obrazu w podobnym kolorze. *Tolerancja*— to znaczy, że maksymalna różnica między sąsiednimi kolorami, w których są one uznawane za podobne — można skonfigurować tak, aby obejmowała mniejszy lub szerszy zakres podobnych kolorów. Po wybraniu regionu można wyciąć, skopiować, przenieść, skalować, obrócić, przerzucić lub usunąć. Gdy jest aktywny wybór, narzędzia do rysowania mają wpływ tylko na wybrany region.|
+|**Przesuwanie**|Włącza Przenoszenie obrazu względem ramki okna. W trybie **panoramowania** wybierz punkt na obrazie, a następnie przenieś go.<br /><br /> Aby tymczasowo aktywować tryb **panoramowania** , naciśnij i przytrzymaj klawisz **Ctrl** .|
+|**Zmieniać**|Umożliwia wyświetlanie większej lub mniejszej szczegółowości obrazu względem ramki okna. W trybie **powiększenia** wybierz punkt na obrazie, a następnie przenieś go w prawo lub w dół, aby powiększyć, lub w lewo lub w górę, aby pomniejszyć.<br /><br /> Możesz powiększyć lub pomniejszyć, naciskając i przytrzymując **klawisz Ctrl** , gdy używasz kółka myszy lub naciśnij znak plus ( **+** ) lub znak minus ( **-** ).|
+|**Powiększ do rzeczywistego rozmiaru**|Wyświetla obraz przy użyciu relacji 1:1 między pikselami obrazu a pikselami ekranu.|
+|**Dopasuj do rozmiaru**|Wyświetla pełny obraz w ramce okna.|
+|**Dopasuj do szerokości**|Wyświetla pełną szerokość obrazu w ramce okna.|
+|**Siatka**|Włącza lub wyłącza siatkę, która pokazuje granice pikseli. Siatka może nie być wyświetlana do momentu powiększenia obrazu.|
+|**Wyświetl następny poziom MIP**|Aktywuje następny większy poziom MIP w łańcuchu mapy MIP. Aktywny poziom MIP jest wyświetlany na powierzchni projektowej. Ten element jest dostępny tylko dla tekstur, które mają poziomy MIP.|
+|**Wyświetl poprzedni poziom MCI**|Aktywuje następny mniejszy poziom MCI w łańcuchu mapy MIP. Aktywny poziom MIP jest wyświetlany na powierzchni projektowej. Ten element jest dostępny tylko dla tekstur, które mają poziomy MIP.|
+|**Kanał czerwony**<br /><br /> **Kanał zielony**<br /><br /> **Kanał niebieski**<br /><br /> **Kanał alfa**|Włącza lub wyłącza konkretny kanał koloru. **Uwaga:**  Przez systematyczne włączanie lub wyłączanie kanałów kolorów można izolować problemy, które są związane z co najmniej jednym z nich. Można na przykład zidentyfikować niepoprawną przezroczystość alfa.|
+|**Tle**|Włącza lub wyłącza wyświetlanie tła za pomocą przezroczystych części obrazu. Można skonfigurować sposób wyświetlania tła, wybierając z następujących opcji:<br /><br /> **Szachownic**<br /> Używa koloru zielonego wraz z określonym kolorem tła, aby wyświetlić tło jako wzór szachownicy. Za pomocą tej opcji można bardziej uwidocznić przezroczyste fragmenty obrazu.<br /><br /> Białe tło<br /> Używa koloru białego do wyświetlania tła.<br /><br /> Czarne tło<br /> Używa koloru czarnego do wyświetlania tła.<br /><br /> Tło animacji<br /> Pans z wzorcem szachownicy powoli. Za pomocą tej opcji można bardziej uwidocznić przezroczyste fragmenty obrazu.|
+|**Właściwości**|Alternatywnie otwiera lub zamyka okno **Właściwości** .|
+|**Zaawansowane**|Zawiera dodatkowe polecenia i opcje.<br /><br /> **Filtry**<br /><br /> Oferuje kilka popularnych filtrów obrazów: **czerń i biel**, **Rozmycie**, **Rozjaśnianie**, **ciemniej**, **wykrywanie krawędzi**, **płaskorzeźba**, **Odwracanie kolorów**, **Ripple**, **Sepia ton**i **Wyostrzanie**.<br /><br /> **Aparaty grafiki**<br /><br /> **Renderowanie przy użyciu D3D11**<br /> Program używa programu Direct3D 11 do renderowania powierzchni projektowej **edytora obrazu** .<br /><br /> **Renderowanie przy użyciu D3D11WARP**<br /> Używa platformy Direct3D 11 systemu Windows z zaawansowaną rasteryzacją (Wypaczenie) w celu renderowania powierzchni projektowej **edytora obrazu** .<br /><br /> **Narzędzia**<br /><br /> **Przerzuć w poziomie**<br /> Obraz jest transponowany wokół jego poziomej lub osi x.<br /><br /> **Przerzuć w pionie**<br /> Obraz jest transponowany wokół osi pionowej, lub y.<br /><br /> **Generuj MIPS**<br /> Generuje poziomy MIP dla obrazu. Jeśli już istnieją poziomy MIP, są one odtworzone od największego poziomu MIP. Wszelkie zmiany wprowadzone do mniejszych poziomów MIP są tracone. Aby zapisać wygenerowane poziomy MIP, należy użyć formatu *. DDS* do zapisania obrazu.<br /><br /> **Widokiem**<br /><br /> **Szybkość klatek**<br /> Gdy ta funkcja jest włączona, zostanie wyświetlona szybkość klatek w prawym górnym rogu powierzchni projektowej. Szybkość odtwarzania to liczba ramek wyświetlanych na sekundę. **Porada:** Możesz wybrać przycisk **Zaawansowane** , aby ponownie uruchomić ostatnie polecenie.|
 
 ### <a name="image-editor-toolbar"></a>Pasek narzędzi edytora obrazów
 
 ![Pasek narzędzi edytora obrazów](../designers/media/digit-tre-toolbar.png)
 
-W poniższej tabeli opisano elementy na **edytora obrazów** narzędzi, które są wymienione w kolejności, w którym są wyświetlane od góry do dołu:
+W poniższej tabeli opisano elementy na pasku narzędzi **edytora obrazu** , które są wymienione w kolejności, w jakiej są wyświetlane od góry do dołu:
 
 |Element paska narzędzi|Opis|
 |------------------|-----------------|
-|**Ołówka**|Używa kodowania aktywnego koloru do rysowania pociągnięcie aliasem. Można ustawić kolor i grubość obrysu w **właściwości** okna.|
-|**Pędzel**|Używa kodowania aktywnego koloru do rysowania pociągnięcie wygładzanie. Można ustawić kolor i grubość obrysu w **właściwości** okna.|
-|**Aerograf**|Używa wybór koloru active do rysowania pociągnięcie wygładzanie miesza wraz z obrazu, która staje się bardziej nasycony funkcji czasu. Można ustawić kolor i grubość obrysu w **właściwości** okna.|
-|**Eyedropper**|Ustawia kolor wybrany piksel wybór koloru active.|
-|**Wypełnienie**|Używa wybór koloru active do wypełnienia obszaru obrazu. Dotyczy region jest zdefiniowany jako pikseli, w których stosowane wypełnienie wraz z każdy piksel, który jest z nią połączona pikseli tego samego koloru i to ten sam kolor, sam. Jeśli wypełnienie jest stosowana w ramach aktywnego zaznaczenia, dotyczy region jest ograniczone przez zaznaczenie.<br /><br /> Domyślnie wybór koloru active jest zmieszana wraz z zainfekowanego region obrazu zgodnie z jego składnik alfa. Aby użyć wybór koloru active zastąpić dotyczy region, naciśnij i przytrzymaj klawisz **Shift** klucza podczas używania narzędzia wypełnienia.|
-|**Gumka**|Jeśli obraz, który obsługuje kanał alfa, ustawia piksele, aby całkowicie przezroczysty kolor. W przeciwnym razie piksele Ustawia kolor tła active.|
-|**Wiersz**, **prostokąt**, **prostokąt zaokrąglony**, **wielokropka**|Rysuje kształt na obrazie. Można ustawić kolor i grubość konturu w **właściwości** okna.<br /><br /> Aby narysować elementu podstawowego, który ma równa szerokość i wysokość, naciśnij i przytrzymaj **Shift** podczas rysowania.|
-|**Text**|Używa wybór koloru pierwszego planu, aby rysować tekst. Kolor tła jest określany przez wybór koloru tła. Dla przezroczyste tło wartość alfa wybór koloru tła musi być 0. Gdy obszaru tekstu jest aktywna, można ustalić, czy tekst jest rysowana obrysu wygładzanie i można ustawić tekst **wartość**, **czcionki**, **rozmiar**, styl i —**Bold**, **Kursywa**, lub **podkreślona**— w **właściwości** okna. Zawartość i wygląd tekstu jest aktualnie finalizowana, gdy region tekst nie jest już aktywna.|
-|**Obróć**|Obrót 90 stopni w prawo.|
-|**TRIM**|Przycina obraz do aktywnego zaznaczenia.|
+|**Ołówka**|Używa aktywnego wyboru koloru do rysowania pociągnięcia z aliasem. Możesz ustawić kolor i grubość pociągnięcia w oknie **Właściwości** .|
+|**Ciągnięć**|Używa aktywnego wyboru koloru do rysowania pociągnięcia wygładzonego. Możesz ustawić kolor i grubość pociągnięcia w oknie **Właściwości** .|
+|**Aerografu**|Używa aktywnego wyboru koloru do narysowania pociągnięcia antyaliasowego, które miesza się ze sobą i przewyższa wartość czasu. Możesz ustawić kolor i grubość pociągnięcia w oknie **Właściwości** .|
+|**Służąc**|Ustawia aktywny wybór koloru na kolor wybranego piksela.|
+|**Pełni**|Używa aktywnego wyboru koloru do wypełnienia regionu obrazu. Region, którego to dotyczy, jest definiowany jako piksel, w którym zastosowano wypełnienie, wraz z każdym pikselem połączonym z nim przez piksele tego samego koloru, który jest tym samym kolorem. Jeśli wypełnienie jest stosowane w aktywnym zaznaczeniu, obszar, którego to dotyczy, jest ograniczony przez zaznaczenie.<br /><br /> Domyślnie aktywnym wyborem koloru jest mieszanie wraz z regionem, którego to dotyczy, zgodnie ze składnikiem Alpha. Aby użyć aktywnego wyboru kolorów w celu zastąpienia regionu, którego to dotyczy, naciśnij i przytrzymaj klawisz **SHIFT** podczas korzystania z narzędzia Fill.|
+|**Gumka**|Ustawia piksele na pełny kolor przezroczysty, jeśli obraz obsługuje kanał alfa. W przeciwnym razie ustawia piksele na aktywny kolor tła.|
+|**Linia**, **prostokąt**, **prostokąt zaokrąglony**, **Elipsa**|Rysuje kształt na obrazie. Możesz ustawić kolor i grubość konturu w oknie **Właściwości** .<br /><br /> Aby narysować pierwotną, która ma równą szerokość i wysokość, naciśnij i przytrzymaj klawisz **SHIFT** podczas rysowania.|
+|**Tekst**|Używa wyboru koloru pierwszego planu do rysowania tekstu. Kolor tła jest określany przez wybór koloru tła. W przypadku przezroczystego tła wartość alfa wyboru koloru tła musi być równa 0. Gdy region tekstu jest aktywny, można określić, czy tekst jest rysowany przy użyciu pociągnięcia wygładzonego, i można ustawić **wartość**tekstową, **czcionkę**, **rozmiar**i styl —**pogrubiony**, **kursywa**lub **podkreślony**— we **właściwościach.** okno. Zawartość i wygląd tekstu są finalizowane, gdy region tekstu nie jest już aktywny.|
+|**Obróceni**|Obraca obraz o 90 stopni w prawo.|
+|**Trim**|Przycina obraz do aktywnego zaznaczenia.|
 
-### <a name="work-with-mip-levels"></a>Praca z poziomów MIP
+### <a name="work-with-mip-levels"></a>Pracuj z poziomami MIP
 
-Niektóre obraz formatów, na przykład, DirectDraw Surface ( *.dds*), Obsługa poziomów MIP przestrzeni tekstury poziomu z Detail (poziomu). Aby uzyskać informacje o tym, jak generować i pracować z poziomami MIP, zobacz [jak: Tworzenie i modyfikacja poziomów MIP](../designers/how-to-create-and-modify-mip-levels.md)
+Niektóre formaty obrazu, na przykład powierzchnię programu DirectDraw ( *. DDS*), obsługują poziomy MCI dla poziomu (LOD) tekstury. Informacje o sposobach generowania i pracy z poziomu MIP można znaleźć w temacie [How to: Create and Modify Levels MIP](../designers/how-to-create-and-modify-mip-levels.md)
 
-### <a name="work-with-transparency"></a>Praca z przezroczystością
+### <a name="work-with-transparency"></a>Pracuj z przezroczystością
 
-Niektóre obraz formatów, na przykład, DirectDraw Surface ( *.dds*), obsługują przezroczystość. Istnieje kilka sposobów, można użyć przezroczystości, w zależności od tego narzędzia, którego używasz. Aby określić stopień przejrzystości dla wyboru koloru w **właściwości** oknie **A** składnik (alfa) wybór koloru.
+Niektóre formaty obrazu, na przykład powierzchnię programu DirectDraw ( *. DDS*), obsługują przezroczystość. Istnieje kilka sposobów używania przejrzystości, w zależności od używanego narzędzia. Aby określić poziom przezroczystości dla zaznaczenia koloru, w oknie **Właściwości** Ustaw **składnik (alfa** ) zaznaczonego koloru.
 
-W poniższej tabeli opisano, jak różne rodzaje kontroli narzędzi, jak przezroczystości są stosowane:
+W poniższej tabeli opisano sposób, w jaki różne rodzaje narzędzi kontrolują sposób stosowania przezroczystości:
 
 |Narzędzie|Opis|
 |----------|-----------------|
-|**Ołówek**, **pędzla**, **Aerograf**, **wiersza**, **prostokąt**, **prostokąt zaokrąglony** , **Elipsy**, **tekstu**|Aby dopasować wybór koloru aktywne, wraz z obrazu, w **właściwości** okna, rozwiń węzeł **kanały** grupy właściwości i ustaw **Rysowanie** pole wyboru na  **Alfa** kanał, a następnie narysuj normalnie.<br /><br /> Aby narysować przy użyciu wybór koloru aktywne i pozostawić wartość alfa odpowiadającą obrazu w miejscu, należy wyczyścić **Rysowanie** obok **alfa** kanał, a następnie narysuj normalnie.|
-|**Wypełnienie**|Aby dopasować wybór koloru aktywne, wraz z obrazu, po prostu wybrać obszar, aby wypełnić.<br /><br /> Umożliwia wybór koloru active — z uwzględnieniem wartości kanał alfa — Aby zastąpić obraz, naciśnij i przytrzymaj klawisz **Shift** , a następnie wybierz obszar, aby wypełnić.|
+|**Ołówek**, **pędzel**, **Aerograf**, **linia**, **prostokąt**, **prostokąt zaokrąglony**, **Elipsa**, **tekst**|Aby mieszać aktywny wybór kolorów wraz z obrazem, w oknie **Właściwości** rozwiń grupę właściwości **kanały** i Ustaw pole wyboru **Rysuj** w kanale **alfa** , a następnie narysuj normalne.<br /><br /> Aby narysować przy użyciu aktywnego koloru i pozostawić wartość alfa obrazu na miejscu, wyczyść pole wyboru **rysowania** kanału **alfa** , a następnie narysuj normalne.|
+|**Pełni**|Aby mieszać aktywny wybór kolorów wraz z obrazem, po prostu wybierz obszar do wypełnienia.<br /><br /> Aby użyć aktywnego wyboru kolorów — w tym wartości kanału alfa — aby zastąpić obraz, naciśnij i przytrzymaj klawisz **SHIFT** , a następnie wybierz obszar do wypełnienia.|
 
 ### <a name="image-properties"></a>Właściwości obrazu
 
-Możesz użyć **właściwości** okna, aby określić różne właściwości obrazu. Na przykład można ustawić właściwości szerokości i wysokości rozmiaru.
+Możesz użyć okna **Właściwości** , aby określić różne właściwości obrazu. Na przykład można ustawić właściwości width i height, aby zmienić rozmiar obrazu.
 
 W poniższej tabeli opisano właściwości obrazu:
 
 |Właściwość|Opis|
 |--------------|-----------------|
 |Szerokość|Szerokość obrazu.|
-|Wysokość|Wysokość obrazu.|
-|Liczba bitów na piksel|Liczba bitów, które reprezentują każdego piksela. Wartość tej właściwości zależy od **Format koloru** obrazu.|
-|Zaznaczenie przezroczyste|**Wartość true,** mieszania warstwy wybór wraz z głównym obrazu, na podstawie wartości alfa warstwy wyboru; w przeciwnym razie **False**. Ten element jest dostępna tylko dla obrazów, które obsługują alfa.|
-|Format|Format koloru z obrazu. Można określić wiele formatów kolorów, zależnie od formatu obrazu. Format koloru definiuje liczbę i rodzaj kanałów koloru, które są uwzględniane w obrazie, a także rozmiar i kodowanie różnych kanałów.|
-|Poziom mipmapy|Aktywne poziom MIP. Ten element jest dostępna tylko dla tekstur, które mają poziomy MIP.|
-|Liczba poziomów MIP|Całkowita liczba poziomów MIP na obrazie. Ten element jest dostępna tylko dla tekstur, które mają poziomy MIP.|
-|Liczba ramek|Całkowita liczba klatek na obrazie. Ten element jest dostępna tylko dla obrazów, które obsługuje tablic tekstury.|
-|Klatka|Bieżąca ramka. Mogą być wyświetlane tylko pierwsza ramka; wszystkie inne ramki zostaną utracone przy zapisywaniu obrazu.|
-|Liczba wycinków głębi|Całkowita liczba wycinków głębi w obrazie. Ten element jest dostępna tylko dla obrazów, które obsługują tekstury woluminu.|
-|Wycinek głębokości|Bieżącego wycinka głębi. Mogą być wyświetlane tylko pierwszy wycinek; wszystkie inne wycinki zostaną utracone podczas zapisywania obrazu.|
+|Proporcj|Wysokość obrazu.|
+|Bity na piksel|Liczba bitów, które reprezentują poszczególne piksele. Wartość tej właściwości zależy od **formatu koloru** obrazu.|
+|Zaznaczenie przezroczyste|**Wartość true** powoduje mieszanie warstwy wyboru wraz z obrazem głównym, na podstawie wartości alfa warstwy wyboru; w przeciwnym razie **false**. Ten element jest dostępny tylko dla obrazów, które obsługują Alpha.|
+|Format|Format koloru obrazu. W zależności od formatu obrazu można określić różne formaty kolorów. Format koloru definiuje liczbę i rodzaj kanałów kolorów, które są zawarte w obrazie, a także rozmiar i kodowanie różnych kanałów.|
+|Poziom MCI|Aktywny poziom MCI. Ten element jest dostępny tylko dla tekstur, które mają poziomy MIP.|
+|Liczba poziomów MIP|Całkowita liczba poziomów MIP w obrazie. Ten element jest dostępny tylko dla tekstur, które mają poziomy MIP.|
+|Liczba ramek|Całkowita liczba ramek w obrazie. Ten element jest dostępny tylko dla obrazów, które obsługują tablice tekstury.|
+|Klatka|Bieżąca ramka. Można wyświetlić tylko pierwszą ramkę; Po zapisaniu obrazu wszystkie pozostałe ramki zostaną utracone.|
+|Liczba wycinków głębi|Całkowita liczba wycinków głębokości w obrazie. Ten element jest dostępny tylko dla obrazów, które obsługują tekstury woluminów.|
+|Wycinek głębokości|Bieżący wycink głębokości. Można wyświetlić tylko pierwszy wycink; wszystkie inne wycinki zostaną utracone podczas zapisywania obrazu.|
 
 > [!NOTE]
-> Ponieważ **obrócić** właściwość ma zastosowanie do wszystkich narzędzi i wybranych regionach, zawsze pojawia się w dolnej części **właściwości** okna wraz z innymi właściwości narzędzia. **Obróć przez** zawsze jest wyświetlany, ponieważ obraz całej niejawnie zostaje wybrany, gdy nie ma żadnych wyboru ani narzędzie active. Aby uzyskać więcej informacji na temat **obrócić** właściwości, zobacz [narzędzia właściwości](#tool -properties).
+> Ponieważ właściwość **Obróć według** ma zastosowanie do wszystkich narzędzi i wybranych regionów, zawsze pojawia się u dołu okna **Właściwości** wraz z innymi właściwościami narzędzia. Wartość **Obróć według** jest zawsze wyświetlana, ponieważ cały obraz jest wybierany niejawnie, gdy nie ma żadnego innego zaznaczenia lub aktywnego narzędzia. Aby uzyskać więcej informacji na temat właściwości **Obróć według** , zobacz [Właściwości narzędzia](#tool -properties).
 
-### <a name="resize-images"></a>Zmiana rozmiaru obrazów
+### <a name="resize-images"></a>Zmień rozmiar obrazów
 
-Istnieją dwa sposoby, aby zmienić rozmiar obrazu. W obu przypadkach **edytora obrazów** używa warianty punktowego interpolacji do próbkowania obrazu.
+Istnieją dwa sposoby zmiany rozmiaru obrazu. W obu przypadkach **Edytor obrazów** używa interpolacji dwuliniowej w celu przepróbkowania obrazu.
 
-- W **właściwości** okna, określ nowe wartości **szerokość** i **wysokość** właściwości.
+- W oknie **Właściwości** Określ nowe wartości właściwości **Width** i **Height** .
 
-- Wybierz całego obrazu, a następnie zmień rozmiar obrazu za pomocą znaczników obramowania.
+- Zaznacz cały obraz i Użyj znaczników obramowania, aby zmienić rozmiar obrazu.
 
-### <a name="selected-regions"></a>Wybranych regionach
+### <a name="selected-regions"></a>Wybrane regiony
 
-Opcje na **edytora obrazów** zdefiniować regiony obrazu, które są aktywne. Aktywne regiony są zagrożone narzędzi i przekształcenia. W przypadku aktywnego zaznaczenia poza wybrany region nie dotyczy większości narzędzi i przekształcenia. Jeśli nie ma aktywnego zaznaczenia, całego obrazu jest aktywny.
+Zaznaczenia w **Edytorze obrazu** definiują regiony aktywnego obrazu. Na aktywne regiony mają wpływ narzędzia i przekształcenia. W przypadku aktywnego wyboru obszary poza wybranym regionem nie wpływają na większość narzędzi i transformacji. Jeśli nie ma aktywnego wyboru, cały obraz jest aktywny.
 
-Większość narzędzi (**ołówka**, **pędzla**, **Aerograf**, **wypełnienia**, **Gumka**i 2D podstawowych) i przekształcenia (**Obróć**, **Trim**, **Odwróć kolory**, **Przerzuć w poziomie**, i **Przerzuć w pionie** ) są ograniczone lub zdefiniowany przez aktywnego zaznaczenia. Jednak niektóre narzędzia (**Pipeta** i **tekstu**) i przekształcenia (**Generuj Mips**) nie ma wpływu na dowolnym aktywnego zaznaczenia. Te narzędzia zawsze zachowują się tak, jakby cały obraz jest aktywnego zaznaczenia.
+Większość narzędzi (**ołówek**, **pędzel**, **Aerograf**, **Fill**, **Gumka**i 2D) i przekształcenia (**Obróć**, **przycinanie**, **Odwróć kolory**, Przerzuć w **poziomie**i Przerzuć w **pionie**) są ograniczone lub zdefiniowane przez aktywny wybór. Jednak niektóre narzędzia (**Kroplomierz** i **tekst**) i przekształcenia (**generowanie MIPS**) nie mają wpływu na aktywny wybór. Narzędzia te zawsze zachowują się tak, jakby cały obraz był aktywnym wyborem.
 
-Podczas wyboru regionu, można nacisnąć i przytrzymać **Shift** proporcjonalna Zaznaczanie (kwadratowy). W przeciwnym razie zaznaczenia nie jest ograniczona.
+Gdy wybierasz region, możesz nacisnąć i przytrzymać klawisz **SHIFT** , aby utworzyć proporcjonalną (kwadrat) wybór. W przeciwnym razie zaznaczenie nie jest ograniczone.
 
-#### <a name="resize-selections"></a>Zmień rozmiar zaznaczenia
+#### <a name="resize-selections"></a>Zmień rozmiar wybranych
 
-Po wybraniu regionu, możesz zmienić rozmiar on lub jego zawartość obrazu, zmieniając rozmiar znacznika wyboru. Natomiast w przypadku zmiany rozmiaru wybranego regionu, można użyć następujące klawisze modyfikujące, aby zmienić zachowanie wybranego regionu, gdy zmieniasz rozmiar:
+Po wybraniu regionu można zmienić jego rozmiar lub zawartość obrazu, zmieniając rozmiar znacznika wyboru. Podczas zmieniania rozmiaru wybranego regionu można użyć następujących klawiszy modyfikujących, aby zmienić zachowanie wybranego regionu w miarę zmiany jego rozmiaru:
 
-**CTRL** — kopiuje zawartość wybranego regionu, zanim zmiany jego rozmiaru. Spowoduje to pozostawienie oryginalny obraz bez zmian podczas zmiany rozmiaru kopii.
+**Ctrl** — kopiuje zawartość wybranego regionu, zanim zostanie on zmieniony. Spowoduje to pozostawienie oryginalnego obrazu bez zmian podczas zmiany rozmiaru kopiowania.
 
-**SHIFT** — zmienia rozmiar wybranego regionu, proporcjonalnie do oryginalnego rozmiaru.
+**SHIFT** — zmienia rozmiar wybranego regionu proporcjonalnie do jego oryginalnego rozmiaru.
 
-**ALT** — zmienia rozmiar regionu zaznaczenia. Spowoduje to pozostawienie obrazu w niezmienionej postaci.
+**Alt** — zmienia rozmiar regionu zaznaczenia. Spowoduje to pozostawienie niezmodyfikowanego obrazu.
 
-W poniższej tabeli opisano modyfikator prawidłowe kombinacje klawiszy:
+W poniższej tabeli opisano prawidłowe kombinacje klawiszy modyfikujących:
 
-|Ctrl|Shift|Alt|Opis|
+|Przytrzymaj|Nocn|+|Opis|
 |----------|-----------|---------|-----------------|
 ||||Zmienia rozmiar zawartości wybranego regionu.|
-||**SHIFT**||Proporcjonalnie zmienia rozmiar zawartości wybranego regionu.|
-|||**ALT**|Zmienia rozmiar wybranego regionu. Definiuje nowy region zaznaczenia.|
-||**SHIFT**|**ALT**|Proporcjonalnie zmienia rozmiar wybranego regionu. Definiuje nowy region zaznaczenia.|
-|**Ctrl**|||Kopiuje, a następnie zmienia rozmiar zawartości wybranego regionu.|
-|**Ctrl**|**SHIFT**||Kopiuje, a następnie proporcjonalnie zmienia rozmiar zawartości wybranego regionu.|
+||**Nocn**||Proporcjonalnie zmienia rozmiar zawartości wybranego regionu.|
+|||**+**|Zmienia rozmiar wybranego regionu. Definiuje nowy region wyboru.|
+||**Nocn**|**+**|Proporcjonalnie zmienia rozmiar wybranego regionu. Definiuje nowy region wyboru.|
+|**Przytrzymaj**|||Kopiuje, a następnie zmienia rozmiar zawartości wybranego regionu.|
+|**Przytrzymaj**|**Nocn**||Kopiuje, a następnie proporcjonalnie zmienia rozmiar zawartości wybranego regionu.|
 
 ### <a name="tool-properties"></a>Właściwości narzędzia
 
-To narzędzie jest zaznaczone, ale można używać **właściwości** okna możliwość określania szczegółów o tym jak wpływa na obrazie. Na przykład można ustawić grubość **ołówka** narzędzia lub kolor **pędzla** narzędzia.
+Gdy wybrane jest narzędzie, można użyć okna **Właściwości** , aby określić szczegóły dotyczące wpływu na obraz. Na przykład można ustawić grubość narzędzia **ołówek** lub kolor narzędzia **pędzel** .
 
-Możesz ustawić kolor pierwszego planu i kolor tła. Obie obsługują kanał alfa, zapewnienie nieprzezroczystość zdefiniowanych przez użytkownika. Ustawienia są stosowane do wszystkich narzędzi. Jeśli używasz myszy, lewy przycisk myszy odpowiada kolor pierwszego planu, a następnie prawym przyciskiem myszy odpowiada kolor tła.
+Można ustawić kolor pierwszego planu i kolor tła. Oba obsługują kanał alfa w celu zapewnienia nieprzezroczystości zdefiniowanej przez użytkownika. Ustawienia są stosowane do wszystkich narzędzi. Jeśli używasz myszy, lewy przycisk myszy odpowiada kolorowi pierwszego planu, a prawy przycisk myszy odpowiada kolorowi tła.
 
 W poniższej tabeli opisano właściwości narzędzia:
 
 |Narzędzie|Właściwości|
 |----------|----------------|
-|Wszystkie narzędzia i opcje|**Obróć o**<br /> Określa, w stopniach, czy zaznaczenie lub narzędzia efekt jest obracana wskazówek zegara.|
-|**Ołówek**, **pędzla**, **Aerograf**, **Gumka**|**Grubość**<br /> Określa rozmiar obszaru, który jest zależna od narzędzia.|
-|**Text**|**Wygładzanie**<br /> Rysuje tekst, który ma wygładzanie krawędzi. Dzięki temu tekst gładsze wygląd.<br /><br /> **Wartość**<br /> Tekst do narysowania.<br /><br /> **Czcionka**<br /> Czcionka używana ma zostać narysowany tekst.<br /><br /> **Rozmiar**<br /> Rozmiar tekstu.<br /><br /> **Bold**<br /> Sprawia, że czcionka pogrubienie.<br /><br /> **Kursywa**<br /> Sprawia, że czcionka italic.<br /><br /> **Podkreślony**<br /> Sprawia, że czcionka podkreślone.|
-|**2D podstawowego**|**Wygładzanie**<br /> Rysuje podstawowych, które mają wygładzanie krawędzi. To daje im gładsze wygląd.<br /><br /> **Grubość**<br /> Określa grubość linii, który wchodzi w skład granicy podstawowego.<br /><br /> **Promień X**<br /> (Tylko w przypadku prostokąt zaokrąglony) Definiuje górną i dolną krawędzią element pierwotny zaokrąglania usługi radius.<br /><br /> **Promień Y**<br /> (Tylko w przypadku prostokąt zaokrąglony) Definiuje zaokrąglania usługi radius do lewej i prawej krawędzi element pierwotny.|
-|**Pencil**, **Brush**, **Airbrush**, **2D Primitive**|**Channels**<br /> Włącza lub wyłącza określony kolor kanały do wyświetlania i rysowania. Jeśli **widoku** jest ustawiona dla określonego kanału koloru, tym kanale jest widoczne na obrazie; w przeciwnym razie nie jest on widoczny. Jeśli **Rysowanie** ustawiono dla określonego kanału koloru, że kanał jest objęte za pomocą rysowania operacji; w przeciwnym razie, nie jest.|
-|**Wybór Różdżka**, **wypełnienia**|**Tolerance**<br /> Definiuje maksymalną różnicę między sąsiadujących kolorów, w których są one traktowane jako podobnie, tak aby mniej lub bardziej podobne kolory zostały wprowadzone w ramach objęty lub wybranego regionu. Domyślnie wartość jest 32, co oznacza, że sąsiadujących pikseli w ciągu 32 odcienie koloru oryginalnego (jaśniejsze i ciemniejsze) są traktowane jako część obszaru.|
+|Wszystkie narzędzia i wybory|**Obróć o**<br /> Definiuje wartość w stopniach, w której zaznaczenie lub efekt narzędzia zostanie obrócony w kierunku w prawo.|
+|**Ołówek**, **pędzel**, **Aerograf**, **Gumka**|**Szerokość**<br /> Określa rozmiar obszaru, na który ma wpływ narzędzie.|
+|**Tekst**|**Antyalias**<br /> Rysuje tekst, który ma wygładzone krawędzie. Daje to płynny wygląd tekstu.<br /><br /> **Wartość**<br /> Tekst do narysowania.<br /><br /> **Font**<br /> Czcionka używana do rysowania tekstu.<br /><br /> **Zmienia**<br /> Rozmiar tekstu.<br /><br /> **Zapis**<br /> Powoduje pogrubienie czcionki.<br /><br /> **Kursywa**<br /> Powoduje, że czcionka jest kursywą.<br /><br /> **Podkreślone**<br /> Sprawia, że czcionka jest podkreślona.|
+|**Podstawowy 2D**|**Antyalias**<br /> Rysuje elementy pierwotne, które mają wygładzone krawędzie. Daje to płynny wygląd.<br /><br /> **Szerokość**<br /> Definiuje grubość linii, która tworzy granicę elementu podstawowego.<br /><br /> **Promień X**<br /> (Tylko zaokrąglony prostokąt) Definiuje promień zaokrąglenia górnego i dolnego krawędzi elementu podstawowego.<br /><br /> **Promień Y**<br /> (Tylko zaokrąglony prostokąt) Definiuje promień zaokrąglenia dla lewej i prawej krawędzi elementu podstawowego.|
+|**Ołówek**, **pędzel**, **Aerograf**, **podstawowy 2D**|**Dyplomatyczn**<br /> Włącza lub wyłącza określone kanały kolorów do wyświetlania i rysowania. Jeśli **Widok** jest ustawiony dla określonego kanału koloru, ten kanał jest widoczny w obrazie. w przeciwnym razie nie jest widoczny. W przypadku wybrania opcji **rysowania** dla określonego kanału kolorów ten kanał ma wpływ na operacje rysowania. w przeciwnym razie nie jest.|
+|**Wybór Różdżka**, **wypełnienie**|**Dzial**<br /> Definiuje maksymalną różnicę między sąsiednimi kolorami, w których są uważane za podobne, dzięki czemu mniej lub bardziej podobne kolory są częścią objętego lub wybranego regionu. Domyślnie wartością jest 32, co oznacza, że sąsiednie piksele w odcieniach 32 (jaśniejszy lub ciemniejszy) oryginalnego koloru są uważane za część regionu.|
 
 ## <a name="keyboard-shortcuts"></a>Skróty klawiaturowe
 
 |Polecenie|Skróty klawiaturowe|
 |-------------| - |
-|Przełącz się do **wybierz** tryb|**S**|
-|Przełącz się do **powiększenia** tryb|**Z**|
-|Przełącz się do **Pan** tryb|**K**|
+|Przełącz do trybu **wyboru**|**Wolumin**|
+|Przełącz do trybu **powiększenia**|**Porządku**|
+|Przełącz do trybu **kadrowania**|**K**|
 |Zaznacz wszystkie|**Ctrl**+**A**|
 |Usuń bieżące zaznaczenie|**Delete**|
-|Anuluj bieżące zaznaczenie|**ESC** (ucieczki)|
-|Powiększanie|**CTRL**+**kółkiem myszy do przodu**<br /><br /> **Ctrl**+**PageUp**<br /><br /> Znak plus ( **+** )|
-|Pomniejszanie|**CTRL**-**obrót kółkiem myszy do tyłu**<br /><br /> **Ctrl**-**PageDown**<br /><br /> Znak minus ( **-** )|
-|Przesuń w górę obrazu|**Obrót kółkiem myszy do tyłu**<br /><br /> **PageDown**|
-|Przesuń w dół obrazu|**Obrót kółkiem myszy do przodu**<br /><br /> **PageUp**|
-|Przesuń obrazu po lewej|**SHIFT**+**obrót kółkiem myszy do tyłu**<br /><br /> **Obrót kółkiem myszy w lewo**<br /><br /> **Shift**+**PageDown**|
-|Przesuń w prawo obrazu|**SHIFT**+**kółkiem myszy do przodu**<br /><br /> **Obrót kółkiem myszy do prawej**<br /><br /> **SHIFT**+**PageUp**|
-|Powiększ do rzeczywistego rozmiaru|**CTRL**+**0** (zero)|
-|Dopasuj obraz do okna|**Ctrl**+**G**, **Ctrl**+**F**|
-|Obraz Dopasuj do szerokości okna|**Ctrl**+**G**, **Ctrl**+**I**|
-|Przełącz siatkę|**Ctrl**+**G**, **Ctrl**+**G**|
-|Przytnij obraz do bieżącego zaznaczenia|**Ctrl**+**G**, **Ctrl**+**C**|
-|Wyświetlanie następnego (szczegóły wyższej) Poziom MIP|**Ctrl**+**G**, **Ctrl**+**6**|
-|Wyświetl poprzednie (niższe szczegóły) Poziom MIP|**Ctrl**+**G**, **Ctrl**+**7**|
-|Przełącz kanału koloru czerwonego|**Ctrl**+**G**, **Ctrl**+**1**|
-|Przełącz kolor zielony kanału|**Ctrl**+**G**, **Ctrl**+**2**|
-|Przełącz koloru niebieskiego kanału|**Ctrl**+**G**, **Ctrl**+**3**|
-|Przełącz kanał alfa (przezroczystości)|**Ctrl**+**G**, **Ctrl**+**4**|
-|Przełącz wzorzec szachownicy alfa|**Ctrl**+**G**, **Ctrl**+**B**|
-|Przełącz się do kształt-narzędzie|**L**|
-|Przejdź do narzędzia zaznaczania Różdżka|**M**|
-|Przełącz do Ołówek narzędzia|**P**|
-|Przełącz się do narzędzia pędzla|**B**|
-|Przełącz do Wypełnianie kolorem-narzędzie|**F**|
-|Przejdź do narzędzia Gumka|**E**|
-|Przełącz się do narzędzie tekstowe|**T**|
-|Przejdź do narzędzia zaznaczania kolorów (Pipeta)|**I**|
-|Przenoszenie aktywnego zaznaczenia i jego zawartość.|**Strzałka** kluczy.|
-|Zmień rozmiar aktywnego zaznaczenia i jego zawartość.|**CTRL**+**strzałkę** kluczy|
-|Przenoszenie aktywnego zaznaczenia, ale nie jego zawartość.|**SHIFT**+**strzałkę** kluczy|
-|Zmień rozmiar aktywnego zaznaczenia, ale nie jego zawartość.|**SHIFT**+**Ctrl**+**strzałkę** kluczy|
-|Bieżąca warstwa zatwierdzenia|**Return**|
+|Anuluj bieżące zaznaczenie|**ESC** (Escape)|
+|Powiększanie|**Ctrl** +**kółkiem myszy do przodu**<br /><br /> **Ctrl** +**PageUp**<br /><br /> Znak plus ( **+** )|
+|Pomniejszanie|**Ctrl** -**kółkiem myszy do tyłu**<br /><br /> **Ctrl** -**PageDown**<br /><br /> Znak minusa ( **-** )|
+|Przesuń obraz do góry|**Kółko myszy do tyłu**<br /><br /> **PageDown**|
+|Przesuń obraz w dół|**Kółko myszy do przodu**<br /><br /> **PageUp**|
+|Przesuń obraz w lewo|**Shift** +**kółkiem myszy do tyłu**<br /><br /> **Kółko myszy w lewo**<br /><br /> **Shift** +**PageDown**|
+|Przesuń obraz w prawo|**Przesuń** +**kółkiem myszy do przodu**<br /><br /> **Kółko myszy w prawo**<br /><br /> **Shift** +**PageUp**|
+|Powiększ do rzeczywistego rozmiaru|**Ctrl** +**0** (zero)|
+|Dopasuj obraz do okna|**Ctrl** +**G**, **Ctrl** +**F**|
+|Dopasuj obraz do szerokości okna|**Ctrl** +**G**, **Ctrl** +**I**|
+|Przełącz siatkę|**Ctrl** +**g**, **Ctrl** +**g**|
+|Przytnij obraz do bieżącego zaznaczenia|**Ctrl** +**G**, **Ctrl** +**C**|
+|Wyświetl następną (wyższą szczegóły) poziom MCI|**Ctrl** +**G**, **Ctrl** +**6**|
+|Wyświetl poprzedni (niższy szczegóły) poziom MCI|**Ctrl** +**G**, **Ctrl** +**7**|
+|Przełącz kanał koloru czerwonego|**Ctrl** +**G**, **Ctrl** +**1**|
+|Przełącz kanał zielony koloru|**Ctrl** +**G**, **Ctrl** +**2**|
+|Przełącz kanał niebieskiego koloru|**Ctrl** +**G**, **Ctrl** +**3**|
+|Przełącz kanał alfa (przezroczysty)|**Ctrl** +**G**, **Ctrl** +**4**|
+|Przełącz wzorzec szachownicy alfa|**Ctrl** +**G**, **Ctrl** +**B**|
+|Przełącz do narzędzia nieregularnego wyboru|**&**|
+|Przełącz do narzędzia wyboru Różdżka|**Mol**|
+|Przejdź do narzędzia Ołówek|**St**|
+|Przełącz do narzędzia Pędzel|**B**|
+|Przełącz do narzędzia Fill|**N**|
+|Przełącz do narzędzia Gumka|**Adres**|
+|Przełącz do narzędzia tekstowego|**&**|
+|Przejdź do narzędzia do zaznaczania kolorowego (Kroplomierz)|**Mam**|
+|Przenieś aktywne zaznaczenie i jego zawartość.|Klawisze **strzałek** .|
+|Zmień rozmiar aktywnego zaznaczenia i jego zawartość.|**Ctrl** + klawisze**strzałek**|
+|Przenieś aktywny wybór, ale nie jego zawartość.|**Shift** + klawiszy**strzałek**|
+|Zmień rozmiar aktywnego zaznaczenia, ale nie jego zawartość.|**Shift** +**Ctrl** + klawiszy**strzałek**|
+|Zatwierdź bieżącą warstwę|**Przesłać**|
 |Zmniejsz grubość narzędzia|**[**|
 |Zwiększ grubość narzędzia|**]**|
 
@@ -288,6 +288,6 @@ W poniższej tabeli opisano właściwości narzędzia:
 
 |Tytuł|Opis|
 |-----------|-----------------|
-|[Praca z zasobami 3D dla gier i aplikacji](../designers/working-with-3-d-assets-for-games-and-apps.md)|Omówienie narzędzi, których można użyć w programie Visual Studio do pracy z zasobami grafiki, takie jak tekstury i obrazy, modele 3D i efekty cieniowania.|
-|[Edytor modelu](../designers/model-editor.md)|Opisuje sposób używania edytora modelu programu Visual Studio do pracy z modelami 3D.|
-|[Projektant cieniowania](../designers/shader-designer.md)|Opisuje sposób używania projektanta programu do cieniowania programu Visual Studio do pracy z programów do cieniowania.|
+|[Praca z zasobami 3W dla gier i aplikacji](../designers/working-with-3-d-assets-for-games-and-apps.md)|Zawiera omówienie narzędzi, których można użyć w programie Visual Studio do pracy z zasobami graficznymi, takimi jak tekstury i obrazy, modele 3W i efekty cieniowania.|
+|[Edytor modelu](../designers/model-editor.md)|Opisuje sposób używania Edytora modelu programu Visual Studio do pracy z modelami 3W.|
+|[Projektant cieniowania](../designers/shader-designer.md)|Opisuje, jak używać projektanta cieniowania programu Visual Studio do pracy z narzędziami do cieniowania.|

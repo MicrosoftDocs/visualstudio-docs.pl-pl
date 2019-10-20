@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Wyślij opinię | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: przesyłanie opinii | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - sending feedback [Visual Studio]
 ms.assetid: c9f1dd8f-bcb6-40ac-b896-1e9eca0bb209
 caps.latest.revision: 41
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ced6ee7cea72b0e07d10768e75409ef23c1bb869
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e20e384a0ecda48446aae598476a709d226e167a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62938006"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72609749"
 ---
-# <a name="how-to-send-feedback-about-visual-studio"></a>Instrukcje: Wyślij opinię o programie Visual Studio
-Ta zawartość została usunięta. Aby uzyskać informacje, zobacz [Porozmawiaj z nami](../ide/talk-to-us.md).
+# <a name="how-to-send-feedback-about-visual-studio"></a>Porady: wysyłanie opinii o Visual Studio
+Ta zawartość została usunięta. Aby uzyskać więcej informacji, zobacz [rozmowa z nami](../ide/talk-to-us.md).

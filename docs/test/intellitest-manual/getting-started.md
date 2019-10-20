@@ -1,36 +1,36 @@
 ---
-title: Wprowadzenie do funkcji IntelliTest
+title: Wprowadzenie do IntelliTest
 ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Get started
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 92a5b5f6ffac7285dd1a22d7193ada74e3a90967
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+author: jillre
+ms.openlocfilehash: 0d0d681c59935bbbb4591438f538d0c800cba489
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62906850"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653207"
 ---
-# <a name="get-started-with-microsoft-intellitest"></a>Rozpoczynanie pracy z usługą Microsoft IntelliTest
+# <a name="get-started-with-microsoft-intellitest"></a>Wprowadzenie do programu Microsoft IntelliTeste
 
-* Jeśli jest to pierwsza z funkcją IntelliTest:
-  * Obejrzyj [wideo Channel 9](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Intellitest)
-  * Przeczytaj ten artykuł [omówienie magazynu MSDN Magazine](https://msdn.microsoft.com/magazine/dn904672.aspx)
-  * Przeczytaj nasze [dokumentacji](../../test/generate-unit-tests-for-your-code-with-intellitest.md)
-* Zadaj pytania na [Stack Overflow](http://stackoverflow.com/questions/tagged/intellitest)
-* Czytania dalszej części tego podręcznika
-* Wydrukowanie tej strony jako podręczna karta informacyjna
+* Jeśli jest to po raz pierwszy z IntelliTest:
+  * Obejrzyj [wideo w kanale 9](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Intellitest)
+  * Przeczytaj ten [Przegląd na platformie MSDN Magazine](https://msdn.microsoft.com/magazine/dn904672.aspx)
+  * Przeczytaj naszą [dokumentację](../../test/generate-unit-tests-for-your-code-with-intellitest.md)
+* Zadawaj pytania dotyczące [Stack Overflow](http://stackoverflow.com/questions/tagged/intellitest)
+* Przeczytaj resztę tego podręcznika odwołania
+* Drukuj Tę stronę na potrzeby szybkiego odwoływania się
 
-## <a name="important-attributes"></a>Ważnych atrybutów
+## <a name="important-attributes"></a>Ważne atrybuty
 
-* [PexClass](attribute-glossary.md#pexclass) oznacza typ zawierający **PUT**
-* [PexMethod](attribute-glossary.md#pexmethod) znaczniki **PUT**
-* [PexAssumeNotNull](attribute-glossary.md#pexassumenotnull) oznacza parametrów innych niż null
+* [PexClass](attribute-glossary.md#pexclass) oznacza typ zawierający **Put**
+* [PexMethod](attribute-glossary.md#pexmethod) oznacza **Umieszczanie**
+* [PexAssumeNotNull](attribute-glossary.md#pexassumenotnull) oznacza parametr o wartości innej niż null
 
 ```csharp
 using Microsoft.Pex.Framework;
@@ -44,20 +44,20 @@ public partial class FooTest {
 }
 ```
 
-* [PexAssemblyUnderTest](attribute-glossary.md#pexassemblyundertest) projektu testowego jest powiązana z projektem
-* [PexInstrumentAssembly](attribute-glossary.md#pexinstrumentassemblyattribute) określa zestaw do Instrumentacji
+* [PexAssemblyUnderTest](attribute-glossary.md#pexassemblyundertest) tworzy powiązanie projektu testowego z projektem
+* [PexInstrumentAssembly](attribute-glossary.md#pexinstrumentassemblyattribute) określa zestaw do instrumentu
 
 ```csharp
 [assembly: PexAssemblyUnderTest("MyAssembly")] // also instruments "MyAssembly"
 [assembly: PexInstrumentAssembly("Lib")]
 ```
 
-## <a name="helper-classes"></a> Ważne statyczne klasy pomocy
+## <a name="helper-classes"></a>Ważne klasy pomocników statycznych
 
-* [PexAssume](static-helper-classes.md#pexassume) ocenia założenia (filtrowanie wejściowych)
-* [PexAssert](static-helper-classes.md#pexassert) ocenia potwierdzenia
-* [PexChoose](static-helper-classes.md#pexchoose) generuje nowe opcje (dodatkowe dane wejściowe)
-* [PexObserve](static-helper-classes.md#pexobserve) zaloguje się na żywo wartości wygenerowanych testów
+* [PexAssume](static-helper-classes.md#pexassume) oblicza założenia (filtrowanie danych wejściowych)
+* [PexAssert](static-helper-classes.md#pexassert) oblicza potwierdzenia
+* [PexChoose](static-helper-classes.md#pexchoose) generuje nowe wybory (dodatkowe dane wejściowe)
+* [Funkcja PexObserve](static-helper-classes.md#pexobserve) rejestruje wartości na żywo w wygenerowanych testach
 
 ```csharp
 [PexMethod]
@@ -72,6 +72,6 @@ void StaticHelpers(Foo target) {
 }
 ```
 
-## <a name="got-feedback"></a>Czy chcesz przesłać opinię?
+## <a name="got-feedback"></a>Masz opinię?
 
-Opublikuj swoje pomysły i funkcji żądania na [społeczności deweloperów](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
+Publikuj swoje pomysły i żądania funkcji w [społeczności deweloperów](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).

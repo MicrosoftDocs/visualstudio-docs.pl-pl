@@ -37,19 +37,19 @@ helpviewer_keywords:
 - line numbers
 - virtual space
 ms.assetid: 49ee7306-9d46-4170-850f-a1716171752d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e15357220c9a9d74d4b08fdd97d4f808ff770b9a
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 2c33ccbaa21008ab3fa3d1122847c5e18708f9fc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68606053"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666349"
 ---
-# <a name="options-dialog-box-text-editor--all-languages"></a>Opcje — okno dialogowe: Edytor \> tekstu — wszystkie języki
+# <a name="options-dialog-box-text-editor--all-languages"></a>Opcje — okno dialogowe: Edytor tekstu \> wszystkie języki
 
 To okno dialogowe umożliwia zmianę domyślnego zachowania edytora kodu. Te ustawienia mają zastosowanie również do innych edytorów w oparciu o Edytor kodu, taki jak widok źródła projektanta HTML. Aby otworzyć to okno dialogowe, wybierz **Opcje** z menu **Narzędzia** . W folderze **Edytor tekstu** rozwiń podfolder **wszystkie języki** , a następnie wybierz pozycję **Ogólne**.
 
@@ -76,7 +76,7 @@ Po wybraniu Pełna składnia dla bieżącej deklaracji lub procedury jest wyświ
 
 **Włącz wirtualne miejsce**
 
-Gdy ta opcja jest zaznaczona,  a Zawijanie wierszy jest wyczyszczone, można kliknąć dowolne miejsce poza końcem wiersza w edytorze kodu i wpisać. Ta funkcja może służyć do pozycjonowania komentarzy w spójnym punkcie obok kodu.
+Gdy ta opcja jest zaznaczona, a **Zawijanie** wierszy jest wyczyszczone, można kliknąć dowolne miejsce poza końcem wiersza w edytorze kodu i wpisać. Ta funkcja może służyć do pozycjonowania komentarzy w spójnym punkcie obok kodu.
 
 **Zawijanie wierszy**
 

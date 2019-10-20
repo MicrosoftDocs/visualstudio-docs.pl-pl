@@ -11,23 +11,23 @@ helpviewer_keywords:
 - command aliases
 - alias command
 ms.assetid: bdf857df-b5d5-450f-8c10-a6fd4dccc130
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 396db6e08da211a801361328416d97622ee3eac8
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 48fa131514f82ec13538b8f5a0662fde7388ddea
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926337"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651987"
 ---
 # <a name="alias-command"></a>Alias — Polecenie
 Tworzy nowy alias dla kompletnego polecenia, kompletne polecenie i argumenty lub inny alias.
 
 > [!TIP]
-> Wpisywanie `>alias` bez żadnych argumentów wyświetla bieżącą listę aliasów i ich definicje.
+> Wpisanie `>alias` bez żadnych argumentów wyświetla bieżącą listę aliasów i ich definicje.
 
 ## <a name="syntax"></a>Składnia
 
@@ -37,7 +37,7 @@ Tools.Alias [/delete] [/reset] [aliasname] [aliasstring]
 
 ## <a name="arguments"></a>Argumenty
 `aliasname`\
-Opcjonalna. Nazwa nowego aliasu. Jeśli nie podano wartości dla `aliasname`, zostanie wyświetlona lista bieżących aliasów i ich definicji.
+Opcjonalny. Nazwa nowego aliasu. Jeśli nie podano żadnej wartości dla `aliasname`, zostanie wyświetlona lista bieżących aliasów i ich definicji.
 
 `aliasstring`\
 Opcjonalny. Pełna nazwa polecenia lub istniejący alias oraz wszystkie parametry, które chcesz utworzyć jako alias. Jeśli nie podano wartości dla `aliasstring`, zostanie wyświetlona nazwa aliasu i ciąg aliasu dla określonego aliasu.
@@ -46,7 +46,7 @@ Opcjonalny. Pełna nazwa polecenia lub istniejący alias oraz wszystkie parametr
 /DELETE lub/del lub/d\
 Opcjonalny. Usuwa określony alias, usuwając go z autouzupełniania.
 
-/Reset\
+/Reset
 Opcjonalny. Resetuje listę wstępnie zdefiniowanych aliasów do jej oryginalnych ustawień. Oznacza to, że przywraca wszystkie wstępnie zdefiniowane aliasy i usuwa wszystkie aliasy zdefiniowane przez użytkownika.
 
 ## <a name="remarks"></a>Uwagi
@@ -54,10 +54,10 @@ Ponieważ aliasy reprezentują polecenia, muszą one znajdować się na początk
 
 Po wydaniu tego polecenia, należy uwzględnić przełączniki natychmiast po poleceniu, nie po aliasach, w przeciwnym razie sam przełącznik zostanie dołączony jako część ciągu aliasu.
 
-`/reset` Przełącznik monituje o potwierdzenie przed przywróceniem aliasów. Nie ma żadnej krótkiej formy `/reset`.
+Przełącznik `/reset` prosi o potwierdzenie przed przywróceniem aliasów. Nie ma żadnej krótkiej formy `/reset`.
 
 ## <a name="examples"></a>Przykłady
-W tym przykładzie tworzony jest nowy alias `upper`, dla pełnego polecenia Edit. MakeUpperCase.
+W tym przykładzie tworzony jest nowy alias, `upper` w celu wykonania polecenia Edit. MakeUpperCase.
 
 ```cmd
 >Tools.Alias upper Edit.MakeUpperCase

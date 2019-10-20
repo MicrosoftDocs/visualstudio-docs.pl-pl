@@ -1,5 +1,5 @@
 ---
-title: 'CA1725: Nazwy parametrów powinny pasować do podstawowej deklaracji | Dokumentacja firmy Microsoft'
+title: 'CA1725: nazwy parametrów powinny być zgodne z deklaracją podstawową | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,34 +12,34 @@ helpviewer_keywords:
 - ParameterNamesShouldMatchBaseDeclaration
 ms.assetid: 9b657ab0-fe81-4f4c-9481-ba746988c922
 caps.latest.revision: 13
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: e97431b46640fb8241d6bde80d09d38084650be8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 128069bb24dfc8b1c11963e33c9541701b0eea15
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68143171"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653741"
 ---
-# <a name="ca1725-parameter-names-should-match-base-declaration"></a>CA1725: Nazwy parametrów powinny być zgodne z deklaracją podstawową
+# <a name="ca1725-parameter-names-should-match-base-declaration"></a>CA1725: Nazwy parametrów powinny pasować do podstawowej deklaracji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|ParameterNamesShouldMatchBaseDeclaration|
 |CheckId|CA1725|
-|Kategoria|Microsoft.Naming|
+|Kategoria|Microsoft. nazewnictwo|
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Nazwa parametru w widocznej zewnętrznie metodzie zastąpienia jest niezgodny z nazwy parametru w deklaracji podstawowej metody lub nazwę parametru w deklaracji metody interfejsu.
+ Nazwa parametru w niewidocznym na zewnątrz przesłonięciu metody nie pasuje do nazwy parametru w podstawowej deklaracji metody lub nazwy parametru w deklaracji interfejsu metody.
 
 ## <a name="rule-description"></a>Opis reguły
  Spójne nazywanie parametrów w zastąpieniu hierarchii zwiększa użyteczność zastąpienia metody. Jeśli nazwa parametru w metodzie pochodnej różni się od nazwy podstawowej deklaracji, może nie być jasne, czy metoda jest zastąpieniem metody podstawowej, czy też nowym przeciążeniem metody.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, Zmień nazwę parametru, aby pasować do deklaracji podstawowej. Poprawka jest istotną zmianę dla metody widoczne dla modelu COM.
+ Aby naprawić naruszenie tej reguły, Zmień nazwę parametru tak, aby była zgodna z deklaracją podstawową. Poprawka jest istotną zmianą dla metod widocznych dla modelu COM.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Nie pomijaj ostrzeżeń dla tej reguły, z wyjątkiem metody widoczne dla modelu COM w bibliotekach, które wcześniej zostały wprowadzone do użytku.
+ Nie pomijaj ostrzeżenia z tej reguły, z wyjątkiem metod widocznych dla modelu COM w bibliotekach, które zostały wcześniej dostarczone.

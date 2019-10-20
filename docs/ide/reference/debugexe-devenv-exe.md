@@ -8,21 +8,21 @@ helpviewer_keywords:
 - /DebugExe [devenv.exe]
 - debugging executables
 ms.assetid: cd700006-1648-418f-924b-4b1e5c1412ab
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05266a6f1b5ee0be22e2edc8df1c03b720844f4f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bb4eb1eb49cd6b29740fb6d365a98a51cc28387e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968083"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661678"
 ---
 # <a name="debugexe-devenvexe"></a>/DebugExe (devenv.exe)
 
-Otwiera określony plik wykonywalny do zdebugowania.
+Otwiera określony plik wykonywalny do debugowania.
 
 ## <a name="syntax"></a>Składnia
 
@@ -34,15 +34,15 @@ devenv /DebugExe ExecutableFile
 
 - *ExecutableFile*
 
-  Wymagana. Ścieżka i nazwa pliku z `.exe` pliku. Jeśli `.exe` pliku nie zostanie odnaleziony lub nie istnieje, jest wyświetlane żadne ostrzeżenia ani błędu i programu Visual Studio uruchamia się normalnie.
+  Wymagany. Ścieżka i nazwa pliku `.exe`. Jeśli plik `.exe` nie zostanie znaleziony lub nie istnieje, nie jest wyświetlane ostrzeżenie ani błąd, a program Visual Studio jest uruchamiany normalnie.
 
 ## <a name="remarks"></a>Uwagi
 
-Wszystkie ciągi zgodnie z *ExecutableFile* parametru są przekazywane do tego pliku jako argumenty.
+Wszystkie ciągi po parametrze *executablefile* są przekazane do tego pliku jako argumenty.
 
 ## <a name="example"></a>Przykład
 
-W poniższym przykładzie otwierany plik `MyApplication.exe` do debugowania.
+Poniższy przykład otwiera plik `MyApplication.exe` na potrzeby debugowania.
 
 ```shell
 devenv /debugexe MyApplication.exe
@@ -50,4 +50,4 @@ devenv /debugexe MyApplication.exe
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Przełączniki wiersza polecenia Devenv](../../ide/reference/devenv-command-line-switches.md)
+- [Przełączniki wiersza polecenia devenv](../../ide/reference/devenv-command-line-switches.md)

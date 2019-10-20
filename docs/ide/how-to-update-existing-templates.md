@@ -7,67 +7,67 @@ helpviewer_keywords:
 - Visual Studio templates, updating
 - project templates, updating
 - updating templates [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 57e457224d47e278df169b931c6e9cf6b8ae25e1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ee0118ce4181a12ca4c199b8174a28fb4b431063
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974699"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656544"
 ---
-# <a name="how-to-update-existing-templates"></a>Instrukcje: Aktualizowanie istniejących szablonów
+# <a name="how-to-update-existing-templates"></a>Instrukcje: aktualizowanie istniejących szablonów
 
-Po utworzeniu szablonu i plików do skompresowania *zip* pliku, możesz chcieć zmodyfikować szablon. Można to zrobić ręcznie, zmieniając pliki w szablonie, lub przez wyeksportowanie szablonu z projektu, który jest oparty na szablonie.
+Po utworzeniu szablonu i przeprowadzeniu kompresji plików do pliku *zip* warto zmodyfikować szablon. Można to zrobić przez ręczne zmianę plików w szablonie lub przez wyeksportowanie nowego szablonu z projektu, który jest oparty na szablonie.
 
-## <a name="use-the-export-template-wizard"></a>Za pomocą Kreatora eksportowania szablonu
+## <a name="use-the-export-template-wizard"></a>Korzystanie z Kreatora eksportu szablonów
 
-Program Visual Studio udostępnia **Kreatora eksportowania szablonu** można zaktualizować istniejący szablon:
+Program Visual Studio zawiera **Kreatora eksportowania szablonu** , którego można użyć do zaktualizowania istniejącego szablonu:
 
-1. Wybierz **pliku** > **New** > **projektu** z paska menu.
+1. Wybierz pozycję **plik**  > **Nowy**  > **projekt** na pasku menu.
 
-1. Wybierz szablon, który chcesz zaktualizować, a następnie kontynuuj czynności, aby utworzyć nowy projekt.
+1. Wybierz szablon, który chcesz zaktualizować, i wykonaj kroki, aby utworzyć nowy projekt.
 
-1. Modyfikowanie projektu w programie Visual Studio. Na przykład zmienić typ danych wyjściowych, lub Dodaj nowy plik do projektu.
+1. Zmodyfikuj projekt w programie Visual Studio. Na przykład zmień typ danych wyjściowych lub Dodaj nowy plik do projektu.
 
-1. Na **projektu** menu, wybierz **Eksportuj szablon**.
+1. W menu **projekt** wybierz polecenie **Eksportuj szablon**.
 
-    **Kreatora eksportowania szablonu** zostanie otwarty.
+    Zostanie otwarty **Kreator eksportu szablonu** .
 
-1. Postępuj zgodnie z instrukcjami w kreatorze, aby wyeksportować szablon jako *zip* pliku.
+1. Postępuj zgodnie z monitami wyświetlanymi w kreatorze, aby wyeksportować szablon jako plik *. zip* .
 
-1. (Opcjonalnie) Miejsce *zip* pliku w następującym katalogu: *%USERPROFILE%\Documents\Visual Studio \<wersji\>\Templates\ProjectTemplates* być udostępniana dla Wybór. Musisz wykonać ten krok, jeśli nie wybrana opcja **automatycznie zaimportuj szablon do programu Visual Studio** w **Kreatora eksportowania szablonu**.
+1. Obowiązkowe Umieść plik *. zip* w następującym katalogu: *%USERPROFILE%\Documents\Visual Studio \<version \> \templates\projecttemplates* , aby udostępnić go do wyboru. Należy wykonać ten krok, jeśli nie wybrano opcji **automatycznie Importuj szablon do programu Visual Studio** w **Kreatorze eksportu szablonów**.
 
-1. Usuń stary szablon *zip* pliku.
+1. Usuń stary plik template *. zip* .
 
-## <a name="manually-update-an-existing-template"></a>Ręcznie zaktualizować istniejący szablon
+## <a name="manually-update-an-existing-template"></a>Ręcznie Aktualizuj istniejący szablon
 
-Możesz zaktualizować istniejący szablon bez użycia **Kreatora eksportowania szablonu**, modyfikując pliki znajdujące się w skompresowanym *zip* pliku.
+Istniejący szablon można zaktualizować bez użycia **Kreatora eksportu szablonów**, modyfikując pliki w skompresowanym pliku *zip* .
 
 ### <a name="to-manually-update-an-existing-template"></a>Aby ręcznie zaktualizować istniejący szablon
 
-1. Znajdź *zip* pliku, który zawiera szablon. Szablony projektów użytkownika znajdują się w folderze *%USERPROFILE%\Documents\Visual Studio \<wersji\>\Templates\ProjectTemplates*.
+1. Znajdź plik *zip* , który zawiera szablon. Szablony projektu użytkownika znajdują się w witrynie *%USERPROFILE%\Documents\Visual Studio \<version \> \templates\projecttemplates*.
 
-1. Wyodrębnij *zip* pliku.
+1. Wyodrębnij plik *zip* .
 
-1. Zmodyfikować lub usunąć bieżące pliki szablonu lub Dodaj nowe pliki do szablonu.
+1. Zmodyfikuj lub Usuń bieżące pliki szablonu lub Dodaj nowe pliki do szablonu.
 
-1. Otwierać, modyfikować i zapisywać *.vstemplate* pliku XML, aby obsłużyć zachowanie zaktualizowane lub nowe pliki.
+1. Otwórz, zmodyfikuj i Zapisz plik XML *. vstemplate* , aby obsłużyć zaktualizowane zachowanie lub nowe pliki.
 
-    Aby uzyskać więcej informacji na temat *.vstemplate* schematu, zobacz [odwołanie do schematu szablonu Visual Studio (rozszerzalność)](../extensibility/visual-studio-template-schema-reference.md). Aby uzyskać więcej informacji na temat co można sparametryzować w plikach źródłowych, zobacz [parametry szablonu](../ide/template-parameters.md).
+    Aby uzyskać więcej informacji o schemacie *. vstemplate* , zobacz [Dokumentacja schematu szablonu programu Visual Studio (rozszerzalność)](../extensibility/visual-studio-template-schema-reference.md). Aby uzyskać więcej informacji o tym, co można Sparametryzuj w plikach źródłowych, zobacz [Parametry szablonu](../ide/template-parameters.md).
 
-1. Wybierz pliki do szablonu, a następnie w menu kliknij prawym przyciskiem myszy lub kontekstu, a następnie wybierz **wysyłać** > **skompresowany folder (zip)**.
+1. Wybierz pliki w szablonie, a następnie w menu kontekstowym lub prawym przyciskiem myszy, a następnie wybierz polecenie **Wyślij do**  > **folderu skompresowanego (spakowanego)** .
 
-    Wybrane pliki są kompresowane do *zip* pliku.
+    Wybrane pliki są kompresowane do pliku *zip* .
 
-1. Umieść nową *zip* pliku w tym samym katalogu co stary *zip* pliku.
+1. Umieść nowy plik *zip* w tym samym katalogu, w którym znajduje się stary plik *. zip* .
 
-1. Usuń pliki szablonów wyodrębniony i starego szablonu *zip* pliku.
+1. Usuń wyodrębnione pliki szablonów i stary plik template *. zip* .
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Dostosowywanie szablonów](../ide/customizing-project-and-item-templates.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)
-- [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Parametry szablonu](../ide/template-parameters.md)

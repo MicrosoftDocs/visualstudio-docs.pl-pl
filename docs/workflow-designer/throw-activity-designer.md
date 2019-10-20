@@ -1,44 +1,44 @@
 ---
-title: Projektant przepływu pracy — Throw, Projektant działań
+title: Projektant przepływu pracy-throw — Projektant działań
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Throw.UI
 ms.assetid: 5e97c947-be39-4a1f-af04-000e2e09528a
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7074ee2a11759983f103024033cb2b96322330cc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fe6a530888c7c28c5c1556114db03a6cd7369fe6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62434023"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649860"
 ---
 # <a name="throw-activity-designer"></a>Throw, projektant działań
 
-**Throw** projektanta działań służy do tworzenia i konfigurowania <xref:System.Activities.Statements.Throw> działania.
+Projektant działań **throw** służy do tworzenia i konfigurowania działania <xref:System.Activities.Statements.Throw>.
 
-## <a name="the-throw-activity"></a>Działanie Throw
+## <a name="the-throw-activity"></a>Działanie throw
 
-<xref:System.Activities.Statements.Throw> Działanie zgłasza wyjątek.
+Działanie <xref:System.Activities.Statements.Throw> zgłasza wyjątek.
 
-### <a name="using-the-throw-activity-designer"></a>Za pomocą projektanta działań Throw
+### <a name="using-the-throw-activity-designer"></a>Korzystanie z projektanta działań throw
 
-Dostęp do **Throw** projektanta działań w **obsługę błędów** kategorii **przybornika**.
+Dostęp do projektanta działań **throw** w kategorii **Obsługa błędów** w **przyborniku**.
 
-**Throw** projektanta działań mogą być przeciągnięte z **przybornika** i porzucić do powierzchni projektanta przepływów pracy wszędzie tam, gdzie działań są zazwyczaj umieszczane, takie jak wewnątrz <xref:System.Activities.Statements.Sequence>. Spowoduje to utworzenie <xref:System.Activities.Statements.Throw> działanie przy użyciu domyślnego **DisplayName** z Throw. <xref:System.Activities.Activity.DisplayName%2A> Wartość może być edytowana w nagłówku **Throw** projektanta działań lub **DisplayName** pola siatki właściwości. <xref:System.Activities.Statements.Throw.Exception%2A> Można edytować właściwości, w siatce właściwości.
+Projektant działań **throw** można przeciągnąć z **przybornika** i porzucić na Projektant przepływu pracy powierzchnię, wszędzie tam, gdzie działania są zwykle umieszczane, na przykład wewnątrz <xref:System.Activities.Statements.Sequence>. Spowoduje to utworzenie działania <xref:System.Activities.Statements.Throw> z domyślną **nazwą wyświetlaną** throw. Wartość <xref:System.Activities.Activity.DisplayName%2A> można edytować w nagłówku projektanta działań **throw** lub w polu **DisplayName** siatki właściwości. Właściwość <xref:System.Activities.Statements.Throw.Exception%2A> musi być edytowana w siatce właściwości.
 
-### <a name="the-throw-properties"></a>Właściwości Throw
+### <a name="the-throw-properties"></a>Właściwości throw
 
-W poniższej tabeli przedstawiono <xref:System.Activities.Statements.Throw> właściwości i w tym artykule opisano, jak są używane w projektancie.
+W poniższej tabeli przedstawiono właściwości <xref:System.Activities.Statements.Throw> i opisano sposób ich używania w projektancie.
 
 |Nazwa właściwości|Wymagane|Użycie|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Określa opcjonalny przyjazna nazwa <xref:System.Activities.Statements.Throw> działania. Wartość domyślna to Throw.|
-|<xref:System.Activities.Statements.Throw.Exception%2A>|Prawda|Wyjątek do zgłoszenia. Ten wyjątek musi pochodzić od klasy <xref:System.Exception>. Aby określić wyjątek, wpisz wyrażenie języka Visual Basic w siatce właściwości.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Określa opcjonalną przyjazną nazwę działania <xref:System.Activities.Statements.Throw>. Wartość domyślna to throw.|
+|<xref:System.Activities.Statements.Throw.Exception%2A>|Oznacza|Wyjątek do zgłoszenia. Ten wyjątek musi pochodzić od <xref:System.Exception>. Aby określić wyjątek, wpisz wyrażenie Visual Basic w siatce właściwości.|
 
 ## <a name="see-also"></a>Zobacz także
 

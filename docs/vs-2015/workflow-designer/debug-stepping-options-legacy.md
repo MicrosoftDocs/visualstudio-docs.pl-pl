@@ -1,5 +1,5 @@
 ---
-title: Opcje debugowania wykonywania krokowego (starsza wersja) | Dokumentacja firmy Microsoft
+title: Opcje krokowe debugowania (starsza wersja) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -12,29 +12,28 @@ helpviewer_keywords:
 - instance stepping
 ms.assetid: 3e9e3041-68c7-4f16-9bd6-da5e5144744b
 caps.latest.revision: 5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b1f0761ba750146ce7f8cc52e6992dae689f7779
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 443cbac0ea9d74c61f24d6714162ec08e2906a62
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976960"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656878"
 ---
 # <a name="debug-stepping-options-legacy"></a>Opcje debugowania wykonywania krokowego (starsza wersja)
-W tym temacie opisano sposób debugowania [!INCLUDE[wf](../includes/wf-md.md)] aplikacji, które mają działań w starszej wersji [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Użyj starszego [!INCLUDE[wfd2](../includes/wfd2-md.md)] konieczność docelowy: [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
-  
- Kiedy debugujesz starsze działania, które mają wykonania, takie jak **działaniu równoległym** lub **grupy ConditionedActivityGroup**, używasz jednego z poniższych dwóch opcji krokowo kodu .  
-  
-- **Rozgałęzienie, przechodzenie krok po kroku.** Ten tryb przechodzenie krok po kroku umożliwia krok po kroku i debugować gałąź działania złożonego, takich jak **działaniu równoległym** lub **ConditionalActivityGroup** działania. Gdy ta opcja umożliwia debugowanie nie zauważysz, że zmiana w formancie występuje ze względu na równoczesne wykonywanie innych działań w przepływie pracy. Debuger kroki tylko do działania w obecnie zaznaczonej gałęzi, podczas gdy inne działania w przepływie pracy, które mogą być wykonywane jednocześnie. Na przykład domyślnie skrajnie po lewej stronie gałęzi w **działaniu równoległym** działanie i pierwszego działania podrzędne **grupy ConditionedActivityGroup** działania są używane do przechodzenia. Jeśli użytkownik jest zainteresowany debugowania dowolne inne działanie gałęzi lub podrzędnej, jawnych punktów przerwania muszą znajdować się w gałęzi lub podrzędnej działania. Przechodzenie krok po kroku będzie kontynuowana w tej gałęzi, gdy punkt przerwania zostanie wyzwolony.  
-  
-- **Wystąpienia, przechodzenie krok po kroku.** Przechodzenie krok po kroku ten tryb pozwala na krok po kroku i debugowania równocześnie wykonywanych działań w przepływie pracy. Po wybraniu tej opcji można zauważyć, że zmiana w formancie występuje, gdy jednocześnie wykonywania działań uruchamianych w ramach przepływu pracy.  
-  
-  Domyślnie opcja przechodzenia krok po kroku gałęzi jest zaznaczone, a użytkownicy mogą przełączać się pomiędzy dwiema opcjami podczas debugowania przepływem pracy starszego.  
-  
-  Należy wybrać wystąpienie przechodzenie krok po kroku opcji podczas debugowania przepływów pracy automatu stanów starszej wersji.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Debugowanie starszych wersji przepływów pracy](../workflow-designer/debugging-legacy-workflows.md)   
- [Instrukcje: Opcja zmiany debugowania krokowego (starsza wersja)](../workflow-designer/how-to-change-the-debug-stepping-option-legacy.md)
+W tym temacie opisano sposób debugowania aplikacji [!INCLUDE[wf](../includes/wf-md.md)], które mają współbieżne działania w starszej [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Użyj starszej [!INCLUDE[wfd2](../includes/wfd2-md.md)], jeśli chcesz wskazać [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+
+ Podczas debugowania starszych działań, które są wykonywane współbieżnie, takich jak **działaniu ParallelActivity** lub **ConditionedActivityGroup**, można użyć jednej z poniższych dwóch opcji, aby krokowo przekroczyć swój kod.
+
+- **Przechodzenie do gałęzi.** Ten tryb wykonywania krok po kroku umożliwia przechodzenie między konkretną gałęzią działania złożonego, takiego jak **działaniu ParallelActivity** lub **ConditionalActivityGroup** . Gdy ta opcja jest używana do debugowania, nie należy zauważyć, że zmiana w kontroli występuje ze względu na współbieżne wykonywanie innych działań w przepływie pracy. Debuger wykonuje tylko kroki wykonywane przez działania w obecnie wybranej gałęzi, podczas gdy inne działania w przepływie pracy mogą być wykonywane współbieżnie. Na przykład domyślnie gałąź z lewej strony w działaniu **działaniu ParallelActivity** i pierwsze działanie podrzędne działania **ConditionedActivityGroup** jest używany do wykonywania kroków. Jeśli użytkownik chce debugować wszystkie inne gałęzie lub działania podrzędne, należy umieścić w niej jawny punkt przerwania. W przypadku wyzwolenia punktu przerwania kontynuuje wykonywanie kroków w tej gałęzi.
+
+- **Krokowe wystąpienie.** Ten tryb wykonywania krok po kroku umożliwia przechodzenie i debugowanie współbieżnie wykonywanych działań w przepływie pracy. Po wybraniu tej opcji można zauważyć, że zmiana w kontroli odbywa się, gdy jednocześnie wykonywane są działania wykonywane w ramach przepływu pracy.
+
+  Domyślnie opcja wykonywania gałęzi jest zaznaczona, a użytkownicy mogą przełączać się między tymi dwiema opcjami podczas debugowania starszego przepływu pracy.
+
+  Podczas debugowania przepływów pracy starszego stanu nie należy wybierać opcji krokowe wystąpienie.
+
+## <a name="see-also"></a>Zobacz też
+ [Debugowanie starszych przepływów pracy](../workflow-designer/debugging-legacy-workflows.md) [: Zmiana opcji stopniowego debugowania (starsza wersja)](../workflow-designer/how-to-change-the-debug-stepping-option-legacy.md)

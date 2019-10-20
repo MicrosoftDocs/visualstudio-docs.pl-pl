@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Debug.Goto command
 - Go To command
 ms.assetid: 201e1dd2-6701-467d-8cc1-faec2ef20511
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bdc1c97d35b79fec40bbaf8994176cfbb27b8e8
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 93ad14561b1fdd2aade1978831b784e014568a6c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919218"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668260"
 ---
 # <a name="go-to-command"></a>Przejdź do — Polecenie
 Przenosi kursor do określonego wiersza.
@@ -36,7 +36,7 @@ Opcjonalny. Liczba całkowita reprezentująca liczbę wierszy, które mają zost
 ## <a name="remarks"></a>Uwagi
 Numerowanie wierszy rozpoczyna się od jednej. Jeśli wartość `linenumber` jest mniejsza od 1, zostanie wyświetlona pierwsza linia. Jeśli wartość `linenumber` jest większa niż liczba ostatniego wiersza, zostanie wyświetlony ostatni wiersz.
 
-Jeśli wartość `linenumber` nie jest określona, zostanie wyświetlone okno dialogowe **Przejdź do wiersza** .
+Jeśli nie określono wartości dla `linenumber`, zostanie wyświetlone okno dialogowe **Przejdź do wiersza** .
 
 Alias dla tego polecenia to GoToLn.
 

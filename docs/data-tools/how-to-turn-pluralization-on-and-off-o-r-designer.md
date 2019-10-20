@@ -1,45 +1,45 @@
 ---
-title: 'Instrukcje: Pluralizacja Włączanie i wyłączanie (Projektant O-R)'
+title: 'Instrukcje: Włączanie i wyłączanie pluralizacja (Projektant O-R)'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 9b693bc3-303a-40a9-97ee-9cef5ca3ae81
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 769d1760692cad6a6b813ece16d69f4abd3d26b1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 578a6333d1206553db50ce81f2f499da0481456d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63402781"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648344"
 ---
-# <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>Instrukcje: Pluralizacja Włączanie i wyłączanie (O/R Designer)
-Domyślnie podczas przeciągania obiektów bazy danych, które mają nazwy kończące się na s lub ię od **Eksploratora serwera** lub **Eksplorator bazy danych** na [LINQ to SQL tools w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md), nazwy wygenerowanych klas jednostek nie zostaną zmienione w liczbie mnogiej na liczbę pojedynczą. W ten sposób bardziej przedstawiać fakt, że klasa wystąpień jednostki mapowany na pojedynczy rekord danych. Na przykład dodanie `Customers` do tabeli **O/R Designer** skutkuje klasę jednostki o nazwie `Customer` ponieważ klasa przechowuje dane dla jednego klienta.
+# <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>Instrukcje: Włączanie i wyłączanie pluralizacja (Projektant O/R)
+Domyślnie, gdy przeciągasz obiekty bazy danych, które mają nazwy kończące się na s lub z **Eksplorator serwera** lub **Eksplorator bazy danych** do [narzędzi LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md), nazwy wygenerowanych klas jednostek są zmieniane z plural na liczbę pojedynczą. Jest to bardziej dokładne przedstawienie faktu, że Klasa jednostki wystąpienia jest mapowana na pojedynczy rekord danych. Na przykład dodanie tabeli `Customers` do **projektanta O/R** skutkuje wynikiem klasy jednostki o nazwie `Customer`, ponieważ klasa będzie przechowywać dane tylko dla jednego klienta.
 
 > [!NOTE]
-> Pluralizacja jest domyślnie tylko w języku angielskim wersji programu Visual Studio.
+> Pluralizacja jest domyślnie włączona tylko w angielskiej wersji językowej programu Visual Studio.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-### <a name="to-turn-pluralization-on-and-off"></a>Aby włączyć pluralizacja włączać i wyłączać
+### <a name="to-turn-pluralization-on-and-off"></a>Aby włączyć i wyłączyć pluralizacja
 
-1. Na **narzędzia** menu, kliknij przycisk **opcje**.
+1. W menu **Narzędzia** kliknij pozycję **Opcje**.
 
-2. W **opcje** okna dialogowego rozwiń **narzędzia graficzne bazy danych**.
+2. W oknie dialogowym **Opcje** rozwiń węzeł **Narzędzia bazy danych**.
 
     > [!NOTE]
-    > Wybierz **Pokaż wszystkie ustawienia** Jeśli **narzędzia graficzne bazy danych** węzeł nie jest widoczny.
+    > Wybierz opcję **Pokaż wszystkie ustawienia** , jeśli węzeł **Narzędzia bazy danych** nie jest widoczny.
 
-3. Kliknij przycisk **O/R Designer**.
+3. Kliknij przycisk **projektanta O/R**.
 
-4. Ustaw **Pluralizację nazw** do **włączone** = **False** można ustawić **O/R Designer** tak, aby nie zmienia nazwy klas .
+4. Ustaw **pluralizacja nazw** , które mają być **włączone**  = **false** , aby ustawić **projektanta O/R** tak, aby nie zmieniać nazw klas.
 
-5. Ustaw **Pluralizację nazw** do **włączone** = **True** mają dotyczyć zasady pluralizacja nazw klasy obiekty dodane do **O/R Projektant**.
+5. Ustaw **pluralizacja nazw** , które mają być **włączone**  = **true** , aby zastosować reguły pluralizacja do nazw klas obiektów dodanych do **projektanta O/R**.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Narzędzi LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Narzędzia LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
 - [Uzyskiwanie dostępu do danych w programie Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

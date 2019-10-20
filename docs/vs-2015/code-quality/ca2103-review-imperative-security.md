@@ -1,5 +1,5 @@
 ---
-title: 'CA2103: Przejrzyj zabezpieczenia imperatywne | Dokumentacja firmy Microsoft'
+title: 'CA2103: Sprawdź zabezpieczenia bezwzględne | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - ReviewImperativeSecurity
 ms.assetid: d24fde71-bdf6-46c0-8965-9a73dc33c1aa
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 5b8b3067d5c8ab8204d6ad723315c400e7b27552
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: b4abf0b15a4fbba1abc61572da8a2f6126c754f2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65694928"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652156"
 ---
 # <a name="ca2103-review-imperative-security"></a>CA2103: Przejrzyj zabezpieczenia imperatywne
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,15 +36,15 @@ ms.locfileid: "65694928"
  Metoda używa imperatywnych zabezpieczeń i może konstruować uprawnienia za pomocą informacji o stanie lub wartości zwrotnych, które można zmienić, dopóki żądanie jest aktywne.
 
 ## <a name="rule-description"></a>Opis reguły
- Zabezpieczenia imperatywne używa obiektów zarządzanych do określania uprawnień i akcje zabezpieczeń podczas wykonywania kodu, w porównaniu do zabezpieczenia deklaratywne, który przechowuje atrybuty uprawnień i akcji w metadanych. Zabezpieczenia imperatywne jest bardzo elastyczny, ponieważ można ustawić stanu obiektu uprawnień i wybieranie akcji zabezpieczeń przy użyciu informacji, która nie jest dostępna do czasu wykonywania. Wraz z który elastyczność pochodzi ryzyko, że informacje środowiska uruchomieniowego, które można określić, że stan uprawnienia nie pozostaje bez zmian, tak długo, jak akcja jest aktywna.
+ Zabezpieczenia bezwzględne wykorzystują zarządzane obiekty do określania uprawnień i akcji zabezpieczeń podczas wykonywania kodu w porównaniu z zabezpieczeniami deklaratywnymi, które używają atrybutów do przechowywania uprawnień i akcji w metadanych. Zasadnicze zabezpieczenia są bardzo elastyczne, ponieważ można ustawić stan obiektu uprawnień i wybrać akcje zabezpieczeń przy użyciu informacji, które nie są dostępne do czasu uruchomienia. Ze względu na to elastyczność wiąże się z ryzykiem, że informacje o środowisku uruchomieniowym, które są używane do określenia stanu uprawnienia, nie pozostaną bez zmian, dopóki ta akcja jest aktywna.
 
- Należy używać zabezpieczeń deklaracyjnych wszędzie, gdzie to możliwe. Wymagania związane z deklaratywnych są łatwiejsze do zrozumienia.
+ Należy używać zabezpieczeń deklaracyjnych wszędzie, gdzie to możliwe. Wymagania deklaracyjne są łatwiejsze do zrozumienia.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Przegląd wymagań zabezpieczenia imperatywne, aby upewnić się, czy stan uprawnienia nie polega na informacje, które można zmienić tak długo, jak uprawnienia, jest on używany.
+ Zapoznaj się z niezależnymi wymaganiami dotyczącymi zabezpieczeń, aby upewnić się, że stan uprawnienia nie polega na informacjach, które mogą ulec zmianie, o ile uprawnienia są używane.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Jest bezpieczne pominąć ostrzeżenie od tej reguły, jeśli uprawnienia nie zależy od zmieniających się danych. Jednak zaleca się zmiany imperatywne żądanie na odpowiadającą jej deklaratywne.
+ Jeśli uprawnienie nie polega na zmienianiu danych, można bezpiecznie pominąć ostrzeżenie z tej reguły. Jednak lepiej jest zmienić pierwotne zapotrzebowanie na jego deklaratywny odpowiednik.
 
 ## <a name="see-also"></a>Zobacz też
- [Wytyczne dotyczące bezpiecznego programowania](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [dane i modelowanie](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)
+ [Zabezpieczanie](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [i modelowanie](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) wytycznych dotyczących kodowania

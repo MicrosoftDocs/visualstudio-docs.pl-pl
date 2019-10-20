@@ -1,5 +1,5 @@
 ---
-title: 'CA1024: Korzystanie z właściwości, gdzie jest to odpowiednie | Dokumentacja firmy Microsoft'
+title: 'CA1024: Użyj właściwości, jeśli jest to odpowiednie | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,62 +12,62 @@ helpviewer_keywords:
 - UsePropertiesWhereAppropriate
 ms.assetid: 3a04f765-af7c-4872-87ad-9cc29e8e657f
 caps.latest.revision: 23
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 43487aa97afcd41a5375bacc26efba705cbaa76c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b190e007cfdb016e54148cf0295c68baf68c5033
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68144808"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661965"
 ---
-# <a name="ca1024-use-properties-where-appropriate"></a>CA1024: Używaj właściwości, o ile to możliwe
+# <a name="ca1024-use-properties-where-appropriate"></a>CA1024: Używaj właściwości wszędzie, gdzie jest to odpowiednie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|UsePropertiesWhereAppropriate|
 |CheckId|CA1024|
-|Kategoria|Microsoft.Design|
+|Kategoria|Microsoft. Design|
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Metoda publiczna lub chroniona ma nazwę, która rozpoczyna się od `Get`nie przyjmuje żadnych parametrów i zwraca wartość, która nie jest tablicą.
+ Metoda publiczna lub chroniona ma nazwę rozpoczynającą się od `Get`, nie przyjmuje parametrów i zwraca wartość, która nie jest tablicą.
 
 ## <a name="rule-description"></a>Opis reguły
- W większości przypadków właściwości reprezentują danych i metod wykonywania akcji. Właściwości są dostępne, takich jak pola, co ułatwia ich używać. Metoda jest dobrym kandydatem do stają się właściwość, jeśli występuje jeden z tych warunków:
+ W większości przypadków właściwości reprezentują dane i metody wykonują działania. Właściwości są dostępne, podobnie jak pola, które ułatwiają korzystanie z nich. Metoda jest dobrym kandydatem, aby stał się właściwością w przypadku obecności jednego z następujących warunków:
 
-- Nie przyjmuje żadnych argumentów i zwraca informacje o stanie obiektu.
+- Nie przyjmuje argumentów ani nie zwraca informacji o stanie obiektu.
 
-- Akceptuje pojedynczy argument można ustawić część stanu obiektu.
+- Akceptuje pojedynczy argument, aby ustawić część stanu obiektu.
 
-  Właściwości, powinny zachowywać się tak, jakby są pola aplikacji; Jeśli metoda nie, nie należy zmienić właściwości. Metody są lepsze niż właściwości w następujących sytuacjach:
+  Właściwości powinny zachowywać się tak, jakby były polami; Jeśli metoda nie może, nie powinna być zmieniana na właściwość. Metody są lepsze niż właściwości w następujących sytuacjach:
 
-- Metoda wykonuje czasochłonna operacja. Metoda jest perceivably wolniej niż czas, który jest wymagany, aby ustawić lub pobrać wartości pola.
+- Metoda wykonuje czasochłonną operację. Metoda jest postrzegana wolniej niż czas wymagany do ustawienia lub pobrania wartości pola.
 
-- Metoda przeprowadza konwersję. Uzyskiwanie dostępu do pola nie zwraca przekonwertowana wersja danych, które są przechowywane.
+- Metoda wykonuje konwersję. Uzyskanie dostępu do pola nie zwraca skonwertowanej wersji przechowywanych danych.
 
-- Metoda Get ma dostrzegalnych efekt uboczny. Podczas pobierania wartości pola nie generuje żadnych efektów ubocznych.
+- Metoda get ma zauważalny efekt uboczny. Pobieranie wartości pola nie powoduje wygenerowania żadnych efektów ubocznych.
 
-- Kolejność wykonywania jest ważna. Ustawienie wartości pola nie zależą od wystąpienia innych operacji.
+- Kolejność wykonywania jest ważna. Ustawienie wartości pola nie polega na wystąpieniu innych operacji.
 
-- Wywołanie metody dwa razy pod rząd tworzy różne wyniki.
+- Wywołanie metody dwa razy w wyniku sukcesu tworzy różne wyniki.
 
-- Metoda jest statyczna, ale zwraca obiekt, który może zostać zmieniona przez obiekt wywołujący. Podczas pobierania wartości pola nie zezwala na obiekt wywołujący, aby zmienić dane, które są przechowywane przez pole.
+- Metoda jest statyczna, ale zwraca obiekt, który może zostać zmieniony przez wywołującego. Pobieranie wartości pola nie zezwala obiektowi wywołującemu na zmianę danych przechowywanych w polu.
 
 - Metoda zwraca tablicę.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, należy zmienić metodę z właściwością.
+ Aby naprawić naruszenie tej reguły, Zmień metodę na właściwość.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Pomijaj ostrzeżeń dla tej reguły, jeśli metoda nie spełnia co najmniej jedną z wcześniej podanych kryteriów.
+ Pomiń ostrzeżenie z tej reguły, jeśli metoda spełnia co najmniej jedno z wcześniej wymienionych kryteriów.
 
-## <a name="controlling-property-expansion-in-the-debugger"></a>Kontrolowanie właściwości rozszerzenia w debugerze
- Jednym z powodów programistów należy unikać właściwość jest, ponieważ nie chcesz debuger ma automatycznie rozwijać go. Na przykład właściwość może obejmować przydzielanie dużego obiektu lub wywołanie metody P/Invoke, ale nie może rzeczywiście być wszelkie dostrzegalnych efekty uboczne.
+## <a name="controlling-property-expansion-in-the-debugger"></a>Kontrolowanie rozszerzania właściwości w debugerze
+ Jednym z powodów programiści nie należy używać właściwości, ponieważ nie chce, aby debuger miał Autorozszerzanie. Na przykład właściwość może polegać na przydzieleniu dużego obiektu lub wywołaniu P/Invoke, ale może nie mieć w rzeczywistości żadnych zauważalnych efektów ubocznych.
 
- Można uniemożliwić rozwijanie automatycznie przez debuger właściwości, stosując <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>. Ten atrybut jest stosowany do właściwości wystąpienia można znaleźć w poniższym przykładzie.
+ Można uniemożliwić debugerowi możliwość autorozszerzania właściwości, stosując <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>. Poniższy przykład pokazuje, że ten atrybut jest stosowany do właściwości wystąpienia.
 
 ```vb
 Imports System
@@ -117,6 +117,6 @@ namespace Microsoft.Samples
 ```
 
 ## <a name="example"></a>Przykład
- Poniższy przykład zawiera kilka metod powinny być konwertowane do właściwości i kilku, należy nie, ponieważ nie zachowywać się jak pola.
+ Poniższy przykład zawiera kilka metod, które należy przekonwertować na właściwości, i kilka, które nie powinny, ponieważ nie zachowują się one jak pola.
 
  [!code-csharp[FxCop.Design.MethodsProperties#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.MethodsProperties/cs/FxCop.Design.MethodsProperties.cs#1)]

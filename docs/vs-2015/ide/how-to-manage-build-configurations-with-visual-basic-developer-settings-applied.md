@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Zarządzanie konfiguracjami kompilacji z zastosowanymi ustawieniami dewelopera języka Visual Basic | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Zarządzanie konfiguracjami kompilacji z zastosowanymi ustawieniami dewelopera Visual Basic | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,39 +14,38 @@ helpviewer_keywords:
 - release builds
 ms.assetid: eaea6e0b-6c61-4869-8d63-d372c745a23c
 caps.latest.revision: 11
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c2cf949803bcc864937e67c1f94addaaf6abacbd
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: a5f8568edc636955558ec93b55c0aedebf0065d3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685640"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651837"
 ---
-# <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Instrukcje: Zarządzanie konfiguracjami kompilacji z zastosowanymi ustawieniami dewelopera języka Visual Basic
+# <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Porady: zarządzanie konfiguracjami kompilacji z zastosowaniem ustawień dewelopera Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Domyślnie, wszystkie opcje konfiguracji zaawansowanej kompilacji jest ukryty za pomocą [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] zastosowanymi ustawieniami dewelopera. W tym temacie wyjaśniono, jak ręcznie włączyć te ustawienia.  
-  
-## <a name="enabling-advanced-build-configurations"></a>Włączanie zaawansowane konfiguracje kompilacji  
- Domyślnie [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ustawienia dewelopera Ukryj opcję, aby otworzyć **programu Configuration Manager** okno dialogowe i **konfiguracji** i **platformy** list w [Projektant projektu](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7).  
-  
-#### <a name="to-enable-advanced-build-configurations"></a>Aby włączyć zaawansowane konfiguracje kompilacji  
-  
-1. Na **narzędzia** menu, kliknij przycisk **opcje**.  
-  
-2. Rozwiń **projekty i rozwiązania**i kliknij przycisk **ogólne**.  
-  
+Domyślnie wszystkie opcje zaawansowanej konfiguracji kompilacji są ukryte z zastosowaniem ustawień dewelopera [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]. W tym temacie wyjaśniono, jak ręcznie włączyć te ustawienia.
+
+## <a name="enabling-advanced-build-configurations"></a>Włączanie zaawansowanych konfiguracji kompilacji
+ Domyślnie ustawienia dewelopera [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ukrywają opcję, aby otworzyć okno dialogowe **Configuration Manager** oraz listę **konfiguracji** i **platformy** w [projektancie projektu](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7).
+
+#### <a name="to-enable-advanced-build-configurations"></a>Aby włączyć zaawansowane konfiguracje kompilacji
+
+1. W menu **Narzędzia** kliknij pozycję **Opcje**.
+
+2. Rozwiń węzeł **projekty i rozwiązania**, a następnie kliknij pozycję **Ogólne**.
+
     > [!NOTE]
-    > **Ogólne** węzeł jest widoczny nawet wtedy, gdy **Pokaż wszystkie ustawienia** opcja jest zaznaczona. Jeśli chcesz zobaczyć każdej opcji, które są dostępne, kliknij przycisk **Pokaż wszystkie ustawienia**.  
-  
-3. Kliknij przycisk **Pokaż zaawansowane konfiguracje kompilacji**.  
-  
-4. Kliknij przycisk **OK**.  
-  
-     Na **kompilacji** menu **programu Configuration Manager** jest teraz dostępna i **konfiguracji** i **platformy** list są widoczne w Projektant projektu.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Ogólne informacje o konfiguracjach kompilacji](../ide/understanding-build-configurations.md)   
- [Kompilowanie i tworzenie](../ide/compiling-and-building-in-visual-studio.md)
+    > Węzeł **Ogólne** jest widoczny, nawet jeśli opcja **Pokaż wszystkie ustawienia** nie jest zaznaczona. Jeśli chcesz zobaczyć wszystkie dostępne opcje, kliknij przycisk **Pokaż wszystkie ustawienia**.
+
+3. Kliknij pozycję **Pokaż zaawansowane konfiguracje kompilacji**.
+
+4. Kliknij przycisk **OK**.
+
+     W menu **kompilacja** **Configuration Manager** jest teraz dostępna, a listy **konfiguracji** i **platformy** są widoczne w projektancie projektu.
+
+## <a name="see-also"></a>Zobacz też
+ [Omówienie](../ide/understanding-build-configurations.md) [kompilowania i kompilowania](../ide/compiling-and-building-in-visual-studio.md) konfiguracji kompilacji

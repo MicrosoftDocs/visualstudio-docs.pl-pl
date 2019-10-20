@@ -1,25 +1,25 @@
 ---
-title: 'Przewodnik: LinqToXmlDataBinding — przykład'
+title: 'Przewodnik: elementu LinqToXmlDataBinding — przykład'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: aedf42e8-896c-48fa-88df-7f7c9536aa69
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c99d8571480dd98726a5f1ae5772162e97e0baed
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 80503b0f14b31f787688fc78a75a4ceb974db4da
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925735"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72634196"
 ---
-# <a name="walkthrough-linqtoxmldatabinding-example"></a>Przewodnik: Przykład elementu LinqToXmlDataBinding —
+# <a name="walkthrough-linqtoxmldatabinding-example"></a>Przewodnik: elementu LinqToXmlDataBinding — przykład
 W tym instruktażu opisano przykład elementu LinqToXmlDataBinding — i wyjaśniono niektóre z bardziej interesujących zawartości dwóch głównych plików źródłowych, *kod źródłowy L2DBForm. XAML* i *L2DBForm.XAML.cs*.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
-Przed przeczytaniem tego instruktażu zdecydowanie zalecamy skompilowanie i uruchomienie programu elementu LinqToXmlDataBinding — zgodnie z opisem w [temacie How to: Kompiluj i uruchamiaj przykład](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md)elementu LinqToXmlDataBinding —.
+Przed przeczytaniem tego instruktażu zdecydowanie zalecamy skompilowanie i uruchomienie programu elementu LinqToXmlDataBinding — zgodnie z opisem w temacie [How to: build and Run The elementu LinqToXmlDataBinding — example](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md).
 
 ## <a name="remarks"></a>Uwagi
  Program elementu LinqToXmlDataBinding — jest aplikacją Windows Presentation Foundation (WPF), która składa się z C# plików źródłowych i XAML. Zawiera osadzony dokument XML, który definiuje listę książek i umożliwia użytkownikowi wyświetlanie, Dodawanie, usuwanie i edytowanie tych wpisów. Składa się z następujących dwóch podstawowych plików źródłowych:
@@ -48,4 +48,4 @@ Przed przeczytaniem tego instruktażu zdecydowanie zalecamy skompilowanie i uruc
 ## <a name="see-also"></a>Zobacz także
 
 - [Powiązanie danych WPF przy użyciu LINQ to XML przykładu](../designers/wpf-data-binding-using-linq-to-xml-example.md)
-- [Instrukcje: Kompilowanie i uruchamianie przykładu elementu LinqToXmlDataBinding —](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md)
+- [Instrukcje: kompilowanie i uruchamianie elementu LinqToXmlDataBinding — przykład](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md)

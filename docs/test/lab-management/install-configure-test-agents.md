@@ -4,68 +4,68 @@ ms.date: 04/17/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - configure test agents, test lab
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6597c47fd272beec2c82f7d4c2644291b168b5f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: edb10246437bff9bef0a6f76ffde95bc12855944
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965418"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653080"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Instalowanie agentów testowych i kontrolerów testów
 
-Do obsługi scenariuszy testowych, które używają programu Visual Studio i plany testów platformy Azure lub Team Foundation Server (TFS) nie jest potrzebny kontroler testów. Agents for Visual Studio obsługiwać aranżację, komunikując się z planów testowych platformy Azure lub na serwerze TFS. Scenariusz można uruchomić testy ciągłej kompilacji, a następnie zwolnij przepływów pracy w programie planów testowych platformy Azure lub na serwerze TFS.
+W przypadku scenariuszy testowych, które korzystają z programu Visual Studio i Azure Test Plans lub Team Foundation Server (TFS), nie jest potrzebny kontroler testów. Agenci programu Visual Studio obsługują aranżację, komunikując się z Azure Test Plans lub TFS. Scenariuszem może być uruchomienie testów ciągłych dla przepływów pracy kompilowania i wydawania w Azure Test Plans lub TFS.
 
-Możesz też rozważyć, czy jest lepiej używać [kompilacji lub release management](use-build-or-rm-instead-of-lab-management.md) zamiast na zarządzaniu laboratorium.
+Warto również rozważyć, czy lepiej jest używać programu [Build lub Release Management](use-build-or-rm-instead-of-lab-management.md) zamiast Lab Management.
 
 ## <a name="system-requirements"></a>Wymagania systemowe
 
-W poniższej tabeli przedstawiono wymagania systemowe dotyczące instalowania kontrolera testów agent lub test programu Visual Studio:
+W poniższej tabeli przedstawiono wymagania systemowe dotyczące instalowania agenta testowego lub kontrolera testów dla programu Visual Studio:
 
 | Element | Wymagania |
 | ---- | ------------ |
-| **Agent** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 z dodatkiem Service Pack 1<br />Windows Server 2016 Standard i Datacenter<br />Windows Server 2012 z dodatkiem R2 |
-| **Controller** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 z dodatkiem Service Pack 1<br />Windows Server 2016 Standard i Datacenter<br />Windows Server 2012 z dodatkiem R2 |
+| **Odczynnik** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 z dodatkiem Service Pack 1<br />Windows Server 2016 Standard i Datacenter<br />Windows Server 2012 z dodatkiem R2 |
+| **Kontroler** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 z dodatkiem Service Pack 1<br />Windows Server 2016 Standard i Datacenter<br />Windows Server 2012 z dodatkiem R2 |
 | **.NET Framework** | .NET Framework 4.5 |
 
-## <a name="install-the-test-controller-and-test-agents"></a>Zainstaluj agentów testowych i kontrolera testów
+## <a name="install-the-test-controller-and-test-agents"></a>Instalowanie kontrolera testów i agentów testowych
 
-Możesz pobrać agents for Visual Studio z [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents). Wyszukaj *Agents for Visual Studio 2019*, wybierz opcję *agenta* lub *kontrolera*, a następnie wybierz *Pobierz*. Uruchom pobrany plik wykonywalny, aby zainstalować agenta testowego lub kontrolera.
+Agentów programu Visual Studio można pobrać z [VisualStudio.Microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents). Wyszukaj *agentów dla programu Visual Studio 2019*, wybierz opcję *Agent* lub *kontroler*, a następnie wybierz pozycję *Pobierz*. Uruchom pobrany plik wykonywalny, aby zainstalować agenta testowego lub kontrolera.
 
-Możesz pobrać agenci dla programu Visual Studio 2017, Visual Studio 2015 i Visual Studio 2013 ze [starsze pliki do pobrania](https://visualstudio.microsoft.com/vs/older-downloads/) strony.
+Możesz pobrać agentów dla programu Visual Studio 2017, Visual Studio 2015 i Visual Studio 2013 ze [starszej strony pobierania](https://visualstudio.microsoft.com/vs/older-downloads/) .
 
-Te instalatory są dostępne jako pliki ISO w celu łatwej instalacji na maszynach wirtualnych.
+Te Instalatory są dostępne jako pliki ISO do prostej instalacji na maszynach wirtualnych.
 
-## <a name="compatible-versions-of-tfs-microsoft-test-manager-the-test-controller-and-test-agent"></a>Zgodne wersje serwera TFS, Microsoft Test Manager, kontroler testów i agenta testowego
+## <a name="compatible-versions-of-tfs-microsoft-test-manager-the-test-controller-and-test-agent"></a>Zgodne wersje serwera TFS, Microsoft Test Manager, kontrolera testów i agenta testowego
 
-Można łączyć różne wersje programu TFS, Microsoft Test Manager, kontroler testów i agenta testowego, zgodnie z poniższą tabelą:
+Można mieszać różne wersje TFS, Microsoft Test Manager, kontrolera testów i agenta testowego, zgodnie z poniższą tabelą:
 
-| TFS | Program Microsoft Test Manager przy użyciu Centrum laboratoryjnego | Kontroler | Agent |
+| TFS | Microsoft Test Manager z Centrum laboratoryjnym | Kontroler | Agent |
 | --- | -------------------------------------- | ---------- | ----- |
-| 2017: instalacji lub uaktualniania z dnia 2015 | 2017 | 2017 | 2017 |
-| 2017: instalacji lub uaktualniania z dnia 2015 | 2017 | 2013 Update 5 | 2013 Update 5 |
-| 2017: instalacji lub uaktualniania z dnia 2015 | 2015 | 2013 Update 5 | 2013 Update 5 |
-| 2015: uaktualnianie z 2013 | 2013 | 2013 |2013 |
-| 2015: nowej instalacji | 2013 | 2013 | 2013 |
-| 2015: uaktualnianie z 2013, jak i nowej instalacji | 2015 | 2013 | 2013 |
+| 2017: Uaktualnij program 2015 lub nową instalację | 2017 | 2017 | 2017 |
+| 2017: Uaktualnij program 2015 lub nową instalację | 2017 | 2013 Update 5 | 2013 Update 5 |
+| 2017: Uaktualnij program 2015 lub nową instalację | 2015 | 2013 Update 5 | 2013 Update 5 |
+| 2015: Uaktualnianie z 2013 | 2013 | 2013 |2013 |
+| 2015: Nowa instalacja | 2013 | 2013 | 2013 |
+| 2015: Uaktualnij program 2013 lub nową instalację | 2015 | 2013 | 2013 |
 | 2013 | 2015 | 2013 | 2013 |
 
 > [!NOTE]
-> Scenariusze zarządzania laboratorium w serwerze TFS 2018 i usługom DevOps platformy Azure są przestarzałe. Aby uzyskać więcej informacji, zobacz [informacje o wersji programu TFS 2018](/visualstudio/releasenotes/tfs2018-relnotes#--removing-support-for-lab-center-and-automated-testing-flows-in-microsoft-test-manager).
+> Scenariusze zarządzania laboratorium w programie TFS 2018 i Azure DevOps Services są przestarzałe. Aby uzyskać więcej informacji, zobacz [Informacje o wersji programu TFS 2018](/visualstudio/releasenotes/tfs2018-relnotes#--removing-support-for-lab-center-and-automated-testing-flows-in-microsoft-test-manager).
 
-## <a name="upgrade-from-visual-studio-2013-test-agents"></a>Uaktualnienie z agentów testowych programu Visual Studio 2013
+## <a name="upgrade-from-visual-studio-2013-test-agents"></a>Uaktualnianie z Visual Studio 2013 agentów testowych
 
-Firma Microsoft zaleca użycie agentów programu Visual Studio, we wszystkich nowych scenariuszach testów automatycznych. Możesz użyć *wdrażanie agenci testowi* zadań w potoku kompilacji, aby pobrać i zainstalować agentów testowych na maszynie.
+Zalecamy korzystanie z agentów programu Visual Studio we wszystkich nowych scenariuszach zautomatyzowanych testów. Możesz użyć zadania *Wdróż agentów testowych* w potoku kompilacji, aby pobrać i zainstalować agentów testowych na komputerze.
 
-W poniższej tabeli przedstawiono scenariusze obsługiwane przez agentów dla programu Visual Studio 2013 i alternatyw dla Team Foundation Server (TFS) 2015 i planów testowych platformy Azure:
+W poniższej tabeli przedstawiono scenariusze obsługiwane przez agentów dla Visual Studio 2013 i alternatywy dla Team Foundation Server (TFS) 2015 i Azure Test Plans:
 
-| Scenariusze obsługiwane przez agentów programu Visual Studio 2013 | Alternatywnie TFS i planów testowych platformy Azure |
+| Scenariusze obsługiwane przez agentów dla Visual Studio 2013 | Alternatywa w programie TFS i Azure Test Plans |
 | - | - |
-| Przepływ pracy kompilacja-wdrożenie-Test, w programie Visual Studio | Użytkownicy mogą używać [tworzenie potoku](/azure/devops/pipelines/index?view=vsts) (nie kompilacja XAML) dla kompilacji, wdrażania oraz testowania scenariuszy w programie TFS. |
-| Obciążenia testowania (testowanie wydajności) za pomocą polecenia zdalnego maszyn lokalnych | Użyj kontrolera testów i Test Agents 2013 Update 5 do uruchomienia obciążenia testy w środowisku lokalnym. |
-| Zdalne wykonywanie zautomatyzowanych testów z Microsoft Test Manager za pomocą środowiska laboratoryjnego | Obecnie nie ma żadnej alternatywy dla tego scenariusza. Firma Microsoft zaleca używanie zadanie Uruchom testy funkcjonalne w kompilacji i definicje wersji (nie w usłudze kompilacji XAML) do wykonywania testów zdalnie. |
-| Deweloperom wykonywanie testów zdalnego w programie Visual Studio | Nie jest już obsługiwana. |
+| Przepływ pracy Kompilacja-Wdrażanie-test w programie Visual Studio | Użytkownicy mogą korzystać z [potoku kompilacji](/azure/devops/pipelines/index?view=vsts) (nie kompilacja XAML) dla scenariuszy kompilowania, wdrażania i testowania w programie TFS. |
+| Testowanie obciążenia (testowanie wydajności) przy użyciu lokalnych maszyn zdalnych | Użyj Test Controller i przetestuj Agents 2013 Update 5, aby uruchomić testy obciążenia lokalnie. |
+| Zdalne wykonywanie testów automatycznych z Microsoft Test Manager przy użyciu środowiska laboratoryjnego | Obecnie nie ma żadnych alternatyw dla tego scenariusza. Zalecamy używanie zadania Uruchom testy funkcjonalne w definicjach kompilacji i wydania (nie w kompilacji XAML) do zdalnego wykonywania testów. |
+| Deweloperzy wykonujący testy zdalne w programie Visual Studio | Nie jest już obsługiwane. |

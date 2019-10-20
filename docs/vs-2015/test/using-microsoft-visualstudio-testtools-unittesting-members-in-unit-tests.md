@@ -6,18 +6,18 @@ ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.assetid: 0fa335fd-e442-448f-913f-25a19df90a93
 caps.latest.revision: 8
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 93a62b6fe5493b78a3c18c1adb87761cdb894670
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: e8b3ea10b96a63bd18098030dc884ac3f3383353
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871556"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657185"
 ---
 # <a name="using-microsoftvisualstudiotesttoolsunittesting-members-in-unit-tests"></a>Korzystanie z członków Microsoft.VisualStudio.TestTools.UnitTesting w testach jednostkowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-Architektura testowania jednostkowego obsługuje testy jednostkowe [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]w. Używaj klas i elementów członkowskich w <xref:Microsoft.VisualStudio.TestTools.UnitTesting> przestrzeni nazw podczas kodowania testów jednostkowych. Można ich użyć, gdy użytkownik zapisał test jednostkowy od podstaw lub zawęża test jednostkowy, który został wygenerowany na podstawie testowanego kodu.
+Architektura testowania jednostkowego obsługuje testy jednostkowe w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Użyj klas i elementów członkowskich w przestrzeni nazw <xref:Microsoft.VisualStudio.TestTools.UnitTesting> podczas kodowania testów jednostkowych. Można ich użyć, gdy użytkownik zapisał test jednostkowy od podstaw lub zawęża test jednostkowy, który został wygenerowany na podstawie testowanego kodu.
 
 ## <a name="groups-of-elements"></a>Grupy elementów
  Aby zapewnić bardziej przejrzyste Omówienie struktury testów jednostkowych, ta sekcja organizuje elementy przestrzeni nazw UnitTesting w grupach powiązanych funkcji.
@@ -30,7 +30,7 @@ Architektura testowania jednostkowego obsługuje testy jednostkowe [!INCLUDE[vsp
 > `[TestClassAttribute()]`
 
 ### <a name="elements-used-for-data-driven-testing"></a>Elementy używane do testowania opartego na danych
- Aby skonfigurować testy jednostkowe oparte na danych, należy użyć następujących elementów. Aby uzyskać więcej informacji, [zobacz How to: Tworzenie testu](../test/how-to-create-a-data-driven-unit-test.md) jednostkowego opartego na danych [i przewodnik: Definiowanie źródła](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)danych przy użyciu pliku konfiguracji.
+ Aby skonfigurować testy jednostkowe oparte na danych, należy użyć następujących elementów. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie testu jednostkowego opartego na danych](../test/how-to-create-a-data-driven-unit-test.md) i [Przewodnik: korzystanie z pliku konfiguracji w celu zdefiniowania źródła danych](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md).
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataAccessMethod>
 
@@ -71,7 +71,7 @@ Architektura testowania jednostkowego obsługuje testy jednostkowe [!INCLUDE[vsp
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute>
 
 ## <a name="assert-classes-and-related-exceptions"></a>Klasy Assert i powiązane wyjątki
- Testy jednostkowe mogą weryfikować określone zachowanie aplikacji przy użyciu różnych rodzajów instrukcji Assert, wyjątków i atrybutów. Aby uzyskać więcej informacji, zobacz [Korzystanie z klas](../test/using-the-assert-classes.md)potwierdzeń.
+ Testy jednostkowe mogą weryfikować określone zachowanie aplikacji przy użyciu różnych rodzajów instrukcji Assert, wyjątków i atrybutów. Aby uzyskać więcej informacji, zobacz [Korzystanie z klas potwierdzeń](../test/using-the-assert-classes.md).
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 
@@ -88,7 +88,7 @@ Architektura testowania jednostkowego obsługuje testy jednostkowe [!INCLUDE[vsp
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute>
 
 ## <a name="the-testcontext-class"></a>Klasa TestContext
- Następujące atrybuty i przypisane do nich wartości są wyświetlane w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] okno właściwości dla konkretnej metody testowej. Te atrybuty nie są przeznaczone do dostępu za pomocą kodu testu jednostkowego. Zamiast tego wpływają na sposób, w jaki testy jednostkowe są używane lub uruchamiane, przez środowisko IDE [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]lub [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] przez aparat testowy. Na przykład niektóre z tych atrybutów są wyświetlane jako kolumny w oknie Test Manager i Wyniki testów, co oznacza, że można ich użyć do grupowania i sortowania testów i wyników testów. Jeden taki atrybut to TestPropertyAttribute, który służy do dodawania dowolnych metadanych do testów jednostkowych. Na przykład można go użyć do przechowywania nazwy przebiegu testu, który obejmuje ten test, poprzez oznaczenie testu jednostkowego za pomocą `[TestProperty("TestPass", "Accessibility")]`. Lub można go użyć do przechowywania wskaźnika rodzaju testu: `[TestProperty("TestKind", "Localization")]`. Właściwość tworzona przy użyciu tego atrybutu i wartość właściwości, którą można przypisać, są wyświetlane w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] okno właściwości pod konkretnym **testem**nagłówka.
+ Następujące atrybuty i przypisane do nich wartości są wyświetlane w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] okno Właściwości dla konkretnej metody testowej. Te atrybuty nie są przeznaczone do dostępu za pomocą kodu testu jednostkowego. Zamiast tego wpływają na sposób, w jaki testy jednostkowe są używane lub uruchamiane, przez środowisko IDE [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] lub przez aparat testowy [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Na przykład niektóre z tych atrybutów są wyświetlane jako kolumny w oknie Test Manager i Wyniki testów, co oznacza, że można ich użyć do grupowania i sortowania testów i wyników testów. Jeden taki atrybut to TestPropertyAttribute, który służy do dodawania dowolnych metadanych do testów jednostkowych. Na przykład można go użyć do przechowywania nazwy przebiegu testu, który obejmuje ten test, oznaczając test jednostkowy `[TestProperty("TestPass", "Accessibility")]`. Lub można go użyć do przechowywania wskaźnika rodzaju testu: `[TestProperty("TestKind", "Localization")]`. Właściwość tworzona przy użyciu tego atrybutu i wartość właściwości, którą można przypisać, są wyświetlane w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] okno Właściwości w ramach **testu nagłówka określonego**.
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>
 
@@ -111,7 +111,7 @@ Architektura testowania jednostkowego obsługuje testy jednostkowe [!INCLUDE[vsp
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection>
 
 ## <a name="attributes-used-for-generating-reports"></a>Atrybuty używane do generowania raportów
- Atrybuty w tej sekcji odnoszą się do metody testowej, która dekorować do jednostek w hierarchii [!INCLUDE[esprtfs](../includes/esprtfs-md.md)] projektu projektu zespołowego.
+ Atrybuty w tej sekcji odnoszą się do metody testowej, która dekorować do jednostek w hierarchii projektu [!INCLUDE[esprtfs](../includes/esprtfs-md.md)] projektu zespołowego.
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.CssIterationAttribute>
 

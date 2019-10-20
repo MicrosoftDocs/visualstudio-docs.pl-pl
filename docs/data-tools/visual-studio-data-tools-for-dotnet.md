@@ -1,26 +1,26 @@
 ---
-title: Data tools dla platformy .NET
+title: Narzędzia danych dla platformy .NET
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c3175080-1dfb-4ab8-a460-92dadbb844b4
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
 - dotnet
-ms.openlocfilehash: a4a62f629244d44680b3d5ac3233bd45b975302e
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 224fef3a02a2441553728a9a75fc5f9c456081a1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66745302"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648090"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Narzędzia do obsługi danych programu Visual Studio dla platformy .NET
 
-Program Visual Studio i .NET razem zapewniają szeroką interfejsu API i narzędzia do obsługi łączenie z bazami danych, modelowania danych w pamięci i wyświetlanie danych w interfejsie użytkownika. Klasy .NET, które oferują funkcje dostępu do danych są znane jako [ADO.NET](/dotnet/framework/data/adonet/index). ADO.NET, wraz z danymi narzędzi w programie Visual Studio został zaprojektowany głównie w celu obsługi relacyjnych baz danych i XML. Te dni wielu dostawców bazy danych NoSQL lub stronom trzecim, oferują dostawcy ADO.NET.
+Programy Visual Studio i .NET wspólnie zapewniają szeroką obsługę interfejsów API i narzędzi do łączenia się z bazami danych, modelowania danych w pamięci i wyświetlania danych w interfejsie użytkownika. Klasy .NET, które zapewniają funkcje dostępu do danych, są nazywane [ADO.NET](/dotnet/framework/data/adonet/index). Program ADO.NET, wraz z narzędziami do obsługi danych w programie Visual Studio, został zaprojektowany głównie z uwzględnieniem relacyjnych baz danych i XML. W tych dniach wiele dostawców baz danych NoSQL lub innych firm oferuje dostawców ADO.NET.
 
-[.NET core](/dotnet/core/) obsługuje ADO.NET, z wyjątkiem zestawy danych i ich powiązanych typów. Jeśli jesteś przeznaczonych dla platformy .NET Core i wymagają warstwy mapowania obiektowo relacyjny (ORM), użyj [Entity Framework Core](/ef/core/).
+[Platforma .NET Core](/dotnet/core/) obsługuje ADO.NET, z wyjątkiem zestawów danych i ich powiązanych typów. Jeśli celem jest platforma .NET Core i wymagana jest warstwa mapowania obiektów (ORM), użyj [Entity Framework Core](/ef/core/).
 
 Na poniższym diagramie przedstawiono uproszczony widok podstawowej architektury:
 
@@ -30,17 +30,17 @@ Na poniższym diagramie przedstawiono uproszczony widok podstawowej architektury
 
 Typowy przepływ pracy to:
 
-1. Zainstaluj rozwoju lub bazy danych testów na komputerze lokalnym. Zobacz [instalowanie systemów baz danych, narzędzia i przykłady](../data-tools/installing-database-systems-tools-and-samples.md). Jeśli używasz usługi danych platformy Azure, ten krok nie jest konieczne.
+1. Zainstaluj programistyczną lub testową bazę danych na komputerze lokalnym. Zobacz [Instalowanie systemów baz danych, narzędzi i przykładów](../data-tools/installing-database-systems-tools-and-samples.md). Jeśli używasz usługi danych platformy Azure, ten krok nie jest konieczny.
 
-2. Przetestuj połączenie z bazą danych (lub usługi lub plik lokalny) w programie Visual Studio. Zobacz [dodać nowe połączenia](../data-tools/add-new-connections.md).
+2. Przetestuj połączenie z bazą danych (lub usługą lub plikiem lokalnym) w programie Visual Studio. Zobacz [Dodawanie nowych połączeń](../data-tools/add-new-connections.md).
 
-3. (Opcjonalnie) Narzędzia do generowania i skonfigurować nowy model. Modele oparte na platformie Entity Framework są określenia domyślnego zalecenia w przypadku nowych aplikacji. Model, niezależnie od jednej z nich, jest źródłem danych, za pomocą którego aplikacja wchodzi w interakcje. Model logicznie znajduje się pomiędzy bazy danych lub usługi i aplikacji. Zobacz [dodasz nowe źródła danych](../data-tools/add-new-data-sources.md).
+3. Obowiązkowe Użyj narzędzi, aby wygenerować i skonfigurować nowy model. Modele oparte na Entity Framework są domyślnymi zaleceniami dla nowych aplikacji. Model, w zależności od tego, który jest używany, to źródło danych, z którym aplikacja działa. Model jest rozmieszczony logicznie między bazą danych lub usługą a aplikacją. Zobacz [Dodawanie nowych źródeł danych](../data-tools/add-new-data-sources.md).
 
-4. Przeciągnij źródła danych z **źródeł danych** okna na powierzchni projektowej Windows Forms, ASP.NET lub Windows Presentation Foundation do generowania kodu wiązania danych, które będą wyświetlane dane użytkownika w taki sposób, który określisz. Zobacz [powiązywanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).
+4. Przeciągnij źródło danych z okna **źródła danych** na Windows Forms, ASP.NET lub Windows Presentation Foundation powierzchni projektowej w celu wygenerowania kodu powiązania danych, który będzie wyświetlał dane dla użytkownika w sposób określony przez użytkownika. Zobacz [powiązane kontrolki z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).
 
-5. Dodawanie kodu niestandardowego, w przypadku elementów, takich jak reguły biznesowe, wyszukiwania i sprawdzanie poprawności danych lub skorzystaj z zalet funkcji niestandardowych, który udostępnia w źródłowej bazie danych.
+5. Dodaj niestandardowy kod dla elementów, takich jak reguły biznesowe, wyszukiwanie i sprawdzanie poprawności danych, lub, aby skorzystać z funkcji niestandardowych, które uwidacznia bazowa baza danych.
 
-Można pominąć krok 3 i programowania aplikacji .NET w celu wydawania poleceń, bezpośrednio do bazy danych, a nie przy użyciu modelu. W tym przypadku znajdziesz tutaj odpowiedniej dokumentacji: [ADO.NET](/dotnet/framework/data/adonet/index). Należy zauważyć, że nadal można używać **Kreatora konfiguracji źródła danych** i projektantów, aby wygenerować kod powiązania danych, podczas wypełniania obiektów w pamięci, a następnie powiązanie danych kontrolki interfejsu użytkownika do tych obiektów.
+Możesz pominąć krok 3 i program aplikacji .NET, aby wydać polecenia bezpośrednio do bazy danych, zamiast korzystać z modelu. W takim przypadku znajdziesz odpowiednią dokumentację tutaj: [ADO.NET](/dotnet/framework/data/adonet/index). Należy pamiętać, że nadal można użyć **Kreatora konfiguracji źródła danych** i projektantów do generowania kodu powiązania danych podczas wypełniania własnych obiektów w pamięci, a następnie do tych obiektów formantów interfejsu użytkownika powiązanych z danymi.
 
 ## <a name="see-also"></a>Zobacz także
 

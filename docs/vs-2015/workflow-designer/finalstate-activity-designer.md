@@ -1,5 +1,5 @@
 ---
-title: FinalState, Projektant działań | Dokumentacja firmy Microsoft
+title: FinalState — Projektant działań | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -7,30 +7,28 @@ ms.topic: reference
 ms.assetid: aa186893-8775-40dd-981f-8593ead831d0
 caps.latest.revision: 5
 author: steved0x
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0a969b81e3291191cf42df4e1775c4212f54e4cf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dff9793becc3e0619d42b642609273f328c6aa73
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951999"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656725"
 ---
 # <a name="finalstate-activity-designer"></a>FinalState, projektant działań
-<xref:System.Activities.Core.Presentation.FinalState> Projektanta jest używany do tworzenia <xref:System.Activities.Statements.State> kończy się wystąpienia maszyny stanu.  
-  
-## <a name="using-the-finalstate-activity-designer"></a>Za pomocą FinalState, Projektant działań  
- **FinalState** projektanta jest używany do tworzenia <xref:System.Activities.Statements.State> który został wstępnie skonfigurowany jako kończący stan w automacie stanów. A <xref:System.Activities.Statements.State> utworzonego za pomocą <xref:System.Activities.Core.Presentation.FinalState> ma projektanta działań jego <xref:System.Activities.Statements.State.IsFinal%2A> właściwością **true**, nie ma <xref:System.Activities.Statements.State.Exit%2A> działanie i żadnych przejść pochodzących z niego. Aby użyć <xref:System.Activities.Core.Presentation.FinalState> projektanta działań, aby dodać <xref:System.Activities.Statements.State> przeciągnij działanie, które są wstępnie skonfigurowane jako kończący stan w automacie stanów **FinalState** projektanta działań z **automatu stanów**części **przybornika** i upuść go na projektanta przepływów pracy. <xref:System.Activities.Core.Presentation.FinalState> Projektanta działań może być upuszczone na <xref:System.Activities.Statements.StateMachine> i przejść, dodane później; lub przejścia mogą być tworzone jako <xref:System.Activities.Core.Presentation.FinalState> projektanta działań jest porzucany. Aby uzyskać więcej informacji na temat tworzenia przejścia, zobacz [przejścia](../workflow-designer/transition-activity-designer.md).  
-  
-### <a name="state-activity-properties-in-the-workflow-designer"></a>Właściwości stanu działania w Projektancie przepływu pracy  
- W poniższej tabeli przedstawiono właściwości, które można ustawić za pomocą <xref:System.Activities.Core.Presentation.FinalState> projektanta i w tym artykule opisano, jak są używane w projektancie. Niektóre z tych właściwości można edytować w siatce właściwości, a niektóre z nich mogą być edytowane na powierzchni projektowej.  
-  
-|Nazwa właściwości|Wymagane|Użycie|  
-|-------------------|--------------|-----------|  
-|<xref:System.Activities.Statements.State.DisplayName%2A>|False|Określa przyjazną nazwę <xref:System.Activities.Statements.State> projektanta działań w nagłówku. Wartość domyślna to **stanu**. Wartość można edytować w siatce właściwości lub bezpośrednio w nagłówku projektanta działań. <xref:System.Activities.Statements.State.DisplayName%2A> Jest używany w nadrzędnych, która jest wyświetlana w górnej części projektanta przepływów pracy.<br /><br /> Mimo że <xref:System.Activities.Statements.State.DisplayName%2A> nie jest bezwzględnie konieczne jest najlepszym rozwiązaniem, aby użyć jednego.|  
-|<xref:System.Activities.Statements.State.Entry%2A>|False|Określa akcję, która występuje, gdy ten stan jest przenoszone do. Tę wartość można ustawić, przeciągając działanie w **przybornika** i upuszczając go na <xref:System.Activities.Statements.State.Entry%2A> sekcja stanu.|  
-  
-## <a name="see-also"></a>Zobacz też  
- [Automat stanów](../workflow-designer/statemachine-activity-designer.md)   
- [Stan](../workflow-designer/state-activity-designer.md)   
- [Transition](../workflow-designer/transition-activity-designer.md)
+Projektant <xref:System.Activities.Core.Presentation.FinalState> służy do tworzenia <xref:System.Activities.Statements.State> kończącego wystąpienie komputera stanu.
+
+## <a name="using-the-finalstate-activity-designer"></a>Korzystanie z projektanta działań FinalState
+ Projektant **FinalState** jest używany do tworzenia <xref:System.Activities.Statements.State>, który jest wstępnie skonfigurowany jako stan zakończenia na komputerze stanu. @No__t_0, który jest tworzony przy użyciu projektanta działań <xref:System.Activities.Core.Presentation.FinalState>, ma właściwość <xref:System.Activities.Statements.State.IsFinal%2A> ustawioną na **wartość true**, nie ma działania <xref:System.Activities.Statements.State.Exit%2A> i nie pochodzą z niego przejścia. Aby użyć <xref:System.Activities.Core.Presentation.FinalState> Projektant działań w celu dodania działania <xref:System.Activities.Statements.State>, które jest wstępnie skonfigurowane jako stan zakończenia na komputerze stanu, przeciągnij projektanta działań **FinalState** z sekcji **stan komputera** **przybornika** i upuść go na Projektant przepływu pracy. @No__t_0 projektanta działań można porzucić na <xref:System.Activities.Statements.StateMachine> i przejścia później. lub można utworzyć przejście, gdy <xref:System.Activities.Core.Presentation.FinalState> projektanta działań zostanie porzucony. Aby uzyskać więcej informacji na temat tworzenia przejść, zobacz [Przechodzenie](../workflow-designer/transition-activity-designer.md).
+
+### <a name="state-activity-properties-in-the-workflow-designer"></a>Właściwości działania stanu w Projektant przepływu pracy
+ W poniższej tabeli przedstawiono właściwości, które można ustawić za pomocą projektanta <xref:System.Activities.Core.Presentation.FinalState>, i opisano sposób ich użycia w projektancie. Niektóre z tych właściwości można edytować w siatce właściwości, a niektóre z nich można edytować na powierzchni projektanta.
+
+|Nazwa właściwości|Wymagane|Użycie|
+|-------------------|--------------|-----------|
+|<xref:System.Activities.Statements.State.DisplayName%2A>|False|Określa przyjazną nazwę <xref:System.Activities.Statements.State> projektanta działań w nagłówku. Wartość domyślna to **State**. Wartość można edytować w siatce właściwości lub bezpośrednio w nagłówku projektanta działań. @No__t_0 jest używana w nawigacyjnym nawigacji, który jest wyświetlany w górnej części projektanta przepływu pracy.<br /><br /> Mimo że <xref:System.Activities.Statements.State.DisplayName%2A> nie jest ściśle wymagane, najlepszym rozwiązaniem jest użycie jednego z nich.|
+|<xref:System.Activities.Statements.State.Entry%2A>|False|Określa akcję, która występuje, gdy ten stan jest przenoszony do. Tę wartość można ustawić, przeciągając działanie z **przybornika** i upuszczając je w sekcji <xref:System.Activities.Statements.State.Entry%2A> stanu.|
+
+## <a name="see-also"></a>Zobacz też
+ [](../workflow-designer/statemachine-activity-designer.md) [](../workflow-designer/state-activity-designer.md) [Przejście](../workflow-designer/transition-activity-designer.md) stanu StateMachine

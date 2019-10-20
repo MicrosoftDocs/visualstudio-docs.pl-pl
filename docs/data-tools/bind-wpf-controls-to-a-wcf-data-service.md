@@ -10,33 +10,33 @@ helpviewer_keywords:
 - WPF data binding [Visual Studio], walkthroughs
 - WPF Designer, data binding
 ms.assetid: 8823537c-82f0-41f7-bf30-705f0e5e59fd
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ceaf74ad2673b0dae80c9529ad082c6ae3187352
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4abe5047bd7d6f17bb0dc23f4d92a1a842ee273a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824854"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648752"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Powiązywanie kontrolek WPF z usługą danych programu WCF
 
-W tym instruktażu utworzysz aplikację WPF, która zawiera formanty powiązane z danymi. Formanty są powiązane z rekordami klientów, które są hermetyzowane w usługi danych WCF. Zostanie również dodać przyciski, które klienci mogą używać do wyświetlania i aktualizowania rekordów.
+W tym instruktażu utworzysz aplikację WPF, która zawiera kontrolki powiązane z danymi. Formanty są powiązane z rekordami klientów, które są hermetyzowane w usłudze danych programu WCF. Dodasz również przyciski, za pomocą których klienci mogą wyświetlać i aktualizować rekordy.
 
 W instruktażu przedstawiono następujące zagadnienia:
 
-- Tworzenie modelu Entity Data Model, który jest generowany na podstawie danych w przykładowej bazie danych AdventureWorksLT.
+- Tworzenie Entity Data Model wygenerowanego na podstawie danych z przykładowej bazy danych AdventureWorksLT.
 
-- Tworzenie usługi danych WCF, które udostępnia dane w modelu Entity Data Model do aplikacji WPF.
+- Tworzenie usługi danych programu WCF, która uwidacznia dane w Entity Data Model w aplikacji WPF.
 
-- Tworzenie zestawu formantów powiązanych z danymi przez przeciąganie elementów z **źródeł danych** okna Projektanta WPF.
+- Tworzenie zestawu formantów powiązanych z danymi przez przeciąganie elementów z okna **źródła danych** do projektanta WPF.
 
-- Tworzenie przycisków, które przejdź do przodu i wstecz za pośrednictwem rekordów klientów.
+- Tworzenie przycisków przechodzenia do przodu i do tyłu przez rekordy klientów.
 
-- Tworzenie przycisku, który zapisuje zmiany danych w kontrolkach usługi danych WCF i źródle danych.
+- Tworzenie przycisku, który zapisuje zmiany danych w kontrolkach do usługi danych programu WCF i bazowego źródła danych.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -46,122 +46,122 @@ Następujące składniki są wymagane do przeprowadzenia tego instruktażu:
 
 - Visual Studio
 
-- Dostęp do uruchomionego wystąpienia programu SQL Server lub SQL Server Express, który ma przykładowej bazy danych AdventureWorksLT podłączone do niego. Możesz pobrać bazy danych AdventureWorksLT z [witryny sieci Web CodePlex](http://go.microsoft.com/fwlink/?linkid=87843).
+- Dostęp do uruchomionego wystąpienia SQL Server lub SQL Server Express z dołączoną przykładową bazą danych AdventureWorksLT. Bazę danych AdventureWorksLT można pobrać z [witryny sieci Web CodePlex](http://go.microsoft.com/fwlink/?linkid=87843).
 
-Znajomość następujących pojęć jest również przydatna, ale nie jest wymagana do ukończeni instruktażu:
+Wcześniejsza znajomość następujących pojęć jest również przydatna, ale nie jest wymagana do ukończenia przewodnika:
 
-- [Usługi danych WCF](/dotnet/framework/data/wcf/wcf-data-services-overview).
+- [Usługi danych programu WCF](/dotnet/framework/data/wcf/wcf-data-services-overview).
 
 - Modele danych w [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)].
 
-- Jednostki danych modeli i ADO.NET Entity Framework. Aby uzyskać więcej informacji, zobacz [Omówienie programu Entity Framework](/dotnet/framework/data/adonet/ef/overview).
+- Modele danych jednostek i Entity Framework ADO.NET. Aby uzyskać więcej informacji, zobacz [Entity Framework przegląd](/dotnet/framework/data/adonet/ef/overview).
 
-- Powiązanie danych WPF. Aby uzyskać więcej informacji, zobacz [powiązanie danych — omówienie](/dotnet/framework/wpf/data/data-binding-overview).
+- Powiązanie danych WPF. Aby uzyskać więcej informacji, zobacz temat [powiązanie danych — omówienie](/dotnet/framework/wpf/data/data-binding-overview).
 
 ## <a name="create-the-service-project"></a>Tworzenie projektu usługi
 
-1. Początek w tym instruktażu utworzysz C# lub Visual Basic **aplikacji sieci Web ASP.NET** projektu. Nadaj projektowi nazwę **AdventureWorksService**.
+1. Uruchom ten przewodnik, tworząc C# lub Visual Basic projekt **aplikacji sieci Web ASP.NET** . Nazwij projekt **AdventureWorksService**.
 
-2. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **Default.aspx** i wybierz **Usuń**. Ten plik nie jest konieczne przewodnik.
+2. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **default. aspx** i wybierz pozycję **Usuń**. Ten plik nie jest konieczny dla przewodnika.
 
-## <a name="create-an-entity-data-model-for-the-service"></a>Tworzenie modelu danych jednostki usługi
+## <a name="create-an-entity-data-model-for-the-service"></a>Tworzenie Entity Data Model dla usługi
 
-Aby udostępnić dane do aplikacji przy użyciu usługi danych WCF, należy zdefiniować model danych do usługi. Usługi danych WCF obsługuje dwa typy modeli danych: Jednostki danych modeli i modeli danych niestandardowych, które są definiowane za pomocą wspólnego języka wspólnego (CLR) obiekty, które implementują <xref:System.Linq.IQueryable%601> interfejsu. W tym instruktażu utworzysz Model danych jednostki do modelu danych.
+Aby udostępnić dane aplikacji przy użyciu usługi danych programu WCF, należy zdefiniować model danych dla usługi. Usługa danych programu WCF obsługuje dwa typy modeli danych: modele danych jednostek i niestandardowe modele danych, które są zdefiniowane za pomocą obiektów środowiska uruchomieniowego języka wspólnego (CLR), które implementują interfejs <xref:System.Linq.IQueryable%601>. W tym instruktażu utworzysz Entity Data Model dla modelu danych.
 
-1. Na **projektu** menu, kliknij przycisk **Dodaj nowy element**.
+1. W menu **projekt** kliknij polecenie **Dodaj nowy element**.
 
-2. Na liście Zainstalowane szablony, kliknij **danych**, a następnie wybierz pozycję **ADO.NET Entity Data Model** elementu projektu.
+2. Na liście zainstalowane szablony kliknij pozycję **dane**, a następnie wybierz element projektu **ADO.NET Entity Data Model** .
 
-3. Zmień nazwę na `AdventureWorksModel.edmx`i kliknij przycisk **Dodaj**.
+3. Zmień nazwę na `AdventureWorksModel.edmx`, a następnie kliknij przycisk **Dodaj**.
 
-     **Modelu Entity Data Model** zostanie otwarty Kreator.
+     Zostanie otwarty Kreator **Entity Data Model** .
 
-4. Na **wybierz zawartość modelu** kliknij **Generuj z bazy danych**i kliknij przycisk **dalej**.
+4. Na stronie **Wybierz zawartość modelu** kliknij pozycję **Generuj z bazy danych**, a następnie kliknij przycisk **dalej**.
 
-5. Na **wybierz połączenie danych** zaznacz jedną z następujących opcji:
+5. Na stronie **Wybierz połączenie danych** wybierz jedną z następujących opcji:
 
-    - Jeśli połączenie danych z przykładowej bazy danych AdventureWorksLT jest dostępny na liście rozwijanej, wybierz ją.
+    - Jeśli połączenie danych z przykładową bazą danych AdventureWorksLT jest dostępne na liście rozwijanej, wybierz ją.
 
-    - Kliknij przycisk **nowe połączenie**i Utwórz połączenie z bazą danych AdventureWorksLT.
+    - Kliknij pozycję **nowe połączenie**i Utwórz połączenie z bazą danych AdventureWorksLT.
 
-6. Na **wybierz połączenie danych** strony, upewnij się, że **zapisywanie ustawień połączenia w pliku App.Config jako jednostki** opcja jest zaznaczona, a następnie kliknij **dalej**.
+6. Na stronie **Wybierz połączenie danych** upewnij się, że opcja **Zapisz ustawienia połączenia jednostki w pliku App. config** jest zaznaczona, a następnie kliknij przycisk **dalej**.
 
-7. Na **wybierz obiekty bazy danych** rozwiń **tabel**, a następnie wybierz pozycję **SalesOrderHeader** tabeli.
+7. Na stronie **Wybierz obiekty bazy danych** rozwiń węzeł **tabele**, a następnie wybierz tabelę **SalesOrderHeader** .
 
 8. Kliknij przycisk **Zakończ**.
 
 ## <a name="create-the-service"></a>Tworzenie usługi
 
-Tworzenie usługi danych WCF do udostępniania danych w modelu Entity Data Model do aplikacji WPF:
+Utwórz usługę danych programu WCF, aby uwidocznić dane w Entity Data Model w aplikacji WPF:
 
-1. Na **projektu** menu, wybierz opcję **Dodaj nowy element**.
+1. W menu **projekt** wybierz polecenie **Dodaj nowy element**.
 
-2. W **zainstalowane szablony** kliknij **Web**, a następnie wybierz pozycję **usługi danych WCF** elementu projektu.
+2. Na liście **zainstalowane szablony** kliknij pozycję **Sieć Web**, a następnie wybierz element projekt **usługi danych programu WCF** .
 
-3. W **nazwa** wpisz `AdventureWorksService.svc`i kliknij przycisk **Dodaj**.
+3. W polu **Nazwa** wpisz `AdventureWorksService.svc`, a następnie kliknij przycisk **Dodaj**.
 
      Program Visual Studio dodaje `AdventureWorksService.svc` do projektu.
 
 ## <a name="configure-the-service"></a>Konfigurowanie usługi
 
-Należy skonfigurować usługę, aby działały w modelu Entity Data Model, który został utworzony:
+Należy skonfigurować usługę do działania w utworzonym Entity Data Model:
 
-1. W `AdventureWorks.svc` plik kodu, Zastąp **AdventureWorksService** klasy deklaracji z następującym kodem.
+1. W pliku kodu `AdventureWorks.svc` Zastąp deklarację klasy **AdventureWorksService** następującym kodem.
 
      [!code-csharp[Data_WPFWCF#1](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-wcf-data-service_1.cs)]
      [!code-vb[Data_WPFWCF#1](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_1.vb)]
 
-     Ten kod aktualizuje **AdventureWorksService** klasy, tak aby pochodzi od klasy <xref:System.Data.Services.DataService%601> który operuje na `AdventureWorksLTEntities` obiektu context — klasa w modelu Entity Data Model. Aktualizuje również `InitializeService` metodę, aby umożliwić klientom usługi Dostęp pełny odczyt/zapis do `SalesOrderHeader` jednostki.
+     Ten kod aktualizuje klasę **AdventureWorksService** , tak aby dziedziczyć z <xref:System.Data.Services.DataService%601>, który działa na klasie `AdventureWorksLTEntities` kontekstu obiektu w Entity Data Model. Aktualizuje także metodę `InitializeService`, aby umożliwić klientom usługi pełny dostęp do odczytu/zapisu do jednostki `SalesOrderHeader`.
 
-2. Skompiluj projekt i sprawdź, czy opiera się bez błędów.
+2. Skompiluj projekt i sprawdź, czy nie ma błędów.
 
 ## <a name="create-the-wpf-client-application"></a>Tworzenie aplikacji klienckiej WPF
 
-Aby wyświetlić dane z usługi danych WCF, należy utworzyć nową aplikację WPF ze źródłem danych, która opiera się na usługę. W dalszej części tego przewodnika dodasz formantów powiązanych z danymi w aplikacji.
+Aby wyświetlić dane z usługi danych programu WCF, Utwórz nową aplikację WPF ze źródłem danych opartym na usłudze. W dalszej części tego instruktażu dodasz kontrolki powiązane z danymi do aplikacji.
 
-1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł rozwiązania, kliknij przycisk **Dodaj**i wybierz **nowy projekt**.
+1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł rozwiązanie, kliknij polecenie **Dodaj**, a następnie wybierz pozycję **Nowy projekt**.
 
-2. W **nowy projekt** okna dialogowego, rozwiń węzeł **Visual C#** lub **języka Visual Basic**, a następnie wybierz pozycję **Windows**.
+2. W oknie dialogowym **Nowy projekt** rozwiń pozycję **Wizualizacja C#**  lub **Visual Basic**, a następnie wybierz pozycję **Windows**.
 
-3. Wybierz **aplikacji WPF** szablonu projektu.
+3. Wybierz szablon projektu **aplikacji WPF** .
 
-4. W **nazwa** wpisz `AdventureWorksSalesEditor`i kliknij przycisk **OK**.
+4. W polu **Nazwa** wpisz `AdventureWorksSalesEditor` i kliknij przycisk **OK**.
 
-   Program Visual Studio dodaje `AdventureWorksSalesEditor` projektu do rozwiązania.
+   Program Visual Studio dodaje projekt `AdventureWorksSalesEditor` do rozwiązania.
 
-5. Na **danych** menu, kliknij przycisk **Pokaż źródła danych**.
+5. W menu **dane** kliknij przycisk **Pokaż źródła danych**.
 
-   **Źródeł danych** zostanie otwarte okno.
+   Zostanie otwarte okno **źródła danych** .
 
-6. W **źródeł danych** okna, kliknij przycisk **Dodaj nowe źródło danych**.
+6. W oknie **źródła danych** kliknij pozycję **Dodaj nowe źródło danych**.
 
-   **Konfiguracji źródła danych** zostanie otwarty Kreator.
+   Zostanie otwarty Kreator **konfiguracji źródła danych** .
 
-7. W **wybierz typ źródła danych** strony kreatora, wybierz **usługi**, a następnie kliknij przycisk **dalej**.
+7. Na stronie **Wybierz typ źródła danych** kreatora wybierz pozycję **Usługa**, a następnie kliknij przycisk **dalej**.
 
-8. W **Dodaj odwołanie do usługi** okno dialogowe, kliknij przycisk **odnajdź**.
+8. W **Dodaj odwołanie do usługi** okno dialogowe, kliknij przycisk **odkryj**.
 
-   Wyszukuje w bieżącym rozwiązaniu dla dostępnych usług Visual Studio i dodaje `AdventureWorksService.svc` do listy dostępnych usług w **usług** pole.
+   Program Visual Studio przeszukuje bieżące rozwiązanie pod kątem dostępnych usług i dodaje `AdventureWorksService.svc` do listy dostępnych usług w polu **usługi** .
 
-9. W **Namespace** wpisz **AdventureWorksService**.
+9. W polu **przestrzeń nazw** wpisz **AdventureWorksService**.
 
-10. W **usług** kliknij **AdventureWorksService.svc**, a następnie kliknij przycisk **OK**.
+10. W polu **usługi** kliknij pozycję **AdventureWorksService. svc**, a następnie kliknij przycisk **OK**.
 
-    Pobiera informacje o usłudze Visual Studio, a następnie wróci do **konfiguracji źródła danych** kreatora.
+    Program Visual Studio pobierze informacje o usłudze, a następnie powróci do kreatora **konfiguracji źródła danych** .
 
-11. W **Dodaj odwołanie do usługi** kliknij **Zakończ**.
+11. Na stronie **Dodaj odwołanie do usługi** kliknij przycisk **Zakończ**.
 
-    Program Visual Studio dodaje węzły, które reprezentują dane zwrócone przez usługę **źródeł danych** okna.
+    Program Visual Studio dodaje węzły reprezentujące dane zwrócone przez usługę do okna **źródła danych** .
 
-## <a name="define-the-user-interface"></a>Definiowanie interfejsu użytkownika
+## <a name="define-the-user-interface"></a>Zdefiniuj interfejs użytkownika
 
-Dodaj kilku przycisków do okna, modyfikując XAML w Projektancie WPF. W dalszej części tego przewodnika dodasz kod, który umożliwia użytkownikom wyświetlanie i aktualizowanie rekordów sprzedaży przy użyciu tych przycisków.
+Dodaj kilka przycisków do okna, modyfikując kod XAML w projektancie WPF. W dalszej części tego instruktażu zostanie dodany kod umożliwiający użytkownikom wyświetlanie i aktualizowanie rekordów sprzedaży przy użyciu tych przycisków.
 
-1. W **Eksploratora rozwiązań**, kliknij dwukrotnie **MainWindow.xaml**.
+1. W **Eksplorator rozwiązań**kliknij dwukrotnie pozycję **MainWindow. XAML**.
 
-   Okno zostanie otwarty w Projektancie WPF.
+   Okno zostanie otwarte w projektancie WPF.
 
-2. W [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] wyświetlić projektanta, Dodaj następujący kod między `<Grid>` tagi:
+2. W widoku [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] projektanta Dodaj następujący kod między tagami `<Grid>`:
 
    ```xaml
    <Grid.RowDefinitions>
@@ -177,13 +177,13 @@ Dodaj kilku przycisków do okna, modyfikując XAML w Projektancie WPF. W dalszej
 
 ## <a name="create-the-data-bound-controls"></a>Tworzenie formantów powiązanych z danymi
 
-Tworzenie formantów, które wyświetlają rekordy klientów, przeciągając `SalesOrderHeaders` węzła z **źródeł danych** okna projektanta.
+Utwórz kontrolki, które wyświetlają rekordy klientów, przeciągając węzeł `SalesOrderHeaders` z okna **źródła danych** do projektanta.
 
-1. W **źródeł danych** okna, kliknij przycisk menu rozwijanej dla **SalesOrderHeaders** , a następnie wybierz węzeł **szczegóły**.
+1. W oknie **źródła danych** kliknij menu rozwijane dla węzła **SalesOrderHeaders** , a następnie wybierz pozycję **szczegóły**.
 
-2. Rozwiń **SalesOrderHeaders** węzła.
+2. Rozwiń węzeł **SalesOrderHeaders** .
 
-3. Na przykład niektóre pola nie zostaną wyświetlone, więc kliknij menu rozwijane obok następujących węzłów i wybierz pozycję **Brak**:
+3. W tym przykładzie niektóre pola nie będą wyświetlane, więc kliknij menu rozwijane obok następujących węzłów i wybierz opcję **Brak**:
 
     - **CreditCardApprovalCode**
 
@@ -193,19 +193,19 @@ Tworzenie formantów, które wyświetlają rekordy klientów, przeciągając `Sa
 
     - **RevisionNumber**
 
-    - **ROWGUID**
+    - **danej**
 
-    Ta akcja uniemożliwia tworzenie formantów powiązanych z danymi dla tych węzłów w następnym kroku programu Visual Studio. W tym przewodniku założono, że użytkownik końcowy nie musi widzieć tych danych.
+    Ta akcja uniemożliwia programowi Visual Studio Tworzenie formantów powiązanych z danymi dla tych węzłów w następnym kroku. W tym przewodniku założono, że użytkownik końcowy nie musi widzieć tych danych.
 
-4. Z **źródeł danych** okna, przeciągnij **SalesOrderHeaders** węzeł, aby wiersz siatki w ramach wiersza, który zawiera przyciski.
+4. W oknie **źródła danych** przeciągnij węzeł **SalesOrderHeaders** do wiersza siatki w wierszu, który zawiera przyciski.
 
-     Program Visual Studio generuje XAML i kodu, który tworzy zestaw elementów sterujących, które są powiązane z danymi w **produktu** tabeli. Aby uzyskać więcej informacji na temat wygenerowany XAML i kodu, zobacz [WPF powiązać kontrolki z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
+     Program Visual Studio generuje XAML i kod, który tworzy zestaw kontrolek, które są powiązane z danymi w tabeli **Product** . Aby uzyskać więcej informacji na temat wygenerowanej XAML i kodu, zobacz [Powiązywanie formantów WPF z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
 
-5. W projektancie, kliknij pole tekstowe **identyfikator klienta** etykiety.
+5. W projektancie kliknij pole tekstowe obok etykiety **Identyfikator klienta** .
 
-6. W **właściwości** okna, zaznacz pole wyboru obok pozycji **IsReadOnly** właściwości.
+6. W oknie **Właściwości** zaznacz pole wyboru obok właściwości **IsReadOnly** .
 
-7. Ustaw **IsReadOnly** właściwości dla każdego z następujących pól tekstowych:
+7. Ustaw właściwość **IsReadOnly** dla każdego z następujących pól tekstowych:
 
     - **Numer zamówienia zakupu**
 
@@ -213,92 +213,92 @@ Tworzenie formantów, które wyświetlają rekordy klientów, przeciągając `Sa
 
     - **Numer zamówienia sprzedaży**
 
-## <a name="load-the-data-from-the-service"></a>Załaduj dane z usługi
+## <a name="load-the-data-from-the-service"></a>Ładowanie danych z usługi
 
-Aby załadować dane sprzedaży z usługi, należy użyć obiektu serwera proxy usługi. Następnie przypisz zwróconych danych do źródła danych dla <xref:System.Windows.Data.CollectionViewSource> okna WPF.
+Użyj obiektu serwera proxy usługi, aby załadować dane sprzedaży z usługi. Następnie przypisz zwrócone dane do źródła danych dla <xref:System.Windows.Data.CollectionViewSource> w oknie WPF.
 
-1. W projektancie, aby utworzyć `Window_Loaded` procedura obsługi zdarzeń, kliknij dwukrotnie tekst, który odczytuje: **Główne**.
+1. W projektancie, aby utworzyć procedurę obsługi zdarzeń `Window_Loaded`, kliknij dwukrotnie tekst, który odczytuje: **MainWindow**.
 
-2. Zastąp następujący kod obsługi zdarzeń. Upewnij się, że można zastąpić *localhost* adresów w tym kodzie adres hosta lokalnego na komputerze deweloperskim.
+2. Zastąp procedurę obsługi zdarzeń poniższym kodem. Upewnij się, że adres *localhost* jest zastępowany w tym kodzie adresem hosta lokalnego na komputerze deweloperskim.
 
      [!code-csharp[Data_WPFWCF#2](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-wcf-data-service_2.cs)]
      [!code-vb[Data_WPFWCF#2](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_2.vb)]
 
-## <a name="navigate-sales-records"></a>Przejdź rekordy sprzedaży
+## <a name="navigate-sales-records"></a>Nawigowanie po rekordach sprzedaży
 
-Dodaj kod, który umożliwia użytkownikom do przewijania rekordów sprzedaży przy użyciu **\<** i **>** przycisków.
+Dodaj kod, który umożliwia użytkownikom przewijanie rekordów sprzedaży przy użyciu przycisków **\<** i **>** .
 
-1. W projektancie, kliknij dwukrotnie **<** przycisku na powierzchni okna.
+1. W projektancie kliknij dwukrotnie przycisk **<** na powierzchni okna.
 
-     Visual Studio otwiera plik CodeBehind i tworzy nowy `backButton_Click` program obsługi zdarzeń dla <xref:System.Windows.Controls.Primitives.ButtonBase.Click> zdarzeń.
+     Program Visual Studio otwiera plik związany z kodem i tworzy nowy program obsługi zdarzeń `backButton_Click` dla zdarzenia <xref:System.Windows.Controls.Primitives.ButtonBase.Click>.
 
-2. Dodaj następujący kod do wygenerowany `backButton_Click` program obsługi zdarzeń:
+2. Dodaj następujący kod do wygenerowanego programu obsługi zdarzeń `backButton_Click`:
 
      [!code-csharp[Data_WPFWCF#3](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-wcf-data-service_3.cs)]
      [!code-vb[Data_WPFWCF#3](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_3.vb)]
 
-3. Wróć do projektanta, a następnie kliknij dwukrotnie **>** przycisku.
+3. Wróć do projektanta i kliknij dwukrotnie przycisk **>** .
 
-     Visual Studio otwiera plik CodeBehind i tworzy nowy `nextButton_Click` program obsługi zdarzeń dla <xref:System.Windows.Controls.Primitives.ButtonBase.Click> zdarzeń.
+     Program Visual Studio otwiera plik związany z kodem i tworzy nowy program obsługi zdarzeń `nextButton_Click` dla zdarzenia <xref:System.Windows.Controls.Primitives.ButtonBase.Click>.
 
-4. Dodaj następujący kod do wygenerowany `nextButton_Click` program obsługi zdarzeń:
+4. Dodaj następujący kod do wygenerowanego programu obsługi zdarzeń `nextButton_Click`:
 
      [!code-csharp[Data_WPFWCF#4](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-wcf-data-service_4.cs)]
      [!code-vb[Data_WPFWCF#4](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_4.vb)]
 
-## <a name="save-changes-to-sales-records"></a>Zapisz zmiany do rekordów sprzedaży
+## <a name="save-changes-to-sales-records"></a>Zapisz zmiany w rekordach sprzedaży
 
-Dodaj kod, który umożliwia użytkownikom wyświetlanie i zapisać zmiany do rekordów sprzedaży przy użyciu **Zapisz zmiany** przycisku:
+Dodaj kod, który umożliwia użytkownikom wyświetlanie i zapisywanie zmian w rekordach sprzedaży przy użyciu przycisku **Zapisz zmiany** :
 
-1. W projektancie, kliknij dwukrotnie **Zapisz zmiany** przycisku.
+1. W projektancie kliknij dwukrotnie przycisk **Zapisz zmiany** .
 
-     Visual Studio otwiera plik CodeBehind i tworzy nowy `saveButton_Click` program obsługi zdarzeń dla <xref:System.Windows.Controls.Primitives.ButtonBase.Click> zdarzeń.
+     Program Visual Studio otwiera plik związany z kodem i tworzy nowy program obsługi zdarzeń `saveButton_Click` dla zdarzenia <xref:System.Windows.Controls.Primitives.ButtonBase.Click>.
 
-2. Dodaj następujący kod do `saveButton_Click` programu obsługi zdarzeń.
+2. Dodaj następujący kod do programu obsługi zdarzeń `saveButton_Click`.
 
      [!code-csharp[Data_WPFWCF#5](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-wcf-data-service_5.cs)]
      [!code-vb[Data_WPFWCF#5](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_5.vb)]
 
 ## <a name="test-the-application"></a>Testowanie aplikacji
 
-Skompilować i uruchomić aplikację, aby sprawdzić, wyświetlanie i aktualizowanie rekordów klienta:
+Skompiluj i uruchom aplikację, aby sprawdzić, czy można wyświetlać i aktualizować rekordy klientów:
 
-1. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**. Upewnij się, że rozwiązanie zostanie skompilowane bez błędów.
+1. W menu **kompilacja** kliknij pozycję **Kompiluj rozwiązanie**. Sprawdź, czy rozwiązanie nie ma błędów.
 
-2. Naciśnij klawisz **Ctrl**+**F5**.
+2. Naciśnij klawisz **Ctrl** +**F5**.
 
-     Program Visual Studio uruchamia **AdventureWorksService** projekt bez debugowania go.
+     Program Visual Studio uruchamia projekt **AdventureWorksService** bez jego debugowania.
 
-3. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **AdventureWorksSalesEditor** projektu.
+3. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt **AdventureWorksSalesEditor** .
 
-4. W menu kliknij prawym przyciskiem myszy (menu kontekstowe) w obszarze **debugowania**, kliknij przycisk **Uruchom nowe wystąpienie**.
+4. W menu rozwijanym prawym przyciskiem myszy (menu kontekstowe) w obszarze **debugowanie**kliknij polecenie **Uruchom nowe wystąpienie**.
 
-     Aplikacja zostanie uruchomiona. Sprawdź następujące informacje:
+     Aplikacja zostanie uruchomiona. Sprawdź następujące kwestie:
 
-    - Pola tekstowe wyświetlanie różnych pól danych z pierwszego rekordu sprzedaży, która ma identyfikator zamówienia sprzedaży **71774**.
+    - Pola tekstowe wyświetlają różne pola danych z pierwszego rekordu sprzedaży, który ma numer zamówienia sprzedaży **71774**.
 
-    - Możesz kliknąć pozycję **>** lub **<** przycisków, aby przejść do innych rekordów sprzedaży.
+    - Możesz kliknąć przycisk **>** lub **<** , aby nawigować po innych rekordach sprzedaży.
 
-5. Z jednego z rekordów sprzedaży, wpisz tekst w **komentarz** , a następnie kliknij przycisk **Zapisz zmiany**.
+5. W jednym z rekordów sprzedaży wpisz tekst w polu **komentarz** , a następnie kliknij przycisk **Zapisz zmiany**.
 
-6. Zamknij aplikację, a następnie ponownie uruchom aplikację w programie Visual Studio.
+6. Zamknij aplikację, a następnie ponownie uruchom aplikację z poziomu programu Visual Studio.
 
-7. Przejdź do sprzedaży rekordu, który został zmodyfikowany i sprawdź, czy zmiana będzie nadal występować po zamknięciu i ponownym otwarciu aplikacji.
+7. Przejdź do rekordu sprzedaży, który został zmieniony, i sprawdź, czy zmiana jest zachowywana po zamknięciu i ponownym otwarciu aplikacji.
 
 8. Zamknij aplikację.
 
 ## <a name="next-steps"></a>Następne kroki
 
-Po ukończeniu tego przewodnika, należy wykonać następujące zadania:
+Po zakończeniu tego instruktażu można wykonać następujące powiązane zadania:
 
-- Dowiedz się, jak używać **źródeł danych** okna w programie Visual Studio, aby powiązać WPF formanty do innych typów źródeł danych. Aby uzyskać więcej informacji, zobacz [WPF powiązać formanty do zestawu danych](../data-tools/bind-wpf-controls-to-a-dataset.md).
+- Dowiedz się, jak za pomocą okna **źródła danych** w programie Visual Studio POWIĄZAĆ formanty WPF z innymi typami źródeł danych. Aby uzyskać więcej informacji, zobacz [Powiązywanie formantów WPF z zestawem danych](../data-tools/bind-wpf-controls-to-a-dataset.md).
 
-- Dowiedz się, jak używać **źródeł danych** okna w programie Visual Studio, aby wyświetlić powiązane dane (czyli w relacji nadrzędny podrzędny) w formantach WPF. Aby uzyskać więcej informacji, zobacz [instruktażu: Wyświetlanie powiązanych danych w aplikacji WPF](../data-tools/display-related-data-in-wpf-applications.md).
+- Dowiedz się, jak używać okna **źródła danych** w programie Visual Studio, aby wyświetlić powiązane dane (czyli dane w relacji nadrzędny-podrzędny) w kontrolkach WPF. Aby uzyskać więcej informacji, zobacz [Przewodnik: wyświetlanie powiązanych danych w aplikacji WPF](../data-tools/display-related-data-in-wpf-applications.md).
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Wiązanie kontrolek WPF z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [Powiązywanie kontrolek WPF z zestawem danych](../data-tools/bind-wpf-controls-to-a-dataset.md)
-- [Omówienie usługi WCF (.NET Framework)](/dotnet/framework/data/wcf/wcf-data-services-overview)
-- [Omówienie programu Entity Framework (.NET Framework)](/dotnet/framework/data/adonet/ef/overview)
-- [Przegląd (.NET Framework) powiązania danych](/dotnet/framework/wpf/data/data-binding-overview)
+- [Omówienie WCF (.NET Framework)](/dotnet/framework/data/wcf/wcf-data-services-overview)
+- [Przegląd Entity Framework (.NET Framework)](/dotnet/framework/data/adonet/ef/overview)
+- [Przegląd powiązań danych (.NET Framework)](/dotnet/framework/wpf/data/data-binding-overview)

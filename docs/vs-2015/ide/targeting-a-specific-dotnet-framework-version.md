@@ -1,5 +1,5 @@
 ---
-title: Przeznaczone dla określonej wersji platformy .NET | Dokumentacja firmy Microsoft
+title: Kierowanie do określonej wersji .NET Framework | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -11,39 +11,33 @@ helpviewer_keywords:
 - projects [Visual Studio], multi-targeting
 ms.assetid: 91e77ad4-4da3-419d-85fb-9036f0e5c330
 caps.latest.revision: 29
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a11658e8cfe96da9c56b7cc1a63839510ed3c829
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 5d3094e55cf791b60e4a2c163cdd7586ada467c2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679152"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72646780"
 ---
 # <a name="targeting-a-specific-net-framework-version"></a>Tworzenie zawartości dla określonej wersji programu .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W programie Visual Studio można określić wersji lub profilu .NET Framework, dla której projekt docelowy. Dla aplikacji, aby uruchomić na innym komputerze, na wersję, która celów aplikacji musi być zgodny z wersją Framework, który jest zainstalowany na komputerze.  
-  
- Ta sekcja zawiera tematy, które opisują sposób pod kątem określonych wersji [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] w swoich projektach.  
-  
-## <a name="in-this-section"></a>W tej sekcji  
- [Wielowersyjność kodu w programie Visual Studio ― przegląd](../ide/visual-studio-multi-targeting-overview.md)  
- Zawiera omówienie funkcji wielowersyjności kodu w programie Visual Studio.  
-  
- [Instrukcje: Określanie wersji docelowej programu .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md)  
- Szczegółowo opisuje sposób określi się konkretny [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] dla języka Visual Basic, Visual C# i wizualizacjach F# projektu.  
-  
-## <a name="related-sections"></a>Sekcje pokrewne  
- [.NET framework Wielowersyjność kodu dla projektów sieci Web platformy ASP.NET](https://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)  
- Opis sposobu korzystania z tej wersji programu Visual Studio do tworzenia aplikacji sieci Web, uruchamianych w ramach wcześniejszych wersji programu .NET Framework.  
-  
- [Strona aplikacji, Projektant projektu (C#)](../ide/reference/application-page-project-designer-csharp.md)  
- W tym artykule opisano **platformę docelową** formantu w Projektancie projektu dla [!INCLUDE[csprcs](../includes/csprcs-md.md)] projektów.  
-  
- [Strona aplikacji, Projektant projektu (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)  
- W tym artykule opisano **platformę docelową** formantu w Projektancie projektu dla [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] projektów.  
-  
- [Instrukcje: modyfikowanie platformy docelowej i zestawu narzędzi platformy](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)  
- W tym artykule opisano, jak zmienić ustawienia dla projektów Visual C++ pod kątem różnych wersji programu .NET Framework i używać różnych zestawów narzędzi platformy.
+W programie Visual Studio można określić wersję lub profil .NET Framework, do których projekt ma być przeznaczony. Aby aplikacja była uruchamiana na innym komputerze, wersja platformy, która jest przeznaczona dla aplikacji, musi być zgodna z wersją platformy zainstalowaną na komputerze.
+
+ Ta sekcja zawiera tematy opisujące sposób określania konkretnych wersji [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] w projektach.
+
+## <a name="in-this-section"></a>W tej sekcji
+ Omówienie wieloskładnikowego [programu Visual Studio](../ide/visual-studio-multi-targeting-overview.md) Zawiera omówienie funkcji wielowartościowych w programie Visual Studio.
+
+ [Instrukcje: docelowa wersja .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md) Szczegóły dotyczące określania określonego [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] dla projektu Visual Basic, wizualizacji C# lub wizualizacji F# .
+
+## <a name="related-sections"></a>Sekcje pokrewne
+ [.NET Framework wiele elementów docelowych dla projektów sieci Web ASP.NET](https://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76) Wyjaśnia, jak używać tej wersji programu Visual Studio do tworzenia aplikacji sieci Web, które są uruchamiane we wcześniejszych wersjach .NET Framework.
+
+ [Strona aplikacji, Projektant projektu (C#)](../ide/reference/application-page-project-designer-csharp.md) opisuje formant **docelowej platformy** w projektancie projektu dla projektów [!INCLUDE[csprcs](../includes/csprcs-md.md)].
+
+ [Strona aplikacji, Projektant projektu (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md) Opisuje kontrolkę **platformy docelowej** w projektancie projektu dla projektów [!INCLUDE[vbprvb](../includes/vbprvb-md.md)].
+
+ [Instrukcje: modyfikowanie platformy docelowej i zestawu narzędzi platformy](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe) Opisuje, w jaki sposób zmienić ustawienia C++ dla projektów wizualnych na różne wersje .NET Framework i korzystać z różnych zestawów narzędzi platformy.

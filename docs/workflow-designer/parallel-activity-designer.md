@@ -1,49 +1,49 @@
 ---
-title: Projektant przepływu pracy — Parallel, Projektant działań
+title: Projektant przepływu pracy — Projektant działań równoległych
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Parallel.UI
 ms.assetid: 0306dc3b-075a-4091-ac3a-96486fbabed5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79e1e7e48f7ed7e8cd4084805dfae2018a886a82
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d0c1ea74c1cf64252bdae201e8cc3dd529adb7cb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002772"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650104"
 ---
 # <a name="parallel-activity-designer"></a>Parallel, projektant działań
 
-<xref:System.Activities.Statements.Parallel> Działanie jest wykonywane równocześnie zbiór działań podrzędnych.
+Działanie <xref:System.Activities.Statements.Parallel> wykonuje kolekcję działań podrzędnych jednocześnie.
 
 ## <a name="the-parallel-activity"></a>Działanie równoległe
 
-<xref:System.Activities.Statements.Parallel> Działania przechowuje działania podrzędne w <xref:System.Activities.Statements.Parallel.Branches%2A> kolekcji. Użyj <xref:System.Activities.Statements.Parallel> działania zamiast <xref:System.Activities.Statements.Sequence> działanie w przypadku niektórych działań podrzędnych może być bezczynny.
+Działanie <xref:System.Activities.Statements.Parallel> przechowuje swoje działania podrzędne w kolekcji <xref:System.Activities.Statements.Parallel.Branches%2A>. Użyj działania <xref:System.Activities.Statements.Parallel> zamiast działania <xref:System.Activities.Statements.Sequence>, jeśli niektóre działania podrzędne mogą przejść w stan bezczynności.
 
-<xref:System.Activities.Statements.Parallel> Działanie ma <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> właściwość, która zawiera użytkownika określone wyrażenie języka Visual Basic. <xref:System.Activities.Statements.Parallel> Działania daje w wyniku tej właściwości po zakończeniu każdej gałęzi. Jeśli daje w wyniku **True**, a następnie <xref:System.Activities.Statements.Parallel> działanie zakończy się bez wykonania innych działów. Jeśli <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> nie można rozpoznać **True**, a następnie <xref:System.Activities.Statements.Parallel> ukończeniu działania, gdy wszystkie działania podrzędne zostały ukończone.
+Działanie <xref:System.Activities.Statements.Parallel> ma właściwość <xref:System.Activities.Statements.Parallel.CompletionCondition%2A>, która zawiera wyrażenie Visual Basic określone przez użytkownika. Działanie <xref:System.Activities.Statements.Parallel> oblicza tę właściwość po zakończeniu każdej gałęzi. Jeśli wartość jest **równa true**, działanie <xref:System.Activities.Statements.Parallel> zostanie zakończone bez wykonywania innych gałęzi. Jeśli <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> nie zostanie obliczona na **wartość true**, działanie <xref:System.Activities.Statements.Parallel> zostanie zakończone po zakończeniu wszystkich działań podrzędnych.
 
-### <a name="using-the-parallel-activity-designer"></a>Za pomocą Parallel, Projektant działań
+### <a name="using-the-parallel-activity-designer"></a>Korzystanie z programu Parallel Activity Designer
 
-Dostęp do **równoległe** projektanta działań w **przepływ sterowania** kategorii **przybornika**.
+Dostęp do programu **Parallel** Activity Designer w kategorii **przepływ sterowania** w **przyborniku**.
 
-**Równoległe** projektanta działań mogą być przeciągnięte z **przybornika** i porzucić do powierzchni projektanta przepływów pracy wszędzie tam, gdzie Projektanci działań są zazwyczaj umieszczone, na przykład wewnątrz **Sekwencji** projektanta działań. Po upuszczając go do projektanta przepływów pracy, tworzy <xref:System.Activities.Statements.Parallel> działania, które domyślnie zawiera <xref:System.Activities.Activity.DisplayName%2A> z **równoległe**
+Projektanta działań **równoległych** można przeciągnąć z **przybornika** i porzucić na Projektant przepływu pracy powierzchnię, gdy projektanci aktywności są zwykle umieszczane na przykład w ramach projektanta działania **sekwencji** . Po porzucenie go do Projektant przepływu pracy tworzy działanie <xref:System.Activities.Statements.Parallel>, które domyślnie zawiera <xref:System.Activities.Activity.DisplayName%2A> **równoległe**
 
-Aby dodać działanie, aby <xref:System.Activities.Statements.Parallel.Branches%2A> kolekcji aktywności równoległej, przeciągnij niektóre projektanta działań z **przybornika** i upuść je na trójkąt wewnątrz **równoległe** Projektant działań. Trójkąty części bocznej działań zawartych w gałęzi. Można dodawać dodatkowe działania, powtarzając tej procedury. Działania można zmienić kolejności, przez przeciąganie i upuszczanie ich w ramach **równoległe** projektanta działań.
+Aby dodać działanie do kolekcji <xref:System.Activities.Statements.Parallel.Branches%2A> działania równoległego, przeciągnij inny Projektant działań z **przybornika** i upuść go na trójkącie wewnątrz projektanta działań **równoległych** . Trójkąty współdzielą działania zawarte w gałęziach. Dodatkowe działania można dodać przez powtórzenie tej procedury. Działania można zmienić uporządkowane przez przeciąganie i upuszczanie ich w obrębie projektanta działań **równoległych** .
 
-### <a name="parallel-activity-properties-in-the-workflow-designer"></a>Właściwości działania równoległe w Projektancie przepływu pracy
+### <a name="parallel-activity-properties-in-the-workflow-designer"></a>Właściwości działania równoległego w Projektant przepływu pracy
 
-Poniższa tabela pokazuje właściwości działań równoległych i w tym artykule opisano, jak są używane w projektancie.
+W poniższej tabeli przedstawiono właściwości działania równoległego i opisano sposób ich użycia w projektancie.
 
 |Nazwa właściwości|Wymagane|Użycie|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Określa przyjazną nazwę wyświetlaną projektanta działań w nagłówku. Wartość domyślna to **równoległe**. Wartość może być opcjonalnie edytować w **właściwości** siatki lub bezpośrednio w nagłówku projektanta działań.|
-|<xref:System.Activities.Statements.Parallel.Branches%2A>|Prawda|Zawiera kolekcję działania podrzędne do wykonania.|
-|<xref:System.Activities.Statements.Parallel.CompletionCondition%2A>|False|Oceniane, po zakończeniu gałęzi. Jeśli daje w wyniku **True**, następnie zaplanowane oczekujące gałęzie zostały anulowane. Jeśli ta właściwość nie jest ustawiona lub daje w wyniku **False**, działanie zakończy się po zakończeniu wszystkich swoich działań podrzędnych. Wartość domyślna to **null**.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Określa przyjazną nazwę wyświetlaną projektanta działań w nagłówku. Wartość domyślna to **Parallel**. Wartość można opcjonalnie edytować w siatce **Właściwości** lub bezpośrednio w nagłówku projektanta działań.|
+|<xref:System.Activities.Statements.Parallel.Branches%2A>|Oznacza|Zawiera kolekcję działań podrzędnych do wykonania.|
+|<xref:System.Activities.Statements.Parallel.CompletionCondition%2A>|False|Oceniane po zakończeniu gałęzi. Jeśli wartość jest **równa true**, zaplanowane oczekujące gałęzie są anulowane. Jeśli ta właściwość nie jest ustawiona lub ma **wartość false**, działanie kończy się po zakończeniu wszystkich działań podrzędnych. Wartość domyślna to **null**.|
 
 ## <a name="see-also"></a>Zobacz także
 

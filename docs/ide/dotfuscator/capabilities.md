@@ -3,7 +3,7 @@ title: Możliwości programu Dotfuscator
 ms.date: 03/28/2019
 ms.devlang: dotnet
 ms.topic: conceptual
-keywords: Narzędzia Dotfuscator, system Dotfuscator Community, zaciemniacza kodu Dotfuscator CE, narzędzia PreEmptive, firmy PreEmptive Solutions PreEmptive ochrony, ochrona, wersja community edition, zasłanianie, .NET, bezpłatne, Visual Studio 2017, Visual Studio 2019 r, Visual Studio
+keywords: Dotfuscator, Dotfuscator Community, Dotfuscator CE, z przetworami, rozwiązania do zastępujące, ochrona przed zami, ochrona, Edycja Community, zaciemnianie, .NET, bezpłatnie, Visual Studio 2017, Visual Studio 2019, Visual Studio
 helpviewer_keywords:
 - PreEmptive Protection Dotfuscator
 - Dotfuscator Community Edition
@@ -12,55 +12,55 @@ helpviewer_keywords:
 - Dotfuscator
 - obfuscation
 - protection
-description: Dowiedz się, że możliwości bezpłatną kopię programu Dotfuscator Community uwzględnione w programie Visual Studio.
+description: Poznaj możliwości bezpłatnej kopii społeczności Dotfuscator zawartej w programie Visual Studio.
 ms.assetid: 0ee89c58-c900-48fc-a6a2-65ace00e8bab
 author: Joe-Sewell-PreEmptive
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 87d093a540e3c6fae6a80761a5b945c572bd890d
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 88578e75906585e8649025522e5b9835b7d2f8c3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744781"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652445"
 ---
 # <a name="capabilities-of-dotfuscator"></a>Możliwości programu Dotfuscator
 
-Na tej stronie koncentruje się na możliwości programu Dotfuscator Community pewne odwołania do opcji zaawansowanych, które są dostępne za pośrednictwem [uaktualnień][upgrades].
+Ta strona koncentruje się na możliwościach społeczności Dotfuscator z niektórymi odwołaniami do zaawansowanych opcji dostępnych w ramach [uaktualnień][upgrades].
 
-System Dotfuscator Community to *postkompilacyjnego* systemu dla aplikacji .NET.
-Dzięki niemu programu Visual Studio użytkownicy mogą [zaciemniania zestawy] [ obfuscation] i wstawiać [środki obrony active] [ checks] do aplikacji — wszystkie bez konieczności dostęp do oryginalnego kodu źródłowego narzędzia Dotfuscator.
-System Dotfuscator chroni aplikację na wiele sposobów, Tworzenie strategii ochrony warstwowej.
+Dotfuscator Community to system *po kompilacji* dla aplikacji .NET.
+Dzięki niej użytkownicy programu Visual Studio mogą [zasłaniać zestawy][obfuscation] i wprowadzać [aktywne środki obronne][checks] do aplikacji bez konieczności Dotfuscator dostępu do oryginalnego kodu źródłowego.
+Dotfuscator chroni aplikację na wiele sposobów, tworząc strategię ochrony warstwowej.
 
-System Dotfuscator Community obsługuje szeroki zakres .NET zestawu i aplikacji typów, w tym [Windows platformy Uniwersalnej] [ uwp] i [Xamarin] [ xamarin].
+Społeczność Dotfuscator obsługuje szeroką gamę typów zestawów i aplikacji platformy .NET, w tym [platforma uniwersalna systemu Windows (platformy UWP)][uwp] i [Xamarin][xamarin].
 
 ## <a name="intellectual-property-protection"></a>Ochrona własności intelektualnej
 
-Projektowania aplikacji, zachowanie i implementacja są form własności intelektualnej (IP).
-Aplikacje utworzone dla platformy .NET są jednak zasadniczo Otwieranie książki; ułatwia odtwarzanie zestawy .NET, [ponieważ zawierają one metadanych wysokiego poziomu i kodu pośredniego][assemblies].
+Projektowanie, zachowanie i implementacja aplikacji są formą własności intelektualnej (IP).
+Jednak aplikacje utworzone dla platformy .NET są zasadniczo otwartymi książkami; można łatwo odtworzyć zestawy .NET, [ponieważ zawierają one metadane wysokiego poziomu i kod pośredni][assemblies].
 
-System Dotfuscator Community obejmuje podstawowe [zasłanianie .NET] [ obfuscation] w formie [zmiana nazwy][renaming].
-Polega na zaciemnianiu kodu przy użyciu narzędzia Dotfuscator zmniejsza ryzyko przed nieautoryzowanym dostępem do kodu źródłowego za pomocą odtwarzania ważne informacje dotyczące nazewnictwa już nie będą dostępne publicznie.
-Zasłanianie również pokazuje nakład pracy ze strony użytkownika, aby zabezpieczyć swój kod z badania - cenne krok w ustaleniu, że adres IP jest prawnie chronione jako tajemnice handlowe.
+Społeczność Dotfuscator zawiera podstawowe [zamieszanie platformy .NET][obfuscation] w formie [zmiany nazwy][renaming].
+Zamieszanie kodu za pomocą Dotfuscator zmniejsza ryzyko nieautoryzowanego dostępu do kodu źródłowego za pomocą odtwarzania, ponieważ ważne informacje o nazewnictwie nie będą już publiczne.
+W procesie zaciemniania przedstawiono również nakłady pracy, aby chronić swój kod przed badaniem — cenny krok w ustaleniu, że adres IP jest prawnie chroniony jako tajemnica handlowa.
 
-Wiele [funkcje ochrony integralności aplikacji](#application-integrity-protection) programu Dotfuscator Community dalsze utrudniają odtwarzanie.
-Na przykład nieuprawnione może próbować dołączyć debuger do uruchomionego wystąpienia aplikacji w taki sposób, aby zrozumieć logiki programu.
-System Dotfuscator może wprowadzać [zachowanie zapobieganie debugowania][debug] do aplikacji, aby to utrudniać.
+Wiele [funkcji ochrony integralności aplikacji](#application-integrity-protection) Dotfuscator Community w dalszej częściej utrudnia proces tworzenia.
+Na przykład niewłaściwy aktor może próbować dołączyć debuger do uruchomionego wystąpienia aplikacji w celu zrozumienia logiki programu.
+Dotfuscator może wstrzyknąć [zachowanie antydebugowania][debug] do aplikacji, aby utrudnić tę funkcję.
 
 ## <a name="application-integrity-protection"></a>Ochrona integralności aplikacji
 
-Oprócz ochrony kodu źródłowego, jest również ważne, aby upewnić się, że Twoja aplikacja jest używana zgodnie z założeniami.
-Osoby atakujące mogą próbować przejąć kontrolę nad aplikację w celu obejścia zasad licencjonowania (oznacza to, piractwa komputerowego), wykradać lub wykonywać operacje na danych poufnych, obsługiwane przez aplikację lub zmienić sposób działania aplikacji.
+Oprócz ochrony kodu źródłowego należy również upewnić się, że aplikacja jest używana zgodnie z założeniami.
+Osoby atakujące mogą próbować przejąć aplikację w celu obejścia zasad licencjonowania (czyli piractwa oprogramowania), kradzieży lub manipulowania danymi poufnymi obsługiwanymi przez aplikację lub zmiany zachowania aplikacji.
 
-System Dotfuscator Community może wprowadzać [kod sprawdzania poprawności aplikacji][checks] do zestawów, w tym [zapobieganie odporne][tamper], [zapobieganie debugowania][debug], i [zapobiegających odblokowanym dostępem][root] miary.
-Po wykryciu stanu aplikacji nieprawidłowy kod sprawdzania poprawności można [zapraszać kod aplikacji, aby rozwiązać tę sytuację w odpowiedni sposób][check-app].
-Lub, jeśli nie chcesz napisać kod, aby nieprawidłowe dojście korzysta z aplikacji, system Dotfuscator może również wprowadzać [odpowiedzi][check-action] zachowań, bez żadnych modyfikacji kodu źródłowego.
+Społeczność Dotfuscator może wstrzyknąć [kod sprawdzania poprawności aplikacji][checks] do zestawów, w tym środki ochrony przed [naruszeniem][tamper], [antydebugowane][debug]i [antyodblokowane urządzenia][root] .
+W przypadku wykrycia nieprawidłowego stanu aplikacji kod sprawdzania poprawności może [wywołać kod aplikacji, aby zająć się sytuacją w odpowiedni sposób][check-app].
+Lub, jeśli wolisz, aby nie pisać kodu do obsługi nieprawidłowych zastosowań aplikacji, Dotfuscator może również wstrzyknąć zachowania [odpowiedzi][check-action] , bez konieczności modyfikacji kodu źródłowego.
 
-Wiele z tych samych metod może również Wymuszanie [terminy wycofanych z eksploatacji][shelflife] oceny lub wersja próbna oprogramowania.
+Wiele z tych samych metod może być również używanych do wymuszania [terminów zakończenia okresu istnienia][shelflife] oprogramowania do oceny lub wersji próbnej.
 
 ## <a name="see-also"></a>Zobacz też
 
-[W tym temacie w pełnego przewodnika użytkownika system Dotfuscator Community][full]
+[Ten temat znajduje się w pełnym podręczniku użytkownika Dotfuscator Community][full]
 
 <!-- Copyright © 2019 PreEmptive Solutions, LLC -->
 

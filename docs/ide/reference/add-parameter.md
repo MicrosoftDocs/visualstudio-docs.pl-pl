@@ -2,31 +2,31 @@
 title: Dodawanie parametru do szybkiej akcji metody
 ms.date: 09/28/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4dbed81809cb3b69814fbf10dde7129b45396eaa
-ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
+ms.openlocfilehash: d1edc9d38ff4476a9fe76886676bfce1c80a61db
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72000196"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658802"
 ---
 # <a name="add-a-parameter-to-a-method-using-a-quick-action"></a>Dodawanie parametru do metody przy użyciu szybkiej akcji
 
-Dotyczy to generowanie kodu:
+Ta generacja kodu ma zastosowanie do:
 
 - C#
 
 - Visual Basic
 
-**Whatman** Umożliwia automatyczne dodanie parametru do metody na podstawie użycia.
+**Co:** Umożliwia automatyczne dodanie parametru do metody na podstawie użycia.
 
-**Czasie** Musisz dodać parametr do metody i chcieć prawidłowo zadeklarować ją automatycznie.
+**Kiedy:** Musisz dodać parametr do metody i chcieć prawidłowo zadeklarować ją automatycznie.
 
-**Zalet** Można dodać parametr do deklaracji metody przed wywołaniem, jednak ta funkcja automatycznie dodaje ją na podstawie wywołania metody.
+**Dlaczego:** Można dodać parametr do deklaracji metody przed wywołaniem, jednak ta funkcja automatycznie dodaje ją na podstawie wywołania metody.
 
 ## <a name="how-to-use-it"></a>Jak z niej korzystać
 
@@ -39,7 +39,7 @@ Dotyczy to generowanie kodu:
    ![Dodawanie parametru do szybkiej akcji metody w programie Visual Studio](media/add-parameter-to-method.png)
 
    > [!TIP]
-   > Możesz również uzyskać dostęp do menu szybkie akcje, umieszczając kursor w wierszu wywołania metody, a następnie naciskając klawisz **Ctrl**+ **.** (kropka) lub wybierz ikonę żarówki w marginesie pliku.
+   > Możesz również uzyskać dostęp do menu szybkie akcje, umieszczając kursor w wierszu wywołania metody, a następnie naciskając klawisz **Ctrl** + **.** (kropka) lub wybierz ikonę żarówki w marginesie pliku.
 
    Program Visual Studio dodaje nowy parametr do deklaracji metody.
 

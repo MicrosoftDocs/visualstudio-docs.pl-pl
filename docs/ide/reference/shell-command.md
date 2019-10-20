@@ -13,20 +13,20 @@ helpviewer_keywords:
 - Shell, launching exe files
 - Visual Studio, executables from
 ms.assetid: 737fda23-b852-45c4-a9fe-41cbce6ba70f
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb6bfc98d5ef6f7b3d3b6291ea55530325836d56
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: c19f436eddb3311e3bba70420dba6067ce2a8dca
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918956"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645272"
 ---
 # <a name="shell-command"></a>Shell — Polecenie
-Uruchamia programy wykonywalne z [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]poziomu programu.
+Uruchamia programy wykonywalne z poziomu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 
 ## <a name="syntax"></a>Składnia
 
@@ -37,18 +37,18 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
 ## <a name="arguments"></a>Argumenty
 `path`
 
-Wymagane. Ścieżka i nazwa pliku do wykonania lub dokumentu do otwarcia. Pełna ścieżka jest wymagana, jeśli określony plik nie znajduje się w jednym z katalogów w zmiennej środowiskowej PATH.
+Wymagany. Ścieżka i nazwa pliku do wykonania lub dokumentu do otwarcia. Pełna ścieżka jest wymagana, jeśli określony plik nie znajduje się w jednym z katalogów w zmiennej środowiskowej PATH.
 
 `args`
 
-Opcjonalna. Wszystkie argumenty do przekazania do wywołanego programu.
+Opcjonalny. Wszystkie argumenty do przekazania do wywołanego programu.
 
 ## <a name="switches"></a>Przełączniki
 /commandwindow [lub]/Command [lub]/c [lub]/cmd
 
-Opcjonalna. Określa, że dane wyjściowe dla pliku wykonywalnego są wyświetlane w oknie **wiersza polecenia** .
+Opcjonalny. Określa, że dane wyjściowe dla pliku wykonywalnego są wyświetlane w oknie **wiersza polecenia** .
 
-/dir:`folder` [lub]/d:`folder`
+/dir: `folder` [lub]/d: `folder`
 
 Opcjonalny. Określa katalog roboczy, który ma zostać ustawiony podczas uruchamiania programu.
 
@@ -59,16 +59,16 @@ Opcjonalny. Określa, że dane wyjściowe dla pliku wykonywalnego są wyświetla
 ## <a name="remarks"></a>Uwagi
 Przełączniki/dir/o/c należy określić bezpośrednio po `Tools.Shell`. Wszystkie elementy określone po nazwie pliku wykonywalnego są przekazane do niego jako argumenty wiersza polecenia.
 
-Wstępnie zdefiniowanego `Shell` aliasu można użyć `Tools.Shell`zamiast.
+Wstępnie zdefiniowanego aliasu `Shell` można użyć zamiast `Tools.Shell`.
 
 > [!CAUTION]
-> `path` Jeśli argument zawiera ścieżkę do katalogu, a także nazwę pliku, należy ująć całą nazwę ścieżki w cudzysłowie literału ("" "), tak jak w poniższym:
+> Jeśli argument `path` podaje ścieżkę katalogu oraz nazwę pliku, należy ująć wszystkie nazwy ścieżki w cudzysłowy literału ("" "), tak jak w następujących przypadkach:
 
 ```cmd
 Tools.Shell """C:\Program Files\SomeFile.exe"""
 ```
 
-Każdy zestaw trzech podwójnych cudzysłowów ("" ") jest interpretowany `Shell` przez procesor jako pojedynczy znak podwójnego cudzysłowu. W ten sposób powyższy przykład faktycznie przekazuje następujący ciąg ścieżki do `Shell` polecenia:
+Każdy zestaw trzech podwójnych cudzysłowów ("" ") jest interpretowany przez procesor `Shell` jako pojedynczy znak podwójnego cudzysłowu. W ten sposób powyższy przykład faktycznie przekazuje następujący ciąg ścieżki do polecenia `Shell`:
 
 ```cmd
 "C:\Program Files\SomeFile.exe"
@@ -78,7 +78,7 @@ Każdy zestaw trzech podwójnych cudzysłowów ("" ") jest interpretowany `Shell
 > Jeśli ciąg ścieżki nie zostanie ujęty w cudzysłowy literału ("" "), system Windows będzie używać tylko części ciągu do pierwszego odstępu. Na przykład jeśli powyższy ciąg ścieżki nie został prawidłowo ujęty w cudzysłów, system Windows szuka pliku o nazwie "program" znajdującego się w C:\ Katalog główny. Jeśli plik wykonywalny C:\Program.exe był rzeczywiście dostępny, nawet jeden instalowany przez nielegalne manipulowanie, system Windows podejmie próbę wykonania tego programu zamiast żądanego programu "c:\Program Files\SomeFile.exe".
 
 ## <a name="example"></a>Przykład
-Następujące polecenie używa xcopy. exe do skopiowania pliku `MyText.txt` `Text` do folderu. Dane wyjściowe z xcopy. exe są wyświetlane zarówno w **oknie poleceń** , jak i w oknie **danych wyjściowych** .
+Następujące polecenie używa xcopy. exe do skopiowania pliku `MyText.txt` do folderu `Text`. Dane wyjściowe z xcopy. exe są wyświetlane zarówno w **oknie poleceń** , jak i w oknie **danych wyjściowych** .
 
 ```cmd
 >Tools.Shell /o /c xcopy.exe c:\MyText.txt c:\Text\MyText.txt

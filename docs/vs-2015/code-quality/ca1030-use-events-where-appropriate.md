@@ -1,5 +1,5 @@
 ---
-title: 'CA1030: Używać zdarzeń, gdzie jest to odpowiednie | Dokumentacja firmy Microsoft'
+title: 'CA1030: Użyj zdarzeń, jeśli są odpowiednie | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,44 +12,44 @@ helpviewer_keywords:
 - UseEventsWhereAppropriate
 ms.assetid: ea051367-deeb-40f9-9b65-eb818f1e133a
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 9d00db6f9a00a273198cc50704d65ed6d2e4bb33
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7ab3a576b5014799e470260567a4942b5c3ef9de
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68157699"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661919"
 ---
-# <a name="ca1030-use-events-where-appropriate"></a>CA1030: Używaj zdarzeń, o ile to możliwe
+# <a name="ca1030-use-events-where-appropriate"></a>CA1030: Używaj zdarzeń wszędzie, gdzie jest to odpowiednie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|UseEventsWhereAppropriate|
 |CheckId|CA1030|
-|Kategoria|Microsoft.Design|
-|Zmiana kluczowa|Bez podziału|
+|Kategoria|Microsoft. Design|
+|Zmiana kluczowa|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
- Nazwy metody publiczne, protected lub private rozpoczyna się od jednego z następujących czynności:
+ Publiczna, chroniona lub prywatna nazwa metody rozpoczyna się od jednego z następujących:
 
-- Dodatek
+- Dodatki
 
 - RemoveOn
 
-- Ogień
+- Zapala
 
-- Zgłoś
+- Nosić
 
 ## <a name="rule-description"></a>Opis reguły
- Ta reguła wykrywa metody o nazwach, które normalnie mogą być używane dla zdarzeń. Zdarzenia wykonaj wzorzec projektowy obserwatora lub publikowania i subskrybowania; są one używane podczas zmiany stanu, w jeden obiekt musi zostać przekazany innych obiektów. Jeśli metoda jest wywoływana w odpowiedzi na jasno określoną zmianę stanu, metoda powinna być wywoływany przez program obsługi zdarzeń. Obiekty, które wywołują tę metodę, powinny wywoływać zdarzenia, a nie bezpośrednio metodę.
+ Ta reguła wykrywa metody o nazwach, które normalnie mogą być używane dla zdarzeń. Zdarzenia obserwują Wzorzec projektowy obserwatora lub publikowania/subskrybowania. są one używane, gdy zmiana stanu w jednym obiekcie musi być przekazywana do innych obiektów. Jeśli metoda zostanie wywołana w odpowiedzi na jasno zdefiniowaną zmianę stanu, metoda powinna być wywoływana przez procedurę obsługi zdarzeń. Obiekty, które wywołują tę metodę, powinny wywoływać zdarzenia, a nie bezpośrednio metodę.
 
- Typowe przykłady zdarzeń znajdują się w aplikacji interfejsu użytkownika, gdy akcja użytkownika, takie jak kliknięcie przycisku powoduje, że segment kodu do wykonania. [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] Modelu zdarzeń nie jest ograniczona do interfejsów użytkownika; powinno być używane wszędzie muszą komunikować się stan zmieni się na co najmniej jeden obiekt.
+ Niektóre typowe przykłady zdarzeń można znaleźć w aplikacjach interfejsu użytkownika, w których akcja użytkownika, taka jak kliknięcie przycisku powoduje, że segment kodu ma zostać wykonany. Model zdarzeń [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] nie jest ograniczony do interfejsów użytkownika; należy go używać wszędzie tam, gdzie trzeba przekazywać zmiany stanu do jednego lub większej liczby obiektów.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Jeśli metoda jest wywoływana, gdy zmieni się stan obiektu, należy rozważyć zmianę projektu do użycia [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] modelu zdarzeń.
+ Jeśli metoda jest wywoływana, gdy zmienia się stan obiektu, należy rozważyć zmianę projektu w celu użycia modelu zdarzeń [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Pomijaj ostrzeżeń dla tej reguły, jeśli metoda nie działa z [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] modelu zdarzeń.
+ Pomiń ostrzeżenie z tej reguły, jeśli metoda nie działa z modelem zdarzeń [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].

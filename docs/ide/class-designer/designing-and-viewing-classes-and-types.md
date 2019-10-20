@@ -1,5 +1,5 @@
 ---
-title: Używaj projektanta klas
+title: Użyj Projektant klas
 ms.date: 05/08/2018
 ms.topic: conceptual
 f1_keywords:
@@ -11,49 +11,49 @@ helpviewer_keywords:
 - classes [Visual Studio], viewing
 - class designer
 ms.assetid: 40ed2c9d-0ce0-4b95-ad78-5dec2065ccea
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee4910471693a2941ec9548773a2f50e443a639b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 31b28da2206d23c6112d7e7e154d7e907f63b163
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975568"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72631898"
 ---
-# <a name="design-and-view-classes-and-types-with-class-designer"></a>Projektowanie i wyświetlanie klas i typów za pomocą projektanta klas
+# <a name="design-and-view-classes-and-types-with-class-designer"></a>Projektowanie i wyświetlanie klas i typów z Projektant klas
 
-Projektowanie oraz ich wizualizowanie i Refaktoryzacja klas i innych typów w kodzie za pomocą **projektanta klas** w programie Visual Studio. Użyj diagramów klas do tworzenia i edytowania klas w swojej C#, Visual Basic lub C++ projektu. Diagramy klas umożliwia również do struktury projektu, lepiej zrozumieć lub przeorganizować swój kod.
+Zaprojektowanie, wizualizowanie i Refaktoryzacja klas oraz innych typów w kodzie przy użyciu **Projektant klas** w programie Visual Studio. Za pomocą diagramów klas można tworzyć i edytować klasy C#w projekcie, Visual Basic C++ lub. Można również użyć diagramów klas, aby zrozumieć swoją strukturę projektu lepiej lub zreorganizować swój kod.
 
 ## <a name="what-you-can-do-with-class-diagrams"></a>Co można zrobić za pomocą diagramów klas
 
-- **Projekt**: Edytowanie kodu projektu poprzez edycję diagramu klas. Dodawanie nowych elementów i usuń niepożądane. Zmiany są odzwierciedlane w kodzie.
+- **Projekt**: Edytuj kod projektu, edytując diagram klas. Dodaj nowe elementy i Usuń niepożądane. Zmiany zostaną odzwierciedlone w kodzie.
 
-- **Wizualizuj**: Zrozumienie struktury projektu, wyświetlając klasy w projekcie na diagramie. Dostosuj do diagramu, dzięki czemu można skupić się na potrzeby szczegółów projektu, które najbardziej interesujących Cię. Zapisz diagramu do późniejszego użycia w celu wykazania lub dokumentacji.
+- **Wizualizuj**: zrozumienie struktury projektu przez przeglądanie klas w projekcie na diagramie. Dostosuj diagram tak, aby można było skupić się na szczegółach projektu, które Cię interesują. Zapisz swój diagram do użycia w dalszej części demonstracyjnej lub dokumentacji.
 
-- **Refaktoryzuj**: Przesłaniaj metody i zmiana nazw identyfikatorów, Refaktoryzacja parametrów, implementowanie interfejsów i klas abstrakcyjnych.
+- **Refaktoryzacja**: zastępowanie metod, zmienianie nazw identyfikatorów, parametrów refaktoryzacji i implementowanie interfejsów i klas abstrakcyjnych.
 
 ## <a name="view-types-and-relationships"></a>Wyświetlanie typów i relacji
 
-Diagramy klas wyświetlenie szczegółów dotyczących typów, na przykład ich składowe i relacje między nimi. Wizualizacja te jednostki jest dynamiczny widok w kodzie. Oznacza to, że można edytować typy w Projektancie i następnie zobacz zmiany zostaną uwzględnione w kodzie źródłowym jednostki. Podobnie diagram klas jest synchronizowana z zmiany wprowadzone do plików kodu.
+Diagramy klas przedstawiają szczegóły typów, na przykład ich składowe i relacje między nimi. Wizualizacja tych jednostek jest widokiem dynamicznym w kodzie. Oznacza to, że można edytować typy w projektancie, a następnie zobaczyć modyfikacje odzwierciedlone w kodzie źródłowym jednostki. Podobnie Diagram klas jest zsynchronizowany ze zmianami wprowadzanymi w plikach kodu.
 
 > [!NOTE]
-> Jeśli projekt zawiera diagram klas i projekt odwołuje się do typu, który znajduje się w innym projekcie, diagram klas nie są wyświetlane odwołanie typu do czasu kompilowania projektu dla tego typu. Podobnie diagram nie są wyświetlane zmiany do kodu zewnętrznej jednostki dopóki można ponownie skompilować projekt dla danej jednostki.
+> Jeśli projekt zawiera Diagram klas, a projekt odwołuje się do typu, który znajduje się w innym projekcie, Diagram klas nie pokazuje przywoływanego typu do czasu skompilowania projektu dla tego typu. Podobnie diagram nie wyświetla zmian w kodzie jednostki zewnętrznej do momentu odbudowania projektu dla tej jednostki.
 
-## <a name="class-diagram-workflow"></a>Klasa diagram przepływu pracy
+## <a name="class-diagram-workflow"></a>Przepływ pracy diagramów klas
 
-Diagramy klas mogą pomóc zrozumieć struktura klas projektów. Te projekty został utworzony przez innych programistów lub po prostu potrzebujesz przypomnienia informacji na temat projektu, utworzonych przez siebie. Diagramy klas służy do dostosowywania, udostępnianie i prezentować informacje o projekcie z innymi osobami.
+Diagramy klas mogą pomóc zrozumieć strukturę klasy projektów. Te projekty mogły zostać utworzone przez innych deweloperów lub wystarczy odświeżacz dla utworzonego projektu. Za pomocą diagramów klas można dostosowywać, udostępniać i prezentować informacje o projekcie innym osobom.
 
-Pierwszym etapem prezentowanie informacji o projekcie jest utworzyć diagram klas, który wyświetla mają być wyświetlane. Aby uzyskać więcej informacji, zobacz [Dodaj diagram klas](how-to-add-class-diagrams-to-projects.md). Możesz utworzyć wiele diagramów klas do projektu, który może służyć do wyświetlania różnych widoku projektu, wybrany podzbiór typów projektów lub wybrany podzbiór elementów członkowskich typów.
+Pierwszym krokiem w przedprezentowaniu informacji o projekcie jest utworzenie diagramu klasy, który wyświetla elementy, które chcesz wyświetlić. Aby uzyskać więcej informacji, zobacz [Dodawanie diagramu klas](how-to-add-class-diagrams-to-projects.md). Można utworzyć wiele diagramów klas dla projektu, który może służyć do wyświetlania odrębnego widoku projektu, wybranego podzestawu typów projektu lub wybranego podzestawu elementów członkowskich typu.
 
-Oprócz definiowania, co pokazuje każdy diagram klas, możesz również zmienić sposób, w jaki informacje są prezentowane; Aby uzyskać więcej informacji, zobacz [jak: Dostosowywanie diagramów klas](how-to-customize-class-diagrams.md).
+Oprócz definiowania każdego diagramu klas, można również zmienić sposób przedstawiania informacji; Aby uzyskać więcej informacji, zobacz [How to: Dostosowywanie diagramów klas](how-to-customize-class-diagrams.md).
 
-Po mają dostosowaniu jeden lub więcej diagramów klas, możesz skopiować je do dokumentów programu Microsoft Office i drukowanie lub wyeksportować je jako pliki obrazów. Aby uzyskać więcej informacji, zobacz [jak: Kopiowanie elementów diagramu klas do dokumentu pakietu Microsoft Office](how-to-copy-class-diagram-elements-to-a-microsoft-office-document.md), [jak: Drukowanie diagramów klas](how-to-print-class-diagrams.md) i [jak: Eksportowanie diagramów klas jako obrazów](how-to-export-class-diagrams-as-images.md).
+Po dostosowaniu co najmniej jednego diagramu klas można skopiować je do Microsoft Office dokumentów i wydrukować je lub wyeksportować jako pliki obrazów. Aby uzyskać więcej informacji, zobacz [jak: kopiowanie elementów diagramu klas do dokumentu Microsoft Office](how-to-copy-class-diagram-elements-to-a-microsoft-office-document.md), [instrukcje: Drukowanie diagramów klas](how-to-print-class-diagrams.md) i [instrukcje: eksportowanie diagramów klas jako obrazów](how-to-export-class-diagrams-as-images.md).
 
 > [!NOTE]
-> Projektant klas nie śledzi lokalizację plików źródłowych, więc zmiany do struktury projektu, lub przenoszenia plików źródłowych w projekcie może spowodować projektanta klas, utratę informacji typu, szczególnie typ źródła typedef, klasy bazowe lub typu powiązania. Możesz otrzymać błąd, takich jak **Projektant klas nie może wyświetlić tego typu**. Jeśli to zrobisz, przeciągnij kod źródłowy zmodyfikowany lub przenoszone do diagramu klas, aby ją wyświetlić ją ponownie.
+> Projektant klas nie śledzi lokalizacji plików źródłowych, dlatego zmiana struktury projektu lub przeniesienie plików źródłowych w projekcie może spowodować, że Projektant klas utraci śledzenie tego typu, szczególnie typ źródłowy elementu typedef, klasy bazowe lub typy skojarzeń. Może zostać wyświetlony komunikat o błędzie, np. **Projektant klas nie może wyświetlić tego typu**. Jeśli to zrobisz, przeciągnij ponownie zmodyfikowany lub zlokalizowany kod źródłowy do diagramu klas, aby go wyświetlić.
 
 ## <a name="see-also"></a>Zobacz także
 

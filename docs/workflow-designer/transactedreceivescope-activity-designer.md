@@ -1,45 +1,45 @@
 ---
-title: Projektant przepływu pracy — TransactedReceiveScope, Projektant działań
+title: Projektant przepływu pracy — Projektant działań TransactedReceiveScope
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.ServiceModel.Activities.TransactedReceiveScope.UI
 ms.assetid: 7ca93aad-4e83-4d81-90f4-998ee114d9b6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a103b0db53ced447e16d269d747fa3355aeb00c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cf5a52a6a806d72632bf31a7c73e41677e9ddaf9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433997"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654289"
 ---
 # <a name="transactedreceivescope-activity-designer"></a>TransactedReceiveScope, projektant działań
 
-**TransactedReceiveScope** projektanta jest używany do tworzenia i konfigurowania <xref:System.ServiceModel.Activities.TransactedReceiveScope> działania.
+Projektant **TransactedReceiveScope** służy do tworzenia i konfigurowania działania <xref:System.ServiceModel.Activities.TransactedReceiveScope>.
 
 ## <a name="the-transactedreceivescope-activity"></a>Działanie TransactedReceiveScope
 
-<xref:System.ServiceModel.Activities.TransactedReceiveScope> Działanie umożliwia przepływu transakcji na serwerze transakcji utworzone przez przepływ pracy lub dyspozytora.
+Działanie <xref:System.ServiceModel.Activities.TransactedReceiveScope> umożliwia przepływ transakcji do transakcji serwera utworzonych przez przepływ pracy lub dyspozytora.
 
-### <a name="using-the-transactedreceivescope-activity-designer"></a>Za pomocą TransactedReceiveScope, Projektant działań
+### <a name="using-the-transactedreceivescope-activity-designer"></a>Korzystanie z projektanta działań TransactedReceiveScope
 
-Dostęp do **TransactedReceiveScope** projektanta działań w **komunikatów** kategorii **przybornika**. **TransactedReceiveScope** projektanta działań mogą być przeciągnięte z **przybornika** i porzucić do powierzchni projektanta przepływów pracy wszędzie tam, gdzie działań są zazwyczaj umieszczone. Spowoduje to utworzenie <xref:System.ServiceModel.Activities.TransactedReceiveScope> działanie przy użyciu domyślnego **DisplayName** transactedreceivescope. <xref:System.Activities.Activity.DisplayName%2A> Mogą być edytowane w nagłówku **TransactedReceiveScope** projektanta działań lub **DisplayName** pola siatki właściwości.
+Dostęp do projektanta działań **TransactedReceiveScope** w kategorii **Obsługa wiadomości** w **przyborniku**. Projektanta działań **TransactedReceiveScope** można przeciągnąć z **przybornika** i porzucić na Projektant przepływu pracy powierzchnię, wszędzie tam gdzie działania są zwykle umieszczane. Spowoduje to utworzenie działania <xref:System.ServiceModel.Activities.TransactedReceiveScope> z domyślną wartością **DisplayName** TransactedReceiveScope. @No__t_0 można edytować w nagłówku projektanta działań **TransactedReceiveScope** lub w polu **DisplayName** siatki właściwości.
 
-**TransactedReceiveScope** Projektant zawiera **żądania** i **treści** pola. Są one używane do konfigurowania <xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A> właściwość, która określa <xref:System.ServiceModel.Activities.Receive> działania i <xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A> właściwość, która określa niektóre inne <xref:System.Activities.Activity>. <xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A> Tworzy transakcji. Następnie transakcja ma zostać otoczenia w zakresie <xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A> tak, aby wszystkie działania w tym zakresie wykonuje wewnątrz tej transakcji.
+Projektant **TransactedReceiveScope** zawiera pola **żądanie** i **treść** . Są one używane do konfigurowania właściwości <xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A>, która określa działanie <xref:System.ServiceModel.Activities.Receive> i Właściwość <xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A>, która określa inne <xref:System.Activities.Activity>. @No__t_0 tworzy transakcję. Transakcja jest następnie prowadzona dla zakresu <xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A> tak, aby wszystkie działania w ramach tego zakresu były wykonywane w ramach tej transakcji.
 
 ### <a name="the-transactedreceivescope-properties"></a>Właściwości TransactedReceiveScope
 
-W poniższej tabeli przedstawiono <xref:System.ServiceModel.Activities.TransactedReceiveScope> właściwości i w tym artykule opisano, jak są używane w projektancie. Te <xref:System.Activities.Activity.DisplayName%2A> właściwości można edytować w siatce właściwości lub na powierzchni projektanta przepływów pracy, ale inne muszą być edytowane na powierzchni projektowej.
+W poniższej tabeli przedstawiono właściwości <xref:System.ServiceModel.Activities.TransactedReceiveScope> i opisano sposób ich używania w projektancie. Te właściwości <xref:System.Activities.Activity.DisplayName%2A> można edytować w siatce właściwości lub na powierzchni Projektant przepływu pracy, ale inne muszą być edytowane na powierzchni projektowej.
 
 |Nazwa właściwości|Wymagane|Użycie|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Opcjonalna nazwa przyjazna <xref:System.ServiceModel.Activities.TransactedReceiveScope> działania. Wartość domyślna to TransactedReceiveScope.<br /><br /> Mimo że <xref:System.Activities.Activity.DisplayName%2A> nazwa nie jest bezwzględnie konieczne, jest najlepszym rozwiązaniem, aby użyć nazwy wyświetlanej.|
-|<xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A>|Prawda|Spadnie <xref:System.ServiceModel.Activities.Receive> działanie do **żądania** bloku na powierzchni projektanta działań.|
-|<xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A>|False|Spadnie <xref:System.Activities.Activity> do **treści** bloku na powierzchni projektanta działań.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Opcjonalna przyjazna nazwa działania <xref:System.ServiceModel.Activities.TransactedReceiveScope>. Wartość domyślna to TransactedReceiveScope.<br /><br /> Chociaż nazwa <xref:System.Activities.Activity.DisplayName%2A> nie jest ściśle wymagana, najlepszym rozwiązaniem jest użycie nazwy wyświetlanej.|
+|<xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A>|Oznacza|Odrzuca działanie <xref:System.ServiceModel.Activities.Receive> do bloku **żądania** na powierzchni projektanta aktywności.|
+|<xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A>|False|Odrzuca <xref:System.Activities.Activity> w bloku **treści** na powierzchni projektanta aktywności.|
 
 ## <a name="see-also"></a>Zobacz także
 

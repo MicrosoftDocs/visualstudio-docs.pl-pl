@@ -7,35 +7,35 @@ helpviewer_keywords:
 - Data tab, Toolbox
 - data [Visual Studio], Toolbox
 ms.assetid: 2ae38b2a-29d2-461c-a67d-29dad274bf45
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9bee601f488c377c19eff8af060d854a7e7152e
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 34707c39a14650023c9caa701813de65999010ef
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747698"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72644613"
 ---
 # <a name="toolbox-data-tab"></a>Przybornik, karta dane
 
-Wyświetla obiekty danych możesz dodać do formularzy i składników. **Danych** karcie **przybornika** pojawia się podczas tworzenia projektu, który ma skojarzony projektanta. **Przybornika** pojawia się domyślnie w programie Visual Studio zintegrowanego środowiska programistycznego; Jeśli chcesz wyświetlić **przybornika**, wybierz opcję **przybornika** z **Widoku** menu.
+Wyświetla obiekty danych, które można dodać do formularzy i składników. Karta **dane** w **przyborniku** pojawia się podczas tworzenia projektu ze skojarzonym projektantem. **Przybornik** jest domyślnie wyświetlany w zintegrowanym środowisku programistycznym programu Visual Studio. Jeśli musisz wyświetlić **Przybornik**, wybierz pozycję **Przybornik** z menu **Widok** .
 
 > [!TIP]
-> Uruchamianie Kreatora konfiguracji źródła danych, automatycznie tworzy i konfiguruje większość elementów danych. Aby uzyskać więcej informacji, zobacz [dodasz nowe źródła danych](../../data-tools/add-new-data-sources.md).
+> Uruchomienie Kreatora konfiguracji źródła danych powoduje automatyczne utworzenie i skonfigurowanie większości elementów danych. Aby uzyskać więcej informacji, zobacz [Dodawanie nowych źródeł danych](../../data-tools/add-new-data-sources.md).
 
 ## <a name="ui-element-list"></a>Lista elementów interfejsu użytkownika
 
-Aby przejść bezpośrednio do strony dokumentacja platformy .NET dla składnika, naciśnij **F1** element **przybornika** lub element składnika w zasobniku projektanta.
+Aby przejść bezpośrednio do strony odniesienia platformy .NET dla składnika, naciśnij klawisz **F1** dla elementu w **przyborniku** lub elementu składnika w zasobniku projektanta.
 
 |Nazwa|Opis|
 |----------|-----------------|
-|<xref:System.Data.DataSet>|Dodaje wystąpienie typizowany lub nietypizowany zestaw danych do formularza lub składnika. Ten obiekt przeciągnij projektanta, wyświetla okno dialogowe, który umożliwia wybranie istniejącej klasy typizowanego zestawu danych lub określ, czy chcesz utworzyć nowy, pusty, nietypizowany zestaw danych. **Uwaga:**  Nie używaj <xref:System.Data.DataSet> obiekt **przybornika** do utworzenia nowego schematu typizowany zestaw danych i klasy. Aby uzyskać więcej informacji, zobacz [tworzenie i konfigurowanie zestawów danych](../../data-tools/create-and-configure-datasets-in-visual-studio.md).|
-|<xref:System.Windows.Forms.DataGridView>|Zapewnia wydajny i elastyczny sposób wyświetlania danych w formacie tabelarycznym.|
-|<xref:System.Windows.Forms.BindingSource>|Upraszcza proces powiązywanie kontrolek z bazowego źródła danych.|
-|<xref:System.Windows.Forms.BindingNavigator>|Reprezentuje nawigacji i manipulowania interfejsu użytkownika (UI) dla formantów w formularzu, które są powiązane z danymi.|
+|<xref:System.Data.DataSet>|Dodaje do formularza lub składnika wystąpienie zestawu danych typu lub z nieokreślonym typem. Po przeciągnięciu tego obiektu do projektanta wyświetla okno dialogowe, które umożliwia wybranie istniejącej klasy zestawu danych lub określenie, czy chcesz utworzyć nowy, pusty, nieokreślony zestaw danych. **Uwaga:**  Nie używasz obiektu <xref:System.Data.DataSet> w **przyborniku** , aby utworzyć nowy, typ schematu i klasę zestawu danych. Aby uzyskać więcej informacji, zobacz [Tworzenie i konfigurowanie zestawów danych](../../data-tools/create-and-configure-datasets-in-visual-studio.md).|
+|<xref:System.Windows.Forms.DataGridView>|Zapewnia zaawansowany i elastyczny sposób wyświetlania danych w formacie tabelarycznym.|
+|<xref:System.Windows.Forms.BindingSource>|Upraszcza proces kontroli powiązań z bazowym źródłem danych.|
+|<xref:System.Windows.Forms.BindingNavigator>|Reprezentuje interfejs użytkownika nawigacji i manipulowania dla kontrolek w formularzu, które są powiązane z danymi.|
 
 ## <a name="see-also"></a>Zobacz także
 

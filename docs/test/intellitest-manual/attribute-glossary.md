@@ -1,43 +1,43 @@
 ---
-title: Słownik atrybutów | Narzędzie Test Microsoft IntelliTest dla deweloperów
+title: Słownik atrybutów | Narzędzie testowe dla deweloperów Microsoft IntelliTest
 ms.date: 05/02/2017
 ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Attribute glossary
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: aada3c1053ed30521d8c7116c887061650a083dc
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+author: jillre
+ms.openlocfilehash: dce8d33f876ee34e18812cb744d7d3d6f53a5506
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825318"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653230"
 ---
 # <a name="attribute-glossary"></a>Słownik atrybutów
 
-## <a name="attributes-by-namespace"></a>Atrybuty w zależności od przestrzeni nazw
+## <a name="attributes-by-namespace"></a>Atrybuty według przestrzeni nazw
 
-* **Microsoft.Pex.Framework**
+* **Microsoft. Pex. Framework**
   * [PexAssumeNotNull](#pexassumenotnull)
   * [PexClass](#pexclass)
   * [PexGenericArguments](#pexgenericarguments)
   * [PexMethod](#pexmethod)
     * [PexExplorationAttributeBase](#pexexplorationattributebase)
 
-* **Microsoft.Pex.Framework.Settings**
+* **Microsoft. Pex. Framework. Settings**
   * [PexAssemblySettings](#pexassemblysettings)
 
-* **Microsoft.Pex.Framework.Instrumentation**
+* **Microsoft. Pex. Framework. Instrumentation**
   * [PexAssemblyUnderTest](#pexassemblyundertest)
   * [PexInstrumentAssembly](#pexinstrumentassemblyattribute)
 
-* **Microsoft.Pex.Framework.Using**
+* **Microsoft. Pex. Framework. using**
   * [PexUseType](#pexusetype)
 
-* **Microsoft.Pex.Framework.Validation**
+* **Microsoft. Pex. Framework. Validation**
   * [PexAllowedException](#pexallowedexception)
   * [PexAllowedExceptionFromAssembly](#pexallowedexceptionfromassembly)
   * [PexAllowedExceptionFromType](#pexallowedexceptionfromtype)
@@ -46,9 +46,9 @@ ms.locfileid: "67825318"
 <a name="pexassumenotnull"></a>
 ## <a name="pexassumenotnull"></a>PexAssumeNotNull
 
-Ten atrybut potwierdza, że zarządzanych wartość nie może być **null**. Mogą być dołączane do:
+Ten atrybut potwierdza, że wartość zarządzana nie może mieć **wartości null**. Można go dołączyć do:
 
-* **parametr** metody test sparametryzowany
+* **parametr** sparametryzowanej metody testowej
 
   ```csharp
   // assume foo is not null
@@ -56,7 +56,7 @@ Ten atrybut potwierdza, że zarządzanych wartość nie może być **null**. Mog
   public void SomeTest([PexAssumeNotNull]IFoo foo, ...) {}
   ```
 
-* **pola**
+* **pole**
 
   ```csharp
   public class Foo {
@@ -66,7 +66,7 @@ Ten atrybut potwierdza, że zarządzanych wartość nie może być **null**. Mog
   }
   ```
 
-* A **typu**
+* **Typ**
 
   ```csharp
   // never consider null for Foo types
@@ -74,24 +74,24 @@ Ten atrybut potwierdza, że zarządzanych wartość nie może być **null**. Mog
   public class Foo {}
   ```
 
-Również może być dołączane do zestawu testowego, warunki początkowe testu lub metodę testową; w tym przypadku pierwsze argumentów musi wskazywać, pole lub typ założeń dotyczyć. Gdy ten atrybut ma zastosowanie do typu, ma zastosowanie do wszystkich pól w przypadku tego typu formalnego.
+Można go również dołączyć do zestawu testowego, armatury testowej lub metody testowej; w tym przypadku pierwsze argumenty muszą wskazywać, do którego pola lub typu mają zastosowanie założenia. Gdy atrybut ma zastosowanie do typu, ma zastosowanie do wszystkich pól z tym typem formalnym.
 
 <a name="pexclass"></a>
 ## <a name="pexclass"></a>PexClass
 
-Ten atrybut oznacza klasę, która zawiera *eksploracji*. Jest to równoważne MSTest **TestClassAttribute** (lub NUnit **TestFixtureAttribute**). Ten atrybut jest opcjonalny.
+Ten atrybut oznacza klasę, która zawiera *eksploracje*. Jest odpowiednikiem MSTest **TestClassAttribute** (lub nunit **TestFixtureAttribute**). Ten atrybut jest opcjonalny.
 
-Klasy oznaczone atrybutem [PexClass](#pexclass) musi być *domyślne konstrukcyjną*:
+Klasy oznaczone atrybutem [PexClass](#pexclass) muszą mieć *wartość default konstrukcyjną*:
 
-* publicznie wyeksportowanego typu
+* Typ publiczny wyeksportowany
 * konstruktor domyślny
-* nie jest abstrakcyjna
+* nieabstrakcyjny
 
-Jeśli klasa nie spełnia tych wymagań, jest zgłaszany błąd i eksplorowania zakończy się niepowodzeniem.
+Jeśli Klasa nie spełnia tych wymagań, zgłaszany jest błąd i Eksploracja kończy się niepowodzeniem.
 
-Ponadto zdecydowanie zaleca się tych klas **częściowe** tak, aby program IntelliTest mogą generować nowe testy, które należą do klasy, ale w oddzielnym pliku. To podejście pozwala rozwiązać wiele problemów ze względu na [widoczność](input-generation.md#visibility) i jest to typowa technika w C#.
+Zdecydowanie zaleca się również uczynić te klasy **częściową** , aby IntelliTest mogły generować nowe testy, które są częścią klasy, ale w oddzielnym pliku. Takie podejście rozwiązuje wiele problemów spowodowanych [widocznością](input-generation.md#visibility) i jest typową techniką C#w programie.
 
-**Dodatkowy pakiet i kategorie**:
+**Dodatkowy zestaw i kategorie**:
 
 ```csharp
 [TestClass] // MSTest test fixture attribute
@@ -99,34 +99,34 @@ Ponadto zdecydowanie zaleca się tych klas **częściowe** tak, aby program Inte
 public partial class MyTests { ... }
 ```
 
-**Określanie typu testowanej**:
+**Określanie testowanego typu**:
 
 ```csharp
 [PexClass(typeof(Foo))] // this is a test for Foo
 public partial class FooTest { ... }
 ```
 
-Klasa może zawierać metody oznaczony za pomocą [PexMethod](#pexmethod). IntelliTest również rozumie [ustawiania i zatrzymywania metody](test-generation.md#setup-teardown).
+Klasa może zawierać metody z adnotacją [PexMethod](#pexmethod). IntelliTest rozumie również [metody konfiguracji i odrywania](test-generation.md#setup-teardown).
 
 <a name="pexgenericarguments"></a>
 ## <a name="pexgenericarguments"></a>PexGenericArguments
 
-Ten atrybut zapewnia krotki typu podczas tworzenia wystąpienia [ogólny sparametryzowanego testu jednostkowego](test-generation.md#generic-parameterized).
+Ten atrybut zawiera krotkę typu dla tworzenia wystąpienia [generycznego, sparametryzowanego testu jednostkowego](test-generation.md#generic-parameterized).
 
 <a name="pexmethod"></a>
 ## <a name="pexmethod"></a>PexMethod
 
-Ten atrybut oznacza metodę jako [sparametryzowanego testu jednostkowego](test-generation.md#parameterized-unit-testing).
-Metoda musi znajdować się w klasie oznaczonej [PexClass](#pexclass) atrybutu.
+Ten atrybut oznacza metodę jako [sparametryzowany test jednostkowy](test-generation.md#parameterized-unit-testing).
+Metoda musi znajdować się w klasie oznaczonej atrybutem [PexClass](#pexclass) .
 
-Program IntelliTest zostanie wygenerowany testów tradycyjnych, bez parametrów, które wymagają [sparametryzowanego testu jednostkowego](test-generation.md#parameterized-unit-testing) z innymi parametrami.
+IntelliTest wygeneruje tradycyjne, bezparametryczne testy, które wywołują [sparametryzowany test jednostkowy](test-generation.md#parameterized-unit-testing) z innymi parametrami.
 
-Sparametryzowanego testu jednostkowego:
+Sparametryzowany test jednostkowy:
 
 * musi być metodą wystąpienia
-* musi być [widoczne](input-generation.md#visibility) do klasy testowej, w którym wygenerowane testy są umieszczane na podstawie [kaskadowy model ustawień](settings-waterfall.md)
-* może potrwać dowolną liczbę parametrów
-* może być ogólna
+* musi być [widoczny](input-generation.md#visibility) dla klasy testowej, w której są umieszczane wygenerowane testy zgodnie z [ustawieniami kaskadowymi](settings-waterfall.md)
+* może przyjmować dowolną liczbę parametrów
+* może być rodzajowa
 
 **Przykład**
 
@@ -147,7 +147,7 @@ public partial class MyTests {
 <a name="pexassemblysettings"></a>
 ## <a name="pexassemblysettings"></a>PexAssemblySettings
 
-Ten atrybut można ustawić na poziomie zestawu, aby zastąpić wartości ustawienia domyślne dla wszystkich eksploracji.
+Ten atrybut można ustawić na poziomie zestawu, aby przesłonić domyślne wartości ustawień dla wszystkich eksploracji.
 
 ```csharp
 using Microsoft.Pex.Framework;
@@ -158,7 +158,7 @@ using Microsoft.Pex.Framework;
 <a name="pexassemblyundertest"></a>
 ## <a name="pexassemblyundertest"></a>PexAssemblyUnderTest
 
-Ten atrybut określa zestaw, który jest testowany przez bieżący projekt testowy.
+Ten atrybut określa zestaw, który jest testowany przez bieżący projekt testu.
 
 ```csharp
 [assembly: PexAssemblyUnderTest("MyAssembly")]
@@ -167,7 +167,7 @@ Ten atrybut określa zestaw, który jest testowany przez bieżący projekt testo
 <a name="pexinstrumentassemblyattribute"></a>
 ## <a name="pexinstrumentassemblyattribute"></a>PexInstrumentAssemblyAttribute
 
-Ten atrybut służy do określania zestawu instrumentacji.
+Ten atrybut służy do określania zestawu, który ma być Instrumentacją.
 
 **Przykład**
 
@@ -184,7 +184,7 @@ using Microsoft.Pex.Framework;
 <a name="pexusetype"></a>
 ## <a name="pexusetype"></a>PexUseType
 
-Ten atrybut informuje program IntelliTest danego typu może użyć do utworzenia wystąpienia typów podstawowych (abstrakcyjny) lub interfejsów.
+Ten atrybut informuje IntelliTest, że może użyć określonego typu do wystąpienia (Abstract) typów podstawowych lub interfejsów.
 
 **Przykład**
 
@@ -201,11 +201,11 @@ public void MyTest(object testParameter)
 <a name="pexallowedexception"></a>
 ## <a name="pexallowedexception"></a>PexAllowedException
 
-Jeśli ten atrybut jest dołączany do [PexMethod](#pexmethod) (lub [PexClass](#pexclass), zmienia się domyślnej logiki IntelliTest, która wskazuje, kiedy testów kończy się niepowodzeniem. Test nie zostanie uwzględniony jako nieudany — nawet wtedy, gdy w wyniku weryfikacji zgłasza wyjątek określonego wyjątku.
+Jeśli ten atrybut jest dołączony do [PexMethod](#pexmethod) (lub do [PexClass](#pexclass), zmienia domyślną logikę IntelliTest, która wskazuje, kiedy testy zakończą się niepowodzeniem. Test nie będzie uznawany za zakończony niepowodzeniem, nawet jeśli zgłasza określony wyjątek.
 
 **Przykład**
 
-Następującego testu określa, że Konstruktor **stosu** może zgłaszać **trwa wyjątku ArgumentOutOfRangeException**:
+Następujący test określa, że Konstruktor **stosu** może zgłosić **wyjątku ArgumentOutOfRangeException**:
 
 ```csharp
 class Stack {
@@ -220,7 +220,7 @@ class Stack {
 }
 ```
 
-Filtr jest dołączony do warunków początkowych w następujący sposób (go można też zdefiniować na poziomie zestawu lub testowania):
+Filtr jest dołączany do armatury w następujący sposób (można go również zdefiniować na poziomie zestawu lub testu):
 
 ```csharp
 [PexMethod]
@@ -245,6 +245,6 @@ class CtorTest(int capacity) {
 
 [Więcej informacji](xref:Microsoft.Pex.Framework.Validation.PexAllowedExceptionFromTypeUnderTestAttribute)
 
-## <a name="got-feedback"></a>Czy chcesz przesłać opinię?
+## <a name="got-feedback"></a>Masz opinię?
 
-Opublikuj swoje pomysły i funkcji żądania na [społeczności deweloperów](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
+Publikuj swoje pomysły i żądania funkcji w [społeczności deweloperów](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).

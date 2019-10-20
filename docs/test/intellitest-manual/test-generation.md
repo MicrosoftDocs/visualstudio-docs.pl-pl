@@ -4,17 +4,17 @@ ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Test generation
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: eb567327950604fac1895ead24b776aefe434548
-ms.sourcegitcommit: dae5dfd626277b58ebd7b21a75757f683f1eacc5
+author: jillre
+ms.openlocfilehash: 3dbcbed0c336ff931971e0a4a6a939e681c6948b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70739289"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653124"
 ---
 # <a name="test-generation"></a>Generowanie testu
 
@@ -55,7 +55,7 @@ Gdy IntelliTest wymaga konstruowania obiektów, wywołania do konstruktorów i m
 <a name="parameterized-unit-testing"></a>
 ## <a name="parameterized-unit-testing"></a>Sparametryzowane testy jednostkowe
 
-*Sparametryzowane testy jednostkowe* (Umieszczanie) to testy, które pobierają parametry. W przeciwieństwie do tradycyjnych testów jednostkowych, które są zazwyczaj metodami zamkniętymi, umieszcza każdy zestaw parametrów. Czy jest to proste? Tak — w tym miejscu IntelliTest podejmie próbę [wygenerowania zestawu danych wejściowych (minimalny)](input-generation.md) , który w [pełni pokrywa](input-generation.md#dynamic-code-coverage) kod osiągalny z testu.
+*Sparametryzowane testy jednostkowe* (Put) to testy, które pobierają parametry. W przeciwieństwie do tradycyjnych testów jednostkowych, które są zazwyczaj metodami zamkniętymi, umieszcza każdy zestaw parametrów. Czy jest to proste? Tak — w tym miejscu IntelliTest podejmie próbę [wygenerowania zestawu danych wejściowych (minimalny)](input-generation.md) , który w [pełni pokrywa](input-generation.md#dynamic-code-coverage) kod osiągalny z testu.
 
 Umieszczanie są zdefiniowane przy użyciu atrybutu niestandardowego [PexMethod](attribute-glossary.md#pexmethod) w podobny sposób do MSTest (lub nunit, xUnit). Umieszczanie to metody wystąpień logicznie pogrupowane w klasach oznaczonych za pomocą [PexClass](attribute-glossary.md#pexclass). W poniższym przykładzie pokazano proste umieszczenie przechowywane w klasie **MyPexTest** :
 

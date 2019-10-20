@@ -1,5 +1,5 @@
 ---
-title: Relacje w zestawach danych | Dokumentacja firmy Microsoft
+title: Relacje w zestawach danych | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -18,96 +18,96 @@ helpviewer_keywords:
 - relationships, datasets
 ms.assetid: cfe274f0-71fe-40f6-994e-7c7f6273c9ba
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7f6aba4076f7532d5eab5d47515b734c4c312b99
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: eb13ad7db9a4f13ce9bf983ce6327045f885f4d8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65692530"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652883"
 ---
 # <a name="relationships-in-datasets"></a>Relacje w zestawach danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Zestawy danych, które zawierają dane powiązane tabele użyj <xref:System.Data.DataRelation> obiekty do reprezentowania relacji nadrzędny/podrzędny między tabelami i zwrócić powiązanych rekordów od siebie nawzajem. Dodawanie powiązanych tabel do zestawów danych przy użyciu **Kreatora konfiguracji źródła danych**, lub **Projektanta obiektów Dataset**, tworzy i konfiguruje <xref:System.Data.DataRelation> obiekt dla Ciebie.  
-  
- <xref:System.Data.DataRelation> Obiektu wykonuje dwie funkcje:  
-  
-- Może sprawić, że dostępne rekordy związane z rekordu, którą pracujesz. Zawiera rekordy podrzędne, jeśli rekord nadrzędny (<xref:System.Data.DataRow.GetChildRows%2A>) i rekord nadrzędny, jeśli pracujesz z podrzędnego rekordu (<xref:System.Data.DataRow.GetParentRow%2A>).  
-  
-- Jak również wymuszać ograniczenia integralności referencyjnej, takie jak usuwanie powiązane rekordy podrzędne, po usunięciu rekordu nadrzędnego.  
-  
-  Należy zrozumieć różnicę między true dołączania i funkcja <xref:System.Data.DataRelation> obiektu. Wartość true, sprzężenia rekordy są pobierane z nadrzędną i podrzędną i umieszczane w jednej, prostego zestawu rekordów. Kiedy używasz <xref:System.Data.DataRelation> obiektu nie nowy zestaw rekordów jest tworzony. Zamiast tego należy DataRelation śledzi relacje między tabelami i elementy nadrzędne i podrzędne rekordy w synchronizacji.  
-  
-## <a name="datarelation-objects-and-constraints"></a>DataRelation — obiekty i ograniczenia  
- Element <xref:System.Data.DataRelation> obiektu umożliwia również tworzenie i wymuszanie następujące ograniczenia:  
-  
-- Ograniczenia unique, co gwarantuje, że kolumna w tabeli nie zawiera duplikatów.  
-  
-- Ograniczenie klucza obcego, która może służyć do zachowania więzów integralności między tabelą nadrzędną i podrzędną w zestawie danych.  
-  
-  Ograniczenia, które są określone w <xref:System.Data.DataRelation> obiektu są implementowane przez automatyczne tworzenie odpowiednich obiektów lub ustawienie właściwości. Jeśli tworzysz ograniczenie klucza obcego przy użyciu <xref:System.Data.DataRelation> object, wystąpień <xref:System.Data.ForeignKeyConstraint> klasy są dodawane do <xref:System.Data.DataRelation> obiektu <xref:System.Data.DataRelation.ChildKeyConstraint%2A> właściwości.  
-  
-  Zaimplementowano ograniczenia unique albo po prostu ustawiając <xref:System.Data.DataColumn.Unique%2A> właściwości kolumny danych `true` lub dodając wystąpienie <xref:System.Data.UniqueConstraint> klasy <xref:System.Data.DataRelation> obiektu <xref:System.Data.DataRelation.ParentKeyConstraint%2A> właściwości. Aby uzyskać informacji na temat wstrzymywania ograniczenia w zestawie danych, zobacz [wyłączanie ograniczeń podczas zapełniania zestawu danych](../data-tools/turn-off-constraints-while-filling-a-dataset.md).  
-  
-### <a name="referential-integrity-rules"></a>Zasady integralności referencyjnej  
- W ramach ograniczeń klucza obcego można określić reguły więzów integralności, które są stosowane w trzech miejscach:  
-  
-- Gdy rekord nadrzędny jest aktualizowany  
-  
-- Gdy rekord nadrzędny jest usunięty  
-  
-- Po zmianie jest zaakceptowane lub odrzucone  
-  
-  Reguły, które można wprowadzić są określone w <xref:System.Data.Rule> wyliczenie i są wymienione w poniższej tabeli.  
-  
-|Zasada ograniczenia PRIMARY key obcych|Akcja|  
-|----------------------------------|------------|  
-|<xref:System.Data.Rule>|Zmiana (update lub delete), wprowadzone do nadrzędnego rekordu jest również w powiązanych rekordach w tabeli podrzędnej.|  
-|<xref:System.Data.Rule>|Rekordy podrzędne nie są usuwane, ale ustawiono klucza obcego w rekordy podrzędne <xref:System.DBNull>. To ustawienie, rekordy podrzędne może pozostać "porzucone" — oznacza to, że ich nie mają relacji z rekordów nadrzędnych. **Uwaga:**  Przy użyciu tej reguły może spowodować nieprawidłowe dane w tabeli podrzędnej.|  
-|<xref:System.Data.Rule>|Klucza obcego w powiązanych rekordach podrzędnych jest ustawiona na wartość domyślną (jak ustalono przez wartość z kolumny <xref:System.Data.DataColumn.DefaultValue%2A> właściwości).|  
-|<xref:System.Data.Rule>|Nie zmian do powiązane rekordy podrzędne. To ustawienie, rekordy podrzędne mogą zawierać odwołania do rekordów nieprawidłowy element nadrzędny.|  
-  
- Aby uzyskać więcej informacji na temat aktualizacji w tabelach zestawu danych, zobacz [zapisać dane w bazie danych](../data-tools/save-data-back-to-the-database.md).  
-  
-### <a name="constraint-only-relations"></a>Tylko ograniczenie relacji  
- Po utworzeniu <xref:System.Data.DataRelation> obiektu, masz możliwość określenia, czy relacja umożliwia tylko wymuszać ograniczenia — oznacza to, go nie również posłuży do uzyskiwania dostępu do rekordów pokrewnych. Ta opcja umożliwia generowanie zestawu danych jest nieco bardziej efektywne i zawiera metody mniej niż jeden możliwości związane z rekordów. Jednak nie można uzyskać dostęp do powiązanych rekordów. Na przykład relacji tylko do ograniczenia uniemożliwia usunięcie rekordu nadrzędnego, który wciąż ma rekordy podrzędne i nie masz dostępu do rekordów podrzędnych przez nadrzędne.  
-  
-## <a name="manually-creating-a-data-relation-in-the-dataset-designer"></a>Ręczne tworzenie relacji danych w Projektancie obiektów Dataset  
- Podczas tworzenia tabel danych za pomocą narzędzi do projektowania danych w programie Visual Studio, relacje zostaną utworzone automatycznie, jeśli można gromadzić dane ze źródła danych. Jeśli ręcznie dodasz tabel danych z **DataSet** karcie **przybornika**, może być konieczne ręczne tworzenie relacji. Aby uzyskać informacje na temat tworzenia <xref:System.Data.DataRelation> obiektów programowo, zobacz [Dodawanie elementów DataRelation](https://msdn.microsoft.com/library/a4a564fb-c1c4-4135-b6c2-b030e51195e4).  
-  
- Relacje między tabelami danych są wyświetlane jako wiersze w **Projektanta obiektów Dataset**, za pomocą klucza i nieskończoności glif przedstawiające jeden do wielu aspektów relacji. Domyślnie nazwa relationshipCommentEnd Id = "1c8c78e19b7fa441" nie jest wyświetlany na powierzchni projektowej.  
-  
- [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
-  
-#### <a name="to-create-a-relationship-between-two-data-tables"></a>Można utworzyć relacji między tabelami danych dwa  
-  
-1. Otwórz swój zestaw danych w **Projektanta obiektów Dataset**. Aby uzyskać więcej informacji, zobacz [jak: Otwórz zestaw danych w Projektancie obiektów Dataset](https://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
-  
-2. Przeciągnij **relacji** obiektu z **DataSet** przybornika do tabeli podrzędnej danych w relacji.  
-  
-     **Relacji** zostanie otwarte okno dialogowe wypełnianie **tabeli podrzędnej** pola z tabeli, która została przeciągnięta **relacji** obiektu na.  
-  
-3. Wybieranie tabeli nadrzędnej z **tabeli nadrzędnej** pole. Tabela nadrzędna zawiera rekordy na stronie "jeden" w relacji jeden do wielu.  
-  
-4. Sprawdź, czy tabela podrzędna poprawne są wyświetlane w **tabeli podrzędnej** pole. Tabela podrzędna zawiera rekordy na stronie "many" w relacji jeden do wielu.  
-  
-5. Wpisz nazwę dla relacji w **nazwa** pole lub pozostaw nazwę domyślną, w oparciu o wybrane tabele. Jest to nazwa rzeczywistych <xref:System.Data.DataRelation> obiektu w kodzie.  
-  
-6. Wybierz kolumny, które sprzężenia w **kolumn klucza** i **kolumny klucza obcego** listy.  
-  
-7. Wybierz, czy chcesz utworzyć relację i/lub ograniczenia. Aby uzyskać informacje, zobacz [wprowadzenie do obiektów DataRelation](https://msdn.microsoft.com/library/89d8a881-8265-41f2-a88b-61311ab06192).  
-  
-8. Zaznacz lub wyczyść **zagnieżdżone relacji** pole. Wybranie tej opcji ustawia <xref:System.Data.DataRelation.Nested%2A> właściwości `true`, i sprawia, że element podrzędny wiersze w relacji do być zagnieżdżony w kolumnie nadrzędnej, gdy te wiersze są zapisywane w postaci danych XML lub synchronizowane z <xref:System.Xml.XmlDataDocument>. Aby uzyskać więcej informacji, zobacz [zagnieżdżanie elementów DataRelation](https://msdn.microsoft.com/library/9530f9c9-dd98-4b93-8cdb-40d7f1e8d0ab).  
-  
-9. Ustawianie reguł, które mają być egzekwowane, gdy wprowadzasz zmiany do rekordów w tych tabelach. Aby uzyskać więcej informacji, zobacz <xref:System.Data.Rule>.  
-  
-10. Kliknij przycisk **OK** do utworzenia relacji. Zostanie wyświetlony wiersz relacji w Projektancie między dwiema tabelami.  
-  
-#### <a name="to-display-a-relation-name-in-the-dataset-designer"></a>Aby wyświetlić nazwy relacji w Projektancie obiektów Dataset  
-  
-1. Otwórz swój zestaw danych w **Projektanta obiektów Dataset**. Aby uzyskać więcej informacji, zobacz [jak: Otwórz zestaw danych w Projektancie obiektów Dataset](https://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
-  
-2. Z **danych** menu, wybierz opcję **Pokaż etykiety relacji** polecenie, aby wyświetlić nazwę relacji. Usuń zaznaczenie tego polecenia, aby ukryć nazwę relacji.
+Zestawy danych, które zawierają tabele powiązane z danymi, używają <xref:System.Data.DataRelation> obiektów do reprezentowania relacji nadrzędny/podrzędny między tabelami i zwracania powiązanych rekordów ze sobą. Dodawanie powiązanych tabel do zestawów danych za pomocą **Kreatora konfiguracji źródła danych**lub **Projektant obiektów DataSet**, tworzy i konfiguruje <xref:System.Data.DataRelation> obiektu.
+
+ Obiekt <xref:System.Data.DataRelation> wykonuje dwie funkcje:
+
+- Może udostępnić rekordy powiązane z rekordem, z którym pracujesz. Zawiera rekordy podrzędne, jeśli jesteś w rekordzie nadrzędnym (<xref:System.Data.DataRow.GetChildRows%2A>) i rekordem nadrzędnym, jeśli pracujesz z rekordem podrzędnym (<xref:System.Data.DataRow.GetParentRow%2A>).
+
+- Może wymusić ograniczenia integralności referencyjnej, na przykład usunięcie powiązanych rekordów podrzędnych po usunięciu rekordu nadrzędnego.
+
+  Ważne jest, aby zrozumieć różnicę między prawdziwym sprzężeniem a funkcją obiektu <xref:System.Data.DataRelation>. W przypadku prawdziwej sprzężenia rekordy są pobierane z tabeli nadrzędnej i podrzędnej i umieszczane w jednym, płaskim zestawie rekordów. Gdy używasz obiektu <xref:System.Data.DataRelation>, nowy zestaw rekordów nie zostanie utworzony. Zamiast tego relacja danych śledzi relację między tabelami i przechowuje rekordy nadrzędne i podrzędne w synchronizacji.
+
+## <a name="datarelation-objects-and-constraints"></a>Obiekty i ograniczenia DataRelation
+ Obiekt <xref:System.Data.DataRelation> jest również używany do tworzenia i wymuszania następujących ograniczeń:
+
+- Unikatowe ograniczenie, które gwarantuje, że kolumna w tabeli nie zawiera duplikatów.
+
+- Ograniczenie klucza obcego, które może służyć do utrzymania integralności referencyjnej między tabelą nadrzędną a podrzędną w zestawie danych.
+
+  Ograniczenia określone w obiekcie <xref:System.Data.DataRelation> są implementowane przez automatyczne tworzenie odpowiednich obiektów lub właściwości ustawień. W przypadku utworzenia ograniczenia FOREIGN KEY przy użyciu obiektu <xref:System.Data.DataRelation> wystąpienia klasy <xref:System.Data.ForeignKeyConstraint> są dodawane do właściwości <xref:System.Data.DataRelation.ChildKeyConstraint%2A> obiektu <xref:System.Data.DataRelation>.
+
+  Ograniczenie UNIQUE jest implementowane przez po prostu ustawienie właściwości <xref:System.Data.DataColumn.Unique%2A> kolumny danych na `true` lub przez dodanie wystąpienia klasy <xref:System.Data.UniqueConstraint> do właściwości <xref:System.Data.DataRelation.ParentKeyConstraint%2A> obiektu <xref:System.Data.DataRelation>. Aby uzyskać informacje na temat wstrzymywania ograniczeń w zestawie danych, zobacz Wyłączanie [ograniczeń podczas wypełniania zestawu danych](../data-tools/turn-off-constraints-while-filling-a-dataset.md).
+
+### <a name="referential-integrity-rules"></a>Reguły integralności referencyjnej
+ W ramach ograniczenia FOREIGN KEY można określić reguły integralności referencyjnej, które są stosowane w trzech punktach:
+
+- Gdy rekord nadrzędny zostanie zaktualizowany
+
+- Po usunięciu rekordu nadrzędnego
+
+- Po zaakceptowaniu lub odrzuceniu zmiany
+
+  Reguły, które można wprowadzić, są określone w wyliczeniu <xref:System.Data.Rule> i są wymienione w poniższej tabeli.
+
+|Reguła ograniczenia klucza obcego|Akcja|
+|----------------------------------|------------|
+|<xref:System.Data.Rule>|Zmiana (aktualizacja lub usunięcie) wprowadzona w rekordzie nadrzędnym jest również wykonywana w powiązanych rekordach w tabeli podrzędnej.|
+|<xref:System.Data.Rule>|Rekordy podrzędne nie są usuwane, ale klucz obcy w rekordach podrzędnych jest ustawiony na <xref:System.DBNull>. W przypadku tego ustawienia rekordy podrzędne można pozostawić jako "oddzielone" — nie mają relacji z rekordami nadrzędnymi. **Uwaga:**  Użycie tej reguły może spowodować nieprawidłowe dane w tabeli podrzędnej.|
+|<xref:System.Data.Rule>|Klucz obcy w powiązanych rekordach podrzędnych ma ustawioną wartość domyślną (ustaloną przez właściwość <xref:System.Data.DataColumn.DefaultValue%2A> kolumny).|
+|<xref:System.Data.Rule>|Nie wprowadzono zmian w powiązanych rekordach podrzędnych. To ustawienie powoduje, że rekordy podrzędne mogą zawierać odwołania do nieprawidłowych rekordów nadrzędnych.|
+
+ Aby uzyskać więcej informacji o aktualizacjach w tabelach zestawu danych, zobacz [Zapisywanie danych z powrotem do bazy danych](../data-tools/save-data-back-to-the-database.md).
+
+### <a name="constraint-only-relations"></a>Relacje tylko z ograniczeniami
+ Podczas tworzenia obiektu <xref:System.Data.DataRelation> można określić, że relacja ma być używana tylko w celu wymuszania ograniczeń — to znaczy, że nie będzie również służyć do uzyskiwania dostępu do powiązanych rekordów. Za pomocą tej opcji można wygenerować zestaw danych, który jest nieco bardziej wydajny i zawiera mniej metod niż jeden z funkcją powiązane rekordy. Nie będzie jednak możliwe uzyskanie dostępu do powiązanych rekordów. Na przykład relacja tylko do ograniczenia uniemożliwia usunięcie rekordu nadrzędnego, który nadal ma rekordy podrzędne i nie ma dostępu do rekordów podrzędnych za pośrednictwem elementu nadrzędnego.
+
+## <a name="manually-creating-a-data-relation-in-the-dataset-designer"></a>Ręczne tworzenie relacji danych w Projektant obiektów Dataset
+ Podczas tworzenia tabel danych przy użyciu narzędzi do projektowania danych w programie Visual Studio, relacje są tworzone automatycznie, jeśli informacje można zbierać ze źródła danych. W przypadku ręcznego dodawania tabel danych z karty **zestaw danych** **przybornika**może być konieczne ręczne utworzenie relacji. Aby uzyskać informacje na temat tworzenia obiektów <xref:System.Data.DataRelation> programowo, zobacz [Dodawanie relacji](https://msdn.microsoft.com/library/a4a564fb-c1c4-4135-b6c2-b030e51195e4)danych.
+
+ Relacje między tabelami danych są wyświetlane jako wiersze w **Projektant obiektów DataSet**, z glifem Key i Infinity, który przedstawia aspekt relacji jeden-do-wielu. Domyślnie nazwa relationshipCommentEnd ID = ' 1c8c78e19b7fa441 ' nie jest wyświetlana na powierzchni projektowej.
+
+ [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
+
+#### <a name="to-create-a-relationship-between-two-data-tables"></a>Aby utworzyć relację między dwiema tabelami danych
+
+1. Otwórz zestaw danych w **Projektant obiektów DataSet**. Aby uzyskać więcej informacji, zobacz [jak: otwieranie zestawu danych w Projektant obiektów DataSet](https://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).
+
+2. Przeciągnij obiekt **relacji** z przybornika **zestawu danych** na podrzędną tabelę danych w relacji.
+
+     Zostanie otwarte okno dialogowe **relacja** , wypełniając pole **tabeli podrzędnej** tabelą, w której został przeciągnięty obiekt **relacji** .
+
+3. Wybierz tabelę nadrzędną w polu **tabeli nadrzędnej** . Tabela nadrzędna zawiera rekordy znajdujące się po stronie "jeden" relacji jeden-do-wielu.
+
+4. Sprawdź, czy w polu **tabeli podrzędnej** jest wyświetlana poprawna tabela podrzędna. Tabela podrzędna zawiera rekordy po stronie "wiele" relacji jeden-do-wielu.
+
+5. Wpisz nazwę relacji w polu **Nazwa** lub pozostaw nazwę domyślną w oparciu o wybrane tabele. Jest to nazwa rzeczywistego obiektu <xref:System.Data.DataRelation> w kodzie.
+
+6. Wybierz kolumny, które dołączają tabele do list kolumn **klucza** i **kluczy obcych** .
+
+7. Wybierz, czy chcesz utworzyć relację, ograniczenie, czy oba te elementy. Aby uzyskać więcej informacji, zobacz [wprowadzenie do obiektów DataRelations](https://msdn.microsoft.com/library/89d8a881-8265-41f2-a88b-61311ab06192).
+
+8. Zaznacz lub usuń zaznaczenie pola **zagnieżdżonej relacji** . Wybranie tej opcji ustawia właściwość <xref:System.Data.DataRelation.Nested%2A> na `true` i powoduje, że wiersze podrzędne relacji mają być zagnieżdżone w kolumnie nadrzędnej, gdy te wiersze są zapisywane jako dane XML lub synchronizowane z <xref:System.Xml.XmlDataDocument>. Aby uzyskać więcej informacji, zobacz [zagnieżdżanie relacji](https://msdn.microsoft.com/library/9530f9c9-dd98-4b93-8cdb-40d7f1e8d0ab)danych.
+
+9. Ustaw reguły, które mają być wymuszane w przypadku wprowadzania zmian w rekordach w tych tabelach. Aby uzyskać więcej informacji, zobacz <xref:System.Data.Rule>.
+
+10. Kliknij przycisk **OK** , aby utworzyć relację. Linia relacji jest wyświetlana w projektancie między dwiema tabelami.
+
+#### <a name="to-display-a-relation-name-in-the-dataset-designer"></a>Aby wyświetlić nazwę relacji w Projektant obiektów Dataset
+
+1. Otwórz zestaw danych w **Projektant obiektów DataSet**. Aby uzyskać więcej informacji, zobacz [jak: otwieranie zestawu danych w Projektant obiektów DataSet](https://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).
+
+2. Z menu **dane** wybierz polecenie **Pokaż etykiety relacji** , aby wyświetlić nazwę relacji. Wyczyść to polecenie, aby ukryć nazwę relacji.

@@ -1,23 +1,23 @@
 ---
-title: Projektant przepływu pracy — Projektanci działań przepływu sterowania
+title: Projektanci działań przepływu sterowania Projektant przepływu pracy
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: ba74af23-5398-4e62-bd90-c50612e3bfef
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a3bcbf5ee70b90a0606c7e4cb3d691d28298c2d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f1e7d7548eef3fd6ca6a21bb8c2fe5cb23e27df1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949873"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650616"
 ---
 # <a name="control-flow-activity-designers"></a>Projektanci działań przepływu sterowania
 
-Projektant przepływu pracy zawiera wiele działań dostarczane przez system, które można użyć podczas tworzenia przepływów pracy. Ta sekcja zawiera działania dostarczane przez system, używane do kontrolowania przepływu w przepływie pracy. Poniższe tematy opisują te działania i wytyczne dotyczące sposobu ich używania.
+Projektant przepływu pracy obejmuje wiele działań dostarczonych przez system, których można używać podczas konstruowania przepływów pracy. Ta sekcja zawiera działania dostarczone przez system służące do kontrolowania przepływu w ramach przepływu pracy. W poniższych tematach opisano te działania i przedstawiono wskazówki dotyczące ich używania.
 
 ## <a name="reference"></a>Tematy pomocy
 
@@ -45,7 +45,7 @@ Projektant przepływu pracy zawiera wiele działań dostarczane przez system, kt
 
 ## <a name="related-sections"></a>Sekcje pokrewne
 
-Dla innych typów Projektanci działań zobacz następujące tematy:
+W przypadku innych typów projektantów działań zapoznaj się z następującymi tematami:
 
  [Używanie projektantów działań](../workflow-designer/using-the-activity-designers.md)
 

@@ -1,35 +1,35 @@
 ---
-title: Mapy kodu są powolne
+title: Mapy kodu są wolne
 ms.date: 05/16/2018
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12ba03ab97da3295a93b54dfc012d10fc012fd30
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c8b3f889661cf0d1c775cd80dad61a92c3f5b60a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62423938"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654177"
 ---
-# <a name="improve-performance-for-code-maps"></a>Poprawianie wydajności dla map kodu
+# <a name="improve-performance-for-code-maps"></a>Poprawianie wydajności map kodu
 
-Podczas generowania mapy po raz pierwszy, program Visual Studio indeksuje wszystkie zależności, które znajdzie. Ten proces może zająć trochę czasu, szczególnie w przypadku dużych rozwiązań, ale zwiększa wydajność nowsze. Jeśli kod ulegnie zmianie, Visual Studio indeksuje ponownie tylko zaktualizowany kod. Aby zminimalizować czas potrzebny na mapie, aby zakończyć renderowania, należy wziąć pod uwagę poniższe sugestie:
+Po wygenerowaniu mapy po raz pierwszy, program Visual Studio indeksuje wszystkie zależności, które znajdzie. Ten proces może zająć trochę czasu, szczególnie w przypadku dużych rozwiązań, ale zwiększa wydajność. Jeśli kod ulegnie zmianie, program Visual Studio ponownie indeksuje tylko zaktualizowany kod. Aby zminimalizować czas potrzebny na zakończenie renderowania mapy, weź pod uwagę następujące sugestie:
 
-- Mapowanie zależności, które Cię interesują.
+- Mapuj tylko zależności, które Cię interesują.
 
-- Przed wygenerowaniem mapy dla całego rozwiązania Zmniejsz zakres rozwiązania.
+- Przed wygenerowaniem mapy dla całego rozwiązania, Zmniejsz zakres rozwiązania.
 
-- Wyłącz automatyczne kompilacji dla rozwiązania, wybierając **pominięcia kompilacji** na pasku narzędzi mapy kodu.
+- Wyłącz automatyczne Kompilowanie rozwiązania, wybierając pozycję **Pomiń kompilację** na pasku narzędzi mapy kodu.
 
-- Wyłącz opcję automatycznego dodawania elementów nadrzędnych, wybierając **obejmują elementy nadrzędne** na pasku narzędzi mapy kodu.
+- Wyłącz automatyczne dodawanie elementów nadrzędnych, wybierając pozycję **Dołącz** elementy nadrzędne na pasku narzędzi mapy kodu.
 
-   ![Przyciski pominięcia kompilacji i obejmują elementy nadrzędne](../modeling/media/codemapsfilterskipbuildicons.png)
+   ![Pomiń kompilację i Dołącz przyciski nadrzędne](../modeling/media/codemapsfilterskipbuildicons.png)
 
-- Edytuj plik mapy kodu bezpośrednio po to, aby usunąć węzły i łącza, które nie są potrzebne. Zmiana na mapie nie ma wpływu na odpowiedni kod. Zobacz [Dostosowanie map kodu przez edycję plików DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
+- Edytuj plik mapy kodu bezpośrednio, aby usunąć węzły i linki, które nie są potrzebne. Zmiana mapy nie ma wpływu na kod źródłowy. Aby dowiedzieć [się, jak dostosować mapy kodu, edytuj pliki DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
-Może upłynąć więcej czasu na tworzenie map lub dodanie elementów do mapy z **Eksploratora rozwiązań** gdy element projektu **Kopiuj do katalogu wyjściowego** właściwość jest ustawiona na **zawsze Kopiuj**. Aby zwiększyć wydajność, należy zmienić tę właściwość na **Kopiuj Jeśli nowszy** lub `PreserveNewest`. Zobacz [kompilacje przyrostowe](../msbuild/incremental-builds.md).
+Utworzenie map lub dodanie elementów do mapy z **Eksplorator rozwiązań** może zająć więcej czasu, gdy właściwość **Kopiuj do katalogu wyjściowego** elementu projektu jest ustawiona na wartość **Kopiuj zawsze**. Aby zwiększyć wydajność, należy zmienić tę właściwość na **Kopiuj, jeśli nowszy** lub `PreserveNewest`. Zobacz [Kompilacje przyrostowe](../msbuild/incremental-builds.md).
 
-Mapa ukończone pokazuje zależności tylko w przypadku kodu pomyślnie utworzone. Jeśli wystąpią błędy kompilacji dla niektórych składników, te błędy są wyświetlane na mapie. Upewnij się, że składnik rzeczywiście kompiluje i ma zależności od tego, przed wprowadzeniem decyzji architektury oparte na mapie.
+Zakończona mapa pokazuje zależności tylko dla pomyślnie skompilowanego kodu. Jeśli wystąpią błędy kompilacji dla niektórych składników, te błędy są wyświetlane na mapie. Upewnij się, że składnik rzeczywiście kompiluje i ma zależności od tego przed podjęciem decyzji o architekturze na podstawie mapy.

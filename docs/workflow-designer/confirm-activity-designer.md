@@ -1,43 +1,43 @@
 ---
-title: Projektant przepływu pracy — Confirm, Projektant działań
+title: Projektant przepływu pracy — Potwierdź działanie projektanta działań
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Confirm.UI
 ms.assetid: c753b67b-b0e7-462a-bb4e-ba8db04a078d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8418faf7fb4eb55a0b20a33aaaa2909e07ff7a78
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cd17f71ff9e408c48493dc862dfe94f8d7037903
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949860"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650635"
 ---
 # <a name="confirm-activity-designer"></a>Confirm, projektant działań
 
-**Potwierdź** projektanta działań służy do tworzenia i konfigurowania <xref:System.Activities.Statements.Confirm> działania.
+Aby utworzyć i skonfigurować działanie <xref:System.Activities.Statements.Confirm>, można użyć programu **confirming** Designer.
 
-## <a name="the-confirm-activity"></a>Potwierdź działanie
- <xref:System.Activities.Statements.Confirm> Działania jawnie wywołuje <xref:System.Activities.Statements.CompensableActivity.ConfirmationHandler%2A> dla działania zawarte w <xref:System.Activities.Statements.CompensableActivity>. Jeśli <xref:System.Activities.Statements.Confirm> działanie nie jest używane w ramach <xref:System.Activities.Statements.CompensableActivity.CancellationHandler%2A>, <xref:System.Activities.Statements.CompensableActivity.CompensationHandler%2A>, lub <xref:System.Activities.Statements.CompensableActivity.ConfirmationHandler%2A> z <xref:System.Activities.Statements.CompensableActivity>, a następnie należy określić <xref:System.Activities.Statements.Confirm.Target%2A> właściwości.
+## <a name="the-confirm-activity"></a>Potwierdzenie działania
+ Działanie <xref:System.Activities.Statements.Confirm> jawnie wywołuje <xref:System.Activities.Statements.CompensableActivity.ConfirmationHandler%2A> dla działania zawartego w <xref:System.Activities.Statements.CompensableActivity>. Jeśli działanie <xref:System.Activities.Statements.Confirm> nie jest używane w <xref:System.Activities.Statements.CompensableActivity.CancellationHandler%2A>, <xref:System.Activities.Statements.CompensableActivity.CompensationHandler%2A> lub <xref:System.Activities.Statements.CompensableActivity.ConfirmationHandler%2A> <xref:System.Activities.Statements.CompensableActivity>, należy określić właściwość <xref:System.Activities.Statements.Confirm.Target%2A>.
 
- <xref:System.Activities.Statements.CompensationToken> Określony przez <xref:System.Activities.Statements.Compensate.Target%2A> udostępnia środki do jawnie potwierdzić, lub kompensacji <xref:System.Activities.Statements.CompensableActivity> po <xref:System.Activities.Statements.CompensableActivity.Body%2A> z <xref:System.Activities.Statements.CompensableActivity> została ukończona pomyślnie.
+ @No__t_0 określony przez <xref:System.Activities.Statements.Compensate.Target%2A> zapewnia metodę jawnego potwierdzenia lub zrekompensowania <xref:System.Activities.Statements.CompensableActivity> po pomyślnym zakończeniu <xref:System.Activities.Statements.CompensableActivity.Body%2A> <xref:System.Activities.Statements.CompensableActivity>.
 
-### <a name="using-the-confirm-activity-designer"></a>Za pomocą Confirm, Projektant działań
- **Potwierdź** projektanta działań można znaleźć w **transakcji** kategorii **przybornika**, które jest dostępne po kliknięciu **przybornika**karty w lewej części projektanta przepływów pracy. Można także wybrać **przybornika** z **widoku** menu lub naciśnij klawisz **Ctrl**+**Alt** + **X**.
+### <a name="using-the-confirm-activity-designer"></a>Korzystanie z programu Confirme Designer
+ Można znaleźć **projektanta działań w** kategorii **transakcji** **przybornika**, do którego uzyskuje się dostęp, klikając kartę **Przybornik** po lewej stronie Projektant przepływu pracy. Alternatywnie wybierz pozycję **Przybornik** z menu **Widok** lub naciśnij **klawisze CTRL** +**Alt** +**X**.
 
- **Potwierdź** projektanta działań mogą być przeciągnięte z **przybornika** i porzucić do powierzchni projektanta przepływów pracy wszędzie tam, gdzie działań są zazwyczaj umieszczane, takie jak wewnątrz <xref:System.Activities.Statements.Sequence>. Spowoduje to utworzenie <xref:System.Activities.Statements.Confirm> działanie przy użyciu domyślnego <xref:System.Activities.Activity.DisplayName%2A> o potwierdzenie. <xref:System.Activities.Activity.DisplayName%2A> Wartość może być edytowany w nagłówku **Potwierdź** projektanta działań lub **DisplayName** pola siatki właściwości.
+ Można przeciągnąć **projektanta działań z** **przybornika** i porzucony na Projektant przepływu pracy powierzchni, wszędzie tam, gdzie działania są zwykle umieszczane, na przykład w <xref:System.Activities.Statements.Sequence>. Spowoduje to utworzenie działania <xref:System.Activities.Statements.Confirm> przy użyciu domyślnego <xref:System.Activities.Activity.DisplayName%2A> potwierdzenia. Wartość <xref:System.Activities.Activity.DisplayName%2A> można edytować w nagłówku programu **Confirme** Activity Designer lub w polu **DisplayName** siatki właściwości.
 
-### <a name="the-confirm-properties"></a>Upewnij się, właściwości
- W poniższej tabeli przedstawiono <xref:System.Activities.Statements.Confirm> właściwości i w tym artykule opisano, jak są używane w projektancie. <xref:System.Activities.Activity.DisplayName%2A> Właściwości można edytować w siatce właściwości lub na powierzchni projektanta przepływów pracy, ale <xref:System.Activities.Statements.Confirm.Target%2A> właściwości muszą być edytowane w siatce właściwości.
+### <a name="the-confirm-properties"></a>Potwierdzenie właściwości
+ W poniższej tabeli przedstawiono właściwości <xref:System.Activities.Statements.Confirm> i opisano sposób ich używania w projektancie. Właściwość <xref:System.Activities.Activity.DisplayName%2A> można edytować w siatce właściwości lub na powierzchni Projektant przepływu pracy, ale Właściwość <xref:System.Activities.Statements.Confirm.Target%2A> musi być edytowana w siatce właściwości.
 
 |Nazwa właściwości|Wymagane|Użycie|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Określa opcjonalny przyjazna nazwa <xref:System.Activities.Statements.CancellationScope> działania. Wartość domyślna to potwierdzić.|
-|<xref:System.Activities.Statements.Confirm.Target%2A>|Prawda|Określa <xref:System.Activities.InArgument%601> zawierający <xref:System.Activities.Statements.CompensationToken> tego <xref:System.Activities.Statements.Confirm> działania.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Określa opcjonalną przyjazną nazwę działania <xref:System.Activities.Statements.CancellationScope>. Wartość domyślna to Confirm (Potwierdź).|
+|<xref:System.Activities.Statements.Confirm.Target%2A>|Oznacza|Określa <xref:System.Activities.InArgument%601>, który zawiera <xref:System.Activities.Statements.CompensationToken> dla tego działania <xref:System.Activities.Statements.Confirm>.|
 
 ## <a name="see-also"></a>Zobacz także
 

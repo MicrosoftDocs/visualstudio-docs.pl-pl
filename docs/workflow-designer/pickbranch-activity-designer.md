@@ -1,62 +1,62 @@
 ---
-title: Projektant przepływu pracy — PickBranch, Projektant działań
+title: Projektant przepływu pracy — Projektant działań PickBranch
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.PickBranch.UI
 ms.assetid: f523ad47-bbc0-4cda-a35c-41e67c4ba081
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6c452cb4fd5b8a343473204c2b2bee614383ebb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a43fa99c9f5fe4fbb3cfe336efb983fced655f2a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63003645"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650066"
 ---
 # <a name="pickbranch-activity-designer"></a>PickBranch, projektant działań
 
-<xref:System.Activities.Statements.PickBranch> Zapewnia oparte na zdarzeniach ścieżką wykonywania w ramach <xref:System.Activities.Statements.Pick> działanie, które mogą być wyzwalane przez zdarzenia przychodzącego.
+@No__t_0 zapewnia ścieżkę wykonywania wykonywaną na podstawie zdarzeń w ramach działania <xref:System.Activities.Statements.Pick>, które mogą być wyzwalane przez zdarzenie przychodzące.
 
 ## <a name="pickbranch"></a>PickBranch
 
-<xref:System.Activities.Statements.PickBranch> obiekty są zawarte w <xref:System.Activities.Statements.Pick.Branches%2A> zbiór <xref:System.Activities.Statements.Pick> działania. Każdy <xref:System.Activities.Statements.PickBranch> znajduje się w gałęzi <xref:System.Activities.Statements.Pick> aktywności i mogą być wykonywane ze względu na niektóre zdarzenia przychodzące, która służy jako wyzwalacz. W ten sposób Workflow Designer udostępnia modelowanie przepływu sterowania opartego na zdarzeniach. Każdy <xref:System.Activities.Statements.PickBranch> zawiera <xref:System.Activities.Statements.PickBranch.Trigger%2A> i <xref:System.Activities.Statements.PickBranch.Action%2A>.
+<xref:System.Activities.Statements.PickBranch> obiekty są zawarte w kolekcji <xref:System.Activities.Statements.Pick.Branches%2A> działania <xref:System.Activities.Statements.Pick>. Każda <xref:System.Activities.Statements.PickBranch> jest zawarta w gałęzi działania <xref:System.Activities.Statements.Pick> i może być wykonywana z powodu zdarzenia przychodzącego, które służy jako wyzwalacz. W ten sposób Projektant przepływu pracy zapewnia modelowanie przepływu sterowania opartego na zdarzeniach. Każda <xref:System.Activities.Statements.PickBranch> zawiera <xref:System.Activities.Statements.PickBranch.Trigger%2A> i <xref:System.Activities.Statements.PickBranch.Action%2A>.
 
-### <a name="how-to-use-the-pick-activity-designer"></a>Jak używać Projektanta wybierz działanie
+### <a name="how-to-use-the-pick-activity-designer"></a>Jak używać projektanta działań wyboru
 
-Dostęp do **PickBranch** projektanta w **przepływ sterowania** kategorii **przybornika**.
+Dostęp do projektanta **PickBranch** w kategorii **przepływ sterowania** w **przyborniku**.
 
-Dwa puste <xref:System.Activities.Statements.PickBranch> obiektów za pomocą wyświetlania nazw **Branch1** i **Branch2** są domyślnie tworzone jako elementy <xref:System.Activities.Statements.Pick> działania podczas **wybierz** Projektant działań początkowo zostało porzucone do projektanta przepływów pracy. Te odpowiednich <xref:System.Activities.Statements.PickBranch.DisplayName%2A> wartości właściwości mogą być edytowane w **PickBranch** nagłówka projektanta lub w ramach **właściwości** okna dla każdej gałęzi.
+Dwa puste obiekty <xref:System.Activities.Statements.PickBranch> z nazwami wyświetlanymi **Branch1** i **Branch2** są tworzone domyślnie jako elementy działania <xref:System.Activities.Statements.Pick>, gdy Projektant działań **wybierze** początkowo został porzucony w Projektant przepływu pracy. Te odpowiednie wartości właściwości <xref:System.Activities.Statements.PickBranch.DisplayName%2A> można edytować w nagłówku projektanta **PickBranch** lub w oknie **Właściwości** dla każdej gałęzi.
 
-Istnieją dwa sposoby dodawania <xref:System.Activities.Statements.PickBranch> obiekty do kolekcji <xref:System.Activities.Statements.Pick> obiektu: przeciąganie i upuszczanie **PickBranch** projektanta z **przybornika**, lub za pomocą menu kliknij prawym przyciskiem myszy w ramach **wybierz** powierzchni projektu:
+Istnieją dwa sposoby dodawania <xref:System.Activities.Statements.PickBranch> obiektów do kolekcji obiektu <xref:System.Activities.Statements.Pick>: przeciąganie i upuszczanie projektanta **PickBranch** z **przybornika**lub za pomocą menu dostępnego po kliknięciu prawym przyciskiem myszy z poziomu obszaru projektowania **wyboru** :
 
-- **PickBranch** Projektant <xref:System.Activities.Statements.PickBranch> kiedy zostanie przeciągnięty z **przybornika** i upuścić na jednej z gałęzi **wybierz** projektanta działań na Powierzchni projektanta przepływu pracy. Nowy <xref:System.Activities.Statements.PickBranch> obiektów, które można umieścić wewnątrz <xref:System.Activities.Statements.Pick> projektanta w lewo lub prawo do wszystkich istniejących <xref:System.Activities.Statements.PickBranch> elementów znajdujących się już w kolekcji. Podczas przeciągania **PickBranch** projektanta na **wybierz** projektanta za pomocą myszy **wybierz** projektanta używa pionowy pasek niebieski szare, aby wskazać miejsce <xref:System.Activities.Statements.PickBranch> jest dodawany do umieszczenia danego myszy.
+- Projektant **PickBranch** tworzy <xref:System.Activities.Statements.PickBranch>, gdy jest przeciągany z **przybornika** i upuszczany do jednej z gałęzi projektanta działań **wyboru** na powierzchni Projektant przepływu pracy. Nowe obiekty <xref:System.Activities.Statements.PickBranch> mogą być umieszczane wewnątrz projektanta <xref:System.Activities.Statements.Pick> po lewej lub po prawej stronie wszelkich istniejących elementów <xref:System.Activities.Statements.PickBranch> już zawartych w kolekcji. Gdy przeciągasz projektanta **PickBranch** na projektanta **wyboru** z myszą, Projektant **wyboru** używa pionowego szarego pasma, aby wskazać, gdzie <xref:System.Activities.Statements.PickBranch> jest dodawane dla danego położenia myszy.
 
-- Kliknij prawym przyciskiem myszy **wybierz** Projektant działań (, ale nie w obrębie **PickBranch** designer) do uzyskania menu kontekstowe i wybierz **utwórz gałąź** Aby dodać nowy <xref:System.Activities.Statements.PickBranch>. Należy zauważyć, że nowy <xref:System.Activities.Statements.PickBranch> zostanie dodany do istniejącego po prawej stronie <xref:System.Activities.Statements.PickBranch> obiekty w **wybierz** projektanta.
+- Kliknij prawym przyciskiem myszy pozycję **Wybierz** projektanta działań (ale nie w programie **PickBranch** Designer), aby uzyskać menu kontekstowe i wybrać polecenie **Utwórz gałąź** , aby dodać nowe <xref:System.Activities.Statements.PickBranch>. Zwróć uwagę, że nowe <xref:System.Activities.Statements.PickBranch> są dodawane z prawej strony istniejących <xref:System.Activities.Statements.PickBranch> obiektów w projektancie **wyboru** .
 
-**PickBranch** projektanta można rozszerzyć, aby wyświetlić **wyzwalacza** i **akcji** pola lub zwinięte, klikając double daszka po prawej stronie ich nagłówki. Edytuj <xref:System.Activities.Statements.PickBranch.Trigger%2A> i <xref:System.Activities.Statements.PickBranch.Action%2A> każdego <xref:System.Activities.Statements.PickBranch> upuszczając działań na **wyzwalacza** i **akcji** pola ich twórców.
+Projektanta **PickBranch** można rozszerzyć, aby odsłonić pola **wyzwalacza** i **akcji** lub zwinięte przez kliknięcie podwójnego karetki po prawej stronie jego nagłówków. Edytuj <xref:System.Activities.Statements.PickBranch.Trigger%2A> i <xref:System.Activities.Statements.PickBranch.Action%2A> poszczególnych <xref:System.Activities.Statements.PickBranch> przez usunięcie działań do pól **wyzwalacz** i **Akcja** w swoich projektantach.
 
-<xref:System.Activities.Statements.PickBranch> Obiekty w <xref:System.Activities.Statements.Pick.Branches%2A> zbiór <xref:System.Activities.Statements.Pick> obiektów, można zmienić kolejności, przeciągając i upuszczając je do nowej lokalizacji w ramach **wybierz** projektanta. **Wybierz** projektanta używa pionowy pasek niebieski szare, aby wskazać miejsce <xref:System.Activities.Statements.PickBranch> jest dodawany do umieszczenia danego myszy.
+@No__t_0 obiektów w kolekcji <xref:System.Activities.Statements.Pick.Branches%2A> obiektu <xref:System.Activities.Statements.Pick>, można zmienić kolejność przez przeciąganie i upuszczanie ich do nowej lokalizacji w projektancie **wyboru** . Projektant **wyboru** używa pionowego szarego pasma, aby wskazać, gdzie <xref:System.Activities.Statements.PickBranch> jest dodawany dla danego położenia myszy.
 
-Istnieją dwa sposoby, aby usunąć <xref:System.Activities.Statements.PickBranch>:
+Istnieją dwa sposoby usunięcia <xref:System.Activities.Statements.PickBranch>:
 
-- Wybierz **PickBranch** projektanta i usuń go.
-- Wybierz **PickBranch** projektanta, kliknij prawym przyciskiem myszy uzyskać menu kontekstowe i wybierz **Usuń**.
+- Wybierz projektanta **PickBranch** i usuń go.
+- Wybierz projektanta **PickBranch** , kliknij prawym przyciskiem myszy, aby uzyskać menu kontekstowe, a następnie wybierz pozycję **Usuń**.
 
-Pamiętaj o wybraniu **PickBranch** projektanta, jak wybór jednego z działań wewnątrz jego **wyzwalacza** lub **akcji** pola przez pomyłkę spowoduje usunięcie jednej z tych działań i nie <xref:System.Activities.Statements.PickBranch> obiektu.
+Pamiętaj, aby wybrać projektanta **PickBranch** , wybierając jedno z działań wewnątrz jego **wyzwalacza** lub **akcji** przez pomyłkę powoduje usunięcie jednej z tych działań, a nie obiektu <xref:System.Activities.Statements.PickBranch>.
 
-### <a name="pickbranch-properties-in-the-workflow-designer"></a>Właściwości PickBranch w Projektancie przepływu pracy
+### <a name="pickbranch-properties-in-the-workflow-designer"></a>Właściwości PickBranch w Projektant przepływu pracy
 
-W poniższej tabeli przedstawiono najbardziej przydatne <xref:System.Activities.Statements.PickBranch> właściwości i opisuje sposób używania ich w Projektancie przepływu pracy.
+W poniższej tabeli przedstawiono najbardziej przydatne <xref:System.Activities.Statements.PickBranch> właściwości i opisano sposób ich używania w Projektant przepływu pracy.
 
 |Nazwa właściwości|Wymagane|Użycie|
 |-|--------------|-|
-|<xref:System.Activities.Statements.PickBranch.DisplayName%2A>|False|Przyjazna nazwa wyświetlana w nagłówku **PickBranch** projektanta. Wartość domyślna to gałąź.<br /><br /> Mimo że <xref:System.Activities.Activity.DisplayName%2A> nie jest bezwzględnie konieczne jest najlepszym rozwiązaniem, aby użyć jednego.|
-|<xref:System.Activities.Statements.PickBranch.Trigger%2A>|Prawda|Każdy <xref:System.Activities.Statements.PickBranch> zawiera <xref:System.Activities.Statements.PickBranch.Trigger%2A> akcji, które może wywołać <xref:System.Activities.Statements.PickBranch.Action%2A>.|
-|<xref:System.Activities.Statements.PickBranch.Action%2A>|False|Każdy <xref:System.Activities.Statements.PickBranch> zawiera <xref:System.Activities.Statements.PickBranch.Action%2A> , jest wykonywany, jeśli wyzwolony.|
+|<xref:System.Activities.Statements.PickBranch.DisplayName%2A>|False|Przyjazna nazwa wyświetlana w nagłówku projektanta **PickBranch** . Wartość domyślna to gałąź.<br /><br /> Mimo że <xref:System.Activities.Activity.DisplayName%2A> nie jest ściśle wymagane, najlepszym rozwiązaniem jest użycie jednego z nich.|
+|<xref:System.Activities.Statements.PickBranch.Trigger%2A>|Oznacza|Każda <xref:System.Activities.Statements.PickBranch> zawiera akcję <xref:System.Activities.Statements.PickBranch.Trigger%2A>, która może wywołać <xref:System.Activities.Statements.PickBranch.Action%2A>.|
+|<xref:System.Activities.Statements.PickBranch.Action%2A>|False|Każda <xref:System.Activities.Statements.PickBranch> zawiera <xref:System.Activities.Statements.PickBranch.Action%2A>, które są wykonywane, jeśli wyzwolone.|
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -14,37 +14,37 @@ helpviewer_keywords:
 - sorting datasets, using data views
 - dataset filtering, using data views
 ms.assetid: f4f100f1-776d-46dc-b2fd-5b35b98d9561
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 17416a3b64d6cbb5f01192440a9df735f0b9fb94
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 68adaf6df9f97bee94e7cb393fa01ee133444c80
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566732"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648455"
 ---
 # <a name="filter-and-sort-data-in-a-windows-forms-application"></a>Filtrowanie i sortowanie danych w aplikacji Windows Forms
 
-Filtrowanie danych przez ustawienie <xref:System.Windows.Forms.BindingSource.Filter%2A> właściwość wyrażeniem, które zwraca żądane rekordy.
+Filtrowanie danych przez ustawienie właściwości <xref:System.Windows.Forms.BindingSource.Filter%2A> na wyrażenie ciągu zwracające odpowiednie rekordy.
 
-Sortowanie danych przez ustawienie <xref:System.Windows.Forms.BindingSource.Sort%2A> właściwość na nazwę kolumny, na którym mają być sortowane; Dołącz `DESC` można sortować w kolejności malejącej lub dołączyć `ASC` sortowanie w kolejności rosnącej.
+Dane są sortowane przez ustawienie właściwości <xref:System.Windows.Forms.BindingSource.Sort%2A> na nazwę kolumny, w której ma zostać wykonane sortowanie. Dołącz `DESC`, aby posortować w kolejności malejącej, lub Dołącz `ASC`, aby posortować w kolejności rosnącej.
 
 > [!NOTE]
-> Jeśli aplikacja nie korzysta z <xref:System.Windows.Forms.BindingSource> składników, można filtrować i sortować dane przy użyciu <xref:System.Data.DataView> obiektów. Aby uzyskać więcej informacji, zobacz [DataView](/dotnet/framework/data/adonet/dataset-datatable-dataview/dataviews).
+> Jeśli aplikacja nie używa składników <xref:System.Windows.Forms.BindingSource>, można filtrować i sortować dane przy użyciu obiektów <xref:System.Data.DataView>. Aby uzyskać więcej informacji, zobacz temat [DataViews](/dotnet/framework/data/adonet/dataset-datatable-dataview/dataviews).
 
-## <a name="to-filter-data-by-using-a-bindingsource-component"></a>Aby filtrować dane za pomocą składnika BindingSource
+## <a name="to-filter-data-by-using-a-bindingsource-component"></a>Aby odfiltrować dane za pomocą składnika BindingSource
 
-- Ustaw <xref:System.Windows.Forms.BindingSource.Filter%2A> właściwość na wyrażenie, które mają być zwracane. Na przykład, poniższy kod zwraca klientom `CompanyName` który zaczyna się od "B":
+- Ustaw właściwość <xref:System.Windows.Forms.BindingSource.Filter%2A> na wyrażenie, które ma zostać zwrócone. Na przykład poniższy kod zwraca klientów z `CompanyName`, który rozpoczyna się od "B":
 
      [!code-csharp[VbRaddataDisplaying#6](../data-tools/codesnippet/CSharp/filter-and-sort-data-in-a-windows-forms-application_1.cs)]
      [!code-vb[VbRaddataDisplaying#6](../data-tools/codesnippet/VisualBasic/filter-and-sort-data-in-a-windows-forms-application_1.vb)]
 
 ## <a name="to-sort-data-by-using-a-bindingsource-component"></a>Aby posortować dane za pomocą składnika BindingSource
 
-- Ustaw <xref:System.Windows.Forms.BindingSource.Sort%2A> właściwość kolumnę, która ma zostać wykonane sortowanie. Na przykład, poniższy kod sortuje klientom na `CompanyName` kolumny w kolejności malejącej:
+- Ustaw właściwość <xref:System.Windows.Forms.BindingSource.Sort%2A> na kolumnę, według której ma zostać wykonane sortowanie. Na przykład poniższy kod sortuje klientów w kolumnie `CompanyName` w kolejności malejącej:
 
      [!code-csharp[VbRaddataDisplaying#7](../data-tools/codesnippet/CSharp/filter-and-sort-data-in-a-windows-forms-application_2.cs)]
      [!code-vb[VbRaddataDisplaying#7](../data-tools/codesnippet/VisualBasic/filter-and-sort-data-in-a-windows-forms-application_2.vb)]

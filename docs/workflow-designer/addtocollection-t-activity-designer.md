@@ -1,51 +1,51 @@
 ---
-title: Projektant przepływu pracy — AddToCollection<T> Projektant działań
+title: Projektant przepływu pracy — Projektant działań <T> AddToCollection
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.AddToCollection`1.UI
 ms.assetid: f7fc0702-164e-4370-8946-bb2f9f9384b7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e339e2639d85f89d4110c36710ab9c19e0fe333
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e8aa11f93b702f48d93710b9993769289ebc8ffa
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62842088"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650744"
 ---
-# <a name="addtocollectiont-activity-designer"></a>AddToCollection\<T > Projektant działań
+# <a name="addtocollectiont-activity-designer"></a>AddToCollection \<T > — Projektant działań
 
-**AddToCollection\<T >** projektanta działań służy do tworzenia i konfigurowania <xref:System.Activities.Statements.AddToCollection%601> działania.
+**AddToCollection \<T >** Projektant działań służy do tworzenia i konfigurowania działania <xref:System.Activities.Statements.AddToCollection%601>.
 
-## <a name="the-addtocollectiont-activity"></a>AddToCollection\<T > działania
+## <a name="the-addtocollectiont-activity"></a>Działanie AddToCollection \<T >
 
-<xref:System.Activities.Statements.AddToCollection%601> Działania dodaje element do kolekcji.
+Działanie <xref:System.Activities.Statements.AddToCollection%601> dodaje element do kolekcji.
 
-### <a name="using-the-addtocollectiont-activity-designer"></a>Za pomocą AddToCollection\<T > Projektant działań
+### <a name="using-the-addtocollectiont-activity-designer"></a>Korzystanie z AddToCollection \<T > Projektant działań
 
-**AddToCollection\<T >** projektanta działań można znaleźć w **kolekcji** kategorii **przybornika**, które jest dostępne po kliknięciu  **Przybornik** kartę projektanta przepływów pracy. Można także wybrać **przybornika** z **widoku** menu lub naciśnij klawisz **Ctrl**+**Alt** + **X**.
+Projektanta działań programu **AddToCollection \<T >** można znaleźć w kategorii **kolekcji** **przybornika**, do którego uzyskuje się dostęp przez kliknięcie karty **przybornika** w Projektant przepływu pracy. Alternatywnie wybierz pozycję **Przybornik** z menu **Widok** lub naciśnij **klawisze CTRL** +**Alt** +**X**.
 
-**AddToCollection\<T >** projektanta działań mogą być przeciągnięte z **przybornika** i porzucić do powierzchni projektanta przepływów pracy wszędzie tam, gdzie działań są umieszczone, takie jak wewnątrz <xref:System.Activities.Statements.Sequence>. Upuszczanie **AddToCollection\<T >** tworzy projektanta działań <xref:System.Activities.Statements.AddToCollection%601> działanie przy użyciu domyślnego <xref:System.Activities.Activity.DisplayName%2A> z AddToCollection < Int32\>. (Domyślnie *elementu typeargument w języku* jest **Int32**. Elementu typeargument w języku można zmienić w siatce właściwości.) <xref:System.Activities.Activity.DisplayName%2A> Wartość może być edytowana w nagłówku **AddToCollection < T\>**  projektanta działań lub **DisplayName** pola siatki właściwości. W siatce właściwości, należy edytować inne właściwości.
+**AddToCollection \<T >** projektanta aktywności można przeciągnąć z **przybornika** i porzucić na Projektant przepływu pracyą powierzchnię wszędzie tam, gdzie działania są umieszczane, na przykład w <xref:System.Activities.Statements.Sequence>. Porzucenie **AddToCollection \<T >** projektanta działań tworzy działanie <xref:System.Activities.Statements.AddToCollection%601> z domyślną <xref:System.Activities.Activity.DisplayName%2A> AddToCollection < Int32 \>. (Domyślnie *elementu TypeArgument* jest **Int32**. Elementu TypeArgument można zmienić w siatce właściwości.) Wartość <xref:System.Activities.Activity.DisplayName%2A> można edytować w nagłówku projektanta działań **AddToCollection < t \>** lub w polu **DisplayName** siatki właściwości. Inne właściwości muszą być edytowane w siatce właściwości.
 
-### <a name="the-addtocollectiont-properties"></a>AddToCollection\<T > Właściwości
+### <a name="the-addtocollectiont-properties"></a>Właściwości AddToCollection \<T >
 
-W poniższej tabeli przedstawiono <xref:System.Activities.Statements.AddToCollection%601> właściwości i w tym artykule opisano, jak są używane w projektancie.
+W poniższej tabeli przedstawiono właściwości <xref:System.Activities.Statements.AddToCollection%601> i opisano sposób ich używania w projektancie.
 
 |Nazwa właściwości|Wymagane|Użycie|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Przyjazna nazwa <xref:System.Activities.Statements.AddToCollection%601> działania. Wartość domyślna to AddToCollection < Int32\>. Mimo że <xref:System.Activities.Activity.DisplayName%2A> wartość nie jest bezwzględnie konieczne, jest najlepszym rozwiązaniem, aby użyć jednego.|
-|<xref:System.Activities.Statements.AddToCollection%601.Item%2A>|Prawda|Element do dodania do kolekcji\<T >. Ten element jest typu *T*, która jest typu *elementu typeargument w języku*. Aby określić element, wpisz wyrażenie języka Visual Basic w siatce właściwości.|
-|<xref:System.Activities.Statements.AddToCollection%601.Collection%2A>|Prawda|Kolekcja, do którego ma zostać dodany element. Ta kolekcja jest typu **ICollection < elementu typeargument w języku\>**. Aby określić kolekcję, wpisz wyrażenie języka Visual Basic w siatce właściwości.|
-|*TypeArgument*|Prawda|Typu T z elementów znajdujących się w <xref:System.Collections.Generic.ICollection%601>. Domyślnie to *elementu typeargument w języku* ustawiono typ **Int32**. Aby zmienić typ, zmień wartość *elementu typeargument w języku* w polu kombi w siatce właściwości.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Przyjazna nazwa działania <xref:System.Activities.Statements.AddToCollection%601>. Wartość domyślna to AddToCollection < Int32 \>. Mimo że wartość <xref:System.Activities.Activity.DisplayName%2A> nie jest ściśle wymagana, najlepszym rozwiązaniem jest użycie jednego z nich.|
+|<xref:System.Activities.Statements.AddToCollection%601.Item%2A>|Oznacza|Element, który ma zostać dodany do kolekcji \<T >. Ten element jest typu *T*, który jest typu *elementu TypeArgument*. Aby określić element, wpisz wyrażenie Visual Basic w siatce właściwości.|
+|<xref:System.Activities.Statements.AddToCollection%601.Collection%2A>|Oznacza|Kolekcja, do której należy dodać element. Ta kolekcja jest typu **ICollection < elementu typeargument \>** . Aby określić kolekcję, wpisz wyrażenie Visual Basic w siatce właściwości.|
+|*Elementu TypeArgument*|Oznacza|Typ T elementów zawartych w <xref:System.Collections.Generic.ICollection%601>. Domyślnie ten typ *elementu TypeArgument* jest ustawiony na **Int32**. Aby zmienić typ, Zmień wartość *elementu TypeArgument* w polu kombi w siatce właściwości.|
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Kolekcja](../workflow-designer/collection-activity-designers.md)
-- [AddToCollection\<T > Projektant działań](../workflow-designer/addtocollection-t-activity-designer.md)
+- [AddToCollection \<T > — Projektant działań](../workflow-designer/addtocollection-t-activity-designer.md)
 - [ClearCollection\<T>](../workflow-designer/clearcollection-t-activity-designer.md)
 - [ExistsInCollection\<T>](../workflow-designer/existsincollection-t-activity-designer.md)
 - [RemoveFromCollection\<T>](../workflow-designer/removefromcollection-t-activity-designer.md)

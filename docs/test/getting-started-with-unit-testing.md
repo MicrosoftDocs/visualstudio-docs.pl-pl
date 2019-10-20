@@ -4,17 +4,17 @@ ms.date: 04/01/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit test plans
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30c67bb85a7cf72090ea37680daa12933c44b0cb
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 5ecddad721547fdb5689a26a192cf0580ddb44cb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870166"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664914"
 ---
 # <a name="get-started-with-unit-testing"></a>Wprowadzenie do testów jednostkowych
 
@@ -38,7 +38,7 @@ W tej sekcji opisano, jak utworzyć projekt testu jednostkowego.
    }
    ```
 
-1. W **Eksplorator rozwiązań**wybierz węzeł rozwiązania. Następnie z górnego paska menu wybierz pozycję **plik** > **Dodaj** > **Nowy projekt**.
+1. W **Eksplorator rozwiązań**wybierz węzeł rozwiązania. Następnie z górnego paska menu wybierz pozycję **plik**  > **Dodaj**  > **Nowy projekt**.
 
 1. W oknie dialogowym Nowy projekt Znajdź szablon projektu test jednostkowy dla struktury testowej, która ma zostać użyta, i wybierz ją.
 
@@ -77,7 +77,7 @@ W tej sekcji opisano, jak utworzyć projekt testu jednostkowego.
 
 ## <a name="run-unit-tests"></a>Uruchamianie testów jednostkowych
 
-1. Otwórz [Eksploratora testów](../test/run-unit-tests-with-test-explorer.md) , wybierając pozycję **Testuj** > **Eksplorator testów** **systemu Windows** > z górnego paska menu.
+1. Otwórz [Eksploratora testów](../test/run-unit-tests-with-test-explorer.md) , wybierając kolejno pozycje **testuj**  > **Windows**  > **Eksplorator testów** z górnego paska menu.
 
 1. Uruchom testy jednostkowe, klikając pozycję **Uruchom wszystkie**.
 
@@ -97,7 +97,7 @@ Jeśli używasz platformy testowania MSTest, xUnit lub NUnit w programie Visual 
 > [!NOTE]
 > Testy jednostkowe na żywo są dostępne tylko w wersji Enterprise Edition.
 
-1. Włącz funkcję Live Unit Testing z menu **test** , wybierając pozycję **test** > **Live Unit Testing** > **Rozpocznij**.
+1. Włącz funkcję Live Unit Testing z menu **test** , wybierając  >  **testowy** **Live Unit Testing**  > **Start**.
 
    ::: moniker range="vs-2017"
 
@@ -123,7 +123,7 @@ Aby uzyskać więcej informacji na temat testów jednostkowych na żywo, zobacz 
 
 ## <a name="generate-unit-tests-with-intellitest"></a>Generowanie testów jednostkowych za pomocą funkcji IntelliTest
 
-Po uruchomieniu programu IntelliTest można zobaczyć, które testy kończą się niepowodzeniem i dodać kod, aby rozwiązać ten problem. Możesz wybrać, które wygenerowanych testów, aby zapisać do projektu testowego, aby zapewnić mechanizm regresji. W przypadku zmiany kodu, należy ponownie uruchomić program IntelliTest w celu synchronizowania wygenerowanych testów wprowadzania zmian w kodzie. Aby dowiedzieć się, jak to zrobić, zobacz [generowanie testów jednostkowych dla kodu za pomocą IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md).
+Po uruchomieniu programu IntelliTest można zobaczyć, które testy kończą się niepowodzeniem i dodać kod, aby rozwiązać ten problem. Możesz wybrać, które z wygenerowanych testów mają być zapisane w projekcie testowym w celu udostępnienia pakietu regresji. Zmieniając kod, należy ponownie uruchomić program IntelliTest w celu zachowania synchronizacji generowanych testów z kodem. Aby dowiedzieć się, jak to zrobić, zobacz [generowanie testów jednostkowych dla kodu za pomocą IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md).
 
 > [!TIP]
 > IntelliTest jest dostępny tylko dla kodu zarządzanego, który jest przeznaczony dla .NET Framework.
@@ -142,7 +142,7 @@ Aby utworzyć testy jednostkowe używające [nunit](https://nunit.org/):
 
 1. Otwórz rozwiązanie, które zawiera kod, który chcesz przetestować.
 
-2. Kliknij prawym przyciskiem myszy rozwiązanie w **Eksplorator rozwiązań** i wybierz polecenie **Dodaj** > **Nowy projekt**.
+2. Kliknij prawym przyciskiem myszy rozwiązanie w **Eksplorator rozwiązań** i wybierz polecenie **Dodaj**  > **Nowy projekt**.
 
 3. Wybierz szablon projektu **testu nunit** .
 
@@ -166,7 +166,7 @@ Aby utworzyć testy jednostkowe używające [nunit](https://nunit.org/):
 
 4. Dodaj odwołanie z projektu testowego do projektu, który zawiera kod, który chcesz przetestować.
 
-   Kliknij prawym przyciskiem myszy projekt w **Eksplorator rozwiązań**, a następnie wybierz polecenie **Dodaj** > **odwołanie**. (Można również dodać odwołanie z menu po kliknięciu prawym przyciskiem myszy węzła **odwołania** lub **zależności** ).
+   Kliknij prawym przyciskiem myszy projekt w **Eksplorator rozwiązań**, a następnie wybierz pozycję **Dodaj**  > **odwołanie**. (Można również dodać odwołanie z menu po kliknięciu prawym przyciskiem myszy węzła **odwołania** lub **zależności** ).
 
 5. Dodaj kod do metody testowej.
 

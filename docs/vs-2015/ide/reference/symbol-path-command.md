@@ -1,5 +1,5 @@
 ---
-title: Polecenia ścieżki symboli | Dokumentacja firmy Microsoft
+title: Ścieżka symboli — polecenie | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -12,48 +12,46 @@ helpviewer_keywords:
 - SymbolPath command
 ms.assetid: b697ef2d-3f5d-40df-b113-7068a5bec0d4
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 27c4c8ac23e2524245107d9052642350e9db09d2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9d02d4cfede6ed3499d09ff58e4454c1ef9cbe0d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68163273"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651003"
 ---
 # <a name="symbol-path-command"></a>Ścieżka symboli — Polecenie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Określa listę katalogów do wyszukiwania symboli w debugerze.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```  
-Debug.SymbolPath pathname1;pathname2;... pathnameN  
-```  
-  
-## <a name="arguments"></a>Argumenty  
- `pathname`  
- Opcjonalna. Rozdzielana średnikami lista ścieżek dla debugera do wyszukiwania symboli.  
-  
-## <a name="remarks"></a>Uwagi  
- Jeśli nie `pathname` jest określony, polecenie wyświetla listę bieżących ścieżek symboli.  
-  
-## <a name="example"></a>Przykład  
- Ten przykład dodaje dwie ścieżki do listy katalogów symboli.  
-  
-```  
-Debug.SymbolPath C:\Symbol Path 1;C:\Symbol Path 2  
-```  
-  
-## <a name="example"></a>Przykład  
- Ten przykład wyświetla listą rozdzielaną średnikami dla bieżących ścieżek symboli.  
-  
-```  
-Debug.SymbolPath  
-```  
-  
-## <a name="see-also"></a>Zobacz też  
- [Okno polecenia](../../ide/reference/command-window.md)   
- [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
+Ustawia listę katalogów dla debugera do wyszukiwania symboli.
+
+## <a name="syntax"></a>Składnia
+
+```
+Debug.SymbolPath pathname1;pathname2;... pathnameN
+```
+
+## <a name="arguments"></a>Argumenty
+ `pathname` opcjonalny. Rozdzielana średnikami lista ścieżek dla debugera do wyszukiwania symboli.
+
+## <a name="remarks"></a>Uwagi
+ Jeśli `pathname` nie zostanie określona, polecenie wyświetli bieżące ścieżki symboli.
+
+## <a name="example"></a>Przykład
+ Ten przykład dodaje dwie ścieżki do listy katalogów symboli.
+
+```
+Debug.SymbolPath C:\Symbol Path 1;C:\Symbol Path 2
+```
+
+## <a name="example"></a>Przykład
+ Ten przykład wyświetla listę rozdzielonych średnikami dla bieżących ścieżek symboli.
+
+```
+Debug.SymbolPath
+```
+
+## <a name="see-also"></a>Zobacz też
+ Polecenia [programu Visual Studio](../../ide/reference/visual-studio-commands.md) [okna polecenia](../../ide/reference/command-window.md)

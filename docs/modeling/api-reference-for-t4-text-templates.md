@@ -2,17 +2,17 @@
 title: Wykaz interfejsów API dla szablonów tekstowych T4
 ms.date: 11/04/2016
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1528194ef7aea5923045637819277d7b60a6037
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 5ea5bb78951b144c60b76677f399f74bea4ab51a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870548"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654314"
 ---
 # <a name="api-reference-for-t4-text-templates"></a>Wykaz interfejsów API dla szablonów tekstowych T4
 

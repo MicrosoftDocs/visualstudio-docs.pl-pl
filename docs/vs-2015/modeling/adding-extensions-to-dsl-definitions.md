@@ -1,41 +1,41 @@
 ---
-title: Dodawanie rozszerzeń do definicji DSL | Dokumentacja firmy Microsoft
+title: Dodawanie rozszerzeń do definicji DSL | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
 ms.topic: conceptual
 ms.assetid: 07e133be-92ab-4936-a02b-45d2012bd0a6
 caps.latest.revision: 8
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bd45a2345e6e5b28b74cb27fac226514c3f92a04
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 447001a8aefa22fe15bce9158eddeb0cdb26e4e8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68159077"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654719"
 ---
 # <a name="adding-extensions-to-dsl-definitions"></a>Dodawanie rozszerzeń do definicji DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Rozszerzenie definicji DSL umożliwia tworzenie pakietu rozszerzenia języka specyficznego dla domeny (DSL). Rozszerzenia DSL, który jest zawarty w Visual Studio Integration rozszerzenie (VSIX), można zainstalować na komputerze użytkownika w taki sam sposób jak element DSL. Dodatkowe funkcje można dynamicznie włączone i wyłączone w czasie wykonywania. Językami DSL nie muszą być jawnie zaprojektowane dla rozszerzenia, a rozszerzenia można zaprojektować później lub stron trzecich bez zmiany rozszerzonej DSL.  
-  
- Dodatkowe funkcje mogą być następujące:  
-  
-- Właściwości elementów modelu i prezentacji  
-  
-- Dekoratory dla kształtów i łączników  
-  
-- Klasy, relacje, kształty i łączniki  
-  
-- Ograniczenia sprawdzania poprawności  
-  
-- Karty i elementów przybornika  
-  
-  Użytkownik rozszerzonej DSL można utworzyć i zapisać modelu, który zawiera wystąpienia dodatkowych funkcji i może zostać odczytany przez innych użytkowników, którzy mają zainstalowane odpowiednie rozszerzenie. Użytkownicy, którzy nie zainstalowano rozszerzenia nie można użyć dodatkowych funkcji, ale można zaktualizować i zapisywanie modelu bez utraty dodatkowe funkcje.  
-  
-  Przykładowy kod i więcej informacji na temat tej funkcji można znaleźć [Visual Studio Visualization i Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128) witryny sieci Web.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Visual Studio Visualisation i Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
+Rozszerzenie definicji DSL umożliwia utworzenie pakietu rozszerzeń dla języka specyficznego dla domeny (DSL). Rozszerzenie DSL, które jest zawarte w rozszerzeniu integracji programu Visual Studio (VSIX), można zainstalować na komputerze użytkownika w taki sam sposób, jak w przypadku połączenia DSL. Dodatkowe funkcje mogą być dynamicznie włączane i wyłączane w czasie wykonywania. Językami DSL nie muszą być jawnie przeznaczone do rozszerzenia, a rozszerzenia mogą być zaprojektowane później lub przez inne firmy bez zmiany rozszerzonego połączenia DSL.
+
+ Dostępne są następujące dodatkowe funkcje:
+
+- Właściwości elementów model i prezentacja
+
+- Dekoratory dla kształtów i łączników
+
+- Klasy, relacje, kształty i łączniki
+
+- Ograniczenia walidacji
+
+- Elementy i karty przybornika
+
+  Użytkownik o rozszerzonej linii DSL może utworzyć i zapisać model, który zawiera wystąpienia dodatkowych funkcji, i może zostać odczytany przez innych użytkowników, którzy zainstalowali odpowiednie rozszerzenie. Użytkownicy, którzy nie zainstalowali rozszerzenia, nie mogą korzystać z dodatkowych funkcji, ale mogą aktualizować i zapisywać model bez utraty dodatkowych funkcji.
+
+  Aby zapoznać się z przykładowym kodem i więcej informacji na temat tej funkcji, zobacz witrynę sieci Web [Visual Studio Wizualizacja i Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128) .
+
+## <a name="see-also"></a>Zobacz też
+ [Visual Studio Wizualizacja i Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)

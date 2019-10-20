@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Tworzenie niestandardowego zestawu reguł | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Tworzenie niestandardowego zestawu reguł | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -10,107 +10,106 @@ helpviewer_keywords:
 - Development Edition, rule sets
 ms.assetid: bcc42508-9592-4802-9f66-a50111641d73
 caps.latest.revision: 26
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 909242aaf8dd4caaee7af75e40554aaff648df68
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6e4aef02a2bb320112d7d268da28cf66b1ec6751
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68201371"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657446"
 ---
-# <a name="how-to-create-a-custom-rule-set"></a>Instrukcje: Tworzenie niestandardowego zestawu reguł
+# <a name="how-to-create-a-custom-rule-set"></a>Porady: tworzenie niestandardowego zestawu reguł
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)], i [!INCLUDE[vsPro](../includes/vspro-md.md)], można tworzyć i modyfikować niestandardowego *zestaw reguł* do potrzeb określonego projektu skojarzony z analizy kodu. Aby utworzyć niestandardową regułę zestaw, otwórz jedną lub więcej standardowe reguły ustawia z edytora zestawu reguł. Można następnie dodać lub usunąć określone zasady i możesz zmienić akcję wykonywaną podczas analizy kodu Określa, że reguły zostały naruszone.  
-  
- Aby utworzyć nową regułę niestandardową zestawu, zapisz go przy użyciu nowej nazwy pliku. Niestandardowego zestawu reguł jest przypisywany do projektu.  
-  
-## <a name="opening-the-rule-set-editor"></a>Otwarcie reguły edytorze zestawu  
-  
-#### <a name="to-open-an-empty-rule-set-file-in-the-rule-set-editor"></a>Aby otworzyć pusty zestaw reguł plik w edytorze zestawu reguł  
-  
-1. Na **pliku** menu [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], wskaż polecenie **New** a następnie kliknij przycisk **pliku**.  
-  
-2. W **nowy plik** okno dialogowe, kliknij przycisk **ogólne** w **zainstalowane szablony** listy, a następnie wybierz **zestawu reguł analizy kodu**.  
-  
-3. Pojawia się z edytora zestawu reguł. Na liście edytora nie zaznaczono żadnych reguł.  
-  
-#### <a name="to-create-a-custom-rule-from-a-single-existing-rule-set"></a>Aby utworzyć niestandardową regułę z jednego istniejącego zestawu reguł  
-  
-1. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy projekt, a następnie wybierz **właściwości**.  
-  
-2. Na **właściwości** kliknij pozycję **analizy kodu**.  
-  
-3. W **zestaw reguł** listy rozwijanej, wykonaj jedną z następujących czynności:  
-  
-   - Wybierz zestaw reguł, który chcesz dostosować.  
-  
-     \- lub —  
-  
-   - Wybierz  **\<Przeglądaj … >** do określenia zestawu istniejącą regułę, która nie jest na liście.  
-  
-4. Kliknij przycisk **Otwórz** reguły są wyświetlane w edytorze zestawu reguł.  
-  
-#### <a name="to-create-a-custom-rule-set-from-multiple-existing-rule-sets"></a>Aby utworzyć regułę niestandardową zestaw z wielu istniejących zestawów reguł  
-  
-1. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy projekt, a następnie wybierz **właściwości**.  
-  
-2. Na **właściwości** kliknij pozycję **analizy kodu**.  
-  
-3. Wybierz  **\<Wybierz wiele reguł ustawia... >** z **Uruchom ten zestaw reguł**.  
-  
-4. W **apletu Dodaj lub Usuń zestawy reguł** okno dialogowe, wybierz opcję zestawów reguł, w której chcesz podstawowa Twojego nowego zestawu reguł, a następnie kliknij przycisk **OK**.  
-  
-5. Zapisz nowy zestaw reguł.  
-  
-     Nazwa nowego zestawu reguł wybrano **Uruchom ten zestaw reguł** listy. Można zmienić nazwę wyświetlaną zestawu w następnym kroku reguł.  
-  
-6. (Opcjonalnie) Aby zmienić nazwę wyświetlaną zestawu reguł na **widoku** menu, kliknij przycisk **okno właściwości**. Wpisz nazwę wyświetlaną w **nazwa** pole.  
-  
-7. Aby dodać, usunąć, lub zmodyfikować zasady analizy kodu określonego w nowy zestaw reguł, kliknij przycisk **Otwórz**.  
-  
-## <a name="modifying-a-rule-set"></a>Modyfikowanie zestawu reguł  
-  
-#### <a name="to-modify-a-rule-set-in-the-rule-set-editor"></a>Aby zmodyfikować regułę ustawić w edytorze zestawu reguł  
-  
-- Aby zmienić nazwę wyświetlaną zestawu reguł na **widoku** menu, kliknij przycisk **okno właściwości**. Wprowadź nazwę wyświetlaną w **nazwa** pole. Należy zauważyć, że nazwa wyświetlana może się różnić od nazwy pliku.  
-  
-- Aby dodać zasady grupy do niestandardowego zestawu reguł, zaznacz pole wyboru grupy. Aby usunąć wszystkie zasady grupy, wyczyść pole wyboru.  
-  
-- Aby dodać daną regułę do niestandardowego zestawu reguł, zaznacz pole wyboru reguły. Aby usunąć regułę z zestawu reguł, wyczyść pole wyboru.  
-  
-- Aby zmienić akcję wykonywaną, gdy naruszenia reguły analizy kodu, kliknij w **akcji** pola dla tej reguły, a następnie wybierz jedną z następujących wartości:  
-  
-     **Ostrzegaj** — generuje ostrzeżenie.  
-  
-     **Błąd** — generuje błąd.  
-  
-     **Brak** — wyłącza reguły. Ta akcja jest taka sama jak usunięcie reguły z zestawu reguł.  
-  
-## <a name="changing-the-rule-set-editor-display"></a>Zmiana reguły Ustaw wyświetlania edytora  
-  
-#### <a name="to-group-filter-or-change-the-fields-in-the-rule-set-editor-by-using-the-rule-set-editor-toolbar"></a>Do grupy, filtrowanie lub zmiany pól w edytorze zestawu reguł za pomocą paska narzędzi edytora zestawu reguł  
-  
-- Aby rozwinąć reguł we wszystkich grupach, kliknij **Rozwiń wszystko**.  
-  
-- Aby zwinąć reguł we wszystkich grupach, kliknij **Zwiń wszystkie**.  
-  
-- Aby zmienić pola, które reguły są grupowane według, zaznacz pole z **Group By** listy. Aby wyświetlić reguły niezgrupowane, wybierz  **\<Brak >** .  
-  
-- Aby dodać lub usunąć pola w kolumnach regułę, kliknij przycisk **opcje kolumny**.  
-  
-- Aby ukryć reguł, które nie mają zastosowanie do bieżącego rozwiązania **Ukryj reguł, które nie mają zastosowanie do bieżącego rozwiązania**.  
-  
-- Aby przełączać się między pokazywaniu i ukrywaniu reguł, które są przypisane akcji błędu, kliknij przycisk **Pokaż reguły, które mogą generować błędy analizy kodu**.  
-  
-- Aby przełączać się między pokazywaniu i ukrywaniu reguł, które są przypisane ostrzeżenie akcję, kliknij przycisk **Pokaż reguły, które mogą generować ostrzeżenia analizy kodu**.  
-  
-- Aby przełączać się między pokazywaniu i ukrywaniu reguł, które są przypisane **Brak** działania, kliknij przycisk **Pokaż reguły, które nie są włączone**.  
-  
-- Aby dodać lub usunąć domyślnej reguły ustawia bieżący zestaw reguł firmy Microsoft, kliknij przycisk **apletu Dodaj lub usuń podrzędne zestawy reguł**.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Instrukcje: Konfigurowanie analizy kodu dla projektu kodu zarządzanego](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
- [Informacje o zestawie reguł analizy kodu](../code-quality/code-analysis-rule-set-reference.md)
+W [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] i [!INCLUDE[vsPro](../includes/vspro-md.md)] można utworzyć i zmodyfikować *zestaw reguł* niestandardowych w celu spełnienia określonych wymagań projektu skojarzonych z analizą kodu. Aby utworzyć niestandardowy zestaw reguł, należy otworzyć co najmniej jeden standardowy zestaw reguł w edytorze zestawu reguł. Następnie można dodać lub usunąć określone reguły, a także zmienić akcję, która występuje, gdy analiza kodu ustali, że reguła została naruszona.
+
+ Aby utworzyć nowy niestandardowy zestaw reguł, Zapisz go przy użyciu nowej nazwy pliku. Niestandardowy zestaw reguł jest automatycznie przypisywany do projektu.
+
+## <a name="opening-the-rule-set-editor"></a>Otwieranie edytora zestawu reguł
+
+#### <a name="to-open-an-empty-rule-set-file-in-the-rule-set-editor"></a>Aby otworzyć pusty plik zestawu reguł w edytorze zestawu reguł
+
+1. W menu **plik** [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] wskaż polecenie **Nowy** , a następnie kliknij polecenie **plik**.
+
+2. W oknie dialogowym **nowy plik** kliknij pozycję **Ogólne** na liście **zainstalowane szablony** , a następnie wybierz pozycję **zestaw reguł analizy kodu**.
+
+3. Zostanie wyświetlony Edytor zestawu reguł. Nie wybrano żadnych reguł na liście edytorów.
+
+#### <a name="to-create-a-custom-rule-from-a-single-existing-rule-set"></a>Aby utworzyć regułę niestandardową na podstawie jednego istniejącego zestawu reguł
+
+1. W Eksplorator rozwiązań kliknij prawym przyciskiem myszy projekt, a następnie wybierz polecenie **Właściwości**.
+
+2. Na karcie **Właściwości** kliknij pozycję **Analiza kodu**.
+
+3. Z listy rozwijanej **zestaw reguł** wykonaj jedną z następujących czynności:
+
+   - Wybierz zestaw reguł, który chcesz dostosować.
+
+     \- lub-
+
+   - Wybierz **\<Browse... >** , aby określić istniejący zestaw reguł, którego nie ma na liście.
+
+4. Kliknij przycisk **Otwórz** , aby wyświetlić reguły w edytorze zestawu reguł.
+
+#### <a name="to-create-a-custom-rule-set-from-multiple-existing-rule-sets"></a>Aby utworzyć niestandardowy zestaw reguł na podstawie wielu istniejących zestawów reguł
+
+1. W Eksplorator rozwiązań kliknij prawym przyciskiem myszy projekt, a następnie wybierz polecenie **Właściwości**.
+
+2. Na karcie **Właściwości** kliknij pozycję **Analiza kodu**.
+
+3. Wybierz **\<Choose wiele zestawów reguł... >** **uruchamiania tego zestawu reguł**.
+
+4. W oknie dialogowym **Dodawanie lub usuwanie zestawów reguł** wybierz zestawy reguł, dla których chcesz utworzyć nowy zestaw reguł, a następnie kliknij przycisk **OK**.
+
+5. Zapisz nowy zestaw reguł.
+
+     Nazwa nowego zestawu reguł jest wybierana na liście **Uruchom ten zestaw reguł** . Można zmienić nazwę wyświetlaną zestawu reguł w następnym kroku.
+
+6. Obowiązkowe Aby zmienić nazwę wyświetlaną zestawu reguł, w menu **Widok** kliknij polecenie **okno właściwości**. Wpisz nazwę wyświetlaną w polu **Nazwa** .
+
+7. Aby dodać, usunąć lub zmodyfikować określone reguły analizy kodu w nowym zestawie reguł, kliknij przycisk **Otwórz**.
+
+## <a name="modifying-a-rule-set"></a>Modyfikowanie zestawu reguł
+
+#### <a name="to-modify-a-rule-set-in-the-rule-set-editor"></a>Aby zmodyfikować zestaw reguł w edytorze zestawu reguł
+
+- Aby zmienić nazwę wyświetlaną zestawu reguł, w menu **Widok** kliknij polecenie **okno właściwości**. Wprowadź nazwę wyświetlaną w polu **Nazwa** . Zauważ, że nazwa wyświetlana może się różnić od nazwy pliku.
+
+- Aby dodać wszystkie reguły grupy do niestandardowego zestawu reguł, zaznacz pole wyboru grupy. Aby usunąć wszystkie reguły grupy, usuń zaznaczenie pola wyboru.
+
+- Aby dodać określoną regułę do niestandardowego zestawu reguł, zaznacz pole wyboru reguły. Aby usunąć regułę z zestawu reguł, usuń zaznaczenie pola wyboru.
+
+- Aby zmienić akcję wykonywaną w przypadku naruszenia reguły w analizie kodu, kliknij pole **akcji** dla reguły, a następnie wybierz jedną z następujących wartości:
+
+     **Warn** — generuje ostrzeżenie.
+
+     **Błąd** — generuje błąd.
+
+     **Brak** — wyłącza regułę. Ta akcja jest taka sama jak usuwanie reguły z zestawu reguł.
+
+## <a name="changing-the-rule-set-editor-display"></a>Zmienianie wyświetlania edytora zestawu reguł
+
+#### <a name="to-group-filter-or-change-the-fields-in-the-rule-set-editor-by-using-the-rule-set-editor-toolbar"></a>Aby grupować, filtrować lub zmieniać pola w edytorze zestawu reguł przy użyciu paska narzędzi edytora zestawu reguł
+
+- Aby rozwinąć reguły we wszystkich grupach, kliknij przycisk **Rozwiń wszystko**.
+
+- Aby zwinąć reguły we wszystkich grupach, kliknij przycisk **Zwiń wszystko**.
+
+- Aby zmienić pole, według którego reguły są grupowane, wybierz pole z listy **Grupuj według** . Aby wyświetlić reguły niezgrupowane, wybierz pozycję **\<None >** .
+
+- Aby dodać lub usunąć pola w kolumnach reguł, kliknij przycisk **Opcje kolumn**.
+
+- Aby ukryć reguły, które nie mają zastosowania do bieżącego rozwiązania, **Ukryj reguły, które nie mają zastosowania do bieżącego rozwiązania**.
+
+- Aby przełączać się między pokazywaniem i ukrywaniem reguł, które są przypisane do akcji błędu, kliknij przycisk **Pokaż reguły, które mogą generować błędy analizy kodu**.
+
+- Aby przełączać się między pokazywaniem i ukrywaniem reguł, które są przypisane do akcji ostrzeżenia, kliknij przycisk **Pokaż reguły, które mogą generować ostrzeżenia analizy kodu**.
+
+- Aby przełączać się między pokazywaniem i ukrywaniem reguł, do których przypisano akcję **Brak** , kliknij przycisk **Pokaż reguły, które nie są włączone**.
+
+- Aby dodać lub usunąć zestawy reguł domyślnych firmy Microsoft do bieżącego zestawu reguł, kliknij przycisk **Dodaj lub usuń podrzędne zestawy reguł**.
+
+## <a name="see-also"></a>Zobacz też
+ [Instrukcje: Konfigurowanie analizy kodu dla odwołania do](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md) [zestawu reguł analizy kodu](../code-quality/code-analysis-rule-set-reference.md) projektu zarządzanego

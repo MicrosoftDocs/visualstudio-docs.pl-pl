@@ -1,5 +1,5 @@
 ---
-title: Tworzenie aplikacji za pomocą projektanta przepływów pracy
+title: Tworzenie aplikacji przy użyciu Projektanta przepływu pracy
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,38 +11,38 @@ helpviewer_keywords:
 - Visual Studio Workflow Designer [WFD]
 - Workflow Designer [WFD], overview
 ms.assetid: 4cd062b1-b496-4668-bbc1-ee85545e066d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45c687be4efc5a83827836cd1ac89bbc38ad4cb1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b689628983c50fc891c5a3ebe6a0df5c952468d8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949786"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650532"
 ---
 # <a name="develop-apps-with-the-workflow-designer"></a>Programowanie aplikacji za pomocą Projektanta przepływu pracy
 
-Projektant przepływu pracy jest projektanta wizualnego i debugera dla konstrukcji graficznego i debugowanie [Windows Workflow Foundation](/dotnet/framework/windows-workflow-foundation/index) aplikacji (WF) w programie Visual Studio. Pozwala ona do tworzenia aplikacji złożonych przepływu pracy, biblioteka działań lub usługi Windows Communication Foundation (WCF) przy użyciu szablonów i projektantów działań.
+Projektant przepływu pracy to wizualny Projektant i debuger służący do graficznego tworzenia i debugowania aplikacji [Windows Workflow Foundation](/dotnet/framework/windows-workflow-foundation/index) (WF) w programie Visual Studio. Umożliwia tworzenie złożonej aplikacji przepływu pracy, biblioteki działań lub usługi Windows Communication Foundation (WCF) za pomocą szablonów i projektantów działań.
 
-## <a name="install-windows-workflow-foundation"></a>Instalowanie programu Windows Workflow Foundation
+## <a name="install-windows-workflow-foundation"></a>Zainstaluj Windows Workflow Foundation
 
-Aby użyć szablonów projektu przepływu pracy w programie Visual Studio, należy najpierw zainstalować **Windows Workflow Foundation** składnika.
+Aby użyć szablonów projektów przepływu pracy w programie Visual Studio, najpierw Zainstaluj składnik **Windows Workflow Foundation** .
 
-1. Otwórz Instalator programu Visual Studio. Szybki sposób, aby go otworzyć polega na wybraniu **narzędzia** > **Pobierz narzędzia i funkcje** w programie Visual Studio.
+1. Otwórz Instalator programu Visual Studio. Aby szybko otworzyć tę funkcję, wybierz pozycję **narzędzia**  > **Pobierz narzędzia i funkcje** w programie Visual Studio.
 
-1. Instalator programu Visual Studio wybierz **poszczególne składniki** kartę.
+1. W Instalator programu Visual Studio wybierz kartę **poszczególne składniki** .
 
-1. Przewiń w dół do **działań programistycznych** kategorii, a następnie wybierz **Windows Workflow Foundation** składnika.
+1. Przewiń w dół do kategorii **działania deweloperskie** , a następnie wybierz składnik **Windows Workflow Foundation** .
 
    ![Składnik Windows Workflow Foundation dla programu Visual Studio](media/windows-workflow-foundation-component.png)
 
-1. Wybierz **zmodyfikować**.
+1. Wybierz pozycję **Modyfikuj**.
 
-   Program Visual Studio instaluje **Windows Workflow Foundation** składnika.
+   Program Visual Studio instaluje składnik **Windows Workflow Foundation** .
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Windows Workflow Foundation (program .NET Framework)](/dotnet/framework/windows-workflow-foundation/index)
+- [Windows Workflow Foundation (.NET Framework)](/dotnet/framework/windows-workflow-foundation/index)

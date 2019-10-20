@@ -2,51 +2,51 @@
 title: Ustawienia środowiska
 ms.date: 11/21/2018
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c799d903c29d745d97a407c4c25f1285a5f35151
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bb535a301ec7e6045a44b910cecc21f2306b94bc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978221"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650882"
 ---
 # <a name="environment-settings-for-visual-studio"></a>Ustawienia środowiska dla programu Visual Studio
 
-Po otwarciu programu Visual Studio po raz pierwszy można optymalizować środowisko projektowe dla typ pracy deweloperskiej, że wykonujesz najwięcej, wybierając kolekcję ustawień. Każda kolekcja optymalizuje elementy, takie jak skróty klawiaturowe, układy okna, projektów i szablonów elementów i widoczności poleceń.
+Po pierwszym otwarciu programu Visual Studio można zoptymalizować środowisko programistyczne dla typu rozwoju, który można wykorzystać, wybierając kolekcję ustawień. Każda kolekcja optymalizuje elementy, takie jak skróty klawiaturowe, układy okien, szablony projektów i elementów oraz widoczność poleceń.
 
-Dostępne są następujące kolekcje ustawienia:
+Dostępne są następujące kolekcje ustawień:
 
 - Ogólne
 - JavaScript
 - Visual Basic
 - Visual C#
 - Visual C++
-- Tworzenie aplikacji sieci Web
-- Tworzenie aplikacji sieci Web (tylko kod)
+- Programowanie dla sieci Web
+- Programowanie dla sieci Web (tylko kod)
 
 ## <a name="reset-settings"></a>Resetuj ustawienia
 
-Aby zmienić ustawienia środowiska deweloperskiego, po otwarciu programu Visual Studio po raz pierwszy, wykonaj następujące kroki:
+Aby zmienić ustawienia programistyczne po otwarciu programu Visual Studio po raz pierwszy, wykonaj następujące kroki:
 
-1. Wybierz **narzędzia** > **Import i eksport ustawień** na pasku menu, aby otworzyć **Kreatora importowania i eksportowania ustawień**.
+1. Wybierz pozycję **narzędzia**  > **Importuj i Eksportuj ustawienia** z paska menu, aby otworzyć **Kreatora importowania i eksportowania ustawień**.
 
-1. W **Kreatora importowania i eksportowania ustawień**, wybierz opcję **Resetuj wszystkie ustawienia**, a następnie wybierz pozycję **dalej**.
+1. W **Kreatorze importowania i eksportowania ustawień**wybierz opcję **Zresetuj wszystkie ustawienia**, a następnie wybierz przycisk **dalej**.
 
    ![Kreator importowania i eksportowania ustawień w programie Visual Studio](media/reset-all-settings.png)
 
-1. Na **zapisać bieżące ustawienia** stronie, wybierz opcję **tak** lub **nie**, a następnie wybierz pozycję **dalej**.
+1. Na stronie **Zapisywanie bieżących ustawień** wybierz opcję **tak** lub **nie**, a następnie wybierz przycisk **dalej**.
 
-1. Na **wybierz domyślnej kolekcji ustawień** strony, wybierz kolekcję, a następnie wybierz pozycję **Zakończ**.
+1. Na stronie **Wybierz domyślną kolekcję ustawień** wybierz kolekcję, a następnie wybierz pozycję **Zakończ**.
 
-   ![Ustawienia kolekcji w programie Visual Studio](media/settings-collections.png)
+   ![Kolekcje ustawień w programie Visual Studio](media/settings-collections.png)
 
-1. Na **resetowania pełną** wybierz opcję **Zamknij**.
+1. Na stronie **Resetowanie ukończone** wybierz pozycję **Zamknij**.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Synchronizacja ustawień na wielu komputerach](synchronized-settings-in-visual-studio.md)
+- [Synchronizowanie ustawień na wielu komputerach](synchronized-settings-in-visual-studio.md)
 - [Personalizowanie środowiska IDE programu Visual Studio](personalizing-the-visual-studio-ide.md)

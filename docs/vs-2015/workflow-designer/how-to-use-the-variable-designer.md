@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Używanie projektanta zmiennych | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: korzystanie z projektanta zmiennych | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -8,35 +8,33 @@ f1_keywords:
 - System.Activities.Presentation.View.DesignTimeVariable.UI
 ms.assetid: 0318dfb0-bf8f-4f92-9b86-ae4c1b2161ad
 caps.latest.revision: 14
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9ebfcf53ce4d03f676930bd905baa0723c17e481
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 4744864824da5efb238e9af1a5a12fcef79ea4ff
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65697092"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659073"
 ---
-# <a name="how-to-use-the-variable-designer"></a>Instrukcje: Używanie projektanta zmiennych
-Projektanta zmiennych służy do tworzenia zmiennych do użytku w scenariuszach powiązanie danych i instrukcji warunkowych. Projektant jest dostępne po kliknięciu **zmienne** przycisku w lewym dolnym rogu obszaru roboczego projektowania. Projektant zawiera listę zmiennych, które są wyświetlane w formie tabelarycznej i mogą być sortowane przez każdy z nagłówków kolumn, z wyjątkiem **domyślne** kolumny. Każda zmienna zawiera nazwę, typ zmiennej, zakresu i wartość domyślną (jeśli istnieje). Nazwa i domyślne wartości są tekst do edycji i typie i zakresie są rozwijane. Zakres jest działania, który został wybrany, gdy wywołano projektanta zmiennych. Jeśli nie można utworzyć zmiennej w zakresie wyboru, zakres będzie domyślnie do najbliższej działania nadrzędnego zaznaczenia, umożliwiający zmiennych, które można utworzyć w swoim zakresie. [!INCLUDE[crabout](../includes/crabout-md.md)] zmienne, zobacz [zmienne i argumenty](https://msdn.microsoft.com/library/d03dbe34-5b2e-4f21-8b57-693ee49611b8).  
-  
- Kolejność sortowania nie została zastosowana, dopóki użytkownik jawnie używa sortowania formantów, zostanie zamknięty i ponownie otwiera projektanta zmiennych lub tworzy innej zmiennej.  
-  
-### <a name="to-create-a-new-variable"></a>Aby utworzyć nową zmienną  
-  
-1. Otwórz rozwiązanie przepływu pracy lub działania w [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
-  
-2. W obszarze roboczym projektu wybierz działanie w przepływie pracy.  
-  
-3. Otwórz projektanta zmiennych, klikając pozycję **zmienne** przycisku w lewym dolnym rogu obszaru roboczego projektowania. Pojawi się projektanta zmiennych.  
-  
-4. Kliknij pusty wiersz etykietą **Tworzenie zmiennej**. Spowoduje to dodanie nowego wiersza przy użyciu nowej zmiennej, używając następujących wartości domyślne: variablex dla **nazwa** gdzie x jest liczbą całkowitą o początkowej wartości 1, który jest automatycznie zwiększany w celu tworzenia unikatowych nazw zmiennych,  **Ciąg** dla **typ zmiennej**, i **sekwencji** dla **zakres**. Wartość nie jest dodawany do **domyślne**. Wartości te można zmienić w dowolnym momencie podczas procesu projektowania przepływu pracy.  
-  
+# <a name="how-to-use-the-variable-designer"></a>Instrukcje: korzystanie z projektanta zmiennych
+Projektant zmiennych służy do tworzenia zmiennych do użycia w scenariuszach powiązań danych i instrukcjach warunkowych. Dostęp do projektanta można uzyskać, klikając przycisk **zmienne** w lewym dolnym rogu kanwy projektowania. Projektant zawiera listę zmiennych, które są wyświetlane w formie tabelarycznej i mogą być posortowane według poszczególnych nagłówków kolumn, z wyjątkiem kolumny **domyślnej** . Każda zmienna zawiera nazwę, typ zmiennej, zakres i wartość domyślną (jeśli istnieje). Nazwa i wartość domyślna są edytowalnymi polami tekstowymi, a typ i zakres są rozwijane. Zakres to działanie, które zostało wybrane podczas wywoływania projektanta zmiennych. Jeśli zmienna nie może zostać utworzona w ramach zakresu zaznaczenia, zakres domyślnie będzie najbliższym działaniem nadrzędnym zaznaczenia, które pozwala na tworzenie zmiennych w swoim zakresie. zmienne [!INCLUDE[crabout](../includes/crabout-md.md)], zobacz [zmienne i argumenty](https://msdn.microsoft.com/library/d03dbe34-5b2e-4f21-8b57-693ee49611b8).
+
+ Kolejność sortowania nie zostanie zastosowana, dopóki użytkownik jawnie nie użyje kontrolki sortowania, zamknie i ponownie otworzy projektanta zmiennych lub utworzy kolejną zmienną.
+
+### <a name="to-create-a-new-variable"></a>Aby utworzyć nową zmienną
+
+1. Otwórz rozwiązanie przepływu pracy lub działania w [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].
+
+2. Na kanwie projektowania wybierz działanie w przepływie pracy.
+
+3. Otwórz projektanta zmiennych, klikając przycisk **zmienne** w lewym dolnym rogu kanwy projektowania. Zostanie wyświetlony Projektant zmiennych.
+
+4. Kliknij pusty wiersz z etykietą **Utwórz zmienną**. Spowoduje to dodanie nowego wiersza z nową zmienną przy użyciu następujących wartości domyślnych: variablex dla **nazwy** , gdzie x jest liczbą całkowitą z początkową wartością 1, która jest automatycznie zwiększana w celu utworzenia unikatowych nazw zmiennych, **ciągu** dla **zmiennej Typ**i **sekwencja** dla **zakresu**. Żadna wartość nie jest dodawana **Domyślnie**. Te wartości można zmienić w dowolnym momencie podczas procesu projektowania przepływu pracy.
+
     > [!NOTE]
-    > Aby usunąć zmienną, wybierz zmienną, klikając go, a następnie naciśnij klawisz **Usuń** klucza.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Używanie projektanta przepływu pracy](../workflow-designer/using-the-workflow-designer.md)   
- [Zmienne i argumenty](https://msdn.microsoft.com/library/d03dbe34-5b2e-4f21-8b57-693ee49611b8)   
- [Instrukcje: Używanie projektanta argumentów](../workflow-designer/how-to-use-the-argument-designer.md)
+    > Aby usunąć zmienną, wybierz ją, klikając ją, a następnie naciśnij klawisz **delete** .
+
+## <a name="see-also"></a>Zobacz też
+ [Używanie](../workflow-designer/using-the-workflow-designer.md) [zmiennych Projektant przepływu pracy i argumentów](https://msdn.microsoft.com/library/d03dbe34-5b2e-4f21-8b57-693ee49611b8) [jak: korzystanie z projektanta argumentów](../workflow-designer/how-to-use-the-argument-designer.md)

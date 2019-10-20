@@ -13,122 +13,122 @@ helpviewer_keywords:
 - updating datasets, errors
 - concurrency control, walkthroughs
 ms.assetid: 73ee9759-0a90-48a9-bf7b-9d6fc17bff93
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a8e14a53719d4913bcc04bcb2b702ca4ec4a8c55
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6096e8919d21a93af0dbf6beea2f263bd500d26c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566745"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648429"
 ---
 # <a name="handle-a-concurrency-exception"></a>Obsługiwanie wyjątku współbieżności
 
-Wyjątki współbieżności (<xref:System.Data.DBConcurrencyException?displayProperty=fullName>) są wywoływane, gdy dwóch użytkowników podejmują próby zmiany te same dane w bazie danych, w tym samym czasie. W tym instruktażu utworzysz aplikacji Windows, który ilustruje sposób catch <xref:System.Data.DBConcurrencyException>, znajdź wiersz, który spowodował błąd i Dowiedz się, strategii, sposobu jego obsługi.
+Wyjątki współbieżności (<xref:System.Data.DBConcurrencyException?displayProperty=fullName>) są wywoływane, gdy dwóch użytkowników próbuje zmienić te same dane w bazie danych w tym samym czasie. W tym instruktażu utworzysz aplikację systemu Windows, która ilustruje sposób przechwytywania <xref:System.Data.DBConcurrencyException>, lokalizowania wiersza, który spowodował błąd, oraz informacje o strategii ich obsługi.
 
 Ten przewodnik przeprowadzi Cię przez następujący proces:
 
-1. Utwórz nową **aplikacja interfejsu Windows Forms** projektu.
+1. Utwórz nowy projekt **aplikacji Windows Forms** .
 
-2. Utwórz nowy zestaw danych na podstawie tabeli klientów Northwind.
+2. Utwórz nowy zestaw danych na podstawie tabeli Klienci Northwind.
 
-3. Tworzenie formularza za pomocą <xref:System.Windows.Forms.DataGridView> do wyświetlania danych.
+3. Utwórz formularz z <xref:System.Windows.Forms.DataGridView>, aby wyświetlić dane.
 
-4. Wypełnianie zestawu danych danymi z tabeli Klienci w bazie danych Northwind.
+4. Wypełnianie zestawu danych danymi z tabeli Customers w bazie danych Northwind.
 
-5. Użyj **Pokaż dane tabeli** są wyposażone w **Eksploratora serwera** dostęp do danych z tabeli Customers i zmienić rekord.
+5. Użyj funkcji **Pokaż dane tabeli** w **Eksplorator serwera** , aby uzyskać dostęp do danych z tabeli Customers i zmienić rekord.
 
-6. Zmień ten sam rekord na inną wartość, zaktualizować zestaw danych, a próba zapisania zmian w bazie danych, co powoduje błąd współbieżności, są zgłaszane.
+6. Zmień ten sam rekord na inną wartość, zaktualizuj zestaw danych i spróbuj zapisać zmiany w bazie danych, co powoduje błąd współbieżności.
 
-7. Wychwycić błąd, a następnie wyświetlić różne wersje rekordu, dzięki czemu użytkownik określić, czy chcesz kontynuować i aktualizują bazę danych lub anulować aktualizację.
+7. Zapoznaj się z błędem, a następnie Wyświetl różne wersje rekordu, umożliwiając użytkownikowi określenie, czy chcesz kontynuować i zaktualizować bazę danych, albo Anuluj aktualizację.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-Ten przewodnik korzysta z programu SQL Server Express LocalDB i bazie danych Northwind.
+W tym instruktażu jest stosowana SQL Server Express LocalDB i Przykładowa baza danych Northwind.
 
-1. Jeśli nie masz programu SQL Server Express LocalDB, zainstaluj go z [stronę pobierania programu SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), lub za pomocą **Instalatora programu Visual Studio**. W **Instalatora programu Visual Studio**, można zainstalować programu SQL Server Express LocalDB, jako część **przechowywanie i przetwarzanie danych** obciążenie, lub jako poszczególnych składników.
+1. Jeśli nie masz SQL Server Express LocalDB, zainstaluj go na [stronie pobierania SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)lub za pośrednictwem **Instalator programu Visual Studio**. W **Instalator programu Visual Studio**można zainstalować SQL Server Express LocalDB jako część obciążenia **magazynu danych i przetwarzania** lub jako pojedynczy składnik.
 
-2. Instalowanie przykładowej bazy danych Northwind, wykonaj następujące czynności:
+2. Zainstaluj przykładową bazę danych Northwind, wykonując następujące kroki:
 
-    1. W programie Visual Studio, otwórz **Eksplorator obiektów SQL Server** okna. (Eksplorator obiektów SQL Server jest instalowany jako część **przechowywanie i przetwarzanie danych** obciążenie w Instalatorze programu Visual Studio.) Rozwiń **programu SQL Server** węzła. Kliknij prawym przyciskiem myszy w ramach wystąpienia LocalDB, a następnie wybierz pozycję **nowe zapytanie**.
+    1. W programie Visual Studio Otwórz okno **Eksplorator obiektów SQL Server** . (Eksplorator obiektów SQL Server jest instalowany jako część obciążenia **magazynu i przetwarzania danych** w Instalator programu Visual Studio). Rozwiń węzeł **SQL Server** . Kliknij prawym przyciskiem myszy wystąpienie LocalDB i wybierz pozycję **nowe zapytanie**.
 
        Zostanie otwarte okno edytora zapytań.
 
-    2. Kopiuj [skryptów języka Transact-SQL Northwind](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) do Schowka. Ten skrypt języka T-SQL tworzy bazę danych Northwind od podstaw i wypełnia ją z danymi.
+    2. Skopiuj [skrypt języka Transact-SQL Northwind](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) do Schowka. Ten skrypt T-SQL tworzy bazę danych Northwind od podstaw i wypełnia ją danymi.
 
-    3. Wklej skrypt języka T-SQL do edytora zapytań, a następnie wybierz **Execute** przycisku.
+    3. Wklej skrypt T-SQL do edytora zapytań, a następnie wybierz przycisk Execute ( **Wykonaj** ).
 
-       Po pewnym czasie odliczania zapytania i utworzeniu bazy danych Northwind.
+       Po krótkim czasie zapytanie kończy działanie i zostanie utworzona baza danych Northwind.
 
 ## <a name="create-a-new-project"></a>Tworzenie nowego projektu
 
-Rozpocznij od utworzenia nowej aplikacji Windows Forms:
+Zacznij od utworzenia nowej aplikacji Windows Forms:
 
-1. W programie Visual Studio na **pliku** menu, wybierz opcję **New** > **projektu**.
+1. W programie Visual Studio w menu **plik** wybierz pozycję **Nowy** **projekt** > .
 
-2. Rozwiń **Visual C#** lub **języka Visual Basic** w okienku po lewej stronie, a następnie zaznacz **pulpitu Windows**.
+2. Rozwiń pozycję **Wizualizacja C#**  lub **Visual Basic** w okienku po lewej stronie, a następnie wybierz pozycję **pulpit systemu Windows**.
 
-3. W środkowym okienku wybierz **Windows Forms App** typ projektu.
+3. W środkowym okienku wybierz typ projektu **aplikacji Windows Forms** .
 
-4. Nadaj projektowi nazwę **ConcurrencyWalkthrough**, a następnie wybierz **OK**.
+4. Nazwij projekt **ConcurrencyWalkthrough**, a następnie wybierz przycisk **OK**.
 
-     **ConcurrencyWalkthrough** projekt zostanie utworzony i dodany do **Eksploratora rozwiązań**, i nowy formularz zostanie otwarty w projektancie.
+     Projekt **ConcurrencyWalkthrough** jest tworzony i dodawany do **Eksplorator rozwiązań**, a nowy formularz zostanie otwarty w projektancie.
 
 ## <a name="create-the-northwind-dataset"></a>Tworzenie zestawu danych Northwind
 
-Następnie należy utworzyć zestaw danych o nazwie **NorthwindDataSet**:
+Następnie Utwórz zestaw danych o nazwie **NorthwindDataSet**:
 
-1. Na **danych** menu, wybierz **Dodaj nowe dane źródła**.
+1. W menu **dane** wybierz polecenie **Dodaj nowe źródło danych**.
 
    Zostanie otwarty Kreator konfiguracji źródła danych.
 
-2. Na **wybierz typ źródła danych** ekranu, wybierz opcję **bazy danych**.
+2. Na ekranie **Wybierz typ źródła danych** wybierz pozycję **baza danych**.
 
    ![Kreator konfiguracji źródła danych w programie Visual Studio](media/data-source-configuration-wizard.png)
 
-3. Wybierz połączenie z przykładową bazą danych Northwind, z listy dostępnych połączeń. Jeśli połączenie nie jest dostępne na liście połączeń, wybierz opcję **nowe połączenie**.
+3. Wybierz połączenie z przykładową bazą danych Northwind z listy dostępnych połączeń. Jeśli połączenie nie jest dostępne na liście połączeń, wybierz pozycję **nowe połączenie**.
 
     > [!NOTE]
-    > Jeśli łączysz się z plikiem lokalnej bazy danych, wybierz opcję **nie** po wyświetleniu monitu, jeśli w przypadku chcesz dodać plik do projektu.
+    > Jeśli łączysz się z lokalnym plikiem bazy danych, wybierz opcję **nie** , jeśli chcesz dodać plik do projektu.
 
-4. Na **Zapisz parametry połączenia do pliku konfiguracji aplikacji** ekranu, wybierz opcję **dalej**.
+4. Na ekranie **Zapisz parametry połączenia do pliku konfiguracji aplikacji** wybierz pozycję **dalej**.
 
-5. Rozwiń **tabel** a następnie wybierz węzeł **klientów** tabeli. Domyślna nazwa zestawu danych powinny być **NorthwindDataSet**.
+5. Rozwiń węzeł **tabele** , a następnie wybierz tabelę **Customers** . Domyślną nazwą zestawu danych powinna być **NorthwindDataSet**.
 
-6. Wybierz **Zakończ** można dodać zestaw danych do projektu.
+6. Wybierz pozycję **Zakończ** , aby dodać zestaw danych do projektu.
 
-## <a name="create-a-data-bound-datagridview-control"></a>Tworzenie formantu DataGridView powiązanych z danymi
+## <a name="create-a-data-bound-datagridview-control"></a>Tworzenie kontrolki DataGridView powiązanej z danymi
 
-W tej sekcji utworzysz <xref:System.Windows.Forms.DataGridView?displayProperty=nameWithType> , przeciągając **klientów** elementu z **źródeł danych** okna do formularza Windows.
+W tej sekcji utworzysz <xref:System.Windows.Forms.DataGridView?displayProperty=nameWithType>, przeciągając element **Customers** z okna **źródła danych** na formularz systemu Windows.
 
-1. Aby otworzyć **źródeł danych** okna na **danych** menu, wybierz **Pokaż źródła danych**.
+1. Aby otworzyć okno **źródła danych** , w menu **dane** wybierz polecenie **Pokaż źródła danych**.
 
-2. W **źródeł danych** okna, rozwiń węzeł **NorthwindDataSet** węzeł, a następnie wybierz **klientów** tabeli.
+2. W oknie **źródła danych** rozwiń węzeł **NorthwindDataSet** , a następnie wybierz tabelę **Customers** .
 
-3. Wybierz strzałkę w dół w węźle tabeli, a następnie wybierz **DataGridView** na liście rozwijanej.
+3. Wybierz strzałkę w dół w węźle tabela, a następnie na liście rozwijanej wybierz pozycję **DataGridView** .
 
-4. Przeciągnij tabelę na wolne miejsce formularza.
+4. Przeciągnij tabelę do pustego obszaru formularza.
 
-     A <xref:System.Windows.Forms.DataGridView> formantu o nazwie **CustomersDataGridView**, a <xref:System.Windows.Forms.BindingNavigator> o nazwie **CustomersBindingNavigator**, są dodawane do formularza, który jest powiązany z <xref:System.Windows.Forms.BindingSource>. To z kolei wiązanie z tabeli Customers w NorthwindDataSet.
+     Kontrolka <xref:System.Windows.Forms.DataGridView> o nazwie **customersDataGridView**i <xref:System.Windows.Forms.BindingNavigator> o nazwie **CustomersBindingNavigator**są dodawane do formularza, który jest powiązany z <xref:System.Windows.Forms.BindingSource>. Jest to z kolei powiązane z tabelą Customers w NorthwindDataSet.
 
-## <a name="test-the-form"></a>Przetestuj formularz
+## <a name="test-the-form"></a>Testowanie formularza
 
-Teraz możesz przetestować formularz, aby upewnić się, że działa zgodnie z oczekiwaniami do tej pory:
+Teraz można testować formularz, aby upewnić się, że działa zgodnie z oczekiwaniami do tego momentu:
 
-1. Wybierz **F5** do uruchomienia aplikacji.
+1. Wybierz klawisz **F5** , aby uruchomić aplikację.
 
-     Zostanie wyświetlony formularz z <xref:System.Windows.Forms.DataGridView> formant na nim, który jest wypełniony przy użyciu danych z tabeli Customers.
+     Formularz zostanie wyświetlony z kontrolką <xref:System.Windows.Forms.DataGridView>, która jest wypełniana danymi z tabeli Customers.
 
-2. Na **debugowania** menu, wybierz opcję **Zatrzymaj debugowanie**.
+2. W menu **Debuguj** wybierz polecenie **Zatrzymaj debugowanie**.
 
-## <a name="handle-concurrency-errors"></a>Obsługa współbieżności błędów
+## <a name="handle-concurrency-errors"></a>Obsługa błędów współbieżności
 
-Sposób obsługi błędów jest zależna od firmy zasady aplikacji. W tym przewodniku używamy strategia jako przykładu sposobu obsługi błąd współbieżności.
+Sposób obsługi błędów zależy od konkretnych reguł firmy, które regulują aplikację. W tym instruktażu używamy następującej strategii jako przykładu, aby obsłużyć błąd współbieżności.
 
-Aplikacja wyświetli użytkownika z trzech wersjach rekordu:
+Aplikacja prezentuje użytkownikowi trzy wersje rekordu:
 
 - Bieżący rekord w bazie danych
 
@@ -136,81 +136,81 @@ Aplikacja wyświetli użytkownika z trzech wersjach rekordu:
 
 - Proponowane zmiany w zestawie danych
 
-Następnie użytkownik będzie mógł zastąpienia bazy danych przy użyciu proponowanych wersji lub anulować aktualizację i odświeżyć zestaw danych z nowymi wartościami z bazy danych.
+Użytkownik może zastąpić bazę danych zaproponowaną wersją lub anulować aktualizację i odświeżyć zestaw danych przy użyciu nowych wartości z bazy danych.
 
 ### <a name="to-enable-the-handling-of-concurrency-errors"></a>Aby włączyć obsługę błędów współbieżności
 
-1. Utwórz procedurę obsługi błędów niestandardowych.
+1. Utwórz niestandardową procedurę obsługi błędów.
 
-2. Wyświetlanie opcji dla użytkownika.
+2. Wyświetl opcje dla użytkownika.
 
-3. Przetwarzanie odpowiedzi użytkownika.
+3. Przetwórz odpowiedź użytkownika.
 
-4. Wyślij ponownie aktualizację, lub przywrócić dane w zestawie danych.
+4. Wyślij ponownie aktualizację lub zresetuj dane w zestawie danych.
 
-### <a name="add-code-to-handle-the-concurrency-exception"></a>Dodaj kod obsługi wyjątku współbieżności
+### <a name="add-code-to-handle-the-concurrency-exception"></a>Dodaj kod obsługujący wyjątek współbieżności
 
-Gdy użytkownik podejmie próbę przeprowadzenia aktualizacji, a wyjątek jest zgłaszany, zazwyczaj chcesz zrobić coś z informacjami, które są dostarczane przez zgłoszony wyjątek. W tej sekcji dodasz kod, który próbuje zaktualizować bazę danych. Możesz również obsługiwać dowolne <xref:System.Data.DBConcurrencyException> , może zostać wywołane, a także inne wyjątki.
+Podczas próby wykonania aktualizacji i zgłoszenia wyjątku zazwyczaj trzeba wykonać coś z informacjami podanymi przez zgłoszony wyjątek. W tej sekcji dodasz kod, który próbuje zaktualizować bazę danych. Obsługiwane są również wszystkie <xref:System.Data.DBConcurrencyException>, które mogą zostać zgłoszone, a także inne wyjątki.
 
 > [!NOTE]
-> `CreateMessage` i `ProcessDialogResults` metody zostaną dodane w dalszej części przewodnika.
+> Metody `CreateMessage` i `ProcessDialogResults` są dodawane w dalszej części przewodnika.
 
-1. Dodaj następujący kod poniżej `Form1_Load` metody:
+1. Dodaj następujący kod poniżej metody `Form1_Load`:
 
    [!code-csharp[VbRaddataConcurrency#1](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_1.cs)]
    [!code-vb[VbRaddataConcurrency#1](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_1.vb)]
 
-2. Zastąp `CustomersBindingNavigatorSaveItem_Click` metodę do wywołania `UpdateDatabase` metoda tak, aby wyglądał następująco:
+2. Zastąp metodę `CustomersBindingNavigatorSaveItem_Click`, aby wywołać metodę `UpdateDatabase`, tak aby wyglądała następująco:
 
    [!code-csharp[VbRaddataConcurrency#2](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_2.cs)]
    [!code-vb[VbRaddataConcurrency#2](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_2.vb)]
 
-### <a name="display-choices-to-the-user"></a>Wyświetl opcje użytkownika
+### <a name="display-choices-to-the-user"></a>Wyświetl opcje dla użytkownika
 
-Kod został właśnie powstała z jednego wywołania `CreateMessage` procedury, aby wyświetlić informacje o błędzie dla użytkownika. W tym przewodniku używasz okno komunikatu do wyświetlania różnych wersji rekordu użytkownika. Dzięki temu użytkownikowi określenie, czy chcesz zastąpić rekord zmiany lub anulowania edycji. Gdy użytkownik wybierze opcję (kliknie przycisk) w oknie komunikatu, odpowiedź jest przekazywany do `ProcessDialogResult` metody.
+Właśnie napisany kod wywołuje procedurę `CreateMessage`, aby wyświetlić informacje o błędzie dla użytkownika. W tym instruktażu należy użyć okna komunikatu, aby wyświetlić różne wersje rekordu dla użytkownika. Dzięki temu użytkownik może wybrać, czy rekord ma zostać zastąpiony zmianami, czy anulować edycję. Gdy użytkownik wybierze opcję (kliknie przycisk) w oknie komunikatu, odpowiedź jest przesyłana do metody `ProcessDialogResult`.
 
-Utwórz wiadomość, dodając następujący kod, aby **Edytor kodu**. Wprowadź poniżej kod `UpdateDatabase` metody:
+Utwórz komunikat, dodając następujący kod do **edytora kodu**. Wprowadź następujący kod poniżej metody `UpdateDatabase`:
 
 [!code-csharp[VbRaddataConcurrency#4](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_3.cs)]
 [!code-vb[VbRaddataConcurrency#4](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_3.vb)]
 
-### <a name="process-the-users-response"></a>Przetwarzanie odpowiedzi użytkownika
+### <a name="process-the-users-response"></a>Przetwórz odpowiedź użytkownika
 
-Należy również kod, aby przetworzyć odpowiedzi użytkownika w oknie komunikatu. Dostępne opcje to można zastąpić proponowanej zmiany bieżącego rekordu w bazie danych lub Porzuć zmiany lokalne i Odśwież tabelę danych z rekordu, który jest obecnie dostępna w bazie danych. Jeśli użytkownik wybierze **tak**, <xref:System.Data.DataTable.Merge%2A> metoda jest wywoływana z *preserveChanges* argument wartość **true**. Powoduje to próba aktualizacji był udany, ponieważ oryginalną wersję rekordu jest teraz zgodna rekord w bazie danych.
+Musisz również mieć kod, aby przetworzyć odpowiedź użytkownika do okna komunikatu. Dostępne są opcje zastępowania bieżącego rekordu w bazie danych z proponowaną zmianą lub porzucenia lokalnych zmian i odświeżenia tabeli danych z rekordem, który jest obecnie w bazie danych. Jeśli użytkownik wybierze **wartość tak**, Metoda <xref:System.Data.DataTable.Merge%2A> zostanie wywołana z argumentem *PreserveChanges* ustawionym na **wartość true**. Powoduje to pomyślną próbę aktualizacji, ponieważ oryginalna wersja rekordu jest teraz zgodna z rekordem w bazie danych.
 
-Dodaj następujący kod poniższego kodu, który został dodany w poprzedniej sekcji:
+Dodaj następujący kod poniżej kodu, który został dodany w poprzedniej sekcji:
 
 [!code-csharp[VbRaddataConcurrency#3](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_4.cs)]
 [!code-vb[VbRaddataConcurrency#3](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_4.vb)]
 
-## <a name="test-the-form"></a>Przetestuj formularz
+## <a name="test-the-form"></a>Testowanie formularza
 
-Teraz można przetestować formularz, aby upewnić się, że działa zgodnie z oczekiwaniami. Aby zasymulować Naruszenie współbieżności, możesz zmienić dane z bazy danych po wypełnieniu NorthwindDataSet.
+Teraz można testować formularz, aby upewnić się, że działa zgodnie z oczekiwaniami. W celu zasymulowania naruszenia współbieżności dane w bazie danych są zmieniane po wypełnieniu NorthwindDataSet.
 
-1. Wybierz **F5** do uruchomienia aplikacji.
+1. Wybierz klawisz **F5** , aby uruchomić aplikację.
 
-2. Gdy zostanie wyświetlony formularz, będzie działać, a następnie przełącz się do środowiska IDE programu Visual Studio.
+2. Po wyświetleniu formularza, pozostaw go uruchomiony i przejdź do środowiska IDE programu Visual Studio.
 
-3. Na **widoku** menu, wybierz **Eksploratora serwera**.
+3. W menu **Widok** wybierz **Eksplorator serwera**.
 
-4. W **Eksploratora serwera**, rozwiń węzeł połączenia aplikacji za pomocą, a następnie rozwiń **tabel** węzła.
+4. W **Eksplorator serwera**rozwiń połączenie używane przez aplikację, a następnie rozwiń węzeł **tabele** .
 
-5. Kliknij prawym przyciskiem myszy **klientów** tabeli, a następnie wybierz **Pokaż dane tabeli**.
+5. Kliknij prawym przyciskiem myszy tabelę **Customers** , a następnie wybierz polecenie **Pokaż dane tabeli**.
 
-6. W pierwszym rekordzie (**ALFKI**), zmień **ContactName** do **Maria Anders2**.
+6. W pierwszym rekordzie (**ALFKI**) Zmień wartość **ContactName** na **Mariany Anders2**.
 
     > [!NOTE]
-    > Przejdź do innego wiersza, aby zatwierdzić zmiany.
+    > Przejdź do innego wiersza, aby zatwierdzić zmianę.
 
-7. Przełącz do ConcurrencyWalkthrough uruchomiona formularza.
+7. Przejdź do formularza ConcurrencyWalkthrough.
 
-8. W pierwszym rekordzie na formularzu (**ALFKI**), zmień **ContactName** do **Maria Anders1**.
+8. W pierwszym rekordzie w formularzu (**ALFKI**) Zmień wartość **ContactName** na **Mariany Anders1**.
 
-9. Wybierz ikonę **Zapisz**.
+9. Wybierz przycisk **Zapisz** .
 
-     Błąd współbieżności, a pojawi się okno komunikatu.
+     Wystąpił błąd współbieżności i pojawia się okno komunikatu.
 
-   Wybieranie **nie** anuluje aktualizacji i aktualizuje zestaw danych o wartości, które są obecnie dostępne w bazie danych. Wybieranie **tak** zapisuje proponowana wartość w bazie danych.
+   Wybranie pozycji **nie** powoduje anulowania aktualizacji i zaktualizowanie zestawu danych wartościami, które znajdują się obecnie w bazie danych. Wybranie pozycji **tak** zapisuje proponowaną wartość do bazy danych.
 
 ## <a name="see-also"></a>Zobacz także
 

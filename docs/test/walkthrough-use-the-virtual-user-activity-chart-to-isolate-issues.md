@@ -1,26 +1,26 @@
 ---
-title: W przypadku testów obciążenia za pomocą wykresu wirtualnego aktywności użytkownika
+title: Używanie wykresu aktywności wirtualnego użytkownika dla testów obciążenia
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - load tests, virtual user activity chart
 - virtual user activity chart, isolating performance issues
 ms.assetid: d1c10fb9-cfeb-4e7f-9991-2d1e1103699e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6811365023f7030d46bf6c611ecb09a5990a7492
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: ebd779ed2c78f48c75d29297fba862ffda142e23
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825772"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659638"
 ---
-# <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Przewodnik: Za pomocą wykresu wirtualnego aktywności użytkownika umożliwiającego Wyizolowanie problemów
+# <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Przewodnik: używanie wykresu aktywności wirtualnego użytkownika w celu wyizolowania problemów
 
-W tym przewodniku dowiesz się, jak izolowania błędów, które wystąpiły dla poszczególnych użytkowników wirtualnych, które uruchomiono testu obciążenia za pomocą wykresu wirtualnego aktywności użytkownika.
+W tym instruktażu dowiesz się, jak za pomocą wykresu aktywności wirtualnego użytkownika wyizolować błędy, które wystąpiły dla indywidualnych użytkowników wirtualnych, którzy uruchomili test obciążenia.
 
-Wykres aktywności wirtualnych użytkowników umożliwia wizualizowanie aktywności wirtualnego użytkownika, który jest skojarzony z testu obciążenia. Każdy wiersz na wykresie reprezentuje poszczególnych użytkowników wirtualnych. Wykres aktywności wirtualnych użytkowników zawiera dokładnie co każdy użytkownik wirtualny był wykonywany podczas testu. Dzięki temu można wyizolować problemy z wydajnością, obserwując wzorce aktywności użytkowników, wzorce obciążenia, korelowanie testy zakończone niepowodzeniem lub wolne i zobacz żądań z innych działań wirtualnego użytkownika. Wykres aktywności wirtualnych użytkowników jest dostępna tylko po załadowaniu po zakończeniu wykonywania.
+Wykres aktywności wirtualnego użytkownika umożliwia wizualizację aktywności wirtualnego użytkownika, która jest skojarzona z testem obciążenia. Każdy wiersz na wykresie reprezentuje pojedynczego użytkownika wirtualnego. Wykres aktywność użytkownika wirtualnego pokazuje, jak dokładnie każdy użytkownik wirtualny był wykonywany podczas testu. Dzięki temu można izolować problemy z wydajnością, sprawdzając wzorce aktywności użytkownika, wzorce obciążenia, skorelować Niepowodzenie lub powolne testy, a także żądania z innymi wirtualnymi działaniami użytkowników. Wykres aktywności wirtualnego użytkownika jest dostępny dopiero po zakończeniu ładowania po rozpoczęciu pracy.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -30,54 +30,54 @@ Wykres aktywności wirtualnych użytkowników umożliwia wizualizowanie aktywno�
 
 - Wykonaj następujące procedury:
 
-  - [Rejestrowanie i uruchamianie testu wydajności sieci web](/azure/devops/test/load-test/run-performance-tests-app-before-release#recordtests).
+  - [Rejestrowanie i uruchamianie testu wydajności sieci Web](/azure/devops/test/load-test/run-performance-tests-app-before-release#recordtests).
 
-  - [Tworzenie i uruchamianie testu obciążenia](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-load-test)
+  - [Utwórz i uruchom test obciążenia](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-load-test)
 
-## <a name="open-the-colorwebapp-solution-created-in-the-previous-walkthroughs"></a>Otwórz rozwiązanie ColorWebApp utworzony w poprzednich — wskazówki
+## <a name="open-the-colorwebapp-solution-created-in-the-previous-walkthroughs"></a>Otwórz rozwiązanie ColorWebApp utworzone w poprzednich przewodnikach
 
 1. Otwórz program Visual Studio.
 
-2. Otwórz **ColorWebApp** rozwiązanie, które zawiera *testy LoadTest1.loadtest*. Obciążenie wyniki testów z czynności w trzech instruktażach wymienionych na początku tego tematu, w sekcji wymagania wstępne.
+2. Otwórz rozwiązanie **ColorWebApp** , które zawiera *LoadTest1. LoadTest*. Ten test obciążenia wynika z przeprowadzenia kroków z trzech instruktaży wymienionych na początku tego tematu w sekcji wymagania wstępne.
 
-     Pozostałe kroki w tym przewodniku zakładają aplikację sieci web o nazwie ColorWebApp, test wydajności sieci web o nazwie *ColorWebAppTest.webtest* i obciążenia, test o nazwie *testy LoadTest1.loadtest*.
+     W pozostałych krokach w tym instruktażu przyjęto założenie, że aplikacja sieci Web o nazwie ColorWebApp, test wydajności sieci Web o nazwie *ColorWebAppTest. webtest* i test obciążenia o nazwie *LoadTest1. LoadTest*.
 
 ## <a name="run-the-load-test"></a>Uruchom test obciążenia
 
-Uruchom test obciążeniowy, aby zbierać dane o aktywności użytkownika wirtualnego.
+Uruchom test obciążenia, aby zebrać dane aktywności wirtualnego użytkownika.
 
-- W **edytora testu obciążenia**, wybierz **Uruchom** przycisk na pasku narzędzi. LoadTest1 zaczyna być uruchamiana.
+- W **Edytor testu obciążeniowego**wybierz przycisk **Uruchom** na pasku narzędzi. LoadTest1 zaczyna działać.
 
-## <a name="isolate-issues-in-the-virtual-user-activity-chart"></a>Wyizolować problemy z wykres aktywności wirtualnych użytkowników
+## <a name="isolate-issues-in-the-virtual-user-activity-chart"></a>Izolowanie problemów na wykresie aktywności wirtualnego użytkownika
 
-Po uruchomić test obciążenia i zebrane dane o aktywności wirtualnego użytkownika danych można wyświetlić w wynikach testów obciążenia za pomocą **analizatora testu obciążenia** widok szczegółów w **wykres aktywności wirtualnych użytkowników** . Ponadto można użyć **wykres aktywności wirtualnych użytkowników** Aby wyizolować problemy z wydajnością w teście obciążenia.
+Po uruchomieniu testu obciążenia i zebraniu danych o aktywności użytkownika wirtualnego można wyświetlić dane w wynikach testu obciążenia, korzystając z widoku szczegółów **analizatora testu obciążenia** na **wykresie aktywności wirtualnego użytkownika**. Ponadto można użyć **wykresu aktywności wirtualnego użytkownika** , aby ułatwić wyizolowanie problemów z wydajnością w teście obciążenia.
 
-### <a name="to-use-the-virtual-user-activity-chart-in-your-load-test-results"></a>Aby użyć wykres aktywności wirtualnych użytkowników, w wynikach testu obciążenia
+### <a name="to-use-the-virtual-user-activity-chart-in-your-load-test-results"></a>Aby użyć wykresu aktywności wirtualnego użytkownika w wynikach testu obciążenia
 
-1. Po załadowaniu zakończenia testu uruchomiony, **Podsumowanie** wyświetlana jest strona wyników testów obciążenia w **analizatora testu obciążenia**. Wybierz **wykresów** przycisk na pasku narzędzi.
+1. Po zakończeniu testu obciążenia strona **Podsumowanie** wyników testu obciążenia jest wyświetlana w **analizatorze testu obciążenia**. Wybierz przycisk **wykresy** na pasku narzędzi.
 
-     Wyświetlany jest widok wykresów.
+     Zostanie wyświetlony widok wykresy.
 
-2. Na **czas odpowiedzi strony** wykres, kliknij prawym przyciskiem myszy w pobliżu jednej ikony naruszenia progu i wybierz **przejdź do szczegółów użytkownika**.
+2. Na wykresie **czasu odpowiedzi na stronie** kliknij prawym przyciskiem myszy obok jednej z ikon naruszenia progu, a następnie wybierz pozycję **Przejdź do szczegółów użytkownika**.
 
     > [!NOTE]
-    > Możesz użyć **szczegóły** znajdujący się w **edytora testu obciążenia** narzędzi, aby otworzyć zbyt wykresu aktywności użytkownika. Jednak jeśli używasz **przejdź do szczegółów użytkownika** opcji **wykres aktywności wirtualnych użytkowników** zostanie automatycznie powiększyć część testu, który kliknięto prawym przyciskiem myszy na wykresie.
+    > Możesz użyć przycisku **szczegóły** na pasku narzędzi **Edytor testu obciążeniowego** , aby otworzyć również wykres aktywności użytkownika. Jeśli jednak używasz opcji **Przejdź do szczegółów użytkownika** , **Wykres aktywności wirtualnego użytkownika** będzie automatycznie powiększał się na części testu, który został kliknięty prawym przyciskiem myszy na wykresie.
 
-     Będzie ona wyświetlana w widoku szczegółów **wykres aktywności wirtualnych użytkowników** koncentruje się na okres czasu, kiedy wystąpił naruszenia progu.
+     Widok szczegółów jest wyświetlany z **wykresem aktywność użytkownika wirtualnego** , który jest ukierunkowany na czas, w którym wystąpiły naruszenia progu.
 
-     Na osi y poziome wykresy reprezentują poszczególnych użytkowników wirtualnych. Oś x przedstawia oś czasu dla przebiegu testu obciążeniowego.
+     Na osi y poziome wykresy reprezentują poszczególnych użytkowników wirtualnych. Oś x wyświetla wiersz czasu dla przebiegu testu obciążenia.
 
-3. W **Powiększ do okresu czasu** narzędzie poniżej **wykres aktywności wirtualnych użytkowników**, dostosować po lewej stronie i prawego suwaki, dopóki oba są Zamknij, aby ikona naruszenia progu. Spowoduje to zmianę skali czasu w **wykres aktywności wirtualnych użytkowników**
+3. W narzędziu **Powiększ do okresu** poniżej **wykresu aktywności wirtualnego użytkownika**Dostosuj suwaki w lewo i w prawo do momentu, aż oba zostaną zamknięte ikonie naruszenie progu. Spowoduje to zmianę skali czasu na **wykresie aktywności wirtualnego użytkownika**
 
-4. W **Legenda szczegółów**, zaznacz pole wyboru dla **(Podświetl błędy)** . Należy zauważyć, że jest wyróżniona wirtualnego użytkownika, który spowodował naruszenie progu.
+4. W **legendzie szczegółów**zaznacz pole wyboru **(Wyróżnij błędy)** . Należy zauważyć, że wyróżniono użytkownika wirtualnego, który spowodował naruszenie progu.
 
-5. W **filtrowanie wyników** panelu, usuń zaznaczenie pól wyboru dla **Pokaż pomyślne wyniki** i **HttpError** , ale pozostawić **ValidationRuleError**zaznaczone pole wyboru.
+5. W panelu **wyników filtru** wyczyść pola wyboru dla opcji **Pokaż udane wyniki** i **HttpError** , ale pozostaw zaznaczone pole wyboru **ValidationRuleError** .
 
-     **Wykres aktywności wirtualnych użytkowników** wyświetla tylko użytkowników wirtualnych zrealizowanych przez więcej niż 3 sekundy *Red.aspx* stronie określony przez naruszenie progu skonfigurowana w poprzednim przewodniku.
+     Na **wykresie aktywności wirtualnego użytkownika** są wyświetlane tylko użytkownicy wirtualną, którzy wykorzystali więcej niż 3 sekundy na stronie *Red. aspx* , zgodnie z naruszeniem progu skonfigurowanym w poprzednim instruktażu.
 
-6. Zatrzymaj wskaźnik myszy nad linii poziomej, reprezentujący wirtualnego użytkownika za pomocą błąd reguły sprawdzania poprawności dla naruszenie progu.
+6. Umieść wskaźnik myszy nad linią poziomą, która reprezentuje użytkownika wirtualnego z błędem reguły walidacji dla naruszenia progu.
 
-7. Etykietka narzędzia jest wyświetlana z następującymi informacjami:
+7. Zostanie wyświetlona etykietka narzędzia z następującymi informacjami:
 
     - **Identyfikator użytkownika**
 
@@ -85,28 +85,28 @@ Po uruchomić test obciążenia i zebrane dane o aktywności wirtualnego użytko
 
     - **Test**
 
-    - **Wynik**
+    - **Wynikiem**
 
-    - **Sieci**
+    - **NFS**
 
     - **Godzina rozpoczęcia**
 
-    - **Czas trwania**
+    - **Trwania**
 
-    - **Agent**
+    - **Odczynnik**
 
     - **Dziennik testu**
 
-8. Należy zauważyć, że **Dziennik testu** łącze. Wybierz **Dziennik testu** łącza.
+8. Zwróć uwagę, że **dziennik testu** jest łączem. Wybierz łącze **dziennik testu** .
 
-9. Test wydajności sieci web ColorWebTest, który jest skojarzony z dziennika zostanie otwarty w **Podgląd wyników testu wydajności sieci Web**. To pozwala izolować, gdzie wystąpiło naruszenie progowe.
+9. Test wydajności sieci Web ColorWebTest skojarzony z dziennikiem zostanie otwarty w **przeglądarce wyniki testów wydajności sieci Web**. Pozwala to izolować miejsce wystąpienia naruszeń progowych.
 
-     Za pomocą różnych ustawień w obu **Legenda szczegółów** i **filtrowanie wyników** panele pomagające w izolowania problemów z wydajnością oraz błędy w testach obciążenia. Eksperymentu przy użyciu tych ustawień i **Powiększ do okresu czasu** narzędzia, aby zobaczyć, jak dane użytkownika wirtualnego są prezentowane w **wykres aktywności wirtualnych użytkowników**.
+     Aby ułatwić izolowanie problemów z wydajnością oraz błędy w testach obciążenia, można użyć różnych ustawień zarówno w **legendzie szczegółów** , jak i w panelu **wyników filtrowania** . Eksperymentuj z tymi ustawieniami oraz narzędziem **Powiększ do okresu** , aby zobaczyć, jak dane użytkownika wirtualnego są prezentowane na **wykresie aktywności wirtualnego użytkownika**.
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Analizowanie aktywności wirtualnego użytkownika w widoku szczegółów](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
 - [Kontrolerzy testów i agenci testowi](configure-test-agents-and-controllers-for-load-tests.md)
-- [Instrukcje: Utwórz ustawienie testu dla testu obciążenia rozłożonego](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)
+- [Instrukcje: Tworzenie ustawień testowych dla testu obciążenia rozłożonego](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)
 - [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md)
-- [Zbieranie informacji diagnostycznych za pomocą ustawień testów](../test/collect-diagnostic-information-using-test-settings.md)
+- [Zbieranie informacji diagnostycznych za pomocą ustawień testu](../test/collect-diagnostic-information-using-test-settings.md)

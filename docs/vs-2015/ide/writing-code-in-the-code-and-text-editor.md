@@ -1,5 +1,5 @@
 ---
-title: Pisanie kodu w edytorze kodu i tekstu | Dokumentacja firmy Microsoft
+title: Pisanie kodu w edytorze kodu i tekstu | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -57,176 +57,176 @@ helpviewer_keywords:
 - code
 ms.assetid: cb53ab9a-5b76-4759-b9e8-7bf32298ecbe
 caps.latest.revision: 46
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 23dd08e95100f186c172fff2cfa6a392bd11eee4
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 8793dd08a5ed4aaf83c1ddd52948db4c8b22034b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65698084"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662636"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>Pisanie kodu w edytorze kodu i tekstu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-Edytor programu Visual Studio zapewnia wiele funkcji, które ułatwiają umożliwia pisanie kodu i zarządzanie. Można rozwijać i zwijać różne bloki kodu przy użyciu konturów. Dowiedz się więcej o kod, używając za pomocą funkcji IntelliSense, **przeglądarki obiektów**i hierarchii wywoływania. Możesz nawigować wewnątrz kodu przy użyciu funkcji, takich jak **przejdź do**, **przejdź do definicji**, i **Znajdź wszystkie odwołania**. Możesz wstawiać bloki kodu za pomocą wstawek kodu i może wygenerować kod, za pomocą funkcji, takich jak **Generowanie z użycia**. Jeśli po raz pierwszy używasz edytora programu Visual Studio 2015 przed, zobacz [edycji kodu](https://www.visualstudio.com/features/ide-vs) Aby uzyskać szybki przegląd.  
+Edytor programu Visual Studio udostępnia wiele funkcji, które ułatwiają pisanie kodu i zarządzanie nim. Możesz rozwijać i zwijać różne bloki kodu przy użyciu konspektu. Możesz dowiedzieć się więcej o kodzie, którego używasz, korzystając z funkcji IntelliSense, **Przeglądarka obiektów**i hierarchii wywołań. Możesz nawigować wewnątrz kodu przy użyciu funkcji, takich jak **Przejdź do**, **Przejdź do definicji**i **Znajdź wszystkie odwołania**. Można wstawiać bloki kodu ze fragmentami kodu i generować kod przy użyciu funkcji, takich jak **generowanie na podstawie użycia**. Jeśli Edytor programu Visual Studio 2015 nigdy nie był wcześniej używany, zobacz [Edytowanie kodu](https://www.visualstudio.com/features/ide-vs) , aby uzyskać szybki przegląd.
 
- Możesz wyświetlić swój kod na wiele różnych sposobów. Aby wyświetlić widok klasy dla rozwiązania, możesz otworzyć **Widok klas** okna lub rozwinąć węzły w **Eksploratora rozwiązań** w plikach klas.  
+ Możesz wyświetlić swój kod na kilka różnych sposobów. Aby wyświetlić widok klasy rozwiązania, możesz otworzyć okno **Widok klasy** lub rozwinąć węzły w **Eksplorator rozwiązań** w obszarze plików klas.
 
- Możesz wyszukiwać i zamieniać tekst w jednym lub wielu plikach. Aby uzyskać więcej informacji, zobacz [Znajdowanie i zastępowanie tekstu](../ide/finding-and-replacing-text.md). Jeśli używasz wyrażeń regularnych, należy pamiętać, że znajdowanie i zamienianie teraz używać w wyrażeniach regularnych programu .NET. Aby uzyskać więcej informacji, zobacz [za pomocą wyrażeń regularnych w programie Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).  
+ Można wyszukiwać i zamieniać tekst dla jednego lub wielu plików. Aby uzyskać więcej informacji, zobacz [Znajdowanie i zastępowanie tekstu](../ide/finding-and-replacing-text.md). W przypadku używania wyrażeń regularnych należy zauważyć, że funkcja Znajdź i Zamień teraz używa wyrażeń regularnych programu .NET. Aby uzyskać więcej informacji, zobacz [Używanie wyrażeń regularnych w programie Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
 
- Różne języki Visual Studio oferują różne zestawy funkcji, a w niektórych przypadkach funkcje zachowują się inaczej w różnych językach. Wiele z tych różnic jest określonych w opisach funkcji, ale aby uzyskać więcej informacji można zobaczyć sekcje o określonych językach programu Visual Studio.  
+ Różne języki programu Visual Studio oferują różne zestawy funkcji, a w niektórych przypadkach funkcje działają inaczej w różnych językach. Wiele z tych różnic jest określonych w opisach funkcji, ale aby uzyskać więcej informacji, można zobaczyć sekcje w określonych językach programu Visual Studio.
 
 > [!IMPORTANT]
-> Wersja Visual Studio i ustawienia, którego używasz może mieć wpływ na funkcje w IDE. Mogą się różnić od tych opisanych w tym temacie.  
+> Wersja programu Visual Studio i używane ustawienia mogą mieć wpływ na funkcje w środowisku IDE. Mogą się one różnić od tych opisanych w tym temacie.
 
-## <a name="editor-features"></a>Funkcje edytora  
+## <a name="editor-features"></a>Funkcje edytora
 
-|||  
-|-|-|  
-|Kolorowanie składni|Niektóre elementy składni kodu i pliki znaczników mają inny kolor pozwalający je odróżnić. Na przykład słowa kluczowe (takie jak `using` w języku C# i `Imports` w języku Visual Basic) są jednym kolorze, ale typy (takie jak `Console` i `Uri`) mają inny kolor. Inne elementy składni są także pokolorowane, takie jak ciągi literałów znaków i komentarze. C++ używa kolorów do rozróżniania między typami, wyliczeniami i makrami, między innymi tokenami.<br /><br /> Można zobaczyć domyślny kolor dla każdego typu i możesz zmienić kolor dowolnego elementu składni na [czcionki i kolory, środowisko, opcje, okno dialogowe](../ide/reference/fonts-and-colors-environment-options-dialog-box.md), które można otworzyć **narzędzia** menu.|  
-|Błąd i znaki ostrzegawcze|Dodaj kod i Skompiluj rozwiązanie, mogą być widoczne faliste podkreślenie () innego koloru (znane jako squiggles) lub (b) żarówki w kodzie. Czerwone symbole oznaczają błędy składni, niebieskie wskazuje błędy kompilatora, zielony oznacza ostrzeżenia i purpurowy oznacza innych rodzajów błędów. [Żarówki](../ide/perform-quick-actions-with-light-bulbs.md) zasugerować poprawki dotyczące problemów, co bardzo ułatwia poprawki.<br /><br /> Możesz zobaczyć domyślny kolor dla każdego błędu i ostrzegawczy wężyk w **narzędzia/Opcje/środowisko/czcionki i kolory** okno dialogowe. Wyszukaj **błąd składniowy**, **błąd kompilatora**, **ostrzeżenie**, i **inny błąd**.|  
-|Parowanie nawiasów klamrowych|Gdy punkt wstawiania jest umieszczany na otwartym nawiasie klamrowym w pliku kodu, zarówno on jaki i nawias zamykający są wyróżnione. Ta funkcja zapewnia natychmiastowe informacje zwrotne zagubionych lub brakujących nawiasach klamrowych. Możesz włączyć parowanie nawiasów klamrowych lub wyłączyć za pomocą **automatycznego podkreślania ogranicznika** ustawienie (**narzędzia/Opcje/Edytor tekstu**). Można zmienić kolor podświetlenia w **czcionki i kolory** ustawienie (**narzędzia/Opcje/środowisko**). Wyszukaj **dopasowywanie nawiasów (Podświetl)** lub **parowanie nawiasów klamrowych (prostokąt)** .|  
-|Numery wierszy|Numery wierszy mogą być wyświetlane na lewym marginesie w oknie Kod. Nie są wyświetlane domyślnie. Możesz włączyć tę opcję **Edytor tekstu wszystkie języki** ustawień (**języków/wszystkie języki narzędzia/Opcje/edytor**). Można wyświetlić numery wierszy dla poszczególnych języków programowania, zmieniając ustawienia w tych językach (**narzędzia / Opcje / Edytor tekstu /\<języka >** ). Numery wierszy były drukowane, należy zaznaczyć Dołącz numery wierszy w **drukowanie** okno dialogowe.|  
-|Śledzenie zmian|Kolor lewego marginesu pozwala na śledzenie zmiany wprowadzone w pliku. Zmiany wprowadzone przez użytkownika, ponieważ plik został otwarty, ale nie zostały zapisane, są oznaczane żółtym paskiem na lewym marginesie (znanych jako margines zaznaczania). Po zapisaniu zmian (ale przed zamknięciem pliku) pasek zmieni kolor na zielony. Jeśli po zapisaniu pliku cofniesz zmianę, pasek zmieni kolor na pomarańczowy. Aby włączyć tę funkcję i wyłączonym, zmień **śledzenie zmian** opcji **edytora tekstów** ustawień (**narzędzia/Opcje/Edytor tekstu**).|  
-|Zaznaczanie tekstu i kodu|Można zaznaczyć tekst w standardowym trybie strumienia ciągłego lub w trybie okna, w którym są zaznaczasz prostokątny fragment tekstu, zamiast zestawu wierszy. Aby dokonać wyboru w trybie okna, naciśnij ALT podczas przeciągania myszy nad zaznaczeniem (lub naciśnij klawisze ALT + SHIFT + \<Strzałka >). Zaznaczenie obejmuje wszystkie znaki w obrębie prostokąta zdefiniowanego przez pierwszy znak i ostatni znak w zaznaczonym obszarze. Cokolwiek zostanie wpisane lub wklejone do zaznaczonego obszaru, zostanie wstawione w tym samym punkcie w każdym wierszu.|  
-|Powiększenie|Możesz można powiększać lub pomniejszać w dowolnym oknie kodu przez naciśnięcie i przytrzymanie klawisza CTRL i przesuwanie kółka przewijania na myszy (lub CTRL + SHIFT +. Aby zwiększyć i CTRL + SHIFT +, aby zmniejszyć). Można również użyć pola powiększenia w lewym dolnym rogu okna kodu, można ustawić procent powiększenia. Funkcja powiększenia nie działa w oknach narzędzi.|  
-|Pamięć wirtualna|Domyślnie linie w edytorach Visual Studio kończy za ostatnim znakiem, tak aby klawisz Strzałka w prawo na końcu linii przenosił kursor do początku następnego wiersza. W niektórych innych edytorach wiersz nie kończy się za ostatnim znakiem i umieścić kursor gdziekolwiek w wierszu. Możesz włączyć wirtualną przestrzeń w edytorze w **języków/wszystkie języki narzędzia/Opcje/edytor** ustawienia. Należy pamiętać, że można włączyć opcję **wirtualną przestrzenią** lub **zawijanie**, ale nie oba jednocześnie.|  
-|Drukowanie|Możesz użyć opcji w **drukowanie** okno dialogowe, aby dołączyć numery wierszy lub ukryć zwinięte regiony kodu podczas drukowania pliku. W **ustawienia strony** okno dialogowe, również można wydrukować pełną ścieżkę i nazwę pliku, wybierając **nagłówek strony**.<br /><br /> Można ustawić opcje drukowania w kolorze w **narzędzia/Opcje/środowisko/czcionki i kolory** okno dialogowe. Wybierz **drukarki** w **Pokaż ustawienia dla** listy, aby dostosować drukowanie w kolorach. Można określić różne kolory do drukowania pliku, do edycji pliku.|  
-|Globalne operacje Cofnij i wykonaj ponownie|**Cofnij ostatnią akcję globalną** i **wykonaj ponownie ostatnią akcję globalną** polecenia na **Edytuj** menu cofnąć lub wykonują ponownie akcje globalne, które wpływają na wiele plików. Akcje globalne obejmują zmianę nazwy klasy lub przestrzeni nazw, wykonywanie operacji znajdowania i zamieniania w całym rozwiązaniu, refaktoryzację bazy danych lub każdą inną czynność, która zmieni wiele plików. Możesz zastosować globalne cofanie i wykonaj ponownie poleceń do akcji w bieżącej sesji programu Visual Studio, nawet po zamknięciu rozwiązania, w którym akcję zastosowano.|  
+|||
+|-|-|
+|Kolorowanie składni|Niektóre elementy składni plików Code i Markup są różne w różny sposób, aby je odróżnić. Na przykład słowa kluczowe (takie jak `using` w C# i `Imports` w Visual Basic) są jednym kolorem, ale typy (takie jak `Console` i `Uri`) są kolejnymi kolorami. Inne elementy składni są również kolorowe, takie jak literały ciągów i komentarze. C++używa koloru do rozróżnienia między typami, wyliczeniami i makrami, między innymi tokenami.<br /><br /> Możesz zobaczyć domyślny kolor dla każdego typu i zmienić kolor dla każdego określonego elementu składni w oknie [dialogowym czcionki i kolory, środowisko, opcje](../ide/reference/fonts-and-colors-environment-options-dialog-box.md), które można otworzyć z menu **Narzędzia** .|
+|Znaczniki błędów i ostrzeżeń|Podczas dodawania kodu i kompilowania rozwiązania, mogą pojawić się (a) różne kolorowe faliste podkreślenia (znane jako zygzaki) lub (b) żarówki pojawiające się w kodzie. W kolorze czerwonym są błędy składniowe, niebieskie oznacza błędy kompilatora, czerwone uwagi, a purpurowe oznaczają inne typy błędów. [Żarówki](../ide/perform-quick-actions-with-light-bulbs.md) sugerują poprawki dotyczące problemów i ułatwiają stosowanie poprawki.<br /><br /> W oknie dialogowym **Narzędzia/Opcje/środowisko/czcionki i kolory** można zobaczyć domyślny kolor poszczególnych błędów i ostrzeżeń. Poszukaj **błędu składniowy**, **błędu kompilatora**, **ostrzeżenia**i **innego błędu**.|
+|Dopasowywanie nawiasów klamrowych|Gdy punkt wstawiania zostanie umieszczony w otwartym nawiasie klamrowym w pliku kodu, zarówno, jak i zamykającego nawiasu klamrowego są wyróżnione. Ta funkcja umożliwia natychmiastowe przesłanie opinii na temat zagubionych lub brakujących nawiasów klamrowych. Można włączać lub wyłączać dopasowanie nawiasów klamrowych przy użyciu ustawienia **automatycznego wyróżniania ogranicznika** (**Narzędzia/Opcje/Edytor tekstu**). Możesz zmienić kolor podświetlenia w ustawieniu **czcionki i kolory** (**Narzędzia/Opcje/środowisko**). Poszukaj **pasującego nawiasu klamrowego (Podświetl)** lub **Dopasowywanie nawiasów klamrowych (prostokąt)** .|
+|Numery wierszy|Numery wierszy mogą być wyświetlane na lewym marginesie okna kod. Domyślnie nie są wyświetlane. Tę opcję można włączyć w ustawieniach **Edytor tekstu wszystkie języki** (**Narzędzia/Opcje/Edytor tekstu/wszystkie języki**). Możesz wyświetlić numery wierszy dla poszczególnych języków programowania, zmieniając ustawienia dla tych języków (**Narzędzia/Opcje/Edytor tekstu/\<language >** ). W przypadku numerów wierszy do drukowania należy wybrać opcję Dołącz numery wierszy w oknie dialogowym **Drukowanie** .|
+|Śledzenie zmian|Kolor lewego marginesu umożliwia śledzenie zmian wprowadzonych w pliku. Zmiany wprowadzone od momentu otwarcia pliku, ale nie zostały zapisane, są oznaczane żółtym paskiem na lewym marginesie (znanym jako margines zaznaczenia). Po zapisaniu zmian (ale przed zamknięciem pliku) pasek zmieni kolor na zielony. W przypadku cofnięcia zmiany po zapisaniu pliku pasek zmieni kolor na pomarańczowy. Aby wyłączyć tę funkcję i włączyć ją, Zmień opcję **Śledź zmiany** w ustawieniach **edytora tekstu** (**Narzędzia/Opcje/Edytor tekstu**).|
+|Zaznaczanie kodu i tekstu|Możesz zaznaczyć tekst w trybie standardowego ciągłego przesyłania strumieniowego lub w trybie Box, w którym można wybrać prostokątny fragment tekstu zamiast zestawu wierszy. Aby dokonać wyboru w trybie pola, naciśnij klawisz ALT podczas przeciągania wskaźnika myszy nad zaznaczeniem (lub naciśnij klawisze ALT + SHIFT + \<arrow Key >). Zaznaczenie zawiera wszystkie znaki w prostokącie zdefiniowanym przez pierwszy znak i ostatni znak w zaznaczeniu. Wszystkie wpisane lub wklejone do zaznaczonego obszaru są wstawiane w tym samym punkcie w każdym wierszu.|
+|Powiększenie|Możesz powiększyć lub pomniejszyć w dowolnym oknie kodu, naciskając i przytrzymując klawisz CTRL i przesuwając kółko przewijania na myszy (lub CTRL + SHIFT +). Aby zwiększyć i nacisnąć klawisze CTRL + SHIFT +, aby zmniejszyć. Możesz również użyć pola powiększenie w lewym dolnym rogu okna kod, aby ustawić określony procent powiększenia. Funkcja zoom nie działa w oknach narzędzi.|
+|Wirtualne miejsce|Domyślnie linie w edytorach programu Visual Studio kończą się po ostatnim znaku, dzięki czemu klawisz Strzałka w prawo na końcu linii przesuwa kursor na początek następnego wiersza. W niektórych innych edytorach linia nie kończy się po ostatnim znaku, a kursor można umieścić w dowolnym miejscu w wierszu. Możesz włączyć wirtualne miejsce w edytorze w ustawieniach **Narzędzia/Opcje/Edytor tekstu/wszystkie języki** . Należy pamiętać, że można włączyć opcję **miejsce wirtualne** lub **Zawijanie słów**, ale nie oba.|
+|Drukowanie|Możesz użyć opcji w oknie dialogowym **Drukuj** , aby uwzględnić numery wierszy lub ukryć zwinięte regiony kodu podczas drukowania pliku. W oknie dialogowym **Ustawienia strony** można również wydrukować pełną ścieżkę i nazwę pliku, wybierając pozycję **Nagłówek strony**.<br /><br /> Opcje drukowania kolorów można ustawić w oknie dialogowym **Narzędzia/Opcje/środowisko/czcionki i kolory** . Wybierz pozycję **drukarka** na liście **Pokaż ustawienia dla** , aby dostosować drukowanie kolorów. Można określić różne kolory do drukowania pliku, niż w przypadku edytowania pliku.|
+|Globalne cofanie i ponowne wykonywanie|Polecenia **Cofnij ostatnią akcję globalną** i **Wykonaj ponownie ostatnią akcję globalną** w menu **Edytuj** Cofnij lub wykonaj ponownie działania globalne, które mają wpływ na wiele plików. Akcje globalne obejmują zmianę nazwy klasy lub przestrzeni nazw, wykonywanie operacji znajdowania i zamieniania w ramach rozwiązania, refaktoryzację bazy danych lub dowolną inną akcję, która zmienia wiele plików. Globalne polecenia Cofnij i wykonaj ponownie można zastosować do akcji w bieżącej sesji programu Visual Studio, nawet po zamknięciu rozwiązania, w którym została zastosowana akcja.|
 
-## <a name="advanced-editing-features"></a>Zaawansowane funkcje edycji  
- Możesz znaleźć wiele zaawansowanych funkcji w **Edycja/zaawansowane** podmenu. Nie wszystkie te funkcje są dostępne dla wszystkich typów plików kodu.  
+## <a name="advanced-editing-features"></a>Zaawansowane funkcje edycji
+ Kilka zaawansowanych funkcji można znaleźć w podmenu **Edytuj/zaawansowane** . Nie wszystkie te funkcje są dostępne dla wszystkich typów plików kodu.
 
-|||  
-|-|-|  
-|Formatuj dokument|Ustawia właściwe wcięcia linii kodu i przenosi nawiasy klamrowe, aby rozdzielić linie w dokumencie.|  
-|Formatuj zaznaczenie|Ustawia właściwe wcięcia linii kodu i przenosi nawiasy klamrowe, aby rozdzielić linie w zaznaczeniu.|  
-|Zmień spacje na tabulatory w zaznaczonych wierszach|Zmienia spacje wiodące na tabulatory, gdzie jest to odpowiednie.|  
-|Zmień tabulatory na spacje w zaznaczonych wierszach|Zmienia tabulatory wiodące na spacje. Jeśli chcesz przekonwertować wszystkie spacje w pliku na tabulacje (lub wszystkie tabulacje na spacje), możesz użyć `Edit.ConvertSpacesToTabs` i `Edit.ConvertTabsToSpaces` poleceń. Te polecenia nie są wyświetlane w menu programu Visual Studio, ale można je wywoływać z okna Szybki dostęp lub okna poleceń.|  
-|Zmień litery na wielkie|Zmienia wszystkie znaki w zaznaczeniu na wielkie litery, lub jeśli nie zaznaczono żadnego fragmentu, zmienia znak w punkcie wstawiania na wielkie litery.|  
-|Zmień litery na małe|Zmienia wszystkie znaki w zaznaczeniu na małe litery, lub jeśli nie zaznaczono żadnego fragmentu, zmienia znak w punkcie wstawiania na małe litery.|  
-|Sprawdź poprawność dokumentu|Sprawdza poprawność plików kodu języka JScript.|  
-|Usuń biały znak poziome|Usuwa tabulatory lub spacje na końcu bieżącego wiersza.|  
-|Wyświetl białe znaki|Wyświetla spacje jako kropki podniesione i tabulatory jako strzałki. Koniec pliku jest wyświetlany jako znacznik prostokątny. Jeśli **narzędzia/Opcje/Edytor Edytor języki/zawijanie wierszy/Pokaż widoczne glify dla zawijania** jest zaznaczone, ten glif jest również wyświetlany.|  
-|Zawijanie wierszy|Powoduje, że wszystkie wiersze w dokumencie mają być wyświetlane w oknie kodu. Włącz zawijanie wyrazów i Włącz w ustawieniach Edytor tekstu wszystkie języki (**narzędzia/Opcje/Edytor tekstu/wszystkie języki**).|  
-|Usuń komentarz z zaznaczenia|Dodaje znaki komentarza do bieżącego wiersza lub zaznaczenia.|  
-|Dodaj komentarz do zaznaczenia|Usuwa znaki komentarza z bieżącego wiersza lub zaznaczenia.|  
-|Zwiększ wcięcie wiersza|Dodaje znak tabulatora (lub równoważne spacje) do wybranych wierszy lub w bieżącym wierszu.|  
-|Zmniejsz wcięcie wiersza|Usuwa znak tabulatora (lub równoważne spacje) z wybranych wierszy lub w bieżącym wierszu.|  
-|Wybierz Tag|W dokumencie, który zawiera znaczniki (na przykład XML lub HTML) zaznacza znacznik.|  
-|Zaznacz zawartość tagu|W dokumencie, który zawiera znaczniki (na przykład XML lub HTML) zaznacza znaczniki.|  
+|||
+|-|-|
+|Formatuj dokument|Ustawia właściwe wcięcia linii kodu i przenosi nawiasy klamrowe w celu oddzielenia wierszy w dokumencie.|
+|Formatowanie zaznaczenia|Ustawia właściwe wcięcia linii kodu i przenosi nawiasy klamrowe w celu oddzielenia wierszy w zaznaczeniu.|
+|Na tabulatory wybrane wiersze|Zmienia początkowe spacje na tabulatory, gdzie są odpowiednie.|
+|Tabulatory na wybrane wiersze|Zmienia wiodące tabulatory na spacje. Jeśli chcesz przekonwertować wszystkie spacje w pliku na tabulatory (lub wszystkie tabulatory na spacje), możesz użyć poleceń `Edit.ConvertSpacesToTabs` i `Edit.ConvertTabsToSpaces`. Te polecenia nie są wyświetlane w menu programu Visual Studio, ale można je wywoływać z okna szybkiego dostępu lub okna poleceń.|
+|Zmień wielkie litery|Zmienia wszystkie znaki w zaznaczeniu na wielkie litery, lub jeśli nie ma zaznaczenia, zmienia znak w punkcie wstawiania na wielkie litery.|
+|Zmień na małe litery|Zmienia wszystkie znaki w zaznaczeniu na małe litery, lub jeśli nie ma zaznaczenia, zmienia znak w punkcie wstawiania na małe litery.|
+|Sprawdź poprawność dokumentu|Sprawdza poprawność plików kodu JScript.|
+|Usuń biały znak w poziomie|Usuwa tabulatory lub spacje na końcu bieżącego wiersza.|
+|Wyświetl biały znak|Wyświetla spacje jako punkty podniesione i tabulatory jako strzałki. Koniec pliku jest wyświetlany jako symbol prostokątny. Jeśli zaznaczone są **Narzędzia/Opcje/Edytor tekstu/wszystkie języki/zawijanie wyrazów/Pokaż widoczne glify dla zawijania wierszy** , ten symbol jest również wyświetlany.|
+|Zawijanie wierszy|Powoduje, że wszystkie wiersze w dokumencie będą widoczne w oknie kodu. Możesz włączyć zawijanie wierszy i włączyć je w oknie Edytor tekstu wszystkie języki (**Narzędzia/Opcje/Edytor tekstu/wszystkie języki**).|
+|Usuń komentarz z zaznaczenia|Dodaje znaki komentarza do zaznaczenia lub bieżącego wiersza.|
+|Zaznacz komentarz|Usuwa znaki komentarza z zaznaczenia lub bieżącego wiersza.|
+|Zwiększ wcięcie wiersza|Dodaje tabulator (lub spacje) do wybranych wierszy lub w bieżącym wierszu.|
+|Zmniejsz wcięcie wiersza|Usuwa tabulator (lub równoważne spacje) z wybranych wierszy lub z bieżącego wiersza.|
+|Wybierz tag|W dokumencie zawierającym znaczniki (na przykład XML lub HTML), wybiera tag.|
+|Wybierz zawartość tagów|W dokumencie, który zawiera znaczniki (na przykład XML lub HTML), wybiera zawartość.|
 
-## <a name="navigate-in-the-code-window"></a>Nawigowanie w oknie kodu  
- Może się zmieniają położenie w dokumencie na kilka różnych sposobów. Oprócz standardowych operacji można użyć **Nawiguj wstecz** (lub CTRL + MINUS) i **Nawiguj do przodu** (CTRL + SHIFT + MINUS) do poprzedniego punktu przycisków na pasku narzędzi, aby przenieść wstawiania lokalizacji lub powrócić do nowszych lokalizacji w aktywnym dokumencie. Przyciski te zachowują ostatnich 20 lokalizacji.  
+## <a name="navigate-in-the-code-window"></a>Nawigowanie w oknie kod
+ Możesz poruszać się w dokumencie na kilka różnych sposobów. Oprócz standardowych operacji można użyć przycisków **Nawiguj wstecz** (lub CTRL + minus) i **Przejdź do przodu** (Ctrl + Shift + minus) na pasku narzędzi, aby przenieść punkt wstawiania do poprzednich lokalizacji lub powrócić do nowszych lokalizacji w aktywny dokument. Przyciski te zachowują ostatnie 20 lokalizacji punktu wstawiania.
 
- ![Kierunek przód- tył przyciski nawigacyjne](../ide/media/vs2015-nav-buttons.png "VS2015_Nav_buttons")  
+ ![Przyciski nawigacji do przodu i do tyłu](../ide/media/vs2015-nav-buttons.png "VS2015_Nav_buttons")
 
- Można również użyć rozszerzonego paska przewijania w oknie kodu można pobrać z lotu ptaka kodu. W trybie mapy, zobacz wersje zapoznawcze kodu, gdy kursor Przenieś w górę i w dół na pasku przewijania, aby uzyskać więcej informacji, zobacz [jak: Śledzenie kodu przez dostosowania paska przewijania](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md).  
+ Możesz również użyć rozszerzonego paska przewijania w oknie kodu, aby uzyskać wgląd w swój kod w oczy. W trybie mapy można zobaczyć podglądy kodu podczas przesuwania kursora w górę i w dół paska przewijania, aby uzyskać więcej informacji, zobacz [How to: Tracking The Code, dostosowując pasek przewijania](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md).
 
- Następujące polecenia są metodami nawigacji specyficznymi dla kodu:  
+ Następujące polecenia są metodami nawigacji specyficznymi dla kodu:
 
-|||  
-|-|-|  
-|Przejdź do \<numer wiersza >|(**Edytuj/przejdź do** lub CTRL + G): Przenieś do wiersza o podanym numerze w aktywnym dokumencie.|  
-|Przejdź do|(**Edytuj/przejdź do** lub CTRL +): Znajdzie symbol lub pliku w aktywnym rozwiązaniu. Pomaga wybrać dobry zestaw pasujących wyników z zapytania. Można wyszukiwać słowa kluczowe, które są zawarte w symbolu przy użyciu pisane i podkreślenia znaków do podziału symbolu na słowa kluczowe.|  
-|Znajdź wszystkie odwołania|(menu kontekstowe): Znajduje wszystkie odwołania do wybranego elementu w rozwiązaniu.|  
-|Przejdź do definicji|(menu kontekstowe lub F12): Znajdzie definicję zaznaczonego elementu.|  
-|Zobacz definicję|(menu kontekstowe lub Alt + F12): Znajdzie definicję zaznaczonego elementu i wyświetla go w oknie podręcznym. Aby uzyskać więcej informacji, zobacz [jak: Wyświetlanie i edytowanie kodu za pomocą polecenia Zobacz definicję (Alt + F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md).|  
-|Następna metoda, Poprzednia metoda|(**Edytuj/Następna metoda, Poprzednia metoda**) plików kodu w języku Visual Basic, użyj tych poleceń, aby przenieść wstawiania wskaż różnych metod.|  
-|Wyróżnianie odwołań|Po kliknięciu symbolu w kodzie źródłowym, wszystkie wystąpienia tego symbolu zostaną wyróżnione w dokumencie. Wyróżnione symbole mogą zawierać oświadczenia i odwołania i wiele innych symboli, które **Znajdź wszystkie odwołania** zwróci. Należą do nich nazwy klas, obiektów, zmiennych, metod i właściwości. W kodzie języka Visual Basic słowa kluczowe dla wielu struktur sterowania są również wyróżnione. Aby przejść do następnego lub poprzedniego wyróżnionego symbolu, naciśnij klawisz Strzałka CTRL + SHIFT + Strzałka w dół lub CTRL + SHIFT + Strzałka w górę Strzałka. Można zmienić kolor podświetlenia w **narzędzia/Opcje/środowisko/czcionki i kolory/wyróżnione odwołanie.**|  
-|Znajdź informacje związane z kodem|Można znaleźć informacje dotyczące konkretnego kodu, takich jak zmian i kto wprowadził te zmiany, odwołania, usterki, elementy robocze, przeglądy kodu i jednostki stan testu w przypadku korzystania z witryny CodeLens w edytorze kodu. CodeLens działa jak ekran projekcyjny, gdy używasz programu Visual Studio Enterprise z programem Team Foundation Server. Zobacz [znajdowanie zmian w kodzie i innych elementów historii](../ide/find-code-changes-and-other-history-with-codelens.md).|  
+|||
+|-|-|
+|Przejdź do \<line numer >|(**Edytuj/przejdź do** lub CTRL + G): przenosi do określonego numeru wiersza w aktywnym dokumencie.|
+|Przejdź do|(**Edytuj/Nawiguj do** lub CTRL +,): znajduje symbol lub plik w aktywnym rozwiązaniu. Ułatwia wybór dobrego zestawu pasujących wyników zapytania. Słowa kluczowe, które są zawarte w symbolu, można wyszukiwać przy użyciu znaków notacji CamelCase i podkreślenia, aby podzielić symbol na słowa kluczowe.|
+|Znajdź wszystkie odwołania|(menu kontekstowe): znajduje wszystkie odwołania do wybranego elementu w rozwiązaniu.|
+|Przejdź do definicji|(menu kontekstowe lub F12): znajduje definicję wybranego elementu.|
+|Definicja wglądu|(menu kontekstowe lub Alt + F12): znajduje definicję wybranego elementu i wyświetla go w oknie podręcznym. Aby uzyskać więcej informacji, zobacz [How to: wyświetlanie i edytowanie kodu za pomocą definicji wglądu (Alt + F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md).|
+|Next, metoda, poprzednia Metoda|(**Edycja/Następna Metoda, poprzednia Metoda**) W Visual Basic pliki kodu Użyj tych poleceń, aby przenieść punkt wstawiania do różnych metod.|
+|Wyróżnianie odwołań|Gdy klikniesz symbol w kodzie źródłowym, wszystkie wystąpienia tego symbolu zostaną wyróżnione w dokumencie. Wyróżnione symbole mogą zawierać deklaracje i odwołania, a wiele innych symboli, które będą zwracać **wszystkie odwołania** . Obejmują one nazwy klas, obiektów, zmiennych, metod i właściwości. W kodzie Visual Basic są również wyróżnione słowa kluczowe dla wielu struktur kontroli. Aby przejść do następnego lub poprzedniego wyróżnionego symbolu, naciśnij klawisze CTRL + SHIFT + Strzałka w dół lub CTRL + SHIFT + Strzałka w górę. Możesz zmienić kolor wyróżnienia w obszarze **Narzędzia/Opcje/środowisko/czcionki i kolory/wyróżnione odwołanie.**|
+|Znajdź informacje związane z kodem|W edytorze kodu można znaleźć informacje o konkretnym kodzie, takie jak zmiany i osoby, które wprowadziły te zmiany, odwołania, błędy, elementy robocze, przeglądy kodu i stan testu jednostkowego. CodeLens działa jak w przypadku wyświetlania głowic w przypadku używania Visual Studio Enterprise z Team Foundation Server. Zobacz [Znajdowanie zmian w kodzie i innych historii](../ide/find-code-changes-and-other-history-with-codelens.md).|
 
- Można również użyć **pasek nawigacyjny**, który, dwa pola listy rozwijanej wyświetlane u góry okna kodu, aby przejść w pliku kodu. Pasek ten pozwala przejść bezpośrednio do określonego typu lub jeden z członków w ramach danego typu. Pasek nawigacyjny pojawia się za pomocą Visual Basic, C# i pliki kodu C++.  
+ Możesz również użyć **paska nawigacyjnego**, czyli dwóch pól listy rozwijanej wyświetlanych u góry okna kod, aby nawigować w pliku kodu. Ten pasek umożliwia przejście bezpośrednio do określonego typu lub do jednego z elementów członkowskich w ramach typu. Pasek nawigacyjny pojawia się z Visual Basic C#,, C++ i pliki kodu.
 
- Aby ukryć pasek nawigacyjny, należy zmienić **pasek nawigacyjny** opcję w ustawieniach Edytor tekstu wszystkie języki (**języków/wszystkie języki narzędzia/Opcje/edytor**, lub zmienić ustawienia dla poszczególnych języków). Nawigacja w oknach list rozwijanych w następujący sposób:  
+ Aby ukryć pasek nawigacyjny, Zmień opcję **pasek nawigacyjny** w ustawieniach Edytor tekstu wszystkie języki (**Narzędzia/Opcje/Edytor tekstu/wszystkie języki**lub można zmienić ustawienia dla poszczególnych języków). Możesz nawigować w polach listy rozwijanej w następujący sposób:
 
-- Aby przenieść fokus z okna kodu do paska nawigacji, naciśnij kombinację klawiszy skrótu CTRL + F2.  
+- Aby przenieść fokus z okna kod na pasek nawigacyjny, naciśnij kombinację klawiszy skrótu CTRL + F2.
 
-- Aby zabrać fokus z paska nawigacji do okna kodu, naciśnij klawisz ESC.  
+- Aby zwrócić fokus z paska nawigacyjnego do okna kodu, naciśnij klawisz ESC.
 
-- Aby przenieść fokus z pozycji na pozycję na pasku nawigacyjnym, naciśnij klawisz TAB.  
+- Aby przenieść fokus z elementu do elementu na pasku nawigacyjnym, naciśnij klawisz TAB.
 
-- Aby zaznaczyć element paska nawigacji, który ma fokus i powrócić do IDE, naciśnij klawisz ENTER  
+- Aby wybrać element paska nawigacyjnego, który ma fokus, i powrócić do środowiska IDE, naciśnij klawisz ENTER.
 
-- Aby przejść do klasy lub typu, kliknij jej nazwę w lewym menu rozwijanym.  
+- Aby przejść do klasy lub typu, kliknij jej nazwę w lewym menu rozwijanym.
 
-- Aby przejść bezpośrednio do procedury w klasie, kliknij procedurę w prawym menu rozwijanym.  
+- Aby przejść bezpośrednio do procedury w klasie, kliknij procedurę na liście rozwijanej po prawej stronie.
 
-  W częściowej klasie mogą być wyszarzone elementy członkowskie zdefiniowane poza bieżącym plikiem kodu.  
+  W klasie częściowej elementy członkowskie zdefiniowane poza bieżącym plikiem kodu mogą być wyszarzone.
 
-## <a name="find-code-using-navigate-to"></a>Znajdowanie kodu za pomocą przejdź do
-Visual Studio "Przejdź do" polecenie powoduje ukierunkowane wyszukiwanie kodu, aby ułatwić szybkie znajdowanie określonych elementów w plikach kodu, ścieżki do plików i symbole, kod. W przeciwieństwie do innych tekst wyszukiwania, takie jak znaleźć lub Znajdź w plikach przejdź do ogranicza wyszukiwanie do obszarów, w którym przebywa rzeczywisty kod, takich jak pliki, formularze i modułów kodu. Na przykład jeśli wyszukasz ciąg w ASP.NET sieci web aplikacji za pomocą Znajdź lub Znajdź w plikach w całego rozwiązania, możesz otrzymać kilka trafień, w tym wystąpienia ciągu w kodzie uwagi. Za pomocą, przejdź do, jednak możesz tylko otrzymać jednej funkcji, ignorując wszystkie wystąpienia ciągu w kodzie uwagi.
+## <a name="find-code-using-navigate-to"></a>Znajdź kod przy użyciu przejdź do
+Polecenie "przejdź do" programu Visual Studio umożliwia skoncentrowane wyszukiwanie kodu w celu ułatwienia szybkiego znajdowania określonych elementów w plikach kodu, ścieżkach plików i symbolach kodu. W przeciwieństwie do innych wyszukiwania tekstu, takich jak Znajdź lub Znajdź w plikach, przejdź do obszaru wyszukiwania, aby ograniczyć jego wyszukiwanie do obszarów, w których faktycznie przebywa kod, takich jak pliki, formularze i moduły kodu. Na przykład jeśli szukasz ciągu w aplikacji sieci Web ASP.NET przy użyciu funkcji Znajdź lub Znajdź w plikach w całym rozwiązaniu, możesz uzyskać kilka trafień, w tym wystąpienia ciągu w uwagach do kodu. Korzystając z przechodzenia do, można jednak uzyskać tylko jedną funkcję, ignorując wszystkie wystąpienia ciągu w uwagach do kodu.
 
-### <a name="navigate-code-using-navigate-to"></a>Przechodzenie do kodu za pomocą przejdź do
+### <a name="navigate-code-using-navigate-to"></a>Nawigowanie po kodzie przy użyciu przejdź do
 
 1. Otwórz rozwiązanie lub folder w programie Visual Studio.
-1. W menu głównym wybierz **Edytuj**, **przejdź do**, lub naciśnij **CTRL +,** .
+1. W menu głównym wybierz polecenie **Edytuj**, **Przejdź do**lub naciśnij **klawisze CTRL +,** .
 
-    Pole tekstowe małych pojawia się w prawym górnym rogu edytora kodu.
-1. W polu tekstowym wprowadź nazwę elementu kodu, który ma zostać odnaleziona.
+    Małe pole tekstowe pojawia się w górnym rogu edytora kodu.
+1. W polu tekstowym wprowadź nazwę elementu kodu, który ma zostać znaleziony.
 
-    ![Przejdź do okna](../ide/media/vside-navigatetowindow.png "przejdź do okna")
+    ![Przejdź do okna](../ide/media/vside-navigatetowindow.png "Przejdź do okna")
 
-    Podczas wpisywania, wyniki są wyświetlane na liście rozwijanej poniżej pola tekstowego.
-1. Aby przejść do elementu, wybierz go na liście.
+    Podczas pisania, wyniki pojawiają się na liście rozwijanej poniżej pola tekstowego.
+1. Aby przejść do elementu, wybierz go z listy.
 
-### <a name="filter-your-search"></a>Przefiltruj wyszukiwanie
+### <a name="filter-your-search"></a>Filtrowanie wyszukiwania
 
-Aby ograniczyć wyszukiwanie, tak aby tylko kod symbole, należy poprzedzić przejdź do zapytania przy użyciu "\@" znaków. Na przykład, jeśli wyszukasz `@application`, przejdź do Wyświetla, na przykład tylko klasy, które zawierają słowo "aplikacja" w ich.
+Aby ograniczyć wyszukiwanie tylko do symboli, należy poprzedzić przechodzenie do zapytania za pomocą znaku "\@". Na przykład, jeśli szukasz `@application`, przejdź do wyświetlania, na przykład tylko klasy z wyrazem "aplikacja".
 
-Jeśli używasz camelcase w kodzie, szybciej znaleźć elementy kodu, wprowadzając tylko wielkimi literami nazwa elementu kodu. Na przykład, jeśli kod ma składnik o nazwie `ViewSwitcher`, możesz go znaleźć, wprowadzając tylko wielkimi literami nazwę (`"VS"`) przejdź do okna.
+Jeśli używasz notacji CamelCase wielkości liter w kodzie, możesz znaleźć elementy kodu szybciej, wprowadzając tylko wielkie litery nazwy elementu kodu. Na przykład jeśli kod zawiera składnik o nazwie `ViewSwitcher`, można go znaleźć, wprowadzając tylko wielkie litery nazwy (`"VS"`) w oknie Nawigacja do.
 
-![Przejdź do okna — Wyszukiwanie za pomocą literami](../ide/media/vside-capitalsearch.png "przejdź do okna — Wyszukiwanie za pomocą literami")
+![Przejdź do okna — wyszukiwanie przy użyciu wersalików](../ide/media/vside-capitalsearch.png "Przejdź do okna — wyszukiwanie przy użyciu wersalików")
 
-Ta funkcja jest szczególnie przydatne, jeśli kod ma długich nazwach.
+Ta funkcja jest szczególnie przydatna, jeśli kod ma długie nazwy.
 
-## <a name="customize-the-editor"></a>Dopasowywanie edytora  
- **Import i eksport ustawień**: Można udostępnić ustawienia innemu deweloperowi, ustawienia są zgodne z normą, lub przywrócić ustawienia domyślne programu Visual Studio przy użyciu zostały **Kreatora importowania i eksportowania ustawień** na **narzędzia** menu. Możesz zmienić ustawienia ogólne lub język i ustawienia specyficzne dla projektu.  
+## <a name="customize-the-editor"></a>Dostosowywanie edytora
+ **Importowanie i eksportowanie ustawień**: można udostępniać ustawienia innym deweloperom, mieć ustawienia zgodne ze standardem lub powrócić do ustawień domyślnych programu Visual Studio za pomocą **Kreatora importowania i eksportowania ustawień** w menu **Narzędzia** . Można zmienić ustawienia ogólne lub język i ustawienia specyficzne dla projektu.
 
- **Mapowanie klawiatury**: Można zdefiniować nowe klawisze dostępu lub zmienić definicje istniejących w ustawieniach narzędzia/Opcje/środowisko/klawiatura. Aby uzyskać więcej informacji o klawiszach dostępu, zobacz [domyślne skróty klawiaturowe](../ide/default-keyboard-shortcuts-in-visual-studio.md).  
+ **Mapowanie klawiatury**: można zdefiniować nowe klawisze skrótów lub ponownie zdefiniować istniejące w ustawieniach narzędzia/opcje/środowisko/klawiatura. Aby uzyskać więcej informacji na temat klawiszy skrótów, zobacz [domyślne skróty klawiaturowe](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
- Aby uzyskać informacje o opcjach edytora specyficznych dla języka zobacz następujące tematy:  
+ Aby uzyskać informacje na temat opcji edytora specyficznych dla języka, zobacz następujące tematy:
 
-- [Ustawienia języka Visual Basic](https://msdn.microsoft.com/library/2712b3b1-18f2-430c-ae91-28468bbf5f32)  
+- [Ustawienia Visual Basic](https://msdn.microsoft.com/library/2712b3b1-18f2-430c-ae91-28468bbf5f32)
 
-- [Używanie środowiska programistycznego Visual Studio dla C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)  
+- [Używanie środowiska programistycznego Visual Studio dla C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)
 
-- [Opcje, Edytor tekstów, JavaScript, Formatowanie](../ide/reference/options-text-editor-javascript-formatting.md)  
+- [Opcje, Edytor tekstów, JavaScript, Formatowanie](../ide/reference/options-text-editor-javascript-formatting.md)
 
-## <a name="in-this-section"></a>W tej sekcji  
+## <a name="in-this-section"></a>W tej sekcji
 
-- [Znajdowanie i zastępowanie tekstu](../ide/finding-and-replacing-text.md)  
+- [Znajdowanie i zastępowanie tekstu](../ide/finding-and-replacing-text.md)
 
-- [Kodowania i znaki podziału wiersza](../ide/encodings-and-line-breaks.md)  
+- [Kodowania i znaki podziału wiersza](../ide/encodings-and-line-breaks.md)
 
-- [Obramowanie](../ide/outlining.md)  
+- [Obramowanie](../ide/outlining.md)
 
-- [Refaktoryzacja](../ide/refactoring-in-visual-studio.md)  
+- [Refaktoryzacja](../ide/refactoring-in-visual-studio.md)
 
-- [Wskazówki dotyczące produktywności](../ide/productivity-tips-for-visual-studio.md)  
+- [Wskazówki dotyczące produktywności](../ide/productivity-tips-for-visual-studio.md)
 
-- [Korzystanie z funkcji IntelliSense](../ide/using-intellisense.md)  
+- [Korzystanie z funkcji IntelliSense](../ide/using-intellisense.md)
 
-- [Dostosowywanie edytora](../ide/customizing-the-editor.md)  
+- [Dostosowywanie edytora](../ide/customizing-the-editor.md)
 
-- [Instrukcje: Śledzenie kodu przez dostosowania paska przewijania](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
+- [Instrukcje: Śledzenie kodu przez dostosowania paska przewijania](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)
 
-- [Instrukcje: Wyświetlanie i edytowanie kodu za pomocą polecenia Zobacz definicję (Alt+F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
+- [Instrukcje: Wyświetlanie i edytowanie kodu za pomocą polecenia Zobacz definicję (Alt+F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
 
-- [Szybkie wykonywanie akcji dzięki żarówkom](../ide/perform-quick-actions-with-light-bulbs.md)  
+- [Szybkie wykonywanie akcji dzięki żarówkom](../ide/perform-quick-actions-with-light-bulbs.md)
 
-- [Fragmenty kodu](../ide/code-snippets.md)  
+- [Fragmenty kodu](../ide/code-snippets.md)
 
-- [Korzystanie z przybornika](../ide/using-the-toolbox.md)  
+- [Korzystanie z przybornika](../ide/using-the-toolbox.md)
 
-- [Wyświetlanie struktury kodu](../ide/viewing-the-structure-of-code.md)  
+- [Wyświetlanie struktury kodu](../ide/viewing-the-structure-of-code.md)
 
-- [Ustawianie zakładek w kodzie](../ide/setting-bookmarks-in-code.md)  
+- [Ustawianie zakładek w kodzie](../ide/setting-bookmarks-in-code.md)
 
-- [Korzystanie z listy zadań](../ide/using-the-task-list.md)  
+- [Korzystanie z listy zadań](../ide/using-the-task-list.md)
 
-- [Znajdowanie zmian w kodzie i innych elementów historii](../ide/find-code-changes-and-other-history-with-codelens.md)  
+- [Znajdowanie zmian w kodzie i innych elementów historii](../ide/find-code-changes-and-other-history-with-codelens.md)
 
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz też
  [Visual Studio IDE](../ide/visual-studio-ide.md)

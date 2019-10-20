@@ -4,21 +4,21 @@ ms.date: 07/26/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Projects.Locations
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 60e375c558500c4daeefe3f5d24d46a17139252f
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: e20c584a5acecc06a9d04e79a7c70c088eacc15b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68611929"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655700"
 ---
-# <a name="options-dialog-box-projects-and-solutions--locations"></a>Opcje — okno dialogowe: Lokalizacje projektów i \> rozwiązań
+# <a name="options-dialog-box-projects-and-solutions--locations"></a>Opcje — okno dialogowe: projekty i rozwiązania \> lokalizacje
 
-Ta strona służy do ustawiania domyślnych lokalizacji projektów, szablonów projektów i szablonów elementów. Aby uzyskać dostęp do tych opcji, wybierz pozycję **Narzędzia** > **Opcje**, rozwiń węzeł **projekty i rozwiązania**, a następnie wybierz pozycję **lokalizacje**.
+Ta strona służy do ustawiania domyślnych lokalizacji projektów, szablonów projektów i szablonów elementów. Aby uzyskać dostęp do tych opcji, wybierz pozycję **narzędzia**  > **Opcje**, rozwiń węzeł **projekty i rozwiązania**, a następnie wybierz pozycję **lokalizacje**.
 
 Poniższe opcje są dostępne na stronie **lokalizacje** .
 
@@ -28,14 +28,14 @@ Określa domyślną lokalizację, w której program Visual Studio tworzy nowe pr
 
 ## <a name="user-project-templates-location"></a>Lokalizacja szablonów projektu użytkownika
 
-Określa domyślną lokalizację używaną do wyszukiwania szablonów projektu utworzonych przez użytkownika. Aby uzyskać więcej informacji, zobacz [jak: Lokalizowanie i organizowanie](../../ide/how-to-locate-and-organize-project-and-item-templates.md)szablonów.
+Określa domyślną lokalizację używaną do wyszukiwania szablonów projektu utworzonych przez użytkownika. Aby uzyskać więcej informacji, zobacz [How to: Lokalizowanie i organizowanie szablonów](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ## <a name="user-item-templates-location"></a>Lokalizacja szablonów elementów użytkownika
 
-Określa domyślną lokalizację używaną do wyszukiwania szablonów elementów utworzonych przez użytkownika. Aby uzyskać więcej informacji, zobacz [jak: Lokalizowanie i organizowanie](../../ide/how-to-locate-and-organize-project-and-item-templates.md)szablonów.
+Określa domyślną lokalizację używaną do wyszukiwania szablonów elementów utworzonych przez użytkownika. Aby uzyskać więcej informacji, zobacz [How to: Lokalizowanie i organizowanie szablonów](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Opcje — okno dialogowe: Ogólne projekty i \> rozwiązania](projects-and-solutions-options-dialog-box.md)
+- [Opcje — okno dialogowe: projekty i rozwiązania \> ogólne](projects-and-solutions-options-dialog-box.md)
 - [Okno dialogowe Opcje, projekty i rozwiązania, kompilacja i uruchomienie](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)
 - [Okno dialogowe Opcje, Projekty i rozwiązania, Projekty internetowe](../../ide/reference/options-dialog-box-projects-and-solutions-web-projects.md)

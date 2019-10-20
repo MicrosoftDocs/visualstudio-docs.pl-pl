@@ -1,54 +1,54 @@
 ---
-title: Zobacz zależności między plikami źródłowymi C++ a plikami nagłówkowymi
+title: Wyświetlanie zależności między C++ plikami źródłowymi i plikami nagłówkowymi
 ms.date: 05/16/2018
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3904ff08496257d18589e36e5878f49404bbdf7c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bbba97f47c3ac0686bad15c3a1882e1e9bd85057
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62422184"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654179"
 ---
-# <a name="code-maps-for-c-projects"></a>Mapy kodu dla projektów języka C++
+# <a name="code-maps-for-c-projects"></a>Mapy kodu dla C++ projektów
 
-Jeśli chcesz utworzyć pełniejsze mapy dla projektów w języku C++, należy ustawić opcji Przeglądaj informacje kompilatora (**/FR**) w tych projektach. W przeciwnym razie pojawi się komunikat i monit o ustawienie tej opcji. Jeśli wybierzesz **OK**, to ustawienie opcji dla bieżącej mapy. Można ukryć komunikat dla wszystkich nowszych mapy.
+Jeśli chcesz utworzyć dokładniejsze mapy dla C++ projektów, ustaw dla tych projektów opcję **/fr**(przeglądanie informacji kompilatora). W przeciwnym razie pojawi się komunikat i monit o ustawienie tej opcji. Jeśli wybierzesz **OK**, spowoduje to ustawienie opcji tylko dla bieżącej mapy. Możesz wybrać opcję ukrycia komunikatu dla wszystkich późniejszych map.
 
-Po otwarciu rozwiązania, które zawiera projekty Visual C++, aktualizacja bazy danych w technologii IntelliSense może zająć trochę czasu. W tym czasie nie można utworzyć mapy kodu dla nagłówka (*.h* lub `#include`) plików, dopóki nie zakończy się aktualizowania bazy danych IntelliSense. Można monitorować postęp uaktualnienia na pasku stanu programu Visual Studio.
+Po otwarciu rozwiązania, które zawiera projekty Visual C++, aktualizacja bazy danych w technologii IntelliSense może zająć trochę czasu. W tym czasie może nie być możliwe utworzenie map kodu dla plików nagłówkowych ( *. h* lub `#include`), dopóki nie zakończy się aktualizowanie bazy danych IntelliSense. Można monitorować postęp uaktualnienia na pasku stanu programu Visual Studio.
 
-- Aby wyświetlić zależności między wszystkie pliki źródłowe i pliki nagłówkowe w rozwiązaniu, wybierz **architektury** > **generowania wykresu z pliki dołączane**.
+- Aby wyświetlić zależności między wszystkimi plikami źródłowymi i plikami nagłówkowymi w rozwiązaniu, wybierz pozycję **architektura**  > **Generuj Graf plików dołączanych**.
 
    ![Wykres zależności dla kodu natywnego](../modeling/media/dependencygraphgeneral_nativecode.png)
 
-- Aby wyświetlić zależności między aktualnie otwarty plik oraz pokrewne pliki źródłowe i pliki nagłówkowe, otwórz plik źródłowy lub plik nagłówkowy. Otwórz menu skrótów plików w dowolne miejsce wewnątrz pliku. Wybierz **Generowanie grafu plików dołączanych**.
+- Aby wyświetlić zależności między aktualnie otwartym plikiem i powiązanymi plikami źródłowymi i plikami nagłówkowymi, Otwórz plik źródłowy lub plik nagłówkowy. Otwórz menu skrótów pliku w dowolnym miejscu w pliku. Wybierz pozycję **Generuj Graf plików dołączanych**.
 
-   ![Wykres zależności pierwszego poziomu dla pliku .h](../modeling/media/dependencygraph_native_firstlevel.png)
+   ![Wykres zależności pierwszego poziomu dla pliku h](../modeling/media/dependencygraph_native_firstlevel.png)
 
-## <a name="troubleshoot-code-maps-for-c-and-c-code"></a>Rozwiązywanie problemów z mapami kodu dla kodu C i C++
+## <a name="troubleshoot-code-maps-for-c-and-c-code"></a>Rozwiązywanie problemów z mapami kodu C++ dla języka C i kodu
 
-Te elementy nie są obsługiwane dla kodu C i C++:
+Te elementy nie są obsługiwane w języku C++ C i kodzie:
 
-- Typy podstawowe nie pojawiają się na mapach, zawierających hierarchię nadrzędną.
+- Typy podstawowe nie są wyświetlane na mapach, które zawierają hierarchię nadrzędną.
 
-- Większość **Pokaż** elementów menu nie są dostępne dla kodu C i C++.
+- Większość elementów menu **Pokaż** nie jest dostępnych dla języków C++ C i Code.
 
-Po utworzeniu map kodu dla kodu C i C++, mogą wystąpić następujące problemy:
+Te problemy mogą wystąpić podczas tworzenia map kodu dla języka C i C++ kodu:
 
-|**Problem**|**Możliwa przyczyna**|**Rozdzielczość**|
+|**Wykonaj**|**Możliwa przyczyna**|**Tłumaczenia**|
 |-|-|-|
-|Nie można wygenerować mapy kodu.|Żadne projekty w rozwiązaniu nie zostały pomyślnie skompilowane.|Napraw błędy kompilacji, które wystąpiły, a następnie ponownie wygenerować mapę.|
-|Program Visual Studio przestaje odpowiadać przy próbie Generuj mapę kodu, z **architektury** menu.|Plik bazy danych programu (.pdb) może być uszkodzony.<br /><br /> Plik .pdb przechowuje informacje debugowania, takie jak typ, metoda i informacje o pliku źródłowym.|Kompiluj rozwiązanie ponownie, a następnie spróbuj jeszcze raz.|
-|Niektóre ustawienia dla bazy danych przeglądania IntelliSense są wyłączone.|Niektóre ustawienia opcji IntelliSense mogą być wyłączone w programie Visual Studio **opcje** okno dialogowe.|Włącz te ustawienia.<br /><br /> Zobacz [opcje, Edytor tekstu, C/C++, zaawansowane](../ide/reference/options-text-editor-c-cpp-advanced.md).|
-|Komunikat **nieznane metody** w węźle metody zostanie wyświetlony.<br /><br /> Ten problem występuje, ponieważ nie można rozpoznać nazwy metody.|Plik binarny może nie mieć podstawowej tabeli relokacji.|Włącz **/Fixed: No** opcji w konsolidatorze.|
-||Plik bazy danych programu (.pdb) może nie być skompilowany.<br /><br /> Plik .pdb przechowuje informacje debugowania, takie jak typ, metoda i informacje o pliku źródłowym.|Włącz **/DEBUG** opcji w konsolidatorze.|
+|Nie można wygenerować mapy kodu.|Żadne projekty w rozwiązaniu nie zostały pomyślnie skompilowane.|Napraw błędy kompilacji, które wystąpiły, a następnie ponownie Wygeneruj mapę.|
+|Program Visual Studio przestaje odpowiadać przy próbie wygenerowania mapy kodu z menu **architektury** .|Plik bazy danych programu (.pdb) może być uszkodzony.<br /><br /> Plik .pdb przechowuje informacje debugowania, takie jak typ, metoda i informacje o pliku źródłowym.|Kompiluj rozwiązanie ponownie, a następnie spróbuj jeszcze raz.|
+|Niektóre ustawienia dla bazy danych przeglądania IntelliSense są wyłączone.|Niektóre ustawienia IntelliSense można wyłączyć w oknie dialogowym **Opcje** programu Visual Studio.|Włącz te ustawienia.<br /><br /> Zobacz [Opcje, Edytor tekstu, C/C++, zaawansowane](../ide/reference/options-text-editor-c-cpp-advanced.md).|
+|Komunikat **nieznane metody** pojawi się w węźle metody.<br /><br /> Ten problem występuje, ponieważ nie można rozpoznać nazwy metody.|Plik binarny może nie mieć podstawowej tabeli relokacji.|Włącz opcję **/FIXED: No** w konsolidatorze.|
+||Plik bazy danych programu (.pdb) może nie być skompilowany.<br /><br /> Plik .pdb przechowuje informacje debugowania, takie jak typ, metoda i informacje o pliku źródłowym.|Włącz opcję **/Debug** w konsolidatorze.|
 ||Nie można otworzyć lub znaleźć pliku .pdb w oczekiwanych lokalizacjach.|Upewnij się, że plik .pdb istnieje w oczekiwanych lokalizacjach.|
-||Informacje o debugowaniu pochodzą z pliku .pdb.|Jeśli **/pdbstripped** w konsolidatorze użyto opcji, zamiast dołączyć kompletny plik .pdb.|
-||Obiekt wywołujący nie jest funkcją i jest albo osadzony w pliku binarnym, albo stanowi wskaźnik w sekcji danych.|Jeśli element wywołujący jest sekcją thunk, spróbuj użyć `_declspec(dllimport)` Aby uniknąć osadzenia.|
+||Informacje o debugowaniu pochodzą z pliku .pdb.|Jeśli w konsolidatorze użyto opcji **/PDBSTRIPPED** , Dołącz do niej kompletny plik. pdb.|
+||Obiekt wywołujący nie jest funkcją i jest albo osadzony w pliku binarnym, albo stanowi wskaźnik w sekcji danych.|Gdy obiekt wywołujący jest thunk, spróbuj użyć `_declspec(dllimport)`, aby uniknąć thunk.|
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Mapowanie zależności z mapami kodu](../modeling/map-dependencies-across-your-solutions.md)
+- [Mapowanie zależności za pomocą map kodu](../modeling/map-dependencies-across-your-solutions.md)

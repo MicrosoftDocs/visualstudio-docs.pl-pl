@@ -5,20 +5,20 @@ ms.topic: conceptual
 helpviewer_keywords:
 - text templates, build tasks
 - text templates, transforming by using msbuild
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d26c0b464341bee7bce0b46bfdbcc89e0248a81
-ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
+ms.openlocfilehash: 9c9cc0d8a40970e2ec36030ab3121d6fc02748e2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72163120"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654199"
 ---
 # <a name="invoke-text-transformation-in-the-build-process"></a>Wywołaj transformację tekstu w procesie kompilacji
 
@@ -49,7 +49,7 @@ Jeśli [serwer kompilacji](/azure/devops/pipelines/agents/agents) działa na kom
 - % ProgramFiles (x86)% \ Microsoft Visual Studio\2019\Community\Common7\IDE\PublicAssemblies
 
   - Microsoft. VisualStudio. TextTemplating. Modeling. 15.0. dll
-  
+
 > [!TIP]
 > Jeśli otrzymasz `MissingMethodException` dla metody Microsoft. CodeAnalysis podczas uruchamiania elementów docelowych kompilacji TextTemplating na serwerze kompilacji, upewnij się, że zestawy Roslyn znajdują się w katalogu o nazwie *Roslyn* , który znajduje się w tym samym katalogu, co plik wykonywalny kompilacji (na przykład  *MSBuild. exe*).
 
@@ -65,7 +65,7 @@ W pliku .vbproj lub .csproj znajdź taki wiersz:
 
 `<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />`
 
-\- lub —
+\- lub-
 
 `<Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />`
 
@@ -116,11 +116,11 @@ Istnieje kilka właściwości, które można wstawić do pliku projektu, aby mó
     ```
 
      Domyślnie zadanie programu MSBuild firmy T4 ponownie generuje plik wyjściowy, jeśli jest starszy niż:
-     
+
      - plik szablonu
      - wszystkie pliki, które są uwzględnione
      - wszystkie pliki, które wcześniej były odczytywane przez szablon lub przez procesor dyrektywy, którego używa
-     
+
      Jest to bardziej wydajny test zależności, niż jest używany przez polecenie **Przekształć wszystkie szablony** w programie Visual Studio, które porównuje daty szablonu i pliku wyjściowego.
 
 Aby wykonać tylko przekształcenia tekstu w projekcie, należy wywołać zadanie TransformAll:
@@ -147,7 +147,7 @@ Jeśli nie dostosowano kroku dostosujesz, ostrzeżenie zostanie zarejestrowane w
 
 ## <a name="customize-the-build-process"></a>Dostosuj proces kompilacji
 
-Transformacja tekstu ma miejsce przed innymi zadaniami w procesie kompilacji. Można zdefiniować zadania, które są wywoływane przed przekształceniem i po nim, przez ustawienie właściwości `$(BeforeTransform)` i `$(AfterTransform)`:
+Transformacja tekstu ma miejsce przed innymi zadaniami w procesie kompilacji. Można zdefiniować zadania, które są wywoływane przed przekształceniem i po nim, ustawiając właściwości `$(BeforeTransform)` i `$(AfterTransform)`:
 
 ```xml
 <PropertyGroup>
@@ -164,7 +164,7 @@ Transformacja tekstu ma miejsce przed innymi zadaniami w procesie kompilacji. Mo
 
 W `AfterTransform` można odwoływać się do list plików:
 
-- GeneratedFiles — lista plików zapisanych przez proces. Dla tych plików, które zastąpiły istniejące pliki tylko do odczytu, wartość `%(GeneratedFiles.ReadOnlyFileOverwritten)` będzie prawdziwa. Pliki te można wyewidencjonować z kontroli źródła.
+- GeneratedFiles — lista plików zapisanych przez proces. Dla tych plików, które zastąpiły istniejące pliki tylko do odczytu, `%(GeneratedFiles.ReadOnlyFileOverwritten)` będą spełnione. Pliki te można wyewidencjonować z kontroli źródła.
 
 - NonGeneratedFiles — lista plików tylko do odczytu, które nie zostały nadpisane.
 
@@ -184,7 +184,7 @@ Właściwości te są stosowane tylko przez program MSBuild. Nie wpływają one 
 </ItemGroup>
 ```
 
-Przydatnym folderem do przekierowania jest `$(IntermediateOutputPath)`.
+Przydatny folder do przekierowania jest `$(IntermediateOutputPath)`.
 
 Jeśli określisz nazwę pliku wyjściowego, ma pierwszeństwo przed rozszerzeniem określonym w dyrektywie Output w szablonach.
 
@@ -283,9 +283,9 @@ Teraz możesz korzystać ze swojej właściwości projektu w dyrektywach zestawu
 
 Te dyrektywy pobierają wartości z T4parameterValues zarówno w hostach MSBuild, jak i Visual Studio.
 
-## <a name="q--a"></a>Pytania i odpowiedzi
+## <a name="q--a"></a>p & A
 
-**Why czy chcesz przekształcić szablony na serwerze kompilacji? Zostały już przekształcone szablony w programie Visual Studio przed zapisaniem kodu.**
+**Dlaczego warto przetwarzać szablony na serwerze kompilacji? Zostały już przekształcone szablony w programie Visual Studio przed zapisaniem mojego kodu.**
 
 W przypadku zaktualizowania dołączonego pliku lub innego pliku odczytanego przez szablon program Visual Studio nie przekształca pliku automatycznie. Przekształcanie szablonów w ramach kompilacji gwarantuje, że wszystko jest aktualne.
 

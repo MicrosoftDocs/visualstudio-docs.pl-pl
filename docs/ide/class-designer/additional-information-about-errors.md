@@ -23,28 +23,28 @@ helpviewer_keywords:
 - Class Designer [Visual Studio], errors
 - class diagrams, errors
 ms.assetid: 79d70e70-704c-4255-ab68-c10d6949470e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aadc0cfb66226f463ff8a2049d4dbf81e7bcf62b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d2fe684f4b10e3570e96a88c34d1e1c08c7388da
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975563"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72631910"
 ---
 # <a name="class-designer-errors"></a>Błędy Projektanta klas
 
-**Projektant klasy** "nie Śledź" lokalizację plików źródłowych, więc modyfikowania do struktury projektu i przenoszenie plików źródłowych w projekcie może spowodować **projektanta klas** utratę informacji o typie, na przykład, jest często Zmodyfikuj typ źródła typedef, klas podstawowych i skojarzenia typów. Może zostać wyświetlony błąd taki jak **Projektant klas nie może wyświetlić tego typu**. Aby naprawić błąd, przeciągnij kod źródłowy zmodyfikowany lub przenoszone do diagramu klas ponownie, aby go wyświetlić.
+**Projektant klas** nie śledzi lokalizacji plików źródłowych, dlatego zmodyfikowanie struktury projektu lub przeniesienie plików źródłowych w projekcie może spowodować, że **Projektant klas** utratę śledzenia typu, na przykład, że często modyfikujesz typ źródła typedef, klasy bazowe i typy skojarzeń. Może zostać wyświetlony błąd, taki jak **Projektant klas nie może wyświetlić tego typu**. Aby rozwiązać ten problem, przeciągnij zmodyfikowany lub ponownie zlokalizowany kod źródłowy do diagramu klas, aby go wyświetlić.
 
-## <a name="resources"></a>Zasoby
+## <a name="resources"></a>Resources
 
-Pomoc dotyczącą inne błędy i ostrzeżenia można znaleźć w następujących zasobach:
+Pomoc dotyczącą innych błędów i ostrzeżeń można znaleźć w następujących zasobach:
 
-- [Praca z kodem języka Visual C++](working-with-visual-cpp-code.md) zawiera informacje o wyświetlaniu C++ na diagramie klasy dotyczące rozwiązywania problemów.
-- [Forum usługi Visual Studio Projektant klas](http://go.microsoft.com/fwlink/?LinkId=160754) udostępnia forum dla pytania o **projektanta klas**.
+- [Współpraca z kodem C++ wizualizacji](working-with-visual-cpp-code.md) zawiera informacje dotyczące rozwiązywania problemów z wyświetlaniem C++ w diagramie klas.
+- [Forum Projektant klas programu Visual Studio](http://go.microsoft.com/fwlink/?LinkId=160754) zawiera Forum dotyczące pytań dotyczących **Projektant klas**.
 
 ## <a name="see-also"></a>Zobacz także
 

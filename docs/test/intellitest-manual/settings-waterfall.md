@@ -1,32 +1,32 @@
 ---
-title: Kaskadowy model ustawień | Narzędzie Test Microsoft IntelliTest dla deweloperów
+title: Ustawienia kaskadowe | Narzędzie testowe dla deweloperów Microsoft IntelliTest
 ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Settings waterfall
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 966182ca79ffd06e17642e1b24d6e48b8e637efe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+author: jillre
+ms.openlocfilehash: ad5f03d7722fa2fb8452b6a1217c18996d6c978f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62939134"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653153"
 ---
 # <a name="settings-waterfall"></a>Kaskadowy model ustawień
 
-Pojęcie kaskadowy model ustawień oznacza, że użytkownik może określić ustawienia na **zestawu**, **początkowych**, i **eksploracji** poziom:
+Koncepcja ustawień kaskadowych oznacza, że użytkownik może określić ustawienia na poziomie **zestawu**, **osprzętu**i **eksploracji** :
 
-* Zestaw - [PexAssemblySettings](attribute-glossary.md#pexassemblysettings)
-* Warunki początkowe - [PexClass](attribute-glossary.md#pexclass)
-* Eksploracja - [PexExplorationAttributeBase](attribute-glossary.md#pexexplorationattributebase)
+* Zestaw — [PexAssemblySettings](attribute-glossary.md#pexassemblysettings)
+* Armatura — [PexClass](attribute-glossary.md#pexclass)
+* Eksploracja — [PexExplorationAttributeBase](attribute-glossary.md#pexexplorationattributebase)
 
-Ustawienia określone w **zestawu** poziom wpływają na wszystkie instalacje i eksploracji w ramach tego zestawu. Ustawienia określone w **początkowych** poziom mają wpływ na wszystkie eksploracji w ramach tego początkowych. Podrzędne ustawień win&mdash;Jeśli to ustawienie jest zdefiniowany na **zestawu** i **początkowych** poziomy **początkowych** ustawienia są używane.
+Ustawienia określone na poziomie **zestawu** mają wpływ na wszystkie armaturę i eksplorację w tym zestawie. Ustawienia określone na poziomie **armatury** mają wpływ na wszystkie eksploracje w ramach tej armatury. Ustawienia podrzędne win &mdash;if ustawienie jest zdefiniowane na poziomie **zestawu** i poziomu **armatury** , są używane ustawienia **osprzętu** .
 
-Należy zauważyć, że niektóre ustawienia specyficzne dla **zestawu** poziom lub **początkowych** poziom.
+Należy zauważyć, że niektóre ustawienia są specyficzne dla poziomu **zestawu** lub poziomu **osprzętu** .
 
 **Przykład**
 
@@ -46,6 +46,6 @@ namespace MyTests
 }
 ```
 
-## <a name="got-feedback"></a>Czy chcesz przesłać opinię?
+## <a name="got-feedback"></a>Masz opinię?
 
-Opublikuj swoje pomysły i funkcji żądania na [społeczności deweloperów](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
+Publikuj swoje pomysły i żądania funkcji w [społeczności deweloperów](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).

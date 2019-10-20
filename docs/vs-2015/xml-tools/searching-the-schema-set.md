@@ -1,55 +1,55 @@
 ---
-title: Wyszukiwanie zestawu schematów | Dokumentacja firmy Microsoft
+title: Wyszukiwanie zestawu schematu | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: ec1395e0-d03c-4130-810d-f2db656937bd
 caps.latest.revision: 12
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1d388db50ae935ef85b720177bd31c832a353d31
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0e3a8563d5e2cd29c9c521761498d7ef87b7cbab
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68145170"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656158"
 ---
 # <a name="searching-the-schema-set"></a>Wyszukiwanie zestawu schematów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Eksplorator schematu XML umożliwia wyszukiwanie schematu ustawiony w następujący sposób:  
-  
-- Wyszukiwanie słów kluczowych.  
-  
-- Wyszukiwanie specyficzne dla schematu.  
-  
-## <a name="keyword-search"></a>Wyszukiwanie słów kluczowych  
- Wyszukiwanie słów kluczowych, wprowadzając podciągu w **SchemaSet wyszukiwania** pola tekstowego, na pasku narzędzi Eksploratora schematu XML.  
-  
- ![XML Schema Explorer Keyword Search](../xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")  
-  
- Eksplorator schematu XML przeszukuje zestawie dla następujących schematów:  
-  
-- Wszelkie `name` lub `ref` atrybuty, które pasują do określonego słowa kluczowego. Dzięki temu można znaleźć elementy, atrybuty, typy, i tak dalej według nazwy.  
-  
-- `schemaLocation` Atrybuty instrukcji #include.  
-  
-- `namespace` Atrybuty instrukcje importowania.  
-  
-## <a name="schema-specific-search"></a>Wyszukiwanie określonego schematu  
- Eksplorator schematu XML zawiera także wbudowaną wyszukiwania, które mogą uzyskać dostęp za pomocą menu kontekstowego Eksploratora schematu XML. Aby uzyskać więcej informacji na temat menu kontekstowe dostępne zobacz [menu kontekstowe](../xml-tools/context-menus-xml-schema-explorer.md). Można również wykonać wyszukiwanie specyficzne dla schematu z widoku startowego; Aby uzyskać więcej informacji, zobacz sekcję "Szczegóły zestawu schematów" w [widoku Start](../xml-tools/start-view.md) tematu.  
-  
-## <a name="displaying-and-navigating-search-results"></a>Wyświetlanie i nawigowanie wyników wyszukiwania  
- Po zakończeniu wyszukiwania w okienku wyników podsumowania jest dodawany do paska narzędzi z wynikami wyszukiwania. Wyniki wyszukiwania są również wyróżnione Eksploratora schematu XML i oznaczony za znaczniki na pionowy pasek przewijania. Wyniki wyszukiwania można nawigować przy użyciu **przejdź do następnego wyniku wyszukiwania** i **przejdź do poprzedniego wyniku wyszukiwania** przycisków w okienku wyników podsumowania na pasku narzędzi Eksploratora schematu XML; za pomocą klawiszy F3 i Shift + F3 lub klikając znaczniki na pasku przewijania.  
-  
- Wyniki wyszukiwania można dodać do obszaru roboczego, klikając **Dodaj wyróżnione węzły do obszaru roboczego** przycisk w okienku wyników podsumowania.  
-  
- ![Wynik wyszukiwania Eksploratora schematu XML](../xml-tools/media/schemaexplorersearchresult.gif "SchemaExplorerSearchResult")  
-  
-## <a name="clearing-search-results"></a>Czyszczenie wyników wyszukiwania  
- Aby wyczyścić wyniki wyszukiwania, kliknij pozycję **x** przycisk na pasku wyszukiwania Eksploratora schematu XML, w okienku wyników podsumowania.  
-  
-## <a name="see-also"></a>Zobacz też  
+Eksplorator schematu XML umożliwia przeszukiwanie zestawu schematów w następujący sposób:
+
+- Wyszukiwanie słów kluczowych.
+
+- Wyszukiwanie specyficzne dla schematu.
+
+## <a name="keyword-search"></a>Wyszukiwanie słów kluczowych
+ Wyszukiwanie słów kluczowych jest wykonywane przez wprowadzenie podciągu w polu tekstowym **Wyszukaj SchemaSet** na pasku narzędzi EKSPLORATORA schematu XML.
+
+ ![Wyszukiwanie słów kluczowych w Eksploratorze schematu XML](../xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")
+
+ Eksplorator schematu XML przeszukuje zestaw schematów dla następujących:
+
+- Wszystkie atrybuty `name` lub `ref`, które pasują do określonego słowa kluczowego. Pozwala to na znalezienie elementów, atrybutów, typów i tak dalej według nazwy.
+
+- @No__t_0 atrybuty instrukcji INCLUDE.
+
+- @No__t_0 atrybuty instrukcji import.
+
+## <a name="schema-specific-search"></a>Wyszukiwanie specyficzne dla schematu
+ Eksplorator schematu XML zawiera również wbudowane wyszukiwania, do których można uzyskać dostęp za pomocą menu kontekstowego Eksploratora schematu XML. Aby uzyskać więcej informacji na temat dostępnych menu kontekstowych, zobacz [menu kontekstowe](../xml-tools/context-menus-xml-schema-explorer.md). Możesz również wykonać wyszukiwanie specyficzne dla schematu w widoku Start. Aby uzyskać więcej informacji, zobacz sekcję "Szczegóły zestawu schematów" w temacie [Start View](../xml-tools/start-view.md) .
+
+## <a name="displaying-and-navigating-search-results"></a>Wyświetlanie i nawigowanie po wynikach wyszukiwania
+ Po zakończeniu wyszukiwania okienko wyniki podsumowania zostanie dodane do paska narzędzi z wynikami wyszukiwania. Wyniki wyszukiwania są również wyróżnione w Eksploratorze schematu XML i oznaczone przez Takty na pionowym pasku przewijania. Wyniki wyszukiwania można nawigować przy użyciu przycisków **Przejdź do następnego wyszukiwania** wynik i **Przejdź do poprzedniego wyniku wyszukiwania** w okienku wyników podsumowania na pasku narzędzi Eksploratora schematu XML. przy użyciu klawiszy klawiatury F3 i Shift + F3; lub klikając znaczniki osi na pasku przewijania.
+
+ Możesz dodać wyniki wyszukiwania do obszaru roboczego, klikając przycisk **Dodaj wyróżnione węzły do obszaru roboczego** w okienku wyników podsumowania.
+
+ ![Wynik wyszukiwania Eksploratora schematu XML](../xml-tools/media/schemaexplorersearchresult.gif "SchemaExplorerSearchResult")
+
+## <a name="clearing-search-results"></a>Czyszczenie wyników wyszukiwania
+ Aby wyczyścić wyniki wyszukiwania, kliknij przycisk **x** w okienku wyników podsumowania na pasku narzędzi wyszukiwania EKSPLORATORA schematu XML.
+
+## <a name="see-also"></a>Zobacz też
  [Eksplorator schematu XML](../xml-tools/xml-schema-explorer.md)

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - data tier
 - n-tier applications, about n-tier applications
 ms.assetid: 1020581d-eaaa-41a2-aca4-bf4c212895f6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e4c10e3a337b44a4b7c9a1cb59165736bb3e7efb
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 80b6f89d9c074d7d17c258263c03e97334e6fd90
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871531"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648277"
 ---
 # <a name="n-tier-data-applications-overview"></a>N-warstwowe aplikacje dotyczące danych — omówienie
 *N-warstwowe* aplikacje danych to aplikacje danych, które są rozdzielone na wiele *warstw*. Ich inne nazwy to „aplikacje rozproszone” i „aplikacje wielowarstwowe”. Aplikacje n-warstwowe dzielą przetwarzanie na dyskretne warstwy, które są rozkładane między klienta i serwer. Podczas tworzenia aplikacji uzyskujących dostęp do danych należy jednoznacznie odseparować różne warstwy tworzące aplikację.
@@ -31,7 +31,7 @@ Program Visual Studio zawiera kilka funkcji, które ułatwiają deweloperom twor
 
 - [Narzędzia LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) udostępniają ustawienia umożliwiające wygenerowanie elementów DataContext i Data w oddzielnych obszarach nazw. Takie rozwiązania pozwala logicznie rozdzielić warstwy dostępu do danych i jednostek danych.
 
-- [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) udostępnia <xref:System.Data.Linq.Table%601.Attach%2A> metodę, która umożliwia łączenie DataContext z różnych warstw w aplikacji. Aby uzyskać więcej informacji, zobacz [aplikacje N-warstwowe i zdalne za pomocą LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql).
+- [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) udostępnia metodę <xref:System.Data.Linq.Table%601.Attach%2A>, która umożliwia łączenie DataContext z różnych warstw w aplikacji. Aby uzyskać więcej informacji, zobacz [aplikacje N-warstwowe i zdalne za pomocą LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql).
 
 ## <a name="presentation-tier"></a>Warstwa prezentacji
 *Warstwa prezentacji* to warstwa, w której użytkownicy współpracują z aplikacją. Często zawiera także dodatkową logikę aplikacji. Oto typowe składniki warstwy prezentacji:
@@ -49,7 +49,7 @@ Warstwa prezentacji zwykle uzyskuje dostęp do warstwy środkowej przy użyciu o
 
 - Składniki i logika dostępu do danych, w tym:
 
-  - [TableAdapters](create-and-configure-tableadapters.md) oraz [dataadaptery i](/dotnet/framework/data/adonet/dataadapters-and-datareaders)DataReader.
+  - [TableAdapters](create-and-configure-tableadapters.md) oraz [dataadaptery i DataReader](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
 
   - Obiektowe reprezentacje danych, takie jak klasy jednostek [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) .
 
@@ -57,7 +57,7 @@ Warstwa prezentacji zwykle uzyskuje dostęp do warstwy środkowej przy użyciu o
 
 Na ilustracji poniżej widać funkcje i technologie, które są dostępne w programie Visual Studio i mogą być umieszczone w środkowej warstwie aplikacji n-warstwowej.
 
-![Warstwa środkowa](../data-tools/media/ntiermid.png) komponentów warstwy środkowej
+składniki warstwy ![Middle ](../data-tools/media/ntiermid.png) warstwy środkowej
 
 Warstwa środkowa zazwyczaj łączy się z warstwą danych przy użyciu połączenia danych. To połączenie danych jest zazwyczaj przechowywane w składniku dostępu do danych.
 
@@ -66,7 +66,7 @@ Warstwa środkowa zazwyczaj łączy się z warstwą danych przy użyciu połącz
 
 Na ilustracji poniżej widać funkcje i technologie, które są dostępne w programie Visual Studio i mogą być umieszczone w warstwie danych aplikacji n-warstwowej.
 
-![Warstwa danych składników](../data-tools/media/ntierdatatier.png) warstwy danych
+składniki warstwy ![Data ](../data-tools/media/ntierdatatier.png) warstwy danych
 
 Warstwa danych nie może być dostępna bezpośrednio z klienta w warstwie prezentacji. Zamiast tego składnik dostępu do danych w warstwie środkowej obsługuje komunikację między warstwami prezentacji i danych.
 
@@ -75,13 +75,13 @@ Poniższe tematy zawierają informacje dotyczące pracy z aplikacjami n-warstwow
 
 [Rozdzielanie zestawów danych i adapterów TableAdapter do różnych projektów](../data-tools/separate-datasets-and-tableadapters-into-different-projects.md)
 
-[Przewodnik: Tworzenie wielowarstwowej aplikacji do obsługi danych](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+[Przewodnik: Tworzenie wielowarstwowej aplikacji danych](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 
 [Aplikacje N-warstwowe i zdalne z LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Przewodnik: Tworzenie wielowarstwowej aplikacji do obsługi danych](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+- [Przewodnik: Tworzenie wielowarstwowej aplikacji danych](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [Aktualizacja hierarchiczna](../data-tools/hierarchical-update.md)
 - [Narzędzia zestawów danych w programie Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
 - [Uzyskiwanie dostępu do danych w programie Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

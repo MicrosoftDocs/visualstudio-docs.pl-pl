@@ -4,15 +4,15 @@ ms.date: 08/09/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - Windows Forms Designer
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0df8b7ec5955f472d716af2850d2ab0b776c6552
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: b26ad18da19d5a2e53199b49e7acc024c728be9c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585332"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72634028"
 ---
 # <a name="windows-forms-designer-overview"></a>Projektant formularzy systemu Windows — omówienie
 
@@ -24,7 +24,7 @@ Za pomocą projektanta można:
 
 - Dodawanie składników, kontrolek danych lub formantów opartych na systemie Windows do formularza.
 
-- Kliknij dwukrotnie formularz w Projektancie i napisz kod w `Load` zdarzeniu dla tego formularza lub kliknij dwukrotnie formant w formularzu i napisz kod dla zdarzenia domyślnego formantu.
+- Kliknij dwukrotnie formularz w Projektancie i napisz kod w zdarzeniu `Load` dla tego formularza, lub kliknij dwukrotnie formant w formularzu i napisz kod dla zdarzenia domyślnego formantu.
 
 - Edytuj właściwość Text kontrolki, zaznaczając kontrolkę i wpisując nazwę.
 
@@ -42,4 +42,4 @@ Za pomocą projektanta można:
 - [Dane wejściowe użytkownika w Windows Forms](/dotnet/framework/winforms/user-input-in-windows-forms)
 - [Powiązanie danych w Windows Forms](/dotnet/framework/winforms/windows-forms-data-binding)
 - [Ulepszanie aplikacji Windows Forms](/dotnet/framework/winforms/advanced/)
-- <xref:System.Windows.Forms?displayProperty=fullName>Dokumentacja interfejsu API
+- Dokumentacja interfejsu API <xref:System.Windows.Forms?displayProperty=fullName>

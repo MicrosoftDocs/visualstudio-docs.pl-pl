@@ -2,20 +2,20 @@
 title: Wskazówki dotyczące narzędzi architektury
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da3b0d2829732b7b1765b082eb51b2b54832d1ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ef7ca51504ab1ac76003fb8452f43b0491100ea1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62906873"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72663714"
 ---
 # <a name="visual-studio-architecture-tooling-guidance"></a>Architektura Visual Studio — wskazówki dotyczące oprzyrządowania
 
-Tej wskazówki dotyczące narzędzi architektury to możliwy do pobrania pakiet praktycznych wskazówek na temat korzystania z narzędzi modelowania w programie Visual Studio 2010. Przedstawia widok wysokiego poziomu użycia wszystkich narzędzi modelowania w zintegrowany sposób, a w tym artykule omówiono najbardziej typowych scenariuszy, w których te narzędzia są używane.
+Te wskazówki dotyczące narzędzi architektury to dostępny do pobrania pakiet praktycznych wskazówek dotyczących używania narzędzi modelowania w programie Visual Studio 2010. Przedstawia on ogólny widok, jak używać wszystkich narzędzi do modelowania w sposób zintegrowany i omawia najpopularniejsze scenariusze, w których są używane narzędzia.
 
-Zawartość została utworzona przez Visual Rangers ALM Studio, zawierającej członków z zespołu produktu Visual Studio, Microsoft Services, Microsoft najbardziej cenionym specjaliści (MVP) i Visual Studio Community prowadzi grupy specjalnej.
+Zawartość została utworzona przez program Visual Studio ALM Ranges, specjalną grupę, która ma członków z zespołu produktów Visual Studio, usług firmy Microsoft, specjalistów o najwyższej wartości (MVP) i programu Visual Studio Community.

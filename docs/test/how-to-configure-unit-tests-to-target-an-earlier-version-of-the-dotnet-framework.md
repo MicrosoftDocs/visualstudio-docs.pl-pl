@@ -1,93 +1,93 @@
 ---
-title: Testy jednostkowe docelowe wcześniejszej wersji programu .NET Framework
+title: Testy jednostkowe docelowe w starszej wersji .NET Framework
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-author: gewarren
-ms.openlocfilehash: 0d77bd4fa5a1797b5e405c0b1af12cd1c24b18f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+author: jillre
+ms.openlocfilehash: 32f34eb9af74f8db06cfc6910db83806383ae3be
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979387"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72643606"
 ---
-# <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Instrukcje: Konfigurowanie testów jednostkowych pod kątem starszej wersji programu .NET Framework
+# <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Instrukcje: Konfigurowanie testów jednostkowych pod kątem wcześniejszej wersji .NET Framework
 
-Po utworzeniu projektu testu w programie Microsoft Visual Studio najnowszą wersję programu .NET Framework jest domyślnie jako cel. Ponadto jeśli zaktualizujesz projekty testowe z poprzednich wersji programu Visual Studio, ich uaktualnienia pod kątem najbardziej aktualną wersję programu .NET Framework. Edytując właściwości projektu, można jawnie ponownie docelowych projektu we wcześniejszych wersjach programu .NET Framework.
+Podczas tworzenia projektu testowego w Microsoft Visual Studio, Najnowsza wersja .NET Framework jest domyślnie ustawiona jako element docelowy. Ponadto Jeśli uaktualniasz projekty testowe z poprzednich wersji programu Visual Studio, zostaną one uaktualnione pod kątem najnowszej wersji .NET Framework. Edytując właściwości projektu, można jawnie przekierować projekt do wcześniejszych wersji .NET Framework.
 
-Jednostki można tworzyć projekty testowe, przeznaczonych dla określonej wersji programu .NET Framework. Docelowa wersja musi być w wersji 3.5 lub nowszej, a nie może być wersji klienta. Program Visual Studio umożliwia następujące podstawowa pomoc techniczna dla testów jednostkowych, przeznaczonych dla określonych wersji:
+Można tworzyć projekty testów jednostkowych, które są przeznaczone dla określonych wersji .NET Framework. Wersja doużywana musi mieć wartość 3,5 lub nowszą i nie może być wersją klienta. Program Visual Studio zapewnia podstawową pomoc techniczną dla testów jednostkowych przeznaczonych dla konkretnych wersji:
 
-- Można tworzyć projektów testów jednostkowych i określania elementów docelowych widoków do określonej wersji programu .NET Framework.
+- Można tworzyć projekty testów jednostkowych i kierować je do określonej wersji .NET Framework.
 
-- Można uruchomić testów jednostkowych przeznaczonych określonej wersji programu .NET Framework w programie Visual Studio na komputerze lokalnym.
+- Można uruchomić testy jednostkowe przeznaczone dla określonej wersji .NET Framework z programu Visual Studio na komputerze lokalnym.
 
-- Można uruchomić testy jednostkowe, przeznaczonych dla określonej wersji programu .NET Framework za pomocą *MSTest.exe* w wierszu polecenia.
+- Testy jednostkowe przeznaczone dla określonej wersji .NET Framework można uruchomić przy użyciu programu *MSTest. exe* z wiersza polecenia.
 
-- Możesz uruchomić testy jednostkowe na agencie kompilacji jako część kompilacji.
+- Testy jednostkowe można uruchomić w agencie kompilacji w ramach kompilacji.
 
-**Testowanie aplikacji SharePoint**
+**Testowanie aplikacji programu SharePoint**
 
-Funkcje wymienione powyżej również umożliwiają pisanie testów jednostkowych i testów integracji aplikacji programu SharePoint przy użyciu programu Visual Studio. Aby uzyskać więcej informacji na temat programowania aplikacji programu SharePoint przy użyciu programu Visual Studio, zobacz [rozwiązań SharePoint Utwórz](../sharepoint/create-sharepoint-solutions.md), [kompilowanie i debugowanie rozwiązań SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md) i [upewnij się, jak i debugowania Kod programu SharePoint](../sharepoint/verifying-and-debugging-sharepoint-code.md).
+Wymienione powyżej możliwości pozwalają również pisać testy jednostkowe i testy integracji dla aplikacji programu SharePoint przy użyciu programu Visual Studio. Aby uzyskać więcej informacji o sposobach opracowywania aplikacji programu SharePoint przy użyciu programu Visual Studio, zobacz [Tworzenie rozwiązań SharePoint](../sharepoint/create-sharepoint-solutions.md), [Kompilowanie i debugowanie rozwiązań SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md) oraz [weryfikowanie i debugowanie kodu programu SharePoint](../sharepoint/verifying-and-debugging-sharepoint-code.md).
 
 **Ograniczenia**
 
-Poniższe ograniczenia mają zastosowanie, gdy miejscem docelowym ponownie swoje projekty testów, aby używać starszych wersji programu .NET Framework:
+Następujące ograniczenia są stosowane po ponownym nakierowaniu projektów testowych do korzystania z wcześniejszych wersji .NET Framework:
 
-- W .NET Framework 3.5 wielowersyjności kodu w programie jest obsługiwana dla projektów testowych, zawierające testy jednostkowe tylko. .NET Framework 3.5 nie obsługuje inny typ testu, takie jak kodowane testy interfejsu użytkownika lub obciążenia. Ponownie wartości docelowej jest zablokowana dla typów testów niż testy jednostkowe.
+- W .NET Framework 3,5, dla projektów testowych, które zawierają tylko testy jednostkowe, jest obsługiwana obsługa wieloelementowych. .NET Framework 3,5 nie obsługuje żadnego innego typu testowego, takiego jak kodowany interfejs użytkownika lub test obciążenia. Ponowne określanie wartości docelowej jest blokowane dla typów testów innych niż testy jednostkowe.
 
-- Wykonywanie testów, które są przeznaczone dla starszej wersji programu .NET Framework jest obsługiwany tylko w przypadku domyślnego adaptera hosta. Nie jest obsługiwana na karcie hosta ASP.NET. Aplikacje ASP.NET, które są uruchamiane w kontekście ASP.NET Development Server muszą być zgodne z bieżącą wersją programu .NET Framework.
+- Wykonywanie testów, które są przeznaczone dla starszej wersji .NET Framework jest obsługiwane tylko w domyślnym adapterze hosta. Nie jest obsługiwana na karcie hosta ASP.NET. Aplikacje ASP.NET, które muszą działać w kontekście serwera deweloperskiego ASP.NET, muszą być zgodne z bieżącą wersją .NET Framework.
 
-- Obsługa zbierania danych jest wyłączone, po uruchomieniu testów, które obsługują wielowersyjności kodu w programie .NET Framework 3.5. Możesz uruchomić pokrycie kodu za pomocą narzędzia wiersza polecenia programu Visual Studio.
+- Obsługa zbierania danych jest wyłączona, gdy uruchamiasz testy, które obsługują wielodostępne .NET Framework 3,5. Pokrycie kodu można uruchomić przy użyciu narzędzi wiersza polecenia programu Visual Studio.
 
-- Testy jednostkowe, które używają .NET Framework 3.5 nie można uruchomić na komputerze zdalnym.
+- Testy jednostkowe, które używają .NET Framework 3,5, nie mogą być uruchamiane na komputerze zdalnym.
 
-- Testy jednostkowe do wcześniejszych wersji klienta w ramach nie może być przeznaczony.
+- Nie można przekierować testów jednostkowych do wcześniejszych wersji klienta platformy.
 
-## <a name="retargeting-for-visual-basic-unit-test-projects"></a>Trwa przekierowywanie do projektów testów jednostkowych dla języka Visual Basic
+## <a name="retargeting-for-visual-basic-unit-test-projects"></a>Przekierowywanie dla projektów testów jednostkowych Visual Basic
 
-1. Utwórz nowego języka Visual Basic **projektu testu jednostkowego** projektu.
+1. Utwórz nowy projekt **projektu testu jednostkowego** Visual Basic.
 
-2. W **Eksploratora rozwiązań**, wybierz **właściwości** z menu kliknij prawym przyciskiem myszy nowy projekt testowy Visual Basic.
+2. W obszarze **Eksplorator rozwiązań**wybierz pozycję **Właściwości** w menu rozwijanym prawym przyciskiem myszy nowy Visual Basic projekt testowy.
 
-     Wyświetlane są właściwości dla projektu testowego programu Visual Basic.
+     Zostaną wyświetlone właściwości projektu testowego Visual Basic.
 
-3. Na **skompilować** kartę, wybrać **zaawansowane opcje kompilacji** jak pokazano na poniższej ilustracji.
+3. Na karcie **Kompilowanie** wybierz pozycję **Zaawansowane opcje kompilacji** , jak pokazano na poniższej ilustracji.
 
      ![Zaawansowane opcje kompilacji](../test/media/howtoconfigureunittest35frameworka.png)
 
-4. Użyj **platformy docelowej (wszystkie konfiguracje)** listy rozwijanej, aby zmienić platformę docelową, aby **.NET Framework 3.5** lub nowszy, zgodnie z objaśnieniem B na poniższej ilustracji. Nie należy określać wersję klienta.
+4. Użyj listy rozwijanej **platformy docelowej (wszystkie konfiguracje)** , aby zmienić platformę docelową na **.NET Framework 3,5** lub nowszą, jak pokazano w objaśnieniu B na poniższej ilustracji. Nie należy określać wersji klienta.
 
-     ![TARGET framework listy&#45;listy rozwijanej](../test/media/howtoconfigureunitest35frameworkstepb.png)
+     ![Lista rozwijana&#45;platformy docelowej](../test/media/howtoconfigureunitest35frameworkstepb.png)
 
-## <a name="retargeting-for-c-unit-test-projects"></a>Trwa przekierowywanie do C# projektów testów jednostkowych
+## <a name="retargeting-for-c-unit-test-projects"></a>Przekierowywanie dla C# projektów testów jednostkowych
 
-1. Utwórz nową C# **projektu testu jednostkowego** projektu.
+1. Utwórz nowy C# projekt **projektu testu jednostkowego** .
 
-2. W **Eksploratora rozwiązań**, wybierz **właściwości** do menu kliknij prawym przyciskiem myszy nową C# projektu testowego.
+2. W **Eksplorator rozwiązań**wybierz **Właściwości** z menu rozwijanego prawym przyciskiem myszy nowego C# projektu testowego.
 
-   Właściwości usługi C# projektu testowego są wyświetlane.
+   Zostaną wyświetlone właściwości projektu C# testowego.
 
-3. Na **aplikacji** kartę, wybrać **platformę docelową**. Z listy rozwijanej wybierz **.NET Framework 3.5** lub nowszej wersji, jak pokazano na poniższej ilustracji. Nie należy określać wersję klienta.
+3. Na karcie **aplikacja** wybierz pozycję **platforma docelowa**. Z listy rozwijanej wybierz **.NET Framework 3,5** lub nowszą wersję, jak pokazano na poniższej ilustracji. Nie należy określać wersji klienta.
 
-   ![TARGET framework listy&#45;listy rozwijanej](../test/media/howtoconfigureunittest35frameworkcsharp.png)
+   ![Lista rozwijana&#45;platformy docelowej](../test/media/howtoconfigureunittest35frameworkcsharp.png)
 
-## <a name="retargeting-for-ccli-unit-test-projects"></a>Trwa przekierowywanie do C++/projektów testów jednostkowych interfejsu wiersza polecenia
+## <a name="retargeting-for-ccli-unit-test-projects"></a>Przekierowywanie dla C++projektów testów jednostkowych/CLI
 
-1. Tworzenie nowego C++ **projektu testu jednostkowego** projektu.
+1. Utwórz nowy C++ projekt **projektu testu jednostkowego** .
 
    > [!WARNING]
-   > Aby zbudować C + +/ testów jednostkowych interfejsu wiersza polecenia dla wcześniejszych wersji programu .NET framework dla Visual C++, należy użyć odpowiedniej wersji programu Visual Studio.
+   > Aby skompilować C++testy jednostkowe/CLI dla poprzedniej wersji programu .NET Framework dla wizualizacji C++, musisz użyć odpowiedniej wersji programu Visual Studio.
 
-2. W **Eksploratora rozwiązań**, wybierz **Zwolnij projekt** z projektu testu języka C++.
+2. W **Eksplorator rozwiązań**wybierz pozycję **Zwolnij projekt** z nowego C++ projektu testowego.
 
-3. W **Eksploratora rozwiązań**, wybierz zwolnionego projektu testu języka C++, a następnie wybierz **Edytuj \<Nazwa projektu > .vcxproj**.
+3. W **Eksplorator rozwiązań**wybierz niezaładowanego projektu C++ testowego, a następnie wybierz **Edytuj \<project nazwa >. vcxproj**.
 
-   *.Vcxproj* plik zostanie otwarty w edytorze.
+   Plik *. vcxproj* zostanie otwarty w edytorze.
 
-4. Ustaw `TargetFrameworkVersion` w wersji 3.5 lub nowszej wersji w `PropertyGroup` etykietą `"Globals"`. Nie należy określać wersja klienta:
+4. Ustaw `TargetFrameworkVersion` w wersji 3,5 lub nowszej w `PropertyGroup` oznaczonej `"Globals"`. Nie należy określać wersji klienta:
 
     ```xml
     <PropertyGroup Label="Globals">
@@ -100,12 +100,12 @@ Poniższe ograniczenia mają zastosowanie, gdy miejscem docelowym ponownie swoje
       </PropertyGroup>
     ```
 
-5. Zapisz i Zamknij *.vcxproj* pliku.
+5. Zapisz i zamknij plik *. vcxproj* .
 
-6. W **Eksploratora rozwiązań**, wybierz Zaznacz **Załaduj ponownie projekt** z menu kliknij prawym przyciskiem myszy nowy projekt testów języka C++.
+6. W **Eksplorator rozwiązań**wybierz opcję Wybierz **Załaduj ponownie projekt** z menu rozwijanego prawym przyciskiem C++ myszy nowego projektu testowego.
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Tworzenie rozwiązań SharePoint](../sharepoint/create-sharepoint-solutions.md)
 - [Kompilowanie i debugowanie rozwiązań SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)
-- [Okno dialogowe Ustawienia zaawansowane kompilatora (Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)
+- [Okno dialogowe Zaawansowane ustawienia kompilatora (Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)

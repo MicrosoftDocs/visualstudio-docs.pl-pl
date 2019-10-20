@@ -5,17 +5,17 @@ ms.date: 07/11/2018
 ms.topic: reference
 helpviewer_keywords:
 - F# features [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: fef50748942aaa800cf1181e4c8f8b8a030f99ee
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 176504ceb7c80a36028e7d5f1806aa598cdf708e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211305"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645366"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>Programowanie za pomocą F# wizualizacji w Visual Studio
 
@@ -23,7 +23,7 @@ Ten artykuł zawiera informacje o funkcjach programu Visual F# Studio na potrzeb
 
 ## <a name="install-f-support"></a>Zainstaluj F# obsługę
 
-Aby rozpocząć tworzenie F# w programie Visual Studio, najpierw zainstaluj obciążenie **Programowanie aplikacji klasycznych platformy .NET** , jeśli nie zostało to jeszcze zrobione. Możesz zainstalować obciążenia programu Visual Studio za pomocą Instalator programu Visual Studio, które można otworzyć, wybierając pozycję **Narzędzia** > **Pobierz narzędzia i funkcje**.
+Aby rozpocząć tworzenie F# w programie Visual Studio, najpierw zainstaluj obciążenie **Programowanie aplikacji klasycznych platformy .NET** , jeśli nie zostało to jeszcze zrobione. Możesz zainstalować obciążenia programu Visual Studio za pomocą Instalator programu Visual Studio, które można otworzyć, wybierając pozycję **narzędzia**  > **Pobierz narzędzia i funkcje**.
 
 ![Obciążenie Programowanie aplikacji klasycznych dla platformy .NET w programie Visual Studio](media/dotnet-desktop-development-workload.png)
 
@@ -74,7 +74,7 @@ Poniższa tabela zawiera podsumowanie ustawień, które są specyficzne F#dla:
 
 |Strona projektanta projektu|Ustawienie|Opis|
 | - |-------|-----------|
-|Kompilacja|Generuj wywołania tail|W przypadku wybrania tej wartości program umożliwia korzystanie z instrukcji języka pośredniego (MSIL) firmy Microsoft. Powoduje to, że ramka stosu zostanie ponownie użyta na potrzeby funkcji cyklicznych. Odpowiednik opcji kompilatora `--tailcalls` .|
+|Kompilacja|Generuj wywołania tail|W przypadku wybrania tej wartości program umożliwia korzystanie z instrukcji języka pośredniego (MSIL) firmy Microsoft. Powoduje to, że ramka stosu zostanie ponownie użyta na potrzeby funkcji cyklicznych. Odpowiednik opcji kompilatora `--tailcalls`.|
 |Kompilacja|Inne flagi|Umożliwia określenie dodatkowych opcji wiersza polecenia kompilatora.|
 
 ## <a name="code-and-text-editor-features"></a>Funkcje edytora kodu i tekstu
@@ -98,13 +98,13 @@ Następujące funkcje programu Visual Studio Code i edytorów tekstu są obsług
 |Na tabulatory|Konwertuje spacje na tabulatory.|Tak|
 |Kolorowanie typów|Pokazuje zdefiniowane nazwy typów w specjalnym kolorze.|Tak|
 |Szybkie znajdowanie. Zobacz szybkie znajdowanie, Znajdowanie i zamienianie okna.|Umożliwia wyszukiwanie w pliku lub projekcie.|Tak|
-|**Naciśnij klawisz Ctrl**+ **, aby przejść do definicji**|Umożliwia zatrzymanie klawisza **Ctrl** i kliknięcie F# symbolu do wywołania przejdź do definicji.|Tak|
+|**Naciśnij klawisz Ctrl** , +**kliknij** , aby przejść do definicji|Umożliwia zatrzymanie klawisza **Ctrl** i kliknięcie F# symbolu do wywołania przejdź do definicji.|Tak|
 |Przejdź do definicji z sekcji szybkich informacji|Symbole, które można klikać w obrębie etykietek narzędzi, które wywołują przejdź do definicji.|Tak|
-|Przejdź do wszystkich|Włącza globalną, rozmytyą nawigację dla wszystkich F# konstrukcji za pośrednictwem **Ctrl**+**T**.|Tak|
+|Przejdź do wszystkiego|Włącza globalną nawigację dopasowania dla wszystkich F# konstrukcji za pośrednictwem **kombinacji klawiszy CTRL** +**t**.|Tak|
 |Nazwa wbudowana|Zmienia nazwę wszystkich wystąpień symbolu w tekście.|Tak|
 |Znajdź wszystkie odwołania|Znajduje wszystkie wystąpienia symbolu w bazie kodu.|Tak|
 |Uprość poprawkę kodu nazw|Usuwa zbędne kwalifikatory F# dla symboli.|Tak|
-|Usuń nieużywaną `open` poprawkę kodu instrukcji|Usuwa wszystkie zbędne `open` instrukcje w dokumencie.|Tak|
+|Usuń nieużywaną poprawkę kodu instrukcji `open`|Usuwa wszystkie zbędne instrukcje `open` w dokumencie.|Tak|
 |Poprawka nieużywanego kodu wartości|Sugeruje zmianę nazwy nieużywanego identyfikatora na podkreślenie.|Tak|
 
 Aby uzyskać ogólne informacje na temat edytowania kodu w programie Visual Studio i funkcji edytora tekstów, zobacz [pisanie kodu w edytorze](writing-code-in-the-code-and-text-editor.md).
@@ -118,8 +118,8 @@ W poniższej tabeli zestawiono funkcje IntelliSense obsługiwane i nieobsługiwa
 |Automatycznie Implementuj interfejsy|Generuje fragmenty kodu dla metod interfejsu.|Tak|
 |Fragmenty kodu|Wprowadza kod z biblioteki wspólnych konstrukcji kodowania do tematów.|Nie|
 |Dokończ wyraz|Zapisuje tekst, wykonując słowa i nazwy podczas wpisywania.|Tak|
-|Automatyczne uzupełnianie|Po włączeniu powoduje, że uzupełnianie wyrazów wybiera pierwsze dopasowanie podczas pisania, zamiast czekać na wybranie jednego lub naciśnięcie klawisza **Ctrl**+ **.**|Tak|
-|Ukończenie oferty dla symboli w nieotwartych przestrzeniach nazw|W przypadku automatycznego uzupełniania sugerowany symbol, który znajduje się w nieotwartym obszarze nazw, jest proponowany, a oferta została `open` zakończona z odpowiednią instrukcją w przypadku wybrania.|Tak|
+|Automatyczne uzupełnianie|Po włączeniu powoduje, że uzupełnianie wyrazów wybiera pierwsze dopasowanie podczas pisania, zamiast czekać na wybranie jednego lub naciśnięcie klawisza **Ctrl** +**miejsce**.|Tak|
+|Ukończenie oferty dla symboli w nieotwartych przestrzeniach nazw|W przypadku automatycznego uzupełniania sugerowany symbol, który znajduje się w nieotwartym obszarze nazw, jest proponowany, a oferta została wykonana z odpowiadającą jej instrukcją `open` po zaznaczeniu.|Tak|
 |Generuj elementy kodu|Umożliwia generowanie kodu szczątkowego dla różnych konstrukcji.|Nie|
 |Lista składników|Po wpisaniu operatora dostępu do elementu członkowskiego (.), pokazuje elementy członkowskie dla danego typu.|Tak|
 |Organizuj przy użyciu/Otwórz|Organizuje przestrzenie nazw, do których C# odwołują się instrukcje F# **using** w lub **otwierają** dyrektywy w.|Nie|
@@ -143,7 +143,7 @@ Poniższa tabela zawiera podsumowanie funkcji dostępnych podczas debugowania F#
 |Debugowanie historyczne|Umożliwia wkroczenie do wykonanego wcześniej kodu.|Tak|
 |okno zmiennych lokalnych|Pokazuje zdefiniowane lokalnie wartości i zmienne.|Tak|
 |Uruchom do kursora|Umożliwia wykonywanie kodu do momentu, aż wiersz zawierający kursor zostanie osiągnięty.|Tak|
-|Wkrocz|Umożliwia wykonywanie i przechodzenie do dowolnego wywołania funkcji.|Tak|
+|Wkrocz do|Umożliwia wykonywanie i przechodzenie do dowolnego wywołania funkcji.|Tak|
 |Przekrocz nad|Umożliwia wykonywanie z wyprzedzeniem bieżącej ramki stosu i przechodzenie do poprzedniego wywołania funkcji.|Tak|
 
 Aby uzyskać ogólne informacje na temat debugera programu Visual Studio, zobacz [debugowanie w programie Visual Studio](../debugger/index.yml).

@@ -1,152 +1,147 @@
 ---
-title: Testowanie aplikacji SharePoint 2010 za pomocą kodowanych testów interfejsu użytkownika | Dokumentacja firmy Microsoft
+title: Testowanie aplikacji programu SharePoint 2010 przy użyciu kodowanych testów interfejsu użytkownika | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.assetid: 51b53778-469c-4cc9-854c-4e4992d6389b
 caps.latest.revision: 32
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 973d5f6e78449756f96e75407655df7c74c391bf
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 2f9df50094676eea5694a29362772c9c44fa456b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65705924"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660383"
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>Testowanie aplikacji SharePoint 2010 za pomocą kodowanych testów interfejsu użytkownika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Łącznie kodowane testy interfejsu użytkownika w aplikacji programu SharePoint pozwala zweryfikować poprawne działanie całej aplikacji, w tym jego formantów interfejsu użytkownika. Kodowane testy interfejsu użytkownika można zweryfikować wartości i logika interfejsu użytkownika.  
-  
- **Wymagania**  
-  
-- Visual Studio Enterprise  
-  
-## <a name="what-else-should-i-know-about-coded-ui-tests"></a>Co jeszcze muszę wiedzieć o kodowane testy interfejsu użytkownika?  
- Aby dowiedzieć się więcej na temat korzyści z używania kodowanych testów interfejsu użytkownika, zobacz [Użyj interfejsu użytkownika do testów Your kodu automatyzacji](../test/use-ui-automation-to-test-your-code.md) i [testowanie dostarczania ciągłego w programie Visual Studio 2012 – rozdział 5 Automatyzacja testów systemu](http://go.microsoft.com/fwlink/?LinkID=255196).  
-  
- **Uwagi**  
-  
-- ![Wymagań wstępnych](../test/media/prereq.png "wstępnie wymagany składnik") kodowanych testów interfejsu użytkownika dla aplikacji programu SharePoint są obsługiwane tylko przez program SharePoint 2010.  
-  
-- ![Wymagań wstępnych](../test/media/prereq.png "wstępnie wymagany składnik") pomocy technicznej dla programu Visio i PowerPoint 2010 kontrolek w aplikacji programu SharePoint nie jest obsługiwane.  
-  
-## <a name="creating-a-coded-ui-test-for-your-sharepoint-app"></a>Tworzenie kodowanego testu interfejsu użytkownika dla aplikacji programu SharePoint  
- [Tworzenie kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) dla aplikacji SharePoint 2010 jest taka sama, jak podczas tworzenia testów dla innych typów aplikacji. Nagrywanie i odtwarzanie jest obsługiwana dla wszystkich kontrolek w interfejsie edytowania w Internecie. Interfejs do wybierania kategorii i składniki web Part są wszystkie formanty standardowe sieci web.  
-  
- ![Składniki web Part programu SharePoint](../test/media/cuit-sharepoint.png "CUIT_SharePoint")  
-  
+Dołączenie kodowanych testów interfejsu użytkownika w aplikacji SharePoint umożliwia sprawdzenie, czy cała aplikacja, w tym jej kontrolki interfejsu użytkownika, działa poprawnie. Kodowane testy interfejsu użytkownika mogą również sprawdzać wartości i logikę w interfejsie użytkowników.
+
+ **Requirements**
+
+- Visual Studio Enterprise
+
+## <a name="what-else-should-i-know-about-coded-ui-tests"></a>Co jeszcze muszę wiedzieć o kodowanych testach interfejsu użytkownika?
+ Aby dowiedzieć się więcej o zaletach korzystania z kodowanych testów interfejsu użytkownika, zobacz [Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md) i [testowania ciągłego dostarczania w programie Visual Studio 2012 — Rozdział 5 Automatyzowanie testów systemu](http://go.microsoft.com/fwlink/?LinkID=255196).
+
+ **Uwagi**
+
+- ![Prerequsite](../test/media/prereq.png "Ignoruj") Kodowane testy interfejsu użytkownika dla aplikacji programu SharePoint są obsługiwane tylko przez program SharePoint 2010.
+
+- ![Prerequsite](../test/media/prereq.png "Ignoruj") Obsługa formantów Visio i PowerPoint 2010 w aplikacji SharePoint nie jest obsługiwana.
+
+## <a name="creating-a-coded-ui-test-for-your-sharepoint-app"></a>Tworzenie kodowanego testu interfejsu użytkownika dla aplikacji programu SharePoint
+ [Tworzenie kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) dla aplikacji programu SharePoint 2010 jest takie samo jak tworzenie testów dla innych typów aplikacji. Nagrywanie i odtwarzanie jest obsługiwane dla wszystkich kontrolek w interfejsie edycji sieci Web. Interfejs do wybierania kategorii i części sieci Web to standardowe formanty sieci Web.
+
+ ![Części sieci Web programu SharePoint](../test/media/cuit-sharepoint.png "CUIT_SharePoint")
+
 > [!NOTE]
-> W przypadku rejestrowania akcji, sprawdź poprawność działania przed wygenerowaniem kodu. Ponieważ różne zachowania skojarzone z myszy po wskazaniu wskaźnikiem, jest ona włączona domyślnie. Uważaj usunąć nadmiarowe ruchów z kodowanych testów interfejsu użytkownika. Można to zrobić, edytując kod dla testu lub za pomocą [edytora testu interfejsu użytkownika](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).  
-  
-## <a name="including-testing-of-office-2010-controls-within-your-sharepoint-app"></a>W tym testowanie pakietu Office 2010 formantów w aplikacji programu SharePoint  
- Aby włączyć automatyzacji dla niektórych pakietu office 2010 składników web Part w aplikacji programu SharePoint, masz wprowadzenie pewnych zmian kodu.  
-  
+> Jeśli rejestrujesz akcję, zweryfikuj akcje przed wygenerowaniem kodu. Ponieważ istnieje kilka zachowań skojarzonych z przesuwaniem myszy, jest on domyślnie włączony. Należy zachować ostrożność, aby usunąć nadmiarowe aktywa z kodowanych testów interfejsu użytkownika. Można to zrobić, edytując kod dla testu lub korzystając z [edytora kodowanego testu interfejsu użytkownika](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
+
+## <a name="including-testing-of-office-2010-controls-within-your-sharepoint-app"></a>Obejmuje Testowanie formantów pakietu Office 2010 w aplikacji SharePoint
+ Aby włączyć automatyzację niektórych części sieci Web pakietu Office 2010 w aplikacji SharePoint, musisz wprowadzić pewne drobne modyfikacje kodu.
+
 > [!WARNING]
-> Obsługa kontrolek Visio i PowerPoint 2010 nie jest obsługiwane.  
-  
-### <a name="excel-2010-cell-controls"></a>Formanty komórki programu Excel 2010  
- Aby dołączyć kontrolki komórki programu Excel, należy wprowadzić pewne zmiany w kodzie kodowanego testu interfejsu użytkownika.  
-  
+> Obsługa formantów Visio i PowerPoint 2010 nie jest obsługiwana.
+
+### <a name="excel-2010-cell-controls"></a>Kontrolki komórki w programie Excel 2010
+ Aby dołączyć kontrolki komórki programu Excel, musisz wprowadzić pewne zmiany w kodzie kodowanego testu interfejsu użytkownika.
+
 > [!WARNING]
-> Wprowadzanie tekstu w dowolnej komórki programu Excel, a następnie akcję klawiszy Strzałka w nie rejestruje poprawnie. Zaznacz komórki za pomocą myszy.  
-  
- W przypadku rejestrowania akcji w pustej komórce, należy zmodyfikować kod przez podwójne kliknięcie komórki, a następnie wykonuje operację tekstu. Jest to niezbędne, ponieważ aktywuje kliknij w komórce, następuje dowolną akcję klawiatury `textarea` w komórce. Po prostu rejestrowanie `setvalue` w pustej komórce będzie wyszukiwać `editbox` które nie są stosowane, dopóki kliknął komórki. Na przykład:  
-  
-```csharp  
-Mouse.DoubliClick(uiItemCell,new Point(31,14));  
-uiGridKeyboardInputEdit.Text=value;  
-```  
-  
- W przypadku rejestrowania akcji w komórce pusty, a następnie nagrywanie pobiera nieco bardziej skomplikowane, ponieważ moment, Dodaj tekst do komórki, nowy \<div > formant jest dodawany jako element podrzędny elementu komórki. Nowy \<div > po prostu wprowadzony tekst zawiera formant. Rejestrator musi zarejestrować akcje na nowym \<div > formant; jednak nie ponieważ nowy \<div > formant nie istnieje do czasu, po wprowadzeniu testu. Musi ręcznie wprowadzić następujące zmiany kodu w celu uwzględnienia tego problemu.  
-  
-1. Przejdź do inicjowania komórkę i wprowadź `RowIndex` i `ColumnIndex` podstawowe właściwości:  
-  
-    ```csharp  
-    this.mUIItemCell.SearchProperties[HtmlCell.PropertyNames. RowIndex] = "3";   
-    this.mUIItemCell.SearchProperties[HtmlCell.PropertyNames. ColumnIndex] = "3";  
-    ```  
-  
-2. Znajdź `HtmlDiv` podrzędnym komórki:  
-  
-    ```csharp  
-    private UITestControl getControlToDoubleClick(HtmlCell cell)   
-    {   
-         if (String.IsNullOrEmpty(cell.InnerText)) return cell;   
-         HtmlDiv pane = new HtmlDiv(cell);   
-         pane.FilterProperties[HtmlDiv.PropertyNames.InnerText] = cell.InnerText;   
-         // Class is an important property in finding pane   
-         pane.FilterProperties[HtmlDiv.PropertyNames.Class] = "cv-nwr";   
-         UITestControlCollection panes = pane.FindMatchingControls();   
-         return panes[0];   
-    }  
-  
-    ```  
-  
-3. Dodaj kod dla myszy kliknij dwukrotnie działanie `HtmlDiv`:  
-  
-    ```csharp  
-    Mouse.DoubleClick(uIItemPane, new Point(31, 14)); )  
-    ```  
-  
-4. Dodaj kod, aby ustawić tekst na `TextArea`:  
-  
-    ```csharp  
-    uIGridKeyboardInputEdit.Text = value; }  
-    ```  
-  
-## <a name="enabling-coded-ui-testing-of-silverlight-web-parts-in-your-sharepoint-2010-app"></a>Włączanie testowania kodowanego interfejsu użytkownika programu Silverlight składników web Part w aplikacji SharePoint 2010  
- Testowanie Silverlight nie jest obsługiwana w programie Visual Studio 2012 i nowszych. Ale jeśli chcesz przetestować składniki web Part programu Silverlight w aplikacji SharePoint 2010, dodatek plug-in Silverlight oddzielne można zainstalować z galerii Visual Studio.  
-  
-#### <a name="setting-up-your-machine"></a>Konfigurowanie komputera  
-  
-1. Upewnij się, że masz programu Visual Studio 2012.1 lub nowszej.  
-  
-2. Zainstaluj [wtyczka testowania interfejsu użytkownika programu Microsoft Visual Studio dla programu Silverlight](http://visualstudiogallery.msdn.microsoft.com/28312a61-9451-451a-990c-c9929b751eb4).  
-  
-3. Zainstaluj [Fiddler](http://www.fiddler2.com/fiddler2/). Jest to po prostu narzędziem, które powoduje przechwycenie i dzienniki ruchu HTTP.  
-  
-4. Pobierz [projektu fiddlerXap](https://40jajy3iyl373v772m19fybm-wpengine.netdna-ssl.com/wp-content/uploads/sites/6/2019/02/FiddlerXapProxy.zip). Rozpakuj go, a następnie skompiluj go i uruchom skrypt "CopySLHelper.bat", aby zainstalować pomocnika biblioteki DLL, która jest wymagana do testowania składników web Part programu Silverlight, przy użyciu narzędzia Fiddler.  
-  
-   Po skonfigurowaniu komputera, aby rozpocząć testowanie aplikacji SharePoint 2010 przy użyciu składników web Part programu Silverlight, wykonaj następujące kroki:  
-  
-#### <a name="testing-silverlight-web-parts"></a>Testowanie składników web Part Silverlight  
-  
-1. Uruchom narzędzie Fiddler.  
-  
-2. Wyczyść pamięć podręczną przeglądarki. Jest to konieczne, ponieważ plik XAP, który zawiera DLL pomocnika automatyzacji interfejsu użytkownika programu Silverlight, zwykle jest buforowana. Mamy upewnij się, że zmodyfikowany plik XAP jest pobierana, dzięki czemu wyczyszczeniu pamięci podręcznej przeglądarki.  
-  
-3. Otwórz stronę sieci web.  
-  
-4. Uruchom Rejestrator i generowania kodu, tak jak w przypadku testowania aplikacji sieci web w regularnych.  
-  
-5. Należy się upewnić, że wygenerowany kod odwołuje się do Microsoft.VisualStudio.TestTools.UITest.Extension.Silverlight.dll.  
-  
-     Aby uzyskać więcej informacji, zobacz [interfejsu użytkownika testowania programu SharePoint 2010 przy użyciu programu Visual Studio 2012](http://blogs.msdn.com/b/visualstudioalm/archive/2012/11/01/ui-testing-sharepoint-2010-with-visual-studio-2012.aspx)  
-  
-## <a name="external-resources"></a>Zasoby zewnętrzne  
-  
-### <a name="blogs"></a>Blogi  
- [SharePoint 2010 przy użyciu programu Visual Studio 2012 testów interfejsu użytkownika](http://blogs.msdn.com/b/visualstudioalm/archive/2012/11/01/ui-testing-sharepoint-2010-with-visual-studio-2012.aspx)  
-  
- [Opis logiki wyszukiwania dla kontrolek Silverlight w kodowanego testu interfejsu użytkownika](http://blogs.msdn.com/b/tapas_sahoos_blog/archive/2010/11/16/understanding-the-search-logic-for-silverlight-controls-in-coded-ui-test.aspx)  
-  
- [Pobieranie właściwości formantu Silverlight](http://blogs.msdn.com/b/tapas_sahoos_blog/archive/2010/11/16/fetching-property-of-a-silverlight-control.aspx)  
-  
- [Indeks zawartości dla kodowanego testu interfejsu użytkownika](http://blogs.msdn.com/b/mathew_aniyan/archive/2010/02/11/content-index-for-coded-ui-test.aspx)  
-  
-### <a name="guidance"></a>Wskazówki  
- [Testowanie dostarczania ciągłego w programie Visual Studio 2012 — rozdział 5 automatyzację testów systemowych](http://go.microsoft.com/fwlink/?LinkID=255196)  
-  
-### <a name="forum"></a>Forum  
- [Visual Studio ALM + Team Foundation Server Blog](http://go.microsoft.com/fwlink/?LinkID=254496)  
-  
-## <a name="see-also"></a>Zobacz też  
- [Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)   
- [Wydajności sieci Web i obciążeniowy aplikacji SharePoint 2010 i 2013](https://msdn.microsoft.com/library/20c2e469-0e4e-4296-a739-c0e8fff36e54)   
- [Tworzenie rozwiązań SharePoint](https://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631)   
- [Weryfikowanie i debugowanie kodu programu SharePoint](https://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c)   
- [Kompilowanie i debugowanie rozwiązań SharePoint](https://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae)   
- [Profilowanie wydajności aplikacji SharePoint](https://msdn.microsoft.com/library/61ae02e7-3f37-4230-bae1-54a498c2fae8)
+> Wprowadzenie tekstu w dowolnej komórce programu Excel, po którym następuje akcja klawisza Strzałka, nie rejestruje się poprawnie. Użyj myszy, aby zaznaczyć komórki.
+
+ Jeśli rejestrujesz akcje w pustej komórce, musisz zmodyfikować kod przez dwukrotne kliknięcie komórki, a następnie wykonanie operacji ustawiania tekstu. Jest to potrzebne, ponieważ kliknięcie komórki, a po niej każda akcja klawiatury aktywuje `textarea` w komórce. Po prostu nagrywanie `setvalue` w pustej komórce spowoduje wyszukanie `editbox`, które nie są obecne, dopóki nie zostanie kliknięta komórka. Na przykład:
+
+```csharp
+Mouse.DoubliClick(uiItemCell,new Point(31,14));
+uiGridKeyboardInputEdit.Text=value;
+```
+
+ Jeśli rejestrujesz akcje w niepustej komórce, nagranie pobiera nieco bardziej skomplikowane, ponieważ chwilę dodasz tekst do komórki, nowy formant \<div > zostanie dodany jako element podrzędny komórki. Nowa kontrolka > \<div zawiera tekst, który właśnie został wprowadzony. Rejestrator musi rejestrować akcje na nowej kontrolce > \<div. jednak nie jest to możliwe, ponieważ Nowa kontrolka > \<div nie istnieje, dopóki nie zostanie wprowadzony test. Aby obsłużyć ten problem, należy ręcznie wprowadzić następujące zmiany w kodzie.
+
+1. Przejdź do inicjowania komórki i ustaw `RowIndex` i `ColumnIndex` właściwości podstawowe:
+
+    ```csharp
+    this.mUIItemCell.SearchProperties[HtmlCell.PropertyNames. RowIndex] = "3";
+    this.mUIItemCell.SearchProperties[HtmlCell.PropertyNames. ColumnIndex] = "3";
+    ```
+
+2. Znajdź `HtmlDiv` podrzędny komórki:
+
+    ```csharp
+    private UITestControl getControlToDoubleClick(HtmlCell cell)
+    {
+         if (String.IsNullOrEmpty(cell.InnerText)) return cell;
+         HtmlDiv pane = new HtmlDiv(cell);
+         pane.FilterProperties[HtmlDiv.PropertyNames.InnerText] = cell.InnerText;
+         // Class is an important property in finding pane
+         pane.FilterProperties[HtmlDiv.PropertyNames.Class] = "cv-nwr";
+         UITestControlCollection panes = pane.FindMatchingControls();
+         return panes[0];
+    }
+
+    ```
+
+3. Dodaj kod dla akcji dwukrotnego kliknięcia przycisku myszy na `HtmlDiv`:
+
+    ```csharp
+    Mouse.DoubleClick(uIItemPane, new Point(31, 14)); )
+    ```
+
+4. Dodaj kod, aby ustawić tekst na `TextArea`:
+
+    ```csharp
+    uIGridKeyboardInputEdit.Text = value; }
+    ```
+
+## <a name="enabling-coded-ui-testing-of-silverlight-web-parts-in-your-sharepoint-2010-app"></a>Włączanie testów kodowanego interfejsu użytkownika dla części sieci Web Silverlight w aplikacji SharePoint 2010
+ Testowanie programu Silverlight nie jest obsługiwane w programie Visual Studio 2012 i nowszych. Jeśli jednak chcesz przetestować części sieci Web Silverlight w aplikacji SharePoint 2010, możesz zainstalować oddzielną wtyczkę Silverlight z galerii programu Visual Studio.
+
+#### <a name="setting-up-your-machine"></a>Konfigurowanie maszyny
+
+1. Upewnij się, że masz zainstalowany program Visual Studio 2012,1 lub nowszy.
+
+2. Zainstaluj [wtyczkę testową interfejsu użytkownika Microsoft Visual Studio dla programu Silverlight](http://visualstudiogallery.msdn.microsoft.com/28312a61-9451-451a-990c-c9929b751eb4).
+
+3. Zainstaluj [programu Fiddler](http://www.fiddler2.com/fiddler2/). Jest to po prostu narzędzie, które przechwytuje i rejestruje ruch HTTP.
+
+4. Pobierz [projekt fiddlerXap](https://40jajy3iyl373v772m19fybm-wpengine.netdna-ssl.com/wp-content/uploads/sites/6/2019/02/FiddlerXapProxy.zip). Rozpakuj go, skompiluj i uruchom skrypt "CopySLHelper. bat", aby zainstalować pomocniczą bibliotekę DLL, która jest wymagana do testowania części sieci Web programu Silverlight w przypadku korzystania z narzędzia programu Fiddler.
+
+   Po skonfigurowaniu maszyny w celu rozpoczęcia testowania aplikacji SharePoint 2010 przy użyciu części sieci Web Silverlight wykonaj następujące kroki:
+
+#### <a name="testing-silverlight-web-parts"></a>Testowanie części sieci Web Silverlight
+
+1. Uruchom programu Fiddler.
+
+2. Wyczyść pamięć podręczną przeglądarki. Jest to konieczne, ponieważ plik XAP, który zawiera Biblioteka DLL pomocnika automatyzacji interfejsu użytkownika Silverlight, jest zazwyczaj buforowany. Musimy upewnić się, że zmodyfikowany plik XAP został pobrany, więc czyścimy pamięć podręczną przeglądarki.
+
+3. Otwórz stronę sieci Web.
+
+4. Rozpocznij Rejestrator i Generuj kod, taki jak dla regularnego testowania aplikacji sieci Web.
+
+5. Należy upewnić się, że wygenerowany kod odwołuje się do pliku Microsoft. VisualStudio. TestTools. UITest. Extension. Silverlight. dll.
+
+     Aby uzyskać więcej informacji, zobacz [testowanie interfejsu użytkownika SharePoint 2010 przy użyciu programu Visual Studio 2012](http://blogs.msdn.com/b/visualstudioalm/archive/2012/11/01/ui-testing-sharepoint-2010-with-visual-studio-2012.aspx)
+
+## <a name="external-resources"></a>Zasoby zewnętrzne
+
+### <a name="blogs"></a>Blogi
+ [Testowanie interfejsu użytkownika programu SharePoint 2010 z programem Visual Studio 2012](http://blogs.msdn.com/b/visualstudioalm/archive/2012/11/01/ui-testing-sharepoint-2010-with-visual-studio-2012.aspx)
+
+ [Informacje o logice wyszukiwania dla formantów Silverlight w kodowanym teście interfejsu użytkownika](http://blogs.msdn.com/b/tapas_sahoos_blog/archive/2010/11/16/understanding-the-search-logic-for-silverlight-controls-in-coded-ui-test.aspx)
+
+ [Pobieranie właściwości kontrolki Silverlight](http://blogs.msdn.com/b/tapas_sahoos_blog/archive/2010/11/16/fetching-property-of-a-silverlight-control.aspx)
+
+ [Indeks zawartości dla kodowanego testu interfejsu użytkownika](http://blogs.msdn.com/b/mathew_aniyan/archive/2010/02/11/content-index-for-coded-ui-test.aspx)
+
+### <a name="guidance"></a>Wskazówki
+ [Testowanie w celu ciągłego dostarczania przy użyciu programu Visual Studio 2012 — Rozdział 5 Automatyzowanie testów systemu](http://go.microsoft.com/fwlink/?LinkID=255196)
+
+### <a name="forum"></a>Forum
+ [Blog programu Visual Studio ALM + Team Foundation Server](http://go.microsoft.com/fwlink/?LinkID=254496)
+
+## <a name="see-also"></a>Zobacz też
+ [Korzystanie z automatyzacji interfejsu użytkownika do testowania](../test/use-ui-automation-to-test-your-code.md) [wydajności sieci Web i testów obciążenia w kodzie programu sharepoint 2010 i 2013](https://msdn.microsoft.com/library/20c2e469-0e4e-4296-a739-c0e8fff36e54) [Tworzenie rozwiązań SharePoint](https://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631) [Sprawdzanie i debugowanie kodu programu](https://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c) SharePoint [Tworzenie i debugowanie programu SharePoint Rozwiązania](https://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae) [profilowania wydajności aplikacji programu SharePoint](https://msdn.microsoft.com/library/61ae02e7-3f37-4230-bae1-54a498c2fae8)

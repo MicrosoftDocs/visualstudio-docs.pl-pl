@@ -11,27 +11,27 @@ helpviewer_keywords:
 - icons [Visual Studio], Image Library
 - bitmaps [Visual Studio], Image Library
 ms.assetid: f7a2e7c8-3b9f-4f8e-a6a8-000d72e3811d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aee70ea2c0463b56f7f82093087ec5a629aba53e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fd6cb64c3dad56c291b229dfee6cc2816e574b69
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62892895"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72634836"
 ---
 # <a name="the-visual-studio-image-library"></a>Biblioteka obrazów programu Visual Studio
 
-Bibliotekę obrazów programu Visual Studio zawiera obrazy aplikacji, które pojawiają się w programie Microsoft Visual Studio, Microsoft Windows, pakietu Office i innego oprogramowania firmy Microsoft. Ten zestaw ponad 1000 obrazów może służyć do tworzenia aplikacji, które będzie zgodne z oprogramowania firmy Microsoft.
+Biblioteka obrazów programu Visual Studio zawiera obrazy aplikacji, które są wyświetlane w Microsoft Visual Studio, Microsoft Windows, system biurowy i inne oprogramowanie firmy Microsoft. Ten zestaw ponad 1 000 obrazów może służyć do tworzenia aplikacji, które wyglądają wizualnie spójnie z oprogramowaniem firmy Microsoft.
 
 [Pobierz bibliotekę obrazów programu Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=275090)
 
-Biblioteka obrazów jest podzielona na pięć kategorii: Wspólne elementy, akcje, adnotacje, ikony i obiekty. Pliki Readme zawartych w formacie PDF dla wspólnych elementów i typów ikon. Zawierają one informacje o tym, jak prawidłowo używać tych obrazów w swoich aplikacjach.
+Biblioteka obrazów jest podzielona na pięć kategorii: wspólne elementy, akcje, adnotacje, ikony i obiekty. Pliki Readme są zawarte w formacie PDF dla wspólnych elementów i typów ikon. Zawierają one informacje dotyczące sposobu korzystania z tych obrazów odpowiednio w aplikacjach.
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Instalowanie programu Visual Studio](../install/install-visual-studio.md)
-- [Obrazy, mapy bitowe i metapliki](/dotnet/framework/winforms/advanced/images-bitmaps-and-metafiles)
+- [Obrazy, mapy bitowe i pliki.](/dotnet/framework/winforms/advanced/images-bitmaps-and-metafiles)

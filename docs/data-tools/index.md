@@ -1,23 +1,23 @@
 ---
-title: Opracowywanie rozwiązań dotyczących danych
-description: Więcej informacji na temat różnych narzędzi do opracowywania rozwiązań danych w programie Visual Studio, w tym narzędzia .NET, SQL Server Data Tools, usługa Azure Data Lake, Azure HDInsight i usługi Azure Stream Analytics.
+title: Opracowywanie rozwiązań do tworzenia danych
+description: Poznaj różne narzędzia służące do tworzenia rozwiązań do przetwarzania danych w programie Visual Studio, w tym narzędzia platformy .NET, narzędzia SQL Server danych, Azure Data Lake, Azure HDInsight i Azure Streaming Analytics.
 layout: LandingPage
 ms.date: 01/01/2018
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 ms.topic: landing-page
 ms.workload:
 - data-storage
-ms.openlocfilehash: 768d3d1f130c3ef7b81da9706559e9d6b5f159ee
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 38b0d25539b4fe02d81463e9bc4e481c3b45010e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715043"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648322"
 ---
-# <a name="use-data-tools-in-visual-studio-to-develop-data-solutions"></a>Użyj narzędzia danych w programie Visual Studio do opracowywania rozwiązań danych
+# <a name="use-data-tools-in-visual-studio-to-develop-data-solutions"></a>Korzystanie z narzędzi danych w programie Visual Studio do tworzenia rozwiązań dotyczących danych
 
-Dowiedz się, jak używać narzędzi danych w programie Visual Studio umożliwia projektowanie i testowanie rozwiązań danych przy użyciu programu SQL Server, usługa Azure Data Lake lub usługi Hadoop.
+Dowiedz się, jak używać narzędzi danych w programie Visual Studio do tworzenia i testowania rozwiązań danych przy użyciu SQL Server, Azure Data Lake lub usługi Hadoop.
 
 <!-- markdownlint-disable MD033 -->
 
@@ -33,7 +33,7 @@ Dowiedz się, jak używać narzędzi danych w programie Visual Studio umożliwia
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Dowiedz się więcej o programie Visual Studio i .NET&#39;s narzędzi i interfejsów API obsługę tworzenia aplikacji danych</h3>
+                        <h3>Dowiedz się więcej o narzędziach programu Visual Studio i technologii .NET&#39;s do tworzenia aplikacji do obsługi danych</h3>
                     </div>
                 </div>
             </div>
@@ -51,7 +51,7 @@ Dowiedz się, jak używać narzędzi danych w programie Visual Studio umożliwia
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Więcej informacji na temat projektowania, wdrażania i utrzymywania baz danych przy użyciu programu SQL Server Data Tools</h3>
+                        <h3>Dowiedz się więcej na temat projektowania, wdrażania i konserwacji baz danych za pomocą narzędzi SQL Server Data Tools</h3>
                     </div>
                 </div>
             </div>
@@ -69,7 +69,7 @@ Dowiedz się, jak używać narzędzi danych w programie Visual Studio umożliwia
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Informacje na temat tworzenia aplikacji danych Big Data przy użyciu języka U-SQL i .NET, przy użyciu usługi Azure Data Lake</h3>
+                        <h3>Dowiedz się więcej na temat opracowywania aplikacji do obsługi dużych ilości danych za pomocą języka U-SQL i platformy Azure Data Lake .NET</h3>
                     </div>
                 </div>
             </div>
@@ -87,7 +87,7 @@ Dowiedz się, jak używać narzędzi danych w programie Visual Studio umożliwia
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Więcej informacji na temat uruchamiania zapytań Hive z usługą Hadoop w usłudze Azure HDInsight</h3>
+                        <h3>Dowiedz się więcej o uruchamianiu zapytań programu Hive za pomocą usługi Hadoop w usłudze Azure HDInsight</h3>
                     </div>
                 </div>
             </div>
@@ -105,7 +105,7 @@ Dowiedz się, jak używać narzędzi danych w programie Visual Studio umożliwia
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Informacje na temat tworzenia rozwiązania typu big data niemal w czasie rzeczywistym za pomocą usługi Azure Stream Analytics</h3>
+                        <h3>Dowiedz się więcej na temat opracowywania rozwiązań do obsługi dużych ilości danych w czasie rzeczywistym za pomocą usługi Azure Streaming Analytics</h3>
                     </div>
                 </div>
             </div>

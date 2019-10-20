@@ -3,20 +3,20 @@ title: Klawisze modyfikujące obszar kompozycji w programie Blend
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 50732733-ff49-41ba-8c44-4f6a3875ec1c
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47953eb85628d34935f0069bb074f35f4ff3f51f
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: fca85bd48a8fd755e7bec70216572fcfe2f84b36
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72450920"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649721"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Klawisze modyfikujące obszar kompozycji w programie Blend
-Niektóre skróty klawiaturowe nie mają skojarzonych elementów menu, co oznacza, że nie można użyć interfejsu użytkownika [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] w celu ich odnalezienia. W poniższej tabeli wymieniono skróty, które modyfikują akcję, na przykład zmianę rozmiarów obiektu.
+Niektóre skróty klawiaturowe nie mają skojarzonych elementów menu, co oznacza, że nie można użyć interfejsu użytkownika [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] do ich odnalezienia. W poniższej tabeli wymieniono skróty, które modyfikują akcję, na przykład zmianę rozmiarów obiektu.
 
 |Aby wykonać tę akcję|Zrób to|
 | - |-------------|

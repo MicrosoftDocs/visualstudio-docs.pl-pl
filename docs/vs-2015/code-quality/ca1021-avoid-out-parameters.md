@@ -1,5 +1,5 @@
 ---
-title: 'CA1021: Unikaj parametrów out | Dokumentacja firmy Microsoft'
+title: 'CA1021: Unikaj parametrów out | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,80 +12,78 @@ helpviewer_keywords:
 - CA1021
 ms.assetid: 970f2304-842c-4fb7-9734-f3871da8d479
 caps.latest.revision: 21
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: b52d5a97fc3c2e3a6bf5b4bb938bad9da50d3a7d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ea5d943212122672b84376b9b3ddf5e72bb0e81f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68144830"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662001"
 ---
-# <a name="ca1021-avoid-out-parameters"></a>CA1021: Unikaj parametrów out
+# <a name="ca1021-avoid-out-parameters"></a>CA1021: Unikanie parametrów wyjściowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|AvoidOutParameters|
 |CheckId|CA1021|
-|Kategoria|Microsoft.Design|
+|Kategoria|Microsoft. Design|
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Metoda publiczna lub chroniona w typie publicznym ma `out` parametru.
+ Metoda publiczna lub chroniona w typie publicznym ma parametr `out`.
 
 ## <a name="rule-description"></a>Opis reguły
- Przekazywanie typów przez odwołanie (używając `out` lub `ref`) wymaga doświadczenia w zakresie wskaźników, zrozumienie, jak różnią się typami wartości i typami odwołania oraz umiejętności obsługi metod z wieloma wartościami zwracanymi. Ponadto różnica między `out` i `ref` parametrów nie jest powszechnie zrozumiała.
+ Przekazywanie typów przez odwołanie (przy użyciu `out` lub `ref`) wymaga środowiska ze wskaźnikami, zrozumienie, jak typy wartości i typy referencyjne różnią się i obsługują metody z wieloma zwracanymi wartościami. Ponadto różnice między parametrami `out` i `ref` nie są szeroko zrozumiałe.
 
- Gdy typ odwołania jest przekazywany "przez odwołanie", metoda zamierza użyć parametru, aby powrócić do innego wystąpienia obiektu. Przekazywanie typu odwołania przez odwołanie jest nazywany również za pomocą podwójnego wskaźnika, wskaźnik do wskaźnika lub pośredni double. Za pomocą domyślna konwencja wywoływania, który jest przekazać "value", parametr, który przyjmuje typ odwołania już otrzymuje wskaźnik do obiektu. Wskaźnik, a nie obiekt, na który wskazuje, jest przekazywany przez wartość. Przekaż przez wartość oznacza metody nie można zmienić wskaźnik, aby wskazywała do nowego wystąpienia typu referencyjnego. Jednak jego zawartość można zmienić obiektu, na którą wskazuje. W przypadku większości aplikacji jest wystarczająca i daje żądane zachowanie.
+ Gdy typ odwołania jest przenoszona "przez odwołanie", Metoda zamierza użyć parametru, aby zwrócić inne wystąpienie obiektu. Przekazywanie typu odwołania przez odwołanie jest również znane jako użycie podwójnego wskaźnika, wskaźnika do wskaźnika lub podwójnego pośrednika. Przy użyciu domyślnej konwencji wywoływania, która jest przekazywany "przez wartość", parametr, który pobiera typ odwołania, już otrzymuje wskaźnik do obiektu. Wskaźnik, a nie obiekt, do którego wskazuje, jest przenoszona przez wartość. Wartość Pass by oznacza, że metoda nie może zmienić wskaźnika tak, aby wskazywała nowe wystąpienie typu odwołania. Można jednak zmienić zawartość obiektu, do którego się odwołuje. W przypadku większości aplikacji jest to wystarczające i daje odpowiednie zachowanie.
 
- Jeśli metoda musi zwracać inne wystąpienie, w tym celu należy użyć wartość zwracaną metody. Zobacz <xref:System.String?displayProperty=fullName> klasy dla różnych metod, które działają na ciągi i zwrócić nowe wystąpienie ciągu. Gdy używany jest ten model, obiekt wywołujący należy zdecydować, czy oryginalnego obiektu są zachowywane.
+ Jeśli metoda musi zwrócić inne wystąpienie, użyj wartości zwracanej metody, aby to osiągnąć. Zapoznaj się z klasą <xref:System.String?displayProperty=fullName>, aby poznać różne metody, które działają na ciągach i zwracają nowe wystąpienie ciągu. Gdy ten model jest używany, obiekt wywołujący musi zdecydować, czy oryginalny obiekt jest zachowywany.
 
- Mimo że wartości zwracane są powszechne i intensywnie używane, odpowiednia `out` i `ref` parametrów wymaga pośrednich projektu i umiejętności kodowania. Architektów biblioteki, którzy tworzą dla wszystkich nie powinni oczekiwać od użytkowników do wzorca pracę z `out` lub `ref` parametrów.
+ Mimo że zwracane wartości są commonplace i intensywnie używane, poprawne zastosowanie parametrów `out` i `ref` wymaga pośrednich umiejętności związanych z projektowaniem i programowaniem. Architekty biblioteki, którzy projektują dla ogólnych odbiorców, nie powinni oczekiwać, aby użytkownicy korzystali z parametrów `out` lub `ref`.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej reguły, która jest spowodowany przez typ wartości, należy mieć metoda może zwracać obiektu jako jego wartość zwracaną. Jeśli metoda musi zwracać wiele wartości, należy ponownie zaprojektować go do zwrócenia pojedynczego wystąpienia obiektu, który przechowuje wartości.
+ Aby naprawić naruszenie tej zasady, która jest spowodowana przez typ wartości, należy zwrócić obiekt jako wartość zwracaną przez metodę. Jeśli metoda musi zwracać wiele wartości, Zaprojektuj ją w celu zwrócenia pojedynczego wystąpienia obiektu, który zawiera wartości.
 
- Aby naprawić naruszenie tej reguły, która jest spowodowany przez typ odwołania, upewnij się, że żądane zachowanie ma zwrócić nowe wystąpienie klasy odwołania. Jeśli tak jest, metody użyć jego zwracanej wartości w tym celu.
+ Aby naprawić naruszenie tej zasady, która jest spowodowana przez typ referencyjny, upewnij się, że żądane zachowanie ma zwrócić nowe wystąpienie odwołania. Jeśli tak jest, metoda powinna używać jej wartości zwracanej, aby to zrobić.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Jest bezpieczne pominąć ostrzeżenie od tej reguły. Jednak w tym projekcie może spowodować problemy z użytecznością.
+ Można bezpiecznie pominąć ostrzeżenie z tej reguły. Jednak ten projekt może powodować problemy z użytecznością.
 
 ## <a name="example"></a>Przykład
- Następująca biblioteka zawiera dwie implementacje klasy, która generuje odpowiedzi na opinie użytkowników. Pierwszy implementacji (`BadRefAndOut`) wymusza na użytkowniku biblioteki zarządzania trzy wartości zwracane. Drugi implementacji (`RedesignedRefAndOut`) upraszcza środowisko użytkownika, zwraca wystąpienie klasy kontenera (`ReplyData`) która zarządza danymi jako pojedyncza jednostka.
+ Następująca Biblioteka pokazuje dwie implementacje klasy, która generuje odpowiedzi na Opinie użytkownika. Pierwsza implementacja (`BadRefAndOut`) wymusza, aby użytkownik biblioteki zarządzał trzema zwracanymi wartościami. Druga implementacja (`RedesignedRefAndOut`) upraszcza środowisko użytkownika, zwracając wystąpienie klasy kontenera (`ReplyData`), które zarządza danymi jako pojedynczą jednostką.
 
  [!code-csharp[FxCop.Design.NoRefOrOut#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.NoRefOrOut/cs/FxCop.Design.NoRefOrOut.cs#1)]
 
 ## <a name="example"></a>Przykład
- Następująca aplikacja ilustruje środowisko użytkownika. Wywołania do biblioteki przeprojektowana (`UseTheSimplifiedClass` metody) jest bardziej bezpośredni informacji zwracany przez metodę jest łatwe w zarządzaniu. Dane wyjściowe z dwóch metod jest taka sama.
+ W poniższej aplikacji przedstawiono środowisko użytkownika. Wywołanie przeprojektowanej biblioteki (`UseTheSimplifiedClass`) jest bardziej proste, a informacje zwracane przez metodę są łatwo zarządzane. Dane wyjściowe z dwóch metod są identyczne.
 
  [!code-csharp[FxCop.Design.TestNoRefOrOut#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.TestNoRefOrOut/cs/FxCop.Design.TestNoRefOrOut.cs#1)]
 
 ## <a name="example"></a>Przykład
- Następujące biblioteki przykład ilustruje sposób `ref` parametrów dla typów referencyjnych są używane i pokazuje lepszy sposób w celu zaimplementowania tej funkcji.
+ W poniższej bibliotece pokazano, jak są używane parametry `ref` dla typów referencyjnych i przedstawiono lepszy sposób implementacji tej funkcji.
 
  [!code-csharp[FxCop.Design.RefByRefNo#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.RefByRefNo/cs/FxCop.Design.RefByRefNo.cs#1)]
 
 ## <a name="example"></a>Przykład
- Następująca aplikacja wywołuje każdej metody w bibliotece, aby zademonstrować zachowanie.
+ Następująca aplikacja wywołuje każdą metodę w bibliotece, aby przedstawić zachowanie.
 
  [!code-csharp[FxCop.Design.TestRefByRefNo#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.TestRefByRefNo/cs/FxCop.Design.TestRefByRefNo.cs#1)]
 
  Ten przykład generuje następujące dane wyjściowe.
 
- **Zmiana wskaźnik - przekazywane przez wartość:** 
-**12345**
-**12345**
-**wskaźnik zmiana - przekazywany przez odwołanie:** 
-**12345**
-**12345 ABCDE**
-**przekazywanie poprzez wartość zwracana:** 
-**12345 ABCDE**
-## <a name="try-pattern-methods"></a>Wypróbuj metody wzorca
+ **Zmiana wskaźnika — przeniesiona przez wartość:** 
+**12345** 
+**12345** 
+**zmiana wskaźnika — wartość przekazywana przez odwołanie:** 
+**12345** 
+**12345** **rozdzielone 1 przekazywaniem przez zwracaną wartości: **3y**ABCD 12345**
+## <a name="try-pattern-methods"></a>Metody wzorców try
 
 ### <a name="description"></a>Opis
- Metody, które implementują **spróbuj\<coś >** wzorca, takich jak <xref:System.Int32.TryParse%2A?displayProperty=fullName>, nie wywołuj tego naruszenia. Poniższy przykład pokazuje strukturę (typ wartości), który implementuje <xref:System.Int32.TryParse%2A?displayProperty=fullName> metody.
+ Metody implementujące wzorzec **Try \<Something >** , takie jak <xref:System.Int32.TryParse%2A?displayProperty=fullName>, nie powodują tego naruszenia. W poniższym przykładzie pokazano strukturę (typ wartości) implementującą metodę <xref:System.Int32.TryParse%2A?displayProperty=fullName>.
 
 ### <a name="code"></a>Kod
  [!code-csharp[FxCop.Design.TryPattern#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.TryPattern/cs/FxCop.Design.TryPattern.cs#1)]

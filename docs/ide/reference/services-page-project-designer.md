@@ -7,21 +7,21 @@ f1_keywords:
 helpviewer_keywords:
 - Services page in Project Designer
 - Project Designer, Services page
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 406e8fbb16d3cac4b755b0532f3916fed486e466
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: dd374482d0432a54ed66442610aac1f60ca1828f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919000"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655485"
 ---
 # <a name="services-page-project-designer"></a>Strona usług, Projektant projektu
 
-Usługi aplikacji klienta zapewniają uproszczony dostęp [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] do danych logowania, ról i usług profilów z aplikacji Windows Forms i Windows Presentation Foundation (WPF). Możesz użyć strony **usługi** **projektanta projektu** , aby włączyć i skonfigurować usługi aplikacji klienta dla projektu.
+Usługi aplikacji klienta zapewniają uproszczony dostęp do [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] logowania, ról i usług profilów z aplikacji Windows Forms i Windows Presentation Foundation (WPF). Możesz użyć strony **usługi** **projektanta projektu** , aby włączyć i skonfigurować usługi aplikacji klienta dla projektu.
 
 Za pomocą usług aplikacji klienckich można używać scentralizowanego serwera do uwierzytelniania użytkowników, określania przypisanej roli lub ról poszczególnych użytkowników oraz przechowywania ustawień aplikacji dla poszczególnych użytkowników, które można udostępniać w sieci. Aby uzyskać więcej informacji, zobacz [usługi aplikacji klienta](/dotnet/framework/common-client-technologies/client-application-services).
 
@@ -29,7 +29,7 @@ Aby uzyskać dostęp do strony **usługi** , wybierz węzeł projektu w **Eksplo
 
 ## <a name="task-list"></a>Lista zadań
 
-[Instrukcje: Konfigurowanie Usługi aplikacji klienta](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
+[Instrukcje: konfigurowanie usług aplikacji klienckich](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
 
 ## <a name="uielement-list"></a>Lista elementów UI
 
@@ -51,15 +51,15 @@ Wskazuje, że dostawca uwierzytelniania będzie używał uwierzytelniania oparte
 
  **Użyj uwierzytelniania formularzy**
 
-Wskazuje, że dostawca uwierzytelniania będzie korzystał z uwierzytelniania formularzy. Oznacza to, że aplikacja musi zapewnić interfejs użytkownika do logowania. Aby uzyskać więcej informacji, zobacz [jak: Zaimplementuj Logowanie użytkownika przy użyciu](/dotnet/framework/common-client-technologies/how-to-implement-user-login-with-client-application-services)usługi aplikacji klienta.
+Wskazuje, że dostawca uwierzytelniania będzie korzystał z uwierzytelniania formularzy. Oznacza to, że aplikacja musi zapewnić interfejs użytkownika do logowania. Aby uzyskać więcej informacji, zobacz [jak: implementowanie logowania użytkownika przy użyciu usługi aplikacji klienta](/dotnet/framework/common-client-technologies/how-to-implement-user-login-with-client-application-services).
 
  **Lokalizacja usługi uwierzytelniania**
 
 Używany tylko z uwierzytelnianiem formularzy. Określa lokalizację usługi uwierzytelniania.
 
- **Obowiązkowe Dostawca poświadczeń**
+ **Opcjonalne: Dostawca poświadczeń**
 
-Używany tylko z uwierzytelnianiem formularzy. Wskazuje implementację, która będzie używana przez usługę uwierzytelniania do wyświetlania okna dialogowego logowania, gdy aplikacja `static` <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> wywołuje metodę i przekazuje puste ciągi lub `null` parametry. <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider> Jeśli to pole pozostanie puste, należy przekazać do <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> metody prawidłową nazwę użytkownika i hasło. Należy określić dostawcę poświadczeń jako nazwę typu kwalifikowanego dla zestawu. Aby uzyskać więcej informacji, <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=fullName> Zobacz i [nazwy zestawów](/dotnet/framework/app-domains/assembly-names). W najprostszej postaci nazwa typu kwalifikowana dla zestawu wygląda podobnie do poniższego przykładu:`MyNamespace.MyLoginClass, MyAssembly`
+Używany tylko z uwierzytelnianiem formularzy. Wskazuje implementację <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider>, która będzie używana przez usługę uwierzytelniania do wyświetlania okna dialogowego logowania, gdy aplikacja wywołuje metodę `static` <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> i przekazuje puste ciągi lub `null` parametrów. Jeśli to pole pozostanie puste, należy przekazać prawidłową nazwę użytkownika i hasło do metody <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName>. Należy określić dostawcę poświadczeń jako nazwę typu kwalifikowanego dla zestawu. Aby uzyskać więcej informacji, zobacz <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=fullName> i [nazwy zestawów](/dotnet/framework/app-domains/assembly-names). W najprostszej postaci nazwa typu kwalifikowana dla zestawu wygląda podobnie do poniższego przykładu: `MyNamespace.MyLoginClass, MyAssembly`
 
  **Lokalizacja usługi ról**
 
@@ -77,6 +77,6 @@ Otwiera okno [dialogowe Ustawienia zaawansowane dla usług](../../ide/reference/
 
 - [Usługi aplikacji klienckich](/dotnet/framework/common-client-technologies/client-application-services)
 - [Zaawansowane ustawienia dla usług, okno dialogowe](../../ide/reference/advanced-settings-for-services-dialog-box.md)
-- [Instrukcje: Konfigurowanie Usługi aplikacji klienta](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
+- [Instrukcje: konfigurowanie usług aplikacji klienckich](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
 - [Strona kompilowania, Projektant projektu (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)
 - [Strona kompilacji, Projektant projektu (C#)](../../ide/reference/build-page-project-designer-csharp.md)

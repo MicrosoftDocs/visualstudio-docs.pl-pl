@@ -1,47 +1,47 @@
 ---
-title: 'Projektant przepływu pracy: Dodaj nowy element do projektu przepływu pracy'
+title: 'Projektant przepływu pracy: Dodawanie nowego elementu do projektu przepływu pracy'
 ms.date: 06/25/2018
 ms.topic: conceptual
 ms.assetid: 5c6180ca-af10-4513-b0cb-7d478fd84eab
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29e4c03eef2a276995890bbd6b723fa457aefde2
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: a87efc24ef148600c31dbb07d7517f9235306102
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66432037"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650413"
 ---
-# <a name="how-to-add-a-new-item-to-a-workflow-project"></a>Instrukcje: Dodaj nowy element do projektu przepływu pracy
+# <a name="how-to-add-a-new-item-to-a-workflow-project"></a>Instrukcje: Dodawanie nowego elementu do projektu przepływu pracy
 
-Po utworzeniu projektu przepływu pracy działania przepływu pracy, projektantów i innych znanych elementów programu Visual Studio można dodać do projektu.
+Po utworzeniu projektu przepływu pracy można dodać do projektu działania przepływu pracy, projektanci i inne znane elementy programu Visual Studio.
 
 W poniższej tabeli wymieniono elementy Windows Workflow Foundation (WF), które można dodać do projektu przepływu pracy:
 
 | Nazwa | Opis |
 |-| - |
-| Działanie | Działanie składa się z innymi działaniami. Wybranie tej pozycji dodaje ten sam plik XAML do projektu, jak można uzyskać po wybraniu **Biblioteka działań** szablonu dla nowego projektu. Aby uzyskać więcej informacji na temat z tej procedury zobacz [Tworzenie projektu przepływu pracy](creating-a-workflow-project.md). |
-| Projektant działań | Projektant umożliwiający dostosowanie środowiska czasu projektowania, działania. Wybranie tej pozycji dodaje te same pliki do projektu, jak można uzyskać po wybraniu **Biblioteka projektanta działań** szablonu dla nowego projektu. |
-| Działanie kodu | Działanie z logiką wykonywania zapisaną w kodzie. Plik kodu źródłowego za pomocą zastąpienia z <xref:System.Activities.CodeActivity.Execute%2A> metoda została już wygenerowana dla Ciebie. |
-| Usługa przepływu pracy WCF | A [!INCLUDE[indigo2](../workflow-designer/includes/indigo2_md.md)] oferująca przy użyciu działań przepływu pracy. Wybranie tej pozycji dodaje te same pliki do projektu, jak można uzyskać po wybraniu **aplikacja usługi przepływu pracy WCF** szablonu dla nowego projektu. Aby uzyskać więcej informacji na temat tej procedury zobacz [jak: Tworzenie aplikacji usługi przepływu pracy WCF](/visualstudio/workflow-designer/creating-a-workflow-project). |
+| Działanie | Działanie składające się z innych działań. Wybranie tego elementu powoduje dodanie tego samego pliku XAML do projektu, jak uzyskano podczas wybierania szablonu **biblioteki działań** dla nowego projektu. Aby uzyskać więcej informacji na temat tej procedury, zobacz [Tworzenie projektu przepływu pracy](creating-a-workflow-project.md). |
+| Projektant działań | Projektant umożliwiający dostosowanie środowiska czasu projektowania działania. Wybranie tego elementu powoduje dodanie do projektu tych samych plików jak w przypadku wybrania szablonu **biblioteki projektanta działań** dla nowego projektu. |
+| Działanie kodu | Działanie z logiką wykonywania zapisaną w kodzie. Plik kodu źródłowego z przesłonięciem metody <xref:System.Activities.CodeActivity.Execute%2A> jest już wygenerowany dla Ciebie. |
+| Usługa przepływu pracy WCF | Usługa [!INCLUDE[indigo2](../workflow-designer/includes/indigo2_md.md)] utworzona przy użyciu działań przepływu pracy. Wybranie tego elementu powoduje dodanie do projektu tych samych plików, co podczas wybierania szablonu **aplikacji usługi przepływu pracy WCF** dla nowego projektu. Aby uzyskać więcej informacji na temat tej procedury, zobacz [jak: Tworzenie aplikacji usługi przepływu pracy WCF](/visualstudio/workflow-designer/creating-a-workflow-project). |
 
 ## <a name="to-add-a-new-item-to-a-workflow-project"></a>Aby dodać nowy element do projektu przepływu pracy
 
-1. Na **projektu** menu, wybierz opcję **Dodaj nowy element**.
+1. W menu **projekt** wybierz polecenie **Dodaj nowy element**.
 
-   **Dodaj nowy element** zostanie otwarte okno dialogowe.
+   Zostanie otwarte okno dialogowe **Dodaj nowy element** .
 
-1. W okienku po lewej stronie wybierz **przepływu pracy** kategorii, a następnie wybierz szablon elementu przepływu pracy.
+1. W okienku po lewej stronie wybierz kategorię **przepływ pracy** , a następnie wybierz szablon elementu przepływu pracy.
 
    > [!NOTE]
-   > Jeśli nie widzisz **przepływu pracy** kategorii, wcześniejszej instalacji **Windows Workflow Foundation** składnika programu Visual Studio. Aby uzyskać szczegółowe instrukcje, zobacz [Instalowanie programu Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
+   > Jeśli nie widzisz kategorii **przepływu pracy** , najpierw zainstaluj składnik **Windows Workflow Foundation** programu Visual Studio. Aby uzyskać szczegółowe instrukcje, zobacz [Install Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
-1. Wprowadź nazwę dla elementu w **nazwa** u dołu okna dialogowego.
+1. Wprowadź nazwę dla elementu w polu **Nazwa** w dolnej części okna dialogowego.
 
-1. Wybierz **Dodaj** można dodać elementu do projektu.
+1. Wybierz pozycję **Dodaj** , aby dodać element do projektu.
 
 ## <a name="see-also"></a>Zobacz także
 

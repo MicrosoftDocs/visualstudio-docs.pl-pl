@@ -1,43 +1,43 @@
 ---
-title: Jak dodać pliku app.config do projektu
+title: Jak dodać plik App. config do projektu
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
 - CSharp
 helpviewer_keywords:
 - app.config files, adding to C# projects
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d7e760d952d03a31fdb633ae57c0fb670b50fcc2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 48e6516b48b524c3da4d80bc5171608ac1aea03d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62547913"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654263"
 ---
 # <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>Instrukcje: Dodawanie pliku konfiguracji aplikacji do C# projektu
 
-Przez dodanie pliku konfiguracji aplikacji (*app.config* plików) do C# projektu, można dostosować, jak środowisko uruchomieniowe języka wspólnego lokalizuje i ładuje pliki zestawu. Aby uzyskać więcej informacji o plikach konfiguracji aplikacji, zobacz [jak środowisko uruchomieniowe lokalizuje zestawy (.NET Framework)](/dotnet/framework/deployment/how-the-runtime-locates-assemblies).
+Dodając plik konfiguracji aplikacji (plik*App. config* ) do C# projektu, można dostosować sposób lokalizowania i ładowania plików zestawu przez środowisko uruchomieniowe języka wspólnego. Aby uzyskać więcej informacji na temat plików konfiguracji aplikacji, zobacz [jak środowisko uruchomieniowe lokalizuje zestawy (.NET Framework)](/dotnet/framework/deployment/how-the-runtime-locates-assemblies).
 
 > [!NOTE]
-> Aplikacje platformy uniwersalnej systemu Windows nie zawierają *app.config* pliku.
+> Aplikacje platformy UWP nie zawierają pliku *App. config* .
 
-Podczas tworzenia projektu środowiska programistycznego automatycznie kopiuje swoje *app.config* plik, zmienia nazwę pliku kopiowania, aby dopasować plik wykonywalny i przenosi kopię **bin** katalog.
+Podczas kompilowania projektu środowisko programistyczne automatycznie kopiuje plik *App. config* , zmienia nazwę pliku kopii w celu dopasowania do pliku wykonywalnego, a następnie przenosi kopię do katalogu **bin** .
 
 ## <a name="to-add-an-application-configuration-file-to-a-c-project"></a>Aby dodać plik konfiguracji aplikacji do C# projektu
 
-1. Na pasku menu wybierz **projektu** > **Dodaj nowy element**.
+1. Na pasku menu wybierz **projekt**  > **Dodaj nowy element**.
 
-     **Dodaj nowy element** pojawi się okno dialogowe.
+     Pojawi się okno dialogowe **Dodaj nowy element** .
 
-1. Rozwiń **zainstalowane** > **Visual C# elementów**, a następnie wybierz **pliku konfiguracji aplikacji** szablonu.
+1. Rozwiń węzeł **zainstalowane**  > **elementy wizualne C#** , a następnie wybierz szablon **plik konfiguracji aplikacji** .
 
-1. W **nazwa** polu tekstowym wprowadź nazwę, a następnie wybierz **Dodaj** przycisku.
+1. W polu tekstowym **Nazwa** wprowadź nazwę, a następnie wybierz przycisk **Dodaj** .
 
-     Plik o nazwie *app.config* zostanie dodany do projektu.
+     Plik o nazwie *App. config* jest dodawany do projektu.
 
 ## <a name="see-also"></a>Zobacz także
 

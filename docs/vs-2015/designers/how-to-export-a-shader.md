@@ -1,56 +1,52 @@
 ---
-title: 'Instrukcje: Eksport cieniowania | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Eksportowanie cieniowania | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 0bd48bf4-9792-4456-a545-e462a2be668d
 caps.latest.revision: 13
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 74b3fa73c3a67c721b9311a964e26fa9ab48c16e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2225ce416fed4e97e998a50f70a0dc4c25908476
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68176483"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664472"
 ---
-# <a name="how-to-export-a-shader"></a>Instrukcje: Eksportowanie cieniowania
+# <a name="how-to-export-a-shader"></a>Porady: eksport cieniowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W tym dokumencie pokazano, jak wyeksportować modułu cieniującego kierowane wykres modułu cieniującego języka (DGSL) służy w swojej aplikacji za pomocą projektanta modułu cieniującego.  
-  
- W tym dokumencie przedstawiono to działanie:  
-  
-- Eksportowanie cieniowania  
-  
-## <a name="exporting-a-shader"></a>Eksportowanie cieniowania  
- Po utworzeniu modułu cieniującego, przy użyciu narzędzia Projektant programu do cieniowania i przed użyciem w swojej aplikacji, należy go wyeksportować w formacie, który rozumie interfejsu API grafiki. Możesz wyeksportować modułu cieniującego na różne sposoby do potrzeb różnych.  
-  
-#### <a name="to-export-a-shader"></a>Aby wyeksportować modułu cieniującego  
-  
-1. W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], otwórz **wizualny wykres modułu cieniującego (.dgsl)** pliku.  
-  
-     Jeśli nie masz **wizualny wykres modułu cieniującego (.dgsl)** plik, aby otworzyć, utwórz je, zgodnie z opisem w [jak: Tworzenie cieniowania koloru podstawowego](../designers/how-to-create-a-basic-color-shader.md).  
-  
-2. Na **Shader Designer** narzędzi, wybierz **zaawansowane**, **wyeksportować**, **Eksportuj jako**. **Eksportowania modułu cieniującego** zostanie wyświetlone okno dialogowe.  
-  
-3. W **Zapisz jako typ** listy rozwijanej wybierz format, który chcesz wyeksportować.  
-  
-     Poniżej przedstawiono formaty, które można wybrać:  
-  
-     **Program do cieniowania pikseli HLSL (\*.hlsl)**  
-     Eksportuje programu do cieniowania w postaci kodu źródłowego wysokiej Level Shader Language (HLSL). Ta opcja umożliwia później zmodyfikować cieniowanie tak, nawet w przypadku, po jej wdrożeniu w aplikacji. To może ułatwić debugowanie i poprawki kodu, w oparciu problemy użytkowników końcowych, ale również ułatwia użytkownikowi modyfikowanie modułu cieniującego niechciane — na przykład, aby uzyskać nienależną przewagę w grze przewagę. Ponadto może to zwiększyć czas ładowania modułu cieniującego.  
-  
-     **Skompilowany program do cieniowania pikseli (\*.cso)**  
-     Eksportuje programu do cieniowania w postaci kodu bajtowego języka HLSL. Ta opcja powoduje, że istnieje możliwość modyfikowania programu do cieniowania później, nawet w przypadku, po jej wdrożeniu w aplikacji. To może ułatwić debugowanie i poprawki kodu, w oparciu problemy użytkowników końcowych, ale ponieważ programu do cieniowania jest wstępnie skompilowanym, go nie są naliczane dodatkowe środowiska uruchomieniowego obciążenie podczas ładowania programu do cieniowania za pomocą aplikacji. Wystarczająco doświadczeni użytkownicy mogą modyfikować programu do cieniowania w sposób niepożądane, ale kompilowanie programu do cieniowania sprawia, że to znacznie trudniejsze.  
-  
-     **Nagłówek języka C++ (\*.h)**  
-     Eksportuje programu do cieniowania w postaci nagłówek stylu C, który definiuje tablica bajtów, która zawiera kod bajtowy HLSL. Tej opcji można tworzyć bardziej czasochłonne debugować i poprawki kodu, w oparciu problemy użytkowników końcowych, ponieważ aplikacja musi ponownie skompilowana, aby przetestować poprawki. Jednak ponieważ dzięki temu jest trudne, chociaż nie jest to niemożliwe, aby zmodyfikować cieniowanie tak, po jej wdrożeniu w aplikacji, stanowi trudności w większości użytkownikowi, który chce się zmodyfikować cieniowanie tak, w sposób niepożądane.  
-  
-4. W **nazwy pliku** pola kombi, określ nazwę dla eksportowanego programu do cieniowania, a następnie wybierz **Zapisz** przycisku.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Instrukcje: Tworzenie cieniowania koloru podstawowego](../designers/how-to-create-a-basic-color-shader.md)   
- [Projektant cieniowania](../designers/shader-designer.md)
+W tym dokumencie przedstawiono sposób użycia programu do cieniowania programu Graph w celu wyeksportowania bezpośredniego modułu cieniującego grafu języka (DGSL), dzięki któremu można używać go w aplikacji.
+
+ Ten dokument przedstawia następujące działania:
+
+- Eksportowanie cieniowania
+
+## <a name="exporting-a-shader"></a>Eksportowanie cieniowania
+ Po utworzeniu modułu cieniującego przy użyciu projektanta programu do cieniowania i przed użyciem go w aplikacji należy wyeksportować go w formacie, który rozpoznaje interfejs API grafiki. Program do cieniowania można wyeksportować na różne sposoby, aby zaspokoić różne potrzeby.
+
+#### <a name="to-export-a-shader"></a>Aby wyeksportować cieniowanie
+
+1. W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Otwórz plik **grafu programu Visual cieniowania (. dgsl)** .
+
+     Jeśli nie masz pliku **grafu programu Visual Shader (. dgsl)** do otwarcia, utwórz go zgodnie z opisem w temacie [How to: Create a Basic Color Shader](../designers/how-to-create-a-basic-color-shader.md).
+
+2. Na pasku narzędzi projektanta programu do **cieniowania** wybierz pozycję **Zaawansowane**, **Eksportuj**, **Eksportuj jako**. Zostanie wyświetlone okno dialogowe Eksportowanie programu do **cieniowania** .
+
+3. Z listy rozwijanej **Zapisz jako typ** wybierz format, który chcesz wyeksportować.
+
+     Oto formaty, które możesz wybrać:
+
+     Program do **cieniowania pikseli HLSL (\*. HLSL)** Eksportuje program do cieniowania jako kod źródłowy języka HLSL (High Level Shader Language). Ta opcja umożliwia późniejsze modyfikowanie modułu cieniującego, nawet po jego wdrożeniu w aplikacji. Może to ułatwić debugowanie i poprawianie kodu w oparciu o problemy z użytkownikami końcowymi, ale ułatwia użytkownikowi modyfikowanie modułu cieniującego na niechcianych sposobach — na przykład w celu uzyskania nieuczciwej korzyści w ramach konkurencyjnej gry. Może również zwiększyć czas ładowania cieniowania.
+
+     **Skompilowany program do cieniowania pikseli (\*. CSO)** Eksportuje cieniowanie jako HLSL kod bajtowy. Ta opcja umożliwia późniejsze modyfikowanie modułu cieniującego, nawet po jego wdrożeniu w aplikacji. Może to ułatwić debugowanie i poprawianie kodu w oparciu o problemy z użytkownikami końcowymi, ale ponieważ program do cieniowania jest wstępnie skompilowany, nie wiąże się z dodatkowym obciążeniem środowiska uruchomieniowego, gdy program do cieniowania jest ładowany przez aplikację. Wystarczająco wykwalifikowanych użytkowników nadal można modyfikować cieniowanie na niechcianych sposobach, ale Kompilowanie cieniowania znacznie trudniejsze.
+
+     **Nagłówek (\*. h) C++**  Eksportuje program do cieniowania jako nagłówek w stylu C, który definiuje tablicę bajtową, która zawiera kod bajtowy HLSL. Ta opcja może zwiększyć czasochłonną funkcję debugowania i poprawiania kodu na podstawie problemów z użytkownikami końcowymi, ponieważ należy ponownie skompilować aplikację w celu przetestowania poprawki. Jednak ponieważ ta opcja utrudnia, chociaż nie jest to możliwe, można zmodyfikować program do cieniowania po jego wdrożeniu w aplikacji, co sprawia, że użytkownik chce zmodyfikować cieniowanie w niepożądane sposoby.
+
+4. W polu kombi **Nazwa pliku** Podaj nazwę wyeksportowanego programu do cieniowania, a następnie wybierz przycisk **Zapisz** .
+
+## <a name="see-also"></a>Zobacz też
+ [Instrukcje: Tworzenie podstawowego](../designers/how-to-create-a-basic-color-shader.md) [projektanta cieniowania](../designers/shader-designer.md) kolorów

@@ -1,5 +1,5 @@
 ---
-title: Projektanci działań automatu stanu | Dokumentacja firmy Microsoft
+title: Projektanci działań automatu Stanów | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -7,57 +7,53 @@ ms.topic: reference
 ms.assetid: 97f0bff5-7e48-4914-8f04-8015a1c6bfae
 caps.latest.revision: 5
 author: steved0x
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5efc22f6254ec0040dc4d767d7ac2831b4bd96f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9ccb870f3b65d54da7d8aebd161a8be8a0f9baf5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949165"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660123"
 ---
 # <a name="state-machine-activity-designers"></a>Projektanci działań automatu stanów
-[!INCLUDE[wfd1](../includes/wfd1-md.md)] obejmuje pewną liczbę Projektanci działań, używane podczas tworzenia przepływów pracy. Ta sekcja zawiera projektantów działań dostarczane przez system, używany do tworzenia i zarządzania nimi przepływów pracy automatu stanów. Poniższe tematy opisują te projektantów i wytyczne dotyczące sposobu ich używania.  
-  
-## <a name="in-this-section"></a>W tej sekcji  
- [StateMachine](../workflow-designer/statemachine-activity-designer.md)  
- Zawiera kolekcję stanów i modele przepływów pracy za pomocą modelu maszyny znanego stanu.  
-  
- [State](../workflow-designer/state-activity-designer.md)  
- Reprezentuje stan, w którym mogą mieć automatu stanów.  
-  
- [FinalState](../workflow-designer/finalstate-activity-designer.md)  
- Reprezentuje stan, który kończy się wystąpienia maszyny stanu.  
-  
- [Transition](../workflow-designer/transition-activity-designer.md)  
- Reprezentuje przejście między dwoma stanami.  
-  
-## <a name="reference"></a>Tematy pomocy  
- <xref:System.Activities.Statements.StateMachine>  
-  
- <xref:System.Activities.Statements.State>  
-  
- <xref:System.Activities.Core.Presentation.FinalState>  
-  
- <xref:System.Activities.Statements.Transition>  
-  
-## <a name="related-sections"></a>Sekcje pokrewne  
- Dla innych typów Projektanci działań zobacz następujące tematy.  
-  
- [Przepływ sterowania](../workflow-designer/control-flow-activity-designers.md)  
-  
- [Schemat blokowy](../workflow-designer/flowchart-activity-designers.md)  
-  
- [Używanie projektantów działań](../workflow-designer/using-the-activity-designers.md)  
-  
- [Obsługa komunikatów](../workflow-designer/messaging-activity-designers.md)  
-  
- [Środowisko uruchomieniowe](../workflow-designer/runtime-activity-designers.md)  
-  
- [Typy pierwotne](../workflow-designer/primitives-activity-designers.md)  
-  
- [Transakcja](../workflow-designer/transaction-activity-designers.md)  
-  
- [Kolekcja](../workflow-designer/collection-activity-designers.md)  
-  
+[!INCLUDE[wfd1](../includes/wfd1-md.md)] obejmuje wiele projektantów działań, których można użyć podczas konstruowania przepływów pracy. Ta sekcja zawiera projektanta działań dostarczone przez system służące do tworzenia przepływów pracy automatu stanów i zarządzania nimi. W poniższych tematach opisano tych projektantów i przedstawiono wskazówki dotyczące ich używania.
+
+## <a name="in-this-section"></a>W tej sekcji
+ Obiekt [StateMachine](../workflow-designer/statemachine-activity-designer.md) Zawiera kolekcję przepływów pracy stanów i modeli przy użyciu modelu znanego komputera o stanie.
+
+ [Stan](../workflow-designer/state-activity-designer.md) Reprezentuje stan, w którym może znajdować się komputer stanu.
+
+ [FinalState](../workflow-designer/finalstate-activity-designer.md) Reprezentuje stan kończący wystąpienie komputera stanu.
+
+ [Przejście](../workflow-designer/transition-activity-designer.md) Reprezentuje przejście między dwoma stanami.
+
+## <a name="reference"></a>Tematy pomocy
+ <xref:System.Activities.Statements.StateMachine>
+
+ <xref:System.Activities.Statements.State>
+
+ <xref:System.Activities.Core.Presentation.FinalState>
+
+ <xref:System.Activities.Statements.Transition>
+
+## <a name="related-sections"></a>Sekcje pokrewne
+ W przypadku innych typów projektantów działań zapoznaj się z następującymi tematami.
+
+ [Przepływ sterowania](../workflow-designer/control-flow-activity-designers.md)
+
+ [Schemat blokowy](../workflow-designer/flowchart-activity-designers.md)
+
+ [Używanie projektantów działań](../workflow-designer/using-the-activity-designers.md)
+
+ [Obsługa komunikatów](../workflow-designer/messaging-activity-designers.md)
+
+ [Środowisko uruchomieniowe](../workflow-designer/runtime-activity-designers.md)
+
+ [Typy pierwotne](../workflow-designer/primitives-activity-designers.md)
+
+ [Transakcja](../workflow-designer/transaction-activity-designers.md)
+
+ [Kolekcja](../workflow-designer/collection-activity-designers.md)
+
  [Obsługa błędów](../workflow-designer/error-handling-activity-designers.md)

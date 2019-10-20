@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.RoamingSettings
 ms.assetid: 3cfe09d2-1120-46e8-b882-f7056acb778b
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc3d88fd07ec5d345b3e8697ef69b193ece0fac1
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 63b5443599e5e84cab1693aca4281c882c082162
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68604894"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645336"
 ---
 # <a name="accounts-environment-options-dialog-box"></a>Konta, środowisko, Opcje — okno dialogowe
 
@@ -29,11 +29,11 @@ Użyj tej opcji, aby określić, czy synchronizować ustawienia na wielu maszyna
 
 ### <a name="enable-device-code-flow"></a>Włącz przepływ kodu urządzenia
 
-Gdy ta opcja jest zaznaczona, zachowanie programu Visual Studio zmienia się po wybraniu opcji **Dodaj konto** na stronie**Ustawienia konta** **pliku** > . Zamiast wyświetlania strony **logowania do konta** zostanie wyświetlone okno dialogowe z adresem URL i kodem do wklejenia do przeglądarki sieci Web w celu zalogowania się. Ta opcja jest przydatna w przypadkach, gdy nie można zalogować się do programu Visual Studio w zwykły sposób, na przykład jeśli używasz starszej wersji programu Internet Explorer lub Zapora ogranicza dostęp. Aby uzyskać więcej informacji, zobacz [Praca z wieloma kontami użytkownika](../work-with-multiple-user-accounts.md#add-an-account-using-device-code-flow).
+Po wybraniu tej opcji zachowanie programu Visual Studio zmienia się, gdy wybierzesz pozycję **Dodaj konto** na stronie**ustawień konta**  >  **pliku** . Zamiast wyświetlania strony **logowania do konta** zostanie wyświetlone okno dialogowe z adresem URL i kodem do wklejenia do przeglądarki sieci Web w celu zalogowania się. Ta opcja jest przydatna w przypadkach, gdy nie można zalogować się do programu Visual Studio w zwykły sposób, na przykład jeśli używasz starszej wersji programu Internet Explorer lub Zapora ogranicza dostęp. Aby uzyskać więcej informacji, zobacz [pracy z wieloma kontami użytkowników](../work-with-multiple-user-accounts.md#add-an-account-using-device-code-flow).
 
 ## <a name="registered-azure-clouds"></a>Zarejestrowane chmury platformy Azure
 
-W tej sekcji przedstawiono wystąpienia chmury platformy Azure, do których masz dostęp, za pomocą co najmniej jednego konta używanego do logowania się w programie Visual Studio. Na przykład możesz mieć dostęp do prywatnego wystąpienia platformy Azure w centrum danych firmy. Możesz też mieć dostęp do suwerennego lub rządowego wystąpienia platformy Azure, takiego jak Azure Chiny 21 Vianet lub Azure USA Zarządowi. Globalne wystąpienie chmury platformy Azure zostanie wyświetlone na liście domyślnie i nie można go usunąć.
+W tej sekcji przedstawiono wystąpienia chmury platformy Azure, do których masz dostęp, za pomocą co najmniej jednego konta używanego do logowania się w programie Visual Studio. Na przykład możesz mieć dostęp do prywatnego wystąpienia platformy Azure w centrum danych firmy. Możesz też mieć dostęp do suwerennego lub rządowego wystąpienia platformy Azure, takiego jak Azure Chiny 21 Vianet lub administracja Stanów Zjednoczonych na platformie Azure. Globalne wystąpienie chmury platformy Azure zostanie wyświetlone na liście domyślnie i nie można go usunąć.
 
 Zarejestruj dodatkową chmurę platformy Azure, wybierając przycisk **Dodaj** . W oknie dialogowym **Dodawanie nowej chmury platformy Azure** wyświetlane są kilka dobrze znanych wystąpień w chmurze platformy Azure, z którymi można nawiązać połączenie, lub możesz wprowadzić adres URL do prywatnego punktu końcowego platformy Azure.
 

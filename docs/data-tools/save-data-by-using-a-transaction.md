@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Zapisywanie danych przy użyciu transakcji'
+title: 'Instrukcje: zapisywanie danych przy użyciu transakcji'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -11,41 +11,41 @@ helpviewer_keywords:
 - transactions, saving data
 - data [Visual Studio], saving
 ms.assetid: 8b835e8f-34a3-413d-9bb5-ebaeb87f1198
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: bf5864d25e78b6050da5c13097503b2998dda44a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cfb03944743609d20d14f6104e5fadd529a5cfa6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566319"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72641310"
 ---
-# <a name="how-to-save-data-by-using-a-transaction"></a>Instrukcje: Zapisywanie danych przy użyciu transakcji
+# <a name="how-to-save-data-by-using-a-transaction"></a>Instrukcje: zapisywanie danych przy użyciu transakcji
 
-Zapisywanie danych w ramach transakcji przy użyciu <xref:System.Transactions> przestrzeni nazw. Użyj <xref:System.Transactions.TransactionScope> obiekt, aby uczestniczyć w transakcji, które są zarządzane automatycznie dla Ciebie.
+Dane są zapisywane w transakcji przy użyciu przestrzeni nazw <xref:System.Transactions>. Użyj obiektu <xref:System.Transactions.TransactionScope>, aby wziąć udział w transakcji, która jest automatycznie zarządzana.
 
-Projekty nie są tworzone za pomocą odwołania do *System.Transactions* zestawu, więc trzeba ręcznie dodać odwołania do projektów, które korzystają z transakcji.
+Projekty nie są tworzone z odwołaniem do zestawu *System. Transactions* , więc musisz ręcznie dodać odwołanie do projektów, które używają transakcji.
 
-Najłatwiejszym sposobem realizowania transakcji jest utworzenie wystąpienia <xref:System.Transactions.TransactionScope> obiektu `using` instrukcji. (Aby uzyskać więcej informacji, zobacz [za pomocą instrukcji](/dotnet/visual-basic/language-reference/statements/using-statement), i [za pomocą instrukcji](/dotnet/csharp/language-reference/keywords/using-statement).) Kod, który jest uruchamiany w ramach `using` instrukcji bierze udział w transakcji.
+Najprostszym sposobem implementacji transakcji jest utworzenie wystąpienia obiektu <xref:System.Transactions.TransactionScope> w instrukcji `using`. (Aby uzyskać więcej informacji, zobacz [using instrukcji](/dotnet/visual-basic/language-reference/statements/using-statement)and [using](/dotnet/csharp/language-reference/keywords/using-statement).) Kod, który jest uruchamiany w instrukcji `using` uczestniczy w transakcji.
 
-Aby zatwierdzić transakcji, należy wywołać <xref:System.Transactions.TransactionScope.Complete%2A> block metodę jako ostatnią instrukcję w przy użyciu.
+Aby zatwierdzić transakcję, wywołaj metodę <xref:System.Transactions.TransactionScope.Complete%2A> jako ostatnią instrukcję w bloku using.
 
-Aby wycofać transakcji zgłoszenie wyjątku przed wywołaniem <xref:System.Transactions.TransactionScope.Complete%2A> metody.
+Aby wycofać transakcję, Zgłoś wyjątek przed wywołaniem metody <xref:System.Transactions.TransactionScope.Complete%2A>.
 
-## <a name="to-add-a-reference-to-the-systemtransactionsdll"></a>Aby dodać odwołanie do System.Transactions.dll
+## <a name="to-add-a-reference-to-the-systemtransactionsdll"></a>Aby dodać odwołanie do elementu System. Transactions. dll
 
-1. Na **projektu** menu, wybierz opcję **Dodaj odwołanie**.
+1. W menu **projekt** wybierz polecenie **Dodaj odwołanie**.
 
-2. Na **.NET** kartę (**programu SQL Server** kartę dla projektów programu SQL Server), wybierz opcję **System.Transactions**, a następnie wybierz pozycję **OK**.
+2. Na karcie **.NET** (**SQL Server** karcie Projekty SQL Server) wybierz pozycję **System. Transactions**, a następnie wybierz przycisk **OK**.
 
-     Odwołanie do *System.Transactions.dll* zostanie dodany do projektu.
+     Odwołanie do *System. Transactions. dll* jest dodawane do projektu.
 
-## <a name="to-save-data-in-a-transaction"></a>Aby zapisać dane w ramach transakcji
+## <a name="to-save-data-in-a-transaction"></a>Aby zapisać dane w transakcji
 
-- Dodaj kod, aby zapisać dane w obrębie za pomocą instrukcji, która zawiera transakcji. Poniższy kod przedstawia sposób tworzenia i utworzyć wystąpienie <xref:System.Transactions.TransactionScope> obiektu w za pomocą instrukcji:
+- Dodaj kod, aby zapisać dane w instrukcji using zawierającej transakcję. Poniższy kod pokazuje, jak utworzyć i utworzyć wystąpienie obiektu <xref:System.Transactions.TransactionScope> w instrukcji using:
 
      [!code-vb[VbRaddataSaving#11](../data-tools/codesnippet/VisualBasic/save-data-by-using-a-transaction_1.vb)]
      [!code-csharp[VbRaddataSaving#11](../data-tools/codesnippet/CSharp/save-data-by-using-a-transaction_1.cs)]
@@ -53,4 +53,4 @@ Aby wycofać transakcji zgłoszenie wyjątku przed wywołaniem <xref:System.Tran
 ## <a name="see-also"></a>Zobacz także
 
 - [Zapisywanie danych z powrotem w bazie danych](../data-tools/save-data-back-to-the-database.md)
-- [Przewodnik: Zapisywanie danych w ramach transakcji](../data-tools/save-data-in-a-transaction.md)
+- [Przewodnik: Zapisywanie danych w transakcji](../data-tools/save-data-in-a-transaction.md)

@@ -9,28 +9,28 @@ helpviewer_keywords:
 - searching IDE
 - IDE, searching
 ms.assetid: 4200f297-d065-4723-9a30-d91ff2e26c9d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 1f5026a014b5adc96f0729d130c4398474d6d413
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: f0cc6bcb59bf98a7416221115dbeeef8f24a5e74
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605895"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655669"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Szybkie uruchamianie, środowisko, opcje — okno dialogowe
 
-Funkcja **szybkiego uruchamiania** umożliwia szybkie wyszukiwanie i wykonywanie akcji dla zasobów IDE, takich jak opcje, szablony i menu. Nie można użyć **szybkiego uruchamiania** do wyszukiwania kodu i symboli. Pole wyszukiwania **szybkiego uruchamiania** znajduje się w prawym górnym rogu paska menu i jest dostępne przez naciśnięcie **klawiszy CTRL**+**Q**. W polu wpisz ciąg wyszukiwania. Do wyszukiwania ciągów zawierających @, użyj ”@@”.
+Funkcja **szybkiego uruchamiania** umożliwia szybkie wyszukiwanie i wykonywanie akcji dla zasobów IDE, takich jak opcje, szablony i menu. Nie można użyć **szybkiego uruchamiania** do wyszukiwania kodu i symboli. Pole wyszukiwania **szybkiego uruchamiania** znajduje się w prawym górnym rogu paska menu i jest dostępne przez naciśnięcie **klawiszy CTRL** +**Q**. W polu wpisz ciąg wyszukiwania. Aby wyszukać ciągi zawierające ciąg @, użyj znaku "@ @".
 
-**Szybkie uruchamianie** jest domyślnie włączone podczas instalowania programu Visual Studio. Na pasku menu można pokazać lub ukryć pasek **Szybkie uruchamianie** , wybierając pozycję **Narzędzia** > **Opcje**. Rozwiń węzeł **środowiska** , a następnie wybierz polecenie **Szybkie uruchamianie**. Zaznacz lub wyczyść pole wyboru **Włącz szybkie uruchamianie** . Możesz również włączyć lub wyłączyć kategorie wyszukiwania na tej stronie.
+**Szybkie uruchamianie** jest domyślnie włączone podczas instalowania programu Visual Studio. Na pasku menu można pokazać lub ukryć pasek **Szybkie uruchamianie** , wybierając pozycję **Narzędzia**  > **Opcje**. Rozwiń węzeł **środowiska** , a następnie wybierz polecenie **Szybkie uruchamianie**. Zaznacz lub wyczyść pole wyboru **Włącz szybkie uruchamianie** . Możesz również włączyć lub wyłączyć kategorie wyszukiwania na tej stronie.
 
 ## <a name="category-list"></a>Lista kategorii
 
-Wyniki wyszukiwania szybkiego uruchamiania są wyświetlane w czterech kategoriach: **Ostatnio używane**, **menu**, **Opcje**i **otwarte dokumenty**wraz z liczbą elementów w kategorii. Aby przechodzić przez wyniki wyszukiwania według kategorii, wybierz klawisze **Ctrl**+**Q** , aby wyświetlić wszystkie wyniki z kolejnej kategorii. Po wyświetleniu ostatniej kategorii **Ctrl**+**Q** pokazuje kilka wyników z każdej kategorii. Naciśnij **klawisze CTRL**+**SHIFT**+**Q** , aby przejść przez kategorie w odwrotnej kolejności. Aby wyświetlić wszystkie wyniki wyszukiwania w kategorii, wybierz nazwę kategorii.
+Wyniki wyszukiwania szybkiego uruchamiania są wyświetlane w czterech kategoriach: **ostatnio używane**, **menu**, **Opcje**i **otwarte dokumenty**wraz z liczbą elementów w kategorii. Aby przechodzić przez wyniki wyszukiwania według kategorii, wybierz klawisze **Ctrl** +**Q** , aby wyświetlić wszystkie wyniki z kolejnej kategorii. Po wyświetleniu ostatniej kategorii polecenie **Ctrl** +**Q** pokaże kilka wyników z każdej kategorii. Naciśnij klawisz **Ctrl** +**SHIFT** +**Q** , aby przejść przez kategorie w odwrotnej kolejności. Aby wyświetlić wszystkie wyniki wyszukiwania w kategorii, wybierz nazwę kategorii.
 
 Możesz użyć następujących skrótów, aby ograniczyć wyszukiwanie do określonych kategorii.
 
@@ -42,7 +42,7 @@ Możesz użyć następujących skrótów, aby ograniczyć wyszukiwanie do okreś
 |Dokumenty|@doc<br /><br /> Na przykład:`@doc program.cs`|Ogranicza wyszukiwanie do nazw plików i ścieżek otwartych dokumentów dla kryteriów wyszukiwania, ale nie przeszukuje tekstu wewnątrz samych plików.|
 
 > [!NOTE]
-> Skróty**klawiaturowe** można zmienić na stronie **Ogólne** > w oknie dialogowym **Opcje** .
+> Można zmienić klawisze skrótów na stronie **ogólne**  > **Klawiatura** w oknie dialogowym **Opcje** .
 
 ## <a name="show-previous-results"></a>Pokaż poprzednie wyniki
 

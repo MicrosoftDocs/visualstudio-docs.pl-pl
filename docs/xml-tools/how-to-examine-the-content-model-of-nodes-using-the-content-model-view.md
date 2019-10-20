@@ -1,44 +1,44 @@
 ---
-title: Sprawdź węzłów przy użyciu widoku modelu zawartości w Projektancie schematu XML
+title: Sprawdzanie węzłów przy użyciu widoku modelu zawartości w projektancie schematu XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c42ddac8-b0e3-48d6-9832-112a19d6c104
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63e337162dc8499bf9ac2acb5606fbf75292574f
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: c109d167534dc969ae34c55d16f2ee55e34fe3aa
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820463"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645900"
 ---
 # <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>Instrukcje: Badanie modelu zawartości węzłów przy użyciu widoku modelu zawartości
 
-W tym temacie opisano sposób zapoznaj się z węzłów za pomocą [widoku modelu zawartości](../xml-tools/content-model-view.md).
+W tym temacie opisano sposób eksplorowania węzłów przy użyciu [widoku modelu zawartości](../xml-tools/content-model-view.md).
 
 ## <a name="to-create-a-new-xsd-file-and-display-the-root-element-in-the-content-model-view"></a>Aby utworzyć nowy plik XSD i wyświetlić element główny w widoku modelu zawartości
 
 1. Utwórz nowy plik schematu XML.
 
-2. Kliknij przycisk **edytora XML użyj do wyświetlania i edytowania pliku schematu XML podstawowego** w widoku startowego.
+2. Kliknij pozycję **Użyj edytora XML, aby wyświetlić i edytować źródłowy plik schematu XML** w widoku Start.
 
-3. Skopiuj przykładowy kod XML schematu z [schematu XML przykładowych: schemat zamówienia zakupu](../xml-tools/sample-xsd-file-purchase-order-schema.md) i wklej go w celu zastąpienia kodu, który został dodany do nowego pliku XSD domyślnie.
+3. Skopiuj przykładowy kod schematu XML z [przykładowego schematu XML: schemat zamówienia zakupu](../xml-tools/sample-xsd-file-purchase-order-schema.md) i wklej go, aby zastąpić kod, który został domyślnie dodany do nowego pliku XSD.
 
-4. Wybierz `purchaseOrder` element w Eksploratorze schematu, klikając prawym przyciskiem myszy `purchaseOrder` elementu w pliku XML edytora i zaznaczanie **Pokaż w Eksploratorze XML**.
+4. Wybierz element `purchaseOrder` w Eksploratorze schematu, klikając prawym przyciskiem myszy element `purchaseOrder` w edytorze XML i wybierając pozycję **Pokaż w EKSPLORATORZE XML**.
 
-5. Kliknij prawym przyciskiem myszy `purchaseOrder` w Eksploratorze XML, a następnie wybierz pozycję **Pokaż w widoku modelu zawartości**.
+5. Kliknij prawym przyciskiem myszy `purchaseOrder` w Eksploratorze XML i wybierz polecenie **Pokaż w widoku modelu zawartości**.
 
-     Wyświetla widok modelu zawartości `purchaseOrder` elementu po jego powierzchni projektowej.
+     Widok modelu zawartości wyświetla element `purchaseOrder` na jego powierzchni projektowej.
 
-6. Rozwiń `shipTo`, `billTo`, i `items` węzłów przez dwukrotne kliknięcie każdego węzła lub klikając podwójną strzałkę z prawej strony każdego węzła.
+6. Rozwiń węzły `shipTo`, `billTo` i `items` przez dwukrotne kliknięcie każdego węzła lub kliknięcie podwójnej strzałki z prawej strony każdego węzła.
 
-     Węzły `purchaseOrder` element teraz zostaną rozwinięte i można zobaczyć model zawartości elementu.
+     Węzły elementu `purchaseOrder` są teraz rozwinięte i można zobaczyć model zawartości elementu.
 
-7. Kliknij w dowolnym węźle `purchaseOrder` elementu i spójrz na pasku nawigacji, aby zobaczyć, gdzie w zestawie schematów wybrany węzeł znajduje się.
+7. Kliknij dowolny węzeł w obszarze `purchaseOrder` i spójrz na pasek nawigacyjny, aby zobaczyć, gdzie w zestawie schematu znajduje się wybrany węzeł.
 
-8. Kliknij przycisk **Pokaż dokumentacji** przycisk na pasku narzędzi XSD, aby przełączyć dokumentacji. Możesz również prawym przyciskiem myszy powierzchnię projektu, aby przełączyć się z dokumentacją.
+8. Kliknij przycisk **Pokaż dokumentację** na pasku narzędzi XSD, aby przełączyć dokumentację. Możesz również kliknąć prawym przyciskiem myszy powierzchnię projektu, aby przełączać dokumentację.
 
-9. Kliknij prawym przyciskiem myszy `purchaseOrder` a następnie wybierz węzeł **Generowanie XML przykładowe** można znaleźć w dokumencie wystąpienia XML.
+9. Kliknij prawym przyciskiem myszy węzeł `purchaseOrder` i wybierz polecenie **Generuj przykładowy kod XML** , aby wyświetlić dokument wystąpienia XML.

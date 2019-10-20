@@ -1,79 +1,79 @@
 ---
-title: Omówienie Relational Designer
+title: Omówienie projektanta O/R
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 45e477c0-5c6b-41f9-b2d0-2808fb4f6537
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9511f2101c8dbac0ae8a9ba9e08f9a4f22067c3a
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: c02dbc42d629385671403de7131b27a449313591
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71252937"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648283"
 ---
-# <a name="linq-to-sql-tools-in-visual-studio"></a>Narzędzi LINQ to SQL w programie Visual Studio
+# <a name="linq-to-sql-tools-in-visual-studio"></a>Narzędzia LINQ to SQL w programie Visual Studio
 
-LINQ do SQL była pierwszym technologii mapowania obiektowo relacyjny, wydane przez firmę Microsoft. Działa dobrze w przypadku podstawowych scenariuszy i może być obsługiwany w programie Visual Studio, ale nie jest już opracowywane active. Użyj programu LINQ to SQL podczas obsługi starszych aplikacji, który już jest używany lub w prostej aplikacji, użyj programu SQL Server, które nie wymagają mapowania wielu tabel. Ogólnie rzecz biorąc nowe aplikacje powinny używać programu Entity Framework, gdy wymagana jest warstwa Mapowania obiektowo relacyjny.
+LINQ to SQL była technologią mapowania pierwszej Object-relacyjną wydaną przez firmę Microsoft. Dobrze działa w podstawowych scenariuszach i nadal jest obsługiwane w programie Visual Studio, ale nie jest już w trakcie aktywnego programowania. Użyj LINQ to SQL w przypadku zachowania starszej aplikacji, która już jej używa, lub w prostych aplikacjach, które używają SQL Server i nie wymagają mapowania wielotabelowego. Ogólnie rzecz biorąc, nowe aplikacje powinny używać Entity Framework, gdy wymagana jest warstwa mapowania obiektowo-relacyjnego.
 
-W programie Visual Studio, tworzyć LINQ do klas SQL, które reprezentują tabele SQL za pomocą **Object Relational Designer** (**O/R Designer**).
+W programie Visual Studio tworzysz klasy LINQ to SQL reprezentujące tabele SQL przy użyciu **Object Relational Designer** (**Projektant O/R**).
 
-**O/R Designer** ma dwa różne obszary, na jego powierzchnię projektową: jednostki w okienku po lewej stronie, a okienko metod po prawej stronie. W okienku jednostek jest główna powierzchnia projektowa wyświetlającą klas jednostek, skojarzeń i hierarchii dziedziczenia. Okienko metod jest powierzchni projektu, który wyświetla <xref:System.Data.Linq.DataContext> metod, które są mapowane do procedur przechowywanych i funkcji.
+**Projektant o/R** ma dwa oddzielne obszary na swojej powierzchni projektowej: okienko jednostki po lewej stronie i okienko metody po prawej stronie. Okienko jednostki jest główną powierzchnią projektową, która wyświetla klasy jednostki, skojarzenia i hierarchie dziedziczenia. Okienko metody jest powierzchnią projektową, która wyświetla <xref:System.Data.Linq.DataContext> metody, które są mapowane na procedury składowane i funkcje.
 
-**O/R Designer** udostępnia powierzchnia projektowania wizualnego służące do tworzenia [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) klasy encji i skojarzeń (relacji), które są oparte na obiektach w bazie danych. Innymi słowy **O/R Designer** tworzy model obiektu w aplikacji, która mapuje do obiektów w bazie danych. Polecenie to generuje także silnie typizowanego <xref:System.Data.Linq.DataContext> , wysyła i odbiera dane między klasami jednostki i bazy danych. **O/R Designer** również zapewnia funkcje procedurom składowanym w mapie i funkcje <xref:System.Data.Linq.DataContext> metody zwracający dane i wypełnianie klas jednostek. Na koniec **O/R Designer** zapewnia możliwość projektowania relacje dziedziczenia między klasami jednostki.
+**Projektant O/R** udostępnia powierzchnię projektowania wizualizacji na potrzeby tworzenia klas jednostek [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) i skojarzeń (relacji) opartych na obiektach w bazie danych. Innymi słowy, **Projektant o/R** tworzy model obiektów w aplikacji, która mapuje do obiektów w bazie danych. Generuje również silnie wpisaną <xref:System.Data.Linq.DataContext>, która wysyła i odbiera dane między klasami jednostki a bazą danych. **Projektant O/R** udostępnia również funkcje do mapowania procedur przechowywanych i funkcji w celu <xref:System.Data.Linq.DataContext> metod zwracania danych i wypełniania klas jednostek. Na koniec **Projektant o/R** zapewnia możliwość projektowania relacji dziedziczenia między klasami jednostek.
 
 ## <a name="open-the-or-designer"></a>Otwórz projektanta O/R
 
-Aby dodać LINQ w modelu entity SQL do projektu, wybierz **projektu** > **Dodaj nowy element**, a następnie wybierz pozycję **klasy LINQ do SQL** z listy elementów projektu:
+Aby dodać LINQ to SQL model jednostki do projektu, wybierz **projekt**  > **Dodaj nowy element**, a następnie wybierz **LINQ to SQL klasy** z listy elementów projektu:
 
-![Klasy LINQ do SQL](../data-tools/media/raddata-linq-to-sql-classes.png)
+![Klasy LINQ to SQL](../data-tools/media/raddata-linq-to-sql-classes.png)
 
-Program Visual Studio tworzy *dbml* plików i dodaje go do rozwiązania. Jest to plik mapowania XML i jego pliki kod pokrewny.
+Program Visual Studio tworzy plik *. dbml* i dodaje go do rozwiązania. Jest to plik mapowania XML i powiązane z nim pliki kodu.
 
-![Klasy LINQ do SQL w Eksploratorze rozwiązań](../data-tools/media/raddata-linq-to-sql-classes-in-solution-explorer.png)
+![Klasy LINQ to SQL w Eksplorator rozwiązań](../data-tools/media/raddata-linq-to-sql-classes-in-solution-explorer.png)
 
-Po wybraniu *dbml* pliku w Visual Studio Wyświetla **O/R Designer** powierzchni, która umożliwia wizualne Tworzenie modelu. Na poniższej ilustracji przedstawiono projektanta po Northwind `Customers` i `Orders` tabele mają zostało przeciągnięte z **Eksploratora serwera**. Należy pamiętać, relacji między tabelami.
+Po wybraniu pliku *. dbml* program Visual Studio wyświetli powierzchnię **projektanta o/R** , która umożliwia wizualne tworzenie modelu. Na poniższej ilustracji przedstawiono projektanta po przeciągnięciu tabel `Customers` Northwind i `Orders` z **Eksplorator serwera**. Zwróć uwagę na relacje między tabelami.
 
-![LINQ do SQL projektanta](../data-tools/media/raddata-linq-to-sql-designer.png)
+![Projektant LINQ to SQL](../data-tools/media/raddata-linq-to-sql-designer.png)
 
 > [!IMPORTANT]
-> **O/R Designer** jest mapowania relacyjnych prostego obiektu, ponieważ obsługuje on tylko relacji mapowanie 1:1. Innymi słowy klasa jednostka może mieć tylko relacji mapowanie 1:1 z tabeli bazy danych lub widoku. Mapowanie złożonych, takie jak mapowanie klasę jednostki do tabeli dołączonym do nie jest obsługiwana; na użytek złożonych mapowania Entity Framework. Ponadto projektanta jest generator kodu jednokierunkowe. Oznacza to, że tylko zmiany wprowadzone do powierzchni projektanta są odzwierciedlane w pliku kodu. Ręczne zmiany w pliku kodu nie są odzwierciedlane w **O/R Designer**. Wszelkie zmiany wprowadzone ręcznie w pliku kodu zostaną zastąpione, gdy projektant jest zapisywana i wygenerowania kodu. Aby uzyskać informacje na temat dodawania kodu użytkownika i zwiększania klas generowanych przez **projektanta o/R**, zobacz [How to: Poszerzenie kodu wygenerowanego przez projektanta](../data-tools/how-to-extend-code-generated-by-the-o-r-designer.md)O/R.
+> **Projektant o/R** to proste mapowanie relacyjne obiektów, ponieważ obsługuje tylko 1:1 relacji mapowania. Innymi słowy, Klasa jednostki może mieć tylko skojarzenie mapowania 1:1 z tabelą lub widokiem bazy danych. Mapowanie złożone, takie jak mapowanie klasy jednostki do sprzężonej tabeli, nie jest obsługiwane. Użyj Entity Framework na potrzeby mapowania złożonego. Ponadto Projektant jest jednokierunkowym generatorem kodu. Oznacza to, że tylko zmiany wprowadzane do powierzchni projektanta są uwzględniane w pliku kodu. Ręczne wprowadzanie zmian w pliku kodu nie są odzwierciedlone w **projektancie o/R**. Wszelkie zmiany wprowadzane ręcznie w pliku kodu są zastępowane podczas zapisywania projektanta i ponownego generowania kodu. Aby uzyskać informacje na temat dodawania kodu użytkownika i zwiększania klas generowanych przez **projektanta o/r**, zobacz [How to: rozszerzając kod wygenerowany przez projektanta o/r](../data-tools/how-to-extend-code-generated-by-the-o-r-designer.md).
 
-## <a name="create-and-configure-the-datacontext"></a>Tworzenie i konfigurowanie kontekstu danych
+## <a name="create-and-configure-the-datacontext"></a>Tworzenie i Konfigurowanie elementu DataContext
 
-Po dodaniu **klasy LINQ do SQL** elementu do projektu i Otwórz **O/R Designer**, powierzchni projektowej pusty reprezentuje pusty <xref:System.Data.Linq.DataContext> gotowe do skonfigurowania. <xref:System.Data.Linq.DataContext> jest skonfigurowany z informacjami o połączeniu, dostarczone przez pierwszy element, który jest zostało przeciągnięte na powierzchnię projektu. W związku z tym <xref:System.Data.Linq.DataContext> jest konfigurowana przy użyciu informacji o połączeniu z pierwszego elementu na powierzchni projektowej. Aby uzyskać więcej informacji na temat <xref:System.Data.Linq.DataContext> , zobacz klasę [metody DataContext (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md).
+Po dodaniu elementu **LINQ to SQL klas** do projektu i otwarciu **projektanta O/R**, pustej powierzchni projektowej reprezentuje pusty <xref:System.Data.Linq.DataContext> gotowy do skonfigurowania. <xref:System.Data.Linq.DataContext> jest skonfigurowany z informacjami o połączeniu dostarczonymi przez pierwszy element, który jest przeciągany na powierzchnię projektu. W związku z tym <xref:System.Data.Linq.DataContext> jest konfigurowany przy użyciu informacji o połączeniu z pierwszego elementu upuszczanych na powierzchnię projektu. Aby uzyskać więcej informacji na temat klasy <xref:System.Data.Linq.DataContext>, zobacz [metody DataContext (Projektant O/R)](../data-tools/datacontext-methods-o-r-designer.md).
 
-## <a name="create-entity-classes-that-map-to-database-tables-and-views"></a>Tworzenie klas jednostek mapowane na bazę danych, tabele i widoki
+## <a name="create-entity-classes-that-map-to-database-tables-and-views"></a>Tworzenie klas jednostek, które są mapowane na tabele i widoki bazy danych
 
-Można utworzyć klasy jednostek zamapowanych na tabele i widoki, przeciągając bazy danych tabel i widoków z **Eksploratora serwera** lub **Eksplorator bazy danych** na **O/R Designer**. Jak wskazano w poprzedniej sekcji <xref:System.Data.Linq.DataContext> jest skonfigurowany z informacjami o połączeniu, dostarczone przez pierwszy element, który jest zostało przeciągnięte na powierzchnię projektu. Jeśli kolejne elementu, który używa innego połączenia jest dodawany do **O/R Designer**, można zmienić połączenia dla <xref:System.Data.Linq.DataContext>. Aby uzyskać więcej informacji, zobacz [jak: Utwórz klasy LINQ to SQL mapowane na tabele i widoki (Projektant O/R)](../data-tools/how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md).
+Można tworzyć klasy jednostek zamapowane na tabele i widoki, przeciągając tabele i widoki bazy danych z **Eksplorator serwera** lub **Eksplorator bazy danych** do **projektanta O/R**. Jak wskazano w poprzedniej sekcji, <xref:System.Data.Linq.DataContext> jest konfigurowana z informacjami o połączeniu dostarczonymi przez pierwszy element, który jest przeciągany na powierzchnię projektu. Jeśli kolejny element, który używa innego połączenia, zostanie dodany do **projektanta O/R**, można zmienić połączenie dla <xref:System.Data.Linq.DataContext>. Aby uzyskać więcej informacji, zobacz [How to: Create LINQ to SQL Classes zmapowane do tabel i widoków (Projektant O/R)](../data-tools/how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md).
 
-## <a name="create-datacontext-methods-that-call-stored-procedures-and-functions"></a>Tworzenie metod DataContext, które wywołują procedur przechowywanych i funkcji
+## <a name="create-datacontext-methods-that-call-stored-procedures-and-functions"></a>Twórz metody DataContext, które wywołują procedury składowane i funkcje
 
-Możesz utworzyć <xref:System.Data.Linq.DataContext> metody, które wywołują (są mapowane na) procedur składowanych i funkcji, przeciągając je z **Eksploratora serwera** lub **Eksplorator bazy danych** na **Relational Designer** . Procedury składowane i funkcje, które są dodawane do **O/R Designer** jako metody <xref:System.Data.Linq.DataContext>.
+Można tworzyć metody <xref:System.Data.Linq.DataContext>, które wywołują (są mapowane na) procedury składowane i funkcje, przeciągając je z **Eksplorator serwera** lub **Eksplorator bazy danych** do **projektanta O/R**. Procedury składowane i funkcje są dodawane do **projektanta O/R** jako metody <xref:System.Data.Linq.DataContext>.
 
 > [!NOTE]
-> Podczas przeciągania procedur przechowywanych i funkcji z **Eksploratora serwera** lub **Eksplorator bazy danych** na **O/R Designer**, zwracany typ wygenerowany <xref:System.Data.Linq.DataContext> metoda zależy od tego, gdzie można upuścić elementu. Aby uzyskać więcej informacji, zobacz [metody DataContext (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md).
+> Gdy przeciągasz procedury składowane i funkcje z **Eksplorator serwera** lub **Eksplorator bazy danych** do **projektanta O/R**, zwracany typ wygenerowanej metody <xref:System.Data.Linq.DataContext> różni się w zależności od tego, gdzie porzucasz element. Aby uzyskać więcej informacji, zobacz [metody DataContext (Projektant O/R)](../data-tools/datacontext-methods-o-r-designer.md).
 
-## <a name="configure-a-datacontext-to-use-stored-procedures-to-save-data-between-entity-classes-and-a-database"></a>Konfigurowanie DataContext zapisują dane pomiędzy klasami jednostki i bazy danych za pomocą procedur składowanych
+## <a name="configure-a-datacontext-to-use-stored-procedures-to-save-data-between-entity-classes-and-a-database"></a>Skonfiguruj element DataContext, aby używać procedur składowanych do zapisywania danych między klasami jednostek a bazą danych
 
-Jak wspomniano wcześniej, możesz utworzyć <xref:System.Data.Linq.DataContext> metody, które wywołują procedur przechowywanych i funkcji. Ponadto można również przypisać procedury składowane, które są używane dla domyślnego LINQ to SQL zachowanie w czasie wykonywania, które wykonuje operacje wstawiania, aktualizacji i usuwania. Aby uzyskać więcej informacji, zobacz [jak: Przypisz procedury składowane, aby wykonywać aktualizacje, wstawienia i usunięcia (Projektant O/R](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)).
+Jak wspomniano wcześniej, można utworzyć metody <xref:System.Data.Linq.DataContext>, które wywołują procedury składowane i funkcje. Ponadto można również przypisać procedury składowane, które są używane dla domyślnego LINQ to SQL zachowanie w czasie wykonywania, które wykonuje operacje wstawiania, aktualizacji i usuwania. Aby uzyskać więcej informacji, zobacz [How to: assignd procedur składowanych do wykonywania aktualizacji, wstawianych i usuwanych (Projektant O/R)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
 
-## <a name="inheritance-and-the-or-designer"></a>Dziedziczenie i Relational designer
+## <a name="inheritance-and-the-or-designer"></a>Dziedziczenie i Projektant O/R
 
-Podobnie jak inne obiekty można użyć dziedziczenia klasy LINQ do SQL i mogą pochodzić z innych klas. W bazie danych relacje dziedziczenia są tworzone na kilka sposobów. **O/R Designer** obsługuje dziedziczenia pojedynczej tabeli, co jest często stosowana w systemach relacyjnych. Aby uzyskać więcej informacji, zobacz [jak: Skonfiguruj dziedziczenie przy użyciu narzędzia O/R](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)Designer.
+Podobnie jak w przypadku innych obiektów, klasy LINQ to SQL mogą używać dziedziczenia i pochodzić z innych klas. W bazie danych relacje dziedziczenia są tworzone na kilka sposobów. **Projektant O/R** obsługuje koncepcję dziedziczenia pojedynczej tabeli, ponieważ jest ona często zaimplementowana w systemach relacyjnych. Aby uzyskać więcej informacji, zobacz [jak: Konfigurowanie dziedziczenia przy użyciu narzędzia O/R Designer](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md).
 
 ## <a name="linq-to-sql-queries"></a>Zapytania LINQ to SQL
 
-Klas jednostek utworzonych przez **O/R Designer** są przeznaczone do użytku z programem [Language-Integrated query (LINQ)](/dotnet/csharp/linq/). Aby uzyskać więcej informacji, zobacz [jak: Zapytanie o informacje](/dotnet/framework/data/adonet/sql/linq/how-to-query-for-information).
+Klasy jednostek utworzone przez **projektanta O/R** są przeznaczone do użycia z [zapytaniem Integrated Language (LINQ)](/dotnet/csharp/linq/). Aby uzyskać więcej informacji, zobacz [jak: zapytanie o informacje](/dotnet/framework/data/adonet/sql/linq/how-to-query-for-information).
 
-## <a name="separate-the-generated-datacontext-and-entity-class-code-into-different-namespaces"></a>Oddziel wygenerowanego kodu klasy DataContext i jednostek w różnych obszarach nazw
+## <a name="separate-the-generated-datacontext-and-entity-class-code-into-different-namespaces"></a>Oddzielanie wygenerowanego elementu DataContext i kodu klasy jednostki do różnych przestrzeni nazw
 
-**O/R Designer** zapewnia **Namespace kontekstu** i **Namespace jednostki** właściwości <xref:System.Data.Linq.DataContext>. Te właściwości określają, jakie przestrzeni nazw <xref:System.Data.Linq.DataContext> i kodu klasy jednostki jest generowany na. Właściwości te są domyślnie pusta i <xref:System.Data.Linq.DataContext> i klas jednostek są generowane w przestrzeni nazw aplikacji. Aby wygenerować kod w przestrzeni nazw, innym niż przestrzeń nazw aplikacji, wprowadź wartość w **Namespace kontekstu** i/lub **Namespace jednostki** właściwości.
+**Projektant O/R** zapewnia **przestrzeń nazw kontekstu** i właściwości **przestrzeni nazw jednostki** na <xref:System.Data.Linq.DataContext>. Te właściwości określają, w której przestrzeni nazw jest generowany <xref:System.Data.Linq.DataContext> i kod klasy jednostki. Domyślnie te właściwości są puste, a klasy <xref:System.Data.Linq.DataContext> i jednostek są generowane w przestrzeni nazw aplikacji. Aby wygenerować kod w przestrzeni nazw innej niż przestrzeń nazw aplikacji, wprowadź wartość w polu **przestrzeń nazw kontekstu** i/lub właściwości **przestrzeni nazw jednostki** .
 
-## <a name="reference-content"></a>Odwołania do zawartości
+## <a name="reference-content"></a>Zawartość referencyjna
 
 - <xref:System.Linq>
 - <xref:System.Data.Linq>

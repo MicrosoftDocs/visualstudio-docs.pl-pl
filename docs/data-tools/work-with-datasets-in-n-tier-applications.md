@@ -14,25 +14,25 @@ helpviewer_keywords:
 - typed datasets, n-tier applications
 - multiple tier applications
 ms.assetid: f6ae2ee0-ea5f-4a79-8f4b-e21c115afb20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c6da3f51a249aaf52cf3f20b90f3add6ceeb7aa1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b96f2e51048216388eea50935a1ced536d8d230b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564759"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648033"
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>Praca z zestawami danych w aplikacjach n-warstwowych
 
-*Aplikacje warstwowe —* są aplikacji biznesowych przetwarzających dane, które są rozdzielone na wiele warstw logiczne (lub *warstwy*). Innymi słowy aplikacja n warstwowa danych jest aplikacja, która jest dzielony na wiele projektów z warstwy dostępu do danych, warstwy logiki biznesowej i warstwy prezentacji każdego we własnym projekcie. Aby uzyskać więcej informacji, zobacz [N-warstwowa danych aplikacji — omówienie](../data-tools/n-tier-data-applications-overview.md).
+*Wielowarstwowe aplikacje danych* to aplikacje zorientowane na dane, które są rozdzielone na wiele warstw logicznych (lub *warstw*). Innymi słowy, wielowarstwowa aplikacja do obsługi danych to aplikacja, która jest rozdzielona na wiele projektów, z warstwą dostępu do danych, warstwą logiki biznesowej i warstwą prezentacji w oddzielnym projekcie. Aby uzyskać więcej informacji, zobacz [Omówienie wielowarstwowych aplikacji do obsługi danych](../data-tools/n-tier-data-applications-overview.md).
 
-Tak, aby klas TableAdapters i zestawu danych mogą być generowane w dyskretne projekty zostały rozszerzone typizowanych zestawów danych. Zapewnia to możliwość szybkiego oddzielnymi warstwami aplikacji i generowania aplikacji n warstwowa danych.
+Wpisane zestawy danych zostały ulepszone, aby klasy TableAdapters i DataSet mogły być generowane w projektach dyskretnych. Dzięki temu można szybko oddzielić warstwy aplikacji i generować wielowarstwowe aplikacje do obsługi danych.
 
-Obsługa N-warstwowej w typizowanych zbiorach danych umożliwia iteracyjne projektowanie architektury aplikacji n warstwowa projektowi. Usuwa wymaganie, aby ręcznie odseparowania kodu do więcej niż jeden projekt. Rozpocząć projektowanie warstwę danych przy użyciu **Projektanta obiektów Dataset**. Gdy wszystko będzie gotowe, umożliwiające architektura n warstwowa projektu, należy ustawić **projektu DataSet** właściwości zestawu danych, aby wygenerować klasę zestawu danych do oddzielnego projektu.
+Obsługa n-warstwowa w typach danych typu umożliwia iteracyjne programowanie architektury aplikacji do projektu n-warstwowego. Powoduje również usunięcie wymagania, aby ręcznie rozdzielić kod na więcej niż jeden projekt. Rozpocznij projektowanie warstwy danych przy użyciu **Projektant obiektów DataSet**. Gdy wszystko jest gotowe do przełączenia architektury aplikacji do projektu n-warstwowego, ustaw właściwość **projektu** DataSet zestawu danych, aby wygenerować klasę zestawu danych w osobnym projekcie.
 
 ## <a name="reference"></a>Tematy pomocy
 
@@ -41,8 +41,8 @@ Obsługa N-warstwowej w typizowanych zbiorach danych umożliwia iteracyjne proje
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Omówienie aplikacji N-warstwowa danych](../data-tools/n-tier-data-applications-overview.md)
-- [Przewodnik: Tworzenie aplikacji warstwowych](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+- [N-warstwowe aplikacje dotyczące danych — omówienie](../data-tools/n-tier-data-applications-overview.md)
+- [Przewodnik: Tworzenie wielowarstwowej aplikacji danych](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [Dodawanie kodu do adapterów TableAdapter w aplikacjach n-warstwowych](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)
 - [Dodawanie kodu do zestawów danych w aplikacjach n-warstwowych](../data-tools/add-code-to-datasets-in-n-tier-applications.md)
 - [Dodawanie walidacji do n-warstwowego zestawu danych](../data-tools/add-validation-to-an-n-tier-dataset.md)
@@ -51,4 +51,4 @@ Obsługa N-warstwowej w typizowanych zbiorach danych umożliwia iteracyjne proje
 - [Narzędzia zestawów danych w programie Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
 - [Uzyskiwanie dostępu do danych w programie Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
 - [Tworzenie i konfigurowanie adapterów TableAdapter](../data-tools/create-and-configure-tableadapters.md)
-- [N-warstwowe i zdalne aplikacje za pomocą LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)
+- [Aplikacje N-warstwowe i zdalne z LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)

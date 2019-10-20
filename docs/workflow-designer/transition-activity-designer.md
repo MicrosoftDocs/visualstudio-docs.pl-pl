@@ -1,51 +1,51 @@
 ---
-title: Projektant przepływu pracy — Transaction, Projektant działań
+title: Projektant przepływu pracy — Projektant działań przejścia
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Transition.UI
 ms.assetid: f6e8b5cc-7fb8-4699-9703-f3c9fc7cc316
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: ad9572004702f53cefaad05bfcaad0cd29520542
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+author: jillre
+ms.openlocfilehash: a0a058a874903a7b316ebbe45e117e920d238870
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433947"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649815"
 ---
 # <a name="transition-activity-designer"></a>Transition, projektant działań
 
-A <xref:System.Activities.Statements.Transition> reprezentuje przejścia między dwoma stanami.
+@No__t_0 reprezentuje przejście między dwoma stanami.
 
-## <a name="using-the-transition-activity-designer"></a>Za pomocą Transaction, Projektant działań
+## <a name="using-the-transition-activity-designer"></a>Korzystanie z projektanta działań przejścia
 
-Transaction, Projektant działań umożliwia skonfigurowanie przejścia między dwoma stanami.
+Projektant działań przejścia umożliwia skonfigurowanie przejścia między dwoma stanami.
 
-### <a name="transition-properties-in-the-workflow-designer"></a>Właściwości przejścia w Projektancie przepływu pracy
+### <a name="transition-properties-in-the-workflow-designer"></a>Właściwości przejścia w Projektant przepływu pracy
 
-W poniższej tabeli przedstawiono <xref:System.Activities.Statements.Transition> właściwości, które można ustawić za pomocą projektanta przepływów pracy i w tym artykule opisano, jak są używane w projektancie.
+W poniższej tabeli przedstawiono właściwości <xref:System.Activities.Statements.Transition>, które można ustawić za pomocą projektanta przepływów pracy, i opisano sposób ich użycia w projektancie.
 
 |Nazwa właściwości|Wymagane|Użycie|
 |-|--------------|-|
-|<xref:System.Activities.Statements.Transition.DisplayName%2A>|False|Określa przyjazną nazwę <xref:System.Activities.Statements.Transition> projektanta działań. Wartość domyślna to **T1**. Wartość można edytować w siatce właściwości w nagłówku projektanta przejścia rozwinięty i w nagłówku sekcji akcja w Projektancie rozwiniętej przejścia. <xref:System.Activities.Activity.DisplayName%2A> Jest używany w nadrzędnych, która jest wyświetlana w górnej części projektanta przepływów pracy.<br /><br /> Mimo że <xref:System.Activities.Activity.DisplayName%2A> nie jest bezwzględnie konieczne jest najlepszym rozwiązaniem, aby użyć jednego.|
-|<xref:System.Activities.Statements.Transition.Condition%2A>|False|Jeśli jest obecny, określa wyrażenie, które musi zwrócić **True** zanim sterowanie jest przekazywane do stanu docelowego. Tego warunku można edytować w siatce właściwości i w Projektancie rozwiniętej przejścia. Wiele warunków w udostępnionym przejścia są obliczane w kolejności, w jakiej występują w Projektancie przejścia. **Uwaga:**  Należy pamiętać, że jeśli <xref:System.Activities.Statements.Transition.Condition%2A> przejścia daje w wyniku **False** (lub zwrócić wszystkie warunki przejścia udostępnionego wyzwalacza **False**), nie nastąpi przejście i wszystkich wyzwalaczy dla wszystkich powoduje zmianę planu przejścia ze stanu. W tym samouczku ta sytuacja nie może się zdarzyć, ze względu na sposób warunki są skonfigurowane (mamy określonych akcji dla tego, czy wynik jest prawidłowy lub nieprawidłowy).|
-|**Element źródłowy**|Prawda|Wskazuje stan, z którego pochodzi ten proces przejścia. Klikając nazwę stanu źródła przełącza widok projektanta do rozwinięty widok tego stanu. Ta wartość jest ustawiona, gdy przejście zostanie utworzona i nie można jej zmienić.|
-|<xref:System.Activities.Statements.Transition.Trigger%2A>|False|Określa działanie, którego ukończenie inicjuje przejścia. Aby ustawić to działanie, przeciągnij działanie z **przybornika** i upuść je na **wyzwalacza** sekcji przejścia.|
-|<xref:System.Activities.Statements.Transition.Action%2A>|False|Określa działania, który jest wykonywany po zakończeniu działania wyzwalacza i <xref:System.Activities.Statements.Transition.Condition%2A>, jeśli jest obecny, daje w wyniku **true**. To działanie jest wykonywany, gdy przechodzi do stanu docelowego po <xref:System.Activities.Statements.State.Exit%2A> stanu źródła, jeśli jest obecny, jest wykonywane działanie. Po rozwinięciu projektanta przejścia tę wartość można ustawić, przeciągając działanie w **przybornika** i upuszczając go na **akcji** sekcji przejścia. Może istnieć wiele akcji dla jednego przejścia. Poszczególne akcje można rozszerzyć i nabytej i może zostać określona przez kliknięcie przycisku w górę lub w dół strzałki, który pojawia się na akcję w przypadku wielu akcji w okresie przejściowym.|
-|**miejsce docelowe**|Prawda|Wskazuje stan, który przechodzi automatu stanów, po zakończeniu przejścia. Odpowiada to <xref:System.Activities.Statements.Transition.To%2A> właściwość przejścia w modelu obiektów. Klikając nazwę stanu docelowego przełącza widok projektanta do rozwinięty widok tego stanu. Ta wartość jest ustawiona, gdy przejście zostanie utworzona i można zmienić, przeciągając strzałkę, która łączy przejście do stanu docelowego w projektancie.|
+|<xref:System.Activities.Statements.Transition.DisplayName%2A>|False|Określa przyjazną nazwę projektanta działań <xref:System.Activities.Statements.Transition>. Wartość domyślna to **T1**. Wartość można edytować w siatce właściwości, w nagłówku rozwiniętego projektanta przejścia i w nagłówku sekcji akcji w rozwiniętym projektancie przejścia. @No__t_0 jest używana w nawigacyjnym nawigacji, który jest wyświetlany w górnej części projektanta przepływu pracy.<br /><br /> Mimo że <xref:System.Activities.Activity.DisplayName%2A> nie jest ściśle wymagane, najlepszym rozwiązaniem jest użycie jednego z nich.|
+|<xref:System.Activities.Statements.Transition.Condition%2A>|False|Jeśli jest obecny, określa wyrażenie, które musi oszacować **wartość true** przed przekazaniem kontroli do stanu docelowego. Ten warunek można edytować w siatce właściwości i w rozwiniętym projektancie przejścia. Wiele warunków w przejściu współdzielonym są oceniane w kolejności, w jakiej są wyświetlane w projektancie przejścia. **Uwaga:**  Należy pamiętać, że jeśli <xref:System.Activities.Statements.Transition.Condition%2A> przejścia ma **wartość false** (lub wszystkie warunki przejścia wyzwalacza udostępnionego są oceniane na **Fałsz**), przejście nie zostanie wykonane, a wszystkie wyzwalacze dla wszystkich przejść ze stanu zostaną ponownie zaplanowane. W tym samouczku ta sytuacja nie może wystąpić ze względu na sposób skonfigurowania warunków (istnieją określone akcje dotyczące tego, czy wartość dopuszczalna jest poprawna czy niepoprawna).|
+|**Zewnętrz**|Oznacza|Wskazuje stan, z którego pochodzi to przejście. Kliknięcie nazwy stanu źródła powoduje przełączenie widoku projektanta do rozwiniętego widoku tego stanu. Ta wartość jest ustawiana podczas tworzenia przejścia i nie można jej zmienić.|
+|<xref:System.Activities.Statements.Transition.Trigger%2A>|False|Określa działanie, którego zakończenie powoduje zainicjowanie przejścia. Aby ustawić to działanie, przeciągnij działanie z **przybornika** i upuść je na sekcję **wyzwalacz** przejścia.|
+|<xref:System.Activities.Statements.Transition.Action%2A>|False|Określa działanie, które jest wykonywane po zakończeniu działania wyzwalacza i <xref:System.Activities.Statements.Transition.Condition%2A>, jeśli jest obecny, daje w wyniku **wartość true**. To działanie jest wykonywane podczas przejścia do stanu docelowego po wykonaniu <xref:System.Activities.Statements.State.Exit%2A> działania dla stanu źródła, jeśli jest obecny. Gdy projektant przejścia jest rozwinięty, tę wartość można ustawić przez przeciągnięcie działania z **przybornika** i upuszczenie go do sekcji **akcji** przejścia. Może istnieć wiele akcji dla jednego przejścia. Poszczególne akcje mogą być rozwinięte i uporządkowane. można je porządkować, klikając strzałkę w górę lub w dół, która pojawia się na akcji, gdy istnieje wiele akcji w przejściu.|
+|**Punktu**|Oznacza|Wskazuje stan, do którego komputer stanu przechodzi po zakończeniu przejścia. Odpowiada właściwości <xref:System.Activities.Statements.Transition.To%2A> przejścia w modelu obiektów. Kliknięcie nazwy stanu docelowego powoduje przełączenie widoku projektanta do rozwiniętego widoku tego stanu. Ta wartość jest ustawiana podczas tworzenia przejścia i można ją zmienić, przeciągając strzałkę, która łączy przejście do stanu docelowego w projektancie.|
 
-### <a name="creating-transitions"></a>Tworzenie przejścia
+### <a name="creating-transitions"></a>Tworzenie przejść
 
-Przejścia są tworzone przez przeciąganie linii z jednego stanu do innego lub odrzucając stan na trójkąty, które są wyświetlane, gdy jeden stan jest przeciągany nad inny stan. Aby utworzyć przejście przez przeciąganie, umieść kursor myszy nad krawędzi stanu źródła i przeciągnij linię od stanu źródłowego do stanu docelowego. Aby utworzyć przejście przez porzucenie, przeciągnij stan docelowy kursor stanu źródła i upuść go na jeden z czterech trójkątów, które pojawiają się wokół stanu źródła. Stan docelowy może być albo nowy stan przeciągnięte z **przybornika**, lub istniejący stan przeciągnięte z projektanta przepływów pracy.
+Przejścia są tworzone przez przeciąganie linii z jednego stanu do innego lub przez porzucenie stanu do trójkątów, które pojawiają się po przeciągnięciu jednego stanu do innego stanu. Aby utworzyć przejście przez przeciąganie, przesuń wskaźnik myszy nad brzeg stanu źródłowego i przeciągnij wiersz ze stanu źródłowego do stanu docelowego. Aby utworzyć przejście przez upuszczenie, przeciągnij stan docelowy i umieść go nad stanem źródłowym i upuść je na jednym z czterech trójkątów, które są wyświetlane wokół stanu źródłowego. Stan docelowy może być nowym stanem przeciąganym z **przybornika**lub istniejącym stanem przeciąganym z projektanta przepływu pracy.
 
 > [!NOTE]
-> Pojedynczy stan w automacie stanów może mieć maksymalnie 76 przejścia utworzone za pomocą projektanta przepływów pracy. Limit przejścia dla stanu utworzony poza projektanta przepływów pracy jest ograniczony tylko ilością zasobów systemowych.
+> Pojedynczy stan na komputerze stanu może obejmować maksymalnie 76 przejść utworzonych przy użyciu projektanta przepływu pracy. Limit przejść dla stanu dla przepływów pracy utworzonych poza projektantem jest ograniczony tylko przez zasoby systemowe.
 
-Udostępnione wyzwalacza przejścia są zestawu przejść, które mają te same zdarzenia wyzwalacza. Wyzwalacz udostępnionego umożliwia warunkowego przejście do stanu docelowego, na podstawie oceny wyrażenia skonfigurowane dla wielu przejścia, które mają wspólne zdarzenie wyzwalacza. Aby dodać dodatkowe akcje do przejścia i tworzenia udostępnionych przejść, kliknij przycisk koła, który wskazuje początek żądanego przejścia i przeciągnij go do żądanego stanu. Nowe przejście współużytkują tego samego wyzwalacza jako przejściu początkowym, ale będzie mieć unikatowy warunków i akcji. Udostępnione przejścia można również utworzyć z w Projektancie przejścia, klikając **Dodaj udostępnionych przejść wyzwalaczy** w dolnej części projektanta przejścia, a następnie wybierając stanu wybraną docelową z  **Stany połączyć** listy rozwijanej.
+Przejścia wyzwalacza udostępnionego to zestaw przejść, które współużytkują to samo zdarzenie wyzwalacza. Wyzwalacz współużytkowany umożliwia warunkowe postęp do stanu docelowego na podstawie oceny wyrażeń skonfigurowanych dla wielu przejść, które współużytkują typowe zdarzenie wyzwalacza. Aby dodać kolejne akcje do przejścia i utworzyć wspólne przejście, kliknij kółko wskazujące początek żądanego przejścia i przeciągnij je do żądanego stanu. Nowe przejście spowoduje udostępnienie tego samego wyzwalacza co początkowe przejście, ale będzie miało unikatowy warunek i akcję. Współużytkowane przejścia można także utworzyć z poziomu projektanta przejścia, klikając pozycję **Dodaj przechodzenie wyzwalacza udostępnionego** u dołu projektanta przejścia, a następnie wybierając żądany stan docelowy z **dostępnych Stanów do połączenia** Lista rozwijana.
 
 ## <a name="see-also"></a>Zobacz także
 

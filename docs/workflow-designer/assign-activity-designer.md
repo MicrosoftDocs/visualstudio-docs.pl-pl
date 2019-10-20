@@ -1,45 +1,45 @@
 ---
-title: Projektant przepływu pracy — Assign, Projektant działań
+title: Projektant przepływu pracy — Przypisz projektanta działań
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Assign.UI
 ms.assetid: ba3feb3c-f144-47ea-926d-cf752b804153
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4179c23cefbf995242288c1e778f9e0413bfe28e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 44d4136aabd5bd383cc3718dc5c6c1676f94e45d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993257"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650731"
 ---
 # <a name="assign-activity-designer"></a>Assign, projektant działań
 
-**Przypisać** projektanta działań służy do tworzenia i konfigurowania <xref:System.Activities.Statements.Assign> działania.
+Projektant działania **Assign** służy do tworzenia i konfigurowania działania <xref:System.Activities.Statements.Assign>.
 
-## <a name="the-assign-activity"></a>Przypisywania działania
+## <a name="the-assign-activity"></a>Działanie Assign
 
-<xref:System.Activities.Statements.Assign> Działania przypisuje wartość do zmiennej lub argumentu.
+Działanie <xref:System.Activities.Statements.Assign> przypisuje wartość do zmiennej lub argumentu.
 
-### <a name="using-the-assign-activity-designer"></a>Za pomocą Przypisz Projektant działań
+### <a name="using-the-assign-activity-designer"></a>Korzystanie z projektanta akcji przypisania
 
-**Przypisać** projektanta działań można znaleźć w **podstawowych** kategorii **przybornika**, które jest dostępne po kliknięciu **przybornika**karty (opcjonalnie zaznacz **przybornika** z **widoku** menu lub klawiszy CTRL + ALT + X.)
+Projektanta działań **przypisanych** można znaleźć w kategorii elementy **pierwotne** **przybornika**, do którego uzyskuje się dostęp przez kliknięcie karty **przybornika** (można również wybrać **Przybornik** z menu **Widok** lub CTRL + ALT + X).
 
-**Przypisać** projektanta działań mogą być przeciągnięte z **przybornika** i porzucić do powierzchni projektanta przepływów pracy, gdzie odkąd działań są umieszczane, takie jak wewnątrz <xref:System.Activities.Statements.Sequence>. Upuszczanie **przypisać** tworzy Projektant działań <xref:System.Activities.Statements.Assign> działanie przy użyciu domyślnego **DisplayName** z przypisania. <xref:System.Activities.Activity.DisplayName%2A> Mogą być edytowane w nagłówku **przypisać** projektanta działań lub **DisplayName** pola siatki właściwości.
+Projektanta działania **przypisanego** można przeciągnąć z **przybornika** i porzucić na Projektant przepływu pracyą powierzchnię, w której zostaną umieszczone kiedykolwiek wykonane działania, na przykład wewnątrz <xref:System.Activities.Statements.Sequence>. Porzucenie projektanta **przypisywania** działań powoduje utworzenie działania <xref:System.Activities.Statements.Assign> z domyślną wartością **DisplayName** elementu Assign. @No__t_0 można edytować w nagłówku projektanta działań **przypisanych** lub w polu **DisplayName** siatki właściwości.
 
-### <a name="the-assign-properties"></a>Przypisz właściwości
+### <a name="the-assign-properties"></a>Właściwości przypisania
 
-W poniższej tabeli przedstawiono <xref:System.Activities.Statements.Assign> właściwości i w tym artykule opisano, jak są używane w projektancie. Te właściwości można edytować w siatce właściwości, a niektóre z nich mogą być edytowane na powierzchni projektanta przepływów pracy.
+W poniższej tabeli przedstawiono właściwości <xref:System.Activities.Statements.Assign> i opisano sposób ich używania w projektancie. Te właściwości można edytować w siatce właściwości, a niektóre z nich można edytować na Projektant przepływu pracy powierzchni.
 
 |Nazwa właściwości|Wymagane|Użycie|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Przyjazna nazwa <xref:System.Activities.Statements.Assign> działania. Wartość domyślna to przypisanie. Mimo że <xref:System.Activities.Activity.DisplayName%2A> wartość nie jest bezwzględnie konieczne, jest najlepszym rozwiązaniem, aby użyć jednego.|
-|<xref:System.Activities.Statements.Assign.To%2A>|Prawda|Zmiennej lub argumentu, do którego <xref:System.Activities.Statements.Assign.Value%2A> jest przypisany. Wartość musi być prawidłowym identyfikatorem języka Visual Basic. Aby ustawić właściwości, wpisz wyrażenie języka Visual Basic w **do** polu na **przypisać** działanie projektanta lub w siatce właściwości.|
-|<xref:System.Activities.Statements.Assign.Value%2A>|Prawda|Wartość, która jest przypisana do zmiennej. Aby ustawić <xref:System.Activities.Statements.Assign.Value%2A>, wpisz wyrażenie języka Visual Basic w **wartość** polu na **przypisać** działanie projektanta lub w siatce właściwości.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Przyjazna nazwa działania <xref:System.Activities.Statements.Assign>. Wartość domyślna to Assign. Mimo że wartość <xref:System.Activities.Activity.DisplayName%2A> nie jest ściśle wymagana, najlepszym rozwiązaniem jest użycie jednego z nich.|
+|<xref:System.Activities.Statements.Assign.To%2A>|Oznacza|Zmienna lub argument, do którego przypisano <xref:System.Activities.Statements.Assign.Value%2A>. Wartość musi być prawidłowym identyfikatorem Visual Basic. Aby ustawić właściwość, wpisz wyrażenie Visual Basic w polu **do** w **projektancie działania lub** w siatce właściwości.|
+|<xref:System.Activities.Statements.Assign.Value%2A>|Oznacza|Wartość, która jest przypisana do zmiennej. Aby ustawić <xref:System.Activities.Statements.Assign.Value%2A>, wpisz wyrażenie Visual Basic w polu **wartość** w **projektancie działania lub** w siatce właściwości.|
 
 ## <a name="see-also"></a>Zobacz także
 

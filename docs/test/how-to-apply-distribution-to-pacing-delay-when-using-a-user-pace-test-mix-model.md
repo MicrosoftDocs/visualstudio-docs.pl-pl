@@ -1,60 +1,60 @@
 ---
-title: Zastosuj do rozkład opóźnienia do testowania obciążenia
+title: Zastosuj rozkład do opóźnienia tempem na potrzeby testowania obciążenia
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - load tests, test mix model
 ms.assetid: ae8b35f9-d465-4d72-8d7d-7b56ae6ffd22
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d3ef8ecfefd1d614570b4d73808d3e5736d77230
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3241017a381370f215ed4f9211ae646dc6c80b65
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979344"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664827"
 ---
-# <a name="how-to-apply-distribution-to-pacing-delay-for-a-user-pace-test-mix-model"></a>Instrukcje: Zastosuj rozkład do opóźnienia dla użytkownika w tempie model testu mieszanego do
+# <a name="how-to-apply-distribution-to-pacing-delay-for-a-user-pace-test-mix-model"></a>Instrukcje: stosowanie dystrybucji do opóźnienia tempem dla modelu testu tempa użytkownika
 
-Po utworzeniu testu obciążenia przy użyciu **Kreatora nowego testu obciążeniowego**, można użyć edytora testu obciążenia, aby zmienić właściwości scenariuszy do spełnienia potrzeb i celów testowania.
+Po utworzeniu testu obciążenia przy użyciu **nowego Kreator testu obciążeniowego**można użyć Edytor testu obciążeniowego, aby zmienić właściwości scenariusza, aby spełniały potrzeby testowania i cele.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-**Dystrybucji Zastosuj rozkład do opóźnienia** właściwości są ustawiane przy użyciu **właściwości** okna. Właściwości scenariusza testów obciążenia są modyfikowane za pomocą edytora testu obciążenia.
+Właściwość **Zastosuj dystrybucję do tempem opóźnienie** jest ustawiana za pomocą okna **Właściwości** . Właściwości scenariusza testu obciążenia są modyfikowane przy użyciu Edytor testu obciążeniowego.
 
 > [!NOTE]
-> **Dystrybucji Zastosuj rozkład do opóźnienia** właściwość ma zastosowanie tylko wtedy, gdy *Załaduj test mieszany* jest skonfigurowany na podstawie tempa użytkownika. Aby uzyskać więcej informacji, zobacz [edytowanie modeli testów mieszanych w celu określania prawdopodobieństwa użytkownik wirtualny uruchomi testu](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
+> Właściwość **apply Distribution to tempem** ma zastosowanie tylko wtedy, gdy *mieszany test obciążenia* jest skonfigurowany na podstawie tempa użytkownika. Aby uzyskać więcej informacji, zobacz [Edit Text mix models, aby określić prawdopodobieństwo uruchomienia testu przez użytkownika wirtualnego](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
 
-Wartość **dystrybucji Zastosuj rozkład do opóźnienia** można ustawić na wartość true lub false:
+Wartość dla **opóźnienia Apply tempem** można ustawić na wartość true lub false:
 
-- **Wartość true,**: Scenariusz ma zastosowanie normalne statystyczne rozkłady opóźnienia, które są określone przez wartość w **testy na użytkownika na godzinę** kolumny w **Edytuj Test mieszany** okno dialogowe. Aby uzyskać więcej informacji, zobacz [edytowanie modeli testów mieszanych w celu określania prawdopodobieństwa użytkownik wirtualny uruchomi testu](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
+- **Prawda**: scenariusz stosuje normalne opóźnienia dystrybucji statystycznej, które są określone przez wartość w kolumnie **testy na użytkownika na godzinę** w oknie dialogowym **Edytowanie testu mieszanego** . Aby uzyskać więcej informacji, zobacz [Edit Text mix models, aby określić prawdopodobieństwo uruchomienia testu przez użytkownika wirtualnego](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
 
-     Na przykład załóżmy, że masz **testy na użytkownika na godzinę** wartość w **Edytuj Test mieszany** okno dialogowe dla testu jest ustawiona na dwóch użytkowników na godzinę. Jeśli **dystrybucji Zastosuj rozkład do opóźnienia** właściwość jest ustawiona na **True**, normalny rozkład statystyczny jest stosowany do czasu oczekiwania między testy. Testy będą nadal działać dwóch testów na godzinę, ale nie będzie zawsze 30-minutowy opóźnienie między nimi. Pierwszy test, może uruchomić po czterech minut i drugi test po 45 minut.
+     Załóżmy na przykład, że masz **testy na użytkownika na godzinę** w oknie dialogowym **Edytowanie testu mieszanego** dla testu dla zestawu testów dwóch użytkowników na godzinę. Jeśli właściwość **Zastosuj dystrybucję do tempem** jest ustawiona na **wartość true**, normalna dystrybucja statystyczna jest stosowana do czasu oczekiwania między testami. Testy będą nadal uruchamiać dwa testy na godzinę, ale nie musi to być opóźnienie 30 minut między nimi. Pierwszy test można uruchomić po upływie czterech minut, a drugi test po 45 minutach.
 
-- **FALSE**: Testy w tempie, który został określony dla wartości w **testy na użytkownika na godzinę** kolumny w **Edytuj Test mieszany** okno dialogowe. Aby uzyskać więcej informacji, zobacz [edytowanie modeli testów mieszanych w celu określania prawdopodobieństwa użytkownik wirtualny uruchomi testu](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
+- **Fałsz**: testy są uruchamiane w tempie określonym dla wartości w kolumnie **testy na użytkownika na godzinę** w oknie dialogowym **Edytowanie testu mieszanego** . Aby uzyskać więcej informacji, zobacz [Edit Text mix models, aby określić prawdopodobieństwo uruchomienia testu przez użytkownika wirtualnego](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
 
-     Na przykład załóżmy, że masz **testy na użytkownika na godzinę** wartość w **Edytuj Test mieszany** okno dialogowe dla testu jest ustawiona na dwóch użytkowników na godzinę. Jeśli **dystrybucji Zastosuj rozkład do opóźnienia** właściwość jest ustawiona na **False**, spowoduje nadanie nie swobodę uruchamiania testów. Test zostanie uruchomiony co 30 minut. Dzięki temu wykonać dwa testy na godzinę.
+     Załóżmy na przykład, że masz **testy na użytkownika na godzinę** w oknie dialogowym **Edytowanie testu mieszanego** dla testu dla zestawu testów dwóch użytkowników na godzinę. Jeśli właściwość **Zastosuj dystrybucję do tempem** jest ustawiona na **wartość FAŁSZ**, nastąpi brak Leeway, gdy testy są uruchamiane. Test będzie uruchamiany co 30 minut. Daje to pewność, że wykonujesz dwa testy na godzinę.
 
-## <a name="to-specify-the-apply-distribution-to-pacing-delay-property-setting-for-a-scenario"></a>Aby określić rozkład Zastosuj ustawienia właściwości rozkład opóźnienia dla scenariusza
+## <a name="to-specify-the-apply-distribution-to-pacing-delay-property-setting-for-a-scenario"></a>Aby określić ustawienie właściwości Zastosuj dystrybucję do tempem dla scenariusza
 
 1. Otwórz test obciążenia.
 
-   **Edytora testu obciążenia** pojawia się. Zostanie wyświetlone drzewo testu obciążenia.
+   Zostanie wyświetlona **Edytor testu obciążeniowego** . Zostanie wyświetlone drzewo testu obciążenia.
 
-2. W **scenariuszy** folderu drzewa testu obciążenia, wybierz opcję węzłem scenariusza, który chcesz zastosować rozkład dystrybucji.
+2. W folderze **scenariusze** drzewa testu obciążenia wybierz węzeł scenariusza, do którego ma zostać zastosowana dystrybucja tempem.
 
-3. Na **widoku** menu, wybierz opcję **okno właściwości**.
+3. W menu **Widok** wybierz polecenie **okno właściwości**.
 
-   Kategorie i właściwości scenariusza są wyświetlane w **właściwości** okna.
+   Kategorie i właściwości scenariusza są wyświetlane w oknie **Właściwości** .
 
-4. Wartości właściwości **dystrybucji Zastosuj rozkład do opóźnienia**, wybierz opcję **True** lub **False**.
+4. W polu wartość właściwości dla opcji **Zastosuj dystrybucję do tempem**wybierz wartość **prawda** lub **Fałsz**.
 
-5. Wybierz **pliku** > **Zapisz**. Teraz możesz uruchomić test obciążenia przy użyciu nowego **dystrybucji Zastosuj rozkład do opóźnienia** wartość.
+5. Wybierz pozycję **plik**  > **Zapisz**. Teraz można uruchomić test obciążenia z nową wartością **opóźnienia Zastosuj dystrybucję do tempem** .
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Edytowanie scenariuszy testu obciążenia](../test/edit-load-test-scenarios.md)
-- [Przewodnik: Tworzenie i uruchamianie testu obciążenia](../test/walkthrough-create-and-run-a-load-test.md)
+- [Przewodnik: Tworzenie i uruchamianie testów obciążeniowych](../test/walkthrough-create-and-run-a-load-test.md)
 - [Kontrolerzy testów i agenci testowi](configure-test-agents-and-controllers-for-load-tests.md)
-- [Właściwości scenariusza testów obciążenia](../test/load-test-scenario-properties.md)
+- [Właściwości scenariusza testu obciążenia](../test/load-test-scenario-properties.md)

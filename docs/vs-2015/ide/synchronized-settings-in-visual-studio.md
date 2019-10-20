@@ -8,54 +8,54 @@ f1_keywords:
 - VS.ToolsOptionsPages.Environment.RoamingSettings
 ms.assetid: a3d2ea29-be5d-4012-9820-44b06adbb7dd
 caps.latest.revision: 13
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ed6e544378089222cb69c491b0cd473544e05220
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 6459b6f65fd1e29fbadb01f6aa2fc51520b726b8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825655"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72646825"
 ---
 # <a name="synchronized-settings-in-visual-studio"></a>Synchronizacja ustawień w Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Korzystając z tego samego konta personalizacji zalogować się do programu Visual Studio na wielu komputerach, ustawienia są domyślnie synchronizowane na wszystkich komputerach.
+Jeśli używasz tego samego konta personalizacji do logowania się do programu Visual Studio na wielu komputerach, domyślnie ustawienia są synchronizowane na wszystkich komputerach.
 
 ## <a name="synchronized-settings"></a>Zsynchronizowane ustawienia
- Domyślnie zsynchronizowane są następujące ustawienia.
+ Domyślnie synchronizowane są następujące ustawienia.
 
-- Ustawienia środowiska deweloperskiego (musisz wybrać zestaw ustawień przy pierwszym uruchomieniu programu Visual Studio, ale możesz zmienić wybór w dowolnym momencie. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).)
+- Ustawienia deweloperskie (należy wybrać zestaw ustawień przy pierwszym uruchomieniu programu Visual Studio, ale można zmienić zaznaczenie w dowolnym momencie. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień deweloperskich w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
-- Następujące opcje w **narzędzia &#124; opcje** strony:
+- Następujące opcje na stronach **Opcje narzędzi &#124;**  :
 
-  - **Motyw** i pasek wielkość liter ustawienia, w menu **środowiska**, **ogólne** strony opcji
+  - **Motyw** i pasek menu ustawienia wielkości liter, na stronie **środowisko**, **Ogólne** opcje
 
-  - Wszystkie ustawienia na **środowiska**, **czcionki i kolory** strony opcji
+  - Wszystkie ustawienia na stronie opcje **środowiska**, **czcionek i kolorów**
 
-  - Wszystkie skróty klawiaturowe, na **środowiska**, **klawiatury** strony opcji
+  - Wszystkie skróty klawiaturowe na stronie **środowisko**, opcje **klawiatury**
 
-  - Wszystkie ustawienia na **środowiska, karty i Windows** strony opcji
+  - Wszystkie ustawienia na stronie **środowisko, karty i opcje systemu Windows**
 
-  - Wszystkie ustawienia na **środowiska**, **uruchamiania** strony opcji
+  - Wszystkie ustawienia w **środowisku**, na stronie opcje **uruchamiania**
 
-  - Wszystkie ustawienia na **edytora tekstów** Opcje strony
+  - Wszystkie ustawienia na stronach opcji **edytora tekstu**
 
-- Wszystkie ustawienia w Projektancie XAML Opcje strony
+- Wszystkie ustawienia na stronach opcji projektant XAML
 
-- Aliasy zdefiniowane przez użytkownika polecenia. Aby uzyskać więcej informacji o definiowaniu aliasów poleceń, zobacz [Visual Studio — aliasy poleceń](../ide/reference/visual-studio-command-aliases.md).
+- Aliasy poleceń zdefiniowanych przez użytkownika. Aby uzyskać więcej informacji o definiowaniu aliasów poleceń, zobacz [Visual Studio — Aliasy poleceń](../ide/reference/visual-studio-command-aliases.md).
 
-- Układów okien zdefiniowanych przez użytkownika w **okna &#124; Zarządzanie układami okien** strony
+- Układy okien zdefiniowane przez użytkownika w **oknie &#124; zarządzanie układami** okien
 
-## <a name="turning-synchronized-settings-off-for-a-particular-computer"></a>Włączanie synchronizacji ustawień, wyłączyć dla określonego komputera
- Synchronizacja ustawień dla programu Visual Studio są włączone domyślnie. Zsynchronizowane ustawienia na komputerze, można wyłączyć, przechodząc do **narzędzia &#124; opcje &#124; środowiska &#124; zsynchronizowane ustawienia** strony i usuwając zaznaczenie pola wyboru.  Na przykład, jeśli nie chcesz synchronizować ustawienia programu Visual Studio na komputerze A, zmiany ustawień wprowadzone na komputerze czy, nie pojawiają się na komputerze B lub komputerze C. komputerze B i C, będą nadal do synchronizacji ze sobą, ale nie z komputera A.
+## <a name="turning-synchronized-settings-off-for-a-particular-computer"></a>Wyłączanie synchronizacji ustawień dla określonego komputera
+ Zsynchronizowane ustawienia dla programu Visual Studio są domyślnie włączone. Zsynchronizowane ustawienia można wyłączyć na komputerze, przechodząc do strony **Opcje &#124; &#124; narzędzi Synchronizuj ustawienia &#124; środowiska** , a następnie usuwając zaznaczenie pola wyboru.  Na przykład jeśli zdecydujesz, że nie chcesz synchronizować ustawień programu Visual Studio na komputerze A, wszelkie zmiany ustawień wprowadzone na komputerze A nie pojawiają się na komputerze B lub na komputerze C. komputer B i C będzie nadal synchronizować się ze sobą, ale nie z komputerem A.
 
-## <a name="synchronizing-settings-across-visual-studio-family-products-and-editions"></a>Synchronizacja ustawień przez wersje i rodziny produktów Visual Studio
- Ustawienia mogą być synchronizowane w dowolnej wersji programu Visual Studio 2015, łącznie z wersji Express i społeczności. Ustawienia są synchronizowane między rodziny produktów Visual Studio, takich jak Blend. Jednak każdy z tych produktów z rodziny mogą mieć własne ustawienia, które nie są współdzielone z programem Visual Studio. Na przykład udostępniane ustawienia specyficzne dla programu Blend, na komputerze A przy użyciu programu Blend, na komputerze B, ale nie za pomocą programu Visual Studio na komputerze A i B.
+## <a name="synchronizing-settings-across-visual-studio-family-products-and-editions"></a>Synchronizowanie ustawień w produktach i wersjach rodziny Visual Studio
+ Ustawienia można synchronizować w dowolnej wersji programu Visual Studio 2015, w tym wersji Express i Community. Ustawienia są również synchronizowane między produktami rodziny Visual Studio, takimi jak Blend. Jednak każdy z tych produktów rodziny może mieć własne ustawienia, które nie są udostępniane w programie Visual Studio. Na przykład ustawienia specyficzne dla programu Blend na komputerze A będą współużytkowane z programem Blend na komputerze B, ale nie z programem Visual Studio na komputerze A lub B.
 
 > [!WARNING]
-> Ustawienia nie są zsynchronizowane między Visual Studio 2013 i Visual Studio 2015. Przy pierwszym otwarciu programu Visual Studio 2015, ustawienia usługi z programu Visual Studio 2013 są migrowane, ale nie mogą być migrowane do programu Visual Studio 2013 po tym.
+> Ustawienia nie są zsynchronizowane między Visual Studio 2013 i Visual Studio 2015. Przy pierwszym otwarciu programu Visual Studio 2015 ustawienia z Visual Studio 2013 są migrowane, ale nie można ich migrować z powrotem do Visual Studio 2013 po tym.
 
 ## <a name="see-also"></a>Zobacz też
  [Personalizowanie środowiska IDE](../ide/personalizing-the-visual-studio-ide.md)

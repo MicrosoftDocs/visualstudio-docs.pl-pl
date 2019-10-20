@@ -5,19 +5,19 @@ ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.selecttfsruleset
 ms.assetid: 9b02f934-2db6-41ec-aaff-9c31ceec2f04
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a35ba1b9d54507883882fbe62c0533805882560
-ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.openlocfilehash: fe6e9e49998c3e98335cd7e873d53531c8bfa99a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71975058"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649385"
 ---
-# <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Porady: Synchronizowanie zestawów reguł projektu kodu z zasadami ewidencjonowania projektu usługi Azure DevOps
+# <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Instrukcje: synchronizowanie zestawów reguł projektu kodu z zasadami ewidencjonowania projektu usługi Azure DevOps
 
 Ustawienia analizy kodu dla projektów kodu można synchronizować z zasadami ewidencjonowania dla projektu usługi Azure DevOps, określając zestaw reguł, który zawiera co najmniej reguły, które są określone w zestawie reguł dla zasad ewidencjonowania. Lider deweloperów może poinformować użytkownika o nazwie i lokalizacji zestawu reguł dla zasad ewidencjonowania. Możesz użyć jednej z następujących opcji, aby upewnić się, że analiza kodu dla projektu korzysta z poprawnego zestawu reguł:
 
@@ -31,7 +31,7 @@ Ustawienia analizy kodu dla projektów kodu można synchronizować z zasadami ew
 
 ## <a name="to-specify-a-microsoft-standard-rule-set"></a>Aby określić standardowy zestaw reguł firmy Microsoft
 
-1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt kodu, a następnie kliknij przycisk **właściwości**.
+1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt kodu, a następnie kliknij polecenie **Właściwości**.
 
 2. Kliknij pozycję **Analiza kodu**.
 
@@ -51,7 +51,7 @@ Ustawienia analizy kodu dla projektów kodu można synchronizować z zasadami ew
 
 1. W razie potrzeby wykonaj operację Pobierz w pliku zestawu reguł, który określa zasady ewidencjonowania.
 
-2. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt kodu, a następnie kliknij przycisk **właściwości**.
+2. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt kodu, a następnie kliknij polecenie **Właściwości**.
 
 3. Kliknij pozycję **Analiza kodu**.
 
@@ -63,7 +63,7 @@ Ustawienia analizy kodu dla projektów kodu można synchronizować z zasadami ew
 
 ::: moniker range=">=vs-2019"
 
-4. Na liście **aktywne reguły** kliknij pozycję **\<Browse >** .
+4. Na liście **aktywne reguły** kliknij **\<Browse >** .
 
 ::: moniker-end
 

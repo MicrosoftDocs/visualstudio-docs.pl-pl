@@ -7,17 +7,17 @@ helpviewer_keywords:
 - analyzers
 - Roslyn analyzers
 - code analyzers
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 844b9475ea59ba15ac96d3cbe19523f5cba63c72
-ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
+ms.openlocfilehash: 388667485f27b59e46a1c39d95b37ddc413240ee
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71999994"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649135"
 ---
 # <a name="overview-of-source-code-analyzers"></a>Przegląd analizatorów kodu źródłowego
 
@@ -40,7 +40,7 @@ Wiele reguł analizatorów lub *diagnostyki*ma jedną lub więcej skojarzonych *
 
 Analiza źródła przez analizatory Roslyn zastępuje [starszą analizę](../code-quality/code-analysis-for-managed-code-overview.md) dla kodu zarządzanego. Wiele starszych reguł analizy zostało już zapisaną jako analizatory kodu Roslyn. W przypadku nowszych szablonów projektów, takich jak .NET Core i projekty .NET Standard, Starsza analiza nie jest jeszcze dostępna.
 
-Podobnie jak w przypadku starszych naruszeń reguł analizy, naruszenia analizy kodu źródłowego są wyświetlane w oknie Lista błędów w programie Visual Studio. Ponadto naruszenia analizy kodu *źródłowego są również* wyświetlane w edytorze kodu jako zygzaky w kodzie błędu. Kolor zygzaka zależy od [Ustawienia ważności](../code-quality/use-roslyn-analyzers.md#rule-severity) reguły. Na poniższej ilustracji przedstawiono trzy naruszenia: @ no__t-0one Red, jedna zieleń i jeden szary.
+Podobnie jak w przypadku starszych naruszeń reguł analizy, naruszenia analizy kodu źródłowego są wyświetlane w oknie Lista błędów w programie Visual Studio. Ponadto naruszenia analizy kodu *źródłowego są również* wyświetlane w edytorze kodu jako zygzaky w kodzie błędu. Kolor zygzaka zależy od [Ustawienia ważności](../code-quality/use-roslyn-analyzers.md#rule-severity) reguły. Na poniższej ilustracji przedstawiono trzy naruszenia &mdash;one czerwony, jeden zielony i jeden szary:
 
 ![Zygzaky w edytorze kodu w programie Visual Studio](media/diagnostics-severity-colors.png)
 
@@ -52,7 +52,7 @@ Analizatory kodu sprawdzają kod w czasie kompilacji, na przykład w starszej an
 Tylko analizatory kodu Roslyn raportują te same typy problemów, które są używane w starszej analizie, ale ułatwiają rozwiązanie jednego lub wszystkich wystąpień naruszenia w pliku lub projekcie. Te akcje są nazywane *poprawkami kodu*. Poprawki kodu są specyficzne dla środowiska IDE; w programie Visual Studio są one implementowane jako [szybkie akcje](../ide/quick-actions.md). Nie cała Diagnostyka analizatora ma skojarzoną poprawkę kodu.
 
 > [!NOTE]
-> Opcja menu **Analizuj** **analizę kodu**  >  ma zastosowanie tylko do starszej analizy.
+> Opcja **analizuj**  > **Uruchom analizę kodu** ma zastosowanie tylko do starszej analizy.
 
 Aby rozróżnić naruszenia od analizatorów kodu i starszej analizy w Lista błędów, należy zapoznać się z kolumną **Narzędzia** . Jeśli wartość narzędzia pasuje do jednego z zestawów analizatorów w **Eksplorator rozwiązań**, na przykład **Microsoft. CodeQuality. analizatory**, naruszenie pochodzi z analizatora kodu. W przeciwnym razie naruszenie pochodzi ze starszej wersji analizy.
 
@@ -69,7 +69,7 @@ Aby rozróżnić naruszenia od analizatorów kodu i starszej analizy w Lista bł
 
 Analizatory kodu Roslyn można instalować dla poszczególnych projektów za pośrednictwem pakietu NuGet. Niektóre z nich są również dostępne jako rozszerzenie programu Visual Studio, w takim przypadku mają zastosowanie do dowolnego rozwiązania, które jest otwierane w programie Visual Studio. Istnieją pewne kluczowe różnice między tymi dwiema metodami [instalacji analizatorów](../code-quality/install-roslyn-analyzers.md).
 
-### <a name="scope"></a>Scope
+### <a name="scope"></a>Zakres
 
 Jeśli instalujesz analizatory jako rozszerzenie programu Visual Studio, są one stosowane na poziomie rozwiązania i we wszystkich wystąpieniach programu Visual Studio. Jeśli instalujesz analizatory jako pakiet NuGet, który jest preferowaną metodą, są one stosowane tylko do projektu, w którym zainstalowano pakiet NuGet. W środowiskach zespołu analizatory zainstalowane jako pakiety NuGet są w zakresie dla *wszystkich deweloperów* , którzy pracują nad tym projektem.
 

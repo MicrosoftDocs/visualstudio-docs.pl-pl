@@ -1,49 +1,49 @@
 ---
-title: Obsługiwanych mapowań wersji pakietu Roslyn
+title: Obsługiwane mapowania wersji pakietu Roslyn
 ms.date: 04/29/2019
 ms.topic: reference
 helpviewer_keywords:
 - roslyn package versions
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b2dd97b078923cfa3358d56e6316bfff654c4dd
-ms.sourcegitcommit: 62f42113ae4dae1ddfff1c4e02445acc09913445
+ms.openlocfilehash: 1965b0a2aa4b87dacee6f7cd1e1d2d7bc5c36819
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "64878240"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647940"
 ---
-# <a name="net-compiler-platform-package-version-reference"></a>Odwołanie do .NET kompilatora platformy wersji pakietu
+# <a name="net-compiler-platform-package-version-reference"></a>Dokumentacja wersji pakietu platformy kompilatora .NET
 
-W poniższej tabeli przedstawiono, które [pakiet (Roslyn) platformy kompilatora .NET](https://www.nuget.org/packages/Microsoft.Net.Compilers/) wersje są obsługiwane dla różnych wersji programu Visual Studio.
+W poniższej tabeli przedstawiono wersje [pakietów platformy kompilatora .NET (Roslyn)](https://www.nuget.org/packages/Microsoft.Net.Compilers/) obsługiwane przez różne wersje programu Visual Studio.
 
-Jako przykład aby upewnić się, że Twoje analizatora niestandardowego działa we wszystkich wersjach programu Visual Studio 2017 on powinien dotyczyć Microsoft.Net.Compilers w wersji 2.0.
+Na przykład aby upewnić się, że analizator niestandardowy działa na wszystkich wersjach programu Visual Studio 2017, powinien on być celem wersji 2,0 Microsoft.Net. Kompilators.
 
 | Wersja pakietu Roslyn | Minimalna obsługiwana wersja programu Visual Studio |
 | - | - |
-| 3.x | Visual Studio 2019 |
-| 2.10.0 | Visual Studio 2017 w wersji 15.9 |
-| 2.9.0 | Visual Studio 2017 w wersji 15.8 |
-| 2.8.2 | Visual Studio 2017 w wersji 15.7 |
-| 2.7.0 | Visual Studio 2017 wersja 15.6 |
-| 2.6.1 | Visual Studio 2017 w wersji 15.5 |
-| 2.4.0 | Visual Studio 2017 w wersji 15.4 |
-| 2.3.2 | Visual Studio 2017 w wersji 15.3 |
-| 2.2.0 | Visual Studio 2017 wersja 15.2 |
-| 2.1.0 | Visual Studio 2017 wersja 15.1 |
+| wersji | Visual Studio 2019 |
+| 2.10.0 | Visual Studio 2017 w wersji 15,9 |
+| 2.9.0 | Visual Studio 2017 w wersji 15,8 |
+| 2.8.2 | Visual Studio 2017 w wersji 15,7 |
+| 2.7.0 | Visual Studio 2017 w wersji 15,6 |
+| 2.6.1 | Visual Studio 2017 w wersji 15,5 |
+| 2.4.0 | Visual Studio 2017 w wersji 15,4 |
+| 2.3.2 | Visual Studio 2017 w wersji 15,3 |
+| 2.2.0 | Visual Studio 2017 w wersji 15,2 |
+| 2.1.0 | Visual Studio 2017 w wersji 15,1 |
 | 2.0.0 | Visual Studio 2017 RTM |
-| 1.3.2 | Visual Studio 2015 update 3 |
-| 1.2.2 | Visual Studio 2015 update 2 |
-| 1.1.1 | Visual Studio 2015 update 1 |
+| 1.3.2 | Visual Studio 2015 Update 3 |
+| ppkt | Visual Studio 2015 Update 2 |
+| ppkt | Visual Studio 2015 Update 1 |
 | 1.0.1 | Visual Studio 2015 RTM |
 
 > [!TIP]
-> W przypadku pakietów platformy Roslyn minimalna obsługiwana wersja programu Visual Studio w przypadku wersji programu Visual Studio 2017 wszystkie wersje programu Visual Studio 2019 r również są obsługiwane, ponieważ zaczęli oni później.
+> W przypadku pakietów Roslyn, w których minimalna obsługiwana wersja programu Visual Studio to wersja programu Visual Studio 2017, wszystkie wersje programu Visual Studio 2019 są również obsługiwane, ponieważ zostały one później dołączone.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Zestaw SDK platformy kompilatora .NET](/dotnet/csharp/roslyn-sdk/)
+- [Zestaw SDK .NET Compiler Platform](/dotnet/csharp/roslyn-sdk/)
 - [Wprowadzenie do analizatorów Roslyn](getting-started-with-roslyn-analyzers.md)

@@ -3,15 +3,15 @@ title: Praca z elementami w projektancie XAML
 ms.date: 05/14/2018
 ms.topic: conceptual
 ms.assetid: a29690bf-f212-4ac6-a77a-adc53d14102e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c1ab50fd08b3dd455e6fb9adc9f5aa3a22b77352
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: bae8f676a009ef9e5b3560feff15b74410cc52ac
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72451032"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668620"
 ---
 # <a name="work-with-elements-in-xaml-designer"></a>Praca z elementami w projektancie XAML
 
@@ -19,7 +19,7 @@ Możesz dodawać elementy — kontrolki, układy i kształty — do aplikacji w 
 
 ## <a name="add-an-element-to-a-layout"></a>Dodawanie elementu do układu
 
-*Układ* to proces ustalania rozmiarów i pozycjonowania elementów w interfejsie użytkownika. Aby ustawić położenie elementów wizualnych, należy umieścić je w [panelu](xref:Windows.UI.Xaml.Controls.Panel)układu. @No__t-0 ma właściwość podrzędną, która jest kolekcją typów [FrameworkElement](xref:Windows.UI.Xaml.FrameworkElement) . Możesz użyć różnych elementów potomnych `Panel`, takich jak [Kanwa](xref:Windows.UI.Xaml.Controls.Canvas), [StackPanel](xref:Windows.UI.Xaml.Controls.StackPanel)i [Siatka](xref:Windows.UI.Xaml.Controls.Grid), aby służyć jako kontenery układu oraz do pozycjonowania i rozmieszczania elementów na stronie.
+*Układ* to proces ustalania rozmiarów i pozycjonowania elementów w interfejsie użytkownika. Aby ustawić położenie elementów wizualnych, należy umieścić je w [panelu](xref:Windows.UI.Xaml.Controls.Panel)układu. @No__t_0 ma właściwość podrzędną, która jest kolekcją typów [FrameworkElement](xref:Windows.UI.Xaml.FrameworkElement) . Możesz użyć różnych elementów potomnych `Panel`, takich jak [Kanwa](xref:Windows.UI.Xaml.Controls.Canvas), [StackPanel](xref:Windows.UI.Xaml.Controls.StackPanel)i [Siatka](xref:Windows.UI.Xaml.Controls.Grid), aby służyć jako kontenery układu oraz do pozycjonowania i rozmieszczania elementów na stronie.
 
 Domyślnie panel `Grid` jest używany jako kontener układu najwyższego poziomu w obrębie strony lub formularza. Możesz dodać panele układu, kontrolki lub inne elementy w układzie strony najwyższego poziomu.
 

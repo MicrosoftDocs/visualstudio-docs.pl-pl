@@ -2,44 +2,44 @@
 title: Właściwości ról w domenie
 ms.date: 11/04/2016
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 048116c07f30267c6beb2703c3eaa6fb4d3655f0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a992cc06a177d329701ca98278ad14632bda8df1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62998946"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658167"
 ---
 # <a name="properties-of-domain-roles"></a>Właściwości ról w domenie
-W poniższej tabeli przedstawiono właściwości są skojarzone z rolą domeny. Aby uzyskać informacji na temat ról w domenie, zobacz [objaśnienie modeli, klas i relacji](../modeling/understanding-models-classes-and-relationships.md). Aby uzyskać więcej informacji o tym, jak korzystać z tych właściwości, zobacz [dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md).
+Właściwości w poniższej tabeli są skojarzone z rolą domeny. Aby uzyskać informacje na temat ról domeny, zobacz [Opis modeli, klas i relacji](../modeling/understanding-models-classes-and-relationships.md). Aby uzyskać więcej informacji o sposobach korzystania z tych właściwości, zobacz [Dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
 |Właściwość|Opis|Domyślny|
 |-|-|-|
-|Typ kolekcji|Jeśli ta rola ma liczebność 0.. * lub 1.. \*, ta właściwość dostosowuje typ ogólny, który jest używany do przechowywania kolekcji łącza.|`(none)` - <xref:Microsoft.VisualStudio.Modeling.LinkedElementCollection%601> jest używana|
-|Atrybuty niestandardowe|Atrybuty, które są określone w tym miejscu zostaną dodane jako atrybuty do klasy wygenerowanego kodu.|< Brak\>|
-|Właściwość jest możliwa do przeglądania|Jeśli `True`, a Jeśli liczebność relacji jest od 0 do 1 lub 1.. 1, właściwości roli może być przeglądany przez użytkownika w **właściwości** okna. Właściwość Wyświetla nazwę elementu na drugim końcu łącza relacji.|`True`|
-|Jest Generator właściwości|Jeśli `True`, właściwości roli jest generowany dla tej roli, co umożliwia przenoszenie relacji w kodzie programu. Możesz ustawić wartość false, mogą przechodzić zależności w mniej skuteczny sposób, przy użyciu metod statycznych relacji domeny.|`True`|
-|Modyfikator dostępu metody pobierającej właściwości|Modyfikator dostępu dla metody pobierającej wygenerowanej właściwości (`public`, `internal`, `private`, `protected`, lub `protected internal`).|`public`|
-|Modyfikator dostępu metody ustawiającej właściwość|Modyfikator dostępu dla metody ustawiającej wygenerowanej właściwości (`public`, `internal`, `private`, `protected`, lub `protected internal`).|`public`|
-|Liczebność|Liczba elementów modelu, które mogą pełnić rolę odwrotną (`0..1`, `1..1`, `0..*`, lub `1..*`). Jeśli liczebność jest `0..*` lub `1..*`, następnie wygenerowana właściwość reprezentuje kolekcję; w przeciwnym razie wygenerowana właściwość reprezentuje element pojedynczego modelu.|Zależy od typu relacji i tego, czy jest to rola źródłowa lub docelowa w relacji.|
-|Nazwa|Nazwa roli domeny. Ta właściwość nie może zawierać spacji.|Nazwa klasy domeny obiektu pełniącego rolę dla tej roli.|
-|Propagates Copy|`DoNotPropagateCopy` -Kopiowanego obiektu pełniącego rolę będzie żadnej kopii tego łącza.<br /><br /> `PropagateCopyToLinkOnly` -Skopiowany link wskazuje na istniejący obiekt pełniący rolę odwrotną.<br /><br /> `PropagateCopyToLinkAndOppositeRolePlayer` -Skopiowany link wskazuje kopię obiektu pełniącego rolę odwrotną.|`PropagateCopyToLinkAndOppositeRolePlayer` dla ról źródło osadzenia.<br /><br /> `DoNotPropagateCopy` dla innych ról.<br /><br /> Aby uzyskać więcej informacji, zobacz [Dostosowywanie zachowania dotyczącego kopiowania](../modeling/customizing-copy-behavior.md)|
-|Propagates Delete|`True` Aby usunąć element, który odgrywa tej roli, gdy skojarzone łącze zostało usunięte.|`True` dla elementu docelowego osadzania roli.<br /><br /> `False` dla innych ról.|
-|Nazwa właściwości|Nazwa właściwości wygenerowanej w kodzie obiektu pełniącego rolę. Ta nazwa nie może zawierać białych znaków.|Nazwa roli odwrotną, jeśli ta rola ma wartość zero do jednego lub jeden do jednego liczebność; w przeciwnym razie nazwa pluralized rolę odwrotną.|
-|Obiekt pełniący rolę|Klasa domeny element, który można odtworzyć tę rolę w relacji. Ta właściwość jest tylko do odczytu.|Klasa domeny obiektu pełniącego rolę dla tej roli.|
-|Uwagi|Uwagi informacyjne skojarzone z rolą domeny.|< Brak\>|
-|Kategoria|Kategoria, pod którą wygenerowana właściwość pojawia się w **właściwości** okna w wygenerowanym projektancie. Jeśli ta właściwość jest pusta, a następnie wygenerowana właściwość pojawia się w obszarze **różne** kategorii|< Brak\>|
-|Opis|Opis, który jest używany do dokumentowania kodu i jest używany w Interfejsie użytkownika wygenerowanego projektanta.<br /><br /> Opis jest wyświetlany w etykietce narzędzia funkcji IntelliSense dla właściwości wygenerowanej klasy obiektu pełniącego rolę.|`Description for` *Pełna nazwa roli*|
-|Nazwa wyświetlana|Nazwa która jest wyświetlana w wygenerowanym projektancie dla roli domeny.|Skorygowaną wartość właściwości Name.|
-|Słowo kluczowe pomocy|Opcjonalne słowo kluczowe, które jest używane do indeksowania pomocy F1 dla okna rolę domeny.|\<Brak >|
-|Wyświetlana nazwa właściwości|Nazwa która jest wyświetlana w wygenerowanym projektancie dla właściwości wygenerowanej roli.|Skorygowaną wartość właściwości nazwy właściwości.|
+|Typ kolekcji|Jeśli ta rola ma liczebność równą 0.. * lub 1.. \*, ta właściwość dostosowuje typ ogólny, który jest używany do przechowywania kolekcji linków.|`(none)`  -  <xref:Microsoft.VisualStudio.Modeling.LinkedElementCollection%601> jest używany|
+|Atrybuty niestandardowe|Atrybuty określone w tym miejscu zostaną dodane jako atrybuty do wygenerowanej klasy kodu.|< brak \>|
+|Jest właściwością umożliwia przeglądania|Jeśli `True`, a liczebność relacji wynosi 0.. 1 lub 1.. 1, właściwość roli może być przeglądana przez użytkownika w oknie **Właściwości** . Właściwość wyświetla nazwę elementu na drugim końcu łącza relacji.|`True`|
+|Jest generatorem właściwości|Jeśli `True`, zostanie wygenerowana Właściwość roli dla tej roli, której można użyć do przechodzenia między relacjami w kodzie programu. W przypadku ustawienia tego elementu false, można przechodzić w sposób mniej wydajny przy użyciu metod statycznych relacji domeny.|`True`|
+|Modyfikator dostępu metody pobierającej właściwości|Modyfikator dostępu dla metody pobierającej dla wygenerowanej właściwości (`public`, `internal`, `private`, `protected` lub `protected internal`).|`public`|
+|Modyfikator dostępu metody ustawiającej właściwość|Modyfikator dostępu dla metody ustawiającej dla wygenerowanej właściwości (`public`, `internal`, `private`, `protected` lub `protected internal`).|`public`|
+|Liczebność|Liczba elementów modelu, które mogą odgrywać odwrotną rolę (`0..1`, `1..1`, `0..*` lub `1..*`). Jeśli liczebność jest `0..*` lub `1..*`, wygenerowana właściwość reprezentuje kolekcję; w przeciwnym razie wygenerowana właściwość reprezentuje pojedynczy element modelu.|Zależy od typu relacji i tego, czy jest to rola źródłowa lub docelowa w relacji.|
+|Nazwa|Nazwa roli domeny. Ta właściwość nie może zawierać odstępów.|Nazwa klasy domeny obiektu pełniącego rolę dla tej roli.|
+|Propaguje kopię|`DoNotPropagateCopy` — skopiowany obiekt pełniący rolę nie będzie miał kopii tego linku.<br /><br /> `PropagateCopyToLinkOnly` — skopiowany link wskazuje istniejący obiekt pełniący rolę odwrotną.<br /><br /> `PropagateCopyToLinkAndOppositeRolePlayer` — skopiowany link wskazuje kopię przeciwległego obiektu pełniącego rolę.|`PropagateCopyToLinkAndOppositeRolePlayer` dla ról źródłowych osadzania.<br /><br /> `DoNotPropagateCopy` inne role.<br /><br /> Aby uzyskać więcej informacji, zobacz [Dostosowywanie zachowania kopiowania](../modeling/customizing-copy-behavior.md)|
+|Propagowanie usuwania|`True` usunąć elementu, który odgrywa tę rolę po usunięciu skojarzonego linku.|`True` dla elementu docelowego roli osadzania.<br /><br /> `False` inne role.|
+|Nazwa właściwości|Nazwa właściwości wygenerowanej w kodzie obiektu pełniącego rolę. Ta nazwa nie może zawierać odstępów.|Nazwa przeciwległej roli, jeśli ta rola ma wartość zero-do-jednego lub liczebność jeden-do-jednego; w przeciwnym razie nazwa w liczbie mnogiej roli odwrotnej.|
+|Obiekt pełniący rolę|Klasa domeny elementu, który może odtwarzać tę rolę w relacji. Ta właściwość jest tylko do odczytu.|Klasa domeny obiektu pełniącego rolę dla tej roli.|
+|Uwagi|Nieformalne uwagi, które są skojarzone z rolą domeny.|< brak \>|
+|Kategoria|Kategoria, pod którą wygenerowana właściwość pojawia się w oknie **Właściwości** w wygenerowanym projektancie. Jeśli ta właściwość jest pusta, wygenerowana właściwość zostanie wyświetlona w obszarze Kategoria **różne**|< brak \>|
+|Opis|Opis używany do dokumentowania kodu i jest używany w interfejsie użytkownika wygenerowanego projektanta.<br /><br /> Opis jest wyświetlany w etykietce narzędzia IntelliSense dla wygenerowanej właściwości klasy obiektu pełniącego rolę.|`Description for` *pełną nazwę roli*|
+|Nazwa wyświetlana|Nazwa wyświetlana w wygenerowanym projektancie dla roli domeny.|Skorygowana wartość właściwości Nazwa.|
+|Słowo kluczowe pomocy|Opcjonalne słowo kluczowe, które jest używane do indeksowania pomocy klawisza F1 dla roli domeny.|\<none >|
+|Nazwa wyświetlana właściwości|Nazwa wyświetlana w wygenerowanym projektancie dla wygenerowanej właściwości roli.|Wartość skorygowana właściwości Nazwa właściwości.|
 
 > [!NOTE]
-> Wartością domyślną nazwę wyświetlaną opiera się na wartości właściwości skojarzonej, wstawiając spacje przed znakiem każdego wielkie litery, który jest poprzedzony znakiem małe i który nie następuje inny znak wielkie litery.
+> Wartość domyślna nazwy wyświetlanej jest oparta na wartości skojarzonej właściwości przez Wstawianie spacji przed każdym wielkie litery, które jest poprzedzone znakiem małych liter i nie następuje po nim kolejnego znaku Case.
 
 ## <a name="see-also"></a>Zobacz też
 

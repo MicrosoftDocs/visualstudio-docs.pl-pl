@@ -1,35 +1,35 @@
 ---
-title: Opcje, Edytor tekstu HTML (formularze sieci Web), różne
+title: Opcje, Edytor tekstu, HTML (Formularze sieci Web), różne
 ms.date: 1/15/2019
 ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.HTML.Miscellaneous
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43ab664968ca75f8af6da89db84725924caa3584
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3b100defd8f50b4a487e46eef4183457e724a015
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778433"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666179"
 ---
-# <a name="options-text-editor-html-web-forms-miscellaneous"></a>Opcje, Edytor tekstu HTML (formularze sieci Web), różne
+# <a name="options-text-editor-html-web-forms-miscellaneous"></a>Opcje, Edytor tekstu, HTML (Formularze sieci Web), różne
 
-Użyj **różne** Strona opcji, aby ustawić preferencje dotyczące jak edytor HTML obsługuje elementy wklejone do strony. Dostępu do tej strony, na pasku menu wybierz **narzędzia** > **opcje**, a następnie rozwiń węzeł **edytora tekstów** > **HTML (formularze sieci Web)**   >  **Różne**.
+Za pomocą strony **różne** opcje można ustawić preferencje dotyczące sposobu, w jaki Edytor HTML obsługuje elementy wklejone do strony. Aby uzyskać dostęp do tej strony, na pasku menu wybierz pozycję **narzędzia**  > **Opcje**, a następnie rozwiń węzeł **Edytor tekstu**  > **HTML (Formularze sieci Web)**  > **różne**.
 
 ## <a name="miscellaneous-html-options"></a>Różne opcje HTML
 
-- **Formatuj HTML podczas wklejania**
+- **Formatuj kod HTML przy wklejaniu**
 
-   Gdy to pole wyboru jest zaznaczone, Edytor formatuje elementy wklejone do strony, przy użyciu aktualnie zdefiniowanych reguły formatowania. Jeśli to pole wyboru nie jest zaznaczone, Edytor wkleja elementów, przy użyciu dokładnie formatowania w oryginalnym elemencie.
+   Gdy to pole wyboru jest zaznaczone, Edytor przekształca elementy wklejone na stronę przy użyciu aktualnie zdefiniowanych reguł formatowania. Jeśli to pole wyboru nie jest zaznaczone, Edytor wkleja elementy, używając dokładnego formatowania oryginalnego elementu.
 
-- **Wymagaj "<" do okna uzupełnianie tagu wyzwalacza**
+- **Wymagaj "<" do wyzwolenia okna uzupełniania tagów**
 
-   Gdy to pole wyboru jest zaznaczone, podczas wpisywania tekstu w mniej niż znak pojawi się okno uzupełnianie tagu ("<").
+   Gdy to pole wyboru jest zaznaczone, okno uzupełniania tagów pojawia się po wpisaniu znaku mniejszości ("<").
 
 ## <a name="see-also"></a>Zobacz także
 

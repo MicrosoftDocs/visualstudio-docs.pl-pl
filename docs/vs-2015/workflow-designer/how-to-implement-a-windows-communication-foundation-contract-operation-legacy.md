@@ -1,55 +1,53 @@
 ---
-title: 'Instrukcje: Implementowanie Windows Communication Foundation operacji kontraktu usługi WCF (starsza wersja) | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Implementowanie operacji Windows Communication Foundation Contract (starsza wersja) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: d6aeb20e-fac8-4a9d-bd26-ae78bef96b41
 caps.latest.revision: 7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 56866e084eac7dc3a3ac2a0b80baaa2533ccd285
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1f6f54e781dfae15b4b1c1159d73ac3495b35c21
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62931182"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72603865"
 ---
-# <a name="how-to-implement-a-windows-communication-foundation-contract-operation-legacy"></a>Instrukcje: Instrukcje: implementowanie operacji kontraktu usługi WCF (Windows Communication Foundation) (starsza wersja)
-W tym temacie opisano sposób implementacji [!INCLUDE[indigo1](../includes/indigo1-md.md)] kontrakt operacji za pomocą starszego [!INCLUDE[wfd1](../includes/wfd1-md.md)] przeznaczonego [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
-  
- Po przeciągnięciu **działania ReceiveActivity** działania z przybornika do powierzchni projektu przepływu pracy, albo utworzysz nową [!INCLUDE[indigo2](../includes/indigo2-md.md)] kontraktu lub zaimportować istniejący kontrakt i wykonania operacji. Wybierz i/lub utworzyć kontrakt usługi i jego operacji za pośrednictwem [wybierz operację okno dialogowe (starsza wersja)](../workflow-designer/choose-operation-dialog-box-legacy.md).  
-  
-### <a name="to-implement-a-wcf-contract-operation"></a>Aby zaimplementować operacji kontraktu usługi WCF  
-  
-1. Kliknij dwukrotnie **działania ReceiveActivity** działania w Projektancie lub kliknij wielokropek obok pozycji **właściwości ServiceOperationInfo** właściwość **właściwości** okienka.  
-  
-2. Wykonaj jedną z następujących czynności:  
-  
-   - Kliknij przycisk **dodać umowy** w prawym górnym rogu okna dialogowego. Spowoduje to utworzenie nowego [!INCLUDE[indigo2](../includes/indigo2-md.md)] kontraktu i operacji dla Ciebie.  
-  
-      —lub—  
-  
-   - Kliknij przycisk **importu** w prawym górnym rogu okna dialogowego. [Wyszukaj i wybierz .NET typu, okno dialogowe (starsza wersja)](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md) zostanie otwarty. Wyszukaj zestaw lub projekt, który zawiera kontrakt, który chcesz. Wybierz umowę, a następnie kliknij przycisk **OK**.  
-  
-     Po utworzeniu zamówienia lub zaimportowane, możesz dodać nowe operacje umowę utworzone lub importowane. Aby dodać nową operację, wybierz umowę, a następnie kliknij przycisk **operacji dodawania** w prawym górnym rogu okna dialogowego. Po zakończeniu dodawania operacji, przejdź do kroku 3.  
-  
-3. Wybierz operację, którą chcesz skojarzyć z **działania ReceiveActivity** działania. Możesz manipulować definicji operacji, zmieniając nazwę, parametry, właściwości i ustawienia uprawnień wykonać operację.  
-  
-    Aby zmienić nazwę, wpisz nową nazwę w **nazwy operacji** pola tekstowego.  
-  
-    Kliknij przycisk **parametry** kartę, aby dostęp do parametrów operacji. Możesz zmienić nazwę, typ lub kierunek parametru, a także dodawanie lub usuwanie parametrów operacji.  
-  
-    Kliknij przycisk **właściwości** kartę, aby uzyskać dostęp do operacji ochrony poziomu i obsługiwanych wiadomości programu exchange funkcji operacji.  
-  
-    Kliknij przycisk **uprawnienia** kartę, aby określić, grup, które są dozwolone w celu wykonania operacji.  
-  
-4. Kliknij przycisk **OK** i **działania ReceiveActivity** działania będzie wyświetlana nazwa operacji do wykonania operacji, który implementuje.  
-  
-5. Umieść działań przepływu pracy ma używać do wykonania tej operacji w ramach **działania ReceiveActivity** działania.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Wybierz operację, okno dialogowe (starsza wersja)](../workflow-designer/choose-operation-dialog-box-legacy.md)   
- [Instrukcje: Wywoływanie operacji kontraktu usługi WCF (starsza wersja)](../workflow-designer/how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md)   
- [Działania przepływu pracy w starszej wersji](../workflow-designer/legacy-workflow-activities.md)
+# <a name="how-to-implement-a-windows-communication-foundation-contract-operation-legacy"></a>Instrukcje: Implementowanie operacji kontraktu Windows Communication Foundation (starsza wersja)
+W tym temacie opisano sposób implementacji operacji [!INCLUDE[indigo1](../includes/indigo1-md.md)] kontraktu przy użyciu starszej [!INCLUDE[wfd1](../includes/wfd1-md.md)], która jest przeznaczona dla [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+
+ Po przeciągnięciu działania **Receive** z przybornika na powierzchnię projektu przepływu pracy utworzysz nowy kontrakt [!INCLUDE[indigo2](../includes/indigo2-md.md)] lub zaimportuj istniejący kontrakt i zaimplementuj operacje. Wybierasz i/lub tworzysz kontrakt oraz jego operacje za pomocą [okna dialogowego Wybieranie operacji (starsza wersja)](../workflow-designer/choose-operation-dialog-box-legacy.md).
+
+### <a name="to-implement-a-wcf-contract-operation"></a>Aby zaimplementować operację kontraktu WCF
+
+1. Kliknij dwukrotnie działanie **odbieranie** w projektancie lub kliknij wielokropek obok właściwości **we ServiceOperationInfo** w okienku **Właściwości** .
+
+2. Wykonaj jedną z następujących czynności:
+
+   - Kliknij przycisk **Dodaj kontrakt** w prawym górnym rogu okna dialogowego. Spowoduje to utworzenie nowego [!INCLUDE[indigo2](../includes/indigo2-md.md)] kontraktu i operacji.
+
+      —lub—
+
+   - Kliknij przycisk **Importuj** w prawym górnym rogu okna dialogowego. Zostanie otwarte okno [dialogowe Przeglądaj i wybierz typ platformy .NET (starsza wersja)](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md) . Wyszukaj zestaw lub projekt zawierający żądany kontrakt. Wybierz kontrakt, a następnie kliknij przycisk **OK**.
+
+     Po utworzeniu lub zaimportowaniu kontraktu można dodać nowe operacje do tego utworzonego lub zaimportowanego kontraktu. Aby dodać nową operację, wybierz umowę, a następnie kliknij przycisk **Dodaj operację** w prawym górnym rogu okna dialogowego. Po zakończeniu dodawania operacji przejdź do kroku 3.
+
+3. Wybierz operację, którą chcesz skojarzyć z działaniem **Receive** . Można manipulować definicją operacji, zmieniając nazwę, parametry, właściwości i ustawienia uprawnień operacji.
+
+    Aby zmienić nazwę, wprowadź nową nazwę w polu tekstowym **nazwa operacji** .
+
+    Kliknij kartę **Parametry** , aby uzyskać dostęp do parametrów operacji. Można zmienić nazwę, typ lub kierunek parametru oraz dodać lub usunąć parametry z operacji.
+
+    Kliknij kartę **Właściwości** , aby uzyskać dostęp do poziomu ochrony operacji i obsługiwanej funkcji wymiany komunikatów.
+
+    Kliknij kartę **uprawnienia** , aby określić, które grupy mogą zaimplementować operację.
+
+4. Kliknięcie przycisku **OK** spowoduje wyświetlenie **w działaniu** nazwy operacji dla operacji implementującej.
+
+5. Umieść działania przepływu pracy, które będą używane dla implementacji tej operacji w ramach działania **Receive** .
+
+## <a name="see-also"></a>Zobacz też
+ [Okno dialogowe Wybieranie operacji (starsza wersja)](../workflow-designer/choose-operation-dialog-box-legacy.md) [instrukcje: wywoływanie operacji kontraktu WCF (starsza wersja)](../workflow-designer/how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md) [starsze działania przepływu pracy](../workflow-designer/legacy-workflow-activities.md)

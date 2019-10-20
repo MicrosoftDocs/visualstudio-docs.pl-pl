@@ -1,123 +1,123 @@
 ---
-title: Tworzenie kodu bez projektów ani rozwiązań
+title: Opracowywanie kodu bez projektów i rozwiązań
 ms.date: 02/21/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - open folder [Visual Studio]
 - anycode [Visual Studio]
 - projects and solutions, develop code without
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7554d3f89547701e1a7cad0280a1655450520586
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a88bfb5f12ae707c98eedd1f57a4be14665aa83c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962478"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652502"
 ---
-# <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Tworzenie kodu w programie Visual Studio bez projektów ani rozwiązań
+# <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Programowanie kodu w programie Visual Studio bez projektów i rozwiązań
 
-Możesz otworzyć kod z niemal dowolnego typu na podstawie katalogu projektu do programu Visual Studio bez konieczności plik rozwiązania lub projektu. Oznacza to, możesz można, na przykład klonowanie repozytorium w serwisie GitHub, otwórz go bezpośrednio w programie Visual Studio i rozpocząć tworzenie bez konieczności tworzenia rozwiązania lub projektu. Jeśli to konieczne, można określić zadania kompilacji niestandardowej i uruchom parametrów za pomocą prostego pliki w formacie JSON.
+Możesz otworzyć kod z niemal dowolnego typu projektu opartego na katalogu w programie Visual Studio bez konieczności stosowania rozwiązania lub pliku projektu. Oznacza to, że można na przykład klonować repozytorium w usłudze GitHub, otwierać je bezpośrednio w programie Visual Studio i zacząć opracowywać, bez konieczności tworzenia rozwiązania lub projektu. W razie konieczności można określić niestandardowe zadania kompilacji i parametry uruchamiania za poorednictwem prostych plików JSON.
 
-Po otwarciu plików kodu w programie Visual Studio, **Eksploratora rozwiązań** Wyświetla wszystkie pliki w folderze. Możesz kliknąć dowolny plik, aby rozpocząć jego edycji. W tle programu Visual Studio uruchamia indeksowanie plików, aby włączyć funkcję IntelliSense, nawigowanie i funkcje refaktoryzacji. Jak edytowanie, tworzenie, przenieść lub usunąć pliki programu Visual Studio automatycznie śledzi zmiany i stale aktualizuje jego indeksu funkcji IntelliSense. Za pomocą kolorowania składni i w wielu przypadkach, pojawi się kod obejmują podstawowe instrukcji IntelliSense.
+Po otwarciu plików kodu w programie Visual Studio **Eksplorator rozwiązań** wyświetla wszystkie pliki w folderze. Możesz kliknąć dowolny plik, aby rozpocząć jego edytowanie. W tle program Visual Studio uruchamia indeksowanie plików w celu włączenia funkcji IntelliSense, nawigowania i refaktoryzacji. Podczas edytowania, tworzenia, przenoszenia lub usuwania plików program Visual Studio automatycznie śledzi zmiany i ciągle aktualizuje swój indeks IntelliSense. Kod będzie wyglądać ze kolorem składni i, w wielu przypadkach, uwzględniać podstawowe uzupełnianie instrukcji IntelliSense.
 
-## <a name="open-any-code"></a>Otwórz każdy kod
+## <a name="open-any-code"></a>Otwórz dowolny kod
 
-Kod można otworzyć w programie Visual Studio, w dowolnym z następujących sposobów:
+Możesz otworzyć kod w programie Visual Studio w dowolny z następujących sposobów:
 
-- Na pasku menu programu Visual Studio, wybierz **pliku** > **Otwórz** > **folderu**, a następnie przejdź do lokalizacji kodu.
+- Na pasku menu programu Visual Studio wybierz pozycję **plik**  > **Otwórz**  > **folder**, a następnie przejdź do lokalizacji kodu.
 
-- Menu kontekstowe (kliknij prawym przyciskiem myszy) do folderu zawierającego kod, wybierz **Otwórz w programie Visual Studio** polecenia.
+- W menu kontekstowym (kliknij prawym przyciskiem myszy) folderu zawierającego kod wybierz polecenie **Otwórz w programie Visual Studio** .
 
 ::: moniker range="vs-2017"
-- Wybierz **Otwórz Folder** linku w programie Visual Studio **strona startowa**.
+- Wybierz link **Otwórz folder** na **stronie startowej**programu Visual Studio.
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
-- Wybierz **Otwórz Folder** link w oknie uruchamiania.
+- Wybierz link **Otwórz folder** w oknie uruchamiania.
 ::: moniker-end
 
-- Jeśli jesteś użytkownikiem klawiatury, naciśnij klawisz **Ctrl**+**Shift**+**Alt**+**O** w wizualizacji Studio.
+- Jeśli jesteś użytkownikiem z klawiatury, naciśnij klawisz **Ctrl** +**Shift** +**Alt** +**O** w programie Visual Studio.
 
 - Otwórz kod ze sklonowanego repozytorium GitHub.
 
 ### <a name="to-open-code-from-a-cloned-github-repo"></a>Aby otworzyć kod ze sklonowanego repozytorium GitHub
 
-Poniższy przykład pokazuje, jak klonowanie repozytorium GitHub, a następnie otwórz swój kod w programie Visual Studio. Aby wykonać tę procedurę, musisz mieć konto usługi GitHub i Git dla Windows instalowanych w systemie. Zobacz [utworzeniem nowego konta usługi GitHub](https://help.github.com/articles/signing-up-for-a-new-github-account/) i [Git dla Windows](https://git-for-windows.github.io/) Aby uzyskać więcej informacji.
+Poniższy przykład pokazuje, jak sklonować repozytorium GitHub, a następnie otworzyć jego kod w programie Visual Studio. Aby wykonać tę procedurę, musisz mieć konto usługi GitHub i narzędzie git dla systemu Windows zainstalowane w systemie. Aby uzyskać więcej informacji, zobacz [Tworzenie nowego konta usługi GitHub](https://help.github.com/articles/signing-up-for-a-new-github-account/) i [git dla systemu Windows](https://git-for-windows.github.io/) .
 
-1. Przejdź do repozytorium, które chcesz sklonować w witrynie GitHub.
+1. Przejdź do repozytorium, które chcesz sklonować w serwisie GitHub.
 
-1. Wybierz **Klonuj lub Pobierz** przycisk, a następnie wybierz **Kopiuj do Schowka** przycisk menu rozwijane, aby skopiować bezpieczny adres URL repozytorium usługi GitHub.
+1. Wybierz przycisk **Klonuj lub Pobierz** , a następnie wybierz przycisk **Kopiuj do schowka** w menu rozwijanym, aby skopiować bezpieczny adres URL repozytorium GitHub.
 
-   ![GitHub przycisku klonowania](./media/VSIDE_Code_Clone.png)
+   ![Przycisk klonowania GitHub](./media/VSIDE_Code_Clone.png)
 
-1. W programie Visual Studio, wybierz **Team Explorer** kartę, aby otworzyć **Team Explorer**. Jeśli karta nie jest widoczna, otwórz go z **widoku** > **Team Explorer**.
+1. W programie Visual Studio wybierz kartę **Team Explorer** , aby otworzyć **Team Explorer**. Jeśli nie widzisz karty, otwórz ją z **widoku**  > **Team Explorer**.
 
-1. W programie Team Explorer w obszarze **lokalne repozytoria Git** wybierz pozycję **klonowania** polecenia, a następnie wklej adres URL strony GitHub, w polu tekstowym.
+1. W Team Explorer w sekcji **lokalne repozytoria Git** wybierz polecenie **klonowania** , a następnie wklej adres URL strony GitHub do pola tekstowego.
 
    ![Klonowanie projektu](./media/VSIDE_Code_Clone2.png)
 
-1. Wybierz **klonowania** przycisk, aby sklonować pliki projektu do lokalnego repozytorium Git. W zależności od rozmiaru repozytorium ten proces może potrwać kilka minut.
+1. Wybierz przycisk **klon** , aby sklonować pliki projektu do lokalnego repozytorium git. W zależności od rozmiaru repozytorium ten proces może potrwać kilka minut.
 
-1. Po repozytorium zostało sklonowane w systemie, w w **Team Explorer**, wybierz **Otwórz** polecenia na menu kontekstowe (kliknij prawym przyciskiem myszy) nowo sklonowanego repozytorium.
+1. Po sklonowaniu repozytorium do systemu w obszarze **Team Explorer**wybierz polecenie **Otwórz** w menu kontekstowym (kliknij prawym przyciskiem myszy) dla nowo sklonowanego repozytorium.
 
    ![Sklonowane repozytorium](./media/VSIDE_Code_Clone3.png)
 
-1. Wybierz **Pokaż widok folderu** polecenie, aby wyświetlić pliki w **Eksploratora rozwiązań**.
+1. Wybierz polecenie **Pokaż widok folderu** , aby wyświetlić pliki w **Eksplorator rozwiązań**.
 
    ![Pokaż widok folderu](./media/VSIDE_Code_Clone3_show.png)
 
-   Można teraz przeglądać foldery i pliki na sklonowane repozytorium i wyświetlić i wyszukiwanie kodu w edytorze kodu programu Visual Studio wraz z kolorowania składni i inne funkcje.
+   Teraz można przeglądać foldery i pliki w sklonowanym repozytorium, a także wyświetlać i przeszukiwać kod w edytorze kodu programu Visual Studio, dokończc z kolorem składni i innymi funkcjami.
 
 ## <a name="run-and-debug-your-code"></a>Uruchamianie i debugowanie kodu
 
-Można debugować kodu w programie Visual Studio bez projektów ani rozwiązań! Aby debugować w niektórych językach, konieczne może być Podaj prawidłową *plik startowy* w bazie kodu, takich jak skrypt, plik wykonywalny lub projektu. Pole listy rozwijanej obok **Start** przycisk na pasku narzędzi, zawiera listę wszystkich elementów uruchamiania, które program Visual Studio wykryje, a także elementy, które w szczególności wyznaczyć. Visual Studio uruchamia ten kod najpierw podczas debugowania kodu.
+Możesz debugować kod w programie Visual Studio bez projektu lub rozwiązania. Aby debugować niektóre Języki, może być konieczne określenie prawidłowego *pliku startowego* w bazie kodu, takiej jak skrypt, plik wykonywalny lub projekt. Pole listy rozwijanej obok przycisku **Start** na pasku narzędzi zawiera wszystkie elementy startowe wykryte przez program Visual Studio, a także elementy, które zostały wyznaczone. Program Visual Studio uruchamia ten kod jako pierwszy podczas debugowania kodu.
 
-Konfigurowanie kodu do uruchamiania w programie Visual Studio różni się w zależności od tego, jakiego typu kod jest i co to są narzędzia do kompilacji.
+Konfigurowanie kodu do uruchamiania w programie Visual Studio różni się w zależności od rodzaju kodu i narzędzi kompilacji.
 
-### <a name="codebases-that-use-msbuild"></a>Bazach kodu, które używają programu MSBuild
+### <a name="codebases-that-use-msbuild"></a>Bazy kodu używające MSBuild
 
-Opartych na platformie MSBuild bazach kodu może mieć wielu konfiguracjach kompilacji, które pojawiają się w **Start** przycisku listy rozwijanej. Wybierz plik, który ma być używany jako element startowy, a następnie wybierz **Start** przycisk, aby rozpocząć debugowanie.
+Bazy kodu oparte na programie MSBuild mogą mieć wiele konfiguracji kompilacji, które pojawiają się na liście rozwijanej przycisku **Start** . Wybierz plik, który ma być używany jako element startowy, a następnie wybierz przycisk **Start** , aby rozpocząć debugowanie.
 
 > [!NOTE]
-> Aby uzyskać C# i bazach kodu języka Visual Basic, konieczne jest posiadanie **programowanie aplikacji klasycznych dla platformy .NET** zainstalowanym obciążeniem. Dla kodu C++, konieczne jest posiadanie **programowanie aplikacji klasycznych w języku C++** zainstalowanym obciążeniem.
+> W C# przypadku baz kodu i Visual Basic, musisz mieć zainstalowane obciążenie **Programowanie aplikacji klasycznych platformy .NET** . W C++ przypadku baz kodu należy mieć zainstalowaną obsługę obciążeń dla **komputerów stacjonarnych C++**  .
 
-### <a name="codebases-that-use-custom-build-tools"></a>Bazach kodu tego użycie niestandardowych narzędzi kompilacji
+### <a name="codebases-that-use-custom-build-tools"></a>Bazy kodu, które używają niestandardowych narzędzi kompilacji
 
-Jeśli Twoja używa kodu niestandardowego narzędzia kompilacji, a następnie musisz poinformować programu Visual Studio jak tworzyć zawartość przy użyciu kodu *zadania kompilacji* które są definiowane w *.json* pliku. Aby uzyskać więcej informacji, zobacz [Dostosowywanie kompilacji i debugowania zadań](../ide/customize-build-and-debug-tasks-in-visual-studio.md).
+Jeśli baza kodu używa niestandardowych narzędzi kompilacji, należy powiedzieć programowi Visual Studio, jak zbudować kod przy użyciu *zadań kompilacji* , które są zdefiniowane w pliku *JSON* . Aby uzyskać więcej informacji, zobacz [Dostosowywanie kompilacji i debugowania zadań](../ide/customize-build-and-debug-tasks-in-visual-studio.md).
 
-### <a name="codebases-that-contain-python-or-javascript-code"></a>Bazach kodu, które zawierają kod JavaScript, Python
+### <a name="codebases-that-contain-python-or-javascript-code"></a>Bazy kodu zawierające kod języka Python lub JavaScript
 
-Jeśli baza kodu zawiera kod języka Python lub JavaScript, nie trzeba skonfigurować dowolne *.json* pliki, ale trzeba instalować odpowiedniej obciążenia. Należy także skonfigurować skrypt uruchamiania:
+Jeśli baza kodu zawiera kod Python lub JavaScript, nie trzeba konfigurować żadnych plików *. JSON* , ale trzeba zainstalować odpowiednie obciążenie. Należy również skonfigurować skrypt uruchamiania:
 
-1. Zainstaluj [programowania Node.js](https://visualstudio.microsoft.com/vs/node-js/) lub [programowania w języku Python](https://visualstudio.microsoft.com/vs/python/) obciążenie, wybierając **narzędzia** > **Pobierz narzędzia i funkcje**, lub zamknięciu programu Visual Studio, a następnie uruchamiając Instalatora programu Visual Studio.
+1. Zainstaluj środowisko [programistyczne środowiska programowania Node. js](https://visualstudio.microsoft.com/vs/node-js/) lub programowania w języku [Python](https://visualstudio.microsoft.com/vs/python/) , wybierając **Narzędzia**  > **Pobierz narzędzia i funkcje**albo zamykając program Visual Studio i uruchamiając Instalator programu Visual Studio.
 
-   ![Obciążeń deweloperskich środowiska node.js i Python](media/python_nodejs_workloads.png)
+   ![Obciążenia dla środowiska Node. js i Python](media/python_nodejs_workloads.png)
 
-1. W **Eksploratora rozwiązań**, w menu kontekście lub kliknij prawym przyciskiem myszy plik JavaScript lub Python wybierz **Ustaw jako element startowy** polecenia.
+1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy lub menu kontekstowym pliku JavaScript lub Python, wybierz polecenie **Ustaw jako element startowy** .
 
-1. Wybierz **Start** przycisk, aby rozpocząć debugowanie.
+1. Wybierz przycisk **Start** , aby rozpocząć debugowanie.
 
-### <a name="codebases-that-contain-c-code"></a>Bazach kodu, który zawiera kod języka C++
+### <a name="codebases-that-contain-c-code"></a>Bazy kodu zawierające C++ kod
 
-Aby dowiedzieć się, jak otwieranie kodu C++ bez rozwiązań lub projektów w programie Visual Studio, zobacz [Otwórz Folder projektów w języku C++](/cpp/build/open-folder-projects-cpp).
+Aby uzyskać informacje na C++ temat otwierania kodu bez rozwiązań lub projektów w programie Visual Studio, zobacz [otwieranie C++folderu projects for ](/cpp/build/open-folder-projects-cpp).
 
-### <a name="codebases-that-contain-a-visual-studio-project"></a>Bazach kodu zawierające projekt programu Visual Studio
+### <a name="codebases-that-contain-a-visual-studio-project"></a>Bazy kodu zawierające projekt programu Visual Studio
 
-Jeśli folder kodu zawiera projekt programu Visual Studio, możesz wyznaczyć projektu jako element startowy.
+Jeśli folder kodu zawiera projekt programu Visual Studio, można wyznaczyć projekt jako element startowy.
 
-![Zestaw projektu jako element startowy](media/customize-set-project-as-startup-item.png)
+![Ustaw projekt jako element startowy](media/customize-set-project-as-startup-item.png)
 
-**Start** zmiany tekstu przycisku, aby odzwierciedlić, że projekt jest element startowy.
+Tekst przycisku **Start** zmieni się, aby odzwierciedlić, że projekt jest elementem startowym.
 
-![Projekt na przycisk Start](media/customize-start-button-project.png)
+![Projekt przy przycisku Start](media/customize-start-button-project.png)
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Dostosowywanie zadań kompilacji i debugowania](../ide/customize-build-and-debug-tasks-in-visual-studio.md)
-- [Otwórz Folder projektów w języku C++](/cpp/build/open-folder-projects-cpp)
-- [Projekty CMake w języku C++](/cpp/build/cmake-projects-in-visual-studio)
-- [Pisanie kodu w edytorze tekstu i kodu](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Otwieranie folderu projektów na potrzeby języka C++](/cpp/build/open-folder-projects-cpp)
+- [CMake projekty wC++](/cpp/build/cmake-projects-in-visual-studio)
+- [Pisanie kodu w edytorze kodu i tekstu](../ide/writing-code-in-the-code-and-text-editor.md)

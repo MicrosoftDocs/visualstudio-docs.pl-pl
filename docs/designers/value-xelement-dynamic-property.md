@@ -3,17 +3,17 @@ title: Wartość (właściwość dynamiczna XElement)
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: b30e770d-9646-4632-9738-cc9f51bb2343
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8f29bcfc8c3f9ecbff436415faf5a787e0ad262
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8d54cb57b0235c6fcb11cdc21431e3a8060c4774
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844120"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72634369"
 ---
 # <a name="value-xelement-dynamic-property"></a>Wartość (właściwość dynamiczna XElement)
 
@@ -25,16 +25,16 @@ Pobiera lub ustawia zawartość elementu.
 elem.Value
 ```
 
-## <a name="property-valuereturn-value"></a>Właściwość wartości/zwracana wartość
+## <a name="property-valuereturn-value"></a>Wartość właściwości/zwracana wartość
 
-A <xref:System.String> reprezentujący połączonych zawartości elementu.
+@No__t_0, która reprezentuje połączonej zawartości elementu.
 
 ## <a name="remarks"></a>Uwagi
 
-Ta właściwość jest równoważna <xref:System.Xml.Linq.XElement.Value%2A> właściwość <xref:System.Xml.Linq.XElement?displayProperty=fullName> klasy, ale ta właściwość dynamiczna obsługuje również powiadomienia o zmianach.
+Ta właściwość jest równoważna z właściwością <xref:System.Xml.Linq.XElement.Value%2A> klasy <xref:System.Xml.Linq.XElement?displayProperty=fullName>, ale ta właściwość dynamiczna obsługuje również powiadomienia o zmianach.
 
 ## <a name="see-also"></a>Zobacz także
 
 - <xref:System.Xml.Linq.XElement.Value%2A?displayProperty=fullName>
-- [Właściwości dynamiczne klasy XElement](../designers/xelement-class-dynamic-properties.md)
+- [Właściwości dynamiczne klasy XElement](../designers/attribute-xelement-dynamic-property.md)
 - [Xml](../designers/xml-xelement-dynamic-property.md)

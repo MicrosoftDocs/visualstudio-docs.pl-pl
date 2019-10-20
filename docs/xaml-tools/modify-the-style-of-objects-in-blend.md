@@ -3,17 +3,17 @@ title: Modyfikowanie stylu obiektów
 titleSuffix: Blend for Visual Studio
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44c7cdc4de5e67c73f5ebab40de75d7dcb484ed9
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 225a9e85493711a1e2903c1f6a632ae68f31136f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72451011"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668827"
 ---
 # <a name="modify-the-style-of-objects-in-blend-for-visual-studio"></a>Modyfikowanie stylu obiektów w Blend for Visual Studio
 
@@ -75,7 +75,7 @@ W oknie dialogowym **Tworzenie zasobu stylu** można nazwać styl lub szablon, a
 
 > [!NOTE]
 > Nie można tworzyć stylów ani szablonów dla każdego typu kontrolki. Jeśli kontrolka nie obsługuje tych funkcji, nie pojawi się nad obszarem kompozycji.
-> Aby powrócić do zakresu edycji dokumentu głównego, kliknij przycisk **Zwróć zakres do** ![Return zakres do ikony @ no__t-2.
+> Aby powrócić do zakresu edycji dokumentu głównego, kliknij przycisk **Zwróć zakres do** ![Return zakres do ikony ](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png).
 
 ### <a name="apply-a-style-or-template-to-a-control"></a>Stosowanie stylu lub szablonu do kontrolki
 
@@ -93,7 +93,7 @@ Stany wizualne umożliwiają zmianę wyglądu kontrolki na podstawie jej stanu. 
 
 ![Wskaźnik myszy nad stanem](../designers/media/a95c671a-5639-40b9-83db-1e6b214330d5.png)
 
-**Obejrzyj krótkie wideo:** ![Play Button @ no__t-2 [Zarządzaj stanem formantów WPF](https://www.youtube.com/watch?v=m0PlkF5i6uw).
+**Obejrzyj krótkie wideo:** przycisk ![Play ](../designers/media/bldadminconsoleinitialconfigicon.PNG) [zarządzania stanem formantów WPF](https://www.youtube.com/watch?v=m0PlkF5i6uw).
 
 ## <a name="resources-create-colors-styles-and-templates-and-reuse-them-later"></a>Zasoby: Tworzenie kolorów, stylów i szablonów oraz ponowne używanie ich w przyszłości
 

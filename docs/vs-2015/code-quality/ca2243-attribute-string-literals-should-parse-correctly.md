@@ -1,5 +1,5 @@
 ---
-title: 'CA2243: Literałów typu string atrybutów powinna przebiegać poprawnie | Dokumentacja firmy Microsoft'
+title: 'CA2243: literały ciągu atrybutów powinny być analizowane poprawnie | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,54 +12,54 @@ helpviewer_keywords:
 - CA2243
 ms.assetid: bfadb366-379d-4ee4-b17b-c4a09bf1106b
 caps.latest.revision: 12
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f23db8a9674de621090be70067a555ef4fca2b99
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 62a2adc6f01e5cb26a6af26d71a124f8b81e07fb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68201497"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72671974"
 ---
-# <a name="ca2243-attribute-string-literals-should-parse-correctly"></a>CA2243: Analiza literałów ciągów atrybutów powinna przebiegać poprawnie
+# <a name="ca2243-attribute-string-literals-should-parse-correctly"></a>CA2243: Literały ciągu atrybutu powinny być analizowane poprawnie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|AttributeStringLiteralsShouldParseCorrectly|
 |CheckId|CA2243|
-|Kategoria|Microsoft.Usage|
-|Zmiana kluczowa|Bez podziału|
+|Kategoria|Microsoft. Usage|
+|Zmiana kluczowa|Bez przerywania|
 
 ## <a name="cause"></a>Przyczyna
- Parametr literału ciągu atrybutu nie analizuje poprawnie adresu URL, identyfikator GUID lub wersji.
+ Parametr literału ciągu atrybutu nie jest analizowany poprawnie dla adresu URL, identyfikatora GUID lub wersji.
 
 ## <a name="rule-description"></a>Opis reguły
- Ponieważ atrybuty są uzyskiwane z <xref:System.Attribute?displayProperty=fullName>i atrybuty są używane w czasie kompilacji, tylko wartości stałych można przekazać do ich konstruktory. Parametry atrybutów reprezentujące musi wersji, identyfikatory GUID i adresy URL nie może być typizowana jako <xref:System.Uri?displayProperty=fullName>, <xref:System.Guid?displayProperty=fullName>, i <xref:System.Version?displayProperty=fullName>, ponieważ te typy nie może być reprezentowana jako stałe. Zamiast tego musi być reprezentowana przez parametry.
+ Ponieważ atrybuty są wyprowadzane z <xref:System.Attribute?displayProperty=fullName>, a atrybuty są używane w czasie kompilacji, tylko stałe wartości mogą być przesyłane do ich konstruktorów. Parametry atrybutu, które muszą reprezentować adresy URL, identyfikatory GUID i wersje, nie mogą być wpisane jako <xref:System.Uri?displayProperty=fullName>, <xref:System.Guid?displayProperty=fullName> i <xref:System.Version?displayProperty=fullName>, ponieważ te typy nie mogą być reprezentowane jako stałe. Zamiast tego muszą być reprezentowane przez ciągi.
 
- Ponieważ parametru zostanie podana jako ciąg znaków, jest możliwe, że w czasie kompilacji można przekazać parametr niepoprawnie sformatowany.
+ Ponieważ parametr jest typu String, istnieje możliwość, że nieprawidłowo sformatowany parametr może zostać przesłany w czasie kompilacji.
 
- Ta reguła używa heurystyki nazewnictwa w celu odnalezienia parametry, które reprezentują jednolity identyfikator zasobów (URI), globalnie unikatowy identyfikator (GUID) lub wersji i sprawdza, czy przekazana wartość jest poprawna.
+ Ta reguła używa algorytmu heurystycznego nazewnictwa w celu znalezienia parametrów reprezentujących jednolity identyfikator zasobów (URI), unikatowy identyfikator globalny (GUID) lub wersję i sprawdza, czy wartość przeniesiona jest poprawna.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Zmień ciąg parametru na poprawnie sformułowany adres URL, identyfikator GUID lub wersji.
+ Zmień ciąg parametru na poprawnie sformułowany adres URL, identyfikator GUID lub wersję.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Jest bezpieczne pominąć ostrzeżenie od tej reguły, jeśli parametr nie reprezentuje adres URL, identyfikator GUID lub wersji.
+ Jeśli parametr nie reprezentuje adresu URL, identyfikatora GUID lub wersji, można bezpiecznie pominąć ostrzeżenie z tej reguły.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład zawiera kod dla AssemblyFileVersionAttribute, który narusza tę regułę.
+ Poniższy przykład pokazuje kod dla AssemblyFileVersionAttribute, który narusza tę regułę.
 
  [!code-csharp[FxCop.Usage.AttributeStringLiteralsShouldParseCorrectly#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.AttributeStringLiteralsShouldParseCorrectly/cs/FxCop.Usage.AttributeStringLiteralsShouldParseCorrectly.cs#1)]
 
- Reguła jest wyzwalana, wykonując następujące czynności:
+ Reguła jest wyzwalana przez następujące elementy:
 
-- Parametry, które zawierają "version" i nie można przeanalizować System.Version.
+- Parametry, które zawierają element "Version" i nie mogą zostać przeanalizowane do System. Version.
 
-- Parametry, które zawierają "guid" i nie można przeanalizować System.Guid.
+- Parametry, które zawierają "GUID" i nie można przeanalizować do System. GUID.
 
-- Parametry, które zawierają "uri", "urn" lub "url" i nie można przeanalizować na System.Uri.
+- Parametry, które zawierają "URI", "urn" lub "URL" i nie mogą zostać przeanalizowane do System. URI.
 
 ## <a name="see-also"></a>Zobacz też
  [CA1054: Parametry identyfikatora URI nie powinny być ciągami](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)

@@ -6,20 +6,20 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: 63bc6328-e0df-4655-9ce3-5ff74dbf69a4
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 157309d49fd46c4ecdd92236188a6739a3e9c2ad
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 7ab33c2e77de183b5c916fbcfe60843c47c4f83f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925398"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648053"
 ---
-# <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Przewodnik: Tworzenie klas LINQ to SQL przy użyciu dziedziczenia pojedynczej tabeli (Projektant O/R)
-[Narzędzia LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) obsługują dziedziczenie pojedynczej tabeli, ponieważ są one zazwyczaj zaimplementowane w systemach relacyjnych. Ten przewodnik rozszerza się o ogólne kroki opisane w [temacie How to: Skonfiguruj dziedziczenie przy użyciu tematu projektanta](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) o/R i udostępnia pewne prawdziwe dane, aby zademonstrować użycie dziedziczenia [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]w programie.
+# <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Przewodnik: tworzenie klas LINQ to SQL przy użyciu dziedziczenia pojedynczej tabeli (Projektant O/R)
+[Narzędzia LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) obsługują dziedziczenie pojedynczej tabeli, ponieważ są one zazwyczaj zaimplementowane w systemach relacyjnych. Ten Instruktaż rozszerza się po ogólnych krokach przedstawionych w temacie [How to: Configure dziedziczenie przy użyciu projektanta o/R](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) i zawiera pewne prawdziwe dane, które pokazują, jak używać dziedziczenia w [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
 
 W tym instruktażu wykonasz następujące zadania:
 
@@ -27,7 +27,7 @@ W tym instruktażu wykonasz następujące zadania:
 
 - Utwórz aplikację Windows Formsową.
 
-- [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] Dodaj plik do projektu.
+- Dodaj plik [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] do projektu.
 
 - Utwórz nowe klasy jednostek.
 
@@ -38,7 +38,7 @@ W tym instruktażu wykonasz następujące zadania:
 - Wyświetl dane w formularzu systemu Windows.
 
 ## <a name="create-a-table-to-inherit-from"></a>Utwórz tabelę do dziedziczenia
-Aby zobaczyć, jak działa dziedziczenie, należy utworzyć `Person` małą tabelę, użyć jej jako klasy bazowej, a następnie `Employee` utworzyć obiekt, który z niego dziedziczy.
+Aby zobaczyć, jak działa dziedziczenie, należy utworzyć małą `Person` tabelę, użyć jej jako klasy bazowej, a następnie utworzyć obiekt `Employee`, który z niego dziedziczy.
 
 ### <a name="to-create-a-base-table-to-demonstrate-inheritance"></a>Aby utworzyć tabelę bazową w celu zademonstrowania dziedziczenia
 
@@ -51,15 +51,15 @@ Aby zobaczyć, jak działa dziedziczenie, należy utworzyć `Person` małą tabe
 
     |Nazwa kolumny|Typ danych|Zezwalaj na wartości null|
     |-----------------|---------------|-----------------|
-    |**Identyfikator**|**int**|**False**|
-    |**Typ**|**int**|**True**|
-    |**Imię**|**nvarchar(200)**|**False**|
-    |**Nazwisko**|**nvarchar(200)**|**False**|
-    |**Menedżera**|**int**|**True**|
+    |**#C1**|**int**|**False**|
+    |**Wprowadź**|**int**|**Oznacza**|
+    |**Imię**|**nvarchar (200)**|**False**|
+    |**Nazwisko**|**nvarchar (200)**|**False**|
+    |**Menedżera**|**int**|**Oznacza**|
 
 3. Ustaw wartość kolumny ID jako klucz podstawowy.
 
-4. Zapisz tabelę i nadaj jej nazwę.
+4. Zapisz tabelę **i nadaj jej nazwę.**
 
 ## <a name="add-data-to-the-table"></a>Dodawanie danych do tabeli
 Aby można było sprawdzić, czy dziedziczenie jest prawidłowo skonfigurowane, tabela wymaga pewnych danych dla każdej klasy w dziedziczeniu pojedynczej tabeli.
@@ -72,28 +72,28 @@ Aby można było sprawdzić, czy dziedziczenie jest prawidłowo skonfigurowane, 
 
     ||||||
     |-|-|-|-|-|
-    |**Identyfikator**|**Typ**|**Imię**|**Nazwisko**|**Menedżera**|
-    |**1**|**1**|**Anne**|**Wallace**|**NULL**|
-    |**2**|**1**|**Carlos**|**Grilo**|**NULL**|
-    |**3**|**1**|**Yael**|**Peled**|**NULL**|
-    |**4**|**2**|**Gatis**|**Ozolins**|**1**|
-    |**5**|**2**|**Panu**|**Hauser**|**1**|
-    |**6**|**2**|**Tiffany**|**Phuvasate**|**1**|
-    |**7**|**2**|**Alexey**|**Orekhov**|**2**|
-    |**8**|**2**|**Michał**|**Poliszkiewicz**|**2**|
-    |**9**|**2**|**Pism**|**Yee**|**2**|
-    |**10**|**2**|**Fabricio**|**Noriega**|**3**|
-    |**11**|**2**|**Mindy**|**Martin**|**3**|
-    |**12**|**2**|**Krzysztof**|**Kwok**|**3**|
+    |**#C1**|**Wprowadź**|**Imię**|**Nazwisko**|**Menedżera**|
+    |**jedno**|**jedno**|**Anne**|**Wallace**|**NULL**|
+    |**dwóch**|**jedno**|**Carlos**|**Grilo**|**NULL**|
+    |**r.3**|**jedno**|**Yael**|**Peled**|**NULL**|
+    |**czwart**|**dwóch**|**Gatis**|**Ozolins**|**jedno**|
+    |**5000**|**dwóch**|**Panu**|**Hauser**|**jedno**|
+    |**ust**|**dwóch**|**Tiffany**|**Phuvasate**|**jedno**|
+    |**7**|**dwóch**|**Alexey**|**Orekhov**|**dwóch**|
+    |**0,8**|**dwóch**|**Michał**|**Poliszkiewicz**|**dwóch**|
+    |**9**|**dwóch**|**Pism**|**Yee**|**dwóch**|
+    |**dziesięć**|**dwóch**|**Fabricio**|**Noriega**|**r.3**|
+    |**11**|**dwóch**|**Mindy**|**Martin**|**r.3**|
+    |**dwunastomiesięcznych**|**dwóch**|**Krzysztof**|**Kwok**|**r.3**|
 
 ## <a name="create-a-new-project"></a>Tworzenie nowego projektu
 Po utworzeniu tabeli Utwórz nowy projekt, aby zademonstrować Konfigurowanie dziedziczenia.
 
 ### <a name="to-create-the-new-windows-forms-application"></a>Aby utworzyć nową aplikację Windows Forms
 
-1. W programie Visual Studio w menu **plik** wybierz pozycję **Nowy** > **projekt**.
+1. W programie Visual Studio w menu **plik** wybierz pozycję **Nowy** **projekt** > .
 
-2. Rozwiń pozycję  **C# Wizualizacja** lub **Visual Basic** w okienku po lewej stronie, a następnie wybierz pozycję **pulpit systemu Windows**.
+2. Rozwiń pozycję **Wizualizacja C#**  lub **Visual Basic** w okienku po lewej stronie, a następnie wybierz pozycję **pulpit systemu Windows**.
 
 3. W środkowym okienku wybierz typ projektu **aplikacji Windows Forms** .
 
@@ -112,7 +112,7 @@ Po utworzeniu tabeli Utwórz nowy projekt, aby zademonstrować Konfigurowanie dz
      Plik *. dbml* jest dodawany do projektu i zostanie otwarty **Projektant o/R** .
 
 ## <a name="create-the-inheritance-by-using-the-or-designer"></a>Tworzenie dziedziczenia przy użyciu projektanta O/R
-Skonfiguruj dziedziczenie, przeciągając obiekt dziedziczenia z **przybornika** na powierzchnię projektu.
+Skonfiguruj dziedziczenie, przeciągając obiekt **dziedziczenia** z **przybornika** na powierzchnię projektu.
 
 ### <a name="to-create-the-inheritance"></a>Aby utworzyć dziedziczenie
 
@@ -124,9 +124,9 @@ Skonfiguruj dziedziczenie, przeciągając obiekt dziedziczenia z **przybornika**
 
 4. Usuń właściwość **Menedżera** z obiektu **osoba** .
 
-5. Usuń właściwości **Type**, **ID**, **FirstName**i **LastName** z obiektu **Employee** . (Innymi słowy, Usuń wszystkie właściwości poza Menedżerem).
+5. Usuń właściwości **Type**, **ID**, **FirstName**i **LastName** z obiektu **Employee** . (Innymi słowy, Usuń wszystkie właściwości poza **menedżerem**).
 
-6. Na karcie **Object Relational Designer** przybornika Utwórzdziedziczenie między obiektami **osoby** i **pracownika** . Aby to zrobić, kliknij element **dziedziczenia** w **przyborniku** i zwolnij przycisk myszy. Następnie kliknij obiekt **Employee** , a następnie obiekt **osoba** w **Projektancie O/R**. Strzałka w linii dziedziczenia wskazuje obiekt **osoby** .
+6. Na karcie **Object Relational Designer** **przybornika**Utwórz **dziedziczenie** między obiektami **osoby** i **pracownika** . Aby to zrobić, kliknij element **dziedziczenia** w **przyborniku** i zwolnij przycisk myszy. Następnie kliknij obiekt **Employee** , a następnie obiekt **osoba** w **Projektancie O/R**. Strzałka w linii dziedziczenia wskazuje obiekt **osoby** .
 
 7. Kliknij linię **dziedziczenia** na powierzchni projektowej.
 
@@ -136,7 +136,7 @@ Skonfiguruj dziedziczenie, przeciągając obiekt dziedziczenia z **przybornika**
 
 10. Ustaw właściwość **wartość rozróżniacza klasy bazowej** na **1**.
 
-11. Ustaw **domyślną** Właściwość dziedziczenia na **Person**.
+11. Ustaw **domyślną właściwość dziedziczenia** na **Person**.
 
 12. Skompiluj projekt.
 
@@ -147,9 +147,9 @@ Teraz można dodać kod do formularza, który wykonuje zapytania dotyczące okre
 
 1. Przeciągnij element **ListBox** na **formularz Form1**.
 
-2. Kliknij dwukrotnie formularz, aby utworzyć `Form1_Load` procedurę obsługi zdarzeń.
+2. Kliknij dwukrotnie formularz, aby utworzyć procedurę obsługi zdarzeń `Form1_Load`.
 
-3. Dodaj następujący kod do `Form1_Load` programu obsługi zdarzeń:
+3. Dodaj następujący kod do programu obsługi zdarzeń `Form1_Load`:
 
     ```vb
     Dim dc As New DataClasses1DataContext
@@ -188,7 +188,7 @@ Uruchom aplikację i sprawdź, czy rekordy wyświetlane w polu listy to wszyscy 
 ## <a name="see-also"></a>Zobacz także
 
 - [Narzędzia LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [Przewodnik: Tworzenie klas LINQ to SQL (Projektant O-R)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
-- [Instrukcje: Przypisywanie procedur składowanych na potrzeby wykonywania aktualizacji, wstawiania i usuwania (Object Relational Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
+- [Przewodnik: tworzenie klas LINQ to SQL (Projektant O-R)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
+- [Instrukcje: przypisywanie procedur składowanych na potrzeby wykonywania aktualizacji, wstawiania i usuwania (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
-- [Instrukcje: Generuj model obiektów w Visual Basic lubC#](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)
+- [Instrukcje: Generowanie modelu obiektu w Visual Basic lubC#](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)

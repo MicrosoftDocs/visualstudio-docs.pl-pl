@@ -15,14 +15,14 @@ helpviewer_keywords:
 description: Dowiedz się, jak chronić swoje aplikacje .NET za pomocą bezpłatnej kopii społeczności Dotfuscator zawartej w programie Visual Studio.
 ms.assetid: d9550502-0a82-49a6-b005-2caa791fbe02
 author: Joe-Sewell-PreEmptive
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 53bd95875cf990afee6d356744961d3637f16842
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 18e2ee678e5cf71693d12d4ddeb6af51f55a870b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253769"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652425"
 ---
 # <a name="dotfuscator-community"></a>Dotfuscator Community
 
@@ -30,7 +30,7 @@ ms.locfileid: "71253769"
 Umożliwia ona zabezpieczanie, ochronę i oczyszczanie aplikacji klasycznych, mobilnych, serwerowych i osadzonych w celu zapewnienia bezpieczeństwa tajemnic handlowych i innej własności intelektualnej, zmniejszenie piractwa i fałszowanie oraz ochronę przed manipulacjami i nieautoryzowanymi debugowaniem.
 Dotfuscator działa na skompilowanych zestawach bez konieczności dodatkowego programowania, a nawet uzyskiwania dostępu do kodu źródłowego.
 
-![Ochrona preEmptive — Dotfuscator](media/header.svg)
+![Ochrona przed przewagęm — Dotfuscator](media/header.svg)
 
 ## <a name="why-protection-matters"></a>Dlaczego ochrona
 
@@ -70,7 +70,7 @@ Informacje o ulepszaniu Dotfuscator można znaleźć na [stronie uaktualnienia][
 
 ::: moniker range="vs-2019"
 
-Aby rozpocząć korzystanie z społeczności Dotfuscator z poziomu programu Visual `dotfuscator` Studio, wpisz w **polu wyszukiwania** (Ctrl + Q).
+Aby rozpocząć korzystanie z społeczności Dotfuscator z poziomu programu Visual Studio, wpisz `dotfuscator` w **polu wyszukiwania** (Ctrl + Q).
 
 * Jeśli społeczność Dotfuscator jest już zainstalowana, w **polu wyszukiwania** zostanie wyświetlona opcja rozpoczęcia Dotfuscator Community w nagłówku *menu* . Aby uzyskać szczegółowe informacje, zobacz [stronę wprowadzenie podręcznika użytkownika Dotfuscator][get-started].
 * Jeśli społeczność Dotfuscator nie jest jeszcze zainstalowana, w **polu wyszukiwania** będzie wyświetlana wartość **Zainstaluj ponownie ochronę Dotfuscator** w ramach nagłówka *poszczególne składniki* . Aby uzyskać szczegółowe informacje, zobacz [stronę instalacji][install] .
@@ -79,7 +79,7 @@ Aby rozpocząć korzystanie z społeczności Dotfuscator z poziomu programu Visu
 
 ::: moniker range="vs-2017"
 
-Aby rozpocząć korzystanie z społeczności Dotfuscator z poziomu programu Visual `dotfuscator` Studio, wpisz na pasku wyszukiwania **szybkiego uruchamiania** (Ctrl + Q).
+Aby rozpocząć korzystanie z społeczności Dotfuscator z poziomu programu Visual Studio, wpisz `dotfuscator` na pasku wyszukiwania **szybkiego uruchamiania** (Ctrl + Q).
 
 * Jeśli społeczność Dotfuscator jest już zainstalowana, **Szybkie uruchamianie** powoduje wyświetlenie opcji *menu* , aby uruchomić interfejs użytkownika społeczności Dotfuscator. Aby uzyskać szczegółowe informacje, zobacz [stronę wprowadzenie podręcznika użytkownika Dotfuscator][get-started].
 * Jeśli społeczność Dotfuscator nie jest jeszcze zainstalowana, **Szybkie uruchamianie** powoduje wyświetlenie odpowiedniej opcji *instalacji* . Aby uzyskać szczegółowe informacje, zobacz [stronę instalacji][install] .

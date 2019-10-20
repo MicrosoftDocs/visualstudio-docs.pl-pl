@@ -4,16 +4,16 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - Live Unit Testing FAQ
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 545c8974e3d0dea196a6168db03586a37d15ed72
-ms.sourcegitcommit: 1a3c2ca995fd44fc72741b3a100c6e57f4f8702c
+ms.openlocfilehash: 8db8264268eb04edc3140d0e2a6ece5896692e38
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72262295"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653036"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing często zadawane pytania
 
@@ -21,17 +21,17 @@ ms.locfileid: "72262295"
 
 **Jakie platformy testowe Live Unit Testing obsługiwać i jakie są minimalne obsługiwane wersje?**
 
-Live Unit Testing współpracuje z trzema popularnymi platformami testowania jednostkowego wymienionymi w poniższej tabeli. Minimalna obsługiwana wersja ich kart i struktur również znajduje się w tabeli. Struktur testowania jednostek są dostępne w witrynie NuGet.org.
+Live Unit Testing współpracuje z trzema popularnymi platformami testowania jednostkowego wymienionymi w poniższej tabeli. Minimalna obsługiwana wersja ich kart i struktur jest również wymieniona w tabeli. Platformy testów jednostkowych są dostępne z NuGet.org.
 
-|Struktury testowej  |Minimalna wersja programu Visual Studio karty  |Minimalna wersja Framework  |
+|Platforma testowa  |Minimalna wersja programu Visual Studio adapter  |Minimalna wersja platformy  |
 |---------|---------|---------|
-|xUnit.net |2\.2.0-beta3-build1187 wersji xunit.Runner.VisualStudio |xunit 1.9.2 |
-|Rozszerzenie NUnit |NUnit3TestAdapter wersja 3.7.0 |Wersja 3.5.0 NUnit |
-|MSTest |MSTest.TestAdapter 1.1.4-preview |1\.0.5-preview rozwiązań MSTest.TestFramework |
+|xUnit.net |xUnit. Runner. VisualStudio w wersji 2.2.0-beta3-build1187 |xUnit 1.9.2 |
+|NUnit |NUnit3TestAdapter wersja 3.7.0 |NUnit wersja 3.5.0 |
+|MSTest |MSTest. TestAdapter 1.1.4 — wersja zapoznawcza |MSTest. TestFramework 1.0.5 — wersja zapoznawcza |
 
-Jeśli masz starsze projekty testowe bazujące na MSTestach, odwołujące się `Microsoft.VisualStudio.QualityTools.UnitTestFramework` i nie chcesz przenosić do nowszych pakietów NuGet MSTest, przeprowadź uaktualnienie do programu Visual Studio 2019 lub Visual Studio 2017.
+Jeśli masz starsze projekty testowe bazujące na MSTestach odwołujące się `Microsoft.VisualStudio.QualityTools.UnitTestFramework` i nie chcesz przenosić do nowszych pakietów NuGet MSTest, przeprowadź uaktualnienie do programu Visual Studio 2019 lub Visual Studio 2017.
 
-W niektórych przypadkach może być konieczne jawne Przywracanie pakietów NuGet, odwołują się projekty w rozwiązaniu aby Live Unit Testing do pracy. Pakiety można przywrócić, wykonując jawną kompilację rozwiązania (wybierz opcję **kompiluj** > **Skompiluj ponownie rozwiązanie** z menu programu Visual Studio najwyższego poziomu) lub klikając rozwiązanie prawym przyciskiem myszy i wybierając pozycję **Przywróć pakiety NuGet** . przed włączeniem testów jednostkowych.
+W niektórych przypadkach może być konieczne jawne przywrócenie pakietów NuGet, do których odwołują się projekty w rozwiązaniu, aby Live Unit Testing działały. Pakiety można przywrócić, wykonując jawną kompilację rozwiązania (wybierz opcję **kompiluj**  > **Skompiluj ponownie rozwiązanie** z menu programu Visual Studio najwyższego poziomu) lub klikając rozwiązanie prawym przyciskiem myszy i wybierając pozycję **Przywróć pakiety NuGet** przed włączeniem testów jednostkowych.
 
 ## <a name="net-core-support"></a>Obsługa platformy .NET Core
 
@@ -39,7 +39,7 @@ W niektórych przypadkach może być konieczne jawne Przywracanie pakietów NuGe
 
 Tak. Live Unit Testing współpracuje z platformą .NET Core i .NET Framework.
 
-## <a name="configuration"></a>Konfigurowanie
+## <a name="configuration"></a>Konfiguracja
 
 **Dlaczego Live Unit Testing nie działa po włączeniu?**
 
@@ -75,7 +75,7 @@ Okno dane wyjściowe (po wybraniu listy rozwijanej Live Unit Testing jest zaznac
 
 **Czy mogę dostosować kompilacje Live Unit Testing?**
 
-Jeśli rozwiązanie wymaga niestandardowych kroków do kompilowania Instrumentacji (Live Unit Testing), które nie są wymagane dla kompilacji "zwykła" bez instrumentacji, można dodać kod do projektu lub plików *docelowych* , które sprawdzają Właściwość `BuildingForLiveUnitTesting` i wykonuje niestandardowe kroki kompilacji pre/post. Można również usunąć niektóre kroki kompilacji (na przykład Publikowanie lub generowanie pakietów) lub dodać kroki kompilacji (na przykład kopiowanie wymagań wstępnych) do kompilacji Live Unit Testing opartej na tej właściwości projektu. Dostosowanie kompilacji opartej na tej właściwości nie powoduje zmiany regularnej kompilacji w żaden sposób i ma wpływ tylko na kompilacje Live Unit Testing.
+Jeśli rozwiązanie wymaga niestandardowych kroków do kompilowania Instrumentacji (Live Unit Testing), które nie są wymagane dla kompilacji "regularna", wówczas można dodać kod do projektu lub plików *docelowych* , które sprawdzają Właściwość `BuildingForLiveUnitTesting` i wykonuje niestandardowe kroki kompilacji pre/post. Można również usunąć niektóre kroki kompilacji (na przykład Publikowanie lub generowanie pakietów) lub dodać kroki kompilacji (na przykład kopiowanie wymagań wstępnych) do kompilacji Live Unit Testing opartej na tej właściwości projektu. Dostosowanie kompilacji opartej na tej właściwości nie powoduje zmiany regularnej kompilacji w żaden sposób i ma wpływ tylko na kompilacje Live Unit Testing.
 
 Na przykład może istnieć obiekt docelowy, który tworzy pakiety NuGet podczas zwykłej kompilacji. Prawdopodobnie nie chcesz generować pakietów NuGet po każdej edycji. Aby można było wyłączyć ten cel w ramach kompilacji Live Unit Testing, należy wykonać następujące czynności:  
 
@@ -85,13 +85,13 @@ Na przykład może istnieć obiekt docelowy, który tworzy pakiety NuGet podczas
 </Target>
 ```
 
-## <a name="error-messages-with-outputpath-or-outdir"></a>Komunikaty o błędach z \<OutputPath > lub \<OutDir >
+## <a name="error-messages-with-outputpath-or-outdir"></a>Komunikaty o błędach z > \<OutputPath lub \<OutDir >
 
-**Why otrzymuję następujący błąd, gdy Live Unit Testing próbuje skompilować moje rozwiązanie: "... wydaje się, aby bezwarunkowo ustawić `<OutputPath>` lub `<OutDir>`. Live Unit Testing nie wykona testów z zestawu wyjściowego "?**
+**Dlaczego otrzymuję następujący błąd, gdy Live Unit Testing próbuje skompilować moje rozwiązanie: "... wydaje się, aby bezwarunkowo ustawić `<OutputPath>` lub `<OutDir>`. Live Unit Testing nie będzie wykonywać testów z zestawu wyjściowego "?**
 
-Ten błąd może wystąpić, jeśli proces kompilacji niewarunkowo zastępuje `<OutputPath>` lub `<OutDir>`, tak że nie jest podkatalogiem `<BaseOutputPath>`. W takich przypadkach Live Unit Testing nie będą działały, ponieważ także zastępuje te wartości, aby upewnić się, że artefakty kompilacji są upuszczane do folderu w obszarze `<BaseOutputPath>`. Jeśli musisz zastąpić lokalizację, w której artefakty kompilacji mają zostać porzucone w regularnej kompilacji, przesłonić `<OutputPath>` warunkowo na podstawie `<BaseOutputPath>`.
+Ten błąd może wystąpić, jeśli proces kompilacji niewarunkowo zastępuje `<OutputPath>` lub `<OutDir>`, tak że nie jest podkatalogiem `<BaseOutputPath>`. W takich przypadkach Live Unit Testing nie będzie działał, ponieważ również zastępuje te wartości, aby upewnić się, że artefakty kompilacji są upuszczane do folderu w obszarze `<BaseOutputPath>`. Jeśli musisz zastąpić lokalizację, w której artefakty kompilacji mają zostać porzucone w regularnej kompilacji, przesłonić `<OutputPath>` warunkowo na podstawie `<BaseOutputPath>`.
 
-Na przykład jeśli kompilacja zastępuje `<OutputPath>`, jak pokazano poniżej:
+Na przykład jeśli kompilacja przesłania `<OutputPath>`, jak pokazano poniżej:
 
 ```xml 
 <Project>
@@ -112,15 +112,15 @@ następnie można zastąpić go następującym kodem XML:
 </Project>
 ```
 
-Dzięki temu `<OutputPath>` znajduje się w folderze `<BaseOutputPath>`.
+Dzięki temu `<OutputPath>` znajduje się w `<BaseOutputPath>` folderze.
 
-Nie należy przesłaniać `<OutDir>` bezpośrednio w procesie kompilacji; Przesłoń `<OutputPath>` zamiast porzucić artefakty kompilacji do określonej lokalizacji.
+Nie należy przesłaniać `<OutDir>` bezpośrednio w procesie kompilacji; Zamiast tego Przesłoń `<OutputPath>`, aby porzucić artefakty kompilacji do określonej lokalizacji.
 
 ## <a name="build-artifact-location"></a>Lokalizacja artefaktu kompilacji
 
-@no__t — 0I chcesz, aby artefakty Live Unit Testing kompilację przechodzą do określonej lokalizacji zamiast domyślnej lokalizacji w folderze *. vs* . Jak mogę to zmienić? **
+**Chcę, aby artefakty Live Unit Testing kompilację przechodzą do określonej lokalizacji zamiast domyślnej lokalizacji w folderze *. vs* . Jak mogę to zmienić?**
 
-Ustaw zmienną środowiskową na poziomie użytkownika `LiveUnitTesting_BuildRoot` na ścieżkę, w której mają zostać porzucone Live Unit Testing kompilacje kompilacji. 
+Ustaw zmienną środowiskową na poziomie użytkownika `LiveUnitTesting_BuildRoot` na ścieżkę, w której mają zostać porzucone Live Unit Testing kompilacji. 
 
 ## <a name="test-explorer-versus-live-unit-testing"></a>Eksplorator testów a Live Unit Testing
 
@@ -128,11 +128,11 @@ Ustaw zmienną środowiskową na poziomie użytkownika `LiveUnitTesting_BuildRoo
 
 Istnieje kilka różnic:
 
-- Uruchamianie lub debugowanie testów z okna **Eksploratora testów** powoduje uruchomienie zwykłych plików binarnych, podczas gdy Live Unit Testing uruchamia instrumentację plików binarnych. Jeśli chcesz debugować instrumentację plików binarnych, dodając [debuger. Uruchom](xref:System.Diagnostics.Debugger.Launch)wywołanie  method w metodzie testowej powoduje, że debuger zostanie uruchomiony za każdym razem, gdy ta metoda jest wykonywana (w tym gdy jest wykonywana przez Live Unit Testing), a następnie można dołączyć i Debuguj plik binarny Instrumentacji. Mamy nadzieję, że Instrumentacja jest niewidoczna dla większości scenariuszy użytkownika i nie ma potrzeby debugowania plików binarnych instrumentacji.
+- Uruchamianie lub debugowanie testów z okna **Eksploratora testów** powoduje uruchomienie zwykłych plików binarnych, podczas gdy Live Unit Testing uruchamia instrumentację plików binarnych. Jeśli chcesz debugować instrumentację plików binarnych, dodając [debuger. uruchomienie](xref:System.Diagnostics.Debugger.Launch)  method wywołanie w metodzie testowej powoduje, że debuger zostanie uruchomiony za każdym razem, gdy ta metoda jest wykonywana (w tym gdy jest wykonywana przez Live Unit Testing), a następnie można dołączyć i Debuguj plik binarny Instrumentacji. Mamy nadzieję, że Instrumentacja jest niewidoczna dla większości scenariuszy użytkownika i nie ma potrzeby debugowania plików binarnych instrumentacji.
 
 - Live Unit Testing nie tworzy nowej domeny aplikacji do uruchamiania testów, ale testy są uruchamiane z okna **Eksplorator testów** Utwórz nową domenę aplikacji.
 
-- Live Unit Testing uruchamia testy w każdym zestawie testów po kolei. W **Eksploratorze testów**można wybrać uruchamianie wielu testów równolegle.
+- Live Unit Testing uruchamia testy w każdym zestawie testów sekwencyjnie. W **Eksploratorze testów**można wybrać uruchamianie wielu testów równolegle.
 
 - Odnajdywanie i wykonywanie testów w Live Unit Testing używa wersji 2 `TestPlatform`, podczas gdy okno **Eksplorator testów** używa wersji 1. Nie zauważysz różnicy w większości przypadków, chociaż.
 
@@ -199,7 +199,7 @@ Live Unit Testing uruchamia kompilację za każdym razem, gdy wykryje, że pliki
 
 **Dlaczego nie widzę żadnych ikon w edytorze, mimo że Live Unit Testing wygląda na to, że testy są uruchamiane na podstawie komunikatów w oknie danych wyjściowych?**
 
-W edytorze mogą nie być widoczne ikony, jeśli zestawy, na których działa Live Unit Testing, nie są z jakiegokolwiek powodu Instrumentacją. Na przykład Live Unit Testing nie jest zgodny z projektami, które ustawiają `<UseHostCompilerIfAvailable>false</UseHostCompilerIfAvailable>`. W takim przypadku należy zaktualizować proces kompilacji w celu usunięcia tego ustawienia lub zmiany na `true`, aby Live Unit Testing działał. 
+W edytorze mogą nie być widoczne ikony, jeśli zestawy, na których działa Live Unit Testing, nie są z jakiegokolwiek powodu Instrumentacją. Na przykład Live Unit Testing nie jest zgodny z projektami ustawionymi `<UseHostCompilerIfAvailable>false</UseHostCompilerIfAvailable>`. W takim przypadku należy zaktualizować proces kompilacji w celu usunięcia tego ustawienia lub zmiany na `true`, aby Live Unit Testing działał. 
 
 ## <a name="capture-logs"></a>Dzienniki przechwytywania
 
@@ -207,11 +207,11 @@ W edytorze mogą nie być widoczne ikony, jeśli zestawy, na których działa Li
 
 Aby zebrać więcej szczegółowych dzienników, można wykonać kilka czynności:
 
-- Przejdź do pozycji **narzędzia** > **Options** > **Live Unit Testing** i zmień opcję rejestrowania na **pełne**. Pełne rejestrowanie powoduje wyświetlenie bardziej szczegółowych dzienników w oknie **danych wyjściowych** .
+- Przejdź do pozycji **narzędzia**  > **Opcje**  > **Live Unit Testing** i zmień opcję rejestrowania na **pełne**. Pełne rejestrowanie powoduje wyświetlenie bardziej szczegółowych dzienników w oknie **danych wyjściowych** .
 
 - Ustaw zmienną środowiskową użytkownika `LiveUnitTesting_BuildLog` na nazwę pliku, który ma być używany do przechwytywania dziennika programu MSBuild. Szczegółowe komunikaty dziennika programu MSBuild z kompilacji Live Unit Testing można następnie pobrać z tego pliku.
 
-- Ustaw zmienną środowiskową użytkownika `LiveUnitTesting_TestPlatformLog` na `1`, aby przechwycić dziennik platformy testowej. Szczegółowe komunikaty dziennika platformy testowej z przebiegów Live Unit Testing można następnie pobrać z `[Solution Root]\.vs\[Solution Name]\log\[VisualStudio Process ID]`.
+- Ustaw zmienną środowiskową `LiveUnitTesting_TestPlatformLog` użytkownika na `1`, aby przechwycić dziennik platformy testowej. Szczegółowe komunikaty dziennika platformy testowej z przebiegów Live Unit Testing można następnie pobrać z `[Solution Root]\.vs\[Solution Name]\log\[VisualStudio Process ID]`.
 
 - Utwórz zmienną środowiskową na poziomie użytkownika o nazwie `VS_UTE_DIAGNOSTICS` i ustaw ją na 1 (lub dowolną wartość) i uruchom ponownie program Visual Studio. Teraz na karcie **testy danych wyjściowych** w programie Visual Studio powinna zostać wyświetlona duża liczba dzienników.
 

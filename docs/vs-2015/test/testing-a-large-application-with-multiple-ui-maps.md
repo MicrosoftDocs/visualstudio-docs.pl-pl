@@ -9,25 +9,25 @@ helpviewer_keywords:
 - coded UI tests, for large applications
 ms.assetid: 6e1ae9ec-e9b1-458a-bd96-0eb15e46f1d5
 caps.latest.revision: 24
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 016417ec05149da52af78e2b41e0fff4af6c3e5b
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 2f6936811ea753d66d212facdda627930fb1ab10
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871582"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672128"
 ---
 # <a name="testing-a-large-application-with-multiple-ui-maps"></a>Testowanie dużej aplikacji przy użyciu wielu map UI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W tym temacie omówiono sposób korzystania z kodowanych testów interfejsu użytkownika podczas testowania dużej aplikacji przy użyciu wielu map interfejsu użytkownika.
 
- **Wymagania**
+ **Requirements**
 
 - Visual Studio Enterprise
 
-  Podczas tworzenia nowego kodowanego testu interfejsu użytkownika, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] struktura testowa generuje kod dla testu domyślnie w klasie [UIMap](/previous-versions/dd580454(v=vs.140)) . Aby uzyskać więcej informacji na temat rejestrowania kodowanych testów interfejsu użytkownika, zobacz [Tworzenie kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) i [anatomię KODOWANEGO testu interfejsu użytkownika](../test/anatomy-of-a-coded-ui-test.md).
+  Podczas tworzenia nowego kodowanego testu interfejsu użytkownika, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Framework do testowania generuje kod dla testu domyślnie w klasie [UIMap](/previous-versions/dd580454(v=vs.140)) . Aby uzyskać więcej informacji na temat rejestrowania kodowanych testów interfejsu użytkownika, zobacz [Tworzenie kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) i [anatomię KODOWANEGO testu interfejsu użytkownika](../test/anatomy-of-a-coded-ui-test.md).
 
   Wygenerowany kod dla mapowania interfejsu użytkownika zawiera klasę dla każdego obiektu, z którym test współdziała z. Dla każdej wygenerowanej metody Klasa pomocnika dla parametrów metody jest generowana w odniesieniu do tej metody. W przypadku dużej liczby obiektów, stron i formularzy i kontrolek w aplikacji Mapa interfejsu użytkownika może być bardzo duża. Ponadto, jeśli kilka osób pracuje nad testami, aplikacja zostanie nieporęczny za pomocą pojedynczego dużego pliku mapy interfejsu użytkownika.
 
@@ -54,9 +54,9 @@ W tym temacie omówiono sposób korzystania z kodowanych testów interfejsu uży
 
     Nowy folder zostanie wyświetlony w ramach projektu kodowanego testu interfejsu użytkownika.
 
-2. Kliknij prawym przyciskiem `UIMaps` myszy folder, wskaż polecenie **Dodaj**, a następnie wybierz **nowy element**.
+2. Kliknij prawym przyciskiem myszy folder `UIMaps`, wskaż polecenie **Dodaj**, a następnie wybierz polecenie **nowy element**.
 
-    **Dodaj nowy element** zostanie wyświetlone okno dialogowe.
+    Zostanie wyświetlone okno dialogowe **Dodaj nowy element** .
 
    > [!NOTE]
    > Aby dodać nową mapę kodowanego testu interfejsu użytkownika, musisz być w projekcie kodowanego testu interfejsu użytkownika.
@@ -65,9 +65,9 @@ W tym temacie omówiono sposób korzystania z kodowanych testów interfejsu uży
 
     W polu **Nazwa** wprowadź nazwę nowej mapy interfejsu użytkownika. Użyj nazwy składnika lub strony, która będzie reprezentować mapa, na przykład `HomePageMap`.
 
-4. Wybierz **Dodaj**.
+4. Wybierz pozycję **Dodaj**.
 
-    Zostanie zminimalizowane okno dialogowe **Konstruktor kodowanego testu interfejsu użytkownika.** [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
+    Okno [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] minimalizuje i zostanie wyświetlone okno dialogowe **Konstruktor kodowanego testu interfejsu użytkownika** .
 
 5. Zarejestruj akcje dla pierwszej metody i wybierz polecenie **Generuj kod**.
 
@@ -77,7 +77,7 @@ W tym temacie omówiono sposób korzystania z kodowanych testów interfejsu uży
 
    W wielu przypadkach okno najwyższego poziomu aplikacji pozostaje stałe dla wszystkich kreatorów, formularzy i stron. Chociaż każda Mapa interfejsu użytkownika ma klasę dla okna najwyższego poziomu, wszystkie mapy są prawdopodobnie odwołujące się do tego samego okna najwyższego poziomu, w którym są uruchamiane wszystkie składniki aplikacji. Kodowane testy interfejsu użytkownika przeszukają kontrolki hierarchicznie od góry w dół, rozpoczynając od okna najwyższego poziomu, więc w przypadku złożonej aplikacji okno najwyższego poziomu może być zduplikowane w każdej mapie interfejsu użytkownika. Jeśli okno rzeczywiste najwyższego poziomu jest zduplikowane, wielokrotne modyfikacje zostaną wprowadzone w przypadku zmiany tego okna. Może to spowodować problemy z wydajnością podczas przełączania map interfejsu użytkownika.
 
-   Aby zminimalizować ten efekt, można użyć `CopyFrom()` metody, aby upewnić się, że nowe okno najwyższego poziomu w tej mapie interfejsu użytkownika jest takie samo, jak główne okno najwyższego poziomu.
+   Aby zminimalizować ten efekt, można użyć metody `CopyFrom()`, aby upewnić się, że nowe okno najwyższego poziomu w tej mapie interfejsu użytkownika jest takie samo jak główne okno najwyższego poziomu.
 
 ## <a name="example"></a>Przykład
  Poniższy przykład jest częścią klasy narzędzi, która zapewnia dostęp do każdego składnika i ich formantów podrzędnych, które są reprezentowane przez klasy generowane w różnych mapach interfejsu użytkownika.

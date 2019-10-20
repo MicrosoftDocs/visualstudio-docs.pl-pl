@@ -1,9 +1,9 @@
 ---
-title: Wyodrębnianie interfejsu Refaktoryzacja
+title: Wyodrębnianie refaktoryzacji interfejsu
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 f1_keywords:
 - vs.csharp.refactoring.extractinterface
@@ -12,16 +12,16 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8890bac11a37d64c2ace4ea23b92a6ad20a6cbb0
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: 15da8bdf1a3df60a7ad4816ce578ec5672c85ecf
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531695"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654413"
 ---
-# <a name="extract-an-interface-refactoring"></a>Wyodrębnianie interfejsu Refaktoryzacja
+# <a name="extract-an-interface-refactoring"></a>Wyodrębnianie refaktoryzacji interfejsu
 
-Ta Refaktoryzacja mają zastosowanie do:
+To Refaktoryzacja dotyczy:
 
 - C#
 
@@ -29,56 +29,56 @@ Ta Refaktoryzacja mają zastosowanie do:
 
 **Co:** Umożliwia utworzenie interfejsu przy użyciu istniejących członków z klasy, struktury lub interfejsu.
 
-**Kiedy:** Masz członków klasy, struktury lub interfejsu, który może być dziedziczona przez inne klasy, struktury lub interfejsów.
+**Kiedy:** Istnieją elementy członkowskie klasy, struktury lub interfejsu, które mogą być dziedziczone przez inne klasy, struktury lub interfejsy.
 
-**Dlaczego:** Interfejsy są doskonałe konstrukcje projekty zorientowane obiektowo. Wyobraź sobie, mających klasy dla różnych zwierząt (psów i kotów, Bird), które mogą mieć typowych metod, takich jak Eat, napoju, usypiania/budzenia. Przy użyciu interfejsu, takich jak IAnimal pozwoliłoby pies, Cat i Bird mają wspólne "signature" dotyczącej tych metod.
+**Dlaczego:** Interfejsy są doskonałymi konstrukcjami dla projektów zorientowanych obiektowo. Wyobraź sobie, że klasy dla różnych zwierząt (Dog, Cat, ptak), które mogą mieć wszystkie typowe metody, takie jak Eat, napoje, uśpienie. Użycie interfejsu, takiego jak IAnimal, zezwoli na dostęp do tych metod dla psów, Cat i ptaka.
 
-## <a name="extract-an-interface-refactoring"></a>Wyodrębnianie interfejsu Refaktoryzacja
+## <a name="extract-an-interface-refactoring"></a>Wyodrębnianie refaktoryzacji interfejsu
 
-1. Umieść kursor w polu Nazwa klasy.
+1. Umieść kursor w nazwie klasy.
 
    - C#:
 
-       ![Wyróżniony kod-C#](media/extractinterface-highlight-cs.png)
+       ![Wyróżniony kod —C#](media/extractinterface-highlight-cs.png)
 
    - Visual Basic:
 
-       ![Wyróżniony kod - języka Visual Basic](media/extractinterface-highlight-vb.png)
+       ![Wyróżniony kod — Visual Basic](media/extractinterface-highlight-vb.png)
 
 2. Następnie wykonaj jedną z następujących czynności:
 
-   - **Keyboard**
-      - Naciśnij klawisz **Ctrl + R**, następnie **Ctrl + I**. (Skrót klawiaturowy mogą być inne niż oparte na profilu, który wybrano.)
-      - Naciśnij klawisz **Ctrl**+**.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu, a następnie wybierz **Wyodrębnij interfejs** z menu podręcznego okna podglądu.
-   - **Myszy**
-      - Wybierz **Edytuj > Refaktoryzuj > Wyodrębnij interfejs**.
-      - Kliknij prawym przyciskiem myszy nazwę klasy, wybierz opcję **szybkie akcje i Refaktoryzacje** menu, a następnie wybierz **Wyodrębnij interfejs** z menu podręcznego okna podglądu.
+   - **Klawiatury**
+      - Naciśnij **klawisze CTRL + R**, a następnie **Ctrl + I**. (Skrót klawiaturowy może się różnić w zależności od wybranego profilu).
+      - Naciśnij klawisz **Ctrl** + **.** Aby wyzwolić menu **szybkie akcje i operacje refaktoryzacji** , a następnie wybierz pozycję **Wyodrębnij interfejs** w oknie podręcznym okna podglądu.
+   - **Wskaźnik**
+      - Wybierz pozycję **edytuj > refaktoryzacja > Wyodrębnij interfejs**.
+      - Kliknij prawym przyciskiem myszy nazwę klasy, wybierz menu **szybkie akcje i refaktoryzacje** i wybierz polecenie **Wyodrębnij interfejs** z menu podręcznego okna podglądu.
 
-3. W **Wyodrębnij interfejs** okno dialogowe, które się pojawi, wprowadź informacje monit:
+3. W oknie dialogowym **wyodrębnianie interfejsu** , które się pojawi, wprowadź wymagane informacje:
 
    ![Wyodrębnij interface](media/extractinterface-dialog-same-file.png)
 
    | Pole | Opis |
    | - | - |
-   | **Nowa nazwa interfejsu** | Nazwa interfejsu, który ma zostać utworzony. Nazwy będą domyślnie I*ClassName*, gdzie *ClassName* jest nazwą klasy wybranego powyżej. |
-   | **Nowa nazwa pliku** | Nazwę wygenerowanego pliku, który będzie zawierał interfejsu. Zgodnie z nazwą interfejsu, ta nazwa domyślnie I*ClassName*, gdzie *ClassName* jest nazwą klasy wybranego powyżej. Można również wybrać opcję, aby **dodać do bieżącego pliku**. |
-   | **Wybierz publiczne elementy członkowskie do interfejsu formularza** | Elementy, które można wyodrębnić w interfejsie. Można wybrać dowolną liczbę, jak chcesz. |
+   | **Nazwa nowego interfejsu** | Nazwa interfejsu, który ma zostać utworzony. Nazwa będzie domyślnie równa I*ClassName*, gdzie *ClassName* jest nazwą klasy wybranej powyżej. |
+   | **Nowa nazwa pliku** | Nazwa wygenerowanego pliku, który będzie zawierać interfejs. Podobnie jak w przypadku nazwy interfejsu, ta nazwa będzie domyślnie równa I*ClassName*, gdzie *ClassName* jest nazwą klasy wybranej powyżej. Możesz również wybrać opcję, która ma zostać **dodana do bieżącego pliku**. |
+   | **Wybierz publiczne elementy członkowskie do interfejsu formularza** | Elementy do wyodrębnienia do interfejsu. Możesz wybrać dowolną liczbę. |
 
-4. Wybierz **OK**.
+4. Wybierz **przycisk OK**.
 
-   Gdy interfejs został utworzony w pliku o nazwie określonej. Ponadto klasy, którą wybrano implementuje ten interfejs.
+   Interfejs jest tworzony w pliku o podanej nazwie. Ponadto wybrana Klasa implementuje ten interfejs.
 
    - C#:
 
-      ![Klasa wynikowa —C#](media/extractinterface-class-cs.png)
+      ![Klasa będąca wynikiemC#](media/extractinterface-class-cs.png)
 
-      ![Wynikowy interfejs —C#](media/extractinterface-interface-cs.png)
+      ![Interfejs wynikającyC#](media/extractinterface-interface-cs.png)
 
    - Visual Basic:
 
-      ![Klasa wynikowa — języka Visual Basic](media/extractinterface-class-vb.png)
+      ![Klasa będąca wynikiem Visual Basic](media/extractinterface-class-vb.png)
 
-      ![Interfejs wynikowy - Visual Basic](media/extractinterface-interface-vb.png)
+      ![Interfejs uzyskany Visual Basic](media/extractinterface-interface-vb.png)
 
 ## <a name="see-also"></a>Zobacz także
 

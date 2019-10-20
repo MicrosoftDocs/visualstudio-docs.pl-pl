@@ -1,5 +1,5 @@
 ---
-title: Opcje, Edytor tekstu, XAML, formatowanie | Dokumentacja firmy Microsoft
+title: Opcje, Edytor tekstu, XAML, formatowanie | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -28,105 +28,105 @@ helpviewer_keywords:
 - XAML view settings, attribute spacing
 ms.assetid: ad3820b1-0d94-4807-a74c-c3467ed973a2
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8f820ac16667a9550db17bc252c547f16b81e70b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 319e09d2438b23c217f7820fe4288758a595be56
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696004"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662221"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>Opcje, edytor tekstu, XAML, formatowanie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Użyj **formatowanie** stronę właściwości, aby określić, jak sformatowane elementów i atrybutów w dokumencie XAML. Aby otworzyć **opcje** okno dialogowe, kliknij przycisk **narzędzia** menu, a następnie kliknij przycisk **opcje**. Aby uzyskać dostęp do **formatowanie** właściwości rozwiń **edytora tekstów**, **XAML**, **formatowanie** węzła.
+Na stronie właściwości **formatowania** można określić sposób formatowania elementów i atrybutów w dokumentach XAML. Aby otworzyć okno dialogowe **Opcje** , kliknij menu **Narzędzia** , a następnie kliknij przycisk **Opcje**. Aby uzyskać dostęp do strony właściwości **formatowania** , rozwiń węzeł **Edytor tekstu**, **XAML**, **Formatowanie** .
 
 > [!NOTE]
-> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, wybierz **Importuj i Eksportuj ustawienia** w menu **Narzędzia** . Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień deweloperskich w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
-## <a name="auto-formatting-events"></a>Automatyczne formatowanie zdarzeń
-Automatyczne formatowanie może wystąpić, gdy dowolne z następujących zdarzeń wykryte.
+## <a name="auto-formatting-events"></a>Zdarzenia Autoformatowania
+Autoformatowanie może wystąpić, gdy zostanie wykryte dowolne z poniższych zdarzeń.
 
-- Uzupełnianie tagu końcowego lub prostego.
+- Ukończenie tagu końcowego lub tagu prostego.
 
-- Uzupełnianie tagu początkowego.
+- Wykonanie tagu początkowego.
 
-- Wklejanie ze Schowka.
+- Wklejanie ze schowka.
 
-- Formatowanie klawiaturowych.
+- Formatowanie poleceń klawiatury.
 
-  Można określić, zdarzenia, które powodują automatyczne formatowanie.
+  Można określić, które zdarzenia będą powodowały Autoformatowanie.
 
 |||
 |-|-|
-|**Po zakończeniu tagu końcowego lub prostego**|Automatyczne formatowanie występuje po zakończeniu wpisywania tagu końcowego lub prostego tagu. Prostych tagów nie ma atrybutów, na przykład `<Button />`.|
-|**Po zakończeniu tagu początkowego**|Automatyczne formatowanie występuje po zakończeniu wpisywania tagu początkowego.|
-|**Przy wklejaniu ze Schowka**|Automatyczne formatowanie występuje podczas wklejania XAML ze Schowka w widoku XAML.|
+|**Po zakończeniu tagu końcowego lub tagu prostego**|Autoformatowanie występuje po zakończeniu wpisywania tagu końcowego lub tagu prostego. Tag prosty nie ma żadnych atrybutów, na przykład `<Button />`.|
+|**Po zakończeniu tagu początkowego**|Autoformatowanie występuje po zakończeniu wpisywania tagu początkowego.|
+|**Przy wklejaniu ze schowka**|Autoformatowanie występuje po wklejeniu kodu XAML ze schowka do widoku XAML.|
 
 ## <a name="quotation-mark-style"></a>Styl cudzysłowu
-To ustawienie wskazuje, czy wartości atrybutów są ujęte w pojedyncze lub podwójne znaki cudzysłowu. Użyj tego ustawienia, element formatujący automatycznie i automatycznego uzupełniania IntelliSense.
+To ustawienie wskazuje, czy wartości atrybutów są ujęte w znaki pojedynczego lub podwójnego cudzysłowu. To ustawienie umożliwia Autouzupełnienie programów Autostart i IntelliSense.
 
-Po ustawieniu tej opcji tylko atrybuty później dodane przy użyciu narzędzia Projektant lub ręcznie w widoku XAML dotyczy problem.
+Po ustawieniu tej opcji będzie to miało zastosowanie tylko atrybuty dodane w projektancie lub ręcznie w widoku XAML.
 
 |||
 |-|-|
-|**Podwójny cudzysłów (")**|Wartości atrybutów są ujęte w cudzysłów.<br /><br /> `<Button Name="button1">Hello</Button>`|
-|**Pojedynczy cudzysłów (')**|Wartości atrybutów są ujęte w apostrofy.<br /><br /> `<Button Name='button1'>Hello</Button>`|
+|**Podwójne cudzysłowy (")**|Wartości atrybutów są ujęte w cudzysłów.<br /><br /> `<Button Name="button1">Hello</Button>`|
+|**Apostrofy (')**|Wartości atrybutów są ujęte w apostrofy.<br /><br /> `<Button Name='button1'>Hello</Button>`|
 
 ## <a name="tag-wrapping"></a>Zawijanie tagów
-Można określić długość wiersza zawijanie tagów. Po włączeniu zawijanie tagów XAML, wszystkie dodane przy użyciu narzędzia Projektant zostanie zawinięta odpowiednio.
+Możesz określić długość linii dla zawijania tagów. Gdy funkcja zawijania tagów jest włączona, wszystkie XAML dodane później za pomocą projektanta zostaną odpowiednio opakowane.
 
 |||
 |-|-|
-|**Zawijaj tagi przekraczające określoną długość**|Określa, czy wiersze są opakowane w określonej przez długość wiersza **długość**.|
-|**Długość**|Liczba znaków, które mogą zawierać wiersz. Jeśli to konieczne, niektóre linie XAML może przekraczać długości określonej linii.|
+|**Zawijaj tagi, które przekraczają określoną długość**|Określa, czy linie są opakowane w długości linii określonej przez **Długość**.|
+|**Długość**|Liczba znaków, jaką może zawierać linia. W razie potrzeby niektóre linie XAML mogą przekroczyć określoną długość wiersza.|
 
 ## <a name="attribute-spacing"></a>Odstępy między atrybutami
-To ustawienie służy do kontrolowania, jak atrybuty są rozmieszczone w dokumencie XAML
+Użyj tego ustawienia, aby kontrolować sposób, w jaki atrybuty są rozmieszczone w dokumencie XAML
 
 |||
 |-|-|
-|**Zachowaj tabulacji i spacje między atrybutami**|Nowe wiersze i spacje między atrybutami nie dotyczy automatyczne formatowanie.<br /><br /> `<Button Height="23" Name="button1"`<br /><br /> `Width="75">Hello</Button>`|
-|**Wstaw odstęp między atrybutami**|Atrybuty zajmują jeden wiersz z jednego miejsca oddzielenie sąsiadujących atrybutów. Ustawienia zawijania tag są stosowane.<br /><br /> `<Button Height="23" Name="button1" Width="75">Hello</Button>`|
-|**Umieść każdy atrybut w osobnym wierszu**|Każdy atrybut zajmuje swój własny wiersz. Jest to przydatne, jeśli podano wiele atrybutów.<br /><br /> `<Button`<br /><br /> `Height="23"`<br /><br /> `Name="button1"`<br /><br /> `Width="75">Hello</Button>`|
-|**Pozycja pierwszego atrybutu w tym samym wierszu co tag początkowy**|Po zaznaczeniu tej opcji, w tym samym wierszu co tag początkowy element pojawi się pierwszy atrybut.<br /><br /> `<Button Height="23"`<br /><br /> `Name="button1"`<br /><br /> `Width="75">Hello</Button>`|
+|**Zachowaj znaki nowego wiersza i odstępy między atrybutami**|Autoformatowanie nie ma wpływ na nowe wiersze i odstępy między atrybutami.<br /><br /> `<Button Height="23" Name="button1"`<br /><br /> `Width="75">Hello</Button>`|
+|**Wstaw pojedyncze odstępy między atrybutami**|Atrybuty zajmują jedną linię, z jedną spacją oddzielającą sąsiednie atrybuty. Ustawienia zawijania tagów są stosowane.<br /><br /> `<Button Height="23" Name="button1" Width="75">Hello</Button>`|
+|**Umieść każdy atrybut w osobnym wierszu**|Każdy atrybut zajmuje własny wiersz. Jest to przydatne, gdy istnieje wiele atrybutów.<br /><br /> `<Button`<br /><br /> `Height="23"`<br /><br /> `Name="button1"`<br /><br /> `Width="75">Hello</Button>`|
+|**Umieść pierwszy atrybut w tym samym wierszu co tag początkowy**|Po zaznaczeniu ten pierwszy atrybut jest wyświetlany w tym samym wierszu co tag początkowy elementu.<br /><br /> `<Button Height="23"`<br /><br /> `Name="button1"`<br /><br /> `Width="75">Hello</Button>`|
 
-## <a name="element-spacing"></a>Odstępy między elementami
-Użyj tego ustawienia, aby kontrolować sposób rozmieszczenia elementów w dokumencie XAML
+## <a name="element-spacing"></a>Odstępy elementów
+Użyj tego ustawienia, aby kontrolować sposób ułożenia elementów w dokumencie XAML
 
 |                                                               |                                                                                                                                                                                       |
 |---------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Zachowaj nowe wiersze w zawartości**                             | Puste wiersze w zawartości elementu nie są usuwane.<br /><br /> `<Grid>`<br /><br /><br /><br /><br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /><br /><br /> `</Grid>\`   |
-| **Zwiń wiele puste wiersze w zawartości w jeden wiersz** | Puste wiersze w zawartości elementu są zwinięte do pojedynczego wiersza.<br /><br /> `<Grid>`<br /><br /><br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /><br /><br /> `</Grid>` |
+| **Zwiń wiele pustych wierszy w zawartości do pojedynczego wiersza** | Puste wiersze w zawartości elementu są zwijane do jednego wiersza.<br /><br /> `<Grid>`<br /><br /><br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /><br /><br /> `</Grid>` |
 | **Usuń puste wiersze w zawartości**                             | Wszystkie puste wiersze w zawartości elementu są usuwane.<br /><br /> `<Grid>`<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> `</Grid>`                                        |
 
-## <a name="auto-insert"></a>Automatyczne wstawianie
-To ustawienie służy do kontrolowania, kiedy tagów i cudzysłowy są generowane automatycznie.
+## <a name="auto-insert"></a>Autowstawianie
+To ustawienie służy do określania, kiedy Tagi i cudzysłowy są generowane automatycznie.
 
 |||
 |-|-|
-|**Taga zamykającego**|Określa, czy tag zamykający elementu jest generowana automatycznie, gdy zamkniesz otwierający tag o rozmiarze większym niż znak większości (>).|
-|**Cudzysłowy atrybutu**|Określa, czy otaczającej cudzysłowy są generowane w przypadku wybrania wartości atrybutu z listy rozwijanej uzupełniania instrukcji.|
-|**Zamykające nawiasy klamrowe dla wyrażeń MarkupExtension**|Określa, czy jako rozszerzenie znacznika zamykającego nawiasu klamrowego (}) jest generowany automatycznie po wpisaniu otwierający nawias klamrowy znak ({}).|
-|**Przecinków do oddzielenia parametry wyrażeń MarkupExtension**|Określa, czy przecinkami są generowane, gdy więcej niż jeden parametr jest typu rozszerzenia znaczników.|
+|**Tagi zamykające**|Określa, czy tag zamykający elementu jest generowany automatycznie po zamknięciu tagu otwierającego o znaku większości (>).|
+|**Cudzysłowy atrybutów**|Określa, czy otaczające cudzysłowy są generowane, gdy wartość atrybutu jest wybierana z listy rozwijanej uzupełniania instrukcji.|
+|**Zamykające nawiasy klamrowe dla wyrażeń MarkupExtension**|Określa, czy zamykający nawias klamrowy rozszerzenia znacznika (}) jest generowany automatycznie po wpisaniu otwierającego znaku nawiasu klamrowego ({).|
+|**Przecinki oddzielające parametry wyrażeń MarkupExtension**|Określa, czy przecinki są generowane po wpisaniu więcej niż jednego parametru w rozszerzeniu znacznika.|
 
 ## <a name="default-view"></a>Widok domyślny
-Użyj to ustawienie, aby określić, czy widok projektu jest wyświetlany, gdy dokumenty XAML są ładowane.
+Użyj tego ustawienia, aby określić, czy widok Projekt pojawia się po załadowaniu dokumentów XAML.
 
 |||
 |-|-|
-|**Zawsze otwieranie dokumentów w pełnego widoku XAML**|Określa, czy dokumenty XAML są wyświetlane tylko w widoku XAML, bez widoku projektu. Przydatne w przypadku ładowania dużych dokumentów.|
+|**Zawsze otwieraj dokumenty w pełnym widoku XAML**|Określa, czy dokumenty XAML są wyświetlane tylko w widoku XAML, bez widok Projekt. Przydatne do ładowania dużych dokumentów.|
 
 ## <a name="toolbox"></a>Przybornik
-To ustawienie umożliwia określenie, czy kontrolki użytkownika i kontrolki niestandardowe są wyświetlane w przyborniku.
+Użyj tego ustawienia, aby określić, czy kontrolki użytkownika i kontrolki niestandardowe są wyświetlane w przyborniku.
 
 |||
 |-|-|
-|**Automatycznie wypełnij elementy przybornika**|Określa, czy kontrolki użytkownika i niestandardowe formanty w bieżącym rozwiązaniu są wyświetlane w przyborniku automatycznie.|
+|**Automatycznie Wypełnij elementy przybornika**|Określa, czy kontrolki użytkownika i kontrolki niestandardowe w bieżącym rozwiązaniu są automatycznie wyświetlane w przyborniku.|
 
 ## <a name="see-also"></a>Zobacz też
-[XAML w WPF](https://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8)  
-[Instrukcje: Zmienianie ustawień widoku XAML](https://msdn.microsoft.com/aee87c79-ca01-4f84-8fb7-a9e47048ee47)  
-[XAML i przewodniki po kodzie](https://msdn.microsoft.com/b3ff41a0-a2a3-4f61-b698-ac88ec8f799c)
+[XAML w WPF](https://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8) 
+[instrukcje: Zmienianie ustawień widoku XAML](https://msdn.microsoft.com/aee87c79-ca01-4f84-8fb7-a9e47048ee47) 
+[języka XAML i instruktażów kodu](https://msdn.microsoft.com/b3ff41a0-a2a3-4f61-b698-ac88ec8f799c)

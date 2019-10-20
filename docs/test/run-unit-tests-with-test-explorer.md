@@ -5,17 +5,17 @@ ms.date: 07/29/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.unittesting.testexplorer.overview
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27ca8a39d39fcc8b4e5ddca2cbedf72e44c6cc81
-ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.openlocfilehash: 65c5d872462b4397078231eed2a9bec56131dec0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71342454"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72646644"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Przeprowadzanie testów jednostkowych za pomocą narzędzia Eksplorator testów
 
@@ -23,12 +23,12 @@ Użyj Eksploratora testów do uruchomienia testów jednostkowych z programu Visu
 
 Program Visual Studio zawiera struktury testów jednostkowych firmy Microsoft dla kodu zarządzanego i natywnego. Jednak w Eksploratorze testów można także uruchomić dowolną strukturę testów jednostkowych, która wdrożyła adapter programu Test Explorer. Aby uzyskać więcej informacji na temat instalowania platform testów jednostkowych innych firm, zobacz [Instalowanie platform testów jednostkowych](../test/install-third-party-unit-test-frameworks.md) innych firm
 
-**Eksplorator testów** może uruchamiać testy z wielu projektów testowych w rozwiązaniu i z klas testowych, które są częścią projektów kodu produkcyjnego. Projekty testowe mogą korzystać z różnych platform testów jednostkowych. Gdy testowy kod jest zapisywana dla platformy .NET, projekt testowy można napisać w dowolnym języku, który jest również przeznaczony dla platformy .NET, niezależnie od języka kodu docelowego. Natywnych projektów kodu C/C++ muszą być przetestowany przy użyciu struktury testowej jednostki C++. Aby uzyskać więcej informacji, zobacz [pisanie testów jednostkowych dla języka C/C++](writing-unit-tests-for-c-cpp.md).
+**Eksplorator testów** może uruchamiać testy z wielu projektów testowych w rozwiązaniu i z klas testowych, które są częścią projektów kodu produkcyjnego. Projekty testowe mogą korzystać z różnych platform testów jednostkowych. Gdy testowy kod jest zapisywana dla platformy .NET, projekt testowy można napisać w dowolnym języku, który jest również przeznaczony dla platformy .NET, niezależnie od języka kodu docelowego. Natywne projektyC++ C/Code muszą być testowane przy użyciu C++ struktury testów jednostkowych. Aby uzyskać więcej informacji, zobacz [pisanie testów jednostkowych dlaC++języka C/](writing-unit-tests-for-c-cpp.md).
 
 ## <a name="run-tests-in-test-explorer"></a>Uruchom testy w Eksploratorze testów
 
 
-Podczas tworzenia projektu testowego, testy są wyświetlane w Eksploratorze testów. Eksplorator testów nie jest widoczny, wybierz opcję **testu** menu programu Visual Studio, wybierz **Windows**, a następnie wybierz **Eksplorator testów**.
+Podczas kompilowania projektu testowego, testy są wyświetlane w Eksploratorze testów. Jeśli Eksplorator testów nie jest widoczny, wybierz **Testuj** w menu programu Visual Studio, wybierz pozycję **Windows**, a następnie wybierz **Eksplorator testów**.
 
 
 ::: moniker range="vs-2017"
@@ -39,7 +39,7 @@ Podczas tworzenia projektu testowego, testy są wyświetlane w Eksploratorze tes
 ::: moniker-end
 
 ::: moniker range="vs-2017"
-Podczas przeprowadzania, zapisywania i ponownego przeprowadzania testów Test Explorer wyświetla wyniki w grupach domyślnych **testy zakończone niepomyślnie**, **testy zakończone powodzeniem**, **testy pominięte** i  **Esty nieuruchamiane**. Można zmienić sposobu Eksplorator testów grupuje testy.
+Podczas uruchamiania, zapisywania i ponownego uruchamiania testów, Eksplorator testów wyświetla wyniki w domyślnych grupach **testów zakończonych niepowodzeniem**, testy **zakończone pomyślnie**, **testy pominięte** i **testy nie są uruchamiane**. Można zmienić sposób, w jaki Eksplorator testów grupuje testy.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 Podczas uruchamiania, zapisywania i ponownego uruchamiania testów, Eksplorator testów wyświetla wyniki w domyślnym grupowaniu **projektu**, **przestrzeni nazw**i **klasy**. Można zmienić sposób, w jaki Eksplorator testów grupuje testy.
@@ -57,20 +57,20 @@ Na pasku narzędzi **Eksploratora testów** można wykonywać wiele prac znajdow
 ### <a name="run-tests"></a>Uruchom testy
 
 ::: moniker range="vs-2017"
-Można uruchomić wszystkie testy w rozwiązaniu, wszystkie testy w grupie lub zestaw testów, które można wybrać. Wykonaj jedną z następujących czynności:
+Można uruchomić wszystkie testy w rozwiązaniu, wszystkie testy w grupie lub zestaw testów, które zostały wybrane. Wykonaj jedną z następujących czynności:
 
-- Aby uruchomić wszystkie testy w rozwiązaniu, wybierz **Uruchom wszystkie**.
+- Aby uruchomić wszystkie testy w rozwiązaniu, wybierz pozycję **Uruchom wszystkie**.
 
 - Aby uruchomić wszystkie testy w grupie domyślnej, wybierz pozycję **Uruchom** , a następnie wybierz grupę w menu.
 
 - Wybierz pojedyncze testy, które chcesz uruchomić, otwórz menu dostępne po kliknięciu prawym przyciskiem myszy, a następnie wybierz polecenie **Uruchom wybrane testy**.
 
-- Poszczególne testy nie ma żadnych zależności, które uniemożliwiają są uruchamiane w dowolnej kolejności, należy włączyć równoległe wykonywanie testów za pomocą ![WYKONAJ&#95;parallelicon&#45;małe](../test/media/ute_parallelicon-small.png) Przełącz przycisk na pasku narzędzi. Może to znacznie zmniejszyć czas poświęcony na uruchamianie wszystkich testów.
+- Jeśli pojedyncze testy nie mają żadnych zależności, które uniemożliwiają ich uruchomienie w dowolnej kolejności, należy włączyć równoległe wykonywanie testów przy użyciu ![Wykonaj&#95;parallelicon&#45;, mały](../test/media/ute_parallelicon-small.png) przycisk przełączania na pasku narzędzi. Może to znacznie skrócić czas potrzebny do uruchomienia wszystkich testów.
 
 **Pasek przekazywania/niepowodzenia** w górnej części okna **Eksploratora testów** jest animowany w miarę przebiegu testów. Po zakończeniu przebiegu testu **pasek powodzenia/niepowodzenia** zmieni kolor na zielony, jeśli wszystkie testy zakończyły się powodzeniem lub zmienią kolor na czerwony, jeśli którykolwiek z testów nie powiódł się.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-Można uruchomić wszystkie testy w rozwiązaniu, wszystkie testy w grupie lub zestaw testów, które można wybrać. Wykonaj jedną z następujących czynności:
+Można uruchomić wszystkie testy w rozwiązaniu, wszystkie testy w grupie lub zestaw testów, które zostały wybrane. Wykonaj jedną z następujących czynności:
 
 - Aby uruchomić wszystkie testy w rozwiązaniu, wybierz ikonę **Uruchom wszystko** .
 
@@ -78,10 +78,10 @@ Można uruchomić wszystkie testy w rozwiązaniu, wszystkie testy w grupie lub z
 
 - Wybierz pojedyncze testy, które chcesz uruchomić, otwórz menu dostępne po kliknięciu prawym przyciskiem myszy, a następnie wybierz polecenie **Uruchom wybrane testy**.
 
-- Jeśli pojedyncze testy nie mają żadnych zależności, które uniemożliwiają ich uruchomienie w dowolnej kolejności, Włącz równoległe wykonywanie testów w menu Ustawienia na pasku narzędzi. Może to znacznie zmniejszyć czas poświęcony na uruchamianie wszystkich testów.
+- Jeśli pojedyncze testy nie mają żadnych zależności, które uniemożliwiają ich uruchomienie w dowolnej kolejności, Włącz równoległe wykonywanie testów w menu Ustawienia na pasku narzędzi. Może to znacznie skrócić czas potrzebny do uruchomienia wszystkich testów.
 ::: moniker-end
 
-### <a name="run-tests-after-every-build"></a>Uruchamianie testów po każdej kompilacji
+### <a name="run-tests-after-every-build"></a>Uruchom testy po każdej kompilacji
 ::: moniker range="vs-2017"
 |Przycisk|Opis|
 |-|-|
@@ -96,11 +96,11 @@ Aby uruchomić testy jednostkowe po każdej kompilacji lokalnej, Otwórz ikonę 
 
 ## <a name="view-test-results"></a>Wyświetl wyniki testu
 
-Podczas przeprowadzania, zapisywania i ponownego przeprowadzania testów Test Explorer wyświetla wyniki w grupach **testy zakończone niepomyślnie**, **testy zakończone powodzeniem**, **testy pominięte** i **nie uruchomione Testy**. W okienku szczegółów u dołu lub stronie Eksploratora testów jest wyświetlane podsumowanie przebiegu testu.
+Podczas uruchamiania, zapisywania i ponownego uruchamiania testów, Eksplorator testów wyświetla wyniki w grupach **testów zakończonych niepowodzeniem**, testy **zakończone pomyślnie**, testy **pominięte** i **testy nie są uruchamiane**. W okienku szczegółów u dołu lub stronie Eksploratora testów jest wyświetlane podsumowanie przebiegu testu.
 
 ### <a name="view-test-details"></a>Wyświetl szczegóły testu
 
-Aby wyświetlić szczegółowe informacje o poszczególnych testach, wybierz test.
+Aby wyświetlić szczegóły poszczególnych testów, wybierz test.
 
 ::: moniker range="vs-2017"
 ![Szczegóły wykonania testu](../test/media/ute_testdetails.png)
@@ -109,19 +109,19 @@ Aby wyświetlić szczegółowe informacje o poszczególnych testach, wybierz tes
 ![Szczegóły wykonania testu](../test/media/vs-2019/test-explorer-detail.png)
 ::: moniker-end
 
-W okienku szczegółów są wyświetlane następujące informacje:
+W okienku Szczegóły testu są wyświetlane następujące informacje:
 
 - Nazwa pliku źródłowego i numer wiersza metody testowej.
 
 - Stan testu.
 
-- Czas trwania metody testowej.
+- Czas, który upłynął do uruchomienia metody testowej.
 
-Jeśli test zakończy się niepowodzeniem, są wyświetlane również w okienku szczegółów:
+Jeśli test nie powiedzie się, w okienku szczegółów zostanie również wyświetlony komunikat:
 
-- Komunikat zwracany przez strukturę testu jednostki dla testu.
+- Komunikat zwrócony przez strukturę testów jednostkowych dla testu.
 
-- Ślad stosu w czasie testu nie powiodło się.
+- Ślad stosu w czasie testu nie powiódł się.
 
 ### <a name="view-the-source-code-of-a-test-method"></a>Wyświetl kod źródłowy metody testowej
 
@@ -134,12 +134,12 @@ Eksplorator testów umożliwia grupowanie testów w wstępnie zdefiniowanych kat
 ### <a name="group-tests-in-the-test-list"></a>Grupuj testy na liście testów
 
 ::: moniker range="vs-2017"
-Aby zmienić sposób, w jaki są zorganizowane testy, wybierz strzałkę w dół obok przycisku **Grupuj według** ![Test Explorer przycisk grupy @ no__t-2 i wybierz nowe kryteria grupowania.
+Aby zmienić sposób organizowania testów, wybierz strzałkę w dół obok przycisku **Grupuj według** , ![Test przycisk grupy Eksploratora ](../test/media/ute_groupby_btn.png) i wybierz nowe kryteria grupowania.
 
 ![Grupuj testy według kategorii w Eksploratorze testów](../test/media/ute_groupbycategory.png)
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-Eksplorator testów pozwala grupować testy w hierarchię. Domyślnym grupowaniem hierarchii jest **projekt**, **przestrzeń nazw**, a następnie **Klasa**. Aby zmienić sposób, w jaki są zorganizowane testy, wybierz przycisk **Grupuj według** ![Test Explorer przycisk grupy @ no__t-2 i wybierz nowe kryteria grupowania.
+Eksplorator testów pozwala grupować testy w hierarchię. Domyślnym grupowaniem hierarchii jest **projekt**, **przestrzeń nazw**, a następnie **Klasa**. Aby zmienić sposób organizowania testów, wybierz przycisk **Grupuj według** ![Test przycisk grupy Eksploratora ](../test/media/ute_groupby_btn.png) i wybierz nowe kryteria grupowania.
 
 ![Grupuj testy według kategorii w Eksploratorze testów](../test/media/vs-2019/test-explorer-groupby-162.png)
 
@@ -153,20 +153,20 @@ Można zdefiniować własne poziomy hierarchii i według **stanu** , a następni
 ::: moniker range="vs-2017"
 |Grupa|Opis|
 |-|-----------------|
-|**Czas trwania**|Testy grup według czasu wykonywania: **Szybka**, **średnia**i **wolna**.|
-|**Wynik**|Grupuje testy według wyników wykonywania: **Testy zakończone niepowodzeniem**, **pominięte testy**, **testy zakończone powodzeniem**.|
+|**Trwania**|Testy grup według czasu wykonywania: **szybka**, **średnia**i **wolna**.|
+|**Wynikiem**|Grupuje testy według wyników wykonywania: **testy zakończone niepomyślnie**, **testy pominięte**, **testy zakończone powodzeniem**.|
 |**Cech**|Grupuje testy według par kategorii/wartości zdefiniowanych przez użytkownika. Składnia określająca kategorie i wartości cech jest definiowana przez strukturę testów jednostkowych.|
-|**Project**|Grupuje testy według nazwy projektów.|
+|**Projektu**|Grupuje testy według nazwy projektów.|
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 |Grupa|Opis|
 |-|-----------------|
-|**Czas trwania**|Grupuje testy według czasu wykonania: **Szybka**, **średnia**i **wolna**.|
-|**State**|Grupuje testy według wyników wykonywania: **Testy zakończone niepowodzeniem**, **pominięte testy**, **testy zakończone**powodzeniem, **nie uruchomiono**|
+|**Trwania**|Grupuje testy według czasu wykonywania: **szybka**, **średnia**i **wolna**.|
+|**State**|Grupuje testy według wyników wykonywania: **testy zakończone niepomyślnie**, **testy pominięte**, **testy zakończone powodzeniem**, **nie uruchomiono**|
 |**Struktura docelowa** | Grupuje testy według struktury obiektów docelowych projektów |
-|**Namespace**|Grupuje testy według przestrzeni nazw zawierającej.|
-|**Project**|Grupuje testy według projektu zawierającego.|
-|**Class**|Grupuje testy według klasy zawierającej.|
+|**Obszaru**|Grupuje testy według przestrzeni nazw zawierającej.|
+|**Projektu**|Grupuje testy według projektu zawierającego.|
+|**Określonej**|Grupuje testy według klasy zawierającej.|
 ::: moniker-end
 
 ### <a name="traits"></a>Cech
@@ -196,18 +196,18 @@ Można utworzyć i zapisać listę testów, które chcesz uruchomić lub wyświe
 
 ![Wybierz listę odtwarzania](../test/media/ute_playlist.png)
 
-**Aby utworzyć listę odtwarzania**, wybierz jeden lub więcej testów w Eksploratorze testów. W menu po kliknięciu prawym przyciskiem myszy wybierz polecenie **Dodaj do listy odtwarzania** > **NewPlaylist**. Zapisz plik o nazwie i lokalizacji określonej w oknie dialogowym **Tworzenie nowej listy odtwarzania** .
+**Aby utworzyć listę odtwarzania**, wybierz jeden lub więcej testów w Eksploratorze testów. W menu po kliknięciu prawym przyciskiem myszy wybierz polecenie **Dodaj do listy odtwarzania**  > **NewPlaylist**. Zapisz plik o nazwie i lokalizacji określonej w oknie dialogowym **Tworzenie nowej listy odtwarzania** .
 
 **Aby dodać testy do listy odtwarzania**, wybierz jeden lub więcej testów w Eksploratorze testów. W menu po kliknięciu prawym przyciskiem myszy wybierz polecenie **Dodaj do listy odtwarzania**, a następnie wybierz listę odtwarzania, do której chcesz dodać testy.
 
-**Aby otworzyć listę odtwarzania**, wybierz pozycję **Testuj** > **list odtwarzania** z menu programu Visual Studio, a następnie wybierz pozycję z listy ostatnio używanych list odtwarzania lub wybierz pozycję **Otwórz listę odtwarzania** , aby określić nazwę i lokalizację listy odtwarzania.
+**Aby otworzyć listę odtwarzania**, wybierz pozycję **Testuj** > **listy odtwarzania** z menu programu Visual Studio, a następnie wybierz pozycję z listy ostatnio używanych list odtwarzania lub wybierz pozycję **Otwórz listę odtwarzania** , aby określić nazwę i lokalizację listy odtwarzania.
 
-Poszczególne testy nie ma żadnych zależności, które uniemożliwiają są uruchamiane w dowolnej kolejności, należy włączyć równoległe wykonywanie testów za pomocą ![WYKONAJ&#95;parallelicon&#45;małe](../test/media/ute_parallelicon-small.png) Przełącz przycisk na pasku narzędzi. Może to znacznie zmniejszyć czas poświęcony na uruchamianie wszystkich testów.
+Jeśli pojedyncze testy nie mają żadnych zależności, które uniemożliwiają ich uruchomienie w dowolnej kolejności, należy włączyć równoległe wykonywanie testów przy użyciu ![Wykonaj&#95;parallelicon&#45;, mały](../test/media/ute_parallelicon-small.png) przycisk przełączania na pasku narzędzi. Może to znacznie skrócić czas potrzebny do uruchomienia wszystkich testów.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 Można utworzyć i zapisać listę testów, które chcesz uruchomić lub wyświetlić jako grupę. Po wybraniu listy odtwarzania testy z listy są wyświetlane na nowej karcie programu Test Explorer. Test można dodać do więcej niż jednej listy odtwarzania.
 
-**Aby utworzyć listę odtwarzania**, wybierz jeden lub więcej testów w Eksploratorze testów. W menu po kliknięciu prawym przyciskiem myszy wybierz polecenie **Dodaj do listy odtwarzania** > **Nowa lista odtwarzania**.
+**Aby utworzyć listę odtwarzania**, wybierz jeden lub więcej testów w Eksploratorze testów. W menu po kliknięciu prawym przyciskiem myszy wybierz polecenie **Dodaj do listy odtwarzania**  > **nową listą odtwarzania**.
 
 ![Tworzenie listy odtwarzania](../test/media/vs-2019/test-explorer-playlist-16-2.png)
 
@@ -215,7 +215,7 @@ Lista odtwarzania zostanie otwarta na nowej karcie programu Test Explorer. Może
 
 ![Lista odtwarzania zostanie otwarta na osobnej karcie Eksploratora testów](../test/media/vs-2019/test-explorer-playlist-tab-16-2.png)
 
-**Aby utworzyć listę odtwarzania**, wybierz jeden lub więcej testów w Eksploratorze testów. Kliknij prawym przyciskiem myszy i wybierz polecenie **Dodaj do listy odtwarzania** > **Nowa lista odtwarzania**.
+**Aby utworzyć listę odtwarzania**, wybierz jeden lub więcej testów w Eksploratorze testów. Kliknij prawym przyciskiem myszy i wybierz polecenie **Dodaj do listy odtwarzania**  > **nową listą odtwarzania**.
 
 **Aby otworzyć listę odtwarzania**, wybierz ikonę listy odtwarzania na pasku narzędzi programu Visual Studio i wybierz wcześniej zapisany plik listy odtwarzania z menu.
 ::: moniker-end
@@ -269,23 +269,23 @@ Aby odfiltrować według innych kryteriów:
 |Kwalifikator|Opis|
 |-|-----------------|
 |**Cecha**|Wyszukuje dopasowania kategorii i wartości. Składnia określająca kategorie i wartości cech jest definiowana przez strukturę testów jednostkowych.|
-|**Project**|Wyszukuje dopasowania w nazwach projektów testowych.|
+|**Projektu**|Wyszukuje dopasowania w nazwach projektów testowych.|
 |**Komunikat o błędzie**|Wyszukuje dopasowania w zdefiniowanych przez użytkownika komunikatach o błędach zwracanych przez nieudane potwierdzenia.|
 |**Ścieżka pliku**|Wyszukuje dopasowania w w pełni kwalifikowanych nazwach plików źródłowych testów.|
 |**W pełni kwalifikowana nazwa**|Przeszukuje w pełni kwalifikowaną nazwę testowanych przestrzeni nazw, klas i metod w celu dopasowania.|
-|**Dane wyjściowe**|Wyszukuje komunikaty o błędach zdefiniowane przez użytkownika, które są zapisywane w standardowym wyjściu (stdout) lub w standardowym błędzie (stderr). Składnia służąca do określania komunikatów wyjściowych jest definiowana przez strukturę testów jednostkowych.|
-|**Wynik**|Wyszukuje dopasowania w nazwach kategorii Eksploratora testów: **Testy zakończone niepowodzeniem**, **pominięte testy**, **testy zakończone powodzeniem**.|
+|**Output**|Wyszukuje komunikaty o błędach zdefiniowane przez użytkownika, które są zapisywane w standardowym wyjściu (stdout) lub w standardowym błędzie (stderr). Składnia służąca do określania komunikatów wyjściowych jest definiowana przez strukturę testów jednostkowych.|
+|**Wynikiem**|Wyszukuje dopasowania w nazwach kategorii Eksploratora testów: **testy zakończone niepomyślnie**, **testy pominięte**, **testy zakończone powodzeniem**.|
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 |Kwalifikator|Opis|
 |-|-----------------|
-|**State**|Wyszukuje dopasowania w nazwach kategorii Eksploratora testów: **Testy zakończone niepowodzeniem**, **pominięte testy**, **testy zakończone powodzeniem**.|
+|**State**|Wyszukuje dopasowania w nazwach kategorii Eksploratora testów: **testy zakończone niepomyślnie**, **testy pominięte**, **testy zakończone powodzeniem**.|
 |**Cech**|Wyszukuje dopasowania kategorii i wartości. Składnia określająca kategorie i wartości cech jest definiowana przez strukturę testów jednostkowych.|
 |**W pełni kwalifikowana nazwa**|Przeszukuje w pełni kwalifikowaną nazwę testowanych przestrzeni nazw, klas i metod w celu dopasowania.|
-|**Project**|Wyszukuje dopasowania w nazwach projektów testowych.|
-|**Struktura docelowa**|Wyszukuje dopasowania w nazwach kategorii Eksploratora testów: **Testy zakończone niepowodzeniem**, **pominięte testy**, **testy zakończone powodzeniem**.|
-|**Namespace**|Wyszukuje dopasowania w przestrzeniach nazw testów.|
-|**Class**|Wyszukuje dopasowania w nazwach klas testowych.|
+|**Projektu**|Wyszukuje dopasowania w nazwach projektów testowych.|
+|**Struktura docelowa**|Wyszukuje dopasowania w nazwach kategorii Eksploratora testów: **testy zakończone niepomyślnie**, **testy pominięte**, **testy zakończone powodzeniem**.|
+|**Obszaru**|Wyszukuje dopasowania w przestrzeniach nazw testów.|
+|**Określonej**|Wyszukuje dopasowania w nazwach klas testowych.|
 ::: moniker-end
 
 Aby wykluczyć podzestaw wyników filtru, należy użyć następującej składni:
@@ -298,12 +298,12 @@ Na przykład `FullName:"MyClass" - FullName:"PerfTest"` zwraca wszystkie testy, 
 
 ## <a name="debug-and-analyze-unit-tests"></a>Debuguj i Analizuj testy jednostkowe
 
-Eksplorator testów umożliwia uruchamianie sesji debugowania dla testów. Krokowe wykonywanie kodu za pomocą debugera programu Visual Studio bezproblemowe przejście i z powrotem między testami jednostek a testowanego projektu. Aby rozpocząć debugowanie:
+Możesz użyć Eksploratora testów, aby rozpocząć sesję debugowania dla testów. Przechodzenie przez kod za pomocą debugera programu Visual Studio bezproblemowo przeprowadzi Cię z powrotem między testami jednostkowymi i badanym projektem. Aby rozpocząć debugowanie:
 
-1. W edytorze programu Visual Studio Ustaw punkt przerwania w metodach testów, które chcesz debugować.
+1. W edytorze programu Visual Studio Ustaw punkt przerwania w co najmniej jednej metodzie testowej, która ma być debugowana.
 
     > [!NOTE]
-    > Ponieważ metody testowe można uruchomić w dowolnej kolejności, ustaw punkty przerwania w wszystkich metodach testowych, które chcesz debugować.
+    > Ponieważ metody testowe mogą być uruchamiane w dowolnej kolejności, należy ustawić punkty przerwania we wszystkich metodach testowych, które mają być debugowane.
 
 2. W Eksploratorze testów wybierz metody testowe, a następnie wybierz **Debuguj wybrane testy** w menu po kliknięciu prawym przyciskiem myszy.
 
@@ -315,7 +315,7 @@ Aby zdiagnozować Dlaczego metoda testowa trwa zbyt wiele czasu, wybierz metodę
 
 ### <a name="analyze-unit-test-code-coverage"></a>Analizuj pokrycie kodu testu jednostkowego
 
-Można określić ilość kodu produktu, który jest faktycznie testowany przez testy jednostkowe za pomocą narzędzia pokrycia kodu w programie Visual Studio dostępnego w wersji Visual Studio Enterprise. Można uruchomić pokrycie kodów w wybranych testach albo we wszystkich testach w rozwiązaniu.
+Można określić ilość kodu produktu, który jest faktycznie testowany przez testy jednostkowe za pomocą narzędzia pokrycia kodu w programie Visual Studio dostępnego w wersji Visual Studio Enterprise. Można uruchomić pokrycie kodu dla wybranych testów lub wszystkich testów w rozwiązaniu.
 
 Aby uruchomić pokrycie kodu dla metod testowych w rozwiązaniu:
 
@@ -337,9 +337,9 @@ Aby uruchomić pokrycie kodu dla metod testowych w rozwiązaniu:
 
 ::: moniker-end
 
-**Wyniki pokrycia kodu** okno wyświetla procent bloków kodu produktu, które były wykonywane przez wiersz, funkcji, klasy, przestrzeni nazw i moduł.
+Okno **wyniki pokrycia kodu** przedstawia wartość procentową bloków kodu produktu, które były wykonywane przez wiersz, funkcję, klasę, przestrzeń nazw i moduł.
 
-Aby uzyskać więcej informacji, zobacz [użycie pokrycia kodu, aby ustalić, ile kodu jest poddawana testom](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
+Aby uzyskać więcej informacji, zobacz [Korzystanie z pokrycia kodu w celu określenia, ile kodu jest testowany](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
 
 ## <a name="test-shortcuts"></a>Skróty testowe
 
@@ -347,16 +347,16 @@ Testy można uruchomić z poziomu Eksploratora testów, klikając prawym przycis
 
 |Częste polecenia| Skróty klawiaturowe|
 |-|------------------------|
-|TestExplorer.DebugAllTestsInContext|**Ctrl**+**R**, **Ctrl**+**T**|
-|TestExplorer.RunAllTestsInContext|**Ctrl**+**R**, **t**|
-|TestExplorer.RunAllTests|**Ctrl**+**R**, **A**|
-|TestExplorer.RepeatLastRun|**Ctrl**+**R**, **L**|
+|TestExplorer.DebugAllTestsInContext|**Ctrl** +**R**, **Ctrl** +**t**|
+|TestExplorer.RunAllTestsInContext|**Ctrl** +**R**, **t**|
+|TestExplorer.RunAllTests|**Ctrl** +**R**, **A**|
+|TestExplorer.RepeatLastRun|**Ctrl** +**R**, **L**|
 
 > [!NOTE]
 > Nie można uruchomić testu w klasie abstrakcyjnej, ponieważ testy są zdefiniowane tylko w klasach abstrakcyjnych i nie są tworzone. Aby uruchomić testy w klasach abstrakcyjnych, należy utworzyć klasę, która dziedziczy z klasy abstrakcyjnej.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Kod testu jednostkowego](../test/unit-test-your-code.md)
+- [Testowanie jednostkowe kodu](../test/unit-test-your-code.md)
 - [Uruchamianie testu jednostkowego jako procesu 64-bitowego](../test/run-a-unit-test-as-a-64-bit-process.md)
 - [Eksplorator testów — często zadawane pytania](test-explorer-faq.md)

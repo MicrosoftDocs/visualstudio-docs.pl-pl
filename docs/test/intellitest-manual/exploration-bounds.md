@@ -1,78 +1,78 @@
 ---
-title: Wiązania eksploracji | Narzędzie Test Microsoft IntelliTest dla deweloperów
+title: Granice eksploracji | Narzędzie testowe dla deweloperów Microsoft IntelliTest
 ms.date: 05/02/2017
 ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Exploration bounds
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: ffa6908fe759f33ad1e82f2fd44975d6731cdf16
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+author: jillre
+ms.openlocfilehash: f6b29b8bc2a9755f5f2e2ced237a5a1ce6acfd6e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978552"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653224"
 ---
 # <a name="exploration-bounds"></a>Wiązania eksploracji
 
-**PexSettingsAttributeBase** jest abstrakcyjna klasa bazowa dla ustawienia granic jako atrybuty. Zobacz [kaskadowy model ustawień](settings-waterfall.md) omówienie ustawienia programu IntelliTest.
+**PexSettingsAttributeBase** to abstrakcyjna klasa bazowa dla ustawień związanych z atrybutami. Zobacz [Ustawienia kaskadowe](settings-waterfall.md) , aby zapoznać się z omówieniem ustawień w IntelliTest.
 
-Aby zmodyfikować ustawienia, należy za pomocą nazwanych właściwości tej lokacji i jego atrybuty pochodne:
+Ustawienia można modyfikować za pomocą nazwanych właściwości tego i atrybutów pochodnych:
 
 ```csharp
 [PexClass(MaxRuns = 10)]
 public partial class FooTest {...}
 ```
 
-* **Ograniczenie rozwiązywania granice**
-  * [MaxConstraintSolverTime](#maxconstraintsolvertime) — liczba sekund [moduł rozwiązywania ograniczeń](input-generation.md#constraint-solver) ma odnajdywania danych wejściowych, które spowodują wykonanie inną ścieżkę należy postępować zgodnie.
-  * [MaxConstraintSolverMemory](#maxconstraintsolvermemory) — rozmiar w megabajtach, [moduł rozwiązywania ograniczeń](input-generation.md#constraint-solver) może użyć do odnalezienia danych wejściowych.
-* **Eksploracja ścieżką granic**
-  * [MaxBranches](#maxbranches) — maksymalna liczba gałęzi, które mogą zostać podjęte w ścieżce pojedyncze wykonanie.
-  * [MaxCalls](#maxcalls) — maksymalna liczba wywołań, wprowadzone podczas ścieżką pojedynczego uruchomienia.
-  * [MaxStack](#maxstack) — maksymalny rozmiar stosu w dowolnym momencie podczas ścieżką pojedynczego uruchomienia mierzony jako liczba ramek aktywnego połączenia.
-  * [MaxConditions](#maxconditions) — maksymalna liczba warunków za pośrednictwem danych wejściowych, które mogą być sprawdzane podczas ścieżką pojedynczego uruchomienia.
-* **Wiązania eksploracji**
-  * [MaxRuns](#maxruns) — maksymalna liczba uruchomień, które zostanie podjęta podczas eksploracji.
-  * [MaxRunsWithoutNewTests](#maxrunswithoutnewtests) -maksymalną liczbę kolejnych uruchomień bez nowego testu jest emitowane.
-  * [MaxRunsWithUniquePaths](#maxrunswithuniquepaths) — maksymalna liczba przebiegów ze ścieżkami unikatowy wykonywania, które zostanie podjęta podczas eksploracji.
-  * [MaxExceptions](#maxexceptions) — maksymalna liczba wyjątków, które można znaleźć kombinacji wszystkich ścieżek odnalezionych wykonywania.
+* **Ograniczenia rozwiązywania ograniczeń**
+  * [MaxConstraintSolverTime](#maxconstraintsolvertime) — liczba sekund, przez jaką funkcja [ograniczenia](input-generation.md#constraint-solver) musi odnajdywać dane wejściowe, które spowodują wykonanie nowej i innej ścieżki wykonania.
+  * [MaxConstraintSolverMemory](#maxconstraintsolvermemory) — rozmiar (w megabajtach), który może być używany przez program [Constraint](input-generation.md#constraint-solver) do odnajdywania danych wejściowych.
+* **Poszukiwanie powiązań ścieżki**
+  * [MaxBranches](#maxbranches) — Maksymalna liczba rozgałęzień, które mogą być wykonywane w ramach jednej ścieżki wykonywania.
+  * [MaxCalls](#maxcalls) — Maksymalna liczba wywołań, które mogą być wykonywane w ramach jednej ścieżki wykonywania.
+  * [MaxStack](#maxstack) — maksymalny rozmiar stosu w dowolnym momencie podczas jednej ścieżki wykonywania, mierzoną jako liczba aktywnych ramek wywołań.
+  * [MaxConditions](#maxconditions) — Maksymalna liczba warunków w danych wejściowych, które mogą być sprawdzane podczas jednej ścieżki wykonywania.
+* **Granice eksploracji**
+  * [MaxRuns](#maxruns) — Maksymalna liczba uruchomień, które zostaną podjęte podczas eksploracji.
+  * [MaxRunsWithoutNewTests](#maxrunswithoutnewtests) — Maksymalna liczba kolejnych uruchomień bez nowego testu.
+  * [MaxRunsWithUniquePaths](#maxrunswithuniquepaths) — Maksymalna liczba przebiegów z unikatowymi ścieżkami wykonywania, które będą podejmowane podczas eksploracji.
+  * [MaxExceptions](#maxexceptions) — Maksymalna liczba wyjątków, które można znaleźć dla kombinacji wszystkich odnalezionych ścieżek wykonania.
 * **Ustawienia generowania kodu zestawu testów**
-  * [TestExcludePathBoundsExceeded](#testexcludepathboundsexceeded) — gdy ma wartość true, ścieżki wykonywania, które przekraczają znajdujących się w granicach ścieżki ([MaxCalls](#maxcalls), [MaxBranches](#maxbranches), [MaxStack](#maxstack), [ MaxConditions](#maxconditions)) są ignorowane.
-  * [TestEmissionFilter](#testemissionfilter) — wskazuje, w jakich okolicznościach IntelliTest, powinny wysyłać testów.
-  * [TestEmissionBranchHits](#testemissionbranchhits) -Określa, ile testów funkcji IntelliTest emituje.
+  * [TestExcludePathBoundsExceeded](#testexcludepathboundsexceeded) — w przypadku wartości true ścieżki wykonywania, które przekraczają wszystkie granice ścieżki ([MaxCalls](#maxcalls), [MaxBranches](#maxbranches), [MaxStack](#maxstack), [MaxConditions](#maxconditions)), są ignorowane.
+  * [TestEmissionFilter](#testemissionfilter) — wskazuje, pod którym okoliczności IntelliTest powinny emitować testy.
+  * [TestEmissionBranchHits](#testemissionbranchhits) — określa, ile testów IntelliTest emituje.
 
 <a name="maxconstraintsolvertime"></a>
 ## <a name="maxconstraintsolvertime"></a>MaxConstraintSolverTime
 
-Liczba sekund [moduł rozwiązywania ograniczeń](input-generation.md#constraint-solver) należy obliczyć danych wejściowych, które spowoduje, że ścieżki wykonywania nowe i zróżnicowane, podejmowane. Jest to opcja **PexSettingsAttributeBase** i jego typów pochodnych.
+Liczba sekund, przez jaką funkcja [ograniczenia](input-generation.md#constraint-solver) musi obliczać dane wejściowe, które spowodują wykonanie nowej i innej ścieżki wykonania. Jest to opcja elementu **PexSettingsAttributeBase** i jego typów pochodnych.
 
-Głębiej tej funkcji IntelliTest analizuje ścieżki wykonywania programu, stają się bardziej złożonych systemów ograniczenia, które program IntelliTest kompilacje przepływu sterowania i przepływu danych programu. W zależności od Twojego ograniczenie czasu można ustawić tę wartość, aby umożliwić funkcji IntelliTest móc więcej lub mniej czasu wykrywanie nowych wykonania ścieżki.
+Im bardziej skomplikowane są, że IntelliTest eksplorują ścieżki wykonywania programu, tym bardziej złożone są systemy ograniczeń, które IntelliTest kompilacje z przepływu sterowania i przepływu danych programu. W zależności od ograniczeń czasowych można ustawić tę wartość, aby umożliwić IntelliTest więcej lub mniej czasu na odnajdywanie nowych ścieżek wykonywania.
 
-Zazwyczaj Przyczyna przekroczenia limitu czasu jest, że IntelliTest próbuje znaleźć rozwiązania dla systemu ograniczenia, który nie ma rozwiązania, ale nie ma informacji o tym fakcie. Ponieważ jest to najbardziej typowe zdarza się w przypadku przekroczenia limitu czasu, może nie mieć sens, aby zwiększyć powiązane z.
+Zazwyczaj przyczyną limitu czasu jest to, że IntelliTest próbuje znaleźć rozwiązanie dla systemu ograniczającego, który nie ma rozwiązania, ale nie wie o tym fakcie. Ponieważ jest to najbardziej typowy przypadek w przypadku przekroczenia limitu czasu, może nie mieć sensu, aby zwiększyć granicę.
 
 <a name="maxconstraintsolvermemory"></a>
 ## <a name="maxconstraintsolvermemory"></a>MaxConstraintSolverMemory
 
-W megabajtach, [moduł rozwiązywania ograniczeń](input-generation.md#constraint-solver) należy obliczyć danych wejściowych, które spowoduje, że ścieżki wykonywania nowe i zróżnicowane, podejmowane. Jest to opcja *PexSettingsAttributeBase** i jego typów pochodnych.
+Liczba megabajtów, jaką funkcja [Solver](input-generation.md#constraint-solver) musi obliczyć dane wejściowe, które spowodują wykonanie nowej i innej ścieżki wykonania. Jest to opcja *PexSettingsAttributeBase** i jego typów pochodnych.
 
-Lepiej IntelliTest odkrywa ścieżki wykonywania programu, tym bardziej złożone, które stają się systemy ograniczenia, które program IntelliTest kompilacje przepływu sterowania i przepływu danych programu. W zależności od dostępnej pamięci na komputerze można ustawić tę wartość, aby umożliwić funkcji IntelliTest do bardziej złożonych systemów ograniczenia.
+Dokładniejsze IntelliTest eksplorują ścieżki wykonywania programu, tym bardziej skomplikowane systemy ograniczeń, które IntelliTest kompilacje z przepływu sterowania i przepływu danych programu. W zależności od dostępnej pamięci komputera można ustawić tę wartość, aby umożliwić programowi IntelliTest Rozwiązywanie bardziej złożonych systemów ograniczeń.
 
-Zazwyczaj Przyczyna przekroczenia limitu czasu jest, że IntelliTest próbuje znaleźć rozwiązania dla systemu ograniczenia, który nie ma rozwiązania, ale nie ma informacji o tym fakcie. Ponieważ jest to najbardziej typowe przyczyny sytuacji braku pamięci, może nie mieć sens, aby zwiększyć powiązane z.
+Zazwyczaj przyczyną limitu czasu jest to, że IntelliTest próbuje znaleźć rozwiązanie dla systemu ograniczającego, który nie ma rozwiązania, ale nie wie o tym fakcie. Ponieważ jest to najbardziej powszechna przyczyna sytuacji braku pamięci, może nie mieć sensu, aby zwiększyć zakres.
 
 <a name="maxbranches"></a>
 ## <a name="maxbranches"></a>MaxBranches
 
-Maksymalna liczba gałęzi, które mogą zostać podjęte w ścieżce pojedyncze wykonanie.
+Maksymalna liczba rozgałęzień, które mogą być wykonywane w ramach jednej ścieżki wykonywania.
 
-Motywacja za tej prezentacji powiązany jest ograniczenie długości dowolną ścieżkę wykonywania, który program IntelliTest pokazuje podczas [wejściowych generowania](input-generation.md). W szczególności uniemożliwia IntelliTest przestanie odpowiadać, jeśli program przechodzi w pętli nieskończonej.
+Uzasadnienie związane z badaniem polega na ograniczeniu długości ścieżki wykonywania, która IntelliTest Eksplorowanie podczas [generowania danych wejściowych](input-generation.md). W szczególności zapobiega to, aby IntelliTest się nie reagować, jeśli program przejdzie w nieskończoną pętlę.
 
-Każda gałąź warunkowe i bezwarunkowe kod wykonywany i monitorowanie jest liczony kierunku ten limit, w tym gałęzi, które nie są zależne od danych wejściowych test sparametryzowany.
+Każda warunkowa i bezwarunkowa gałąź wykonanych i monitorowanych kodów jest naliczana w ramach tego limitu, w tym gałęzi, które nie zależą od danych wejściowych testu sparametryzowanego.
 
-Na przykład poniższy kod wykorzystuje gałęzie w kolejności 100:
+Na przykład poniższy kod zużywa gałęzie w kolejności 100:
 
 ```csharp
 for (int i=0; i<100; i++) { }
@@ -81,27 +81,27 @@ for (int i=0; i<100; i++) { }
 <a name="maxcalls"></a>
 ## <a name="maxcalls"></a>MaxCalls
 
-Maksymalna liczba wywołań, które mogą być nawiązywane podczas ścieżką pojedynczego uruchomienia.
+Maksymalna liczba wywołań, które mogą być wykonywane w ramach jednej ścieżki wykonywania.
 
-Motywacja za tej prezentacji powiązany jest ograniczenie długości dowolną ścieżkę wykonywania, który program IntelliTest pokazuje podczas [wejściowych generowania](input-generation.md). W szczególności uniemożliwia IntelliTest przestanie odpowiadać, jeśli program wywołuje cyklicznie metoda nieograniczoną liczbę razy, co mogłoby spowodować przepełnienie stosu funkcji IntelliTest nie można odzyskać z.
+Uzasadnienie związane z badaniem polega na ograniczeniu długości ścieżki wykonywania, która IntelliTest Eksplorowanie podczas [generowania danych wejściowych](input-generation.md). W szczególności zapobiega to, aby IntelliTest się nie reagować, jeśli program wywołuje metodę cyklicznie nieskończoną liczbę razy, co spowodowałoby przepełnienie stosu, którego IntelliTest nie może odzyskać.
 
-Każde wywołanie (bezpośrednie, pośrednie, wirtualnej jump) kod wykonywany i monitorowanie jest liczony w kierunku tego limitu.
+Każde wywołanie (bezpośrednie, pośrednie, wirtualne, skok) wykonanego i monitorowanego kodu jest zliczane do tego limitu.
 
 <a name="maxstack"></a>
 ## <a name="maxstack"></a>MaxStack
 
-Maksymalny rozmiar stosu w dowolnym momencie podczas ścieżką pojedynczego uruchomienia mierzone przez liczbę klatek aktywnego połączenia.
+Maksymalny rozmiar stosu w dowolnym momencie podczas jednej ścieżki wykonywania, mierzony przez liczbę aktywnych ramek wywołań.
 
-Motywacją za tej prezentacji powiązany jest limit rozmiaru stosu dowolną ścieżkę wykonywania, który program IntelliTest pokazuje podczas [wejściowych generowania](input-generation.md). W szczególności że uniemożliwia IntelliTest przy użyciu wszystkich dostępnych stosu wolnego miejsca, co mogłoby spowodować przepełnienie stosu funkcji IntelliTest nie można odzyskać z.
+Uzasadnienie związane z badaniem polega na ograniczeniu rozmiaru stosu dowolnej ścieżki wykonywania, który IntelliTest Eksplorowanie podczas [generowania danych wejściowych](input-generation.md). W szczególności zapobiega to IntelliTest z używania całego dostępnego miejsca na stosie, co spowodowałoby przepełnienie stosu, którego IntelliTest nie może odzyskać.
 
 <a name="maxconditions"></a>
 ## <a name="maxconditions"></a>MaxConditions
 
-Liczba emaximum warunki za pośrednictwem danych wejściowych, które mogą być sprawdzane podczas ścieżką pojedynczego uruchomienia.
+Emaximum liczba warunków na dane wejściowe, które mogą być sprawdzane podczas jednej ścieżki wykonywania.
 
-Motywacją za tej prezentacji powiązany jest ograniczyć złożoność dowolną ścieżkę wykonywania, który program IntelliTest pokazuje podczas [wejściowych generowania](input-generation.md). Każdej gałęzi warunkowej, który zależy od wejść test sparametryzowany, jest liczony wobec tego limitu.
+Uzasadnienie związane z badaniem polega na ograniczeniu złożoności wszystkich ścieżek wykonywania, które IntelliTest Eksplorowanie podczas [generowania danych wejściowych](input-generation.md). Wszystkie gałęzie warunkowe, które są zależne od danych wejściowych testu sparametryzowanego, są zliczane do tego limitu.
 
-Na przykład każda ścieżka w poniższym kodzie zużywa n + 1 warunków:
+Na przykład każda ścieżka w poniższym kodzie zużywa n + 1 warunek:
 
 ```csharp
 [PexMethod]
@@ -119,71 +119,71 @@ void ParameterizedTest(int n)
 <a name="maxruns"></a>
 ## <a name="maxruns"></a>MaxRuns
 
-TH emaximum Liczba uruchomień, które program IntelliTest zostanie ponowiona podczas eksploracji testu.
+Emaximum liczba uruchomień, które IntelliTest spróbuje podczas eksploracji testu.
 
-Motywacja za tej prezentacji powiązany jest jakiegokolwiek kodu, który zawiera pętli lub rekursji może mieć nieograniczoną liczbę ścieżki wykonywania i dlatego IntelliTest musi być ograniczona podczas [wejściowych generowania](input-generation.md).
+Uzasadnienie związane z badaniem polega na tym, że każdy kod, który zawiera pętle lub rekursję, może mieć nieskończoną liczbę ścieżek wykonywania, a tym samym IntelliTest należy ograniczyć podczas [generowania danych wejściowych](input-generation.md).
 
-Dwa ustawienia **MaxRuns** i **MaxRunsWithUniquePaths** są ze sobą powiązane w następujący sposób:
+Dwa ustawienia **MaxRuns** i **MaxRunsWithUniquePaths** są powiązane w następujący sposób:
 
-* Program IntelliTest zostanie do wywołania metody test sparametryzowany **MaxRuns** razy z różnymi elementami wejściowymi.
-* Jeśli wykonywany kod jest deterministyczna, IntelliTest potrwa ścieżką wykonywania różnych każdorazowo. Jednak w niektórych warunkach wykonywany kod może wykonać ścieżką wykonywania podjętą już wcześniej, za pomocą różnych danych wejściowych.
-* IntelliTest zlicza liczbę ścieżek wykonywania unikatowy znajdzie; Ta liczba jest ograniczona przez **MaxRunsWithUniquePaths** opcji.
+* IntelliTest wywoła sparametryzowanej metody testowej do **MaxRuns** razy przy użyciu różnych danych wejściowych testu.
+* Jeśli wykonany kod jest deterministyczny, IntelliTest będzie wykonywać inną ścieżkę wykonania za każdym razem. Jednak w niektórych warunkach wykonany kod może być zgodny ze ścieżką wykonywania, która została już wcześniej wykonana, z różnymi danymi wejściowymi.
+* IntelliTest zlicza liczbę unikatowych ścieżek wykonywania, które znajdzie; Ta liczba jest ograniczona przez opcję **MaxRunsWithUniquePaths** .
 
 <a name="maxrunswithoutnewtests"></a>
 ## <a name="maxrunswithoutnewtests"></a>MaxRunsWithoutNewTests
 
-Maksymalna liczba kolejnych uruchomień bez nowego testu jest emitowane.
+Maksymalna liczba kolejnych uruchomień bez przeemitowania nowego testu.
 
-Podczas testów funkcji IntelliTest często można znaleźć wiele interesujące dane wejściowe testu w krótkim czasie, po chwili, nie zostaną znalezione wszystkie bardziej nowe dane wejściowe testu i zostanie wyemitowany przez żadne testy jednostkowe. Ta opcja konfiguracji umieszcza granicę liczby kolejnych prób do wykonania funkcji IntelliTest mogą bez emitowania nowy test. Jeśli osiągnięty, zatrzyma badań.
+Mimo że IntelliTest może często znaleźć wiele interesujących danych wejściowych testów w krótkim czasie, gdy nie znajdzie żadnych nowych danych wejściowych testów i nie będzie wysyłać żadnych testów jednostkowych. Ta opcja konfiguracji umieszcza w powiązaniu liczbę kolejnych prób, które IntelliTest mogą wykonać bez emitowania nowego testu. Po osiągnięciu tego czasu zostanie zatrzymana Eksploracja.
 
 <a name="maxrunswithuniquepaths"></a>
 ## <a name="maxrunswithuniquepaths"></a>MaxRunsWithUniquePaths
 
-Maksymalna liczba unikatowych ścieżek, które program IntelliTest zostanie należy wziąć pod uwagę podczas eksploracji.
+Maksymalna liczba unikatowych ścieżek, które IntelliTest wziąć pod uwagę podczas eksploracji.
 
-Motywacja za tej prezentacji powiązany jest jakiegokolwiek kodu zawierające pętli lub rekursji może mieć nieograniczoną liczbę ścieżki wykonywania i dlatego IntelliTest muszą być ograniczone podczas [wejściowych generowania](input-generation.md).
+Uzasadnienie związane z eksplorowaniem polega na tym, że każdy kod zawierający pętle lub rekursję może mieć nieskończoną liczbę ścieżek wykonywania, więc IntelliTest muszą być ograniczone podczas [generowania danych wejściowych](input-generation.md).
 
-Dwa ustawienia **MaxRuns** i **MaxRunsWithUniquePaths** są ze sobą powiązane w następujący sposób:
+Dwa ustawienia **MaxRuns** i **MaxRunsWithUniquePaths** są powiązane w następujący sposób:
 
-* Program IntelliTest zostanie do wywołania metody test sparametryzowany **MaxRuns** razy z różnymi elementami wejściowymi.
-* Jeśli wykonywany kod jest deterministyczna, IntelliTest potrwa ścieżką wykonywania różnych każdorazowo. Jednak w niektórych warunkach wykonywany kod może wykonać ścieżką wykonywania podjętą już wcześniej, za pomocą różnych danych wejściowych.
-* IntelliTest zlicza liczbę ścieżek wykonywania unikatowy znajdzie; Ta liczba jest ograniczona przez **MaxRunsWithUniquePaths** opcji.
+* IntelliTest wywoła sparametryzowanej metody testowej do **MaxRuns** razy przy użyciu różnych danych wejściowych testu.
+* Jeśli wykonany kod jest deterministyczny, IntelliTest będzie wykonywać inną ścieżkę wykonania za każdym razem. Jednak w niektórych warunkach wykonany kod może być zgodny ze ścieżką wykonywania, która została już wcześniej wykonana, z różnymi danymi wejściowymi.
+* IntelliTest zlicza liczbę unikatowych ścieżek wykonywania, które znajdzie; Ta liczba jest ograniczona przez opcję **MaxRunsWithUniquePaths** .
 
 <a name="maxexceptions"></a>
 ## <a name="maxexceptions"></a>MaxExceptions
 
-Maksymalna liczba wyjątków, które mogą występować przed Eksploracja jest zatrzymywane.
+Maksymalna liczba wyjątków, które można napotkać przed zatrzymaniem eksploracji.
 
-Motywacją za tej prezentacji powiązany jest Zatrzymaj eksplorację kodu, który zawiera wiele błędów. Jeśli program IntelliTest znajdzie zbyt wiele błędów w kodzie, Eksploracja została zatrzymana.
+Uzasadnienie związane z badaniem polega na zatrzymaniu eksploracji kodu, który zawiera wiele błędów. Jeśli IntelliTest odnajdzie zbyt wiele błędów w kodzie, eksploracja zostanie zatrzymana.
 
 <a name="testexcludepathboundsexceeded"></a>
 ## <a name="testexcludepathboundsexceeded"></a>TestExcludePathBoundsExceeded
 
-Ścieżki wykonywania, które przekraczają granice skonfigurowanej ścieżki [MaxCalls](#maxcalls), [MaxBranches](#maxbranches), [MaxStack](#maxstack), i [MaxConditions](#maxconditions) są ignorowane.
+Ścieżki wykonywania, które przekraczają skonfigurowane granice ścieżki [MaxCalls](#maxcalls), [MaxBranches](#maxbranches), [MaxStack](#maxstack)i [MaxConditions](#maxconditions) , są ignorowane.
 
-Motywacją za tej prezentacji powiązany jest do czynienia z testami niepowodujące (najprawdopodobniej). Gdy program IntelliTest osiągnie Eksplorowanie powiązane, takie jak [MaxCalls](#maxcalls), [MaxBranches](#maxbranches), [MaxStack](#maxstack), lub [MaxConditions](#maxconditions), zakłada się czy test nie będzie niepowodujące procesu, a nie spowoduje przepełnienie stosu w dalszej. Może stwarzać problemy do innych środowisk testowych w takich przypadkach testowych, a ten atrybut zapewnia sposób zapobiec IntelliTest wysyłających przypadków testowych dla procesów potencjalnie niepowodujące lub przypadków testowych, które powodują przepełnienia stosu.
+Uzasadnienie związane z badaniem ma na celu rozpatrzenie (najprawdopodobniej) testów niekończących się. Gdy IntelliTest osiągnie powiązane poszukiwanie, takie jak [MaxCalls](#maxcalls), [MaxBranches](#maxbranches), [MaxStack](#maxstack)lub [MaxConditions](#maxconditions), zakłada, że test nie będzie procesem niekończącym i nie spowoduje przepełnienia stosu w późniejszym czasie. Takie przypadki testowe mogą stanowić problemy z innymi platformami testowymi, a ten atrybut umożliwia zapobieganie emitowaniu przypadków testowych dla potencjalnie niekończących się procesów lub przypadków testowych, które spowodują przepełnienie stosu.
 
 <a name="testemissionfilter"></a>
 ## <a name="testemissionfilter"></a>TestEmissionFilter
 
-Wskazuje typy testów, które powinny wysyłać IntelliTest. Możliwe wartości to:
+Wskazuje typy testów, które IntelliTest powinny emitować. Możliwe wartości to:
 
-* **Wszystkie** -emitować testy dla wszystkim, łącznie z założeń naruszenia.
-* **FailuresAndIncreasedBranchHits** (domyślnie) — emitują testów dla wszystkich unikatowych błędów i zawsze, gdy przypadek testowy, wydłuża pokrycia w wartości clientauthtrustmode [TestEmissionBranchHits](#testemissionbranchhits).
-* **FailuresAndUniquePaths** — emitować testów dla wszystkich niepowodzeń testów funkcji IntelliTest znajduje, a także dla każdej dane wejściowe testu, która powoduje ścieżką wykonywania unikatowy.
-* **Błędy** -emitować testy tylko błędów.
+* **Wszystkie** -Emituj testy dla wszystkiego, w tym naruszenia założeń.
+* **FailuresAndIncreasedBranchHits** (domyślnie) — Emituj testy dla wszystkich unikatowych błędów, a gdy przypadek testowy zwiększy pokrycie jako kontrolowane przez [TestEmissionBranchHits](#testemissionbranchhits).
+* **FailuresAndUniquePaths** -Emituj testy dla wszystkich niepowodzeń IntelliTest znalezionych, a także dla każdego testu wejściowego, który powoduje unikatową ścieżkę wykonywania.
+* **Błędy** — Emituj testy tylko dla niepowodzeń.
 
 <a name="testemissionbranchhits"></a>
 ## <a name="testemissionbranchhits"></a>TestEmissionBranchHits
 
-W zależności od bieżącego [TestEmissionFilter](#testemissionfilter) ustawienia programu IntelliTest emituje nowe przypadki testowe z podczas obejmują one gałęzi w programie, który nie został objęty przed.
+W zależności od bieżącego ustawienia [TestEmissionFilter](#testemissionfilter) , IntelliTest emituje nowe przypadki testowe, gdy obejmują gałąź w programie, który nie został uwzględniony wcześniej.
 
-**TestEmissionBranchHits** ustawienie określa, jeśli program IntelliTest tylko należy rozważyć, czy gałęzi zostało omówione w ogóle (**TestEmissionBranchHits = 1**), jeśli test objętych usługą, jego raz lub dwa razy ( **TestEmissionBranchHits = 2**), i tak dalej.
+Ustawienie **TestEmissionBranchHits** określa, czy IntelliTest należy tylko rozważyć, czy gałąź została pokryte w ogóle (**TestEmissionBranchHits = 1**), jeśli test został objęty jedną lub dwa razy (**TestEmissionBranchHits = 2**) i tak dalej.
 
-**TestEmissionBranchHits = 1** dadzą bardzo małe zestawy testów, która będzie obejmować wszystkie gałęzie można skontaktować się z funkcją IntelliTest. W szczególności ten zestaw testów obejmują również wszystkie bloki podstawowe i instrukcje, który osiągnął.
+**TestEmissionBranchHits = 1** spowoduje utworzenie bardzo małego zestawu testów, który będzie obejmować wszystkie gałęzie IntelliTest. W szczególności ten zestaw testów obejmuje również wszystkie podstawowe bloki i instrukcje, które zostały osiągnięte.
 
-Wartość domyślna tej opcji to **TestEmissionBranchHits = 2**, które mają bardziej ekspresyjnego zestaw testów, który jest również lepszą dostosowane do wykrywania błędów w przyszłości regresji.
+Wartość domyślna dla tej opcji to **TestEmissionBranchHits = 2**, która generuje bardziej wyraźny zestaw testów, który jest również lepiej dostosowany do wykrywania przyszłych błędów regresji.
 
-## <a name="got-feedback"></a>Czy chcesz przesłać opinię?
+## <a name="got-feedback"></a>Masz opinię?
 
-Opublikuj swoje pomysły i funkcji żądania na [społeczności deweloperów](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
+Publikuj swoje pomysły i żądania funkcji w [społeczności deweloperów](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).

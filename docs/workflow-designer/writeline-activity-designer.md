@@ -1,43 +1,43 @@
 ---
-title: Projektant przepływu pracy — WriteLine, Projektant działań
+title: Projektant przepływu pracy — Projektant działań
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.WriteLine.UI
 ms.assetid: 1b5f29a8-b7fd-477e-949e-2f689cae3c96
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 17dd6e3c617749d82533d8bccb7f0caaa073ac26
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 475755fed96f8341c45b8260b414658967b3284c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838623"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649754"
 ---
 # <a name="writeline-activity-designer"></a>WriteLine, projektant działań
 
-**WriteLine** projektanta działań służy do tworzenia i konfigurowania <xref:System.Activities.Statements.WriteLine> działania.
+Projektant działań **WriteLine** służy do tworzenia i konfigurowania działania <xref:System.Activities.Statements.WriteLine>.
 
 ## <a name="the-writeline-activity"></a>Działanie WriteLine
 
-<xref:System.Activities.Statements.WriteLine> Działanie zapisuje tekst na określony <xref:System.IO.TextWriter> obiektu. Jeśli nie <xref:System.IO.TextWriter> jest określony, <xref:System.Activities.Statements.WriteLine> zapisuje tekst w konsoli.
+Działanie <xref:System.Activities.Statements.WriteLine> zapisuje tekst do określonego <xref:System.IO.TextWriter> obiektu. Jeśli nie <xref:System.IO.TextWriter> jest określony, <xref:System.Activities.Statements.WriteLine> zapisuje tekst w konsoli programu.
 
-### <a name="using-the-writeline-activity-designer"></a>Za pomocą WriteLine, Projektant działań
+### <a name="using-the-writeline-activity-designer"></a>Korzystanie z projektanta działań WriteLine
 
-Dostęp do **WriteLine** projektanta działań w **podstawowych** kategorii **przybornika**. **WriteLine** projektanta działań mogą być przeciągnięte z **przybornika** i porzucić do powierzchni projektanta przepływów pracy wszędzie tam, gdzie działań są zazwyczaj umieszczane, takie jak wewnątrz <xref:System.Activities.Statements.Sequence>. Spowoduje to utworzenie <xref:System.Activities.Statements.WriteLine> działanie przy użyciu domyślnego <xref:System.Activities.Activity.DisplayName%2A> z WriteLine. <xref:System.Activities.Activity.DisplayName%2A> Mogą być edytowane w nagłówku **WriteLine** projektanta działań lub **DisplayName** pola siatki właściwości.
+Dostęp do projektanta działań **WriteLine** w kategorii elementy **pierwotne** w **przyborniku**. Projektant działań **WriteLine** można przeciągnąć z **przybornika** i porzucić na Projektant przepływu pracy powierzchnię, wszędzie tam, gdzie działania są zwykle umieszczane, na przykład wewnątrz <xref:System.Activities.Statements.Sequence>. Spowoduje to utworzenie działania <xref:System.Activities.Statements.WriteLine> z domyślną <xref:System.Activities.Activity.DisplayName%2A> WriteLine. @No__t_0 można edytować w nagłówku projektanta działań **WriteLine** lub w polu **DisplayName** siatki właściwości.
 
 ### <a name="the-writeline-properties"></a>Właściwości WriteLine
 
-W poniższej tabeli przedstawiono <xref:System.Activities.Statements.WriteLine> właściwości i w tym artykule opisano, jak są używane w projektancie. Te właściwości można edytować w siatce właściwości, a niektóre z nich mogą być edytowane na powierzchni projektanta przepływów pracy.
+W poniższej tabeli przedstawiono właściwości <xref:System.Activities.Statements.WriteLine> i opisano sposób ich używania w projektancie. Te właściwości można edytować w siatce właściwości, a niektóre z nich można edytować na Projektant przepływu pracy powierzchni.
 
 |Nazwa właściwości|Wymagane|Użycie|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Przyjazna nazwa <xref:System.Activities.Statements.WriteLine> działania. Wartość domyślna to WriteLine. Mimo że <xref:System.Activities.Activity.DisplayName%2A> nie jest bezwzględnie konieczne jest najlepszym rozwiązaniem jest użycie jednego.|
-|<xref:System.Activities.Statements.WriteLine.Text%2A>|False|Tekst do zapisu. Aby ustawić właściwości, wpisz wyrażenie języka Visual Basic w **tekstu** polu na **WriteLine** działanie projektanta lub w siatce właściwości.|
-|<xref:System.Activities.Statements.WriteLine.TextWriter%2A>|False|<xref:System.IO.TextWriter> Do której <xref:System.Activities.Statements.WriteLine> zapisuje <xref:System.Activities.Statements.WriteLine.Text%2A>. Wartość domyślna to konsoli.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Przyjazna nazwa działania <xref:System.Activities.Statements.WriteLine>. Wartość domyślna to WriteLine. Mimo że <xref:System.Activities.Activity.DisplayName%2A> nie jest ściśle wymagane, najlepszym rozwiązaniem jest użycie jednego z nich.|
+|<xref:System.Activities.Statements.WriteLine.Text%2A>|False|Tekst do zapisania. Aby ustawić właściwość, wpisz wyrażenie Visual Basic w polu **tekstowym** w projektancie aktywności **WriteLine** lub w siatce właściwości.|
+|<xref:System.Activities.Statements.WriteLine.TextWriter%2A>|False|@No__t_0, do której <xref:System.Activities.Statements.WriteLine> zapisuje <xref:System.Activities.Statements.WriteLine.Text%2A>. Wartością domyślną jest konsola programu.|
 
 ## <a name="see-also"></a>Zobacz także
 

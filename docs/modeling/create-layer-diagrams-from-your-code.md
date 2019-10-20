@@ -7,17 +7,17 @@ helpviewer_keywords:
 - dependency diagrams
 - diagrams - modeling, layer
 - constraints, architectural
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4a4d2c1600558e4c31c6dd12b85f931a83e7ba7
-ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
+ms.openlocfilehash: 573d03761bc4d8ccddf666dbc39cb8301d7c9afa
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70766227"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654132"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Tworzenie diagramów zależności z kodu
 
@@ -27,7 +27,7 @@ Aby wizualizować architekturę logiczną wysokiego poziomu systemu oprogramowan
 
 Diagram zależności umożliwia organizowanie elementów rozwiązania programu Visual Studio w logiczne, abstrakcyjne grupy o nazwie *warstwy*. Można użyć warstw do opisania głównych zadań wykonywanych przez te artefakty lub główne składniki systemu. Każda warstwa może zawierać innych warstwy opisujące bardziej szczegółowe zadania. Można również określić zamierzone lub istniejące *zależności* między warstwami. Te zależności, które są reprezentowane jako strzałki, wskazują, które warstwy mogą używać lub obecnie używają funkcje reprezentowane przez inne warstwy. Aby utrzymać kontrolę architektury kodu, wyświetl zamierzone zależności na diagramie i przeprowadź walidację kodu na podstawie diagramu.
 
-[Plików Weryfikowanie zależności architektury w czasie rzeczywistym](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
+[Wideo: Weryfikuj zależności architektury w czasie rzeczywistym](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
 
 ## <a name="CreateDiagram"></a>Tworzenie diagramu zależności
 
@@ -70,7 +70,7 @@ Przed utworzeniem diagramu zależności upewnij się, że rozwiązanie ma projek
 
 4. Utwórz nowy diagram zależności dla rozwiązania przy użyciu menu **Architektura**
 
-5. Zaznacz wszystkie węzły na mapie kodu (Użyj _klawisza Ctrl_ + _A_lub Skorzystaj z opcji _przesuwania_ , naciskając klawisz Shift przed kliknięciem, przeciągnij i zwolnij.
+5. Zaznacz wszystkie węzły na mapie kodu (Użyj _klawisza Ctrl_  + _A_lub Skorzystaj z opcji wyboru przedziału, naciskając klawisz _SHIFT_ przed kliknięciem, przeciągnięciem i wydaniem.
 
 6. Przeciągnij i upuść, lub skopiuj i wklej wybrane elementy do nowego diagramu walidacji zależności.
 
@@ -85,7 +85,7 @@ Przed utworzeniem diagramu zależności upewnij się, że rozwiązanie ma projek
 
  Aby sprawdzić, czy połączony element obsługuje walidację, Otwórz **Eksploratora warstw** i sprawdź Właściwość **obsługuje walidację** elementu. Zobacz [Zarządzanie łączami do artefaktów](#Managing).
 
-|**To**|**Wykonaj następujące kroki**|
+|**Do**|**Wykonaj następujące kroki**|
 |-|-|
 |Utworzyć warstwę dla pojedynczego artefakt|<ol><li>Przeciągnij element na diagram zależności z następujących źródeł:<br /><br /> <ul><li>**Eksplorator rozwiązań**<br /><br />         Możesz na przykład przeciągać pliki lub projekty.</li><li>Mapy kodu<br /><br />         Zapoznaj się z [zależnościami mapy w swoich rozwiązaniach](../modeling/map-dependencies-across-your-solutions.md) i [korzystaj z map kodu do debugowania aplikacji](../modeling/use-code-maps-to-debug-your-applications.md).</li><li>**Widok klasy** lub **Przeglądarka obiektów**</li></ul><br />     Warstwy jest wyświetlana na diagramie i jest połączona z artefaktem.</li><li>Zmień nazwę warstwy, aby odzwierciedlała obowiązki skojarzonego kodu lub artefaktów.</li></ol> **Ważne:**  Przeciąganie plików binarnych do diagramu zależności nie powoduje automatycznego dodania odwołań do projektu modelowania. Musisz ręcznie dodać do projektu modelowania pliki binarne, które chcesz walidować. **Aby dodać pliki binarne do projektu modelowania** <ol><li>W **Eksplorator rozwiązań**Otwórz menu skrótów dla projektu modelowania, a następnie wybierz **Dodaj istniejący element**.</li><li>W oknie dialogowym **Dodaj istniejący element** przejdź do plików binarnych, zaznacz je, a następnie wybierz **przycisk OK**.     Pliki binarne pojawią się w projekcie modelowania.</li><li>W **Eksplorator rozwiązań**wybierz plik binarny, który został dodany, a następnie naciśnij klawisz **F4** , aby otworzyć okno **Właściwości** .</li><li>Dla każdego pliku binarnego ustaw właściwość **Akcja kompilacji** na **Sprawdź poprawność**.</li></ol>|
 |Utwórz jedną warstwę dla wszystkich zaznaczonych artefaktów|Przeciągnij wszystkie artefakty do diagramu zależności w tym samym czasie.<br /><br /> Warstw pojawi się na diagramie i będzie połączona z artefaktami.|
@@ -115,11 +115,11 @@ Przed utworzeniem diagramu zależności upewnij się, że rozwiązanie ma projek
 
 2. Wykonaj następujące zadania, aby zarządzać tymi łączami:
 
-|**To**|**W Eksploratorze warstwy**|
+|**Do**|**W Eksploratorze warstwy**|
 |-|-|
 |Usuwanie łącza między warstwą i artefaktem|Otwórz menu skrótów dla łącza artefaktu, a następnie wybierz polecenie **Usuń**.|
-|Przenoszenie łącza z jednej warstwy na drugą|Przeciągnij łącze artefaktu do istniejącej warstwy na diagramie.<br /><br /> oraz<br /><br /> 1.  Otwórz menu skrótów dla łącza artefaktu, a następnie wybierz polecenie **Wytnij**.<br />2.  Na diagramie zależności Otwórz menu skrótów dla warstwy, a następnie wybierz **Wklej**.|
-|Kopiowanie łącza z jednej warstwy na drugą|1.  Otwórz menu skrótów dla łącza artefaktu, a następnie wybierz **Kopiuj**.<br />2.  Na diagramie zależności Otwórz menu skrótów dla warstwy, a następnie wybierz **Wklej**.|
+|Przenoszenie łącza z jednej warstwy na drugą|Przeciągnij łącze artefaktu do istniejącej warstwy na diagramie.<br /><br /> oraz<br /><br /> 1. Otwórz menu skrótów dla łącza artefaktu, a następnie wybierz polecenie **Wytnij**.<br />2. na diagramie zależności Otwórz menu skrótów dla warstwy, a następnie wybierz **Wklej**.|
+|Kopiowanie łącza z jednej warstwy na drugą|1. Otwórz menu skrótów dla łącza artefaktu, a następnie wybierz **Kopiuj**.<br />2. na diagramie zależności Otwórz menu skrótów dla warstwy, a następnie wybierz **Wklej**.|
 |Tworzenie nowej warstwy z istniejącego łącza artefaktu|Przeciągnij łącze artefaktu do pustego obszaru na diagramie.|
 |Sprawdź, czy połączony artefakt obsługuje walidację względem diagramu zależności.|Przyjrzyj się kolumnie **obsługuje walidację** dla linku artefaktu.|
 
@@ -136,7 +136,7 @@ Przed utworzeniem diagramu zależności upewnij się, że rozwiązanie ma projek
 ## <a name="EditDependencies"></a>Edycja warstw i zależności w celu pokazania zamierzonego projektu
  Aby opisać zmiany, które planujesz wprowadzić do systemu lub zamierzonej architektury, Edytuj diagram zależności:
 
-|**To**|**Wykonaj następujące kroki**|
+|**Do**|**Wykonaj następujące kroki**|
 |-|-|
 |Zmień lub ogranicz kierunek zależności|Ustaw jej właściwość **Direction** .|
 |Tworzenie nowych zależności|Użyj **zależności** i **dwukierunkowych narzędzi zależności** .<br /><br /> Aby narysować wiele zależności, kliknij dwukrotnie narzędzie. Gdy skończysz, wybierz narzędzie **wskaźnik** lub naciśnij klawisz **ESC** .|
@@ -159,8 +159,8 @@ Przed utworzeniem diagramu zależności upewnij się, że rozwiązanie ma projek
 ## <a name="see-also"></a>Zobacz też
 
 - [Obsługa wersji dla architektury i narzędzi modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#edition-support-for-architecture-and-modeling-tools)
-- [Plików Weryfikowanie zależności architektury w czasie rzeczywistym](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
-- [Diagramy zależności: informacje](../modeling/layer-diagrams-reference.md)
-- [Diagramy zależności: wskazówki](../modeling/layer-diagrams-guidelines.md)
+- [Wideo: Weryfikuj zależności architektury w czasie rzeczywistym](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
+- [Diagramy zależności: Odwołanie](../modeling/layer-diagrams-reference.md)
+- [Diagramy zależności: Wskazówki](../modeling/layer-diagrams-guidelines.md)
 - [Weryfikacja kodu przy użyciu diagramów zależności](../modeling/validate-code-with-layer-diagrams.md)
 - [Tworzenie wizualizacji kodu](../modeling/visualize-code.md)

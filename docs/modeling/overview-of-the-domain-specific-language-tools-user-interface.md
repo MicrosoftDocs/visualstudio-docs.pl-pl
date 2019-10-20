@@ -6,48 +6,48 @@ f1_keywords:
 - vs.dsltools.dsldesigner.editor
 helpviewer_keywords:
 - Domain-Specific Language Tools, user interface
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bcc16b5287e4980d94a7cbcc4dff4d1f5f63d00
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e9a99eef692eb776908c6b8c4a32eb361092855a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808338"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658306"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Omówienie interfejsu użytkownika narzędzi językowych właściwych dla domeny
-Przy pierwszym otwarciu rozwiązania narzędzia języka specyficznego dla domeny (narzędzia DSL) w programie Visual Studio, interfejs użytkownika będzie przypominał poniższej ilustracji.
+Po pierwszym otwarciu rozwiązania narzędzia języka specyficznego dla domeny (narzędzia DSL) w programie Visual Studio interfejs użytkownika będzie wyglądał na poniższym obrazie.
 
  ![Projektant DSL](../modeling/media/dsl_designer.png)
 
- W poniższej tabeli opisano, jak są używane elementy interfejsu użytkownika.
+ W poniższej tabeli opisano, jak są używane części interfejsu użytkownika.
 
 |**Element**|**Definicja**|
 |-|-|
-|Diagram|Model domeny są wyświetlane na diagramie.<br /><br /> Diagram ma dwie strony. Z jednej strony definiuje typy elementów w ramach modeli. Druga strona definiuje wygląd swoje modele na ekranie.|
-|Przybornik|Przeciągnij narzędzia z przybornika, aby dodać klasy domeny i kształtów typów do diagramu. Aby dodać relacje, łączników i mapowania kształtów, kliknij narzędzie, a następnie kliknij węzeł źródła na diagramie, a następnie węzeł docelowy.|
-|Eksplorator modelu DSL|**Eksplorator modelu DSL** jest wyświetlany, gdy w definicji DSL jest aktywnym oknem. Język DSL jest wyświetlany jako drzewa. Eksplorator modelu DSL pozwala edytować funkcje modelu, które nie są wyświetlane na diagramie. Na przykład Dodaj elementy przybornika i przełączać w trakcie procesu walidacji za pomocą **Eksplorator DSL**.|
-|Okno Szczegóły języka DSL|**Szczegóły języka DSL** okno pokazuje właściwości domeny elementy modelu, które pozwalają kontrolować sposób wyświetlania elementów i jak elementy są kopiowane i usunąć.<br /><br /> -Domyślnie **szczegóły języka DSL** okno jest wyświetlane obok pola **lista błędów** i **dane wyjściowe** systemu windows.|
+|Diagram|Na diagramie zostanie wyświetlony model domeny.<br /><br /> Diagram ma dwie strony. Jedna strona definiuje typy elementów w modelach. Druga strona definiuje sposób wyświetlania modeli na ekranie.|
+|Przybornik|Przeciągnij narzędzia z przybornika, aby dodać klasy domeny i typy kształtów do diagramu. Aby dodać relacje, łączniki i mapy kształtów, kliknij narzędzie, a następnie kliknij węzeł źródłowy na diagramie, a następnie węzeł docelowy.|
+|Eksplorator modelu DSL|**Eksplorator DSL** jest wyświetlany, gdy Definicja DSL jest oknem aktywnym. Pokazuje DSL jako drzewo. Eksplorator DSL umożliwia edytowanie funkcji modelu, które nie są wyświetlane na diagramie. Na przykład możesz dodać elementy przybornika i przełączać się do procesu walidacji za pomocą **Eksploratora DSL**.|
+|Okno szczegółów DSL|W oknie **Szczegóły DSL** są wyświetlane właściwości elementów modelu domeny, które umożliwiają kontrolowanie sposobu wyświetlania elementów oraz sposobu kopiowania i usuwania elementów.<br /><br /> -Domyślnie okno **Szczegóły DSL** pojawia się obok okna **Lista błędów** i **danych wyjściowych** .|
 
 ## <a name="the-domain-model-diagram"></a>Diagram modelu domeny
- Diagram modelu domeny jest podzielona na dwie części. Po jednej stronie diagramu zawiera określone elementy i relacje w modelu. Druga strona pokazuje, jak model, który jest wyświetlany i zawiera kształty, które są używane do wyświetlania elementów i właściwości diagramu modelu. Na poniższej ilustracji przedstawiono elementy diagramu.
+ Diagram modelu domeny jest podzielony na dwie części. Jedna ze stron diagramu pokazuje elementy i relacje w modelu. Druga strona pokazuje, jak model ma być wyświetlany, i zawiera kształty, które są używane do wyświetlania elementów i właściwości diagramu modelu. Na poniższej ilustracji przedstawiono elementy diagramu.
 
- ![Projektant DSL za pomocą toru](../modeling/media/dsl_desinger.png)
+ ![Projektant DSL z torem](../modeling/media/dsl_desinger.png)
 
- W poniższej tabeli opisano niektóre elementy diagramu modelu domeny.
+ W poniższej tabeli objaśniono niektóre elementy diagramu modelu domeny.
 
-|**Termin**|**Definicja**|
+|**Mandat**|**Definicja**|
 |-|-|
-|Klasa domeny|Klasy domeny są typy elementów w ramach modeli.<br /><br /> Klasy domeny może występować więcej niż jeden raz na diagramie, jeśli jest to element docelowy więcej niż jedną relację.<br /><br /> Aby dodać klasę domeny, przeciągnij narzędzie klasę domeny z **przybornika** do **klasy i relacje** stronie diagramu.|
-|Relacja domeny|Relacje domeny są typy łączy między elementami w ramach modeli.<br /><br /> *Relacja osadzania* wskazuje, czy element docelowy jest właścicielem lub zawartej w elemencie źródłowym i jest wyświetlany jako linię ciągłą. Każdy element w modelu należy celem jedna relacja osadzania, tak, czy model formularzy drzewa. A *odwoływać się do relacji* oznacza ogólne łącza między elementami modelu i jest wyświetlana jako linia przerywana. Każdy element może mieć dowolną liczbę łączy odnośnika.<br /><br /> Utwórz relację, klikając narzędzie **przybornika**, klikając klasy domeny źródłowej, a następnie klikając klasy docelowej.|
-|Kształty i łączniki|Kształty, określ, jak elementy modelu powinien być wyświetlany na diagram DSL., łączników określić wiersze na diagramie DSL, który może służyć do wyświetlania relacji.<br /><br /> Aby utworzyć łącznik lub kształt, przeciągnij narzędzie do **elementów diagramu** stronie diagramu.|
-|Mapowania kształtów|Mapowanie kształtów pojawia się jako linia na diagram modelu domeny, konsolidacji kształt do klasy domeny, który jest wyświetlany, lub łącznik do relacji domeny, który jest wyświetlany.|
+|Klasa domeny|Klasy domeny są typami elementów w modelach.<br /><br /> Klasa domeny może pojawić się więcej niż jeden raz w diagramie, jeśli jest elementem docelowym więcej niż jednej relacji.<br /><br /> Aby dodać klasę domeny, przeciągnij narzędzie klasy domeny z **przybornika** do strony **klasy i relacje** na diagramie.|
+|Relacja domeny|Relacje domen są typami linków między elementami modeli.<br /><br /> *Relacja osadzania* wskazuje, że element docelowy jest własnością lub znajduje się w elemencie źródłowym i pojawia się jako linia ciągła. Każdy element w modelu powinien być elementem docelowym jednej relacji osadzania, dzięki czemu model tworzy drzewo. *Relacja odwołania* wskazuje ogólny link między elementami modelu i pojawia się jako linia kreskowana. Każdy element może mieć dowolną liczbę linków odwołania.<br /><br /> Utwórz relację, klikając narzędzie w **przyborniku**, klikając klasę domena źródłowa, a następnie klikając klasę docelową.|
+|Kształty i łączniki|Kształty określają sposób wyświetlania elementów modelu na diagramie DSL. łączniki określają linie na diagramie DSL, których można użyć do wyświetlania relacji.<br /><br /> Aby utworzyć kształt lub łącznik, przeciągnij narzędzie do strony **elementy diagramu** na diagramie.|
+|Mapy kształtów|Mapa kształtów jest wyświetlana jako linia na diagramie modelu domeny, łącząca kształt z klasą domeny, która jest wyświetlana, lub łącznikiem z wyświetlaną relacją domeny.|
 
 ## <a name="see-also"></a>Zobacz też
 
 - [Przegląd narzędzi języka specyficznego dla domeny](../modeling/overview-of-domain-specific-language-tools.md)
-- [Słownik narzędzi języka specyficznego dla domeny](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [narzędzia języka specyficznego dla domeny słownik](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
 - [Dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md)

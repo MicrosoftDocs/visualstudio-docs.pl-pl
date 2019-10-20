@@ -1,45 +1,45 @@
 ---
-title: Projektant przepływu pracy — CancellationScope, Projektant działań
+title: Projektant przepływu pracy — Projektant działań CancellationScope
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.CancellationScope.UI
 ms.assetid: 2c85d663-b219-4142-9866-7693ffd46379
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43a818be208c7e07ef74a8f35923f3042bb8fad5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0a2fd36d81f774ca48cca170b8a4a256d73cf1f1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63009793"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650701"
 ---
 # <a name="cancellationscope-activity-designer"></a>CancellationScope, projektant działań
 
-**CancellationScope** projektanta działań służy do tworzenia i konfigurowania <xref:System.Activities.Statements.CancellationScope> działania.
+Projektant działań **CancellationScope** służy do tworzenia i konfigurowania działania <xref:System.Activities.Statements.CancellationScope>.
 
-## <a name="the-cancellationscope-activity"></a>Działania CancellationScope
+## <a name="the-cancellationscope-activity"></a>Działanie CancellationScope
 
-<xref:System.Activities.Statements.CancellationScope> Działanie umożliwia określenie działania wykonywania i anulowania logiki dla tego działania.
+Działanie <xref:System.Activities.Statements.CancellationScope> pozwala określić działanie dla logiki wykonywania i anulowania dla tego działania.
 
-### <a name="using-the-cancellationscope-activity-designer"></a>Za pomocą CancellationScope, Projektant działań
+### <a name="using-the-cancellationscope-activity-designer"></a>Korzystanie z projektanta działań CancellationScope
 
-**CancellationScope** projektanta działań można znaleźć w **transakcji** kategorii **przybornika**. Aby otworzyć **przybornika**, wybierz opcję **przybornika** kartę projektanta przepływów pracy. Można także wybrać **przybornika** z **widoku** menu lub naciśnij klawisz **Ctrl**+**Alt** + **X**.
+Projektanta działań **CancellationScope** można znaleźć w kategorii **transakcji** **przybornika**. Aby otworzyć **Przybornik**, wybierz kartę **przybornika** Projektant przepływu pracy. Alternatywnie wybierz pozycję **Przybornik** z menu **Widok** lub naciśnij **klawisze CTRL** +**Alt** +**X**.
 
-**CancellationScope** projektanta działań mogą być przeciągnięte z **przybornika** i porzucić do powierzchni projektanta przepływów pracy wszędzie tam, gdzie działań są umieszczane, takie jak wewnątrz <xref:System.Activities.Statements.Sequence>. Upuszczanie **CancellationScope** tworzy projektanta działań <xref:System.Activities.Statements.CancellationScope> działanie przy użyciu domyślnego <xref:System.Activities.Activity.DisplayName%2A> z CancellationScope. Edytuj <xref:System.Activities.Activity.DisplayName%2A> wartością w nagłówku **CancellationScope** projektanta działań. Można również edytować go w **DisplayName** pola siatki właściwości.
+Projektanta działań **CancellationScope** można przeciągnąć z **przybornika** i porzucić na Projektant przepływu pracy powierzchnię, wszędzie tam, gdzie działania są umieszczane, na przykład wewnątrz <xref:System.Activities.Statements.Sequence>. Porzucenie projektanta działań **CancellationScope** tworzy działanie <xref:System.Activities.Statements.CancellationScope> z domyślnym <xref:System.Activities.Activity.DisplayName%2A>em CancellationScope. Edytuj wartość <xref:System.Activities.Activity.DisplayName%2A> w nagłówku projektanta działań **CancellationScope** . Można go również edytować w polu **DisplayName** siatki właściwości.
 
-### <a name="the-cancellationscope-properties"></a>Właściwości działania CancellationScope
+### <a name="the-cancellationscope-properties"></a>Właściwości CancellationScope
 
-W poniższej tabeli przedstawiono <xref:System.Activities.Statements.CancellationScope> właściwości i w tym artykule opisano, jak są używane w projektancie. <xref:System.Activities.Activity.DisplayName%2A> Właściwości można edytować w siatce właściwości, ale inne właściwości, należy edytować na powierzchni projektanta przepływów pracy.
+W poniższej tabeli przedstawiono właściwości <xref:System.Activities.Statements.CancellationScope> i opisano sposób ich używania w projektancie. Właściwość <xref:System.Activities.Activity.DisplayName%2A> można edytować w siatce właściwości, ale inne właściwości muszą być edytowane na Projektant przepływu pracy powierzchni.
 
 |Nazwa właściwości|Wymagane|Użycie|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Opcjonalna nazwa przyjazna <xref:System.Activities.Statements.CancellationScope> działania. Wartość domyślna to CancellationScope. Mimo że <xref:System.Activities.Activity.DisplayName%2A> wartość nie jest bezwzględnie konieczne, jest najlepszym rozwiązaniem, aby użyć jednego.|
-|<xref:System.Activities.Statements.CancellationScope.Body%2A>|Prawda|Określa działanie anulowania, który znajduje się logiki. Aby dodać <xref:System.Activities.Statements.CancellationScope.Body%2A> działania, listy działanie z **przybornika** do **treści** polu na **CancellationScope** Projektant działań. Dodaj tekst wskazówki "Upuść działanie tutaj".|
-|<xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A>|Prawda|Określa działania, który jest wykonywany w przypadku anulowania. Aby dodać <xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A> działania, listy działanie z **przybornika** do **CancellationHandler** polu na **CancellationScope** Projektant działań. Dodaj tekst wskazówki "Upuść działanie tutaj".|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Opcjonalna przyjazna nazwa działania <xref:System.Activities.Statements.CancellationScope>. Wartość domyślna to CancellationScope. Mimo że wartość <xref:System.Activities.Activity.DisplayName%2A> nie jest ściśle wymagana, najlepszym rozwiązaniem jest użycie jednego z nich.|
+|<xref:System.Activities.Statements.CancellationScope.Body%2A>|Oznacza|Określa działanie, dla którego podano logikę anulowania. Aby dodać działanie <xref:System.Activities.Statements.CancellationScope.Body%2A>, Usuń działanie z **przybornika** do pola **treść** w projektancie działań **CancellationScope** . Dodaj tekst wskazówki "upuść działanie tutaj".|
+|<xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A>|Oznacza|Określa działanie, które jest wykonywane w przypadku anulowania. Aby dodać działanie <xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A>, upuść działanie z **przybornika** do pola **CancellationHandler** w projektancie działań **CancellationScope** . Dodaj tekst wskazówki "upuść działanie tutaj".|
 
 ## <a name="see-also"></a>Zobacz także
 

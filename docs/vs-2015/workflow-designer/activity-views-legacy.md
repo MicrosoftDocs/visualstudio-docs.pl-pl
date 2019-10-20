@@ -1,5 +1,5 @@
 ---
-title: Widoki działania (starsza wersja) | Dokumentacja firmy Microsoft
+title: Widoki działań (starsze) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -10,33 +10,32 @@ helpviewer_keywords:
 - activity views
 ms.assetid: 83dc68cd-2cb2-45c2-9a6e-10d82053171a
 caps.latest.revision: 5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 62b3c9185226512ff28c8d028cd0ba7d33b0f12f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c7d8a13890814b56865200acf95c8e0565b52b5a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977455"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655208"
 ---
 # <a name="activity-views-legacy"></a>Widoki działania (starsza wersja)
-Wiele działań, dostarczone przez [!INCLUDE[wf](../includes/wf-md.md)], które przepływy pracy są składane, zawiera kilka widoków projektu dostępne w starszych [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Podczas przeciągania projektanta działań z **przybornika** na powierzchnię projektu, a następnie zawsze wtedy, gdy działanie zostanie wybrana, można przełączać się między widokami różnorodności przy użyciu **przepływu pracy**menu lub klikając prawym przyciskiem myszy wybrane działanie. Ponadto podczas przesuwania wskaźnika nad nazwa wybranego działania, listy rozwijanej zbiór kart pojawia się której można przełączać się między różnymi widokami.  
-  
- Każde działanie ma co najmniej jeden widok; jest to domyślny widok wyświetlany podczas przeciągania projektanta działań z **przybornika** na powierzchnię projektu. Widok domyślny to działanie jest dostępne jako **wyświetlić [Typ działania]** opcji menu i karty, na przykład **widoku równoległe**. Większość działań ma dodatkowe widoki i różnych działań może mieć różne widoki. Na przykład [działania TransactionScopeActivity](http://go.microsoft.com/fwlink?LinkID=65093) aktywności zawiera widok wynagrodzenie i [EventHandlingScopeActivity](http://go.microsoft.com/fwlink?LinkID=65030) działanie ma zdarzenia widoku. Wiele działań, które są dostarczane z programem Windows Workflow Foundation ma **widoku anulowania obsługi** i **widoku błędów** projektowaniu widoków do widoku [aktivity typu CancellationHandlerActivity](http://go.microsoft.com/fwlink?LinkID=65050) i [FaultHandlersActivity](http://go.microsoft.com/fwlink?LinkID=65055) skojarzonych z nimi.  
-  
- Poniższa lista zawiera nazwę i opis każdego widoku.  
-  
-|Opcja menu, karta|Opis|  
-|----------------------|-----------------|  
-|**Widok [Typ działania]**|Wybierz tę opcję menu lub kartę, aby wyświetlić domyślne graficzna reprezentacja wybranego działania.|  
-|**Wyświetl obsługę operacji anulowania**|Wybierz tę opcję menu lub karta widokami [aktivity typu CancellationHandlerActivity](http://go.microsoft.com/fwlink?LinkID=65050) skojarzone z wybranego działania.|  
-|**Obsługa błędów widoku**|Wybierz tę opcję menu lub karta widokami [FaultHandlersActivity](http://go.microsoft.com/fwlink?LinkID=65055) skojarzone z wybranego działania.|  
-|**Wyświetl procedurę obsługi**|Wybierz tę opcję menu lub karta widokami [CompensationHandlerActivity](http://go.microsoft.com/fwlink?LinkID=65053) skojarzonych z wybranym [działania TransactionScopeActivity](http://go.microsoft.com/fwlink?LinkID=65093).|  
-|**Program obsługi zdarzeń widoku**|Wybierz tę opcję menu lub karta widokami [działanie EventHandlersActivity](http://go.microsoft.com/fwlink?LinkID=65018) skojarzonych z wybranym [EventHandlingScopeActivity](http://go.microsoft.com/fwlink?LinkID=65030).|  
-  
- Uzyskać informacji o podobnych widokach, zobacz [sekwencyjne widoków przepływu pracy (starsza wersja)](../workflow-designer/sequential-workflow-views-legacy.md).  
-  
-## <a name="see-also"></a>Zobacz też  
- [Działania przepływu pracy w starszej wersji](../workflow-designer/legacy-workflow-activities.md)   
- [Widoki sekwencyjnego przepływu pracy (starsza wersja)](../workflow-designer/sequential-workflow-views-legacy.md)
+Wiele działań zapewnianych przez [!INCLUDE[wf](../includes/wf-md.md)], z których składają się przepływy pracy, ma kilka widoków projektu dostępnych w starszej [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Gdy przeciągniesz projektanta aktywności z **przybornika** na powierzchnię projektu, a następnie za każdym razem, gdy wybierzesz działanie, możesz przełączać się między różnymi widokami projektu za pomocą menu **przepływ pracy** lub klikając prawym przyciskiem myszy zaznaczone interakcyjn. Ponadto, gdy przesuwasz wskaźnik myszy nad nazwą wybranego działania, zostanie wyświetlona lista rozwijana z kartami, za pomocą której można przełączać się między różnymi widokami.
+
+ Każde działanie ma co najmniej jeden widok; jest to domyślny widok pokazywany po przeciągnięciu projektanta działań z **przybornika** na powierzchnię projektu. Ten domyślny widok działania jest dostępny jako opcja **Widok [Activity type]** w menu i karcie, na przykład, **Widok Parallel**. Większość działań ma dodatkowe widoki i różne działania mogą mieć różne widoki. Na przykład działanie [TransactionScopes](http://go.microsoft.com/fwlink?LinkID=65093) ma widok kompensacja, a działanie [EventHandlingScopeActivity](http://go.microsoft.com/fwlink?LinkID=65030) ma widok zdarzeń. Wiele działań, które są dołączone Windows Workflow Foundation ma **program obsługi anulowania wyświetlania** i **Widok projektu błędów** , umożliwia wyświetlenie [działania CancellationHandlerActivity](http://go.microsoft.com/fwlink?LinkID=65050) i skojarzonych z nimi [FaultHandlersActivity](http://go.microsoft.com/fwlink?LinkID=65055) .
+
+ W poniższej tabeli wymieniono nazwy i opisy poszczególnych widoków.
+
+|Opcja menu/karty|Opis|
+|----------------------|-----------------|
+|**Widok [typ działania]**|Wybierz to menu lub opcję karty, aby wyświetlić domyślną reprezentację wybranego działania.|
+|**Wyświetl procedurę obsługi anulowania**|Zaznacz to menu lub widok opcji karty, aby wyświetlić [działania CancellationHandlerActivity](http://go.microsoft.com/fwlink?LinkID=65050) skojarzone z wybranym działaniem.|
+|**Wyświetl procedurę obsługi błędów**|Zaznacz to menu lub widok opcji karty, aby wyświetlić [FaultHandlersActivity](http://go.microsoft.com/fwlink?LinkID=65055) skojarzone z wybranym działaniem.|
+|**Wyświetl program obsługi kompensacji**|Zaznacz to menu lub widok opcji karty, aby wyświetlić [CompensationHandlerActivity](http://go.microsoft.com/fwlink?LinkID=65053) skojarzone z wybraną funkcją [TransactionScope](http://go.microsoft.com/fwlink?LinkID=65093).|
+|**Wyświetl obsługę zdarzeń**|Zaznacz to menu lub widok opcji karty, aby wyświetlić [EventHandlersActivity](http://go.microsoft.com/fwlink?LinkID=65018) skojarzone z wybranym [EventHandlingScopeActivity](http://go.microsoft.com/fwlink?LinkID=65030).|
+
+ Aby uzyskać informacje o podobnych widokach, zobacz [sekwencyjne widoki przepływu pracy (starsza wersja)](../workflow-designer/sequential-workflow-views-legacy.md).
+
+## <a name="see-also"></a>Zobacz też
+ [Starsze operacje przepływu pracy](../workflow-designer/legacy-workflow-activities.md) — [widoki sekwencyjnego przepływu pracy (starsza wersja)](../workflow-designer/sequential-workflow-views-legacy.md)

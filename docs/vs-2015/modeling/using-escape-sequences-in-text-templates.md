@@ -1,5 +1,5 @@
 ---
-title: Korzystanie z sekwencji unikowych w szablonach tekstowych | Dokumentacja firmy Microsoft
+title: Korzystanie z sekwencji ucieczki w szablonach tekstu | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -8,36 +8,36 @@ helpviewer_keywords:
 - text templates, escape sequences
 ms.assetid: 36fff542-2f42-460f-a2d5-03fc76817f3b
 caps.latest.revision: 31
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1f564200d0bdac56e975c2f2ab27439652247605
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8a45aa36ddce57141a7e1e851f7f0766b77015ee
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68183893"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659420"
 ---
 # <a name="using-escape-sequences-in-text-templates"></a>Korzystanie z sekwencji unikowych w szablonach tekstowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Można użyć sekwencji ucieczki w szablonach tekstowych, które mają być Generowanie tagi szablonu tekstu i (w kodzie języka C# tylko) do anulowania, znaki kontrolne i znaki cudzysłowu.  
-  
- Aby wydrukować znaczników otwierających i zamykających w bloku standardowy kod do pliku wyjściowego, ucieczki tagów w następujący sposób:  
-  
-```  
-\<# ... \#>  
-```  
-  
- Możesz tworzyć taki sam jak inne tekstu szablonu dyrektywy i kod bloku tagi.  
-  
- Blok tekstu zawiera ciągi używany jako znak ucieczki znaczniki szablonu tekstu, może użyć poniższej sekwencji ucieczki:  
-  
-- Jeśli tag szablonu tekstu jest poprzedzony parzystą liczbą ucieczki (\\) znaków szablonu analizatora będzie połowę znaki ucieczki a sekwencja jako tag szablonu tekstu. Na przykład, jeśli istnieją cztery znaki ucieczki w szablonie tekstowym, nastąpi dwa "\\" znaków w wygenerowanym pliku.  
-  
-- Jeśli tag szablonu tekstu jest poprzedzony nieparzystą liczbę ucieczki (\\) znaki, analizator składni szablonu będzie zawierać połowę "\\" znaków oraz samego znacznika (\<# lub #>). Tag nie jest uważany za tag szablonu tekstu.  
-  
-- Jeśli znaku ucieczki (\\) znak pojawia się gdziekolwiek w dowolnej kolejności niż gdzie specjalne znaków kontrolnych lub oferty (w języku C# tylko), znaku będą dane wyjściowe bezpośrednio.  
-  
-## <a name="see-also"></a>Zobacz też  
+Za pomocą sekwencji unikowych w szablonach tekstowych można generować Tagi szablonu tekstu i ( C# tylko w kodzie) do ucieczki znaków kontrolnych i cudzysłowów.
+
+ Aby wydrukować otwarte i zamykające Tagi dla standardowego bloku kodu do pliku wyjściowego, należy wprowadzić znaczniki w następujący sposób:
+
+```
+\<# ... \#>
+```
+
+ Można to zrobić z innymi dyrektywami szablonu tekstu i tagami bloków kodu.
+
+ Jeśli blok tekstu zawiera ciągi używane do ucieczki tagów szablonu tekstu, można użyć następujących sekwencji unikowych:
+
+- Jeśli tag szablonu tekstu jest poprzedzony parzystą liczbą znaków ucieczki (\\), Analizator szablonu będzie zawierał połowę znaków ucieczki i dołączył sekwencję jako tag szablonu tekstu. Na przykład jeśli w szablonie tekstowym istnieją cztery znaki ucieczki, w wygenerowanym pliku będą znajdować się dwa znaki "\\".
+
+- Jeśli tag szablonu tekstu jest poprzedzony nieparzystą liczbą znaków ucieczki (\\), Analizator szablonu będzie zawierał połowę znaków "\\" i sam tag (\< # lub # >). Tag nie jest traktowany jako tag szablonu tekstu.
+
+- Jeśli znak ucieczki (\\) pojawia się w dowolnym miejscu w dowolnej innej kolejności niż w przypadku ucieczki znaku kontrolnego lub cudzysłowu C# (tylko w przypadku), znak będzie wyprowadzany bezpośrednio.
+
+## <a name="see-also"></a>Zobacz też
  [Instrukcje: Generowanie szablonów z szablonów przy użyciu sekwencji ucieczki](../modeling/how-to-generate-templates-from-templates-by-using-escape-sequences.md)

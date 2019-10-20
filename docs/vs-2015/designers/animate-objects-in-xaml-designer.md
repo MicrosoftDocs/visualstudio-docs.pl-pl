@@ -1,44 +1,44 @@
 ---
-title: Animowanie obiektów w Projektancie XAML | Dokumentacja firmy Microsoft
+title: Animowanie obiektów w projektant XAML | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: fb88fa26-e835-47f5-9771-2f279441c83c
 caps.latest.revision: 11
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7846ade8dba2ce849acf62311e508c157b07dd3e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ea2fdf1f47385a9be26fa65a93b9104b2d864079
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68186737"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658022"
 ---
 # <a name="animate-objects-in-xaml-designer"></a>Animowanie obiektów w projektancie XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Tworzenie animacji w krótkim przenoszenie obiektów lub zanikanie je wewnątrz i na zewnątrz.  
-  
- Aby rozpocząć, Utwórz *scenorysu*. Scenorysu zawiera jeden lub więcej *osi czasu*. Ustaw *klatki kluczowe* na osi czasu, aby oznaczyć zmiany właściwości. Następnie po uruchomieniu animacji, program Blend argumentu zmiany właściwości w wyznaczonym okresie. Wynikiem jest płynne przejście. Można animować dowolnej właściwości, która należy do obiektu, nawet właściwości niewizualnej.  
-  
- Na poniższej ilustracji przedstawiono scenorysu o nazwie **MoveUp**. Oś czasu zawiera ramkami kluczowymi, który oznacza X i Y pozycja prostokąta. Po uruchomieniu ta animacja prostokąta bezproblemową z jednego miejsca do drugiego.  
-  
- ![](../designers/media/982f031a-74a3-414a-abc2-a0f41a741075.png "982f031a-74a3-414a-abc2-a0f41a741075")  
-  
- Dowiedz się, tworzenie animacji, obejrzyj te klipy wideo.  
-  
-|Obejrzyj krótki film wideo:|Instrukcje:|  
-|--------------------------|-------------------|  
-|![Skonfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [tworzenia osi czasu](http://www.popscreen.com/v/6A4eF/Microsoft-Expression-Blend-Creating-Timelines)|Tworzenie osi czasu i pracy z obiektami na osi czasu.|  
-|![Skonfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Dodaj klatki kluczowe i powtórz animację](http://www.popscreen.com/v/6A4fi/Microsoft-Expression-Blend-Adding-Keyframes-and-Repeating-an-Animation)|Dodaj ramkami kluczowymi, a następnie ustaw właściwości w każdej klatce kluczowej. Następnie uruchom obiektów animacji i obejrzyj płynne przejście między nimi.|  
-|![Skonfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [dodać wyzwalacze zdarzeń interakcji](http://www.popscreen.com/v/6A4e4/Microsoft-Expression-Blend-Adding-Event-Triggers-for-Interactivity)|Rozpocznij animację, gdy wystąpi zdarzenie. Na przykład uruchomić jeden po załadowaniu okna.|  
-|![Skonfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [animowanie kolorów](http://www.popscreen.com/v/6A4gv/Microsoft-Expression-Blend-Animating-Colors)|Aby zmienić kolor obiektu, należy użyć animacji.|  
-|![Skonfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [tworzenie i modyfikowanie ścieżki ruchu](http://www.popscreen.com/v/6A4fX/Microsoft-Expression-Blend-Creating-and-Modifying-Motion-Paths)|Animowanie obiektów w ścieżce.|  
-|![Skonfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [jej obsługi ułatwiają realizację klatek kluczowych](http://www.popscreen.com/v/6A4dM/Microsoft-Expression-Blend-Easing-Keyframes)|Przyspieszyć lub zwolnić animację na początku (*sterowania tempem zmian w*) lub w pobliżu końca (*przyspieszania poza*) animacji.|  
-|![Skonfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [animować przycisk](http://www.popscreen.com/v/6A4fK/Microsoft-Expression-Blend-Animating-a-Button)|Utwórz interesujące efekty, które są wyświetlane na przycisku, gdy użytkownik wskaże do niego.|  
-|![Skonfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Tworzenie animacji i Praca z ułatwianie](https://www.youtube.com/watch?v=mAJXYrwxGYo)|Animowanie efektów, które pojawiają się po naciśnięciu przycisku na obrazie Kalkulator.|  
-  
-## <a name="see-also"></a>Zobacz też  
+Można tworzyć krótkie animacje, które przesuwają obiekty lub rozjaśniają je w i na zewnątrz.
+
+ Aby rozpocząć, Utwórz *scenorys*. Scenorys zawiera jedną lub więcej *osi czasu*. Ustaw *klatki kluczowe* na osi czasu, aby oznaczyć zmiany właściwości. Następnie po uruchomieniu animacji program Blend interpoluje zmiany właściwości w wydanym okresie czasu. Wynikiem jest płynne przejście. Można animować każdą właściwość, która należy do obiektu, nawet niewizualną właściwości.
+
+ Na poniższej ilustracji przedstawiono scenorys o nazwie **górę**. Oś czasu zawiera ramki kluczowe, które oznaczają położenie X i Y prostokąta. Po uruchomieniu tej animacji prostokąt jest przenoszony z jednej pozycji do innej.
+
+ ![](../designers/media/982f031a-74a3-414a-abc2-a0f41a741075.png "982f031a-74a3-414a-abc2-a0f41a741075")
+
+ Dowiedz się, jak tworzyć animacje, obserwując te wideo.
+
+|Obejrzyj krótkie wideo:|Dowiedz się, jak:|
+|--------------------------|-------------------|
+|![Konfigurowanie zainstalowanych funkcji](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Tworzenie osi czasu](http://www.popscreen.com/v/6A4eF/Microsoft-Expression-Blend-Creating-Timelines)|Utwórz oś czasu i pracuj z obiektami na osi czasu.|
+|![Konfigurowanie zainstalowanych funkcji](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Dodaj klatki kluczowe i powtórz animację](http://www.popscreen.com/v/6A4fi/Microsoft-Expression-Blend-Adding-Keyframes-and-Repeating-an-Animation)|Dodaj klatki kluczowe i ustaw właściwości w każdej klatce kluczowej. Następnie Uruchom animację i obserwuj obiekty płynnie przechodzą między nimi.|
+|![Konfigurowanie zainstalowanych funkcji](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Dodaj wyzwalacze zdarzeń dla funkcji interaktywny](http://www.popscreen.com/v/6A4e4/Microsoft-Expression-Blend-Adding-Event-Triggers-for-Interactivity)|Rozpocznij animację w przypadku wystąpienia zdarzenia. Na przykład uruchom je po załadowaniu okna.|
+|![Konfigurowanie zainstalowanych funkcji](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Animuj kolory](http://www.popscreen.com/v/6A4gv/Microsoft-Expression-Blend-Animating-Colors)|Zmień kolor obiektu za pomocą animacji.|
+|![Konfigurowanie zainstalowanych funkcji](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Tworzenie i modyfikowanie ścieżek ruchu](http://www.popscreen.com/v/6A4fX/Microsoft-Expression-Blend-Creating-and-Modifying-Motion-Paths)|Animuj obiekty wzdłuż ścieżki.|
+|![Konfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [ułatwiają klatki kluczowe](http://www.popscreen.com/v/6A4dM/Microsoft-Expression-Blend-Easing-Keyframes)|Przyspiesz lub spowalniaj animację w sąsiedztwie początku (*Krzywa napięcia w programie*) lub blisko końca (*Krzywa napięcia*) animacji.|
+|![Konfigurowanie zainstalowanych funkcji](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Animuj przycisk](http://www.popscreen.com/v/6A4fK/Microsoft-Expression-Blend-Animating-a-Button)|Twórz interesujące efekty, które pojawiają się na przycisku, gdy użytkownik wskaże go.|
+|![Konfigurowanie zainstalowanych funkcji](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Tworzenie animacji i pracy z funkcją napięcia](https://www.youtube.com/watch?v=mAJXYrwxGYo)|Animowanie efektów, które pojawiają się, gdy użytkownik naciśnie przycisk w obrazie kalkulatora.|
+
+## <a name="see-also"></a>Zobacz też
  [Tworzenie interfejsu użytkownika przy użyciu programu Blend for Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

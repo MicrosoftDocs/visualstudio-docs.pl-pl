@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Edit.FindInFiles command
 - find in files command
 ms.assetid: 2fc78bfe-b339-4599-97f9-4cafd8a194d9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2877057f32ba6553a2cdcefbbc1bb7a8bf2884da
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 7892abc258f323629cbc6b2fb8535b1a40aded13
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919252"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667038"
 ---
 # <a name="find-in-files-command"></a>Znajdź w plikach — Polecenie
 Wyszukiwanie plików przy użyciu podzestawu opcji dostępnych na karcie **Znajdź w plikach** okna **Znajdowanie i zamienianie** .
@@ -34,17 +34,17 @@ Edit.FindinFiles findwhat [/case] [/ext:extensions]
 ## <a name="arguments"></a>Argumenty
 
 `findwhat`\
-Wymagana. Tekst do dopasowania.
+Wymagany. Tekst do dopasowania.
 
 ## <a name="switches"></a>Przełączniki
 /Case lub/c\
-Opcjonalny. Dopasowań występuje tylko wtedy, gdy wielkie i małe litery dokładnie pasują do `findwhat` znaków określonych w argumencie.
+Opcjonalny. Dopasowań występuje tylko wtedy, gdy wielkie i małe litery dokładnie pasują do znaków określonych w argumencie `findwhat`.
 
-EXT`extensions`\
-Opcjonalna. Określa rozszerzenia plików, które mają być przeszukiwane. Jeśli nie zostanie określony, używane jest poprzednie rozszerzenie, jeśli zostało wcześniej wprowadzone.
+/EXT: `extensions` \
+Opcjonalny. Określa rozszerzenia plików, które mają być przeszukiwane. Jeśli nie zostanie określony, używane jest poprzednie rozszerzenie, jeśli zostało wcześniej wprowadzone.
 
-/lookin:`searchpath`\
-Opcjonalna. Katalog do przeszukania. Jeśli ścieżka zawiera spacje, ujmij całą ścieżkę w cudzysłów.
+/lookin: `searchpath` \
+Opcjonalny. Katalog do przeszukania. Jeśli ścieżka zawiera spacje, ujmij całą ścieżkę w cudzysłów.
 
 /Names lub/n\
 Opcjonalny. Wyświetla listę nazw plików, które zawierają dopasowania.
@@ -53,29 +53,29 @@ Opcjonalny. Wyświetla listę nazw plików, które zawierają dopasowania.
 Opcjonalny. Wyświetla listę bieżących ustawień opcji Znajdź i nie wykonuje wyszukiwania.
 
 /Regex lub/r\
-Opcjonalny. Używa wstępnie zdefiniowanych znaków specjalnych w `findwhat` argumencie jako notacji, które reprezentują wzorce tekstu, a nie znaki literału. Aby uzyskać pełną listę znaków wyrażenia regularnego, zobacz [wyrażenia regularne](../../ide/using-regular-expressions-in-visual-studio.md).
+Opcjonalny. Używa wstępnie zdefiniowanych znaków specjalnych w argumencie `findwhat` jako notacji, które reprezentują wzorce tekstu, a nie znaki literału. Aby uzyskać pełną listę znaków wyrażenia regularnego, zobacz [wyrażenia regularne](../../ide/using-regular-expressions-in-visual-studio.md).
 
 /Reset lub/e\
 Opcjonalny. Zwraca ustawienia domyślne opcji Znajdź i nie wykonuje wyszukiwania.
 
-/Stop\
-Opcjonalna. Zatrzymuje bieżącą operację wyszukiwania, jeśli jest w toku. Wyszukiwanie ignoruje wszystkie inne argumenty `/stop` , gdy zostały określone. Na przykład aby zatrzymać bieżące wyszukiwanie, należy wpisać następujące polecenie:
+/Stop
+Opcjonalny. Zatrzymuje bieżącą operację wyszukiwania, jeśli jest w toku. Jeśli określono `/stop`, wyszukiwanie ignoruje wszystkie pozostałe argumenty. Na przykład aby zatrzymać bieżące wyszukiwanie, należy wpisać następujące polecenie:
 
 ```cmd
 >Edit.FindinFiles /stop
 ```
 
 /Sub. lub/s\
-Opcjonalny. Przeszukuje podfoldery w katalogu określonym w argumencie/lookin`searchpath` :.
+Opcjonalny. Przeszukuje podfoldery w katalogu określonym w argumencie/lookin: `searchpath`.
 
 /Text2 lub/2 \
 Opcjonalny. Wyświetla wyniki wyszukiwania w oknie Znajdź wyniki 2.
 
 /Wild lub/l\
-Opcjonalna. Używa wstępnie zdefiniowanych znaków specjalnych w `findwhat` argumencie jako notacji do reprezentowania znaku lub sekwencji znaków.
+Opcjonalny. Używa wstępnie zdefiniowanych znaków specjalnych w argumencie `findwhat` jako notacji do reprezentowania znaku lub sekwencji znaków.
 
 /Word lub/w\
-Opcjonalna. Wyszukuje tylko całe wyrazy.
+Opcjonalny. Wyszukuje tylko całe wyrazy.
 
 ## <a name="example"></a>Przykład
 Ten przykład wyszukuje btnCancel we wszystkich plikach. CLS znajdujących się w folderze "Moje projekty programu Visual Studio" i wyświetla informacje o dopasowaniach w oknie Znajdź wyniki 2.

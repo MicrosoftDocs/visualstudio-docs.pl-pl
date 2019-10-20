@@ -1,41 +1,41 @@
 ---
-title: Dystrybuowanie fragmentów kodu jako rozszerzenie
+title: Rozpowszechnianie fragmentów kodu jako rozszerzenia
 ms.date: 03/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, distributing
 ms.assetid: 5f717abd-e167-47ae-818c-6b0bae100ceb
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f0b3211352dc16e51b64196e13f7378bf2a423c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3b5ae4053e97e823952118abda11f334c5ac1083
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429552"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656064"
 ---
-# <a name="how-to-distribute-code-snippets"></a>Instrukcje: Dystrybuowanie fragmentów kodu
+# <a name="how-to-distribute-code-snippets"></a>Instrukcje: dystrybuowanie fragmentów kodu
 
-Możesz udostępnić swoje fragmenty kodu programu znajomym i je zainstalowali na swoich komputerach przy użyciu **Menedżera wstawek kodu**. Jednak jeśli masz kilka fragmentów do dystrybucji lub chcesz przekazać je szerzej, może zawierać pliki fragmentu kodu w rozszerzeniu Visual Studio. Użytkowników usługi Visual Studio można zainstalować rozszerzenia Aby uzyskać fragmenty kodu.
+Możesz nadać swoim znajomym fragmenty kodu i zainstalować je na swoich komputerach za pomocą **Menedżera fragmentów kodu**. Jeśli jednak masz kilka fragmentów do dystrybucji lub chcesz ich szerzej rozpowszechniać, możesz uwzględnić pliki fragmentów kodu w rozszerzeniu programu Visual Studio. Użytkownicy programu Visual Studio mogą następnie zainstalować rozszerzenie w celu uzyskania fragmentów kodu.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-Zainstaluj **programowanie rozszerzeń programu Visual Studio** obciążenie w celu uzyskania dostępu do **projekt VSIX** szablony projektów.
+Zainstaluj obciążenie **programowanie rozszerzenia programu Visual Studio** , aby uzyskać dostęp do szablonów projektu **VSIX** .
 
-![Obciążenie programowanie rozszerzenia programu Visual Studio](media/vs-2019/extension-development-workload.png)
+![Obciążenie programowanie rozszerzeń programu Visual Studio](media/vs-2019/extension-development-workload.png)
 
-## <a name="set-up-the-extension"></a>Skonfiguruj rozszerzenia
+## <a name="set-up-the-extension"></a>Skonfiguruj rozszerzenie
 
-W tej procedurze, używane będzie tym samym fragmencie kodu Hello World, który jest tworzony w [instruktażu: Utwórz fragment kodu](../ide/walkthrough-creating-a-code-snippet.md). Ten artykuł zawiera fragment kodu XML, aby nie musieli przejść wstecz i utwórz fragment kodu.
+Ta procedura spowoduje użycie tego samego fragmentu kodu Hello world, który został utworzony w [przewodniku: Tworzenie fragmentu kodu](../ide/walkthrough-creating-a-code-snippet.md). Ten artykuł zawiera kod XML fragmentu kodu, dzięki czemu nie musisz wrócić i utworzyć fragmentu kodu.
 
-1. Utwórz nowy projekt z **pusty projekt VSIX** szablonu i nazwy projektu **TestSnippet**.
+1. Utwórz nowy projekt na podstawie **pustego szablonu projektu VSIX** i Nadaj projektowi nazwę **TestSnippet**.
 
-2. W **TestSnippet** projektu, Dodaj nowy plik XML i wywołać go *VBCodeSnippet.snippet*. Zastąp zawartość następujący kod XML:
+2. W projekcie **TestSnippet** Dodaj nowy plik XML i Wywołaj go *VBCodeSnippet. fragment kodu*. Zastąp zawartość następującym kodem XML:
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -63,23 +63,23 @@ W tej procedurze, używane będzie tym samym fragmencie kodu Hello World, który
 
 ### <a name="set-up-the-directory-structure"></a>Konfigurowanie struktury katalogów
 
-1. W **Eksploratora rozwiązań**, wybierz węzeł projektu i dodawanie folderu, który ma nazwę, która ma fragment kodu w **Menedżera wstawek kodu**. W tym przypadku powinien być **HelloWorldVB**.
+1. W **Eksplorator rozwiązań**wybierz węzeł projektu, a następnie Dodaj folder, który ma nazwę, której fragment ma mieć w programie **fragmentów kodu**. W takim przypadku powinna być **HelloWorldVB**.
 
-2. Przenieś *.snippet* plik *HelloWorldVB* folderu.
+2. Przenieś plik *fragmentu kodu* do folderu *HelloWorldVB* .
 
-3. Wybierz *.snippet* w pliku **Eksploratora rozwiązań**, a następnie w **właściwości** okna, upewnij się, **Akcja kompilacji** jest ustawiona na **Zawartości**, **Kopiuj do katalogu wyjściowego** ustawiono **zawsze Kopiuj**, i **Include w VSIX** ustawiono **true**.
+3. Wybierz plik *fragmentu kodu* w **Eksplorator rozwiązań**, a w oknie **Właściwości** upewnij się, że **Akcja kompilacji** jest ustawiona **na zawartość**, **Kopiuj do katalogu wyjściowego** jest ustawiona na wartość **Kopiuj zawsze**i **Dołącz do VSIX** ma wartość **true**.
 
-### <a name="add-the-pkgdef-file"></a>Dodaj plik .pkgdef
+### <a name="add-the-pkgdef-file"></a>Dodaj plik. pkgdef
 
 ::: moniker range="vs-2017"
 
-1. Dodaj z pliku tekstowego *HelloWorldVB* folder i nadaj mu nazwę *HelloWorldVB.pkgdef*. Ten plik jest używany do dodania określonych kluczy rejestru. W tym przypadku dodaje nowy podklucz do **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Languages\CodeExpansions\Basic** klucza.
+1. Dodaj plik tekstowy do folderu *HelloWorldVB* i nadaj mu nazwę *HelloWorldVB. pkgdef*. Ten plik jest używany do dodawania niektórych kluczy do rejestru. W takim przypadku dodaje nowy podklucz do klucza **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Languages\CodeExpansions\Basic** .
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. Dodaj z pliku tekstowego *HelloWorldVB* folder i nadaj mu nazwę *HelloWorldVB.pkgdef*. Ten plik jest używany do dodania określonych kluczy rejestru. W tym przypadku dodaje nowy podklucz do **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Languages\CodeExpansions\Basic** klucza.
+1. Dodaj plik tekstowy do folderu *HelloWorldVB* i nadaj mu nazwę *HelloWorldVB. pkgdef*. Ten plik jest używany do dodawania niektórych kluczy do rejestru. W takim przypadku dodaje nowy podklucz do klucza **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Languages\CodeExpansions\Basic** .
 
 ::: moniker-end
 
@@ -91,33 +91,33 @@ W tej procedurze, używane będzie tym samym fragmencie kodu Hello World, który
     "HelloWorldVB"="$PackageFolder$"
     ```
 
-    Gdy przyjrzysz się tego klucza, widać sposób określania różnych językach.
+    Po sprawdzeniu tego klucza można zobaczyć, jak określić różne języki.
 
-3. Wybierz *.pkgdef* w pliku **Eksploratora rozwiązań**, a następnie w **właściwości** okna, upewnij się, że:
+3. Wybierz plik *. pkgdef* w **Eksplorator rozwiązań**, a w oknie **Właściwości** upewnij się, że:
 
-   - **Akcja kompilacji** ustawiono **zawartości**
-   - **Kopiuj do katalogu wyjściowego** ustawiono **zawsze Kopiuj**
-   - **Uwzględnione w VSIX** ustawiono **true**
+   - **Akcja kompilacji** jest ustawiona na **zawartość**
+   - Wartość **Kopiuj do katalogu wyjściowego** jest ustawiona na **zawsze Kopiuj**
+   - **Dołączanie w VSIX** jest ustawione na **wartość true**
 
-4. Dodaj *.pkgdef* plików jako zasób w manifestu VSIX. W *source.extension.vsixmanifest* pliku, przejdź do **zasoby** kartę, a następnie kliknij przycisk **New**.
+4. Dodaj plik *. pkgdef* jako element zawartości w manifeście VSIX. W pliku *source. Extension. vsixmanifest* przejdź do karty **zasoby** , a następnie kliknij przycisk **Nowy**.
 
-5. W **Dodaj nowy zasób** okno dialogowe, zestaw **typu** do **Microsoft.VisualStudio.VsPackage**, **źródła** do **plików na System plików**i **ścieżki** do **HelloWorldVB.pkgdef** (który powinna zostać wyświetlona na liście rozwijanej).
+5. W oknie **dialogowym Dodawanie nowego elementu zawartości** Ustaw dla **opcji Typ** **Microsoft. VisualStudio. pakietu VSPackage**, **Źródło** do **pliku w systemie plików**oraz **ścieżkę** do **HelloWorldVB. pkgdef** (która powinna pojawić się na liście rozwijanej).
 
-### <a name="test-the-snippet"></a>Fragment kodu testu
+### <a name="test-the-snippet"></a>Testowanie fragmentu kodu
 
-1. Teraz możesz upewnić się, że fragment kodu działa w doświadczalnym wystąpieniu programu Visual Studio. Eksperymentalne wystąpienie jest drugą kopię programu Visual Studio, który jest oddzielony od tego, który używa się do pisania kodu. Umożliwia on pracować nad rozszerzeniem bez wywierania wpływu na środowiska deweloperskiego.
+1. Teraz można upewnić się, że fragment kodu działa w eksperymentalnym wystąpieniu programu Visual Studio. Eksperymentalne wystąpienie to druga kopia programu Visual Studio, która jest oddzielona od użytego do pisania kodu. Umożliwia pracę nad rozszerzeniem bez wpływu na środowisko deweloperskie.
 
-2. Skompiluj projekt, a następnie rozpocząć debugowanie.
+2. Skompiluj projekt i Rozpocznij debugowanie.
 
    Zostanie wyświetlone drugie wystąpienie programu Visual Studio.
 
-3. W doświadczalnym wystąpieniu, przejdź do **narzędzia** > **Menedżera wstawek kodu** i ustaw **języka** do **podstawowe**. Powinien zostać wyświetlony *HelloWorldVB* zgodnie z jednym z folderów, a powinien być można rozwinąć folder, aby wyświetlić *HelloWorldVB* fragmentu kodu.
+3. W eksperymentalnym wystąpieniu przejdź do pozycji **narzędzia**  >  programu**fragmenty kodu** i ustaw **Język** na **podstawowy**. Powinien być widoczny *HelloWorldVB* jako jeden z folderów i można rozwinąć folder, aby wyświetlić fragment kodu *HelloWorldVB* .
 
-4. Przetestuj fragmentu kodu. W doświadczalnym wystąpieniu Otwórz projekt języka Visual Basic, a następnie otwórz jeden z plików kodu. Umieść kursor w miejscu gdzieś w kodzie, kliknij prawym przyciskiem myszy, a na stronie wybierz menu kontekstowe **Wstaw fragment kodu**.
+4. Przetestuj fragment kodu. W eksperymentalnym wystąpieniu Otwórz projekt Visual Basic i otwórz jeden z plików kodu. Umieść kursor w dowolnym miejscu w kodzie, kliknij prawym przyciskiem myszy, a następnie w menu kontekstowym wybierz **Wstaw fragment**kodu.
 
-5. Powinien zostać wyświetlony *HelloWorldVB* jako jeden z folderów. Kliknij go dwukrotnie. Powinny zostać wyświetlone okno podręczne **Wstaw fragment kodu: HelloWorldVB >** zawierający listę rozwijaną **HelloWorldVB**. Kliknij przycisk **HelloWorldVB** listy rozwijanej.
+5. Należy zobaczyć *HelloWorldVB* jako jeden z folderów. Kliknij go dwukrotnie. Powinien pojawić się podręczny **Wstaw fragment kodu: HelloWorldVB >** , który ma **HelloWorldVB**listy rozwijanej. Kliknij listę rozwijaną **HelloWorldVB** .
 
-   Następujący wiersz jest dodawana do pliku kodu:
+   Do pliku kodu zostanie dodany następujący wiersz:
 
     ```vb
     Console.WriteLine("Hello, World!")

@@ -1,47 +1,45 @@
 ---
-title: Za pomocą klawiatury klawiaturowe i klawisze modyfikujące w programie Blend | Dokumentacja firmy Microsoft
+title: Skróty klawiaturowe i klawisze modyfikujące w programie Blend | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: f9ec9724-7571-4777-8ff8-d9be012eae8f
 caps.latest.revision: 14
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b6da7ef473f279c968c676c768e89a6f1145ae4c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1068c87a8979b853dd27de1b35e2449d7f96eaf4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68159334"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664328"
 ---
 # <a name="keyboard-shortcuts-and-modifier-keys-in-blend"></a>Skróty klawiaturowe i klawisze modyfikujące w programie Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Skróty klawiaturowe można przyspieszyć pracę przez ograniczenie akcji, która będzie wymagać wielu kliknięcia przycisku myszy do jednego klawisza skrótu. Skróty klawiaturowe w [!INCLUDE[blend_first](../includes/blend-first-md.md)] są dostępne w następujących dwóch kategorii:  
-  
-- **Klucze dostępu** klucze dostępu umożliwia dostęp do polecenia menu lub obszar w oknie dialogowym, naciskając klawisz na klawiaturze określonego klucza. Klucze dostępu są identyfikowane przez znaki podkreślenia, które pojawiają się w aktualnie wybranego polecenia lub okno dialogowe.  
-  
-   Aby używać klawiszy dostępu, należy najpierw naciśnij ALT lub F10, aby utworzyć znaki podkreślenia są wyświetlane, a następnie naciśnij odpowiedni literę konkretny element menu lub okna dialogowego pole. Można także przejść za pośrednictwem menu lub okno dialogowe, za pomocą klawisza TAB lub klawisze strzałek. Na przykład, jeśli użytkownik naciśnie klawisz ALT w [!INCLUDE[blend_subs](../includes/blend-subs-md.md)], podkreślenie pojawia się w obszarze list **F** w **pliku** menu, aby zidentyfikować go jako klucza dostępu. Aby otworzyć projekt, można naciśnij i przytrzymaj klawisz ALT, naciśnij klawisz F, a następnie naciśnij klawisz O.  
-  
-   ![](../designers/media/441d5d67-48ee-4ba3-9e55-1826167e8d64.png "441d5d67-48ee-4ba3-9e55-1826167e8d64")  
-  Klucze dostępu, które pojawiają się od znaku podkreślenia, po naciśnięciu klawisza ALT  
-  
-- **Klawisze skrótów** klawisze skrótów można użyć do wykonania akcji (na przykład wybierając polecenie menu lub modyfikując zachowania narzędzie), naciskając klawisz skrótu klawiaturowego.  
-  
-   Większość skrótów klawiaturowych są łatwo identyfikować ich w interfejsie użytkownika [!INCLUDE[blend_subs](../includes/blend-subs-md.md)]; są one wyświetlane po prawej stronie poleceń menu. Na przykład na **pliku** menu **Otwórz projekt** polecenie menu zawiera skrótu klawiaturowego CTRL + SHIFT + O. Aby wyświetlić klawisze skrótów dla narzędzia w **narzędzia** panelu, umieść wskaźnik myszy nad narzędziem.  
-  
-   ![](../designers/media/f147fc85-9fc5-4e8a-8039-bead80a3e595.png "f147fc85-9fc5-4e8a-8039-bead80a3e595")  
-  Klawisze skrótów, które pojawiają się obok elementów menu, które są skróty  
-  
-  Aby uzyskać więcej informacji na temat ułatwień dostępu i funkcje, zobacz [ułatwień dostępu w firmie Microsoft](http://go.microsoft.com/fwlink/?LinkId=75069).  
-  
-## <a name="modifier-keys"></a>Klawisze modyfikujące  
- Niektóre skróty klawiaturowe nie są skojarzone elementy menu, co oznacza, że nie używasz [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] interfejsu użytkownika do ich wykrycie. W poniższych sekcjach wymieniono skróty, które modyfikują zachowanie narzędzia lub akcji, takich jak zmiana rozmiaru obiektu, które modyfikują:  
-  
-- [Klawisze modyfikujące obszar kompozycji](../designers/artboard-modifier-keys-in-blend.md)  
-  
-- [Klawisze modyfikujące pióro](../designers/pen-tool-modifier-keys-in-blend.md)  
-  
+Skróty klawiaturowe umożliwiają przyspieszenie pracy przez zredukowanie akcji wymagającej wielokrotnego kliknięcia przycisku myszy do jednego skrótu klawiaturowego. Skróty klawiaturowe w [!INCLUDE[blend_first](../includes/blend-first-md.md)] są dostępne w następujących dwóch kategoriach:
+
+- **Klucze dostępu** Za pomocą klawiszy dostępu można uzyskać dostęp do polecenia menu lub obszaru w oknie dialogowym, naciskając określony klawisz na klawiaturze. Klucze dostępu są identyfikowane przez podkreślenia, które pojawiają się w aktualnie wybranym oknie dialogowym.
+
+   Aby użyć klawiszy dostępu, najpierw naciśnij klawisze ALT lub F10, aby wyświetlić znaki podkreślenia, a następnie naciśnij odpowiednią literę określonego menu lub elementu okna dialogowego. Alternatywnie możesz nawigować przez menu lub okno dialogowe przy użyciu klawisza TAB lub klawiszy strzałek. Na przykład po naciśnięciu klawisza ALT w [!INCLUDE[blend_subs](../includes/blend-subs-md.md)], podkreślenie pojawia się pod literą **F** w menu **plik** , aby zidentyfikować ją jako klucz dostępu. Aby otworzyć projekt, naciśnij i przytrzymaj klawisz ALT, naciśnij klawisz F, a następnie naciśnij klawisz O.
+
+   ![](../designers/media/441d5d67-48ee-4ba3-9e55-1826167e8d64.png "441d5d67-48ee-4ba3-9e55-1826167e8d64")Klucze dostępu, które pojawiają się z podkreśleniem po naciśnięciu klawisza ALT
+
+- **Klawisze skrótów** Za pomocą klawiszy skrótów można wykonać akcję (na przykład wybierając polecenie menu lub modyfikując zachowanie narzędzia) przez naciśnięcie skrótu klawiaturowego.
+
+   Większość skrótów klawiaturowych można łatwo zidentyfikować w interfejsie użytkownika [!INCLUDE[blend_subs](../includes/blend-subs-md.md)]; są one wyświetlane po prawej stronie poleceń menu. Na przykład w menu **plik** polecenie **Otwórz projekt** zawiera skrót klawiaturowy CTRL + SHIFT + O. Aby wyświetlić klawisze skrótów dla narzędzia w panelu **Narzędzia** , umieść wskaźnik myszy nad narzędziem.
+
+   ![](../designers/media/f147fc85-9fc5-4e8a-8039-bead80a3e595.png "f147fc85-9fc5-4e8a-8039-bead80a3e595")Klawisze skrótów, które pojawiają się obok elementów menu, które mają skróty
+
+  Aby uzyskać więcej informacji na temat ułatwień dostępu i funkcji, zobacz [ułatwienia dostępu w firmie Microsoft](http://go.microsoft.com/fwlink/?LinkId=75069).
+
+## <a name="modifier-keys"></a>Klawisze modyfikujące
+ Niektóre skróty klawiaturowe nie mają skojarzonych elementów menu, co oznacza, że nie można użyć interfejsu użytkownika [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] do ich odnalezienia. W poniższych tematach znajdują się skróty, które modyfikują zachowanie narzędzi lub modyfikują akcję, taką jak zmiana rozmiarów obiektu:
+
+- [Klawisze modyfikujące obszar kompozycji](../designers/artboard-modifier-keys-in-blend.md)
+
+- [Klawisze modyfikujące pióro](../designers/pen-tool-modifier-keys-in-blend.md)
+
 - [Klawisze modyfikujące narzędzia Wybór bezpośredni](../designers/direct-selection-tool-modifier-keys-in-blend.md)

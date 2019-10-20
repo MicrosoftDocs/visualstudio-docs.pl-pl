@@ -1,5 +1,5 @@
 ---
-title: Wizualizacja kodu | Dokumentacja firmy Microsoft
+title: Wizualizuj kod | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -10,54 +10,49 @@ helpviewer_keywords:
 - code, exploring
 ms.assetid: 0dd7d438-393a-4cd3-b417-9bf37379e1b0
 caps.latest.revision: 49
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2d5803544e4e7279179929c7c04a3792e4dd9318
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 51b546e953cae80b7a1871b72a1f0b0613c77342
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68183869"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659336"
 ---
 # <a name="visualize-code"></a>Tworzenie wizualizacji kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aby pomóc Ci zrozumieć istniejący kod i opisać swoją aplikację, można użyć wizualizacji i modelowania narzędzi w programie Visual Studio. Dzięki temu możesz wzrokowo sprawdzić, jak Twoje zmiany mogą wpłynąć na kod i ocenić nakład pracy oraz zagrożenia związane z tymi zmianami. Na przykład:  
-  
-- Aby zrozumieć relacje w kodzie, mapować te relacje wizualnie.  
-  
-- Do opisywania architektury Twojego systemu i zachować zgodność kodu z projektem, tworzyć diagramy warstwowe, a następnie walidować kod dla tych diagramów.  
-  
-- Do opisania klasy, struktury, tworzenie diagramów klasy.  
-  
-- Aby modelować i komunikują się różnymi aspektami systemu, narysować diagramy modelowania UML (Unified Language). Można na przykład model, składników, typów, interakcji i procesów systemu.  
-  
-  Te narzędzia ułatwiają także łatwiejszą komunikację z osobami, które są związane z projektem. Na przykład służy diagramów klas UML do utworzenia wspólny słownik dyskusyjnym systemu z zainteresowanymi stronami projektu, użytkowników i członków zespołu.  
-  
-  Aby dowiedzieć się, które wersje programu Visual Studio obsługują każdej funkcji, zobacz [obsługiwana wersja dla narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)  
-  
-## <a name="what-do-you-want-to-do"></a>Co chcesz zrobić?  
-  
-|||  
-|-|-|  
-|**Poznaj kodu i jej relacje:**<br /><br /> Mapowanie relacji między określonych fragmentów kodu.<br /><br /> Zobacz Omówienie relacji w kodzie dla całego rozwiązania.<br /><br /> **Uwaga**: W tej wersji programu Visual Studio termin *mapy kodu* jest używana zamiast *wykres zależności*.|-   [Mapowanie zależności w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)<br />-   [Używanie map kodu do debugowania aplikacji](../modeling/use-code-maps-to-debug-your-applications.md)<br />-   [Wyszukiwanie potencjalnych problemów za pomocą analizatorów mapy kodu](../modeling/find-potential-problems-using-code-map-analyzers.md)<br />-   [Metody mapowania dla stosu wywołań podczas debugowania](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|  
-|**Zrozumienie struktury klasy:**<br /><br /> Umożliwia wizualizację struktury klas w projekcie, tworząc diagramów klas z kodu.|[Instrukcje: Dodawanie diagramów klasy do projektu (Projektant klas)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)|  
-|**Opisz projektowania wysokiego poziomu systemu, a następnie walidować kod dla tego projektu:**<br /><br /> Opisz projektowania wysokiego poziomu systemu i jego zależności zamierzone, tworząc diagramów warstwowych. Walidować kod dla tego projektu, aby upewnić się, że zależności w kodzie zachować spójność z projektem.|-   [Tworzenie diagramów warstwy na podstawie kodu](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Diagramy warstw: Odwołanie](../modeling/layer-diagrams-reference.md)<br />-   [Diagramy warstw: wskazówki](../modeling/layer-diagrams-guidelines.md)<br />-   [Weryfikacja kodu przy użyciu diagramów warstw](../modeling/validate-code-with-layer-diagrams.md)|  
-|**Komunikują się wymagania użytkownika i architektury:**<br /><br /> Modelowanie wymagań użytkowników i architektura systemu oprogramowania za pomocą rysowania na poniższych diagramach UML: działanie, składnika, klasy, sekwencja i przypadek użycia.|-   [Tworzenie modeli aplikacji](../modeling/create-models-for-your-app.md)<br />-   [Wymagania modelu użytkownika](../modeling/model-user-requirements.md)<br />-   [Modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md)|  
-  
-## <a name="external-resources"></a>Zasoby zewnętrzne  
-  
-|**Kategoria**|**Łącza**|  
-|------------------|---------------|  
-|**Fora**|-   [Program Visual Studio visualization and Modeling Tools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Program Visual Studio visualization and Modeling SDK (narzędzia DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|  
-|**Blogi**|[Visual Studio ALM + Team Foundation Server Blog](http://go.microsoft.com/fwlink/?LinkID=201340)|  
-|**Artykuły techniczne i dzienniki**|[Forum MSDN poświęcone systemowi architektury](http://go.microsoft.com/fwlink/?LinkId=201343)|  
-  
-## <a name="see-also"></a>Zobacz też  
- [Scenariusz: Zmiana projektu z wykorzystaniem wizualizacji i modelowania](../modeling/scenario-change-your-design-using-visualization-and-modeling.md)   
- [Analizowanie i modelowanie architektury](../modeling/analyze-and-model-your-architecture.md)   
- [Tworzenie modeli aplikacji](../modeling/create-models-for-your-app.md)   
- [Wymagania modelu użytkownika](../modeling/model-user-requirements.md)   
- [Modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md)   
- [Używanie modeli w procesie tworzenia aplikacji](../modeling/use-models-in-your-development-process.md)
+Narzędzia do wizualizacji i modelowania w programie Visual Studio ułatwiają zapoznanie się z istniejącym kodem i opisywanie aplikacji. Dzięki temu można wizualnie dowiedzieć się, jak zmiany mogą wpływać na kod i pomóc w ocenie pracy i zagrożeń wynikających z tych zmian. Na przykład:
+
+- Aby zrozumieć relacje w kodzie, zamapuj je wizualnie.
+
+- Aby opisać architekturę systemu i zachować spójność kodu z projektem, Utwórz diagramy warstwowe i sprawdź poprawność kodu względem tych diagramów.
+
+- Aby opisać struktury klas, Utwórz diagramy klas.
+
+- Aby modelować i komunikować różne aspekty systemu, Rysuj diagramy UML (UML). Na przykład można modelować składniki systemu, typy, interakcje i procesy.
+
+  Te narzędzia ułatwiają również szybkie komunikowanie się z osobami korzystającymi z Twojego projektu. Na przykład można użyć diagramów klas UML do utworzenia wspólnego słownika do omówienia systemu przy użyciu uczestników projektu, użytkowników i członków zespołu.
+
+  Aby sprawdzić, które wersje programu Visual Studio obsługują każdą funkcję, zobacz [Obsługa wersji dla narzędzi architektura i modelowanie](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)
+
+## <a name="what-do-you-want-to-do"></a>Co chcesz zrobić?
+
+|||
+|-|-|
+|**Opis kodu i jego relacji:**<br /><br /> Mapuj relacje między określonymi fragmentami kodu.<br /><br /> Zapoznaj się z omówieniem relacji w kodzie dla całego rozwiązania.<br /><br /> **Uwaga**: w tej wersji programu Visual Studio termin *Mapa kodu* jest używana zamiast *grafu zależności*.|-   [zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)<br />-   [użyć map kodu do debugowania aplikacji](../modeling/use-code-maps-to-debug-your-applications.md)<br />-   [Znajdowanie potencjalnych problemów za pomocą analizatorów mapy kodu](../modeling/find-potential-problems-using-code-map-analyzers.md)<br />-   [metody mapowania na stosie wywołań podczas debugowania](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|
+|**Opis struktur klas:**<br /><br /> Wizualizuj strukturę klas w projekcie, tworząc diagramy klas z kodu.|[Instrukcje: Dodawanie diagramów klas do projektu (Projektant klas)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)|
+|**Opisz projekt systemu wysokiego poziomu i sprawdź poprawność kodu dla tego projektu:**<br /><br /> Opisz projekt systemu wysokiego poziomu i jego zamierzone zależności, tworząc diagramy warstwowe. Sprawdź poprawność kodu względem tego projektu, aby upewnić się, że zależności w kodzie pozostają spójne z projektem.|-   [tworzenia diagramów warstwy na podstawie kodu](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [diagramy warstwowe: odwołanie](../modeling/layer-diagrams-reference.md)<br />-   [diagramy warstwowe: wytyczne](../modeling/layer-diagrams-guidelines.md)<br />-   [Weryfikuj kod przy użyciu diagramów warstw](../modeling/validate-code-with-layer-diagrams.md)|
+|**Przekaż wymagania i architekturę użytkownika:**<br /><br /> Należy modelować wymagania i architekturę systemu oprogramowania przez rysowanie następujących diagramów UML: działania, składnika, klasy, sekwencji i przypadku użycia.|-   [Tworzenie modeli dla aplikacji](../modeling/create-models-for-your-app.md)<br />[wymagania dotyczące użytkownika modelu](../modeling/model-user-requirements.md) -   <br />-   [modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md)|
+
+## <a name="external-resources"></a>Zasoby zewnętrzne
+
+|**Kategorii**|**Linki**|
+|------------------|---------------|
+|**Dotyczące**|-   [Wizualizacja programu Visual Studio & narzędzia do modelowania](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [wizualizacji programu Visual Studio & Modeling SDK (narzędzia DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
+|**Blogi**|[Blog programu Visual Studio ALM + Team Foundation Server](http://go.microsoft.com/fwlink/?LinkID=201340)|
+|**Artykuły techniczne i dzienniki**|[Forum architektury MSDN](http://go.microsoft.com/fwlink/?LinkId=201343)|
+
+## <a name="see-also"></a>Zobacz też
+ [Scenariusz: zmiana projektu przy użyciu wizualizacji i modelowania](../modeling/scenario-change-your-design-using-visualization-and-modeling.md) modelowanie [i architektura](../modeling/analyze-and-model-your-architecture.md) modelowanie [Tworzenie modeli dla](../modeling/create-models-for-your-app.md) modelu [wymagań użytkowników](../modeling/model-user-requirements.md) modelu aplikacji [Architektura aplikacji](../modeling/model-your-app-s-architecture.md) [korzysta z modeli w proces opracowywania](../modeling/use-models-in-your-development-process.md)

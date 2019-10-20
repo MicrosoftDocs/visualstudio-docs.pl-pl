@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Pomijanie ostrzeżeń przy użyciu elementu Menu | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: pomijanie ostrzeżeń przy użyciu elementu menu | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -9,37 +9,37 @@ helpviewer_keywords:
 - code analysis, suppressing warnings
 ms.assetid: 36bd1850-dcde-4ed0-9bc3-0b83df434362
 caps.latest.revision: 26
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 5097ecb0f7458e739def275d616eb344a2a6db0d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 96b7433ff4f696989142aa2c2ce47982006b93b2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426567"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72610014"
 ---
-# <a name="how-to-suppress-warnings-by-using-the-menu-item"></a>Instrukcje: Pomijanie ostrzeżeń przy użyciu pozycji menu
+# <a name="how-to-suppress-warnings-by-using-the-menu-item"></a>Porady: tłumienie ostrzeżeń przy użyciu elementu menu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-UWAGA]
-> W źródle pomijanie nie jest obsługiwana dla projektów witryny sieci web.  
-  
- Okno analizy kodu na pomijanie ostrzeżeń analizy kodu. Pomijanie ostrzeżenie nie jest taka sama jak wyłączenie go. Gdy możesz pominąć ostrzeżenia, ma zastosowanie tylko do konkretnego wystąpienia naruszenia. Inne naruszenia tego samego ostrzeżenia nadal będą raportowane w oknie Lista błędów.  
-  
- Po uruchomieniu analizy kodu, można określić, że jeden lub więcej ostrzeżeń analizy kodu, które są wyświetlane w oknie analizy kodu nie mają zastosowania do aplikacji. Na przykład można określić, czy kod jest poprawna, ponieważ jest. Lub może być tak, że niektóre naruszeń są — niski priorytet, a nie zostanie rozwiązany w bieżącym cyklu tworzenia oprogramowania. Niezależnie od przyczyny jest często przydatny wskazać, że ostrzeżenie nie ma zastosowania aby umożliwić członkom zespołu, wiadomo, że kod został zrecenzowany i ustalenie, czy można pominąć to ostrzeżenie. W źródle pomijania jest przydatne, ponieważ dzięki temu można umieścić pomijanie blisko której generowane jest ostrzeżenie.  
-  
- Możesz wybrać, czy pomijanie pojawi się w kodzie źródłowym lub w pliku pominięć globalnych. Niektóre pominięcia muszą być umieszczone w pliku pominięć globalnych. Jeśli tak, jest **w źródłowej** opcja zostanie wyłączona.  
-  
-### <a name="to-suppress-a-warning-by-using-menu-item"></a>Aby pominąć ostrzeżenie przy użyciu elementu menu  
-  
-1. Na **analizy** menu, wybierz **Windows** , a następnie wybierz **analizy kodu**.  
-  
-2. W **analizy kodu** okna, wybierz opcję Pomiń ostrzeżenia.  
-  
-3. Wybierz akcje, a następnie wybierz **Pomijaj komunikaty**, a następnie wybierz **w źródłowej** lub **w pliku pominięć projektu**.  
-  
-     Pomijane jest szczególne ostrzeżenie i ostrzeżenie jest wyświetlane w oknie analizy kodu za pomocą przekreślenia.  
-  
+KORYGUJĄC
+> W przypadku pomijania źródła nie jest obsługiwane dla projektów witryny sieci Web.
+
+ Możesz użyć okna analizy kodu, aby pominąć ostrzeżenia analizy kodu. Pomijanie ostrzeżenia nie jest takie samo jak wyłączenie. Pomijanie ostrzeżenia dotyczy tylko określonego wystąpienia naruszenia. Inne naruszenia tego samego ostrzeżenia będą nadal raportowane w oknie Lista błędów.
+
+ Po uruchomieniu analizy kodu można określić, że co najmniej jedno ostrzeżenie analizy kodu, które są wyświetlane w oknie analizy kodu, nie ma zastosowania do aplikacji. Można na przykład określić, że kod jest poprawny w zależności od tego. Może się też zdarzyć, że niektóre naruszenia mają niski priorytet i nie zostaną naprawione w bieżącym cyklu tworzenia oprogramowania. Niezależnie od przyczyny, często warto wskazać, że ostrzeżenie nie ma zastosowania, aby umożliwić członkom zespołu znać, że kod został zweryfikowany i że został ustalony, że ostrzeżenie może zostać pominięte. W przypadku pomijania źródła jest to przydatne, ponieważ umożliwia umieszczenie pomijania w pobliżu miejsca, w którym jest generowane ostrzeżenie.
+
+ Możesz wybrać, czy pomijanie będzie widoczne w kodzie źródłowym, czy w globalnym pliku do pomijania. Niektóre pominięcia muszą zostać umieszczone w globalnym pliku do pomijania. W takim przypadku opcja **w źródle** zostanie wyłączona.
+
+### <a name="to-suppress-a-warning-by-using-menu-item"></a>Aby pominąć ostrzeżenie przy użyciu elementu menu
+
+1. W menu **Analizuj** wybierz pozycję **Windows** , a następnie wybierz pozycję **Analiza kodu**.
+
+2. W oknie **Analiza kodu** wybierz Pomijanie ostrzeżenia.
+
+3. Wybierz pozycję akcje, a następnie wybierz pozycję **Pomiń komunikaty**, a następnie wybierz pozycję **w polu Źródło** lub **w pliku pomijania projektu**.
+
+     Określone ostrzeżenie jest pomijane, a w oknie Analiza kodu zostanie wyświetlone ostrzeżenie z przekreśleniem.
+
 > [!NOTE]
-> Ograniczeń, które nie mają na celu pojawiają się w pliku pominięć globalnych.
+> Pominięcia, które nie mają elementu docelowego pojawiają się w globalnym pliku pomijania.

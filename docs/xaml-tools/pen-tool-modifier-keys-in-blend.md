@@ -4,21 +4,21 @@ titleSuffix: Blend for Visual Studio
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c3ab14c6-a320-46db-a6b3-7fd1ca261587
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e68e06a371f039c7d08b56b89305b1fe932a54a
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 801ccc48f913b36366ac27292abd472d6ea11207
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72451039"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668815"
 ---
 # <a name="pen-tool-modifier-keys-in-blend-for-visual-studio"></a>Klawisze modyfikujące narzędzie pióra w Blend for Visual Studio
 
-W poniższej tabeli przedstawiono skróty, których można użyć do modyfikacji ścieżki podczas tworzenia jej przy użyciu narzędzia **pióro** ![Pen narzędzie @ no__t-2. Możesz również użyć narzędzia **pióro** , aby dodać lub usunąć punkty w istniejącej ścieżce lub połączyć dwie istniejące ścieżki.
+W poniższej tabeli przedstawiono skróty, których można użyć do modyfikacji ścieżki podczas tworzenia jej przy użyciu narzędzia **pióro** ![Pen ](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png) narzędzia. Możesz również użyć narzędzia **pióro** , aby dodać lub usunąć punkty w istniejącej ścieżce lub połączyć dwie istniejące ścieżki.
 
 |Aby wykonać tę akcję|Zrób to|Przytrzymaj|
 | - |-------------|-------------|

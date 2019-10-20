@@ -1,43 +1,43 @@
 ---
-title: Projektant przepływu pracy — Pick, Projektant działań
+title: Projektant przepływu pracy — Projektant działań
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Pick.UI
 ms.assetid: 642c0a47-1b47-45de-a19a-ca0606cedd7a
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed558c40e932f2148f2240247d19a4fc6df0d06a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 983a3ee3539617bf7ee5864c2138b2f0369e228f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63003588"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650078"
 ---
 # <a name="pick-activity-designer"></a>Pick, projektant działań
 
-<xref:System.Activities.Statements.Pick> Aktywności zawiera przepływ sterowania opartego na zdarzeniach. Działanie wykonuje jedną kilka gałęzi w odpowiedzi na wyzwalającą zdarzenie.
+Działanie <xref:System.Activities.Statements.Pick> zapewnia przepływ sterowania oparty na zdarzeniach. Działanie wykonuje jedną z kilku gałęzi w odpowiedzi na zdarzenie wyzwalające.
 
-## <a name="the-pick-activity"></a>Działania Pick
+## <a name="the-pick-activity"></a>Działanie pobrania
 
-A <xref:System.Activities.Statements.Pick> aktywności zawiera zbiór <xref:System.Activities.Statements.PickBranch> obiektów, z których jedna <xref:System.Activities.Statements.Pick> działania można wykonywać z powodu niektóre zdarzenia przychodzące, która służy jako wyzwalacz. W ten sposób Workflow Designer udostępnia modelowanie przepływu sterowania opartego na zdarzeniach. Każdy <xref:System.Activities.Statements.PickBranch> zawiera <xref:System.Activities.Statements.PickBranch.Trigger%2A> i <xref:System.Activities.Statements.PickBranch.Action%2A>. Na początku <xref:System.Activities.Statements.Pick> wykonanie tego działania, wszystkie działania wyzwalacza z <xref:System.Activities.Statements.PickBranch> elementy są zaplanowane. Po zakończeniu pierwszego działania zaplanowano odpowiadającego im działania akcji, a inne działania wyzwalacza zostały anulowane.
+Działanie <xref:System.Activities.Statements.Pick> zawiera kolekcję obiektów <xref:System.Activities.Statements.PickBranch>, z których jednym działaniem <xref:System.Activities.Statements.Pick> można wykonać z powodu zdarzenia przychodzącego, które służy jako wyzwalacz. W ten sposób Projektant przepływu pracy zapewnia modelowanie przepływu sterowania opartego na zdarzeniach. Każda <xref:System.Activities.Statements.PickBranch> zawiera <xref:System.Activities.Statements.PickBranch.Trigger%2A> i <xref:System.Activities.Statements.PickBranch.Action%2A>. Na początku wykonywania działania <xref:System.Activities.Statements.Pick> zostanie zaplanowana cała aktywność wyzwalacza elementów <xref:System.Activities.Statements.PickBranch>. Po zakończeniu pierwszego działania zostanie zaplanowana odpowiednia aktywność działania, a wszystkie inne działania wyzwalacza są anulowane.
 
-### <a name="how-to-use-the-pick-activity-designer"></a>Jak używać Projektanta wybierz działanie
+### <a name="how-to-use-the-pick-activity-designer"></a>Jak używać projektanta działań wyboru
 
-Dostęp do **wybierz** projektanta działań w **przepływ sterowania** kategorii **przybornika**. **Wybierz** projektanta działań mogą być przeciągnięte z **przybornika** i porzucić do powierzchni projektanta przepływów pracy wszędzie tam, gdzie Projektanci działań są zazwyczaj umieszczone, na przykład wewnątrz  **Sekwencja** projektanta działań. Po upuszczając go do projektanta przepływów pracy, tworzy <xref:System.Activities.Statements.Pick> działania, które domyślnie zawiera dwa puste <xref:System.Activities.Statements.PickBranch> działań jako elementy za pomocą wyświetlania nazw Branch1 i Branch2. Te odpowiednich <xref:System.Activities.Statements.PickBranch.DisplayName%2A> wartości właściwości mogą być edytowane w **PickBranch** nagłówka projektanta działań lub w ramach **właściwości** okna dla każdej gałęzi.
+Dostęp do projektanta działań **Wybierz** w kategorii **przepływ sterowania** w **przyborniku**. Projektanta działań **wyboru** można przeciągnąć z **przybornika** i porzucić na Projektant przepływu pracy powierzchnię, gdy projektanci aktywności są zwykle umieszczane na przykład w ramach projektanta działań **sekwencji** . Po porzucenie go do Projektant przepływu pracy tworzy działanie <xref:System.Activities.Statements.Pick>, które domyślnie zawiera dwa puste działania <xref:System.Activities.Statements.PickBranch> jako elementy z nazwami wyświetlanymi Branch1 i Branch2. Te odpowiednie wartości właściwości <xref:System.Activities.Statements.PickBranch.DisplayName%2A> można edytować w nagłówku projektanta działań **PickBranch** lub w oknie **Właściwości** dla każdej gałęzi.
 
-Istnieją dwa sposoby dodawania <xref:System.Activities.Statements.PickBranch> działań do kolekcji <xref:System.Activities.Statements.Pick> obiektu: przeciąganie i upuszczanie **PickBranch** projektanta z **przybornika** lub za pomocą menu kliknij prawym przyciskiem myszy z poziomu **wybierz** powierzchni projektowej. Aby uzyskać więcej informacji, zobacz [PickBranch](../workflow-designer/pickbranch-activity-designer.md) tematu. Zwróć uwagę, że tylko element, którego można umieścić wewnątrz **wybierz** jest Projektant działań **PickBranch** projektanta działań.
+Istnieją dwa sposoby dodawania działań <xref:System.Activities.Statements.PickBranch> do kolekcji <xref:System.Activities.Statements.Pick> obiektu: przeciąganie i upuszczanie projektanta **PickBranch** z **przybornika** lub za pomocą menu dostępnego po kliknięciu prawym przyciskiem myszy z poziomu powierzchni projektowej **wyboru** . Aby uzyskać szczegółowe informacje, zobacz temat [PickBranch](../workflow-designer/pickbranch-activity-designer.md) . Należy zauważyć, że jedynym elementem, który można umieścić wewnątrz projektanta działań **wyboru** , jest **PickBranch** .
 
-### <a name="pick-activity-properties-in-the-workflow-designer"></a>Wybierz właściwości działania w Projektancie przepływu pracy
+### <a name="pick-activity-properties-in-the-workflow-designer"></a>Wybierz właściwości działania w Projektant przepływu pracy
 
-W poniższej tabeli przedstawiono <xref:System.Activities.Statements.Pick> właściwości i w tym artykule opisano, jak są używane w projektancie. Te właściwości można edytować w siatce właściwości lub na powierzchni projektowej.
+W poniższej tabeli przedstawiono właściwości <xref:System.Activities.Statements.Pick> i opisano sposób ich używania w projektancie. Te właściwości można edytować w siatce właściwości lub na powierzchni projektanta.
 
 |Nazwa właściwości|Wymagane|Użycie|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Określa przyjazną nazwę <xref:System.Activities.Statements.Pick> projektanta działań w nagłówku. Wartość domyślna to pobranie. Wartość można edytować w siatce właściwości lub bezpośrednio w nagłówku projektanta działań.<br /><br /> Mimo że <xref:System.Activities.Activity.DisplayName%2A> nie jest bezwzględnie konieczne jest najlepszym rozwiązaniem, aby użyć jednego.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Określa przyjazną nazwę <xref:System.Activities.Statements.Pick> projektanta działań w nagłówku. Wartość domyślna to wybierz. Wartość można edytować w siatce właściwości lub bezpośrednio w nagłówku projektanta działań.<br /><br /> Mimo że <xref:System.Activities.Activity.DisplayName%2A> nie jest ściśle wymagane, najlepszym rozwiązaniem jest użycie jednego z nich.|
 
 ## <a name="see-also"></a>Zobacz także
 

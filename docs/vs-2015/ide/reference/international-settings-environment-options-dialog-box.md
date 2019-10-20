@@ -1,5 +1,5 @@
 ---
-title: Ustawienia międzynarodowe, środowisko, okno dialogowe Opcje | Dokumentacja firmy Microsoft
+title: Ustawienia międzynarodowe, środowisko, Opcje — okno dialogowe | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -16,29 +16,28 @@ helpviewer_keywords:
 - languages, specifying default
 ms.assetid: e3a8815c-6995-4099-8e88-34f91fad55b2
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a42a05c453c328dc156cadb86c9abc55d587c467
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 26ed1ef8941db17c9cc087a80afcad2b4ce982de
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65674301"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650832"
 ---
 # <a name="international-settings-environment-options-dialog-box"></a>Ustawienia międzynarodowe, środowisko, opcje — Okno dialogowe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Strona Ustawienia międzynarodowe umożliwia zmienić domyślny język, jeśli masz więcej niż jedną wersję językową zintegrowanego środowiska programistycznego (IDE) zainstalowane na tym komputerze. Dostęp do tego okna dialogowego wybierając **opcje** z **narzędzia** menu, a następnie wybierając **ustawienia międzynarodowe** z **środowiska** folderu. Jeśli ta strona nie jest wyświetlana na liście, wybierz opcję **Pokaż wszystkie ustawienia** w **opcje** okno dialogowe.  
-  
+Strona Ustawienia międzynarodowe umożliwia zmianę języka domyślnego w przypadku, gdy na komputerze jest zainstalowana więcej niż jedna wersja językowa zintegrowanego środowiska programistycznego (IDE). Możesz uzyskać dostęp do tego okna dialogowego, wybierając **Opcje** z menu **Narzędzia** , a następnie wybierając **Ustawienia międzynarodowe** z folderu **środowiska** . Jeśli ta strona nie jest wyświetlana na liście, wybierz pozycję **Pokaż wszystkie ustawienia** w oknie dialogowym **Opcje** .
+
 > [!NOTE]
-> Dostępne opcje w oknach dialogowych i nazwy i lokalizacje poleceń menu, który zostanie wyświetlony, mogą różnić się od opisanych w pomocy, w zależności od ustawień aktywnych lub wersji. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
-  
- **Język**  
- Wyświetla listę dostępnych języków w wersjach językowych zainstalowany produkt. Ta opcja jest niedostępna, chyba że masz więcej niż jedną wersję językową, zainstalowana na tym komputerze. Wiele języków, produktów lub mieszanym językiem instalacji produktów, któremu udostępniono środowiska, wybór języka jest zmieniana na **taki sam jak Microsoft Windows**.  
-  
+> Opcje dostępne w oknach dialogowych oraz nazwy i lokalizacje poleceń menu, które są widoczne, mogą się różnić od tego, co opisano w pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, wybierz **Importuj i Eksportuj ustawienia** w menu **Narzędzia** . Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień deweloperskich w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+
+ **Język** Wyświetla listę języków dostępnych dla zainstalowanych wersji językowych produktu. Ta opcja jest niedostępna, jeśli na maszynie nie zainstalowano więcej niż jednej wersji językowej. Jeśli wiele języków produktów lub instalacja języka mieszanego współużytkuje środowisko, wybór języka zostanie zmieniony na **taki sam, jak system Microsoft Windows**.
+
 > [!CAUTION]
-> W systemie z wieloma językami zainstalowanymi w narzędziach kompilacji Visual C++ (cl.exe, link.exe, nmake.exe, bscmake.exe i powiązane pliki) nie dotyczy to ustawienie. Tych narzędzi, użyj wersji dla ostatnich zainstalowany język i narzędzia służące do wcześniej zainstalowany język zostaną zastąpione, ponieważ narzędzi kompilacji Visual C++ nie używają modelu satelitarnej biblioteki DLL.  
-  
-## <a name="see-also"></a>Zobacz też  
+> W systemie z zainstalowanymi wieloma językami narzędzia Visual C++ Build Tools (CL. exe, link. exe, NMAKE. exe, BSCMAKE. exe i powiązane pliki) nie wpływają na to ustawienie. Narzędzia te używają wersji dla ostatniego zainstalowanego języka, a narzędzia dla zainstalowanego wcześniej języka są zastępowane, ponieważ narzędzia do kompilacji C++ wizualizacji nie korzystają z modelu satelitarnej biblioteki DLL.
+
+## <a name="see-also"></a>Zobacz też
  [Środowisko, Opcje — okno dialogowe](../../ide/reference/environment-options-dialog-box.md)

@@ -5,47 +5,47 @@ ms.date: 03/19/2019
 ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.custom: vs-get-started
-author: gewarren
+author: jillre
 f1_keywords:
 - vs.startpage
 - VS.StartPage.HowDoI
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 323f941ddb4672de8d52d56cf4e07910531c3df8
-ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
+ms.openlocfilehash: 21449c338024aa19d07c8bf7435c5e88c92c3988
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71095393"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72632435"
 ---
-# <a name="welcome-to-the-visual-studio-ide"></a>Witamy w środowisku IDE programu Visual Studio
+# <a name="welcome-to-the-visual-studio-ide"></a>Środowisko IDE programu Visual Studio — zapraszamy!
 
 [!INCLUDE [overview-part-1](includes/ide-overview.md)]
 
 ## <a name="next-steps"></a>Następne kroki
 
-Zapoznaj się dodatkowo program Visual Studio, wykonując wraz z jednym niniejsze artykuły wprowadzające zawierają:
+Poznanie programu Visual Studio w następujący sposób wraz z jednym z następujących artykułów wprowadzających:
 
-- Poznaj za pomocą edytora kodu w [Dowiedz się, jak za pomocą edytora kodu](../get-started/tutorial-editor.md)
+- Zapoznaj się z edytorem kodu, [Aby poznać korzystanie z edytora kodu](../get-started/tutorial-editor.md)
 
-- Dowiedz się, jak Visual Studio umożliwia organizowanie kodu w [więcej informacji na temat projektów i rozwiązań](../get-started/tutorial-projects-solutions.md)
+- Dowiedz się, jak program Visual Studio organizuje kod w [temacie Informacje o projektach i rozwiązaniach](../get-started/tutorial-projects-solutions.md)
 
-Jeśli chcesz zacząć korzystać do kodowania więcej jedną z następujących przewodników Szybki Start specyficzny dla języka jest dobre następnego kroku:
+Jeśli wszystko jest gotowe do szczegółowe do większej ilości kodu, jeden z następujących przewodników szybki start dla języka jest dobrym następnym krokiem:
 
-- [Tworzenie pierwszej aplikacji sieci web języka Python przy użyciu programu Visual Studio](../ide/quickstart-python.md)
+- [Tworzenie pierwszej aplikacji sieci Web w języku Python za pomocą programu Visual Studio](../ide/quickstart-python.md)
 
-- [Tworzenie pierwszej aplikacji sieci web języka C# przy użyciu programu Visual Studio](../ide/quickstart-aspnet-core.md)
+- [Tworzenie pierwszej C# aplikacji sieci Web za pomocą programu Visual Studio](../ide/quickstart-aspnet-core.md)
 
-- [Tworzenie pierwszej przy użyciu programu Visual Studio F# aplikacji sieci web](../ide/quickstart-fsharp.md)
+- [Tworzenie pierwszej F# aplikacji sieci Web za pomocą programu Visual Studio](../ide/quickstart-fsharp.md)
 
-- [Tworzenie pierwszej aplikacji Node.js przy użyciu programu Visual Studio](../ide/quickstart-nodejs.md)
+- [Tworzenie pierwszej aplikacji node. js przy użyciu programu Visual Studio](../ide/quickstart-nodejs.md)
 
 - [Tworzenie pierwszej C++ aplikacji konsolowej przy użyciu programu Visual Studio](/cpp/get-started/tutorial-console-cpp)
 
 ## <a name="see-also"></a>Zobacz także
 
 - Odkryj [więcej funkcji programu Visual Studio](../ide/advanced-feature-overview.md)
-- Odwiedź stronę [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)
-- Odczyt [blog Visual Studio](https://devblogs.microsoft.com/visualstudio/)
+- Odwiedź witrynę [VisualStudio.Microsoft.com](https://visualstudio.microsoft.com/vs/)
+- Przeczytaj [Blog programu Visual Studio](https://devblogs.microsoft.com/visualstudio/)

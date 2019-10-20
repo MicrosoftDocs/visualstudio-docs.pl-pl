@@ -1,5 +1,5 @@
 ---
-title: Dostosowanie strony początkowej | Dokumentacja firmy Microsoft
+title: Dostosowywanie strony początkowej | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,52 +14,52 @@ helpviewer_keywords:
 - Visual Studio Start page
 ms.assetid: 925d42eb-ec34-426e-ad81-19db8630e536
 caps.latest.revision: 48
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 266082af039ee7f0ba2bd60e0c9a67145aaed1d3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: f1c3dfb145e70665156c921cc9a6f740539bc4e6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65701135"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665850"
 ---
 # <a name="customizing-the-start-page-for-visual-studio"></a>Dostosowanie strony początkowej w Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Można dostosować stronę początkową dla programu Visual Studio na kilka domyślnych sposobów, takich jak pokazywanie **Otwórz projekt** okno dialogowe lub otwieranie rozwiązania, które było ostatnio załadowane. Można także pokazać niestandardową stronę początkową, czyli stronę XAML Windows Presentation Foundation (WPF), która jest uruchamiana w oknie narzędzi i może wykonywać wewnętrzne polecenia Visual Studio.
+Możesz dostosować stronę początkową dla programu Visual Studio na kilka domyślnych sposobów, takich jak wyświetlanie okna dialogowego **Otwórz projekt** lub otwieranie rozwiązania, które było ostatnio załadowane. Można także pokazać niestandardową stronę początkową, czyli stronę XAML Windows Presentation Foundation (WPF), która jest uruchamiana w oknie narzędzi i może wykonywać wewnętrzne polecenia Visual Studio.
 
 ## <a name="customizing-the-default-start-page"></a>Dostosowywanie domyślnej strony początkowej
 
-1. Na pasku menu wybierz **narzędzia**, **opcje**.
+1. Na pasku menu wybierz **Narzędzia**, **Opcje**.
 
-2. Rozwiń **środowiska**, a następnie wybierz **uruchamiania**.
+2. Rozwiń węzeł **środowisko**, a następnie wybierz polecenie **Uruchamianie**.
 
-3. W **przy uruchamianiu** listy, wybierz element który chcesz dostosować.
+3. Z listy podczas **uruchamiania** wybierz element do dostosowania, którego chcesz użyć.
 
 ## <a name="show-a-custom-start-page"></a>Pokaż niestandardową stronę początkową
 
 1. Zainstaluj niestandardową stronę początkową na jeden z następujących sposobów:
 
-    - Zainstaluj go z [Visual Studio Marketplace](https://marketplace.visualstudio.com/), innej witryny sieci Web lub strony w lokalnym intranecie.
+    - Zainstaluj ją z [Visual Studio Marketplace](https://marketplace.visualstudio.com/), innej witryny lub strony w lokalnym intranecie.
 
         > [!NOTE]
-        > Jeśli odpowiada ci strona przeznaczona dla starszej wersji Visual Studio, możesz ją uaktualnić przy użyciu Visual Studio SDK. Zobacz [jak: Uaktualnienie programu Visual Studio niestandardową stronę początkową](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).
+        > Jeśli odpowiada ci strona przeznaczona dla starszej wersji Visual Studio, możesz ją uaktualnić przy użyciu Visual Studio SDK. Zobacz [jak: uaktualnianie niestandardowej strony początkowej programu Visual Studio](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).
 
-         Otwórz plik .vsix, zawierający niestandardową stronę początkową lub skopiuj i Wklej pliki strony początkowej do **% USERPROFILE % \My Studio 2015\StartPages** folderu na komputerze.
+         Otwórz plik. vsix zawierający niestandardową stronę początkową lub skopiuj i Wklej pliki strony początkowej do folderu **% USERPROFILE% \Moje Documents\Visual Studio 2015 \ StartPage** na komputerze.
 
     - Utwórz własną stronę początkową, jeśli zainstalowałeś Visual Studio SDK.
 
-         Zobacz [tworzenia własnego strony początkowej](../misc/creating-your-own-start-page.md).
+         Zobacz [Tworzenie własnej strony początkowej](../misc/creating-your-own-start-page.md).
 
-2. Na pasku menu wybierz **narzędzia**, **opcje**.
+2. Na pasku menu wybierz **Narzędzia**, **Opcje**.
 
-3. Rozwiń **środowiska**, a następnie wybierz **uruchamiania**.
+3. Rozwiń węzeł **środowisko**, a następnie wybierz polecenie **Uruchamianie**.
 
-4. W **Dostosuj stronę początkową** listy, wybierz stronę, która ma.
+4. Na liście **Dostosuj stronę początkową** wybierz żądaną stronę.
 
 > [!NOTE]
-> Jeśli błąd na niestandardowej stronie początkowej powoduje, że Visual Studio ulega awarii, możesz uruchomić Visual Studio w trybie awaryjnym, a następnie ustawić go tak, aby używał domyślnej strony początkowej. Zobacz [/safemode (devenv.exe)](../ide/reference/safemode-devenv-exe.md).
+> Jeśli błąd na niestandardowej stronie początkowej powoduje, że Visual Studio ulega awarii, możesz uruchomić Visual Studio w trybie awaryjnym, a następnie ustawić go tak, aby używał domyślnej strony początkowej. Zobacz [/safemode (devenv. exe)](../ide/reference/safemode-devenv-exe.md).
 
 ## <a name="see-also"></a>Zobacz też
- [Dostosowywanie ustawień środowiska deweloperskiego w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3) [tworzenia własnego strony początkowej](../misc/creating-your-own-start-page.md)
+ [Dostosowywanie ustawień programistycznych w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3) [Tworzenie własnej strony początkowej](../misc/creating-your-own-start-page.md)

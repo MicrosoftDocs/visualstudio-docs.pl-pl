@@ -2,52 +2,52 @@
 title: Instalowanie platform testów jednostkowych innych firm
 ms.date: 04/01/2019
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 9f61b52f72474a8ecd8fac4c30265dcd7cf36a5e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+author: jillre
+ms.openlocfilehash: fef59c757476b46936389ca48ca2bdaf32aec729
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978676"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653255"
 ---
-# <a name="install-unit-test-frameworks"></a>Instalowanie platform testów jednostkowych
+# <a name="install-unit-test-frameworks"></a>Zainstaluj platformy testów jednostkowych
 
-Visual Studio Test Explorer można uruchomić testy przy użyciu dowolnej jednostki struktury testowej, która opracowała interfejs karta dla niego. Instalowanie programu framework kopiuje pliki binarne i dodaje szablony projektu Visual Studio dla obsługiwanych języków. Podczas tworzenia projektu z szablonem, struktura jest zarejestrowany w Eksploratorze testów.
+Program Visual Studio Test Explorer może uruchamiać testy z dowolnego środowiska testów jednostkowych, które opracowało interfejs adaptera. Zainstalowanie struktury kopiuje pliki binarne i dodaje szablony projektów programu Visual Studio dla obsługiwanych języków. Podczas tworzenia projektu z szablonem, struktura jest zarejestrowana w Eksploratorze testów.
 
-Rozwiązania programu Visual Studio może zawierać projektów testów jednostkowych, które korzystają z różnych platform i które są przeznaczone dla różnych języków.
+Rozwiązanie programu Visual Studio może zawierać projekty testów jednostkowych, które korzystają z różnych platform i które są przeznaczone dla różnych języków.
 
-[MSTest](getting-started-with-unit-testing.md) to struktura testów, dostarczane przez program Visual Studio i jest instalowany domyślnie.
+[MSTest](getting-started-with-unit-testing.md) to Platforma testowa dostępna w programie Visual Studio, która jest instalowana domyślnie.
 
-## <a name="acquire-frameworks"></a>Uzyskiwanie struktur
+## <a name="acquire-frameworks"></a>Platformy pozyskiwania
 
-Instalowanie platform testów jednostkowych innych firm przy użyciu **Menedżera pakietów NuGet**.
+Zainstaluj platformy testów jednostkowych innych firm przy użyciu **Menedżera pakietów NuGet**.
 
-1. Kliknij prawym przyciskiem myszy na projekt, który będzie zawierać kod testu, a następnie wybrać **Zarządzaj pakietami NuGet**.
+1. Kliknij prawym przyciskiem myszy projekt, który będzie zawierać kod testu, i wybierz pozycję **Zarządzaj pakietami NuGet**.
 
-2. W **Menedżera pakietów NuGet**, wyszukaj struktury testowej chcesz zainstalować, a następnie kliknij przycisk **zainstalować**.
+2. W **Menedżerze pakietów NuGet**Wyszukaj strukturę testową, którą chcesz zainstalować, a następnie kliknij przycisk **Zainstaluj**.
 
    ![Menedżer pakietów NuGet w programie Visual Studio](media/vs-2019/nuget-package-manager.png)
 
-## <a name="update-to-the-latest-test-adapters"></a>Zaktualizuj do najnowszej adaptery testowe
+## <a name="update-to-the-latest-test-adapters"></a>Aktualizacja do najnowszych kart testowych
 
-Aktualizacja najnowszych adaptera testowego stabilny, aby lepiej testów odkrywania i wykonywania. Aby uzyskać więcej informacji o aktualizacjach MSTest i NUnit, xUnit adapterów testowych, zobacz [blog Visual Studio](https://devblogs.microsoft.com/visualstudio/test-experience-improvements/).
+Zaktualizuj do najnowszej stabilnej karty testowej, aby ułatwić lepsze odnajdywanie i wykonywanie testów. Aby uzyskać więcej informacji o aktualizacjach MSTest, NUnit i xUnit adapterów testowych, zobacz [Blog programu Visual Studio](https://devblogs.microsoft.com/visualstudio/test-experience-improvements/).
 
-### <a name="to-update-to-the-latest-stable-test-adapter-version"></a>Aby zaktualizować do wersji karty najnowszy stabilny testu
+### <a name="to-update-to-the-latest-stable-test-adapter-version"></a>Aby zaktualizować do najnowszej stabilnej wersji karty testowej
 
-1. Otwórz Menedżera pakietów Nuget dla rozwiązania, przechodząc do **narzędzia** > **Menedżera pakietów NuGet** > **Zarządzaj pakietami NuGet dla rozwiązania**.
+1. Otwórz Menedżera pakietów NuGet dla swojego rozwiązania, przechodząc do **narzędzia**  > **menedżer pakietów NuGet**  > **Zarządzanie pakietami NuGet dla rozwiązania**.
 
-2. Kliknij pozycję **aktualizacje** kartę i wyszukaj xUnit, MSTest i NUnit testu kart, które są zainstalowane.
+2. Kliknij kartę **aktualizacje** i Wyszukaj zainstalowane karty testowe MSTest, nunit lub xUnit.
 
-3. Wybierz kartę każdego testu, a następnie wybierz najnowszą stabilną wersję, w menu rozwijanym.
+3. Wybierz każdą kartę testową, a następnie wybierz najnowszą stabilną wersję z menu rozwijanego.
 
-4. Wybierz **zainstalować** przycisku.
+4. Wybierz przycisk **Instaluj** .
 
-   ![Uaktualnianie adaptera testowego](media/install-adapter-upgrade.png)
+   ![Adapter testu uaktualnienia](media/install-adapter-upgrade.png)
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Kod testu jednostkowego](../test/unit-test-your-code.md)
+- [Testowanie jednostkowe kodu](../test/unit-test-your-code.md)

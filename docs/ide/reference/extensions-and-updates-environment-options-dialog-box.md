@@ -5,19 +5,19 @@ ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.ExtensionManager
 ms.assetid: c73859eb-3c33-4f39-86bf-6788387b5937
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d2ddf174255a7db85e3eb61d71472748287be90
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 3d2c40e0f3d7cd1f4f86c10aace502796d6d00bc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605867"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654408"
 ---
-# <a name="options-dialog-box-environment--extensions"></a>Opcje — okno dialogowe: Rozszerzenia \> środowiska
+# <a name="options-dialog-box-environment--extensions"></a>Opcje — okno dialogowe: rozszerzenia \> środowiska
 
 Ta strona służy do ustawiania opcji wykonywania aktualizacji przez program Visual Studio oraz sposobu aktualizowania i odnajdowania rozszerzeń.
 
@@ -27,11 +27,11 @@ Po zaznaczeniu tej opcji program Visual Studio będzie okresowo sprawdzał dost�
 
 ## <a name="automatically-update-extensions"></a>Automatycznie Aktualizuj rozszerzenia
 
-Po zaznaczeniu tej opcji aktualizacje rozszerzeń są wprowadzane bez monitowania. Aby uzyskać więcej informacji, zobacz [Znajdowanie i przy użyciu rozszerzenia programu Visual Studio](../../ide/finding-and-using-visual-studio-extensions.md).
+Po zaznaczeniu tej opcji aktualizacje rozszerzeń są wprowadzane bez monitowania. Aby uzyskać więcej informacji, zobacz [Znajdowanie i używanie rozszerzeń programu Visual Studio](../../ide/finding-and-using-visual-studio-extensions.md).
 
 ## <a name="load-per-user-extensions-when-running-as-administrator"></a>Załaduj rozszerzenia na użytkownika podczas uruchamiania jako administrator
 
-Aby uzyskać więcej informacji, zobacz [Znajdowanie i przy użyciu rozszerzenia programu Visual Studio](../../ide/finding-and-using-visual-studio-extensions.md).
+Aby uzyskać więcej informacji, zobacz [Znajdowanie i używanie rozszerzeń programu Visual Studio](../../ide/finding-and-using-visual-studio-extensions.md).
 
 ## <a name="additional-extension-galleries"></a>Dodatkowe galerie rozszerzeń
 
