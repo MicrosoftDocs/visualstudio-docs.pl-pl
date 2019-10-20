@@ -1,5 +1,5 @@
 ---
-title: Domyślna strona pomocy F1
+title: Strona domyślna dla pomocy F1
 ms.date: 02/28/2018
 ms.topic: troubleshooting
 robots: noindex,nofollow
@@ -7,30 +7,30 @@ f1_keywords:
 - vs.texteditor
 - vs.ambient
 manager: jillfra
-author: gewarren
-ms.author: gewarren
-ms.openlocfilehash: 4779c9aa27f65a3295f3a234e4f46314d7fe3b69
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+author: jillre
+ms.author: jillfra
+ms.openlocfilehash: a1d398d18e9be9bdb5f9bf3b30dc3ff1316b5ddb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65613578"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662039"
 ---
-# <a name="f1-help"></a>F1 Pomoc
+# <a name="f1-help"></a>F1 — Pomoc
 
-Prawdopodobnie nie możemy znaleźć, czego szukasz, a Przepraszamy. Możesz pomóc nam w usprawnianiu Wystaw opinię za pomocą przycisków w dolnej części tej strony.
+Wygląda na to, że nie udało nam się znaleźć tego, czego szukasz, i Przepraszamy. Możesz pomóc nam ulepszyć program, pozostawiając Opinie na przyciskach w dolnej części tej strony.
 
-## <a name="cursor-position"></a>Pozycja kursora
+## <a name="cursor-position"></a>Położenie kursora
 
-Jeśli szukasz pomocy F1 — słowo kluczowe lub nazwa interfejsu API należy kursor znajduje się wewnątrz lub na prawo od słowo przed naciśnięcie **F1**. Jeśli jeszcze tego nie rozwiąże problemu, należy wybrać z [przydatne linki](#useful-links) listy lub wykonaj wyszukiwanie w https://docs.microsoft.com.
+Jeśli szukasz pomocy F1 dla słowa kluczowego lub nazwy interfejsu API, upewnij się, że kursor jest umieszczony wewnątrz lub po prawej stronie słowa przed naciśnięciem klawisza **F1**. Jeśli to nie zadziała, wybierz pozycję z listy [przydatne linki](#useful-links) lub przeszukaj https://docs.microsoft.com.
 
 ## <a name="useful-links"></a>Przydatne linki
 
-- Wyszukaj dokumentację referencyjną w [przeglądarka interfejsu API .NET](/dotnet/api/).
-- C# Pomoc [przewodnik C#](/dotnet/csharp/index).
-- Aby uzyskać pomoc w języku Visual Basic, zobacz [Przewodnik po Visual Basic](/dotnet/visual-basic/).
-- Aby uzyskać F# pomocy, zobacz [ F# przewodnik](/dotnet/fsharp/).
-- Aby uzyskać pomoc w języku Python, zobacz [języka Python w programie Visual Studio](../../python/overview-of-python-tools-for-visual-studio.md).
-- Aby uzyskać pomoc w języku C++, zobacz [C++ w programie Visual Studio](/cpp/visual-cpp-in-visual-studio).
-- Aby uzyskać informacje na temat programu Visual Studio, zobacz [Omówienie programu Visual Studio](../../get-started/visual-studio-ide.md).
-- Aby uzyskać pomoc, Edytor tekstu Visual Studio, zobacz [za pomocą edytora kodu](../../ide/writing-code-in-the-code-and-text-editor.md).
+- Wyszukaj dokumentację referencyjną w [przeglądarce interfejsów API platformy .NET](/dotnet/api/).
+- Aby C# uzyskać pomoc, zobacz [ C# Przewodnik](/dotnet/csharp/index).
+- Aby uzyskać pomoc dotyczącą Visual Basic, zapoznaj się z [przewodnikiem Visual Basic](/dotnet/visual-basic/).
+- Aby F# uzyskać pomoc, zobacz [ F# Przewodnik](/dotnet/fsharp/).
+- Aby uzyskać pomoc dotyczącą języka Python, zobacz [Python w programie Visual Studio](../../python/overview-of-python-tools-for-visual-studio.md).
+- Aby C++ uzyskać pomoc, zobacz [ C++ w programie Visual Studio](/cpp/visual-cpp-in-visual-studio).
+- Aby uzyskać informacje na temat programu Visual Studio, zobacz [Visual Studio — omówienie](../../get-started/visual-studio-ide.md).
+- Aby uzyskać pomoc dotyczącą edytora tekstu programu Visual Studio, zobacz [Korzystanie z edytora kodu](../../ide/writing-code-in-the-code-and-text-editor.md).

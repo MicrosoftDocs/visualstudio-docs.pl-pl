@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Importuj wyniki testu obciążenia z repozytorium'
+title: 'Porady: importowanie wyników testu obciążenia do repozytorium'
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,53 +8,53 @@ helpviewer_keywords:
 - Load Test Results Repository
 - load tests, importing results
 ms.assetid: a955b3d2-c8ad-40dd-8ea3-9f1a271e1eed
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 16f6558373c111dbaf933184cf5ae23d00962b7a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 067c9a9d20f3fe456f93086f2099183fd514d91a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949971"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653503"
 ---
-# <a name="how-to-import-load-test-results-into-a-repository"></a>Instrukcje: Importuj wyniki testu obciążenia z repozytorium
+# <a name="how-to-import-load-test-results-into-a-repository"></a>Instrukcje: Importowanie wyników testu obciążenia do repozytorium
 
-Podczas wykonywania testu obciążeniowego informacje zebrane w trakcie sesji są zapisywane w repozytorium wyników testu obciążeniowego. Repozytorium to zawiera dane licznika wydajności oraz informacje o wszelkich błędach. Aby uzyskać więcej informacji, zobacz [w repozytorium wyników testów obciążenia z wynikami testów obciążeniowych Zarządzaj](../test/manage-load-test-results-in-the-load-test-results-repository.md).
+Podczas wykonywania testu obciążeniowego informacje zebrane w trakcie sesji są zapisywane w repozytorium wyników testu obciążeniowego. Repozytorium to zawiera dane licznika wydajności oraz informacje o wszelkich błędach. Aby uzyskać więcej informacji, zobacz [Zarządzanie wynikami testów obciążenia w repozytorium wyniki testów ładowania](../test/manage-load-test-results-in-the-load-test-results-repository.md).
 
-Wyniki testu obciążeniowego można zarządzać z edytora testu obciążenia, używając **Otwórz i Zarządzaj wynikami testu obciążenia** okno dialogowe. Można otworzyć, importować, eksportować i usuwać wyniki testu obciążenia.
+Można zarządzać wynikami testów obciążenia z Edytor testu obciążeniowego przy użyciu okna dialogowego **Otwórz i zarządzaj wyniki testów ładowania** . Można otwierać, importować, eksportować i usuwać wyniki testów obciążenia.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-## <a name="to-import-results-into-a-repository"></a>Aby zaimportować wyników do repozytorium
+## <a name="to-import-results-into-a-repository"></a>Aby zaimportować wyniki do repozytorium
 
-1. Od wydajności sieci web i obciążenia projektu testowego, otwórz test obciążenia.
+1. Z projektu testu wydajności i obciążenia sieci Web Otwórz test obciążenia.
 
-2. Na osadzonym pasku narzędzi wybierz **Otwórz i Zarządzaj wynikami**.
+2. Na osadzonym pasku narzędzi wybierz pozycję **Otwórz i Zarządzaj wynikami**.
 
-     **Otwórz i Zarządzaj wynikami testu obciążenia** zostanie wyświetlone okno dialogowe.
+     Zostanie wyświetlone okno dialogowe **Otwórz i zarządzaj wyniki testów ładowania** .
 
-3. W **wprowadź nazwę kontrolera Aby odnaleźć wyniki testu obciążeniowego**, wybierz kontroler. Wybierz  **\<lokalny >** aby przejść do wyników przechowywanych lokalnie.
+3. W polu **Wprowadź nazwę kontrolera, aby znaleźć wyniki testu obciążenia**, wybierz kontroler. Wybierz **> \<local** , aby uzyskać dostęp do wyników przechowywanych lokalnie.
 
-     Jeśli wyniki testów obciążenia są dostępne, są wyświetlane w **wyniki testu obciążeniowego** listy. Kolumny są **czasu**, **czas trwania**, **użytkownika**, **wynik**, **testu**, i  **Opis elementu**. **Testowanie** zawiera nazwę testu, i **opis** zawiera opcjonalny opis dodawany przed uruchomieniem testu.
+     Jeśli są dostępne wyniki testów obciążenia, są one wyświetlane na liście **wyników testu obciążenia** . Kolumny są typu **Time**, **Duration**, **User**, **wynik**, **test**i **Description**. **Test** zawiera nazwę testu, a **Opis** zawiera opcjonalny opis, który jest dodawany przed uruchomieniem testu.
 
-4. Wybierz **importu**.
+4. Wybierz pozycję **Importuj**.
 
-     **Importuj wyniki testu obciążeniowego** pojawi się okno dialogowe.
+     Zostanie wyświetlone okno dialogowe **importuj wyniki testów ładowania** .
 
-5. W **nazwy pliku** polu, wpisz nazwę pliku wyników testu zarchiwizowany, a następnie wybierz **Otwórz**.
+5. W polu **Nazwa pliku** wpisz nazwę zarchiwizowanego pliku wyników testu, a następnie wybierz **Otwórz**.
 
-     \- lub —
+     \- lub-
 
      Przejdź do pliku, a następnie wybierz **Otwórz**.
 
     > [!NOTE]
-    > Pliku wyników testu zarchiwizowany, który określisz w tym kroku musi być utworzony przez wykonanie operacji eksportowania.
+    > Plik zarchiwizowanych wyników testu określony w tym kroku musi zostać utworzony przez wykonanie operacji eksportowania.
 
-     Wyniki są importowane i są wyświetlane w **wyniki testu obciążeniowego** listy.
+     Wyniki są importowane i pojawiają się na liście **wyników testu obciążenia** .
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Zarządzaj wynikami testu obciążenia w repozytorium wyników testów obciążenia](../test/manage-load-test-results-in-the-load-test-results-repository.md)
+- [Zarządzanie wynikami testów obciążenia w repozytorium Wyniki testów obciążenia](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [Analizowanie wyników testów obciążenia](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [Instrukcje: Eksportuj wyniki testu obciążenia z repozytorium](../test/how-to-export-load-test-results-from-a-repository.md)
+- [Instrukcje: Eksportowanie wyników testu obciążenia z repozytorium](../test/how-to-export-load-test-results-from-a-repository.md)

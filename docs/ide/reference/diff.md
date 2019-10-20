@@ -7,21 +7,21 @@ helpviewer_keywords:
 - /Diff Devenv switch
 - Diff Devenv switch
 ms.assetid: 5377fedb-632a-4e86-a947-7c11c86451e7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2e69435a319a9730af846a912cb3f90a12d4ac8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 26d438e9cea35cbf178658d8def78e264804240c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945786"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654512"
 ---
-# <a name="diff-devenvexe"></a>/ Diff (devenv.exe)
+# <a name="diff-devenvexe"></a>/Diff (devenv. exe)
 
-Porównuje dwa pliki. Różnice są wyświetlane w specjalne okno programu Visual Studio.
+Porównuje dwa pliki. Różnice są wyświetlane w specjalnym oknie programu Visual Studio.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,27 +33,27 @@ devenv /Diff SourceFile TargetFile [SourceDisplayName [TargetDisplayName]]
 
 - *SourceFile*
 
-  Wymagana. Pełna ścieżka i nazwa pierwszego pliku do porównania.
+  Wymagany. Pełna ścieżka i nazwa pierwszego pliku, który ma zostać porównany.
 
 - *TargetFile*
 
-  Wymagana. Pełna ścieżka i nazwa drugiego pliku do porównania.
+  Wymagany. Pełna ścieżka i Nazwa drugiego pliku, który ma zostać porównany.
 
 - *SourceDisplayName*
 
-  Opcjonalna. Wyświetlana nazwa pierwszego pliku.
+  Opcjonalny. Nazwa wyświetlana pierwszego pliku.
 
 - *TargetDisplayName*
 
-  Opcjonalna. Wyświetlana nazwa drugiego pliku.
+  Opcjonalny. Nazwa wyświetlana drugiego pliku.
 
 ## <a name="remarks"></a>Uwagi
 
-Jeśli wystąpienie IDE jest już otwarty, porównanie plików pojawi się na karcie w bieżącym środowisku IDE.
+Jeśli wystąpienie IDE jest już otwarte, porównanie plików jest wyświetlane na karcie w bieżącym środowisku IDE.
 
 ## <a name="example"></a>Przykład
 
-Pierwszy przykład porównuje dwa pliki bez zmiany ich nazw wyświetlanych. Drugi przykład porównuje pliki przy zmianie zarówno ich nazw wyświetlanych. Przykłady trzecia i czwarta Porównaj dwa pliki, ale alias dotyczą tylko pierwszego pliku lub drugiego pliku.
+Pierwszy przykład porównuje dwa pliki bez zmiany ich nazw wyświetlanych. Drugi przykład porównuje pliki podczas zmiany obu nazw wyświetlanych. Trzeci i czwarty przykład porównują dwa pliki, ale stosuje alias tylko do pierwszego pliku lub drugiego pliku.
 
 ```shell
 devenv /diff File1.txt File2.txt
@@ -67,4 +67,4 @@ devenv /diff File1.txt File2.txt "" FileTwo
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Przełączniki wiersza polecenia Devenv](../../ide/reference/devenv-command-line-switches.md)
+- [Przełączniki wiersza polecenia devenv](../../ide/reference/devenv-command-line-switches.md)

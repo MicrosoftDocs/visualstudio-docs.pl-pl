@@ -6,32 +6,32 @@ helpviewer_keywords:
 - text templates, syntax
 - text templates, guide
 - text templates, functions that generate text
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2549ad27f0f05d3425dd6625e9d48fdfab4db3a6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 860f322724618ddb99bd9ab39eeefa488d9a71c5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386065"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666893"
 ---
 # <a name="writing-a-t4-text-template"></a>Pisanie szablonu tekstowego T4
-Szablon tekstu zawiera tekst, który zostanie z niego wygenerowany. Na przykład szablon, który tworzy stronę sieci web będzie zawierać "\<html >..." i wszystkie inne standardowe elementy strony HTML. Dodaje do szablonu są *bloki sterujące*, które stanowią fragmenty kodu programu. Bloki sterujące zawierają zmienne wartości i umożliwiają warunkowość oraz powtarzalność części tekstu.
+Szablon tekstu zawiera tekst, który zostanie z niego wygenerowany. Na przykład szablon, który tworzy stronę sieci Web, będzie zawierał "\<html >..." i wszystkie inne standardowe części strony HTML. Wstawione do szablonu są *blokami sterowania*, które są fragmentami kodu programu. Bloki sterujące zawierają zmienne wartości i umożliwiają warunkowość oraz powtarzalność części tekstu.
 
  Ta struktura ułatwia tworzenie szablonu, ponieważ można zacząć od prototypu wygenerowanego pliku, po czym stopniowo wstawiać bloki sterujące, które różnicują wynik.
 
  Szablony tekstu składają się z następujących elementów:
 
-- **Dyrektywy** — elementy, które kontrolują sposób przetwarzania szablonu.
+- **Dyrektywy** — elementy kontrolujące sposób przetwarzania szablonu.
 
-- **Bloki tekstu** — zawartość kopiowana bezpośrednio do wyjścia.
+- **Bloki tekstu** — zawartość, która jest kopiowana bezpośrednio do danych wyjściowych.
 
-- **Bloki sterujące** — kod programu, który wstawia zmienne wartości do tekstu oraz kontroluje jego warunkowe lub powtarzające się części.
+- **Bloki kontroli** — kod programu, który wstawia wartości zmiennej do tekstu i kontroluje warunkowe lub powtórzone fragmenty tekstu.
 
-Aby wypróbować przykłady zamieszczone w tym temacie, skopiuj je do pliku szablonu zgodnie z opisem w [generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md). Po zmodyfikowaniu pliku szablonu, zapisz go, a następnie sprawdź dane wyjściowe **.txt** pliku.
+Aby wypróbować przykłady w tym temacie, skopiuj je do pliku szablonu zgodnie z opisem w części [generowanie kodu w czasie projektowania przy użyciu szablonów tekstowych T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md). Po przeprowadzeniu edycji pliku szablonu Zapisz go, a następnie sprawdź plik Output **. txt** .
 
 ## <a name="directives"></a>Dyrektyw
  Dyrektywy szablonów tekstu przekazują do silnika tworzenia szablonów tekstu ogólne instrukcje o sposobach generowania kodu przekształcenia oraz pliku wyjściowego.
@@ -42,7 +42,7 @@ Aby wypróbować przykłady zamieszczone w tym temacie, skopiuj je do pliku szab
 <#@ output extension=".txt" #>
 ```
 
- Aby uzyskać więcej informacji dotyczących dyrektyw, zobacz [dyrektywy T4 dotyczące szablonu tekstowego](../modeling/t4-text-template-directives.md).
+ Aby uzyskać więcej informacji na temat dyrektyw, zobacz [dyrektywy dotyczące szablonów tekstowych T4](../modeling/t4-text-template-directives.md).
 
 ## <a name="text-blocks"></a>Bloki tekstu
  Blok tekstu wstawia tekst bezpośrednio do pliku wyjściowego. Nie istnieje żadne specjalne formatowanie bloków tekstu. Na przykład następujący szablon tekstu będzie generował plik tekstowy zawierający wyraz „Hello”:
@@ -94,7 +94,7 @@ Hello!
  Blok tekstu można wstawić w każdym miejscu kodu, gdzie jest dozwolona instrukcja `Write();`.
 
 > [!NOTE]
-> Osadzenie blok tekstu wewnątrz instrukcji złożonej, takich jak pętli lub warunku, zawsze ujmować w nawiasy klamrowe {...} aby zawierała blok tekstu.
+> Po osadzeniu bloku tekstu w instrukcji złożonej, takiej jak pętla lub warunkowe, zawsze używaj nawiasów klamrowych {...} Aby można było zawierać blok tekstu.
 
 ### <a name="expression-control-blocks"></a>Bloki sterowania wyrażeniami
  Blok sterowania wyrażeniem oblicza wartość wyrażenia i konwertuje ją na ciąg. Powstały ciąg jest wstawiany do pliku wyjściowego.
@@ -107,7 +107,7 @@ Hello!
 <#= 2 + 3 #>
 ```
 
- Zwróć uwagę, że symbol otwierający ma trzy znaki "< #=".
+ Należy zauważyć, że symbol otwierający ma trzy znaki "< # =".
 
  Wyrażenie może zawierać dowolną zmienną znajdującą się w jego zakresie. Na przykład ten blok spowoduje wyświetlanie wierszy z następującymi liczbami:
 
@@ -124,7 +124,7 @@ This is hello number <#= i+1 #>: Hello!
 ```
 
 ### <a name="class-feature-control-blocks"></a>Bloki sterowania cechami klas
- Blok sterowania cechami klasy definiuje właściwości, metody i wszelki inny kod, który nie powinien być objęty głównym przekształceniem. Bloki cech klas są często używane do funkcji pomocników.  Zazwyczaj bloki cech klas są umieszczane w osobnych plikach, tak, aby mogły stanowić [uwzględnione](#Include) przez więcej niż jednego szablonu tekstu.
+ Blok sterowania cechami klasy definiuje właściwości, metody i wszelki inny kod, który nie powinien być objęty głównym przekształceniem. Bloki cech klas są często używane do funkcji pomocników.  Zazwyczaj bloki funkcji klasy są umieszczane w oddzielnych plikach, dzięki czemu mogą być [uwzględniane](#Include) przez więcej niż jeden szablon tekstowy.
 
  Bloki sterowania cechami klas są ujęte w symbole `<#+ ... #>`.
 
@@ -152,7 +152,7 @@ private int Square(int i)
 
  Cechy klas muszą być umieszczone na końcu pliku, w którym są zapisywane. Można jednak dołączyć (`<#@include#>`) plik, który zawiera cechę klasy, nawet jeśli po dyrektywie `include` następują standardowe bloki i tekst.
 
- Aby uzyskać więcej informacji dotyczących bloków sterujących, zobacz [bloki formantów szablonów tekstowych](../modeling/text-template-control-blocks.md).
+ Aby uzyskać więcej informacji na temat bloków sterujących, zobacz [bloki kontrolne szablonu tekstu](../modeling/text-template-control-blocks.md).
 
 ### <a name="class-feature-blocks-can-contain-text-blocks"></a>Bloki cech klas mogą zawierać bloki tekstu
  Można napisać metodę, która generuje tekst. Na przykład:
@@ -191,9 +191,9 @@ private void WriteSquareLine(int i)
 <#@ assembly name="$(SolutionDir)library\MyAssembly.dll" #>
 ```
 
- Dyrektywa zestawu nie ma wpływu na [szablon tekstowy wstępnie przetworzony](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ Dyrektywa zestawu nie ma wpływu na [wstępnie przetworzony szablon tekstu](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
- Aby uzyskać więcej informacji, zobacz [dyrektywa T4 dotycząca zestawu](../modeling/t4-assembly-directive.md).
+ Aby uzyskać więcej informacji, zobacz [Dyrektywa zestawu T4](../modeling/t4-assembly-directive.md).
 
 ### <a name="namespaces"></a>Namespaces
  Dyrektywa „import” działa tak samo jak klauzula `using` w języku C# lub klauzula `imports` w języku Visual Basic. Umożliwia odwoływanie się z kodu do typów bez podawania w pełni kwalifikowanej nazwy:
@@ -204,9 +204,9 @@ private void WriteSquareLine(int i)
 
  Można użyć tylu dyrektyw `assembly` i `import`, ilu trzeba. Trzeba je umieścić przed blokami tekstu i sterującymi.
 
- Aby uzyskać więcej informacji, zobacz [dyrektywa T4 dotycząca importowania](../modeling/t4-import-directive.md).
+ Aby uzyskać więcej informacji, zobacz [dyrektywa importowania T4](../modeling/t4-import-directive.md).
 
-### <a name="Include"></a> Dołączanie kodu i tekstu
+### <a name="Include"></a>Dołączanie kodu i tekstu
  Dyrektywa `include` wstawia tekst z innego pliku szablonu. Na przykład poniższa dyrektywa spowoduje wstawienie zawartości pliku `test.txt`.
 
 ```
@@ -215,33 +215,33 @@ private void WriteSquareLine(int i)
 
  Dołączona zawartość jest przetwarzana prawie tak, jakby była częścią dołączającego szablonu tekstu. Można jednak dołączyć plik, który zawiera blok cech klasy `<#+...#>`, nawet jeśli po dyrektywie „include” następuje zwykły tekst i standardowe bloki sterujące.
 
- Aby uzyskać więcej informacji, zobacz [dyrektywy zawierają T4](../modeling/t4-include-directive.md).
+ Aby uzyskać więcej informacji, zobacz [T4 include dyrektywy](../modeling/t4-include-directive.md).
 
 ### <a name="utility-methods"></a>Metody narzędziowe
  Istnieją różne metody, np. `Write()`, które są zawsze dostępne w bloku sterującym. Są wśród nich m.in. metody do stosowania wcięć w danych wyjściowych oraz zgłaszania błędów.
 
  Można także napisać własny zestaw metod narzędziowych.
 
- Aby uzyskać więcej informacji, zobacz [metody korzystania z szablonów tekstowych](../modeling/text-template-utility-methods.md).
+ Aby uzyskać więcej informacji, zobacz [metody narzędziowe szablonu tekstu](../modeling/text-template-utility-methods.md).
 
 ## <a name="transforming-data-and-models"></a>Przekształcanie danych i modeli
  Najbardziej przydatnym zastosowaniem szablonu tekstu jest generowanie materiału na podstawie zawartości źródła takiego jak model, baza danych lub plik danych. Szablon wyodrębnia i reformatuje dane. Kolekcja szablonów może przekształcić takie źródło w wiele plików.
 
  Istnieją różne techniki odczytywania pliku źródłowego.
 
- **Odczytywanie pliku w szablonie tekstowym**. Jest to najprostszy sposób wprowadzenia danych do szablonu:
+ **Odczytaj plik w szablonie tekstowym**. Jest to najprostszy sposób wprowadzenia danych do szablonu:
 
 ```
 <#@ import namespace="System.IO" #>
 <# string fileContent = File.ReadAllText(@"C:\myData.txt"); ...
 ```
 
- **Załaduj plik jako model można nawigować**. Bardziej zaawansowaną metodą jest odczyt danych jako modelu, po którym może się poruszać kod źródłowy szablonu tekstu. Na przykład można wczytać plik XML i nawigować po nim przy użyciu wyrażeń XPath. Można także użyć [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765) utworzyć zestaw klas, z którymi może odczytywać dane XML.
+ **Załaduj plik jako model nawigacji**. Bardziej zaawansowaną metodą jest odczyt danych jako modelu, po którym może się poruszać kod źródłowy szablonu tekstu. Na przykład można wczytać plik XML i nawigować po nim przy użyciu wyrażeń XPath. Można również użyć [XSD. exe](http://go.microsoft.com/fwlink/?LinkId=178765) , aby utworzyć zestaw klas, za pomocą których można odczytywać dane XML.
 
- **Edycja pliku modelu w diagramie lub formularzu.** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] udostępnia narzędzia umożliwiające edytowanie modelu jako diagramu lub formularza Windows. Ułatwia to przedyskutowanie modelu z użytkownikami wygenerowanej aplikacji. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] tworzy również zestaw silnie typizowanych klas, które odzwierciedlają strukturę modelu. Aby uzyskać więcej informacji, zobacz [generowanie kodu z języka specyficznego dla domeny](../modeling/generating-code-from-a-domain-specific-language.md).
+ **Edytuj plik modelu w diagramie lub formularzu.** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] udostępnia narzędzia, które pozwalają edytować model jako diagram lub formularz systemu Windows. Ułatwia to przedyskutowanie modelu z użytkownikami wygenerowanej aplikacji. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] tworzy również zestaw klas o jednoznacznie określonym typie, które odzwierciedlają strukturę modelu. Aby uzyskać więcej informacji, zobacz [generowanie kodu z języka specyficznego dla domeny](../modeling/generating-code-from-a-domain-specific-language.md).
 
 ### <a name="relative-file-paths-in-design-time-templates"></a>Względne ścieżki plików w szablonach czasu projektowania
- W [szablon tekstowy czasu projektowania](../modeling/design-time-code-generation-by-using-t4-text-templates.md), jeśli chcesz odwołać się do pliku w lokalizacji względnej wobec szablonu tekstu, użyj `this.Host.ResolvePath()`. Ponadto w dyrektywie `hostspecific="true"` trzeba ustawić wartość `template`:
+ Jeśli chcesz odwołać się do pliku w lokalizacji względem szablonu tekstu, w [szablonie tekstu czasu projektowania](../modeling/design-time-code-generation-by-using-t4-text-templates.md)Użyj `this.Host.ResolvePath()`. Ponadto w dyrektywie `hostspecific="true"` trzeba ustawić wartość `template`:
 
 ```
 <#@ template hostspecific="true" language="C#" #>
@@ -255,16 +255,16 @@ Content of MyFile.txt is:
 <#= myFile #>
 ```
 
-Można również wykorzystywać inne usługi udostępniane przez hosta. Aby uzyskać więcej informacji, zobacz [uzyskiwania dostępu do programu Visual Studio lub innych hostów z szablonu](/previous-versions/visualstudio/visual-studio-2010/gg604090\(v\=vs.100\)).
+Można również wykorzystywać inne usługi udostępniane przez hosta. Aby uzyskać więcej informacji, zobacz [Uzyskiwanie dostępu do programu Visual Studio lub innych hostów z szablonu](/previous-versions/visualstudio/visual-studio-2010/gg604090\(v\=vs.100\)).
 
 ### <a name="design-time-text-templates-run-in-a-separate-appdomain"></a>Szablony tekstu czasu projektowania uruchamiane w oddzielnej domenie aplikacji
 
- Należy zwrócić uwagę, [szablon tekstowy czasu projektowania](../modeling/design-time-code-generation-by-using-t4-text-templates.md) działa w elemencie AppDomain, który jest oddzielony od głównej aplikacji. W większości przypadków nie ma to znaczenia, jednak w pewnych skomplikowanych przypadkach mogą wystąpić ograniczenia. Na przykład aby można było przekazać dane między szablonem a osobną usługą, usługa musi udostępniać interfejs API obsługujący serializację.
+ Należy pamiętać, że [szablon tekstu czasu projektowania](../modeling/design-time-code-generation-by-using-t4-text-templates.md) działa w domenie aplikacji, która jest oddzielona od głównej aplikacji. W większości przypadków nie ma to znaczenia, jednak w pewnych skomplikowanych przypadkach mogą wystąpić ograniczenia. Na przykład aby można było przekazać dane między szablonem a osobną usługą, usługa musi udostępniać interfejs API obsługujący serializację.
 
- (Nie dotyczy [szablonie tekstowym czasu wykonywania](../modeling/run-time-text-generation-with-t4-text-templates.md), ponieważ zawiera on kod kompilowany wraz z resztą kodu.)
+ (To nie jest prawdą od [szablonu tekstu w czasie wykonywania](../modeling/run-time-text-generation-with-t4-text-templates.md), który zawiera kod, który jest kompilowany wraz z resztą kodu).
 
 ## <a name="editing-templates"></a>Edytowanie szablonów
- Z internetowej galerii menedżera rozszerzeń można pobrać wyspecjalizowane edytory szablonów tekstu. Na **narzędzia** menu, kliknij przycisk **Menedżera rozszerzeń**. Kliknij przycisk **Online Gallery**, a następnie użyć narzędzia wyszukiwania.
+ Z internetowej galerii menedżera rozszerzeń można pobrać wyspecjalizowane edytory szablonów tekstu. W menu **Narzędzia** kliknij pozycję **Menedżer rozszerzeń**. Kliknij pozycję **Galeria online**, a następnie użyj narzędzia wyszukiwania.
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
@@ -272,7 +272,7 @@ Można również wykorzystywać inne usługi udostępniane przez hosta. Aby uzys
 |-|-|
 |Pisanie szablonu.|[Zalecenia dotyczące pisania szablonów tekstowych T4](../modeling/guidelines-for-writing-t4-text-templates.md)|
 |Generowanie tekstu przy użyciu kodu programu.|[Struktura szablonu tekstu](../modeling/writing-a-t4-text-template.md)|
-|Generowanie plików w rozwiązaniu Visual Studio.|[Generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|
-|Uruchom generowanie tekstu poza programem Visual Studio.|[Generowanie plików za pomocą narzędzia TextTransform](../modeling/generating-files-with-the-texttransform-utility.md)|
+|Generuj pliki w rozwiązaniu programu Visual Studio.|[Generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|
+|Uruchom Generowanie tekstu poza programem Visual Studio.|[Generowanie plików za pomocą narzędzia TextTransform](../modeling/generating-files-with-the-texttransform-utility.md)|
 |Przekształć dane w postaci języka specyficznego dla domeny.|[Generowanie kodu z języka specyficznego dla domeny](../modeling/generating-code-from-a-domain-specific-language.md)|
-|Napisz dyrektywy procesorów, którą należy przekształcić źródła danych.|[Dopasowanie przekształcenia tekstu T4](../modeling/customizing-t4-text-transformation.md)|
+|Napisz procesory dyrektywy, aby przekształcić własne źródła danych.|[Dopasowanie przekształcenia tekstu T4](../modeling/customizing-t4-text-transformation.md)|

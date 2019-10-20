@@ -1,5 +1,5 @@
 ---
-title: Analizowanie naruszeń zasady progu w testach obciążenia
+title: Analizowanie naruszeń reguł progu w testach obciążenia
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,70 +12,70 @@ helpviewer_keywords:
 - load test results, analyzing threshold violations
 - thresholds in load tests
 ms.assetid: 969ed346-cf2e-4d48-82b3-edb3e075e1c0
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 011b010eaad5def8943fd18a84da9fefdb01eff5
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 7ffff5818c5d3c7085ef3bebcc29c31a363a09b9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918623"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665343"
 ---
-# <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analizowanie naruszeń zasady progu w testach obciążenia za pomocą analizatora testu obciążenia
+# <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analizowanie naruszeń reguł progu w testach obciążenia za pomocą analizatora testu obciążenia
 
-Reguły progów są skojarzone z specyficzne liczniki wydajności, a naruszenia wskazują, że licznik wydajności przekracza lub spadła poniżej wartości zestawu. Po uruchomieniu testu obciążenia, można analizować naruszeń dla reguły progów, które wcześniej.
+Reguły progów są skojarzone z konkretnymi licznikami wydajności, a naruszenia wskazują, że licznik wydajności został przekroczony lub spadł poniżej wartości ustawionej. Po uruchomieniu testu obciążenia można analizować naruszenia, które następują dla reguł progu, które zostały wcześniej skonfigurowane.
 
-W przypadku wszelkich naruszeniach, **naruszenia progu** hiperłącze pojawia się na **analizatora testu obciążenia** pasek stanu i określa liczbę naruszeń, które wystąpiły. Możesz wybrać hiperlink, aby wyświetlić tabelę naruszenia progu. Można również wyświetlić naruszenie progowe w **liczniki** okna, a na wykresie.
+Jeśli wystąpią jakieś naruszenia, na pasku stanu **analizatora testu obciążenia** pojawia się hiperłącze **naruszenia progu** i określa liczbę naruszeń, które wystąpiły. Wybierz hiperlink, aby wyświetlić tabelę naruszeń progu. Możesz również wyświetlić naruszenia progu w oknie **liczniki** i na grafie.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-## <a name="view-threshold-violations-in-the-table"></a>Wyświetl naruszenie progowe w tabeli
+## <a name="view-threshold-violations-in-the-table"></a>Wyświetl naruszenia progu w tabeli
 
-Tabeli naruszenia progu są wyświetlane pierwsze 1000 naruszenia. Poniższa tabela zawiera następujące kolumny:
+W tabeli naruszeń progowych są wyświetlane pierwsze naruszenia 1 000. Poniższa tabela zawiera następujące kolumny:
 
-|Kolumny|Opis|Domyślnie widoczny|
+|Kolumna|Opis|Domyślnie widoczne|
 |-|-|-|
-|Godzina|Czas podczas ładowania testu, w której nastąpiło naruszenie zasad.|Tak|
-|Komputer|Nazwa komputera w ramach testu, w którym wystąpiło naruszenie. **Uwaga:**  Jest to ważne w przypadku uruchamiania testów obciążenia w ramach platform.|Tak|
-|Kategoria|Kategoria licznika wydajności, w którym wystąpiło naruszenie.|Tak|
-|Licznik|Nazwa licznika wydajności, w którym wystąpiło naruszenie.|Tak|
-|Wystąpienie|Wystąpienie licznika wydajności, w którym wystąpiło naruszenie.|Tak|
-|Komunikat|Komunikat, który opisuje naruszenie progu. Na przykład **wartość 5 przekracza krytyczną wartość progową równą 0**.|Tak|
+|Godzina|Czas podczas testu obciążenia, w którym wystąpiło naruszenie.|Tak|
+|Komputerem|Nazwa testowanego komputera, na którym wystąpiło naruszenie. **Uwaga:**  Jest to ważne w przypadku uruchamiania testów obciążenia w ramach platform.|Tak|
+|Kategoria|Kategoria licznika wydajności, na którym wystąpiło naruszenie.|Tak|
+|Licznik|Nazwa licznika wydajności, na którym wystąpiło naruszenie.|Tak|
+|Wystąpienie|Wystąpienie licznika wydajności, na którym wystąpiło naruszenie.|Tak|
+|Komunikat|Komunikat opisujący naruszenie progu. Na przykład **wartość 5 przekracza krytyczną wartość progową 0**.|Tak|
 
 > [!NOTE]
-> Możesz sortować tabeli, wybierając nagłówków kolumn.
+> Tabelę można sortować, wybierając nagłówki kolumn.
 
-Aby uzyskać więcej informacji, zobacz [analizowanie wyników testów obciążenia oraz błędów w widoku tabele](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+Aby uzyskać więcej informacji, zobacz [Analizowanie wyników testów obciążenia i błędów w widoku tabele](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
-## <a name="view-threshold-violations-in-the-counters-panel"></a>Wyświetl naruszenie progowe w panelu liczników
+## <a name="view-threshold-violations-in-the-counters-panel"></a>Wyświetlanie naruszeń progu w panelu liczniki
 
-Możesz wyświetlić naruszenie progowe w **liczniki** panelu w drzewie, zawierającego listę liczników wydajności dla testu obciążeniowego. Ikony w **liczniki** panelu komunikacji naruszenia progu. Ikona będzie jedną z następujących czynności:
+Naruszenia progu można wyświetlić w panelu **liczniki** w drzewie, w którym są wyświetlane liczniki wydajności dla testu obciążenia. Ikony w panelu **liczniki** komunikują się naruszeniami progowymi. Ikona będzie mieć jedną z następujących wartości:
 
-Ikona będzie jedną z następujących czynności:
+Ikona będzie mieć jedną z następujących wartości:
 
-![Nie naruszenie progu](../test/media/icon_ltest_1.gif) Nie naruszenie progu.
+![Brak naruszenia progu](../test/media/icon_ltest_1.gif) Brak naruszenia progu.
 
-![Naruszenie progu krytycznego w ostatnim interwale](../test/media/icon_ltest_2.gif) Naruszenie progu krytycznego podczas ostatniego interwału.
+![Krytyczne naruszenie progu dla ostatniego interwału](../test/media/icon_ltest_2.gif) W ostatnim interwale wystąpiło naruszenie progu krytycznego.
 
-![Naruszenie progu krytycznego na wcześniejsze interwału](../test/media/icon_ltest_3.gif) Naruszenie progu krytycznego podczas poprzedniego interwału.
+![Naruszenie progu krytycznego w poprzednim interwale](../test/media/icon_ltest_3.gif) Wystąpiło naruszenie progu krytycznego w poprzednim interwale.
 
-![Naruszenie progu ostrzegawczego w ostatnim interwale](../test/media/icon_ltest_4.gif) Naruszenie progu ostrzegawczego podczas ostatniego interwału.
+![Naruszenie progu ostrzeżenia w ostatnim interwale](../test/media/icon_ltest_4.gif) Wystąpiło naruszenie progu ostrzeżenia w ostatnim interwale.
 
-![Naruszenie progu ostrzegawczego na wcześniejsze interwału](../test/media/icon_ltest_5.gif) Naruszenie progu ostrzegawczego podczas poprzedniego interwału.
+![Naruszenie progu ostrzeżenia w poprzednim interwale](../test/media/icon_ltest_5.gif) Wystąpiło naruszenie progu ostrzeżenia w poprzednim interwale.
 
-Opcjonalnie naruszenia wartości progowych mogą być wyświetlane na wykresie, również. Ikona progu pojawia się na wykresie obok punktu danych, w którym wystąpiło naruszenie progu.
+Opcjonalnie naruszenia progów mogą być wyświetlane na wykresie. Ikona progu pojawia się na wykresie obok punktu danych, w którym wystąpiło naruszenie progu.
 
-W drzewie liczników ikona naruszenia progu są propagowane z węzła określonego licznika, aż węzeł główny. Ta ostrzega o naruszenie na licznik, który może nie być widoczna w drzewie, ponieważ nie została rozwinięta drzewa.
+W drzewie liczników ikona naruszenia progu jest propagowana z określonego węzła licznika do węzła głównego. Powoduje to naruszenie dla licznika, który może nie być widoczny w drzewie, ponieważ drzewo nie zostało rozwinięte.
 
-## <a name="view-threshold-violations-on-the-graph"></a>Wyświetl naruszenia progowe na wykresie
+## <a name="view-threshold-violations-on-the-graph"></a>Wyświetl naruszenia progu na wykresie
 
-Możesz wyświetlić naruszenia progowe na wykresie. Podobnie jak **liczniki** panelu ikony komunikacji naruszenia progowe na wykresie. Ikony są wyświetlane na wykresie obok punktu danych, w którym wystąpiło naruszenie progu. W przypadku naruszenia progu na licznik, który nie jest wyświetlana na wykresie, można dodać go do wykresu, przeciągając go z **liczniki** panelu do wykresu.
+Na wykresie można wyświetlać naruszenia progów. Podobnie jak w panelu **Counters** , ikony komunikują się z progami naruszeń na grafie. Ikony pojawiają się na wykresie obok punktu danych, w którym wystąpiło naruszenie progu. Jeśli wystąpiło naruszenie progu na liczniku, który nie pojawia się na wykresie, można dodać go do grafu, przeciągając go z panelu **liczniki** do grafu.
 
-Aby uzyskać więcej informacji, zobacz [w widoku wykresu z wynikami testów obciążeniowych analizy](../test/analyze-load-test-results-in-the-graphs-view.md).
+Aby uzyskać więcej informacji, zobacz [Analizowanie wyników testów obciążenia w widoku wykresy](../test/analyze-load-test-results-in-the-graphs-view.md).
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Określanie zbiorów liczników oraz zasad progu dla komputerów w teście obciążeniowym](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
+- [Określanie zestawów liczników i reguł progu dla komputerów w teście obciążenia](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
 - [Analizowanie wyników testów obciążenia](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [Analizowanie wyników testów obciążenia oraz błędów w widoku tabeli](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)
+- [Analizowanie wyników testów obciążenia i błędów w widoku tabel](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)

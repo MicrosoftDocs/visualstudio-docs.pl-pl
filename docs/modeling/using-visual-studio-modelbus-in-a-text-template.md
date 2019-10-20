@@ -1,78 +1,78 @@
 ---
-title: Użyj ModelBus w szablonie tekstu
+title: Używanie ModelBus w szablonie tekstowym
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3ea71b2a0226036a923395bbc2dfa3d6b4fc58c
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 2d6e34793f36da2bf9c5ee8a2cd9d410c9f692ea
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870488"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72663753"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>Użycie programu Visual Studio ModelBus w szablonie tekstu
 
-Jeśli piszesz szablony tekstowe, które odczytują modelu, który zawiera odwołania Visual Studio ModelBus, możesz chcieć rozpoznawania odwołań, aby uzyskiwać dostęp do modeli docelowego. W takim przypadku konieczne będzie dostosowywać szablony tekstowe i odwołania języków specyficznych dla domeny (językami DSL):
+W przypadku pisania szablonów tekstowych, które odczytują model, który zawiera Visual Studio ModelBus odwołania, możesz chcieć rozwiązać odwołania w celu uzyskania dostępu do modeli docelowych. W takim przypadku konieczne jest dostosowanie szablonów tekstowych i odwołań do języków specyficznych dla domeny (językami DSL):
 
-- Język DSL, który jest elementem docelowym odwołania musi mieć kartę ModelBus, który jest skonfigurowany dla dostępu z poziomu szablonów tekstu. Jeśli język DSL jest również dostęp z innego kodu, ponownie skonfigurowane jest wymagana karta oprócz standardowej karty ModelBus.
+- DSL, który jest obiektem docelowym odwołań, musi mieć adapter ModelBus skonfigurowany do dostępu z szablonów tekstowych. W przypadku uzyskania dostępu do modemu DSL z innego kodu, oprócz standardowej karty ModelBus, wymagana jest ponownie skonfigurowana karta.
 
      Menedżer adapterów musi dziedziczyć z [VsTextTemplatingModelingAdapterManager](/previous-versions/ee844317(v=vs.140)) i musi mieć atrybut `[HostSpecific(HostName)]`.
 
 - Szablon musi dziedziczyć po elemencie [ModelBusEnabledTextTransformation](/previous-versions/ee844263(v=vs.140)).
 
 > [!NOTE]
-> Jeśli chcesz odczytać DSL modeli, które nie zawierają odwołań ModelBus, można użyć procesorów dyrektyw, które są generowane w projektach języka DSL. Aby uzyskać więcej informacji, zobacz [uzyskiwania dostępu do modeli z poziomu szablonów tekstu](../modeling/accessing-models-from-text-templates.md).
+> Jeśli chcesz odczytywać modele DSL, które nie zawierają odwołań ModelBus, możesz użyć procesorów dyrektywy, które są generowane w projektach DSL. Aby uzyskać więcej informacji, zobacz [Uzyskiwanie dostępu do modeli z szablonów tekstowych](../modeling/accessing-models-from-text-templates.md).
 
-Aby uzyskać więcej informacji na temat szablonów tekstowych, zobacz [generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
+Aby uzyskać więcej informacji na temat szablonów tekstowych, zobacz [generowanie kodu w czasie projektowania przy użyciu szablonów tekstowych T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
 
 ## <a name="create-a-model-bus-adapter-for-access-from-text-templates"></a>Tworzenie karty magistrali modelu na potrzeby dostępu z szablonów tekstowych
 
-Aby rozwiązać odwołanie ModelBus w szablonie tekstu, docelowy DSL musi mieć kartę zgodne. Szablonów tekstowych wykonywania w oddzielnym elemencie AppDomain z edytorów dokumentu programu Visual Studio i w związku z tym karta ma można załadować modelu zamiast uzyskiwanie do niej dostępu za pośrednictwem obiektu DTE.
+Aby można było rozpoznać odwołanie ModelBus w szablonie tekstowym, docelowy DSL musi mieć zgodną kartę. Szablony tekstowe są wykonywane w oddzielnym elemencie AppDomain z edytorów dokumentów programu Visual Studio, dlatego Adapter musi ładować model zamiast uzyskiwać do niego dostęp za pośrednictwem DTE.
 
-1. Jeśli nie ma docelowej rozwiązania DSL **elementu ModelBusAdapter** projektu, należy go utworzyć za pomocą Kreatora Modelbus rozszerzenia:
+1. Jeśli docelowe rozwiązanie DSL nie ma projektu **ModelBusAdapter** , utwórz je za pomocą Kreatora rozszerzenia ModelBus:
 
-    1. Pobierz i zainstaluj rozszerzenia programu Visual Studio ModelBus, jeśli użytkownik jeszcze nie zostało to zrobione. Aby uzyskać więcej informacji, zobacz [wizualizacji i modelowania SDK](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
+    1. Pobierz i zainstaluj rozszerzenie Visual Studio ModelBus, jeśli jeszcze tego nie zrobiono. Aby uzyskać więcej informacji, zobacz temat [Wizualizacja i Modeling SDK](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
-    2. Otwórz plik definicji DSL. Kliknij prawym przyciskiem myszy powierzchnię projektu, a następnie kliknij przycisk **Włącz Modelbus**.
+    2. Otwórz plik definicji DSL. Kliknij prawym przyciskiem myszy powierzchnię projektu, a następnie kliknij pozycję **Włącz ModelBus**.
 
-    3. W oknie dialogowym wybierz **chcę, aby udostępnić tego języka DSL do ModelBus**. Można wybrać obu opcji, jeśli chcesz, aby tego języka DSL, aby uwidocznić jej modeli i korzystanie z odwołań do innych języków DSL.
+    3. W oknie dialogowym wybierz opcję **Chcę uwidocznić ten DSL w ModelBus**. Możesz wybrać obie opcje, jeśli chcesz, aby ta linia DSL mogła uwidocznić swoje modele i wykorzystać odwołania do innych językami DSL.
 
-    4. Kliknij przycisk **OK**. Nowy projekt "Elementu ModelBusAdapter" jest dodawany do rozwiązania DSL.
+    4. Kliknij przycisk **OK**. Do rozwiązania DSL zostanie dodany nowy projekt "ModelBusAdapter".
 
-    5. Kliknij przycisk **Transformuj wszystkie szablony**.
+    5. Kliknij kolejno pozycje **Przekształć wszystkie szablony**.
 
     6. Ponownie skompiluj rozwiązanie.
 
-2. Jeśli chcesz uzyskać dostęp do język DSL, zarówno z szablonu tekstu i innego kodu, takich jak polecenia zduplikowane **elementu ModelBusAdapter** projektu:
+2. Jeśli chcesz uzyskać dostęp do linii DSL zarówno z szablonu tekstu, jak i z innego kodu, takiego jak polecenie, Duplikuj projekt **ModelBusAdapter** :
 
-    1. W Eksploratorze Windows skopiuj i Wklej folder, który zawiera **ModelBusAdapter.csproj**.
+    1. W Eksploratorze Windows skopiuj i wklej folder zawierający **ModelBusAdapter. csproj**.
 
-    2. Zmień nazwę pliku projektu (na przykład, aby **T4ModelBusAdapter.csproj**).
+    2. Zmień nazwę pliku projektu (na przykład na **T4ModelBusAdapter. csproj**).
 
-    3. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł rozwiązania, wskaż **Dodaj**, a następnie kliknij przycisk **istniejący projekt**. Zlokalizuj nowy projekt karty **T4ModelBusAdapter.csproj**.
+    3. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł rozwiązanie, wskaż polecenie **Dodaj**, a następnie kliknij pozycję **istniejący projekt**. Znajdź nowy projekt karty, **T4ModelBusAdapter. csproj**.
 
-    4. W każdym `*.tt` pliku nowego projektu Zmienianie przestrzeni nazw.
+    4. W każdym pliku `*.tt` nowego projektu Zmień przestrzeń nazw.
 
-    5. Kliknij prawym przyciskiem myszy nowy projekt w **Eksplorator rozwiązań** a następnie kliknij polecenie **Właściwości**. W edytorze właściwości można zmienić nazwy wygenerowanego zestawu i domyślny obszar nazw.
+    5. Kliknij prawym przyciskiem myszy nowy projekt w **Eksplorator rozwiązań** a następnie kliknij polecenie **Właściwości**. W edytorze właściwości Zmień nazwy wygenerowanego zestawu i domyślnego obszaru nazw.
 
-    6. W projekcie DslPackage Dodaj odwołanie do nowego projektu karty, tak, że ma odwołania do obu kart.
+    6. W projekcie DslPackage Dodaj odwołanie do projektu nowej karty, aby odwoływać się do obu kart.
 
-    7. W DslPackage\source.extension.tt Dodaj wiersz, który odwołuje się do nowego projektu karty.
+    7. W DslPackage\source.extension.tt Dodaj wiersz odwołujący się do nowego projektu karty.
 
         ```
         <MefComponent>|T4ModelBusAdapter|</MefComponent>
         ```
 
-    8. **Transformuj wszystkie szablony** i ponownie skompiluj rozwiązanie. Powinien wystąpić żadne błędy kompilacji.
+    8. **Przekształć wszystkie szablony** i Skompiluj ponownie rozwiązanie. Nie powinny wystąpić błędy kompilacji.
 
-3. W nowym projekcie adaptera należy dodać odwołania do następujących zestawów:
+3. W projekcie nowej karty Dodaj odwołania do następujących zestawów:
 
-    - Microsoft.VisualStudio.TextTemplating.11.0
-    - Microsoft.VisualStudio.TextTemplating.Modeling.11.0
+    - Microsoft. VisualStudio. TextTemplating. 11.0
+    - Microsoft. VisualStudio. TextTemplating. Modeling. 11.0
 
 4. W AdapterManager.tt:
 
@@ -82,7 +82,7 @@ Aby rozwiązać odwołanie ModelBus w szablonie tekstu, docelowy DSL musi mieć 
 
          `Microsoft.VisualStudio.TextTemplating.Modeling.VsTextTemplatingModelingAdapterManager { ...`
 
-    - Pod koniec pliku Zastąp atrybut HostSpecific przed klasy adaptermanager obsługującego element. Usuń następujący wiersz:
+    - Przed końcem pliku Zastąp atrybut HostSpecific przed klasą adaptera. Usuń następujący wiersz:
 
          `[DslIntegration::HostSpecific(DslIntegrationShell::VsModelingAdapterManager.HostName)]`
 
@@ -90,21 +90,21 @@ Aby rozwiązać odwołanie ModelBus w szablonie tekstu, docelowy DSL musi mieć 
 
          `[Microsoft.VisualStudio.Modeling.Integration.HostSpecific(HostName)]`
 
-         Ten atrybut służy do przefiltrowania zestaw kart sieciowych, który jest dostępny, gdy konsument modelbus wyszukuje karty.
+         Ten atrybut filtruje zestaw kart, które są dostępne, gdy odbiorca ModelBus wyszukuje adapter.
 
-5. **Transformuj wszystkie szablony** i ponownie skompiluj rozwiązanie. Powinien wystąpić żadne błędy kompilacji.
+5. **Przekształć wszystkie szablony** i Skompiluj ponownie rozwiązanie. Nie powinny wystąpić błędy kompilacji.
 
 ## <a name="write-a-text-template-that-can-resolve-modelbus-references"></a>Napisz szablon tekstowy, który może rozwiązać odwołania ModelBus
 
-Zazwyczaj Rozpocznij od szablonu, który odczytuje i generuje pliki z "źródło" DSL. Ten szablon używa dyrektywy, który jest generowany w projekcie języka DSL źródło do odczytu źródła plików modelu w sposób opisany w [uzyskiwania dostępu do modeli z poziomu szablonów tekstu](../modeling/accessing-models-from-text-templates.md). Jednak źródło DSL zawiera ModelBus odwołania do "target" DSL. W związku z tym chcesz włączyć kod szablonu do rozpoznawania odwołań i dostępu do docelowych DSL. W związku z tym należy dostosować szablon, wykonaj następujące czynności:
+Zwykle zaczynasz od szablonu, który odczytuje i generuje pliki z "source". Ten szablon używa dyrektywy, która jest generowana w źródłowym projekcie DSL do odczytywania plików modeli źródłowych w sposób opisany w temacie [Uzyskiwanie dostępu do modeli z szablonów tekstowych](../modeling/accessing-models-from-text-templates.md). Jednak Źródło DSL zawiera odwołania ModelBus do elementu "target" DSL. W związku z tym należy włączyć kod szablonu, aby rozpoznać odwołania i uzyskać dostęp do docelowego języka DSL. W związku z tym należy dostosować szablon, wykonując następujące czynności:
 
 - Zmień klasę bazową szablonu na [ModelBusEnabledTextTransformation](/previous-versions/ee844263(v=vs.140)).
 
-- Obejmują `hostspecific="true"` w dyrektywie szablonu.
+- Uwzględnij `hostspecific="true"` w dyrektywie Template.
 
-- Dodaj odwołania do zestawów docelowych DSL i jego karty i włączyć ModelBus.
+- Dodaj odwołania do zestawu do docelowego DSL i jego karty, a następnie Włącz ModelBus.
 
-- Dyrektywę, który zostanie wygenerowany jako część DSL element docelowy nie jest konieczne.
+- Nie potrzebujesz dyrektywy, która jest generowana w ramach docelowego DSL.
 
 ```
 <#@ template debug="true" hostspecific="true" language="C#"
@@ -145,47 +145,47 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 #>
 ```
 
- Po wykonaniu tego szablonu tekstowego `SourceDsl` dyrektywy ładuje plik `Sample.source`. Szablon można uzyskać dostęp do elementów modelu, zaczynając od `this.ModelRoot`. Kod można użyć klasy domeny i właściwości działania tego języka DSL.
+ Po wykonaniu tego szablonu tekstu dyrektywa `SourceDsl` ładuje plik `Sample.source`. Szablon może uzyskać dostęp do elementów tego modelu, rozpoczynając od `this.ModelRoot`. Kod może używać klas domen i właściwości tego języka DSL.
 
- Ponadto szablon może rozpoznać odwołania ModelBus. W przypadku, gdy punkt odwołania do modelu docelowego, dyrektyw zestawu umożliwiają kodu klasami domeny i właściwości tego modelu DSL.
+ Ponadto szablon może rozpoznać odwołania ModelBus. Gdy odwołania wskazują na model docelowy, dyrektywy zestawu pozwalają kodowi używać klas domeny i właściwości tego modelu.
 
-- Jeśli nie używasz dyrektywy, który jest generowany przez projektu DSL, powinny również obejmować następujące czynności.
+- Jeśli nie używasz dyrektywy, która jest generowana przez projekt DSL, należy również uwzględnić następujące elementy.
 
     ```
     <#@ assembly name = "Microsoft.VisualStudio.Modeling.Sdk.11.0" #>
     <#@ assembly name = "Microsoft.VisualStudio.TextTemplating.Modeling.11.0" #>
     ```
 
-- Użyj `this.ModelBus` do uzyskania dostępu do ModelBus.
+- Użyj `this.ModelBus`, aby uzyskać dostęp do ModelBus.
 
-## <a name="walkthrough-testing-a-text-template-that-uses-modelbus"></a>Przewodnik: Testowanie szablonu tekstu korzystającego z ModelBus
- W tym przewodniku należy wykonać następujące kroki:
+## <a name="walkthrough-testing-a-text-template-that-uses-modelbus"></a>Przewodnik: testowanie szablonu tekstu korzystającego z ModelBus
+ W tym instruktażu wykonaj następujące czynności:
 
-1. Skonstruuj dwóch języków DSL. Jednym języku DSL *konsumenta*, ma `ModelBusReference` właściwość, która może odwoływać się do innych DSL *dostawcy*.
+1. Utwórz dwa językami DSL. Jeden DSL, *konsument*, ma właściwość `ModelBusReference`, która może odwoływać się do innych dostawców DSL, *dostawcy*.
 
-2. Utwórz dwie karty ModelBus w dostawcy: jeden dla dostępu przez Szablony tekstowe, inne zwykłego kodu.
+2. Utwórz dwie karty ModelBus w dostawcy: jeden dla dostępu według szablonów tekstowych, drugi dla zwykłego kodu.
 
-3. Utwórz wystąpienie modeli języków DSL w jednym projekcie eksperymentalne.
+3. Utwórz modele wystąpień językami DSL w jednym projekcie eksperymentalnym.
 
-4. Ustawianie właściwości domeny w jednym modelu, aby wskazywał inny model.
+4. Ustaw właściwość domeny w jednym modelu, aby wskazywała na inny model.
 
-5. Napisz program obsługi dwukrotnego kliknięcia otwartym modelu, który jest wskazywany.
+5. Napisz procedurę obsługi dwukrotnego kliknięcia otwierającą model, który jest wskazywany przez.
 
-6. Napisz szablon tekstowy, który jest pierwszy model obciążenia, należy wykonać odwołanie do innego modelu i przeczytaj innego modelu.
+6. Napisz szablon tekstowy, który może ładować pierwszy model, postępuj zgodnie z odwołaniem do drugiego modelu i odczytaj inny model.
 
-### <a name="construct-a-dsl-that-is-accessible-to-modelbus"></a>Konstrukcja DSL, który jest dostępny dla ModelBus
+### <a name="construct-a-dsl-that-is-accessible-to-modelbus"></a>Konstruowanie języka DSL dostępnego dla ModelBus
 
-1. Utwórz nowe rozwiązanie języka DSL. W tym przykładzie wybierz szablon przepływu zadań rozwiązania. Ustaw nazwę języka `MBProvider` i rozszerzenie nazwy pliku ".provide".
+1. Utwórz nowe rozwiązanie DSL. Na potrzeby tego przykładu wybierz szablon rozwiązania przepływu zadań. Ustaw nazwę języka na `MBProvider` i rozszerzenie nazwy pliku na ". Podaj".
 
-2. W definicji DSL diagramu, kliknij prawym przyciskiem myszy pustą część diagramu, który nie jest u góry, a następnie kliknij **Włącz Modelbus**.
+2. Na diagramie definicji DSL kliknij prawym przyciskiem myszy pustą część diagramu, która nie znajduje się blisko góry, a następnie kliknij pozycję **Włącz ModelBus**.
 
    Jeśli nie widzisz **ModelBus Enable**, Pobierz i zainstaluj rozszerzenie VMSDK ModelBus.
 
-3. W **Włącz Modelbus** okno dialogowe, wybierz opcję **udostępnienia tego języka DSL do ModelBus**, a następnie kliknij przycisk **OK**.
+3. W oknie dialogowym **Włączanie ModelBus** wybierz opcję **Uwidocznij ten DSL do ModelBus**, a następnie kliknij przycisk **OK**.
 
-    Nowy projekt `ModelBusAdapter`, jest dodawany do rozwiązania.
+    Nowy projekt, `ModelBusAdapter`, zostanie dodany do rozwiązania.
 
-Masz teraz DSL, który może zostać oceniony przez szablonów tekstowych przy użyciu ModelBus. Można rozwiązać odwołania do niego w kodzie poleceń, programy obsługi zdarzeń lub reguły, które działają w elemencie AppDomain edytora pliku modelu. Jednak szablony tekstowe uruchamiane w oddzielnej domenie aplikacji i nie można uzyskać dostępu modelu, gdy jest edytowany. Jeśli chcesz uzyskać dostęp ModelBus odwołania do tego języka DSL, z szablonu tekstu, konieczne jest posiadanie oddzielnych elementu ModelBusAdapter.
+Masz teraz dostęp do języka DSL, który można uzyskać za pomocą szablonów tekstowych w ModelBus. Odwołania do niego można rozwiązać w kodzie poleceń, obsługi zdarzeń lub regułach, które działają w domenie aplikacji edytora plików modelu. Jednak szablony tekstowe są uruchamiane w oddzielnym elemencie AppDomain i nie mogą uzyskać dostępu do modelu podczas jego edytowania. Jeśli chcesz uzyskać dostęp do ModelBus odwołań do tego języka DSL z szablonu tekstu, musisz mieć osobne ModelBusAdapter.
 
 ### <a name="create-a-modelbus-adapter-that-is-configured-for-text-templates"></a>Tworzenie adaptera ModelBus, który jest skonfigurowany do szablonów tekstowych
 
@@ -195,25 +195,25 @@ Masz teraz DSL, który może zostać oceniony przez szablonów tekstowych przy u
 
     Zmień nazwę pliku projektu *T4ModelBusAdapter. csproj*.
 
-2. W Eksploratorze rozwiązań należy dodać do rozwiązania MBProvider T4ModelBusAdapter. Kliknij prawym przyciskiem myszy węzeł rozwiązania, wskaż opcję **Dodaj**, a następnie kliknij przycisk **istniejący projekt**.
+2. W Eksplorator rozwiązań Dodaj T4ModelBusAdapter do rozwiązania MBProvider. Kliknij prawym przyciskiem myszy węzeł rozwiązanie, wskaż polecenie **Dodaj**, a następnie kliknij pozycję **istniejący projekt**.
 
-3. Kliknij prawym przyciskiem myszy węzeł projektu T4ModelBusAdapter, a następnie kliknij polecenie Właściwości. W oknie dialogowym właściwości projektu, należy zmienić **nazwy zestawu** i **domyślne Namespace** do `Company.MBProvider.T4ModelBusAdapters`.
+3. Kliknij prawym przyciskiem myszy węzeł projektu T4ModelBusAdapter, a następnie kliknij polecenie Właściwości. W oknie właściwości projektu Zmień **nazwę zestawu** i **domyślną przestrzeń nazw** na `Company.MBProvider.T4ModelBusAdapters`.
 
-4. W każdym pliku *.tt w T4ModelBusAdapter Wstawianie "T4" ostatniej części przestrzeni nazw, dzięki czemu wiersz podobny do następującego.
+4. W każdym pliku *. tt w T4ModelBusAdapter, Wstaw "T4" do ostatniej części przestrzeni nazw, aby linia była podobna do poniższego.
 
     `namespace <#= CodeGenerationUtilities.GetPackageNamespace(this.Dsl) #>.T4ModelBusAdapters`
 
-5. W `DslPackage` projektu, należy dodać odwołanie projektu do `T4ModelBusAdapter`.
+5. W projekcie `DslPackage` Dodaj odwołanie do projektu do `T4ModelBusAdapter`.
 
-6. W DslPackage\source.extension.tt, Dodaj następujący wiersz w obszarze `<Content>`.
+6. W DslPackage\source.extension.tt Dodaj następujący wiersz w obszarze `<Content>`.
 
     `<MefComponent>|T4ModelBusAdapter|</MefComponent>`
 
-7. `T4ModelBusAdapter` W projekcie Dodaj odwołanie do: **Microsoft.VisualStudio.TextTemplating.Modeling.11.0**
+7. W projekcie `T4ModelBusAdapter` Dodaj odwołanie do: **Microsoft. VisualStudio. TextTemplating. Modeling. 11.0**
 
-8. Open T4ModelBusAdapter\AdapterManager.tt:
+8. Otwórz T4ModelBusAdapter\AdapterManager.tt:
 
-   1. Zmień klasę bazową AdapterManagerBase na [VsTextTemplatingModelingAdapterManager](/previous-versions/ee844317(v=vs.140)). Teraz ta część pliku podobny do następującego.
+   1. Zmień klasę bazową AdapterManagerBase na [VsTextTemplatingModelingAdapterManager](/previous-versions/ee844317(v=vs.140)). Ta część pliku jest teraz podobna do następującej.
 
        ```
        namespace <#= CodeGenerationUtilities.GetPackageNamespace(this.Dsl) #>.T4ModelBusAdapters
@@ -226,11 +226,11 @@ Masz teraz DSL, który może zostać oceniony przez szablonów tekstowych przy u
            {
        ```
 
-   2. Pod koniec pliku Wstaw następujący atrybut dodatkowe przed klasy adaptermanager obsługującego element.
+   2. Obok końca pliku Wstaw poniższy dodatkowy atrybut przed klasą AdapterManager.
 
         `[Microsoft.VisualStudio.Modeling.Integration.HostSpecific(HostName)]`
 
-        Wynik podobny do następującego.
+        Wynik jest podobny do poniższego.
 
        ```
        /// <summary>
@@ -245,63 +245,63 @@ Masz teraz DSL, który może zostać oceniony przez szablonów tekstowych przy u
        }
        ```
 
-9. Kliknij przycisk **Przekształć wszystkie szablony** w tytuł paska z Eksploratora rozwiązań.
+9. Kliknij pozycję **Przekształć wszystkie szablony** na pasku tytułu Eksplorator rozwiązań.
 
 10. Naciśnij klawisz **F5**.
 
-11. Sprawdź, czy DSL działa. W projekcie eksperymentalne Otwórz `Sample.provider`. Zamknij wystąpienie doświadczalne programu Visual Studio.
+11. Sprawdź, czy DSL działa. W projekcie eksperymentalnym Otwórz `Sample.provider`. Zamknij wystąpienie eksperymentalne programu Visual Studio.
 
-    Teraz można rozwiązać ModelBus odwołania do tego języka DSL w szablonach tekstowych, a także w zwykłych kodu.
+    Odwołania ModelBus do tego języka DSL można teraz rozpoznać w szablonach tekstowych, a także w zwykłym kodzie.
 
-### <a name="construct-a-dsl-with-a-modelbus-reference-domain-property"></a>Konstrukcja DSL z właściwością domeny odwołanie ModelBus
+### <a name="construct-a-dsl-with-a-modelbus-reference-domain-property"></a>Konstruowanie języka DSL z właściwością domeny odwołania ModelBus
 
-1. Utwórz nowy język DSL za pomocą szablonu rozwiązania dotyczącego języka minimalny. Nazwa języka MBConsumer i ustawić rozszerzenie nazwy pliku ".consume".
+1. Utwórz nowy DSL przy użyciu szablonu rozwiązania minimalnego języka. Nazwij język MBConsumer i ustaw rozszerzenie nazwy pliku na ". Wykorzystaj".
 
-2. W projekcie języka DSL Dodaj odwołanie do zestawu MBProvider DSL. Kliknij prawym przyciskiem myszy `MBConsumer\Dsl\References` a następnie kliknij przycisk **Dodaj odwołanie**. W **Przeglądaj** kartę, Znajdź `MBProvider\Dsl\bin\Debug\Company.MBProvider.Dsl.dll`
+2. W projekcie DSL Dodaj odwołanie do zestawu MBProvider DSL. Kliknij prawym przyciskiem myszy `MBConsumer\Dsl\References` a następnie kliknij pozycję **Dodaj odwołanie**. Na karcie **Przeglądaj** Znajdź `MBProvider\Dsl\bin\Debug\Company.MBProvider.Dsl.dll`
 
-    Pozwala na tworzenie kodu, który używa innego języka DSL. Jeśli chcesz utworzyć odwołania do kilku języków DSL, dodaj je również.
+    Dzięki temu można utworzyć kod, który używa innego DSL. Jeśli chcesz utworzyć odwołania do kilku językami DSL, Dodaj je również.
 
-3. W definicji DSL diagramu, kliknij prawym przyciskiem myszy diagram, a następnie kliknij przycisk **Włącz ModelBus**. W oknie dialogowym wybierz **Włącz tego języka DSL zużyje ModelBus**.
+3. Na diagramie definicji DSL, kliknij prawym przyciskiem myszy diagram, a następnie kliknij pozycję **Włącz ModelBus**. W oknie dialogowym wybierz opcję **Włącz tę funkcję DSL, aby korzystać z ModelBus**.
 
-4. W klasie `ExampleElement`, Dodaj nową właściwość domeny `MBR`i w oknie właściwości ustaw typ `ModelBusReference`.
+4. W `ExampleElement` klasy Dodaj nową właściwość domeny `MBR` i w okno Właściwości ustaw jej typ na `ModelBusReference`.
 
-5. Kliknij prawym przyciskiem myszy właściwość domeny na diagramie, a następnie kliknij przycisk **ModelBusReference edytować właściwości określonych**. W oknie dialogowym wybierz **elementu modelu**.
+5. Kliknij prawym przyciskiem myszy właściwość domeny na diagramie, a następnie kliknij pozycję **Edytuj właściwości specyficzne dla ModelBusReference**. W oknie dialogowym wybierz **element modelu**.
 
-    Ustaw filtr okna dialogowego plików do następujących.
+    Ustaw filtr okna dialogowego plików na następujący.
 
     `Provider File|*.provide`
 
-    Podciąg po "&#124;" jest filtr dla okna dialogowego wyboru pliku. Możesz ustawić ją, aby zezwolić na wszystkie pliki przy użyciu *.\*
+    Podciąg po "&#124;" to filtr dla okna dialogowego Wybór pliku. Można ustawić, aby zezwalać na dowolnych plików przy użyciu *. \*
 
-    W **typu elementu modelu** listy, należy wprowadzić nazwy jedną lub więcej domen klasy dostawcy DSL (na przykład Company.MBProvider.Task). Mogą być abstrakcyjne klasy. Jeśli lista jest puste, użytkownik może ustawić odwołanie do dowolnego elementu.
+    Na liście **Typ elementu modelu** wprowadź nazwy kilku trudniejszych klas domen w dostawcy DSL (na przykład Company. MBProvider. Task). Mogą to być klasy abstrakcyjne. Jeśli pozostawisz pustą listę, użytkownik może ustawić odwołanie do dowolnego elementu.
 
 6. Zamknij okno dialogowe i **Przekształć wszystkie szablony**.
 
-   Utworzono DSL, który może zawierać odwołania do elementów w innym DSL.
+   Utworzono DSL, które może zawierać odwołania do elementów w innym DSL.
 
 ### <a name="create-a-modelbus-reference-to-another-file-in-the-solution"></a>Utwórz odwołanie ModelBus do innego pliku w rozwiązaniu
 
-1. W rozwiązaniu MBConsumer naciśnij kombinację klawiszy CTRL + F5. Otwiera doświadczalne wystąpienie programu Visual Studio, w **MBConsumer\Debugging** projektu.
+1. W rozwiązaniu MBConsumer naciśnij klawisze CTRL + F5. Eksperymentalne wystąpienie programu Visual Studio otwiera się w projekcie **MBConsumer\Debugging** .
 
-2. Dodaj kopię Sample.provide do **MBConsumer\Debugging** projektu. Jest to konieczne, ponieważ odwołanie ModelBus musi odwoływać się do pliku w tym samym rozwiązaniu.
+2. Dodaj kopię przykładu. Podaj do projektu **MBConsumer\Debugging** . Jest to konieczne, ponieważ odwołanie ModelBus musi odwoływać się do pliku w tym samym rozwiązaniu.
 
-   1. Kliknij prawym przyciskiem myszy projekt debugowania, wskaż opcję **Dodaj**, a następnie kliknij przycisk **istniejący element**.
+   1. Kliknij prawym przyciskiem myszy projekt debugowanie, wskaż polecenie **Dodaj**, a następnie kliknij pozycję **istniejący element**.
 
-   2. W **elementu Dodawanie** okna dialogowego, ustaw filtr na **wszystkie pliki (\*.\*)** .
+   2. W oknie dialogowym **Dodaj element** Ustaw filtr na **wszystkie pliki (\*. \*)** .
 
    3. Przejdź do `MBProvider\Debugging\Sample.provide` a następnie kliknij przycisk **Dodaj**.
 
 3. Otwórz `Sample.consume`.
 
-4. Kliknij jeden kształt przykładu, a w oknie dialogowym właściwości kliknij **[...]**  we właściwości MBR. W oknie dialogowym kliknij **Przeglądaj** i wybierz `Sample.provide`. W oknie elementy rozwiń węzeł typu zadania, a następnie wybierz jeden z elementów.
+4. Kliknij jeden przykład kształtu, a następnie w okno właściwości kliknij pozycję **[...]** we właściwości MBR. W oknie dialogowym kliknij przycisk **Przeglądaj** i wybierz pozycję `Sample.provide`. W oknie elementy rozwiń zadanie typ i wybierz jeden z elementów.
 
-5. Zapisz plik. (Nie należy jeszcze zamykać doświadczalnym wystąpieniu programu Visual Studio.)
+5. Zapisz plik. (Nie zamykaj jeszcze eksperymentalnego wystąpienia programu Visual Studio).
 
    Utworzono model, który zawiera odwołanie ModelBus do elementu w innym modelu.
 
-### <a name="resolve-a-modelbus-reference-in-a-text-template"></a>Rozwiąż odwołanie ModelBus w szablonie tekstu
+### <a name="resolve-a-modelbus-reference-in-a-text-template"></a>Rozwiązywanie odwołania ModelBus w szablonie tekstowym
 
-1. W doświadczalnym wystąpieniu programu Visual Studio Otwórz przykładowy plik szablonu tekstu. Ustaw jego zawartość w następujący sposób.
+1. W eksperymentalnym wystąpieniu programu Visual Studio Otwórz przykładowy plik szablonu tekstowego. Ustaw jej zawartość w następujący sposób.
 
     ```
     <#@ template debug="true" hostspecific="true" language="C#"
@@ -335,17 +335,17 @@ Masz teraz DSL, który może zostać oceniony przez szablonów tekstowych przy u
 
     ```
 
-     Zwróć uwagę następujące kwestie:
+     Zwróć uwagę na następujące kwestie:
 
-    - `hostSpecific` i `inherits` atrybuty `template` dyrektywa musi być ustawiona.
+    - Należy ustawić atrybuty `hostSpecific` i `inherits` dyrektywy `template`.
 
-    - Modelu odbiorców jest dostępny w zwykły sposób przy użyciu procesora dyrektywy, który został wygenerowany w tym DSL.
+    - Model konsumenta jest dostępny w zwykły sposób przez procesor dyrektywy, który został wygenerowany w ramach tego języka DSL.
 
-    - W dyrektywach zestawu i importu musi mieć możliwość dostępu ModelBus i typy dostawcy DSL.
+    - Dyrektywy Assembly i import muszą mieć możliwość dostępu do ModelBus i typów dostawcy DSL.
 
-    - Jeśli wiesz, że wiele MBRs są połączone z tego samego modelu, lepiej jest wywołać CreateAdapter tylko jeden raz.
+    - Jeśli wiesz, że wiele MBRs jest połączonych z tym samym modelem, lepszym rozwiązaniem jest wywołanie metody tylko jeden raz.
 
-2. Zapisz szablon. Upewnij się, że wynikowy plik tekstowy jest podobny do następującego.
+2. Zapisz szablon. Sprawdź, czy plik tekstowy z wynikiem jest podobny do poniższego.
 
     ```
     ExampleElement1
@@ -353,9 +353,9 @@ Masz teraz DSL, który może zostać oceniony przez szablonów tekstowych przy u
          ExampleElement2 is linked to Task: Task2
     ```
 
-### <a name="resolve-a-modelbus-reference-in-a-gesture-handler"></a>Rozwiąż odwołanie ModelBus w obsługi gestu
+### <a name="resolve-a-modelbus-reference-in-a-gesture-handler"></a>Rozwiązywanie odwołania ModelBus w procedurze obsługi gestu
 
-1. Zamknij wystąpienie doświadczalne programu Visual Studio, jeśli jest uruchomiony.
+1. Zamknij wystąpienie eksperymentalne programu Visual Studio, jeśli jest uruchomione.
 
 2. Dodaj plik o nazwie *MBConsumer\Dsl\Custom.cs* i ustaw jego zawartość na następujące elementy:
 
@@ -388,13 +388,13 @@ Masz teraz DSL, który może zostać oceniony przez szablonów tekstowych przy u
     }
     ```
 
-3. Naciśnij klawisz **Ctrl**+**F5**.
+3. Naciśnij klawisz **Ctrl** +**F5**.
 
-4. W doświadczalnym wystąpieniu programu Visual Studio, otwórz `Debugging\Sample.consume`.
+4. W eksperymentalnym wystąpieniu programu Visual Studio Otwórz `Debugging\Sample.consume`.
 
 5. Kliknij dwukrotnie jeden kształt.
 
-    Jeśli ustawisz MBR na ten element, otwiera przywoływanym modelem i odnośny element jest wybrany.
+    Po ustawieniu dla tego elementu rekordu MBR, przywoływany model zostanie otwarty i zostanie wybrany element, do którego się odwoływano.
 
 ## <a name="see-also"></a>Zobacz także
 

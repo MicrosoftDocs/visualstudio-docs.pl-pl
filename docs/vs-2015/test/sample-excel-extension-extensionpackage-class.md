@@ -1,43 +1,42 @@
 ---
-title: 'Przykładowe rozszerzenie programu Excel: Klasa ExtensionPackage | Dokumentacja firmy Microsoft'
+title: 'Przykładowe rozszerzenie programu Excel: Klasa ExtensionPackage | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.assetid: 6e45410a-1819-4d54-ac21-7280152f7e3a
 caps.latest.revision: 11
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 668913d231115e955cc50df10de045eab3d4ac92
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a1c1f4c746fa505b50bab9caa7a516a2abc77f69
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68189469"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672209"
 ---
-# <a name="sample-excel-extension-extensionpackage-class"></a>Przykładowe rozszerzenie programu Excel: ExtensionPackage, klasa
+# <a name="sample-excel-extension-extensionpackage-class"></a>Przykładowe rozszerzenie programu Excel: klasa ExtensionPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Ta klasa rozszerza <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage> klasy i zapewnia punkt wejścia dla kodowanego testu interfejsu użytkownika, która jest testowana [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] arkusza.  
-  
-## <a name="assembly-attribute"></a>Atrybutu zestawu  
- Plik rozpoczyna się od atrybutu zestawu, który identyfikuje zestaw jako rozszerzenie testu interfejsu użytkownika.  
-  
-```  
-[assembly: Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage(  
-    "ExcelExtensionPackage",  
-    typeof(  
-     Microsoft.VisualStudio.Test.Sample.UI.ExtensionPackage))]  
-```  
-  
- Ten atrybut deklaruje nazwę klasy bazowej, nazwa klasy pakietu i w pełni kwalifikowaną nazwę klasy dla klasy pakietu rozszerzenia niestandardowego.  
-  
-## <a name="simple-properties"></a>Proste właściwości  
- Ta klasa posiada właściwości, które dostarczają wartości, które są używane przez kodowanych testów interfejsu użytkownika do identyfikujących i opisujących rozszerzenie i zestawu. Zobacz komentarze kodu, aby uzyskać więcej informacji.  
-  
-## <a name="getservice-method"></a>Metoda GetService  
- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage.GetService%2A> Metodą jest punktem pojedynczy wpis, używane przez kodowanych testów interfejsu użytkownika, aby uzyskać dostęp do Menedżera technologii, Dostawca właściwości i filtr akcji, określonych przez klasę bazową dla każdego obiektu.  
-  
-## <a name="see-also"></a>Zobacz też  
- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>   
- [Rozszerzanie kodowanych testów interfejsu użytkownika i rejestrowanie akcji obsługujących program Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
+Ta Klasa rozszerza klasę <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage> i udostępnia punkt wejścia dla kodowanego testu interfejsu użytkownika, który testuje [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] arkusz.
+
+## <a name="assembly-attribute"></a>Atrybut zestawu
+ Plik rozpoczyna się od atrybutu zestawu, który identyfikuje zestaw jako rozszerzenie testu interfejsu użytkownika.
+
+```
+[assembly: Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage(
+    "ExcelExtensionPackage",
+    typeof(
+     Microsoft.VisualStudio.Test.Sample.UI.ExtensionPackage))]
+```
+
+ Ten atrybut deklaruje nazwę klasy bazowej, nazwę klasy pakietu oraz w pełni kwalifikowaną nazwę klasy niestandardowego pakietu rozszerzenia.
+
+## <a name="simple-properties"></a>Proste właściwości
+ Ta klasa ma właściwości, które dostarczają wartości, które są używane przez kodowane środowisko testowania interfejsu użytkownika do identyfikowania i opisywania rozszerzenia oraz zestawu. Aby uzyskać więcej informacji, zobacz Komentarze do kodu.
+
+## <a name="getservice-method"></a>GetService — Metoda
+ @No__t_0 Metoda jest pojedynczym punktem wejścia używanym przez zakodowaną strukturę testowania interfejsu użytkownika w celu uzyskania dostępu do Menedżera technologii, dostawcy właściwości i filtru akcji, jak określono przez klasę bazową dla każdego obiektu.
+
+## <a name="see-also"></a>Zobacz też
+ <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage> [rozszerzanie kodowanych testów interfejsu użytkownika i nagrań akcji do obsługi programu Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)

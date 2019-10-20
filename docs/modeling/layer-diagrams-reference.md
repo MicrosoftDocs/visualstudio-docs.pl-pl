@@ -15,17 +15,17 @@ helpviewer_keywords:
 - dependency diagrams
 - diagrams - modeling, layer
 - constraints, architectural
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0de634ee62387e50fed89e4465842b2801748f45
-ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
+ms.openlocfilehash: 7711d0b0f369f43cc7becf92cbdcfc986cd3a6a8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70766156"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661495"
 ---
 # <a name="dependency-diagrams-reference"></a>Diagramy zależności: odwołanie
 
@@ -48,7 +48,7 @@ Użyj diagramu zależności, aby ułatwić wykonywanie następujących zadań:
 
 - Zapoznaj się z zamierzoną architekturą podczas opracowywania i konserwowania kodu przez uwzględnienie walidacji operacji ewidencjonowania i kompilowania.
 
-W tym temacie opisano elementy, których można użyć na diagramie zależności. Aby uzyskać szczegółowe informacje na temat tworzenia i rysowania diagramów zależności, zobacz [diagramy zależności: Wskazówki](../modeling/layer-diagrams-guidelines.md). Aby uzyskać więcej informacji na temat wzorców warstwowych, odwiedź [witrynę wzorców & Practices](http://go.microsoft.com/fwlink/?LinkId=145794).
+W tym temacie opisano elementy, których można użyć na diagramie zależności. Aby uzyskać szczegółowe informacje na temat tworzenia i rysowania diagramów zależności, zobacz [diagramy zależności: wytyczne](../modeling/layer-diagrams-guidelines.md). Aby uzyskać więcej informacji na temat wzorców warstwowych, odwiedź [witrynę wzorców & Practices](http://go.microsoft.com/fwlink/?LinkId=145794).
 
 ## <a name="reading-dependency-diagrams"></a>Odczytywanie diagramów zależności
 
@@ -58,9 +58,9 @@ W poniższej tabeli opisano elementy, których można użyć na diagramie zależ
 
 |**Przekształca**|**Element**|**Opis**|
 |-|-|-|
-|1|**Warstwy**|Logiczna Grupa artefaktów fizycznych w systemie. Te artefakty mogą być przestrzeniami nazw, projektami, klasami, metodami i tak dalej.<br /><br /> Aby wyświetlić artefakty, które są połączone z warstwą, otwórz menu skrótów dla warstwy, a następnie wybierz polecenie **Wyświetl linki** , aby otworzyć **Eksploratora warstw**.<br /><br /> Aby uzyskać więcej informacji, zobacz [Eksplorator warstw](#Explorer).<br /><br /> -   **Zależności przestrzeni nazw zabronione** — określa, że artefakty skojarzone z tą warstwą nie mogą zależeć od określonych przestrzeni nazw.<br />-   **Niedozwolone przestrzenie nazw** — określa, że artefakty skojarzone z tą warstwą nie mogą należeć do określonych przestrzeni nazw.<br />-   **Wymagane przestrzenie nazw** — określa, że artefakty skojarzone z tą warstwą muszą należeć do jednej z określonych przestrzeni nazw.|
-|2|**Zależności**|Wskazuje, że jedna warstwa może korzystać z funkcjonalności w innej warstwie, ale nie odwrotnie.<br /><br /> -   **Direction** — określa kierunek zależności.|
-|3|**Zależność dwukierunkowa**|Wskazuje, że jedna warstwa może korzystać z funkcjonalności w innej warstwie i na odwrót.<br /><br /> -   **Direction** — określa kierunek zależności.|
+|1|**Warstwy**|Logiczna Grupa artefaktów fizycznych w systemie. Te artefakty mogą być przestrzeniami nazw, projektami, klasami, metodami i tak dalej.<br /><br /> Aby wyświetlić artefakty, które są połączone z warstwą, otwórz menu skrótów dla warstwy, a następnie wybierz polecenie **Wyświetl linki** , aby otworzyć **Eksploratora warstw**.<br /><br /> Aby uzyskać więcej informacji, zobacz [Eksplorator warstw](#Explorer).<br /><br /> -   **zabronionych zależności przestrzeni nazw** — określa, że artefakty skojarzone z tą warstwą nie mogą zależeć od określonych przestrzeni nazw.<br />-   **zabronionych przestrzenie nazw** — określa, że artefakty skojarzone z tą warstwą nie mogą należeć do określonych przestrzeni nazw.<br />-   **wymagane przestrzenie nazw** — określa, że artefakty skojarzone z tą warstwą muszą należeć do jednej z określonych przestrzeni nazw.|
+|2|**Zależności**|Wskazuje, że jedna warstwa może korzystać z funkcjonalności w innej warstwie, ale nie odwrotnie.<br /><br /> **kierunek** -    — określa kierunek zależności.|
+|3|**Zależność dwukierunkowa**|Wskazuje, że jedna warstwa może korzystać z funkcjonalności w innej warstwie i na odwrót.<br /><br /> **kierunek** -    — określa kierunek zależności.|
 |4|**Komentarz**|Służy do dodawania ogólnych notatek do diagramu lub elementów na diagramie.|
 |5|**Link komentarza**|Służy do łączenia komentarzy do elementów na diagramie.|
 
@@ -93,7 +93,7 @@ Na diagramie zależności Otwórz menu skrótów dla jednej lub wielu warstw, a 
 |-|-|
 |**Rodzaj**|Rodzaj artefaktu, taki jak Klasa, przestrzeń nazw, plik źródłowy itd.|
 |**Warstwy**|Warstwa, która łączy się z artefaktem|
-|**Obsługuje walidację**|W przypadku **wartości true**proces walidacji warstwy może sprawdzić, czy projekt jest zgodny z zależnościami lub z tego elementu.<br /><br /> W przypadku **wartości false**link nie uczestniczy w procesie walidacji warstwy.<br /><br /> Aby uzyskać więcej informacji, [zobacz Diagramy zależności: Wskazówki](../modeling/layer-diagrams-guidelines.md).|
+|**Obsługuje walidację**|W przypadku **wartości true**proces walidacji warstwy może sprawdzić, czy projekt jest zgodny z zależnościami lub z tego elementu.<br /><br /> W przypadku **wartości false**link nie uczestniczy w procesie walidacji warstwy.<br /><br /> Aby uzyskać więcej informacji, zobacz [diagramy zależności: wytyczne](../modeling/layer-diagrams-guidelines.md).|
 |**Identyfikatora**|Odwołanie do połączonego artefaktu|
 
 ## <a name="see-also"></a>Zobacz także

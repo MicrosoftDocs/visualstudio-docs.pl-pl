@@ -1,42 +1,42 @@
 ---
-title: Generuj Konstruktor szybka akcja
+title: Generuj szybką akcję konstruktora
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: faef5f2420f4abd30ecec9151212b8a731736886
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 41bb9a0e3921495629a10d6783432e8b4999a117
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62795281"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661738"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Generowanie konstruktora w programie Visual Studio
 
-Dotyczy to generowanie kodu:
+Ta generacja kodu ma zastosowanie do:
 
 - C#
 
 - Visual Basic
 
-**Co:** Umożliwia natychmiastowe generowania kodu dla nowego konstruktora klasy.
+**Co:** Umożliwia natychmiastowe wygenerowanie kodu dla nowego konstruktora w klasie.
 
-**Kiedy:** Wprowadzenie nowego konstruktora i aby poprawnie Zadeklaruj go automatycznie lub zmodyfikuj istniejące konstruktora.
+**Kiedy:** Wprowadzasz nowy Konstruktor i chcesz go prawidłowo zadeklarować automatycznie lub zmodyfikować istniejący Konstruktor.
 
-**Dlaczego:** Można zadeklarować konstruktora przed użyciem, ale tej funkcji będzie generowana, za pomocą odpowiednich parametrów, automatycznie. Ponadto modyfikowania istniejących Konstruktor wymaga aktualizacji wszystkich callsites, chyba, że ta funkcja umożliwia automatyczne aktualizowanie.
+**Dlaczego:** Konstruktor można zadeklarować przed użyciem, jednak ta funkcja będzie generować ją z odpowiednimi parametrami, automatycznie. Ponadto modyfikowanie istniejącego konstruktora wymaga aktualizacji wszystkich callsites, chyba że ta funkcja jest używana do automatycznego aktualizowania.
 
-**Jak:** Istnieje kilka sposobów, aby wygenerować Konstruktor:
+**Jak:** Istnieje kilka sposobów generowania konstruktora:
 
-- [Generuj Konstruktor i wybierz elementy członkowskie](#pick)
+- [Generuj konstruktora i wybieraj członków](#pick)
 - [Generuj Konstruktor z wybranych pól](#selection)
-- [Generuj Konstruktor podczas korzystania z nowego](#usage)
-- [Dodaj parametr do konstruktora istniejące](#addparameter)
-- [Tworzenie i Inicjowanie pola/właściwości z parametru konstruktora](#create)
+- [Generuj Konstruktor na podstawie nowego użycia](#usage)
+- [Dodaj parametr do istniejącego konstruktora](#addparameter)
+- [Utwórz i zainicjuj pole/właściwość z parametru konstruktora](#create)
 
-## <a id = "pick"></a> Generuj Konstruktor i wybierz elementy członkowskie (tylko język C#)
+## <a id = "pick"></a>Generuj konstruktora i wybieraj elementyC# członkowskie (tylko)
 
 1. Umieść kursor w dowolnym pustym wierszu w klasie:
 
@@ -44,139 +44,139 @@ Dotyczy to generowanie kodu:
 
 1. Następnie wykonaj jedną z następujących czynności:
 
-   - **Keyboard**
-      - Naciśnij klawisz **Ctrl**+**.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
-   - **Myszy**
-      - Kliknij prawym przyciskiem myszy i wybierz **szybkie akcje i Refaktoryzacje** menu.
-      - Kliknij ikonę ![śrubokręt](media/screwdriver.png) Ikona wyświetlana na lewym marginesie, jeśli kursor tekstu jest już w pustym wierszu w klasie.
+   - **Klawiatury**
+      - Naciśnij klawisz **Ctrl** + **.** Aby wyzwolić menu **szybkie akcje i operacje refaktoryzacji** .
+   - **Wskaźnik**
+      - Kliknij prawym przyciskiem myszy i wybierz menu **szybkie akcje i operacje refaktoryzacji** .
+      - Kliknij ikonę ![śrubokręt](media/screwdriver.png) ikona wyświetlana na lewym marginesie, jeśli kursor tekstu znajduje się już w pustym wierszu w klasie.
 
-   ![Generowanie konstruktora (wersja zapoznawcza)](media/constructor1-preview-cs.png)
+   ![Generuj Podgląd konstruktora](media/constructor1-preview-cs.png)
 
-1. Wybierz **Generuj Konstruktor** z menu rozwijanego.
+1. Wybierz pozycję **Generuj Konstruktor** z menu rozwijanego.
 
-   **Wybierz składowe** zostanie otwarte okno dialogowe.
+   Zostanie otwarte okno dialogowe **Wybierz członków** .
 
-1. Wybierz składowe, które mają zostać uwzględnione jako parametry konstruktora. Można uporządkować je przy użyciu w górę i strzałki w dół. Wybierz **OK**.
+1. Wybierz elementy członkowskie, które mają być dołączane jako parametry konstruktora. Można je zamówić przy użyciu strzałek w górę i w dół. Wybierz **przycisk OK**.
 
-   ![Wybierz elementy członkowskie w oknie dialogowym](media/constructor1-dialog-cs.png)
+   ![Okno dialogowe wyboru członków](media/constructor1-dialog-cs.png)
 
    > [!TIP]
-   > Możesz sprawdzić **Dodaj sprawdzenia wartości null** pole wyboru, aby automatycznie wygenerować sprawdzanie wartości null dla parametry konstruktora.
+   > Można zaznaczyć pole wyboru **Dodaj sprawdzanie wartości null** , aby automatycznie generować sprawdzanie wartości null dla parametrów konstruktora.
 
-   Konstruktor jest tworzony przy użyciu określonych parametrów.
+   Konstruktor jest tworzony z określonymi parametrami.
 
-   ![Generuj Konstruktor wynik](media/constructor1-result-cs.png)
+   ![Generuj wynik konstruktora](media/constructor1-result-cs.png)
 
-## <a id="selection"></a> Generuj Konstruktor z wybranych pól (tylko język C#)
+## <a id="selection"></a>Generuj Konstruktor z wybranych pól (C# tylko)
 
-1. Wyróżnij elementy członkowskie, których chcesz użyć w wygenerowanych konstruktora:
+1. Zaznacz członków, których chcesz mieć w wygenerowanym konstruktorze:
 
    ![Wyróżnij elementy członkowskie](media/constructor2-highlight-cs.png)
 
 1. Następnie wykonaj jedną z następujących czynności:
 
-   - **Keyboard**
-      - Naciśnij klawisz **Ctrl**+**.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
-   - **Myszy**
-      - Kliknij prawym przyciskiem myszy i wybierz **szybkie akcje i Refaktoryzacje** menu.
-      - Kliknij ikonę ![śrubokręt](media/screwdriver.png) Ikona wyświetlana na lewym marginesie, jeśli kursor tekstu jest już w wierszu z zaznaczenia.
+   - **Klawiatury**
+      - Naciśnij klawisz **Ctrl** + **.** Aby wyzwolić menu **szybkie akcje i operacje refaktoryzacji** .
+   - **Wskaźnik**
+      - Kliknij prawym przyciskiem myszy i wybierz menu **szybkie akcje i operacje refaktoryzacji** .
+      - Kliknij ikonę ![śrubokręt](media/screwdriver.png) ikona wyświetlana na lewym marginesie, jeśli kursor tekstu znajduje się już w wierszu z zaznaczeniem.
 
-      ![Generowanie konstruktora (wersja zapoznawcza)](media/constructor2-preview-cs.png)
+      ![Generuj Podgląd konstruktora](media/constructor2-preview-cs.png)
 
-1. Wybierz **Generuj Konstruktor "TypeName(...)"**  z menu rozwijanego.
+1. Wybierz pozycję **Generuj Konstruktor "TypeName (...)"** z menu rozwijanego.
 
-   Konstruktor jest tworzony przy użyciu wybranych parametrów.
+   Konstruktor jest tworzony z wybranymi parametrami.
 
-   ![Generuj Konstruktor wynik](media/constructor2-result-cs.png)
+   ![Generuj wynik konstruktora](media/constructor2-result-cs.png)
 
-## <a id="usage"></a> Generuj Konstruktor podczas korzystania z nowego (C# i Visual Basic)
+## <a id="usage"></a>Generuj Konstruktor na podstawie nowego użyciaC# (i Visual Basic)
 
-1. Umieść kursor w wierszu gdzie znajduje się czerwona fala. Czerwona fala wskazuje wywołanie konstruktora, który jeszcze nie istnieje.
+1. Umieść kursor w wierszu, w którym znajduje się czerwona zygzakowata. Czerwona zygzakowata wskazuje wywołanie konstruktora, który jeszcze nie istnieje.
 
    - C#:
 
-       ![Wyróżniony kod C#](media/constructor-highlight-cs.png)
+       ![Wyróżniony kodC#](media/constructor-highlight-cs.png)
 
    - Visual Basic:
 
-       ![Wyróżniony Kod VB](media/constructor-highlight-vb.png)
+       ![Wyróżniony kod VB](media/constructor-highlight-vb.png)
 
 2. Następnie wykonaj jedną z następujących czynności:
 
-   - **Keyboard**
-      - Naciśnij klawisz **Ctrl**+**.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
-   - **Myszy**
-      - Kliknij prawym przyciskiem myszy i wybierz **szybkie akcje i Refaktoryzacje** menu.
-      - Umieść kursor nad czerwona fala, a następnie kliknij przycisk ![Błąd żarówka](media/error-bulb.png) Ikona wyświetlana.
-      - Kliknij ikonę ![Błąd żarówka](media/error-bulb.png) Ikona wyświetlana na lewym marginesie, jeśli kursor tekstu jest już w wierszu zawierającym czerwona fala.
+   - **Klawiatury**
+      - Naciśnij klawisz **Ctrl** + **.** Aby wyzwolić menu **szybkie akcje i operacje refaktoryzacji** .
+   - **Wskaźnik**
+      - Kliknij prawym przyciskiem myszy i wybierz menu **szybkie akcje i operacje refaktoryzacji** .
+      - Umieść kursor na czerwono, a następnie kliknij przycisk ![Żarówka błędów](media/error-bulb.png) zostanie wyświetlona ikona.
+      - Kliknij ikonę ![Żarówka błędów](media/error-bulb.png) ikona wyświetlana na lewym marginesie, jeśli kursor tekstu znajduje się już w wierszu z czerwonym obramowaniem.
 
-      ![Generowanie konstruktora (wersja zapoznawcza)](media/constructor-preview-cs.png)
+      ![Generuj Podgląd konstruktora](media/constructor-preview-cs.png)
 
-3. Wybierz **Generowanie konstruktora w "*TypeName*"** z menu rozwijanego.
+3. Wybierz pozycję **Generuj Konstruktor w elemencie "*TypeName*"** z menu rozwijanego.
 
    > [!TIP]
-   > Użyj **podgląd zmian** link w dolnej części okna podglądu [Aby wyświetlić wszystkie zmiany](../../ide/preview-changes.md) , zostaną wprowadzone przed dokonaniem wyboru.
+   > Użyj linku **Podgląd zmian** w dolnej części okna Podgląd, [Aby zobaczyć wszystkie zmiany](../../ide/preview-changes.md) , które zostaną wprowadzone przed dokonaniem wyboru.
 
-   Konstruktor jest tworzony, parametrami wywnioskować na podstawie jej użycie.
+   Konstruktor jest tworzony, z dowolnego parametru wywnioskowanego z jego użycia.
 
    - C#:
 
-       ![Generowanie metody powodują C#](media/constructor-result-cs.png)
+       ![Generowanie wyniku metodyC#](media/constructor-result-cs.png)
 
    - Visual Basic:
 
-       ![Generowanie metody powodują VB](media/constructor-result-vb.png)
+       ![Generuj wynik metody VB](media/constructor-result-vb.png)
 
-## <a id="addparameter"></a> Dodaj parametr do konstruktora istniejących (tylko język C#)
+## <a id="addparameter"></a>Dodaj parametr do istniejącego konstruktora (C# tylko)
 
-1. Dodaj parametr do istniejących wywołanie konstruktora.
+1. Dodaj parametr do istniejącego wywołania konstruktora.
 
-2. Umieść kursor w wierszu gdzie znajduje się czerwona fala wskazujący użyty Konstruktor, który jeszcze nie istnieje.
+2. Umieść kursor w wierszu, w którym znajduje się czerwony zygzak wskazujący, że użyto konstruktora, który jeszcze nie istnieje.
 
-    ![Generuj Konstruktor wyróżnienia](media/constructor4-highlight-cs.png)
+    ![Wyróżnij generowanie konstruktora](media/constructor4-highlight-cs.png)
 
 3. Następnie wykonaj jedną z następujących czynności:
 
-   - **Keyboard**
-      - Naciśnij klawisz **Ctrl**+**.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
-   - **Myszy**
-      - Kliknij prawym przyciskiem myszy i wybierz **szybkie akcje i Refaktoryzacje** menu.
-      - Umieść kursor nad czerwona fala, a następnie kliknij przycisk ![Błąd żarówka](media/error-bulb.png) Ikona wyświetlana.
-      - Kliknij ikonę ![Błąd żarówka](media/error-bulb.png) Ikona wyświetlana na lewym marginesie, jeśli kursor tekstu jest już w wierszu zawierającym czerwona fala.
+   - **Klawiatury**
+      - Naciśnij klawisz **Ctrl** + **.** Aby wyzwolić menu **szybkie akcje i operacje refaktoryzacji** .
+   - **Wskaźnik**
+      - Kliknij prawym przyciskiem myszy i wybierz menu **szybkie akcje i operacje refaktoryzacji** .
+      - Umieść kursor na czerwono, a następnie kliknij przycisk ![Żarówka błędów](media/error-bulb.png) zostanie wyświetlona ikona.
+      - Kliknij ikonę ![Żarówka błędów](media/error-bulb.png) ikona wyświetlana na lewym marginesie, jeśli kursor tekstu znajduje się już w wierszu z czerwonym obramowaniem.
 
-      ![Generowanie konstruktora (wersja zapoznawcza)](media/constructor4-preview-cs.png)
+      ![Generuj Podgląd konstruktora](media/constructor4-preview-cs.png)
 
-4. Wybierz **dodać parametr "TypeName(...)"**  z menu rozwijanego.
+4. Wybierz pozycję **Dodaj parametr do elementu "TypeName (...)"** z menu rozwijanego.
 
-   Parametr zostanie dodany do konstruktora z typem wywnioskować na podstawie jej użycie.
+   Parametr jest dodawany do konstruktora, z którego typ został wywnioskowany na podstawie jego użycia.
 
-   ![Generuj Konstruktor wynik](media/constructor4-result-cs.png)
+   ![Generuj wynik konstruktora](media/constructor4-result-cs.png)
 
-Można również dodać parametr do istniejącej metody. Aby uzyskać więcej informacji, zobacz [Dodaj parametr do metody](add-parameter.md).
+Możesz również dodać parametr do istniejącej metody. Aby uzyskać więcej informacji, zobacz [Dodawanie parametru do metody](add-parameter.md).
 
-## <a id="create"></a> Utwórz i zainicjuj pole lub właściwość z parametru konstruktora (tylko język C#)
+## <a id="create"></a>Utwórz i zainicjuj pole lub właściwość z parametru konstruktora (C# tylko)
 
-1. Znajdź istniejący konstruktora, a następnie dodaj parametr:
+1. Znajdź istniejący Konstruktor i Dodaj parametr:
 
-   ![Generuj Konstruktor wyróżnienia](media/constructor5-highlight-cs.png)
+   ![Wyróżnij generowanie konstruktora](media/constructor5-highlight-cs.png)
 
-1. Umieść kursor wewnątrz nowo dodany parametr.
+1. Umieść kursor wewnątrz nowo dodanego parametru.
 
 1. Następnie wykonaj jedną z następujących czynności:
 
-   - **Keyboard**
-      - Naciśnij klawisz **Ctrl**+**.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
-   - **Myszy**
-      - Kliknij prawym przyciskiem myszy i wybierz **szybkie akcje i Refaktoryzacje** menu.
-      - Kliknij ikonę ![śrubokręt](media/screwdriver.png) Ikona wyświetlana na lewym marginesie, jeśli kursor tekstu jest już w wierszu zawierającym dodano parametr.
+   - **Klawiatury**
+      - Naciśnij klawisz **Ctrl** + **.** Aby wyzwolić menu **szybkie akcje i operacje refaktoryzacji** .
+   - **Wskaźnik**
+      - Kliknij prawym przyciskiem myszy i wybierz menu **szybkie akcje i operacje refaktoryzacji** .
+      - Kliknij ikonę ![śrubokręt](media/screwdriver.png) ikona wyświetlana na lewym marginesie, jeśli kursor tekstu znajduje się już w wierszu z dodanym parametrem.
 
-   ![Generowanie konstruktora (wersja zapoznawcza)](media/constructor5-preview-cs.png)
+   ![Generuj Podgląd konstruktora](media/constructor5-preview-cs.png)
 
-1. Wybierz **tworzenie i Inicjowanie właściwości** lub **tworzenie i Inicjowanie pola** z menu rozwijanego.
+1. Wybierz opcję **Utwórz i zainicjuj Właściwość** lub **Utwórz i zainicjuj pole** z menu rozwijanego.
 
-   Pole lub właściwość jest zadeklarowana i automatycznie nadawaną nazwę, aby dopasować swoje typy. Wiersz kodu jest także dodawane do zainicjowania pole lub właściwość w treści konstruktora.
+   Pole lub właściwość są zadeklarowane i automatycznie nazwane, aby odpowiadały typom. Wiersz kodu jest również dodawany do zainicjowania pola lub właściwości w treści konstruktora.
 
-   ![Generuj Konstruktor wynik](media/constructor5-result-cs.png)
+   ![Generuj wynik konstruktora](media/constructor5-result-cs.png)
 
 ## <a name="see-also"></a>Zobacz także
 

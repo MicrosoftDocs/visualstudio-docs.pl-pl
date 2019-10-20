@@ -7,23 +7,23 @@ helpviewer_keywords:
 - run-time errors, warnings
 - warnings, configuring
 ms.assetid: 99cf4781-bd4d-47b4-91b9-217933509f82
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ba037dd93c64fc15d8d540880d075ea7005685b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 2c71c352040898874cd90a397db6b8c7321ff39d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924115"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652076"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Konfigurowanie ostrzeżeń w Visual Basic
 
-[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Kompilator zawiera zestaw ostrzeżeń dotyczących kodu, który może spowodować błędy w czasie wykonywania. Te informacje służą do pisania oczyszczarki, szybszego i lepszego kodu z mniejszą liczbą błędów. Na przykład kompilator generuje ostrzeżenie, gdy użytkownik próbuje wywołać element członkowski zmiennej nieprzypisanego obiektu, zwrócić z funkcji bez ustawienia wartości zwracanej lub wykonać `Try` blok z błędami w logice, aby przechwytywać wyjątki.
+Kompilator [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] zawiera zestaw ostrzeżeń dotyczących kodu, który może spowodować błędy w czasie wykonywania. Te informacje służą do pisania oczyszczarki, szybszego i lepszego kodu z mniejszą liczbą błędów. Na przykład kompilator generuje ostrzeżenie, gdy użytkownik próbuje wywołać element członkowski zmiennej nieprzypisanego obiektu, zwrócić z funkcji bez ustawienia wartości zwracanej lub wykonać blok `Try` z błędami w logice, aby przechwytywać wyjątki.
 
-Czasami kompilator oferuje dodatkową logikę w imieniu użytkownika, dzięki czemu użytkownik może skupić się na zadaniu w stanie, a nie na przewidywaniu ewentualnych błędów. W poprzednich wersjach programu [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] **opcja Strict** została użyta w celu ograniczenia [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] dodatkowej logiki zapewnianej przez kompilator. Skonfigurowanie ostrzeżeń pozwala ograniczyć tę logikę w bardziej szczegółowy sposób, na poziomie poszczególnych ostrzeżeń.
+Czasami kompilator oferuje dodatkową logikę w imieniu użytkownika, dzięki czemu użytkownik może skupić się na zadaniu w stanie, a nie na przewidywaniu ewentualnych błędów. W poprzednich wersjach [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] **opcja Strict** została użyta w celu ograniczenia dodatkowej logiki zapewnianej przez kompilator [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. Skonfigurowanie ostrzeżeń pozwala ograniczyć tę logikę w bardziej szczegółowy sposób, na poziomie poszczególnych ostrzeżeń.
 
 Możesz chcieć dostosować projekt i wyłączyć niektóre ostrzeżenia, które nie są związane z aplikacją, przy jednoczesnym wyłączaniu innych ostrzeżeń do błędów. Na tej stronie wyjaśniono, jak włączyć i wyłączyć poszczególne ostrzeżenia.
 
@@ -32,7 +32,7 @@ Istnieją dwa różne sposoby konfigurowania ostrzeżeń: można je skonfigurowa
 
 Karta **kompilacja** na stronie **Projektant projektu** umożliwia włączanie i wyłączanie ostrzeżeń. Zaznacz pole wyboru **Wyłącz wszystkie ostrzeżenia** , aby wyłączyć wszystkie ostrzeżenia; Wybierz pozycję **Traktuj wszystkie ostrzeżenia jako błędy** , aby traktować wszystkie ostrzeżenia jako błędy. Niektóre poszczególne ostrzeżenia mogą być przełączane jako błąd lub ostrzeżenie zgodnie z potrzebami w wyświetlonej tabeli.
 
-Jeśli **opcja Strict** jest ustawiona na **off**, nie można niezależnie traktować **opcji Option Strict** pokrewnych ostrzeżeń. Gdy **opcja Strict** jest ustawiona na wartość **on**, skojarzone ostrzeżenia są traktowane jako błędy, niezależnie od ich stanu. Jeśli **opcja Strict** jest ustawiona na wartość **Custom** przez `/optionstrict:custom` określenie w kompilatorze wiersza polecenia, **Opcje rygorystyczne** ostrzeżenia mogą być włączane lub wyłączane niezależnie.
+Jeśli **opcja Strict** jest ustawiona na **off**, nie można niezależnie traktować **opcji Option Strict** pokrewnych ostrzeżeń. Gdy **opcja Strict** jest ustawiona na wartość **on**, skojarzone ostrzeżenia są traktowane jako błędy, niezależnie od ich stanu. Jeśli **opcja Strict** jest ustawiona na wartość **Custom** przez określenie `/optionstrict:custom` w kompilatorze wiersza polecenia, **opcja rygorystyczne** ostrzeżenia może być włączana lub wyłączana niezależnie.
 
 Opcja wiersza polecenia **/warnaserror** kompilatora może również służyć do określenia, czy ostrzeżenia są traktowane jako błędy. Można dodać listę rozdzielaną przecinkami do tej opcji, aby określić, które ostrzeżenia mają być traktowane jako błędy lub ostrzeżenia przy użyciu + lub-. Poniższa tabela zawiera szczegółowe informacje o możliwych opcjach.
 
@@ -63,59 +63,59 @@ Ta tabela przykładów argumentów wiersza polecenia opisuje działanie każdego
 Poniżej znajduje się lista ostrzeżeń, które warto traktować jako błędy.
 
 ### <a name="implicit-conversion-warning"></a>Ostrzeżenie o niejawnej konwersji
-Generowane dla wystąpień niejawnej konwersji. Nie zawierają one niejawnych konwersji z wewnętrznego typu liczbowego do ciągu podczas korzystania z `&` operatora. Wartość domyślna dla nowych projektów jest wyłączona.
+Generowane dla wystąpień niejawnej konwersji. Nie zawierają one niejawnych konwersji z wewnętrznego typu liczbowego na ciąg, gdy jest używany operator `&`. Wartość domyślna dla nowych projektów jest wyłączona.
 
-#C1 42016
+IDENTYFIKATOR: 42016
 
 ### <a name="late-bound-method-invocation-and-overload-resolution-warning"></a>Ostrzeżenie wywołania metody z późnym wiązaniem i rozpoznawania przeciążenia
 Wygenerowano dla wystąpień późnego wiązania. Wartość domyślna dla nowych projektów jest wyłączona.
 
-#C1 42017
+IDENTYFIKATOR: 42017
 
 ### <a name="operands-of-type-object-warnings"></a>Argumenty operacji typu "Object"
-Generowane, gdy wystąpią operandy typu `Object` , które spowodują utworzenie błędu z **opcją Strict dla**. Wartość domyślna dla nowych projektów jest włączona.
+Generowane, gdy występują operandy typu `Object`, które spowodują utworzenie błędu z **ustawieniem Strict On**. Wartość domyślna dla nowych projektów jest włączona.
 
-#C1 42018 i 42019
+ID: 42018 i 42019
 
 ### <a name="declarations-require-as-clause-warnings"></a>Deklaracje wymagają ostrzeżeń klauzuli "As"
-Generowane, gdy w deklaracji zmiennej, funkcji lub właściwości brakuje `As` klauzuli, wystąpił błąd z ustawieniem **Strict On**. Przyjmuje się, że zmienne, które nie mają przypisanego typu, są typu `Object`. Wartość domyślna dla nowych projektów jest włączona.
+Generowane, gdy w deklaracji zmiennej, funkcji lub właściwości brakuje klauzuli `As` zostałby utworzony błąd z **opcją Strict On**. Przyjmuje się, że zmienne, które nie mają przypisanego typu, są typu `Object`. Wartość domyślna dla nowych projektów jest włączona.
 
-#C1 42020 (Deklaracja zmiennej), 42021 (deklaracja funkcji) i 42022 (Deklaracja właściwości).
+ID: 42020 (Deklaracja zmiennej), 42021 (deklaracja funkcji) i 42022 (Deklaracja właściwości).
 
 ### <a name="possible-null-reference-exception-warnings"></a>Możliwe ostrzeżenia wyjątku odwołania o wartości null
 Generowane, gdy zmienna jest używana, zanim zostanie do niej przypisana wartość. Wartość domyślna dla nowych projektów jest włączona.
 
-#C1 42104, 42030
+IDENTYFIKATOR: 42104, 42030
 
 ### <a name="unused-local-variable-warning"></a>Ostrzeżenie dotyczące nieużywanej zmiennej lokalnej
 Generowane, gdy zmienna lokalna jest zadeklarowana, ale nigdy nie jest określana. Wartość domyślna to on.
 
-#C1 42024
+IDENTYFIKATOR: 42024
 
 ### <a name="access-of-shared-member-through-instance-variable-warning"></a>Ostrzeżenie o dostępie udostępnionego elementu członkowskiego za poorednictwem zmiennej wystąpienia
 Generowane podczas uzyskiwania dostępu do udostępnionej składowej za pomocą wystąpienia mogą mieć skutki uboczne lub podczas uzyskiwania dostępu do udostępnionej składowej za pomocą zmiennej wystąpienia nie jest prawą stroną wyrażenia lub jest przekazywany jako parametr. Wartość domyślna dla nowych projektów jest włączona.
 
-#C1 42025
+IDENTYFIKATOR: 42025
 
 ### <a name="recursive-operator-or-property-access-warnings"></a>Cykliczne ostrzeżenia operatora lub dostępu do właściwości
 Generowane, gdy treść procedury używa tego samego operatora lub właściwości, który jest zdefiniowany w. Wartość domyślna dla nowych projektów jest włączona.
 
-#C1 42004 (operator), 42026 (Właściwość)
+ID: 42004 (operator), 42026 (Właściwość)
 
 ### <a name="function-or-operator-without-return-value-warning"></a>Ostrzeżenie funkcji lub operatora bez wartości zwracanej
-Generowane, gdy funkcja lub operator nie ma określonej wartości zwracanej. Obejmuje pomijanie `Set` do niejawnej zmiennej lokalnej o takiej samej nazwie jak funkcja. Wartość domyślna dla nowych projektów jest włączona.
+Generowane, gdy funkcja lub operator nie ma określonej wartości zwracanej. Obejmuje to pominięcie `Set` do niejawnej zmiennej lokalnej o takiej samej nazwie jak funkcja. Wartość domyślna dla nowych projektów jest włączona.
 
-#C1 42105 (funkcja), 42016 (operator)
+ID: 42105 (funkcja), 42016 (operator)
 
 ### <a name="overloads-modifier-used-in-a-module-warning"></a>Modyfikator przeciążenia użyty w ostrzeżeniu modułu
-Generowane, `Overloads` `Module`gdy jest używany w. Wartość domyślna dla nowych projektów jest włączona.
+Generowane, gdy `Overloads` jest używany w `Module`. Wartość domyślna dla nowych projektów jest włączona.
 
-#C1 42028
+IDENTYFIKATOR: 42028
 
 ### <a name="duplicate-or-overlapping-catch-blocks-warnings"></a>Zduplikowane lub nakładające się ostrzeżenia dotyczące bloków catch
-Generowane, gdy `Catch` blok nigdy nie został osiągnięty ze względu na `Catch` jego relację z innymi zdefiniowanymi blokami. Wartość domyślna dla nowych projektów jest włączona.
+Generowane, gdy blok `Catch` nie został nigdy osiągnięty ze względu na jego relację z innymi zdefiniowanymi blokami `Catch`. Wartość domyślna dla nowych projektów jest włączona.
 
-#C1 42029, 42031
+IDENTYFIKATOR: 42029, 42031
 
 ## <a name="see-also"></a>Zobacz także
 

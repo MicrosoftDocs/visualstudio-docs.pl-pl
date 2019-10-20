@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Używanie edytora wyrażeń | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: korzystanie z edytora wyrażeń | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -8,50 +8,50 @@ f1_keywords:
 - System.Activities.Presentation.View.ExpressionTextBox.UI
 ms.assetid: b5f961dd-6dda-41a9-9cae-0383d479ef3d
 caps.latest.revision: 13
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: cc876426c18184c966c277e8dafb5a373da332b7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6157646526a2d634ff5034d98eb497c00585c067
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408380"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659101"
 ---
-# <a name="how-to-use-the-expression-editor"></a>Instrukcje: Używanie edytora wyrażeń
-Edytor wyrażeń jest [!INCLUDE[wfd1](../includes/wfd1-md.md)] formant, który jest używany w wielu działań przepływu pracy jako sposób wprowadzania i tych wyrażeń. Edytora wyrażeń zapewnia w pełni funkcjonalnego środowiska IDE, środowisko, w tym funkcji IntelliSense, edytowania kolorowanie, ParamInfo, między innymi funkcjami zygzaki sygnalizujące błędy. Kompilator sprawdza się wyrażenie po jej wprowadzeniu. Jeśli wyrażenie jest nieprawidłowe, jest wyświetlana ikona błędu. Można również otworzyć Edytor jako **edytora wyrażeń** okno dialogowe.  
-  
- Wyrażenia są wartości literałów lub [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] kodu powiązany z argumentami lub właściwości. Zawierają one elementy wartości (np. zmienne, stałe, literały, właściwości), które są połączone z operacjami umożliwiające uzyskanie nową wartość. Wyrażenia są zapisywane przy użyciu składni VB.NET, nawet jeśli aplikacja znajduje się w programie przy użyciu języka C#. Oznacza to, wielkość liter nie ma znaczenia, porównanie odbywa się przy użyciu pojedynczy znak równości ("=") zamiast ("=="), operatory logiczne są wyrazy "i" i "or" zamiast symbole "& &" i "&#124;&#124;", i **nic**  jest używana zamiast **null**. Aby uzyskać więcej informacji na temat wyrażenia i operatory w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] i uzyskać kilka przykładów, zobacz [operatory i wyrażenia w języku Visual Basic](http://go.microsoft.com/fwlink/?LinkId=186818).  
-  
- **Edytora wyrażeń** zachowuje się w następujący sposób:  
-  
-- Jeśli fokus nie jest w edytorze wyrażeń, wygląda regularne formant TextBlock.  
-  
-- Gdy fokus jest ustawiony w edytorze wyrażeń, wygląda i zachowuje się jak kontrolka edytora wyrażeń. Po utracie fokusu, it wygląda regularne TextBlock ponownie.  
-  
-- Jeśli możesz skoncentrować się na edytorze wyrażeń w rehostowanym projektancie przepływu pracy, następnie go zachowuje się jak pole tekstowe. Gdy fokus jest utracone w rehostowanym projektancie przepływu pracy, edytora wyrażeń będzie wyglądać regularne TextBlock ponownie.  
-  
+# <a name="how-to-use-the-expression-editor"></a>Instrukcje: korzystanie z edytora wyrażeń
+Edytor wyrażeń jest formantem [!INCLUDE[wfd1](../includes/wfd1-md.md)], który jest używany w wielu działaniach przepływu pracy jako sposób wprowadzania i oceniania tych wyrażeń. Edytor wyrażeń zawiera dopracowane środowisko edycji środowiska IDE, w tym funkcje IntelliSense, kolorowanie, ParamInfo, zygzaki błędów, między innymi. Kompilator sprawdza poprawność wyrażenia po jego wprowadzeniu. Jeśli wyrażenie jest nieprawidłowe, zostanie wyświetlona ikona błędu. Edytor można także otworzyć jako okno dialogowe **Edytor wyrażeń** .
+
+ Wyrażenia są wartościami literałów lub [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] kodzie związanym z argumentami lub właściwościami. Zawierają one elementy wartości (np. zmienne, stałe, literały, właściwości), które są łączone z operacjami w celu uzyskania nowej wartości. Wyrażenia są zapisywane przy użyciu składni VB.NET, nawet jeśli aplikacja znajduje się w programie C#przy użyciu. Oznacza to, że nie ma znaczenia, porównanie jest wykonywane przy użyciu pojedynczego znaku równości ("="), a nie ("= ="), operatory logiczne to słowa "i" i "lub" zamiast symboli "& &" i "&#124;&#124;", a **niczego nie** są używane zamiast **wartości null**. Aby uzyskać więcej informacji na temat wyrażeń i operatorów w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] i dla niektórych przykładów, zobacz [Operatory i wyrażenia w Visual Basic](http://go.microsoft.com/fwlink/?LinkId=186818).
+
+ **Edytor wyrażeń** zachowuje się w następujący sposób:
+
+- Jeśli fokus nie znajduje się w edytorze wyrażeń, wygląda jak zwykła kontrolka TextBlock.
+
+- Gdy fokus znajduje się w edytorze wyrażeń, wygląda i zachowuje się jak kontrolka Edytor wyrażeń. Po utracie fokusu będzie on wyglądał jak zwykły element TextBlock.
+
+- W przypadku fokusu w edytorze wyrażeń w Projektancie przepływu pracy przeprowadzonej ponownie zachowuje się to jak pole tekstowe. Gdy fokus zostanie utracony w Projektancie przepływów pracy, Edytor wyrażeń będzie wyglądał jak zwykły element TextBlock.
+
 > [!NOTE]
-> Funkcja IntelliSense edytora wyrażeń jest dostępna tylko wewnątrz elementu [!INCLUDE[vs2010](../includes/vs2010-md.md)]. W obu [!INCLUDE[vs2010](../includes/vs2010-md.md)] i rehostowanym przypadkach kompilator sprawdza poprawność wyrażenia po wprowadzeniu go i Edytor wyrażeń Wyświetla ikonę błędu, jeśli wyrażenie jest nieprawidłowe.  
-  
-### <a name="using-the-expression-editor"></a>Za pomocą edytora wyrażeń  
-  
-1. W [!INCLUDE[vs2010](../includes/vs2010-md.md)], otwórz projekt nowego lub istniejącego przepływu pracy.  
-  
-2. Dodaj na przykład <xref:System.Activities.Statements.Assign> działania przepływu pracy.  
-  
+> Funkcja IntelliSense dla edytora wyrażeń jest dostępna tylko wewnątrz [!INCLUDE[vs2010](../includes/vs2010-md.md)]. W przypadku [!INCLUDE[vs2010](../includes/vs2010-md.md)] i scenariuszy rehostowania kompilator sprawdza poprawność wyrażenia po jego wprowadzeniu, a w edytorze wyrażeń jest wyświetlana ikona błędu, jeśli wyrażenie jest nieprawidłowe.
+
+### <a name="using-the-expression-editor"></a>Korzystanie z edytora wyrażeń
+
+1. W [!INCLUDE[vs2010](../includes/vs2010-md.md)] Otwórz nowy lub istniejący projekt przepływu pracy.
+
+2. Dodaj na przykład działanie <xref:System.Activities.Statements.Assign> do przepływu pracy.
+
     > [!NOTE]
-    > Wiele działań przepływu pracy ma edytory wyrażenia. Obiekty wyrażeń TextBlock również zostać wyświetlony w Projektancie zmiennej, projektanta argumentów i projektanta argumentów dynamicznych. <xref:System.Activities.Statements.Assign> To działanie służy jako przykład.  
-  
-3. Kliknij przycisk edytora wyrażeń po lewej stronie, w Projektancie działań dla <xref:System.Activities.Statements.Assign> działania.  
-  
-     Parametry szare znaku wodnego  **\<do >** i  **\<wprowadź wyrażenie VB >** są domyślne, ciągi tekstowe edytory wyrażenia w <xref:System.Activities.Statements.Assign> działania.  
-  
-4. Wprowadź wyrażenie. Jeśli wprowadzisz ciąg, upewnij się umieścić ciąg w cudzysłowie. Jeśli chcesz powiązać argumentu wyrażenia do zmiennej, należy pozostawić znaki cudzysłowu.  
-  
-     Gdy wszystko będzie gotowe, wybierz region lub obszar, aby przenieść fokus do innej części projektanta poza edytora wyrażeń. To spowoduje, że kompilator, aby sprawdzić poprawność wyrażenia, zgodnie z wcześniejszym opisem.  
-  
-     Alternatywny sposób, aby wprowadzić/Edytuj wyrażenie jest kliknij wielokropek obok nazwy właściwości w siatce właściwości. Spowoduje to otwarcie **edytora wyrażeń** jako okna dialogowego.  
-  
-## <a name="see-also"></a>Zobacz też  
+    > Wiele działań przepływu pracy ma edytory wyrażeń. Bloki tekstu wyrażenia są również wyświetlane w projektancie zmiennych, projektancie argumentów i projektancie argumentów dynamicznych. Działanie <xref:System.Activities.Statements.Assign> jest używane jako przykład.
+
+3. Kliknij Edytor wyrażeń lewy w projektancie działań dla działania <xref:System.Activities.Statements.Assign>.
+
+     Ciągi szarego znaku wodnego **\<To >** i **\<Enter wyrażeniem VB >** są domyślnymi ciągami tekstowymi dla edytorów wyrażeń w działaniu <xref:System.Activities.Statements.Assign>.
+
+4. Wprowadź wyrażenie. Jeśli wprowadzisz ciąg, upewnij się, że zostały umieszczone cudzysłowy wokół ciągu. Jeśli wybierzesz powiązanie argumentu wyrażenia z zmienną, pozostaw cudzysłowy.
+
+     Gdy wszystko będzie gotowe, wybierz region lub obszar poza edytorem wyrażeń, aby przenieść fokus do innej części projektanta. Spowoduje to, że kompilator sprawdzi poprawność wyrażenia zgodnie z wcześniejszym opisem.
+
+     Alternatywny sposób wprowadzania/edytowania wyrażenia polega na kliknięciu wielokropka obok nazwy właściwości w siatce właściwości. Spowoduje to otwarcie **edytora wyrażeń** jako okna dialogowego.
+
+## <a name="see-also"></a>Zobacz też
  <xref:System.Activities.Presentation.View.ExpressionTextBox>

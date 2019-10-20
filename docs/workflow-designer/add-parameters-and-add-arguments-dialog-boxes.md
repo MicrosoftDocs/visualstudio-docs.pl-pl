@@ -1,37 +1,37 @@
 ---
-title: 'Projektant przepływu pracy: Dodaj parametry i argumenty Dodaj okien dialogowych'
+title: 'Projektant przepływu pracy: Dodaj parametry & okna dialogowe Dodawanie argumentów'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - AddParameters.UI
 ms.assetid: a21fb4fe-134b-40b0-8497-86b842940ca1
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 7acb273430ac2dea8bc1f95a5c9a6e5c1d45c6f5
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+author: jillre
+ms.openlocfilehash: 78f773776c3285b60b2747c74e11a90ff08dba8a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177729"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650752"
 ---
 # <a name="add-parameters-and-add-arguments-dialog-boxes"></a>Dodawanie parametrów i Dodawanie argumentów, okna dialogowe
 
-W poniższej tabeli opisano elementy interfejsu użytkownika **Dodawanie parametrów** okno dialogowe, które posługują się <xref:System.Activities.Statements.InvokeMethod> projektanta:
+W poniższej tabeli opisano elementy interfejsu użytkownika (UI) okna dialogowego **Dodawanie parametrów** używanego przez projektanta <xref:System.Activities.Statements.InvokeMethod>:
 
 |||
 |-|-|
-|**Kierunek**|Określa, czy parametr reprezentuje przepływ danych do metody, poza metody i / lub.|
-|**Typ**|Nazwa typu nowego parametru.|
-|**Wartość**|Wyrażenie języka Visual Basic, które służą do przypisywania wartości domyślnej na nowy parametr|
+|**Wskazywa**|Określa, czy parametr reprezentuje przepływ danych do metody, z metody, czy obu.|
+|**Wprowadź**|Nazwa typu nowego parametru.|
+|**Wartość**|Wyrażenie Visual Basic, które jest używane do przypisywania wartości domyślnej do nowego parametru|
 
-W poniższej tabeli opisano elementy interfejsu użytkownika **Dodaj argumenty** okno dialogowe, które posługują się <xref:System.Activities.Statements.InvokeDelegate> projektanta:
+W poniższej tabeli opisano elementy interfejsu użytkownika (UI) okna dialogowego **Dodawanie argumentów** , które są używane przez projektanta <xref:System.Activities.Statements.InvokeDelegate>:
 
 |||
 |-|-|
 |**Nazwa**|Nazwa argumentu.|
-|**Kierunek**|Określa, czy argument reprezentuje przepływ danych do delegata, poza delegata lub obie.|
-|**Typ**|Nazwa typu nowy argument.|
-|**Wartość**|Wartość, która ma być używany dla tego wystąpienia argument delegata.|
+|**Wskazywa**|Określa, czy argument reprezentuje przepływ danych do delegata, z delegata, czy z obu tych elementów.|
+|**Wprowadź**|Nazwa typu nowego argumentu.|
+|**Wartość**|Wartość, która ma być używana dla tego wystąpienia argumentu delegata.|

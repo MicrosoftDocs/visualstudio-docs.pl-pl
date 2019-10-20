@@ -5,39 +5,39 @@ ms.topic: conceptual
 helpviewer_keywords:
 - UML model, sharing
 - UML diagrams, saving
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cb1699db54691e81c49b686c245d96f9b5a5442
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1e1b958b9226a0a8ded0f886af81efc3b1b5aaf9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63003369"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670732"
 ---
 # <a name="share-models-and-exporting-diagrams"></a>Udostępnianie modeli i eksportowanie diagramów
-W programie Visual Studio udostępnianie modeli i diagramów ze współpracownikami na kilka sposobów.
+W programie Visual Studio można udostępniać modele i diagramy współpracownikom na kilka sposobów.
 
- Aby zobaczyć, jakie wersje programu Visual Studio obsługuje tę funkcję, zobacz [obsługę wersji narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Aby sprawdzić, które wersje programu Visual Studio obsługują tę funkcję, zobacz [Obsługa wersji dla narzędzi architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-## <a name="working-on-a-model-as-a-team"></a>Praca z modelem w zespole
- Użytkownicy programu Visual Studio można tworzyć i edytować, modeli i diagramów zależności, kierowanych wykresów.
+## <a name="working-on-a-model-as-a-team"></a>Praca nad modelem jako zespół
+ Użytkownicy programu Visual Studio mogą tworzyć i edytować modele, diagramy zależności oraz wykresy ukierunkowane.
 
- Różni użytkownicy mogą pracować na tym samym czasie w modelu, ale powinny działać na różnych pakietach.
+ Różni użytkownicy mogą w tym samym czasie korzystać z modelu, ale powinny korzystać z różnych pakietów.
 
- Aby uzyskać sugestie dotyczące organizowania modeli w średnich i dużych projektów, zobacz [struktury rozwiązania modelowania](../modeling/structure-your-modeling-solution.md).
+ Aby uzyskać sugestie dotyczące organizowania modeli w średnim lub dużym projekcie, zobacz [Structure The Modeling Solution](../modeling/structure-your-modeling-solution.md).
 
 ## <a name="reading-and-reviewing-models"></a>Odczytywanie i przeglądanie modeli
- Członkowie zespołu za pomocą niektórych wersji programu Visual Studio (nie można utworzyć modele) mogą odczytywać modeli, modelowanie diagramów i kierowane wykresy, ale nie można ich edytować.  Aby zobaczyć, jakie wersje programu Visual Studio obsługuje tę funkcję, zobacz [obsługę wersji narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Członkowie zespołu używający niektórych wersji programu Visual Studio (które nie mogą tworzyć modeli) mogą odczytywać modele, diagramy modelowania i wykresy ukierunkowane, ale nie mogą ich edytować.  Aby sprawdzić, które wersje programu Visual Studio obsługują tę funkcję, zobacz [Obsługa wersji dla narzędzi architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
- Diagram zależności można otwierać tylko w ramach modelu, w której został utworzony. Aby zapewnić dostęp do diagramu, muszą więc zapewniać dostęp do wszystkich modelowania pliki, projektu lub ich kopie.
+ Diagram zależności można otworzyć tylko w modelu, w którym został utworzony. Aby zapewnić dostęp do diagramu, w związku z tym należy zapewnić dostęp do wszystkich plików projektu modelowania lub do ich kopii.
 
- Aby uzyskać więcej informacji, zobacz [odczytywanie modeli i diagramów w innych wersjach programu Visual Studio](../modeling/read-models-and-diagrams-in-other-visual-studio-editions.md).
+ Aby uzyskać więcej informacji, zobacz [Odczytywanie modeli i diagramów w innych wersjach programu Visual Studio](../modeling/read-models-and-diagrams-in-other-visual-studio-editions.md).
 
-## <a name="using-diagrams-in-documents-and-presentations"></a>Za pomocą diagramów w dokumentów i prezentacji
- Możesz skopiować części diagramy do dokumentów i prezentacji. Pozwala również na drukowanie diagramów, na przykład do plików XPS.
+## <a name="using-diagrams-in-documents-and-presentations"></a>Używanie diagramów w dokumentach i prezentacjach
+ Możesz kopiować części diagramów do dokumentów lub prezentacji. Możesz również wydrukować diagramy, na przykład pliki XPS.
 
  Aby uzyskać więcej informacji, zobacz [Eksportowanie diagramów jako obrazów](../modeling/export-diagrams-as-images.md).
 
@@ -45,8 +45,8 @@ W programie Visual Studio udostępnianie modeli i diagramów ze współpracownik
 
 |Tytuł|Opis|
 |-|-|
-|[Tworzenie struktury rozwiązania modelowania](../modeling/structure-your-modeling-solution.md)|Udostępnianie modeli w dużych i średnich projektu.|
-|[Eksportowanie diagramów jako obrazów](../modeling/export-diagrams-as-images.md)|Możesz skopiować części diagramy do aplikacji, takich jak Word lub PowerPoint lub wydrukować diagram do pliku XPS.|
+|[Tworzenie struktury rozwiązania modelowania](../modeling/structure-your-modeling-solution.md)|Udostępnianie modeli w dużym lub średnim projekcie.|
+|[Eksportowanie diagramów jako obrazów](../modeling/export-diagrams-as-images.md)|Możesz skopiować części diagramów do aplikacji, takich jak PowerPoint lub Word, lub wydrukować diagram do pliku XPS.|
 |[Analizowanie i modelowanie architektury](../modeling/analyze-and-model-your-architecture.md)|Przegląd modeli i diagramów.|
 
 ## <a name="see-also"></a>Zobacz też

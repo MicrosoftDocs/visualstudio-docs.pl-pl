@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Znajdowanie tematów w indeksie | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Znajdowanie tematów w indeksie | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,35 +13,35 @@ helpviewer_keywords:
 - Help Viewer 2.0, index filtering
 ms.assetid: cb071e93-f297-459c-a6fa-8ae0dabc42a4
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 67eb54d06297458915edfe34718948b085c6e86b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4de007ef262304d570ec8ebed39e6b14a2730833
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416833"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651936"
 ---
-# <a name="how-to-find-topics-in-the-index"></a>Instrukcje: Znajdowanie tematów w indeksie
+# <a name="how-to-find-topics-in-the-index"></a>Porady: znajdowanie tematów w Indeksie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Indeks zawiera listę słów kluczowych, które są skojarzone z tematów w zainstalowanej treści. Każdy temat może mieć więcej niż jedno słowo kluczowe skojarzone z nim, a każde słowo kluczowe może być skojarzona z więcej niż jednego tematu. Użyj tego indeksu w taki sam sposób jak w przypadku indeksu w książce.  
-  
-### <a name="to-find-a-topic-by-using-the-index"></a>Aby znaleźć temat za pomocą indeksu  
-  
-1. Na **indeksu** karcie, wykonaj jedną z następujących czynności:  
-  
-   - Określ słowo kluczowe do wyszukania w polu tekstowym. Na przykład określić "Aktualizuj", aby znaleźć tematy ze słowami kluczowymi, takie jak "update", "zaktualizowane" i "aktualizacji".  
-  
-      Wybierając przycisk filtru w górnej części karty, możesz wyświetlić wszystkie wpisy, które zawierają tekst, który określisz albo tylko wpisy, rozpoczynających się od tekstu, który określisz.  
-  
+Indeks zawiera listę słów kluczowych skojarzonych z tematami w zainstalowanej zawartości. Każdy temat może zawierać więcej niż jedno słowo kluczowe skojarzone z nim, a każde słowo kluczowe może być skojarzone z więcej niż jednym tematem. Użyj tego indeksu w taki sam sposób, jak w przypadku użycia indeksu w książce.
+
+### <a name="to-find-a-topic-by-using-the-index"></a>Aby znaleźć temat za pomocą indeksu
+
+1. Na karcie **indeks** wykonaj jedną z następujących czynności:
+
+   - W polu tekstowym Określ słowo kluczowe do wyszukania. Na przykład określ "Update", aby znaleźć tematy z słowami kluczowymi, takimi jak "Aktualizacja", "zaktualizowane" i "Aktualizowanie".
+
+      Wybierając przycisk Filtr w górnej części karty, można wyświetlić wszystkie wpisy zawierające określony tekst lub tylko te wpisy, które zaczynają się od określonego tekstu.
+
      > [!NOTE]
-     > Gdy przycisk filtru pojawi się na tle ciemniejszego z obramowaniem, wpisy muszą zawierać tekst, który określisz. Jeśli nie ma tło i obramowanie, wpisy musi rozpoczynać tekst, który określisz.  
-  
-   - Przewiń do indeksu, a następnie wybierz słowem kluczowym.  
-  
-     Jeśli słowo kluczowe, które określisz jest skojarzony z tylko jednego tematu, wygląda na to. W przeciwnym razie zostanie wyświetlona lista wszystkich tematów, które są skojarzone z tym słowem kluczowym.  
-  
-## <a name="see-also"></a>Zobacz też  
+     > Gdy przycisk filtru pojawia się na ciemniejszym tle z obramowaniem, wpisy muszą zawierać określony tekst. Jeśli tło i obramowanie nie są wyświetlane, wpisy muszą zaczynać się od określonego tekstu.
+
+   - Przewiń indeks i wybierz słowo kluczowe.
+
+     Jeśli określone słowo kluczowe jest skojarzone tylko z jednym tematem, pojawia się. W przeciwnym razie zostanie wyświetlona lista wszystkich tematów skojarzonych ze słowem kluczowym.
+
+## <a name="see-also"></a>Zobacz też
  [Wskazówki dotyczące wyszukiwania w indeksie](../ide/index-search-tips.md)

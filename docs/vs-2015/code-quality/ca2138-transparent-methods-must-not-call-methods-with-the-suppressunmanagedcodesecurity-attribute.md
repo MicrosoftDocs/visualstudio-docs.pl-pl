@@ -1,5 +1,5 @@
 ---
-title: 'CA2138: Metody przezroczyste nie mogą wywoływać metod z atrybutem SuppressUnmanagedCodeSecurity | Dokumentacja firmy Microsoft'
+title: 'CA2138: Metody przezroczyste nie mogą wywoływać metod z atrybutem SuppressUnmanagedCodeSecurity | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -8,17 +8,17 @@ f1_keywords:
 - CA2138
 ms.assetid: a14c4d32-f079-4f3a-956c-a1657cde0f66
 caps.latest.revision: 14
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 4e9a9e10f928efe6bcff6fb3d49c1b1cd7b1bd1c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 65e00d319bff3bbfd3c441c6b60ed8a703e69251
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68154296"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654812"
 ---
-# <a name="ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute"></a>CA2138: Metody przezroczyste nie mogą wywoływać metod z atrybutem SuppressUnmanagedCodeSecurity
+# <a name="ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute"></a>CA2138: Jawne metody nie mogą wywoływać metod z atrybutem SuppressUnmanagedCodeSecurity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -29,15 +29,15 @@ ms.locfileid: "68154296"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Metoda przezroczysta pod względem bezpieczeństwa wywołuje metodę, która jest oznaczona za pomocą <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> atrybutu.
+ Metoda przezroczysta pod względem bezpieczeństwa wywołuje metodę, która jest oznaczona za pomocą atrybutu <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute>.
 
 ## <a name="rule-description"></a>Opis reguły
- Ta reguła jest uruchamiana na każdej przezroczystej metody metodę, która wywołuje bezpośrednio kod natywny, na przykład za pomocą za pośrednictwem metody P/Invoke (Wywołanie platformy) wywołań. P/Invoke i COM międzyoperacyjny metody, które są oznaczone <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> atrybutu wynik na liście LinkDemand wykonywana względem wywoływania metody. Ponieważ przezroczysty kod zabezpieczeń nie mogą spełniać LinkDemands, kod również nie można wywołać metody, które są oznaczone atrybutem SuppressUnmanagedCodeSecurity lub metody klasy, która jest oznaczona atrybutem SuppressUnmanagedCodeSecurity. Metoda zakończy się niepowodzeniem lub żądanie zostaną przekonwertowane na pełnego żądania.
+ Ta zasada jest uruchamiana dla dowolnej przezroczystej metody, która wywołuje bezpośrednio do kodu natywnego, na przykład za pomocą wywołania P/Invoke (wywołania platformy). Metody P/Invoke i COM Interop, które są oznaczone atrybutem <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute>, powodują, że LinkDemand jest wykonywane względem metody wywołującej. Ponieważ przezroczysty kod zabezpieczeń nie może spełnić LinkDemands, kod nie może również wywołać metod, które są oznaczone atrybutem SuppressUnmanagedCodeSecurity, lub metod klasy, które są oznaczone atrybutem SuppressUnmanagedCodeSecurity. Metoda zakończy się niepowodzeniem lub żądanie zostanie przekonwertowane na pełne żądanie.
 
- Naruszenie tej zasady prowadzi do <xref:System.MethodAccessException> zabezpieczeń na poziomie 2 modelu przezroczystości i pełnego żądania dla <xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A> w modelu przezroczystości poziomu 1.
+ Naruszenia tej reguły prowadzą do <xref:System.MethodAccessException> w modelu przezroczystości zabezpieczeń poziomu 2, a pełne zapotrzebowanie na <xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A> w modelu przezroczystości poziomu 1.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, Usuń <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> atrybutu i oznacz metodę z <xref:System.Security.SecurityCriticalAttribute> lub <xref:System.Security.SecuritySafeCriticalAttribute> atrybutu.
+ Aby naprawić naruszenie tej reguły, Usuń atrybut <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> i oznacz metodę atrybutem <xref:System.Security.SecurityCriticalAttribute> lub <xref:System.Security.SecuritySafeCriticalAttribute>.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Nie pomijaj ostrzeżeń dla tej reguły.

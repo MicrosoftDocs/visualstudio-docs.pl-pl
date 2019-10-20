@@ -1,5 +1,5 @@
 ---
-title: Compensate, Projektant działań | Dokumentacja firmy Microsoft
+title: Kompensacja działań — Projektant | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -8,40 +8,36 @@ f1_keywords:
 - System.Activities.Statements.Compensate.UI
 ms.assetid: 7347c947-bfff-4bad-becd-5cd23e7b24cd
 caps.latest.revision: 5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0f643770482c2d01f3f091157e63f8e987853da5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 706cd446e931d6a3a065a3e8abfb58b5a90e9152
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977190"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656975"
 ---
 # <a name="compensate-activity-designer"></a>Compensate, projektant działań
-**Compensate** projektanta działań służy do tworzenia i konfigurowania <xref:System.Activities.Statements.Compensate> działania.  
-  
-## <a name="the-compensate-activity"></a>Kompensacji działania  
- <xref:System.Activities.Statements.Compensate> Działania jawnie wywołuje <xref:System.Activities.Statements.CompensableActivity.CompensationHandler%2A> dla działania zawarte w <xref:System.Activities.Statements.CompensableActivity>. Jeśli <xref:System.Activities.Statements.Compensate> działanie nie jest używane w ramach <xref:System.Activities.Statements.CompensableActivity.CancellationHandler%2A>, <xref:System.Activities.Statements.CompensableActivity.CompensationHandler%2A>, lub <xref:System.Activities.Statements.CompensableActivity.ConfirmationHandler%2A> z <xref:System.Activities.Statements.CompensableActivity>, a następnie należy określić <xref:System.Activities.Statements.Compensate.Target%2A> właściwości.  
-  
- <xref:System.Activities.Statements.CompensationToken> Określony przez <xref:System.Activities.Statements.Compensate.Target%2A> udostępnia środki do jawnie potwierdzić, lub kompensacji <xref:System.Activities.Statements.CompensableActivity> po <xref:System.Activities.Statements.CompensableActivity.Body%2A> z <xref:System.Activities.Statements.CompensableActivity> została ukończona pomyślnie.  
-  
-### <a name="using-the-compensate-activity-designer"></a>Za pomocą Compensate, Projektant działań  
- **Compensate** projektanta działań można znaleźć w **transakcji** kategorii **przybornika**, które jest dostępne po kliknięciu **przybornika** karty w lewej części [!INCLUDE[wfd2](../includes/wfd2-md.md)] (można także wybrać **narzędzi** z **widoku** menu lub klawiszy CTRL + ALT + X.)  
-  
- **Compensate** projektanta działań mogą być przeciągnięte z **przybornika** i porzuconych do [!INCLUDE[wfd2](../includes/wfd2-md.md)] powierzchni wszędzie tam, gdzie działań są zwyczajowo umieszczane, takie jak wewnątrz <xref:System.Activities.Statements.Sequence>. Spowoduje to utworzenie <xref:System.Activities.Statements.Compensate> działanie przy użyciu domyślnego <xref:System.Activities.Activity.DisplayName%2A> z Compensate. <xref:System.Activities.Activity.DisplayName%2A> Wartość może być edytowana w nagłówku **Compensate** projektanta działań lub **DisplayName** pola siatki właściwości.  
-  
-### <a name="the-compensate-properties"></a>Kompensacji właściwości  
- W poniższej tabeli przedstawiono <xref:System.Activities.Statements.CancellationScope> właściwości i w tym artykule opisano, jak są używane w projektancie. <xref:System.Activities.Activity.DisplayName%2A> Właściwości można edytować w siatce właściwości lub na [!INCLUDE[wfd2](../includes/wfd2-md.md)] powierzchni, ale <xref:System.Activities.Statements.Compensate.Target%2A> właściwości muszą być edytowane w siatce właściwości.  
-  
-|Nazwa właściwości|Wymagane|Użycie|  
-|-------------------|--------------|-----------|  
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Określa opcjonalny przyjazna nazwa <xref:System.Activities.Statements.Compensate> działania. Wartość domyślna to Compensate.|  
-|<xref:System.Activities.Statements.Compensate.Target%2A>|Prawda|Określa <xref:System.Activities.InArgument%601> zawierający <xref:System.Activities.Statements.CompensationToken> tego <xref:System.Activities.Statements.Compensate> działania.|  
-  
-## <a name="see-also"></a>Zobacz też  
- [Transakcji](../workflow-designer/transaction-activity-designers.md)   
- [CompensableActivity](../workflow-designer/compensableactivity-activity-designer.md)   
- [Compensate, Projektant działań](../workflow-designer/compensate-activity-designer.md)   
- [Upewnij się](../workflow-designer/confirm-activity-designer.md)   
- [TransactionScope](../workflow-designer/transactionscope-activity-designer.md)
+Projektant działań **kompensacyjnych** służy do tworzenia i konfigurowania działania <xref:System.Activities.Statements.Compensate>.
+
+## <a name="the-compensate-activity"></a>Działanie kompensacja
+ Działanie <xref:System.Activities.Statements.Compensate> jawnie wywołuje <xref:System.Activities.Statements.CompensableActivity.CompensationHandler%2A> dla działania zawartego w <xref:System.Activities.Statements.CompensableActivity>. Jeśli działanie <xref:System.Activities.Statements.Compensate> nie jest używane w <xref:System.Activities.Statements.CompensableActivity.CancellationHandler%2A>, <xref:System.Activities.Statements.CompensableActivity.CompensationHandler%2A> lub <xref:System.Activities.Statements.CompensableActivity.ConfirmationHandler%2A> <xref:System.Activities.Statements.CompensableActivity>, należy określić właściwość <xref:System.Activities.Statements.Compensate.Target%2A>.
+
+ @No__t_0 określony przez <xref:System.Activities.Statements.Compensate.Target%2A> zapewnia metodę jawnego potwierdzenia lub zrekompensowania <xref:System.Activities.Statements.CompensableActivity> po pomyślnym zakończeniu <xref:System.Activities.Statements.CompensableActivity.Body%2A> <xref:System.Activities.Statements.CompensableActivity>.
+
+### <a name="using-the-compensate-activity-designer"></a>Korzystanie z projektanta działań kompensacyjnych
+ Projektant działań **kompensacyjnych** można znaleźć w kategorii **transakcji** **przybornika**, do którego uzyskuje się dostęp, klikając kartę **Przybornik** po lewej stronie [!INCLUDE[wfd2](../includes/wfd2-md.md)] (Alternatywnie, wybierając pozycję **pasek narzędzi** z  **Menu Widok** lub CTRL + ALT + X.)
+
+ Projektant działań **kompensacyjnych** można przeciągnąć z **przybornika** i porzucić na [!INCLUDE[wfd2](../includes/wfd2-md.md)] powierzchnię, wszędzie tam, gdzie działania są zwykle umieszczane, na przykład wewnątrz <xref:System.Activities.Statements.Sequence>. Spowoduje to utworzenie działania <xref:System.Activities.Statements.Compensate> z domyślną <xref:System.Activities.Activity.DisplayName%2A> kompensaty. Wartość <xref:System.Activities.Activity.DisplayName%2A> można edytować w nagłówku projektanta działań **kompensacyjnych** lub w polu **DisplayName** siatki właściwości.
+
+### <a name="the-compensate-properties"></a>Właściwości kompensacji
+ W poniższej tabeli przedstawiono właściwości <xref:System.Activities.Statements.CancellationScope> i opisano sposób ich używania w projektancie. Właściwość <xref:System.Activities.Activity.DisplayName%2A> można edytować w siatce właściwości lub na powierzchni [!INCLUDE[wfd2](../includes/wfd2-md.md)], ale Właściwość <xref:System.Activities.Statements.Compensate.Target%2A> musi być edytowana w siatce właściwości.
+
+|Nazwa właściwości|Wymagane|Użycie|
+|-------------------|--------------|-----------|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Określa opcjonalną przyjazną nazwę działania <xref:System.Activities.Statements.Compensate>. Wartość domyślna to kompensacja.|
+|<xref:System.Activities.Statements.Compensate.Target%2A>|Oznacza|Określa <xref:System.Activities.InArgument%601>, który zawiera <xref:System.Activities.Statements.CompensationToken> dla tego działania <xref:System.Activities.Statements.Compensate>.|
+
+## <a name="see-also"></a>Zobacz też
+ [](../workflow-designer/transaction-activity-designers.md) [Działanie CompensableActivity](../workflow-designer/compensableactivity-activity-designer.md) [transakcji Wynagradzaj projektanta działań](../workflow-designer/compensate-activity-designer.md) , aby [potwierdzić](../workflow-designer/confirm-activity-designer.md) element [TransactionScope](../workflow-designer/transactionscope-activity-designer.md)

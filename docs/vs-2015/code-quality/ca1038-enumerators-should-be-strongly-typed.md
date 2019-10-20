@@ -1,5 +1,5 @@
 ---
-title: 'CA1038: Moduły wyliczające powinny być silnie typizowane | Dokumentacja firmy Microsoft'
+title: 'CA1038: moduły wyliczające powinny być silnie wpisane | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,28 +12,28 @@ helpviewer_keywords:
 - CA1038
 ms.assetid: 8919f526-d487-42a4-87dc-2b2ee25260c4
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 84b6ae6ef0c63870ad9dc593fd0cf2e166e65397
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c3a08f4987fe57a94aaee8f3df6129782fd6448c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62559845"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661763"
 ---
-# <a name="ca1038-enumerators-should-be-strongly-typed"></a>CA1038: Moduły wyliczające powinny być silnie typizowane
+# <a name="ca1038-enumerators-should-be-strongly-typed"></a>CA1038: Wyliczenia powinny być silnie typizowane
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|EnumeratorsShouldBeStronglyTyped|
 |CheckId|CA1038|
-|Kategoria|Microsoft.Design|
+|Kategoria|Microsoft. Design|
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Typ publiczny lub chroniony implementuje <xref:System.Collections.IEnumerator?displayProperty=fullName> , ale nie udostępnia silnie typizowanej wersji <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> właściwości. Wyjątek od tej reguły są typy, które są uzyskiwane z następujących typów:
+ Typ publiczny lub chroniony implementuje <xref:System.Collections.IEnumerator?displayProperty=fullName> ale nie udostępnia jednoznacznie wpisanej wersji właściwości <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName>. Typy, które pochodzą z następujących typów, są wykluczone z tej reguły:
 
 - <xref:System.Collections.CollectionBase?displayProperty=fullName>
 
@@ -42,16 +42,16 @@ ms.locfileid: "62559845"
 - <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>
 
 ## <a name="rule-description"></a>Opis reguły
- Ta reguła wymaga <xref:System.Collections.IEnumerator> implementacji w celu dostarczenia silnie typizowanej wersji <xref:System.Collections.IEnumerator.Current%2A> właściwość tak, aby użytkownicy nie musieli rzutować wartości zwróconej na typ silny, używając funkcje, które są dostarczane przez interfejs. Reguła ta zakłada, że typ, który zawiera <xref:System.Collections.IEnumerator> zawiera kolekcję wystąpień typów mocniejszych niż <xref:System.Object>.
+ Ta reguła wymaga, aby implementacje <xref:System.Collections.IEnumerator> również zapewniały silnie wpisaną wersję właściwości <xref:System.Collections.IEnumerator.Current%2A>, dzięki czemu użytkownicy nie muszą rzutować wartości zwracanej na typ Strong, gdy używają funkcji dostarczonej przez interfejs. Ta reguła zakłada, że typ, który implementuje <xref:System.Collections.IEnumerator> zawiera kolekcję wystąpień typu, który jest silniejszy niż <xref:System.Object>.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, implementują właściwość interfejsu jawnego (Zadeklaruj go jako `IEnumerator.Current`). Dodaj publiczny silnie typizowanej wersji właściwości zadeklarowane jako `Current`, i zwraca obiekt silnie typizowanych.
+ Aby naprawić naruszenie tej reguły, zaimplementuj jawnie Właściwość interfejsu (Zadeklaruj ją jako `IEnumerator.Current`). Dodaj publiczną silnie wpisaną wersję właściwości, zadeklarowaną jako `Current` i zwracają obiekt silnie określonego typu.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Pomijaj ostrzeżeń dla tej reguły, podczas implementowania oparte na obiekt modułu wyliczającego do użytku z kolekcją obiektów, takich jak drzewa binarnego. Typy, które rozszerzają Nowa kolekcja będzie Definiowanie silnie typizowanej modułu wyliczającego i ujawniać silnie typizowane właściwości.
+ Pomiń ostrzeżenie z tej reguły podczas implementowania modułu wyliczającego opartego na obiektach do użycia z kolekcją opartą na obiektach, taką jak drzewo binarne. Typy, które zwiększają nową kolekcję, definiują silnie jednoznacznie zdefiniowany moduł wyliczający i uwidaczniają właściwość o jednoznacznie określonym typie.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład przedstawia właściwy sposób implementacji silnie typizowaną <xref:System.Collections.IEnumerator> typu.
+ Poniższy przykład ilustruje poprawny sposób implementacji typu <xref:System.Collections.IEnumerator> o jednoznacznie określonym typie.
 
  [!code-csharp[FxCop.Design.IEnumeratorStrongTypes#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.IEnumeratorStrongTypes/cs/FxCop.Design.IEnumeratorStrongTypes.cs#1)]
 

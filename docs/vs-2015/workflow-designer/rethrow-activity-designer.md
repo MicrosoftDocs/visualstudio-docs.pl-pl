@@ -1,5 +1,5 @@
 ---
-title: Rethrow, Projektant działań | Dokumentacja firmy Microsoft
+title: Ponownie zgłoś projektanta działań | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -8,35 +8,33 @@ f1_keywords:
 - System.Activities.Statements.Rethrow.UI
 ms.assetid: 9cfa2eda-395f-4cf3-9154-83fadd4f7452
 caps.latest.revision: 5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8b023a42da1c862927606c4bec0215120a5e5a11
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c65469242a60c64d6f31bfaea4fdbbf2d5251a34
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62937760"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72663358"
 ---
 # <a name="rethrow-activity-designer"></a>Rethrow, projektant działań
-**Zgłoś ponownie** projektanta działań służy do tworzenia i konfigurowania <xref:System.Activities.Statements.Rethrow> działania.  
-  
-## <a name="the-rethrow-activity"></a>Działanie ponownego zgłoszenia  
- <xref:System.Activities.Statements.Rethrow> Działanie zgłasza wcześniej zgłoszony wyjątek. To działanie można używać tylko w <xref:System.Activities.Statements.Catch> obsługi w <xref:System.Activities.Statements.TryCatch> działania.  
-  
-### <a name="using-the-rethrow-activity-designer"></a>Za pomocą projektanta działań Zgłoś ponownie  
- **Zgłoś ponownie** projektanta działań można znaleźć w **obsługę błędów** kategorii **przybornika**, które jest dostępne po kliknięciu **przybornika**karty w lewej części [!INCLUDE[wfd2](../includes/wfd2-md.md)] (można także wybrać **narzędzi** z **widoku** menu lub klawiszy CTRL + ALT + X.)  
-  
- **Zgłoś ponownie** projektanta działań mogą być przeciągnięte z **przybornika** i porzuconych do [!INCLUDE[wfd2](../includes/wfd2-md.md)] powierzchni wszędzie tam, gdzie działań są zwyczajowo umieszczane, takie jak wewnątrz <xref:System.Activities.Statements.Sequence>. Spowoduje to utworzenie <xref:System.Activities.Statements.Rethrow> działanie przy użyciu domyślnego **DisplayName** z Throw. <xref:System.Activities.Activity.DisplayName%2A> Wartość może być edytowana w nagłówku **Zgłoś ponownie** projektanta działań lub **DisplayName** pola siatki właściwości.  
-  
-### <a name="the-rethrow-properties"></a>Zgłoś ponownie właściwości  
- W poniższej tabeli przedstawiono <xref:System.Activities.Statements.Rethrow> właściwości i w tym artykule opisano, jak są używane w projektancie.  
-  
-|Nazwa właściwości|Wymagane|Użycie|  
-|-------------------|--------------|-----------|  
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Określa opcjonalny przyjazna nazwa <xref:System.Activities.Statements.Rethrow> działania. Wartość domyślna to Zgłoś ponownie.|  
-  
-## <a name="see-also"></a>Zobacz też  
- [Kolekcja](../workflow-designer/collection-activity-designers.md)   
- [throw](../workflow-designer/throw-activity-designer.md)   
- [TryCatch](../workflow-designer/trycatch-activity-designer.md)
+W celu utworzenia i skonfigurowania działania <xref:System.Activities.Statements.Rethrow> jest używany Projektant działań **Rethrow** .
+
+## <a name="the-rethrow-activity"></a>Działanie Rethrow
+ Działanie <xref:System.Activities.Statements.Rethrow> zgłasza poprzednio zgłoszony wyjątek. To działanie może być używane tylko w obsłudze <xref:System.Activities.Statements.Catch> w działaniu <xref:System.Activities.Statements.TryCatch>.
+
+### <a name="using-the-rethrow-activity-designer"></a>Korzystanie z programu Rethrow Designer
+ Projektanta działań ponownego **wygenerowania** można znaleźć w kategorii **Obsługa błędów** w **przyborniku**, do którego uzyskuje się dostęp, klikając kartę **Przybornik** po lewej stronie [!INCLUDE[wfd2](../includes/wfd2-md.md)] (Alternatywnie, wybierając pozycję **pasek narzędzi** z  **Menu Widok** lub CTRL + ALT + X.)
+
+ Projektant **działań ponownego** zgłoszenia można przeciągnąć z **przybornika** i porzucić na [!INCLUDE[wfd2](../includes/wfd2-md.md)] powierzchnię, wszędzie tam, gdzie działania są zwykle umieszczane, na przykład wewnątrz <xref:System.Activities.Statements.Sequence>. Spowoduje to utworzenie działania <xref:System.Activities.Statements.Rethrow> z domyślną **nazwą wyświetlaną** throw. Wartość <xref:System.Activities.Activity.DisplayName%2A> można edytować w nagłówku projektanta działań ponownego **wygenerowania** lub w polu **DisplayName** siatki właściwości.
+
+### <a name="the-rethrow-properties"></a>Właściwości ponownego wygenerowania
+ W poniższej tabeli przedstawiono właściwości <xref:System.Activities.Statements.Rethrow> i opisano sposób ich używania w projektancie.
+
+|Nazwa właściwości|Wymagane|Użycie|
+|-------------------|--------------|-----------|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Określa opcjonalną przyjazną nazwę działania <xref:System.Activities.Statements.Rethrow>. Wartość domyślna to Rethrow.|
+
+## <a name="see-also"></a>Zobacz też
+ [TryCatch](../workflow-designer/trycatch-activity-designer.md) [rzutowania](../workflow-designer/throw-activity-designer.md) [kolekcji](../workflow-designer/collection-activity-designers.md)

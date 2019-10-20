@@ -1,49 +1,49 @@
 ---
-title: 'Instrukcje: Tworzenie biblioteki projektanta działań | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Tworzenie biblioteki projektanta działań | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: 5b62e092-63b3-462d-9d77-fb112482f45d
 caps.latest.revision: 8
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a51b4cdb67590b908bc406b78c04ddf0c5aa3e2f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 63404d3d81c44ac4b8308d949cdb87df419f2e04
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65694556"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662870"
 ---
 # <a name="how-to-create-an-activity-designer-library"></a>Instrukcje: Tworzenie biblioteki projektanta działań
-Niestandardowi Projektanci działań umożliwiają tworzenie interfejsu użytkownika dla standardowego lub niestandardowego działania. Kontrolowania złożoności interfejsu użytkownika i mieć możliwość utworzenia więcej niż jeden projektanta działań dla działania. Ten scenariusz umożliwia tworzenie projektantów, które są dostosowane do wielu odbiorców.  
-  
-### <a name="to-create-an-activity-designer-library"></a>Aby utworzyć biblioteki projektanta działań  
-  
-1. Rozpocznij [!INCLUDE[vs2010](../includes/vs2010-md.md)].  
-  
-2. Na **pliku** menu wskaż **New**, a następnie wybierz pozycję **projektu...** Aby otworzyć **nowy projekt** okno dialogowe.  
-  
-3. W **typów projektów** okienku wybierz **przepływu pracy** albo **Visual C#** lub **języka Visual Basic** grupowania w zależności od preferowanego język.  
-  
-4. W **szablony** okienku wybierz **Biblioteka projektanta działań**.  
-  
-5. W **nazwa** wprowadź opisową nazwę projektu ułatwić identyfikowanie.  
-  
-6. W **lokalizacji** wprowadź katalog, w którym chcesz zapisać projekt, lub kliknij przycisk **Przeglądaj** można przejść do niego.  
-  
-7. W **rozwiązania** polu, wpisz nazwę opisową dla danego rozwiązania, a następnie kliknij przycisk **OK**.  
-  
+Niestandardowe projektanty działań umożliwiają tworzenie interfejsu użytkownika dla działania standardowego lub niestandardowego. Możesz kontrolować złożoność interfejsu użytkownika i mieć możliwość tworzenia więcej niż jednego projektanta działań dla działania. Ten scenariusz umożliwia tworzenie projektantów, które są dostosowane do wielu odbiorców.
+
+### <a name="to-create-an-activity-designer-library"></a>Aby utworzyć bibliotekę projektanta działań
+
+1. Rozpocznij [!INCLUDE[vs2010](../includes/vs2010-md.md)].
+
+2. W menu **plik** , wskaż **Nowy**, a następnie wybierz **projekt...** Aby otworzyć okno dialogowe **Nowy projekt** .
+
+3. W okienku **typy projektów** wybierz pozycję **przepływ pracy** z poziomu grupowania **wizualizacji C#**  lub **Visual Basic** w zależności od preferowanego języka.
+
+4. W okienku **Szablony** wybierz pozycję **Biblioteka projektanta działań**.
+
+5. W polu **Nazwa** Wprowadź opisową nazwę projektu, aby ułatwić jego identyfikację.
+
+6. W polu **Lokalizacja** wprowadź katalog, w którym chcesz zapisać projekt, lub kliknij przycisk **Przeglądaj** , aby przejść do niego.
+
+7. W polu **rozwiązanie** wpisz nazwę opisową rozwiązania, a następnie kliknij przycisk **OK**.
+
     > [!NOTE]
-    > Jeśli chcesz dodać aplikację konsoli przepływu pracy do istniejącego rozwiązania, otwórz rozwiązanie w [!INCLUDE[vs2010](../includes/vs2010-md.md)], kliknij prawym przyciskiem myszy rozwiązanie w **Eksploratora rozwiązań**i wybierz **Dodaj**, a następnie **Nowy projekt...** Aby otworzyć **nowy projekt** okno dialogowe. Należy postępować zgodnie z powyższym opisem w tej procedurze.  
-  
-8. Szablon projektu tworzy definicji działania projektanta XAML i kodem pliku implementacji w kodzie źródłowym. [!INCLUDE[wfd1](../includes/wfd1-md.md)] Otwiera i wyświetla kanwy dla projektanta działań.  
-  
-9. Przeciągnij [!INCLUDE[avalon1](../includes/avalon1-md.md)] kontrolki z **przybornika** do powierzchni projektu, który z nich korzystać w swojej niestandardowego projektanta działań.  Na przykład sposób implementacji niestandardowego projektanta działań zobacz [jak: Tworzenie niestandardowego projektanta działań](https://msdn.microsoft.com/library/2f3aade6-facc-44ef-9657-a407ef8b9b31).  
-  
+    > Jeśli chcesz dodać aplikację konsoli przepływu pracy do istniejącego rozwiązania, Otwórz to rozwiązanie w [!INCLUDE[vs2010](../includes/vs2010-md.md)], kliknij prawym przyciskiem myszy rozwiązanie w **Eksplorator rozwiązań**, a następnie wybierz polecenie **Dodaj**, a następnie **Nowy projekt...** Aby otworzyć okno dialogowe **Nowy projekt** . Postępuj zgodnie z powyższym opisem w tej procedurze.
+
+8. Szablon projektu tworzy definicję projektanta działań w języku XAML i plik implementacji związany z kodem w kodzie źródłowym. Zostanie otwarty [!INCLUDE[wfd1](../includes/wfd1-md.md)] i zostanie wyświetlona Kanwa projektanta działań.
+
+9. Przeciągnij kontrolki [!INCLUDE[avalon1](../includes/avalon1-md.md)] z **przybornika** na powierzchnię projektu, aby użyć ich w niestandardowym projektancie działań.  Aby zapoznać się z przykładem sposobu implementacji niestandardowego projektanta działań, zobacz [How to: Create an Custom Activity Designer](https://msdn.microsoft.com/library/2f3aade6-facc-44ef-9657-a407ef8b9b31).
+
     > [!WARNING]
-    > Niestandardowi Projektanci działań może służyć do niestandardowych działań, jak również jak w przypadku domyślnej [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)]działań.  
-  
-## <a name="see-also"></a>Zobacz też  
+    > Niestandardowe Projektanci działań mogą służyć do działań niestandardowych, a także dla domyślnych [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)]activities.
+
+## <a name="see-also"></a>Zobacz też
  [Tworzenie projektu przepływu pracy](../workflow-designer/creating-a-workflow-project.md)

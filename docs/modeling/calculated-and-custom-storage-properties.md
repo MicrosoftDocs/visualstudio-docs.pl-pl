@@ -4,59 +4,59 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain properties
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ca2401333f7678b821b5c6fa68f7953a91996d0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: bc7d4ef8e281cd56b7a585d516cd5d48028a00f8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440018"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653707"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Obliczone i niestandardowe właściwości przechowywania
-Wszystkie właściwości domeny w języku specyficznym dla domeny (DSL) mogą być wyświetlane użytkownikowi na diagramie, a w Eksploratorze języka i są dostępne dla kodu programu. Jednak właściwości różnią się w taki sposób, że ich wartości są przechowywane.
+Wszystkie właściwości domeny w języku specyficznym dla domeny (DSL) mogą być wyświetlane użytkownikowi na diagramie i w Eksploratorze języka, a dostęp do niego można uzyskać za pomocą kodu programu. Jednak właściwości różnią się w sposób, w jaki są przechowywane ich wartości.
 
 ## <a name="kinds-of-domain-properties"></a>Rodzaje właściwości domeny
- W definicji DSL można ustawić **rodzaj** własności domeny, zgodnie z opisem w poniższej tabeli:
+ W definicji DSL można ustawić **rodzaj** właściwości domeny, jak opisano w poniższej tabeli:
 
 |Rodzaj właściwości domeny|Opis|
 |-|-|
-|**Standardowa** (opcja domyślna)|Właściwość domeny, który został zapisany w *przechowywania* i serializacji do pliku.|
-|**Obliczany**|Właściwość domeny tylko do odczytu, które nie są zapisywane w magazynie, ale jest obliczana na podstawie innych wartości.<br /><br /> Na przykład `Person.Age` można obliczonym na podstawie `Person.BirthDate`.<br /><br /> Należy podać kod, który wykonuje obliczenia. Zazwyczaj należy obliczyć wartość na podstawie innych właściwości domeny. Jednak można również użyć zasobów zewnętrznych.|
-|**Magazynu niestandardowego**|Właściwość domeny, które nie są zapisywane bezpośrednio w magazynie, ale może być zarówno get i set.<br /><br /> Należy podać metody get i set wartość.<br /><br /> Na przykład `Person.FullAddress` mogą być przechowywane w `Person.StreetAddress`, `Person.City`, i `Person.PostalCode`.<br /><br /> Można również dostęp do zasobów zewnętrznych, na przykład aby pobieranie i ustawianie wartości z bazy danych.<br /><br /> Twój kod nie może ustawić wartości w magazynie podczas `Store.InUndoRedoOrRollback` ma wartość true. Zobacz [transakcji i niestandardowych metod ustawiających](#setters).|
+|**Standardowa** (domyślnie)|Właściwość domeny, która jest zapisywana w *magazynie* i serializowana do pliku.|
+|**Oblicza**|Właściwość domeny tylko do odczytu, która nie jest zapisywana w sklepie, ale jest obliczana na podstawie innych wartości.<br /><br /> Na przykład `Person.Age` można obliczyć z `Person.BirthDate`.<br /><br /> Musisz podać kod, który wykonuje obliczenia. Zwykle oblicza się wartość z innych właściwości domeny. Można jednak również używać zasobów zewnętrznych.|
+|**Magazyn niestandardowy**|Właściwość domeny, która nie jest zapisywana bezpośrednio w magazynie, ale może być zarówno Get, jak i Set.<br /><br /> Musisz podać metody pobierające i ustawiające wartość.<br /><br /> Na przykład `Person.FullAddress` mogą być przechowywane w `Person.StreetAddress`, `Person.City` i `Person.PostalCode`.<br /><br /> Możesz również uzyskać dostęp do zasobów zewnętrznych, na przykład w celu pobrania i ustawienia wartości z bazy danych.<br /><br /> Kod nie powinien określać wartości w magazynie, gdy `Store.InUndoRedoOrRollback` ma wartość true. Zobacz [transakcje i niestandardowe metody ustawiające](#setters).|
 
-## <a name="providing-the-code-for-a-calculated-or-custom-storage-property"></a>Dostarczanie kodu dla właściwości magazynu obliczeniowe lub niestandardowe
- Jeśli ustawisz rodzaj właściwości domeny obliczeniowe lub magazyn niestandardowy, należy podać metody dostępu. Podczas kompilowania rozwiązania raportu o błędach będą Powiedz, co jest wymagane.
+## <a name="providing-the-code-for-a-calculated-or-custom-storage-property"></a>Dostarczanie kodu dla właściwości magazynu obliczeniowego lub niestandardowego
+ W przypadku ustawienia rodzaju właściwości domeny na obliczeniową lub niestandardową magazyn należy zapewnić metody dostępu. Podczas kompilowania rozwiązania raport o błędach informuje o tym, co jest wymagane.
 
-#### <a name="to-define-a-calculated-or-custom-storage-property"></a>Aby zdefiniować obliczeniowe lub właściwość magazynu niestandardowego
+#### <a name="to-define-a-calculated-or-custom-storage-property"></a>Aby zdefiniować obliczoną lub niestandardową Właściwość magazynu
 
-1. W DslDefinition.dsl, wybierz właściwość domeny na diagramie lub w **Eksplorator DSL**.
+1. W DslDefinition. DSL wybierz właściwość domeny na diagramie lub w **Eksploratorze DSL**.
 
-2. W **właściwości** oknie **rodzaj** pole **obliczona** lub **magazynu niestandardowego**.
+2. W oknie **Właściwości** ustaw wartość pola **rodzaj** na **obliczeniowy** lub **niestandardowy magazyn**.
 
-     Upewnij się, czy też ustawienie jego **typu** odpowiednią.
+     Upewnij się, że ustawiono również jego **Typ** w żądany sposób.
 
-3. Kliknij przycisk **Przekształć wszystkie szablony** na pasku narzędzi **Eksploratora rozwiązań**.
+3. Kliknij pozycję **Przekształć wszystkie szablony** na pasku narzędzi **Eksplorator rozwiązań**.
 
-4. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
+4. W menu **kompilacja** kliknij pozycję **Kompiluj rozwiązanie**.
 
-     Zostanie zgłoszony następujący komunikat o błędzie: "*YourClass* nie zawiera definicji Get*YourProperty*."
+     Zostanie wyświetlony następujący komunikat o błędzie: "*YourClass* nie zawiera definicji dla get*YourProperty*".
 
 5. Kliknij dwukrotnie komunikat o błędzie.
 
-     Zostanie otwarty Dsl\GeneratedCode\DomainClasses.CS lub DomainRelationships.cs. Powyżej wywołanie metody wyróżnione komentarz wyświetli monit o podanie implementację Get*YourProperty*().
+     Zostanie otwarty Dsl\GeneratedCode\DomainClasses.cs lub DomainRelationships.cs. Nad wyróżnionym wywołaniem metody komentarz jest monitowany o podanie implementacji dla get*YourProperty*().
 
     > [!NOTE]
-    > Ten plik jest generowany na podstawie DslDefinition.dsl. Jeśli możesz edytować ten plik, zmiany zostaną utracone przy następnym kliknięciu **Przekształć wszystkie szablony**. Zamiast tego dodać wymaganej metody w oddzielnym pliku.
+    > Ten plik jest generowany z DslDefinition. DSL. Jeśli edytujesz ten plik, zmiany zostaną utracone przy następnym kliknięciu pozycji **Przekształć wszystkie szablony**. Zamiast tego należy dodać wymaganą metodę w oddzielnym pliku.
 
-6. Utwórz lub Otwórz plik klasy w oddzielnym folderze, na przykład atrybut CustomCode\\*YourDomainClass*. cs.
+6. Utwórz lub Otwórz plik klasy w oddzielnym folderze, na przykład atrybut CustomCode \\*YourDomainClass*. cs.
 
-     Upewnij się, że przestrzeń nazw jest taki sam jak w wygenerowanym kodzie.
+     Upewnij się, że przestrzeń nazw jest taka sama jak w wygenerowanym kodzie.
 
-7. W pliku klasy Napisz częściową implementację klasy domeny. W tej klasy, napisz definicji w celu znalezienia brakujących `Get` metodę, która przypomina poniższy przykład:
+7. W pliku klasy Napisz częściową implementację klasy domeny. W klasie Napisz definicję dla brakującej metody `Get` podobnej do poniższego przykładu:
 
     ```
     namespace Company.FamilyTree
@@ -66,7 +66,7 @@ Wszystkie właściwości domeny w języku specyficznym dla domeny (DSL) mogą by
     }  }
     ```
 
-8. Jeśli ustawisz **rodzaj** do **magazynu niestandardowego**, również będzie musiał podać `Set` metody. Na przykład:
+8. W przypadku ustawienia **rodzaju** na **Magazyn niestandardowy**należy również podać metodę `Set`. Na przykład:
 
     ```
     void SetAgeValue(int value)
@@ -75,20 +75,20 @@ Wszystkie właściwości domeny w języku specyficznym dla domeny (DSL) mogą by
             System.DateTime.Today.Year - value; }
     ```
 
-     Twój kod nie może ustawić wartości w magazynie podczas `Store.InUndoRedoOrRollback` ma wartość true. Zobacz [transakcji i niestandardowych metod ustawiających](#setters).
+     Kod nie powinien określać wartości w magazynie, gdy `Store.InUndoRedoOrRollback` ma wartość true. Zobacz [transakcje i niestandardowe metody ustawiające](#setters).
 
-9. Skompiluj i uruchom rozwiązanie.
+9. Kompiluj i uruchamiaj rozwiązanie.
 
-10. Testowanie właściwości. Upewnij się, że próbujesz **Cofnij** i **wykonaj ponownie**.
+10. Przetestuj właściwość. Upewnij się, że próbujesz **cofnąć** i **ponownie**wykonać operację.
 
-## <a name="setters"></a> Transakcje i niestandardowych metod ustawiających.
- W metodzie zestaw właściwości niestandardowych magazynowania nie masz do otwarcia transakcji, ponieważ metoda jest zazwyczaj wywoływana w aktywnej transakcji.
+## <a name="setters"></a>Transakcje i niestandardowe metody ustawiające
+ W metodzie Set niestandardowej właściwości magazynu nie trzeba otwierać transakcji, ponieważ metoda jest zwykle wywoływana wewnątrz aktywnej transakcji.
 
- Jednak metody Set może być również wywoływane, jeśli użytkownik wywoła cofania i ponawiania lub jeśli transakcja jest wycofywana. Gdy <xref:Microsoft.VisualStudio.Modeling.Store.InUndoRedoOrRollback%2A> ma wartość true, metoda zestaw powinny zachowywać się w następujący sposób:
+ Jednak Metoda set może być również wywoływana, jeśli użytkownik wywołuje polecenie Cofnij lub Ponów, lub jeśli transakcja jest wycofywana. Gdy <xref:Microsoft.VisualStudio.Modeling.Store.InUndoRedoOrRollback%2A> ma wartość true, Metoda Set powinna zachowywać się w następujący sposób:
 
-- Nie należy wprowadzać zmian w magazynie, takich jak przypisywanie wartości do innych właściwości domeny. Menedżera cofania ustawi ich wartości.
+- Nie należy wprowadzać zmian w magazynie, na przykład przypisywania wartości do innych właściwości domeny. Menedżer cofania ustawi wartości.
 
-- Jednakże zaktualizuj dowolnych zasobów zewnętrznych, takich jak bazy danych lub zawartości pliku lub obiektów poza magazynu. Będzie to upewnij się, że są one przechowywane w synchronism z wartościami w magazynie.
+- Należy jednak zaktualizować wszystkie zasoby zewnętrzne, takie jak baza danych lub zawartość pliku, lub obiekty spoza magazynu. Dzięki temu dane będą przechowywane w synchronism z wartościami w sklepie.
 
   Na przykład:
 

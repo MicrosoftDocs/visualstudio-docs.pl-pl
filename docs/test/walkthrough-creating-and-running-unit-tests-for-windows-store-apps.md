@@ -1,5 +1,5 @@
 ---
-title: Tworzenie i Uruchamianie testów jednostkowych dla aplikacji platformy uniwersalnej systemu Windows
+title: Tworzenie i uruchamianie testów jednostkowych dla aplikacji platformy UWP
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,28 +7,28 @@ helpviewer_keywords:
 - unit tests
 - unit tests, UWP apps
 - unit tests, running
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - uwp
-author: gewarren
-ms.openlocfilehash: a123657e148e4c19c0fab1c1a9bf567ad2ea6fa8
-ms.sourcegitcommit: 9a3972eb85de5443ac2bc03964c5a251c39b2921
+author: jillre
+ms.openlocfilehash: aa3b4b06fa1a1a1dfe21ec690e158bb955f416c0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71301713"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659672"
 ---
-# <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>Przewodnik: Tworzenie i uruchamianie testów jednostkowych dla aplikacji platformy UWP
+# <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>Przewodnik: tworzenie i uruchamianie testów jednostkowych dla aplikacji platformy UWP
 
-Program Visual Studio obejmuje obsługę aplikacji uniwersalnych platformy Windows (UWP) Testy jednostkowe. Program Visual Studio zawiera szablony projektów testów jednostkowych dla C#, Visual Basic C++i.
+Program Visual Studio obejmuje obsługę aplikacji do testowania jednostek platforma uniwersalna systemu Windows (platformy UWP). Program Visual Studio zawiera szablony projektów testów jednostkowych dla C#, Visual Basic C++i.
 
 > [!TIP]
-> Aby uzyskać więcej informacji na temat tworzenia aplikacji platformy uniwersalnej systemu Windows, zobacz [Rozpoczynanie pracy z aplikacjami platformy uniwersalnej systemu Windows](/windows/uwp/get-started/).
+> Aby uzyskać więcej informacji na temat opracowywania aplikacji platformy UWP, zobacz [wprowadzenie do aplikacji platformy UWP](/windows/uwp/get-started/).
 
 W poniższych procedurach opisano kroki tworzenia, uruchamiania i debugowania testów jednostkowych dla aplikacji platformy UWP.
 
-## <a name="create-a-unit-test-project-for-a-uwp-app"></a>Tworzenie projektu testu jednostkowego dla aplikacji platformy uniwersalnej systemu Windows
+## <a name="create-a-unit-test-project-for-a-uwp-app"></a>Tworzenie projektu testu jednostkowego dla aplikacji platformy UWP
 
 ::: moniker range=">=vs-2019"
 
@@ -54,42 +54,42 @@ Po wykonaniu tych kroków projekt testu jednostkowego zostanie utworzony i wyśw
 
 ::: moniker range="vs-2017"
 
-1. Z **pliku** menu, wybierz **nowy projekt**.
+1. Z menu **plik** wybierz pozycję **Nowy projekt**.
 
-   **Nowy projekt** Wyświetla okno dialogowe.
+   Zostanie wyświetlone okno dialogowe **Nowy projekt** .
 
-2. W obszarze Szablony wybierz język programowania, który chcesz utworzyć testy jednostkowe w, a następnie wybierz skojarzone jednostki Windows Universal testowanie biblioteki. Na przykład wybrać **Visual C#** , następnie wybierz **Windows Universal**, a następnie wybierz **Biblioteka testów jednostkowych (Windows Universal)** .
+2. W obszarze szablony wybierz język programowania, w którym chcesz utworzyć testy jednostkowe, a następnie wybierz skojarzoną bibliotekę testów jednostki uniwersalnej systemu Windows. Na przykład wybierz pozycję **Wizualizacja C#**  , a następnie wybierz pozycję **uniwersalność systemu Windows**, a następnie wybierz pozycję **Biblioteka testów jednostkowych (platforma uniwersalna systemu Windows)** .
 
-3. (Opcjonalnie) W **nazwa** polu tekstowym wprowadź nazwę, którego chcesz użyć dla projektu.
+3. Obowiązkowe W polu tekstowym **Nazwa** wprowadź nazwę, która ma być używana dla projektu.
 
-4. (Opcjonalnie) Modyfikuj ścieżkę, w której chcesz utworzyć projekt, wprowadzając ją w **lokalizacji** pole tekstowe, lub wybierając **Przeglądaj** przycisku.
+4. Obowiązkowe Zmodyfikuj ścieżkę, w której chcesz utworzyć projekt, wprowadzając ją w polu tekstowym **Lokalizacja** lub wybierając przycisk **Przeglądaj** .
 
-5. (Opcjonalnie) W **rozwiązania** polu tekstowym, wprowadź nazwę, którego chcesz użyć dla rozwiązania.
+5. Obowiązkowe W polu tekstowym Nazwa **rozwiązania** wprowadź tę nazwę, która ma być używana dla Twojego rozwiązania.
 
-6. Pozostaw **Utwórz katalog rozwiązania** opcja wybrana i wybierz **OK** przycisku.
+6. Pozostaw wybraną opcję **Utwórz katalog dla rozwiązania** , a następnie wybierz przycisk **OK** .
 
-   ![Biblioteka testów jednostkowych dostosowanych do potrzeb](../test/media/unit_test_win8_1.png)
+   ![Dostosowana Biblioteka testów jednostkowych](../test/media/unit_test_win8_1.png)
 
-   **Eksplorator rozwiązań** jest wypełniana przy użyciu projektu testu jednostkowego platformy uniwersalnej systemu Windows, a Edytor kodu wyświetla domyślny test jednostki pod tytułem Testjednostki1.
+   **Eksplorator rozwiązań** jest wypełniany projektem testów jednostkowych platformy UWP, a w edytorze kodu jest wyświetlany domyślny test jednostkowy o nazwie UnitTest1.
 
-   ![Nowy projekt testów jednostkowych dostosowanych do potrzeb](../test/media/unit_test_win8_unittestexplorer_newprojectcreated.png)
+   ![Nowy dostosowany projekt testu jednostkowego](../test/media/unit_test_win8_unittestexplorer_newprojectcreated.png)
 
 ::: moniker-end
 
-## <a name="edit-the-unit-test-projects-uwp-application-manifest-file"></a>Edytuj plik manifestu aplikacji platformy uniwersalnej systemu Windows projektu testu jednostkowego
+## <a name="edit-the-unit-test-projects-uwp-application-manifest-file"></a>Edytuj plik manifestu aplikacji platformy UWP projektu testów jednostkowych
 
-1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy *Package.appxmanifest* pliku, a następnie wybierz **Otwórz**.
+1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy plik *Package. appxmanifest* i wybierz polecenie **Otwórz**.
 
-2. W **Manifest Designer**, wybierz **możliwości** kartę.
+2. W **Projektancie manifestów**wybierz kartę **możliwości** .
 
-3. Na liście w obszarze **możliwości**, wybierz możliwości potrzebne do testu jednostkowego i kod jej ma mieć test. Na przykład wybierz **Internet** pole wyboru, jeśli testy jednostkowe i kod jest testowanie muszą mieć możliwość dostępu do Internetu.
+3. Na liście w obszarze **możliwości**wybierz funkcje, które są potrzebne do testu jednostkowego, oraz kod, który ma być testowany. Na przykład zaznacz pole wyboru **Internet** , jeśli wymagane są testy jednostkowe i kod, który jest testowany, musi mieć możliwość uzyskania dostępu do Internetu.
 
    > [!NOTE]
-   > Możliwości, którą wybierzesz powinien zawierać tylko funkcje, które są niezbędne dla testu jednostkowego działo poprawnie.
+   > Wybrane możliwości powinny zawierać tylko funkcje, które są niezbędne do poprawnego działania testu jednostkowego.
 
-   ![Manifest testów jednostkowych](../test/media/unit_test_win8_.png)
+   ![Manifest testu jednostkowego](../test/media/unit_test_win8_.png)
 
-## <a name="code-the-unit-test-for-a-uwp-app"></a>Kodowanie testu jednostkowego dla aplikacji platformy uniwersalnej systemu Windows
+## <a name="code-the-unit-test-for-a-uwp-app"></a>Kod testu jednostkowego dla aplikacji platformy UWP
 
 W edytorze kodu Edytuj test jednostkowy i Dodaj potwierdzenia i logikę wymagane dla testu.
 
@@ -97,33 +97,33 @@ W edytorze kodu Edytuj test jednostkowy i Dodaj potwierdzenia i logikę wymagane
 
 Aby skompilować rozwiązanie i uruchomić test jednostkowy przy użyciu Eksploratora testów:
 
-1. Na **testu** menu, wybierz **Windows**, a następnie wybierz **Eksplorator testów**.
+1. W menu **test** wybierz pozycję **Windows**, a następnie wybierz **Eksplorator testów**.
 
-2. Z **kompilacji** menu, wybierz **Kompiluj rozwiązanie**.
+2. Z menu **kompilacja** wybierz polecenie **Kompiluj rozwiązanie**.
 
    Test jednostkowy jest teraz pokazywany w Eksploratorze testów.
 
    > [!NOTE]
-   > Należy utworzyć rozwiązanie, które można zaktualizować listy testów jednostkowych w Eksploratorze testów.
+   > Należy skompilować rozwiązanie w celu zaktualizowania listy testów jednostkowych w Eksploratorze testów.
 
-3. W **Eksploratora testów**, wybierz utworzony test jednostkowy.
+3. W **Eksploratorze testów**wybierz utworzony test jednostkowy.
 
-4. Wybierz **uruchomić wszystkie**.
+4. Wybierz pozycję **Uruchom wszystkie**.
 
-   ![Eksplorator testów jednostkowych &#45; uruchomić test jednostkowy](../test/media/unit_test_win8_unittestexplorer_contextmenurun.png)
+   ![Eksplorator &#45; testów jednostkowych Uruchom test jednostkowy](../test/media/unit_test_win8_unittestexplorer_contextmenurun.png)
 
    > [!TIP]
    > Można wybrać co najmniej jeden test jednostkowy wymieniony w Eksploratorze testów, a następnie kliknąć prawym przyciskiem myszy i wybrać polecenie **Uruchom wybrane testy**.
    >
-   > Ponadto istnieje możliwość **Debuguj wybrane testy**, **Otwórz Test**i użyj **właściwości** opcji.
+   > Ponadto możesz wybrać **debugowanie wybranych testów**, **otworzyć test**i użyć opcji **Właściwości** .
    >
    > ![Menu kontekstowe &#45; testu jednostkowego w Eksploratorze testów jednostkowych](../test/media/unit_test_win8_unittestexplorer_contextmenu.png)
 
-   Przebiegi testów jednostkowych. Po zakończeniu Eksplorator testów wyświetla stan testu i czas, który upłynął, i udostępnia link do źródła.
+   Uruchomienia testów jednostkowych. Po zakończeniu Eksplorator testów wyświetla stan testu i czas, który upłynął, i udostępnia link do źródła.
 
-   ![Eksplorator testów jednostkowych &#45; testów zakończonych](../test/media/unit_test_win8_unittestexplorer_done.png)
+   ![Test Eksploratora &#45; testów jednostkowych zakończony](../test/media/unit_test_win8_unittestexplorer_done.png)
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Testowanie aplikacji platformy uniwersalnej systemu Windows z programem Visual Studio](../test/unit-test-your-code.md)
-- [Tworzenie i testowanie aplikacji platformy uniwersalnej systemu Windows](/azure/devops/pipelines/apps/windows/universal?tabs=vsts)
+- [Testowanie aplikacji platformy UWP przy użyciu programu Visual Studio](../test/unit-test-your-code.md)
+- [Kompilowanie i testowanie aplikacji platformy UWP](/azure/devops/pipelines/apps/windows/universal?tabs=vsts)

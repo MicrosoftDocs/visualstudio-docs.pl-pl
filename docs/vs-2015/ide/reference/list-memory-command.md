@@ -1,5 +1,5 @@
 ---
-title: Lista pamięci — polecenie | Dokumentacja firmy Microsoft
+title: List Memory — polecenie | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -12,81 +12,71 @@ helpviewer_keywords:
 - list memory command
 ms.assetid: a84de361-a6a6-4f6d-96aa-a0d4a424371e
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 884dda624d5405ec017b544afd223be0bebc97e9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2630402e03d1256f63e542818a9066745206d2c5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68199158"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672747"
 ---
 # <a name="list-memory-command"></a>Lista pamięci — Polecenie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Wyświetla zawartość określonego zakresu pamięci.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```  
-Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]  
-[/Hex|Signed|Unsigned] [expression]  
-```  
-  
-## <a name="arguments"></a>Argumenty  
- `expression`  
- Opcjonalna. Adres pamięci, od którego należy rozpocząć wyświetlanie pamięci.  
-  
-## <a name="switches"></a>Przełączniki  
- /ANSI&#124;Unicode  
- Opcjonalna. Wyświetl pamięć jako znaki odpowiadający bajtów pamięci, ANSI lub Unicode.  
-  
- / Liczba:`number`  
- Opcjonalny. Określa liczbę bajtów pamięci, aby wyświetlić, zaczynając od `expression`.  
-  
- / Format:`formattype`  
- Opcjonalny. Formatowanie typ do wyświetlania informacji o pamięci w **pamięci** okna; może być OneByte TwoBytes, FourBytes, EightBytes, Float (32-bitowa) lub dwukrotnie (64-bitowe). Jeśli OneByte `/Unicode` jest niedostępny.  
-  
- /Hex&#124;Signed&#124;Unsigned  
- Opcjonalna. Określa format wyświetlania liczb: jak podpisem, bez znaku lub szesnastkową.  
-  
-## <a name="remarks"></a>Uwagi  
- Zamiast pisania się kompletna **Debug.listmemory —** polecenia wszystkich przełączników, można wywołać polecenia przy użyciu wstępnie zdefiniowanych aliasów z przełącznikami, niektórych ustawień do określonej wartości. Na przykład zamiast wprowadzania:  
-  
-```  
->Debug.ListMemory /Format:float /Count:30 /Unicode  
-```  
-  
- można napisać:  
-  
-```  
->df /Count:30 /Unicode  
-```  
-  
- W tym miejscu znajduje się lista dostępnych aliasów dla **Debug.listmemory —** polecenia:  
-  
-|Alias|Polecenia i przełączniki|  
-|-----------|--------------------------|  
-|**d**|Debug.listmemory —|  
-|**da**|Debug.listmemory — /Ansi|  
-|**db**|Debug.listmemory — /Format:OneByte|  
-|**Kontroler domeny**|Debug.listmemory — /Format:FourBytes /Ansi|  
-|**dd**|Debug.listmemory — /Format:FourBytes|  
-|**DF**|Debug.listmemory — /Format:Float|  
-|**dq**|Debug.listmemory — /Format:EightBytes|  
-|**du**|Debug.listmemory — /Unicode|  
-  
-## <a name="example"></a>Przykład  
-  
-```  
->Debug.ListMemory /Format:float /Count:30 /Unicode  
-```  
-  
-## <a name="see-also"></a>Zobacz też  
- [Lista stosu wywołań — polecenie](../../ide/reference/list-call-stack-command.md)   
- [Lista wątków — polecenie](../../ide/reference/list-threads-command.md)   
- [Visual Studio Commands](../../ide/reference/visual-studio-commands.md)   
- [Okno polecenia](../../ide/reference/command-window.md)   
- [Znajdź/Command — pole](../../ide/find-command-box.md)   
- [Visual Studio — aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)
+Wyświetla zawartość określonego zakresu pamięci.
+
+## <a name="syntax"></a>Składnia
+
+```
+Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
+[/Hex|Signed|Unsigned] [expression]
+```
+
+## <a name="arguments"></a>Argumenty
+ `expression` opcjonalny. Adres pamięci, z którego ma zostać rozpoczęte wyświetlanie pamięci.
+
+## <a name="switches"></a>Przełączniki
+ /ANSI&#124;Unicode — opcjonalny. Wyświetl pamięć jako znaki odpowiadające bajtom pamięci, ANSI lub Unicode.
+
+ /Count: `number` opcjonalny. Określa liczbę bajtów pamięci do wyświetlenia, zaczynając od `expression`.
+
+ @No__t_0 opcjonalny. Typ formatu do wyświetlania informacji o pamięci w oknie **pamięci** ; może być OneByte, TwoBytes, FourBytes, EightBytes, float (32-bitowy) lub Double (64-bitowy). Jeśli OneByte jest używany, `/Unicode` jest niedostępny.
+
+ /HEX&#124;podpisane&#124;nieoznaczone jako opcjonalne. Określa format wyświetlania liczb: jako podpisane, niepodpisane lub szesnastkowe.
+
+## <a name="remarks"></a>Uwagi
+ Zamiast zapisywać kompletne polecenie **Debug. ListMemory —** ze wszystkimi przełącznikami, można wywołać polecenie przy użyciu wstępnie zdefiniowanych aliasów z określonymi przełącznikami ustawionymi na określone wartości. Na przykład zamiast wprowadzania:
+
+```
+>Debug.ListMemory /Format:float /Count:30 /Unicode
+```
+
+ można napisać:
+
+```
+>df /Count:30 /Unicode
+```
+
+ Poniżej znajduje się lista dostępnych aliasów dla polecenia **Debug. ListMemory —** :
+
+|Alias|Polecenia i przełączniki|
+|-----------|--------------------------|
+|**Wykres**|Debuguj. ListMemory —|
+|**funkcją**|Debug. ListMemory —/ANSI|
+|**bazą**|Debug. ListMemory —/format: OneByte|
+|**DC**|Debug. ListMemory —/format: FourBytes/ANSI|
+|**Dodaj**|Debug. ListMemory —/format: FourBytes|
+|**DF**|Debug. ListMemory —/format: float|
+|**elemencie DQ**|Debug. ListMemory —/format: EightBytes|
+|**du**|Debug. ListMemory —/Unicode|
+
+## <a name="example"></a>Przykład
+
+```
+>Debug.ListMemory /Format:float /Count:30 /Unicode
+```
+
+## <a name="see-also"></a>Zobacz też
+ [Lista poleceń stosu wywołań](../../ide/reference/list-call-stack-command.md) [](../../ide/reference/list-threads-command.md) poleceń polecenie [Visual Studio](../../ide/reference/visual-studio-commands.md) Commands [okno](../../ide/reference/command-window.md) [Find/Command Box](../../ide/find-command-box.md) [Visual Studio Aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)

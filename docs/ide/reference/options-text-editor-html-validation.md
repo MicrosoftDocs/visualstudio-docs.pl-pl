@@ -1,46 +1,46 @@
 ---
-title: Opcje, Edytor tekstu HTML (formularze sieci Web), sprawdzanie poprawności
+title: Opcje, Edytor tekstu, HTML (Formularze sieci Web), Walidacja
 ms.date: 1/15/2019
 ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.HTML.Validation
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d06674d476dd671f715d2f4c88bdd23852f78687
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6baaf22b0a57cf669fbe0ffc4fe75cf1c72baa3b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778482"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666120"
 ---
-# <a name="options-text-editor-html-web-forms-validation"></a>Opcje, Edytor tekstu HTML (formularze sieci Web), sprawdzanie poprawności
+# <a name="options-text-editor-html-web-forms-validation"></a>Opcje, Edytor tekstu, HTML (Formularze sieci Web), Walidacja
 
-Użyj **weryfikacji** Strona opcji, aby ustawić preferencje dotyczące sposobu edytora HTML sprawdza składnię kod znaczników HTML w dokumencie. Dostępu do tej strony, na pasku menu wybierz **narzędzia** > **opcje**, a następnie rozwiń węzeł **edytora tekstów** > **HTML (formularze sieci Web)**   >  **Weryfikacji**.
+Na stronie opcje **sprawdzania poprawności** można ustawić preferencje, w jaki sposób Edytor HTML sprawdza składnię znaczników HTML w dokumencie. Aby uzyskać dostęp do tej strony, na pasku menu wybierz pozycję **narzędzia**  > **Opcje**, a następnie rozwiń węzeł **Edytor tekstu**  > **HTML (Formularze sieci Web)**  > **Walidacja**.
 
 ## <a name="validation"></a>Walidacja
 
-- **Użyj doctype do wykrywania schematu walidacji**
+- **Użyj DOCTYPE do wykrywania schematu walidacji**
 
-   Schemat określa, które elementy, atrybuty i wielkość liter są prawidłowe w tym schemacie. Określa również znaczniki i atrybuty, które są dostępne w technologii IntelliSense.
+   Schemat określa, które elementy, atrybuty i wielkie litery są prawidłowe w tym schemacie. Określa również Tagi i atrybuty, które są dostępne w technologii IntelliSense.
 
-   Wybierz tę opcję, jeśli chcesz, aby Visual Studio, aby korzystać z zawartości strony **<! DOCTYPE >** deklaracji i **html** element, aby ustalić schemat. Na przykład jeśli wybierzesz tę opcję i na stronie ma deklaracji `<!DOCTYPE html>`, program Visual Studio używa schematu HTML5. Jednak jeśli **html** tag ma **xmlns** atrybutów, takich jak `<html xmlns="http://www.w3.org/1999/xhtml">`, program Visual Studio używa schematu XHTML5.
+   Wybierz tę opcję, jeśli chcesz, aby program Visual Studio korzystał z zawartości < strony **! Deklaracja > DOCTYPE** i element **HTML** , aby określić schemat. Na przykład, jeśli wybierzesz tę opcję, a strona ma `<!DOCTYPE html>` deklaracji, program Visual Studio używa schematu HTML5. Jeśli jednak tag **HTML** ma atrybut **xmlns** , taki jak `<html xmlns="http://www.w3.org/1999/xhtml">`, program Visual Studio używa schematu XHTML5.
 
-- **Docelowy element**
+- **Obiekt docelowy, gdy nie znaleziono elementu DOCTYPE**
 
-   Wybierz schemat na potrzeby sprawdzania poprawności, gdy istnieje nie **<! DOCTYPE >** deklaracji na stronie.
+   Wybierz schemat do sprawdzenia, gdy nie ma **<! Deklaracja > DOCTYPE** na stronie.
 
   - **Pokaż błędy**
 
-     Zaznacz pole wyboru, aby włączyć weryfikację. Jeśli pole wyboru nie jest zaznaczone, edytor nie oznaczyć błędy sprawdzania poprawności.
+     Zaznacz to pole wyboru, aby włączyć walidację. Jeśli pole wyboru nie jest zaznaczone, Edytor nie oznacza błędów walidacji.
 
-     Pozostałe pola wyboru umożliwiają dostosowanie weryfikacji przez określenie poszczególnych typów błędów, które chcesz oznaczyć w edytorze.
+     Pozostałe pola wyboru pozwalają dostosować walidację przez określenie poszczególnych typów błędów, które mają być oznaczone przez Edytor.
 
      > [!NOTE]
-     > Niektóre schematy nie oferuje opcji, aby oznaczyć poszczególne typy błędów. Na przykład, jeśli wybierzesz **XHTML 1.1** jako schemat docelowy wszystkie pola wyboru opcji są wyłączone. W tym wypadku są oznaczane wszystkie typy błędów.
+     > Niektóre schematy nie oferują opcji oznaczania poszczególnych typów błędów. Jeśli na przykład wybierzesz **XHTML 1,1** jako schemat docelowy, wszystkie pola wyboru są wyłączone. W tym przypadku wszystkie typy błędów są oznaczane jako zaznaczone.
 
 ## <a name="see-also"></a>Zobacz także
 

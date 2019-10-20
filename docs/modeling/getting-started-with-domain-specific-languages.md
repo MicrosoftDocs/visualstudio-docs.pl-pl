@@ -2,358 +2,358 @@
 title: Wprowadzenie do języków specyficznych dla domeny
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4242fabe943dd27624e44a9900981343ec180fcd
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: cfdd1e1eb040960032cc04f8c47f3f28e929b678
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820911"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667299"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Wprowadzenie do języków specyficznych dla domeny
 
-W tym temacie opisano podstawowe pojęcia związane z definiowanie i korzystanie z języka specyficznego dla domeny (DSL), utworzone za pomocą zestawu Modeling SDK for Visual Studio.
+W tym temacie objaśniono podstawowe pojęcia związane z definiowaniem i używaniem języka specyficznego dla domeny (DSL) utworzonego przy użyciu zestawu SDK modelowania dla programu Visual Studio.
 
 > [!NOTE]
-> SDK przekształcania szablonu tekstu i programu Visual Studio do modelowania SDK są instalowane automatycznie podczas instalowania określone funkcje programu Visual Studio. Aby uzyskać więcej informacji, zobacz [ten wpis w blogu](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
+> Zestaw SDK transformacji szablonu tekstu i Visual Studio Modeling SDK są instalowane automatycznie podczas instalowania określonych funkcji programu Visual Studio. Aby uzyskać więcej informacji, zobacz [ten wpis w blogu](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
-Jeśli jesteś nowym użytkownikiem językami DSL, firma Microsoft zaleca pracy za pośrednictwem **laboratorium narzędzia DSL**, która znajduje się w tej lokacji: [Wizualizacja i modelowania SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
+Jeśli dopiero zaczynasz korzystać z programu językami DSL, zalecamy przechodzenie przez **laboratorium narzędzi DSL**, które można znaleźć w tej witrynie: [Wizualizacja i Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
 
-## <a name="what-can-you-do-with-a-domain-specific-language"></a>Co można zrobić za pomocą języka dotyczącego określonej domeny?
+## <a name="what-can-you-do-with-a-domain-specific-language"></a>Co można zrobić przy użyciu języka specyficznego dla domeny?
 
-Języka specyficznego dla domeny jest notacji, zwykle graficzny, który jest przeznaczony do użycia do określonego celu. Z drugiej strony języków, takich jak UML są ogólnego przeznaczenia. W języku DSL można zdefiniować typów elementu modelu i ich wzajemne relacje i jak są przedstawione na ekranie.
+Język specyficzny dla domeny jest zapisem, zwykle graficznym, który jest przeznaczony do użycia w konkretnym celu. Z kolei, języki takie jak UML są ogólnego przeznaczenia. W DSL można zdefiniować typy elementów modelu i ich relacji oraz sposób ich wyświetlania na ekranie.
 
-DSL zostały tak zaprojektowane, mogą dystrybuować je jako część pakietu Visual Studio Integration rozszerzenie (VSIX). Użytkownicy korzystają z DSL w programie Visual Studio:
+Po zaprojektowaniu DSL można je rozpowszechnić w ramach pakietu rozszerzenia programu Visual Studio Integration (VSIX). Użytkownicy pracują z DSL w programie Visual Studio:
 
-![Diagram drzewa rodziny, przybornika i Eksplorator](../modeling/media/familyt_instance.png)
+![Diagram drzewa rodzin, Przybornik i Eksplorator](../modeling/media/familyt_instance.png)
 
-Jest tylko część DSL. Wraz z notacji pakietu VSIX zawiera narzędzia, które użytkownicy mogą stosować, aby pomóc im edytować i generowanie materiału na podstawie ich modeli.
+Notacja jest tylko częścią DSL. Wraz z notacją pakiet VSIX zawiera narzędzia, które użytkownicy mogą stosować, aby ułatwić im edytowanie i generowanie materiału z modeli.
 
-Jedną z głównych aplikacji językami DSL ma generować kod programu, pliki konfiguracji i innych artefaktów. Szczególnie w dużych projektach i linie produktów, w którym zostanie utworzona kilka wariantów produktu, generowanie wiele aspektów zmiennej z językami DSL może zapewnić duży wzrost niezawodności i bardzo szybkie przesłanie odpowiedzi na zmiany wymagań.
+Jedną z głównych aplikacji językami DSL jest generowanie kodu programu, plików konfiguracji i innych artefaktów. Szczególnie w dużych projektach i liniach produktów, w których zostanie utworzona kilka wariantów produktu, generowanie wielu zmiennych aspektów z językami DSL może zapewnić duży wzrost niezawodności i bardzo szybką odpowiedź na zmiany wymagań.
 
-Pozostała część tego omówienia jest przewodnik, który wprowadza podstawowe operacje tworzenia i używania języka specyficznego dla domeny w programie Visual Studio.
+Pozostała część tego omówienia to przewodnik, w którym wprowadzono podstawowe operacje tworzenia i używania języka specyficznego dla domeny w programie Visual Studio.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-Aby zdefiniować DSL, musisz mieć zainstalowane następujące składniki:
+Aby zdefiniować DSL, należy zainstalować następujące składniki:
 
 | | |
 |-|-|
 | Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579) |
 | [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580) |
-| Modeling SDK for Visual Studio | |
+| Modeling SDK dla programu Visual Studio | |
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-## <a name="create-a-dsl-solution"></a>Tworzenie rozwiązania języka DSL
+## <a name="create-a-dsl-solution"></a>Tworzenie rozwiązania DSL
 
-Aby utworzyć nowego języka specyficznego dla domeny, należy utworzyć nowe rozwiązanie Visual Studio za pomocą szablonu projektu języka specyficznego dla domeny.
+Aby utworzyć nowy język specyficzny dla domeny, należy utworzyć nowe rozwiązanie programu Visual Studio przy użyciu szablonu projektu języka specyficznego dla domeny.
 
-1. Na **pliku** menu wskaż **New**, a następnie kliknij przycisk **projektu**.
+1. W menu **plik** wskaż polecenie **Nowy**, a następnie kliknij pozycję **projekt**.
 
-2. W obszarze **typów projektów**, rozwiń węzeł **inne typy projektów** węzeł, a następnie kliknij przycisk **rozszerzalności**.
+2. W obszarze **typy projektów**rozwiń węzeł **Inne typy projektów** , a następnie kliknij pozycję **rozszerzalność**.
 
-3. Kliknij przycisk **projektanta języka specyficznego dla domeny**.
+3. Kliknij **Projektant języka specyficznego dla domeny**.
 
-     ![Tworzenie okna dialogowego DSL](../modeling/media/create_dsldialog.png)
+     ![Utwórz okno dialogowe DSL](../modeling/media/create_dsldialog.png)
 
-4. W **nazwa** wpisz **FamilyTree**. Kliknij przycisk **OK**.
+4. W polu **Nazwa** wpisz **FamilyTree**. Kliknij przycisk **OK**.
 
-     **Kreatora języka specyficznego dla domeny** otwiera i wyświetla listę rozwiązań DSL szablonu.
+     Zostanie otwarty **Kreator języka specyficznego dla domeny** i zostanie wyświetlona lista rozwiązań opartych na szablonie.
 
-     Kliknij każdy szablon, aby zapoznać się z opisem
+     Kliknij każdy szablon, aby wyświetlić opis,
 
-     Szablony są przydatne punktów początkowych. Każdy z nich zawiera pełną pracy DSL, który można edytować w zależności od potrzeb. Zazwyczaj należy wybrać szablon w najbliższym ma zostać utworzona.
+     Szablony to przydatne punkty startowe. Każdy z nich zapewnia kompletną pracę DSL, którą można edytować zgodnie z potrzebami. Zwykle należy wybrać szablon, który ma zostać utworzony.
 
-5. W ramach tego przewodnika wybierz **minimalny języka** szablonu.
+5. Na potrzeby tego przewodnika wybierz szablon **minimalny język** .
 
-6. Wprowadź rozszerzenie nazwy pliku DSL w odpowiedniej strony w kreatorze. To rozszerzenie, używanego przez pliki zawierające wystąpienia elementu DSL.
+6. Wprowadź rozszerzenie nazwy pliku dla języka DSL na odpowiedniej stronie kreatora. Jest to rozszerzenie, które będzie używać plików zawierających wystąpienia DSL.
 
-    - Wybierz rozszerzenie, które nie jest skojarzony z dowolnej aplikacji na komputerze lub w dowolnym komputerze, na którym chcesz zainstalować język DSL. Na przykład **docx** i **htm** będzie niedopuszczalne pliku rozszerzenia nazw.
+    - Wybierz rozszerzenie, które nie jest skojarzone z żadną aplikacją na komputerze lub na dowolnym komputerze, na którym chcesz zainstalować DSL. Na przykład, **docx** i **htm** byłyby nieakceptowalnymi rozszerzeniami nazw plików.
 
-    - Kreator wyświetli ostrzeżenie, jeśli jest używane rozszerzenie, które zostały wprowadzone jako języka DSL. Należy rozważyć użycie innym rozszerzeniem nazwy pliku. Możesz także zresetować Visual Studio SDK eksperymentalne wystąpienie wyczyszczenie stare projektantów eksperymentalne. Kliknij przycisk **Start**, kliknij przycisk **wszystkie programy**, **Microsoft Visual Studio 2010 SDK**, **narzędzia**, a następnie **resetowania firmy Microsoft Wystąpienie programu Visual Studio 2010 eksperymentalne**.
+    - Kreator wyświetli ostrzeżenie, jeśli wprowadzone rozszerzenie jest używane jako DSL. Rozważ użycie innego rozszerzenia nazwy pliku. Możesz również zresetować wystąpienie eksperymentalne zestawu Visual Studio SDK, aby wyczyścić stare eksperymentalne projektanci. Kliknij przycisk **Start**, kliknij pozycję **wszystkie programy**, **Microsoft Visual Studio zestaw SDK 2010**, **Narzędzia**, a następnie **Zresetuj wystąpienie eksperymentalne Microsoft Visual Studio 2010**.
 
-7. Zbadaj inne strony, a następnie kliknij przycisk **Zakończ**.
+7. Sprawdź inne strony, a następnie kliknij przycisk **Zakończ**.
 
-     To rozwiązanie jest generowany, która zawiera dwa projekty. Są one nazywane Dsl i DslPackage. Plik diagramu zostanie otwarty to znaczy DslDefinition.dsl nazwanych.
+     Generowane jest rozwiązanie, które zawiera dwa projekty. Są one nazywane DSL i DslPackage. Zostanie otwarty plik diagramu o nazwie DslDefinition. DSL.
 
     > [!NOTE]
-    > Większość kodu, który można zobaczyć w foldery w dwóch projektów jest generowany na podstawie DslDefinition.dsl. Z tego powodu większość modyfikacji DSL zostały wprowadzone w tym pliku.
+    > Większość kodu, który można wyświetlić w folderach w dwóch projektach, jest generowana z DslDefinition. DSL. Z tego powodu większość modyfikacji DSL została wprowadzona w tym pliku.
 
-Interfejs użytkownika jest teraz podobny do poniższej ilustracji.
+Interfejs użytkownika jest teraz podobny do poniższego obrazu.
 
 ![Projektant DSL](../modeling/media/dsl_designer.png)
 
-To rozwiązanie definiuje języka specyficznego dla domeny. Aby uzyskać więcej informacji, zobacz [omówienie interfejsu użytkownika narzędzi języka specyficznego dla domeny](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).
+To rozwiązanie definiuje język specyficzny dla domeny. Aby uzyskać więcej informacji, zobacz [Omówienie interfejsu użytkownika narzędzia języka specyficznego dla domeny](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).
 
-## <a name="the-important-parts-of-the-dsl-solution"></a>Ważne elementy rozwiązania DSL
+## <a name="the-important-parts-of-the-dsl-solution"></a>Ważne części rozwiązania DSL
 
-Zwróć uwagę, następujące aspekty nowe rozwiązanie:
+Zwróć uwagę na następujące aspekty nowego rozwiązania:
 
-- **Dsl\DslDefinition.DSL** jest plik, zostanie wyświetlony podczas tworzenia rozwiązania języka DSL. Prawie cały kod w rozwiązaniu jest generowany na podstawie tego pliku, a większość zmian, które wprowadzasz do definicji DSL są wprowadzone w tym miejscu. Aby uzyskać więcej informacji, zapoznaj się z praca [Praca z diagramem definicji DSL](../modeling/working-with-the-dsl-definition-diagram.md).
+- **Dsl\DslDefinition.DSL** Jest to plik, który jest wyświetlany podczas tworzenia rozwiązania DSL. Prawie cały kod w rozwiązaniu jest generowany na podstawie tego pliku, a większość zmian wprowadzonych w definicji DSL jest wprowadzana tutaj. Aby uzyskać więcej informacji, zobacz Praca z [pracą z diagramem definicji DSL](../modeling/working-with-the-dsl-definition-diagram.md).
 
-- **Projektu DSL** ten projekt zawiera kod, który definiuje języka specyficznego dla domeny.
+- **Projekt DSL** Ten projekt zawiera kod, który definiuje język specyficzny dla domeny.
 
-- **Projekt DslPackage** ten projekt zawiera kod, który umożliwia wystąpienia elementu DSL, aby go otworzyć i edytować w programie Visual Studio.
+- **Projekt DslPackage** Ten projekt zawiera kod umożliwiający otwieranie i edytowanie wystąpień DSL w programie Visual Studio.
 
-## <a name="Debugging"></a> Uruchamianie język DSL
+## <a name="Debugging"></a>Uruchamianie modemu DSL
 
-Możesz uruchomić rozwiązanie DSL, zaraz po jego utworzeniu. Później można zmodyfikować definicję DSL stopniowo, uruchamianie rozwiązania ponownie po każdej zmianie.
+Rozwiązanie DSL można uruchomić zaraz po jego utworzeniu. Później można zmienić definicję DSL, uruchamiając rozwiązanie ponownie po każdej zmianie.
 
-### <a name="to-experiment-with-the-dsl"></a>Aby eksperymentować z język DSL
+### <a name="to-experiment-with-the-dsl"></a>Aby eksperymentować z DSL
 
-1. Kliknij przycisk **Przekształć wszystkie szablony** w **Eksploratora rozwiązań** paska narzędzi. Większość kodu źródłowego z DslDefinition.dsl to generuje.
+1. Kliknij pozycję **Przekształć wszystkie szablony** na pasku narzędzi **Eksplorator rozwiązań** . Spowoduje to ponowne wygenerowanie większości kodu źródłowego z DslDefinition. DSL.
 
     > [!NOTE]
-    > Zawsze, gdy zmienisz *DslDefinition.dsl*, należy kliknąć przycisk **Przekształć wszystkie szablony** przed Kompiluj rozwiązanie. Możesz zautomatyzować ten krok. Aby uzyskać więcej informacji, zobacz [jak zautomatyzować Przekształć wszystkie szablony](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\)).
+    > Po zmianie *DslDefinition. DSL*należy kliknąć pozycję **Przekształć wszystkie szablony** przed odbudowaniem rozwiązania. Możesz zautomatyzować ten krok. Aby uzyskać więcej informacji, zobacz [jak zautomatyzować transformację wszystkie szablony](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\)).
 
-2. Naciśnij klawisz **F5**, lub na **debugowania** menu, kliknij przycisk **Rozpocznij debugowanie**.
+2. Naciśnij klawisz **F5**lub w menu **debugowanie** kliknij **Rozpocznij debugowanie**.
 
-     Język DSL zostanie skompilowany i będzie zainstalowany w doświadczalnym wystąpieniu programu Visual Studio.
+     Kompilacja DSL jest instalowana w eksperymentalnym wystąpieniu programu Visual Studio.
 
-     Uruchamia doświadczalne wystąpienie programu Visual Studio. Wystąpienie eksperymentalne zapasowe jego ustawieniami z oddzielnych poddrzewo rejestru, w którym rozszerzeń programu Visual Studio są rejestrowane na potrzeby debugowania. Normalnego wystąpienia programu Visual Studio nie mają dostępu do rozszerzenia ma zarejestrowane.
+     Zostanie uruchomione eksperymentalne wystąpienie programu Visual Studio. Eksperymentalne wystąpienie przyjmuje swoje ustawienia z oddzielnego poddrzewa rejestru, gdzie rozszerzenia programu Visual Studio są zarejestrowane do celów debugowania. Normalne wystąpienia programu Visual Studio nie mają dostępu do rozszerzeń zarejestrowanych w tym miejscu.
 
-3. W doświadczalnym wystąpieniu programu Visual Studio, otwórz plik modelu o nazwie **testu** z **Eksploratora rozwiązań**.
+3. W eksperymentalnym wystąpieniu programu Visual Studio Otwórz plik modelu o nazwie **test** z **Eksplorator rozwiązań**.
 
-     \- lub —
+     \- lub-
 
-     Kliknij prawym przyciskiem myszy projekt debugowania, wskaż opcję **Dodaj**, a następnie kliknij przycisk **elementu**. W **elementu Dodawanie** okno dialogowe, wybierz typ pliku DSL.
+     Kliknij prawym przyciskiem myszy projekt debugowanie, wskaż polecenie **Dodaj**, a następnie kliknij pozycję **element**. W oknie dialogowym **Dodaj element** wybierz typ pliku DSL.
 
      Plik modelu zostanie otwarty jako pusty diagram.
 
-     Przybornik otwiera i wyświetla narzędzia odpowiednie dla typu diagramu.
+     Przybornik otwiera i wyświetla narzędzia odpowiednie dla danego typu diagramu.
 
-4. Narzędzia do tworzenia kształtów i łączników na diagramie.
+4. Użyj narzędzi do tworzenia kształtów i łączników na diagramie.
 
-    1. Aby tworzyć kształty, przeciągnij za pomocą narzędzia przykład kształt na diagramie.
+    1. Aby utworzyć kształty, przeciągnij z przykładu narzędzie Kształt na diagram.
 
-    2. Aby połączyć dwa kształty, kliknij narzędzie przykład łącznik, kliknij pierwszy kształt, a następnie kliknij drugi kształt.
+    2. Aby połączyć dwa kształty, kliknij narzędzie przykładowe łączniki, kliknij pierwszy kształt, a następnie kliknij drugi kształt.
 
-5. Kliknij pozycję etykiety kształty, aby je zmienić.
+5. Kliknij etykiety kształtów, aby je zmienić.
 
-Eksperymentalne programu Visual Studio będzie wyglądać następująco:
+Eksperymentalny program Visual Studio będzie wyglądać podobnie do poniższego przykładu:
 
-![Domeny określonego języka przykładowe drzewa w programie Visual Studio](../modeling/media/dsl_min.png)
+![Przykładowe drzewo języka specyficznego dla domeny w programie Visual Studio](../modeling/media/dsl_min.png)
 
 ### <a name="the-content-of-a-model"></a>Zawartość modelu
 
-Zawartość pliku, który jest wystąpieniem DSL jest nazywany *modelu*. Model zawiera *modelu* <em>elementy</em> i *łącza* między elementami. Określa, jakie typy elementów modelu w definicji DSL i łącza może znajdować się w modelu. Na przykład w utworzone na podstawie szablonu minimalnego języka DSL, istnieje jeden typ elementu modelu i jednego typu łącza.
+Zawartość pliku, który jest wystąpieniem DSL, nazywa się *modelem*. Model zawiera elementy *modelu* i *linki* między elementami. Definicja DSL określa, jakie typy elementów modelu i linków mogą znajdować się w modelu. Na przykład w przypadku użycia DSL utworzonego na podstawie szablonu minimalnego języka istnieje jeden typ elementu modelu i jeden typ łącza.
 
-W definicji DSL można określić, jak model pojawia się na diagramie. Możesz wybrać spośród różnych stylów kształtów i łączników. Można określić, czy niektóre kształty są widoczne w innych kształtów.
+Definicja DSL pozwala określić, jak model pojawia się na diagramie. Można wybierać spośród różnych stylów kształtów i łączników. Można określić, że niektóre kształty są wyświetlane wewnątrz innych kształtów.
 
-Model można przeglądać w postaci drzewa w **Explorer** wyświetlania podczas edycji modelu. W miarę dodawania kształtów na diagramie elementy modelu są również wyświetlane w Eksploratorze. Można Eksploratora, nawet jeśli dostępny jest nie diagramu.
+Model można wyświetlić jako drzewo w widoku **Eksploratora** podczas edytowania modelu. Podczas dodawania kształtów do diagramu elementy modelu są również wyświetlane w Eksploratorze. Eksploratora można używać nawet wtedy, gdy nie ma diagramu.
 
-Jeśli nie są widoczne w Eksploratorze w wystąpienie debugowania programu Visual Studio **widoku** menu wskaż **Windows inne**, a następnie kliknij przycisk  *\<Twój język >* **Explorer**.
+Jeśli nie widzisz Eksploratora w wystąpieniu debugowania programu Visual Studio, w menu **Widok** wskaż polecenie **inne okna**, a następnie kliknij polecenie **Eksplorator** *> \<Your* .
 
 ### <a name="the-api-of-your-dsl"></a>Interfejs API DSL
 
-DSL generuje interfejsu API, która umożliwia odczytywanie i aktualizowanie modeli, które są wystąpieniami język DSL. Jednej aplikacji interfejsu API jest generowanie plików tekstowych z modelu. Aby uzyskać więcej informacji, zobacz [generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
+DSL generuje interfejs API, który umożliwia odczytywanie i aktualizowanie modeli, które są wystąpieniami DSL. Jedną z aplikacji interfejsu API jest generowanie plików tekstowych z modelu. Aby uzyskać więcej informacji, zobacz [generowanie kodu w czasie projektowania przy użyciu szablonów tekstowych T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
 
-W tym rozwiązaniu debugowanie Otwórz pliki szablonu z rozszerzeniem ".tt". Te przykłady pokazują, jak można wygenerować tekst ze modeli i umożliwiają testowanie interfejsu API DSL. Jednym z przykładów są zapisywane [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], inne w [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].
+W rozwiązaniu debugowania Otwórz pliki szablonów z rozszerzeniem ". tt". W tych przykładach pokazano, jak można wygenerować tekst z modeli i umożliwić przetestowanie interfejsu API DSL. Jedna z przykładów jest zapisywana w [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], druga w [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].
 
-Na podstawie każdego szablonu plik jest plikiem, który generuje. Rozwiń plik szablonu w Eksploratorze rozwiązań, a następnie otwórz wygenerowany plik.
+W każdym pliku szablonu jest wygenerowany plik. Rozwiń plik szablonu w Eksplorator rozwiązań i Otwórz wygenerowany plik.
 
-Plik szablonu zawiera krótki segment kodu, który wyświetla listę wszystkich elementów w modelu.
+Plik szablonu zawiera krótki segment kodu, który zawiera listę wszystkich elementów w modelu.
 
 Wygenerowany plik zawiera wynik.
 
-Po zmianie pliku modelu zobaczysz odpowiednie zmiany w wygenerowanych plików po ponownym wygenerowaniu plików.
+Po zmianie pliku modelu zobaczysz odpowiednie zmiany w wygenerowanych plikach po ponownym wygenerowaniu plików.
 
-#### <a name="to-regenerate-text-files-after-you-change-the-model-file"></a>Aby ponownie wygenerować pliki tekstowe, po zmianie pliku modelu
+#### <a name="to-regenerate-text-files-after-you-change-the-model-file"></a>Aby ponownie wygenerować pliki tekstowe po zmianie pliku modelu
 
-1. W doświadczalnym wystąpieniu programu Visual Studio Zapisz plik modelu.
+1. W eksperymentalnym wystąpieniu programu Visual Studio Zapisz plik modelu.
 
-2. Upewnij się, że parametr nazwy pliku w każdym pliku .tt odwołuje się do pliku modelu, którego używasz do doświadczeń. Zapisz plik .tt.
+2. Upewnij się, że parametr Nazwa pliku w każdym pliku TT odwołuje się do pliku modelu, który jest używany do eksperymentów. Zapisz plik. tt.
 
-3. Kliknij przycisk **Przekształć wszystkie szablony** na pasku narzędzi **Eksploratora rozwiązań**.
+3. Kliknij pozycję **Przekształć wszystkie szablony** na pasku narzędzi **Eksplorator rozwiązań**.
 
-     \- lub —
+     \- lub-
 
-     Kliknij prawym przyciskiem myszy szablonów, które chcesz wygenerować ponownie, a następnie kliknij przycisk **Uruchom narzędzie niestandardowe**.
+     Kliknij prawym przyciskiem myszy szablony, które chcesz wygenerować ponownie, a następnie kliknij polecenie **Uruchom narzędzie niestandardowe**.
 
-Można dodać dowolną liczbę plików szablonów tekstu do projektu. Każdy szablon generuje jednego pliku wyników.
-
-> [!NOTE]
-> Po zmianie definicji DSL przykładowego kodu szablonu tekstu nie będzie działać, o ile go zaktualizować.
-
-Aby uzyskać więcej informacji, zobacz [generowanie kodu z języka specyficznego dla domeny](../modeling/generating-code-from-a-domain-specific-language.md) i [pisanie kodu pod kątem dostosowywania języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md).
-
-## <a name="customizing-the-dsl"></a>Dostosowywanie języka DSL
-
-Jeśli chcesz zmodyfikować definicję DSL, zamknij wystąpienie doświadczalne i zaktualizuj definicję w głównym wystąpieniu programu Visual Studio.
+Do projektu można dodać dowolną liczbę plików szablonów tekstowych. Każdy szablon generuje jeden plik wynikowy.
 
 > [!NOTE]
-> Po zmodyfikowaniu definicji DSL, mogą utracić informacji w modelach testów, które zostały utworzone za pomocą wcześniejszych wersji.  Na przykład debugowania rozwiązań zawiera plik o nazwie przykładowy, który zawiera niektóre kształtów i łączników. Po rozpoczęciu tworzenia definicji DSL, nie będą widoczne, a zostaną one utracone podczas zapisywania pliku.
+> Po zmianie definicji DSL, kod szablonu tekstu przykładowego nie będzie działał, chyba że zostanie zaktualizowany.
 
-Istnieje możliwość szerokiej gamy rozszerzenia DSL. W poniższych przykładach przedstawiono pojęcie o możliwościach.
+Aby uzyskać więcej informacji, zobacz [generowanie kodu z języka specyficznego dla domeny](../modeling/generating-code-from-a-domain-specific-language.md) i [pisanie kodu w celu dostosowania języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md).
 
-Po każdej zmianie, Zapisz definicji DSL kliknij **Przekształć wszystkie szablony** w **Eksploratora rozwiązań**, a następnie naciśnij klawisz **F5** eksperymentować zmienione DSL.
+## <a name="customizing-the-dsl"></a>Dostosowywanie DSL
 
-### <a name="rename-the-types-and-tools"></a>Zmiana nazwy, typy i narzędzia
+Jeśli chcesz zmodyfikować definicję DSL, Zamknij wystąpienie eksperymentalne i zaktualizuj definicję w głównym wystąpieniu programu Visual Studio.
 
-Zmień nazwę istniejącej klasy domeny i relacje. Na przykład począwszy od definicji Dsl, utworzone na podstawie szablonu minimalnego języka, możesz można wykonać następujące operacje zmiany nazwy, aby DSL reprezentują drzew rodziny.
+> [!NOTE]
+> Po zmodyfikowaniu definicji DSL można utracić informacje w modelach testów utworzonych przy użyciu wcześniejszych wersji.  Na przykład rozwiązanie debugowania zawiera plik o nazwie Sample, który zawiera niektóre kształty i łączniki. Po rozpoczęciu tworzenia definicji DSL nie będzie ona widoczna i zostanie utracona podczas zapisywania pliku.
 
-#### <a name="to-rename-domain-classes-relationships-and-tools"></a>Aby zmienić nazwę klasy domeny, relacje i narzędzia
+Do DSL można utworzyć wiele różnych rozszerzeń. Poniższe przykłady dają wrażenie możliwości.
 
-1. Na diagramie DslDefinition, Zmień nazwę **ExampleModel** do **FamilyTreeModel**, **ExampleElement** do **osoby**,  **Obiekty docelowe** do **rodzice**, i **źródeł** do **dzieci**. Możesz kliknąć każdej etykiety, aby ją zmienić.
+Po każdej zmianie Zapisz definicję DSL, kliknij pozycję **Przekształć wszystkie szablony** w **Eksplorator rozwiązań**, a następnie naciśnij klawisz **F5** , aby eksperymentować ze zmienionym DSL.
 
-     ![Diagramem definicji DSL &#45; model drzewa rodziny](../modeling/media/familyt_person.png)
+### <a name="rename-the-types-and-tools"></a>Zmień nazwy typów i narzędzi
 
-2. Zmień nazwę elementu i łącznika narzędzia.
+Zmień nazwy istniejących klas i relacji domeny. Na przykład rozpoczynając od definicji DSL utworzonej na podstawie szablonu minimalnego języka, można wykonać następujące operacje zmiany nazwy, aby umożliwić DSL reprezentuje drzewa rodzinne.
 
-    1. Otwórz okno Eksplorator DSL, klikając kartę w Eksploratorze rozwiązań. Jeśli nie jest widoczna, na **widoku** menu wskaż **Windows inne** a następnie kliknij przycisk **Eksplorator DSL**. Eksplorator modelu DSL jest widoczny tylko wtedy, gdy aktywne okno diagramem definicji DSL.
+#### <a name="to-rename-domain-classes-relationships-and-tools"></a>Aby zmienić nazwy klas domen, relacji i narzędzi
 
-    2. Otwórz okno właściwości i umieść ją, aby mogli przeglądać Eksplorator DSL i właściwości, które znajdują się w tym samym czasie.
+1. Na diagramie DslDefinition Zmień nazwę **ExampleModel** na **FamilyTreeModel**, **example** dla **osoba**, **cele** do **rodziców**i **źródła** do **elementów podrzędnych**. Możesz kliknąć każdą etykietę, aby ją zmienić.
 
-    3. W Eksploratorze DSL rozwiń **edytora**, **karty przybornika**,  *\<DSL >* , a następnie **narzędzia**.
+     ![Model drzewa rodziny &#45; diagramów definicji DSL](../modeling/media/familyt_person.png)
 
-    4. Kliknij przycisk **ExampleElement**. Jest to element przybornika, który służy do tworzenia elementów.
+2. Zmień nazwę narzędzi elementów i łączników.
 
-    5. W oknie Właściwości zmień **nazwa** właściwości **osoby**.
+    1. Otwórz okno Eksplorator DSL, klikając kartę w obszarze Eksplorator rozwiązań. Jeśli nie widzisz go, w menu **Widok** wskaż polecenie **inne okna** , a następnie kliknij pozycję **Eksplorator DSL**. Eksplorator DSL jest widoczny tylko wtedy, gdy jest aktywnym oknem diagram definicji DSL.
 
-         Należy zauważyć, że **podpis** zmienia także właściwości.
+    2. Otwórz okno Właściwości i umieść go tak, aby można było zobaczyć w tym samym czasie Eksploratora i właściwości DSL.
 
-    6. W ten sam sposób, Zmień nazwę **ExampleConnector** narzędzia, aby **ParentLink**. Instrukcja ALTER **podpis** właściwości, tak że nie jest kopią właściwości Name. Na przykład, wprowadź **Link elementu nadrzędnego**.
+    3. W Eksploratorze DSL rozwiń węzeł **Edytor**, **karty PRZYBORNIK**, *\<your DSL >* , a następnie **Narzędzia**.
 
-3. Ponownie skompiluj język DSL.
+    4. Kliknij przycisk **example**. Jest to element przybornika, który służy do tworzenia elementów.
 
-    1. Zapisz plik w definicji DSL.
+    5. W okno Właściwości zmień właściwość **Nazwa** na **Person**.
 
-    2. Kliknij przycisk **Przekształć wszystkie szablony** na pasku narzędzi Eksploratora rozwiązań
+         Zauważ, że właściwość **Caption** również ulega zmianie.
 
-    3. Naciśnij F5. Zaczekaj, aż pojawi się w doświadczalnym wystąpieniu programu Visual Studio.
+    6. W ten sam sposób Zmień nazwę narzędzia **ExampleConnector** na **ParentLink**. Zmień właściwość **Caption** , tak aby nie była kopią właściwości Nazwa. Na przykład wprowadź **łącze nadrzędne**.
 
-4. W rozwiązaniu debugowanie w doświadczalnym wystąpieniu programu Visual Studio Otwórz plik modelu testu. Przeciągnij elementy go z przybornika. Zauważ, że zmieniono podpisy narzędzia i nazwy typów w Eksplorator DSL.
+3. Skompiluj ponownie DSL.
+
+    1. Zapisz plik definicji DSL.
+
+    2. Kliknij pozycję **Przekształć wszystkie szablony** na pasku narzędzi Eksplorator rozwiązań
+
+    3. Naciśnij F5. Zaczekaj na wyświetlenie eksperymentalnego wystąpienia programu Visual Studio.
+
+4. W rozwiązaniu debugowania w eksperymentalnym wystąpieniu programu Visual Studio Otwórz plik modelu testowego. Przeciągnij elementy na nie z przybornika. Zauważ, że podpisy narzędzia i nazwy typów w Eksploratorze DSL zostały zmienione.
 
 5. Zapisz plik modelu.
 
-6. Otwórz plik .tt i zastąp stare nazwy typu i właściwości wystąpienia nowych nazw.
+6. Otwórz plik. tt i Zastąp wystąpienia starych typów i nazw właściwości nowymi nazwami.
 
-7. Upewnij się, że nazwa pliku, który jest określony w pliku .tt Określa model testu.
+7. Upewnij się, że nazwa pliku określona w pliku TT Określa model testowy.
 
-8. Zapisz plik .tt. Otwórz wygenerowany plik, aby zobaczyć wynik uruchomienia kodu w pliku .tt. Sprawdź, czy jest poprawna.
+8. Zapisz plik. tt. Otwórz wygenerowany plik, aby zobaczyć wynik uruchamiania kodu w pliku TT. Sprawdź, czy jest ona poprawna.
 
 ### <a name="add-domain-properties-to-classes"></a>Dodawanie właściwości domeny do klas
- Dodaj właściwości do klasy domeny, na przykład do reprezentowania lat urodzenia i śmierci osoby.
+ Dodaj właściwości do klasy domeny, na przykład, aby reprezentować lata urodzenia i zgonu osoby.
 
- Aby wyświetlić właściwości nowej na diagramie, należy dodać *dekoratory* do kształtu, który wyświetla elementu modelu. Właściwości musi być również mapować do dekoratory.
+ Aby nowe właściwości były widoczne na diagramie, należy dodać *dekoratory* do kształtu, który wyświetla element modelu. Należy również zmapować właściwości na dekoratory.
 
-##### <a name="to-add-properties-and-display-them"></a>Aby dodać właściwości i wyświetlaj je
+##### <a name="to-add-properties-and-display-them"></a>Aby dodać właściwości i wyświetlić je
 
 1. Dodaj właściwości.
 
-   1. W definicji DSL diagramu, kliknij prawym przyciskiem myszy **osoby** klasy domeny, wskaż **Dodaj**, a następnie kliknij przycisk **właściwość domeny**.
+   1. Na diagramie definicji DSL kliknij prawym przyciskiem myszy klasy **osoba** , wskaż polecenie **Dodaj**, a następnie kliknij pozycję **właściwość domeny**.
 
-   2. Wpisz listę nowych nazw właściwości, takie jak **urodzenia** i **śmierci**. Naciśnij klawisz **Enter** po każdej z nich.
+   2. Wpisz listę nowych nazw właściwości, takich jak **urodzenie** i **zgony**. Naciśnij klawisz **Enter** po każdym z nich.
 
-2. Dodaj dekoratory, które będą wyświetlane właściwości w kształcie.
+2. Dodaj dekoratory, które będą wyświetlać właściwości w kształcie.
 
-   1. Postępuj zgodnie z szara linia, rozciąga się od klasy domeny osoba po drugiej stronie diagramu. To mapowanie elementu diagramu. Klasy domeny łączy do klasy kształtu.
+   1. Postępuj zgodnie z szarym wierszem, który rozciąga się od klasy osoby należącej do drugiej strony diagramu. To jest mapa elementu diagramu. Łączy klasy domeny z klasą Shape.
 
-   2. Kliknij prawym przyciskiem myszy tę klasę kształtu, wskaż opcję **Dodaj**, a następnie kliknij przycisk **Dekoratora tekstu**.
+   2. Kliknij prawym przyciskiem myszy tę klasę kształtu, wskaż polecenie **Dodaj**, a następnie kliknij pozycję **tekst dekoratora**.
 
-   3. Dodaj dwa dekoratory przy użyciu nazwy, takie jak **BirthDecorator** i **DeathDecorator**.
+   3. Dodaj dwie dekoratory z nazwami, takimi jak **BirthDecorator** i **DeathDecorator**.
 
-   4. Wybierz każdy dekorator nowe, a w oknie właściwości ustaw **pozycji** pola. Określa, gdzie zostaną wyświetlone wartości właściwości domeny na kształcie. Na przykład ustawić **InnerBottomLeft** i **InnerBottomRight**.
+   4. Zaznacz wszystkie nowe dekoratora i w okno Właściwości ustaw pole **pozycja** . Określa miejsce, w którym wartość właściwości domeny będzie wyświetlana na kształcie. Na przykład ustaw **InnerBottomLeft** i **InnerBottomRight**.
 
         ![Definicja kształtu przedziału](../modeling/media/familyt_compartment.png)
 
-3. Mapowania dekoratorów do właściwości.
+3. Mapuj dekoratory na właściwości.
 
-   1. Otwórz okno Szczegóły języka DSL. Zazwyczaj jest na karcie obok w oknie danych wyjściowych. Jeśli nie jest widoczna, na **widoku** menu wskaż **Windows inne**, a następnie kliknij przycisk **szczegóły języka DSL**.
+   1. Otwórz okno Szczegóły DSL. Zazwyczaj znajduje się on na karcie obok okna danych wyjściowych. Jeśli nie widzisz go, w menu **Widok** wskaż polecenie **inne okna**, a następnie kliknij pozycję **Szczegóły DSL**.
 
-   2. Polecenie diagramem definicji DSL linii łączącej **osoby** klasy domeny do klasy kształtu.
+   2. Na diagramie definicji DSL kliknij wiersz, który łączy klasę **Persona** z klasą Shape.
 
-   3. W **szczegóły języka DSL**na **mapy Dekoratora** kliknij pole wyboru na niezamapowane dekoratora. W **Właściwość wyświetlania**, wybierz właściwość domeny, do której ma on zamapowany. Na przykład mapować **BirthDecorator** do **urodzenia**.
+   3. W obszarze **szczegóły języka DSL**na karcie **mapy dekoratora** kliknij pole wyboru na niezamapowanym dekoratora. W oknie **właściwości wyświetlania**wybierz właściwość domeny, do której ma zostać zamapowana. Na przykład zamapuj **BirthDecorator** na **urodzenie**.
 
-4. Zapisz język DSL, a następnie kliknij przycisk Przekształć wszystkie szablony i naciśnij klawisz F5.
+4. Zapisz DSL, kliknij pozycję Przekształć wszystkie szablony i naciśnij klawisz F5.
 
-5. W przykładowy diagram modelu Sprawdź, czy można teraz kliknąć pozycje, które wybrałeś i wpisz wartości do nich. Ponadto po wybraniu **osoby** kształtu, okno właściwości wyświetla nowe właściwości urodzenia i śmierci.
+5. Na przykładowym diagramie modelu Sprawdź, czy możesz teraz kliknąć wybrane pozycje i wpisać w nich wartości. Ponadto w przypadku wybrania kształtu **osoby** okno właściwości są wyświetlane nowe właściwości urodzenia i zgonu.
 
-6. W pliku .tt można dodać kod, który uzyskuje właściwości każdej osoby.
+6. W pliku. tt można dodać kod, który uzyskuje właściwości każdej osoby.
 
-   ![Diagram drzewa rodziny, przybornika i Eksplorator](../modeling/media/familyt_instance.png)
+   ![Diagram drzewa rodzin, Przybornik i Eksplorator](../modeling/media/familyt_instance.png)
 
-### <a name="define-new-classes"></a>Definiowanie nowych klas
- Można dodać klasy domeny i relacje do modelu. Na przykład można utworzyć nowej klasy reprezentujące miast i nową relację do reprezentowania osoby znajdowały się w mieście.
+### <a name="define-new-classes"></a>Definiuj nowe klasy
+ Do modelu można dodawać klasy domen i relacje. Na przykład można utworzyć nową klasę reprezentującą miejscowości i nową relację, która będzie reprezentować osobę w mieście.
 
- Aby różne typy distinct diagramu modelu, można mapować klasami domeny różne rodzaje kształtów lub kształtów różne typy geometryczne i kolorów.
+ Aby różne typy były odrębne dla diagramu modelu, można mapować klasy domeny na różne rodzaje kształtu lub do kształtów o różnej geometrii i kolorach.
 
 ##### <a name="to-add-and-display-a-new-domain-class"></a>Aby dodać i wyświetlić nową klasę domeny
 
-1. Dodaj klasę domeny i Uczyń elementem podrzędnym elementu głównego.
+1. Dodaj klasę domeny i Uczyń ją elementem podrzędnym modelu głównego.
 
-    1. W definicji DSL diagramu, kliknij **relacji osadzania** narzędzia, kliknij przycisk Klasa główna **FamilyTreeModel**, a następnie kliknij pustą część diagramu.
+    1. Na diagramie definicji DSL kliknij narzędzie **osadzanie relacji** , kliknij **FamilyTreeModel**klasy głównej, a następnie kliknij w pustej części diagramu.
 
-         Nową klasę domeny zostanie wyświetlony podłączonego do FamilyTreeModel przy użyciu relacji osadzania.
+         Zostanie wyświetlona nowa klasa domeny, która jest połączona z FamilyTreeModel z relacją osadzania.
 
-         Ustaw jego nazwę, na przykład **miejscowość**.
-
-        > [!NOTE]
-        > Każda klasa domeny, z wyjątkiem głównym modelu musi być elementem docelowym co najmniej jedna relacja osadzania lub ten typ musi dziedziczyć z klasy, która jest lokalizacją docelową osadzania. Z tego powodu często wygodne jest Utwórz klasę domeny przy użyciu narzędzia do relacji osadzania.
-
-    2. Dodaj właściwość domeny do nowej klasy, na przykład **nazwa**.
-
-2. Dodawanie relacji między miejscowości i osoby.
-
-    1. Kliknij przycisk **relacja odwołania** narzędzia, kliknij przycisk osoby, a następnie kliknij przycisk miejscowości.
-
-         ![Fragment definicji DSL: katalogu głównego drzewa rodziny](../modeling/media/familyt_root.png)
+         Ustaw jej nazwę, na przykład **miejscowość**.
 
         > [!NOTE]
-        > Relacje odniesienia reprezentuje odsyłacze z jednej części drzewa modelu do innego.
+        > Każda klasa domeny poza elementem głównym modelu musi być elementem docelowym co najmniej jednej relacji osadzania lub musi dziedziczyć po klasie, która jest elementem docelowym osadzania. Z tego powodu często wygodnie jest utworzyć klasy domeny za pomocą narzędzia osadzania relacji.
 
-3. Dodawanie kształtu do reprezentowania miast na diagramach modelu.
+    2. Dodaj właściwość domeny do nowej klasy, na przykład **name**.
 
-    1. Przeciągnij **kształt geometryczny** z przybornika do diagramu i zmienić jej nazwę na przykład **TownShape**.
+2. Dodaj relację odwołania między osobą i miejscowością.
 
-    2. W oknie właściwości ustaw pola wygląd nowy kształt, takich jak kolor wypełnienia i geometrii.
+    1. Kliknij narzędzie **relacja odwołania** , kliknij pozycję osoba, a następnie kliknij pozycję miejscowość.
 
-    3. Dodaj Dekoratora, aby wyświetlić nazwę miejscowości, a następnie zmień jego nazwę na NameDecorator. Ustaw jego właściwość pozycji.
+         ![Fragment definicji DSL: katalog główny drzewa rodziny](../modeling/media/familyt_root.png)
 
-4. Miejscowość klasy domeny są mapowane na TownShape.
+        > [!NOTE]
+        > Relacje odwołania reprezentują odwołania krzyżowe z jednej części drzewa modelu do innej.
 
-    1. Kliknij przycisk **mapowanie elementu diagramu** narzędzia, a następnie kliknij klasy domeny miejscowości, a następnie TownShape klasy kształtu.
+3. Dodaj kształt reprezentujący miast na diagramach modeli.
 
-    2. W **mapy Dekoratora** karcie **szczegóły języka DSL** wybrane okno za pomocą łącznika mapy, sprawdź NameDecorator i ustawić **Właściwość wyświetlania** nazwy.
+    1. Przeciągnij **kształt geometrii** z przybornika do diagramu i zmień jego nazwę, na przykład **TownShape**.
 
-5. Utwórz łącznik do wyświetlania relacji między osoby i miast.
+    2. W okno Właściwości Ustaw pola wyglądu nowego kształtu, takie jak kolor wypełnienia i geometria.
 
-    1. Przeciągnij łącznika z przybornika do diagramu. Zmień jej nazwę, a następnie ustaw jego właściwości wyglądu.
+    3. Dodaj dekoratora, aby wyświetlić nazwę miejscowości, a następnie zmień jej nazwę na NameDecorator. Ustaw jej Właściwość Position.
 
-    2. Użyj **mapowanie elementu diagramu** narzędzie, aby połączyć nowy łącznik do relacji między miejscowości i osoby.
+4. Zamapuj klasę miejscowości na TownShape.
 
-         ![Definicja drzewa rodziny o mapowanie kształtów dodano](../modeling/media/familyt_shapemap.png)
+    1. Kliknij narzędzie **Mapa elementu diagramu** , a następnie kliknij klasę miasto, a następnie klasy Shape TownShape.
 
-6. Utworzyć element narzędzie do tworzenia nowych miast.
+    2. Na karcie **mapy dekoratora** okna **Szczegóły DSL** z wybranym łącznikiem mapy zaznacz opcję NameDecorator i ustaw **Właściwość Display** na wartość Name.
 
-    1. W **Eksplorator DSL**, rozwiń węzeł **edytora** następnie **karty przybornika**.
+5. Utwórz łącznik, aby wyświetlić relacje między osobą a miastem.
 
-    2. Kliknij prawym przyciskiem myszy  *\<DSL >* a następnie kliknij przycisk **dodać nowe narzędzie elementu**.
+    1. Przeciągnij łącznik z przybornika do diagramu. Zmień jego nazwę i ustaw jego właściwości wyglądu.
 
-    3. Ustaw **nazwa** właściwość nowego narzędzia i zestaw jej **klasy** właściwość miejscowości.
+    2. Użyj narzędzia **Mapa elementu diagramu** , aby połączyć nowy łącznik z relacją między osobą i miejscowością.
 
-    4. Ustaw **ikonę przybornika** właściwości. Kliknij przycisk **[...]**  i **nazwy pliku** wybierz plik ikony.
+         ![Definicja drzewa rodziny z dodaną mapą kształtu](../modeling/media/familyt_shapemap.png)
 
-7. Utwórz łącznik narzędzie do tworzenia łącza między miast i osób.
+6. Utwórz narzędzie elementu do tworzenia nowego miasta.
 
-    1. Kliknij prawym przyciskiem myszy  *\<DSL >* a następnie kliknij przycisk **dodać nowe narzędzie łącznika**.
+    1. W **Eksploratorze DSL**rozwiń węzeł **Edytor** , a następnie **kartę Przybornik**.
 
-    2. Ustaw właściwość Nazwa nowego narzędzia.
+    2. Kliknij prawym przyciskiem myszy *\<your DSL >* a następnie kliknij polecenie **Dodaj nowy element**.
 
-    3. W **elementu ConnectionBuilder** właściwości, wybierz konstruktora, który zawiera nazwę relacji miasta osoby.
+    3. Ustaw właściwość **name** nowego narzędzia i ustaw jej właściwość **Class** na miejscowość.
+
+    4. Ustaw właściwość **ikona przybornika** . Kliknij pozycję **[...]** i w polu **Nazwa pliku** wybierz plik ikony.
+
+7. Utwórz narzędzie łącznika do tworzenia linku między miastami i osobami.
+
+    1. Kliknij prawym przyciskiem myszy *\<your DSL >* a następnie kliknij polecenie **Dodaj nowe łączniki**.
+
+    2. Ustaw właściwość Name nowego narzędzia.
+
+    3. We właściwości **elemencie ConnectionBuilder** wybierz konstruktora, który zawiera nazwę relacji osoba-miejscowość.
 
     4. Ustaw **ikonę przybornika**.
 
-8. Kliknij pozycję Zapisz definicję DSL **Przekształć wszystkie szablony**, a następnie naciśnij klawisz **F5**.
+8. Zapisz definicję DSL, kliknij pozycję **Przekształć wszystkie szablony**, a następnie naciśnij klawisz **F5**.
 
-9. W doświadczalnym wystąpieniu programu Visual Studio Otwórz plik modelu testu. Użycie nowych narzędzi do tworzenia miast i łącza między miast i osób. Należy zauważyć, że tylko można tworzyć łącza między poprawne typy elementu.
+9. W eksperymentalnym wystąpieniu programu Visual Studio Otwórz plik modelu testowego. Użyj nowych narzędzi do tworzenia miast i linków między miastami i osobami. Należy zauważyć, że można tworzyć tylko linki między prawidłowymi typami elementu.
 
-10. Tworzenie kodu, który zawiera miejscowości, w którym znajduje się każda osoba. Szablony tekstowe są jednym z miejsc, gdzie można uruchomić tego kodu. Na przykład można zmodyfikować istniejący plik Sample.tt w rozwiązaniu do debugowania, tak, aby zawierała następujący kod:
+10. Utwórz kod, który wyświetla miasto, w którym mieszka każda osoba. Szablony tekstowe są jednym z miejsc, w których można uruchomić ten kod. Na przykład można zmodyfikować istniejący plik Sample.tt w rozwiązaniu debugowania, aby zawierał następujący kod:
 
     ```
     <#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" debug="true" #>
@@ -378,34 +378,34 @@ Zmień nazwę istniejącej klasy domeny i relacje. Na przykład począwszy od de
 
     ```
 
-     Podczas zapisywania pliku *.tt utworzy plik pomocniczy, który zawiera listę osób i miejsc ich zamieszkania. Aby uzyskać więcej informacji, zobacz [generowanie kodu z języka specyficznego dla domeny](../modeling/generating-code-from-a-domain-specific-language.md).
+     Po zapisaniu pliku *. tt zostanie utworzony plik pomocniczy zawierający listę osób i ich Residences. Aby uzyskać więcej informacji, zobacz [generowanie kodu z języka specyficznego dla domeny](../modeling/generating-code-from-a-domain-specific-language.md).
 
-## <a name="validation-and-commands"></a>Sprawdzanie poprawności i polecenia
- Dalsze tego języka DSL można rozwijać, dodając ograniczenia sprawdzania poprawności. Te ograniczenia są metody, które można zdefiniować, które upewnij się, że model jest w poprawnym stanie. Na przykład można zdefiniować ograniczenie, aby upewnić się, że, Data urodzenia dziecka jest późniejsza niż jego elementów nadrzędnych. Funkcję weryfikacji zostanie wyświetlone ostrzeżenie, jeśli użytkownik DSL próbuje zapisać modelu, który przerywa żadne ograniczenia. Aby uzyskać więcej informacji, zobacz [weryfikacji języka specyficznego dla domeny](../modeling/validation-in-a-domain-specific-language.md).
+## <a name="validation-and-commands"></a>Walidacja i polecenia
+ Możesz również opracować ten DSL, dodając ograniczenia walidacji. Te ograniczenia to metody, które można zdefiniować, aby upewnić się, że model jest w poprawnym stanie. Na przykład można zdefiniować ograniczenie, aby upewnić się, że data urodzenia elementu podrzędnego jest późniejsza niż jego nadrzędna. Funkcja walidacji wyświetla ostrzeżenie, jeśli użytkownik DSL próbuje zapisać model, który przerywa dowolne ograniczenia. Aby uzyskać więcej informacji, zobacz [Walidacja w języku specyficznym dla domeny](../modeling/validation-in-a-domain-specific-language.md).
 
- Można również zdefiniować polecenia menu, które użytkownik może wywołać. Polecenia można modyfikować modelu. Może również korzystać z innych modeli w programie Visual Studio oraz z zasobami zewnętrznymi. Aby uzyskać więcej informacji, zobacz [jak: Modyfikowanie standardowego polecenia Menu](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
+ Można także definiować polecenia menu, które użytkownik może wywołać. Polecenia mogą modyfikować model. Mogą również korzystać z innych modeli w programie Visual Studio i z zasobami zewnętrznymi. Aby uzyskać więcej informacji, zobacz [How to: Modify a standardowe polecenie menu](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
-## <a name="deploying-the-dsl"></a>Wdrażanie język DSL
- Aby umożliwić innym użytkownikom korzystanie z języka specyficznego dla domeny, możesz dystrybuować pliku Visual Studio rozszerzenia (VSIX). Zostanie on utworzony podczas kompilowania rozwiązania DSL.
+## <a name="deploying-the-dsl"></a>Wdrażanie DSL
+ Aby umożliwić innym użytkownikom korzystanie z języka specyficznego dla domeny, należy rozpowszechnić plik rozszerzenia programu Visual Studio (VSIX). Ta wartość jest tworzona podczas tworzenia rozwiązania DSL.
 
- Zlokalizuj plik .vsix w folder bin rozwiązania. Skopiuj go do komputera, na którym chcesz go zainstalować. Na tym komputerze kliknij dwukrotnie plik VSIX. Język DSL może służyć we wszystkich wystąpieniach programu Visual Studio na tym komputerze.
+ Zlokalizuj plik VSIX w folderze bin Twojego rozwiązania. Skopiuj go do komputera, na którym chcesz go zainstalować. Na tym komputerze kliknij dwukrotnie plik VSIX. DSL można używać we wszystkich wystąpieniach programu Visual Studio na tym komputerze.
 
- Aby zainstalować język DSL na swoim komputerze, tak aby nie trzeba używać doświadczalnym wystąpieniu programu Visual Studio, można użyć tej samej procedury.
+ Możesz użyć tej samej procedury, aby zainstalować DSL na własnym komputerze, aby nie trzeba było korzystać z eksperymentalnego wystąpienia programu Visual Studio.
 
- Aby uzyskać więcej informacji, zobacz [wdrażania rozwiązań języka dotyczącego określonej domeny](msi-and-vsix-deployment-of-a-dsl.md).
+ Aby uzyskać więcej informacji, zobacz [wdrażanie rozwiązań językowych właściwych dla domeny](msi-and-vsix-deployment-of-a-dsl.md).
 
-## <a name="Reset"></a> Usuwanie starego eksperymentalne językami DSL
- Jeśli utworzono językami DSL eksperymentalnych, które nie są już potrzebne, można usunąć z komputera, resetując wystąpienie eksperymentalne programu Visual Studio.
+## <a name="Reset"></a>Usuwanie starej eksperymentalnej językami DSL
+ Jeśli utworzono eksperymentalne językami DSL, które nie są już potrzebne, możesz je usunąć z komputera przez zresetowanie wystąpienia eksperymentalnego programu Visual Studio.
 
- Spowoduje to usunięcie z komputera wszystkie eksperymentalne językami DSL i inne rozszerzenia eksperymentalne programu Visual Studio. Są to rozszerzenia, które zostały wykonane w trybie debugowania.
+ Spowoduje to usunięcie z komputera wszystkich eksperymentalnych językami DSL i innych eksperymentalnych rozszerzeń programu Visual Studio. Są to rozszerzenia, które zostały wykonane w trybie debugowania.
 
- Ta procedura nie powoduje usunięcia języków DSL lub inne rozszerzenia programu Visual Studio, w pełni zainstalowane przez wykonanie pliku VSIX.
+ Ta procedura nie usuwa językami DSL ani innych rozszerzeń programu Visual Studio, które zostały w pełni zainstalowane, wykonując plik VSIX.
 
 #### <a name="to-reset-the-visual-studio-experimental-instance"></a>Aby zresetować wystąpienie eksperymentalne programu Visual Studio
 
-1. Kliknij przycisk **Start**, kliknij przycisk **wszystkie programy**, **Microsoft Visual Studio 2010 SDK**, **narzędzia**, a następnie **resetowania firmy Microsoft Wystąpienie programu Visual Studio 2010 eksperymentalne**.
+1. Kliknij przycisk **Start**, kliknij pozycję **wszystkie programy**, **Microsoft Visual Studio zestaw SDK 2010**, **Narzędzia**, a następnie **Zresetuj wystąpienie eksperymentalne Microsoft Visual Studio 2010**.
 
-2. Ponownie skompiluj żadnych języków eksperymentalnych DSL lub inne eksperymentalne rozszerzeń programu Visual Studio, które nadal chcesz użyć.
+2. Kompiluj wszystkie eksperymentalne językami DSL lub inne eksperymentalne rozszerzenia programu Visual Studio, które nadal mają być używane.
 
 ## <a name="see-also"></a>Zobacz także
 

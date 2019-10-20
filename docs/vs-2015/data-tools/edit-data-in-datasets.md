@@ -1,5 +1,5 @@
 ---
-title: Edytowanie danych w zestawach danych | Dokumentacja firmy Microsoft
+title: Edytuj dane w zestawach danych | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -14,100 +14,100 @@ helpviewer_keywords:
 - data [Visual Studio], editing in datasets
 ms.assetid: 50d5c580-fbf7-408f-be70-e63ac4f4d0eb
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7cbc9519c86b2bf4967e567b29355eb6d8a176a4
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 699ee9b6e7a68c6a79f7f7dac526127206e8aa42
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65699766"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672401"
 ---
 # <a name="edit-data-in-datasets"></a>Edytowanie danych w zestawach danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Możesz edytować dane w tabelach danych tak, jak edytować dane w tabeli w dowolnej bazie danych. Ten proces może zawierać Wstawianie, aktualizowanie i usuwanie rekordów w tabeli. W formie powiązanych z danymi można określić pola, które są można edytować użytkownika. W takich przypadkach infrastruktura powiązań danych obsługuje wszystkie śledzenia zmian, aby zmiany mogą zostać odesłany do bazy danych później. Jeśli programowo wprowadzisz zmiany danych, a ma zostać wysłany tych zmian w bazie danych, należy użyć obiektów i metod, które wykonują śledzenia zmian dla Ciebie.  
-  
- Validated rzeczywistych danych, możesz także zbadać <xref:System.Data.DataTable> zwrócić określone wiersze danych. Na przykład może wyszukać poszczególne wiersze, określone wersje wierszy (oryginalny i proponowane), wiersze, które zostały zmienione lub wiersze, które mają błędy.  
-  
-## <a name="to-edit-rows-in-a-dataset"></a>Edytowanie wierszy w zestawie danych  
- Aby edytować istniejący wiersz w <xref:System.Data.DataTable>, musisz zlokalizować <xref:System.Data.DataRow> chcesz edytować, a następnie przypisz zaktualizowane wartości do kolumny.  
-  
- Jeśli nie znasz indeks wiersza, którą chcesz edytować, użyj `FindBy` metody, aby przeprowadzić wyszukiwanie według klucza podstawowego:  
-  
+Dane można edytować w tabelach danych tak samo, jak w przypadku edytowania danych w tabeli w dowolnej bazie danych. Proces ten może obejmować Wstawianie, aktualizowanie i usuwanie rekordów w tabeli. W formularzu związanym z danymi można określić, które pola są edytowane przez użytkownika. W takich przypadkach infrastruktura powiązań danych obsługuje wszystkie śledzenia zmian, dzięki czemu zmiany mogą być wysyłane z powrotem do bazy danych później. Jeśli programowo wprowadzisz zmiany do danych i zamierzasz wysłać je z powrotem do bazy danych, musisz użyć obiektów i metod, które umożliwiają śledzenie zmian.
+
+ Oprócz zmiany rzeczywistych danych można również wysyłać zapytania do <xref:System.Data.DataTable>, aby zwrócić określone wiersze danych. Można na przykład wykonywać zapytania dotyczące pojedynczych wierszy, określonych wersji wierszy (oryginał i proponowane), wierszy, które uległy zmianie, lub wierszy z błędami.
+
+## <a name="to-edit-rows-in-a-dataset"></a>Aby edytować wiersze w zestawie danych
+ Aby edytować istniejący wiersz w <xref:System.Data.DataTable>, należy zlokalizować <xref:System.Data.DataRow>, które chcesz edytować, a następnie przypisać zaktualizowane wartości do żądanych kolumn.
+
+ Jeśli nie znasz indeksu wiersza, który chcesz edytować, użyj metody `FindBy`, aby wyszukać według klucza podstawowego:
+
  [!code-csharp[VbRaddataEditing#3](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#3)]
- [!code-vb[VbRaddataEditing#3](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#3)]  
-  
- Jeśli znasz indeks wiersza, mogą uzyskiwać dostęp do i umożliwia edytowanie wierszy w następujący sposób:  
-  
+ [!code-vb[VbRaddataEditing#3](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#3)]
+
+ Jeśli znasz indeks wierszy, możesz uzyskać dostęp do wierszy i edytować je w następujący sposób:
+
  [!code-csharp[VbRaddataEditing#5](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#5)]
- [!code-vb[VbRaddataEditing#5](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#5)]  
-  
-## <a name="to-insert-new-rows-into-a-dataset"></a>Aby wstawić nowe wiersze do zestawu danych  
- Aplikacje, które zazwyczaj używają formantów powiązanych z danymi na dodawanie nowych rekordów za pomocą **Dodaj nowe** znajdujący się na [BindingNavigator — kontrolka](https://msdn.microsoft.com/library/18c1e2a5-9834-40d3-9b2e-2b545e4e769e).  
-  
- Aby ręcznie dodać nowych rekordów do zestawu danych, należy utworzyć nowy wiersz danych przez wywołanie metody w elemencie DataTable. Następnie dodaj wiersz, aby <xref:System.Data.DataRow> kolekcji (<xref:System.Data.DataTable.Rows%2A>) z <xref:System.Data.DataTable>:  
-  
+ [!code-vb[VbRaddataEditing#5](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#5)]
+
+## <a name="to-insert-new-rows-into-a-dataset"></a>Aby wstawić nowe wiersze do zestawu danych
+ Aplikacje korzystające z formantów powiązanych z danymi zwykle dodają nowe rekordy za pomocą przycisku **Dodaj nowy** w [kontrolce BindingNavigator](https://msdn.microsoft.com/library/18c1e2a5-9834-40d3-9b2e-2b545e4e769e).
+
+ Aby ręcznie dodać nowe rekordy do zestawu danych, Utwórz nowy wiersz danych przez wywołanie metody w elemencie DataTable. Następnie Dodaj wiersz do kolekcji <xref:System.Data.DataRow> (<xref:System.Data.DataTable.Rows%2A>) <xref:System.Data.DataTable>:
+
  [!code-csharp[VbRaddataEditing#1](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#1)]
- [!code-vb[VbRaddataEditing#1](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#1)]  
-  
- Aby zachować informacje, że zestaw danych wymaga wysyłania aktualizacji do źródła danych, należy użyć <xref:System.Data.DataRow.Delete%2A> metodę, aby usunąć wiersze w tabeli danych. Na przykład, jeśli aplikacja używa TableAdapter (lub <xref:System.Data.Common.DataAdapter>), TableAdapter `Update` metoda usuwa wierszy w bazie danych, które mają <xref:System.Data.DataRow.RowState%2A> z <xref:System.Data.DataRowState>.  
-  
- Jeśli aplikacja nie potrzebuje do wysyłania aktualizacji do źródła danych, to można usunąć rekordów, uzyskując bezpośrednio dostęp do kolekcji wierszy danych (<xref:System.Data.DataRowCollection.Remove%2A>).  
-  
-#### <a name="to-delete-records-from-a-data-table"></a>Do usuwania rekordów z tabeli danych  
-  
-- Wywołaj <xref:System.Data.DataRow.Delete%2A> metody <xref:System.Data.DataRow>.  
-  
-     Ta metoda nie usuwa fizycznie rekordu. Zamiast tego oznacza rekord do usunięcia.  
-  
+ [!code-vb[VbRaddataEditing#1](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#1)]
+
+ Aby zachować informacje wymagane przez zestaw danych do wysyłania aktualizacji do źródła danych, należy użyć metody <xref:System.Data.DataRow.Delete%2A>, aby usunąć wiersze w tabeli danych. Na przykład, jeśli aplikacja korzysta z TableAdapter (lub <xref:System.Data.Common.DataAdapter>), Metoda `Update`a TableAdapter usuwa z bazy danych wiersze, które mają <xref:System.Data.DataRow.RowState%2A> <xref:System.Data.DataRowState>.
+
+ Jeśli aplikacja nie musi wysyłać aktualizacji z powrotem do źródła danych, można usunąć rekordy, bezpośrednio uzyskując dostęp do kolekcji wierszy danych (<xref:System.Data.DataRowCollection.Remove%2A>).
+
+#### <a name="to-delete-records-from-a-data-table"></a>Aby usunąć rekordy z tabeli danych
+
+- Wywołaj metodę <xref:System.Data.DataRow.Delete%2A> <xref:System.Data.DataRow>.
+
+     Ta metoda nie usuwa fizycznie rekordu. Zamiast tego oznacza rekord do usunięcia.
+
     > [!NOTE]
-    > Jeśli liczba własności <xref:System.Data.DataRowCollection>, wynikowa liczba zawiera rekordy, które zostały oznaczone do usunięcia. Aby uzyskać dokładne liczba rekordów, które nie są oznaczone do usunięcia, można pętli kolekcji patrząc <xref:System.Data.DataRow.RowState%2A> właściwości każdego rekordu. (Rekordy oznaczone do usunięcia mają <xref:System.Data.DataRow.RowState%2A> z <xref:System.Data.DataRowState>.) Można utworzyć widok danych zestawu danych, który filtry oparte na stanie wiersza i pobieranie właściwości z tego miejsca.  
-  
-     Poniższy przykład pokazuje sposób wywoływania <xref:System.Data.DataRow.Delete%2A> metodę, aby oznaczyć pierwszy wiersz `Customers` tabeli jako usunięty:  
-  
+    > Jeśli otrzymasz Właściwość Count <xref:System.Data.DataRowCollection>, wynikowa liczba zawiera rekordy, które zostały oznaczone do usunięcia. Aby uzyskać dokładną liczbę rekordów, które nie są oznaczone do usunięcia, można wykonać pętlę w kolekcji, przeglądając Właściwość <xref:System.Data.DataRow.RowState%2A> każdego rekordu. (Rekordy oznaczone do usunięcia mają <xref:System.Data.DataRow.RowState%2A> <xref:System.Data.DataRowState>.) Alternatywnie możesz utworzyć widok danych dla zestawu danych, który filtruje na podstawie stanu wiersza i pobrać z niego Właściwość Count.
+
+     Poniższy przykład pokazuje, jak wywołać metodę <xref:System.Data.DataRow.Delete%2A>, aby oznaczyć pierwszy wiersz w tabeli `Customers` jako usunięty:
+
      [!code-csharp[VbRaddataEditing#8](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#8)]
-     [!code-vb[VbRaddataEditing#8](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#8)]  
-  
-## <a name="determine-if-there-are-changed-rows"></a>Określić, czy istnieją zmienione wiersze  
- Gdy zostaną wprowadzone zmiany do rekordów w zestawie danych, informacje o tych zmianach są przechowywane aż je zatwierdzisz. Zatwierdź zmiany po wywołaniu `AcceptChanges` metody tabeli danych lub zestaw danych lub po wywołaniu `Update` metody TableAdapter lub danych adaptera.  
-  
- Zmiany są śledzone dwa sposoby, w każdym wierszu danych:  
-  
-- Każdy wiersz danych zawiera informacje powiązane z jego <xref:System.Data.DataRow.RowState%2A> (na przykład <xref:System.Data.DataRowState>, <xref:System.Data.DataRowState>, <xref:System.Data.DataRowState>, lub <xref:System.Data.DataRowState>).  
-  
-- Każdy zmieniony wiersz danych zawiera wiele wersji tego wiersza (<xref:System.Data.DataRowVersion>), wersja oryginalna (przed zmianami) i bieżącej wersji (po zmianach). W okresie, gdy zmiany oczekujące (czas, kiedy, pozwalające reagować na <xref:System.Data.DataTable.RowChanging> zdarzeń), trzecia wersja — wersja proponowana — jest także dostępna.
-  
-  <xref:System.Data.DataSet.HasChanges%2A> Metoda zestawu danych zwraca `true` Jeśli wprowadzono zmiany w zestawie danych. Po ustaleniu, że istnieją zmienione wiersze, można wywołać `GetChanges` metody <xref:System.Data.DataSet> lub <xref:System.Data.DataTable> zwrócić zestaw zmienionych wierszy. Aby uzyskać więcej informacji, zobacz [jak: Pobieranie zmienionych wierszy](https://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9).  
-  
-#### <a name="to-determine-if-changes-have-been-made-to-any-rows"></a>Aby ustalić, czy wprowadzono zmiany do wszystkich wierszy  
-  
-- Wywołaj <xref:System.Data.DataSet.HasChanges%2A> metoda zestawu danych, aby sprawdzić zmienione wiersze.  
-  
-     Poniższy przykład pokazuje, jak sprawdzić wartość zwrotną z elementu <xref:System.Data.DataSet.HasChanges%2A> metody wykrywania, czy istnieją jakiekolwiek zmienione wiersze w zestawie danych o nazwie `NorthwindDataset1`:  
-  
+     [!code-vb[VbRaddataEditing#8](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#8)]
+
+## <a name="determine-if-there-are-changed-rows"></a>Ustal, czy zostały zmienione wiersze
+ Gdy zmiany są wprowadzane do rekordów w zestawie danych, informacje o tych zmianach są przechowywane do momentu ich zatwierdzenia. Zmiany są zatwierdzane po wywołaniu metody `AcceptChanges` zestawu danych lub tabeli danych lub wywołaniu metody `Update` karty TableAdapter lub adaptera danych.
+
+ Zmiany są śledzone dwa sposoby w każdym wierszu danych:
+
+- Każdy wiersz danych zawiera informacje dotyczące <xref:System.Data.DataRow.RowState%2A> (na przykład <xref:System.Data.DataRowState>, <xref:System.Data.DataRowState>, <xref:System.Data.DataRowState> lub <xref:System.Data.DataRowState>).
+
+- Każdy zmieniony wiersz danych zawiera wiele wersji tego wiersza (<xref:System.Data.DataRowVersion>), oryginalną wersję (przed zmianami) i bieżącą wersję (po zmianach). W czasie oczekiwania na zmianę (czas, w którym można odpowiedzieć na zdarzenie <xref:System.Data.DataTable.RowChanging>), trzecia wersja — proponowana wersja — jest również dostępna.
+
+  Metoda <xref:System.Data.DataSet.HasChanges%2A> zestawu danych zwraca `true`, jeśli wprowadzono zmiany w zestawie danych. Po ustaleniu, że istnieją zmienione wiersze, można wywołać metodę `GetChanges` <xref:System.Data.DataSet> lub <xref:System.Data.DataTable>, aby zwrócić zestaw zmienionych wierszy. Aby uzyskać więcej informacji, zobacz [How to: pobieranie zmienionych wierszy](https://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9).
+
+#### <a name="to-determine-if-changes-have-been-made-to-any-rows"></a>Aby określić, czy wprowadzono zmiany w dowolnych wierszach
+
+- Wywołaj metodę <xref:System.Data.DataSet.HasChanges%2A> zestawu danych, aby sprawdzić, czy zmieniono wiersze.
+
+     Poniższy przykład pokazuje, jak sprawdzić wartość zwracaną z metody <xref:System.Data.DataSet.HasChanges%2A>, aby wykryć, czy istnieją jakiekolwiek zmienione wiersze w zestawie danych o nazwie `NorthwindDataset1`:
+
      [!code-csharp[VbRaddataEditing#12](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#12)]
-     [!code-vb[VbRaddataEditing#12](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#12)]  
-  
-## <a name="determine-the-type-of-changes"></a>Określanie typu zmian  
- Możesz również sprawdzić, aby zobaczyć, jaki typ zmiany wprowadzono w zestawie danych, przekazując wartość z zakresu od <xref:System.Data.DataRowState> wyliczeniu, aby <xref:System.Data.DataSet.HasChanges%2A> metody.  
-  
-#### <a name="to-determine-what-type-of-changes-have-been-made-to-a-row"></a>Aby określić, jakie zmiany zostały wprowadzone, aby wiersz  
-  
-- Przekaż <xref:System.Data.DataRowState> wartość <xref:System.Data.DataSet.HasChanges%2A> metody.  
-  
-     Poniższy przykład pokazuje, jak sprawdzić zestaw danych o nazwie `NorthwindDataset1` ustalenie, jeśli jakieś nowe wiersze zostały dodane do niego:  
-  
+     [!code-vb[VbRaddataEditing#12](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#12)]
+
+## <a name="determine-the-type-of-changes"></a>Określanie typu zmian
+ Możesz również sprawdzić, czy typ zmian został wprowadzony w zestawie danych, przekazując wartość z wyliczenia <xref:System.Data.DataRowState> do metody <xref:System.Data.DataSet.HasChanges%2A>.
+
+#### <a name="to-determine-what-type-of-changes-have-been-made-to-a-row"></a>Aby określić, jakiego typu zmiany zostały dokonane w wierszu
+
+- Przekaż <xref:System.Data.DataRowState> wartość do metody <xref:System.Data.DataSet.HasChanges%2A>.
+
+     Poniższy przykład pokazuje, jak sprawdzić zestaw danych o nazwie `NorthwindDataset1`, aby określić, czy dodano do niego nowe wiersze:
+
      [!code-csharp[VbRaddataEditing#13](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#13)]
-     [!code-vb[VbRaddataEditing#13](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#13)]  
-  
-## <a name="to-locate-rows-that-have-errors"></a>Aby zlokalizować wierszy zawierających błędy  
- Podczas pracy z poszczególnych kolumn i wierszy danych, mogą wystąpić błędy. Możesz sprawdzić `HasErrors` właściwości w celu określenia, jeśli istnieją błędy w <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, lub <xref:System.Data.DataRow>.  
-  
-1. Sprawdź `HasErrors` właściwości, aby zobaczyć, czy istnieją błędy w zestawie danych.  
-  
-2. Jeśli `HasErrors` właściwość `true`, iterowania przez kolekcje tabel, a następnie za pomocą wierszy, aby znaleźć wiersza z powodu błędu.  
-  
+     [!code-vb[VbRaddataEditing#13](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#13)]
+
+## <a name="to-locate-rows-that-have-errors"></a>Aby zlokalizować wiersze z błędami
+ Podczas pracy z poszczególnymi kolumnami i wierszami danych mogą wystąpić błędy. Możesz sprawdzić Właściwość `HasErrors`, aby określić, czy błędy istnieją w <xref:System.Data.DataSet>, <xref:System.Data.DataTable> lub <xref:System.Data.DataRow>.
+
+1. Sprawdź Właściwość `HasErrors`, aby sprawdzić, czy w zestawie danych występują błędy.
+
+2. Jeśli właściwość `HasErrors` jest `true`, wykonaj iterację kolekcji tabel, a następnie za pomocą wierszy, aby znaleźć wiersz z błędem.
+
      [!code-csharp[VbRaddataEditing#23](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#23)]
      [!code-vb[VbRaddataEditing#23](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#23)]

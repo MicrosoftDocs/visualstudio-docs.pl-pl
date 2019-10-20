@@ -1,5 +1,5 @@
 ---
-title: Mobilność — ostrzeżenia | Dokumentacja firmy Microsoft
+title: Ostrzeżenia dotyczące mobilności | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,24 +12,24 @@ helpviewer_keywords:
 - warnings, mobility
 ms.assetid: 9808054c-593b-4fc3-92cc-1fc45f41569c
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: e67be4e501cb2d0dd9d584250fcea91af13fe657
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c9f5606540d55c0a2c4257ff397ad77cc55624b4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68201251"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655979"
 ---
 # <a name="mobility-warnings"></a>Mobilność — Ostrzeżenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Ostrzeżenia dotyczące mobilności obsługują zużycie energii wydajne.  
-  
-## <a name="in-this-section"></a>W tej sekcji  
-  
-|Reguła|Opis|  
-|----------|-----------------|  
-|[CA1600: Nie używaj priorytetu procesu bezczynności](../code-quality/ca1600-do-not-use-idle-process-priority.md)|Nie należy ustawiać priorytetu procesu na Idle. Procesy, które mają System.Diagnostics.ProcessPriorityClass.Idle, zajmują procesor, gdy może on być bezczynny, a zatem będą blokować stan gotowości.|  
+Ostrzeżenia dotyczące mobilności obsługują wydajne zużycie mocy.
+
+## <a name="in-this-section"></a>W tej sekcji
+
+|Reguła|Opis|
+|----------|-----------------|
+|[CA1600: Nie używaj priorytetu procesu bezczynności](../code-quality/ca1600-do-not-use-idle-process-priority.md)|Nie należy ustawiać priorytetu procesu na Idle. Procesy, które mają System.Diagnostics.ProcessPriorityClass.Idle, zajmują procesor, gdy może on być bezczynny, a zatem będą blokować stan gotowości.|
 |[CA1601: Nie używaj czasomierzy, które uniemożliwiają zmiany stanu zasilania](../code-quality/ca1601-do-not-use-timers-that-prevent-power-state-changes.md)|Wyższa częstotliwość działań okresowych sprawi, że procesor będzie zajęty, co zakłóci działanie czasomierzy bezczynności oszczędzających energię, które wyłączają ekran i dyski twarde.|

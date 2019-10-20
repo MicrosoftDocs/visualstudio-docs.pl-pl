@@ -1,42 +1,41 @@
 ---
-title: Elementy podrzędne (właściwość dynamiczna XElement) | Dokumentacja firmy Microsoft
+title: Elementy podrzędne (właściwość dynamiczna XElement) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 9611d00f-23bf-444b-ab0c-f30701bfc13d
 caps.latest.revision: 4
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8c89e04346a4b08d6ee7bbc0012ef52f3b648512
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0b0496a04219c88573b3b555ef879a046d90faa3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68178203"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664786"
 ---
 # <a name="descendants-xelement-dynamic-property"></a>Elementy podrzędne (właściwość dynamiczna XElement)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Pobiera służy do pobierania wszystkie elementy zależne bieżącego elementu, które odpowiadają określonej rozwiniętą nazwę indeksatora.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```  
-elem.Descendants[{namespaceName}localName]  
-```  
-  
-## <a name="property-valuereturn-value"></a>Wartość właściwości/Zwracana wartość  
- Indeksator typu `IEnumerable<XElement> Item(String expandedName)`. Ten indeksator przyjmuje rozwiniętą nazwę określonego elementów podrzędnych i zwraca pasujące elementy podrzędne w <xref:System.Collections.IEnumerable> `<` <xref:System.Xml.Linq.XElement> `>` kolekcji.  
-  
-## <a name="remarks"></a>Uwagi  
- Ta właściwość jest równoważna <xref:System.Xml.Linq.XContainer.Descendants%28System.Xml.Linq.XName%29?displayProperty=fullName> metody <xref:System.Xml.Linq.XContainer> klasy.  
-  
- Elementy w kolekcji zwracane są w kolejności dokumentu źródła XML.  
-  
- Ta właściwość używa odroczonego wykonania.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Właściwości dynamiczne klasy XElement](../designers/xelement-class-dynamic-properties.md)   
- [Elements](../designers/elements-xelement-dynamic-property.md)
+Pobiera indeksator używany do pobierania wszystkich elementów podrzędnych bieżącego elementu, który jest zgodny z określoną rozwiniętą nazwą.
+
+## <a name="syntax"></a>Składnia
+
+```
+elem.Descendants[{namespaceName}localName]
+```
+
+## <a name="property-valuereturn-value"></a>Wartość właściwości/Zwracana wartość
+ Indeksator typu `IEnumerable<XElement> Item(String expandedName)`. Ten indeksator przyjmuje rozwiniętą nazwę określonych elementów potomnych i zwraca pasujące elementy podrzędne w <xref:System.Collections.IEnumerable> `<` <xref:System.Xml.Linq.XElement> `>` kolekcji.
+
+## <a name="remarks"></a>Uwagi
+ Ta właściwość jest równoważna z metodą <xref:System.Xml.Linq.XContainer.Descendants%28System.Xml.Linq.XName%29?displayProperty=fullName> klasy <xref:System.Xml.Linq.XContainer>.
+
+ Elementy w zwracanej kolekcji znajdują się w kolejności dokumentu źródłowego XML.
+
+ Ta właściwość używa wykonania odroczonego.
+
+## <a name="see-also"></a>Zobacz też
+ [Elementy](../designers/elements-xelement-dynamic-property.md) [właściwości dynamicznych klasy XElement](../designers/xelement-class-dynamic-properties.md)

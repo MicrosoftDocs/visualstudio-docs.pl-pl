@@ -2,64 +2,64 @@
 title: Udostępnianie klas między językami DSL za pomocą biblioteki DSL
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36c49d3447a5f1fafcf4601057c66ebedcb193ec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5293473e35424ccc6ee357d63a9355cacf0d6725
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63003383"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670751"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>Udostępnianie klas między językami DSL za pomocą biblioteki DSL
-W Visual Studio Visualization i Modeling SDK można utworzyć niekompletne definicji DSL, który można zaimportować do innego języka DSL. Dzięki temu można wziąć pod uwagę części wspólnej podobne modeli.
+W programie Visual Studio Wizualizacja i Modeling SDK można utworzyć niekompletną definicję DSL, którą można zaimportować do innego modemu DSL. Pozwala to na wspólne części podobnych modeli.
 
-## <a name="creating-and-using-dsl-libraries"></a>Tworzenie i używanie biblioteki DSL
+## <a name="creating-and-using-dsl-libraries"></a>Tworzenie i używanie bibliotek DSL
 
-#### <a name="to-create-a-dsl-library"></a>Aby utworzyć biblioteki DSL
+#### <a name="to-create-a-dsl-library"></a>Aby utworzyć bibliotekę DSL
 
-1. Tworzenie nowego projektu DSL, a następnie wybierz szablon rozwiązania bibliotekę DSL.
+1. Utwórz nowy projekt DSL i wybierz szablon rozwiązania biblioteki DSL.
 
-     Do tego pojedynczego projektu DSL zostanie utworzony przy użyciu modelu puste.
+     Pojedynczy projekt DSL zostanie utworzony z pustym modelem.
 
-2. Można dodać klasy domeny, relacje, kształty i tak dalej.
+2. Można dodać klasy domen, relacje, kształty i tak dalej.
 
-     Elementy w bibliotece nie trzeba utworzyć pojedynczy drzewo osadzania.
+     Elementy w bibliotece nie muszą tworzyć jednego drzewa osadzania.
 
-     Aby zdefiniować relacji importers można użyć, Utwórz dwoma klasami domeny i tworzenie relacji między nimi.
+     Aby zdefiniować relację, która może być używana przez importerów, należy utworzyć dwie klasy domeny i utworzyć relację między nimi.
 
-     Rozważ ustawienie **modyfikator dziedziczenia** klas domeny na potrzeby `Abstract`.
+     Rozważ ustawienie **modyfikatora dziedziczenia** klas domeny na `Abstract`.
 
-3. Możesz dodać elementy, które określają w Eksplorator DSL, takich jak konstruktory połączeń.
+3. Można dodawać elementy zdefiniowane w Eksploratorze DSL, takie jak konstruktory połączeń.
 
-4. Można dodać dostosowania, które wymagają dodatkowego kodu, takie jak ograniczenia sprawdzania poprawności.
+4. Można dodać dostosowania wymagające dodatkowego kodu, takie jak ograniczenia walidacji.
 
-5. Kliknij przycisk **Transformuj wszystkie szablony**.
+5. Kliknij kolejno pozycje **Przekształć wszystkie szablony**.
 
 6. Skompiluj projekt.
 
-7. Podczas dystrybucji DSL, aby inne osoby mogły używać należy podać zarówno w skompilowanym zestawie (DLL), jak i plik `DslDefinition.dsl`. Skompilowanego zestawu można znaleźć w folderze w `Dsl\bin\*`
+7. W przypadku dystrybucji DSL do użytku przez inne osoby należy zapewnić zarówno skompilowany zestaw (DLL), jak i plik `DslDefinition.dsl`. Skompilowany zestaw można znaleźć w folderze `Dsl\bin\*`
 
-#### <a name="to-import-a-dsl-library"></a>Aby zaimportować biblioteki DSL
+#### <a name="to-import-a-dsl-library"></a>Aby zaimportować bibliotekę DSL
 
-1. W innej definicji DSL w **Eksplorator DSL**, kliknij prawym przyciskiem myszy klasę głównego język DSL, a następnie kliknij przycisk **Dodaj nowy element DslLibrary Import**.
+1. W innej definicji DSL, w **Eksploratorze DSL**, kliknij prawym przyciskiem myszy klasy głównej DSL, a następnie kliknij pozycję **Dodaj nowy DslLibrary zaimportować**.
 
-2. W oknie właściwości ustaw **ścieżka pliku** biblioteki. Można użyć względna lub bezwzględna.
+2. W okno Właściwości ustaw **ścieżkę pliku** biblioteki. Możesz użyć ścieżki względnej lub bezwzględnej.
 
-    Zaimportowanej biblioteki pojawia się w Eksplorator DSL w trybie tylko do odczytu.
+    Zaimportowana Biblioteka pojawia się w Eksploratorze DSL w trybie tylko do odczytu.
 
-3. Zaimportowane klasy można użyć jako klasy bazowej. Utwórz klasę domeny w importowania DSL, a w oknie właściwości ustaw oknie **klasa bazowa** do zaimportowanej klasy.
+3. Zaimportowanych klas można użyć jako klas bazowych. Utwórz klasę domeny w imporcie DSL i w okno Właściwości ustaw **klasę bazową** na zaimportowaną klasę.
 
-4. Kliknij przycisk Przekształć wszystkie szablony.
+4. Kliknij kolejno pozycje Przekształć wszystkie szablony.
 
-5. Dodaj do projektu DSL odwołanie do zestawu (DLL), który został zbudowany przez projekt biblioteki DSL.
+5. Dodaj do projektu DSL odwołanie do zestawu (DLL), który został skompilowany przez projekt biblioteki DSL.
 
 6. Skompiluj rozwiązanie.
 
-   Biblioteka DSL można zaimportować innych bibliotek. Podczas importowania biblioteki jego importów również automatycznie są wyświetlane w Eksploratorze DSL.
+   Biblioteka DSL może importować inne biblioteki. Podczas importowania biblioteki jego Importy są również automatycznie wyświetlane w Eksploratorze DSL.
 
 ## <a name="see-also"></a>Zobacz też
 

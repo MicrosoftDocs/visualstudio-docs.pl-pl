@@ -1,5 +1,5 @@
 ---
-title: Opcje, Edytor tekstu, wszystkie języki, karty | Dokumentacja firmy Microsoft
+title: Opcje, Edytor tekstu, wszystkie języki, karty | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -18,54 +18,46 @@ helpviewer_keywords:
 - Code Editor, tabs
 ms.assetid: 7e208e1d-5e3a-4bf7-a27b-4417e3e049c7
 caps.latest.revision: 21
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6d3a031c8e7837d76b5d2c7ab91c5702f59598a0
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 4cb670ab52e321f15c5b009c66ca40623409f10a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65693737"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662385"
 ---
 # <a name="options-text-editor-all-languages-tabs"></a>Opcje, edytor tekstu, wszystkie języki, karty
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-To okno dialogowe pozwala zmienić domyślne zachowanie edytora kodu. Te ustawienia mają zastosowanie również do innych edytorów oparte na kod edytora, takiego jak widok źródła w Projektancie HTML. Aby wyświetlić te opcje, wybierz **opcje** z **narzędzia** menu. W ramach **edytora tekstów** rozwiń folder **wszystkie języki** podfolder, a następnie wybierz **karty**.  
-  
+To okno dialogowe umożliwia zmianę domyślnego zachowania edytora kodu. Te ustawienia mają zastosowanie również do innych edytorów w oparciu o Edytor kodu, taki jak widok źródła projektanta HTML. Aby wyświetlić te opcje, wybierz opcję **Opcje** z menu **Narzędzia** . W folderze **Edytor tekstu** rozwiń podfolder **wszystkie języki** , a następnie wybierz pozycję **karty**.
+
 > [!CAUTION]
-> Ta strona ustawia domyślne opcje dla wszystkich języków programowania. Należy pamiętać, że zresetowanie opcji, w tym oknie dialogowym przywróci Opcje kart we wszystkich językach niezależnie od opcji wybranych są w tym miejscu. Aby zmienić opcje edytora tekstowego dla tylko jednego języka, rozwiń podfolder dla danego języka, a następnie wybierz jego stron opcji.  
-  
- W przypadku różnych ustawień na stronach opcji karty dla określonych języków programowania, a następnie komunikat "Ustawienia wcięć dla pojedynczych tekstu formatów będących w konflikcie ze sobą" jest wyświetlana dla różniących się **Indenting**opcje; i wyświetlany jest komunikat "Ustawienia tabulacji dla pojedynczych tekstu formatów będących w konflikcie ze sobą," dla różniących się **kartę** opcje. Na przykład tego monitu jest wyświetlana, jeśli **inteligentnego wcięcia** opcja jest zaznaczona dla języka Visual Basic, ale **Block wcięcia** został wybrany do Visual C++.  
-  
+> Ta strona służy do ustawiania opcji domyślnych dla wszystkich języków deweloperskich. Pamiętaj, że Resetowanie opcji w tym oknie dialogowym spowoduje zresetowanie opcji tabulatorów we wszystkich językach do wybranych opcji. Aby zmienić opcje edytora tekstu dla tylko jednego języka, rozwiń podfolder dla tego języka i wybierz jego strony opcji.
+
+ Jeśli na stronach opcji kart są wybrane różne ustawienia dla określonych języków programowania, komunikat "Ustawienia wcięć dla pojedynczych formatów tekstu kolidują ze sobą" jest wyświetlany w przypadku różnych opcji **wcięć** ; a komunikat "ustawienia tabulacji dla pojedynczych formatów tekstu kolidują ze sobą," jest wyświetlany dla różnych opcji **tabulacji** . Na przykład, to przypomnienie jest wyświetlane, jeśli wybrano opcję **inteligentnego tworzenia wcięć** dla Visual Basic, ale dla wizualizacji C++jest wybrane **wcięcie bloku** .
+
 > [!NOTE]
-> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
-  
-## <a name="indenting"></a>Wcięcia  
- Brak  
- Po wybraniu nowe wiersze są nie będą wcięte. Punkt wstawiania znajduje się w pierwszej kolumnie znakiem nowego wiersza.  
-  
- Blok  
- Po wybraniu nowych wierszy tworzone jest wcięcie automatycznie. Punkt wstawiania znajduje się w tym samym punkcie wyjścia, jak poprzedni wiersz.  
-  
- Inteligentne  
- Po wybraniu nowe wiersze są umieszczone w celu dopasowania kontekst kodu według innych kodów formatowania, ustawienia i konwencje technologii IntelliSense dla języka programowania. Ta opcja nie jest dostępny dla wszystkich języków programowania.  
-  
- Na przykład wiersze ujęte w nawias klamrowy otwierający ({}) i zamykający nawias klamrowy (}) może być automatycznie wcięty dodatkowe tabulatora od pozycji wyrównany nawiasów klamrowych.  
-  
-## <a name="tabs"></a>Karty  
- Rozmiar tabulatora  
- Ustawia odległość w spacji między kartę zatrzymuje. Wartość domyślna to cztery miejsca do magazynowania.  
-  
- Wcięcie  
- Określa rozmiar w obszarach automatyczne wcięcia. Wartość domyślna to cztery miejsca do magazynowania. Znaki tabulacji i/lub spacjami zostanie wstawiony do wypełnienia określonego rozmiaru.  
-  
- Wstawiaj odstępy  
- Po wybraniu operacji wcięcie wstawić tylko znaki spacji, nie znaki TABULACJI. Jeśli **wcięcie** jest ustawiony na 5, na przykład, następnie pięć znaków spacji są wstawiane po naciśnięciu klawisza TAB lub **Zwiększ wcięcie** znajdujący się na **formatowanie** pasek narzędzi.  
-  
- Utrzymaj tabulacje  
- Po wybraniu operacji wcięcie Wstaw tyle znaków TABULACJI jak to możliwe. Każdy znak TABULACJI Wstawia liczbę spacji określoną w **wielkość tabulatora**. Jeśli **wcięcie** nie jest całkowitą wielokrotnością **wielkość tabulatora**, spacje są dodawane do Wypełnij różnica.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Opcje, Edytor tekstu wszystkie języki](../../ide/reference/options-text-editor-all-languages.md)   
- [Ogólne, Środowisko, Opcje — okno dialogowe](../../ide/reference/general-environment-options-dialog-box.md)
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, wybierz **Importuj i Eksportuj ustawienia** w menu **Narzędzia** . Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień deweloperskich w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+
+## <a name="indenting"></a>Wcięcia
+ Brak, gdy to zaznaczone, nowe wiersze nie mają wcięcia. Punkt wstawiania zostanie umieszczony w pierwszej kolumnie nowego wiersza.
+
+ Zablokuj, gdy zaznaczone, nowe wiersze są automatycznie wcięte. Punkt wstawiania jest umieszczany w tym samym punkcie początkowym co poprzedni wiersz.
+
+ Inteligentne, gdy zaznaczone, nowe wiersze są pozycjonowane w celu dopasowania do kontekstu kodu, według innych ustawień formatowania kodu i Konwencji IntelliSense dla języka deweloperskiego. Ta opcja nie jest dostępna dla wszystkich języków deweloperskich.
+
+ Na przykład wiersze ujęte w nawias klamrowy otwierającego ({) i zamykającego nawiasu klamrowego (}) mogą automatycznie powodować wcięcie dodatkowego tabulatora od pozycji wyrównanych nawiasów klamrowych.
+
+## <a name="tabs"></a>Karty
+ Rozmiar karty Ustawia odległość między tabulatorami. Wartość domyślna to cztery spacje.
+
+ Wcięcie rozmiaru ustawia rozmiar w odstępach automatycznego wcięcia. Wartość domyślna to cztery spacje. Znaki tabulacji, znaki spacji lub oba zostaną wstawione w celu wypełnienia określonego rozmiaru.
+
+ Wstawiaj spacje po zaznaczeniu, operacje wcięcia wstawiają tylko znaki spacji, a nie znaki TABULACJi. Jeśli **Rozmiar wcięcia** jest ustawiony na 5, na przykład po naciśnięciu klawisza TAB lub przycisku **Zwiększ wcięcie** na pasku narzędzi **formatowania** zostanie wstawionych pięć znaków spacji.
+
+ Zachowaj karty po zaznaczeniu, aby zwiększyć liczbę znaków TABULACJi. Każdy znak TABULACJi wypełnia liczbę spacji określoną w polu **rozmiar karty**. Jeśli **Rozmiar wcięcia** nie jest parzystą wielokrotnością **rozmiaru karty**, znaki spacji są dodawane do wypełnienia różnic.
+
+## <a name="see-also"></a>Zobacz też
+ [Opcje, Edytor tekstu, wszystkie języki](../../ide/reference/options-text-editor-all-languages.md) [Ogólne, środowisko, Opcje — okno dialogowe](../../ide/reference/general-environment-options-dialog-box.md)

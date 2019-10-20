@@ -1,5 +1,5 @@
 ---
-title: 'CA1025: Zastąp powtarzające się argumenty tablicą params | Dokumentacja firmy Microsoft'
+title: 'CA1025: Zastąp powtarzalne argumenty z tablicą parametrów | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,37 +12,37 @@ helpviewer_keywords:
 - CA1025
 ms.assetid: f009b340-dea3-4459-8fe1-2143aa8b5d0b
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 83d36f1f5cd31b1ad1833dd805f4386ac71a3ed1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 21d13611a3c4dd11eb691c746f8746347fb9a83b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68144795"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661970"
 ---
-# <a name="ca1025-replace-repetitive-arguments-with-params-array"></a>CA1025: Zastąp powtarzalne argumenty tablicą params
+# <a name="ca1025-replace-repetitive-arguments-with-params-array"></a>CA1025: Zastąp powtarzające się argumenty tabelą parametrów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|ReplaceRepetitiveArgumentsWithParamsArray|
 |CheckId|CA1025|
-|Kategoria|Microsoft.Design|
-|Zmiana kluczowa|Bez podziału|
+|Kategoria|Microsoft. Design|
+|Zmiana kluczowa|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
- Metoda publiczna lub chroniona w typie publicznym ma więcej niż trzy parametry, a jego trzy ostatnie parametry są tego samego typu.
+ Metoda publiczna lub chroniona w typie publicznym ma więcej niż trzy parametry, a jego ostatnie trzy parametry są tego samego typu.
 
 ## <a name="rule-description"></a>Opis reguły
- Użyj tablicy parametrów zamiast powtarzających się argumentów, jeśli dokładna liczba argumentów jest nieznany i argumenty zmiennych są tego samego typu lub mogą być przekazywane jako tego samego typu. Na przykład <xref:System.Console.WriteLine%2A> metoda zapewnia ogólnego przeznaczenia przeciążenia, które używa tablicy parametrów, aby zaakceptować dowolną liczbę <xref:System.Object> argumentów.
+ Użyj tablicy parametrów zamiast powtarzanych argumentów, gdy dokładna liczba argumentów jest nieznana, a argumenty zmiennych są tego samego typu lub mogą być przekazane jako ten sam typ. Na przykład Metoda <xref:System.Console.WriteLine%2A> zapewnia Przeciążenie ogólnego przeznaczenia, które używa tablicy parametrów do akceptowania dowolnej liczby argumentów <xref:System.Object>.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, Zastąp powtarzające się argumenty tablicą parametrów.
+ Aby naprawić naruszenie tej reguły, Zastąp powtarzalne argumenty tablicą parametrów.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Jest zawsze bezpieczne ostrzeżenia od tej reguły; Jednak ten projekt może spowodować problemy z użytecznością.
+ Zawsze można bezpiecznie pominąć ostrzeżenie z tej reguły. Jednak ten projekt może powodować problemy z użytecznością.
 
 ## <a name="example"></a>Przykład
  Poniższy przykład pokazuje typ, który narusza tę regułę.

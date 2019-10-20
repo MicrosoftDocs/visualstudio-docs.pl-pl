@@ -13,90 +13,90 @@ helpviewer_keywords:
 - queries [Visual Studio], TableAdapters
 ms.assetid: 104d1d19-b5a9-4071-b81e-1b3af08e9c7b
 caps.latest.revision: 24
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1da058cbbdda71758e9a158cfd6778a044797093
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 560587e70365a485c3391a0623b959f88d417698
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65703825"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72671059"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Tworzenie sparametryzowanych zapytań adaptera TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Uruchamianie zapytania parametrycznego zwraca dane spełniające warunki klauzuli WHERE w ramach zapytania. Na przykład można zdefiniować parametry listę klientów, aby wyświetlić tylko klienci niektóre miasta, dodając `WHERE City = @City` do końca instrukcji SQL, które zwraca listę klientów.  
-  
-Utworzysz sparametryzowanych zapytań adaptera TableAdapter w Projektancie obiektów Dataset. Można też utworzyć w aplikacji Windows, za pomocą **parametryzacja źródła danych** polecenie **danych** menu. **Parametryzacja źródła danych** polecenie tworzy formantów w formularzu, gdzie wartości parametrów wejściowych i uruchom zapytanie.  
-  
+Zapytanie sparametryzowane zwraca dane, które spełniają warunki klauzuli WHERE w zapytaniach. Na przykład możesz Sparametryzuj listę klientów, aby wyświetlić tylko klientów w określonym mieście, dodając `WHERE City = @City` na końcu instrukcji SQL, która zwraca listę klientów.
+
+W Projektant obiektów Dataset można tworzyć sparametryzowane zapytania TableAdapter. Można je również utworzyć w aplikacji systemu Windows za pomocą polecenia **Sparametryzuj źródło danych** w menu **dane** . Polecenie **Sparametryzuj Data Source** tworzy kontrolki w formularzu, gdzie można wprowadzać wartości parametrów i uruchamiać zapytanie.
+
 > [!NOTE]
-> Podczas tworzenia zapytania parametrycznego, użyj notacji parametru, które są specyficzne dla bazy danych, która jest kodowania dla. Na przykład źródła danych programu Access i OleDb użyć znaku zapytania '?' do oznaczania parametrów, dlatego klauzuli WHERE będzie wyglądać następująco: `WHERE City = ?`.  
-  
+> Podczas konstruowania zapytania parametrycznego należy użyć notacji parametru, która jest specyficzna dla bazy danych, względem której jest używane kodowanie. Na przykład źródła danych dostępu i OleDb używają znaku zapytania "?" do określenia parametrów, więc klauzula WHERE będzie wyglądać następująco: `WHERE City = ?`.
+
 > [!NOTE]
-> Polecenia menu i okien dialogowych mogą różnić się od tych opisanych w pomocy, w zależności od Twojego ustawień aktywnych lub wydania, którego używasz. Aby zmienić swoje ustawienia, przejdź do **narzędzia** menu, a następnie wybierz **Import i eksport ustawień**. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
-  
-## <a name="create-a-parameterized-tableadapter-query"></a>Tworzenie sparametryzowanych zapytań TableAdapter 
-  
-- Utwórz nowy obiekt TableAdapter, dodając klauzulę WHERE z odpowiednie parametry do instrukcji SQL. Aby uzyskać więcej informacji, zobacz [tworzenie i konfigurowanie adapterów TableAdapter](../data-tools/create-and-configure-tableadapters.md).  
-  
-     —lub—  
-  
-- Dodaj zapytanie na istniejący obiekt TableAdapter, dodając klauzulę WHERE z odpowiednie parametry do instrukcji SQL.
-  
-### <a name="create-a-parameterized-query-while-designing-a-data-bound-form"></a>Utwórz zapytanie parametryczne podczas projektowania formularza powiązanych z danymi  
-  
-1. Wybierz kontrolkę w formularzu, która jest już powiązany z zestawem danych. Aby uzyskać więcej informacji, zobacz [formanty powiązania formularzy Windows do danych w programie Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md).  
-  
-2. Na **danych** menu, wybierz opcję**Dodaj zapytanie**.  
-  
-3. Wykonaj **Konstruktor kryteriów wyszukiwania** okno dialogowe, dodając klauzulę WHERE z odpowiednie parametry do instrukcji SQL.  
-  
-### <a name="add-a-query-to-an-existing-data-bound-form"></a>Dodaj zapytanie do istniejącego formularza powiązanych z danymi  
-  
-1. Otwórz formularz w **Windows Forms Designer**.  
-  
-2. Na **danych** menu, wybierz opcję **Dodaj zapytanie** lub **tagów inteligentnych danych**.  
-  
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w pomocy, w zależności od ustawień aktywnych lub używanej wersji. Aby zmienić ustawienia, przejdź do menu **Narzędzia** , a następnie wybierz pozycję **Importuj i Eksportuj ustawienia**. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień deweloperskich w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+
+## <a name="create-a-parameterized-tableadapter-query"></a>Tworzenie sparametryzowanych zapytań TableAdapter
+
+- Utwórz nowy TableAdapter, dodając klauzulę WHERE z odpowiednimi parametrami do instrukcji SQL. Aby uzyskać więcej informacji, zobacz [Tworzenie i Konfigurowanie TableAdapters](../data-tools/create-and-configure-tableadapters.md).
+
+     —lub—
+
+- Dodaj zapytanie do istniejącego TableAdapter, dodając klauzulę WHERE z odpowiednimi parametrami do instrukcji SQL.
+
+### <a name="create-a-parameterized-query-while-designing-a-data-bound-form"></a>Utwórz zapytanie parametryczne podczas projektowania formularza powiązanego z danymi
+
+1. Wybierz kontrolkę w formularzu, która jest już powiązana z zestawem danych. Aby uzyskać więcej informacji, zobacz [Powiązywanie formantów Windows Forms z danymi w programie Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md).
+
+2. W menu **dane** wybierz polecenie**Dodaj zapytanie**.
+
+3. Wypełnij okno dialogowe **Konstruktor kryteriów wyszukiwania** , dodając klauzulę WHERE z odpowiednimi parametrami do instrukcji SQL.
+
+### <a name="add-a-query-to-an-existing-data-bound-form"></a>Dodawanie zapytania do istniejącego formularza powiązanego z danymi
+
+1. Otwórz formularz w **Projektant formularzy systemu Windows**.
+
+2. W menu **dane** wybierz pozycję **Dodaj zapytanie** lub **Tagi inteligentne danych**.
+
    > [!NOTE]
-   > Jeśli **Dodaj zapytanie** nie jest dostępny na **danych** menu, wybierz formant w formularzu, wyświetla źródła danych, możesz chcesz dodać parametry do. Na przykład, jeśli w formularzu są wyświetlane dane w <xref:System.Windows.Forms.DataGridView> sterowania, wybierz ją. Jeśli w formularzu wyświetlane dane w poszczególnych formantów, wybierz dowolny formant powiązany z danymi.  
-  
-3. W **tabeli źródła danych wybierz** obszaru, wybierz tablethat, którą chcesz dodać parametryzacji do.  
-  
-4. Wpisz nazwę w **Nowa nazwa zapytania** pole, jeśli tworzysz nową kwerendę.  
-  
-    —lub—  
-  
-    Wybierz zapytanie w **Ejąca nazwa zapytania** pole.  
-  
-5. W **tekst zapytania** wpisz kwerendę, która przyjmuje parametry.  
-  
-6. Kliknij przycisk **OK**.  
-  
-    Co formantu, aby parametr wejściowy, a co **obciążenia** przycisk są dodawane do formularza w <xref:System.Windows.Forms.ToolStrip> kontroli.  
-  
-   Parametry TableAdapter można przypisać wartości null wyszukiwać rekordy, które nie mają żadnej wartości bieżącej. Na przykład, należy wziąć pod uwagę następujące zapytanie, które ma `ShippedDate` parametru w jego `WHERE` klauzuli:  
-  
+   > Jeśli polecenie **Dodaj zapytanie** nie jest dostępne w menu **dane** , zaznacz kontrolkę w formularzu wyświetlającym źródło danych, do którego chcesz dodać parametryzacja. Na przykład, jeśli formularz wyświetla dane w kontrolce <xref:System.Windows.Forms.DataGridView>, zaznacz ją. Jeśli formularz wyświetla dane w poszczególnych kontrolkach, wybierz dowolny formant powiązany z danymi.
+
+3. W obszarze **Wybierz tabelę źródła danych** wybierz tablethat, do którego chcesz dodać parametryzacja.
+
+4. Wpisz nazwę w polu **Nowa nazwa zapytania** , jeśli tworzysz nowe zapytanie.
+
+    —lub—
+
+    W polu **Nazwa istniejącej kwerendy** wybierz zapytanie.
+
+5. W polu **tekstowym zapytanie** Wpisz zapytanie, które pobiera parametry.
+
+6. Wybierz **przycisk OK**.
+
+    Kontrolka do wprowadzania parametru i przycisk **ładowania** są dodawane do formularza w kontrolce <xref:System.Windows.Forms.ToolStrip>.
+
+   Parametry TableAdapter mogą mieć przypisane wartości null, jeśli chcesz wysyłać zapytania o rekordy, które nie mają bieżącej wartości. Rozważmy na przykład następujące zapytanie, które ma `ShippedDate` parametr w jego klauzuli `WHERE`:
+
    ```sql
-   SELECT CustomerID, OrderDate, ShippedDate  
-   FROM Orders  
-   WHERE (ShippedDate = @ShippedDate) OR  
-   (ShippedDate IS NULL)  
+   SELECT CustomerID, OrderDate, ShippedDate
+   FROM Orders
+   WHERE (ShippedDate = @ShippedDate) OR
+   (ShippedDate IS NULL)
    ```
 
-Gdyby to zapytanie w metodzie TableAdapter, wysłać zapytanie o wszystkie zamówienia, które nie zostały wydane z następującym kodem:  
-  
+Jeśli było to zapytanie w TableAdapter, można wykonać zapytanie o wszystkie zamówienia, które nie zostały dostarczone z następującym kodem:
+
    [!code-csharp[VbRaddataTableAdapters#8](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataTableAdapters/CS/Form2.cs#8)]
-   [!code-vb[VbRaddataTableAdapters#8](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataTableAdapters/VB/Form2.vb#8)]  
-  
-### <a name="enable-a-query-to-accept-null-values"></a>Włącz zapytanie, aby akceptować wartości null  
-  
-1. W **Projektanta obiektów Dataset**, wybierz zapytanie TableAdapter, które wymaga, aby zaakceptować wartości parametru o wartości null.  
-  
-2. W **właściwości** wybierz **parametry**. Naciśnij przycisk wielokropka (**...** ) przycisk, aby otworzyć **Edytor kolekcji parametrów**.  
-  
-3. Wybierz parametr, który dopuszcza wartości null i ustaw **AllowDbNull** właściwość `true`.  
-  
+   [!code-vb[VbRaddataTableAdapters#8](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataTableAdapters/VB/Form2.vb#8)]
+
+### <a name="enable-a-query-to-accept-null-values"></a>Włącz zapytanie, aby akceptowało wartości null
+
+1. W **Projektant obiektów DataSet**wybierz zapytanie TableAdapter, które wymaga zaakceptowania wartości parametrów null.
+
+2. W oknie **Właściwości** wybierz pozycję **Parametry**. Następnie naciśnij przycisk wielokropka ( **...** ), aby otworzyć **Edytor kolekcji parametrów**.
+
+3. Wybierz parametr, który dopuszcza wartości null i ustaw właściwość **AllowDBNull** na `true`.
+
 ## <a name="see-also"></a>Zobacz także
 
 - [Wypełnianie zestawów danych za pomocą adapterów TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md)

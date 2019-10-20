@@ -1,5 +1,5 @@
 ---
-title: 'CA2115: Wywołaj GC. KeepAlive podczas korzystania z zasobów natywnych | Dokumentacja firmy Microsoft'
+title: 'CA2115: Wywołaj metodę GC. Utrzymywanie aktywności w przypadku korzystania z zasobów natywnych | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,17 +12,17 @@ helpviewer_keywords:
 - CallGCKeepAliveWhenUsingNativeResources
 ms.assetid: f00a59a7-2c6a-4bbe-a1b3-7bf77d366f34
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: c035c05480279012fba1101c3a60b020d34b1890
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: e0aa10cc453919a2a79ee6d3d46db95c19d8756e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65687341"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658699"
 ---
-# <a name="ca2115-call-gckeepalive-when-using-native-resources"></a>CA2115: Wywołaj funkcję GC.KeepAlive w przypadku korzystania z zasobów natywnych
+# <a name="ca2115-call-gckeepalive-when-using-native-resources"></a>CA2115: Wywołaj GC.KeepAlive gdy używasz zasobów natywnych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -30,33 +30,33 @@ ms.locfileid: "65687341"
 |TypeName|CallGCKeepAliveWhenUsingNativeResources|
 |CheckId|CA2115|
 |Kategoria|Microsoft.Security|
-|Zmiana kluczowa|Bez podziału|
+|Zmiana kluczowa|Bez przerywania|
 
 ## <a name="cause"></a>Przyczyna
- Metody zadeklarowane w typie z finalizatorem odwołuje się do <xref:System.IntPtr?displayProperty=fullName> lub <xref:System.UIntPtr?displayProperty=fullName> pola, ale nie mogą wywoływać <xref:System.GC.KeepAlive%2A?displayProperty=fullName>.
+ Metoda zadeklarowana w typie z finalizatorem odwołuje się do <xref:System.IntPtr?displayProperty=fullName> lub <xref:System.UIntPtr?displayProperty=fullName> pola, ale nie wywołuje <xref:System.GC.KeepAlive%2A?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Opis reguły
- Kończenie znajdujących obiektu wyrzucania elementów bezużytecznych, jeśli Brak odwołań do niego w kodzie zarządzanym. Niezarządzane odwołania do obiektów nie uniemożliwiają wyrzucania elementów bezużytecznych. Ta reguła wykrywa błędy, które mogą wystąpić, ponieważ kończy się działanie niezarządzanego zasobu, a wciąż jest on używany w kodzie niezarządzanym.
+ Wyrzucanie elementów bezużytecznych kończy obiekt, jeśli nie ma więcej odwołań do niego w kodzie zarządzanym. Niezarządzane odwołania do obiektów nie uniemożliwiają wyrzucania elementów bezużytecznych. Ta reguła wykrywa błędy, które mogą wystąpić, ponieważ kończy się działanie niezarządzanego zasobu, a wciąż jest on używany w kodzie niezarządzanym.
 
- Reguła ta zakłada, że <xref:System.IntPtr> i <xref:System.UIntPtr> pola Zapisz wskaźniki do niezarządzanych zasobów. Ponieważ finalizator ma na celu zwolnienie niezarządzanych zasobów, reguła zakłada, że finalizator zwolni niezarządzany zasób wskazywany przez wskaźnik pola. Reguła ta zakłada również, że metoda odwołuje się do pola wskaźnika do przekazania niezarządzany zasób do kodu niezarządzanego.
+ Ta reguła zakłada, że pola <xref:System.IntPtr> i <xref:System.UIntPtr> przechowują wskaźniki do zasobów niezarządzanych. Ponieważ celem finalizatora jest zwolnienie niezarządzanych zasobów, reguła zakłada, że finalizator spowoduje zwolnienie niezarządzanego zasobu wskazywanego przez pola wskaźnika. Ta reguła zakłada również, że metoda odwołuje się do pola wskaźnika, aby przekazać niezarządzany zasób do kodu niezarządzanego.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, należy dodać wywołanie <xref:System.GC.KeepAlive%2A> do metody, przekazując bieżącego wystąpienia (`this` w języku C# i C++) jako argument. Umieść wywołanie po ostatni wiersz kodu, gdzie obiekt muszą być chronione z wyrzucania elementów bezużytecznych. Natychmiast po wywołaniu <xref:System.GC.KeepAlive%2A>, obiekt ponownie jest uznawane za gotowe do wyrzucania elementów bezużytecznych, przy założeniu, że istnieją nie zarządzanych odwołania do niego.
+ Aby naprawić naruszenie tej reguły, Dodaj wywołanie do <xref:System.GC.KeepAlive%2A> metody, przekazując bieżące wystąpienie (`this` w C# i C++) jako argument. Umieść wywołanie po ostatnim wierszu kodu, w którym obiekt musi być chroniony przed wyrzucaniem elementów bezużytecznych. Natychmiast po wywołaniu <xref:System.GC.KeepAlive%2A> obiekt jest ponownie uznawany za gotowy do wyrzucania elementów bezużytecznych przy założeniu, że nie istnieją żadne zarządzane odwołania.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Ta reguła zapewnia pewne założenia, które mogą prowadzić do wyników fałszywie dodatnich. Ostrzeżenie od tej reguły można bezpiecznie pominąć, jeśli:
+ Ta reguła wykonuje pewne założenia, które mogą prowadzić do fałszywych wartości dodatnich. Możesz bezpiecznie pominąć ostrzeżenie z tej reguły, jeśli:
 
-- Finalizator nie spowoduje zwolnienia zawartość <xref:System.IntPtr> lub <xref:System.UIntPtr> przywoływane przez metody pól.
+- Finalizator nie zwolni zawartości pola <xref:System.IntPtr> lub <xref:System.UIntPtr>, do którego odwołuje się metoda.
 
-- Metoda nie zostały spełnione <xref:System.IntPtr> lub <xref:System.UIntPtr> pola do kodu niezarządzanego.
+- Metoda nie przekazuje pola <xref:System.IntPtr> lub <xref:System.UIntPtr> do kodu niezarządzanego.
 
-  Uważnie przeczytaj innych komunikatów przed ich wykluczenie. Ta zasada wykrywa błędy, które są trudne do odtworzenia i debugowania.
+  Uważnie Przejrzyj inne komunikaty przed wyłączeniem ich. Ta zasada wykrywa błędy, które są trudne do odtworzenia i debugowania.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie `BadMethod` nie zawiera wywołanie `GC.KeepAlive` i dlatego narusza regułę. `GoodMethod` zawiera kod poprawiony.
+ W poniższym przykładzie `BadMethod` nie obejmuje wywołania do `GC.KeepAlive` i w związku z tym narusza regułę. `GoodMethod` zawiera skorygowany kod.
 
 > [!NOTE]
-> W tym przykładzie jest pseudo-kodu, mimo że kod kompiluje i uruchamia, ostrzeżenie nie jest uruchamiany, ponieważ niezarządzany zasób zostanie utworzony lub nie zwolniona.
+> Ten przykład jest pseudo kod, chociaż kod kompiluje i uruchamia, ostrzeżenie nie zostanie wyzwolone, ponieważ zasób niezarządzany nie został utworzony ani zwolniony.
 
  [!code-csharp[FxCop.Security.IntptrAndFinalize#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.IntptrAndFinalize/cs/FxCop.Security.IntptrAndFinalize.cs#1)]
 

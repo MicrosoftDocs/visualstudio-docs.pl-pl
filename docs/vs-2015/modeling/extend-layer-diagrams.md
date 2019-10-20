@@ -1,5 +1,5 @@
 ---
-title: Rozszerzone diagramy warstw | Dokumentacja firmy Microsoft
+title: Rozszerzone diagramy warstwowe | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -9,62 +9,56 @@ helpviewer_keywords:
 - layer models
 ms.assetid: 83fca301-b008-485a-87eb-218050e71451
 caps.latest.revision: 41
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: af191c929b88f1bda76896061359b7315517beb5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 48fdddd8711086ff185e64df6981cd6848ad1f51
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68182877"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669630"
 ---
 # <a name="extend-layer-diagrams"></a>Rozszerzone diagramy warstw
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Można napisać kod, do tworzenia i aktualizowania diagramy warstwowe, a do sprawdzania poprawności strukturę kodu programu względem diagramów warstwowych w Visual Studio. Możesz dodać polecenia, które są wyświetlane w menu skrótów (kontekstu), diagramy Dostosowywanie gestów przeciągania i upuszczania oraz dostęp do warstwy modelu z poziomu szablonów tekstu. Można spakować te rozszerzenia w Visual Studio Integration rozszerzenie (VSIX) i rozdystrybuować je innym użytkownikom programu Visual Studio.  
-  
- Aby uzyskać więcej informacji o diagramach warstwowych zobacz:  
-  
-- [Diagramy warstw: informacje](../modeling/layer-diagrams-reference.md)  
-  
-- [Diagramy warstw: wskazówki](../modeling/layer-diagrams-guidelines.md)  
-  
-- [Tworzenie diagramów warstw z kodu](../modeling/create-layer-diagrams-from-your-code.md)  
-  
-- [Weryfikacja kodu przy użyciu diagramów warstw](../modeling/validate-code-with-layer-diagrams.md)  
-  
-## <a name="prereqs"></a> Wymagania  
- Musisz mieć zainstalowane na komputerze, gdzie chcesz rozwijać swoje rozszerzenia warstwy następujące elementy:  
-  
-- Visual Studio  
-  
-- [Visual Studio SDK](../extensibility/visual-studio-sdk.md)  
-  
-- [Modeling SDK for Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=48148)  
-  
-  Konieczne jest posiadanie odpowiedniej wersji programu Visual Studio zainstalowany na komputerze, na którym chcesz uruchomić swoje rozszerzenia warstwy. Aby uzyskać więcej informacji, zobacz [wdrażanie rozszerzenia modelu warstwy](../modeling/deploy-a-layer-model-extension.md).  
-  
-  Aby dowiedzieć się, które wersje programu Visual Studio obsługują diagramy warstwowe, zobacz [obsługiwana wersja dla narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
-  
-## <a name="in-this-section"></a>W tej sekcji  
- [Dodawanie poleceń i gestów do diagramów warstw](../modeling/add-commands-and-gestures-to-layer-diagrams.md)  
-  
- [Dodawanie niestandardowej walidacji architektury do diagramów warstw](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)  
-  
- [Dodawanie właściwości niestandardowych do diagramów warstw](../modeling/add-custom-properties-to-layer-diagrams.md)  
-  
- [Nawigowanie i aktualizowanie modeli warstw w kodzie programu](../modeling/navigate-and-update-layer-models-in-program-code.md)  
-  
- [Wdrażanie rozszerzenia modelu warstwy](../modeling/deploy-a-layer-model-extension.md)  
-  
- [Rozwiązywanie problemów z rozszerzeniami dla diagramów warstw](../modeling/troubleshoot-extensions-for-layer-diagrams.md)  
-  
-## <a name="see-also"></a>Zobacz też  
- [Definiowanie i instalowanie rozszerzenia modelowania](../modeling/define-and-install-a-modeling-extension.md)   
- [Diagramy warstw: Odwołanie](../modeling/layer-diagrams-reference.md)   
- [Diagramy warstw: Wytyczne dotyczące](../modeling/layer-diagrams-guidelines.md)   
- [Tworzenie diagramów warstwy na podstawie kodu](../modeling/create-layer-diagrams-from-your-code.md)   
- [Weryfikacja kodu przy użyciu diagramów warstw](../modeling/validate-code-with-layer-diagrams.md)   
- [Generowanie plików z modelu UML](../modeling/generate-files-from-a-uml-model.md)   
- [Otwieranie modelu UML za pomocą interfejsu API programu Visual Studio](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)
+Można napisać kod, aby utworzyć i zaktualizować Diagramy warstw oraz sprawdzić poprawność struktury kodu programu na Diagramy warstw w programie Visual Studio. Można dodawać polecenia, które pojawiają się w menu skrótów (kontekstu) diagramów, dostosowuje gesty przeciągania i upuszczania oraz uzyskiwać dostęp do modelu warstwy z szablonów tekstowych. Można spakować te rozszerzenia w rozszerzeniu integracji programu Visual Studio (VSIX) i przekazać je innym użytkownikom programu Visual Studio.
+
+ Aby uzyskać więcej informacji na temat diagramów warstw, zobacz:
+
+- [Diagramy warstw: informacje](../modeling/layer-diagrams-reference.md)
+
+- [Diagramy warstw: wskazówki](../modeling/layer-diagrams-guidelines.md)
+
+- [Tworzenie diagramów warstw z kodu](../modeling/create-layer-diagrams-from-your-code.md)
+
+- [Weryfikacja kodu przy użyciu diagramów warstw](../modeling/validate-code-with-layer-diagrams.md)
+
+## <a name="prereqs"></a>Wymagania
+ Na komputerze, na którym chcesz opracowywać rozszerzenia warstwy, muszą być zainstalowane następujące elementy:
+
+- Visual Studio
+
+- [Visual Studio SDK](../extensibility/visual-studio-sdk.md)
+
+- [Modeling SDK dla programu Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=48148)
+
+  Na komputerze, na którym chcesz uruchomić rozszerzenia warstwy, musi być zainstalowana odpowiednia wersja programu Visual Studio. Aby uzyskać więcej informacji, zobacz [Wdrażanie modelu warstwy](../modeling/deploy-a-layer-model-extension.md).
+
+  Aby sprawdzić, które wersje programu Visual Studio obsługują diagramy warstwowe, zobacz [Obsługa wersji dla narzędzi architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+
+## <a name="in-this-section"></a>W tej sekcji
+ [Dodawanie poleceń i gestów do diagramów warstw](../modeling/add-commands-and-gestures-to-layer-diagrams.md)
+
+ [Dodawanie niestandardowej walidacji architektury do diagramów warstw](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)
+
+ [Dodawanie właściwości niestandardowych do diagramów warstw](../modeling/add-custom-properties-to-layer-diagrams.md)
+
+ [Nawigowanie i aktualizowanie modeli warstw w kodzie programu](../modeling/navigate-and-update-layer-models-in-program-code.md)
+
+ [Wdrażanie rozszerzenia modelu warstwy](../modeling/deploy-a-layer-model-extension.md)
+
+ [Rozwiązywanie problemów z rozszerzeniami dla diagramów warstw](../modeling/troubleshoot-extensions-for-layer-diagrams.md)
+
+## <a name="see-also"></a>Zobacz też
+ [Definiowanie i Instalowanie](../modeling/define-and-install-a-modeling-extension.md) [diagramów warstwy rozszerzeń modelowania:](../modeling/layer-diagrams-reference.md) [Diagramy warstw referencyjnych: wskazówki](../modeling/layer-diagrams-guidelines.md) [Tworzenie diagramów warstwy na podstawie kodu](../modeling/create-layer-diagrams-from-your-code.md) [Sprawdzanie poprawności kodu przy użyciu diagramów warstwowych](../modeling/validate-code-with-layer-diagrams.md) [generowanie plików z modelu UML](../modeling/generate-files-from-a-uml-model.md) [ Otwieranie modelu UML przy użyciu interfejsu API programu Visual Studio](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)

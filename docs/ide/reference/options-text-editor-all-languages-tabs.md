@@ -36,60 +36,60 @@ helpviewer_keywords:
 - Code Editor, indenting
 - Code Editor, tabs
 ms.assetid: 7e208e1d-5e3a-4bf7-a27b-4417e3e049c7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09bf4f205b7fc200038b2aedfcf3a8318cb1c7a9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 45cee31df08461731c14e2ac1fdef8456a882800
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62997159"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666370"
 ---
 # <a name="options-text-editor-all-languages-tabs"></a>Opcje, edytor tekstu, wszystkie języki, karty
 
-To okno dialogowe pozwala zmienić domyślne zachowanie edytora kodu. Te ustawienia mają zastosowanie również do innych edytorów oparte na kod edytora, takiego jak widok źródła w Projektancie HTML. Aby wyświetlić te opcje, wybierz **opcje** z **narzędzia** menu. W ramach **edytora tekstów** rozwiń folder **wszystkie języki** podfolder, a następnie wybierz **karty**.
+To okno dialogowe umożliwia zmianę domyślnego zachowania edytora kodu. Te ustawienia mają zastosowanie również do innych edytorów w oparciu o Edytor kodu, taki jak widok źródła projektanta HTML. Aby wyświetlić te opcje, wybierz opcję **Opcje** z menu **Narzędzia** . W folderze **Edytor tekstu** rozwiń podfolder **wszystkie języki** , a następnie wybierz pozycję **karty**.
 
 > [!CAUTION]
-> Ta strona ustawia domyślne opcje dla wszystkich języków programowania. Należy pamiętać, że zresetowanie opcji, w tym oknie dialogowym przywróci Opcje kart we wszystkich językach niezależnie od opcji wybranych są w tym miejscu. Aby zmienić opcje edytora tekstowego dla tylko jednego języka, rozwiń podfolder dla danego języka, a następnie wybierz jego stron opcji.
+> Ta strona służy do ustawiania opcji domyślnych dla wszystkich języków deweloperskich. Pamiętaj, że Resetowanie opcji w tym oknie dialogowym spowoduje zresetowanie opcji tabulatorów we wszystkich językach do wybranych opcji. Aby zmienić opcje edytora tekstu dla tylko jednego języka, rozwiń podfolder dla tego języka i wybierz jego strony opcji.
 
-W przypadku różnych ustawień na stronach opcji karty dla określonych języków programowania, a następnie komunikat "Ustawienia wcięć dla pojedynczych tekstu formatów będących w konflikcie ze sobą" jest wyświetlana dla różniących się **Indenting**opcje; i wyświetlany jest komunikat "Ustawienia tabulacji dla pojedynczych tekstu formatów będących w konflikcie ze sobą," dla różniących się **kartę** opcje. Na przykład tego monitu jest wyświetlana, jeśli **inteligentnego wcięcia** opcja jest zaznaczona dla języka Visual Basic, ale **Block wcięcia** został wybrany do Visual C++.
+Jeśli na stronach opcji kart są wybrane różne ustawienia dla określonych języków programowania, komunikat "Ustawienia wcięć dla pojedynczych formatów tekstu kolidują ze sobą" jest wyświetlany w przypadku różnych opcji **wcięć** ; a komunikat "ustawienia tabulacji dla pojedynczych formatów tekstu kolidują ze sobą," jest wyświetlany dla różnych opcji **tabulacji** . Na przykład, to przypomnienie jest wyświetlane, jeśli wybrano opcję **inteligentnego tworzenia wcięć** dla Visual Basic, ale dla wizualizacji C++jest wybrane **wcięcie bloku** .
 
 ## <a name="indenting"></a>Wcięcia
 
 Brak
 
-Po wybraniu nowe wiersze są nie będą wcięte. Punkt wstawiania znajduje się w pierwszej kolumnie znakiem nowego wiersza.
+Po wybraniu nie są wcięte wcięcia. Punkt wstawiania zostanie umieszczony w pierwszej kolumnie nowego wiersza.
 
 Blok
 
-Po wybraniu nowych wierszy tworzone jest wcięcie automatycznie. Punkt wstawiania znajduje się w tym samym punkcie wyjścia, jak poprzedni wiersz.
+Po wybraniu zostaną automatycznie zastosowane wcięcia nowych wierszy. Punkt wstawiania jest umieszczany w tym samym punkcie początkowym co poprzedni wiersz.
 
-Inteligentne
+Inteligentnych
 
-Po wybraniu nowe wiersze są umieszczone w celu dopasowania kontekst kodu według innych kodów formatowania, ustawienia i konwencje technologii IntelliSense dla języka programowania. Ta opcja nie jest dostępny dla wszystkich języków programowania.
+Po wybraniu nowe wiersze są pozycjonowane w celu dopasowania do kontekstu kodu, według innych ustawień formatowania kodu i Konwencji IntelliSense dla języka deweloperskiego. Ta opcja nie jest dostępna dla wszystkich języków deweloperskich.
 
-Na przykład wiersze ujęte w nawias klamrowy otwierający ({}) i zamykający nawias klamrowy (}) może być automatycznie wcięty dodatkowe tabulatora od pozycji wyrównany nawiasów klamrowych.
+Na przykład wiersze ujęte w nawias klamrowy otwierającego ({) i zamykającego nawiasu klamrowego (}) mogą automatycznie powodować wcięcie dodatkowego tabulatora od pozycji wyrównanych nawiasów klamrowych.
 
 ## <a name="tabs"></a>Karty
 
-Rozmiar tabulatora
+Rozmiar karty
 
-Ustawia odległość w spacji między kartę zatrzymuje. Wartość domyślna to cztery miejsca do magazynowania.
+Ustawia odległość między tabulatorami. Wartość domyślna to cztery spacje.
 
-Wcięcie
+Wcięcie rozmiaru
 
-Określa rozmiar w obszarach automatyczne wcięcia. Wartość domyślna to cztery miejsca do magazynowania. Znaki tabulacji i/lub spacjami zostanie wstawiony do wypełnienia określonego rozmiaru.
+Ustawia rozmiar w odstępach automatycznego wcięcia. Wartość domyślna to cztery spacje. Znaki tabulacji, znaki spacji lub oba zostaną wstawione w celu wypełnienia określonego rozmiaru.
 
-Wstawiaj odstępy
+Wstaw spacje
 
-Po wybraniu operacji wcięcie wstawić tylko znaki spacji, nie znaki TABULACJI. Jeśli **wcięcie** jest ustawiony na 5, na przykład, następnie pięć znaków spacji są wstawiane po naciśnięciu klawisza TAB lub **Zwiększ wcięcie** znajdujący się na **formatowanie** pasek narzędzi.
+Po wybraniu wcięcia operacje wstawiają tylko znaki spacji, a nie znaki TABULACJi. Jeśli **Rozmiar wcięcia** jest ustawiony na 5, na przykład po naciśnięciu klawisza TAB lub przycisku **Zwiększ wcięcie** na pasku narzędzi **formatowania** zostanie wstawionych pięć znaków spacji.
 
-Utrzymaj tabulacje
+Zachowaj karty
 
-Po wybraniu operacji wcięcie Wstaw tyle znaków TABULACJI jak to możliwe. Każdy znak TABULACJI Wstawia liczbę spacji określoną w **wielkość tabulatora**. Jeśli **wcięcie** nie jest całkowitą wielokrotnością **wielkość tabulatora**, spacje są dodawane do Wypełnij różnica.
+Po zaznaczeniu tej operacji wcięcia wstawiają dowolną liczbę znaków TABULACJi. Każdy znak TABULACJi wypełnia liczbę spacji określoną w polu **rozmiar karty**. Jeśli **Rozmiar wcięcia** nie jest parzystą wielokrotnością **rozmiaru karty**, znaki spacji są dodawane do wypełnienia różnic.
 
 ## <a name="see-also"></a>Zobacz także
 

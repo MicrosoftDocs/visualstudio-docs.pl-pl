@@ -8,15 +8,15 @@ dev_langs:
 - CSharp
 - VB
 - CPP
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1962a977cb282613405342f225d63140f1854453
-ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.openlocfilehash: dc3c11610d95756b265d5ba01a6f8365f115548a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71342432"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659801"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Korzystanie z pokrycia kodu do określania, jaka część kodu jest poddawana testom
 
@@ -28,7 +28,7 @@ Pokrycie kodu jest opcją w przypadku uruchamiania metod testowych przy użyciu 
 
 ::: moniker range="vs-2017"
 
-![Wyniki pokrycia kodu za pomocą kolorowania](../test/media/codecoverage1.png)
+![Wyniki pokrycia kodu z kolorami](../test/media/codecoverage1.png)
 
 ::: moniker-end
 
@@ -54,10 +54,10 @@ Funkcja pokrycia kodu jest dostępna tylko w wersji Visual Studio Enterprise.
 
 ::: moniker-end
 
-2. Po uruchomieniu testów, aby zobaczyć, które wiersze zostały uruchomione, ![wybierz ikonę](../test/media/codecoverage-showcoloringicon.png) Pokaż kolorowanie pokrycia kodu **Pokaż kolorowanie pokrycia kodu** w oknie **wyników pokrycia kodu** . Domyślnie kod, który jest objęty testami, jest wyróżniony w jasnoniebieskim kolorze.
+2. Po uruchomieniu testów, aby zobaczyć, które wiersze zostały uruchomione, ![Show wybierz ikonę kolorowanie pokrycia kodu, ](../test/media/codecoverage-showcoloringicon.png) **Pokaż kolorowanie pokrycia** kodu w oknie **wyników pokrycia** kodu. Domyślnie kod, który jest objęty testami, jest wyróżniony w jasnoniebieskim kolorze.
 
    > [!TIP]
-   > Aby zmienić kolory lub użyć pogrubionej kroju, wybierz**Opcje** > **Narzędzia** > **czcionki i kolory** > **środowiska** > **Pokaż ustawienia dla: Edytor**tekstu. W obszarze **Wyświetl elementy**Dostosuj ustawienia dla elementów "pokrycie", na przykład **nienaruszony obszar pokrycia**.
+   > Aby zmienić kolory lub użyć pogrubienia, wybierz pozycję **narzędzia**  > **opcje**  > **środowisko**  > **czcionki i kolory**  > **Pokaż ustawienia dla: Edytor tekstu**. W obszarze **Wyświetl elementy**Dostosuj ustawienia dla elementów "pokrycie", na przykład **nienaruszony obszar pokrycia**.
    >
    > ![Czcionki i kolory pokrycia kodu](media/vs-2019/coverage-fonts-and-colors.png)
 
@@ -105,7 +105,7 @@ W niektórych sytuacjach, w zależności od danych testowych, używane będą r�
 
 Można na przykład założyć, że po uruchomieniu testu z wpisem „2” okaże się, że pokryto 50% określonej funkcji. Gdy uruchamiasz test po raz drugi z danymi wejściowymi "-2", zobaczysz w widoku kolorowanie pokrycia, że podano pozostałe 50% funkcji. Teraz należy scalić wyniki z dwóch przebiegów testów, a raport i widok kolorowania pokrycia pokaże 100% pokrycia funkcji.
 
-Użyj ![ikony przycisku Scal w oknie](../test/media/codecoverage-mergeicon.png) pokrycie kodu **Scal wyniki pokrycia kodu** , aby to zrobić. Można wybrać dowolną kombinację ostatnich uruchomień lub zaimportowanych wyników. Aby połączyć wyeksportowane wyniki, należy je najpierw zaimportować.
+Użyj ![Icon dla przycisku scalania w ](../test/media/codecoverage-mergeicon.png) oknie pokrycie kodu, aby w tym celu **scalić wyniki pokrycia kodu** . Można wybrać dowolną kombinację ostatnich uruchomień lub zaimportowanych wyników. Aby połączyć wyeksportowane wyniki, należy je najpierw zaimportować.
 
 Użyj **Eksportuj wyniki pokrycia kodu** , aby zapisać wyniki operacji scalania.
 
@@ -119,7 +119,7 @@ Użyj **Eksportuj wyniki pokrycia kodu** , aby zapisać wyniki operacji scalania
 
 ## <a name="exclude-elements-from-the-code-coverage-results"></a>Wyklucz elementy z wyników pokrycia kodu
 
-Można chcieć wykluczyć określone elementy w kodzie z oceny pokrycia, jeśli np. kod jest generowany na podstawie szablonu tekstu. <xref:System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute?displayProperty=fullName> Dodaj atrybut do dowolnego z następujących elementów kodu: Klasa, struktura, metoda, właściwość, Metoda ustawiająca lub metoda pobierająca, zdarzenie.
+Można chcieć wykluczyć określone elementy w kodzie z oceny pokrycia, jeśli np. kod jest generowany na podstawie szablonu tekstu. Dodaj atrybut <xref:System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute?displayProperty=fullName> do dowolnego z następujących elementów kodu: Klasa, struktura, metoda, właściwość, Metoda ustawiająca lub metoda pobierająca.
 
 > [!TIP]
 > Wyłączenie klasy nie wyklucza jej klas pochodnych.
@@ -243,15 +243,15 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
 Użyj następujących makr:
 
-`ExcludeFromCodeCoverage(`*Wykluczname* `, L"` *Funkcjaname*`");`
+`ExcludeFromCodeCoverage(` *wykluczenianame* `, L"` *funkcjaname* `");`
 
-`ExcludeSourceFromCodeCoverage(` *ExclusionName* `, L"` *SourceFilePath* `");`
+`ExcludeSourceFromCodeCoverage(` *wykluczenia* `, L"` *sourcefilepath* `");`
 
 - *Wykluczname* jest dowolną unikatową nazwą.
 
-- *FunctionName* jest w pełni kwalifikowaną nazwą funkcji. Może ona zawierać symbole wieloznaczne. Na przykład, aby wykluczyć wszystkie funkcje klasy, należy napisać`MyNamespace::MyClass::*`
+- *FunctionName* jest w pełni kwalifikowaną nazwą funkcji. Może ona zawierać symbole wieloznaczne. Na przykład, aby wykluczyć wszystkie funkcje klasy, `MyNamespace::MyClass::*` zapisu
 
-- *Sourcefilepath* to lokalna lub UNC Ścieżka do pliku. cpp. Może ona zawierać symbole wieloznaczne. Poniższy przykład wyklucza wszystkie pliki w określonym katalogu:`\\MyComputer\Source\UnitTests\*.cpp`
+- *Sourcefilepath* to lokalna lub UNC Ścieżka do pliku. cpp. Może ona zawierać symbole wieloznaczne. Poniższy przykład wyklucza wszystkie pliki w określonym katalogu: `\\MyComputer\Source\UnitTests\*.cpp`
 
 - `#include <CodeCoverage\CodeCoverage.h>`
 
@@ -259,7 +259,7 @@ Użyj następujących makr:
 
 - Można umieścić wyłączenia w pliku kodu testu jednostkowego lub w pliku kodu aplikacji.
 
-- Wykluczenia muszą być kompilowane jako kod niezarządzany (natywny) przez ustawienie opcji kompilatora lub przy użyciu polecenia `#pragma managed(off)`.
+- Wykluczenia muszą być kompilowane jako kod niezarządzany (natywny) przez ustawienie opcji kompilatora lub przy użyciu `#pragma managed(off)`.
 
 > [!NOTE]
 > Aby wykluczyć funkcje w C++kodzie/CLI, zastosuj atrybut `[System::Diagnostics::CodeAnalysis::ExcludeFromCodeCoverage]` do funkcji. To jest tak samo jak w języku C#.
@@ -308,4 +308,4 @@ Jeśli nie widzisz wyników pokrycia kodu, artykuł [Rozwiązywanie problemów z
 
 - [Dostosowywanie analizy pokrycia kodu](../test/customizing-code-coverage-analysis.md)
 - [Rozwiązywanie problemów z pokryciem kodu](../test/troubleshooting-code-coverage.md)
-- [Kod testu jednostkowego](../test/unit-test-your-code.md)
+- [Testowanie jednostkowe kodu](../test/unit-test-your-code.md)

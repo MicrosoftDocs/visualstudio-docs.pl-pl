@@ -16,23 +16,23 @@ helpviewer_keywords:
 - namespaces [Visual Studio], referencing
 - COM components, referencing
 - objects [Visual Studio], referencing
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77b52e66d0278d7e9f8446fe728cca285c8418fa
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.openlocfilehash: 06235439fdff952225fe3aafea9f5354a27cb0a3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787632"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658418"
 ---
 # <a name="manage-references-in-a-project"></a>Zarządzanie odwołaniami w projekcie
 
 Przed napisaniem kodu w składniku zewnętrznym lub połączonej usłudze, projekt musi zawierać odwołanie do niego. Odwołanie jest zasadniczo wpisem w pliku projektu, który zawiera informacje, które program Visual Studio musi zlokalizować składnik lub usługę.
 
-Aby dodać odwołanie, kliknij prawym przyciskiem myszy węzeł **odwołania** lub **zależności** w **Eksplorator rozwiązań** i wybierz polecenie **Dodaj odwołanie**. Możesz również kliknąć prawym przyciskiem myszy węzeł projektu i wybrać polecenie **Dodaj** > **odwołanie**. Aby uzyskać więcej informacji, zobacz [jak: Dodaj lub Usuń odwołania](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md).
+Aby dodać odwołanie, kliknij prawym przyciskiem myszy węzeł **odwołania** lub **zależności** w **Eksplorator rozwiązań** i wybierz polecenie **Dodaj odwołanie**. Możesz również kliknąć prawym przyciskiem myszy węzeł projektu i wybrać polecenie **dodaj**  > **odwołanie**. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie lub usuwanie odwołań](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md).
 
 ![Dodaj odwołanie w Visual C&#43;&#43;](../ide/media/vs2015_cpp_add_reference.png)
 
@@ -64,7 +64,7 @@ Aplikacje Visual Basic C#, C++ i JavaScript platforma uniwersalna systemu Window
 
 Jeśli określisz, że zestaw SDK, do którego odwołuje się aplikacja, nie jest obsługiwany, należy wykonać następujące czynności:
 
-1. Spójrz na nazwę projektu, który powoduje błąd. Platforma, do której należy projekt, jest zapisywana w nawiasach obok nazwy projektu. Na przykład, **. ProjectName (Windows 8.1)** oznacza, że projekt ProjectName jest ukierunkowany na wersję platformy Windows 8.1.
+1. Spójrz na nazwę projektu, który powoduje błąd. Platforma, do której należy projekt, jest zapisywana w nawiasach obok nazwy projektu. Na przykład, **. ProjectName (Windows 8.1)** oznacza, że projekt **ProjectName jest** ukierunkowany na wersję platformy Windows 8.1.
 
 1. Przejdź do lokacji dostawcy, który jest właścicielem nieobsługiwanego zestawu SDK rozszerzenia, i Zainstaluj wersję zestawu SDK rozszerzenia z zależnościami, które są zgodne z wersją platformy, dla której projekt jest docelowy.
 
@@ -92,16 +92,16 @@ Po wprowadzeniu odwołania do zestawu w projekcie program Visual Studio wyszukuj
 
 > [!NOTE]
 > - Wszystkie projekty zawierają implikowane odwołanie do **biblioteki mscorlib**.
-> - Wszystkie projekty zawierają implikowane odwołanie do `System.Core`, nawet jeśli `System.Core` jest usuwany z listy odwołań.
+> - Wszystkie projekty zawierają implikowane odwołanie do `System.Core`, nawet jeśli `System.Core` zostanie usunięty z listy odwołań.
 > - Projekty Visual Basic zawierają implikowane odwołanie do <xref:Microsoft.VisualBasic>.
 
 ## <a name="references-to-shared-components-at-run-time"></a>Odwołania do współużytkowanych składników w czasie wykonywania
 
 W czasie wykonywania składniki muszą znajdować się w ścieżce wyjściowej projektu lub w globalnej pamięci podręcznej zestawów (GAC). Jeśli projekt zawiera odwołanie do obiektu, który nie znajduje się w jednej z tych lokalizacji, należy skopiować odwołanie do ścieżki wyjściowej projektu podczas kompilowania projektu. Właściwość <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> wskazuje, czy należy wykonać tę kopię. Jeśli wartość jest **równa true**, odwołanie jest kopiowane do katalogu projektu podczas kompilowania projektu. Jeśli wartość jest równa **false**, odwołanie nie jest kopiowane.
 
-W przypadku wdrożenia aplikacji, która zawiera odwołanie do składnika niestandardowego, który jest zarejestrowany w pamięci podręcznej GAC, składnik nie zostanie wdrożony z aplikacją, bez względu na <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> ustawienie. We wcześniejszych wersjach programu Visual Studio można ustawić <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> Właściwość odwołania, aby upewnić się, że zestaw został wdrożony. Teraz musisz ręcznie dodać zestaw do folderu \Bin. Powoduje to umieszczenie całego niestandardowego kodu w ramach kontroli, co zmniejsza ryzyko związane z publikowaniem niestandardowego kodu, którego nie znasz.
+W przypadku wdrożenia aplikacji, która zawiera odwołanie do składnika niestandardowego, który jest zarejestrowany w pamięci podręcznej GAC, składnik nie zostanie wdrożony z aplikacją, bez względu na ustawienie <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A>. We wcześniejszych wersjach programu Visual Studio można ustawić właściwość <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> na odwołanie, aby upewnić się, że zestaw został wdrożony. Teraz musisz ręcznie dodać zestaw do folderu \Bin. Powoduje to umieszczenie całego niestandardowego kodu w ramach kontroli, co zmniejsza ryzyko związane z publikowaniem niestandardowego kodu, którego nie znasz.
 
-Domyślnie <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> właściwość jest ustawiona na **false** , jeśli zestaw lub składnik znajduje się w globalnej pamięci podręcznej zestawów lub jest składnikiem struktury. W przeciwnym razie wartość jest równa **true**. Odwołania między projektami są zawsze ustawione na **wartość true**.
+Domyślnie właściwość <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> jest ustawiona na **false** , jeśli zestaw lub składnik znajduje się w globalnej pamięci podręcznej zestawów lub jest składnikiem struktury. W przeciwnym razie wartość jest równa **true**. Odwołania między projektami są zawsze ustawione na **wartość true**.
 
 ## <a name="reference-a-project-or-assembly-that-targets-a-different-version-of-net"></a>Odwołuje się do projektu lub zestawu, który jest przeznaczony dla innej wersji platformy .NET.
 
@@ -113,7 +113,7 @@ Aby uzyskać więcej informacji, zobacz temat [Omówienie funkcji określania wa
 
 Odwołania między projektami są odwołaniami do projektów, które zawierają zestawy; odwołania do projektu można dodać przy użyciu karty **projekty** w oknie dialogowym Menedżer odwołań. Program Visual Studio może znaleźć zestaw, gdy nadana ścieżka do projektu.
 
-W przypadku projektu, który tworzy zestaw, należy odwołać się do projektu, a nie użyć odwołania do pliku (patrz poniżej). Zaletą odwołania projektu do projektu jest utworzenie zależności między projektami w systemie kompilacji. Projekt zależny zostanie skompilowany, jeśli został zmieniony od czasu skompilowania projektu, który odwołuje się do niego. Odwołanie do pliku nie tworzy zależności kompilacji, więc możliwe jest skompilowanie odwołującego się projektu bez kompilowania projektu zależnego, a odwołanie może stać się przestarzałe. (Oznacza to, że projekt może odwoływać się do poprzednio skompilowanej wersji projektu). Może to spowodować, że w katalogu *bin* jest wymagana kilka wersji pojedynczej biblioteki DLL, co nie jest możliwe. Po wystąpieniu tego konfliktu zostanie wyświetlony komunikat, taki jak "Ostrzeżenie: nie można skopiować pliku zależności" w projekcie projektu "do katalogu uruchomieniowego, ponieważ spowodowałoby to zastąpienie odwołania" plik ". Aby uzyskać więcej informacji, zobacz [Rozwiązywanie problemów z uszkodzonymi odwołaniami](../ide/troubleshooting-broken-references.md) i [instrukcje: Tworzenie i usuwanie zależności](../ide/how-to-create-and-remove-project-dependencies.md)projektu.
+W przypadku projektu, który tworzy zestaw, należy odwołać się do projektu, a nie użyć odwołania do pliku (patrz poniżej). Zaletą odwołania projektu do projektu jest utworzenie zależności między projektami w systemie kompilacji. Projekt zależny zostanie skompilowany, jeśli został zmieniony od czasu skompilowania projektu, który odwołuje się do niego. Odwołanie do pliku nie tworzy zależności kompilacji, więc możliwe jest skompilowanie odwołującego się projektu bez kompilowania projektu zależnego, a odwołanie może stać się przestarzałe. (Oznacza to, że projekt może odwoływać się do poprzednio skompilowanej wersji projektu). Może to spowodować, że w katalogu *bin* jest wymagana kilka wersji pojedynczej biblioteki DLL, co nie jest możliwe. Po wystąpieniu tego konfliktu zostanie wyświetlony komunikat, taki jak "Ostrzeżenie: nie można skopiować pliku zależności" w projekcie projektu "do katalogu uruchomieniowego, ponieważ spowodowałoby to zastąpienie odwołania" plik ". Aby uzyskać więcej informacji, zobacz [Rozwiązywanie problemów z uszkodzonymi odwołaniami](../ide/troubleshooting-broken-references.md) i [instrukcje: Tworzenie i usuwanie zależności projektu](../ide/how-to-create-and-remove-project-dependencies.md).
 
 > [!NOTE]
 > Odwołanie do pliku zamiast odwołania projektu do projektu jest tworzone, jeśli docelowa wersja .NET Framework jednego projektu jest w wersji 4,5, a docelowa wersja innego projektu to wersja 2, 3, 3,5 lub 4,0.

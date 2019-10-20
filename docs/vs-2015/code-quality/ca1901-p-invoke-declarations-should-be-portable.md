@@ -1,5 +1,5 @@
 ---
-title: 'CA1901: Deklaracje P-Invoke powinny być przenośne | Dokumentacja firmy Microsoft'
+title: 'CA1901: deklaracje P-Invoke powinny być przenośne | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,44 +12,44 @@ helpviewer_keywords:
 - PInvokeDeclarationsShouldBePortable
 ms.assetid: 90361812-55ca-47f7-bce9-b8775d3b8803
 caps.latest.revision: 25
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: ccbbc3178a9f65c15d11a27dee1a625cca729240
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d1b4c0c5bcf22db6558f156fd1acd0be94026b08
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68203063"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661063"
 ---
-# <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901: Deklaracje metody P/Invoke powinny być przenośne
+# <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901: Deklaracje P/Invoke powinny być przenośne
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|PInvokeDeclarationsShouldBePortable|
 |CheckId|CA1901|
-|Kategoria|Microsoft.Portability|
-|Zmiana kluczowa|Istotne - P/Invoke jest widoczna spoza zestawu. Bez podziału — Jeśli P/Invoke nie jest widoczna spoza zestawu.|
+|Kategoria|Microsoft. przenośność|
+|Zmiana kluczowa|Przerywanie — jeśli P/Invoke jest widoczny poza zestawem. Bez przerywania — jeśli P/Invoke nie jest widoczny poza zestawem.|
 
 ## <a name="cause"></a>Przyczyna
- Ta reguła oblicza rozmiar każdego parametru oraz wartość zwracaną metody P/Invoke i sprawdza, czy ich rozmiar przekazywania do kodu niezarządzanego na platformach 32-bitowych i 64-bitowych jest poprawny. Najbardziej typowe naruszenie tej zasady jest do przekazania liczby całkowitej stałych rozmiarach, w których wymagane jest zależny od platformy, wskaźnika wielkości zmiennej.
+ Ta reguła służy do obliczania rozmiaru każdego parametru oraz wartości zwracanej P/Invoke i sprawdza, czy ich rozmiar w przypadku przekierowania do kodu niezarządzanego na 32-bitowych i 64-bitowych platformach jest poprawny. Najbardziej typowym naruszeniem tej reguły jest przekazanie liczby całkowitej o stałym rozmiarze, gdy wymagana jest zmienna o rozmiarze wskaźnika zależnym od platformy.
 
 ## <a name="rule-description"></a>Opis reguły
- Jedną z następujących scenariuszy narusza tę regułę występuje:
+ Jeden z następujących scenariuszy narusza tę regułę:
 
-- Wartość zwracana lub parametr jest wpisane jako liczba całkowita stałym rozmiarze, gdy powinna być typizowana jako `IntPtr`.
+- Wartość zwracana lub parametr są wpisywane jako liczba całkowita o stałym rozmiarze, gdy powinna być wpisana jako `IntPtr`.
 
-- Wartość zwracana lub parametr jest wpisana jako `IntPtr` kiedy powinna być typizowana jako liczbą całkowitą o stałym rozmiarze.
+- Wartość zwracana lub parametr są wpisywane jako `IntPtr`, gdy powinna być wpisana jako liczba całkowita o stałym rozmiarze.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- To naruszenie można rozwiązać za pomocą `IntPtr` lub `UIntPtr` do reprezentowania dojścia, zamiast `Int32` lub `UInt32`.
+ Aby rozwiązać ten problem, można użyć `IntPtr` lub `UIntPtr` do reprezentowania dojść zamiast `Int32` lub `UInt32`.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Nie należy pominąć to ostrzeżenie.
+ Nie należy pomijać tego ostrzeżenia.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie pokazano naruszenie tej zasady.
+ Poniższy przykład demonstruje naruszenie tej reguły.
 
 ```csharp
 internal class NativeMethods
@@ -60,7 +60,7 @@ internal class NativeMethods
 }
 ```
 
- W tym przykładzie `nIconIndex` parametru jest zadeklarowany jako `IntPtr`, który wynosi 4 bajty szerokiego to platforma 32-bitowych i 8 bajtów szerokości na platformie 64-bitowej. W deklaracji niezarządzanych poniżej, możesz zobaczyć, że `nIconIndex` jest 4-bajtowa liczba całkowita bez znaku na wszystkich platformach.
+ W tym przykładzie parametr `nIconIndex` jest zadeklarowany jako `IntPtr`, który ma 4 bajty na platformie 32-bitowej i 8 bajtów na platformie 64-bitowej. W następującej deklaracji niezarządzanej można zobaczyć, że `nIconIndex` to 4-bajtowa liczba całkowita bez znaku na wszystkich platformach.
 
 ```csharp
 HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,
@@ -68,11 +68,11 @@ HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,
 ```
 
 ## <a name="example"></a>Przykład
- Aby naprawić naruszenie, zmień deklarację do następujących:
+ Aby naprawić naruszenie, zmień deklarację na następujący:
 
 ```csharp
 internal class NativeMethods{
-    [DllImport("shell32.dll", CharSet=CharSet.Auto)] 
+    [DllImport("shell32.dll", CharSet=CharSet.Auto)]
     internal static extern IntPtr ExtractIcon(IntPtr hInst,
         string lpszExeFileName, uint nIconIndex);
 }

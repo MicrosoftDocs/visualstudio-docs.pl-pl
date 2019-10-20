@@ -1,5 +1,5 @@
 ---
-title: Zaznaczanie tematów do późniejszego użycia | Dokumentacja firmy Microsoft
+title: Przechowywanie tematów do późniejszego użycia | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,23 +14,23 @@ helpviewer_keywords:
 - Favorites tab [Help Viewer 2.0]
 ms.assetid: f0a4c657-001d-4604-a403-d46f15782724
 caps.latest.revision: 10
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8e5c4fb8bde2f8ecbc231540047a8d4cd3398a54
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c6c32db6dc6fbe151b9eec3cec988443ceb73fec
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68203523"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669982"
 ---
 # <a name="retain-topics-for-later-use"></a>Zaznaczanie tematów do późniejszego użycia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Po znalezieniu przydatnego tematu, można do niego dostęp później przez skopiowanie i wklejenie go do pliku tekstowego, wydrukowanie lub zapisanie go jako ulubione. Na przykład, można zachować zawartość do późniejszego użycia, otwierając menu skrótów dla tematów i wybranie **kopiowania**, **drukowania**, **Podgląd wydruku**, i **Dodaj do ulubionych** opcje.  
-  
-## <a name="using-the-favorites-tab"></a>Używanie karty Ulubione  
- Na **ulubione** karcie, można otworzyć menu skrótów dla każdego wpisu i następnie zmień nazwę, usunąć je lub zorganizować wpisy w folderach.  
-  
-## <a name="see-also"></a>Zobacz też  
+Po znalezieniu przydatnego tematu możesz uzyskać do niego dostęp później, kopiując go i wklejając do pliku tekstowego, drukując go lub zapisując jako ulubiony. Na przykład można zachować zawartość do późniejszego użycia, otwierając menu skrótów dla tematów i opcje **Kopiuj**, **Drukuj**, **Podgląd wydruku**i **Dodaj do ulubionych** .
+
+## <a name="using-the-favorites-tab"></a>Korzystanie z karty Ulubione
+ Na karcie **Ulubione** można otworzyć menu skrótów dla każdego wpisu, a następnie zmienić jego nazwę, usunąć je lub zorganizować wpisy w folderach.
+
+## <a name="see-also"></a>Zobacz też
  [Klawisze skrótów (Podgląd Pomocy)](../ide/shortcut-keys-help-viewer.md)

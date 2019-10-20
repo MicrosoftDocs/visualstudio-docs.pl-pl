@@ -1,5 +1,5 @@
 ---
-title: 'CA1822: Oznaczaj składowe jako statyczne | Dokumentacja firmy Microsoft'
+title: 'CA1822: Oznacz składowe jako statyczne | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,43 +12,43 @@ helpviewer_keywords:
 - CA1822
 ms.assetid: 743f0af7-41d1-4852-8d97-af0688b31118
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 42c6f0d333d1f7ee3f657b9c57c4154e9f824128
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a571be6b713cd59ca290906e9398b78c8c021ba8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68201677"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661165"
 ---
-# <a name="ca1822-mark-members-as-static"></a>CA1822: Oznaczaj składowe jako statyczne
+# <a name="ca1822-mark-members-as-static"></a>CA1822: Oznacz elementy członkowskie jako statyczne
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [CA1822: Oznaczaj składowe jako statyczne](https://docs.microsoft.com/visualstudio/code-quality/ca1822-mark-members-as-static).  
-  
-|||  
-|-|-|  
-|TypeName|MarkMembersAsStatic|  
-|CheckId|CA1822|  
-|Kategoria|Microsoft.Performance|  
-|Zmiana kluczowa|Podziału non - Jeśli element członkowski nie jest widoczna spoza zestawu, niezależnie od tego, zmiany wprowadzone.<br /><br /> Podziału non - w przypadku tylko zmiany elementu członkowskiego do elementu członkowskiego wystąpienia z `this` — słowo kluczowe.<br /><br /> Przerywanie — Jeśli zmienisz element członkowski z elementu członkowskiego wystąpienia statyczną składową i jest on widoczny spoza zestawu.|  
-  
-## <a name="cause"></a>Przyczyna  
- Element członkowski, który nie uzyskać dostępu do danych wystąpienia nie jest oznaczony jako statyczne (współużytkowane w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]).  
-  
-## <a name="rule-description"></a>Opis reguły  
- Elementy członkowskie, które nie uzyskuje dostępu do wystąpienia danych lub wywołanie metody wystąpienia mogą zostać oznaczone jako statyczne (współużytkowane w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]). Po oznaczeniu metod jako statyczne kompilator wygeneruje niewirtualne wywołania do tych członków. Emitowanie niewirtualne wywołania uniemożliwi sprawdzanie w czasie wykonywania dla każdego wywołania, który sprawia, że bieżący wskaźnik do obiektu jest różna od null. Można to osiągnąć wymierny zysk wydajnościowy dla kodu wrażliwego na wydajność. W niektórych przypadkach błąd dostępu do bieżącego wystąpienia obiektu reprezentuje problem poprawności.  
-  
-## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia  
- Oznacz składową jako statyczną (lub udostępniane w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) lub użyj "this" / "Me" w metodzie body, jeśli to stosowne.  
-  
-## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia  
- Jest bezpieczne pominąć ostrzeżenie od tej reguły dla uprzednio wysłane kodu, dla których poprawki będą istotnej zmiany.  
-  
-## <a name="related-rules"></a>Powiązane reguły  
- [CA1811: Unikaj niewywołanego kodu prywatnego](../code-quality/ca1811-avoid-uncalled-private-code.md)  
-  
- [CA1812: Unikaj klas wewnętrznych bez wystąpień](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)  
-  
+Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [CA1822: Mark Members as static](https://docs.microsoft.com/visualstudio/code-quality/ca1822-mark-members-as-static).
+
+|||
+|-|-|
+|TypeName|MarkMembersAsStatic|
+|CheckId|CA1822|
+|Kategoria|Microsoft. Performance|
+|Zmiana kluczowa|Rozdzielenie — Jeśli element członkowski nie jest widoczny poza zestawem, niezależnie od wprowadzonej zmiany.<br /><br /> Rozdzielenie — Jeśli po prostu zmienisz element członkowski na wystąpienie, za pomocą słowa kluczowego `this`.<br /><br /> Przerywanie — Jeśli element członkowski zostanie zmieniony z elementu członkowskiego wystąpienia na statyczny element członkowski i będzie widoczny poza zestawem.|
+
+## <a name="cause"></a>Przyczyna
+ Element członkowski, który nie ma dostępu do danych wystąpienia, nie jest oznaczony jako statyczny (udostępniony w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]).
+
+## <a name="rule-description"></a>Opis reguły
+ Elementy członkowskie, które nie uzyskują dostępu do danych wystąpienia lub wywołania metody wystąpienia, mogą być oznaczone jako statyczne (udostępnione w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]). Po oznaczeniu metod jako statyczne kompilator wygeneruje niewirtualne wywołania do tych członków. Emitowanie niewirtualnych witryn wywołań uniemożliwi sprawdzenie w czasie wykonywania każdego wywołania, które sprawdza, czy bieżący wskaźnik obiektu jest inny niż null. Pozwala to osiągnąć wymierny wzrost wydajności dla kodu wrażliwego na wydajność. W niektórych przypadkach niepowodzenie dostępu do bieżącego wystąpienia obiektu reprezentuje problem z poprawnym.
+
+## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
+ Oznacz element członkowski jako statyczny (lub udostępniony w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) lub użyj "This"/"Me" w treści metody, jeśli jest to konieczne.
+
+## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
+ Można bezpiecznie pominąć ostrzeżenie z tej reguły dla wcześniej dostarczonego kodu, dla którego poprawka byłaby istotną zmianą.
+
+## <a name="related-rules"></a>Powiązane reguły
+ [CA1811: Unikaj niewywoływanego kodu prywatnego](../code-quality/ca1811-avoid-uncalled-private-code.md)
+
+ [CA1812: Unikaj klas wewnętrznych bez wystąpień](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
+
  [CA1804: Usuń nieużywane zmienne lokalne](../code-quality/ca1804-remove-unused-locals.md)

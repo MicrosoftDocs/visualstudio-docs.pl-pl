@@ -7,17 +7,17 @@ helpviewer_keywords:
 - editors, text viewing
 - Code Editor, word wrap
 ms.assetid: 442f33ef-9f52-4515-b55f-fb816d664645
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bdf19530461d52523bc581835e14fcaabe0e9a76
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 30bfe549100a06df6b9a8163cad1e3d519c3a91b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605430"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72663118"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Instrukcje: Zarządzanie zawijaniem wierszy w edytorze
 
@@ -32,13 +32,13 @@ Możesz ustawić i wyczyścić opcję **zawijania wyrazów** . Gdy ta opcja jest
 
 2. W folderze **Edytor tekstu** wybierz opcje **Ogólne** w podfolderze **wszystkie języki** , aby ustawić tę opcję globalnie.
 
-     — lub —
+     oraz
 
      Wybierz **Ogólne** opcje w podfolderze języka, w którym planujesz programowanie.
 
 3. W obszarze **Ustawienia**wybierz lub wyczyść opcję **zawijania wyrazów** .
 
-     Gdy zaznaczona  jest opcja zawijania wyrazów, opcja **Pokaż wizualne glify dla zawijania wyrazów** jest włączona.
+     Gdy zaznaczona jest opcja **zawijania wyrazów** , opcja **Pokaż wizualne glify dla zawijania wyrazów** jest włączona.
 
 4. Wybierz opcję **Pokaż glify wizualne dla zawijania wyrazów** , jeśli wolisz wyświetlić wskaźnik strzałki powrotu, w której długi wiersz jest zawijany do drugiego wiersza. Usuń zaznaczenie tej opcji, jeśli wolisz nie wyświetlać strzałek wskaźnika.
 

@@ -2,109 +2,109 @@
 title: Tworzenie struktury rozwiązania modelowania
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b602afa2b6611f5201515f492f7b3c7bb7afa08
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0bc88e4d5d292d38874f23c9d37b3e553433de01
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63003356"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660057"
 ---
 # <a name="structure-your-modeling-solution"></a>Tworzenie struktury rozwiązania modelowania
 
-Aby skutecznie używać modeli w projekcie programistycznym, członkowie zespołu musi umożliwiać do pracy w modelach różnych części projektu, w tym samym czasie. W tym temacie sugeruje schemat podzielenie aplikacji na różne części, które odpowiadają warstw w ogólną diagram warstwowe.
+Aby efektywnie korzystać z modeli w projekcie deweloperskim, członkowie zespołu muszą mieć możliwość pracy nad modelami różnych części projektu w tym samym czasie. W tym temacie zawarto schemat dzielenia aplikacji na różne części, które odpowiadają warstwom na ogólnym diagramie warstwowym.
 
-Do uruchamiania w projekcie, lub szybko subproject, warto mieć szablon projektu, który następuje struktury projektu, który wybrano. W tym temacie opisano, jak utworzyć i używać tych szablonów.
+Aby szybko rozpocząć pracę nad projektem lub podprojektem, warto mieć szablon projektu, który następuje po wybranej strukturze projektu. W tym temacie opisano sposób tworzenia i używania takiego szablonu.
 
-W tym temacie założono, że pracujesz nad projektem, który jest wystarczająco duży, aby wymagać wielu członków zespołu, a być może jest kilka zespołów. Kod i modeli projektu są przechowywane w systemie kontroli źródła takie jak [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)]. Co najmniej niektórzy członkowie zespołu, użyj programu Visual Studio do tworzenia modeli i inni członkowie zespołu mogą wyświetlać te modele przy użyciu innych wersji programu Visual Studio.
+W tym temacie założono, że pracujesz nad projektem, który jest wystarczająco duży, aby wymagać kilku członków zespołu, a może mieć kilka zespołów. Kod i modele projektu są przechowywane w systemie kontroli źródła, takim jak [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)]. Co najmniej niektórzy członkowie zespołu używają programu Visual Studio do tworzenia modeli, a inni członkowie zespołu mogą wyświetlać modele przy użyciu innych wersji programu Visual Studio.
 
-Aby dowiedzieć się, które wersje programu Visual Studio obsługują każdej funkcji narzędzia i modelowanie, zobacz [obsługiwana wersja dla narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Aby sprawdzić, które wersje programu Visual Studio obsługują poszczególne narzędzia i funkcje modelowania, zobacz [Obsługa wersji dla narzędzi architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="solution-structure"></a>Struktura rozwiązania
 
-W średnich i dużych projektów strukturę zespołu opiera się na strukturę aplikacji. Każdy zespół korzysta z rozwiązania programu Visual Studio.
+W średnim lub dużym projekcie struktura zespołu opiera się na strukturze aplikacji. Każdy zespół używa rozwiązania programu Visual Studio.
 
-### <a name="to-divide-an-application-into-layers"></a>Aby podzielić na warstwy aplikacji
+### <a name="to-divide-an-application-into-layers"></a>Aby podzielić aplikację na warstwy
 
-1. Podstawowa struktura rozwiązań struktury aplikacji, takie jak aplikacja sieci web, aplikacji usługi lub aplikacji pulpitu. Omówiono szereg typowych architektur w [Archetypes aplikacji w Przewodniku dotyczącym architektury aplikacji Microsoft](http://go.microsoft.com/fwlink/?LinkId=196681).
+1. Podstawowe struktury rozwiązań na podstawie struktury aplikacji, takiej jak aplikacja sieci Web, aplikacja usługi lub aplikacja klasyczna. Wiele typowych architektur omówiono w temacie [Application Archetypes w przewodniku po architekturze aplikacji firmy Microsoft](http://go.microsoft.com/fwlink/?LinkId=196681).
 
-2. Tworzenie rozwiązań programu Visual Studio, którym Zadzwonimy rozwiązania architektury. To rozwiązanie będzie służyć do tworzenia ogólnego projektu systemu. Modele, ale żaden kod nie będzie zawierać.
+2. Utwórz rozwiązanie programu Visual Studio, które wywoła rozwiązanie architektury. To rozwiązanie zostanie użyte do utworzenia ogólnego projektu systemu. Będzie zawierać modele, ale nie kod.
 
-   Dodaj diagram zależności do tego rozwiązania. Na diagramie zależności narysuj architektury który wybrano dla aplikacji. Na przykład diagram może wyświetlać te warstwy i zależności między nimi: Prezentacja; Logika biznesowa; i dane.
+   Dodaj diagram zależności do tego rozwiązania. Na diagramie zależności należy narysować architekturę wybraną dla aplikacji. Na przykład diagram może pokazać te warstwy i zależności między nimi: Prezentacja; Logika biznesowa; i dane.
 
-4. Utwórz oddzielne rozwiązania Visual Studio dla każdej warstwy w diagram zależności architektury.
+4. Utwórz oddzielne rozwiązanie programu Visual Studio dla każdej warstwy na diagramie zależności architektury.
 
-   Te rozwiązania będzie służyć do tworzenia kodu warstw.
+   Te rozwiązania zostaną użyte do opracowania kodu warstw.
 
-5. Tworzenie modeli, które reprezentują wzorów, warstw i pojęcia, które są wspólne dla wszystkich warstw. Rozmieść modele, aby wszystkie modele są widoczne z rozwiązania architektury i modeli odpowiednie wynika z każdej warstwy.
+5. Utwórz modele, które reprezentują projekty warstw i pojęcia, które są wspólne dla wszystkich warstw. Rozmieść modele w taki sposób, aby wszystkie modele mogły być widoczne z rozwiązania architektury, a odpowiednie modele można zobaczyć z każdej warstwy.
 
-   Można to osiągnąć przy użyciu jednej z poniższych procedur. Pierwszy alternatywna tworzy projekt modelowania osobne dla każdej warstwy, a druga tworzy projekt modelowania jednego, który jest udostępniany między warstwami.
+   Można to osiągnąć za pomocą jednej z poniższych procedur. Pierwsza alternatywa tworzy oddzielny projekt modelowania dla każdej warstwy, a drugi tworzy pojedynczy projekt modelowania, który jest współużytkowany między warstwami.
 
-#### <a name="use-a-separate-modeling-project-for-each-layer"></a>Użyj projektu modelowania osobne dla każdej warstwy
+#### <a name="use-a-separate-modeling-project-for-each-layer"></a>Użyj oddzielnego projektu modelowania dla każdej warstwy
 
-1. Utwórz projekt modelowania w rozwiązaniu do każdej warstwy.
+1. Utwórz projekt modelowania w poszczególnych rozwiązaniach warstwowych.
 
-   Ten model zawiera diagramy, które opisują wymagania i projektowania tej warstwy. Może również zawierać diagramów zależności, które pokazują zagnieżdżonych warstw.
+   Ten model będzie zawierać diagramy opisujące wymagania i projekt tej warstwy. Może również zawierać diagramy zależności pokazujące warstwy zagnieżdżone.
 
-   Istnieje już model dla każdej warstwy, a także modelu dla architektury aplikacji. Każdy model jest zawarty w własnego rozwiązania. Dzięki temu członkowie zespołu mogą pracować na warstwy, w tym samym czasie.
+   Teraz masz model dla każdej warstwy oraz model architektury aplikacji. Każdy model jest zawarty we własnym rozwiązaniu. Dzięki temu członkowie zespołu mogą korzystać z warstw w tym samym czasie.
 
-2. Do rozwiązania architektury Dodaj projekt modelowania poszczególnych rozwiązań warstwy. Aby to zrobić, otwórz rozwiązanie architektury. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł rozwiązania, wskaż polecenie Dodaj, a następnie kliknij przycisk **istniejący projekt**. Przejdź do projektu modelowania (.modelproj) w jednej warstwie rozwiązania.
+2. Do rozwiązania architektury Dodaj projekt modelowania dla każdego rozwiązania warstwy. Aby to zrobić, Otwórz rozwiązanie architektury. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł rozwiązanie, wskaż polecenie Dodaj, a następnie kliknij pozycję **istniejący projekt**. Przejdź do projektu modelowania (. modelproj) w jednym rozwiązaniu warstwy.
 
-   Każdy model jest teraz widoczne w dwóch rozwiązaniach: swoje rozwiązanie "domowy" i architektury rozwiązania.
+   Każdy model jest teraz widoczny w dwóch rozwiązaniach: jego rozwiązanie "Home" i rozwiązanie architektury.
 
-3. Do każdej warstwy w projekcie modelowania dodać diagram zależności. Uruchom kopię diagram zależności architektury. Możesz usunąć elementy, które nie są zależności diagram zależności.
+3. Do projektu modelowania każdej warstwy Dodaj diagram zależności. Zacznij od kopii diagramu zależności architektury. Można usunąć części, które nie są zależnościami diagramu zależności.
 
-   Można również dodać diagramy zależności, które reprezentują szczegółowe strukturę tej warstwy.
+   Można również dodać diagramy zależności, które reprezentują szczegółową strukturę tej warstwy.
 
-   Te diagramy są używane do weryfikacji kodu utworzonego w tej warstwie.
+   Te diagramy służą do sprawdzania poprawności kodu opracowanego w tej warstwie.
 
-4. W przypadku rozwiązania architektury edytować wymagania i modele projektu wszystkich warstw przy użyciu programu Visual Studio.
+4. W rozwiązaniu architektury Zmień wymagania i modele projektu wszystkich warstw przy użyciu programu Visual Studio.
 
-   W poszczególnych rozwiązaniach warstwy opracowywanie kodu dla tej warstwy, odnoszące się do modelu. Jeśli jesteś zawartości w celu opracowywania bez korzystania z tego samego komputera do aktualizacji modelu, można odczytania modelu i tworzenie kodu za pomocą wersji programu Visual Studio, której nie można tworzyć modele. Można również wygenerować kod z modelu w tych wersjach.
+   W każdym rozwiązaniu warstwy Utwórz kod dla tej warstwy, odnoszący się do modelu. Jeśli zawartość ma zostać wdrożona bez użycia tego samego komputera do zaktualizowania modelu, można odczytać model i opracować kod przy użyciu wersji programu Visual Studio, które nie mogą tworzyć modeli. Możesz również wygenerować kod z modelu w tych wersjach.
 
-   Ta metoda gwarantuje, że nie zakłóceń jest spowodowana przez deweloperów, którzy edytowanie modeli warstw w tym samym czasie.
+   Ta metoda gwarantuje, że żadne zakłócenia nie będzie spowodowane przez deweloperów, którzy edytują modele warstwy w tym samym czasie.
 
-   Jednak ponieważ modele są oddzielone, jest trudne do odwoływania się do typowe pojęcia. Każdy model musi mieć własną kopię elementów, na których jest on zależny od innych warstw i architektury. Diagram zależności w każdej warstwie musi być synchronizowane z diagram zależności architektury. Jest trudne w utrzymaniu synchronizacji, gdy zmienią się te elementy, mimo że można tworzyć narzędzia, w tym celu.
+   Jednak ze względu na to, że modele są oddzielne, trudno jest odwoływać się do typowych koncepcji. Każdy model musi mieć własną kopię elementów, od których jest zależna od innych warstw i architektury. Diagram zależności w każdej warstwie musi być zsynchronizowany z diagramem zależności architektury. W przypadku zmiany tych elementów trudno jest zachować synchronizację, chociaż można opracowywać narzędzia do osiągnięcia tego celu.
 
-#### <a name="use-a-separate-package-for-each-layer"></a>Użyj oddzielny pakiet dla każdej warstwy
+#### <a name="use-a-separate-package-for-each-layer"></a>Użyj oddzielnego pakietu dla każdej warstwy
 
-1. W rozwiązaniu dla każdej warstwy Dodaj projekt modelowania architektury. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł rozwiązania, wskaż **Dodaj**, a następnie kliknij przycisk **istniejący projekt**. Projekt modelowania pojedynczego jest teraz dostępna z każdego rozwiązania: projekt architektury i projektu rozwoju dla każdej warstwy.
+1. W rozwiązaniu dla każdej warstwy Dodaj projekt z modelem architektury. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł rozwiązanie, wskaż polecenie **Dodaj**, a następnie kliknij pozycję **istniejący projekt**. Dostęp do pojedynczego projektu modelowania można teraz uzyskać z każdego rozwiązania: projektu architektury i projektu deweloperskiego dla każdej warstwy.
 
-2. W modelu udostępnionego należy utworzyć pakiet dla każdej warstwy: W **Eksploratora rozwiązań**, wybierz projekt modelowania. W **Eksploratora modelu UML**, kliknij prawym przyciskiem myszy węzeł główny modelu, wskaż **Dodaj**, a następnie kliknij przycisk **pakietu**.
+2. W modelu udostępnionym Utwórz pakiet dla każdej warstwy: w **Eksplorator rozwiązań**wybierz projekt modelowania. W **Eksploratorze modelu UML**kliknij prawym przyciskiem myszy węzeł główny modelu, wskaż polecenie **Dodaj**, a następnie kliknij pozycję **pakiet**.
 
-   Każdy pakiet tak, będzie zawierać diagramy, które opisują wymagania i projektowania odpowiedniej warstwy.
+   Każdy pakiet będzie zawierać diagramy opisujące wymagania i projekt odpowiedniej warstwy.
 
-3. W razie potrzeby należy dodać diagramów zależności lokalnych dla wewnętrznej struktury każdej warstwy.
+3. W razie potrzeby Dodaj lokalne diagramy zależności dla wewnętrznej struktury każdej warstwy.
 
-   Ta metoda umożliwia elementy projektu każdej warstwy, aby odwoływać się bezpośrednio do tych warstw i popularną architekturę, od którego zależy.
+   Dzięki tej metodzie elementy projektu każdej warstwy mogą odwoływać się bezpośrednio do tych warstw i wspólnych architektur, na których jest ona zależna.
 
-   Równoczesną pracą na różnych pakietach mogą powodować konflikty, są one stosunkowo łatwe do zarządzania, ponieważ te pakiety są przechowywane w oddzielnych plikach.
+   Mimo że współbieżna współpraca nad różnymi pakietami może spowodować pewne konflikty, są one dość łatwe do zarządzania, ponieważ pakiety są przechowywane w oddzielnych plikach.
 
 ## <a name="create-architecture-templates"></a>Tworzenie szablonów architektury
 
-W praktyce nie należy tworzyć rozwiązania programu Visual Studio w tym samym czasie, ale dodaj je w miarę postępów projektu. Prawdopodobnie będziesz również użycie tej samej struktury rozwiązania w przyszłych projektów. Aby ułatwić szybkie tworzenie nowych rozwiązań, można utworzyć szablon rozwiązania lub projektu. Tak, aby łatwo Dystrybuuj i zainstalować na innych komputerach, można przechwycić szablonu w Visual Studio Integration rozszerzenie (VSIX).
+W tej chwili nie utworzysz jednocześnie wszystkich rozwiązań programu Visual Studio, ale dodajesz je w miarę postępów projektu. Prawdopodobnie będziesz również używać tej samej struktury rozwiązań w przyszłych projektach. Aby szybko tworzyć nowe rozwiązania, można utworzyć rozwiązanie lub szablon projektu. Szablon można przechwycić w rozszerzeniu integracji programu Visual Studio (VSIX), aby ułatwić dystrybucję i instalację na innych komputerach.
 
-Na przykład często używane rozwiązania mające warstwy prezentacji, biznesowych i danych, można skonfigurować szablon, który spowoduje utworzenie nowych rozwiązań, które mają tej struktury.
+Jeśli na przykład często używasz rozwiązań z warstwami prezentacji, firmowych i danych, możesz skonfigurować szablon, który będzie tworzyć nowe rozwiązania mające tę strukturę.
 
 ### <a name="to-create-a-solution-template"></a>Aby utworzyć szablon rozwiązania
 
-1. [Pobierz i zainstaluj Kreatora eksportowania szablonu](http://go.microsoft.com/fwlink/?LinkId=196686).
+1. [Pobierz i zainstaluj Kreatora eksportu szablonów](http://go.microsoft.com/fwlink/?LinkId=196686).
 
-2. Tworzenie struktury rozwiązania, którego chcesz użyć jako punktu wyjścia dla przyszłych projektów.
+2. Utwórz strukturę rozwiązania, która ma być używana jako punkt wyjścia dla przyszłych projektów.
 
-3. Na **pliku** menu, kliknij przycisk **Eksportuj szablon jako VSIX**.
+3. W menu **plik** kliknij polecenie **Eksportuj szablon jako VSIX**.
 
-   **Eksportuj szablon jako Kreator VSIX** zostanie otwarty.
+   Zostanie otwarty **Kreator eksportowania szablonu jako VSIX** .
 
-4. Postępując zgodnie z instrukcjami w kreatorze Wybierz projekty, które chcesz uwzględnić w szablonie, podaj nazwę i opis szablonu i określanie lokalizacji wyjściowej.
+4. Postępując zgodnie z instrukcjami wyświetlanymi w kreatorze, wybierz projekty, które chcesz uwzględnić w szablonie, podaj nazwę i opis szablonu, a następnie określ lokalizację wyjściową.
 
-## <a name="watch-a-video"></a>Obejrzyj film wideo
+## <a name="watch-a-video"></a>Obejrzyj wideo
 
-[Organizowanie modeli i zarządzania nimi](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-9-organizing-and-managing-your-models)
+[Organizowanie modeli i zarządzanie nimi](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-9-organizing-and-managing-your-models)
 
 ## <a name="see-also"></a>Zobacz też
 

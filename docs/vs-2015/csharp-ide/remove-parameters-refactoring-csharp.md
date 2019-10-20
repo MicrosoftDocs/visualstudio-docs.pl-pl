@@ -1,5 +1,5 @@
 ---
-title: Refaktoryzacja usuwania parametrów (C#) | Dokumentacja firmy Microsoft
+title: Refaktoryzacja usuwania parametrów (C#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,80 +14,80 @@ helpviewer_keywords:
 - Remove Parameters refactoring [C#]
 ms.assetid: f4fc3265-0ef8-4398-a691-c338178697a6
 caps.latest.revision: 24
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 40a884fe2ae6aaf73256d8edbcbd083a193b0342
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 40c373c3575f007952143e29c8dfc2cfac3d080f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444622"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667494"
 ---
 # <a name="remove-parameters-refactoring-c"></a>Refaktoryzacja usuwania parametrów (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-`Remove Parameters` jest operacji refaktoryzacji, która zapewnia łatwy sposób można usunąć parametry z metod, indeksatorów lub delegatów. Usuń zmiany parametrów zgłoszenia; we wszystkich lokalizacjach, w którym element członkowski jest wywoływana parametr zostaną usunięte, aby odzwierciedlić nowe oświadczenie.  
-  
- Wykonujesz operację usunięcia parametrów przez pierwszy ustawieniu kursora na metoda, indeksator lub delegata. Gdy kursor znajduje się w stanie wywołać Usuń `Parameters` operacji, kliknij przycisk **Refaktoryzuj** menu, naciśnij klawisz skrótu klawiaturowego lub wybierz polecenie z menu skrótów.  
-  
+`Remove Parameters` jest operacją refaktoryzacji, która zapewnia łatwy sposób usuwania parametrów z metod, indeksatorów lub delegatów. Usuwanie parametrów powoduje zmianę deklaracji; w każdym miejscu, w którym jest wywoływana składowa, parametr zostanie usunięty w celu odzwierciedlenia nowej deklaracji.
+
+ Aby wykonać operację usuwania parametrów, należy najpierw pozycjonować kursor w metodzie, indeksatorze lub delegacie. Gdy kursor znajduje się na pozycji, aby wywołać operację Usuń `Parameters`, kliknij menu **refaktoryzacji** , naciśnij skrót klawiaturowy lub wybierz polecenie z menu skrótów.
+
 > [!NOTE]
-> Nie można usunąć pierwszy parametr metody rozszerzenia.  
-  
-### <a name="to-remove-parameters"></a>Aby usunąć parametrów  
-  
-1. Utwórz aplikację konsoli o nazwie `RemoveParameters`, a następnie zastąp `Program` następującym kodem.  
-  
-    ```csharp  
-    class A  
-    {  
-        // Invoke on 'A'.  
-        public A(string s, int i) { }  
-    }  
-  
-    class B  
-    {  
-        void C()  
-        {  
-            // Invoke on 'A'.  
-            A a = new A("a", 2);  
-        }  
-    }  
-    ```  
-  
-2. Umieść kursor w metodzie `A`, albo w deklaracji metody lub wywołania metody.  
-  
-3. Z **Refaktoryzuj** menu, wybierz opcję **Usuń parametry** do wyświetlenia **Usuń parametry** okno dialogowe.  
-  
-     Możesz również wpisać skrótu klawiaturowego CTRL + R, V, aby wyświetlić **Usuń parametry** okno dialogowe.  
-  
-     Również kliknięciu prawym przyciskiem myszy kursora, wskaż polecenie **Refaktoryzuj**, a następnie kliknij przycisk **Usuń parametry** do wyświetlenia **Usuń parametry** okno dialogowe.  
-  
-4. Za pomocą **parametry** pola, umieść kursor na `int i`, a następnie kliknij przycisk **Usuń**.  
-  
-5. Kliknij przycisk **OK**.  
-  
-6. W **podgląd zmian — Usuń parametry** okno dialogowe, kliknij przycisk **Zastosuj**.  
-  
-## <a name="remarks"></a>Uwagi  
- Parametry można usunąć z deklaracji metody lub wywołania metody. Umieść kursor w nazwie metody deklaracji lub delegata i wywoływać Usuń parametry.  
-  
+> Nie można usunąć pierwszego parametru w metodzie rozszerzenia.
+
+### <a name="to-remove-parameters"></a>Aby usunąć parametry
+
+1. Utwórz aplikację konsolową o nazwie `RemoveParameters`, a następnie zastąp `Program` poniższym kodem.
+
+    ```csharp
+    class A
+    {
+        // Invoke on 'A'.
+        public A(string s, int i) { }
+    }
+
+    class B
+    {
+        void C()
+        {
+            // Invoke on 'A'.
+            A a = new A("a", 2);
+        }
+    }
+    ```
+
+2. Umieść kursor w metodzie `A`, w deklaracji metody lub wywołaniu metody.
+
+3. Z menu **refaktoryzacji** wybierz pozycję **Usuń parametry** , aby wyświetlić okno dialogowe **Usuwanie parametrów** .
+
+     Możesz również wpisać skrót klawiaturowy CTRL + R, V, aby wyświetlić okno dialogowe **Usuwanie parametrów** .
+
+     Możesz również kliknąć prawym przyciskiem myszy kursor, wskazać polecenie **Refaktoryzacja**, a następnie kliknąć polecenie **Usuń parametry** , aby wyświetlić okno dialogowe **Usuwanie parametrów** .
+
+4. Korzystając z pola **Parametry** , umieść kursor na `int i`, a następnie kliknij przycisk **Usuń**.
+
+5. Kliknij przycisk **OK**.
+
+6. W oknie dialogowym **Podgląd zmian — Usuwanie parametrów** kliknij przycisk **Zastosuj**.
+
+## <a name="remarks"></a>Uwagi
+ Parametry można usunąć z deklaracji metody lub wywołania metody. Umieść kursor w deklaracji metody lub nazwie delegata i Wywołaj parametry Remove.
+
 > [!CAUTION]
-> Usuń parametry umożliwia możesz usunąć parametr, do którego odwołuje się w treści elementu członkowskiego, ale nie powoduje usunięcia odwołania do tego parametru w treści metody. Może to powodować błędy kompilacji kodu. Można jednak użyć **podgląd zmian** okno dialogowe, aby sprawdzić kod przed wykonaniem operacji refaktoryzacji.  
-  
- Jeśli parametr usuwany jest modyfikowana podczas wywołania metody, usunięcie parametru spowoduje również usunięcie modyfikacji. Na przykład jeśli wywołanie metody została zmieniona z  
-  
-```csharp  
-MyMethod(param1++, param2);  
-```  
-  
- na  
-  
-```csharp  
-MyMethod(param2);  
-```  
-  
- Operacja refaktoryzacji `param1` nie zwiększa się.  
-  
-## <a name="see-also"></a>Zobacz też  
+> Polecenie Usuń parametry umożliwia usunięcie parametru, do którego istnieje odwołanie w treści elementu członkowskiego, ale nie powoduje usunięcia odwołań do tego parametru w treści metody. Może to spowodować błędy kompilacji w kodzie. Można jednak użyć okna dialogowego **Podgląd zmian** , aby przejrzeć swój kod przed wykonaniem operacji refaktoryzacji.
+
+ Jeśli usuwany parametr jest modyfikowany podczas wywołania metody, usunięcie parametru spowoduje również usunięcie modyfikacji. Na przykład, jeśli wywołanie metody zostało zmienione z
+
+```csharp
+MyMethod(param1++, param2);
+```
+
+ na
+
+```csharp
+MyMethod(param2);
+```
+
+ w wyniku operacji refaktoryzacji `param1` nie zostanie zwiększona.
+
+## <a name="see-also"></a>Zobacz też
  [Refaktoryzacja (C#)](../csharp-ide/refactoring-csharp.md)

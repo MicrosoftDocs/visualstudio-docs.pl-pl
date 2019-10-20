@@ -12,32 +12,32 @@ helpviewer_keywords:
 - saving files, automatically
 - files, saving automatically
 ms.assetid: 397e5e44-4bbe-4289-94d1-642b466c9111
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59a28d73677011ef2de3ce4dd844757108b317ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 865cf2ec43071a01a333961e118beab14abab82b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790893"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651901"
 ---
-# <a name="autorecover-environment-options-dialog-box"></a>Okno dialogowe AutoRecover, środowisko, opcje
+# <a name="autorecover-environment-options-dialog-box"></a>Autoodzyskiwanie, środowisko, Opcje — okno dialogowe
 
-Użyj tej strony w **opcje** okno dialogowe, aby określić, czy do automatycznego wykonywania kopii zapasowej plików, czy nie. Można również określić, jeśli chcesz przywrócić zmodyfikowane pliki, jeśli nieoczekiwane zamknięcie programu Visual Studio.
+Użyj tej strony w oknie dialogowym **Opcje** , aby określić, czy automatycznie tworzyć kopie zapasowe plików, czy nie. Możesz również określić, czy chcesz przywrócić zmodyfikowane pliki, jeśli program Visual Studio nieoczekiwanie się zamknie.
 
-Dostęp do tego okna dialogowego wybierając **narzędzia** menu, wybierając **opcje**, a następnie wybierając **środowiska** > **Autoodzyskiwania**. Jeśli ta strona nie jest wyświetlana na liście, wybierz **Pokaż wszystkie ustawienia** w **opcje** okno dialogowe.
+Uzyskaj dostęp do tego okna dialogowego, wybierając menu **Narzędzia** , wybierając **Opcje**, a następnie wybierając **środowisko**  > **Autoodzyskiwanie**. Jeśli ta strona nie zostanie wyświetlona na liście, wybierz pozycję **Pokaż wszystkie ustawienia** w oknie dialogowym **Opcje** .
 
-**Zapisuj informacje Autoodzyskiwania co minut [n]**
+**Zapisuj informacje Autoodzyskiwania co [n] min**
 
-Użyj tej opcji, aby dostosować, jak często automatycznie zapisaniu pliku w edytorze. Wcześniej zapisanych plików, kopia pliku jest zapisywana w *%USERPROFILE%\Documents\Visual Studio\\[wersja] pliki \Backup\\[nazwa_projektu]*. Jeśli plik jest nowy, a nie zapisano go, plik jest automatycznie zapisany przy użyciu nazwy losowo wygenerowany plik.
+Użyj tej opcji, aby dostosować częstotliwość automatycznego zapisywania pliku w edytorze. W przypadku wcześniej zapisanych plików kopia pliku jest zapisywana w *%USERPROFILE%\Documents\Visual Studio \\ [wersja] \backup pliki \\ [ProjectName]* . Jeśli plik jest nowy i jeszcze go nie zapisano, plik zostanie automatycznie zapisany przy użyciu losowo wygenerowanej nazwy pliku.
 
-**Zachowaj informacje automatycznego odzyskiwania dni [n]**
+**Zachowaj informacje Autoodzyskiwania dla [n] dni**
 
-Użyj tej opcji, aby określić, jak długo Visual Studio przechowuje pliki utworzone dla Autoodzyskiwania.
+Użyj tej opcji, aby określić, jak długo program Visual Studio ma nadal tworzyć pliki do odzyskania.
 
 ### <a name="see-also"></a>Zobacz także
 
-- [Okno dialogowe Opcje](../../ide/reference/options-dialog-box-visual-studio.md)
+- [Opcje — okno dialogowe](../../ide/reference/options-dialog-box-visual-studio.md)

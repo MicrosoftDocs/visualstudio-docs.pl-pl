@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Add Existing Project command
 - File.AddExistingProject
 ms.assetid: 71cf3e31-c76b-405b-ad6a-1b1bc654bd40
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5a511e19394b397096a5a5ba2e339166454138e
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: bd6aca05758185f4df47688044f479b7bbe2829e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926282"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658815"
 ---
 # <a name="add-existing-project-command"></a>Dodaj istniejący projekt — Polecenie
 Dodaje istniejący projekt do bieżącego rozwiązania.
@@ -33,7 +33,7 @@ File.AddExistingProject filename
 `filename`\
 Opcjonalny. Pełna ścieżka i nazwa projektu, z rozszerzeniem, projektu do dodania do rozwiązania.
 
-`filename` Jeśli argument zawiera spacje, musi być ujęty w cudzysłów.
+Jeśli argument `filename` zawiera spacje, musi być ujęty w cudzysłów.
 
 Jeśli nazwa pliku nie zostanie określona, polecenie spowoduje otwarcie okna dialogowego plików, dzięki czemu użytkownik może wybrać projekt.
 

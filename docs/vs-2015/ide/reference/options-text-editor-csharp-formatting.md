@@ -1,5 +1,5 @@
 ---
-title: Opcje, Edytor tekstu, C#, formatowanie | Dokumentacja firmy Microsoft
+title: Opcje, Edytor tekstu, C#, formatowanie | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -23,40 +23,40 @@ helpviewer_keywords:
 - Text Editor Options dialog box, formatting
 ms.assetid: 5a7bb668-1d0c-4ffe-9508-24592813162e
 caps.latest.revision: 29
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f75d2b73946a006057945b1e68f018a358e38279
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 5371b7180aed462910a57daeb9bf5d43f2ecfedb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65674199"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662285"
 ---
 # <a name="options-text-editor-c-formatting"></a>Opcje, edytor tekstu, C#, formatowanie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Użyj **formatowanie** okno dialogowe strony właściwości można ustawić opcje formatowania kodu w edytorze kodu. Aby otworzyć to okno dialogowe, kliknij przycisk **opcje** na **narzędzia** menu rozwiń **edytora tekstów**, rozwiń węzeł **C#**, a następnie kliknij przycisk  **Formatowanie**.  
-  
+Za pomocą okna dialogowego **Formatowanie** strony właściwości można ustawić opcje formatowania kodu w edytorze kodu. Aby uzyskać dostęp do tego okna dialogowego, kliknij opcję **Opcje** w menu **Narzędzia** , rozwiń **Edytor tekstu**, rozwiń **C#** , a następnie kliknij pozycję **Formatowanie**.
+
 > [!NOTE]
-> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
-  
-## <a name="general-settings"></a>Ustawienia ogólne  
- Ustawienia ogólne określają, jak Edytor kodu stosuje opcji formatowania do kodu.  
-  
-## <a name="uielement-list"></a>Lista elementów UI  
-  
-|Etykieta|Opis|  
-|-----------|-----------------|  
-|**Automatycznie Formatuj skończoną instrukcję w pozycji znaku;**|Po wybraniu formatuje instrukcji po ukończeniu zgodnie z opcjami formatowania, wybrany dla edytora kodu. Wyczyść to pole, jeśli nie chcesz, Edytor kodu, aby zmienić instrukcje.|  
-|**Automatycznie Formatuj blok ukończone w}**|Po wybraniu formatów kodu bloki zgodnie z opcjami formatowania wybrany edytor kodu, zaraz po wykonaniu bloku kodu. Wyczyść to pole, jeśli nie chcesz, aby zmiany bloków w edytorze kodu.|  
-|**Dostosuj wcięcia przy wklejaniu**|Po wybraniu formatuje tekst wklejone do kodu w edytorze Dopasuj opcje formatowania, wybrany dla edytora kodu. Wyczyść to pole, jeśli nie chcesz wkleić tekst ma zostać zmodyfikowana.|  
-  
-## <a name="preview-window"></a>Okno podglądu  
- **Wcięcia**, **nowe wiersze**, **odstępy**, i **zawijania** opcje okienka wyświetlania okno podglądu. Okno podglądu przedstawiono wpływ poszczególnych opcji. Aby użyć okno podglądu, wybierz opcję formatowania. Okno podglądu pokazano przykład odpowiadającego wybranej opcji. Po zmianie ustawienia, na przykład, gdy zaznacz lub wyczyść pole wyboru, okno podglądu aktualizacji aby pokazać efekt nowe ustawienie.  
-  
-## <a name="remarks"></a>Uwagi  
- Wcięcie opcji na **karty** stron dla każdego z języków tylko określić, gdzie edytora kodu umieszcza kursor po naciśnięciu klawisza ENTER na końcu wiersza. Wcięcie opcji w obszarze **formatowanie** są stosowane, gdy kod jest formatowana automatycznie, na przykład po wklejeniu kodu do pliku podczas **dostosować wcięcia przy wklejaniu** jest zaznaczone i kiedy trwa bloku sformatowana został wpisany ręcznie.  
-  
-## <a name="see-also"></a>Zobacz też  
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, wybierz **Importuj i Eksportuj ustawienia** w menu **Narzędzia** . Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień deweloperskich w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+
+## <a name="general-settings"></a>Ustawienia ogólne
+ Ustawienia ogólne mają wpływ na to, jak edytor kodu stosuje opcje formatowania do kodu.
+
+## <a name="uielement-list"></a>Lista elementów UI
+
+|Etykieta|Opis|
+|-----------|-----------------|
+|**Automatycznie Formatuj ukończoną instrukcję na;**|Po zaznaczeniu, formatuje instrukcje po zakończeniu zgodnie z opcjami formatowania wybranymi dla edytora kodu. Wyczyść to pole, jeśli edytor kodu nie ma modyfikować instrukcji.|
+|**Automatycznie Formatuj ukończony blok na}**|Po wybraniu format bloki kodu zgodnie z opcjami formatowania wybranych dla edytora kodu zaraz po zakończeniu bloku kodu. Wyczyść to pole, jeśli nie chcesz, aby Edytor kodu zmieniał bloki.|
+|**Dostosuj wcięcia przy wklejaniu**|Po wybraniu formatowanie tekstu wklejonego do edytora kodu, aby dopasować opcje formatowania wybrane dla edytora kodu. Wyczyść to pole, jeśli wklejany tekst nie ma być modyfikowany.|
+
+## <a name="preview-window"></a>Okno podglądu
+ Okienka **wcięcie**, **nowe wiersze**, **odstępy**i opcje **zawijania** wyświetlają okna podglądu. Okno podglądu pokazuje efekt każdej opcji. Aby użyć okna podglądu, wybierz opcję formatowania. Okno podglądu zawiera przykład wybranej opcji. Po zmianie ustawienia, na przykład po zaznaczeniu lub usunięciu zaznaczenia pola wyboru, okno podglądu zostanie zaktualizowane, aby pokazać efekt nowego ustawienia.
+
+## <a name="remarks"></a>Uwagi
+ Opcje wcięć na stronach **kart** dla każdego języka określają, gdzie Edytor kodu umieszcza kursor po naciśnięciu klawisza Enter na końcu wiersza. Opcje wcięć w obszarze **Formatowanie** stosuje się, gdy kod jest formatowany automatycznie, na przykład podczas wklejania kodu do pliku, podczas gdy jest zaznaczona opcja **Dostosuj wcięcie przy wklejaniu** i gdy format jest pisany ręcznie.
+
+## <a name="see-also"></a>Zobacz też
  [Ogólne, Środowisko, Opcje — okno dialogowe](../../ide/reference/general-environment-options-dialog-box.md)

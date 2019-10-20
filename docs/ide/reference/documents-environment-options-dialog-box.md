@@ -26,21 +26,21 @@ helpviewer_keywords:
 - warnings, files changed
 - Solution Explorer, displaying files in
 ms.assetid: 4e3ccf1b-cd68-4db6-9470-710c911b47fc
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a09036e0c0f83d262760598dd02e6cf6e8cdd38e
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: ff1b5e83d9aaca0181699e3cc7effcc973ef2349
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68606070"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661632"
 ---
-# <a name="options-dialog-box-environment--documents"></a>Opcje — okno dialogowe: Dokumenty \> środowiska
+# <a name="options-dialog-box-environment--documents"></a>Opcje — okno dialogowe: \> środowiska dokumenty
 
-Za pomocą tej strony okna dialogowego **Opcje** można sterować wyświetlaniem dokumentów w zintegrowanym środowisku programistycznym (IDE) i zarządzać zmianami zewnętrznymi do dokumentów i plików. Możesz uzyskać dostęp do tego okna dialogowego, klikając opcję **Opcje** w menu **Narzędzia** , a następnie wybierając**dokumenty** **środowiska** > .
+Za pomocą tej strony okna dialogowego **Opcje** można sterować wyświetlaniem dokumentów w zintegrowanym środowisku programistycznym (IDE) i zarządzać zmianami zewnętrznymi do dokumentów i plików. Możesz uzyskać dostęp do tego okna dialogowego, klikając opcję **Opcje** w menu **Narzędzia** , a następnie wybierając **środowisko**  > **dokumenty**.
 
 **Wykryj, kiedy plik zostanie zmieniony poza środowiskiem**
 
@@ -48,7 +48,7 @@ Gdy ta opcja jest zaznaczona, komunikat natychmiast powiadamia o zmianach w otwa
 
 **Załaduj ponownie zmodyfikowane pliki, chyba że istnieją niezapisane zmiany**
 
-Gdy wykryjesz, **gdy plik zostanie zmieniony poza środowiskiem** wybranym, a otwarty plik w IDE ulegnie zmianie poza IDE, domyślnie generowany jest komunikat ostrzegawczy. Jeśli ta opcja jest włączona, nie są wyświetlane żadne ostrzeżenie i dokument zostanie ponownie załadowany w środowisku IDE w celu pobrania zewnętrznych zmian.
+Gdy **wykryjesz, gdy plik zostanie zmieniony poza środowiskiem** wybranym, a otwarty plik w IDE ulegnie zmianie poza IDE, domyślnie generowany jest komunikat ostrzegawczy. Jeśli ta opcja jest włączona, nie są wyświetlane żadne ostrzeżenie i dokument zostanie ponownie załadowany w środowisku IDE w celu pobrania zewnętrznych zmian.
 
 **Zezwalaj na edytowanie plików tylko do odczytu; Ostrzegaj przy próbie zapisu**
 

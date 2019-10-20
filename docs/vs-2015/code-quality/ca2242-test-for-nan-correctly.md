@@ -1,5 +1,5 @@
 ---
-title: 'CA2242: Poprawnie Testuj NaN | Dokumentacja firmy Microsoft'
+title: 'CA2242: pomyślnie przeprowadzono test dla elementu NaN | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -11,40 +11,40 @@ helpviewer_keywords:
 - CA2242
 ms.assetid: e12dcffc-e255-4e1e-8fdf-3c6054d44abe
 caps.latest.revision: 13
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 17a98ce3d213c5d9ae85bb5132a0a44e50112037
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8433ac081a45e3dbab80ffcd6f96e6d1db914337
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68142357"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672011"
 ---
-# <a name="ca2242-test-for-nan-correctly"></a>CA2242: Poprawnie testuj nie-liczby (NaN)
+# <a name="ca2242-test-for-nan-correctly"></a>CA2242: Testuj poprawnie pod kątem NaN
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|TestForNaNCorrectly|
 |CheckId|CA2242|
-|Kategoria|Microsoft.Usage|
-|Zmiana kluczowa|Bez podziału|
+|Kategoria|Microsoft. Usage|
+|Zmiana kluczowa|Bez przerywania|
 
 ## <a name="cause"></a>Przyczyna
- Wyrażenie sprawdza czy wartość <xref:System.Single.NaN?displayProperty=fullName> lub <xref:System.Double.NaN?displayProperty=fullName>.
+ Wyrażenie testuje wartość w odniesieniu do <xref:System.Single.NaN?displayProperty=fullName> lub <xref:System.Double.NaN?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Opis reguły
- <xref:System.Double.NaN?displayProperty=fullName>, który reprezentuje nie nieliczbowych, wyniki podczas operacji arytmetycznej jest niezdefiniowana. Dowolne wyrażenie, który umożliwia sprawdzenie równość wartości i <xref:System.Double.NaN?displayProperty=fullName> zawsze zwraca `false`. Dowolne wyrażenie, który umożliwia sprawdzenie nierówności pomiędzy wartość i <xref:System.Double.NaN?displayProperty=fullName> zawsze zwraca `true`.
+ <xref:System.Double.NaN?displayProperty=fullName>, który reprezentuje nie liczbę, wyniki, gdy operacja arytmetyczna jest niezdefiniowana. Dowolne wyrażenie, które sprawdza równość między wartością a <xref:System.Double.NaN?displayProperty=fullName> zawsze zwraca `false`. Dowolne wyrażenie, które sprawdza nierówność między wartością i <xref:System.Double.NaN?displayProperty=fullName> zawsze zwraca `true`.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, a także dokładnie określić, czy wartość reprezentuje <xref:System.Double.NaN?displayProperty=fullName>, użyj <xref:System.Single.IsNaN%2A?displayProperty=fullName> lub <xref:System.Double.IsNaN%2A?displayProperty=fullName> do testowania wartości.
+ Aby naprawić naruszenie tej zasady i dokładnie określić, czy wartość reprezentuje <xref:System.Double.NaN?displayProperty=fullName>, użyj <xref:System.Single.IsNaN%2A?displayProperty=fullName> lub <xref:System.Double.IsNaN%2A?displayProperty=fullName> do przetestowania wartości.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Nie pomijaj ostrzeżeń dla tej reguły.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie pokazano dwa wyrażenia, które niepoprawnie testowanie czy wartość <xref:System.Double.NaN?displayProperty=fullName> i wyrażenie, które korzysta z poprawnie <xref:System.Double.IsNaN%2A?displayProperty=fullName> do testowania wartości.
+ W poniższym przykładzie przedstawiono dwa wyrażenia, które niepoprawnie przetestują wartość względem <xref:System.Double.NaN?displayProperty=fullName> i wyrażenie, które prawidłowo używa <xref:System.Double.IsNaN%2A?displayProperty=fullName> do przetestowania wartości.
 
  [!code-csharp[FxCop.Usage.TestForNaN#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.TestForNaN/cs/FxCop.Usage.TestForNaN.cs#1)]
  [!code-vb[FxCop.Usage.TestForNaN#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.TestForNaN/vb/FxCop.Usage.TestForNaN.vb#1)]

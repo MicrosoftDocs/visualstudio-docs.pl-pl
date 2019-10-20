@@ -1,5 +1,5 @@
 ---
-title: 'CA1814: Preferuj Tablice nieregularne wielowymiarowych | Dokumentacja firmy Microsoft'
+title: 'CA1814: Preferuj tablice nieregularne dla wielowymiarowego | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - CA1814
 ms.assetid: b1ccf563-2ec8-42e5-b89c-731a9de1ea1d
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 73b20ef9a93e59f3fae30407deda8d21befc57f5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f0ac183321bd2a3070b1f1ddc54402b74c8fb823
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68201700"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668418"
 ---
 # <a name="ca1814-prefer-jagged-arrays-over-multidimensional"></a>CA1814: Wybieraj tablice nieregularne zamiast wielowymiarowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,23 +29,23 @@ ms.locfileid: "68201700"
 |-|-|
 |TypeName|PreferJaggedArraysOverMultidimensional|
 |CheckId|CA1814|
-|Kategoria|Microsoft.Performance|
+|Kategoria|Microsoft. Performance|
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Składowa jest zadeklarowana jako tablicę wielowymiarową.
+ Element członkowski jest zadeklarowany jako tablica wielowymiarowa.
 
 ## <a name="rule-description"></a>Opis reguły
  Nieregularna tablica to ta, której elementy są tablicami. Tablice, które tworzą elementy, mogą mieć różne rozmiary, co zapewnia większą oszczędność miejsca w przypadku niektórych zestawów danych.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, należy zmienić tablicy wielowymiarowej tablicy nieregularnej.
+ Aby naprawić naruszenie tej reguły, Zmień tablicę wielowymiarową na tablicę nieregularną.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Pomijaj ostrzeżeń dla tej reguły, jeśli tablica wielowymiarowa nie traci miejsca.
+ Pomiń ostrzeżenie z tej reguły, jeśli tablica wielowymiarowa nie ma miejsca.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład pokazuje deklaracje dla nieregularnej i tablice wielowymiarowe.
+ W poniższym przykładzie przedstawiono deklaracje dla tablic nieregularnych i wielowymiarowych.
 
  [!code-csharp[FxCop.Performance.JaggedArrays#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.JaggedArrays/cs/FxCop.Performance.JaggedArrays.cs#1)]
  [!code-vb[FxCop.Performance.JaggedArrays#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Performance.JaggedArrays/vb/FxCop.Performance.JaggedArrays.vb#1)]

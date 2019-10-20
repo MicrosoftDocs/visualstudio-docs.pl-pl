@@ -6,32 +6,32 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: 5839d6ca-e5ac-4468-9025-3d5ea177f19c
 caps.latest.revision: 9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7c64207f6ab26c78492db9feae80698b0af5679d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 77214948609bd73a2a630a62b4c1b7db114cf8e6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437509"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665793"
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Domyślne skróty klawiaturowe dla często używanych poleceń w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Wybierając te domyślne skróty klawiaturowe, możesz uzyskać dostęp do często używanych poleceń w Visual Studio. Aby uzyskać pełną listę poleceń, które mają domyślne skróty, zobacz [domyślne skróty klawiaturowe](../ide/default-keyboard-shortcuts-in-visual-studio.md).
+Wybierając te domyślne skróty klawiaturowe, możesz uzyskać dostęp do często używanych poleceń w Visual Studio. Aby uzyskać pełną listę poleceń, które mają skróty domyślne, zobacz [domyślne skróty klawiaturowe](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
 > [!NOTE]
-> Możesz wyszukać skrót dla dowolnego polecenia, otwierając **opcje** okno dialogowe, rozszerzając **środowiska** węzeł, a następnie wybierając **klawiatury**.
+> Możesz wyszukać skrót dla dowolnego polecenia, otwierając okno dialogowe **Opcje** , rozwijając węzeł **środowisko** , a następnie wybierając pozycję **Klawiatura**.
 
  **W tym temacie**
 
 ||||||
 |-|-|-|-|-|
-|[Kompilacja](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_build)|[Edytowanie](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_edit)|[Project](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_project)|[Narzędzia](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_tools)|[Window](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_window)|
-|[Debugowanie](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_debug)|[Plik](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_file)|[Refaktoryzacja](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_refactor)|[Widok](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_view)||
+|[Kompilacja](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_build)|[Edytowanie](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_edit)|[Projektu](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_project)|[Narzędzia](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_tools)|[Dział](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_window)|
+|[Rozpocząć](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_debug)|[Rozszerzeniem](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_file)|[Refaktoryzuj](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_refactor)|[Widokiem](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_view)||
 
-## <a name="bkmk_build"></a> Kompilacja
+## <a name="bkmk_build"></a>Utworzenia
 
 |Polecenia|Skróty klawiaturowe [Konteksty]|
 |--------------|-------------------------------------|
@@ -40,7 +40,7 @@ Wybierając te domyślne skróty klawiaturowe, możesz uzyskać dostęp do częs
 |Build.Compile|Ctrl+F7 [Globalny]|
 |Build.RunCodeAnalysisonSolution|Alt+F11 [Globalny]|
 
-## <a name="bkmk_debug"></a> Debugowanie
+## <a name="bkmk_debug"></a>Rozpocząć
 
 |Polecenia|Skróty klawiaturowe [Konteksty]|
 |--------------|-------------------------------------|
@@ -60,7 +60,7 @@ Wybierając te domyślne skróty klawiaturowe, możesz uzyskać dostęp do częs
 |Debug.StopDebugging|Shift+F5 [Globalny]|
 |Debug.ToggleBreakpoint|F9 [globalny]|
 
-## <a name="bkmk_edit"></a> Edytuj
+## <a name="bkmk_edit"></a>Edytowania
 
 |Polecenia|Skróty klawiaturowe [Konteksty]|
 |--------------|-------------------------------------|
@@ -73,7 +73,7 @@ Wybierając te domyślne skróty klawiaturowe, możesz uzyskać dostęp do częs
 |Edit.Delete|Delete [Globalny, Team Explorer]<br /><br /> lub Shift+Delete [Diagram sekwencji, Diagram aktywności UML, Diagram warstwy]<br /><br /> lub Ctrl+Delete [Diagram klas]|
 |Edit.Find|Ctrl+F [Globalny]|
 |Edit.FindAllReferences|Shift+F12 [Globalny]|
-Edytuj. FindinFiles|Ctrl+Shift+F [Globalny]|
+Dres. FindinFiles|Ctrl+Shift+F [Globalny]|
 |Edit.FindNext|F3 [globalny]|
 |Edit.FindNextSelected|Ctrl+F3 [Globalny]|
 |Edit.FormatDocument|Ctrl+K, Ctrl+D [Edytor tekstu]|
@@ -89,7 +89,7 @@ Edytuj. FindinFiles|Ctrl+Shift+F [Globalny]|
 |Edit.LineDownExtendColumn|Shift+Alt+Strzałka w dół [Edytor tekstu]|
 |Edit.LineOpenAbove|Ctrl+Enter [Edytor tekstu]|
 |Edit.ListMembers|Ctrl+J [Edytor tekstu, Workflow Designer]<br /><br /> lub Ctrl+K, Ctrl+L [Workflow Designer]<br /><br /> lub Ctrl+K, L [Workflow Designer]|
-Edytuj. Typu NavigateTo|Ctrl+, [Globalny]|
+Dres. Typu NavigateTo|Ctrl+, [Globalny]|
 |Edit.OpenFile|Ctrl+Shift+G [Globalny]|
 |Edit.OvertypeMode|Insert [Edytor tekstu]|
 |Edit.ParameterInfo|Ctrl+Shift+Spacja [Edytor tekstu, Workflow Designer]<br /><br /> lub Ctrl+K, Ctrl+P [Workflow Designer]<br /><br /> lub Ctrl+K, P [Workflow Designer]|
@@ -100,7 +100,7 @@ Edytuj. Typu NavigateTo|Ctrl+, [Globalny]|
 |Edit.SelectAll|Ctrl+A [Globalny]|
 |Edit.SelectCurrentWord|Ctrl+W [Edytor tekstu]|
 |Edit.SelectionCancel|Esc [Edytor tekstu, Projektant raportów, Projektant ustawień, Windows Forms Designer, Edytor zasobów zarządzanych]|
-Edytuj. SurroundWith|Ctrl+K, Ctrl+S [Globalny]|
+Dres. SurroundWith|Ctrl+K, Ctrl+S [Globalny]|
 |Edit.TabLeft|Shift+Tab [Edytor tekstu, Projektant raportów, Windows Forms Editor|
 |Edit.ToggleAllOutlining|Ctrl+M, Ctrl+L [Edytor tekstu]|
 |Edit.ToggleBookmark|Ctrl+K, Ctrl+K [Edytor tekstu]|
@@ -111,7 +111,7 @@ Edytuj. SurroundWith|Ctrl+K, Ctrl+S [Globalny]|
 |Edit.WordDeleteToEnd|Ctrl+Delete [Edytor tekstu]|
 |Edit.WordDeleteToStart|Ctrl+Backspace [Edytor tekstu]|
 
-## <a name="bkmk_file"></a> Plik
+## <a name="bkmk_file"></a>Rozszerzeniem
 
 |Polecenia|Skróty klawiaturowe [Konteksty]|
 |--------------|-------------------------------------|
@@ -134,25 +134,25 @@ Edytuj. SurroundWith|Ctrl+K, Ctrl+S [Globalny]|
 |Project.AddExistingItem|Shift+Alt+A [Globalny]|
 |Project.AddNewItem|Ctrl+Shift+A [Globalny]|
 
-## <a name="bkmk_refactor"></a> Refaktoryzacja
+## <a name="bkmk_refactor"></a>Refaktoryzuj
 
 |Polecenie|Skrót klawiaturowy [Kontekst]|
 |-------------|-----------------------------------|
 |Refactor.ExtractMethod|Ctrl+R, Ctrl+M [Globalny]|
 
-## <a name="bkmk_tools"></a> Narzędzia
+## <a name="bkmk_tools"></a>Narzędzi
 
 |Polecenie|Skrót klawiaturowy [Kontekst]|
 |-------------|-----------------------------------|
 |Tools.AttachtoProcess|Ctrl+Alt+P [Globalny]|
 
-## <a name="bkmk_view"></a> Widok
+## <a name="bkmk_view"></a>Widokiem
 
 |Polecenia|Skróty klawiaturowe [Konteksty]|
 |--------------|-------------------------------------|
 |View.ClassView|Ctrl+Shift+C [Globalny]|
 |View.EditLabel|F2 [globalny]|
-|View.ErrorList|Ctrl+\\, Ctrl+E [Global]<br /><br /> lub Ctrl +\\, E [globalny]|
+|View.ErrorList|Ctrl + \\, Ctrl + E [globalny]<br /><br /> lub CTRL + \\, E [globalny]|
 |View.NavigateBackward|Ctrl+- [Globalny]|
 |View.NavigateForward|Ctrl+Shift+- [Globalny]|
 |View.ObjectBrowser|Ctrl+Alt+J [Globalny]|
@@ -162,12 +162,12 @@ Edytuj. SurroundWith|Ctrl+K, Ctrl+S [Globalny]|
 |View.ServerExplorer|Ctrl+Alt+S [Globalny]|
 |View.ShowSmartTag|Ctrl+. [Globalny]<br /><br /> lub Shift+Alt+F10 [Globalny, HTML Editor Design View]|
 |View.SolutionExplorer|Ctrl+Alt+L [Globalny]|
-Wyświetl. TfsTeamExplorer|Ctrl+\\, Ctrl+M [Global]|
+każ. TfsTeamExplorer|Ctrl + \\, Ctrl + M [globalny]|
 |View.Toolbox|Ctrl+Alt+X [Globalny]|
 |View.ViewCode|Enter [Diagram klas]<br /><br /> lub F7 [Projektant ustawień]|
 |View.ViewDesigner|Shift+F7 [HTML Editor Source View]|
 
-## <a name="bkmk_window"></a> Okno
+## <a name="bkmk_window"></a>Dział
 
 |Polecenia|Skróty klawiaturowe [Konteksty]|
 |--------------|-------------------------------------|

@@ -1,5 +1,5 @@
 ---
-title: 'CA1802: Używaj literałów wszędzie, gdzie jest to odpowiednie | Dokumentacja firmy Microsoft'
+title: 'CA1802: Użyj literałów, jeśli są odpowiednie | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,44 +12,44 @@ helpviewer_keywords:
 - CA1802
 ms.assetid: 2515e4cd-9e61-486d-b067-58ba1a743ce4
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 5990d8ea3720098651d3ed696f6ee5ff907b82f3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bbcf83772a7a4031cf2e27abe7e8f4c08e21c11c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68143149"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72671513"
 ---
-# <a name="ca1802-use-literals-where-appropriate"></a>CA1802: Używaj literałów w odpowiednich miejscach
+# <a name="ca1802-use-literals-where-appropriate"></a>CA1802: Używaj literałów wszędzie, gdzie jest to odpowiednie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|UseLiteralsWhereAppropriate|
 |CheckId|CA1802|
-|Kategoria|Microsoft.Performance|
-|Zmiana kluczowa|Bez podziału|
+|Kategoria|Microsoft. Performance|
+|Zmiana kluczowa|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
- Pole jest zadeklarowane jako `static` i `readonly` (`Shared` i `ReadOnly` w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) i jest inicjowany z wartością, która jest obliczana w czasie kompilacji.
+ Pole jest zadeklarowane `static` i `readonly` (`Shared` i `ReadOnly` w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) i jest inicjowane z wartością obliczanej w czasie kompilacji.
 
 ## <a name="rule-description"></a>Opis reguły
- Wartość `static``readonly` pola jest obliczana w czasie wykonywania, gdy wywoływana jest konstruktor statyczny dla elementu typ deklarujący. Jeśli `static``readonly` pola jest inicjowane, gdy jest on zadeklarowany jako statyczny Konstruktor nie został zadeklarowany jawnie, kompilator generuje Konstruktor statyczny do inicjowania pola.
+ Wartość pola `static``readonly` jest obliczana w czasie wykonywania, gdy jest wywoływany statyczny Konstruktor dla typu deklarującego. Jeśli pole `static``readonly` jest inicjowane, gdy jest zadeklarowany, a Konstruktor statyczny nie jest zadeklarowany jawnie, kompilator emituje konstruktora statycznego w celu zainicjowania pola.
 
- Wartość `const` pola jest obliczane w czasie kompilacji i przechowywany w metadanych, co zwiększa wydajność środowiska uruchomieniowego w porównaniu z `static``readonly` pola.
+ Wartość pola `const` jest obliczana w czasie kompilacji i przechowywana w metadanych, co zwiększa wydajność środowiska uruchomieniowego, gdy jest porównywana z polem `static``readonly`.
 
- Ponieważ wartość przypisana do pola docelowego jest obliczana w czasie kompilacji, zmień deklarację do `const` tak, aby wartość jest obliczana w czasie kompilacji, a nie w czasie wykonywania.
+ Ponieważ wartość przypisana do pola Target jest obliczanej w czasie kompilacji, należy zmienić deklarację na `const` pole, aby wartość była obliczana w czasie kompilacji, a nie w środowisku uruchomieniowym.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, należy zastąpić `static` i `readonly` Modyfikatory z `const` modyfikator.
+ Aby naprawić naruszenie tej reguły, Zastąp Modyfikatory `static` i `readonly` modyfikatorem `const`.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Jest bezpiecznie Pomijaj ostrzeżeń dla tej reguły lub wyłączyć regułę, jeśli wydajność nie jest istotna.
+ Istnieje możliwość bezpiecznego pomijania ostrzeżenia z tej reguły lub wyłączania reguły, jeśli wydajność nie jest istotna.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie pokazano typem `UseReadOnly`, który narusza regułę i typu `UseConstant`, odpowiadającej reguły.
+ Poniższy przykład przedstawia typ, `UseReadOnly`, który narusza regułę i typ `UseConstant`, który spełnia regułę.
 
  [!code-csharp[FxCop.Performance.UseLiterals#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.UseLiterals/cs/FxCop.Performance.UseLiterals.cs#1)]
  [!code-vb[FxCop.Performance.UseLiterals#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Performance.UseLiterals/vb/FxCop.Performance.UseLiterals.vb#1)]

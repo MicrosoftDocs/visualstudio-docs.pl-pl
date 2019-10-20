@@ -1,5 +1,5 @@
 ---
-title: Projektant działań sekwencji | Dokumentacja firmy Microsoft
+title: Projektant działań sekwencyjnych | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -8,31 +8,30 @@ f1_keywords:
 - System.Activities.Statements.Sequence.UI
 ms.assetid: 51c8d3cb-4d43-458f-9631-b63755f9ac94
 caps.latest.revision: 5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 47743feae8c256aa0ddb4e3270aca32b108aa5d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3acf02ab478eee244557e04f19f78ba2d5f0b950
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63007482"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72663258"
 ---
 # <a name="sequence-activity-designer"></a>Sequence, projektant działań
-<xref:System.Activities.Statements.Sequence> Zawiera działanie uporządkowany zbiór działania podrzędne, które wykonuje się w kolejności.  
-  
- Innym sposobem wykonywania zestawu działań w kolejności jest użycie <xref:System.Activities.Statements.Flowchart> działania. Należy rozważyć użycie [schemat blokowy](../workflow-designer/flowchart-activity-designer.md) przypadku rozgałęzianie proste lub pętli przepływu programu, który ma być schematycznie modelu.  
-  
-## <a name="using-the-sequence-activity-designer"></a>Za pomocą Sequence, Projektant działań  
- Aby dodać <xref:System.Activities.Statements.Sequence> działania, przeciągnij **sekwencji** projektanta działań z **przybornika** i upuść je na [!INCLUDE[wfd1](../includes/wfd1-md.md)] powierzchni. Aby dodać działanie podrzędne do tego <xref:System.Activities.Statements.Sequence> działania, przeciągnij jakieś działania, od **przybornika** i upuść je na trójkąt w polu z tekst wskazówki "Upuść działanie tutaj".  
-  
-### <a name="sequence-activity-properties-in-the-workflow-designer"></a>Właściwości działania sekwencji w Projektancie przepływu pracy  
- W poniższej tabeli przedstawiono <xref:System.Activities.Statements.Sequence> właściwości i w tym artykule opisano, jak są używane w projektancie. Te właściwości można edytować w siatce właściwości lub na powierzchni projektowej.  
-  
-|Nazwa właściwości|Wymagane|Użycie|  
-|-------------------|--------------|-----------|  
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Określa przyjazną nazwę <xref:System.Activities.Statements.Sequence> projektanta działań w nagłówku. Wartość domyślna to sekwencji. Wartość można edytować w siatce właściwości lub bezpośrednio w nagłówku projektanta działań.<br /><br /> Mimo że <xref:System.Activities.Activity.DisplayName%2A> nie jest bezwzględnie konieczne jest najlepszym rozwiązaniem, aby użyć jednego.|  
-  
-## <a name="see-also"></a>Zobacz też  
- [Schemat blokowy](../workflow-designer/flowchart-activity-designer.md)   
- [Przepływ sterowania](../workflow-designer/control-flow-activity-designers.md)
+Działanie <xref:System.Activities.Statements.Sequence> zawiera uporządkowaną kolekcję działań podrzędnych wykonywanych w określonej kolejności.
+
+ Innym sposobem wykonania zestawu działań jest użycie działania <xref:System.Activities.Statements.Flowchart>. Należy rozważyć użycie [schematu blokowego](../workflow-designer/flowchart-activity-designer.md) , gdy istnieje prosty przepływ programu rozgałęziania lub zapętlenia, który ma być modelem diagrammatically.
+
+## <a name="using-the-sequence-activity-designer"></a>Korzystanie z projektanta działania sekwencji
+ Aby dodać działanie <xref:System.Activities.Statements.Sequence>, przeciągnij projektanta działania **sekwencji** z **przybornika** i upuść go na powierzchni [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Aby dodać działanie podrzędne do tego działania <xref:System.Activities.Statements.Sequence>, przeciągnij inne działanie z **przybornika** i upuść je na Trójkącie w polu zawierającym tekst wskazówki "upuść działanie tutaj".
+
+### <a name="sequence-activity-properties-in-the-workflow-designer"></a>Właściwości działania sekwencji w Projektant przepływu pracy
+ W poniższej tabeli przedstawiono właściwości <xref:System.Activities.Statements.Sequence> i opisano sposób ich używania w projektancie. Te właściwości można edytować w siatce właściwości lub na powierzchni projektanta.
+
+|Nazwa właściwości|Wymagane|Użycie|
+|-------------------|--------------|-----------|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Określa przyjazną nazwę <xref:System.Activities.Statements.Sequence> projektanta działań w nagłówku. Wartość domyślna to Sequence. Wartość można edytować w siatce właściwości lub bezpośrednio w nagłówku projektanta działań.<br /><br /> Mimo że <xref:System.Activities.Activity.DisplayName%2A> nie jest ściśle wymagane, najlepszym rozwiązaniem jest użycie jednego z nich.|
+
+## <a name="see-also"></a>Zobacz też
+ [](../workflow-designer/flowchart-activity-designer.md) [Przepływ sterowania](../workflow-designer/control-flow-activity-designers.md) Flowchart

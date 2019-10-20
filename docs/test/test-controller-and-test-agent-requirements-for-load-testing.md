@@ -6,58 +6,58 @@ helpviewer_keywords:
 - agents, requirements
 - controllers, requirements
 ms.assetid: 372d97ce-12e4-46a9-9863-da508adba68f
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 56004b22c77fe1388a666e175171579e60ffb3ad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d33fb01bf931a2f7f3585197151f167c79575da6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62431449"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659935"
 ---
-# <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>Testowanie wymagania agenta kontrolera i testu do testowania obciążenia
+# <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>Wymagania dotyczące kontrolera testów i agentów testowych do testowania obciążenia
 
-Kilka typów, w tym jednostkowe, wydajności sieci web, obciążenia testu, a testy ręczne są zintegrowane z Visual Studio. Program Visual Studio umożliwia użytkownikom programu Visual Studio Application Lifecycle Management do uruchamiania testów na komputerach zdalnych przy użyciu kontrolera testów i jednego lub kilku agentów. Zobacz [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md).
+Kilka typów testów, takich jak jednostki, wydajność sieci Web, obciążenie i testy ręczne, są zintegrowane z Visual Studio. Program Visual Studio umożliwia użytkownikom zarządzania cyklem życia aplikacji programu Visual Studio uruchamianie testów na komputerach zdalnych przy użyciu kontrolera testów i jednego lub większej liczby agentów. Zobacz [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md).
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="hardware-and-software-requirements"></a>Wymagania sprzętowe i programowe
 
-Kontrolera testów i komputerów agentów testowych należy mieć określone wymagania dotyczące sprzętu i oprogramowania. Ponadto jeśli chcesz wdrożyć kontroler testowy i agenta testowego w wielu językach, należy zaplanować obsługę tych języków.
+Zarówno komputery kontrolera testów, jak i agenta testowego mają określone wymagania dotyczące sprzętu i oprogramowania. Ponadto, jeśli chcesz wdrożyć kontroler testów i komputery agentów testowych w wielu językach, musisz zaplanować obsługę tych języków.
 
 ### <a name="hardware-requirements"></a>Wymagania sprzętowe
 
 W poniższej tabeli przedstawiono zalecane wymagania sprzętowe dotyczące wdrażania kontrolera testów i agentów testowych.
 
-|**Konfiguracja**|**Składnik**|**CPU**|**HD**|**Pamięć**|
+|**Konfiguracja**|**Składnika**|**TESTY**|**JAKOŚCI**|**Rozmiar**|
 |-|-------------------|-|------------|-|
-|< 500 użytkowników wirtualnych|Agent testowy|2,6 procesor GHz|10 GB|2 GB|
-|< 1000 użytkowników wirtualnych|Agent testowy|Dwurdzeniowy procesor 2,6 GHz|10 GB|2 GB|
-|Użytkownicy wirtualni x 1000 N|Agent testowy|Skalowanie w poziomie do agentów N, każdego z Dual 2,6 Ghz|10GB|2GB|
-|\< 30 komputerów w środowisku testowym. Obejmuje to agentów i serwerów w ramach testu.|Kontroler testów|2,6 procesor GHz|||
-|N x 30 komputerów w środowisku testowym. Obejmuje to agentów i serwerów w ramach testu.|Kontroler testów|N procesorów 2,6 GHz|||
+|Użytkownicy wirtualne < 500|Agent testowy|2,6 GHz|10 GB|2 GB|
+|Użytkownicy wirtualne < 1000|Agent testowy|Dwuprocesorowy 2,6 GHz|10 GB|2 GB|
+|N x 1000 wirtualnych użytkowników|Agent testowy|Skaluj w poziomie do N agentów przy użyciu dwóch 2,6 GHz|10GB|PRZEKRACZA|
+|\< 30 komputerów w środowisku testowym. Obejmuje to agentów i serwery objęte testem.|Test Controller|2,6 GHz|||
+|N x 30 komputerów w środowisku testowym. Obejmuje to agentów i serwery objęte testem.|Test Controller|Procesor N 2,6 GHz|||
 
 > [!NOTE]
-> Liczba użytkowników wirtualnych różnią się znacznie między poszczególnymi testami. Kluczowym powodem tego odchylenia jest odchylenie w *czasy reakcji*, lub opóźnienia użytkowników. Aby uzyskać więcej informacji, zobacz [reakcji edycji razy do symulacji witryny sieci Web symulujący opóźnienia wynikające z](../test/edit-think-times-in-load-test-scenarios.md). W teście obciążenia testy sieci web są zazwyczaj wydajniejsze i generują większe obciążenie niż testy jednostkowe. Liczby w powyższej tabeli są prawidłowe dla wykonywanie testów sieci web 3 – 5-sekundowych w aplikacji sieci web typowy.
+> Liczba użytkowników wirtualnych różni się znacznie od testu testowego. Kluczową przyczyną tego wariancji jest Wariancja w *czasie reakcji*lub opóźnienia użytkownika. Aby uzyskać więcej informacji, zobacz [Edytowanie czasów reakcji w celu symulowania opóźnień interakcji z witryną sieci Web](../test/edit-think-times-in-load-test-scenarios.md). W teście obciążenia testy sieci Web są zwykle wydajniejsze i generują więcej obciążenia niż testy jednostkowe. Liczby w powyższej tabeli są prawidłowe dla uruchamiania testów sieci Web z 3-5 sekund czasu reakcji w typowej aplikacji sieci Web.
 
-Wskazówki przedstawione tutaj są dostarczane jako ogólne wskazówki dotyczące planowania sprzętowego. Wydajność testów różni się znacznie w zależności od ilości danych testowych i liczby agentów testowych. Dla agentów testowych szybkość procesora CPU i pamięci będzie ograniczają obciążenie badawcze. Kontrolery testowe potrzebują więcej zasobów, w zależności od liczby agentów testowych i ilość danych, które są zaangażowane w testy.
+Przedstawione tutaj wytyczne są dostępne jako ogólne wskazówki dotyczące planowania sprzętu. Wydajność testów będzie się znacznie różnić w zależności od ilości danych testowych i liczby agentów testowych. W przypadku agentów testowych szybkość procesora i dostępna pamięć spowodują ograniczenie obciążenia testowego. Kontrolery testów potrzebują większych zasobów, w zależności od liczby agentów testowych i ilości danych używanych w testach.
 
-Serwera, na którym jest uruchomiony program Visual Studio powinien mieć niezawodne połączenie sieciowe z minimalną przepustowość 1 MB/s oraz czas oczekiwania maksymalnie 350 MS. Powinno być żadnych zapór między agentami testowymi a kontrolerem testów. Jeśli Twoje wyniki testu nie spełniają Twoich oczekiwań, rozważ aktualizację konfiguracji sprzętu.
+Serwer z uruchomionym programem Visual Studio powinien mieć niezawodne połączenie sieciowe z przepustowością minimalną 1 MB/s i opóźnieniem maksymalnie 350ms. Między agentami testowymi i kontrolerem testów nie powinna być Zapora. Jeśli wydajność testowa nie spełnia oczekiwań, należy rozważyć uaktualnienie konfiguracji sprzętowej.
 
-### <a name="additional-hardware-considerations"></a>Uwagi dodatkowe dotyczące sprzętu
+### <a name="additional-hardware-considerations"></a>Dodatkowe zagadnienia dotyczące sprzętu
 
-Agenci testowi generują duże ilości danych na kontrolerach testowych, w zależności od tego, czy czas trwania testu i wielkości testu. Ogólnie rzecz biorąc należy również zaplanować dodatkowe 10 GB miejsca na dysku twardym na dane z badań co 24 godziny.
+Agenci testowi generują duże ilości danych na kontrolerach testów, w zależności od czasu trwania testu i rozmiaru testu. Ogólnie rzecz biorąc, należy zaplanować dodatkowe 10 GB miejsca na dysku twardym dla każdego 24-godzinnego danych testowych.
 
-Oprócz urządzeń zalecanych w tym miejscu należy rozważyć użycie dodatkowego sprzętu dla krytycznych serwerów, takich jak nadmiarowe zasilacze i wentylatory nadmiarowe.
+Oprócz zalecanego sprzętu należy wziąć pod uwagę dodatkowy sprzęt dla serwerów krytycznych, takich jak nadmiarowe zasilacze i nadmiarowe wentylatory.
 
-### <a name="language-requirements"></a>Wymagania dotyczące języka
+### <a name="language-requirements"></a>Wymagania językowe
 
-Aby uniknąć nieporozumień i uprościć operację, należy skonfigurować agentów testowych i kontrolera testów do użycia tego samego języka jako systemu operacyjnego i serwera Team Foundation Server. Jeśli agent testowy i kontroler testowy są zainstalowane na różnych komputerach, musi być skonfigurowany do użycia tego samego języka. Można jednak zainstalować inną wersję językową programu Visual Studio w systemie operacyjnym język angielski, tak długo, jak ten język jest zgodny z typem wdrożenia Team Foundation Server.
+Aby uniknąć nieporozumień i uproszczenia działania, kontroler testów i agenci testowi należy skonfigurować tak, aby używać tego samego języka co system operacyjny komputera i Team Foundation Server. Jeśli agent testowy i kontroler testów są zainstalowane na różnych komputerach, muszą być skonfigurowane do korzystania z tego samego języka. Można jednak zainstalować inną wersję językową programu Visual Studio w systemie operacyjnym w języku angielskim, o ile ten język jest zgodny z wdrożeniem Team Foundation Server.
 
-## <a name="monitor-agent-resources"></a>Monitorowanie zasobów agenta
+## <a name="monitor-agent-resources"></a>Monitorowanie zasobów agentów
 
-Możesz monitorować maszyny agenta, aby określić ich zapotrzebowanie na zasoby, obserwując *QTAgent\*.exe* procesów, które wykonywania i skalowania podczas testów. Najbardziej typowym wąskim gardłem w *QTAgent\*.exe* procesów jest użycie procesora CPU. Jeśli wykorzystanie procesora CPU jest stale w wysokiej nineties to wskazanie, że agent jest ładowany dużym stopniu. Dalej typowym wąskim gardłem jest użycie pamięci. Dla wymagających testy, monitorowanie tych zasobów może pomóc ustalenia, czy należy zwiększyć zasoby maszyny lub inaczej dystrybuować testy.
+Można monitorować maszyny agentów, aby określić ich potrzeby zasobów, obserwując procesy *QTAgent \*. exe* , które są wykonywane i skalowane podczas testów. Najbardziej typowym wąskim gardłem w ramach procesów *QTAgent \*. exe* jest użycie procesora CPU. Jeśli użycie procesora CPU w dużym stopniu nineties, oznacza to, że Agent jest ładowany silnie. Następnym typowym wąskim gardłem jest użycie pamięci. W przypadku wymagających testów monitorowanie tych zasobów może pomóc w ustaleniu, czy należy zwiększyć zasoby maszyn lub rozpowszechnić testy w inny sposób.
 
 ## <a name="see-also"></a>Zobacz także
 

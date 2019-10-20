@@ -1,5 +1,5 @@
 ---
-title: — Uaktualnianie (devenv.exe) | Dokumentacja firmy Microsoft
+title: -Upgrade (devenv. exe) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -10,48 +10,45 @@ helpviewer_keywords:
 - upgrade Devenv switch
 ms.assetid: 3468045c-5cc9-4157-9a9d-622452145d27
 caps.latest.revision: 22
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b2ba3caf7931449e2c1657270838a45505fd5d92
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 24bb6160f9895f129c4d7d36c2b0aa8a56ca282a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68176928"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657897"
 ---
 # <a name="upgrade-devenvexe"></a>/Upgrade (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Aktualizuje plik rozwiązania i wszystkie jego pliki projektu lub pliku projektu, określony do bieżącego [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] formatów tych plików.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```  
-devenv SolutionFile | ProjectFile /upgrade  
-```  
-  
-## <a name="arguments"></a>Argumenty  
- `SolutionFile`  
- Wymagane, jeśli aktualizujesz całe rozwiązanie i jego projekty. Ścieżka i nazwa pliku rozwiązania. Można wprowadzić tylko nazwę pliku rozwiązania, lub pełną ścieżkę i nazwę pliku rozwiązania. Folder lub plik o nazwie jeszcze nie istnieje, zostanie utworzony.  
-  
- `ProjectFile`  
- Wymagane, jeśli w trakcie uaktualniania jednego projektu. Ścieżka i nazwa pliku projektu w rozwiązaniu. Można wprowadzić tylko nazwę pliku projektu, lub pełną ścieżkę i nazwę pliku projektu. Folder lub plik o nazwie jeszcze nie istnieje, zostanie utworzony.  
-  
-## <a name="remarks"></a>Uwagi  
- Kopie zapasowe są automatycznie tworzone i kopiowane do katalogu o nazwie kopia zapasowa, który jest tworzony w bieżącym katalogu.  
-  
- Rozwiązania kontrolowanego źródła lub projekty musza być sprawdzone zanim będą mogły być uaktualnione.  
-  
- Za pomocą `/upgrade` przełącznika nie można uruchomić [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Wyniki procesu uaktualniania można zobaczyć w raporcie uaktualnienia dla rozwoju języka rozwiązania lub projektu. Brak błędów i zużyciu informacji jest zwracana. Aby uzyskać więcej informacji na temat uaktualniania projektów w [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], zobacz [jak: Rozwiązywanie problemów z uaktualnieniami projektu nie powiedzie, program Visual Studio](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md).  
-  
-## <a name="example"></a>Przykład  
- W tym przykładzie uaktualnia plik rozwiązania o nazwie "MyProject.sln" w Twoim domyślnym folderze dla [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] rozwiązania.  
-  
-```  
-devenv "MyProject.sln" /upgrade  
-```  
-  
-## <a name="see-also"></a>Zobacz też  
- [Instrukcje: Rozwiązywanie problemów z uaktualnieniami projektu powiodło się programu Visual Studio](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md)   
- [Przełączniki wiersza polecenia Devenv](../../ide/reference/devenv-command-line-switches.md)
+Aktualizuje plik rozwiązania oraz wszystkie jego pliki projektu lub określony plik projektu do bieżącego formatu [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] dla tych plików.
+
+## <a name="syntax"></a>Składnia
+
+```
+devenv SolutionFile | ProjectFile /upgrade
+```
+
+## <a name="arguments"></a>Argumenty
+ `SolutionFile` wymagane, Jeśli uaktualniasz całe rozwiązanie i jego projekty. Ścieżka i nazwa pliku rozwiązania. Można wprowadzić tylko nazwę pliku rozwiązania lub pełną ścieżkę i nazwę pliku rozwiązania. Jeśli folder lub plik o nazwie jeszcze nie istnieje, zostanie utworzony.
+
+ `ProjectFile` wymagana w przypadku uaktualniania pojedynczego projektu. Ścieżka i nazwa pliku projektu w ramach rozwiązania. Można wprowadzić tylko nazwę pliku projektu lub pełną ścieżkę i nazwę pliku projektu. Jeśli folder lub plik o nazwie jeszcze nie istnieje, zostanie utworzony.
+
+## <a name="remarks"></a>Uwagi
+ Kopie zapasowe są automatycznie tworzone i kopiowane do katalogu o nazwie kopia zapasowa, który został utworzony w bieżącym katalogu.
+
+ Rozwiązania i projekty z kontrolą źródła muszą zostać wyewidencjonowane przed uaktualnieniem.
+
+ Użycie przełącznika `/upgrade` nie powoduje uruchomienia [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Wyniki uaktualnienia można zobaczyć w raporcie uaktualnienia dla języka deweloperskiego rozwiązania lub projektu. Nie zwrócono informacji o błędzie ani użyciu. Aby uzyskać więcej informacji na temat uaktualniania projektów w [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], zobacz [How to: Rozwiązywanie problemów dotyczących nieudanych uaktualnień projektu programu Visual Studio](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md).
+
+## <a name="example"></a>Przykład
+ Ten przykład uaktualnia plik rozwiązania o nazwie "mój projekt. sln" w folderze domyślnym dla rozwiązań [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].
+
+```
+devenv "MyProject.sln" /upgrade
+```
+
+## <a name="see-also"></a>Zobacz też
+ [Instrukcje: Rozwiązywanie problemów zakończonych niepowodzeniem — uaktualnienia projektu programu Visual Studio](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md) [devenv przełączniki wiersza polecenia](../../ide/reference/devenv-command-line-switches.md)

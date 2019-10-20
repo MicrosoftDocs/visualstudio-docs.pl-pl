@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests, multiple UI maps
 - coded UI tests, for large applications
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cb534fc08706ef56ebbc85afe1500e4424196ad
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 86a4ad5c44c124ee7faf9ac633f2a78685adb426
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018894"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659904"
 ---
 # <a name="test-a-large-application-with-multiple-ui-maps"></a>Testowanie dużej aplikacji przy użyciu wielu map interfejsu użytkownika
 
@@ -23,7 +23,7 @@ W tym temacie omówiono sposób korzystania z kodowanych testów interfejsu uży
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-**Wymagania**
+**Requirements**
 
 - Visual Studio Enterprise
 
@@ -56,7 +56,7 @@ Utwórz wiele map interfejsu użytkownika w każdym z następujących typów syt
 
 2. Kliknij prawym przyciskiem myszy folder `UIMaps`, wskaż polecenie **Dodaj**, a następnie wybierz polecenie **nowy element**.
 
-    **Dodaj nowy element** zostanie wyświetlone okno dialogowe.
+    Zostanie wyświetlone okno dialogowe **Dodaj nowy element** .
 
    > [!NOTE]
    > Aby dodać nową mapę kodowanego testu interfejsu użytkownika, musisz być w projekcie kodowanego testu interfejsu użytkownika.
@@ -65,7 +65,7 @@ Utwórz wiele map interfejsu użytkownika w każdym z następujących typów syt
 
     W polu **Nazwa** wprowadź nazwę nowej mapy interfejsu użytkownika. Użyj nazwy składnika lub strony, która będzie reprezentować mapa, na przykład `HomePageMap`.
 
-4. Wybierz **Dodaj**.
+4. Wybierz pozycję **Dodaj**.
 
     Okno programu Visual Studio minimalizuje i zostanie wyświetlone okno dialogowe **Konstruktor kodowanego testu interfejsu użytkownika** .
 
@@ -77,13 +77,13 @@ Utwórz wiele map interfejsu użytkownika w każdym z następujących typów syt
 
    W wielu przypadkach okno najwyższego poziomu aplikacji pozostaje stałe dla wszystkich kreatorów, formularzy i stron. Chociaż każda Mapa interfejsu użytkownika ma klasę dla okna najwyższego poziomu, wszystkie mapy są prawdopodobnie odwołują się do tego samego okna najwyższego poziomu, w ramach którego są uruchamiane wszystkie składniki aplikacji. Kodowane testy interfejsu użytkownika przeszukają kontrolki hierarchicznie od góry w dół, rozpoczynając od okna najwyższego poziomu, a więc w złożonej aplikacji, rzeczywiste okno najwyższego poziomu może być zduplikowane w każdej mapie interfejsu użytkownika. Jeśli rzeczywiste okno najwyższego poziomu jest duplikowane, wielokrotne modyfikacje zostaną wprowadzone w przypadku zmiany tego okna. Może to spowodować problemy z wydajnością podczas przełączania map interfejsu użytkownika.
 
-   Aby zminimalizować ten efekt, można użyć metody `CopyFrom()`, aby upewnić się, że nowe okno najwyższego poziomu w tej mapie interfejsu użytkownika jest takie samo jak główne okno najwyższego poziomu.
+   Aby zminimalizować ten efekt, możesz użyć metody `CopyFrom()`, aby upewnić się, że nowe okno najwyższego poziomu w tej mapie interfejsu użytkownika jest takie samo jak główne okno najwyższego poziomu.
 
 ## <a name="example"></a>Przykład
 
 Poniższy przykład jest częścią klasy narzędzi, która zapewnia dostęp do każdego składnika i ich formantów podrzędnych, które są reprezentowane przez klasy generowane w różnych mapach interfejsu użytkownika.
 
-W tym przykładzie aplikacja sieci Web o nazwie `Contoso` zawiera stronę główną, stronę produktu i stronę koszyka zakupów. Każda z tych stron udostępnia wspólne okno najwyższego poziomu, które jest oknem przeglądarki. Istnieje Mapa interfejsu użytkownika dla każdej strony, a Klasa narzędzi ma kod podobny do następującego:
+W tym przykładzie aplikacja sieci Web o nazwie `Contoso` ma stronę główną, stronę produktu i stronę koszyka zakupów. Każda z tych stron udostępnia wspólne okno najwyższego poziomu, które jest oknem przeglądarki. Istnieje Mapa interfejsu użytkownika dla każdej strony, a Klasa narzędzi ma kod podobny do następującego:
 
 ```csharp
 using ContosoProject.UIMaps;

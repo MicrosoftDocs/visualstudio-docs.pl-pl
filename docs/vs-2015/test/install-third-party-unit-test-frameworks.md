@@ -1,62 +1,62 @@
 ---
-title: Instalowanie platform testów jednostkowych innej firmy | Dokumentacja firmy Microsoft
+title: Instalowanie platform testów jednostkowych innych firm | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.assetid: 47893b70-46f8-49dc-84bd-ec820178f683
 caps.latest.revision: 12
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 23d347d43918661ca65019862f476f1d636d5d06
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c2bd087dc0b06cbf8ffe4c08f84d819e8ef1c2f8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68147162"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660512"
 ---
 # <a name="install-third-party-unit-test-frameworks"></a>Instalowanie platform testów jednostkowych innych firm
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio Test Explorer można uruchamiać dowolną jednostkę struktury testowej, która opracowała interfejs adapter dla Eksploratora. Program instalacyjny Framework instaluje pliki binarne i dodaje szablony projektu Visual Studio dla obsługiwanych języków. Podczas tworzenia projektu z szablonem, struktura jest zarejestrowany w Eksploratorze testów. Rozwiązania programu Visual Studio może zawierać projektów testów jednostkowych, które korzystają z różnych platform i które są przeznaczone dla różnych języków. Eksplorator testów wykonuje na nich wszystkich.  
-  
- **Wymagania**  
-  
-- Visual Studio Enterprise, Visual Studio Professional  
-  
-## <a name="acquiring-third-party-frameworks"></a>Pobieranie struktur innych firm  
- Można pobrać i zainstalować wiele platform testów jednostkowych innych firm, korzystając z Menedżera rozszerzeń programu Visual Studio lub z galerii Visual Studio w witrynie MSDN. Można również pobrać struktur w innych witrynach, takich jak witryny sieci Web Framework.  
-  
-### <a name="installing-from-visual-studio"></a>Instalowanie za pomocą programu Visual Studio  
-  
-1. Wybierz **narzędzia** w menu standardowym, a następnie wybierz **rozszerzenia i aktualizacje**.  
-  
-2. Rozwiń **Online**, **galerii Visual Studio**, **narzędzia**. Wybierz **testowania**.  
-  
-3. Przeszukaj listę, aby znaleźć platformę.  
-  
-4. Wybierz platformę i wybierz pozycję **Pobierz**.  
-  
-   Aby uzyskać więcej informacji, zobacz [Znajdowanie i przy użyciu rozszerzenia programu Visual Studio](../ide/finding-and-using-visual-studio-extensions.md).  
-  
-### <a name="installing-from-the-web"></a>Instalowanie z sieci web  
- Jeśli znasz framework, który Cię interesuje:  
-  
-1. Otwórz [witryny Marketplace programu Visual Studio](https://marketplace.visualstudio.com).  
-  
-2. Wpisz nazwę platformy w **znaleźć** pole.  
-  
-3. Wybierz platformę, na liście wyników, aby przejść do strony galerii Visual Studio dla narzędzia.  
-  
-   Aby przeglądać listę struktury oraz inne narzędzia do testowania:  
-  
-4. Otwórz [witryny Marketplace programu Visual Studio](https://marketplace.visualstudio.com).  
-  
-5. Wybierz **Przeglądaj**.  
-  
-6. W **kategorii** listy, rozwiń **narzędzia** węzeł, a następnie wybierz **testowania**.  
-  
-7. Wybieranie platformy na liście wyników, aby przejść do strony galerii Visual Studio, narzędzia.  
-  
-## <a name="see-also"></a>Zobacz też  
+Program Visual Studio Test Explorer może uruchomić dowolną strukturę testów jednostkowych, która opracowała interfejs adaptera dla Eksploratora. Program instalacyjny platformy instaluje pliki binarne i dodaje szablony projektów programu Visual Studio dla obsługiwanych języków. Podczas tworzenia projektu z szablonem, struktura jest zarejestrowana w Eksploratorze testów. Rozwiązanie programu Visual Studio może zawierać projekty testów jednostkowych, które korzystają z różnych platform i które są przeznaczone dla różnych języków. Eksplorator testów uruchamia je wszystkie.
+
+ **Requirements**
+
+- Visual Studio Enterprise, Visual Studio Professional
+
+## <a name="acquiring-third-party-frameworks"></a>Uzyskiwanie struktur innych firm
+ Możesz pobrać i zainstalować wiele platform testów jednostkowych innych firm za pomocą Menedżera rozszerzeń programu Visual Studio lub z galerii programu Visual Studio w witrynie MSDN. Struktury mogą być również pobierane z innych witryn, takich jak witryna sieci Web struktury.
+
+### <a name="installing-from-visual-studio"></a>Instalowanie z programu Visual Studio
+
+1. Wybierz pozycję **Narzędzia** w menu Standard, a następnie wybierz pozycję **rozszerzenia i aktualizacje**.
+
+2. Rozwiń pozycję **online**, **Galeria programu Visual Studio**i **Narzędzia**. Wybierz **Testuj**.
+
+3. Przeglądaj listę, aby znaleźć strukturę.
+
+4. Wybierz strukturę i wybierz pozycję **Pobierz**.
+
+   Aby uzyskać więcej informacji [, zobacz Znajdowanie i używanie rozszerzeń programu Visual Studio](../ide/finding-and-using-visual-studio-extensions.md).
+
+### <a name="installing-from-the-web"></a>Instalowanie z sieci Web
+ Jeśli znasz strukturę, która Cię interesuje:
+
+1. Otwórz [Visual Studio Marketplace](https://marketplace.visualstudio.com).
+
+2. W polu **Znajdź** wpisz nazwę struktury.
+
+3. Wybierz platformę na liście wyników, aby przejść do strony galerii programu Visual Studio dla narzędzia.
+
+   Aby przeglądać listę struktur wraz z innymi narzędziami do testowania:
+
+4. Otwórz [Visual Studio Marketplace](https://marketplace.visualstudio.com).
+
+5. Wybierz pozycję **Przeglądaj**.
+
+6. Na liście **Kategoria** rozwiń węzeł **Narzędzia** , a następnie wybierz pozycję **testowanie**.
+
+7. Wybierz platformę na liście wyników, aby przejść do strony galerii programu Visual Studio dla narzędzia.
+
+## <a name="see-also"></a>Zobacz też
  [Testowanie jednostek kodu](../test/unit-test-your-code.md)

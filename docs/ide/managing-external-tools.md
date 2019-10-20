@@ -6,50 +6,50 @@ f1_keywords:
 - vs.externaltools
 helpviewer_keywords:
 - external tools [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3562ed9ebf2d62ab002ac227486218c8c38ad337
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1caf72ea2dccd9dfe2978726834e8066a9f5b56b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62535689"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652393"
 ---
 # <a name="manage-external-tools"></a>Zarządzanie narzędziami zewnętrznymi
 
-Można wywołać narzędzia zewnętrzne z poziomu programu Visual Studio przy użyciu **narzędzia** menu. Kilka domyślne narzędzia są dostępne z **narzędzia** menu, a menu można dostosować, dodając inne elementy wykonywalne samodzielnie.
+Możesz wywoływać zewnętrzne narzędzia z programu Visual Studio za pomocą menu **Narzędzia** . W menu **Narzędzia** dostępne są kilka domyślnych narzędzi i można dostosować je, dodając inne własne pliki wykonywalne.
 
 ## <a name="tools-available-on-the-tools-menu"></a>Narzędzia dostępne w menu Narzędzia
 
-**Narzędzia** menu zawiera kilka wbudowanych poleceń, w tym:
+Menu **Narzędzia** zawiera kilka wbudowanych poleceń, takich jak:
 
 ::: moniker range="vs-2017"
 
-* **Rozszerzenia i aktualizacje** do [zarządzać rozszerzeniami programu Visual Studio](finding-and-using-visual-studio-extensions.md)
-* **Menedżer fragmentów kodu** do [organizowanie fragmentów kodu](code-snippets.md)
-* **Dostosuj** do [Dostosowywanie menu i paski narzędzi](how-to-customize-menus-and-toolbars-in-visual-studio.md)
-* **Opcje** do [ustawić szereg różnych opcji dla programu Visual Studio IDE i innych narzędzi](reference/options-dialog-box-visual-studio.md)
+* **Rozszerzenia i aktualizacje** do [zarządzania rozszerzeniami programu Visual Studio](finding-and-using-visual-studio-extensions.md)
+* **Menedżer fragmentów kodu** do [organizowania fragmentów kodu](code-snippets.md)
+* **Dostosuj** , aby [dostosować menu i paski narzędzi](how-to-customize-menus-and-toolbars-in-visual-studio.md)
+* **Opcje** [ustawiania różnych opcji dla środowiska IDE programu Visual Studio i innych narzędzi](reference/options-dialog-box-visual-studio.md)
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-* **Menedżer fragmentów kodu** do [organizowanie fragmentów kodu](code-snippets.md)
-* **Dostosuj** do [Dostosowywanie menu i paski narzędzi](how-to-customize-menus-and-toolbars-in-visual-studio.md)
-* **Opcje** do [ustawić szereg różnych opcji dla programu Visual Studio IDE i innych narzędzi](reference/options-dialog-box-visual-studio.md)
+* **Menedżer fragmentów kodu** do [organizowania fragmentów kodu](code-snippets.md)
+* **Dostosuj** , aby [dostosować menu i paski narzędzi](how-to-customize-menus-and-toolbars-in-visual-studio.md)
+* **Opcje** [ustawiania różnych opcji dla środowiska IDE programu Visual Studio i innych narzędzi](reference/options-dialog-box-visual-studio.md)
 
 ::: moniker-end
 
-## <a name="add-new-tools-to-the-tools-menu"></a>Dodawanie nowych narzędzi do menu Narzędzia
+## <a name="add-new-tools-to-the-tools-menu"></a>Dodaj nowe narzędzia do menu Narzędzia
 
-Możesz dodać zewnętrznego narzędzia ma być wyświetlana w **narzędzia** menu.
+Możesz dodać zewnętrzne narzędzie, które ma być wyświetlane w menu **Narzędzia** .
 
-1. Otwórz **zewnętrznych narzędzi** okno dialogowe, wybierając **narzędzia** > **zewnętrznych narzędzi**.
+1. Otwórz okno dialogowe **narzędzia zewnętrzne** , wybierając pozycję **Narzędzia**  > **narzędzia zewnętrzne**.
 
-1. Kliknij przycisk **Dodaj**, a następnie wypełnij informacje. Na przykład następujący wpis powoduje **Eksplorator Windows** można otworzyć w katalogu pliku obecnie masz otwarty w programie Visual Studio:
+1. Kliknij przycisk **Dodaj**, a następnie Wypełnij informacje. Na przykład poniższy wpis powoduje otwarcie **Eksploratora Windows** w katalogu pliku, który jest aktualnie otwarty w programie Visual Studio:
 
    * Tytuł: `Open File Location`
 
@@ -59,30 +59,30 @@ Możesz dodać zewnętrznego narzędzia ma być wyświetlana w **narzędzia** me
 
    ![Okno dialogowe narzędzia zewnętrzne](media/external-tools-dialog.png)
 
-Oto Pełna lista argumentów, które mogą być używane podczas definiowania narzędzie zewnętrzne:
+Poniżej znajduje się pełna lista argumentów, których można użyć podczas definiowania narzędzia zewnętrznego:
 
 |Nazwa|Argument|Opis|
 |----------|--------------|-----------------|
-|Ścieżka elementu|$(ItemPath)|Pełnej nazwy pliku bieżącego pliku (dysk i ścieżkę pliku nazwa).|
-|Element katalogu|$(ItemDir)|Katalog bieżącego pliku (dysku i ścieżki).|
-|Nazwa pliku elementu|$(ItemFilename)|Nazwa pliku w bieżącym pliku (nazwa pliku).|
-|Rozszerzenie elementu|$(ItemExt)|Rozszerzenie nazwy pliku bieżącego pliku.|
-|Bieżący wiersz|$(CurLine)|Bieżący wiersz pozycja kursora w oknie kodu.|
-|Bieżąca kolumna|$(CurCol)|Bieżąca kolumna pozycja kursora w oknie kodu.|
-|Aktualny tekst|$(CurText)|Zaznaczony tekst.|
-|Ścieżka docelowa|$(TargetPath)|Pełnej nazwy pliku elementu, który ma zostać utworzony (dysk i ścieżkę pliku nazwa).|
-|Katalog docelowy|$(TargetDir)|Katalog elementu, który ma zostać utworzony.|
-|Nazwa obiektu docelowego|$(TargetName)|Nazwa pliku elementu, który ma zostać utworzony.|
-|Rozszerzenie docelowe|$(TargetExt)|Rozszerzenie nazwy pliku elementu, który ma zostać utworzony.|
-|Katalog danych binarnych|$(BinDir)|Lokalizacji końcowej plik binarny, który jest konstruowany (zdefiniowany jako dysku i ścieżki).|
-|Katalog projektu|$(ProjectDir)|Katalog bieżący projekt (dysku i ścieżki).|
-|Nazwa pliku projektu|$(ProjectFileName)|Nazwa pliku bieżącego projektu (dysk i ścieżkę pliku nazwa).|
-|Katalog rozwiązania|$(SolutionDir)|Katalog bieżącego rozwiązania (dysku i ścieżki).|
-|Nazwa pliku rozwiązania|$(SolutionFileName)|Nazwa pliku bieżącego rozwiązania (dysk i ścieżkę pliku nazwa).|
+|Ścieżka elementu|$ (Ścieżki elementu)|Pełna nazwa pliku bieżącego pliku (dysk + ścieżka + nazwa pliku).|
+|Katalog elementu|$ (ItemDir)|Katalog bieżącego pliku (dysk + ścieżka).|
+|Nazwa pliku elementu|$ (ItemFilename)|Nazwa pliku bieżącego pliku (nazwa pliku).|
+|Rozszerzenie elementu|$ (ItemExt)|Rozszerzenie nazwy pliku bieżącego pliku.|
+|Bieżący wiersz|$ (CurLine)|Pozycja bieżącego wiersza kursora w oknie kodu.|
+|Bieżąca kolumna|$ (CurCol)|Bieżąca pozycja kolumny kursora w oknie kodu.|
+|Bieżący tekst|$ (CurText)|Zaznaczony tekst.|
+|Ścieżka docelowa|$ (TargetPath)|Pełna nazwa pliku elementu do skompilowania (dysk + ścieżka + nazwa pliku).|
+|Katalog docelowy|$ (TargetDir)|Katalog elementu do skompilowania.|
+|Nazwa obiektu docelowego|$ (TargetName)|Nazwa pliku elementu do skompilowania.|
+|Rozszerzenie docelowe|$ (TargetExt)|Rozszerzenie nazwy pliku do skompilowania.|
+|Katalog binarny|$ (BinDir)|Końcowa lokalizacja tworzonego pliku binarnego (zdefiniowana jako dysk + ścieżka).|
+|Katalog projektu|$ (ProjectDir)|Katalog bieżącego projektu (dysk + ścieżka).|
+|Nazwa pliku projektu|$ (ProjectFileName)|Nazwa pliku bieżącego projektu (dysk + ścieżka + nazwa pliku).|
+|Katalog rozwiązania|$ (SolutionDir)|Katalog bieżącego rozwiązania (dysk + ścieżka).|
+|Nazwa pliku rozwiązania|$ (SolutionFileName)|Nazwa pliku bieżącego rozwiązania (dysk + ścieżka + nazwa pliku).|
 
 > [!NOTE]
-> Na pasku stanu IDE Wyświetla **bieżącego wiersza** i **bieżącej kolumny** zmienne, aby wskazać, gdzie punkt wstawiania znajduje się w aktywnej **Edytor kodu**. **Aktualny tekst** zmiennej zwraca tekst lub kod wybrane w tej lokalizacji.
+> Pasek stanu IDE wyświetla **bieżący wiersz** i bieżące zmienne **kolumn** , aby wskazać, gdzie punkt wstawiania znajduje się w aktywnym **edytorze kodu**. **Bieżąca zmienna tekstowa** zwraca tekst lub kod wybrany w tej lokalizacji.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Narzędzia kompilacji C/C++](/cpp/build/reference/c-cpp-build-tools)
+- [Narzędzia dlaC++ języka C/build](/cpp/build/reference/c-cpp-build-tools)

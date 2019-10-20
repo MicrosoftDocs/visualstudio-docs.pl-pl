@@ -1,5 +1,5 @@
 ---
-title: Definiowanie i instalowanie rozszerzenia modelowania | Dokumentacja firmy Microsoft
+title: Definiowanie i Instalowanie rozszerzenia modelowania | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -9,139 +9,136 @@ helpviewer_keywords:
 - UML model, extending
 ms.assetid: 82a58dc5-c7cf-4521-a6da-7ff09cd0de9d
 caps.latest.revision: 39
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: cf370b4ca0e0a4d14c482c6ece46b79d2d224d34
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 66a9cdab1284d015e2ea76162d240b6a1232d90f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68181915"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669921"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>Definiowanie i instalowanie rozszerzenia modelowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W programie Visual Studio można zdefiniować rozszerzenia do diagramów modelowania. W ten sposób można dostosować do własnych potrzeb diagramów i modeli. Na przykład można zdefiniować polecenia menu, profilów UML, ograniczenia sprawdzania poprawności i elementy do przybornika. Można zdefiniować kilka składników, jednego rozszerzenia. Mogą również rozpowszechniać te rozszerzenia innym użytkownikom programu Visual Studio w formie [Visual Studio Integration rozszerzenie (VSIX)](http://go.microsoft.com/fwlink/?LinkId=160780). Można utworzyć VSIX używania projektu VSIX w programie Visual Studio.  
-  
-## <a name="requirements"></a>Wymagania  
- Zobacz [wymagania](../modeling/extend-uml-models-and-diagrams.md#Requirements).  
-  
- Aby zobaczyć, które wersje programu Visual Studio obsługuje tę funkcję, zobacz [obsługiwana wersja dla narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
-  
-## <a name="creating-a-modeling-extension-solution"></a>Tworzenie rozwiązania rozszerzenia modelowania  
- Aby zdefiniować rozszerzenia modelowania, należy utworzyć rozwiązanie zawierające projekty te:  
-  
-- A [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Integration rozszerzenie (VSIX) projektu. Spowoduje to wygenerowanie pliku, który działa jako Instalator składników Twojego rozszerzenia.  
-  
-- Projekt biblioteki klas, wymaganych dla składników, które zawierają kod programu.  
-  
-  Jeśli chcesz utworzyć rozszerzenie, które zawiera kilka składników, możesz tworzyć je w ramach jednego rozwiązania. Konieczne jest tylko jeden projekt VSIX.  
-  
-  Składniki, które nie wymagają kodu, takich jak elementy do przybornika niestandardowego i niestandardowych profilów UML, można dodać bezpośrednio do projektu VSIX, bez użycia osobnej klasy biblioteki projektów. Składniki, które wymagają kodu programu łatwiej są zdefiniowane w projekcie osobnej klasy biblioteki. Składniki, które wymagają kodu obejmują program obsługi gestów, polecenia menu i kod sprawdzania poprawności.  
-  
-#### <a name="to-create-a-class-library-project-for-menu-commands-gesture-handlers-or-validation"></a>Aby utworzyć projekt biblioteki klas dla polecenia menu, programy obsługi gestu lub sprawdzania poprawności  
-  
-1. Na **pliku** menu, wybierz **New**, **projektu**.  
-  
-2. W obszarze **zainstalowane szablony**, wybierz opcję **Visual C#** lub **języka Visual Basic**, następnie wybierz **biblioteki klas**.  
-  
-#### <a name="to-create-a-vsix-project"></a>Aby utworzyć projekt VSIX  
-  
-1. W przypadku tworzenia składnika z kodem najłatwiej najpierw Utwórz projekt biblioteki klas. Dodasz kod do tego projektu.  
-  
-2. Utwórz projekt VSIX.  
-  
-    1. W **Eksploratora rozwiązań**, w menu skrótów rozwiązania wybierz **Dodaj**, **nowy projekt**.  
-  
-    2. W obszarze **zainstalowane szablony**, rozwiń węzeł **Visual C#** lub **języka Visual Basic**, a następnie wybierz **rozszerzalności**. W środkowej kolumnie Wybierz **projekt VSIX**.  
-  
-3. Ustaw projekt VSIX jako projekt startowy rozwiązania.  
-  
-    - W Eksploratorze rozwiązań w menu skrótów projektu VSIX wybierz **Ustaw jako projekt startowy**.  
-  
-4. Otwórz **source.extension.vsixmanifest**. Plik zostanie otwarty w edytorze manifestu.  
-  
-5. Na **metadanych** kartę, należy ustawić pola nazwy i opisu VSIX.  
-  
-6. Na **Instaluj obiekty docelowe** kartę, wybrać **New** i ustaw wersje programu Visual Studio jako obiekty docelowe.  
-  
-7. Na **zasoby** kartę, Dodaj składniki do rozszerzenia programu Visual Studio.  
-  
-    1. Wybierz **nowe**.  
-  
-    2. Składnik z kodem, ustaw dla tych pól w **Dodaj nowy zasób** okno dialogowe:  
-  
-        |||  
-        |-|-|  
-        |**Typ** =|**Microsoft.VisualStudio.MefComponent**|  
-        |**Źródło** =|**Projekt w bieżącym rozwiązaniu**|  
-        |**Projekt** =|*Projekt biblioteki klas*|  
-        |**Osadzanie w tym folderze** =|*(pusty)*|  
-  
-         Dla innych typów składników Zobacz linki w następnej sekcji.  
-  
-## <a name="developing-the-component"></a>Tworzenie składnika  
- Dla każdego składnika, takiego jak program obsługi polecenia lub gestu menu należy określić oddzielny program obsługi. Możesz umieścić kilka programów obsługi, w tym samym projekcie biblioteki klas. W poniższej tabeli przedstawiono różne rodzaje obsługi.  
-  
-|Typ rozszerzenia|Temat|Jak zwykle jest zadeklarowana każdego składnika|  
-|--------------------|-----------|----------------------------------------------|  
-|Polecenia menu|[Definiowanie polecenia menu w diagramie modelowania](../modeling/define-a-menu-command-on-a-modeling-diagram.md)|`[ClassDesignerExtension]`<br /><br /> `// or other diagram types`<br /><br /> `[Export(typeof(ICommandExtension))]`<br /><br /> `public class MyCommand : ICommandExtension`<br /><br /> `{...`|  
-|Przeciągnij i upuść lub kliknij dwukrotnie plik|[Definiowanie procedury obsługi gestów na diagramie modelowania](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)|`[ClassDesignerExtension]`<br /><br /> `// or other diagram types`<br /><br /> `[Export(typeof(IGestureExtension))]`<br /><br /> `public class MyGesture : IGestureExtension`<br /><br /> `{...`|  
-|Ograniczenie sprawdzania poprawności|[Definiowanie ograniczeń walidacji dla modeli UML](../modeling/define-validation-constraints-for-uml-models.md)|`[Export(typeof(     System.Action<ValidationContext, object>))]`<br /><br /> `[ValidationMethod(ValidationCategories.Save`<br /><br /> `&#124; ValidationCategories.Menu)]`<br /><br /> `public void ValidateSomething`<br /><br /> `(ValidationContext context, IClassifier elementToValidate)`<br /><br /> `{...}`|  
-|Procedury obsługi zdarzeń łącza elementu roboczego|[Definiowanie procedury obsługi linku elementu roboczego](../modeling/define-a-work-item-link-handler.md)|`[Export(typeof(ILinkedWorkItemExtension))]`<br /><br /> `public class MyWorkItemEventHandler : ILinkedWorkItemExtension`<br /><br /> `{...`|  
-|Profil UML|[Definiowanie profilu w celu rozszerzenia kodu UML](../modeling/define-a-profile-to-extend-uml.md)|(Do ustalenia)|  
-|Element przybornika|[Definiowanie niestandardowego elementu przybornika modelowania](../modeling/define-a-custom-modeling-toolbox-item.md)|(Do ustalenia)|  
-  
-## <a name="running-an-extension-during-its-development"></a>Uruchamianie rozszerzenia podczas jego tworzenia.  
-  
-#### <a name="to-run-an-extension-during-its-development"></a>Aby uruchomić rozszerzenia podczas jego tworzenia.  
-  
-1. W [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **debugowania** menu, wybierz **Rozpocznij debugowanie**.  
-  
-     Kompilacje projektu, a nowe wystąpienie klasy [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] jest uruchamiany w trybie doświadczalnym.  
-  
-    - Alternatywnie można wybrać **Rozpocznij bez debugowania**. Zmniejsza to czas potrzebny do uruchomienia programu.  
-  
-2. Utwórz lub Otwórz projekt modelowania w doświadczalnym wystąpieniu programu Visual Studio i Utwórz lub Otwórz diagram.  
-  
-     Rozszerzenie zostanie obciążenia i uruchom.  
-  
-3. Jeśli użyto **Rozpocznij bez debugowania** , ale chcesz użyć debugera, wróć do głównego wystąpienia programu Visual Studio. Na **debugowania** menu, kliknij przycisk **dołączyć do procesu**. W oknie dialogowym Wybierz doświadczalnym wystąpieniu programu Visual Studio, która zawiera nazwę programu **devenv**.  
-  
-## <a name="Installing"></a> Instalowanie i odinstalowywanie rozszerzenia  
- Wykonaj poniższe kroki, aby uruchomić rozszerzenia w głównym wystąpieniu programu Visual Studio na komputerze lokalnym lub na innych komputerach.  
-  
-1. Na komputerze, należy znaleźć **.vsix** pliku, który został zbudowany przez projekt rozszerzenia.  
-  
-    1. W **Eksploratora rozwiązań**, w menu skrótów projektu, a następnie wybierz **Otwórz Folder w Eksploratorze Windows**.  
-  
-    2. Zlokalizuj plik **bin\\\*\\** _YourProject_ **.vsix**  
-  
-2. Kopiuj **.vsix** plik na komputer docelowy, na którym chcesz zainstalować rozszerzenie. Może to być Twój własny komputer lub innej.  
-  
-    - Komputer docelowy musi mieć jedną z wersji programu Visual Studio, którą podano na **elementy docelowe instalacji** karcie **source.extension.vsixmanifest**.  
-  
-3. Na komputerze docelowym, otwórz **.vsix** pliku, na przykład, klikając go dwukrotnie.  
-  
-     **Instalator rozszerzenia programu Visual Studio** otwiera i instaluje rozszerzenia.  
-  
-4. Uruchom lub uruchom ponownie program Visual Studio.  
-  
-#### <a name="to-uninstall-an-extension"></a>Aby odinstalować rozszerzenie  
-  
-1. Na **narzędzia** menu, kliknij przycisk **rozszerzenia i aktualizacje**.  
-  
-2. Rozwiń **zainstalowanych rozszerzeń**.  
-  
-3. Zaznacz rozszerzenie a następnie kliknij przycisk **Odinstaluj**.  
-  
-   Rzadko wadliwe rozszerzenie nie ładuje się i tworzy raport w oknie błędów, ale nie są wyświetlane w Menedżerze rozszerzeń. W takim przypadku można usunąć rozszerzenie poprzez usunięcie pliku z następującej lokalizacji gdzie *% LocalAppData %* jest zazwyczaj *DriveName*: \Users\\*nazwyużytkownika*\AppData\Local:  
-  
-   *% LocalAppData %* **\Microsoft\VisualStudio\\\Extensions [wersja]**  
-  
-## <a name="see-also"></a>Zobacz też  
- [Definiowanie profilu w celu rozszerzenia UML](../modeling/define-a-profile-to-extend-uml.md)   
- [Definiowanie niestandardowego elementu przybornika modelowania](../modeling/define-a-custom-modeling-toolbox-item.md)   
- [Definiowanie ograniczeń walidacji dla modeli UML](../modeling/define-validation-constraints-for-uml-models.md)   
- [Definiowanie polecenia menu w diagramie modelowania](../modeling/define-a-menu-command-on-a-modeling-diagram.md)
+W programie Visual Studio można definiować rozszerzenia do diagramów modelowania. W ten sposób można dostosować diagramy i modele do własnych potrzeb. Można na przykład definiować polecenia menu, profile UML, ograniczenia walidacji i elementy przybornika. W jednym rozszerzeniu można zdefiniować kilka składników. Możesz również dystrybuować te rozszerzenia do innych użytkowników programu Visual Studio w postaci [rozszerzenia integracji z programem Visual Studio (VSIX)](http://go.microsoft.com/fwlink/?LinkId=160780). Można utworzyć VSIX przy użyciu projektu VSIX w programie Visual Studio.
+
+## <a name="requirements"></a>Wymagania
+ Zobacz [wymagania](../modeling/extend-uml-models-and-diagrams.md#Requirements).
+
+ Aby sprawdzić, które wersje programu Visual Studio obsługują tę funkcję, zobacz [Obsługa wersji dla narzędzi architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+
+## <a name="creating-a-modeling-extension-solution"></a>Tworzenie rozwiązania do rozszerzenia modelowania
+ Aby zdefiniować rozszerzenie modelowania, należy utworzyć rozwiązanie zawierające następujące projekty:
+
+- Projekt rozszerzenia integracji [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (VSIX). Spowoduje to wygenerowanie pliku, który działa jako Instalator składników rozszerzenia.
+
+- Projekt biblioteki klas, wymagany dla składników, które zawierają kod programu.
+
+  Jeśli chcesz utworzyć rozszerzenie, które ma kilka składników, możesz je opracować w jednym rozwiązaniu. Potrzebny jest tylko jeden projekt VSIX.
+
+  Składniki, które nie wymagają kodu, takie jak niestandardowe elementy przybornika i niestandardowe profile UML, można dodać bezpośrednio do projektu VSIX bez użycia oddzielnych projektów biblioteki klas. Składniki wymagające kodu programu są łatwiejsze do zdefiniowania w osobnym projekcie biblioteki klas. Składniki wymagające obsługi gestów, poleceń menu i kodu sprawdzania poprawności.
+
+#### <a name="to-create-a-class-library-project-for-menu-commands-gesture-handlers-or-validation"></a>Aby utworzyć projekt biblioteki klas dla poleceń menu, programów obsługi gestów lub walidacji
+
+1. W menu **plik** wybierz polecenie **Nowy**, **projekt**.
+
+2. W obszarze **zainstalowane szablony**wybierz **pozycję C# Wizualizacja** lub **Visual Basic**, a następnie wybierz pozycję **Biblioteka klas**.
+
+#### <a name="to-create-a-vsix-project"></a>Aby utworzyć projekt VSIX
+
+1. Jeśli tworzysz składnik z kodem, najłatwiej jest najpierw utworzyć projekt biblioteki klas. Kod zostanie dodany do tego projektu.
+
+2. Utwórz projekt VSIX.
+
+    1. W **Eksplorator rozwiązań**, w menu skrótów rozwiązania, wybierz **Dodaj**, **Nowy projekt**.
+
+    2. W obszarze **zainstalowane szablony**rozwiń **pozycję C# Wizualizacja** lub **Visual Basic**, a następnie wybierz pozycję **rozszerzalność**. W środkowej kolumnie Wybierz pozycję **Projekt VSIX**.
+
+3. Ustaw projekt VSIX jako projekt startowy rozwiązania.
+
+    - W Eksplorator rozwiązań, w menu skrótów projektu VSIX, wybierz **Ustaw jako projekt startowy**.
+
+4. Open **source. Extension. vsixmanifest**. Plik zostanie otwarty w edytorze manifestu.
+
+5. Na karcie **metadane** Ustaw nazwę i pola opisowe dla VSIX.
+
+6. Na karcie **Instalowanie obiektów docelowych** wybierz pozycję **nowe** i ustaw wersje programu Visual Studio jako elementy docelowe.
+
+7. Na karcie **zasoby** Dodaj składniki do rozszerzenia programu Visual Studio.
+
+    1. Wybierz pozycję **Nowy**.
+
+    2. Dla składnika z kodem ustaw następujące pola w oknie dialogowym **Dodaj nowy element zawartości** :
+
+        |||
+        |-|-|
+        |**Typ**  =|**Microsoft. VisualStudio. MefComponent**|
+        |@No__t_1 **źródłowa**|**Projekt w bieżącym rozwiązaniu**|
+        |@No__t_1 **projektu**|*Projekt biblioteki klas*|
+        |**Osadź w tym folderze**  =|*ciągiem*|
+
+         W przypadku innych typów składników zapoznaj się z linkami w następnej sekcji.
+
+## <a name="developing-the-component"></a>Programowanie składnika
+ Dla każdego składnika, takiego jak polecenie menu lub procedura obsługi gestu, należy zdefiniować oddzielną procedurę obsługi. Można umieścić kilka programów obsługi w tym samym projekcie biblioteki klas. W poniższej tabeli zestawiono różne rodzaje obsługi.
+
+|Typ rozszerzenia|Temat|Jak każdy składnik jest zwykle zadeklarowany|
+|--------------------|-----------|----------------------------------------------|
+|Polecenie menu|[Definiowanie polecenia menu w diagramie modelowania](../modeling/define-a-menu-command-on-a-modeling-diagram.md)|`[ClassDesignerExtension]`<br /><br /> `// or other diagram types`<br /><br /> `[Export(typeof(ICommandExtension))]`<br /><br /> `public class MyCommand : ICommandExtension`<br /><br /> `{...`|
+|Przeciągnij i upuść lub kliknij dwukrotnie|[Definiowanie procedury obsługi gestów na diagramie modelowania](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)|`[ClassDesignerExtension]`<br /><br /> `// or other diagram types`<br /><br /> `[Export(typeof(IGestureExtension))]`<br /><br /> `public class MyGesture : IGestureExtension`<br /><br /> `{...`|
+|Ograniczenie walidacji|[Definiowanie ograniczeń walidacji dla modeli UML](../modeling/define-validation-constraints-for-uml-models.md)|`[Export(typeof(     System.Action<ValidationContext, object>))]`<br /><br /> `[ValidationMethod(ValidationCategories.Save`<br /><br /> `&#124; ValidationCategories.Menu)]`<br /><br /> `public void ValidateSomething`<br /><br /> `(ValidationContext context, IClassifier elementToValidate)`<br /><br /> `{...}`|
+|Procedura obsługi zdarzeń linku elementu pracy|[Definiowanie procedury obsługi linku elementu roboczego](../modeling/define-a-work-item-link-handler.md)|`[Export(typeof(ILinkedWorkItemExtension))]`<br /><br /> `public class MyWorkItemEventHandler : ILinkedWorkItemExtension`<br /><br /> `{...`|
+|Profil UML|[Definiowanie profilu w celu rozszerzenia kodu UML](../modeling/define-a-profile-to-extend-uml.md)|(Do zdefiniowania)|
+|Element przybornika|[Definiowanie niestandardowego elementu przybornika modelowania](../modeling/define-a-custom-modeling-toolbox-item.md)|(Do zdefiniowania)|
+
+## <a name="running-an-extension-during-its-development"></a>Uruchamianie rozszerzenia w trakcie jego tworzenia
+
+#### <a name="to-run-an-extension-during-its-development"></a>Aby uruchomić rozszerzenie podczas jego tworzenia
+
+1. W menu **debugowanie** [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] wybierz **Rozpocznij debugowanie**.
+
+     Kompilacja projektu i nowe wystąpienie [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] są uruchamiane w trybie eksperymentalnym.
+
+    - Alternatywnie możesz wybrać opcję **Rozpocznij bez debugowania**. Pozwala to skrócić czas potrzebny do uruchomienia programu.
+
+2. Utwórz lub Otwórz projekt modelowania w eksperymentalnym wystąpieniu programu Visual Studio i Utwórz lub Otwórz diagram.
+
+     Twoje rozszerzenie zostanie załadowane i uruchomione.
+
+3. Jeśli używasz narzędzia **Uruchom bez debugowania** , ale chcesz użyć debugera, Wróć do głównego wystąpienia programu Visual Studio. W menu **debugowanie** kliknij **Dołącz do procesu**. W oknie dialogowym Wybierz eksperymentalne wystąpienie programu Visual Studio, które ma nazwę programu **devenv**.
+
+## <a name="Installing"></a>Instalowanie i odinstalowywanie rozszerzenia
+ Wykonaj następujące kroki, aby uruchomić rozszerzenie w głównym wystąpieniu programu Visual Studio na własnym komputerze lub na innych komputerach.
+
+1. Na komputerze Znajdź plik **. vsix** , który został skompilowany przez projekt rozszerzenia.
+
+    1. W **Eksplorator rozwiązań**, w menu skrótów projektu, a następnie wybierz polecenie **Otwórz folder w Eksploratorze Windows**.
+
+    2. Zlokalizuj plik **bin \\ \* \\** _YourProject_ **. vsix**
+
+2. Skopiuj plik **. vsix** do komputera docelowego, na którym chcesz zainstalować rozszerzenie. Może to być własny komputer lub inny.
+
+    - Na komputerze docelowym musi znajdować się jedna z wersji programu Visual Studio określona na karcie **cele instalacji** elementu **source. Extension. vsixmanifest**.
+
+3. Na komputerze docelowym otwórz plik **. vsix** , na przykład klikając go dwukrotnie.
+
+     Zostanie otwarty **Instalator rozszerzenia programu Visual Studio** , który zainstaluje rozszerzenie.
+
+4. Uruchom lub Uruchom ponownie program Visual Studio.
+
+#### <a name="to-uninstall-an-extension"></a>Aby odinstalować rozszerzenie
+
+1. W menu **Narzędzia** kliknij pozycję **rozszerzenia i aktualizacje**.
+
+2. Rozwiń **zainstalowane rozszerzenia**.
+
+3. Wybierz rozszerzenie, a następnie kliknij przycisk **Odinstaluj**.
+
+   Rzadko błędne rozszerzenie nie zostanie załadowane i tworzy raport w oknie błędu, ale nie jest wyświetlany w Menedżerze rozszerzeń. W takim przypadku można usunąć rozszerzenie, usuwając plik z następującej lokalizacji, gdzie *% LocalAppData%* jest zazwyczaj *dysk*: \Users \\*username*\AppData\Local:
+
+   *% LocalAppData%* **\Microsoft\VisualStudio \\ [wersja] \Extensions**
+
+## <a name="see-also"></a>Zobacz też
+ [Zdefiniuj profil, aby zwiększyć UML](../modeling/define-a-profile-to-extend-uml.md) [Definiowanie niestandardowego elementu przybornika modelowania](../modeling/define-a-custom-modeling-toolbox-item.md) [Definiowanie ograniczeń walidacji dla modeli UML](../modeling/define-validation-constraints-for-uml-models.md) [Definiowanie polecenia menu na diagramie modelowania](../modeling/define-a-menu-command-on-a-modeling-diagram.md)

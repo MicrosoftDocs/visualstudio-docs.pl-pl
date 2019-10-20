@@ -13,21 +13,21 @@ helpviewer_keywords:
 - builds [Visual Studio], errors
 - output files, build errors
 ms.assetid: 9002d8c2-36d4-451c-b489-8f01932f31f7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 039456c10993199ec2265042aabc0ed5c475ccd9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a073b4815a01696c546dc2a9dd1132e3605281e6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969296"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655786"
 ---
 # <a name="out-devenvexe"></a>/Out (devenv.exe)
 
-Określa plik do przechowywania i wyświetlania błędów po użytkownik [Uruchom](run-devenv-exe.md), [Uruchom i Zamknij](runexit-devenv-exe.md), [uaktualnienia](upgrade-devenv-exe.md), [kompilacji](build-devenv-exe.md), [odbudować](rebuild-devenv-exe.md), [czyste](clean-devenv-exe.md), lub [wdrażanie](deploy-devenv-exe.md) rozwiązania.
+Określa plik do przechowywania i wyświetlania błędów podczas [uruchamiania](run-devenv-exe.md), [uruchamiania i kończenia](runexit-devenv-exe.md), [uaktualniania](upgrade-devenv-exe.md), [kompilowania](build-devenv-exe.md), [odbudowy](rebuild-devenv-exe.md), [czyszczenia](clean-devenv-exe.md)lub [wdrażania](deploy-devenv-exe.md) rozwiązania.
 
 ## <a name="syntax"></a>Składnia
 
@@ -37,19 +37,19 @@ devenv /Out FileName
 
 ## <a name="arguments"></a>Argumenty
 
-- *FileName*
+- *Nazwa pliku*
 
-  Wymagana. Ścieżka i nazwa pliku do odbierania danych wyjściowych podczas kompilowania pliku wykonywalnego.
+  Wymagany. Ścieżka i nazwa pliku do odbierania danych wyjściowych podczas kompilowania pliku wykonywalnego.
 
 ## <a name="remarks"></a>Uwagi
 
-Jeśli określono nazwy nieistniejącego pliku, plik zostanie utworzony automatycznie. W przeciwnym wypadku plik już istnieje, a wyniki są dołączane do istniejącej zawartości pliku.
+Jeśli określono nieistniejącą nazwę pliku, plik zostanie utworzony automatycznie. W przeciwnym razie plik już istnieje, a wyniki są dołączane do istniejącej zawartości pliku.
 
-Błędy kompilacji wiersza polecenia są wyświetlane w **polecenia** okna i konstruktora rozwiązania widoku **dane wyjściowe** okna. Ten przełącznik jest przydatny do wyświetlania wyników nienadzorowanej kompilacji.
+Błędy kompilacji w wierszu polecenia są wyświetlane w oknie **poleceń** i w widoku konstruktora rozwiązań okna **danych wyjściowych** . Ten przełącznik jest przydatny do wyświetlania wyników nienadzorowanych kompilacji.
 
 ## <a name="example"></a>Przykład
 
-W tym przykładzie jest uruchamiany `MySolution` i zapisuje błędy do pliku `MyErrorLog.txt`.
+W tym przykładzie uruchomiono `MySolution` i zapisuje błędy w `MyErrorLog.txt` pliku.
 
 ```shell
 devenv /run "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /out "C:\MyErrorLog.txt"
@@ -57,11 +57,11 @@ devenv /run "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /out "C:\MyEr
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Przełączniki wiersza polecenia Devenv](../../ide/reference/devenv-command-line-switches.md)
-- [/ Run (devenv.exe)](../../ide/reference/run-devenv-exe.md)
-- [/ RunExit (devenv.exe)](runexit-devenv-exe.md)
-- [/ Upgrade (devenv.exe)](upgrade-devenv-exe.md)
-- [/ Clean (devenv.exe)](clean-devenv-exe.md)
-- [/ Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)
-- [/ Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)
-- [/ Wdrażanie (devenv.exe)](../../ide/reference/deploy-devenv-exe.md)
+- [Przełączniki wiersza polecenia devenv](../../ide/reference/devenv-command-line-switches.md)
+- [/Run (devenv. exe)](../../ide/reference/run-devenv-exe.md)
+- [/RunExit (devenv. exe)](runexit-devenv-exe.md)
+- [/Upgrade (devenv. exe)](upgrade-devenv-exe.md)
+- [/Clean (devenv. exe)](clean-devenv-exe.md)
+- [/Build (devenv. exe)](../../ide/reference/build-devenv-exe.md)
+- [/Rebuild (devenv. exe)](../../ide/reference/rebuild-devenv-exe.md)
+- [/Deploy (devenv. exe)](../../ide/reference/deploy-devenv-exe.md)

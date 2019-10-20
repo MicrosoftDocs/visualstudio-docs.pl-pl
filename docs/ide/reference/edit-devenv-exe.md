@@ -7,21 +7,21 @@ helpviewer_keywords:
 - Devenv, /Edit switch
 - /Edit Devenv switch
 ms.assetid: 02b3d6e7-a2b1-4d83-a747-aa8c2fb758b7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f0eb7cab3b1bc764f663cd647811928510281e8
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: 37d49dd7d191ad470639debc50fbed23d5066233
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66432013"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654485"
 ---
 # <a name="edit-devenvexe"></a>/Edit (devenv.exe)
 
-Otwiera określony plik w istniejącego wystąpienia programu Visual Studio.
+Otwiera określony plik w istniejącym wystąpieniu programu Visual Studio.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,23 +33,23 @@ devenv /Edit [File1[ FileN]...]
 
 - *File1*
 
-  Opcjonalna. Plik można otworzyć w istniejącego wystąpienia programu Visual Studio. Jeśli nie ma wystąpień programu Visual Studio, jest tworzone nowe wystąpienie o uproszczonym układzie okna i otwarciu narzędzia *plik1* w nowym wystąpieniu.
+  Opcjonalny. Plik do otwarcia w istniejącym wystąpieniu programu Visual Studio. Jeśli wystąpienie programu Visual Studio nie istnieje, nowe wystąpienie jest tworzone z uproszczonym układem okna, a narzędzie otwiera *plik1* w nowym wystąpieniu.
 
-- *FileN*
+- *Plikn*
 
-  Opcjonalna. Jeden lub więcej dodatkowych plików do otwierania w istniejącym wystąpieniu programu Visual Studio.
+  Opcjonalny. Co najmniej jeden dodatkowy plik do otwarcia w istniejącym wystąpieniu programu Visual Studio.
 
 ## <a name="remarks"></a>Uwagi
 
-Jeśli plik nie jest określona, istniejącego wystąpienia programu Visual Studio zostanie ustawiony fokus. Jeśli jest określony plik nie istnieje żadne wystąpienie programu Visual Studio, narzędziu tworzy wystąpienie o uproszczonym układzie okna.
+Gdy nie określono pliku, istniejące wystąpienie programu Visual Studio otrzymuje fokus. Jeśli plik nie zostanie określony i żadne wystąpienie programu Visual Studio nie istnieje, narzędzie tworzy wystąpienie z uproszczonym układem okna.
 
-Jeśli stan modalny istniejącego wystąpienia programu Visual Studio, plik zostanie otwarty w istniejącym wystąpieniu gdy program Visual Studio kończy stan modalny. Na przykład, ta sytuacja może wystąpić podczas [okno dialogowe Opcje](../../ide/reference/options-dialog-box-visual-studio.md) jest otwarty.
+Jeśli istniejące wystąpienie programu Visual Studio jest w stanie modalnym, plik zostanie otwarty w istniejącym wystąpieniu, gdy program Visual Studio zakończy stan modalny. Na przykład taka sytuacja może wystąpić, gdy okno [dialogowe Opcje](../../ide/reference/options-dialog-box-visual-studio.md) jest otwarte.
 
-Jeśli więcej niż jedno wystąpienie programu Visual Studio jest otwarty, plik jest otwarty w ostatnio otwieranych wystąpienia.
+Jeśli jest otwarte więcej niż jedno wystąpienie programu Visual Studio, plik zostanie otwarty w ostatnio otwartym wystąpieniu.
 
 ## <a name="example"></a>Przykład
 
-Pierwszy przykład otwiera plik `MyFile.cs` w istniejącego wystąpienia programu Visual Studio. Jeśli nie istnieje wystąpienie programu Visual Studio, narzędziu otwiera plik w nowym wystąpieniu. Drugi przykład jest podobny, z tą różnicą, że spowoduje to otwarcie trzy pliki, a nie tylko jeden plik.
+Pierwszy przykład otwiera plik `MyFile.cs` w istniejącym wystąpieniu programu Visual Studio. Jeśli wystąpienie programu Visual Studio nie istnieje, narzędzie otwiera plik w nowym wystąpieniu. Drugi przykład jest podobny, z tą różnicą, że otwiera trzy pliki zamiast tylko jednego pliku.
 
 ```shell
 devenv /edit MyFile.cs
@@ -59,4 +59,4 @@ devenv /edit MyFile1.cs MyFile2.cs MyFile3.cs
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Przełączniki wiersza polecenia Devenv](../../ide/reference/devenv-command-line-switches.md)
+- [Przełączniki wiersza polecenia devenv](../../ide/reference/devenv-command-line-switches.md)

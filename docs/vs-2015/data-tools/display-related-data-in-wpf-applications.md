@@ -1,5 +1,5 @@
 ---
-title: Wyświetlanie powiązanych danych w aplikacjach WPF | Dokumentacja firmy Microsoft
+title: Wyświetlanie powiązanych danych w aplikacjach WPF | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -19,51 +19,48 @@ helpviewer_keywords:
 - data binding, WPF
 ms.assetid: 3aa80194-0191-474d-9d28-5ec05654b426
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e8a7bd540f5c8a99145b892d080d8cb54e57d968
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6efa79fc59ed9812cf6162096dd462100b71fbca
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68152109"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672416"
 ---
 # <a name="display-related-data-in-wpf-applications"></a>Wyświetlanie pokrewnych danych w aplikacjach WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W niektórych aplikacjach można pracować z danymi, które pochodzą z wielu tabel lub jednostek, które są powiązane ze sobą w relacji nadrzędny podrzędny. Na przykład możesz chcieć wyświetlić siatkę, na którym są wyświetlani klienci z `Customers` tabeli. Gdy użytkownik wybierze określonego odbiorcy, inny Siatka wyświetla zamówień tego klienta z powiązanych `Orders` tabeli.  
-  
- Możesz utworzyć formanty powiązane z danymi, które wyświetlają pokrewne dane przez przeciąganie elementów z **źródeł danych** okna Projektanta WPF.  
-  
-## <a name="to-create-controls-that-display-related-records"></a>Aby utworzyć formanty, które wyświetlania powiązanych rekordów  
-  
-1. Na **danych** menu, kliknij przycisk **Pokaż źródła danych** otworzyć **źródeł danych** okna.  
-  
-2. Kliknij przycisk **Dodaj nowe źródło danych**i wykonaj **konfiguracji źródła danych** kreatora.  
-  
-3. Otwórz projektanta WPF i upewnij się, że projektant zawiera kontener, który jest prawidłowe miejsca docelowego dla elementów w **źródeł danych** okna.  
-  
-     Aby uzyskać więcej informacji na temat prawidłowych miejsc upuszczania zobacz [WPF powiązać kontrolki z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).  
-  
-4. W **źródeł danych** okna, rozwiń węzeł, który reprezentuje tabeli nadrzędnej lub obiekt w relacji. Tabela nadrzędna lub obiekt znajduje się na stronie "jeden" w relacji jeden do wielu.  
-  
-5. Przeciągnij z węzła nadrzędnego (lub wszystkie poszczególne elementy w węźle nadrzędnym) **źródeł danych** okna na prawidłowe miejsca docelowego w projektancie.  
-  
-     Program Visual Studio generuje XAML, który tworzy nowe formanty powiązane z danymi dla każdego elementu, który możesz przeciągnąć. XAML również dodaje nowy <xref:System.Windows.Data.CollectionViewSource> tabeli nadrzędnej lub obiektu do zasobów miejsca docelowego. Dla niektórych źródeł danych programu Visual Studio generuje kod, aby załadować dane do tabeli nadrzędnej lub obiektu. Aby uzyskać więcej informacji, zobacz [WPF powiązać kontrolki z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).  
-  
-6. W **źródeł danych** oknie Znajdź pokrewną tabelę podrzędną lub obiektu. Podrzędnych względem tabel i obiektów są traktowane jako węzły można rozwijać w dolnej części listy danych węzła nadrzędnego.  
-  
-7. Przeciągnij węzeł podrzędny (lub wszystkie poszczególne elementy węzła podrzędnego) z **źródeł danych** okna na prawidłowe miejsca docelowego w projektancie.  
-  
-     Program Visual Studio generuje XAML, który tworzy nowe formanty powiązane z danymi dla każdego z elementów, które przeciągniesz. XAML również dodaje nowy <xref:System.Windows.Data.CollectionViewSource> tabeli podrzędnej lub obiektu do zasobów miejsca docelowego. Ta nowa <xref:System.Windows.Data.CollectionViewSource> jest powiązana z właściwością tabeli nadrzędnej lub obiekt, który właśnie został przeciągnięty do projektanta. Dla niektórych źródeł danych programu Visual Studio generuje kod, aby załadować dane do tabeli podrzędnej lub obiektu.  
-  
-     Na poniższym rysunku pokazano powiązane **zamówienia** tabeli **klientów** tabeli w zestawie danych w **źródeł danych** okna.  
-  
-     ![Okno źródeł danych, przedstawiający relacji](../data-tools/media/datasources2.gif "DataSources2")  
-  
-## <a name="see-also"></a>Zobacz też  
- [Powiązywanie kontrolek WPF z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)   
- [Powiązywanie kontrolek WPF z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md)   
- [Tworzenie tabel wyszukiwania w aplikacjach WPF](../data-tools/create-lookup-tables-in-wpf-applications.md)   
- [Przewodnik: Wyświetlanie powiązanych danych w aplikacji WPF](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)
+W niektórych aplikacjach można chcieć korzystać z danych pochodzących z wielu tabel lub jednostek, które są ze sobą powiązane w relacji nadrzędny-podrzędny. Na przykład możesz chcieć wyświetlić siatkę wyświetlającą klientów z tabeli `Customers`. Gdy użytkownik wybierze określonego klienta, w innej siatce są wyświetlane zamówienia dla tego klienta z tabeli powiązanej `Orders`.
+
+ Można tworzyć kontrolki powiązane z danymi, które wyświetlają powiązane dane, przeciągając elementy z okna **źródła danych** do projektanta WPF.
+
+## <a name="to-create-controls-that-display-related-records"></a>Aby utworzyć kontrolki, które wyświetlają powiązane rekordy
+
+1. W menu **dane** kliknij przycisk **Pokaż źródła danych** , aby otworzyć okno **źródła danych** .
+
+2. Kliknij przycisk **Dodaj nowe źródło danych**i Ukończ pracę kreatora **konfiguracji źródła danych** .
+
+3. Otwórz projektanta WPF i upewnij się, że projektant zawiera kontener, który jest prawidłowym obiektem docelowym upuszczania dla elementów w oknie **źródła danych** .
+
+     Aby uzyskać więcej informacji na temat prawidłowych obiektów docelowych upuszczania, zobacz [Powiązywanie kontrolek WPF z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
+
+4. W oknie **źródła danych** rozwiń węzeł, który reprezentuje tabelę nadrzędną lub obiekt w relacji. Tabela nadrzędna lub obiekt znajduje się po stronie "jeden" relacji jeden-do-wielu.
+
+5. Przeciągnij węzeł nadrzędny (lub dowolne poszczególne elementy w węźle nadrzędnym) z okna **źródła danych** na prawidłowy element docelowy upuszczania w projektancie.
+
+     Program Visual Studio generuje kod XAML, który tworzy nowe kontrolki powiązane z danymi dla każdego elementu, który przeciągniesz. KOD XAML dodaje również nowe <xref:System.Windows.Data.CollectionViewSource> dla tabeli nadrzędnej lub obiektu do zasobów obiektu docelowego upuszczania. W przypadku niektórych źródeł danych program Visual Studio generuje również kod umożliwiający załadowanie danych do tabeli nadrzędnej lub obiektu. Aby uzyskać więcej informacji, zobacz [Powiązywanie formantów WPF z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
+
+6. W oknie **źródła danych** Znajdź powiązaną tabelę podrzędną lub obiekt. Powiązane tabele podrzędne i obiekty są wyświetlane jako węzły rozwijane w dolnej części listy danych węzła nadrzędnego.
+
+7. Przeciągnij węzeł podrzędny (lub dowolne poszczególne elementy w węźle podrzędnym) z okna **źródła danych** na prawidłowy element docelowy upuszczania w projektancie.
+
+     Program Visual Studio generuje kod XAML, który tworzy nowe kontrolki powiązane z danymi dla każdego z przeciąganych elementów. KOD XAML dodaje również nowe <xref:System.Windows.Data.CollectionViewSource> dla tabeli podrzędnej lub obiektu do zasobów elementu docelowego upuszczania. Ta nowa <xref:System.Windows.Data.CollectionViewSource> jest powiązana z właściwością tabeli nadrzędnej lub obiektu, który właśnie został przeciągnięty do projektanta. W przypadku niektórych źródeł danych program Visual Studio generuje również kod służący do ładowania danych do podrzędnej tabeli lub obiektu.
+
+     Na poniższej ilustracji przedstawiono tabelę powiązane **zamówienia** tabeli **Customers** w zestawie danych w oknie **źródła danych** .
+
+     ![Okno źródeł danych z relacją](../data-tools/media/datasources2.gif "DataSources2")
+
+## <a name="see-also"></a>Zobacz też
+ [Powiązywanie kontrolek WPF z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md) [POWIĄZYWANIE kontrolek WPF z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md) [Tworzenie tabel odnośników w instruktażu aplikacji WPF](../data-tools/create-lookup-tables-in-wpf-applications.md) [: wyświetlanie powiązanych danych w aplikacji WPF](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)

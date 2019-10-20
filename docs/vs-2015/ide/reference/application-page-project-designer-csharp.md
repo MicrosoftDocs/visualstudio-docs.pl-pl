@@ -1,5 +1,5 @@
 ---
-title: Strona aplikacji, Projektant projektu (C#) | Dokumentacja firmy Microsoft
+title: Strona aplikacji, Projektant projektu (C#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -12,93 +12,82 @@ helpviewer_keywords:
 - Application page in Project Designer
 ms.assetid: f13701a8-4e2e-4474-9d60-bb43decbe0c1
 caps.latest.revision: 61
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2744dabdb79d777661c1ed73e8a85b05b5308624
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 792034d913bc7e3ca897f4f8e12736d4d78797cf
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704768"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651706"
 ---
 # <a name="application-page-project-designer-c"></a>Strona aplikacji, Projektant projektu (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Użyj **aplikacji** strony **projektanta projektu** do określania ustawień aplikacji i właściwości projektu.  
-  
- Aby uzyskać dostęp do **aplikacji** wybierz węzeł projektu (nie **rozwiązania** węźle) w **Eksploratora rozwiązań**. Następnie wybierz **projektu**, **właściwości** na pasku menu. Gdy pojawi się w Projektancie projektu, kliknij przycisk **aplikacji** kartę.  
-  
- [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)]  
-  
-## <a name="general-application-settings"></a>Ustawienia ogólne aplikacji  
- Poniższe opcje umożliwiają konfigurowanie ogólnych ustawień dla aplikacji.  
-  
- **Nazwa zestawu**  
- Określa nazwę pliku wyjściowego, który będzie przechowywać manifest zestawu. Zmiana tej właściwości spowoduje również zmianę **Nazwa wyjściowego** właściwości. Można również wprowadzenie tej zmiany z wiersza polecenia przy użyciu [/out (opcje kompilatora C#)](https://msdn.microsoft.com/library/70d91d01-7bd2-4aea-ba8b-4e9807e9caa5). Aby uzyskać dostęp do tej właściwości programowo, zobacz <xref:VSLangProj.ProjectProperties.AssemblyName%2A>.  
-  
- **Domyślna przestrzeń nazw**  
- Określa podstawowej przestrzeni nazw dla plików dodawane do projektu.  
-  
- Zobacz [przestrzeni nazw](https://msdn.microsoft.com/library/0a788423-9110-42e0-97d9-bda41ca4870f) Aby uzyskać więcej informacji na temat tworzenia przestrzeni nazw w kodzie.  
-  
- Aby uzyskać dostęp do tej właściwości programowo, zobacz <xref:VSLangProj.ProjectProperties.RootNamespace%2A>.  
-  
- **Struktura docelowa**  
- Określa wersję programu .NET Framework, cele aplikacji. Ta opcja może mieć różne wartości w zależności od tego, które wersje programu .NET Framework są zainstalowane na tym komputerze.  
-  
- Domyślnie wartość jest taka sama jak platforma docelowa, które wybrano w **nowy projekt** okno dialogowe.  
-  
+Użyj strony **aplikacji** **projektanta projektu** , aby określić ustawienia i właściwości aplikacji projektu.
+
+ Aby uzyskać dostęp do strony **aplikacji** , wybierz węzeł projektu (nie węzeł **rozwiązania** ) w **Eksplorator rozwiązań**. Następnie wybierz **projekt**, **Właściwości** na pasku menu. Gdy pojawi się Projektant projektu, kliknij kartę **aplikacja** .
+
+ [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)]
+
+## <a name="general-application-settings"></a>Ogólne ustawienia aplikacji
+ Poniższe opcje umożliwiają skonfigurowanie ustawień ogólnych dla aplikacji.
+
+ **Nazwa zestawu** Określa nazwę pliku wyjściowego, który będzie przechowywać manifest zestawu. Zmiana tej właściwości spowoduje również zmianę właściwości **Nazwa wyjściowa** . Możesz również wprowadzić tę zmianę z poziomu wiersza polecenia, używając [/out (C# opcje kompilatora)](https://msdn.microsoft.com/library/70d91d01-7bd2-4aea-ba8b-4e9807e9caa5). Aby programowo uzyskać dostęp do tej właściwości, zobacz <xref:VSLangProj.ProjectProperties.AssemblyName%2A>.
+
+ **Domyślna przestrzeń nazw** Określa podstawową przestrzeń nazw dla plików dodanych do projektu.
+
+ Aby uzyskać więcej informacji na temat tworzenia przestrzeni nazw w kodzie, zobacz [przestrzeń nazw](https://msdn.microsoft.com/library/0a788423-9110-42e0-97d9-bda41ca4870f) .
+
+ Aby programowo uzyskać dostęp do tej właściwości, zobacz <xref:VSLangProj.ProjectProperties.RootNamespace%2A>.
+
+ **Platforma docelowa** Określa wersję .NET Framework, do której należy aplikacja. Ta opcja może mieć różne wartości w zależności od wersji .NET Framework zainstalowanych na komputerze.
+
+ Domyślnie wartość jest taka sama jak platforma docelowa wybrana w oknie dialogowym **Nowy projekt** .
+
 > [!NOTE]
-> Wstępnie wymagane pakiety wymienione w [wstępnie wymagane składniki, okno dialogowe](../../ide/reference/prerequisites-dialog-box.md) są ustawiane automatycznie przy pierwszym otwarciu okna dialogowego. Jeśli użytkownik zmieni później platformę docelową projektu, trzeba będzie wybrać wstępnie wymagane składniki ręcznie, aby dopasować do nowej platformy docelowej.  
-  
- Aby uzyskać więcej informacji, zobacz [jak: Docelowa wersja systemu .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) i [programu Visual Studio Wielowersyjnością kodu – Przegląd](../../ide/visual-studio-multi-targeting-overview.md).  
-  
- **Typ aplikacji**  
- Określa typ aplikacji pozwalają na tworzenie. Aby uzyskać [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] aplikacji, można określić **Windows Store App**, **biblioteki klas**, lub **plik WinMD**. W przypadku większości innych typów aplikacji, możesz określić **aplikacji Windows**, **aplikację Konsolową**, **biblioteki klas**, **usługi Windows**, lub **Biblioteka formantów sieci Web**.  
-  
- W przypadku projektu aplikacji sieci web, należy określić **biblioteki klas**.  
-  
- Jeśli określisz **plik WinMD** opcji typów może zostać przedstawione dowolnego środowiska wykonawczego Windows, język programowania. Przez funkcję tworzenia pakietów danych wyjściowych projektu jako plik WinMD, kod aplikacji w wielu językach i współdziałania tak, jakby jego autorem kod w języku. Można określić tę opcję, aby rozwiązania przeznaczone dla bibliotek środowiska wykonawczego Windows, w tym [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] aplikacji. Aby uzyskać więcej informacji, zobacz [Tworzenie składników środowiska wykonawczego Windows w języku C# i Visual Basic](http://go.microsoft.com/fwlink/?LinkId=231895).  
-  
+> Wstępnie wymagane pakiety wymienione w [oknie dialogowym wymagania wstępne](../../ide/reference/prerequisites-dialog-box.md) są ustawiane automatycznie przy pierwszym otwarciu okna dialogowego. Jeśli później zmienisz platformę docelową projektu, musisz ręcznie wybrać wymagania wstępne, aby dopasować ją do nowej platformy docelowej.
+
+ Aby uzyskać więcej informacji, zobacz [How to: Targeting](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) a [Visual Studio — omówienie wielu](../../ide/visual-studio-multi-targeting-overview.md).NET Framework elementów docelowych.
+
+ **Typ aplikacji** Określa typ aplikacji do skompilowania. W przypadku aplikacji [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] można określić **aplikację ze sklepu Windows**, **bibliotekę klas**lub **plik WinMD**. W przypadku większości innych typów aplikacji można określić **aplikację systemu Windows**, **aplikację konsolową**, **bibliotekę klas**, **usługę systemu Windows**lub **bibliotekę formantów sieci Web**.
+
+ Dla projektu aplikacji sieci Web należy określić **bibliotekę klas**.
+
+ W przypadku określenia opcji **pliku winmd** typy mogą być rzutowane na dowolny język programowania środowisko wykonawcze systemu Windows. Przez pakowanie danych wyjściowych projektu jako pliku WinMD, można zakodować aplikację w wielu językach i współdziałać z kodem, tak jakby były one napisane w tym samym języku. Tę opcję można określić dla rozwiązań przeznaczonych dla bibliotek środowisko wykonawcze systemu Windows, w tym [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] aplikacji. Aby uzyskać więcej informacji, zobacz [Tworzenie składników Środowisko wykonawcze systemu Windows C# w i Visual Basic](http://go.microsoft.com/fwlink/?LinkId=231895).
+
 > [!NOTE]
-> Środowisko wykonawcze Windows można typów projektów, aby były wyświetlane jako obiektów natywnych w jakikolwiek język są one używane. Na przykład JavaScript aplikacji współdziałających ze środowiska wykonawczego Windows ich używać jako zbiór obiektów JavaScript i aplikacji w języku C# korzystanie z biblioteki jako kolekcję obiektów platformy .NET. Upakowanie danych wyjściowych projektu w formacie pliku WinMD, możesz korzystać z zalet tej samej technologii, która używa środowiska wykonawczego Windows.  
-  
- Aby uzyskać więcej informacji na temat **typ aplikacji** właściwości, zobacz [/TARGET (opcje kompilatora C#)](https://msdn.microsoft.com/library/a18bbd8e-bbf7-49e7-992c-717d0eb1f76f). Aby dowiedzieć się, jak programowo dostęp do tej właściwości, zobacz <xref:VSLangProj.ProjectProperties.OutputType%2A>.  
-  
- **Informacje o zestawie**  
- Kliknięcie tego przycisku powoduje wyświetlenie [informacje o zestawie — okno dialogowe](../../ide/reference/assembly-information-dialog-box.md).  
-  
- **Obiekt początkowy**  
- Definiuje punkt wejścia, który ma być wywoływana podczas ładowania aplikacji. Zazwyczaj jest ono ustawione w formularzu głównym w aplikacji lub do `Main` procedury, które należy uruchamiać podczas uruchamiania aplikacji. Ponieważ biblioteki klas nie ma punktu wejścia, ich jedyną opcją dla tej właściwości jest **(nie ustawiono)**.  
-  
- Domyślnie w projekcie aplikacja przeglądarki środowiska WPF, ta opcja jest **(nie ustawiono)**. Druga opcja to *Projectname*. aplikacji. W tego rodzaju projektu należy ustawić początkową identyfikatora URI można załadować zasobów interfejsu użytkownika podczas uruchamiania aplikacji. Aby to zrobić, otwórz plik Application.xaml w projekcie i ustaw `StartupUri` właściwość w pliku .xaml w projekcie, takie jak Window1.xaml. Aby uzyskać listę elementów głównych dopuszczalne, zobacz <xref:System.Windows.Application.StartupUri%2A>. Należy także zdefiniować `public static void Main()` metodę w klasie w projekcie. Ta klasa pojawi się w **obiekt początkowy** listy jako *ProjectName.ClassName*. Klasę można następnie wybrać jako obiekt początkowy.  
-  
- Zobacz [/main (opcje kompilatora C#)](https://msdn.microsoft.com/library/975cf4d5-36ac-4530-826c-4aad0c7f2049) Aby uzyskać więcej informacji. Aby uzyskać dostęp do tej właściwości programowo, zobacz <xref:VSLangProj.ProjectProperties.StartupObject%2A>.  
-  
-## <a name="resources"></a>Zasoby  
- Poniższe opcje umożliwiają konfigurowanie ogólnych ustawień dla aplikacji.  
-  
- **Ikony i manifestu**  
- Domyślnie ten przycisk radiowy zostanie wybrany i **ikonę** i **manifestu** opcje są włączone. Dzięki temu można własną ikonę lub wybrać opcje różnych generowania manifestu. Pozostaw ten przycisk radiowy zaznaczone, chyba że udostępniasz plik zasobów dla projektu.  
-  
- **Ikona**  
- Określa plik .ico, który ma być używany jako ikona programu. Kliknij przycisk wielokropka, aby przejść do istniejącej grafiki, lub wpisz nazwę pliku, którego chcesz. Zobacz [/win32icon (opcje kompilatora C#)](https://msdn.microsoft.com/library/756d9b6d-ab07-41b7-ba58-5bd88f711138) Aby uzyskać więcej informacji. Aby uzyskać dostęp do tej właściwości programowo, zobacz <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.  
-  
- **Manifest**  
- Wybiera opcję generowania manifestu, gdy aplikacja zostanie uruchomiona w systemie Windows Vista w ramach kontroli konta użytkownika (UAC). Ta opcja może mieć następujące wartości:  
-  
-- **Osadź manifest z ustawieniami domyślnymi**. Obsługuje typowy sposób, w którym działa program Visual Studio na Windows Vista, czyli do osadzenia informacji o zabezpieczeniach w pliku wykonywalnym aplikacji, określając, że `requestedExecutionLevel` można `AsInvoker`. Jest to opcja domyślna.  
-  
-- **Tworzenie aplikacji bez manifestu**. Ta metoda jest określana jako *wirtualizacji*. Użyj tej opcji w celu zachowania zgodności ze starszymi aplikacjami.  
-  
-- **Properties\app.manifest**. Ta opcja jest wymagana w przypadku aplikacji wdrożonych przez ClickOnce lub rejestracji wolnego modelu COM. W przypadku publikowania aplikacji za pomocą wdrażania ClickOnce **manifestu** jest automatycznie ustawiona na tę opcję.  
-  
-  **Plik zasobów**  
-  Wybierz ten przycisk radiowy, udostępniając plik zasobów dla projektu. Wybranie tej opcji wyłącza **ikonę** i **manifestu** opcje.  
-  
-  Wprowadź nazwę ścieżki lub użyj przycisku Przeglądaj (**...** ) aby dodać plik zasobów Win32 do projektu.  
-  
-## <a name="see-also"></a>Zobacz też  
-[Zarządzanie właściwościami aplikacji](../../ide/application-properties.md)  
- [Pisanie kodu dla rozwiązań pakietu Office](https://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)
+> Środowisko wykonawcze systemu Windows można projektować typów, tak aby były one widoczne jako obiekty natywne w zależności od używanego języka. Na przykład aplikacje JavaScript, które współpracują z środowisko wykonawcze systemu Windows używają go jako zestawu obiektów JavaScript, a C# aplikacje używają biblioteki jako kolekcji obiektów .NET. Przez pakowanie danych wyjściowych projektu jako pliku WinMD można skorzystać z tej samej technologii, która środowisko wykonawcze systemu Windows używa.
+
+ Aby uzyskać więcej informacji na temat właściwości **typu aplikacji** , zobacz [/TargetC# (opcje kompilatora)](https://msdn.microsoft.com/library/a18bbd8e-bbf7-49e7-992c-717d0eb1f76f). Aby uzyskać informacje o tym, jak uzyskać programowo dostęp do tej właściwości, zobacz <xref:VSLangProj.ProjectProperties.OutputType%2A>.
+
+ **Informacje o zestawie** Kliknięcie tego przycisku powoduje wyświetlenie okna [dialogowego Informacje o zestawie](../../ide/reference/assembly-information-dialog-box.md).
+
+ **Obiekt startowy** Definiuje punkt wejścia, który ma być wywoływany, gdy aplikacja jest ładowana. Zwykle jest to ustawiane jako główny formularz w aplikacji lub do procedury `Main`, która powinna być uruchamiana podczas uruchamiania aplikacji. Ponieważ biblioteki klas nie mają punktu wejścia, ich jedyną opcją dla tej właściwości jest **(nie ustawiono)** .
+
+ Domyślnie w projekcie aplikacji przeglądarki WPF ta opcja jest **(nie ustawiana)** . Drugą opcją jest *ProjectName*. app. W tym rodzaju projekcie należy ustawić początkowy identyfikator URI, aby załadować zasób interfejsu użytkownika podczas uruchamiania aplikacji. Aby to zrobić, Otwórz plik Application. XAML w projekcie i ustaw właściwość `StartupUri` na plik. XAML w projekcie, na przykład window1. XAML. Aby uzyskać listę dopuszczalnych elementów głównych, zobacz <xref:System.Windows.Application.StartupUri%2A>. Należy również zdefiniować metodę `public static void Main()` w klasie w projekcie. Ta klasa będzie wyświetlana na liście **obiektów uruchamiania** jako *ProjectName. ClassName*. Następnie można wybrać klasę jako obiekt startowy.
+
+ Aby uzyskać więcej informacji, zobacz [/Main (C# opcje kompilatora)](https://msdn.microsoft.com/library/975cf4d5-36ac-4530-826c-4aad0c7f2049) . Aby programowo uzyskać dostęp do tej właściwości, zobacz <xref:VSLangProj.ProjectProperties.StartupObject%2A>.
+
+## <a name="resources"></a>Resources
+ Poniższe opcje umożliwiają skonfigurowanie ustawień ogólnych dla aplikacji.
+
+ **Ikona i manifest** Domyślnie ten przycisk radiowy jest zaznaczony, a **ikona** i opcje **manifestu** są włączone. Dzięki temu można wybrać własną ikonę lub wybrać różne opcje generowania manifestu. Ten przycisk radiowy należy pozostawić, chyba że podajesz plik zasobów dla projektu.
+
+ **Ikona** Ustawia plik ICO, który ma być używany jako ikona programu. Kliknij przycisk wielokropka, aby wyszukać istniejącą grafikę, lub wpisz nazwę pliku, który chcesz. Aby uzyskać więcej informacji, zobacz [/win32icon (C# opcje kompilatora)](https://msdn.microsoft.com/library/756d9b6d-ab07-41b7-ba58-5bd88f711138) . Aby programowo uzyskać dostęp do tej właściwości, zobacz <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.
+
+ **Manifest** Wybiera opcję generowania manifestu, gdy aplikacja jest uruchamiana w systemie Windows Vista w ramach kontroli konta użytkownika (UAC). Ta opcja może mieć następujące wartości:
+
+- **Osadź manifest z ustawieniami domyślnymi**. Obsługuje typowy sposób, w jaki program Visual Studio działa w systemie Windows Vista, czyli osadzać informacje o zabezpieczeniach w pliku wykonywalnym aplikacji, określając, że `requestedExecutionLevel` być `AsInvoker`. Jest to opcja domyślna.
+
+- **Utwórz aplikację bez manifestu**. Ta metoda jest znana jako *Wirtualizacja*. Użyj tej opcji, aby zapewnić zgodność ze starszymi aplikacjami.
+
+- **Properties\app.manifest**. Ta opcja jest wymagana w przypadku aplikacji wdrażanych za pomocą technologii ClickOnce lub COM bez rejestracji. Jeśli opublikujesz aplikację przy użyciu wdrożenia ClickOnce, **manifest** jest automatycznie ustawiany na tę opcję.
+
+  **Plik zasobów** Wybierz ten przycisk radiowy, gdy udostępniasz plik zasobów dla projektu. Wybranie tej opcji powoduje wyłączenie opcji **ikony** i **manifestu** .
+
+  Wprowadź nazwę ścieżki lub użyj przycisku przeglądania ( **...** ), aby dodać plik zasobów Win32 do projektu.
+
+## <a name="see-also"></a>Zobacz też
+[Zarządzanie właściwościami aplikacji](../../ide/application-properties.md) [pisanie kodu w rozwiązaniach pakietu Office](https://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)

@@ -2,49 +2,49 @@
 title: Aktualizowanie kształtów i łączników, aby odzwierciedlały model
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b4c0c88e9e096836e32ce427ff78cc94f5d1f72
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 84c26295461fa062faf88872dbc043048c26479a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62906992"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72663793"
 ---
 # <a name="update-shapes-and-connectors-to-reflect-the-model"></a>Aktualizowanie kształtów i łączników, aby odzwierciedlały model
 
-W języka specyficznego dla domeny w programie Visual Studio można zmienić wygląd kształtu odzwierciedlają stan modelu źródłowym.
+W języku specyficznym dla domeny w programie Visual Studio, można sprawić, aby wygląd kształtu odzwierciedlał stan modelu bazowego.
 
-Przykłady kodu, w tym temacie, powinny zostać dodane do `.cs` plików w Twojej `Dsl` projektu. Potrzebujesz tych instrukcji w każdym pliku:
+Przykłady kodu w tym temacie należy dodać do pliku `.cs` w `Dsl` projekcie. W każdym pliku są wymagane następujące dyrektywy:
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;
 using Microsoft.VisualStudio.Modeling.Diagrams;
 ```
 
-## <a name="set-shape-map-properties-to-control-the-visibility-of-a-decorator"></a>Ustaw właściwości mapowanie kształtów w celu kontrolowania widoczności elementu decorator
+## <a name="set-shape-map-properties-to-control-the-visibility-of-a-decorator"></a>Ustaw właściwości mapy kształtów, aby kontrolować widoczność elementu Dekoratora
 
-Można kontrolować widoczność dekoratora, bez konieczności pisania kodu programu, konfigurując mapowanie między kształtem i klasy domeny w definicji DSL. Aby uzyskać więcej informacji, zobacz [sposób definiowania języka specyficznego dla domeny](../modeling/how-to-define-a-domain-specific-language.md).
+Można kontrolować widoczność dekoratora bez pisania kodu programu, konfigurując mapowanie między kształtem i klasą domeny w definicji DSL. Aby uzyskać więcej informacji, zobacz [jak zdefiniować język specyficzny dla domeny](../modeling/how-to-define-a-domain-specific-language.md).
 
-## <a name="expose-the-color-and-style-of-a-shape-as-properties"></a>Uwidacznianie kolor i Styl kształtu jako właściwości
+## <a name="expose-the-color-and-style-of-a-shape-as-properties"></a>Uwidocznienie koloru i stylu kształtu jako właściwości
 
-W definicji DSL, kliknij prawym przyciskiem myszy kształt klasy, wskaż opcję **Dodaj udostępniane**, a następnie kliknij przycisk jednego z elementów takich jak **kolor wypełnienia**.
+W definicji DSL kliknij prawym przyciskiem myszy klasę Shape, wskaż polecenie **Dodaj uwidocznione**, a następnie kliknij jeden z elementów, takich jak **kolor wypełnienia**.
 
-Kształt ma teraz właściwość domeny, którego można ustawić w kodzie programu, ani jako użytkownik. Na przykład aby ustawić go w kodzie programu, polecenia lub reguły, można napisać:
+Kształt ma teraz właściwość domeny, którą można ustawić w kodzie programu lub jako użytkownik. Na przykład, aby ustawić go w kodzie programu dla polecenia lub reguły, można napisać:
 
 `shape.FillColor = System.Drawing.Color.Red;`
 
-Jeśli chcesz, ustaw dla zmiennej właściwość tylko pod kontrolą programu, a nie przez użytkownika, wybierz nową właściwość domeny takie jak **kolor wypełnienia** w diagramem definicji DSL. Następnie w oknie właściwości ustaw **jest możliwa do przeglądania** do `false` lub ustaw **jest tylko do odczytu w interfejsie użytkownika** do `true`.
+Jeśli chcesz uczynić zmienną właściwości tylko pod kontrolą programu, a nie przez użytkownika, wybierz nową właściwość domeny, taką jak **kolor wypełnienia** na DIAGRAMIE definicji DSL. Następnie w okno Właściwości ustawić wartość **umożliwia przeglądania** na `false` lub Set **jest interfejsem użytkownika ReadOnly** do `true`.
 
-## <a name="define-change-rules-to-make-color-style-or-location-depend-on-model-element-properties"></a>Zdefiniuj reguły zmianę koloru, stylu lub lokalizacji, które są zależne od właściwości elementu modelu
- Można zdefiniować reguły, które aktualizują wygląd kształtu zależne od innych części modelu. Na przykład można zdefiniować reguły zmian dla elementu modelu, który aktualizuje kolor jego kształt, które są zależne od właściwości elementu modelu. Aby uzyskać więcej informacji na temat zmiany reguł zobacz [reguły propagowanie zmian w modelu](../modeling/rules-propagate-changes-within-the-model.md).
+## <a name="define-change-rules-to-make-color-style-or-location-depend-on-model-element-properties"></a>Definiowanie reguł zmiany w celu uzyskania koloru, stylu lub lokalizacji zależy od właściwości elementu modelu
+ Można zdefiniować reguły, które aktualizują wygląd kształtu zależnego od innych części modelu. Na przykład można zdefiniować regułę zmiany dla elementu modelu, który aktualizuje kolor kształtu zależnie od właściwości elementu modelu. Aby uzyskać więcej informacji na temat reguł zmiany, zobacz [reguły propagowanie zmian w modelu](../modeling/rules-propagate-changes-within-the-model.md).
 
- Zasady należy używać tylko po to, aby zaktualizować właściwości, które są obsługiwane w ramach Store, ponieważ zasady nie są wywoływane, gdy przeprowadzane jest polecenia Cofnij. Nie dotyczy to niektóre funkcje graficzne, takich jak rozmiar i widoczność kształtu. Aby zaktualizować te funkcje kształtu, zobacz [funkcji aktualizowania graficznych Non-Store](#OnAssociatedProperty).
+ Reguł należy używać tylko do aktualizowania właściwości, które są przechowywane w magazynie, ponieważ reguły nie są wywoływane po wykonaniu polecenia Cofnij. Nie obejmuje to niektórych funkcji graficznych, takich jak rozmiar i widoczność kształtu. Aby zaktualizować te funkcje kształtu, zobacz [aktualizowanie funkcji graficznych](#OnAssociatedProperty)nienależących do magazynu.
 
- W poniższym przykładzie założono, że są dostępne `FillColor` jako właściwość domeny, zgodnie z opisem w poprzedniej sekcji.
+ W poniższym przykładzie założono, że masz uwidocznioną `FillColor` jako właściwość domeny, zgodnie z opisem w poprzedniej sekcji.
 
 ```csharp
 [RuleOn(typeof(ExampleElement))]
@@ -82,9 +82,9 @@ Jeśli chcesz, ustaw dla zmiennej właściwość tylko pod kontrolą programu, a
   }
 ```
 
-## <a name="use-onchildconfigured-to-initialize-a-shapes-properties"></a>Użyj OnChildConfigured można zainicjować właściwości kształtu
+## <a name="use-onchildconfigured-to-initialize-a-shapes-properties"></a>Użyj OnChildConfigured, aby zainicjować właściwości kształtu
 
-Można ustawić właściwości kształtu, gdy po raz pierwszy utworzony, zastąpienie `OnChildConfigured()` w częściową definicję klasy diagramu. Klasa diagram jest określona w definicji DSL i wygenerowany kod znajduje się w **Dsl\Generated Code\Diagram.cs**. Na przykład:
+Aby ustawić właściwości kształtu podczas jego pierwszego tworzenia, przesłonięcie `OnChildConfigured()` w częściowej definicji klasy diagramu. Klasa diagram jest określona w definicji DSL, a wygenerowany kod znajduje się w **Dsl\Generated Code\Diagram.cs**. Na przykład:
 
 ```csharp
 partial class MyLanguageDiagram
@@ -106,13 +106,13 @@ partial class MyLanguageDiagram
 }
 ```
 
-Ta metoda może służyć zarówno dla właściwości domeny i funkcje-store, takie jak rozmiar kształtu.
+Tej metody można używać zarówno w przypadku właściwości domeny, jak i funkcji niezwiązanych z magazynem, takich jak rozmiar kształtu.
 
-## <a name="OnAssociatedProperty"></a> Użyj AssociateValueWith(), aby zaktualizować inne funkcje kształtu
+## <a name="OnAssociatedProperty"></a>Używanie AssociateValueWith () do aktualizowania innych funkcji kształtu
 
-W przypadku niektórych funkcji kształtu, takie jak czy ma cień lub Styl strzałki łącznika nie istnieje metoda wbudowanych ujawnienia funkcji jako właściwość domeny.  Zmiany tych funkcji nie są pod kontrolą systemu transakcji. W związku z tym, nie jest właściwe je zaktualizować przy użyciu reguł, ponieważ zasady nie są wywoływane, gdy użytkownik wykonuje polecenie Undo.
+W przypadku niektórych funkcji kształtu, takich jak to, czy ma on cień, czy styl strzałki łącznika, nie ma wbudowanej metody ujawniania funkcji jako właściwości domeny.  Zmiany w tych funkcjach nie podlegają kontroli systemu transakcji. W związku z tym nie trzeba aktualizować ich przy użyciu reguł, ponieważ reguły nie są wywoływane, gdy użytkownik wykonuje polecenie Cofnij.
 
-Zamiast tego można zaktualizować takich funkcji przy użyciu <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A>. W poniższym przykładzie Styl strzałki łącznika jest kontrolowany za pomocą wartości właściwości domeny w relacji, która wyświetla łącznika:
+Zamiast tego można zaktualizować takie funkcje przy użyciu <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A>. W poniższym przykładzie styl strzałki łącznika jest kontrolowany przez wartość właściwości domeny w relacji, która jest wyświetlana przez łącznik:
 
 ```csharp
 public partial class ArrowConnector // My connector class.
@@ -153,6 +153,6 @@ public partial class ArrowConnector // My connector class.
 }
 ```
 
-`AssociateValueWith()` powinna być wywoływana jeden raz dla każdej właściwości domeny, który chcesz zarejestrować. Po jej wywołaniu, zmiany wprowadzone w określonej właściwości wywoła `OnAssociatedPropertyChanged()` w kształtów, które są dostępne właściwości elementu modelu.
+`AssociateValueWith()` należy wywoływać jednokrotnie dla każdej właściwości domeny, która ma zostać zarejestrowana. Po jego wywołaniu wszelkie zmiany określonej właściwości będą wywoływać `OnAssociatedPropertyChanged()` w dowolnych kształtach, które zawierają element modelu właściwości.
 
-Nie jest konieczne wywołać `AssociateValueWith()` dla każdego wystąpienia. Mimo że InitializeResources jest metodą wystąpienia, jest wywoływana tylko raz dla każdej klasy kształtu.
+Nie jest konieczne wywoływanie `AssociateValueWith()` dla każdego wystąpienia. Chociaż InitializeResources jest metodą wystąpienia, jest wywoływana tylko raz dla każdej klasy kształtu.

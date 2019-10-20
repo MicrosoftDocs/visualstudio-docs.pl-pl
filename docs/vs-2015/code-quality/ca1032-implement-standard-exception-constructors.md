@@ -1,5 +1,5 @@
 ---
-title: 'CA1032: Zaimplementuj standardowe konstruktory wyjątku | Dokumentacja firmy Microsoft'
+title: 'CA1032: Zaimplementuj standardowe konstruktory wyjątków | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,49 +12,49 @@ helpviewer_keywords:
 - ImplementStandardExceptionConstructors
 ms.assetid: a8623c56-273a-4c95-8d83-95911a042be7
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: c59da56304a5d1d8f2cca7eaf886fd5ebc37f8ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b471387db3ce52944ffad3841dc7e946c4d44873
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68205835"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661876"
 ---
-# <a name="ca1032-implement-standard-exception-constructors"></a>CA1032: Zaimplementuj standardowe konstruktory wyjątków
+# <a name="ca1032-implement-standard-exception-constructors"></a>CA1032: Implementowanie standardowych konstruktorów wyjątków
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|ImplementStandardExceptionConstructors|
 |CheckId|CA1032|
-|Kategoria|Microsoft.Design|
-|Zmiana kluczowa|Bez podziału|
+|Kategoria|Microsoft. Design|
+|Zmiana kluczowa|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
- Rozszerza typ <xref:System.Exception?displayProperty=fullName> i nie deklaruje wymagane konstruktorów.
+ Typ rozszerza <xref:System.Exception?displayProperty=fullName> i nie deklaruje wszystkich wymaganych konstruktorów.
 
 ## <a name="rule-description"></a>Opis reguły
- Typy wyjątków należy zaimplementować następujących konstruktorów:
+ Typy wyjątków muszą implementować następujące konstruktory:
 
-- NewException() publiczne
+- Public NewException ()
 
-- NewException(string) publiczne
+- Public NewException (ciąg)
 
-- publiczne NewException (ciąg, wyjątku)
+- Public NewException (ciąg, wyjątek)
 
-- NewException chroniona lub prywatnej (SerializationInfo, StreamingContext)
+- chroniona lub prywatna NewException (SerializationInfo, StreamingContext)
 
-  Niepowodzenie podczas dostarczenia pełnego zestawu konstruktorów może utrudnić poprawną obsługę wyjątków. Na przykład konstruktora, który ma podpis `NewException(string, Exception)` służy do tworzenia wyjątków, które są spowodowane przez inne wyjątki. Bez tego konstruktora nie może utworzyć i zgłosić wystąpienie usługi niestandardowy wyjątek, który zawiera wewnętrzny wyjątek (zagnieżdżona) czyli jakich kodu zarządzanego, należy wykonać w takiej sytuacji. Pierwsze konstruktory wyjątku trzech są publiczne przez Konwencję. Czwarty Konstruktor jest chronione niezapieczętowanych klas i prywatny w klasach zapieczętowanych. Aby uzyskać więcej informacji, zobacz [CA2229: Zaimplementuj konstruktory serializacji](../code-quality/ca2229-implement-serialization-constructors.md)
+  Niepowodzenie podczas dostarczenia pełnego zestawu konstruktorów może utrudnić poprawną obsługę wyjątków. Na przykład Konstruktor, który ma sygnaturę `NewException(string, Exception)` służy do tworzenia wyjątków, które są spowodowane innymi wyjątkami. Bez tego konstruktora nie można utworzyć i zgłosić wystąpienia wyjątku niestandardowego, który zawiera wewnętrzny (zagnieżdżony) wyjątek, który jest tym, jaki kod zarządzany powinien wykonać w takiej sytuacji. Pierwsze trzy konstruktory wyjątków są publiczne według Konwencji. Czwarty Konstruktor jest chroniony w niezapieczętowanych klasach i prywatny w klasach zapieczętowanych. Aby uzyskać więcej informacji, zobacz [CA2229: Implementuj konstruktory serializacji](../code-quality/ca2229-implement-serialization-constructors.md)
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, Dodaj brakujące konstruktory wyjątek i upewnij się, że poprawne ułatwień dostępu.
+ Aby naprawić naruszenie tej reguły, Dodaj brakujące konstruktory do wyjątku i upewnij się, że mają one poprawną dostępność.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Jest bezpieczne pominąć ostrzeżenie od tej reguły, jeśli naruszenie jest spowodowany przez przy użyciu poziomu różny dostęp dla konstruktorów publicznych.
+ Można bezpiecznie pominąć ostrzeżenie z tej reguły, gdy naruszenie jest spowodowane przez użycie innego poziomu dostępu dla konstruktorów publicznych.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład zawiera typ wyjątku, który narusza tę regułę i typ wyjątku, który jest implementowana prawidłowo.
+ Poniższy przykład zawiera typ wyjątku, który narusza tę regułę i typ wyjątku, który jest poprawnie zaimplementowany.
 
  [!code-csharp[FxCop.Design.ExceptionMultipleCtors#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.ExceptionMultipleCtors/cs/FxCop.Design.ExceptionMultipleCtors.cs#1)]

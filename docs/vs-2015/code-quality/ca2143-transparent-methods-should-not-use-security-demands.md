@@ -1,5 +1,5 @@
 ---
-title: 'CA2143: Metody przezroczyste nie powinny używać żądań zabezpieczeń | Dokumentacja firmy Microsoft'
+title: 'CA2143: Metody przezroczyste nie powinny używać żądań zabezpieczeń | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -8,17 +8,17 @@ f1_keywords:
 - CA2143
 ms.assetid: 5d3923d7-cf40-4512-bc5c-0db0e0d6e25a
 caps.latest.revision: 14
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 5f9983f832c8793140f79e9b835e26e44fae1927
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bcfce9a80d02e525212d3f59173df4a7e8fbe968
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68142677"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662704"
 ---
-# <a name="ca2143-transparent-methods-should-not-use-security-demands"></a>CA2143: Metody przezroczyste nie powinny używać żądań zabezpieczeń
+# <a name="ca2143-transparent-methods-should-not-use-security-demands"></a>CA2143: Jawne metody nie powinny używać żądań zabezpieczeń
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -29,21 +29,21 @@ ms.locfileid: "68142677"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Przezroczystym typ lub metoda deklaratywne jest oznaczona za pomocą <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> `.Demand` żądanie lub wywołania metody <xref:System.Security.CodeAccessPermission.Demand%2A?displayProperty=fullName> metody.
+ Typ tranparent lub metoda jest deklaratywnie oznaczona <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> `.Demand` zapotrzebowanie lub metoda wywołuje metodę <xref:System.Security.CodeAccessPermission.Demand%2A?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Opis reguły
- Przezroczysty kod zabezpieczeń nie powinien być odpowiedzialny za weryfikację zabezpieczeń operacji, a zatem nie powinien wymagać uprawnień. Przejrzysty pod względem bezpieczeństwa kod powinien używać pełnych żądań do podejmowania decyzji związanych z zabezpieczeniami, a kod krytyczny pod względem zabezpieczeń nie powinien opierać się na kodzie przezroczystym do wykonywania pełnego żądania. Zamiast tego powinien być bezpieczny krytyczny wszelki kod, który wykonuje sprawdzanie zabezpieczeń, takich jak wymogów bezpieczeństwa.
+ Przezroczysty kod zabezpieczeń nie powinien być odpowiedzialny za weryfikację zabezpieczeń operacji, a zatem nie powinien wymagać uprawnień. Przejrzysty pod względem bezpieczeństwa kod powinien używać pełnych żądań do podejmowania decyzji związanych z zabezpieczeniami, a kod krytyczny pod względem zabezpieczeń nie powinien opierać się na kodzie przezroczystym do wykonywania pełnego żądania. Każdy kod, który wykonuje kontrole zabezpieczeń, na przykład wymagania dotyczące zabezpieczeń, powinien być w zamian bezpieczny-krytyczny.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Ogólnie rzecz biorąc, aby naprawić naruszenie tej zasady, należy oznaczyć metody <xref:System.Security.SecuritySafeCriticalAttribute> atrybutu. Można również usunąć żądanie.
+ Ogólnie rzecz biorąc, aby naprawić naruszenie tej reguły, oznacz metodę atrybutem <xref:System.Security.SecuritySafeCriticalAttribute>. Możesz również usunąć żądanie.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Nie pomijaj ostrzeżeń dla tej reguły.
 
 ## <a name="example"></a>Przykład
- Reguła pliki na następujący kod, ponieważ metoda przezroczysta pod względem sprawia, że żądanie zabezpieczeń deklaratywnych.
+ Pliki reguł w następującym kodzie, ponieważ metoda przezroczysta powoduje deklaratywne zapotrzebowanie na zabezpieczenia.
 
  [!code-csharp[FxCop.Security.CA2143.TransparentMethodsShouldNotDemand#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.security.ca2143.transparentmethodsshouldnotdemand/cs/ca2143 - transparentmethodsshouldnotdemand.cs#1)]
 
 ## <a name="see-also"></a>Zobacz też
- [CA2142: Przezroczysty kod nie powinien być chroniony za pomocą żądań Linkdemand](../code-quality/ca2142-transparent-code-should-not-be-protected-with-linkdemands.md)
+ [CA2142: Kod przezroczysty nie powinien być chroniony za pomocą żądań LinkDemand](../code-quality/ca2142-transparent-code-should-not-be-protected-with-linkdemands.md)

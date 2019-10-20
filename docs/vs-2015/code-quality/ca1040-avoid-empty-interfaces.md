@@ -1,5 +1,5 @@
 ---
-title: 'CA1040: Unikaj pustych interfejsów | Dokumentacja firmy Microsoft'
+title: 'CA1040: Unikaj pustych interfejsów | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - CA1040
 ms.assetid: 120a741b-5fd1-4836-8453-7857e0cd0380
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: bc785967b4e27599b4a04aeb7740b53b5076938d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 50a36281edb144ddb949899fa24e0b5088080220
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62559752"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668310"
 ---
 # <a name="ca1040-avoid-empty-interfaces"></a>CA1040: Unikaj pustych interfejsów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,22 +29,22 @@ ms.locfileid: "62559752"
 |-|-|
 |TypeName|AvoidEmptyInterfaces|
 |CheckId|CA1040|
-|Kategoria|Microsoft.Design|
+|Kategoria|Microsoft. Design|
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Interfejs zadeklarować wszystkie elementy Członkowskie lub nie implementuje dwa lub więcej interfejsów.
+ Interfejs nie deklaruje żadnych elementów członkowskich ani nie implementuje dwóch lub więcej interfejsów.
 
 ## <a name="rule-description"></a>Opis reguły
- Interfejsy definiują elementy członkowskie, które zapewniają zachowanie lub użycie kontraktu. Funkcjonalność opisana przez interfejs może zostać przyjęta przez dowolny typ, niezależnie od tego, gdzie ten typ się pojawia w hierarchii dziedziczenia. Typ implementuje interfejs, dostarczając implementacje dla jego elementów członkowskich. Pusty interfejs nie definiuje żadnych elementów członkowskich. W związku z tym nie definiuje kontraktu, który może być implementowana.
+ Interfejsy definiują elementy członkowskie, które zapewniają zachowanie lub użycie kontraktu. Funkcjonalność opisana przez interfejs może zostać przyjęta przez dowolny typ, niezależnie od tego, gdzie ten typ się pojawia w hierarchii dziedziczenia. Typ implementuje interfejs, dostarczając implementacje dla jego elementów członkowskich. Pusty interfejs nie definiuje żadnych elementów członkowskich. W związku z tym nie definiuje kontraktu, który może być zaimplementowany.
 
- Jeśli projekt zawiera pusty powinny implementować interfejsy, które typy, prawdopodobnie używasz interfejsu jako znacznik lub do identyfikowania grupy typów. Jeśli ten identyfikator będzie występować w czasie wykonywania, prawidłowym sposobem, aby osiągnąć ten cel jest używać atrybutu niestandardowego. Użyj obecności lub braku atrybutu lub właściwości atrybutu, aby zidentyfikować typów docelowych. Jeśli identyfikator musi wystąpić w czasie kompilacji, a następnie dopuszcza się użycia pusty interfejs.
+ Jeśli projekt zawiera puste interfejsy, które powinny być zaimplementowane, prawdopodobnie używasz interfejsu jako znacznika lub sposobu identyfikacji grupy typów. Jeśli ta identyfikacja będzie miała miejsce w czasie wykonywania, prawidłowym sposobem osiągnięcia tego celu jest użycie atrybutu niestandardowego. Użyj obecności lub nieobecności atrybutu lub właściwości atrybutu, aby zidentyfikować typy docelowe. Jeśli identyfikacja musi wystąpić w czasie kompilacji, można użyć pustego interfejsu.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Usuń interfejs lub dodać członków do niego. Jeśli pusty interfejs jest używany jako etykieta zestaw typów, Zamień niestandardowy atrybut interfejsu.
+ Usuń interfejs lub Dodaj do niego członków. Jeśli pusty interfejs jest używany do etykietowania zestawu typów, Zastąp interfejs atrybutem niestandardowym.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Jest bezpieczne pominąć ostrzeżenie od tej reguły, jeśli ten interfejs jest używany do identyfikowania zestaw typów w czasie kompilacji.
+ Jeśli interfejs jest używany do identyfikowania zestawu typów w czasie kompilacji, można bezpiecznie pominąć ostrzeżenie z tej reguły.
 
 ## <a name="example"></a>Przykład
  Poniższy przykład pokazuje pusty interfejs.

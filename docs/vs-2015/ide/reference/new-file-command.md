@@ -1,5 +1,5 @@
 ---
-title: Nowy plik — polecenie | Dokumentacja firmy Microsoft
+title: Nowy plik — polecenie | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -11,66 +11,59 @@ helpviewer_keywords:
 - New File command
 ms.assetid: 767868d6-a525-425b-a43b-2198f636ab6b
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bb86a15e73ac2410ad763acd3b361e4a82bc44f1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8e0d25d585f518c854ad6176ae4ae7a5f27b22ad
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68199079"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72671964"
 ---
 # <a name="new-file-command"></a>Nowy plik — Polecenie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Tworzy nowy plik i otwiera go. Plik pojawi się w folderze różne pliki.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```  
-File.NewFile [filename] [/t:templatename] [/editor:editorname]  
-```  
-  
-## <a name="arguments"></a>Argumenty  
- `filename`  
- Opcjonalna. Nazwa pliku. Jeśli nazwa nie zostanie podany, zostanie podana nazwa domyślna. Jeśli nazwa szablonu nie ma na liście, zostanie utworzony plik tekstowy.  
-  
-## <a name="switches"></a>Przełączniki  
- t:`templatename`  
- Opcjonalna. Określa typ pliku ma zostać utworzony.  
-  
- T:`templatename` argument składni odzwierciedla informacji znajdujących się w oknie dialogowym Nowy plik. Wprowadź nazwę kategorii, a następnie znakiem ukośnika odwrotnego (`\`) i szablonu, nazwy i ująć cały ciąg w cudzysłowie.  
-  
- Na przykład, aby utworzyć nową [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] pliku źródłowego, należy wprowadzić następujące t:`templatename` argumentu.  
-  
-```  
-/t:"Visual C++\C++ File (.cpp)"  
-```  
-  
- W powyższym przykładzie, wskazuje, czy szablon pliku C++ znajduje się w kategorii Visual C++ w **nowy plik** okno dialogowe.  
-  
- / e:`editorname`  
- Opcjonalna. Nazwa edytora, w którym będzie można otworzyć pliku. Jeśli argument jest określony, ale nazwa edytora nie został podany, **Otwórz za pomocą** pojawi się okno dialogowe.  
-  
- / E:`editorname` argument składni używa nazw edytora, w jakiej występują w Otwórz za pomocą okno dialogowe, ujęta w znaki cudzysłowu.  
-  
- Na przykład, aby otworzyć plik w edytorze kodu źródłowego, należy wprowadzić następujące / e:`editorname` argumentu.  
-  
-```  
-/e:"Source Code (text) Editor"  
-```  
-  
-## <a name="example"></a>Przykład  
- W tym przykładzie tworzy nową stronę sieci Web "test1.htm" i otwiera go w edytorze kodu źródłowego.  
-  
-```  
->File.NewFile test1 /t:"General\HTML Page" /e:"Source Code (text) Editor"  
-```  
-  
-## <a name="see-also"></a>Zobacz też  
- [Visual Studio Commands](../../ide/reference/visual-studio-commands.md)   
- [Okno polecenia](../../ide/reference/command-window.md)   
- [Okno bezpośrednie](../../ide/reference/immediate-window.md)   
- [Znajdź/Command — pole](../../ide/find-command-box.md)   
- [Visual Studio — aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)
+Tworzy nowy plik i otwiera go. Plik zostanie wyświetlony w folderze różne pliki.
+
+## <a name="syntax"></a>Składnia
+
+```
+File.NewFile [filename] [/t:templatename] [/editor:editorname]
+```
+
+## <a name="arguments"></a>Argumenty
+ `filename` opcjonalny. Nazwa pliku. Jeśli nie podano nazwy, zostanie podana nazwa domyślna. Jeśli na liście nie ma nazwy szablonu, tworzony jest plik tekstowy.
+
+## <a name="switches"></a>Przełączniki
+ /t: `templatename` opcjonalne. Określa typ pliku, który ma zostać utworzony.
+
+ Składnia argumentów/t: `templatename` odzwierciedla informacje znajdujące się w oknie dialogowym Nowy plik. Wprowadź nazwę kategorii, a następnie ukośnik odwrotny (`\`) i nazwę szablonu, a następnie umieść cały ciąg w cudzysłowie.
+
+ Na przykład, aby utworzyć nowy plik źródłowy [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)], należy wprowadzić następujące elementy dla argumentu/t: `templatename`.
+
+```
+/t:"Visual C++\C++ File (.cpp)"
+```
+
+ Powyższy przykład wskazuje, że C++ szablon pliku znajduje się w kategorii wizualizacji C++ w oknie dialogowym **nowy plik** .
+
+ /e: `editorname` opcjonalny. Nazwa edytora, w którym plik zostanie otwarty. Jeśli argument jest określony, ale nie zostanie podana nazwa edytora, pojawi się okno dialogowe **Otwórz za pomocą** .
+
+ Składnia argumentów/e: `editorname` używa nazw edytorów, które są wyświetlane w oknie dialogowym Otwórz za pomocą, ujęte w cudzysłów.
+
+ Na przykład, aby otworzyć plik w edytorze kodu źródłowego, należy wprowadzić następujące polecenie dla argumentu/e: `editorname`.
+
+```
+/e:"Source Code (text) Editor"
+```
+
+## <a name="example"></a>Przykład
+ Ten przykład tworzy nową stronę sieci Web "test1. htm" i otwiera ją w edytorze kodu źródłowego.
+
+```
+>File.NewFile test1 /t:"General\HTML Page" /e:"Source Code (text) Editor"
+```
+
+## <a name="see-also"></a>Zobacz też
+ Okno poleceń [poleceń programu Visual Studio](../../ide/reference/visual-studio-commands.md) [](../../ide/reference/command-window.md) okno [bezpośrednie](../../ide/reference/immediate-window.md) [Znajdź/pole polecenia](../../ide/find-command-box.md) [Aliasy poleceń programu Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

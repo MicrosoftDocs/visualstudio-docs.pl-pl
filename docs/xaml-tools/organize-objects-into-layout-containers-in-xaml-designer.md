@@ -3,21 +3,21 @@ title: Organizowanie obiektów w kontenery układów w projektancie XAML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 29c80c38-0fa3-48d6-b3a8-3b864f482e44
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 859c568dc23222a960d89b6171b189d98954f556
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: bdda64792195ecac41affeb6ec8a7f4f383ac8a4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72451046"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668822"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Organizowanie obiektów w kontenery układów w projektancie XAML
 
 W tym artykule opisano panele i kontrolki układu dla projektant XAML.
 
-Załóżmy, że obiekty mają być wyświetlane na stronie @ no__t-0objects, takie jak obrazy, przyciski i wideo. Być może chcesz, aby były wyświetlane w wierszach i kolumnach, w jednym wierszu w pionie lub w poziomie lub w stałej pozycji.
+Załóżmy, że obiekty mają być wyświetlane na stronie &mdash;objects takich jak obrazy, przyciski i wideo. Być może chcesz, aby były wyświetlane w wierszach i kolumnach, w jednym wierszu w pionie lub w poziomie lub w stałej pozycji.
 
 Po dodaniu szansy myślisz, jak może wyglądać Strona, wybierz Panel układu. Wszystkie strony zaczynają się od siebie, ponieważ potrzebujesz czegoś, do którego chcesz dodać obiekty. Domyślnie jest to **Siatka**, ale można ją zmienić.
 
@@ -71,7 +71,7 @@ Rozmieść obiekty w taki sposób, aby stały się one lub *zadokowane*, do jedn
 
 ![Panel układu DockPanel](../designers/media/72d46b58-9a49-4dd5-8af7-6843c0440226.png)
 
-**Obejrzyj krótkie wideo:** ![Play Button @ no__t-2 [WPF-DockPanel](https://www.youtube.com/watch?v=EBH_OIM-zPo)
+**Obejrzyj krótkie wideo:** przycisk ![Play ](../designers/media/bldadminconsoleinitialconfigicon.PNG) [WPF-DockPanel](https://www.youtube.com/watch?v=EBH_OIM-zPo)
 
 ## <a name="layout-controls"></a>Kontrolki układu
 

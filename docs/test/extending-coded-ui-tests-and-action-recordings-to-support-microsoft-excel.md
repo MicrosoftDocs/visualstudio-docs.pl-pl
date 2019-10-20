@@ -2,17 +2,17 @@
 title: Poszerzenie kodowanych testów interfejsu użytkownika i nagrań akcji
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: e43706462cadce7f27efc9509ccb2c02677d43b1
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+author: jillre
+ms.openlocfilehash: 3060014002b2e34443741dc654cf29df53278fe2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870085"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664924"
 ---
 # <a name="extend-coded-ui-tests-and-action-recordings"></a>Poszerzenie kodowanych testów interfejsu użytkownika i nagrań akcji
 
@@ -24,7 +24,7 @@ Struktura testowania dla kodowanych testów interfejsu użytkownika i nagrań ak
 
 ## <a name="sample-extension-to-test-microsoft-excel"></a>Przykładowe rozszerzenie do testowania programu Microsoft Excel
 
-Ten [wpis w blogu](https://blogs.msdn.microsoft.com/gautamg/2010/01/05/3-introducing-sample-excel-extension/) zawiera link do [przykładowego rozszerzenia](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Components.PostAttachments/00/09/94/38/24/ExcelPluginSample.zip) dla struktury kodowanego testu interfejsu użytkownika. Możesz również wyświetlić całą serię [wpisów w blogu dla rozszerzalnych testów interfejsu użytkownika](https://blogs.msdn.microsoft.com/gautamg/2010/01/05/series-on-coded-ui-test-extensibility/).
+Ten [wpis w blogu](https://blogs.msdn.microsoft.com/gautamg/2010/01/05/3-introducing-sample-excel-extension/) zawiera link do [przykładowego rozszerzenia](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Components.PostAttachments/00/09/94/38/24/ExcelPluginSample.zip) dla struktury kodowanego testu interfejsu użytkownika. Możesz również wyświetlić całą [serię wpisów w blogu dla rozszerzalnych testów interfejsu użytkownika](https://blogs.msdn.microsoft.com/gautamg/2010/01/05/series-on-coded-ui-test-extensibility/).
 
 > [!NOTE]
 > Przykład jest przeznaczony do użycia z programem Microsoft Excel 2010. Może ona być niezgodna z innymi wersjami programu Excel.
@@ -37,4 +37,4 @@ Ten [wpis w blogu](https://blogs.msdn.microsoft.com/gautamg/2010/01/05/3-introdu
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>
 - [Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)
 - [Najlepsze praktyki dotyczące kodowanych testów interfejsu użytkownika](../test/best-practices-for-coded-ui-tests.md)
-- [Obsługiwane konfiguracje oraz platformy zakodowanych testów interfejsu użytkownika i nagrywania akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [Obsługiwane konfiguracje i platformy dla kodowanych testów interfejsu użytkownika i nagrań akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

@@ -1,5 +1,5 @@
 ---
-title: 'CA1300: Określ argument MessageBoxOptions | Dokumentacja firmy Microsoft'
+title: 'CA1300: Określ MessageBoxOptions | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,43 +12,43 @@ helpviewer_keywords:
 - CA1300
 ms.assetid: 9357a724-026e-4a3d-a03a-f14635064ec6
 caps.latest.revision: 21
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: a7d24298821895a8bbbe9d3743556007abe17c72
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 3e21866fce69f768d927882d3ddd47ae3e431265
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65686877"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72663608"
 ---
-# <a name="ca1300-specify-messageboxoptions"></a>CA1300: Określ argument MessageBoxOptions
+# <a name="ca1300-specify-messageboxoptions"></a>CA1300: Określ MessageBoxOptions
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|SpecifyMessageBoxOptions|
 |CheckId|CA1300|
-|Kategoria|Microsoft.Globalization|
-|Zmiana kluczowa|Bez podziału|
+|Kategoria|Microsoft. Globalizacja|
+|Zmiana kluczowa|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
- Metoda wywołuje przeciążenia <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> metodę, która nie przyjmuje <xref:System.Windows.Forms.MessageBoxOptions?displayProperty=fullName> argumentu.
+ Metoda wywołuje Przeciążenie metody <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName>, która nie przyjmuje <xref:System.Windows.Forms.MessageBoxOptions?displayProperty=fullName> argumentu.
 
 ## <a name="rule-description"></a>Opis reguły
- Aby wyświetlić okno komunikatu poprawnie dla kultur stosujących pismo kolejność czytania od prawej do lewej, <xref:System.Windows.Forms.MessageBoxOptions> i <xref:System.Windows.Forms.MessageBoxOptions> członkowie <xref:System.Windows.Forms.MessageBoxOptions> wyliczenia muszą zostać przekazane do <xref:System.Windows.Forms.MessageBox.Show%2A> metody. Sprawdź <xref:System.Windows.Forms.Control.RightToLeft%2A?displayProperty=fullName> właściwości zawierającego formantu, aby określić, czy używać kolejność czytania od prawej do lewej.
+ Aby wyświetlić okno komunikatu prawidłowo dla kultur korzystających z kolejności czytania od prawej do lewej, <xref:System.Windows.Forms.MessageBoxOptions> i <xref:System.Windows.Forms.MessageBoxOptions> elementy członkowskie wyliczenia <xref:System.Windows.Forms.MessageBoxOptions> muszą zostać przesłane do metody <xref:System.Windows.Forms.MessageBox.Show%2A>. Sprawdź Właściwość <xref:System.Windows.Forms.Control.RightToLeft%2A?displayProperty=fullName> zawierającej kontrolki, aby określić, czy ma być używana kolejność odczytywania od prawej do lewej.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, należy wywołać przeciążenie <xref:System.Windows.Forms.MessageBox.Show%2A> metody, która przyjmuje <xref:System.Windows.Forms.MessageBoxOptions> argumentu.
+ Aby naprawić naruszenie tej reguły, wywołaj Przeciążenie metody <xref:System.Windows.Forms.MessageBox.Show%2A>, która przyjmuje <xref:System.Windows.Forms.MessageBoxOptions> argument.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Jest bezpieczne pominąć ostrzeżenie od tej reguły, jeśli nie jest lokalizowany biblioteki kodu dla kultury, która używa kolejność czytania od prawej do lewej.
+ Jeśli biblioteka kodu nie zostanie zlokalizowana dla kultury korzystającej z kolejności odczytywania od prawej do lewej, można bezpiecznie pominąć ostrzeżenie z tej reguły.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład przedstawia metodę, która wyświetla okno komunikatu, który zawiera opcje, które są właściwe dla kultury kolejność odczytu. W pliku zasobów, który nie jest wyświetlany, jest wymagany do kompilowania w przykładzie. Postępuj zgodnie z uwagi na przykład, aby zbudować przykład bez pliku zasobów i do testowania funkcji od prawej do lewej.
+ Poniższy przykład przedstawia metodę, która wyświetla okno komunikatu z opcjami, które są odpowiednie dla kolejności odczytywania kultury. Plik zasobu, który nie jest wyświetlany, jest wymagany do skompilowania przykładu. Postępuj zgodnie z komentarzami w przykładzie, aby skompilować przykład bez pliku zasobów i przetestować funkcję od prawej do lewej.
 
  [!code-csharp[FxCop.Globalization.SpecifyMBOptions#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Globalization.SpecifyMBOptions/cs/FxCop.Globalization.SpecifyMBOptions.cs#1)]
  [!code-vb[FxCop.Globalization.SpecifyMBOptions#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Globalization.SpecifyMBOptions/vb/FxCop.Globalization.SpecifyMBOptions.vb#1)]
 
 ## <a name="see-also"></a>Zobacz też
- <xref:System.Resources.ResourceManager?displayProperty=fullName> [Zasoby w aplikacjach klasycznych](https://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890)
+ [zasoby <xref:System.Resources.ResourceManager?displayProperty=fullName> w aplikacjach klasycznych](https://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890)

@@ -1,246 +1,245 @@
 ---
-title: Kod źródłowy L2DBForm.XAML | Dokumentacja firmy Microsoft
+title: Kod źródłowy kod źródłowy L2DBForm. XAML | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 624e96d4-6d27-4195-8ac2-2f3835f6c57e
 caps.latest.revision: 4
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f08045a83849bdbd5bf6fb51287a66806d3bf4d6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: fc0ec53c35f87751efe78359f582e5f4297143c9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403496"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664275"
 ---
-# <a name="l2dbformxaml-source-code"></a>Kod źródłowy L2DBForm.XAML
+# <a name="l2dbformxaml-source-code"></a>Kod źródłowy L2DBForm.xaml
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Ten temat zawiera i opisuje plik źródłowy XAML [WPF danych powiązania za pomocą LINQ to XML — przykład](../designers/wpf-data-binding-using-linq-to-xml-example.md), L2DBForm.xaml.  
-  
-## <a name="overall-ui-structure"></a>Ogólna struktura interfejsu użytkownika  
- Podobnie jak w typowej dla projektu WPF, ten plik zawiera jeden element nadrzędny <xref:System.Windows.Window> — element XML skojarzony z klasą pochodną `L2XDBFrom` w `LinqToXmlDataBinding` przestrzeni nazw.  
-  
- Obszar klienta znajduje się w obrębie <xref:System.Windows.Controls.StackPanel> , otrzymuje światła niebieskim tłem. Ten panel zawiera cztery <xref:System.Windows.Controls.DockPanel> oddzielone sekcje interfejsu użytkownika <xref:System.Windows.Controls.Separator> pasków. Celem tych sekcjach opisano w **uwagi** w [poprzednim temacie](../designers/walkthrough-linqtoxmldatabinding-example.md).  
-  
- Każda sekcja zawiera etykietę, która identyfikuje go. W pierwszych dwóch sekcjach, ta etykieta jest obrócony o 90 stopni za pośrednictwem <xref:System.Windows.FrameworkElement.LayoutTransform%2A>. Pozostała część zawiera elementy interfejsu użytkownika, właściwe jest celem tej sekcji: bloki tekstu, pola tekstowe, przyciski i tak dalej. Czasami element podrzędny <xref:System.Windows.Controls.StackPanel> jest używane do dostosowywania tych formantów podrzędnych.  
-  
-## <a name="window-resource-section"></a>Okno sekcji zasobów  
- Otwieranie `<Window.Resources>` tagów w wierszu 9 wskazuje początek okna sekcji zasobów. Kończy się ona tagu zamykającego w wierszu 35.  
-  
- `<ObjectDataProvider>` Znacznik, który obejmuje wiersze 11 do 25, deklaruje <xref:System.Windows.Data.ObjectDataProvider>o nazwie `LoadedBooks`, który używa <xref:System.Xml.Linq.XElement> jako źródło. To <xref:System.Xml.Linq.XElement> jest inicjowany przez analizowanie osadzonego dokumentu XML ( `CDATA` elementu). Zwróć uwagę, że ten biały znak są zachowywane podczas deklarowania osadzonego dokumentu XML, a także kiedy jest analizowany. Zostało to zrobione, ponieważ <xref:System.Windows.Controls.TextBlock> formant, który służy do wyświetlania nieprzetworzonym kodzie XML, nie ma żadnych specjalnych XML funkcji formatowania.  
-  
- Na koniec <xref:System.Windows.DataTemplate> o nazwie `BookTemplate` jest zdefiniowany w wierszach 28 za pośrednictwem 34. Ten szablon będzie używany do wyświetlania wpisy w **listy książek** sekcji interfejsu użytkownika. Korzysta powiązanie danych oraz LINQ do XML właściwości dynamicznych do pobrania książki identyfikator i Nazwa książki za pośrednictwem następujących przypisań:  
-  
-```  
-Text="{Binding Path=Attribute[id].Value}"Text="{Binding Path=Value}"  
-```  
-  
-## <a name="data-binding-code"></a>Kod powiązania danych  
- Oprócz <xref:System.Windows.DataTemplate> element, wiązanie danych jest używany w wielu innych miejscach, w tym pliku.  
-  
- W otwarcia `<StackPanel>` tagów w wierszu 38 <xref:System.Windows.FrameworkElement.DataContext%2A> tego panelu zostaje ustalona `LoadedBooks` dostawcy danych.  
-  
-```  
-DataContext="{Binding Source={StaticResource LoadedBooks}}  
-```  
-  
- Dzięki temu (w wierszu 46) dla <xref:System.Windows.Controls.TextBlock> o nazwie `tbRawXml` do wyświetlenia nieprzetworzonym kodzie XML przez powiązanie tego dostawcy danych `Xml` właściwości:  
-  
-```  
-Text="{Binding Path=Xml}"   
-```  
-  
- <xref:System.Windows.Controls.ListBox> w **listy książek** sekcji interfejsu użytkownika w wierszach 58 za pośrednictwem 62, ustawia szablon dla jego elementów wyświetlana `BookTemplate` zdefiniowane w sekcji zasobów okna:  
-  
-```  
-ItemTemplate ="{StaticResource BookTemplate}"   
-```  
-  
- Następnie w wierszach 59 za pośrednictwem 62 rzeczywiste wartości książek, które są powiązane z tego pola listy:  
-  
-```  
-<ListBox.ItemsSource>  
-    <Binding Path="Elements[{http://www.mybooks.com}book]"/>  
-</ListBox.ItemsSource>  
-```  
-  
- Trzecia sekcja interfejsu użytkownika **Edytuj wybrane książki**, najpierw wiąże <xref:System.Windows.FrameworkElement.DataContext%2A> nadrzędnej <xref:System.Windows.Controls.StackPanel> do aktualnie wybranego elementu z **listy książek** sekcji interfejsu użytkownika (wiersza 82):  
-  
-```  
-DataContext="{Binding ElementName=lbBooks, Path=SelectedItem}"  
-```  
-  
- Następnie używa powiązanie dwukierunkowe danych, tak aby bieżące wartości książki elementy są wyświetlane i aktualizowane na podstawie dwóch pól tekstowych w tym panelu. Powiązania danych właściwości dynamicznych jest podobny do używanych w `BookTemplate` szablon danych:  
-  
-```  
-Text="{Binding Path=Attribute[id].Value}"...Text="{Binding Path=Value}"  
-```  
-  
- Ostatnia sekcja interfejsu użytkownika **Dodawanie nowej książki**, nie używa danych powiązanie w jego kod XAML; zamiast tego takiego kodu można znaleźć w jego obsługa kodu w pliku L2DBForm.xaml.cs zdarzeń.  
-  
-## <a name="example"></a>Przykład  
-  
-### <a name="description"></a>Opis  
-  
+Ten temat zawiera i opisuje plik źródłowy XAML dla [powiązania danych WPF przy użyciu LINQ to XML przykład](../designers/wpf-data-binding-using-linq-to-xml-example.md)kod źródłowy L2DBForm. XAML.
+
+## <a name="overall-ui-structure"></a>Ogólna struktura interfejsu użytkownika
+ Podobnie jak w przypadku projektu WPF, ten plik zawiera jeden element nadrzędny, <xref:System.Windows.Window> elementu XML skojarzonego z klasą pochodną `L2XDBFrom` w przestrzeni nazw `LinqToXmlDataBinding`.
+
+ Obszar klienta jest zawarty w <xref:System.Windows.Controls.StackPanel>, w którym znajduje się jasne niebieskie tło. Ten panel zawiera cztery <xref:System.Windows.Controls.DockPanel> sekcje interfejsu użytkownika oddzielone <xref:System.Windows.Controls.Separator> słupków. Przeznaczenie tych sekcji zostało opisane w **uwagach** w [poprzednim temacie](../designers/walkthrough-linqtoxmldatabinding-example.md).
+
+ Każda sekcja zawiera etykietę identyfikującą ją. W pierwszych dwóch sekcjach Ta etykieta jest obracana o 90 stopni przy użyciu <xref:System.Windows.FrameworkElement.LayoutTransform%2A>. Pozostała część sekcji zawiera elementy interfejsu użytkownika odpowiednie do przeznaczenia tej sekcji: bloki tekstu, pola tekstowe, przyciski i tak dalej. Czasami podrzędny <xref:System.Windows.Controls.StackPanel> jest używany do wyrównywania tych formantów podrzędnych.
+
+## <a name="window-resource-section"></a>Sekcja zasobów okna
+ Otwierając tag `<Window.Resources>` w wierszu 9 wskazuje początek sekcji zasobów okna. Jest ona kończąca się tagiem zamykającym w wierszu 35.
+
+ Znacznik `<ObjectDataProvider>`, który obejmuje wiersze od 11 do 25, deklaruje <xref:System.Windows.Data.ObjectDataProvider> o nazwie `LoadedBooks`, który używa <xref:System.Xml.Linq.XElement> jako źródła. Ten <xref:System.Xml.Linq.XElement> jest inicjowany przez analizowanie osadzonego dokumentu XML (`CDATA` elementu). Zauważ, że biały znak jest zachowywany podczas deklarowania osadzonego dokumentu XML, a także podczas analizy. Zostało to zrobione, ponieważ formant <xref:System.Windows.Controls.TextBlock>, który jest używany do wyświetlania nieprzetworzonego kodu XML, nie ma specjalnych możliwości formatowania XML.
+
+ Na koniec <xref:System.Windows.DataTemplate> o nazwie `BookTemplate` jest zdefiniowany w wierszach od 28 do 34. Ten szablon zostanie użyty do wyświetlenia wpisów w sekcji interfejsu użytkownika **listy książek** . Używa on powiązań danych i LINQ to XML właściwości dynamiczne, aby pobrać identyfikator i nazwę książki przy użyciu następujących przypisań:
+
+```
+Text="{Binding Path=Attribute[id].Value}"Text="{Binding Path=Value}"
+```
+
+## <a name="data-binding-code"></a>Kod powiązania danych
+ Oprócz elementu <xref:System.Windows.DataTemplate>, powiązanie danych jest używane w wielu innych miejscach w tym pliku.
+
+ W tagu `<StackPanel>` otwierającym w wierszu 38 Właściwość <xref:System.Windows.FrameworkElement.DataContext%2A> tego panelu jest ustawiona na dostawcę danych `LoadedBooks`.
+
+```
+DataContext="{Binding Source={StaticResource LoadedBooks}}
+```
+
+ Jest to możliwe (w wierszu 46) dla <xref:System.Windows.Controls.TextBlock> o nazwie `tbRawXml` do wyświetlania nieprzetworzonego kodu XML przez powiązanie z właściwością `Xml` tego dostawcy danych:
+
+```
+Text="{Binding Path=Xml}"
+```
+
+ @No__t_0 w sekcji interfejsu użytkownika **listy książek** , w wierszach od 58 do 62, ustawia szablon dla elementów wyświetlanych na `BookTemplate` zdefiniowany w sekcji zasobów okna:
+
+```
+ItemTemplate ="{StaticResource BookTemplate}"
+```
+
+ Następnie w wierszach od 59 do 62 rzeczywiste wartości ksiąg są powiązane z tym polem listy:
+
+```
+<ListBox.ItemsSource>
+    <Binding Path="Elements[{http://www.mybooks.com}book]"/>
+</ListBox.ItemsSource>
+```
+
+ Trzecia sekcja interfejsu użytkownika, **Edytuj wybraną książkę**, najpierw wiąże <xref:System.Windows.FrameworkElement.DataContext%2A> nadrzędnej <xref:System.Windows.Controls.StackPanel> z aktualnie wybranym elementem w sekcji z poziomu interfejsu użytkownika **listy książek** (wiersz 82):
+
+```
+DataContext="{Binding ElementName=lbBooks, Path=SelectedItem}"
+```
+
+ Następnie używa dwukierunkowego powiązania danych, dzięki czemu bieżące wartości elementów książki są wyświetlane i aktualizowane z dwóch pól tekstowych w tym panelu. Powiązanie danych z właściwościami dynamicznymi jest podobne do tego, jak używane w szablonie danych `BookTemplate`:
+
+```
+Text="{Binding Path=Attribute[id].Value}"...Text="{Binding Path=Value}"
+```
+
+ Ostatnia sekcja interfejsu użytkownika, **Dodaj nową książkę**, nie używa powiązania danych w kodzie XAML; Zamiast tego kod ten można znaleźć w jego kodzie obsługi zdarzeń w pliku L2DBForm.xaml.cs.
+
+## <a name="example"></a>Przykład
+
+### <a name="description"></a>Opis
+
 > [!NOTE]
-> Firma Microsoft zaleca, skopiuj poniższy kod poniżej do edytora kodu, takich jak C# Edytor kodu źródłowego w programie Visual Studio, aby numery wierszy będzie można łatwiej śledzić.  
-  
-### <a name="code"></a>Kod  
-  
-```xml  
-<Window x:Class="LinqToXmlDataBinding.L2XDBForm"  
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
-    xmlns:system="clr-namespace:System;assembly=mscorlib"  
-    xmlns:xlinq="clr-namespace:System.Xml.Linq;assembly=System.Xml.Linq"  
-    xmlns:local="clr-namespace:LinqToXmlDataBinding"  
-    Title="WPF Data Binding using LINQ-to-XML" Height="665" Width="500" ResizeMode="NoResize">  
-  
-    <Window.Resources>  
-        <!-- Books provider and inline data -->  
-        <ObjectDataProvider x:Key="LoadedBooks" ObjectType="{x:Type xlinq:XElement}" MethodName="Parse">  
-            <ObjectDataProvider.MethodParameters>  
-                <system:String xml:space="preserve">  
-<![CDATA[  
-<books xmlns="http://www.mybooks.com">  
-  <book id="0">book zero</book>  
-  <book id="1">book one</book>  
-  <book id="2">book two</book>  
-  <book id="3">book three</book>  
-</books>  
-]]>                  
-                </system:String>  
-                <xlinq:LoadOptions>PreserveWhitespace</xlinq:LoadOptions>  
-            </ObjectDataProvider.MethodParameters>  
-        </ObjectDataProvider>  
-  
-        <!-- Template for use in Books List listbox. -->  
-        <DataTemplate x:Key="BookTemplate">  
-            <StackPanel Orientation="Horizontal">  
-                <TextBlock Margin="3" Text="{Binding Path=Attribute[id].Value}"/>  
-                <TextBlock Margin="3" Text="-"/>  
-                <TextBlock Margin="3" Text="{Binding Path=Value}"/>  
-            </StackPanel>  
-        </DataTemplate>  
-    </Window.Resources>  
-  
-    <!-- Main visual content container -->  
-    <StackPanel Background="lightblue" DataContext="{Binding Source={StaticResource LoadedBooks}}">  
-        <!-- Raw XML display section -->  
-        <DockPanel Margin="5">  
-            <Label  Background="Gray" FontSize="12" BorderBrush="Black" BorderThickness="1" FontWeight="Bold">XML  
-            <Label.LayoutTransform>  
-                <RotateTransform Angle="90"/>  
-            </Label.LayoutTransform>  
-            </Label>  
-            <TextBlock Name="tbRawXml" Height="200" Background="LightGray" Text="{Binding Path=Xml}" TextTrimming="CharacterEllipsis" />  
-        </DockPanel>  
-  
-        <Separator Height="4" Margin="5" />  
-  
-        <!-- List box to display all books section -->  
-        <DockPanel Margin="5">  
-            <Label  Background="Gray" FontSize="12" BorderBrush="Black" BorderThickness="1" FontWeight="Bold">Book List  
-                <Label.LayoutTransform>  
-                    <RotateTransform Angle="90"/>  
-                </Label.LayoutTransform>  
-            </Label>  
-            <ListBox Name="lbBooks" Height="200" Width="415" ItemTemplate ="{StaticResource BookTemplate}">  
-                <ListBox.ItemsSource>  
-                    <Binding Path="Elements[{http://www.mybooks.com}book]"/>  
-                </ListBox.ItemsSource>  
-            </ListBox>  
-            <Button Margin="5" DockPanel.Dock="Right" Height="30" Width ="130" Content="Remove Selected Book" Click="OnRemoveBook">      
-            <Button.LayoutTransform>  
-                <RotateTransform Angle="90"/>  
-            </Button.LayoutTransform>  
-            </Button>  
-        </DockPanel>  
-  
-        <Separator Height="4" Margin="5" />  
-  
-        <!-- Edit current selection section -->  
-        <DockPanel Margin="5">  
-            <TextBlock Margin="5" Height="30" Width="65" DockPanel.Dock="Right" Background="LightGray" TextWrapping="Wrap" TextAlignment="Center">  
-                    Changes are live!  
-                <TextBlock.LayoutTransform>  
-                    <RotateTransform Angle="90"/>  
-                </TextBlock.LayoutTransform>  
-            </TextBlock>  
-            <StackPanel>  
-                <Label Width="450" Background="Gray" FontSize="12" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" FontWeight="Bold">Edit Selected Book</Label>      
-                <StackPanel Margin="1" DataContext="{Binding ElementName=lbBooks, Path=SelectedItem}">  
-                    <StackPanel Orientation="Horizontal">  
-                        <Label Width="40">ID:</Label>  
-                        <TextBox Name="editAttributeTextBox" Width="410" Text="{Binding Path=Attribute[id].Value}">  
-                            <TextBox.ToolTip>  
-                                <TextBlock FontWeight="Bold" TextAlignment="Center">  
-                                    <Label>Edit the selected book ID and see it changed.</Label>  
-                                </TextBlock>  
-                            </TextBox.ToolTip>  
-                        </TextBox>  
-                    </StackPanel>  
-                    <StackPanel Orientation="Horizontal">  
-                        <Label Width="40">Value:</Label>  
-                        <TextBox Name="editValueTextBox" Width="410" Text="{Binding Path=Value}" Height="25">  
-                            <TextBox.ToolTip>  
-                                <TextBlock FontWeight="Bold" TextAlignment="Center">  
-                                    <Label>Edit the selected book Value and see it changed.</Label>  
-                                </TextBlock>  
-                            </TextBox.ToolTip>  
-                        </TextBox>  
-                    </StackPanel>  
-                </StackPanel>  
-            </StackPanel>  
-        </DockPanel>  
-  
-        <Separator Height="4" Margin="5" />  
-  
-        <!-- Add new book section -->  
-        <DockPanel Margin="5">  
-            <Button Margin="5" Height="30" DockPanel.Dock="Right" Click ="OnAddBook">Add Book  
-                <Button.LayoutTransform>  
-                    <RotateTransform Angle="90"/>  
-                </Button.LayoutTransform>  
-            </Button>  
-            <StackPanel>  
-                <Label Width="450" Background="Gray" FontSize="12" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" FontWeight="Bold">Add New Book</Label>  
-                <StackPanel Margin="1">  
-                    <StackPanel Orientation="Horizontal">  
-                        <Label Width="40">ID:</Label>  
-                        <TextBox Name="tbAddID" Width="410">  
-                            <TextBox.ToolTip>  
-                                <TextBlock FontWeight="Bold" TextAlignment="Center">  
-                                    <Label>Enter a book ID and Value pair, then click Add Book.</Label>  
-                                </TextBlock>  
-                            </TextBox.ToolTip>  
-                        </TextBox>  
-                    </StackPanel>  
-                    <StackPanel Orientation="Horizontal">  
-                        <Label Width="40">Value:</Label>  
-                        <TextBox Name="tbAddValue" Width="410" Height="25">  
-                            <TextBox.ToolTip>  
-                                <TextBlock FontWeight="UltraBold" TextAlignment="Center">  
-                                    <Label>Enter a book ID and Value pair, then click Add Book.</Label>  
-                                </TextBlock>  
-                            </TextBox.ToolTip>  
-                        </TextBox>  
-                    </StackPanel>  
-                </StackPanel>  
-            </StackPanel>  
-        </DockPanel>  
-    </StackPanel>  
-</Window>  
-  
-```  
-  
-### <a name="comments"></a>Komentarze  
- Dla języka C# kodu źródłowego dla obsługi zdarzeń skojarzonych elementów interfejsu użytkownika WPF, zobacz [kod źródłowy L2DBForm.xaml.cs](../designers/l2dbform-xaml-cs-source-code.md).  
-  
-## <a name="see-also"></a>Zobacz też  
- [Przewodnik: LinqToXmlDataBinding Example](../designers/walkthrough-linqtoxmldatabinding-example.md)   
- [Kod źródłowy L2DBForm.xaml.cs](../designers/l2dbform-xaml-cs-source-code.md)
+> Zalecamy skopiowanie poniższego kodu do edytora kodu, takiego jak edytor kodu C# źródłowego w programie Visual Studio, dzięki czemu numery wierszy będą łatwiejsze do śledzenia.
+
+### <a name="code"></a>Kod
+
+```xml
+<Window x:Class="LinqToXmlDataBinding.L2XDBForm"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:system="clr-namespace:System;assembly=mscorlib"
+    xmlns:xlinq="clr-namespace:System.Xml.Linq;assembly=System.Xml.Linq"
+    xmlns:local="clr-namespace:LinqToXmlDataBinding"
+    Title="WPF Data Binding using LINQ-to-XML" Height="665" Width="500" ResizeMode="NoResize">
+
+    <Window.Resources>
+        <!-- Books provider and inline data -->
+        <ObjectDataProvider x:Key="LoadedBooks" ObjectType="{x:Type xlinq:XElement}" MethodName="Parse">
+            <ObjectDataProvider.MethodParameters>
+                <system:String xml:space="preserve">
+<![CDATA[
+<books xmlns="http://www.mybooks.com">
+  <book id="0">book zero</book>
+  <book id="1">book one</book>
+  <book id="2">book two</book>
+  <book id="3">book three</book>
+</books>
+]]>
+                </system:String>
+                <xlinq:LoadOptions>PreserveWhitespace</xlinq:LoadOptions>
+            </ObjectDataProvider.MethodParameters>
+        </ObjectDataProvider>
+
+        <!-- Template for use in Books List listbox. -->
+        <DataTemplate x:Key="BookTemplate">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin="3" Text="{Binding Path=Attribute[id].Value}"/>
+                <TextBlock Margin="3" Text="-"/>
+                <TextBlock Margin="3" Text="{Binding Path=Value}"/>
+            </StackPanel>
+        </DataTemplate>
+    </Window.Resources>
+
+    <!-- Main visual content container -->
+    <StackPanel Background="lightblue" DataContext="{Binding Source={StaticResource LoadedBooks}}">
+        <!-- Raw XML display section -->
+        <DockPanel Margin="5">
+            <Label  Background="Gray" FontSize="12" BorderBrush="Black" BorderThickness="1" FontWeight="Bold">XML
+            <Label.LayoutTransform>
+                <RotateTransform Angle="90"/>
+            </Label.LayoutTransform>
+            </Label>
+            <TextBlock Name="tbRawXml" Height="200" Background="LightGray" Text="{Binding Path=Xml}" TextTrimming="CharacterEllipsis" />
+        </DockPanel>
+
+        <Separator Height="4" Margin="5" />
+
+        <!-- List box to display all books section -->
+        <DockPanel Margin="5">
+            <Label  Background="Gray" FontSize="12" BorderBrush="Black" BorderThickness="1" FontWeight="Bold">Book List
+                <Label.LayoutTransform>
+                    <RotateTransform Angle="90"/>
+                </Label.LayoutTransform>
+            </Label>
+            <ListBox Name="lbBooks" Height="200" Width="415" ItemTemplate ="{StaticResource BookTemplate}">
+                <ListBox.ItemsSource>
+                    <Binding Path="Elements[{http://www.mybooks.com}book]"/>
+                </ListBox.ItemsSource>
+            </ListBox>
+            <Button Margin="5" DockPanel.Dock="Right" Height="30" Width ="130" Content="Remove Selected Book" Click="OnRemoveBook">
+            <Button.LayoutTransform>
+                <RotateTransform Angle="90"/>
+            </Button.LayoutTransform>
+            </Button>
+        </DockPanel>
+
+        <Separator Height="4" Margin="5" />
+
+        <!-- Edit current selection section -->
+        <DockPanel Margin="5">
+            <TextBlock Margin="5" Height="30" Width="65" DockPanel.Dock="Right" Background="LightGray" TextWrapping="Wrap" TextAlignment="Center">
+                    Changes are live!
+                <TextBlock.LayoutTransform>
+                    <RotateTransform Angle="90"/>
+                </TextBlock.LayoutTransform>
+            </TextBlock>
+            <StackPanel>
+                <Label Width="450" Background="Gray" FontSize="12" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" FontWeight="Bold">Edit Selected Book</Label>
+                <StackPanel Margin="1" DataContext="{Binding ElementName=lbBooks, Path=SelectedItem}">
+                    <StackPanel Orientation="Horizontal">
+                        <Label Width="40">ID:</Label>
+                        <TextBox Name="editAttributeTextBox" Width="410" Text="{Binding Path=Attribute[id].Value}">
+                            <TextBox.ToolTip>
+                                <TextBlock FontWeight="Bold" TextAlignment="Center">
+                                    <Label>Edit the selected book ID and see it changed.</Label>
+                                </TextBlock>
+                            </TextBox.ToolTip>
+                        </TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Width="40">Value:</Label>
+                        <TextBox Name="editValueTextBox" Width="410" Text="{Binding Path=Value}" Height="25">
+                            <TextBox.ToolTip>
+                                <TextBlock FontWeight="Bold" TextAlignment="Center">
+                                    <Label>Edit the selected book Value and see it changed.</Label>
+                                </TextBlock>
+                            </TextBox.ToolTip>
+                        </TextBox>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+        </DockPanel>
+
+        <Separator Height="4" Margin="5" />
+
+        <!-- Add new book section -->
+        <DockPanel Margin="5">
+            <Button Margin="5" Height="30" DockPanel.Dock="Right" Click ="OnAddBook">Add Book
+                <Button.LayoutTransform>
+                    <RotateTransform Angle="90"/>
+                </Button.LayoutTransform>
+            </Button>
+            <StackPanel>
+                <Label Width="450" Background="Gray" FontSize="12" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" FontWeight="Bold">Add New Book</Label>
+                <StackPanel Margin="1">
+                    <StackPanel Orientation="Horizontal">
+                        <Label Width="40">ID:</Label>
+                        <TextBox Name="tbAddID" Width="410">
+                            <TextBox.ToolTip>
+                                <TextBlock FontWeight="Bold" TextAlignment="Center">
+                                    <Label>Enter a book ID and Value pair, then click Add Book.</Label>
+                                </TextBlock>
+                            </TextBox.ToolTip>
+                        </TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Width="40">Value:</Label>
+                        <TextBox Name="tbAddValue" Width="410" Height="25">
+                            <TextBox.ToolTip>
+                                <TextBlock FontWeight="UltraBold" TextAlignment="Center">
+                                    <Label>Enter a book ID and Value pair, then click Add Book.</Label>
+                                </TextBlock>
+                            </TextBox.ToolTip>
+                        </TextBox>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+        </DockPanel>
+    </StackPanel>
+</Window>
+
+```
+
+### <a name="comments"></a>Komentarze
+ W przypadku C# kodu źródłowego dla programów obsługi zdarzeń skojarzonych z elementami interfejsu użytkownika WPF zobacz [kod źródłowy L2DBForm.XAML.cs](../designers/l2dbform-xaml-cs-source-code.md).
+
+## <a name="see-also"></a>Zobacz też
+ [Przewodnik: przykład elementu linqtoxmldatabinding —](../designers/walkthrough-linqtoxmldatabinding-example.md) [L2DBForm.XAML.cs kod źródłowy](../designers/l2dbform-xaml-cs-source-code.md)

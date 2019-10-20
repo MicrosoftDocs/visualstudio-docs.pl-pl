@@ -11,21 +11,21 @@ helpviewer_keywords:
 - Devenv, /Project switch
 - projects [Visual Studio], cleaning
 ms.assetid: 8b07859c-3439-436d-9b9a-a8ee744eee30
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fe7ec9fe8734d17868bee6a108d447729e4167f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0d9be8cd5107b109e084fcd75bc30ae0f32ab43a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969101"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655741"
 ---
 # <a name="project-devenvexe"></a>/Project (devenv.exe)
 
-Umożliwia określenie jednego projektu w ramach konfiguracji określonego rozwiązania do kompilacji, czyszczenia, odbudować lub wdrożenia.
+Identyfikuje pojedynczy projekt w ramach określonej konfiguracji rozwiązania do kompilowania, czyszczenia, odbudowy lub wdrożenia.
 
 ## <a name="syntax"></a>Składnia
 
@@ -37,39 +37,39 @@ devenv SolutionName {/Build|/Clean|/Deploy|/Rebuild} [SolnConfigName [/Project P
 
 - *SolutionName*
 
-  Wymagana. Pełna ścieżka i nazwa pliku rozwiązania.
+  Wymagany. Pełna ścieżka i nazwa pliku rozwiązania.
 
-- {`/Build`|`/Clean`|`/Deploy`|`/Rebuild`}
+- {`/Build` | `/Clean` | `/Deploy` | `/Rebuild`}
 
-  Wymagana. [Kompilacje](build-devenv-exe.md), [czyści](clean-devenv-exe.md), [wdraża](deploy-devenv-exe.md), lub [odbudowuje](rebuild-devenv-exe.md) projektu.
+  Wymagany. [Kompiluje](build-devenv-exe.md), [czyści](clean-devenv-exe.md), [wdraża](deploy-devenv-exe.md)lub ponownie [kompiluje](rebuild-devenv-exe.md) projekt.
 
 - *SolnConfigName*
 
-  Opcjonalna. Nazwa konfiguracji rozwiązania (takie jak `Debug` lub `Release`) stosowane do rozwiązania o nazwie w *SolutionName*. Jeśli więcej niż jedną platformę rozwiązanie jest dostępne, należy także określić platformy (na przykład `Debug|Win32`). Jeśli ten argument jest nieokreślona lub pusty ciąg (`""`), narzędzie użyje aktywnej konfiguracji rozwiązania.
+  Opcjonalny. Nazwa konfiguracji rozwiązania (taka jak `Debug` lub `Release`) zastosowana do rozwiązania o nazwie w *SolutionName*. Jeśli jest dostępna więcej niż jedna platforma rozwiązania, należy również określić platformę (na przykład `Debug|Win32`). Jeśli ten argument jest nieokreślony lub pusty ciąg (`""`), narzędzie używa aktywnej konfiguracji rozwiązania.
 
-- `/Project` *ProjName*
+- `/Project` *Projname*
 
-  Opcjonalna. Ścieżka i nazwa pliku projektu w rozwiązaniu. Można wprowadzić nazwę wyświetlaną projektu lub ścieżką względną z *SolutionName* folderu do pliku projektu. Można również wprowadzić pełną ścieżkę i nazwę pliku projektu.
+  Opcjonalny. Ścieżka i nazwa pliku projektu w ramach rozwiązania. Możesz wprowadzić nazwę wyświetlaną projektu lub ścieżkę względną z folderu *SolutionName* do pliku projektu. Możesz również wprowadzić pełną ścieżkę i nazwę pliku projektu.
 
 - `/ProjectConfig` *ProjConfigName*
 
-  Opcjonalna. Nazwa konfiguracji kompilacji projektu (takie jak `Debug` lub `Release`) mają być stosowane do `/Project` o nazwie. Jeśli więcej niż jedną platformę rozwiązanie jest dostępne, należy także określić platformy (na przykład `Debug|Win32`).
+  Opcjonalny. Nazwa konfiguracji kompilacji projektu (na przykład `Debug` lub `Release`), która ma zostać zastosowana do `/Project` o nazwie. Jeśli jest dostępna więcej niż jedna platforma rozwiązania, należy również określić platformę (na przykład `Debug|Win32`).
 
 - `/Out` *OutputFilename*
 
-  Opcjonalna. Nazwa pliku, który chcesz wysłać narzędzia danych wyjściowych do. Jeśli plik już istnieje, narzędzie dołączyło dane wyjściowe na końcu pliku.
+  Opcjonalny. Nazwa pliku, do którego chcesz wysłać dane wyjściowe narzędzia. Jeśli plik już istnieje, narzędzie dołącza dane wyjściowe do końca pliku.
 
 ## <a name="remarks"></a>Uwagi
 
-- Należy użyć wchodzi w skład `devenv` `/Build`, `/Clean`, `/Rebuild`, lub `/Deploy` polecenia.
+- Musi być użyta część `/Build` `devenv`, `/Clean`, `/Rebuild` lub `/Deploy`.
 
-- Należy ująć ciągi zawierające spacje w podwójny cudzysłów.
+- Ujmij ciągi, które zawierają spacje w podwójnym cudzysłowie.
 
-- Podsumowanie informacji na temat kompilacji, w tym błędy, mogą być wyświetlane w **polecenia** okno lub pliku dziennika określony za pomocą `/Out` przełącznika.
+- Informacje podsumowujące dla kompilacji, w tym błędy, mogą być wyświetlane w oknie **wiersza polecenia** lub w dowolnym pliku dziennika określonym za pomocą przełącznika `/Out`.
 
 ## <a name="example"></a>Przykład
 
-W tym przykładzie tworzy projekt `CSharpWinApp`przy użyciu `Debug` konfigurację kompilacji projektu w ramach `MySolution`.
+Ten przykład kompiluje `CSharpWinApp` projektu przy użyciu konfiguracji kompilacji projektu `Debug` w `MySolution`.
 
 ```shell
 devenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
@@ -77,10 +77,10 @@ devenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /build Debug /proj
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Przełączniki wiersza polecenia Devenv](../../ide/reference/devenv-command-line-switches.md)
-- [/ ProjectConfig (devenv.exe)](../../ide/reference/projectconfig-devenv-exe.md)
-- [/ Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)
-- [/ Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md)
-- [/ Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)
-- [/ Wdrażanie (devenv.exe)](../../ide/reference/deploy-devenv-exe.md)
-- [/ Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)
+- [Przełączniki wiersza polecenia devenv](../../ide/reference/devenv-command-line-switches.md)
+- [/ProjectConfig (devenv. exe)](../../ide/reference/projectconfig-devenv-exe.md)
+- [/Build (devenv. exe)](../../ide/reference/build-devenv-exe.md)
+- [/Clean (devenv. exe)](../../ide/reference/clean-devenv-exe.md)
+- [/Rebuild (devenv. exe)](../../ide/reference/rebuild-devenv-exe.md)
+- [/Deploy (devenv. exe)](../../ide/reference/deploy-devenv-exe.md)
+- [/Out (devenv. exe)](../../ide/reference/out-devenv-exe.md)

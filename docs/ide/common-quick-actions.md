@@ -3,20 +3,20 @@ title: Typowe szybkie akcje
 description: Najpopularniejsze szybkie akcje dla C# i Visual Basic, w tym naprawianie błędnie napisanych słów kluczowych lub symboli, rozwiązywanie konfliktów scalania, usuwanie niezbędnych operacji importowania, generowanie typów, wprowadzenie zmiennych lokalnych itd.
 ms.date: 03/28/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 600fb1b4abea2103c28e3a5067d640228d68b755
-ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
+ms.openlocfilehash: bad97ac5574afd65103263b2ce51a4dfba02741c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72000145"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652249"
 ---
 # <a name="common-quick-actions"></a>Typowe szybkie akcje
 
@@ -30,7 +30,7 @@ Szybkie akcje w tej sekcji rozwiązują błędy w kodzie, które mogłyby spowod
 
 ### <a name="correct-misspelled-symbol-or-keyword"></a>Popraw błędny symbol lub słowo kluczowe
 
-Jeśli przypadkowo omyłkowo popełniasz typ lub słowo kluczowe w programie Visual Studio, Ta szybka akcja automatycznie poprawi ją. Te elementy będą widoczne w menu żarówki jako **"Change" \<misspelled word > "do" \<correct word > ""** . Na przykład:
+Jeśli przypadkowo omyłkowo popełniasz typ lub słowo kluczowe w programie Visual Studio, Ta szybka akcja automatycznie poprawi ją. Te elementy będą widoczne w menu żarówki jako **"Zmień" \<misspelled word > "na" \<correct word > ""** . Na przykład:
 
 ```csharp
 // Before
@@ -96,7 +96,7 @@ private void MyMethod()
 
 ### <a name="remove-unnecessary-usingsimports"></a>Usuń niepotrzebne użycie/Importy
 
-Szybka akcja **Usuń niepotrzebne użycie/Importy** usuwa wszystkie nieużywane instrukcje `using` i `Import` dla bieżącego pliku. Po wybraniu tego elementu nieużywane Importy przestrzeni nazw zostaną usunięte.
+Szybka akcja **Usuń niepotrzebne użycie/Importy** usuwa wszystkie nieużywane `using` i `Import` dyrektyw dla bieżącego pliku. Po wybraniu tego elementu nieużywane Importy przestrzeni nazw zostaną usunięte.
 
 | Odpowiednie języki | Obsługiwana wersja |
 | - | - |
@@ -173,7 +173,7 @@ void DoWork(CancellationToken cancellationToken = default) { ... }
 
 | Identyfikator diagnostyki | Odpowiednie języki | Obsługiwana wersja |
 | ------- | -------------------- | ---------------- |
-| IDE0034 | C# 7.1+ | Visual Studio 2017 w wersji 15,3 lub nowszej |
+| IDE0034 | C#7.1 + | Visual Studio 2017 w wersji 15,3 lub nowszej |
 
 ## <a name="actions-that-add-missing-code"></a>Akcje, które dodają brakujący kod
 
@@ -184,7 +184,7 @@ Użycie typów znajdujących się w innych projektach w rozwiązaniu spowoduje a
 - Sugeruj użycie/Importy dla typów w zestawach odwołań
 - Sugeruj użycie/Importy dla typów w pakietach NuGet
 
-Jeśli jest włączone, w przypadku użycia typu w przestrzeni nazw, który nie jest obecnie importowany, ale istnieje w zestawie referencyjnym lub pakiecie NuGet, zostanie utworzona instrukcja using/import.
+Jeśli jest włączone, w przypadku użycia typu w przestrzeni nazw, który nie jest obecnie importowany, ale istnieje w zestawie referencyjnym lub pakiecie NuGet, tworzona jest dyrektywa using lub import.
 
 ```csharp
 // Before
@@ -204,7 +204,7 @@ Debug.WriteLine("Hello")
 
 ' Imports System.Diagnostics
 
-// After
+' After
 Imports System.Diagnostics
 
 Debug.WriteLine("Hello")
@@ -218,7 +218,7 @@ Debug.WriteLine("Hello")
 
 Podczas tworzenia instrukcji `switch` w C#instrukcji lub `Select Case` w Visual Basic, można użyć akcji kodu do automatycznego dodawania brakujących elementów Case, domyślnej instrukcji case lub obu.
 
-Należy wziąć pod uwagę następujące Wyliczenie i pustą instrukcję `switch` lub `Select Case`:
+Rozważ następujące Wyliczenie i puste `switch` lub instrukcji `Select Case`:
 
 ```csharp
 enum MyEnum
@@ -335,7 +335,7 @@ var date = new DateTime(year: 1997, month: 7, day: 8);
 
 ### <a name="add-braces"></a>Dodaj nawiasy klamrowe
 
-Szybka akcja Dodaj nawiasy klamrowe powoduje Zawijanie nawiasów klamrowych wokół jednowierszowych instrukcji `if`.
+Szybka akcja Dodaj nawiasy klamrowe zawija nawiasy klamrowe wokół jednowierszowych instrukcji `if`.
 
 ```csharp
 // Before
@@ -635,7 +635,7 @@ class MyClass4
 
 | Identyfikator diagnostyki | Odpowiednie języki | Obsługiwana wersja |
 | ------- | -------------------- | ---------------- |
-| IDE0021-27 | C# 6.0+ | Program Visual Studio 2017 lub nowszy |
+| IDE0021 — 27 | C#6.0 + | Program Visual Studio 2017 lub nowszy |
 
 ### <a name="convert-anonymous-function-to-local-function"></a>Konwertuj funkcję anonimową na funkcję lokalną
 
@@ -664,7 +664,7 @@ int fibonacci(int n)
 | ------- | -------------------- | ---------------- |
 | IDE0041 | C#7.0 + | Visual Studio 2017 w wersji 15,5 lub nowszej |
 
-Ta szybka akcja sugeruje użycie [dopasowania wzorca](/dotnet/csharp/pattern-matching) zamiast wzorca kodowania ```ReferenceEquals```, jeśli jest to możliwe.
+Ta szybka akcja sugeruje użycie [dopasowywania wzorców](/dotnet/csharp/pattern-matching) zamiast ```ReferenceEquals``` wzorca kodowania, jeśli to możliwe.
 
 ```csharp
 // Before
@@ -846,7 +846,7 @@ var tuple = (age, name);
 | Identyfikator diagnostyki | Odpowiednie języki | Obsługiwana wersja |
 | ------- | -------------------- | ---------------- |
 | IDE0037 | C# | Visual Studio 2017 w wersji 15,5 lub nowszej |
-| IDE0037 | C# 7.1+ | Visual Studio 2017 w wersji 15,5 lub nowszej |
+| IDE0037 | C#7.1 + | Visual Studio 2017 w wersji 15,5 lub nowszej |
 
 ### <a name="deconstruct-tuple-declaration"></a>Dekonstrukcja deklaracji krotki
 
@@ -876,7 +876,7 @@ Console.WriteLine($"{x} {y}");
 
 ### <a name="make-method-synchronous"></a>Zmień metodę na synchroniczną
 
-W przypadku używania słowa kluczowego `async` lub `Async` w metodzie oczekuje się, że wewnątrz tej metody jest również używane słowo kluczowe `await` lub `Await`. Jeśli jednak tak nie jest, zostanie wyświetlona szybka akcja, która umożliwia synchroniczną metodę przez usunięcie słowa kluczowego `async` lub `Async` i zmiana zwracanego typu. Użyj opcji " **Utwórz metodę synchroniczną** " z menu szybkie akcje.
+Przy użyciu słowa kluczowego `async` lub `Async` w metodzie, oczekuje się, że wewnątrz tej metody jest również używane słowo kluczowe `await` lub `Await`. Jeśli jednak tak nie jest, zostanie wyświetlona szybka akcja, która umożliwia synchroniczną metodę przez usunięcie słowa kluczowego `async` lub `Async` i zmiana typu zwracanego. Użyj opcji " **Utwórz metodę synchroniczną** " z menu szybkie akcje.
 
 ```csharp
 // Before
@@ -914,7 +914,7 @@ End Function
 
 ### <a name="make-method-asynchronous"></a>Ustaw metodę jako asynchroniczną
 
-W przypadku użycia słowa kluczowego `await` lub `Await` wewnątrz metody oczekuje się, że metoda jest oznaczona za pomocą słowa kluczowego `async` lub `Async`. Jeśli jednak tak nie jest, zostanie wyświetlona szybka akcja, która powoduje, że metoda asynchronicznie. Użyj opcji " **Utwórz metodę/funkcja asynchroniczna** " z menu szybkie akcje.
+Przy użyciu słowa kluczowego `await` lub `Await` wewnątrz metody, oczekuje się, że metoda jest oznaczona za pomocą słowa kluczowego `async` lub `Async`. Jeśli jednak tak nie jest, zostanie wyświetlona szybka akcja, która powoduje, że metoda asynchronicznie. Użyj opcji " **Utwórz metodę/funkcja asynchroniczna** " z menu szybkie akcje.
 
 ```csharp
 // Before

@@ -1,5 +1,5 @@
 ---
-title: 'CA2120: Zabezpiecz konstruktory serializacji | Dokumentacja firmy Microsoft'
+title: 'CA2120: Zabezpieczanie konstruktorów serializacji | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,17 +12,17 @@ helpviewer_keywords:
 - CA2120
 ms.assetid: e9989da1-55a0-43f8-9aa9-da86afae3b41
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: ea70b7f9462e3195a78b915691a5069ebd6fe6aa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2b734a5de257273312e5125c5f481ff889cd33e0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68154362"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664753"
 ---
-# <a name="ca2120-secure-serialization-constructors"></a>CA2120: Zabezpiecz konstruktory serializacji
+# <a name="ca2120-secure-serialization-constructors"></a>CA2120: Zabezpieczaj konstruktory serializacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -33,16 +33,16 @@ ms.locfileid: "68154362"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Typ implementuje <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interfejsu, jest delegat lub interfejsu i jest zadeklarowana w zestawie, który umożliwia częściowo zaufanych wywołań. Typ ma konstruktora przyjmującego <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> obiektu i <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> obiektu (podpis konstruktora serializacji). Ten konstruktor nie jest zabezpieczony przez sprawdzanie zabezpieczeń, ale co najmniej jeden z regularnych konstruktorów typu jest zabezpieczony.
+ Typ implementuje interfejs <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>, nie jest delegatem lub interfejsem i jest zadeklarowany w zestawie, który zezwala częściowo zaufanym obiektom wywołującym. Typ ma konstruktora, który przyjmuje obiekt <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> i obiekt <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> (sygnatura konstruktora serializacji). Ten konstruktor nie jest zabezpieczony przez sprawdzanie zabezpieczeń, ale co najmniej jeden z zwykłych konstruktorów w typie jest zabezpieczony.
 
 ## <a name="rule-description"></a>Opis reguły
- Ta reguła ma znaczenie dla typów, które obsługują niestandardowej serializacji. Typ obsługuje niestandardowej serializacji, jeśli implementuje <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interfejsu. Konstruktor serializacji jest wymagane i jest używana do deserializować lub ponownie utworzyć obiekty, które zostały zserializowanym przy użyciu <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> metody. Ponieważ Konstruktor serializacji przydziela i inicjuje obiektów, w również musi znajdować się na Konstruktor serializacji kontrole zabezpieczeń, które znajdują się w regularnych konstruktorów. Możesz spełniają tej reguły, wywołań, które w przeciwnym razie nie można utworzyć wystąpienia wystarczą konstruktora serializacji w tym celu.
+ Ta reguła ma zastosowanie do typów, które obsługują serializację niestandardowe. Typ obsługuje serializacji niestandardowej, jeśli implementuje interfejs <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>. Konstruktor serializacji jest wymagany i służy do deserializacji lub ponownego tworzenia obiektów, które zostały zserializowane przy użyciu metody <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName>. Ponieważ Konstruktor serializacji przydziela i inicjuje obiekty, sprawdzenia zabezpieczeń, które są obecne na zwykłych konstruktorach, muszą być również obecne w konstruktorze serializacji. Jeśli naruszasz tę regułę, wywołujący, którzy nie mogą w inny sposób utworzyć wystąpienia, mogą w tym celu użyć konstruktora serializacji.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, należy chronić Konstruktor serializacji z zapotrzebowaniem na zasoby zabezpieczeń, które są identyczne z tymi ochrony innych konstruktorów.
+ Aby naprawić naruszenie tej zasady, należy chronić Konstruktor serializacji z wymaganiami bezpieczeństwa, które są takie same jak chroniące inne konstruktory.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Nie pomijaj naruszenie reguły.
+ Nie pomijaj naruszenia reguły.
 
 ## <a name="example"></a>Przykład
  Poniższy przykład pokazuje typ, który narusza regułę.
@@ -52,7 +52,7 @@ ms.locfileid: "68154362"
 ## <a name="related-rules"></a>Powiązane reguły
  [CA2229: Zaimplementuj konstruktory serializacji](../code-quality/ca2229-implement-serialization-constructors.md)
 
- [CA2237: Oznacz typy ISerializable atrybutem SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
+ [CA2237: Oznacz typy ISerializable za pomocą atrybutu SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
 
 ## <a name="see-also"></a>Zobacz też
  <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName><xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>

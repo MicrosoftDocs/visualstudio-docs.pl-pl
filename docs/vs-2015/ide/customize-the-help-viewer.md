@@ -1,5 +1,5 @@
 ---
-title: Dostosowywanie podglądu pomocy | Dokumentacja firmy Microsoft
+title: Dostosowywanie podglądu pomocy | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-help-viewer
@@ -11,27 +11,27 @@ helpviewer_keywords:
 - Viewer Options [Help Viewer 2.0]
 ms.assetid: 9c0bc950-7323-4f0f-8de2-0b0af9a42b85
 caps.latest.revision: 13
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: dcbe5d943947481bfcf85fdfb23036807c0340bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3c3af01f68ba1c000c227ddda14ed3bce54d555b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68201888"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665895"
 ---
 # <a name="customize-the-help-viewer"></a>Dostosowywanie Podglądu Pomocy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Kilka funkcji podglądu pomocy można skonfigurować za pomocą **Opcje podglądu** okno dialogowe.  
-  
-## <a name="setting-viewer-options"></a>Ustawianie opcji podglądu  
- Możesz otworzyć **Opcje podglądu** okno dialogowe, wybierając **Opcje podglądu** przycisk na pasku narzędzi.  
-  
-|Do wykonania tego zadania:|Wykonaj następujący krok:|  
-|---------------------------|---------------------|  
-|Zmień rozmiar czcionki, w którym pojawia się tekst|Wybierz rozmiar w **rozmiar tekstu** listy.|  
-|Zmień maksymalną liczbę wyników wyszukiwania, które pojawiają się w **wyszukiwania** kartę|Wybierz wartość z **maksymalna liczba wyników wyszukiwania** listy.|  
-|Zmień maksymalną liczbę wpisów historii, które pojawiają się w **ulubione** okna|Wybierz wartość z **zapisanych wpisów historycznych maksymalna** listy.|  
-|Dołącz lub wyklucz zawartość w języku angielskim podczas przeglądania zawartości dla innej niż angielska wersji produktu.|Zaznacz lub wyczyść **zawartości Zawrzyj w języku angielskim we wszystkich kartach nawigacji i żądaniach F1** pole wyboru. **Uwaga:**  Ta funkcja określa również, czy użytkownik będzie mógł pobrać zawartość w języku angielskim **Zarządzaj zawartością** kartę.|
+Można skonfigurować kilka funkcji podglądu pomocy przy użyciu okna dialogowego **Opcje podglądu** .
+
+## <a name="setting-viewer-options"></a>Ustawianie opcji przeglądarki
+ Aby otworzyć okno dialogowe **Opcje podglądu** , wybierz przycisk **Opcje podglądu** na pasku narzędzi.
+
+|Aby wykonać to zadanie:|Wykonaj ten krok:|
+|---------------------------|---------------------|
+|Zmień rozmiar czcionki, w której jest wyświetlany tekst|Wybierz rozmiar z listy **rozmiar tekstu** .|
+|Zmień maksymalną liczbę wyników wyszukiwania wyświetlanych na karcie **Wyszukiwanie**|Wybierz wartość z listy **Maksymalna liczba wyników wyszukiwania** .|
+|Zmień maksymalną liczbę wpisów historii, które pojawiają się w oknie **Ulubione**|Wybierz wartość z listy **Maksymalna liczba zapisanych wpisów historii** .|
+|Uwzględnij lub Wyklucz zawartość w języku angielskim podczas wyświetlania zawartości w wersji językowej innej niż angielska.|Zaznacz lub wyczyść pole wyboru **Uwzględnij zawartość w języku angielskim na wszystkich kartach nawigacji i żądaniach F1** . **Przestroga:**  Ta funkcja określa również, czy można pobrać zawartość w języku angielskim na karcie **Zarządzanie zawartością** .|

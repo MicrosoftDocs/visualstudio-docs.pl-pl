@@ -1,42 +1,42 @@
 ---
-title: Opcje, Edytor tekstu, F#, wskaźników CodeLens
+title: Opcje, Edytor tekstu, F#, CodeLens
 ms.date: 01/16/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.F%2523.CodeLens
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0799b06331fd83614b578c171e5f100d651f4952
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2c1182c40987638cc871a877443db0357f962f53
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778557"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666252"
 ---
-# <a name="options-text-editor-f-codelens"></a>Opcje, Edytor tekstu, F#, wskaźników CodeLens
+# <a name="options-text-editor-f-codelens"></a>Opcje, Edytor tekstu, F#, CodeLens
 
-Użyj **CodeLens** Strona opcji, aby zmodyfikować ustawienia wskaźników CodeLens edytora tekstu dla F#. Dostępu do tej opcji strony, wybierz **narzędzia** > **opcje**, a następnie wybierz **edytora tekstów**  >  **F#**  >  **CodeLens**.
+Na stronie opcje **CodeLens** można modyfikować ustawienia edytora tekstu CodeLens dla F#. Aby uzyskać dostęp do tej strony opcji, wybierz pozycję **narzędzia**  > **Opcje**, a następnie wybierz**F#** pozycję **Edytor tekstu**  >   > **CodeLens**.
 
-## <a name="codelens"></a>Funkcja CodeLens
+## <a name="codelens"></a>CodeLens
 
-- **Włącz wskaźniki CodeLens (wersja eksperymentalna)**
+- **Włącz CodeLens (eksperymentalne)**
 
-   Gdy ta opcja jest zaznaczona, interaktywne adnotacji pojawiają się w kodu, które umożliwiają łatwe znajdowanie odwołań i zmian kodu, połączone usterki, elementy robocze, przeglądy kodu i testów jednostkowych.
+   Gdy ta opcja jest zaznaczona, interaktywne adnotacje pojawiają się w kodzie, który pozwala łatwo znajdować odwołania i zmiany w kodzie, połączonych usterkach, elementach roboczych, przeglądach kodu i testach jednostkowych.
 
 - **Użyj kolorów w adnotacjach**
 
-   Zaznacz to pole wyboru, aby wyświetlić adnotacje CodeLens są oznaczone kolorem łatwo odróżnić elementów raportów funkcji CodeLens.
+   Zaznacz to pole wyboru, aby wyświetlić adnotacje CodeLens w kolorze, aby łatwo odróżnić elementy CodeLens raporty.
 
-- **Pokaż adnotacje z prawej strony zamiast powyżej wiersza**
+- **Pokaż adnotacje po prawej stronie zamiast wiersza**
 
-   Domyślnie adnotacje CodeLens są wyświetlane przy użyciu linii kodu. Zaznacz to pole wyboru, aby mieć adnotacji z prawej strony w kodzie, a nad nim.
+   Domyślnie adnotacje CodeLens są wyświetlane w wierszu kodu. Zaznacz to pole wyboru, aby adnotacje pojawiły się po prawej stronie kodu zamiast nad nim.
 
 - **Prefiks adnotacji**
 
-   Można zmienić domyślny prefiks, który jest używany na potrzeby adnotacji.
+   Można zmienić domyślny prefiks używany do adnotacji.
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -1,5 +1,5 @@
 ---
-title: 'CA1306: Ustaw ustawienia regionalne dla typów danych | Dokumentacja firmy Microsoft'
+title: 'CA1306: Ustaw ustawienia regionalne dla typów danych | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,40 +12,40 @@ helpviewer_keywords:
 - SetLocaleForDataTypes
 ms.assetid: 104297b2-5806-4de0-a8d9-c589380a796c
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 75e67cdd058939837441bd969ac8629a6fc65dcc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 03344f0b19552aa00270c8a6fa760c6ba6ee75f4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68200365"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661414"
 ---
-# <a name="ca1306-set-locale-for-data-types"></a>CA1306: Ustaw ustawienia regionalne dla typów danych
+# <a name="ca1306-set-locale-for-data-types"></a>CA1306: Należy ustawić ustawienia regionalne dla typów danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|SetLocaleForDataTypes|
 |CheckId|CA1306|
-|Kategoria|Microsoft.Globalization|
-|Zmiana kluczowa|Bez podziału|
+|Kategoria|Microsoft. Globalizacja|
+|Zmiana kluczowa|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
- Metoda lub Konstruktor utworzony co najmniej jeden <xref:System.Data.DataTable?displayProperty=fullName> lub <xref:System.Data.DataSet?displayProperty=fullName> wystąpień i nie jawnie ustawiona właściwość locale (<xref:System.Data.DataTable.Locale%2A?displayProperty=fullName> lub <xref:System.Data.DataSet.Locale%2A?displayProperty=fullName>).
+ Metoda lub Konstruktor utworzył jeden lub więcej wystąpień <xref:System.Data.DataTable?displayProperty=fullName> lub <xref:System.Data.DataSet?displayProperty=fullName> i nie ustawił jawnie właściwości locale (<xref:System.Data.DataTable.Locale%2A?displayProperty=fullName> lub <xref:System.Data.DataSet.Locale%2A?displayProperty=fullName>).
 
 ## <a name="rule-description"></a>Opis reguły
- Ustawienia regionalne określą elementy prezentacji charakterystyczne dla kultury dla danych, takich jak formatowanie używane dla wartości liczbowych, symbole walut i porządek sortowania. Po utworzeniu <xref:System.Data.DataTable> lub <xref:System.Data.DataSet>, należy jawnie ustawić ustawienia regionalne. Domyślnie ustawienia regionalne dla tych typów jest bieżącej kultury. Dla danych, które są przechowywane w bazie danych lub pliku i są udostępniane globalnie, ustawienia regionalne zazwyczaj powinna być ustawiona na niezmiennej kultury (<xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>). Gdy dane są dzielone między kultur, przy użyciu domyślnych ustawień regionalnych może spowodować zawartość <xref:System.Data.DataTable> lub <xref:System.Data.DataSet> mają być wyświetlone lub niepoprawnie interpretowane.
+ Ustawienia regionalne określają elementy prezentacji specyficzne dla kultury dla danych, takie jak formatowanie używane dla wartości liczbowych, symboli walut i kolejności sortowania. Podczas tworzenia <xref:System.Data.DataTable> lub <xref:System.Data.DataSet> należy jawnie ustawić ustawienia regionalne. Domyślnie ustawienia regionalne dla tych typów są obecną kulturą. W przypadku danych przechowywanych w bazie danych lub pliku, które są udostępniane globalnie, dla ustawień regionalnych należy zwykle ustawić niezmienną kulturę (<xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>). Gdy dane są współużytkowane przez kultury, użycie domyślnych ustawień regionalnych może spowodować, że zawartość <xref:System.Data.DataTable> lub <xref:System.Data.DataSet> będzie wyświetlana lub interpretowana nieprawidłowo.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, należy jawnie ustawić ustawienia regionalne <xref:System.Data.DataTable> lub <xref:System.Data.DataSet>.
+ Aby naprawić naruszenie tej reguły, jawnie ustaw ustawienia regionalne dla <xref:System.Data.DataTable> lub <xref:System.Data.DataSet>.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Jest bezpieczne pominąć ostrzeżenie od tej reguły, biblioteka lub aplikacji jest ograniczona odbiorców lokalnych, danych nie jest udostępniony lub domyślne ustawienie daje żądane zachowanie we wszystkich obsługiwanych scenariuszach.
+ W przypadku, gdy biblioteka lub aplikacja dla ograniczonego odbiorcy lokalnego nie jest dostępna, dane nie są udostępniane lub domyślne ustawienie zapewnia odpowiednie zachowanie we wszystkich obsługiwanych scenariuszach.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład tworzy dwie <xref:System.Data.DataTable> wystąpień.
+ Poniższy przykład tworzy dwa wystąpienia <xref:System.Data.DataTable>.
 
  [!code-csharp[FxCop.Globalization.DataTable#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Globalization.DataTable/cs/FxCop.Globalization.DataTable.cs#1)]
 

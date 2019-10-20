@@ -1,58 +1,58 @@
 ---
-title: Tworzenie wtyczki dla testów wydajności sieci web rejestratora
+title: Tworzenie wtyczki rejestratora dla testów wydajności sieci Web
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Web performance tests, recorder plug-in
 ms.assetid: 6fe13be1-aeb5-4927-9bff-35950e194da9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e49fbb3411aee98fce5899c522b9743b3f2afa33
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c8c1c2d5dd2b3ec656a774c10f8bb50ca556a39f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950257"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653640"
 ---
-# <a name="how-to-create-a-recorder-plug-in"></a>Instrukcje: Tworzenie wtyczki rejestratora
+# <a name="how-to-create-a-recorder-plug-in"></a>Instrukcje: tworzenie wtyczki rejestratora
 
-<xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> Umożliwia modyfikowanie nagranych internetowego testu wydajnościowego. Modyfikacja występuje po wybraniu **zatrzymać** w **rejestratora testów wydajności sieci Web** narzędzi, ale przed testu zapisaniem i przedstawieniem w edytorze testu wydajności sieci Web.
+@No__t_0 pozwala modyfikować zarejestrowany test wydajności sieci Web. Modyfikacja odbywa się po wybraniu opcji **Zatrzymaj** na pasku narzędzi **rejestratora testu wydajności sieci Web** , ale przed zapisaniem testu i wyświetleniem go w Edytor internetowego testu wydajnościowego.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-Wtyczka rejestratora umożliwia wykonywanie własnej niestandardowej korelacji na parametrach dynamicznych. Dzięki wbudowanym funkcjom korelacji testy wydajności sieci web wykrywają parametry dynamiczne w sieci web rejestracji po zakończeniu lub po użyciu **Przekształć dynamiczne parametry na parametry testu sieci Web** na **sieci Web Edytor testów wydajności** paska narzędzi. Jednak wbudowanych w wykrywaniu funkcji nie zawsze znajdzie wszystkie parametry dynamiczne. Na przykład nie odnajdzie Identyfikatora sesji, który zwykle zmienia swoją wartość od 5 do 30 minut. W związku z tym należy ręcznie przeprowadzić proces korelacji.
+Wtyczka rejestratora umożliwia wykonywanie własnej niestandardowej korelacji w parametrach dynamicznych. Dzięki wbudowanym funkcjom korelacji testy wydajności sieci Web wykrywają dynamiczne parametry w rejestrowaniu w sieci Web po zakończeniu lub w przypadku korzystania z **Przekształć dynamiczne parametry na parametry testu sieci Web** na **Edytor internetowego testu wydajnościowego** pasku narzędzi. Jednak Wbudowana funkcja wykrywania nie zawsze znajduje wszystkie parametry dynamiczne. Na przykład nie znajduje identyfikatora sesji, który zwykle otrzymuje wartość z przedziału od 5 do 30 minut. W związku z tym należy ręcznie przeprowadzić proces korelacji.
 
-<xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> Umożliwia pisanie kodu dla własnego niestandardowego dodatku typu plug-in. Ta wtyczka może wykonywać korelację lub modyfikować test wydajności sieci web na wiele sposobów przed jego zapisaniem i przedstawieniem w edytorze testu wydajności sieci Web. W związku z tym jeśli okaże się, że określona zmienna dynamiczna musi zostać skorelowana dla wielu nagrań, możesz zautomatyzować ten proces.
+@No__t_0 pozwala napisać kod dla własnej wtyczki niestandardowej. Ta wtyczka może wykonać korelację lub zmodyfikować test wydajności sieci Web na wiele sposobów przed jego zapisaniem i przedłożeniem w Edytor internetowego testu wydajnościowego. W związku z tym, jeśli określisz, że określona zmienna dynamiczna musi być skorelowane dla dużej liczby nagrań, Możesz zautomatyzować ten proces.
 
-Inny sposób, że dodatek typu plug-in rejestratora mogą być używane dotyczy dodawania ekstrakcji i reguł sprawdzania poprawności, dodawania parametrów kontekstu lub konwertowania komentarzy do transakcji w wydajności sieci web test.
+Innymi sposobami korzystania z wtyczki rejestratora jest możliwość dodawania reguł wyodrębniania i walidacji, dodawania parametrów kontekstu lub konwertowania komentarzy do transakcji w teście wydajności sieci Web.
 
-W poniższych procedurach opisano sposób tworzenia kodu szczątkowego dla rejestratora wtyczki, wdrażania dodatek typu plug-in i wykonać dodatku typu plug-in. Przykładowy kod, zgodnie z procedurami pokazuje, jak używać języka Visual C# do tworzenia dodatku typu plug-in rejestratora korelacji parametrów dynamicznych niestandardowych.
+W poniższych procedurach opisano, jak utworzyć kod podstawowe dla wtyczki rejestratora, wdrożyć wtyczkę i wykonać wtyczkę. Przykładowy kod po procedurach pokazuje, jak używać wizualizacji C# do tworzenia niestandardowej wtyczki rejestratora korelacji parametrów dynamicznych.
 
 ## <a name="create-a-recorder-plug-in"></a>Tworzenie wtyczki rejestratora
 
 ### <a name="to-create-a-recorder-plug-in"></a>Aby utworzyć wtyczkę rejestratora
 
-1. Otwórz rozwiązanie, które zawiera projekt testu obciążenia i wydajności sieci web za pomocą testu wydajności sieci web, dla której chcesz utworzyć wtyczkę rejestratora.
+1. Otwórz rozwiązanie, które zawiera projekt testu wydajności sieci Web i obciążenia z testem wydajności sieci Web, dla którego chcesz utworzyć wtyczkę rejestratora.
 
-2. Dodaj nową **biblioteki klas** projektu do rozwiązania.
+2. Dodaj nowy projekt **biblioteki klas** do rozwiązania.
 
-3. W **Eksploratora rozwiązań**, w nowym folderze projektu biblioteki klas, kliknij prawym przyciskiem myszy **odwołania** i wybierz polecenie **Dodaj odwołanie**.
+3. W **Eksplorator rozwiązań**w folderze nowy projekt biblioteki klas kliknij prawym przyciskiem myszy folder **odwołania** i wybierz polecenie **Dodaj odwołanie**.
 
     > [!TIP]
-    > Na przykład nowy folder projektu biblioteki klas **RecorderPlugins**.
+    > Przykładem nowego folderu projektu biblioteki klas jest **RecorderPlugins**.
 
-     **Dodaj odwołanie** zostanie wyświetlone okno dialogowe.
+     Zostanie wyświetlone okno dialogowe **Dodawanie odwołania** .
 
-4. Wybierz **.NET** kartę.
+4. Wybierz kartę **.NET** .
 
-5. Przewiń w dół i wybierz **Microsoft.VisualStudio.QualityTools.WebTestFramework** , a następnie wybierz **OK**.
+5. Przewiń w dół i wybierz pozycję **Microsoft. VisualStudio. QualityTools. WebTestFramework** , a następnie wybierz **przycisk OK**.
 
-     **Microsoft.VisualStudio.QualityTools.WebTestFramework** zostanie dodany do **odwołania** folderu w **Eksploratora rozwiązań**.
+     **Microsoft. VisualStudio. QualityTools. WebTestFramework** zostanie dodana do folderu **references** w **Eksplorator rozwiązań**.
 
-6. Pisz kod dla dodatku rejestratora. Najpierw utwórz nową klasę publiczną, która pochodzi od klasy <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin>.
+6. Napisz kod dla wtyczki rejestratora. Najpierw utwórz nową klasę publiczną, która pochodzi od <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin>.
 
-7. Zastąp <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin.PostWebTestRecording*> metody.
+7. Zastąp metodę <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin.PostWebTestRecording*>.
 
     ```csharp
     public class Class1 : WebTestRecorderPlugin
@@ -64,58 +64,58 @@ W poniższych procedurach opisano sposób tworzenia kodu szczątkowego dla rejes
         }
     ```
 
-     Argumenty zdarzenia zostaną wyświetlone dwa obiekty przeznaczone do pracy z: wynik nagrany i nagrany internetowego testu wydajnościowego. Pozwoli to do iteracji wyników dla niektórych wartości i następnie przeskakiwanie do tego samego żądania w teście wydajności sieci web, można wprowadzić modyfikacje. Możesz też po prostu zmodyfikować testu wydajności sieci web, jeśli chcesz dodać parametr kontekstu lub zdefiniować parametry części adresu URL.
+     Argumenty zdarzeń będą zawierać dwa obiekty do współpracy: zarejestrowany wynik i zarejestrowany test wydajności sieci Web. Pozwoli to na iterację wyników szukających określonych wartości, a następnie przechodzenie do tego samego żądania w teście wydajności sieci Web, aby wprowadzić modyfikacje. Możesz również zmodyfikować test wydajności sieci Web, jeśli chcesz dodać parametr kontekstowy lub Sparametryzuj części adresu URL.
 
     > [!NOTE]
-    > Jeśli modyfikujesz test wydajności sieci web, należy również ustawić <xref:Microsoft.VisualStudio.TestTools.WebTesting.PostWebTestRecordingEventArgs.RecordedWebTestModified*> właściwości na wartość true: `e.RecordedWebTestModified = true;`
+    > Jeśli modyfikujesz test wydajności sieci Web, musisz także ustawić wartość true dla właściwości <xref:Microsoft.VisualStudio.TestTools.WebTesting.PostWebTestRecordingEventArgs.RecordedWebTestModified*>: `e.RecordedWebTestModified = true;`
 
-8. Dodaj więcej kodu według tego, co rejestratora wtyczki ma wykonać po rejestrowaniu w sieci web. Na przykład można dodać kod do obsługi niestandardowej korelacji, jak pokazano w poniższym przykładzie. Można również utworzyć wtyczki dla takich rejestratora, jak przetestować konwertowania komentarzy do transakcji lub dodawania reguł sprawdzania poprawności do wydajności sieci web.
+8. Dodaj więcej kodu według tego, co wtyczka Rejestrator ma wykonać po nagraniu w sieci Web. Na przykład można dodać kod do obsługi korelacji niestandardowej, jak pokazano w poniższym przykładzie. Możesz również utworzyć wtyczkę rejestratora dla takich elementów jak konwertowanie komentarzy do transakcji lub dodawanie reguł sprawdzania poprawności do testu wydajności sieci Web.
 
-9. Na **kompilacji** menu, wybierz **kompilacji \<Nazwa projektu biblioteki klas >**.
+9. W menu **kompilacja** wybierz kolejno opcje **Kompiluj \<class biblioteka nazwa projektu >** .
 
-Następnie należy wdrożyć zarejestrowany dodatek w celu użycia go zarejestrować za pomocą programu Visual Studio.
+Następnie wdróż wtyczkę rejestratora, aby mogła ona zostać zarejestrowana w programie Visual Studio.
 
-### <a name="deploy-the-recorder-plug-in"></a>Wdróż wtyczkę Rejestrator
+### <a name="deploy-the-recorder-plug-in"></a>Wdróż wtyczkę rejestratora
 
-Po skompilowaniu dodatku plug-in rejestratora umieścić wynikowy DLL w jednej z dwóch lokalizacji:
+Po skompilowaniu wtyczki rejestratora Umieść w jednej z dwóch lokalizacji uzyskaną bibliotekę DLL:
 
-- *% ProgramFiles (x86) %\Microsoft Visual Studio\\[wersja]\\\Common7\IDE\PrivateAssemblies\WebTestPlugins [wersja]*
+- *% ProgramFiles (x86)% \ Microsoft Visual Studio \\ [wersja] \\ [Edition] \Common7\IDE\PrivateAssemblies\WebTestPlugins*
 
-- *%USERPROFILE%\Documents\Visual studio [wersja] \WebTestPlugins*
+- *%USERPROFILE%\Documents\Visual Studio [wersja] \WebTestPlugins*
 
 > [!WARNING]
-> Po skopiowaniu dodatku plug-in rejestratora do jednej z dwóch lokalizacji, należy ponownie uruchomić program Visual Studio dla dodatku plug-in do zarejestrowania.
+> Po skopiowaniu wtyczki rejestratora do jednej z dwóch lokalizacji, należy ponownie uruchomić program Visual Studio, aby zarejestrowano wtyczkę rejestratora.
 
-### <a name="execute-the-recorder-plug-in"></a>Uruchom wtyczkę Rejestrator
+### <a name="execute-the-recorder-plug-in"></a>Wykonaj wtyczkę rejestratora
 
-1. Utwórz nowy test wydajności sieci web.
+1. Utwórz nowy test wydajności sieci Web.
 
-     **Włącz WebTestRecordPlugins** Wyświetla okno dialogowe.
+     Zostanie wyświetlone okno dialogowe **Włącz WebTestRecordPlugins** .
 
-2. Zaznacz pole wyboru dla dodatku plug-in rejestratora i wybierz polecenie **OK**.
+2. Zaznacz pole wyboru dla wtyczki rejestratora i wybierz **przycisk OK**.
 
-     Po zakończeniu testu wydajności sieci web zostanie wykonany nowy dodatek plug-in rejestratora.
+     Po zakończeniu nagrywania testu wydajności sieci Web zostanie wykonany nowy dodatek plug-in rejestratora.
 
     > [!WARNING]
-    > Możesz otrzymać błąd podobny do następującego po uruchomieniu testu wydajności sieci web lub testu obciążenia, który korzysta z Twojej wtyczki:
+    > Po uruchomieniu testu wydajności sieci Web lub testu obciążenia, który korzysta z wtyczki, może zostać wyświetlony błąd podobny do poniższego:
     >
-    > **Żądanie nie powiodło się: Wyjątek w \<wtyczki > zdarzenia: Nie można załadować pliku lub zestawu "\<pliku dll"Nazwa wtyczki">, wersja =\<n.n.n.n >, Culture = neutral, PublicKeyToken = null" lub jednej z jego zależności. System nie może odnaleźć określonego pliku.**
+    > **Żądanie nie powiodło się: wyjątek w zdarzeniu > \<plug: nie można załadować pliku lub zestawu "\<" nazwy wtyczki ". dll >, Version = \<n. n. n. n >, Culture = neutral, PublicKeyToken = null" lub jedną z jej zależności. System nie może znaleźć określonego pliku.**
     >
-    > Dzieje się tak Jeśli wprowadzasz zmiany kodu do dowolnego typu plug-ins i utworzyć nową wersję biblioteki DLL **(wersja = 0.0.0.0)**, ale wtyczka nadal odwołuje się do oryginalnej wersji wtyczki. Aby rozwiązać ten problem, wykonaj następujące kroki:
+    > Jest to spowodowane wprowadzeniem zmian w kodzie w dowolnych wtyczkach i utworzenie nowej wersji biblioteki DLL **(Version = 0.0.0.0)** , ale wtyczka nadal odwołuje się do oryginalnej wersji wtyczki. Aby rozwiązać ten problem, wykonaj następujące kroki:
     >
-    > 1. W wydajności sieci web i obciążenia projektu testowego zostanie wyświetlone ostrzeżenie w odwołaniach. Usuń i ponownie Dodaj odwołanie do biblioteki DLL dodatku plug-in.
-    > 2. Usuń dodatek plug-in z testu lub odpowiedniej lokalizacji, a następnie dodaj go ponownie.
+    > 1. W projekcie testu wydajności i obciążenia sieci Web zobaczysz ostrzeżenie w odwołaniach. Usuń i Dodaj odwołanie do biblioteki DLL wtyczki.
+    > 2. Usuń wtyczkę z testu lub odpowiedniej lokalizacji, a następnie dodaj ją ponownie.
 
 ## <a name="example"></a>Przykład
 
-Ten przykład przedstawia sposób tworzenia dodatku typu plug-in do wykonywania niestandardowych korelacji parametrów dynamicznych rejestratora testów wydajności sieci web dostosowane.
+Ten przykład pokazuje, jak utworzyć dostosowaną wtyczkę rejestratora testów wydajności sieci Web w celu wykonania niestandardowej korelacji parametrów dynamicznych.
 
 > [!NOTE]
-> Pełną listę przykładowy kod znajduje się w dolnej części tego tematu.
+> Pełna lista przykładowego kodu znajduje się w dolnej części tego tematu.
 
-### <a name="iterate-through-the-result-to-find-first-page-with-reportsession"></a>Wykonuj iteracje przez wyniki w celu znalezienia pierwszej strony z obiektem ReportSession
+### <a name="iterate-through-the-result-to-find-first-page-with-reportsession"></a>Wykonaj iterację w wyniku, aby znaleźć pierwszą stronę z ReportSession
 
-Ta część próbki kodu iteruje przez każdy nagrany obiekt i wyszukuje treść odpowiedzi dla ReportSession.
+Ta część przykładu kodu iteruje przez każdy zarejestrowany obiekt i przeszukuje treść odpowiedzi dla ReportSession.
 
 ```csharp
 foreach (WebTestResultUnit unit in e.RecordedWebTestResult.Children)
@@ -130,9 +130,9 @@ foreach (WebTestResultUnit unit in e.RecordedWebTestResult.Children)
              {
 ```
 
-### <a name="add-an-extraction-rule"></a>Dodawanie reguły wyodrębniania
+### <a name="add-an-extraction-rule"></a>Dodaj regułę wyodrębniania
 
-Teraz, gdy odpowiedź została znaleziona, należy dodać regułę ekstrakcji. Ta część przykładowy kod tworzy regułę ekstrakcji przy użyciu <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRuleReference> klasy, a następnie znajduje poprawne żądanie w teście wydajności sieci web, aby dodać do niego regułę ekstrakcji. Każdy obiekt wynikowy ma nową właściwość o nazwie DeclarativeWebTestItemId, która jest on używany w kodzie w celu uzyskania poprawnego żądania z testu wydajności sieci web.
+Teraz, gdy zostanie znaleziona odpowiedź, należy dodać regułę wyodrębniania. Ta część przykładu kodu tworzy regułę wyodrębniania za pomocą klasy <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRuleReference>, a następnie odnajduje odpowiednie żądanie w teście wydajności sieci Web, aby dodać regułę wyodrębniania do programu. Każdy obiekt wynikowy ma nową właściwość o nazwie DeclarativeWebTestItemId, która jest używana w kodzie, aby uzyskać prawidłowe żądanie od testu wydajności sieci Web.
 
 ```csharp
 ExtractionRuleReference ruleReference = new ExtractionRuleReference();
@@ -154,9 +154,9 @@ ExtractionRuleReference ruleReference = new ExtractionRuleReference();
      }
 ```
 
-### <a name="replace-query-string-parameters"></a>Zamień parametry ciągu zapytania
+### <a name="replace-query-string-parameters"></a>Zastąp parametry ciągu zapytania
 
-Teraz kod znajduje wszystkie zapytania parametry ciągu, które mają wartość ReportSession jako nazwę, a następnie zmień wartość na {{IdentyfikatorSesji}}, jak pokazano w tej części przykładowego kodu:
+Teraz kod znajduje wszystkie parametry ciągu zapytania, które mają ReportSession jako nazwę, i zmień wartość na {{SessionId}}, jak pokazano w tej części przykładu kodu:
 
 ```csharp
 WebTestRequest requestInWebTest = e.RecordedWebTest.GetItem(page.DeclarativeWebTestItemId) as WebTestRequest;
@@ -250,4 +250,4 @@ namespace RecorderPlugin
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRuleReference>
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin.PostWebTestRecording*>
 - [Tworzenie niestandardowych kodów i wtyczek dla testów obciążenia](../test/create-custom-code-and-plug-ins-for-load-tests.md)
-- [Generowanie i uruchom kodowany internetowy test wydajnościowy](../test/generate-and-run-a-coded-web-performance-test.md)
+- [Generowanie i uruchamianie kodowanego testu wydajności sieci Web](../test/generate-and-run-a-coded-web-performance-test.md)

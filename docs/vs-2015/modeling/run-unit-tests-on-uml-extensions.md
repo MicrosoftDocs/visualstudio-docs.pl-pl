@@ -6,28 +6,28 @@ ms.technology: vs-ide-modeling
 ms.topic: conceptual
 ms.assetid: 745d74ae-e48c-4fd9-a755-4354b81b9f8a
 caps.latest.revision: 9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5aeeb8bf9ec70a7288316c8b4c6baa337c232621
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 3fdedf3fd9463b25e2c825a0a2d43b069049a2cb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871722"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72671235"
 ---
 # <a name="run-unit-tests-on-uml-extensions"></a>Uruchamianie testów jednostek dla rozszerzeń UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aby zapewnić stabilny kod przy użyciu kolejnych zmian, zalecamy napisać testy jednostkowe i wykonać je w ramach regularnego procesu kompilacji. Aby uzyskać więcej informacji, zobacz [swój kod testu jednostkowego](../test/unit-test-your-code.md). Aby skonfigurować testy dla rozszerzeń modelowania programu Visual Studio, potrzebne są pewne informacje. Podsumowanie:
+Aby zapewnić stabilny kod przy użyciu kolejnych zmian, zalecamy napisać testy jednostkowe i wykonać je w ramach regularnego procesu kompilacji. Aby uzyskać więcej informacji, zobacz [Unit Testing Code](../test/unit-test-your-code.md). Aby skonfigurować testy dla rozszerzeń modelowania programu Visual Studio, potrzebne są pewne informacje. Podsumowanie:
 
 - [Konfigurowanie testu jednostkowego dla rozszerzeń VSIX](#Host)
 
-   Uruchom testy za pomocą karty hosta VS IDE. Opatrz każdą metodę `[HostType("VS IDE")]`testową prefiksem. Ta karta hosta jest [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] uruchamiana, gdy testy są uruchamiane.
+   Uruchom testy za pomocą karty hosta VS IDE. Opatrz każdą metodę testową prefiksem `[HostType("VS IDE")]`. Ta karta hosta jest uruchamiana [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], gdy testy są uruchamiane.
 
 - [Uzyskiwanie dostępu do DTE i magazynie modeli.](#DTE)
 
-   Zwykle trzeba będzie otworzyć model i jego diagramy oraz uzyskać dostęp `IModelStore` do programu w ramach inicjalizacji testu.
+   Zwykle trzeba będzie otworzyć model i jego diagramy oraz uzyskać dostęp do `IModelStore` w ramach inicjowania testu.
 
 - [Otwieranie diagramu modelu](#Opening)
 
@@ -35,7 +35,7 @@ Aby zapewnić stabilny kod przy użyciu kolejnych zmian, zalecamy napisać testy
 
 - [Wykonywanie zmian w wątku interfejsu użytkownika](#UiThread)
 
-   Testy, które wprowadzają zmiany do magazynu modeli, muszą być wykonywane w wątku interfejsu użytkownika. Można tego użyć `Microsoft.VSSDK.Tools.VsIdeTesting.UIThreadInvoker` .
+   Testy, które wprowadzają zmiany do magazynu modeli, muszą być wykonywane w wątku interfejsu użytkownika. W tym celu można użyć `Microsoft.VSSDK.Tools.VsIdeTesting.UIThreadInvoker`.
 
 - [Polecenia testowania, gesty i inne składniki MEF](#MEF)
 
@@ -53,24 +53,24 @@ Aby zapewnić stabilny kod przy użyciu kolejnych zmian, zalecamy napisać testy
 ## <a name="Host"></a>Konfigurowanie testu jednostkowego dla rozszerzeń VSIX
  Metody w rozszerzeniach modelowania zwykle działają z diagramem, który jest już otwarty. Metody używają MEF Importy, takich jak **IDiagramContext** i **ILinkedUndoContext**. Środowisko testowe musi skonfigurować ten kontekst przed uruchomieniem testów.
 
-#### <a name="to-set-up-a-unit-test-that-executes-in-includevsprvsincludesvsprvs-mdmd"></a>Aby skonfigurować test jednostkowy wykonywany w programie[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
+#### <a name="to-set-up-a-unit-test-that-executes-in-includevsprvsincludesvsprvs-mdmd"></a>Aby skonfigurować test jednostkowy wykonywany w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
 
 1. Utwórz projekt rozszerzenia UML i projekt testu jednostkowego.
 
     1. **Projekt rozszerzenia UML.** Zwykle jest to tworzone przy użyciu poleceń, gestów lub szablonów projektu walidacji. Na przykład zobacz [Definiowanie polecenia menu na diagramie modelowania](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
 
-    2. **Projekt testu jednostkowego.** Aby uzyskać więcej informacji, zobacz [swój kod testu jednostkowego](../test/unit-test-your-code.md).
+    2. **Projekt testu jednostkowego.** Aby uzyskać więcej informacji, zobacz [Unit Testing Code](../test/unit-test-your-code.md).
 
-2. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Utwórz rozwiązanie, które zawiera projekt modelowania UML. To rozwiązanie będzie używane jako początkowy stan testów. Powinna być oddzielona od rozwiązania, w którym piszesz rozszerzenie UML i jego testy jednostkowe. Aby uzyskać więcej informacji, zobacz [Tworzenie projektów i diagramów modelowania UML](../modeling/create-uml-modeling-projects-and-diagrams.md).
+2. Utwórz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozwiązanie, które zawiera projekt modelowania UML. To rozwiązanie będzie używane jako początkowy stan testów. Powinna być oddzielona od rozwiązania, w którym piszesz rozszerzenie UML i jego testy jednostkowe. Aby uzyskać więcej informacji, zobacz [Tworzenie projektów i diagramów modelowania UML](../modeling/create-uml-modeling-projects-and-diagrams.md).
 
-3. **W projekcie rozszerzenia UML**Edytuj plik. csproj jako tekst i upewnij się, że są wyświetlane `true`następujące wiersze:
+3. **W projekcie rozszerzenia UML**Edytuj plik CSPROJ jako tekst i upewnij się, że następujące wiersze pokazują `true`:
 
     ```
     <CopyBuildOutputToOutputDirectory>true</CopyBuildOutputToOutputDirectory>
         <CopyOutputSymbolsToOutputDirectory>true</CopyOutputSymbolsToOutputDirectory>
     ```
 
-     Aby edytować plik. csproj jako tekst, wybierz pozycję **Zwolnij projekt** w menu skrótów projektu w Eksplorator rozwiązań. Następnie wybierz pozycję **Edytuj.... csproj**. Po edytowaniu tekstu wybierz pozycję Załaduj **ponownie projekt**.
+     Aby edytować plik. csproj jako tekst, wybierz pozycję **Zwolnij projekt** w menu skrótów projektu w Eksplorator rozwiązań. Następnie wybierz pozycję **Edytuj.... csproj**. Po edytowaniu tekstu wybierz pozycję **Załaduj ponownie projekt**.
 
 4. W projekcie rozszerzenia UML Dodaj następujący wiersz do **Properties\AssemblyInfo.cs**. Dzięki temu testy jednostkowe uzyskują dostęp do metod, które mają zostać przetestowane:
 
@@ -82,24 +82,24 @@ Aby zapewnić stabilny kod przy użyciu kolejnych zmian, zalecamy napisać testy
 
     - *Projekt rozszerzenia UML*
 
-    - **EnvDTE.dll**
+    - **EnvDTE. dll**
 
-    - **Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll**
+    - **Microsoft. VisualStudio. ArchitectureTools. rozszerzalność. dll**
 
-    - **Microsoft.VisualStudio.ComponentModelHost.dll**
+    - **Microsoft. VisualStudio. ComponentModelHost. dll**
 
-    - **Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll**
+    - **Microsoft. VisualStudio. QualityTools. UnitTestFramework. dll**
 
-    - **Microsoft.VisualStudio.Uml.Interfaces.dll**
+    - **Microsoft. VisualStudio. UML. Interfaces. dll**
 
-    - **Microsoft.VSSDK.TestHostFramework.dll**
+    - **Microsoft. VSSDK. TestHostFramework. dll**
 
-6. Oznacz atrybut `[HostType("VS IDE")]` prefiksem każdej metody testowej, w tym metody inicjacji.
+6. Oznacz atrybut `[HostType("VS IDE")]` do każdej metody testowej, w tym metod inicjacji.
 
      Zapewni to, że test zostanie uruchomiony w eksperymentalnym wystąpieniu programu Visual Studio.
 
 ## <a name="DTE"></a>Uzyskiwanie dostępu do DTE i magazynie modeli.
- Napisz metodę, aby otworzyć projekt modelowania w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Zazwyczaj chcesz otworzyć rozwiązanie tylko raz w każdym przebiegu testu. Aby uruchomić metodę tylko raz, należy poprzedzić metodę `[AssemblyInitialize]` atrybutem. Nie zapomnij, że dla każdej metody testowej jest również wymagany atrybut [HostType ("VS IDE")].  Na przykład:
+ Napisz metodę, aby otworzyć projekt modelowania w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Zazwyczaj chcesz otworzyć rozwiązanie tylko raz w każdym przebiegu testu. Aby uruchomić metodę tylko raz, należy poprzedzić metodę atrybutem `[AssemblyInitialize]`. Nie zapomnij, że dla każdej metody testowej jest również wymagany atrybut [HostType ("VS IDE")].  Na przykład:
 
 ```csharp
 using EnvDTE;
@@ -164,10 +164,10 @@ namespace UnitTests
 
 ```
 
- Jeśli wystąpienie <xref:EnvDTE.Project?displayProperty=fullName> reprezentuje projekt modelowania, można je rzutować do i z [IModelingProject](/previous-versions/ee789474(v=vs.140)).
+ Jeśli wystąpienie <xref:EnvDTE.Project?displayProperty=fullName> reprezentuje projekt modelowania, można go rzutować do i z [IModelingProject](/previous-versions/ee789474(v=vs.140)).
 
 ## <a name="Opening"></a>Otwieranie diagramu modelu
- Dla każdego testu lub klasy testów zwykle chcesz korzystać z otwartego diagramu. Poniższy przykład używa `[ClassInitialize]` atrybutu, który wykonuje tę metodę przed innymi metodami w tej klasie testowej. Ponownie nie zapomnij, że dla każdej metody testowej jest wymagany również atrybut [HostType ("VS IDE")]:
+ Dla każdego testu lub klasy testów zwykle chcesz korzystać z otwartego diagramu. W poniższym przykładzie zastosowano atrybut `[ClassInitialize]`, który wykonuje tę metodę przed innymi metodami w tej klasie testowej. Ponownie nie zapomnij, że dla każdej metody testowej jest wymagany również atrybut [HostType ("VS IDE")]:
 
 ```csharp
 //
@@ -212,7 +212,7 @@ public class MyTestClass
 ```
 
 ## <a name="UiThread"></a>Wykonywanie zmian modelu w wątku interfejsu użytkownika
- Jeśli testy lub testowane metody są wprowadzane do magazynu modeli, należy wykonać je w wątku interfejsu użytkownika. Jeśli tego nie zrobisz, może zostać wyświetlony komunikat `AccessViolationException`. Ujmij kod metody testowej w wywołaniu wywołania:
+ Jeśli testy lub testowane metody są wprowadzane do magazynu modeli, należy wykonać je w wątku interfejsu użytkownika. Jeśli tego nie zrobisz, może pojawić się `AccessViolationException`. Ujmij kod metody testowej w wywołaniu wywołania:
 
 ```
 using System.Windows.Forms;
@@ -232,7 +232,7 @@ using Microsoft.VSSDK.Tools.VsIdeTesting;
 ```
 
 ## <a name="MEF"></a>Testowanie polecenia, gestu i innych składników MEF
- Składniki MEF używają deklaracji właściwości, które mają `[Import]` atrybut i których wartości są ustawiane przez ich hosty. Zazwyczaj takie właściwości to IDiagramContext, SVsServiceProvider i ILinkedUndoContext. Podczas testowania metody, która używa dowolnej z tych właściwości, przed wykonaniem testowanej metody należy ustawić ich wartości. Na przykład jeśli zapisano rozszerzenie polecenia podobne do tego kodu:
+ Składniki MEF używają deklaracji właściwości, które mają atrybut `[Import]` i których wartości są ustawiane przez ich hosty. Zazwyczaj takie właściwości to IDiagramContext, SVsServiceProvider i ILinkedUndoContext. Podczas testowania metody, która używa dowolnej z tych właściwości, przed wykonaniem testowanej metody należy ustawić ich wartości. Na przykład jeśli zapisano rozszerzenie polecenia podobne do tego kodu:
 
 ```
 
@@ -287,7 +287,7 @@ using Microsoft.VSSDK.Tools.VsIdeTesting;
 ...}
 ```
 
- Jeśli chcesz przetestować metodę, która przyjmuje zaimportowaną właściwość jako parametr, można zaimportować właściwość do klasy testowej i zastosować `SatisfyImportsOnce` do wystąpienia testowego. Na przykład:
+ Jeśli chcesz przetestować metodę, która przyjmuje jako parametr zaimportowaną właściwość, można zaimportować właściwość do klasy testowej i zastosować `SatisfyImportsOnce` do wystąpienia testowego. Na przykład:
 
 ```
 
@@ -376,7 +376,7 @@ testInstance.PublicMethod1();
 Assert.AreEqual("hello", testInstance.privateField1_Accessor);
 ```
 
- Definiowanie metod dostępu przy użyciu odbicia jest tak, jak zalecamy. Starsze wersje programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zapewniały narzędzia, które automatycznie utworzyły metodę dostępu dla każdej metody prywatnej. Chociaż jest to wygodne, nasze środowisko zasugeruje, że w efekcie testy jednostkowe są bardzo silnie powiązane ze strukturą wewnętrzną testowanej aplikacji. Powoduje to dodatkową pracę w przypadku zmiany wymagań lub architektury, ponieważ testy należy zmienić wraz z implementacją. Ponadto wszelkie błędne założenia w projekcie implementacji są również wbudowane w testy, aby testy nie znalazły błędów.
+ Definiowanie metod dostępu przy użyciu odbicia jest tak, jak zalecamy. Starsze wersje [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zapewniały narzędzie, które automatycznie utworzyło metodę dostępu dla każdej metody prywatnej. Chociaż jest to wygodne, nasze środowisko zasugeruje, że w efekcie testy jednostkowe są bardzo silnie powiązane ze strukturą wewnętrzną testowanej aplikacji. Powoduje to dodatkową pracę w przypadku zmiany wymagań lub architektury, ponieważ testy należy zmienić wraz z implementacją. Ponadto wszelkie błędne założenia w projekcie implementacji są również wbudowane w testy, aby testy nie znalazły błędów.
 
 ## <a name="see-also"></a>Zobacz też
  [Anatomia testu jednostkowego](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144) [Definiowanie polecenia menu na diagramie modelowania](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [UML — szybkie wprowadzanie przy użyciu tekstu](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a)

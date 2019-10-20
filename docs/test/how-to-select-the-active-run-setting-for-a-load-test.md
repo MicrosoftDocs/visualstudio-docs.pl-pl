@@ -1,62 +1,62 @@
 ---
-title: Wybieranie ustawienia przebiegu testu obciążeniowego
+title: Wybierz ustawienie uruchomieniowe dla testu obciążenia
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - load tests, run settings, active
 ms.assetid: ed6ff546-acfa-4dd8-b3a2-6e7455930ca4
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 12582aa4c1aa41aa0a38f652cf4841ba1f9953e1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7a356c69eaa30141ceeb94dd2106b0eb477f35a5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949946"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653447"
 ---
-# <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Instrukcje: Wybierz aktywne ustawienia uruchamiania dla testu obciążenia
+# <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Instrukcje: Wybieranie aktywnego ustawienia uruchomieniowego dla testu obciążenia
 
-Po utworzeniu testu obciążenia za pomocą **Kreatora nowego testu obciążeniowego**, możesz użyć **edytora testu obciążenia** można zmienić właściwości scenariuszy do spełnienia potrzeb i celów testowania.
+Po utworzeniu testu obciążenia przy użyciu **nowego Kreator testu obciążeniowego**można użyć **Edytor testu obciążeniowego** , aby zmienić właściwości scenariuszy, aby spełniały potrzeby testowania i cele.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-Test obciążenia może zawierać jeden lub więcej *parametrów uruchomieniowych* które są zestawem właściwości wpływającym na sposób wykonywania testu obciążeniowego. Ustawienia uruchamiania są zorganizowane według kategorii w **właściwości** okna. Po uruchomieniu testu obciążenia używa uruchomieniowy, który jest aktualnie ustawiona jako aktywna.
+Test obciążenia może zawierać jedno lub więcej *parametrów uruchomieniowych* , które są zestawem właściwości, które wpływają na sposób przebiegu testu obciążenia. Parametry uruchomieniowe są zorganizowane według kategorii w oknie **Właściwości** . Po uruchomieniu testu obciążenia używa ustawienia uruchomieniowego, które jest obecnie ustawione jako aktywne.
 
 > [!NOTE]
 > Aby uzyskać pełną listę właściwości parametrów uruchomieniowych i ich opisów, zobacz [właściwości ustawień przebiegu testu obciążenia](../test/load-test-run-settings-properties.md).
 
-Jeśli test obciążeniowy zawiera tylko jeden węzeł ustawień w obszarze **parametrów uruchomieniowych** folderu, w tym węźle jest zawsze aktywny węzeł. Jeśli test obciążeniowy zawiera wiele węzłów parametrów uruchomieniowych, możesz wybrać jeden do użycia podczas uruchamiania testu obciążenia. Zobacz [jak: Dodawanie dodatkowych parametrów uruchomieniowych do testu obciążeniowego](../test/how-to-add-additional-run-settings-to-a-load-test.md).
+Jeśli test obciążenia zawiera tylko jeden węzeł Ustawienia uruchomieniowego w folderze **Parametry uruchomieniowe** , ten węzeł zawsze jest aktywnym węzłem. Jeśli test obciążenia zawiera wiele węzłów parametrów uruchomieniowych, można wybrać jeden do użycia podczas uruchamiania testu obciążenia. Zobacz [jak: dodać dodatkowe parametry uruchomieniowe do testu obciążenia](../test/how-to-add-additional-run-settings-to-a-load-test.md).
 
-W **edytora testu obciążenia**, aktywnego ustawienia uruchamiania jest identyfikowane za pomocą sufiksu "[aktywny]".
+W **Edytor testu obciążeniowego**ustawienie aktywnego przebiegu jest identyfikowane za pomocą sufiksu "[Active]".
 
-## <a name="select-the-active-run-setting"></a>Wybierz aktywnego ustawienia uruchamiania
+## <a name="select-the-active-run-setting"></a>Wybierz aktywne ustawienie uruchomieniowe
 
 1. Otwórz test obciążenia.
 
-2. Rozwiń **parametrów uruchomieniowych** folderu.
+2. Rozwiń folder **Parametry uruchomieniowe** .
 
-3. Kliknij prawym przyciskiem myszy węzeł parametrów uruchomieniowych, który ma być aktywnym węźle, a następnie kliknij **Ustaw jako aktywny**.
+3. Kliknij prawym przyciskiem myszy węzeł Ustawienia uruchamiania, który ma być aktywnym węzłem, a następnie wybierz pozycję **Ustaw jako aktywny**.
 
-     W **Edito testu obciążenia**r, węzeł dotyczy uruchomieniowy jest aktualizowany wraz z sufiksem "[aktywny]".
+     W **teście obciążenia Edito**r, węzeł Ustawienia uruchamiania, którego to dotyczy, zostanie zaktualizowany przy użyciu sufiksu "[Active]".
 
-     Parametr uruchomieniowy wybrane stanie się aktywny, a pozostaje aktywne, dopóki nie wybierzesz innej uruchomieniowy jako aktywny.
+     Wybrane ustawienie przebiegu zostanie uaktywnione i pozostaje aktywne do momentu wybrania innego ustawienia uruchomieniowego, które ma być aktywne.
 
 > [!NOTE]
-> Można zastąpić Uruchom aktywne ustawienie ustawiając zmienną środowiskową o nazwie `Test.UseRunSetting=<run setting name>`. Jest to przydatne, po uruchomieniu testu obciążenia z wiersza polecenia lub pliku wsadowego. Dzięki temu można określić różne ustawienia uruchamiania bez konieczności otwierania testu obciążenia.
+> Można zastąpić aktywne ustawienie uruchomieniowe, ustawiając zmienną środowiskową o nazwie `Test.UseRunSetting=<run setting name>`. Jest to przydatne w przypadku uruchamiania testu obciążenia z wiersza polecenia lub pliku wsadowego. Pozwala to wybrać różne Parametry uruchomieniowe bez otwierania testu obciążenia.
 
-## <a name="specify-the-run-setting-to-use-from-the-command-line"></a>Określenie parametru uruchomieniowego do użycia z poziomu wiersza polecenia
+## <a name="specify-the-run-setting-to-use-from-the-command-line"></a>Określ ustawienie uruchomieniowe do użycia z wiersza polecenia
 
-Można zastąpić domyślnych parametrów uruchomieniowych w teście obciążenia, ustawiając zmienną środowiskową z wiersza polecenia:
+Można zastąpić domyślne parametry uruchomieniowe w teście obciążenia, ustawiając zmienną środowiskową z wiersza polecenia:
 
-**Ustaw Test.UseRunSetting=PreProdEnvironment**
+**Ustaw test. UseRunSetting = PreProdEnvironment**
 
-I uruchom test:
+I do uruchomienia testu:
 
-**mstest /testcontainer:loadtest1.loadtest**
+**MSTest/testcontainer: LoadTest1. LoadTest**
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Konfigurowanie ustawień testu obciążenia](../test/configure-load-test-run-settings.md)
-- [Określanie zbiorów liczników oraz zasad progu dla komputerów w teście obciążeniowym](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
-- [Instrukcje: Dodawanie dodatkowych ustawień przebiegu testu obciążenia](../test/how-to-add-additional-run-settings-to-a-load-test.md)
+- [Skonfiguruj ustawienia przebiegu testu obciążenia](../test/configure-load-test-run-settings.md)
+- [Określ zestawy liczników i reguły progowe dla komputerów w teście obciążenia](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
+- [Instrukcje: Dodawanie dodatkowych parametrów uruchomieniowych do testu obciążenia](../test/how-to-add-additional-run-settings-to-a-load-test.md)

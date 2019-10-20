@@ -1,65 +1,65 @@
 ---
-title: 'Instrukcje: Ograniczanie bieżącego wyboru i uzyskiwanie dostępu do niego'
+title: 'Porady: ograniczenie bieżącego wyboru i uzyskiwanie dostępu do niego'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, accessing the current selection
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cc93f276dae3caeec08a21a74e3bdcaa365fee9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d8d10efbe87177f9caa6e3471e548569a59c3e47
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993462"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667215"
 ---
-# <a name="how-to-access-and-constrain-the-current-selection"></a>Instrukcje: Ograniczanie bieżącego wyboru i uzyskiwanie dostępu do niego
+# <a name="how-to-access-and-constrain-the-current-selection"></a>Porady: ograniczenie bieżącego wyboru i uzyskiwanie dostępu do niego
 
-Kiedy piszesz obsługi polecenia lub gestu dla języka specyficznego dla domeny, można określić elementu użytkownik kliknął prawym przyciskiem myszy. Można również uniemożliwić niektórych kształtów lub pól są zaznaczone. Na przykład można rozmieścić, że po kliknięciu ikony dekorator kształtu, który go zawiera zamian zostanie wybrany. Ograniczając zaznaczenia w ten sposób powoduje zmniejszenie liczby programów obsługi, które trzeba napisać. Ponadto ułatwia dla użytkownika, który może kliknij w dowolnym miejscu w kształcie bez konieczności uniknąć dekoratora.
+Gdy piszesz polecenie lub program obsługi gestu dla języka specyficznego dla domeny, możesz określić, jaki element użytkownik kliknął prawym przyciskiem myszy. Możesz również uniemożliwić wybranie niektórych kształtów lub pól. Na przykład można ustawić, że gdy użytkownik kliknie ikonę dekoratora, w zamian zostanie wybrany kształt zawierający ją. Ograniczanie wyboru w ten sposób zmniejsza liczbę programów obsługi, które należy napisać. Ułatwia to również użytkownikom, którzy mogą kliknąć gdziekolwiek w kształcie, bez konieczności uniknięcia dekoratora.
 
-## <a name="access-the-current-selection-from-a-command-handler"></a>Dostęp do bieżącego zaznaczenia z programem obsługi.
+## <a name="access-the-current-selection-from-a-command-handler"></a>Dostęp do bieżącego zaznaczenia z programu obsługi poleceń
 
-Klasy zestaw poleceń języka specyficznego dla domeny zawiera programy obsługi poleceń do niestandardowych poleceń. <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> Klasy, z którego pochodzi klasy zestaw poleceń języka specyficznego dla domeny, zapewnia kilka elementów członkowskich do uzyskiwania dostępu do bieżącego zaznaczenia.
+Klasa zestawu poleceń dla języka specyficznego dla domeny zawiera programy obsługi poleceń dla poleceń niestandardowych. Klasa <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>, z której pochodzi Klasa zestawu poleceń dla języka specyficznego dla domeny, zawiera kilku członków do uzyskiwania dostępu do bieżącego zaznaczenia.
 
-W zależności od polecenia program obsługi poleceń może być konieczne zaznaczenie w Projektancie modeli, Eksplorator modelu lub aktywnego okna.
+W zależności od polecenia program obsługi poleceń może potrzebować wyboru w projektancie modeli, Eksploratorze modelu lub aktywnym oknie.
 
-### <a name="to-access-selection-information"></a>Dostęp do informacji o wybór
+### <a name="to-access-selection-information"></a>Aby uzyskać dostęp do informacji o wyborze
 
-1. <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> Klasa definiuje następujące elementy członkowskie, które mogą służyć do dostępu do bieżącego zaznaczenia.
+1. Klasa <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> definiuje następujące elementy członkowskie, których można użyć w celu uzyskania dostępu do bieżącego zaznaczenia.
 
     |Element członkowski|Opis|
     |-|-|
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsAnyDocumentSelectionCompartment%2A> — Metoda|Zwraca `true` elementy zaznaczone w Projektancie modeli w przypadku kształt przedziału; w przeciwnym razie `false`.|
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsDiagramSelected%2A> — Metoda|Zwraca `true` Jeśli diagram jest wybrane w Projektancie modeli; w przeciwnym razie `false`.|
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsSingleDocumentSelection%2A> — Metoda|Zwraca `true` Jeśli dokładnie jeden element jest wybrany w Projektancie modeli; w przeciwnym razie `false`.|
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsSingleSelection%2A> — Metoda|Zwraca `true` Jeśli dokładnie jeden element jest wybrany w aktywnym oknie; w przeciwnym razie `false`.|
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentDocumentSelection%2A> Właściwość|Pobiera kolekcję tylko do odczytu elementy zaznaczone w Projektancie modeli.|
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentSelection%2A> Właściwość|Pobiera kolekcję tylko do odczytu elementów wybrano aktywnego okna.|
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleDocumentSelection%2A> Właściwość|Pobiera podstawowy element zaznaczenia w Projektancie modeli.|
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleSelection%2A> Właściwość|Pobiera podstawowy element wyboru aktywnego okna.|
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsAnyDocumentSelectionCompartment%2A>, Metoda|Zwraca `true`, jeśli którykolwiek z elementów zaznaczonych w projektancie modeli jest kształtem przedziału; w przeciwnym razie `false`.|
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsDiagramSelected%2A>, Metoda|Zwraca `true`, jeśli diagram został wybrany w projektancie modeli; w przeciwnym razie `false`.|
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsSingleDocumentSelection%2A>, Metoda|Zwraca `true`, jeśli wybrano dokładnie jeden element w projektancie modeli; w przeciwnym razie `false`.|
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsSingleSelection%2A>, Metoda|Zwraca `true`, jeśli wybrano dokładnie jeden element w aktywnym oknie; w przeciwnym razie `false`.|
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentDocumentSelection%2A> Właściwość|Pobiera kolekcję tylko do odczytu elementów wybranych w projektancie modeli.|
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentSelection%2A> Właściwość|Pobiera kolekcję tylko do odczytu elementów wybranych w aktywnym oknie.|
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleDocumentSelection%2A> Właściwość|Pobiera element podstawowy zaznaczenia w projektancie modeli.|
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleSelection%2A> Właściwość|Pobiera element podstawowy zaznaczenia w aktywnym oknie.|
 
-2. <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet.CurrentDocView%2A> Właściwość <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> klasy zapewnia dostęp do <xref:Microsoft.VisualStudio.Modeling.Shell.DiagramDocView> obiekt, który reprezentuje oknie projektanta modeli i zapewnia dodatkowe prawa dostępu wybranych elementów w Projektancie modeli.
+2. Właściwość <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet.CurrentDocView%2A> klasy <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> zapewnia dostęp do obiektu <xref:Microsoft.VisualStudio.Modeling.Shell.DiagramDocView>, który reprezentuje okno projektanta modelu i zapewnia dodatkowy dostęp do wybranych elementów w projektancie modeli.
 
-3. Ponadto wygenerowanego kodu definiuje właściwość okna narzędzia Eksploratora i Eksplorator właściwości zaznaczenia w poleceniu set — Klasa języka specyficznego dla domeny.
+3. Ponadto wygenerowany kod definiuje Właściwość okna narzędzia Eksploratora i Właściwość wybór Eksploratora w klasie zestawu poleceń dla języka specyficznego dla domeny.
 
-    - Właściwość okna narzędzia Eksploratora Zwraca wystąpienie klasy okna narzędzia Eksploratora dla języka specyficznego dla domeny. Pochodną klasy okna narzędzia Eksploratora <xref:Microsoft.VisualStudio.Modeling.Shell.ModelExplorerToolWindow> klasy i reprezentuje Eksploratora modelu dla języka specyficznego dla domeny.
+    - Właściwość okna narzędzia Eksploratora zwraca wystąpienie klasy okna narzędzi Eksploratora dla języka specyficznego dla domeny. Klasa okna narzędzi Eksploratora pochodzi z klasy <xref:Microsoft.VisualStudio.Modeling.Shell.ModelExplorerToolWindow> i reprezentuje Eksploratora modeli dla języka specyficznego dla domeny.
 
-    - `ExplorerSelection` Właściwość zwraca wybranego elementu w oknie Eksploratora modelu dla języka specyficznego dla domeny.
+    - Właściwość `ExplorerSelection` zwraca wybrany element w oknie Eksplorator modelu dla języka specyficznego dla domeny.
 
-## <a name="determine-which-window-is-active"></a>Określić, które okno jest aktywne
+## <a name="determine-which-window-is-active"></a>Ustal, które okno jest aktywne
 
-<xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService> Zawiera interfejs definiuje członków, które zapewniają dostęp do bieżącego stanu zaznaczenia w powłoce. Możesz uzyskać <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService> obiektów w klasie pakietu lub klasy zestawu poleceń dla języka specyficznego dla domeny, za pośrednictwem `MonitorSelection` właściwości zdefiniowanej w klasie bazowej każdego z nich. Klasa pakiet pochodzi z <xref:Microsoft.VisualStudio.Modeling.Shell.ModelingPackage> klasy, a polecenie zestawu pochodzi od klasy <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> klasy.
+Interfejs <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService> zawiera definicje elementów członkowskich, które zapewniają dostęp do bieżącego stanu zaznaczenia w powłoce. Obiekt <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService> można uzyskać z klasy pakietu lub klasy zestawu poleceń dla języka specyficznego dla domeny za pomocą właściwości `MonitorSelection` zdefiniowanej w klasie bazowej każdej z nich. Klasa pakietu pochodzi z klasy <xref:Microsoft.VisualStudio.Modeling.Shell.ModelingPackage>, a Klasa zestawu poleceń pochodzi od klasy <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.
 
-### <a name="to-determine-from-a-command-handler-what-type-of-window-is-active"></a>Aby określić z obsługi polecenia, jakiego rodzaju okno jest aktywne
+### <a name="to-determine-from-a-command-handler-what-type-of-window-is-active"></a>Aby określić, jaki typ okna jest aktywny w programie obsługi poleceń
 
-1. <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.MonitorSelection%2A> Właściwość <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> klasy zwraca <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService> obiektu, który zapewnia dostęp do bieżącego stanu zaznaczenia w powłoce.
+1. Właściwość <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.MonitorSelection%2A> klasy <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> zwraca obiekt <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService>, który zapewnia dostęp do bieżącego stanu zaznaczenia w powłoce.
 
-2. <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService.CurrentSelectionContainer%2A> Właściwość <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService> interfejs otrzymuje kontenera aktywnego zaznaczenia, które mogą różnić się od aktywnego okna.
+2. Właściwość <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService.CurrentSelectionContainer%2A> interfejsu <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService> pobiera aktywny kontener wyboru, który może się różnić od aktywnego okna.
 
-3. Dodaj następujące właściwości do polecenia set — klasa dla Ciebie języka specyficznego dla domeny, aby ustalić, jakiego rodzaju okno jest aktywne.
+3. Dodaj następujące właściwości do klasy zestawu poleceń dla języka specyficznego dla domeny, aby określić, jakiego typu okno jest aktywne.
 
     ```csharp
     // using Microsoft.VisualStudio.Modeling.Shell;
@@ -87,29 +87,29 @@ W zależności od polecenia program obsługi poleceń może być konieczne zazna
     }
     ```
 
-## <a name="constrain-the-selection"></a>Zachowaj zaznaczenie
+## <a name="constrain-the-selection"></a>Ogranicz wybór
 
-Przez dodanie reguł zaznaczenia, można kontrolować, które elementy są zaznaczone, gdy użytkownik wybierze element w modelu. Na przykład aby umożliwić użytkownikowi traktować liczbę elementów jako pojedynczą jednostkę, można użyć reguła wyboru.
+Dodając reguły wyboru, można kontrolować, które elementy są wybierane, gdy użytkownik wybierze element w modelu. Na przykład, aby zezwolić użytkownikowi na traktowanie wielu elementów jako pojedynczej jednostki, można użyć reguły wyboru.
 
-### <a name="to-create-a-selection-rule"></a>Aby utworzyć regułę zaznaczenia
+### <a name="to-create-a-selection-rule"></a>Aby utworzyć regułę wyboru
 
-1. Utwórz plik niestandardowego kodu w projekcie języka DSL
+1. Tworzenie niestandardowego pliku kodu w projekcie DSL
 
-2. Definiowanie klasy reguła wyboru, która jest tworzony na podstawie <xref:Microsoft.VisualStudio.Modeling.Diagrams.DiagramSelectionRules> klasy.
+2. Zdefiniuj klasę reguły wyboru, która jest pochodną klasy <xref:Microsoft.VisualStudio.Modeling.Diagrams.DiagramSelectionRules>.
 
-3. Zastąp <xref:Microsoft.VisualStudio.Modeling.Diagrams.DiagramSelectionRules.GetCompliantSelection%2A> metody klasy reguła wyboru do zastosowania kryteriów wyboru.
+3. Zastąp metodę <xref:Microsoft.VisualStudio.Modeling.Diagrams.DiagramSelectionRules.GetCompliantSelection%2A> klasy reguł wyboru, aby zastosować kryteria wyboru.
 
-4. Dodaj definicję klasy częściowej klasy ClassDiagram do pliku kodu niestandardowego.
+4. Dodaj definicję klasy częściowej dla klasy ClassDiagram do pliku kodu niestandardowego.
 
-     `ClassDiagram` Klasa pochodzi od <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram> klasy i jest zdefiniowana w pliku wygenerowanego kodu, Diagram.cs, w projekcie języka DSL.
+     Klasa `ClassDiagram` dziedziczy z klasy <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram> i jest zdefiniowana w wygenerowanym pliku kodu, Diagram.cs, w projekcie DSL.
 
-5. Zastąp <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.SelectionRules%2A> właściwość `ClassDiagram` klasy w celu zwrócenia reguły niestandardowy wybór.
+5. Zastąp Właściwość <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.SelectionRules%2A> klasy `ClassDiagram`, aby zwracała regułę wyboru niestandardowego.
 
-     Domyślna implementacja klasy <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.SelectionRules%2A> właściwości pobiera obiekt reguła wyboru, który nie powoduje modyfikacji zaznaczenia.
+     Domyślna implementacja właściwości <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.SelectionRules%2A> pobiera obiekt reguły wyboru, który nie modyfikuje zaznaczenia.
 
 ### <a name="example"></a>Przykład
 
-Następujący plik kodu jest tworzona reguła wyboru rozwijany wyboru, aby uwzględnić wszystkie wystąpienia został początkowo zaznaczone kształty domeny.
+Poniższy plik kodu tworzy regułę wyboru, która rozszerza zaznaczenie, aby uwzględnić wszystkie wystąpienia każdego z wcześniej wybranych kształtów domeny.
 
 ```csharp
 using System;

@@ -1,49 +1,49 @@
 ---
-title: Projektant przepływu pracy — FlowDecision, Projektant działań
+title: Projektant przepływu pracy — Projektant działań FlowDecision
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.FlowDecision.UI
 ms.assetid: 4a49edc3-3662-4b7b-812e-0a5ba00d6c94
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 095ffb7284b9363d3bdb04749c8cff7114927935
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2274333de9255ff818b4ee6952bfa1b2a99c59b3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949672"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650424"
 ---
 # <a name="flowdecision-activity-designer"></a>FlowDecision, projektant działań
 
-<xref:System.Activities.Statements.FlowDecision> Węzeł jest węzłem warunkowe, oferująca gałęzi przepływ sterowania w jednym z dwóch rozwiązań alternatywnych, na podstawie tego, czy określony warunek jest spełniony. Jeśli przepływ wymaga więcej niż dwie gałęzie, należy użyć <xref:System.Activities.Statements.FlowSwitch%601> zamiast tego.
+Węzeł <xref:System.Activities.Statements.FlowDecision> jest węzłem warunkowym, który udostępnia gałąź dla przepływu sterowania w jednym z dwóch alternatyw, w zależności od tego, czy określony warunek jest spełniony. Jeśli przepływ wymaga więcej niż dwóch gałęzi, Użyj zamiast niego <xref:System.Activities.Statements.FlowSwitch%601>.
 
 ## <a name="the-flowdecision-node"></a>Węzeł FlowDecision
 
-Użyj <xref:System.Activities.Statements.FlowDecision> podczas przepływu, można rozgałęzić do dwóch ścieżek. A <xref:System.Activities.Statements.FlowDecision> węzeł ma <xref:System.Activities.Statements.FlowDecision.Condition%2A> i <xref:System.Activities.Statements.FlowNode> związany z każdą dwa możliwe wyniki: <xref:System.Activities.Statements.FlowDecision.True%2A> lub <xref:System.Activities.Statements.FlowDecision.False%2A>. <xref:System.Activities.Statements.FlowDecision.Condition%2A> Jest obliczane i wartość tego okresu ewaluacji określa następnego <xref:System.Activities.Statements.FlowNode> mają być przetwarzane w ramach <xref:System.Activities.Statements.Flowchart>.
+Użyj <xref:System.Activities.Statements.FlowDecision>, gdy przepływ można rozgałęzić na dwie ścieżki. Węzeł <xref:System.Activities.Statements.FlowDecision> ma <xref:System.Activities.Statements.FlowDecision.Condition%2A> i <xref:System.Activities.Statements.FlowNode> skojarzone z dwoma możliwymi wynikami: <xref:System.Activities.Statements.FlowDecision.True%2A> lub <xref:System.Activities.Statements.FlowDecision.False%2A>. @No__t_0 jest oceniane, a wartość tej oceny określa następny <xref:System.Activities.Statements.FlowNode> do przetworzenia w <xref:System.Activities.Statements.Flowchart>.
 
-### <a name="using-the-flowdecision-designer"></a>Za pomocą projektanta FlowDecision
+### <a name="using-the-flowdecision-designer"></a>Korzystanie z narzędzia FlowDecision Designer
 
-**FlowDecision** projektanta znajdują się w **schemat blokowy** kategorii **przybornika**, które jest dostępne po kliknięciu **przybornika** Karta w Projektancie przepływu pracy. Można także wybrać **przybornika** z **widoku** menu lub naciśnij klawisz **Ctrl**+**Alt** + **X**.
+Projektanta **FlowDecision** można znaleźć w kategorii **schemat blokowy** , do którego **uzyskuje się dostęp**, klikając kartę **Przybornik** na Projektant przepływu pracy. Alternatywnie wybierz pozycję **Przybornik** z menu **Widok** lub naciśnij **klawisze CTRL** +**Alt** +**X**.
 
-**FlowDecision** projektanta mogą być przeciągnięte z **przybornika** i porzucić do powierzchni projektanta przepływów pracy w ramach **schemat blokowy** projektanta działań. Spowoduje to utworzenie <xref:System.Activities.Statements.FlowDecision> etykietą **decyzji** w ramach <xref:System.Activities.Statements.Flowchart> działania. Myszy projektanta i **True** i **False** kwadratowy dla obu gałęzi uchwytów.
+Projektanta **FlowDecision** można przeciągnąć z **przybornika** i porzucić do Projektant przepływu pracy powierzchni w ramach projektanta działań **schematu blokowego** . Spowoduje to utworzenie <xref:System.Activities.Statements.FlowDecision> oznaczonej **decyzją** w ramach działania <xref:System.Activities.Statements.Flowchart>. Wskaźnik myszy nad projektantem i dojścia do **rzeczywistych** i **fałszywych** kwadratów dla dwóch gałęzi.
 
-Po przeciągnięciu **FlowDecision** projektanta i innych projektantów na **schemat blokowy**, węzły, które mogą być połączone ze sobą, aby określić kolejność wykonywania. Utwórz łącze między węzeł źródłowy (w tym **True** i **False** gałęzi z **FlowDecision**) i węzła docelowego myszy Projektanta węzeł źródłowy i kwadratowy uchwytów na każdej stronie. Kliknij jeden z uchwytów, kwadratowych i przeciągnij go, przytrzymując przycisk myszy, aby jeden z uchwytów, które pojawia się w podobny sposób w całym węźle docelowym, gdy wskaźnik myszy nad nim. Zwolnij przycisk myszy, a następnie tworzone jest połączenie między tymi dwoma węzłami, które jest reprezentowany jako strzałka z projektanta źródła do docelowego projektanta.
+Po przeciągnięciu projektanta **FlowDecision** i innych projektantów na **schemat blokowy**węzły mogą być połączone ze sobą, aby określić kolejność wykonywania. Aby utworzyć łącze między węzłem źródłowym (z uwzględnieniem **rzeczywistych** i **fałszywych** gałęzi **FlowDecision**) i węzłem docelowym, mysz nad projektantem węzła źródłowego i uchwyty kwadratowe pojawiają się po każdej stronie. Kliknij jeden z uchwytów kwadratowych i przeciągnij go, przytrzymując wciśnięty przycisk myszy do jednego z uchwytów, które pojawiają się w podobny sposób wokół węzła docelowego po umieszczeniu nad nim wskaźnika myszy. Zwolnij przycisk myszy, a łącze między utworzonymi tymi dwoma węzłami jest reprezentowane jako strzałka z projektanta źródła do projektanta docelowego.
 
-Wyrażenie, które stany <xref:System.Activities.Statements.FlowDecision.Condition%2A> można wpisać w **warunek** pole **właściwości** , klikając pozycję okna, gdy tekst wskazówki jest wyświetlany komunikat "Wprowadź wyrażenie VB".
+Wyrażenie określające <xref:System.Activities.Statements.FlowDecision.Condition%2A> można wpisać w polu **warunek** okna **Właściwości** , klikając miejsce, w którym tekst wskazówki brzmi "wprowadź wyrażenie VB".
 
 ### <a name="the-flowdecision-properties"></a>Właściwości FlowDecision
 
-W poniższej tabeli przedstawiono <xref:System.Activities.Statements.FlowDecision> właściwości i w tym artykule opisano, jak są używane w projektancie. Te właściwości można edytować w siatce właściwości lub na powierzchni projektowej.
+W poniższej tabeli przedstawiono właściwości <xref:System.Activities.Statements.FlowDecision> i opisano sposób ich używania w projektancie. Te właściwości można edytować w siatce właściwości lub na powierzchni projektanta.
 
 |Nazwa właściwości|Wymagane|Użycie|
 |-|--------------|-|
-|<xref:System.Activities.Statements.FlowDecision.Condition%2A>|Prawda|Warunek, który określa ścieżkę, która przyjmuje sterowanie przepływem.|
-|<xref:System.Activities.Statements.FlowDecision.True%2A>|False|Ścieżka podjęte przez sterowanie przepływem, jeśli <xref:System.Activities.Statements.FlowDecision.Condition%2A> jest spełniony.|
-|<xref:System.Activities.Statements.FlowDecision.False%2A>|False|Ścieżka podjęte przez sterowanie przepływem, jeśli <xref:System.Activities.Statements.FlowDecision.Condition%2A> nie jest spełniony.|
+|<xref:System.Activities.Statements.FlowDecision.Condition%2A>|Oznacza|Warunek określający, która ścieżka ma być wykonywana przez sterowanie przepływem.|
+|<xref:System.Activities.Statements.FlowDecision.True%2A>|False|Ścieżka wykonywana przez sterowanie przepływem, jeśli <xref:System.Activities.Statements.FlowDecision.Condition%2A> jest spełniony.|
+|<xref:System.Activities.Statements.FlowDecision.False%2A>|False|Ścieżka wykonywana przez sterowanie przepływem, jeśli <xref:System.Activities.Statements.FlowDecision.Condition%2A> nie jest spełniony.|
 
 ## <a name="see-also"></a>Zobacz także
 

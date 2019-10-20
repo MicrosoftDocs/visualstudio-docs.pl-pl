@@ -1,5 +1,5 @@
 ---
-title: Instrukcja ForEach&lt;T&gt; projektanta działań | Dokumentacja firmy Microsoft
+title: '@No__t_0T ForEach &gt; Projektant działań | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -8,30 +8,29 @@ f1_keywords:
 - System.Activities.Statements.ForEach`1.UI
 ms.assetid: 67097b3a-fcf5-4a72-beb1-2c7784151a86
 caps.latest.revision: 5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 97732b92c5a90334917ad4e74667f88d605b647d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d41451ada0e37f953e9d611a4e3733815a9d347b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62943294"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656656"
 ---
-# <a name="foreachlttgt-activity-designer"></a>Instrukcja ForEach&lt;T&gt; Projektant działań
-<xref:System.Activities.Statements.ForEach%601> Działanie wykonuje działania zawarte w jego <xref:System.Activities.Statements.ForEach%601.Body%2A> dla każdego elementu w określonej <xref:System.Activities.Statements.ForEach%601.Values%2A> kolekcji.  
-  
-## <a name="foreacht-properties-in-the-workflow-designer"></a>Instrukcja ForEach\<T > właściwości w Projektancie przepływu pracy  
- W poniższej tabeli przedstawiono najbardziej przydatne <xref:System.Activities.Statements.ForEach%601> właściwości działań i informacje dotyczące używania ich w projektancie.  
-  
-|Nazwa właściwości|Wymagane|Użycie|  
-|-------------------|--------------|-----------|  
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Przyjazna nazwa <xref:System.Activities.Statements.ForEach%601> działania. Wartość domyślna to ForEach\<Int32 >. Mimo że <xref:System.Activities.Activity.DisplayName%2A> wartość nie jest bezwzględnie konieczne, jest najlepszym rozwiązaniem, aby użyć jednego.|  
-|<xref:System.Activities.Statements.ForEach%601.Values%2A>|Prawda|Kolekcja elementów do iteracji. Aby ustawić <xref:System.Activities.Statements.ForEach%601.Values%2A>, wpisz [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] wyrażenia w **wartości** polu na **ForEach\<T >** działanie projektanta lub w siatce właściwości.|  
-|*TypeArgument*|Prawda|Typ elementów w <xref:System.Activities.Statements.ForEach%601.Values%2A> kolekcji określonej przez parametr ogólny *T*. Domyślnie *elementu typeargument w języku* ustawiono **Int32**. Aby zmienić typ, zmień wartość *elementu typeargument w języku* pola kombi w siatce właściwości.|  
-  
- Domyślnie, nosi nazwę iteratora pętli **elementu**. Można zmienić nazwy zmiennej iteratora w <xref:System.Activities.Statements.ForEach%601> projektanta działań. Iteratora pętli można używać w wyrażeniach w elementy podrzędne <xref:System.Activities.Statements.ForEach%601> działania.  
-  
-## <a name="see-also"></a>Zobacz też  
- [ParallelForEach\<T>](../workflow-designer/parallelforeach-t-activity-designer.md)   
- [Przepływ sterowania](../workflow-designer/control-flow-activity-designers.md)
+# <a name="foreachlttgt-activity-designer"></a>@No__t_0T ForEach — Projektant działań &gt;
+Działanie <xref:System.Activities.Statements.ForEach%601> wykonuje działanie zawarte w jego <xref:System.Activities.Statements.ForEach%601.Body%2A> dla każdego elementu w określonej kolekcji <xref:System.Activities.Statements.ForEach%601.Values%2A>.
+
+## <a name="foreacht-properties-in-the-workflow-designer"></a>@No__t_0T ForEach > właściwości w Projektant przepływu pracy
+ W poniższej tabeli przedstawiono najbardziej przydatne właściwości działania <xref:System.Activities.Statements.ForEach%601> i opisano sposób ich używania w projektancie.
+
+|Nazwa właściwości|Wymagane|Użycie|
+|-------------------|--------------|-----------|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Przyjazna nazwa działania <xref:System.Activities.Statements.ForEach%601>. Wartość domyślna to ForEach \<Int32 >. Mimo że wartość <xref:System.Activities.Activity.DisplayName%2A> nie jest ściśle wymagana, najlepszym rozwiązaniem jest użycie jednego z nich.|
+|<xref:System.Activities.Statements.ForEach%601.Values%2A>|Oznacza|Kolekcja elementów do iteracji. Aby ustawić <xref:System.Activities.Statements.ForEach%601.Values%2A>, wpisz wyrażenie [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] w polu **wartości** w projektancie aktywności **\<T foreach >** lub w siatce właściwości.|
+|*Elementu TypeArgument*|Oznacza|Typ elementów w kolekcji <xref:System.Activities.Statements.ForEach%601.Values%2A> określonej przez parametr generyczny *t*. Domyślnie *elementu TypeArgument* jest ustawiona na **Int32**. Aby zmienić typ, należy zmienić wartość pola kombi *elementu TypeArgument* w siatce właściwości.|
+
+ Domyślnie iterator pętli ma nazwę **element**. Nazwę zmiennej iteratora można zmienić w projektancie działania <xref:System.Activities.Statements.ForEach%601>. Iteratora pętli można używać w wyrażeniach w elemencie podrzędnym działania <xref:System.Activities.Statements.ForEach%601>.
+
+## <a name="see-also"></a>Zobacz też
+ [ParallelForEach \<T >](../workflow-designer/parallelforeach-t-activity-designer.md) [przepływ sterowania](../workflow-designer/control-flow-activity-designers.md)

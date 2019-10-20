@@ -1,5 +1,5 @@
 ---
-title: Edytor XML i Projektant schematu
+title: Edytor XML i Projektant schematów
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -27,50 +27,50 @@ helpviewer_keywords:
 - XSL, style sheets
 - XMLDataDocument class
 ms.assetid: 1fd5de47-2d61-4180-9539-c2c4bf9ab768
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7493d6c10c83b16ad7579299a49a7747e34c20b
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: c9412d89ee7d9ad1412f0eaf9fe9341e336a65e5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746520"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668708"
 ---
 # <a name="xml-tools-in-visual-studio"></a>Narzędzia XML w Visual Studio
 
-*Język XML (Extensible Markup)* jest językiem znaczników, zapewniający format opisu danych. XML oddziela dane i jego prezentacji za pomocą skojarzonego arkuszy stylów, takich jak arkusz stylów języka XSL (Extensible) i kaskadowych arkuszy stylów (CSS). Visual Studio zawiera narzędzia i funkcje, dzięki którym łatwiej jest pracować z XML, XSLT i XML, schematy.
+*XML (XML)* jest językiem znaczników, który zapewnia format do opisywania danych. KOD XML oddziela dane i swoją prezentację przy użyciu skojarzonych arkuszy stylów, takich jak Extensible Stylesheet Language (XSL) i kaskadowych arkuszy stylów (CSS). Program Visual Studio zawiera narzędzia i funkcje, które ułatwiają pracę z schematami XML, XSLT i XML.
 
 ## <a name="xml-editor"></a>Edytor XML
 
-[Edytora XML](xml-editor.md) jest używany do edytowania dokumentów XML. Zapewnia pełną składnię XML sprawdzanie sprawdzanie poprawności schematu podczas wpisywania kolorowania i technologii IntelliSense. Jeśli definicję typu schematu lub dokumentu zostanie podany, aby wyświetlić listę dopuszczalny rozmiar elementów i atrybutów jest używany przez funkcję IntelliSense.
+[Edytor XML](xml-editor.md) służy do EDYTOWANIA dokumentów XML. Zapewnia pełną kontrolę składni XML, sprawdzanie poprawności schematu podczas pisania, kodowania kolorów i IntelliSense. W przypadku podanej definicji typu schematu lub dokumentu jest on używany przez funkcję IntelliSense do wyświetlania listy dozwolonych elementów i atrybutów.
 
 Dodatkowe funkcje obejmują:
 
-- Obsługa fragmentów kodu XML, tym wygenerować schematu fragmentów kodu
+- Obsługa fragmentów kodu XML, w tym fragmentów kodu generowanych przez schemat
 
-- Dokumentu, tworzenie konspektu, tak aby elementy można rozszerzyć i zwinięty
+- Konspekt dokumentu, aby można było rozwijać i zwijać elementy
 
-- Możliwość wykonania przekształcenia XSLT i wyświetlić wyniki jako tekst, XML lub HTML
+- Możliwość wykonywania transformacji XSLT i wyświetlania wyników w postaci tekstu, XML lub HTML
 
-- Możliwość generowania schematy języka (XSD) definicji schematu XML z wystąpienia dokumentu XML
+- Możliwość generowania schematów języka definicji schematu XML (XSD) z dokumentu wystąpienia XML
 
-- Obsługa Edytowanie arkuszy stylów XSLT, łącznie z obsługą technologii IntelliSense
+- Obsługa edycji arkuszy stylów XSLT, w tym obsługi technologii IntelliSense
 
 - Eksplorator schematu XML
 
 ## <a name="xml-schema-designer"></a>Projektant schematu XML
 
-[Projektanta schematu XML](xml-schema-designer.md) jest zintegrowana z usługą Visual Studio i edytorem XML, które umożliwiają pracę ze schematami języka (XSD) definicji schematu XML.
+[Projektant schematu XML](xml-schema-designer.md) jest zintegrowany z programem Visual Studio i EDYTORem XML, aby umożliwić współdziałanie z schematami języka definicji schematu XML (XSD).
 
 ## <a name="xslt-debugging"></a>Debugowanie kodu XSLT
 
-Program Visual Studio obsługuje [debugowania arkuszy stylów XSLT](../xml-tools/debugging-xslt.md). Za pomocą debugera, możesz ustawić punkty przerwania w arkuszu stylów XSLT, krok po kroku do arkusza stylów XSLT z kodu i tak dalej.
+Program Visual Studio obsługuje [debugowanie arkuszy stylów XSLT](../xml-tools/debugging-xslt.md). Za pomocą debugera można ustawić punkty przerwania w arkuszu stylów XSLT, przejść do arkusza stylów XSLT z kodu i tak dalej.
 
 > [!NOTE]
-> Debuger XSLT jest dostępna tylko w wersji Enterprise programu Visual Studio.
+> Debuger XSLT jest dostępny tylko w wersji Enterprise programu Visual Studio.
 
 ## <a name="see-also"></a>Zobacz także
 

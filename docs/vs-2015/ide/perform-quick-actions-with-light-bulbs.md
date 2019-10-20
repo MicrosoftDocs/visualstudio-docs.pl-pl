@@ -1,44 +1,44 @@
 ---
-title: Szybkie wykonywanie akcji dzięki żarówkom | Dokumentacja firmy Microsoft
+title: Wykonaj szybkie akcje z żarówkami | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: 990ee487-cf9a-4b89-9784-e7b47c220e8c
 caps.latest.revision: 9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 74237b42ebafb82e82705d42174efb6f6a4d3661
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 78ac9b0aba4e56b2240ef65783231d31d77e5144
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68203718"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670349"
 ---
 # <a name="perform-quick-actions-with-light-bulbs"></a>Szybkie wykonywanie akcji dzięki żarówkom
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Ikony żarówek są nową funkcją produktywność w programie Visual Studio 2015. Są one ikon wyświetlanych w edytorze programu Visual Studio i można kliknąć, aby wykonać szybkie akcje w tym refaktoryzacji naprawienie błędów. Żarówki przenieść naprawianie błędów i refaktoryzacji pomocy w pojedynczy punkt centralny często prawym przyciskiem myszy w wierszu, gdzie wpisujesz.  
-  
- ![Ikona mała ikona żarówki](../ide/media/vs2015-lightbulbsmall.png "VS2015_LightBulbSmall")  
-  
- W języku C# i Visual Basic zobaczysz, że żarówki, jeśli czerwona fala i programu Visual Studio zawiera sugestię dotyczącą sposobu rozwiązania problemu. Na przykład w przypadku błędu wskazywanym przez czerwona fala żarówka pojawi się po poprawki są dostępne dla tego błędu. W języku C++ po dodaniu nowej funkcji do pliku nagłówka, zobaczysz żarówki, która umożliwia tworzenie szkieletu stosowania tej funkcji. W dowolnym języku innych firm może zapewnić Diagnostyka niestandardowa i sugestie, na przykład jako część zestawu SDK i żarówki programu Visual Studio zostanie podświetlony, zależnie od tych zasad.  
-  
-## <a name="to-see-a-light-bulb"></a>Aby wyświetlić żarówka  
-  
-1. W wielu przypadkach żarówki spontanicznie są wyświetlane po umieszczeniu wskaźnika myszy punkcie błąd lub w lewy margines edytora, gdy Przesuń karetkę do wiersza, który zawiera błąd. Gdy pojawi się czerwona fala, możesz umieścić kursor go, aby wyświetlić żarówki. Może również spowodować żarówki wyświetlić, gdy używasz myszy lub klawiatury, aby przejść do dowolnego miejsca w wierszu miejsce wystąpienia problemu.  
-  
-2. Naciśnij klawisz **Ctrl +.** gdziekolwiek w wierszu wywołuje żarówki i przejść bezpośrednio do listy potencjalne rozwiązania.  
-  
-   ![Ikona żarówki z kursor](../ide/media/vs2015-lightbulb-hover.png "VS2015_LightBulb_Hover")  
-  
-## <a name="to-see-potential-fixes"></a>Aby wyświetlić potencjalne rozwiązania  
- Kliknij strzałkę w dół lub potencjalne Pokaż poprawki łącze, aby wyświetlić listę szybkie akcje, które można wykonać żarówki.  
-  
- ![Ikona żarówki rozwinięte](../ide/media/vs2015-lightbulb-hover-expanded.png "VS2015_LightBulb_hover_expanded")  
-  
-## <a name="to-do-a-refactoring"></a>Aby zrobić, Refaktoryzacja  
- Można wykonywać operacji refaktoryzacji, klikając prawym przyciskiem myszy, aby wyświetlić menu kontekstowe, ale można również nacisnąć klawisze Ctrl +. Aby wyświetlić opcje refaktoryzacji. Na poniższej ilustracji, refaktoryzacji Wyodrębnij metodę jest oferowana po naciśnięciu klawisza Ctrl +. gdzieś w wierszu, który zawiera `Math.Abs` wywołania:  
-  
- ![Ikona żarówki przedstawiający opcje refaktoryzacji](../ide/media/vs2015-lightbulbs-refactor.png "VS2015_LightBulbs_refactor")
+Żarówki są nową funkcją produktywności w programie Visual Studio 2015. Są to ikony, które pojawiają się w edytorze programu Visual Studio i można kliknąć, aby wykonać szybkie akcje, w tym refaktoryzację usuwania błędów. Żarówki umożliwiają naprawianie błędów i refaktoryzację pomocy w pojedynczym punkcie ogniskowym, często bezpośrednio w wierszu, w którym wpisujesz.
+
+ ![Ikona małej żarówki](../ide/media/vs2015-lightbulbsmall.png "VS2015_LightBulbSmall")
+
+ W C# i Visual Basic zobaczysz żarówkę, jeśli istnieje czerwona zygzakowata i program Visual Studio ma sugestię dotyczącą sposobu rozwiązania problemu. Jeśli na przykład wystąpi błąd wskazywany przez czerwony zygzak, zostanie wyświetlona Żarówka, gdy poprawki będą dostępne dla tego błędu. W C++programie, gdy dodasz nową funkcję do pliku nagłówkowego, zobaczysz żarówkę, która oferuje do tworzenia własnej implementacji tej funkcji. W przypadku dowolnego języka osoby trzecie mogą zapewnić niestandardową diagnostykę i sugestie, na przykład w ramach zestawu SDK, a żarówki programu Visual Studio na podstawie tych reguł.
+
+## <a name="to-see-a-light-bulb"></a>Aby wyświetlić żarówkę
+
+1. W wielu przypadkach żarówki są spontanicznie wyświetlane po umieszczeniu wskaźnika myszy w punkcie błędu lub na lewym marginesie edytora po przesunięciu karetki do wiersza, który zawiera błąd. Gdy zobaczysz czerwony zygzak, możesz go umieścić nad nim, aby wyświetlić żarówkę. Możesz również sprawić, aby żarówka była wyświetlana po użyciu myszy lub klawiatury, aby przejść do dowolnego miejsca w wierszu, w którym występuje problem.
+
+2. Naciśnij **klawisze CTRL +.** w dowolnym miejscu w wierszu, aby wywołać żarówkę i przejść bezpośrednio do listy potencjalnych poprawek.
+
+   ![Żarówka z przesuwaniem myszy](../ide/media/vs2015-lightbulb-hover.png "VS2015_LightBulb_Hover")
+
+## <a name="to-see-potential-fixes"></a>Aby wyświetlić potencjalne poprawki
+ Kliknij strzałkę w dół lub link Pokaż potencjalne poprawki, aby wyświetlić listę szybkich akcji, które można wykonać za pomocą żarówki.
+
+ ![Rozwinięta żarówka](../ide/media/vs2015-lightbulb-hover-expanded.png "VS2015_LightBulb_hover_expanded")
+
+## <a name="to-do-a-refactoring"></a>Aby wykonać refaktoryzację
+ Można nadal wykonywać refaktoryzacje przez kliknięcie prawym przyciskiem myszy, aby wyświetlić menu kontekstowe, ale można również nacisnąć klawisze CTRL +. Aby wyświetlić opcje refaktoryzacji. Na poniższej ilustracji jest oferowana Refaktoryzacja metody wyodrębniania po naciśnięciu klawiszy CTRL +. gdzieś w wierszu zawierającym `Math.Abs` wywołanie:
+
+ ![Żarówka przedstawiająca opcje refaktoryzacji](../ide/media/vs2015-lightbulbs-refactor.png "VS2015_LightBulbs_refactor")

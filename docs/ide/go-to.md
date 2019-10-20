@@ -7,87 +7,87 @@ helpviewer_keywords:
 - code editor, go to line
 - go to line
 - go to
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 588bc57dc2cda1030e9e1b8d1f989b2cc2d31662
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c3a810e96b410c0f1f6f5d6ffdaa07b1e007abd6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62550064"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654639"
 ---
 # <a name="find-code-using-go-to-commands"></a>Znajdowanie kodu za pomocą poleceń Przejdź do
 
-Visual Studio **przejdź do** poleceń wyszukiwania ukierunkowanych swój kod, aby ułatwić szybkie znajdowanie określonych elementów. Możesz przejść do określonego wiersza, typów, symboli, plików i elementów członkowskich z prostego, jednolitego interfejsu.
+Program Visual Studio **Przejdź do poleceń umożliwia** skoncentrowane wyszukiwanie kodu, aby pomóc w szybkim wyszukiwaniu określonych elementów. Możesz przejść do określonego wiersza, typu, symbolu, pliku i składowej z prostego, jednolitego interfejsu.
 
 ## <a name="how-to-use-it"></a>Jak z niej korzystać
 
 Dane wejściowe | Funkcja
 ------------ | ---
-**Keyboard** | Naciśnij klawisz **Ctrl**+**T** lub **Ctrl**+ **,**
-**Myszy** | Wybierz **Edytuj** > **przejdź do** > **przejdź do wszystkich**
+**Klawiatury** | Naciśnij klawisz **ctrl** +**t** lub **Ctrl** + **,**
+**Wskaźnik** | Wybierz pozycję **edytuj**  > **Przejdź do**  > **Przejdź do wszystkiego**
 
-Niewielki przedział jest wyświetlany w prawym górnym rogu edytora kodu.
+Małe okno jest wyświetlane w prawym górnym rogu edytora kodu.
 
-![Przejdź do wszystkich okien](media/go-to-all.png)
+![Przejdź do okna wszystkie](media/go-to-all.png)
 
-Podczas wpisywania w polu tekstowym, wyniki są wyświetlane na liście rozwijanej poniżej pola tekstowego. Aby przejść do elementu, wybierz go na liście.
+Podczas wpisywania w polu tekstowym wyniki pojawiają się na liście rozwijanej poniżej pola tekstowego. Aby przejść do elementu, wybierz go z listy.
 
-![Nawiguj do okna](../ide/media/vside_navigatetowindow.png)
+![Przejdź do okna](../ide/media/vside_navigatetowindow.png)
 
-Możesz też wprowadzić znak zapytania ( **?** ) Aby uzyskać dodatkową pomoc.
+Możesz również wprowadzić znak zapytania ( **?** ), aby uzyskać dodatkową pomoc.
 
-![Przejdź do wszystkich pomocy](media/go-to-all-help.png)
+![Przejdź do całej pomocy](media/go-to-all-help.png)
 
-## <a name="filtered-searches"></a>Filtrowane wyszukiwania
+## <a name="filtered-searches"></a>Wyszukiwania filtrowane
 
-Określony element jest domyślnie wyszukiwane we wszystkich elementach rozwiązań. Jednak można ograniczyć wyszukiwanie kodu, tak aby elementy określonych typów, prefacing wyszukiwane terminy z niektórych znaków. Filtr wyszukiwania można szybko zmienić, wybierając przyciski na **przejdź do** paska narzędzi okna dialogowego pole. Przyciski, Zmień filtry typów, które są po lewej stronie i przyciski, zmień zakres wyszukiwania, które są po prawej stronie.
+Domyślnie określony element jest wyszukiwany we wszystkich elementach rozwiązania. Można jednak ograniczyć wyszukiwanie kodu do określonych typów elementów, umieszczając je na podstawie określonych znaków. Możesz również szybko zmienić filtr wyszukiwania, wybierając przyciski na pasku narzędzi okna dialogowego **Przejdź do** . Przyciski, które zmieniają filtry typów, znajdują się po lewej stronie, a przyciski, które zmieniają zakres wyszukiwania, znajdują się po prawej stronie.
 
 ![Przejdź do elementów członkowskich](../ide/media/vside_navigation_toolbar.png)
 
-### <a name="filter-to-a-specific-type-of-code-element"></a>Filtruj do określonego typu elementu kodu
+### <a name="filter-to-a-specific-type-of-code-element"></a>Filtrowanie do określonego typu elementu kodu
 
-Aby zawęzić kryteria wyszukiwania dla określonego typu elementu kodu, możesz określić prefiks w polu wyszukiwania lub wybierz jednego z pięciu ikony filtru:
+Aby zawęzić wyszukiwanie do określonego typu elementu kodu, można określić prefiks w polu wyszukiwania lub wybrać jedną z pięciu ikon filtru:
 
-Prefiks | Ikona | Skrót | Opis
+prefiks | Ikona | Skrót | Opis
 :-: | - | - | -
-:| ![Ikona wiersza](media/gotoall-line-icon.png) | **Ctrl**+**G** | Przejdź do określonego numeru wiersza
-f| ![Ikona pliki](media/gotoall-files-icon.png) | **Ctrl**+**1**, **Ctrl**+**F** | Przejdź do określonego pliku
-r| ![Ikona ostatnie pliki](media/gotoall-recent-files-icon.png) | **Ctrl**+**1**, **Ctrl**+**R** | Przejdź do pliku określonego, ostatnio odwiedzonych
-t| ![Ikony typów](media/gotoall-types-icon.png) | **Ctrl**+**1**, **Ctrl**+**T** | Przejdź do określonego typu
-m| ![Ikona elementów członkowskich](media/gotoall-members-icon.png) | **Ctrl**+**1**, **Ctrl**+**M** | Przejdź do określonego elementu członkowskiego
-\#| ![Ikony symboli](media/gotoall-symbols-icon.png) | **Ctrl**+**1**, **Ctrl**+**S** | Przejdź do określonego symbolu
+:| ![Ikona linii](media/gotoall-line-icon.png) | **Ctrl**+**G** | Przejdź do określonego numeru wiersza
+N| ![Ikona plików](media/gotoall-files-icon.png) | **Ctrl** +**1**, **Ctrl** +**F** | Przejdź do określonego pliku
+®| ![Ikona ostatnich plików](media/gotoall-recent-files-icon.png) | **Ctrl** +**1**, **Ctrl** +**R** | Przejdź do określonego, ostatnio odwiedzonego pliku
+t| ![Ikona typów](media/gotoall-types-icon.png) | **Ctrl** +**1**, **Ctrl** +**t** | Przejdź do określonego typu
+m| ![Ikona członków](media/gotoall-members-icon.png) | **Ctrl** +**1**, **Ctrl** +**M** | Przejdź do określonego elementu członkowskiego
+\#| ![Ikona symboli](media/gotoall-symbols-icon.png) | **Ctrl** +**1**, **Ctrl** +**S** | Przejdź do podanego symbolu
 
-### <a name="filter-to-a-specific-location"></a>Filtruj do określonej lokalizacji
+### <a name="filter-to-a-specific-location"></a>Filtrowanie do określonej lokalizacji
 
-Aby zawęzić kryteria wyszukiwania do określonej lokalizacji, wybierz jedną z ikon dwóch dokumentów:
+Aby zawęzić wyszukiwanie do określonej lokalizacji, wybierz jedną z dwóch ikon dokumentu:
 
 Ikona | Opis
 ---- | ---
-![Bieżący dokument](media/gotoall_currentdocument.png) | Wyszukiwanie tylko bieżący dokument
-![Zewnętrzne dokumenty](media/gotoall_external.png) | Wyszukiwanie dokumentów zewnętrznych, oprócz tych znajdujących się w projekt/rozwiązanie
+![Bieżący dokument](media/gotoall_currentdocument.png) | Wyszukaj tylko bieżący dokument
+![Dokumenty zewnętrzne](media/gotoall_external.png) | Przeszukaj zewnętrzne dokumenty poza tymi znajdującymi się w projekcie/rozwiązaniu
 
-## <a name="camel-casing"></a>Camelcase
+## <a name="camel-casing"></a>Notacji CamelCase
 
-Jeśli używasz [camelcase](https://en.wikipedia.org/wiki/Camel_case) w kodzie, można znaleźć elementy kodu szybciej, wprowadzając tylko wielkimi literami nazwa elementu kodu. Na przykład, jeśli kod ma typ o nazwie `CredentialViewModel`, można zawęzić wyszukiwanie, wybierając **typu** filtru (**t**), a następnie wprowadzenie tylko wielkimi literami nazwę (`CVM`) w Przejdź do okna dialogowego pole. Ta funkcja może być przydatne, jeśli kod ma długich nazwach.
+Jeśli używasz [notacji CamelCase wielkości liter](https://en.wikipedia.org/wiki/Camel_case) w kodzie, możesz znaleźć elementy kodu szybciej, wprowadzając tylko wielkie litery nazwy elementu kodu. Na przykład jeśli kod ma typ o nazwie `CredentialViewModel`, możesz zawęzić wyszukiwanie, wybierając filtr **typu** (**t**), a następnie wprowadzając tylko wielkie litery nazwy (`CVM`) w oknie dialogowym przejdź do. Ta funkcja może być przydatna, jeśli kod ma długie nazwy.
 
-![Przejdź do okna — Wyszukiwanie za pomocą literami](../ide/media/vside_capitalsearch.png)
+![Przejdź do okna — wyszukiwanie przy użyciu wersalików](../ide/media/vside_capitalsearch.png)
 
 ## <a name="settings"></a>Ustawienia
 
-Wybierając ikonę koła zębatego ![Ikona koła zębatego](media/gotoall_gear.png) Pozwala zmienić sposób działania tej funkcji:
+Wybieranie ikony koła zębatego ![Ikona koła zębatego](media/gotoall_gear.png) umożliwia zmianę sposobu działania tej funkcji:
 
 Ustawienie | Opis
 ------- | ---
-Użyj karty podglądu | Natychmiast wyświetlić wybranego elementu w karcie podglądu środowiska IDE
-Pokaż szczegóły | Wyświetl w oknie projektu, plików, wiersza i podsumowanie informacji z komentarzy dokumentacji
-Wyśrodkuj okno | Przenieś to okno w środkowej górnej edytora kodu, zamiast prawym górnym rogu
+Użyj karty podglądu | Wyświetl wybrany element natychmiast na karcie podglądu IDE
+Pokaż szczegóły | Wyświetl informacje o projekcie, pliku, wierszu i podsumowaniu z komentarzy do dokumentacji w oknie
+Wyśrodkuj okno | Przenieś to okno do najwyższego środka edytora kodu zamiast w prawym górnym rogu
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Przechodzenie do kodu](../ide/navigating-code.md)
-- [Przejdź do wiersza, okno dialogowe](../ide/reference/go-to-line.md)
+- [Nawiguj po kodzie](../ide/navigating-code.md)
+- [Przejdź do wiersza — okno dialogowe](../ide/reference/go-to-line.md)
 - [Polecenia Przejdź do definicji i Zobacz definicję](../ide/go-to-and-peek-definition.md)

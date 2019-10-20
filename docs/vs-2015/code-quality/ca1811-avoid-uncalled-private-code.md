@@ -1,5 +1,5 @@
 ---
-title: 'CA1811: Unikaj niewywołanego kodu prywatnego | Dokumentacja firmy Microsoft'
+title: 'CA1811: Unikaj niewywołanego kodu prywatnego | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - AvoidUncalledPrivateCode
 ms.assetid: aadbba74-7821-475f-8980-34d17c0a0a8b
 caps.latest.revision: 22
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 373ccaa6552079a8995d61ef09bf6e0845c299d6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ccc439e0d84d1fced4ba0359385a6964356d5df6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68157969"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668449"
 ---
 # <a name="ca1811-avoid-uncalled-private-code"></a>CA1811: Unikaj niewywołanego kodu prywatnego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,30 +29,30 @@ ms.locfileid: "68157969"
 |-|-|
 |TypeName|AvoidUncalledPrivateCode|
 |CheckId|CA1811|
-|Kategoria|Microsoft.Performance|
-|Zmiana kluczowa|Bez podziału|
+|Kategoria|Microsoft. Performance|
+|Zmiana kluczowa|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
- Prywatne lub wewnętrzne elementu członkowskiego (poziomie zestawu) nie ma obiektów wywołujących w zestawie, nie jest wywoływany przez środowisko uruchomieniowe języka wspólnego i nie jest wywoływany przez delegata. Następujące elementy członkowskie nie są sprawdzane przez tę regułę:
+ Element członkowski prywatny lub wewnętrzny (poziom zestawu) nie ma elementów wywołujących w zestawie, nie jest wywoływany przez środowisko uruchomieniowe języka wspólnego i nie jest wywoływany przez delegata. Następujące elementy członkowskie nie są sprawdzane przez tę regułę:
 
-- Elementy członkowskie interfejsu jawnego.
+- Jawne elementy członkowskie interfejsu.
 
 - Konstruktory statyczne.
 
 - Konstruktory serializacji.
 
-- Metody oznaczone atrybutami <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> lub <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>.
+- Metody oznaczone <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> lub <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>.
 
-- Elementy członkowskie, które są zastąpień.
+- Elementy członkowskie, które są zastępują.
 
 ## <a name="rule-description"></a>Opis reguły
- Ta zasada można raportów fałszywych alarmów, jeśli wystąpią punkty wejścia, które nie są identyfikowane przez logikę reguł. Ponadto kompilator może emitować Kod noncallable do zestawu.
+ Ta reguła może zgłosić fałszywie dodatnie, jeśli występują punkty wejścia, które nie są obecnie identyfikowane przez logikę reguł. Ponadto kompilator może emitować niewywołujący kod do zestawu.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, Usuń kod noncallable lub Dodaj kod, który ją wywołuje.
+ Aby naprawić naruszenie tej zasady, Usuń kod niewywołujący lub Dodaj kod, który go wywołuje.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Jest bezpieczne pominąć ostrzeżenie od tej reguły.
+ Można bezpiecznie pominąć ostrzeżenie z tej reguły.
 
 ## <a name="related-rules"></a>Powiązane reguły
  [CA1812: Unikaj klas wewnętrznych bez wystąpień](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)

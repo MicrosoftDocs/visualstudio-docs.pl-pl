@@ -1,5 +1,5 @@
 ---
-title: Wyszukiwanie potencjalnych problemów za pomocą analizatorów mapy kodu | Dokumentacja firmy Microsoft
+title: Znajdowanie potencjalnych problemów za pomocą analizatorów mapy kodu | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -12,43 +12,41 @@ helpviewer_keywords:
 - graph documents, analyzing
 ms.assetid: 9dd799a7-f7eb-42ff-8612-b19dde7ff4eb
 caps.latest.revision: 13
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: cd771cf35ef684edd8d5c9dd82436759ec9443a3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: fc5d185640c9623a2213aaf7ad50fa68a088b15c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437500"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669618"
 ---
 # <a name="find-potential-problems-using-code-map-analyzers"></a>Wyszukiwanie potencjalnych problemów za pomocą analizatorów mapy kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Uruchomić analizatory na mapach kodu, aby ułatwić identyfikację kodu, który może być zbyt skomplikowana, lub który może być konieczne poprawy jakości obsługi. Na przykład można użyć tych analizatory:  
-  
-|**Aby znaleźć kod, który posiada**|**Sprawdź tych obszarów, aby zobaczyć, czy**|  
-|-------------------------------|--------------------------------------------|  
-|Pętle lub zależności cykliczne|Możesz uprościć i należy wziąć pod uwagę, czy możesz przerwać tych cykli.|  
-|Zbyt wiele zależności|Działają one zbyt wiele funkcji lub określić wpływ zmiany na tych obszarów. Mapy kodu z dobrze sformułowany pokaże minimalnej liczby zależności. Aby ułatwić kod obsługi, zmienianie, przetestować i ponownie użyć, należy rozważyć, czy Refaktoryzacja tych obszarów, aby wyraźniej zdefiniowano lub tego, czy można scalać kod, który wykonuje podobne funkcje.|  
-|Brak zależności|Jest to konieczne, lub czy należy usunąć ten kod.|  
-  
-## <a name="analyze-code-maps"></a>Analizowanie mapy kodu  
-  
-1. Na pasku narzędzi mapy wybierz **układ**, **analizatory**, a następnie analizatora, które chcesz uruchomić:  
-  
-   |**Analyzer**|**Do identyfikowania węzłów,**|  
-   |------------------|--------------------------------|  
-   |**Analizator odwołań cyklicznych**|Mają zależności cykliczne na siebie nawzajem. **Uwaga:**  Zależności cykliczne, które znajdują się w **ogólne** grupy nie są wyświetlane na mapie, po rozwinięciu grupy.|  
-   |**Znajdź analizator koncentratory**|Znajdują się w 25% najlepszych wysoce połączone węzły<br /><br /> **Aby ukryć wszystkie węzły na mapie**<br /><br /> -Otwórz menu skrótów dla mapy, wybierz **zaawansowane**, **wybierz**, **Ukryj niezaznaczone**.<br />     Mapa ukrywa węzły niezaznaczone i analizatora identyfikuje nowe węzły rolę piast.|  
-   |**Analizator węzłów bez odwołań**|Nie ma odwołań z innych węzłów. **Uwaga:**  Sprawdź każdy z tych przypadków przed, przy założeniu, że kod nie jest używany. Niektóre zależności, np. zależności XAML i środowiska wykonawczego zależności nie można odnaleźć statycznie w kodzie.|  
-  
-   Analizatorów mapy kodu będzie kontynuowane po ich zastosowania. W przypadku zmiany mapy analizatorów zastosowany zostanie automatycznie ponownie przetworzyć zaktualizowano mapę. Aby zatrzymać analizatora, na pasku narzędzi mapy, wybierz opcję **układ**, **analizatory**. Wyłącz wybrane analizatora.  
-  
+Uruchamiaj analizatory na mapach kodu, aby ułatwić identyfikację kodu, który może być zbyt skomplikowany lub który może wymagać poprawy. Można na przykład użyć następujących analizatorów:
+
+|**Aby znaleźć kod, który ma**|**Sprawdź te obszary, aby sprawdzić, czy**|
+|-------------------------------|--------------------------------------------|
+|Pętle lub zależności cykliczne|Można uprościć je i rozważyć, czy można przerwać te cykle.|
+|Zbyt wiele zależności|Są one wykonywane zbyt wiele funkcji lub w celu określenia wpływu zmiany tych obszarów. Poprawnie sformułowana Mapa kodu będzie zawierać minimalną liczbę zależności. Aby ułatwić przechowywanie, zmianę, testowanie i ponowne użycie kodu, należy rozważyć, czy można resłużyć do refaktoryzacji tych obszarów tak, aby były bardziej wyraźnie zdefiniowane lub czy można scalić kod, który wykonuje podobne funkcje.|
+|Brak zależności|Są one niezbędne lub niezależnie od tego, czy należy usunąć ten kod.|
+
+## <a name="analyze-code-maps"></a>Analizuj mapy kodu
+
+1. Na pasku narzędzi mapy wybierz pozycję **Układ**, analizatory, a następnie kliknij polecenie **analizatorze, które**chcesz uruchomić:
+
+   |**Analizator**|**Aby zidentyfikować węzły, które**|
+   |------------------|--------------------------------|
+   |**Analizator odwołań cyklicznych**|Mają zależności cykliczne względem siebie. **Uwaga:**  Zależności cykliczne, które znajdują się w grupie **generycznej** , nie są wyświetlane na mapie po rozszerzeniu grupy.|
+   |**Znajdź Analizator centrów**|Znajdują się w pierwszych 25% węzłów o wysokim stopniu połączenia<br /><br /> **Aby ukryć wszystkie inne węzły na mapie**<br /><br /> -Otwórz menu skrótów dla mapy, wybierz **Zaawansowane**, **zaznacz**, **Ukryj niezaznaczone**.<br />     Mapa ukrywa niewybrane węzły, a Analizator identyfikuje nowe węzły jako centra.|
+   |**Analizator węzłów, do których nie istnieją odwołania**|Nie ma odwołań z innych węzłów. **Przestroga:**  Sprawdź wszystkie te przypadki przed założeniem, że kod nie jest używany. Niektóre zależności, takie jak zależności XAML i zależności w czasie wykonywania, nie mogą być statycznie w kodzie.|
+
+   Po zastosowaniu analizatory mapy kodu będą nadal działać. Jeśli zmienisz mapę, wszelkie zastosowane analizatory automatycznie przetworzyją zaktualizowaną mapę. Aby zatrzymać działanie analizatora, na pasku narzędzi Mapa wybierz **Układ**, **analizatory**. Wyłącz wybrany Analizator.
+
 > [!TIP]
-> W przypadku bardzo dużych mapy uruchomiony analizator może spowodować wyjątek braku pamięci. Jeśli ten problem wystąpi, Edytuj mapę, aby zmniejszyć jego zakres lub wygenerować mniejszych, a następnie uruchom analizator.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Mapowanie zależności w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)   
- [Używanie map kodu do debugowania aplikacji](../modeling/use-code-maps-to-debug-your-applications.md)   
- [Metody mapowania dla stosu wywołań podczas debugowania](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
+> W przypadku bardzo dużej mapy uruchomienie analizatora może spowodować wyjątek braku pamięci. W takim przypadku należy zmodyfikować mapę, aby zmniejszyć jej zakres lub wygenerować mniejszą, a następnie uruchomić Analizator.
+
+## <a name="see-also"></a>Zobacz też
+ [Zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md) [używają map kodu do debugowania](../modeling/use-code-maps-to-debug-your-applications.md) [metod mapowania aplikacji na stosie wywołań podczas debugowania](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)

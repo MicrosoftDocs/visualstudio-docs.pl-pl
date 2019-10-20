@@ -8,23 +8,23 @@ f1_keywords:
 helpviewer_keywords:
 - Project Designer, Application page
 - Application page in Project Designer
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 04a130528edbe8ab3aae0a24d69315b934b19d54
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: cc28c4b6585c52bca084234b8d21f211b4209b87
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551430"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651971"
 ---
 # <a name="application-page-project-designer-c"></a>Strona aplikacji, Projektant projektu (C#)
 
 Użyj strony **aplikacji** **projektanta projektu** , aby określić ustawienia i właściwości aplikacji projektu.
 
-Aby uzyskać dostęp do strony **aplikacji** , wybierz węzeł projektu (nie węzeł **rozwiązania** ) w **Eksplorator rozwiązań**. Następnie wybierz**Właściwości** **projektu** > na pasku menu. Gdy pojawi się **Projektant projektu** , kliknij kartę **aplikacja** .
+Aby uzyskać dostęp do strony **aplikacji** , wybierz węzeł projektu (nie węzeł **rozwiązania** ) w **Eksplorator rozwiązań**. Następnie wybierz pozycję **Project**  > **Właściwości** na pasku menu. Gdy pojawi się **Projektant projektu** , kliknij kartę **aplikacja** .
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -38,7 +38,7 @@ Określa nazwę pliku wyjściowego, który będzie przechowywać manifest zestaw
 
 Możesz również wprowadzić tę zmianę z poziomu wiersza polecenia, używając [/out (C# opcje kompilatora)](/dotnet/csharp/language-reference/compiler-options/out-compiler-option).
 
-Aby programowo uzyskać dostęp do tej właściwości <xref:VSLangProj.ProjectProperties.AssemblyName%2A>, zobacz.
+Aby programowo uzyskać dostęp do tej właściwości, zobacz <xref:VSLangProj.ProjectProperties.AssemblyName%2A>.
 
 **Domyślna przestrzeń nazw**
 
@@ -46,7 +46,7 @@ Określa podstawową przestrzeń nazw dla plików dodanych do projektu.
 
 Aby uzyskać więcej informacji na temat tworzenia przestrzeni nazw w kodzie, zobacz [przestrzeń nazw](/dotnet/csharp/language-reference/keywords/namespace) .
 
-Aby programowo uzyskać dostęp do tej właściwości <xref:VSLangProj.ProjectProperties.RootNamespace%2A>, zobacz.
+Aby programowo uzyskać dostęp do tej właściwości, zobacz <xref:VSLangProj.ProjectProperties.RootNamespace%2A>.
 
 **Struktura docelowa**
 
@@ -71,7 +71,7 @@ Dla projektu aplikacji sieci Web należy określić **bibliotekę klas**.
 
 Aby uzyskać więcej informacji na temat właściwości **Typ danych wyjściowych** , zobacz [/Target (C# opcje kompilatora)](/dotnet/csharp/language-reference/compiler-options/target-compiler-option).
 
-Aby uzyskać informacje na temat programistycznego uzyskiwania dostępu do tej <xref:VSLangProj.ProjectProperties.OutputType%2A>właściwości, zobacz.
+Aby uzyskać informacje o tym, jak uzyskać programowo dostęp do tej właściwości, zobacz <xref:VSLangProj.ProjectProperties.OutputType%2A>.
 
 **Automatyczne generowanie przekierowań powiązań**
 
@@ -81,17 +81,17 @@ Aby uzyskać więcej informacji na temat przekierowania, zobacz Przekierowywanie
 
 **Obiekt startowy**
 
-Definiuje punkt wejścia, który ma być wywoływany, gdy aplikacja jest ładowana. Zwykle jest to ustawiane jako główny formularz w aplikacji lub do `Main` procedury, która powinna być uruchamiana podczas uruchamiania aplikacji. Ponieważ biblioteki klas nie mają punktu wejścia, ich jedyną opcją dla tej właściwości jest **(nie ustawiono)** .
+Definiuje punkt wejścia, który ma być wywoływany, gdy aplikacja jest ładowana. Zwykle jest to ustawiane jako główny formularz w aplikacji lub do procedury `Main`, która powinna być uruchamiana podczas uruchamiania aplikacji. Ponieważ biblioteki klas nie mają punktu wejścia, ich jedyną opcją dla tej właściwości jest **(nie ustawiono)** .
 
-Domyślnie w projekcie aplikacji WPF ta opcja jest ustawiona na **(nie ustawiono)** . Druga opcja to \[ProjectName]. app. W projekcie WPF należy ustawić początkowy identyfikator URI, aby załadować zasób interfejsu użytkownika podczas uruchamiania aplikacji. Aby to zrobić, Otwórz plik *Application. XAML* w projekcie i ustaw `StartupUri` właściwość na plik *. XAML* w projekcie, na przykład *window1. XAML*. Aby uzyskać listę dopuszczalnych elementów głównych, zobacz <xref:System.Windows.Application.StartupUri%2A>. Należy również zdefiniować `public static void Main()` metodę w klasie w projekcie. Ta klasa będzie wyświetlana na liście **obiektów uruchamiania** jako *ProjectName. ClassName*. Następnie można wybrać klasę jako obiekt startowy.
+Domyślnie w projekcie aplikacji WPF ta opcja jest ustawiona na **(nie ustawiono)** . Druga opcja to \[projectname]. app. W projekcie WPF należy ustawić początkowy identyfikator URI, aby załadować zasób interfejsu użytkownika podczas uruchamiania aplikacji. Aby to zrobić, Otwórz plik *Application. XAML* w projekcie i ustaw właściwość `StartupUri` na plik *. XAML* w projekcie, na przykład *window1. XAML*. Aby uzyskać listę dopuszczalnych elementów głównych, zobacz <xref:System.Windows.Application.StartupUri%2A>. Należy również zdefiniować metodę `public static void Main()` w klasie w projekcie. Ta klasa będzie wyświetlana na liście **obiektów uruchamiania** jako *ProjectName. ClassName*. Następnie można wybrać klasę jako obiekt startowy.
 
-Aby uzyskać więcej informacji, zobacz [/Main (C# opcje kompilatora)](/dotnet/csharp/language-reference/compiler-options/main-compiler-option) . Aby programowo uzyskać dostęp do tej właściwości <xref:VSLangProj.ProjectProperties.StartupObject%2A>, zobacz.
+Aby uzyskać więcej informacji, zobacz [/Main (C# opcje kompilatora)](/dotnet/csharp/language-reference/compiler-options/main-compiler-option) . Aby programowo uzyskać dostęp do tej właściwości, zobacz <xref:VSLangProj.ProjectProperties.StartupObject%2A>.
 
 **Informacje o zestawie**
 
 Ten przycisk otwiera okno dialogowe [Informacje o zestawie](../../ide/reference/assembly-information-dialog-box.md) .
 
-## <a name="resources"></a>Zasoby
+## <a name="resources"></a>Resources
 
 Opcje **zasobów** ułatwiają konfigurowanie ustawień zasobów aplikacji.
 
@@ -103,15 +103,15 @@ Domyślnie ten przycisk radiowy jest zaznaczony, a **ikona** i opcje **manifestu
 
 Ustawia plik *ICO* , który ma być używany jako ikona programu. Kliknij przycisk **Przeglądaj** , aby przejść do istniejącej grafiki lub wpisz nazwę żądanego pliku. Aby uzyskać więcej informacji, zobacz [/win32icon (C# opcje kompilatora)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option) .
 
-Aby programowo uzyskać dostęp do tej właściwości <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>, zobacz.
+Aby programowo uzyskać dostęp do tej właściwości, zobacz <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.
 
 Aby uzyskać informacje na temat tworzenia ikony, zobacz [Edytor obrazów dla ikon](/cpp/windows/image-editor-for-icons).
 
-**Manifest**
+**Manifestu**
 
 Wybiera opcję generowania manifestu, gdy aplikacja jest uruchamiana w systemie Windows Vista w ramach kontroli konta użytkownika (UAC). Ta opcja może mieć następujące wartości:
 
-- **Osadź manifest z ustawieniami domyślnymi**. Obsługuje typowy sposób, w jaki program Visual Studio działa w systemie Windows Vista, który polega na osadzeniu informacji o zabezpieczeniach w pliku `requestedExecutionLevel` `AsInvoker`wykonywalnym aplikacji. Jest to opcja domyślna.
+- **Osadź manifest z ustawieniami domyślnymi**. Obsługuje typowy sposób, w jaki program Visual Studio działa w systemie Windows Vista, czyli osadzać informacje o zabezpieczeniach w pliku wykonywalnym aplikacji, określając, że `requestedExecutionLevel` być `AsInvoker`. Jest to opcja domyślna.
 
 - **Utwórz aplikację bez manifestu**. Ta metoda jest znana jako *Wirtualizacja*. Użyj tej opcji, aby zapewnić zgodność ze starszymi aplikacjami.
 

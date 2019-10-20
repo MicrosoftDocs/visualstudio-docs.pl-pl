@@ -47,38 +47,38 @@ helpviewer_keywords:
 - miscellaneous files
 ms.assetid: aeaf56cb-c2dd-47f6-b012-23b84b7a7254
 caps.latest.revision: 41
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 340fe819086d3cc18cb9c2dd6a4ca14129c6d8ad
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 0b1783adadd1bfab32bfbbdcfb5ae28df7c0aae4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679878"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661193"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Rozwiązania i projekty w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Podczas tworzenia aplikacji, aplikacji, witryny sieci Web, aplikacji sieci Web skrypt wtyczki itp w programie Visual Studio, możesz zaczynać *projektu*. W sensie logicznym projekt zawiera wszystkich plikach kodu źródłowego, ikony, obrazy, pliki danych i dowolne inne zostanie skompilowany w program wykonywalny lub witryny sieci web; w przeciwnym razie jest wymagane w celu wykonywania kompilacji.  Projekt zawiera również wszystkie ustawienia kompilatora i inne pliki konfiguracyjne, które mogą być wymagane przez różnych dostawców usług ani składników, które program będzie komunikować się z.
+Podczas tworzenia aplikacji, aplikacji, witryny internetowej, aplikacji sieci Web, skryptu, wtyczki itp. w programie Visual Studio rozpoczyna się od *projektu*. W sensie logicznym projekt zawiera wszystkie pliki kodu źródłowego, ikony, obrazy, pliki danych i wszystkie inne, które zostaną skompilowane w programie wykonywalnym lub w witrynie sieci Web, lub w przeciwnym razie jest to konieczne, aby można było wykonać kompilację.  Projekt zawiera również wszystkie ustawienia kompilatora i inne pliki konfiguracji, które mogą być konieczne przez różne usługi lub składniki, z którymi program będzie się komunikować.
 
- W tym sensie literału projektu to plik XML (*.vbproj, \*.csproj, \*.vcxproj) definiujący hierarchii folder wirtualny, wraz ze ścieżkami do wszystkich elementów "zawiera" i wszystkich ustawień kompilacji. W programie Visual Studio plik projektu jest używany przez Eksploratora rozwiązań do wyświetlania zawartości projektu i ustawień. Podczas kompilowania projektu aparat MSBuild używa pliku projektu, aby utworzyć plik wykonywalny. Można również dostosować projekty do produktu inne rodzaje danych wyjściowych.
+ W sensie literału projekt jest plikiem XML (*. vbproj, \*. csproj, \*. vcxproj), który definiuje hierarchię folderów wirtualnych wraz ze ścieżkami do wszystkich elementów, które zawiera, i wszystkie ustawienia kompilacji. W programie Visual Studio plik projektu jest używany przez Eksplorator rozwiązań do wyświetlania zawartości i ustawień projektu. Podczas kompilowania projektu aparat MSBuild zużywa plik projektu w celu utworzenia pliku wykonywalnego. Możesz również dostosować projekty do innych typów danych wyjściowych produktu.
 
- Projekt znajduje się, w sensie logicznym i w systemie plików w ramach *rozwiązania*, które mogą zawierać jeden lub więcej projektów, oraz informacje o kompilacji, ustawienia okna programu Visual Studio i różne pliki, które nie są skojarzone z jakimkolwiek projektem. W tym sensie literału rozwiązania jest plikiem tekstowym swój własny unikatowy format; Ogólnie nie zamierza się być edytowane ręcznie.
+ Projekt jest zawarty w *rozwiązaniu*logicznym i w systemie plików w ramach rozwiązania, które może zawierać jeden lub więcej projektów, a także informacje o kompilacji, ustawienia okna programu Visual Studio i inne pliki, które nie są skojarzone z żadnym projektem. W sensie literalnym rozwiązanie jest plikiem tekstowym z własnym unikatowym formatem; zazwyczaj nie jest przeznaczona do edycji.
 
- To rozwiązanie ma plik *.suo skojarzone, który przechowuje ustawienia i preferencje i informacje o konfiguracji dla każdego użytkownika, który pracuje nad projektem.
+ Rozwiązanie ma skojarzony plik *. suo, który przechowuje ustawienia, preferencje i informacje o konfiguracji dla każdego użytkownika, który pracował nad projektem.
 
- Na poniższym diagramie przedstawiono relację między projektami i rozwiązaniami i elementy, które zawierają logicznie.
+ Na poniższym diagramie przedstawiono relację między projektami i rozwiązaniami oraz elementy, które zawiera logicznie.
 
- ![Visual Studio projekty i rozwiązania](../ide/media/vs2015-project-diagram.png "vs2015_project_diagram")
+ ![Projekty i rozwiązania programu Visual Studio](../ide/media/vs2015-project-diagram.png "vs2015_project_diagram")
 
- Można również utworzyć niestandardowe szablony projektów i elementów. Aby uzyskać więcej informacji, zobacz [tworzenie projektów i szablonów elementów](../ide/creating-project-and-item-templates.md).
+ Można również tworzyć niestandardowe szablony projektów i elementów. Aby uzyskać więcej informacji, zobacz [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md).
 
 ## <a name="creating-new-projects"></a>Tworzenie nowych projektów
- Najprostszym sposobem utworzenia nowego projektu jest uruchomienie przy użyciu szablonu projektu wstępnie zdefiniowane, co składa się z podstawowego zestawu wstępnie wygenerowanego kodu pliki, pliki konfiguracji, zasobów, i ustawienia, które ułatwiają pracę, tworzenia określonego typu aplikacji lub witryny sieci Web w języków programowania. Te szablony są, zostanie wyświetlony w **okna dialogowego Nowy projekt** po wybraniu **pliku &#124; New &#124; projektu** lub **pliku &#124; New &#124; witryny sieci Web** z menu głównego, a następnie przejdź. Aby uzyskać więcej informacji, zobacz [tworzenie rozwiązań i projektów](../ide/creating-solutions-and-projects.md) i [NIB tworzenie projektów z szablonów](https://msdn.microsoft.com/7c36d86a-6b79-4480-8228-0f925f1204b2).
+ Najprostszym sposobem tworzenia nowego projektu jest rozpoczęcie ze wstępnie zdefiniowanym szablonem projektu, który składa się z podstawowego zestawu wstępnie wygenerowanych plików kodu, plików konfiguracji, zasobów i ustawień, które ułatwiają rozpoczęcie tworzenia określonego typu aplikacji lub witryny sieci Web w konkretny język programowania. Te szablony są wyświetlane w **oknie dialogowym Nowy projekt** , gdy wybierzesz pozycję **plik &#124; nowy &#124; projekt** lub **plik &#124; Nowa &#124; witryna sieci Web** z menu głównego, a następnie przejdź do strony. Aby uzyskać więcej informacji, zobacz [Tworzenie rozwiązań i projektów](../ide/creating-solutions-and-projects.md) oraz [NIB tworzenie projektów na podstawie szablonów](https://msdn.microsoft.com/7c36d86a-6b79-4480-8228-0f925f1204b2).
 
-## <a name="managing-projects-in-solution-explorer"></a>Zarządzanie projektami w Eksploratorze rozwiązań
- Po utworzeniu nowego projektu, należy użyć **Eksploratora rozwiązań** do przeglądania i zarządzania projektów i rozwiązań i ich skojarzonych elementów. Poniższa ilustracja przedstawia Eksploratora serwera za pomocą rozwiązań języka C#, która zawiera dwa projekty.
+## <a name="managing-projects-in-solution-explorer"></a>Zarządzanie projektami w Eksplorator rozwiązań
+ Po utworzeniu nowego projektu można używać **Eksplorator rozwiązań** do wyświetlania i zarządzania projektami i rozwiązaniami oraz związanymi z nimi elementami. Na poniższej ilustracji przedstawiono Eksplorator serwera z C# rozwiązaniem zawierającym dwa projekty.
 
  ![Eksplorator rozwiązań](../ide/media/vs2015-solution-explorer.png "vs2015_solution_explorer")
 

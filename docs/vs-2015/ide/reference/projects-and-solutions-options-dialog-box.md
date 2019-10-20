@@ -1,5 +1,5 @@
 ---
-title: Projekty i rozwiązania, okno dialogowe Opcje | Dokumentacja firmy Microsoft
+title: Projekty i rozwiązania, Opcje — okno dialogowe | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -9,59 +9,48 @@ helpviewer_keywords:
 - Options dialog box, Projects and Solutions
 ms.assetid: 2801f24e-a138-488a-ae3c-e1f99a678ac0
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2bdcfc2f6a4b7655a6f4f2e335310e938e5acfed
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 245b453a3020e79b924cb8058ff392bd59673402
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65701981"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662132"
 ---
 # <a name="projects-and-solutions-options-dialog-box"></a>Opcje projektów i rozwiązań — okno dialogowe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ustawia domyślną ścieżkę [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] folderów projektu i określa domyślne zachowanie **dane wyjściowe** oknie **listy zadań**, i **Eksploratora rozwiązań** jako projekty są opracowane i wbudowane. Aby otworzyć to okno dialogowe, kliknij przycisk **narzędzia / Opcje** rozwiń **projekty i rozwiązania**i kliknij przycisk **ogólne**.  
-  
+Ustawia domyślną ścieżkę [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] folderów projektu i określa zachowanie domyślne okna **danych wyjściowych** , **Lista zadań**i **Eksplorator rozwiązań** w miarę tworzenia i kompilowania projektów. Aby uzyskać dostęp do tego okna dialogowego, kliknij przycisk **Narzędzia/Opcje** rozwiń węzeł **projekty i rozwiązania**, a następnie kliknij pozycję **Ogólne**.
+
 > [!NOTE]
-> Dostępne opcje w oknach dialogowych i nazwy i lokalizacje poleceń menu, który zostanie wyświetlony, mogą różnić się od opisanych w pomocy, w zależności od ustawień aktywnych lub wersji. Ta strona pomocy został napisany z **ogólne ustawienia projektowe** na uwadze. Aby wyświetlić lub zmienić ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
-  
-## <a name="settings"></a>Ustawienia  
- **Lokalizacja projektów**  
- Ustawia domyślną lokalizację, w którym są tworzone nowe projekty i rozwiązania folderów i katalogi. Kilka okien dialogowych również użyć lokalizacji zestawu w przypadku tej opcji dla folderu punktów początkowych. Na przykład okno dialogowe Otwórz projekt korzysta z tej lokalizacji dla skrótu Moje projekty.  
-  
- **Lokalizacja szablonów projektów użytkownika**  
- Ustawia domyślną lokalizację, która jest używana przez **nowy projekt** okno dialogowe, aby utworzyć listę **Moje szablony**. Aby uzyskać więcej informacji, zobacz [jak: Lokalizowanie i organizacja szablonów](../../ide/how-to-locate-and-organize-project-and-item-templates.md).  
-  
- **Lokalizacja szablonów elementów użytkownika**  
- Ustawia domyślną lokalizację, która jest używana przez **Dodaj nowy element** okno dialogowe, aby utworzyć listę **Moje szablony**. Aby uzyskać więcej informacji, zobacz [jak: Lokalizowanie i organizacja szablonów](../../ide/how-to-locate-and-organize-project-and-item-templates.md).  
-  
- **Zawsze pokazuj lista błędów Jeżeli kompilacja zakończy się z błędami**  
- Otwiera **lista błędów** okna po zakończeniu kompilacji, tylko wtedy, gdy nie można skompilować projektu. Błędy występujące podczas procesu kompilacji są wyświetlane. Gdy ta opcja jest wyczyszczone, nadal występują błędy, ale nie można otworzyć okna po zakończeniu kompilacji. Ta opcja jest domyślnie włączona.  
-  
- **Śledź aktywny element w Eksploratorze rozwiązań**  
- Po wybraniu **Eksploratora rozwiązań** automatycznie zostanie otwarty i aktywny element jest wybrany. Zmiany wybranego elementu, jak pracować z różnych plików w projekcie lub rozwiązaniu lub różne składniki w projektancie. Jeśli ta opcja jest wyczyszczone, zaznaczenie w **Eksploratora rozwiązań** nie zmienia się automatycznie. Ta opcja jest domyślnie włączona.  
-  
- **Pokaż zaawansowane konfiguracje kompilacji**  
- Po wybraniu opcji konfiguracji kompilacji są wyświetlane na **strony właściwości projektu** okno dialogowe i **strony właściwości rozwiązania** okno dialogowe. Po wyczyszczeniu, opcji konfiguracji kompilacji nie są wyświetlane na **strony właściwości projektu** okno dialogowe i **strony właściwości rozwiązania** okno dialogowe [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] i [!INCLUDE[csprcs](../../includes/csprcs-md.md)] projektów zawierające jedną konfigurację lub dwie konfiguracje debugowania, jak i wydania. Jeśli projekt ma konfigurację zdefiniowanych przez użytkownika, są wyświetlane opcje konfiguracji kompilacji.  
-  
- Jeśli usunięto zaznaczenie, polecenia na **kompilacji** menu, takich jak **Kompiluj rozwiązanie**, **Kompiluj rozwiązanie**, i **czyste rozwiązanie**, są wykonywane w konfiguracji wydania i poleceń na **debugowania** menu, takich jak **Rozpocznij debugowanie** i **Rozpocznij bez debugowania**, są wykonywane na Konfiguracja debugowania.  
-  
- **Zawsze pokazuj rozwiązanie**  
- Po wybraniu rozwiązania i wszystkich poleceń, które działają w rozwiązaniach są zawsze wyświetlane w środowisku IDE. Po wyczyszczeniu, wszystkie projekty są tworzone jako autonomiczny projekty i rozwiązania w Eksploratorze rozwiązań lub poleceń, które działają nie jest wyświetlany w rozwiązania w środowisku IDE, jeśli rozwiązanie zawiera tylko jeden projekt.  
-  
- **Zapisz nowe projekty po utworzeniu**  
- Po wybraniu, można określić lokalizację dla projektu w **nowy projekt** okno dialogowe. Po wyczyszczeniu, wszystkie nowe projekty są tworzone jako projektów tymczasowych. Podczas pracy z projektami tymczasowej, można tworzyć i eksperymentować z projektem, bez konieczności określania lokalizacji na dysku.  
-  
- **Ostrzegaj użytkownika, gdy lokalizacja projektu nie jest zaufana**  
- Jeśli spróbujesz utworzyć nowy projekt lub Otwórz istniejący projekt w lokalizacji, która nie jest w pełni zaufany (na przykład na ścieżkę UNC lub ścieżki HTTP), zostanie wyświetlony komunikat. Użyj tej opcji, aby określić, czy komunikat jest wyświetlany za każdym razem, spróbuj utworzyć lub otworzyć projekt w lokalizacji, która nie jest w pełni zaufany.  
-  
- **Pokaż okno dane wyjściowe, gdy rozpoczyna się kompilacja**  
- Automatycznie wyświetla okno danych wyjściowych w środowisku IDE na początku rozwiązania kompilacji. Aby uzyskać więcej informacji, zobacz [jak: Kontrolowanie okna danych wyjściowych](https://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858). Ta opcja jest domyślnie włączona.  
-  
- **Monituj o symboliczną zmianę nazwy podczas zmieniania nazw plików**  
- Po wybraniu wyświetla komunikat dialogowe z pytaniem, czy [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] również należy zmienić wszystkie odwołania w projekcie do elementu kodu.  
-  
-## <a name="see-also"></a>Zobacz też  
+> Opcje dostępne w oknach dialogowych oraz nazwy i lokalizacje poleceń menu, które są widoczne, mogą się różnić od tego, co opisano w pomocy, w zależności od ustawień aktywnych lub wydania. Ta strona pomocy została zaprojektowana z uwzględnieniem **ogólnych ustawień deweloperskich** . Aby wyświetlić lub zmienić ustawienia, wybierz pozycję **Importuj i Eksportuj ustawienia** w menu **Narzędzia** . Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień deweloperskich w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+
+## <a name="settings"></a>Ustawienia
+ **Lokalizacja projektów** Ustawia domyślną lokalizację, w której są tworzone nowe projekty i foldery rozwiązań i katalogi. Kilka okien dialogowych używa również lokalizacji ustawionej w tej opcji dla punktów początkowych folderu. Na przykład okno dialogowe Otwieranie projektu używa tej lokalizacji dla skrótu moje projekty.
+
+ **Lokalizacja szablonów projektu użytkownika** Ustawia domyślną lokalizację używaną przez okno dialogowe **Nowy projekt** , aby utworzyć listę **moich szablonów**. Aby uzyskać więcej informacji, zobacz [How to: Lokalizowanie i organizowanie szablonów](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
+
+ **Lokalizacja szablonów elementów użytkownika** Ustawia domyślną lokalizację używaną przez okno dialogowe **Dodaj nowy element** , aby utworzyć listę **moich szablonów**. Aby uzyskać więcej informacji, zobacz [How to: Lokalizowanie i organizowanie szablonów](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
+
+ **Zawsze pokazuj lista błędów, jeśli kompilacja zakończy się z błędami** Otwiera okno **Lista błędów** po zakończeniu kompilacji, tylko wtedy, gdy kompilacja projektu nie powiodła się. Zostaną wyświetlone błędy występujące podczas procesu kompilacji. Gdy ta opcja jest wyczyszczona, błędy nadal występują, ale okno nie jest otwierane po zakończeniu kompilacji. Ta opcja jest domyślnie włączona.
+
+ **Śledź aktywny element w Eksplorator rozwiązań** Po wybraniu **Eksplorator rozwiązań** automatycznie otwierane, a aktywny element jest zaznaczony. Wybrany element zmienia się podczas pracy z różnymi plikami w projekcie lub rozwiązaniu lub różnymi składnikami projektanta. Gdy ta opcja jest wyczyszczona, wybór w **Eksplorator rozwiązań** nie zmienia się automatycznie. Ta opcja jest domyślnie włączona.
+
+ **Pokaż zaawansowane konfiguracje kompilacji** Po wybraniu opcji konfiguracji kompilacji są wyświetlane w oknie dialogowym **strony właściwości projektu** i w oknie dialogowym **strony właściwości rozwiązania** . Po wyczyszczeniu opcje konfiguracji kompilacji nie są wyświetlane w oknie dialogowym **strony właściwości projektu** i w oknie dialogowym **strony właściwości rozwiązania** dla [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] i [!INCLUDE[csprcs](../../includes/csprcs-md.md)] projektów, które zawierają jedną konfigurację lub dwie konfiguracje debugowania i wersja. Jeśli projekt zawiera konfigurację zdefiniowaną przez użytkownika, są wyświetlane opcje konfiguracji kompilacji.
+
+ Po zaznaczeniu tej opcji polecenia w menu **kompilacja** , takie jak **Kompilowanie rozwiązania**, ponowne **Kompilowanie rozwiązania**i **czyste rozwiązanie**, są wykonywane w konfiguracji wydania i polecenia w menu **Debuguj** , takie jak **Start Debugowanie** i **Uruchamianie bez debugowania**jest wykonywane w konfiguracji debugowania.
+
+ **Zawsze pokazuj rozwiązanie** Po wybraniu rozwiązanie i wszystkie polecenia działające na rozwiązaniach są zawsze wyświetlane w środowisku IDE. Po wyczyszczeniu wszystkie projekty są tworzone jako projekty autonomiczne, a rozwiązanie nie jest widoczne w Eksplorator rozwiązań lub polecenia, które działają na rozwiązaniach w IDE, jeśli rozwiązanie zawiera tylko jeden projekt.
+
+ **Zapisuj nowe projekty po utworzeniu** Po wybraniu można określić lokalizację projektu w oknie dialogowym **Nowy projekt** . Po wyczyszczeniu wszystkie nowe projekty są tworzone jako projekty tymczasowe. Podczas pracy z projektami tymczasowymi można tworzyć i eksperymentować z projektem bez konieczności określania lokalizacji na dysku.
+
+ **Ostrzegaj użytkownika, gdy Lokalizacja projektu nie jest zaufana** Jeśli spróbujesz utworzyć nowy projekt lub otworzyć istniejący projekt w lokalizacji, która nie jest w pełni zaufana (na przykład w ścieżce UNC lub w ścieżce HTTP), zostanie wyświetlony komunikat. Użyj tej opcji, aby określić, czy komunikat jest wyświetlany za każdym razem, gdy próbujesz utworzyć lub otworzyć projekt w lokalizacji, która nie jest w pełni zaufana.
+
+ **Pokaż okno danych wyjściowych po rozpoczęciu kompilacji** Automatycznie wyświetla Okno Dane wyjściowe w środowisku IDE na początku kompilacji rozwiązania. Aby uzyskać więcej informacji, zobacz [How to: Control the okno dane wyjściowe](https://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858). Ta opcja jest domyślnie włączona.
+
+ **Monituj o zmianę nazwy symbolicznej podczas zmiany nazwy plików** Po wybraniu Wyświetla okno komunikatu z pytaniem, czy [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] powinna również zmieniać nazwy wszystkich odwołań w projekcie do elementu kodu.
+
+## <a name="see-also"></a>Zobacz też
  [Okno dialogowe Opcje, Projekty i rozwiązania, Kompilowanie i uruchamianie](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)

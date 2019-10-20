@@ -7,21 +7,21 @@ helpviewer_keywords:
 - Devenv, /SafeMode switch
 - SafeMode switch
 ms.assetid: b191f6a5-8f12-47ec-bcc7-b68149a22aa8
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14b2ac3a80a9e17e0c554f56ae8e31ac32450c5e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: abaeded184db78085a9629da0e763b2f76dbd328
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945482"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655515"
 ---
 # <a name="safemode-devenvexe"></a>/SafeMode (devenv.exe)
 
-Uruchamia programu Visual Studio w trybie awaryjnym, ładowanie tylko środowisko domyślne i usługi.
+Uruchamia program Visual Studio w trybie awaryjnym, ładując tylko domyślne środowisko i usługi.
 
 ## <a name="syntax"></a>Składnia
 
@@ -31,11 +31,11 @@ devenv /SafeMode
 
 ## <a name="remarks"></a>Uwagi
 
-Ten przełącznik zapobiega wszystkich innych pakietów VSPackage ładowania po uruchomieniu programu Visual Studio, dzięki czemu wykonanie stabilne.
+Ten przełącznik zapobiega ładowaniu wszystkich pakietów VSPackage innych firm podczas uruchamiania programu Visual Studio, co pozwala na stabilne wykonanie.
 
 ## <a name="example"></a>Przykład
 
-Poniższy przykład uruchamia programu Visual Studio w trybie awaryjnym.
+W poniższym przykładzie program Visual Studio jest uruchamiany w trybie awaryjnym.
 
 ```shell
 devenv /safemode
@@ -43,4 +43,4 @@ devenv /safemode
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Przełączniki wiersza polecenia Devenv](../../ide/reference/devenv-command-line-switches.md)
+- [Przełączniki wiersza polecenia devenv](../../ide/reference/devenv-command-line-switches.md)

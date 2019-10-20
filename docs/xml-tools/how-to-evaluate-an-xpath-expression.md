@@ -1,56 +1,56 @@
 ---
-title: Ocena wyrażenia XPath podczas debugowania
+title: Oceń wyrażenie XPath podczas debugowania
 ms.date: 03/05/2019
 ms.topic: conceptual
 ms.assetid: 159ba4ef-75e4-4ac8-80dc-e064e0bec345
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1585b54d084e3471583f9388d63f5c17e65fc3a7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 523c89af70c762f0cd0e31519c8c862c440c79eb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002087"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654274"
 ---
-# <a name="evaluate-xpath-expressions"></a>Obliczanie wyrażeń XPath
+# <a name="evaluate-xpath-expressions"></a>Oceń wyrażenia XPath
 
-Można obliczać wyrażeń XPath przy użyciu **QuickWatch** okna podczas debugowania. Wyrażenie XPath muszą być prawidłowe zgodnie z zaleceniem W3C XPath 1.0. Bieżący kontekst w XSLT (oznacza to, `self::node()` w węźle **lokalne** okna) zapewnia kontekstu oceny wyrażenia XPath.
+Wyrażenia XPath można oszacować przy użyciu okna **QuickWatch** podczas debugowania. Wyrażenie XPath musi być prawidłowe zgodnie z zaleceniem W3C XPath 1,0. Bieżący kontekst XSLT (czyli węzeł `self::node()` w oknie **zmiennych lokalnych** ) zawiera kontekst oceny dla wyrażenia XPath.
 
-Podczas obliczania wyrażenia XPath:
+Podczas oceniania wyrażenia XPath:
 
-- Wbudowane funkcje XPath są obsługiwane.
+- Obsługiwane są wbudowane funkcje języka XPath.
 
-- Wbudowane funkcje XSLT i funkcji zdefiniowanych przez użytkownika nie są obsługiwane.
+- Wbudowane funkcje XSLT i funkcje zdefiniowane przez użytkownika nie są obsługiwane.
 
 > [!NOTE]
-> Debugowanie kodu XSLT jest dostępna tylko w wersji Enterprise programu Visual Studio.
+> Debugowanie XSLT jest dostępne tylko w wersji Enterprise programu Visual Studio.
 
 ## <a name="evaluate-an-xpath-expression"></a>Ocena wyrażenia XPath
 
-W poniższej procedurze użyto *poniżej average.xsl* i *books.xml* plików ze [instruktażu: Debugowanie arkusza stylów XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md#sample-files) strony.
+Poniższa procedura korzysta z plików *below-Average. xsl* i *Books. XML* z [przewodnika: debugowanie strony arkusza stylów XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md#sample-files) .
 
-1. Wstaw punkt przerwania w `xsl:if` taga otwierającego.
+1. Wstaw punkt przerwania w tagu początkowym `xsl:if`.
 
-2. Aby rozpocząć debugowanie, wybierz **XML** > **Rozpocznij debugowanie kodu XSLT** na pasku menu (lub naciśnij **Alt**+**F5** ).
+2. Aby rozpocząć debugowanie, wybierz pozycję **XML**  > **Rozpocznij debugowanie XSLT** na pasku menu (lub naciśnij klawisz **Alt** +**F5**).
 
-   Debuger rozpoczyna się i przerywa na `xsl:if` tagu.
+   Debuger rozpocznie działanie i przerwie w tagu `xsl:if`.
 
-3. Kliknij prawym przyciskiem myszy i wybierz **QuickWatch**.
+3. Kliknij prawym przyciskiem myszy i wybierz pozycję **QuickWatch**.
 
-   **QuickWatch** zostanie otwarte okno.
+   Zostanie otwarte okno **QuickWatch** .
 
-4. Wprowadź `./price/text()` w **wyrażenie** pole **QuickWatch** okna dialogowego pole, a następnie wybierz **to ponowne ocenienie**.
+4. W polu **wyrażenie** okna dialogowego **QuickWatch** wprowadź `./price/text()` a następnie wybierz pozycję **Oblicz**ponownie.
 
-   Cena bieżącego węzła książki, który pojawia się w **wartość** pole.
+   W polu **wartość** zostanie wyświetlona cena bieżącego węzła księgi.
 
-   ![Ocena wyrażenia XPath w oknie Quickwatch](media/quickwatch-price.png)
+   ![Oceń wyrażenie XPath w oknie QuickWatch](media/quickwatch-price.png)
 
-5. Zmień wyrażenie XPath `./price/text() < $bookAverage` i kliknij przycisk **to ponowne ocenienie**.
+5. Zmień wyrażenie XPath na `./price/text() < $bookAverage` i kliknij przycisk **Oblicz wszystko**.
 
-   **Wartość** pole pokazuje, że wyrażenie XPath daje w wyniku `true`.
+   Pole **wartość** pokazuje, że wyrażenie XPath oblicza wartość `true`.
 
 ## <a name="see-also"></a>Zobacz także
 

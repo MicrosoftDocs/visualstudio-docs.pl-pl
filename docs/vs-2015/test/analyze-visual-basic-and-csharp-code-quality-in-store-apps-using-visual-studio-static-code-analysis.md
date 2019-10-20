@@ -1,5 +1,5 @@
 ---
-title: Analizowanie kodu języka Visual Basic i C# kodu jakości w aplikacjach Store przy użyciu statycznej analizy kodu
+title: Analizuj Visual Basic i C# jakość kodu w aplikacjach ze sklepu przy użyciu statycznej analizy kodu
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -8,102 +8,102 @@ f1_keywords:
 - vs.codeanalysis.propertypages.csvb.express
 ms.assetid: cab553fc-19a9-4cbf-858e-8200258ffe50
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7510b7fac5dfc633b88bd9f53347118a02227b92
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: cfe5ed57bfc361b711ed2aceceff2aabfc44cf4e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416641"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660739"
 ---
-# <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>Analizowanie jakości kodu w języku Visual Basic i C# w aplikacjach Store przy użyciu programu Visual Studio statycznej analizy kodu
+# <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>Analizowanie Visual Basic i C# jakości kodu w aplikacjach ze sklepu przy użyciu statycznej analizy kodu programu Visual Studio
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")
+Dotyczy systemów Windows i Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")
 
- Narzędzie do analizy kodu w programie Visual Studio Express sprawdza swój kod pod kątem zestaw wspólne wady i naruszeń dobrą praktykę programistyczną. Ostrzeżenia analizy kodu różnią się od błędów i ostrzeżeń, ponieważ narzędzie do analizy kodu szuka wzorców konkretnego kodu, które są prawidłowe, ale nadal można tworzyć problemy dla Ciebie lub innych osób używających Twojego kodu. Analiza kodu, można także znaleźć defektów w kodzie, które są trudne do odnajdywania za pomocą testowania. Podczas procesu opracowywania uruchomione narzędzie do analizy kodu w regularnych odstępach czasu może zwiększyć jakość ukończonej aplikacji.
+ Narzędzie do analizy kodu w Visual Studio Express bada kod dla zestawu typowych wad i naruszeń dobrych rozwiązań programistycznych. Ostrzeżenia analizy kodu różnią się od błędów i ostrzeżeń kompilatora, ponieważ Narzędzie analizy kodu wyszukuje określone wzorce kodu, które są prawidłowe, ale mogą nadal tworzyć problemy dla Ciebie lub innych osób korzystających z Twojego kodu. Analiza kodu może również znaleźć wady w kodzie, które trudno wykryć poprzez testowanie. Uruchamianie narzędzia do analizy kodu w regularnych odstępach czasu w procesie tworzenia oprogramowania może zwiększyć jakość ukończonej aplikacji.
 
 > [!NOTE]
-> W programie Visual Studio Ultimate, Visual Studio Premium i Visual Studio Professional można użyć pełnej funkcjonalności podczas analizy kodu. Zobacz [analiza jakości aplikacji za pomocą narzędzi analizy kodu](https://msdn.microsoft.com/library/dd264897.aspx) w bibliotece MSDN.
+> W Visual Studio Ultimate, Visual Studio Premium i Visual Studio Professional można użyć pełnej funkcjonalności analizy kodu. Zobacz [Analizowanie jakości aplikacji za pomocą narzędzi do analizy kodu](https://msdn.microsoft.com/library/dd264897.aspx) w bibliotece MSDN.
 
 ## <a name="in-this-topic"></a>W tym temacie:
- Informacje na temat:
+ Możesz uzyskać informacje na temat:
 
- [Trwa uruchamianie analizy kodu](../test/analyze-visual-basic-and-csharp-code-quality-in-store-apps-using-visual-studio-static-code-analysis.md#BKMK_Run)
+ [Uruchamianie analizy kodu](../test/analyze-visual-basic-and-csharp-code-quality-in-store-apps-using-visual-studio-static-code-analysis.md#BKMK_Run)
 
- [Analizowanie i rozwiązywanie ostrzeżenia analizy kodu](../test/analyze-visual-basic-and-csharp-code-quality-in-store-apps-using-visual-studio-static-code-analysis.md#BKMK_Analyze)
+ [Analizowanie i rozwiązywanie ostrzeżeń dotyczących analizy kodu](../test/analyze-visual-basic-and-csharp-code-quality-in-store-apps-using-visual-studio-static-code-analysis.md#BKMK_Analyze)
 
  [Pomijanie ostrzeżeń analizy kodu](../test/analyze-visual-basic-and-csharp-code-quality-in-store-apps-using-visual-studio-static-code-analysis.md#BKMK_Suppress)
 
  [Wyszukiwanie i filtrowanie wyników analizy kodu](../test/analyze-visual-basic-and-csharp-code-quality-in-store-apps-using-visual-studio-static-code-analysis.md#BKMK_Search)
 
- [Ostrzeżenia analizy kodu w języku Visual Basic i C#](../test/analyze-visual-basic-and-csharp-code-quality-in-store-apps-using-visual-studio-static-code-analysis.md#BKMK_Warnings)
+ [Ostrzeżenia dotyczące C# Visual Basic i analizy kodu](../test/analyze-visual-basic-and-csharp-code-quality-in-store-apps-using-visual-studio-static-code-analysis.md#BKMK_Warnings)
 
-## <a name="BKMK_Run"></a> Trwa uruchamianie analizy kodu
+## <a name="BKMK_Run"></a>Uruchamianie analizy kodu
  Aby uruchomić analizę kodu w rozwiązaniu programu Visual Studio:
 
-- Na **kompilacji** menu, wybierz **Uruchom analizę kodu dla rozwiązania**.
+- W menu **kompilacja** wybierz polecenie **Uruchom analizę kodu w rozwiązaniu**.
 
-  Do automatycznego uruchamiania analizy kodu za każdym razem, tworzysz projekt:
+  Aby automatycznie uruchomić analizę kodu przy każdej kompilacji projektu:
 
-1. Kliknij prawym przyciskiem myszy nazwę projektu w Eksploratorze rozwiązań, a następnie wybierz **właściwości**.
+1. Kliknij prawym przyciskiem myszy nazwę projektu w Eksplorator rozwiązań a następnie wybierz polecenie **Właściwości**.
 
-2. Na stronie właściwości projektu, wybierz opcję **analizy kodu** , a następnie wybierz **Włącz analizę kodu podczas kompilacji (definiuje stałą analizy)** .
+2. Na stronie właściwości projektu wybierz pozycję **Analiza kodu** , a następnie wybierz pozycję **Włącz analizę kodu podczas kompilacji (definiuje stałą CodeAnalysis)** .
 
-   Rozwiązania jest kompilowana i uruchomieniu analizy kodu. Wyniki są wyświetlane w oknie analizy kodu.
+   Rozwiązanie jest kompilowane i zostanie uruchomiona Analiza kodu. Wyniki pojawiają się w oknie Analiza kodu.
 
    ![Okno analizy kodu](../test/media/ca-managed-collapsed.png "CA_Managed_Collapsed")
 
-## <a name="BKMK_Analyze"></a> Analizowanie i rozwiązywanie ostrzeżenia analizy kodu
- Aby analizować szczególne ostrzeżenie, kliknij tytuł ostrzeżenie w oknie analizy kodu. Ostrzeżenie rozwija, aby wyświetlić szczegółowe informacje o problemie.
+## <a name="BKMK_Analyze"></a>Analizowanie i rozwiązywanie ostrzeżeń dotyczących analizy kodu
+ Aby przeanalizować określone ostrzeżenie, kliknij tytuł ostrzeżenia w oknie Analiza kodu. Ostrzeżenie zostanie rozwinięte, aby wyświetlić szczegółowe informacje o problemie.
 
- ![Rozwinięte ostrzeżenie analizy kodu](../test/media/ca-managed-callouts.png "CA_Managed_Callouts")
+ ![Ostrzeżenie o rozszerzonej analizie kodu](../test/media/ca-managed-callouts.png "CA_Managed_Callouts")
 
- Po rozwinięciu ostrzeżenie w wierszu kodu, który spowodował ostrzeżenie jest wyróżniony w edytorze kodu programu Visual Studio.
+ Po rozszerzeniu ostrzeżenia wiersz kodu, który spowodował ostrzeżenie, jest wyróżniony w edytorze kodu programu Visual Studio.
 
- ![Kod, wyróżnianie tekstu analizy](../test/media/ca-managed-sourceline.png "CA_Managed_SourceLine")
+ ![Podświetlanie tekstu analizy kodu](../test/media/ca-managed-sourceline.png "CA_Managed_SourceLine")
 
- Po zrozumieniu problem można rozwiązać, w kodzie. Następnie uruchom ponownie analizę kodu, aby upewnić się, że ostrzeżenie nie jest już wyświetlany w oknie analizy kodu i rozwiązanie problemu nie został zgłoszony nowe ostrzeżenia.
+ Po zrozumieniu problemu można go rozwiązać w kodzie. Następnie uruchom ponownie analizę kodu, aby upewnić się, że ostrzeżenie nie pojawia się już w oknie Analiza kodu i że poprawka nie wywołała nowych ostrzeżeń.
 
 > [!TIP]
-> Możesz ponownie uruchomić analizę kodu w oknie analizy kodu. Kliknij przycisk **analizy** przycisk, a następnie wybierz zakres analizy. Możesz ponownie uruchomić analizy na całego rozwiązania lub wybranego projektu.
+> Możesz ponownie uruchomić analizę kodu z okna Analiza kodu. Kliknij przycisk **Analizuj** i wybierz zakres analizy. Możesz ponownie uruchomić analizę całego rozwiązania lub w wybranym projekcie.
 
-## <a name="BKMK_Suppress"></a> Pomijanie ostrzeżeń analizy kodu
- Istnieją terminy, gdy można zdecydować, Rezygnacja z naprawiania ostrzeżenie analizy kodu. Można zdecydować, rozpoznawanie ostrzeżenia wymaga zbyt dużo nagrywanie względem prawdopodobieństwo wystąpienia problemu w implementacji rzeczywistych swój kod. Lub może być uważa, że analizy, który jest używany w ostrzeżenia jest nieodpowiedni dla określonego kontekstu. Poszczególne ostrzeżenia można pominąć, tak aby nie były widoczne w oknie analizy kodu.
+## <a name="BKMK_Suppress"></a>Pomijanie ostrzeżeń analizy kodu
+ Istnieją przypadki, w których można zrezygnować z naprawienia ostrzeżenia analizy kodu. Użytkownik może zdecydować, że rozwiązanie tego problemu wymaga zbyt dużo ponownego kodowania w odniesieniu do prawdopodobieństwa, że problem będzie występował w jakiejkolwiek rzeczywistej implementacji kodu. Można też zastanowić się, że analiza, która jest używana w ostrzeżeniu, jest nieodpowiedni dla danego kontekstu. Możesz pominąć poszczególne ostrzeżenia, aby nie były wyświetlane w oknie Analiza kodu.
 
- Aby pominąć Ostrzeżenie:
+ Aby pominąć ostrzeżenie:
 
-1. Jeśli nie są wyświetlane szczegółowe informacje, kliknij tytuł ostrzeżenie, aby ją rozwinąć.
+1. Jeśli szczegółowe informacje nie są wyświetlane, kliknij tytuł ostrzeżenia, aby go rozwinąć.
 
-2. Wybierz **akcje** widocznego u dołu ostrzeżenia.
+2. Wybierz łącze **Akcje** u dołu ostrzeżenia.
 
-3. Wskaż **Pomiń komunikat** , a następnie wybierz opcję **w źródłowej** lub **w pliku pominięć**.
+3. Wskaż pozycję **Pomiń komunikat** , a następnie wybierz pozycję **w polu Źródło** lub **w pliku**pominięć.
 
-   - **W źródle** wstawia `SuppressMessage` atrybutu w pliku źródłowym powyżej metody, która wygenerowała ostrzeżenie. To sprawia, że pomijanie mogą szybciej odnajdywać.
+   - **W obszarze Źródło** wstawia atrybut `SuppressMessage` w pliku źródłowym powyżej metody, która wygenerowała ostrzeżenie. To sprawia, że pomijanie jest bardziej wykrywalne.
 
-   - **W pliku pominięć** dodaje `SuppressMessage` atrybutu **GlobalSuppressions.cs** pliku projektu. To może ułatwić zarządzanie pominięcia. Należy pamiętać, że `SuppressMessage` dodany atrybut **GlobalSuppression.cs** wspiera także metodę, która wygenerowała ostrzeżenie. Pomijaj ostrzeżenia globalnie.
+   - **W pliku** pominięć dodaje atrybut `SuppressMessage` do pliku **GlobalSuppressions.cs** projektu. Może to ułatwić zarządzanie pominięciami. Należy zauważyć, że atrybut `SuppressMessage` dodany do **GlobalSuppression.cs** również należy do metody, która wygenerowała ostrzeżenie. Nie powoduje pomijania ostrzeżenia globalnie.
 
-     Decyzji, czy ostrzeżenia w pliku źródłowym lub w pliku pominięć zależy od potrzeb i stylu kodowania.
+     Decyzja o tym, czy pomijać ostrzeżenie w pliku źródłowym lub w pliku pominięć, zależy od stylu kodowania i potrzeb.
 
-## <a name="BKMK_Search"></a> Wyszukiwanie i filtrowanie wyników analizy kodu
- Możesz wyszukiwać długim spisem komunikaty ostrzegawcze i filtrować ostrzeżeń w rozwiązaniach dotyczących wielu projektów.
+## <a name="BKMK_Search"></a>Wyszukiwanie i filtrowanie wyników analizy kodu
+ Można wyszukiwać długie listy komunikatów ostrzegawczych i filtrować ostrzeżenia w rozwiązaniach w ramach projektu.
 
- ![Wyszukiwanie i filtrowanie oknie analizy kodu](../test/media/ca-searchfilter.png "CA_SearchFilter")
+ ![Wyszukiwanie i filtrowanie okna Analiza kodu](../test/media/ca-searchfilter.png "CA_SearchFilter")
 
- W [!INCLUDE[vs_dev11_expwin_long](../includes/vs-dev11-expwin-long-md.md)], wszystkie code analysis ostrzeżenia mają poziom ważności ostrzeżenie.
+ W [!INCLUDE[vs_dev11_expwin_long](../includes/vs-dev11-expwin-long-md.md)] wszystkie ostrzeżenia analizy kodu mają poziom ważności ostrzeżenie.
 
-## <a name="BKMK_Warnings"></a> Ostrzeżenia analizy kodu w języku Visual Basic i C#
- Analiza kodu generuje następujące ostrzeżenia:
+## <a name="BKMK_Warnings"></a>Ostrzeżenia dotyczące C# Visual Basic i analizy kodu
+ Analiza kodu wywołuje następujące ostrzeżenia:
 
- [CA1001 Typy, które są własnością pól, powinny być jednorazowe](https://msdn.microsoft.com/library/ms182172.aspx)
+ [CA1001: Typy z polami możliwymi do likwidacji powinny być możliwe do likwidacji](https://msdn.microsoft.com/library/ms182172.aspx)
 
- [CA1821 Usuń puste finalizatory](https://msdn.microsoft.com/library/bb264476.aspx)
+ [CA1821: Usuwaj puste finalizatory](https://msdn.microsoft.com/library/bb264476.aspx)
 
- [CA2213 Pola jednorazowe powinny zostać usunięte](https://msdn.microsoft.com/library/ms182328.aspx)
+ [CA2213: Pola możliwe do likwidacji powinny zostać zlikwidowane](https://msdn.microsoft.com/library/ms182328.aspx)
 
- [CA2229: Implementuj konstruktory serializacji](https://msdn.microsoft.com/library/ms182343.aspx)
+ [CA2229: Zaimplementuj konstruktory serializacji](https://msdn.microsoft.com/library/ms182343.aspx)
 
- [CA2231 Operator przeciążenia jest równy przy przesłanianiu wartości ValueType. Equals](https://msdn.microsoft.com/library/ms182359.aspx)
+ [CA2231: Przeciążaj operator równości w przypadku przesłaniania metody ValueType.Equals](https://msdn.microsoft.com/library/ms182359.aspx)

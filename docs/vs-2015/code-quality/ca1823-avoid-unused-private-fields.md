@@ -1,5 +1,5 @@
 ---
-title: 'CA1823: Unikaj nieużywanych pól prywatnych | Dokumentacja firmy Microsoft'
+title: 'CA1823: Unikaj nieużywanych pól prywatnych | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - CA1823
 ms.assetid: 614f94f6-0dc7-430f-8124-cb889a4a720f
 caps.latest.revision: 13
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 32bf1596e4994f3cfdb2df179bb5d7f1a743f289
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d7ccfbe863e010b4dcf8a9d1b442c9bcdba6822e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68201656"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661128"
 ---
 # <a name="ca1823-avoid-unused-private-fields"></a>CA1823: Unikaj nieużywanych pól prywatnych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,20 +29,20 @@ ms.locfileid: "68201656"
 |-|-|
 |TypeName|AvoidUnusedPrivateFields|
 |CheckId|CA1823|
-|Kategoria|Microsoft.Performance|
-|Zmiana kluczowa|Bez podziału|
+|Kategoria|Microsoft. Performance|
+|Zmiana kluczowa|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
- Ta reguła jest zgłaszany, gdy istnieje pole private w kodzie, ale nie jest używany przez wszystkie ścieżce kodu.
+ Ta reguła jest raportowana, gdy istnieje pole prywatne w kodzie, ale nie jest ono używane przez żadną ścieżkę kodu.
 
 ## <a name="rule-description"></a>Opis reguły
  Zostały wykryte pola prywatne, które w zestawie nie są widoczne jako dostępne.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, usuń pole, lub Dodaj kod, który korzysta z niego.
+ Aby naprawić naruszenie tej reguły, Usuń pole lub Dodaj kod, który go używa.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Jest bezpieczne pominąć ostrzeżenie od tej reguły.
+ Można bezpiecznie pominąć ostrzeżenie z tej reguły.
 
 ## <a name="related-rules"></a>Powiązane reguły
  [CA1812: Unikaj klas wewnętrznych bez wystąpień](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
@@ -51,4 +51,4 @@ ms.locfileid: "68201656"
 
  [CA1804: Usuń nieużywane zmienne lokalne](../code-quality/ca1804-remove-unused-locals.md)
 
- [CA1811: Unikaj niewywołanego kodu prywatnego](../code-quality/ca1811-avoid-uncalled-private-code.md)
+ [CA1811: Unikaj niewywoływanego kodu prywatnego](../code-quality/ca1811-avoid-uncalled-private-code.md)

@@ -1,5 +1,5 @@
 ---
-title: Znajdowanie rozszerzeń i korzystanie z | Dokumentacja firmy Microsoft
+title: Znajdowanie i używanie rozszerzeń | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -12,63 +12,63 @@ helpviewer_keywords:
 - managing extensions visual studio
 ms.assetid: 4ca92d93-31b9-47ef-8109-4a429d9e2ca3
 caps.latest.revision: 47
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f4878827ae65a8f42e8225c7daab207a27a0614a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: df6219a66b0f6c85e197b209741706abc7ce3d06
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426385"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655879"
 ---
 # <a name="finding-and-using-visual-studio-extensions"></a>Znajdowanie rozszerzeń programu Visual Studio i korzystanie z nich
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Rozszerzenia programu Visual Studio są pakiety kodu, które są uruchamiane w programie Visual Studio i udostępnia nowe i ulepszone funkcje programu Visual Studio. Można znaleźć więcej informacji na temat rozszerzeń programu Visual Studio tutaj: [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
+Rozszerzenia programu Visual Studio to pakiety kodu, które działają w programie Visual Studio i udostępniają nowe lub udoskonalone funkcje programu Visual Studio. Więcej informacji na temat rozszerzeń programu Visual Studio można znaleźć tutaj: [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
- Możesz użyć **rozszerzenia i aktualizacje** okno dialogowe, aby zainstalować rozszerzenia programu Visual Studio i przykłady z witryn sieci Web i innych lokalizacji, a następnie włączyć, wyłączyć, aktualizacji lub odinstaluj je. (**Narzędzia / rozszerzenia i aktualizacje**, lub typu **rozszerzenia** w **Szybkie uruchamianie** okno). Okno dialogowe zawiera również aktualizacje do zainstalowanych przykładów i rozszerzenia. Można również pobrać rozszerzenia z witryny sieci Web lub pobrać je z innymi deweloperami.
+ Można użyć okna dialogowego **rozszerzenia i aktualizacje** , aby zainstalować rozszerzenia programu Visual Studio i przykłady z witryn sieci Web i innych lokalizacji, a następnie włączyć, wyłączyć, zaktualizować lub odinstalować je. (**Narzędzia/rozszerzenia i aktualizacje**lub **rozszerzenia** typu w oknie **Szybkie uruchamianie** ). W oknie dialogowym są również wyświetlane aktualizacje zainstalowanych przykładów i rozszerzeń. Możesz również pobrać rozszerzenia z witryn sieci Web lub pobrać je od innych deweloperów.
 
 > [!NOTE]
-> Począwszy od programu Visual Studio 2015, rozszerzenia w galerii Visual Studio w serwisie zostaną automatycznie zaktualizowane.  Można zmienić tego ustawienia za pomocą **rozszerzenia i aktualizacje** okna dialogowego.  Zobacz sekcję dotyczącą **automatyczne aktualizacje rozszerzeń** poniżej szczegółowe informacje.
+> Począwszy od programu Visual Studio 2015, rozszerzenia hostowane w galerii programu Visual Studio zostaną automatycznie zaktualizowane.  To ustawienie można zmienić za pomocą okna dialogowego **rozszerzenia i aktualizacje** .  Aby uzyskać szczegółowe informacje, zobacz sekcję dotyczącą **automatycznych aktualizacji rozszerzeń** poniżej.
 
 ## <a name="finding-visual-studio-extensions"></a>Znajdowanie rozszerzeń programu Visual Studio
- Można zainstalować rozszerzenia z [Visual Studio Marketplace](https://marketplace.visualstudio.com/) lub [galerii przykładów](https://code.msdn.microsoft.com/vstudio) w witrynie internetowej firmy Microsoft. Rozszerzeniami mogą być formanty, przykłady, szablony, narzędzia lub inne składniki, które dodają nowe funkcjonalności do programu Visual Studio. Program Visual Studio obsługuje rozszerzenia w formacie pakietu VSIX — te obejmują szablony projektów, szablony elementów, elementy **przybornika** elementów, składniki zarządzane rozszerzenia Framework (MEF) i pakiety VSPackages. Można również pobrać i zainstalować rozszerzenia na podstawie tożsamości usługi Zarządzanej, ale **rozszerzenia i aktualizacje** okno dialogowe nie można je włączyć lub wyłączyć. W galerii Visual Studio zawiera rozszerzenia MSI i VSIX.
+ Możesz zainstalować rozszerzenia z [Visual Studio Marketplace](https://marketplace.visualstudio.com/) lub z [galerii przykładów](https://code.msdn.microsoft.com/vstudio) w witrynie sieci Web firmy Microsoft. Rozszerzeniami mogą być formanty, przykłady, szablony, narzędzia lub inne składniki, które dodają nowe funkcjonalności do programu Visual Studio. Program Visual Studio obsługuje rozszerzenia w formacie pakietu VSIX — obejmują one szablony projektów, szablony elementów, elementy **przybornika** , składniki Managed Extension Framework (MEF) i pakietów VSPackage. Można również pobrać i zainstalować rozszerzenia oparte na MSI, ale okno dialogowe **rozszerzenia i aktualizacje** nie może włączać ani wyłączać. Galeria programu Visual Studio zawiera rozszerzenia VSIX i MSI.
 
-## <a name="installing-or-uninstalling-visual-studio-extensions"></a>Instalowanie lub odinstalowywanie rozszerzenia programu Visual Studio
- W **rozszerzenia i aktualizacje**, znaleźć rozszerzenia, którą chcesz zainstalować. (Jeśli znasz nazwę lub część nazwy rozszerzenia, możesz wyszukiwać w **wyszukiwania galerii programu Visual Studio** okna.) Kliknij przycisk **Pobierz**, następnie **zainstalować**. Aby załadować rozszerzenie, należy ponownie uruchomić program Visual Studio.
+## <a name="installing-or-uninstalling-visual-studio-extensions"></a>Instalowanie lub odinstalowywanie rozszerzeń programu Visual Studio
+ W obszarze **rozszerzenia i aktualizacje**Znajdź rozszerzenie, które chcesz zainstalować. (Jeśli znasz nazwę lub część nazwy rozszerzenia, możesz wyszukać w oknie **Galeria wyszukiwania programu Visual Studio** ). Kliknij przycisk **Pobierz**, a następnie **Zainstaluj**. Aby załadować rozszerzenie, należy ponownie uruchomić program Visual Studio.
 
- Podczas próby instalacji rozszerzenia, które ma zależności, instalator sprawdza, czy są one już zainstalowane. Jeśli nie są zainstalowane, **rozszerzenia i aktualizacje** okno dialogowe zawiera listę zależności, które muszą być zainstalowane, zanim będzie można zainstalować rozszerzenia.
+ Podczas próby instalacji rozszerzenia, które ma zależności, instalator sprawdza, czy są one już zainstalowane. Jeśli nie są zainstalowane, okno dialogowe **rozszerzenia i aktualizacje** zawiera listę zależności, które należy zainstalować przed zainstalowaniem rozszerzenia.
 
- Jeśli nie chcesz już dłużej używać rozszerzenia, możesz je wyłączyć lub odinstalować. Wyłączone rozszerzenie jest wciąż zainstalowane, ale nie jest załadowane. Można wyłączyć tylko rozszerzenia VSIX; rozszerzenia, które zostały zainstalowane za pomocą Instalatora MSI można tylko odinstalować. Znaleźć rozszerzenia, a następnie kliknij przycisk **Odinstaluj** lub **wyłączyć**. Aby zwolnić wyłączone rozszerzenie, należy ponownie uruchomić program Visual Studio.
+ Jeśli nie chcesz już dłużej używać rozszerzenia, możesz je wyłączyć lub odinstalować. Wyłączone rozszerzenie jest wciąż zainstalowane, ale nie jest załadowane. Można wyłączyć tylko rozszerzenia VSIX; rozszerzenia, które zostały zainstalowane przy użyciu pliku MSI, można odinstalować tylko. Znajdź rozszerzenie, a następnie kliknij przycisk **Odinstaluj** lub **Wyłącz**. Musisz ponownie uruchomić program Visual Studio, aby zwolnić wyłączone rozszerzenie.
 
 ## <a name="per-user-and-administrative-extensions"></a>Rozszerzenia administracyjne i dla poszczególnych użytkowników
- Większość rozszerzeń to rozszerzenia dla poszczególnych użytkowników i są instalowane w **%LocalAppData%\Microsoft\VisualStudio\\< wersja programu Visual Studio\>\Extensions\\**  folderu. Kilka rozszerzeń to rozszerzenia administracyjne i są instalowane w **\<folder instalacji programu Visual Studio > \Common7\IDE\Extensions\\** folderu.
+ Większość rozszerzeń jest rozszerzeniami poszczególnych użytkowników i są instalowane w **%LocalAppData%\Microsoft\VisualStudio \\ < programu Visual Studio w wersji \> \extensions \\** folder. Niektóre rozszerzenia są rozszerzeniami administracyjnymi i są instalowane w **folderze instalacyjnym programu \<Visual Studio > \Common7\IDE\Extensions \\** folder.
 
- Aby chronić system przed rozszerzeniami, które mogą zawierać błędy lub złośliwy kod, można ograniczyć rozszerzenia dla poszczególnych użytkowników można załadować tylko wtedy, gdy program Visual Studio jest uruchamiany z uprawnieniami zwykłego użytkownika. Oznacza to, że rozszerzenia dla poszczególnych użytkowników są wyłączone, po uruchomieniu programu Visual Studio z uprawnieniami administratora. Aby to zrobić, przejdź do **rozszerzenia i aktualizacje** Strona opcji (**narzędzia / Opcje**, **środowiska**, **rozszerzenia i aktualizacje**, lub po prostu Typ **rozszerzenia** w **Szybkie uruchamianie** okno). Wyczyść **obciążenia rozszerzenia dla poszczególnych użytkowników podczas uruchamiania jako administrator** pole wyboru, a następnie uruchom ponownie program Visual Studio.
+ Aby chronić system przed rozszerzeniami, które mogą zawierać błędy lub złośliwy kod, można ograniczyć rozszerzenia dla poszczególnych użytkowników tylko wtedy, gdy program Visual Studio jest uruchamiany z normalnymi uprawnieniami użytkownika. Oznacza to, że rozszerzenia dla poszczególnych użytkowników są wyłączone, gdy program Visual Studio jest uruchamiany z uprawnieniami użytkownika administracyjnego. W tym celu przejdź do strony opcje **rozszerzeń i aktualizacji** (**Narzędzia/Opcje**, **środowisko**, **rozszerzenia i aktualizacje**lub po prostu wpisz **rozszerzenie** w oknie **Szybkie uruchamianie** ). Wyczyść pole wyboru **Załaduj rozszerzenia na użytkownika podczas uruchamiania jako administrator** , a następnie uruchom ponownie program Visual Studio.
 
-## <a name="automatic-extension-updates"></a>Aktualizacje automatyczne rozszerzenia
- Rozszerzenia dla poszczególnych użytkowników są automatycznie aktualizowane, gdy nowa wersja jest dostępna w galerii Visual Studio.  Nowa wersja rozszerzenia są wykrywane i zainstalowane w tle, a przy następnym ponownym uruchomieniu programu Visual Studio, nowa wersja rozszerzenia zostanie uruchomiona.
+## <a name="automatic-extension-updates"></a>Automatyczne aktualizacje rozszerzeń
+ Rozszerzenia dla poszczególnych użytkowników są automatycznie aktualizowane, gdy nowa wersja jest dostępna w galerii programu Visual Studio.  Nowa wersja rozszerzenia zostanie wykryta i zainstalowana w tle, a po następnym ponownym uruchomieniu programu Visual Studio zostanie uruchomiona nowa wersja rozszerzenia.
 
- Tylko rozszerzenia dla poszczególnych użytkowników można automatycznie aktualizować.  Rozszerzenia administracyjne, które są instalowane dla wszystkich użytkowników nie będzie aktualizowana i nadal ręcznie zainstalować nowe wersje za pośrednictwem **rozszerzenia i aktualizacje** okna dialogowego **aktualizacje** węzła. Możesz zobaczyć, jakie rozszerzenia zostaną automatycznie zaktualizowane w okienku szczegółów rozszerzenia **rozszerzenia i aktualizacje** okna dialogowego.
+ Tylko rozszerzenia poszczególnych użytkowników mogą być aktualizowane automatycznie.  Rozszerzenia administracyjne, które są zainstalowane dla wszystkich użytkowników, nie będą aktualizowane i nadal ręcznie instalują nowe wersje za pomocą węzła **aktualizacje** okna dialogowego **rozszerzenia i aktualizacje** . Możesz zobaczyć, które rozszerzenia zostaną automatycznie zaktualizowane w okienku szczegółów rozszerzenia okna dialogowego **rozszerzenia i aktualizacje** .
 
- Jeśli chcesz wyłączyć automatyczne aktualizacje, można wyłączyć funkcję dla wszystkich rozszerzeń lub tylko określone rozszerzenia.
+ Jeśli chcesz wyłączyć aktualizacje automatyczne, możesz wyłączyć tę funkcję dla wszystkich rozszerzeń lub tylko określonych rozszerzeń.
 
-- Aby wyłączyć aktualizacje automatyczne dla wszystkich rozszerzeń, kliknij przycisk **zmiany ustawień rozszerzenia i aktualizacje** link **rozszerzenia i aktualizacje** okna dialogowego i usuń zaznaczenie pola wyboru **automatycznego aktualizowania rozszerzenia**.
+- Aby wyłączyć aktualizacje automatyczne dla wszystkich rozszerzeń, kliknij link **Zmień ustawienia rozszerzeń i aktualizacji** w oknie dialogowym **rozszerzenia i aktualizacje** , a następnie usuń zaznaczenie pola **automatycznie Aktualizuj rozszerzenia**.
 
-- Aby wyłączyć automatyczne aktualizacje dla określonego rozszerzenia, usuń zaznaczenie pola wyboru **automatycznie Aktualizuj to rozszerzenie** opcji w okienku szczegółów rozszerzenia na prawej krawędzi **rozszerzenia i aktualizacje** okna dialogowego.
+- Aby wyłączyć aktualizacje automatyczne dla określonego rozszerzenia, usuń zaznaczenie pola wyboru **automatycznie Aktualizuj to rozszerzenie** w okienku szczegółów rozszerzenia po prawej stronie okna dialogowego **rozszerzenia i aktualizacje** .
 
 > [!NOTE]
-> Począwszy od programu Visual Studio 2015 Update 2, można określić (w **narzędzia / Opcje / środowisko / rozszerzenia i aktualizacje**) czy będzie automatyczne aktualizacje dla rozszerzenia dla poszczególnych użytkowników, wszystkie rozszerzenia użytkowników lub obie (ustawienie domyślne).
+> Począwszy od programu Visual Studio 2015 Update 2, można określić (w obszarze **Narzędzia/Opcje/środowisko/rozszerzenia i aktualizacje**), czy aktualizacje automatyczne mają być ustawiane dla rozszerzeń dla poszczególnych użytkowników, wszystkich rozszerzeń użytkowników, czy obu (ustawienie domyślne).
 
-## <a name="sample-master-copies-and-working-copies"></a>Kopie główne próbki i kopie robocze
+## <a name="sample-master-copies-and-working-copies"></a>Przykładowe kopie główne i kopie robocze
  Po zainstalowaniu przykładu online, rozwiązanie jest przechowywane w dwóch miejscach:
 
-- Kopia robocza jest przechowywany w lokalizacji określonej w **nowy projekt** okno dialogowe.
+- Kopia robocza jest przechowywana w lokalizacji określonej w oknie dialogowym **Nowy projekt** .
 
 - Oddzielna kopia główna jest przechowywana na komputerze.
 
-  Możesz użyć **rozszerzenia i aktualizacje** okno dialogowe do wykonania tych zadań związanych z przykładami:
+  Za pomocą okna dialogowego **rozszerzenia i aktualizacje** można wykonywać następujące zadania związane z przykładami:
 
 - Wypisanie listy kopii głównych przykładów, które zostały zainstalowane.
 
@@ -76,17 +76,17 @@ Rozszerzenia programu Visual Studio są pakiety kodu, które są uruchamiane w p
 
 - Zainstalowanie pakietów przykładów, które są zbiorami przykładów odnoszących się do technologii lub funkcji.
 
-- Instalowanie pojedynczych przykładów online. (Można to również zrobić w **nowy projekt** okno dialogowe.)
+- Instalowanie pojedynczych przykładów online. (Można to również zrobić w oknie dialogowym **Nowy projekt** ).
 
 - Wyświetlanie powiadomień o aktualizacjach, gdy zostaną opublikowane zmiany kodu źródłowego dla zainstalowanych przykładów.
 
-- Aktualizowanie kopii głównej zainstalowanego przykładu, po powiadomienie o aktualizacji.
+- Zaktualizuj główną kopię zainstalowanego przykładu w przypadku powiadomienia o aktualizacji.
 
 ## <a name="installing-without-using-the-extensions-and-updates-dialog-box"></a>Instalowanie bez używania okna dialogowego Rozszerzenia i aktualizacje
- Rozszerzenia, które zostały spakowane do plików .vsix, mogą być dostępne w lokalizacjach innych niż galeria programu Visual Studio. **Rozszerzenia i aktualizacje** okno dialogowe nie może wykryć tych plików, ale można zainstalować plik .vsix, klikając dwukrotnie plik, lub wybierając plik i naciskając klawisz ENTER. Następnie postępuj zgodnie z instrukcjami. Jeśli rozszerzenie jest zainstalowane, możesz użyć **rozszerzenia i aktualizacje** okno dialogowe, aby ją włączyć, wyłączyć lub odinstaluj je.
+ Rozszerzenia, które zostały spakowane do plików .vsix, mogą być dostępne w lokalizacjach innych niż galeria programu Visual Studio. Okna dialogowego **rozszerzenia i aktualizacje** nie mogą wykryć tych plików, ale można zainstalować plik. vsix, klikając dwukrotnie plik lub wybierając plik i naciskając klawisz ENTER. Następnie postępuj zgodnie z instrukcjami. Po zainstalowaniu rozszerzenia można użyć okna dialogowego **rozszerzenia i aktualizacje** , aby je włączyć, wyłączyć lub odinstalować.
 
-## <a name="extension-types-not-supported-by-the-extensions-and-updates-dialog-box"></a>Typy rozszerzeń, które nie są obsługiwane przez rozszerzenia i aktualizacje okno dialogowe
- Program Visual Studio w dalszym ciągu obsługuje rozszerzenia, które są instalowane przez Instalator (MSI) programu Microsoft ale nie za pomocą **rozszerzenia i aktualizacje** okno dialogowe bez żadnych modyfikacji.
+## <a name="extension-types-not-supported-by-the-extensions-and-updates-dialog-box"></a>Typy rozszerzeń nieobsługiwane przez okno dialogowe rozszerzenia i aktualizacje
+ Program Visual Studio w dalszym ciągu obsługuje rozszerzenia, które są instalowane przez Instalatora Microsoft (MSI), ale nie za pomocą okna dialogowego **rozszerzenia i aktualizacje** bez żadnych modyfikacji.
 
 > [!TIP]
-> Jeśli rozszerzenie opartym na MSI zawierają pliku extension.vsixmanifest, rozszerzenia pojawią się w **rozszerzenia i aktualizacje** okno dialogowe.
+> Jeśli rozszerzenie programu MSI zawiera plik rozszerzenia. vsixmanifest, rozszerzenie pojawi się w oknie dialogowym **rozszerzenia i aktualizacje** .

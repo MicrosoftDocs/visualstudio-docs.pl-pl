@@ -2,17 +2,17 @@
 title: Korzystanie z różnych przeglądarek sieci Web do przeprowadzania kodowanych testów interfejsu użytkownika
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 1b7cad6d52dc3fabc182881b99163cf15e1a260c
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+author: jillre
+ms.openlocfilehash: 24e4ee35f21b7477e9b3d601305bd6534a16d9e0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926570"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659783"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>Korzystanie z różnych przeglądarek sieci Web z kodowanymi testami interfejsu użytkownika
 
@@ -38,7 +38,7 @@ Testując aplikację internetową za pomocą przeglądarek internetowych różne
 
 ## <a name="how-do-i-record-and-play-back-coded-ui-tests-on-web-applications-using-the-supported-web-browsers"></a>Jak nagrywać i odtwarzać kodowane testy interfejsu użytkownika w aplikacjach internetowych przy użyciu obsługiwanych przeglądarek internetowych?
 
-**Zapisywanie** Musisz użyć konstruktora kodowanego testu interfejsu użytkownika, aby nagrać test aplikacji sieci Web przy użyciu programu Internet Explorer. Można opcjonalnie dodać sprawdzanie poprawności i niestandardowy kod dla formantów testowanych przy użyciu wstępnie zdefiniowanego zestawu właściwości, jak zwykle w przypadku kodowanych testów interfejsu użytkownika. Aby uzyskać więcej informacji, zobacz [Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md).
+**Nagrywanie:** Musisz użyć konstruktora kodowanego testu interfejsu użytkownika, aby nagrać test aplikacji sieci Web przy użyciu programu Internet Explorer. Można opcjonalnie dodać sprawdzanie poprawności i niestandardowy kod dla formantów testowanych przy użyciu wstępnie zdefiniowanego zestawu właściwości, jak zwykle w przypadku kodowanych testów interfejsu użytkownika. Aby uzyskać więcej informacji, zobacz [Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md).
 
 > [!NOTE]
 > Nie można zarejestrować zakodowanych testów interfejsu użytkownika przy użyciu przeglądarek Google Chrome i Mozilla Firefox.
@@ -55,7 +55,7 @@ Aby odtworzyć testy w przeglądarkach sieci Web bez programu IE, należy zainst
 
 1. W menu **Narzędzia** wybierz pozycję **rozszerzenia i aktualizacje**.
 
-2. W oknie dialogowym **rozszerzenia i aktualizacje** Wyszukaj ciąg `Selenium components for Cross Browser Testing`.
+2. W oknie dialogowym **rozszerzenia i aktualizacje** Wyszukaj `Selenium components for Cross Browser Testing`.
 
 ::: moniker-end
 
@@ -63,7 +63,7 @@ Aby odtworzyć testy w przeglądarkach sieci Web bez programu IE, należy zainst
 
 1. W menu **rozszerzenia** , wybierz **Zarządzanie rozszerzeniami**.
 
-2. W oknie dialogowym **Zarządzanie rozszerzeniami** Wyszukaj ciąg `Selenium components for Cross Browser Testing`.
+2. W oknie dialogowym **Zarządzanie rozszerzeniami** Wyszukaj `Selenium components for Cross Browser Testing`.
 
 ::: moniker-end
 
@@ -88,7 +88,7 @@ Aby włączyć debugowanie aplikacji internetowej, należy zastosować następuj
 
     1. W menu **debugowanie** wybierz **wyjątki**.
 
-    2. W przypadku **wyjątków środowiska uruchomieniowego języka wspólnego**Usuń zaznaczenie pola nieobsługiwane przez **użytkownika**.
+    2. W przypadku **wyjątków środowiska uruchomieniowego języka wspólnego**Usuń zaznaczenie pola **nieobsługiwane przez użytkownika**.
 
 Jeśli nie widzisz opcji zmiany `BrowserWindow.CurrentBrowser` w kodowanym teście interfejsu użytkownika, być może używasz wersji programu Visual Studio, która nie obsługuje kodowanych testów interfejsu użytkownika przy użyciu różnych przeglądarek sieci Web. Aby użyć takich kodowanych testów interfejsu użytkownika, należy użyć wersji Visual Studio Enterprise.
 
@@ -106,11 +106,11 @@ Oto kilka innych rzeczy, które należy znać:
 
 Można skonfigurować dane wyjściowe do uwzględnienia zrzutów ekranu w zakodowanych dziennikach interfejsu użytkownika. Aby to zrobić, należy ustawić niektóre ustawienia konfiguracji w pliku *QTAgent32. exe. config* . Domyślnie ten plik jest instalowany w następującej lokalizacji:
 
-*%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*
+*% ProgramFiles (x86)% \ Microsoft Visual Studio\2017\Enterprise\Common7\IDE*
 
 Ustaw następujące wartości:
 
-- `EqtTraceLevel``system.diagnostics` w sekcji.
+- `EqtTraceLevel` w sekcji `system.diagnostics`.
 
 - `<add name="EqtTraceLevel" value="4" />`
 
@@ -133,5 +133,5 @@ Aby uzyskać więcej informacji, zobacz [Analizowanie kodowanych testów interfe
 ## <a name="see-also"></a>Zobacz także
 
 - [Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)
-- [Obsługiwane konfiguracje oraz platformy zakodowanych testów interfejsu użytkownika i nagrywania akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [Obsługiwane konfiguracje i platformy dla kodowanych testów interfejsu użytkownika i nagrań akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
 - [Analizowanie kodowanych testów interfejsu użytkownika za pomocą dzienników kodowanych testów interfejsu użytkownika](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)

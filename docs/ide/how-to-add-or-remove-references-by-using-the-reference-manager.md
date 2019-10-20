@@ -16,17 +16,17 @@ helpviewer_keywords:
 - referencing components, removing references
 - references [Visual Studio], removing
 - referencing components, assemblies not listed
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 584c807670e5e5ba0bc4fa1b381dca30474212e7
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.openlocfilehash: e302b5c4df73f8fcdadf766a1fe1d8dc0731c261
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787891"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654823"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Instrukcje: Dodawanie lub usuwanie odwołań za pomocą Menedżera odwołań
 
@@ -50,7 +50,7 @@ W oknie dialogowym Menedżer odwołań są wyświetlane różne kategorie po lew
 
 ## <a name="add-a-reference"></a>Dodaj odwołanie
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł **odwołania** lub **zależności** i wybierz polecenie **Dodaj odwołanie**. Możesz również kliknąć prawym przyciskiem myszy węzeł projektu i wybrać polecenie **Dodaj** > **odwołanie**.
+1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł **odwołania** lub **zależności** i wybierz polecenie **Dodaj odwołanie**. Możesz również kliknąć prawym przyciskiem myszy węzeł projektu i wybrać polecenie **dodaj**  > **odwołanie**.
 
    Zostanie otwarty **Menedżer odwołań** i zostanie wyświetlona lista dostępnych odwołań według grupy.
 
@@ -60,9 +60,9 @@ W oknie dialogowym Menedżer odwołań są wyświetlane różne kategorie po lew
 
 Na karcie **zestawy** są wyświetlane wszystkie zestawy .NET, które są dostępne do odwołania. Karta **zestawy** nie wyświetla żadnych zestawów z globalnej pamięci podręcznej zestawów (GAC), ponieważ zestawy w pamięci GAC są częścią środowiska wykonawczego. W przypadku wdrażania lub kopiowania aplikacji zawierającej odwołanie do zestawu, który jest zarejestrowany w pamięci podręcznej GAC, zestaw nie zostanie wdrożony ani skopiowany z aplikacją, niezależnie od ustawienia **kopiowania lokalnego** . Aby uzyskać więcej informacji, zobacz [Zarządzanie odwołaniami w projekcie](../ide/managing-references-in-a-project.md).
 
-Po ręcznym dodaniu odwołania do dowolnych przestrzeni nazw EnvDTE<xref:EnvDTE>( <xref:EnvDTE80>, <xref:EnvDTE90>, <xref:EnvDTE90a>, lub <xref:EnvDTE100>) ustaw właściwość **Osadź typy** współdziałania z odwołaniem na **wartość false** w  **Okno właściwości** . Ustawienie tej właściwości na **wartość true** może spowodować problemy z kompilacją ze względu na pewne właściwości EnvDTE, które nie mogą być osadzone.
+Po ręcznym dodaniu odwołania do dowolnych przestrzeni nazw EnvDTE (<xref:EnvDTE>, <xref:EnvDTE80>, <xref:EnvDTE90>, <xref:EnvDTE90a> lub <xref:EnvDTE100>) ustaw właściwość **Osadź typy** współdziałania z odwołaniem na **wartość false** w oknie **Właściwości** . Ustawienie tej właściwości na **wartość true** może spowodować problemy z kompilacją ze względu na pewne właściwości EnvDTE, które nie mogą być osadzone.
 
-Wszystkie projekty pulpitu zawierają niejawne odwołanie do **biblioteki mscorlib**. Projekty Visual Basic zawierają niejawne odwołanie <xref:Microsoft.VisualBasic>do. Wszystkie projekty zawierają niejawne odwołanie do **System. Core**, nawet jeśli zostanie usunięte z listy odwołań.
+Wszystkie projekty pulpitu zawierają niejawne odwołanie do **biblioteki mscorlib**. Projekty Visual Basic zawierają niejawne odwołanie do <xref:Microsoft.VisualBasic>. Wszystkie projekty zawierają niejawne odwołanie do **System. Core**, nawet jeśli zostanie usunięte z listy odwołań.
 
 Jeśli typ projektu nie obsługuje zestawów, karta nie pojawi się w oknie dialogowym Menadżer odwołań.
 
@@ -72,7 +72,7 @@ Karta **zestawy** składa się z dwóch podkart:
 
    W przypadku projektów, które nie są ukierunkowane na platformę .NET Core lub platforma uniwersalna systemu Windows, na karcie **Framework** są wyliczane zestawy z platformy docelowej. Użytkownik musi dodać wszystkie odwołania wymagane przez aplikację.
 
-   Projekty uniwersalne systemu Windows domyślnie zawierają odwołania do wszystkich zestawów w środowisku strategicznym. W projektach zarządzanych, węzeł tylko do odczytu w folderze **References** w **Eksplorator rozwiązań** wskazuje odwołanie do całej struktury. W związku z tym na karcie **Struktura** nie są wyliczane żadne zestawy z platformy i zamiast tego zostanie wyświetlony następujący komunikat: "Wszystkie zestawy Framework są już przywoływane. Użyj Przeglądarka obiektów, aby poznać odwołania w strukturze ".
+   Projekty uniwersalne systemu Windows domyślnie zawierają odwołania do wszystkich zestawów w środowisku strategicznym. W projektach zarządzanych, węzeł tylko do odczytu w folderze **References** w **Eksplorator rozwiązań** wskazuje odwołanie do całej struktury. W związku z tym na karcie **Struktura** nie są wyliczane żadne zestawy z struktury i zamiast tego jest wyświetlany następujący komunikat: "wszystkie zestawy Framework są już przywoływane. Użyj Przeglądarka obiektów, aby poznać odwołania w strukturze ".
 
 2. **Rozszerzenia** wyświetla listę wszystkich zestawów, które zostały opracowane przez zewnętrznych dostawców składników i formantów w celu rozszerzenia platformy dostosowanej. W zależności od celu aplikacji użytkownika, może być konieczne użycie tych zestawów.
 
@@ -88,7 +88,7 @@ Karta **zestawy** składa się z dwóch podkart:
 
    I starsze wersje [docelowego identyfikatora platformy]
 
-   Na przykład jeśli projekt jest ukierunkowany na .NET Framework 4 na komputerze 32-bitowym, **rozszerzenia** wyliczają zestawy, które są zarejestrowane w obszarze *\.\Microsoft NETFramework\v4.0\AssemblyFoldersEx*, *\Microsoft\. NETFramework\v3.5\AssemblyFoldersEx*, *\Microsoft\.NETFramework\v3.0\AssemblyFoldersEx*i *\.\Microsoft NETFramework\v2.0\AssemblyFoldersEx*.
+   Na przykład jeśli projekt jest ukierunkowany na .NET Framework 4 na komputerze 32-bitowym, **rozszerzenia** wyliczają zestawy, które są zarejestrowane w obszarze *\Microsoft \.NETFramework \v4.0\assemblyfoldersex*, *\Microsoft \.NETFramework \v3.5\ AssemblyFoldersEx*, *\Microsoft \.NETFramework \V3.0\assemblyfoldersex*i *\Microsoft \.NETFramework \v2.0\assemblyfoldersex*.
 
 Niektóre składniki na liście mogą nie być wyświetlane, w zależności od wersji platformy projektu. Może się to zdarzyć w następujących warunkach:
 
@@ -111,7 +111,7 @@ Należy unikać dodawania odwołań do plików do danych wyjściowych innego pro
 
   - Inne katalogi projektu w tym samym rozwiązaniu. (Zestawy te można znaleźć za pomocą karty **projekty** ).
 
-  \- lub —
+  \- lub-
 
 - Ustaw klucz rejestru określający lokalizację zestawów do wyświetlenia:
 
@@ -127,11 +127,11 @@ Należy unikać dodawania odwołań do plików do danych wyjściowych innego pro
 
   - `[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
 
-  VersionMinimum to najniższa wersja platformy, która ma zastosowanie. *\<\>* Jeśli *\<VersionMinimum\>* to v 3.0, foldery określone w *AssemblyFoldersEx* mają zastosowanie do projektów, które są przeznaczone dla .NET Framework 3,0 i nowszych.
+  *\<VersionMinimum \>* to najniższa wersja platformy, która ma zastosowanie. Jeśli *\<VersionMinimum \>* to v 3.0, foldery określone w *AssemblyFoldersEx* mają zastosowanie do projektów przeznaczonych dla .NET Framework 3,0 i nowszych.
 
-  *AssemblyLocationjestkatalogiemzestawów,któremająbyćwyświetlanewokniedialogowymDodajodwołanie,naprzykładC:\MyAssemblies\>. \<*
+  *\<AssemblyLocation \>* jest katalogiem zestawów, które mają być wyświetlane w oknie dialogowym **Dodawanie odwołania** , na przykład *C:\MyAssemblies*.
 
-  Utworzenie klucza `HKEY_LOCAL_MACHINE` rejestru w węźle pozwala wszystkim użytkownikom zobaczyć zestawy w określonej lokalizacji w oknie dialogowym **Dodawanie odwołania** . Tworzenie klucza rejestru w `HKEY_CURRENT_USER` węźle ma wpływ tylko na ustawienie bieżącego użytkownika.
+  Utworzenie klucza rejestru w węźle `HKEY_LOCAL_MACHINE` umożliwia wszystkim użytkownikom wyświetlanie zestawów w określonej lokalizacji w oknie dialogowym **Dodawanie odwołania** . Tworzenie klucza rejestru w węźle `HKEY_CURRENT_USER` ma wpływ tylko na ustawienie bieżącego użytkownika.
 
   Otwórz ponownie okno dialogowe **Dodawanie odwołania** . Zestawy powinny znajdować się na karcie **.NET** . Jeśli tak nie jest, upewnij się, że zestawy znajdują się w określonym katalogu *AssemblyLocation* , uruchom ponownie program Visual Studio i spróbuj ponownie.
 
@@ -151,7 +151,7 @@ Dodaj odwołanie do projektu udostępnionego na karcie **projekty udostępnione*
 ## <a name="universal-windows-tab"></a>Karta uniwersalna systemu Windows
 
 Karta **uniwersalna systemu Windows** zawiera listę zestawów SDK, które są specyficzne dla platform, na których działają systemy operacyjne Windows.
-Ta karta ma dwie podgrupy: **Rdzeń** i **rozszerzenia**.
+Ta karta ma dwie podgrupy: **rdzeń** i **rozszerzenia**.
 
 ### <a name="core-subgroup"></a>Podgrupa podstawowa
 
@@ -186,11 +186,11 @@ Należy unikać dodawania odwołań do plików do danych wyjściowych innego pro
 
 Nie można przejść do zestawu SDK i dodać go do projektu. Możesz tylko przeglądać do pliku (na przykład zestawu lub *winmd*) i dodać go do projektu.
 
-Podczas wykonywania odwołania do pliku winmd, oczekiwany układ polega na tym, że  *\<nazwa pliku >. winmd*,  *\<filename >. dll*, a  *\<nazwa pliku >. pri* są umieszczone obok siebie. Jeśli odwołujesz się do WinMD w następujących scenariuszach, niepełny zestaw plików zostanie skopiowany do katalogu wyjściowego projektu i, w związku z tym, wystąpią błędy kompilacji i czasu wykonywania.
+W przypadku odwoływania się do pliku WinMD, oczekiwany układ polega na tym, że *\<FileName >. winmd*, *\<FileName >. dll*, a *\<FileName >. pri* są umieszczone obok siebie. Jeśli odwołujesz się do WinMD w następujących scenariuszach, niepełny zestaw plików zostanie skopiowany do katalogu wyjściowego projektu i, w związku z tym, wystąpią błędy kompilacji i czasu wykonywania.
 
-- **Składnik macierzysty**: projekt natywny utworzy jeden winmd dla każdego rozłączonego zestawu nazw i jedną bibliotekę DLL, która składa się z implementacji. Pliki WinMD będą miały odmienne nazwy. W przypadku odwoływania się do tego pliku składnika macierzystego MSBuild nie rozpoznaje, że niepodobne nazwy WinMD tworzą jeden składnik. W związku z tym tylko nazwy plików o identycznej nazwie  *\<>. dll* i  *\<filename >. winmd* zostaną skopiowane, a błędy środowiska uruchomieniowego zostaną wykonane. Aby obejść ten problem, Utwórz zestaw SDK rozszerzenia. Aby uzyskać więcej informacji, zobacz [Tworzenie zestawu Software Development Kit](../extensibility/creating-a-software-development-kit.md).
+- **Składnik macierzysty**: projekt natywny utworzy jeden winmd dla każdego rozłączonego zestawu nazw i jedną bibliotekę DLL, która składa się z implementacji. Pliki WinMD będą miały odmienne nazwy. W przypadku odwoływania się do tego pliku składnika macierzystego MSBuild nie rozpoznaje, że niepodobne nazwy WinMD tworzą jeden składnik. W związku z tym tylko identyczne nazwy *\<FileName >. dll* i *\<FileName >. winmd* zostaną skopiowane, a błędy środowiska uruchomieniowego zostaną wykonane. Aby obejść ten problem, Utwórz zestaw SDK rozszerzenia. Aby uzyskać więcej informacji, zobacz [Tworzenie zestawu Software Development Kit](../extensibility/creating-a-software-development-kit.md).
 
-- **Używanie formantów**: co najmniej kontrolka XAML składa się z  *\<nazwy pliku >. winmd*,  *\<filename >. dll*,  *\<NazwaPliku >. pri*, *\<XamlName >. XAML* *i obrazname>.jpg\<* . Po skompilowaniu projektu pliki zasobów, które są skojarzone z odwołaniem do pliku, nie zostaną skopiowane do katalogu wyjściowego projektu i tylko  *\<filename >. winmd*,  *\<filename >. dll* i  *\<Nazwa pliku >. pri* zostanie skopiowana. Błąd kompilacji jest rejestrowany w celu powiadomienia użytkownika o braku zasobów  *\<XamlName >. XAML* i  *\<ImageName >. jpg* . Aby kompilacja się powiodła, trzeba ręcznie skopiować te pliki zasobów do katalogu wyjściowego projektu dla kompilacji i debugowania/czasu wykonywania. Aby obejść ten problem, Utwórz zestaw SDK rozszerzeń, wykonując kroki opisane w temacie [Tworzenie zestawu SDK oprogramowania](../extensibility/creating-a-software-development-kit.md) lub edytuj plik projektu, aby dodać następującą właściwość:
+- **Używanie formantów**: co najmniej kontrolka XAML składa się z *\<FileName >. winmd*, *\<FileName >. dll*, *\<FileName >. pri*, *\<XamlName >. XAML*i *@no__t_ 10ImageName >. jpg*. Po skompilowaniu projektu pliki zasobów, które są skojarzone z odwołaniem do pliku, nie zostaną skopiowane do katalogu wyjściowego projektu i tylko *\<FileName >. winmd*, *\<FileName >. dll* i \<FileName > *. pri* zostanie skopiowany. Zarejestrowano błąd kompilacji w celu powiadomienia użytkownika o tym, że zasoby *\<XamlName >. XAML* i *\<ImageName >. jpg* . Aby kompilacja się powiodła, trzeba ręcznie skopiować te pliki zasobów do katalogu wyjściowego projektu dla kompilacji i debugowania/czasu wykonywania. Aby obejść ten problem, Utwórz zestaw SDK rozszerzeń, wykonując kroki opisane w temacie [Tworzenie zestawu SDK oprogramowania](../extensibility/creating-a-software-development-kit.md) lub edytuj plik projektu, aby dodać następującą właściwość:
 
     ```xml
     <PropertyGroup>

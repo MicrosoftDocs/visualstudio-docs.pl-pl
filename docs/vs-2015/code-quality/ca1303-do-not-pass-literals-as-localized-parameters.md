@@ -1,5 +1,5 @@
 ---
-title: 'CA1303: Nie przekazuj literałów jako zlokalizowanych parametrów | Dokumentacja firmy Microsoft'
+title: 'CA1303: nie przekazuj literałów jako parametrów zlokalizowanych | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -13,50 +13,50 @@ helpviewer_keywords:
 - CA1303
 ms.assetid: 904d284e-76d0-4b8f-a4df-0094de8d7aac
 caps.latest.revision: 24
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: fafcf113f5f40da3bcc4666778330865dcdfb84c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: ce85a3a933d9453c63ef118d5dfd9e0b17cbf130
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65686810"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661447"
 ---
-# <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303: Nie przekazuj literałów jako zlokalizowanych parametrów
+# <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303: Nie należy przekazywać literałów jako parametrów zlokalizowanych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|DoNotPassLiteralsAsLocalizedParameters|
 |CheckId|CA1303|
-|Kategoria|Microsoft.Globalization|
-|Zmiana kluczowa|Bez podziału|
+|Kategoria|Microsoft. Globalizacja|
+|Zmiana kluczowa|Bez przerywania|
 
 ## <a name="cause"></a>Przyczyna
- Metoda przekazuje ciąg literału jako parametr do konstruktora lub metody w [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] klasy biblioteki i ciąg ten powinien być możliwych do zlokalizowania.
+ Metoda przekazuje literał ciągu jako parametr do konstruktora lub metody w bibliotece klas [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] i ten ciąg powinien być Lokalizowalny.
 
- To ostrzeżenie jest zgłaszane, gdy literał ciągu jest przekazywany jako wartość parametru lub właściwość dotyczy co najmniej jeden z następujących przypadkach:
+ To ostrzeżenie jest zgłaszane, gdy ciąg literału zostanie przesunięty jako wartość do parametru lub właściwości, co najmniej jeden z następujących przypadków ma wartość true:
 
-- <xref:System.ComponentModel.LocalizableAttribute> Atrybut parametru lub właściwość jest ustawiona na wartość true.
+- Atrybut <xref:System.ComponentModel.LocalizableAttribute> parametru lub właściwości jest ustawiony na wartość true.
 
-- Nazwa parametru lub właściwości zawiera "Text", "Message" lub "Podpis".
+- Nazwa parametru lub właściwości zawiera tekst "text", "Message" lub "Caption".
 
-- Nazwa parametru ciągu, który jest przekazywany do metody Console.Write — lub elementu Console.WriteLine jest "value" lub "format".
+- Nazwa parametru ciągu, który jest przesyłany do konsoli. Write lub Console. WriteLine ma wartość "value" lub "format".
 
 ## <a name="rule-description"></a>Opis reguły
- Literały ciągów, które są osadzone w kodzie źródłowym są trudne do zlokalizowania.
+ Literały ciągu, które są osadzone w kodzie źródłowym, są trudne do zlokalizowania.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, Zamień literał ciągu pobierane w drodze wystąpienie <xref:System.Resources.ResourceManager> klasy.
+ Aby naprawić naruszenie tej reguły, Zastąp literał ciągu ciągiem pobranym przez wystąpienie klasy <xref:System.Resources.ResourceManager>.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Jest bezpieczne pominąć ostrzeżenie od tej reguły, jeśli nie jest lokalizowany biblioteki kodu lub jeśli ciąg nie jest uwidaczniana, aby użytkownik końcowy lub deweloperem, za pomocą biblioteki kodu.
+ Jeśli biblioteka kodu nie zostanie zlokalizowana, można bezpiecznie pominąć ostrzeżenie z tej reguły lub jeśli ten ciąg nie jest widoczny dla użytkownika końcowego lub dewelopera przy użyciu biblioteki kodu.
 
- Użytkownikom można wyeliminować szumu względem metod, które nie powinny być przekazywane zlokalizowanych ciągów, albo zmieniając nazwę parametru lub właściwość o nazwie lub oznaczając te elementy jako warunkowe.
+ Użytkownicy mogą wyeliminować hałas względem metod, które nie powinny być przesyłane do zlokalizowanych ciągów przez zmianę nazwy parametru lub właściwości o nazwie lub poprzez oznaczenie tych elementów jako warunku.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład przedstawia metodę, która zgłasza wyjątek, gdy jeden z dwóch argumentów są poza zakresem. Dla pierwszego argumentu konstruktora wyjątków jest przekazywany ciąg literału, który narusza tę regułę. Drugi argument Konstruktor poprawnie jest przekazywany ciąg, który został pobrany <xref:System.Resources.ResourceManager>.
+ Poniższy przykład przedstawia metodę, która zgłasza wyjątek, gdy jeden z dwóch argumentów jest poza zakresem. Dla pierwszego argumentu Konstruktor wyjątku jest przenoszona jako ciąg literału, co narusza tę regułę. Dla drugiego argumentu Konstruktor prawidłowo przeszedł ciąg pobrany przez <xref:System.Resources.ResourceManager>.
 
  [!code-cpp[FxCop.Globalization.DoNotPassLiterals#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Globalization.DoNotPassLiterals/cpp/FxCop.Globalization.DoNotPassLiterals.cpp#1)]
  [!code-csharp[FxCop.Globalization.DoNotPassLiterals#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Globalization.DoNotPassLiterals/cs/FxCop.Globalization.DoNotPassLiterals.cs#1)]

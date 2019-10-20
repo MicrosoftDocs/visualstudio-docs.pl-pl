@@ -8,27 +8,27 @@ helpviewer_keywords:
 - code, locating lines
 - Go To Line dialog box
 ms.assetid: 529fa251-b7b3-49cf-863c-10e0b82ac7cc
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ae4db65bc4e220a38e8fd5e5fefc221aa7d2eda
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8e82e7b9629e956a69e3ee69972c6e244ce10153
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789700"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661598"
 ---
 # <a name="go-to-line-dialog-box"></a>Idź do linii — Okno dialogowe
 
-**Przejdź do wiersza** okno dialogowe pozwala na przechodzenie do określonego wiersza w aktywnym dokumencie. Aby uzyskać dostęp do tego okna dialogowego, otwórz dokument do edycji, a następnie wybierz **Edytuj** > **przejdź do** > **przejdź do wiersza** lub naciśnij **Ctrl**  + **G**.
+Okno dialogowe **Przejdź do wiersza** umożliwia przejście do określonego wiersza w aktywnym dokumencie. Aby uzyskać dostęp do tego okna dialogowego, Otwórz dokument do edycji, a następnie wybierz pozycję **edytuj**  > **Przejdź do**  > **Przejdź do wiersza** lub naciśnij klawisz **Ctrl** +**G**.
 
 ![Okno dialogowe Przejdź do wiersza w programie Visual Studio](media/go-to-line-dialog-box.png)
 
-## <a name="line-number-1---n"></a>Numer wiersza (1 - \<n >)
+## <a name="line-number-1---n"></a>Numer wiersza (1-\<n >)
 
-W **numer wiersza (1 - \<n >)** wprowadź numer wiersza w aktywnym dokumencie, który chcesz przenieść. Wprowadzona liczba muszą należeć do zakresu od 1 do ostatni numer wiersza w bieżącym dokumencie.
+W polu **numer wiersza (1-\<n >)** wprowadź numer wiersza w aktywnym dokumencie, do którego chcesz przenieść. Wprowadzona liczba musi należeć do zakresu od 1 do ostatniego numeru wiersza w bieżącym dokumencie.
 
 ## <a name="see-also"></a>Zobacz też
 

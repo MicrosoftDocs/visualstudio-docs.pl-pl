@@ -9,21 +9,21 @@ helpviewer_keywords:
 - Build options [C#]
 - Project Designer, Build page
 ms.assetid: 77ff1bfc-d633-4634-ba29-9afdb6d7e362
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9f121c4a95d719074e3004ee21e0d49d71e4c243
-ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
+ms.openlocfilehash: ab60524f854b3974d383cb7d8ab37470195fc85e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72000207"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668224"
 ---
 # <a name="build-page-project-designer-c"></a>Strona kompilacji, Projektant projektu (C#)
 
-Użyj strony **kompilacja** **projektanta projektu** , aby określić właściwości konfiguracji kompilacji projektu. Ta strona ma zastosowanie tylko do projektów [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)].
+Użyj strony **kompilacja** **projektanta projektu** , aby określić właściwości konfiguracji kompilacji projektu. Ta strona dotyczy tylko projektów [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)].
 
 Aby uzyskać dostęp do strony **kompilacja** , wybierz węzeł projektu (nie węzeł **rozwiązania** ) w **Eksplorator rozwiązań**. Następnie wybierz **Widok**, **strony właściwości** w menu. Gdy zostanie wyświetlony Projektant projektu, wybierz kartę **kompilacja** .
 
@@ -34,7 +34,7 @@ Aby uzyskać dostęp do strony **kompilacja** , wybierz węzeł projektu (nie w�
 Poniższe opcje pozwalają wybrać konfigurację i platformę do wyświetlenia lub zmodyfikowania.
 
 > [!NOTE]
-> W przypadku uproszczonych konfiguracji kompilacji system projektu określa, czy należy utworzyć wersję Debug lub Release. W związku z tym te opcje nie są wyświetlane. Aby uzyskać więcej informacji, zobacz [jak: Ustaw konfiguracje Debug i Release @ no__t-0.
+> W przypadku uproszczonych konfiguracji kompilacji system projektu określa, czy należy utworzyć wersję Debug lub Release. W związku z tym te opcje nie są wyświetlane. Aby uzyskać więcej informacji, zobacz [How to: Set Debug and Release Configurations](../../debugger/how-to-set-debug-and-release-configurations.md).
 
 **Konfiguracja**
 
@@ -42,7 +42,7 @@ Określa ustawienia konfiguracji do wyświetlenia lub zmodyfikowania. Ustawienia
 
 **Platformach**
 
-Określa ustawienia platformy do wyświetlenia lub zmodyfikowania. Ustawienie domyślne jest **aktywne (dowolny procesor)** . Możesz zmienić aktywną platformę przy użyciu **Configuration Manager**. Aby uzyskać więcej informacji, zobacz [jak: Utwórz i Edytuj konfiguracje @ no__t-0.
+Określa ustawienia platformy do wyświetlenia lub zmodyfikowania. Ustawienie domyślne jest **aktywne (dowolny procesor)** . Możesz zmienić aktywną platformę przy użyciu **Configuration Manager**. Aby uzyskać więcej informacji, zobacz [How to: Create and Edit Configurations](../../ide/how-to-create-and-edit-configurations.md).
 
 ## <a name="general"></a>Ogólne
 
@@ -82,7 +82,7 @@ To pole wyboru jest dostępne tylko wtedy, gdy spełnione są wszystkie następu
 
 **Zezwalaj na niebezpieczny kod**
 
-Zezwala na kompilowanie kodu [niebezpieczny](/dotnet/csharp/language-reference/keywords/unsafe) , który używa niebezpiecznego słowa kluczowego. Aby uzyskać więcej informacji, zobacz [/UNSAFEC# (opcje kompilatora)](/dotnet/csharp/language-reference/compiler-options/unsafe-compiler-option).
+Zezwala na kompilowanie kodu, który używa [niebezpiecznego](/dotnet/csharp/language-reference/keywords/unsafe) słowa kluczowego. Aby uzyskać więcej informacji, zobacz [/UNSAFEC# (opcje kompilatora)](/dotnet/csharp/language-reference/compiler-options/unsafe-compiler-option).
 
 **Optymalizuj kod**
 
@@ -113,13 +113,13 @@ Poniższe ustawienia służą do określania, które ostrzeżenia są traktowane
 > [!TIP]
 > Jeśli nie chcesz, aby ostrzeżenia analizy kodu były traktowane jak błędy, zobacz [często zadawane pytania dotyczące analizy kodu](../../code-quality/analyzers-faq.md#treat-warnings-as-errors).
 
-## <a name="output"></a>Output
+## <a name="output"></a>Dane wyjściowe
 
 Poniższe ustawienia służą do konfigurowania opcji danych wyjściowych dla procesu kompilacji.
 
 **Ścieżka wyjściowa**
 
-Określa lokalizację plików wyjściowych dla konfiguracji projektu. Wprowadź ścieżkę do danych wyjściowych kompilacji w tym polu lub wybierz przycisk **Przeglądaj** , aby określić ścieżkę. Ścieżka jest względna; Jeśli wprowadzisz ścieżkę bezwzględną, zostanie ona zapisana jako względna. Ścieżka domyślna to bin\Debug lub bin\Release @ no__t-0.
+Określa lokalizację plików wyjściowych dla konfiguracji projektu. Wprowadź ścieżkę do danych wyjściowych kompilacji w tym polu lub wybierz przycisk **Przeglądaj** , aby określić ścieżkę. Ścieżka jest względna; Jeśli wprowadzisz ścieżkę bezwzględną, zostanie ona zapisana jako względna. Ścieżka domyślna to bin\Debug lub bin\Release \\.
 
 W przypadku uproszczonych konfiguracji kompilacji system projektu określa, czy należy utworzyć wersję Debug lub Release. Polecenie **Build** z menu **Debuguj** (F5) umieści kompilację w lokalizacji debugowania niezależnie od określonej **ścieżki wyjściowej** . Jednak polecenie **Build** z menu **kompilacja** umieszcza je w określonej lokalizacji. Aby uzyskać więcej informacji, zobacz [Omówienie konfiguracji kompilacji](../../ide/understanding-build-configurations.md).
 

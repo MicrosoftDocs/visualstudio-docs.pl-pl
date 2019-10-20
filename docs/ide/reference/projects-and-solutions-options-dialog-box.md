@@ -8,21 +8,21 @@ helpviewer_keywords:
 - Projects and Solutions Options dialog box
 - Options dialog box, Projects and Solutions
 ms.assetid: 2801f24e-a138-488a-ae3c-e1f99a678ac0
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31d829a668a2c9690333315c30904623187fe51d
-ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
+ms.openlocfilehash: 783cdf5cef127a39958f14a2dc5ece9a45fcee62
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69976735"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655722"
 ---
-# <a name="options-dialog-box-projects-and-solutions--general"></a>Opcje — okno dialogowe: Ogólne projekty i \> rozwiązania
+# <a name="options-dialog-box-projects-and-solutions--general"></a>Opcje — okno dialogowe: projekty i rozwiązania \> ogólne
 
-Ta strona służy do definiowania zachowań programu Visual Studio związanych z projektami i rozwiązaniami. Aby uzyskać dostęp do tych opcji, wybierz pozycję **Narzędzia** > **Opcje**, rozwiń węzeł **projekty i rozwiązania**, a następnie wybierz pozycję **Ogólne**.
+Ta strona służy do definiowania zachowań programu Visual Studio związanych z projektami i rozwiązaniami. Aby uzyskać dostęp do tych opcji, wybierz pozycję **narzędzia**  > **Opcje**, rozwiń węzeł **projekty i rozwiązania**, a następnie wybierz pozycję **Ogólne**.
 
 Poniższe opcje są dostępne na stronie **Ogólne** .
 
@@ -38,7 +38,7 @@ Po wybraniu **Eksplorator rozwiązań** automatycznie otwierane, a aktywny eleme
 
 Po wybraniu opcji konfiguracji kompilacji są wyświetlane w oknie dialogowym **strony właściwości projektu** i w oknie dialogowym **strony właściwości rozwiązania** . Po wyczyszczeniu opcje konfiguracji kompilacji nie są wyświetlane w oknie dialogowym **strony właściwości projektu** i w oknie dialogowym **strony właściwości rozwiązania** dla Visual Basic i C# projektów, które zawierają jedną konfigurację lub dwie konfiguracje Debugowanie i wydanie. Jeśli projekt zawiera konfigurację zdefiniowaną przez użytkownika, są wyświetlane opcje konfiguracji kompilacji.
 
-Po zaznaczeniu tej opcji polecenia w menu **kompilacja** , takie jak Kompilowanie **rozwiązania**, ponowne **Kompilowanie rozwiązania**i **czyste rozwiązanie**, są wykonywane w konfiguracji wydania i polecenia w menu **Debuguj** , takie jak **Start Debugowanie** i **Uruchamianie bez debugowania**jest wykonywane w konfiguracji debugowania.
+Po zaznaczeniu tej opcji polecenia w menu **kompilacja** , takie jak **Kompilowanie rozwiązania**, ponowne **Kompilowanie rozwiązania**i **czyste rozwiązanie**, są wykonywane w konfiguracji wydania i polecenia w menu **Debuguj** , takie jak **Start Debugowanie** i **Uruchamianie bez debugowania**jest wykonywane w konfiguracji debugowania.
 
 ## <a name="always-show-solution"></a>Zawsze pokazuj rozwiązanie
 
@@ -87,17 +87,17 @@ Po wybraniu przywraca stan węzłów w Eksplorator rozwiązań w odniesieniu do 
 
 ## <a name="open-sdk-style-project-files-with-double-click-or-the-enter-key"></a>Otwieranie plików projektu w stylu zestawu SDK przy użyciu dwukrotnego kliknięcia lub klawisza ENTER
 
-Gdy ta opcja jest zaznaczona, kliknij dwukrotnie węzeł projektu w stylu zestawu SDK w Eksplorator rozwiązań lub wybierz go, a następnie naciśnij klawisz **Enter**, plik projektu (na przykład \*plik. csproj) zostanie otwarty jako XML w edytorze. Po zaznaczeniu tej opcji kliknij dwukrotnie węzeł projektu w stylu zestawu SDK w Eksplorator rozwiązań lub wybierz go, a naciśnięcie klawisza **Enter** ma wpływ na rozwijanie lub zwijanie węzła.
+Gdy ta opcja jest zaznaczona, kliknij dwukrotnie węzeł projektu w stylu zestawu SDK w Eksplorator rozwiązań lub wybierz go, a następnie naciśnij klawisz **Enter**, plik projektu (na przykład plik \*. csproj) zostanie otwarty jako XML w edytorze. Po zaznaczeniu tej opcji kliknij dwukrotnie węzeł projektu w stylu zestawu SDK w Eksplorator rozwiązań lub wybierz go, a naciśnięcie klawisza **Enter** ma wpływ na rozwijanie lub zwijanie węzła.
 
 Jeśli ta opcja nie jest zaznaczona i chcesz edytować plik projektu w stylu zestawu SDK, kliknij prawym przyciskiem myszy węzeł projektu w Eksplorator rozwiązań a następnie wybierz polecenie **Edytuj plik projektu**. W przypadku innych typów projektów należy najpierw zwolnić projekt przed jego edycją w programie Visual Studio.
 
 > [!TIP]
-> *Projekt w stylu zestawu SDK*lub [zestaw SDK projektu](../../msbuild/how-to-use-project-sdk.md)ma nowszy, bardziej zoptymalizowany format pliku projektu, który został wprowadzony w programie MSBuild 15,0. Projekt `Sdk` wstyluzestawuSDK`<Project Sdk="Microsoft.NET.Sdk">`zawiera atrybut w elemencie,naprzykład.`Project` Program Visual Studio tworzy projekt w stylu zestawu SDK podczas tworzenia nowego projektu .NET Core z jednego z szablonów programu Visual Studio, na przykład.
+> *Projekt w stylu zestawu SDK*lub [zestaw SDK projektu](../../msbuild/how-to-use-project-sdk.md)ma nowszy, bardziej zoptymalizowany format pliku projektu, który został wprowadzony w programie MSBuild 15,0. Projekt w stylu zestawu SDK zawiera atrybut `Sdk` w elemencie `Project`, na przykład `<Project Sdk="Microsoft.NET.Sdk">`. Program Visual Studio tworzy projekt w stylu zestawu SDK podczas tworzenia nowego projektu .NET Core z jednego z szablonów programu Visual Studio, na przykład.
 
 ::: moniker-end
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Opcje — okno dialogowe: Lokalizacje projektów i \> rozwiązań](projects-solutions-locations-options.md)
+- [Opcje — okno dialogowe: projekty i rozwiązania \> lokalizacje](projects-solutions-locations-options.md)
 - [Okno dialogowe Opcje, projekty i rozwiązania, kompilacja i uruchomienie](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)
 - [Okno dialogowe Opcje, Projekty i rozwiązania, Projekty internetowe](../../ide/reference/options-dialog-box-projects-and-solutions-web-projects.md)

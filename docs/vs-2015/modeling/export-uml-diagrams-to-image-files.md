@@ -6,15 +6,15 @@ ms.technology: vs-ide-modeling
 ms.topic: conceptual
 ms.assetid: b29ce2a5-0ee3-4ab7-9aa3-13ca9c6b37a2
 caps.latest.revision: 10
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 782d5da27898de7a332824e6fb07842710ab0656
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: c095291cd02d591d9e493601b598a63c1ccb6f5b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871839"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669657"
 ---
 # <a name="export-uml-diagrams-to-image-files"></a>Eksportowanie diagramów UML do plików obrazu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Możesz wyeksportować dokument UML z [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 > [!NOTE]
 > Aby ten kod działał jako polecenie menu, należy dołączyć go do składnika MEF. Aby uzyskać więcej informacji, zobacz [Definiowanie polecenia menu na diagramie modelowania](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
 
- Kod najpierw używa [IShape. GetObject](/previous-versions/ee789371(v=vs.140)) , aby uzyskać <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram> podstawową implementację. Ten typ ma metodę <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.CreateBitmap%2A>.
+ Kod najpierw używa [IShape. GetObject](/previous-versions/ee789371(v=vs.140)) , aby uzyskać <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram> źródłowej implementacji. Ten typ ma metodę <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.CreateBitmap%2A>.
 
 ```
 namespace SaveToImage

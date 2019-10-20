@@ -1,5 +1,5 @@
 ---
-title: 'CA1063: Poprawnie zaimplementuj interfejs IDisposable | Dokumentacja firmy Microsoft'
+title: 'CA1063: Zaimplementuj interfejs IDisposable poprawnie | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,76 +12,76 @@ helpviewer_keywords:
 - ImplementIDisposableCorrectly
 ms.assetid: 12afb1ea-3a17-4a3f-a1f0-fcdb853e2359
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 90f218165c0543c1881857191efd202717c6e372
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 1fe2982ab9e1b3951583b268eadb44c97c8e4805
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820882"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72663635"
 ---
-# <a name="ca1063-implement-idisposable-correctly"></a>CA1063: Poprawnie zaimplementuj interfejs IDisposable
+# <a name="ca1063-implement-idisposable-correctly"></a>CA1063: Należy prawidłowo zaimplementować interfejs IDisposable
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|ImplementIDisposableCorrectly|
 |CheckId|CA1063|
-|Kategoria|Microsoft.Design|
-|Zmiana kluczowa|Bez podziału|
+|Kategoria|Microsoft. Design|
+|Zmiana kluczowa|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
- `IDisposable` Nie zaimplementowano poprawnie. Poniżej przedstawiono niektóre przyczyny tego problemu:
+ `IDisposable` nie został poprawnie zaimplementowany. Niektóre przyczyny tego problemu są wymienione tutaj:
 
-- Interfejs IDisposable, jest ponownie zaimplementowane w klasie.
+- Interfejs IDisposable jest zaimplementowany w klasie.
 
-- Finalizowanie ponownie zostanie zastąpiona.
+- Finalizacja została przesłonięta.
 
-- Dispose zostanie zastąpiona.
+- Metoda Dispose została zastąpiona.
 
-- Metody Dispose() nie jest publiczna, zapieczętowany lub o nazwie metody Dispose.
+- Metoda Dispose () nie jest publiczna, zapieczętowana lub nazywana Dispose.
 
-- Dispose(bool) nie jest chroniony, wirtualny lub niezapieczętowane.
+- Metoda Dispose (bool) nie jest chroniona, wirtualna lub niezapieczętowany.
 
-- Niezapieczętowane typy metody Dispose() musi wywołać metody Dispose(true).
+- W niezapieczętowanych typach Metoda Dispose () musi wywoływać metodę Dispose (true).
 
-- W przypadku typów niezapieczętowanych implementacji Finalize niewywołujący jednego lub obu tych Dispose(bool) lub finalizatory klasy wielkości liter.
+- W przypadku typów niezapieczętowanych implementacja finalizowania nie wywołuje żadnej lub obu metod Dispose (bool) ani finalizatora klasy przypadku.
 
-  Naruszenie któregokolwiek z tych wzorców wyzwoli to ostrzeżenie.
+  Naruszenie jednego z tych wzorców spowoduje wyzwolenie tego ostrzeżenia.
 
-  Co główny niezapieczętowany typ interfejsu IDisposable, musisz podać swój własny chronionych void Dispose(bool) metodę wirtualną. Metody Dispose() powinny wywoływać metody Dispose(true) i Finalize powinny wywoływać metody Dispose(false). W przypadku tworzenia głównego niezapieczętowanego typu IDisposable, należy zdefiniować Dispose(bool) i wywołać go. Aby uzyskać więcej informacji, zobacz [Cleaning Up Unmanaged Resources](https://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213) w [wytyczne dotyczące projektowania Framework](https://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b) części dokumentacji .NET Framework.
+  Każdy niezapieczętowany typ interfejsu IDisposable musi zapewniać własną, chronioną metodę "void" (bool). Metoda Dispose () powinna wywołać metodę Dispose (true) i Finalize powinna wywołać metodę Dispose (false). Jeśli tworzysz niezapieczętowany typ interfejsu IDisposable, musisz zdefiniować metodę Dispose (bool) i wywołać ją. Aby uzyskać więcej informacji, zobacz [Oczyszczanie zasobów niezarządzanych](https://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213) w sekcji [wskazówki dotyczące projektowania struktury](https://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b) w dokumentacji .NET Framework.
 
 ## <a name="rule-description"></a>Opis reguły
  Wszystkie typy IDisposable powinny poprawnie implementować wzorzec Dispose.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Sprawdź swój kod, aby określić, które z następujących rozwiązań rozwiąże to naruszenie.
+ Sprawdź kod i ustal, które z poniższych rozwiązań spowodują rozwiązanie tego naruszenia.
 
-- Usuń interfejs IDisposable z listy interfejsów implementowanych przez {0} i Przesłoń implementację metody Dispose w klasie bazowej, zamiast tego.
+- Usuń interfejs IDisposable z listy interfejsów, które są implementowane przez {0} i Zastąp zamiast niej implementację Dispose klasy podstawowej.
 
-- Usuń finalizator z typu {0}, Przesłoń metodę Dispose (bool disposing) i umieść logikę finalizowania w ścieżce kodu, w którym "disposing" ma wartość false.
+- Usuń finalizator z typu {0}, przesłonić metodę Dispose (usuwanie bool) i umieścić logikę finalizacji w ścieżce kodu, w której element "Dispose" ma wartość false.
 
-- Usuń {0}, Przesłoń metodę Dispose (bool disposing) i umieść logikę rozporządzania w ścieżce kodu, w którym "disposing" ma wartość true.
+- Usuń {0}, Zastąp metodę Dispose (likwidacja bool) i umieść logikę usuwania w ścieżce kodu, w której element "Dispose" ma wartość true.
 
 - Upewnij się, że {0} jest zadeklarowany jako publiczny i zapieczętowany.
 
-- Zmień nazwę {0} do "Usuwania" i upewnij się, że jest on zadeklarowany jako publiczny i zapieczętowany.
+- Zmień nazwę {0} na "Dispose" i upewnij się, że jest on zadeklarowany jako publiczny i zapieczętowany.
 
 - Upewnij się, że {0} jest zadeklarowany jako chroniony, wirtualny i niezapieczętowany.
 
-- Modyfikowanie {0} tak, aby Dispose(true), następnie wywołuje GC. SuppressFinalize w bieżącym wystąpieniu obiektu ("this" lub "Me" w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]), a następnie zwraca.
+- Zmodyfikuj {0} tak, aby wywoływał metodę Dispose (true), a następnie wywołuje metodę GC. SuppressFinalize dla bieżącego wystąpienia obiektu ("This" lub "Me" w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]), a następnie zwraca wartość.
 
-- Modyfikowanie {0} tak, aby wywołuje metody Dispose(false), a następnie zwraca.
+- Zmodyfikuj {0} tak, aby wywołuje metodę Dispose (false), a następnie zwraca wartość.
 
-- Jeśli piszesz klasę niezapieczętowany główny interfejs IDisposable, upewnij się, że implementacja interfejsu IDisposable jest zgodna z wzorcem, opisanego wcześniej w tej sekcji.
+- W przypadku pisania niezapieczętowanej klasy głównej IDisposable upewnij się, że implementacja interfejsu IDisposable jest zgodna ze wzorcem opisanym wcześniej w tej sekcji.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Nie pomijaj ostrzeżeń dla tej reguły.
 
-## <a name="pseudo-code-example"></a>Przykładowy pseudo-kod
- Pseudo-poniższy kod stanowi przykład ogólne implementacji Dispose(bool) w klasie, która korzysta z zarządzanego i natywnego zasobów.
+## <a name="pseudo-code-example"></a>Przykład pseudo kodu
+ Następujący pseudo kod zawiera ogólny przykład sposobu, w jaki Metoda Dispose (bool) powinna zostać zaimplementowana w klasie, która korzysta z zasobów zarządzanych i natywnych.
 
 ```
 public class Resource : IDisposable

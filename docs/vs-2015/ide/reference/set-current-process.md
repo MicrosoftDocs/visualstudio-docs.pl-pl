@@ -1,5 +1,5 @@
 ---
-title: Ustaw bieżący proces | Dokumentacja firmy Microsoft
+title: Ustaw bieżący proces | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -9,41 +9,38 @@ helpviewer_keywords:
 - Set Current Process command
 ms.assetid: 1e016ebd-aadd-411f-a606-03bf69d3f8aa
 caps.latest.revision: 13
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ed19c5b95351f8e9c34255a915fc6a446800f761
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c362d3f5dda5015e91ac88dd8f0abd60a185ba72
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68163346"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665465"
 ---
 # <a name="set-current-process"></a>Ustaw bieżący proces
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ustawia określony proces jako aktywny procesu w debugerze.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```  
-Debug.SetCurrentProcess index  
-```  
-  
-## <a name="arguments"></a>Argumenty  
- `index`  
- Wymagana. Indeks procesu.  
-  
-## <a name="remarks"></a>Uwagi  
- Podczas debugowania, ale tylko jeden proces jest aktywny w programie do usuwania błędów w dowolnym momencie można dołączyć do wielu procesów. Możesz użyć `SetCurrentProcess` polecenie, aby ustawić aktywny proces.  
-  
-## <a name="example"></a>Przykład  
-  
-```  
->Debug.SetCurrentProcess 1  
-```  
-  
-## <a name="see-also"></a>Zobacz też  
- [Visual Studio Commands](../../ide/reference/visual-studio-commands.md)   
- [Okno polecenia](../../ide/reference/command-window.md)   
- [Visual Studio — aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)
+Ustawia określony proces jako aktywny proces w debugerze.
+
+## <a name="syntax"></a>Składnia
+
+```
+Debug.SetCurrentProcess index
+```
+
+## <a name="arguments"></a>Argumenty
+ Wymagane `index`. Indeks procesu.
+
+## <a name="remarks"></a>Uwagi
+ Podczas debugowania można dołączyć do wielu procesów, ale tylko jeden proces jest aktywny w programie w danym momencie. Możesz użyć `SetCurrentProcess` polecenie, aby ustawić aktywny proces.
+
+## <a name="example"></a>Przykład
+
+```
+>Debug.SetCurrentProcess 1
+```
+
+## <a name="see-also"></a>Zobacz też
+ [Visual Studio](../../ide/reference/visual-studio-commands.md) [polecenia polecenia —](../../ide/reference/command-window.md) [Aliasy poleceń programu Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

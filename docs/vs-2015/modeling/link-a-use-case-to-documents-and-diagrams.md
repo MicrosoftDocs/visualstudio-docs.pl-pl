@@ -1,5 +1,5 @@
 ---
-title: Łączenie wariantów użycia z dokumentami i diagramami | Dokumentacja firmy Microsoft
+title: Łączenie przypadku użycia z dokumentami i diagramami | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -11,80 +11,77 @@ helpviewer_keywords:
 - use case diagrams
 ms.assetid: 4c9ed205-9197-4ed5-b39d-ddfa24a0a421
 caps.latest.revision: 12
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ee7657b12741cf65583317ba87bd465e15eb02bb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c713759a8ea75eed3048469327f962668efa4f70
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440969"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657638"
 ---
 # <a name="link-a-use-case-to-documents-and-diagrams"></a>Łączenie przypadków użycia z dokumentami i diagramami
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Możesz połączyć przypadek użycia na diagramie przypadku użycia innego diagramu lub dokumentu. Na przykład można połączyć przypadek użycia, następujące diagramy i dokumenty:  
-  
-- Diagram sekwencji, który pokazuje, jak cele przypadek użycia są realizowane przez interakcje między użytkownikami i system lub jej główne składniki.  
-  
-- Diagram aktywności, który pokazuje szczegółowe akcje użytkowników i systemu lub jego głównych składnikach, czyli podczas faktycznego wykonywania przypadku użycia.  
-  
-- Strony programu OneNote lub akapit, który opisuje przypadek użycia szczegółowo.  
-  
-- Dokument programu Word lub prezentacji programu PowerPoint, opisujący przypadek użycia szczegółowo. Możesz zachować tych dokumentów w rozwiązaniu lub w lokalizacji dostępne dla swojego zespołu, takich jak witryny programu SharePoint.  
-  
-  Aby połączyć przypadek użycia dokumentu, tworzenie artefaktów na diagram przypadków użycia i połączyć przypadek użycia z artefaktem. Właściwości artefaktów służy do Ustaw ścieżkę do pliku diagramu lub dokumentu. Zostanie otwarty po dwukrotnym kliknięciu artefaktu, diagram lub dokumentu.  
-  
-  Można podłączyć jako wiele artefaktów do każdego przypadek użycia, jak chcesz. Możliwe jest także łączenie artefaktów do innych rodzajów elementów na diagramie przypadków użycia.  
-  
-### <a name="to-open-a-document-associated-with-an-artifact"></a>Aby otworzyć dokument skojarzony z artefaktem  
-  
-- Na diagramie przypadków użycia kliknij dwukrotnie kształt artefaktu.  
-  
-     Powiązany dokument zostanie otwarty.  
-  
-### <a name="to-link-a-use-case-to-a-diagram-or-file-in-the-same-solution"></a>Aby połączyć przypadek użycia na diagramie lub pliku w tym samym rozwiązaniu  
-  
-1. Rysowanie diagramu, takich jak diagram sekwencji lub diagram aktywności, aby zilustrować scenariusza przypadku użycia.  
-  
-2. Wróć do diagram przypadków użycia.  
-  
-3. Przeciągnij na diagramie lub w pliku z Eksploratora rozwiązań na pustą część diagramu przypadków użycia.  
-  
-4. Łączenie z artefaktu do przypadków użycia za pomocą **zależności**.  
-  
-### <a name="to-link-to-a-solution-file-such-as-a-word-document-or-powerpoint-presentation"></a>Aby utworzyć łącze do pliku rozwiązania, takie jak dokument programu Word lub prezentacji programu PowerPoint  
-  
-1. Dodaj dokument do rozwiązania.  
-  
-    1. W tym samym folderze Windows jako rozwiązanie, należy przenieść dokument programu Word.  
-  
-    2. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy rozwiązanie, wskaż opcję **Dodaj**, a następnie kliknij przycisk **istniejący element**.  
-  
-    3. Przejdź do dokumentu programu Word, a następnie kliknij przycisk **Dodaj**.  
-  
-         Dokument programu Word pojawia się w folderze rozwiązania w Eksploratorze rozwiązań.  
-  
-2. Przeciągnij dokument programu Word za pomocą Eksploratora rozwiązań na pustą część diagramu przypadków użycia.  
-  
-     Pojawi się nowy artefaktu.  
-  
-3. Łączenie z artefaktu do przypadków użycia za pomocą **zależności**.  
-  
-### <a name="to-link-to-a-shared-document-onenote-element-or-web-page"></a>Aby utworzyć łącze do dokumentu udostępnionego, OneNote element lub strony sieci web  
-  
-1. Uzyskaj adres URL udostępniony element. Może to być na przykład początku ścieżki pliku sieci "\\\\", lub strony sieci web lub początkowy adres URL programu Sharepoint "http://" lub łącze do sekcji programu OneNote, strony, akapitu początku "onenote:".  
-  
-2. W przyborniku kliknij **artefaktu** a następnie kliknij przycisk na diagramie przypadku użycia.  
-  
-3. Za pomocą nowego artefaktu wybrane, wpisz lub wklej adres URL do **hiperłącze** właściwości.  
-  
+Możesz połączyć przypadek użycia w diagramie przypadku użycia z innym diagramem lub dokumentem. Można na przykład połączyć przypadek użycia z następującymi diagramami i dokumentami:
+
+- Diagram sekwencji pokazujący, jak cele przypadku użycia są realizowane przez interakcje między użytkownikami a systemem lub jego głównym składnikiem.
+
+- Diagram aktywności, który pokazuje szczegółowe działania użytkowników i system lub jego główne składniki, gdy wykonują przypadki użycia.
+
+- Strona lub akapit programu OneNote, w którym szczegółowo opisano przypadek użycia.
+
+- Dokument programu Word lub prezentację programu PowerPoint opisującą przypadek użycia szczegółowo. Można zachować takie dokumenty w rozwiązaniu lub w lokalizacji dostępnej dla zespołu, na przykład w witrynie programu SharePoint.
+
+  Aby połączyć przypadek użycia z dokumentem, należy utworzyć artefakt na diagramie przypadków użycia i połączyć przypadek użycia z artefaktem. We właściwościach artefaktu ustawiasz ścieżkę pliku dla innego diagramu lub dokumentu. Po dwukrotnym kliknięciu artefaktu zostanie otwarty inny diagram lub dokument.
+
+  Możesz połączyć dowolną liczbę artefaktów z każdym przypadkiem użycia. Można również łączyć artefakty z innymi rodzajami elementów na diagramie przypadków użycia.
+
+### <a name="to-open-a-document-associated-with-an-artifact"></a>Aby otworzyć dokument skojarzony z artefaktem
+
+- Na diagramie przypadku użycia kliknij dwukrotnie kształt artefaktu.
+
+     Zostanie otwarty skojarzony dokument.
+
+### <a name="to-link-a-use-case-to-a-diagram-or-file-in-the-same-solution"></a>Aby połączyć przypadek użycia z diagramem lub plikiem w tym samym rozwiązaniu
+
+1. Narysuj diagram, taki jak diagram sekwencji lub diagram aktywności, aby zilustrować scenariusz przypadków użycia.
+
+2. Wróć do diagramu przypadków użycia.
+
+3. Przeciągnij diagram lub plik z Eksplorator rozwiązań na pustą część diagramu przypadków użycia.
+
+4. Nawiąż połączenie z artefaktu z przypadkiem użycia przy użyciu **zależności**.
+
+### <a name="to-link-to-a-solution-file-such-as-a-word-document-or-powerpoint-presentation"></a>Aby utworzyć link do pliku rozwiązania, takiego jak dokument programu Word lub prezentacja programu PowerPoint
+
+1. Dodaj dokument do rozwiązania.
+
+    1. Przenieś dokument programu Word do tego samego folderu systemu Windows, w którym znajduje się rozwiązanie.
+
+    2. W Eksplorator rozwiązań kliknij prawym przyciskiem myszy rozwiązanie, wskaż polecenie **Dodaj**, a następnie kliknij pozycję **istniejący element**.
+
+    3. Przejdź do dokumentu programu Word i kliknij przycisk **Dodaj**.
+
+         Dokument programu Word zostanie wyświetlony w folderze rozwiązania w Eksplorator rozwiązań.
+
+2. Przeciągnij dokument programu Word z Eksplorator rozwiązań na pustą część diagramu przypadków użycia.
+
+     Zostanie wyświetlony nowy artefakt.
+
+3. Nawiąż połączenie z artefaktu z przypadkiem użycia przy użyciu **zależności**.
+
+### <a name="to-link-to-a-shared-document-onenote-element-or-web-page"></a>Aby połączyć się z dokumentem udostępnionym, elementem programu OneNote lub stroną sieci Web
+
+1. Uzyskaj adres URL elementu udostępnionego. Może to być na przykład ścieżką pliku sieciowego rozpoczynającą się "\\ \\" lub stronę sieci Web lub adres URL programu SharePoint, zaczynając od "http://" lub link do sekcji programu OneNote, strony lub akapitu rozpoczynającego się "OneNote:".
+
+2. W przyborniku kliknij pozycję **artefakt** , a następnie kliknij pozycję na diagramie przypadku użycia.
+
+3. Po wybraniu nowego artefaktu wpisz lub wklej adres URL do właściwości **Hyperlink** .
+
     > [!NOTE]
-    > Jeśli chcesz podać ścieżkę do pliku, najlepiej w typowych obszaru roboczego wybierz plik (począwszy od "\\\\"), lub pliku w ramach rozwiązania Visual Studio. Dzięki temu ścieżkę pliku pozostanie prawidłowe dla komputera innego członka zespołu, czy rozwiązanie jest przenoszony. Aby dodać dokument, takie jak dokument programu Word do rozwiązania, kliknij prawym przyciskiem myszy rozwiązanie w Eksploratorze rozwiązań, wskaż opcję **Dodaj** a następnie kliknij przycisk **istniejący element**.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Diagramy przypadków użycia UML: Odwołanie](../modeling/uml-use-case-diagrams-reference.md)   
- [Diagramy przypadków użycia UML: Wytyczne dotyczące](../modeling/uml-use-case-diagrams-guidelines.md)   
- [Edytowanie modeli i diagramów UML](../modeling/edit-uml-models-and-diagrams.md)   
- [Tworzenie modeli aplikacji](../modeling/create-models-for-your-app.md)
+    > Jeśli chcesz podać ścieżkę pliku, najlepiej wybrać plik w wspólnym obszarze roboczym (rozpoczynając od "\\ \\") lub pliku w rozwiązaniu programu Visual Studio. Gwarantuje to, że ścieżka pliku pozostanie prawidłowa na komputerze z innym członkiem zespołu lub jeśli rozwiązanie zostanie przeniesione. Aby dodać do rozwiązania dokument, taki jak dokument programu Word, kliknij prawym przyciskiem myszy rozwiązanie w Eksplorator rozwiązań, wskaż polecenie **Dodaj** , a następnie kliknij pozycję **istniejący element**.
+
+## <a name="see-also"></a>Zobacz też
+ [Diagramy przypadków użycia UML: referencyjne](../modeling/uml-use-case-diagrams-reference.md) [diagramy przypadków użycia UML: wytyczne](../modeling/uml-use-case-diagrams-guidelines.md) [Edytowanie modeli UML i diagramów](../modeling/edit-uml-models-and-diagrams.md) [Tworzenie modeli dla aplikacji](../modeling/create-models-for-your-app.md)

@@ -2,32 +2,32 @@
 title: Przekształć kodowane testy interfejsu użytkownika w celu zaczekania na określone zdarzenia
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84a8ad1784ce33d30ce1023f0554feeb340b5703
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: df1e664b8574b5c362b57733dba63f45cc04cd1d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923651"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652954"
 ---
 # <a name="make-coded-ui-tests-wait-for-specific-events-during-playback"></a>Przekształć kodowane testy interfejsu użytkownika, aby oczekiwać na określone zdarzenia podczas odtwarzania
 
-W przypadku odtwarzania kodowanego testu interfejsu użytkownika można nakazać testowi zaczekać na wystąpienie niektórych zdarzeń, takich jak okno, które ma zostać wyświetlone, pasek postępu, który ma być znikany itd. W tym celu należy użyć odpowiedniej metody UITestControl. WaitForControlXXX (), zgodnie z opisem w poniższej tabeli. Aby zapoznać się z przykładem kodowanego testu interfejsu użytkownika, który czeka na włączenie formantu przy <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A> użyciu metody, [zobacz Przewodnik: Tworzenie, edytowanie i obsługa kodowanego testu](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)interfejsu użytkownika.
+W przypadku odtwarzania kodowanego testu interfejsu użytkownika można nakazać testowi zaczekać na wystąpienie niektórych zdarzeń, takich jak okno, które ma zostać wyświetlone, pasek postępu, który ma być znikany itd. W tym celu należy użyć odpowiedniej metody UITestControl. WaitForControlXXX (), zgodnie z opisem w poniższej tabeli. Przykład kodowanego testu interfejsu użytkownika, który czeka na włączenie formantu przy użyciu metody <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>, zobacz [Przewodnik: Tworzenie, edytowanie i obsługa kodowanego testu interfejsu użytkownika](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-**Wymagania**
+**Requirements**
 
 Visual Studio Enterprise
 
 > [!TIP]
-> Możesz również dodać opóźnienia przed akcjami przy użyciu edytora kodowanego testu interfejsu użytkownika. Aby uzyskać więcej informacji, zobacz [jak: Wstaw opóźnienie przed akcją interfejsu użytkownika przy użyciu edytora](editing-coded-ui-tests-using-the-coded-ui-test-editor.md#insert-a-delay-before-a-ui-action)KODOWANEGO testu interfejsu użytkownika.
+> Możesz również dodać opóźnienia przed akcjami przy użyciu edytora kodowanego testu interfejsu użytkownika. Aby uzyskać więcej informacji, zobacz [jak: Wstawianie opóźnienia przed akcją interfejsu użytkownika przy użyciu edytora kodowanego testu interfejsu użytkownika](editing-coded-ui-tests-using-the-coded-ui-test-editor.md#insert-a-delay-before-a-ui-action).
 
-**UITestControl.WaitForControlXXX() Methods**
+**Metody UITestControl. WaitForControlXXX ()**
 
 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlReady%2A>
 
@@ -35,7 +35,7 @@ Czeka, aż kontrolka będzie gotowa do akceptacji danych wejściowych myszy i kl
 
 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>
 
-Czeka, aż formant zostanie włączony, gdy Kreator przeprowadza pewne asynchroniczne sprawdzanie poprawności danych wejściowych przez wykonywanie wywołań do serwera. Na przykład możesz poczekać, aż zostanie włączony **Następny** przycisk kreatora (). Aby zapoznać się z przykładem tej metody [, zobacz Przewodnik: Tworzenie, edytowanie i obsługa kodowanego testu](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)interfejsu użytkownika.
+Czeka, aż formant zostanie włączony, gdy Kreator przeprowadza pewne asynchroniczne sprawdzanie poprawności danych wejściowych przez wykonywanie wywołań do serwera. Na przykład możesz poczekać, aż zostanie włączony **Następny** przycisk kreatora (). Aby zapoznać się z przykładem tej metody, zobacz [Przewodnik: Tworzenie, edytowanie i obsługa kodowanego testu interfejsu użytkownika](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
 
 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlExist%2A>
 
@@ -55,7 +55,7 @@ Czeka na określoną właściwość kontrolki, aby miała przeciwieństwo do okr
 
 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlCondition%2A>
 
-Czeka, aż określony predykat zwróci wartość `true`. Ta wartość może być używana dla złożonej operacji oczekiwania (na przykład lub warunków) dla danej kontrolki. Na przykład możesz poczekać, aż tekst stanu zakończy się **pomyślnie** lub **nie powiedzie się** , jak pokazano w poniższym kodzie:
+Czeka, aż określony predykat zwróci wartość `true`. Ta wartość może być używana dla złożonej operacji oczekiwania (na przykład lub warunków) dla danej kontrolki. Na przykład możesz poczekać, aż tekst stanu **zakończy się pomyślnie** lub **nie powiedzie się** , jak pokazano w poniższym kodzie:
 
 ```csharp
 
@@ -72,7 +72,7 @@ statusText.WaitForControlCondition(IsStatusDone);
 
  <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForCondition%2A>
 
-Wszystkie poprzednie metody są metodami wystąpień UITestControl. Ta metoda jest metodą statyczną. Ta metoda czeka również, aż określony predykat jest `true` , ale może być używany dla złożonej operacji oczekiwania (np. lub warunków) dla wielu kontrolek. Na przykład możesz poczekać, aż tekst stanu zakończy się **pomyślnie** lub zostanie wyświetlony komunikat o błędzie, jak pokazano w poniższym kodzie:
+Wszystkie poprzednie metody są metodami wystąpień UITestControl. Ta metoda jest metodą statyczną. Ta metoda czeka również na `true` określonego predykatu, ale może być używana dla złożonej operacji oczekiwania (np. lub warunków) dla wielu kontrolek. Na przykład możesz poczekać, aż tekst stanu **zakończy się pomyślnie** lub zostanie wyświetlony komunikat o błędzie, jak pokazano w poniższym kodzie:
 
 ```csharp
 
@@ -92,13 +92,13 @@ Wszystkie te metody mają następujące zachowanie:
 
 Metody zwracają wartość true, jeśli oczekiwanie zakończyło się pomyślnie i FAŁSZ, jeśli oczekiwanie nie powiodło się.
 
-Niejawny limit czasu dla operacji oczekiwania jest określony <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.WaitForReadyTimeout%2A> przez właściwość. Wartość domyślna tej właściwości to 60000 milisekund (jedna minuta).
+Niejawny limit czasu dla operacji oczekiwania jest określony przez <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.WaitForReadyTimeout%2A> właściwości. Wartość domyślna tej właściwości to 60000 milisekund (jedna minuta).
 
 Metody mają Przeciążenie w milisekundach, aby uzyskać jawny limit czasu. Jednak gdy operacja oczekiwania powoduje niejawne wyszukiwanie formantu lub, gdy aplikacja jest zajęta, rzeczywisty czas oczekiwania może być większy niż określony limit czasu.
 
-Poprzednie funkcje są zaawansowane i elastyczne i powinny spełniać niemal wszystkie warunki. Jednak w przypadku, gdy te metody nie spełnią Twoich potrzeb i należy wykonać kod <xref:Microsoft.VisualStudio.TestTools.UITesting.Playback.Wait%2A>albo <xref:System.Threading.Thread.Sleep%2A> lub w kodzie, zaleca się używanie odtwarzania. czekaj () zamiast wątku. uśpienia (). Przyczyny tego są następujące:
+Poprzednie funkcje są zaawansowane i elastyczne i powinny spełniać niemal wszystkie warunki. Jednak w przypadku, gdy te metody nie spełnią Twoich potrzeb i należy zakodować <xref:Microsoft.VisualStudio.TestTools.UITesting.Playback.Wait%2A> lub <xref:System.Threading.Thread.Sleep%2A> w kodzie, zaleca się używanie odtwarzania. czekaj () zamiast wątku. uśpienia (). Przyczyny tego są następujące:
 
-Możesz użyć <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.ThinkTimeMultiplier%2A>właściwości, aby zmodyfikować czas trwania uśpienia. Domyślnie ta zmienna ma wartość 1, ale można ją zwiększyć lub zmniejszyć, aby zmienić czas oczekiwania na cały kod. Na przykład w przypadku testowania za pośrednictwem wolnej sieci lub innego przypadku niska wydajność można zmienić tę zmienną w jednym miejscu (lub nawet w pliku konfiguracji) na 1,5, aby dodać 50% dodatkowego oczekiwania we wszystkich miejscach.
+Za pomocą <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.ThinkTimeMultiplier%2A>property można modyfikować czas uśpienia. Domyślnie ta zmienna ma wartość 1, ale można ją zwiększyć lub zmniejszyć, aby zmienić czas oczekiwania na cały kod. Na przykład w przypadku testowania za pośrednictwem wolnej sieci lub innego przypadku niska wydajność można zmienić tę zmienną w jednym miejscu (lub nawet w pliku konfiguracji) na 1,5, aby dodać 50% dodatkowego oczekiwania we wszystkich miejscach.
 
 Odtwarzanie. czekaj () wewnętrznie wywołuje wątek. uśpienia () (po wyższym obliczaniu) w mniejszych fragmentach w pętli for podczas sprawdzania, czy operacja cancel\break użytkownika. Innymi słowy odtwarzanie. czekaj () umożliwia anulowanie odtwarzania przed końcem oczekiwania, gdy uśpienie może nie być lub zgłosić wyjątek.
 
@@ -111,5 +111,5 @@ Odtwarzanie. czekaj () wewnętrznie wywołuje wątek. uśpienia () (po wyższym 
 - [Tworzenie kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md)
 - [Przewodnik: Tworzenie, edytowanie i obsługa kodowanego testu interfejsu użytkownika](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 - [Anatomia kodowanego testu interfejsu użytkownika](../test/anatomy-of-a-coded-ui-test.md)
-- [Obsługiwane konfiguracje oraz platformy zakodowanych testów interfejsu użytkownika i nagrywania akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
-- [Instrukcje: Wstaw opóźnienie przed akcją interfejsu użytkownika przy użyciu edytora kodowanego testu interfejsu użytkownika](editing-coded-ui-tests-using-the-coded-ui-test-editor.md#insert-a-delay-before-a-ui-action)
+- [Obsługiwane konfiguracje i platformy dla kodowanych testów interfejsu użytkownika i nagrań akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [Instrukcje: Wstawianie opóźnienia przed akcją interfejsu użytkownika przy użyciu edytora kodowanego testu interfejsu użytkownika](editing-coded-ui-tests-using-the-coded-ui-test-editor.md#insert-a-delay-before-a-ui-action)

@@ -1,5 +1,5 @@
 ---
-title: 'CA1309: Użyj porządkowego StringComparison | Dokumentacja firmy Microsoft'
+title: 'CA1309: Użyj porządkowego StringComparison | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,39 +12,39 @@ helpviewer_keywords:
 - CA1309
 ms.assetid: 19be0854-cb6e-4efd-a4c8-a5c1fc6f7a71
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 7b491cf06528b67c96f90f314210e61800e0cab1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 34054f6f444e503077c1e81da9f08ae2832d635a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68200341"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661429"
 ---
-# <a name="ca1309-use-ordinal-stringcomparison"></a>CA1309: Użyj porządkowego ustawienia właściwości StringComparison
+# <a name="ca1309-use-ordinal-stringcomparison"></a>CA1309: Użyj porządkowego StringComparison
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|UseOrdinalStringComparison|
 |CheckId|CA1309|
-|Kategoria|Microsoft.Globalization|
-|Zmiana kluczowa|Bez podziału|
+|Kategoria|Microsoft. Globalizacja|
+|Zmiana kluczowa|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
- Operacja porównania ciągu, która jest nielingwistyczna, nie ustawia <xref:System.StringComparison> albo parametr **numer** lub **OrdinalIgnoreCase**.
+ Operacja porównywania ciągów, która nie jest językiem, nie ustawia parametru <xref:System.StringComparison> na wartość **porządkową** lub **OrdinalIgnoreCase**.
 
 ## <a name="rule-description"></a>Opis reguły
- Wiele ciągów operacje najważniejszych <xref:System.String.Compare%2A?displayProperty=fullName> i <xref:System.String.Equals%2A?displayProperty=fullName> metod, teraz dostarczać przeciążenia, które akceptuje <xref:System.StringComparison?displayProperty=fullName> wartość wyliczenia jako parametr.
+ Wiele operacji na ciągach, co jest najważniejszymi metodami <xref:System.String.Compare%2A?displayProperty=fullName> i <xref:System.String.Equals%2A?displayProperty=fullName>, udostępnia teraz Przeciążenie, które akceptuje <xref:System.StringComparison?displayProperty=fullName> wartość wyliczenia jako parametr.
 
- Po określeniu jednej **StringComparison.Ordinal** lub **StringComparison.OrdinalIgnoreCase**, jest nielingwistyczna porównywania ciągów. Oznacza to funkcje, które są specyficzne dla języka naturalnego są ignorowane, podczas porównywania decyzji. Oznacza to, decyzje są oparte na jednobajtowych porównania i Ignoruj wielkość liter w wyrazie lub równoważności tabel, które są parametryzowane przez kulturę. W rezultacie przez jawne ustawienie parametru na wartość **StringComparison.Ordinal** lub **StringComparison.OrdinalIgnoreCase**, kod często uzyskuje szybkość, zwiększa poprawność i staje się bardziej niezawodna.
+ Po określeniu wartości **StringComparison. porządkowych** lub **StringComparison. OrdinalIgnoreCase**, Porównywanie ciągów będzie nielingwistyczne. Oznacza to, że funkcje, które są specyficzne dla języka naturalnego są ignorowane w przypadku podejmowania decyzji dotyczących porównania. Oznacza to, że decyzje są oparte na prostych porównaniach bajtów i ignorowanie wielkości liter lub tabel równoważności, które są sparametryzowane przez kulturę. W związku z tym poprzez jawne ustawienie parametru na **StringComparison. numer porządkowy** lub **StringComparison. OrdinalIgnoreCase**, kod często uzyskuje szybkość, zwiększa poprawność i jest bardziej niezawodny.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, zmień metodę porównywania ciągów na przeciążenie, które akceptuje <xref:System.StringComparison?displayProperty=fullName> wyliczenia jako parametr oraz określ **numer** lub **OrdinalIgnoreCase**. Na przykład zmienić `String.Compare(str1, str2)` do `String.Compare(str1, str2, StringComparison.Ordinal)`.
+ Aby naprawić naruszenie tej zasady, należy zmienić metodę porównywania ciągów na Przeciążenie, które akceptuje Wyliczenie <xref:System.StringComparison?displayProperty=fullName> jako parametr, i określić wartość **porządkową** lub **OrdinalIgnoreCase**. Na przykład zmień `String.Compare(str1, str2)` na `String.Compare(str1, str2, StringComparison.Ordinal)`.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Jest bezpieczne pominąć ostrzeżenie od tej reguły, gdy do biblioteki lub aplikacji jest przeznaczony dla ograniczonej odbiorców lokalnych lub semantykę bieżącej kultury, które powinny być używane.
+ Można bezpiecznie pominąć ostrzeżenie z tej reguły, gdy biblioteka lub aplikacja jest przeznaczona dla ograniczonej liczby odbiorców lokalnych lub gdy należy używać semantyki bieżącej kultury.
 
 ## <a name="see-also"></a>Zobacz też
- [Ostrzeżenia dotyczące globalizacji](../code-quality/globalization-warnings.md) [CA1307: Określ argument StringComparison](../code-quality/ca1307-specify-stringcomparison.md)
+ [Ostrzeżenia globalizacji](../code-quality/globalization-warnings.md) [CA1307: Określ StringComparison](../code-quality/ca1307-specify-stringcomparison.md)

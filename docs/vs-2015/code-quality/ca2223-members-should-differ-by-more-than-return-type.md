@@ -1,5 +1,5 @@
 ---
-title: 'CA2223: Elementy Członkowskie powinny różnić się od tylko zwracanym typem | Dokumentacja firmy Microsoft'
+title: 'CA2223: składowe powinny różnić się nie tylko zwracanym typem | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,40 +12,40 @@ helpviewer_keywords:
 - MembersShouldDifferByMoreThanReturnType
 ms.assetid: eb326d9f-50d9-48cb-84be-d41c84a8fe09
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 6a460cd01d671d347e1cd126d009fe19e140cc69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1fab269e8f583f8b55f52eb70a5a813450f8a184
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68201603"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658893"
 ---
-# <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223: Składowe powinny różnić się nie tylko zwracanym typem
+# <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223: Elementy członkowskie powinny różnić się bardziej, nie tylko zwracanym typem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|MembersShouldDifferByMoreThanReturnType|
 |CheckId|CA2223|
-|Kategoria|Microsoft.Usage|
+|Kategoria|Microsoft. Usage|
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Dwa publiczne lub chronione elementy członkowskie są opatrzone sygnaturami, które są identyczne, z wyjątkiem typu zwracanego.
+ Dwa publiczne lub chronione elementy członkowskie mają podpisy identyczne z wyjątkiem typu zwracanego.
 
 ## <a name="rule-description"></a>Opis reguły
- Chociaż środowisko uruchomieniowe języka wspólnego pozwala na używanie typów zwracanych do rozróżnienia między inaczej identycznymi członkami, funkcja ta nie jest specyfikacja Common Language Specification, ani nie jest wspólną cechą języków programowania .NET. Gdy członkowie różnią się tylko typem zwracanym, deweloperów i narzędzia programistyczne mogą nie poprawnie ich rozróżnienie.
+ Chociaż środowisko uruchomieniowe języka wspólnego zezwala na używanie typów zwracanych do rozróżnienia między identycznymi elementami członkowskimi, ta funkcja nie znajduje się w Common Language Specification ani nie jest powszechną funkcją języków programowania .NET. Gdy elementy członkowskie różnią się tylko typem zwracanym, deweloperzy i narzędzia programistyczne mogą nie rozróżnić się między nimi.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, zmiany projektu elementów członkowskich, tak, że są unikatowe, tylko na podstawie jego nazwy i typy parametrów ani nie ujawniaj elementów członkowskich.
+ Aby naprawić naruszenie tej zasady, należy zmienić projekt elementów członkowskich tak, aby były unikatowe, na podstawie ich nazw i typów parametrów lub nie ujawniać elementów członkowskich.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Nie pomijaj ostrzeżeń dla tej reguły.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład w języka Microsoft intermediate language (MSIL), zawiera typ, który narusza tę regułę. Należy zauważyć, że ta zasada nie naruszył przy użyciu języka C# lub Visual Basic .NET.
+ W poniższym przykładzie w języku pośrednim firmy Microsoft (MSIL) przedstawiono typ naruszający tę regułę. Należy zauważyć, że tej reguły nie można naruszać C# przy użyciu lub Visual Basic .NET.
 
 ```
 

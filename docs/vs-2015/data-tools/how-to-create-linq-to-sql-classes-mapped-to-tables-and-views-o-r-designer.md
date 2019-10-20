@@ -1,72 +1,72 @@
 ---
-title: 'Instrukcje: Tworzenie typu LINQ do klas SQL zamapowanych na tabele i widoki (Projektant O-R) | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: tworzenie klas LINQ to SQL mapowanych na tabele i widoki (Projektant O-R) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
 ms.topic: conceptual
 ms.assetid: 0fb78bbc-7a78-4ab4-b32f-85ece912e660
 caps.latest.revision: 7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b9bff102fbf87149e3adc80029eea17132e9b1b7
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 7a63e81abcae508487afa40d0778c0f9e9b9caf4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65697728"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665925"
 ---
-# <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>Instrukcje: Tworzenie typu LINQ do klas SQL zamapowanych na tabele i widoki (O/R Designer)
+# <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>Instrukcje: tworzenie klas LINQ to SQL mapowanych na tabele i widoki (Projektant O/R)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-Klasy LINQ do SQL, które są mapowane na bazę danych, tabele i widoki są nazywane *klas jednostek*. Klasa jednostki mapuje rekord, podczas gdy poszczególne właściwości klasy jednostki mapują do poszczególnych kolumn, które tworzą rekord. Tworzenie klas jednostek, które są oparte na bazy danych tabel lub widoków, przeciągając tabele lub widoki z **Eksploratora serwera**/**Eksplorator bazy danych** na [narzędzi LINQ to SQL w Program Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md). [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] Generuje klasy, a następnie stosuje konkretne [! LINQ do SQL atrybutów umożliwiające [! LINQ do SQL funkcji (łączności danych i możliwości edytowania <xref:System.Data.Linq.DataContext>). Aby uzyskać szczegółowe informacje o [! Klasy LINQ do SQL, zobacz [LINQ to SQL Model obiektów](https://msdn.microsoft.com/library/81dd0c37-e2a4-4694-83b0-f2e49e693810).
+Klasy LINQ to SQL mapowane na tabele i widoki bazy danych są nazywane *klasami jednostek*. Klasa jednostki mapuje do rekordu, natomiast poszczególne właściwości klasy jednostki są mapowane do poszczególnych kolumn, które składają się na rekord. Twórz klasy jednostek, które są oparte na tabelach lub widokach bazy danych, przeciągając tabele lub widoki z **Eksplorator serwera** /**Eksplorator bazy danych** do [narzędzi LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md). @No__t_0 generuje klasy i stosuje określony [! LINQ to SQL atrybuty umożliwiające włączenie [! Funkcja LINQ to SQL (możliwości komunikacji i edycji danych <xref:System.Data.Linq.DataContext>). Aby uzyskać szczegółowe informacje na temat [! LINQ to SQL klasy, zobacz [LINQ to SQL modelu obiektów](https://msdn.microsoft.com/library/81dd0c37-e2a4-4694-83b0-f2e49e693810).
 
 > [!NOTE]
-> [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] Jest mapowania relacyjnych prostego obiektu, ponieważ obsługuje on tylko relacji mapowanie 1:1. Innymi słowy klasa jednostka może mieć tylko relacji mapowanie 1:1 z tabeli bazy danych lub widoku. Mapowanie złożonych, takie jak mapowanie klasę jednostki z wieloma tabelami, nie jest obsługiwane. Jednak można mapować klasę jednostki, do widoku, który łączy się wieloma powiązanymi tabelami.
+> @No__t_0 to proste mapowanie relacyjne obiektów, ponieważ obsługuje tylko 1:1 relacji mapowania. Innymi słowy, Klasa jednostki może mieć tylko skojarzenie mapowania 1:1 z tabelą lub widokiem bazy danych. Mapowanie złożone, takie jak mapowanie klasy jednostki na wiele tabel, nie jest obsługiwane. Można jednak zmapować klasę jednostki do widoku, który sprzęga wiele powiązanych tabel.
 
-## <a name="create-linq-to-sql-classes-that-are-mapped-to-database-tables-or-views"></a>Tworzenie klasy LINQ do SQL, które są mapowane do bazy danych tabel lub widoków
- Przeciąganie tabele lub widoki z **Eksploratora serwera**/**Eksplorator bazy danych** na [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] tworzy klas jednostek oprócz <xref:System.Data.Linq.DataContext> metod, które są używane do wykonywanie aktualizacji.
+## <a name="create-linq-to-sql-classes-that-are-mapped-to-database-tables-or-views"></a>Tworzenie klas LINQ to SQL, które są mapowane do tabel lub widoków bazy danych
+ Przeciąganie tabel lub widoków z **Eksplorator serwera** /**Eksplorator bazy danych** na [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] tworzy klasy jednostek oprócz metod <xref:System.Data.Linq.DataContext>, które są używane do przeprowadzania aktualizacji.
 
- Domyślnie [! LINQ do SQL środowiska uruchomieniowego tworzy logiki, aby zapisać zmiany z klasy można aktualizować jednostek w bazie danych. Tę logikę opiera się na schemat tabeli (definicje kolumn i informacje o kluczu podstawowym). Jeśli nie chcesz tego zachowania, można skonfigurować klasę jednostki, aby użyć procedur składowanych do wykonywania operacji wstawiania, aktualizacji i usuwa zamiast przy użyciu domyślnego [! LINQ do SQL zachowania w czasie wykonywania. Aby uzyskać więcej informacji, zobacz [jak: Przypisywanie procedur składowanych do wykonywania aktualizacji, wstawiania i usuwania (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
+ Domyślnie [! Środowisko uruchomieniowe LINQ to SQL tworzy logikę umożliwiającą zapisanie zmian z klasy jednostki aktualizowalnej z powrotem do bazy danych. Ta logika jest oparta na schemacie tabeli (definicje kolumn i informacje o kluczu podstawowym). Jeśli to zachowanie nie jest potrzebne, można skonfigurować klasę jednostki, aby używać procedur składowanych do wykonywania operacji wstawiania, aktualizacji i usuwania zamiast używać wartości domyślnej [! Zachowanie LINQ to SQL środowiska uruchomieniowego. Aby uzyskać więcej informacji, zobacz [How to: assignd procedur składowanych do wykonywania aktualizacji, wstawianych i usuwanych (Projektant O/R)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
 
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 
-#### <a name="to-create-linq-to-sql-classes-that-are-mapped-to-database-tables-or-views"></a>Aby tworzyć LINQ do klas SQL, które są mapowane do bazy danych tabel lub widoków
+#### <a name="to-create-linq-to-sql-classes-that-are-mapped-to-database-tables-or-views"></a>Aby utworzyć klasy LINQ to SQL mapowane do tabel lub widoków bazy danych
 
-1. W **serwera**/**Eksplorator bazy danych**, rozwiń węzeł **tabel** lub **widoków** i Znajdź w tabeli bazy danych lub widok Aby użyć w aplikacji.
+1. W**Eksplorator bazy danych** **serwer** / rozwiń węzeł **tabele** lub **widoki** i Znajdź tabelę lub widok bazy danych, który ma być używany w aplikacji.
 
-2. Przeciągnij tabelę lub wyświetlić na [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].
+2. Przeciągnij tabelę lub widok na [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].
 
-     Klasa jednostki zostanie utworzony i wyświetlony na powierzchni projektowej. Klasa jednostki ma właściwości, które mapują do kolumn w wybranej tabeli lub widoku.
+     Klasa jednostki jest tworzona i pojawia się na powierzchni projektowej. Klasa jednostki ma właściwości, które są mapowane na kolumny w zaznaczonej tabeli lub widoku.
 
-## <a name="create-an-object-data-source-and-display-the-data-on-a-form"></a>Tworzenie obiektu źródła danych i wyświetlić dane w formularzu
- Po utworzeniu klas jednostek za pomocą [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], można utworzyć źródło danych obiektu i wypełnić [okna źródeł danych](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) przy użyciu klas jednostek.
+## <a name="create-an-object-data-source-and-display-the-data-on-a-form"></a>Tworzenie źródła danych obiektu i wyświetlanie danych w formularzu
+ Po utworzeniu klas jednostek przy użyciu [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] można utworzyć źródło danych obiektu i wypełnić [okno źródła danych](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) z klasami jednostek.
 
-#### <a name="to-create-an-object-data-source-based-on-linq-to-sql-entity-classes"></a>Aby utworzyć źródło danych obiektu opartego na LINQ do SQL klas jednostek
+#### <a name="to-create-an-object-data-source-based-on-linq-to-sql-entity-classes"></a>Aby utworzyć źródło danych obiektu na podstawie LINQ to SQL klas jednostek
 
-1. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie** do kompilowania projektu.
+1. W menu **kompilacja** kliknij pozycję **Kompiluj rozwiązanie** , aby skompilować projekt.
 
-2. Na **danych** menu, kliknij przycisk **Pokaż źródła danych**.
+2. W menu **dane** kliknij przycisk **Pokaż źródła danych**.
 
-3. W **źródeł danych** okna, kliknij przycisk **Dodaj nowe źródło danych**.
+3. W oknie **źródła danych** kliknij pozycję **Dodaj nowe źródło danych**.
 
-4. Kliknij przycisk **obiektu** na **wybierz typ źródła danych** strony, a następnie kliknij przycisk **dalej**.
+4. Kliknij pozycję **obiekt** na stronie **Wybierz typ źródła danych** , a następnie kliknij przycisk **dalej**.
 
-5. Rozwiń węzły, a następnie znajdź i wybierz klasy.
+5. Rozwiń węzły i Znajdź i wybierz klasę.
 
     > [!NOTE]
-    > Jeśli **klienta** klasy nie jest dostępna, Anuluj kreatora, skompiluj projekt i uruchom ponownie kreatora.
+    > Jeśli Klasa **Customer** jest niedostępna, Anuluj działanie kreatora, Skompiluj projekt i ponownie uruchom kreatora.
 
-6. Kliknij przycisk **Zakończ** Utwórz źródło danych i dodać **klienta** klasy jednostki **źródeł danych** okna.
+6. Kliknij przycisk **Zakończ** , aby utworzyć źródło danych i dodać klasę jednostki **klienta** do okna **źródła danych** .
 
-7. Przeciągnij elementy z **źródeł danych** okna w formularzu.
+7. Przeciągnij elementy z okna **źródła danych** na formularz.
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Narzędzia LINQ to SQL Tools w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [Przewodnik: Tworzenie składnika LINQ to SQL klas (Projektant O-R)](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)
+- [Przewodnik: tworzenie klas LINQ to SQL (Projektant O-R)](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)
 - [Metody DataContext (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md)
-- [Instrukcje: Tworzenie metod DataContext zamapowanych na procedury składowane i funkcje (Object Relational Designer)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)
+- [Instrukcje: tworzenie metod DataContext zamapowanych na procedury składowane i funkcje (O/R Designer)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)
 - [Model obiektu LINQ to SQL](https://msdn.microsoft.com/library/81dd0c37-e2a4-4694-83b0-f2e49e693810)
-- [Przewodnik: Dostosowywanie zachowania wstawiania, aktualizacji i usuwania dla klas jednostek](../data-tools/walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes.md)
-- [Przewodnik: Dodawanie walidacji do klas jednostek](https://msdn.microsoft.com/library/85b06a02-b2e3-4534-95b8-d077c8d4c1d7)
-- [Instrukcje: Tworzenie skojarzenia (relacji) między klasami LINQ do SQL (Object Relational Designer)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)
+- [Przewodnik: dostosowywanie zachowania wstawiania, aktualizacji i usuwania dla klas jednostek](../data-tools/walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes.md)
+- [Wskazówki: Dodawanie walidacji do klas jednostek](https://msdn.microsoft.com/library/85b06a02-b2e3-4534-95b8-d077c8d4c1d7)
+- [Instrukcje: tworzenie skojarzenia (relacji) między klasami LINQ do SQL (O/R Designer)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)

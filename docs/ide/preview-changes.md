@@ -1,32 +1,32 @@
 ---
-title: Podgląd zmian kodu
+title: Podgląd zmian w kodzie
 ms.date: 12/16/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 f1_keywords:
 - vs.codefix.previewchanges
 ms.workload:
 - multiple
-ms.openlocfilehash: 07d722848725753b0b2abf25c8497327cdb53835
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 485a127faa8228ce5ef17a6208e9cc4e7e50e1b9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812238"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666794"
 ---
 # <a name="preview-changes-window"></a>Podgląd okna zmian
 
-Korzystając z różnych *szybkie akcje* lub *Refactoring* narzędzi w programie Visual Studio, często jest to możliwe wyświetlić podgląd zmian, które mają być dokonane do projektu przed ich akceptacją. **Podgląd zmian** okno jest, gdzie to zrobić.  Na przykład Oto **podgląd zmian** pokazujący, co będzie można zmienić w trakcie Refaktoryzacja zmiany nazwy, w oknie C# projektu:
+W przypadku korzystania z różnych *szybkich akcji* lub narzędzi *refaktoryzacji* w programie Visual Studio często istnieje możliwość wyświetlenia podglądu zmian, które mają zostać wprowadzone do projektu przed ich zaakceptowaniem. W tym miejscu zostanie wykonane okno **Podgląd zmian** .  Na przykład poniżej znajduje się okno **Podgląd zmian** pokazujące, co zostanie zmienione podczas refaktoryzacji zmiany nazwy w C# projekcie:
 
 ![Podgląd zmian](media/previewchanges.png)
 
-W górnej połowie okna pokazuje poszczególne wiersze, które zostaną zmienione, każdy z pola wyboru. Można sprawdzić lub usuń zaznaczenie pola wyboru każdego pola wyboru, aby umożliwiają selektywne stosowanie refaktoryzacji tylko wybranych wierszy.
+W górnej połowie okna są wyświetlane określone wiersze, które zostaną zmienione, z których każdy ma wartość pola wyboru. Możesz zaznaczyć lub wyczyścić każde pole wyboru, jeśli chcesz selektywnie zastosować refaktoryzację tylko do określonych wierszy.
 
-Dolnej połowie okna wyświetlany jest kod sformatowany z projektu, który zostanie zmieniony z wyróżnioną pozycją obszarów. Wybranie określonego wiersza na górze okna wyróżni odpowiednim wierszem, w dolnej połowie. Dzięki temu można szybko przejść do odpowiedniego wiersza i zobacz otaczającym kodem.
+Dolna połowa okna pokazuje sformatowany kod z projektu, który zostanie zmieniony, z wyróżnionymi obszarami, których dotyczy. Wybranie określonego wiersza w górnej połowie okna spowoduje wyróżnienie odpowiedniego wiersza w dolnej części. Pozwala to na szybkie przechodzenie do odpowiedniego wiersza i wyświetlanie otaczającego kodu.
 
-Po przejrzeniu zmian kliknij **Zastosuj** przycisk, aby zatwierdzić te zmiany, lub kliknij przycisk **anulować** przycisk, aby pozostawić rzeczy, jakie były.
+Po przejrzeniu zmian kliknij przycisk **Zastosuj** , aby zatwierdzić te zmiany, lub kliknij przycisk **Anuluj** , aby pozostawić elementy, które były takie same.
 
 ## <a name="see-also"></a>Zobacz także
 

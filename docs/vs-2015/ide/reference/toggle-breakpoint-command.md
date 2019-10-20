@@ -1,5 +1,5 @@
 ---
-title: Przełącz punkt przerwania — polecenie | Dokumentacja firmy Microsoft
+title: Przełącz polecenie punktu przerwania | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -12,40 +12,36 @@ helpviewer_keywords:
 - Toggle Breakpoint command
 ms.assetid: d50dfadb-ce79-4d5e-9c09-1cfddd57876d
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5a57f02a7c1b9845f4248daf2282b6f285f95489
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 25c9a22db7ae136068ec374f874453dbd4a7c4b3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68193375"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658616"
 ---
 # <a name="toggle-breakpoint-command"></a>Przełącz punkt przerwania — Polecenie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Włącza punkt przerwania lub wyłączyć, w zależności od bieżącego stanu w bieżącej lokalizacji w pliku.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```  
-Debug.ToggleBreakpoint [text]  
-```  
-  
-## <a name="arguments"></a>Argumenty  
- `text`  
- Opcjonalny. Jeśli tekst jest określona, wiersz jest oznaczona jako nazwany punkt przerwania. W przeciwnym razie wiersz jest oznaczona jako nienazwane punkt przerwania, który przypomina co się stanie, gdy klawisz F9.  
-  
-## <a name="example"></a>Przykład  
- Poniższy przykład zmienia bieżący punkt przerwania.  
-  
-```  
->Debug.ToggleBreakpoint  
-```  
-  
-## <a name="see-also"></a>Zobacz też  
- [Visual Studio Commands](../../ide/reference/visual-studio-commands.md)   
- [Okno polecenia](../../ide/reference/command-window.md)   
- [Znajdź/Command — pole](../../ide/find-command-box.md)   
- [Visual Studio — aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)
+Włącza lub wyłącza punkt przerwania w zależności od bieżącego stanu w bieżącej lokalizacji pliku.
+
+## <a name="syntax"></a>Składnia
+
+```
+Debug.ToggleBreakpoint [text]
+```
+
+## <a name="arguments"></a>Argumenty
+ `text` opcjonalny. Jeśli tekst jest określony, linia jest oznaczona jako nazwany punkt przerwania. W przeciwnym razie wiersz jest oznaczony jako nienazwany punkt przerwania, który jest podobny do tego, co się dzieje po naciśnięciu klawisza F9.
+
+## <a name="example"></a>Przykład
+ Poniższy przykład przełącza bieżący punkt przerwania.
+
+```
+>Debug.ToggleBreakpoint
+```
+
+## <a name="see-also"></a>Zobacz też
+ Polecenia [programu Visual Studio](../../ide/reference/visual-studio-commands.md) [okno](../../ide/reference/command-window.md) poleceń [Znajdź/polecenie](../../ide/find-command-box.md) [programu Visual Studio — Aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)

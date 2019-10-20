@@ -1,5 +1,5 @@
 ---
-title: Analiza kodu, Projektant projektu | Dokumentacja firmy Microsoft
+title: Analiza kodu, Projektant projektu | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -11,59 +11,45 @@ helpviewer_keywords:
 - Project Designer, Code Analysis page
 ms.assetid: 71743d26-4da5-4f7d-a403-7ab96cf2ef2e
 caps.latest.revision: 14
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: fa2aa4b3055ff49f59da329ea828e0dbcfc8ec05
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.openlocfilehash: 7c14396c8ebaba2b45587d70e44fa41ba8f2742b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62419939"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660869"
 ---
 # <a name="code-analysis-project-designer"></a>Analiza kodu, Projektant projektu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Zawiera narzędzie do analizy kodu, które możesz zdecydować się na kodzie. Informacje o Twoje zestawy zgłaszanej przez narzędzie, takie jak naruszenia reguł projektowania i programowania określonych w ustawach wytyczne projektowania Microsoft .NET Framework.  
-  
-## <a name="uielement-list"></a>Lista elementów UI  
- Włącz analizę kodu  
- Włącza lub wyłącza analizy kodu dla projektu.  
-  
- Zasady projektowania  
- Włącza lub wyłącza reguły projektowania. Można również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególnych reguł.  
-  
- Reguły globalizacji  
- Włącza lub wyłącza reguły globalizacji. Można również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególnych reguł.  
-  
- Reguły międzyoperacyjności  
- Włącza lub wyłącza reguły międzyoperacyjności. Można również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególnych reguł.  
-  
- Reguły utrzymania kodu  
- Włącza lub wyłącza reguły utrzymania kodu. Można również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególnych reguł.  
-  
- Reguły dotyczące przenoszenia  
- Włącza lub wyłącza reguły dotyczące przenoszenia. Można również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególnych reguł.  
-  
- Reguły nazewnictwa  
- Włącza lub wyłącza reguły nazewnictwa. Można również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególnych reguł.  
-  
- Reguły wydajności  
- Włącza lub wyłącza reguły wydajności. Można również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególnych reguł.  
-  
- Reguły dotyczące przenośności  
- Włącza lub wyłącza reguły dotyczące przenośności. Można również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególnych reguł.  
-  
- Reguły dotyczące niezawodności  
- Włącza lub wyłącza reguły dotyczące niezawodności. Można również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególnych reguł.  
-  
- Reguły zabezpieczeń  
- Włącza lub wyłącza reguły zabezpieczeń. Można również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególnych reguł.  
-  
- Reguły użycia  
- Włącza lub wyłącza reguły użycia. Można również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególnych reguł.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Analiza kodu dla zarządzanego kodu — ostrzeżenia](../../code-quality/code-analysis-for-managed-code-warnings.md)   
- [Analiza kodu dla zarządzanego kodu — omówienie](../../code-quality/code-analysis-for-managed-code-overview.md)   
- [Przewodnik: Analizowanie kodu zarządzanego pod względem wad kodu](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
+Zawiera narzędzie do analizy kodu, które można wybrać do uruchomienia w kodzie. Narzędzie raportuje informacje o zestawach, takie jak naruszenia reguł programowania i projektowania określonych w wytycznych dotyczących projektowania Microsoft .NET Framework.
+
+## <a name="uielement-list"></a>Lista elementów UI
+ Włączenie analizy kodu umożliwia włączenie lub wyłączenie analizy kodu dla projektu.
+
+ Reguły projektowania włączają lub wyłącza reguły projektowania. Możesz również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególne reguły.
+
+ Reguły globalizacji włączają lub wyłącza reguły globalizacji. Możesz również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególne reguły.
+
+ Reguły współdziałania włączają lub wyłącza reguły współdziałania. Możesz również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególne reguły.
+
+ Reguły utrzymania umożliwiają lub wyłącza reguły utrzymania. Możesz również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególne reguły.
+
+ Reguły mobilności włączają lub wyłącza reguły mobilności. Możesz również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególne reguły.
+
+ Reguły nazewnictwa włączają lub wyłącza reguły nazewnictwa. Możesz również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególne reguły.
+
+ Reguły wydajności włączają lub wyłącza reguły wydajności. Możesz również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególne reguły.
+
+ Reguły przenośności włączają lub wyłącza reguły przenośności. Możesz również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególne reguły.
+
+ Reguły niezawodności włączają lub wyłącza reguły niezawodności. Możesz również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególne reguły.
+
+ Reguły zabezpieczeń włączają lub wyłącza reguły zabezpieczeń. Możesz również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególne reguły.
+
+ Reguły użycia włączają lub wyłącza reguły użycia. Możesz również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególne reguły.
+
+## <a name="see-also"></a>Zobacz też
+ [Analiza kodu dla ostrzeżeń związanych z kodem zarządzanym](../../code-quality/code-analysis-for-managed-code-warnings.md) [Analiza kodu dla kodu zarządzanego —](../../code-quality/code-analysis-for-managed-code-overview.md) [Przewodnik: Analizowanie kodu zarządzanego pod kątem wad kodu](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)

@@ -1,5 +1,5 @@
 ---
-title: Polecenia powłoki | Dokumentacja firmy Microsoft
+title: Polecenie powłoki | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -16,75 +16,66 @@ helpviewer_keywords:
 - Visual Studio, executables from
 ms.assetid: 737fda23-b852-45c4-a9fe-41cbce6ba70f
 caps.latest.revision: 21
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9a85b8ef5dd99da6c82c9f63da31bec783a7c9a7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ad49aadf6be56fb330b883050e6a6ff893cf054a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438019"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72663540"
 ---
 # <a name="shell-command"></a>Shell — Polecenie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Uruchamia programy wykonywalne z poziomu [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
-  
-## <a name="syntax"></a>Składnia  
-  
-```  
-Tools.Shell [/command] [/output] [/dir:folder] path [args]  
-```  
-  
-## <a name="arguments"></a>Argumenty  
- `path`  
- Wymagana. Ścieżka i nazwa pliku do wykonania lub dokument, aby otworzyć. Pełna ścieżka jest wymagana, jeśli określony plik nie znajduje się w jednym z katalogów w zmiennej środowiskowej PATH.  
-  
- `args`  
- Opcjonalna. Argumenty do przekazania do wywoływanej program.  
-  
-## <a name="switches"></a>Przełączniki  
- /commandwindow [i] / Command [i] /c [i] / cmd  
- Opcjonalna. Określa, czy dane wyjściowe dla pliku wykonywalnego, który jest wyświetlany w **polecenia** okna.  
-  
- /dir:`folder` [or] /d: `folder`  
- Opcjonalna. Określa katalog roboczy, aby ustawić, gdy program jest uruchamiany.  
-  
- / outputwindow [i] / Output [i] out [i] /o  
- Opcjonalna. Określa, czy dane wyjściowe dla pliku wykonywalnego, który jest wyświetlany w **dane wyjściowe** okna.  
-  
-## <a name="remarks"></a>Uwagi  
- Należy określić przełączników /c dir /o natychmiast po `Tools.Shell`. Cokolwiek określona po nazwę pliku wykonywalnego, który jest przekazywany do niego jako argumenty wiersza polecenia.  
-  
- Wstępnie zdefiniowane alias `Shell` mogą być używane zamiast `Tools.Shell`.  
-  
+Uruchamia programy wykonywalne z poziomu [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].
+
+## <a name="syntax"></a>Składnia
+
+```
+Tools.Shell [/command] [/output] [/dir:folder] path [args]
+```
+
+## <a name="arguments"></a>Argumenty
+ Wymagane `path`. Ścieżka i nazwa pliku do wykonania lub dokumentu do otwarcia. Pełna ścieżka jest wymagana, jeśli określony plik nie znajduje się w jednym z katalogów w zmiennej środowiskowej PATH.
+
+ `args` opcjonalny. Wszystkie argumenty do przekazania do wywołanego programu.
+
+## <a name="switches"></a>Przełączniki
+ /commandwindow [lub]/Command [lub]/c [lub]/cmd opcjonalne. Określa, że dane wyjściowe dla pliku wykonywalnego są wyświetlane w oknie **wiersza polecenia** .
+
+ /dir: `folder` [lub]/d: `folder` opcjonalne. Określa katalog roboczy, który ma zostać ustawiony podczas uruchamiania programu.
+
+ /outputWindow [lub]/Output [lub]/out [lub]//o opcjonalne. Określa, że dane wyjściowe dla pliku wykonywalnego są wyświetlane w oknie **danych wyjściowych** .
+
+## <a name="remarks"></a>Uwagi
+ Przełączniki/dir/o/c należy określić bezpośrednio po `Tools.Shell`. Wszystkie elementy określone po nazwie pliku wykonywalnego są przekazane do niego jako argumenty wiersza polecenia.
+
+ Wstępnie zdefiniowanego aliasu `Shell` można użyć zamiast `Tools.Shell`.
+
 > [!CAUTION]
-> Jeśli `path` argument dostarcza ścieżkę katalogu, a także nazwę pliku, całą nazwę ścieżki należy ująć w cudzysłów literału ("" "), jak w następujących czynności:  
-  
-```  
-Tools.Shell """C:\Program Files\SomeFile.exe"""  
-```  
-  
- Każdy zestaw trzech podwójnego cudzysłowu ("" ") jest interpretowany przez `Shell` procesora jako znak, pojedynczy cudzysłów. W związku z tym, w poprzednim przykładzie przekazuje faktycznie poniższy ciąg ścieżki, aby `Shell` polecenia:  
-  
-```  
-"C:\Program Files\SomeFile.exe"  
-```  
-  
+> Jeśli argument `path` podaje ścieżkę katalogu oraz nazwę pliku, należy ująć wszystkie nazwy ścieżki w cudzysłowy literału ("" "), tak jak w następujących przypadkach:
+
+```
+Tools.Shell """C:\Program Files\SomeFile.exe"""
+```
+
+ Każdy zestaw trzech podwójnych cudzysłowów ("" ") jest interpretowany przez procesor `Shell` jako pojedynczy znak podwójnego cudzysłowu. W ten sposób powyższy przykład faktycznie przekazuje następujący ciąg ścieżki do polecenia `Shell`:
+
+```
+"C:\Program Files\SomeFile.exe"
+```
+
 > [!CAUTION]
-> Jeśli użytkownik nie należy umieszczać ciąg ścieżki w cudzysłowie literału ("" "), pierwszą przestrzeń Windows będzie można użyć tylko część ciągu. Na przykład jeśli ciąg ścieżki powyżej nie zostały podane prawidłowo, Windows będzie szukać pliku o nazwie "Program" znajdujący się w katalogu głównym C:\. Plik wykonywalny C:\Program.exe była rzeczywiście dostępne, nawet jeśli jest on instalowane przez nielegalnego naruszeniem Windows podejmował próbę wykonania tego programu, zamiast programu żądaną "c:\Program Files\SomeFile.exe".  
-  
-## <a name="example"></a>Przykład  
- Następujące polecenie używa xcopy.exe można skopiować pliku `MyText.txt` do `Text` folderu. Dane wyjściowe z xcopy.exe jest wyświetlany w obu **okna polecenia** i **dane wyjściowe** okna.  
-  
-```  
->Tools.Shell /o /c xcopy.exe c:\MyText.txt c:\Text\MyText.txt  
-```  
-  
-## <a name="see-also"></a>Zobacz też  
- [Visual Studio Commands](../../ide/reference/visual-studio-commands.md)   
- [Okno polecenia](../../ide/reference/command-window.md)   
- [Okno danych wyjściowych](../../ide/reference/output-window.md)   
- [Znajdź/Command — pole](../../ide/find-command-box.md)   
- [Visual Studio — aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)
+> Jeśli ciąg ścieżki nie zostanie ujęty w cudzysłowy literału ("" "), system Windows będzie używać tylko części ciągu do pierwszego odstępu. Na przykład jeśli powyższy ciąg ścieżki nie został prawidłowo ujęty w cudzysłów, system Windows szuka pliku o nazwie "program" znajdującego się w C:\ Katalog główny. Jeśli plik wykonywalny C:\Program.exe był rzeczywiście dostępny, nawet jeden instalowany przez nielegalne manipulowanie, system Windows podejmie próbę wykonania tego programu zamiast żądanego programu "c:\Program Files\SomeFile.exe".
+
+## <a name="example"></a>Przykład
+ Następujące polecenie używa xcopy. exe do skopiowania pliku `MyText.txt` do folderu `Text`. Dane wyjściowe z xcopy. exe są wyświetlane zarówno w **oknie poleceń** , jak i w oknie **danych wyjściowych** .
+
+```
+>Tools.Shell /o /c xcopy.exe c:\MyText.txt c:\Text\MyText.txt
+```
+
+## <a name="see-also"></a>Zobacz też
+ Okno poleceń [poleceń programu Visual studio](../../ide/reference/visual-studio-commands.md) [](../../ide/reference/command-window.md) [okno dane wyjściowe](../../ide/reference/output-window.md) [pola Znajdź/polecenie](../../ide/find-command-box.md) [programu Visual Studio — Aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)

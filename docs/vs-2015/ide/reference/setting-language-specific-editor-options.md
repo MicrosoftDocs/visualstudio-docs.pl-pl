@@ -1,5 +1,5 @@
 ---
-title: Ustawianie opcji edytora specyficznych dla języka | Dokumentacja firmy Microsoft
+title: Ustawianie opcji edytora specyficznych dla języka | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -10,52 +10,41 @@ helpviewer_keywords:
 - editor settings
 ms.assetid: ba64d517-a60d-409b-9860-5d75065a5bb7
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c17bbb0989df9bf186652335cee6f77b047854fb
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 868c4e2f8b03002bbf7c6a6d0855f2a9af3fa95f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65689483"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654305"
 ---
 # <a name="setting-language-specific-editor-options"></a>Ustawianie opcji Edytora specyficznych dla języka
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] oferuje różnorodne opcje edytora tekstowego, które dotyczą konkretnych języków programowania.  
-  
-## <a name="in-this-section"></a>W tej sekcji  
- [Opcje, Edytor tekstów, Basic (Visual Basic)](../../ide/reference/options-text-editor-basic-visual-basic.md)  
- W tym artykule opisano ustawienia konstrukcje zakończenia, reformatowanie kodu, tworzenia konspektów i sugestie korekty błędów, między innymi dla [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] kodu.  
-  
- [Opcje, Edytor tekstów, C/C++, Formatowanie](../../ide/reference/options-text-editor-c-cpp-formatting.md)  
- W tym artykule opisano tworzenie konspektu, wcięcia, szybkie informacje i inne ustawienia dla kodu C i C++.  
-  
- [Opcje, Edytor tekstów, C/C++, Zaawansowane](../../ide/reference/options-text-editor-c-cpp-advanced.md)  
- W tym artykule opisano ustawienia dla plików bazy danych i technologii IntelliSense podczas korzystania z C i C++.  
-  
- [Opcje, Edytor tekstów, C#, Formatowanie](../../ide/reference/options-text-editor-csharp-formatting.md)  
- W tym artykule opisano ustawienia wcięć, formatowania nowego wiersza i zawijania tekstu, między innymi w C# i J#.  
-  
- [Opcje, Edytor tekstów, C#, Zaawansowane](../../ide/reference/options-text-editor-csharp-advanced.md)  
- W tym artykule opisano elementy konspektu, rozpoznawanie błędów i ustawienia komentarzy dokumentacji XML języka C# i J#.  
-  
- [Opcje, Edytor tekstów, C#, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md)  
- W tym artykule opisano ustawienia, które określają, jak lista dokańczania IntelliSense zachowuje się podczas pracy nad kodem w języku C# i J#.  
-  
- [Sprawdzanie poprawności, CSS, Edytor tekstu, okno dialogowe Opcje](https://msdn.microsoft.com/library/5afe0808-16bb-420f-b620-7ca1a4d9f2cc)  
- W tym artykule opisano ustawienia dokańczania instrukcji i ustawienia korekcji błędów w kaskadowych arkuszach stylów (CSS).  
-  
- [Sprawdzanie poprawności, HTML, Edytor tekstu, okno dialogowe Opcje](https://msdn.microsoft.com/library/9c24ecfe-263e-4bf1-88de-d01be3992863)  
- W tym artykule opisano ustawienia sprawdzania składni języka HTML na podstawie wybranego schematu.  
-  
- [Opcje, Edytor tekstów, XAML, Formatowanie](../../ide/reference/options-text-editor-xaml-formatting.md)  
- Zawiera opis ustawień rozmieszczenia elementów i atrybutów w dokumentach w języku XAML.  
-  
-## <a name="related-sections"></a>Sekcje pokrewne  
- [Dostosowywanie edytora](../../ide/customizing-the-editor.md)  
- Zawiera łącza do tematów wyjaśniających wiele aspektów edytora, dla których można ustawić preferencje.  
-  
- [Dostosowywanie ustawień środowiska deweloperskiego w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
- Zawiera łącza do tematów, które opisują sposób dostosowania ustawień, kluczowe powiązania i inne funkcje zintegrowanego środowiska programistycznego (IDE).
+[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] oferuje różne opcje edytora tekstu, które mają zastosowanie do określonych języków programowania.
+
+## <a name="in-this-section"></a>W tej sekcji
+ [Opcje, Edytor tekstu, podstawowe (Visual Basic)](../../ide/reference/options-text-editor-basic-visual-basic.md) Opisuje ustawienia dla konstrukcji końcowych, ponownego formatowania kodu, konspektów i sugestii korekcji błędów, między innymi, dla kodu [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)].
+
+ [Opcje, Edytor tekstu, C/C++, formatowanie](../../ide/reference/options-text-editor-c-cpp-formatting.md) opisuje konspekt, wcięcie, szybkie informacje i inne ustawienia dla języka C i C++ kodu.
+
+ [Opcje, Edytor tekstu, C/C++, zaawansowane](../../ide/reference/options-text-editor-c-cpp-advanced.md) — opis ustawień funkcji IntelliSense i plików bazy danych przy użyciu C++języka C i.
+
+ [Opcje, Edytor tekstu, C#, formatowanie](../../ide/reference/options-text-editor-csharp-formatting.md) opisuje ustawienia wcięć, nowego formatowania linii i zawijania tekstu, między innymi, dla C# i J#.
+
+ [Opcje, Edytor tekstu, C#, zaawansowane](../../ide/reference/options-text-editor-csharp-advanced.md) opisują konspekt, identyfikacja błędów i ustawienia komentarzy dokumentacji XML dla C# i J#.
+
+ [Opcje, Edytor tekstu, C#, IntelliSense —](../../ide/reference/options-text-editor-csharp-intellisense.md) opisuje ustawienia, które określają sposób zachowania listy uzupełniania IntelliSense podczas pracy w C# programie i kodzie J#.
+
+ [Walidacja, CSS, Edytor tekstu, Opcje — okno dialogowe](https://msdn.microsoft.com/library/5afe0808-16bb-420f-b620-7ca1a4d9f2cc) Opisuje uzupełnianie instrukcji i ustawienia korekcji błędów dla kaskadowych arkuszy stylów (CSS).
+
+ [Walidacja, HTML, Edytor tekstu, Opcje — okno dialogowe](https://msdn.microsoft.com/library/9c24ecfe-263e-4bf1-88de-d01be3992863) Opisuje ustawienia dotyczące sprawdzania składni HTML w oparciu o wybrany schemat.
+
+ [Opcje, Edytor tekstu, XAML, formatowanie](../../ide/reference/options-text-editor-xaml-formatting.md) Opisuje ustawienia dotyczące elementów i atrybutów w dokumentach XAML.
+
+## <a name="related-sections"></a>Sekcje pokrewne
+ [Dostosowywanie edytora](../../ide/customizing-the-editor.md) Zawiera łącza do tematów, które opisują wiele aspektów edytora, dla których można ustawić preferencje.
+
+ [Dostosowywanie ustawień programistycznych w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3) Zawiera łącza do tematów, które wyjaśniają, jak dostosować ustawienia, kluczowe powiązania i inne funkcje zintegrowanego środowiska programistycznego (IDE).

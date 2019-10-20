@@ -8,15 +8,15 @@ helpviewer_keywords:
 - layer diagrams, adding custom properties
 ms.assetid: 52b3ac25-d10b-4507-a1fe-209ccb4d2777
 caps.latest.revision: 23
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 75d3284c4584c67550c7dcee3c8f1737ebed5380
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: ec1c7c94c8a0e6aa233cf21f9b57e093cc430d48
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871921"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655287"
 ---
 # <a name="add-custom-properties-to-layer-diagrams"></a>Dodawanie właściwości niestandardowych do diagramów warstw
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ Podczas pisania kodu rozszerzenia dla diagramów warstw można przechowywać war
 > [!IMPORTANT]
 > Aby wyświetlić właściwości, należy wprowadzić następujące zmiany na każdym komputerze, na którym właściwości warstwy mają być widoczne.
 >
->  1. Uruchom program Notepad przy użyciu polecenia **Uruchom jako administrator**. Otwórz`%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest`
+>  1. Uruchom program Notepad przy użyciu polecenia **Uruchom jako administrator**. Otwórz `%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest`
 >
->  2. `Content` Wewnątrz elementu Dodaj:
+>  2. Wewnątrz elementu `Content` Dodaj:
 >
 >     ```xml
 >     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>
@@ -69,11 +69,11 @@ public class MyProperty
 
  Można zdefiniować właściwości [ILayerElement](/previous-versions/ff644511(v=vs.140)) lub dowolnej z klas pochodnych, które obejmują:
 
-- `ILayerModel`— Model
+- `ILayerModel` — model
 
-- `ILayer`-Każda warstwa
+- `ILayer` — każda warstwa
 
-- `ILayerDependencyLink`-linki między warstwami
+- `ILayerDependencyLink` — linki między warstwami
 
 - `ILayerComment`
 

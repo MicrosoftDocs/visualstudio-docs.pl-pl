@@ -1,5 +1,5 @@
 ---
-title: Rozwiązywanie problemów z kontrolerami testów i agentów testowych
+title: Rozwiązywanie problemów z kontrolerami testów i agentami testowymi
 ms.date: 10/20/2016
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -8,42 +8,42 @@ helpviewer_keywords:
 - load tests, test agents
 - troubleshooting, test controllers and agents in load tests
 ms.assetid: 77329348-3a5d-43de-b6cb-90f93296a081
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3ca2a69fc0f5777c34857f6f3da0c7faabcd81ce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 716bc28626e6b408fd618a8ed6c623c5118d7782
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990545"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659920"
 ---
-# <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>Strategie rozwiązywania problemów kontrolerów testów i agentów testowych w testach obciążenia
+# <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>Strategie rozwiązywania problemów z kontrolerami testów i agentami testowymi w testach obciążenia
 
-W tym artykule omówiono niektóre typowe problemy, które można napotkać podczas pracy z kontrolerami testów i agentów testowych w programie Visual Studio.
+W tym artykule opisano niektóre typowe problemy, które można napotkać podczas pracy z kontrolerami testów i agentami testowymi w programie Visual Studio.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="unable-to-collect-performance-counters-on-test-agent-computer"></a>Nie można zebrać liczników wydajności na komputerze agenta testowego
 
-Po uruchomieniu testu obciążenia, może być wystąpią błędy, gdy użytkownik próbuje nawiązać połączenie z komputerem agenta testowego i zbierania liczników wydajności. Usługa Rejestr zdalny jest usługą odpowiedzialną za dostarczanie danych licznika wydajności na komputerze zdalnym. W niektórych systemach operacyjnych usługa Rejestr zdalny nie zostanie uruchomiona automatycznie. Aby rozwiązać ten problem, należy ręcznie uruchomić usługę Rejestr zdalny.
+Po uruchomieniu testu obciążenia mogą wystąpić błędy podczas próby nawiązania połączenia z komputerem agenta testowego i zebrania liczników wydajności. Usługa Rejestr zdalny to usługa odpowiedzialna za dostarczanie danych licznika wydajności do komputera zdalnego. W niektórych systemach operacyjnych usługa Rejestr zdalny nie zostanie uruchomiona automatycznie. Aby rozwiązać ten problem, należy ręcznie uruchomić usługę Rejestr zdalny.
 
 > [!NOTE]
-> Uzyskać dostęp do usługi Rejestr zdalny, w **Panelu sterowania.** Wybierz **narzędzia administracyjne** , a następnie wybierz **usług**.
+> Dostęp do usługi Rejestr zdalny można uzyskać w **Panelu sterowania.** Wybierz pozycję **Narzędzia administracyjne** , a następnie wybierz pozycję **usługi**.
 
-Inną przyczyną tego problemu jest to, że nie masz wystarczających uprawnień do odczytu liczników wydajności. Dla lokalnych przebiegów testowych konto użytkownika, który uruchamia test musi być członkiem grupy Użytkownicy zaawansowani lub wyższej lub być członkiem grupy Użytkownicy monitora wydajności. Zdalny testu jest uruchomiony, konto administratora jest skonfigurowany do uruchamiania jako musi być członkiem grupy Użytkownicy zaawansowani lub wyższej, lub być członkiem grupy Użytkownicy monitora wydajności.
+Inną przyczyną tego problemu jest to, że nie masz wystarczających uprawnień do odczytu liczników wydajności. Dla lokalnych przebiegów testowych konto użytkownika, który uruchamia test, musi być członkiem grupy Użytkownicy zaawansowani lub wyższą lub być członkiem grupy Użytkownicy monitora wydajności. W przypadku przebiegów testów zdalnych konto, na którym jest skonfigurowany kontroler, musi być członkiem grupy Użytkownicy zaawansowani lub wyższą lub być członkiem grupy Użytkownicy monitora wydajności.
 
-## <a name="set-the-logging-level-on-a-test-controller-computer"></a>Poziom rejestrowania na komputerze kontrolera testu
+## <a name="set-the-logging-level-on-a-test-controller-computer"></a>Ustawianie poziomu rejestrowania na komputerze kontrolera testów
 
-Można kontrolować poziom rejestrowania na komputerze kontrolera testów. Jest to przydatne, gdy chcesz zdiagnozować problem po uruchomieniu testu obciążenia w środowisku.
+Można kontrolować poziom rejestrowania na komputerze kontrolera testów. Jest to przydatne w przypadku próby zdiagnozowania problemu w przypadku uruchamiania testu obciążenia w środowisku.
 
-### <a name="to-set-the-logging-level-on-a-test-controller-computer"></a>Aby ustawić poziom rejestrowania na komputerze kontrolera testu
+### <a name="to-set-the-logging-level-on-a-test-controller-computer"></a>Aby ustawić poziom rejestrowania na komputerze kontrolera testów
 
-1. Zatrzymaj usługę kontrolera testu. W wierszu polecenia wpisz `net stop vsttcontroller`.
+1. Zatrzymaj usługę kontrolera testów. W wierszu polecenia wpisz `net stop vsttcontroller`.
 
-2. Otwórz plik *QTController.exe.config*. Ten plik znajduje się w katalogu instalacyjnym kontrolera.
+2. Otwórz plik *QTController. exe. config*. Ten plik znajduje się w katalogu instalacyjnym kontrolera.
 
-3. Edytuj wpis dla `EqtTraceLevel` przełączyć się w sekcji Diagnostyka systemu pliku. Kod powinien wyglądać następująco:
+3. Edytuj wpis dla przełącznika `EqtTraceLevel` w sekcji Diagnostyka systemu pliku. Kod powinien wyglądać następująco:
 
     ```xml
     <system.diagnostics>
@@ -68,54 +68,54 @@ Można kontrolować poziom rejestrowania na komputerze kontrolera testów. Jest 
 
 5. Uruchom usługę kontrolera. W wierszu polecenia wpisz `net start vsttcontroller`.
 
-Dotyczy to kontrolera testów, Usługa agenta testowego i procesu agenta testowego. Podczas diagnozowania problemów, warto włączyć rejestrowanie na wszystkich trzech procesów. Procedury ustanawiania poziomów rejestrowania jest taka sama dla wszystkich trzech procesów, jak określono wcześniej dla kontrolera testów. Aby ustawić poziomy rejestrowania dla agenta testowego, usługi i procesu agenta, należy użyć następujących plików konfiguracyjnych:
+Dotyczy to kontrolera testów, usługi agenta testowego i procesu agenta testowego. Podczas diagnozowania problemów warto włączyć rejestrowanie dla wszystkich trzech procesów. Procedura ustawiania poziomu rejestrowania jest taka sama dla wszystkich trzech procesów, jak określono wcześniej dla kontrolera testów. Aby ustawić poziomy rejestrowania dla usługi agenta testowego i procesu agenta, użyj następujących plików konfiguracji:
 
-- *QTController.exe.config* Usługa kontrolera
+- *QTController. exe. config* kontrolera Service
 
-- *QTAgentService.exe.config* Usługa agenta
+- *QTAgentService. exe. config* — usługa agenta
 
-- *QTDCAgent (32).exe.config* proces adaptera danych agenta dla architektury 32-bitowych.
+- *QTDCAgent (32). exe. config* Proces adaptera danych agenta dla architektury 32-bitowej.
 
-- *QTDCAgent (64).exe.config* proces adaptera danych agenta dla architektury 64-bitowych.
+- *QTDCAgent (64). exe. config* Proces adaptera danych agenta dla architektury 64-bitowej.
 
-- *QTAgent (32).exe.config* proces testowania agenta dla architektury 32-bitowych.
+- *QTAgent (32). exe. config* Proces testu agenta dla architektury 32-bitowej.
 
-- *QTAgent (64).exe.config* proces testowania agenta dla architektury 64-bitowych.
+- *QTAgent (64). exe. config* Proces testu agenta dla architektury 64-bitowej.
 
 ## <a name="bind-a-test-controller-to-a-network-adapter"></a>Powiąż kontroler testów z kartą sieciową
 
-Podczas konfigurowania agenta testowego, może pojawić się następujący błąd:
+Podczas próby skonfigurowania agenta testowego może zostać wyświetlony następujący błąd:
 
-**Błąd 8110. Nie można podłączenia do komputera kontrolera lub uzyskać dostępu do obiektu kontrolera.**
+**Błąd 8110. Nie można nawiązać połączenia z określonym komputerem kontrolera lub uzyskać dostępu do obiektu kontrolera.**
 
 Ten błąd może być spowodowany przez zainstalowanie kontrolera testów na komputerze, który ma więcej niż jedną kartę sieciową.
 
 > [!NOTE]
-> Jest również możliwe, aby pomyślnie zainstalować agentów testowych i nie widzieć tego problemu, dopóki nie zostanie podjęta próba uruchomienia testu.
+> Istnieje również możliwość pomyślnego zainstalowania agentów testowych i niezobaczenia tego problemu, dopóki nie zostanie podjęta próba uruchomienia testu.
 
-Aby naprawić ten błąd, można powiązać kontroler testów do jednej z kart sieciowych. Należy ustawić `BindTo` właściwości kontrolera testów, a następnie zmień agenta testowego do odwoływania się do kontrolera testów według adresu IP adres zamiast według nazwy. Kroki są zapewniane w poniższych procedurach.
+Aby naprawić ten błąd, należy powiązać kontroler testów z jedną z kart sieciowych. Musisz ustawić właściwość `BindTo` na kontrolerze testów, a następnie zmienić agenta testowego, aby odwołać się do kontrolera testów według adresu IP zamiast nazwy. Kroki są podane w poniższych procedurach.
 
 ### <a name="to-obtain-the-ip-address-of-the-network-adapter"></a>Aby uzyskać adres IP karty sieciowej
 
-1. Wybierz **Start**, a następnie wybierz **Uruchom**.
+1. Wybierz przycisk **Start**, a następnie wybierz polecenie **Uruchom**.
 
-     **Uruchom** zostanie wyświetlone okno dialogowe.
+     Zostanie wyświetlone okno dialogowe **Uruchom** .
 
-2. Typ `cmd` , a następnie wybierz **OK**.
+2. Wpisz `cmd` a następnie wybierz **przycisk OK**.
 
-     Otwiera wiersz poleceń.
+     Zostanie otwarty wiersz polecenia.
 
-3. Typ `ipconfig /all`.
+3. Wpisz `ipconfig /all`.
 
-     Adresy IP dla karty sieciowe są wyświetlane. Zapisz adres IP karty sieciowej, którą chcesz powiązać kontroler.
+     Wyświetlane są adresy IP kart sieciowych. Zapisz adres IP karty sieciowej, z którą chcesz powiązać kontroler.
 
 ### <a name="to-bind-a-test-controller-to-a-network-adapter"></a>Aby powiązać kontroler testów z kartą sieciową
 
-1. Zatrzymaj usługę kontrolera testu. W wierszu polecenia wpisz `net stop vsttcontroller`.
+1. Zatrzymaj usługę kontrolera testów. W wierszu polecenia wpisz `net stop vsttcontroller`.
 
-2. Otwórz plik *QTController.exe.config*. Ten plik znajduje się w *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
+2. Otwórz plik *QTController. exe. config*. Ten plik znajduje się w lokalizacji *% ProgramFiles (x86)% \ Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
 
-3. Dodaj wpis dla `BindTo` właściwości do ustawień aplikacji. Określ adres IP karty sieciowej, którą chcesz powiązać kontroler. Kod powinien wyglądać następująco:
+3. Dodaj wpis dla właściwości `BindTo` do ustawień aplikacji. Określ adres IP karty sieciowej, z którą chcesz powiązać kontroler. Kod powinien wyglądać następująco:
 
     ```xml
     <appSettings>
@@ -131,13 +131,13 @@ Aby naprawić ten błąd, można powiązać kontroler testów do jednej z kart s
 
 4. Zapisz plik.
 
-5. Uruchom usługę kontrolera testu. W wierszu polecenia wpisz `net start vsttcontroller`.
+5. Uruchom usługę kontrolera testów. W wierszu polecenia wpisz `net start vsttcontroller`.
 
-### <a name="to-connect-a-test-agent-to-a-bound-controller"></a>Aby połączyć agenta testowego z kontrolerem powiązania
+### <a name="to-connect-a-test-agent-to-a-bound-controller"></a>Aby połączyć agenta testowego z kontrolerem powiązanym
 
-- Uruchom ponownie instalację agenta testowego. Tym razem, określ adres IP dla kontrolera testów, a nie nazwę kontrolera testów.
+- Uruchom ponownie instalację agenta testowego. Tym razem Określ adres IP dla kontrolera testów, a nie nazwę kontrolera testów.
 
-Dotyczy to kontrolera testów, Usługa agenta testowego i procesu agenta testowego. `BindTo` Właściwość musi być ustawiona dla każdego procesu, który jest uruchomiony na komputerze, który ma więcej niż jedną kartę sieciową. Procedury ustanawiania `BindTo` właściwości jest taka sama dla wszystkich trzech procesów, jak określono wcześniej dla kontrolera testów. Aby ustawić poziomów rejestrowania dla usługi agenta testowego i procesu agenta testowego, należy użyć plików konfiguracyjnych, które są wymienione w [ustawić poziom rejestrowania na komputerze kontrolera testu](#set-the-logging-level-on-a-test-controller-computer).
+Dotyczy to kontrolera testów, usługi agenta testowego i procesu agenta testowego. Właściwość `BindTo` musi być ustawiona dla każdego procesu, który jest uruchomiony na komputerze, który ma więcej niż jedną kartę sieciową. Procedura ustawiania właściwości `BindTo` jest taka sama dla wszystkich trzech procesów, jak określono wcześniej dla kontrolera testów. Aby ustawić poziomy rejestrowania dla usługi agenta testowego i procesu agenta testowego, należy użyć plików konfiguracji, które są wymienione na liście [Ustaw poziom rejestrowania na komputerze kontrolera testów](#set-the-logging-level-on-a-test-controller-computer).
 
 ## <a name="see-also"></a>Zobacz także
 

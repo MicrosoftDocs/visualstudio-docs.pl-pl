@@ -1,5 +1,5 @@
 ---
-title: 'CA1806: Nie Ignoruj wyników metod | Dokumentacja firmy Microsoft'
+title: 'CA1806: nie Ignoruj wyników metody | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,88 +12,88 @@ helpviewer_keywords:
 - DoNotIgnoreMethodResults
 ms.assetid: fd805687-0817-481e-804e-b62cfb3b1076
 caps.latest.revision: 27
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 117e26fca367c8cf00604bebe01a00f4df58a0ee
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f68ab71d9ce4fab1b0612f15d866c58e302a317e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437396"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72671505"
 ---
 # <a name="ca1806-do-not-ignore-method-results"></a>CA1806: Nie ignoruj wyników metod
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||  
-|-|-|  
-|TypeName|DoNotIgnoreMethodResults|  
-|CheckId|CA1806|  
-|Kategoria|Microsoft.Usage|  
-|Zmiana kluczowa|Bez podziału|  
-  
-## <a name="cause"></a>Przyczyna  
- Istnieje kilka możliwych przyczyn tego ostrzeżenia:  
-  
-- Nowy obiekt jest utworzony, ale nigdy używane.  
-  
-- Wywoływana jest metoda, która tworzy i zwraca nowy ciąg, a nowy ciąg nigdy nie jest używany.  
-  
-- Metody COM lub P/Invoke, która zwraca wartość HRESULT lub kodu błędu, który nigdy nie jest używany. Opis reguły  
-  
-  Tworzenie obiektów niepotrzebne i skojarzonych elementów bezużytecznych nieużywane obiektu obniżyć wydajność.  
-  
-  Ciągów są niezmienne i metod, takich jak String.ToUpper zwraca nowe wystąpienie ciągu zamiast modyfikowania wystąpienie ciągu w przypadku wywołania metody.  
-  
-  Ignorowanie HRESULT lub kod błędu może prowadzić do nieoczekiwanego zachowania w warunkach błędu lub warunki zasobów.  
-  
-## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia  
- Jeśli metoda tworzy nowe wystąpienie obiektu B, który nie jest nigdy używana, przekaż wystąpienie jako argument do innej metody lub Przypisz wystąpienie do zmiennej. Jeśli tworzenie obiektów nie jest konieczne, usuń go.- lub -  
-  
- Jeśli metoda wywołuje metodę B, ale nie używa nowego wystąpienia ciągu, które zwraca metoda B. Przekaż wystąpienie jako argument do innej metody, przypisz wystąpienie do zmiennej. Lub Usuń wywołanie funkcji, jeśli jest niepotrzebna.  
-  
- —lub—  
-  
- Jeśli metoda wywołuje metodę B, ale nie używa HRESULT lub kod błędu:, metoda zwraca. Użyj wyniku w instrukcji warunkowej, przypisz wynik do zmiennej lub przekaż go jako argument do innej metody.  
-  
-## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia  
- Nie pomijaj ostrzeżeń dla tej reguły, chyba że pełni niektóre funkcje, akt tworzenia obiektu.  
-  
-## <a name="example"></a>Przykład  
- Poniższy przykład przedstawia klasę, która ignoruje wynik String.Trim wywoływania.  
-  
-<!-- TODO: review snippet reference  [!CODE [FxCop.Usage.DoNotIgnoreMethodResults#1](FxCop.Usage.DoNotIgnoreMethodResults#1)]  -->  
-  
-## <a name="example"></a>Przykład  
- Poniższy przykład naprawia wcześniejszego naruszenia praw przez przypisywanie wynik String.Trim zmienną, która została wywołana na.  
-  
-<!-- TODO: review snippet reference  [!CODE [FxCop.Usage.DoNotIgnoreMethodResults2#1](FxCop.Usage.DoNotIgnoreMethodResults2#1)]  -->  
-  
-## <a name="example"></a>Przykład  
- Poniższy przykład przedstawia metodę, która nie korzysta z obiektu, który tworzy.  
-  
+|||
+|-|-|
+|TypeName|DoNotIgnoreMethodResults|
+|CheckId|CA1806|
+|Kategoria|Microsoft. Usage|
+|Zmiana kluczowa|Bez przerywania|
+
+## <a name="cause"></a>Przyczyna
+ Istnieje kilka możliwych przyczyn tego ostrzeżenia:
+
+- Nowy obiekt jest tworzony, ale nigdy nie jest używany.
+
+- Metoda, która tworzy i zwraca nowy ciąg, jest wywoływana i nowy ciąg nigdy nie jest używany.
+
+- Metoda COM lub P/Invoke zwracająca wartość HRESULT lub kod błędu, który nigdy nie jest używany. Opis reguły
+
+  Niepotrzebne utworzenie obiektu i powiązane wyrzucanie elementów bezużytecznych nieużywanego obiektu.
+
+  Ciągi są niezmienne i metody, takie jak String. ToUpper zwraca nowe wystąpienie ciągu, zamiast modyfikować wystąpienie ciągu w metodzie wywołującej.
+
+  Zignorowanie HRESULT lub kod błędu może prowadzić do nieoczekiwanego zachowania w warunkach błędów lub w warunkach niskiego zasobu.
+
+## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
+ Jeśli metoda A tworzy nowe wystąpienie obiektu B, które nigdy nie jest używane, Przekaż wystąpienie jako argument do innej metody lub Przypisz wystąpienie do zmiennej. Jeśli Tworzenie obiektu jest niepotrzebne, usuń go.-lub-
+
+ Jeśli metoda A wywołuje metodę B, ale nie używa nowego wystąpienia ciągu zwracanego przez metodę B. Przekaż wystąpienie jako argument do innej metody, przypisz wystąpienie do zmiennej. Lub Usuń wywołanie, jeśli jest niepotrzebne.
+
+ —lub—
+
+ Jeśli metoda A wywołuje metodę B, ale nie korzysta z kodu HRESULT lub Error zwracanego przez metodę. Użyj wyniku w instrukcji warunkowej, przypisz wynik do zmiennej lub Przekaż go jako argument do innej metody.
+
+## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
+ Nie pomijaj ostrzeżenia z tej reguły, chyba że czynność tworzenia obiektu nie ma pewnego celu.
+
+## <a name="example"></a>Przykład
+ W poniższym przykładzie pokazano klasę, która ignoruje wynik wywołania metody String. Trim.
+
+<!-- TODO: review snippet reference  [!CODE [FxCop.Usage.DoNotIgnoreMethodResults#1](FxCop.Usage.DoNotIgnoreMethodResults#1)]  -->
+
+## <a name="example"></a>Przykład
+ Poniższy przykład naprawia poprzednie naruszenie, przypisując wynik ciągu. Odwróć do zmiennej, w której został wywołany.
+
+<!-- TODO: review snippet reference  [!CODE [FxCop.Usage.DoNotIgnoreMethodResults2#1](FxCop.Usage.DoNotIgnoreMethodResults2#1)]  -->
+
+## <a name="example"></a>Przykład
+ Poniższy przykład przedstawia metodę, która nie korzysta z tworzonego obiektu.
+
 > [!NOTE]
-> Nie można odtworzyć to naruszenie w języku Visual Basic.  
-  
+> Nie można odtworzyć tego naruszenia w Visual Basic.
+
  [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults3#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Usage.DoNotIgnoreMethodResults3/cpp/FxCop.Usage.DoNotIgnoreMethodResults3.cpp#1)]
  [!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults3#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.DoNotIgnoreMethodResults3/cs/FxCop.Usage.DoNotIgnoreMethodResults3.cs#1)]
- [!code-vb[FxCop.Usage.DoNotIgnoreMethodResults3#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.DoNotIgnoreMethodResults3/vb/FxCop.Usage.DoNotIgnoreMethodResults3.vb#1)]  
-  
-## <a name="example"></a>Przykład  
- Poniższy przykład naprawia wcześniejszego naruszenia praw przez usunięcie niepotrzebnych tworzenia obiektu.  
-  
+ [!code-vb[FxCop.Usage.DoNotIgnoreMethodResults3#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.DoNotIgnoreMethodResults3/vb/FxCop.Usage.DoNotIgnoreMethodResults3.vb#1)]
+
+## <a name="example"></a>Przykład
+ Poniższy przykład naprawia poprzednie naruszenie przez usunięcie niepotrzebnego utworzenia obiektu.
+
  [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults4#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Usage.DoNotIgnoreMethodResults4/cpp/FxCop.Usage.DoNotIgnoreMethodResults4.cpp#1)]
  [!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults4#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.DoNotIgnoreMethodResults4/cs/FxCop.Usage.DoNotIgnoreMethodResults4.cs#1)]
- [!code-vb[FxCop.Usage.DoNotIgnoreMethodResults4#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.DoNotIgnoreMethodResults4/vb/FxCop.Usage.DoNotIgnoreMethodResults4.vb#1)]  
-  
-## <a name="example"></a>Przykład  
- Poniższy przykład przedstawia metodę, która ignoruje metody natywnej GetShortPathName zwraca kod błędu.  
-  
+ [!code-vb[FxCop.Usage.DoNotIgnoreMethodResults4#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.DoNotIgnoreMethodResults4/vb/FxCop.Usage.DoNotIgnoreMethodResults4.vb#1)]
+
+## <a name="example"></a>Przykład
+ Poniższy przykład przedstawia metodę, która ignoruje kod błędu, który zwraca metoda natywna GetShortPathName.
+
  [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults5#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Usage.DoNotIgnoreMethodResults5/cpp/FxCop.Usage.DoNotIgnoreMethodResults5.cpp#1)]
- [!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults5#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.DoNotIgnoreMethodResults5/cs/FxCop.Usage.DoNotIgnoreMethodResults5.cs#1)]  
-  
-## <a name="example"></a>Przykład  
- Poniższy przykład naprawia wcześniejszego naruszenia praw, sprawdzając kod błędu i zostanie zgłoszony wyjątek, gdy wywołanie nie powiodło się.  
-  
+ [!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults5#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.DoNotIgnoreMethodResults5/cs/FxCop.Usage.DoNotIgnoreMethodResults5.cs#1)]
+
+## <a name="example"></a>Przykład
+ Poniższy przykład naprawia poprzednie naruszenie przez sprawdzenie kodu błędu i zgłaszanie wyjątku, gdy wywołanie nie powiedzie się.
+
  [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults6#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Usage.DoNotIgnoreMethodResults6/cpp/FxCop.Usage.DoNotIgnoreMethodResults6.cpp#1)]
  [!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults6#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.DoNotIgnoreMethodResults6/cs/FxCop.Usage.DoNotIgnoreMethodResults6.cs#1)]

@@ -1,5 +1,5 @@
 ---
-title: 'CA1804: Usuń nieużywane zmienne lokalne | Dokumentacja firmy Microsoft'
+title: 'CA1804: Usuń nieużywane elementy lokalne | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,40 +12,40 @@ helpviewer_keywords:
 - CA1804
 ms.assetid: cc332e67-6543-4813-bd8a-6f6fc75bf22a
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 38fe76bbdf2fdafa69ca12caf4f131a05f783954
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 824a65e765f21748b97292beea64ea6c9bd64a1b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68143115"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72671552"
 ---
-# <a name="ca1804-remove-unused-locals"></a>CA1804: Usuwaj nieużywane zmienne lokalne
+# <a name="ca1804-remove-unused-locals"></a>CA1804: Usuń nieużywane zmienne lokalne
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|RemoveUnusedLocals|
 |CheckId|CA1804|
-|Kategoria|Microsoft.Performance|
-|Zmiana kluczowa|Bez podziału|
+|Kategoria|Microsoft. Performance|
+|Zmiana kluczowa|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
- Metoda deklaruje zmienną lokalną, ale nie używa prawdopodobnie zmiennej, z wyjątkiem jako adresata w instrukcji przypisania. Do analizy przez tę regułę przetestowane zestawu muszą zostać skompilowane przy użyciu informacji o debugowaniu i plik bazy danych (PDB) programu skojarzone muszą być dostępne.
+ Metoda deklaruje zmienną lokalną, ale nie używa zmiennej, z wyjątkiem ewentualnej odbiorcy instrukcji przypisania. Do analizy według tej reguły testowany zestaw musi być skompilowany przy użyciu informacji debugowania, a plik bazy danych programu (. pdb) musi być dostępny.
 
 ## <a name="rule-description"></a>Opis reguły
  Nieużywane zmienne lokalne i niepotrzebne przydziały zwiększają rozmiar zestawu i zmniejszają wydajność.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, usuń lub użyć zmiennej lokalnej. Należy pamiętać, że kompilator języka C#, dołączone [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] Usuwa nieużywane zmienne lokalne podczas `optimize` opcja jest włączona.
+ Aby naprawić naruszenie tej zasady, należy usunąć lub użyć zmiennej lokalnej. Należy zauważyć, C# że kompilator, który jest dołączony do [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] usuwa nieużywane zmienne lokalne, gdy opcja `optimize` jest włączona.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Pomijaj ostrzeżeń dla tej reguły, jeśli zmienna kompilatora emitowane. Bezpieczne jest również Pomijaj ostrzeżeń dla tej reguły lub wyłączyć regułę, jeśli wydajność i konserwacja kodu nie są podstawowe kwestie.
+ Pomiń ostrzeżenie z tej reguły, jeśli zmienna była emitowana przez kompilator. Można również bezpiecznie pominąć ostrzeżenie z tej reguły lub wyłączyć regułę, jeśli obsługa wydajności i kodu nie są zasadniczymi problemami.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład pokazuje nieużywane zmienne lokalne.
+ W poniższym przykładzie przedstawiono kilka nieużywanych zmiennych lokalnych.
 
  [!code-csharp[FxCop.Performance.UnusedLocals#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.UnusedLocals/cs/FxCop.Performance.UnusedLocals.cs#1)]
  [!code-vb[FxCop.Performance.UnusedLocals#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Performance.UnusedLocals/vb/FxCop.Performance.UnusedLocals.vb#1)]
@@ -53,7 +53,7 @@ ms.locfileid: "68143115"
 ## <a name="related-rules"></a>Powiązane reguły
  [CA1809: Unikaj zbyt wielu zmiennych lokalnych](../code-quality/ca1809-avoid-excessive-locals.md)
 
- [CA1811: Unikaj niewywołanego kodu prywatnego](../code-quality/ca1811-avoid-uncalled-private-code.md)
+ [CA1811: Unikaj niewywoływanego kodu prywatnego](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
  [CA1812: Unikaj klas wewnętrznych bez wystąpień](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
 

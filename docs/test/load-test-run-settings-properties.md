@@ -5,15 +5,15 @@ ms.topic: reference
 helpviewer_keywords:
 - load tests, run settings
 ms.assetid: de10dabb-02ed-403b-9e6f-0b735524988c
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4d50303596cec88bd5463b2ad1df713991c8932c
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 7bea257e45b557fd157d68baf9e0229a602a7a6e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923675"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652971"
 ---
 # <a name="load-test-run-settings-properties"></a>Właściwości ustawień przebiegu testu obciążenia
 
@@ -35,7 +35,7 @@ Aby uzyskać więcej informacji, zobacz [Konfigurowanie ustawień przebiegu test
 |**Maksymalne naruszenia progu**|Maksymalna liczba naruszeń progowych do zapisania dla tego testu obciążenia.<br /><br /> Tę liczbę można zwiększyć, jeśli trzeba, ale spowoduje to również zwiększenie rozmiaru i czasu przetwarzania wyników testu obciążenia.|
 |**Uruchom testy jednostkowe w domenie aplikacji**|Wartość logiczna określająca, czy każdy zestaw testów jednostkowych będzie uruchamiany w oddzielnej domenie aplikacji, gdy test obciążenia zawiera testy jednostkowe. Ustawieniem domyślnym jest true.<br /><br /> Jeśli testy jednostkowe nie wymagają poprawnego działania osobnej domeny aplikacji lub pliku App. config, testy jednostkowe mogą działać szybciej, ustawiając wartość tej właściwości na `False`.|
 |**Nazwa**|Nazwa ustawienia uruchomieniowego wyświetlanego w węźle **Parametry uruchomieniowe** **Edytor testu obciążeniowego**.|
-|**Poziom walidacji**|Definiuje najwyższy poziom reguły walidacji, która będzie uruchamiana w teście obciążenia. Reguły walidacji są skojarzone z żądaniami testów wydajności sieci Web. Każda reguła walidacji ma skojarzony poziom walidacji: **Wysoki**, **Średni**lub **niski**. To ustawienie przebiegu testu obciążenia określa, które reguły walidacji będą uruchamiane, gdy test wydajności sieci Web zostanie uruchomiony w teście obciążenia. Jeśli na przykład to ustawienie uruchomieniowe ma wartość **średnia**, wszystkie reguły walidacji oznaczone jako **średnie**lub **niskie** zostaną uruchomione.|
+|**Poziom walidacji**|Definiuje najwyższy poziom reguły walidacji, która będzie uruchamiana w teście obciążenia. Reguły walidacji są skojarzone z żądaniami testów wydajności sieci Web. Każda reguła walidacji ma skojarzony poziom walidacji: **wysoki**, **Średni**lub **niski**. To ustawienie przebiegu testu obciążenia określa, które reguły walidacji będą uruchamiane, gdy test wydajności sieci Web zostanie uruchomiony w teście obciążenia. Jeśli na przykład to ustawienie uruchomieniowe ma wartość **średnia**, wszystkie reguły walidacji oznaczone jako **średnie**lub **niskie** zostaną uruchomione.|
 
 ## <a name="logging-properties"></a>Właściwości rejestrowania
 
@@ -43,7 +43,7 @@ Aby uzyskać więcej informacji, zobacz [Konfigurowanie ustawień przebiegu test
 |-|----------------|
 |**Maksymalna liczba dzienników testów**|Określa maksymalną liczbę dzienników testu do zapisania w teście obciążenia. Gdy zostanie osiągnięta maksymalna liczba dzienników testowych, test obciążenia zatrzyma zbieranie dzienników. W związku z tym dzienniki będą zbierane na początku testu, a nie na końcu. Test obciążenia będzie nadal wykonywany do momentu ukończenia.|
 |**Zapisz częstotliwość rejestrowania dla zakończonych testów**|Określa częstotliwość, z jaką zostanie zapisany dziennik testowy. Liczba wskazuje, że jeden z każdej wprowadzonej liczby testów zostanie zapisany w dzienniku testu. Na przykład wprowadzenie wartości dziesięć określa, że dziesiąty, dwudziesty, 30 itd. zostanie zapisany w dzienniku testu. Ustawienie wartości 0 oznacza, że nie będą zapisywane dzienniki testowe.|
-|**Zapisz dziennik podczas niepowodzenia testu**|Wartość logiczna określająca, czy dzienniki testów są zapisywane, jeśli test nie powiedzie się w teście obciążenia. Wartość domyślna to `True`.<br /><br /> Aby uzyskać więcej informacji, zobacz [jak: Określ, czy niepowodzenia testu są zapisywane w dziennikach testów](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
+|**Zapisz dziennik podczas niepowodzenia testu**|Wartość logiczna określająca, czy dzienniki testów są zapisywane, jeśli test nie powiedzie się w teście obciążenia. Wartość domyślna to `True`.<br /><br /> Aby uzyskać więcej informacji, zobacz [How to: Określanie, czy niepowodzenia testu są zapisywane w dziennikach testów](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
 
 Aby uzyskać więcej informacji, zobacz [Modyfikowanie ustawień rejestrowania testów obciążenia](../test/modify-load-test-logging-settings.md).
 
@@ -51,8 +51,8 @@ Aby uzyskać więcej informacji, zobacz [Modyfikowanie ustawień rejestrowania t
 
 |Właściwość|Definicja|
 |-|----------------|
-|**Typ magazynu**|Sposób przechowywania liczników wydajności uzyskanych w teście obciążenia. Dostępne są następujące opcje:<br /><br /> -   **Baza danych** — wymaga bazy danych SQL, która ma **Magazyn wyniki testów ładowania**.<br />-   **Brak**.|
-|**Magazyn szczegółów czasu**|Służy do określania, które szczegóły będą przechowywane w **magazynie ładowania wyniki testów**. Dostępne są trzy wartości:<br /><br /> -   **AllIndividualDetails** — Zbieraj i przechowuj poszczególne wartości chronometrażu dla każdego testu, transakcji i strony, które zostały uruchomione lub wygenerowane podczas testu obciążenia w **magazynie wyniki testów obciążenia**. Jest to wymagane, jeśli zamierzasz używać **wykresu wirtualnego aktywności użytkownika** w **analizatorze testu obciążenia**.<br />     Aby uzyskać więcej informacji, zobacz [analizować aktywność wirtualnego użytkownika w widoku szczegółów](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).<br />-   **Brak** — nie Zbieraj żadnych indywidualnych wartości chronometrażu. Jest to wartość domyślna dla Visual Studio 2013 Update 4 i nowszych wersji.<br />-   **StatisticsOnly** — Zbieraj i przechowuj tylko statystyki, zamiast przechowywać poszczególne wartości chronometrażu dla każdego testu, transakcji i strony, które zostały wykonane lub wygenerowane podczas testu obciążenia w **magazynie wyniki testów obciążenia**.<br /><br /> Aby uzyskać więcej informacji, zobacz [jak: Określ właściwość](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)przechowywania informacji o chronometrażu.|
+|**Typ magazynu**|Sposób przechowywania liczników wydajności uzyskanych w teście obciążenia. Dostępne są następujące opcje:<br /><br /> -   **Database** — wymaga bazy danych SQL, która ma **Magazyn wyniki testów ładowania**.<br />-   **Brak**.|
+|**Magazyn szczegółów czasu**|Służy do określania, które szczegóły będą przechowywane w **magazynie ładowania wyniki testów**. Dostępne są trzy wartości:<br /><br /> -   **AllIndividualDetails** — zbieranie i przechowywanie poszczególnych wartości chronometrażu dla każdego testu, transakcji i strony, która została uruchomiona lub wystawiona podczas testu obciążenia w **magazynie wyniki testów obciążenia**. Jest to wymagane, jeśli zamierzasz używać **wykresu wirtualnego aktywności użytkownika** w **analizatorze testu obciążenia**.<br />     Aby uzyskać więcej informacji, zobacz [Analizowanie aktywności wirtualnego użytkownika w widoku szczegółów](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).<br />-   **none** — nie Zbieraj żadnych indywidualnych wartości chronometrażu. Jest to wartość domyślna dla Visual Studio 2013 Update 4 i nowszych wersji.<br />-   **StatisticsOnly** — zbieranie i przechowywanie tylko statystyk zamiast przechowywania poszczególnych wartości chronometrażu dla każdego testu, transakcji i strony, która została wykonana lub wystawiona podczas testu obciążenia w **magazynie wyniki testów obciążenia**.<br /><br /> Aby uzyskać więcej informacji, zobacz [How to: Określ właściwość Storage Details](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).|
 
 ## <a name="sql-tracing-properties"></a>Właściwości śledzenia SQL
 
@@ -67,10 +67,10 @@ Aby uzyskać więcej informacji, zobacz [Modyfikowanie ustawień rejestrowania t
 
 |Właściwość|Definicja|
 |-|----------------|
-|**Iteracje testu**|Określa łączną liczbę poszczególnych testów do uruchomienia przed ukończeniem testu obciążenia. Ta właściwość ma zastosowanie tylko wtedy, gdy właściwość "Użyj iteracji testowych" `True`ma wartość.|
-|**Użyj iteracji testowych**|Jeśli Użyj iteracji `True`testowych, to test obciążenia jest uruchamiany do momentu, gdy liczba indywidualnych testów ukończonych w teście obciążenia osiągnie liczbę określoną przez właściwość "iteracje testów". W tym przypadku ustawienia czasu, które są czasochłonne, czas trwania przebiegu i czas chłodzenia, są ignorowane. Jeśli "Użyj iteracji testowych", wszystkie `False`ustawienia chronometrażu są stosowane i "iteracje testowe" jest ignorowana.|
+|**Iteracje testu**|Określa łączną liczbę poszczególnych testów do uruchomienia przed ukończeniem testu obciążenia. Ta właściwość ma zastosowanie tylko wtedy, gdy właściwość "Użyj iteracji testowych" jest `True`.|
+|**Użyj iteracji testowych**|Jeśli Użyj iteracji testowych `True`, test obciążenia zostanie uruchomiony do momentu, gdy liczba indywidualnych testów ukończonych w teście obciążenia osiągnie liczbę określoną przez właściwość "iteracje testów". W tym przypadku ustawienia czasu, które są czasochłonne, czas trwania przebiegu i czas chłodzenia, są ignorowane. Jeśli wartość "Użyj iteracji testowych" jest `False`, wszystkie ustawienia chronometrażu są stosowane i "iteracje testowe" są ignorowane.|
 
-Aby uzyskać więcej informacji, zobacz [jak: Określ liczbę iteracji testowych w ustawieniu](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md)uruchomieniowym.
+Aby uzyskać więcej informacji, zobacz [How to: Określanie liczby iteracji testowych w ustawieniu uruchomieniowym](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md).
 
 ## <a name="timing-properties"></a>Właściwości chronometrażu
 
@@ -78,7 +78,7 @@ Aby uzyskać więcej informacji, zobacz [jak: Określ liczbę iteracji testowych
 |-|----------------|
 |**Czas chłodzenia**|Czas trwania okresu chłodzenia testu wyrażony w formacie gg: mm: SS. Poszczególne testy w ramach testu obciążenia mogą nadal działać po zakończeniu testu obciążenia. W okresie chłodzenia te testy mogą być kontynuowane do momentu zakończenia lub osiągnięcia końca okresu chłodzenia. Domyślnie nie ma okresu chłodzenia, a poszczególne testy są przerywane po zakończeniu testu obciążenia na podstawie ustawienia czasu trwania przebiegu.|
 |**Czas trwania przebiegu**|Długość testu, w formacie gg: mm: SS.|
-|**Częstotliwość próbkowania**|Interwał przechwytywania wartości licznika wydajności w formacie gg: mm: SS.<br /><br /> Aby uzyskać więcej informacji, zobacz [jak: Określ częstotliwość](../test/how-to-specify-the-sample-rate-for-a-load-test.md)próbkowania.|
+|**Częstotliwość próbkowania**|Interwał przechwytywania wartości licznika wydajności w formacie gg: mm: SS.<br /><br /> Aby uzyskać więcej informacji, zobacz [How to: określ częstotliwość próbkowania](../test/how-to-specify-the-sample-rate-for-a-load-test.md).|
 |**Czas trwania rozgrzewania**|Okres między rozpoczęciem testu a rozpoczęciem rejestrowania próbek danych w formacie gg: mm: SS. Jest to często używane do kroku ładowania wirtualnych użytkowników w celu uzyskania dostępu do określonego poziomu obciążenia przed zarejestrowaniem przykładowych wartości. Przykładowe wartości, które są przechwytywane przed zakończeniem okresu rozgrzewania, są wyświetlane w **analizatorze testu obciążenia**.|
 
 ## <a name="webtest-connections-properties"></a>Właściwości połączeń WebTest
@@ -90,21 +90,21 @@ Aby uzyskać więcej informacji, zobacz [jak: Określ liczbę iteracji testowych
 
 ## <a name="change-run-setting-properties"></a>Zmień właściwości ustawienia uruchomieniowego
 
-Do testu obciążeniowego można dodać więcej parametrów uruchomieniowych z różnymi ustawieniami właściwości, co pozwoli wykonywać te testy w różnych warunkach. Na przykład można dodać nowe ustawienie testu określające inną częstotliwość próbkowania albo dłuższy czas trwania. Można używać tylko jednego ustawienia uruchomieniowego naraz i należy określić, które ustawienie uruchomieniowe ma być używane, oznaczając je jako aktywne. Aby zapoznać się z przykładem, zobacz [How to: Wybierz aktywne ustawienie uruchomieniowe dla testu](../test/how-to-select-the-active-run-setting-for-a-load-test.md)obciążenia.
+Do testu obciążeniowego można dodać więcej parametrów uruchomieniowych z różnymi ustawieniami właściwości, co pozwoli wykonywać te testy w różnych warunkach. Na przykład można dodać nowe ustawienie testu określające inną częstotliwość próbkowania albo dłuższy czas trwania. Można używać tylko jednego ustawienia uruchomieniowego naraz i należy określić, które ustawienie uruchomieniowe ma być używane, oznaczając je jako aktywne. Aby zapoznać się z przykładem, zobacz [jak to zrobić: Wybierz aktywne ustawienie przebiegu testu obciążenia](../test/how-to-select-the-active-run-setting-for-a-load-test.md).
 
 Aby zmienić Parametry uruchomieniowe:
 
 1. Otwórz test obciążenia.
 
-2. Rozwiń **parametrów uruchomieniowych** folderu.
+2. Rozwiń folder **Parametry uruchomieniowe** .
 
 3. Wybierz węzeł **Parametry uruchomieniowe** .
 
-4. Na **widoku** menu, wybierz **okno właściwości**.
+4. W menu **Widok** wybierz **okno właściwości**.
 
      Zostanie wyświetlone **okno właściwości** , w którym są wyświetlane właściwości wybranego ustawienia uruchomieniowego.
 
-5. Użyj **okna właściwości** , aby zmienić ustawienia uruchomieniowe. Na przykład zmienić czas trwania testu na **00:05:00** Aby uruchomić test na pięć minut.
+5. Użyj **okna właściwości** , aby zmienić ustawienia uruchomieniowe. Na przykład zmień czas trwania przebiegu na **00:05:00** , aby uruchomić test przez pięć minut.
 
     > [!NOTE]
     > Aby uzyskać pełną listę właściwości parametrów uruchomieniowych i ich opisów, zobacz [właściwości ustawienia przebiegu testu obciążenia](../test/load-test-run-settings-properties.md).
@@ -112,8 +112,8 @@ Aby zmienić Parametry uruchomieniowe:
 6. Po zakończeniu zmiany właściwości Zapisz test obciążenia. W menu **plik** wybierz polecenie **Zapisz**.
 
 > [!NOTE]
-> Mapowania zestawu liczników są również częścią parametrów uruchomieniowych. Aby uzyskać więcej informacji, zobacz [Określanie zbiorów liczników oraz zasad progu dla komputerów w teście obciążeniowym](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
+> Mapowania zestawu liczników są również częścią parametrów uruchomieniowych. Aby uzyskać więcej informacji, zobacz [Określanie zestawów liczników i reguł progowych dla komputerów w teście obciążenia](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Konfigurowanie ustawień testu obciążenia](../test/configure-load-test-run-settings.md)
+- [Skonfiguruj ustawienia przebiegu testu obciążenia](../test/configure-load-test-run-settings.md)

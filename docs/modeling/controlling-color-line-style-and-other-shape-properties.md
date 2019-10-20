@@ -2,31 +2,31 @@
 title: Kontrolowanie koloru, stylu linii i innych właściwości kształtu
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1783ecf3b30207838d93fdb9cda93e3ed7e232c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6bcc7e3a80650edff411506b9e651885b3852383
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62422930"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654156"
 ---
 # <a name="controlling-color-line-style-and-other-shape-properties"></a>Kontrolowanie koloru, stylu linii i innych właściwości kształtu
 
-Niektóre właściwości kształtu, np. kolor można "ujawnianie". Oznacza to właściwości mogą być połączone z właściwością domeny kształtu. Inne muszą być kontrolowane bezpośrednio.
+Niektóre właściwości kształtu, takie jak kolor mogą być "uwidocznione". Oznacza to, że właściwości mogą być połączone z właściwością domeny kształtu. Inne osoby muszą być kontrolowane bezpośrednio.
 
-## <a name="exposing-a-property"></a>Udostępnianie właściwości
- Niektóre właściwości kształtu, np. kolor można połączyć wartości właściwości domeny.
+## <a name="exposing-a-property"></a>Uwidacznianie właściwości
+ Niektóre właściwości kształtu, takie jak kolor, można połączyć z wartością właściwości domeny.
 
- W definicji DSL wybierz kształt, łącznika lub diagramu klasy. Menu kliknij prawym przyciskiem myszy, wybierz **Dodaj udostępniane**, a następnie wybierz polecenie Właściwości ma, takich jak kolor wypełnienia.
+ W definicji DSL wybierz kształt, łącznik lub klasę diagramu. W menu po kliknięciu prawym przyciskiem myszy wybierz pozycję **Dodaj uwidocznione**, a następnie wybierz odpowiednią właściwość, taką jak kolor wypełnienia.
 
- Kształt ma teraz właściwość domeny, którego można ustawić w kodzie programu, ani jako użytkownik.
+ Kształt ma teraz właściwość domeny, którą można ustawić w kodzie programu lub jako użytkownik.
 
-## <a name="dynamically-updating-an-exposed-property"></a>Dynamiczne aktualizowanie narażonych właściwości
- Zazwyczaj mają być narażone właściwość zależna od innej właściwości. Można na przykład kształt na czerwony, zawsze wtedy, gdy właściwość określonej domeny jest mniejsza od zera. Aby wprowadzić tę zależność, należy utworzyć [reguły](../modeling/rules-propagate-changes-within-the-model.md). Na przykład:
+## <a name="dynamically-updating-an-exposed-property"></a>Dynamiczne aktualizowanie uwidocznionej właściwości
+ Zazwyczaj chcesz uczynić uwidocznioną Właściwość zależną od innej właściwości. Na przykład możesz chcieć, aby kształt wyłączał kolor czerwony, gdy określona właściwość domeny jest mniejsza od zera. Aby utworzyć Tę zależność, Utwórz [regułę](../modeling/rules-propagate-changes-within-the-model.md). Na przykład:
 
 ```csharp
 using System;

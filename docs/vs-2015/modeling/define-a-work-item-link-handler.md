@@ -8,15 +8,15 @@ helpviewer_keywords:
 - UML API
 ms.assetid: d52e0bbf-0166-4bb4-a2e3-cefed6188875
 caps.latest.revision: 21
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 240f143015f22435deb4f1347f74bebcc8b334c3
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 380aaa5bed1e30c549334bc004ea38e3f0bdb762
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871900"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669934"
 ---
 # <a name="define-a-work-item-link-handler"></a>Definiowanie procedury obsługi łącza elementu roboczego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,17 +60,17 @@ Można utworzyć rozszerzenie integracji programu Visual Studio, które reaguje,
 
     3. Na karcie **zasoby** wybierz pozycję **Nowy**, a następnie w oknie dialogowym Ustaw wartość:
 
-         Wpisz = **składnik MEF**
+         **Typ**  = **składnik MEF**
 
-         Źródło = **projektu w bieżącym rozwiązaniu**
+         **Źródło**  = **projektu w bieżącym rozwiązaniu**
 
-         Projekt = *biblioteki klas*
+         **Projekt**  = *projektu biblioteki klas*
 
 ## <a name="defining-the-work-item-link-handler"></a>Definiowanie procedury obsługi łącza elementu pracy
  Wykonaj wszystkie poniższe zadania w projekcie biblioteki klas.
 
 ### <a name="project-references"></a>Informacje o projekcie
- Dodaj następujące [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] zestawy do odwołań projektu:
+ Dodaj następujące zestawy [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] do odwołań do projektu:
 
  `Microsoft.TeamFoundation.WorkItemTracking.Client.dll`
 
@@ -82,16 +82,16 @@ Można utworzyć rozszerzenie integracji programu Visual Studio, które reaguje,
 
  `System.ComponentModel.Composition`
 
- `System.Drawing`-używane przez przykładowy kod
+ `System.Drawing` — używany przez przykładowy kod
 
- Jeśli nie możesz znaleźć jednego z tych odwołań na karcie **.NET** okna dialogowego **Dodaj odwołanie** , Użyj karty Przeglądaj, aby go znaleźć w folderze \Program Files\Microsoft Visual Studio [Version] \Common7\IDE\PrivateAssemblies\\.
+ Jeśli nie możesz znaleźć jednego z tych odwołań na karcie **.NET** okna dialogowego **Dodaj odwołanie** , Użyj karty Przeglądaj, aby go znaleźć w folderze \Program Files\Microsoft Visual Studio [wersja] \Common7\IDE\PrivateAssemblies \\.
 
 ### <a name="import-the-work-item-namespace"></a>Importowanie przestrzeni nazw elementów roboczych
- W odniesieniu do projektuDodajodwołaniadonastępujących[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zestawów:
+ W **odniesieniu**do projektu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Dodaj odwołania do następujących zestawów:
 
-- Microsoft.TeamFoundation.WorkItemTracking.Client.dll
+- Microsoft. TeamFoundation. WorkItemTracking. Client. dll
 
-- Microsoft.VisualStudio.TeamFoundation.WorkItemTracking.dll
+- Microsoft. VisualStudio. TeamFoundation. WorkItemTracking. dll
 
   W kodzie programu Zaimportuj następujące przestrzenie nazw:
 
@@ -158,11 +158,11 @@ namespace WorkItems
 
 1. Naciśnij klawisz **F5**lub w menu **Debuguj** wybierz polecenie **Rozpocznij debugowanie**.
 
-     Doświadczalne wystąpienie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] uruchomienia.
+     Zostanie uruchomione doświadczalne wystąpienie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
-     **Rozwiązywanie problemów**: Jeśli nowe [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nie zostanie uruchomione, upewnij się, że projekt VSIX jest ustawiony jako projekt startowy rozwiązania.
+     **Rozwiązywanie problemów**: jeśli nowy [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nie zostanie uruchomiony, upewnij się, że projekt VSIX jest ustawiony jako projekt startowy rozwiązania.
 
-2. W eksperymentalnym [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], Otwórz lub Utwórz projekt modelowania, a następnie otwórz lub Utwórz diagram modelowania.
+2. W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] eksperymentalnym Otwórz lub Utwórz projekt modelowania, a następnie otwórz lub Utwórz diagram modelowania.
 
 3. Utwórz element modelu, taki jak Klasa UML, i ustaw jego nazwę.
 
@@ -174,24 +174,24 @@ namespace WorkItems
 
          Zostanie otwarty nowy formularz elementu pracy.
 
-5. Sprawdź, czy tytuł elementu pracy jest taki sam jak element modelu, jeśli użyto przykładowego kodu w poprzedniej sekcji. Ta ilustracja `OnWorkItemCreated()` zadziałała.
+5. Sprawdź, czy tytuł elementu pracy jest taki sam jak element modelu, jeśli użyto przykładowego kodu w poprzedniej sekcji. Pokazuje to, `OnWorkItemCreated()` pracował.
 
 6. Wypełnij formularz, Zapisz i Zamknij element roboczy.
 
-7. Sprawdź, czy element roboczy ma teraz kolor czerwony. Pokazano `OnWorkItemLinked()` to w przykładowym kodzie.
+7. Sprawdź, czy element roboczy ma teraz kolor czerwony. Ilustruje to `OnWorkItemLinked()` w przykładowym kodzie.
 
      **Rozwiązywanie problemów**: Jeśli nie uruchomiono metod obsługi, sprawdź, czy:
 
     - Projekt biblioteki klas jest wymieniony jako składnik MEF na liście **zawartości** w pliku **source. Extensions. manifest** w projekcie VSIX.
 
-    - Poprawna `Export` wartość atrybutu jest dołączona do klasy obsługi i implementuje `ILinkedWorkItemExtension`klasy.
+    - Prawidłowy atrybut `Export` jest dołączony do klasy obsługi, a Klasa implementuje `ILinkedWorkItemExtension`.
 
-    - Parametry wszystkich `Import` i `Export` atrybuty są prawidłowe.
+    - Parametry wszystkich atrybutów `Import` i `Export` są prawidłowe.
 
 ## <a name="about-the-work-item-handler-code"></a>Informacje o kodzie procedury obsługi elementu pracy
 
 ### <a name="listening-for-new-work-items"></a>Nasłuchiwanie nowych elementów roboczych
- `OnWorkItemCreated`jest wywoływana, gdy użytkownik zdecyduje się na utworzenie nowego elementu pracy, który ma być połączony z elementami modelu. Kod może inicjować pola elementu pracy. Element roboczy jest następnie prezentowany użytkownikowi, który może zaktualizować pola i zapisać element roboczy. Łącze do elementu modelu nie zostanie utworzone, dopóki element roboczy nie zostanie pomyślnie zapisany.
+ `OnWorkItemCreated` jest wywoływana, gdy użytkownik zdecyduje się na utworzenie nowego elementu pracy, który ma być połączony z elementami modelu. Kod może inicjować pola elementu pracy. Element roboczy jest następnie prezentowany użytkownikowi, który może zaktualizować pola i zapisać element roboczy. Łącze do elementu modelu nie zostanie utworzone, dopóki element roboczy nie zostanie pomyślnie zapisany.
 
 ```
 public void OnWorkItemCreated(
@@ -206,7 +206,7 @@ public void OnWorkItemCreated(
 ```
 
 ### <a name="listening-for-link-creation"></a>Nasłuchiwanie tworzenia linku
- `OnWorkItemLinked`jest wywoływana zaraz po utworzeniu linku. Jest on wywoływany niezależnie od tego, czy łącze jest nowym elementem roboczym czy istniejącym elementem. Jest wywoływana jednokrotnie dla każdego elementu pracy.
+ `OnWorkItemLinked` jest wywoływana zaraz po utworzeniu linku. Jest on wywoływany niezależnie od tego, czy łącze jest nowym elementem roboczym czy istniejącym elementem. Jest wywoływana jednokrotnie dla każdego elementu pracy.
 
 ```
 public void OnWorkItemLinked
@@ -221,10 +221,10 @@ public void OnWorkItemLinked
 ```
 
 > [!NOTE]
-> Aby ten przykład działał, należy dodać odwołanie do projektu do `System.Drawing.dll`i zaimportować przestrzeń nazw. `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation` Jednak te dodatki nie są wymagane dla innych implementacji programu `OnWorkItemLinked`.
+> Aby ten przykład działał, należy dodać odwołanie do projektu do `System.Drawing.dll` i zaimportować `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation` przestrzeni nazw. Jednak te dodatki nie są wymagane dla innych implementacji `OnWorkItemLinked`.
 
 ### <a name="listening-for-link-removal"></a>Nasłuchiwanie usunięcia linku
- `OnWorkItemRemoved`jest wywoływana raz tuż przed każdym usuniętym łączem elementu pracy. W przypadku usunięcia elementu modelu wszystkie jego linki zostaną usunięte.
+ `OnWorkItemRemoved` jest wywoływana raz tuż przed każdym usuniętym łączem elementu pracy. W przypadku usunięcia elementu modelu wszystkie jego linki zostaną usunięte.
 
 ```
 public void OnWorkItemRemoved
@@ -237,9 +237,9 @@ public void OnWorkItemRemoved
 
  Aby użyć poniższego przykładu, należy dodać te zestawy .NET do odwołań projektu:
 
-- Microsoft.TeamFoundation.Client.dll
+- Microsoft. TeamFoundation. Client. dll
 
-- Microsoft.TeamFoundation.WorkItemTracking.Client.dll
+- Microsoft. TeamFoundation. WorkItemTracking. Client. dll
 
 ```
 
@@ -273,7 +273,7 @@ element.AddReference(ReferenceConstants.WorkItem, linkString, true);
 
 ```
 
- Format `linkString` jest:
+ Format `linkString` to:
 
  `string.Format(@"%{0}\{1}#{1}${2}", tfServer, projectCollection, RepositoryGuid, workItem.Id);`
 
@@ -283,9 +283,9 @@ element.AddReference(ReferenceConstants.WorkItem, linkString, true);
 
    `http://tfServer:8080/tfs/projectCollection`
 
-   Wielkość liter jest ważna `projectCollection`w temacie.
+   Wielkość liter jest ważna w `projectCollection`.
 
-- `RepositoryGuid`można uzyskać z połączenia TFS:
+- `RepositoryGuid` można uzyskać z połączenia TFS:
 
   ```csharp
   TfsTeamProjectCollection tpc = TfsTeamProjectCollectionFactory...;
@@ -293,7 +293,7 @@ element.AddReference(ReferenceConstants.WorkItem, linkString, true);
 
   ```
 
-  Aby uzyskać więcej informacji na temat odwołań, zobacz Dołączanie [ciągów odwołania do elementów modelu UML](../modeling/attach-reference-strings-to-uml-model-elements.md).
+  Aby uzyskać więcej informacji na temat odwołań, zobacz [dołączanie ciągów odwołania do elementów modelu UML](../modeling/attach-reference-strings-to-uml-model-elements.md).
 
 ## <a name="see-also"></a>Zobacz także
 

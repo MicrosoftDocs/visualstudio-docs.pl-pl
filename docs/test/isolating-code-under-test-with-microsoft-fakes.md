@@ -2,54 +2,54 @@
 title: Izolowanie testowanego kodu za pomocą struktury Microsoft Fakes
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
+author: jillre
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: c2f3ec4accc9353923e80017774f5a2b15fe095d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: bf00c35868ac5b4df34f2453f046232a91387085
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926634"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653103"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Izolowanie testowanego kodu za pomocą struktury Microsoft Fakes
 
-Microsoft Fakes pomaga w izolowaniu kodu testowanego przez zastąpienie innych części aplikacji przy użyciu *wycinków* lub *podkładki*. Są to małe fragmenty kodu, będące pod kontrolą Twoich testów. Izolując kod do testowania, wiesz, że jeśli test wypadnie niepomyślnie, przyczyna leży tam, a nie w żadnym innym miejscu. Podkładki i wycinki pozwalają na testowanie kodu, nawet jeśli pozostałe części aplikacji jeszcze nie działają.
+Sztuczne firmy Microsoft ułatwiają Izolowanie testowanego kodu przez zastąpienie innych części aplikacji za pomocą *wycinków* lub *podkładek*. Są to małe fragmenty kodu, będące pod kontrolą Twoich testów. Izolując kod do testowania, wiesz, że jeśli test wypadnie niepomyślnie, przyczyna leży tam, a nie w żadnym innym miejscu. Podkładki i wycinki pozwalają na testowanie kodu, nawet jeśli pozostałe części aplikacji jeszcze nie działają.
 
 Podróbki występują w dwóch wersjach:
 
-- A [wycinka](#get-started-with-stubs) zamieniają klasy za pomocą małych substytutów, która implementuje ten interfejs.  Aby użyć wycinków, należy tak zaprojektować aplikację, aby każdy składnik zależał jedynie od interfejsów, a nie od innych składników. (Przez „składnik” rozumie się klasy lub grupy klas, które są zaprojektowane i aktualizowane łącznie i zwykle są zawarte w zestawie).
+- [Procedura zastępcza](#get-started-with-stubs) zastępuje klasę niewielkim substytutem, który implementuje ten sam interfejs.  Aby użyć wycinków, należy tak zaprojektować aplikację, aby każdy składnik zależał jedynie od interfejsów, a nie od innych składników. (Przez „składnik” rozumie się klasy lub grupy klas, które są zaprojektowane i aktualizowane łącznie i zwykle są zawarte w zestawie).
 
-- A [podkładki](#get-started-with-shims) modyfikuje skompilowany kod aplikacji w czasie wykonywania, aby zamiast wywołania określonej metody wykonywała kod podkładki, który zawiera test. Podkładki może służyć do zastępowania wywołań do zestawów, których nie można modyfikować, takich jak zestawy .NET.
+- [Podkładka](#get-started-with-shims) modyfikuje skompilowany kod aplikacji w czasie wykonywania, tak że zamiast wykonywania określonego wywołania metody jest uruchamiany kod podkładki, który zapewnia test. Podkładki mogą służyć do zastępowania wywołań do zestawów, których nie można modyfikować, takich jak zestawy .NET.
 
-![Substytuty zastąpić inne składniki](../test/media/fakes-2.png)
+![Elementy sztuczne zastępują inne składniki](../test/media/fakes-2.png)
 
-**Wymagania**
+**Requirements**
 
 - Visual Studio Enterprise
-- Projekt programu .NET Framework
+- Projekt .NET Framework
 
 > [!NOTE]
-> - Projekty .NET standard nie są obsługiwane.
+> - Projekty .NET Standard nie są obsługiwane.
 > - Profilowanie za pomocą programu Visual Studio nie jest dostępne dla testów korzystających z elementów sztucznych firmy Microsoft.
 
-## <a name="choose-between-stub-and-shim-types"></a>Wybór między typami podkładek i wycinków
+## <a name="choose-between-stub-and-shim-types"></a>Wybór między elementami zastępczymi i typami podkładki
 Projekt Visual Studio zazwyczaj zostanie zakwalifikowany jako składnik, ponieważ klasy te są opracowywane i aktualizowane równocześnie. Można rozważyć użycie wycinków i podkładek do wywołań, które dany projekt kieruje w stronę innych projektów w rozwiązaniu, lub w stronę innych zestawów, do których projekt się odnosi.
 
-Jako ogólnej wskazówki należy użyć fragmentów dla wywołań w ramach rozwiązania Visual Studio i podkładek dla wywołań do innych zestawów, do których istnieje odwołanie. Dzieje się tak, ponieważ wewnątrz własnego rozwiązania warto ćwiczyć rozdzielanie par składników przez definiowanie interfejsów w sposób wymagany przez wycinkowanie. Zestawy ale zewnętrzne, takie jak *System.dll* zwykle nie są dostarczane z osobne definicje interfejsu, dlatego należy używać podkładek.
+Jako ogólnej wskazówki należy użyć fragmentów dla wywołań w ramach rozwiązania Visual Studio i podkładek dla wywołań do innych zestawów, do których istnieje odwołanie. Dzieje się tak, ponieważ wewnątrz własnego rozwiązania warto ćwiczyć rozdzielanie par składników przez definiowanie interfejsów w sposób wymagany przez wycinkowanie. Ale zestawy zewnętrzne, takie jak *System. dll* zwykle nie są dostarczane z oddzielnymi definicjami interfejsów, dlatego należy zamiast tego użyć podkładek.
 
 Inne zagadnienia to:
 
-**Wydajność.** Podkładki działają wolniej, ponieważ przepisują kod w czasie wykonywania. Wycinki kodu nie mają dodatkowego obciążenia i są równie szybkie, jak metody wirtualne.
+**Skuteczności.** Podkładki działają wolniej, ponieważ przepisują kod w czasie wykonywania. Wycinki kodu nie mają dodatkowego obciążenia i są równie szybkie, jak metody wirtualne.
 
-**Metody statyczne, zamknięte typy.** Możesz używać wycinków tylko do implementacji interfejsów. Tym samym typy wycinka nie mogą być stosowane dla metod statycznych, metod niewirtualnych, zaplombowanych metod wirtualnych, metod w zaplombowanych typach itd.
+**Metody statyczne, typy zapieczętowane.** Możesz używać wycinków tylko do implementacji interfejsów. Tym samym typy wycinka nie mogą być stosowane dla metod statycznych, metod niewirtualnych, zaplombowanych metod wirtualnych, metod w zaplombowanych typach itd.
 
-**Typy wewnętrzne.** Odcinków i podkładek używać z wewnętrznych typów, które są udostępniane przy użyciu atrybutu zestawu <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>.
+**Typy wewnętrzne.** Zarówno elementy pośredniczące, jak i podkładki mogą być używane z wewnętrznymi typami, które są dostępne przy użyciu atrybutu zestawu <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>.
 
 **Metody prywatne.** Podkładki zastępują wywołania metod prywatnych, jeśli widoczne są wszystkie typy podpisów metody. Wycinki kodu mogą zastąpić jedynie metody widoczne.
 
@@ -58,9 +58,9 @@ Inne zagadnienia to:
 Zasadniczo zaleca się używanie typów wycinków w celu odseparowania od zależności w ramach własnej bazy kodów. Można to zrobić, ukrywając składniki za interfejsami. Typy podkładek można wykorzystywać do izolowania od składników innych firm, które nie mają sprawdzalnego API.
 
 ## <a name="get-started-with-stubs"></a>Wprowadzenie do wycinków
-Aby uzyskać bardziej szczegółowy opis, zobacz [używają wycinków kodu do izolowania poszczególnych części aplikacji od siebie nawzajem testów jednostkowych](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md).
+Aby uzyskać bardziej szczegółowy opis, zobacz [Używanie wycinków do izolowania części aplikacji od siebie do testowania jednostkowego](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md).
 
-1. **Interfejsy wsunięć**
+1. **Wsuń interfejsy**
 
      Aby użyć wycinków, musisz napisać kod, który chcesz przetestować w taki sposób, aby nie wymieniał wprost klas w innych składnikach Twojej aplikacji. Przez „składnik” rozumie się klasę lub grupę klas, które są opracowane i aktualizowane łącznie i zwykle są zawarte w jednym projekcie Visual Studio. Zmienne i parametry powinny być zdeklarowane przy użyciu interfejsów, a wystąpienia innych składników powinny zostać przekazane lub utworzone za pomocą fabryki. Jeśli na przykład StockFeed jest klasą w innym składniku aplikacji, zostałoby to uznane za nieprawidłowe:
 
@@ -79,11 +79,11 @@ Aby uzyskać bardziej szczegółowy opis, zobacz [używają wycinków kodu do iz
 
     ```
 
-2. **Dodawanie podrobionych zestawów**
+2. **Dodaj zestaw elementów sztucznych**
 
-    1. W **Eksploratora rozwiązań**, rozwiń listę odwołań projektu testowego. Jeśli pracujesz w języku Visual Basic, należy wybrać **Pokaż wszystkie pliki** aby zobaczyć listę odwołań.
+    1. W **Eksplorator rozwiązań**rozwiń listę odwołania projektu testowego. Jeśli pracujesz w Visual Basic, musisz wybrać opcję **Pokaż wszystkie pliki** , aby zobaczyć listę odwołań.
 
-    2. Wybierz odwołanie do zestawu, w którym zdefiniowano interfejs (na przykład IStockFeed). W menu skrótów tego odwołania wybierz **Dodaj zestawy Substytuowane**.
+    2. Wybierz odwołanie do zestawu, w którym zdefiniowano interfejs (na przykład IStockFeed). W menu skrótów tego odwołania wybierz pozycję **Dodaj zestaw**elementów sztucznych.
 
     3. Ponownie skompiluj rozwiązanie.
 
@@ -145,14 +145,14 @@ Aby uzyskać bardziej szczegółowy opis, zobacz [używają wycinków kodu do iz
 
     ```
 
-    Specjalną funkcję PE łni tutaj jest klasą `StubIStockFeed`. Dla każdego interfejsu w zestawie, do którego istnieje odwołanie, mechanizm Microsoft Fakes generuje klasę zastępczą. Nazwa klasy wycinka jest tworzona od nazwy interfejsu, z "`Fakes.Stub`" jako prefiksem i dołączonymi nazwami typu parametru.
+    Szczególna część Magic jest klasą `StubIStockFeed`. Dla każdego interfejsu w zestawie, do którego istnieje odwołanie, mechanizm Microsoft Fakes generuje klasę zastępczą. Nazwa klasy zastępczej jest pochodną od nazwy interfejsu, z "`Fakes.Stub`" jako prefiksem i dołączonymi nazwami typu parametru.
 
-    Wycinki kodu są generowane także dla metod pobierających i ustawiających właściwości, dla zdarzeń i metod ogólnych. Aby uzyskać więcej informacji, zobacz [używają wycinków kodu do izolowania poszczególnych części aplikacji od siebie nawzajem testów jednostkowych](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md).
+    Wycinki kodu są generowane także dla metod pobierających i ustawiających właściwości, dla zdarzeń i metod ogólnych. Aby uzyskać więcej informacji, zobacz [Używanie wycinków do izolowania części aplikacji od siebie do testowania jednostkowego](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md).
 
-## <a name="get-started-with-shims"></a>Wprowadzenie do podkładek
-(Aby uzyskać bardziej szczegółowy opis, zobacz [stosowanie podkładek do izolowania aplikacji od innych zestawów w celu przeprowadzania testów jednostkowych](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).)
+## <a name="get-started-with-shims"></a>Wprowadzenie do podkładki
+(Aby uzyskać bardziej szczegółowy opis, zobacz [Używanie podkładki do izolowania aplikacji od innych zestawów do testowania jednostek](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)).
 
-Załóżmy, że składnik zawiera wywołania `DateTime.Now`:
+Załóżmy, że składnik zawiera wywołania do `DateTime.Now`:
 
 ```csharp
 // Code under test:
@@ -162,15 +162,15 @@ Załóżmy, że składnik zawiera wywołania `DateTime.Now`:
     }
 ```
 
-Podczas testowania, które chcesz podkładkę `Now` właściwość, ponieważ wersja rzeczywista niekorzystnie zwraca inną wartość w każdym wywołaniu.
+Podczas testowania chcesz zmienić podkładkę dla właściwości `Now`, ponieważ rzeczywista wersja niewygodnie zwraca inną wartość w każdym wywołaniu.
 
-Aby użyć podkładek, nie trzeba modyfikować kodu aplikacji ani pisać go w określony sposób.
+Aby używać podkładek, nie trzeba modyfikować kodu aplikacji ani pisać go w określony sposób.
 
-1. **Dodawanie podrobionych zestawów**
+1. **Dodaj zestaw elementów sztucznych**
 
-     W **Eksploratora rozwiązań**, otwórz odniesienia projektu testu jednostkowego i wybierz odwołanie do zestawu, który zawiera metodę, którą chcesz substytuować. W tym przykładzie `DateTime` klasa się zebrała *System.dll*.  Aby zobaczyć odwołania w projekcie języka Visual Basic, wybierz **Pokaż wszystkie pliki**.
+     W **Eksplorator rozwiązań**Otwórz odwołania do projektu testu jednostkowego i wybierz odwołanie do zestawu, który zawiera metodę, która ma zostać sfałszowana. W tym przykładzie Klasa `DateTime` jest w *pliku System. dll*.  Aby wyświetlić odwołania w projekcie Visual Basic, wybierz **Pokaż wszystkie pliki**.
 
-     Wybierz **Dodaj zestawy Substytuowane**.
+     Wybierz pozycję **Dodaj zestaw**elementów sztucznych.
 
 2. **Wstaw podkładkę w ShimsContext**
 
@@ -232,17 +232,17 @@ Aby użyć podkładek, nie trzeba modyfikować kodu aplikacji ani pisać go w ok
     End Class
     ```
 
-    Nazwy klasy shim są tworzone przez dodanie przedrostka `Fakes.Shim` do oryginalnej nazwy typu. Nazwy parametrów są dołączane do nazwy metody. (Nie trzeba dodać wszystkie odwołania do zestawu do System.Fakes).
+    Nazwy klas podkładek są tworzone przez dodanie prefiksu `Fakes.Shim` do oryginalnej nazwy typu. Nazwy parametrów są dołączane do nazwy metody. (Nie trzeba dodawać żadnego odwołania do zestawu do System. resztuczne).
 
-W poprzednim przykładzie podkładka jest wykorzystana do metody statycznej. Aby użyć podkładu dla metody wystąpienia, napisz `AllInstances` między nazwę typu, a nazwa metody:
+W poprzednim przykładzie podkładka jest wykorzystana do metody statycznej. Aby użyć podkładki dla metody wystąpienia, należy napisać `AllInstances` między nazwą typu a nazwą metody:
 
 ```vb
 System.IO.Fakes.ShimFile.AllInstances.ReadToEnd = ...
 ```
 
-(Brak żadnego zestawu "System.IO.Fakes", aby odwołać. Przestrzeń nazw jest generowany przez proces tworzenia podkładki. Ale można użyć "using" lub "Import", które znajdują się w zwykły sposób).
+(Nie istnieje zestaw "System. IO. resztuczne" do odwołania. Przestrzeń nazw jest generowana przez proces tworzenia podkładki. Ale w zwykły sposób można użyć opcji "Using" lub "Import").
 
-Można również utworzyć podkładki dla konkretnych wystąpień, konstruktorów i właściwości. Aby uzyskać więcej informacji, zobacz [stosowanie podkładek do izolowania aplikacji od innych zestawów w celu przeprowadzania testów jednostkowych](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).
+Można również utworzyć podkładki dla konkretnych wystąpień, konstruktorów i właściwości. Aby uzyskać więcej informacji, zobacz [Używanie podkładki do izolowania aplikacji od innych zestawów do testowania jednostkowego](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).
 
 ## <a name="in-this-section"></a>W tej sekcji
 [Stosowanie wycinków kodu do izolowania od siebie poszczególnych części aplikacji w celu przeprowadzania testów jednostkowych](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)

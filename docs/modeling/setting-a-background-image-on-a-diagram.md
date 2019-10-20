@@ -2,62 +2,62 @@
 title: Ustawienie obrazu tła w diagramie
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e79a7fd37bd5f2d5298bda6dca7568c6ba4db6ce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 37d590fb13f7b8b04005d2877d378c556c772af5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823960"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670810"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Ustawienie obrazu tła w diagramie
-W Visual Studio Visualization i Modeling SDK należy określić obraz tła dla wygenerowanego projektanta przy użyciu niestandardowego kodu.
+W programie Visual Studio Wizualizacja i Modeling SDK można ustawić obraz tła dla wygenerowanego projektanta przy użyciu kodu niestandardowego.
 
-## <a name="setting-the-background-image"></a>Ustawienie obrazu tła
+## <a name="setting-the-background-image"></a>Ustawianie obrazu tła
 
 #### <a name="to-set-a-background-image-for-a-generated-designer"></a>Aby ustawić obraz tła dla wygenerowanego projektanta
 
-1. Skopiuj plik obrazu, który chcesz użyć jako tło diagramu do katalogu Dsl\Resources dla bieżącego projektu.
+1. Skopiuj plik obrazu, który ma być używany jako tło diagramu w katalogu Dsl\Resources dla bieżącego projektu.
 
-2. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy Dsl\Resources folder, wskaż **Dodaj**, a następnie kliknij przycisk **istniejący element**.
+2. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy folder Dsl\Resources, wskaż polecenie **Dodaj**, a następnie kliknij pozycję **istniejący element**.
 
-3. W **Dodaj istniejący element** okno dialogowe, przejdź do folderu Dsl\Resources.
+3. W oknie dialogowym **Dodaj istniejący element** przejdź do folderu Dsl\Resources.
 
-4. W **pliki typu** kliknij **pliki obrazów**.
+4. Na liście **Pliki typu** kliknij pozycję **pliki obrazów**.
 
 5. Kliknij plik obrazu, który został skopiowany do katalogu, a następnie kliknij przycisk **Dodaj**.
 
-6. Kliknij prawym przyciskiem myszy Dsl, a następnie kliknij przycisk **właściwości** aby otworzyć okno właściwości projektu Dsl.
+6. Kliknij prawym przyciskiem myszy pozycję DSL, a następnie kliknij pozycję **Właściwości** , aby otworzyć właściwości projektu DSL.
 
-7. Na **zasobów** kliknij pozycję **ten projekt nie zawiera domyślnego pliku zasobów. Kliknij tutaj, aby go utworzyć.**
+7. Na karcie **zasoby** kliknij pozycję **ten projekt nie zawiera domyślnego pliku zasobów. Kliknij tutaj, aby go utworzyć.**
 
-8. Dodaj plik obrazu do pliku zasobów przez przeciąganie obrazów z **Eksploratora rozwiązań** do okna zasobów.
+8. Dodaj plik obrazu do pliku zasobów, przeciągając obraz z **Eksplorator rozwiązań** do okna zasoby.
 
-9. Otwórz menu Plik, a następnie kliknij opcję, aby zapisać wprowadzone właściwości projektu.
+9. Otwórz menu plik, a następnie kliknij opcję, aby zapisać właściwości projektu.
 
-10. Sprawdź, czy plik Dsl\Properties\Resources.resx istnieje i ma plik Resources.Designer.cs wczytywania.
+10. Sprawdź, czy plik Dsl\Properties\Resources.resx istnieje i czy znajduje się w nim plik Resources.Designer.cs.
 
-11. Jeśli brakuje Resources.Designer.cs, kliknij plik Resources.resx w **Eksploratora rozwiązań**.
+11. Jeśli brakuje Resources.Designer.cs, kliknij plik resources. resx w **Eksplorator rozwiązań**.
 
-12. W oknie **Właściwości** ustaw właściwość `Custom Tool` na `ResXFileCodeGenerator`. 
+12. W oknie **Właściwości** ustaw właściwość `Custom Tool` na `ResXFileCodeGenerator`.
 
-13. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt Dsl, wskaż **Dodaj**i kliknij przycisk **nowy Folder**.
+13. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt DSL, wskaż polecenie **Dodaj**, a następnie kliknij pozycję **Nowy folder**.
 
-14. Nazwa folderu **niestandardowe**.
+14. Nadaj nazwę folderowi **niestandardowemu**.
 
-15. Kliknij prawym przyciskiem myszy folder niestandardowy, wskaż opcję **Dodaj**i kliknij przycisk **nowy element**.
+15. Kliknij prawym przyciskiem myszy folder niestandardowy, wskaż polecenie **Dodaj**i kliknij pozycję **nowy element**.
 
-16. W **Dodaj nowy element** dialogowym **szablony** kliknij **pliku z kodem**.
+16. W oknie dialogowym **Dodaj nowy element** na liście **Szablony** kliknij pozycję **plik kodu**.
 
-17. W **nazwa** wpisz `BackgroundImage.cs`i kliknij przycisk **Dodaj**.
+17. W polu **Nazwa** wpisz `BackgroundImage.cs`, a następnie kliknij przycisk **Dodaj**.
 
-18. Skopiuj następujący kod do pliku BackgroundImage.cs, dostosowując obszaru nazw, nazwa klasy diagramu i nazwę zasobu w pliku obrazu.
+18. Skopiuj następujący kod do pliku BackgroundImage.cs, dostosowując przestrzeń nazw, nazwę klasy diagramu i nazwę zasobu pliku obrazu.
 
-     Zastąp nazwę klasy częściowej diagram, który jest zdefiniowany w Dsl\GeneratedCode\Diagrams.cs "MyDiagramClass". Można także pobrać poprawną przestrzeń nazw z pliku Dsl\GeneratedCode\Diagrams.cs.
+     Zastąp ciąg "MyDiagramClass" nazwą częściowej klasy diagramu, która jest zdefiniowana w Dsl\GeneratedCode\Diagrams.cs. Możesz również pobrać poprawną przestrzeń nazw z pliku Dsl\GeneratedCode\Diagrams.cs.
 
     ```csharp
     using System;
@@ -98,7 +98,7 @@ W Visual Studio Visualization i Modeling SDK należy określić obraz tła dla w
     }
     ```
 
-     Aby uzyskać więcej informacji na temat Dostosowywanie modelu za pomocą kodu programu zobacz [nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md).
+     Aby uzyskać więcej informacji na temat dostosowywania modelu przy użyciu kodu programu, zobacz [nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
 ## <a name="see-also"></a>Zobacz też
 

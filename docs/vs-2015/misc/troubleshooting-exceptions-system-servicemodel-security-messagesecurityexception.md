@@ -1,5 +1,5 @@
 ---
-title: 'Rozwiązywanie problemów z wyjątkami: System.ServiceModel.Security.MessageSecurityException | Dokumentacja firmy Microsoft'
+title: 'Rozwiązywanie problemów z wyjątkami: System. ServiceModel. Security. MessageSecurityException — | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -9,81 +9,80 @@ helpviewer_keywords:
 - MessageSecurityException exception
 ms.assetid: 61ad69a1-ac50-49de-9a7c-8454a84ec5bd
 caps.latest.revision: 8
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: db8c0c092ad8bc1435f939c862cf3fa7fc52179e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 9b8ce3f16c1439d62cfa1e2cff344b70e6724c42
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65689150"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655350"
 ---
 # <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>Rozwiązywanie problemów z wyjątkami: System.ServiceModel.Security.MessageSecurityException
-A <xref:System.ServiceModel.Security.MessageSecurityException> wyjątek jest generowany, gdy [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] Określa, że komunikat nie jest poprawnie zabezpieczony lub została naruszona. Ten błąd występuje najczęściej, gdy wszystkie spełnione są następujące warunki:  
-  
-- Umożliwia to odwołanie do usługi WCF za pośrednictwem połączenia zdalnego, takich jak połączenia pulpitu zdalnego lub usług terminalowych komunikować się z usługą WCF (SVC) w projekcie aplikacji witryny sieci Web lub sieci Web.  
-  
-- Nie masz uprawnienia administratora na zdalnej witrynie.  
-  
-- Żądania z hostem lokalnym na zdalnej witrynie są aktualnie obsługiwane przez [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] serwera projektowego.  
-  
-## <a name="associated-tips"></a>Skojarzone porady  
- **Korzystając z programem ASP.Net Development Server, należy rozwiązać problemy z uwierzytelnianiem NTLM.**  
- [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Development Server ma zwykle jest wyłączone, zabezpieczeń typu wezwanie/odpowiedź systemu Windows NT (NTLM), która zezwala na dostęp anonimowy. Domyślnie podczas uruchamiania sesji usług terminalowych lub użycia połączenia zdalnego, zabezpieczenie NTLM jest włączona. Po włączeniu uwierzytelniania NTLM, wszystkie żądania localhost są weryfikowane względem poświadczeń użytych do użytkownika lub procesu, który uruchomił [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] serwera projektowego. Pozwala to ograniczyć zagrożenia bezpieczeństwa. Jednak WCF również swój własny uwierzytelnianie jest wykonywane i nie zezwala na konta użytkowników niebędących administratorami, korzystać z usług WCF.  
-  
- Jeśli użytkownik zdalny może uruchomić witryny sieci Web przy użyciu [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Development Server oraz pracy z usługą sieci Web lub usługi WCF, możesz utworzyć powiązania usługi niestandardowych lub wyłączyć zabezpieczenie NTLM.  
-  
+Wyjątek <xref:System.ServiceModel.Security.MessageSecurityException> jest generowany, gdy [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] określa, że komunikat nie jest prawidłowo zabezpieczony lub został naruszony. Ten błąd występuje najczęściej, gdy spełnione są następujące warunki:
+
+- Aby komunikować się z usługą WCF (SVC) w witrynie sieci Web lub projekcie aplikacji sieci Web, należy użyć odwołania do usługi WCF za pośrednictwem połączenia zdalnego, takiego jak Podłączanie pulpitu zdalnego lub usług terminalowych.
+
+- Nie masz uprawnień administratora w zdalnej witrynie.
+
+- Żądania do hosta lokalnego w zdalnej lokacji są obsługiwane przez [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Serwer deweloperski.
+
+## <a name="associated-tips"></a>Skojarzone porady
+ **Rozwiązywanie problemów z uwierzytelnianiem NTLM podczas korzystania z serwera deweloperskiego ASP.Net.**
+Serwer deweloperski [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] ma zwykle wyłączone zabezpieczenia wyzwania/odpowiedzi systemu Windows NT, co umożliwia dostęp anonimowy. Domyślnie podczas uruchamiania sesji usług terminalowych lub korzystania z połączenia zdalnego jest włączone zabezpieczenia NTLM. Po włączeniu protokołu NTLM wszystkie żądania localhost są weryfikowane pod kątem poświadczeń użytkownika lub procesu, który uruchomił Serwer deweloperski [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Powoduje to zmniejszenie zagrożeń bezpieczeństwa. Jednak funkcja WCF wykonuje także własne uwierzytelnianie i nie zezwala na użycie usług WCF przez konto niebędące administratorami.
+
+ Jeśli użytkownik zdalny może uruchomić witrynę sieci Web przy użyciu [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] serwera deweloperskiego, a także pracować z usługą sieci Web lub usługą WCF, można utworzyć niestandardowe powiązanie usługi lub wyłączyć zabezpieczenia NTLM.
+
 > [!IMPORTANT]
-> Wyłączenie zabezpieczeń NTLM nie jest zalecane i może stanowić zagrożenie bezpieczeństwa.  
-  
- Jeśli tworzysz powiązania niestandardowej usługi, nadal są chronione przez uwierzytelnianie NTLM.  
-  
- Wykonaj następujące kroki, aby utworzyć powiązanie niestandardowych usług dla usługi WCF.  
-  
-#### <a name="to-create-a-custom-service-binding-for-the-wcf-service-hosted-inside-the-aspnet-development-server"></a>Aby utworzyć usługę niestandardowe powiązanie dla usługi WCF hostowanej w ASP.NET Development Server  
-  
-1. Otwórz plik Web.config dla usługi WCF, które generuje wyjątek.  
-  
-2. Wprowadź następujące informacje w pliku Web.config.  
-  
-   ```  
-   <bindings>  
-     <customBinding>  
-       <binding name="Service1Binding">  
-         <transactionFlow />  
-         <textMessageEncoding />  
-         <httpTransport authenticationScheme="Ntlm" />  
-       </binding>  
-     </customBinding>  
-   </bindings>  
-   ```  
-  
-3. Zapisz i zamknij plik Web.config.  
-  
-4. W kodzie dla usługi sieci Web lub usługi WCF należy zmienić wartość punktu końcowego do następujących:  
-  
-   ```  
-   <endpoint address="" binding="customBinding" bindingConfiguration="Service1Binding" contract="IService1" />  
-   ```  
-  
-    Daje to gwarancję, że usługa używa niestandardowego powiązania.  
-  
-5. Dodaj odwołanie do usługi w aplikacji sieci Web, który uzyskuje dostęp do usługi. (W **Dodaj odwołanie do usługi** okna dialogowego Dodaj odwołanie do usługi, jak w przypadku oryginalnej usługi, która generowania wyjątku.)  
-  
-   Można wykonaj następujące kroki, aby wyłączyć zabezpieczenie NTLM, gdy pracujesz z odwołania do usługi WCF.  
-  
+> Wyłączenie zabezpieczeń NTLM nie jest zalecane i może stanowić zagrożenie bezpieczeństwa.
+
+ W przypadku tworzenia powiązania usługi niestandardowej nadal jest chronione uwierzytelnianie NTLM.
+
+ Wykonaj następujące kroki, aby utworzyć niestandardowe powiązanie usługi dla usługi WCF.
+
+#### <a name="to-create-a-custom-service-binding-for-the-wcf-service-hosted-inside-the-aspnet-development-server"></a>Tworzenie niestandardowego powiązania usługi dla usługi WCF hostowanej wewnątrz serwera ASP.NET Development
+
+1. Otwórz plik Web. config usługi WCF, która generuje wyjątek.
+
+2. Wprowadź następujące informacje w pliku Web. config.
+
+   ```
+   <bindings>
+     <customBinding>
+       <binding name="Service1Binding">
+         <transactionFlow />
+         <textMessageEncoding />
+         <httpTransport authenticationScheme="Ntlm" />
+       </binding>
+     </customBinding>
+   </bindings>
+   ```
+
+3. Zapisz i zamknij plik Web. config.
+
+4. W kodzie usługi WCF lub sieci Web Zmień wartość punktu końcowego na następujący:
+
+   ```
+   <endpoint address="" binding="customBinding" bindingConfiguration="Service1Binding" contract="IService1" />
+   ```
+
+    Dzięki temu usługa korzysta z niestandardowego powiązania.
+
+5. Dodaj odwołanie do usługi w aplikacji sieci Web, która uzyskuje dostęp do usługi. (W **Dodaj odwołanie do usługi** okno dialogowe, Dodaj odwołanie do usługi w ramach pierwotnej usługi, która wygeneruje wyjątek).
+
+   Możesz wykonać następujące kroki, aby wyłączyć zabezpieczenia NTLM podczas pracy z odwołaniem do usługi WCF.
+
 > [!IMPORTANT]
-> Wyłączenie zabezpieczeń NTLM nie jest zalecane i może stanowić zagrożenie bezpieczeństwa.  
-  
-#### <a name="to-turn-off-ntlm-security"></a>Aby wyłączyć zabezpieczenie NTLM  
-  
-1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy nazwę witryny sieci Web, a następnie kliknij przycisk **stron właściwości**.  
-  
-2. Wybierz **opcje uruchamiania**, a następnie wyczyść **uwierzytelniania NTLM** pole wyboru.  
-  
-3. Kliknij przycisk **OK**.  
-  
-## <a name="see-also"></a>Zobacz też  
- <xref:System.ServiceModel.Security.MessageSecurityException>   
- [Korzystanie z Asystenta wyjątków](https://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)
+> Wyłączenie zabezpieczeń NTLM nie jest zalecane i może stanowić zagrożenie bezpieczeństwa.
+
+#### <a name="to-turn-off-ntlm-security"></a>Aby wyłączyć zabezpieczenia NTLM
+
+1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy nazwę witryny sieci Web, a następnie kliknij pozycję **strony właściwości**.
+
+2. Wybierz **Opcje Start**, a następnie wyczyść pole wyboru **uwierzytelnianie NTLM** .
+
+3. Kliknij przycisk **OK**.
+
+## <a name="see-also"></a>Zobacz też
+ <xref:System.ServiceModel.Security.MessageSecurityException> [Użyj Asystenta wyjątków](https://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)

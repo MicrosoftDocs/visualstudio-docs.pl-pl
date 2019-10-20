@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Konfigurowanie właściwości projektu przepływu pracy (starsza wersja) | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Konfigurowanie właściwości projektu przepływu pracy (starsza wersja) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -12,28 +12,28 @@ helpviewer_keywords:
 - projects, configuring properties
 ms.assetid: 850f5c96-8e5b-4126-bc16-fd2c26e6e656
 caps.latest.revision: 5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f551b868b415eaf600a9345aff4ac4f0d61ff234
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 850e9314e4cccfa09903638dab91eaca7334cee5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62931073"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72663432"
 ---
 # <a name="how-to-configure-workflow-project-properties-legacy"></a>Instrukcje: Konfigurowanie właściwości projektu przepływu pracy (starsza wersja)
-Wykonaj następujące kroki, aby wyświetlić lub zmodyfikować właściwości, które są skojarzone z projektów przepływu pracy.  
-  
-### <a name="to-view-or-modify-workflow-project-properties"></a>Aby wyświetlić lub zmodyfikować właściwości projektu przepływu pracy  
-  
-1. Jeśli **Eksploratora rozwiązań** okno nie jest widoczny, wybierz opcję **Eksploratora rozwiązań** na **widoku** menu.  
-  
-2. W **Eksploratora rozwiązań**, wybierz projekt.  
-  
-3. Jeśli **właściwości** okno nie jest widoczny, wybierz opcję **okno właściwości** na **widoku** menu.  
-  
-4. W projekcie **właściwości** okna, wyświetlanie i modyfikowanie właściwości, które chcesz zmienić.  
-  
-## <a name="see-also"></a>Zobacz też  
+Wykonaj następujące kroki, aby wyświetlić lub zmodyfikować właściwości, które są skojarzone z projektami przepływu pracy.
+
+### <a name="to-view-or-modify-workflow-project-properties"></a>Aby wyświetlić lub zmodyfikować właściwości projektu przepływu pracy
+
+1. Jeśli okno **Eksplorator rozwiązań** nie jest widoczne, wybierz pozycję **Eksplorator rozwiązań** w menu **Widok** .
+
+2. W **Eksplorator rozwiązań**wybierz projekt.
+
+3. Jeśli okno **Właściwości** nie jest widoczne, wybierz pozycję **okno właściwości** w menu **Widok** .
+
+4. W oknie **Właściwości** projektu Wyświetl i zmodyfikuj właściwości, które chcesz zmienić.
+
+## <a name="see-also"></a>Zobacz też
  [Tworzenie starszej wersji projektów przepływu pracy](../workflow-designer/creating-legacy-workflow-projects.md)

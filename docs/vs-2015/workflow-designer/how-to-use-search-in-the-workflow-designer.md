@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: W Projektancie przepływu pracy przy użyciu funkcji Wyszukaj | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: korzystanie z wyszukiwania w Projektant przepływu pracy | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -7,46 +7,46 @@ ms.topic: reference
 ms.assetid: f42d3115-2ed2-4941-8f1e-92dac41c30fa
 caps.latest.revision: 3
 author: steved0x
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1d62f1936e4cf424bde526301210e61f38e5b767
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 84f74b4718a7f976b386197a79692256ab49caa4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62931153"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659119"
 ---
-# <a name="how-to-use-search-in-the-workflow-designer"></a>Instrukcje: Używanie funkcji wyszukiwania w Projektancie przepływu pracy
-W celu ułatwienia tworzenia większych i bardziej skomplikowanych przepływów pracy, wyszukiwanie może służyć w Projektancie przepływu pracy można znaleźć elementy według słów kluczowych. Należy pamiętać, że projektant nie obsługuje Zastąp. W Projektancie wyszukiwania zawiera następujące:  
-  
-## <a name="quick-find"></a>Szybkie wyszukiwanie  
- W Projektancie szybkiego wyszukiwania zawiera następujące:  
-  
-- Właściwości <xref:System.Activities.Activity> obiektów <xref:System.Activities.Statements.FlowNode> obiektów <xref:System.Activities.Statements.State> obiektów, przejścia i inne elementy niestandardowe sterowanie przepływem.  
-  
-- Zmienne  
-  
-- Argumenty  
-  
-- Wyrażenia  
-  
-#### <a name="using-quick-find"></a>Za pomocą szybkiego wyszukiwania  
-  
-1. Otwórz projektanta przepływów pracy naciśnij **Ctrl + F**, lub wybierz **Edytuj**, **Znajdź i Zamień**, **szybkie znajdowanie**.  
-  
-2. Wprowadź wyszukiwany termin do **Znajdź** polu tekstowym i kliknij przycisk **Znajdź następny**.  
-  
-3. Wyszukiwany termin będzie znajdować się w bieżącej przepływu pracy. Poniższy zrzut ekranu przedstawia wyświetlana nazwa działania znajdujących się w projektancie.  
-  
-     ![Wynik wyszukiwania w Projektancie przepływu pracy](../workflow-designer/media/designersearch.png "DesignerSearch")  
-  
-## <a name="find-in-files"></a>Znajdź w plikach  
- Korzystania z funkcji znajdowania w plikach zlokalizować ciągi w plikach przepływu pracy, w tym plików XAML.  
-  
-#### <a name="using-find-in-files"></a>Korzystania z funkcji znajdowania w plikach  
-  
-1. W programie Visual Studio, naciśnij klawisz **Ctrl + Shift + F**, lub wybierz **Edytuj**, **Znajdź i Zamień**, **Znajdź w plikach**  
-  
-2. Wprowadź szukany element do **Znajdź** polu tekstowym i kliknij przycisk **Znajdź wszystkie**  
-  
-3. Wynik wyszukiwania zostaną wyświetlone w [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **Znajdź wynik** widoku. Dwukrotne kliknięcie elementu wynik spowoduje przejście do działania, które zawiera dopasowanie w Projektancie przepływu pracy.
+# <a name="how-to-use-search-in-the-workflow-designer"></a>Instrukcje: korzystanie z wyszukiwania w Projektant przepływu pracy
+Aby ułatwić tworzenie większych, bardziej złożonych przepływów pracy, wyszukiwanie może być używane w Projektant przepływu pracy do znajdowania elementów według słowa kluczowego. Należy pamiętać, że projektant nie obsługuje zastępowania. W projektancie znajdą się następujące elementy:
+
+## <a name="quick-find"></a>Szybkie wyszukiwanie
+ W projektancie znajdą się następujące elementy:
+
+- Właściwości obiektów <xref:System.Activities.Activity>, obiektów <xref:System.Activities.Statements.FlowNode>, obiektów <xref:System.Activities.Statements.State>, przejść i innych niestandardowych elementów sterowania przepływem.
+
+- Zmienne
+
+- Argumenty
+
+- Wyrażenia
+
+#### <a name="using-quick-find"></a>Używanie szybkiego wyszukiwania
+
+1. Po otwarciu projektanta przepływu pracy naciśnij **klawisze CTRL + F**lub wybierz pozycję **Edytuj**, **Znajdź i Zamień**, **szybkie znajdowanie**.
+
+2. Wprowadź wyszukiwany termin w polu **Znajdź** element TextBox i kliknij przycisk **Znajdź dalej**.
+
+3. Termin wyszukiwania będzie znajdować się w bieżącym przepływie pracy. Poniższy zrzut ekranu przedstawia nazwę wyświetlaną działania znajdującą się w projektancie.
+
+     ![Wyniki wyszukiwania w Projektant przepływu pracy](../workflow-designer/media/designersearch.png "DesignerSearch")
+
+## <a name="find-in-files"></a>Znajdź w plikach
+ Użycie Znajdź w plikach zlokalizuje ciągi w plikach przepływu pracy, w tym pliki XAML.
+
+#### <a name="using-find-in-files"></a>Korzystanie z funkcji Znajdź w plikach
+
+1. W programie Visual Studio naciśnij **klawisze Ctrl + Shift + F**lub wybierz pozycję **Edytuj**, **Znajdź i Zamień**, **Znajdź w plikach**
+
+2. Wprowadź element wyszukiwania do pola tekstowego **Znajdź co** i kliknij przycisk **Znajdź wszystko**
+
+3. Wynik Znajdź zostanie wyświetlony w widoku**wyniki wyszukiwania** [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Dwukrotne kliknięcie elementu wynikowego spowoduje przejście do działania, które zawiera dopasowanie w Projektancie przepływu pracy.

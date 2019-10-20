@@ -1,46 +1,46 @@
 ---
-title: 'Instrukcje: Badanie modelu zawartości węzłów przy użyciu widoku modelu zawartości | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Badanie modelu zawartości węzłów przy użyciu widoku modelu zawartości | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: c42ddac8-b0e3-48d6-9832-112a19d6c104
 caps.latest.revision: 10
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 24ceb80c0ffd03e7c796b7a5d5abdc93f4c1c78d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ddadcb0fbd772a5638bf6023b8cf6c18fbd270d7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68179549"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670860"
 ---
 # <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>Instrukcje: Badanie modelu zawartości węzłów przy użyciu widoku modelu zawartości
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W tym temacie opisano sposób zapoznaj się z węzłów za pomocą [widoku modelu zawartości](../xml-tools/content-model-view.md).  
-  
-### <a name="to-create-a-new-xsd-file-and-display-the-root-element-in-the-content-model-view"></a>Aby utworzyć nowy plik XSD i wyświetlić element główny w widoku modelu zawartości  
-  
-1. Utwórz nowy plik schematu XML.  
-  
-2. Kliknij przycisk **Użyj edytora XML możesz wyświetlać i edytować podstawowego pliku schematu XML** w widoku startowego.  
-  
-3. Skopiuj przykładowy kod XML schematu z [schematu XML z próbki: Schemat zamówienia zakupu](../xml-tools/sample-xsd-file-purchase-order-schema.md) i wklej go w celu zastąpienia kodu, który został dodany do nowego pliku XSD domyślnie.  
-  
-4. Wybierz `purchaseOrder` element w Eksploratorze schematu, klikając prawym przyciskiem myszy `purchaseOrder` element w edytorze XML i wybierając polecenie **Pokaż w Eksploratorze XML**.  
-  
-5. Kliknij prawym przyciskiem myszy `purchaseOrder` w Eksploratorze XML, a następnie wybierz pozycję **Pokaż w widoku modelu zawartości**.  
-  
-     Wyświetla widok modelu zawartości `purchaseOrder` elementu po jego powierzchni projektowej.  
-  
-6. Rozwiń `shipTo`, `billTo`, i `items` węzłów przez dwukrotne kliknięcie każdego węzła lub klikając podwójną strzałkę z prawej strony każdego węzła.  
-  
-     Węzły `purchaseOrder` element teraz zostaną rozwinięte i można zobaczyć model zawartości elementu.  
-  
-7. Kliknij w dowolnym węźle `purchaseOrder` elementu i spójrz na pasku nawigacji, aby zobaczyć, gdzie w zestawie schematów wybrany węzeł znajduje się.  
-  
-8. Kliknij przycisk **Pokaż dokumentacji** przycisk na pasku narzędzi XSD, aby przełączyć zawiera. Możesz również prawym przyciskiem myszy powierzchnię projektu, aby przełączyć się z dokumentacją.  
-  
-9. Kliknij przycisk Rick `purchaseOrder` a następnie wybierz węzeł **Generowanie XML przykładowe** można znaleźć w dokumencie wystąpienia XML.
+W tym temacie opisano sposób eksplorowania węzłów przy użyciu [widoku modelu zawartości](../xml-tools/content-model-view.md).
+
+### <a name="to-create-a-new-xsd-file-and-display-the-root-element-in-the-content-model-view"></a>Aby utworzyć nowy plik XSD i wyświetlić element główny w widoku modelu zawartości
+
+1. Utwórz nowy plik schematu XML.
+
+2. Kliknij pozycję **Użyj edytora XML, aby wyświetlić i edytować źródłowy plik schematu XML** w widoku Start.
+
+3. Skopiuj przykładowy kod schematu XML z [przykładowego schematu XML: schemat zamówienia zakupu](../xml-tools/sample-xsd-file-purchase-order-schema.md) i wklej go, aby zastąpić kod, który został domyślnie dodany do nowego pliku XSD.
+
+4. Wybierz element `purchaseOrder` w Eksploratorze schematu, klikając prawym przyciskiem myszy element `purchaseOrder` w edytorze XML i wybierając pozycję **Pokaż w EKSPLORATORZE XML**.
+
+5. Kliknij prawym przyciskiem myszy `purchaseOrder` w Eksploratorze XML i wybierz polecenie **Pokaż w widoku modelu zawartości**.
+
+     Widok modelu zawartości wyświetla element `purchaseOrder` na jego powierzchni projektowej.
+
+6. Rozwiń węzły `shipTo`, `billTo` i `items` przez dwukrotne kliknięcie każdego węzła lub kliknięcie podwójnej strzałki z prawej strony każdego węzła.
+
+     Węzły elementu `purchaseOrder` są teraz rozwinięte i można zobaczyć model zawartości elementu.
+
+7. Kliknij dowolny węzeł w obszarze `purchaseOrder` i spójrz na pasek nawigacyjny, aby zobaczyć, gdzie w zestawie schematu znajduje się wybrany węzeł.
+
+8. Kliknij przycisk **Pokaż dokumentację** na pasku narzędzi XSD, aby przełączyć zawiera. Możesz również kliknąć prawym przyciskiem myszy powierzchnię projektu, aby przełączać dokumentację.
+
+9. Rick — kliknij węzeł `purchaseOrder` i wybierz pozycję **Generuj przykładowy kod XML** , aby wyświetlić dokument wystąpienia XML.

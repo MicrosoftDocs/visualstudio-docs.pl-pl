@@ -1,5 +1,5 @@
 ---
-title: Windows przepływu pracy programu Visual Studio (starsza wersja) | Dokumentacja firmy Microsoft
+title: Okna przepływu pracy programu Visual Studio (starsza wersja) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -8,28 +8,28 @@ helpviewer_keywords:
 - workflows, designer windows
 ms.assetid: 78526446-d165-4367-982c-b2cf269fa22b
 caps.latest.revision: 5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0036c861638c4a0d5d2b7de4500eb00368efe447
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 870e317cb8cea1acc3b4b4f51102283e5f1b28c7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62857545"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657568"
 ---
 # <a name="visual-studio-workflow-windows-legacy"></a>Okna przepływów pracy programu Visual Studio (starsza wersja)
-Starszego [!INCLUDE[wfd2](../includes/wfd2-md.md)] dostarczone przez [!INCLUDE[vs2010](../includes/vs2010-md.md)] może służyć do obiektu docelowego [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]. Starsza wersja projektanta jest projektanta wizualnego, który służy do tworzenia przepływu pracy. Można przeciągnąć działania z **przybornika** projektu powierzchni i ma je skonfigurować. Jako [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] okna edytora zajmuje obszaru okno główne, używane przez inne [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] okna edytora. Nazwa przepływu pracy jest wyświetlana w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pasek tytułu okna.  
-  
- Większość starszej wersji projektanta systemu Windows należy zapoznać się z doświadczonym [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] użytkownika. W poniższej tabeli opisano podstawowe systemu windows.  
-  
-|Okno|Opis|  
-|------------|-----------------|  
-|Powierzchni projektowej starszej wersji przepływu pracy|Visual powierzchni projektanta, który służy do tworzenia przepływu pracy przeznaczonych [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]. Zapewnia możliwość tworzenia działania wizualnie przez przeciąganie Projektanci działań z **przybornika** do powierzchni projektowej.|  
-|Przybornik|Umożliwia graficzne działań, które można przeciągać do powierzchni projektowej.|  
-|Właściwości|Umożliwia skonfigurowanie właściwości działania przepływu pracy.|  
-|Eksplorator rozwiązań|Wyświetla projektów przepływu pracy w hierarchicznym widoku drzewa i umożliwia dostęp do funkcji, które ułatwia zarządzanie projektami.|  
-|Debugowanie systemu windows|Standardowa debugowania programu Visual Studio systemu windows, takich jak **wątków**, **stos wywołań**, **punktu przerwania**, **lokalne narzędzie**i **Narzędzie Obejrzyj** systemu windows.|  
-  
-## <a name="see-also"></a>Zobacz też  
+Starsze [!INCLUDE[wfd2](../includes/wfd2-md.md)] dostarczone przez [!INCLUDE[vs2010](../includes/vs2010-md.md)] mogą służyć jako element docelowy [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]. Starszy projektant jest projektantem wizualnym, którego można użyć do utworzenia przepływu pracy. Możesz przeciągnąć działania z **przybornika** do powierzchni projektowej, a następnie skonfigurować je w tym miejscu. Jako okno edytora [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] jest ono zajęte obszarem okna głównego używanym przez inne okna edytora [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Nazwa przepływu pracy zostanie wyświetlona na pasku tytułu okna [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+
+ Większość starszych okien projektanta powinna znać doświadczonych [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] użytkownika. W poniższej tabeli opisano podstawowe okna.
+
+|Okno|Opis|
+|------------|-----------------|
+|Starsza Powierzchnia projektowa przepływu pracy|Powierzchnia projektanta wizualnego, która jest używana do tworzenia przepływu pracy, który jest przeznaczony dla [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]. Zapewnia możliwość wizualnego tworzenia działań przez przeciągnięcie projektantów aktywności z **przybornika** do powierzchni projektowej.|
+|Przybornik|Zawiera graficzną reprezentację działań, które można przeciągać do powierzchni projektowej.|
+|Właściwości|Służy do konfigurowania właściwości działania przepływu pracy.|
+|Eksplorator rozwiązań|Wyświetla projekty przepływu pracy w hierarchicznym widoku drzewa i umożliwia dostęp do funkcji, które ułatwiają zarządzanie projektami.|
+|Okna debugowania|Standardowe okna debugowania programu Visual Studio, takie jak **wątki**, **stos wywołań**, **punkt przerwania**, **Narzędzie locale**i okna **narzędzi** .|
+
+## <a name="see-also"></a>Zobacz też
  [Debugowanie starszych wersji przepływów pracy](../workflow-designer/debugging-legacy-workflows.md)

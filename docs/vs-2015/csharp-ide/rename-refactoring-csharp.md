@@ -1,5 +1,5 @@
 ---
-title: Refaktoryzacja zmiany nazwy (C#) | Dokumentacja firmy Microsoft
+title: Refaktoryzacja zmiany nazwy (C#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,161 +13,160 @@ helpviewer_keywords:
 - Rename refactoring [C#]
 ms.assetid: 268942fc-b142-4dfa-8d90-bedd548c2e4f
 caps.latest.revision: 45
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3f1c31d858fbe7a5183456bfc7fcc1e602d4e051
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 0db7696268e5e3d24d005fbf35a08b330f2dc849
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65686040"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667476"
 ---
 # <a name="rename-refactoring-c"></a>Refaktoryzacja zmiany nazwy (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-**Zmień nazwę** jest funkcją refaktoryzacji w programie Visual Studio zintegrowane środowisko programistyczne (IDE), która zapewnia łatwy sposób można zmienić nazwy identyfikatorów dla kodu symbole, takie jak pola, zmienne lokalne, metody, przestrzenie nazw, właściwości i typów. **Zmień nazwę** może służyć do zmiany nazwy w komentarzach, a także w ciągach oraz zmienić deklaracje i wywołania identyfikatora.  
-  
+**Zmiana nazwy** to funkcja refaktoryzacji w zintegrowanym środowisku programistycznym (IDE) programu Visual Studio, która zapewnia łatwy sposób zmiany nazw identyfikatorów dla symboli kodu, takich jak pola, zmienne lokalne, metody, przestrzenie nazw, właściwości i typy. **Nazwy** można użyć do zmiany nazw w komentarzach i w ciągach oraz do zmiany deklaracji i wywołań identyfikatora.
+
 > [!NOTE]
-> Korzystając z kontroli źródła dla programu Visual Studio, Pobierz najnowszą wersję źródła, przed podjęciem próby wykonania Refaktoryzacja zmiany nazwy.  
-  
- Refaktoryzacja zmiany nazwy jest dostępna w następujących funkcji programu Visual Studio:  
-  
-|Funkcja|Zachowanie refaktoryzacji w środowisku IDE|  
-|-------------|----------------------------------------|  
-|Edytor kodu|Refaktoryzacja zmiany nazwy jest dostępna w edytorze kodu, gdy umieść kursor na niektórych rodzajów kodu symboli. Gdy kursor znajduje się w tym miejscu, można wywołać **Zmień nazwę** polecenia, wpisując skrót (CTRL + R, CTRL + R) lub wybierając **Zmień nazwę** polecenia tagu inteligentnego, w menu skrótów lub  **Refaktoryzuj** menu.|  
-|Widok klas|Po wybraniu identyfikatora w widoku klas, Refaktoryzacja zmiany nazwy jest dostępne z menu skrótów i **Refaktoryzuj** menu.|  
-|Przeglądarka obiektów|Po wybraniu identyfikatora w przeglądarce obiektów, Refaktoryzacja zmiany nazwy jest dostępna tylko z **Refaktoryzuj** menu.|  
-|Siatki właściwości projektanta Windows Forms|W **siatki właściwości** programu Windows Forms Designer, zmiana nazwy kontrolki zostanie zainicjowana operacja zmiany nazwy dla tej kontrolki. **Zmień nazwę** nie pojawi się okno dialogowe.|  
-|Eksplorator rozwiązań|W **Eksploratora rozwiązań**, **Zmień nazwę** polecenie jest dostępne w menu skrótów. Jeśli wybranym pliku źródłowym zawiera klasy, których nazwa klasy jest taka sama jak nazwa pliku, możesz użyć tego polecenia, jednocześnie Zmień nazwę pliku źródłowego i wykonywanie, Refaktoryzacja zmiany nazwy.<br /><br /> Na przykład jeśli utworzysz domyślnej aplikacji Windows, a następnie zmień nazwę Form1.cs TestForm.cs, nazwa pliku źródłowego Form1.cs zmieni się na TestForm.cs i class Form1 i wszystkie odwołania do czy klasa zmieni nazwę na TestForm. **Uwaga:**  **Cofnij** polecenie (CTRL + Z) tylko cofnąć Refaktoryzacja zmiany nazwy w kodzie i będzie nie zmieniać nazwy pliku z powrotem do oryginalnej nazwy. <br /><br /> Jeśli wybranym pliku źródłowym nie zawiera klasy, których nazwa jest taka sama jak nazwa pliku **Zmień nazwę** polecenia w pliku **Eksploratora rozwiązań** tylko zmienić nazwę pliku źródłowego i nie zostanie wykonany zmiany nazwy refaktoryzacji.|  
-  
-## <a name="rename-operations"></a>Zmień nazwę działania  
- Podczas wykonywania **Zmień nazwę**, aparat refaktoryzacji wykonuje określonej operacji zmiany nazwy dla każdego symbolu kodu, zgodnie z opisem w poniższej tabeli.  
-  
-|Kod symbolu|Operacji zmiany nazwy|  
-|-----------------|----------------------|  
-|Pole|Zmienia deklaracji i użycia pola na nową nazwę.|  
-|Zmienna lokalna|Zmienia deklaracji i użycia zmiennej na nową nazwę.|  
-|Metoda|Zmienia nazwę metody i wszystkie odwołania do tej metody na nową nazwę. **Uwaga:**  Po zmianie nazwy metody rozszerzenia operacji zmiany nazwy propaguje do wszystkich wystąpień metody, które znajdują się w zakresie, niezależnie od tego, czy metoda rozszerzenia jest używany jako metodę statyczną lub metodą wystąpienia. Aby uzyskać więcej informacji, zobacz [metody rozszerzenia](https://msdn.microsoft.com/library/175ce3ff-9bbf-4e64-8421-faeb81a0bb51).|  
-|Przestrzeń nazw|Zmienia nazwę przestrzeni nazw na nową nazwę w deklaracji, wszystkie `using` instrukcji i w pełni kwalifikowanych nazw. **Uwaga:**  Przy zmianie nazwy obszaru nazw, a [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aktualizuje również **domyślne Namespace** właściwość **aplikacji** strony **projektanta projektu**. Ta właściwość nie może być resetowany, wybierając **Cofnij** z **Edytuj** menu. Aby zresetować **domyślne Namespace** wartości właściwości, należy zmodyfikować właściwość w **projektanta projektu**. Aby uzyskać więcej informacji, zobacz [strony aplikacji](../ide/reference/application-page-project-designer-csharp.md).|  
-|Właściwość|Zmienia deklaracji i użycia właściwości na nową nazwę.|  
-|Typ|Zmienia wszystkie deklaracje i wszelkie użycia tego typu na nową nazwę, w tym konstruktory i destruktory. Dla typów częściowych operacji zmiany nazwy będzie propagowany do wszystkich części.|  
-  
-#### <a name="to-rename-an-identifier"></a>Aby zmienić nazwę identyfikatora  
-  
-1. Utwórz aplikację konsoli o nazwie `RenameIdentifier`, a następnie zastąp `Program` poniższym przykładowym kodem.  
-  
-    ```csharp  
-    class ProtoClassA  
-    {  
-        // Invoke on 'MethodB'.  
-        public void MethodB(int i, bool b) { }  
-    }  
-  
-    class ProtoClassC  
-    {  
-        void D()  
-        {  
-            ProtoClassA MyClassA = new ProtoClassA();  
-  
-            // Invoke on 'MethodB'.  
-            MyClassA.MethodB(0, false);  
-        }  
-    }  
-    ```  
-  
-2. Umieść kursor w `MethodB`, albo w deklaracji metody lub wywołania metody.  
-  
-3. Z **Refaktoryzuj** menu, wybierz opcję **Zmień nazwę**. **Zmień nazwę** pojawi się okno dialogowe.  
-  
-     Również kliknięciu prawym przyciskiem myszy kursora, wskaż polecenie **Refaktoryzuj** na menu kontekstowe, a następnie kliknij **Zmień nazwę** do wyświetlenia **Zmień nazwę** okno dialogowe.  
-  
-4. W **nową nazwę** wpisz `MethodC`.  
-  
-5. Wybierz **wyszukiwania w komentarzach** pole wyboru.  
-  
-6. Kliknij przycisk **OK**.  
-  
-7. W **podgląd zmian** okno dialogowe, kliknij przycisk **Zastosuj**.  
-  
-#### <a name="to-rename-an-identifier-using-smart-tags"></a>Aby zmienić nazwę identyfikatora przy użyciu tagów inteligentnych  
-  
-1. Utwórz aplikację konsoli o nazwie `RenameIdentifier`, a następnie zastąp `Program` poniższym przykładowym kodem.  
-  
-    ```csharp  
-    class ProtoClassA  
-    {  
-        // Invoke on 'MethodB'.  
-        public void MethodB(int i, bool b) { }  
-    }  
-  
-    class ProtoClassC  
-    {  
-        void D()  
-        {  
-            ProtoClassA MyClassA = new ProtoClassA();  
-  
-            // Invoke on 'MethodB'.  
-            MyClassA.MethodB(0, false);  
-        }  
-    }  
-    ```  
-  
-2. W deklaracji pod kątem `MethodB`, wpisz lub backspace za pośrednictwem identyfikatora metody. Poniżej tego identyfikatora, zostanie wyświetlony monit z tagu inteligentnego.  
-  
+> W przypadku korzystania z kontroli źródła dla programu Visual Studio przed podjęciem próby przeprowadzenia refaktoryzacji zmiany nazwy Pobierz najnowszą wersję źródeł.
+
+ Refaktoryzacja zmiany nazwy jest dostępna w następujących funkcjach programu Visual Studio:
+
+|Funkcja|Zachowanie refaktoryzacji w IDE|
+|-------------|----------------------------------------|
+|Edytor kodu|W edytorze kodu Refaktoryzacja zmiany nazwy jest dostępna po umieszczeniu kursora na niektórych typach symboli kodu. Gdy kursor znajduje się w tym miejscu, możesz wywołać polecenie **zmiany nazwy** , wpisując skrót klawiaturowy (Ctrl + r, Ctrl + r) lub wybierając polecenie **Zmień nazwę** z tagu inteligentnego, menu skrótów lub menu **refaktoryzacji** .|
+|Widok klas|Po wybraniu identyfikatora w Widok klasy, Refaktoryzacja zmiany nazwy jest dostępna z menu skrótów i menu **refaktoryzacji** .|
+|Przeglądarka obiektów|Po wybraniu identyfikatora w Przeglądarka obiektów, Refaktoryzacja zmiany nazwy jest dostępna tylko w menu **refaktoryzacji** .|
+|Siatka właściwości Projektant formularzy systemu Windows|W **siatce właściwości** Projektant formularzy systemu Windows zmiana nazwy kontrolki spowoduje zainicjowanie operacji zmiany nazwy dla tej kontrolki. Nie zostanie wyświetlone okno dialogowe **Zmień nazwę** .|
+|Eksplorator rozwiązań|W **Eksplorator rozwiązań**polecenie **zmiany nazwy** jest dostępne w menu skrótów. Jeśli wybrany plik źródłowy zawiera klasę, której nazwa klasy jest taka sama jak nazwa pliku, można użyć tego polecenia, aby jednocześnie zmienić nazwę pliku źródłowego i wykonać refaktoryzację zmiany nazwy.<br /><br /> Jeśli na przykład utworzysz domyślną aplikację opartą na systemie Windows, a następnie zmienisz nazwę Form1.cs na TestForm.cs, nazwa pliku źródłowego Form1.cs zmieni się na TestForm.cs, a Klasa Form1 i wszystkie odwołania do tej klasy zostaną zmienione na TestForm. **Uwaga:**  Polecenie **Cofnij** (Ctrl + Z) spowoduje cofnięcie refaktoryzacji zmiany nazwy w kodzie i nie spowoduje zmiany nazwy pliku z powrotem na oryginalną nazwę. <br /><br /> Jeśli wybrany plik źródłowy nie zawiera klasy, której nazwa jest taka sama jak nazwa pliku, polecenie **zmiany nazwy** w **Eksplorator rozwiązań** będzie zmieniać nazwę pliku źródłowego i nie będzie wykonywał refaktoryzacji zmiany nazwy.|
+
+## <a name="rename-operations"></a>Operacje zmiany nazwy
+ Po wykonaniu **zmiany nazwy**aparat refaktoryzacji wykonuje operację zmiany nazwy specyficzną dla każdego symbolu kodu, zgodnie z opisem w poniższej tabeli.
+
+|Symbol kodu|Zmień nazwę operacji|
+|-----------------|----------------------|
+|Pole|Zmienia deklarację i użycie pola na nową nazwę.|
+|Zmienna lokalna|Zmienia deklarację i użycie zmiennej na nową nazwę.|
+|Metoda|Zmienia nazwę metody i wszystkie odwołania do tej metody na nową nazwę. **Uwaga:**  Po zmianie nazwy metody rozszerzenia operacja zmiany nazwy jest propagowana do wszystkich wystąpień metody, które znajdują się w zakresie, niezależnie od tego, czy Metoda rozszerzenia jest używana jako metoda statyczna czy metoda wystąpienia. Aby uzyskać więcej informacji, zobacz [metody rozszerzenia](https://msdn.microsoft.com/library/175ce3ff-9bbf-4e64-8421-faeb81a0bb51).|
+|Przestrzeń nazw|Zmienia nazwę przestrzeni nazw na nową nazwę w deklaracji, wszystkie instrukcje `using` i w pełni kwalifikowanych nazw. **Uwaga:**  Podczas zmieniania nazwy przestrzeni nazw [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] również aktualizuje **domyślną właściwość przestrzeni nazw** na stronie **aplikacji** **projektanta projektu**. Tej właściwości nie można zresetować, wybierając polecenie **Cofnij** z menu **Edycja** . Aby zresetować domyślną wartość właściwości **Namespace** , należy zmodyfikować właściwość w **projektancie projektu**. Aby uzyskać więcej informacji, zobacz [stronę aplikacji](../ide/reference/application-page-project-designer-csharp.md).|
+|Właściwość|Zmienia deklarację i użycia właściwości na nową nazwę.|
+|Typ|Zmienia wszystkie deklaracje i wszystkie użycia typu na nową nazwę, w tym konstruktory i destruktory. W przypadku typów częściowych operacja zmiany nazwy będzie propagowana do wszystkich części.|
+
+#### <a name="to-rename-an-identifier"></a>Aby zmienić nazwę identyfikatora
+
+1. Utwórz aplikację konsolową o nazwie `RenameIdentifier`, a następnie zastąp `Program` następującym przykładowym kodem.
+
+    ```csharp
+    class ProtoClassA
+    {
+        // Invoke on 'MethodB'.
+        public void MethodB(int i, bool b) { }
+    }
+
+    class ProtoClassC
+    {
+        void D()
+        {
+            ProtoClassA MyClassA = new ProtoClassA();
+
+            // Invoke on 'MethodB'.
+            MyClassA.MethodB(0, false);
+        }
+    }
+    ```
+
+2. Umieść kursor na `MethodB`, w deklaracji metody lub wywołaniu metody.
+
+3. W menu **refaktoryzacji** wybierz pozycję **Zmień nazwę**. Zostanie wyświetlone okno dialogowe **zmiana nazwy** .
+
+     Możesz również kliknąć prawym przyciskiem myszy kursor, wskazać polecenie **Refaktoryzacja** w menu kontekstowym, a następnie kliknąć polecenie **Zmień nazwę** , aby wyświetlić okno dialogowe **Zmień nazwę** .
+
+4. W polu **Nowa nazwa** wpisz `MethodC`.
+
+5. Zaznacz pole wyboru **Wyszukaj w komentarzach** .
+
+6. Kliknij przycisk **OK**.
+
+7. W oknie dialogowym **Podgląd zmian** kliknij przycisk **Zastosuj**.
+
+#### <a name="to-rename-an-identifier-using-smart-tags"></a>Aby zmienić nazwę identyfikatora przy użyciu tagów inteligentnych
+
+1. Utwórz aplikację konsolową o nazwie `RenameIdentifier`, a następnie zastąp `Program` następującym przykładowym kodem.
+
+    ```csharp
+    class ProtoClassA
+    {
+        // Invoke on 'MethodB'.
+        public void MethodB(int i, bool b) { }
+    }
+
+    class ProtoClassC
+    {
+        void D()
+        {
+            ProtoClassA MyClassA = new ProtoClassA();
+
+            // Invoke on 'MethodB'.
+            MyClassA.MethodB(0, false);
+        }
+    }
+    ```
+
+2. W deklaracji dla `MethodB` wpisz lub Backspace przy użyciu identyfikatora metody. Zostanie wyświetlony monit tagu inteligentnego poniżej tego identyfikatora.
+
     > [!NOTE]
-    > Można wywołać tylko przy użyciu tagów inteligentnych na deklarację identyfikatora Refaktoryzacja zmiany nazwy.  
-  
-3. Wpisz skrót klawiaturowy, SHIFT + ALT + F10, a następnie naciśnij klawisz strzałki w dół, aby wyświetlić menu tagu inteligentnego.  
-  
-     —lub—  
-  
-     Przesuń wskaźnik myszy nad wiersz tagów inteligentnych do wyświetlenia tagu inteligentnego. Następnie przesuń wskaźnik myszy nad tagów inteligentnych i kliknij strzałkę w dół, aby wyświetlić menu tagu inteligentnego.  
-  
-4. Wybierz **Zmień nazwę "\<identifer1 >" do "\<identifier2 >"** element menu do wywołania, Refaktoryzacja zmiany nazwy bez podgląd zmian w kodzie. Wszystkie odwołania do  **\<identifer1 >** zostaną automatycznie zaktualizowane do  **\<identifier2 >**.  
-  
-     —lub—  
-  
-     Wybierz **Zmień Podgląd** element menu do wywołania, Refaktoryzacja zmiany nazwy z podgląd zmian w kodzie. **Podgląd zmian** zostanie wyświetlone okno dialogowe.  
-  
-## <a name="remarks"></a>Uwagi  
-  
-## <a name="renaming-implemented-or-overridden-members"></a>Zmiana nazwy elementów członkowskich implementowane lub zgodnym z Przesłoniętą  
- Po użytkownik **Zmień nazwę** elementu członkowskiego, która implementuje/zastąpienia lub zaimplementować/zastąpiona przez elementy członkowskie w innych typach [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wyświetlane jest okno dialogowe, informujący, że operacja zmiany nazwy spowoduje aktualizacji kaskadowych. Jeśli klikniesz **Kontynuuj**refaktoryzacji rekursywnie aparat wyszukuje i zmienia nazwę wszystkich elementów członkowskich w podstawowym i typy pochodne, które mają implementuje/zastąpienia relacji z elementem członkowskim nazwa jest zmieniana.  
-  
- Poniższy przykład kodu zawiera elementy członkowskie z relacjami implementuje/zastąpień.  
-  
- [!code-csharp[CsUsingCsIDERefactor#1](../snippets/csharp/VS_Snippets_VBCSharp/CsUsingCsIDERefactor/CS/Class1.cs#1)]  
-  
- W poprzednim przykładzie zmiana nazwy `C.Method()` również zmienia nazwę `Ibase.Method()` ponieważ `C.Method()` implementuje `Ibase.Method()`. Następnie rekursywnie aparatu zrefaktoryzuj widzi, który `Ibase.Method()` jest implementowany przez `Derived.Method()` i zmienia nazwę `Derived.Method()`. Aparat refaktoryzacji nie powoduje zmiany nazwy `Base.Method()`, ponieważ `Derived.Method()` nie zastępuje `Base.Method()`. Aparat refaktoryzacji zatrzymuje się na nim chyba że masz **Zmień nazwę przeciążenia** zaewidencjonowany **Zmień nazwę** okno dialogowe.  
-  
- Jeśli **Zmień nazwę przeciążenia** jest zaznaczona, zmienia nazwę aparatu zrefaktoryzuj `Derived.Method(int i)` ponieważ przeciąża `Derived.Method()`, `Base.Method(int i)` ponieważ zostanie on przesłonięty przez `Derived.Method(int i)`, i `Base.Method()` ponieważ przeciążenia `Base.Method(int i)`.  
-  
+    > Refaktoryzację zmiany nazwy można wywołać tylko przy użyciu tagów inteligentnych w deklaracji identyfikatora.
+
+3. Wpisz skrót klawiaturowy SHIFT + ALT + F10, a następnie naciśnij strzałkę w dół, aby wyświetlić menu tagu inteligentnego.
+
+     —lub—
+
+     Przesuń wskaźnik myszy nad wiersz tagu inteligentnego, aby wyświetlić tag inteligentny. Następnie przesuń wskaźnik myszy nad tag inteligentny i kliknij strzałkę w dół, aby wyświetlić menu tagu inteligentnego.
+
+4. Wybierz pozycję **Zmień nazwę "\<identifer1 >" na element menu "\<identifier2 >"** , aby wywołać refaktoryzację zmiany nazwy bez podglądu zmian wprowadzonych w kodzie. Wszystkie odwołania do **> \<identifer1** zostaną automatycznie zaktualizowane do **\<identifier2 >** .
+
+     —lub—
+
+     Wybierz pozycję **Zmień nazwę z menu Podgląd** , aby wywołać refaktoryzację zmiany nazwy z podglądem zmian wprowadzonych w kodzie. Zostanie wyświetlone okno dialogowe **Podgląd zmian** .
+
+## <a name="remarks"></a>Uwagi
+
+## <a name="renaming-implemented-or-overridden-members"></a>Zmiana nazwy zaimplementowanych lub zastąpionych elementów członkowskich
+ Po **zmianie nazwy** elementu członkowskiego, który implementuje/zastępuje lub jest zaimplementowany/przesłonięty przez elementy członkowskie w innych typach, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wyświetla okno dialogowe z informacją, że operacja zmiany nazwy będzie powodowała aktualizacje kaskadowe. Jeśli klikniesz pozycję **Kontynuuj**, aparat refaktoryzacji rekursywnie odnajdzie i zmieni nazwy wszystkich elementów członkowskich w typach podstawowych i pochodnych, które mają relacje Implementuj/override z elementem członkowskim, którego nazwa jest zmieniana.
+
+ Poniższy przykład kodu zawiera elementy członkowskie z relacjami IMPLEMENT/Overrides.
+
+ [!code-csharp[CsUsingCsIDERefactor#1](../snippets/csharp/VS_Snippets_VBCSharp/CsUsingCsIDERefactor/CS/Class1.cs#1)]
+
+ W poprzednim przykładzie zmiana nazwy `C.Method()` powoduje także zmianę nazw `Ibase.Method()`, ponieważ `C.Method()` implementuje `Ibase.Method()`. Następnie aparat refaktoryzacji rekursywnie widzi, że `Ibase.Method()` jest zaimplementowany przez `Derived.Method()` i zmienia nazwy `Derived.Method()`. Aparat refaktoryzacji nie zmienia nazwy `Base.Method()`, ponieważ `Derived.Method()` nie przesłania `Base.Method()`. Aparat refaktoryzacji kończy się w tym miejscu, chyba że w oknie dialogowym **zmiana nazwy** zaznaczono opcję **przeciążenia zmiany nazwy** .
+
+ Jeśli zaznaczone jest pole **Zmień nazwę przeciążenia** , aparat refaktoryzacji zmieni nazwę `Derived.Method(int i)`, ponieważ przeciąża `Derived.Method()`, `Base.Method(int i)` ponieważ jest zastępowany przez `Derived.Method(int i)` i `Base.Method()`, ponieważ jest to Przeciążenie `Base.Method(int i)`.
+
 > [!NOTE]
-> Po zmianie nazwy elementu członkowskiego, która została zdefiniowana w zestawie odwołania, okno dialogowe wyjaśnia, że zmiana nazwy spowoduje błędy kompilacji.  
-  
-## <a name="renaming-properties-of-anonymous-types"></a>Zmiana nazwy właściwości anonimowych typów  
- Po zmianie nazwy właściwości anonimowych typów operacji zmiany nazwy będzie propagowany do właściwości na inne typy anonimowe, które mają te same właściwości. Poniższe przykłady pokazują to zachowanie.  
-  
-```csharp  
-var a = new { ID = 1};  
-var b = new { ID = 2};  
-```  
-  
- W poprzednim kodzie zmiana nazwy `ID` zmieni `ID` w obu deklaracjach ponieważ mają one ten sam typ podstawowy anonimowe.  
-  
-```csharp  
-var companyIDs =  
-    from c in companylist  
-    select new { ID = c.ID, Name = c.Name};  
-  
-var orderIDs =  
-    from o in orderlist  
-    select new { ID = o.ID, Item = o.Name};  
-```  
-  
- W poprzednim kodzie zmiana nazwy `ID` tylko zmienić nazwę jednego wystąpienia `ID` ponieważ `companyIDs` i `orderIDs` nie mają tej samej właściwości.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Refaktoryzacja (C#)](../csharp-ide/refactoring-csharp.md)   
- [Typy anonimowe](https://msdn.microsoft.com/library/59c9d7a4-3b0e-475e-b620-0ab86c088e9b)
+> Po zmianie nazwy elementu członkowskiego, który został zdefiniowany w przywoływanym zestawie, w oknie dialogowym objaśniono, że zmiana nazwy spowoduje błędy kompilacji.
+
+## <a name="renaming-properties-of-anonymous-types"></a>Zmienianie nazw właściwości typów anonimowych
+ Po zmianie nazwy właściwości w typach anonimowych operacja zmiany nazwy będzie propagowana do właściwości w innych typach anonimowych, które mają te same właściwości. Poniższe przykłady ilustrują to zachowanie.
+
+```csharp
+var a = new { ID = 1};
+var b = new { ID = 2};
+```
+
+ W poprzednim kodzie zmiana nazwy `ID` zmieni `ID` w obu instrukcjach, ponieważ mają ten sam typ anonimowy.
+
+```csharp
+var companyIDs =
+    from c in companylist
+    select new { ID = c.ID, Name = c.Name};
+
+var orderIDs =
+    from o in orderlist
+    select new { ID = o.ID, Item = o.Name};
+```
+
+ W poprzednim kodzie, zmiana nazwy `ID` spowoduje zmianę nazwy jednego wystąpienia `ID`, ponieważ `companyIDs` i `orderIDs` nie mają tych samych właściwości.
+
+## <a name="see-also"></a>Zobacz też
+ [Refaktoryzacja (C#)](../csharp-ide/refactoring-csharp.md) — [Typy anonimowe](https://msdn.microsoft.com/library/59c9d7a4-3b0e-475e-b620-0ab86c088e9b)

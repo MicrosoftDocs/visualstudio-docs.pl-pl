@@ -1,5 +1,5 @@
 ---
-title: 'CA2222: Nie obniżaj dziedziczonej widoczności składowych | Dokumentacja firmy Microsoft'
+title: 'CA2222: nie zmniejszaj dziedziczonej widoczności składowej | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,34 +12,34 @@ helpviewer_keywords:
 - CA2222
 ms.assetid: 066c8675-381f-43cc-956c-d757cc494028
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: ee6228359e84687023a713ee866ebfbb760b206b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3dda56e6980133b0e33893fbb814c4a3a7008c49
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68142458"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656056"
 ---
-# <a name="ca2222-do-not-decrease-inherited-member-visibility"></a>CA2222: Nie obniżaj dziedziczonej widoczności składowych
+# <a name="ca2222-do-not-decrease-inherited-member-visibility"></a>CA2222: Nie zmniejszaj widoczności dziedziczonego elementu członkowskiego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|DoNotDecreaseInheritedMemberVisibility|
 |CheckId|CA2222|
-|Kategoria|Microsoft.Usage|
-|Zmiana kluczowa|Bez podziału|
+|Kategoria|Microsoft. Usage|
+|Zmiana kluczowa|Bez przerywania|
 
 ## <a name="cause"></a>Przyczyna
- Prywatną metodę w niezamknięty typ ma podpis, który jest identyczny z publiczną metodę zadeklarowane w typie podstawowym. Metoda prywatna nie jest ostateczny.
+ Metoda prywatna w niezapieczętowanym typie ma sygnaturę identyczną z metodą publiczną zadeklarowaną w typie podstawowym. Metoda prywatna nie jest końcowa.
 
 ## <a name="rule-description"></a>Opis reguły
- Nie należy zmieniać modyfikatora dostępu dla dziedziczonych elementów członkowskich. Zmiana dziedziczonej składowej na prywatną nie uniemożliwia wywołującym uzyskania dostępu do implementacji metody klasy podstawowej. Jeśli element członkowski składa się prywatny i typ jest niezapieczętowany, typy dziedziczące wywołać ostatniego publicznych implementacji metody w hierarchii dziedziczenia. Jeśli musisz zmienić modyfikator dostępu, metoda powinna być oznaczona jako ostatecznego lub jego typ powinny być zapieczętowane tak, aby zapobiec zastąpieniu metody.
+ Nie należy zmieniać modyfikatora dostępu dla dziedziczonych elementów członkowskich. Zmiana dziedziczonej składowej na prywatną nie uniemożliwia wywołującym uzyskania dostępu do implementacji metody klasy podstawowej. Jeśli element członkowski jest prywatny i typ jest niezapieczętowany, dziedziczenie typów może wywołać ostatnią publiczną implementację metody w hierarchii dziedziczenia. Jeśli konieczna jest zmiana modyfikatora dostępu, metoda powinna być oznaczona jako końcowa lub jej typ powinien być zapieczętowany, aby zapobiec zastąpieniu metody.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, należy zmienić dostęp jako nieprywatny. Alternatywnie Jeśli język programowania obsługuje tę funkcję, można wprowadzić metody końcowego.
+ Aby naprawić naruszenie tej reguły, Zmień dostęp na nieprywatny. Alternatywnie, jeśli używany jest język programowania, można ustawić ostateczną metodę.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Nie pomijaj ostrzeżeń dla tej reguły.

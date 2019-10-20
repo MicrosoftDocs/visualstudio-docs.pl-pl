@@ -1,118 +1,118 @@
 ---
-title: 'Przewodnik: Korzystanie z hierarchii XSLT | Dokumentacja firmy Microsoft'
+title: 'Przewodnik: używanie hierarchii XSLT | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 5e60c8ec-cd05-4597-b856-55038218acf4
 caps.latest.revision: 8
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ed644c1dda4ac3674ef60d0027c37532fc6d0f92
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 46e6acc8f65a9c9589348508f57cc75b04c61ccc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68158628"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669553"
 ---
-# <a name="walkthrough-using-xslt-hierarchy"></a>Przewodnik: Używanie hierarchii XSLT
+# <a name="walkthrough-using-xslt-hierarchy"></a>Przewodnik: używanie hierarchii XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Narzędzie hierarchii XSLT upraszcza wiele zadań programistycznych XML. Arkusz stylów XSLT często używa `includes` i `imports` instrukcje. Kompilacja zaczyna się od arkusza stylów jednostki, ale gdy zostanie wyświetlony błąd w wyniku kompilacji arkusz stylów XSLT błędu mogą pochodzić z innego źródła niż arkusza stylów podmiotu zabezpieczeń. Naprawianie błędu lub edytowania arkusza stylów mogą wymagać dostępu do arkuszy stylów dołączanego lub importowanego. Krokowego wykonywania arkusza stylów w debugerze mogą otwierać arkusze stylów dołączone i importowanie i chcesz dodać punkt przerwania w pewnym momencie w co najmniej jednej arkusze stylów dołączone.  
-  
- Inny scenariusz, w którym narzędzie hierarchii XSLT może być przydatne jest umieszczenie punktów przerwania w regułach wbudowany szablon. Szablon reguły są specjalne szablony generowane dla każdego trybu arkusza stylów i wywoływane przez `xsl:apply-templates` gdy szablon nie pasuje do węzła. Aby zaimplementować profilowanie wbudowanych szablonów reguł, debuger XSLT generuje plik z zasadami w folderze tymczasowym i kompiluje je wraz z arkusza stylów podmiotu zabezpieczeń. Bez Przechodzenie do kodu z niektórych `xsl:apply-template`, może być trudno znaleźć arkuszy stylów, które zostały uwzględnione w arkuszu stylów podmiotu zabezpieczeń lub znaleźć i otworzyć arkusz stylów za pomocą wbudowanego szablonu reguły.  
-  
- W przykładzie w tym temacie pokazano, debugowanie w arkuszu stylów odwołania.  
-  
-### <a name="procedure-title"></a>Tytuł procedury  
-  
-1. Otwórz dokument XML w programie Visual Studio. W tym przykładzie użyto następujących `collection.xml` dokumentu.  
-  
-    ```  
-    <?xml version="1.0" encoding="utf-8"?>  
-    <?xml-stylesheet type="text/xsl" href="xslinclude.xsl"?>  
-    <COLLECTION>  
-      <BOOK>  
-        <TITLE>Lover Birds</TITLE>  
-        <AUTHOR>Cynthia Randall</AUTHOR>  
-        <PUBLISHER>Lucerne Publishing</PUBLISHER>  
-      </BOOK>  
-      <BOOK>  
-        <TITLE>The Sundered Grail</TITLE>  
-        <AUTHOR>Eva Corets</AUTHOR>  
-        <PUBLISHER>Lucerne Publishing</PUBLISHER>  
-      </BOOK>  
-      <BOOK>  
-        <TITLE>Splish Splash</TITLE>  
-        <AUTHOR>Paula Thurman</AUTHOR>  
-        <PUBLISHER>Scootney</PUBLISHER>  
-      </BOOK>  
-    </COLLECTION>  
-    ```  
-  
-2. Dodaj następujący kod `xslincludefile.xsl`:  
-  
-    ```  
-    <?xml version='1.0'?>  
-    <xsl:stylesheet version="1.0"  
-          xmlns:xsl="http://www.w3.org/1999/XSL/Transform"  
-          xml:space="preserve">  
-  
-    <xsl:template match="TITLE">  
-       Title - <xsl:value-of select="."/><BR/>  
-    </xsl:template>  
-  
-    <xsl:template match="AUTHOR">  
-       Author - <xsl:value-of select="."/><BR/>  
-    </xsl:template>  
-  
-    <xsl:template match="PUBLISHER">  
-       Publisher - <xsl:value-of select="."/><BR/><!-- removed second <BR/> -->  
-    </xsl:template>  
-  
-    </xsl:stylesheet>  
-    ```  
-  
-3. Dodaj następujący kod `xslinclude.xsl` pliku:  
-  
-    ```  
-    <?xml version='1.0'?>  
-    <xsl:stylesheet version="1.0"  
-          xmlns:xsl="http://www.w3.org/1999/XSL/Transform">  
-  
-      <xsl:output method="xml" omit-xml-declaration="yes"/>  
-  
-      <xsl:template match="/">  
-        <xsl:for-each select="COLLECTION/BOOK">  
-          <xsl:apply-templates select="TITLE"/>  
-          <xsl:apply-templates select="AUTHOR"/>  
-          <xsl:apply-templates select="PUBLISHER"/>  
-          <BR/>  
-          <!-- add this -->  
-        </xsl:for-each>  
-      </xsl:template>  
-  
-      <!-- The following template rule will not be called,  
-      because the related template in the including stylesheet  
-      is called. If we move this template so that  
-      it follows the xsl:include instruction, this one  
-      will be called instead.-->  
-      <xsl:template match="TITLE">  
-        <DIV STYLE="color:blue">  
-          Title: <xsl:value-of select="."/>  
-        </DIV>  
-      </xsl:template>  
-  
-      <xsl:include href="xslincludefile.xsl" />  
-    </xsl:stylesheet>  
-    ```  
-  
-4. Dodaj punkt przerwania w instrukcji: `<xsl:include href="xslincludefile.xsl" />`  
-  
-5. Rozpocznij debugowanie.  
-  
-6. Gdy debuger zatrzymuje się w instrukcji `<xsl:include href="xslincludefile.xsl" />`, naciśnij klawisz Wkrocz do przycisku. Należy pamiętać, że debugowanie może być kontynuowane w arkuszu stylów odwołania. Hierarchia jest widoczna i Projektant wyświetla prawidłową ścieżkę.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Przewodnik: XSLT Profiler](../xml-tools/walkthrough-xslt-profiler.md)
+Narzędzie hierarchii XSLT upraszcza wiele zadań związanych z programowaniem XML. Arkusz stylów XSLT często używa instrukcji `includes` i `imports`. Kompilacja zaczyna się od głównego arkusza stylów, ale gdy zobaczysz błąd w wyniku kompilowania arkusza stylów XSLT, błąd może pochodzić z innego źródła niż główny arkusz stylów. Usunięcie błędu lub edytowanie arkusza stylów może wymagać dostępu do arkuszy stylów dołączonych lub zaimportowanych. Przechodzenie przez arkusz stylów w debugerze może otwierać dołączone i zaimportowane arkusze stylów. w pewnym momencie można dodać punkt przerwania w jednym lub kilku dołączonych arkuszach stylów.
+
+ Innym scenariuszem, który może być przydatne narzędzie hierarchii XSLT, jest umieszczenie punktów przerwania w regułach wbudowanych szablonów. Reguły szablonów to specjalne szablony wygenerowane dla każdego trybu arkusza stylów i wywoływane przez `xsl:apply-templates`, gdy żaden inny szablon nie jest zgodny z węzłem. Aby zaimplementować debugowanie w regułach wbudowanych szablonów, debuger XSLT generuje plik z regułami w folderze tymczasowym i kompiluje je razem z głównym arkuszem stylów. Bez przechodzenia do kodu z niektórych `xsl:apply-template` może być trudno znaleźć arkusze stylów, które zostały uwzględnione w głównym arkuszu stylów lub znaleźć i otworzyć arkusz stylów z wbudowanymi regułami szablonu.
+
+ W przykładzie w tym temacie pokazano debugowanie w arkuszu stylów, do którego się odwołuje.
+
+### <a name="procedure-title"></a>Tytuł procedury
+
+1. Otwórz dokument XML w programie Visual Studio. W tym przykładzie zastosowano następujący dokument `collection.xml`.
+
+    ```
+    <?xml version="1.0" encoding="utf-8"?>
+    <?xml-stylesheet type="text/xsl" href="xslinclude.xsl"?>
+    <COLLECTION>
+      <BOOK>
+        <TITLE>Lover Birds</TITLE>
+        <AUTHOR>Cynthia Randall</AUTHOR>
+        <PUBLISHER>Lucerne Publishing</PUBLISHER>
+      </BOOK>
+      <BOOK>
+        <TITLE>The Sundered Grail</TITLE>
+        <AUTHOR>Eva Corets</AUTHOR>
+        <PUBLISHER>Lucerne Publishing</PUBLISHER>
+      </BOOK>
+      <BOOK>
+        <TITLE>Splish Splash</TITLE>
+        <AUTHOR>Paula Thurman</AUTHOR>
+        <PUBLISHER>Scootney</PUBLISHER>
+      </BOOK>
+    </COLLECTION>
+    ```
+
+2. Dodaj następujące `xslincludefile.xsl`:
+
+    ```
+    <?xml version='1.0'?>
+    <xsl:stylesheet version="1.0"
+          xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+          xml:space="preserve">
+
+    <xsl:template match="TITLE">
+       Title - <xsl:value-of select="."/><BR/>
+    </xsl:template>
+
+    <xsl:template match="AUTHOR">
+       Author - <xsl:value-of select="."/><BR/>
+    </xsl:template>
+
+    <xsl:template match="PUBLISHER">
+       Publisher - <xsl:value-of select="."/><BR/><!-- removed second <BR/> -->
+    </xsl:template>
+
+    </xsl:stylesheet>
+    ```
+
+3. Dodaj następujący plik `xslinclude.xsl`:
+
+    ```
+    <?xml version='1.0'?>
+    <xsl:stylesheet version="1.0"
+          xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+      <xsl:output method="xml" omit-xml-declaration="yes"/>
+
+      <xsl:template match="/">
+        <xsl:for-each select="COLLECTION/BOOK">
+          <xsl:apply-templates select="TITLE"/>
+          <xsl:apply-templates select="AUTHOR"/>
+          <xsl:apply-templates select="PUBLISHER"/>
+          <BR/>
+          <!-- add this -->
+        </xsl:for-each>
+      </xsl:template>
+
+      <!-- The following template rule will not be called,
+      because the related template in the including stylesheet
+      is called. If we move this template so that
+      it follows the xsl:include instruction, this one
+      will be called instead.-->
+      <xsl:template match="TITLE">
+        <DIV STYLE="color:blue">
+          Title: <xsl:value-of select="."/>
+        </DIV>
+      </xsl:template>
+
+      <xsl:include href="xslincludefile.xsl" />
+    </xsl:stylesheet>
+    ```
+
+4. Dodaj punkt przerwania w instrukcji: `<xsl:include href="xslincludefile.xsl" />`
+
+5. Rozpocznij debugowanie.
+
+6. Gdy debuger zatrzyma się na instrukcji `<xsl:include href="xslincludefile.xsl" />`, naciśnij przycisk Przejdź do przycisku. Należy zauważyć, że debugowanie może być kontynuowane w przywoływanym arkuszu stylów. Hierarchia jest widoczna, a Projektant wyświetla właściwą ścieżkę.
+
+## <a name="see-also"></a>Zobacz też
+ [Przewodnik: Profiler XSLT](../xml-tools/walkthrough-xslt-profiler.md)

@@ -1,5 +1,5 @@
 ---
-title: Zestawy liczników testu obciążeniowego
+title: Zestawy liczników testów obciążenia
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,58 +10,58 @@ helpviewer_keywords:
 - counter sets
 - load tests, counter sets
 ms.assetid: 64315c2f-a0b2-4378-be16-0774b99beef5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4ca910038e35ee65e6d97999f08013f398eaec9e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f781580f28c3b829483180d559851bc9730fa18e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950124"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653500"
 ---
-# <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>Instrukcje: Zarządzanie zbiorami liczników za pomocą edytora testu obciążenia
+# <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>Instrukcje: zarządzanie zbiorami liczników przy użyciu Edytor testu obciążeniowego
 
-Po utworzeniu testu obciążenia za pomocą **Kreatora nowego testu obciążeniowego**, jest dodawany początkowy zestaw liczników. Oferują one zestawy wstępnie zdefiniowanych zbiorów liczników dla testu obciążeniowego.
+Podczas tworzenia testu obciążenia przy użyciu **nowego Kreator testu obciążeniowego**należy dodać początkowy zestaw liczników. Oferują one zestawy wstępnie zdefiniowanych zbiorów liczników dla testu obciążeniowego.
 
 > [!NOTE]
-> Jeśli testy obciążeniowe są rozmieszczone na komputerach zdalnych, liczniki kontrolera i agenta są mapowane na zbiory liczników kontrolera i agenta. Aby uzyskać więcej informacji o sposobie używania komputerów zdalnych w teście obciążenia, zobacz [kontrolerów testów i agentów testowych](configure-test-agents-and-controllers-for-load-tests.md).
+> Jeśli testy obciążeniowe są rozmieszczone na komputerach zdalnych, liczniki kontrolera i agenta są mapowane na zbiory liczników kontrolera i agenta. Aby uzyskać więcej informacji na temat korzystania z maszyn zdalnych w teście obciążenia, zobacz [kontrolerów testów i agentów testowych](configure-test-agents-and-controllers-for-load-tests.md).
 
-Zarządzanie zbiorami liczników obejmuje, wybierając zestaw komputerów, które chcesz zebrać dane o wydajności i przypisywanie zbiór zestawów liczników, które mają być zbierane z każdego komputera. Zarządzasz licznikami w **edytora testu obciążenia**.
+Zarządzanie zbiorami liczników obejmuje wybranie zestawu komputerów, z których mają być zbierane dane dotyczące wydajności, oraz przypisanie zestawu liczników zbieranych z poszczególnych komputerów. Zarządzasz licznikami w **Edytor testu obciążeniowego**.
 
 ![Zarządzanie zbiorami liczników](../test/media/loadtestmanagecountersets.png)
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-## <a name="to-manage-counter-sets"></a>Aby zarządzanie zbiorami liczników
+## <a name="to-manage-counter-sets"></a>Aby zarządzać zbiorami liczników
 
 1. Otwórz test obciążenia.
 
-2. Wybierz **Zarządzaj zbiorem liczników** przycisku.
+2. Wybierz przycisk **Zarządzaj zbiorami liczników** .
 
-     — lub —
+     oraz
 
-     Kliknij prawym przyciskiem myszy **zbiorów liczników** folderu obciążenia testów drzewa i wybierz przycisk **Zarządzaj zbiorem liczników**.
+     Kliknij prawym przyciskiem myszy folder **zestawy liczników** w drzewie testu obciążenia i wybierz polecenie **Zarządzaj zbiorami liczników**.
 
-     **Zarządzaj zbiorem liczników** zostanie wyświetlone okno dialogowe.
+     Zostanie wyświetlone okno dialogowe **Zarządzanie zbiorami liczników** .
 
-3. (Opcjonalnie) W **wybrane komputery i zbiory liczników zostaną dodane następujące parametry uruchomieniowe** pola listy, wybierz inne ustawienie uruchamiania.
+3. Obowiązkowe W **obszarze wybrane komputery i zbiory liczników zostaną dodane do pola listy następujące parametry uruchomieniowe** wybierz inne ustawienie uruchomieniowe.
 
     > [!NOTE]
-    > Dotyczy to tylko, jeśli masz więcej niż jedno ustawienie uruchamiania w teście obciążenia.
+    > Ma to zastosowanie tylko wtedy, gdy masz więcej niż jedno ustawienie uruchomieniowe w teście obciążenia.
 
-4. (Opcjonalnie) Wybierz **Dodaj komputer** należy dodać nowy komputer do monitorowania. Użytkownik jest monitowany o podanie nazwy. Wpisz nazwę komputera, a zobaczysz węzłów poniżej nowy wpis. Na przykład **ASP.NET**, **IIS**, **SQL**i innym osobom. Zaznacz pola wyboru przed węzły, które mają zostać zaznaczone. Nowe liczniki są wyświetlane w **podgląd zaznaczenia** okienka.
+4. Obowiązkowe Wybierz pozycję **Dodaj komputer** , aby dodać nowy komputer do monitorowania. Zostanie wyświetlony monit o podanie nazwy. Wpisz nazwę komputera i zobaczysz węzły poniżej nowego wpisu. Na przykład **ASP.NET**, **IIS**, **SQL**i inne. Zaznacz pola wyboru przed węzłami, które chcesz wybrać. Nowe liczniki są wyświetlane w okienku **Opcje podglądu** .
 
-5. (Opcjonalnie) W **tagów** pole tekstowe, wpisz znacznik do skojarzenia z komputera. Na przykład "TestMachine12 w lab3".
+5. Obowiązkowe W polu tekstowym **Tagi komputera** wpisz tag, który ma zostać skojarzony z komputerem. Na przykład "TestMachine12 in lab3".
 
-     Tagi komputera pozwalają zidentyfikować komputer o nazwie łatwy do rozpoznania.
+     Znaczniki komputera pozwalają zidentyfikować komputer z łatwą do rozpoznania nazwą.
 
-     Znaczniki są wyświetlane w **mapowaniach zbioru liczników** węzeł w drzewie w edytorze testu obciążenia. Co ważniejsze, znaczniki są wyświetlane w raportach programu Excel, które pomagają identyfikować zainteresowane strony jaką rolę na komputerze nie ma w teście obciążeniowym. Na przykład "Web serwer1 w lab2" lub "SQL Server2 w pakiecie office Phoenix". Aby uzyskać więcej informacji, zobacz [testy obciążenia raport wyników dla potrzeb porównań testów lub analizy trendów](../test/compare-load-test-results.md).
+     Tagi są wyświetlane w węźle **mapowania zestawów liczników** w drzewie w Edytor testu obciążeniowego. Ważniejsze Tagi są wyświetlane w raportach programu Excel, które pomagają udziałowcom zidentyfikować rolę komputera w teście obciążenia. Na przykład "Web serwer1 in lab2" lub "SQL Serwer2 w biurze w Phoenix". Aby uzyskać więcej informacji, zobacz [raportowanie wyników testów obciążenia dla porównania testów lub analizy trendów](../test/compare-load-test-results.md).
 
-6. Wybierz **OK**.
+6. Wybierz **przycisk OK**.
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Kontrolerzy testów i agenci testowi](configure-test-agents-and-controllers-for-load-tests.md)
-- [Określanie zbiorów liczników oraz zasad progu dla komputerów w teście obciążeniowym](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
-- [Konfigurowanie ustawień testu obciążenia](../test/configure-load-test-run-settings.md)
+- [Określ zestawy liczników i reguły progowe dla komputerów w teście obciążenia](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
+- [Skonfiguruj ustawienia przebiegu testu obciążenia](../test/configure-load-test-run-settings.md)

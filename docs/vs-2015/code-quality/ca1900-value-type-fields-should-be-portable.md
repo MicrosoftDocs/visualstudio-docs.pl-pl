@@ -1,5 +1,5 @@
 ---
-title: 'CA1900: Pola typu wartości powinny być przenośne | Dokumentacja firmy Microsoft'
+title: 'CA1900: pola typu wartości powinny być przenośne | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,36 +12,36 @@ helpviewer_keywords:
 - CA1900
 ms.assetid: 1787d371-389f-4d39-b305-12b53bc0dfb9
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 97a83bf4ba71d0adc71fdb96d4e1c865358c08e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ff56c89a56af54288284d9cc62c71d0c9b2179b4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68203089"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661105"
 ---
-# <a name="ca1900-value-type-fields-should-be-portable"></a>CA1900: Pola typu wartości powinny być przenośne
+# <a name="ca1900-value-type-fields-should-be-portable"></a>CA1900: Pola o typie wartości powinny być przenośne
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [CA1900: Pola typu wartości powinny być przenośne](https://docs.microsoft.com/visualstudio/code-quality/ca1900-value-type-fields-should-be-portable).  
-  
-|||  
-|-|-|  
-|TypeName|ValueTypeFieldsShouldBePortable|  
-|CheckId|CA1900|  
-|Kategoria|Microsoft.Portability|  
-|Zmiana kluczowa|Przerywanie — Jeśli pola są widoczne poza zestawem.<br /><br /> Bez podziału — Jeśli pole nie jest widoczna spoza zestawu.|  
-  
-## <a name="cause"></a>Przyczyna  
- Ta reguła sprawdza, czy struktury, które są zadeklarowane za pomocą jawnego układu, zostaną prawidłowo wyrównane podczas przekazywania do kodu niezarządzanego w 64-bitowych systemach operacyjnych. IA-64 nie zezwala na dostępów do niewyrównanych pamięci i proces ulegnie awarii, jeśli to naruszenie nie został rozwiązany.  
-  
-## <a name="rule-description"></a>Opis reguły  
- Struktury, które mają jawne układ, który zawiera niewyrównane pola powodują awarię na 64-bitowych systemach operacyjnych.  
-  
-## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia  
- Wszystkie pola, które są mniejsze niż 8 bajtów musi mieć wartość przesunięcia, które są wielokrotnością ich rozmiar i pola, które są 8 bajtów lub więcej musi mieć przesunięcia, których to wielokrotność liczby 8. Innym rozwiązaniem jest użycie `LayoutKind.Sequential` zamiast `LayoutKind.Explicit`, jeśli jest to uzasadnione.  
-  
-## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia  
- To ostrzeżenie powinno być pomijane, tylko wtedy, gdy wystąpi błąd.
+Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [CA1900: pole typu wartości powinno być przenośne](https://docs.microsoft.com/visualstudio/code-quality/ca1900-value-type-fields-should-be-portable).
+
+|||
+|-|-|
+|TypeName|ValueTypeFieldsShouldBePortable|
+|CheckId|CA1900|
+|Kategoria|Microsoft. przenośność|
+|Zmiana kluczowa|Przerywanie — Jeśli pole może być widoczne poza zestawem.<br /><br /> Bez przerywania — Jeśli pole nie jest widoczne poza zestawem.|
+
+## <a name="cause"></a>Przyczyna
+ Ta reguła sprawdza, czy struktury zadeklarowane za pomocą jawnego układu są wyrównane prawidłowo, gdy są przekazywane do kodu niezarządzanego w 64-bitowych systemach operacyjnych. IA-64 nie zezwala na niewyrównany dostęp do pamięci, a proces zostanie rozwiązany, jeśli to naruszenie nie zostanie naprawione.
+
+## <a name="rule-description"></a>Opis reguły
+ Struktury, które mają jawny układ, który zawiera niewyrównane pola, powodują awarie w 64-bitowych systemach operacyjnych.
+
+## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
+ Wszystkie pola, które są mniejsze niż 8 bajtów, muszą mieć przesunięcia, które są wielokrotnością rozmiaru, a pola, które mają 8 bajtów lub więcej, muszą mieć przesunięcia, które są wielokrotnością 8. Innym rozwiązaniem jest użycie `LayoutKind.Sequential` zamiast `LayoutKind.Explicit`, jeśli jest to uzasadnione.
+
+## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
+ To ostrzeżenie powinno być pomijane tylko wtedy, gdy wystąpi błąd.

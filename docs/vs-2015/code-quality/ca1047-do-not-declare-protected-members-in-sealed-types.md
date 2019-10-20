@@ -1,5 +1,5 @@
 ---
-title: 'CA1047: Nie deklaruj chronionych elementów członkowskich w typach zapieczętowanych | Dokumentacja firmy Microsoft'
+title: 'CA1047: Nie deklaruj chronionych składowych w typach zapieczętowanych | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,39 +12,39 @@ helpviewer_keywords:
 - DoNotDeclareProtectedMembersInSealedTypes
 ms.assetid: 829033b5-a9d8-4f26-a719-45494c9dd035
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 6d949a756dfe3ff22ba43d172078d35bfe706e14
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ebc6732e559b70e753a44b14cf45b7de9fc150d4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62536107"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668179"
 ---
-# <a name="ca1047-do-not-declare-protected-members-in-sealed-types"></a>CA1047: Nie deklaruj chronionych składowych w typach zapieczętowanych
+# <a name="ca1047-do-not-declare-protected-members-in-sealed-types"></a>CA1047: Nie deklaruj chronionych elementów członkowskich w typach zapieczętowanych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|DoNotDeclareProtectedMembersInSealedTypes|
 |CheckId|CA1047|
-|Kategoria|Microsoft.Design|
-|Zmiana kluczowa|Bez podziału|
+|Kategoria|Microsoft. Design|
+|Zmiana kluczowa|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
- Typ publiczny jest `sealed` (`NotInheritable` w języku Visual basic) ale deklaruje chroniony element członkowski lub chronionego typu zagnieżdżonego. Ta zasada zgłasza naruszenia <xref:System.Object.Finalize%2A> metody, które muszą korzystać z tego wzoru.
+ Typ publiczny to `sealed` (`NotInheritable` w języku Visual Basic) i deklaruje chroniony element członkowski lub chroniony Typ zagnieżdżony. Ta reguła nie raportuje naruszeń metod <xref:System.Object.Finalize%2A>, które muszą być zgodne z tym wzorcem.
 
 ## <a name="rule-description"></a>Opis reguły
- Chronione elementy członkowskie są zadeklarowane w typach tak, aby typy dziedziczące miały dostęp do elementu członkowskiego i mogły go zastąpić. Zgodnie z definicją nie może dziedziczyć od typu zapieczętowanego, co oznacza, że chroniony metod w typach zapieczętowanych nie można wywołać metody.
+ Chronione elementy członkowskie są zadeklarowane w typach tak, aby typy dziedziczące miały dostęp do elementu członkowskiego i mogły go zastąpić. Według definicji nie można dziedziczyć z typu zapieczętowanego, co oznacza, że nie można wywołać metod chronionych na typach zapieczętowanych.
 
- Kompilator języka C# generuje ostrzeżenia dla tego błędu.
+ C# Kompilator generuje ostrzeżenie dla tego błędu.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, zmień poziom dostępu składowej na prywatną, lub zmień typ dziedziczone.
+ Aby naprawić naruszenie tej reguły, Zmień poziom dostępu elementu członkowskiego na prywatny lub ustaw typ dziedziczenia.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Nie pomijaj ostrzeżeń dla tej reguły. Pozostawienie typ w jego bieżącym stanie może spowodować problemy z konserwacji i nie zapewnia żadnych korzyści.
+ Nie pomijaj ostrzeżeń dla tej reguły. Pozostawienie tego typu w bieżącym stanie może spowodować problemy z konserwacją i nie zapewnia żadnych korzyści.
 
 ## <a name="example"></a>Przykład
  Poniższy przykład pokazuje typ, który narusza tę regułę.

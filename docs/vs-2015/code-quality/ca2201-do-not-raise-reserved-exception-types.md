@@ -1,5 +1,5 @@
 ---
-title: 'CA2201: Nie wywołuj zastrzeżonych typów wyjątku | Dokumentacja firmy Microsoft'
+title: 'CA2201: nie zgłaszaj typów wyjątków zarezerwowanych | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,31 +12,31 @@ helpviewer_keywords:
 - DoNotRaiseReservedExceptionTypes
 ms.assetid: dd14ef5c-80e6-41a5-834e-eba8e2eae75e
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 580a021a85d1211932c248ddc925a49e95e1cf13
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a550226a5ea1edb3b30e317be6b5682f4c204d52
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68142555"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667374"
 ---
-# <a name="ca2201-do-not-raise-reserved-exception-types"></a>CA2201: Nie zgłaszaj wyjątków o zastrzeżonych typach
+# <a name="ca2201-do-not-raise-reserved-exception-types"></a>CA2201: Nie wywołuj zastrzeżonych typów wyjątków
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|DoNotRaiseReservedExceptionTypes|
 |CheckId|CA2201|
-|Kategoria|Microsoft.Usage|
+|Kategoria|Microsoft. Usage|
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Metoda zgłasza typem wyjątku jest zbyt ogólne lub który jest zarezerwowana przez środowisko uruchomieniowe.
+ Metoda podnosi typ wyjątku, który jest zbyt ogólny lub jest zarezerwowany przez środowisko uruchomieniowe.
 
 ## <a name="rule-description"></a>Opis reguły
- Następujące typy wyjątków są zbyt ogólne, aby zapewnić wystarczającą ilość informacji do użytkownika:
+ Następujące typy wyjątków są zbyt ogólne, aby zapewnić użytkownikowi wystarczające informacje:
 
 - <xref:System.Exception?displayProperty=fullName>
 
@@ -44,7 +44,7 @@ ms.locfileid: "68142555"
 
 - <xref:System.SystemException?displayProperty=fullName>
 
-  Następujące typy wyjątków są zarezerwowane i powinien być zgłaszany tylko przez środowisko uruchomieniowe języka wspólnego:
+  Następujące typy wyjątków są zarezerwowane i powinny być zgłaszane tylko przez środowisko uruchomieniowe języka wspólnego:
 
 - <xref:System.ExecutionEngineException?displayProperty=fullName>
 
@@ -54,39 +54,39 @@ ms.locfileid: "68142555"
 
 - <xref:System.OutOfMemoryException?displayProperty=fullName>
 
-  **Nie zgłaszają Wyjątki ogólne**
+  **Nie Generuj ogólnych wyjątków**
 
-  Jeśli typ ogólny wyjątek, takich jak zgłaszać <xref:System.Exception> lub <xref:System.SystemException> w bibliotekę lub strukturę, wymusza odbiorców w celu przechwytywania wszystkich wyjątków, łącznie z nieznanego wyjątki, które nie wiedzą, jak obsługiwać.
+  W przypadku zgłaszania ogólnego typu wyjątku, takiego jak <xref:System.Exception> lub <xref:System.SystemException> w bibliotece lub strukturze, wymusza to klientom przechwycenie wszystkich wyjątków, w tym nieznanych wyjątków, które nie wiedzą, jak obsłużyć.
 
-  Zamiast tego należy zgłaszać bardziej pochodnego typu, który już istnieje w ramach albo utworzyć swój własny typ, który pochodzi od klasy <xref:System.Exception>.
+  Zamiast tego należy zgłosić bardziej pochodny typ, który już istnieje w strukturze, lub utworzyć własny typ, który pochodzi od <xref:System.Exception>.
 
-  **Throw określonych wyjątków**
+  **Zgłoś określone wyjątki**
 
-  W poniższej tabeli przedstawiono parametry i wyjątków, które zgłaszają podczas sprawdzania poprawności parametru, w tym wartość parametru metody dostępu set właściwości:
+  W poniższej tabeli przedstawiono parametry i wyjątki, które należy zgłosić podczas walidacji parametru, łącznie z parametrem value w metodzie dostępu zestawu właściwości:
 
 |Opis parametru|Wyjątek|
 |---------------------------|---------------|
-|`null` Odwołanie|<xref:System.ArgumentNullException?displayProperty=fullName>|
-|Poza dozwolonym zakresem wartości (np. indeks zbioru lub listy)|<xref:System.ArgumentOutOfRangeException?displayProperty=fullName>|
-|Nieprawidłowy `enum` wartość|<xref:System.ComponentModel.InvalidEnumArgumentException?displayProperty=fullName>|
-|Zawiera formatu, który nie spełnia specyfikacji parametru metody (takie jak ciąg formatu w celu `ToString(String)`)|<xref:System.FormatException?displayProperty=fullName>|
-|W przeciwnym razie jest nieprawidłowy|<xref:System.ArgumentException?displayProperty=fullName>|
+|informacje `null`|<xref:System.ArgumentNullException?displayProperty=fullName>|
+|Poza dozwolonym zakresem wartości (takich jak indeks kolekcji lub listy)|<xref:System.ArgumentOutOfRangeException?displayProperty=fullName>|
+|Nieprawidłowa wartość `enum`|<xref:System.ComponentModel.InvalidEnumArgumentException?displayProperty=fullName>|
+|Zawiera format, który nie spełnia wymagań parametrów metody (takich jak ciąg formatu dla `ToString(String)`)|<xref:System.FormatException?displayProperty=fullName>|
+|W przeciwnym razie nieprawidłowe|<xref:System.ArgumentException?displayProperty=fullName>|
 
- Jeśli operacja jest nieprawidłowa dla bieżącego stanu obiektu throw <xref:System.InvalidOperationException?displayProperty=fullName>
+ Gdy operacja jest nieprawidłowa dla bieżącego stanu obiektu throw <xref:System.InvalidOperationException?displayProperty=fullName>
 
- Podczas wykonywania operacji na obiekcie, który został usunięty throw <xref:System.ObjectDisposedException?displayProperty=fullName>
+ Gdy operacja jest wykonywana na obiekcie, który został usunięty, zgłoś <xref:System.ObjectDisposedException?displayProperty=fullName>
 
- Jeśli operacja nie jest obsługiwana (takie jak zastąpione **Stream.Write** w Stream, otwarty do odczytu) throw <xref:System.NotSupportedException?displayProperty=fullName>
+ Gdy operacja nie jest obsługiwana (na przykład w przesłoniętym **strumieniu** ), zgłoś <xref:System.NotSupportedException?displayProperty=fullName>
 
- Podczas konwersji mogłoby spowodować przepełnienie (np. przeciążenia operatora rzutowania jawnego) throw <xref:System.OverflowException?displayProperty=fullName>
+ Gdy konwersja spowoduje przepełnienie (na przykład w jawnym przeciążeniu operatora rzutowania), zgłoś <xref:System.OverflowException?displayProperty=fullName>
 
- W innych sytuacjach należy rozważyć utworzenie swój własny typ, który pochodzi od klasy <xref:System.Exception> i który throw.
+ We wszystkich innych sytuacjach należy rozważyć utworzenie własnego typu, który pochodzi od <xref:System.Exception> i throw.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, należy zmienić typ wyrzuconego wyjątku dla określonego typu, który nie jest jednym z zastrzeżonych typów.
+ Aby naprawić naruszenie tej reguły, Zmień typ zgłoszonego wyjątku na określony typ, który nie jest jednym z typów zastrzeżonych.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Nie pomijaj ostrzeżeń dla tej reguły.
 
 ## <a name="related-rules"></a>Powiązane reguły
- [CA1031: Nie przechwytuj wyjątków typów ogólnych](../code-quality/ca1031-do-not-catch-general-exception-types.md)
+ [CA1031: Nie przechwytuj ogólnych typów wyjątków](../code-quality/ca1031-do-not-catch-general-exception-types.md)

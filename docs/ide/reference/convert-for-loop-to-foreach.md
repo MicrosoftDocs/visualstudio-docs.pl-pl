@@ -1,86 +1,86 @@
 ---
-title: Refaktoryzuj kod konwertujący dla pętli foreach — instrukcja
+title: Kod refaktoryzacji do konwersji pętli for na instrukcję foreach
 ms.date: 05/10/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: d61e79055b2158115b459e643a36170304b7f655
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.openlocfilehash: 3d35897bd928166410ffd950534277cfac2c06b7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67261711"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654553"
 ---
-# <a name="refactoring-to-convert-between-a-for-loop-and-a-foreach-statement"></a>Refaktoryzacja do konwersji między pętla, a Instrukcja foreach
+# <a name="refactoring-to-convert-between-a-for-loop-and-a-foreach-statement"></a>Refaktoryzacja do konwersji między pętlą for i instrukcją foreach
 
-W tym artykule opisano refaktoryzacji szybkie akcje, które konwersji między dwoma struktury pętli. Obejmuje niektóre przyczyny, dlaczego warto przełączać się między [dla](/dotnet/csharp/language-reference/keywords/for) pętli i [foreach](/dotnet/csharp/language-reference/keywords/foreach-in) instrukcji w kodzie.
+W tym artykule opisano refaktoryzacje akcji, które są konwertowane między dwiema strukturami pętli. Zawiera kilka powodów, dla których warto przełączać się między pętlą [for](/dotnet/csharp/language-reference/keywords/for) a instrukcją [foreach](/dotnet/csharp/language-reference/keywords/foreach-in) w kodzie.
 
-## <a name="convert-a-for-loop-to-a-foreach-statement"></a>Konwertuj na pętlę foreach — instrukcja
+## <a name="convert-a-for-loop-to-a-foreach-statement"></a>Konwertuj pętlę for na instrukcję foreach
 
-Jeśli masz [dla](/dotnet/csharp/language-reference/keywords/for) pętli w kodzie, służy tej refaktoryzacji można przekonwertować go pod kątem [foreach](/dotnet/csharp/language-reference/keywords/foreach-in) instrukcji.
+Jeśli masz pętlę [for](/dotnet/csharp/language-reference/keywords/for) w kodzie, możesz użyć tej refaktoryzacji do przekonwertowania jej do instrukcji [foreach](/dotnet/csharp/language-reference/keywords/foreach-in) .
 
-Ta Refaktoryzacja mają zastosowanie do:
+To Refaktoryzacja dotyczy:
 
 - C#
 
 > [!NOTE]
-> **Przekonwertować foreach** refaktoryzacji szybka akcja jest dostępna tylko dla [dla](/dotnet/csharp/language-reference/keywords/for) pętli, które zawierają wszystkie trzy elementy: inicjator, warunek i iteratora.
+> Refaktoryzacja operacji **konwersji do trybu foreach** jest dostępna tylko [dla pętli,](/dotnet/csharp/language-reference/keywords/for) które zawierają wszystkie trzy części: inicjator, warunek i iterator.
 
-### <a name="why-convert"></a>Dlaczego konwersji
+### <a name="why-convert"></a>Dlaczego warto skonwertować
 
-Przyczyny, należy przekonwertować [dla](/dotnet/csharp/language-reference/keywords/for) pętli do [foreach](/dotnet/csharp/language-reference/keywords/foreach-in) instrukcji obejmują:
+Powody, dla których warto skonwertować pętlę [for](/dotnet/csharp/language-reference/keywords/for) na instrukcję [foreach](/dotnet/csharp/language-reference/keywords/foreach-in) , to:
 
-- Nie używaj zmiennej lokalnej wewnątrz pętli, z wyjątkiem jako indeks, aby mieć dostęp do elementów.
+- Nie używasz zmiennej pętli lokalnej wewnątrz pętli, chyba że indeks ma dostęp do elementów.
 
-- Chcesz uprościć kod i zmniejszyć prawdopodobieństwo błędów logicznych w sekcjach iteratora inicjatora, warunek i.
+- Chcesz uprościć swój kod i zmniejszyć prawdopodobieństwo błędów logiki w sekcjach inicjator, warunek i iterator.
 
 ### <a name="how-to-use-it"></a>Jak z niej korzystać
 
-1. Umieść swoje punkt wstawiania w `for` — słowo kluczowe.
+1. Umieść karetkę w `for` słowie kluczowym.
 
-1. Naciśnij klawisz **Ctrl**+ **.** lub kliknij przycisk śrubokręt ![ikonę śrubokręt](../media/screwdriver-icon.png) ikonę na marginesie pliku kodu.
+1. Naciśnij klawisz **Ctrl** + **.** lub kliknij ikonę śrubokrętu ![Screwdriver ikonę ](../media/screwdriver-icon.png) na marginesie pliku kodu.
 
-   ![Konwertuj na foreach menu](media/convert-to-foreach.png)
+   ![Konwertuj na menu foreach](media/convert-to-foreach.png)
 
-1. Wybierz **Konwertuj na pętlę "foreach"** . Lub wybierz **podgląd zmian** otworzyć [podgląd zmian](../../ide/preview-changes.md) okna dialogowego, a następnie wybierz **Zastosuj**.
+1. Wybierz pozycję **Konwertuj na element "foreach"** . Lub wybierz pozycję **Podgląd zmian** , aby otworzyć okno dialogowe [Podgląd zmian](../../ide/preview-changes.md) , a następnie wybierz pozycję **Zastosuj**.
 
-## <a name="convert-a-foreach-statement-to-a-for-loop"></a>Konwertuj instrukcję foreach do pętli for
+## <a name="convert-a-foreach-statement-to-a-for-loop"></a>Konwertuj instrukcję foreach na pętlę for
 
-Jeśli masz [foreach (C#)](/dotnet/csharp/language-reference/keywords/foreach-in) lub [For Each... Dalej (Visual Basic)](/dotnet/visual-basic/language-reference/statements/for-each-next-statement) instrukcji w kodzie, służy tej refaktoryzacji można przekonwertować go pod kątem [dla](/dotnet/csharp/language-reference/keywords/for) pętli.
+Jeśli masz element [foreach (C#)](/dotnet/csharp/language-reference/keywords/foreach-in) lub [for each... Next (Visual Basic)](/dotnet/visual-basic/language-reference/statements/for-each-next-statement) w kodzie, można użyć tego refaktoryzacji, aby przekonwertować go na pętlę [for](/dotnet/csharp/language-reference/keywords/for) .
 
-Ta Refaktoryzacja mają zastosowanie do:
+To Refaktoryzacja dotyczy:
 
 - C#
 
 - Visual Basic
 
-### <a name="why-convert"></a>Dlaczego konwersji
+### <a name="why-convert"></a>Dlaczego warto skonwertować
 
-Przyczyny, należy przekonwertować [foreach](/dotnet/csharp/language-reference/keywords/foreach-in) instrukcję, aby [dla](/dotnet/csharp/language-reference/keywords/for) pętli obejmują:
+Powody, dla których warto skonwertować instrukcję [foreach](/dotnet/csharp/language-reference/keywords/foreach-in) na pętlę [for](/dotnet/csharp/language-reference/keywords/for) :
 
-- Chcesz użyć zmiennej lokalnej wewnątrz pętli do więcej niż tylko uzyskiwania dostępu do elementu.
+- Chcesz użyć zmiennej pętli lokalnej wewnątrz pętli, aby uzyskać więcej niż tylko dostęp do elementu.
 
-- Jesteś [iteracji tablicy wielowymiarowej](/dotnet/csharp/programming-guide/arrays/using-foreach-with-arrays) i chcesz mieć większą kontrolę nad elementami tablicy.
+- [Iteracja jest przechodzenia przez wielowymiarową tablicę](/dotnet/csharp/programming-guide/arrays/using-foreach-with-arrays) i chcesz mieć większą kontrolę nad elementami tablicy.
 
 ### <a name="how-to-use-it"></a>Jak z niej korzystać
 
-1. Umieść swoje punkt wstawiania w `foreach` lub `For Each` — słowo kluczowe.
+1. Umieść karetkę w `foreach` lub `For Each` słowa kluczowego.
 
-1. Naciśnij klawisz **Ctrl**+ **.** lub kliknij przycisk śrubokręt ![ikonę śrubokręt](../media/screwdriver-icon.png) ikonę na marginesie pliku kodu.
+1. Naciśnij klawisz **Ctrl** + **.** lub kliknij ikonę śrubokrętu ![Screwdriver ikonę ](../media/screwdriver-icon.png) na marginesie pliku kodu.
 
-   ![Konwertuj na menu](media/convert-to-for.png)
+   ![Konwertuj na menu dla](media/convert-to-for.png)
 
-1. Wybierz **Konwertuj na pętlę "for"** . Lub wybierz **podgląd zmian** otworzyć [podgląd zmian](../../ide/preview-changes.md) okna dialogowego, a następnie wybierz **Zastosuj**.
+1. Wybierz pozycję **Konwertuj na "for"** . Lub wybierz pozycję **Podgląd zmian** , aby otworzyć okno dialogowe [Podgląd zmian](../../ide/preview-changes.md) , a następnie wybierz pozycję **Zastosuj**.
 
-1. Ponieważ refaktoryzacji wprowadza nową zmienną liczbę iteracji **Zmień nazwę** pojawi się okno w prawym górnym rogu edytora. Jeśli chcesz wybrać inną nazwę zmiennej, wpisz go w, a następnie naciśnij klawisz **Enter** lub wybierz **Zastosuj** w **Zmień nazwę** pole. Jeśli nie chcesz wybrać nową nazwę, naciśnij klawisz **Esc** lub wybierz **Zastosuj** odrzucać **Zmień nazwę** pole.
+1. Ponieważ Refaktoryzacja wprowadza nową zmienną liczby iteracji, pole **Zmień nazwę** pojawia się w prawym górnym rogu edytora. Jeśli chcesz wybrać inną nazwę dla zmiennej, wpisz ją w, a następnie naciśnij klawisz **Enter** lub wybierz pozycję **Zastosuj** w polu **Zmień nazwę** . Jeśli nie chcesz wybierać nowej nazwy, naciśnij klawisz **ESC** lub wybierz pozycję **Zastosuj** , aby odrzucić pole **Zmień nazwę** .
 
 > [!NOTE]
-> Aby uzyskać C#, kod wygenerowany przez te operacje refaktoryzacji używa jawnego typu lub [var](/dotnet/csharp/language-reference/keywords/var) dla typu elementów w kolekcji. Typ w wygenerowanym kodzie jawnych lub niejawnych, zależy od ustawienia stylu kodu, które znajdują się w zakresie. Te ustawienia konkretnego stylu kodu są konfigurowane na poziomie komputera, w obszarze **narzędzia** > **opcje** > **edytora tekstów**  >  **C#**  >  **Styl kodu** > **ogólne** >  **\'var " Preferencje**, lub na poziomie rozwiązania w [EditorConfig](../../ide/editorconfig-language-conventions.md#implicit-and-explicit-types) pliku. Jeśli zmienisz ustawienia stylu kodu w **opcje**, ponownie otwórz plik kodu, aby zmiany zaczęły obowiązywać.
+> W C#przypadku, kod generowany przez te refaktoryzacji używa typu jawnego lub [var](/dotnet/csharp/language-reference/keywords/var) dla typu elementów w kolekcji. Typ w wygenerowanym kodzie, jawny lub niejawny, zależy od ustawień stylu kodu, które znajdują się w zakresie. Te ustawienia stylu kodu są konfigurowane na poziomie komputera w obszarze **narzędzia**  > **Opcje**  > **edytorze tekstów**  > **C#**  > **stylu kodu** 0**Ogólne** 2 **@no__t_ 14var '** lub na poziomie rozwiązania w pliku [EditorConfig](../../ide/editorconfig-language-conventions.md#implicit-and-explicit-types) . Jeśli zmienisz ustawienie stylu kodu w **opcjach**, ponownie otwórz plik kodu, aby zmiany zaczęły obowiązywać.
 
 ## <a name="see-also"></a>Zobacz także
 

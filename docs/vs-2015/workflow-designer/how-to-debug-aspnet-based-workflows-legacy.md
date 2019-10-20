@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Debugowanie przepływów pracy opartych na programie ASP.NET (starsza wersja) | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: debugowanie przepływów pracy opartych na ASP.NET (starsza wersja) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -11,48 +11,46 @@ helpviewer_keywords:
 - debugging, ASP.NET workflows
 ms.assetid: 79b21edc-9e7d-410d-af68-09c1598b9c30
 caps.latest.revision: 5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a8fc6c951f1da3fc37fe8e1189a3ec8de9609a48
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f3bed38f5229cb489f663878759517480b48302c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68144654"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668659"
 ---
-# <a name="how-to-debug-aspnet-based-workflows-legacy"></a>Instrukcje: Debugowanie przepływów pracy opartych na programie ASP.NET (starsza wersja)
-W tym temacie opisano sposób debugowania [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]— na podstawie [!INCLUDE[wf](../includes/wf-md.md)] aplikacji przeznaczonych dla albo [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] w starszej wersji [!INCLUDE[wfd1](../includes/wfd1-md.md)].  
-  
- Można debugować starszej wersji przepływów pracy, które są uruchamiane w ASP.NET lub starszej wersji przepływów pracy, które są publikowane jako usługi sieci Web przez dołączenie do procesu, w którym znajduje się przepływ pracy.  
-  
-### <a name="to-debug-an-aspnet-based-workflow"></a>Aby debugować przepływ pracy oparty na programie ASP.NET  
-  
-1. Włącz debugowanie aplikacji ASP.NET, ustawiając **debug = true** w pliku web.config.  
-  
-2. Ustaw biblioteki przepływu pracy jako projekt startowy, a następnie ustawić punkty przerwania w przepływie pracy.  
-  
-3. Wprowadź adres URL domyślnej strony sieci Web we właściwościach projektu przepływu pracy **debugowania** opcji **uruchamiania przeglądarki za pomocą zewnętrznego adresu URL** pola tekstowego.  
-  
-4. Wybierz **dołączyć do procesu** na **debugowania** menu.  
-  
-5. Wybierz proces do dołączenia z **dostępne procesy** listy.  
-  
-     Dołącz do procesu w3wp.exe, webdev.webserver lub aspnet_wp, w którym znajduje się przepływ pracy.  
-  
-6. Kliknij przycisk **wybierz** obok **dołączyć do** pola tekstowego.  
-  
-     **Wybieranie typu kodu** pojawi się okno dialogowe.  
-  
-7. Wybierz **debugowania tych typów kodu** i wybierz **przepływu pracy**.  
-  
-8. Kliknij przycisk **OK**.  
-  
-9. Kliknij przycisk **dołączyć**.  
-  
-10. Otwórz domyślną stronę sieci Web w przeglądarce i uruchomić przepływ pracy.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Wywoływanie debugera programu Visual Studio dla programu Windows Workflow Foundation (starsza wersja)](../workflow-designer/invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md)   
- [Instrukcje: Ustawianie punktów przerwania w przepływach pracy (starsza wersja)](../workflow-designer/how-to-set-breakpoints-in-workflows-legacy.md)   
- [Debugowanie starszych wersji przepływów pracy](../workflow-designer/debugging-legacy-workflows.md)
+# <a name="how-to-debug-aspnet-based-workflows-legacy"></a>Instrukcje: debugowanie przepływów pracy opartych na ASP.NET (starsza wersja)
+W tym temacie opisano sposób debugowania aplikacji [!INCLUDE[wf](../includes/wf-md.md)] opartych na [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]ach przeznaczonych dla [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] w starszej [!INCLUDE[wfd1](../includes/wfd1-md.md)].
+
+ Można debugować starsze przepływy pracy uruchamiane w ASP.NET lub starszych przepływach pracy, które są publikowane jako usługa sieci Web przez dołączenie do procesu, w którym przepływ pracy jest hostowany.
+
+### <a name="to-debug-an-aspnet-based-workflow"></a>Aby debugować przepływ pracy oparty na ASP.NET
+
+1. Włącz debugowanie dla aplikacji ASP.NET przez ustawienie w pliku Web. config opcji **debug = true** .
+
+2. Ustaw bibliotekę przepływów pracy jako projekt startowy, a następnie ustaw punkty przerwania w przepływie pracy.
+
+3. Wprowadź adres URL domyślnej strony sieci Web w oknie **dialogowym właściwości projektu** przepływu pracy **Uruchom przeglądarkę z zewnętrznym adresem URL** .
+
+4. Wybierz pozycję **Dołącz do procesu** w menu **Debuguj** .
+
+5. Wybierz proces do dołączenia z listy **dostępne procesy** .
+
+     Dołącz do procesu w3wp. exe, webdev. WebServer lub proces aspnet_wp, w którym jest hostowany przepływ pracy.
+
+6. Kliknij przycisk **zaznacz** obok pola tekstowego **Dołącz do** .
+
+     Zostanie wyświetlone okno dialogowe **Wybieranie typu kodu** .
+
+7. Wybierz kolejno opcje **Debuguj te typy kodu** i wybierz **przepływ pracy**.
+
+8. Kliknij przycisk **OK**.
+
+9. Kliknij przycisk **Dołącz**.
+
+10. Otwórz domyślną stronę sieci Web w przeglądarce i Uruchom przepływ pracy.
+
+## <a name="see-also"></a>Zobacz też
+ [Wywoływanie debugera programu Visual Studio dla Windows Workflow Foundation (starsza wersja)](../workflow-designer/invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md) [instrukcje: ustawianie punktów przerwania w przepływach pracy (starsza wersja)](../workflow-designer/how-to-set-breakpoints-in-workflows-legacy.md) [debugowanie starszych przepływów pracy](../workflow-designer/debugging-legacy-workflows.md)

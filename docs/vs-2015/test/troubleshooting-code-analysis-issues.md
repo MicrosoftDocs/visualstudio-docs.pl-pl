@@ -6,15 +6,15 @@ ms.technology: vs-ide-test
 ms.topic: troubleshooting
 ms.assetid: 61c7e44d-2780-4df5-9bcb-49e40c1152fc
 caps.latest.revision: 7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b2efecdefb693653ff9916e798d1a11afe44e4a5
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 4eee70b3184496e8dbb7d784501a5cac2aac00ee
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416903"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672116"
 ---
 # <a name="troubleshooting-code-analysis-issues"></a>Rozwiązywanie problemów związanych z analizą kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Ten temat zawiera informacje dotyczące rozwiązywania problemów dotyczących n
 
 ## <a name="ChildRuleSetChangesInPreviousVersions"></a>Zmiany w zestawie reguł programu Visual Studio 2010 nie są odzwierciedlone w poprzednich wersjach programu Visual Studio
 
-Podczas tworzenia zestawu reguł w programie [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] , który zawiera podrzędny zestaw reguł, zmiana podrzędnego zestawu reguł może nie zostać zastosowana w przypadku uruchamiania analizy kodu na komputerach używających wcześniejszej wersji programu Visual Studio. Aby rozwiązać ten problem, należy wymusić ponowne zapisywanie zestawu reguł nadrzędnych, który jest zestawem reguł zawierającym podrzędny zestaw reguł.
+Podczas tworzenia zestawu reguł w [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)], który zawiera podrzędny zestaw reguł, zmiana podrzędnego zestawu reguł może nie zostać zastosowana w przypadku uruchamiania analizy kodu na komputerach korzystających ze starszej wersji programu Visual Studio. Aby rozwiązać ten problem, należy wymusić ponowne zapisywanie zestawu reguł nadrzędnych, który jest zestawem reguł zawierającym podrzędny zestaw reguł.
 
 1. Otwórz zestaw reguł nadrzędnych w [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)].
 

@@ -1,5 +1,5 @@
 ---
-title: Lista źródeł — polecenie | Dokumentacja firmy Microsoft
+title: Polecenie list Source | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -12,53 +12,47 @@ helpviewer_keywords:
 - ListSource command
 ms.assetid: e45f08d2-f4a3-49c3-9452-aa60508e2f74
 caps.latest.revision: 13
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e0a4a8482dc1c2c66a45902f2f3382b179b46b13
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3f13689b6e3ac4db2d58c1def3a5d0dd05c219f2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68199119"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672318"
 ---
 # <a name="list-source-command"></a>Lista źródeł — Polecenie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Wyświetla określone linie kodu źródłowego.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```  
-Debug.ListSource [/Count:number] [/Current] [/File:filename]  
-[/Line:number] [/ShowLineNumbers:yes|no]  
-```  
-  
-## <a name="switches"></a>Przełączniki  
- / Liczba:`number`  
- Opcjonalny. Określa liczbę wierszy do wyświetlenia.  
-  
- / Bieżąca  
- Opcjonalna. Pokazuje bieżący wiersz.  
-  
- / Pliku:`filename`  
- Opcjonalny. Ścieżka pliku do wyświetlenia. Jeśli nazwa pliku nie zostanie określony, polecenie wyświetla kod źródłowy dla wiersza bieżącej instrukcji.  
-  
- / Linii:`number`  
- Opcjonalny. Pokazuje określonego numeru wiersza.  
-  
- / ShowLineNumbers:`yes|no`  
- Opcjonalny. Określa, czy wyświetlanie numerów wierszy.  
-  
-## <a name="remarks"></a>Uwagi  
-  
-## <a name="example"></a>Przykład  
- W tym przykładzie przedstawiono kod źródłowy z wiersz 4 pliku Form1.vb, za pomocą widoczne numery wierszy.  
-  
-```  
-Debug.ListSource /File:"C:\Visual Studio Projects\Form1.vb" /Line:4 /ShowLineNumbers:yes  
-```  
-  
-## <a name="see-also"></a>Zobacz też  
- [Visual Studio Commands](../../ide/reference/visual-studio-commands.md)   
- [Okno Polecenie](../../ide/reference/command-window.md)
+Wyświetla określone wiersze kodu źródłowego.
+
+## <a name="syntax"></a>Składnia
+
+```
+Debug.ListSource [/Count:number] [/Current] [/File:filename]
+[/Line:number] [/ShowLineNumbers:yes|no]
+```
+
+## <a name="switches"></a>Przełączniki
+ /Count: `number` opcjonalny. Określa liczbę wierszy do wyświetlenia.
+
+ /Current opcjonalne. Wyświetla bieżący wiersz.
+
+ /File: `filename` opcjonalny. Ścieżka pliku do wyświetlenia. Jeśli nazwa pliku nie zostanie określona, polecenie pokazuje kod źródłowy wiersza bieżącej instrukcji.
+
+ /Line: `number` opcjonalny. Pokazuje określony numer wiersza.
+
+ /ShowLineNumbers: `yes|no` opcjonalny. Określa, czy mają być wyświetlane numery wierszy.
+
+## <a name="remarks"></a>Uwagi
+
+## <a name="example"></a>Przykład
+ W tym przykładzie przedstawiono kod źródłowy z wiersza 4 pliku Form1. vb, z widocznymi numerami wierszy.
+
+```
+Debug.ListSource /File:"C:\Visual Studio Projects\Form1.vb" /Line:4 /ShowLineNumbers:yes
+```
+
+## <a name="see-also"></a>Zobacz też
+ [Okno poleceń](../../ide/reference/command-window.md) [poleceń programu Visual Studio](../../ide/reference/visual-studio-commands.md)

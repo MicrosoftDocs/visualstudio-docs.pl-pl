@@ -7,71 +7,71 @@ helpviewer_keywords:
 - what's new [Visual Studio], architecture and modeling
 - architecture [Visual Studio], modeling
 - modeling software [Visual Studio], What's New
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: dc75c7414e0fff18f76d14f8f9a4e0779a9e7a2b
-ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
+ms.openlocfilehash: 51d4f4d2af5dde398744d926e45200ec16c6214a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65476535"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666949"
 ---
 # <a name="whats-new-for-design-in-visual-studio-2017"></a>Co nowego w dziedzinie projektowania w programie Visual Studio 2017
 
-## <a name="live-dependency-validation"></a>Weryfikacja zależności na żywo
+## <a name="live-dependency-validation"></a>Walidacja aktywnej zależności
 
-Usunięcie niechcianych zależności jest ważną częścią zarządzania Twojej długu technicznego. Program Visual Studio udostępnia na żywo weryfikacji zależności, w tym dokładne informacje na temat problemów, na przykład, gdzie się znajdują. Zależności na żywo weryfikacji przyjmuje pełne korzyści wynikające z nowych funkcji w edytorze i lista błędów.
+Usuwanie niechcianych zależności jest ważną częścią zarządzania długiem technicznym. Program Visual Studio zapewnia dynamiczną weryfikację zależności, w tym dokładne informacje o problemach, takich jak lokalizacja ich lokalizacji. Weryfikacja zależności na żywo ma pełne zalety nowych funkcji w Lista błędów i edytorze.
 
-![Weryfikacja zależności na żywo w działaniu](media/dep-validation-whatsnew-01.png)
+![Weryfikacja zależności na żywo w akcji](media/dep-validation-whatsnew-01.png)
 
-Środowisko tworzenia zmienił się weryfikacji zależności mogą szybciej odnajdywać i łatwiej dostępne. Terminologii zmienił się z "Diagramu warstwowego" "Diagram zależności".
+Środowisko autorskie zostało zmienione w celu ułatwienia odnajdywania i bardziej dostępności weryfikacji zależności. Terminologia została zmieniona z "diagram warstwowy" na "diagram zależności".
 
-**Architektury** menu zawiera teraz polecenia, aby bezpośrednio utworzyć diagram zależności:
+Menu **Architektura** zawiera teraz polecenie umożliwiające bezpośrednie utworzenie diagramu zależności:
 
-![Element zależności na żywo w menu architektury](media/dep-validation-whatsnew-02.png)
+![Aktywny element zależności w menu architektura](media/dep-validation-whatsnew-02.png)
 
-Warstwa właściwości nazwy i opisy zostały zmienione, aby były bardziej zrozumiały:
+Nazwy i opisy właściwości warstwy zostały zmienione, aby zwiększyć ich czytelność:
 
-![Nazwy właściwości zależności na żywo zaktualizowane](media/dep-validation-whatsnew-03.png)
+![Nazwy właściwości zaktualizowanej zależności na żywo](media/dep-validation-whatsnew-03.png)
 
-Możesz natychmiast zobaczyć wpływ zmian w wynikach analizy dla bieżącego kodu w rozwiązaniu każdorazowo, gdy zapisać diagram. Nie trzeba czekać na zakończenie **weryfikacji zależności** polecenia.
+Od razu zobaczysz wpływ zmian w wynikach analizy dla bieżącego kodu w rozwiązaniu przy każdym zapisaniu diagramu. Nie musisz czekać na ukończenie polecenia **Weryfikuj zależności** .
 
 Aby uzyskać więcej informacji, zobacz [ten wpis w blogu](https://devblogs.microsoft.com/devops/live-architecture-dependency-validation-in-visual-studio-15-preview-5/).
 
-## <a name="uml-designers-have-been-removed"></a>Usunięto projektantów UML
+## <a name="uml-designers-have-been-removed"></a>Projektanci UML zostali usunięci
 
-Projektantów UML zostały usunięte z programu Visual Studio.
+Projektanci UML zostali usunięci z programu Visual Studio.
 
-* Diagramy UML są teraz uporządkowane jako pliki XML
-* Eksplorator modelu UML już nie istnieje.
-* Modelowanie projektu odwołania nie są już używane do sprawdzania poprawności zależności
-* Węzeł "Odwołania do warstwy" w Eksploratorze rozwiązań nie będzie już wyświetlany
-* Akcja kompilacji "Weryfikuj" na diagramie zależności (warstwy) nie jest już używany — zadanie kompilacji została usunięta.
-* Struktura projektu jest utrzymywana ze względu na Pełna zgodnooć wersji między wersjami
-* Użytkownik może nadal Otwórz, tworzenia, edytowania i zapisać diagram zależności (warstwy) jako XML
-* Elementy robocze TFS połączyć diagram zależności (warstwy) nie są dostępne na powierzchni projektowej
-* Zaplecze — łączenie z DSL lub warstwy nie jest już obsługiwana
-* Rozszerzalność UML w zestaw Modeling SDK nie jest już obsługiwana
+* Diagramy UML są teraz prezentowane jako pliki XML
+* Eksplorator modelu UML już nie istnieje
+* Odwołania do projektu modelowania nie są już używane na potrzeby walidacji zależności
+* Węzeł "odwołania do warstwy" w Eksplorator rozwiązań nie jest już wyświetlany
+* Akcja kompilacji "Validate" na diagramie zależności (warstwy) nie jest już używana — zadanie kompilacji zostało usunięte
+* Struktura projektu jest utrzymywana do dwustronnego wyłączania między wersjami
+* Nadal można otwierać, tworzyć, edytować i zapisywać zależności (warstwy) jako XML
+* Elementy robocze TFS połączone z diagramem zależności (warstwy) nie są dostępne na powierzchni projektowej
+* Łączenie z powrotem z do języka DSL lub warstwy nie jest już obsługiwane
+* Rozszerzalność UML w zestawie SDK modelowania nie jest już obsługiwana
 
-Obsługa wizualizacji architektury .NET i C++ kod jest dostępny za pośrednictwem [map kodu](map-dependencies-across-your-solutions.md).
+Obsługa wizualizacji architektury .NET i C++ kodu jest dostępna za pomocą [map kodu](map-dependencies-across-your-solutions.md).
 
-Jeśli jesteś użytkownikiem znaczące projektantów UML, można nadal używać programu Visual Studio 2015 i jego wcześniejsze wersje podczas decyzję w sprawie narzędziem alternatywne do własnych potrzeb UML.
+Jeśli jesteś znaczącym użytkownikiem projektantów UML, możesz nadal korzystać z programu Visual Studio 2015 lub wcześniejszych wersji, gdy zdecydujesz się na alternatywne narzędzia dla potrzeb UML.
 
 Aby uzyskać więcej informacji, zobacz [ten wpis w blogu](https://devblogs.microsoft.com/devops/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/).
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-## <a name="a-nameversionsupport-edition-support-for-architecture-and-modeling-tools"></a><a name="VersionSupport" />Obsługa wersji narzędzia architektury i modelowania
+## <a name="a-nameversionsupport-edition-support-for-architecture-and-modeling-tools"></a><a name="VersionSupport" />Edition obsługa architektury i narzędzi modelowania
 
-Program Visual Studio jest dostępna w wielu wersjach. Nie wszystkie te zapewniają obsługę architekturę i narzędzia do modelowania. W poniższej tabeli przedstawiono Dostępność poszczególnych narzędzi.
+Program Visual Studio jest dostępny w kilku wersjach. Nie wszystkie z nich zapewniają obsługę architektury i narzędzi modelowania. W poniższej tabeli przedstawiono dostępność każdego narzędzia.
 
-|**Funkcja**|**Wersja Enterprise**|**W wersji Professional**|**Wersja Community edition**|
+|**Ona**|**Wersja Enterprise**|**Wersja Professional**|**Wersja Community**|
 |-|-|-|-|
-|**Mapy kodu**|Tak|Mapy tylko filtrowania kodu obsługuje map kodu do czytania, dodawanie nowych węzłów ogólny i tworzenie nowy Graf skierowany z zaznaczenia.|-|
-|**Diagramów zależności**|Tak|Obsługuje tylko odczytywanie diagramów zależności.|Obsługuje tylko odczytywanie diagramów zależności.|
-|**Ukierunkowanych wykresów** (diagramy DGML)|Tak|Yes|Tak|
+|**Mapy kodu**|Tak|Obsługuje tylko odczytywanie map kodu, filtrowanie map kodu, dodawanie nowych węzłów ogólnych i tworzenie nowego ukierunkowanego wykresu na podstawie zaznaczenia.|-|
+|**Diagramy zależności**|Tak|Obsługuje tylko odczytywanie diagramów zależności.|Obsługuje tylko odczytywanie diagramów zależności.|
+|**Wykresy ukierunkowane** (diagramy dgml)|Tak|Tak|Tak|
 |**Klonowanie kodu**|Tak|-|-|

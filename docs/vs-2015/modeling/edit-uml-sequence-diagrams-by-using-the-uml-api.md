@@ -8,15 +8,15 @@ helpviewer_keywords:
 - UML activity diagrams, programming
 ms.assetid: 8cdd0203-85ef-4c62-9abc-da4cb26fa504
 caps.latest.revision: 27
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d0bebbb4e6dfe25ce9834595be11aad0fd1f1ba0
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: cbc7a6ce7edede6759c0562df1e524d932f62b91
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871885"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669713"
 ---
 # <a name="edit-uml-sequence-diagrams-by-using-the-uml-api"></a>Edytowanie diagramów sekwencji UML przy użyciu interfejsu API UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Interakcja to sekwencja komunikatów między zestawem linii życia. Interakcja j
 ## <a name="basic-code"></a>Kod podstawowy
 
 ### <a name="namespace-imports"></a>Importy przestrzeni nazw
- Należy uwzględnić następujące `using` instrukcje:
+ Należy uwzględnić następujące instrukcje `using`:
 
 ```
 using Microsoft.VisualStudio.Uml.Classes;
@@ -55,7 +55,7 @@ using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation;
  Aby uzyskać więcej informacji, zobacz [Definiowanie polecenia menu na diagramie modelowania](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
 
 ### <a name="getting-the-context"></a>Pobieranie kontekstu
- Jeśli edytujesz interakcję jako część obsługi polecenia lub gestu w diagramie sekwencji, możesz uzyskać odwołanie do kontekstu. Przykład:
+ Jeśli edytujesz interakcję jako część obsługi polecenia lub gestu w diagramie sekwencji, możesz uzyskać odwołanie do kontekstu. Na przykład:
 
 ```
 [SequenceDesignerExtension]
@@ -72,12 +72,12 @@ public class MySequenceDiagramCommand : ICommandExtension
 ```
 
 ### <a name="generated-and-uml-sequence-diagrams"></a>Generowane diagramy sekwencji UML
- Istnieją dwa rodzaje diagramów sekwencji: te, które są tworzone ręcznie w projekcie modelowania UML, oraz te, które zostały wygenerowane na podstawie kodu programu. Użyj właściwości `UmlMode` , aby odnaleźć diagram sekwencji.
+ Istnieją dwa rodzaje diagramów sekwencji: te, które są tworzone ręcznie w projekcie modelowania UML, oraz te, które zostały wygenerowane na podstawie kodu programu. Użyj właściwości `UmlMode`, aby odnaleźć diagram sekwencji.
 
 > [!NOTE]
 > Ta właściwość zwraca wartość false tylko dla diagramów sekwencji generowanych na podstawie kodu przy użyciu Visual Studio 2013 i wcześniejszych. Obejmuje to diagramy sekwencji wygenerowane przez kod z 2013 i wcześniejszych. Ta wersja programu Visual Studio nie obsługuje generowania nowych diagramów sekwencji.
 
- Na przykład jeśli chcesz wykonać polecenie menu, które jest widoczne tylko w diagramach sekwencji UML, `QueryStatus()` Metoda może zawierać następującą instrukcję:
+ Na przykład jeśli chcesz wykonać polecenie menu, które jest widoczne tylko w diagramach sekwencji UML, wówczas metoda `QueryStatus()` może zawierać następującą instrukcję:
 
 ```
 command.Enabled = command.Visible =
@@ -118,13 +118,13 @@ public void Execute (IMenuCommand command)
 ## <a name="updating-an-interaction-and-its-layout"></a>Aktualizowanie interakcji i jej układu
  Podczas aktualizowania interakcji należy zawsze zakończyć operację przez aktualizację układu przy użyciu jednej z następujących metod:
 
-- `ISequenceDiagram.UpdateShapePositions()`dostosowuje położenie kształtów, które zostały ostatnio wstawione lub przeniesione, oraz ich sąsiednich kształtów.
+- `ISequenceDiagram.UpdateShapePositions()` dostosowuje położenia kształtów, które zostały ostatnio wstawione lub przeniesione, oraz ich sąsiednich kształtów.
 
-- `ISequenceDiagram.Layout([SequenceDiagramLayoutKinds])`Odświeża cały diagram. Można użyć parametru, aby określić zmiany położenia linii życia, wiadomości lub obu tych elementów.
+- `ISequenceDiagram.Layout([SequenceDiagramLayoutKinds])` odświeża cały diagram. Można użyć parametru, aby określić zmiany położenia linii życia, wiadomości lub obu tych elementów.
 
   Jest to szczególnie ważne podczas wstawiania nowych elementów lub przenoszenia istniejących elementów. Nie będą znajdować się w poprawnych położeniach na diagramie, dopóki nie zostanie wykonana jedna z tych operacji. Wystarczy tylko wywołać jedną z tych operacji na końcu serii zmian.
 
-  Aby uniknąć bemusing przez użytkownika, który wykonuje cofnięcie po poleceniu, użyj `ILinkedUndoTransaction` polecenia, aby zawrzeć zmiany i ostateczne `UpdateShapePositions()` `Layout()` lub operacje. Na przykład:
+  Aby uniknąć bemusing przez użytkownika, który wykonuje cofnięcie po poleceniu, użyj `ILinkedUndoTransaction`, aby zawrzeć zmiany i końcowe `Layout()` lub `UpdateShapePositions()` operacje. Na przykład:
 
 ```
 using (ILinkedUndoTransaction transaction = LinkedUndoContext.BeginTransaction("create loop"))
@@ -135,7 +135,7 @@ using (ILinkedUndoTransaction transaction = LinkedUndoContext.BeginTransaction("
 }
 ```
 
- Aby użyć `ILinkedUndoTransaction`, należy wprowadzić tę deklarację w swojej klasie:
+ Aby użyć `ILinkedUndoTransaction`, należy wprowadzić tę deklarację w klasie:
 
 ```
 [Import] ILinkedUndoContext LinkedUndoContext { get; set; }
@@ -163,7 +163,7 @@ foreach (IConnectableElement part in
 }
 ```
 
- Alternatywnie, jeśli interakcja zawiera dowolny zestaw obiektów, można utworzyć właściwość lub inną `IConnectableElement` interakcję:
+ Alternatywnie, jeśli interakcja zawiera dowolny zestaw obiektów, można utworzyć właściwość lub inne `IConnectableElement` w samej interakcji:
 
 ```
 ILifeline lifeline = interaction.CreateLifeline();
@@ -242,9 +242,9 @@ cf.CreateInteractionOperand(cf.Operands.Last(), true);
 ```
 
 ## <a name="troubleshooting"></a>Rozwiązywanie problemów
- Kształty będą wyświetlane w niepoprawnych położeniach, jeśli zmiany nie `UpdateShapePositions()` zostaną `Layout()` zakończone operacją lub.
+ Jeśli zmiany nie zostaną wykonane przy użyciu operacji `UpdateShapePositions()` lub `Layout()`, kształty będą wyświetlane w niepoprawnych położeniach.
 
- Większość innych problemów jest spowodowanych przez niewyrównane punkty wstawiania, dzięki czemu nowe komunikaty lub fragmenty będą musiały przekroczyć inne elementy. Objawy mogą polegać na tym, że zmiany nie są wykonywane lub wyjątek jest zgłaszany. Wyjątek może nie być zgłaszany do `UpdateShapePositions()` momentu `Layout()` wykonania operacji lub.
+ Większość innych problemów jest spowodowanych przez niewyrównane punkty wstawiania, dzięki czemu nowe komunikaty lub fragmenty będą musiały przekroczyć inne elementy. Objawy mogą polegać na tym, że zmiany nie są wykonywane lub wyjątek jest zgłaszany. Wyjątek może nie być zgłaszany do momentu wykonania operacji `UpdateShapePositions()` lub `Layout()`.
 
 ## <a name="see-also"></a>Zobacz także
 

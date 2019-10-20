@@ -1,103 +1,103 @@
 ---
-title: Opcje, Edytor tekstu HTML (formularze sieci Web), formatowanie
+title: Opcje, Edytor tekstu, HTML (Formularze sieci Web), formatowanie
 ms.date: 1/15/2019
 ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.HTML.Format
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69a8d3f1b84bd59cec9e13bf50eb8eaa46795cdf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3d1e5f07a2b68d86051452a16ac0f42fc9b9acf0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779022"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666193"
 ---
-# <a name="options-text-editor-html-web-forms-formatting"></a>Opcje, Edytor tekstu HTML (formularze sieci Web), formatowanie
+# <a name="options-text-editor-html-web-forms-formatting"></a>Opcje, Edytor tekstu, HTML (Formularze sieci Web), formatowanie
 
-Użyj **formatowanie** Strona opcji, aby ustawić opcje projektu HTML formatowanie kodu w edytorze kodu. Dostępu do tej strony, na pasku menu wybierz **narzędzia** > **opcje**, a następnie rozwiń węzeł **edytora tekstów** > **HTML (formularze sieci Web)**   >  **Formatowanie**.
+Strona Opcje **formatowania** służy do ustawiania opcji projektu HTML służących do formatowania kodu w edytorze kodu. Aby uzyskać dostęp do tej strony, na pasku menu wybierz pozycję **narzędzia**  > **Opcje**, a następnie rozwiń węzeł **Edytor tekstu**  > **HTML (Formularze sieci Web)**  > **Formatowanie**.
 
-## <a name="capitalization"></a>wielkość liter
+## <a name="capitalization"></a>Wielkość liter
 
-Jeśli te opcje są zaznaczone, widok źródła i edytory XML dotyczą domyślny format wielkości liter nazw elementów i atrybutów po uprzednim utworzeniu elementy i podczas automatycznego formatowania. **Zastosuj automatyczne formatowanie** ustawienia określają czas występuje, w których automatycznego ponownego formatowania.
+Po wybraniu tych opcji Widok źródłowy i Edytor XML zastosują domyślny format wielkości liter do nazw elementów i atrybutów podczas pierwszego tworzenia elementów i podczas automatycznego formatowania. Ustawienia **Zastosuj automatyczne formatowanie** określają czas, w którym następuje automatyczne ponowne formatowanie.
 
 > [!WARNING]
-> Kod XML jest rozróżniana wielkość liter. Ustawienie przypadek domyślny może mieć wpływ na parsery XML.
+> W pliku XML jest rozróżniana wielkość liter. Ustawienie domyślnego przypadku może mieć wpływ na parsery XML.
 
-### <a name="uielement-list"></a>Lista elementów interfejsu użytkownika
+### <a name="uielement-list"></a>Lista elementów UIElement
 
-**Tag serwerowy, atrybuty Server**
+**Tag serwera, atrybuty serwera**
 
-Te opcje określają, jak jest pisany wielką literą znaczniki dla kontrolki serwera sieci Web.
-
-|Opcja|Wynik|
-|---------------------------------|------------------------------|
-|**Jak wprowadzono**|Element jest dokładnie tak, jak możesz wprowadzić.|
-|**wielkie litery**|Nazwy elementów są ponownie sformatowany na wielkie litery.|
-|**Małe litery**|Nazwy elementów są ponownie sformatowany na małe litery.|
-|**Definicja zestawu**|Element przypadek jest określany przez jak element jest zdefiniowany w klasie odpowiedniego typu.|
-
-**Tag kliencki, atrybuty klienta**
-
-Te opcje określają automatyczne formatowanie zmian nazw atrybutów HTML i właściwości na wielkie lub małe litery, czy pozostaną, tak jak zostały wprowadzone.
+Te opcje określają sposób, w jaki znaczniki formantów serwera sieci Web są pisane wielkimi literami.
 
 |Opcja|Wynik|
 |---------------------------------|------------------------------|
-|**Jak wprowadzono**|Atrybut jest dokładnie tak, jak możesz wprowadzić.|
-|**wielkie litery**|Nazwy atrybutów są ponownie sformatowany na wielkie litery.|
-|**Małe litery**|Nazwy atrybutów są ponownie sformatowany na małe litery.|
+|**Zgodnie z wprowadzonymi**|Wielkość liter elementu jest dokładnie wprowadzona.|
+|**Znaki**|Nazwy elementów są formatowane wielką literą.|
+|**Dużych**|Nazwy elementów są formatowane małymi literami.|
+|**Definicja zestawu**|Przypadek elementu jest określany przez sposób, w jaki element jest zdefiniowany w odpowiedniej klasie typu.|
+
+**Tag klienta, atrybuty klienta**
+
+Te opcje określają, czy automatyczne formatowanie zmienia nazwy atrybutów i właściwości HTML na wielkie lub małe litery, czy też zachowuje je zgodnie z wprowadzonymi danymi.
+
+|Opcja|Wynik|
+|---------------------------------|------------------------------|
+|**Zgodnie z wprowadzonymi**|Wielkość liter atrybutu jest dokładnie wprowadzona.|
+|**Znaki**|Nazwy atrybutów są formatowane wielką literą.|
+|**Dużych**|Nazwy atrybutów są formatowane małymi literami.|
 
 ## <a name="automatic-formatting-options"></a>Opcje formatowania automatycznego
 
-Te opcje spowodować, że edytor widok źródła dodać lub usunąć fizycznego podziały wierszy podczas automatycznego formatowania. Można również określić, czy edytor dodaje atrybutów w cudzysłowie.
+Te opcje powodują, że Edytor widoku źródła dodaje lub usuwa przerwy w linii fizycznej podczas automatycznego formatowania. Można również określić, czy edytor ma dodawać cudzysłowy wokół atrybutów.
 
 > [!NOTE]
-> Te ustawienia nie należy zmieniać biały znak w znaczników XML.
+> Te ustawienia nie zmieniają odstępów w znacznikach XML.
 
-### <a name="uielement-list"></a>Lista elementów interfejsu użytkownika
+### <a name="uielement-list"></a>Lista elementów UIElement
 
-- **Wstaw cudzysłowy wartości atrybutów podczas pisania**
+- **Wstaw cudzysłowy wartości atrybutów podczas wpisywania**
 
-   Gdy ta opcja jest zaznaczona, Edytor automatycznie umieszcza atrybutów w cudzysłowie, jak podczas pisania (na przykład: ID="Select1"). Usuń zaznaczenie tej opcji, jeśli wolisz ręcznie wstawiania znaków cudzysłowu do znaczników.
+   Po wybraniu tej opcji edytor automatycznie umieszcza znaki cudzysłowu wokół atrybutów podczas pisania (na przykład: ID = "Select1"). Usuń zaznaczenie tej opcji, jeśli wolisz ręcznie wstawiać znaczniki cudzysłowu do znaczników.
 
    > [!NOTE]
-   > Czy ta opcja jest zaznaczona, zostaną zachowane wszystkie istniejące znaki cudzysłowu w znaczników; znaki cudzysłowu, nigdy nie są usuwane.
+   > Niezależnie od tego, czy ta opcja jest zaznaczona, wszystkie istniejące znaki cudzysłowu w znaczniku są zachowywane; znaki cudzysłowu nigdy nie są usuwane.
 
 - **Wstaw cudzysłowy wartości atrybutów podczas formatowania**
 
-   Gdy ta opcja jest zaznaczona, automatyczne formatowanie dodaje wartości atrybutów w cudzysłowie (na przykład: ID="Select1").
+   Gdy ta opcja jest zaznaczona, automatyczne formatowanie dodaje znaki cudzysłowu otaczające wartości atrybutów (na przykład: ID = "Select1").
 
    > [!NOTE]
-   > Czy ta opcja jest zaznaczona, wszystkie istniejące znaki cudzysłowu w znaczników są zachowywane.
+   > Niezależnie od tego, czy ta opcja jest zaznaczona, wszystkie istniejące znaki cudzysłowu w znaczniku są zachowywane.
 
-- **Automatyczne wstawianie tagów**
+- **Autouzupełnianie Wstaw tag zamykający**
 
-   Gdy ta opcja jest zaznaczona, Edytor automatycznie tworzy tagu zamykającego (na przykład  **\</b >**) podczas zamykania otwierający tag.
+   Gdy ta opcja jest zaznaczona, Edytor automatycznie tworzy tag zamykający (na przykład **\</b >** ) po zamknięciu tagu otwierającego.
 
 ## <a name="tag-wrapping"></a>Zawijanie tagów
 
-Te opcje określają, czy edytor dzielony tagów na linie jeśli one wykracza poza o określonej długości.
+Te opcje określają, czy Edytor dzieli znaczniki do wierszy, jeśli wykraczają poza określoną długość.
 
-### <a name="uielement-list"></a>Lista elementów interfejsu użytkownika
+### <a name="uielement-list"></a>Lista elementów UIElement
 
-- **Zawijaj tagi, po przekroczeniu określonej długości**
+- **Zawijaj tagi, gdy przekracza określoną długość**
 
-   Po wybraniu edytora przerywa znaczniki w liniach, jeśli tag wykracza poza długość określoną w **długość** pola tekstowego. Ta akcja jest wykonywana tylko wtedy, gdy formatowanie tagów, nie w momencie pisania nowego tagu.
+   Po wybraniu Edytor dzieli znaczniki między wierszami, Jeśli znacznik wykracza poza długość określoną w polu tekstowym **Długość** . Ta akcja występuje tylko w przypadku formatowania znacznika, a nie w przypadku wpisywania nowego tagu.
 
    > [!NOTE]
-   > Podaną wartość jest używana jako wartość minimalną. Edytor nie rozdziel poszczególne atrybuty.
+   > Określona wartość jest używana jako wartość minimalna. Edytor nie przerywa pojedynczych atrybutów.
 
 - **Długość**
 
-   Określa liczbę znaków wyświetlanych w wierszu przed zawijania. To pole wejściowe jest wyłączone, chyba że **Zawijaj tagi, gdy zostanie przekroczona określona długość** pole wyboru zostało zaznaczone.
+   Określa liczbę znaków wyświetlanych w wierszu przed otoką. To pole wejściowe jest wyłączone, chyba że jest zaznaczone pole wyboru **Otocz znaczniki po przekroczeniu pola o określonej długości** .
 
-- **Opcje związane z tagami**
+- **Opcje dotyczące tagów**
 
-   Wyświetla **opcjami określonymi dla tagów** okno dialogowe, które pozwala ustawić opcje formatowania dla poszczególnych tagów lub grup tagów.
+   Wyświetla okno dialogowe **Opcje charakterystyczne dla tagów** , które umożliwia ustawianie opcji formatowania dla poszczególnych tagów lub grup znaczników.
 
 ## <a name="see-also"></a>Zobacz także
 

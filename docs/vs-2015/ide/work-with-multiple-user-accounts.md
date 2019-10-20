@@ -1,74 +1,74 @@
 ---
-title: Praca z wieloma kontami użytkownika | Dokumentacja firmy Microsoft
+title: Pracuj z wieloma kontami użytkowników | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: b73c865c-74e0-420e-89cc-43524f4aafd0
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a60a44a20c06c24645583db4e16ce60cef166554
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9aa08d68da53f54491439da8e35c28db90f4c508
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441648"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662657"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Praca z wieloma kontami użytkowników
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Jeśli masz wiele kont Microsoft i/lub konta służbowego lub szkolnego, można dodać je wszystkie do programu Visual Studio, tak, aby dostęp do zasobów z dowolnego konta bez konieczności logowania się do niego oddzielnie. W dniu Visual Studio 2015 RTM usługi platformy Azure, usługa Application Insights, Team Foundation Server i usługi Office 365 obsługują usprawnione środowisko logowania. Dodatkowe usługi może stają się dostępne, gdy czas.  
-  
- Po dodaniu wielu kont na jednej maszynie, ten zestaw kont "wędrują" z Tobą Jeśli logujesz się do programu Visual Studio na innym komputerze. Należy zauważyć, że chociaż nazwy kont są przekazywane, poświadczenia nie są. W związku z tym można jest monitowany o podanie poświadczeń dla tych innych kont próby użycia zasobów na nowej maszynie po raz pierwszy.  
-  
- W tym instruktażu przedstawiono sposób dodawania wielu kont w programie Visual Studio, a następnie jak sprawdzić, czy zasoby, które są dostępne z tych kont są odzwierciedlane w umieszcza takich jak **Dodaj podłączoną usługę** okno dialogowe, **Eksploratora serwera** , i **Team Explorer**.  
-  
-#### <a name="sign-in-to-visual-studio"></a>Logowanie do programu Visual Studio  
-  
-1. Zaloguj się do programu Visual Studio 2015 za pomocą konta Microsoft lub kontem organizacyjnym. Powinny zostać wyświetlone swoją nazwę użytkownika, które zostaną uwzględnione w prawym górnym rogu okna, podobny do następującego:  
-  
-     ![Currentlly zalogowanego użytkownika](../ide/media/vs2015-username.png "VS2015_UserName")  
-  
-### <a name="access-your-azure-account-in-server-explorer"></a>Dostęp do konta platformy Azure w Eksploratorze serwera  
- Naciśnij klawisz **Ctrl + Alt + S** otworzyć **Eksploratora serwera**. Kliknij ikonę platformy Azure i jego rozszerzeniu powinien zostać wyświetlony zasobów dostępnych na koncie platformy Azure, który jest skojarzony z Identyfikatorem używanym do logowania do programu Visual Studio 2015. Powinien wyglądać następująco, chyba że zostanie wyświetlony własne zasoby nie Pan Guido firmy:  
-  
- ![Rozwinięty węzeł narzędzi Azure przedstawiający Eksploratora serwera](../ide/media/vs2015-serverexplorer.png "VS2015_ServerExplorer")  
-  
- Po raz pierwszy używasz programu Visual Studio na dowolnym urządzeniu określonego okna dialogowego zostaną wyświetlone tylko subskrypcje zarejestrowany w identyfikatorze, którego zalogowano się do środowiska IDE, za pomocą. Dostęp do zasobów dla każdego z innych kont, bezpośrednio z **Eksploratora serwera** , kliknięcie prawym przyciskiem myszy węzeł platformy Azure i wybierając pozycję **subskrypcji filtru i Zarządzaj** i dodać Twojego konta z Formant selektora konta. Następnie możesz wybrać inne konto, jeśli to konieczne, klikając strzałkę w dół, a następnie wybierając z listy kont. Po wybraniu konta, możesz wybrać subskrypcje, które w ramach tego konta, które mają być wyświetlane w Eksploratorze serwera.  
-  
- ![Zarządzanie subskrypcjami platformy Azure w oknie dialogowym](../ide/media/vs2015-manage-subs.png "vs2015_manage_subs")  
-  
- Przy następnym otwarciu Eksploratora serwera są wyświetlane zasoby dla tej subskrypcji.  
-  
-### <a name="access-your-azure-account-via-add-connected-service-dialog"></a>Dostęp do konta platformy Azure za pomocą okna dialogowego Dodawanie podłączonej usługi  
-  
-1. Utwórz projekt aplikacji uniwersalnej w języku C#.  
-  
-2. Kliknij prawym przyciskiem myszy węzeł projektu w Eksploratorze rozwiązań i wybierz polecenie **Dodaj > usługi połączonej**. Dodaj podłączoną usługę kreatora pojawia się i zostanie wyświetlony identyfikator listy usług na koncie platformy Azure, który jest skojarzony z identyfikatora logowania programu Visual Studio. Należy pamiętać, że nie trzeba osobno logowanie do platformy Azure. Jednakże należy zalogować się do innych kont spróbujesz uzyskać dostęp do zasobów z danego komputera po raz pierwszy.  
-  
+Jeśli masz wiele kont Microsoft i/lub kont służbowych, możesz dodać je wszystkie do programu Visual Studio, aby uzyskać dostęp do zasobów z dowolnego konta bez konieczności logowania się do niego osobno. Począwszy od programu Visual Studio 2015 RTM, platformy Azure, Application Insights, Team Foundation Server i pakietu Office 365 obsługują usprawnione środowisko logowania. Dodatkowe usługi mogą stać się dostępne jako czas przekroczenia czasu.
+
+ Po dodaniu wielu kont na jednej maszynie ten zbiór kont zostanie przemobilny, jeśli zalogujesz się do programu Visual Studio na innym komputerze. Należy pamiętać, że chociaż nazwy kont są przenoszone, poświadczenia nie są przekazywane. W związku z tym podczas pierwszej próby użycia zasobów na nowym komputerze zostanie wyświetlony monit o podanie poświadczeń dla tych kont.
+
+ W tym instruktażu pokazano, jak dodać wiele kont do programu Visual Studio i jak zobaczyć, że zasoby dostępne z tych kont są odzwierciedlone w miejscach, takich jak okno dialogowe **Dodawanie podłączonej usługi** , **Eksplorator serwera**i **Team Explorer** .
+
+#### <a name="sign-in-to-visual-studio"></a>Logowanie do programu Visual Studio
+
+1. Zaloguj się do programu Visual Studio 2015 przy użyciu konto Microsoft lub konta organizacyjnego. Twoja nazwa użytkownika powinna zostać wyświetlona w prawym górnym rogu okna, podobnie jak w przypadku:
+
+     ![Zalogowany użytkownik Currentlly](../ide/media/vs2015-username.png "VS2015_UserName")
+
+### <a name="access-your-azure-account-in-server-explorer"></a>Uzyskaj dostęp do konta platformy Azure w Eksplorator serwera
+ Naciśnij **kombinację klawiszy CTRL + ALT + S** , aby otworzyć **Eksplorator serwera**. Kliknij ikonę platformy Azure i po jej rozszerzeniu powinny zostać wyświetlone zasoby dostępne na koncie platformy Azure skojarzone z IDENTYFIKATORem użytym do zalogowania się do programu Visual Studio 2015. Powinien on wyglądać podobnie do tego, z tą różnicą, że zobaczysz własne zasoby, a nie Mr. Guido:
+
+ ![Eksplorator serwera wyświetlania rozwiniętego węzła narzędzi platformy Azure](../ide/media/vs2015-serverexplorer.png "VS2015_ServerExplorer")
+
+ Przy pierwszym użyciu programu Visual Studio na dowolnym konkretnym urządzeniu w oknie dialogowym zostaną wyświetlone tylko subskrypcje zarejestrowane w ramach identyfikatora, który został zalogowany do środowiska IDE za pomocą programu. Aby uzyskać dostęp do zasobów dla dowolnego innego konta bezpośrednio z **Eksplorator serwera** , kliknij prawym przyciskiem myszy węzeł platformy Azure, a następnie wybierz pozycję **Zarządzaj subskrypcjami** i Dodaj swoje konta z poziomu kontrolki wyboru konta. W razie potrzeby możesz wybrać inne konto, klikając strzałkę w dół i wybierając pozycję z listy kont. Po wybraniu konta możesz wybrać subskrypcje w ramach tego konta, które mają być wyświetlane w Eksplorator serwera.
+
+ ![Okno dialogowe Zarządzanie subskrypcjami platformy Azure](../ide/media/vs2015-manage-subs.png "vs2015_manage_subs")
+
+ Przy następnym otwarciu Eksplorator serwera zostaną wyświetlone zasoby dla tej subskrypcji.
+
+### <a name="access-your-azure-account-via-add-connected-service-dialog"></a>Uzyskiwanie dostępu do konta platformy Azure za pomocą okna dialogowego Dodawanie połączonej usługi
+
+1. Utwórz projekt aplikacji uniwersalnej w C#programie.
+
+2. Kliknij prawym przyciskiem myszy węzeł projektu w Eksplorator rozwiązań i wybierz polecenie **dodaj > połączoną usługę**. Zostanie wyświetlony Kreator dodawania usługi połączonej z listą usług na koncie platformy Azure skojarzonym z IDENTYFIKATORem logowania programu Visual Studio. Pamiętaj, że nie musisz logować się oddzielnie na platformie Azure. Należy jednak zalogować się do innych kont przy pierwszej próbie uzyskania dostępu do zasobów z danego komputera.
+
     > [!WARNING]
-    > Jeśli po raz pierwszy tworzysz Store app w programie Visual Studio 2015 na określonym komputerze, zostanie wyświetlony monit Włącz urządzenie w trybie projektowania, przechodząc do **ustawienia &#124; . Aktualizacje i zabezpieczenia &#124; dla deweloperów** na tym komputerze. Aby uzyskać więcej informacji, zobacz [Włącz swoje urządzenie do tworzenia](https://msdn.microsoft.com/library/windows/apps/dn706236.aspx).  
-  
-### <a name="access_azure"></a> Dostęp do usługi Azure Active Directory w projekcie sieci Web  
- Usługa Azure AD umożliwia obsługę użytkownika końcowego logowania jednokrotnego w aplikacjach sieci web platformy ASP.NET MVC lub uwierzytelniania AD w usługach interfejsu API sieci Web. Uwierzytelnianie domeny różni się od uwierzytelniania konta użytkownika; Użytkownicy, którzy mają dostęp do domeny usługi Active Directory można użyć istniejących kont usługi Azure AD, połączyć się z aplikacji sieci web. Aplikacje usługi Office 365 można również użyć uwierzytelniania przez domenę. Aby to zobaczyć w działaniu, tworzenie aplikacji sieci web (**pliku > Nowy Projekt > C# > chmura > Aplikacja sieci Web ASP.NET**). W oknie dialogowym Nowy projekt ASP.NET wybierz **Zmień uwierzytelnianie**. Kreatora uwierzytelniania pojawia się i pozwala wybrać rodzaj uwierzytelniania do użycia w aplikacji.  
-  
- ![Okna dialogowego uwierzytelnienia zmiany w technologii ASP.NET](../ide/media/vs2015-change-authentication.png "VS2015_change_authentication")  
-  
- Aby uzyskać więcej informacji na temat różnych rodzajów uwierzytelniania w programie ASP.NET: zobacz [tworzenia projektów sieci Web platformy ASP.NET w programie Visual Studio 2013](http://www.asp.net/visual-studio/overview/2013/creating-web-projects-in-visual-studio#orgauth) (informacje o uwierzytelnianiu jest nadal istotne dla programu Visual Studio 2015).  
-  
-### <a name="access-your-visual-studio-team-services-account"></a>Dostęp do konta programu Visual Studio Team Services  
- W menu głównym wybierz **zespołu > Połącz z Team Foundation Server** aby przywołać **Team Explorer** okna. Kliknij pozycję **Wybierz projekty zespołowe**, a następnie w polu listy **wybierz Team Foundation Server**, powinien zostać wyświetlony adres URL dla konta usługi Visual Studio Team Services. Po wybraniu adresu URL możesz będą rejestrowane w bez konieczności ponownego wprowadzania poświadczeń.  
-  
-## <a name="add-a-second-user-account-to-visual-studio"></a>Dodawanie drugiego konta użytkownika w programie Visual Studio  
- Kliknij strzałkę w dół obok swojej nazwy użytkownika w prawym górnym rogu programu Visual Studio. Następnie kliknij pozycję **ustawienia konta** elementu menu. **Menedżerem** okno dialogowe pojawia się i wyświetla konta podczas logowania. Kliknij przycisk **Dodaj konto** linku w lewej dolnej części okna dialogowego, aby dodać nowe konto Microsoft lub nowej pracy lub konta służbowego.  
-  
- ![Visual Studio account picker](../ide/media/vs2015-acct-picker.png "VS2015_acct_picker")  
-  
- Postępuj zgodnie z monitami, aby wprowadzić nowe poświadczenia konta. Poniższa ilustracja przedstawia Menedżera konta, po użytkownik doda jego konto służbowe Contoso.com.  
-  
- ![Menedżerem](../ide/media/vs2015-accountmanager.gif "VS2015_AccountManager")  
-  
-## <a name="revisit-the-add-connected-services-wizard-and-server-explorer"></a>Ponownie Dodaj usług połączonych kreatora i Eksplorator serwera  
- Teraz przejdź do **Eksploratora serwera** ponownie, kliknij prawym przyciskiem myszy na węzeł platformy Azure i wybierz polecenie **zarządzanie i Filtruj subskrypcje**. Wybierz nowe konto, klikając strzałkę listy rozwijanej obok bieżącego konta, a następnie wybierz subskrypcje, które mają być wyświetlane w Eksploratorze serwera. Powinny być widoczne wszystkie usługi, które są skojarzone z określonej subskrypcji. Mimo że nie aktualnie zalogowano Cię do środowiska IDE Visual Studio przy użyciu drugiego konta, zalogowano Cię do tego konta usług i zasobów. Dotyczy to także **Projekt > Dodaj podłączoną usługę** i **zespołu > Połącz z Team Foundation Server**.
+    > Jeśli tworzysz aplikację ze sklepu w programie Visual Studio 2015 na określonym komputerze po raz pierwszy, zostanie wyświetlony monit o włączenie tego urządzenia do trybu deweloperskiego, przechodząc do **ustawień &#124; . Aktualizacje i zabezpieczenia &#124; dla deweloperów** na komputerze. Aby uzyskać więcej informacji, zobacz [Włączanie urządzenia na potrzeby programowania](https://msdn.microsoft.com/library/windows/apps/dn706236.aspx).
+
+### <a name="access_azure"></a>Dostęp do Azure Active Directory w projekcie sieci Web
+ Usługa Azure AD umożliwia obsługę logowania jednokrotnego dla użytkowników końcowych w aplikacjach sieci Web ASP.NET MVC lub uwierzytelnianie usługi AD w usługach interfejsu API sieci Web. Uwierzytelnianie domeny różni się od uwierzytelniania poszczególnych kont użytkowników. Użytkownicy mający dostęp do domeny Active Directory mogą korzystać z istniejących kont usługi Azure AD w celu łączenia się z aplikacjami sieci Web. Aplikacje pakietu Office 365 mogą również korzystać z uwierzytelniania domeny. Aby wyświetlić tę akcję, Utwórz aplikację sieci Web (**plik > nowym projekcie > C# > aplikacji sieci web w chmurze > ASP.NET**). W oknie dialogowym Nowy projekt ASP.NET wybierz pozycję **Zmień uwierzytelnianie**. Zostanie wyświetlony Kreator uwierzytelniania i pozwala wybrać rodzaj uwierzytelniania, który ma być używany w aplikacji.
+
+ ![Okno dialogowe Zmienianie uwierzytelniania dla ASP.NET](../ide/media/vs2015-change-authentication.png "VS2015_change_authentication")
+
+ Aby uzyskać więcej informacji na temat różnych rodzajów uwierzytelniania w programie ASP.NET, zobacz [Tworzenie projektów sieci Web ASP.NET w Visual Studio 2013](http://www.asp.net/visual-studio/overview/2013/creating-web-projects-in-visual-studio#orgauth) (informacje o uwierzytelnianiu są nadal istotne dla programu Visual Studio 2015).
+
+### <a name="access-your-visual-studio-team-services-account"></a>Uzyskaj dostęp do konta Visual Studio Team Services
+ Z menu głównego wybierz kolejno pozycje **zespół > Połącz z Team Foundation Server** , aby wyświetlić okno **Team Explorer** . Kliknij pozycję **Wybierz projekty zespołowe**, a następnie w polu listy w obszarze **Wybierz Team Foundation Server**powinien zostać wyświetlony adres URL konta Visual Studio Team Services. Po wybraniu adresu URL, który zostanie zalogowany, bez konieczności ponownego wprowadzania poświadczeń.
+
+## <a name="add-a-second-user-account-to-visual-studio"></a>Dodawanie drugiego konta użytkownika do programu Visual Studio
+ Kliknij strzałkę w dół obok swojej nazwy użytkownika w prawym górnym rogu programu Visual Studio. Następnie kliknij element menu **Ustawienia konta** . Zostanie wyświetlone okno dialogowe **Menedżer kont** zawierające konto, za pomocą którego zalogowano się. Kliknij link **Dodaj konto** w lewym dolnym rogu okna dialogowego, aby dodać nowe konto Microsoft lub nowe konto służbowe.
+
+ ![Selektor konta programu Visual Studio](../ide/media/vs2015-acct-picker.png "VS2015_acct_picker")
+
+ Postępuj zgodnie z monitami, aby wprowadzić nowe poświadczenia konta. Na poniższej ilustracji przedstawiono Menedżera kont po dodaniu przez użytkownika konta służbowego Contoso.com.
+
+ ![Menedżer kont](../ide/media/vs2015-accountmanager.gif "VS2015_AccountManager")
+
+## <a name="revisit-the-add-connected-services-wizard-and-server-explorer"></a>Ponownie odwiedź Kreatora dodawania podłączonych usług i Eksplorator serwera
+ Teraz przejdź do **Eksplorator serwera** ponownie, kliknij prawym przyciskiem myszy węzeł platformy Azure, a następnie wybierz pozycję **Zarządzaj i Filtruj subskrypcje**. Wybierz nowe konto, klikając strzałkę listy rozwijanej obok bieżącego konta, a następnie wybierz subskrypcje, które mają być wyświetlane w Eksplorator serwera. Powinny zostać wyświetlone wszystkie usługi skojarzone z określoną subskrypcją. Mimo że obecnie nie zalogowano się do środowiska IDE programu Visual Studio przy użyciu drugiego konta, zalogowano się do usług i zasobów tego konta. Ta sama wartość dotyczy **projektu > Dodaj podłączoną usługę** i **zespół > połącz się z Team Foundation Server**.

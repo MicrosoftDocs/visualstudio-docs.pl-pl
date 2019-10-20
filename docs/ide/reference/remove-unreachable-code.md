@@ -1,47 +1,47 @@
 ---
-title: Usuwanie nieosiągalnego kodu refaktoryzacji
+title: Usuwanie nieosiągalnego refaktoryzacji kodu
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: b1c88fbeb9daf293df868a835247098e2ce999e3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1e5bdab773cf70963e1d0f485a7779e57084c8a0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62576029"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655606"
 ---
-# <a name="remove-unreachable-code-refactoring"></a>Usuwanie nieosiągalnego kodu refaktoryzacji
+# <a name="remove-unreachable-code-refactoring"></a>Usuwanie nieosiągalnego refaktoryzacji kodu
 
-Ta Refaktoryzacja mają zastosowanie do:
+To Refaktoryzacja dotyczy:
 
 - C#
 
-**Co:** Usunięcie kodu, która nigdy nie zostanie wykonana.
+**Co:** Usuwa kod, który nigdy nie będzie wykonywany.
 
-**Kiedy:** Program nie ma ścieżki do fragmentu kodu, co ten fragment kodu jest niepotrzebne.
+**Kiedy:** Program nie ma ścieżki do fragmentu kodu, dzięki czemu fragment kodu nie jest zbędny.
 
-**Dlaczego:** Zwiększ czytelność i łatwość konserwacji przez usunięcie kodu, który jest zbędny i nigdy nie zostanie wykonana.
+**Dlaczego:** Zwiększ czytelność i łatwość utrzymania, usuwając kod, który jest zbędny i nigdy nie będzie wykonywany.
 
 ## <a name="how-to"></a>Instrukcje
 
-1. Umieść kursor w dowolnym miejscu w rozmytą się kod, który jest niedostępny:
+1. Umieść kursor w dowolnym miejscu w nieosiągalnym kodzie:
 
-![Rozmytą nieosiągalnego kodu](media/unreachablecode-faded-cs.png)
+![Wyblakły nieosiągalny kod](media/unreachablecode-faded-cs.png)
 
 1. Następnie wykonaj jedną z następujących czynności:
 
-   - **Keyboard**
-      - Naciśnij klawisz **Ctrl**+**.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu, a następnie wybierz **usuwanie nieosiągalnego kodu** z menu podręcznego okna podglądu.
-   - **Myszy**
-      - Kliknij prawym przyciskiem myszy ten kod, wybierz **szybkie akcje i Refaktoryzacje** menu, a następnie wybierz **usuwanie nieosiągalnego kodu** z menu podręcznego okna podglądu.
+   - **Klawiatury**
+      - Naciśnij klawisz **Ctrl** + **.** Aby wyzwolić menu **szybkie akcje i refaktoryzacje** , a następnie wybierz pozycję **Usuń nieosiągalny kod** z okna podręcznego w oknie podglądu.
+   - **Wskaźnik**
+      - Kliknij prawym przyciskiem myszy kod, zaznacz menu **szybkie akcje i refaktoryzacje** i wybierz polecenie **Usuń nieosiągalny kod** z okna podręcznego w oknie podglądu.
 
-1. Po zakończeniu zmiany, naciśnij klawisz **Enter** lub kliknij poprawki w menu, a zmiany zostaną zatwierdzone.
+1. Po zakończeniu zmiany naciśnij klawisz **Enter** lub kliknij poprawkę w menu, a zmiany zostaną zatwierdzone.
 
 Przykład:
 

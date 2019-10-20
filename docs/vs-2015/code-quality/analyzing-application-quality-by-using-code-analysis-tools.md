@@ -1,5 +1,5 @@
 ---
-title: Analiza jakości aplikacji za pomocą narzędzi analizy kodu | Dokumentacja firmy Microsoft
+title: Analizowanie jakości aplikacji za pomocą narzędzi do analizy kodu | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,47 +12,37 @@ helpviewer_keywords:
 - team-based development, analyzing application quality
 ms.assetid: 21680516-ddb5-446d-90d4-19d94f6ec699
 caps.latest.revision: 26
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 83fbe8b372d021e0cec4faccfd0b22fcaa8af30d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c0b46c8efb681a067d5a9e74369ed73c43f1568f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68157104"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72671107"
 ---
 # <a name="analyzing-application-quality-by-using-code-analysis-tools"></a>Analiza jakości aplikacji za pomocą narzędzi analizy kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W tej sekcji  
- [Analiza jakości zarządzanego kodu](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)  
- Visual Studio analizy kodu dla kodu zarządzanego informacje na temat zestawów zarządzanych, takich jak naruszenia reguł projektowania i programowania określonych w ustawach programu Microsoft .NET Framework wytycznymi. Komunikaty ostrzegawcze identyfikują wszystkie istotne błędy programowania i projektowania i gdy jest możliwe, dostarczają informacji na temat sposobu rozwiązania problemu.  
-  
- [Analiza jakości kodu C/C++ za pomocą funkcji analizy kodu](../code-quality/analyzing-c-cpp-code-quality-by-using-code-analysis.md)  
- Narzędzie do analizy kodu C/C++ zawiera informacje dla deweloperów o możliwych wady kodu źródłowego języka C/C++. Typowe błędy kodowania zgłoszonej przez narzędzie obejmują przepełnienia buforów i pamięci surowej zainicjowane, wyłuskania wskaźnika o wartości null i przecieków pamięci i zasobów.  
-  
- [Korzystanie z zestawów reguł do grupowania reguł analizy kodu](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)  
- Wybierz i Utwórz *zestawów reguł* do zastosowania w projekcie.  
-  
- [Błędy zgłaszane przez aplikację do analizy kodu](../code-quality/code-analysis-application-errors.md)  
- Usuń błędy w działaniu analizy kodu.  
-  
- [Doskonalenie jakości kodu za pomocą zasad zaewidencjonowania projektu zespołowego](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md)  
- Gdy używasz Team Foundation Version Control (TFVC), można utworzyć zasady ewidencjonowania dla projektów zespołowych, które wymusić stosowanie praktyk, które mogą prowadzić do lepszego kodu i bardziej skutecznego rozwoju oprogramowania. Zasady ewidencjonowania to reguły, które są ustawiane na poziomie projektu zespołu i wymuszane na komputerach deweloperów, zanim będzie mógł zostać zaewidencjonowany kod.  
-  
-### <a name="code-analysis-for-drivers"></a>Analiza kodu dla sterowników  
- Narzędzia do analizy kodu może zwiększyć stabilności i niezawodności sterownika, systematyczne analizowanie kodu źródłowego sterownika.  
-  
- [Analiza jakości sterowników za pomocą narzędzi analizy kodu](/windows-hardware/drivers/devtest/tools-for-verifying-drivers)  
- Analiza kodu dla sterowników jest narzędziem kompilacji, weryfikacji statyczne, które wykrywa podstawowe błędy kodu w językach C i C++ programy i zawiera specjalistyczne moduł, który jest zaprojektowany do wykrywania błędów w kod sterownik trybu jądra (zasadniczo). Statyczne sterownik weryfikatora (SDV) jest narzędziem weryfikacji statyczne, które systematycznie analizuje kod źródłowy sterowników trybu jądra Windows. SDV Określa, czy sterownik poprawnie wchodzi w interakcję z jądra systemu operacyjnego Windows.  
-  
- [Analiza kodu dla sterowników ostrzeżenia](http://go.microsoft.com/fwlink/?LinkId=225920)  
- W tym artykule opisano ostrzeżenia analizy kodu dla sterowników raporty po wykryciu możliwy błąd w kodzie sterownika.  
-  
-## <a name="related-tasks"></a>Informacje o zadaniach pokrewnych  
- [Mierzenie złożoności i poziomu łatwości konserwacji kodu zarządzanego](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)  
- Wstaw tutaj opis.  
-  
- [Testowanie jednostek kodu](../test/unit-test-your-code.md)  
- Wstaw tutaj opis.
+W tej sekcji [Analiza zarządzanego](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md) kodu programu Visual Studio Code Analysis dla kodu zarządzanego zawiera informacje dotyczące zestawów zarządzanych, takich jak naruszenia reguł programowania i projektowania, które zostały określone w projekcie Microsoft .NET Framework Wiele. Komunikaty ostrzegawcze identyfikują wszelkie istotne problemy związane z programowaniem i projektowaniem oraz, gdy jest to możliwe, dostarczają informacji na temat sposobu rozwiązania problemu.
+
+ [Analizowanie jakości językaC++ c/kodu przy użyciu analizy kodu](../code-quality/analyzing-c-cpp-code-quality-by-using-code-analysis.md) Narzędzie analizyC++ C/Code zawiera informacje dla deweloperów o możliwych defektach w kodzie źródłowymC++ c/. Typowe błędy kodowania zgłoszone przez narzędzie obejmują przepełnienia buforów, niezainicjowaną pamięć, odwołania wskaźnika NULL oraz przecieki pamięci i zasobów.
+
+ [Korzystanie z zestawów reguł do grupowania reguł analizy kodu](../code-quality/using-rule-sets-to-group-code-analysis-rules.md) Wybierz i Utwórz *zestawy reguł* , które mają być stosowane do projektu.
+
+ [Błędy aplikacji analizy kodu](../code-quality/code-analysis-application-errors.md) Naprawianie błędów w funkcji analizy kodu.
+
+ [Zwiększanie jakości kodu za pomocą zasad ewidencjonowania projektu zespołowego](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md) Korzystając z Kontrola wersji serwera Team Foundation (TFVC), można utworzyć zasady ewidencjonowania dla projektów zespołowych, które wymuszają praktyki, które prowadzą do lepszego kodu i wydajniejszego opracowywania grup. Zasady ewidencjonowania są regułami ustawionymi na poziomie projektu zespołowego i wymuszanymi na komputerach deweloperskich, zanim kod będzie mógł zostać zaewidencjonowany.
+
+### <a name="code-analysis-for-drivers"></a>Analiza kodu dla sterowników
+ Narzędzia do analizy kodu mogą pomóc w zwiększeniu stabilności i niezawodności sterownika przez systematyczne Analizowanie kodu źródłowego sterownika.
+
+ [Analizowanie jakości sterowników przy użyciu narzędzi do analizy kodu](/windows-hardware/drivers/devtest/tools-for-verifying-drivers) Analiza kodu dla sterowników to narzędzie do weryfikacji statycznej w czasie kompilacji, które wykrywa podstawowe błędy kodowania w C++ języku C i programy oraz zawiera wyspecjalizowany moduł, który jest przeznaczony do wykrywania błędów w (przede wszystkim) kodu sterownika trybu jądra. Analizator sterownika statycznego (SDV) to statyczne narzędzie weryfikacyjne, które systematycznie analizuje kod źródłowy sterowników trybu jądra systemu Windows. SDV określa, czy sterownik prawidłowo współdziała z jądrem systemu operacyjnego Windows.
+
+ [Analiza kodu dla ostrzeżeń dotyczących sterowników](http://go.microsoft.com/fwlink/?LinkId=225920) Opisuje ostrzeżenia, które są raportowane przez analizę kodu dla sterowników, gdy wykryje możliwy błąd w kodzie sterownika.
+
+## <a name="related-tasks"></a>Powiązane zadania
+ [Mierzenie złożoności i łatwość utrzymania w kodzie zarządzanym](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md) Tutaj Wstaw opis.
+
+ [Testowanie jednostkowe kodu](../test/unit-test-your-code.md) Tutaj Wstaw opis.

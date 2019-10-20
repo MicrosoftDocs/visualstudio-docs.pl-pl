@@ -1,5 +1,5 @@
 ---
-title: 'CA2214: Nie wywoływać nadpisywalnych metod w konstruktorach | Dokumentacja firmy Microsoft'
+title: 'CA2214: Nie wywołuj metod do zastąpienia w konstruktorach | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,46 +12,46 @@ helpviewer_keywords:
 - DoNotCallOverridableMethodsInConstructors
 ms.assetid: 335b57ca-a6e8-41b4-a20e-57ee172c97c3
 caps.latest.revision: 15
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 0a2e107429bb48b2bf17a625e25866a19c7781b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 78702298bab484a95bb8108150415ec0b31ede7d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68142422"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662910"
 ---
-# <a name="ca2214-do-not-call-overridable-methods-in-constructors"></a>CA2214: Nie wywołuj w konstruktorach metod, które można przesłaniać
+# <a name="ca2214-do-not-call-overridable-methods-in-constructors"></a>CA2214: Nie należy wywoływać nadpisywalnych metod w konstruktorach
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|DoNotCallOverridableMethodsInConstructors|
 |CheckId|CA2214|
-|Kategoria|Microsoft.Usage|
-|Zmiana kluczowa|Bez podziału|
+|Kategoria|Microsoft. Usage|
+|Zmiana kluczowa|Bez przerywania|
 
 ## <a name="cause"></a>Przyczyna
- Konstruktor obiektu niezapieczętowanego typu wywołuje metody wirtualnej zdefiniowanej w swojej klasie.
+ Konstruktor niezapieczętowanego typu wywołuje metodę wirtualną zdefiniowaną w jej klasie.
 
 ## <a name="rule-description"></a>Opis reguły
- Po wywołaniu metody wirtualnej rzeczywisty typ, który wykonuje metodę nie jest zaznaczone do czasu wykonywania. Gdy Konstruktor wywołuje metodę wirtualną, jest możliwe, że Konstruktor wystąpienia, które wywołuje metodę nie zostało wykonane.
+ Gdy wywoływana jest metoda wirtualna, faktyczny typ, który wykonuje metodę, nie jest wybierany do czasu wykonywania. Gdy Konstruktor wywołuje metodę wirtualną, istnieje możliwość, że Konstruktor wystąpienia, który wywołuje metodę, nie został wykonany.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, nie wywołuj metody wirtualne typu z konstruktorów typu.
+ Aby naprawić naruszenie tej reguły, nie wywołuj metod wirtualnych typu z poziomu konstruktorów typu.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Nie pomijaj ostrzeżeń dla tej reguły. Konstruktor powinien przeprojektowane, aby wyeliminować wywołanie wirtualnej metody.
+ Nie pomijaj ostrzeżeń dla tej reguły. Konstruktor powinien zostać przeprojektowany w celu wyeliminowania wywołania metody wirtualnej.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład ilustruje efekt naruszenie tej zasady. Aplikacja testowa tworzy wystąpienie `DerivedType`, co powoduje, że jej klasa podstawowa (`BadlyConstructedType`) Konstruktor do wykonania. `BadlyConstructedType`jego Konstruktor niepoprawnie wywołuje metodę wirtualną `DoSomething`. Dane wyjściowe pokazują, `DerivedType.DoSomething()` wykonuje, a więc przed jest `DerivedType`przez konstruktora.
+ Poniższy przykład ilustruje efekt naruszenia tej reguły. Aplikacja testowa tworzy wystąpienie `DerivedType`, które powoduje wykonanie jego konstruktora klasy podstawowej (`BadlyConstructedType`). Konstruktor `BadlyConstructedType` niepoprawnie wywołuje metodę wirtualną `DoSomething`. Jako dane wyjściowe są wyświetlane, `DerivedType.DoSomething()` wykonuje i robi to przed wykonaniem konstruktora `DerivedType`.
 
  [!code-csharp[FxCop.Usage.CtorVirtual#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.CtorVirtual/cs/FxCop.Usage.CtorVirtual.cs#1)]
  [!code-vb[FxCop.Usage.CtorVirtual#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.CtorVirtual/vb/FxCop.Usage.CtorVirtual.vb#1)]
 
  Ten przykład generuje następujące dane wyjściowe.
 
- **Wywoływanie podstawowy ctor. ** 
- **DoSomething pochodnej jest wywoływana - inicjowane? Nie**
-**wywołanie pochodzi ctor.**
+ **Wywoływanie podstawowego elementu ctor.** 
+**pochodne DoSomething jest wywoływana-zainicjowany? Brak** 
+**wywoływania pochodnego elementu ctor.**

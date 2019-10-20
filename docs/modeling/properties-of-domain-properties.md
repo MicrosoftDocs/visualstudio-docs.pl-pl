@@ -4,50 +4,50 @@ ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - Domain-Specific Language, domain properties
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23bac93b6e5892e8a4d4680e6829240fed9a03d8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: debf263fa18d2a6af8e95ee959002686540e2c06
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443134"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658202"
 ---
 # <a name="properties-of-domain-properties"></a>Właściwości właściwości domeny
-A *właściwość domeny* jest funkcją elementu modelu, który może zawierać wartości. Na przykład `Person` klasa domeny może mieć właściwości `Name` i `BirthDate`. W definicji DSL właściwości domeny są wyświetlane w polu Domena klas na diagramie, a w ramach klasy domeny w Eksplorator DSL. Aby uzyskać więcej informacji, zobacz [sposób definiowania języka specyficznego dla domeny](../modeling/how-to-define-a-domain-specific-language.md).
+*Właściwość domeny* jest funkcją elementu modelu, która może zawierać wartość. Na przykład Klasa domeny `Person` może mieć właściwości `Name` i `BirthDate`. W definicji DSL właściwości domeny są wyświetlane w polu Klasa domeny na diagramie i w obszarze klasy domeny w Eksploratorze DSL. Aby uzyskać więcej informacji, zobacz [jak zdefiniować język specyficzny dla domeny](../modeling/how-to-define-a-domain-specific-language.md).
 
 > [!NOTE]
-> Wyraz "property" ma dwa zastosowania. A *właściwość domeny* to funkcja, która definiuje się na klasę domeny. Z kolei ma wiele elementów języka DSL *właściwości*, które są wymienione w **właściwości** okna w definicji DSL. Na przykład dla każdej właściwości domeny ma zestaw właściwości, które są opisane w tym temacie.
+> Słowo "Property" ma dwa zastosowania. *Właściwość domeny* to funkcja zdefiniowana w klasie domeny. Z kolei wiele elementów DSL ma *Właściwości*, które są wyświetlane w oknie **Właściwości** w definicji DSL. Na przykład Każda właściwość domeny ma zestaw właściwości, które są opisane w tym temacie.
 
- W czasie wykonywania, gdy użytkownik tworzy wystąpienia klasy domeny, wartości właściwości domeny są widoczne w oknie dialogowym właściwości i mogą być wyświetlane na kształty.
+ W czasie wykonywania, gdy użytkownik tworzy wystąpienia klasy domeny, wartości właściwości domeny mogą być widoczne w okno Właściwości i mogą być wyświetlane na kształtach.
 
- Większość właściwości domeny są implementowane jako właściwości aparatu CLR zwykłej. Jednak z programowania punktu widzenia właściwości domeny mają więcej funkcji niż właściwości zwykłego programu:
+ Większość właściwości domeny jest implementowana jako zwykłe właściwości środowiska CLR. Jednak z punktu widzenia programowania właściwości domeny mają bogatsze funkcje niż zwykłe właściwości programu:
 
-- Można zdefiniować reguły i zdarzenia, które monitorują stan właściwości. Aby uzyskać więcej informacji, zobacz [reagowania na zagrożenia i propagowanie zmian](../modeling/responding-to-and-propagating-changes.md).
+- Można zdefiniować reguły i zdarzenia, które monitorują stan właściwości. Aby uzyskać więcej informacji, zobacz [reagowanie na zmiany i propagowanie zmian](../modeling/responding-to-and-propagating-changes.md).
 
-- Transakcje zapobiec niespójne stanów. Aby uzyskać więcej informacji, zobacz [nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md).
+- Transakcje uniemożliwiają niespójne Stany. Aby uzyskać więcej informacji, zobacz [nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
-  Po wybraniu Właściwość Domain w diagramie lub w Eksploratorze DSL, zobaczysz następujące elementy w oknie dialogowym właściwości. Aby uzyskać więcej informacji na temat używania tych elementów, zobacz [dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md).
+  Po wybraniu właściwości domeny w diagramie lub w Eksploratorze DSL można zobaczyć następujące elementy w okno Właściwości. Aby uzyskać więcej informacji na temat sposobu korzystania z tych elementów, zobacz [Dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
 |Właściwość|Opis|Wartość domyślna|
 |-|-|-|
-|**Opis**|Opis, który jest używany do dokumentów interfejsu użytkownika (UI) wygenerowanego projektanta.|\<Brak >|
-|**Nazwa wyświetlana**|Nazwa, która będzie wyświetlana w wygenerowanym projektancie dla tej właściwości domeny. Może zawierać spacje i znaki interpunkcyjne, na przykład "utwór Title".|\<Brak >|
-|**Dostawca nazw elementów**|Ma to zastosowanie tylko wtedy, gdy zostały ustawione `Is Element Name` do `true`. Można napisać kod, który zawiera nazwę dla nowego elementu klasę domeny Zastępowanie domyślnego zachowania.<br /><br /> W pliku kodu w projekcie języka DSL, należy utworzyć klasę, która jest pochodną <xref:Microsoft.VisualStudio.Modeling.ElementNameProvider>.<br /><br /> Następnie w Eksplorator DSL, kliknij prawym przyciskiem myszy katalog główny język DSL i kliknij przycisk Dodaj typ zewnętrzny. Wprowadź nazwę klasy.<br /><br /> Ponownie wybierz tę właściwość domeny, a następnie wybierz nazwę klasy na liście rozwijanej.|\<Brak >|
-|**Modyfikator dostępu metody pobierającej**|Poziom dostępu dla klasy domeny (`public` lub `internal`). Ta opcja kontroluje zakresu, w jaki program kod może uzyskiwać dostęp do właściwości.|`public`|
-|**Słowo kluczowe pomocy**|Opcjonalne słowo kluczowe, które jest używane do indeksowania pomocy F1 dla tej właściwości domeny.|\<Brak >|
-|**Jest możliwa do przeglądania**|Jeśli `True`, właściwość domeny jest wyświetlane użytkownikowi w oknie dialogowym właściwości, gdy modeli tego języka DSL są otwarte.<br /><br /> Jeśli `False`, właściwość domeny jest ukryty w interfejsie użytkownika.<br /><br /> Jeśli chcesz właściwość domeny widoczny, ale tylko do odczytu, ustaw **jest interfejs użytkownika tylko do odczytu**.|`True`|
-|**Jest nazwą elementu**|Jeśli `True`, ta właściwość domeny, które będą wyświetlane jako nazwa elementu modelu w Eksplorator DSL.<br /><br /> Nowe elementy modelu otrzyma wartość domyślną unikatowy dla tej właściwości. Jeśli chcesz kontrolować, jak te wartości są generowane, ustaw **dostawca nazw elementów**.|`False`|
-|**Interfejs użytkownika tylko do odczytu**|Jeśli `True`, nie można zmienić wartości właściwości domeny przy użyciu interfejsu użytkownika. Nadal można ustawić w programach i będą widoczne w oknie dialogowym właściwości.<br /><br /> Jeśli chcesz ukryć właściwość domeny użytkownika, ustaw **jest możliwa do przeglądania**. Jeśli chcesz kontrolować dostęp przez programy **modyfikator dostępu metody ustawiającej**.|`False`|
-|**rodzaj**|Rodzaj właściwości domeny (`Normal`, `Calculated`, lub `CustomStorage`). Aby uzyskać więcej informacji, zobacz [obliczeniowe i niestandardowe właściwości przechowywania](../modeling/calculated-and-custom-storage-properties.md).|`Normal`|
-|**Nazwa**|Nazwa tej właściwości domeny. Jego musi być prawidłowym identyfikatorem, na przykład **SongTitle**.|\<Brak >|
-|**Uwagi**|Uwagi informacyjne, które są skojarzone z tą właściwością domeny.|\<Brak >|
-|**Modyfikator dostępu metody ustawiającej**|Modyfikator dostępu dla metody ustawiającej. Ta opcja kontroluje zakresu, w jaki program code można ustawić właściwości.|`public`|
-|**Typ**|Typ właściwości. Aby dodać do listy dostępnych typów, kliknij prawym przyciskiem myszy katalog główny języka DSL w Eksplorator DSL, a następnie kliknij przycisk **Dodaj typ zewnętrzny**.|`String`|
+|**Opis**|Opis używany do dokumentowania interfejsu użytkownika (UI) wygenerowanego projektanta.|\<none >|
+|**Nazwa wyświetlana**|Nazwa, która będzie wyświetlana w wygenerowanym projektancie dla tej właściwości domeny. Może zawierać spacje i znaki interpunkcyjne, na przykład "tytuł utworu".|\<none >|
+|**Dostawca nazw elementów**|Ma to zastosowanie tylko wtedy, gdy ustawiono `Is Element Name` `true`. Można napisać kod, który zawiera nazwę nowego elementu klasy domeny, zastępując zachowanie domyślne.<br /><br /> W pliku kodu w projekcie DSL Utwórz klasę, która jest pochodną <xref:Microsoft.VisualStudio.Modeling.ElementNameProvider>.<br /><br /> Następnie w Eksploratorze DSL kliknij prawym przyciskiem myszy katalog główny DSL, a następnie kliknij polecenie Dodaj typ zewnętrzny. Wprowadź nazwę klasy.<br /><br /> Ponownie wybierz tę właściwość domeny i wybierz nazwę klasy z listy rozwijanej.|\<none >|
+|**Modyfikator dostępu metody pobierającej**|Poziom dostępu do klasy domeny (`public` lub `internal`). Określa zakres, w którym kod programu może uzyskać dostęp do właściwości.|`public`|
+|**Słowo kluczowe pomocy**|Opcjonalne słowo kluczowe, które jest używane do indeksowania pomocy F1 dla tej właściwości domeny.|\<none >|
+|**Jest umożliwia przeglądania**|Jeśli `True`, właściwość domeny jest wyświetlana użytkownikowi w oknie właściwości, gdy modele tego typu DSL są otwarte.<br /><br /> Jeśli `False`, właściwość domeny jest ukryta w interfejsie użytkownika.<br /><br /> Jeśli chcesz, aby właściwość domeny była widoczna, ale tylko do odczytu, ustaw opcję **jest tylko do odczytu interfejsu użytkownika**.|`True`|
+|**Jest nazwą elementu**|Jeśli `True`, ta właściwość domeny będzie wyświetlana jako nazwa elementu modelu w Eksploratorze DSL.<br /><br /> Nowy element modelu otrzyma unikatową wartość domyślną dla tej właściwości. Jeśli chcesz kontrolować sposób generowania tych wartości, ustaw opcję **dostawca nazw elementów**.|`False`|
+|**Jest tylko do odczytu interfejsu użytkownika**|W przypadku `True` nie można zmienić wartości właściwości domeny przy użyciu interfejsu użytkownika. Nadal może być ustawiony przez programy i będzie widoczny w okno Właściwości.<br /><br /> Jeśli chcesz ukryć właściwość domeny od użytkownika, ustaw wartość **umożliwia przeglądania**. Jeśli chcesz kontrolować dostęp przez programy, ustaw **modyfikator dostępu do metody ustawiającej**.|`False`|
+|**Natur**|Rodzaj właściwości domeny (`Normal`, `Calculated` lub `CustomStorage`). Aby uzyskać więcej informacji, zobacz [właściwości magazynu obliczeniowego i niestandardowego](../modeling/calculated-and-custom-storage-properties.md).|`Normal`|
+|**Nazwa**|Nazwa tej właściwości domeny. Musi być prawidłowym identyfikatorem, na przykład **SongTitle**.|\<none >|
+|**Uwagi**|Nieformalne uwagi, które są skojarzone z tą właściwością domeny.|\<none >|
+|**Modyfikator dostępu metody ustawiającej**|Modyfikator dostępu dla metody ustawiającej. Określa zakres, w którym kod programu może ustawić właściwość.|`public`|
+|**Wprowadź**|Typ właściwości. Aby dodać do listy dostępnych typów, kliknij prawym przyciskiem myszy katalog główny DSL w Eksploratorze DSL, a następnie kliknij polecenie **Dodaj typ zewnętrzny**.|`String`|
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Słownik narzędzi języka specyficznego dla domeny](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [narzędzia języka specyficznego dla domeny słownik](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

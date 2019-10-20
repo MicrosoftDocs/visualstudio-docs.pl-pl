@@ -1,5 +1,5 @@
 ---
-title: Metadane jako źródło | Dokumentacja firmy Microsoft
+title: Metadane jako źródło | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -12,36 +12,36 @@ helpviewer_keywords:
 - metadata as source [C#]
 ms.assetid: 4945a07f-b3be-4f05-a587-fc29058aa8fa
 caps.latest.revision: 14
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5883708d0ed32f636c5e229147676cf1545f8a47
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b1d96224be13a12dcaadb394584f8441c7bd1934
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444595"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667522"
 ---
 # <a name="metadata-as-source"></a>Metadane jako źródło
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Metadane jako źródło umożliwia wyświetlenie metadanych, który jest wyświetlany jako kod źródłowy języka C# w buforze tylko do odczytu. Dzięki temu widok deklaracji typów i elementów członkowskich (bez implementacji). Można wyświetlić metadane jako źródło, uruchamiając **przejdź do definicji** polecenie, aby uzyskać typy lub elementy członkowskie, których kod źródłowy nie jest dostępna do projektu lub rozwiązania.  
-  
+Metadane jako źródło umożliwiają wyświetlanie metadanych, które pojawiają się C# jako kod źródłowy w buforze tylko do odczytu. Umożliwia to wyświetlenie deklaracji typów i członków (bez implementacji). Metadane można wyświetlić jako źródło, uruchamiając polecenie **Przejdź do definicji** dla typów lub elementów członkowskich, których kod źródłowy nie jest dostępny w projekcie lub rozwiązaniu.
+
 > [!NOTE]
-> Jeśli zostanie podjęta próba uruchomienia **przejdź do definicji** polecenia dla typów ani elementów członkowskich, które są oznaczone jako wewnętrzne, zintegrowanego środowiska programistycznego (IDE) nie są wyświetlane metadane jako źródło, niezależnie od tego, czy zestaw odwołujący się jest znajomego, czy nie.  
-  
- Można wyświetlić metadane jako źródło w dowolnym edytorze kodu lub **definicji kodu** okna.  
-  
-## <a name="viewing-metadata-as-source-in-the-code-editor"></a>Podgląd metadanych jako źródła w edytorze kodu  
- Po uruchomieniu **przejdź do definicji** polecenia dla elementu, którego kod źródłowy jest niedostępny, dokument z kartami zawiera widok metadanych tego elementu wyświetlana jako źródło, pojawi się w edytorze kodu. Nazwa typu, a następnie **[z metadanych]**, pojawi się na karcie dokumentu.  
-  
- Na przykład jeśli uruchomisz **przejdź do definicji** polecenie, aby uzyskać <xref:System.Console>, metadane <xref:System.Console> pojawi się w edytorze kodu, jak kod źródłowy C# podobny swojej deklaracji, ale bez implementacji.  
-  
- ![Metadane jako źródło](../csharp-ide/media/metadatasource.png "MetadataSource")  
-  
-## <a name="viewing-metadata-as-source-in-the-code-definition-window"></a>Podgląd metadanych jako źródła w oknie definicji kodu  
- Gdy **definicji kodu** okno jest aktywne i widoczne, IDE automatycznie wykonuje **przejdź do definicji** polecenia dla elementów w obszarze kursora w edytorze kodu i elementów, które są wybrane w  **Widok klas** lub **przeglądarka obiektów**. Jeśli kod źródłowy jest niedostępny dla tego elementu, środowisko IDE Wyświetla metadanych elementu jako źródło w **definicji kodu** okna.  
-  
- Na przykład, jeśli umieścisz kursor w wyrazie <xref:System.Console> w edytorze kodu, metadane <xref:System.Console> pojawia się jako źródło w **definicji kodu** okna. Źródło przypomina <xref:System.Console> deklaracji, ale bez implementacji.  
-  
- Jeśli chcesz zobaczyć deklaracji elementu, który pojawia się w **definicji kodu** okna, kliknij prawym przyciskiem myszy element i kliknij przycisk **przejdź do definicji**.
+> Gdy próbujesz uruchomić polecenie **Przejdź do definicji** dla typów lub elementów członkowskich, które są oznaczone jako wewnętrzne, zintegrowane środowisko programistyczne (IDE) nie wyświetla swoich metadanych jako źródła, niezależnie od tego, czy zestaw, którego dotyczy odwołanie, jest znajomy, czy nie.
+
+ Metadane można wyświetlić jako źródło w edytorze kodu lub w oknie **definicji kodu** .
+
+## <a name="viewing-metadata-as-source-in-the-code-editor"></a>Wyświetlanie metadanych jako źródła w edytorze kodu
+ Po uruchomieniu polecenia **Przejdź do definicji** elementu, którego kod źródłowy jest niedostępny, dokument z kartami zawierający widok metadanych tego elementu, wyświetlany jako źródło, pojawia się w edytorze kodu. Nazwa typu, a następnie **[z metadanych]** pojawia się na karcie dokumentu.
+
+ Na przykład, jeśli uruchomisz polecenie **Przejdź do definicji** <xref:System.Console>, metadane dla <xref:System.Console> pojawiają się w edytorze kodu jako C# kod źródłowy, który jest podobny do swojej deklaracji, ale bez implementacji.
+
+ ![Metadane jako źródło](../csharp-ide/media/metadatasource.png "Źródło danych")
+
+## <a name="viewing-metadata-as-source-in-the-code-definition-window"></a>Wyświetlanie metadanych jako źródła w oknie definicji kodu
+ Gdy okno **definicji kodu** jest aktywne lub widoczne, IDE automatycznie wykonuje polecenie **Przejdź do definicji** dla elementów pod kursorem w edytorze kodu oraz dla elementów wybranych w **Widok klasy** lub **Przeglądarka obiektów**. Jeśli kod źródłowy nie jest dostępny dla tego elementu, IDE wyświetla metadane elementu jako źródło w oknie **definicji kodu** .
+
+ Na przykład jeśli umieścisz kursor wewnątrz słowa <xref:System.Console> w edytorze kodu, metadane dla <xref:System.Console> są wyświetlane jako źródło w oknie **definicji kodu** . Źródło przypomina deklarację <xref:System.Console>, ale bez implementacji.
+
+ Jeśli chcesz zobaczyć deklarację elementu, który pojawia się w oknie **definicji kodu** , kliknij prawym przyciskiem myszy element i kliknij polecenie **Przejdź do definicji**.

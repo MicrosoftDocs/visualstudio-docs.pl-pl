@@ -6,14 +6,14 @@ ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.assetid: 7b866776-f2d5-4823-8d15-919f889db26f
 caps.latest.revision: 31
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 54570e4ec1368226e19b602cd715c3da3922bbb1
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 8e314b63490387b94c068e178f0d02db4822921f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871644"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672168"
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>Testowanie aplikacji platformy UWP i 8.1 Phone systemu Windows za pomocą kodowanych testów interfejsu użytkownika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ Ten przewodnik służy do tworzenia testów interfejsu użytkownika dla aplikacj
 
 4. W emulatorze Uruchom aplikację i użyj narzędzia krzyżyka, aby zaznaczyć formant przycisku. Następnie Dodaj kontrolkę Button do mapy formantów interfejsu użytkownika.
 
-    ![Używanie narzędzia krzyżyk do mapowania formantów&#45;](../test/media/cuit-phone-mapbuttoncontrol.png "CUIT_Phone_MapButtonControl")
+    ![&#45;Używanie narzędzia krzyżyk do mapowania formantów](../test/media/cuit-phone-mapbuttoncontrol.png "CUIT_Phone_MapButtonControl")
 
 5. Aby dodać kontrolkę TextBox do mapy formantów interfejsu użytkownika, Powtórz poprzedni krok.
 
@@ -122,7 +122,7 @@ Ten przewodnik służy do tworzenia testów interfejsu użytkownika dla aplikacj
 
      **Visual Basic**
 
-     W Eksplorator rozwiązań otwórz plik CodedUITest1. vb. W kodzie metody testowej okno CodedUITestMethod1 () kliknij prawym przyciskiem myszy wywołanie metody potwierdzenia, która została automatycznie dodana `Me.UIMap.AssertMethod1()` , i wybierz **Przejdź do definicji**. Spowoduje to otwarcie pliku UIMap. Designer. vb w edytorze kodu, dzięki czemu można wyświetlić kod dodany dla metody Assert i kontrolek.
+     W Eksplorator rozwiązań otwórz plik CodedUITest1. vb. W kodzie metody testowej okno CodedUITestMethod1 () kliknij prawym przyciskiem myszy wywołanie metody assertion, która została automatycznie dodana `Me.UIMap.AssertMethod1()` i wybierz **Przejdź do definicji**. Spowoduje to otwarcie pliku UIMap. Designer. vb w edytorze kodu, dzięki czemu można wyświetlić kod dodany dla metody Assert i kontrolek.
 
     > [!WARNING]
     > Nie należy modyfikować pliku UIMap.designer.cs ani UIMap. Designer. vb bezpośrednio. W takim przypadku zmiany wprowadzone w pliku zostaną nadpisywane przy każdym wygenerowaniu testu.
@@ -312,46 +312,46 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 
 ```
 
-## <a name="q--a"></a>Pytania i odpowiedzi
+## <a name="q--a"></a>p & A
 
-### <a name="q-do-i-have-to-deploy-the-windows-phone-app-in-the-emulator-in-order-to-map-ui-controls"></a>PYTANIA Czy muszę wdrożyć aplikację Windows Phone w emulatorze w celu zamapowania formantów interfejsu użytkownika?
- ODP.: Tak, Konstruktor kodowanego testu interfejsu użytkownika wymaga uruchomienia emulatora i wdrożenia aplikacji. W przeciwnym razie zgłosi komunikat o błędzie informujący, że nie można odnaleźć działającego emulatora.
+### <a name="q-do-i-have-to-deploy-the-windows-phone-app-in-the-emulator-in-order-to-map-ui-controls"></a>P: Czy muszę wdrożyć aplikację Windows Phone w emulatorze w celu zamapowania formantów interfejsu użytkownika?
+ Odp **.: tak**, Konstruktor kodowanego testu interfejsu użytkownika wymaga uruchomienia emulatora i wdrożenia aplikacji. W przeciwnym razie zgłosi komunikat o błędzie informujący, że nie można odnaleźć działającego emulatora.
 
-### <a name="TestingPhoneAppsCodedUI_EmulatorDevice"></a>PYTANIA Czy testy można wykonywać tylko na emulatorze, czy też użyć urządzenia fizycznego?
- ODP.: Każda opcja jest obsługiwana. Element docelowy do wykonania testu jest wybierany przez zmianę typu emulatora lub wybranie urządzenia na pasku narzędzi urządzenia. Jeśli urządzenie jest zaznaczone, urządzenie niebieskie musi być podłączone do jednego z portów USB maszyny.
+### <a name="TestingPhoneAppsCodedUI_EmulatorDevice"></a>P: czy testy można wykonać tylko na emulatorze, czy też użyć urządzenia fizycznego?
+ Odp **.: Każda**opcja jest obsługiwana. Element docelowy do wykonania testu jest wybierany przez zmianę typu emulatora lub wybranie urządzenia na pasku narzędzi urządzenia. Jeśli urządzenie jest zaznaczone, urządzenie niebieskie musi być podłączone do jednego z portów USB maszyny.
 
  ![Wybierz wersję emulatora lub urządzenie physcial](../test/media/cuit-phone-testtarget.png "CUIT_Phone_TestTarget")
 
-### <a name="q-why-dont-i-see-the-option-to-record-my-coded-ui-test-in-the-generate-code-for-a-coded-ui-test-dialog"></a>PYTANIA Dlaczego nie widzę opcji rejestrowania kodowanego testu interfejsu użytkownika w oknie dialogowym generowanie kodu dla kodowanego testu interfejsu użytkownika?
- ODP.: Opcja rejestrowania nie jest obsługiwana w przypadku aplikacji Windows Phone.
+### <a name="q-why-dont-i-see-the-option-to-record-my-coded-ui-test-in-the-generate-code-for-a-coded-ui-test-dialog"></a>P: Dlaczego nie widzę opcji rejestrowania kodowanego testu interfejsu użytkownika w oknie dialogowym generowanie kodu dla kodowanego testu interfejsu użytkownika?
+ Odp **.: opcja**rejestrowania nie jest obsługiwana w przypadku aplikacji Windows Phone.
 
-### <a name="q-can-i-create-a-coded-ui-test-for-my-windows-phone-apps-based-on-winjs-silverlight-or-html5"></a>PYTANIA Czy mogę utworzyć kodowany test interfejsu użytkownika dla aplikacji Windows Phone w oparciu o WinJS, Silverlight lub HTML5?
- ODP.: Nie, obsługiwane są tylko aplikacje oparte na języku XAML.
+### <a name="q-can-i-create-a-coded-ui-test-for-my-windows-phone-apps-based-on-winjs-silverlight-or-html5"></a>P: Czy można utworzyć kodowany test interfejsu użytkownika dla aplikacji Windows Phone w oparciu o WinJS, Silverlight lub HTML5?
+ Odp **.: nie**, obsługiwane są tylko aplikacje oparte na języku XAML.
 
-### <a name="q-can-i-create-coded-ui-tests-for-my-windows-phone-apps-on-a-system-that-is-not-running-windows-81-or-windows-10"></a>PYTANIA Czy można tworzyć kodowane testy interfejsu użytkownika dla aplikacji Windows Phone w systemie, który nie jest uruchomiony Windows 8.1 lub Windows 10?
- ODP.: Nie, szablony projektów kodowanego testu interfejsu użytkownika są dostępne tylko w systemach Windows 8.1 i Windows 10. Aby utworzyć automatyzację dla aplikacji platforma uniwersalna systemu Windows (platformy UWP), musisz mieć system Windows 10.
+### <a name="q-can-i-create-coded-ui-tests-for-my-windows-phone-apps-on-a-system-that-is-not-running-windows-81-or-windows-10"></a>P: Czy można tworzyć kodowane testy interfejsu użytkownika dla aplikacji Windows Phone w systemie, który nie jest uruchomiony Windows 8.1 lub Windows 10?
+ Odp **.:** nie, szablony projektów kodowanego testu interfejsu użytkownika są dostępne tylko w systemach Windows 8.1 i Windows 10. Aby utworzyć automatyzację dla aplikacji platforma uniwersalna systemu Windows (platformy UWP), musisz mieć system Windows 10.
 
 <a name="uwpapps"></a>
-### <a name="q-how-do-i-create-coded-ui-tests-for-universal-windows-platform-uwp-apps"></a>PYTANIA Jak mogę utworzyć kodowane testy interfejsu użytkownika dla aplikacji platforma uniwersalna systemu Windows (platformy UWP)?
- ODP.: W zależności od platformy, w której testowasz aplikację platformy UWP, Utwórz projekt kodowanego testu interfejsu użytkownika w jeden z następujących sposobów:
+### <a name="q-how-do-i-create-coded-ui-tests-for-universal-windows-platform-uwp-apps"></a>P: Jak mogę utworzyć kodowane testy interfejsu użytkownika dla aplikacji platforma uniwersalna systemu Windows (platformy UWP)?
+ Odp **.: w**zależności od platformy, w której testowasz aplikację platformy UWP, Utwórz projekt kodowanego testu interfejsu użytkownika w jeden z następujących sposobów:
 
-- Aplikacja platformy UWP uruchomiona na komputerze lokalnym będzie działać jako aplikacja ze sklepu. Aby to przetestować, należy użyć szablonu **projektu kodowanego testu interfejsu użytkownika (Windows)** . Aby znaleźć ten szablon podczas tworzenia nowego projektu, przejdź do okna i **uniwersalnego** węzła. Lub przejdź do okna, systemu Windows **8**, węzła **systemu Windows** .
+- Aplikacja platformy UWP uruchomiona na komputerze lokalnym będzie działać jako aplikacja ze sklepu. Aby to przetestować, należy użyć szablonu **projektu kodowanego testu interfejsu użytkownika (Windows)** . Aby znaleźć ten szablon podczas tworzenia nowego projektu, **Przejdź do okna i** **uniwersalnego** węzła. Lub przejdź do okna **, systemu Windows** **8**, węzła **systemu Windows** .
 
-- Aplikacja platformy UWP uruchomiona na urządzeniu przenośnym lub emulatorze będzie uruchamiana jako aplikacja dla telefonu. Aby to przetestować, należy użyć szablonu **projektu kodowanego testu interfejsu użytkownika (Windows Phone)** . Aby znaleźć ten szablon podczas tworzenia nowego projektu, przejdź do okna i **uniwersalnego** węzła. Lub przejdź do węzła **Windows**, **Windows 8** **Windows Phone** .
+- Aplikacja platformy UWP uruchomiona na urządzeniu przenośnym lub emulatorze będzie uruchamiana jako aplikacja dla telefonu. Aby to przetestować, należy użyć szablonu **projektu kodowanego testu interfejsu użytkownika (Windows Phone)** . Aby znaleźć ten szablon podczas tworzenia nowego projektu, **Przejdź do okna i** **uniwersalnego** węzła. Lub przejdź do węzła **Windows**, **Windows 8** **Windows Phone** .
 
   Po utworzeniu projektu tworzenie testu pozostaje tak samo jak poprzednio.
 
-### <a name="q-can-i-select-controls-that-are-outside-the-emulator"></a>PYTANIA Czy mogę wybrać kontrolki, które znajdują się poza emulatorem?
- ODP.: Nie, Konstruktor nie będzie wykrywał ich.
+### <a name="q-can-i-select-controls-that-are-outside-the-emulator"></a>P: Czy mogę wybrać kontrolki, które znajdują się poza emulatorem?
+ Odp **.: nie**, Konstruktor nie będzie wykrywał.
 
-### <a name="q-can-i-use-the-coded-ui-test-builder-to-map-controls-using-a-physical-phone-device"></a>PYTANIA Czy można użyć konstruktora kodowanego testu interfejsu użytkownika do mapowania kontrolek za pomocą fizycznego urządzenia telefonicznego?
- ODP.: Nie, Konstruktor może mapować tylko elementy interfejsu użytkownika, jeśli aplikacja została wdrożona do emulatora.
+### <a name="q-can-i-use-the-coded-ui-test-builder-to-map-controls-using-a-physical-phone-device"></a>P: Czy można użyć konstruktora kodowanego testu interfejsu użytkownika do mapowania kontrolek za pomocą fizycznego urządzenia telefonicznego?
+ Odp.: nie, Konstruktor może mapować tylko elementy interfejsu **użytkownika, jeśli**aplikacja została wdrożona do emulatora.
 
-### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>PYTANIA Dlaczego nie mogę zmodyfikować kodu w pliku UIMap. Designer?
- ODP.: Wszelkie zmiany kodu wprowadzone w pliku UIMapDesigner.cs zostaną każdorazowo zastąpione przy generowaniu kodu za pomocą UIMap — Konstruktora kodowanego testu interfejsu użytkownika. Jeśli trzeba zmodyfikować nagraną metodę, należy skopiować ją do pliku UIMap.cs i zmienić jej nazwę. Plik UIMap.cs może służyć do zastępowania metod i właściwości w pliku UIMapDesigner.cs. Musisz usunąć odwołanie do oryginalnej metody w pliku Coded UITest.cs, a następnie zastąpić je zmienioną nazwą metody.
+### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>P: Dlaczego nie mogę zmodyfikować kodu w pliku UIMap. Designer?
+ Odp **.: wszelkie**zmiany kodu wprowadzone w pliku UIMapDesigner.cs zostaną nadpisywane przy każdym wygenerowaniu kodu za pomocą konstruktora kodowanego testu interfejsu użytkownika UIMap. Jeśli trzeba zmodyfikować nagraną metodę, należy skopiować ją do pliku UIMap.cs i zmienić jej nazwę. Plik UIMap.cs może służyć do zastępowania metod i właściwości w pliku UIMapDesigner.cs. Musisz usunąć odwołanie do oryginalnej metody w pliku Coded UITest.cs, a następnie zastąpić je zmienioną nazwą metody.
 
-### <a name="q-can-i-run-a-coded-ui-test-on-my-windows-phone-app-from-the-command-line"></a>PYTANIA Czy można uruchomić kodowany test interfejsu użytkownika w aplikacji Windows Phone z poziomu wiersza polecenia?
- ODP.: Tak, użyj pliku runsettings, aby określić urządzenie docelowe dla wykonywania testów. Na przykład:
+### <a name="q-can-i-run-a-coded-ui-test-on-my-windows-phone-app-from-the-command-line"></a>P: Czy można uruchomić kodowany test interfejsu użytkownika w aplikacji Windows Phone z poziomu wiersza polecenia?
+ Odp **.: tak**, użyj pliku runsettings, aby określić urządzenie docelowe dla wykonywania testów. Na przykład:
 
  **VSTest. Console. exe "pathToYourCodedUITestDll"/Settings: devicetarget. runsettings**
 
@@ -369,12 +369,12 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 </RunSettings>
 ```
 
-### <a name="q-what-are-the-differences-between-coded-ui-tests-for-xaml-based-windows-store-apps-and-windows-phone-apps"></a>PYTANIA Jakie są różnice między kodowanymi testami interfejsu użytkownika dla aplikacji ze sklepu Windows opartych na języku XAML i aplikacji Windows Phone?
- ODP.: Oto niektóre kluczowe różnice:
+### <a name="q-what-are-the-differences-between-coded-ui-tests-for-xaml-based-windows-store-apps-and-windows-phone-apps"></a>P: Jakie są różnice między kodowanymi testami interfejsu użytkownika dla aplikacji ze sklepu Windows opartych na języku XAML i aplikacji Windows Phone?
+ Odp **.: są to następujące**podstawowe różnice:
 
 |Funkcja|Aplikacje Windows Store|Aplikacje Windows Phone|
 |-------------|------------------------|------------------------|
-|Cel dla uruchomionych testów|Komputer lokalny lub zdalny. Komputery zdalne można określić w przypadku używania zautomatyzowanego przypadku testowego do uruchamiania testów. Zobacz [Automatyzowanie przypadku testowego w Microsoft Test Manager](https://msdn.microsoft.com/library/4e02568b-9cde-47cc-b41c-82726c177e42).|Emulator lub urządzenie. Zobacz, [Q: Czy testy można wykonywać tylko na emulatorze, czy też użyć urządzenia fizycznego? ](#TestingPhoneAppsCodedUI_EmulatorDevice) w tym temacie.|
+|Cel dla uruchomionych testów|Komputer lokalny lub zdalny. Komputery zdalne można określić w przypadku używania zautomatyzowanego przypadku testowego do uruchamiania testów. Zobacz [Automatyzowanie przypadku testowego w Microsoft Test Manager](https://msdn.microsoft.com/library/4e02568b-9cde-47cc-b41c-82726c177e42).|Emulator lub urządzenie. Zobacz, [p: czy testy można wykonać tylko na emulatorze, czy też użyć urządzenia fizycznego?](#TestingPhoneAppsCodedUI_EmulatorDevice) w tym temacie.|
 |Wykonywanie z wiersza polecenia|Plik ustawień nie jest wymagany do określenia celu.|Plik runsettings jest wymagany do określenia celu.|
 |Wyspecjalizowane klasy dla formantów powłoki|[DirectUIControl](/previous-versions/dn248208(v=vs.140))|<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl>|
 |Kontrolka WebView w aplikacji XAML|Obsługiwane w przypadku używania specjalnych klas języka HTML * do współpracy z elementami HTML. Zobacz <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>.|Nieobsługiwane.|

@@ -1,5 +1,5 @@
 ---
-title: Okno dialogowe Edytor warunku reguły (starsza wersja) | Dokumentacja firmy Microsoft
+title: Edytor warunku reguły — okno dialogowe (starsza wersja) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -10,82 +10,76 @@ helpviewer_keywords:
 - Rule Condition dialog box
 ms.assetid: c7ca8be9-de31-4a64-939c-4d53a50d5e29
 caps.latest.revision: 6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8237c8e29007d010cd99e4323bf8e88a23b7e9fb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 93aef1e4466bd88d87ebce71161dcd1665178317
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63006830"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72663352"
 ---
 # <a name="rule-condition-editor-dialog-box-legacy"></a>Edytor warunku reguły, okno dialogowe (starsza wersja)
-W tym temacie opisano sposób użycia **Edytor warunku reguły** okno dialogowe w starszej wersji [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Użyj starszego [!INCLUDE[wfd2](../includes/wfd2-md.md)] konieczność docelowy: [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
-  
- Tworzenie i modyfikowanie warunki reguły deklaratywnej za pomocą **Edytor warunku reguły** okno dialogowe. Te warunki reguły są widoczne jako właściwości na następujących działaniach out-of-box Windows Workflow Foundation:  
-  
-- [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
-  
-- [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
-  
-- [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
-  
-- [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
-  
-- [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040)  
-  
-- [StateMachineWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65045)  
-  
-  Możesz uzyskać dostęp do **Edytor warunku reguły** okno dialogowe, za pomocą [wybierz warunek okno dialogowe (starsza wersja)](../workflow-designer/select-condition-dialog-box-legacy.md).  
-  
-  W poniższej tabeli opisano elementy interfejsu użytkownika **Edytor warunku reguły** okno dialogowe.  
-  
-|Element interfejsu użytkownika|Opis|  
-|----------------|-----------------|  
-|**Warunek:**|Wprowadź wyrażenie dla warunku reguły.|  
-|**OK**|Kliknij, aby zapisać warunek reguły.|  
-  
-## <a name="entering-condition-expressions"></a>Wprowadzanie wyrażenia warunku  
- Warunek wyrażenia są wprowadzane jako tekst. Możesz wpisać **to.** do edytora, aby odwoływać się do pola, właściwości i metody używane w przepływie pracy przy użyciu menu podobne do funkcji IntelliSense. Lub możesz bezpośrednio wpisać nazwę elementu członkowskiego przepływu pracy. Operatory logiczne można dodać do warunku, takich jak AND, OR i NOT. Można również dodać predykatów. Predykat jest operator binarny i dwóch argumentów operacji. Operatory dwuargumentowe, obsługiwane są **==** , **>** , **\<** , **>=** , i **<=** . Obsługiwane argumenty operacji są wartości stałej, funkcja arytmetyczne i zakresie publiczne elementy członkowskie.  
-  
- Można określić typ porównania i możesz porównać **null** ani być pustym ciągiem. Można wprowadzić zagnieżdżone wywołania do elementów członkowskich na zmienną, która zawiera typ złożony, na przykład `this.Address.State == "WA"`.  
-  
- Edytor warunku reguły obsługuje następujące operatory:  
-  
-- Operatory relacyjne: ==, =,! =  
-  
-- Operatory porównania: <, \<=, >, > =  
-  
-- Operatory arytmetyczne: +, -, *, / MOD  
-  
-- Operatory logiczne: PONADTO &AMP; &AMP;, OR &AMP;#124; &AMP;#124;, NIE!  
-  
-- Bitwise operators: &, &#124;  
-  
-  Kolejność wykonywania wyrażenia następuje reguły pierwszeństwa operatorów języka C#.  
-  
-  Edytor warunku reguły obsługuje następujące wyrażenia liczbowego:  
-  
-  this.i == 1D (rozwiązuje 1.0)  
-  
-  this.i == 1E1 (jest rozpoznawana jako 10.0)  
-  
-  this.i == 1L (rozwiązuje jako wartość długa)  
-  
-  this.i == 1 mln (rozwiązuje jako ułamek dziesiętny)  
-  
-  this.i == 1F (jest rozpoznawana jako pojedynczy)  
-  
-  this.i == 1U (jest rozpoznawana jako unsigned int)  
-  
-  Aby uzyskać więcej informacji o warunkach, zobacz [za pomocą warunków w przepływach pracy](http://go.microsoft.com/fwlink?LinkID=65009).  
-  
-## <a name="see-also"></a>Zobacz też  
- [IfElseActivity](http://go.microsoft.com/fwlink?LinkID=65033)   
- [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)   
- [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)   
- [Działanie WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)   
- [Wybieranie warunku, okno dialogowe (starsza wersja)](../workflow-designer/select-condition-dialog-box-legacy.md)   
- [Za pomocą warunków w przepływach pracy](http://go.microsoft.com/fwlink?LinkID=65009)   
- [Starsza wersja projektanta pomocy interfejsu użytkownika programu Windows Workflow Foundation](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)
+W tym temacie opisano sposób użycia okna dialogowego **Edytor warunku reguły** w starszej [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Użyj starszej [!INCLUDE[wfd2](../includes/wfd2-md.md)], jeśli chcesz wskazać [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+
+ Można tworzyć i modyfikować warunki reguły deklaracyjnej przy użyciu okna dialogowego **Edytor warunku reguły** . Te warunki reguły są udostępniane jako właściwości w następujących Windows Workflow Foundation działaniach gotowych:
+
+- [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)
+
+- [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)
+
+- [Działanie ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)
+
+- [While](http://go.microsoft.com/fwlink?LinkID=65049)
+
+- [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040)
+
+- [StateMachineWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65045)
+
+  Dostęp do okna dialogowego **Edytor warunku reguły** można uzyskać, korzystając z [okna dialogowego Wybieranie warunku (starsza wersja)](../workflow-designer/select-condition-dialog-box-legacy.md).
+
+  W poniższej tabeli opisano elementy interfejsu użytkownika (UI) okna dialogowego **Edytor warunku reguły** .
+
+|Element interfejsu użytkownika|Opis|
+|----------------|-----------------|
+|**Rozgrzewa**|Wprowadź wyrażenie dla warunku reguły.|
+|**Ok**|Kliknij, aby zapisać warunek reguły.|
+
+## <a name="entering-condition-expressions"></a>Wprowadzanie wyrażeń warunku
+ Wyrażenia warunku są wprowadzane jako tekst. Możesz to wpisać **.** do edytora, aby odwoływać się do pól, właściwości i metod używanych w przepływie pracy przy użyciu menu IntelliSense. Lub można wpisać bezpośrednio nazwę elementu członkowskiego przepływu pracy. Można dodać operatory logiczne do warunku, takie jak i, lub, i nie. Można również dodać predykaty. Predykat jest operatorem binarnym i dwoma operandami. Obsługiwane operatory binarne to **==** , **>** , **\<** , **>=** i **<=** . Obsługiwane argumenty operacji to stała wartość, funkcja arytmetyczna i publiczne elementy członkowskie z zakresem.
+
+ Można określić typ porównania i można ją porównać z **wartością null** lub ciągiem pustym. Można wykonywać zagnieżdżone wywołania do elementów członkowskich na zmiennej, która zawiera typ złożony, na przykład `this.Address.State == "WA"`.
+
+ Edytor warunku reguły obsługuje następujące operatory:
+
+- Operatory relacyjne: = =, =,! =
+
+- Operatory porównania: <, \< =, >, > =
+
+- Operatory arytmetyczne: +,-, *,/, MOD
+
+- Operatory logiczne: i, & &, lub, &#124; &#124;, nie,!
+
+- Operatory bitowe: &,&#124;
+
+  Pierwszeństwo operatorów wyrażeń C# następuje po regułach pierwszeństwa operatorów.
+
+  Edytor warunku reguły obsługuje następujące wyrażenia liczbowe:
+
+  this. i = 1D (jest to rozwiązywane do 1,0)
+
+  this. i = = 1E1 (jest to rozwiązywane do 10,0)
+
+  this. i = = 1L (jako Long)
+
+  Ta wartość. i = = 1M (jest rozpoznawana jako liczba dziesiętna)
+
+  this. i = = 1F (jest rozpoznawany jako pojedynczy)
+
+  this. i = = 1U (jest rozpoznawana jako liczba całkowita bez znaku)
+
+  Aby uzyskać więcej informacji o warunkach, zobacz [Używanie warunków w przepływach pracy](http://go.microsoft.com/fwlink?LinkID=65009).
+
+## <a name="see-also"></a>Zobacz też
+ [IfElseActivity](http://go.microsoft.com/fwlink?LinkID=65033) [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017) [](http://go.microsoft.com/fwlink?LinkID=65039) [](http://go.microsoft.com/fwlink?LinkID=65049) — [okno dialogowe wyboru stanu (starsza wersja)](../workflow-designer/select-condition-dialog-box-legacy.md) [w przypadku przepływów](http://go.microsoft.com/fwlink?LinkID=65009) pracy [starszy projektant programu Windows Workflow Pomoc interfejsu użytkownika Foundation](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)

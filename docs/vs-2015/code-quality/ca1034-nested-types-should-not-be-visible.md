@@ -1,5 +1,5 @@
 ---
-title: 'CA1034: Typy zagnieżdżone nie powinny być widoczne | Dokumentacja firmy Microsoft'
+title: 'CA1034: typy zagnieżdżone nie powinny być widoczne | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,40 +12,40 @@ helpviewer_keywords:
 - CA1034
 ms.assetid: e9789a2c-2540-42a1-8705-ae7104011194
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 915b5807f7b14269acf4b7509ffceaecfb13af47
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 33e7ea6aaefcaf5b6cbf0bf8c52ade0b9e68a549
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62536402"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661853"
 ---
-# <a name="ca1034-nested-types-should-not-be-visible"></a>CA1034: Typy zagnieżdżone nie powinny być widoczne
+# <a name="ca1034-nested-types-should-not-be-visible"></a>CA1034: Zagnieżdżone typy nie powinny być widoczne
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|NestedTypesShouldNotBeVisible|
 |CheckId|CA1034|
-|Kategoria|Microsoft.Design|
+|Kategoria|Microsoft. Design|
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Typ widoczny na zewnątrz zawiera deklarację typu widocznego na zewnątrz. Wyliczenia zagnieżdżonych i chronionych typów są wykluczone z tej reguły.
+ Typ widoczny na zewnątrz zawiera niejawnie widoczną deklarację typu. Zagnieżdżone wyliczenia i typy chronione są wykluczone z tej reguły.
 
 ## <a name="rule-description"></a>Opis reguły
- Typ zagnieżdżony to typ zadeklarowany wewnątrz zakresu innego typu. Zagnieżdżone typy są przydatne do enkapsulacji szczegółów implementacji prywatnej typu zawierającego. Używane w tym celu typy zagnieżdżone nie powinny być widoczne na zewnątrz.
+ Typ zagnieżdżony jest zadeklarowany w zakresie innego typu. Zagnieżdżone typy są przydatne do hermetyzowania prywatnych szczegółów implementacji typu zawierającego. Używane w tym celu typy zagnieżdżone nie powinny być widoczne na zewnątrz.
 
- Nie używaj widocznego na zewnątrz typy zagnieżdżone powodują ustawienie logicznego grupowania lub aby uniknąć konfliktów nazw; Zamiast tego należy użyć przestrzeni nazw.
+ Nie należy używać widocznych na zewnątrz zagnieżdżonych typów dla logicznego grupowania lub w celu uniknięcia kolizji nazw; Zamiast tego należy użyć przestrzeni nazw.
 
- Zagnieżdżone typy obejmują pojęcie dostępność składowej, która niektórych programistów niezrozumiały wyraźnie.
+ Zagnieżdżone typy obejmują pojęcie dostępności elementów członkowskich, które nie są jasno zrozumiałe dla niektórych programistów.
 
- Typy chronionych może służyć w podklasy i zagnieżdżone typy w scenariuszach Dostosowywanie zaawansowane.
+ Typy chronione mogą być używane w podklasach i zagnieżdżonych typach w scenariuszach dostosowywania z wyprzedzeniem.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Jeśli nie ma typu zagnieżdżonego, aby być widoczne na zewnątrz, zmień dostępność typu. W przeciwnym razie Usuń typu zagnieżdżonego od jego elementu nadrzędnego. Jeśli zagnieżdżania ma na celu kategoryzowania typu zagnieżdżonego, należy użyć przestrzeni nazw w zamian tworzenie hierarchii.
+ Jeśli typ zagnieżdżony nie ma być widoczny na zewnątrz, Zmień dostępność typu. W przeciwnym razie Usuń Typ zagnieżdżony z jego elementu nadrzędnego. Jeśli celem zagnieżdżenia jest kategoryzowanie typu zagnieżdżonego, zamiast tego należy użyć przestrzeni nazw do utworzenia hierarchii.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Nie pomijaj ostrzeżeń dla tej reguły.

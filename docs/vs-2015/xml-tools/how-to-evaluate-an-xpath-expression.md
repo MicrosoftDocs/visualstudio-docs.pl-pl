@@ -1,56 +1,56 @@
 ---
-title: 'Instrukcje: Ocena wyrażenia XPath | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: szacowanie wyrażenia XPath | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 159ba4ef-75e4-4ac8-80dc-e064e0bec345
 caps.latest.revision: 5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 03c43d272d3c740c55314db5d1b7b6c225b7e5c8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ecec9004506a9bd05d3d773e44bb264af363f96f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421761"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670868"
 ---
-# <a name="how-to-evaluate-an-xpath-expression"></a>Instrukcje: Ocena wyrażenia XPath
+# <a name="how-to-evaluate-an-xpath-expression"></a>Instrukcje: szacowanie wyrażenia XPath
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Można obliczyć wyrażenia XPath z **QuickWatch** okno dialogowe. Wyrażenie XPath muszą być prawidłowe zgodnie z zaleceniem W3C XPath 1.0. Bieżący kontekst w XSLT — oznacza to, `self::node()` w węźle **lokalne** okna — zapewnia kontekstu oceny wyrażenia XPath.  
-  
- Na poniższej liście opisano, jakie funkcje są obsługiwane podczas obliczania wyrażenia XPath:  
-  
-- Wbudowane funkcje XPath są obsługiwane.  
-  
-- Wbudowane funkcje XSLT nie są obsługiwane.  
-  
-- Funkcje zdefiniowane przez użytkownika nie są obsługiwane.  
-  
+Wyrażenia XPath można obliczyć przy użyciu okna dialogowego **QuickWatch** . Wyrażenie XPath musi być prawidłowe zgodnie z zaleceniem W3C XPath 1,0. Bieżący kontekst XSLT — to znaczy węzeł `self::node()` w oknie **zmiennych lokalnych** — zawiera kontekst oceny dla wyrażenia XPath.
+
+ Na poniższej liście opisano, które funkcje są obsługiwane podczas oceniania wyrażenia XPath:
+
+- Obsługiwane są wbudowane funkcje języka XPath.
+
+- Wbudowane funkcje XSLT nie są obsługiwane.
+
+- Funkcje zdefiniowane przez użytkownika nie są obsługiwane.
+
 > [!NOTE]
-> W poniższej procedurze użyto belowAvg.xsl i books.xml pliki z [instruktażu: Debugowanie arkusza stylów XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md) tematu.  
-  
-### <a name="to-evaluate-an-xpath-expression"></a>Aby szacować wyrażenia XPath  
-  
-1. Wstaw punkt przerwania w `xsl:if` taga otwierającego.  
-  
-2. Kliknij przycisk **debugowania XSL** na listwie narzędziowej edytora XML.  
-  
-     Debuger rozpoczyna się i przerywa na `xsl:if` tagu.  
-  
-3. Kliknij prawym przyciskiem myszy i wybierz **QuickWatch**.  
-  
-     **QuickWatch** zostanie wyświetlone okno dialogowe.  
-  
-4. Wprowadź `./price/text()` w **wyrażenie** pole **QuickWatch** dialogowym i kliknij przycisk **to ponowne ocenienie**.  
-  
-     Cena bieżącego węzła książki, który pojawia się w **wartość** pole.  
-  
-5. Zmień wyrażenie XPath `./price/text() < $bookAverage` i kliknij przycisk **to ponowne ocenienie**.  
-  
-     **Wartość** pole pokazuje, że wyrażenie XPath daje w wyniku `true`.  
-  
-## <a name="see-also"></a>Zobacz też  
+> Poniższa procedura korzysta z plików belowAvg. xsl i Books. XML z [przewodnika: debugowanie arkusza stylów XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md) .
+
+### <a name="to-evaluate-an-xpath-expression"></a>Aby oszacować wyrażenie XPath
+
+1. Wstaw punkt przerwania w tagu początkowym `xsl:if`.
+
+2. Kliknij przycisk **DEBUGUJ XSL** na pasku narzędzi edytora XML.
+
+     Debuger rozpocznie działanie i przerwie w tagu `xsl:if`.
+
+3. Kliknij prawym przyciskiem myszy i wybierz pozycję **QuickWatch**.
+
+     Zostanie wyświetlone okno dialogowe **QuickWatch** .
+
+4. W polu **wyrażenie** okna dialogowego **QuickWatch** wprowadź `./price/text()` i kliknij przycisk **Oblicz**ponownie.
+
+     W polu **wartość** zostanie wyświetlona cena bieżącego węzła księgi.
+
+5. Zmień wyrażenie XPath na `./price/text() < $bookAverage` i kliknij przycisk **Oblicz wszystko**.
+
+     Pole **wartość** pokazuje, że wyrażenie XPath oblicza wartość `true`.
+
+## <a name="see-also"></a>Zobacz też
  [Debugowanie kodu XSLT](../xml-tools/debugging-xslt.md)

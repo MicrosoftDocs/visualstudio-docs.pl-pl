@@ -1,5 +1,5 @@
 ---
-title: Wywoływanie debugera dla programu Windows Workflow Foundation (starsza wersja) | Dokumentacja firmy Microsoft
+title: Wywoływanie debugera dla Windows Workflow Foundation (starsza wersja) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -17,43 +17,43 @@ helpviewer_keywords:
 - debugging workflows, starting the debugger
 ms.assetid: d6f58e35-5cce-4ff2-9afc-b2d9d0f819cf
 caps.latest.revision: 6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 82532fc2864bcb4c19b0cf122e60fd9a64b2dbf9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bcceca362f3c2a891d36f8f4e8071d0e35c8f164
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62952922"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658978"
 ---
 # <a name="invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy"></a>Wywoływanie debugera programu Visual Studio dla programu Windows Workflow Foundation (starsza wersja)
-W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] debugera w celu debugowania [!INCLUDE[wf](../includes/wf-md.md)] aplikacji w starszej wersji [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Użyj starszego [!INCLUDE[wfd2](../includes/wfd2-md.md)] konieczność docelowy: [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+W tym temacie opisano, jak za pomocą debugera [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] debugować aplikacje [!INCLUDE[wf](../includes/wf-md.md)] w starszej [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Użyj starszej [!INCLUDE[wfd2](../includes/wfd2-md.md)], jeśli chcesz wskazać [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
- Ogólnie rzecz biorąc przepływy pracy w starszej wersji debugowania w sytuacji, tak samo, jak można debugować programy napisane w różnych językach programowania Visual Studio. Możesz rozpocząć [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)] debugera dla Windows Workflow Foundation w następujący sposób:
+ Ogólnie rzecz biorąc, można debugować starsze przepływy pracy, podobnie jak debugowanie programów utworzonych w innych językach programowania programu Visual Studio. Debuger [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)] można uruchomić dla Windows Workflow Foundation w następujący sposób:
 
-- Wybierz **dołączyć do procesu** na **debugowania** menu, aby wybrać uruchomionego wystąpienia przepływu pracy z dostępne procesy.
+- Wybierz pozycję **Dołącz do procesu** w menu **Debuguj** , aby wybrać uruchomione wystąpienie przepływu pracy z dostępnych procesów.
 
-- Naciśnij klawisz **F5** uruchomione wystąpienie przepływu pracy lub będą nadal działać po został trafiony punkt przerwania.
+- Naciśnij klawisz **F5** , aby rozpocząć Uruchamianie wystąpienia przepływu pracy lub kontynuować działanie po trafieniu punktu przerwania.
 
-## <a name="stepping-through-code"></a>Krokowe wykonywanie kodu
- Debuger obsługuje jeden z typowych procedur debugowania wykonywania krokowego, który jest wykonywanie jednego wiersza kodu naraz. Istnieją trzy polecenia do przechodzenia przez kod:
+## <a name="stepping-through-code"></a>Krokowe przechodzenie przez kod
+ Debuger obsługuje jedną z najbardziej typowych procedur debugowania, wykonując krok, który wykonuje kod jeden wiersz jednocześnie. Istnieją trzy polecenia umożliwiające przechodzenie przez kod:
 
-- **Krok**: Możesz wejść do czynności za pomocą **F11**. Debuger nie wchodzi do dowolnej procedury obsługi, który jest zdefiniowany. Jeśli żadna procedura obsługi nie jest zdefiniowany, Przekrocz działania lub za pomocą złożonych działań, które zawierają inne działania, wkroczenia do pierwszego działania wykonywania. Przechodzenie do kodu obsługi przy użyciu projektanta nie jest obsługiwana dla następujących działań: **IfElseActivity**, **Działanie WhileActivity**, **grupy ConditionedActivityGroup**, lub **ReplicatorActivity**. Aby debugować procedury obsługi skojarzone z tych działań, możesz umieścić jawne punkty przerwania w kodzie.
+- **Krok w**: możesz przejść do działania przy użyciu klawisza **F11**. Debuger kroków do dowolnej zdefiniowanej procedury obsługi. Jeśli nie zdefiniowano programu obsługi, przekroczę działanie lub z działaniami złożonymi, które zawierają inne działania, możesz przejść do pierwszego wykonywanego działania. Przechodzenie do programów obsługi kodu z projektanta nie jest obsługiwane w przypadku następujących działań: **IfElseActivity**, **while**, **ConditionedActivityGroup**i **Replikator**. Aby debugować programy obsługi skojarzone z tymi działaniami, należy umieścić w kodzie jawne punkty przerwania.
 
-- **Wyjdź**: Użytkownik może przechodzić korzyści z używania działania **Shift F11**. Przechodzenie krok po kroku, poza działanie uruchamia bieżące działanie i jego element równorzędny działania ukończone. Debuger jest następnie przerywa w nadrzędnego bieżącego działania. Przy przechodzeniu od obsługi kodu, debuger przerywa na działaniu, z którą jest skojarzony program obsługi.
+- **Wyjdź**: możesz przejść na zewnątrz działania przy użyciu **klawisza Shift-F11**. Wychodzenie z działania powoduje uruchomienie bieżącego działania i wszystkich jego elementów równorzędnych do ukończenia. Debuger następnie przerwie w elemencie nadrzędnym bieżącego działania. Podczas wykonywania kroków z programu obsługi kodu debuger przerwie się w działaniu, z którym jest skojarzona procedura obsługi.
 
-- **Przekrocz nad**: Użytkownik może przechodzić przez działanie przy użyciu **F10**. Przy przechodzeniu przez działanie złożone. Debuger przerywa na pierwszy element podrzędny wykonywalnego działanie złożone. Przy przechodzeniu przez inne niż złożone, takich jak **CodeActivity** działania, debuger wykonuje działanie i jego związanymi obsługami i przerw na następne działanie. Jeśli działania, który jest wykonywany jest ostatniego działania podrzędne działania złożonego, następnie po wykonaniu, debuger przerywa na działanie nadrzędne.
+- **Przekroczenie: możesz**przekroczyć działanie, używając klawisza **F10**. Podczas wykonywania kroków w ramach działania złożonego. Debuger jest podzielony na pierwszy plik podrzędny działania złożonego. Podczas wykonywania stopniowego wstawiania niezłożonego, takiego jak działanie **elementu CodeActivity** , debuger wykonuje działanie i skojarzone z nim procedury obsługi oraz przerwanie w następnym działaniu. Jeśli wykonywane działanie jest ostatnim działaniem podrzędnym działania złożonego, po wykonaniu debuger przerwie się w działaniu nadrzędnym.
 
 ## <a name="attaching-to-a-process"></a>Dołączanie do procesu
- Aby debugować przepływ pracy przez dołączenie do procesu, wybierz dostępne procesu z **dostępne procesy** pola listy w **dołączyć do procesu** okno dialogowe. Jeśli **automatyczne: Kod przepływu pracy** nie jest wyświetlana w **dołączyć do** tekst pola, a następnie kliknij przycisk **wybierz**. W **Wybieranie typu kodu** okno dialogowe, kliknij przycisk **debugowania tych typów kodu** i wybierz **przepływu pracy**. Następnie kliknij przycisk **OK** i kliknij przycisk **Dołącz**.
+ Aby debugować przepływ pracy przez dołączenie do procesu, wybierz dostępny proces z pola listy **dostępne procesy** w oknie dialogowym **Dołącz do procesu** . Jeśli **automatyczny: kod przepływu pracy** nie jest wyświetlany w polu tekstowym **Dołącz do** , a następnie kliknij przycisk **Wybierz**. W oknie dialogowym **Wybierz typ kodu** kliknij pozycję **Debuguj te typy kodu** i wybierz pozycję **przepływ pracy**. Następnie kliknij przycisk **OK** , a następnie kliknij przycisk **Dołącz**.
 
-## <a name="debugging-with-f5"></a>Debugowanie za pomocą F5
- Jeśli aplikacja hosta przepływu pracy i przepływu pracy DLL znajdują się w różnych projektach programu Visual Studio, na przykład podczas korzystania z biblioteki działania przepływu pracy, musisz ustawić projekt DLL przepływu pracy jako projekt startowy rozwiązania programu Visual Studio do debugowania przepływu pracy za pomocą **F5**. Można również ustawić ścieżkę do aplikacji hosta w projekcie biblioteki DLL przepływu pracy **uruchomienia programu zewnętrznego** właściwości.
+## <a name="debugging-with-f5"></a>Debugowanie za pomocą klawisza F5
+ Jeśli aplikacja hosta przepływu pracy i plik DLL przepływu pracy znajdują się w różnych projektach programu Visual Studio, na przykład w przypadku korzystania z biblioteki działań przepływu pracy należy ustawić projekt biblioteki DLL przepływu pracy jako projekt startowy rozwiązania Visual Studio do debugowania przepływu pracy za pomocą klawisza **F5**. Należy również ustawić ścieżkę do aplikacji hosta w właściwości **Uruchom program zewnętrzny** projektu DLL przepływu pracy.
 
- Aby ustawić projekt startowy w Eksploratorze rozwiązań, kliknij prawym przyciskiem myszy nazwę projektu, a następnie wybierz **Ustaw jako projekt startowy**. Aby ustawić ścieżkę do hosta w **uruchomienia programu zewnętrznego** właściwości, kliknij dwukrotnie projektu przepływu pracy **właściwości** węzła w Eksploratorze rozwiązań i wybierz pozycję **debugowania** Karta. W obszarze **Akcja uruchamiania**, wybierz opcję **uruchomienia programu zewnętrznego** i wprowadź ścieżkę do pliku .exe, który jest hostem przepływu pracy, który chcesz debugować.
+ Aby ustawić projekt startowy w Eksplorator rozwiązań, kliknij prawym przyciskiem myszy nazwę projektu i wybierz pozycję **Ustaw jako projekt startowy**. Aby ustawić ścieżkę do hosta w właściwości **Uruchom program zewnętrzny** , kliknij dwukrotnie węzeł **Właściwości** projektu przepływu pracy w Eksplorator rozwiązań i wybierz kartę **debugowanie** . W obszarze **Akcja początkowa**wybierz pozycję **Uruchom program zewnętrzny** i wprowadź ścieżkę do pliku. exe, który hostuje przepływ pracy, który ma być debugowany.
 
- Jeśli aplikacja hosta jest ustawiony jako projekt startowy, tylko debugera programu Visual Studio jest wywoływany dla debugowania. [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)] debugera dla programu Windows Workflow Foundation nie jest wywoływany. Jeśli używany jest debugera programu Visual Studio, C# lub tylko punkty przerwania z kodu języka Visual Basic są osiągane; punkty przerwania ustawione w Projektancie przepływu pracy nie są osiągane. Na przykład punkt przerwania, który został ustawiony na <xref:System.Workflow.Activities.ParallelActivity> działania w Projektancie zostanie osiągnięty, jeśli [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)] debugera dla programu Windows Workflow Foundation jest używana, ale nie kiedy używać debugera programu Visual Studio.
+ Jeśli aplikacja hosta jest ustawiona jako projekt startowy, tylko debuger programu Visual Studio jest wywoływany do debugowania; Debuger [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)] dla Windows Workflow Foundation nie został wywołany. Jeśli jest używany debuger programu Visual Studio, trafią tylko C# lub Visual Basic punkty przerwania kodu. punkty przerwania ustawione w Projektancie przepływu pracy nie są trafień. Na przykład punkt przerwania ustawiony dla działania <xref:System.Workflow.Activities.ParallelActivity> w projektancie zostaje trafiony, jeśli zostanie użyty debuger [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)] dla Windows Workflow Foundation, ale nie w przypadku korzystania z debugera programu Visual Studio.
 
 ## <a name="see-also"></a>Zobacz też
- [Instrukcje: Ustawianie punktów przerwania w przepływach pracy (starsza wersja)](../workflow-designer/how-to-set-breakpoints-in-workflows-legacy.md) [debugowanie starszych wersji przepływów pracy](../workflow-designer/debugging-legacy-workflows.md)
+ [Instrukcje: ustawianie punktów przerwania w przepływach pracy (starsza wersja)](../workflow-designer/how-to-set-breakpoints-in-workflows-legacy.md) [debugowanie starszych przepływów pracy](../workflow-designer/debugging-legacy-workflows.md)

@@ -11,52 +11,52 @@ helpviewer_keywords:
 - Immediate window
 - first-chance exception notifications
 ms.assetid: d33e7937-73f3-4c69-9df0-777a8713c6f2
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3a8315b087e259e7e1e37dfa8ab30d476bea308
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fa5f804c22090fa79586549db00b13d824a54690
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62995257"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662528"
 ---
 # <a name="immediate-window"></a>Okno bezpośrednie
 
-Użyj **bezpośrednie** okna, aby debugować i obliczać wyrażeń, wykonywania instrukcji i drukowania wartości zmiennych. **Bezpośrednie** okna ocenia wyrażenia, tworząc i przy użyciu obecnie wybranego projektu.
+Użyj okna **bezpośredniego** do debugowania i szacowania wyrażeń, wykonywania instrukcji i drukowania wartości zmiennych. Okno **bezpośrednie** szacuje wyrażenia przez skompilowanie i użycie aktualnie wybranego projektu.
 
-Aby wyświetlić **bezpośrednie** okna, otwórz projekt do edycji, a następnie wybierz **debugowania** > **Windows** > **bezpośrednie**  lub naciśnij **Ctrl**+**Alt**+**I**. Możesz też wprowadzić **Debug.Immediate** w **polecenia** okna.
+Aby wyświetlić okno **bezpośrednie** , Otwórz projekt do edycji, a następnie wybierz polecenie **debuguj**  > **Windows**  > **natychmiastowe** lub naciśnij **klawisze CTRL** +**Alt** +**I**. Możesz również wprowadzić **Debug. Immediate** w oknie **poleceń** .
 
-**Bezpośrednie** okna obsługuje technologię IntelliSense.
+Okno **bezpośrednie** obsługuje funkcję IntelliSense.
 
 ## <a name="display-the-values-of-variables"></a>Wyświetlanie wartości zmiennych
 
-**Bezpośrednie** okno jest szczególnie przydatne podczas debugowania aplikacji. Na przykład, aby sprawdzić wartość zmiennej `varA`, możesz użyć [Print — polecenie](../../ide/reference/print-command.md):
+Okno **bezpośrednie** jest szczególnie przydatne podczas debugowania aplikacji. Na przykład, aby sprawdzić wartość zmiennej `varA`, można użyć [polecenia Print](../../ide/reference/print-command.md):
 
 ```cmd
 >Debug.Print varA
 ```
 
-Znak zapytania (?) jest aliasem `Debug.Print`, dlatego to polecenie można również zapisać:
+Znak zapytania (?) jest aliasem dla `Debug.Print`, więc to polecenie można także napisać:
 
 ```cmd
 ? varA
 ```
 
-Obie wersje to polecenie zwraca wartość zmiennej `varA`.
+Obie wersje tego polecenia zwracają wartość zmiennej `varA`.
 
 > [!TIP]
-> Aby wydać polecenie program Visual Studio w **bezpośrednie** okna, należy poprzedzić polecenie a znak większości (>). Aby wprowadzić kilka poleceń, przełącz się do [okna polecenia](command-window.md).
+> Aby wydać polecenie programu Visual Studio w oknie **bezpośrednim** , należy poprzedzić polecenie znakiem większości (>). Aby wprowadzić wiele poleceń, przełącz się do [okno polecenie](command-window.md).
 
-## <a name="design-time-expression-evaluation"></a>Obliczanie wyrażenia czasu projektowania
+## <a name="design-time-expression-evaluation"></a>Obliczanie wyrażeń czasu projektowania
 
-Możesz użyć **bezpośrednie** okna do wykonania funkcji lub podprocedury w czasie projektowania.
+Za pomocą okna **bezpośredniego** można wykonać funkcję lub procedurę podprocedury w czasie projektowania.
 
-### <a name="execute-a-function-at-design-time"></a>Wykonać funkcję w czasie projektowania
+### <a name="execute-a-function-at-design-time"></a>Wykonaj funkcję w czasie projektowania
 
-1. Skopiuj następujący kod do aplikacji konsoli w języku Visual Basic:
+1. Skopiuj następujący kod do aplikacji konsoli Visual Basic:
 
    ```vb
    Module Module1
@@ -72,38 +72,38 @@ Możesz użyć **bezpośrednie** okna do wykonania funkcji lub podprocedury w cz
    End Module
    ```
 
-2. Na **debugowania** menu, wybierz **Windows** > **bezpośrednie**.
+2. W menu **Debuguj** wybierz pozycję **Windows**  > **natychmiastowe**.
 
-3. Typ `?MyFunction(2)` w **bezpośrednie** okna, a następnie naciśnij klawisz **Enter**.
+3. Wpisz `?MyFunction(2)` w oknie **bezpośrednim** i naciśnij klawisz **Enter**.
 
-    **Bezpośrednie** okno uruchamia `MyFunction` i wyświetla `4`.
+    Okno **bezpośrednie** uruchamia `MyFunction` i wyświetla `4`.
 
-Jeśli funkcja lub podprocedura zawiera punkt przerwania, program Visual Studio przerywa wykonywanie we właściwym miejscu. Można następnie użyć okien debugera do sprawdzenia stanu programu. Aby uzyskać więcej informacji, zobacz [instruktażu: Debugowanie w czasie projektowania](../../debugger/walkthrough-debugging-at-design-time.md).
+Jeśli funkcja lub podprocedura zawiera punkt przerwania, program Visual Studio przerywa wykonywanie w odpowiednim punkcie. Można następnie użyć okien debugera do sprawdzenia stanu programu. Aby uzyskać więcej informacji, zobacz [Przewodnik: debugowanie w czasie projektowania](../../debugger/walkthrough-debugging-at-design-time.md).
 
-Nie można użyć obliczenia wyrażenia czasu projektowania w typach projektów, które wymagają uruchamiania środowiska wykonawczego, w tym Visual Studio Tools dla projektów pakietu Office, projekty sieci web, projektów urządzeń inteligentnych i projektów SQL.
+Nie można użyć oceny wyrażenia czasu projektowania w typach projektów, które wymagają uruchomienia środowiska wykonawczego, w tym Visual Studio Tools dla projektów pakietu Office, projektów sieci Web, projektów urządzeń inteligentnych i projektów SQL.
 
-### <a name="design-time-expression-evaluation-in-multi-project-solutions"></a>Obliczanie wyrażenia czasu projektowania w rozwiązaniach dotyczących wielu projektów
+### <a name="design-time-expression-evaluation-in-multi-project-solutions"></a>Obliczanie wyrażeń w czasie projektowania w rozwiązaniach z obsługą kilku projektów
 
-Podczas ustanawiania kontekstu oceny wyrażenia czasu projektowania, w programie Visual Studio odwołuje się do aktualnie wybranego projektu w Eksploratorze rozwiązań. Jeśli projekt nie jest zaznaczony w oknie Eksploratora rozwiązań, program Visual Studio próbuje obliczyć funkcję względu projektu startowego. Jeśli nie można obliczyć funkcji w bieżącym kontekście, otrzymasz komunikat o błędzie. Jeśli próbujesz obliczyć wartości funkcji w projekcie, który nie jest projektem startowym rozwiązania, a otrzymasz komunikat o błędzie, spróbuj wybrać projekt w Eksploratorze rozwiązań i ponownie dokonać obliczenia.
+Podczas ustanawiania kontekstu oceny wyrażenia czasu projektowania program Visual Studio odwołuje się do aktualnie wybranego projektu w Eksplorator rozwiązań. Jeśli nie wybrano projektu w Eksplorator rozwiązań, program Visual Studio próbuje oszacować funkcję względem projektu startowego. Jeśli funkcja nie może być oceniona w bieżącym kontekście, zostanie wyświetlony komunikat o błędzie. Jeśli próbujesz ocenić funkcję w projekcie, który nie jest projektem startowym rozwiązania i wystąpi błąd, spróbuj wybrać projekt w Eksplorator rozwiązań i ponownie spróbować wykonać próbę.
 
-## <a name="enter-commands"></a>Wprowadzanie poleceń
+## <a name="enter-commands"></a>Wprowadź polecenia
 
-Wprowadź znak większości (>) przy wydawaniu poleceń programu Visual Studio w **bezpośrednie** okna. Użyj **Strzałka w górę** i **Strzałka w dół** klucze do przewijania wcześniej używanych poleceń.
+Wprowadź znak większości (>) podczas wydawania poleceń programu Visual Studio w oknie **bezpośrednim** . Użyj klawiszy Strzałka w **górę** i **Strzałka w dół** , aby przewijać wcześniej użyte polecenia.
 
 |Zadanie|Rozwiązanie|Przykład|
 |----------|--------------|-------------|
-|Ocena wyrażenia.|Należy poprzedzić wyrażenie znakiem zapytania (?).|`? a+b`|
-|Tymczasowo przejdź do trybu poleceń, będąc w trybie bezpośrednim (Aby wykonać jedno polecenie).|Wprowadź polecenie prefacing go o rozmiarze większym niż znak większości (>).|`>alias`|
-|Przełącz do okna wiersza polecenia.|Wprowadź `cmd` prefacing go w oknie o rozmiarze większym niż znak większości (>).|`>cmd`|
-|Przejdź z powrotem do okna bezpośredniego.|Wprowadź `immed` do okna bez znaku większości (>).|`immed`|
+|Oceń wyrażenie.|Oznacz wyrażenie znakiem zapytania (?).|`? a+b`|
+|Tymczasowe wprowadzanie trybu polecenia w trybie bezpośrednim (aby wykonać pojedyncze polecenie).|Wprowadź polecenie, umieszczając je na znaku większości (>).|`>alias`|
+|Przełącz się do okno Polecenie.|Wprowadź `cmd` do okna, umieszczając je na znaku większości (>).|`>cmd`|
+|Przełącz się z powrotem do okna bezpośredniego.|Wprowadź `immed` do okna bez znaku większości (>).|`immed`|
 
 ## <a name="mark-mode"></a>Tryb oznaczania
 
-Po kliknięciu dowolnego poprzedniego wiersza w **bezpośrednie** okna, nastąpi automatyczne przejście w tryb oznaczania. Dzięki temu można wybrać, edytować i skopiować tekst z poprzedniego polecenia, ponieważ w dowolnym edytorze tekstów i wkleić je do bieżącego wiersza.
+Po kliknięciu dowolnego poprzedniego wiersza w oknie **bezpośrednim** zostanie ono automatycznie przesunięte do trybu oznaczania. Dzięki temu można wybrać, edytować i skopiować tekst poprzednich poleceń tak samo jak w dowolnym edytorze tekstów i wkleić je do bieżącego wiersza.
 
 ## <a name="examples"></a>Przykłady
 
-Poniższy przykład przedstawia cztery wyrażeń i ich wyniki w **bezpośrednie** okna dla projektów języka Visual Basic.
+Poniższy przykład pokazuje cztery wyrażenia i ich wyniki w oknie **bezpośrednim** dla projektu Visual Basic.
 
 ```cmd
 j = 2
@@ -121,19 +121,19 @@ Expression has been evaluated and has no value
 
 ## <a name="first-chance-exception-notifications"></a>Powiadomienia o wyjątkach pierwszej szansy
 
-W niektórych konfiguracjach ustawień powiadomienia o wyjątkach pierwszej szansy są wyświetlane w **bezpośrednie** okna.
+W niektórych konfiguracjach ustawień powiadomienia o wyjątkach pierwszej szansy są wyświetlane w oknie **bezpośrednim** .
 
-### <a name="toggle-first-chance-exception-notifications-in-the-immediate-window"></a>Przełącz powiadomień o wyjątkach pierwszej szansy w oknie bezpośrednim
+### <a name="toggle-first-chance-exception-notifications-in-the-immediate-window"></a>Przełącz powiadomienia o wyjątkach pierwszej szansy w oknie bezpośrednim
 
-1. Na **widoku** menu, kliknij przycisk **Windows inne**i kliknij przycisk **dane wyjściowe**.
+1. W menu **Widok** kliknij pozycję **inne okna**, a następnie kliknij pozycję **dane wyjściowe**.
 
-2. Kliknij prawym przyciskiem myszy obszar tekstu **dane wyjściowe** okna, a następnie zaznacz lub odznacz opcję **komunikaty o wyjątkach**.
+2. Kliknij prawym przyciskiem myszy obszar tekstu okna **dane wyjściowe** , a następnie wybierz lub usuń zaznaczenie **komunikatów o wyjątkach**.
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Nawigowanie po kodzie za pomocą debugera](../../debugger/navigating-through-code-with-the-debugger.md)
 - [Okno Polecenie](../../ide/reference/command-window.md)
 - [Pierwsze spojrzenie na debugera](../../debugger/debugger-feature-tour.md)
-- [Przewodnik: Debugowanie w czasie projektowania](../../debugger/walkthrough-debugging-at-design-time.md)
+- [Przewodnik: debugowanie w czasie projektowania](../../debugger/walkthrough-debugging-at-design-time.md)
 - [Visual Studio — aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)
 - [Używanie wyrażeń regularnych w programie Visual Studio](../../ide/using-regular-expressions-in-visual-studio.md)

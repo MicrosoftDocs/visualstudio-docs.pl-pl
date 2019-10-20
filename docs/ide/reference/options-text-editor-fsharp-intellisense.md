@@ -4,35 +4,35 @@ ms.date: 01/16/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.FSharp.IntelliSense
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7227fa83e829fff7bac28fa7bb2b50969768e934
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d293d2c649329f5de8444ea75fd05ddc34738ab4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778459"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666226"
 ---
 # <a name="options-text-editor-f-intellisense"></a>Opcje, Edytor tekstu, F#, IntelliSense
 
-Użyj **IntelliSense** Strona opcji, aby zmodyfikować niektóre ustawienia edytora tekstu dla F#. Dostępu do tej opcji strony, wybierz **narzędzia** > **opcje**, a następnie wybierz **edytora tekstów**  >  **F#**  >  **IntelliSense**.
+Na stronie opcje **IntelliSense** można modyfikować niektóre ustawienia edytora tekstu F#. Aby uzyskać dostęp do tej strony opcji, wybierz pozycję **narzędzia**  > **Opcje**, a następnie wybierz**F#** pozycję **Edytor tekstu**  >   > **IntelliSense**.
 
 ## <a name="completion-lists"></a>Listy uzupełniania
 
 - **Pokaż listę uzupełniania po wpisaniu znaku**
 
-   Gdy ta opcja jest zaznaczona, IntelliSense wyświetla automatycznie na liście uzupełniania po rozpoczęciu wpisywania. Jeśli nie zaznaczysz tej opcji, uzupełnianie przez funkcję IntelliSense będzie nadal dostępna, z poziomu menu IntelliSense lub naciskając **Ctrl** + **miejsca**.
+   Po wybraniu tej opcji funkcja IntelliSense automatycznie wyświetla listę uzupełniania po rozpoczęciu wpisywania. Jeśli nie zaznaczysz tej opcji, uzupełnianie IntelliSense jest nadal dostępne z menu IntelliSense lub naciskając klawisz **Ctrl**  + **miejsce**.
 
-- **Pokaż listę uzupełniania po usunięciu znak**
+- **Pokaż listę uzupełniania po usunięciu znaku**
 
-   Gdy ta opcja jest zaznaczona, IntelliSense automatycznie wyświetla listę odpowiednich uzupełniania po rozpoczęciu usuwania znaki w kodzie.
+   Po wybraniu tej opcji funkcja IntelliSense automatycznie wyświetla odpowiednią listę uzupełniania po rozpoczęciu usuwania znaków w kodzie.
 
 - **Pokaż symbole w nieotwartych przestrzeniach nazw**
 
-   Gdy ta opcja jest zaznaczona, IntelliSense wyświetla listę uzupełniania po rozpoczęciu wpisywania i automatycznie zawiera elementy z przestrzeni nazw, które nie zostały otwarte.
+   Po wybraniu tej opcji funkcja IntelliSense automatycznie wyświetla listę uzupełniania po rozpoczęciu wpisywania i zawiera elementy z przestrzeni nazw, które nie zostały otwarte.
 
 ## <a name="see-also"></a>Zobacz także
 

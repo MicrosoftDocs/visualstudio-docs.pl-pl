@@ -1,5 +1,5 @@
 ---
-title: 'CA2106: Zabezpiecz asercje | Dokumentacja firmy Microsoft'
+title: 'CA2106: potwierdzenia zabezpieczeń | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,17 +12,17 @@ helpviewer_keywords:
 - SecureAsserts
 ms.assetid: 91feb36e-6e2c-436c-8272-5aee31f77e98
 caps.latest.revision: 21
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 1fb1968c6e2750f658f39f009c97fbab133cccab
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 1f333478c952db74fa6a9482cdad91ce6a858301
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65687410"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665999"
 ---
-# <a name="ca2106-secure-asserts"></a>CA2106: Zabezpiecz asercje
+# <a name="ca2106-secure-asserts"></a>CA2106: Potwierdzanie zabezpieczeń
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -36,13 +36,13 @@ ms.locfileid: "65687410"
  Metoda potwierdza uprawnienia i żadne sprawdzenia zabezpieczeń nie są wykonywane na obiekcie wywołującym.
 
 ## <a name="rule-description"></a>Opis reguły
- Potwierdzanie uprawnienia zabezpieczeń bez sprawdzania zabezpieczeń może pozostawić zdatną do wykorzystania słabość zabezpieczeń w kodzie. Przeszukiwania stosu zabezpieczeń zatrzymuje, gdy jest potwierdzone uprawnienia zabezpieczeń. Jeśli uprawnienie jest assert bez wykonywania jakiejkolwiek kontroli obiekt wywołujący i obiekt wywołujący pośrednio wykonanie kodu przy użyciu uprawnień. Potwierdza bez sprawdzania zabezpieczeń są dopuszczalne, tylko gdy masz pewność, że asercja nie można używać w szkodliwy sposób. Asercja jest nieszkodliwe, jeśli kod, który można wywołać jest nieszkodliwe lub użytkownicy nie mogła przekazywać dowolne informacje do kodu, który można wywoływać.
+ Potwierdzanie uprawnienia zabezpieczeń bez sprawdzania zabezpieczeń może pozostawić zdatną do wykorzystania słabość zabezpieczeń w kodzie. Przeszukiwanie stosu zabezpieczeń jest zatrzymywane, gdy zostanie potwierdzone uprawnienie zabezpieczeń. Jeśli zostanie potwierdzone uprawnienie bez wykonywania żadnych operacji sprawdzania wywołującego, obiekt wywołujący może pośrednio wykonać kod przy użyciu uprawnień. Potwierdzenia bez sprawdzania zabezpieczeń są dozwolone tylko wtedy, gdy masz pewność, że potwierdzenia nie można użyć w sposób szkodliwy. Potwierdzenie jest nieszkodliwe, jeśli wywoływany kod jest nieszkodliwy lub użytkownicy nie mogą przekazać dowolnych informacji do kodu, który jest wywoływany.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, należy dodać żądania zabezpieczeń do metody lub jej typ deklarujący.
+ Aby naprawić naruszenie tej zasady, należy dodać żądanie zabezpieczeń do metody lub jej typu deklarującego.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Pomijaj ostrzeżeń dla tej reguły tylko po weryfikacji zabezpieczeń zachowania ostrożność.
+ Pomiń ostrzeżenie z tej reguły tylko po dokładnym przeglądzie zabezpieczeń.
 
 ## <a name="see-also"></a>Zobacz też
- <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName> [Wytyczne dotyczące bezpiecznego programowania](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177)
+ [zasady bezpiecznego kodowania](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName>

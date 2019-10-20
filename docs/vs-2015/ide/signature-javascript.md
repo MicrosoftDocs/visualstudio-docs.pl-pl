@@ -1,5 +1,5 @@
 ---
-title: '&lt;podpis&gt; (JavaScript) | Dokumentacja firmy Microsoft'
+title: '&lt;signature &gt; (JavaScript) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -9,89 +9,85 @@ helpviewer_keywords:
 - signature JavaScript XML tag
 ms.assetid: 319138e7-cfbe-4b37-9643-2ddb7f9c63d4
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 02a4c36f3969ca0f9ef61e817afb82eb8247f041
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b4c640c28ada16a8a03943fcd1362d4fd521772c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68203483"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72671130"
 ---
-# <a name="ltsignaturegt-javascript"></a>&lt;podpis&gt; (JavaScript)
+# <a name="ltsignaturegt-javascript"></a>&gt; &lt;signature (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Grupowanie zestawu powiązanych elementów dla funkcji lub metody, aby udostępnić dokumentację dla przeciążonych funkcji.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```  
-<signature externalid="id" externalFile="filename"  
-    helpKeyword="keyword" locid="descriptionID">  
-</signature>   
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `externalid`  
- Opcjonalny. Jeśli `format` atrybutu dla [ \<lokalizacja >](../ide/loc-javascript.md) element jest `vsdoc`, ten atrybut określa element członkowski identyfikator używany do zlokalizowania kodu XML, który jest skojarzony z sygnaturą. W przeciwieństwie do atrybutu `locid`, ten atrybut określa, czy wszystkie elementy w elemencie członkowskim, które mają ten identyfikator powinny być ładowane. Wszystkie skojarzone informacje opisu występujące w kodzie XML również zostaną scalone z elementami określonymi w podpisie. Dzięki temu można określić dodatkowe elementy, takie jak `<capability>`, w pliku sidecar bez określania ich w pliku źródłowym. `externalid` jest atrybutem opcjonalnym.  
-  
- `externalFile`  
- Opcjonalny. Określa nazwę pliku, w którym ma znaleźć `externalid`. Atrybut ten jest ignorowany, jeśli nie występuje żaden `externalid`. Jest to atrybut opcjonalny. Wartością domyślną jest nazwa bieżącego pliku, ale z rozszerzeniem pliku .xml zamiast js. Domyślnie reguły wyszukiwania zarządzanego zasobu dla lokalizacji są używane do lokalizowania pliku.  
-  
- `helpKeyword`  
- Opcjonalny. Słowo kluczowe dla pomocy F1.  
-  
- `locid`  
- Opcjonalny. Identyfikator informacji o lokalizacji na temat pola. Identyfikator jest albo identyfikatorem elementu członkowskiego albo odpowiada wartości atrybutu `name` w wiązce wiadomości zdefiniowanej przez metadane OpenAjax. Identyfikator typu zależy od formatu określonego w [ \<lokalizacja >](../ide/loc-javascript.md) tagu.  
-  
-## <a name="remarks"></a>Uwagi  
- Należy użyć jednego elementu `<signature>` dla każdego przeciążonego opisu funkcji w pliku .js, lub użyć jednego elementu `<signature>` dla każdego określonego zewnętrznego identyfikatora elementu członkowskiego.  
-  
- Element `<signature>` musi być umieszczony w ciele funkcji przed wszystkimi instrukcjami. Korzystając z [ \<podsumowania >](../ide/summary-javascript.md), [ \<param >](../ide/param-javascript.md), lub [ \<zwraca >](../ide/returns-javascript.md) elementów za pomocą `<signature>` elementu umieścić inne elementy wewnątrz `<signature>` bloku.  
-  
-## <a name="example"></a>Przykład  
- Poniższy kod ilustruje przykład użycia elementu `<signature>`.  
-  
-```javascript  
-// Use of <signature> with externalid.  
-// Requires use of the <loc> tag to identify the external functions.  
-function illuminate(light) {  
-    /// <signature externalid='M:Windows.Devices.Light.Illuminate()' />  
-    /// <signature externalid='M:Windows.Devices.Light.Illuminate(System.Int32)'>  
-    ///   <param name='light' type='Number' />  
-    /// </signature>  
-}  
-  
-// Use of <signature> for overloads implemented in JavaScript.  
-function add(a, b) {  
-    /// <signature>  
-    /// <summary>function summary 1</summary>  
-    /// <param name="a" type="Number">The first number</param>  
-    /// <param name="b" type="Number">The second number</param>  
-    /// <returns type="Number" />  
-    /// </signature>  
-    /// <signature>  
-    /// <summary>function summary 2 – differ by number of params</summary>  
-    /// <param name="a" type="Number">Only 1 parameter</param>  
-    /// <returns type="Number" />  
-    /// </signature>  
-    /// <signature>  
-    /// <summary>function summary 3 – differ by parameter type</summary>  
-    /// <param name="a" type="Number">Number parameter</param>  
-    /// <param name="b" type="String">String parameter</param>  
-    /// <returns type="Number" />  
-    /// </signature>  
-    /// <signature>  
-    /// <summary>function summary 4 – differ by return type</summary>  
-    /// <param name="a" type="Number">The first number</param>  
-    /// <param name="b" type="Number">The second number</param>  
-    /// <returns type="String" />  
-    /// </signature>  
-  
-    return a + b;  
-}  
-```  
-  
-## <a name="see-also"></a>Zobacz też  
+Grupowanie zestawu powiązanych elementów dla funkcji lub metody, aby udostępnić dokumentację dla przeciążonych funkcji.
+
+## <a name="syntax"></a>Składnia
+
+```
+<signature externalid="id" externalFile="filename"
+    helpKeyword="keyword" locid="descriptionID">
+</signature>
+```
+
+#### <a name="parameters"></a>Parametry
+ `externalid` opcjonalny. Jeśli atrybut `format` dla elementu [> \<loc](../ide/loc-javascript.md) jest `vsdoc`, ten ATRYBUT określa identyfikator elementu członkowskiego używany do lokalizowania kodu XML skojarzonego z podpisem. W przeciwieństwie do atrybutu `locid`, ten atrybut określa, czy wszystkie elementy w elemencie członkowskim, które mają ten identyfikator powinny być ładowane. Wszystkie skojarzone informacje opisu występujące w kodzie XML również zostaną scalone z elementami określonymi w podpisie. Dzięki temu można określić dodatkowe elementy, takie jak `<capability>`, w pliku sidecar bez określania ich w pliku źródłowym. `externalid` jest atrybutem opcjonalnym.
+
+ `externalFile` opcjonalny. Określa nazwę pliku, w którym ma znaleźć `externalid`. Atrybut ten jest ignorowany, jeśli nie występuje żaden `externalid`. Jest to atrybut opcjonalny. Wartością domyślną jest nazwa bieżącego pliku, ale z rozszerzeniem pliku .xml zamiast js. Domyślnie reguły wyszukiwania zarządzanego zasobu dla lokalizacji są używane do lokalizowania pliku.
+
+ `helpKeyword` opcjonalny. Słowo kluczowe dla pomocy F1.
+
+ `locid` opcjonalny. Identyfikator informacji o lokalizacji na temat pola. Identyfikator jest albo identyfikatorem elementu członkowskiego albo odpowiada wartości atrybutu `name` w wiązce wiadomości zdefiniowanej przez metadane OpenAjax. Typ identyfikatora zależy od formatu określonego w tagu [\<loc >](../ide/loc-javascript.md) .
+
+## <a name="remarks"></a>Uwagi
+ Należy użyć jednego elementu `<signature>` dla każdego przeciążonego opisu funkcji w pliku .js, lub użyć jednego elementu `<signature>` dla każdego określonego zewnętrznego identyfikatora elementu członkowskiego.
+
+ Element `<signature>` musi być umieszczony w ciele funkcji przed wszystkimi instrukcjami. Przy użyciu [\<summary >](../ide/summary-javascript.md), [\<param >](../ide/param-javascript.md)lub [\<returns](../ide/returns-javascript.md) > elementów z elementem `<signature>`, umieść pozostałe elementy wewnątrz bloku `<signature>`.
+
+## <a name="example"></a>Przykład
+ Poniższy kod ilustruje przykład użycia elementu `<signature>`.
+
+```javascript
+// Use of <signature> with externalid.
+// Requires use of the <loc> tag to identify the external functions.
+function illuminate(light) {
+    /// <signature externalid='M:Windows.Devices.Light.Illuminate()' />
+    /// <signature externalid='M:Windows.Devices.Light.Illuminate(System.Int32)'>
+    ///   <param name='light' type='Number' />
+    /// </signature>
+}
+
+// Use of <signature> for overloads implemented in JavaScript.
+function add(a, b) {
+    /// <signature>
+    /// <summary>function summary 1</summary>
+    /// <param name="a" type="Number">The first number</param>
+    /// <param name="b" type="Number">The second number</param>
+    /// <returns type="Number" />
+    /// </signature>
+    /// <signature>
+    /// <summary>function summary 2 – differ by number of params</summary>
+    /// <param name="a" type="Number">Only 1 parameter</param>
+    /// <returns type="Number" />
+    /// </signature>
+    /// <signature>
+    /// <summary>function summary 3 – differ by parameter type</summary>
+    /// <param name="a" type="Number">Number parameter</param>
+    /// <param name="b" type="String">String parameter</param>
+    /// <returns type="Number" />
+    /// </signature>
+    /// <signature>
+    /// <summary>function summary 4 – differ by return type</summary>
+    /// <param name="a" type="Number">The first number</param>
+    /// <param name="b" type="Number">The second number</param>
+    /// <returns type="String" />
+    /// </signature>
+
+    return a + b;
+}
+```
+
+## <a name="see-also"></a>Zobacz też
  [Komentarze dokumentacji XML](../ide/xml-documentation-comments-javascript.md)
