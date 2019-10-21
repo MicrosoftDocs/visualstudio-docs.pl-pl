@@ -1,5 +1,5 @@
 ---
-title: 'Przewodnik: Wyświetlanie uzupełniania instrukcji | Dokumentacja firmy Microsoft'
+title: 'Przewodnik: wyświetlanie uzupełniania instrukcji | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,198 +8,201 @@ ms.assetid: f3152c4e-7673-4047-a079-2326941d1c83
 author: madskristensen
 ms.author: madsk
 manager: jillfra
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: f117209c8e1d57c64ab53df608fe55ae27f0cff0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 82ce8a1b9cbc79925ff2f4a1c1df9d832bb96f7b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66312411"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72632518"
 ---
-# <a name="walkthrough-display-statement-completion"></a>Przewodnik: Wyświetlanie uzupełniania instrukcji
-Uzupełnianie instrukcji opartych na języku można zaimplementować poprzez określenie identyfikatorów, dla których chcesz udostępnić uzupełniania i następnie wyzwalania sesja kończenia. Można zdefiniować uzupełnianie instrukcji w kontekście usługi językowej, zdefiniować własne rozszerzenia nazwy pliku i typu zawartości, a następnie Wyświetl uzupełnianie po prostu tego typu. Lub możesz wyzwolić zakończenia dla istniejącego typu zawartości — na przykład "plaintext". W tym przewodniku pokazano, jak wyzwolić uzupełniania instrukcji dla typu zawartości "w postaci zwykłego tekstu", który jest typem zawartości pliki tekstowe. Typ zawartości "text" jest element nadrzędny elementu wszystkich innych typów zawartości, w tym kodu i pliki XML.
+# <a name="walkthrough-display-statement-completion"></a>Przewodnik: Wyświetlanie instrukcji wyświetlania
+Można zaimplementować uzupełnianie instrukcji opartych na języku przez zdefiniowanie identyfikatorów, dla których chcesz wprowadzić zakończenie, a następnie wyzwalanie sesji ukończenia. Można zdefiniować uzupełnianie instrukcji w kontekście usługi językowej, zdefiniować własne rozszerzenie nazwy pliku i typ zawartości, a następnie wyświetlić uzupełnianie dla tego typu. Można też wyzwolić zakończenie dla istniejącego typu zawartości — na przykład "zwykły tekst". W tym instruktażu pokazano, jak wyzwolić uzupełnianie instrukcji dla typu zawartości "zwykły tekst", który jest typem zawartości plików tekstowych. Typ zawartości "text" jest elementem nadrzędnym wszystkich innych typów zawartości, w tym kodu i plików XML.
 
- Uzupełnianie instrukcji jest zazwyczaj wyzwalany po wpisaniu niektórych znaków — na przykład, wpisując początku identyfikatora takiego jak "za pomocą". Zazwyczaj jest odrzucane, naciskając klawisz **spacja**, **kartę**, lub **Enter** klucz, aby potwierdzić wybór. Możesz zaimplementować funkcje IntelliSense, które mogą powodować podczas pisania znak za pomocą obsługi poleceń dla naciśnięcia klawiszy ( <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejsu) i dostawcy programu obsługi, który implementuje <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> interfejsu. Aby utworzyć źródło uzupełniania, w którym znajduje się lista identyfikatorów, które uczestniczą w uzupełniania, należy zaimplementować <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource> interfejsu i dostawcy źródła ukończenia ( <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider> interfejsu). Dostawcy są składnikami Managed Extensibility Framework (MEF). Są one odpowiedzialny za eksportowanie klas źródłowych i kontrolera i importowanie usługi i brokerzy — na przykład <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>, które umożliwia nawigacji w buforze tekstu i <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>, który wyzwala sesja kończenia.
+ Uzupełnianie instrukcji jest zazwyczaj wyzwalane przez wpisanie niektórych znaków — na przykład przez wpisanie początku identyfikatora, takiego jak "Using". Zwykle jest ona odrzucana przez wciśnięcie klawisza **spacji**, **karty**lub klawisza **Enter** , aby zatwierdzić zaznaczenie. Można zaimplementować funkcje IntelliSense wyzwalane podczas wpisywania znaku przy użyciu programu obsługi poleceń dla naciśnięć klawiszy (interfejs <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>) i dostawcy obsługi implementującego interfejs <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener>. Aby utworzyć źródło uzupełniania, czyli listę identyfikatorów, które uczestniczą w ukończeniu, zaimplementuj interfejs <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource> i dostawcę źródła uzupełniania (interfejs <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider>). Dostawcy są częścią składników Managed Extensibility Framework (MEF). Są one odpowiedzialne za eksportowanie klas źródłowych i kontrolerów oraz importowanie usług i brokerów — na przykład <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>, co umożliwia nawigowanie w buforze tekstu i <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>, które wyzwala sesję ukończenia.
 
- W tym przewodniku pokazano, jak zaimplementować uzupełniania instrukcji dla zestawu ustaloną identyfikatorów. W pełnej implementacji usługi językowej i dokumentacji języka są odpowiedzialne za świadczenie tej zawartości.
+ W tym instruktażu pokazano, jak zaimplementować uzupełnianie instrukcji dla zakodowanego zestawu identyfikatorów. W przypadku pełnych implementacji usługa językowa i Dokumentacja języka są odpowiedzialne za dostarczanie tej zawartości.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
- Począwszy od programu Visual Studio 2015, nie instaluj programu Visual Studio SDK z Centrum pobierania. Został on uwzględniony jako opcjonalna funkcja w Instalatorze programu Visual Studio. Możesz także zainstalować zestaw SDK programu VS później. Aby uzyskać więcej informacji, zobacz [instalacji programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visual Studio SDK z centrum pobierania. Jest ona dołączana jako opcjonalna funkcja w Instalatorze programu Visual Studio. Zestaw VS SDK można także zainstalować później. Aby uzyskać więcej informacji, zobacz [Instalowanie zestawu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
-## <a name="create-a-mef-project"></a>Utwórz projekt MEF
+## <a name="create-a-mef-project"></a>Tworzenie projektu MEF
 
 #### <a name="to-create-a-mef-project"></a>Aby utworzyć projekt MEF
 
-1. Utwórz projekt VSIX języka C#. (W **nowy projekt** okno dialogowe, wybierz opcję **Visual C# / rozszerzalności**, następnie **projekt VSIX**.) Nazwij rozwiązanie `CompletionTest`.
+1. Utwórz projekt C# VSIX. (W oknie dialogowym **Nowy projekt** wybierz pozycję  **C# Wizualizacja/rozszerzalność**, a następnie **Projekt VSIX**). Nadaj nazwę `CompletionTest` rozwiązanie.
 
-2. Dodaj szablon elementu edytora klasyfikatora do projektu. Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia za pomocą szablonu elementu edytora](../extensibility/creating-an-extension-with-an-editor-item-template.md).
+2. Dodaj szablon elementu klasyfikatora edytora do projektu. Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia za pomocą szablonu elementu edytora](../extensibility/creating-an-extension-with-an-editor-item-template.md).
 
-3. Usuń istniejące pliki klasy.
+3. Usuń istniejące pliki klas.
 
-4. Dodaj następujące odwołania do projektu i upewnij się, że **CopyLocal** ustawiono `false`:
+4. Dodaj następujące odwołania do projektu i upewnij się, że **CopyLocal** jest ustawiony na `false`:
 
-     Microsoft.VisualStudio.Editor
+     Microsoft. VisualStudio. Editor
 
-     Microsoft.VisualStudio.Language.Intellisense
+     Microsoft. VisualStudio. Language. IntelliSense
 
-     Microsoft.VisualStudio.OLE.Interop
+     Microsoft. VisualStudio. OLE. Interop
 
-     Microsoft.VisualStudio.Shell.14.0
+     Microsoft. VisualStudio. Shell. 14.0
 
-     Microsoft.VisualStudio.Shell.Immutable.10.0
+     Microsoft. VisualStudio. Shell. unzmienny. 10.0
 
-     Microsoft.VisualStudio.TextManager.Interop
+     Microsoft. VisualStudio. TextManager. Interop
 
-## <a name="implement-the-completion-source"></a>Implementowanie źródła uzupełniania
- Źródło zakończenia jest odpowiedzialny za zbieranie zestaw identyfikatorów i dodawanie zawartości do okna ukończenia, gdy użytkownik wpisuje wyzwalacza zakończenia, na przykład pierwszych liter identyfikatora. W tym przykładzie, identyfikatory oraz ich opisy są zakodowane w <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource.AugmentCompletionSession%2A> metody. W większości rzeczywistych zastosowaniach należy użyć analizatora swój język uzyskiwanie tokenów do wypełnienia listy uzupełniania.
+## <a name="implement-the-completion-source"></a>Implementowanie źródła zakończenia
+ Źródło uzupełniania jest odpowiedzialne za gromadzenie zestawu identyfikatorów i dodawanie zawartości do okna zakończenia, gdy użytkownik wpisze wyzwalacz uzupełniania, taki jak pierwsze litery identyfikatora. W tym przykładzie identyfikatory i ich opisy są trwale kodowane w metodzie <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource.AugmentCompletionSession%2A>. W największej rzeczywistości można użyć parsera języka, aby uzyskać tokeny umożliwiające wypełnienie listy uzupełniania.
 
-### <a name="to-implement-the-completion-source"></a>Aby zaimplementować źródła uzupełniania
+### <a name="to-implement-the-completion-source"></a>Aby zaimplementować Źródło ukończenia
 
 1. Dodaj plik klasy i nadaj mu nazwę `TestCompletionSource`.
 
-2. Dodaj te importów:
+2. Dodaj następujące Importy:
 
      [!code-csharp[VSSDKCompletionTest#1](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_1.cs)]
      [!code-vb[VSSDKCompletionTest#1](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_1.vb)]
 
-3. Zmodyfikuj deklarację klasy dla `TestCompletionSource` tak, aby implementuje <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>:
+3. Zmodyfikuj deklarację klasy dla `TestCompletionSource` tak, aby implementują <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>:
 
      [!code-csharp[VSSDKCompletionTest#2](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_2.cs)]
      [!code-vb[VSSDKCompletionTest#2](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_2.vb)]
 
-4. Dodawanie pola prywatne dla dostawcy źródła, bufor tekstowy i listę <xref:Microsoft.VisualStudio.Language.Intellisense.Completion> obiektów, (które odnoszą się do identyfikatorów, które będą uczestniczyć w sesja kończenia):
+4. Dodaj prywatne pola dla dostawcy źródłowego, bufora tekstu i listę obiektów <xref:Microsoft.VisualStudio.Language.Intellisense.Completion> (które odpowiadają identyfikatorom, które będą uczestniczyć w sesji ukończenia):
 
      [!code-csharp[VSSDKCompletionTest#3](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_3.cs)]
      [!code-vb[VSSDKCompletionTest#3](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_3.vb)]
 
-5. Dodaj Konstruktor, który ustawia dostawcy źródła i buforu. `TestCompletionSourceProvider` Klasa jest zdefiniowana w kolejnych krokach:
+5. Dodaj konstruktora, który ustawia dostawcę źródłowego i bufor. Klasa `TestCompletionSourceProvider` jest definiowana w dalszych krokach:
 
      [!code-csharp[VSSDKCompletionTest#4](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_4.cs)]
      [!code-vb[VSSDKCompletionTest#4](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_4.vb)]
 
-6. Implementowanie <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource.AugmentCompletionSession%2A> metody, dodając zestaw zakończenia, który zawiera uzupełnienia, chcesz udostępnić w kontekście. Każdy zestaw uzupełniania zawiera zbiór <xref:Microsoft.VisualStudio.Language.Intellisense.Completion> uzupełniania, a odpowiada karta okna ukończenia. (W projektach języka Visual Basic o nazwie karty okna ukończenia **typowe** i **wszystkich**.) `FindTokenSpanAtPosition` Metoda jest zdefiniowana w następnym kroku.
+6. Zaimplementuj metodę <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource.AugmentCompletionSession%2A>, dodając zestaw uzupełniający, który zawiera zakończenia, które chcesz podać w kontekście. Każdy zestaw uzupełniający zawiera zestaw <xref:Microsoft.VisualStudio.Language.Intellisense.Completion> uzupełniania i odpowiada karcie zakończenia okna. (W projektach Visual Basic karty okna zakończenia mają nazwę **wspólne** i **wszystkie**). Metoda `FindTokenSpanAtPosition` jest definiowana w następnym kroku.
 
      [!code-csharp[VSSDKCompletionTest#5](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_5.cs)]
      [!code-vb[VSSDKCompletionTest#5](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_5.vb)]
 
-7. Poniższa metoda jest używana do znajdowania bieżącego słowa z położenie kursora:
+7. Poniższa metoda służy do znajdowania bieżącego wyrazu z położenia kursora:
 
      [!code-csharp[VSSDKCompletionTest#6](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_6.cs)]
      [!code-vb[VSSDKCompletionTest#6](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_6.vb)]
 
-8. Implementowanie `Dispose()` metody:
+8. Zaimplementuj metodę `Dispose()`:
 
      [!code-csharp[VSSDKCompletionTest#7](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_7.cs)]
      [!code-vb[VSSDKCompletionTest#7](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_7.vb)]
 
-## <a name="implement-the-completion-source-provider"></a>Implementowanie dostawcy źródła uzupełniania
- Dostawca źródła zakończenia jest część składnik MEF, tworzącym źródła ukończenia.
+## <a name="implement-the-completion-source-provider"></a>Implementowanie dostawcy źródła ukończenia
+ Dostawca źródła zakończenia jest częścią składnika MEF, która tworzy wystąpienie źródła zakończenia.
 
-### <a name="to-implement-the-completion-source-provider"></a>Do implementowania dostawcy źródła uzupełniania
+### <a name="to-implement-the-completion-source-provider"></a>Aby zaimplementować dostawcę źródła ukończenia
 
-1. Dodaj klasę o nazwie `TestCompletionSourceProvider` implementującej <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider>. Eksportowanie tej klasy przy użyciu <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "zwykłego tekstu" i <xref:Microsoft.VisualStudio.Utilities.NameAttribute> "test zakończenia".
+1. Dodaj klasę o nazwie `TestCompletionSourceProvider` implementującej <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider>. Wyeksportuj tę klasę z <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "zwykły tekst" i <xref:Microsoft.VisualStudio.Utilities.NameAttribute> "ukończenie testu".
 
      [!code-csharp[VSSDKCompletionTest#8](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_8.cs)]
      [!code-vb[VSSDKCompletionTest#8](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_8.vb)]
 
-2. Importuj <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>, który umożliwia znalezienie bieżącego słowa w źródle ukończenia.
+2. Zaimportuj <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>, co spowoduje znalezienie bieżącego wyrazu w źródle zakończenia.
 
      [!code-csharp[VSSDKCompletionTest#9](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_9.cs)]
      [!code-vb[VSSDKCompletionTest#9](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_9.vb)]
 
-3. Implementowanie <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider.TryCreateCompletionSource%2A> metodę, aby utworzyć wystąpienie źródła ukończenia.
+3. Zaimplementuj metodę <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider.TryCreateCompletionSource%2A>, aby utworzyć wystąpienie źródła uzupełniania.
 
      [!code-csharp[VSSDKCompletionTest#10](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_10.cs)]
      [!code-vb[VSSDKCompletionTest#10](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_10.vb)]
 
-## <a name="implement-the-completion-command-handler-provider"></a>Implementowanie dostawcy obsługi polecenia uzupełniania
- Dostawcy programu obsługi zakończenia polecenia jest tworzony na podstawie <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener>, który wykrywa zdarzenie tworzenia widoku tekstu i konwertuje widok z <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>— które umożliwia dodanie polecenia do tworzenia łańcucha polecenia powłoki programu Visual Studio — aby <xref:Microsoft.VisualStudio.Text.Editor.ITextView>. Ponieważ ta klasa jest eksport MEF, możesz również służy do importowania usług, które są wymagane przez sam program obsługi poleceń.
+## <a name="implement-the-completion-command-handler-provider"></a>Implementowanie dostawcy obsługi poleceń uzupełniania
+ Dostawca obsługi poleceń uzupełniania jest tworzony na podstawie <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener>, który nasłuchuje zdarzenia tworzenia widoku tekstu i konwertuje widok z <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>, co umożliwia dodanie polecenia do łańcucha poleceń programu Visual Studio Shell — do <xref:Microsoft.VisualStudio.Text.Editor.ITextView>. Ponieważ ta klasa jest MEF eksportu, można jej również użyć do zaimportowania usług, które są wymagane przez program obsługi poleceń.
 
-#### <a name="to-implement-the-completion-command-handler-provider"></a>Do implementowania dostawcy obsługi polecenia uzupełniania
+#### <a name="to-implement-the-completion-command-handler-provider"></a>Aby zaimplementować dostawcę obsługi poleceń uzupełniania
 
 1. Dodaj plik o nazwie `TestCompletionCommandHandler`.
 
-2. Dodaj je za pomocą instrukcji:
+2. Dodaj następujące dyrektywy:
 
      [!code-csharp[VSSDKCompletionTest#11](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_11.cs)]
      [!code-vb[VSSDKCompletionTest#11](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_11.vb)]
 
-3. Dodaj klasę o nazwie `TestCompletionHandlerProvider` implementującej <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener>. Eksportowanie tej klasy przy użyciu <xref:Microsoft.VisualStudio.Utilities.NameAttribute> "procedury obsługi zakończenia tokenu", <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "zwykłego tekstu", a <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> z <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Editable>.
+3. Dodaj klasę o nazwie `TestCompletionHandlerProvider` implementującej <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener>. Wyeksportuj tę klasę z <xref:Microsoft.VisualStudio.Utilities.NameAttribute> "procedura obsługi uzupełniania tokenu", <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "zwykły tekst" i <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Editable>.
 
      [!code-csharp[VSSDKCompletionTest#12](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_12.cs)]
      [!code-vb[VSSDKCompletionTest#12](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_12.vb)]
 
-4. Importuj <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>, które umożliwia konwersję z <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> do <xref:Microsoft.VisualStudio.Text.Editor.ITextView>, <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>i <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> umożliwiającej dostęp do usług Visual Studio w warstwie standardowa.
+4. Zaimportuj <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>, która umożliwia konwersję z <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> do <xref:Microsoft.VisualStudio.Text.Editor.ITextView>, <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker> i <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider>, który umożliwia dostęp do standardowych usług Visual Studio.
 
      [!code-csharp[VSSDKCompletionTest#13](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_13.cs)]
      [!code-vb[VSSDKCompletionTest#13](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_13.vb)]
 
-5. Implementowanie <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener.VsTextViewCreated%2A> metodę, aby utworzyć wystąpienie program obsługi poleceń.
+5. Zaimplementuj metodę <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener.VsTextViewCreated%2A>, aby utworzyć wystąpienie programu obsługi poleceń.
 
      [!code-csharp[VSSDKCompletionTest#14](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_14.cs)]
      [!code-vb[VSSDKCompletionTest#14](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_14.vb)]
 
-## <a name="implement-the-completion-command-handler"></a>Implementowanie polecenia procedury obsługi zakończenia
- Ponieważ uzupełnianie instrukcji jest wyzwalany przez naciśnięć klawiszy, należy zaimplementować <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejsu odbierały i przetwarzały naciśnięć klawiszy, które wyzwalacza, Zatwierdź i Odrzuć sesja kończenia.
+## <a name="implement-the-completion-command-handler"></a>Implementuj procedurę obsługi poleceń uzupełniania
+ Ponieważ uzupełnianie instrukcji jest wyzwalane przez naciśnięcia klawiszy, należy zaimplementować interfejs <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>, aby odbierać i przetwarzać naciśnięcia klawiszy, które wyzwalają, zatwierdzają i odrzucają sesję ukończenia.
 
-#### <a name="to-implement-the-completion-command-handler"></a>Aby zaimplementować polecenia procedury obsługi zakończenia
+#### <a name="to-implement-the-completion-command-handler"></a>Aby zaimplementować procedurę obsługi polecenia uzupełniania
 
 1. Dodaj klasę o nazwie `TestCompletionCommandHandler` implementującej <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>:
 
     [!code-csharp[VSSDKCompletionTest#15](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_15.cs)]
     [!code-vb[VSSDKCompletionTest#15](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_15.vb)]
 
-2. Dodaj pola prywatne, kolejna procedura obsługi polecenia (do którego należy przekazać polecenie), widoku tekstu, dostawcy obsługi polecenia (który umożliwia dostęp do różnych usług), a sesja kończenia:
+2. Dodaj pola prywatne dla następnej procedury obsługi polecenia (do którego zostanie przekazane polecenie), widoku tekstu, dostawcy obsługi poleceń (który umożliwia dostęp do różnych usług) i sesji ukończenia:
 
     [!code-csharp[VSSDKCompletionTest#16](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_16.cs)]
     [!code-vb[VSSDKCompletionTest#16](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_16.vb)]
 
-3. Dodaj Konstruktor, który ustawia widok tekstu i pola dostawcy i dodaje polecenia do tworzenia łańcucha polecenia:
+3. Dodaj konstruktora, który ustawia widok tekstu i pola dostawcy, i dodaje polecenie do łańcucha poleceń:
 
     [!code-csharp[VSSDKCompletionTest#17](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_17.cs)]
     [!code-vb[VSSDKCompletionTest#17](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_17.vb)]
 
-4. Implementowanie <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metody przez przekazanie polecenia wzdłuż:
+4. Zaimplementuj metodę <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>, przekazując polecenie:
 
     [!code-csharp[VSSDKCompletionTest#18](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_18.cs)]
     [!code-vb[VSSDKCompletionTest#18](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_18.vb)]
 
-5. Implementowanie <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> metody. Gdy ta metoda odbiera naciśnięcie klawisza, wykonaj jedną z tych czynności:
+5. Zaimplementuj metodę <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>. Gdy ta metoda odbiera naciśnięcie klawisza, musi wykonać jedną z następujących czynności:
 
-   - Zezwalaj na znak do zapisania w buforze i następnie wyzwolić lub filtrowanie uzupełniania. (Znaki niedrukowane to zrobić.)
+   - Zezwalaj na zapisywanie znaku w buforze, a następnie wyzwalanie lub filtrowanie uzupełniania. (W tym celu należy wydrukować znaki).
 
-   - Zatwierdź zakończenia, ale nie zezwalają na znak do zapisania w buforze. (Biały znak oraz **kartę**, i **Enter** to zrobić, gdy sesja kończenia jest wyświetlana.)
+   - Zatwierdź ukończenie, ale nie Zezwalaj na zapisywanie znaku w buforze. (Odstępu, **Tab**i **Enter** zrób to, gdy zostanie wyświetlona sesja ukończenia).
 
-   - Zezwalaj na polecenie, aby być przekazywane do następnej procedury obsługi. (Wszystkie inne polecenia.)
+   - Zezwalaj na przekazywanie polecenia do kolejnej procedury obsługi. (Wszystkie inne polecenia).
 
-     Ponieważ ta metoda może wyświetlić interfejs użytkownika, wywołaj <xref:Microsoft.VisualStudio.Shell.VsShellUtilities.IsInAutomationFunction%2A> aby upewnić się, że nie jest wywoływana w kontekście usługi automation:
+     Ponieważ ta metoda może wyświetlać interfejs użytkownika, wywołaj <xref:Microsoft.VisualStudio.Shell.VsShellUtilities.IsInAutomationFunction%2A>, aby upewnić się, że nie jest on wywoływany w kontekście usługi Automation:
 
      [!code-csharp[VSSDKCompletionTest#19](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_19.cs)]
      [!code-vb[VSSDKCompletionTest#19](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_19.vb)]
 
-6. Ten kod jest metody prywatnej, która wyzwala sesja kończenia:
+6. Ten kod jest metodą prywatną, która wyzwala sesję ukończenia:
 
     [!code-csharp[VSSDKCompletionTest#20](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_20.cs)]
     [!code-vb[VSSDKCompletionTest#20](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_20.vb)]
 
-7. Następny przykład jest metodą prywatnej, która anuluje subskrypcje ze <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseSession.Dismissed> zdarzeń:
+7. Następny przykład to Metoda prywatna, która anuluje subskrypcję zdarzenia <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseSession.Dismissed>:
 
     [!code-csharp[VSSDKCompletionTest#21](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_21.cs)]
     [!code-vb[VSSDKCompletionTest#21](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_21.vb)]
 
-## <a name="build-and-test-the-code"></a>Tworzenie i testowanie kodu
- Aby przetestować ten kod, Kompiluj rozwiązanie CompletionTest, a następnie uruchomić go w doświadczalnym wystąpieniu.
+## <a name="build-and-test-the-code"></a>Kompiluj i Testuj kod
+ Aby przetestować ten kod, skompiluj rozwiązanie CompletionTest i uruchom je w eksperymentalnym wystąpieniu.
 
 #### <a name="to-build-and-test-the-completiontest-solution"></a>Aby skompilować i przetestować rozwiązanie CompletionTest
 
 1. Skompiluj rozwiązanie.
 
-2. Po uruchomieniu tego projektu w debugerze, drugie wystąpienie programu Visual Studio został uruchomiony.
+2. Po uruchomieniu tego projektu w debugerze uruchomione jest drugie wystąpienie programu Visual Studio.
 
-3. Utwórz plik tekstowy i wpisz jakiś tekst, który zawiera wyraz "Dodaj".
+3. Utwórz plik tekstowy i wpisz tekst zawierający wyraz "Add".
 
-4. Podczas wpisywania najpierw "a", a następnie "d" powinna zostać wyświetlona lista zawierająca "Dodawanie" i "dostosowanie". Należy zauważyć, że wybrano dodawania. Podczas wpisywania tekstu "d", lista może zawierać tylko "dodatkowe", który jest zaznaczony. Możesz zatwierdzić "dodatkowe", naciskając klawisz **spacja**, **kartę**, lub **Enter** klucza lub odrzucić listę, wpisując Esc lub dowolny inny klawisz.
+4. Po wpisaniu pierwszego "a", a następnie "d" powinna być wyświetlana lista zawierająca "dodanie" i "adaptacja". Zauważ, że dodanie jest zaznaczone. Gdy wpiszesz kolejną "d", lista powinna zawierać tylko "dodanie", która jest teraz zaznaczona. Możesz zatwierdzić "dodanie", naciskając **spację**, **kartę**lub klawisz **Enter** lub Odrzuć listę, wpisując ESC lub dowolny inny klucz.
 
 ## <a name="see-also"></a>Zobacz także
-- [Przewodnik: Połączyć typu zawartości z rozszerzeniem nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+- [Przewodnik: łączenie typu zawartości z rozszerzeniem nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

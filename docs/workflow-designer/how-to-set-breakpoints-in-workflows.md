@@ -1,42 +1,42 @@
 ---
-title: 'Projektant przepływu pracy — jak: Ustawianie punktów przerwania w przepływach pracy'
+title: 'Projektant przepływu pracy — instrukcje: ustawianie punktów przerwania w przepływach pracy'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e41b21c9-c061-4358-8e2f-eb5e412864a8
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7503d0b0bee201a9617e90966c9f75ac6333f228
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b6d2806a8757f00924d51c76aea82cfc8c6a5673
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949526"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650328"
 ---
-# <a name="how-to-set-breakpoints-in-workflows"></a>Instrukcje: Ustawianie punktów przerwania w przepływach pracy
+# <a name="how-to-set-breakpoints-in-workflows"></a>Instrukcje: ustawianie punktów przerwania w przepływach pracy
 
-Korzystając z projektanta przepływów pracy, można ustawić punktów przerwania na graficzny przepływy pracy tak jak w języku Visual Basic lub C# kodu. Zgodnie z oczekiwaniami, zatrzyma wykonywanie przepływu pracy, w każdym punkcie przerwania, który został ustawiony.
+Korzystając z Projektant przepływu pracy, można ustawić punkty przerwania w graficznych przepływach pracy, jak w Visual Basic lub C# kodzie. Zgodnie z oczekiwaniami wykonywanie przepływu pracy zostaje zatrzymane w każdym ustawionym punkcie przerwania.
 
-Punkt przerwania ma trzy stany: *Oczekujące*, *powiązany*, i *błąd*. Po ustawieniu punktu przerwania jest oczekujące i jest reprezentowana przez stałe czerwoną ikonę. Po załadowaniu szablonu przepływu pracy środowiska uruchomieniowego staje się powiązany. Jeśli określisz ma niewłaściwy format dla punktu przerwania, takich jak nazwa działania, który nie jest prawidłowy, pojawi się okno błędu. Punkt przerwania nadal jest dodawany do okna punkt przerwania, ale jest oznaczony za pomocą małych "x".
-
-> [!NOTE]
-> Ustawianie punktów przerwania w przepływach pracy, wywoływane jest nieobsługiwana.
+Punkt przerwania ma trzy stany: *oczekujący*, *powiązany*i *błąd*. Gdy ustawisz punkt przerwania, jest on w stanie oczekiwania i jest reprezentowany przez pełną czerwoną ikonę. Po załadowaniu typu przepływu pracy środowisko uruchomieniowe zostanie powiązane. W przypadku określenia niepoprawnego formatu punktu przerwania, takiego jak Nieprawidłowa nazwa działania, pojawi się okno błędu. Punkt przerwania jest nadal dodawany do okna punktu przerwania, ale jest oznaczony małą "x".
 
 > [!NOTE]
-> Upewnij się, że wybrano opcję **Włącz tylko mój kod (tylko zarządzany)** z **narzędzia** > **opcje** > **debugowania**  menu przed debugowania. Jeśli nie została wybrana opcja i masz dwie sekwencje zagnieżdżone w obrębie innej sekwencji, a następnie ustaw punkt przerwania w pierwszej sekwencji wewnętrzny, naciskając klawisz **F11** nie zdebugować drugiej sekwencji wewnętrznego.
+> Ustawianie punktów przerwania dla wywołanych przepływów pracy nie jest obsługiwane.
 
 > [!NOTE]
-> Punkty przerwania w przepływie pracy nie są osiągane, jeśli Pełna ścieżka do właściwości pliku XAML nie jest dokładne. Pełna ścieżka do pliku XAML nie jest dokładne po przeniesieniu projektu lub rozwiązania do innego folderu lub innego komputera. Wybierz **Ctrl**+**S** Aby zapisać i zaktualizować właściwość pełną ścieżkę.
+> Upewnij się, że wybrano **opcję włącz tylko mój kod (tylko zarządzane)** z poziomu**opcji** **Narzędzia**  >   > **debugowanie** przed rozpoczęciem debugowania. Jeśli opcja nie jest zaznaczona i masz dwie sekwencje zagnieżdżone w innej sekwencji i ustawisz punkt przerwania w pierwszej sekwencji wewnętrznej, naciśnięcie klawisza **F11** nie debuguje do drugiej sekwencji wewnętrznej.
 
-## <a name="to-set-a-breakpoint-on-an-activity-in-the-design-view"></a>Aby ustawić punkt przerwania w działaniu w widoku projektu
+> [!NOTE]
+> Punkty przerwania w przepływie pracy nie są trafień, jeśli pełna ścieżka do właściwości pliku XAML jest niedokładna. Pełna ścieżka do pliku XAML jest niedokładna po przeniesieniu projektu lub rozwiązania do innego folderu lub do innej maszyny. Wybierz pozycję **Ctrl** +**S** , aby zapisać i zaktualizować Właściwość pełna ścieżka.
 
-1. Wybierz czynność chcesz, aby debuger przerywał działanie w przypadku.
+## <a name="to-set-a-breakpoint-on-an-activity-in-the-design-view"></a>Aby ustawić punkt przerwania dla działania w widoku projektu
 
-2. Na **debugowania** menu, wybierz opcję **Przełącz punkt przerwania**. Czerwona ikona pojawi się do górnej krawędzi lewej działania.
+1. Wybierz działanie, które ma zostać przerwane przez debuger.
 
-   Alternatywnie, możesz nacisnąć przycisk **F9** po wybranie działania lub możesz można kliknij działanie prawym przyciskiem myszy i wybrać **punktu przerwania** > **Wstaw punkt przerwania** w menu kliknij prawym przyciskiem myszy.
+2. W menu **Debuguj** wybierz polecenie **Przełącz punkt przerwania**. Czerwona ikona pojawi się w lewej górnej krawędzi działania.
+
+   Alternatywnie można nacisnąć klawisz **F9** po zaznaczeniu działania lub można kliknąć prawym przyciskiem myszy działanie i wybrać pozycję **punkt przerwania**  > **Wstaw punkt przerwania** w menu po kliknięciu prawym przyciskiem myszy.
 
 ## <a name="see-also"></a>Zobacz także
 

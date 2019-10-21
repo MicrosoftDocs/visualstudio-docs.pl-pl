@@ -1,5 +1,5 @@
 ---
-title: Relacje domeny w generowanego interfejsu API | Dokumentacja firmy Microsoft
+title: Relacje domeny w wygenerowanym interfejsie API | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, domain relationships
 ms.assetid: 71d018f8-19a7-44d0-bad3-665c883a9804
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1596ec3d7ec901ac6fb8ce504fc9f0355723579c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1ad203c5ae85d65bed400772967202b313601083
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822699"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72646188"
 ---
-# <a name="domain-relationships-in-the-generated-api"></a>Relacje domeny w generowanego interfejsu API
-W tym temacie został dołączony przy użyciu innej zawartości. Przejdź do strony [nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md).
+# <a name="domain-relationships-in-the-generated-api"></a>Relacje domeny w wygenerowanym interfejsie API
+Ten temat został skonsolidowany z inną zawartością. Przejdź do obszaru [nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md).

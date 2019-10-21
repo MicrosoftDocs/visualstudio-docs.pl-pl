@@ -3,27 +3,27 @@ title: Węzły filtrów
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: f7cae2dc-e9a7-49d4-8be5-58b79868624e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95a8bfeedea11060cbf3a0aefbf2c11a30230060
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7627a5df1b3fcc5d26e33353e91f525b8083ccdf
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62845071"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72637307"
 ---
 # <a name="filter-nodes"></a>Węzły filtrów
 
-W projektancie programu do cieniowania węzły filtru przekształcania danych wejściowych — na przykład próbkę koloru lub tekstury — na wartość koloru symboli. Te wartości kolorów symboli są często używane w innych — gdy chodzi o fotorealistyczne renderowanie, lub jako składników w innych efektów wizualnych.
+W projektancie programu do cieniowania węzły filtrują Przekształć dane wejściowe — na przykład, koloru lub tekstury próbki — do wartości koloru Figurative. Te wartości koloru Figurative są często używane w nierealistycznym renderowaniu lub jako składniki w innych efektach wizualizacji.
 
-## <a name="filter-node-reference"></a>Odwołanie do węzła filtru
+## <a name="filter-node-reference"></a>Filtruj odwołanie do węzła
 
 |Węzeł|Szczegóły|Właściwości|
 |----------|-------------|----------------|
-|**Blur**|Rozmywa pikseli tekstury za pomocą funkcji Gaussa.<br /><br /> Możesz użyć tego zmniejszenie szczegóły koloru lub szumu tekstury.<br /><br /> **Dane wejściowe:**<br /><br /> `UV`: `float2`<br /> Współrzędne texel do testowania.<br /><br /> **Dane wyjściowe:**<br /><br /> `Output`: `float4`<br /> Wartość koloru rozmyte.|**Tekstury**<br /> Rejestr tekstury skojarzony z próbnikiem używany podczas Rozmycie.|
-|**Zmniejszanie nasycenia**|Zmniejsza ilość koloru w określony kolor.<br /><br /> Usunięcia koloru wartość koloru zbliża się odpowiadającą jej równoważnika na skali.<br /><br /> **Dane wejściowe:**<br /><br /> `RGB`: `float3`<br /> Zmniejsz nasycenie koloru.<br /><br /> `Percent`: `float`<br /> Procent kolor, aby usunąć, wyrażone jako znormalizowaną wartość z zakresu [0, 1].<br /><br /> **Dane wyjściowe:**<br /><br /> `Output`: `float3`<br /> Nasycony kolor.|**Jasności**<br /> Wagi, które są określone dla składników koloru czerwonego, zielonego i niebieskiego.|
-|**Wykrywanie krawędzi**|Wykrywa krawędzie tekstury za pomocą wykrywanie krawędzi Canny'ego. Pikseli na krawędzi są wyświetlane jako biały; pikseli na krawędzi nie są wyświetlane jako czarny.<br /><br /> Służy to do określenia krawędzi tekstury, dzięki czemu można użyć dodatkowych efektów traktowanie pikseli na krawędzi.<br /><br /> **Dane wejściowe:**<br /><br /> `UV`: `float2`<br /> Współrzędne texel do testowania.<br /><br /> **Dane wyjściowe:**<br /><br /> `Output`: `float4`<br /> Białe, jeśli teksela znajduje się na krawędzi; w przeciwnym razie czarny.|**Tekstury**<br /> Rejestr tekstury skojarzony z próbnikiem używany podczas wykrywania krawędzi.|
-|**Doskonalenie**|Wyostrza teksturę.<br /><br /> Możesz użyć tego, aby wyróżnić szczegółów tekstury.<br /><br /> **Dane wejściowe:**<br /><br /> `UV`: `float2`<br /> Współrzędne texel do testowania.<br /><br /> **Dane wyjściowe:**<br /><br /> `Output`: `float4`<br /> Wartość koloru rozmyte.|**Tekstury**<br /> Rejestr tekstury skojarzony z próbnikiem używany podczas wyostrzania.|
+|**Rozmazan**|Rozmywa piksele w tekstury przy użyciu funkcji gaussowskie.<br /><br /> Możesz użyć tego, aby zredukować szczegóły koloru lub szum w teksturę.<br /><br /> **Klawiatur**<br /><br /> `UV`: `float2`<br /> Współrzędne Texel do przetestowania.<br /><br /> **Rozdzielczości**<br /><br /> `Output`: `float4`<br /> Wartość koloru rozmytego.|**Głębokości**<br /> Rejestr tekstury skojarzony z próbnikiem używany podczas rozmywania.|
+|**Zmniejsz nasycenie**|Zmniejsza ilość koloru w określonym kolorze.<br /><br /> Po usunięciu koloru wartość koloru zbliża się do jego odpowiedników w skali szarości.<br /><br /> **Klawiatur**<br /><br /> `RGB`: `float3`<br /> Kolor zmniejszający nasycenie.<br /><br /> `Percent`: `float`<br /> Procent koloru do usunięcia wyrażony jako znormalizowana wartość w zakresie [0, 1].<br /><br /> **Rozdzielczości**<br /><br /> `Output`: `float3`<br /> Nasycenie koloru.|**Jaskrawość**<br /> Wagi nadawane czerwonym, zielonym i niebieskim składnikom koloru.|
+|**Wykrywanie krawędzi**|Wykrywa krawędzie tekstury przy użyciu detektora krawędzi w puszkach. Piksele brzegowe są wyprowadzane jako białe. piksele inne niż brzegowe są wyprowadzane jako czarne.<br /><br /> Można jej użyć do identyfikacji krawędzi tekstury, aby można było użyć dodatkowych efektów do traktowania pikseli brzegowych.<br /><br /> **Klawiatur**<br /><br /> `UV`: `float2`<br /> Współrzędne Texel do przetestowania.<br /><br /> **Rozdzielczości**<br /><br /> `Output`: `float4`<br /> Biały, jeśli Texel znajduje się na krawędzi; w przeciwnym razie czarny.|**Głębokości**<br /> Rejestr tekstury skojarzony z próbnikiem używany podczas wykrywania krawędzi.|
+|**Intensyw**|Wyostrza teksturę.<br /><br /> Możesz użyć tej funkcji, aby wyróżnić szczegółowe szczegóły tekstury.<br /><br /> **Klawiatur**<br /><br /> `UV`: `float2`<br /> Współrzędne Texel do przetestowania.<br /><br /> **Rozdzielczości**<br /><br /> `Output`: `float4`<br /> Wartość koloru rozmytego.|**Głębokości**<br /> Rejestr tekstury skojarzony z próbnikiem używany podczas wyostrzania.|

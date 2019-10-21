@@ -1,88 +1,88 @@
 ---
-title: Tworzenie komentarzy JSDoc dla funkcji IntelliSense języka JavaScript | Dokumentacja firmy Microsoft
+title: Tworzenie komentarzy JSDoc dla języka JavaScript IntelliSense | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: a0dadc81-3755-4a47-bcee-c1010819ff2a
 caps.latest.revision: 8
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f4d300651731b38b9b86421d36d9de169dc6464d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b974f3450b88ab22e58e284881f270c1b3d72298
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68188792"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72619274"
 ---
 # <a name="create-jsdoc-comments-for-javascript-intellisense"></a>Tworzenie komentarzy JSDoc na potrzeby funkcji IntelliSense języka JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Funkcja IntelliSense w programie Visual Studio Wyświetla informacje, które można dodać do skryptu, używając standardowych komentarzy JSDoc. Komentarze JSDoc służy do dostarczania informacji dotyczących elementów kodu, takich jak functions, pól i zmiennych.  
+Technologia IntelliSense w programie Visual Studio Wyświetla informacje dodawane do skryptu przy użyciu standardowych komentarzy JSDoc. Komentarze JSDoc umożliwiają dostarczanie informacji o elementach kodu, takich jak funkcje, pola i zmienne.
 
-## <a name="jsdoc-comment-tags"></a>Tagi komentarza JSDoc  
- Następujących standardowych tagów komentarzy JSDoc są używane przez funkcję IntelliSense, aby wyświetlić informacje o swoim kodzie.  
+## <a name="jsdoc-comment-tags"></a>Tagi komentarzy JSDoc
+ Poniższe standardowe Tagi komentarzy JSDoc są używane przez funkcję IntelliSense do wyświetlania informacji o kodzie.
 
-|  JSDoc tag   |                       Składnia                        |                                                     Uwagi                                                      |
+|  Tag JSDoc   |                       Składnia                        |                                                     Uwagi                                                      |
 |--------------|-----------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| @deprecated  |              @deprecated *Opis elementu*              |                                   Określa zaniechanej funkcji lub metody.                                   |
-| @description |             @description *Opis elementu*              |                              Określa opis funkcji lub metody.                               |
-|    @param    | @param {*typu*} *parameterName*<em>opis</em> | Określa informacje dla parametru w funkcji lub metody.<br /><br /> Obsługuje również TypeScript @paramTag. |
-|  @property   |          @property {*typu*} *propertyName*          |   Określa informacje, w tym opis, pola lub elementu członkowskiego, który jest zdefiniowany w obiekcie.    |
-|   @returns   |                  @returns {*typu*}                  |           Określa wartość zwracaną.<br /><br /> TypeScript, można użyć @returnType zamiast @returns.           |
-|   @summary   |               @summary *Opis elementu*                |                   Określa opis funkcji lub metody (taka sama jak @description).                   |
-|    @type     |                   @type {*typu*}                    |                                Określa typ stałą lub zmienną.                                |
-|   @typedef   |         @typedef {*type*} *customTypeName*          |                                            Określa typ niestandardowy.                                            |
+| @deprecated  |              *opis* @deprecated              |                                   Określa przestarzałą funkcję lub metodę.                                   |
+| @description |             *opis* @description              |                              Określa opis funkcji lub metody.                               |
+|    @param    | <em>opis</em> @param {*Type*} *ParameterName* | Określa informacje dla parametru w funkcji lub metodzie.<br /><br /> Język TypeScript obsługuje również @paramTag. |
+|  @property   |          @property {*Type*} *PropertyName*          |   Określa informacje, łącznie z opisem, dla pola lub elementu członkowskiego zdefiniowanego w obiekcie.    |
+|   @returns   |                  @returns {*Type*}                  |           Określa wartość zwracaną.<br /><br /> Dla języka TypeScript Użyj @returnType zamiast @returns.           |
+|   @summary   |               *opis* @summary                |                   Określa opis funkcji lub metody (analogicznie jak @description).                   |
+|    @type     |                   @type {*Type*}                    |                                Określa typ stałej lub zmiennej.                                |
+|   @typedef   |         @typedef {*Type*} *customTypeName*          |                                            Określa typ niestandardowy.                                            |
 
-### <a name="examples"></a>Przykłady  
- Poniższy przykład pokazuje użycie @description, @param, i @return JSDoc tagów dla funkcji o nazwie `getArea`.  
+### <a name="examples"></a>Przykłady
+ W poniższym przykładzie pokazano użycie @description, @param i @return tagów JSDoc dla funkcji o nazwie `getArea`.
 
-```javascript  
-/** @description Determines the area of a circle that has the specified radius parameter.  
- * @param {number} radius The radius of the circle.  
- * @return {number}  
- */  
-function getArea(radius) {  
-    var areaVal;  
-    areaVal = Math.PI * radius * radius;  
-    return areaVal;  
-}  
-```  
+```javascript
+/** @description Determines the area of a circle that has the specified radius parameter.
+ * @param {number} radius The radius of the circle.
+ * @return {number}
+ */
+function getArea(radius) {
+    var areaVal;
+    areaVal = Math.PI * radius * radius;
+    return areaVal;
+}
+```
 
- W poprzednim przykładzie, funkcja IntelliSense wyświetla opis parametru i informacje zwrotne po wpisaniu nawiasu otwierającego dla `getArea`.  
+ W poprzednim przykładzie technologia IntelliSense wyświetla opis, parametr i zwraca informacje po wpisaniu nawiasu otwierającego dla `getArea`.
 
- ![Informacje o technologii IntelliSense dla funkcji](../ide/media/js-intellisense-jsdoc-comments.png "JS_IntelliSense_JSDoc_Comments")  
+ ![Informacje o technologii IntelliSense dla funkcji](../ide/media/js-intellisense-jsdoc-comments.png "JS_IntelliSense_JSDoc_Comments")
 
- Poniższy przykład pokazuje, jak używać @typedef oznaczyć za pomocą @property tagu.  
+ Poniższy przykład pokazuje, jak używać tagu @typedef ze znacznikiem @property.
 
-```javascript  
-/**  
-  * @typedef {object} Weather  
-  * @property {string} current The current weather.  
-  */  
-function getForecast(Weather) {  
-}  
+```javascript
+/**
+  * @typedef {object} Weather
+  * @property {string} current The current weather.
+  */
+function getForecast(Weather) {
+}
 
-var w = new Weather();  
-```  
+var w = new Weather();
+```
 
- Poniższy przykład pokazuje użycie @type JSDoc tagów. Jak pokazano w tym przykładzie, pojedyncza gwiazdka (*), które należy wykonać parę początkowej gwiazdki (\*\*) nie są wymagane.  
+ W poniższym przykładzie pokazano użycie @type tagów JSDoc. Jak pokazano w tym przykładzie, pojedyncze gwiazdki (*), które występują po początkowej parze gwiazdki (\* \*) nie są wymagane.
 
-```javascript  
-/**  
-    @type {string}  
-*/  
-const RED = 'FF0000';  
+```javascript
+/**
+    @type {string}
+*/
+const RED = 'FF0000';
 
-```  
+```
 
- Poniższy przykład pokazuje, jak używać @deprecated JSDoc tag.  
+ Poniższy przykład przedstawia sposób użycia znacznika @deprecated JSDoc.
 
-```javascript  
-/**  
- * @deprecated since version 2.0  
- */  
-function old() {  
-}  
+```javascript
+/**
+ * @deprecated since version 2.0
+ */
+function old() {
+}
 ```

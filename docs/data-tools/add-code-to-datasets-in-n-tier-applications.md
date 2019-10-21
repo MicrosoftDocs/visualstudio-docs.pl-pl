@@ -1,5 +1,5 @@
 ---
-title: Dodawanie kodu do zestawów danych w aplikacjach n warstwowych
+title: Dodawanie kodu do zestawów danych w aplikacjach n-warstwowych
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -8,45 +8,45 @@ dev_langs:
 helpviewer_keywords:
 - n-tier applications, extending DataSets
 ms.assetid: d43c2ccd-4902-43d8-b1a8-d10ca5d3210c
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b776e75df2830b89fd1ffe9aed197e9cd1019851
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 3e5b3e44e1de085b5389ad0f50aed758f09a2759
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458476"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648943"
 ---
-# <a name="add-code-to-datasets-in-n-tier-applications"></a>Dodawanie kodu do zestawów danych w aplikacjach n warstwowych
+# <a name="add-code-to-datasets-in-n-tier-applications"></a>Dodawanie kodu do zestawów danych w aplikacjach n-warstwowych
 
-Możesz rozszerzyć funkcjonalność zestawu danych, tworzenia pliku częściowej klasy zestawu danych i dodając kod do niego (zamiast opcji dodawania kodu *DatasetName*. Plik Dataset.Designer). Klasy częściowe Włącz kod dla określonej klasy do podzielone między wiele plików fizycznych. Aby uzyskać więcej informacji, zobacz [częściowe](/dotnet/visual-basic/language-reference/modifiers/partial) lub [klasy częściowe i metody](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).
+Można zwiększyć funkcjonalność zestawu danych, tworząc plik klasy częściowej dla zestawu danych i dodając do niego kod (zamiast dodawać kod do *zestawu danychname*. Plik DataSet. Designer). Klasy częściowe umożliwiają dzielenie kodu dla określonej klasy, aby można je było podzielić między wiele plików fizycznych. Aby uzyskać więcej informacji, zobacz [częściowe](/dotnet/visual-basic/language-reference/modifiers/partial) lub [częściowe klasy i metody](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).
 
-Kod, który definiuje zestaw danych jest generowany za każdym razem, gdy zmiany zostały wprowadzone do definicji zestawu danych (w typizowany zestaw danych). Ten kod zostanie również wygenerowany po wprowadzeniu zmian podczas uruchamiania dowolnego kreatora, który modyfikuje konfigurację zestawu danych. Aby zapobiec usunięciu podczas ponownego generowania zestawu danych w kodzie, należy dodać kod do pliku częściowej klasy zestawu danych.
+Kod definiujący zestaw danych jest generowany każdorazowo po wprowadzeniu zmian w definicji zestawu danych (w określonym zestawie danych). Ten kod jest również generowany, gdy wprowadzasz zmiany w trakcie działania kreatora, który modyfikuje konfigurację zestawu danych. Aby zapobiec usunięciu kodu podczas ponownej generacji zestawu danych, Dodaj kod do pliku klasy częściowej zestawu danych.
 
-Domyślnie po oddzielić zestaw danych i kod TableAdapter wynik jest plik klasy dyskretnych w każdym projekcie. Oryginalny projekt zawiera plik o nazwie *DatasetName.Designer.vb* (lub *DatasetName.Designer.cs*) zawierający kod TableAdapter. Projekt, który jest wyznaczone w **projektu DataSet** właściwość zawiera plik o nazwie *DatasetName.DataSet.Designer.vb* (lub *DatasetName.DataSet.Designer.cs*) . Ten plik zawiera kod zestawu danych.
-
-> [!NOTE]
-> Kiedy oddzielisz zestawy danych i TableAdapters (przez ustawienie **projektu DataSet** właściwości), istniejące częściowe klasy zestawu danych w projekcie nie będą przenoszone automatycznie. Istniejące klasy częściowego zestawu danych należy przenieść ręcznie do projektu zestawu danych.
+Domyślnie po oddzieleniu zestawu danych i kodu TableAdapter wynik jest dyskretnym plikiem klasy w każdym projekcie. Oryginalny projekt zawiera plik o nazwie *DatasetName. Designer. vb* (lub *DatasetName.Designer.cs*), który zawiera kod TableAdapter. Projekt wskazany we właściwości **projektu DataSet** zawiera plik o nazwie *DatasetName. DataSet. Designer. vb* (lub *DatasetName.DataSet.Designer.cs*). Ten plik zawiera kod zestawu danych.
 
 > [!NOTE]
-> Gdy kod sprawdzania poprawności, musi zostać dodany, typizowany zestaw danych zapewnia funkcje do generowania <xref:System.Data.DataTable.ColumnChanging> i <xref:System.Data.DataTable.RowChanging> procedury obsługi zdarzeń. Aby uzyskać więcej informacji, zobacz [Dodawanie walidacji do warstwowego zestawu danych](../data-tools/add-validation-to-an-n-tier-dataset.md).
+> Gdy oddzielasz zestawy danych i TableAdapters (ustawiając właściwość **projektu DataSet** ), istniejące częściowe klasy zestawu danych w projekcie nie będą automatycznie przenoszone. Istniejące klasy częściowe zestawu danych muszą być przenoszone ręcznie do projektu DataSet.
 
-## <a name="to-add-code-to-datasets-in-n-tier-applications"></a>Dodawanie kodu do zestawów danych w aplikacjach n warstwowych
+> [!NOTE]
+> Gdy należy dodać kod sprawdzania poprawności, zestaw danych zawiera funkcje do generowania obsługi zdarzeń <xref:System.Data.DataTable.ColumnChanging> i <xref:System.Data.DataTable.RowChanging>. Aby uzyskać więcej informacji, zobacz [Dodawanie walidacji do wielowarstwowego zestawu danych](../data-tools/add-validation-to-an-n-tier-dataset.md).
 
-1. Znajdź projekt, który zawiera *XSD* pliku.
+## <a name="to-add-code-to-datasets-in-n-tier-applications"></a>Aby dodać kod do zestawów danych w aplikacjach n-warstwowych
 
-2. Wybierz **XSD** plik, aby otworzyć zestaw danych.
+1. Znajdź projekt, który zawiera plik *XSD* .
 
-3. Kliknij prawym przyciskiem myszy tabelę danych, do której chcesz dodać kod (nazwa tabeli na pasku tytułu), a następnie wybierz **Wyświetl kod**.
+2. Wybierz plik **XSD** , aby otworzyć zestaw danych.
 
-     Klasy częściowe, zostanie utworzona i zostanie otwarty w edytorze kodu.
+3. Kliknij prawym przyciskiem myszy tabelę danych, do której chcesz dodać kod (nazwę tabeli na pasku tytułu), a następnie wybierz polecenie **Wyświetl kod**.
+
+     Klasa częściowa jest tworzona i otwiera się w edytorze kodu.
 
 4. Dodaj kod wewnątrz deklaracji klasy częściowej.
 
-     Poniższy kod przedstawia gdzie dodać kod do CustomersDataTable w NorthwindDataSet:
+     Poniższy przykład pokazuje, gdzie dodać kod do CustomersDataTable w NorthwindDataSet:
 
     ```vb
     Partial Public Class CustomersDataTable
@@ -65,8 +65,8 @@ Domyślnie po oddzielić zestaw danych i kod TableAdapter wynik jest plik klasy 
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Omówienie aplikacji N-warstwowa danych](../data-tools/n-tier-data-applications-overview.md)
+- [N-warstwowe aplikacje dotyczące danych — omówienie](../data-tools/n-tier-data-applications-overview.md)
 - [Dodawanie kodu do adapterów TableAdapter w aplikacjach n-warstwowych](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)
 - [Tworzenie i konfigurowanie adapterów TableAdapter](create-and-configure-tableadapters.md)
-- [Hierarchiczna aktualizacja — Przegląd](hierarchical-update.md)
+- [Omówienie aktualizacji hierarchicznej](hierarchical-update.md)
 - [Narzędzia zestawu danych w programie Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)

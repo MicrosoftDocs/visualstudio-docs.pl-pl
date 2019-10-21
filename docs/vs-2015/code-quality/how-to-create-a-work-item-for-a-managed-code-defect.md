@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Tworzenie elementu roboczego dla defektu kodu zarządzanego | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Tworzenie elementu pracy dla defektu kodu zarządzanego | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -9,33 +9,33 @@ helpviewer_keywords:
 - code analysis, creating work items
 ms.assetid: 46ddfd57-af4a-4c1d-bd00-8e6328f321f0
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: ab8744e84e035501ba9bb8d531d982f4c17e206e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8a3e9277ca29a20d817b04bf06cde120c0f073d8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68201382"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655134"
 ---
-# <a name="how-to-create-a-work-item-for-a-managed-code-defect"></a>Instrukcje: Tworzenie elementu roboczego dla błędu kodu zarządzanego
+# <a name="how-to-create-a-work-item-for-a-managed-code-defect"></a>Porady: tworzenie elementu roboczego dla defektu kodu zarządzanego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Można użyć elementu roboczego funkcji dziennika element roboczy z poziomu śledzenia [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]. Aby użyć tej funkcji, projekt musi być częścią projektu zespołowego w [!INCLUDE[esprfound](../includes/esprfound-md.md)].  
-  
-### <a name="to-create-a-work-item-for-managed-code-defect"></a>Aby utworzyć element roboczy dla błędu kodu zarządzanego  
-  
-1. W **analizy kodu** oknie Wybierz ostrzeżenie.  
-  
-2. Wybierz **akcje**, następnie wybierz **Utwórz element pracy** i wybierz typ elementu roboczego do utworzenia.  
-  
-     Nowy element roboczy jest tworzony w celu określenia informacje o usterkach.  
-  
-### <a name="to-create-a-work-item-for-multiple-managed-code-defects"></a>Aby utworzyć element roboczy dla wielu defektów kodu zarządzanego  
-  
-1. W **lista błędów**, wybierz wiele ostrzeżeń i kliknij prawym przyciskiem myszy ostrzeżenia.  
-  
-2. Wskaż **Utwórz element pracy** i kliknij typ elementu roboczego do utworzenia.  
-  
-     Pojedynczym elemencie roboczym jest tworzony dla wszystkich wybranych ostrzeżeń, należy określić informacje o usterkach.
+Za pomocą funkcji śledzenia elementów roboczych można rejestrować elementy robocze z poziomu [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]. Aby użyć tej funkcji, projekt musi być częścią projektu zespołowego w [!INCLUDE[esprfound](../includes/esprfound-md.md)].
+
+### <a name="to-create-a-work-item-for-managed-code-defect"></a>Aby utworzyć element roboczy dla defektu kodu zarządzanego
+
+1. W oknie **Analiza kodu** wybierz ostrzeżenie.
+
+2. Wybierz pozycję **Akcje**, a następnie wybierz pozycję **Utwórz element roboczy** i wybierz typ elementu pracy do utworzenia.
+
+     Zostanie utworzony nowy element roboczy, aby określić informacje o defektach.
+
+### <a name="to-create-a-work-item-for-multiple-managed-code-defects"></a>Aby utworzyć element roboczy dla wielu usterek kodu zarządzanego
+
+1. W **Lista błędów**wybierz opcję wiele ostrzeżeń, a następnie kliknij prawym przyciskiem myszy ostrzeżenia.
+
+2. Wskaż polecenie **Utwórz element roboczy** i kliknij typ elementu pracy, który ma zostać utworzony.
+
+     Pojedynczy element roboczy jest tworzony dla wszystkich wybranych ostrzeżeń, aby określić informacje o usterce.

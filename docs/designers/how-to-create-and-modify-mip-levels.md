@@ -1,21 +1,21 @@
 ---
-title: 'Instrukcje: Tworzenie i modyfikacja poziomów MIP'
+title: 'Porady: tworzenie i modyfikacja poziomów MIP'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f64d4369-2307-4175-a39a-2e45506f7fa1
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 026916a86609f665fdb8329b9c9eacf147be51e3
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 56fa2875b8a0893e55f7fc373b933b85b4fa8207
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924271"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635525"
 ---
-# <a name="how-to-create-and-modify-mip-levels"></a>Instrukcje: Tworzenie i modyfikacja poziomów MIP
+# <a name="how-to-create-and-modify-mip-levels"></a>Instrukcje: Tworzenie i modyfikowanie poziomów MIP
 W tym dokumencie pokazano, jak za pomocą **edytora obrazów** wygenerować i zmodyfikować *poziomy MIP* dla poziomu (LOD) tekstury w miejscu.
 
 ## <a name="generating-mip-levels"></a>Generowanie poziomów MIP
@@ -23,9 +23,9 @@ W tym dokumencie pokazano, jak za pomocą **edytora obrazów** wygenerować i zm
 
 #### <a name="to-generate-mip-levels"></a>Aby wygenerować poziomy MIP
 
-1. Zacznij od podstawowej tekstury, zgodnie z opisem w [temacie How to: Utwórz teksturę](../designers/how-to-create-a-basic-texture.md)podstawową. Aby uzyskać najlepsze wyniki, należy określić teksturę, która ma szerokość i wysokość, które są potęgami dwóch rozmiarów, na przykład 256, 512, 1024 i tak dalej.
+1. Zacznij od podstawowej tekstury, zgodnie z opisem w temacie [How to: Create a Basic Texture](../designers/how-to-create-a-basic-texture.md). Aby uzyskać najlepsze wyniki, należy określić teksturę, która ma szerokość i wysokość, które są potęgami dwóch rozmiarów, na przykład 256, 512, 1024 i tak dalej.
 
-2. Generuj poziomy MIP. Na pasku **narzędzi tryb edytora obrazów** wybierz pozycję**Narzędzia** >  **Zaawansowane** > **Generuj MIPS**.
+2. Generuj poziomy MIP. Na pasku narzędzi **Tryb edytora obrazów** wybierz kolejno opcje **zaawansowane**  > **Narzędzia**  > **Generuj MIPS**.
 
      Należy zauważyć, że przyciski **Przejdź do następnego poziomu MIP** i **Przejdź do poprzedniego poziomu MIP** są teraz wyświetlane na pasku narzędzi **Tryb edytora obrazów** . Jeśli zostanie wyświetlone okno **Właściwości** , Zauważ, że właściwość tylko do odczytu na **poziomie MCI** i na **poziomie MCI** jest teraz wyświetlana we właściwościach obrazu.
 
@@ -39,8 +39,8 @@ Aby osiągnąć efekty specjalne lub zwiększyć jakość obrazu na określonych
 2. Po wybraniu poziomu MIP, który chcesz zmodyfikować, można użyć narzędzi do rysowania, aby zmodyfikować go bez zmiany zawartości innych poziomów MIP. Narzędzia do rysowania są dostępne na pasku narzędzi **edytora obrazów** . Po wybraniu narzędzia można zmienić jego właściwości w oknie **Właściwości** . Aby uzyskać informacje o narzędziach rysowania i ich właściwościach, zobacz [Edytor obrazów](../designers/image-editor.md).
 
 > [!NOTE]
-> Jeśli nie trzeba modyfikować zawartości poszczególnych poziomów MIP, jak można osiągnąć pewne efekty — zalecamy generowanie mipmapy z tekstury źródłowej w czasie kompilacji. Pozwala to zagwarantować, że poziomy MCI pozostają zsynchronizowane ze teksturą źródłową, ponieważ modyfikacje poziomu MIP nie są propagowane do innych poziomów automatycznie. Aby uzyskać więcej informacji na temat generowania mipmapy w czasie kompilacji, zobacz [How to: Wyeksportuj teksturę zawierającą mipmapy](../designers/how-to-export-a-texture-that-contains-mipmaps.md).
+> Jeśli nie trzeba modyfikować zawartości poszczególnych poziomów MIP, jak można osiągnąć pewne efekty — zalecamy generowanie mipmapy z tekstury źródłowej w czasie kompilacji. Pozwala to zagwarantować, że poziomy MCI pozostają zsynchronizowane ze teksturą źródłową, ponieważ modyfikacje poziomu MIP nie są propagowane do innych poziomów automatycznie. Aby uzyskać więcej informacji na temat generowania mipmapy w czasie kompilacji, zobacz [How to: Export a tekstury, która zawiera mipmapy](../designers/how-to-export-a-texture-that-contains-mipmaps.md).
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Instrukcje: Tworzenie tekstury podstawowej](../designers/how-to-create-a-basic-texture.md)
+- [Instrukcje: tworzenie tekstury podstawowej](../designers/how-to-create-a-basic-texture.md)

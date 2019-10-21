@@ -2,142 +2,142 @@
 title: Porady dotyczące poprawy wydajności
 ms.date: 08/14/2018
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fccae7d42d9e8f99c78fd55f74466e2f83e5dfa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ccf785cec859290cac0ebcf5c9685861bd2887e4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581788"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647149"
 ---
-# <a name="visual-studio-performance-tips-and-tricks"></a>Porady dotyczące wydajności programu Visual Studio i wskazówki
+# <a name="visual-studio-performance-tips-and-tricks"></a>Porady i wskazówki dotyczące wydajności programu Visual Studio
 
-Zalecenia dotyczące wydajności programu Visual Studio są przeznaczone dla sytuacje małej ilości pamięci, które mogą wystąpić w rzadkich przypadkach. W takich przypadkach można zoptymalizować niektóre funkcje programu Visual Studio, których nie używasz. Poniższe porady nie odnoszą się jako ogólne zalecenia.
+Zalecenia dotyczące wydajności programu Visual Studio są przeznaczone dla małych ilości pamięci, które mogą wystąpić w rzadkich przypadkach. W takich sytuacjach można zoptymalizować niektóre funkcje programu Visual Studio, które mogą nie być używane. Poniższe wskazówki nie są przeznaczone do ogólnych zaleceń.
 
 > [!NOTE]
-> Jeśli występują problemy z używaniem produktu z powodu problemów z pamięcią, Daj nam znać za pośrednictwem [narzędzia opinii](../ide/how-to-report-a-problem-with-visual-studio.md).
+> Jeśli masz trudności z użyciem produktu ze względu na problemy z pamięcią, poinformuj nas o tym za pośrednictwem [Narzędzia do przesyłania opinii](../ide/how-to-report-a-problem-with-visual-studio.md).
 
-## <a name="use-a-64-bit-os"></a>Użyj 64-bitowego systemu operacyjnego
+## <a name="use-a-64-bit-os"></a>Korzystanie z 64-bitowego systemu operacyjnego
 
-Po uaktualnieniu do wersji 64-bitowego systemu z 32-bitowej wersji systemu Windows możesz rozwinąć ilość dostępnej pamięci wirtualnej w programie Visual Studio, od 2 do 4 GB. Dzięki temu Visual Studio, aby obsłużyć znacznie większych obciążeń, mimo że jest proces 32-bitowy.
+Jeśli uaktualniasz system z 32-bitowej wersji systemu Windows do wersji 64-bitowej, rozszerzasz ilość pamięci wirtualnej dostępnej dla programu Visual Studio z 2 GB do 4 GB. Dzięki temu program Visual Studio może obsługiwać znacznie większe obciążenia, nawet jeśli jest to proces 32-bitowy.
 
-Aby uzyskać więcej informacji, zobacz [limity pamięci](/windows/desktop/Memory/memory-limits-for-windows-releases) i [/largeaddressaware w systemie Windows 64-bitowych](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
+Aby uzyskać więcej informacji, zobacz [limity pamięci](/windows/desktop/Memory/memory-limits-for-windows-releases) i [używanie/LARGEADDRESSAWARE w 64-bitowym systemie Windows](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
 
-## <a name="disable-automatic-file-restore"></a>Wyłącz automatyczne plików przywracania
+## <a name="disable-automatic-file-restore"></a>Wyłącz automatyczne przywracanie plików
 
-Program Visual Studio ponownie automatycznie otwiera dokumenty, które zostały pozostawione otwarte w poprzedniej sesji. To może przedłużyć czas przypadków, gdy ładowania rozwiązania przez maksymalnie 30% lub dłużej w zależności od typu projektu i dokumenty, jest otwarty. Projektanci, takie jak Windows Forms i XAML i niektórych plików JavaScript i typescript można otwierać się powoli.
+Program Visual Studio automatycznie ponownie otwiera dokumenty, które zostały pozostawione otwarte w poprzedniej sesji. Może to wydłużyć czas ładowania rozwiązania o maksymalnie 30%, w zależności od typu projektu i otwartych dokumentów. Projektanci, takie jak Windows Forms i XAML, a także niektóre pliki JavaScript i TypeScript, mogą być wolne do otwarcia.
 
-Visual Studio powiadamia kolorem żółtym paskiem podczas przywracania automatycznych dokumentu powoduje rozwiązanie znacznie wolniejsze ładowanie. Aby wyłączyć automatyczne plików otworzyć ponownie, wykonując następujące czynności:
+Program Visual Studio powiadamia Cię na żółtym pasku, gdy automatyczne przywracanie dokumentów powoduje znacznie wolniejsze ładowanie rozwiązania. Automatyczne ponowne otwieranie plików można wyłączyć, wykonując następujące czynności:
 
-1. Wybierz **narzędzia** > **opcje** otworzyć **opcje** okno dialogowe.
+1. Wybierz pozycję **narzędzia**  > **Opcje** , aby otworzyć okno dialogowe **Opcje** .
 
-1. Na **projekty i rozwiązania** > **ogólne** strony, usuń zaznaczenie **ponownie otworzyć dokumentów przy ładowaniu rozwiązania**.
+1. Na stronie**Ogólne** **projekty i rozwiązanie**  >  Usuń zaznaczenie opcji **Otwórz ponownie dokumenty po załadowaniu rozwiązania**.
 
-Jeśli wyłączysz plik automatycznego przywracania, Szybkie nawigowanie do plików, który chcesz otworzyć jest przy użyciu jednej z [przejdź do](../ide/go-to.md) poleceń:
+Jeśli wyłączysz automatyczne przywracanie plików, możesz szybko przejść do plików, które chcesz otworzyć, za pomocą jednego z poleceń [Przejdź do](../ide/go-to.md) :
 
-- Do ogólnych **przejdź do** funkcji, wybierz opcję **Edytuj** > **przejdź do** > **przejdź do wszystkich**, lub naciśnij  **CTRL**+**T**.
+- **Aby uzyskać ogólne funkcje** , wybierz opcję **Edytuj**  > **Przejdź do**  > **przejdź do wszystkich**lub naciśnij klawisz **Ctrl** +**t**.
 
-- Przejdź do ostatniej edycji lokalizacji w rozwiązaniu za pomocą **Edytuj** > **przejdź do** > **przejdź do ostatniego Edytuj lokalizację**, lub naciskając **Ctrl**  + **Shift**+**Backspace**.
+- Przejdź do ostatnio edytowanej lokalizacji w rozwiązaniu za pomocą polecenia **edytuj**  > **Przejdź do**  > **Przejdź do ostatniej lokalizacji edycji**lub naciskając **klawisz Ctrl** +**SHIFT** +**Backspace**.
 
-- Użyj **przejdź do pliku ostatnie** umożliwia wyświetlenie listy ostatnio odwiedzonych plików w rozwiązaniu. Wybierz **Edytuj** > **przejdź do** > **przejdź do pliku ostatnie**, lub naciśnij **Ctrl** + **1**, **Ctrl**+**R**.
+- Użyj **Przejdź do ostatniego pliku** , aby wyświetlić listę ostatnio odwiedzonych plików w rozwiązaniu. Wybierz pozycję **edytuj**  > **przejdź do** pozycji  > **Przejdź do ostatniego pliku**lub **naciśnij klawisze CTRL** +**1**, **Ctrl** +**R**.
 
-## <a name="configure-debugging-options"></a>Skonfiguruj opcje debugowania
+## <a name="configure-debugging-options"></a>Konfigurowanie opcji debugowania
 
-Jeśli masz zazwyczaj mało pamięci podczas sesji debugowania, można zoptymalizować wydajność, wprowadzając zmiany w konfiguracji co najmniej jeden.
+Jeśli zwykle zaczyna brakować wolnej pamięci podczas debugowania sesji, można zoptymalizować wydajność, wprowadzając co najmniej jedną zmianę konfiguracji.
 
-- **Włącz opcję tylko mój kod**
+- **Włącz Tylko mój kod**
 
-    Najprostsza optymalizacji jest umożliwienie **tylko mój kod** funkcji, która tylko ładuje symbole dla Twojego projektu. Włączenie tej funkcji może spowodować znaczne pamięci, zapisywanie do debugowania zarządzanej aplikacji (.NET). Ta opcja jest już włączona domyślnie w niektórych typach projektów.
+    Najprostsza Optymalizacja polega na włączeniu funkcji **tylko mój kod** , która ładuje tylko symbole dla projektu. Włączenie tej funkcji może spowodować znaczny zapis pamięci na potrzeby debugowania aplikacji zarządzanych (.NET). Ta opcja jest już włączona domyślnie w niektórych typach projektów.
 
-    Aby włączyć **tylko mój kod**, wybierz **narzędzia** > **opcje** > **debugowanie**  >   **Ogólne**, a następnie wybierz pozycję **Włącz tylko mój kod**.
+    Aby włączyć **tylko mój kod**, wybierz pozycję **narzędzia**  > **Opcje**  > **debugowanie**  > **Ogólne**, a następnie wybierz pozycję **Włącz tylko mój kod**.
 
-- **Określa symbole, aby załadować**
+- **Określ symbole do załadowania**
 
-    Debugowanie natywne ładowania plików symboli (*.pdb*) jest kosztowna pod względem zasobów pamięci. Można skonfigurować ustawienia symboli debugera w celu zachowywania pamięci. Zazwyczaj należy skonfigurować rozwiązanie, aby załadować tylko moduły z projektu.
+    W przypadku debugowania natywnego ładowanie plików symboli ( *. pdb*) jest kosztowne w odniesieniu do zasobów pamięci. Można skonfigurować ustawienia symboli debugera, aby zaoszczędzić pamięć. Zazwyczaj można skonfigurować rozwiązanie do ładowania tylko modułów z projektu.
 
-    Aby określić ładowania symboli, wybierz **narzędzia** > **opcje** > **debugowanie** > **symbole**.
+    Aby określić ładowanie symboli, wybierz pozycję **narzędzia**  > **opcje**  > **debugowanie**  > **symbole**.
 
-    Ustawić opcje **tylko określonych modułów** zamiast **wszystkie moduły** , a następnie określ, które moduły care do załadowania. Podczas debugowania, można również prawym przyciskiem myszy w określonych modułach **modułów** okna, aby jawnie objęte moduł ładowania symboli. (Aby otworzyć okno podczas debugowania, wybierz opcję **debugowania** > **Windows** > **modułów**.)
+    Ustaw dla opcji **tylko określone moduły** , a nie **wszystkie moduły** , a następnie określ moduły, które chcesz załadować. Podczas debugowania można również kliknąć prawym przyciskiem myszy określone moduły w oknie **moduły** , aby jawnie dołączyć moduł do ładowania symboli. (Aby otworzyć okno podczas debugowania, wybierz **debuguj**  > **modułów** > **systemu Windows** ).
 
-    Aby uzyskać więcej informacji, zobacz [zrozumieć pliki symboli](https://blogs.msdn.microsoft.com/visualstudioalm/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/).
+    Aby uzyskać więcej informacji, zobacz [Opis plików symboli](https://blogs.msdn.microsoft.com/visualstudioalm/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/).
 
 - **Wyłącz narzędzia diagnostyczne**
 
-    Zalecane jest, wyłącz profilowanie procesora CPU po użyciu. Ta funkcja może zużywać dużą ilością zasobów. Po włączeniu profilowania procesora CPU ten stan są utrwalane między sesjami debugowania kolejne, więc warto jawnie wyłączając ją po zakończeniu. Niektóre zasoby mogą zapisać, wyłączając narzędzia diagnostyczne podczas debugowania, jeśli nie potrzebujesz funkcji podana.
+    Zaleca się wyłączenie profilowania procesora CPU po użyciu. Ta funkcja może zużywać duże ilości zasobów. Po włączeniu profilowania procesora CPU ten stan jest utrwalany w kolejnych sesjach debugowania, więc warto jawnie wyłączyć go po zakończeniu. Niektóre zasoby można zapisać, wyłączając narzędzia diagnostyczne podczas debugowania, jeśli nie są potrzebne podane funkcje.
 
-    Aby wyłączyć **narzędzia diagnostyczne**uruchamianie sesji debugowania, wybierz **narzędzia** > **opcje** > **Włączanie diagnostyki Narzędzia**i usuń zaznaczenie opcji.
+    Aby wyłączyć **Narzędzia diagnostyczne**, Rozpocznij sesję debugowania, wybierz pozycję **narzędzia**  > **Opcje**  > **Włącz narzędzia diagnostyczne**i usuń zaznaczenie opcji.
 
-    Aby uzyskać więcej informacji, zobacz [Profiling Tools](../profiling/profiling-feature-tour.md).
+    Aby uzyskać więcej informacji, zobacz [narzędzia profilowania](../profiling/profiling-feature-tour.md).
 
-## <a name="disable-tools-and-extensions"></a>Wyłączanie narzędzi i rozszerzeń
+## <a name="disable-tools-and-extensions"></a>Wyłącz narzędzia i rozszerzenia
 
-Poprawianie wydajności można wyłączyć niektóre narzędzia lub rozszerzenia.
+Niektóre narzędzia i rozszerzenia można wyłączyć, aby zwiększyć wydajność.
 
 > [!TIP]
-> Wyłączanie rozszerzenia jednego naraz, a następnie ponowne sprawdzanie wydajności, można często wyizolować problemy z wydajnością.
+> Często można wyizolować problemy z wydajnością, wyłączając je i uruchamiając ponownie wydajność.
 
-### <a name="managed-language-service-roslyn"></a>Zarządzana usługa językowa (Roslyn)
+### <a name="managed-language-service-roslyn"></a>Usługa języka zarządzanego (Roslyn)
 
-Aby uzyskać informacje dotyczące wydajności platformy kompilatora .NET ("Roslyn"), zobacz [zagadnienia dotyczące wydajności w przypadku dużych rozwiązań](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
+Aby uzyskać informacje dotyczące wydajności .NET Compiler Platform ("Roslyn"), zobacz [zagadnienia dotyczące wydajności w przypadku dużych rozwiązań](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
 
-- **Wyłączanie pełnej analizy rozwiązania**
+- **Wyłącz pełną analizę rozwiązania**
 
-    Aby zapewnić rozbudowane środowisko o błędach przed wywołaniem kompilacji programu Visual Studio wykonuje analizy całego rozwiązania. Ta funkcja jest przydatna na identyfikację błędów tak szybko, jak to możliwe. Jednak w przypadku dużych rozwiązań tej funkcji mogą wykorzystywać zasoby pamięci znaczące. W przypadku dużego wykorzystania pamięci lub podobne problemy, możesz wyłączyć to środowisko, aby zwolnić zasoby. Domyślnie ta opcja jest włączona dla języka Visual Basic i wyłączone dla języka C#.
+    Program Visual Studio wykonuje analizę całego rozwiązania, aby zapewnić rozbudowane środowisko o błędach przed wywołaniem kompilacji. Ta funkcja jest przydatna do identyfikowania błędów tak szybko, jak to możliwe. Jednak w przypadku dużych rozwiązań ta funkcja może zużywać znaczną ilość zasobów pamięci. Jeśli występują problemy z ilością pamięci lub podobnymi problemami, możesz wyłączyć to środowisko, aby zwolnić te zasoby. Domyślnie ta opcja jest włączona dla Visual Basic i wyłączone dla programu C#.
 
-    Aby wyłączyć **pełnej analizy rozwiązania**, wybierz **narzędzia** > **opcje** > **edytora tekstów**, a następnie wybierz pozycję albo **języka Visual Basic** lub **C#**. Wybierz **zaawansowane** i usuń zaznaczenie opcji **Włączanie pełnej analizy rozwiązania**.
+    Aby wyłączyć **pełną analizę rozwiązań**, wybierz pozycję **narzędzia**  > **Opcje**  > **edytorze tekstów**, a następnie wybierz opcję **C#** **Visual Basic** lub. Wybierz pozycję **Zaawansowane** i usuń zaznaczenie opcji **Włącz pełną analizę rozwiązania**.
 
-- **Wyłączanie funkcji CodeLens**
+- **Wyłącz CodeLens**
 
-    Wykonuje program Visual Studio **Znajdź wszystkie odwołania** zadań dla każdej metody, która jest wyświetlana. Funkcja CodeLens dostarcza funkcje takie jak śródwierszowe wyświetlanie liczby odwołań. Praca jest wykonywana w oddzielnym procesie, takie jak *ServiceHub.RoslynCodeAnalysisService32*. W przypadku dużych rozwiązań lub w systemach ograniczonych zasobach ta funkcja może mieć znaczący wpływ na wydajność. Jeśli występują problemy z pamięcią, na przykład podczas ładowania dużych rozwiązania na komputerze 4 GB, lub wysokie użycie procesora CPU dla tego procesu możesz wyłączyć funkcji CodeLens, aby zwolnić zasoby.
+    Program Visual Studio wykonuje zadanie **Znajdź wszystkie odwołania** dla każdej metody w miarę wyświetlania. CodeLens udostępnia funkcje, takie jak wbudowane wyświetlanie liczby odwołań. Prace są wykonywane w osobnym procesie, takim jak *zadanie servicehub. RoslynCodeAnalysisService32*. W dużych rozwiązaniach lub w systemach z ograniczeniami zasobów ta funkcja może mieć znaczący wpływ na wydajność. Jeśli występują problemy z pamięcią, na przykład podczas ładowania dużego rozwiązania na komputerze 4-GB lub dużego użycia procesora CPU dla tego procesu, można wyłączyć CodeLens w celu zwolnienia zasobów.
 
-    Aby wyłączyć **CodeLens**, wybierz **narzędzia** > **opcje** > **edytora tekstów**  >   **Wszystkie języki** > **CodeLens**i usuń zaznaczenie opcji tej funkcji.
+    Aby wyłączyć **CodeLens**, wybierz pozycję **narzędzia**  > **Opcje**  > **Edytor tekstu**  > **wszystkie języki**  > **CodeLens**i usuń zaznaczenie tej funkcji.
 
     > [!NOTE]
-    > Funkcja CodeLens jest dostępna w wersjach Professional i Enterprise programu Visual Studio.
+    > CodeLens jest dostępny w wersjach Professional i Enterprise programu Visual Studio.
 
 ### <a name="other-tools-and-extensions"></a>Inne narzędzia i rozszerzenia
 
 - **Wyłącz rozszerzenia**
 
-    Rozszerzenia są dodatkowych składników oprogramowania dodane do programu Visual Studio, które zapewniają nowe funkcje lub rozszerzanie istniejących funkcji. Rozszerzenia można źródłem problemów zasobów pamięci. Jeśli występują problemy z zasobami pamięci, spróbuj wyłączyć rozszerzenia jeden w czasie, aby zobaczyć, jak wpływa na scenariuszu lub przepływu pracy.
+    Rozszerzenia to dodatkowe składniki oprogramowania dodane do programu Visual Studio, które udostępniają nowe funkcje lub rozszerzają istniejące funkcje. Rozszerzenia często mogą być źródłem problemów z zasobami pamięci. Jeśli występują problemy z zasobami pamięci, spróbuj wyłączać rozszerzenia pojedynczo, aby zobaczyć, jak ma to wpływ na scenariusz lub przepływ pracy.
 
    ::: moniker range="vs-2017"
 
-    Aby wyłączyć rozszerzenia, przejdź do **narzędzia** > **rozszerzenia i aktualizacje**i Wyłącz określonego rozszerzenia.
+    Aby wyłączyć rozszerzenia, przejdź do pozycji **narzędzia** > **rozszerzenia i aktualizacje**, a następnie wyłącz określone rozszerzenie.
 
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-    Aby wyłączyć rozszerzenia, przejdź do **rozszerzenia** > **Zarządzaj rozszerzeniami**i Wyłącz określonego rozszerzenia.
+    Aby wyłączyć rozszerzenia, przejdź do **rozszerzeń** > **Zarządzanie rozszerzeniami**i Wyłącz określone rozszerzenie.
 
    ::: moniker-end
 
-- **Wyłącz projektanta XAML**
+- **Wyłącz projektant XAML**
 
-    Projektant XAML jest domyślnie włączona, ale tylko wykorzystuje zasoby, jeśli otworzysz *.xaml* pliku. Praca z plikami XAML, ale nie chcesz, aby korzystać z funkcji projektanta, należy wyłączyć tę funkcję, aby zwolnić z pamięci.
+    Projektant XAML jest domyślnie włączony, ale tylko wtedy, gdy otworzysz plik *. XAML* . Jeśli pracujesz z plikami XAML, ale nie chcesz korzystać z funkcjonalności projektanta, wyłącz tę funkcję, aby zwolnić część pamięci.
 
-    Aby wyłączyć **projektanta XAML**, przejdź do **narzędzia** > **opcje** > **projektanta XAML**  >  **Włącz projektanta XAML**i usuń zaznaczenie opcji.
+    Aby wyłączyć **Projektant XAML**, przejdź do pozycji **narzędzia**  > **opcje**  > **Projektant XAML**  > **Włącz Projektant XAML**i usuń zaznaczenie opcji.
 
-- **Usuń obciążeń**
+- **Usuń obciążenia**
 
-    Aby usunąć obciążeń, które nie są już używane, można użyć Instalatora programu Visual Studio. Ta akcja, można ograniczyć koszty uruchamiania i wykonywania przez pominięcie pakiety i zestawy, które nie są już potrzebne.
+    Możesz użyć Instalator programu Visual Studio, aby usunąć obciążenia, które nie są już używane. Ta akcja może usprawnić koszty uruchamiania i wykonywania, pomijając pakiety i zestawy, które nie są już potrzebne.
 
-## <a name="force-a-garbage-collection"></a>Wymuszenia wyrzucania elementów bezużytecznych
+## <a name="force-a-garbage-collection"></a>Wymuś wyrzucanie elementów bezużytecznych
 
-Środowisko CLR używa systemu zarządzania pamięcią wyrzucania elementów kolekcji. W tym systemie czasami pamięć jest używana przez obiekty, które nie są już potrzebne. Ten stan jest tymczasowa. Moduł zbierający elementy bezużyteczne spowoduje zwolnienie tej pamięci na podstawie jego wydajności i algorytmy heurystyczne użycia zasobów. Można wymusić CLR, aby zbierać wszystkie nieużywane pamięci przy użyciu klawisz dostępu w programie Visual Studio. W przypadku znacznej ilości pamięci oczekiwanie na kolekcji wymuszenia wyrzucania elementów bezużytecznych, powinien zostać wyświetlony użycie pamięci przez *devenv.exe* procesu upuść w **Menedżera zadań**. Jest to rzadko niezbędne do używania tej metody. Jednak po ukończeniu kosztowną operacją (na przykład Pełna kompilacja, sesji debugowania lub zdarzenia otwarte rozwiązanie) może pomóc określić, ile pamięci naprawdę jest on używany przez proces. Ponieważ Visual Studio jest mieszany (zarządzany i natywnego), użytkownik może od czasu do czasu natywnego programu przydzielania i moduł zbierający elementy bezużyteczne konkurują o zasoby pamięci ograniczone. W warunkach wysokiego użycia pamięci może pomóc wymusić moduł odśmiecania pamięci do uruchomienia.
+Środowisko CLR używa systemu zarządzania pamięcią do wyrzucania elementów bezużytecznych. W tym systemie czasami pamięć jest używana przez obiekty, które nie są już potrzebne. Ten stan jest tymczasowy; Moduł wyrzucania elementów bezużytecznych zwolni tę pamięć na podstawie jej heurystyki wydajności i użycia zasobów. Można wymusić zebranie przez środowisko CLR dowolnej nieużywanej pamięci przy użyciu klawisza skrótu w programie Visual Studio. Jeśli istnieje znacząca ilość elementów bezużytecznych oczekujących na zbieranie i wymuszenie wyrzucania elementów bezużytecznych, należy zobaczyć użycie pamięci przez listę rozwijaną procesów *devenv. exe* w **Menedżerze zadań**. Nie trzeba używać tej metody. Jednak po ukończeniu kosztownej operacji (np. pełnej kompilacji, sesji debugowania lub otwartego zdarzenia rozwiązania) może pomóc określić, ile pamięci jest rzeczywiście używane przez proces. Ponieważ program Visual Studio jest mieszany (zarządzany & Native), czasami istnieje możliwość, że natywny Alokator i moduł wyrzucania elementów bezużytecznych konkurują o ograniczonych zasobach pamięci. W warunkach dużego użycia pamięci może być pomocne, aby wymusić uruchomienie modułu wyrzucania elementów bezużytecznych.
 
-Aby wymusić wyrzucania elementów bezużytecznych, użyj klawisza skrótu: **CTRL**+**Alt**+**Shift**+**F12**, **Ctrl** + **Alt**+**Shift**+**F12** (naciśnij do dwa razy).
+Aby wymusić wyrzucanie elementów bezużytecznych, użyj klawisza skrótu: **ctrl** +**alt** +**shift** +**F12**, **Ctrl** +**Alt** 0**SHIFT** 2**F12** (naciśnij dwukrotnie przycisk).
 
-Jeśli niezawodnie wymuszenia wyrzucania elementów bezużytecznych sprawia, że dany scenariusz działał, plik raportu za pomocą narzędzia opinii programu Visual Studio to zachowanie może być usterka.
+Jeśli wymuszenie nieniezawodnego wyrzucania elementów bezużytecznych sprawia, że Twój scenariusz działa, należy zgłosić raport za pomocą narzędzia opinii programu Visual Studio, ponieważ takie zachowanie może być przyczyną błędu.
 
-Aby uzyskać szczegółowy opis moduł odśmiecania pamięci CLR, zobacz [podstawowe informacje na temat wyrzucania elementów bezużytecznych](/dotnet/standard/garbage-collection/fundamentals).
+Aby uzyskać szczegółowy opis modułu zbierającego elementy bezużyteczne środowiska CLR, zobacz podstawowe informacje na temat [odzyskiwania pamięci](/dotnet/standard/garbage-collection/fundamentals).
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Optymalizacja wydajności programu Visual Studio](../ide/optimize-visual-studio-performance.md)
-- [Ładowanie rozwiązania szybciej (blog Visual Studio)](https://devblogs.microsoft.com/visualstudio/load-solutions-faster-with-visual-studio-2017-version-15-6/)
+- [Optymalizowanie wydajności programu Visual Studio](../ide/optimize-visual-studio-performance.md)
+- [Szybsze ładowanie rozwiązań (blog programu Visual Studio)](https://devblogs.microsoft.com/visualstudio/load-solutions-faster-with-visual-studio-2017-version-15-6/)

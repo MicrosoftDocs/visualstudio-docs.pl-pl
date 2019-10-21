@@ -3,105 +3,105 @@ title: Okna debugera XSLT
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 846fdabd-e5c3-4688-9b0d-a93fbeea1b96
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b25c47e6db79fe4b860b6e7c209f0fc8403d0fcd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ae37db21072e81a5940f09f085bf261839686a69
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838496"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72646088"
 ---
 # <a name="debugger-user-interface-xslt"></a>Interfejs użytkownika debugera (XSLT)
 
-W tym artykule opisano okien debugera i oknach dialogowych. Zostało omówione tylko elementów interfejsu użytkownika, których zachowanie debugowania specyficznych dla XSLT.
+W tym artykule opisano okna debugera i okna dialogowe. Omawia tylko elementy interfejsu użytkownika, które mają zachowanie debugowania specyficznego dla XSLT.
 
-Aby uzyskać więcej informacji, zobacz [debugowanie odwołań do interfejsu użytkownika](../debugger/debugging-user-interface-reference.md).
+Aby uzyskać więcej informacji, zobacz [debugowanie informacji o interfejsie użytkownika](../debugger/debugging-user-interface-reference.md).
 
 ## <a name="locals-window"></a>okno zmiennych lokalnych
 
-Okno zmiennych lokalnych Wyświetla informacje o wszelkie zmienne zdefiniowane w arkuszu stylów. Okno zmiennych lokalnych zawiera trzy kolumny informacji:
+Okno zmienne lokalne wyświetla informacje o zmiennych zdefiniowanych w arkuszu stylów. Okno lokalne zawiera trzy kolumny informacji:
 
 **Nazwa**
 
-Ta kolumna zawiera nazwy wszystkich zmiennych lokalnych w bieżącym zakresie. Węzeł zestawy mają formant drzewa, który można przejść do szczegółów wyświetlić jego podfolderów.
+Ta kolumna zawiera nazwy wszystkich zmiennych lokalnych w bieżącym zakresie. Zestawy węzłów mają formant drzewa, który można przechodzenie do szczegółów w celu wyświetlenia jego podfolderów.
 
 **Wartość**
 
-Ta kolumna zawiera wartości zawarte w każdej zmiennej. Atrybut, przetwarzania instrukcji, komentarz, tekst i węzły CData wyświetlane wartości tekstowej węzła. Węzły Namespace wyświetlają identyfikator URI przestrzeni nazw.
+W tej kolumnie jest wyświetlana wartość zawartej w każdej zmiennej. W przypadku atrybutów, instrukcji przetwarzania, komentarzy, tekstu i CData wyświetlana jest wartość tekstowa węzła. Węzły przestrzeni nazw wyświetlają identyfikator URI przestrzeni nazw.
 
-**Typ**
+**Wprowadź**
 
-Ta kolumna określa typ danych dla każdej zmiennej, na liście **nazwa** kolumny.
+Ta kolumna określa typ danych każdej zmiennej wymienionej w kolumnie **Nazwa** .
 
-Okno zmiennych lokalnych wyświetla także zmienne kontekstowe wstępnie zdefiniowanych, które śledzą kontekście transformację XSLT. W poniższej tabeli opisano zmienne kontekstowe wstępnie zdefiniowanych, używany przez debuger XSLT.
+W oknie Ustawienia lokalne są również wyświetlane wstępnie zdefiniowane zmienne kontekstowe, które śledzą kontekst transformacji XSLT. W poniższej tabeli opisano wstępnie zdefiniowane zmienne kontekstowe używane przez debuger XSLT.
 
 |Nazwa|Opis|
 |-|-----------------|
 |`last()`|Rozmiar kontekstu.|
-|`position()`|Pozycja lub numer indeksu węzła kontekstu, względem rozmiar kontekstu.|
+|`position()`|Pozycja lub numer indeksu węzła kontekstu względem rozmiaru kontekstu.|
 |`self::node()`|Wartość węzła kontekstu.|
 
 ## <a name="output-window"></a>Okno wyniku
 
-W oknie danych wyjściowych pokazuje wszystkie komunikaty o błędach lub wyjątki zabezpieczeń, które występują podczas debugowania. Zawiera również danych wyjściowych debugera.
+W oknie dane wyjściowe są wyświetlane wszystkie komunikaty o błędach lub wyjątki zabezpieczeń, które występują podczas debugowania. Pokazuje również dane wyjściowe debugera.
 
 ## <a name="task-list"></a>Lista zadań
 
-**Listy zadań** zawiera listę wszystkich błędów kompilacji w arkuszu stylów. Dwukrotnie błąd przenosi kursor do wiersza z powodu błędu.
+**Lista zadań** wyświetla wszystkie błędy kompilacji w arkuszu stylów. Dwukrotne kliknięcie tego błędu spowoduje przejście kursora do wiersza z błędem.
 
-**Listy zadań** zawiera błędy, które występują w blokach skryptu w pliku XSLT.
+**Lista zadań** zawiera wszystkie błędy występujące w blokach skryptu w pliku XSLT.
 
 > [!NOTE]
-> Debuger XSLT nie zawiera ostrzeżeń, więc nigdy nie pojawiają się na **listy zadań**.
+> Debuger XSLT nie ma ostrzeżeń, więc nigdy nie pojawiają się w **Lista zadań**.
 
 ## <a name="breakpoints-window"></a>Okno punktów przerwania
 
-Okno punktów przerwania pokazuje wszystkie punkty przerwania ustawione w bieżącym projekcie. Jeśli punkt przerwania jest dodawany, gdy okno jest w widoku, okno jest automatycznie aktualizowany, aby wyświetlić nowy punkt przerwania.
+W oknie punkty przerwania są wyświetlane wszystkie punkty przerwania ustawione w bieżącym projekcie. Jeśli punkt przerwania zostanie dodany podczas wyświetlania okna, okno zostanie automatycznie zaktualizowane, aby pokazać nowy punkt przerwania.
 
-Okno punktów przerwania, powinny zachowywać się w taki sam sposób jak inne debugery programu Visual Studio.
+Okno punktów przerwania powinno zachowywać się tak samo jak w przypadku innych debugerów programu Visual Studio.
 
 ## <a name="watch-window"></a>okno czujki
 
-Okno czujki, jest używane do oceny zmiennych. Można również zmienić wartości zmiennych.
+Okno wyrażeń kontrolnych służy do obliczania zmiennych. Możesz również zmienić wartości zmiennych.
 
-Zmienne okno czujki związanych z bieżącego kontekstu (element najważniejsze dla stosu wywołań). W przypadku zmiany kontekstu okno czujki aktualizacji i wyświetla zmienne ustawione dla tego kontekstu.
+Zmienne wyświetlane w okno wyrażeń kontrolnych są dla bieżącego kontekstu (najwyższego elementu w stosie wywołań). W przypadku zmiany kontekstu okno czujki aktualizuje i wyświetli zmienne ustawione dla tego kontekstu.
 
 ## <a name="call-stack-window"></a>Stos wywołań, okno
 
-**Stos wywołań** okno służy do wyświetlania nazwy funkcji na stosie wywołań, typy parametrów i wartości parametrów. Informacje stosu wywołań jest wyświetlany tylko wtedy, gdy program debugowany jest w stanie przerwania.
+Okno **stos wywołań** służy do wyświetlania nazw funkcji w stosie wywołań, typach parametrów i wartościach parametrów. Informacje stosu wywołań są wyświetlane tylko wtedy, gdy debugowany program jest w stanie przerwania.
 
-Stos wywołań reprezentuje różnych kontekstach, które przechodzi wykonywania XSLT. Na przykład, jeśli jest połączenie z tego szablonu, "a" do szablonu "b", szablon "" i szablon "b", pojawiają się w **stos wywołań** okno z bieżącego kontekstu, w górnej części listy. Użytkownik jest w stanie się zapytanie, które jest w trakcie wykonywania.
+Stos wywołań reprezentuje różne konteksty wykonywane przez wykonanie XSLT. Na przykład jeśli istnieje wywołanie z szablonu "a" do szablonu "b", szablon "a" i szablon "b" pojawiają się w oknie **stosu wywołań** z bieżącym kontekstem w górnej części listy. Użytkownik może zobaczyć aktualnie wykonywane zapytanie.
 
-Jeśli szablony nie mają nazwy w pliku XSLT, generowania procesora XSLT nazw są używane.
+Jeśli szablony nie mają nazwy w pliku XSLT, są używane nazwy generowane przez procesor XSLT.
 
-Kliknięcie elementu na innym niż u góry listy wskazuje w podglądzie, gdzie gałąź wykonywania XSLT się stało, przy użyciu standardowych zielone Podświetlenie i zielone strzałki.
+Kliknięcie elementu poza nim znajdującego się w górnej części listy wskazuje Podgląd, w którym wystąpiła gałąź wykonywania XSLT, przy użyciu standardowego, wyróżniania i zielona strzałek.
 
 ## <a name="quickwatch-dialog-box"></a>QuickWatch — okno dialogowe
 
-**QuickWatch** okno dialogowe służy do oceny wyrażenia XPath 1.0. Węzeł kontekstu ( `self::node()` węzła z okna zmienne lokalne) udostępnia kontekst umożliwiający wykonanie wyrażenie XPath. Wynik wykonania wyrażenie XPath jest wyświetlany w oknie czujki.
+Okno dialogowe **QuickWatch** służy do obliczania wyrażeń XPath 1,0. Węzeł kontekstu (węzeł `self::node()` z okna lokalnego) zawiera kontekst wykonywania wyrażenia XPath. W okno wyrażeń kontrolnych zostanie wyświetlony wynik wykonywania wyrażenia XPath.
 
 Na poniższej liście opisano ograniczenia dotyczące oceny wyrażenia XPath:
 
 - Dozwolone są tylko wbudowane funkcje XPath.
 
-- XSLT wbudowane funkcje, takie jak `document()` i `key()` nie są dozwolone.
+- Wbudowane funkcje XSLT, takie jak `document()` i `key()`, są niedozwolone.
 
-- Funkcje zdefiniowane przez użytkownika nie są dozwolone.
+- Funkcje zdefiniowane przez użytkownika są niedozwolone.
 
-Aby uzyskać więcej informacji, zobacz [jak: Ocena wyrażenia XPath](../xml-tools/how-to-evaluate-an-xpath-expression.md).
+Aby uzyskać więcej informacji, zobacz [jak: oszacować wyrażenie XPath](../xml-tools/how-to-evaluate-an-xpath-expression.md).
 
 ## <a name="disassembly-window"></a>Dezasemblacja, okno
 
-Okno dezasemblacji zawiera kod zestawu, który jest generowany przez kompilator XSLT. Tego okna może służyć w taki sam sposób, jak wszystkie inne okna dezasemblacji programu Visual Studio.
+Okno demontaż pokazuje kod zestawu, który jest generowany przez kompilator XSLT. To okno może być używane w taki sam sposób, jak wszystkie inne okna rozasemblera programu Visual Studio.
 
-Aby uzyskać więcej informacji [jak: Korzystanie z okna dezasemblacji](../debugger/how-to-use-the-disassembly-window.md).
+Aby uzyskać więcej informacji, w [jaki sposób: użyć okna demontażu](../debugger/how-to-use-the-disassembly-window.md).
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Debugowanie kodu XSLT](../xml-tools/debugging-xslt.md)
 - [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)
-- [Sprawdzanie zmiennych w oknach zmiennych automatycznych i zmiennych lokalnych w programie Visual Studio](../debugger/autos-and-locals-windows.md)
+- [Sprawdź zmienne w oknach Autostart i lokalne w programie Visual Studio](../debugger/autos-and-locals-windows.md)

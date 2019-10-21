@@ -1,5 +1,5 @@
 ---
-title: Porady dotyczące wyszukiwania pełnotekstowego | Dokumentacja firmy Microsoft
+title: Porady dotyczące wyszukiwania pełnotekstowego | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -11,55 +11,54 @@ helpviewer_keywords:
 - full-text search tips [Help Viewer 2.0]
 ms.assetid: bcaad23d-2ca7-4bec-8b54-b884bc34e70b
 caps.latest.revision: 15
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 686bf7962e164e718f007a44c83febfc8f49418d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ac683ff6e7079478d5b4e642918df4e281a53f0b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62584686"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645651"
 ---
 # <a name="full-text-search-tips"></a>Wskazówki dotyczące wyszukiwania pełnotekstowego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Jednym z bardziej użyteczne metody lokalizowania informacji w pomocy jest, wykonując wyszukiwanie pełnotekstowe. Aby dostosować i dostosować wyniki, należy zrozumieć wpływ składni zapytania. Ten temat zawiera wskazówki, procedury i informacje szczegółowe informacje o składni ułatwiające lepsze tworzenie zapytań.  
-  
-## <a name="full-text-search-tips"></a>Wskazówki dotyczące wyszukiwania pełnotekstowego  
- Można utworzyć więcej docelowych wyszukiwania, które zwracają odsetek czy wiesz, jak uzyskać pomoc interpretuje formatowania, które można używać tylko tych tematów w zapytaniach. Te formaty obejmują znaki specjalne, wyrazy zastrzeżone i filtry.  
-  
-### <a name="general-guidelines"></a>Ogólne wskazówki  
- Poniższa tabela zawiera niektóre podstawowe zasady i wytyczne dotyczące tworzenia zapytań wyszukiwania w Pomocy.  
-  
-|Składnia|Opis|  
-|------------|-----------------|  
-|Rozróżnianie wielkości liter|Wyszukiwanie nie jest rozróżniana wielkość liter. Twórz kryteria wyszukiwania za pomocą wielkie i małe znaki. Na przykład "OLE" i "ole" zwracają takie same wyniki.|  
-|Kombinacje znaków|Nie można wyszukiwać tylko poszczególne litery (a – z) lub cyfry (0 – 9). Jeśli zostanie podjęta próba wyszukiwania dla niektórych słowa zastrzeżone, takie jak "i", "od" i "z" zostanie zignorowany. Aby uzyskać więcej informacji, zobacz "Słowa ignorowane podczas wyszukiwania (słowa ignorowane)" w dalszej części tego tematu.|  
-|Kolejność obliczania|Zapytania wyszukiwania są przetwarzane od lewej do prawej.|  
-  
-### <a name="search-syntax"></a>Składnia wyszukiwania  
- Jeśli określisz wyszukiwany ciąg, który zawiera wiele słów, takich jak "word1 word2", ciąg jest równoważne wprowadzeniu wyrażenia "word1 AND word2", która zwraca tylko te tematy, które zawierają wszystkie poszczególne wyrazy w wyszukiwanym ciągu.  
-  
+Jedną z bardziej przydatnych metod lokalizowania informacji w pomocy jest przeszukiwanie pełnotekstowe. Aby udoskonalić i dostosować wyniki, musisz zrozumieć, jak składnia ma wpływ na zapytanie. Ten temat zawiera porady, procedury i szczegółowe informacje o składni, które ułatwiają lepsze tworzenie zapytań.
+
+## <a name="full-text-search-tips"></a>Wskazówki dotyczące wyszukiwania pełnotekstowego
+ Możesz utworzyć bardziej mierzone wyszukiwania, które zwracają tylko te tematy, które Cię interesują, jeśli rozumiesz, w jaki sposób pomoc interpretuje formatowanie używane w zapytaniach. Te formaty obejmują znaki specjalne, słowa zastrzeżone i filtry.
+
+### <a name="general-guidelines"></a>Ogólne wskazówki
+ Poniższa tabela zawiera podstawowe zasady i wskazówki dotyczące opracowywania zapytań wyszukiwania w pomocy.
+
+|Składnia|Opis|
+|------------|-----------------|
+|Rozróżnianie wielkości liter|W wyszukiwaniu nie jest rozróżniana wielkość liter. Opracowywanie kryteriów wyszukiwania przy użyciu wielkich lub małych liter. Na przykład "OLE" i "OLE" zwracają te same wyniki.|
+|Kombinacje znaków|Nie można wyszukać tylko pojedynczych liter (a – z) lub cyfr (0 – 9). Jeśli spróbujesz wyszukać określone słowa zastrzeżone, takie jak "i", "od" i "with", zostaną one zignorowane. Aby uzyskać więcej informacji, zobacz "słowa ignorowane w wyszukiwaniach (Zatrzymywanie wyrazów)" w dalszej części tego tematu.|
+|Kolejność oceny|Zapytania wyszukiwania są oceniane od lewej do prawej.|
+
+### <a name="search-syntax"></a>Składnia wyszukiwania
+ Jeśli określisz ciąg wyszukiwania, który zawiera wiele słów, takich jak "word1 word2", ten ciąg jest równoznaczny z wpisaniem "word1 i word2", które zwraca tylko tematy zawierające wszystkie poszczególne wyrazy w ciągu wyszukiwania.
+
 > [!IMPORTANT]
-> 1. Wyszukiwanie frazy nie jest obsługiwane. Jeśli określisz więcej niż jeden wyraz w wyszukiwanym ciągu zwróconego tematów będzie zawierać wszystkie wyrazy, które określiłeś, ale niekoniecznie dokładnej frazy, który określiłeś.  
->    2. Użyj operatorów logicznych, aby określić relację między wyrazami w swojej frazy wyszukiwania. Możesz uwzględnić operatorów logicznych, takich jak AND, OR, NOT i w pobliżu, aby jeszcze bardziej Uściślij kryteria wyszukiwania. Na przykład jeśli wyszukasz "deklarowanie Unii w pobliżu" wyniki wyszukiwania zawierają tematy zawierające słowa "deklarowanie" i "union" ma więcej niż kilka słów od siebie nawzajem. Aby uzyskać więcej informacji, zobacz [operatory logiczne w wyrażeniach wyszukiwania](../ide/logical-operators-in-search-expressions.md).  
-  
-### <a name="filters"></a>Filtry  
- Za pomocą operatorów wyszukiwania zaawansowanego, można bardziej ograniczyć wyniki wyszukiwania. Pomoc zawiera trzy kategorie, które można użyć do filtrowania wyników wyszukiwania pełnotekstowego: Tytuł, kodu i słowo kluczowe. Aby uzyskać więcej informacji, zobacz [operatora wyszukiwania zaawansowanego w wyrażeniach wyszukiwania](../ide/advanced-search-operators-in-search-expressions.md).  
-  
-### <a name="ranking-of-search-results"></a>Klasyfikacja wyników wyszukiwania  
- Algorytm wyszukiwania mają zastosowanie określone kryteria w celu ranga wyniki, wyższe lub niższe wyszukiwania na liście wyników. Ogólnie rzecz biorąc:  
-  
-1. Zawartość, która zawiera słów kluczowych w tytule znajduje się wyżej niż zawartość, która nie.  
-  
-2. Zawartość, która zawiera słów kluczowych w bliskim sąsiedztwie znajduje się wyżej niż zawartość, która nie.  
-  
-3. Zawartość, która zawiera zwiększenie gęstości słów wyszukiwania znajduje się wyżej niż zawartości, który ma niższy gęstość wyszukiwanych słów.  
-  
-### <a name="words-ignored-in-searches-stop-words"></a>Słowa ignorowane podczas wyszukiwania (słowa ignorowane)  
- Najczęściej występujących słów lub cyfr, które są czasem nazywane słowa ignorowane, automatycznie są pomijane podczas wyszukiwania pełnotekstowego. Na przykład jeśli możesz wyszukać frazę "przekazywania" wyniki wyszukiwania zostanie wyświetlona tematy zawierające słowo "przebiegu" ale nie "do".  
-  
-## <a name="see-also"></a>Zobacz też  
- [Lokalizowanie informacji](../ide/locate-information.md)   
- [Operatory logiczne w wyrażeniach wyszukiwania](../ide/logical-operators-in-search-expressions.md)
+> 1. Wyszukiwania fraz nie są obsługiwane. W przypadku określenia więcej niż jednego wyrazu w ciągu wyszukiwania zwrócone tematy będą zawierać wszystkie słowa, które zostały określone, ale nie muszą być dokładnie określone.
+>    2. Operatory logiczne służą do określania relacji między wyrazami w wyszukiwaniu. Można uwzględnić operatory logiczne, takie jak i, lub, nie i blisko, aby jeszcze bardziej zawęzić kryteria wyszukiwania. Na przykład w przypadku wyszukiwania "deklarowania blisko Unii" wyniki wyszukiwania będą zawierać tematy zawierające słowa "deklarujące" i "Union" nie więcej niż kilka wyrazów od siebie nawzajem. Aby uzyskać więcej informacji, zobacz [Operatory logiczne w wyrażeniach wyszukiwania](../ide/logical-operators-in-search-expressions.md).
+
+### <a name="filters"></a>Filtry
+ Możesz bardziej ograniczyć wyniki wyszukiwania przy użyciu operatorów wyszukiwania zaawansowanego. Pomoc zawiera trzy kategorie, których można użyć do filtrowania wyników wyszukiwania pełnotekstowego: tytuł, kod i słowo kluczowe. Aby uzyskać więcej informacji, zobacz [Zaawansowane Operatory wyszukiwania w wyrażeniach wyszukiwania](../ide/advanced-search-operators-in-search-expressions.md).
+
+### <a name="ranking-of-search-results"></a>Klasyfikacja wyników wyszukiwania
+ Algorytm wyszukiwania stosuje pewne kryteria, aby pomóc w ustalaniu rangi wyników wyszukiwania wyższych lub niższych na liście wyników. Ogólnie rzecz biorąc:
+
+1. Zawartość obejmująca słowa wyszukiwania w tytule jest wyższa niż zawartość, która nie jest.
+
+2. Zawartość obejmująca słowa wyszukiwania w bliskim sąsiedztwie jest wyższa niż zawartość, która nie jest.
+
+3. Zawartość zawierająca wyższą gęstość wyrazów wyszukiwania jest wyższa niż zawartość, która ma niższą gęstość słów wyszukiwania.
+
+### <a name="words-ignored-in-searches-stop-words"></a>Słowa ignorowane podczas wyszukiwania (Zatrzymywanie wyrazów)
+ Często występujące wyrazy lub liczby, które są czasami nazywane słowami stop, są automatycznie ignorowane podczas wyszukiwania pełnotekstowego. Na przykład jeśli szukasz frazy "Przekazuj do", wyniki wyszukiwania będą wyświetlały tematy zawierające wyraz "Pass", ale nie "do".
+
+## <a name="see-also"></a>Zobacz też
+ [Lokalizowanie](../ide/locate-information.md) [operatorów logicznych informacji w wyrażeniach wyszukiwania](../ide/logical-operators-in-search-expressions.md)

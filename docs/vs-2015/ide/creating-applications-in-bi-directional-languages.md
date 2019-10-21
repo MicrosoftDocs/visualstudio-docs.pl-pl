@@ -1,5 +1,5 @@
 ---
-title: Tworzenie aplikacji w językach dwukierunkowych | Dokumentacja firmy Microsoft
+title: Tworzenie aplikacji w językach dwukierunkowych | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -10,84 +10,81 @@ helpviewer_keywords:
 - Arabic language, creating applications
 ms.assetid: b56f9795-ed8d-4452-9d49-8ca0b0145d86
 caps.latest.revision: 11
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 622af2c5f15187f6e04b53b4f0ba433c91f85a07
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 3b3d8649484178a537ed4af7bdde044a29893275
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67826195"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72619261"
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>Tworzenie aplikacji w językach dwukierunkowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio umożliwia tworzenie aplikacji, które poprawnie wyświetlania tekstu w językach zapisywane prawej do lewej, łącznie z arabski i hebrajski. W przypadku niektórych funkcji można po prostu ustaw właściwości. W innych przypadkach należy zaimplementować funkcje w kodzie.  
-  
+Za pomocą programu Visual Studio można tworzyć aplikacje, które prawidłowo wyświetlają tekst w językach pisanych od prawej do lewej, w tym arabski i hebrajski. W przypadku niektórych funkcji można po prostu ustawić właściwości. W innych przypadkach należy zaimplementować funkcje w kodzie.
+
 > [!NOTE]
-> Aby można było wprowadzanie i wyświetlanie językach dwukierunkowych, musisz pracować z wersją systemu Windows, który jest skonfigurowany przy użyciu odpowiedniego języka. Może to być angielska wersja systemu Windows przy użyciu odpowiedniego pakietu języka zainstalowane lub prawidłowo zlokalizowaną wersję Windows.  
-  
-## <a name="types-of-application-that-support-bi-directional-languages"></a>Typy aplikacji tego Dwukierunkowa obsługa języków  
-  
-1. Aplikacje Windows. Możesz tworzyć aplikacje całkowicie dwukierunkowej, umożliwiające obsługę tekstu dwukierunkowego, od prawej do lewej kolejność czytania i dublowanie (cofania układu systemu windows, menu, okna dialogowe i tak dalej). Z wyjątkiem funkcji dublowania, te funkcje są dostępne, domyślnie lub zgodnie z ustawieniami właściwości. Dublowanie obsługę natury niektóre funkcje, takie jak okna komunikatów. Jednak w innych przypadkach należy zaimplementować dublowania w kodzie. Aby uzyskać więcej informacji, zobacz [dwukierunkowej obsługę dla Windows Forms aplikacji](https://msdn.microsoft.com/library/7b622fa4-f390-4e4d-b624-83a1917cccf2).  
-  
-2. Aplikacje sieci Web. Usługi sieci Web pomocy technicznej i odbieranie wysyła tekst UTF-8 i Unicode, czemu są odpowiednie dla aplikacji obejmujące językach dwukierunkowych. Aplikacji klienta sieci Web zależy od przeglądarki dla interfejsu użytkownika, więc stopień Obsługa dwukierunkowych w aplikacji sieci Web jest zależny od stopnia przeglądarki użytkownika obsługuje te funkcje dwukierunkowych. W programie Visual Studio możesz tworzyć aplikacje z obsługą tekst arabski lub hebrajski, kolejność czytania od prawej do lewej, kodowanie pliku i ustawienia lokalnych kultury. Aby uzyskać więcej informacji, zobacz [Dwukierunkowa obsługa aplikacji sieci Web platformy ASP.NET](https://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03).  
-  
-3. Aplikacje konsoli. Aplikacje konsoli nie uwzględniają tekstu Obsługa języków dwukierunkowych. Jest to wynikiem sposobu działania Windows za pomocą aplikacji konsoli.  
-  
-## <a name="visual-studio-features-that-are-fully-supported"></a>Funkcje programu Visual Studio, które są w pełni obsługiwane  
- W czasie projektowania w programie Visual Studio można użyć języków dwukierunkowych w następujący sposób:  
-  
-- **Wprowadzanie tekstu** programu Visual Studio obsługuje Unicode, więc jeśli system jest ustawiony na język i odpowiednie ustawienia regionalne można wprowadzić tekst arabski lub hebrajski. (Obejmuje obsługę języka arabskiego Kashida i znaków diakrytycznych.)  
-  
-- **Nazwy obiektów** językach dwukierunkowych można użyć, aby przypisać nazwy do rozwiązania, projekty, pliki, foldery i tak dalej. W kodzie używając języków dwukierunkowych nazw zmiennych, klasy, obiektu, atrybuty, metadane i inne elementy.  
-  
-- **Kodowanie pliku** można zapisać i otwieranie plików z określonego języka lub kodowanie Unicode. Aby uzyskać więcej informacji, zobacz [jak: Zapisywanie i otwieranie plików z kodowaniem](../ide/how-to-save-and-open-files-with-encoding.md).  
-  
-## <a name="features-with-limited-or-no-support"></a>Funkcje z ograniczonym lub brak obsługi  
- Inne funkcje, które są wspólne dla języków dwukierunkowych aplikacje nie są w pełni obsługiwane w programie Visual Studio lub w niektórych przypadkach, w ogóle nie. Należą do nich następujące elementy:  
-  
-- **Kolejność czytania od prawej do lewej** kontrolki wprowadzania tekstu, użyj w programie Visual Studio używają domyślnie kolejność czytania od lewej do prawej. W większości przypadków można użyć standardowego gestów Windows Aby przełączać kolejność czytania. Na przykład można nacisnąć klawisz Shift Ctrl + Strzałka w prawo, aby przełączyć okno właściwości aby obsługiwać kolejność czytania od prawej do lewej dla wartości właściwości.  
-  
-  Jednak kolejność czytania od prawej do lewej jest nieobsługiwane wszędzie, gdzie w programie Visual Studio. Wyjątki obejmują:  
+> Aby móc wprowadzać i wyświetlać języki dwukierunkowe, musisz pracować z wersją systemu Windows, która jest skonfigurowana przy użyciu odpowiedniego języka. Może to być angielska wersja systemu Windows z zainstalowanym odpowiednim pakietem językowym lub odpowiednio zlokalizowaną wersją systemu Windows.
 
-  - Pola wyboru, listy rozwijane i inne formanty w oknach dialogowych programu Visual Studio należy zawsze używać kolejność czytania od lewej do prawej.  
+## <a name="types-of-application-that-support-bi-directional-languages"></a>Typy aplikacji, które obsługują Języki dwukierunkowe
 
-  - Edytor kodu (i edytora tekstów) nie obsługuje kolejność czytania od prawej do lewej. Można wprowadzić tekst w języku dwukierunkową kolejność odczytu jest jednak zawsze od lewej do prawej.  
-  
-## <a name="naming-things-using-arabic-or-hebrew-text"></a>Nazewnictwo rzeczy przy użyciu arabski lub hebrajski tekstu  
- Tekst arabski lub hebrajski można użyć, aby przypisać nazwy do folderów, zmiennych lub innych obiektów. Jeśli pracujesz w języku arabskim, można użyć znaków arabskich Kashida i znaków diakrytycznych.  
-  
- Następujące elementy mogą być nazwane, za pomocą arabskie i hebrajskie i będzie obsługiwany poprawnie w programie Visual Studio:  
-  
-- Rozwiązanie, projekt i nazwy pliku, w tym wszystkie foldery, które uwzględniasz w ścieżce projektu. Eksplorator rozwiązań będą wyświetlane nazwy rozwiązania i element poprawnie.  
-  
-- Zawartość pliku. Można otworzyć lub zapisywanie plików przy użyciu kodowania Unicode lub ze stroną zaznaczonego kodu.  
-  
+1. Aplikacje systemu Windows. Można utworzyć w pełni dwukierunkowe aplikacje, które obejmują obsługę tekstu dwukierunkowego, kolejność odczytywania od prawej do lewej i funkcję dublowania (odwracanie układu okien, menu, okien dialogowych itd.). Z wyjątkiem dublowania te funkcje są dostępne domyślnie lub jako ustawienia właściwości. Dublowanie jest obsługiwane w sposób niezależny dla niektórych funkcji, takich jak okna komunikatów. Jednak w innych przypadkach należy zaimplementować dublowanie w kodzie. Aby uzyskać więcej informacji, zobacz [dwukierunkowa obsługa aplikacji Windows Forms](https://msdn.microsoft.com/library/7b622fa4-f390-4e4d-b624-83a1917cccf2).
+
+2. Aplikacje sieci Web. Usługi sieci Web obsługują i otrzymują wysyłanie tekstu UTF-8 i Unicode, dzięki czemu są odpowiednie dla aplikacji korzystających z języków dwukierunkowych. Aplikacje klienckie sieci Web korzystają z przeglądarek dla ich interfejsów użytkownika, więc stopień dwukierunkowego wsparcia w aplikacji sieci Web zależy od tego, jak dobrze przeglądarka użytkownika obsługuje te funkcje dwukierunkowe. W programie Visual Studio można tworzyć aplikacje obsługujące tekst arabski lub hebrajski, kolejność odczytywania od prawej do lewej, kodowanie plików i ustawienia kultur lokalnych. Aby uzyskać więcej informacji, zobacz [dwukierunkowe wsparcie dla aplikacji sieci Web ASP.NET](https://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03).
+
+3. Aplikacje konsolowe. Aplikacje konsolowe nie obejmują obsługi tekstu w językach dwukierunkowych. Jest to wynikiem działania systemu Windows z aplikacjami konsolowymi.
+
+## <a name="visual-studio-features-that-are-fully-supported"></a>Funkcje programu Visual Studio, które są w pełni obsługiwane
+ W czasie projektowania w programie Visual Studio można używać języków dwukierunkowych w następujący sposób:
+
+- **Wprowadzanie tekstu** Program Visual Studio obsługuje kodowanie Unicode, więc jeśli system jest ustawiony na odpowiednie ustawienia regionalne i język wejściowy, możesz wprowadzić tekst w języku arabskim lub hebrajskim. (Obsługa Arabska obejmuje kashida i znaki diakrytyczne).
+
+- **Nazwy obiektów** Za pomocą dwukierunkowych języków można przypisywać nazwy do rozwiązań, projektów, plików, folderów i tak dalej. W kodzie można używać języków dwukierunkowych dla nazw zmiennych, klas, obiektów, atrybutów, metadanych i innych elementów.
+
+- **Kodowanie pliku** Możesz zapisywać i otwierać pliki z kodowaniem specyficznym dla języka lub Unicode. Aby uzyskać więcej informacji, zobacz [jak: zapisywanie i otwieranie plików z kodowaniem](../ide/how-to-save-and-open-files-with-encoding.md).
+
+## <a name="features-with-limited-or-no-support"></a>Funkcje z ograniczoną lub bez pomocy technicznej
+ Inne funkcje wspólne dla dwukierunkowych aplikacji językowych nie są w pełni obsługiwane w programie Visual Studio lub w niektórych przypadkach, a nie wcale. Należą do nich następujące elementy:
+
+- **Kolejność odczytywania od prawej do lewej** Domyślnie kontrolki wprowadzania tekstu używane w programie Visual Studio używają kolejności czytania od lewej do prawej. W większości przypadków można użyć standardowych gestów systemu Windows, aby przełączyć kolejność odczytywania. Na przykład możesz nacisnąć klawisze Ctrl + Strzałka w prawo, aby przełączyć okno Właściwości do obsługi kolejności odczytywania od prawej do lewej dla wartości właściwości.
+
+  Jednak kolejność odczytywania od prawej do lewej nie jest obsługiwana wszędzie w programie Visual Studio. Wyjątki obejmują:
+
+  - Pola wyboru, listy rozwijane i inne kontrolki w oknach dialogowych programu Visual Studio zawsze używają kolejności odczytywania od lewej do prawej.
+
+  - Edytor kodu (i edytor tekstu) nie obsługuje kolejności odczytywania od prawej do lewej. Możesz wprowadzić tekst w języku dwukierunkowym, ale kolejność odczytywania jest zawsze od lewej do prawej.
+
+## <a name="naming-things-using-arabic-or-hebrew-text"></a>Nazywanie elementów przy użyciu tekstu arabskiego lub hebrajskiego
+ Możesz użyć tekstu arabskiego lub hebrajskiego do przypisywania nazw do folderów, zmiennych lub innych obiektów. Podczas pracy z arabskim można użyć dowolnych znaków arabskich, w tym kashida i znaków diakrytycznych.
+
+ Następujące elementy mogą być nazwane przy użyciu języka arabskiego lub hebrajskiego i będą prawidłowo obsługiwane w programie Visual Studio:
+
+- Rozwiązanie, projekt i nazwy plików, w tym wszystkie foldery dołączone do ścieżki projektu. Eksplorator rozwiązań będzie wyświetlać poprawnie nazwy rozwiązań i elementów.
+
+- Zawartość pliku. Możesz otwierać lub zapisywać pliki z kodowaniem Unicode lub z wybraną stroną kodową.
+
     > [!NOTE]
-    > Edytor kodu jest przypadkiem szczególnym. Aby uzyskać szczegółowe informacje Zobacz poniżej.  
-  
-- Elementy danych. **Eksplorator serwera** będzie poprawnie wyświetlić tych elementów i pozwalają je edytować.  
-  
-- Skopiowano do Schowka Windows elementy.  
-  
-- Atrybuty i metadanych.  
-  
-- Wartości właściwości. W oknie dialogowym właściwości, można użyć tekst arabski lub hebrajski. Okno pozwala przełączać się między kolejność czytania od prawej do lewej i od lewej do prawej, przy użyciu standardowych klawiszy Windows (CTRL + RightShift dla od prawej do lewej i CTRL + LeftShift dla od lewej do prawej).  
-  
-- Kod i tekst dosłowny. W edytorze kodu (jest to również edytora tekstów) umożliwia arabskie i hebrajskie nazwę klasy, funkcje, zmienne, właściwości, literałów ciągów, atrybuty i tak dalej. Jednak Edytor obsługuje kolejność czytania od prawej do lewej; tekst zawsze rozpoczyna się na lewym marginesie.  
-  
+    > Edytor kodu jest szczególnym przypadkiem. Aby uzyskać szczegółowe informacje, zobacz poniżej.
+
+- Elementy danych. **Eksplorator serwera** będą wyświetlały te elementy poprawnie i umożliwiają ich edycję.
+
+- Elementy skopiowane do Schowka systemu Windows.
+
+- Atrybuty i metadane.
+
+- Wartości właściwości. Możesz użyć tekstu arabskiego lub hebrajskiego w okno Właściwości. Okno pozwala przełączać się między kolejnością czytania od prawej do lewej i od lewej do prawej przy użyciu standardowych naciśnięć klawiszy systemu Windows (CTRL + RightShift dla opcji od prawej do lewej i CTRL + LeftShift w przypadku opcji od lewej do prawej).
+
+- Kod i tekst literału. W edytorze kodu (który jest również edytorem tekstów) można użyć języka arabskiego lub hebrajskiego do nazw klas, funkcji, zmiennych, właściwości, literałów ciągów, atrybutów i tak dalej. Jednak Edytor nie obsługuje kolejności odczytywania od prawej do lewej; tekst zawsze zaczyna się na lewym marginesie.
+
     > [!TIP]
-    > Zaleca się umieścić literałów ciągów w plikach zasobów zamiast kodować je w swoich programach. Aby uzyskać więcej informacji, zobacz [instruktażu: Lokalizowanie formularzy Windows](https://msdn.microsoft.com/9a96220d-a19b-4de0-9f48-01e5d82679e5).  
-  
+    > Zaleca się umieszczenie literałów ciągu w plikach zasobów zamiast kodowania ich w programach. Aby uzyskać więcej informacji, zobacz [Przewodnik: lokalizowanie Windows Forms](https://msdn.microsoft.com/9a96220d-a19b-4de0-9f48-01e5d82679e5).
+
     > [!NOTE]
-    > Użytkownik musi być zgodne, w jaki sposób odwoływania się do obiektów o nazwie w tych językach. Na przykład jeśli używasz Kashida w nazwach zmienną arabski, należy zawsze używać Kashida przy odwoływaniu się do tej zmiennej lub będą powodować błędy.  
-  
-- Komentarze w kodzie. Komentarze można tworzyć w arabski lub hebrajski. Umożliwia także tych języków w narzędziu konstruktora komentarz.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Dwukierunkowa obsługa Windows Forms aplikacji](https://msdn.microsoft.com/library/7b622fa4-f390-4e4d-b624-83a1917cccf2)   
- [Dwukierunkowa obsługa aplikacji sieci Web ASP.NET](https://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03)   
- [Globalizowanie aplikacji](../ide/globalizing-applications.md)   
- [Lokalizowanie aplikacji](../ide/localizing-applications.md)
+    > Musisz być spójny w odniesieniu do obiektów o nazwach w tych językach. Na przykład, jeśli używasz kashida podczas nazywania zmiennej arabskiej, należy zawsze używać kashida w przypadku odwoływania się do tej zmiennej, a wynikiem są błędy.
+
+- Komentarze do kodu. Możesz tworzyć komentarze w języku arabskim lub hebrajskim. Możesz również użyć tych języków w narzędziu Comment Builder.
+
+## <a name="see-also"></a>Zobacz też
+ [Dwukierunkowa obsługa aplikacji Windows Forms](https://msdn.microsoft.com/library/7b622fa4-f390-4e4d-b624-83a1917cccf2) obsługa dwukierunkowej [obsługi aplikacji sieci Web](https://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03) , które umożliwiają [globalizację](../ide/globalizing-applications.md) [aplikacji](../ide/localizing-applications.md) ASP.NET aplikacje

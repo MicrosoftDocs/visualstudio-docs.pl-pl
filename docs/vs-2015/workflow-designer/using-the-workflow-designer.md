@@ -1,5 +1,5 @@
 ---
-title: Używanie projektanta przepływu pracy | Dokumentacja firmy Microsoft
+title: Korzystanie z Projektant przepływu pracy | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -9,37 +9,30 @@ helpviewer_keywords:
 - Visual Studio 2010 Workflow Designer [WFD], using
 ms.assetid: 991a942f-29bc-4868-9299-ed80c5665ab5
 caps.latest.revision: 13
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6e60c314a6886831758f403402958cfe97c4a4fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1490708dc3dce4120d79879ded69283dd6108f67
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62855427"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656366"
 ---
-# <a name="using-the-workflow-designer"></a>Używanie projektanta przepływu pracy
-W tej sekcji szczegółowo opisuje sposób tworzenia nowych działań i projektów przepływu pracy przy użyciu wbudowanych projektantów i wyrażenie edytor, który jest obsługiwany przez kilka Projektanci działań.  
-  
-## <a name="in-this-section"></a>W tej sekcji  
- [Tworzenie projektu przepływu pracy](../workflow-designer/creating-a-workflow-project.md)  
- Tematy, które zawierają opis sposobu tworzenia bibliotek za pomocą tych szablonów.  
-  
- [Instrukcje: Dodawanie działań do przybornika](../workflow-designer/how-to-add-activities-to-the-toolbox.md)  
- Pokazuje różne sposoby dodawania działań do przybornika.  
-  
- [Instrukcje: Używanie projektanta argumentów](../workflow-designer/how-to-use-the-argument-designer.md)  
- Pokazuje, jak projektanta argumentów ułatwia Zezwalaj na dane przesyłane do i z działania.  
-  
- [Instrukcje: Używanie projektanta zmiennych](../workflow-designer/how-to-use-the-variable-designer.md)  
- Pokazuje, jak tworzyć zmienne do użytku w scenariuszach powiązanie danych i instrukcje warunkowe.  
-  
- [Instrukcje: Używanie edytora wyrażeń](../workflow-designer/how-to-use-the-expression-editor.md)  
- Pokazuje, jak za pomocą edytorze wyrażeń wprowadź i obliczać wyrażeń.  
-  
- [Instrukcje: Używanie projektanta importów](../workflow-designer/how-to-use-the-imports-designer.md)  
- Pokazuje, jak wprowadzić przestrzeni nazw dla typów używanych w wyrażeniach utworzonych przez użytkownika.  
-  
- [Instrukcje: Używanie nawigacji za pomocą linków do stron nadrzędnych](../workflow-designer/how-to-use-breadcrumb-navigation.md)  
- Pokazuje, jak przechodzić między działaniami.
+# <a name="using-the-workflow-designer"></a>Używanie Projektanta przepływu pracy
+W tej sekcji szczegółowo opisano, jak tworzyć nowe działania i projekty przepływu pracy przy użyciu wbudowanych projektantów i edytora wyrażeń, które są hostowane przez kilka projektantów działań.
+
+## <a name="in-this-section"></a>W tej sekcji
+ [Tworzenie projektu przepływu pracy](../workflow-designer/creating-a-workflow-project.md) Tematy opisujące sposób tworzenia bibliotek za pomocą tych szablonów.
+
+ [Instrukcje: dodawanie działań do przybornika](../workflow-designer/how-to-add-activities-to-the-toolbox.md) Pokazuje różne sposoby dodawania działań do przybornika.
+
+ [Instrukcje: korzystanie z projektanta argumentów](../workflow-designer/how-to-use-the-argument-designer.md) Pokazuje, jak projektant argumentów pozwala łatwo zezwolić na przepływ danych do działania i z niego.
+
+ [Instrukcje: korzystanie z projektanta zmiennych](../workflow-designer/how-to-use-the-variable-designer.md) Pokazuje, jak tworzyć zmienne do użycia w scenariuszach powiązań danych i instrukcjach warunkowych.
+
+ [Instrukcje: korzystanie z edytora wyrażeń](../workflow-designer/how-to-use-the-expression-editor.md) Pokazuje, w jaki sposób używać edytora wyrażeń do wprowadzania i szacowania wyrażeń.
+
+ [Instrukcje: korzystanie z projektanta importów](../workflow-designer/how-to-use-the-imports-designer.md) Pokazuje, jak wprowadzać przestrzenie nazw dla typów używanych w wyrażeniach.
+
+ [Instrukcje: korzystanie z nawigacji ze stron nadrzędnych](../workflow-designer/how-to-use-breadcrumb-navigation.md) Pokazuje, w jaki sposób nawigować między działaniami.

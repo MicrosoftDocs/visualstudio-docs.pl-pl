@@ -1,5 +1,5 @@
 ---
-title: Korzystanie z przybornika | Dokumentacja firmy Microsoft
+title: Korzystanie z przybornika | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -24,47 +24,47 @@ helpviewer_keywords:
 - toolbox
 ms.assetid: 82e7cb43-4d0b-4e17-b7b0-43f96c22c3c2
 caps.latest.revision: 24
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 207beb085046748a4eaabdff025cd461c5ddba26
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 49f5d1d0cef7ec4d5a6f8ab61c785ea01f77d24b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68179306"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652667"
 ---
 # <a name="using-the-toolbox"></a>Korzystanie z Przybornika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Przybornik służy do dodawania formantów i innych elementów do projektu. Możesz przeciągać i upuszczać inne kontrolki na powierzchnię projektanta jest używany i zmień rozmiar i położenie kontrolki.  
-  
- Przybornik pojawi się w połączeniu z projektanta widoków, takich jak Widok projektanta w pliku XAML. Pasek narzędzi wyświetla tylko formanty, które mogą być używane w bieżącym projektancie.  
-  
- Wersja programu .NET Framework, że projekt jest ukierunkowany również wpływa na zbiór kontrolek widocznych w przyborniku. Domyślnie [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] projekty ukierunkowane na .NET Framework 4.5.1. Można ustawić projekt pod kątem innej wersji programu .NET Framework, wybierając węzeł projektu w **Eksploratora rozwiązań**, a następnie przechodząc do **aplikacji/właściwości/Target Framework**.  
-  
-## <a name="managing-the-toolbox-and-its-controls"></a>Zarządzanie przybornika i jego formantów  
- Domyślnie przybornik jest zwinięta z lewej strony środowiska IDE programu Visual Studio i jest wyświetlany, gdy kursor zostanie przeniesiony nad nim. Możesz przypiąć przybornika (klikając **numeru Pin** ikonę na pasku narzędzi przybornika) tak, aby zostanie zamknięte po przeniesieniu kursora. Można oddokować okno przybornika i przeciągnij w dowolne miejsce na ekranie. Można zadokować, oddokować i ukryć przybornik, kliknij prawym przyciskiem myszy pasek narzędzi przybornika i wybierając jedną z opcji.  
-  
- Można zmienić kolejność elementów na karcie przybornika lub dodać niestandardowe karty i elementów za pomocą następujących poleceń w menu kontekstowym:  
-  
-- **Zmień nazwę elementu** — zmienia nazwę wybranego elementu.  
-  
-- **Pokaż wszystkie** — pokazuje wszystkie możliwe kontrole (nie tylko tych, które są stosowane do bieżącego projektanta).  
-  
-- **Widok listy** — zawiera kontrolki w pionie listy. Jeśli nie jest zaznaczone, formanty są wyświetlane w poziomie.  
-  
-- **Wybierz elementy** -otwiera **wybierz elementy przybornika** okno dialogowe, aby określić elementy, które pojawiają się w **przybornika**. Możesz pokazać lub ukryć element, zaznaczając lub usuwając zaznaczenie pola wyboru.  
-  
-- **Sortowanie elementów alfabetycznie** — Sortuje elementy według nazwy.  
-  
-- **Resetuj narzędzi** — przywraca domyślne ustawienia przybornika i elementów.  
-  
-- **Dodaj kartę** — dodaje nową kartę przybornika.  
-  
-- **Przenieś w górę** -Przesuwa wybrany element w górę.  
-  
-- **Przenieś w dół** -Przenosi zaznaczony element w dół.  
-  
-## <a name="creating-and-distributing-custom-toolbox-controls"></a>Tworzenie i rozpowszechnianie kontrolki przybornika niestandardowego  
- Kontrolki przybornika niestandardowego można utworzyć w języku Visual Basic lub Visual C# i można uruchomić za pomocą szablonu projektu, który jest oparty na [Windows Presentation Foundation](../extensibility/creating-a-wpf-toolbox-control.md) lub [Windows Forms](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md). Można dystrybuować formantu do członków zespołu lub opublikować go w sieci web za pomocą [Instalatora kontrolki przybornika](http://download.microsoft.com/download/8/3/6/836657BD-9CCB-4ED4-B9D2-FB769473B284/TCI_whitepaper.docx).
+Za pomocą przybornika można dodawać kontrolki i inne elementy do projektu. Możesz przeciągać i upuszczać różne kontrolki na powierzchnię projektanta, którego używasz, i zmieniać rozmiar i położenie formantów.
+
+ Przybornik pojawia się w połączeniu z widokami projektanta, takimi jak widok projektanta pliku XAML. W przyborniku są wyświetlane tylko te kontrolki, które mogą być używane w bieżącym projektancie.
+
+ Wersja .NET Framework, do której odwołuje się projekt, wpływa również na zestaw kontrolek widocznych w przyborniku. Domyślnie projekty [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] są przeznaczone dla .NET Framework 4.5.1. Można ustawić dla projektu inną wersję .NET Framework, wybierając węzeł projektu w **Eksplorator rozwiązań**, a następnie przechodząc do pozycji **Właściwości/aplikacja/platforma docelowa**.
+
+## <a name="managing-the-toolbox-and-its-controls"></a>Zarządzanie przybornikiem i jego kontrolkami
+ Domyślnie Przybornik jest zwinięty wzdłuż lewej krawędzi środowiska IDE programu Visual Studio i pojawia się po przesunięciu kursora nad nim. Możesz przypiąć Przybornik (klikając ikonę **pinezki** na pasku narzędzi przybornika), tak aby pozostała otwarta po przesunięciu kursora. Możesz również oddokować okno przybornika i przeciągnąć je w dowolne miejsce na ekranie. Przybornik można zadokować, oddokować i ukryć, klikając prawym przyciskiem myszy pasek narzędzi przybornika i wybierając jedną z opcji.
+
+ Można zmienić rozmieszczenie elementów na karcie przybornika lub dodać niestandardowe karty i elementy przy użyciu następujących poleceń w menu kontekstowym:
+
+- **Zmień nazwę elementu** — zmienia nazwę wybranego elementu.
+
+- **Pokaż wszystko** — pokazuje wszystkie możliwe kontrolki (nie tylko te, które mają zastosowanie do bieżącego projektanta).
+
+- **Widok listy** — pokazuje kontrolki na liście pionowej. W przypadku usunięcia zaznaczenia kontrolki są wyświetlane w poziomie.
+
+- **Wybierz elementy** — otwiera okno dialogowe **Wybierz elementy przybornika** , aby można było określić elementy, które są wyświetlane w **przyborniku**. Możesz pokazać lub ukryć element, zaznaczając lub usuwając zaznaczenie pola wyboru.
+
+- **Sortuj elementy alfabetycznie** — sortuje elementy według nazwy.
+
+- **Resetuj pasek narzędzi** — przywraca domyślne ustawienia i elementy przybornika.
+
+- **Dodaj kartę** — dodaje nową kartę przybornika.
+
+- **Przenieś w górę** — przenosi zaznaczony element w górę.
+
+- **Przenieś w dół** — przenosi zaznaczony element w dół.
+
+## <a name="creating-and-distributing-custom-toolbox-controls"></a>Tworzenie i dystrybuowanie niestandardowych formantów przybornika
+ Możesz utworzyć niestandardową kontrolkę przybornika w Visual Basic lub C#wizualizacji, a następnie można rozpocząć od szablonu projektu opartego na [Windows Presentation Foundation](../extensibility/creating-a-wpf-toolbox-control.md) lub [Windows Forms](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md). Następnie można rozesłać swój formant do członków zespołu lub opublikować go w sieci Web za pomocą [Instalatora formantów przybornika](http://download.microsoft.com/download/8/3/6/836657BD-9CCB-4ED4-B9D2-FB769473B284/TCI_whitepaper.docx).

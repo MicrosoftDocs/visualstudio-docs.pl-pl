@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Zmiana katalogu wyjściowego kompilacji | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: zmiana katalogu wyjściowego kompilacji | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -8,40 +8,38 @@ helpviewer_keywords:
 - output directory, changing
 ms.assetid: a8333c89-afb2-4b1d-b2e2-9146da852402
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 968a9a2dc87063baec075e69e10fed96ba1ff3d5
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: b665f5788d12c294e8ab7f55ecc63d183030a0ca
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65680581"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645431"
 ---
-# <a name="how-to-change-the-build-output-directory"></a>Instrukcje: Zmiana katalogu wyjściowego kompilacji
+# <a name="how-to-change-the-build-output-directory"></a>Porady: zmiana budowy katalogu wyjściowego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Należy określić lokalizację danych wyjściowych, na podstawie — konfiguracja (w przypadku debugowania, wersji lub obie) wygenerowany przez projekt.  
-  
+Możesz określić lokalizację danych wyjściowych dla poszczególnych konfiguracji (dla debugowania, wydania lub obu), które zostały wygenerowane przez projekt.
+
 > [!NOTE]
-> Jeśli masz **Instalatora** projektu patrz Uwaga na końcu tego artykułu.  
-  
-## <a name="changing-the-build-output-directory"></a>Zmiana katalogu wyjściowego kompilacji  
-  
-#### <a name="to-change-the-build-output-directory"></a>Aby zmienić katalog wyjściowy kompilacji  
-  
-1. Na pasku menu wybierz **projektu**, *Appname* **właściwości**. Również kliknięciu prawym przyciskiem myszy węzeł projektu w **Eksploratora rozwiązań** i wybierz **właściwości**.  
-  
-2. Jeśli masz projekt języka Visual Basic, wybierz **skompilować** kartę. Jeśli masz projekt Visual C#, wybierz **kompilacji** kartę. Jeśli masz projekt języka C++ lub projektu w języku JavaScript, wybierz opcję **ogólne** kartę.  
-  
-3. W konfiguracji listy rozwijanej u góry wybierz konfigurację, której dane wyjściowe pliku lokalizacji, aby zmienić (debugowanie, wydanie lub wszystkie).  
-  
-     Znajdź pozycję Ścieżka danych wyjściowych (**ścieżkę wyjściową kompilacji** w języku Visual Basic **katalog wyjściowy** w programie Visual C++ **ścieżkę wyjściową** w języku JavaScript i C#). Określ nowy katalog danych wyjściowych kompilacji względem katalogu projektu.  
-  
+> Jeśli masz projekt **konfiguracji** , zapoznaj się z uwagą na końcu tego artykułu.
+
+## <a name="changing-the-build-output-directory"></a>Zmiana katalogu wyjściowego kompilacji
+
+#### <a name="to-change-the-build-output-directory"></a>Aby zmienić katalog wyjściowy kompilacji
+
+1. Na pasku menu wybierz **projekt**, **Właściwości** *nazwa_aplikacji* . Możesz również kliknąć prawym przyciskiem myszy węzeł projektu w **Eksplorator rozwiązań** i wybrać polecenie **Właściwości**.
+
+2. Jeśli masz projekt Visual Basic, wybierz kartę **kompilacja** . Jeśli masz projekt wizualny C# , wybierz kartę **kompilacja** . Jeśli masz C++ projekt lub projekt JavaScript, wybierz kartę **Ogólne** .
+
+3. Na liście rozwijanej konfiguracja u góry wybierz konfigurację, której lokalizację pliku wyjściowego chcesz zmienić (debugowanie, wydanie lub wszystkie).
+
+     Znajdź wpis ścieżki wyjściowej (**Ścieżka wyjściowa kompilacji** w Visual Basic, **katalog wyjściowy** w C++wizualizacji, **Ścieżka wyjściowa** w języku JavaScript i C#). Określ nowy katalog wyjściowy kompilacji względem katalogu projektu.
+
 > [!NOTE]
-> W projekcie programu Instalatora **nazwę pliku wyjściowego** okno zmienia lokalizację pliku Setup.exe, a nie lokalizacja plików projektów. Aby uzyskać więcej informacji, zobacz **kompilacji, właściwości konfiguracji, okno dialogowe właściwości projektu wdrożenia**.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Strona kompilacji, Projektant projektu (C#)](../ide/reference/build-page-project-designer-csharp.md)   
- [Strona właściwości ogólnych (projekt)](https://msdn.microsoft.com/library/593b383c-cd0f-4dcd-ad65-9ec9b4b19c45)   
- [Kompilowanie i tworzenie](../ide/compiling-and-building-in-visual-studio.md)
+> W projekcie instalacyjnym pole **Nazwa pliku wyjściowego** zmienia tylko lokalizację pliku Setup. exe, a nie lokalizację plików projektu. Aby uzyskać więcej informacji, zobacz **kompilacja, właściwości konfiguracji, okno dialogowe właściwości projektu wdrożenia**.
+
+## <a name="see-also"></a>Zobacz też
+ [Strona kompilacji, Projektant projektu (C#)](../ide/reference/build-page-project-designer-csharp.md) [ogólna Strona właściwości (projekt)](https://msdn.microsoft.com/library/593b383c-cd0f-4dcd-ad65-9ec9b4b19c45) [Kompilowanie i kompilowanie](../ide/compiling-and-building-in-visual-studio.md)

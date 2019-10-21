@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Dodawanie komentarzy do diagramów klas (Projektant klas) | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Dodawanie komentarzy do diagramów klas (Projektant klas) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -12,32 +12,30 @@ helpviewer_keywords:
 - comment shapes
 ms.assetid: d54005d5-a29d-4c4e-b153-feb6e84dd44f
 caps.latest.revision: 15
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bcf6a06ee89bcc3ba691b38e98cf8bf43d9c063b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fe77e8cb0f21789c7311d9c337b3b973c4dd44f9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62584442"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645504"
 ---
-# <a name="how-to-add-comments-to-class-diagrams-class-designer"></a>Instrukcje: Dodawanie komentarzy do diagramów klas (Projektant klas)
+# <a name="how-to-add-comments-to-class-diagrams-class-designer"></a>Porady: dodawanie komentarzy do diagramów klasy (Projektant klas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Kształty komentarza umożliwia dodawanie adnotacji do diagramów klas. Kształt komentarza ma jedną właściwość **tekstu**, w którym można wpisać tekst. Kształty komentarza istnieje tylko na powierzchni diagramu, a nie w kodzie.  
-  
- Komentarz, który znajduje się na diagramview klasy w **projektanta klas**; Jeśli otworzysz drugiej klasy diagramu na tym samym projekcie, komentarze, utworzonej w pierwszej widoku nie są widoczne. Jeśli usuniesz diagramu, komentarze, które zawiera również zostaną usunięte.  
-  
- Możesz zmienić rozmiar kształtu komentarza, ale nie można zmienić inne aspekty jego wygląd, takie jak rozmiar kolor, czcionki lub jego tła.  
-  
-### <a name="to-add-a-comment"></a>Aby dodać komentarz  
-  
-1. Przeciągnij komentarz z **przybornika projektanta klas** na diagram klas.  
-  
-2. Kliknij nowy komentarz kształt na diagramie, a następnie wpisz tekst, który ma.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Praca z diagramami klas (Projektant klas)](../ide/working-with-class-diagrams-class-designer.md)   
- [Praca z diagramami klas (Projektant klas)](../ide/working-with-class-diagrams-class-designer.md)   
- [Instrukcje: Dostosowywanie diagramów klasy (Projektant klas)](../ide/how-to-customize-class-diagrams-class-designer.md)
+Za pomocą kształtów komentarzy można dodawać adnotacje do diagramów klas. Kształt komentarza ma jedną właściwość, **tekst**, w którym można wpisać tekst. Kształty komentarzy istnieją tylko na powierzchni diagramu, a nie w kodzie.
+
+ Komentarz znajduje się na klasie DiagramView w **Projektant klas**; Jeśli otworzysz drugi diagram klasy do tego samego projektu, komentarze utworzone w pierwszym widoku nie będą widoczne. Usunięcie diagramu spowoduje również usunięcie wszystkich zawartych w nim komentarzy.
+
+ Można zmienić rozmiar kształtu komentarza, ale nie można zmienić innych aspektów jego wyglądu, takich jak kolor tła, czcionka lub rozmiar czcionki.
+
+### <a name="to-add-a-comment"></a>Aby dodać komentarz
+
+1. Przeciągnij komentarz z **przybornika Projektant klas** na Diagram klas.
+
+2. Kliknij nowy kształt komentarza na diagramie i wpisz żądany tekst.
+
+## <a name="see-also"></a>Zobacz też
+ [Praca z diagramami klas (Projektant klas)](../ide/working-with-class-diagrams-class-designer.md) [Praca z diagramami klas (Projektant klas)](../ide/working-with-class-diagrams-class-designer.md) [instrukcje: dostosowywanie diagramów klas (Projektant klas)](../ide/how-to-customize-class-diagrams-class-designer.md)

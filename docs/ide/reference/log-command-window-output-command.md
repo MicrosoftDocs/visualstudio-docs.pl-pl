@@ -8,21 +8,21 @@ helpviewer_keywords:
 - log Command window output command
 - View.LogCommandWindowOutput command
 ms.assetid: d4ecec35-5af4-4954-8d60-2cd24583fbb4
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ab2dfea4c51ee33407088c208aea351732b8a4a
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: 2056cf335f2cf6024e6ebb4b5daff72e54dd9d50
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043518"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72610431"
 ---
-# <a name="log-command-window-output-command"></a>Zaloguj się dane wyjściowe okna polecenie — polecenie
+# <a name="log-command-window-output-command"></a>Zapisuj dane wyjściowe okna Polecenie — Polecenie
 
-Kopiuje wszystkie wejścia i wyjścia z **polecenia** okna w pliku.
+Kopiuje wszystkie dane wejściowe i wyjściowe z okna **poleceń** do pliku.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,41 +33,41 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 ## <a name="arguments"></a>Argumenty
 
 `filename`\
-Opcjonalna. Nazwa pliku dziennika. Domyślnie plik jest tworzony w folderze profilu użytkownika. Jeśli nazwa pliku już istnieje, dziennik jest dołączany na końcu istniejącego pliku. Jeśli plik nie zostanie określony, ostatni określony plik jest używany. Jeśli nie poprzedni plik istnieje, utworzona jest domyślny plik dziennika o nazwie cmdline.log.
+Opcjonalny. Nazwa pliku dziennika. Domyślnie plik jest tworzony w folderze profilu użytkownika. Jeśli nazwa pliku już istnieje, dziennik jest dołączany na końcu istniejącego pliku. Jeśli plik nie zostanie określony, zostanie użyty ostatni określony plik. Jeśli żaden z powyższych plików nie istnieje, zostanie utworzony domyślny plik dziennika o nazwie Cmdlines. log.
 
 > [!TIP]
-> Aby zmienić lokalizację, w której zostanie zapisany plik dziennika, należy wprowadzić pełną ścieżkę pliku ujęta w cudzysłów, jeżeli ścieżka zawiera spacje.
+> Aby zmienić lokalizację, w której zapisano plik dziennika, wprowadź pełną ścieżkę pliku, ujętą w cudzysłów, jeśli ścieżka zawiera spacje.
 
 ## <a name="switches"></a>Przełączniki
 
-/on\
-Opcjonalna. Rozpoczyna się w dzienniku **polecenia** okna w określonym pliku i dołącza plik o nowe informacje.
+situ
+Opcjonalny. Uruchamia dziennik dla okna **polecenia** w określonym pliku i dołącza plik do nowych informacji.
 
-/off\
-Opcjonalna. Zatrzymuje się w dzienniku **polecenia** okna.
+/off
+Opcjonalny. Kończy dziennik okna **poleceń** .
 
-/overwrite\
-Opcjonalna. Jeżeli plik określony w `filename` argumentów pasuje do istniejącego pliku, plik jest zastępowany.
+/overwrite
+Opcjonalny. Jeśli plik określony w argumencie `filename` jest zgodny z istniejącym plikiem, plik zostanie nadpisany.
 
 ## <a name="remarks"></a>Uwagi
 
-Jeśli plik nie zostanie określony, domyślnie jest tworzone cmdline.log pliku. Domyślnie alias dla tego polecenia jest dziennika.
+Jeśli plik nie zostanie określony, domyślnie tworzony jest plik Cmdlines. log. Domyślnie alias dla tego polecenia to log.
 
 ## <a name="examples"></a>Przykłady
 
-W tym przykładzie tworzy nowy plik dziennika cmdlog i rozpoczyna się w dzienniku polecenia.
+W tym przykładzie tworzony jest nowy plik dziennika, cmdlog i uruchamiany jest dziennik poleceń.
 
 ```cmd
 >Tools.LogCommandWindowOutput cmdlog
 ```
 
-W tym przykładzie zatrzymuje rejestrowanie poleceń.
+Ten przykład powoduje zatrzymanie rejestrowania poleceń.
 
 ```cmd
 >Tools.LogCommandWindowOutput /off
 ```
 
-W tym przykładzie wznawia rejestrowanie poleceń w pliku dziennika stosowanych wcześniej.
+Ten przykład wznawia Rejestrowanie poleceń w poprzednio używanym pliku dziennika.
 
 ```cmd
 >Tools.LogCommandWindowOutput /on
@@ -75,7 +75,7 @@ W tym przykładzie wznawia rejestrowanie poleceń w pliku dziennika stosowanych 
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Polecenia programu Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Okno polecenia](../../ide/reference/command-window.md)
-- [Znajdź/Command — pole](../../ide/find-command-box.md)
-- [Visual Studio — aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
+- [okno Polecenie](../../ide/reference/command-window.md)
+- [Znajdź/pole polecenia](../../ide/find-command-box.md)
+- [Aliasy poleceń programu Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

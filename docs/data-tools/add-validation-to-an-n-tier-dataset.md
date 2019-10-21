@@ -10,33 +10,33 @@ helpviewer_keywords:
 - validation [Visual Basic], n-tier data applications
 - validating n-tier data applications
 ms.assetid: 34ce4db6-09bb-4b46-b435-b2514aac52d3
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: abdc719a7884e331b93313122631972cc0cfa42a
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: ff9b2bab755a341d512669578c40ae71f554c235
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925691"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648883"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>Dodawanie walidacji do n-warstwowego zestawu danych
-Dodawanie walidacji do zestawu danych, który jest podzielony na rozwiązanie n-warstwowe, jest zasadniczo takie samo jak dodanie walidacji do pojedynczego pliku zestawu danych (zestawu danych w jednym projekcie). Sugerowana lokalizacja do wykonywania walidacji danych znajduje się <xref:System.Data.DataTable.ColumnChanging> w zdarzeniach i/lub <xref:System.Data.DataTable.RowChanging> tabeli danych.
+Dodawanie walidacji do zestawu danych, który jest podzielony na rozwiązanie n-warstwowe, jest zasadniczo takie samo jak dodanie walidacji do pojedynczego pliku zestawu danych (zestawu danych w jednym projekcie). Sugerowana lokalizacja do wykonywania walidacji danych jest w trakcie <xref:System.Data.DataTable.ColumnChanging> i/lub <xref:System.Data.DataTable.RowChanging> zdarzeń tabeli danych.
 
-Zestaw danych udostępnia funkcje do tworzenia klas częściowych, do których można dodać kod użytkownika do zdarzeń i zmian wierszy w tabelach danych w danych. Aby uzyskać więcej informacji na temat dodawania kodu do zestawu danych w rozwiązaniu n-warstwowym, zobacz [Dodawanie kodu do zestawów DataSet w aplikacjach n-warstwowych](../data-tools/add-code-to-datasets-in-n-tier-applications.md)i [Dodawanie kodu do TableAdapters w aplikacjach n-warstwowych](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md). Aby uzyskać więcej informacji na temat klas częściowych, zobacz [How to: Dzielenie klasy na klasy częściowe (Projektant klas)](../ide/class-designer/how-to-split-a-class-into-partial-classes.md) lub [klasy częściowe i metody](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).
+Zestaw danych udostępnia funkcje do tworzenia klas częściowych, do których można dodać kod użytkownika do zdarzeń i zmian wierszy w tabelach danych w danych. Aby uzyskać więcej informacji na temat dodawania kodu do zestawu danych w rozwiązaniu n-warstwowym, zobacz [Dodawanie kodu do zestawów DataSet w aplikacjach n-warstwowych](../data-tools/add-code-to-datasets-in-n-tier-applications.md)i [Dodawanie kodu do TableAdapters w aplikacjach n-warstwowych](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md). Aby uzyskać więcej informacji na temat klas częściowych, zobacz [How to: Split a class in klasy częściowej (Projektant klas)](../ide/class-designer/how-to-split-a-class-into-partial-classes.md) lub [częściowe klasy i metody](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).
 
 > [!NOTE]
 > Gdy oddzielasz zestawy danych z TableAdapters (ustawiając właściwość **projektu DataSet** ), istniejące częściowe klasy zestawu danych w projekcie nie będą automatycznie przenoszone. Istniejące częściowe klasy DataSet muszą być przenoszone ręcznie do projektu DataSet.
 
 > [!NOTE]
-> Projektant zestawu danych nie tworzy automatycznie programów obsługi zdarzeń w C# dla <xref:System.Data.DataTable.ColumnChanging> zdarzeń i. <xref:System.Data.DataTable.RowChanging> Musisz ręcznie utworzyć procedurę obsługi zdarzeń i podłączyć procedurę obsługi zdarzeń do podstawowego zdarzenia. W poniższych procedurach opisano sposób tworzenia wymaganych programów obsługi zdarzeń zarówno w Visual Basic, jak C#i.
+> Projektant zestawu danych nie tworzy automatycznie programów obsługi zdarzeń w C# przypadku zdarzeń <xref:System.Data.DataTable.ColumnChanging> i <xref:System.Data.DataTable.RowChanging>. Musisz ręcznie utworzyć procedurę obsługi zdarzeń i podłączyć procedurę obsługi zdarzeń do podstawowego zdarzenia. W poniższych procedurach opisano sposób tworzenia wymaganych programów obsługi zdarzeń zarówno w Visual Basic, jak C#i.
 
 ## <a name="validate-changes-to-individual-columns"></a>Sprawdzanie poprawności zmian w poszczególnych kolumnach
-Sprawdzanie poprawności wartości w poszczególnych kolumnach przez obsługę <xref:System.Data.DataTable.ColumnChanging> zdarzenia. Zdarzenie <xref:System.Data.DataTable.ColumnChanging> jest zgłaszane, gdy wartość w kolumnie zostanie zmodyfikowana. Utwórz procedurę obsługi zdarzeń dla <xref:System.Data.DataTable.ColumnChanging> zdarzenia przez dwukrotne kliknięcie odpowiedniej kolumny w **Projektant obiektów DataSet**.
+Sprawdź poprawność wartości w poszczególnych kolumnach, obsługując zdarzenie <xref:System.Data.DataTable.ColumnChanging>. Zdarzenie <xref:System.Data.DataTable.ColumnChanging> jest zgłaszane, gdy wartość w kolumnie zostanie zmodyfikowana. Utwórz procedurę obsługi zdarzeń dla zdarzenia <xref:System.Data.DataTable.ColumnChanging> przez dwukrotne kliknięcie odpowiedniej kolumny w **Projektant obiektów DataSet**.
 
-Po raz pierwszy po dwukrotnym kliknięciu kolumny, Projektant generuje procedurę obsługi zdarzeń dla <xref:System.Data.DataTable.ColumnChanging> zdarzenia. Utworzona zostanie również instrukcja, która sprawdza określoną kolumnę. `If...Then` Na przykład poniższy kod jest generowany po dwukrotnym kliknięciu kolumny DataDostawy w tabeli Orders Northwind:
+Po raz pierwszy po dwukrotnym kliknięciu kolumny Projektant generuje procedurę obsługi zdarzeń dla zdarzenia <xref:System.Data.DataTable.ColumnChanging>. Utworzona zostanie również instrukcja `If...Then`, która sprawdza określoną kolumnę. Na przykład poniższy kod jest generowany po dwukrotnym kliknięciu kolumny **DataDostawy** w tabeli Orders Northwind:
 
 ```vb
 Private Sub OrdersDataTable_ColumnChanging(ByVal sender As System.Object, ByVal e As System.Data.DataColumnChangeEventArgs) Handles Me.ColumnChanging
@@ -47,22 +47,22 @@ End Sub
 ```
 
 > [!NOTE]
-> W C# projektach Projektant obiektów DataSet tworzy tylko klasy częściowe dla zestawu danych i poszczególnych tabel w zestawie danych. Projektant obiektów DataSet nie tworzy automatycznie obsługi zdarzeń dla <xref:System.Data.DataTable.ColumnChanging> zdarzeń i <xref:System.Data.DataTable.RowChanging> , C# tak jak w Visual Basic. W C# projektach należy ręcznie skonstruować metodę, aby obsłużyć zdarzenie i podłączyć metodę do zdarzenia bazowego. Poniższa procedura zawiera opis czynności, które należy wykonać w celu utworzenia wymaganych programów obsługi zdarzeń C#zarówno w Visual Basic, jak i.
+> W C# projektach Projektant obiektów DataSet tworzy tylko klasy częściowe dla zestawu danych i poszczególnych tabel w zestawie danych. Projektant obiektów Dataset nie tworzy automatycznie obsługi zdarzeń dla <xref:System.Data.DataTable.ColumnChanging> i <xref:System.Data.DataTable.RowChanging> zdarzeń, C# tak jak w Visual Basic. W C# projektach należy ręcznie skonstruować metodę, aby obsłużyć zdarzenie i podłączyć metodę do zdarzenia bazowego. Poniższa procedura zawiera opis czynności, które należy wykonać w celu utworzenia wymaganych programów obsługi zdarzeń C#zarówno w Visual Basic, jak i.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
 #### <a name="to-add-validation-during-changes-to-individual-column-values"></a>Aby dodać sprawdzanie poprawności podczas zmiany wartości poszczególnych kolumn
 
-1. Otwórz zestaw danych, klikając dwukrotnie plik *XSD* w **Eksplorator rozwiązań**. Aby uzyskać więcej informacji, [zobacz Przewodnik: Tworzenie zestawu danych w Projektant obiektów Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1. Otwórz zestaw danych, klikając dwukrotnie plik *XSD* w **Eksplorator rozwiązań**. Aby uzyskać więcej informacji, zobacz [Przewodnik: Tworzenie zestawu danych w Projektant obiektów DataSet](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
-2. Kliknij dwukrotnie kolumnę, którą chcesz zweryfikować. Ta akcja powoduje utworzenie <xref:System.Data.DataTable.ColumnChanging> programu obsługi zdarzeń.
+2. Kliknij dwukrotnie kolumnę, którą chcesz zweryfikować. Ta akcja powoduje utworzenie programu obsługi zdarzeń <xref:System.Data.DataTable.ColumnChanging>.
 
     > [!NOTE]
-    > Projektant obiektów Dataset nie tworzy automatycznie zdarzenia obsługi dla C# zdarzenia. Kod, który jest niezbędny do obsłużenia zdarzenia w programie C# , znajduje się w następnej sekcji. `SampleColumnChangingEvent`jest tworzony, a następnie podłączany do <xref:System.Data.DataTable.ColumnChanging> zdarzenia <xref:System.Data.DataTable.EndInit%2A> w metodzie.
+    > Projektant obiektów Dataset nie tworzy automatycznie zdarzenia obsługi dla C# zdarzenia. Kod, który jest niezbędny do obsłużenia zdarzenia w programie C# , znajduje się w następnej sekcji. `SampleColumnChangingEvent` jest tworzony, a następnie podłączany do <xref:System.Data.DataTable.ColumnChanging> zdarzenia w metodzie <xref:System.Data.DataTable.EndInit%2A>.
 
-3. Dodaj kod, aby sprawdzić `e.ProposedValue` , czy zawiera dane, które spełniają wymagania aplikacji. Jeśli proponowana wartość jest nieakceptowalna, ustaw kolumnę, aby wskazać, że zawiera błąd.
+3. Dodaj kod, aby sprawdzić, czy `e.ProposedValue` zawiera dane, które spełniają wymagania aplikacji. Jeśli proponowana wartość jest nieakceptowalna, ustaw kolumnę, aby wskazać, że zawiera błąd.
 
-     Poniższy przykład kodu sprawdza, czy kolumna **ilość** zawiera wartość większą od 0. Jeśli **ilość** jest mniejsza lub równa 0, kolumna jest ustawiona na błąd. Klauzula czyści błąd, jeśli ilość jest większa niż 0. `Else` Kod w obsłudze zdarzeń zmiany kolumny powinien wyglądać następująco:
+     Poniższy przykład kodu sprawdza, czy kolumna **ilość** zawiera wartość większą od 0. Jeśli **ilość** jest mniejsza lub równa 0, kolumna jest ustawiona na błąd. Klauzula `Else` czyści błąd, jeśli **ilość** jest większa niż 0. Kod w obsłudze zdarzeń zmiany kolumny powinien wyglądać następująco:
 
     ```vb
     If (e.Column.ColumnName = Me.QuantityColumn.ColumnName) Then
@@ -102,26 +102,26 @@ End Sub
     ```
 
 ## <a name="validate-changes-to-whole-rows"></a>Weryfikuj zmiany do całych wierszy
-Sprawdzanie poprawności wartości w pełnych wierszach <xref:System.Data.DataTable.RowChanging> przez obsługę zdarzenia. <xref:System.Data.DataTable.RowChanging> Zdarzenie jest zgłaszane, gdy wartości we wszystkich kolumnach zostaną zatwierdzone. Należy sprawdzić poprawność w <xref:System.Data.DataTable.RowChanging> zdarzeniu, gdy wartość w jednej kolumnie opiera się na wartości w innej kolumnie. Rozważmy na przykład DataZamówienia i DataDostawy w tabeli Orders na platformie Northwind.
+Sprawdź poprawność wartości w pełnych wierszach przez obsługę zdarzenia <xref:System.Data.DataTable.RowChanging>. Zdarzenie <xref:System.Data.DataTable.RowChanging> jest zgłaszane, gdy wartości we wszystkich kolumnach zostaną zatwierdzone. Należy sprawdzić poprawność w zdarzeniu <xref:System.Data.DataTable.RowChanging>, gdy wartość w jednej kolumnie opiera się na wartości w innej kolumnie. Rozważmy na przykład DataZamówienia i DataDostawy w tabeli Orders na platformie Northwind.
 
 Podczas wprowadzania zamówień Walidacja sprawdza, czy zamówienie nie jest wprowadzane z elementem dostawy, który znajduje się w dniu lub przed DataZamówienia. W tym przykładzie wartości kolumn DataDostawy i DataZamówienia muszą być porównane, więc sprawdzenie poprawności pojedynczej zmiany kolumny nie ma sensu.
 
-Utwórz procedurę obsługi zdarzeń dla <xref:System.Data.DataTable.RowChanging> zdarzenia przez dwukrotne kliknięcie nazwy tabeli na pasku tytułu tabeli na **Projektant obiektów DataSet**.
+Utwórz procedurę obsługi zdarzeń dla zdarzenia <xref:System.Data.DataTable.RowChanging>, klikając dwukrotnie nazwę tabeli na pasku tytułu tabeli na **Projektant obiektów DataSet**.
 
 #### <a name="to-add-validation-during-changes-to-whole-rows"></a>Aby dodać sprawdzanie poprawności podczas zmiany do całych wierszy
 
-1. Otwórz zestaw danych, klikając dwukrotnie plik *XSD* w **Eksplorator rozwiązań**. Aby uzyskać więcej informacji, [zobacz Przewodnik: Tworzenie zestawu danych w Projektant obiektów Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1. Otwórz zestaw danych, klikając dwukrotnie plik *XSD* w **Eksplorator rozwiązań**. Aby uzyskać więcej informacji, zobacz [Przewodnik: Tworzenie zestawu danych w Projektant obiektów DataSet](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
 2. Kliknij dwukrotnie pasek tytułu tabeli danych w projektancie.
 
-     Klasa częściowa jest tworzona z `RowChanging` obsługą zdarzeń i otwiera się w edytorze kodu.
+     Klasa częściowa jest tworzona z obsługą zdarzeń `RowChanging` i otwiera się w edytorze kodu.
 
     > [!NOTE]
-    > Projektant obiektów DataSet nie tworzy automatycznie obsługi zdarzeń dla <xref:System.Data.DataTable.RowChanging> zdarzenia w C# projektach. Musisz utworzyć metodę, aby obsłużyć <xref:System.Data.DataTable.RowChanging> zdarzenie i uruchomić kod, a następnie podłączyć zdarzenie do metody inicjacji tabeli.
+    > Projektant obiektów Dataset nie tworzy automatycznie obsługi zdarzeń dla zdarzenia <xref:System.Data.DataTable.RowChanging> w C# projektach. Należy utworzyć metodę do obsługi zdarzenia <xref:System.Data.DataTable.RowChanging> i uruchomić kod, a następnie podłączyć zdarzenie do metody inicjacji tabeli.
 
 3. Dodaj kod użytkownika wewnątrz deklaracji klasy częściowej.
 
-4. Poniższy kod pokazuje, gdzie dodać kod użytkownika do walidacji podczas <xref:System.Data.DataTable.RowChanging> zdarzenia. C# Przykład zawiera również kod, aby podłączyć metodę obsługi zdarzeń do `OrdersRowChanging` zdarzenia.
+4. Poniższy kod pokazuje, gdzie dodać kod użytkownika do walidacji podczas zdarzenia <xref:System.Data.DataTable.RowChanging>. C# Przykład zawiera również kod, aby podłączyć metodę obsługi zdarzeń do zdarzenia `OrdersRowChanging`.
 
     ```vb
     Partial Class OrdersDataTable
@@ -169,5 +169,5 @@ Utwórz procedurę obsługi zdarzeń dla <xref:System.Data.DataTable.RowChanging
 ## <a name="see-also"></a>Zobacz także
 
 - [N-warstwowe aplikacje dotyczące danych — omówienie](../data-tools/n-tier-data-applications-overview.md)
-- [Przewodnik: Tworzenie wielowarstwowej aplikacji do obsługi danych](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+- [Przewodnik: Tworzenie wielowarstwowej aplikacji danych](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [Weryfikowanie danych w zestawach danych](../data-tools/validate-data-in-datasets.md)

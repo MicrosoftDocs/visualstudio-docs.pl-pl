@@ -8,20 +8,20 @@ helpviewer_keywords:
 - Debug.ListDisassembly command
 - list disassembly command
 ms.assetid: eb363e35-e86a-4121-966f-991210c27e2a
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6dc4bddefe0240a8e53babeec1fdce4f83ce5ef1
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: e2e9177ee7048f626c61fee087468f991e4ed548
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926224"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72610731"
 ---
 # <a name="list-disassembly-command"></a>Lista dezasemblacji — Polecenie
-Rozpoczyna proces debugowania i pozwala określić sposób obsługi błędów.
+Rozpoczyna proces debugowania i pozwala określić, jak błędy są obsługiwane.
 
 ## <a name="syntax"></a>Składnia
 
@@ -34,29 +34,29 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
 ## <a name="switches"></a>Przełączniki
 Każdy przełącznik może być wywoływany przy użyciu kompletnego formularza lub krótkiej formy.
 
-/Count: `number` [lub]/c: `number` [lub]/length: `number` [lub]/l:`number`
+/Count: `number` [lub]/c: `number` [lub]/length: `number` [lub]/l: `number`
 
-Opcjonalna. Liczba instrukcji do wyświetlenia. Wartość domyślna to 8.
+Opcjonalny. Liczba instrukcji do wyświetlenia. Wartość domyślna to 8.
 
-/endaddress: `expression` [lub]/e:`expression`
+/endaddress: `expression` [lub]/e: `expression`
 
-Opcjonalna. Adres, pod który ma zostać zatrzymany demontaż.
+Opcjonalny. Adres, pod który ma zostać zatrzymany demontaż.
 
-/codebytes:`yes` &#124; `yes`[lub ]&#124; /Bytes:`no` [lub]/b:`no``yes`&#124;`no`
+/codebytes: `yes`&#124; `no` [lub]/bytes: `yes`&#124; `no` [lub]/b: `yes`&#124; `no`
 
 Opcjonalny. Wskazuje, czy mają być wyświetlane bajty kodu. Wartość domyślna to `no`.
 
-/source:`yes` &#124; `no``yes`&#124;`no`
+/source: `yes`&#124; `no` [lub]/s: `yes`&#124; `no`
 
 Opcjonalny. Wskazuje, czy ma być wyświetlany kod źródłowy. Wartość domyślna to `no`.
 
-/symbolnames:`yes` &#124; `yes`[lub ]&#124; /Names:`no` [lub]/n:`no``yes`&#124;`no`
+/symbolnames: `yes`&#124; `no` [lub]/names: `yes`&#124; `no` [lub]/n: `yes`&#124; `no`
 
 Opcjonalny. Wskazuje, czy mają być wyświetlane nazwy symboli. Wartość domyślna to `yes`.
 
- [/linenumbers:`yes`]&#124;`no`
+ [/linenumbers: `yes`&#124; `no`]
 
-Opcjonalna. Włącza wyświetlanie numerów wierszy skojarzonych z kodem źródłowym. Przełącznik/Source musi mieć wartość `yes` , aby można było użyć przełącznika/linenumbers.
+Opcjonalny. Włącza wyświetlanie numerów wierszy skojarzonych z kodem źródłowym. Przełącznik/Source musi mieć wartość `yes`, aby można było użyć przełącznika/linenumbers.
 
 ## <a name="example"></a>Przykład
 

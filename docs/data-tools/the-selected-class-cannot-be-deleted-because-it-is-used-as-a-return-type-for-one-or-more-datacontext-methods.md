@@ -3,30 +3,30 @@ title: Nie można usunąć wybranej klasy, ponieważ jest ona używana jako zwra
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: d68254a0-f3a1-47e2-aed3-a83471e1d711
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3b577dc32a233d1f18518aa27001f340c634314c
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: aff8d7c01291c410f81b00c689f600507841965b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458171"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72640053"
 ---
 # <a name="the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods"></a>Nie można usunąć wybranej klasy, ponieważ jest ona używana jako zwracany typ przez co najmniej jedną metodę DataContext
 
-Typ zwracany co najmniej jeden <xref:System.Data.Linq.DataContext> metody jest klasą wybranej jednostki. Usuwanie klasę jednostki, która jest używana jako typ zwracany dla <xref:System.Data.Linq.DataContext> metoda powoduje, że kompilacja projektu nie powiedzie się. Aby usunąć klasy wybranej jednostki, określ <xref:System.Data.Linq.DataContext> metody, które go używać i ustawiać zwracanym typem klasy innej jednostki.
+Typ zwracany jednej lub więcej metod <xref:System.Data.Linq.DataContext> jest wybraną klasą jednostki. Usunięcie klasy jednostki, która jest używana jako zwracany typ metody <xref:System.Data.Linq.DataContext> powoduje niepowodzenie kompilacji projektu. Aby usunąć wybraną klasę jednostki, zidentyfikuj metody <xref:System.Data.Linq.DataContext>, które go używają, i ustaw ich typy zwracane na inną klasę jednostki.
 
-Aby przywrócić typów zwracanych <xref:System.Data.Linq.DataContext> metody służące do ich oryginalnej typów generowanych automatycznie, należy najpierw usunąć <xref:System.Data.Linq.DataContext> metody z **metody** okienka, a następnie przeciągnij obiekt z **Eksploratora serwera** / **Eksplorator bazy danych** na **O/R Designer** ponownie.
+Aby przywrócić typy zwracane <xref:System.Data.Linq.DataContext> metod do ich oryginalnych typów generowanych automatycznie, najpierw Usuń metodę <xref:System.Data.Linq.DataContext> z okienka **metody** , a następnie przeciągnij obiekt z **Eksplorator serwera** /**Eksplorator bazy danych** do elementu **O/R Ponownie projektanta** .
 
 ## <a name="to-correct-this-error"></a>Aby poprawić ten błąd
 
-1. Identyfikowanie <xref:System.Data.Linq.DataContext> metody, które używają klas jednostek jako zwracany typ, wybierając <xref:System.Data.Linq.DataContext> method in Class metoda **metody** okienka i zapoznanie się **typie zwracanym** właściwość **Właściwości** okna.
+1. Zidentyfikuj metody <xref:System.Data.Linq.DataContext>, które używają klasy Entity jako typu zwracanego przez wybranie metody <xref:System.Data.Linq.DataContext> w okienku **metody** i sprawdzanie właściwości **typu zwracanego** w oknie **Właściwości** .
 
-2. Ustaw **typie zwracanym** do klasy innej jednostki lub usuń <xref:System.Data.Linq.DataContext> metody z okienko metod.
+2. Ustaw **zwracany typ** na inną klasę jednostki lub usuń metodę <xref:System.Data.Linq.DataContext> z okienka metody.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Narzędzi LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Narzędzia LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

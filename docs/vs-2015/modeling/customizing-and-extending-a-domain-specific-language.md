@@ -1,5 +1,5 @@
 ---
-title: Dostosowywanie i rozszerzanie języka specyficznego dla domeny | Dokumentacja firmy Microsoft
+title: Dostosowywanie i rozszerzanie języka specyficznego dla domeny | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -8,73 +8,71 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, creating solutions
 ms.assetid: b155eb79-4e0a-4a99-a6f2-ca4f811fb5ca
 caps.latest.revision: 50
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0bd0feefb2d184a6d9b9667b2b4498403a5868b8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b02b1e5bac7f39bcabb9cdc9b5c3acabe169827b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433319"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655088"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Dostosowywanie i rozszerzanie języka specyficznego dla domeny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Program Visual Studio do modelowania i zestaw SDK wizualizacji (VMSDK) zawiera kilka poziomów, w których można zdefiniować narzędzi do modelowania:  
-  
-1. Definiowanie języka właściwego dla domeny (DSL), za pomocą diagramem definicji DSL. Możesz szybko utworzyć DSL za pomocą notacji diagramowy, czytelny formularza XML i podstawowe narzędzia, które są wymagane do generowania kodu i innych artefaktów.  
-  
-     Aby uzyskać więcej informacji, zobacz [sposób definiowania języka specyficznego dla domeny](../modeling/how-to-define-a-domain-specific-language.md).  
-  
-2. Dostosuj język DSL za pomocą bardziej zaawansowanych funkcji w definicji DSL. Na przykład można wprowadzić dodatkowe linki, które są wyświetlane, gdy użytkownik tworzy element. Te techniki najczęściej są wykonywane w definicji DSL, a niektóre wymagają kilku wierszy kodu programu.  
-  
-3. Rozszerzanie narzędzi do modelowania przy użyciu kodu programu. VMSDK jest zaprojektowany specjalnie w celu ułatwiają integrowanie rozszerzeń z kodem, który jest generowany na podstawie definicji DSL.  Aby uzyskać więcej informacji, zobacz [pisanie kodu pod kątem dostosowywania języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
-  
+Zestaw SDK programu Visual Studio Modeling and wizualizacji (VMSDK) udostępnia kilka poziomów, na których można zdefiniować narzędzia modelowania:
+
+1. Definiowanie języka specyficznego dla domeny (DSL) przy użyciu diagramu definicji DSL. Można szybko utworzyć DSL z notacją diagramowy, czytelną postać XML i podstawowymi narzędziami, które są wymagane do generowania kodu i innych artefaktów.
+
+     Aby uzyskać więcej informacji, zobacz [jak zdefiniować język specyficzny dla domeny](../modeling/how-to-define-a-domain-specific-language.md).
+
+2. Dostosuj DSL przy użyciu bardziej zaawansowanych funkcji definicji DSL. Na przykład można utworzyć dodatkowe linki, gdy użytkownik tworzy element. Te techniki są głównie osiągane w definicji DSL, a niektóre wymagają kilku wierszy kodu programu.
+
+3. Rozszerzając narzędzia modelowania przy użyciu kodu programu. VMSDK został zaprojektowany specjalnie w celu ułatwienia integracji rozszerzeń z kodem, który jest generowany na podstawie definicji DSL.  Aby uzyskać więcej informacji, zobacz [pisanie kodu w celu dostosowywania języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md).
+
 > [!NOTE]
-> Po zaktualizowaniu pliku definicji DSL, nie zapomnij kliknąć **Przekształć wszystkie szablony** na pasku narzędzi Eksploratora rozwiązań, przed ponowną kompilację rozwiązania.  
-  
-## <a name="customShapes"></a> W tej sekcji  
-  
-|Aby uzyskać ten efekt|Można znaleźć w tym temacie|  
-|----------------------------|-------------------------|  
-|Zezwalaj użytkownikowi na Ustawianie kolorów i styl właściwości kształtu.|Kliknij prawym przyciskiem myszy klasę kształtu lub połączenia, wskaż opcję **Dodaj udostępniane**i kliknij element.<br /><br /> Zobacz [Dostosowywanie prezentacji na diagramie](../modeling/customizing-presentation-on-the-diagram.md).|  
-|Różne rodzaje elementu modelu podobne na diagramie, udostępnianie właściwości, takie jak początkowa wysokość i szerokość, kolory, etykietki narzędzi.|Za pomocą dziedziczenia między kształty lub klas łącznika. Mapowania między pochodnej kształty i klasy pochodnej domeny dziedziczą szczegóły mapowania elementów nadrzędnych.<br /><br /> Lub mapowania klas innej domeny w tej samej klasie kształtu.|  
-|Klasa elementu modelu jest wyświetlana w kontekstach różne kształty.|Więcej niż jedną klasę kształtu są mapowane na tej samej klasy domeny. W przypadku tworzenia rozwiązania, postępuj zgodnie z raportu o błędach i podaj żądany kod, aby zdecydować, jaki kształt do użycia.|  
-|Kolor kształtu lub inne funkcje, takie jak czcionki wskazuje bieżący stan.|Zobacz [aktualizowanie kształtów i łączników, aby odzwierciedlały Model](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md).<br /><br /> Utwórz regułę, która aktualizuje właściwości narażone. Zobacz [reguły propagujące zmiany w modelu](../modeling/rules-propagate-changes-within-the-model.md).<br /><br /> Możesz też użyć OnAssociatedPropertyChanged() można zaktualizować — dostępne funkcje, takie jak czcionki lub link strzałki.|  
-|Ikona na zmiany kształtu do wskazywania stanu.|Ustaw widoczność mapowanie dekoratora w oknie Szczegóły języka DSL. Znajdź kilka dekoratory obrazu na tym samym położeniu. Zobacz [aktualizowanie kształtów i łączników, aby odzwierciedlały Model](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md).<br /><br /> Lub Zastąp `ImageField.GetDisplayImage()`. Zobacz przykład w <xref:Microsoft.VisualStudio.Modeling.Diagrams.ImageField>.|  
-|Ustawienie obrazu tła na żaden kształt|Zastąpienie InitializeInstanceResources(), aby dodać zakotwiczonej ImageField. Zobacz [Dostosowywanie prezentacji na diagramie](../modeling/customizing-presentation-on-the-diagram.md).|  
-|Zagnieżdżanie kształtów na dowolnym poziomie|Skonfiguruj cykliczne, osadzanie drzewa. Zdefiniuj boundsrules — zawiera kształty. Zobacz [Dostosowywanie prezentacji na diagramie](../modeling/customizing-presentation-on-the-diagram.md).|  
-|Dołącz łączników w stałym punktach na krawędzi elementu.|Zdefiniuj osadzone elementy terminala, reprezentowane przez małe porty na diagramie. Boundsrules — umożliwiają rozwiązywanie porty w miejscu. Zobacz przykład schemat w [wizualizacji i modelowania SDK](http://go.microsoft.com/fwlink/?LinkID=186128).|  
-|Pole tekstowe wyświetla wartość pochodzi od innych wartości.|Mapowanie dekoratora tekstu do właściwości domeny obliczeniowe lub magazynu niestandardowego. Aby uzyskać więcej informacji, zobacz [obliczeniowe i niestandardowe właściwości przechowywania](../modeling/calculated-and-custom-storage-properties.md).|  
-|Propagowanie zmian między elementami modelu lub między kształtami|Zobacz [weryfikacji języka specyficznego dla domeny](../modeling/validation-in-a-domain-specific-language.md).|  
-|Propagujące zmiany do zasobów takich jak inne [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozszerzenia spoza sklepu.|Zobacz [programy obsługi zdarzeń propagujące zmiany poza modelem](../modeling/event-handlers-propagate-changes-outside-the-model.md).|  
-|Okno właściwości wyświetla właściwości powiązanych elementów.|Skonfiguruj właściwości przekazywania. Zobacz [Dostosowywanie okna właściwości](../modeling/customizing-the-properties-window.md).|  
-|Kategorie właściwości|W oknie właściwości jest podzielony na sekcje o nazwie kategorie. Ustaw **kategorii** właściwości usługi domeny. Właściwości o takiej samej nazwie kategorii będą wyświetlane w tej samej sekcji. Można również ustawić **kategorii** roli relacji.|  
-|Kontrola dostępu użytkownika do właściwości domeny|Ustaw **jest możliwa do przeglądania** wartość false, aby uniemożliwić właściwości domeny w oknie dialogowym właściwości w czasie wykonywania. Można nadal mapować do dekoratorów tekstu.<br /><br /> **Jest tylko do odczytu interfejsu użytkownika** uniemożliwia użytkownikom zmianę właściwości domeny.<br /><br /> Nie wpływa na dostęp do programu do właściwości domeny.|  
-|Zmień nazwę, ikonę i widoczność węzły w Eksploratorze modelu DSL.|Zobacz [Dostosowywanie Eksploratora modelu](../modeling/customizing-the-model-explorer.md).|  
-|Włącz kopiowanie, wycinanie i wklejanie|Ustaw **Włącz kopiowanie wklejanie** właściwość **edytora** węzła w Eksploratorze DSL.|  
-|Kopiuj odwołanie łącza i ich celów zawsze wtedy, gdy element zostanie skopiowany. Na przykład skopiuj komentarze dołączone do elementu.|Ustaw **propaguje kopiowania** własności dla roli źródłowej (reprezentowane przez wiersz po jednej stronie relacji domeny w diagramem definicji DSL).<br /><br /> Pisanie kodu w celu zastąpienia ProcessOnCopy, aby osiągnąć bardziej złożonych efekty.<br /><br /> Zobacz [Dostosowywanie zachowania dotyczącego kopiowania](../modeling/customizing-copy-behavior.md).|  
-|Usunąć, zmienić elementu nadrzędnego lub Połącz ponownie powiązanych elementów, gdy element zostanie usunięty.|Ustaw **propaguje Usuń** wartość rolę w relacji. Dla bardziej złożonych efektów zastąpić `ShouldVisitRelationship` i `ShouldVisitRolePlayer` metody `MyDslDeleteClosure` klasy zdefiniowane w **DomainModel.cs**<br /><br /> Zobacz [Dostosowywanie zachowania dotyczącego usuwania](../modeling/customizing-deletion-behavior.md)|  
-|Zachowaj kształt układ i wygląd na kopiowanie i przeciąganie i upuszczanie.|Dodawanie kształtów i łączników do skopiowanych `ElementGroupPrototype`. To najwygodniejsza metody do przesłonięcia `ElementOperations.CreateElementGroupPrototype()`<br /><br /> Zobacz [Dostosowywanie zachowania dotyczącego kopiowania](../modeling/customizing-copy-behavior.md).|  
-|Wklejanie kształtów w wybranej lokalizacji, na przykład w bieżącej pozycji kursora.|Zastąp `ClipboardCommandSet.ProcessOnCopy()` użyć lokalizacji określonej wersji `ElementOperations.Merge().` zobacz [Dostosowywanie zachowania dotyczącego kopiowania](../modeling/customizing-copy-behavior.md).|  
-|Tworzyć linki do dodatkowych przy wklejaniu|Override ClipboardCommandSet.ProcessOnPasteCommand()|  
-|Przeciągania i upuszczania w tym diagramie z innymi językami DSL lub UML diagramy i elementy Windows|Zobacz [jak: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-to-add-a-drag-and-drop-handler.md)|  
-|Zezwalaj na kształt lub narzędziu można przeciągać kształt podrzędny, taki jak port, tak, jakby były przeciągnięto element nadrzędny.|Zdefiniuj dyrektywa scalania elementów na klasę obiektu docelowego do przekazywania upuszczony obiekt do elementu nadrzędnego. Zobacz [Dostosowywanie tworzenia i przesuwania elementu](../modeling/customizing-element-creation-and-movement.md).|  
-|Zezwalaj na kształcie lub narzędzia można przeciągać kształt i linki do dodatkowych lub obiekty utworzone. Na przykład, aby zezwolić na komentarz, aby być upuszczone na element, do której ma być połączone.|Zdefiniuj dyrektywa scalania elementów dla klasy domeny docelowej i definiują łącza do wygenerowania. W przypadku złożonych można dodać kod niestandardowy. Zobacz [Dostosowywanie tworzenia i przesuwania elementu](../modeling/customizing-element-creation-and-movement.md).|  
-|Utwórz grupę elementów za pomocą jednego narzędzia. Na przykład składnik ustalony zestawu portów.|Zastąp metodę inicjowania przybornika w ToolboxHelper.cs. Utwórz Element grupy prototyp (EGP) zawierający elementy i ich łącza relacji. Zobacz [Dostosowywanie narzędzi i przybornika](../modeling/customizing-tools-and-the-toolbox.md).<br /><br /> Objęte kształty głównej i port EGP albo zdefiniuj boundsrules — do pozycji kształtów portu podczas tworzenia wystąpienia EGP. Zobacz [boundsrules — ograniczenie lokalizacji i rozmiaru kształtu](../modeling/boundsrules-constrain-shape-location-and-size.md).|  
-|Używanie narzędzia połączenia z jednego do utworzenia wystąpienia kilka typów relacji.|Dodaj łącze połączyć dyrektywy LCD do konstruktora połączeń, które jest wywoływane przez narzędzie. LCD określenia typu relacji z typów dwóch elementów. Aby to zależą od stany elementów, można dodać kod niestandardowy. Zobacz [Dostosowywanie narzędzi i przybornika](../modeling/customizing-tools-and-the-toolbox.md).|  
-|Umocowany narzędzia — użytkownik może kliknąć dwukrotnie dowolne narzędzie do tworzenia wielu kształtów i łączników pod rząd.|Eksplorator modelu DSL wybierz `Editor` węzła. W oknie właściwości ustaw **używa elementów przybornika umocowany**.|  
-|Definiowanie polecenia menu|Zobacz [jak: Modyfikowanie standardowego polecenia menu](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)|  
-|Ograniczenie modelu przy użyciu reguł sprawdzania poprawności|Zobacz [weryfikacji języka specyficznego dla domeny](../modeling/validation-in-a-domain-specific-language.md)|  
-|Generowanie kodu, plików konfiguracji lub dokumentów z języka DSL.|[Generowanie kodu z języka specyficznego dla domeny](../modeling/generating-code-from-a-domain-specific-language.md)|  
-|Dostosowywanie sposobu zapisywania modeli do pliku.|Zobacz [Dostosowywanie przechowywania plików i serializacji XML](../modeling/customizing-file-storage-and-xml-serialization.md)|  
-|Zapisz modeli do baz danych lub innego nośnika.|Zastąp *YourLanguage*DocData<br /><br /> Zobacz [Dostosowywanie przechowywania plików i serializacji XML](../modeling/customizing-file-storage-and-xml-serialization.md)|  
-|Integracja wielu języków DSL, aby mogły działać w ramach jednej aplikacji.|Zobacz [integrowanie modeli za pomocą programu Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).|  
-|Zezwalaj DSL być rozszerzony przez strony trzecie i kontrolować rozszerzenia.|[Rozszerzanie DSL za pomocą MEF](../modeling/extend-your-dsl-by-using-mef.md)<br /><br /> [Udostępnianie klas między językami DSL za pomocą biblioteki DSL](../modeling/sharing-classes-between-dsls-by-using-a-dsl-library.md)<br /><br /> [Definiowanie zasad blokowania na potrzeby tworzenia segmentów tylko do odczytu](../modeling/defining-a-locking-policy-to-create-read-only-segments.md)|  
-|||  
-  
-## <a name="see-also"></a>Zobacz też  
- [Jak zdefiniować języka specyficznego dla domeny](../modeling/how-to-define-a-domain-specific-language.md)   
- [Pisanie kodu pod kątem dostosowywania języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
- [Modelowanie SDK dla Visual Studio — języki specyficzne dla domeny](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
+> Po zaktualizowaniu pliku definicji DSL nie zapomnij kliknąć przycisk **Przekształć wszystkie szablony** na pasku narzędzi Eksplorator rozwiązań przed ponownym skompilowaniem rozwiązania.
+
+## <a name="customShapes"></a>W tej sekcji
+
+|Aby osiągnąć ten efekt|Zapoznaj się z tym tematem|
+|----------------------------|-------------------------|
+|Zezwalaj użytkownikowi na ustawianie właściwości koloru i stylu kształtu.|Kliknij prawym przyciskiem myszy klasę kształtu lub łącznika, wskaż polecenie **Dodaj uwidocznione**i kliknij element.<br /><br /> Zobacz [Dostosowywanie prezentacji na diagramie](../modeling/customizing-presentation-on-the-diagram.md).|
+|Różne klasy elementu modelu wyglądają podobnie na diagramie, udostępniając właściwości, takie jak początkowa wysokość i szerokość, kolor i etykietki narzędzi.|Używaj dziedziczenia między kształtami lub klasami łączników. Mapowania między pochodnymi i pochodnymi klasami domeny dziedziczą szczegóły mapowania elementów nadrzędnych.<br /><br /> Lub Mapuj różne klasy domeny do tej samej klasy kształtu.|
+|Klasa elementu modelu jest wyświetlana przez różne konteksty kształtów.|Mapuj więcej niż jedną klasę kształtu do tej samej klasy domeny. Podczas kompilowania rozwiązania postępuj zgodnie z raportem o błędach i podaj żądany kod, aby zdecydować, którego kształtu użyć.|
+|Kolor kształtu lub inne funkcje, takie jak Font, wskazują bieżący stan.|Zobacz [Aktualizowanie kształtów i łączników, aby odzwierciedlały model](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md).<br /><br /> Utwórz regułę, która aktualizuje uwidocznione właściwości. Zobacz [reguły propagują zmiany w modelu](../modeling/rules-propagate-changes-within-the-model.md).<br /><br /> Lub użyj OnAssociatedPropertyChanged (), aby zaktualizować nieuwidocznione funkcje, takie jak strzałki łącza lub czcionki.|
+|Ikona zmiany kształtu wskazująca stan.|Ustaw widoczność mapowania dekoratora w oknie Szczegóły DSL. Znajdź kilka dekoratory obrazów w tym samym położeniu. Zobacz [Aktualizowanie kształtów i łączników, aby odzwierciedlały model](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md).<br /><br /> Lub Zastąp `ImageField.GetDisplayImage()`. Zobacz przykład w <xref:Microsoft.VisualStudio.Modeling.Diagrams.ImageField>.|
+|Ustaw obraz tła na dowolnym kształcie|Zastąp InitializeInstanceResources (), aby dodać kotwicę ImageField. Zobacz [Dostosowywanie prezentacji na diagramie](../modeling/customizing-presentation-on-the-diagram.md).|
+|Zagnieżdżanie kształtów do dowolnej głębokości|Skonfiguruj cykliczne drzewo osadzania. Zdefiniuj BoundsRules — tak, aby zawierały kształty. Zobacz [Dostosowywanie prezentacji na diagramie](../modeling/customizing-presentation-on-the-diagram.md).|
+|Dołącz łączniki dla stałych punktów na granicy elementu.|Zdefiniuj osadzone elementy terminalu reprezentowane przez małe porty na diagramie. Użyj BoundsRules —, aby naprawić porty w miejscu. Zobacz przykład diagramu obwodowego w temacie [Wizualizacja i modelowanie SDK](http://go.microsoft.com/fwlink/?LinkID=186128).|
+|Pole tekstowe wyświetla wartość pochodną od innych wartości.|Zamapuj tekst dekoratora na Właściwość obliczeniową lub niestandardową domeny magazynu. Aby uzyskać więcej informacji, zobacz [właściwości magazynu obliczeniowego i niestandardowego](../modeling/calculated-and-custom-storage-properties.md).|
+|Propagowanie zmian między elementami modelu lub między kształtami|Zobacz [Walidacja w języku specyficznym dla domeny](../modeling/validation-in-a-domain-specific-language.md).|
+|Propaguj zmiany do zasobów, takich jak inne rozszerzenia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] poza magazynem.|Zobacz [programy obsługi zdarzeń propagują zmiany poza modelem](../modeling/event-handlers-propagate-changes-outside-the-model.md).|
+|W oknie właściwości są wyświetlane właściwości powiązanego elementu.|Skonfiguruj przekazywanie właściwości. Zobacz [Dostosowywanie okna właściwości](../modeling/customizing-the-properties-window.md).|
+|Kategorie właściwości|Okno właściwości jest podzielone na sekcje o nazwie kategorie. Ustaw **kategorię** właściwości domeny. Właściwości o tej samej nazwie kategorii będą wyświetlane w tej samej sekcji. Można również ustawić **kategorię** roli relacji.|
+|Kontrolowanie dostępu użytkowników do właściwości domeny|Ustaw wartość **umożliwia przeglądania** false, aby zapobiec wyświetlaniu właściwości domeny w okno właściwości w czasie wykonywania. Nadal można mapować na dekoratory tekstu.<br /><br /> **Jest interfejsem użytkownika tylko do odczytu** uniemożliwia użytkownikom zmianę właściwości domeny.<br /><br /> Nie ma to oddziaływania na dostęp do właściwości domeny.|
+|Zmień nazwę, ikonę i widoczność węzłów w Eksploratorze modelu DSL.|Zobacz [Dostosowywanie Eksploratora modelu](../modeling/customizing-the-model-explorer.md).|
+|Włącz kopiowanie, wycinanie i wklejanie|Ustaw właściwość **Włącz kopiowanie wklejenia** węzła **Edytor** w Eksploratorze DSL.|
+|Kopiuj linki odwołań i ich obiekty docelowe za każdym razem, gdy element jest kopiowany. Na przykład skopiuj Komentarze dołączone do elementu.|Ustaw właściwość **propagowania kopii** roli źródłowej (reprezentowanej przez wiersz po jednej stronie relacji domeny na DIAGRAMIE definicji DSL).<br /><br /> Napisz kod, aby przesłonić ProcessOnCopy w celu uzyskania bardziej złożonych efektów.<br /><br /> Zobacz [Dostosowywanie zachowania kopiowania](../modeling/customizing-copy-behavior.md).|
+|Usuń, Zmień element nadrzędny lub Połącz ponownie powiązane elementy po usunięciu elementu.|Ustaw wartość opcji **Usuń propagacje** roli relacji. W przypadku bardziej złożonych efektów Zastąp metody `ShouldVisitRelationship` i `ShouldVisitRolePlayer` w klasie `MyDslDeleteClosure`, zdefiniowane w **DomainModel.cs**<br /><br /> Zobacz [Dostosowywanie zachowania usuwania](../modeling/customizing-deletion-behavior.md)|
+|Zachowanie układu kształtu i wyglądu przy kopiowaniu i przeciąganiu.|Dodaj kształty i łączniki do skopiowanego `ElementGroupPrototype`. Najbardziej wygodną metodą przesłonięcia jest `ElementOperations.CreateElementGroupPrototype()`<br /><br /> Zobacz [Dostosowywanie zachowania kopiowania](../modeling/customizing-copy-behavior.md).|
+|Wklej kształty w wybranej lokalizacji, na przykład w bieżącym położeniu kursora.|Zastąp `ClipboardCommandSet.ProcessOnCopy()`, aby użyć wersji `ElementOperations.Merge().` określonej dla lokalizacji, zobacz [Dostosowywanie zachowania kopiowania](../modeling/customizing-copy-behavior.md).|
+|Utwórz dodatkowe linki przy wklejaniu|Zastąp ClipboardCommandSet. ProcessOnPasteCommand ()|
+|Włącz przeciąganie i upuszczanie z tego diagramu, innych diagramów językami DSL lub UML i elementów systemu Windows|Zobacz [jak: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-to-add-a-drag-and-drop-handler.md)|
+|Umożliwia przeciągnięcie kształtu lub narzędzia do kształtu podrzędnego, takiego jak port, tak jakby był przeciągany do elementu nadrzędnego.|Zdefiniuj dyrektywę scalania elementów w klasie obiektu docelowego, aby przesłać do przodu usunięty obiekt do elementu nadrzędnego. Zobacz [Dostosowywanie tworzenia i przenoszenia elementów](../modeling/customizing-element-creation-and-movement.md).|
+|Umożliwia przeciągnięcie kształtu lub narzędzia do kształtu i dodanie dodatkowych linków lub obiektów. Na przykład, aby zezwolić na porzucenie komentarza do elementu, do którego ma być ono połączone.|Zdefiniuj dyrektywę scalenia elementów w klasie domeny docelowej i zdefiniuj linki do wygenerowania. W złożonych przypadkach można dodać kod niestandardowy. Zobacz [Dostosowywanie tworzenia i przenoszenia elementów](../modeling/customizing-element-creation-and-movement.md).|
+|Utwórz grupę elementów za pomocą jednego narzędzia. Na przykład składnik ze stałym zestawem portów.|Zastąp metodę inicjowania przybornika w ToolboxHelper.cs. Utwórz prototyp grupy elementów (EGP) zawierający elementy i ich linki relacji. Zobacz [Dostosowywanie narzędzi i Przybornik](../modeling/customizing-tools-and-the-toolbox.md).<br /><br /> Uwzględnij jednostki główne i kształty portów w EGP lub Zdefiniuj BoundsRules —, aby pozycjonować kształty portów podczas tworzenia wystąpienia EGP. Zobacz [BoundsRules — ograniczenia lokalizacji i rozmiaru kształtu](../modeling/boundsrules-constrain-shape-location-and-size.md).|
+|Użyj jednego z narzędzi połączenia, aby utworzyć wystąpienie kilku typów relacji.|Dodaj dyrektywy łączenia linków (LCD) do konstruktora połączeń, który jest wywoływany przez narzędzie. LCDs określa typ relacji z typów dwóch elementów. Aby to uczynić zależeć od Stanów elementów, można dodać kod niestandardowy. Zobacz [Dostosowywanie narzędzi i Przybornik](../modeling/customizing-tools-and-the-toolbox.md).|
+|Narzędzia dla programu Sticky — użytkownik może dwukrotnie kliknąć dowolne narzędzie, aby utworzyć wiele kształtów lub łączników.|W Eksploratorze DSL wybierz węzeł `Editor`. W okno Właściwości, ustaw opcję **używa elementów przybornika programu Sticky**.|
+|Definiowanie poleceń menu|Zobacz [jak: modyfikowanie standardowego polecenia menu](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)|
+|Ograniczanie modelu przy użyciu reguł walidacji|Zobacz [Walidacja w języku specyficznym dla domeny](../modeling/validation-in-a-domain-specific-language.md)|
+|Generuj kod, pliki konfiguracyjne lub dokumenty z poziomu języka DSL.|[Generowanie kodu z języka specyficznego dla domeny](../modeling/generating-code-from-a-domain-specific-language.md)|
+|Dostosuj sposób zapisywania modeli w pliku.|Zobacz [dostosowywanie File Storage i serializacji XML](../modeling/customizing-file-storage-and-xml-serialization.md)|
+|Zapisuj modele w bazach danych lub na innych nośnikach.|Zastąp *YourLanguage*DocData<br /><br /> Zobacz [dostosowywanie File Storage i serializacji XML](../modeling/customizing-file-storage-and-xml-serialization.md)|
+|Integruj kilka językami DSL, aby działały jako część jednej aplikacji.|Zobacz [integrowanie modeli za pomocą programu Visual Studio ModelBus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).|
+|Zezwalaj na Rozszerzanie DSL przez inne osoby i kontroluj rozszerzenie.|[Rozszerzanie DSL za pomocą MEF](../modeling/extend-your-dsl-by-using-mef.md)<br /><br /> [Udostępnianie klas między językami DSL za pomocą biblioteki DSL](../modeling/sharing-classes-between-dsls-by-using-a-dsl-library.md)<br /><br /> [Definiowanie zasad blokowania na potrzeby tworzenia segmentów tylko do odczytu](../modeling/defining-a-locking-policy-to-create-read-only-segments.md)|
+|||
+
+## <a name="see-also"></a>Zobacz też
+ [Jak zdefiniować język specyficzny dla domeny](../modeling/how-to-define-a-domain-specific-language.md) podczas [pisania kodu, aby dostosować](../modeling/writing-code-to-customise-a-domain-specific-language.md) [zestaw SDK modelowania języka dla programu Visual Studio — Języki specyficzne dla domeny](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)

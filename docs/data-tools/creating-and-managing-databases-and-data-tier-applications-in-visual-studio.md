@@ -1,35 +1,35 @@
 ---
-title: Projekty baz danych i projektami DAC
+title: Projekty bazy danych i projekty DAC
 ms.date: 11/21/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - databases, managing change
 ms.assetid: 40b51f5a-d52c-44ac-8f84-037a0917af33
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2a86d9511e470c9a810ff58e80e4cae1f9a0cb11
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 11e60c43e2b9935f4aaf2ffcc5d5c7e3683665d1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62567243"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648577"
 ---
-# <a name="database-projects-and-data-tier-applications"></a>Projekty baz danych i aplikacji warstwy danych
+# <a name="database-projects-and-data-tier-applications"></a>Projekty bazy danych i aplikacje warstwy danych
 
-Projekty baz danych można użyć do tworzenia nowych baz danych, nowe aplikacje warstwy danych (DAC) i aktualizowanie istniejących baz danych i aplikacji warstwy danych. Projekty bazy danych i projektami DAC umożliwiają zastosowanie technik zarządzania projekt i kontroli wersji do swoich wysiłków programistycznych bazy danych w podobny sposób zastosowania tych technik do kodu zarządzanego lub natywnego. Możesz pomóc zespołowi zarządzania zmianami z bazami danych i serwery baz danych przez tworzenie projektu aplikacji DAC, projekt bazy danych lub server project i umieszczenie go w systemie kontroli wersji. Członkowie zespołu mogą następnie wyewidencjonowywanie plików do wprowadzić, tworzenie i testowanie zmian w środowisko programistyczne izolowanej lub piaskownicy, przed udostępnieniem ich zespołowi. Aby zapewnić jakość kodu, Twój zespół może zakończenie i przetestowanie wszystkich zmian dla konkretnej wersji bazy danych w środowisku przejściowym, przed wdrożeniem zmian w środowisku produkcyjnym.
+Projekty bazy danych mogą służyć do tworzenia nowych baz danych, nowych aplikacji warstwy danych (DAC) oraz do aktualizowania istniejących baz danych i aplikacji warstwy danych. Zarówno projekty baz danych, jak i projekty DAC umożliwiają stosowanie kontroli wersji i technik zarządzania projektami do działań związanych z programowaniem bazy danych w podobny sposób, jak stosowanie tych technik do kodu zarządzanego lub natywnego. Aby ułatwić zespołowi programistycznemu zarządzanie zmianami baz danych i serwerów baz danych, można utworzyć projekt DAC, projekt bazy danych lub projekt serwera i umieścić go w kontroli wersji. Członkowie zespołu mogą następnie wyewidencjonowywać pliki, aby wprowadzać, kompilować i testować zmiany w izolowanym środowisku programistycznym lub piaskownicy przed udostępnieniem ich zespołowi. Aby zapewnić jakość kodu, zespół może zakończyć i przetestować wszystkie zmiany dotyczące konkretnej wersji bazy danych w środowisku przejściowym przed wdrożeniem zmian do produkcji.
 
-Aby uzyskać listę funkcji bazy danych, które są obsługiwane przez aplikacje warstwy danych, zobacz [DAC obsługi dla obiektów programu SQL Server](/sql/relational-databases/data-tier-applications/dac-support-for-sql-server-objects-and-versions). Jeśli korzystasz z funkcji w bazie danych, które nie są obsługiwane przez aplikacje warstwy danych, należy zamiast tego użyć projektu bazy danych, zarządzanie zmianami z bazą danych.
+Listę funkcji bazy danych obsługiwanych przez aplikacje warstwy danych można znaleźć w temacie [Obsługa programu DAC dla SQL Server obiektów](/sql/relational-databases/data-tier-applications/dac-support-for-sql-server-objects-and-versions). W przypadku korzystania z funkcji w bazie danych, które nie są obsługiwane przez aplikacje warstwy danych, należy zamiast tego użyć projektu bazy danych do zarządzania zmianami w bazie danych.
 
 ## <a name="common-high-level-tasks"></a>Typowe zadania wysokiego poziomu
 
-| Ogólne zadania | Zawartość pomocnicza |
+| Zadanie wysokiego poziomu | Zawartość pomocnicza |
 | - | - |
-| **Rozpocznij tworzenie aplikacji warstwy danych:** Pojęcie aplikacji warstwy danych (DAC) została wprowadzona w programie SQL Server 2008. Aplikacji DAC programu zawiera definicję dla bazy danych programu SQL Server i pomocnicze obiekty wystąpienia, które są używane przez serwer do klienta lub aplikacji 3-warstwowej. Aplikacji DAC programu zawiera obiekty bazy danych, takich jak tabele i widoki, wraz z wystąpienia jednostki, takie jak nazwy logowania. Za pomocą programu Visual Studio Utwórz projekt aplikacji DAC, tworzenie pliku pakietu aplikacji DAC i wysyłać plik pakietu aplikacji DAC administrator bazy danych w celu wdrożenia na wystąpienie aparatu bazy danych programu SQL Server. | - [Aplikacje warstwy danych](/sql/relational-databases/data-tier-applications/data-tier-applications)<br />- [SQL Server Management Studio](/sql/ssms/sql-server-management-studio-ssms) |
-| **Wykonywanie programowanie iteracyjne bazy danych:** Deweloperzy mogą zapoznaj się z części projektu i zaktualizować je w środowisku izolowanym rozwoju. Za pomocą tego typu środowiska, możesz testować wprowadzane zmiany, bez wywierania wpływu na innych członków zespołu. Po zakończeniu wprowadzania zmian, możesz sprawdzić pliki do kontroli wersji, gdy inni członkowie zespołu mogą uzyskać zmiany i tworzyć i wdrażać je na serwer testowy. | - [Programowanie zorientowane na projekt bazy danych w trybie offline (SQL Server Data Tools)](/sql/ssdt/project-oriented-offline-database-development)<br />- [Debuger języka Transact-SQL (SQL Server Management Studio)](/sql/ssms/scripting/transact-sql-debugger) |
-| **Tworzenie prototypów sprawdzanie wyników testów i modyfikowania skryptów bazy danych i obiektów:** Aby wykonać dowolne spośród tych wspólnych zadań, można użyć edytora języka Transact-SQL. | - [Edytory zapytania i tekst (SQL Server Management Studio)](/sql/ssms/scripting/query-and-text-editors-sql-server-management-studio) |
+| **Rozpocznij programowanie aplikacji warstwy danych:** Koncepcja aplikacji warstwy danych (DAC) została wprowadzona w SQL Server 2008. DAC zawiera definicję bazy danych SQL Server i pomocniczych obiektów wystąpienia, które są używane przez aplikację klient-serwer lub 3-warstwowa. DAC obejmuje obiekty bazy danych, takie jak tabele i widoki, wraz z obiektami wystąpienia, takimi jak logowania. Możesz użyć programu Visual Studio do utworzenia projektu DAC, skompilowania pliku pakietu DAC i wysłania pliku pakietu DAC do administratora bazy danych w celu wdrożenia w wystąpieniu aparatu bazy danych SQL Server. | - [aplikacji warstwy danych](/sql/relational-databases/data-tier-applications/data-tier-applications)<br />- [SQL Server Management Studio](/sql/ssms/sql-server-management-studio-ssms) |
+| **Wykonywanie iteracyjnego tworzenia bazy danych:** Deweloperzy mogą wyewidencjonowywać części projektu i aktualizować je w izolowanym środowisku programistycznym. Korzystając z tego typu środowiska, można testować zmiany bez wpływu na innych członków zespołu. Po zakończeniu wprowadzania zmian sprawdź pliki z powrotem do kontroli wersji, gdzie inni członkowie zespołu mogą uzyskać zmiany i skompilować je i wdrożyć na serwerze testowym. | - [projektowanie zorientowane na projekt w trybie offline (narzędzia danych SQL Server)](/sql/ssdt/project-oriented-offline-database-development)<br />- [debuger języka Transact-SQL (SQL Server Management Studio)](/sql/ssms/scripting/transact-sql-debugger) |
+| Tworzenie **prototypów, weryfikowanie wyników testów i modyfikowanie skryptów i obiektów bazy danych:** Za pomocą edytora języka Transact-SQL można wykonać dowolne z tych typowych zadań. | - [edytorów zapytań i tekstu (SQL Server Management Studio)](/sql/ssms/scripting/query-and-text-editors-sql-server-management-studio) |
 
 ## <a name="see-also"></a>Zobacz także
 

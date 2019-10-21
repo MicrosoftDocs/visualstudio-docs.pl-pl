@@ -2,46 +2,46 @@
 title: Dokumentacja języka DGML (Directed Graph Markup Language)
 ms.date: 11/04/2016
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b473dc706cd7183835c5d84091fb53e45337c013
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f6d29717c57d37daf200a859fb12f88c1108520b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62834220"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653866"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>Dokumentacja języka DGML (Directed Graph Markup Language)
 
-Przekierowanie Graph Markup Language (DGML) opisano informacje używane do wizualizacji i przeprowadzać analizę złożoności i jest używany format można utrwalić map kodu w programie Visual Studio. Używa prostego formatu XML do opisania zarówno cyklicznie i acyklicznie kierowanych wykresów. Wykres kierowany jest zestawem węzłów połączonych przez łącza lub krawędzie. Węzły i łącza mogą być używane do reprezentacji struktur sieciowych, takich jak elementy projektu oprogramowania.
+Program Direct Graph Markup Language (DGML) opisuje informacje używane do wizualizacji oraz do analizy złożoności i jest formatem używanym do utrwalania map kodu w programie Visual Studio. Używa prostego kodu XML do opisywania zarówno cyklicznie, jak i acykliczne wykresy ukierunkowane. Wykres kierowany jest zestawem węzłów połączonych przez łącza lub krawędzie. Węzły i łącza mogą być używane do reprezentacji struktur sieciowych, takich jak elementy projektu oprogramowania.
 
-Należy pamiętać, że niektóre wersje programu Visual Studio obsługuje tylko podzestaw możliwości DGML, zobacz [obsługiwana wersja dla narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Należy pamiętać, że niektóre wersje programu Visual Studio obsługują tylko podzbiór funkcji DGML, zobacz [Obsługa wersji dla narzędzi architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 > [!NOTE]
-> Podczas edycji pliku .dgml technologia IntelliSense pomaga identyfikować atrybuty, które są dostępne dla każdego elementu i ich wartości. Aby określić kolor w atrybucie, użyj nazw dla pospolitych kolorów, takich jak „Niebieski” lub wartości szesnastkowych ARGB, takich jak „#ffa0b1c3”. DGML używa małego podzbioru formatów definicji koloru Windows Presentation Foundation (WPF). Aby uzyskać więcej informacji, zobacz [klasa kolory](http://go.microsoft.com/fwlink/?LinkId=182345).
+> Podczas edycji pliku .dgml technologia IntelliSense pomaga identyfikować atrybuty, które są dostępne dla każdego elementu i ich wartości. Aby określić kolor w atrybucie, użyj nazw dla pospolitych kolorów, takich jak „Niebieski” lub wartości szesnastkowych ARGB, takich jak „#ffa0b1c3”. DGML używa małego podzbioru formatów definicji koloru Windows Presentation Foundation (WPF). Aby uzyskać więcej informacji, zobacz [klasy Colors](http://go.microsoft.com/fwlink/?LinkId=182345).
 
-## <a name="DGML"></a> Składnia DGML
+## <a name="DGML"></a>Składnia DGML
 
 W poniższej tabeli opisano rodzaje elementów, które są używane w DGML:
 
 - `<DirectedGraph></DirectedGraph>`
 
-   Ten element jest głównym elementem dokumentu (.dgml) mapy kodu. Wszystkie inne elementy DGML pojawiają się w zakresie tego elementu.
+   Ten element jest elementem głównym dokumentu mapy kodu (. dgml). Wszystkie inne elementy DGML pojawiają się w zakresie tego elementu.
 
    Na poniższej liście opisano opcjonalne atrybuty, które mogą obejmować:
 
-   `Background` — Kolor tła mapy
+   `Background` — kolor tła mapy
 
-   `BackgroundImage` — Lokalizacja pliku obrazu do użycia jako tło w formie mapy.
+   `BackgroundImage` — lokalizacja pliku obrazu do użycia jako tło w formie mapy.
 
-   `GraphDirection` -Jeśli mapa została ustawiona na układ drzewa (`Sugiyama`), Rozmieść węzły, tak aby większość łączy przepływu w określonym kierunku: `TopToBottom`, `BottomToTop`, `LeftToRight`, lub `RightToLeft`. Zobacz [zmienić układ mapy](../modeling/browse-and-rearrange-code-maps.md#Selecting).
+   `GraphDirection` — gdy mapa jest ustawiona na układ drzewa (`Sugiyama`), Rozmieść węzły tak, aby większość przepływów linków w określonym kierunku: `TopToBottom`, `BottomToTop`, `LeftToRight` lub `RightToLeft`. Zobacz [Zmiana układu mapy](../modeling/browse-and-rearrange-code-maps.md#Selecting).
 
-   `Layout` -Ustawienia mapy następujących układów: `None`, `Sugiyama` (układ drzewa) `ForceDirected` (szybkie klastry) lub `DependencyMatrix`. Zobacz [zmienić układ mapy](../modeling/browse-and-rearrange-code-maps.md#Selecting).
+   `Layout` — Ustaw mapę dla następujących układów: `None`, `Sugiyama` (układ drzewa), `ForceDirected` (szybkie klastry) lub `DependencyMatrix`. Zobacz [Zmiana układu mapy](../modeling/browse-and-rearrange-code-maps.md#Selecting).
 
-   `NeighborhoodDistance` -Nastavena mapy na układ drzewa lub układ szybkich klastrów, pokazują tylko węzły, które są przez określoną liczbę (1-7) łączy od wybranych węzłów. Zobacz [zmienić układ mapy](../modeling/browse-and-rearrange-code-maps.md#Selecting).
+   `NeighborhoodDistance` — gdy mapa jest ustawiona na układ drzewa lub szybkie klastry, Pokaż tylko te węzły, które mają określoną liczbę (1-7) linków od wybranych węzłów. Zobacz [Zmiana układu mapy](../modeling/browse-and-rearrange-code-maps.md#Selecting).
 
    Przykład:
 
@@ -65,10 +65,10 @@ W poniższej tabeli opisano rodzaje elementów, które są używane w DGML:
 
 - `<Nodes></Nodes>`
 
-   Ten opcjonalny element zawiera listę `<Node/>` elementów, które definiują węzły na mapie. Aby uzyskać więcej informacji, zobacz `<Node/>` elementu.
+   Ten opcjonalny element zawiera listę elementów `<Node/>`, które definiują węzły na mapie. Aby uzyskać więcej informacji, zobacz `<Node/>` elementu.
 
   > [!NOTE]
-  > Podczas odwoływania się do niezdefiniowanego węzła w `<Link/>` element, tworzy mapę `<Node/>` elementu automatycznie.
+  > Gdy odwołujesz się do niezdefiniowanego węzła w elemencie `<Link/>`, Mapa tworzy `<Node/>` element automatycznie.
 
    Przykład:
 
@@ -86,27 +86,27 @@ W poniższej tabeli opisano rodzaje elementów, które są używane w DGML:
 
 - `<Node/>`
 
-   Element ten określa pojedynczy węzeł. Wygląda na to, w ramach `<Nodes><Nodes/>` elementu listy.
+   Element ten określa pojedynczy węzeł. Pojawia się na liście elementów `<Nodes><Nodes/>`.
 
    Element ten musi zawierać następujące atrybuty:
 
-   `Id` -Unikatową nazwę węzła i wartość domyślną `Label` atrybutu, jeśli nie osobnej `Label` atrybut jest określony. Ta nazwa musi być zgodna `Source` lub `Target` atrybut łącza, który odwołuje się do niej.
+   `Id` — unikatowa nazwa węzła i wartość domyślna atrybutu `Label`, jeśli nie zostanie określony oddzielny atrybut `Label`. Ta nazwa musi być zgodna z atrybutem `Source` lub `Target` linku, który odwołuje się do niego.
 
    Na poniższej liście opisano niektóre z opcjonalnych atrybutów, z których można skorzystać:
 
-   `Label` — Nazwa wyświetlana węzła.
+   `Label` — nazwa wyświetlana węzła.
 
-   Atrybuty stylu. Zobacz [Dostosowanie map kodu przez edycję plików DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
+   Atrybuty stylu. Aby dowiedzieć [się, jak dostosować mapy kodu, edytuj pliki DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
-   `Category` — Nazwa kategorii identyfikującej elementy, które współdzielą ten atrybut. Aby uzyskać więcej informacji, zobacz `<Category/>` elementu.
+   `Category` — nazwa kategorii, która identyfikuje elementy, które współużytkują ten atrybut. Aby uzyskać więcej informacji, zobacz `<Category/>` elementu.
 
-   `Property` — Nazwa właściwości identyfikująca elementy, które mają tę samą wartość właściwości. Aby uzyskać więcej informacji, zobacz `<Property/>` elementu.
+   `Property` — nazwa właściwości, która identyfikuje elementy, które mają tę samą wartość właściwości. Aby uzyskać więcej informacji, zobacz `<Property/>` elementu.
 
-   `Group` — Jeśli węzeł zawiera inne węzły, ustaw ten atrybut na `Expanded` lub `Collapsed` pokazać lub ukryć jego zawartość. Musi istnieć `<Link/>` element, który zawiera `Category="Contains"` atrybutu i określa węzeł nadrzędny jako źródłowy oraz węzeł podrzędny jako docelowy. Zobacz [grupować elementy kodu](../modeling/customize-code-maps-by-editing-the-dgml-files.md#OrganizeNodes).
+   `Group` — Jeśli węzeł zawiera inne węzły, ustaw ten atrybut na `Expanded` lub `Collapsed`, aby pokazać lub ukryć jego zawartość. Musi istnieć element `<Link/>`, który zawiera atrybut `Category="Contains"` i określa węzeł nadrzędny jako węzeł źródłowy i węzeł podrzędny jako węzeł docelowy. Zobacz [elementy kodu grupy](../modeling/customize-code-maps-by-editing-the-dgml-files.md#OrganizeNodes).
 
-   `Visibility` — Ustaw ten atrybut na `Visible`, `Hidden`, lub `Collapsed`. Używa `System.Windows.Visibility`. Zobacz [ukrywanie lub pokazywanie węzłów i łączy](../modeling/browse-and-rearrange-code-maps.md#HidingShowing).
+   `Visibility` — Ustaw ten atrybut na `Visible`, `Hidden` lub `Collapsed`. Używa `System.Windows.Visibility`. Zobacz [ukrywanie lub pokazywanie węzłów i linków](../modeling/browse-and-rearrange-code-maps.md#HidingShowing).
 
-   `Reference` — Ustaw ten atrybut, aby utworzyć łącze do dokumentu lub adresu URL. Zobacz [połączyć dokumenty lub adresy URL elementów kodu i linków](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AddReferences).
+   `Reference` — Ustaw ten atrybut na link do dokumentu lub adresu URL. Zobacz [łączenie dokumentów lub adresów URL z elementami kodu i łączami](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AddReferences).
 
    Przykład:
 
@@ -131,7 +131,7 @@ W poniższej tabeli opisano rodzaje elementów, które są używane w DGML:
 
 - `<Links></Links>`
 
-   Element ten zawiera listę `<Link>` elementy, które definiują łącza między węzłami. Aby uzyskać więcej informacji, zobacz `<Link/>` elementu.
+   Ten element zawiera listę elementów `<Link>`, które definiują linki między węzłami. Aby uzyskać więcej informacji, zobacz `<Link/>` elementu.
 
    Przykład:
 
@@ -146,26 +146,26 @@ W poniższej tabeli opisano rodzaje elementów, które są używane w DGML:
 
 - `<Link/>`
 
-   Element ten określa pojedyncze łącze, które łączy węzeł źródłowy z węzłem docelowym. Wygląda na to, w ramach `<Links></Links>` elementu listy.
+   Element ten określa pojedyncze łącze, które łączy węzeł źródłowy z węzłem docelowym. Pojawia się na liście elementów `<Links></Links>`.
 
   > [!NOTE]
-  > Jeśli ten element odwołuje się do niezdefiniowanego węzła, dokument mapy automatycznie tworzy węzeł, który ma określone atrybuty, jeśli istnieje.
+  > Jeśli ten element odwołuje się do niezdefiniowanego węzła, dokument mapy automatycznie utworzy węzeł o określonych atrybutach (jeśli istnieją).
 
    Element ten musi zawierać następujące atrybuty:
 
-   `Source` -Węzeł źródłowy łącza
+   `Source` — węzeł źródłowy łącza
 
-   `Target` -Węzeł docelowy łącza
+   `Target` — węzeł docelowy łącza
 
    Na poniższej liście opisano niektóre z opcjonalnych atrybutów, z których można skorzystać:
 
-   `Label` — Nazwa wyświetlana łącza
+   `Label` — wyświetlana nazwa linku
 
-   Atrybuty stylu. Zobacz [Dostosowanie map kodu przez edycję plików DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
+   Atrybuty stylu. Aby dowiedzieć [się, jak dostosować mapy kodu, edytuj pliki DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
-   `Category` — Nazwa kategorii identyfikującej elementy, które współdzielą ten atrybut. Aby uzyskać więcej informacji, zobacz `<Category/>` elementu.
+   `Category` — nazwa kategorii, która identyfikuje elementy, które współużytkują ten atrybut. Aby uzyskać więcej informacji, zobacz `<Category/>` elementu.
 
-   `Property` — Nazwa właściwości identyfikująca elementy, które mają tę samą wartość właściwości. Aby uzyskać więcej informacji, zobacz `<Property/>` elementu.
+   `Property` — nazwa właściwości, która identyfikuje elementy, które mają tę samą wartość właściwości. Aby uzyskać więcej informacji, zobacz `<Property/>` elementu.
 
    Przykład:
 
@@ -189,7 +189,7 @@ W poniższej tabeli opisano rodzaje elementów, które są używane w DGML:
 
 - `<Categories></Categories>`
 
-   Element ten zawiera listę `<Category/>` elementów. Aby uzyskać więcej informacji, zobacz `<Category/>` elementu.
+   Ten element zawiera listę elementów `<Category/>`. Aby uzyskać więcej informacji, zobacz `<Category/>` elementu.
 
    Przykład:
 
@@ -204,21 +204,21 @@ W poniższej tabeli opisano rodzaje elementów, które są używane w DGML:
 
 - `<Category/>`
 
-   Ten element definiuje `Category` atrybut, który jest używany do identyfikowania elementów współdzielących ten atrybut. A `Category` atrybut może służyć do organizowania elementów mapy, dostarczania współdzielonych atrybutów poprzez dziedziczenie lub definiowania dodatkowych metadanych.
+   Ten element definiuje atrybut `Category`, który służy do identyfikowania elementów, które współużytkują ten atrybut. Atrybut `Category` może służyć do organizowania elementów mapy, zapewniania atrybutów udostępnionych przez dziedziczenie lub definiowania dodatkowych metadanych.
 
    Element ten musi zawierać następujące atrybuty:
 
-   `Id` — Unikatowa nazwa kategorii i wartość domyślną `Label` atrybutu, jeśli nie osobnej `Label` atrybut jest określony.
+   `Id` — unikatowa nazwa kategorii i wartość domyślna atrybutu `Label`, jeśli nie zostanie określony oddzielny atrybut `Label`.
 
    Na poniższej liście opisano niektóre z opcjonalnych atrybutów, z których można skorzystać:
 
-   `Label` — Przyjazna dla czytelnika nazwa dla kategorii.
+   `Label` — przyjazna dla czytnika nazwa dla kategorii.
 
-   `BasedOn` — Kategoria nadrzędna, z którym `<Category/>` bieżącego elementu dziedziczy.
+   `BasedOn` — Kategoria nadrzędna, z której dziedziczy `<Category/>` bieżącego elementu.
 
-   W przykładzie dla tego elementu `FailedTest` kategorii dziedziczy jej `Stroke` atrybut z `PassedTest` kategorii. Zobacz sekcję "Tworzenie kategorii hierarchicznych" w [mapy Dostosuj kodu przez edycję plików DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
+   W przykładzie dla tego elementu Kategoria `FailedTest` dziedziczy atrybut `Stroke` z kategorii `PassedTest`. Zobacz "aby utworzyć kategorie hierarchiczne" w temacie [Dostosowywanie map kodu przez edycję plików DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
-   Kategorie dostarczają również niektórych podstawowych zachowań szablonu, kontrolują wygląd węzłów i łączy, gdy są one wyświetlane na mapie. Zobacz [Dostosowanie map kodu przez edycję plików DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
+   Kategorie zapewniają również podstawowe zachowanie szablonów, które kontroluje wygląd węzłów i łączy, gdy są wyświetlane na mapie. Aby dowiedzieć [się, jak dostosować mapy kodu, edytuj pliki DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
    Przykład:
 
@@ -246,7 +246,7 @@ W poniższej tabeli opisano rodzaje elementów, które są używane w DGML:
 
 - `<Properties></Properties>`
 
-   Element ten zawiera listę `<Property/>` elementów. Aby uzyskać więcej informacji, zobacz `<Property/>` elementu.
+   Ten element zawiera listę elementów `<Property/>`. Aby uzyskać więcej informacji, zobacz `<Property/>` elementu.
 
    Przykład:
 
@@ -261,17 +261,17 @@ W poniższej tabeli opisano rodzaje elementów, które są używane w DGML:
 
 - `<Property/>`
 
-   Ten element definiuje `Property` atrybut, który służy do przypisywania wartości do dowolnego atrybutu, włączając kategorie i inne właściwości lub elementów DGML.
+   Ten element definiuje `Property` atrybutu, który służy do przypisywania wartości do dowolnego elementu lub atrybutu DGML, w tym kategorii i innych właściwości.
 
    Element ten musi zawierać następujące atrybuty:
 
-  - `Id` -Unikatową nazwę właściwości i wartość domyślną `Label` atrybutu, jeśli nie osobnej `Label` atrybut jest określony.
+  - `Id` — unikatowa nazwa właściwości i wartość domyślna atrybutu `Label`, jeśli nie zostanie określony oddzielny atrybut `Label`.
 
-  - `DataType` — Typ danych przechowywanych przez właściwość
+  - `DataType` — typ danych przechowywanych przez właściwość
 
-    Jeśli chcesz, aby właściwość pojawiła się w **właściwości** oknie, użyj `Label` właściwości w celu określenia nazwy wyświetlania właściwości.
+    Jeśli chcesz, aby właściwość była widoczna w oknie **Właściwości** , użyj właściwości `Label`, aby określić nazwę wyświetlaną właściwości.
 
-    Zobacz [przypisywać kategorie elementów kodu i linków](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AssignCategories).
+    Zobacz [Przypisywanie kategorii do elementów kodu i linków](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AssignCategories).
 
     Przykład:
 
@@ -300,9 +300,9 @@ W poniższej tabeli opisano rodzaje elementów, które są używane w DGML:
   </DirectedGraph>
   ```
 
-### <a name="AddAlias"></a> Aliasy dla najczęściej używanych ścieżek
+### <a name="AddAlias"></a>Aliasy dla najczęściej używanych ścieżek
 
-Zamienianie najczęściej używanych ścieżek na aliasy pomaga zredukować rozmiar pliku .dgml i czas wymagany do załadowania lub zapisania pliku. Aby utworzyć alias, należy dodać `<Paths></Paths>` sekcji na końcu pliku .dgml. W tej sekcji Dodaj `<Path/>` element, aby zdefiniować alias dla ścieżki:
+Zamienianie najczęściej używanych ścieżek na aliasy pomaga zredukować rozmiar pliku .dgml i czas wymagany do załadowania lub zapisania pliku. Aby utworzyć alias, należy dodać sekcję `<Paths></Paths>` na końcu pliku. dgml. W tej sekcji Dodaj element `<Path/>`, aby zdefiniować alias dla ścieżki:
 
 ```xml
 <Paths>
@@ -310,7 +310,7 @@ Zamienianie najczęściej używanych ścieżek na aliasy pomaga zredukować rozm
 </Paths>
 ```
 
-Aby odwoływać się do aliasu z elementu w pliku .dgml, należy ująć `Id` z \<Path / > znak dolara ($) i nawiasy (()):
+Aby odwołać się do aliasu z elementu w pliku. dgml, należy ująć `Id` elementu \<Path/> za pomocą znaku dolara ($) i nawiasów (()):
 
 ```xml
 <Nodes>

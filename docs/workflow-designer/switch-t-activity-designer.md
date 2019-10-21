@@ -1,59 +1,59 @@
 ---
-title: Projektant przepływu pracy — przełącznik<T> Projektant działań
+title: Projektant przepływu pracy-Przełącz projektanta działań <T>
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.Activities.Presentation.ModelItemKeyValuePair.UI
 - System.Activities.Statements.Switch`1.UI
 ms.assetid: 18a6c96e-49a9-4356-ab61-fbd7e3ab44bb
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7eb83567a7d59dc02779839a5305b9c1c0329912
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1afda542dd3f45e5be723ce35b2546626f3679e5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62434049"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649896"
 ---
-# <a name="switcht-activity-designer"></a>Przełącznik\<T > Projektant działań
+# <a name="switcht-activity-designer"></a>Przełącz \<T projektanta działań >
 
-<xref:System.Activities.Statements.Switch%601> Działanie oblicza określone wyrażenie i wykonuje działania z kolekcji działań, w których skojarzony klucz pasuje do wartości uzyskanej z oceny.
+Działanie <xref:System.Activities.Statements.Switch%601> oblicza określone wyrażenie i wykonuje działanie z kolekcji działań, których skojarzony klucz jest zgodny z wartością uzyskaną z oceny.
 
-**Przełącznik < T\>**  projektanta działań służy do tworzenia i konfigurowania <xref:System.Activities.Statements.Switch%601> działania w Projektancie przepływu pracy.
+**< @No__t_1** Projektant działań służy do tworzenia i konfigurowania działania <xref:System.Activities.Statements.Switch%601> w Projektant przepływu pracy.
 
-## <a name="the-switchtactivity"></a>Przełącznik\<T > działania
+## <a name="the-switchtactivity"></a>Działanie Switch \<T >
 
-A <xref:System.Activities.Statements.Switch%601> zawiera działanie <xref:System.Activities.Statements.Switch%601.Expression%2A> i słownika <xref:System.Activities.Statements.Switch%601.Cases%2A>. Każdy przypadek w słowniku składa się z parą, która zawiera *klucz* i działań, która służy jako odpowiadającymi mu dostawcami *wartość*. <xref:System.Activities.Statements.Switch%601> Ocenia aktywności <xref:System.Activities.Statements.Switch%601.Expression%2A> i porównuje ją z każdego z kluczy. Jeśli zostanie znalezione dopasowanie, odpowiadające mu działanie jest wykonywana. Tylko jedno dopasowanie jest możliwe, ponieważ klucze słownikowe musi być unikatowy, zależnie od typu równości zdefiniowane przez moduł porównujący równość słownika. Jeśli nie zostanie znalezione dopasowanie, <xref:System.Activities.Statements.Switch%601.Default%2A> jest wykonywane działanie.
+Działanie <xref:System.Activities.Statements.Switch%601> zawiera <xref:System.Activities.Statements.Switch%601.Expression%2A> i słownika <xref:System.Activities.Statements.Switch%601.Cases%2A>. Każdy przypadek w słowniku składa się z pary zawierającej *klucz* i działanie, które służy jako odpowiadająca mu *wartość*. Działanie <xref:System.Activities.Statements.Switch%601> szacuje <xref:System.Activities.Statements.Switch%601.Expression%2A> i porównuje je z każdym z kluczy. W przypadku znalezienia dopasowania zostanie wykonane odpowiednie działanie. Możliwe jest tylko jedno dopasowanie, ponieważ klucze słownika muszą być unikatowe w zależności od typu równości zdefiniowanego przez funkcję porównującą równość słownika. Jeśli nie zostanie znalezione żadne dopasowanie, działanie <xref:System.Activities.Statements.Switch%601.Default%2A> zostanie wykonane.
 
-## <a name="how-to-use-the-switcht-activity-designer"></a>Jak użyć przełącznika\<T > Projektant działań
+## <a name="how-to-use-the-switcht-activity-designer"></a>Jak używać narzędzia Switch \<T > Designer
 
-Dostęp do **przełącznika\<T >** projektanta działań w **przepływ sterowania** kategorii **przybornika**. Po upuszczając go do projektanta przepływów pracy, wyświetla **wybierz typy** okna dialogowego, aby zezwolić użytkownikom na określanie typu ogólnego *T* używane w <xref:System.Activities.Statements.Switch%601> działania. Wartość domyślna to **Int32**. Po typie ogólnym *T* został zaznaczony, **przełącznik < T\>**  Projektant zostanie dodany do projektanta przepływów pracy.
+Dostęp do **\<T przełącznika >** projektanta aktywności w kategorii **przepływ sterowania** w **przyborniku**. Po porzucenie go do Projektant przepływu pracy wyświetla okno dialogowe **Wybieranie typów** , aby zezwolić użytkownikowi na określenie typu ogólnego *T* używanego w działaniu <xref:System.Activities.Statements.Switch%601>. Wartość domyślna to **Int32**. Po wybraniu typu ogólnego *t* do projektanta przepływu pracy zostanie dodany **przełącznik < T \>** Designer.
 
-Poniżej przedstawiono właściwości **przełącznik < T\>**  projektanta. Wszystkie te właściwości można edytować w siatce właściwości. Niektóre z nich, można również edytować na powierzchni projektanta.
+Poniżej znajdują się właściwości **przełącznika < T \>** Designer. Wszystkie te właściwości można edytować w siatce właściwości. Niektóre z nich mogą być również edytowane na powierzchni projektanta.
 
-W poniższej tabeli przedstawiono najbardziej przydatne <xref:System.Activities.Statements.Switch%601> właściwości i w tym artykule opisano, jak są używane w projektancie.
+W poniższej tabeli przedstawiono najbardziej przydatne <xref:System.Activities.Statements.Switch%601> właściwości i opisano sposób ich używania w projektancie.
 
 |Nazwa właściwości|Wymagane|Użycie|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Określa przyjazną nazwę <xref:System.Activities.Statements.Switch%601> projektanta działań. Wartość domyślna to przełącznik < Int32\>. Wartość może być edytowana w **właściwości** okna lub bezpośrednio w nagłówku projektanta.<br /><br /> Mimo że <xref:System.Activities.Activity.DisplayName%2A> nie jest bezwzględnie konieczne jest najlepszym rozwiązaniem, aby użyć jednego.|
-|<xref:System.Activities.Statements.Switch%601.Expression%2A>|Prawda|Określa wyrażenie używane do porównania z kluczy w kolekcji spraw, aby ustalić którym to przypadku do wykonania.|
-|<xref:System.Activities.Statements.Switch%601.Default%2A>||Określa działanie wykonywane, jeśli nie zostanie znalezione dopasowanie. Kliknij przycisk **dodać działanie** przycisku w projektancie, aby otworzyć **domyślne** pola, których można było porzucić działania.|
-|<xref:System.Activities.Statements.Switch%601.Cases%2A>||Określa przypadki, które ma zostać obliczone. Aby dodać przypadek, kliknij **Dodaj nowy przypadek** znajdujący się u dołu **przełącznika\<T >** projektanta. Przycisk zmienia się na pola tekstowego (pola kombi, w przypadku wybrania typu ogólnego, podczas dodawania przełącznika\<T > jest ciągiem lub typu wyliczeniowego). Po dodaniu klucza w **wartość Case** w polu Obszar przypadków rozszerza i działania można było porzucić gdzie tekst wskazówki "W tym miejscu listy activity" Aby zdefiniować logiki wykonywania w przypadku.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Określa przyjazną nazwę projektanta działań <xref:System.Activities.Statements.Switch%601>. Wartość domyślna to switch < Int32 \>. Wartość można edytować w oknie **Właściwości** lub bezpośrednio w nagłówku projektanta.<br /><br /> Mimo że <xref:System.Activities.Activity.DisplayName%2A> nie jest ściśle wymagane, najlepszym rozwiązaniem jest użycie jednego z nich.|
+|<xref:System.Activities.Statements.Switch%601.Expression%2A>|Oznacza|Określa wyrażenie używane do porównywania z kluczami w kolekcji cases, aby określić przypadek do wykonania.|
+|<xref:System.Activities.Statements.Switch%601.Default%2A>||Określa działanie wykonywane, jeśli nie znaleziono żadnego dopasowania. Kliknij przycisk **Dodaj działanie** w projektancie, aby otworzyć pole **domyślne** , w którym działanie może zostać porzucone.|
+|<xref:System.Activities.Statements.Switch%601.Cases%2A>||Określa przypadki, które mają zostać ocenione. Aby dodać przypadek, kliknij przycisk **Dodaj nowy przypadek** u dołu **przełącznika \<T >** Designer. Przycisk zmienia się w polu tekstowym (pole kombi, jeśli typ ogólny wybrany podczas dodawania przełącznika \<T > jest ciągiem lub wyliczeniem). Po dodaniu klucza w polu **wartość wielkości** liter zostanie rozwinięte miejsce i będzie można usunąć działanie, gdzie w tym miejscu tekst wskazówki "upuść aktywność tutaj", aby zdefiniować logikę wykonywania dla przypadku.|
 
-Można dodać wiele przypadków, tak długo, jak wielkość klucze nie są duplikowane. W przeciwnym razie pojawia się okno dialogowe wyświetla raportowania, określonego klucza przypadków już istnieje i czy należy wybrać inny klucz. W **przełącznika\<T >** projektanta, tylko jeden obszar przypadków mogą znajdować się w widoku rozwiniętego w danym momencie. Jeśli obszar przypadków znajduje się w widoku zwiniętym, klikając przypadków obszar powiększa go. Należy zauważyć, że w przypadku zwinięty Projektant pokazuje nazwę wyświetlaną działania w przypadku po prawej stronie czy dowolny. W przeciwnym razie pokazuje **dodać działanie** przycisk, który rozwija tak, kliknij je, a także pozwala dodać działanie.
+Można dodać wiele przypadków, dopóki klucze przypadków nie są zduplikowane. W przeciwnym razie okno dialogowe błędu wyświetla raport o określonym kluczu Case już istnieje i należy wybrać inny klucz. W oknie **przełącznika \<T >** Projektant tylko jeden obszar Case może być w widoku rozwiniętym jednocześnie. Jeśli obszar przypadku jest w widoku zwinięte, kliknięcie obszaru wielkość liter zostanie rozwinięte. Zwróć uwagę, że w przypadku zwiniętego przypadku Projektant wyświetla nazwę wyświetlaną działania w przypadku, gdy jest to możliwe. W przeciwnym razie pokazuje przycisk **Dodaj działanie** , który rozszerza wielkość liter po kliknięciu go i umożliwia dodanie działania.
 
-Klikając klucz istniejącego przypadku zmienia klucza z etykietę do pola tekstowego, dzięki czemu można edytować klucza przypadków.
+Kliknięcie klucza istniejącej sprawy spowoduje zmianę klucza z etykiety do pola tekstowego, aby można było edytować klucz przypadku.
 
-Istnieją 2 sposoby usunięcie sprawy:
+Istnieją dwa sposoby usunięcia przypadku:
 
-- Wybierz przypadek i usuń go.
+- Wybierz wielkość liter i usuń ją.
 
-- Wybierz przypadek, kliknij prawym przyciskiem myszy aby wyświetlić menu kontekstowe i wybierz **Usuń**.
+- Zaznacz wielkość liter, kliknij prawym przyciskiem myszy, aby wyświetlić menu kontekstowe, a następnie wybierz pozycję **Usuń**.
 
-Należy pamiętać, że należy wybrać tak, aby go usunąć. Wybierając i usuwając działanie w przypadku usuwa tylko działania inaczej.
+Pamiętaj, że musisz wybrać sam przypadek, aby go usunąć. Zaznaczenie i usunięcie działania w ramach przypadku powoduje usunięcie tylko tego działania.
 
 ## <a name="see-also"></a>Zobacz także
 

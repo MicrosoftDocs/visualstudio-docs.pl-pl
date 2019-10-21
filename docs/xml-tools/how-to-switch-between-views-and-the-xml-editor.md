@@ -1,38 +1,38 @@
 ---
-title: 'Instrukcje: Przełącz między widokami i edytorem XML'
+title: 'Instrukcje: przełączanie się między widokami a edytorem XML'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: cb69fbbd-d99c-439e-9498-5df9050f8df0
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35839f8ae33068333259b30015e4cae0bb9c26d3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0f8049806d14abc8e22154a763e982ce5c86304b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001829"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72601876"
 ---
-# <a name="how-to-switch-between-views-and-the-xml-editor"></a>Instrukcje: Przełączanie między widokami i edytorem XML
+# <a name="how-to-switch-between-views-and-the-xml-editor"></a>Instrukcje: przełączanie się między widokami a edytorem XML
 
-W tym temacie przedstawiono sposób przełączać się między widokami projektanta schematu XML (XSD Designer) i edytorem XML. W tym przykładzie użyto [schemat zamówienia zakupu](../xml-tools/sample-xsd-file-simple-schema.md).
+W tym temacie pokazano, jak przełączać się między widokami projektanta schematu XML (XSD Designer) a edytorem XML. W tym przykładzie zastosowano [schemat zamówienia zakupu](../xml-tools/sample-xsd-file-simple-schema.md).
 
 ## <a name="to-switch-between-the-views-and-the-xml-editor"></a>Aby przełączać się między widokami i edytorem XML
 
-1. Aby tworzyć i edytować plik schematu XML, wykonaj kroki opisane w [jak: Tworzenie i edytowanie pliku schematu XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
+1. Aby utworzyć i edytować nowy plik schematu XML, wykonaj kroki opisane w temacie [How to: Create and Edit a XSD File Schema](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
-2. Aby przełączyć się do projektanta schematu XML w edytorze XML, kliknij prawym przyciskiem myszy w dowolnym miejscu w edytorze XML, a następnie wybierz **Projektant widoków**.
+2. Aby przełączyć się do projektanta schematu XML z edytora XML, kliknij prawym przyciskiem myszy w dowolnym miejscu w edytorze XML i wybierz polecenie **Projektant widoków**.
 
-3. Aby przełączyć się do widoku wykresu przy użyciu znaku wodnego, kliknij przycisk **przy użyciu widoku wykresu można zobaczyć relację między węzłami** link widoku startowego.
+3. Aby przełączyć się do widoku wykresu przy użyciu znaku wodnego, kliknij przycisk **Użyj widoku wykresu, aby zobaczyć relację między węzłem węzły** w widoku Start.
 
-4. Przeciągnij `USAddress` węzła z **Eksploratora schematu XML** na widoku wykresu. Kliknij prawym przyciskiem myszy `USAddress` węzeł w widoku wykresu i wybierz **Pokaż w widoku modelu zawartości** w menu kontekstowym.
+4. Przeciągnij węzeł `USAddress` z **Eksploratora schematu XML** na widok wykresu. Kliknij prawym przyciskiem myszy węzeł `USAddress` w widoku wykresu i wybierz polecenie **Pokaż w widoku modelu zawartości** w menu kontekstowym.
 
-     Widok modelu zawartości ze szczegółami dotyczącymi `USAddress` węzeł jest dostępny.
+     Zostanie wyświetlony widok model zawartości z szczegółowymi węzłami `USAddress`.
 
-5. Aby przełączyć się do widoku startowego z widoku modelu zawartości za pomocą paska narzędzi, kliknij przycisk **widoku Start** na listwie narzędziowej XSD.
+5. Aby przełączyć się do widoku Start z widoku modelu zawartości przy użyciu paska narzędzi, kliknij przycisk **Wyświetl widok** na pasku narzędzi XSD.
 
-6. Aby przełączyć się między widokami przy użyciu klawiszy dostępu, naciśnij klawisz **Ctrl**+**1** dla widoku startowego **Ctrl**+**2** dla widoku wykresu i **Ctrl**+**3** dla widoku modelu zawartości.
+6. Aby przełączać się między widokami za pomocą klawiszy skrótów, naciśnij klawisz **ctrl** +**1** dla widoku Start, **Ctrl** +**2** dla widoku wykresu i **Ctrl** +**3** dla widoku modelu zawartości.
 
-7. Aby przejść do edytora XML z widoku modelu zawartości, kliknij prawym przyciskiem myszy węzeł, a następnie wybierz **Wyświetl kod** w menu kontekstowym.
+7. Aby przejść do edytora XML z widoku modelu zawartości, kliknij prawym przyciskiem myszy węzeł i wybierz polecenie **Wyświetl kod** w menu kontekstowym.

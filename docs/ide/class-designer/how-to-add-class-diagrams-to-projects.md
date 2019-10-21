@@ -1,82 +1,82 @@
 ---
-title: 'Instrukcje: Dodawanie diagramów klasy do projektów (Projektant klas)'
+title: 'Porady: dodawanie diagramów klasy do projektu (Projektant klas)'
 ms.date: 05/08/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - class diagrams, creating
 - Class Designer [Visual Studio], opening
 ms.assetid: 0eac1b54-2711-4e4b-9654-a0c429c08c8f
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06432ac0e882df506e4379a2f2cbffcf52c79f42
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3cd898f2c4d7a84c9526ca9f56ce65a9b706f11d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66332762"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647777"
 ---
 # <a name="how-to-add-class-diagrams-to-projects"></a>Instrukcje: Dodawanie diagramów klas do projektów
 
-Do projektowania, edytować i refaktoryzować klasy a innymi typami danych, należy dodać diagram klas do projektu C#, Visual Basic lub C++. Aby wyświetlić różne części kodu w projekcie, należy dodać wiele diagramów klas do projektu.
+Do projektowania, edytowania i refaktoryzacji klas oraz innych typów Dodaj Diagram klas do elementu C#, Visual Basic lub C++ projektu. Aby wizualizować różne części kodu w projekcie, należy dodać wiele diagramów klas do projektu.
 
-Nie można utworzyć diagramy klas z projektów, które współdzielą kod w wielu aplikacjach. Aby utworzyć diagramy klas UML, zobacz [UML tworzenie projektów i diagramów modelowania](../../modeling/create-uml-modeling-projects-and-diagrams.md).
+Nie można tworzyć diagramów klas na podstawie projektów, które współużytkują kod w wielu aplikacjach. Aby utworzyć diagramy klas UML, zobacz [Tworzenie projektów i diagramów modelowania UML](../../modeling/create-uml-modeling-projects-and-diagrams.md).
 
-## <a name="install-the-class-designer-component"></a>Zainstaluj składnik projektanta klas
+## <a name="install-the-class-designer-component"></a>Zainstaluj składnik Projektant klas
 
-Jeśli nie zainstalowano **projektanta klas** składnika, wykonaj następujące kroki, aby go zainstalować.
+Jeśli składnik **Projektant klas** nie został zainstalowany, wykonaj następujące kroki, aby go zainstalować.
 
-1. Otwórz **Instalatora programu Visual Studio** z menu Windows Start lub wybierając **narzędzia** > **Pobierz narzędzia i funkcje** na pasku menu w programie Visual Studio.
+1. Otwórz **Instalator programu Visual Studio** z menu Start systemu Windows lub wybierając pozycję **Narzędzia**  > **Pobierz narzędzia i funkcje** z paska menu w programie Visual Studio.
 
    **Instalator programu Visual Studio** zostanie otwarty.
 
-1. Wybierz **poszczególne składniki** kartę, a następnie przewiń w dół do **kodu narzędzia** kategorii.
+1. Wybierz kartę **poszczególne składniki** , a następnie przewiń w dół do kategorii **Narzędzia kodu** .
 
-1. Wybierz **projektanta klas** , a następnie wybierz **Modyfikuj**.
+1. Wybierz pozycję **Projektant klas** a następnie wybierz pozycję **Modyfikuj**.
 
-   ![Składnik projektanta klas w Instalatorze programu Visual Studio](media/class-designer-component.png)
+   ![Składnik Projektant klas w Instalator programu Visual Studio](media/class-designer-component.png)
 
-   **Projektanta klas** składnika, który rozpoczyna się instalowania.
+   Składnik **Projektant klas** zostanie uruchomiony.
 
-## <a name="add-a-blank-class-diagram-to-a-project"></a>Dodaj pusty diagram klas do projektu
+## <a name="add-a-blank-class-diagram-to-a-project"></a>Dodawanie pustego diagramu klas do projektu
 
-1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu, a następnie wybierz **Dodaj** > **nowy element**. Lub naciśnij **Ctrl**+**Shift**+**A**.
+1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł projektu, a następnie wybierz polecenie **Dodaj**  > **nowy element**. Lub naciśnij **klawisze Ctrl** +**SHIFT** +**A**.
 
-   **Dodaj nowy element** zostanie otwarte okno dialogowe.
+   Zostanie otwarte okno dialogowe **Dodaj nowy element** .
 
-2. Rozwiń **wspólne elementy** > **ogólne**, a następnie wybierz pozycję **Diagram klas** z listy szablonów. Dla projektów Visual C++, poszukaj w **narzędzie** kategorię, aby znaleźć **Diagram klas** szablonu.
+2. Rozwiń węzeł **wspólne elementy**  > **Ogólne**, a następnie wybierz pozycję **Diagram klas** z listy szablon. W przypadku C++ projektów wizualnych poszukaj w kategorii **Narzędzia** , aby znaleźć szablon **diagramu klas** .
 
    > [!NOTE]
-   > Jeśli nie widzisz **Diagram klas** szablonu, [postępuj zgodnie z instrukcjami](#install-the-class-designer-component) zainstalował **projektanta klas** składnika programu Visual Studio.
+   > Jeśli szablon **diagramu klas** nie jest widoczny, [wykonaj kroki,](#install-the-class-designer-component) aby zainstalować składnik **Projektant klas** dla programu Visual Studio.
 
-   Diagram klas zostanie otwarty w Projektancie klas i będzie widoczny jako plik, który ma *.cd* rozszerzenie w **Eksploratora rozwiązań**. Można przeciągnąć kształty i linie do diagramu z **przybornika**.
+   Diagram klas otwiera się w Projektant klas i pojawia się jako plik z rozszerzeniem *. CD* w **Eksplorator rozwiązań**. Możesz przeciągać kształty i linie do diagramu z **przybornika**.
 
 Aby dodać wiele diagramów klas, powtórz czynności opisane w tej procedurze.
 
-## <a name="add-a-class-diagram-based-on-existing-types"></a>Dodaj diagram klas oparty na istniejących typach
+## <a name="add-a-class-diagram-based-on-existing-types"></a>Dodawanie diagramu klasy na podstawie istniejących typów
 
-W **Eksploratora rozwiązań**, otwórz menu kontekstowe pliku klasy (kliknij prawym przyciskiem myszy), a następnie wybierz **Pokaż Diagram klas**.
+W **Eksplorator rozwiązań**Otwórz menu kontekstowe pliku klasy (kliknij prawym przyciskiem myszy), a następnie wybierz polecenie **Wyświetl Diagram klas**.
 
 —lub—
 
-W **Widok klas**, otwórz menu kontekstowe przestrzeni nazw lub typ, a następnie wybierz **Pokaż Diagram klas**.
+W **Widok klasy**Otwórz obszar nazw lub menu kontekstowe typu, a następnie wybierz **widok Diagram klas**.
 
 > [!TIP]
-> Jeśli **Widok klas** nie jest otwarty, otwórz **Widok klas** z **widoku** menu.
+> Jeśli **Widok klasy** nie jest otwarty, Otwórz **Widok klasy** z menu **Widok** .
 
-## <a name="to-display-the-contents-of-a-complete-project-in-a-class-diagram"></a>Aby wyświetlić zawartość kompletnego projektu na diagramie klasy
+## <a name="to-display-the-contents-of-a-complete-project-in-a-class-diagram"></a>Aby wyświetlić zawartość kompletnego projektu w diagramie klas
 
-W **Eksploratora rozwiązań** lub w widoku klas, kliknij prawym przyciskiem myszy projekt i wybierz polecenie **widoku**, następnie wybierz **Pokaż Diagram klas**.
+W **Eksplorator rozwiązań** lub widok klasy, kliknij prawym przyciskiem myszy projekt, a następnie wybierz polecenie **Widok**, a następnie wybierz polecenie **Wyświetl Diagram klas**.
 
-Diagram klas wypełniane automatycznie jest tworzony.
+Tworzony jest automatycznie wypełniony Diagram klas.
 
 > [!NOTE]
-> Projektant klas nie jest dostępne w projektach .NET Core.
+> Projektant klas nie jest dostępna w projektach .NET Core.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Instrukcje: Tworzenie typów za pomocą projektanta klas](how-to-create-types.md)
-- [Instrukcje: Wyświetlanie istniejących typów](how-to-view-existing-types.md)
+- [Instrukcje: Tworzenie typów przy użyciu Projektant klas](how-to-create-types.md)
+- [Instrukcje: wyświetlanie istniejących typów](how-to-view-existing-types.md)
 - [Projektowanie i wyświetlanie klas i typów](designing-and-viewing-classes-and-types.md)

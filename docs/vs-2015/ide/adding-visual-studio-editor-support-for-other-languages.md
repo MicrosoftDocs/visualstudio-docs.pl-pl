@@ -1,5 +1,5 @@
 ---
-title: Dodawanie Obsługa edytora dla innych języków | Dokumentacja firmy Microsoft
+title: Dodawanie obsługi edytora dla innych języków | Microsoft Docs
 ms.date: 11/15/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,46 +12,46 @@ helpviewer_keywords:
 - language support
 ms.assetid: d78c43ee-4ef2-42e5-984e-d137de4e7e92
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 366ec5de66c3070e30d7d4f98662732a7892437b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7138784201a1ac036047e1c8df362727fa393b51
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68148247"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72620775"
 ---
-# <a name="adding-visual-studio-editor-support-for-other-languages"></a>Dodawanie obsługi innych języków w edytorze programu Visual Studio
+# <a name="adding-visual-studio-editor-support-for-other-languages"></a>Dodawanie obsługi innych języków do edytora programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Informacje na temat jak edytor programu Visual Studio obsługuje odczytu ani nawigować przez inny komputer języków i jak dodać obsługę innych języków w edytorze programu Visual Studio.
+Dowiedz się, jak edytor programu Visual Studio obsługuje odczytywanie i nawigowanie w różnych językach komputerowych oraz jak można dodać obsługę edytora programu Visual Studio dla innych języków.
 
-## <a name="syntax-colorization-statement-completion-and-navigate-to-support"></a>Kolorowanie składni, uzupełniania instrukcji i przejdź do pomocy technicznej
- Funkcje w edytorze programu Visual Studio, takie jak kolorowania składni, uzupełniania instrukcji i przejdź do może pomóc Ci łatwo odczytywać, tworzyć i edytować kod. Poniższy zrzut ekranu przedstawia przykład edytowanie skryptu Perl w programie Visual Studio. Składnia jest automatycznie w trybie kolorowym. Na przykład uwagi w kodzie mają kolor zielony, kod jest czarny, ścieżki są oznaczone kolorem czerwonym i instrukcje są niebieski. Edytor programu Visual Studio automatycznie stosuje kolorowania składni dowolnego języka programowania go obsługuje. Ponadto po rozpoczęciu wprowadź słowo kluczowe języka znane lub obiekt, uzupełniania instrukcji Wyświetla listę możliwych instrukcji i obiektów. Uzupełnianie instrukcji mogą pomóc tworzyć kod szybciej i łatwiej.
+## <a name="syntax-colorization-statement-completion-and-navigate-to-support"></a>Kolorowanie składni, uzupełnianie instrukcji i przechodzenie do pomocy technicznej
+ Funkcje w edytorze programu Visual Studio, takie jak kolorowanie składni, uzupełnianie instrukcji i nawigowanie w usłudze, mogą ułatwić łatwiejsze odczytywanie, tworzenie i edytowanie kodu. Poniższy zrzut ekranu przedstawia przykład edytowania skryptu języka Perl w programie Visual Studio. Składnia jest automatycznie koloru. Na przykład uwagi w kodzie są kolorami zielonymi, kod jest czarny, ścieżki są czerwone, a instrukcje są niebieskie. Edytor programu Visual Studio automatycznie stosuje kolorowanie składni do dowolnego języka, który obsługuje. Ponadto, gdy zaczniesz wprowadzać znane słowo kluczowe lub obiekt języka, uzupełnianie instrukcji wyświetla listę możliwych instrukcji i obiektów. Uzupełnianie instrukcji może ułatwić szybkie i łatwe tworzenie kodu.
 
  ![Kolorowanie składni w skrypcie języka Perl](../ide/media/vside-perledit.png "VSIDE_PerlEdit")
 
- Program Visual Studio zawiera obecnie kolorowania składni i uzupełniania instrukcji podstawowe obsługę następujących języków przy użyciu [Gramatyk TextMate](https://manual.macromates.com/en/language_grammars). Jeśli tabela nie ma ulubionego języka, jednak nie martw się — możesz dodać go.
+ Program Visual Studio obecnie zapewnia kolorowanie składni i obsługę uzupełniania podstawowych instrukcji dla następujących języków przy użyciu [gramatyki Deoficerów](https://manual.macromates.com/en/language_grammars). Jeśli Twój ulubiony język nie znajduje się w tabeli, nie martw się — możesz dodać go.
 
 |||||||
 |-|-|-|-|-|-|
-|Bat|F#|Java|Markdown|Rust|Visual Basic|
-|Clojure|Z rzeczywistym użyciem|JavaDoc|Objective-C|ShaderLab|Visual C#|
-|Narzędzia CMake|Groovy|JSON|Perl|ShellScript|Visual C++|
-|CoffeeScript|HTML|MNIEJ|Python|SQL|VBNet|
-|CSS|INI|LUA|R|Swift|XML|
-|Docker|Jade|Wprowadź|Ruby|TypeScript|YAML|
+|Technique|F#|Java|Promocji|Rust|Visual Basic|
+|Clojure|Udać|JavaDoc|Objective-C|ShaderLab|Visual C#|
+|CMake|Groovy|JSON|Języku|ShellScript|Visual C++|
+|CoffeeScript|HTML|WCZEŚNIEJSZ|Python|SQL|VBNet|
+|CSS|INI|LUA|R|Adres|XML|
+|Docker|Jade|SprawdY|Dopisek|TypeScript|YAML|
 
- Oprócz kolorowania składni i uzupełniania instrukcji podstawowych programu Visual Studio ma również funkcję o nazwie [przejdź do](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/). Ta funkcja umożliwia szybkie wyszukiwanie plików kodu, ścieżki do plików i symbole kodu. Visual Studio zawiera przejdź do pomocy technicznej dla następujących języków.
+ Oprócz kolorowania składni i uzupełniania podstawowych instrukcji, Visual Studio ma również funkcję o nazwie [Przejdź do](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/). Ta funkcja umożliwia szybkie wyszukiwanie plików kodu, ścieżek plików i symboli kodu. Program Visual Studio oferuje przechodzenie do obsługi następujących języków.
 
-- Z rzeczywistym użyciem
+- Udać
 
 - Java
 
 - JavaScript
 
-- PHP
+- Obsługa
 
 - TypeScript
 
@@ -61,26 +61,26 @@ Informacje na temat jak edytor programu Visual Studio obsługuje odczytu ani naw
 
 - Visual C#
 
-  Wszystkie typy plików mają funkcje opisane wcześniej nawet wtedy, gdy pomoc techniczna dla danego języka nie został jeszcze zainstalowany. Instalowanie obsługi wyspecjalizowane w przypadku niektórych języków może dostarczyć obsługę dodatkowych języków, takich jak technologia IntelliSense i inne funkcje zaawansowane języka, takie jak żarówki.
+  Wszystkie te typy plików mają opisane wcześniej funkcje, nawet jeśli obsługa danego języka nie została jeszcze zainstalowana. Zainstalowanie wyspecjalizowanej pomocy technicznej w przypadku niektórych języków może zapewnić obsługę dodatkowych języków, takich jak IntelliSense lub inne zaawansowane funkcje językowe, takie jak żarówki.
 
-## <a name="adding-support-for-non-supported-languages"></a>Dodano obsługę języków nieobsługiwanych
- Visual Studio 2015 Update 1 i nowsze wersje zapewniają obsługę języka w edytorze za pomocą [Gramatyk TextMate](https://manual.macromates.com/en/language_grammars). Jeśli w ulubionym języku programowania nie jest obecnie obsługiwane w edytorze programu Visual Studio, najpierw wyszukać w sieci web - pakiet TextMate języka może już istnieć. Jeśli nie znajdziesz, jednak można dodać obsługę dla niego samodzielnie w Visual Studio 2015 Update 1 lub nowszy, tworząc modelu pakietu TextMate gramatyki języka i fragmenty kodu.
+## <a name="adding-support-for-non-supported-languages"></a>Dodawanie obsługi dla nieobsługiwanych języków
+ Program Visual Studio 2015 Update 1 i jego nowsze wersje zapewniają obsługę języka w edytorze przy użyciu [gramatyki Deautomatyzujj](https://manual.macromates.com/en/language_grammars). Jeśli ulubiony język programowania nie jest obecnie obsługiwany w edytorze programu Visual Studio, należy najpierw przeszukać ten pakiet, który już istnieje w sieci Web. Jeśli nie możesz znaleźć jednego z nich, możesz dodać jego obsługę samodzielnie w programie Visual Studio 2015 Update 1 lub nowszym, tworząc model pakietu deautomatyzujgo dla gramatyki i fragmentów języka.
 
- Dodaj wszystkie nowe Gramatyk TextMate dla programu Visual Studio w następującym folderze:
+ Dodaj nowe gramatyki deautomatyzuje dla programu Visual Studio w następującym folderze:
 
- % userprofile %\\. vs\Extensions
+ % USERPROFILE% \\. vs\Extensions
 
- W ramach tej ścieżki podstawowej należy dodać następujące foldery, jeśli mają one zastosowanie do konkretnej sytuacji:
+ W tej ścieżce podstawowej Dodaj następujące foldery, jeśli są one stosowane do danej sytuacji:
 
 |Nazwa folderu|Opis|
 |-----------------|-----------------|
-|\\ *\<Nazwa języka >*|Folder języka. Zastąp  *\<Nazwa języka >* nazwą języka. Na przykład **\Matlab**.|
-|\Syntaxes|Folder gramatyki. Zawiera pliki .json gramatyki języka, takich jak **Matlab.json**.|
+|\\ *nazwę \<language >*|Folder języka. Zastąp *\<language nazwę >* nazwą języka. Na przykład **\Matlab**.|
+|\Syntaxes|Folder gramatyki. Zawiera pliki gramatyce. JSON dla języka, takie jak **MATLAB. JSON**.|
 |\Snippets|Folder fragmentów kodu. Zawiera fragmenty kodu dla języka.|
 
- W Windows, % userprofile % jest rozpoznawana jako ścieżka: c:\Users\\ *\<nazwa użytkownika >* . Jeśli folder rozszerzenia nie istnieje w systemie, należy go utworzyć. Jeśli folder już istnieje, zostanie on ukryty.
+ W systemie Windows% USERPROFILE% jest rozpoznawana jako ścieżka: c:\Users \\ *\<user > nazwy*. Jeśli folder rozszerzeń nie istnieje w systemie, należy go utworzyć. Jeśli folder już istnieje, zostanie on ukryty.
 
- Aby uzyskać szczegółowe informacje o sposobie tworzenia gramatyki TextMate, zobacz [TextMate — wprowadzenie do gramatyki języka: Jak dodawać, wyróżnianie składni kodu źródłowego osadzonych w kodzie HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) i [informacje na temat tworzenia gramatyki języka i motywu niestandardowego dla pakietu Textmate](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle).
+ Aby uzyskać szczegółowe informacje na temat tworzenia gramatyki Details, zobacz Details [— wprowadzenie do gramatyki języka: jak dodać wyróżnioną składnię kodu źródłowego osadzoną w kodzie HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) i [uwagi na temat tworzenia gramatyki języka i niestandardowego motywu dla pakietu](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle)deautomatyzacji.
 
 ## <a name="see-also"></a>Zobacz też
- [Visual Studio 2013, przejdź do ulepszenia](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/) [instruktażu: Creating a Code Snippet](../ide/walkthrough-creating-a-code-snippet.md) [instruktażu: wyświetlanie uzupełniania składni](../extensibility/walkthrough-displaying-statement-completion.md)
+ [Visual Studio 2013 przechodzenie do ulepszeń](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/) [Instruktaż: Tworzenie](../ide/walkthrough-creating-a-code-snippet.md) [przewodnika po fragmencie kodu: wyświetlanie uzupełniania instrukcji](../extensibility/walkthrough-displaying-statement-completion.md)

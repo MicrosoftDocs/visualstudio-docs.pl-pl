@@ -1,5 +1,5 @@
 ---
-title: Operatory logiczne w wyrażeniach wyszukiwania | Dokumentacja firmy Microsoft
+title: Operatory logiczne w wyrażeniach wyszukiwania | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -9,31 +9,30 @@ helpviewer_keywords:
 - logical operators in search [Help Viewer 2.0]
 ms.assetid: 0c38ae7d-3e20-4d47-a020-9677cd285916
 caps.latest.revision: 11
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 30a33a434540fded8daab0628d0bd6dd7fb0ff38
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3d56f2dfc2924008a6be293fe1498f0ffe32abaf
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412265"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651440"
 ---
 # <a name="logical-operators-in-search-expressions"></a>Operatory logiczne w wyrażeniach wyszukiwania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Za pomocą operatorów logicznych, można uściślić wyszukiwanie zawartości, tworząc bardziej złożonych wyszukiwania z tymi prostsze. Jak pokazano w poniższej tabeli, operatory logiczne Określanie wielu warunków wyszukiwania powinny być one łączone w zapytaniu wyszukiwania.  
-  
+Za pomocą operatorów logicznych można uściślić Wyszukiwanie zawartości, tworząc bardziej skomplikowane wyrażenia wyszukiwania z prostszych. Jak pokazano w poniższej tabeli, operatory logiczne określają, jak wiele terminów wyszukiwania ma być połączonych w zapytaniu wyszukiwania.
+
 > [!IMPORTANT]
-> Operatory logiczne należy wprowadzić wielkimi literami dla aparatu wyszukiwania, rozpoznawał.  
-  
-|Aby wyszukać|Zastosowanie|Przykład|Wynik|  
-|-------------------|---------|-------------|------------|  
-|Oba warianty pojęć w ten sam temat|AND|dib i palety|Tematy, które zawierają "dib" i "palety".|  
-|Albo termin w temacie|LUB|rastrowych wektor OR|Tematy, które zawierają "rastrowych" lub "vector".|  
-|Pierwszy okres bez drugi warunek w ten sam temat|NIE|"system operacyjny" nie DOS|Tematy, które zawierają "system operacyjny", ale nie "DOS".|  
-|Oba warianty pojęć blisko siebie w temacie|W POBLIŻU|użytkownik w pobliżu jądra|Tematy zawierające "user" w pobliżu "jądra".|  
-  
-## <a name="see-also"></a>Zobacz też  
- [Porady dotyczące wyszukiwania pełnotekstowego](../ide/full-text-search-tips.md)   
- [Znajdowanie informacji](../ide/locate-information.md)
+> Należy wprowadzić operatory logiczne we wszystkich wielkich literach, aby aparat wyszukiwania mógł je rozpoznać.
+
+|Aby wyszukać|Zastosowanie|Przykład|Wynik|
+|-------------------|---------|-------------|------------|
+|Oba warunki w tym samym temacie|AND|DIB i paleta|Tematy zawierające obie wersje "DIB" i "paleta".|
+|Dowolny termin w temacie|LUB|Raster lub Vector|Tematy zawierające "rastrowe" lub "Vector".|
+|Pierwszy termin bez drugiego terminu w tym samym temacie|NIEMOŻLIWE|"system operacyjny" nie jest DOS|Tematy zawierające "system operacyjny", ale nie "DOS".|
+|Oba terminy, blisko siebie w temacie|POBLIŻU|Użytkownik blisko jądra|Tematy zawierające "użytkownika" w bliskim sąsiedztwie "jądra".|
+
+## <a name="see-also"></a>Zobacz też
+ [Porady dotyczące wyszukiwania pełnotekstowego](../ide/full-text-search-tips.md) [lokalizowanie informacji](../ide/locate-information.md)

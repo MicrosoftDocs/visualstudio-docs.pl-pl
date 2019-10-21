@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Debug.ListRegisters command
 - ListRegisters command
 ms.assetid: 19a9d789-f6c9-46b3-b1f6-4934fc33e055
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95edb5098d73e8fccb47f9f059473394afe5f542
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: b8a5ad6c57ed25d251ff7ce0e51093f5b542ed54
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919109"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72610501"
 ---
 # <a name="list-registers-command"></a>Lista rejestrów — Polecenie
 Wyświetla wartość wybranych rejestrów i pozwala modyfikować listę rejestrów do wyświetlenia.
@@ -33,13 +33,13 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 ```
 
 ## <a name="switches"></a>Przełączniki
-/Display [{`register`&#124;`registerGroup`}...]
+/Display [{`register`&#124; `registerGroup`}...]
 
-Wyświetla wartości określonego `register` lub `registerGroup`. Jeśli nie `register` `registerGroup` jest określona, zostanie wyświetlona domyślna lista rejestrów. Jeśli nie określono przełącznika, zachowanie jest takie samo. Przykład:
+Wyświetla wartości określonego `register` lub `registerGroup`. Jeśli nie określono `register` lub `registerGroup`, zostanie wyświetlona domyślna lista rejestrów. Jeśli nie określono przełącznika, zachowanie jest takie samo. Na przykład:
 
 `Debug.ListRegisters /Display eax`
 
-odpowiada wyrażeniu
+jest równoważny
 
 `Debug.ListRegisters eax`
 
@@ -47,19 +47,19 @@ odpowiada wyrażeniu
 
 Wyświetla wszystkie grupy rejestrów na liście.
 
-/Watch [{`register`&#124;`registerGroup`}...]
+/Watch [{`register`&#124; `registerGroup`}...]
 
-Dodaje co najmniej jedną `register` `registerGroup` wartość do listy.
+Dodaje do listy co najmniej jedną wartość `register` lub `registerGroup`.
 
-/Unwatch [{`register`&#124;`registerGroup`}...]
+/Unwatch [{`register`&#124; `registerGroup`}...]
 
-Usuwa co najmniej jedną `register` `registerGroup` z wartości z listy.
+Usuwa co najmniej jedną `register` lub `registerGroup` wartości z listy.
 
 ## <a name="remarks"></a>Uwagi
-Alias `r` może być używany `Debug.ListRegisters`zamiast.
+Alias `r` może być używany zamiast `Debug.ListRegisters`.
 
 ## <a name="example"></a>Przykład
-Ten przykład używa `Debug.ListRegisters` aliasu `r` , aby wyświetlić wartości grupy `Flags`rejestru.
+Ten przykład używa `r` aliasu `Debug.ListRegisters`, aby wyświetlić wartości `Flags` grupy rejestru.
 
 ```cmd
 r /Display Flags
@@ -68,5 +68,5 @@ r /Display Flags
 ## <a name="see-also"></a>Zobacz też
 
 - [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
-- [Podstawy debugowania: Okno rejestrów](../../debugger/debugging-basics-registers-window.md)
-- [Instrukcje: Korzystanie z okna rejestrów](../../debugger/how-to-use-the-registers-window.md)
+- [Podstawy debugowania: okno rejestrów](../../debugger/debugging-basics-registers-window.md)
+- [Instrukcje: korzystanie z okna rejestrów](../../debugger/how-to-use-the-registers-window.md)

@@ -1,5 +1,5 @@
 ---
-title: 'CA1505: Unikaj kodu trudnego w utrzymaniu | Dokumentacja firmy Microsoft'
+title: 'CA1505: Unikaj niemożliwego do utrzymania kodu | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,39 +12,39 @@ helpviewer_keywords:
 - CA1505
 ms.assetid: 8292b268-5929-4221-b699-f9c414bcec5d
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: d9d5dc976c27ca2459fa64b95fe0502579a500b8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 87aacfd675181e35d289b2a054c58f83f3f790fa
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68191212"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72607585"
 ---
-# <a name="ca1505-avoid-unmaintainable-code"></a>CA1505: Unikaj kodu trudnego w utrzymaniu
+# <a name="ca1505-avoid-unmaintainable-code"></a>CA1505: Unikaj kodu niemożliwego w utrzymaniu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|AvoidUnmantainableCode|
 |CheckId|CA1505|
-|Kategoria|Microsoft.Maintainability|
-|Zmiana kluczowa|Bez podziału|
+|Kategoria|Microsoft. łatwość obsługi|
+|Zmiana kluczowa|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
  Typ lub metoda ma niską wartość indeksu konserwacji.
 
 ## <a name="rule-description"></a>Opis reguły
- Indeks łatwości utrzymania jest obliczana przy użyciu następujących metryk: wiersze kodu, program woluminu i złożoność cykliczną. Program wolumin jest miarą trudności wiedzę na temat typu lub metody, która opiera się na liczbie operatorów i argumentów operacji w kodzie. Złożoność Cyklomatyczna jest miarą strukturalnych złożoność tego typu lub metody. Dowiedz się więcej na temat metryk kodu [mierzenie złożoności i łatwości konserwacji zarządzanego kodu](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md).
+ Indeks utrzymania jest obliczany przy użyciu następujących metryk: wierszy kodu, woluminu programowego i złożoności cyklomatyczna. Wolumin programu to miara trudności w zrozumieniu typu lub metody, która jest oparta na liczbie operatorów i operandów w kodzie. Złożoność cyklomatyczna jest miarą złożoności strukturalnej typu lub metody. Możesz dowiedzieć się więcej o metrykach kodu podczas [mierzenia złożoności i utrzymania kodu zarządzanego](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md).
 
- Niski indeks konserwacji wskazuje, że typ lub metoda są prawdopodobnie trudne do utrzymania i jest dobrym kandydatem do przeprojektowania.
+ Niski indeks utrzymania wskazuje, że typ lub metoda prawdopodobnie trudno jest zachować i będzie to dobry kandydat do przeprojektowania.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby rozwiązać problem to naruszenie, zmodyfikowanie typu lub metody i spróbuj podzielić ją na mniejsze i bardziej ukierunkowaną typów ani metod.
+ Aby rozwiązać ten problem, Zaprojektuj typ lub metodę, a następnie spróbuj podzielić go na mniejsze i bardziej ukierunkowane typy lub metody.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Wyklucz to ostrzeżenie, gdy typ lub metoda jest nadal uważana za łatwego w utrzymaniu, niezależnie od jego duży rozmiar lub typie lub metodzie nie można podzielić.
+ Wyklucz to ostrzeżenie, gdy typ lub metoda nadal są uznawane za utrzymane pomimo jego dużego rozmiaru lub kiedy nie można podzielić typu lub metody.
 
 ## <a name="see-also"></a>Zobacz też
- [Ostrzeżenia dotyczące utrzymania](../code-quality/maintainability-warnings.md) [mierzenie złożoności i łatwości konserwacji zarządzanego kodu](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
+ [Ostrzeżenia dotyczące utrzymania](../code-quality/maintainability-warnings.md) [mierzące złożoność i łatwość utrzymania kodu zarządzanego](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

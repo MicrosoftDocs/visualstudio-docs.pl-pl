@@ -1,23 +1,23 @@
 ---
-title: 'Przykładowy plik XSD: Schemat zamówienia zakupu'
+title: 'Przykładowy plik XSD: schemat zamówienia zakupu'
 ms.date: 11/04/2016
 ms.topic: sample
 ms.assetid: f92b63b5-ec61-43b5-ae1e-63432a7a7e30
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bea23307c5d35e997f41e4ec9cbfd41fa41bdee
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 9a81cae6bc91e480fb619afd647e8285b6efc410
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65455113"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72601812"
 ---
-# <a name="sample-xsd-file-purchase-order-schema"></a>Przykładowy plik XSD: Schemat zamówienia zakupu
+# <a name="sample-xsd-file-purchase-order-schema"></a>Przykładowy plik XSD: schemat zamówienia zakupu
 
-Następujący plik XSD jest używany w różne przykłady w dokumentacji projektanta schematu XSD. Ten plik jest schemat zamówienia zakupu.
+Następujący plik XSD jest używany w różnych przykładach w dokumentacji projektanta schematu XSD. Ten plik jest schematem zamówienia zakupu.
 
 ```xml
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
@@ -88,4 +88,4 @@ Następujący plik XSD jest używany w różne przykłady w dokumentacji projekt
 ```
 
 > [!NOTE]
-> Przykładowe firmy, organizacje, produkty, nazwy domen, adresy e-mail, logo, osoby, miejsca i zdarzenia wymienione w niniejszym dokumencie są fikcyjne. Wszelkie rzeczywistą firmą, organizacji, produktu, nazwy domeny, adres e-mail, logo, osoby, miejsca lub zdarzeń jest przeznaczone i powinno być wnioskowane.
+> Przykładowe firmy, organizacje, produkty, nazwy domen, adresy e-mail, logo, osoby, miejsca i zdarzenia wymienione w tym dokumencie są fikcyjne. Żadne powiązania z rzeczywistymi firmami, organizacjami, produktami, nazwami domen, adresami e-mail, logo, osobami, miejscami lub zdarzeniami nie są zamierzone ani wywnioskowane.

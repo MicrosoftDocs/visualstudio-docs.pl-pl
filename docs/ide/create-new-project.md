@@ -6,98 +6,98 @@ f1_keywords:
 - vs.newproject
 helpviewer_keywords:
 - projects [Visual Studio], creating
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f5d48ee97e1e0d92237fe5836c8bd9c1888c3a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a35302e8f749563ab173e7be15e944f8462fdb18
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818922"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652651"
 ---
-# <a name="create-a-new-project-in-visual-studio"></a>Utwórz nowy projekt w programie Visual Studio
+# <a name="create-a-new-project-in-visual-studio"></a>Tworzenie nowego projektu w programie Visual Studio
 
 ::: moniker range="vs-2017"
 
 ## <a name="open-the-new-project-dialog"></a>Otwórz okno dialogowe Nowy projekt
 
-Istnieje wiele sposobów, aby utworzyć nowy projekt w programie Visual Studio 2017. Na stronie początkowej można wpisać nazwę szablonu projektu w **Wyszukaj szablony projektów** pole, lub wybierz **Tworzenie nowego projektu** link umożliwiający otworzenie **nowy projekt** okna dialogowego pole. Oprócz strony początkowej można również **pliku** > **New** > **projektu** na pasku menu lub kliknij **nowy projekt**  przycisk na pasku narzędzi.
+Istnieje wiele sposobów tworzenia nowego projektu w programie Visual Studio 2017. Na stronie startowej można wpisać nazwę szablonu projektu w polu **Wyszukaj szablony projektu** lub wybrać łącze **Utwórz nowy projekt** , aby otworzyć okno dialogowe **Nowy projekt** . Poza stroną początkową można również wybrać pozycję **plik**  > **Nowy**  > **projekt** na pasku menu lub kliknąć przycisk **Nowy projekt** na pasku narzędzi.
 
-![Strona startowa i plik > Nowy > Projekt](./media/vside-newproject1.png)
+![Strona początkowa i plik > nowego projektu >](./media/vside-newproject1.png)
 
 ## <a name="select-a-template-type"></a>Wybierz typ szablonu
 
-W **nowy projekt** okno dialogowe dostępnych szablonów projektu są wyświetlane na liście w obszarze **szablony** kategorii. Szablony są uporządkowane według programowania języka i projektu typu, na przykład Visual C#, JavaScript i Azure Data Lake.
+W oknie dialogowym **Nowy projekt** dostępne szablony projektu są wyświetlane na liście w kategorii **Szablony** . Szablony są zorganizowane według języka programowania i typu projektu, takich jak wizualizacja C#, JavaScript i Azure Data Lake.
 
-![Okno dialogowe Nowy projekt](./media/vside-newproject-templates-list.png)
+![Nowy projekt — okno dialogowe](./media/vside-newproject-templates-list.png)
 
 > [!NOTE]
-> Wyświetlonej listy dostępnych języków i szablonów projektu zależy od wersji programu Visual Studio, które są uruchomione i obciążeń, które są zainstalowane. Aby dowiedzieć się więcej o sposobie instalowania dodatkowych obciążeń, zobacz [modyfikowanie programu Visual Studio, dodając lub usuwając obciążenia i składniki](../install/modify-visual-studio.md).
+> Wyświetlana lista dostępnych języków i szablonów projektu zależy od używanej wersji programu Visual Studio i zainstalowanych obciążeń. Aby dowiedzieć się więcej o instalowaniu dodatkowych obciążeń, zobacz [modyfikowanie programu Visual Studio przez dodawanie lub usuwanie obciążeń i składników](../install/modify-visual-studio.md).
 
-Pokaż listę szablonów dla języka programowania, którego chcesz użyć, klikając przycisk trójkąta obok nazwy języka, a następnie wybierając kategorię projektu (np. Windows dla komputerów stacjonarnych).
+Aby wyświetlić listę szablonów dla języka programowania, którego chcesz użyć, kliknij trójkąt obok nazwy języka, a następnie wybierz kategorię projektu (na przykład Windows Desktop).
 
-Na poniższej ilustracji przedstawiono dostępne szablony projektów dla wizualizacji C# projektów .NET Core:
+Na poniższej ilustracji przedstawiono szablony projektów dostępne dla projektów programu C# Visual .NET Core:
 
 ![Szablony projektów](./media/new-project-dialog-net-core.png)
 
 ## <a name="configure-your-project"></a>Konfigurowanie projektu
 
-Wprowadź nazwę dla nowego projektu w **nazwa** pole. Projekt można zapisać w lokalizacji domyślnej na komputerze lub kliknij **Przeglądaj** przycisk, aby znaleźć w innej lokalizacji. Można również wybrać Nazwa rozwiązania lub dodać nowy projekt do repozytorium Git (wybierając **Dodaj do kontroli źródła**).
+Wprowadź nazwę nowego projektu w polu **Nazwa** . Projekt można zapisać w domyślnej lokalizacji na komputerze lub kliknąć przycisk **Przeglądaj** , aby znaleźć inną lokalizację. Możesz również wybrać nazwę rozwiązania lub dodać nowy projekt do repozytorium git (wybierając pozycję **Dodaj do kontroli źródła**).
 
-Kliknij przycisk **OK** do tworzenia rozwiązań i projektów.
+Kliknij przycisk **OK** , aby utworzyć rozwiązanie i projekt.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-## <a name="open-the-create-a-new-project-page"></a>Tworzenie nowej stronie projektu otwórz
+## <a name="open-the-create-a-new-project-page"></a>Otwórz stronę Tworzenie nowego projektu
 
-Istnieje wiele sposobów, aby utworzyć nowy projekt w programie Visual Studio 2019 r. Po pierwszym otwarciu programu Visual Studio, zostanie wyświetlone okno uruchamiania i z tego miejsca możesz wybrać **Utwórz nowy projekt**.
+Istnieje wiele sposobów tworzenia nowego projektu w programie Visual Studio 2019. Po pierwszym otwarciu programu Visual Studio zostanie wyświetlone okno uruchamiania, a następnie można wybrać opcję **Utwórz nowy projekt**.
 
-![Utwórz nowy projekt z okna start 2019 programu VS](media/vs-2019/start-window-create-new-project.png)
+![Utwórz nowy projekt z okna uruchamiania w programie VS 2019](media/vs-2019/start-window-create-new-project.png)
 
-Jeśli w środowisku programowania Visual Studio jest już otwarty, można utworzyć nowy projekt, wybierając **pliku** > **New** > **projektu** na menu, pasek lub przez kliknięcie przycisku **nowy projekt** przycisk na pasku narzędzi.
+Jeśli środowisko programistyczne programu Visual Studio jest już otwarte, możesz utworzyć nowy projekt, wybierając pozycję **plik** > **Nowy** > **projekt** na pasku menu lub klikając przycisk **Nowy projekt** na pasku narzędzi.
 
-![Przycisk Nowy projekt w programie Visual Studio 2019 r.](media/vs-2019/new-project-button.png)
+![Przycisk Nowy projekt w programie Visual Studio 2019](media/vs-2019/new-project-button.png)
 
 ## <a name="select-a-template-type"></a>Wybierz typ szablonu
 
-Na **Utwórz nowy projekt** stronie zostanie wyświetlona lista ostatnio wybranych szablonów po lewej stronie. Szablony są sortowane według *ostatnio używanych*.
+Na stronie **Tworzenie nowego projektu** zostanie wyświetlona lista ostatnio wybranych szablonów wyświetlana po lewej stronie. Szablony są sortowane według *ostatnio używanych*.
 
-Jeśli nie jest to zaznaczenie z ostatnio używanych szablonów, można filtrować wszystkich dostępnych szablonów projektów przez **języka** (na przykład C# lub C++), **platformy** (na przykład Windows lub platformy Azure), i **Typ projektu** (na przykład pulpitu lub w sieci Web). Możesz też wprowadzić wyszukiwany tekst w polu wyszukiwania, aby dokładniej przefiltrować szablonów, na przykład **asp.net**.
+Jeśli nie chcesz wybierać z ostatnio używanych szablonów, możesz filtrować wszystkie dostępne szablony projektu według **języka** (na C# przykład C++lub), **platformy** (na przykład Windows lub Azure) i **typu projektu** (na przykład Desktop lub Web). Możesz również wprowadzić tekst wyszukiwania w polu wyszukiwania, aby dodatkowo filtrować szablony, na przykład **ASP.NET**.
 
-![Filtry szablonu projektu w programie Visual Studio 2019 r.](media/vs-2019/create-new-project-filters.png)
+![Filtry szablonów projektu w programie Visual Studio 2019](media/vs-2019/create-new-project-filters.png)
 
-Tagi, które są wyświetlane w każdym szablonie odpowiadają trzy filtry listy rozwijanej (typ języka, platformy i projektu).
+Znaczniki, które są wyświetlane pod każdym szablonem, odpowiadają trzem filtrom listy rozwijanej (język, platforma i typ projektu).
 
 > [!TIP]
-> Jeśli nie widzisz szablonu, którego szukasz, może brakować obciążenia dla programu Visual Studio. Do zainstalowania dodatkowych obciążeń, na przykład **programowanie na platformie Azure** lub **programowanie aplikacji mobilnych przy użyciu platformy .NET**, kliknij przycisk **zainstalować więcej narzędzi i funkcji** link umożliwiający otworzenie Visual Instalator programu Studio. Z tego miejsca wybierz obciążeń, o których chcesz zainstalować, a następnie wybierz **Modyfikuj**. Po tym szablony projektu dodatkowe będą dostępne do wyboru.
+> Jeśli nie widzisz szablonu, którego szukasz, może brakować obciążenia dla programu Visual Studio. Aby zainstalować dodatkowe obciążenia, na przykład Programowanie na **platformie Azure** lub **opracowywanie aplikacji mobilnych przy użyciu platformy .NET**, kliknij link **Zainstaluj więcej narzędzi i funkcji** , aby otworzyć Instalator programu Visual Studio. W tym miejscu wybierz obciążenia, które chcesz zainstalować, a następnie wybierz polecenie **Modyfikuj**. Po wykonaniu tych dodatkowych szablonów projektu będą dostępne do wyboru.
 >
-> ![Zainstaluj link więcej narzędzi i funkcji w 2019 programu VS](media/vs-2019/install-more-tools-features.png)
+> ![Zainstaluj więcej narzędzi i funkcji link w programie VS 2019](media/vs-2019/install-more-tools-features.png)
 
 Wybierz szablon, a następnie kliknij przycisk **dalej**.
 
 ## <a name="configure-your-project"></a>Konfigurowanie projektu
 
-**Konfigurowania nowego projektu** strona zawiera opcje, aby nazwa projektu (i rozwiązania), wybierz lokalizację dysku, a następnie wybierz wersję Framework (jeśli ma zastosowanie do szablonu wybrano).
+Na stronie **Konfiguruj nowy projekt** są dostępne opcje nazwy projektu (i rozwiązania), wybierz lokalizację dysku i wybierz wersję platformy (jeśli dotyczy wybranego szablonu).
 
-![Konfigurowanie nowej stronie projektu w VS 2019 r](media/vs-2019/configure-new-project.png)
+![Skonfiguruj nową stronę projektu w programie VS 2019](media/vs-2019/configure-new-project.png)
 
 > [!NOTE]
-> Jeśli tworzysz nowy projekt, gdy już masz projekt lub rozwiązanie, które są otwarte w programie Visual Studio, powoduje udostępnienie opcji dodatkowej konfiguracji. Można utworzyć nowe rozwiązanie lub dodać nowy projekt do rozwiązania, które jest już otwarty.
+> Jeśli tworzysz nowy projekt, gdy masz już otwarty projekt lub rozwiązanie w programie Visual Studio, dostępna jest opcja dodatkowa konfiguracja. Możesz utworzyć nowe rozwiązanie lub dodać nowy projekt do rozwiązania, które jest już otwarte.
 >
-> ![Utwórz nowe rozwiązanie lub dodać do istniejącego rozwiązania w 2019 programu VS](media/vs-2019/configure-new-project-solution.png)
+> ![Utwórz nowe rozwiązanie lub Dodaj je do istniejącego rozwiązania w programie VS 2019](media/vs-2019/configure-new-project-solution.png)
 
-Kliknij przycisk **Utwórz** Aby utworzyć nowy projekt.
+Kliknij przycisk **Utwórz** , aby utworzyć nowy projekt.
 
 ::: moniker-end
 
-## <a name="add-additional-projects-to-a-solution"></a>Dodaj dodatkowe projekty do rozwiązania
+## <a name="add-additional-projects-to-a-solution"></a>Dodawanie kolejnych projektów do rozwiązania
 
-Jeśli chcesz dodać dodatkowe projekt do rozwiązania, kliknij prawym przyciskiem myszy węzeł rozwiązania w **Eksploratora rozwiązań** i wybierz polecenie **Dodaj** > **nowy projekt**.
+Jeśli chcesz dodać dodatkowy projekt do rozwiązania, kliknij prawym przyciskiem myszy węzeł rozwiązanie w **Eksplorator rozwiązań** i wybierz polecenie **Dodaj**  > **Nowy projekt**.
 
 ## <a name="see-also"></a>Zobacz także
 

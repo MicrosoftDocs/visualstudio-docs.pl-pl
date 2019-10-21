@@ -1,5 +1,5 @@
 ---
-title: 'CA1504: Przejrzyj mylące nazwy pól | Dokumentacja firmy Microsoft'
+title: 'CA1504: Przejrzyj mylące nazwy pól | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,34 +12,34 @@ helpviewer_keywords:
 - ReviewMisleadingFieldNames
 ms.assetid: 94136ff1-4aaf-4dc2-9170-48c171ab7499
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 2203e99974e5f232e8c90badef7c28921b971cdb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c3f1cca5dd33047a4d19c78013dd535e0e9dd6f2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68191197"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72607752"
 ---
-# <a name="ca1504-review-misleading-field-names"></a>CA1504: Sprawdź pod kątem mylących nazw pól
+# <a name="ca1504-review-misleading-field-names"></a>CA1504: Przegląd mylących nazw pól
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|ReviewMisleadingFieldNames|
 |CheckId|CA1504|
-|Kategoria|Microsoft.Maintainability|
-|Zmiana kluczowa|Bez podziału|
+|Kategoria|Microsoft. łatwość obsługi|
+|Zmiana kluczowa|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
- Nazwa pola wystąpienia zaczyna się od "s_" lub nazwa `static` (`Shared` w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) pola rozpoczyna się od "m_".
+ Nazwa pola wystąpienia rozpoczyna się od "s_" lub nazwy `static` (`Shared` w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) rozpoczyna się od "m_".
 
 ## <a name="rule-description"></a>Opis reguły
- Nazwy pól, rozpoczynających się od "s_" są skojarzone z danymi statycznymi przez wielu użytkowników. Podobnie pola, których nazwy rozpoczynają "m_" są skojarzone z dane wystąpienia (członek). Kod, aby łatwiej utrzymać nazwy powinien być zgodny z powszechnie używanych Konwencji.
+ Nazwy pól, które zaczynają się od "s_", są skojarzone z danymi statycznymi przez wielu użytkowników. Podobnie nazwy pól, które zaczynają się od "m_", są skojarzone z danymi wystąpienia (elementu członkowskiego). Aby łatwiej utrzymywać kod, nazwy powinny być zgodne z ogólnie używanymi konwencjami.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, należy zmienić nazwę pola używając odpowiedniego prefiksu. Alternatywnie, Przekształć pole zgadza się z bieżącym sufiks, dodając lub usuwając `static` modyfikator.
+ Aby naprawić naruszenie tej zasady, Zmień nazwę pola przy użyciu odpowiedniego prefiksu. Alternatywnie, należy wyrazić zgodę na bieżący sufiks poprzez dodanie lub usunięcie modyfikatora `static`.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Nie pomijaj ostrzeżeń dla tej reguły.

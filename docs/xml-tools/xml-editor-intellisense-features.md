@@ -1,132 +1,132 @@
 ---
-title: Edytor XML funkcje IntelliSense
+title: Funkcje IntelliSense edytora XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2b26f214-cc3a-46bf-b260-14eb8e599182
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 312c304855a450a648b000b8306b80ade969c785
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5a44af076e8663e525e33727a24aa93f9391f4b5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62807985"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72603961"
 ---
 # <a name="xml-editor-intellisense-features"></a>Funkcje IntelliSense w edytorze XML
 
-Edytor XML udostępnia pełne funkcje IntelliSense porównywalne do innych edytorów języka podany w programie Visual Studio. W tej sekcji opisano, jak za pomocą funkcji IntelliSense języka definicji schematu XML (XSD) i dokumentów XSLT.
+Edytor XML zapewnia pełne funkcje IntelliSense porównywalne do innych edytorów języka dostępnych w programie Visual Studio. W tej sekcji wyjaśniono, jak można używać technologii IntelliSense z dokumentami XML i XSLT (Schema Definition Language).
 
-## <a name="intellisense-in-an-xsd-document"></a>Funkcja IntelliSense w dokumencie XSD
+## <a name="intellisense-in-an-xsd-document"></a>Technologia IntelliSense w dokumencie XSD
 
-Po schemat jest powiązany z dokumentem, masz dostęp do listy rozwijanej listy elementów oczekiwanego dowolnej chwili możesz wpisać `"<"` lub kliknij przycisk **wyświetlania listy członków obiektu** na listwie narzędziowej edytora XML.
+Po skojarzeniu schematu z Twoim dokumentem otrzymujesz listę rozwijaną oczekiwanych elementów przy każdym wpisaniu `"<"` lub kliknij przycisk **Wyświetl listę elementów członkowskich obiektu** na pasku narzędzi edytora XML.
 
-![Wyświetlanie obiektu elementu członkowskiego listy przycisku](media/display-object-member-list-xml.png)
+![Przycisk wyświetlania listy elementów członkowskich obiektów](media/display-object-member-list-xml.png)
 
-Aby uzyskać informacje o sposobach kojarzenia schematów z dokumentami XML, zobacz [Walidacja dokumentów XML](../xml-tools/xml-document-validation.md).
+Aby uzyskać informacje na temat kojarzenia schematów z dokumentami XML, zobacz [Walidacja dokumentu XML](../xml-tools/xml-document-validation.md).
 
-Podczas wpisywania tekstu ilość miejsca od wewnątrz tagu początkowego, możesz także uzyskać listy rozwijanej, przedstawiający wszystkie atrybuty, które mogą być dodawane do bieżącego elementu.
+Gdy wpiszesz miejsce z wewnątrz tagu początkowego, uzyskasz także listę rozwijaną zawierającą wszystkie atrybuty, które można dodać do bieżącego elementu.
 
-Podczas wpisywania `"="` dla wartości atrybutu lub cudzysłów otwierający dla wartości, możesz również uzyskać listę możliwych wartości dla tego atrybutu. Wartości są podane tylko, jeśli schemat zawiera wyliczany wartości zwrotne za pośrednictwem `xsd:enumeration` aspektami, czy dany atrybut znajduje się `Boolean` typu. Lista IntelliSense kodów znanych języków znajduje się również do `xml:lang` lub dowolnego `simpleType` który pochodzi od klasy `xsd:language`. Funkcja IntelliSense listę znanych `targetNamespace` wartości towarzyszy deklaracje przestrzeni nazw.
+Po wpisaniu `"="` dla wartości atrybutu lub cudzysłowu otwierającego dla wartości można również uzyskać listę możliwych wartości dla tego atrybutu. Wartości są dostępne tylko wtedy, gdy schemat zawiera wartości wyliczane za pośrednictwem `xsd:enumeration` aspektów lub jeśli atrybut jest typem `Boolean`. Dostępna jest również lista funkcji IntelliSense znanych kodów języka dla `xml:lang` lub wszelkich `simpleType`, które pochodzą z `xsd:language`. Lista funkcji IntelliSense znanych `targetNamespace` wartości jest udostępniana dla deklaracji przestrzeni nazw.
 
-Technologia IntelliSense listę możliwych wartości jest również udostępniany, gdy wpiszesz `">"` zamknięcie tagu początkowego, jeśli element jest `simpleType`. Zachowanie elementów jest podobne do zachowania w przypadku atrybutów, które opisano w poprzednim akapicie.
+Lista funkcji IntelliSense możliwych wartości jest również podana podczas wpisywania `">"`, aby zamknąć tag początkowy, jeśli element jest `simpleType`. Zachowanie dla elementów jest podobne do zachowania dla atrybutów opisanych w poprzednim akapicie.
 
-Etykietki narzędzi są również wyświetlane na listach tych technologii IntelliSense, na podstawie `xsd:annotation` i `xsd:documentation` informacje znaleźć skojarzonego schematu.
+Etykietki narzędzi są również wyświetlane na tych listach IntelliSense na podstawie `xsd:annotation` i `xsd:documentation` informacji znajdujących się w skojarzonym schemacie.
 
-## <a name="intellisense-in-an-xslt-document"></a>Funkcja IntelliSense w dokumencie XSLT
+## <a name="intellisense-in-an-xslt-document"></a>Technologia IntelliSense w dokumencie XSLT
 
-Po dodaniu szablonie o podanej nazwie lub atrybutu w dokumencie XSLT, można użyć funkcji IntelliSense do wstawienia następujące czynności:
+Po dodaniu nazwanego szablonu lub atrybutu do dokumentu XSLT możesz użyć funkcji IntelliSense, aby wstawić następujące elementy:
 
-- Ustawić atrybutu nazwy.
+- Nazwy zestawów atrybutów.
 
-- Tryby szablonu.
+- Tryby szablonów.
 
-- Nazwy szablonu.
+- Nazwy szablonów.
 
-- Nazwy parametrów w danym trybie.
+- Nazwy parametrów dla danego trybu.
 
-- Nazwy parametru dla danego szablonie o podanej nazwie.
+- Nazwy parametrów dla danego szablonu o podanej nazwie.
 
-Aby uzyskać więcej informacji, zobacz [instruktażu: Używanie XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md) tematu.
+Aby uzyskać więcej informacji, zobacz [Przewodnik: korzystanie z funkcji INTELLISENSE XSLT](../xml-tools/walkthrough-using-xslt-intellisense.md) .
 
-## <a name="auto-completion"></a>Automatyczne uzupełnianie
+## <a name="auto-completion"></a>Autouzupełnianie
 
-Edytor XML sprawia, że łatwiej XML do edycji, wypełniając wymaganej składni XML dla Ciebie. Jeśli na przykład wpisz następujący tag początkowy:
+Edytor XML ułatwia również edytowanie kodu XML przez wypełnienie wymaganej składni XML. Na przykład, jeśli wpiszesz następujący tag początkowy:
 
 `<book>`
 
-Edytor XML wypełnia tagu końcowego i umieszcza kursor po tagu początkowego. Oto przykład ("&#124;" Uwagi dotyczące pozycja kursora):
+Edytor XML wypełnia tag końcowy i umieszcza kursor po tagu początkowym. Poniżej znajduje się przykład ("&#124;" uwagi dotyczące położenia kursora):
 
 `<book>`&#124;`</book>`
 
-Ponieważ wartości atrybutów musi zawsze mieć cudzysłowów, to edytor XML wypełnia cudzysłowów. Na przykład, wpisz następujące polecenie:
+Ponieważ wartości atrybutów muszą zawsze mieć cudzysłowy, Edytor XML wypełnia cudzysłowy. Na przykład, jeśli wpiszesz następujące polecenie:
 
 `<book title=`
 
-Edytor XML dodaje cudzysłowu i umieszcza kursor w cudzysłowie:
+Edytor XML dodaje cudzysłowy i położenie kursora między cudzysłowami:
 
 `<book title="`&#124;`"`
 
-Podobnie w edytorze XML również wstawia następującą składnię XML automatycznie dla Ciebie:
+Podobnie Edytor XML automatycznie wstawia również następującą składnię XML:
 
-- Zakończenie instrukcji przetwarzania:  `?>`
+- Zakończ instrukcję przetwarzania: `?>`
 
-- Koniec bloku CDATA: `]]>`
+- Zakończ blok CDATA: `]]>`
 
-- Zakończenie komentarz: `-->`
+- Zakończ Dodawanie komentarza: `-->`
 
-- Zakończenie deklaracja DTD: `>`
+- Zakończenie deklaracji DTD: `>`
 
-Edytor XML ma również możliwość wstawiania przestrzeń nazw deklaracji, jeśli zostanie wybrany element kwalifikowaną przestrzeń nazw lub atrybutu z listy technologii IntelliSense i przestrzeń nazw dla tego elementu lub atrybutu nie jest jeszcze w zakresie.
+Edytor XML ma także możliwość wstawiania deklaracji przestrzeni nazw w przypadku wybrania z listy funkcji IntelliSense elementu lub atrybutu z przestrzeni nazw, a przestrzeń nazw dla tego elementu lub atrybutu nie należy jeszcze do zakresu.
 
-Na przykład w przypadku wybrania `e:Book` elementu z listy technologii IntelliSense, w którym powiązany jest prefiks `http://books` przestrzeni nazw, która nie została zadeklarowana w dokumencie, w edytorze XML wstawia deklaracja wymaganej przestrzeni nazw. Wynikowy tekstu XML jest następująca:
+Jeśli na przykład wybierzesz element `e:Book` z listy IntelliSense, w której prefiks jest powiązany z przestrzenią nazw `http://books`, która nie została zadeklarowana w dokumencie, Edytor XML wstawia wymaganą deklarację przestrzeni nazw. Poniżej znajduje się otrzymany tekst XML:
 
 `<e:Book xmlns:e="http://books"`
 
-## <a name="brace-matching"></a>Parowanie nawiasów klamrowych
+## <a name="brace-matching"></a>Dopasowywanie nawiasów klamrowych
 
-Edytor XML zawiera nawias klamrowy wyróżnianie umożliwiają natychmiastowe informacje zwrotne na elementy, które zostały zamknięte. Można również użyć skrótu klawiaturowego (**Ctrl**+**]**) aby przejść z jednego nawias klamrowy do pasującego nawiasu klamrowego.
+Edytor XML zawiera wyróżnione nawiasy klamrowe w celu uzyskania natychmiastowej opinii na temat elementów, które właśnie zostały zamknięte. Możesz również użyć skrótu klawiaturowego (**Ctrl** + **]** ), aby przeskoczyć z jednego nawiasu klamrowego do pasującego nawiasu klamrowego.
 
-Edytor XML ma następujące efekty dla następujących elementów:
+Edytor XML wykonuje tę czynności dla następujących elementów:
 
-- Dopasowywanie tagiem początkowym i końcowym.
+- Dopasowanie tagów początkowych i końcowych.
 
-- Jakaś para "\<" lub ">" nawiasy.
+- Dowolna para nawiasów ostrych "\<" lub ">".
 
 - Początek i koniec komentarzy.
 
 - Początek i koniec instrukcji przetwarzania.
 
-- Początek i koniec bloki CDATA.
+- Początek i koniec bloków CDATA.
 
-- Początek i koniec DTD deklaracji.
+- Początek i koniec deklaracji DTD.
 
-- Otwieranie i zamykanie cudzysłowy atrybutów.
+- Otwieranie i zamykanie cudzysłowu dla atrybutów.
 
 ## <a name="modify-the-intellisense-options"></a>Modyfikowanie opcji IntelliSense
 
-Funkcje IntelliSense i automatycznego uzupełniania są domyślnie włączone. Jednak to zmienić, modyfikując swoje **narzędzia** > **opcje** ustawienia.
+Funkcje IntelliSense i automatycznego uzupełniania są domyślnie włączone. Można to jednak zmienić, modyfikując **narzędzia**  >  ustawienia**opcji** .
 
-**Automatyczne wstawianie** części **różne** kontrolki strony następujące zachowanie:
+Sekcja **autoinsert** na stronie **różnej** kontroluje następujące zachowanie:
 
 |Nazwa|Opis|
 |-|-----------------|
-|Zamknij tagów|Wstawia Zamknij tagów dla nowych elementów.|
-|Cudzysłowy atrybutu|Wstawia cudzysłowy wartości atrybutów, gdy wprowadzasz nazwę nowego atrybutu.|
-|Innych znaczników|Kończy komentarze, CDATA, elementu DOCTYPE, instrukcje przetwarzania i innych deklaracji znaczników.|
+|Zamknij Tagi|Wstawia tagi zamykające dla nowych elementów.|
+|Cudzysłowy atrybutów|Wstawia cudzysłowy wartości atrybutów po wprowadzeniu nowej nazwy atrybutu.|
+|Inne znaczniki|Uzupełnia komentarze, CDATA, DOCTYPE, instrukcje przetwarzania i inne deklaracje znaczników.|
 
-### <a name="to-change-the-auto-completion-behavior"></a>Aby zmienić zachowanie automatyczne uzupełnianie
+### <a name="to-change-the-auto-completion-behavior"></a>Aby zmienić zachowanie automatycznego uzupełniania
 
-1. Wybierz **opcje** z **narzędzia** menu.
+1. Wybierz **Opcje** z menu **Narzędzia** .
 
-2. Rozwiń **edytora tekstów**, rozwiń węzeł **XML**i wybierz **różne**.
+2. Rozwiń węzeł **Edytor tekstu**, rozwiń pozycję **XML**i wybierz pozycję **różne**.
 
-3. Wprowadzaj żadnych zmian w **automatyczne wstawianie** sekcji, a następnie kliknij przycisk **OK**.
+3. Wprowadź zmiany w sekcji **autoinsert** i kliknij przycisk **OK**.
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Edytor XML](../xml-tools/xml-editor.md)
 - [Korzystanie z funkcji IntelliSense](../ide/using-intellisense.md)
-- [Przewodnik: Używanie funkcji IntelliSense XSLT](../xml-tools/walkthrough-using-xslt-intellisense.md)
+- [Przewodnik: Używanie XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md)

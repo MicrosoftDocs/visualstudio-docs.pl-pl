@@ -1,5 +1,5 @@
 ---
-title: 'CA1415: Poprawnie Zadeklaruj P-Invoke | Dokumentacja firmy Microsoft'
+title: 'CA1415: Zadeklaruj poprawne wywołanie P- Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,40 +12,40 @@ helpviewer_keywords:
 - DeclarePInvokesCorrectly
 ms.assetid: 42a90796-0264-4460-bf97-2fb4a093dfdc
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 57482b720b1a7801fc75e06a5eb5d05d3b1a1417
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 922cd713867e1e1017a0f13490a08c0950b2afbf
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65691846"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652674"
 ---
-# <a name="ca1415-declare-pinvokes-correctly"></a>CA1415: Poprawnie zadeklaruj elementy P/Invoke
+# <a name="ca1415-declare-pinvokes-correctly"></a>CA1415: Należy poprawnie zadeklarować P/Invokes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|DeclarePInvokesCorrectly|
 |CheckId|CA1415|
-|Kategoria|Microsoft.Interoperability|
-|Zmiana kluczowa|Bez podziału — Jeśli P/Invoke, która deklaruje parametru nie są widoczne poza zestawem. Przerywanie — Jeśli P/Invoke, która deklaruje parametr są widoczne poza zestawem.|
+|Kategoria|Microsoft. współdziałanie|
+|Zmiana kluczowa|Bez przerywania — jeśli P/Invoke, które deklaruje parametr, nie mogą być widoczne poza zestawem. Przerywanie — jeśli P/Invoke, które deklaruje parametr, można zobaczyć poza zestawem.|
 
 ## <a name="cause"></a>Przyczyna
- Metoda wywołania platformy nieprawidłowo zadeklarowano.
+ Metoda wywołania platformy jest nieprawidłowo zadeklarowana.
 
 ## <a name="rule-description"></a>Opis reguły
- Platforma wywołania metody uzyskuje dostęp do niezarządzanego kodu i jest definiowana za pomocą `Declare` — słowo kluczowe w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] lub <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. Obecnie ta reguła będzie wyglądać dla deklaracji metod, których platformą docelową funkcji Win32, które mają wskaźnikiem do parametru struktury OVERLAPPED wywołania platformy, a odpowiadający parametr zarządzalny nie jest wskaźnikiem do <xref:System.Threading.NativeOverlapped?displayProperty=fullName> struktury.
+ Metoda Invoke platformy uzyskuje dostęp do kodu niezarządzanego i jest definiowana za pomocą słowa kluczowego `Declare` w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] lub <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. Obecnie ta reguła szuka deklaracji metody wywołania platformy, które są ukierunkowane na funkcje Win32, które mają wskaźnik na NAKŁADAjący się parametr struktury i odpowiadający mu parametr zarządzany nie jest wskaźnikiem do struktury <xref:System.Threading.NativeOverlapped?displayProperty=fullName>.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, należy poprawnie zadeklarować platformy wywołania metody.
+ Aby naprawić naruszenie tej zasady, należy prawidłowo zadeklarować metodę wywołania platformy.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Nie pomijaj ostrzeżeń dla tej reguły.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie pokazano wywołanie platformy metody, które naruszają reguły i spełniać reguły.
+ Poniższy przykład pokazuje metody wywołania platformy, które naruszają regułę i spełniają regułę.
 
  [!code-csharp[FxCop.Interoperability.DeclarePInvokes#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Interoperability.DeclarePInvokes/cs/FxCop.Interoperability.DeclarePInvokes.cs#1)]
 

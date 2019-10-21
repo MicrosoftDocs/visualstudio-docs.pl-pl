@@ -1,5 +1,5 @@
 ---
-title: 'CA1048: Nie deklaruj wirtualnych składowych w typach zapieczętowanych | Dokumentacja firmy Microsoft'
+title: 'CA1048: Nie deklaruj wirtualnych składowych w typach zapieczętowanych | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,39 +12,39 @@ helpviewer_keywords:
 - CA1048
 ms.assetid: 5dcf4a30-6f98-48a8-b8cc-7b89ea757262
 caps.latest.revision: 15
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 36ee787ca9762766f8c563ab4b5081ee47355a56
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9f843efe0aa17b6e87fdb047e1f98a3715ae11af
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62535365"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72603326"
 ---
-# <a name="ca1048-do-not-declare-virtual-members-in-sealed-types"></a>CA1048: Nie deklaruj wirtualnych składowych w typach zapieczętowanych
+# <a name="ca1048-do-not-declare-virtual-members-in-sealed-types"></a>CA1048: Nie deklaruj wirtualnych elementów członkowskich w typach zapieczętowanych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|DoNotDeclareVirtualMembersInSealedTypes|
 |CheckId|CA1048|
-|Kategoria|Microsoft.Design|
+|Kategoria|Microsoft. Design|
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Typ publiczny jest zapieczętowany i deklaruje metodę, która jest zarówno `virtual` (`Overridable` w języku Visual Basic) i nie jest final. Ta zasada nie raportuje naruszenia typami delegatów, które muszą korzystać z tego wzoru.
+ Typ publiczny jest zapieczętowany i deklaruje metodę, która jest zarówno `virtual` (`Overridable` w Visual Basic), a nie końcową. Ta reguła nie zgłasza naruszeń dla typów delegatów, które muszą być zgodne z tym wzorcem.
 
 ## <a name="rule-description"></a>Opis reguły
- Metody wirtualne są zadeklarowane w typach tak, aby typy dziedziczące mogły zmieniać implementację metod wirtualnych. Zgodnie z definicją nie może dziedziczyć od typu zapieczętowanego podjęcia metoda wirtualna w typie zapieczętowanym ta nie ma znaczenia.
+ Metody wirtualne są zadeklarowane w typach tak, aby typy dziedziczące mogły zmieniać implementację metod wirtualnych. Według definicji nie można dziedziczyć z typu zapieczętowanego, co oznacza, że metoda wirtualna w typie zapieczętowanym nie ma znaczenia.
 
- Kompilatory języków Visual Basic .NET i języka C# nie zezwalają na typy narusza tę regułę.
+ Visual Basic .NET i C# kompilatory nie zezwalają, aby typy naruszają tę regułę.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, wprowadzić metody na niewirtualną lub zmień typ dziedziczone.
+ Aby naprawić naruszenie tej reguły, ustaw metodę jako niewirtualną lub Zmień typ na dziedziczony.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Nie pomijaj ostrzeżeń dla tej reguły. Pozostawienie typ w jego bieżącym stanie może spowodować problemy z konserwacji i nie zapewnia żadnych korzyści.
+ Nie pomijaj ostrzeżeń dla tej reguły. Pozostawienie tego typu w bieżącym stanie może spowodować problemy z konserwacją i nie zapewnia żadnych korzyści.
 
 ## <a name="example"></a>Przykład
  Poniższy przykład pokazuje typ, który narusza tę regułę.

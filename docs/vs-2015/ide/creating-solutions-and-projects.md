@@ -1,5 +1,5 @@
 ---
-title: Tworzenie rozwiązań i projektów | Dokumentacja firmy Microsoft
+title: Tworzenie rozwiązań i projektów | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -15,84 +15,83 @@ helpviewer_keywords:
 - projects [Visual Studio], creating
 ms.assetid: 836f8ca0-3fc9-4f4b-9090-45f2e4d2e9c8
 caps.latest.revision: 49
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 91b8edcd371a5623d09334948e1db2889f60ae11
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 47083fe3f496cb855a7fb7101a886290e53cfbce
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65701147"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72619132"
 ---
 # <a name="creating-solutions-and-projects"></a>Tworzenie rozwiązań i projektów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Projekty są kontenery logiczne dla wszystko, co jest potrzebne do budowania aplikacji. Po utworzeniu projektu, wybierając **pliku &#124; New &#124; projektu** z menu głównego [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] tworzy rozwiązanie dla niej. Następnie można dodać więcej nowych lub istniejących projektów w rozwiązaniu, jeśli to konieczne. Możesz tworzyć projekty z istniejących plików kodu i utworzeniem projektów tymczasowych (tylko platforma .NET), zostaną usunięte po wykonaniu tych czynności z nimi.  
-  
+Projekty to logiczne kontenery dla wszystkich elementów, które są potrzebne do skompilowania aplikacji. Podczas tworzenia projektu, wybierając pozycję  **&#124; plik nowy &#124; projekt** z menu głównego, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] tworzy rozwiązanie, które je zawiera. W razie potrzeby możesz dodać nowe lub istniejące projekty do rozwiązania. Można tworzyć projekty z istniejących plików kodu, a także tworzyć projekty tymczasowe (tylko platforma .NET), które zostaną usunięte po wykonaniu tych czynności.
+
 > [!NOTE]
-> Opisy w tym temacie są oparte na wersji programu Visual Studio Community. Polecenia menu i okien dialogowych mogą różnić się od tych opisanych w tym miejscu, w zależności od ustawień lub wersji programu Visual Studio. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
-  
-## <a name="create-a-project-from-an-installed-project-template"></a>Tworzenie projektu z szablonem projektu zainstalowane  
- **Plik &#124; New &#124; projektu** z menu głównego, aby wyświetlić okno dialogowe Nowy projekt. W okienku po lewej stronie w obszarze **Intalled &#124; szablony** Wybrany język programowania i platform lub technologii, a następnie wybierz spośród dostępnych szablonów w środkowym okienku.  
-  
- W **nowy projekt** okno dialogowe, **rozwiązania** listy rozwijanej zapewnia możliwość tworzenia nowego projektu w nowym lub istniejącym rozwiązaniu lub w nowym wystąpieniu programu Visual Studio.  
-  
-## <a name="create-a-project-from-existing-code-files"></a>Tworzenie projektu z istniejących plików kodu  
- W przypadku kolekcji plików źródłowych nie będzie można łatwo utworzyć projekt, który je zawiera. Wybierz **pliku &#124; New &#124;projekt z istniejącego kodu** można uruchomić **Utwórz projekt z istniejących Kreatora plików kodu** i postępuj zgodnie z monitami.  
-  
+> Opisy w tym temacie są oparte na programie Visual Studio Community Edition. Okna dialogowe i polecenia menu mogą się różnić od opisanych tutaj, w zależności od ustawień lub wersji programu Visual Studio. Aby zmienić ustawienia, wybierz **Importuj i Eksportuj ustawienia** w menu **Narzędzia** . Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień deweloperskich w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+
+## <a name="create-a-project-from-an-installed-project-template"></a>Tworzenie projektu na podstawie zainstalowanego szablonu projektu
+ **Plik &#124; nowy &#124; projekt** z menu głównego, aby wyświetlić okno dialogowe Nowy projekt. W okienku po lewej stronie w obszarze  **&#124; szablony z niewyższym** wybieraniem języka programowania i platformy lub technologii, a następnie wybierz spośród dostępnych szablonów w środkowym okienku.
+
+ W oknie dialogowym **Nowy projekt** lista rozwijana **rozwiązanie** umożliwia utworzenie nowego projektu w nowym lub istniejącym rozwiązaniu lub w nowym wystąpieniu programu Visual Studio.
+
+## <a name="create-a-project-from-existing-code-files"></a>Tworzenie projektu na podstawie istniejących plików kodu
+ Jeśli masz kolekcję luźnych plików źródłowych, możesz łatwo utworzyć projekt, który go zawiera. Wybierz **pozycję &#124; plik &#124;nowy projekt z istniejącego kodu** , aby uruchomić **Kreatora tworzenia projektu z istniejących plików z kodem** i postępuj zgodnie z monitami.
+
 > [!TIP]
-> Ta opcja jest najlepsza dla stosunkowo prostych kolekcji plików.  
-  
-## <a name="create-a-temporary-project-c-and-visual-basic"></a>Utwórz projekt tymczasowy (C# i Visual Basic)  
- Praca z projektów tymczasowych, można tworzyć i eksperymentować z projektem .NET bez określania lokalizacji na dysku. Podczas tworzenia projektu są po prostu zaznacz typ projektu i szablon i podaj nazwę w **nowy projekt** okno dialogowe. W dowolnym momencie podczas pracy z projektem tymczasowej, można go zapisać lub odrzucić je.  
-  
-## <a name="create-a-net-project-that-targets-a-specific-version-of-the-net-framework"></a>Tworzenie projektu platformy .NET, który jest przeznaczony dla określonej wersji programu .NET Framework  
- Możesz utworzyć projekt pod kątem starszej wersji programu .NET Framework za pomocą **.NET Framework** wersji listy rozwijanej w górnej części **nowy projekt** okno dialogowe. Przed wybraniem szablon projektu, należy ustawić tę wartość, ponieważ tylko szablony zgodne z tej wersji programu .NET Framework będą wyświetlane na liście.  
-  
- Musisz mieć program .NET Framework 3.5 zainstalowany w systemie do uzyskania dostępu framework w wersji starszej niż 4.0.  
-  
-## <a name="downloading-sample-solutions"></a>Pobieranie przykładowe rozwiązania  
- Visual Studio można użyć do pobrania i zainstalowania rozwiązań próbki z [galerii kodu MSDN](http://go.microsoft.com/fwlink/?LinkId=254185).  
-  
- Przykłady można pobrać osobno lub możesz pobrać pakiet przykładowy, który zawiera powiązane próbki, które współużytkują technologię lub temat. Otrzymasz powiadomienie po zmianach kodu źródłowego są publikowane do przykładów, które można pobrać.  
-  
- Aby uzyskać więcej informacji, zobacz [Visual Studio Samples](../ide/visual-studio-samples.md).  
-  
-## <a name="adding-single-files-at-the-solution-level"></a>Dodawanie pojedynczych plików na poziomie rozwiązania  
- Czasami może być plikiem wiele projektów, odwołując się do lub zawierający tekst lub inne dane, które logicznie należą na poziomie rozwiązania, a nie w ramach określonego projektu.  Aby dodać pojedynczego elementu rozwiązania:  
-  
-1. Kliknij prawym przyciskiem myszy węzeł rozwiązania w **Eksploratora rozwiązań** i wybierz polecenie **Dodaj &#124; nowy element** lub **Dodaj &#124; istniejący element**.  
-  
-## <a name="creating-empty-solutions"></a>Tworzenie pustego rozwiązań  
- Chociaż projektu musi znajdować się w rozwiązaniu, można utworzyć rozwiązanie, które ma żadne projekty.  
-  
-#### <a name="to-create-an-empty-solution"></a>Aby utworzyć puste rozwiązanie  
-  
-1. Na **pliku** menu, kliknij przycisk **New** a następnie kliknij przycisk **nowy projekt**.  
-  
-2. W okienku po lewej stronie wybierz **zainstalowane**, wybierz opcję **inne typy projektów**, a następnie wybierz pozycję **Visual Studio Solutions** z rozwiniętej listy.  
-  
-3. W środkowym okienku wybierz **puste rozwiązanie**.  
-  
-4. Ustaw **nazwa** i **lokalizacji** wartości dla rozwiązania, następnie kliknij przycisk **OK**.  
-  
-   Po utworzeniu puste rozwiązanie, nowe lub istniejące projekty lub elementy można dodać do niego, klikając **Dodaj nowy element** lub **Dodaj istniejący element** na **projektu** menu.  
-  
-### <a name="deleting-solutions"></a>Usuwanie rozwiązania  
- Rozwiązanie można usunąć trwale, ale nie przy użyciu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Zanim usuniesz to rozwiązanie, Przenieś wszystkie projekty, które możesz chcieć użyć ponownie w innym rozwiązaniem. Następnie użyj Eksploratora plików, aby usunąć katalog zawierający pliki rozwiązania .sln i .suo.  
-  
+> Ta opcja działa najlepiej w przypadku stosunkowo prostych kolekcji plików.
+
+## <a name="create-a-temporary-project-c-and-visual-basic"></a>Tworzenie projektu tymczasowego (C# i Visual Basic)
+ Pracując z projektami tymczasowymi, można tworzyć i eksperymentować z projektem .NET bez określania lokalizacji dysku. Podczas tworzenia projektu, wystarczy wybrać typ projektu i szablon i określić nazwę w oknie dialogowym **Nowy projekt** . W dowolnym momencie podczas pracy z projektem tymczasowym można go zapisać lub można go odrzucić.
+
+## <a name="create-a-net-project-that-targets-a-specific-version-of-the-net-framework"></a>Utwórz projekt platformy .NET, który jest przeznaczony dla określonej wersji .NET Framework
+ Można utworzyć projekt, który ma być przeznaczony dla wcześniejszych wersji .NET Framework przy użyciu menu rozwijanego wersja **.NET Framework** w górnej części okna dialogowego **Nowy projekt** . Ustaw tę wartość przed wybraniem szablonu projektu, ponieważ na liście pojawią się tylko szablony zgodne z tą .NET Framework wersją.
+
+ Aby uzyskać dostęp do wersji Framework wcześniejszych niż 4,0, w systemie musi być zainstalowany .NET Framework 3,5.
+
+## <a name="downloading-sample-solutions"></a>Pobieranie przykładowych rozwiązań
+ Możesz użyć programu Visual Studio do pobrania i zainstalowania przykładowych rozwiązań z [galerii kodu MSDN](http://go.microsoft.com/fwlink/?LinkId=254185).
+
+ Możesz pobrać przykłady osobno lub pobrać pakiet przykładowy zawierający powiązane przykłady, które udostępniają technologię lub temat. Otrzymasz powiadomienie, gdy zostaną opublikowane zmiany kodu źródłowego dla pobranych próbek.
+
+ Aby uzyskać więcej informacji, zobacz [przykłady programu Visual Studio](../ide/visual-studio-samples.md).
+
+## <a name="adding-single-files-at-the-solution-level"></a>Dodawanie pojedynczych plików na poziomie rozwiązania
+ Czasami może istnieć plik, do którego odwołuje się wiele projektów, lub zawierający tekst lub różne dane, które logicznie należą do poziomu rozwiązania, a nie w określonym projekcie.  Aby dodać pojedynczy element do rozwiązania:
+
+1. Kliknij prawym przyciskiem myszy węzeł rozwiązanie w **Eksplorator rozwiązań** i wybierz **polecenie &#124; Dodaj nowy element** lub  **&#124; Dodaj istniejący element**.
+
+## <a name="creating-empty-solutions"></a>Tworzenie pustych rozwiązań
+ Mimo że projekt musi znajdować się w rozwiązaniu, można utworzyć rozwiązanie, które nie ma projektów.
+
+#### <a name="to-create-an-empty-solution"></a>Aby utworzyć puste rozwiązanie
+
+1. W menu **plik** kliknij pozycję **Nowy** , a następnie kliknij pozycję **Nowy projekt**.
+
+2. W lewym okienku wybierz pozycję **zainstalowane**, wybierz pozycję **Inne typy projektów**, a następnie wybierz pozycję **rozwiązania programu Visual Studio** z listy rozwijanej.
+
+3. W środkowym okienku wybierz pozycję **puste rozwiązanie**.
+
+4. Ustaw wartości w polu **Nazwa** i **Lokalizacja** dla rozwiązania, a następnie kliknij przycisk **OK**.
+
+   Po utworzeniu pustego rozwiązania można dodać do niego nowe lub istniejące projekty lub elementy, klikając pozycję **Dodaj nowy element** lub **Dodaj istniejący element** w menu **projekt** .
+
+### <a name="deleting-solutions"></a>Usuwanie rozwiązań
+ Rozwiązanie można trwale usunąć, ale nie za pomocą [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Przed usunięciem rozwiązania Przenieś wszystkie projekty, które mogą być używane ponownie w innym rozwiązaniu. Następnie użyj Eksploratora plików, aby usunąć katalog zawierający pliki rozwiązania. sln i. suo.
+
 > [!NOTE]
-> Plik .suo jest ukryty plik, który nie jest wyświetlany w obszarze domyślne ustawienia Eksploratora plików.  
-  
-##### <a name="to-delete-a-solution"></a>Aby usunąć rozwiązanie  
-  
-1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy rozwiązanie do usunięcia i wybierz **Otwórz folder w Eksploratorze plików**.  
-  
-2. W Eksploratorze plików Przejdź jeden poziom w górę.  
-  
-3. Wybierz katalog, zawierająca dane rozwiązanie, a następnie naciśnij klawisz Delete.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Rozwiązania i projekty](../ide/solutions-and-projects-in-visual-studio.md)   
- [NIB jak: Create Multi-Project Solutions](https://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)
+> Plik SUO to ukryty plik, który nie jest wyświetlany w obszarze domyślne ustawienia Eksploratora plików.
+
+##### <a name="to-delete-a-solution"></a>Aby usunąć rozwiązanie
+
+1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy rozwiązanie, które chcesz usunąć, a następnie wybierz polecenie **Otwórz folder w Eksploratorze plików**.
+
+2. W Eksploratorze plików przejdź do góry o jeden poziom.
+
+3. Wybierz katalog zawierający rozwiązanie i naciśnij klawisz Delete.
+
+## <a name="see-also"></a>Zobacz też
+ [Rozwiązania i projekty](../ide/solutions-and-projects-in-visual-studio.md) [NIB How to: Create-Project Solutions](https://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)

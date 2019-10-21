@@ -1,5 +1,5 @@
 ---
-title: 'CA1501: Unikaj nadmiernego dziedziczenia | Dokumentacja firmy Microsoft'
+title: 'CA1501: Unikaj nadmiernego dziedziczenia | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - CA1501
 ms.assetid: 9e934746-1a4d-492a-91e4-085201abafa4
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 420e9492fc5ab431710d62e1d8ea3c1bd8a31ce9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a2106042b552efbe824d7517abcc86e322b57aa9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68191477"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72607853"
 ---
 # <a name="ca1501-avoid-excessive-inheritance"></a>CA1501: Unikaj nadmiernego dziedziczenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,20 +29,20 @@ ms.locfileid: "68191477"
 |-|-|
 |TypeName|AvoidExcessiveInheritance|
 |CheckId|CA1501|
-|Kategoria|Microsoft.Maintainability|
+|Kategoria|Microsoft. łatwość obsługi|
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
  Typ jest głęboki na więcej niż cztery poziomy w hierarchii dziedziczenia.
 
 ## <a name="rule-description"></a>Opis reguły
- Hierarchie typów głęboko zagnieżdżonych mogą być trudne do śledzenia, zrozumienia i utrzymania. Ta zasada ogranicza analizy do hierarchii, w tym samym module.
+ Hierarchie typów głęboko zagnieżdżonych mogą być trudne do śledzenia, zrozumienia i utrzymania. Ta reguła ogranicza analizę do hierarchii w tym samym module.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, typ lub pochodzić od typu podstawowego, który jest mniej szczegółowa w hierarchii dziedziczenia eliminują część pośredniego typów podstawowych.
+ Aby naprawić naruszenie tej reguły, należy utworzyć typ z typu podstawowego, który jest mniej głębokie w hierarchii dziedziczenia, lub wyeliminować niektóre pośrednie typy podstawowe.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Jest bezpieczne pominąć ostrzeżenie od tej reguły. Jednak kod może być trudne do utrzymania. Należy pamiętać, że w zależności od widoczność typów podstawowych, rozpoznawanie naruszenie tej zasady może utworzyć przełomowe zmiany. Na przykład usunięcie publicznej typów podstawowych jest istotną zmianę.
+ Można bezpiecznie pominąć ostrzeżenie z tej reguły. Jednak kod może być trudniejszy do utrzymania. Należy pamiętać, że w zależności od widoczności typów podstawowych Rozwiązywanie naruszeń tej reguły może spowodować istotne zmiany. Na przykład usunięcie publicznych typów podstawowych jest istotną zmianą.
 
 ## <a name="example"></a>Przykład
  Poniższy przykład pokazuje typ, który narusza regułę.

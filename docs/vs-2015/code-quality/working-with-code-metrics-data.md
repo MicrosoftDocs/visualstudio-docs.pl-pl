@@ -1,5 +1,5 @@
 ---
-title: Praca z danymi metryk kodu | Dokumentacja firmy Microsoft
+title: Praca z danymi metryk kodu | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,140 +12,139 @@ helpviewer_keywords:
 - results window, code metrics
 ms.assetid: 988193ec-b4a3-4e11-b5a1-7334979807d5
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b53e6a5c7ce65675037aac8c6fc4812f895d3b7b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 3c2460b4e8b9e0b9043178989fcf8825815471be
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65703720"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645705"
 ---
 # <a name="working-with-code-metrics-data"></a>Praca z metrykami kodów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-**Wyników metryk kodów** okna wyświetla dane, który jest generowany podczas analizy metryki kodu. Aby uzyskać więcej informacji na temat wartości danych metryk kodu zobacz [wartości metryk kodów](../code-quality/code-metrics-values.md).  
-  
- Ten temat zawiera następujące sekcje:  
-  
-- [Okno wyników metryk kodów](../code-quality/working-with-code-metrics-data.md#BKMK_CodeMetricsResultsWindow)  
-  
-- [Wyświetlanie wyników metryk kodów](../code-quality/working-with-code-metrics-data.md#BKMK_DisplayingCodeMetricsResults)  
-  
-- [Filtrowanie wyników metryk kodów](../code-quality/working-with-code-metrics-data.md#BKMK_FilteringCodeMetricsResults)  
-  
-- [Dodawanie, usuwanie i zmienianie rozmieszczenia kolumn danych](../code-quality/working-with-code-metrics-data.md#BKMK_AddingRemovingandRearrangingDataColumns)  
-  
-- [Kopiowanie danych do Schowka lub programu Excel](../code-quality/working-with-code-metrics-data.md#BKMK_Copying_Data_to_the_Clipboard_or_Excel)  
-  
-- [Tworzenie elementu roboczego, w oparciu o wyniki metryk kodu](../code-quality/working-with-code-metrics-data.md#BKMK_Creating_a_Work_Item_Based_on_Code_Metric_Results)  
-  
-## <a name="BKMK_CodeMetricsResultsWindow"></a> Okno wyników metryk kodów  
- **Wyników metryk kodów** okno ma pasku narzędzi u góry i kolumn w celu wyświetlenia wyników obliczeń.  
-  
-|Kolumna|Opis|  
-|------------|-----------------|  
-|**Hierarchia**|**Hierarchii** kolumna zawiera hierarchię kodu, który można rozwinąć lub zwinąć było widać poziom szczegółowości, który ma w widoku drzewa. Pozostałe kolumny pokazują obliczone wyniki. Można ukryć lub zmienić kolejność kolumn wynik, jak chcesz.|  
-|**łatwość konserwacji**|**Łatwości utrzymania** kolumna zawiera ikonę, oprócz wyniku numerycznego. Zielona ikona wskazuje stosunkowo wysoki stopień łatwości utrzymania. Żółta ikona wskazuje umiarkowane stopień łatwości utrzymania. Czerwona ikona wskazuje, niski łatwość utrzymania, a punkt potencjalne problemy. Wskaźniki te kolor odpowiadać kategorii ważności, które są używane przez reguły programu FxCop AvoidUnmaintainableCode. Ta reguła jest uruchamiana błąd, jeśli indeks łatwości utrzymania jest mniejszy niż 10, ostrzeżenie, jeśli indeks jest między 10 i 20, a błąd ani ostrzeżenia, jeśli indeks jest większy niż 20. Indeks łatwości utrzymania jest syntezy trzy metryki: złożoność cyklomatyczna, wierszy kodu oraz złożoność obliczeniową. Wartości nie jest wyrażona w jednostkach.|  
-  
-## <a name="BKMK_DisplayingCodeMetricsResults"></a> Wyświetlanie wyników metryk kodów  
- Zostanie wyświetlone okno wyników metryk kodów automatycznie, gdy Generowanie wyników metryk kodów. Możesz również wyświetlić okna, w dowolnym momencie.  
-  
-#### <a name="to-display-the-code-metrics-results-window"></a>Aby wyświetlić okno wyników metryk kodów  
-  
-- Na **analizy** menu, kliknij przycisk **Windows** a następnie kliknij przycisk **wyników metryk kodów**.  
-  
-     \- lub —  
-  
-- Na **widoku** menu wskaż **Windows inne** a następnie kliknij przycisk **wyników metryk kodów**.  
-  
-     Zostanie wyświetlone okno wyników metryk kodów, nawet wtedy, gdy zawiera on żadnych wyników.  
-  
-#### <a name="to-view-code-metrics-details"></a>Aby wyświetlić szczegóły metryk kodu  
-  
-- Jeśli zostały wygenerowane wyników metryk kodów, rozwiń drzewo w **hierarchii** kolumny.  
-  
-## <a name="BKMK_FilteringCodeMetricsResults"></a> Filtrowanie wyników metryk kodów  
- Można filtrować wyniki, które są wyświetlane w **wyników metryk kodów** okna za pomocą paska narzędzi u góry. Na przykład możesz chcieć wyświetlić tylko wyniki, które mają indeks łatwości utrzymania poniżej 65.  
-  
- **Filtru** pole listy rozwijanej zawiera nazwy kolumn, wyniki. Po zdefiniowaniu filtru jest dodawany do dolnej części listy wraz z wcięciem. Lista może zawierać dziesięć ostatnich filtrów, które zostały zdefiniowane.  
-  
-#### <a name="to-filter-the-code-metrics-results"></a>Do filtrowania wyników metryk kodów  
-  
-1. Z **filtru** , wybierz nazwę kolumny na liście.  
-  
-2. W **Min**, wpisz wartość minimalna, który będzie wyświetlany.  
-  
-3. W **Max**, wpisz wartość maksymalna ma być wyświetlany.  
-  
-4. Kliknij przycisk **Zastosuj filtr** przycisku.  
-  
-5. Aby wyświetlić szczegóły wyniku, rozwiń drzewo hierarchii.  
-  
-## <a name="BKMK_AddingRemovingandRearrangingDataColumns"></a> Dodawanie, usuwanie i zmienianie rozmieszczenia kolumn danych  
- Można dodać lub usunąć wyniki kolumny z **wyników metryk kodów** okna. Ponadto, aby były wyświetlane w kolejności, w którym chcesz można zmienić kolejność kolumn wyników.  
-  
-#### <a name="to-remove-a-column"></a>Aby usunąć kolumnę  
-  
-1. Kliknij przycisk **Dodaj/Usuń kolumny** przycisku.  
-  
-     \- lub —  
-  
-     Kliknij prawym przyciskiem myszy nagłówek dowolnej kolumny, a następnie kliknij przycisk **Dodaj/Usuń kolumny**.  
-  
-2. W **Dodaj/Usuń kolumny** okno dialogowe, wyczyść pole wyboru dla kolumny, które chcesz usunąć, a następnie kliknij przycisk **OK**.  
-  
-#### <a name="to-add-a-previously-removed-column"></a>Aby dodać kolumnę wcześniej usuniętych  
-  
-1. Kliknij przycisk **Dodaj/Usuń kolumny** przycisku.  
-  
-     \- lub —  
-  
-     Kliknij prawym przyciskiem myszy nagłówek dowolnej kolumny, a następnie kliknij przycisk **Dodaj/Usuń kolumny**.  
-  
-2. W **Dodaj/Usuń kolumny** okna dialogowego pole, zaznacz pole wyboru dla kolumny, które chcesz dodać, a następnie kliknij przycisk **OK**.  
-  
-#### <a name="to-rearrange-columns"></a>Aby zmienić kolejność kolumn  
-  
-1. Kliknij przycisk **Dodaj/Usuń kolumny** przycisku.  
-  
-     \- lub —  
-  
-     Kliknij prawym przyciskiem myszy nagłówek dowolnej kolumny, a następnie kliknij przycisk **Dodaj/Usuń kolumny**.  
-  
-2. W **Dodaj/Usuń kolumny** okna dialogowego Wybierz kolumnę, którą chcesz przenieść, a następnie kliknij przycisk strzałki w górę lub strzałkę w dół.  
-  
-3. Jeśli kolumna zostanie umieszczona w miejscu, kliknij przycisk **OK**.  
-  
-## <a name="BKMK_Copying_Data_to_the_Clipboard_or_Excel"></a> Kopiowanie danych do Schowka lub programu Excel  
- Można wybrać i skopiować wybrany wiersz danych metryki kodu do Schowka jako ciąg tekstowy, który zawiera jeden wiersz dla nazwy i wartości wszystkich kolumn danych. Możesz również kliknąć **Otwórz listę w programie Microsoft Excel** Aby wyeksportować wszystkie wyniki metryki kodu do arkusza kalkulacyjnego programu Excel  
-  
-## <a name="BKMK_Creating_a_Work_Item_Based_on_Code_Metric_Results"></a> Tworzenie elementu roboczego, w oparciu o wyniki metryk kodu  
- Możesz utworzyć [!INCLUDE[esprfound](../includes/esprfound-md.md)] skutkuje elementu roboczego, który jest oparty na **wyniki metryki kodu** okna. Po utworzeniu elementu roboczego [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] automatycznie wstawia tytuł w **tytuł** dane metryk pola i kodu pod **historii** kartę.  
-  
- Aby uzyskać więcej informacji na temat tworzenia elementów roboczych, zobacz [Utwórz element roboczy &#91;przekierowanie&#93;](https://msdn.microsoft.com/24b2e064-16ac-4bf0-8de4-98a1f48b8c4b).  
-  
-#### <a name="to-create-a-work-item-based-on-a-result"></a>Aby utworzyć element roboczy na podstawie wyniku  
-  
-1. Kliknij prawym przyciskiem myszy wynik.  
-  
-2. Wskaż **Utwórz element pracy**, a następnie kliknij typ elementu roboczego, w której chcesz utworzyć (**usterki**, **zadań**, i tak dalej).  
-  
-3. Wykonaj formularz elementu roboczego, wypełniając we wszystkich wymaganych polach.  
-  
-4. Na **pliku** menu, kliknij przycisk **Zapisz wszystko** można zapisać elementu roboczego.  
-  
-#### <a name="to-create-a-bug-based-on-a-result"></a>Aby utworzyć usterkę, na podstawie wyniku  
-  
-1. Kliknij wynik, aby go zaznaczyć.  
-  
-2. Kliknij przycisk **Utwórz element roboczy** przycisku.  
-  
-3. Wykonaj formularz elementu roboczego, wypełniając we wszystkich wymaganych polach.  
-  
-4. Na **pliku** menu, kliknij przycisk **Zapisz wszystko** można zapisać elementu roboczego.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Mierzenie złożoności i łatwości konserwacji zarządzanego kodu](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)   
- [Instrukcje: Generowanie danych metryk kodu](../code-quality/how-to-generate-code-metrics-data.md)
+W oknie **wyniki metryk kodu** są wyświetlane dane, które są generowane przez analizę metryk kodu. Aby uzyskać więcej informacji na temat wartości danych metryk kodu, zobacz [wartości metryk kodu](../code-quality/code-metrics-values.md).
+
+ Ten temat zawiera następujące sekcje:
+
+- [Okno wyników metryk kodu](../code-quality/working-with-code-metrics-data.md#BKMK_CodeMetricsResultsWindow)
+
+- [Wyświetlanie wyników metryk kodu](../code-quality/working-with-code-metrics-data.md#BKMK_DisplayingCodeMetricsResults)
+
+- [Filtrowanie wyników metryk kodu](../code-quality/working-with-code-metrics-data.md#BKMK_FilteringCodeMetricsResults)
+
+- [Dodawanie, usuwanie i zmiana układu kolumn danych](../code-quality/working-with-code-metrics-data.md#BKMK_AddingRemovingandRearrangingDataColumns)
+
+- [Kopiowanie danych do Schowka lub programu Excel](../code-quality/working-with-code-metrics-data.md#BKMK_Copying_Data_to_the_Clipboard_or_Excel)
+
+- [Tworzenie elementu pracy na podstawie wyników metryki kodu](../code-quality/working-with-code-metrics-data.md#BKMK_Creating_a_Work_Item_Based_on_Code_Metric_Results)
+
+## <a name="BKMK_CodeMetricsResultsWindow"></a>Okno wyników metryk kodu
+ Okno **wyników metryk kodu** zawiera pasek narzędzi u góry i kolumny, aby wyświetlić obliczone wyniki.
+
+|Kolumna|Opis|
+|------------|-----------------|
+|**Hierarchiczn**|Kolumna **Hierarchia** zawiera widok drzewa hierarchii kodu, który można rozwinąć lub zwinąć, aby wyświetlić żądany poziom szczegółowości. W pozostałych kolumnach są wyświetlane obliczone wyniki. Można ukryć lub rozmieścić kolumny wynikowe.|
+|**Łatwość utrzymania**|Kolumna **łatwość utrzymania** zawiera ikonę oprócz wyniku liczbowego. Zielona ikona wskazuje stosunkowo wysoki stopień utrzymania. Żółta ikona wskazuje umiarkowany stopień utrzymania. Czerwona ikona wskazuje na małą łatwość utrzymania i potencjalne problemy. Te wskaźniki kolorów odpowiadają kategoriom ważności, które są używane przez regułę FxCop AvoidUnmaintainableCode. Ta zasada wyzwala błąd, jeśli indeks utrzymania jest mniejszy niż 10, ostrzeżenie, jeśli indeks jest z zakresu od 10 do 20, a nie błędu ani Ostrzeżenia, jeśli indeks jest większy niż 20. Indeks utrzymania jest syntezą trzech metryk: cyklomatyczna złożoności, wierszy kodu i złożoności obliczeniowej. Wartości nie są wyrażone w jednostkach.|
+
+## <a name="BKMK_DisplayingCodeMetricsResults"></a>Wyświetlanie wyników metryk kodu
+ Okno wyników metryki kodu jest wyświetlane automatycznie podczas generowania wyników metryki kodu. Okno można także wyświetlić w dowolnym momencie.
+
+#### <a name="to-display-the-code-metrics-results-window"></a>Aby wyświetlić okno wyników metryk kodu
+
+- W menu **Analizuj** kliknij pozycję **Windows** , a następnie kliknij pozycję **wyniki metryk kodu**.
+
+     \- lub-
+
+- W menu **Widok** wskaż **inne okna** , a następnie kliknij pozycję **wyniki metryki kodu**.
+
+     Okno wyników metryk kodu jest wyświetlane nawet wtedy, gdy nie zawiera żadnych wyników.
+
+#### <a name="to-view-code-metrics-details"></a>Aby wyświetlić szczegóły metryk kodu
+
+- Jeśli wyniki metryk kodu zostały wygenerowane, rozwiń drzewo w kolumnie **Hierarchia** .
+
+## <a name="BKMK_FilteringCodeMetricsResults"></a>Filtrowanie wyników metryk kodu
+ Wyniki, które są wyświetlane w oknie **wyników metryk kodu** , można filtrować przy użyciu paska narzędzi u góry. Na przykład możesz chcieć zobaczyć tylko wyniki mające indeks utrzymania poniżej 65.
+
+ Pole listy rozwijanej **Filtr** zawiera nazwy kolumn wyników. Gdy filtr jest zdefiniowany, jest dodawany do dolnej części listy wraz z wcięciem. Lista może zawierać maksymalnie dziesięć ostatnich filtrów, które zostały zdefiniowane.
+
+#### <a name="to-filter-the-code-metrics-results"></a>Aby filtrować wyniki metryk kodu
+
+1. Z listy **Filtr** wybierz nazwę kolumny.
+
+2. W polu **min**wpisz wartość minimalną, która ma zostać wyświetlona.
+
+3. W polu **maks**wpisz wartość maksymalną, która ma zostać wyświetlona.
+
+4. Kliknij przycisk **Zastosuj filtr** .
+
+5. Aby wyświetlić szczegóły wyniku, rozwiń drzewo hierarchii.
+
+## <a name="BKMK_AddingRemovingandRearrangingDataColumns"></a>Dodawanie, usuwanie i zmiana układu kolumn danych
+ Kolumny wyników można dodawać lub usuwać z okna **wyników metryk kodu** . Ponadto można zmienić rozmieszczenie kolumn wyników, aby były wyświetlane w pożądanej kolejności.
+
+#### <a name="to-remove-a-column"></a>Aby usunąć kolumnę
+
+1. Kliknij przycisk **Dodaj/Usuń kolumny** .
+
+     \- lub-
+
+     Kliknij prawym przyciskiem myszy nagłówek dowolnej kolumny, a następnie kliknij polecenie **Dodaj/Usuń kolumny**.
+
+2. W oknie dialogowym **Dodaj/Usuń kolumny** Usuń zaznaczenie pola wyboru dla kolumny, która ma zostać usunięta, a następnie kliknij przycisk **OK**.
+
+#### <a name="to-add-a-previously-removed-column"></a>Aby dodać wcześniej usuniętą kolumnę
+
+1. Kliknij przycisk **Dodaj/Usuń kolumny** .
+
+     \- lub-
+
+     Kliknij prawym przyciskiem myszy nagłówek dowolnej kolumny, a następnie kliknij polecenie **Dodaj/Usuń kolumny**.
+
+2. W oknie dialogowym **Dodawanie/usuwanie kolumn** zaznacz pole wyboru dla kolumny, która ma zostać dodana, a następnie kliknij przycisk **OK**.
+
+#### <a name="to-rearrange-columns"></a>Aby zmienić rozmieszczenie kolumn
+
+1. Kliknij przycisk **Dodaj/Usuń kolumny** .
+
+     \- lub-
+
+     Kliknij prawym przyciskiem myszy nagłówek dowolnej kolumny, a następnie kliknij polecenie **Dodaj/Usuń kolumny**.
+
+2. W oknie dialogowym **Dodawanie/usuwanie kolumn** wybierz kolumnę, którą chcesz przenieść, a następnie kliknij strzałkę w górę lub strzałkę w dół.
+
+3. Gdy kolumna zostanie umieszczona w żądanym miejscu, kliknij przycisk **OK**.
+
+## <a name="BKMK_Copying_Data_to_the_Clipboard_or_Excel"></a>Kopiowanie danych do Schowka lub programu Excel
+ Można wybrać i skopiować wybrany wiersz danych metryki kodu do Schowka jako ciąg tekstowy, który zawiera jeden wiersz dla nazwy i wartości każdej kolumny danych. Możesz również kliknąć pozycję **Otwórz listę w programie Microsoft Excel** , aby wyeksportować wszystkie wyniki metryk kodu do arkusza kalkulacyjnego programu Excel
+
+## <a name="BKMK_Creating_a_Work_Item_Based_on_Code_Metric_Results"></a>Tworzenie elementu pracy na podstawie wyników metryki kodu
+ Można utworzyć [!INCLUDE[esprfound](../includes/esprfound-md.md)] element roboczy, który jest oparty na wynikach w oknie **wyników metryki kodu** . Po utworzeniu elementu pracy [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] automatycznie wprowadza tytuł w polu **tytuł** i dane metryk kodu na karcie **historia** .
+
+ Aby uzyskać więcej informacji na temat tworzenia elementów roboczych, zobacz temat [Tworzenie &#91;przekierowanego&#93;elementu pracy](https://msdn.microsoft.com/24b2e064-16ac-4bf0-8de4-98a1f48b8c4b).
+
+#### <a name="to-create-a-work-item-based-on-a-result"></a>Aby utworzyć element roboczy na podstawie wyniku
+
+1. Kliknij prawym przyciskiem myszy wynik.
+
+2. Wskaż polecenie **Utwórz element roboczy**, a następnie kliknij typ elementu pracy, który chcesz utworzyć (**usterka**, **zadanie**itd.).
+
+3. Wypełnij formularz elementu pracy, wypełniając wszystkie wymagane pola.
+
+4. W menu **plik** kliknij polecenie **Zapisz wszystko** , aby zapisać element roboczy.
+
+#### <a name="to-create-a-bug-based-on-a-result"></a>Aby utworzyć usterkę na podstawie wyniku
+
+1. Kliknij wynik, aby go zaznaczyć.
+
+2. Kliknij przycisk **Utwórz element roboczy** .
+
+3. Wypełnij formularz elementu pracy, wypełniając wszystkie wymagane pola.
+
+4. W menu **plik** kliknij polecenie **Zapisz wszystko** , aby zapisać element roboczy.
+
+## <a name="see-also"></a>Zobacz też
+ [Mierzenie złożoności i łatwość utrzymania kodu zarządzanego](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md) [: generowanie danych metryk kodu](../code-quality/how-to-generate-code-metrics-data.md)

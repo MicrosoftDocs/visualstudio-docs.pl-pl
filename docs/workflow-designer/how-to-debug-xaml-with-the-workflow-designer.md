@@ -3,19 +3,19 @@ title: 'Projektant przepływu pracy: Debuguj kod XAML'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d9305dbc-af62-4bdd-b03f-c54e3fe9ecc7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: af5b7585ed5c0f34eeb44edba8c60ba0d5e14559
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 5a7b686db2f8c6818d7a76a5e5188715665b3a87
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254780"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650351"
 ---
-# <a name="how-to-debug-xaml-with-the-workflow-designer"></a>Instrukcje: Debugowanie kodu XAML za pomocą Projektanta przepływu pracy
+# <a name="how-to-debug-xaml-with-the-workflow-designer"></a>Instrukcje: Debugowanie kodu XAML przy użyciu Projektant przepływu pracy
 
 Przepływy pracy są zdefiniowane w postaci języka XAML. Reprezentacja interfejsu użytkownika jest tworzona na podstawie drzewa XAML definiującego przepływ pracy. Środowisko debugowania jest podobne do debugowania przepływów pracy w Projektant przepływu pracy. Na przykład podczas debugowania XAML, okna lokalne, czujka i wątki działają tak samo, jak w Projektant przepływu pracy debugowanie. Ponadto widok stosu wywołań podczas debugowania XAML to hierarchiczny widok przepływu wykonywania przepływu pracy w oparciu o wiersz.
 
@@ -26,7 +26,7 @@ Przepływy pracy są zdefiniowane w postaci języka XAML. Reprezentacja interfej
 
 1. Otwórz przepływ pracy lub projekt działania w programie Visual Studio.
 
-2. Ustaw punkt przerwania działania lub działań, które chcesz debugować zgodnie z opisem w [temacie How to: Ustawianie punktów przerwania w](../workflow-designer/how-to-set-breakpoints-in-workflows.md)przepływach pracy.
+2. Ustaw punkt przerwania działania lub działań, które chcesz debugować zgodnie z opisem w [instrukcje: ustawianie punktów przerwania w przepływach pracy](../workflow-designer/how-to-set-breakpoints-in-workflows.md).
 
 3. Kliknij prawym przyciskiem myszy plik XAML, który zawiera definicję przepływu pracy, a następnie wybierz polecenie **Wyświetl kod**. Punkt przerwania jest wyświetlany w tym samym wierszu co Deklaracja elementu XAML działania, dla którego ustawisz punkt przerwania w widoku projektu.
 

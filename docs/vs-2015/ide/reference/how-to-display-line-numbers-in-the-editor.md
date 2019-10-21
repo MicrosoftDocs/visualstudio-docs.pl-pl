@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Wyświetlanie numerów wierszy w edytorze | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: wyświetlanie numerów wierszy w edytorze | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -11,37 +11,35 @@ helpviewer_keywords:
 - code, line number displaying
 ms.assetid: 40b38559-b8de-4041-91f2-68986767c976
 caps.latest.revision: 23
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a2d6d3bd1d0a27a12194005422910236ea0fd02c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 0f093cf93c2f67c91fa9eee0085a566a15289684
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704410"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72602350"
 ---
-# <a name="how-to-display-line-numbers-in-the-editor"></a>Instrukcje: Wyświetl numery wierszy w edytorze
+# <a name="how-to-display-line-numbers-in-the-editor"></a>Porady: Wyświetlanie numerów wierszy w Edytorze
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Możesz wyświetlać lub ukrywać numerację wierszy w kodzie.  
-  
+Możesz wyświetlić lub ukryć numerowanie wierszy w kodzie.
+
 > [!NOTE]
-> W zależności od aktywnych ustawień okna dialogowe i polecenia menu, które pojawiają się mogą różnić się od tych, które są opisane poniżej. Aby zmienić swoje ustawienia, otwórz **narzędzia / Import i eksport ustawień**. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
-  
-## <a name="display-line-numbers-in-code"></a>Wyświetl numery wierszy w kodzie  
- Numery wierszy nie są dodawane do kodu; są one tylko dla odniesienia. Jeśli chcesz, aby numery wierszy były drukowane, w **drukowanie** okno dialogowe, wybierz opcję **dołączyć numery wierszy** pole wyboru.  
-  
-#### <a name="to-display-line-numbers-in-code"></a>Aby wyświetlić numery wierszy w kodzie  
-  
-1. Na pasku menu wybierz **narzędzia**, **opcje**. Rozwiń **edytora tekstów** węzeł, a następnie wybierz węzeł używanego języka, którego używasz, lub **wszystkie języki** Aby włączyć numery wierszy we wszystkich językach. Możesz też wpisać **numer wiersza** w **Szybkie uruchamianie** pole.  
-  
-2. ![Opcje wyświetlania numerów wierszy w edytorze](../../ide/reference/media/vs-displaylinenumbers.png "VS_DisplayLineNumbers")  
-  
+> W zależności od ustawień aktywnych okna dialogowe i polecenia menu mogą się różnić od tych, które są opisane w tym miejscu. Aby zmienić ustawienia, Otwórz okno **Narzędzia/Importuj i Eksportuj ustawienia**. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień deweloperskich w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+
+## <a name="display-line-numbers-in-code"></a>Wyświetl numery wierszy w kodzie
+ Numery wierszy nie są dodawane do kodu; są one przeznaczone tylko do celów informacyjnych. Jeśli chcesz wydrukować numery wierszy, w oknie dialogowym **Drukowanie** zaznacz pole wyboru **Dołącz numery wierszy** .
+
+#### <a name="to-display-line-numbers-in-code"></a>Aby wyświetlić numery wierszy w kodzie
+
+1. Na pasku menu wybierz **Narzędzia**, **Opcje**. Rozwiń węzeł **Edytor tekstu** , a następnie wybierz węzeł używanego języka lub **wszystkie języki** , aby włączyć numery wierszy we wszystkich językach. Lub wpisz **numer wiersza** w oknie **Szybkie uruchamianie** .
+
+2. ![Opcje wyświetlania numerów wierszy w edytorze](../../ide/reference/media/vs-displaylinenumbers.png "VS_DisplayLineNumbers")
+
 > [!NOTE]
-> W zależności od języka lub ustawień, może być konieczne wybranie **Pokaż wszystkie ustawienia** pole wyboru w **opcje** okno dialogowe, aby wyświetlić **wszystkie języki** węzła podrzędnego.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Dopasowywanie edytora](../../ide/customizing-the-editor.md)   
- [Okno dialogowe Opcje edytora tekstów](../../ide/reference/text-editor-options-dialog-box.md)   
- [Pisanie kodu](../../ide/writing-code-in-the-code-and-text-editor.md)
+> W zależności od języka lub ustawień może być konieczne zaznaczenie pola wyboru **Pokaż wszystkie ustawienia** w oknie dialogowym **Opcje** , aby odsłonić węzeł **wszystkie języki** .
+
+## <a name="see-also"></a>Zobacz też
+ [Dostosowywanie](../../ide/customizing-the-editor.md) okna [dialogowego Opcje edytora tekstu](../../ide/reference/text-editor-options-dialog-box.md) edytora [pisanie kodu](../../ide/writing-code-in-the-code-and-text-editor.md)

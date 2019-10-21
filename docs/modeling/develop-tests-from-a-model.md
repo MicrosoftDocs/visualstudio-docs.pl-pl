@@ -4,83 +4,83 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - tests and requirements
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d2fd53b3dc1237e9d31daf0e80fff3ddf5f1475
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: ccb6e8d938bbb807211d0d555294c94948705240
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821951"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653877"
 ---
 # <a name="develop-tests-from-a-model"></a>Opracowywanie testów na podstawie modelu
-Wymagania i modele architektury można użyć, aby ułatwić organizowanie testów systemu i jego składników. Praktyka ta pomaga zagwarantować, że testowania wymagań które są ważne dla użytkowników i innych zainteresowanych stron i pomaga szybko aktualizować testów, gdy zmienią się wymagania. Jeśli używasz [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], można także utrzymać łącza między modele i testy.
+Aby ułatwić organizowanie testów systemu i jego składników, można użyć wymagań i modeli architektonicznych. Dzięki temu można sprawdzić wymagania, które są ważne dla użytkowników i innych uczestników projektu, oraz ułatwić szybkie aktualizowanie testów w przypadku zmiany wymagań. Jeśli używasz [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], możesz również zachować linki między modelami i testami.
 
- Aby dowiedzieć się, które wersje programu Visual Studio obsługują tych funkcji, zobacz [obsługiwana wersja dla narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Aby sprawdzić, które wersje programu Visual Studio obsługują te funkcje, zobacz [Obsługa wersji dla narzędzi architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-## <a name="system-and-subsystem-testing"></a>System i testowanie podsystemu
- *Testy systemu,* znany także jako *testy odbiorcze*, oznacza, że sprawdzenie, czy spełnione są wymagania użytkowników. Testy te są zajmującym się ochroną widocznych zewnętrznych zachowań systemu, a nie wewnętrzną konstrukcją.
+## <a name="system-and-subsystem-testing"></a>Testowanie systemu i podsystemu
+ *Testowanie systemu,* znane także jako *testowanie akceptacji*, oznacza, że są spełnione potrzeby użytkowników. Takie testy są związane z zewnętrznym zachowaniem systemu, a nie projektem wewnętrznym.
 
- Testy systemu są bardzo przydatne, gdy rozszerzenie lub przeprojektowanie systemu. Ułatwiają one należy unikać wprowadzania błędów po zmianie kodu.
+ Testy systemowe są bardzo cenne podczas rozszerzania lub ponownego projektowania systemu. Pozwala to uniknąć wprowadzania usterek podczas zmiany kodu.
 
- Planując wszelkie zmiany lub rozszerzenie do systemu, warto zacząć od zestawu testów systemowych, korzystających z istniejącego systemu. Następnie można rozszerzyć lub dostosować testy, aby przetestować nowe wymagania, wprowadzić zmiany w kodzie i ponownie uruchom pełny zestaw testów.
+ Jeśli planujesz zmianę lub rozszerzenie systemu, warto zacząć od zestawu testów systemu, które są uruchamiane w istniejącym systemie. Następnie można zwiększyć lub dostosować testy, aby przetestować nowe wymagania, wprowadzić zmiany w kodzie i ponownie uruchomić kompletny zestaw testów.
 
- Podczas tworzenia nowego systemu można rozpocząć tworzenie testów, zaraz po rozpoczęciu programowania. Definiując testów przed opracowywanie każdej funkcji, można przechwycić dyskusje wymagania w bardzo określony sposób.
+ Podczas tworzenia nowego systemu możesz rozpocząć tworzenie testów zaraz po rozpoczęciu opracowywania. Definiując testy przed rozpoczęciem opracowywania każdej funkcji, można przechwycić dyskusje dotyczące wymagań w bardzo konkretny sposób.
 
- Testowanie podsystemu dotyczą te same zasady główne składniki systemu. Każdy składnik jest testowane oddzielnie od innych składników. Podsystem testy skoncentrować się na zachowanie widoczne na interfejsy użytkownika składnika lub interfejsu API.
+ Testowanie podsystemu stosuje te same zasady do głównych składników systemu. Każdy składnik jest testowany niezależnie od innych składników. W podsystemie testy są skoncentrowane na zachowaniu widocznym w interfejsach użytkownika lub interfejsie API składnika.
 
 ## <a name="deriving-system-tests-from-a-requirements-model"></a>Wyprowadzanie testów systemowych z modelu wymagań
- Można tworzyć i utrzymania relacji między testy systemu i modelu wymagań. Aby ustalić tę relację, piszesz testy, które odpowiadają głównych elementów modelu wymagań. Program Visual Studio pomaga zachować tej relacji przez umożliwienie tworzenia łącza między testy i części modelu. Aby uzyskać więcej informacji na temat modeli wymagania, zobacz [modelowanie wymagań użytkowników](../modeling/model-user-requirements.md).
+ Można tworzyć i obsługiwać relacje między testami systemowymi i modelem wymagań. Aby ustanowić tę relację, należy napisać testy, które odpowiadają głównym elementom modelu wymagań. Program Visual Studio pomaga zachować tę relację, umożliwiając tworzenie linków między testami i częściami modelu. Aby uzyskać więcej informacji na temat modeli wymagań, zobacz [wymagania dotyczące modelu użytkownika](../modeling/model-user-requirements.md).
 
-### <a name="write-tests-for-each-use-case"></a>Pisanie testów dla każdego przypadku użycia
- Jeśli używasz [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], można utworzyć grupę testów dla każdego przypadku użycia, zdefiniowanego w modelu wymagań. Na przykład jeśli przypadek użycia zamówienie posiłku, który zawiera, Utwórz zamówienie i Dodaj element do zamówienia, można utworzyć testy dla obu ogólnych i bardziej szczegółowe te przypadki użycia.
+### <a name="write-tests-for-each-use-case"></a>Testy zapisu dla każdego przypadku użycia
+ Jeśli używasz [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], możesz utworzyć grupę testów dla każdego przypadku użycia zdefiniowanego w modelu wymagań. Na przykład jeśli masz posiłek na przypadek użycia, który obejmuje tworzenie zamówienia i Dodawanie elementu do zamówienia, możesz utworzyć testy dla całości i bardziej szczegółowych informacji o tych przypadkach użycia.
 
- Te wytyczne mogą być pomocne:
+ Te wskazówki mogą być przydatne:
 
-- Każdy przypadek użycia powinna mieć kilka testów, dla ścieżki głównej i wyjątkowe wyniki.
+- Każdy przypadek użycia powinien mieć kilka testów, dla ścieżek głównych i wyjątkowe wyniki.
 
-- Opisywane przypadek użycia w modelu wymagań jest niezwykle ważne do definiowania jego postcondition, oznacza to, że cel zostanie osiągnięty, niż do szczegółowego opisywania, procedury użytkownik wykona w celu osiągnięcia celu. Na przykład może być postcondition zamówienia posiłek, restauracja jest przygotowywana posiłek dla klienta, a klient zapłacił. Postcondition jest kryterium, które testy należy sprawdzić.
+- Podczas opisywania przypadku użycia w modelu wymagań jest bardziej ważne, aby zdefiniować jego błąd warunku końcowego, czyli cel, który został osiągnięty, niż szczegółowo opisać procedury, które użytkownik może wykonać w celu osiągnięcia celu. Na przykład błąd warunku końcowego w kolejności postanowień może być, że restauracja przeniesie posiłk dla klienta i zapłacił klientowi. Błąd warunku końcowego to kryterium, aby testy były weryfikowane.
 
-- Podstawowy oddzielnych testów na oddzielnych klauzul postcondition. Na przykład utworzyć osobne testów do powiadamiania restauracji kolejności i do celów płatności odbiorcy. Ten rozdział ma następujące zalety:
+- Podstawowe testy na oddzielnych klauzulach błąd warunku końcowego. Na przykład można utworzyć osobne testy do powiadamiania restauracji o zamówieniach, a w przypadku dokonywania płatności od klienta. Ten rozdział ma następujące zalety:
 
-  - Zmiany w różnych aspektów wymagania często występują, niezależnie od siebie. Dzieląc testy na różnych aspektach w ten sposób, możesz ułatwić aktualizowanie testów, gdy zmienią się wymagania.
+  - Zmiany w różnych aspektach wymagań często występują niezależnie. Oddzielając testy do różnych aspektów w ten sposób, można ułatwić aktualizowanie testów w przypadku zmiany wymagań.
 
-  - Jeśli plan rozwoju implementuje jednym aspekcie przypadek użycia przed inny, możesz włączyć testy oddzielnie, w miarę postępów rozwoju.
+  - Jeśli plan rozwoju implementuje jeden aspekt przypadku użycia przed innym, można włączyć testy oddzielnie jako postęp opracowywania.
 
-- Podczas projektowania testy, należy oddzielić wybór danych testowych, od kodu lub skryptu, który określa, czy osiągnięte zostały postcondition. Na przykład może być testu z prostą funkcją arytmetyczne: Dane wejściowe 4; Sprawdź, czy dane wyjściowe to 2. Zamiast tego należy projektować skryptu jako: Wybierz dane wejściowe mnożenia danych wyjściowych przez siebie i sprawdź, czy wynik jest oryginalne dane wejściowe. Ten styl umożliwia różne dane wejściowe testu bez wprowadzania zmian w głównej części testu.
+- Podczas projektowania testów należy oddzielić wybór danych testowych od kodu lub skryptu, który określa, czy błąd warunku końcowego został osiągnięty. Przykładowo można testować prostą funkcję arytmetyczną: dane wejściowe 4; Sprawdź, czy dane wyjściowe to 2. Zamiast tego Zaprojektuj skrypt jako: Wybierz dane wejściowe; Pomnóż dane wyjściowe przez siebie i sprawdź, czy wynik jest oryginalnymi danymi wejściowymi. Ten styl umożliwia różnicowanie danych wejściowych testów bez zmiany głównej treści testu.
 
-#### <a name="linking-tests-to-use-cases"></a>Łączenie testy z przypadkami użycia
- Jeśli używasz [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] do projektowania i uruchomić testy, możesz organizować testy w ramach wymaganie, przypadek użycia lub elementów roboczych historii użytkownika. Można połączyć te elementy robocze z przypadkami użycia w modelu. Dzięki temu można szybko śledzenia zmiany do testów i przypadek użycia pomaga śledzić postęp każdego z nich.
+#### <a name="linking-tests-to-use-cases"></a>Łączenie testów z przypadkami użycia
+ Jeśli używasz [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] do projektowania i uruchamiania testów, możesz organizować testy w obszarze wymagania, przypadek użycia lub elementy robocze scenariusza użytkownika. Można połączyć te elementy robocze z przypadkami użycia w modelu. Dzięki temu można szybko śledzić wymagania zmian w testach i pomóc śledzić postęp każdego przypadku użycia.
 
-###### <a name="to-link-tests-to-a-use-case"></a>Aby połączyć testy przypadek użycia
+###### <a name="to-link-tests-to-a-use-case"></a>Aby połączyć testy z przypadkiem użycia
 
-1. W [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], Utwórz wymagania i podstawą zestaw testów.
+1. W [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] Utwórz wymaganie i podstawowy zestaw testów.
 
-    Wymagania, którą tworzysz jest element roboczy w [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Może być elementem pracy scenariusza użycia, wymagania lub przypadek użycia, w zależności od szablonu procesu, który projekt korzysta z Team Foundation. Aby uzyskać więcej informacji, zobacz [o Zwinne narzędzia i Agile zarządzanie projektem](/azure/devops/boards/backlogs/backlogs-overview?view=vsts).
+    To wymaganie tworzone jest elementem roboczym w [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Może to być scenariusz użytkownika, wymaganie lub element roboczy przypadku użycia, w zależności od szablonu procesu używanego przez projekt z programem Team Foundation. Aby uzyskać więcej informacji, zobacz [Informacje o narzędziach Agile i zarządzaniu projektami Agile](/azure/devops/boards/backlogs/backlogs-overview?view=vsts).
 
-2. Elementem roboczym należy połączyć jeden lub więcej przypadków użycia w modelu.
+2. Połącz element roboczy wymaganie z co najmniej jednym przypadkiem użycia w modelu.
 
-    Na diagramie przypadków użycia, kliknij prawym przyciskiem myszy przypadek użycia, a następnie kliknij przycisk **łącze do elementu roboczego**.
+    W diagramie przypadku użycia kliknij prawym przyciskiem myszy przypadek użycia, a następnie kliknij pozycję **Połącz z elementem roboczym**.
 
-3. Dodaj do zestawu testów, przypadki testowe, które Sprawdź przypadki użycia.
+3. Dodaj do zestawu testów, przypadków testowych, które weryfikują przypadki użycia.
 
-   Zwykle każdy element roboczy użytkownika, jak użycia lub wymagania połączy się z kilku przypadków użycia w modelu i każdego przypadku użycia połączy się z kilku przypadków użycia lub wymagań. Jest to spowodowane każdego przypadku użycia lub wymagania obejmuje zestaw zadań, które opracowywanie kilka przypadków użycia. Na przykład w wczesnych iteracji projektu, możesz tworzyć historii użytkownika podstawowego, w którym klient może wybierz elementy z wykazu i zostały one dostarczone. W późniejszej iteracji może ona brzmieć, że użytkownik płaci podczas realizacji zamówienia i dostawca otrzymuje pieniądze, po wysłaniu towarów.  Każdy wątek dodaje klauzulę postcondition w przypadku użycia towarów zamówienia.
+   Zwykle każdy scenariusz użytkownika lub element roboczy wymagania będzie łączyć się z kilkoma przypadkami użycia w modelu, a każdy przypadek użycia będzie łączyć się z kilkoma scenariuszami lub wymaganiami użytkownika. Wynika to z faktu, że każdy scenariusz użytkownika lub wymóg obejmuje zestaw zadań, które opracowują kilka przypadków użycia. Na przykład we wczesnej iteracji projektu można opracowywać podstawową historię użytkownika, w której klient może wybrać elementy z katalogu i dostarczyć je. W późniejszej iteracji historia może polegać na tym, że użytkownik płaci przy wypełnianiu zamówienia, a Dostawca otrzymuje pieniądze po wysłaniu towarów.  Każda historia dodaje klauzulę do błąd warunku końcowego przypadku użycia zamówienia towarów.
 
-   Można utworzyć osobne linki od wymagań dla klauzul postcondition, pisząc tych klauzul w oddzielnych komentarze na diagramie przypadków użycia. Każdy komentarz łącza z elementem roboczym wymagania i komentarz łącza do przypadku użycia na diagramie.
+   Można utworzyć oddzielne linki od wymagań do klauzul błąd warunku końcowego, pisząc te klauzule w osobnych komentarzach na diagramie przypadków użycia. Można połączyć każdy komentarz z elementem roboczym wymagania i połączyć komentarz z przypadkiem użycia na diagramie.
 
-### <a name="base-tests-on-the-requirements-types"></a>Podstawowy testy na typy wymagań
- Typy, które jest, klasy, interfejsy i wyliczenia modelu wymagania opisano pojęcia i relacje pod względem sposobu użytkowników reakcji i komunikacji dotyczących firmy. Wyklucza typy danych tylko z wewnętrzną konstrukcją systemu.
+### <a name="base-tests-on-the-requirements-types"></a>Podstawowe testy dotyczące typów wymagań
+ Typy, czyli klasy, interfejsy i wyliczenia, modelu wymagań opisują koncepcje i relacje w kontekście sposobu, w jaki użytkownicy uważają i komunikują się z firmą. Wyklucza on tylko te typy, które są objęte wewnętrznym projektem systemu.
 
- Projektowanie testów pod względem typów te wymagania. Praktyka ta pomaga zagwarantować, że podczas zmiany z wymaganiami omówiono, łatwo jest dotyczą zmiany niezbędne zmiany w testach. Go umożliwia omówienia testów i ich zamierzonych wyniki bezpośrednio z dla użytkowników końcowych i innych zainteresowanych stron. Oznacza to, musi być obsługiwane poza procesem tworzenia użytkowników i pozwala uniknąć przypadkowego projekt testów wokół możliwe luki w projekcie.
+ Zaprojektuj testy pod warunkiem tych typów wymagań. Takie rozwiązanie pomaga zapewnić, że w przypadku omówienia zmian w wymaganiach można łatwo powiązać zmiany w koniecznych zmianach w testach. Umożliwia to omawianie testów i ich zamierzonych wyników bezpośrednio z użytkownikami końcowymi i innymi uczestnikami. Oznacza to, że potrzeby użytkowników mogą być utrzymywane poza procesem tworzenia i pozwala uniknąć niezamierzonego projektu testów wokół możliwych wad w projekcie.
 
- W przypadku ręcznych testów tej praktyką polega na dostosowanie się do słownictwa używanego w modelu wymagań w skryptach testowych. Dla testów automatycznych tej praktyką obejmuje przy użyciu diagramów klas wymagania jako podstawy dla kodu testów i tworzenie dostępu i updater funkcje połączyć modelu wymagań w kodzie.
+ W przypadku ręcznych testów ta metoda obejmuje przestrzeganie słownictwa modelu wymagań w skryptach testowych. W przypadku testów automatycznych to rozwiązanie obejmuje użycie diagramów klas wymagań jako podstawy dla kodu testowego, a także utworzenie funkcji akcesora i Aktualizator w celu połączenia modelu wymagań z kodem.
 
- Na przykład wymagania, które mogą obejmować modelu typy Menu, element Menu, zamówienie i skojarzenia między nimi. Ten model reprezentuje informacje są przechowywane omawiają posiłku system zamawiania, ale nie reprezentuje komplikacje związane z jego wykonania. W działającym systemie może być kilka różnych realizations każdego typu, w przypadku baz danych w interfejsie użytkownika i interfejsów API. W rozproszonym systemie może być kilka wariantów każde wystąpienie, przechowywane w różnych częściach systemu, w tym samym czasie.
+ Na przykład model wymagań może zawierać menu typy, element menu, kolejność i skojarzenia między nimi. Ten model reprezentuje informacje przechowywane i rozpatrywane przez system porządkowania posiłków, ale nie reprezentuje złożoności jego implementacji. W systemie operacyjnym może istnieć kilka różnych sposobów realizacji poszczególnych typów, w bazach danych, interfejs użytkownika i interfejsy API. W systemie rozproszonym może istnieć kilka wariantów każdego wystąpienia przechowywanych w różnych częściach systemu w tym samym czasie.
 
- Aby przetestować przypadek użycia, takie jak dodawanie elementu do zamówienia, metody testowej może zawierać kod podobny do następującego:
+ Aby przetestować przypadek użycia, taki jak dodanie elementu do zamówienia, metoda testowa może zawierać kod podobny do tego:
 
 ```
 Order order = ... ; // set up an order
@@ -94,66 +94,66 @@ int countAfter = order.MenuItems.Count;
 Assert (countAfter == countBefore = 1);
 ```
 
- Należy zauważyć, że ta metoda używa klasy modelu wymagań. Skojarzenia i atrybuty są realizowane jako właściwości .NET.
+ Należy zauważyć, że ta metoda testowa używa klas modelu wymagań. Skojarzenia i atrybuty są prawdziwe jako właściwości platformy .NET.
 
- Aby wprowadzić tę pracę, właściwości klasy musi być zdefiniowany jako tylko do odczytu funkcje lub metody dostępu, których dostęp do systemu, aby pobrać informacje o bieżącym stanie. Przypadki użycia metod, które symulują, takie jak AddItemToOrder musi dysku systemu za pośrednictwem jej interfejsu API lub warstwy poniżej interfejs użytkownika. Konstruktory testu obiektów, takich jak zamówienie i element MenuItem musi także zwiększać wykorzystanie systemu, aby utworzyć odpowiednie elementy w systemie.
+ Aby to zrobić, właściwości klas muszą być zdefiniowane jako funkcje tylko do odczytu lub metody dostępu, które uzyskują dostęp do systemu w celu pobrania informacji o jego bieżącym stanie. Metody symulowania przypadków użycia, takie jak AddItemToOrder, muszą określać system za pomocą interfejsu API lub warstwy pod interfejsem użytkownika. Konstruktory obiektów testowych, takich jak Order i MenuItem, muszą również nawiązać system w celu utworzenia odpowiednich elementów w systemie.
 
- Wiele metod dostępu i metod aktualizowania już będą dostępne za pośrednictwem interfejsu API normalne aplikacji. Ale niektóre dodatkowe funkcje mogą mieć do zapisania w celu umożliwienia badania. Te dodatkowe metody dostępu i metod aktualizowania czasami są nazywane "Instrumentacji testów". Ponieważ są one zależne od wewnętrznego projektu systemu, spoczywa deweloperów systemu zapewnić im, natomiast testerów pisanie kodu testów pod względem modelu wymagań.
+ Wiele metod dostępu i aktualizacji będzie już dostępnych za pomocą normalnego interfejsu API aplikacji. Jednak niektóre dodatkowe funkcje mogą być zapisywane w celu włączenia testów. Te dodatkowe metody dostępu i Updates są czasami nazywane "Instrumentacją testów". Ponieważ są one zależne od wewnętrznego projektu systemu, odpowiadają deweloperom systemu na ich dostarczenie, podczas gdy testerzy zapisują kod testów pod warunkiem modelu wymagań.
 
- Podczas pisania testów automatycznych, można użyć podczas testów generycznych do opakowania metody dostępu i metod aktualizowania.
+ Podczas pisania automatycznych testów można użyć testów ogólnych, aby zawijać metody dostępu i Updates.
 
-### <a name="tests-for-business-rules"></a>Testy dla reguły biznesowe
- Niektóre wymagania nie są bezpośrednio związane z dowolnego przypadku użycia jednej. Na przykład firma DinnerNow umożliwia klientom wybrać z menu wiele, ale wymaga, aby w każdej kolejności, wszystkie wybrane elementy powinny pochodzić z pojedynczym Menu. Tę regułę biznesową, może być wyrażona jako niezmiennej dotyczących skojarzeń zamówienia, menu i elementy w modelu klasy wymagań.
+### <a name="tests-for-business-rules"></a>Testy dla reguł firmy
+ Niektóre wymagania nie są bezpośrednio związane z żadnym przypadkiem użycia. Na przykład firma DinnerNow umożliwia klientom wybór spośród wielu menu, ale wymaga, aby w każdym porządku wszystkie wybrane elementy pochodzą z jednego menu. Ta reguła biznesowa może być wyrażona jako niezmienna o skojarzeniach między zamówieniami, menu i elementami w modelu klasy wymagań.
 
- Regułę niezmiennej, tego rodzaju decyduje, nie tylko wszystkie przypadki użycia, które są obecnie zdefiniowane, ale również wszelkich innych przypadków użycia, które będą zdefiniowane później. Dlatego jest przydatne do zapisu w oddzielnie od wszelkich przypadków użycia i przetestować go oddzielnie z przypadkami użycia.
+ Niezmienna reguła tego rodzaju reguluje nie tylko przypadki użycia, które są obecnie zdefiniowane, ale również inne przypadki użycia, które zostaną zdefiniowane później. Z tego względu przydatne jest zapisanie go niezależnie od dowolnego przypadku użycia i przetestowanie go niezależnie od przypadków użycia.
 
-## <a name="deriving-subsystem-tests-from-models"></a>Wyprowadzanie podsystemu testów z modeli
- W projektowania wysokiego poziomu w dużym systemie można zidentyfikować, składniki i podsystemy. Reprezentują one części, które mogą być oddzielnie projektowane, znajdują się na różnych komputerach lub to moduły wielokrotnego użytku, które mogą być odtwarzane na wiele sposobów.
+## <a name="deriving-subsystem-tests-from-models"></a>Wyprowadzanie testów podsystemu z modeli
+ W projekcie wysokiego poziomu dużego systemu można zidentyfikować składniki lub podsystemy. Reprezentują one części, które mogą być oddzielnie zaprojektowane lub znajdują się na różnych komputerach, lub są modułami wielokrotnego użytku, które można połączyć na wiele sposobów.
 
- Można zastosować do poszczególnych głównych składników te same zasady używania dla całego systemu. W dużym projekcie każdy składnik może mieć własny model wymagania. W projektach mniejszych aby pokazać główne składniki i ich interakcje można utworzyć architektury model lub projektowania wysokiego poziomu. Aby uzyskać więcej informacji, zobacz [modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md).
+ Do każdego głównego składnika można zastosować te same zasady, które są stosowane do całego systemu. W dużym projekcie każdy składnik może mieć własny model wymagań. W mniejszych projektach można utworzyć model architektoniczny lub projekt wysokiego poziomu, aby pokazać główne składniki i ich interakcje. Aby uzyskać więcej informacji, zobacz [modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md).
 
- W obu przypadkach można ustanowić relacji między elementami modelu i testy podsystemu w taki sam sposób jak w przypadku między modelem wymagań i testów systemowych.
+ W obu przypadkach można ustanowić relację między elementami modelu i testami podsystemu w taki sam sposób, jak między modelem wymagań i testami systemowymi.
 
-### <a name="isolate-components-with-provided-and-required-interfaces"></a>Izolowania składników za pomocą interfejsy dostarczany i wymagany
- Jest to przydatne, aby zidentyfikować wszystkie zależności, które składnik ma inne części systemu lub usług zewnętrznych, a także do reprezentowania je jako wymagane interfejsy. To ćwiczenie zwykle prowadzi do niektórych przeprojektowywania powodują, że składnik znacznie bardziej odłączony i łatwo mogą być oddzielone od pozostałej części projektu.
+### <a name="isolate-components-with-provided-and-required-interfaces"></a>Izoluj składniki z udostępnionymi i wymaganymi interfejsami
+ Przydatne jest zidentyfikowanie wszystkich zależności, które składnik ma w innych częściach systemu lub usług zewnętrznych, a także do reprezentowania ich jako wymaganych interfejsów. To ćwiczenie zwykle prowadzi do niektórych reprojektów, które powodują, że składnik jest znacznie bardziej oddzielony i łatwo można go oddzielić od reszty Twojego projektu.
 
- To oddzielenie zaletą jest to, że składnika mogą być wykonywane dla testowanego przez zastąpienie obiektami makiety usług, które są zwykle używane. Są to składniki, które są skonfigurowane na potrzeby testowania. Makiety składnik udostępnia interfejs, który wymaga składnika, odpowiada na zapytania z symulowanymi danymi. Składniki makiety częścią kontroler ukończenia testowej, które można podłączyć wszystkie interfejsy składnika.
+ Zaletą tego oddzielenia jest to, że składnik może być wykonywany do testowania przez zastępowanie z obiektami makiety, których zazwyczaj używa usługi. Są to składniki, które są skonfigurowane do celów testowych. Składnik makiety udostępnia interfejs wymagany przez składnik, który odpowiada na zapytania z symulowanymi danymi. Składniki makiety stanowią część kompletnego zespołu testowego, który można połączyć ze wszystkimi interfejsami składnika.
 
- Zaletą makiety testowania jest opracowanie składnika podczas inne składniki, których usługi, które będą przez niego używane są nadal w fazie projektowania.
+ Zaletą testowania makietów jest możliwość tworzenia składnika, gdy inne składniki, których będą używać usługi, są nadal w fazie projektowania.
 
-## <a name="maintain-the-relationships-between-tests-and-model"></a>Obsługa relacji między testy i Model
- W typowym projekcie, który wykonuje iterację co kilka tygodni Przejrzyj wymagania dotyczące jest utrzymywana na początku każdej iteracji. Spotkanie w tym artykule omówiono funkcje, które mają zostać dostarczone w następnej iteracji. Modelu wymagań może służyć do pomoc w omówieniu pojęcia, scenariuszy i sekwencji akcji, które będą rozwijane. Zainteresowane strony biznesowe ustawiane priorytety, deweloperzy mogą stosować oszacowania i testerów upewnij się, że oczekiwane zachowanie każdej funkcji jest przechwytywana poprawnie.
+## <a name="maintain-the-relationships-between-tests-and-model"></a>Obsługuj relacje między testami a modelem
+ W typowym projekcie, który wykonuje iterację co kilka tygodni, przegląd wymagań jest przechowywany blisko początku każdej iteracji. Na spotkaniu omówiono funkcje, które zostaną dostarczone w następnej iteracji. Model wymagań może służyć do omówienia koncepcji, scenariuszy i sekwencji akcji, które zostaną opracowane. Zainteresowane strony biznesowe ustalają priorytety, deweloperzy dokonują oszacowania i sprawdzają, czy oczekiwane zachowanie poszczególnych funkcji jest przechwytywane poprawnie.
 
- Pisanie testów jest najbardziej skutecznym sposobem definiowania wymagane i jest również efektywny sposób upewnić się, że osoby zapoznanie co jest wymagane. Jednakże natomiast pisania testów trwa zbyt długo, podczas warsztatów specyfikacji, tworzenie modeli może odbywać się znacznie szybciej.
+ Zapisywanie testów jest najbardziej skutecznym sposobem definiowania wymagania i jest również skutecznym sposobem zapewnienia, że osoba ma jasno zrozumiałe informacje o tym, co jest wymagane. Jednak podczas tworzenia testów trwa zbyt długo, aby podczas warsztatów dotyczących specyfikacji tworzenie modeli było znacznie szybsze.
 
- Z testowania punktu widzenia modelu wymagań może być traktowany jako skrót do testów. W związku z tym jest ważne, aby zachować relacji między testy i modelu w całym projekcie.
+ Z punktu widzenia testowania model wymagań może być traktowany jako skrót dla testów. W związku z tym ważne jest, aby zachować relacje między testami i modelem w całym projekcie.
 
-## <a name="Attaching"></a> Dołączanie przypadki testowe do elementów modelu
- Jeśli projekt używa [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], testy można połączyć elementy w modelu. Umożliwia szybkie znajdowanie testów wpływ zmiany w wymaganiach i pomaga śledzić, do którego zostały zrealizowane wymagania w zakresie.
+## <a name="Attaching"></a>Dołączanie przypadków testowych do elementów modelu
+ Jeśli projekt używa [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], można połączyć testy z elementami w modelu. Dzięki temu można szybko znaleźć testy, których dotyczy zmiana w wymaganiach, i pomóc w śledzeniu zakresu, w jakim zostały zrealizowane wymagania.
 
- Testy można połączyć wszelkiego rodzaju elementu. Oto kilka przykładów:
+ Można połączyć testy z wszystkimi rodzajami elementów. Oto kilka przykładów:
 
-- Łączenie przypadków użycia, aby testy, które jego wykonywania.
+- Połącz przypadek użycia z testami, które go wykonują.
 
-- Zapis klauzule postcondition przypadków użycia lub celem na komentarze, które są połączone z przypadkiem użycia, a następnie połącz testy każdy komentarz.
+- Napisz klauzule błąd warunku końcowego przypadku użycia lub cel do komentarzy, które są połączone z przypadkiem użycia, a następnie połącz testy z każdym komentarzem.
 
-- Napisz zasad niezmiennej komentarze na diagramach klas lub diagramów aktywności, a następnie połączyć testy.
+- Zapisuj niezmienne reguły w komentarzach na diagramach klas lub diagramach aktywności i łącz je z testami.
 
-- Połącz testy w diagramie aktywności lub poszczególne działania.
+- Połącz testy z diagramem aktywności lub z poszczególnymi działaniami.
 
-- Zestaw testów połączyć składnik lub podsystem, który sprawdza.
+- Połącz zestaw testów ze składnikiem lub podsystemem, który go testuje.
 
-#### <a name="to-link-tests-to-a-model-element-or-relationship"></a>Aby połączyć testy elementu modelu lub relacji
+#### <a name="to-link-tests-to-a-model-element-or-relationship"></a>Aby połączyć testy z elementem modelu lub relacją
 
-1. W [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], Utwórz wymagania i podstawą zestaw testów.
+1. W [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] Utwórz wymaganie i podstawowy zestaw testów.
 
-    Wymagania, którą tworzysz jest element roboczy w [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Może być elementem pracy scenariusza użycia, wymagania lub przypadek użycia, w zależności od szablonu procesu, który projekt korzysta z Team Foundation. Aby uzyskać więcej informacji, zobacz [o Zwinne narzędzia i Agile zarządzanie projektem](/azure/devops/boards/backlogs/backlogs-overview?view=vsts).
+    To wymaganie tworzone jest elementem roboczym w [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Może to być scenariusz użytkownika, wymaganie lub element roboczy przypadku użycia, w zależności od szablonu procesu używanego przez projekt z programem Team Foundation. Aby uzyskać więcej informacji, zobacz [Informacje o narzędziach Agile i zarządzaniu projektami Agile](/azure/devops/boards/backlogs/backlogs-overview?view=vsts).
 
-2. Elementem roboczym należy połączyć jeden lub więcej elementów w modelu.
+2. Połącz element roboczy wymaganie z co najmniej jednym elementem w modelu.
 
-    Na diagramie modelowania, kliknij prawym przyciskiem myszy element, komentarz lub relacji, a następnie kliknij przycisk **łącze do elementu roboczego**.
+    Na diagramie modelowania kliknij prawym przyciskiem myszy element, komentarz lub relację, a następnie kliknij pozycję **Połącz z elementem roboczym**.
 
-3. Dodaj do zestawu testów, przypadki testowe, które Sprawdź wymagań wyrażony w elemencie modelu.
+3. Dodaj do zestawu testów, przypadków testowych, które weryfikują wymóg wyrażony w elemencie modelu.
 
 ## <a name="see-also"></a>Zobacz też
 

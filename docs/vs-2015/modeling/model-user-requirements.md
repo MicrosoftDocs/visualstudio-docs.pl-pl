@@ -1,5 +1,5 @@
 ---
-title: Modelowanie wymagań użytkowników | Dokumentacja firmy Microsoft
+title: Wymagania dotyczące użytkownika modelu | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -10,241 +10,233 @@ helpviewer_keywords:
 - UML, modeling requirements
 ms.assetid: 359900f8-6d69-493d-bfdf-2c9069c74a26
 caps.latest.revision: 30
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8b1d3a5209490c253f4646210d4eeeda9d807155
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 165214dff519e7db94d5ee8f3a1a6d86856cd4a1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63417803"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72609665"
 ---
 # <a name="model-user-requirements"></a>Wymagania modelu użytkownika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Program Visual Studio pozwala zrozumieć, omówienia i komunikują się potrzeby użytkowników, rysując diagramy dotyczące ich działania i część systemu jest odtwarzany w pozwala im to osiągnąć swoje cele. Modelu wymagań to zbiór tych diagramów, z których każdy koncentruje się na inny aspekt potrzeb użytkowników. Aby uzyskać demonstracyjne wideo – zobacz: [Modelowanie domeny biznesowej](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/).  
-  
- Aby zobaczyć, które wersje programu Visual Studio obsługuje każdy typ modelu, zobacz [obsługiwana wersja dla narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
-  
- Wymagania modelu pomoże Ci:  
-  
-- Skup się na zachowaniu zewnętrznego systemu, niezależnie od jego wewnętrzną konstrukcją.  
-  
-- Opis użytkowników i udziałowców wymaga o wiele mniej niejednoznaczności niż w języku naturalnym.  
-  
-- Zdefiniuj spójne słownik terminów, używane przez użytkowników, deweloperów i testerów.  
-  
-- Ogranicz luki i niespójności w wymaganiach.  
-  
-- Zmniejsz czynności niezbędne do reagowania na zmiany wymagań.  
-  
-- Zaplanuj kolejność, w którym będą opracowywane funkcje.  
-  
-- Na użytek modele jako podstawa testy systemu, co wyczyść relację między testy i wymagania. Gdy zmienią się wymagania tę relację pomaga poprawnie zaktualizować testy. To sprawia, że się, że system spełnia nowe wymagania.  
-  
-  Modelu wymagań zapewnia największe korzyści, jeśli go użyć do dyskusji fokus z użytkowników lub ich przedstawicieli, a go ponownie na początku każdej iteracji. Nie masz Oznacz go jako ukończony szczegółowo przed napisaniem kodu. Częściowo działającą aplikację, nawet wtedy, gdy znacznie uproszczone, zazwyczaj są podstawą najbardziej pobudzania dyskusję na temat wymagań użytkowników. Model jest efektywny sposób podsumowywania wyniki tych dyskusji. Aby uzyskać więcej informacji, zobacz [używanie modeli w procesie tworzenia aplikacji](../modeling/use-models-in-your-development-process.md).  
-  
+Program Visual Studio pomaga zrozumieć, omówić i komunikować się z potrzebami użytkowników, rysując diagramy związane z ich działaniami i część, która jest odtwarzana przez system w celu ułatwienia im osiągnięcia celów. Model wymagań to zbiór tych diagramów, z których każdy koncentruje się na różnych aspektach potrzeb użytkowników. Aby zapoznać się z prezentacją, zobacz: [modelowanie domeny biznesowej](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/).
+
+ Aby sprawdzić, które wersje programu Visual Studio obsługują każdy typ modelu, zobacz [Obsługa wersji dla narzędzi architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+
+ Model wymagań ułatwia:
+
+- Skup się na zewnętrznym zachowaniu systemu, niezależnie od jego wewnętrznego projektu.
+
+- Opisz potrzeby użytkowników i uczestników projektu o znacznie mniejszej niejednoznaczności niż w języku naturalnym.
+
+- Zdefiniuj spójny słownik terminów, które mogą być używane przez użytkowników, deweloperów i testerów.
+
+- Ogranicz luki i niespójności w wymaganiach.
+
+- Zmniejsz ilość pracy wymaganej do reagowania na zmiany wymagań.
+
+- Zaplanuj kolejność, w której będą rozwijane funkcje.
+
+- Używaj modeli jako podstawy dla testów systemowych, co powoduje wyraźną relację między testami i wymaganiami. Po zmianie wymagań ta relacja pomaga zaktualizować testy prawidłowo. Pozwala to upewnić się, że system spełnia nowe wymagania.
+
+  Model wymagań zapewnia największą korzyść, jeśli jest używany do koncentracji dyskusji z użytkownikami lub ich przedstawicielami, a następnie ponownie odwiedzany na początku każdej iteracji. Przed zapisaniem kodu nie jest konieczne jego szczegółowe zakończenie. Częściowo działająca aplikacja, nawet jeśli bardzo uproszczone, zazwyczaj stanowi najbardziej stymulowaną podstawę do omówienia wymagań dla użytkowników. Model jest efektywnym sposobem podsumowywania wyników dyskusji. Aby uzyskać więcej informacji, zobacz [Używanie modeli w procesie tworzenia oprogramowania](../modeling/use-models-in-your-development-process.md).
+
 > [!NOTE]
-> W tych tematach "system" oznacza system lub aplikację, którą tworzysz. Może być duży zbiór wielu składniki sprzętu i oprogramowania; lub pojedynczej aplikacji; lub składnik oprogramowania w systemie większe. W każdym przypadku modelu wymagań w tym artykule opisano zachowanie, które nie jest widoczny spoza systemu, czy za pośrednictwem interfejsu użytkownika lub interfejsu API.  
-  
-## <a name="common-tasks"></a>Typowe zadania  
- Można utworzyć kilka różnych widoków wymagań użytkowników.  Każdy widok zawiera określonego typu informacji.  Podczas tworzenia tych widoków, najlepiej jest często przenieść z jednego do drugiego. Można uruchomić w dowolnym widoku.  
-  
-|Diagram lub dokumentu|Znaczenie w modelu wymagań|Sekcja|  
-|-------------------------|-----------------------------------------------|-------------|  
-|Diagramów przypadków użycia|Kto korzysta z systemu i co robią z nim.|[Opisujący sposób użycia systemu](#UseCases)|  
-|Diagram koncepcyjny klas|Słownik typów, które są używane do opisywania wymagania dotyczące programu typy widoczne w interfejsie systemu.|[Definiowanie terminy używane do opisu wymagań](#RequirementsClasses)|  
-|Diagramu aktywności|Przepływ pracy i informacji między działania wykonywane przez użytkowników i system lub jej części.|[Przepływ pracy przedstawiający między użytkownikami a systemem](#Workflow)|  
-|Diagramów sekwencji|Sekwencja interakcji między użytkownikami i systemu lub jego części. Alternatywny widok na diagramie aktywności.|[Wyświetlanie interakcje między użytkownikami a systemem](#Sequences)|  
-|Dodatkowe dokumenty lub elementy robocze|Kryteria wydajności, bezpieczeństwa, użyteczność i niezawodność.|[Opisujące jakości wymagań](#QoSRequirements)|  
-|Dodatkowe dokumenty lub elementy robocze|Ograniczenia i reguły nie jest specyficzne dla danego przypadku użycia|[Wyświetlanie reguły biznesowe](#BusinessRules)|  
-  
- Należy zauważyć, że większość typów diagram może służyć do innych celów. Omówienie typów na diagramie, zobacz [tworzenie modeli aplikacji](../modeling/create-models-for-your-app.md). Aby uzyskać podstawowe informacje na temat rysowania diagramów zobacz [modeli i diagramów UML Edytuj](../modeling/edit-uml-models-and-diagrams.md).  
-  
-## <a name="UseCases"></a> Opisujący sposób użycia systemu  
- Utwórz diagramy przypadków użycia do opisywania, który korzysta z systemu i rzeczywiste użycie go do. Przypadek użycia przedstawia cel użytkownika systemu i procedury działają do osiągnięcia celu.  
-  
- Na przykład online posiłku sprzedaży systemu muszą zezwalać na klienci mogą wybierać elementy menu i muszą zezwalać na udostępnianie restauracji na aktualizowanie menu. Umożliwia to podsumowanie na diagramie przypadków użycia:  
-  
- ![Zastosowań klient i restauracja](../modeling/media/uml-reqmuc1.png "UML_ReqmUC1")  
-  
- Można również pokazać, jak przypadek użycia składa się z mniejszych przypadków. Na przykład zamawianie posiłku jest częścią kupowania posiłek, która obejmuje też płatności i dostawy:  
-  
- ![System uczestniczy w płatności, ale nie dostarczania. ](../modeling/media/uml-reqmuc2.png "UML_ReqmUC2")  
-  
- Można również pokazać, które przypadki użycia znajdują się w zakresie systemu, który tworzysz. Na przykład system na ilustracji nie uczestniczy w przypadku użycia posiłku dostarczania. Dzięki temu, Ustaw kontekst prace deweloperskie. (Na diagramie przypadków użycia podsystemu kontenerów może służyć do reprezentowania systemu lub jego składniki.)  
-  
- Pomaga również zespołowi omówiono, jakie zostaną uwzględnione w kolejnych wersjach. Na przykład, można omawiać czy w wersji początkowej systemu płatności dla posiłku są rozmieszczone bezpośrednio między restauracji i klienta, zamiast przechodzenia przez system. W takim przypadku można przenieść płacisz posiłku poza prostokąt System firmy Dinner Now we wstępnym wydaniu.  
-  
- Diagram przypadków użycia zawiera jedynie podsumowanie przypadków użycia. Aby zapewnić bardziej szczegółowy opis, można połączyć przypadki użycia na diagramie aby oddzielić dokumentów i z innymi diagramami. Aby dowiedzieć się, jak to zrobić, zobacz [łączenie wariantów użycia z dokumentami i diagramami](../modeling/link-a-use-case-to-documents-and-diagrams.md).  
-  
- Rysowanie diagramu przypadków użycia, pomaga Twojemu zespołowi:  
-  
-- Skup się na Użytkownicy oczekują sposób korzystania z systemu, bez trwa efektów, szczegóły implementacji.  
-  
-- Omówiono w zakresie systemu lub konkretnej wersji systemu.  
-  
-  Więcej informacji można znaleźć w następujących tematach:  
-  
-|Aby dowiedzieć się więcej o|Odczyt|  
-|--------------------|----------|  
-|Bardziej szczegółowe informacje o sposobie tworzenia przypadków użycia|[Diagramy przypadków użycia UML: wskazówki](../modeling/uml-use-case-diagrams-guidelines.md)|  
-|Elementy na diagramie przypadków użycia|[Diagramy przypadków użycia UML: informacje](../modeling/uml-use-case-diagrams-reference.md)|  
-|Jak tworzyć kod z przypadków użycia|[Modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md)|  
-  
-## <a name="RequirementsClasses"></a> Definiowanie terminy używane do opisu wymagań  
- Diagramów klas UML można użyć, które pomogą Ci tworzyć spójne słownictwa koncepcji biznesowych używanych do następujących celów:  
-  
-- Przez samych użytkowników w celu omówienia ich firm, w którym działa system.  
-  
-- Do opisania potrzeb użytkowników, na przykład w opisach przypadki użycia, reguł biznesowych i przypadki użycia.  
-  
-- Typy informacji wymieniane na interfejs API systemu lub za pomocą interfejsu użytkownika.  
-  
-- Opisy testy systemu, czy akceptacji.  
-  
-  Gdy są one używane w tym celu, zawartość diagramu klas UML jest wywoływana diagram koncepcyjny klasy. (Nazywane również jest *modelu domeny* lub *modelu klasy analizy*.)  
-  
-  Na diagramie klasy pojęć możesz wyświetlić tylko te klasy potrzebne w opisach wymagań, bez wyświetlania dowolne szczegółowych informacji na temat wewnętrzną konstrukcją systemu. Diagram nie wyświetla szczegółów wewnętrzną konstrukcją systemu. Użytkownik nie zwykle pokazywałaby operacji lub interfejsów w klasach pojęć.  
-  
-  Na przykład można narysować tych pojęciach klas systemu firmy Dinner Now:  
-  
-  ![Classes Menu, Order, Menu Item, Order Item.](../modeling/media/uml-reqmcd1.png "UML_ReqMCD1")  
-  
-  Diagram koncepcyjny klasy zawiera słownik terminów używanych w całym modelu wymagań. Na przykład w szczegółowy opis użycia przypadek zamówienie posiłku, można napisać:  
-  
-  Klient wybierze *Menu* z którego można skonstruować *kolejności*, a następnie tworzy *kolejność elementów* w *kolejności* , wybierając  *Elementy menu* z *Menu*.  
-  
-  Zwróć uwagę, jak terminy używane w tym opisie są nazwy klasy w modelu. Diagram usuwa niejednoznaczności z relacji między tymi klasami. Na przykład jego wykazują, że każde zamówienie jest skojarzony z tylko jednym Menu.  
-  
-  Nieporozumień o wymaganiach użytkowników często można powiązać z nieporozumień o szczegółowe znaczenie słowa. Na przykład większość restauracji będzie wiedzę na temat udostępnionych warunków, Menu i kolejność, ale różnią się element na zamówienie i element menu jest mniej jasne. Wymagania są przedmiotem z zainteresowane strony biznesowe, jest ważne, aby udostępnić te różnice. Diagram klas jest przydatne narzędzie, aby pomóc w określeniu warunków i ich wzajemne relacje.  
-  
-  Model koncepcyjny klasy można tworzyć podstawowe słownictwo, za pomocą którego można opisać logikę biznesową w systemie. Jednak klasy w oprogramowaniu będzie zazwyczaj znacznie bardziej skomplikowane niż modelu koncepcyjnego, ponieważ implementacji należy wziąć pod uwagę problemów, takich jak wydajność, dystrybucji, elastyczność i innych czynników. Kilka różnych implementacji klasy koncepcyjny często znajdują się w jednym systemie.  
-  
-  Na przykład zamówień, mogą być reprezentowane w XML, SQL, HTML i języka C# w różnych częściach systemu, w różne interfejsy między częściami. Skojarzenie między zamówienie i Menu mogą być reprezentowane na wiele różnych sposobów, takich jak odwołania w kodzie języka C#, relacje w bazie danych lub zaktualizowana w informacjach odsyłaczy identyfikatory w formacie XML. Jednak mimo tych zmian, model koncepcyjny zawiera ważne informacje, które ma wartość true w każdej części oprogramowania. Diagram klas w przykładzie informuje, że w każdym wykonaniu będą istnieć tylko jeden Menu skojarzone z każdego zamówienia.  
-  
-  Rysowanie diagramu klas wymagania, pomaga Twojemu zespołowi:  
-  
-- Zdefiniowanie i ujednolicenie podstawowych pojęć używanych w dyskusji potrzeb użytkowników.  
-  
-- Wyjaśnienie relacji między tymi terminami.  
-  
-  Więcej informacji można znaleźć w następujących tematach:  
-  
-|Aby dowiedzieć się więcej o|Odczyt|  
-|--------------------|----------|  
-|Bardziej szczegółowe informacje dotyczące znajdowania wymagania dotyczące klas|[Diagramy klas UML: wskazówki](../modeling/uml-class-diagrams-guidelines.md)|  
-|Elementy na diagramie klasy koncepcyjne|[Diagramy klas UML: informacje](../modeling/uml-class-diagrams-reference.md)|  
-|Jak tworzyć kod z klasy koncepcyjne|[Modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md)|  
-  
- Na diagramie klasy koncepcyjny zwykle nie jest przydatne do umieszczenia strzałki na skojarzenia znacząca. Jest to spowodowane diagramu nie reprezentuje implementację. Asocjacje reprezentują relacje między obiektami w świecie rzeczywistym. Następujące [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozszerzenia Ustaw strzałki niekierunkowa jako domyślny: [Przykład: Modelowanie domeny UML funkcji](http://go.microsoft.com/fwlink/?LinkId=213849).  
-  
-## <a name="BusinessRules"></a> Wyświetlanie reguły biznesowe  
- Reguły biznesowej jest wymagana, która nie jest skojarzony z konkretnego przypadku użycia, należy przestrzegać w całym systemie.  
-  
- Wiele reguł biznesowych są ograniczenia relacje klas pojęć. Można napisać te *reguły biznesowe statyczne* jako komentarze skojarzone z odpowiednich klas na diagramie klasy pojęć. Na przykład:  
-  
- ![Reguła w komentarzu dołączona do klasy zamówienia. ](../modeling/media/uml-reqmcd2.png "UML_ReqmCD2")  
-  
- *Reguły biznesowe dynamiczne* ograniczyć dozwolone sekwencja zdarzeń. Na przykład używasz diagramie sekwencji lub działania, aby pokazać, że użytkownik musi zalogować się przed przystąpieniem do wykonywania innych operacji w systemie.  
-  
- Jednak wiele dynamiczne reguły może być bardziej efektywne i objęty wyrażona przez zamianę statyczne reguły. Na przykład można dodać atrybutu logicznego rejestrowane w do klasy w model koncepcyjny klasy. Czy dodatek rejestrowane jako postcondition dziennika w przypadku użycia, a następnie dodaj go jako warunek wstępny do większości innych przypadków użycia. Takie podejście umożliwia Unikaj definiowania wszystkich możliwych kombinacji sekwencja zdarzeń. Jest również bardziej elastyczne, gdy trzeba dodać nowych przypadków użycia w modelu.  
-  
- Należy zauważyć, że w tym miejscu to o sposób definiowania wymagań i jest niezależne od sposobu implementacji wymagania w kodzie programu.  
-  
- Więcej informacji można znaleźć w następujących tematach:  
-  
-|Aby dowiedzieć się więcej o|Odczyt|  
-|--------------------|----------|  
-|Bardziej szczegółowe informacje dotyczące znajdowania i rejestrowania reguły biznesowe statyczne|[Diagramy klas UML: wskazówki](../modeling/uml-class-diagrams-guidelines.md)|  
-|Elementy na diagramie klasy koncepcyjne|[Diagramy klas UML: informacje](../modeling/uml-class-diagrams-reference.md)|  
-|Jak tworzyć kod, który działa zgodnie z regułami biznesowymi|[Modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md)|  
-  
-## <a name="QoSRequirements"></a> Opisujące jakości wymagań  
- Istnieje kilka kategorii wymagań dotyczących jakości usługi. Ulepszenia obejmują następujące czynności:  
-  
-- Wydajność  
-  
-- Zabezpieczenia  
-  
-- Użyteczność  
-  
-- Niezawodność  
-  
-- Niezawodność  
-  
-  Niektóre z tych wymagań można uwzględnić w opisach przypadki użycia określonego. Inne wymagania nie są specyficzne dla przypadków użycia i najbardziej efektywne są zapisywane w osobnym dokumencie. Możliwe, to warto stosować się do słownictwa zdefiniowane za pomocą modelu wymagań. W poniższym przykładzie należy zauważyć, że głównym słowa używane wymaganie są tytuły aktorów, przypadki użycia i klas w poprzedniej ilustracji:  
-  
-  Jeśli restauracji usunie element Menu, gdy klient jest zamawianie posiłku, dowolny element zamówienia, który odwołuje się do tego elementu Menu będą wyświetlane w kolorze czerwonym.  
-  
-  Więcej informacji można znaleźć w następujących tematach:  
-  
-|Aby dowiedzieć się więcej o|Odczyt|  
-|--------------------|----------|  
-|Dołączanie dodatkowych dokumentów z przypadkami użycia|[Łączenie przypadków użycia z dokumentami i diagramami](../modeling/link-a-use-case-to-documents-and-diagrams.md)|  
-|Jak tworzyć kod, który działa zgodnie z jakości wymagań|[Modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md)|  
-  
-## <a name="Workflow"></a> Przepływ pracy przedstawiający między użytkownikami a systemem  
- Diagram aktywności można użyć, aby pokazać przepływ pracy między różnych przypadków użycia. Jest często przydatny rozpocząć modelu wymagań za pomocą rysowania na diagramie aktywności przedstawiający głównych zadań, które użytkownicy wykonują — zarówno w systemie, jak i poza nim.  
-  
- Na przykład:  
-  
- ![Działanie z trzech akcji i pętli. ](../modeling/media/uc-reqmwfact.png "UC_ReqmWFAct")  
-  
- Możesz narysować diagramy przypadków użycia i diagramy aktywności, aby wyświetlić różne widoki te same informacje.  Diagram przypadków użycia jest bardziej efektywne, pokazujące zagnieżdżanie mniejszych działań wewnątrz działania większy, ale nie uwzględnia przepływ pracy. Na przykład:  
-  
- ![Przypadki użycia dla poprzedniej akcji](../modeling/media/uml-reqmwfuc.png "UML_ReqmWFUC")  
-  
- Zwróć uwagę, można również użyć diagramów aktywności opisujący algorytmów w oprogramowaniu, ale w przypadku użycia diagramy dla procesu biznesowego, skupić się na akcjach, które są widoczne poza systemem.  
-  
- Więcej informacji można znaleźć w następujących tematach:  
-  
-|Aby dowiedzieć się więcej o|Odczyt|  
-|--------------------|----------|  
-|Więcej informacji na temat sposobu definiowania przepływów pracy firmy|[Diagramy aktywności UML: wskazówki](../modeling/uml-activity-diagrams-guidelines.md)|  
-|Elementy na diagramie aktywności|[Diagramy aktywności UML: informacje](../modeling/uml-activity-diagrams-reference.md)|  
-|Jak tworzyć kodu z diagramów aktywności|[Modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md)|  
-  
-## <a name="Sequences"></a> Wyświetlanie interakcje między użytkownikami a systemem  
- Diagram sekwencji służy do pokazywania wymiana wiadomości między systemem i aktorów lub między częściami systemu. Dzięki temu widok czynności w przypadku użycia, które wykazują, bardzo sekwencja interakcji. Diagramy sekwencji są szczególnie przydatne w przypadku, gdy istnieją interakcję na kilka stron w przypadku użycia, której system ma również interfejs API.  
-  
- Na przykład:  
-  
- ![Diagram sekwencji z systemu i aktorów. ](../modeling/media/uml-reqmseq.png "UML_ReqmSeq")  
-  
- Jedną z zalet diagramy sekwencji jest łatwo sprawdzić, jakie komunikaty są dostępne w systemie, który jest konstruowanie. Aby zaprojektować systemu, Zamień pojedynczej linii życia systemu oddzielne linię życia dla każdego z jego składników i następnie następuje wyświetlenie interakcje między nimi w odpowiedzi na każdy przychodzący komunikat.  
-  
- Więcej informacji można znaleźć w następujących tematach:  
-  
-|Aby dowiedzieć się więcej o|Odczyt|  
-|--------------------|----------|  
-|Więcej informacji na temat sposobu definiowania interakcje|[Diagramy sekwencji UML: wskazówki](../modeling/uml-sequence-diagrams-guidelines.md)|  
-|Elementy na diagramie sekwencji|[Diagramy sekwencji UML: informacje](../modeling/uml-sequence-diagrams-reference.md)|  
-|Jak tworzyć kodu z diagramów sekwencji|[Modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md)|  
-  
-## <a name="using-a-model-to-reduce-inconsistencies"></a>Przy użyciu modelu w celu zmniejszenia niespójności  
- Tworzenie modelu zwykle powoduje znaczny spadek niespójności i niejasności w wymaganiach użytkowników. Różne osoby zainteresowane działaniem mają często różne ustalenia świata firm, w którym działa system. W związku z tym pierwsze zadanie jest aby rozwiązać te różnice między dla klientów.  
-  
- Można zauważyć, że wiele pytań dotyczących domeny biznesowej naturalnie wystąpić podczas tworzenia modelu. Umieszczając te pytania dla użytkowników, co wpłynie na zredukowanie potrzeby zmiany na późniejszym etapie w projekcie. Poniżej przedstawiono niektóre konkretne pytania, spróbuj odpowiedzieć sobie na początku, a następnie poprosić zainteresowane strony biznesowe czy jasne odpowiedzi:  
-  
-- Dla każdej klasy modelu wymagań poproś "co przypadek użycia tworzy wystąpienia tej klasy?" Na przykład w zamawianie posiłku usług online, możesz zadawać, "co przypadek użycia tworzy wystąpienia klasy Menu restauracji?" Może to prowadzić do dyskusję na temat sposobu nowej restauracji jest zarejestrowana w usłudze i wspiera jego menu. Możesz zadawać pytania podobne informacje co tworzy lub zmienia atrybuty i asocjacje.  
-  
-- Dla każdego przypadku użycia w modelu wymagań spróbuj opisu wynik lub postcondition każdego przypadku użycia w słowach dostarczone przez diagramy klas. Jest często przydatny pokazać efekt przypadek użycia przez powstawać wystąpienia klas, przed i po wystąpieniu przypadek użycia. Na przykład jeśli postcondition przypadków użycia jest "element menu jest dodawany do zamówienia klienta", szkic wystąpień klas zamówienie i element Menu. Pokaż skutki przypadek użycia, takie jak nowe łącze lub nowy obiekt w innym kolorze lub nowe rysunku. Prowadzi to często dyskusje na temat jakie informacje są niezbędne w modelu. Mimo że wymagania dotyczące klas bezpośrednio nie dotyczą one z implementacją opisują one systemu będzie potrzebnych do przechowywania i przesyłania informacji.  
-  
-- Poproś o ograniczenia dotyczące atrybuty i asocjacje, szczególnie ograniczenia obejmujące więcej niż jeden atrybut lub skojarzenia.  
-  
-- Poproś o prawidłowe i nieprawidłowe sekwencje przypadki użycia, rysowania diagramów sekwencji lub działania w celu przedstawienia ich.  
-  
-  Dzięki badanie relacje między widokami, które udostępniają różne diagramy, może szybko zrozumieć główne pojęcia, z którymi użytkownicy korzystają, oraz pomóc je, aby zrozumieć, czego potrzebują, z systemu. Można również osiągnąć lepiej zrozumieć, jakie wymagania zainteresowane strony są co najmniej pewne informacje. Możesz zaplanować tworzenie tych funkcji, co najmniej w formie uproszczonej na wczesnym etapie projektu, aby użytkownicy mogli eksperymentować z nimi.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Edytowanie modeli i diagramów UML](../modeling/edit-uml-models-and-diagrams.md)   
- [Opracowywanie testów na podstawie modelu](../modeling/develop-tests-from-a-model.md)   
- [Używanie modeli w procesie tworzenia aplikacji](../modeling/use-models-in-your-development-process.md)   
- [Modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md)   
- [Przykładowe rozszerzenie programu VS: Funkcje modelowanie domeny UML](http://go.microsoft.com/fwlink/?LinkId=213849)   
- [Przykładowe rozszerzenie programu VS: Kolor elementów UML przez stereotyp](http://go.microsoft.com/fwlink/?LinkID=213841)   
- [Przykładowe rozszerzenie programu VS: Link elementów UML, diagramy, pliki i inne elementy](http://go.microsoft.com/fwlink/?LinkID=213813)   
- [Przykładowe rozszerzenie programu VS: Połączenia kształtów w diagramie UML](http://go.microsoft.com/fwlink/?LinkID=213809)   
- [Wideo: Modelowanie domeny biznesowej](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/)
+> W tych tematach "system" oznacza system lub aplikację, którą tworzysz. Może to być duża kolekcja wielu składników oprogramowania i sprzętu. lub pojedynczej aplikacji; lub składnika oprogramowania w większym systemie. W każdym przypadku model wymagań opisuje zachowanie widoczne spoza systemu, niezależnie od tego, czy za pośrednictwem interfejsu użytkownika, czy interfejsu API.
+
+## <a name="common-tasks"></a>Typowe zadania
+ Można utworzyć kilka różnych widoków wymagań użytkowników.  Każdy widok zawiera informacje określonego typu.  Podczas tworzenia tych widoków najlepiej jest przebiegać często od jednego do drugiego. Możesz rozpocząć od dowolnego widoku.
+
+|Diagram lub dokument|Co opisano w modelu wymagań|Paragraf|
+|-------------------------|-----------------------------------------------|-------------|
+|Diagramów przypadków użycia|Kto używa systemu i co robi z nim.|[Opis sposobu użycia systemu](#UseCases)|
+|Diagram klasy koncepcyjnej|Słownik typów, które są używane do opisywania wymagań; typy widoczne w interfejsie systemu.|[Definiowanie terminów używanych do opisywania wymagań](#RequirementsClasses)|
+|Diagramu aktywności|Przepływ pracy i informacje między działaniami wykonywanymi przez użytkowników i system lub jej części.|[Wyświetlanie przepływu pracy między użytkownikami i systemem](#Workflow)|
+|Diagramów sekwencji|Sekwencja interakcji między użytkownikami i systemem lub jej częściami. Alternatywny widok diagramu aktywności.|[Wyświetlanie interakcji między użytkownikami i systemem](#Sequences)|
+|Dodatkowe dokumenty lub elementy robocze|Kryteria wydajności, bezpieczeństwa, użyteczności i niezawodności.|[Opisywanie wymagań dotyczących jakości usług](#QoSRequirements)|
+|Dodatkowe dokumenty lub elementy robocze|Ograniczenia i reguły niespecyficzne dla określonego przypadku użycia|[Wyświetlanie reguł firmy](#BusinessRules)|
+
+ Należy zauważyć, że większość typów diagramów może być używana do innych celów. Aby zapoznać się z omówieniem typów diagramów, zobacz [Tworzenie modeli dla aplikacji](../modeling/create-models-for-your-app.md). Aby uzyskać podstawowe informacje o diagramach rysowania, zobacz [Edycja modeli UML i diagramów](../modeling/edit-uml-models-and-diagrams.md).
+
+## <a name="UseCases"></a>Opis sposobu użycia systemu
+ Utwórz diagramy przypadków użycia, aby opisać, kto używa systemu i co z nich korzysta. Przypadek użycia reprezentuje cel użytkownika systemu i procedurę wykonywaną w celu osiągnięcia celu.
+
+ Na przykład system sprzedaży posiłku w trybie online musi umożliwiać klientom wybór elementów z menu, a także Zezwalanie na aktualizowanie menu w usłudze Restauracje. Można podsumować ten element na diagramie przypadków użycia:
+
+ ![Przypadki użycia dla klienta i restauracji](../modeling/media/uml-reqmuc1.png "UML_ReqmUC1")
+
+ Możesz także pokazać, jak przypadek użycia składa się z mniejszych przypadków. Na przykład porządkowanie posiłku jest częścią zakupu posiłku, który obejmuje również płatność i dostarczanie:
+
+ ![System uczestniczy w płatności, ale nie dostawy.](../modeling/media/uml-reqmuc2.png "UML_ReqmUC2")
+
+ Można także pokazać, które przypadki użycia są zawarte w zakresie programowania. Na przykład system na ilustracji nie uczestniczy w przypadku użycia posiłku. Pozwala to na ustawienie kontekstu dla pracy programistycznej. (W diagramie przypadku użycia kontenery podsystemów mogą służyć do reprezentowania systemu lub jego składników).
+
+ Pomaga również zespołowi omówić, co zostanie uwzględnione w kolejnych wersjach. Można na przykład omówić, czy w początkowej wersji systemu płatność za mączkę jest uporządkowana bezpośrednio między restauracji a klientem, zamiast przechodzić przez system. W takim przypadku można przenieść pozycję Płatność za posiłki na zewnątrz prostokąta systemowego do pierwszego obiadu w przypadku wersji początkowej.
+
+ Diagram przypadków użycia zawiera tylko podsumowanie przypadków użycia. Aby uzyskać bardziej szczegółowe opisy, można połączyć przypadki użycia na diagramie, aby oddzielić dokumenty i inne diagramy. Aby dowiedzieć się, jak to zrobić, zobacz [łączenie przypadku użycia z dokumentami i diagramami](../modeling/link-a-use-case-to-documents-and-diagrams.md).
+
+ Rysowanie diagramu przypadków użycia pomaga zespołowi:
+
+- Należy skoncentrować się na tym, co użytkownicy oczekują w systemie, bez rozpraszania szczegółów implementacji.
+
+- Omawianie zakresu systemu lub określonych wydań systemu.
+
+  Dodatkowe informacje znajdują się w następujących tematach:
+
+|Aby dowiedzieć się więcej o|Odczyt|
+|--------------------|----------|
+|Bardziej szczegółowe informacje na temat tworzenia przypadków użycia|[Diagramy przypadków użycia UML: wskazówki](../modeling/uml-use-case-diagrams-guidelines.md)|
+|Elementy na diagramie przypadku użycia|[Diagramy przypadków użycia UML: informacje](../modeling/uml-use-case-diagrams-reference.md)|
+|Jak opracowywać kod z przypadków użycia|[Modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md)|
+
+## <a name="RequirementsClasses"></a>Definiowanie terminów używanych do opisywania wymagań
+ Diagramy klas UML ułatwiają tworzenie spójnego słownictwa koncepcji firmy używanych w następujących celach:
+
+- Przez użytkowników w celu omówienia firmy, w której działa system.
+
+- Aby opisać potrzeby użytkowników, na przykład opisy przypadków użycia, reguły biznesowe i historie użytkownika.
+
+- Typy informacji wymienianych w interfejsie API systemu lub za pomocą interfejsu użytkownika.
+
+- Opisy testów systemu lub akceptacji.
+
+  Gdy są one używane do tego celu, zawartość diagramu klas UML jest nazywana diagramem klasy koncepcyjnej. (Jest on również nazywany modelem *domeny* lub *modelem klasy analizy*).
+
+  Na diagramie klasy koncepcyjnej są wyświetlane tylko te klasy, które są potrzebne w opisie wymagań, bez pokazywania szczegółowych informacji o projekcie wewnętrznym systemu. Na diagramie nie są wyświetlane żadne szczegóły wewnętrznego projektu systemu. Zwykle nie są wyświetlane operacje ani interfejsy w klasach koncepcyjnych.
+
+  Na przykład można narysować te klasy koncepcyjne na potrzeby systemu obiadu teraz:
+
+  ![Menu klas, kolejność, element menu, element kolejności.](../modeling/media/uml-reqmcd1.png "UML_ReqMCD1")
+
+  Diagram klasy koncepcyjnej zawiera słownictwo warunków, które są używane w całym modelu wymagań. Na przykład w szczegółowym opisie pozostałej części zamówienia przypadku użycia można napisać:
+
+  Klient wybiera *menu* , z którego ma zostać utworzone *Zamówienie*, a następnie tworzy *elementy zamówienia* w *kolejności* , wybierając *pozycje menu* z *menu*.
+
+  Zwróć uwagę na to, jak terminy używane w tym opisie są nazwami klas w modelu. Diagram usuwa niejasności z relacji między tymi klasami. Na przykład jasno pokazuje, że każde zamówienie jest skojarzone z tylko jednym menu.
+
+  Niezrozumiałe informacje o wymaganiach użytkowników mogą być często śledzone w celu zapoznania się z szczegółowymi wyrazami. Na przykład większość restauracji będzie mieć wspólne zrozumienie menu warunki i kolejność, ale różnica między elementem w kolejności i elementem w menu jest mniej jasne. Gdy te wymagania są omawiane w zainteresowanych podmiotach, ważne jest, aby ujawnić te różnice. Diagram klas jest użytecznym narzędziem ułatwiającym wyjaśnienie warunków i ich relacji.
+
+  Model klasy koncepcyjnej może stanowić podstawowe słownictwo, za pomocą którego można opisać system logiki biznesowej. Jednak klasy w oprogramowaniu zwykle są znacznie bardziej skomplikowane niż model koncepcyjny, ponieważ implementacja musi rozważyć problemy, takie jak wydajność, dystrybucja, elastyczność i inne czynniki. Kilka różnych implementacji klasy koncepcyjnej często można znaleźć w jednym systemie.
+
+  Na przykład zamówienia mogą być reprezentowane w formacie XML, SQL, HTML i C# w różnych częściach systemu oraz w różnych interfejsach między częściami. Skojarzenie między kolejnością a menu może być reprezentowane na wiele różnych sposobów, takich jak odwołania w C# kodzie, relacjach w bazie danych lub identyfikatory, do których istnieją odwołania w kodzie XML. Jednak pomimo tych różnic model koncepcyjny zawiera ważne informacje, które są prawdziwe w każdej części oprogramowania. Diagram klas w przykładzie informuje nas, że w każdej implementacji będzie tylko jedno menu skojarzone z każdym zamówieniem.
+
+  Rysowanie diagramu klas wymagań ułatwia Twojemu zespołowi:
+
+- Definiowanie i standaryzacja podstawowych terminów używanych w dyskusjach dotyczących potrzeb użytkowników.
+
+- Wyjaśnij relacje między tymi postanowieniami.
+
+  Dodatkowe informacje znajdują się w następujących tematach:
+
+|Aby dowiedzieć się więcej o|Odczyt|
+|--------------------|----------|
+|Bardziej szczegółowe informacje na temat znajdowania klas wymagań|[Diagramy klas UML: wskazówki](../modeling/uml-class-diagrams-guidelines.md)|
+|Elementy na diagramie klasy koncepcyjnej|[Diagramy klas UML: informacje](../modeling/uml-class-diagrams-reference.md)|
+|Jak opracowywać kod z klas koncepcyjnych|[Modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md)|
+
+ Na diagramie klasy koncepcyjnej zazwyczaj nie jest przydatne umieszczenie strzałek na skojarzeniach, aby reprezentować kierunek nawigacji. Dzieje się tak, ponieważ diagram nie reprezentuje implementacji. Skojarzenia reprezentują relacje między obiektami rzeczywistymi. Następujące [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozszerzają strzałki niekierunkowe domyślnie: [przykład: funkcje modelowania domeny UML](http://go.microsoft.com/fwlink/?LinkId=213849).
+
+## <a name="BusinessRules"></a>Wyświetlanie reguł firmy
+ Reguła biznesowa jest wymagana, która nie jest skojarzona z konkretnym przypadkiem użycia i powinna być zastosowana w całym systemie.
+
+ Wiele reguł biznesowych to ograniczenia dotyczące relacji między klasami koncepcyjnymi. Te *statyczne reguły biznesowe* można napisać jako komentarze skojarzone z odpowiednimi klasami na diagramie klasy koncepcyjnej. Na przykład:
+
+ ![Reguła w komentarzu dołączonym do klasy Order.](../modeling/media/uml-reqmcd2.png "UML_ReqmCD2")
+
+ *Dynamiczne reguły biznesowe* ograniczają dozwolone sekwencje zdarzeń. Na przykład można użyć sekwencji lub diagramu aktywności, aby pokazać, że użytkownik musi się zalogować przed wykonaniem innych operacji w systemie.
+
+ Jednak wiele reguł dynamicznych może być bardziej wydajnych i ogólnie określonych przez zastępowanie ich regułami statycznymi. Na przykład, można dodać atrybut Boolean "zalogowany" do klasy w modelu klasy koncepcyjnej. Należy dodać zalogowany jako błąd warunku końcowego w przypadku użycia i dodać go jako warunek wstępny większości innych przypadków użycia. Takie podejście pozwala uniknąć definiowania wszystkich możliwych kombinacji sekwencji zdarzeń. Jest to również bardziej elastyczne, gdy trzeba dodać do modelu nowe przypadki użycia.
+
+ Należy zauważyć, że w tym miejscu opisano sposób definiowania wymagań oraz to, że jest on niezależny od sposobu implementacji wymagań w kodzie programu.
+
+ Dodatkowe informacje znajdują się w następujących tematach:
+
+|Aby dowiedzieć się więcej o|Odczyt|
+|--------------------|----------|
+|Bardziej szczegółowe informacje na temat znajdowania i rejestrowania statycznych reguł firmy|[Diagramy klas UML: wskazówki](../modeling/uml-class-diagrams-guidelines.md)|
+|Elementy na diagramie klasy koncepcyjnej|[Diagramy klas UML: informacje](../modeling/uml-class-diagrams-reference.md)|
+|Jak opracowywać kod zgodny z regułami biznesowymi|[Modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md)|
+
+## <a name="QoSRequirements"></a>Opisywanie wymagań Quality of Service
+ Istnieje kilka kategorii wymagań dotyczących jakości usług. Należą do nich następujące elementy:
+
+- Wydajność
+
+- Zabezpieczenia
+
+- Wykorzystania
+
+- Niezawodność
+
+- Niezawodność
+
+  Niektóre z tych wymagań można uwzględnić w opisach konkretnych przypadków użycia. Inne wymagania nie są specyficzne dla przypadków użycia i są najbardziej efektywnie zapisywane w osobnym dokumencie. Gdy jest to możliwe, warto przestrzegać słownictwa zdefiniowanego przez model wymagań. W poniższym przykładzie należy zauważyć, że główne wyrazy używane w wymaganiu są tytułami aktorów, przypadków użycia i klas na powyższych ilustracjach:
+
+  Jeśli restauracji usunie element menu, gdy klient porządkuje posiłk, każdy element zamówienia, który odwołuje się do tego elementu menu będzie wyświetlany na czerwono.
+
+  Dodatkowe informacje znajdują się w następujących tematach:
+
+|Aby dowiedzieć się więcej o|Odczyt|
+|--------------------|----------|
+|Dołączanie dodatkowych dokumentów do przypadków użycia|[Łączenie przypadków użycia z dokumentami i diagramami](../modeling/link-a-use-case-to-documents-and-diagrams.md)|
+|Jak opracowywać kod, który jest zgodny z wymaganiami dotyczącymi jakości usług|[Modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md)|
+
+## <a name="Workflow"></a>Wyświetlanie przepływu pracy między użytkownikami i systemem
+ Możesz użyć diagramu aktywności, aby pokazać przepływ pracy między różnymi przypadkami użycia. Często warto rozpocząć model wymagań, rysując diagram aktywności pokazujący główne zadania wykonywane przez użytkowników — zarówno w systemie, jak i poza nim.
+
+ Na przykład:
+
+ ![Działanie z trzema akcjami i pętlą.](../modeling/media/uc-reqmwfact.png "UC_ReqmWFAct")
+
+ Diagramy przypadków użycia i diagramy aktywności można rysować, aby wyświetlić różne widoki tych samych informacji.  Diagram przypadków użycia jest bardziej efektywny, pokazując zagnieżdżenie mniejszych akcji w ramach większego działania, ale nie pokazuje przepływu pracy. Na przykład:
+
+ ![Przypadki użycia dla poprzednich akcji](../modeling/media/uml-reqmwfuc.png "UML_ReqmWFUC")
+
+ Należy zauważyć, że można również użyć diagramów aktywności do przedstawiania algorytmów w oprogramowaniu, ale w przypadku używania diagramów dla procesu biznesowego należy skoncentrować się na działaniach, które są widoczne poza systemem.
+
+ Dodatkowe informacje znajdują się w następujących tematach:
+
+|Aby dowiedzieć się więcej o|Odczyt|
+|--------------------|----------|
+|Więcej informacji na temat definiowania przepływów pracy biznesowej|[Diagramy aktywności UML: wskazówki](../modeling/uml-activity-diagrams-guidelines.md)|
+|Elementy na diagramie aktywności|[Diagramy aktywności UML: informacje](../modeling/uml-activity-diagrams-reference.md)|
+|Jak opracowywać kod z diagramów aktywności|[Modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md)|
+
+## <a name="Sequences"></a>Wyświetlanie interakcji między użytkownikami i systemem
+ Możesz użyć diagramu sekwencji, aby pokazać wymianę komunikatów między systemem i aktorami zewnętrznymi lub między częściami systemu. Zapewnia to przegląd kroków w przypadku użycia, który pokazuje bardzo jasne sekwencje interakcji. Diagramy sekwencji są szczególnie przydatne w przypadku, gdy istnieje kilka stron współpracujących w przypadku użycia, a także w przypadku, gdy system ma interfejs API.
+
+ Na przykład:
+
+ ![Diagram sekwencji z systemem i aktorami.](../modeling/media/uml-reqmseq.png "UML_ReqmSeq")
+
+ Jedną z zalet diagramów sekwencji jest łatwe sprawdzenie, jakie komunikaty są wykonywane w systemie, który tworzysz. Aby zaprojektować system, można zamienić pojedynczą linię życia systemu z osobną linią życia dla każdego z jej składników, a następnie pokazać interakcje między nimi w odpowiedzi na każdą wiadomość przychodzącą.
+
+ Dodatkowe informacje znajdują się w następujących tematach:
+
+|Aby dowiedzieć się więcej o|Odczyt|
+|--------------------|----------|
+|Więcej informacji na temat sposobu definiowania interakcji|[Diagramy sekwencji UML: wskazówki](../modeling/uml-sequence-diagrams-guidelines.md)|
+|Elementy na diagramie sekwencji|[Diagramy sekwencji UML: informacje](../modeling/uml-sequence-diagrams-reference.md)|
+|Jak opracowywać kod z diagramów sekwencji|[Modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md)|
+
+## <a name="using-a-model-to-reduce-inconsistencies"></a>Korzystanie z modelu w celu zmniejszenia niespójności
+ Utworzenie modelu zwykle skutkuje znaczącym zmniejszeniem niespójności i niejasności w wymaganiach użytkowników. Różne osoby zainteresowane często mają różne zrozumienia świata firmy, w których działa system. W związku z tym pierwsze zadanie polega na rozwiązaniu tych różnic między klientami.
+
+ Jeśli tworzysz model, wiele pytań dotyczących domeny biznesowej powstało w sposób naturalny. Umieszczenie tych pytań dla użytkowników spowoduje zmniejszenie potrzeb zmian w późniejszym etapie projektu. Poniżej przedstawiono kilka konkretnych pytań, na które można zadać swoją firmę, a następnie poproszenie zainteresowanych stron, jeśli odpowiedź jest niejasne:
+
+- Dla każdej klasy w modelu wymagań należy zapytać "jakie przypadki użycia tworzą wystąpienia tej klasy?". Na przykład w usłudze zamawiania posiłków online można zażądać, "jakiego przypadku użycia tworzy wystąpienia klasy menu restauracji?". Może to prowadzić do omówienia sposobu rejestracji nowej restauracji w usłudze i współtworzenia menu. Możesz zadać podobne pytania dotyczące tworzenia lub zmieniania atrybutów i skojarzeń.
+
+- Dla każdego przypadku użycia w modelu wymagań spróbuj opisać wynik lub błąd warunku końcowego każdego przypadku użycia w słowach dostarczonych przez diagramy klas. Często warto pokazać efekt przypadku użycia przez Szkicowanie wystąpień klas przed i po wystąpieniu przypadku użycia. Na przykład, jeśli przypadek użycia błąd warunku końcowego brzmi "element menu jest dodawany do zamówienia klienta", "szkic wystąpienia klasy Order i Item menu. Pokaż efekty przypadku użycia, takie jak nowy link lub nowy obiekt, w innym kolorze lub w nowym rysunku. Często prowadzi to do dyskusji na temat tego, jakie informacje są niezbędne w modelu. Mimo że klasy wymagań nie są bezpośrednio objęte implementacją, określają informacje, które system będzie musiał przechowywać i przesłać.
+
+- Podawaj ograniczenia dotyczące atrybutów i skojarzeń, szczególnie ograniczeń obejmujących więcej niż jeden atrybut lub skojarzenie.
+
+- Pytania dotyczące prawidłowych i nieprawidłowych sekwencji przypadków użycia, rysowania sekwencji lub diagramów aktywności w celu zilustrowania ich.
+
+  Sprawdzając relacje między widokami, które udostępniają różne diagramy, możesz szybko zrozumieć główne koncepcje, z którymi pracują użytkownicy, i pomóc im zrozumieć, czego potrzebują z systemu. Możesz również lepiej zrozumieć, jakie wymagania uczestnicy projektu są na nich określone. Można zaplanować tworzenie tych funkcji, co najmniej w uproszczonej formie, na wczesnym etapie projektu, dzięki czemu użytkownicy mogą eksperymentować z nimi.
+
+## <a name="see-also"></a>Zobacz też
+ [Edytowanie modeli i diagramów UML](../modeling/edit-uml-models-and-diagrams.md) [Tworzenie testów z modelu korzystanie z](../modeling/develop-tests-from-a-model.md) [modeli w modelu procesów programistycznych](../modeling/use-models-in-your-development-process.md) [](../modeling/model-your-app-s-architecture.md) [Przykładowa aplikacja VS Extension: funkcje modelowania domeny UML](http://go.microsoft.com/fwlink/?LinkId=213849) [przykład rozszerzenia vs: kolor UML Elementy według przykładowego elementu Stereotype](http://go.microsoft.com/fwlink/?LinkID=213841) [program vs Extension: łączenie elementów UML z diagramami, plikami i innymi elementami](http://go.microsoft.com/fwlink/?LinkID=213813) [przykładowe rozszerzenie vs: wyrównywanie kształtów na diagramie UML](http://go.microsoft.com/fwlink/?LinkID=213809) [wideo: Modelowanie domeny biznesowej](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/)

@@ -1,5 +1,5 @@
 ---
-title: Narzędzia do lokalizacji
+title: Narzędzia lokalizacyjne
 ms.date: 02/15/2019
 ms.topic: reference
 helpviewer_keywords:
@@ -10,46 +10,46 @@ helpviewer_keywords:
 - world-ready applications
 - international applications [Visual Studio]
 ms.assetid: 4d9815ae-3e80-4b4d-933d-f8309aee18d5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 934427c2bfba769968b7aeb364625b71af47eca7
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 886c31eb76a2cd440f1f8189aaacf592e43d34fa
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820870"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72603456"
 ---
-# <a name="develop-globalized-and-localized-apps"></a>Tworzenie aplikacji uniwersalnych i zlokalizowanych
+# <a name="develop-globalized-and-localized-apps"></a>Opracowywanie aplikacji globalnych i zlokalizowanych
 
-Program Visual Studio sprawia, że tworzenie aplikacji dla publiczności międzynarodowej łatwe dzięki wykorzystaniu usług, wbudowaną [.NET](/dotnet/standard/globalization-localization/).
+Program Visual Studio ułatwia tworzenie użytkowników w różnych krajach, wykorzystując usługi wbudowane w [platformę .NET](/dotnet/standard/globalization-localization/).
 
-Na przykład system projektu dla aplikacji Windows Forms można wygenerować plików zasobów dla rezerwowego kultura interfejsu użytkownika i każdego dodatkowego kultura interfejsu użytkownika. Podczas tworzenia projektu w programie Visual Studio, pliki zasobów są kompilowane z formatu programu Visual Studio XML (resx) na pośrednie format binarny (.resources), które następnie są osadzone w zestawach satelickich. Aby uzyskać więcej informacji, zobacz [pliki zasobów w programie Visual Studio](/dotnet/framework/resources/creating-resource-files-for-desktop-apps#VSResFiles) i [tworzenie zestawów satelickich dla aplikacji klasycznych](/dotnet/framework/resources/creating-satellite-assemblies-for-desktop-apps).
+Na przykład system projektu dla aplikacji Windows Forms może generować pliki zasobów dla rezerwowej kultury interfejsu użytkownika i każdej dodatkowej kultury interfejsu użytkownika. Podczas kompilowania projektu w programie Visual Studio pliki zasobów są kompilowane z formatu XML programu Visual Studio (resx) do pośredniego formatu binarnego (. resources), które są następnie osadzone w zestawach satelickich. Aby uzyskać więcej informacji, zobacz [pliki zasobów w programie Visual Studio](/dotnet/framework/resources/creating-resource-files-for-desktop-apps#VSResFiles) i [Tworzenie zestawów satelickich dla aplikacji klasycznych](/dotnet/framework/resources/creating-satellite-assemblies-for-desktop-apps).
 
 ## <a name="bidirectional-languages"></a>Języki dwukierunkowe
 
-Visual Studio umożliwia tworzenie aplikacji, które poprawnie wyświetlania tekstu w językach zapisywane prawej do lewej, łącznie z arabski i hebrajski. W przypadku niektórych funkcji można po prostu ustaw właściwości. W innych przypadkach należy zaimplementować funkcje w kodzie.
+Za pomocą programu Visual Studio można tworzyć aplikacje, które prawidłowo wyświetlają tekst w językach pisanych od prawej do lewej, w tym arabski i hebrajski. W przypadku niektórych funkcji można po prostu ustawić właściwości. W innych przypadkach należy zaimplementować funkcje w kodzie.
 
 > [!NOTE]
-> Aby można było wprowadzanie i wyświetlanie języki dwukierunkowe, musisz pracować z wersją systemu Windows, który jest skonfigurowany przy użyciu odpowiedniego języka. Może to być angielska wersja systemu Windows przy użyciu odpowiedniego pakietu języka zainstalowane lub prawidłowo zlokalizowaną wersję Windows.
+> Aby móc wprowadzać i wyświetlać języki dwukierunkowe, musisz pracować z wersją systemu Windows, która jest skonfigurowana przy użyciu odpowiedniego języka. Może to być angielska wersja systemu Windows z zainstalowanym odpowiednim pakietem językowym lub odpowiednio zlokalizowaną wersją systemu Windows.
 
-### <a name="apps-that-support-bidirectional-languages"></a>Aplikacje, które obsługują języki dwukierunkowe
+### <a name="apps-that-support-bidirectional-languages"></a>Aplikacje obsługujące Języki dwukierunkowe
 
-- Aplikacje Windows
+- Aplikacje systemu Windows
 
-   Możesz utworzyć w pełni aplikacjach, które obejmują obsługę tekstu dwukierunkowego, od prawej do lewej kolejność czytania i dublowanie (cofania układu systemu windows, menu, okna dialogowe i tak dalej). Z wyjątkiem funkcji dublowania, te funkcje są dostępne, domyślnie lub zgodnie z ustawieniami właściwości. Dublowanie obsługę natury niektóre funkcje, takie jak okna komunikatów. Jednak w innych przypadkach należy zaimplementować dublowania w kodzie. Aby uzyskać więcej informacji, zobacz [Dwukierunkowa obsługa aplikacji Windows Forms](/dotnet/framework/winforms/advanced/bi-directional-support-for-windows-forms-applications).
+   Można tworzyć w pełni dwukierunkowe aplikacje, które obejmują obsługę tekstu dwukierunkowego, kolejność odczytywania od prawej do lewej i dublowanie (odwracanie układu okien, menu, okien dialogowych itd.). Z wyjątkiem dublowania te funkcje są dostępne domyślnie lub jako ustawienia właściwości. Dublowanie jest obsługiwane w sposób niezależny dla niektórych funkcji, takich jak okna komunikatów. Jednak w innych przypadkach należy zaimplementować dublowanie w kodzie. Aby uzyskać więcej informacji, zobacz [Obsługa dwukierunkowych aplikacji Windows Forms](/dotnet/framework/winforms/advanced/bi-directional-support-for-windows-forms-applications).
 
 - Aplikacje internetowe
 
-   Obsługa usług sieci Web, wysyłanie i odbieranie UTF-8 i tekst w formacie Unicode, czemu są odpowiednie dla aplikacji, które obejmują języki dwukierunkowe. Zależą od przeglądarki dla interfejsu użytkownika aplikacji klienta sieci Web, więc stopień dwukierunkowe obsługuje w aplikacji sieci web jest zależny od stopnia przeglądarki użytkownika obsługuje te funkcje dwukierunkowy. W programie Visual Studio możesz tworzyć aplikacje z obsługą tekst arabski lub hebrajski, kolejność czytania od prawej do lewej, kodowanie pliku i ustawienia lokalnych kultury. Aby uzyskać więcej informacji, zobacz [Dwukierunkowa obsługa aplikacji sieci web platformy ASP.NET](https://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03).
+   Usługi sieci Web obsługują wysyłanie i otrzymywanie tekstu UTF-8 i Unicode, dzięki czemu są odpowiednie dla aplikacji, które zawierają języki dwukierunkowe. Aplikacje klienckie sieci Web korzystają z przeglądarek dla ich interfejsów użytkownika, więc stopień dwukierunkowego wsparcia w aplikacji sieci Web zależy od tego, jak dobrze przeglądarka użytkownika obsługuje te funkcje dwukierunkowe. W programie Visual Studio można tworzyć aplikacje obsługujące tekst arabski lub hebrajski, kolejność odczytywania od prawej do lewej, kodowanie plików i ustawienia kultur lokalnych. Aby uzyskać więcej informacji, zobacz [dwukierunkowe wsparcie dla aplikacji sieci web ASP.NET](https://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03).
 
 > [!NOTE]
-> Aplikacje konsoli nie uwzględniają tekstu Obsługa języków dwukierunkowych. Jest to wynikiem sposobu działania Windows za pomocą aplikacji konsoli.
+> Aplikacje konsolowe nie obejmują obsługi tekstu w językach dwukierunkowych. Jest to wynikiem działania systemu Windows z aplikacjami konsolowymi.
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Obsługa języków dwukierunkowych w programie Visual Studio](use-bidirectional-languages.md)
-- [Sprzedawać i lokalizować aplikacje platformy .NET](/dotnet/standard/globalization-localization/)
+- [Globalizacja i lokalizowanie aplikacji platformy .NET](/dotnet/standard/globalization-localization/)
 - [Zasoby w aplikacjach .NET](/dotnet/framework/resources/)

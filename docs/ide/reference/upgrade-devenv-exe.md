@@ -7,21 +7,21 @@ helpviewer_keywords:
 - Devenv, /upgrade switch
 - upgrade Devenv switch
 ms.assetid: 3468045c-5cc9-4157-9a9d-622452145d27
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fa2e2eaa583f7da0437907fdaa3e7af2fe4a0e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c9894056babdd8615e4ae052eb73e91e9b108acc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789306"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72622418"
 ---
 # <a name="upgrade-devenvexe"></a>/Upgrade (devenv.exe)
 
-Uaktualnia plik rozwiązania i wszystkie jego pliki projektu lub pliku projektu, określony do bieżącego formatu Visual Studio dla tych plików.
+Aktualizuje plik rozwiązania oraz wszystkie jego pliki projektu lub określony plik projektu do bieżących formatów programu Visual Studio dla tych plików.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,27 +33,27 @@ devenv {SolutionFile|ProjectFile} /Upgrade [/Out OutputFilename]
 
 - *SolutionFile*
 
-  Wymagane, jeśli aktualizujesz całe rozwiązanie i jego projekty. Ścieżka i nazwa pliku rozwiązania. Można wprowadzić tylko nazwę pliku rozwiązania, lub pełną ścieżkę i nazwę pliku rozwiązania. Jeśli folder lub plik o nazwie jeszcze nie istnieje, zostanie utworzony.
+  Wymagane, Jeśli uaktualniasz całe rozwiązanie i jego projekty. Ścieżka i nazwa pliku rozwiązania. Można wprowadzić tylko nazwę pliku rozwiązania lub pełną ścieżkę i nazwę pliku rozwiązania. Jeśli folder lub plik o nazwie jeszcze nie istnieje, zostanie utworzony.
 
 - *ProjectFile*
 
-  Wymagane w przypadku uaktualniania jednego projektu. Ścieżka i nazwa pliku projektu w rozwiązaniu. Można wprowadzić tylko nazwę pliku projektu, lub pełną ścieżkę i nazwę pliku projektu. Jeśli folder lub plik o nazwie jeszcze nie istnieje, zostanie utworzony.
+  Wymagane w przypadku uaktualniania pojedynczego projektu. Ścieżka i nazwa pliku projektu w ramach rozwiązania. Można wprowadzić tylko nazwę pliku projektu lub pełną ścieżkę i nazwę pliku projektu. Jeśli folder lub plik o nazwie jeszcze nie istnieje, zostanie utworzony.
 
 - `/Out` *OutputFilename*
 
-  Opcjonalna. Nazwa pliku, który chcesz wysłać narzędzia danych wyjściowych do. Jeśli plik już istnieje, narzędzie dołączyło dane wyjściowe na końcu pliku.
+  Opcjonalny. Nazwa pliku, do którego chcesz wysłać dane wyjściowe narzędzia. Jeśli plik już istnieje, narzędzie dołącza dane wyjściowe do końca pliku.
 
 ## <a name="remarks"></a>Uwagi
 
-Kopie zapasowe są automatycznie tworzone i kopiowane do katalogu o nazwie kopia zapasowa, który jest tworzony w bieżącym katalogu.
+Kopie zapasowe są tworzone automatycznie i kopiowane do katalogu o nazwie Backup, który został utworzony w bieżącym katalogu.
 
-Rozwiązania kontrolowanego źródła lub projekty musza być sprawdzone zanim będą mogły być uaktualnione.
+Rozwiązania i projekty z kontrolą źródła muszą zostać wyewidencjonowane przed uaktualnieniem.
 
-Za pomocą `/Upgrade` przełącznik nie Otwórz program Visual Studio. Wyniki procesu uaktualniania można zobaczyć w raporcie uaktualnienia dla rozwoju języka rozwiązania lub projektu. Brak błędów i zużyciu informacji jest zwracana. Aby uzyskać więcej informacji na temat uaktualniania projektów w programie Visual Studio, zobacz [Port, migrowanie i uaktualnianie projektów programu Visual Studio](../../porting/port-migrate-and-upgrade-visual-studio-projects.md).
+Użycie przełącznika `/Upgrade` nie powoduje otwarcia programu Visual Studio. Wyniki uaktualnienia można zobaczyć w raporcie uaktualnienia dla języka deweloperskiego rozwiązania lub projektu. Nie zwrócono informacji o błędzie ani użyciu. Aby uzyskać więcej informacji na temat uaktualniania projektów w programie Visual Studio, zobacz [port, migrowanie i uaktualnianie projektów programu Visual Studio](../../porting/port-migrate-and-upgrade-visual-studio-projects.md).
 
 ## <a name="example"></a>Przykład
 
-W tym przykładzie uaktualnia plik rozwiązania o nazwie "MyProject.sln".
+Ten przykład uaktualnia plik rozwiązania o nazwie "Moje projekty. sln".
 
 ```shell
 devenv "%USERPROFILE%\source\repos\MyProject\MyProject.sln" /upgrade
@@ -61,4 +61,4 @@ devenv "%USERPROFILE%\source\repos\MyProject\MyProject.sln" /upgrade
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Przełączniki wiersza polecenia Devenv](../../ide/reference/devenv-command-line-switches.md)
+- [Przełączniki wiersza polecenia devenv](../../ide/reference/devenv-command-line-switches.md)

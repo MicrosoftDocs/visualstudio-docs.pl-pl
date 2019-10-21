@@ -1,34 +1,34 @@
 ---
-title: Dodawanie węzłów do obszaru roboczego z widoku Start w Projektancie schematu XML
+title: Dodawanie węzłów do obszaru roboczego z widoku startowego w projektancie schematu XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3fc7af94-dcb8-4226-a577-43f03664388b
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a62b2225eec77b2b7e2a9f00af0ff5492640c19
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: e6f1471f03dac54b484e37b2319e15380055661e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66432180"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72646013"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-start-view"></a>Instrukcje: Dodawanie węzłów do obszaru roboczego z widoku startowego
 
-W tym temacie opisano sposób dodawania węzłów globalnego [obszar roboczy Projektanta schematu XML](../xml-tools/xml-schema-designer-workspace.md) z [widoku Start](../xml-tools/start-view.md).
+W tym temacie opisano sposób dodawania węzłów globalnych do [obszaru roboczego projektanta schematu XML](../xml-tools/xml-schema-designer-workspace.md) z [widoku Start](../xml-tools/start-view.md).
 
 ## <a name="to-add-nodes-to-the-workspace-from-the-start-view"></a>Aby dodać węzły do obszaru roboczego z widoku startowego
 
-1. Postępuj zgodnie z instrukcjami w [jak: Tworzenie i edytowanie pliku schematu XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
+1. Wykonaj kroki opisane w temacie [How to: Create i Edit a XSD File Schema](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
-2. Kliknij prawym przyciskiem myszy w edytorze XML, a następnie wybierz pozycję **Projektant widoków**.
+2. Kliknij prawym przyciskiem myszy w edytorze XML i wybierz polecenie **Projektant widoków**.
 
-     Pojawi się widoku startowego.
+     Zostanie wyświetlony widok Start.
 
-     W **Szczegóły zestawu schematu** sekcji, zwróć uwagę, że istnieją dwa (**2**) **globalne typy złożone**.
+     W sekcji **Szczegóły zestawu schematów** Zwróć uwagę, że istnieją dwa (**2**) **globalne typy złożone**.
 
-3. Kliknij pozycję **Dodaj** łącza z prawej strony **globalne typy złożone** nagłówka.
+3. Kliknij link **Dodaj** z prawej strony nagłówka **Globally Complex Types** .
 
-     `USAddress` i `PurchaseOrderType` węzłów typu złożonego, pojawi się na powierzchni projektowej w widoku wykresu.
+     @No__t_0 i `PurchaseOrderType` węzły typu złożonego pojawią się na powierzchni projektowej widoku wykresu.

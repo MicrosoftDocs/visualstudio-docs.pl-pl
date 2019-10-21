@@ -1,84 +1,84 @@
 ---
-title: 'Instrukcje: Migracja języka specyficznego dla domeny do nowej wersji'
+title: 'Porady: migracja języka specyficznego dla domeny do nowej wersji'
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63d313534fab789c5e4e79fb644111314e054250
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c9678bf0c98774a504f17e9ea74197f82d9ba7ad
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445153"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72605372"
 ---
-# <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Instrukcje: Migracja języka specyficznego dla domeny do nowej wersji
-Projekty definiowanie i korzystanie z języka specyficznego dla domeny, które można migrować [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] z wersji [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] który zostało rozpowszechniać za pomocą [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)].
+# <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Porady: migracja języka specyficznego dla domeny do nowej wersji
+Można migrować projekty, które definiują i używają języka specyficznego dla domeny do [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] z wersji [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] dystrybuowanej za pomocą [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)].
 
- Narzędzie migracji jest dostarczana jako część [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)]. Narzędzie konwertuje projektów programu Visual Studio i rozwiązania, które używane lub zdefiniować narzędzia DSL.
+ Narzędzie migracji jest dostępne jako część [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)]. Narzędzie konwertuje projekty i rozwiązania programu Visual Studio, które używają lub definiują narzędzia DSL.
 
- Należy uruchomić narzędzie do migracji jawnie: go nie został uruchomiony automatycznie po otwarciu rozwiązania w programie Visual Studio. Narzędzia i główny dokument zawierający szczegółowe wskazówki można znaleźć w tej ścieżce:
+ Narzędzie migracji należy uruchomić jawnie: nie jest uruchamiane automatycznie podczas otwierania rozwiązania w programie Visual Studio. Informacje na temat narzędzia i szczegółowe wskazówki można znaleźć w tej ścieżce:
 
- **%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**
+ **% Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**
 
-## <a name="before-you-migrate-your-dsl-projects"></a>Przed przeprowadzeniem migracji projektów języka DSL
- Narzędzie migracji modyfikuje pliki projektu programu Visual Studio (**.csproj**) i pliki rozwiązania (**.sln**).
+## <a name="before-you-migrate-your-dsl-projects"></a>Przed przeprowadzeniem migracji projektów DSL
+ Narzędzie migracji modyfikuje pliki projektu programu Visual Studio ( **. csproj**) i pliki rozwiązań ( **. sln**).
 
 #### <a name="to-prepare-projects-for-migration"></a>Aby przygotować projekty do migracji.
 
-- Upewnij się, że **.csproj** i **.sln** można zapisywać pliki. Jeśli znajdują się pod kontrolą źródła, upewnij się, że ich są wyewidencjonowane.
+- Upewnij się, że pliki **. csproj** i **. sln** mogą być zapisywane. Jeśli znajdują się pod kontrolą źródła, upewnij się, że są wyewidencjonowane.
 
-- Utwórz kopię foldery, które zamierzasz migrować.
+- Utwórz kopię folderów, które mają zostać zmigrowane.
 
 ## <a name="migrating-a-collection-of-projects"></a>Migrowanie kolekcji projektów
 
-#### <a name="to-migrate-dsl-projects-and-solutions-to-visual-studio-2010"></a>Aby przeprowadzić migrację DSL projekty i rozwiązania Visual Studio 2010
+#### <a name="to-migrate-dsl-projects-and-solutions-to-visual-studio-2010"></a>Aby migrować projekty i rozwiązania DSL do programu Visual Studio 2010
 
-1. Uruchom narzędzie do migracji DSL.
+1. Uruchom narzędzie migracji DSL.
 
-   - Kliknij dwukrotnie narzędzie w Eksploratorze Windows (lub Eksploratora plików) lub uruchomić narzędzie z wiersza polecenia. Narzędzie znajduje się w tej lokalizacji:
+   - Możesz kliknąć dwukrotnie narzędzie w Eksploratorze Windows (lub Eksploratorze plików) lub uruchomić narzędzie z wiersza polecenia. To narzędzie znajduje się w tej lokalizacji:
 
         **%ProgramFiles%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**
 
 2. Wybierz folder, który zawiera rozwiązania i projekty, które chcesz przekonwertować.
 
-   - Wprowadź ścieżkę, w polu u góry strony, narzędzia, lub kliknij przycisk **Przeglądaj**.
+   - Wprowadź ścieżkę w polu u góry narzędzia, lub kliknij przycisk **Przeglądaj**.
 
-     Narzędzie migracji wyświetli drzewa projektów, które zdefiniować lub używać języków DSL. Drzewo obejmuje każdego projektu, który używa **Microsoft.VisualStudio.Modeling.Sdk** lub **texttemplating jest** zestawów.
+     Narzędzie migracji Wyświetla drzewo projektów, które definiują lub używają językami DSL. Drzewo zawiera wszystkie projekty, które używają zestawów **Microsoft. VisualStudio. Modeling. SDK** lub **TextTemplating** .
 
-3. Przegląd drzewa projektów i usuń zaznaczenie pola wyboru projektów, których nie chcesz konwertować.
+3. Przejrzyj Drzewo projektów i usuń zaznaczenie projektów, które nie mają być konwertowane.
 
-   - Wybierz projekt lub rozwiązanie, aby wyświetlić listę zmian, które spowoduje, że narzędzie.
+   - Wybierz projekt lub rozwiązanie, aby wyświetlić listę zmian wprowadzonych przez narzędzie.
 
        > [!NOTE]
-       > Pola wyboru, które pojawiają się obok nazwy folderów nie mają wpływu. Należy rozwinąć foldery, aby sprawdzić, projekty i rozwiązania.
+       > Pola wyboru, które pojawiają się obok nazw folderów, nie mają żadnego wpływu. Należy rozwinąć foldery, aby sprawdzić projekty i rozwiązania.
 
-4. Konwertowanie projektów.
+4. Przekonwertuj projekty.
 
-   1. Kliknij przycisk **przekonwertować**.
+   1. Kliknij przycisk **Konwertuj**.
 
-        Zanim każdy plik projektu jest konwertowany, kopię _projektu_**.csproj** zostanie zapisany jako _projektu_**. vs2008.csproj**
+        Przed konwersją każdego pliku projektu kopia _projektu_ **. csproj** jest zapisywana jako _Project_ **. vs2008. csproj**
 
-        Kopia każdego _rozwiązania_**.sln** zostanie zapisany jako _rozwiązania_**. vs2008.sln**
+        Kopia każdego _rozwiązania_ **. sln** jest zapisywana jako _rozwiązanie_ **. vs2008. sln**
 
-   2. Badanie zakończone niepowodzeniem konwersje, które są zgłaszane.
+   2. Zbadaj wszystkie zgłoszone konwersje zakończone niepowodzeniem.
 
-        Błędy są zgłaszane w oknie tekstowym. Ponadto widok drzewa pokazuje czerwona flaga w każdym węźle, w której nie można przekonwertować. Możesz kliknąć węzeł, aby uzyskać więcej informacji na temat tego błędu.
+        Błędy są raportowane w oknie tekstowym. Ponadto widok drzewa przedstawia czerwoną flagę dla każdego węzła, którego konwersja nie powiodła się. Możesz kliknąć ten węzeł, aby uzyskać więcej informacji o tym błędzie.
 
-5. **Transformuj wszystkie szablony** rozwiązania zawierającego pomyślnie przekonwertowany projektów.
+5. **Przekształć wszystkie szablony** w rozwiązaniach zawierających pomyślnie przekonwertowane projekty.
 
    1. Otwórz rozwiązanie.
 
-   2. Kliknij przycisk **Przekształć wszystkie szablony** przycisku w nagłówku Eksploratora rozwiązań.
+   2. Kliknij przycisk **Przekształć wszystkie szablony** w nagłówku Eksplorator rozwiązań.
 
        > [!NOTE]
-       > Ten krok można wprowadzić niepotrzebne. Aby uzyskać więcej informacji, zobacz [jak zautomatyzować Przekształć wszystkie szablony](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\)).
+       > Ten krok może być niezbędny. Aby uzyskać więcej informacji, zobacz [jak zautomatyzować transformację wszystkie szablony](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\)).
 
-6. Zaktualizuj niestandardowy kod w projektach przekonwertowana.
+6. Aktualizowanie niestandardowego kodu w przekonwertowanych projektach.
 
-   - Spróbuj kompilować projekty i zbadać wszelkie błędy.
+   - Spróbuj skompilować projekty i zbadać wszystkie błędy.
 
    - Przetestuj projektanta.
 
@@ -86,4 +86,4 @@ Projekty definiowanie i korzystanie z języka specyficznego dla domeny, które m
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Wpisy w blogu pokrewne](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)
+- [Powiązane wpisy w blogu](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)

@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - WPF Components tab, Choose Toolbox Items dialog box
 - Choose Toolbox Items dialog box, WPF Components tab
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac9e9c7bbafcf54e7bd31bde20469310c2ad3f81
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 9c3de8e1d83a5d74f518eda2d5ab59bd9845b45a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68869757"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72630865"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Wybieranie elementów przybornika, składniki WPF
 
@@ -26,9 +26,9 @@ Na tej karcie okna dialogowego **Wybieranie elementów przybornika** zostanie wy
 - Po wybraniu pola wyboru obok składnika zostanie wyświetlona ikona tego składnika w **przyborniku**.
 
     > [!TIP]
-    > Aby dodać formant WPF do dokumentu projektu, który jest otwarty do edycji, przeciągnij jego ikonę **przybornika** na powierzchnię widok Projekt. Domyślne znaczniki i kod dla składnika są wstawiane do projektu, gotowe do modyfikacji. Aby uzyskać więcej informacji, zobacz [przybornika](../../ide/reference/toolbox.md).
+    > Aby dodać formant WPF do dokumentu projektu, który jest otwarty do edycji, przeciągnij jego ikonę **przybornika** na powierzchnię widok Projekt. Domyślne znaczniki i kod dla składnika są wstawiane do projektu, gotowe do modyfikacji. Aby uzyskać więcej informacji, zobacz [Przybornik](../../ide/reference/toolbox.md).
 
-- Gdy pole wyboru obok składnika jest wyczyszczone, odpowiadająca ikona zostanie usunięta z przybornika.
+- Gdy pole wyboru obok składnika jest wyczyszczone, odpowiadająca ikona zostanie usunięta z **przybornika**.
 
     > [!NOTE]
     > Składniki platformy .NET zainstalowane na komputerze pozostają dostępne niezależnie od tego, czy ikony dla nich są wyświetlane w **przyborniku**.
@@ -39,7 +39,7 @@ Kolumny na karcie **składniki WPF** zawierają następujące informacje:
 
 Wyświetla listę nazw formantów WPF, dla których wpisy istnieją w rejestrze komputera.
 
-**Namespace**
+**Obszaru**
 
 Wyświetla hierarchię przestrzeni nazw [interfejsu API platformy .NET](/dotnet/api/?view=netframework-4.7) , która definiuje strukturę składnika. Sortuj według tej kolumny, aby wyświetlić listę składników dostępnych w ramach każdej przestrzeni nazw platformy .NET zainstalowanej na komputerze.
 
@@ -53,7 +53,7 @@ Wyświetla lokalizację zestawu .NET. Domyślną lokalizacją dla wszystkich zes
 
 ## <a name="uielement-list"></a>Lista elementów UI
 
-### <a name="filter"></a>Filtr
+### <a name="filter"></a>filtru
 
 Filtruje listę formantów WPF na podstawie ciągu podanym w polu tekstowym. Wyświetlane są wszystkie dopasowania z jednej z czterech kolumn.
 
@@ -61,7 +61,7 @@ Filtruje listę formantów WPF na podstawie ciągu podanym w polu tekstowym. Wy�
 
 Czyści ciąg filtru.
 
-**Przeglądaj**
+**Przycisku**
 
 Otwiera okno dialogowe **otwieranie** , które umożliwia przejście do zestawów, które zawierają kontrolki WPF. Użyj tego do ładowania zestawów, które nie znajdują się w globalnej pamięci podręcznej zestawów.
 
@@ -71,7 +71,7 @@ Pokazuje zlokalizowany język zestawu, który zawiera wybraną kontrolkę WPF.
 
 ## <a name="limitations"></a>Ograniczenia
 
-Dodawanie kontrolki niestandardowej lub <xref:System.Windows.Controls.UserControl> przybornika ma następujące ograniczenia:
+Dodawanie kontrolki niestandardowej lub <xref:System.Windows.Controls.UserControl> do przybornika ma następujące ograniczenia:
 
 - Działa tylko w przypadku kontrolek niestandardowych zdefiniowanych poza bieżącym projektem.
 

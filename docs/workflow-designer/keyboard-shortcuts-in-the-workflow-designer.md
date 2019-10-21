@@ -1,89 +1,89 @@
 ---
-title: 'Projektant przepływu pracy: Skróty klawiaturowe'
+title: 'Projektant przepływu pracy: skróty klawiaturowe'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - WFDKeyboardShortcuts.UI
 ms.assetid: 9be75438-a4a3-4781-94e5-45b7ec082358
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2026c61d05425f0f0d48a9fb722c62f760fcba2
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: f36e8b6d67d2405fbc74c0b1bf854b3a3baaf4da
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825508"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650161"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Skróty klawiaturowe w Projektancie przepływu pracy
 
-Wszystkie podstawowe funkcje projektanta przepływów pracy są dostępne przez klawiatury.
+Wszystkie podstawowe funkcje Projektant przepływu pracy są dostępne na klawiaturze.
 
-## <a name="navigating-the-workflow-designer-using-the-keyboard"></a>Nawigowanie w Projektancie przepływu pracy za pomocą klawiatury
+## <a name="navigating-the-workflow-designer-using-the-keyboard"></a>Nawigowanie Projektant przepływu pracy przy użyciu klawiatury
 
-W programie Visual Studio globalne skróty i debugowania skróty są stosowane do projektanta przepływów pracy. Ponadto liczba określonych skrótów klawiaturowych projektanta przepływów pracy zostały utworzone. W programie Visual Studio wszystkie skróty klawiaturowe mogą być ponownie mapowany. Jednak w rehostowanym aplikacji, skróty klawiaturowe są zapisane na stałe.
+W programie Visual Studio globalne skróty i skróty debugowania stosują się do Projektant przepływu pracy. Ponadto zostały utworzone różne Projektant przepływu pracy skróty klawiaturowe. W programie Visual Studio można ponownie mapować wszystkie skróty klawiaturowe. Jednak w aplikacji przehostowanej te skróty klawiaturowe są stałe.
 
-### <a name="workflow-designer-keyboard-shortcuts"></a>Skróty klawiaturowe w Projektancie przepływu pracy
+### <a name="workflow-designer-keyboard-shortcuts"></a>Skróty klawiaturowe Projektant przepływu pracy
 
-W poniższej tabeli przedstawiono domyślne skróty klawiaturowe, przypisany do poleceń projektanta przepływów pracy.
+Poniższa tabela podsumowuje domyślne skróty klawiaturowe przypisane do poleceń Projektant przepływu pracy.
 
 |Skrót|Cel|
 |-|-------------|
-|CTRL+E, A|Pokazuje lub ukrywa projektanta argumentów.|
-|CTRL+E, C|Zwija wybrane działanie w miejscu.|
-|CTRL+E, E|Rozwija wybrane działanie w miejscu.|
-|CTRL+E, F|Łączy wybrane działania w elemencie Schemat blokowy.|
-|CTRL+E, I|Pokazuje lub ukrywa projektanta importów.|
-|CTRL+E, M|Przenosi fokus klawiatury do następnego elementu w kolejności tabulacji.|
-|CTRL+E, N|Tworzy nową zmienną zakresu wybranego działania (lub najbardziej).|
-|CTRL+E, O|Pokazuje lub ukrywa mapowanie przeglądów.|
-|CTRL+E, P|Powoduje przejście do elementu nadrzędnego wybranego działania. Przechodzi w górę o jeden poziom w nadrzędnych i zmienia działanie główne na powierzchni projektowej.|
-|CTRL+E, S|Dodaje element z fokusem klawiatury do bieżącego zaznaczenia.|
-|CTRL+E, V|Pokazuje lub ukrywa projektanta zmiennych.|
-|CTRL+E, X|Rozwija wszystkie działania w przepływie pracy.|
-|CTRL+ALT+F6|Przenosi fokus klawiatury z bieżącego obszaru interfejsu użytkownika do obszaru dalej w sekwencji. Kolejność jest następująca:<br /><br /> 1.  Pasek nawigacyjny łączy do stron nadrzędnych.<br />2.  Powierzchnia projektowa<br />3.  Projektanta argumentów/zmienne/importów, jeśli jest otwarty<br />4.  Powłoka|
+|CTRL + E, A|Pokazuje lub ukrywa projektanta argumentów.|
+|CTRL + E, C|Zwija wybrane działanie.|
+|CTRL + E, E|Rozwija wybrane działanie na miejscu.|
+|CTRL + E, F|Łączy wybrane działania w schemacie blokowym.|
+|CTRL + E, I|Pokazuje lub ukrywa projektanta importów.|
+|CTRL + E, M|Przesuwa fokus klawiatury do następnego elementu w kolejności tabulacji.|
+|CTRL + E, N|Tworzy nową zmienną w zakresie wybranego działania (lub najbliższą).|
+|CTRL + E, O|Pokazuje lub ukrywa mapę przeglądu.|
+|CTRL + E, P|Powoduje przejście do elementu nadrzędnego wybranego działania. Powoduje to przejście do jednego poziomu w nawigacji nawigacyjnej i zmianę działania głównego na powierzchni projektanta.|
+|CTRL + E, S|Dodaje element z fokusem klawiatury do bieżącego zaznaczenia.|
+|CTRL + E, V|Pokazuje lub ukrywa projektanta zmiennych.|
+|CTRL + E, X|Rozwija wszystkie działania w przepływie pracy.|
+|CTRL + ALT + F6|Przenosi fokus klawiatury z bieżącego obszaru interfejsu użytkownika do następnego obszaru w sekwencji. Kolejność jest następująca:<br /><br /> 1. pasek nawigacyjny.<br />2. powierzchnia projektanta<br />3. argumenty/zmienne/Importy projektant w przypadku otwarcia<br />4. Shell|
 
 ### <a name="flowchart"></a>Schemat blokowy
 
-Na poniższej liście przedstawiono gestów, używaną do utworzenia schematu blokowego klawiatury. Tak jak w pozostałej części projektanta przepływów pracy działania są dodawane do powierzchni projektanta za pomocą skrótów globalnego przybornika dostarczane z programem Visual Studio.
+Na poniższej liście przedstawiono gesty używane do konstruowania schematu blokowego za pomocą klawiatury. Tak jak w pozostałej części Projektant przepływu pracy działania są dodawane do powierzchni projektanta przy użyciu globalnych skrótów przybornika dostępnych w programie Visual Studio.
 
-- Aby przenieść działania, wybierz działanie, a następnie używaj klawiszy strzałek Aby zmienić położenie.
+- Aby przenieść działanie, wybierz działanie i użyj klawiszy strzałek, aby zmienić ich położenie.
 
-- Aby zmienić rozmiar blokowego, Przenieś działanie poza granicą bieżącego schematu blokowego, używając klawiszy ze strzałkami. Schemat blokowy zmieniany jest automatycznie.
+- Aby zmienić rozmiar schematu blokowego, Przenieś działanie poza bieżącą krawędź schematu blokowego za pomocą klawiszy strzałek. Automatycznie zmieniany jest rozmiar schematu blokowego.
 
-- Aby ustawić działanie jako węzeł początkowy, użyj **ustawiony jako Węzeł_początkowy** polecenia w menu kontekstowym.
+- Aby ustawić działanie jako węzeł początkowy, użyj polecenia **Set as parametr StartNode** w menu po kliknięciu prawym przyciskiem myszy.
 
 - Aby połączyć działania:
 
-    1. Wybierz czynność źródła, przechodząc do działania.
+    1. Wybierz działanie źródłowe, naciskając klawisz Tab do działania.
 
-    2. Naciśnij klawisze CTRL + E, M tyle razy, zgodnie z potrzebami, aby przenieść fokus klawiatury na działanie docelowe.
+    2. Naciśnij klawisze CTRL + E, M tyle razy, ile jest to konieczne, aby przenieść fokus klawiatury do działania docelowego.
 
-    3. Naciśnij klawisze CTRL + E, S, aby dodać działanie docelowe do wyboru.
+    3. Naciśnij klawisze CTRL + E, aby dodać działanie docelowe do zaznaczenia.
 
-    4. Naciśnij klawisze CTRL + E, F, aby dodać łącznika ze źródła do miejsca docelowego.
+    4. Naciśnij klawisze CTRL + E, F, aby dodać łącznik ze źródła do miejsca docelowego.
 
-Uwagi dotyczące łączenia działań przez klawiatury:
+Uwagi dotyczące łączenia działań według klawiatury:
 
-- Aby włączyć wiele połączeń w tym samym czasie, dodając więcej działań do wyboru przed naciskając klawisze CTRL + E, F. Połączenia są nawiązywane w kolejności, czy działania zostały dodane do zaznaczenia.
+- Można utworzyć wiele połączeń w tym samym czasie, dodając więcej działań do zaznaczenia przed naciśnięciem kombinacji klawiszy CTRL + E, F. Połączenia są wykonywane w kolejności, w jakiej działania zostały dodane do zaznaczenia.
 
-- Jeśli nie można połączyć dwa działania na przykład jeśli działania źródłowego ma już połączenia wychodzącego inne połączenia między działaniami w zaznaczeniu nadal zostały wprowadzone, jeśli to możliwe.
+- Jeśli para działań nie może być połączona, na przykład jeśli działanie źródłowe ma już połączenie wychodzące, inne połączenia między działaniami w ramach zaznaczenia nadal są wykonywane zawsze, gdy jest to możliwe.
 
-- Gdy **FlowDecision** jest dołączony do zaznaczenia i **FlowDecision** ma Brak wychodzących łączników, łącznik jest umieszczany na **True** gałęzi.
+- Gdy **FlowDecision** jest dołączany do zaznaczenia, a **FlowDecision** nie ma łączników wychodzących, łącznik jest umieszczany w gałęzi **prawdy** .
 
 ### <a name="expression-editing"></a>Edytowanie wyrażeń
 
-Domyślnie w edytorze wyrażeń w Projektancie przepływu pracy, zastosowanie mają poniższe ograniczenia mają zastosowanie domyślne skróty klawiaturowe do edycji tekstu w języku Visual Basic:
+Domyślnie domyślne skróty klawiaturowe do edycji tekstu Visual Basic są stosowane w edytorze wyrażeń w programie Projektant przepływu pracy z następującymi ograniczeniami:
 
-- Ponowne mapowanie skróty klawiaturowe dla następujących poleceń nie ma znaczenia. Domyślne skróty klawiaturowe można używać tylko dostępu do tych poleceń podczas edycji wyrażenia.
+- Ponowne mapowanie skrótów klawiaturowych dla następujących poleceń nie ma żadnego wpływu. Możesz użyć domyślnych skrótów klawiaturowych, aby uzyskać dostęp do tych poleceń podczas edytowania wyrażenia.
 
   - Wytnij
   - Kopiuj
   - Wklej
   - Zaznacz wszystko
-  - Cofnij
-  - Wykonaj ponownie
+  - Anulowanie
+  - Ponawia
 
-- Aby ponownie zamapować skróty klawiaturowe dla poleceń edycji wyrażenia w Projektancie przepływu pracy w programie Visual Studio, należy edytować skróty w zakresie projektanta przepływów pracy. Zmiany wprowadzone w zakresie Edytor tekstu nie automatycznie dotyczą projektanta przepływów pracy. Jeśli chcesz ponownie zmapować skróty w obu miejscach, należy najpierw zastosować zmiany dwukrotnie (raz dla każdego zakresu).
+- Aby ponownie zamapować skróty klawiaturowe poleceń edycji wyrażeń wewnątrz Projektant przepływu pracy w programie Visual Studio, Edytuj skróty w zakresie Projektant przepływu pracy. Zmiany wprowadzone w zakresie edytora tekstu nie są automatycznie stosowane do Projektant przepływu pracy. Jeśli chcesz ponownie mapować skróty w obu miejscach, musisz zastosować zmiany dwukrotnie (raz dla każdego zakresu).

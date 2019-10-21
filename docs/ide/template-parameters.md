@@ -7,23 +7,23 @@ helpviewer_keywords:
 - template parameters [Visual Studio]
 - project templates, parameters
 - item templates, parameters
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2fbc9d95a6e334c3dcd788c4b686a222c417b0df
-ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
+ms.openlocfilehash: 445a4fa7847ea5c9a5cb64da09cf54c763e86d16
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70766112"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647399"
 ---
 # <a name="template-parameters"></a>Parametry szablonu
 
-Można zastąpić wartości w szablonie, podczas tworzenia wystąpienia szablonu. Aby skonfigurować tę funkcję, należy użyć *parametry szablonu*. Parametry szablonu może służyć do zastąpienia wartości, takich jak nazwy klas i przestrzenie nazw w szablonie. Kreator szablonu, który działa w tle, gdy użytkownik dodaje nowy element lub projekt zastępuje te parametry.
+Możesz zamienić wartości w szablonie podczas tworzenia wystąpienia szablonu. Aby skonfigurować tę funkcję, użyj *parametrów szablonu*. Parametry szablonu mogą służyć do zastępowania wartości takich jak nazwy klas i przestrzenie nazw w szablonie. Kreator szablonów, który jest uruchamiany w tle, gdy użytkownik doda nowy element lub projekt zastępuje te parametry.
 
 ## <a name="declare-and-enable-template-parameters"></a>Deklarowanie i włączanie parametrów szablonu
 
-Parametry szablonu są deklarowane w formacie $*parametru*$. Na przykład:
+Parametry szablonu są zadeklarowane w formacie $*Parameter*$. Na przykład:
 
 - $safeprojectname$
 
@@ -33,11 +33,11 @@ Parametry szablonu są deklarowane w formacie $*parametru*$. Na przykład:
 
 ### <a name="enable-parameter-substitution-in-templates"></a>Włącz podstawianie parametrów w szablonach
 
-1. W *.vstemplate* pliku szablonu, zlokalizuj `ProjectItem` element, który odpowiada elementowi, dla którego chcesz włączyć podmianę parametrów.
+1. W pliku *. vstemplate* szablonu znajdź element `ProjectItem`, który odnosi się do elementu, dla którego chcesz włączyć zastąpienie parametrów.
 
 1. Ustaw atrybut `ReplaceParameters` elementu `ProjectItem` na `true`.
 
-1. W pliku kodu dla elementu projektu dołącz parametry, tam gdzie jest to potrzebne. Na przykład następujący parametr określa, że bezpieczna Nazwa projektu jest używana dla przestrzeni nazw w pliku:
+1. W pliku kodu dla elementu projektu dołącz parametry, tam gdzie jest to potrzebne. Na przykład, następujący parametr określa, że bezpieczna nazwa projektu jest używana dla przestrzeni nazw w pliku:
 
     ```csharp
     namespace $safeprojectname$
@@ -49,36 +49,36 @@ W poniższej tabeli wymieniono zastrzeżone parametry szablonu, które mogą by�
 
 |Parametr|Opis|
 |---------------|-----------------|
-|clrversion|Aktualna wersja środowiska uruchomieniowego języka wspólnego (CLR).|
-|ext_*|`ext_` Dodaj prefiks do dowolnego parametru, aby odwołać się do zmiennych szablonu nadrzędnego. Na przykład `ext_safeprojectname`.|
-|Identyfikator GUID [1 – 10]|Identyfikator GUID służący do zamienienia identyfikatora GUID w pliku projektu. Można określić maksymalnie 10 unikatowych identyfikatorów GUID (na przykład `guid1`).|
-|Nazwa elementu|Nazwa pliku, w którym jest używany parametr.|
-|NazwaKomputera|Bieżąca nazwa komputera (na przykład Computer01).|
-|projectname|Nazwa podana przez użytkownika podczas tworzenia projektu.|
-|registeredorganization|Wartość klucza rejestru z HKLM\Software\Microsoft\Windows NT\CurrentVersion\RegisteredOrganization.|
-|rootnamespace|Główna przestrzeń nazw bieżącego projektu. Ten parametr dotyczy tylko szablonów elementów.|
-|safeitemname|Analogicznie `itemname` jak w przypadku wszystkich niebezpiecznych znaków i spacji zastępowanych znakami podkreślenia.|
-|safeitemrootname|Analogicznie `safeitemname`jak.|
+|CLRVERSION|Aktualna wersja środowiska uruchomieniowego języka wspólnego (CLR).|
+|ext_*|Dodaj prefiks `ext_` do dowolnego parametru, aby odwołać się do zmiennych szablonu nadrzędnego. Na przykład `ext_safeprojectname`.|
+|Identyfikator GUID [1-10]|Identyfikator GUID służący do zamienienia identyfikatora GUID w pliku projektu. Można określić maksymalnie 10 unikatowych identyfikatorów GUID (na przykład `guid1`).|
+|itemName|Nazwa pliku, w którym jest używany parametr.|
+|elementu|Bieżąca nazwa komputera (na przykład Computer01).|
+|ProjectName|Nazwa podana przez użytkownika podczas tworzenia projektu.|
+|RegisteredOrganization|Wartość klucza rejestru z HKLM\Software\Microsoft\Windows NT\CurrentVersion\RegisteredOrganization.|
+|RootNamespace|Główna przestrzeń nazw bieżącego projektu. Ten parametr dotyczy tylko szablonów elementów.|
+|safeitemname|Analogicznie jak `itemname`, ale ze wszystkimi niebezpiecznymi znakami i spacjami zastępowanymi znakami podkreślenia.|
+|safeitemrootname|Taki sam jak `safeitemname`.|
 |safeprojectname|Nazwa podana przez użytkownika podczas tworzenia projektu, ale z usuniętymi wszystkimi niebezpiecznymi znakami i spacjami.|
 |czas|Bieżący czas w formacie DD/MM/RRRR 00:00:00.|
 |specifiedSolutionName|Nazwa rozwiązania. W razie wybrania opcji „Utwórz katalog rozwiązania”, `specifiedSolutionName` ma nazwę rozwiązania. Jeżeli „Utwórz katalog rozwiązania” nie jest zaznaczone, `specifiedSolutionName` jest pusta.|
-|USERDOMAIN|Bieżąca domena użytkownika.|
-|Nazwa użytkownika|Bieżąca nazwa użytkownika.|
-|webnamespace|Nazwa bieżącej witryny sieci Web. Ten parametr jest używany w szablonie formularza sieci web, aby zagwarantować unikalne nazwy klas. W przypadku witryny sieci Web w katalogu głównym serwera sieci web, ten parametr szablonu jest rozpoznawany jako katalog główny serwera sieci web.|
-|Rok|Bieżący rok w formacie RRRR.|
+|userdomain|Bieżąca domena użytkownika.|
+|uż|Bieżąca nazwa użytkownika.|
+|webnazw|Nazwa bieżącej witryny sieci Web. Ten parametr jest używany w szablonie formularza sieci Web w celu zagwarantowania unikatowych nazw klas. Jeśli witryna internetowa znajduje się w katalogu głównym serwera sieci Web, ten parametr szablonu jest rozpoznawany jako katalog główny serwera sieci Web.|
+|czteroletniego|Bieżący rok w formacie RRRR.|
 
 > [!NOTE]
 > Parametry szablonu uwzględniają wielkość liter.
 
 ## <a name="custom-template-parameters"></a>Parametry szablonu niestandardowego
 
-Można określić własne parametry szablonu i wartości, oprócz parametrów zastrzeżonego szablonu domyślnego, które są używane podczas wymiany parametru. Aby uzyskać więcej informacji, zobacz [customparameters — element (szablony Visual Studio)](../extensibility/customparameters-element-visual-studio-templates.md).
+Oprócz domyślnych parametrów szablonu zarezerwowanych, które są używane podczas zamiany parametru, można określić własne parametry i wartości szablonu. Aby uzyskać więcej informacji, zobacz [CustomParameters — element (szablony Visual Studio)](../extensibility/customparameters-element-visual-studio-templates.md).
 
 ## <a name="example-use-the-project-name-for-a-file-name"></a>Przykład: Użyj nazwy projektu dla nazwy pliku
 
-Nazwy zmiennych plików dla elementów projektu można określić za pomocą parametru w `TargetFileName` atrybutu.
+Można określić zmienne nazwy plików dla elementów projektu przy użyciu parametru w atrybucie `TargetFileName`.
 
-W poniższym przykładzie określono, że nazwa pliku wykonywalnego używa nazwy projektu, określonej przez `$projectname$`.
+Poniższy przykład określa, że nazwa pliku wykonywalnego używa nazwy projektu, określonej przez `$projectname$`.
 
 ```xml
 <TemplateContent>
@@ -93,7 +93,7 @@ W poniższym przykładzie określono, że nazwa pliku wykonywalnego używa nazwy
 
 ## <a name="example-use-the-safe-project-name-for-the-namespace-name"></a>Przykład: Użyj bezpiecznej nazwy projektu dla nazwy przestrzeni nazw
 
-Aby użyć bezpieczna Nazwa projektu dla przestrzeni nazw w pliku klasy C#, należy użyć następującej składni:
+Aby użyć nazwy projektu bezpiecznego dla przestrzeni nazw w pliku C# klasy, należy użyć następującej składni:
 
 ```csharp
 namespace $safeprojectname$
@@ -106,7 +106,7 @@ namespace $safeprojectname$
 }
 ```
 
-W *.vstemplate* pliku szablonu projektu, obejmują `ReplaceParameters="true"` atrybutu, gdy odwołanie do pliku:
+W pliku *. vstemplate* szablonu projektu należy uwzględnić atrybut `ReplaceParameters="true"` podczas odwoływania się do pliku:
 
 ```xml
 <TemplateContent>
@@ -119,7 +119,7 @@ W *.vstemplate* pliku szablonu projektu, obejmują `ReplaceParameters="true"` at
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Instrukcje: Zastępowanie parametrów w szablonie](how-to-substitute-parameters-in-a-template.md)
+- [Instrukcje: zastępowanie parametrów w szablonie](how-to-substitute-parameters-in-a-template.md)
 - [Dostosowywanie szablonów](../ide/customizing-project-and-item-templates.md)
 - [Instrukcje: Tworzenie szablonów projektu](../ide/how-to-create-project-templates.md)
-- [Odwołanie do schematu szablonu](../extensibility/visual-studio-template-schema-reference.md)
+- [Dokumentacja schematu szablonu](../extensibility/visual-studio-template-schema-reference.md)

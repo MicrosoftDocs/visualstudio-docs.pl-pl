@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Zmiana czcionek i kolorów'
+title: 'Porady: Zmiana czcionek i kolorów'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -9,61 +9,61 @@ helpviewer_keywords:
 - color themes, Visual Studio
 ms.assetid: 60d91ba1-244b-4c43-847f-60b744f1352a
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4defa140d7ec855a10ae1e921afce78e97d69702
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 3ae3d35f98b54038b590c2fbaf75d0f1597fd0b3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439245"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645440"
 ---
-# <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Instrukcje: Zmiana czcionek i kolorów w programie Visual Studio
+# <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Porady: Zmiana czcionek i kolorów w Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Możesz dostosować kolor IDE ramki i narzędzi systemu windows w programie Visual Studio na kilka sposobów.
+Możesz dostosować kolor ramki środowiska IDE i okien narzędzi w programie Visual Studio na kilka sposobów.
 
 > [!TIP]
-> Aby uzyskać informacje o zmienianiu kolorów w edytorze kodu, zobacz [jak: Zmiana czcionek i kolorów w edytorze](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
+> Aby uzyskać informacje o sposobie zmiany kolorów edytora kodu, zobacz [How to: Change Fonts and Colors in the Editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
-### <a name="change-the-color-theme-of-the-ide"></a>Zmiana koloru tematu IDE
+### <a name="change-the-color-theme-of-the-ide"></a>Zmiana motywu kolorów IDE
 
-1. Na pasku menu wybierz **narzędzia**, **opcje**.
+1. Na pasku menu wybierz **Narzędzia**, **Opcje**.
 
-2. Na liście opcji wybierz **środowiska**, **ogólne**.
+2. Na liście Opcje wybierz **środowisko**, **Ogólne**.
 
-3. W **motyw kolorów** listy, wybierz albo domyślne **niebieski** motywu **ciemny** lub **światła**.
+3. Na liście **motyw kolorów** wybierz domyślny motyw **niebieski** , **ciemny** lub **jasny**.
 
     > [!IMPORTANT]
-    > Kiedy zmieniasz motyw kolorów, tekst w IDE powraca do domyślnych lub wcześniej dostosowanych czcionek i rozmiarów.
+    > Po zmianie motywu kolorów tekst w IDE przywraca domyślne lub wcześniej dostosowane czcionki i rozmiary.
     >
-    >  Jeśli masz program Visual Studio Professional, Visual Studio Premium lub Visual Studio Ultimate, można zainstalować dodatkowe predefiniowane motywy i utworzyć własne, pobieranie i instalowanie [Edytor Visual Studio 2013 kolor motywu](http://visualstudiogallery.msdn.microsoft.com/9e08e5d3-6eb4-4e73-a045-6ea2a5cbdabe).
+    >  Jeśli masz Visual Studio Professional, Visual Studio Premium lub Visual Studio Ultimate, możesz zainstalować dodatkowe wstępnie zdefiniowane Motywy kolorów i utworzyć własne, pobierając i instalując [Edytor motywów kolorów Visual Studio 2013](http://visualstudiogallery.msdn.microsoft.com/9e08e5d3-6eb4-4e73-a045-6ea2a5cbdabe).
 
-### <a name="use-windows-high-contrast-colors"></a>Użyj Windows duży kontrast kolorów
+### <a name="use-windows-high-contrast-colors"></a>Użyj kolorów duży kontrast systemu Windows
 
-- Wybierz lewy Alt + lewy Shift + drukowanie ekranu kluczy.
+- Wybierz klawisze STRZAŁKA w lewo Alt + Strzałka w lewo Shift + Print Screen.
 
     > [!WARNING]
-    > Ta opcja ustawia wysoki kontrast dla wszystkich aplikacji i interfejsu użytkownika na bieżącym komputerze.
+    > Ta opcja ustawia duży kontrast dla wszystkich aplikacji i interfejsu użytkownika na bieżącym komputerze.
 
-## <a name="change-ide-fonts"></a>Zmienianie czcionek IDE
- Można zmienić rozmiar czcionki i tekstu dla wszystkich okien i okien dialogowych w IDE. Można dostosować tylko niektórych okien i innych elementów tekstu.
+## <a name="change-ide-fonts"></a>Zmień czcionki IDE
+ Można zmienić czcionkę i rozmiar tekstu we wszystkich oknach i oknach dialogowych w IDE. Można dostosować tylko niektóre okna i inne elementy tekstowe.
 
 #### <a name="to-change-the-font-and-size-of-all-text-in-the-ide"></a>Aby zmienić czcionkę i rozmiar całego tekstu w IDE
 
-1. Na pasku menu wybierz **narzędzia**, **opcje**.
+1. Na pasku menu wybierz **Narzędzia**, **Opcje**.
 
-2. Na liście opcji wybierz **środowiska**, **czcionki i kolory**.
+2. Na liście Opcje wybierz **środowisko**, **czcionki i kolory**.
 
-3. W **Pokaż ustawienia dla** wybierz **czcionka środowiska**.
+3. Na liście **Pokaż ustawienia dla** wybierz opcję **czcionka środowiska**.
 
     > [!TIP]
-    > Jeśli chcesz zmienić czcionkę tylko okna narzędzi w **Pokaż ustawienia dla** wybierz **[wszystkie tekstowe narzędzie Windows]**.
+    > Jeśli chcesz zmienić czcionkę tylko dla okien narzędzi, na liście **Pokaż ustawienia dla** wybierz opcję **[wszystkie okna narzędzi tekstowych]** .
 
-4. W **czcionki** wybierz czcionkę.
+4. Na liście **czcionka** wybierz czcionkę.
 
-5. W **rozmiar** , wybierz rozmiar tekstu, a następnie wybierz **OK** przycisku.
+5. Na liście **rozmiar** wybierz rozmiar tekstu, a następnie wybierz przycisk **OK** .
 
 ## <a name="see-also"></a>Zobacz też
- [Funkcje ułatwień dostępu programu Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md) [jak: Zmiana czcionek i kolorów w Edytorze](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
+ [Funkcje ułatwień dostępu programu Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md) [: zmiana czcionek i kolorów w edytorze](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)

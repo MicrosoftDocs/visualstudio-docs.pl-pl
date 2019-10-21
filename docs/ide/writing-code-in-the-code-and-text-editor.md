@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - code, editing [Visual Studio]
 - code editor [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7dbb14a7ea6b3271c7608f3bbb49dd30aa605b66
-ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
+ms.openlocfilehash: 86cab4db7c732aeb33d9adf61bfdcb2c4563da57
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72380976"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647045"
 ---
 # <a name="features-of-the-code-editor"></a>Funkcje edytora kodu
 
@@ -37,7 +37,7 @@ Różne języki programu Visual Studio oferują różne zestawy funkcji, a w nie
 |Kolorowanie składni|Niektóre elementy składni plików Code i Markup są różne w różny sposób, aby je odróżnić. Na przykład słowa kluczowe (takie jak `using` w C# i `Imports` w Visual Basic) są jednym kolorem, ale typy (takie jak `Console` i `Uri`) są kolejnymi kolorami. Inne elementy składni są również kolorowe, takie jak literały ciągów i komentarze. C++używa koloru do rozróżnienia między typami, wyliczeniami i makrami, między innymi tokenami.<br /><br /> Możesz zobaczyć domyślny kolor dla każdego typu i zmienić kolor dla każdego określonego elementu składni w oknie [dialogowym czcionki i kolory, środowisko, opcje](../ide/reference/fonts-and-colors-environment-options-dialog-box.md), które można otworzyć z menu **Narzędzia** .|
 |Znaczniki błędów i ostrzeżeń|Podczas dodawania kodu i kompilowania rozwiązania, mogą pojawić się (a) różne kolorowe faliste podkreślenia (znane jako zygzaki) lub (b) żarówki pojawiające się w kodzie. W kolorze czerwonym są błędy składniowe, niebieskie oznacza błędy kompilatora, czerwone uwagi, a purpurowe oznaczają inne typy błędów. [Szybkie akcje](../ide/quick-actions.md) sugerują poprawki dotyczące problemów i ułatwiają stosowanie poprawki.<br /><br /> Możesz zobaczyć domyślny kolor dla każdego błędu i ostrzeżenia w zygzaku w opcji **narzędzia** >  > **środowisko** > **czcionek i kolorów** . Poszukaj **błędu składniowy**, **błędu kompilatora**, **ostrzeżenia**i **innego błędu**.|
 |Dopasowywanie nawiasów klamrowych|Gdy punkt wstawiania zostanie umieszczony w otwartym nawiasie klamrowym w pliku kodu, zarówno, jak i zamykającego nawiasu klamrowego są wyróżnione. Ta funkcja umożliwia natychmiastowe przesłanie opinii na temat zagubionych lub brakujących nawiasów klamrowych. Można włączać lub wyłączać dopasowanie nawiasów klamrowych przy użyciu ustawienia **automatycznego wyróżniania ogranicznika** (**Narzędzia** > **Opcje** > **Edytor tekstu**). Możesz zmienić kolor podświetlenia w ustawieniu **czcionki i kolory** (**Narzędzia** > **Opcje** > **środowisko**). Poszukaj **pasującego nawiasu klamrowego (Podświetl)** lub **Dopasowywanie nawiasów klamrowych (prostokąt)** .|
-|Wizualizator struktury|Linie kropkowane łączą pasujące nawiasy klamrowe w plikach kodu, co ułatwia wyświetlanie par otwierających i zamykających nawiasów klamrowych. Dzięki temu można szybciej znaleźć kod w bazie kodu. Te linie można włączać lub wyłączać za pomocą **wskazówek Pokaż strukturę** w sekcji **Wyświetlanie** w obszarze **narzędzia** > **Opcje** > **Edytor tekstu**@no__t **-7.**|
+|Wizualizator struktury|Linie kropkowane łączą pasujące nawiasy klamrowe w plikach kodu, co ułatwia wyświetlanie par otwierających i zamykających nawiasów klamrowych. Dzięki temu można szybciej znaleźć kod w bazie kodu. Te linie można włączać lub wyłączać za pomocą **wytycznych Pokaż strukturę** w sekcji **ekran** w obszarze **Narzędzia**  > **Opcje**  > **Edytor tekstu**  >  stronie**Ogólne** .|
 |Numery wierszy|Numery wierszy mogą być wyświetlane na lewym marginesie okna kod. Domyślnie nie są wyświetlane. Tę opcję można włączyć w ustawieniach **Edytor tekstu wszystkie języki** (**Narzędzia** > **Opcje** > **Edytor tekstu** > **wszystkie języki**). Możesz wyświetlić numery wierszy dla poszczególnych języków programowania, zmieniając ustawienia dla tych języków (**narzędzia** > **Opcje** > **edytor tekstu** >  **\<language >** ). W przypadku numerów wierszy do drukowania należy wybrać opcję **Dołącz numery wierszy** w oknie dialogowym **Drukowanie** .|
 |Śledzenie zmian|Kolor lewego marginesu umożliwia śledzenie zmian wprowadzonych w pliku. Zmiany wprowadzone od momentu otwarcia pliku, ale nie zostały zapisane, są oznaczane żółtym paskiem na lewym marginesie (znanym jako margines zaznaczenia). Po zapisaniu zmian (ale przed zamknięciem pliku) pasek zmieni kolor na zielony. W przypadku cofnięcia zmiany po zapisaniu pliku pasek zmieni kolor na pomarańczowy. Aby wyłączyć tę funkcję i włączyć ją, Zmień opcję **Śledź zmiany** w ustawieniach **edytora tekstu** (**narzędzia** > **Opcje** > **Edytor tekstu**).|
 |Zaznaczanie kodu i tekstu|Możesz zaznaczyć tekst w trybie standardowego ciągłego przesyłania strumieniowego lub w trybie Box, w którym można wybrać prostokątny fragment tekstu zamiast zestawu wierszy. Aby dokonać wyboru w trybie pola, naciśnij klawisz **Alt** podczas przeciągania wskaźnika myszy nad zaznaczeniem (lub naciśnij **kombinację klawiszy Alt**+**SHIFT**+ **\<arrow Key >** ). Zaznaczenie zawiera wszystkie znaki w prostokącie zdefiniowanym przez pierwszy znak i ostatni znak w zaznaczeniu. Wszystkie wpisane lub wklejone do zaznaczonego obszaru są wstawiane w tym samym punkcie w każdym wierszu.|

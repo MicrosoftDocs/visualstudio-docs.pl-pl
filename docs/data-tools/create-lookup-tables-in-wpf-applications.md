@@ -11,53 +11,53 @@ helpviewer_keywords:
 - WPF Designer, data binding
 - data binding, WPF
 ms.assetid: 56a1fbff-c7e8-4187-a1c1-ffd17024bc1b
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1631f1b93f79c21914f990620f7e0047c301163f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a2a2179a759bc11a9466361d3c8cc2df45c12f20
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62567822"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648596"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Tworzenie tabel wyszukiwania w aplikacjach WPF
 
-Termin *tabeli odnośników* (nazywane czasem *powiązanie wyszukiwania odnośników*) opisano kontrolkę wyświetlającą informacje z danych w jednej tabeli na podstawie wartości pola klucza obcego w innej tabeli. Można utworzyć tabeli odnośników, przeciągając główny węzeł tabeli nadrzędnej lub obiektu w **źródeł danych** okna na formant, który jest już powiązany z kolumny lub właściwości w pokrewnej tabeli podrzędnej.
+Termin *tabela wyszukiwania* (nazywana czasem *powiązaniem wyszukiwania*) opisuje kontrolkę wyświetlającą informacje z jednej tabeli danych na podstawie wartości pola klucza obcego w innej tabeli. Tabelę odnośników można utworzyć, przeciągając główny węzeł tabeli nadrzędnej lub obiektu w oknie **źródła danych** na kontrolkę, która jest już powiązana z kolumną lub właściwością w powiązanej tabeli podrzędnej.
 
-Na przykład rozważmy tabelę `Orders` w bazie danych sprzedaży. Każdy rekord w `Orders` tabela zawiera `CustomerID` oznacza to, który klient złożył zamówienie. `CustomerID` To klucz obcy wskazujący rekord klienta w `Customers` tabeli. Po wyświetleniu listy zamówień z `Orders` tabeli, możesz chcieć wyświetlić nazwę klienta rzeczywiste zamiast `CustomerID`. Ponieważ nazwa klienta znajduje się w `Customers` tabeli, należy utworzyć tabeli odnośników, aby wyświetlić nazwę klienta. Używa tabeli odnośników `CustomerID` wartość w `Orders` nagrywanie Przejdź relacje i zwraca nazwę klienta.
+Na przykład rozważmy tabelę `Orders` w bazie danych sprzedaży. Każdy rekord w tabeli `Orders` zawiera `CustomerID`, który wskazuje, który klient złożył zamówienie. @No__t_0 jest kluczem obcym wskazującym rekord klienta w tabeli `Customers`. Po wyświetleniu listy zamówień z tabeli `Orders` może być konieczne wyświetlenie rzeczywistej nazwy klienta zamiast `CustomerID`. Ponieważ nazwa klienta znajduje się w tabeli `Customers`, należy utworzyć tabelę odnośników, aby wyświetlić nazwę klienta. Tabela wyszukiwania używa wartości `CustomerID` w rekordzie `Orders` do nawigowania po relacji i zwraca nazwę klienta.
 
-## <a name="to-create-a-lookup-table"></a>Można utworzyć tabeli odnośników
+## <a name="to-create-a-lookup-table"></a>Aby utworzyć tabelę odnośników
 
-1. Dodaj jeden z następujących rodzajów źródeł danych za pomocą powiązanych danych do projektu:
+1. Dodaj jeden z następujących typów źródeł danych z danymi powiązanymi do projektu:
 
-    - Zestaw danych lub modelu Entity Data Model.
+    - Zestaw danych lub Entity Data Model.
 
-    - Usługi danych WCF, usługi WCF lub usługi sieci web. Aby uzyskać więcej informacji, zobacz [jak: Łączenie z danymi w usłudze](../data-tools/how-to-connect-to-data-in-a-service.md).
+    - Usługa danych programu WCF, usługa WCF lub usługa sieci Web. Aby uzyskać więcej informacji, zobacz [jak: łączenie z danymi w usłudze](../data-tools/how-to-connect-to-data-in-a-service.md).
 
-    - Obiekty. Aby uzyskać więcej informacji, zobacz [powiązania do obiektów w programie Visual Studio](bind-objects-in-visual-studio.md).
-
-    > [!NOTE]
-    > Zanim można utworzyć tabeli odnośników, dwie pokrewne tabele lub obiekty musi istnieć jako źródło danych dla projektu.
-
-2. Otwórz **WPF Designer**i upewnij się, że projektant zawiera kontener, który jest prawidłowe miejsca docelowego dla elementów w **źródeł danych** okna.
-
-     Aby uzyskać więcej informacji na temat prawidłowych miejsc upuszczania zobacz [WPF powiązać kontrolki z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
-
-3. Na **danych** menu, kliknij przycisk **Pokaż źródła danych** otworzyć **źródeł danych** okna.
-
-4. Rozwiń węzły w **źródeł danych** okna, aż zobaczysz tabelę nadrzędną lub obiektu oraz pokrewną tabelę podrzędną lub obiektu.
+    - Elementy. Aby uzyskać więcej informacji, zobacz [powiąż z obiektami w programie Visual Studio](bind-objects-in-visual-studio.md).
 
     > [!NOTE]
-    > Pokrewną tabelę podrzędną lub obiekt jest węzeł pokazywany jako rozwijany węzeł podrzędny tabeli nadrzędnej lub obiektu.
+    > Aby można było utworzyć tabelę odnośników, muszą istnieć dwie powiązane tabele lub obiekty jako źródło danych dla projektu.
 
-5. Kliknij menu rozwijane dla węzła podrzędnego, a następnie wybierz pozycję **szczegóły**.
+2. Otwórz **projektanta WPF**i upewnij się, że projektant zawiera kontener, który jest prawidłowym obiektem docelowym upuszczania dla elementów w oknie **źródła danych** .
+
+     Aby uzyskać więcej informacji na temat prawidłowych obiektów docelowych upuszczania, zobacz [Powiązywanie kontrolek WPF z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
+
+3. W menu **dane** kliknij przycisk **Pokaż źródła danych** , aby otworzyć okno **źródła danych** .
+
+4. Rozwiń węzły w oknie **źródła danych** , dopóki nie zobaczysz tabeli nadrzędnej lub obiektu i powiązanej tabeli podrzędnej lub obiektu.
+
+    > [!NOTE]
+    > Powiązana tabela podrzędna lub obiekt jest węzłem, który jest wyświetlany jako rozszerzalny węzeł podrzędny w ramach tabeli nadrzędnej lub obiektu.
+
+5. Kliknij menu rozwijane węzła podrzędnego, a następnie wybierz pozycję **szczegóły**.
 
 6. Rozwiń węzeł podrzędny.
 
-7. W obszarze węzła podrzędnego kliknij menu rozwijanej dla elementu, który odnosi się danych nadrzędnymi i podrzędnymi. (W powyższym przykładzie jest to **CustomerID** węzła.) Wybierz jedną z następujących typów formantów, które obsługują powiązanie wyszukiwania odnośników:
+7. W węźle podrzędnym kliknij menu rozwijane dla elementu, który odnosi się do danych podrzędnych i nadrzędnych. (W poprzednim przykładzie jest to węzeł **IDKlienta** ). Wybierz jeden z następujących typów formantów, które obsługują powiązanie wyszukiwania:
 
     - **ComboBox**
 
@@ -66,30 +66,30 @@ Na przykład rozważmy tabelę `Orders` w bazie danych sprzedaży. Każdy rekord
     - **ListView**
 
         > [!NOTE]
-        > Jeśli **ListBox** lub **ListView** formant nie jest wyświetlany na liście te formanty można dodać do listy. Aby uzyskać informacje, zobacz [Ustawianie formantu do utworzenia podczas przeciągania z okna źródeł danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+        > Jeśli formant **ListBox** lub **ListView** nie pojawia się na liście, możesz dodać te kontrolki do listy. Aby uzyskać więcej informacji, zobacz [Ustawianie formantu, który ma zostać utworzony podczas przeciągania z okna źródła danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
-    - Kontrolki niestandardowej, która pochodzi od klasy <xref:System.Windows.Controls.Primitives.Selector>.
+    - Każda kontrolka niestandardowa, która pochodzi od <xref:System.Windows.Controls.Primitives.Selector>.
 
         > [!NOTE]
-        > Informacje o sposobie dodawania niestandardowego określa się na liście kontrolek można wybrać dla elementów w **źródeł danych** okna, zobacz [Dodawanie niestandardowych formantów do okna źródeł danych](../data-tools/add-custom-controls-to-the-data-sources-window.md).
+        > Aby uzyskać informacje na temat dodawania niestandardowych kontrolek do listy kontrolek, które można wybrać dla elementów w oknie **źródła danych** , zobacz [Dodawanie niestandardowych kontrolek do okna źródła danych](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 
-8. Przeciągnij węzeł podrzędny z **źródeł danych** okna na kontenerze projektanta WPF. (W powyższym przykładzie jest węzeł podrzędny **zamówienia** węzła.)
+8. Przeciągnij węzeł podrzędny z okna **źródła danych** do kontenera w projektancie WPF. (W poprzednim przykładzie węzeł podrzędny jest węzłem **Orders** ).
 
-     Program Visual Studio generuje XAML, który tworzy nowe formanty powiązane z danymi dla każdego z elementów, które przeciągniesz. XAML również dodaje nowy <xref:System.Windows.Data.CollectionViewSource> tabeli podrzędnej lub obiektu do zasobów miejsca docelowego. Dla niektórych źródeł danych programu Visual Studio generuje kod, aby załadować dane do tabeli lub obiektu. Aby uzyskać więcej informacji, zobacz [WPF powiązać kontrolki z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
+     Program Visual Studio generuje kod XAML, który tworzy nowe kontrolki powiązane z danymi dla każdego elementu, który przeciągniesz. KOD XAML dodaje również nowe <xref:System.Windows.Data.CollectionViewSource> dla tabeli podrzędnej lub obiektu do zasobów elementu docelowego upuszczania. W przypadku niektórych źródeł danych program Visual Studio generuje również kod umożliwiający załadowanie danych do tabeli lub obiektu. Aby uzyskać więcej informacji, zobacz [Powiązywanie formantów WPF z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
 
-9. Przeciągnij węzeł nadrzędny z **źródeł danych** okna na kontrolkę wyszukiwania odnośników powiązania, utworzony wcześniej. (W powyższym przykładzie jest węzeł nadrzędny **klientów** węzła).
+9. Przeciągnij węzeł nadrzędny z okna **źródła danych** na utworzoną wcześniej kontrolkę powiązania wyszukiwania. (W poprzednim przykładzie węzeł nadrzędny jest węzłem **Customers** ).
 
-     Program Visual Studio ustawia niektóre właściwości kontrolki do konfigurowania wiązania wyszukiwania. W poniższej tabeli wymieniono właściwości, które modyfikuje programu Visual Studio. Jeśli to konieczne, możesz zmienić te właściwości w XAML lub w **właściwości** okna.
+     Program Visual Studio ustawia pewne właściwości kontrolki, aby skonfigurować powiązanie wyszukiwania. W poniższej tabeli wymieniono właściwości, które modyfikuje program Visual Studio. W razie potrzeby możesz zmienić te właściwości w kodzie XAML lub w oknie **Właściwości** .
 
     |Właściwość|Wyjaśnienie ustawienia|
     |--------------| - |
-    |<xref:System.Windows.Controls.ItemsControl.ItemsSource%2A>|Ta właściwość określa, kolekcji lub powiązania, które służy do uzyskiwania danych, który jest wyświetlany w formancie. Program Visual Studio ustawia tę właściwość <xref:System.Windows.Data.CollectionViewSource> dla danych nadrzędnej, do którego został przeciągnięty do formantu.|
-    |<xref:System.Windows.Controls.ItemsControl.DisplayMemberPath%2A>|Ta właściwość określa ścieżkę do elementu danych, który jest wyświetlany w formancie. Program Visual Studio ustawia tę właściwość do pierwszej kolumny lub właściwości w danych nadrzędnej po kluczu podstawowym typie danych ciągu.<br /><br /> Jeśli chcesz wyświetlić innej kolumny lub właściwości w danych nadrzędnej, należy zmienić tę właściwość na ścieżkę inną właściwość.|
-    |<xref:System.Windows.Controls.Primitives.Selector.SelectedValue%2A>|Program Visual Studio wiąże tej właściwości do kolumny lub właściwości danych podrzędnych, która została przeciągnięta do projektanta. Jest to klucz obcy, aby dane nadrzędnej.|
-    |<xref:System.Windows.Controls.Primitives.Selector.SelectedValuePath%2A>|Program Visual Studio ustawia tę właściwość ścieżki kolumny lub właściwości danych podrzędne, które jest kluczem obcym danych nadrzędnej.|
+    |<xref:System.Windows.Controls.ItemsControl.ItemsSource%2A>|Ta właściwość określa kolekcję lub powiązanie, które jest używane do pobierania danych wyświetlanych w kontrolce. Program Visual Studio ustawia tę właściwość na <xref:System.Windows.Data.CollectionViewSource> dla danych nadrzędnych, które zostały przeciągnięte do kontrolki.|
+    |<xref:System.Windows.Controls.ItemsControl.DisplayMemberPath%2A>|Ta właściwość określa ścieżkę elementu danych, który jest wyświetlany w kontrolce. Program Visual Studio ustawia tę właściwość na pierwszą kolumnę lub właściwość w danych nadrzędnych, po kluczu podstawowym zawierającym dane typu String.<br /><br /> Jeśli chcesz wyświetlić inną kolumnę lub właściwość w danych nadrzędnych, Zmień tę właściwość na ścieżkę innej właściwości.|
+    |<xref:System.Windows.Controls.Primitives.Selector.SelectedValue%2A>|Program Visual Studio tworzy powiązanie tej właściwości z kolumną lub właściwością danych podrzędnych, które zostały przeciągnięte do projektanta. Jest to klucz obcy dla danych nadrzędnych.|
+    |<xref:System.Windows.Controls.Primitives.Selector.SelectedValuePath%2A>|Program Visual Studio ustawia tę właściwość na ścieżkę kolumny lub właściwości danych podrzędnych, które są kluczem obcym dla danych nadrzędnych.|
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Wiązanie kontrolek WPF z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [Wyświetlanie powiązanych danych w aplikacjach WPF](../data-tools/display-related-data-in-wpf-applications.md)
-- [Przewodnik: Wyświetlanie powiązanych danych w aplikacji WPF](../data-tools/display-related-data-in-wpf-applications.md)
+- [Wskazówki: wyświetlanie powiązanych danych w aplikacji WPF](../data-tools/display-related-data-in-wpf-applications.md)

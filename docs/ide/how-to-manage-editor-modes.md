@@ -1,5 +1,5 @@
 ---
-title: Pełnoekranowy i tryb obszaru wirtualnego
+title: Pełny ekran i tryb przestrzeni wirtualnej
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -19,49 +19,49 @@ helpviewer_keywords:
 - views, changing mode
 - views, outlining
 ms.assetid: 1fb48027-d870-439f-8b72-4a0321390748
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39873fdd1bc41b32a69909a1061ec3fc7fb63b67
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: fd3e238813c6cfd8674e5392d9ad20889e79c900
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531895"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645852"
 ---
 # <a name="how-to-manage-editor-modes"></a>Instrukcje: Zarządzanie trybami edytora
 
-Edytor kodu programu Visual Studio można wyświetlić w różnych trybów wyświetlania.
+Edytor kodu programu Visual Studio można wyświetlić w różnych trybach wyświetlania.
 
 > [!NOTE]
-> Polecenia menu i okien dialogowych mogą różnić się od tych opisanych w tym artykule, w zależności od ustawień aktywnych lub wersji. Aby zmienić swoje ustawienia, na przykład aby **ogólne** lub **Visual C++** ustawienia, wybierz **narzędzia** > **Import i eksport ustawień**, a następnie wybierz **Resetuj wszystkie ustawienia**.
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w tym artykule, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, na przykład **Ogólne** lub ustawienia **wizualizacji C++**  , wybierz pozycję **Narzędzia** > **Ustawienia importu i eksportu**, a następnie wybierz pozycję **Zresetuj wszystkie ustawienia**.
 
 ## <a name="enable-full-screen-mode"></a>Włącz tryb pełnoekranowy
 
-Można wybrać ukryć wszystkie okna narzędzi i wyświetlić tylko okna dokumentu, należy włączyć **pełny ekran** trybu.
+Można ukryć wszystkie okna narzędzi i wyświetlić tylko okna dokumentów, **włączając tryb pełnoekranowy** .
 
-- Naciśnij klawisz **Alt**+**Shift**+**Enter** do wprowadzania lub zamknąć **pełny ekran** trybu.
+- Naciśnij klawisz **Alt** +**SHIFT** +**Enter** , aby wejść lub wyjść z trybu **pełnoekranowego** .
 
      --lub--
 
-- Należy wydać polecenie `View.Fullscreen` w **polecenia** okna.
+- Wydaj polecenie `View.Fullscreen` w oknie **poleceń** .
 
-## <a name="enable-virtual-space-mode"></a>Włącz tryb obszaru wirtualnego
+## <a name="enable-virtual-space-mode"></a>Włącz tryb przestrzeni wirtualnej
 
-W **wirtualną przestrzenią** tryb, spacje są dodawane na końcu każdego wiersza kodu. Wybierz tę opcję, aby umieść komentarze w momencie spójne obok kodu.
+W trybie **przestrzeni wirtualnej** spacje są wstawiane na końcu każdego wiersza kodu. Wybierz tę opcję, aby umieścić komentarze w spójnym punkcie obok kodu.
 
-1. Wybierz **opcje** z **narzędzia** menu.
+1. Wybierz **Opcje** z menu **Narzędzia** .
 
-2. Rozwiń **edytora tekstów** folderu i wybierz polecenie **wszystkie języki** globalnie Ustaw tę opcję, lub wybierz folder, do określonego języka. Na przykład, aby włączyć numery wierszy tylko w języku Visual Basic, należy wybrać **podstawowe** > **edytora tekstów** węzła.
+2. Rozwiń folder **Edytor tekstu** i wybierz **wszystkie języki** , aby ustawić tę opcję globalnie, lub wybierz określony folder języka. Aby na przykład włączyć numery wierszy tylko w Visual Basic, wybierz węzeł**Edytor tekstu**  >  **podstawowa** .
 
-3. Wybierz **ogólne** opcje, a następnie w obszarze **ustawienia**, wybierz opcję **włączyć wirtualną przestrzenią**.
+3. Wybierz opcje **Ogólne** i w obszarze **Ustawienia**wybierz pozycję **Włącz miejsce wirtualne**.
 
     > [!NOTE]
-    > **Wirtualna przestrzeń** jest włączone w **wybór kolumn** trybu. Gdy **wirtualną przestrzenią** nie jest włączony tryb punkt wstawiania przenoszony z końca jeden wiersz bezpośrednio do pierwszego znaku w następnym.
+    > **Wirtualne miejsce** jest włączone w trybie **wyboru kolumny** . Gdy tryb **przestrzeni wirtualnej** nie jest włączony, punkt wstawiania przechodzi od końca jednego wiersza bezpośrednio do pierwszego znaku następnego.
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Dostosowywanie układów okien w programie Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md)
-- [Czcionki i kolory, środowisko, okno dialogowe Opcje](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)
+- [Czcionki i kolory, środowisko, Opcje — okno dialogowe](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)

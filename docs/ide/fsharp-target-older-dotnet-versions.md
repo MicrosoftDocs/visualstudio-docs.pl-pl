@@ -1,60 +1,60 @@
 ---
-title: Poprzednie wersje programu .NET Framework dla docelowychF#
-description: Dowiedz się więcej o przeznaczone dla starszej wersji programu .NET Framework, korzystając z F# w programie Visual Studio.
+title: Przekieruj do poprzednich wersji .NET Framework dlaF#
+description: Dowiedz się więcej na temat określania starszej wersji F# .NET Framework podczas korzystania z programu w programie Visual Studio.
 ms.date: 07/11/2018
 ms.topic: troubleshooting
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
 monikerRange: vs-2017
-ms.openlocfilehash: 2e0d580ac18142010a306d3fb4de19eb69b0b91b
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: df263ee4b2bd6ec7b6239826725a85c26f0acf80
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746714"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72603524"
 ---
-# <a name="target-older-versions-of-net-f"></a>Docelowa starszej wersji platformy .NET (F#)
+# <a name="target-older-versions-of-net-f"></a>Docelowe starsze wersje platformy .NET (F#)
 
-Może się pojawić następujący błąd, jeśli zostanie podjęta próba skierowane do .NET Framework 2.0, 3.0 lub 3.5 w F# projektu programu Visual Studio jest zainstalowany w Windows 8.1:
+Następujący błąd może się pojawić w przypadku próby przekierowania .NET Framework 2,0, 3,0 lub 3,5 w F# projekcie, gdy program Visual Studio jest zainstalowany na Windows 8.1:
 
-**Ten projekt wymaga 2.0 F# środowiska uruchomieniowego, ale że środowisko uruchomieniowe nie jest zainstalowany.**
+**Ten projekt wymaga środowiska uruchomieniowego 2,0 F# , ale środowisko uruchomieniowe nie jest zainstalowane.**
 
-Wiadomo, że ten błąd występuje w ramach następujących kombinacji warunków:
+Ten błąd występuje w następującej kombinacji warunków:
 
-- Na Windows 8.1 jest zainstalowany program Visual Studio.
+- Program Visual Studio został zainstalowany na Windows 8.1.
 
-- .NET Framework 3.5 nie zostały włączone, przed zainstalowaniem programu Visual Studio.
+- Nie włączono .NET Framework 3,5 przed zainstalowaniem programu Visual Studio.
 
-- Projekt jest przeznaczony dla .NET Framework 2.0, 3.0 lub 3.5.
+- Projekt jest przeznaczony dla .NET Framework 2,0, 3,0 lub 3,5.
 
-Podczas instalowania programu Visual Studio wykrywa zainstalowane wersje programu .NET Framework. Program Visual Studio instaluje F# 2.0 środowisko uruchomieniowe tylko wtedy, gdy program .NET Framework 3.5 jest zainstalowane i włączone.
+Po zainstalowaniu programu Visual Studio program wykrywa zainstalowane wersje .NET Framework. Program Visual Studio instaluje F# środowisko uruchomieniowe 2,0 tylko wtedy, gdy .NET Framework 3,5 jest zainstalowana i włączona.
 
-## <a name="resolve-the-error"></a>Usuń przyczynę błędu
+## <a name="resolve-the-error"></a>Usuń błąd
 
-Aby rozwiązać ten problem, można:
+Aby rozwiązać ten problem, możesz:
 
-- Obiekt docelowy nowszą wersję programu .NET Framework.
+- Docelowa jest nowsza wersja .NET Framework.
 
-- Włącz dla programu .NET Framework 3.5 on Windows 8.1, a następnie zainstaluj F# 2.0 środowisko uruchomieniowe, naprawiając instalację programu Visual Studio. Postępuj zgodnie z instrukcjami, aby to zrobić.
+- Włącz .NET Framework 3,5 na Windows 8.1, a następnie zainstaluj środowisko F# uruchomieniowe 2,0, naprawiając instalację programu Visual Studio. Wykonaj poniższe czynności.
 
-### <a name="to-enable-the-net-framework-35-on-windows-81"></a>Aby włączyć program .NET Framework 3.5 na Windows 8.1
+### <a name="to-enable-the-net-framework-35-on-windows-81"></a>Aby włączyć .NET Framework 3,5 na Windows 8.1
 
-1. Na **Start** ekranu, wpisz **Panelu sterowania**.
+1. Na ekranie **startowym** wpisz **Panel sterowania**.
 
-   Podczas wpisywania **Panelu sterowania** ikona pojawia się w obszarze **aplikacje** nagłówka.
+   Podczas wpisywania ikona **Panelu sterowania** pojawia się pod nagłówkiem **aplikacje** .
 
-2. Wybierz **Panelu sterowania** ikonę, wybierz **programy** ikonę, a następnie wybierz **Windows Włącz lub wyłącz funkcje** łącza.
+2. Wybierz ikonę **Panelu sterowania** , wybierz ikonę **programy** , a następnie wybierz łącze **Włącz lub wyłącz funkcje systemu Windows** .
 
-3. Upewnij się, że **.NET Framework 3.5 (w tym .NET 2.0 i 3.0)** pole wyboru jest zaznaczone, a następnie wybierz **OK** przycisku. Nie ma potrzeby zaznacz pole wyboru dla żadnych węzłów podrzędnych dla składników opcjonalnych programu .NET Framework.
+3. Upewnij się, że pole wyboru **.NET Framework 3,5 (zawiera .net 2,0 i 3,0)** jest zaznaczone, a następnie wybierz przycisk **OK** . Nie musisz zaznaczać pól wyboru dla żadnych węzłów podrzędnych dla opcjonalnych składników .NET Framework.
 
-   .NET Framework 3.5 jest włączona, jeśli nie była już.
+   .NET Framework 3,5 jest włączona, jeśli nie została jeszcze.
 
-### <a name="to-install-the-f-20-runtime"></a>Aby zainstalować F# 2.0 runtime
+### <a name="to-install-the-f-20-runtime"></a>Aby zainstalować środowisko F# uruchomieniowe 2,0
 
-Postępuj zgodnie z [kroki, aby naprawić program Visual Studio](../install/repair-visual-studio.md).
+Postępuj zgodnie z [instrukcjami, aby naprawić program Visual Studio](../install/repair-visual-studio.md).
 
 ## <a name="see-also"></a>Zobacz także
 

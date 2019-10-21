@@ -1,5 +1,5 @@
 ---
-title: 'CA1810: Inicjowanie pola statyczne typu referencyjnego śródwierszowo | Dokumentacja firmy Microsoft'
+title: 'CA1810: zainicjuj wbudowane pola statyczne typu odwołania | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,59 +12,58 @@ helpviewer_keywords:
 - CA1810
 ms.assetid: e9693118-a914-4efb-9550-ec659d8d97d2
 caps.latest.revision: 23
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: dd0372ca3264bedd6fbb17ef3c8326471cb6e99f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9032ac105477370477b13554afe4ee65bd7cd733
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62538918"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72609016"
 ---
-# <a name="ca1810-initialize-reference-type-static-fields-inline"></a>CA1810: Inicjuj pola statyczne typu referencyjnego śródwierszowo
+# <a name="ca1810-initialize-reference-type-static-fields-inline"></a>CA1810: Zainicjuj wbudowane pola statyczne typu referencyjnego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|InitializeReferenceTypeStaticFieldsInline|
 |CheckId|CA1810|
-|Kategoria|Microsoft.Performance|
-|Zmiana kluczowa|Bez podziału|
+|Kategoria|Microsoft. Performance|
+|Zmiana kluczowa|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
- Typ odwołania deklaruje jawny, statyczny Konstruktor.
+ Typ referencyjny deklaruje jawny Konstruktor statyczny.
 
 ## <a name="rule-description"></a>Opis reguły
- Podczas gdy typ deklaruje jawny, statyczny konstruktor, kompilator just in time (JIT) do każdej metody statycznej dodaje sprawdzenie i konstruktora wystąpienia, aby upewnić się, że konstruktor statyczny został wcześniej wywołany. Inicjowanie statyczne są wyzwalane podczas uzyskiwania dostępu do dowolnego członka statycznego lub gdy tworzone jest wystąpienie tego typu. Jednak statyczne inicjowanie nie jest wyzwalany, jeśli zadeklarować zmienną typu, ale nie należy jej używać, które mogą być ważne, jeśli inicjowanie zmieni się stan globalny.
+ Podczas gdy typ deklaruje jawny, statyczny konstruktor, kompilator just in time (JIT) do każdej metody statycznej dodaje sprawdzenie i konstruktora wystąpienia, aby upewnić się, że konstruktor statyczny został wcześniej wywołany. Inicjalizacja statyczna jest wyzwalana, gdy zostanie uzyskany dostęp do dowolnego statycznego elementu członkowskiego lub gdy tworzone jest wystąpienie typu. Jednak Inicjalizacja statyczna nie jest wyzwalana, Jeśli deklarujesz zmienną typu, ale nie korzystasz z niej, co może być istotne w przypadku zmiany stanu globalnego inicjalizacji.
 
- Gdy wszystkie dane statyczne są wbudowane zainicjowane i jawny, statyczny Konstruktor nie jest zadeklarowana, Kompilatory języka intermediate language (MSIL) firmy Microsoft, Dodaj `beforefieldinit` flagę i niejawne Konstruktor statyczny, który inicjuje danych statycznych, typowi MSIL Definicja. Kiedy kompilator JIT napotka `beforefieldinit` Flaga w większości przypadków sprawdzenia konstruktora statycznego nie zostały dodane. Statyczne inicjowanie może wystąpić na pewien czas, zanim wszystkie pola statyczne są dostępne, ale nie, przed wywołaniem konstruktora statycznej metody lub wystąpienia. Należy pamiętać, że Inicjowanie statyczne mogą występować w dowolnej chwili po zadeklarowaniu zmiennej o typie.
+ Gdy wszystkie dane statyczne są inicjowane wewnętrznie i jawny Konstruktor statyczny nie jest zadeklarowany, kompilatory języka pośredniego (MSIL) firmy Microsoft dodają flagę `beforefieldinit` i niejawnego konstruktora statycznego, który inicjuje dane statyczne, do typu MSIL definicji. Gdy kompilator JIT napotka flagę `beforefieldinit`, większość czasu sprawdzenia konstruktora statycznego nie są dodawane. Inicjalizacja statyczna jest gwarantowana w pewnym czasie przed uzyskaniem dostępu do dowolnych pól statycznych, ale nie przed wywołaniem statycznej metody lub konstruktora wystąpień. Należy zauważyć, że inicjalizacja statyczna może wystąpić w dowolnym momencie po zadeklarowaniu zmiennej typu.
 
- Sprawdzenia konstruktora statycznego mogą obniżyć wydajność. Często statyczny Konstruktor jest używana tylko do zainicjowania pola statyczne, w których przypadku musisz tylko upewnić się, że inicjowanie statycznych występuje przed pierwszym dostępie pole statyczne. `beforefieldinit` Zachowanie jest odpowiednia dla tych i innych typów. Jest tylko nieodpowiednie, gdy statyczne inicjowanie ma wpływ na stan globalny jest spełniony jeden z następujących czynności:
+ Sprawdzenia konstruktora statycznego mogą obniżyć wydajność. Często statyczny Konstruktor jest używany tylko do inicjowania pól statycznych, w takim przypadku należy tylko upewnić się, że inicjalizacja statyczna występuje przed pierwszym dostępem do pola statycznego. Zachowanie `beforefieldinit` jest odpowiednie dla tych i większości innych typów. Jest on nieodpowiedni tylko wtedy, gdy statyczna Inicjalizacja ma wpływ na stan globalny i jeden z następujących warunków jest spełniony:
 
-- Wpływ na stan globalny jest kosztowne, a nie jest wymagane, jeśli typ nie jest używany.
+- Wpływ na stan globalny jest kosztowny i nie jest wymagany, jeśli typ nie jest używany.
 
-- Efekty stan globalny jest możliwy bez uzyskiwania dostępu do dowolnego pola statyczne typu.
+- Do globalnych efektów stanu można uzyskać dostęp bez uzyskiwania dostępu do żadnych pól statycznych typu.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Aby naprawić naruszenie tej zasady, zainicjuj wszystkie dane statyczne, gdy jest on zadeklarowany, i usuń konstruktor statyczny.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Jest to bezpieczne pominąć ostrzeżenie od tej reguły, jeśli wydajność nie ma znaczenia; lub jeśli stan globalny zmiany, które są spowodowane przez statyczne inicjowanie są kosztowne musi można zagwarantować przed statycznej metody tego typu jest nazywany lub tworzone jest wystąpienie tego typu.
+ Jeśli wydajność nie jest istotna, można bezpiecznie pominąć ostrzeżenie z tej reguły. lub jeśli globalne zmiany stanu, które są spowodowane inicjalizacją statyczną, są kosztowne lub muszą mieć gwarancje przed wywołaniem metody statycznej typu lub utworzenia wystąpienia typu.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie pokazano typem `StaticConstructor`, który narusza regułę i typu `NoStaticConstructor`, który zamienia statyczny Konstruktor inicjalizacji wbudowane spełniają reguły.
+ W poniższym przykładzie przedstawiono typ `StaticConstructor`, który narusza regułę i typ `NoStaticConstructor`, który zastępuje Konstruktor statyczny z inicjalizacją wbudowaną w celu spełnienia reguły.
 
  [!code-csharp[FxCop.Performance.RefTypeStaticCtor#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.RefTypeStaticCtor/cs/FxCop.Performance.RefTypeStaticCtor.cs#1)]
  [!code-vb[FxCop.Performance.RefTypeStaticCtor#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Performance.RefTypeStaticCtor/vb/FxCop.Performance.RefTypeStaticCtor.vb#1)]
 
- Należy pamiętać, dodanie `beforefieldinit` Flaga w definicji MSIL dla `NoStaticConstructor` klasy.
+ Zwróć uwagę na dodanie flagi `beforefieldinit` w definicji MSIL dla klasy `NoStaticConstructor`.
 
- **.klasa publicznych auto ansi StaticConstructor** **rozszerza [mscorlib]System.Object**
- **{**
- **} / / koniec klasy StaticConstructor** 
- **.klasa publicznych automatycznie ansi beforefieldinit NoStaticConstructor** **rozszerza [mscorlib]System.Object**
+ **Funkcja Public AutoStaticConstructord ANSI** **rozszerza [mscorlib] System. Object** 
  **{** 
- **} / / koniec klasy NoStaticConstructor**
+ **}//End klasy StaticConstructor** 
+ **. Klasa Public autoansi beforefieldinit NoStaticConstructor** ** rozszerza [mscorlib] system. Object** 
+ **{** 1 **}//koniec klasy NoStaticConstructor**
 ## <a name="related-rules"></a>Powiązane reguły
- [CA2207: Typu wartości Inicjuj pola statyczne bezpośrednio](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)
+ [CA2207: Pola statyczne typu wartości inicjuj bezpośrednio](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)

@@ -3,17 +3,17 @@ title: Synchronizuj ustawienia
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.assetid: a3d2ea29-be5d-4012-9820-44b06adbb7dd
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f670449be9b416d1c54bc83379bae4a6733d932
-ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
+ms.openlocfilehash: cebfc33b3bc0fc664874dd8c531e6630b3e64c5c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69976727"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647433"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>Synchronizuj ustawienia programu Visual Studio na wielu komputerach
 
@@ -23,23 +23,23 @@ Po zalogowaniu się do programu Visual Studio na wielu komputerach przy użyciu 
 
 Domyślnie synchronizowane są następujące ustawienia:
 
-- Ustawienia deweloperskie. Można wybrać kolekcję ustawień przy pierwszym otwarciu programu Visual Studio, ale można zmienić zaznaczenie w dowolnym momencie. Aby uzyskać więcej informacji, zobacz [ustawienia środowiska](../ide/environment-settings.md).
+- Ustawienia deweloperskie. Można wybrać kolekcję ustawień przy pierwszym otwarciu programu Visual Studio, ale można zmienić zaznaczenie w dowolnym momencie. Aby uzyskać więcej informacji, zobacz [Ustawienia środowiska](../ide/environment-settings.md).
 
-- Aliasy zdefiniowane przez użytkownika polecenia. Aby uzyskać więcej informacji o definiowaniu aliasów poleceń, zobacz [Visual Studio — Aliasy poleceń](../ide/reference/visual-studio-command-aliases.md).
+- Aliasy poleceń zdefiniowanych przez użytkownika. Aby uzyskać więcej informacji o definiowaniu aliasów poleceń, zobacz [Visual Studio — Aliasy poleceń](../ide/reference/visual-studio-command-aliases.md).
 
-- Układy okien zdefiniowane przez użytkownika w **oknie** > **Zarządzanie układami** okien.
+- Układy okien zdefiniowane przez użytkownika w **oknie**  > **Zarządzanie układami okien** .
 
-- Następujące opcje na stronach**Opcje** **narzędzi** > :
+- Następujące opcje na stronach **narzędzi**  > **Opcje** :
 
-  - Motyw i pasek menu ustawienia wielkości liter na stronie**Ogólne** opcje **środowiska** > .
+  - Motyw i pasek menu ustawienia wielkości liter w **środowisku**  >  stronie opcje**Ogólne** .
 
-  - Wszystkie ustawienia na stronie opcje**czcionek i kolorów** **środowiska** > .
+  - Wszystkie ustawienia na stronie **środowisko**  >  opcje**czcionek i kolorów** .
 
-  - Wszystkie skróty klawiaturowe na stronie opcje**klawiatury** **środowiska** > .
+  - Wszystkie skróty klawiaturowe w **środowisku**  >  opcje**klawiatury** .
 
-  - Wszystkie ustawienia na kartach **środowiska** > i na stronie opcje**systemu Windows** .
+  - Wszystkie ustawienia w **środowisku**  > **kart i strony Opcje systemu Windows** .
 
-  - Wszystkie ustawienia na stronie opcje**uruchamiania** **środowiska** > .
+  - Wszystkie ustawienia w **środowisku**  >  opcje**uruchamiania** strony.
 
   - Wszystkie ustawienia na stronach opcje **edytora tekstu** , na przykład [Preferencje stylu kodu](code-styles-and-code-cleanup.md).
 
@@ -47,12 +47,12 @@ Domyślnie synchronizowane są następujące ustawienia:
 
 ## <a name="turn-off-synchronized-settings-on-a-particular-computer"></a>Wyłączanie ustawień synchronizowanych na określonym komputerze
 
-Synchronizacja ustawień dla programu Visual Studio są włączone domyślnie. Zsynchronizowane ustawienia można wyłączyć na komputerze, przechodząc na stronę opcje **narzędzi** > **konta** **środowisko** > i usuwając zaznaczenie**opcji** >  **Synchronizuj ustawienia na urządzeniach, gdy zarejestrowano w programie Visual Studio**.
+Zsynchronizowane ustawienia dla programu Visual Studio są domyślnie włączone. Zsynchronizowane ustawienia można wyłączyć na komputerze, przechodząc do strony **narzędzia**  >  opcje ** >   > ** **konta** , a następnie usuwając zaznaczenie**opcji** **Synchronizuj ustawienia między urządzeniami po zalogowaniu się do wizualizacji Studio**.
 
 Na przykład jeśli zdecydujesz, że nie chcesz synchronizować ustawień programu Visual Studio na komputerze "A", wszelkie zmiany ustawień wprowadzone na komputerze "A" nie są wyświetlane na komputerze "B" lub na komputerze "C". Komputery "B" i "C" będą nadal synchronizowane ze sobą, ale nie z komputerem "A".
 
 > [!NOTE]
-> Jeśli nie zdecydujesz się synchronizować ustawień, usuń zaznaczenie opcji na stronie**Opcje** >  **narzędzi** > **konta** **środowisko** > , inne wersje lub wersje programu Visual Studio, które masz. na tym samym komputerze nie ma to wpływu. Te równoległe instalacje programu Visual Studio będą nadal synchronizować swoje ustawienia (o ile nie zostanie ponownie wybrana opcja).
+> Jeśli zdecydujesz się nie synchronizować ustawień, usuwając zaznaczenie opcji na stronie **narzędzia**  > **opcje**  > **środowisko**  > **konta** , inne wersje lub wersje programu Visual Studio, które znajdują się na tym samym komputerze. nie dotyczy. Te równoległe instalacje programu Visual Studio będą nadal synchronizować swoje ustawienia (o ile nie zostanie ponownie wybrana opcja).
 
 ## <a name="synchronize-settings-across-visual-studio-family-products-and-editions"></a>Synchronizuj ustawienia w produktach i wersjach rodziny Visual Studio
 
@@ -73,7 +73,7 @@ Jeśli obecnie korzystasz z równoległych instalacji programu Visual Studio i c
 
 2. Użyj **Kreatora importowania i eksportowania ustawień** , aby wyeksportować wszystkie istniejące ustawienia do niektórych lokalizacji poza folderem *%LocalAppData%\Microsoft\VisualStudio\15.0_xxxxxxxx* .
 
-3. Otwórz **wiersz polecenia dla deweloperów programu VS 2017** i uruchom system `devenv /resetuserdata`.
+3. Otwórz **wiersz polecenia dla deweloperów dla programu VS 2017** i uruchom `devenv /resetuserdata`.
 
 1. Otwórz program Visual Studio i zaimportuj zapisane ustawienia z wyeksportowanego pliku ustawień.
 
@@ -87,7 +87,7 @@ Niektóre ustawienia, takie jak układ okna narzędzi, nie są współużytkowan
 
 ## <a name="reset-synchronized-settings"></a>Resetuj zsynchronizowane ustawienia
 
-Aby zresetować wszystkie ustawienia do ustawień domyślnych, zaloguj się do programu Visual Studio, a następnie wybierz pozycję **Narzędzia** > **Importuj i Eksportuj ustawienia** , aby otworzyć **Kreatora importowania i eksportowania ustawień**. Wybierz pozycję **Zresetuj wszystkie ustawienia** , a następnie postępuj zgodnie z pozostałymi krokami kreatora.
+Aby zresetować wszystkie ustawienia do wartości domyślnych, zaloguj się do programu Visual Studio, a następnie wybierz pozycję **narzędzia**  > **Importuj i Eksportuj ustawienia** , aby otworzyć **Kreatora importowania i eksportowania ustawień**. Wybierz pozycję **Zresetuj wszystkie ustawienia** , a następnie postępuj zgodnie z pozostałymi krokami kreatora.
 
 ## <a name="see-also"></a>Zobacz także
 

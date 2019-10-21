@@ -1,5 +1,5 @@
 ---
-title: Operatory wyszukiwania zaawansowanego w wyrażeniach wyszukiwania | Dokumentacja firmy Microsoft
+title: Operatory wyszukiwania zaawansowanego w wyrażeniach wyszukiwania | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,42 +13,41 @@ helpviewer_keywords:
 - searching titles [Help Viewer 2.0]
 ms.assetid: 0cdc1746-8481-45ec-9c53-d0d89cdcbd5e
 caps.latest.revision: 11
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6befa20bcda7f30896fb2b04fadefb0eb5f21f8d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c5088fc04f4440260bdb9d3f040d99061c05d243
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408407"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72620334"
 ---
 # <a name="advanced-search-operators-in-search-expressions"></a>Operatory wyszukiwania zaawansowanego w wyrażeniach wyszukiwania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Za pomocą operatorów wyszukiwania zaawansowanego, można uściślić wyszukiwanie zawartości, tworząc bardziej złożonych wyszukiwania z tymi prostsze. Jak pokazano w poniższej tabeli, te operatory ograniczyć kontekst, w którym jest uruchamiane zapytanie.  
-  
+Korzystając z zaawansowanych operatorów wyszukiwania, można uściślić Wyszukiwanie zawartości, tworząc bardziej skomplikowane wyrażenia wyszukiwania na podstawie prostszych. Jak przedstawiono w poniższej tabeli, te operatory ograniczają kontekst, w którym jest uruchamiane zapytanie.
+
 > [!WARNING]
-> Należy wprowadzić operatory wyszukiwania zaawansowanego z dwukropkiem ostateczne i nie pośredniczące odstęp przed dwukropkiem dla aparatów wyszukiwania można je rozpoznać.  
-  
-|Aby wyszukać|Zastosowanie|Przykład|Wynik|  
-|-------------------|---------|-------------|------------|  
-|Termin w tytuł tematu|title:|Tytuł: binaryreader|Tematy, które zawierają "binaryreader" w tytułach.|  
-|Termin w przykładzie kodu|Kod:|Kod: readdouble|Tematy, które zawierają "readdouble" w przykładzie kodu.|  
-|Termin w przykładzie określonego języka programowania|Kod: vb:|Kod: vb:string|Tematy, które zawierają "string", w przykładzie Visual Basic.|  
-|Temat, który jest skojarzony z określonym indeksem słowem kluczowym|keyword:|keyword:readbyte|Tematy, które są skojarzone ze słowem kluczowym "readbyte" indeksu.|  
-  
- Można użyć kodu: Aby znaleźć zawartość informacji na temat kilku języków programowania, ale zwraca wyniki tylko dla zawartości, oznaczony za pomocą określonego języka programowania. Poniższa tabela zawiera listę języków programowania, które obsługuje tego operatora:  
-  
-|Język programowania|Zastosowanie|  
-|--------------------------|---------|  
-|Visual Basic|Kod: vb<br /><br /> lub<br /><br /> code:visualbasic|  
-|C#|Kod: c#<br /><br /> lub<br /><br /> Kod: csharp|  
-|C++|Kod: cpp<br /><br /> lub<br /><br /> Kod: c ++<br /><br /> lub<br /><br /> code:cplusplus|  
-|F#|Kod: f #<br /><br /> lub<br /><br /> Kod: fsharp|  
-|JavaScript|Kod: javascript<br /><br /> lub<br /><br /> Kod: js|  
-|XAML|Kod: xaml|  
-  
-## <a name="see-also"></a>Zobacz też  
- [Operatory logiczne w wyrażeniach wyszukiwania](../ide/logical-operators-in-search-expressions.md)   
- [Wskazówki dotyczące wyszukiwania pełnotekstowego](../ide/full-text-search-tips.md)
+> Należy wprowadzić zaawansowane Operatory wyszukiwania z końcowym dwukropkiem i bez odstępu przed dwukropkiem, aby aparat wyszukiwania mógł je rozpoznać.
+
+|Aby wyszukać|Zastosowanie|Przykład|Wynik|
+|-------------------|---------|-------------|------------|
+|Termin w tytule tematu|title:|Tytuł: BinaryReader|Tematy zawierające "BinaryReader" w ich tytułach.|
+|Termin w przykładowym kodzie|kodu|kod: readDouble|Tematy zawierające "readDouble" w przykładowym kodzie.|
+|Termin z przykładu określonego języka programowania|kod: VB:|kod: VB: ciąg|Tematy zawierające ciąg "String" w Visual Basic przykładzie.|
+|Temat, który jest skojarzony z określonym indeksem słowa kluczowego|kodu|słowo kluczowe: ReadByte|Tematy, które są skojarzone ze słowem kluczowym "ReadByte".|
+
+ Możesz użyć operatora Code:, aby znaleźć zawartość dla dowolnego z kilku języków programowania, ale zwraca wyniki tylko dla zawartości oznaczonej przy użyciu określonego języka programowania. W poniższej tabeli wymieniono Języki programowania obsługiwane przez ten operator:
+
+|Język programowania|Zastosowanie|
+|--------------------------|---------|
+|Visual Basic|kod: VB<br /><br /> lub<br /><br /> kod: VisualBasic|
+|C#|kod: c #<br /><br /> lub<br /><br /> kod: CSharp|
+|C++|kod: CPP<br /><br /> lub<br /><br /> kod: c++<br /><br /> lub<br /><br /> kod: cplusplus|
+|F#|kod: f #<br /><br /> lub<br /><br /> kod: FSharp|
+|JavaScript|kod: JavaScript<br /><br /> lub<br /><br /> kod: JS|
+|XAML|kod: XAML|
+
+## <a name="see-also"></a>Zobacz też
+ [Operatory logiczne w wyrażeniach wyszukiwania](../ide/logical-operators-in-search-expressions.md) [pełnotekstowe porady dotyczące wyszukiwania](../ide/full-text-search-tips.md)

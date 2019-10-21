@@ -1,5 +1,5 @@
 ---
-title: Aktualizowanie danych za pomocą adaptera TableAdapter | Dokumentacja firmy Microsoft
+title: Aktualizowanie danych za pomocą TableAdapter | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -18,41 +18,41 @@ helpviewer_keywords:
 - saving data
 ms.assetid: 5e32e10e-9bac-4969-9bdd-b8f6919d3516
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 30d1fd3ee211d6b30f435104a2e2f9b42ed100c0
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 312bf75100d2b9b270b45776c5f7ded21ab6ac52
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65692347"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72602334"
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>Aktualizowanie danych za pomocą adaptera TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Po ukończeniu zmodyfikowane i sprawdzania poprawności danych w zestawie danych, może wysyłać zaktualizowane dane do wywoływania databaseby `Update` metody TableAdapter. `Update` Metoda aktualizuje jednej tabeli danych i uruchamia odpowiednie polecenie (INSERT, UPDATE lub DELETE), na podstawie <xref:System.Data.DataRow.RowState%2A> każdego wiersza danych w tabeli. Gdy zestaw danych zawiera tabele powiązane relacjami, program Visual Studio generuje klasę TableAdapterManager, która służy do aktualizacji. Klasa TableAdapterManager gwarantuje, że aktualizacje zostały wprowadzone w odpowiedniej kolejności, na podstawie ograniczeń klucza obcego, które są zdefiniowane w bazie danych. Korzystając z formantów powiązanych z danymi, architektura wiązania z danymi tworzy zmienną składową klasy TableAdapterManager, o nazwie tableAdapterManager. Aby uzyskać więcej informacji, zobacz [hierarchiczna aktualizacja — Przegląd](https://msdn.microsoft.com/library/c4f8e8b9-e4a5-4a02-8462-d03d1e8222d6).  
-  
+Po zmodyfikowaniu i sprawdzeniu poprawności danych w zestawie danych można wysłać zaktualizowane dane z powrotem do databaseby wywołującego metodę `Update` TableAdapter. Metoda `Update` aktualizuje pojedynczą tabelę danych i uruchamia poprawne polecenie (INSERT, UPDATE lub DELETE) na podstawie <xref:System.Data.DataRow.RowState%2A> każdego wiersza danych w tabeli. Gdy zestaw danych zawiera powiązane tabele, program Visual Studio generuje klasę TableAdapterManager, która jest używana do wykonywania aktualizacji. Klasa TableAdapterManager gwarantuje, że aktualizacje są wprowadzane w odpowiedniej kolejności na podstawie ograniczeń klucza obcego, które są zdefiniowane w bazie danych. W przypadku korzystania z kontrolek powiązanych z danymi architektura wiązania danych tworzy zmienną członkowską klasy TableAdapterManager o nazwie tableAdapterManager. Aby uzyskać więcej informacji, zobacz [Omówienie hierarchicznej aktualizacji](https://msdn.microsoft.com/library/c4f8e8b9-e4a5-4a02-8462-d03d1e8222d6).
+
 > [!NOTE]
-> Podczas próby aktualizacji źródła danych przy użyciu zawartości zestawu danych można uzyskać błędów. Aby uniknąć błędów, zaleca się thatyou umieść kod, który wywołuje karty `Update` metody w ramach `try` / `catch` bloku.  
-  
- Dokładna procedura aktualizowanie źródła danych mogą się różnić w zależności od potrzeb biznesowych, ale obejmuje następujące kroki:  
-  
-1. Wywołaj karty `Update` method in Class metoda `try` / `catch` bloku.  
-  
-2. Jeśli wystąpił wyjątek, zlokalizuj wiersz danych, które spowodowały błąd. Aby uzyskać więcej informacji, zobacz [jak: Lokalizowanie wierszy zawierających błędy](https://msdn.microsoft.com/library/1fa907c5-fe66-4f29-a253-2b97b900050c).  
-  
-3. Uzgodnij problem w danych wiersza (programowo, jeżeli jest to możliwe, lub poprzez przedstawienie nieprawidłowy wiersz użytkownikowi modyfikowanie), a następnie ponów próbę aktualizacji (<xref:System.Data.DataRow.HasErrors%2A>, <xref:System.Data.DataTable.GetErrors%2A>).  
-  
-## <a name="savedata-to-a-database"></a>SaveData do bazy danych  
- Wywołaj `Update` metody TableAdapter. Przekaż nazwę tabeli danych, który zawiera wartości, które mają być zapisane w bazie danych.  
-  
-#### <a name="to-update-a-database-by-using-a-tableadapter"></a>Aby zaktualizować bazę danych za pomocą TableAdapter  
-  
-- Ujmij TableAdapter`Update` method in Class metoda `try` / `catch` bloku. Poniższy przykład pokazuje, jak aktualizować zawartość `Customers` tabelę `NorthwindDataSet` z poziomu `try` / `catch` bloku.  
-  
+> Podczas próby zaktualizowania źródła danych za pomocą zawartości zestawu danych można uzyskać błędy. Aby uniknąć błędów, zalecamy thatyou umieścić kod, który wywołuje metodę `Update` karty w bloku `try` / `catch`.
+
+ Dokładna procedura aktualizowania źródła danych może się różnić w zależności od potrzeb firmy, ale obejmuje następujące kroki:
+
+1. Wywołaj metodę `Update` karty w bloku `try` / `catch`.
+
+2. W przypadku przechwyconego wyjątku Znajdź wiersz danych, który spowodował błąd. Aby uzyskać więcej informacji, zobacz [How to: Lokalizuj wiersze z błędami](https://msdn.microsoft.com/library/1fa907c5-fe66-4f29-a253-2b97b900050c).
+
+3. Uzgodnij problem z wierszem danych (programowo, jeśli możesz lub przez przedstawienie nieprawidłowego wiersza do modyfikacji użytkownika), a następnie spróbuj ponownie wykonać aktualizację (<xref:System.Data.DataRow.HasErrors%2A>, <xref:System.Data.DataTable.GetErrors%2A>).
+
+## <a name="savedata-to-a-database"></a>SaveData do bazy danych
+ Wywołaj metodę `Update` elementu TableAdapter. Przekaż nazwę tabeli danych zawierającą wartości, które mają być zapisywane w bazie danych.
+
+#### <a name="to-update-a-database-by-using-a-tableadapter"></a>Aby zaktualizować bazę danych za pomocą TableAdapter
+
+- Ujmij metodę `Update` TableAdapter w bloku `try` / `catch`. Poniższy przykład pokazuje, jak zaktualizować zawartość tabeli `Customers` w `NorthwindDataSet` z poziomu `try` / `catch` bloku.
+
      [!code-csharp[VbRaddataSaving#9](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form3.cs#9)]
-     [!code-vb[VbRaddataSaving#9](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form3.vb#9)]  
-  
-## <a name="see-also"></a>Zobacz też  
+     [!code-vb[VbRaddataSaving#9](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form3.vb#9)]
+
+## <a name="see-also"></a>Zobacz też
  [Zapisywanie danych z powrotem w bazie danych](../data-tools/save-data-back-to-the-database.md)

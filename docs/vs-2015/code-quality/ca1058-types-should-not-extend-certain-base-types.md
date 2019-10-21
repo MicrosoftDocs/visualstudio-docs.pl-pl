@@ -1,5 +1,5 @@
 ---
-title: 'CA1058: Typy nie powinny rozszerzać niektórych typów podstawowych | Dokumentacja firmy Microsoft'
+title: 'CA1058: typy nie powinny poszerzać niektórych typów podstawowych | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,28 +12,28 @@ helpviewer_keywords:
 - TypesShouldNotExtendCertainBaseTypes
 ms.assetid: 8446ee40-beb1-49fa-8733-4d8e813471c0
 caps.latest.revision: 26
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 1ce67a70b6cbe955ef13bf6475a672bcbb687d95
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9a4663fe3bc09b27bad9eeec05e325f07a3de6f3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68200448"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72603063"
 ---
-# <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058: Typy nie powinny rozszerzać niektórych typów podstawowych
+# <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058: Typy nie powinny rozszerzać pewnych typów bazowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|TypesShouldNotExtendCertainBaseTypes|
 |CheckId|CA1058|
-|Kategoria|Microsoft.Design|
+|Kategoria|Microsoft. Design|
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Typ widoczny na zewnątrz rozszerza niektóre typy podstawowe. Obecnie ta zasada zgłasza typów wyprowadzonych z następujących typów:
+ Typ widoczny na zewnątrz rozszerza niektóre typy podstawowe. Obecnie ta reguła raportuje typy, które pochodzą od następujących typów:
 
 - <xref:System.ApplicationException?displayProperty=fullName>
 
@@ -52,14 +52,14 @@ ms.locfileid: "68200448"
 - <xref:System.Collections.Stack?displayProperty=fullName>
 
 ## <a name="rule-description"></a>Opis reguły
- Aby uzyskać [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] wersji 1 zalecano do wyprowadzenia nowego wyjątki od <xref:System.ApplicationException>. Zalecenie został zmieniony i nowych wyjątków powinien pochodzić od <xref:System.Exception?displayProperty=fullName> lub jedna z jej podklasach w <xref:System> przestrzeni nazw.
+ W przypadku [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] wersji 1 zaleca się uzyskanie nowych wyjątków z <xref:System.ApplicationException>. Zalecenie zostało zmienione i nowe wyjątki powinny pochodzić od <xref:System.Exception?displayProperty=fullName> lub jednej z jej podklas w przestrzeni nazw <xref:System>.
 
- Nie należy tworzyć podklasą <xref:System.Xml.XmlDocument> Jeśli chcesz utworzyć widok XML z bazowego źródła danych lub modelu obiektu.
+ Nie należy tworzyć podklasy <xref:System.Xml.XmlDocument>, jeśli chcesz utworzyć widok XML źródłowego modelu obiektów lub źródła danych.
 
-### <a name="non-generic-collections"></a>Kolekcje ogólne
- Użyj i/lub rozszerzyć kolekcje ogólne, jeśli to możliwe. Kolekcje ogólne w kodzie, nie zostanie rozszerzony, chyba że wcześniej wysłane.
+### <a name="non-generic-collections"></a>Kolekcje inne niż ogólne
+ Używaj i/lub rozszerzając kolekcje ogólne wszędzie tam, gdzie to możliwe. Nie należy poszerzać kolekcji innych niż ogólne w kodzie, chyba że wcześniej zostały dostarczone.
 
- **Przykłady nieprawidłowe użycie**
+ **Przykłady nieprawidłowego użycia**
 
 ```csharp
 public class MyCollection : CollectionBase
@@ -71,7 +71,7 @@ public class MyReadOnlyCollection : ReadOnlyCollectionBase
 }
 ```
 
- **Przykłady poprawne użycie**
+ **Przykłady poprawnego użycia**
 
 ```csharp
 public class MyCollection : Collection<T>
@@ -84,7 +84,7 @@ public class MyReadOnlyCollection : ReadOnlyCollection<T>
 ```
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, pobierają typ z innym typem bazowym lub kolekcję ogólną.
+ Aby naprawić naruszenie tej reguły, należy utworzyć typ z innego typu podstawowego lub kolekcji ogólnej.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Nie pomijaj ostrzeżeń dla tej reguły za naruszenia o <xref:System.ApplicationException>. Bezpiecznie Pomijaj ostrzeżeń dla tej reguły za naruszenia o <xref:System.Xml.XmlDocument>. Jest bezpieczne pominąć ostrzeżenie dotyczące nieogólna kolekcja, jeśli kod został wydany wcześniej.
+ Nie pomijaj ostrzeżenia z tej reguły dla naruszeń dotyczących <xref:System.ApplicationException>. W przypadku naruszeń dotyczących <xref:System.Xml.XmlDocument> można bezpiecznie pominąć ostrzeżenie z tej reguły. Można bezpiecznie pominąć ostrzeżenie o nieogólnej kolekcji, jeśli kod został wcześniej opublikowany.

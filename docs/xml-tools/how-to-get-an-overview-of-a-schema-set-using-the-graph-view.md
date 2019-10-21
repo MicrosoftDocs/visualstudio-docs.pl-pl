@@ -1,40 +1,40 @@
 ---
-title: 'Projektant schematu XML: Omówienie zestawu schematu przy użyciu widoku wykresu'
+title: 'Projektant schematu XML: pobieranie zestawu schematów — Omówienie przy użyciu widoku wykresu'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c0df4b0d-52ef-4a6c-9676-1d8311aad7c7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e0a0fc62a0d6dfe772a550f33cafa02bc5bc1bf3
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: b8acc2ff6a41f7057818c4a7659f2aa9d07c8bac
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66432162"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651178"
 ---
-# <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>Instrukcje: Zapoznaj się z omówieniem schematu z zestawu przy użyciu widoku wykresu
+# <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>Instrukcje: uzyskiwanie przeglądu zestawu schematu przy użyciu widoku wykresu
 
-W tym temacie opisano sposób użycia [widoku wykresu](../xml-tools/graph-view.md) Aby wyświetlić widok wysokiego poziomu węzłów w zestawie schematów i relacje między węzłami.
+W tym temacie opisano, jak za pomocą [widoku wykresu](../xml-tools/graph-view.md) wyświetlić widok wysokiego poziomu węzłów w zestawie schematów i relacje między węzłami.
 
 ## <a name="to-create-a-new-xsd-file-and-display-the-root-element-in-the-content-model-view"></a>Aby utworzyć nowy plik XSD i wyświetlić element główny w widoku modelu zawartości
 
-1. Utwórz nowy plik schematu XML, a następnie zapisz plik jako *Relationships.xsd*.
+1. Utwórz nowy plik schematu XML i Zapisz plik jako *Relationships. xsd*.
 
-2. Kliknij przycisk **edytora XML użyj do wyświetlania i edytowania pliku schematu XML podstawowego** link widoku startowego.
+2. Kliknij przycisk **Użyj edytora XML, aby wyświetlić i edytować źródłowy plik schematu XML** w widoku Start.
 
-3. Skopiuj przykładowy kod XML schematu z [schematu XML przykładowych: relacje](../xml-tools/sample-xsd-file-relationships.md) i wklej go w celu zastąpienia kodu, który został dodany do nowego pliku XSD domyślnie.
+3. Skopiuj przykładowy kod schematu XML z [przykładowego schematu XML: relacje](../xml-tools/sample-xsd-file-relationships.md) i wklej go, aby zastąpić kod, który został domyślnie dodany do nowego pliku XSD.
 
-4. Kliknij prawym przyciskiem myszy w dowolnym miejscu w edytorze XML, a następnie wybierz pozycję **Projektant widoków**.
+4. Kliknij prawym przyciskiem myszy w dowolnym miejscu edytora XML i wybierz polecenie **Projektant widoków**.
 
-5. Wybierz widok wykresu z **narzędzi XSD**.
+5. Wybierz widok wykresu z poziomu **paska narzędzi XSD**.
 
-6. Wybierz **schemat ustawiony** w węźle **Eksploratora schematu XML** i przeciągnij węzeł na powierzchni projektowej widoku wykresu. Powinien zostać wyświetlony wszystkie węzły globalnych i strzałki Łączenie węzłów, które mają relacje.
+6. Wybierz węzeł **zestaw schematów** w **Eksploratorze schematu XML** i przeciągnij węzeł na powierzchnię projektu widoku wykresu. Powinny być widoczne wszystkie węzły globalne i strzałki łączące węzły z relacjami.
 
      ![Widok wykresu](../xml-tools/media/relationshipingraphview.gif)
 
-7. Kliknij dowolny węzeł na powierzchni projektowej i spójrz na pasku nawigacji, aby zobaczyć, gdzie wybrany węzeł znajduje się w zestawie schematów.
+7. Kliknij dowolny węzeł na powierzchni projektowej i spójrz na pasek nawigacyjny, aby zobaczyć, gdzie wybrany węzeł znajduje się w zestawie schematów.
 
-8. Rick kliknąć dowolny węzeł elementu na projekt powierzchni i wybierz **Generowanie XML przykładowe** można znaleźć w dokumencie wystąpienia XML.
+8. Rick — kliknij dowolny węzeł elementu na powierzchni projektowej i wybierz polecenie **Generuj przykładowy kod XML** , aby wyświetlić dokument wystąpienia XML.

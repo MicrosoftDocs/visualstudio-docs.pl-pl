@@ -18,54 +18,54 @@ helpviewer_keywords:
 - saving data
 - TableAdapters
 ms.assetid: 012c5924-91f7-4790-b2a6-f51402b7014b
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 26bcab8d589c1fedcbbc4eb1f8b06bb1c04cac53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e8d5d8e3091b464084df065bb7b889db9fc2194f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62567025"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648515"
 ---
 # <a name="directly-access-the-database-with-a-tableadapter"></a>Bezpośredni dostęp do bazy danych za pomocą adaptera TableAdapter
 
-Oprócz `InsertCommand`, `UpdateCommand`, i `DeleteCommand`, TableAdapters są tworzone za pomocą metod, które można uruchamiać bezpośrednio w bazie danych. Może wywoływać te metody (`TableAdapter.Insert`, `TableAdapter.Update`, i `TableAdapter.Delete`) można manipulować danymi bezpośrednio w bazie danych.
+Oprócz `InsertCommand`, `UpdateCommand` i `DeleteCommand`, TableAdapters są tworzone przy użyciu metod, które mogą być uruchamiane bezpośrednio w bazie danych. Możesz wywoływać te metody (`TableAdapter.Insert`, `TableAdapter.Update` i `TableAdapter.Delete`) do manipulowania danymi bezpośrednio w bazie danych.
 
-Jeśli nie chcesz utworzyć te metody bezpośrednie, ustaw TableAdapter `GenerateDbDirectMethods` właściwości `false` w **właściwości** okna. Jeśli wszelkie zapytania są dodawane do TableAdapter oprócz zapytanietableadapter głównym, są one zapytania autonomicznych, które nie generują one `DbDirect` metody.
+Jeśli nie chcesz tworzyć tych metod bezpośrednich, ustaw właściwość `GenerateDbDirectMethods` TableAdapter na `false` w oknie **Właściwości** . Jeśli jakiekolwiek zapytania są dodawane do elementu TableAdapter oprócz głównego zapytania TableAdapter, są to zapytania autonomiczne, które nie generują tych `DbDirect` metod.
 
 ## <a name="send-commands-directly-to-a-database"></a>Wysyłanie poleceń bezpośrednio do bazy danych
 
-Wywołanie elementu TableAdapter `DbDirect` metodę, która wykonuje zadanie, który próbujesz osiągnąć.
+Wywołaj metodę `DbDirect` TableAdapter, która wykonuje zadanie, które próbujesz wykonać.
 
 ### <a name="to-insert-new-records-directly-into-a-database"></a>Aby wstawić nowe rekordy bezpośrednio do bazy danych
 
-- Wywołaj TableAdapter `Insert` jest metoda wartości dla każdej kolumny jako parametry. W poniższej procedurze użyto `Region` tabeli w bazie danych Northwind jako przykład.
+- Wywołaj metodę `Insert` TableAdapter, przekazując wartości dla każdej kolumny jako parametry. Poniższa procedura używa tabeli `Region` w bazie danych Northwind jako przykładu.
 
     > [!NOTE]
-    > Jeśli nie masz dostępne wystąpienia, należy utworzyć wystąpienie TableAdapter, którego chcesz używać.
+    > Jeśli nie masz dostępnego wystąpienia, Utwórz wystąpienie TableAdapter, którego chcesz użyć.
 
      [!code-vb[VbRaddataSaving#15](../data-tools/codesnippet/VisualBasic/directly-access-the-database-with-a-tableadapter_1.vb)]
      [!code-csharp[VbRaddataSaving#15](../data-tools/codesnippet/CSharp/directly-access-the-database-with-a-tableadapter_1.cs)]
 
-### <a name="to-update-records-directly-in-a-database"></a>Do aktualizowania rekordów bezpośrednio w bazie danych
+### <a name="to-update-records-directly-in-a-database"></a>Aby zaktualizować rekordy bezpośrednio w bazie danych
 
-- Wywołaj TableAdapter `Update` jest metoda nowymi i oryginalnymi wartości dla każdej kolumny jako parametry.
+- Wywołaj metodę `Update` TableAdapter, przekazując nowe i oryginalne wartości dla każdej kolumny jako parametry.
 
     > [!NOTE]
-    > Jeśli nie masz dostępne wystąpienia, należy utworzyć wystąpienie TableAdapter, którego chcesz używać.
+    > Jeśli nie masz dostępnego wystąpienia, Utwórz wystąpienie TableAdapter, którego chcesz użyć.
 
      [!code-vb[VbRaddataSaving#18](../data-tools/codesnippet/VisualBasic/directly-access-the-database-with-a-tableadapter_2.vb)]
      [!code-csharp[VbRaddataSaving#18](../data-tools/codesnippet/CSharp/directly-access-the-database-with-a-tableadapter_2.cs)]
 
-### <a name="to-delete-records-directly-from-a-database"></a>Do usuwania rekordów bezpośrednio z bazy danych
+### <a name="to-delete-records-directly-from-a-database"></a>Aby usunąć rekordy bezpośrednio z bazy danych
 
-- Wywołaj TableAdapter `Delete` jest metoda wartości dla każdej kolumny jako parametry `Delete` metody. W poniższej procedurze użyto `Region` tabeli w bazie danych Northwind jako przykład.
+- Wywołaj metodę `Delete` TableAdapter, przekazując wartości dla każdej kolumny jako parametry metody `Delete`. Poniższa procedura używa tabeli `Region` w bazie danych Northwind jako przykładu.
 
     > [!NOTE]
-    > Jeśli nie masz dostępne wystąpienia, należy utworzyć wystąpienie TableAdapter, którego chcesz używać.
+    > Jeśli nie masz dostępnego wystąpienia, Utwórz wystąpienie TableAdapter, którego chcesz użyć.
 
      [!code-vb[VbRaddataSaving#21](../data-tools/codesnippet/VisualBasic/directly-access-the-database-with-a-tableadapter_3.vb)]
      [!code-csharp[VbRaddataSaving#21](../data-tools/codesnippet/CSharp/directly-access-the-database-with-a-tableadapter_3.cs)]

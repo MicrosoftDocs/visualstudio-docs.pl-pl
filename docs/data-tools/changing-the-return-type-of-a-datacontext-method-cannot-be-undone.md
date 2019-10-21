@@ -3,40 +3,40 @@ title: Zmiany zwracanego typu metody DataContext nie można cofnąć
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 76b161fc-5075-4192-8d94-f15b02e199e9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7aee87e353cb3b69b70e78508c20a9a9c1ed5102
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 95d75e084b4824cf7cc8e717b1ce9174e76aa2e7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65460690"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648689"
 ---
 # <a name="changing-the-return-type-of-a-datacontext-method-cannot-be-undone"></a>Zmiany zwracanego typu metody DataContext nie można cofnąć
 
-Zmiany zwracanego typu metody DataContext nie można cofnąć. Aby przywrócić automatycznie wygenerowany typ, należy przeciągnąć element z **Eksploratora serwera** lub **Eksplorator bazy danych** do ponownie za pomocą Projektanta obiektów relacyjnych. Czy na pewno chcesz zmienić zwracany typ?
+Nie można cofnąć zwracanego typu metody DataContext. Aby powrócić do automatycznie generowanego typu, należy ponownie przeciągnąć element z **Eksplorator serwera** lub **Eksplorator bazy danych** do projektanta O/R. Czy na pewno chcesz zmienić zwracany typ?
 
-Zwracany typ <xref:System.Data.Linq.DataContext> metoda zależy od tego, gdzie można upuścić elementu w [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]. Jeśli usuniesz element bezpośrednio na istniejącej klasy jednostki, <xref:System.Data.Linq.DataContext> metodę, która ma typ zwracany klasy jednostki zostanie utworzony. Jeśli usuniesz element na pustym obszarem [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)], <xref:System.Data.Linq.DataContext> metodę, która zwraca automatycznie wygenerowany typ zostanie utworzony. Możesz zmienić typ zwracany <xref:System.Data.Linq.DataContext> metoda po dodaniu do okienka metod. Aby sprawdzić lub zmienić typ zwracany <xref:System.Data.Linq.DataContext> metody, zaznacz go i kliknij **typie zwracanym** właściwość **właściwości** okna.
+Zwracany typ metody <xref:System.Data.Linq.DataContext> różni się w zależności od tego, gdzie porzucasz element w [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]. W przypadku porzucenia elementu bezpośrednio do istniejącej klasy jednostki zostanie utworzona Metoda <xref:System.Data.Linq.DataContext>, która ma zwracany typ klasy jednostki. W przypadku usunięcia elementu do pustego obszaru [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] zostanie utworzony <xref:System.Data.Linq.DataContext> Metoda zwracająca automatycznie wygenerowany typ. Zwracany typ metody <xref:System.Data.Linq.DataContext> można zmienić po dodaniu jej do okienka metody. Aby sprawdzić lub zmienić zwracany typ metody <xref:System.Data.Linq.DataContext>, zaznacz ją, a następnie kliknij właściwość **Typ zwracany** w oknie **Właściwości** .
 
-## <a name="to-change-the-return-type-of-a-datacontext"></a>Aby zmienić zwracany typ DataContext
+## <a name="to-change-the-return-type-of-a-datacontext"></a>Aby zmienić zwracany typ elementu DataContext
 
 - Kliknij przycisk **Tak**.
 
-## <a name="to-exit-the-message-box-and-leave-the-return-type-unchanged"></a>Aby zamknąć okno komunikatu i pozostaw bez zmian typu zwracanego
+## <a name="to-exit-the-message-box-and-leave-the-return-type-unchanged"></a>Aby wyjść z okna komunikatu i pozostawić niezmieniony typ zwracany
 
 - Kliknij przycisk **nie**.
 
-## <a name="to-revert-to-the-original-return-type-after-changing-the-return-type"></a>Aby powrócić do oryginalnego typu zwracanego po zmianie typu zwracanego
+## <a name="to-revert-to-the-original-return-type-after-changing-the-return-type"></a>Aby powrócić do oryginalnego typu zwracanego po zmianie zwracanego typu
 
-1. Wybierz <xref:System.Data.Linq.DataContext> metody [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] i usuń go.
+1. Wybierz metodę <xref:System.Data.Linq.DataContext> na [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] i usuń ją.
 
-2. Znajdź element w **Server Explorer/Eksploratorze bazy danych** i przeciągnij go na [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
+2. Znajdź element w **Eksplorator serwera/Eksplorator bazy danych** i przeciągnij go na [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
 
-    A <xref:System.Data.Linq.DataContext> metody jest tworzony przy użyciu oryginalnego domyślny typ zwracany.
+    Metoda <xref:System.Data.Linq.DataContext> jest tworzona przy użyciu oryginalnego domyślnego typu zwracanego.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Narzędzi LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Narzędzia LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

@@ -13,21 +13,21 @@ helpviewer_keywords:
 - TableAdapters, searching data
 - queries [Visual Studio], TableAdapters
 ms.assetid: 104d1d19-b5a9-4071-b81e-1b3af08e9c7b
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 33282f65c004643ec29b4c4d3074261ff437662c
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 0926558c4d6e94032e2af2c75189f287da8d4811
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925651"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72642159"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Tworzenie sparametryzowanych zapytań adaptera TableAdapter
 
-Zapytanie sparametryzowane zwraca dane, które spełniają warunki klauzuli WHERE w zapytaniach. Na przykład możesz Sparametryzuj listę klientów, aby wyświetlić tylko klientów w określonym mieście przez dodanie `WHERE City = @City` do końca instrukcji SQL, która zwraca listę klientów.
+Zapytanie sparametryzowane zwraca dane, które spełniają warunki klauzuli WHERE w zapytaniach. Na przykład możesz Sparametryzuj listę klientów, aby wyświetlić tylko klientów w określonym mieście, dodając `WHERE City = @City` na końcu instrukcji SQL, która zwraca listę klientów.
 
 W **Projektant obiektów DataSet**można tworzyć sparametryzowane zapytania TableAdapter. Można je również utworzyć w aplikacji systemu Windows za pomocą polecenia **Sparametryzuj źródło danych** w menu **dane** . Polecenie **Sparametryzuj Data Source** tworzy kontrolki w formularzu, gdzie można wprowadzać wartości parametrów i uruchamiać zapytanie.
 
@@ -59,7 +59,7 @@ W **Projektant obiektów DataSet**można tworzyć sparametryzowane zapytania Tab
 2. W menu **dane** wybierz pozycję **Dodaj zapytanie** lub **Tagi inteligentne danych**.
 
     > [!NOTE]
-    > Jeśli polecenie **Dodaj zapytanie** nie jest dostępne w menu **dane** , zaznacz kontrolkę w formularzu wyświetlającym źródło danych, do którego chcesz dodać parametryzacja. Na przykład, jeśli formularz wyświetla dane w <xref:System.Windows.Forms.DataGridView> kontrolce, zaznacz ją. Jeśli formularz wyświetla dane w poszczególnych kontrolkach, wybierz dowolny formant powiązany z danymi.
+    > Jeśli polecenie **Dodaj zapytanie** nie jest dostępne w menu **dane** , zaznacz kontrolkę w formularzu wyświetlającym źródło danych, do którego chcesz dodać parametryzacja. Na przykład, jeśli formularz wyświetla dane w kontrolce <xref:System.Windows.Forms.DataGridView>, zaznacz ją. Jeśli formularz wyświetla dane w poszczególnych kontrolkach, wybierz dowolny formant powiązany z danymi.
 
 3. W obszarze **Wybierz tabelę źródła danych** wybierz tabelę, do której chcesz dodać parametryzacja.
 
@@ -71,13 +71,13 @@ W **Projektant obiektów DataSet**można tworzyć sparametryzowane zapytania Tab
 
 5. W polu **tekstowym zapytanie** Wpisz zapytanie, które pobiera parametry.
 
-6. Kliknij przycisk **OK**.
+6. Wybierz **przycisk OK**.
 
-     Kontrolka do wprowadzania parametru i przycisk **ładowania** są dodawane do formularza w <xref:System.Windows.Forms.ToolStrip> kontrolce.
+     Kontrolka do wprowadzania parametru i przycisk **ładowania** są dodawane do formularza w kontrolce <xref:System.Windows.Forms.ToolStrip>.
 
 ### <a name="query-for-null-values"></a>Zapytanie o wartości null
 
-Parametry TableAdapter mogą mieć przypisane wartości null, jeśli chcesz wysyłać zapytania o rekordy, które nie mają bieżącej wartości. Rozważmy na przykład następujące zapytanie, które ma `ShippedDate` parametr w jego `WHERE` klauzuli:
+Parametry TableAdapter mogą mieć przypisane wartości null, jeśli chcesz wysyłać zapytania o rekordy, które nie mają bieżącej wartości. Rozważmy na przykład następujące zapytanie, które ma `ShippedDate` parametr w jego klauzuli `WHERE`:
 
 ```sql
 SELECT CustomerID, OrderDate, ShippedDate

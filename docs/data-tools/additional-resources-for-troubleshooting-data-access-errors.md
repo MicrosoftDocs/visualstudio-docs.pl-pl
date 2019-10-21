@@ -1,5 +1,5 @@
 ---
-title: Dostęp do danych w usłudze forów
+title: Fora dostępu do danych
 ms.date: 06/27/2018
 ms.topic: troubleshooting
 f1_keywords:
@@ -219,23 +219,23 @@ helpviewer_keywords:
 - troubleshooting data access
 - datasets [Visual Basic], troubleshooting
 ms.assetid: 357c9f0a-9d59-4db4-9b7c-b96cad839961
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9867f9b595937e0ae8586aabdba180f4b1d8d359
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5c92699d9d7c77c771ea1cc4aa28b918f318eca8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818081"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648862"
 ---
 # <a name="troubleshoot-data-access-errors-on-the-forums"></a>Rozwiązywanie problemów z błędami dostępu do danych na forach
 
-Pomoc dotyczącą rozwiązywania problemów z błędów i ostrzeżeń można znaleźć w publiczne fora Microsoft Developer Network (MSDN). Oto niektóre dane powiązane fora dostępne w witrynie MSDN:
+Pomoc dotyczącą rozwiązywania problemów i ostrzeżeń można znaleźć w publicznych forach Microsoft Developer Network (MSDN). Oto kilka forów związanych z danymi dostępnych w witrynie MSDN:
 
-- [Formanty danych Windows Forms i wiązania danych](https://social.msdn.microsoft.com/Forums/windows/en-US/home?forum=winformsdatacontrols)
+- [Windows Forms kontrolki danych i wiązania z danymi](https://social.msdn.microsoft.com/Forums/windows/en-US/home?forum=winformsdatacontrols)
 
 - [Forum zestawu danych ADO.NET](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataset)
 
@@ -243,13 +243,13 @@ Pomoc dotyczącą rozwiązywania problemów z błędów i ostrzeżeń można zna
 
 - [Forum usług danych WCF](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataservices)
 
-- [Forum dostępu do danych programu SQL Server](https://social.msdn.microsoft.com/Forums/sqlserver/en-US/home?forum=sqldataaccess)
+- [Forum dotyczące dostępu do danych SQL Server](https://social.msdn.microsoft.com/Forums/sqlserver/en-US/home?forum=sqldataaccess)
 
-- [LINQ do SQL forum](https://social.msdn.microsoft.com/Forums/en-US/home?forum=linqtosql)
+- [Forum LINQ to SQL](https://social.msdn.microsoft.com/Forums/en-US/home?forum=linqtosql)
 
 - [Forum dostawców danych ADO.NET](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataproviders)
 
-Aby uzyskać informacje o tym, jak rozwiązywać problemy z łącznością do programu SQL Server, zobacz [Rozwiązywanie problemów dotyczących nawiązywania połączenia z aparatem bazy danych programu SQL Server](https://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx).
+Aby uzyskać informacje na temat rozwiązywania problemów z łącznością SQL Server, zobacz [Rozwiązywanie problemów z aparatem bazy danych SQL Server](https://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx).
 
 ## <a name="see-also"></a>Zobacz także
 

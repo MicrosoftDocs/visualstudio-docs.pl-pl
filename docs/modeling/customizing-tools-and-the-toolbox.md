@@ -8,24 +8,24 @@ f1_keywords:
 - vs.dsltools.dsldesigner.selectcursordialog
 helpviewer_keywords:
 - Domain-Specific Language, toolbox
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da472f443f52a6478ac5e1e34fd4d4a5beb0721b
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 75e3a791fc53f7a1e9ff093cc46e3d73003417cf
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820820"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653952"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Dostosowywanie narzędzi i przybornika
 
-Zdefiniuj elementy przybornika dla elementów, które chcesz powiadomić użytkowników, Dodaj do swoich modeli. Istnieją dwa rodzaje tools: narzędzia elementu i narzędzi do nawiązywania połączenia. W wygenerowanym projektancie użytkownika można wybrać narzędzie elementu przeciągnij kształty do diagramu, a narzędzie połączenia, aby narysować łącza między kształtami można wybrać. Ogólnie rzecz biorąc narzędzi elementów zezwolić użytkownikom na dodawanie wystąpień klas domeny do swoich modeli i narzędzi do nawiązywania połączenia pozwolić im na dodawanie wystąpienia relacji domeny.
+Należy zdefiniować elementy przybornika dla elementów, które chcesz zezwolić użytkownikom na dodawanie ich do modeli. Istnieją dwa rodzaje narzędzi: narzędzia elementów i narzędzia do nawiązywania połączeń. W wygenerowanym projektancie użytkownik może wybrać narzędzie elementu, aby przeciągnąć kształty do diagramu i można wybrać narzędzie połączenia do rysowania linków między kształtami. Ogólnie rzecz biorąc, elementy Tools pozwalają użytkownikom dodawać wystąpienia klas domeny do ich modeli, a narzędzia połączenia pozwalają im dodawać wystąpienia relacji domeny.
 
-## <a name="ToolboxDef"></a> Jak jest zdefiniowany przybornika
- W Eksploratorze DSL rozwiń węzeł edytora i węzły podrzędne. Zazwyczaj zobaczysz hierarchii, która jest podobny do tego:
+## <a name="ToolboxDef"></a>Sposób definiowania przybornika
+ W Eksploratorze DSL rozwiń węzeł Edytor i węzły znajdujące się poniżej. Zwykle zostanie wyświetlona hierarchia podobna do poniższego:
 
 ```
 Editor
@@ -36,66 +36,66 @@ Editor
                ExampleRelationship // a connection tool
 ```
 
-W tej części Eksplorator DSL możesz wykonywać następujące czynności:
+W tej części Eksploratora DSL można:
 
-- Utwórz nowe karty. Karty zdefiniować nagłówki sekcji w przyborniku.
+- Utwórz nowe karty. Tabulatory definiują nagłówki sekcji w przyborniku.
 
-- Tworzenie nowych narzędzi.
+- Utwórz nowe narzędzia.
 
-- Skopiuj i Wklej narzędzia.
+- Narzędzia do kopiowania i wklejania.
 
-- Przenieś narzędzia w górę lub w dół na liście.
+- Przenoszenie narzędzi w górę lub w dół na liście.
 
-- Usuń karty i narzędzi.
+- Usuń karty i narzędzia.
 
 > [!IMPORTANT]
-> Aby dodać lub wkleić elementy w Eksplorator DSL, kliknij prawym przyciskiem myszy pokolenia nowego węzła. Na przykład, aby dodać narzędzia, kliknij prawym przyciskiem myszy kartę, a nie **narzędzia** węzła. Aby dodać kartę, kliknij prawym przyciskiem myszy **edytora** węzła.
+> Aby dodać lub wkleić elementy w Eksploratorze DSL, kliknij prawym przyciskiem myszy nowy węzeł. Na przykład, aby dodać narzędzie, kliknij prawym przyciskiem myszy kartę, a nie węzeł **Narzędzia** . Aby dodać kartę, kliknij prawym przyciskiem myszy węzeł **Edytor** .
 
-**Ikonę przybornika** właściwości każdego narzędzia odwołuje się do pliku mapy bitowej 16 x 16. Pliki te są zwykle przechowywane w **Dsl\Resources** folderu.
+Właściwość **ikony przybornika** każdego narzędzia odwołuje się do pliku mapy bitowej. Te pliki są zwykle przechowywane w folderze **Dsl\Resources** .
 
-**Klasy** właściwość narzędzia element odwołuje się do klasy konkretnej domeny. Domyślnie narzędzie utworzy wystąpienia tej klasy. Jednakże można napisać kod do narzędzia tworzenia grup elementów lub elementów o różnych typach.
+Właściwość **Class** narzędzia elementu odwołuje się do konkretnej klasy domeny. Domyślnie Narzędzie utworzy wystąpienia tej klasy. Można jednak napisać kod, aby narzędzie utworzyło grupy elementów lub elementy różnych typów.
 
-**Konstruktora połączeń** właściwości narzędzia połączenia odwołuje się do konstruktora połączeń, który definiuje, jakie rodzaje elementów można połączyć w narzędziu i w jakich relacje między nimi. Konstruktory połączeń są definiowane jako węzły w Eksploratorze DSL. Konstruktory połączeń są tworzone automatycznie, gdy zdefiniujesz relacje domeny, ale można napisać kod, aby dostosować je.
+Właściwość **konstruktora połączeń** narzędzia połączenia odwołuje się do konstruktora połączeń, który definiuje, jakie typy elementów może połączyć narzędzie i jakie relacje tworzy między nimi. Konstruktory połączeń są zdefiniowane jako węzły w Eksploratorze DSL. Konstruktory połączeń są tworzone automatycznie podczas definiowania relacji domeny, ale można napisać kod, aby dostosować je.
 
 #### <a name="to-add-a-tool-to-the-toolbox"></a>Aby dodać narzędzie do przybornika
 
-1. Po utworzeniu klasy kształt i mechanizmowi klasy domeny, zazwyczaj utworzyć narzędzie elementu.
+1. Zwykle można utworzyć narzędzie elementu po utworzeniu klasy kształtu i zamapowaniu jej do klasy domeny.
 
-     Po utworzeniu klasy łącznika i mechanizmowi relacja odwołania, zwykle utworzyć narzędzia Łącznik.
+     Zazwyczaj można utworzyć narzędzie łącznika po utworzeniu klasy łącznika i zamapowaniu jej do relacji odwołania.
 
-2. W Eksploratorze DSL rozwiń **edytora** węzła i **karty przybornika** węzła.
+2. W Eksploratorze DSL rozwiń węzeł **Edytor** , a następnie węzeł **karty przybornik** .
 
-     Kliknij prawym przyciskiem myszy węzeł kartę przybornika, a następnie kliknij przycisk **dodać nowe narzędzie Element** lub **dodać nowe narzędzie połączenia**.
+     Kliknij prawym przyciskiem myszy węzeł karty przybornika, a następnie kliknij polecenie **Dodaj nowy element** lub **Dodaj nowe narzędzie połączenia**.
 
-3. Ustaw **ikonę przybornika** właściwości do odwoływania się do mapy bitowej 16 x 16.
+3. Ustaw właściwość **ikona przybornika** , aby odwołać się do mapy bitowej 16x16.
 
-     Jeśli chcesz zdefiniować nową ikonę, Utwórz plik mapy bitowej w Eksploratorze rozwiązań w **Dsl\Resources** folderu. Ten plik powinien zawierać następujące wartości właściwości: **Akcja kompilacji** = **zawartości**; **Kopiuj do katalogu wyjściowego** = **nie Kopiuj**.
+     Jeśli chcesz zdefiniować nową ikonę, Utwórz plik mapy bitowej w Eksplorator rozwiązań w folderze **Dsl\Resources** . Plik powinien mieć następujące wartości właściwości: **Akcja kompilacji**  = **zawartość**; **Kopiuj do katalogu wyjściowego**  = **nie Kopiuj**.
 
-4. **Dla narzędzia elementu:** Ustaw **klasy** właściwości narzędzia do odwoływania się do klasy konkretnej domeny, która jest mapowana na kształt.
+4. **Dla narzędzia elementu:** Ustaw właściwość **Class** narzędzia, aby odwoływać się do konkretnej klasy domeny, która jest zmapowana do kształtu.
 
-     **Aby uzyskać narzędzie łącznika:** Ustaw **konstruktora połączeń** właściwości narzędzia do jednego z elementów, które są oferowane na liście rozwijanej. Konstruktory połączeń są tworzone automatycznie podczas mapowania łącznik do relacji domeny. Jeśli niedawno po utworzeniu łącznika, będą zazwyczaj wybiera się konstruktora skojarzone z nimi połączenie.
+     **Dla narzędzia łącznika:** Ustaw właściwość **Konstruktor połączeń** dla narzędzia na jeden z elementów oferowanych na liście rozwijanej. Konstruktory połączeń są tworzone automatycznie podczas mapowania łącznika do relacji domeny. Jeśli niedawno utworzono łącznik, zazwyczaj wybierz skojarzony Konstruktor połączeń.
 
-5. Aby przetestować język DSL, naciśnij klawisz F5 lub CTRL + F5, a w doświadczalnym wystąpieniu programu Visual Studio, Otwórz przykładowy plik modelu. Nowe narzędzie powinna zostać wyświetlona w przyborniku. Przeciągnij go na diagram, aby sprawdzić, czy tworzy nowy element.
+5. Aby przetestować DSL, naciśnij klawisz F5 lub CTRL + F5 i w eksperymentalnym wystąpieniu programu Visual Studio Otwórz przykładowy plik modelu. Nowe narzędzie powinno pojawić się w przyborniku. Przeciągnij go na diagram, aby sprawdzić, czy tworzy nowy element.
 
-     Jeśli nie ma narzędzia, należy zatrzymać eksperymentalne programu Visual Studio. W Windows **Start** menu, uruchom **Zresetuj wystąpienie eksperymentalne programu Microsoft Visual Studio 2010**. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**. Następnie ponownie przetestuj język DSL.
+     Jeśli narzędzie nie jest wyświetlane, Zatrzymaj eksperymentalny program Visual Studio. W menu **Start** systemu Windows uruchom polecenie **Zresetuj wystąpienie eksperymentalne Microsoft Visual Studio 2010**. W menu **kompilacja** kliknij polecenie **Kompiluj ponownie rozwiązanie**. Następnie ponownie przetestuj DSL.
 
-## <a name="customizing"></a> Narzędzia dostosowywania elementów
- Domyślnie narzędzie utworzy jedno wystąpienie określonej klasy, ale można wybrać różne na dwa sposoby:
+## <a name="customizing"></a>Dostosowywanie narzędzi elementów
+ Domyślnie Narzędzie utworzy pojedyncze wystąpienie określonej klasy, ale można to zmienić na dwa sposoby:
 
-- Zdefiniuj dyrektywy scalania elementów w innych klas, umożliwiające im na akceptowanie nowe wystąpienia tej klasy, a następnie utwórz dodatkowe linki, po utworzeniu nowego elementu. Można na przykład umożliwia użytkownikowi Dodaj komentarz do innego elementu, a przez to tworzyć łącza między tymi dwoma.
+- Zdefiniuj dyrektywy scalania elementów dla innych klas, umożliwiając im akceptowanie nowych wystąpień tej klasy i umożliwienie im tworzenia dodatkowych linków po utworzeniu nowego elementu. Na przykład można zezwolić użytkownikowi na porzucenie komentarza do innego elementu, a tym samym utworzyć łącze odwołania między nimi.
 
-     Te modyfikacje również wpływać na, co się stanie po użytkownik wkleja przeciągnie lub porzuca element.
+     Te dostosowania wpływają również na to, co się dzieje, gdy użytkownik wklei lub przewinie i porzuca element.
 
-     Aby uzyskać więcej informacji, zobacz [Dostosowywanie tworzenia i przesuwania elementu](../modeling/customizing-element-creation-and-movement.md).
+     Aby uzyskać więcej informacji, zobacz [Dostosowywanie tworzenia i przenoszenia elementów](../modeling/customizing-element-creation-and-movement.md).
 
-- Napisz kod, aby dostosować narzędzie, dzięki czemu może utworzyć grupy elementów. Narzędzie jest inicjowany za pomocą metod ToolboxHelper.cs, którą można przesłonić. Aby uzyskać więcej informacji, zobacz [tworzenia grup z elementów przy użyciu narzędzia](#groups).
+- Napisz kod w celu dostosowania tego narzędzia, aby można było tworzyć grupy elementów. Narzędzie jest inicjowane przez metody w ToolboxHelper.cs, które można przesłonić. Aby uzyskać więcej informacji, zobacz [Tworzenie grup elementów za pomocą narzędzia](#groups).
 
-## <a name="groups"></a> Tworzenie grup elementów przy użyciu narzędzia
- Każde narzędzie element zawiera prototyp elementów, które należy utworzyć. Domyślnie każde narzędzie element tworzy pojedynczy element, ale jest również można utworzyć grupy powiązanych obiektów za pomocą jednego narzędzia. Aby to zrobić, należy zainicjować narzędzia z <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> zawierający elementy pokrewne.
+## <a name="groups"></a>Tworzenie grup elementów za pomocą narzędzia
+ Każdy element narzędzia zawiera prototyp elementów, które powinny być tworzone. Domyślnie każde narzędzie elementu tworzy pojedynczy element, ale można również utworzyć grupę powiązanych obiektów przy użyciu jednego narzędzia. W tym celu należy zainicjować narzędzie za pomocą <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>, które zawiera powiązane elementy.
 
- Poniższy przykład jest pobierana z DSL, w którym jest typem tranzystor. Każdy tranzystor ma trzy terminale nazwanych. Narzędzie elementu dla tranzystory przechowuje prototyp zawierający cztery elementy modelu i trzy łącza relacji. Gdy użytkownik przeciągnie narzędzie na diagram, prototyp jest tworzone i połączone do korzenia modelu.
+ Poniższy przykład jest pobierany z linii DSL, w której istnieje tranzystor typu. Każdy tranzystor ma trzy nazwane terminale. Narzędzie elementu dla tranzystorów przechowuje prototyp zawierający cztery elementy modelu i trzy linki relacji. Gdy użytkownik przeciągnie narzędzie na diagram, zostanie utworzone wystąpienie prototypu i połączone z głównym modelem.
 
- Ten kod zastępuje metodę, która jest zdefiniowana w **Dsl\GeneratedCode\ToolboxHelper.cs**.
+ Ten kod przesłania metodę, która jest zdefiniowana w **Dsl\GeneratedCode\ToolboxHelper.cs**.
 
  Aby uzyskać więcej informacji na temat dostosowywania modelu przy użyciu kodu programu, zobacz [nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
@@ -139,66 +139,66 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 }  }    }
 ```
 
-## <a name="connections"></a> Dostosowywanie narzędzi do nawiązywania połączenia
- Zazwyczaj należy utworzyć narzędzia elementu, po utworzeniu nowej klasy łącznika. Alternatywnie możesz doprowadzić do przeciążenia jedno narzędzie, umożliwiając typy po obu stronach w celu określenia typu relacji. Na przykład można zdefiniować jedno narzędzie połączenia, który można utworzyć relacji osoby osoby i relacje miasta osoby.
+## <a name="connections"></a>Dostosowywanie narzędzi do połączeń
+ Zazwyczaj tworzysz narzędzie elementu podczas tworzenia nowej klasy łącznika. Alternatywnie można przeciążyć jedno narzędzie, zezwalając na typy dwóch punktów końcowych, aby określić typ relacji. Można na przykład zdefiniować jedno narzędzie połączenia, które może utworzyć relacje między osobami i osobami.
 
- Narzędzia połączeń wywoływać konstruktory połączeń. Konstruktory połączeń umożliwia określenie, jak użytkownicy mogą tworzyć połączenia elementów w wygenerowanym projektancie. Konstruktory połączeń określić elementy, które mogą być połączone i rodzaju łącza, który jest tworzony między nimi.
+ Narzędzia połączeń wywołują konstruktory połączeń. Użyj konstruktorów połączeń, aby określić, jak użytkownicy mogą łączyć elementy w wygenerowanym projektancie. Konstruktory połączeń określają elementy, które mogą być połączone, oraz rodzaj linku, który jest tworzony między nimi.
 
- Konstruktor połączeń jest tworzony automatycznie podczas tworzenia relacji między klasami domeny. Podczas mapowania narzędzia połączenia, można użyć tego konstruktora połączeń. Aby uzyskać więcej informacji o sposobie tworzenia połączenia narzędzi, zobacz [Konfigurowanie przybornika](../modeling/customizing-tools-and-the-toolbox.md).
+ Podczas tworzenia relacji odwołania między klasami domen automatycznie tworzony jest Konstruktor połączeń. Tego konstruktora połączeń można użyć podczas mapowania narzędzia połączenia. Aby uzyskać więcej informacji o sposobach tworzenia narzędzi do nawiązywania połączeń, zobacz [Konfigurowanie przybornika](../modeling/customizing-tools-and-the-toolbox.md).
 
- Można zmodyfikować domyślnego konstruktora połączeń, dzięki czemu mogą dotyczyć szereg różnych typami źródłowym i docelowym i tworzyć różne typy relacji.
+ Można zmodyfikować domyślnego konstruktora połączeń, aby mógł on zająć się innym zakresem typów źródłowych i docelowych oraz utworzyć różne typy relacji.
 
- Można również napisać niestandardowy kod konstruktory połączeń określić klas źródłowych i docelowych dla połączenia, zdefiniuj typ połączenia, które ma zostać wykonane i wykonywać inne czynności związane z tworzeniem połączenia.
+ Możesz również napisać niestandardowy kod dla konstruktorów połączeń, aby określić klasy źródłową i docelową dla połączenia, zdefiniować typ połączenia, który ma zostać utworzony, i wykonać inne akcje związane z tworzeniem połączenia.
 
-### <a name="the-structure-of-connection-builders"></a>Struktura konstruktory połączeń
- Konstruktory połączeń zawiera jeden lub więcej łączy Połącz dyrektyw, które określają relacji domeny i elementy źródłowe i docelowe. Na przykład w szablonie przepływu zadań rozwiązania widać **CommentReferencesSubjectsBuilder** w **Eksplorator DSL**. Ten konstruktor połączeń zawiera jedno łącze połączyć dyrektywy o nazwie **CommentReferencesSubjects**, która jest mapowana do relacji domeny **CommentReferencesSubjects**. Połącz ten link dyrektywa zawiera dyrektywy roli źródła, który wskazuje na `Comment` klasy domeny i dyrektywą docelową roli, który wskazuje na `FlowElement` klasy domeny.
+### <a name="the-structure-of-connection-builders"></a>Struktura konstruktorów połączeń
+ Konstruktory połączeń zawierają co najmniej jedną dyrektywę łączenia linków, która określa relację domeny i elementy źródłowe i docelowe. Na przykład w szablonie rozwiązania przepływu zadań można zobaczyć **CommentReferencesSubjectsBuilder** w **Eksploratorze DSL**. Ten Konstruktor połączeń zawiera jedną dyrektywę Connect link o nazwie **CommentReferencesSubjects**, która jest mapowana na relację domeny **CommentReferencesSubjects**. Ta dyrektywa łączenia linków zawiera dyrektywę z rolą źródłową, która wskazuje na klasę domeny `Comment` i dyrektywę docelową, która wskazuje na klasę `FlowElement` domeny.
 
-### <a name="using-connection-builders-to-restrict-source-and-target-roles"></a>Przy użyciu konstruktory połączeń, aby ograniczyć źródła i określania elementów docelowych ról
- Konstruktory połączeń można użyć do ograniczenia wystąpienia niektórych klas w roli źródłowej lub rola docelowa relacji danej domeny. Na przykład masz bazową klasę domeny mającej relację domeny do innej klasy domeny, ale nie ma wszystkie klasy pochodne klasy bazowej, aby te same role w tej relacji. W rozwiązaniu przepływu zadań są cztery klasy konkretnej domeny (**punktu StartPoint**, **punktu końcowego**, **MergeBranch**, i **synchronizacji**) dziedziczyć bezpośrednio klasy abstrakcyjnej domeny **FlowElement**, i dwie klasy domeny (**zadań** i **ObjectInState**), dziedziczyć pośrednio go. Istnieje również **przepływu** odwoływać się do relacji, który przyjmuje **FlowElement** klasy domeny w jego roli źródłowej i docelowej roli. Jednak wystąpienie **punktu końcowego** klasy domeny nie powinny być źródło wystąpienie **przepływu** relacji, ani nie powinna wystąpienie **punktu StartPoint** można klasy docelowym wystąpienia **przepływu** relacji. **FlowBuilder** Konstruktor połączeń ma link połączyć dyrektywy o nazwie **przepływu** , który określa klas domeny, które mogą pełnić roli źródłowej (**zadań**,  **MergeBranch**, **punktu StartPoint**, i **synchronizacji**) i które mogą pełnić rolę docelową (**MergeBranch**,  **Punkt końcowy**, i **synchronizacji**).
+### <a name="using-connection-builders-to-restrict-source-and-target-roles"></a>Używanie konstruktorów połączeń do ograniczania ról źródłowych i docelowych
+ Można użyć konstruktorów połączeń, aby ograniczyć wystąpienia niektórych klas w roli źródłowej lub roli docelowej danej relacji domeny. Na przykład może istnieć podstawowa klasa domeny, która ma relację domeny z inną klasą domeny, ale nie wszystkie klasy pochodne klasy bazowej mogą mieć te same role w tej relacji. W rozwiązaniu przepływu zadań istnieją cztery konkretne klasy domeny (**StartPoint**, **Endpoint**, **MergeBranch**i **Synchronization**), które dziedziczą bezpośrednio ze abstrakcyjnej klasy " **FlowElement**" i dwie konkretne klasy domeny (**Task** i **ObjectInState**) dziedziczące pośrednio od niej. Istnieje również relacja odwołania do **przepływu** , która przyjmuje klasy domeny **FlowElement** zarówno w roli źródłowej, jak i roli docelowej. Niemniej jednak wystąpienie klasy domeny **punktu końcowego** nie powinno być źródłem wystąpienia relacji **przepływu** ani nie powinno być wystąpienie klasy **StartPoint** jako obiekt docelowy wystąpienia relacji **przepływu** . Konstruktor **połączeń FlowBuilder** ma dyrektywę Connect link o nazwie **Flow** , która określa, które klasy domeny mogą odtwarzać rolę źródłową (**Task**, **MergeBranch**, **StartPoint**i **Synchronization**), a które może odtworzyć rolę docelową (**MergeBranch**, **punkt końcowy**i **Synchronizacja**).
 
-### <a name="connection-builders-with-multiple-link-connect-directives"></a>Konstruktory połączeń przy użyciu wielu Linku dyrektywy łączenia
- Możesz dodać więcej niż jednego połączenia dyrektywa łączenia do konstruktora połączeń. Może to ułatwić ukryć niektóre komplikacje związane z modelu domeny od użytkowników i zachować **przybornika** zbyt uniknąć. Możesz dodać łącze dyrektywy dla kilka relacji z inną domeną nawiązać połączenie z konstruktora jednego połączenia. Jednak należy połączyć relacje domeny, gdy wykonują tę samą funkcję.
+### <a name="connection-builders-with-multiple-link-connect-directives"></a>Konstruktory połączeń z wieloma dyrektywami łączenia linków
+ Do konstruktora połączeń można dodać więcej niż jedną dyrektywę łączenia linku. Może to pomóc w ukryciu niektórych złożoności modelu domeny od użytkowników i uniemożliwić zbyt bałaganie **przybornika** . Można dodać dyrektywy łączenia linków dla kilku różnych relacji domeny do konstruktora jednego połączenia. Należy jednak połączyć relacje domeny, gdy wykonują one w przybliżeniu tę samą funkcję.
 
- W rozwiązaniu przepływu zadań **przepływu** narzędzia połączenia jest używany do rysowania oba wystąpienia **przepływu** i **przejścia przepływu obiektu** relacji domeny. **FlowBuilder** Konstruktor połączeń ma dodatkowo do **przepływu** opisanej wcześniej dyrektywa łączenia linku, o nazwie dyrektywy łączenia linku dwóch **przejścia przepływu obiektu**. Te dyrektywy określić, że wystąpienie **przejścia przepływu obiektu** relacji mogą pochodzić między wystąpieniami **ObjectInState** klasy domeny lub z wystąpienia **ObjectInState**  do wystąpienia **zadań**, ale nie między dwoma rodzajami **zadań**, lub z wystąpienia programu **zadań** na wystąpienie **ObjectInState**. Jednak wystąpienie **przepływu** relacji może być rysowany między dwoma rodzajami **zadań**. Jeśli skompilować i uruchomić rozwiązanie przepływu zadań, możesz zobaczyć ten rysunek **przepływu** z wystąpienia programu **ObjectInState** do wystąpienia **zadań** tworzy wystąpienie klasy **Przejścia przepływu obiektu**, ale rysowania **przepływu** między dwoma rodzajami **zadań** tworzy wystąpienie **przepływu**.
+ W rozwiązaniu przepływu zadań narzędzie połączenia **Flow** służy do rysowania wystąpień zarówno **przepływu** , jak i relacji domeny **ObjectFlow** . Konstruktor połączeń **FlowBuilder** ma oprócz dyrektywy **Flow** link Connect opisanej wcześniej dwie dyrektywy łączenia linków o nazwie **ObjectFlow**. Te dyrektywy określają, że wystąpienie relacji **ObjectFlow** może być rysowane między wystąpieniami klasy domeny **ObjectInState** lub z wystąpienia **ObjectInState** do wystąpienia **zadania**, ale nie między dwoma wystąpienia **zadania**lub z wystąpienia **zadania** do wystąpienia elementu **ObjectInState**. Jednak wystąpienie relacji **przepływu** może być rysowane między dwoma wystąpieniami **zadania**. W przypadku kompilowania i uruchamiania rozwiązania przepływu zadań można zobaczyć, że narysowanie **przepływu** z wystąpienia **ObjectInState** do wystąpienia **zadania** tworzy wystąpienie elementu **ObjectFlow**, ale narysowanie **przepływu** między dwoma wystąpieniami **zadania** tworzy wystąpienie **przepływu**.
 
-### <a name="custom-code-for-connection-builders"></a>Niestandardowy kod konstruktory połączeń
- Istnieją cztery pola wyboru w interfejsie użytkownika, określające różnego rodzaju dostosowanie konstruktory połączeń:
+### <a name="custom-code-for-connection-builders"></a>Niestandardowy kod dla konstruktorów połączeń
+ W interfejsie użytkownika są cztery pola wyboru, które definiują różne typy dostosowań konstruktorów połączeń:
 
-- **akceptowanie niestandardowe** pole wyboru w dyrektywie roli źródłowej lub docelowej
+- pole wyboru **niestandardowa akceptacja** dla dyrektywy źródłowej lub docelowej
 
-- **niestandardowe połączenia** pole wyboru w dyrektywie roli źródłowej lub docelowej
+- pole wyboru **niestandardowe połączenie** w dyrektywie źródłowej lub docelowej
 
-- **używa niestandardowych connect** pole wyboru w dyrektywie connect
+- pole wyboru **Użyj połączenia niestandardowego** dla dyrektywy Connect
 
-- **jest niestandardowa** właściwości konstruktora połączeń
+- Właściwość **is Custom** konstruktora połączeń
 
-  Należy podać niektóre kodu programu, aby wykonać te dostosowania. Aby sprawdzić, jaki kod, musisz podać, zaznacz jeden z tych pól, kliknij Przekształć wszystkie szablony, a następnie Skompiluj rozwiązanie. Powoduje, że raport o błędach. Kliknij dwukrotnie raport o błędach można wyświetlić komentarz, który objaśnia, jaki kod należy dodać.
+  Musisz podać kod programu, aby wprowadzić te dostosowania. Aby dowiedzieć się, jaki kod należy podać, zaznacz jedno z tych pól, kliknij przycisk Przekształć wszystkie szablony, a następnie Skompiluj rozwiązanie. Zostanie zwrócony raport o błędach. Kliknij dwukrotnie raport o błędach, aby wyświetlić komentarz wyjaśniający, jaki kod należy dodać.
 
 > [!NOTE]
-> Aby dodać niestandardowy kod, Utwórz definicję klasy częściowej w pliku kodu niezależnie od plików kodu w folderach GeneratedCode. Aby uniknąć utraty wyników pracy, nie należy edytować pliki wygenerowanego kodu. Aby uzyskać więcej informacji, zobacz [zastępowanie i rozszerzanie wygenerowanych klas](../modeling/overriding-and-extending-the-generated-classes.md).
+> Aby dodać kod niestandardowy, Utwórz definicję klasy częściowej w pliku kodu oddzielnym od plików kodu w folderach GeneratedCode. Aby uniknąć utraty pracy, nie należy edytować wygenerowanych plików kodu. Aby uzyskać więcej informacji, zobacz [przesłanianie i rozszerzanie wygenerowanych klas](../modeling/overriding-and-extending-the-generated-classes.md).
 
-#### <a name="creating-custom-connection-code"></a>Tworzenie połączenia niestandardowego kodu
- W każdym odnośniku dyrektywa, łączenia **dyrektywy ról źródłowych** definiuje kartę co typów można przeciągnąć. Podobnie **dyrektywy ról docelowych** definiuje kartę co typów można przeciągnąć. Dla każdego typu, możesz podać, czy zezwolić na połączenia (dla dyrektywy łączenia tego linku), ustawiając **akceptowanie niestandardowe** Flaga, a następnie podając dodatkowego kodu.
+#### <a name="creating-custom-connection-code"></a>Tworzenie niestandardowego kodu połączenia
+ W ramach każdej dyrektywy Connect linku na karcie **dyrektywy roli źródłowej** definiuje się, jakie typy można przeciągać. Podobnie karta **dyrektywy Target role** definiuje, jakie typy można przeciągać. Dla każdego typu można określić, czy zezwolić na połączenie (dla danej dyrektywy łączenia linku) przez ustawienie flagi **Zaakceptuj niestandardową** , a następnie dostarczenie dodatkowego kodu.
 
- Można również dostosować, co występuje, gdy połączenie zostało nawiązane. Na przykład, można dostosować tylko przypadku realizowana przeciąganie z konkretną klasą lub połączyć tego jedno łącze wszystkie przypadki dyrektywy decyduje, lub całego FlowBuilder konstruktora połączeń. Dla każdej z tych opcji można ustawić flagi niestandardowe na odpowiednim poziomie. Gdy Transformuj wszystkie szablony i spróbował to zbudować rozwiązanie, komunikaty o błędach kierować do komentarzy, które znajdują się w wygenerowanym kodzie. Te komentarze identyfikują, należy podać.
+ Możesz również dostosować to, co dzieje się w przypadku nawiązywania połączenia. Można na przykład dostosować tylko przypadek, w którym występuje przeciągnięcie, do lub z określonej klasy, wszystkie przypadki, w których dana dyrektywa łącząca link jest zarządzana, lub cały Konstruktor połączeń FlowBuilder. Dla każdej z tych opcji można ustawić flagi niestandardowe na odpowiednim poziomie. Podczas przekształcania wszystkich szablonów i próby skompilowania rozwiązania komunikaty o błędach kierują do komentarzy, które znajdują się w wygenerowanym kodzie. Te komentarze identyfikują, co należy dostarczyć.
 
- W tym przykładzie Diagram składników konstruktora połączeń dla relacji domeny połączenia jest dostosowany do ograniczenia połączeń, które mogą być pomylone portów. Na poniższej ilustracji przedstawiono, że połączenia można tworzyć tylko z `OutPort` elementów `InPort` elementów, ale można zagnieżdżać składniki wewnątrz siebie nawzajem.
+ W przykładzie diagramu składników Konstruktor połączeń dla relacji domeny połączenia jest dostosowany do ograniczenia połączeń, które mogą być nawiązywane między portami. Na poniższej ilustracji przedstawiono, że można nawiązać połączenia tylko z `OutPort` elementów do `InPort` elementów, ale można zagnieżdżać składniki wewnątrz siebie.
 
- **Połączeń przychodzących na elementu OutPort zagnieżdżonych składników**
+ **Połączenie przychodzące do elementu zewnętrznego z składnika zagnieżdżonego**
 
  ![Konstruktor połączeń](../modeling/media/connectionbuilder_3.png)
 
- W związku z tym można określić, że połączenia mogą pochodzić z zagnieżdżonych składników do elementu OutPort. Aby określić takie połączenie, należy ustawić **używa akceptowanie niestandardowe** na **InPort** typ jako roli źródłowej i **elementu OutPort** typ jako rolę docelową w **szczegóły języka DSL**  okna, jak pokazano na poniższych ilustracjach:
+ W związku z tym możesz chcieć określić, że połączenie może pochodzić z składnika zagnieżdżonego do elementu zewnętrznego. Aby określić takie połączenie, należy ustawić opcję **Użyj niestandardowej akceptacji** dla typu **InPort** jako rola źródłowa i **Typ elementu** głównego jako rolę docelową w oknie **Szczegóły DSL** , jak pokazano na poniższej ilustracji:
 
- **Dyrektywa w Eksplorator DSL łączenia linku**
+ **Dyrektywa łączenia linku w programie DSL Explorer**
 
- ![Obraz przedstawiający konstruktora połączeń](../modeling/media/connectionbuilder_4a.png)
+ ![Obraz konstruktora połączeń](../modeling/media/connectionbuilder_4a.png)
 
- **Dyrektywa w oknie Szczegóły języka DSL łączenia linku**
+ **Dyrektywa łączenia linku w oknie szczegółów języka DSL**
 
- ![Dyrektywa w oknie Szczegóły języka DSL łączenia linku](../modeling/media/connectionbuilder_4b.png)
+ ![Dyrektywa łączenia linku w oknie szczegółów języka DSL](../modeling/media/connectionbuilder_4b.png)
 
- Następnie należy podać metody w klasie elementu ConnectionBuilder:
+ Następnie należy dostarczyć metody klasy elemencie ConnectionBuilder:
 
 ```
   public partial class ConnectionBuilder
@@ -223,14 +223,14 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
  Aby uzyskać więcej informacji na temat dostosowywania modelu przy użyciu kodu programu, zobacz [nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
- Podobny kod, można użyć na przykład, aby uniemożliwić użytkownikom tworzenie pętli za pomocą łącza nadrzędny podrzędny. Te ograniczenia są traktowane jako ograniczenia "twarde", ponieważ użytkownicy nie mogą naruszyć ich w dowolnym momencie. Można również utworzyć sprawdzanie poprawności "elastyczne", które użytkownicy mogą tymczasowo obejść, tworząc nieprawidłowe konfiguracje, których nie można zapisać.
+ Możesz na przykład użyć podobnego kodu, aby uniemożliwić użytkownikom tworzenie pętli z łączami nadrzędny-podrzędny. Ograniczenia te są uznawane za ograniczenia "twarde", ponieważ użytkownicy nie mogą naruszać ich w dowolnym momencie. Można również utworzyć "miękkie" Sprawdzanie poprawności, które użytkownicy mogą tymczasowo ominąć przez utworzenie nieprawidłowych konfiguracji, których nie mogą zapisać.
 
-### <a name="good-practice-in-defining-connection-builders"></a>Dobrym rozwiązaniem w definiowaniu konstruktory połączeń
- Należy zdefiniować jedną konstruktora połączeń, aby utworzyć różne typy relacji, tylko wtedy, gdy są koncepcyjnie powiązane. W tym przykładzie przepływu zadań umożliwia ten sam Konstruktor tworzenie przepływów między zadaniami, a także między zadaniami i obiektów. Jednakże może być mylące, tworzyć relacje między komentarze i zadań za pomocą tego samego konstruktora.
+### <a name="good-practice-in-defining-connection-builders"></a>Dobre rozwiązanie w zakresie definiowania konstruktorów połączeń
+ Należy zdefiniować jeden Konstruktor połączeń do tworzenia różnych typów relacji tylko wtedy, gdy są one koncepcyjnie powiązane. W przykładzie przepływu zadań używasz tego samego konstruktora do tworzenia przepływów między zadaniami, a także między zadaniami i obiektami. Jednak w celu utworzenia relacji między komentarzami i zadaniami można użyć tego samego konstruktora.
 
- Jeśli zdefiniujesz konstruktora połączeń dla wielu typów relacji, należy upewnić się, że nie są zgodne więcej niż jeden typ z tej samej pary obiektów źródłowych i docelowych. W przeciwnym razie wyniki są nieprzewidywalne.
+ Jeśli zdefiniujesz konstruktora połączeń dla wielu typów relacji, upewnij się, że nie można dopasować więcej niż jednego typu z tej samej pary obiektów źródłowych i docelowych. W przeciwnym razie wyniki będą nieprzewidywalne.
 
- Użyj niestandardowego kodu, aby zastosować ograniczenia "twarde", ale należy rozważyć, czy użytkownicy powinien móc tymczasowo wprowadzać nieprawidłowe połączeń. Jeśli te powinny ograniczenia można zmodyfikować tak, aby połączenia nie są weryfikowane, dopóki użytkownicy próbują zapisać zmiany.
+ Używasz niestandardowego kodu do zastosowania ograniczeń "twardości", ale należy zastanowić się, czy użytkownicy powinni mieć możliwość tymczasowego nawiązywania nieprawidłowych połączeń. W razie potrzeby można zmodyfikować ograniczenia tak, aby połączenia nie były sprawdzane, dopóki użytkownicy nie spróbują zapisać zmian.
 
 ## <a name="see-also"></a>Zobacz też
 
@@ -238,4 +238,4 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 - [Dostosowywanie zachowania dotyczącego kopiowania](../modeling/customizing-copy-behavior.md)
 - [Instrukcje: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-to-add-a-drag-and-drop-handler.md)
 - [Nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md)
-- [Przykładowe diagramy obwodu DSL](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+- [Diagramy obwodów — przykład DSL](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

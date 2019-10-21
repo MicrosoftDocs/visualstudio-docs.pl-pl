@@ -2,16 +2,16 @@
 title: Wyłączanie rozpoznawania DPI w programie Visual Studio
 description: W tym artykule omówiono ograniczenia Projektant formularzy systemu Windows monitorów HDPI oraz sposób uruchamiania programu Visual Studio jako procesu niezależnego od rozdzielczości DPI.
 ms.date: 04/05/2019
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.topic: conceptual
-ms.openlocfilehash: fdcf255b8ad7c613a83284759a1f4859041acfc4
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: a368108f1b8f9682151ed8c7b0a6d8b83b1b8a1f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69619727"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72637408"
 ---
 # <a name="disable-dpi-awareness-in-visual-studio"></a>Wyłączanie rozpoznawania DPI w programie Visual Studio
 
@@ -29,7 +29,7 @@ Po otwarciu formularza w **Projektant formularzy systemu Windows** w programie V
 
 ![Pasek informacyjny w programie Visual Studio w celu ponownego uruchomienia w trybie nieświadomej rozdzielczości DPI](./media/scaling-gold-bar.png)
 
-Komunikat **o skalowaniu na ekranie głównym jest ustawiany na 200% (192 dpi). Może to spowodować problemy z renderowaniem w oknie projektanta.**
+Komunikat o **skalowaniu na ekranie głównym jest ustawiany na 200% (192 dpi). Może to spowodować problemy z renderowaniem w oknie projektanta.**
 
 > [!NOTE]
 > Ten pasek informacyjny został wprowadzony w programie Visual Studio 2017 w wersji 15,8.
@@ -48,11 +48,11 @@ Istnieją trzy opcje rozwiązania problemu z wyświetlaniem:
 
 Program Visual Studio można uruchomić ponownie jako proces niezależny od rozdzielczości DPI, wybierając opcję na żółtym pasku informacyjnym. Jest to preferowany sposób rozwiązania problemu.
 
-Gdy program Visual Studio działa jako proces obsługujący rozdzielczości DPI, rozwiązywane są problemy z układem projektanta, ale czcionki mogą wydawać się zamazane. Program Visual Studio Wyświetla inny żółty komunikat informacyjny, gdy działa jako proces, który jest niezależny **od rozdzielczości DPI, który mówi, że program Visual Studio jest uruchomiony jako proces obsługujący rozdzielczości DPI. Projektanci WPF i XAML mogą nie wyświetlać się poprawnie.** Pasek informacyjny udostępnia również opcję **ponownego uruchomienia programu Visual Studio jako procesu obsługującego rozdzielczości DPI**.
+Gdy program Visual Studio działa jako proces obsługujący rozdzielczości DPI, rozwiązywane są problemy z układem projektanta, ale czcionki mogą wydawać się zamazane. Program Visual Studio Wyświetla inny żółty komunikat informacyjny, gdy działa jako proces, który jest niezależny od rozdzielczości DPI, który mówi, że **program Visual Studio jest uruchomiony jako proces obsługujący rozdzielczości DPI. Projektanci WPF i XAML mogą nie wyświetlać się poprawnie.** Pasek informacyjny udostępnia również opcję **ponownego uruchomienia programu Visual Studio jako procesu obsługującego rozdzielczości DPI**.
 
 > [!NOTE]
 > - Jeśli w programie Visual Studio zostały zazadokowane okna narzędzi, w przypadku wybrania opcji ponownego uruchomienia jako procesu niezależnego od rozdzielczości DPI pozycja tych okien narzędzi może się zmienić.
-> - Jeśli używasz domyślnego profilu Visual Basic lub jeśli opcja **Zapisz nowe projekty po utworzeniu** została wybrana w obszarze **Narzędzia** > **Opcje** > **projekty i rozwiązania**, program Visual Studio nie może otworzyć ponownie projekt, gdy zostanie ponownie uruchomiony jako proces niezależny od rozdzielczości DPI. Można jednak otworzyć projekt, wybierając go w obszarze **pliki** > **najnowsze projekty i rozwiązania**.
+> - Jeśli używasz domyślnego profilu Visual Basic lub jeśli masz opcję **Zapisz nowe projekty po utworzeniu** opcji w obszarze **narzędzia**  > **Opcje**  > **projekty i rozwiązania**, program Visual Studio nie może ponownie otworzyć projektu, gdy ponowne uruchamianie jako proces niezależny od rozdzielczości DPI. Można jednak otworzyć projekt, wybierając go w obszarze **plik**  > **ostatnie projekty i rozwiązania**.
 
 Ważne jest, aby ponownie uruchomić program Visual Studio jako proces obsługujący DPI po zakończeniu pracy w **Projektant formularzy systemu Windows**. Gdy działa jako proces obsługujący rozdzielczości DPI, czcionki mogą wyglądać zamazane i mogą być widoczne problemy w innych projektantach, takich jak **Projektant XAML**. Po zamknięciu i ponownym otwarciu programu Visual Studio, gdy jest on uruchamiany w trybie z obsługą rozdzielczości DPI, będzie on ponownie uwzględniany w rozdzielczości DPI. Możesz również kliknąć pozycję **Uruchom ponownie program Visual Studio jako opcję procesu z obsługą rozdzielczości DPI** na pasku informacyjnym.
 
@@ -60,10 +60,10 @@ Ważne jest, aby ponownie uruchomić program Visual Studio jako proces obsługuj
 
 Program Visual Studio można oznaczyć jako niezależny od rozdzielczości DPI, modyfikując rejestr. Otwórz **Edytor rejestru** i Dodaj wpis do podklucza **NT\CurrentVersion\AppCompatFlags\Layers HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows** :
 
-**Wpis**: W zależności od tego, czy używasz programu Visual Studio 2017 lub 2019, użyj jednej z następujących wartości:
+**Wpis**: w zależności od tego, czy używasz programu Visual Studio 2017 lub 2019, użyj jednej z następujących wartości:
 
-- C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe
-- C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe
+- C:\Program Files (x86) \Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe
+- C:\Program Files (x86) \Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe
 
 > [!NOTE]
 > Jeśli korzystasz z wersji Professional lub Enterprise programu Visual Studio, Zastąp **społeczność** z **profesjonalnym** lub **przedsiębiorstwem** we wpisie. W razie potrzeby należy również zastąpić literę dysku.
@@ -85,7 +85,7 @@ Ustawienie skalowania ekranu na 100% może być niepożądane, ponieważ może t
 
 Możesz zrezygnować z powiadamiania o problemach z skalowaniem DPI w programie Visual Studio. Możesz chcieć wyłączyć powiadomienia, jeśli nie Pracujesz w projektancie, na przykład.
 
-Aby wyłączyć powiadomienia, wybierz**Opcje** **Narzędzia** > , aby otworzyć okno dialogowe **Opcje** . Następnie wybierz opcję **Projektant formularzy systemu Windows** > **Ogólne**i ustaw **powiadomienia skalowania dpi** na **wartość false**.
+Aby wyłączyć powiadomienia, wybierz pozycję **narzędzia**  > **Opcje** , aby otworzyć okno dialogowe **Opcje** . Następnie wybierz **Projektant formularzy systemu Windows**  > **Ogólne**i ustaw **powiadomienia skalowania dpi** na **wartość false**.
 
 ![Opcja powiadomień skalowania DPI w programie Visual Studio](./media/notifications-option.png)
 
@@ -93,7 +93,7 @@ Jeśli chcesz później ponownie włączyć powiadomienia dotyczące skalowania,
 
 ## <a name="troubleshoot"></a>Rozwiązywanie problemów
 
-Jeśli przejście rozpoznawania DPI nie działa zgodnie z oczekiwaniami w programie Visual Studio, sprawdź, czy masz `dpiAwareness` wartość w podkluczu **NT\CurrentVersion\Image wykonywania pliku Options\devenv.exe** w Edytorze rejestru. Usuń wartość, jeśli jest obecna.
+Jeśli przejście rozpoznawania DPI nie działa zgodnie z oczekiwaniami w programie Visual Studio, sprawdź, czy masz `dpiAwareness` wartość w podkluczu **NT\CurrentVersion\Image wykonywania pliku Options\devenv.exe** Edytor rejestru. Usuń wartość, jeśli jest obecna.
 
 ## <a name="see-also"></a>Zobacz także
 

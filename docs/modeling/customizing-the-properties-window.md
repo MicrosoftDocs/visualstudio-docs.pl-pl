@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, Properties window
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c11c9da607e983dcde0b84ac236943751bca71c
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 72e0a8393a65d4c0e1549a6617971b0adb8c1df7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71251853"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653963"
 ---
 # <a name="customize-the-properties-window"></a>Dostosowywanie okno Właściwości
 
@@ -40,9 +40,9 @@ Niektóre funkcje dynamiczne elementów graficznych mogą być reprezentowane lu
 
 Kliknij prawym przyciskiem myszy klasę Shape w definicji DSL, wskaż polecenie **Dodaj uwidocznione**, a następnie wybierz funkcję.
 
-Na kształtach można uwidocznić właściwości **FillColor**, **OutlineColor**, **TextColor**, **OutlineDashStyle**, **OutlineThickness** i **FillGradientMode** . Na łącznikach można uwidocznić właściwości **Color**`,` **,** **DashStyle**i **grubość** . Na diagramach można uwidocznić właściwości **FillColor** i **TextColor** .
+Na kształtach można uwidocznić właściwości **FillColor**, **OutlineColor**, **TextColor**, **OutlineDashStyle**, **OutlineThickness** i **FillGradientMode** . Na łącznikach można uwidocznić **kolor** `,` właściwości**TextColor**, **DashStyle**i **grubość** . Na diagramach można uwidocznić właściwości **FillColor** i **TextColor** .
 
-## <a name="forwarding-display-properties-of-related-elements"></a>Kazanie Właściwości wyświetlania elementów pokrewnych
+## <a name="forwarding-display-properties-of-related-elements"></a>Przekazywanie: właściwości wyświetlania powiązanych elementów
 
 Gdy użytkownik DSL wybiera element w modelu, właściwości tego elementu są wyświetlane w oknie właściwości. Można jednak również wyświetlić właściwości określonych powiązanych elementów. Jest to przydatne, jeśli zdefiniowano grupę elementów, które współdziałają ze sobą. Na przykład można zdefiniować element główny i opcjonalny element wtyczki. Jeśli element główny jest mapowany do kształtu, a drugi nie jest, warto zobaczyć wszystkie jego właściwości, tak jakby znajdowały się one w jednym elemencie.
 
@@ -52,7 +52,7 @@ Ten efekt jest nazwany *przekazywaniem właściwości*i odbywa się automatyczni
 
 Gdy użytkownik wybierze kształt lub łącznik lub element w Eksploratorze, w okno Właściwości są wyświetlane następujące właściwości:
 
-- Właściwości domeny, które są zdefiniowane w klasie domeny elementu modelu, łącznie z tymi, które są zdefiniowane w klasach bazowych. Wyjątkiem są właściwości domeny, dla których ustawiono umożliwia przeglądania. `False`
+- Właściwości domeny, które są zdefiniowane w klasie domeny elementu modelu, łącznie z tymi, które są zdefiniowane w klasach bazowych. Wyjątkiem są właściwości domeny, dla których ustawiono **umożliwia przeglądania** do `False`.
 
 - Nazwy elementów, które są połączone za pomocą relacji, które mają liczebność 0.. 1. Zapewnia to wygodną metodę wyświetlania opcjonalnie połączonych elementów, nawet jeśli nie zdefiniowano mapowania łącznika dla relacji.
 
@@ -71,7 +71,7 @@ W poniższej procedurze przyjęto założenie, że utworzono DSL. Pierwsze kilka
 
 #### <a name="forward-a-property-from-another-element"></a>Przekazywanie właściwości z innego elementu
 
-1. Utwórz rozwiązanie, które zawiera co najmniej dwie klasy, które w tym przykładzie nazywa się **książką** i **autorem.** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] Między **książką** i **autorem**powinna istnieć relacja między nimi.
+1. Utwórz [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] rozwiązanie, które zawiera co najmniej dwie klasy, które w tym przykładzie nazywa się **książką** i **autorem**. Między **książką** i **autorem**powinna istnieć relacja między nimi.
 
     Liczebność roli źródłowej (rola na stronie **książki** ) powinna mieć wartość 0.. 1 lub 1.. 1, tak aby każda **książka** miała jednego **autora**.
 
@@ -132,7 +132,7 @@ Można jednak określić następujące edytory i typy:
 
     W okno Właściwości wybierz typ zewnętrzny z listy rozwijanej w polu **Typ** .
 
-   Na tym etapie użytkownicy mogą wyświetlić wartości właściwości, ale nie mogą go edytować. Wyświetlone wartości są uzyskiwane z `ToString()` funkcji. Można napisać kod programu, który ustawia wartość właściwości, na przykład w poleceniu lub w regule.
+   Na tym etapie użytkownicy mogą wyświetlić wartości właściwości, ale nie mogą go edytować. Wyświetlane wartości są uzyskiwane z funkcji `ToString()`. Można napisać kod programu, który ustawia wartość właściwości, na przykład w poleceniu lub w regule.
 
 ### <a name="set-a-property-editor"></a>Ustawianie edytora właściwości
 
@@ -146,9 +146,9 @@ Dodaj atrybut CLR do właściwości Domain w następującej postaci:
 
 Można ustawić atrybut dla właściwości przy użyciu wpisu **atrybutu niestandardowego** w okno właściwości.
 
-Typ `AnEditor` musi pochodzić od typu określonego w drugim parametrze. Drugi parametr powinien mieć wartość <xref:System.Drawing.Design.UITypeEditor> lub. <xref:System.ComponentModel.ComponentEditor> Aby uzyskać więcej informacji, zobacz <xref:System.ComponentModel.EditorAttribute>.
+Typ `AnEditor` musi pochodzić od typu określonego w drugim parametrze. Drugi parametr powinien mieć wartość <xref:System.Drawing.Design.UITypeEditor> lub <xref:System.ComponentModel.ComponentEditor>. Aby uzyskać więcej informacji, zobacz <xref:System.ComponentModel.EditorAttribute>.
 
-Możesz określić własny edytor lub Edytor .NET, taki jak <xref:System.Windows.Forms.Design.FileNameEditor> lub. <xref:System.Drawing.Design.ImageEditor> Na przykład użyj poniższej procedury, aby określić właściwość, w której użytkownik może wprowadzić nazwę pliku.
+Możesz określić własny edytor lub Edytor .NET, taki jak <xref:System.Windows.Forms.Design.FileNameEditor> lub <xref:System.Drawing.Design.ImageEditor>. Na przykład użyj poniższej procedury, aby określić właściwość, w której użytkownik może wprowadzić nazwę pliku.
 
 #### <a name="define-a-file-name-domain-property"></a>Zdefiniuj nazwę pliku właściwość domeny
 
@@ -177,13 +177,13 @@ Możesz określić własny edytor lub Edytor .NET, taki jak <xref:System.Windows
 
 Można zdefiniować własny edytor. Można to zrobić, aby zezwolić użytkownikowi na edytowanie typu zdefiniowanego przez użytkownika lub Edytowanie typu standardowego w specjalny sposób. Na przykład można zezwolić użytkownikowi na wprowadzanie ciągu, który reprezentuje formułę.
 
-Można zdefiniować edytor, pisząc klasę, która pochodzi od <xref:System.Drawing.Design.UITypeEditor>. Klasa musi przesłonić:
+Należy zdefiniować edytor, pisząc klasę, która jest pochodną <xref:System.Drawing.Design.UITypeEditor>. Klasa musi przesłonić:
 
-- <xref:System.Drawing.Design.UITypeEditor.EditValue%2A>, aby korzystać z użytkownika i aktualizować wartość właściwości.
+- <xref:System.Drawing.Design.UITypeEditor.EditValue%2A>, aby współistnieć z użytkownikiem i zaktualizować wartość właściwości.
 
 - <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>, aby określić, czy edytor ma otworzyć okno dialogowe, czy udostępnić menu rozwijane.
 
-Możesz również dostarczyć graficzną reprezentację wartości właściwości, która będzie wyświetlana w siatce właściwości. W tym celu Przesłoń `GetPaintValueSupported`i. `PaintValue`  Aby uzyskać więcej informacji, zobacz <xref:System.Drawing.Design.UITypeEditor>.
+Możesz również dostarczyć graficzną reprezentację wartości właściwości, która będzie wyświetlana w siatce właściwości. W tym celu Zastąp `GetPaintValueSupported` i `PaintValue`.  Aby uzyskać więcej informacji, zobacz <xref:System.Drawing.Design.UITypeEditor>.
 
 > [!NOTE]
 > Dodaj kod w osobnym pliku kodu w projekcie **DSL** .
@@ -226,7 +226,7 @@ Aby zdefiniować listę wartości standardowych, należy dodać do właściwośc
 (typeof(MyTypeConverter))]
 ```
 
-Zdefiniuj klasę, która dziedziczy z <xref:System.ComponentModel.TypeConverter>. Dodaj kod w osobnym pliku w projekcie **DSL** . Na przykład:
+Zdefiniuj klasę, która pochodzi od <xref:System.ComponentModel.TypeConverter>. Dodaj kod w osobnym pliku w projekcie **DSL** . Na przykład:
 
 ```csharp
 /// <summary>

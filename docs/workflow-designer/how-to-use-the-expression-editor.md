@@ -1,57 +1,57 @@
 ---
-title: 'Projektant przepływu pracy — jak: Używanie edytora wyrażeń'
+title: 'Projektant przepływu pracy — jak: korzystanie z edytora wyrażeń'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
 - System.Activities.Presentation.View.ExpressionTextBox.UI
 ms.assetid: b5f961dd-6dda-41a9-9cae-0383d479ef3d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce46f1db900aa5c37b49a1cc228290d7d99d29a2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9fc76139d6989421b49c8c80ef325b51a6934cb4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949542"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650268"
 ---
-# <a name="how-to-use-the-expression-editor"></a>Instrukcje: Używanie edytora wyrażeń
+# <a name="how-to-use-the-expression-editor"></a>Instrukcje: korzystanie z edytora wyrażeń
 
-Edytor wyrażeń jest formant projektanta przepływów pracy, który jest używany w wielu działań przepływu pracy do wprowadzania i obliczać wyrażeń. Edytor wyrażeń zapewnia pełni funkcjonalnego środowiska IDE, edytowanie kolorowanie środowiska, takie jak IntelliSense, ParamInfo, między innymi funkcjami zygzaki sygnalizujące błędy. Kompilator sprawdza się wyrażenie po jej wprowadzeniu. Jeśli wyrażenie jest nieprawidłowe, jest wyświetlana ikona błędu. Można również otworzyć Edytor jako **edytora wyrażeń** okno dialogowe.
+Edytor wyrażeń jest formantem Projektant przepływu pracy, który jest używany w wielu działaniach przepływu pracy do wprowadzania i obliczania wyrażeń. Edytor wyrażeń zawiera dopracowane środowisko edycji środowiska IDE, w tym funkcje IntelliSense, kolorowanie, ParamInfo, zygzaki błędów, między innymi. Kompilator sprawdza poprawność wyrażenia po jego wprowadzeniu. Jeśli wyrażenie jest nieprawidłowe, zostanie wyświetlona ikona błędu. Edytor można także otworzyć jako okno dialogowe **Edytor wyrażeń** .
 
-Wyrażenia są wartości literałów lub kod języka Visual Basic, powiązany z argumentami lub właściwości. Zawierają one elementy wartości (na przykład, zmienne, stałe, literały, właściwości), które są połączone z operacjami umożliwiające uzyskanie nową wartość. Wyrażenia są zapisywane przy użyciu składni VB.NET, nawet jeśli aplikacja znajduje się w programie przy użyciu języka C#. Oznacza to, wielkość liter nie ma znaczenia, porównanie odbywa się przy użyciu pojedynczego równe Zaloguj ("=" zamiast "=="), operatory logiczne są wyrazy "i" i "or" zamiast symbole "& &" i "||", i **nic nie** jest używany zamiast **null**. Aby uzyskać więcej informacji na temat wyrażenia i operatory w języku Visual Basic i przykłady, zobacz [operatory i wyrażenia w języku Visual Basic](/previous-versions/visualstudio/visual-studio-2010/a1w3te48(v=vs.100)).
+Wyrażenia są wartościami literałów lub Visual Basic kodzie związanym z argumentami lub właściwościami. Zawierają one elementy wartości (na przykład zmienne, stałe, literały, właściwości), które są łączone z operacjami w celu uzyskania nowej wartości. Wyrażenia są zapisywane przy użyciu składni VB.NET, nawet jeśli aplikacja znajduje się w programie C#przy użyciu. Oznacza to, że nie ma znaczenia, porównanie jest wykonywane przy użyciu pojedynczego znaku równości ("=" zamiast "= ="), operatory logiczne są słowami "i" i "lub" zamiast symboli "& &" i "| |" i **nic** nie jest używane zamiast **wartości null** . Aby uzyskać więcej informacji na temat wyrażeń i operatorów w Visual Basic i dla niektórych przykładów, zobacz [Operatory i wyrażenia w Visual Basic](/previous-versions/visualstudio/visual-studio-2010/a1w3te48(v=vs.100)).
 
-**Edytora wyrażeń** zachowuje się w następujący sposób:
+**Edytor wyrażeń** zachowuje się w następujący sposób:
 
-- Jeśli fokus nie jest w edytorze wyrażeń, wygląda regularne formant TextBlock.
+- Jeśli fokus nie znajduje się w edytorze wyrażeń, wygląda jak zwykła kontrolka TextBlock.
 
-- Gdy fokus jest ustawiony w edytorze wyrażeń, wygląda i zachowuje się jak kontrolka edytora wyrażeń. Po utracie fokusu, Edytor wyrażeń wygląda regularne TextBlock ponownie.
+- Gdy fokus znajduje się w edytorze wyrażeń, wygląda i zachowuje się jak kontrolka Edytor wyrażeń. Po utracie fokusu Edytor wyrażeń będzie wyglądał jak zwykły element TextBlock.
 
-- Jeśli możesz skoncentrować się na edytorze wyrażeń w rehostowanym projektancie przepływu pracy, następnie go zachowuje się jak pole tekstowe. Gdy fokus jest utracone w rehostowanym projektancie przepływu pracy, edytora wyrażeń będzie wyglądać regularne TextBlock ponownie.
+- W przypadku fokusu w edytorze wyrażeń w Projektancie przepływu pracy przeprowadzonej ponownie zachowuje się to jak pole tekstowe. Gdy fokus zostanie utracony w Projektancie przepływów pracy, Edytor wyrażeń będzie wyglądał jak zwykły element TextBlock.
 
 > [!NOTE]
-> Funkcja IntelliSense edytora wyrażeń jest dostępna tylko w programie Visual Studio. W Visual Studio i scenariuszy rehostowanym kompilator sprawdza poprawność wyrażenia po wprowadzeniu go i Edytor wyrażeń Wyświetla ikonę błędu, jeśli wyrażenie jest nieprawidłowe.
+> Funkcja IntelliSense dla edytora wyrażeń jest dostępna tylko w programie Visual Studio. Zarówno w programie Visual Studio, jak i w scenariuszach rehostowania, kompilator sprawdza poprawność wyrażenia po jego wprowadzeniu, a w edytorze wyrażeń jest wyświetlana ikona błędu, jeśli wyrażenie jest nieprawidłowe.
 
 ## <a name="use-the-expression-editor"></a>Używanie edytora wyrażeń
 
-1. W programie Visual Studio Otwórz projekt nowego lub istniejącego przepływu pracy.
+1. W programie Visual Studio Otwórz nowy lub istniejący projekt przepływu pracy.
 
-2. Dodaj na przykład <xref:System.Activities.Statements.Assign> działania przepływu pracy.
+2. Dodaj na przykład działanie <xref:System.Activities.Statements.Assign> do przepływu pracy.
 
     > [!NOTE]
-    > Wiele działań przepływu pracy ma edytory wyrażenia. Obiekty wyrażeń TextBlock również zostać wyświetlony w Projektancie zmiennej, projektanta argumentów i projektanta argumentów dynamicznych. <xref:System.Activities.Statements.Assign> To działanie służy jako przykład.
+    > Wiele działań przepływu pracy ma edytory wyrażeń. Bloki tekstu wyrażenia są również wyświetlane w projektancie zmiennych, projektancie argumentów i projektancie argumentów dynamicznych. Działanie <xref:System.Activities.Statements.Assign> jest używane jako przykład.
 
-3. Kliknij przycisk edytora wyrażeń po lewej stronie, w Projektancie działań dla <xref:System.Activities.Statements.Assign> działania.
+3. Kliknij Edytor wyrażeń lewy w projektancie działań dla działania <xref:System.Activities.Statements.Assign>.
 
-     Parametry szare znaku wodnego  **\<do >** i  **\<wprowadź wyrażenie VB >** są domyślne, ciągi tekstowe edytory wyrażenia w <xref:System.Activities.Statements.Assign> działania.
+     Ciągi szarego znaku wodnego **\<To >** i **\<Enter wyrażeniem VB >** są domyślnymi ciągami tekstowymi dla edytorów wyrażeń w działaniu <xref:System.Activities.Statements.Assign>.
 
-4. Wprowadź wyrażenie. Jeśli wprowadzisz ciąg, upewnij się umieścić ciąg w cudzysłowie. Jeśli chcesz powiązać argumentu wyrażenia do zmiennej, należy pozostawić znaki cudzysłowu.
+4. Wprowadź wyrażenie. Jeśli wprowadzisz ciąg, upewnij się, że zostały umieszczone cudzysłowy wokół ciągu. Jeśli wybierzesz powiązanie argumentu wyrażenia z zmienną, pozostaw cudzysłowy.
 
-     Gdy wszystko będzie gotowe, wybierz region lub obszar, aby przenieść fokus do innej części projektanta poza edytora wyrażeń. Przesunięcie fokus powoduje, że kompilator, aby sprawdzić poprawność wyrażenia, zgodnie z wcześniejszym opisem.
+     Gdy skończysz, wybierz region lub obszar poza edytorem wyrażeń, aby przenieść fokus do innej części projektanta. Przesunięcie fokusu powoduje, że kompilator sprawdza poprawność wyrażenia zgodnie z wcześniejszym opisem.
 
-     Alternatywny sposób, aby wprowadzić lub edytować wyrażenie jest kliknij wielokropek obok nazwy właściwości w siatce właściwości. Wybranie wielokropka otwiera **edytora wyrażeń** jako okno dialogowe.
+     Alternatywny sposób wprowadzania lub edytowania wyrażenia polega na kliknięciu wielokropka obok nazwy właściwości w siatce właściwości. Wybranie wielokropka powoduje otwarcie **edytora wyrażeń** jako okna dialogowego.
 
 ## <a name="see-also"></a>Zobacz także
 

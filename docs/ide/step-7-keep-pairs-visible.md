@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d0cab30734aa5411f759e85ef555ecb36f3f0cf
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
-ms.translationtype: HT
+ms.openlocfilehash: 60b058883e30587ed656690796732b15750b6277
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72575146"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647447"
 ---
 # <a name="step-7-keep-pairs-visible"></a>Krok 7. zachowanie widoczności par
 Gra działa dobrze, dopóki gracz wybiera tylko pary ikon, które nie są zgodne. Rozważmy jednak, co się powinno zdarzyć, gdy gracz wybierze pasującą parę. Zamiast sprawiać, że ikony znikają, włączając czasomierz (przy użyciu metody <xref:System.Windows.Forms.Timer.Start>), gra należy zresetować, tak aby nie śledził już żadnych etykiet przy użyciu `firstClicked` i `secondClicked` zmiennych odwołania, bez resetowania kolorów dla obu tych elementów. wybrane etykiety.
@@ -62,10 +62,10 @@ Gra działa dobrze, dopóki gracz wybiera tylko pary ikon, które nie są zgodne
 2. Zapisz i uruchom program, a następnie zacznij wybierać ikony na formularzu. Jeśli wybierzesz parę, która nie pasuje, wyzwala się zdarzenie czasomierza Takt i obie ikony znikają. W przypadku wybrania pary zgodnej z nową instrukcją `if`, a instrukcja return powoduje, że metoda pominie kod, który uruchamia czasomierz, więc ikony pozostaną widoczne, jak pokazano na poniższej ilustracji.
 
      ![Game utworzone w tym samouczku ](../ide/media/express_finishedgame.png)<br/>
-**Gra w dopasowywanie** z widocznymi parami ikon
+***Gra w dopasowywanie*** *z widocznymi parami ikon*
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
 
-- Aby przejść do następnego kroku samouczka, zobacz [krok 8: Dodaj metodę, aby sprawdzić, czy odtwarzacz wykupił](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md).
+- Aby przejść do następnego kroku samouczka, zobacz **[krok 8: Dodaj metodę, aby sprawdzić, czy odtwarzacz wykupił](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md)** .
 
 - Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 6: Dodawanie czasomierza](../ide/step-6-add-a-timer.md).

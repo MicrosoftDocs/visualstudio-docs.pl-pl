@@ -1,5 +1,5 @@
 ---
-title: Okno bezpośrednie | Dokumentacja firmy Microsoft
+title: Okno bezpośrednie | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -12,121 +12,115 @@ helpviewer_keywords:
 - first-chance exception notifications
 ms.assetid: d33e7937-73f3-4c69-9df0-777a8713c6f2
 caps.latest.revision: 28
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e6bbbd4fa2ad051407ece3e05c1806c1231ef2e8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3177c92713f6fdeb9b9b8a47a0da38608714174d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437118"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651287"
 ---
 # <a name="immediate-window"></a>Okno bezpośrednie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-**Bezpośrednie** okno służy do debugowania i obliczać wyrażeń, wykonywania instrukcji, drukowania wartości zmiennych i tak dalej. Umożliwia wprowadzenie wyrażenia, aby je ocenić lub wykonać przy pomocy języka programowania podczas debugowania. Aby wyświetlić **bezpośrednie** okna, otwórz projekt do edycji, a następnie wybierz **Windows** z **debugowania** menu, a następnie wybierz **bezpośrednie**, lub naciśnij klawisze CTRL + ALT + I.  
-  
- Można użyć tego okna, aby wydawać indywidualne [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] poleceń. Dostępne polecenia obejmują `EvaluateStatement`, który może służyć do przypisywania wartości do zmiennych. **Bezpośrednie** okna obsługuje również technologię IntelliSense.  
-  
-## <a name="displaying-the-values-of-variables"></a>Wyświetlanie wartości zmiennych  
- Okno to może być szczególnie przydatne podczas debugowania aplikacji. Na przykład, aby sprawdzić wartość zmiennej `varA`, możesz użyć [polecenie Drukuj](../../ide/reference/print-command.md):  
-  
-```  
->Debug.Print varA  
-```  
-  
- Znak zapytania (?) jest aliasem `Debug.Print`, dlatego to polecenie można również zapisać:  
-  
-```  
->? varA  
-```  
-  
- Obie wersje to polecenie zwróci wartość zmiennej `varA`.  
-  
+Okno **bezpośrednie** służy do debugowania i szacowania wyrażeń, wykonywania instrukcji, drukowania wartości zmiennych itd. Umożliwia wprowadzanie wyrażeń, które mają być oceniane lub wykonywane przez język programistyczny podczas debugowania. Aby wyświetlić okno **bezpośrednie** , Otwórz projekt do edycji, a następnie wybierz pozycję **Windows** z menu **Debuguj** i wybierz pozycję **natychmiastowe**lub naciśnij klawisze Ctrl + Alt + I.
+
+ To okno służy do wydawania poszczególnych poleceń [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Dostępne polecenia to `EvaluateStatement`, które mogą być używane do przypisywania wartości do zmiennych. Okno **bezpośrednie** obsługuje również funkcję IntelliSense.
+
+## <a name="displaying-the-values-of-variables"></a>Wyświetlanie wartości zmiennych
+ To okno może być szczególnie przydatne podczas debugowania aplikacji. Na przykład, aby sprawdzić wartość zmiennej `varA`, można użyć [polecenia Print](../../ide/reference/print-command.md):
+
+```
+>Debug.Print varA
+```
+
+ Znak zapytania (?) jest aliasem dla `Debug.Print`, więc to polecenie można także napisać:
+
+```
+>? varA
+```
+
+ Obie wersje tego polecenia zwróci wartość zmiennej `varA`.
+
 > [!NOTE]
-> Problem [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] polecenia w pliku **bezpośrednie** okna, należy poprzedzić polecenie a znak większości (>). Aby wprowadzić kilka poleceń, przełącz się do **polecenia** okna.  
-  
-## <a name="design-time-expression-evaluation"></a>Obliczanie wyrażenia czasu projektowania  
- Możesz użyć **bezpośrednie** okna do wykonania funkcji lub podprocedury w czasie projektowania.  
-  
-#### <a name="to-execute-a-function-at-design-time"></a>Aby wykonać funkcję w czasie projektowania  
-  
-1. Skopiuj następujący kod do [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] konsoli aplikacji:  
-  
-   ```  
-   Module Module1  
-  
-       Sub Main()  
-           MyFunction(5)  
-       End Sub  
-  
-       Function MyFunction(ByVal input as Integer) As Integer  
-           Return input * 2  
-       End Function  
-  
-   End Module  
-   ```  
-  
-2. Na **debugowania** menu, kliknij przycisk **Windows**, a następnie kliknij przycisk **bezpośrednie**.  
-  
-3. Typ `?MyFunction(2)` w **bezpośrednie** okna i naciśnij klawisz Enter.  
-  
-    **Bezpośrednie** uruchomi okna `MyFunction` i wyświetlić `4`.  
-  
-   Jeśli funkcja lub podprocedura zawiera punkt przerwania, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] spowoduje przerwanie wykonywania we właściwym miejscu. Można następnie użyć okien debugera do sprawdzenia stanu programu. Aby uzyskać więcej informacji, zobacz [instruktażu: Debugowanie w czasie projektowania](../../debugger/walkthrough-debugging-at-design-time.md).  
-  
-   Nie można użyć obliczenia wyrażenia czasu projektowania w typach projektów, które wymagają uruchamiania środowiska wykonawczego, w tym [!INCLUDE[trprVSTOshort](../../includes/trprvstoshort-md.md)] projektów, projektów sieci Web, projektów urządzeń inteligentnych i projektów SQL.  
-  
-### <a name="design-time-expression-evaluation-in-multi-project-solutions"></a>Obliczanie wyrażenia czasu projektowania w rozwiązaniach dotyczących wielu projektów  
- Podczas ustanawiania kontekstu oceny wyrażenia czasu projektowania, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] odwołuje się do aktualnie wybranego projektu w Eksploratorze rozwiązań. Jeśli projekt nie jest zaznaczony w oknie Eksploratora rozwiązań [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] próbuje obliczyć funkcję względu projektu startowego. Jeśli nie można obliczyć funkcji w bieżącym kontekście, otrzymasz komunikat o błędzie. Jeśli próbujesz obliczyć wartości funkcji w projekcie, który nie jest projektem startowym rozwiązania, a otrzymasz komunikat o błędzie, spróbuj wybrać projekt w Eksploratorze rozwiązań i ponownie dokonać obliczenia.  
-  
-## <a name="entering-commands"></a>Wprowadzenie poleceń  
- Należy wprowadzić znak większości (>) przy wydawaniu [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] polecenia w **bezpośrednie** okna. Użyj klawiszy Strzałka w górę i Strzałka w dół do przewijania wcześniej wydanych poleceń.  
-  
-|Zadanie|Rozwiązanie|Przykład|  
-|----------|--------------|-------------|  
-|Ocena wyrażenia.|Należy poprzedzić wyrażenie znakiem zapytania (?).|`? a+b`|  
-|Tymczasowo przejdź do trybu poleceń, będąc w trybie bezpośrednim (Aby wykonać jedno polecenie).|Wprowadź polecenie prefacing go o rozmiarze większym niż znak większości (>).|`>alias`|  
-|Przełącz do okna wiersza polecenia.|Wprowadź `cmd` prefacing go w oknie o rozmiarze większym niż znak większości (>).|`>cmd`|  
-|Przejdź z powrotem do okna bezpośredniego.|Wprowadź `immed` do okna bez znaku większości (>).|`immed`|  
-  
-## <a name="mark-mode"></a>Tryb oznaczania  
- Po kliknięciu dowolnego poprzedniego wiersza w **bezpośrednie** okna, nastąpi automatyczne przejście w tryb oznaczania. Dzięki temu można wybrać, edytować i skopiować tekst z poprzedniego polecenia, ponieważ w dowolnym edytorze tekstów i wkleić je do bieżącego wiersza.  
-  
-## <a name="the-equals--sign"></a>Znak równości (=)  
- Okno służące do wprowadzania `EvaluateStatement` polecenie Określa, czy znak równości (=) jest interpretowany jako operator porównania lub operator przypisania.  
-  
- W **bezpośrednie** okna, znak równości (=) jest interpretowany jako operator przypisania. Tak na przykład polecenie  
-  
-```  
->Debug.EvaluateStatement(varA=varB)  
-```  
-  
- przypiszą do zmiennej `varA` wartość zmiennej `varB`.  
-  
- W **polecenia** okna, z drugiej strony, znak równości (=) jest interpretowany jako operator porównania. Nie można użyć operacji przypisania w **polecenia** okna. Na przykład, jeśli wartości zmiennych `varA` i `varB` są różne, a następnie polecenie  
-  
-```  
->Debug.EvaluateStatement(varA=varB)  
-```  
-  
- Zwraca wartość `False`.  
-  
-## <a name="first-chance-exception-notifications"></a>Powiadomienia o wyjątkach pierwszej szansy  
- W niektórych konfiguracjach ustawień powiadomienia o wyjątkach pierwszej szansy są wyświetlane w **bezpośrednie** okna.  
-  
-#### <a name="to-toggle-first-chance-exception-notifications-in-the-immediate-window"></a>Aby przełączyć powiadomienia wyjątku pierwszej szansy w oknie bezpośrednim  
-  
-1. Na **widoku** menu, kliknij przycisk **Windows inne**i kliknij przycisk **dane wyjściowe**.  
-  
-2. Kliknij prawym przyciskiem myszy obszar tekstu **dane wyjściowe** okna i zaznacz lub odznacz opcję **komunikaty o wyjątkach**.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Nawigowanie po kodzie za pomocą debugera za](../../debugger/navigating-through-code-with-the-debugger.md)   
- [Okno polecenia](../../ide/reference/command-window.md)   
- [Debugowanie w programie Visual Studio](../../debugger/debugging-in-visual-studio.md)   
- [Podstawowe informacje o debugerze](../../debugger/debugger-basics.md)   
- [Przewodnik: Debugowanie w czasie projektowania](../../debugger/walkthrough-debugging-at-design-time.md)   
- [Visual Studio — aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)   
- [Używanie wyrażeń regularnych w programie Visual Studio](../../ide/using-regular-expressions-in-visual-studio.md)
+> Aby wydać [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] polecenie w oknie **bezpośrednim** , należy poprzedzić polecenie znakiem większości (>). Aby wprowadzić wiele poleceń, przełącz się do okna **poleceń** .
+
+## <a name="design-time-expression-evaluation"></a>Obliczanie wyrażenia czasu projektowania
+ Za pomocą okna **bezpośredniego** można wykonać funkcję lub procedurę podprocedury w czasie projektowania.
+
+#### <a name="to-execute-a-function-at-design-time"></a>Aby wykonać funkcję w czasie projektowania
+
+1. Skopiuj następujący kod do [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] aplikacji konsolowej:
+
+   ```
+   Module Module1
+
+       Sub Main()
+           MyFunction(5)
+       End Sub
+
+       Function MyFunction(ByVal input as Integer) As Integer
+           Return input * 2
+       End Function
+
+   End Module
+   ```
+
+2. W menu **debugowanie** kliknij pozycję **Windows**, a następnie kliknij pozycję **natychmiastowe**.
+
+3. Wpisz `?MyFunction(2)` w oknie **bezpośrednim** i naciśnij klawisz ENTER.
+
+    Okno **bezpośrednie** uruchomi się `MyFunction` i wyświetli `4`.
+
+   Jeśli funkcja lub podprocedura zawiera punkt przerwania, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] spowoduje przerwanie wykonywania w odpowiednim punkcie. Można następnie użyć okien debugera do sprawdzenia stanu programu. Aby uzyskać więcej informacji, zobacz [Przewodnik: debugowanie w czasie projektowania](../../debugger/walkthrough-debugging-at-design-time.md).
+
+   Nie można użyć oceny wyrażenia czasu projektowania w typach projektów, które wymagają uruchomienia środowiska wykonawczego, w tym [!INCLUDE[trprVSTOshort](../../includes/trprvstoshort-md.md)] projekty, projekty sieci Web, projekty urządzeń inteligentnych i projekty SQL.
+
+### <a name="design-time-expression-evaluation-in-multi-project-solutions"></a>Obliczanie wyrażenia czasu projektowania w rozwiązaniach z obsługą kilku projektów
+ Podczas ustanawiania kontekstu oceny wyrażenia czasu projektowania [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] odwołuje się do aktualnie wybranego projektu w Eksplorator rozwiązań. Jeśli nie wybrano projektu w Eksplorator rozwiązań, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] próbuje oszacować funkcję względem projektu startowego. Jeśli funkcja nie może być oceniona w bieżącym kontekście, zostanie wyświetlony komunikat o błędzie. Jeśli próbujesz ocenić funkcję w projekcie, który nie jest projektem startowym rozwiązania i wystąpi błąd, spróbuj wybrać projekt w Eksplorator rozwiązań i ponownie spróbować wykonać próbę.
+
+## <a name="entering-commands"></a>Wprowadzanie poleceń
+ Należy wprowadzić znak większości (>) podczas wydawania [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] poleceń w oknie **bezpośrednim** . Użyj klawiszy Strzałka w górę i Strzałka w dół, aby przewijać wcześniej wystawione polecenia.
+
+|Zadanie|Rozwiązanie|Przykład|
+|----------|--------------|-------------|
+|Oceń wyrażenie.|Oznacz wyrażenie znakiem zapytania (?).|`? a+b`|
+|Tymczasowe wprowadzanie trybu polecenia w trybie bezpośrednim (aby wykonać pojedyncze polecenie).|Wprowadź polecenie, umieszczając je na znaku większości (>).|`>alias`|
+|Przełącz się do okno Polecenie.|Wprowadź `cmd` do okna, umieszczając je na znaku większości (>).|`>cmd`|
+|Przełącz się z powrotem do okna bezpośredniego.|Wprowadź `immed` do okna bez znaku większości (>).|`immed`|
+
+## <a name="mark-mode"></a>Tryb oznaczania
+ Po kliknięciu dowolnego poprzedniego wiersza w oknie **bezpośrednim** zostanie ono automatycznie przesunięte do trybu oznaczania. Dzięki temu można wybrać, edytować i skopiować tekst poprzednich poleceń tak samo jak w dowolnym edytorze tekstów i wkleić je do bieżącego wiersza.
+
+## <a name="the-equals--sign"></a>Znak równości (=)
+ Okno używane do wprowadzania `EvaluateStatement` polecenie określa, czy znak równości (=) jest interpretowany jako operator porównania, czy jako operator przypisania.
+
+ W oknie **bezpośrednim** znak równości (=) jest interpretowany jako operator przypisania. Tak więc, na przykład, polecenie
+
+```
+>Debug.EvaluateStatement(varA=varB)
+```
+
+ zostanie przypisany do zmiennej `varA` wartość `varB` zmiennej.
+
+ W oknie **polecenia** , z przeciwieństwem, znak równości (=) jest interpretowany jako operator porównania. Nie można używać operacji przypisania w oknie **poleceń** . Tak więc, na przykład, jeśli wartości zmiennych `varA` i `varB` są różne, polecenie
+
+```
+>Debug.EvaluateStatement(varA=varB)
+```
+
+ zwróci wartość `False`.
+
+## <a name="first-chance-exception-notifications"></a>Powiadomienia o wyjątkach pierwszej szansy
+ W niektórych konfiguracjach ustawień powiadomienia o wyjątkach pierwszej szansy są wyświetlane w oknie **bezpośrednim** .
+
+#### <a name="to-toggle-first-chance-exception-notifications-in-the-immediate-window"></a>Aby włączyć powiadomienia o wyjątkach pierwszej szansy w oknie bezpośrednim
+
+1. W menu **Widok** kliknij pozycję **inne okna**, a następnie kliknij pozycję **dane wyjściowe**.
+
+2. Kliknij prawym przyciskiem myszy obszar tekstu okna **dane wyjściowe** , a następnie wybierz lub usuń zaznaczenie **komunikatów o wyjątkach**.
+
+## <a name="see-also"></a>Zobacz też
+ [Nawigowanie po kodzie za pomocą](../../debugger/navigating-through-code-with-the-debugger.md) debugowania [okna poleceń debugera](../../ide/reference/command-window.md) [w Visual Studio](../../debugger/debugging-in-visual-studio.md) Przewodnik [podstawy](../../debugger/debugger-basics.md) [: debugowanie w czasie projektowania](../../debugger/walkthrough-debugging-at-design-time.md) [Aliasy poleceń programu Visual Studio](../../ide/reference/visual-studio-command-aliases.md) [ Wyrażenia w programie Visual Studio](../../ide/using-regular-expressions-in-visual-studio.md)

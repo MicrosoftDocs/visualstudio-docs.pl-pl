@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Ustawianie opcji ułatwień dostępu IDE | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Ustawianie opcji ułatwień dostępu IDE | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -8,108 +8,107 @@ helpviewer_keywords:
 - accessibility [Visual Studio]
 ms.assetid: ddc96c4c-0600-46c1-8267-7dce4c44ad24
 caps.latest.revision: 25
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4ee29fd6309db34d4e0e4a013149e268051ab0e5
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: afff9e06c4333f4910e22e963d24090c1d1e4c6a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704397"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651333"
 ---
-# <a name="how-to-set-ide-accessibility-options"></a>Instrukcje: Ustawianie opcji ułatwień dostępu IDE
+# <a name="how-to-set-ide-accessibility-options"></a>Porady: ustawianie opcji ułatwień dostępu IDE
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] zawiera funkcje, które ułatwiają dla osób niedowidzących do odczytu, a także dla osób o ograniczonej sprawności ruchowej, aby zapisać. Funkcje te obejmują, zmienianie rozmiaru i koloru tekstu w edytorach, zmieniając rozmiar tekstu i przycisków na paskach narzędzi i automatycznego uzupełniania dla metod i parametrów, kilka.  
-  
- Ponadto [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] obsługuje układy klawiatury Dvoraka, które powodują, że najczęściej wpisane znaki łatwiej dostępne. Można również dostosować domyślne klawiszy skrótu dostępnych z [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Aby uzyskać więcej informacji, zobacz [określenie i dostosowywanie skrótów klawiaturowych](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  
-  
+[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] zawiera funkcje, które ułatwiają osobom, które mają niewielki dostęp do odczytu i dla osób, które mają ograniczoną ruch. Te funkcje obejmują zmianę rozmiaru i koloru tekstu w edytorach, zmianę rozmiaru tekstu i przycisków na paskach narzędzi oraz Autouzupełnianie dla metod i parametrów, aby podać kilka nazw.
+
+ Ponadto [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] obsługuje układy klawiatury Dvoraka, które sprawiają, że najczęściej wpisywane znaki są bardziej dostępne. Możesz również dostosować domyślne klawisze skrótów dostępne dla [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Aby uzyskać więcej informacji, zobacz [Identyfikowanie i Dostosowywanie skrótów klawiaturowych](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
+
 > [!NOTE]
-> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
-  
-## <a name="editors-dialogs-and-tool-windows"></a>Edytory, okna dialogowe i narzędzie Windows  
- Domyślnie, okna dialogowe i okna narzędzi w [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] używać tego samego rozmiaru czcionki i kolory jako systemu operacyjnego. Ustawienia kolorów dla ramki w IDE, okna dialogowe, paski narzędzi i okien narzędzi opierają się schemat kolorów: jasny i ciemny. Możesz zmienić bieżący motyw kolorów w [ogólne, środowisko, opcje, okno dialogowe](../../ide/reference/general-environment-options-dialog-box.md).  
-  
- Można także wyświetlić wyskakującego okienka, w widoku kodu w edytorze. Te okna można monitują dostępni członkowie na bieżący obiekt i parametry do wykonania funkcji lub instrukcji. Okna te mogą być przydatne, jeśli masz problemy z pisaniem. Jednak przeszkadzają fokus w edytorze kodu, który może być problematyczne dla niektórych użytkowników. Można wyłączyć te okna, otwierając okno dialogowe Opcje i wyczyszczenie **automatyczna lista członków** i **informacje o parametrach** w **edytora tekstów**, **wszystkie Języki**, **ogólne** strony w **opcje** okno dialogowe. Aby uzyskać więcej informacji, zobacz [jak: Ustawianie opcji ogólnych edytora](https://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2).  
-  
- Możesz zmienić kolejność systemu windows w zintegrowanym środowisku programistycznym (IDE) stosownie do potrzeb sposobu pracy. Można zadokować, float, ukryć lub automatycznie ukrywaj każdego okna narzędzi.  
-  
- Aby uzyskać więcej informacji dotyczących sposobu zmieniania układy okna, zobacz [dostosowywanie układów okien](../../ide/customizing-window-layouts-in-visual-studio.md).  
-  
-### <a name="changing-the-size-of-text"></a>Zmiana rozmiaru tekstu  
- Można zmienić ustawienia dla okien narzędzi oparte na tekście, takie jak **polecenia** oknie **bezpośrednie** oknie i **dane wyjściowe** okna w **czcionek i Kolory** okienku **środowiska** opcji na liście **narzędzia** okno dialogowe. Gdy **[wszystkie tekstowe narzędzie Windows]** wybrano w **Pokaż ustawienia dla** listy rozwijanej ustawieniem domyślnym jest wymieniony jako **domyślne** w **pierwszy plan elementu**  i **tła elementu** list rozwijanych. Ustawienia można również zmienić sposób wyświetlania tekstu w edytorze.  
-  
-##### <a name="to-change-the-size-of-text-in-text-based-tool-windows-and-editors"></a>Aby zmienić rozmiar tekstu w oknach narzędzi tekstowych i edytory  
-  
-1. Z **narzędzia** menu, wybierz **opcje**.  
-  
-2. Wybierz **czcionki i kolory** na **środowiska** folderu.  
-  
-3. Wybierz jedną z opcji na **Pokaż ustawienia dla** menu rozwijanego.  
-  
-     Aby zmienić rozmiar czcionki dla tekstu w edytorze, wybierz **edytora tekstów**.  
-  
-     Aby zmienić rozmiar czcionki dla tekstu w oknach narzędzi tekstowych, wybierz **[Windows wszystkie narzędzia Tekst]**.  
-  
-     Aby zmienić rozmiar czcionki dla tekstu etykietki narzędzia w edytorze, wybierz **etykietki narzędzi edytora**.  
-  
-     Aby zmienić rozmiar czcionki dla tekstu w wyskakujące okienka uzupełniania instrukcji, wybierz **uzupełniania instrukcji**.  
-  
-4. Z **wyświetlania elementów**, wybierz opcję **zwykły tekst**.  
-  
-5. W **czcionki**, wybierz nowy typ czcionki.  
-  
-6. W **rozmiar**, wybierz nowy rozmiar czcionki.  
-  
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, wybierz **Importuj i Eksportuj ustawienia** w menu **Narzędzia** . Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień deweloperskich w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+
+## <a name="editors-dialogs-and-tool-windows"></a>Edytory, okna dialogowe i okna narzędzi
+ Domyślnie okna dialogowe i okna narzędzi w [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] używają tego samego rozmiaru i koloru czcionki co system operacyjny. Ustawienia koloru dla ramki środowiska IDE, okien dialogowych, pasków narzędzi i okien narzędzi są oparte na schemacie kolorów: jasne lub ciemne. Bieżący motyw kolorów można zmienić w [oknie dialogowym ogólne, środowisko, opcje](../../ide/reference/general-environment-options-dialog-box.md).
+
+ Okna podręczne można także wyświetlić w widoku Kod edytora. Te okna mogą monitować o dostępne elementy członkowskie bieżącego obiektu i parametry, aby ukończyć funkcję lub instrukcję. Te okna mogą być przydatne, jeśli masz problemy z wpisywaniem. Jednak zakłócają one fokus w edytorze kodu, co może być problematyczne dla niektórych użytkowników. Możesz wyłączyć te okna, otwierając okno dialogowe Opcje i czyszcząc **listę członków** i **Informacje o parametrach** w **edytorze tekstu**, **wszystkie języki**, **Ogólne** strony w oknie dialogowym **Opcje** . Aby uzyskać więcej informacji, zobacz [How to: Set General Editor Options](https://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2).
+
+ Możesz zmienić rozmieszczenie systemu Windows w zintegrowanym środowisku programistycznym (IDE), aby najlepiej dopasować się do pracy. Każde okno narzędzi można zadokować, przepływać, ukryć lub automatycznie ukryć.
+
+ Aby uzyskać więcej informacji na temat zmiany układów okien, zobacz [Dostosowywanie układów okien](../../ide/customizing-window-layouts-in-visual-studio.md).
+
+### <a name="changing-the-size-of-text"></a>Zmiana rozmiaru tekstu
+ Można zmienić ustawienia okien narzędzi tekstowych, takich jak okno **polecenia** , okno **bezpośrednie** i okno **dane wyjściowe** , w okienku **czcionki i kolory** w opcjach **środowiska** w oknie dialogowym **Narzędzia** . Po wybraniu opcji **[wszystkie okna narzędzi tekstowych]** na liście rozwijanej **Pokaż ustawienia dla** , ustawienie domyślne zostanie wyświetlone na liście rozwijanej na **pierwszym planie elementu** **i w** **tle elementu** . Możesz również zmienić ustawienia wyświetlania tekstu w edytorze.
+
+##### <a name="to-change-the-size-of-text-in-text-based-tool-windows-and-editors"></a>Aby zmienić rozmiar tekstu w oknach narzędzi tekstowych i edytorach
+
+1. W menu **Narzędzia** wybierz polecenie **Opcje**.
+
+2. Wybierz **czcionki i kolory** w folderze **Environment** .
+
+3. Wybierz opcję z menu rozwijanego **Pokaż ustawienia dla** .
+
+     Aby zmienić rozmiar czcionki dla tekstu w edytorze, wybierz **Edytor tekstu**.
+
+     Aby zmienić rozmiar czcionki dla tekstu w oknach narzędzi tekstowych, wybierz opcję **[wszystkie okna narzędzi tekstowych]** .
+
+     Aby zmienić rozmiar czcionki dla tekstu etykietki narzędzia w edytorze, wybierz **etykietkę narzędzia edytora**.
+
+     Aby zmienić rozmiar czcionki dla tekstu w okienkach wyskakujących uzupełniania instrukcji, wybierz opcję **uzupełnianie instrukcji**.
+
+4. Z **elementów wyświetlanych**wybierz opcję **zwykły tekst**.
+
+5. W polu **czcionka**wybierz nowy typ czcionki.
+
+6. W polu **rozmiar**wybierz nowy rozmiar czcionki.
+
     > [!NOTE]
-    > Aby zresetować rozmiar okna narzędzi tekstowych i edytorów, wybierz **Użyj ustawień domyślnych**.  
-  
-7. Wybierz **OK**.  
-  
-### <a name="changing-the-colors-used-in-the-ide"></a>Zmienianie kolorów używanych w środowisku IDE  
- Możesz również zmienić kolory domyślne tekstu, wskaźniki margines, biały i elementy kodu w edytorze.  
-  
+    > Aby zresetować rozmiar tekstu dla okien narzędzi tekstowych i edytorów, wybierz opcję **Użyj wartości domyślnych**.
+
+7. Wybierz **przycisk OK**.
+
+### <a name="changing-the-colors-used-in-the-ide"></a>Zmiana kolorów używanych w środowisku IDE
+ Możesz również zmienić domyślne kolory tekstu, wskaźników marginesów, białego znaku i elementów kodu w edytorze.
+
 > [!NOTE]
-> Aby użyć dużego kontrastu kolorów dla wszystkich aplikacji systemu windows w systemie operacyjnym, naciśnij klawisz po lewej stronie <strong>ALT +</strong>po lewej stronie **SHIFT + PRINT SCREEN**. Jeśli [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] jest otworzyć, zamknij i otwórz ponownie [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] do pełnego wdrożenia dużego kontrastu kolorów.  
-  
-##### <a name="to-change-the-color-of-items-in-the-editor"></a>Aby zmienić kolor elementów w edytorze  
-  
-1. Z **narzędzia** menu, wybierz **opcje**.  
-  
-2. Wybierz **czcionki i kolory** z **środowiska** folderu.  
-  
-3. W **Pokaż ustawienia dla**, wybierz **edytora tekstów**.  
-  
-4. Z **wyświetlania elementów**, wybierz element, którego ekran zachodzi potrzeba zmiany, takie jak **zwykły tekst**, **margines wskaźnika**, **pokazuj biały znak**, **Nazwa atrybutu HTML**, lub **atrybutu XML**.  
-  
-5. Wybierz ustawienia wyświetlania spośród następujących opcji: **Pierwszy plan elementu**, **tła elementu**, i **Bold**.  
-  
-6. Wybierz **OK**.  
-  
-## <a name="toolbars"></a>Paski narzędzi  
- Aby zwiększyć użyteczność paska narzędzi i dostępność, można dodać tekstu do przycisków paska narzędzi.  
-  
-#### <a name="to-assign-text-to-toolbar-buttons"></a>Aby przypisać tekstu do przycisków paska narzędzi  
-  
-1. Z **narzędzia** menu, wybierz **Dostosuj**.  
-  
-2. W **Dostosuj** okno dialogowe, wybierz opcję **polecenia** kartę.  
-  
-3. Wybierz **narzędzi** , a następnie wybierz nazwę paska narzędzi, zawierający przycisk, mają do wyświetlania tekstu.  
-  
-4. Na liście wybierz polecenie, które chcesz zmienić.  
-  
-5. Wybierz **Modyfikuj zaznaczenie**.  
-  
-6. Wybierz **tekstowych i obrazów**.  
-  
-#### <a name="to-modify-the-buttons-displayed-text"></a>Aby zmodyfikować go w wyświetlanym tekstem  
-  
-1. Wybierz ponownie **Modyfikuj zaznaczenie**.  
-  
-2. Sąsiadujące w **nazwa**, Wstaw Podaj nowy podpis dla przycisku.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Funkcje ułatwień dostępu programu Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)   
- [Zasoby do projektowania dostępnych aplikacji](../../ide/reference/resources-for-designing-accessible-applications.md)
+> Aby użyć kolorów o dużym kontraście dla wszystkich okien aplikacji w systemie operacyjnym, naciśnij klawisze z lewej <strong>Alt +</strong>Strzałka w lewo **Shift + Print Screen**. Jeśli [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] jest otwarty, Zamknij i ponownie otwórz [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], aby całkowicie zaimplementować kolory o wysokim kontraście.
+
+##### <a name="to-change-the-color-of-items-in-the-editor"></a>Aby zmienić kolor elementów w edytorze
+
+1. W menu **Narzędzia** wybierz polecenie **Opcje**.
+
+2. Wybierz **czcionki i kolory** z folderu **Environment** .
+
+3. W obszarze **Pokaż ustawienia dla**wybierz **Edytor tekstu**.
+
+4. Z **elementów wyświetlanych**wybierz element, którego ekran należy zmienić, na przykład **zwykły tekst**, **margines wskaźnika**, **widoczny odstęp**, **nazwa atrybutu HTML**lub **atrybut XML**.
+
+5. Wybierz pozycję Ustawienia wyświetlania z następujących opcji: **pierwszy plan elementu**, **tło elementu**i **pogrubienie**.
+
+6. Wybierz **przycisk OK**.
+
+## <a name="toolbars"></a>Paski narzędzi
+ Aby poprawić użyteczność i dostępność paska narzędzi, możesz dodać tekst do przycisków paska narzędzi.
+
+#### <a name="to-assign-text-to-toolbar-buttons"></a>Aby przypisać tekst do przycisków paska narzędzi
+
+1. W menu **Narzędzia** wybierz polecenie **Dostosuj**.
+
+2. W oknie dialogowym **Dostosowywanie** wybierz kartę **polecenia** .
+
+3. Wybierz pozycję **pasek narzędzi** , a następnie wybierz nazwę paska narzędzi zawierającego przycisk, dla którego ma być wyświetlany tekst.
+
+4. Z listy wybierz polecenie, które ma zostać zmienione.
+
+5. Wybierz **Modyfikuj zaznaczenie**.
+
+6. Wybierz **obraz i tekst**.
+
+#### <a name="to-modify-the-buttons-displayed-text"></a>Aby zmodyfikować wyświetlany tekst przycisku
+
+1. Wybierz pozycję **Modyfikuj zaznaczenie**.
+
+2. Obok **nazwy**w polu Wstaw Podaj nowy podpis dla wybranego przycisku.
+
+## <a name="see-also"></a>Zobacz też
+ [Funkcje ułatwień dostępu](../../ide/reference/accessibility-features-of-visual-studio.md) w zasobach programu Visual Studio [do projektowania dostępnych aplikacji](../../ide/reference/resources-for-designing-accessible-applications.md)

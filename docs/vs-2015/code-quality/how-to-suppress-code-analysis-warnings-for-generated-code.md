@@ -1,37 +1,37 @@
 ---
-title: 'Instrukcje: Pomijanie ostrzeżeń analizy kodu dla wygenerowanego kodu | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: pomijanie ostrzeżeń analizy kodu dla wygenerowanego kodu | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 ms.assetid: 3a96434e-d419-43a7-81ba-95cccac835b8
 caps.latest.revision: 7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 9949a72abc46f2212fe448e193a06cce90b6df7c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 52caadd7f4dd9349eccb80a366a1458212aba5ca
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438986"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72646278"
 ---
-# <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>Instrukcje: Pomijanie ostrzeżeń analizy wygenerowanego kodu
+# <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>Porady: pomijanie ostrzeżeń analizy kodu dla wygenerowanego kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Kompilatory kodu zarządzanego często generują kod, który jest dodawany do projektu w celu ułatwienia tworzenia kodu szybkiego. Ponadto deweloperzy często używają narzędzi innych firm ułatwia szybkie tworzenie aplikacji. Te narzędzia są również wygenerować kod, który jest dodawany do projektu.  
-  
- Możesz chcieć wyświetlić naruszenia reguły, które analizy kodu, który umożliwia odnalezienie w wygenerowanym kodzie. Jednak możesz nie chcieć je wyświetlić, jeśli nie można wyświetlić i utrzymywać kod, który zawiera naruszenie.  
-  
- **Pomijaj wyniki z wygenerowanego kodu** pole wyboru na stronie właściwości analizy kodu projektu umożliwia wybranie, czy mają być wyświetlane ostrzeżenia analizy kodu w kodzie wygenerowanym przez narzędzie innej firmy.  
-  
+Kompilatory kodu zarządzanego często generują kod, który jest dodawany do projektu w celu ułatwienia szybkiego tworzenia kodu. Ponadto deweloperzy często używają narzędzi innych firm, aby szybko opracowywać aplikacje. Narzędzia te generują również kod, który jest dodawany do projektu.
+
+ Warto zapoznać się z naruszeniami reguł, które są wykrywane przez analizę kodu w wygenerowanym kodzie. Niemniej jednak, jeśli nie możesz wyświetlić i zachować kodu, który zawiera naruszenie.
+
+ Pole wyboru **Pomiń wyniki z wygenerowanego kodu** na stronie właściwości Analiza kodu projektu umożliwia wybranie, czy chcesz zobaczyć ostrzeżenia analizy kodu z kodu wygenerowanego przez narzędzie innej firmy.
+
 > [!NOTE]
-> Ta opcja nie pomija błędy analizy kodu i ostrzeżenia z wygenerowanego kodu podczas błędy i ostrzeżenia są wyświetlane w formularzach i szablony. Można wyświetlać lub zachować kod źródłowy dla formularza lub szablonu.  
-  
-### <a name="to-suppress-warnings-for-generated-code-in-a-project"></a>Aby pominąć ostrzeżeń dla wygenerowanego kodu w projekcie  
-  
-1. Kliknij prawym przyciskiem myszy projekt w Eksploratorze rozwiązań, a następnie kliknij przycisk **właściwości**.  
-  
-2. Kliknij przycisk **analiza kodu**.  
-  
-3. Wybierz **Pomijaj wyniki z wygenerowanego kodu** pole wyboru.
+> Ta opcja nie powoduje pomijania błędów analizy kodu i ostrzeżeń z wygenerowanego kodu, gdy błędy i ostrzeżenia pojawiają się w formularzach i szablonach. Można zarówno wyświetlać, jak i konserwować kod źródłowy formularza lub szablonu.
+
+### <a name="to-suppress-warnings-for-generated-code-in-a-project"></a>Aby pominąć ostrzeżenia dla wygenerowanego kodu w projekcie
+
+1. Kliknij prawym przyciskiem myszy projekt w Eksplorator rozwiązań, a następnie kliknij polecenie **Właściwości**.
+
+2. Kliknij pozycję **Analiza kodu**.
+
+3. Zaznacz pole wyboru **Pomiń wyniki z wygenerowanego kodu** .

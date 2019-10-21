@@ -1,21 +1,21 @@
 ---
-title: 'Instrukcje: Tworzenie podstawowego cieniowania Phonga'
+title: 'Porady: tworzenie podstawowego modułu cieniowanie Phong'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c7c69da8-142b-4d3b-9be9-4be0d5970b25
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 895b797ad07018a9f4d4bf4c14b7f358a26f8eaa
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 5141df9f7504229733a269c2f7b0f94903064d8f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924417"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635940"
 ---
-# <a name="how-to-create-a-basic-phong-shader"></a>Instrukcje: Tworzenie podstawowego cieniowania Phonga
+# <a name="how-to-create-a-basic-phong-shader"></a>Instrukcje: Tworzenie podstawowego cieniowania podstawowego Phong
 
 W tym artykule pokazano, jak używać projektanta programu do cieniowania i języka ukierunkowanego programu Graph (DGSL) do tworzenia cieniowania oświetlenia implementującego klasyczny model oświetlenia podstawowego Phong.
 
@@ -23,11 +23,11 @@ W tym artykule pokazano, jak używać projektanta programu do cieniowania i jęz
 
 Model oświetlenia podstawowego Phong rozszerza model oświetlenia Lamberta w taki sposób, aby obejmował wyróżnianie odblasków, które symuluje właściwości odbicia powierzchni. Składnik odblasków zapewnia dodatkowe oświetlenie z tych samych kierunkowych źródeł światła, które są używane w modelu oświetlenia Lamberta, ale jego udział w kolorze końcowym jest przetwarzany inaczej. Wyróżnianie odblasków ma wpływ na każdą powierzchnię w scenie, na podstawie relacji między kierunkiem widoku, kierunku źródeł światła i orientacji powierzchni. Jest to iloczyn koloru odblasków, mocy odblasków i orientacji powierzchni oraz kolor, intensywność i kierunek źródeł światła. Powierzchnie odzwierciedlające Źródło światła bezpośrednio w przeglądarce otrzymują maksymalny udział odblasków i powierzchnie, które odzwierciedlają Źródło światła od przeglądarki, nie otrzymują żadnego wkładu. W modelu oświetlenia podstawowego Phong, co najmniej jeden składnik odblasków jest połączony, aby określić kolor i intensywność wyróżniania odblasków dla każdego punktu w obiekcie, a następnie są dodawane do wyniku modelu oświetlenia Lamberta w celu uzyskania końcowego koloru piksela. .
 
-Aby uzyskać więcej informacji na temat modelu oświetlenia Lamberta, [zobacz How to: Utwórz podstawowe cieniowanie](../designers/how-to-create-a-basic-lambert-shader.md)Lamberta.
+Aby uzyskać więcej informacji na temat modelu oświetlenia Lamberta, zobacz [How to: Create a Basic Lamberta Shader](../designers/how-to-create-a-basic-lambert-shader.md).
 
 Przed rozpoczęciem upewnij się, że wyświetlane jest okno **Właściwości** i **Przybornik** .
 
-1. Utwórz moduł cieniujący Lamberta, zgodnie z opisem [w temacie How to: Utwórz podstawowe cieniowanie](../designers/how-to-create-a-basic-lambert-shader.md)Lamberta.
+1. Utwórz moduł cieniujący Lamberta, zgodnie z opisem w [instrukcje: Tworzenie podstawowego cieniowania Lamberta](../designers/how-to-create-a-basic-lambert-shader.md).
 
 2. Odłącz węzeł **Lamberta** od końcowego węzła **koloru** . Wybierz Terminal **RGB** węzła **Lamberta** , a następnie wybierz polecenie **Przerwij linki**. Powoduje to powolne miejsce dla węzła, który jest dodawany w następnym kroku.
 
@@ -57,12 +57,12 @@ Na poniższej ilustracji przedstawiono cieniowanie opisane w tym dokumencie, sto
 
 ![Oświetlenie podstawowego Phong zastosowane do modelu](../designers/media/digit-lighting-model.png)
 
-Aby uzyskać więcej informacji o sposobie zastosowania cieniowania do modelu 3D, zobacz [How to: Zastosuj cieniowanie do modelu](../designers/how-to-apply-a-shader-to-a-3-d-model.md)3W.
+Aby uzyskać więcej informacji na temat sposobu stosowania cieniowania do modelu 3D, zobacz [How to: Apply a Shader to a model 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Instrukcje: Stosowanie cieniowania do modelu 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
-- [Instrukcje: Eksportowanie programu do cieniowania](../designers/how-to-export-a-shader.md)
-- [Instrukcje: Tworzenie podstawowego cieniowania Lamberta](../designers/how-to-create-a-basic-lambert-shader.md)
+- [Instrukcje: stosowanie cieniowania do modelu 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Instrukcje: eksportowanie cieniowania](../designers/how-to-export-a-shader.md)
+- [Instrukcje: tworzenie podstawowego cieniowania Lamberta](../designers/how-to-create-a-basic-lambert-shader.md)
 - [Projektant cieniowania](../designers/shader-designer.md)
 - [Węzły projektanta cieniowania](../designers/shader-designer-nodes.md)

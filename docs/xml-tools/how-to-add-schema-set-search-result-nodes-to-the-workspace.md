@@ -3,17 +3,17 @@ title: Dodawanie węzłów wyników wyszukiwania zestawu schematu XML do obszaru
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ff33b3cc-4db9-4b4e-9378-b45ed5999b18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2718c08b36ff9ef3ca8ae06f7d511cacb8fa73c
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: be024ac139d2b420f56b14158afd33ae5b7e917d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923656"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72646017"
 ---
 # <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>Instrukcje: Dodawanie węzłów wyników wyszukiwania zestawu schematu do obszaru roboczego
 
@@ -26,7 +26,7 @@ W tym przykładzie zastosowano przykładowy [schemat zamówienia zakupu](../xml-
 
 ## <a name="to-add-schema-set-result-nodes"></a>Aby dodać węzły wynikowe zestawu schematów
 
-1. Wykonaj kroki opisane w [temacie How to: Tworzenie i edytowanie pliku](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)schematu XSD.
+1. Wykonaj kroki opisane w temacie [How to: Create i Edit a XSD File Schema](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
 2. Wpisz "purchaseOrder" w polu tekstowym wyszukiwania na pasku narzędzi [Eksploratora XML](../xml-tools/xml-schema-explorer.md) i kliknij przycisk wyszukiwania.
 
@@ -38,4 +38,4 @@ W tym przykładzie zastosowano przykładowy [schemat zamówienia zakupu](../xml-
 
      ![Wynik wyszukiwania Eksploratora schematu XML](../xml-tools/media/schemaexplorersearchresult.gif)
 
-     Węzeł i węzeł są wyświetlane obok siebie na powierzchni projektowej [widoku wykresu.](../xml-tools/graph-view.md) `purchaseOrder` `PurchaseOrderType` Ponieważ dwa węzły są powiązane ( `purchaseOrder` element jest `PurchaseOrderType` typu), zostanie narysowana strzałka między nimi.
+     Węzeł `purchaseOrder` i węzeł `PurchaseOrderType` są wyświetlane obok siebie na powierzchni projektowej [widoku wykresu](../xml-tools/graph-view.md). Ze względu na to, że dwa węzły są powiązane (`purchaseOrder` element jest typu `PurchaseOrderType`), zostanie narysowana strzałka między nimi.

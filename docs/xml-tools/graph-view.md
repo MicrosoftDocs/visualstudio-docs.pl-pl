@@ -3,17 +3,17 @@ title: Widok wykresu projektanta schematu XML
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 5881afde-3f24-4eb9-bff8-6cb3fc8aade7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a9ef512108ae31617257becf702c2b820c0ab85
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: b19f8f64bc4fe63d111f4d5c61e96d6fff88a14b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918639"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72646049"
 ---
 # <a name="graph-view"></a>Widok wykresu
 
@@ -101,22 +101,22 @@ Następujące przyciski paska narzędzi XSD są włączone, gdy widok wykresu je
 
 |Opcja|Opis|
 |-|-----------------|
-|**Pokaż widok startowy**|Przełącza do [widoku Start](../xml-tools/start-view.md). Dostęp do tego widoku można uzyskać za pomocą skrótu klawiaturowego: **Ctrl**+**1**.|
-|**Pokaż widok modelu zawartości**|Przełącza do [widoku modelu zawartości](../xml-tools/content-model-view.md). Dostęp do tego widoku można uzyskać za pomocą skrótu klawiaturowego:Ctrl+**2**.|
-|**Pokaż widok wykresu**|Przełącza do [widoku wykresu](../xml-tools/graph-view.md). Dostęp do tego widoku można uzyskać za pomocą skrótu klawiaturowego:Ctrl+**3**.|
+|**Pokaż widok startowy**|Przełącza do [widoku Start](../xml-tools/start-view.md). Dostęp do tego widoku można uzyskać za pomocą skrótu klawiaturowego: **Ctrl** +**1**.|
+|**Pokaż widok modelu zawartości**|Przełącza do [widoku modelu zawartości](../xml-tools/content-model-view.md). Dostęp do tego widoku można uzyskać za pomocą skrótu klawiaturowego: **Ctrl** +**2**.|
+|**Pokaż widok wykresu**|Przełącza do [widoku wykresu](../xml-tools/graph-view.md). Dostęp do tego widoku można uzyskać za pomocą skrótu klawiaturowego: **Ctrl** +**3**.|
 |**Wyczyść obszar roboczy**|Czyści obszar roboczy i powierzchnię projektu.|
 |**Usuń z obszaru roboczego**|Usuwa wybrane węzły z obszaru roboczego i powierzchni projektowej.|
 |**Usuń wszystko oprócz zaznaczenia z obszaru roboczego**|Usuwa węzły, które nie są wybrane z obszaru roboczego i powierzchni projektowej. Ta opcja jest włączona w widoku modelu zawartości i w widoku wykresu.|
-|**Od lewej do prawej**|Zmienia układ w widoku wykresu na hierarchiczną reprezentację węzłów od lewej do prawej. Dostęp do tej opcji można uzyskać za pomocą skrótu klawiaturowego:Alt+**Strzałka w prawo**.|
-|**Od prawej do lewej**|Zmienia układ w widoku wykresu na hierarchiczną reprezentację węzłów w kierunku od prawej do lewej. Dostęp do tej opcji można uzyskać za pomocą skrótu klawiaturowego:Alt+**Strzałka w lewo**.|
-|**Od góry do dołu**|Zmienia układ w widoku wykresu na górną, hierarchiczną reprezentację węzłów. Dostęp do tej opcji można uzyskać za pomocą skrótu klawiaturowego:Alt+**Strzałka w dół**.|
-|**Od dołu do góry**|Zmienia układ w widoku wykresu na hierarchiczną reprezentację węzłów w dół do góry. Dostęp do tej opcji można uzyskać za pomocą skrótu klawiaturowego:Alt+**Strzałka w górę**.|
+|**Od lewej do prawej**|Zmienia układ w widoku wykresu na hierarchiczną reprezentację węzłów od lewej do prawej. Dostęp do tej opcji można uzyskać za pomocą skrótu klawiaturowego: **Alt** +**Strzałka w prawo**.|
+|**Od prawej do lewej**|Zmienia układ w widoku wykresu na hierarchiczną reprezentację węzłów w kierunku od prawej do lewej. Dostęp do tej opcji można uzyskać za pomocą skrótu klawiaturowego: **Alt** +**Strzałka w lewo**.|
+|**Od góry do dołu**|Zmienia układ w widoku wykresu na górną, hierarchiczną reprezentację węzłów. Dostęp do tej opcji można uzyskać za pomocą skrótu klawiaturowego: **Alt** +**strzałkę w dół**.|
+|**Od dołu do góry**|Zmienia układ w widoku wykresu na hierarchiczną reprezentację węzłów w dół do góry. Dostęp do tej opcji można uzyskać za pomocą skrótu klawiaturowego: **Alt** +**Strzałka w górę**.|
 
 ## <a name="panscroll"></a>Przesuń/Przewiń
 
 Powierzchnię projektu można przesuwać przy użyciu pasków przewijania lub przez przytrzymanie klawisza **Ctrl** podczas klikania i przeciągania myszy. Po przeniesieniu powierzchni projektowej przy użyciu funkcji kliknij i przeciągnij kursor zmieni się na cztery przecinające się strzałki, wskazując cztery kierunki.
 
-## <a name="undoredo"></a>Cofnij/Ponów.
+## <a name="undoredo"></a>Cofnij/ponów
 
 Funkcja Cofnij/ponów jest włączona w widoku wykresu dla następujących akcji:
 
@@ -132,7 +132,7 @@ Powiększenie jest dostępne w prawym dolnym rogu widoku wykresu.
 
 Powiększenie można kontrolować w następujący sposób:
 
-- Trzymając wciśnięty klawisz **Ctrl** i obracając kółkiem myszy, gdy wskaźnik myszy znajduje się nad powierzchnią widoku wykresu.
+- Trzymając **wciśnięty klawisz Ctrl** i obracając kółkiem myszy, gdy wskaźnik myszy znajduje się nad powierzchnią widoku wykresu.
 
 - Za pomocą kontrolki suwak. Suwak pokazuje bieżący poziom powiększenia.
 

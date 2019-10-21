@@ -1,29 +1,29 @@
 ---
-title: Projektant przepływu pracy — Projektanci działań Migration
+title: Projektanci działań Projektant przepływu pracy migracji
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 7598e869-1da1-4721-b4bf-6cbe402be1a2
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a7b284b370f248ed2497ece835036679af2e5a8
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: da8459db53a1ecb9a297e2a4a218791281806313
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747021"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650126"
 ---
 # <a name="migration-activity-designers"></a>Projektanci działań Migration
 
-Projektanci działań Migration są używane do wywoływania 3.0/3.5 działań przepływu pracy z przepływu pracy, który jest przeznaczony dla .NET Framework 4 lub nowszy.
+Projektanci działań migracji są używani do wywoływania działań przepływu pracy 3.0/3.5 z przepływu pracy, który jest przeznaczony dla .NET Framework 4 lub nowszych.
 
-Tematy zawarte w tej sekcji zapewnić wskazówki dotyczące sposobu używania projektanta przepływów pracy Projektanci działań.
+Tematy zawarte w tej sekcji zawierają wskazówki dotyczące korzystania z projektantów działań Projektant przepływu pracy.
 
 ## <a name="related-sections"></a>Sekcje pokrewne
 
-Dla innych typów Projektanci działań zobacz następujące tematy:
+W przypadku innych typów projektantów działań zapoznaj się z następującymi tematami:
 
 - [Przepływ sterowania](../workflow-designer/control-flow-activity-designers.md)
 

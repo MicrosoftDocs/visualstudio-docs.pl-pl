@@ -2,42 +2,42 @@
 title: Dyrektywa T4 Output
 ms.date: 11/04/2016
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfbe77f5b6e2bbda6a51d392c4dd16b079100e81
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1da8ec010e878ff80a9f46748993705b87193d99
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62856248"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72606227"
 ---
 # <a name="t4-output-directive"></a>Dyrektywa T4 Output
 
-W szablonach tekstowych programu Visual Studio `output` dyrektywa jest używany do definiowania rozszerzenia nazwy pliku i kodowanie pliku przekształcone.
+W szablonach tekstu programu Visual Studio dyrektywa `output` jest używana do definiowania rozszerzenia nazwy pliku i kodowania przekształconego pliku.
 
- Na przykład, jeśli projekt programu Visual Studio zawiera plik szablonu o nazwie **MyTemplate.tt** zawierający poniższe dyrektywy:
+ Na przykład, jeśli projekt programu Visual Studio zawiera plik szablonu o nazwie **MyTemplate.tt** , który zawiera następującą dyrektywę:
 
  `<#@output extension=".cs"#>`
 
- następnie program Visual Studio wygeneruje plik o nazwie **MyTemplate.cs**
+ Następnie program Visual Studio wygeneruje plik o nazwie **MyTemplate.cs**
 
- `output` Dyrektywy nie jest wymagany w szablon tekstowy (wstępnie przetworzony) czasu wykonywania. Zamiast tego aplikacja uzyskuje wygenerowany ciąg przez wywołanie metody `TextTransform()`. Aby uzyskać więcej informacji, zobacz [Generowanie tekstu czasu wykonywania przy użyciu szablonów tekstowych T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ Dyrektywa `output` nie jest wymagana w szablonie tekstowym czasu wykonywania (wstępnie przetworzonym). Zamiast tego aplikacja uzyskuje wygenerowany ciąg, wywołując `TextTransform()`. Aby uzyskać więcej informacji, zobacz [Generowanie tekstu w czasie wykonywania przy użyciu szablonów tekstowych T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
-## <a name="using-the-output-directive"></a>Za pomocą dane wyjściowe — dyrektywa
+## <a name="using-the-output-directive"></a>Używanie dyrektywy Output
 
 ```
 <#@ output extension=".fileNameExtension" [encoding="encoding"] #>
 ```
 
- Powinna istnieć nie więcej niż jednego `output` dyrektywy w każdym szablonie tekstu.
+ Każdy szablon tekstowy nie powinien zawierać więcej niż jednej dyrektywy `output`.
 
 ## <a name="extension-attribute"></a>Atrybut rozszerzenia
- Określa rozszerzenie nazwy pliku wyjściowego pliku wygenerowanego tekstu.
+ Określa rozszerzenie nazwy pliku dla wygenerowanego pliku wyjściowego tekstu.
 
- Wartość domyślna to **.cs**
+ Wartość domyślna to **. cs**
 
  Przykłady: `<#@ output extension=".txt" #>`
 
@@ -47,16 +47,16 @@ W szablonach tekstowych programu Visual Studio `output` dyrektywa jest używany 
 
  `<#@ output extension=".vb" #>`
 
- Dopuszczalne wartości: Wszelkie nieprawidłowe rozszerzenie nazwy pliku.
+ Akceptowalne wartości: Dowolne prawidłowe rozszerzenie nazwy pliku.
 
-## <a name="encoding-attribute"></a>Atrybut kodowania
- Określa kodowanie do użycia podczas generowania pliku wyjściowego. Na przykład:
+## <a name="encoding-attribute"></a>atrybut kodowania
+ Określa kodowanie, które ma być używane podczas generowania pliku wyjściowego. Na przykład:
 
  `<#@ output encoding="utf-8"#>`
 
  Wartość domyślna to kodowanie używane przez plik szablonu tekstu.
 
- Dopuszczalne wartości: `us-ascii`
+ Akceptowalne wartości: `us-ascii`
 
  `utf-16BE`
 
@@ -68,6 +68,6 @@ W szablonach tekstowych programu Visual Studio `output` dyrektywa jest używany 
 
  `utf-32`
 
- `0` (Ustawienie domyślne systemu)
+ `0` (system domyślny)
 
- Ogólnie rzecz biorąc, można użyć ciągu nazwasieciweb lub numer strony kodowej dowolnego kodowania zwrócony przez <xref:System.Text.Encoding.GetEncodings%2A?displayProperty=fullName>.
+ Ogólnie rzecz biorąc, można użyć ciągu WebName lub numeru strony kodowej dowolnego kodowania zwracanego przez <xref:System.Text.Encoding.GetEncodings%2A?displayProperty=fullName>.

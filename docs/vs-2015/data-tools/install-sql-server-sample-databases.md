@@ -1,65 +1,65 @@
 ---
-title: Instalowanie programu SQL Server przykładowych baz danych | Dokumentacja firmy Microsoft
+title: Instalowanie SQL Server przykładowych baz danych | Microsoft Docs
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
 ms.date: 11/15/2016
 ms.topic: conceptual
 ms.assetid: 38840167-c3f8-4cb3-8d15-8af04a0a20a1
 caps.latest.revision: 14
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 056e5d1fad258d063e30cfd97e85529ff3a0c9bd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3991d3b741162b4b1993e5359ad427c17f00321a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68160184"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651528"
 ---
 # <a name="install-sql-server-sample-databases"></a>Instalowanie przykładowych baz danych programu SQL Server
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Przykładowe bazy danych są przydatne do eksperymentowania z zapytań SQL i LINQ, powiązań danych, modelowania programu Entity Framework i tak dalej.  Każdy produkt bazy danych ma swój własny przykładowych baz danych. Są dwa popularne przykładowej bazy danych SQL Server, Northwind i AdventureWorks.  
-  
- **AdventureWorks** jest bieżącym przykładowej bazy danych udostępniane dla produktów programu SQL Server. Możesz ją pobrać jako plik mdf z [AdventureWorks strony w witrynie Codeplex](http://msftdbprodsamples.codeplex.com/). Brak dostępnych regularne i uproszczone wersje (Litwa), bazy danych w tym miejscu. W przypadku większości scenariuszy wersji LT jest preferowane, ponieważ jest mniej skomplikowany.  
-  
- **Northwind** jest stosunkowo prosta bazy danych SQL Server, który został użyty przez wiele lat. Możesz ją pobrać jako plik z rozszerzeniem bak [strona bazy danych Northwind w witrynie CodePlex](https://northwinddatabase.codeplex.com/). Aby uniknąć problemów z uprawnieniami, Rozpakuj plik do nowego folderu, który nie znajduje się w folderze użytkownika.  
-  
-#### <a name="to-restore-a-database-from-a-bak-file-in-visual-studio"></a>Aby przywrócić bazę danych z pliku bak, w programie Visual Studio  
-  
-1. Podczas wykonywania kopii zapasowej bazy danych programu Microsoft SQL Server, wynik jest plik bak. Aby .bak plików można używać ponownie jako plik bazy danych, musi być *przywrócić*. W menu głównym wybierz **widoku** > **Eksplorator obiektów SQL Server**. Jeśli nie widzisz, konieczne może go zainstalować. Przejdź do **Panelu sterowania** > **programy i funkcje**, Znajdź program Microsoft Visual Studio 2015 i kliknij przycisk **zmiany** przycisku. Gdy w oknie Instalatora zostanie wyświetlona lista zainstalowanych składników, wybierz pozycję **Eksplorator obiektów SQL Server** pole wyboru, a następnie kontynuuj instalację.  
-  
-2. W Eksploratorze obiektów programu SQL Server, kliknij prawym przyciskiem myszy dowolnego aparatu bazy danych programu SQL Server (na przykład localdb), a następnie wybierz pozycję**nowe zapytanie**.  
-  
-     ![SQL Server Object Explorer nowe zapytanie](../data-tools/media/raddata-sql-server-object-explorer-new-query.png "raddata SQL Server Object Explorer nowe zapytanie")  
-  
-3. Najpierw należy logicznej nazwy plików dziennika i bazy danych wewnątrz pliku bak. Aby ją pobrać, wpisz to zapytanie do edytora zapytań SQL, a następnie wybierz zielony **Uruchom** znajdujący się u góry okna. Jeśli to konieczne wskazać plik bak, zmodyfikuj ścieżkę pliku.  
-  
-    ```  
-    RESTORE FILELISTONLY  
-    FROM DISK = 'C:\nw\northwind.bak'  
-    GO  
-    ```  
-  
-     Zanotuj nazwy logiczne, które są wyświetlane w oknie wyników.  Dla bazy danych Northwind dwie nazwy logicznej są Northwind i Northwind_log.  
-  
-4. Teraz można uruchomić tego zapytania, aby utworzyć bazę danych. Zastąp swoje własne ścieżki źródłowe i docelowe, nazwy logicznej bazy danych i nazwy pliku fizycznego Northwind zgodnie z potrzebami. Zachowaj .mdf i .ldf rozszerzeń plików.  
-  
-    ```  
-    RESTORE DATABASE Northwind  
-    FROM DISK = 'c:\nw\northwind.bak'  
-    WITH MOVE 'Northwind' TO 'c:\nw\northwind.mdf',  
-    MOVE 'Northwind_log' TO 'c:\nw\northwind.ldf'  
-    ```  
-  
-5. W Eksploratorze obiektów programu SQL Server, kliknij prawym przyciskiem myszy **baz danych** węzłem, a powinien zostać wyświetlony węzeł bazy danych Northwind. Jeśli nie, kliknij prawym przyciskiem myszy na baz danych i wybierz **Dodaj nową bazę danych**. Wprowadź nazwę i lokalizację pliku .mdf, który został utworzony.  
-  
-6. Baza danych jest teraz gotowa do użycia jako źródło danych w programie Visual Studio.  
-  
-#### <a name="to-restore-a-database-from-a-bak-file-in-sql-server-management-studio"></a>Aby przywrócić bazę danych z pliku bak w programie SQL Server Management Studio  
-  
-1. SQL Server Management Studio można pobrać z witryny pobierania.  
-  
-2. W programie SSMS **Eksplorator obiektów** okna, kliknij prawym przyciskiem myszy **baz danych** węzeł**Restore Database**i podać lokalizację pliku bak.  
-  
-     ![Przywracanie bazy danych programu SSMS](../data-tools/media/raddata-ssms-restore-database.png "raddata Przywracanie bazy danych programu SSMS")
+Przykładowe bazy danych są przydatne do eksperymentowania z kwerendami SQL i LINQ, danymi do Entity Framework modelowania i tak dalej.  Każdy produkt bazy danych ma własne przykładowe bazy danych. Northwind i AdventureWorks to dwie popularne SQL Server przykładowe bazy danych.
+
+ **AdventureWorks** to bieżąca Przykładowa baza danych udostępniona dla SQL Server produktów. Możesz pobrać go jako plik. mdf ze [strony AdventureWorks w witrynie CodePlex](http://msftdbprodsamples.codeplex.com/). W tym miejscu są dostępne regularne i uproszczone (LT) wersje bazy danych. W większości scenariuszy preferowana jest wersja LT, ponieważ jest ona mniej złożona.
+
+ **Northwind** to stosunkowo prosta baza danych SQL Server, która była używana przez wiele lat. Możesz pobrać go jako plik. bak ze [strony bazy danych Northwind na CodePlex](https://northwinddatabase.codeplex.com/). Aby uniknąć problemów z uprawnieniami, rozpakuj plik do nowego folderu, który nie znajduje się w folderze użytkownika.
+
+#### <a name="to-restore-a-database-from-a-bak-file-in-visual-studio"></a>Aby przywrócić bazę danych z pliku. bak w programie Visual Studio
+
+1. W przypadku tworzenia kopii zapasowej bazy danych Microsoft SQL Server wynik jest plikiem. bak. Aby plik. bak można było użyć ponownie jako plik bazy danych, należy go *przywrócić*. W menu głównym wybierz pozycję **wyświetl**  > **Eksplorator obiektów SQL Server**. Jeśli go nie widzisz, może być konieczne jego zainstalowanie. Przejdź do **Panelu sterowania** ,  > **programy i funkcje**, Znajdź Microsoft Visual Studio 2015, a następnie kliknij przycisk **Zmień** . Gdy lista zainstalowanych składników zostanie wyświetlona w oknie instalatora, zaznacz pole wyboru **Eksplorator obiektów SQL Server** a następnie kontynuuj instalację.
+
+2. W Eksplorator obiektów SQL Server kliknij prawym przyciskiem myszy dowolny aparat SQL Server Database (na przykład LocalDB), a następnie wybierz pozycję**nowe zapytanie**.
+
+     ![Eksplorator obiektów SQL Server nowe zapytanie](../data-tools/media/raddata-sql-server-object-explorer-new-query.png "raddata Eksplorator obiektów SQL Server nowe zapytanie")
+
+3. Najpierw potrzebne są nazwy logiczne bazy danych i plików dziennika w pliku bak. Aby to zrobić, należy wprowadzić to zapytanie do edytora zapytań SQL, a następnie wybrać zielony przycisk **uruchamiania** w górnej części okna. Zmodyfikuj ścieżkę pliku, jeśli jest to konieczne, aby wskazać plik. bak.
+
+    ```
+    RESTORE FILELISTONLY
+    FROM DISK = 'C:\nw\northwind.bak'
+    GO
+    ```
+
+     Zapisz nazwy logiczne, które pojawiają się w oknie wyników.  W przypadku bazy danych Northwind dwie nazwy logiczne to Northwind i Northwind_log.
+
+4. Teraz uruchom to zapytanie, aby utworzyć bazę danych. Zastąp własne ścieżki źródłowe i docelowe, logiczne nazwy baz danych i fizyczne nazwy plików dla Northwind, zgodnie z potrzebami. Zachowaj rozszerzenia. mdf i. ldf.
+
+    ```
+    RESTORE DATABASE Northwind
+    FROM DISK = 'c:\nw\northwind.bak'
+    WITH MOVE 'Northwind' TO 'c:\nw\northwind.mdf',
+    MOVE 'Northwind_log' TO 'c:\nw\northwind.ldf'
+    ```
+
+5. W Eksplorator obiektów SQL Server kliknij prawym przyciskiem myszy węzeł bazy **danych** i zobacz węzeł bazy danych Northwind. Jeśli nie, kliknij prawym przyciskiem myszy pozycję bazy danych i wybierz polecenie **Dodaj nową bazę danych**. Wprowadź nazwę i lokalizację pliku. mdf, który został właśnie utworzony.
+
+6. Baza danych jest teraz gotowa do użycia jako źródło danych w programie Visual Studio.
+
+#### <a name="to-restore-a-database-from-a-bak-file-in-sql-server-management-studio"></a>Aby przywrócić bazę danych z pliku. bak w SQL Server Management Studio
+
+1. Pobierz SQL Server Management Studio z witryny pobierania.
+
+2. W oknie SSMS **Eksplorator obiektów** kliknij prawym przyciskiem myszy węzeł **bazy danych** , wybierz polecenie**Przywróć bazę danych**i podaj lokalizację pliku. bak.
+
+     ![Przywracanie bazy danych programu SSMS](../data-tools/media/raddata-ssms-restore-database.png "raddata. Przywróć bazę danych programu SSMS")

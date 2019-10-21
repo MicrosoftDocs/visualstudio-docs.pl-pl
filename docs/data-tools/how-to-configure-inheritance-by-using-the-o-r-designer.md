@@ -1,61 +1,61 @@
 ---
-title: 'Instrukcje: Skonfigurować dziedziczenie za pomocą projektanta O R'
+title: 'Instrukcje: Konfigurowanie dziedziczenia przy użyciu projektanta O-R'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e594af12-e777-434a-bc08-7dd2dac84cdc
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8927e6140792c12f42f1822afd0e715881384f1c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: ddd3d8b25c6e215302af8e0b40b5a971f5f4aa39
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63402801"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72641916"
 ---
-# <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Instrukcje: Konfigurowanie dziedziczenia za pomocą narzędzia Object Relational Designer
-**Object Relational Designer** (**O/R Designer**) obsługuje dziedziczenia pojedynczej tabeli, co jest często stosowana w systemach relacyjnych. Dziedziczenie pojedynczej tabeli Brak tabeli pojedynczej bazy danych, która zawiera pola zarówno informacje nadrzędnego, jak i podrzędnych. Z danymi relacyjnymi kolumna dyskryminatora zawiera wartość, która określa, która klasa dowolnego rekordu, o których należy.
+# <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Instrukcje: Konfigurowanie dziedziczenia przy użyciu projektanta O/R
+**Object Relational Designer** (**Projektant O/R**) wspiera koncepcję dziedziczenia pojedynczej tabeli, ponieważ jest ona często zaimplementowana w systemach relacyjnych. W przypadku dziedziczenia z jedną tabelą istnieje pojedyncza tabela bazy danych zawierająca pola dla informacji nadrzędnych i podrzędnych. W przypadku danych relacyjnych kolumna rozróżniacza zawiera wartość określającą, do której klasy należy każdy rekord.
 
-Na przykład, rozważmy `Persons` tabelę, która zawiera wszystkich stosowanych przez firmę. Niektórzy użytkownicy są pracownicy i niektóre osoby menedżerów. `Persons` Tabela zawiera kolumnę o nazwie `EmployeeType` , ma wartość 1 dla menedżerów i wartość 2 dla pracowników; jest to kolumna dyskryminatora. W tym scenariuszu możesz utworzyć podklasę pracowników i wypełnić klasy za pomocą tylko te rekordy, które mają `EmployeeType` wartość 2. Z każdą z klas, można również usunąć kolumny, które nie mają zastosowania.
+Rozważmy na przykład tabelę `Persons`, która zawiera wszystkie osoby zaangażowane przez firmę. Niektóre osoby to pracownicy i niektórzy ludzie są kierownikami. Tabela `Persons` zawiera kolumnę o nazwie `EmployeeType`, która ma wartość 1 dla menedżerów i wartość 2 dla pracowników; jest to kolumna rozróżniacza. W tym scenariuszu można utworzyć podklasę pracowników i wypełnić klasę tylko rekordami mającymi `EmployeeType` wartość 2. Można również usunąć kolumny, które nie dotyczą poszczególnych klas.
 
-Tworzenie modelu obiektu, która korzysta z dziedziczenia (odpowiada relacyjnej bazie danych) może być nieco mylące. Poniższa procedura zawiera opis kroków wymaganych do konfigurowania dziedziczenia z **O/R Designer**. Następujące ogólne kroki bez odwołujące się do istniejącej tabeli i kolumn może być trudne, dlatego podano wskazówki, która korzysta z danych. Aby uzyskać szczegółowe informacje krok po kroku dotyczące konfigurowania dziedziczenie za pomocą **O/R Designer**, zobacz [instruktażu: Tworzenie zapytań LINQ do klas SQL za pomocą pojedynczej tabeli dziedziczenia (O/R Designer)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md).
+Tworzenie modelu obiektów, który używa dziedziczenia (i odpowiada danych relacyjnych) może być nieco mylące. Poniższa procedura zawiera opis czynności wymaganych do skonfigurowania dziedziczenia przy użyciu **projektanta o/R**. Następujące kroki ogólne nie odwołujące się do istniejącej tabeli i kolumn mogą być trudne, dlatego należy zapewnić Przewodnik korzystający z danych. Aby uzyskać szczegółowe instrukcje krok po kroku dotyczące konfigurowania dziedziczenia przy użyciu **projektanta o/r**, zobacz [Przewodnik: tworzenie klas LINQ to SQL za pomocą dziedziczenia z jedną tabelą (Projektant o/r)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md).
 
-## <a name="to-create-inherited-data-classes"></a>Do tworzenia klas danych dziedziczonych
+## <a name="to-create-inherited-data-classes"></a>Aby utworzyć dziedziczone klasy danych
 
-1. Otwórz **O/R Designer** , dodając **klasy LINQ do SQL** element do istniejących projektach Visual Basic lub C# projektu.
+1. Otwórz **projektanta o/R** przez dodanie elementu **LINQ to SQL klas** do istniejącego Visual Basic lub C# projektu.
 
-2. Przeciągnij tabelę, której chcesz użyć jako klasa bazowa na **O/R Designer**.
+2. Przeciągnij tabelę, która ma być używana jako klasa bazowa do **projektanta O/R**.
 
-3. Przeciągnij drugiej kopii tabeli do **O/R Designer** i zmień jego nazwę. Jest to klasa pochodna, lub podklasę.
+3. Przeciągnij drugą kopię tabeli do **projektanta o/R** i zmień jej nazwę. Jest to Klasa pochodna lub podklasa.
 
-4. Kliknij przycisk **dziedziczenia** w **Object Relational Designer** karcie **przybornika**, a następnie kliknij podklasy (tabela, nazwa została zmieniona) i połącz go z klasy bazowej.
-
-    > [!NOTE]
-    > Kliknij przycisk **dziedziczenia** pozycja **przybornika** i zwolnij przycisk myszy, kliknij drugą kopię klasy utworzonego w kroku 3, a następnie kliknij pierwszą klasą utworzony w kroku 2. Strzałka na linię dziedziczenia wskazuje na pierwszą klasą.
-
-5. W każdej klasy należy usunąć wszystkie właściwości obiektu, które nie mają być wyświetlane i które nie są używane do skojarzenia. Otrzymasz komunikat o błędzie, jeśli użytkownik podejmie próbę usunięcia właściwości obiektu, używany do skojarzenia: [Właściwość \<nazwa właściwości > nie można usunąć, ponieważ uczestniczy w skojarzeniu \<Nazwa skojarzenia >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md).
+4. Kliknij przycisk **dziedziczenie** na karcie **Object Relational Designer** **przybornika**, a następnie kliknij podklasę (nazwę tabeli) i połącz ją z klasą bazową.
 
     > [!NOTE]
-    > Ponieważ klasa pochodna dziedziczy właściwości zdefiniowane w swojej klasie bazowej, te same kolumny nie można zdefiniować w każdej klasie. (Kolumny są implementowane jako właściwości). Tworzenie kolumny w klasie pochodnej można włączyć, ustawiając modyfikator dziedziczenia we właściwości w klasie bazowej. Aby uzyskać więcej informacji, zobacz [podstawowe informacje o dziedziczeniu (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics).
+    > Kliknij element **dziedziczenia** w **przyborniku** i zwolnij przycisk myszy, kliknij drugą kopię klasy utworzonej w kroku 3, a następnie kliknij pierwszą klasę utworzoną w kroku 2. Strzałka w linii dziedziczenia wskazuje na pierwszą klasę.
 
-6. Zaznacz wiersz dziedziczenia w **O/R Designer**.
+5. W każdej klasie Usuń wszystkie właściwości obiektu, które nie mają być wyświetlane i które nie są używane do skojarzenia. Wystąpił błąd podczas próby usunięcia właściwości obiektu używanych dla skojarzeń: [nie można usunąć właściwości \<property nazwy >, ponieważ uczestniczy ona w > \<association nazw skojarzenia](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md).
 
-7. W **właściwości** oknie **właściwość rozróżniacza** na nazwę kolumny, która odróżnia rekordów w Twoich zajęciach.
+    > [!NOTE]
+    > Ponieważ Klasa pochodna dziedziczy właściwości zdefiniowane w klasie bazowej, w każdej klasie nie można definiować tych samych kolumn. (Kolumny są implementowane jako właściwości.) Można włączyć tworzenie kolumn w klasie pochodnej przez ustawienie modyfikatora dziedziczenia dla właściwości w klasie bazowej. Aby uzyskać więcej informacji, zobacz podstawowe informacje o [dziedziczeniu (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics).
 
-8. Ustaw **wartość dyskryminatora klasy pochodnej** właściwości do wartości w bazie danych, która określa rekord jako typ dziedziczone. (Jest to wartość, która jest przechowywana w kolumna dyskryminatora i służy do oznaczania odziedziczoną klasę).
+6. Wybierz linię dziedziczenia w **projektancie o/R**.
 
-9. Ustaw **wartości dyskryminator klasy bazowej** właściwości wartość, która określa rekord jako typu podstawowego. (Jest to wartość, która jest przechowywana w kolumna dyskryminatora i służy do oznaczania klasy podstawowej).
+7. W oknie **Właściwości** Ustaw **Właściwość rozróżniacz** na nazwę kolumny, która odróżnia rekordy w klasach.
 
-10. Opcjonalnie możesz również ustawić **domyślne dziedziczenie** właściwość, aby wskazać typ w hierarchii dziedziczenia, która jest używana podczas ładowania wierszy, które nie pasują zdefiniowany kod dziedziczenia. Innymi słowy, jeśli rekord ma wartość w jej kolumna dyskryminatora, odpowiada wartości w jednym **wartość dyskryminatora klasy pochodnej** lub **wartość dyskryminatora klasy podstawowej** właściwości, rekord Ładuje do typu wyznaczony jako **domyślne dziedziczenie**.
+8. Ustaw właściwość **wartość rozróżniacza klasy pochodnej** na wartość w bazie danych, która określa rekord jako typ dziedziczony. (Jest to wartość, która jest przechowywana w kolumnie rozróżniacz i służy do wyznaczania klasy dziedziczonej).
+
+9. Ustaw właściwość **wartość rozróżniacza klasy bazowej** na wartość, która określa rekord jako typ podstawowy. (Jest to wartość, która jest przechowywana w kolumnie rozróżniacz i jest używana do wyznaczania klasy bazowej).
+
+10. Opcjonalnie można również ustawić **domyślną właściwość dziedziczenia** , aby wyznaczyć typ w hierarchii dziedziczenia, który jest używany podczas ładowania wierszy, które nie pasują do żadnego zdefiniowanego kodu dziedziczenia. Innymi słowy, jeśli rekord ma wartość w swojej kolumnie rozróżniacza, która nie pasuje do wartości w **klasie pochodnej wartości rozróżniacza** lub właściwości **wartości rozróżniacza klasy bazowej** , rekord jest ładowany do typu wyznaczonego jako  **Domyślne dziedziczenie**.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Narzędzi LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [Przewodnik: Tworzenie zapytań LINQ do klas SQL (Projektant O-R)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
+- [Narzędzia LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Przewodnik: tworzenie klas LINQ to SQL (Projektant O-R)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [Uzyskiwanie dostępu do danych w programie Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
-- [Przewodnik: Tworzenie zapytań LINQ do klas SQL za pomocą pojedynczej tabeli dziedziczenia (O/R Designer)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)
+- [Przewodnik: tworzenie klas LINQ to SQL przy użyciu dziedziczenia pojedynczej tabeli (Projektant O/R)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)
 - [Podstawowe informacje o dziedziczeniu (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)
 - [Dziedziczenie](/dotnet/csharp/programming-guide/classes-and-structs/inheritance)

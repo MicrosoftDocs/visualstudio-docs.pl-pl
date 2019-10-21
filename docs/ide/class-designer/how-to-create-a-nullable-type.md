@@ -1,68 +1,68 @@
 ---
-title: 'Instrukcje: Tworzenie typu Zerowalnego (Projektant klas)'
+title: 'Porady: tworzenie typu zerowalnego (Projektant klas)'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - nullable types, Class Designer
 - Class Designer [Visual Studio], nullable types
 ms.assetid: 84673a89-3f6d-4668-919e-1c0f56182fe5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0212f7ef1c5b506ce7a1efbde60e7c46a424bfa3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 671b2230daafbbdf92edda2ba1a671b688723796
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975521"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647856"
 ---
-# <a name="how-to-create-a-nullable-type-in-class-designer"></a>Instrukcje: Tworzenie typu dopuszczającego wartość null w Projektancie klas
+# <a name="how-to-create-a-nullable-type-in-class-designer"></a>Instrukcje: Tworzenie typu dopuszczającego wartość null w Projektant klas
 
-Niektóre typy wartości nie zawsze masz (lub potrzebujesz) zdefiniowanej wartości. Jest to powszechną praktyką w bazach danych, gdzie niektóre pola nie można przypisać dowolną wartość. Na przykład może przypisać wartości null z polem bazy danych, aby oznaczają, że nie jeszcze nadano jej wartość.
+Niektóre typy wartości nie zawsze mają określoną wartość (lub potrzebują). Jest to typowa sytuacja w bazach danych, w których niektóre pola mogą nie mieć przypisanej żadnej wartości. Na przykład możesz przypisać wartość null do pola bazy danych, aby oznaczać, że nie została jeszcze przypisana wartość.
 
-A *typu dopuszczającego wartość null* jest typem wartości, które można rozszerzyć, aby przyspieszyć typowy zakres wartości dla tego typu, a także wartość null. Na przykład dopuszczający wartości null z `Int32`, są również oznaczane jako dopuszczającego wartość null\<Int32 > można przypisać dowolną wartość od -2147483648 do 2147483647 i może ona zostać przypisana wartość null. Nullable\<bool > można przypisać wartości `True`, `False`, lub wartość null (Brak wartości wszystkie).
+*Typ dopuszczający wartość null* jest typem wartości, który można rozciągnąć, tak aby miał typowy zakres wartości dla tego typu, a także wartość null. Na przykład wartość null dla `Int32`, również oznaczona jako wartość null \<Int32 >, może mieć przypisanych wartości od-2147483648 do 2147483647 lub może być przypisana wartość null. > @No__t_0bool dopuszczające wartość null można przypisać do wartości `True`, `False` lub null (bez wartości).
 
-Typy dopuszczające wartości null są wystąpieniami <xref:System.Nullable%601> struktury. Każde wystąpienie typu dopuszczającego wartość null, ma dwa publiczne właściwości tylko do odczytu, `HasValue` i `Value`:
+Typy dopuszczające wartości null są wystąpieniami struktury <xref:System.Nullable%601>. Każde wystąpienie typu dopuszczającego wartość null ma dwie publiczne właściwości tylko do odczytu, `HasValue` i `Value`:
 
-- `HasValue` Typ jest `bool` i wskazuje, czy zmienna zawiera wartość zdefiniowana. `True` oznacza, że zmienna zawiera wartość inną niż null. Możesz sprawdzić wartości zdefiniowanej przy użyciu instrukcji takich jak `if (x.HasValue)` lub `if (y != null)`.
+- `HasValue` jest typu `bool` i wskazuje, czy zmienna zawiera zdefiniowaną wartość. `True` oznacza, że zmienna zawiera wartość różną od null. Można testować pod kątem zdefiniowanej wartości przy użyciu instrukcji, takiej jak `if (x.HasValue)` lub `if (y != null)`.
 
-- `Value` jest taki sam typ co typ podstawowy. Jeśli `HasValue` jest `True`, `Value` zawiera odpowiednią wartość. Jeśli `HasValue` jest `False`, uzyskiwania dostępu do `Value` spowoduje zgłoszenie wyjątku dotyczącego nieprawidłowej operacji.
+- `Value` jest tego samego typu co typ podstawowy. Jeśli `HasValue` jest `True`, `Value` zawiera wartość znaczącą. Jeśli `HasValue` jest `False`, uzyskanie dostępu do `Value` spowoduje zgłoszenie nieprawidłowego wyjątku operacji.
 
-Domyślnie, kiedy Deklarujesz zmienną typu dopuszczającego wartość null, go nie ma zdefiniowanej wartości (`HasValue` jest `False`), inne niż domyślna wartość typu wartości podstawowej.
+Domyślnie podczas deklarowania zmiennej jako typu dopuszczającego wartość null nie ma zdefiniowanej wartości (`HasValue` jest `False`), innej niż domyślna wartość jego bazowego typu wartości.
 
-Projektant klas Wyświetla typ dopuszczający wartość null, tak samo, jak wyświetla jego typ podstawowy.
+Projektant klas wyświetla typ dopuszczający wartość null, tak jak wyświetla jego typ podstawowy.
 
-Aby uzyskać więcej informacji na temat typów dopuszczających wartości zerowe w języku C#, zobacz [typów dopuszczających wartości zerowe](/dotnet/csharp/programming-guide/nullable-types/index). Aby uzyskać więcej informacji na temat typów dopuszczających wartości zerowe w języku Visual Basic, zobacz [typów wartości dopuszczających wartości zerowe](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types).
+Aby uzyskać więcej informacji na temat typów C#dopuszczających wartości null w, zobacz [Typy dopuszczające wartości null](/dotnet/csharp/programming-guide/nullable-types/index). Aby uzyskać więcej informacji na temat typów dopuszczających wartości null w Visual Basic, zobacz [dopuszczanie typów wartości null](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types).
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
-## <a name="to-add-a-nullable-type-by-using-the-class-designer"></a>Aby dodać typ dopuszczający wartość null, za pomocą projektanta klas
+## <a name="to-add-a-nullable-type-by-using-the-class-designer"></a>Aby dodać typ dopuszczający wartość null przy użyciu Projektant klas
 
-1. Na diagramie klasy należy rozwinąć istniejącej klasy, lub Utwórz nową klasę.
+1. Na diagramie klasy rozwiń istniejącą klasę lub Utwórz nową klasę.
 
-2. Aby dodać klasę do projektu, na **Diagram klas** menu, kliknij przycisk **Dodaj** > **Dodaj klasę**.
+2. Aby dodać klasę do projektu, w menu **Diagram klas** kliknij polecenie **Dodaj**  > **Dodaj klasę**.
 
-3. Aby rozwinąć kształt klasy na **Diagram klas** menu, kliknij przycisk **rozwiń**.
+3. Aby rozwinąć kształt klasy, w menu **Diagram klas** kliknij przycisk **Rozwiń**.
 
-4. Wybierz kształt klasy. Na **Diagram klas** menu, kliknij przycisk **Dodaj** > **pola**. Nowe pole o nazwie domyślnej **pola** pojawi się w kształt klasy, a także w **szczegóły klasy** okna.
+4. Wybierz kształt klasy. W menu **Diagram klas** kliknij**pole** **Dodaj**  > . Nowe pole, które ma **pole** nazwa domyślna, pojawi się w kształcie klasy, a także w oknie **Szczegóły klasy** .
 
-5. W **nazwa** kolumny **szczegóły klasy** okna (lub w klasie kształtu, sam), Zmień nazwę nowego pola do nazwy ważne i istotne.
+5. W kolumnie **Nazwa** okna **Szczegóły klasy** (lub samego kształtu klasy) Zmień nazwę nowego pola na prawidłową i zrozumiałą nazwę.
 
-6. W **typu** kolumny **szczegóły klasy** oknie zadeklarowana jako typ dopuszczający wartość null, określając następujące czynności:
+6. W kolumnie **Typ** okna **Szczegóły klasy** Zadeklaruj typ jako typ dopuszczający wartość null, określając następujące elementy:
 
-    - `int?` (Visual C#)
+    - `int?` (wizualizacja C#)
     - `Nullable(Of Integer)` (Visual Basic)
 
-## <a name="to-add-a-nullable-type-by-using-the-code-editor"></a>Aby dodać typ dopuszczający wartość null, za pomocą edytora kodu
+## <a name="to-add-a-nullable-type-by-using-the-code-editor"></a>Aby dodać typ dopuszczający wartość null przy użyciu edytora kodu
 
-1. Dodaj klasę do projektu. Wybierz węzeł projektu w **Eksploratora rozwiązań**, a następnie na **projektu** menu, kliknij przycisk **Dodaj klasę**.
+1. Dodaj klasę do projektu. Wybierz węzeł projektu w **Eksplorator rozwiązań**, a następnie w menu **projekt** kliknij polecenie **Dodaj klasę**.
 
-2. W pliku CS lub .vb dla nowej klasy należy dodać co najmniej jeden typ dopuszczający wartość null w nowej klasie do deklaracji klasy.
+2. W pliku CS lub VB dla nowej klasy Dodaj jeden lub więcej typów wartości null w nowej klasie do deklaracji klasy.
 
     ```csharp
     // Declare a nullable type in Visual C#:
@@ -79,16 +79,16 @@ Aby uzyskać więcej informacji na temat typów dopuszczających wartości zerow
     End Class
     ```
 
-3. W widoku klas przeciągnij nową ikonę klasy do powierzchni projektowej projektanta klas. Kształt klasy pojawia się na diagramie klasy.
+3. W Widok klasy Przeciągnij nową ikonę klasy do Projektant klas powierzchni projektowej. Kształt klasy zostanie wyświetlony na diagramie klas.
 
-4. Rozwiń szczegóły kształt klasy, a następnie przesuń wskaźnik myszy nad składowych klasy. Etykietka narzędzia zawiera deklarację każdego elementu członkowskiego.
+4. Rozwiń szczegóły kształtu klasy i przesuń wskaźnik myszy nad składowe klasy. W etykietce narzędzia zostanie wyświetlona deklaracja każdego elementu członkowskiego.
 
-5. Kliknij prawym przyciskiem myszy kształt klasy, a następnie kliknij przycisk **szczegóły klasy**. Można wyświetlać lub modyfikować właściwości nowego typu w **szczegóły klasy** okna.
+5. Kliknij prawym przyciskiem myszy kształt klasy, a następnie kliknij pozycję **Szczegóły klasy**. Właściwości nowego typu można wyświetlić lub zmodyfikować w oknie **Szczegóły klasy** .
 
 ## <a name="see-also"></a>Zobacz także
 
 - <xref:System.Nullable%601>
 - [Typy dopuszczające wartości null](/dotnet/csharp/programming-guide/nullable-types/index)
 - [Używanie typów dopuszczających wartości null](/dotnet/csharp/programming-guide/nullable-types/using-nullable-types)
-- [Instrukcje: Identyfikowanie typu dopuszczającego wartość null](/dotnet/csharp/programming-guide/nullable-types/how-to-identify-a-nullable-type)
+- [Instrukcje: identyfikowanie typu dopuszczającego wartość null](/dotnet/csharp/programming-guide/nullable-types/how-to-identify-a-nullable-type)
 - [Typy wartości dopuszczających wartości null](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types)

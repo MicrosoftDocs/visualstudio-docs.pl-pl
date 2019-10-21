@@ -3,22 +3,22 @@ title: Nie można pobrać informacji o schemacie dla obiektu bazy danych
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: a1c8f833-c918-4a86-9679-d2a791f938a9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f7214bfc1d4260a3baa03464d541993a264faefa
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 46e7ad86348d183ed1ced9bc862fc9623acf9da8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65460658"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72642869"
 ---
-# <a name="could-not-retrieve-schema-information-for-database-object-object-name"></a>Nie można pobrać informacji o schemacie dla obiektu bazy danych \<nazwa obiektu >
+# <a name="could-not-retrieve-schema-information-for-database-object-object-name"></a>Nie można pobrać informacji o schemacie dla nazwy \<object obiektu bazy danych >
 
-Ten komunikat pojawia się zwykle, gdy obiekt w **Eksploratora serwera** lub **Eksplorator bazy danych** skopiowany do Schowka, usunięte z bazy danych i następnie wklejone do projektanta. Ponieważ obiektu bazy danych już nie istnieje, zostanie wyświetlony ten komunikat.
+Ten komunikat zazwyczaj pojawia się, gdy obiekt w **Eksplorator serwera** lub **Eksplorator bazy danych** zostanie skopiowany do schowka, usunięty z bazy danych, a następnie wklejony do projektanta. Ponieważ obiekt bazy danych już nie istnieje, ten komunikat zostanie wyświetlony.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Narzędzi LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Narzędzia LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

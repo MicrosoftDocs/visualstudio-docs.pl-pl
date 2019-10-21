@@ -7,25 +7,25 @@ helpviewer_keywords:
 - Log switch [devenv.exe]
 - /Log Devenv switch
 ms.assetid: ae23c4ae-2376-4fe3-b8d2-81d34e61c8ba
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b2e11cb36176aec94528019cdd19bb5fa86c92b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bc37f4cd7441fc7945ca1762d16300c18d9ecbfe
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946807"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72610371"
 ---
 # <a name="log-devenvexe"></a>/Log (devenv.exe)
 
-Loguje wszelką aktywność do pliku dziennika w celu rozwiązywania problemów. Ten plik pojawia się, gdy została wywołana `devenv /log` co najmniej raz. Domyślnie plik dziennika znajduje się tutaj:
+Loguje wszelką aktywność do pliku dziennika w celu rozwiązywania problemów. Ten plik jest wyświetlany po wywołaniu `devenv /log` co najmniej raz. Domyślnie plik dziennika znajduje się tutaj:
 
-**%APPDATA%\\Microsoft\\VisualStudio\\**\<Version\>**\\ActivityLog.xml**
+**% AppData% \\Microsoft \\VisualStudio \\** \<Version \> **\\ActivityLog. XML**
 
-gdzie \<wersji\> jest wersja programu Visual Studio. Można jednak określić inną ścieżkę i nazwę pliku.
+gdzie \<Version \> jest wersją programu Visual Studio. Można jednak określić inną ścieżkę i nazwę pliku.
 
 ## <a name="syntax"></a>Składnia
 
@@ -37,17 +37,17 @@ devenv /Log NameOfLogFile
 
 - *NameOfLogFile*
 
-  Wymagana. Pełna ścieżka i nazwa pliku dziennika, aby zapisać.
+  Wymagany. Pełna ścieżka i nazwa pliku dziennika, w którym ma zostać zapisany plik.
 
 ## <a name="remarks"></a>Uwagi
 
 Ten przełącznik musi być umieszczony na końcu wiersza polecenia po innych przełącznikach.
 
-Dziennik jest zapisywany tylko w przypadku wszystkich wystąpień programu Visual Studio, które zostało otwarte z `/Log` przełącznika.
+Dziennik jest zapisywana tylko dla wszystkich wystąpień programu Visual Studio, które zostały otwarte przy użyciu przełącznika `/Log`.
 
 ## <a name="example"></a>Przykład
 
-W tym przykładzie kieruje rejestrowania `MyVSLog.xml` pliku w katalogu macierzystym użytkownika.
+Ten przykład kieruje rejestrowanie do pliku `MyVSLog.xml` w katalogu macierzystym użytkownika.
 
 ```shell
 devenv /log "%USERPROFILE%\MyVSLog.xml"
@@ -55,4 +55,4 @@ devenv /log "%USERPROFILE%\MyVSLog.xml"
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Przełączniki wiersza polecenia Devenv](../../ide/reference/devenv-command-line-switches.md)
+- [Przełączniki wiersza polecenia devenv](../../ide/reference/devenv-command-line-switches.md)

@@ -11,28 +11,28 @@ ms.workload:
 - dotnet
 helpviewer_keywords:
 - add missing usings
-ms.openlocfilehash: d971bcdaca4efdf587c7e441f1b0b28d21388dee
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 78786e6e6e7a8e5d8a8766138cb1a54a49416f9a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416482"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72610891"
 ---
 # <a name="add-missing-usings-in-visual-studio"></a>Dodaj brakujące użycia w programie Visual Studio
 
-Dotyczy to generowanie kodu:
+Ta generacja kodu ma zastosowanie do:
 
 - C#
 
-**Whatman** Umożliwia natychmiastowe dodanie niezbędnych instrukcji Imports lub [using](/dotnet/csharp/language-reference/keywords/using-statement) dla kodu kopiowania i wklejania.
+**Co:** Umożliwia natychmiastowe dodanie niezbędnych importów lub [dyrektyw](/dotnet/csharp/language-reference/keywords/using-directive) dla kodu kopiowania i wklejania.
 
-**Czasie** Typowym sposobem jest skopiowanie kodu z różnych miejsc w projekcie lub w innych źródłach i wklejenie go do nowego kodu. Ta szybka akcja znajduje brakujące instrukcje Imports dla kodu kopiowania i wklejania, a następnie prosi o ich dodanie.
+**Kiedy:** Typowym sposobem jest skopiowanie kodu z różnych miejsc w projekcie lub w innych źródłach i wklejenie go do nowego kodu. Ta szybka akcja umożliwia znalezienie brakujących dyrektyw Imports dla kodu kopiującego i wklejonego, a następnie poprosi o ich dodanie.
 
-**Zalet** Ponieważ szybka akcja automatycznie dodaje wymagane Importy, nie trzeba ręcznie kopiować `using` instrukcji wymaganych przez kod.
+**Dlaczego:** Ponieważ szybka akcja automatycznie dodaje wymagane Importy, nie trzeba ręcznie kopiować dyrektyw `using` wymaganych przez kod.
 
 ## <a name="add-missing-usings-refactoring"></a>Dodaj brakujące składniki przy użyciu refaktoryzacji
 
-1. Skopiuj kod z pliku i wklej go do nowego, bez uwzględniania niezbędnych `using` instrukcji. Wynikiem błędu jest dołączenie poprawki kodu, która dodaje brakujące `using` instrukcje.
+1. Skopiuj kod z pliku i wklej go do nowego, bez uwzględniania niezbędnych dyrektyw `using`. W wyniku błędu następuje poprawka kodu, która dodaje brakujące dyrektywy `using`.
 
     > [!NOTE]
     > Tę sugestię należy włączyć w obszarze **narzędzia > opcje > edytorze tekstów > C# > Advanced > przy użyciu dyrektyw**.
@@ -41,7 +41,7 @@ Dotyczy to generowanie kodu:
 
     ![Generowanie deklaracji using](media/generate-using-codefix.png)
 
-3. Wybierz **pozycję \<przy użyciu\>odwołania;** aby dodać brakujące odwołanie.
+3. Wybierz pozycję **using \<your reference \>;,** aby dodać brakujące odwołanie.
 
     ![Generuj wynik użycia](media/generate-using-result.png)
 

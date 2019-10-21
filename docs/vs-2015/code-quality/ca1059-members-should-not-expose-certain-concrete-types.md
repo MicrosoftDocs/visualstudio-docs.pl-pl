@@ -1,5 +1,5 @@
 ---
-title: 'CA1059: Składowe nie powinny ujawniać niektórych typów konkretnych | Dokumentacja firmy Microsoft'
+title: 'CA1059: elementy członkowskie nie powinny ujawniać niektórych typów konkretnych | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,45 +12,45 @@ helpviewer_keywords:
 - CA1059
 ms.assetid: 59f61f52-8d6c-49cb-aefb-191910523a3c
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: a78125645dc6369811b4b9e1d7101b7bb4cbba76
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4c105a1224c405d0be9d74ac6500c875df28604d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68200493"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72604031"
 ---
-# <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059: Składowe nie powinny ujawniać niektórych typów konkretnych
+# <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059: Elementy członkowskie nie powinny uwidaczniać pewnych typów konkretnych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|MembersShouldNotExposeCertainConcreteTypes|
 |CheckId|CA1059|
-|Kategoria|Microsoft.Design|
+|Kategoria|Microsoft. Design|
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Widoczne na zewnątrz elementu członkowskiego jest określonego typu konkretnego udostępnia pewnych typów konkretnych za pomocą jednego z jego parametrów lub zwróć wartość. Obecnie ta zasada zgłasza narażenia następujących typów konkretnych:
+ Widoczny na zewnątrz element członkowski jest określonym konkretnym typem lub uwidacznia niektóre konkretne typy za pomocą jednego z jego parametrów lub zwracanych wartości. Obecnie ta reguła zgłasza narażenie następujących typów konkretnych:
 
 - Typ pochodzący od <xref:System.Xml.XmlNode?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Opis reguły
- Konkretny typ jest typem posiadającym pełną implementację i dlatego może zostać utworzone jego wystąpienie. Aby umożliwić powszechne użycie elementu członkowskiego, Zamień konkretny typ sugerowanego interfejsu. Dzięki temu elementu członkowskiego akceptować dowolny typ, który implementuje interfejs lub można użyć, gdzie oczekiwany jest typ, który implementuje interfejs.
+ Konkretny typ jest typem posiadającym pełną implementację i dlatego może zostać utworzone jego wystąpienie. Aby umożliwić szerokie korzystanie z elementu członkowskiego, Zastąp konkretny typ proponowanym interfejsem. Dzięki temu członek może zaakceptować dowolny typ implementujący interfejs lub użyć, gdzie oczekiwany jest typ implementujący interfejs.
 
- W poniższej tabeli wymieniono docelowych konkretne typy i ich sugerowane zamiany.
+ Poniższa tabela zawiera listę konkretnych określonych typów i ich sugerowanych zamienników.
 
-|Konkretny typ|Zastępczy|
+|Typ konkretny|Zastępc|
 |-------------------|-----------------|
-|<xref:System.Xml.XPath.XPathDocument>|<xref:System.Xml.XPath.IXPathNavigable?displayProperty=fullName>.<br /><br /> Przy użyciu interfejsu oddziela element członkowski z określonej implementacji źródła danych XML.|
+|<xref:System.Xml.XPath.XPathDocument>|<xref:System.Xml.XPath.IXPathNavigable?displayProperty=fullName>.,<br /><br /> Użycie interfejsu oddziela element członkowski od określonej implementacji źródła danych XML.|
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, należy zmienić konkretny typ do sugerowanego interfejsu.
+ Aby naprawić naruszenie tej reguły, Zmień konkretny typ na sugerowany interfejs.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Jest bezpieczne pominąć komunikat od tej reguły, jeśli określone funkcje zapewniane przez konkretny typ jest wymagany.
+ Można bezpiecznie pominąć komunikat z tej reguły, jeśli wymagane są określone funkcje dostarczone przez konkretny typ.
 
 ## <a name="related-rules"></a>Powiązane reguły
- [CA1011: Należy rozważyć przekazywanie typów bazowych jako parametrów](../code-quality/ca1011-consider-passing-base-types-as-parameters.md)
+ [CA1011: Rozważ przekazanie typów podstawowych jako parametrów](../code-quality/ca1011-consider-passing-base-types-as-parameters.md)

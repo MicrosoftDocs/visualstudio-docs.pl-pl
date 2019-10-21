@@ -16,24 +16,24 @@ helpviewer_keywords:
 - Options dialog box, Web settings
 - Internet Explorer, setting options
 ms.assetid: 586db4eb-032d-4cb5-93a6-a7c14de1ae49
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad36a2c9c741cffdb1ad3da04f81a21ce68f7ebd
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: ae83add4db8e45fca1b97b9c4148cea5bcba0947
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605624"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72621910"
 ---
-# <a name="options-dialog-box-environment--web-browser"></a>Opcje — okno dialogowe: Przeglądarka \> sieci Web środowiska
+# <a name="options-dialog-box-environment--web-browser"></a>Opcje — okno dialogowe: środowisko \> przeglądarka sieci Web
 
 Ustawia opcje dla wewnętrznej przeglądarki sieci Web i programu Internet Explorer. Aby uzyskać dostęp do tego okna dialogowego, kliknij opcję **Opcje** w menu **Narzędzia** , rozwiń folder **środowisko** , a następnie wybierz pozycję **przeglądarka sieci Web**.
 
 > [!NOTE]
-> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [zresetować ustawienia](../environment-settings.md#reset-settings).
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, wybierz **Importuj i Eksportuj ustawienia** w menu **Narzędzia** . Aby uzyskać więcej informacji, zobacz [Resetowanie ustawień](../environment-settings.md#reset-settings).
 
 > [!IMPORTANT]
 > Otwieranie niektórych plików lub składników z sieci Web może wykonać kod na komputerze.
@@ -52,7 +52,7 @@ Ustawia Edytor używany do otwierania strony sieci Web w przypadku wybrania opcj
 
 - **Edytor źródła** Wybierz, aby wyświetlić źródło w [Edytorze](../../ide/writing-code-in-the-code-and-text-editor.md).
 
-- **Edytor HTML** Wybierz, aby wyświetlić źródło w [projektancie HTML](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477). Ten wybór służy do edytowania strony sieci Web w jednym z dwóch widoków: Widok Projekt lub standardowy widok źródła na podstawie tekstu.
+- **Edytor HTML** Wybierz, aby wyświetlić źródło w [projektancie HTML](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477). Zaznacz to pole wyboru, aby edytować stronę sieci Web w jednym z dwóch widoków: widok Projekt lub standardowego widoku źródła na podstawie tekstu.
 
 - **Edytor zewnętrzny** Wybierz, aby wyświetlić źródło w innym edytorze. Określ ścieżkę wybranego edytora, na przykład Notepad. exe.
 

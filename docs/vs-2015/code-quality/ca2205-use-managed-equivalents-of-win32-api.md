@@ -1,5 +1,5 @@
 ---
-title: 'CA2205: Użyj zarządzanych odpowiedników funkcji Win32 API | Dokumentacja firmy Microsoft'
+title: 'CA2205: Użyj zarządzanych odpowiedników Win32 API | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,51 +12,51 @@ helpviewer_keywords:
 - CA2205
 ms.assetid: 1c65ab59-3e50-4488-a727-3969c7f6cbe4
 caps.latest.revision: 15
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 2da7faabb05d2f6eaf2ec345f9bae19401953093
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 931b1e5099bf221fefc7a8f4a19524d2531a4418
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68142546"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72609485"
 ---
-# <a name="ca2205-use-managed-equivalents-of-win32-api"></a>CA2205: Użyj zarządzanych odpowiedników funkcji API Win32
+# <a name="ca2205-use-managed-equivalents-of-win32-api"></a>CA2205: Użyj zarządzanych odpowiedników interfejsu API Win32
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|UseManagedEquivalentsOfWin32Api|
 |CheckId|CA2205|
-|Kategoria|Microsoft.Usage|
-|Zmiana kluczowa|Bez podziału|
+|Kategoria|Microsoft. Usage|
+|Zmiana kluczowa|Bez przerywania|
 
 ## <a name="cause"></a>Przyczyna
- Wywołania platformy zdefiniowano metody, które metody z równoważną funkcjonalność istnieje w [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] biblioteki klas.
+ Metoda wywołania platformy jest zdefiniowana, a metoda o równoważnej funkcjonalności istnieje w bibliotece klas [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
 
 ## <a name="rule-description"></a>Opis reguły
- Metoda wywołania platformy służy do wywoływania niezarządzanych funkcji DLL i jest definiowana za pomocą <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> atrybut, lub `Declare` — słowo kluczowe w języku Visual Basic. Platforma nieprawidłowo zdefiniowana invoke, metoda może prowadzić do wyjątki środowiska uruchomieniowego ze względu na problemy, takie jak funkcja misnamed wadliwe mapowania typów danych wartości parametrów i zwrotu i specyfikacji nieprawidłowe pola, takie jak Konwencja wywoływania i znak zestaw. Jeśli to możliwe, jest zazwyczaj łatwiejsze i mniej podatne do wywoływania metody zarządzanych równoważne niż do definiowania i bezpośrednio wywoływać metody niezarządzanego. Wywołanie platformy Wywołaj metodę również może prowadzić do problemów zabezpieczeń, które powinny być usuwane.
+ Metoda wywołania platformy służy do wywoływania niezarządzanej funkcji DLL i jest definiowana przy użyciu atrybutu <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> lub słowa kluczowego `Declare` w Visual Basic. Nieprawidłowo zdefiniowana Metoda wywołania platformy może prowadzić do wyjątków w czasie wykonywania z powodu problemów, takich jak nieprawidłowa funkcja nazwana, wadliwe mapowanie parametrów i typów danych wartości zwracanej oraz niepoprawne specyfikacje pola, takie jak Konwencja wywoływania i znak zbiór. Jeśli jest dostępna, jest to ogólnie prostsze i mniej podatne na wywoływanie równoważnej metody zarządzanej niż w celu bezpośredniej definicji i wywołania metody niezarządzanej. Wywołanie metody Invoke platformy może również prowadzić do dodatkowych problemów z zabezpieczeniami, które muszą zostać rozwiązane.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, Zastąp wywołanie do funkcji niezarządzanych przy użyciu wywołania na odpowiadającą jej zarządzanych.
+ Aby naprawić naruszenie tej reguły, Zastąp wywołanie funkcji niezarządzanej wywołaniem swojego równoważnego elementu zarządzanego.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Pomijaj ostrzeżeń dla tej reguły, jeśli metody sugerowane zastępowania nie udostępnia wymaganych funkcji.
+ Pomiń ostrzeżenie z tej reguły, jeśli sugerowana metoda zastępująca nie zapewnia wymaganych funkcji.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie pokazano, a platforma wywołać definicję metody, która narusza regułę. Dodatkowo wywołania platformy wywołania metody i są wyświetlane równoważne zarządzaną metodą.
+ Poniższy przykład przedstawia definicję metody wywołania platformy, która narusza regułę. Ponadto są wyświetlane wywołania metody Invoke platformy i równoważnej metody zarządzanej.
 
  [!code-csharp[FxCop.Usage.ManagedEquivalents#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.ManagedEquivalents/cs/FxCop.Usage.ManagedEquivalents.cs#1)]
  [!code-vb[FxCop.Usage.ManagedEquivalents#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.ManagedEquivalents/vb/FxCop.Usage.ManagedEquivalents.vb#1)]
 
 ## <a name="related-rules"></a>Powiązane reguły
- [CA1404: Wywołaj metodę GetLastError natychmiast po P/Invoke](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)
+ [CA1404: Wywołaj metodę GetLastError natychmiast po wywołaniu P/Invoke](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)
 
- [CA1060: Przenieś P/Invokes do klasy NativeMethods](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)
+ [CA1060: Przenieś wywołania P/Invoke do klasy NativeMethods](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)
 
  [CA1400: Powinny istnieć punkty wejścia P/Invoke](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)
 
- [CA1401: P/Invokes nie powinny być widoczne](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
+ [CA1401: Metody P/Invoke nie powinny być widoczne](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
 
- [CA2101: Należy określić marshaling dla argumentów ciągu P/Invoke](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
+ [CA2101: Określ marshaling dla argumentów ciągu wywołania P/Invoke](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)

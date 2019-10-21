@@ -1,5 +1,5 @@
 ---
-title: 'Przewodnik: Tworzenie n-warstwowej aplikacji do obsługi danych'
+title: 'Wskazówki: tworzenie aplikacji warstwowych'
 ms.date: 09/08/2017
 ms.topic: conceptual
 dev_langs:
@@ -9,24 +9,24 @@ helpviewer_keywords:
 - n-tier applications, creating
 - n-tier applications, walkthroughs
 ms.assetid: d15e4d31-2839-48d9-9e0e-2e73404d82a2
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6e58df1624cb115f625e9a1db443b3259b044b11
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 944825c00e55fcdb3a1a8f1f0c11d3a37a25025c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925393"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72639401"
 ---
-# <a name="walkthrough-create-an-n-tier-data-application"></a>Przewodnik: Tworzenie n-warstwowej aplikacji do obsługi danych
+# <a name="walkthrough-create-an-n-tier-data-application"></a>Przewodnik: Tworzenie wielowarstwowej aplikacji danych
 *N-warstwowe* aplikacje danych to aplikacje, które uzyskują dostęp do danych i są rozdzielone na wiele warstw logicznych lub *warstw*. Oddzielenie składników aplikacji do odrębnych warstw zwiększa łatwość utrzymania i skalowalność aplikacji. Pozwala to na łatwiejsze wdrażanie nowych technologii, które mogą być stosowane do jednej warstwy, bez konieczności ponownego projektowania całego rozwiązania. Architektura N-warstwowa obejmuje warstwę prezentacji, warstwę środkową i warstwę danych. Warstwa środkowa zazwyczaj obejmuje warstwę dostępu do danych, warstwę logiki biznesowej i składniki współużytkowane, takie jak uwierzytelnianie i sprawdzanie poprawności. Warstwa danych obejmuje relacyjną bazę danych. Aplikacje N-warstwowe zwykle przechowują informacje poufne w warstwie dostępu do danych warstwy środkowej, aby zachować izolację od użytkowników końcowych, którzy uzyskują dostęp do warstwy prezentacji. Aby uzyskać więcej informacji, zobacz [Omówienie wielowarstwowych aplikacji do obsługi danych](../data-tools/n-tier-data-applications-overview.md).
 
-Jednym ze sposobów odseparowania różnych warstw w aplikacji n-warstwowej jest utworzenie dyskretnych projektów dla każdej warstwy, która ma zostać dołączona do aplikacji. Typy zestawów danych zawierają `DataSet Project` właściwość, która określa projekty, do których powinien być generowany wygenerowany zestaw danych i `TableAdapter` kod.
+Jednym ze sposobów odseparowania różnych warstw w aplikacji n-warstwowej jest utworzenie dyskretnych projektów dla każdej warstwy, która ma zostać dołączona do aplikacji. Typy zestawów danych zawierają Właściwość `DataSet Project`, która określa projekty, do których mają zostać wygenerowane zestawy danych i `TableAdapter`.
 
-W tym instruktażu przedstawiono sposób rozdzielania zestawu danych i `TableAdapter` kodu do odrębnych projektów biblioteki klas przy użyciu **Projektant obiektów DataSet**. Po oddzieleniu zestawu danych i TableAdapter kodu utworzysz [usługi Windows Communication Foundation i usługi danych programu WCF w usłudze Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) , aby wywoływać do warstwy dostępu do danych. Na koniec utworzysz aplikację Windows Formsową jako warstwę prezentacji. Ta warstwa uzyskuje dostęp do danych z usługi danych.
+W tym instruktażu przedstawiono sposób rozdzielania zestawu danych i kodu `TableAdapter` na osobne projekty bibliotek klas przy użyciu **Projektant obiektów DataSet**. Po oddzieleniu zestawu danych i TableAdapter kodu utworzysz [usługi Windows Communication Foundation i usługi danych programu WCF w usłudze Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) , aby wywoływać do warstwy dostępu do danych. Na koniec utworzysz aplikację Windows Formsową jako warstwę prezentacji. Ta warstwa uzyskuje dostęp do danych z usługi danych.
 
 W tym instruktażu należy wykonać następujące czynności:
 
@@ -48,7 +48,7 @@ W tym instruktażu należy wykonać następujące czynności:
 
 - Napisz kod, aby wypełnić tabele danych.
 
-![link do wideo](../data-tools/media/playvideo.gif) dla wersji wideo tego tematu, zobacz [wideo: Tworzenie wielowarstwowej aplikacji](http://go.microsoft.com/fwlink/?LinkId=115188)do obsługi danych.
+![link wideo ](../data-tools/media/playvideo.gif) wersja wideo tego tematu, zobacz [wideo: jak utworzyć wielowarstwową aplikację do obsługi danych](http://go.microsoft.com/fwlink/?LinkId=115188).
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 W tym instruktażu jest stosowana SQL Server Express LocalDB i Przykładowa baza danych Northwind.
@@ -63,21 +63,21 @@ W tym instruktażu jest stosowana SQL Server Express LocalDB i Przykładowa baza
 
     2. Skopiuj [skrypt języka Transact-SQL Northwind](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) do Schowka. Ten skrypt T-SQL tworzy bazę danych Northwind od podstaw i wypełnia ją danymi.
 
-    3. Wklej skrypt języka T-SQL do edytora zapytań, a następnie wybierz **Execute** przycisku.
+    3. Wklej skrypt T-SQL do edytora zapytań, a następnie wybierz przycisk Execute ( **Wykonaj** ).
 
        Po krótkim czasie zapytanie kończy działanie i zostanie utworzona baza danych Northwind.
 
 ## <a name="create-the-n-tier-solution-and-class-library-to-hold-the-dataset-dataentitytier"></a>Utwórz rozwiązanie n-warstwowe i bibliotekę klas do przechowywania zestawu danych (DataEntityTier)
-Pierwszym krokiem tego instruktażu jest utworzenie rozwiązania i dwóch projektów biblioteki klas. Pierwsza Biblioteka klas zawiera zestaw danych (wygenerowanej `DataSet` klasy i tabele danych, które zawierają dane aplikacji). Ten projekt jest używany jako warstwa jednostki danych aplikacji i zwykle znajduje się w warstwie środkowej. Zestaw danych tworzy początkowy zestaw danych i automatycznie oddziela kod do dwóch bibliotek klas.
+Pierwszym krokiem tego instruktażu jest utworzenie rozwiązania i dwóch projektów biblioteki klas. Pierwsza Biblioteka klas zawiera zestaw danych (wygenerowana wpisana Klasa `DataSet` i tabel danych, które zawierają dane aplikacji). Ten projekt jest używany jako warstwa jednostki danych aplikacji i zwykle znajduje się w warstwie środkowej. Zestaw danych tworzy początkowy zestaw danych i automatycznie oddziela kod do dwóch bibliotek klas.
 
 > [!NOTE]
 > Upewnij się, że poprawnie Nadaj nazwę projekt i rozwiązanie, zanim klikniesz przycisk **OK**. Wykonanie tej czynności ułatwi Ci ukończenie tego przewodnika.
 
 ### <a name="to-create-the-n-tier-solution-and-dataentitytier-class-library"></a>Aby utworzyć rozwiązanie n-warstwowe i DataEntityTier biblioteki klas
 
-1. W programie Visual Studio w menu **plik** wybierz pozycję **Nowy** > **projekt**.
+1. W programie Visual Studio w menu **plik** wybierz pozycję **Nowy** **projekt** > .
 
-2. Rozwiń pozycję  **C# Wizualizacja** lub **Visual Basic** w okienku po lewej stronie, a następnie wybierz pozycję **pulpit systemu Windows**.
+2. Rozwiń pozycję **Wizualizacja C#**  lub **Visual Basic** w okienku po lewej stronie, a następnie wybierz pozycję **pulpit systemu Windows**.
 
 3. W środkowym okienku wybierz typ projektu **Biblioteka klas** .
 
@@ -88,11 +88,11 @@ Pierwszym krokiem tego instruktażu jest utworzenie rozwiązania i dwóch projek
      NTierWalkthrough rozwiązanie, które zawiera projekt DataEntityTier, jest tworzone i dodawane do **Eksplorator rozwiązań**.
 
 ## <a name="create-the-class-library-to-hold-the-tableadapters-dataaccesstier"></a>Utwórz bibliotekę klas do przechowywania TableAdapters (DataAccessTier)
-Następnym krokiem po utworzeniu projektu DataEntityTier jest utworzenie kolejnego projektu biblioteki klas. Ten projekt zawiera wygenerowany TableAdapters i jest nazywany warstwą *dostępu do danych* aplikacji. Warstwa dostępu do danych zawiera informacje wymagane do nawiązania połączenia z bazą danych i zwykle znajdują się w warstwie środkowej.
+Następnym krokiem po utworzeniu projektu DataEntityTier jest utworzenie kolejnego projektu biblioteki klas. Ten projekt zawiera wygenerowany TableAdapters i jest nazywany *warstwą dostępu do danych* aplikacji. Warstwa dostępu do danych zawiera informacje wymagane do nawiązania połączenia z bazą danych i zwykle znajdują się w warstwie środkowej.
 
 ### <a name="to-create-a-separate-class-library-for-the-tableadapters"></a>Aby utworzyć oddzielną bibliotekę klas dla TableAdapters
 
-1. Kliknij prawym przyciskiem myszy rozwiązanie w **Eksplorator rozwiązań** i wybierz polecenie **Dodaj** > **Nowy projekt**.
+1. Kliknij prawym przyciskiem myszy rozwiązanie w **Eksplorator rozwiązań** i wybierz polecenie **Dodaj**  > **Nowy projekt**.
 
 2. W oknie dialogowym **Nowy projekt** w środkowym okienku wybierz pozycję **Biblioteka klas**.
 
@@ -101,16 +101,16 @@ Następnym krokiem po utworzeniu projektu DataEntityTier jest utworzenie kolejne
      Projekt DataAccessTier jest tworzony i dodawany do rozwiązania NTierWalkthrough.
 
 ## <a name="create-the-dataset"></a>Tworzenie zestawu danych
-Następnym krokiem jest utworzenie określonego zestawu danych. Typy zestawów danych są tworzone z klasą DataSet (łącznie `DataTables` z klasami) `TableAdapter` i klasami w pojedynczym projekcie. (Wszystkie klasy są generowane w jednym pliku). Po oddzieleniu zestawu danych i TableAdapters do różnych projektów jest to klasa DataSet, która jest przenoszona do innego projektu, pozostawiając `TableAdapter` klasy w oryginalnym projekcie. W związku z tym należy utworzyć zestaw danych w projekcie, który ostatecznie będzie zawierać TableAdapters (projekt DataAccessTier). Zestaw danych można utworzyć za pomocą **Kreatora konfiguracji źródła danych**.
+Następnym krokiem jest utworzenie określonego zestawu danych. Typy zestawów danych są tworzone z klasą DataSet (łącznie z klasami `DataTables`) i klasami `TableAdapter` w pojedynczym projekcie. (Wszystkie klasy są generowane w jednym pliku). Po oddzieleniu zestawu danych i TableAdapters do różnych projektów jest to klasa DataSet, która jest przenoszona do innego projektu, pozostawiając `TableAdapter` klas w oryginalnym projekcie. W związku z tym należy utworzyć zestaw danych w projekcie, który ostatecznie będzie zawierać TableAdapters (projekt DataAccessTier). Zestaw danych można utworzyć za pomocą **Kreatora konfiguracji źródła danych**.
 
 > [!NOTE]
-> Aby utworzyć połączenie, musisz mieć dostęp do przykładowej bazy danych Northwind. Aby uzyskać informacje na temat sposobu konfigurowania przykładowej bazy danych Northwind, [zobacz How to: Instalowanie przykładowych](../data-tools/installing-database-systems-tools-and-samples.md)baz danych.
+> Aby utworzyć połączenie, musisz mieć dostęp do przykładowej bazy danych Northwind. Aby uzyskać informacje na temat sposobu konfigurowania przykładowej bazy danych Northwind, zobacz [How to: Install Sample Bases](../data-tools/installing-database-systems-tools-and-samples.md).
 
 ### <a name="to-create-the-dataset"></a>Aby utworzyć zestaw danych
 
 1. Wybierz **DataAccessTier** w **Eksplorator rozwiązań**.
 
-2. Na **danych** menu, wybierz opcję **Pokaż źródła danych**.
+2. W menu **dane** wybierz pozycję **Pokaż źródła danych**.
 
    Zostanie otwarte okno **źródła danych** .
 
@@ -152,7 +152,7 @@ Po utworzeniu zestawu danych oddziel klasę wygenerowanego zestawu danych z Tabl
 
 4. Na liście **projekt zestawu danych** wybierz pozycję **DataEntityTier**.
 
-5. Na **kompilacji** menu, wybierz opcję **Kompiluj rozwiązanie**.
+5. W menu **kompilacja** wybierz opcję **Kompiluj rozwiązanie**.
 
    Zestaw danych i TableAdapters są rozdzielone na dwa projekty biblioteki klas. Projekt, który pierwotnie zawierał cały zestaw danych (`DataAccessTier`) zawiera teraz tylko TableAdapters. Projekt określony we właściwości **projektu DataSet** (`DataEntityTier`) zawiera zestaw danych o określonym typie: *NorthwindDataSet. DataSet. Designer. vb* (lub *NorthwindDataSet.DataSet.Designer.cs*).
 
@@ -164,7 +164,7 @@ W tym instruktażu pokazano, jak uzyskać dostęp do warstwy dostępu do danych 
 
 ### <a name="to-create-a-new-wcf-service-application"></a>Aby utworzyć nową aplikację usługi WCF
 
-1. Kliknij prawym przyciskiem myszy rozwiązanie w **Eksplorator rozwiązań** i wybierz polecenie **Dodaj** > **Nowy projekt**.
+1. Kliknij prawym przyciskiem myszy rozwiązanie w **Eksplorator rozwiązań** i wybierz polecenie **Dodaj**  > **Nowy projekt**.
 
 2. W oknie dialogowym **Nowy projekt** w okienku po lewej stronie wybierz pozycję **WCF**. W środkowym okienku wybierz pozycję **Biblioteka usług WCF**.
 
@@ -173,7 +173,7 @@ W tym instruktażu pokazano, jak uzyskać dostęp do warstwy dostępu do danych 
      Projekt usługi danych jest tworzony i dodawany do rozwiązania NTierWalkthrough.
 
 ## <a name="create-methods-in-the-data-access-tier-to-return-the-customers-and-orders-data"></a>Utwórz metody w warstwie dostępu do danych, aby zwrócić dane klientów i zamówień
-Usługa danych musi wywoływać dwie metody z warstwy dostępu do danych: `GetCustomers` i. `GetOrders` Metody te zwracają Northwind `Customers` i `Orders` tabele. Utwórz metody `GetCustomers` i `GetOrders` w`DataAccessTier` projekcie.
+Usługa danych musi wywoływać dwie metody z warstwy dostępu do danych: `GetCustomers` i `GetOrders`. Metody te zwracają tabele Northwind `Customers` i `Orders`. Utwórz `GetCustomers` i `GetOrders` metod w projekcie `DataAccessTier`.
 
 ### <a name="to-create-a-method-in-the-data-access-tier-that-returns-the-customers-table"></a>Aby utworzyć metodę w warstwie dostępu do danych, która zwraca tabelę Customers
 
@@ -201,11 +201,11 @@ Usługa danych musi wywoływać dwie metody z warstwy dostępu do danych: `GetCu
 
 4. Na stronie **określanie instrukcji SQL SELECT** pozostaw zapytanie domyślne i kliknij przycisk **dalej**.
 
-5. Na stronie **Wybierz metody do wygenerowania** wpisz GetOrders dla **nazwy metody** w sekcji **Return DataTable** .
+5. Na stronie **Wybierz metody do wygenerowania** wpisz **GetOrders** dla **nazwy metody** w sekcji **Return DataTable** .
 
 6. Kliknij przycisk **Zakończ**.
 
-7. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
+7. W menu **kompilacja** kliknij pozycję **Kompiluj rozwiązanie**.
 
 ## <a name="add-a-reference-to-the-data-entity-and-data-access-tiers-to-the-data-service"></a>Dodawanie odwołania do jednostek danych i warstw dostępu do danych do usługi danych
 Ponieważ usługa danych wymaga informacji z zestawu danych i TableAdapters, Dodaj odwołania do projektów **DataEntityTier** i **DataAccessTier** .
@@ -224,7 +224,7 @@ Ponieważ usługa danych wymaga informacji z zestawu danych i TableAdapters, Dod
 Teraz, gdy warstwa dostępu do danych zawiera metody zwracające dane, należy utworzyć metody w usłudze danych, aby wywoływać metody z warstwy dostępu do danych.
 
 > [!NOTE]
-> W C# przypadku projektów należy dodać odwołanie do `System.Data.DataSetExtensions` zestawu dla poniższego kodu do skompilowania.
+> W C# przypadku projektów należy dodać odwołanie do zestawu `System.Data.DataSetExtensions` dla następującego kodu do skompilowania.
 
 ### <a name="to-create-the-getcustomers-and-getorders-functions-in-the-data-service"></a>Aby utworzyć funkcje GetCustomers i GetOrders w usłudze danych
 
@@ -281,14 +281,14 @@ Teraz, gdy warstwa dostępu do danych zawiera metody zwracające dane, należy u
     }
     ```
 
-5. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
+5. W menu **kompilacja** kliknij pozycję **Kompiluj rozwiązanie**.
 
 ## <a name="create-a-presentation-tier-to-display-data-from-the-data-service"></a>Utwórz warstwę prezentacji, aby wyświetlić dane z usługi danych
 Teraz, gdy rozwiązanie zawiera usługę danych, która ma metody, które odwołują się do warstwy dostępu do danych, Utwórz inny projekt, który wywołuje usługę danych i zaprezentowania danych użytkownikom. W tym instruktażu Utwórz aplikację Windows Formsową. to jest warstwa prezentacji aplikacji n-warstwowej.
 
 ### <a name="to-create-the-presentation-tier-project"></a>Aby utworzyć projekt warstwy prezentacji
 
-1. Kliknij prawym przyciskiem myszy rozwiązanie w **Eksplorator rozwiązań** i wybierz polecenie **Dodaj** > **Nowy projekt**.
+1. Kliknij prawym przyciskiem myszy rozwiązanie w **Eksplorator rozwiązań** i wybierz polecenie **Dodaj**  > **Nowy projekt**.
 
 2. W oknie dialogowym **Nowy projekt** w okienku po lewej stronie wybierz pozycję **pulpit systemu Windows**. W środkowym okienku wybierz pozycję **aplikacja Windows Forms**.
 
@@ -323,7 +323,7 @@ Aplikacja kliencka PresentationTier wymaga odwołania do usługi danych w celu u
 3. Wybierz pozycję **Service1** , a następnie wybierz **przycisk OK**.
 
     > [!NOTE]
-    > Jeśli na bieżącym komputerze istnieje wiele usług, wybierz usługę utworzoną wcześniej w tym instruktażu (usługę `GetCustomers` zawierającą metody i `GetOrders` ).
+    > Jeśli na bieżącym komputerze istnieje wiele usług, wybierz usługę utworzoną wcześniej w tym instruktażu (usługę, która zawiera `GetCustomers` i `GetOrders` metody).
 
 ## <a name="add-datagridviews-to-the-form-to-display-the-data-returned-by-the-data-service"></a>Dodaj kontrolki DataGridView do formularza, aby wyświetlić dane zwrócone przez usługę danych
 Po dodaniu odwołania do usługi do usługi danych okno **źródła danych** zostanie automatycznie wypełnione danymi zwracanymi przez usługę.
@@ -340,9 +340,9 @@ Po dodaniu odwołania do usługi do usługi danych okno **źródła danych** zos
 
 5. Przeciągnij węzeł **zamówienia** powiązane na formularz Form1.
 
-6. Utwórz procedurę obsługi zdarzeń przez dwukrotne kliknięcie pustego obszaru formularza. `Form1_Load`
+6. Utwórz procedurę obsługi zdarzeń `Form1_Load` przez dwukrotne kliknięcie pustego obszaru formularza.
 
-7. Dodaj następujący kod do `Form1_Load` programu obsługi zdarzeń.
+7. Dodaj następujący kod do programu obsługi zdarzeń `Form1_Load`.
 
     ```vb
     Dim DataSvc As New ServiceReference1.Service1Client
@@ -358,7 +358,7 @@ Po dodaniu odwołania do usługi do usługi danych okno **źródła danych** zos
     ```
 
 ## <a name="increase-the-maximum-message-size-allowed-by-the-service"></a>Zwiększ maksymalny rozmiar komunikatu dozwolony przez usługę
-Wartość domyślna dla `maxReceivedMessageSize` nie jest wystarczająco duża, aby można było przechowywać dane pobierane `Customers` z tabel `Orders` i. W poniższych krokach zwiększy się wartość do 6553600. Należy zmienić wartość na kliencie, która automatycznie aktualizuje odwołanie do usługi.
+Wartość domyślna `maxReceivedMessageSize` nie jest wystarczająco duża, aby można było przechowywać dane pobierane z tabel `Customers` i `Orders`. W poniższych krokach zwiększy się wartość do 6553600. Należy zmienić wartość na kliencie, która automatycznie aktualizuje odwołanie do usługi.
 
 > [!NOTE]
 > Dolny rozmiar domyślny jest przeznaczony do ograniczania narażenia na ataki typu "odmowa usługi" (DoS). Aby uzyskać więcej informacji, zobacz <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>.
@@ -370,7 +370,7 @@ Wartość domyślna dla `maxReceivedMessageSize` nie jest wystarczająco duża, 
 2. Znajdź atrybut **maxReceivedMessage** size i zmień wartość na `6553600`.
 
 ## <a name="test-the-application"></a>Testowanie aplikacji
-Uruchom aplikację, naciskając klawisz **F5**. Dane z `Customers` tabel i `Orders` są pobierane z usługi danych i wyświetlane w formularzu.
+Uruchom aplikację, naciskając klawisz **F5**. Dane z tabel `Customers` i `Orders` są pobierane z usługi danych i wyświetlane w formularzu.
 
 ## <a name="next-steps"></a>Następne kroki
 W zależności od wymagań aplikacji istnieje kilka kroków, które można wykonać po zapisaniu powiązanych danych w aplikacji opartej na systemie Windows. Można na przykład wprowadzić następujące ulepszenia dla tej aplikacji:

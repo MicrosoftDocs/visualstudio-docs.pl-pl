@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - policy errors, code analysis
 ms.assetid: d1f221cd-68c0-4277-9397-b76ad0dbae77
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 661f029b617c430f7205552080a94affc5bd543b
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: d3c1f6761c6cef968c965a7f0d766d3b7da6183e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72445890"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72622606"
 ---
 # <a name="code-analysis-policy-errors"></a>Błędy zasad analizy kodu
 
@@ -47,13 +47,13 @@ Zasady analizy kodu wymagają, aby wszystkie pliki, które zostały zaewidencjon
 
 **Wersja "{0}" jest niepoprawna. Silna nazwa określona w zasadach to "{1}".**
 
-Ten błąd dotyczy projektów platformy .NET. Reguła. dll wymagana przez zasady analizy kodu istnieje na komputerze lokalnym, ale wersja/klucz publiczny nie są zgodne. Aby naprawić ten błąd, twórca zasad musi zaktualizować pliki dll w katalogu *C:\Program Files\Microsoft Visual Studio 8 \ Team Tools\Static Analysis Tools\FxCop\Rules @ no__t-1* na swoim komputerze.
+Ten błąd dotyczy projektów platformy .NET. Reguła. dll wymagana przez zasady analizy kodu istnieje na komputerze lokalnym, ale wersja/klucz publiczny nie są zgodne. Aby naprawić ten błąd, twórca zasad musi zaktualizować pliki dll w *folderze C:\Program Files\Microsoft Visual Studio 8 \ Team Tools\Static Analysis Tools\FxCop\Rules \\* na swoim komputerze.
 
 **zestaw "{0}" określony w zasadach nie istnieje.**
 
-Ten błąd dotyczy projektów platformy .NET. Reguła wymagana przez zasady analizy kodu nie ma odpowiedniej biblioteki DLL zainstalowanej na komputerze klienckim. Aby naprawić ten błąd, twórca zasad musi zaktualizować bibliotekę DLL w katalogu *C:\Program Files\Microsoft Visual Studio 8 \ Team Tools\Static Analysis Tools\FxCop\Rules @ no__t-1* na swoim komputerze.
+Ten błąd dotyczy projektów platformy .NET. Reguła wymagana przez zasady analizy kodu nie ma odpowiedniej biblioteki DLL zainstalowanej na komputerze klienckim. Aby naprawić ten błąd, twórca zasad musi zaktualizować bibliotekę DLL w katalogu *C:\Program Files\Microsoft Visual Studio 8 \ Team Tools\Static Analysis Tools\FxCop\Rules \\* na swoim komputerze.
 
-**Ustawienia reguły programu Project @no__t — 1 są niezgodne z zasadami analizy kodu.**
+**Ustawienia reguły {0} projektu nie są zgodne z zasadami analizy kodu.**
 
 Ten błąd dotyczy projektów platformy .NET. Ustawienia reguł kodu zarządzanego nie są zgodne z wymaganiami zasad. Aby naprawić ten błąd, ustawienie klienta musi być takie samo lub rygorystyczne jak wymaganie zasad na serwerze.
 
@@ -63,11 +63,11 @@ W [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] aktywna konfiguracja
 
 **Należy włączyć analizę kodu dla zarządzanych plików binarnych w projekcie {0} właściwości i skompilować przed zaewidencjonowaniem.**
 
-Ten błąd dotyczy aplikacji .NET [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. Zasady wymagają wykonania analizy kodu zarządzanego, ale nie jest ona włączona w bieżącym projekcie na kliencie.
+Ten błąd dotyczy aplikacji platformy .NET [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. Zasady wymagają wykonania analizy kodu zarządzanego, ale nie jest ona włączona w bieżącym projekcie na kliencie.
 
 **Należy włączyć analizę kodu w projekcie {0} właściwości i skompilować przed zaewidencjonowaniem.**
 
-Ten błąd został zastosowany do projektów [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] i projektów sieci Web. Zasady wymagają wykonania analizy kodu zarządzanego, ale nie jest ona włączona w bieżącym projekcie na kliencie.
+Ten błąd został zastosowany do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektów i projektów sieci Web. Zasady wymagają wykonania analizy kodu zarządzanego, ale nie jest ona włączona w bieżącym projekcie na kliencie.
 
 **Należy włączyć analizę kodu CC++ /Code w projekcie {0} właściwości i skompilować przed zaewidencjonowaniem.**
 

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - code analysis, managed code
 - analyzers
 - Roslyn analyzers
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 81c1c200ba9ab0a50381192b34bad5e9b221fb29
-ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
+ms.openlocfilehash: 6cd4d5517dae889387ec632df57c90485bd366b0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72305671"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649055"
 ---
 # <a name="use-code-analyzers"></a>Korzystanie z analizatorów kodu
 
@@ -28,7 +28,7 @@ Można wykonać wiele czynności dostosowywania diagnostyki analizatora **Eksplo
 
 ![Węzeł analizatorów w Eksplorator rozwiązań](media/analyzers-expanded-in-solution-explorer.png)
 
-Właściwości diagnostyki, w tym jej opis i domyślną ważność, można wyświetlić w oknie **Właściwości** . Aby wyświetlić właściwości, kliknij prawym przyciskiem myszy regułę i wybierz pozycję **Właściwości**lub wybierz regułę, a następnie naciśnij klawisz **Alt**+**Enter**.
+Właściwości diagnostyki, w tym jej opis i domyślną ważność, można wyświetlić w oknie **Właściwości** . Aby wyświetlić właściwości, kliknij prawym przyciskiem myszy regułę i wybierz pozycję **Właściwości**lub wybierz regułę, a następnie naciśnij klawisz **Alt** +**Enter**.
 
 ![Właściwości diagnostyczne w okno Właściwości](media/analyzer-diagnostic-properties.png)
 
@@ -93,7 +93,7 @@ Ustawienie ważności reguły w pliku EditorConfig ma pierwszeństwo przed ważn
 
 1. Jeśli nie masz jeszcze pliku EditorConfig dla projektu, [Dodaj go](../ide/create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project).
 
-2. Dodaj wpis dla każdej reguły, która ma zostać skonfigurowana w ramach odpowiedniego rozszerzenia pliku. Na przykład, aby ustawić ważność dla [CA1822](ca1822.md) do `error` dla C# plików, wpis wygląda następująco:
+2. Dodaj wpis dla każdej reguły, która ma zostać skonfigurowana w ramach odpowiedniego rozszerzenia pliku. Na przykład, aby ustawić ważność [CA1822](ca1822.md) na `error` dla C# plików, wpis wygląda następująco:
 
    ```ini
    [*.cs]
@@ -101,15 +101,15 @@ Ustawienie ważności reguły w pliku EditorConfig ma pierwszeństwo przed ważn
    ```
 
 > [!NOTE]
-> W przypadku analizatorów stylu kodu IDE można także skonfigurować je w pliku EditorConfig przy użyciu innej składni, na przykład `dotnet_style_qualification_for_field = false:suggestion`. Jednakże w przypadku ustawienia ważności przy użyciu składni `dotnet_diagnostic` ma pierwszeństwo. Aby uzyskać więcej informacji, zobacz [konwencje językowe dla EditorConfig](../ide/editorconfig-language-conventions.md).
+> W przypadku analizatorów stylu kodu IDE można także skonfigurować je w pliku EditorConfig przy użyciu innej składni, na przykład `dotnet_style_qualification_for_field = false:suggestion`. Jeśli jednak ustawisz ważność przy użyciu składni `dotnet_diagnostic`, ma pierwszeństwo. Aby uzyskać więcej informacji, zobacz [konwencje językowe dla EditorConfig](../ide/editorconfig-language-conventions.md).
 
 #### <a name="automatically-configure-rule-severity"></a>Automatycznie Konfiguruj ważność reguły
 
 Program Visual Studio zapewnia wygodny sposób konfigurowania ważności reguły z menu żarówki [szybkich działań](../ide/quick-actions.md) .
 
-1. Po wystąpieniu naruszenia, umieść wskaźnik myszy nad naruszeniem w edytorze i otwórz menu żarówki. Lub umieść kursor w wierszu i naciśnij **klawisze Ctrl**+ **.** (kropka).
+1. Po wystąpieniu naruszenia, umieść wskaźnik myszy nad naruszeniem w edytorze i otwórz menu żarówki. Lub umieść kursor w wierszu i naciśnij klawisz **Ctrl** + **.** (kropka).
 
-2. W menu żarówki wybierz pozycję **Konfiguruj lub Pomiń problemy** > **Skonfiguruj \<rule identyfikator > ważność**.
+2. W menu żarówki wybierz pozycję **Konfiguruj lub Pomiń problemy** > **skonfiguruj \<rule identyfikator > ważność**.
 
    ![Skonfiguruj ważność reguły z poziomu menu żarówki w programie Visual Studio](media/configure-rule-severity.png)
 
@@ -126,7 +126,7 @@ Program Visual Studio zapewnia wygodny sposób konfigurowania ważności reguły
 
 ### <a name="set-rule-severity-from-solution-explorer"></a>Ustaw ważność reguły na podstawie Eksplorator rozwiązań
 
-1. W **Eksplorator rozwiązań**rozwiń węzeł **odwołuje**się do**analizatorów**  >  (lub **zależności** > **analizatorów** dla projektów .NET Core).
+1. W **Eksplorator rozwiązań**rozwiń węzeł **odwołania**  > **analizatory** (lub **zależności**  > **analizatory** dla projektów .NET Core).
 
 1. Rozwiń zestaw, który zawiera regułę, dla której chcesz ustawić ważność.
 
@@ -138,7 +138,7 @@ Program Visual Studio zapewnia wygodny sposób konfigurowania ważności reguły
 
 ![Plik zestawu reguł w Eksplorator rozwiązań](media/ruleset-in-solution-explorer.png)
 
-1. Otwórz plik aktywnego zestawu reguł, klikając go dwukrotnie w **Eksplorator rozwiązań**, wybierając pozycję **Otwórz aktywny zestaw reguł** w menu rozwijanym prawym przyciskiem myszy węzeł **odwołania** > **analizatory** lub wybierając pozycję **Otwórz** w **kodzie** Strona właściwości analizy dla projektu.
+1. Otwórz plik aktywnego zestawu reguł, klikając go dwukrotnie w **Eksplorator rozwiązań**, wybierając pozycję **Otwórz aktywny zestaw reguł** w menu rozwijanym prawym przyciskiem myszy węzła **odwołania**  > **analizatory** , lub wybierając pozycję **Otwórz** w kodzie.Strona właściwości analizy dla projektu.
 
    Jeśli po raz pierwszy edytujesz zestaw reguł, program Visual Studio tworzy kopię domyślnego pliku zestawu reguł, nazywa ją *\<projectname >. regułą*i dodaje ją do projektu. Ten niestandardowy zestaw reguł jest również aktywnym zestawem reguł dla projektu.
 
@@ -163,7 +163,7 @@ Istnieje wiele sposobów pomijania naruszeń reguł:
 
 - Z menu **Analizuj**
 
-  Wybierz pozycję **analizuj** > **Kompiluj i Pomiń aktywne problemy** na pasku menu, aby pominąć wszystkie bieżące naruszenia. Jest to czasami określane jako "określania poziomu odniesienia".
+  Wybierz pozycję **analizuj**  > **Kompiluj i Pomiń aktywne problemy** na pasku menu, aby pominąć wszystkie bieżące naruszenia. Jest to czasami określane jako "określania poziomu odniesienia".
 
 ::: moniker-end
 
@@ -171,7 +171,7 @@ Istnieje wiele sposobów pomijania naruszeń reguł:
 
 - Z menu **Analizuj**
 
-  Wybierz pozycję **analizuj** > **Uruchom analizę kodu i Pomiń aktywne problemy** na pasku menu, aby pominąć wszystkie bieżące naruszenia. Jest to czasami określane jako "określania poziomu odniesienia".
+  Wybierz pozycję **analizuj**  > **Uruchom analizę kodu i Pomiń aktywne problemy** na pasku menu, aby pominąć wszystkie bieżące naruszenia. Jest to czasami określane jako "określania poziomu odniesienia".
 
 ::: moniker-end
 
@@ -185,19 +185,19 @@ Istnieje wiele sposobów pomijania naruszeń reguł:
 
 - Z **edytora kodu**
 
-  Umieść kursor w wierszu kodu z naruszeniem i naciśnij **klawisze Ctrl**+**okres (.)** , aby otworzyć menu **szybkie akcje** . Wybierz pozycję **Pomiń CAXXXX** > **w źródle/w pliku**pominięć.
+  Umieść kursor w wierszu kodu z naruszeniem, a następnie naciśnij klawisz **Ctrl** +**kropki (.)** , aby otworzyć menu **szybkie akcje** . Wybierz opcję **Pomijaj CAXXXX**  > **w pliku źródłowym/in**.
 
   ![Pomiń diagnostykę z menu szybkich akcji](media/suppress-diagnostic-from-editor.png)
 
 - Z **Lista błędów**
 
-  Wybierz reguły, które mają zostać pominięte, a następnie kliknij prawym przyciskiem myszy i wybierz pozycję **pomiń** > **w pliku źródłowym/in**.
+  Wybierz reguły, które chcesz pominąć, a następnie kliknij prawym przyciskiem myszy i wybierz polecenie **pomiń**  > **w polu Źródło/w pliku**pominięć.
 
   - W przypadku pominięcia **w źródle**zostanie otwarte okno dialogowe **Podgląd zmian** z podglądem C# [#pragma](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) lub Visual Basic #Disable dyrektywie [ostrzegawczej](/dotnet/visual-basic/language-reference/directives/directives) , która jest dodawana do kodu źródłowego.
 
     ![Wersja zapoznawcza dodawania #pragma ostrzeżenie w pliku kodu](media/pragma-warning-preview.png)
 
-  - W przypadku wybrania **w pliku pomijania**zostanie otwarte okno dialogowe **Podgląd zmian** i zostanie wyświetlony podgląd atrybutu <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>, który jest dodawany do globalnego pliku pominięć.
+  - W przypadku wybrania **w pliku pomijania**zostanie otwarte okno dialogowe **Podgląd zmian** i zostanie wyświetlony podgląd atrybutu <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>, który zostanie dodany do globalnego pliku pominięć.
 
     ![Wersja zapoznawcza dodawania atrybutu SuppressMessage do pliku pominięcia](media/preview-changes-in-suppression-file.png)
 

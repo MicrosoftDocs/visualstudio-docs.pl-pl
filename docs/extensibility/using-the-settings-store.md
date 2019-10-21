@@ -1,5 +1,5 @@
 ---
-title: Za pomocą Store ustawienia | Dokumentacja firmy Microsoft
+title: Korzystanie z magazynu ustawień | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,33 +10,33 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b4487020232b897d62711bb9053f43ad2ef2694f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f9c42835e720fd3c33e53d862192e3e2863a4423
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338110"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72632596"
 ---
 # <a name="using-the-settings-store"></a>Korzystanie z magazynu ustawień
-Istnieją dwa rodzaje ustawień magazynów:
+Istnieją dwa rodzaje magazynów ustawień:
 
-- Ustawienia konfiguracji, które są tylko do odczytu ustawień programu Visual Studio i pakietu VSPackage. Program Visual Studio scala ustawienia ze wszystkich wygenerowanych plików znanych .pkgdef tego magazynu.
+- Ustawienia konfiguracji, które są tylko do odczytu i są ustawieniami programu Visual Studio i pakietu VSPackage. Program Visual Studio scala ustawienia ze wszystkich znanych plików. pkgdef w tym magazynie.
 
-- Ustawienia użytkownika, które są zapisywalne ustawienia takie jak te, które są wyświetlane na stronach **opcje** okno dialogowe strony właściwości i niektórych innych oknach dialogowych. Rozszerzenia programu Visual Studio może użyć lokalnego przechowywania niewielkich ilości danych.
+- Ustawienia użytkownika, które są zapisywalne ustawienia, takie jak te, które są wyświetlane na stronach w oknie dialogowym **Opcje** , strony właściwości i niektóre inne okna dialogowe. Rozszerzenia programu Visual Studio mogą ich używać do lokalnego przechowywania niewielkich ilości danych.
 
-  W tym instruktażu pokazano, jak można odczytać danych z magazynu ustawień konfiguracji. Zobacz [zapisywania Store ustawienia użytkownika](../extensibility/writing-to-the-user-settings-store.md) opis zapisu w magazynie ustawień użytkownika.
+  W tym instruktażu przedstawiono sposób odczytywania danych z magazynu ustawień konfiguracji. Zapoznaj się z artykułem [Zapisywanie w magazynie ustawień użytkownika,](../extensibility/writing-to-the-user-settings-store.md) aby dowiedzieć się, jak pisać do magazynu ustawień użytkownika.
 
-## <a name="creating-the-example-project"></a>Tworzenie projektu w przykładzie
- W tej sekcji pokazano, jak utworzyć projekt proste rozszerzenie za pomocą polecenia menu celów demonstracyjnych.
+## <a name="creating-the-example-project"></a>Tworzenie przykładowego projektu
+ W tej sekcji przedstawiono sposób tworzenia prostego projektu rozszerzenia z poleceniem menu dla demonstracji.
 
-1. Każde rozszerzenie programu Visual Studio rozpoczyna się od Projekt wdrożenia VSIX, który będzie zawierać zasoby rozszerzenia. Tworzenie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu VSIX, o nazwie `SettingsStoreExtension`. Można znaleźć szablonu projektu VSIX w **nowy projekt** , okno dialogowe **Visual C# / rozszerzalności**.
+1. Każde rozszerzenie programu Visual Studio rozpoczyna się od projektu wdrożenia VSIX, który będzie zawierać zasoby rozszerzenia. Utwórz projekt [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] VSIX o nazwie `SettingsStoreExtension`. Szablon projektu VSIX można znaleźć w oknie dialogowym **Nowy projekt** w obszarze **Wizualizacja C# /rozszerzalność**.
 
-2. Teraz Dodaj polecenie niestandardowe szablon elementu o nazwie **SettingsStoreCommand**. W **Dodaj nowy element** okno dialogowe, przejdź do **Visual C# / rozszerzalności** i wybierz **polecenia niestandardowego**. W **nazwa** u dołu okna, Zmień nazwę pliku polecenia, aby **SettingsStoreCommand.cs**. Aby uzyskać więcej informacji na temat tworzenia niestandardowych poleceń, zobacz [Tworzenie rozszerzenia za pomocą polecenia Menu](../extensibility/creating-an-extension-with-a-menu-command.md)
+2. Teraz Dodaj niestandardowy szablon elementu polecenia o nazwie **SettingsStoreCommand**. W oknie dialogowym **Dodaj nowy element** przejdź do pozycji **Wizualizacja C# /rozszerzalność** i wybierz **polecenie niestandardowe**. W polu **Nazwa** w dolnej części okna Zmień nazwę pliku polecenia na **SettingsStoreCommand.cs**. Aby uzyskać więcej informacji na temat tworzenia polecenia niestandardowego, zobacz [Tworzenie rozszerzenia za pomocą polecenia menu](../extensibility/creating-an-extension-with-a-menu-command.md)
 
-## <a name="using-the-configuration-settings-store"></a>Za pomocą Store ustawień konfiguracji
- W tej sekcji pokazano, jak wykrywać i wyświetlanie ustawień konfiguracji.
+## <a name="using-the-configuration-settings-store"></a>Korzystanie z magazynu ustawień konfiguracji
+ W tej sekcji przedstawiono sposób wykrywania i wyświetlania ustawień konfiguracji.
 
-1. W pliku SettingsStorageCommand.cs, Dodaj następujące instrukcje using:
+1. W pliku SettingsStorageCommand.cs Dodaj następujące dyrektywy using:
 
    ```
    using System.Collections.Generic;
@@ -45,16 +45,16 @@ Istnieją dwa rodzaje ustawień magazynów:
    using System.Windows.Forms;
    ```
 
-2. W `MenuItemCallback`, Usuń treść metody i dodaj następujące wiersze Pobierz z magazynu ustawień konfiguracji:
+2. W `MenuItemCallback` Usuń treść metody, a następnie Dodaj następujące wiersze do magazynu ustawień konfiguracji:
 
    ```
    SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);
    SettingsStore configurationSettingsStore = settingsManager.GetReadOnlySettingsStore(SettingsScope.Configuration);
    ```
 
-    <xref:Microsoft.VisualStudio.Shell.Settings.ShellSettingsManager> Jest klasą pomocnika zarządzane za pośrednictwem <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsManager> usługi.
+    @No__t_0 jest zarządzaną klasą pomocnika za pośrednictwem usługi <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsManager>.
 
-3. Teraz Dowiedz się, czy są zainstalowane narzędzia Windows Phone. Kod powinien wyglądać następująco:
+3. Teraz Dowiedz się, czy zainstalowano narzędzia Windows Phone. Kod powinien wyglądać następująco:
 
    ```
    private void MenuItemCallback(object sender, EventArgs e)
@@ -67,21 +67,21 @@ Istnieją dwa rodzaje ustawień magazynów:
    }
    ```
 
-4. Przetestuj kod. Skompiluj projekt, a następnie rozpocząć debugowanie.
+4. Przetestuj kod. Skompiluj projekt i Rozpocznij debugowanie.
 
-5. W doświadczalnym wystąpieniu na **narzędzia** menu, kliknij przycisk **wywołania SettingsStoreCommand**.
+5. W eksperymentalnym wystąpieniu, w menu **Narzędzia** kliknij polecenie **Wywołaj SettingsStoreCommand**.
 
-    Powinny zostać wyświetlone okno komunikatu powiedzenie **Microsoft Windows Phone Developer Tools:** następuje **True** lub **False**.
+    Powinno zostać wyświetlone okno komunikatu z informacją, że **firma Microsoft Windows Phone narzędzia deweloperskie:** po którym następuje **wartość true** lub **false**.
 
-   Visual Studio przechowuje magazynu ustawień w rejestrze systemowym.
+   Program Visual Studio utrzymuje magazyn ustawień w rejestrze systemowym.
 
-#### <a name="to-use-a-registry-editor-to-verify-configuration-settings"></a>Aby sprawdzić ustawienia konfiguracji za pomocą Edytora rejestru
+#### <a name="to-use-a-registry-editor-to-verify-configuration-settings"></a>Aby sprawdzić ustawienia konfiguracji przy użyciu Edytora rejestru
 
-1. Open Regedit.exe.
+1. Otwórz regedit. exe.
 
-2. Przejdź do HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp_Config\InstalledProducts\\.
+2. Przejdź do HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp_Config\InstalledProducts \\.
 
     > [!NOTE]
-    > Upewnij się, że przeglądasz klucz, który zawiera \14.0Exp_Config\ i nie \14.0_Config\\. Po uruchomieniu doświadczalnym wystąpieniu programu Visual Studio, ustawienia konfiguracyjne znajdują się w gałęzi rejestru "14.0Exp_Config".
+    > Upewnij się, że przeglądasz klucz, który zawiera \14.0Exp_Config\, a nie \14.0_Config \\. Po uruchomieniu eksperymentalnego wystąpienia programu Visual Studio ustawienia konfiguracji znajdują się w gałęzi rejestru "14.0 Exp_Config".
 
-3. Rozwiń węzeł \Installed Products\. Jeśli komunikat w poprzednich krokach jest **zainstalowane narzędzia dla deweloperów do programu Microsoft Windows Phone: Wartość true,** , a następnie \Installed Products\ powinien zawierać węzeł Microsoft Windows Phone Developer Tools. Jeśli komunikat jest **zainstalowane narzędzia dla deweloperów do programu Microsoft Windows Phone: FALSE**, a następnie \Installed Products\ nie może zawierać węzeł Microsoft Windows Phone Developer Tools.
+3. Rozwiń węzeł \Installed Productss \. Jeśli komunikat w poprzednich krokach to **Microsoft Windows Phone narzędzia deweloperskie zainstalowany: true**, a następnie \Installed Products \ powinien zawierać węzeł Narzędzia deweloperskie Windows Phone firmy Microsoft. Jeśli wiadomość jest **zainstalowaną przez firmę microsoft Windows Phone narzędzia deweloperskie: false**, \Installed produkty \ nie powinny zawierać węzła narzędzia deweloperskie Windows Phone firmy Microsoft.

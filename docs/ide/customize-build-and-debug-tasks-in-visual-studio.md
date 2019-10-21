@@ -1,5 +1,5 @@
 ---
-title: Dostosowywanie zadań kompilacji debugowania, za pomocą pliku launch.vs.json tasks.vs.json
+title: Dostosuj zadania debugowania kompilacji za pomocą zadań. vs. JSON uruchamiania. vs. JSON
 ms.date: 02/21/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,51 +8,51 @@ helpviewer_keywords:
 - customize codebases [Visual Studio]
 - tasks.vs.json file [Visual Studio]
 - launch.vs.json file [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca5a80c07cb64cfd638542da4e1deefe7e373b18
-ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.openlocfilehash: 6a9101db18c8c61f249d9f0b818a75024270a079
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71342395"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652573"
 ---
-# <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Dostosowywanie kompilacji i debugowania zadań rozwoju "Otwórz Folder"
+# <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Dostosowywanie zadań kompilacji i debugowania dla opracowywania aplikacji "Otwieranie folderu"
 
-Program Visual Studio wie, jak uruchamiać wiele różnych językach i bazach kodu, ale nie wie, jak uruchomić wszystko. Jeśli użytkownik [otworzyć folder kodu](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md) w programie Visual Studio i Visual Studio wie, jak uruchomić kod, uruchom go następnie od razu bez przeprowadzania dodatkowej konfiguracji.
+Program Visual Studio wie, jak uruchamiać wiele różnych języków i baz kodu, ale nie wie, jak uruchomić wszystko. Jeśli [otwarto folder kodu](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md) w programie Visual Studio, a program Visual Studio wie, jak uruchomić kod, możesz go uruchomić od razu bez żadnej dodatkowej konfiguracji.
 
-Jeśli kodu używa niestandardowych narzędzi kompilacji, które nie rozpoznaje programu Visual Studio, musisz podać kilka szczegółów konfiguracji, do uruchamiania i debugowania kodu w programie Visual Studio. Poinstruować Visual Studio, jak tworzyć kod, definiując *zadania kompilacji*. Można utworzyć jeden lub więcej zadań, aby określić wszystkie elementy wymagane przez język do kompilowanie i uruchamianie jej kodu kompilacji. Można również utworzyć dowolne zadania, które prawie wszystko, co chcesz zrobić. Na przykład można utworzyć zadania, aby wyświetlić listę zawartości folderu lub aby zmienić nazwę pliku.
+Jeśli baza kodu używa niestandardowych narzędzi kompilacji, które nie są rozpoznawane przez program Visual Studio, musisz podać szczegóły konfiguracji, aby uruchomić i debugować kod w programie Visual Studio. Nakazujesz programowi Visual Studio tworzenie kodu przez definiowanie *zadań kompilacji*. Można utworzyć co najmniej jedno zadanie kompilacji, aby określić wszystkie elementy, które język musi skompilować i uruchomić swój kod. Możesz również utworzyć dowolne zadania, które mogą robić niemal wszystko. Na przykład można utworzyć zadanie, aby wyświetlić listę zawartości folderu lub zmienić nazwę pliku.
 
-Dostosowywanie bez projektu bazę kodu przy użyciu następujących *.json* plików:
+Dostosuj bazę kodu o niemniejszej projekcie przy użyciu następujących plików *JSON* :
 
 |Nazwa pliku|Cel|
 |-|-|
-|*tasks.vs.json*|Określenie niestandardowych poleceń kompilacji i przełączniki kompilatora i dowolnego (bez kompilacji powiązane) zadania.<br>Dostępne za pośrednictwem **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy element menu **Konfiguruj zadania**.|
-|*launch.vs.json*|Określ argumenty wiersza polecenia do debugowania.<br>Dostępne za pośrednictwem **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy element menu **Ustawienia debugowania i uruchamiania**.|
+|*Tasks. vs. JSON*|Określ niestandardowe polecenia kompilacji i przełączniki kompilatora oraz dowolne zadania (niepowiązane z kompilacją).<br>Dostępne za pośrednictwem **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy element menu **Konfiguruj zadania**.|
+|*Uruchom plik. vs. JSON*|Określ argumenty wiersza polecenia dla debugowania.<br>Dostępne za pośrednictwem **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy element menu **Ustawienia debugowania i uruchamiania**.|
 
-Te *.json* pliki znajdują się w ukrytym folderze o nazwie *.vs* w folderze głównym kodu. *Tasks.vs.json* i *launch.vs.json* pliki są tworzone przez program Visual Studio na zgodnie z potrzebami, po wybraniu **skonfigurować zadania** lub **debugowania Ustawienia i uruchamiania** do pliku lub folderu w **Eksploratora rozwiązań**. Te *.json* pliki są ukryte, ponieważ użytkownicy zwykle nie chcesz zaewidencjonować je w kontroli źródła. Jednak jeśli chcesz mieć możliwość sprawdzania ich do kontroli źródła, przeciągnij pliki w folderze głównym w bazie kodu, gdzie są one widoczne.
+Te pliki *. JSON* znajdują się w ukrytym folderze o nazwie *. vs* w folderze głównym bazy kodu. Pliki *Tasks. vs. JSON* i *Launch. vs. JSON* są tworzone przez program Visual Studio w zależności od tego, gdy użytkownik wybierze opcję **Skonfiguruj zadania** lub **Debuguj i uruchom ustawienia** dla pliku lub folderu w **Eksplorator rozwiązań**. Te pliki *. JSON* są ukryte, ponieważ zazwyczaj użytkownicy nie chcą zaewidencjonować ich do kontroli źródła. Jeśli jednak chcesz mieć możliwość zaewidencjonowania ich w kontroli źródła, przeciągnij pliki do katalogu głównego bazy kodu, gdzie są widoczne.
 
 > [!TIP]
-> Aby wyświetlić ukryte pliki w programie Visual Studio, wybierz **Pokaż wszystkie pliki** znajdujący się na **Eksploratora rozwiązań** paska narzędzi.
+> Aby wyświetlić ukryte pliki w programie Visual Studio, wybierz przycisk **Pokaż wszystkie pliki** na pasku narzędzi **Eksplorator rozwiązań** .
 
-## <a name="define-tasks-with-tasksvsjson"></a>Definiowanie zadań za pomocą pliku tasks.vs.json
+## <a name="define-tasks-with-tasksvsjson"></a>Definiowanie zadań przy użyciu zadań. vs. JSON
 
-Można zautomatyzować skrypty kompilacji lub innych zewnętrznych operacji na plikach, znajdującym się w bieżącym obszarze roboczym, uruchamiając je jako zadania bezpośrednio w środowisku IDE. Można skonfigurować nowe zadanie, kliknij prawym przyciskiem myszy pliku lub folderu i wybierając **skonfigurować zadania**.
+Możesz zautomatyzować skrypty kompilacji lub wszystkie inne operacje zewnętrzne na plikach znajdujących się w bieżącym obszarze roboczym, uruchamiając je jako zadania bezpośrednio w środowisku IDE. Nowe zadanie można skonfigurować, klikając prawym przyciskiem myszy plik lub folder, a następnie wybierając pozycję **Konfiguruj zadania**.
 
-![Konfigurowanie menu zadania](../ide/media/customize-configure-tasks-menu.png)
+![Menu Konfiguruj zadania](../ide/media/customize-configure-tasks-menu.png)
 
-Tworzy (lub zostanie otwarty) *tasks.vs.json* w pliku *.vs* folderu. Można zdefiniować zadanie kompilacji lub dowolne zadanie w tym pliku, a następnie wywołać je przy użyciu nazwy podaną w **Eksplorator rozwiązań** kliknięciu prawym przyciskiem myszy.
+Spowoduje to utworzenie (lub otwarcie) pliku *Tasks. vs. JSON* w folderze *. vs* . Można zdefiniować zadanie kompilacji lub dowolne zadanie w tym pliku, a następnie wywołać je przy użyciu nazwy podaną w **Eksplorator rozwiązań** kliknięciu prawym przyciskiem myszy.
 
-Niestandardowe zadania można dodawać do pojedynczych plików lub do wszystkich plików określonego typu. Na przykład pliki pakietu NuGet można skonfigurować, aby zadanie "Przywróć Packages" lub wszystkie pliki źródłowe można skonfigurować tak, aby zadanie analizy statycznej, takich jak linter dla wszystkich *js* plików.
+Zadania niestandardowe można dodawać do poszczególnych plików lub do wszystkich plików określonego typu. Na przykład pliki pakietów NuGet można skonfigurować w taki sposób, aby miało zadanie "Przywróć pakiety", lub wszystkie pliki źródłowe można skonfigurować tak, aby miało zadanie statycznej analizy, takie jak Linter dla wszystkich plików *js* .
 
-### <a name="define-custom-build-tasks"></a>Definiowanie zadań kompilacji niestandardowej
+### <a name="define-custom-build-tasks"></a>Definiowanie niestandardowych zadań kompilacji
 
-Jeśli baza kodu używa niestandardowych narzędzi kompilacji, które nie rozpoznaje programu Visual Studio, nie można uruchomić i debugowania kodu w programie Visual Studio, dopóki nie można wykonać kilka kroków konfiguracji. Program Visual Studio udostępnia *zadania kompilacji* w przypadku, gdy program Visual Studio można stwierdzić sposób tworzenia, ponownej kompilacji i czyszczenia kodu. *Tasks.vs.json* kompilacji pozamałżeńskie pliku zadania pętli wewnętrzny rozwoju Visual Studio niestandardowe narzędzia build tools używane przez bazy kodu.
+Jeśli baza kodu używa niestandardowych narzędzi kompilacji, które nie są rozpoznawane przez program Visual Studio, nie można uruchomić i debugować kodu w programie Visual Studio, dopóki nie zostaną wykonane pewne czynności konfiguracyjne. Program Visual Studio zawiera *zadania kompilacji* , w których można poinformować program Visual Studio, jak skompilować, skompilować i wyczyścić swój kod. Plik zadania Build Tasks *. vs. JSON* Couples wewnętrzną pętlę programistyczną programu Visual Studio do niestandardowych narzędzi kompilacji używanych przez bazę kodu.
 
-Należy wziąć pod uwagę bazy kodu, który składa się z pojedynczego C# pliku o nazwie *hello.cs*. *Pliku reguł programu make* dla takiego kodu może wyglądać następująco:
+Rozważmy bazę kodu, która składa C# się z pojedynczego pliku o nazwie *Hello.cs*. Plik *reguł programu make* dla takiej bazy kodu może wyglądać następująco:
 
 <!-- markdownlint-disable MD010 -->
 ```makefile
@@ -73,7 +73,7 @@ bin:
 ```
 <!-- markdownlint-enable MD010 -->
 
-Aby uzyskać takie *pliku reguł programu make* , zawierający kompilacji czyste, a odbudować elementów docelowych, można zdefiniować następujące *tasks.vs.json* pliku. Zawiera on trzy zadania kompilacji na potrzeby kompilowania, ponownie skompilować i czyszczenia kodu za pomocą NMAKE jako narzędzia kompilacji.
+W przypadku takiego pliku *reguł programu make* , który zawiera elementy docelowe kompilacji, czyszczenia i odbudowywania, można zdefiniować następujące pliki *zadań. vs. JSON* . Zawiera trzy zadania kompilacji do kompilowania, ponownego kompilowania i czyszczenia bazy kodu przy użyciu NMAKE jako narzędzia do kompilowania.
 
 ```json
 {
@@ -117,20 +117,20 @@ Aby uzyskać takie *pliku reguł programu make* , zawierający kompilacji czyste
 }
 ```
 
-Po zdefiniowaniu zadań kompilacji w pliku *Tasks. vs. JSON*do odpowiednich plików w **Eksplorator rozwiązań**są dodawane dodatkowe menu z prawym przyciskiem myszy (menu kontekstowe). Na przykład "kompilacja", "rebuild" i "czysta" opcje są dodawane do menu kontekstowego dowolnego *pliku reguł programu make* plików.
+Po zdefiniowaniu zadań kompilacji w pliku *Tasks. vs. JSON*do odpowiednich plików w **Eksplorator rozwiązań**są dodawane dodatkowe menu z prawym przyciskiem myszy (menu kontekstowe). W tym przykładzie opcje "build", "build" i "Clean" są dodawane do menu kontekstowego dowolnych plików *reguł programu make* .
 
-![menu kontekstowe pliku reguł programu make, kompilacji, ponownej kompilacji i czyszczenia](media/customize-build-rebuild-clean.png)
+![menu kontekstowe pliku reguł programu make z kompilacjami, odbudowywaniem i czyszczeniem](media/customize-build-rebuild-clean.png)
 
 > [!NOTE]
-> Polecenia są wyświetlane w menu kontekstowym w obszarze **skonfigurować zadania** polecenia ze względu na ich `contextType` ustawienia. "kompilacja", "rebuild" i "czysta" są poleceń kompilacji, aby były widoczne w sekcji kompilacji w trakcie menu kontekstowego.
+> Polecenia pojawiają się w menu kontekstowym w ramach polecenia **Konfiguruj zadania** z powodu ich `contextType` ustawień. "Kompilacja", "Kompiluj" i "Clean" są poleceniami kompilacji, więc są one wyświetlane w sekcji Kompilacja w środku menu kontekstowego.
 
-Zadanie podrzędne jest wykonywane po wybraniu jednej z poniższych opcji. Dane wyjściowe pojawia się w **dane wyjściowe** okna i błędy kompilacji są wyświetlane w **lista błędów**.
+Po wybraniu jednej z tych opcji zadanie jest wykonywane. Dane wyjściowe pojawiają się w oknie **danych wyjściowych** , a błędy kompilacji pojawiają się w **Lista błędów**.
 
 ### <a name="define-arbitrary-tasks"></a>Definiowanie dowolnych zadań
 
-Można zdefiniować dowolnego zadania w *tasks.vs.json* pliku, aby wszystko, co chcesz zrobić. Na przykład można zdefiniować zadania, aby wyświetlić nazwę aktualnie wybranego pliku w **dane wyjściowe** okna, lub aby wyświetlić listę plików w określonym katalogu.
+Możesz zdefiniować dowolne zadania w pliku *Tasks. vs. JSON* , aby zrobić to w dowolny sposób. Na przykład można zdefiniować zadanie, aby wyświetlić nazwę aktualnie wybranego pliku w oknie **danych wyjściowych** lub listę plików w określonym katalogu.
 
-W poniższym przykładzie przedstawiono *tasks.vs.json* pliku, który definiuje jedno zadanie. Po wywołaniu, zadanie Wyświetla nazwę pliku z aktualnie wybranej *js* pliku.
+W poniższym przykładzie przedstawiono plik *Tasks. vs. JSON* , który definiuje pojedyncze zadanie. Po wywołaniu, zadanie wyświetla nazwę pliku aktualnie wybranego pliku *js* .
 
 ```json
 {
@@ -147,18 +147,18 @@ W poniższym przykładzie przedstawiono *tasks.vs.json* pliku, który definiuje 
 }
 ```
 
-- `taskName` Określa nazwę, która pojawia się w menu rozwijanym prawym przyciskiem myszy.
-- `appliesTo` Określa pliki, które można wykonać polecenia na.
-- `command` Właściwość określa polecenie do wywołania. W tym przykładzie `COMSPEC` zmienna środowiskowa jest używany do identyfikowania interpretera wiersza polecenia, zwykle *cmd.exe*.
-- `args` Właściwość określa argumenty do przekazania do wywoływanej polecenia.
-- `${file}` — Makro pobiera wybranego pliku w **Eksploratora rozwiązań**.
+- `taskName` określa nazwę, która pojawia się w menu rozwijanym prawym przyciskiem myszy.
+- `appliesTo` określa, które pliki można wykonać polecenie.
+- Właściwość `command` Określa polecenie do wywołania. W tym przykładzie zmienna środowiskowa `COMSPEC` służy do identyfikowania interpretera wiersza polecenia, zazwyczaj *cmd. exe*.
+- Właściwość `args` określa argumenty, które mają zostać przekazane do wywoływanego polecenia.
+- Makro `${file}` pobiera wybrany plik z **Eksplorator rozwiązań**.
 
-Po zapisaniu *tasks.vs.json*, kliknąć prawym przyciskiem myszy na dowolnym *js* plików w folderze, a następnie wybierz **Echo, nazwa_pliku**. Nazwa pliku jest wyświetlana w **dane wyjściowe** okna.
+Po zapisaniu *zadań. vs. JSON*można kliknąć prawym przyciskiem myszy dowolny plik *js* w folderze, a następnie wybrać polecenie **echo filename**. Nazwa pliku zostanie wyświetlona w oknie **danych wyjściowych** .
 
 > [!NOTE]
-> Jeśli nie zawiera kodu *tasks.vs.json* pliku, możesz ją utworzyć, wybierając **skonfigurować zadania** menu kontekście lub kliknij prawym przyciskiem myszy plik w **Eksploratora rozwiązań**.
+> Jeśli baza kodu nie zawiera pliku *Tasks. vs. JSON* , można go utworzyć, wybierając pozycję **Konfiguruj zadania** w menu kontekstowym lub prawym przyciskiem myszy pliku w **Eksplorator rozwiązań**.
 
-W następnym przykładzie zdefiniowano klasę task, która zawiera listę plików i podfolderów *bin* katalogu.
+W następnym przykładzie zdefiniowano zadanie, które wyświetla listę plików i podfolderów katalogu *bin* .
 
 ```json
 {
@@ -176,64 +176,64 @@ W następnym przykładzie zdefiniowano klasę task, która zawiera listę plikó
 }
 ```
 
-- `${outDir}` zdefiniowano niestandardowego, który jest pierwszy przed `tasks` bloku. Następnie jest wywoływana w `args` właściwości.
+- `${outDir}` jest makrem niestandardowym, które jest najpierw zdefiniowane przed blokiem `tasks`. Jest on następnie wywoływany we właściwości `args`.
 
-To zadanie jest stosowana do wszystkich plików. Po otwarciu menu kontekstowe dla każdego pliku w **Eksploratora rozwiązań**, nazwa zadania **danych wyjściowych listy** pojawia się u dołu menu. Po wybraniu **listy danych wyjściowych**, zawartość *bin* katalogu są wymienione w **dane wyjściowe** okna w programie Visual Studio.
+To zadanie dotyczy wszystkich plików. Po otwarciu menu kontekstowego dla każdego pliku w **Eksplorator rozwiązań**, dane **wyjściowe listy** nazwa zadania są wyświetlane u dołu menu. Po wybraniu opcji dane **wyjściowe listy**zawartość katalogu *bin* zostanie wyświetlona w oknie **danych wyjściowych** w programie Visual Studio.
 
 ![Dowolne zadanie w menu kontekstowym](../ide/media/customize-arbitrary-task-menu.png)
 
 ### <a name="settings-scope"></a>Zakres ustawień
 
-Wiele *tasks.vs.json* pliki mogą znajdować się w głównych i podkatalogi bazę kodu. Ten projekt umożliwia elastyczność mają różne zachowanie w podkatalogach różne bazy kodu. Visual Studio agreguje lub zastępuje ustawienia w całej bazie kodu, priorytetyzowanie plików w następującej kolejności:
+Wiele plików *Tasks. vs. JSON* może istnieć w katalogu głównym i podkatalogach bazy kodu. Ten projekt pozwala elastycznie mieć inne zachowanie w różnych podkatalogach bazy kodu. Program Visual Studio agreguje lub zastępuje ustawienia w całej bazie kodu, priorytetyzacji plików w następującej kolejności:
 
-- Ustawienia plików w folderze głównym *.vs* katalogu.
-- Katalog, w której jest obliczany ustawienie.
-- Katalog nadrzędny bieżący katalog do katalogu głównego.
-- Ustawienia plików w katalogu głównym.
+- Pliki ustawień w katalogu programu *vs* folderu głównego.
+- Katalog, w którym jest obliczane ustawienie.
+- Katalog nadrzędny bieżącego katalogu, cały sposób do katalogu głównego.
+- Pliki ustawień w katalogu głównym.
 
-Te reguły agregacji mają zastosowanie do *zadań. vs. JSON*. Instrukcje dotyczące sposobu ustawienia w innym pliku są agregowane zobacz sekcję odpowiednie dla tego pliku, w tym artykule.
+Te reguły agregacji mają zastosowanie do *zadań. vs. JSON*. Aby uzyskać informacje na temat sposobu agregowania ustawień w innym pliku, zapoznaj się z odpowiednią sekcją tego pliku w tym artykule.
 
-### <a name="properties-for-tasksvsjson"></a>Właściwości pliku tasks.vs.json
+### <a name="properties-for-tasksvsjson"></a>Właściwości Tasks. vs. JSON
 
-W tej sekcji opisano niektóre właściwości, można określić w *tasks.vs.json*.
+W tej sekcji opisano niektóre właściwości, które można określić w pliku *Tasks. vs. JSON*.
 
-#### <a name="appliesto"></a>AppliesTo
+#### <a name="appliesto"></a>Zignorowan
 
-Można utworzyć zadania dla dowolnego pliku lub folderu, określając jej nazwę w `appliesTo` pole, na przykład `"appliesTo": "hello.js"`. Następujące maski plików mogą być używane jako wartości:
+Można utworzyć zadania dla dowolnego pliku lub folderu, określając jego nazwę w polu `appliesTo`, na przykład `"appliesTo": "hello.js"`. Następujące maski plików mogą być używane jako wartości:
 
 |||
 |-|-|
 |`"*"`| zadanie jest dostępne dla wszystkich plików i folderów w obszarze roboczym|
 |`"*/"`| zadanie jest dostępne dla wszystkich folderów w obszarze roboczym|
-|`"*.js"`| zadanie jest dostępny dla wszystkich plików z rozszerzeniem *js* w obszarze roboczym|
-|`"/*.js"`| zadanie jest dostępny dla wszystkich plików z rozszerzeniem *js* w katalogu głównym obszaru roboczego|
-|`"src/*/"`| zadanie jest dostępne dla wszystkich podfolderów *src* folderu|
-|`"makefile"`| zadanie jest dostępny dla wszystkich *pliku reguł programu make* plików w obszarze roboczym|
-|`"/makefile"`| zadanie jest dostępna tylko dla *pliku reguł programu make* w katalogu głównym obszaru roboczego|
+|`"*.js"`| zadanie jest dostępne dla wszystkich plików z rozszerzeniem *js* w obszarze roboczym|
+|`"/*.js"`| zadanie jest dostępne dla wszystkich plików z rozszerzeniem *js* w folderze głównym obszaru roboczego|
+|`"src/*/"`| zadanie jest dostępne dla wszystkich podfolderów folderu *src*|
+|`"makefile"`| zadanie jest dostępne dla wszystkich plików pliku *reguł programu make* w obszarze roboczym|
+|`"/makefile"`| zadanie jest dostępne tylko dla pliku *reguł programu make* w folderze głównym obszaru roboczego|
 
-#### <a name="macros-for-tasksvsjson"></a>Makra dla tasks.vs.json
+#### <a name="macros-for-tasksvsjson"></a>Makra zadań. vs. JSON
 
 |||
 |-|-|
-|`${env.<VARIABLE>}`| Określa wszystkie zmienne środowiskowe (np. ${env. PATH}, ${env.COMSPEC} i tak dalej) który jest skonfigurowany dla wiersza polecenia dla deweloperów. Aby uzyskać więcej informacji, zobacz [wiersz polecenia programisty dla programu Visual Studio](/dotnet/framework/tools/developer-command-prompt-for-vs).|
+|`${env.<VARIABLE>}`| Określa zmienną środowiskową (na przykład $ {ENV. PATH}, $ {ENV. wywołana} itd.), która jest ustawiona dla wiersza polecenia dewelopera. Aby uzyskać więcej informacji, zobacz [wiersz polecenia programisty dla programu Visual Studio](/dotnet/framework/tools/developer-command-prompt-for-vs).|
 |`${workspaceRoot}`| Pełna ścieżka do folderu obszaru roboczego (na przykład *C:\sources\hello*)|
-|`${file}`| Pełna ścieżka pliku lub folderu wybrana do uruchomienia tego zadania względem (na przykład *C:\sources\hello\src\hello.js*)|
-|`${relativeFile}`| Względna ścieżka do pliku lub folderu (na przykład *src\hello.js*)|
-|`${fileBasename}`| Nazwa pliku bez ścieżki i rozszerzenia (na przykład *hello*)|
-|`${fileDirname}`| Pełna ścieżka do pliku, z wyjątkiem nazwy pliku (na przykład *C:\sources\hello\src*)|
-|`${fileExtname}`| Rozszerzenie wybranego pliku (na przykład *js*)|
+|`${file}`| Pełna ścieżka pliku lub folderu wybranego do uruchomienia tego zadania (na przykład *C:\sources\hello\src\hello.js*)|
+|`${relativeFile}`| Ścieżka względna do pliku lub folderu (na przykład *src\hello.js*)|
+|`${fileBasename}`| Nazwa pliku bez ścieżki lub rozszerzenia (na przykład *Witaj*)|
+|`${fileDirname}`| Pełna ścieżka do pliku, z wyłączeniem nazwy pliku (na przykład *C:\sources\hello\src*)|
+|`${fileExtname}`| Rozszerzenie wybranego pliku (na przykład *. js*)|
 
-## <a name="configure-debugging-with-launchvsjson"></a>Konfigurowanie debugowania za pomocą pliku launch.vs.json
+## <a name="configure-debugging-with-launchvsjson"></a>Konfigurowanie debugowania przy użyciu pliku Launch. vs. JSON
 
-1. Aby skonfigurować usługi w bazie kodu do debugowania, **Eksploratora rozwiązań** wybierz **ustawienia debugowania i uruchamiania** element menu w menu kliknij prawym przyciskiem myszy lub kontekstu pliku wykonywalnego.
+1. Aby skonfigurować bazę kodu do debugowania, w **Eksplorator rozwiązań** wybierz element menu **Ustawienia debugowania i uruchamiania** w menu kontekstowym lub prawym przyciskiem myszy pliku wykonywalnego.
 
-   ![Ustawienia debugowania i uruchamiania menu kontekstowe](media/customize-debug-launch-menu.png)
+   ![Menu kontekstowe ustawień debugowania i uruchamiania](media/customize-debug-launch-menu.png)
 
-1. W **wybierz debuger** okno dialogowe, wybierz jedną z opcji, a następnie wybierz **wybierz** przycisku.
+1. W oknie dialogowym **Wybierz debuger** wybierz opcję, a następnie wybierz przycisk **Wybierz** .
 
-   ![Wybierz okno dialogowe debugera](media/customize-select-a-debugger.png)
+   ![Okno dialogowe Wybieranie debugera](media/customize-select-a-debugger.png)
 
-   Jeśli *launch.vs.json* plik już nie istnieje, jest on tworzony.
+   Jeśli plik *Launch. vs. JSON* jeszcze nie istnieje, zostanie utworzony.
 
    ```json
    {
@@ -249,20 +249,20 @@ Można utworzyć zadania dla dowolnego pliku lub folderu, określając jej nazw�
    }
    ```
 
-1. Następnie kliknij prawym przyciskiem myszy plik wykonywalny w **Eksploratora rozwiązań**i wybierz polecenie **Ustaw jako element startowy**.
+1. Następnie kliknij prawym przyciskiem myszy plik wykonywalny w **Eksplorator rozwiązań**, a następnie wybierz polecenie **Ustaw jako element startowy**.
 
-   Plik wykonywalny jest wyznaczony jako element startowy dla kodu i debugowania **Start** zmieniony tytuł przycisku, aby odzwierciedlić nazwę plik wykonywalny.
+   Plik wykonywalny jest wyznaczono jako element startowy bazy kodu, a tytuł przycisku **uruchamiania** debugowania zmienia się w celu odzwierciedlenia nazwy pliku wykonywalnego.
 
-   ![Dostosowany przycisk Start](media/customize-start-button.png)
+   ![Dostosowany przycisk startowy](media/customize-start-button.png)
 
-   Po wybraniu **F5**, debuger uruchamia i zatrzymuje w dowolnym punkcie przerwania może zostały skonfigurowane. Wszystkie znajomego debugera systemu windows są dostępne i funkcjonalne.
+   Po wybraniu klawisza **F5**debuger zostanie uruchomiony i zatrzymany w dowolnym punkcie przerwania, który został już ustawiony. Wszystkie znane okna debugera są dostępne i funkcjonalne.
 
    > [!IMPORTANT]
    > Aby uzyskać dodatkowe informacje na temat niestandardowych zadań kompilacji i C++ debugowania w projektach otwartych folderów, zobacz [Otwieranie folderu C++ obsługa dla systemów kompilacji w programie Visual Studio](/cpp/build/open-folder-projects-cpp).
 
-### <a name="specify-arguments-for-debugging"></a>Określ argumenty do debugowania
+### <a name="specify-arguments-for-debugging"></a>Określ argumenty dla debugowania
 
-Można określić argumenty wiersza polecenia do przekazywania do debugowania w *launch.vs.json* pliku. Dodaj argumenty `args` tablicy, jak pokazano w poniższym przykładzie:
+Można określić argumenty wiersza polecenia, które zostaną przekazane do debugowania w pliku *Launch. vs. JSON* . Dodaj argumenty w tablicy `args`, jak pokazano w następującym przykładzie:
 
 ```json
 {
@@ -284,33 +284,33 @@ Można określić argumenty wiersza polecenia do przekazywania do debugowania w 
 }
 ```
 
-Po zapisaniu tego pliku nazwa nowej konfiguracji, który pojawia się na liście rozwijanej debugowania. Ponadto możesz wybrać go, aby uruchomić debuger. Można utworzyć wiele konfiguracji debugowania, jak chcesz.
+Po zapisaniu tego pliku Nazwa nowej konfiguracji zostanie wyświetlona na liście rozwijanej cel debugowania i można ją wybrać, aby uruchomić debuger. Można utworzyć dowolną liczbę konfiguracji debugowania.
 
-![Listy rozwijanej konfiguracji debugowania](media/customize-debug-configurations.png)
+![Lista rozwijana konfiguracji debugowania](media/customize-debug-configurations.png)
 
 > [!NOTE]
-> `configurations` Tablicy właściwości *launch.vs.json* są odczytywane z dwóch lokalizacji pliku&mdash;katalog główny bazie kodu i *.vs* katalogu. Jeśli występuje konflikt, pierwszeństwo mają wartość w *.vs\launch.vs.json*.
+> Właściwość Array `configurations` w pliku *Launch. vs. JSON* jest odczytywana z dwóch lokalizacji plików &mdash;the katalogu głównego dla bazy kodu i katalogu *. vs* . W razie wystąpienia konfliktu priorytet jest przyznany wartości w *. vs\launch.vs.JSON*.
 
-## <a name="additional-settings-files"></a>Pliki dodatkowe ustawienia
+## <a name="additional-settings-files"></a>Dodatkowe pliki ustawień
 
-Oprócz tych trzech *.json* pliki opisane w tym temacie, Visual Studio również odczytuje ustawienia z niektórych dodatkowych plików, jeśli nie istnieją w bazie kodu.
+Oprócz trzech plików *. JSON* opisanych w tym temacie program Visual Studio odczytuje również ustawienia z pewnych dodatkowych plików, jeśli istnieją w bazie kodu.
 
 ### <a name="vscodesettingsjson"></a>.vscode\settings.json
 
-Program Visual Studio odczytuje ograniczone ustawienia z pliku o nazwie *settings.json*, jeśli znajduje się w katalogu o nazwie *.vscode*. Ta funkcjonalność jest dostarczana dla ścieżek bazowych kodu, które wcześniej zostały opracowane w programie Visual Studio Code. Obecnie jedynym ustawieniem, to znaczy odczytywać *.vscode\settings.json* jest `files.exclude`, która filtruje pliki wizualnie w Eksploratorze rozwiązań i niektóre narzędzia do wyszukiwania.
+Program Visual Studio odczytuje ograniczone ustawienia z pliku o nazwie *Settings. JSON*, jeśli znajduje się on w katalogu o nazwie *. programu vscode*. Ta funkcja jest dostępna dla baz kodu, które zostały wcześniej opracowane w Visual Studio Code. Obecnie jedynym ustawieniem, które jest odczytywane z *. vscode\settings.JSON* , jest `files.exclude`, które filtruje pliki wizualnie w Eksplorator rozwiązań i z niektórych narzędzi do wyszukiwania.
 
-Może mieć dowolną liczbę *.vscode\settings.json* pliki w bazie kodu. Odczyt z pliku ustawień dotyczą katalog nadrzędny tworzonego *.vscode* i wszystkich podkatalogach.
+W bazie kodu może być dowolna liczba plików *. vscode\settings.JSON* . Ustawienia odczytane z tego pliku są stosowane do katalogu nadrzędnego elementu *. programu vscode* i wszystkich jego podkatalogów.
 
-### <a name="gitignore"></a>.gitignore
+### <a name="gitignore"></a>. gitignore
 
-*.gitignore* pliki są używane do poinformować usługę Git, które plików do ignorowania; oznacza to, które pliki i katalogi nie chcesz zaewidencjonować. *.gitignore* pliki są zazwyczaj dołączone jako część bazy kodu, aby ustawienia mogą być udostępniane innym programistom bazy kodu. Program Visual Studio odczytuje wzorce w *.gitignore* pliki, aby filtrować elementy wizualne i niektóre wyszukiwania narzędzi.
+pliki *. gitignore* są używane do poinformowania narzędzia Git o ignorowaniu plików; oznacza to, które pliki i katalogi nie mają być zaewidencjonowania. pliki *. gitignore* są zwykle dołączone jako część bazy kodu, dzięki czemu można udostępniać te ustawienia wszystkim deweloperom bazy kodu. Program Visual Studio odczytuje wzorce w plikach *. gitignore* , aby przefiltrować elementy wizualnie i z niektórych narzędzi do wyszukiwania.
 
-Odczytywanie ustawień *.gitignore* pliku są stosowane do katalogu nadrzędnego i wszystkich podkatalogach.
+Ustawienia odczytane z pliku *. gitignore* są stosowane do jego katalogu nadrzędnego i wszystkich podkatalogów.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Tworzenie kodu bez projektów ani rozwiązań](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
-- [Otwórz Folder projektów w języku C++](/cpp/build/open-folder-projects-cpp)
+- [Opracowywanie kodu bez projektów i rozwiązań](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
+- [Otwieranie folderu projektów na potrzeby języka C++](/cpp/build/open-folder-projects-cpp)
 - [CMake projekty dlaC++](/cpp/build/cmake-projects-in-visual-studio)
-- [NMAKE — dokumentacja](/cpp/build/reference/nmake-reference)
+- [Odwołanie NMAKE](/cpp/build/reference/nmake-reference)
 - [Funkcje edytora kodu](../ide/writing-code-in-the-code-and-text-editor.md)

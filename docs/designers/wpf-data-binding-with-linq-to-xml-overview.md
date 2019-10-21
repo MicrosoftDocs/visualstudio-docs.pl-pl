@@ -3,93 +3,93 @@ title: Powiązanie danych WPF za pomocą LINQ to XML — omówienie
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3bf80845-891b-41de-a71b-4080b5bd3ea6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 400686710e09c19a806493232d471a1c946a630d
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 2d306103ff0e63c852d72275d60c3025074cbf15
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715068"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72633533"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>Powiązanie danych WPF za pomocą LINQ to XML — omówienie
 
-W tym temacie przedstawiono funkcje powiązania danych dynamicznych w <xref:System.Xml.Linq> przestrzeni nazw. Te funkcje może służyć jako źródło danych dla elementów interfejsu użytkownika w aplikacjach Windows Presentation Foundation (WPF). W tym scenariuszu opiera się na specjalne *właściwości dynamicznych* z <xref:System.Xml.Linq.XAttribute?displayProperty=fullName> i <xref:System.Xml.Linq.XElement?displayProperty=fullName>.
+W tym temacie wprowadzono funkcje dynamicznego powiązania danych w przestrzeni nazw <xref:System.Xml.Linq>. Te funkcje mogą być używane jako źródło danych dla elementów interfejsu użytkownika w aplikacjach Windows Presentation Foundation (WPF). Ten scenariusz opiera się na specjalnych *właściwościach dynamicznych* <xref:System.Xml.Linq.XAttribute?displayProperty=fullName> i <xref:System.Xml.Linq.XElement?displayProperty=fullName>.
 
 ## <a name="xaml-and-linq-to-xml"></a>XAML i LINQ to XML
 
-Extensible Application Markup Language (XAML) jest dialekt XML utworzone przez firmę Microsoft do obsługi technologii .NET. Używane na platformie WPF reprezentujące elementy interfejsu użytkownika i powiązane funkcje, takie jak zdarzenia i powiązanie danych. W programie Windows Workflow Foundation XAML jest używana do reprezentowania struktury programów, takich jak formant programu (*przepływy pracy*). XAML umożliwia deklaratywne aspektów technologii od powiązany kod proceduralny definiujący bardziej zindywidualizowane zachowanie programu w języku.
+Extensible Application Markup Language (XAML) to dialekt XML utworzony przez firmę Microsoft do obsługi technologii platformy .NET. Jest on używany w WPF do reprezentowania elementów interfejsu użytkownika i powiązanych funkcji, takich jak zdarzenia i powiązania danych. W Windows Workflow Foundation język XAML jest używany do reprezentowania struktury programu, takiej jak sterowanie programem (*przepływy pracy*). Język XAML umożliwia rozdzielenie deklaratywnych aspektów technologicznych od powiązanego kodu proceduralnego, który definiuje bardziej indywidualne zachowanie programu.
 
-Istnieją dwa sposoby szerokie, które mogą wchodzić w interakcje XAML i LINQ to XML:
+Istnieją dwa szerokie metody, które mogą współistnieć w języku XAML i LINQ to XML:
 
-- Ponieważ pliki XAML są poprawnie sformułowany kod XML, można je można tworzyć zapytania i modyfikować za pomocą technologii XML, takich jak LINQ to XML.
+- Ponieważ pliki XAML są poprawnie sformułowanymi danymi XML, można je badać i manipulować nimi za poorednictwem technologii XML, takich jak LINQ to XML.
 
-- Ponieważ LINQ to XML zapytania stanowią źródło danych, te zapytania może służyć jako źródło danych dla powiązania danych dla elementów interfejsu użytkownika WPF.
+- Ponieważ zapytania LINQ to XML reprezentują źródło danych, te zapytania mogą służyć jako źródło danych dla powiązania danych dla elementów interfejsu użytkownika WPF.
 
 W tej dokumentacji opisano drugi scenariusz.
 
-## <a name="data-binding-in-the-windows-presentation-foundation"></a>Powiązywanie danych w Windows Presentation Foundation
+## <a name="data-binding-in-the-windows-presentation-foundation"></a>Powiązanie danych w Windows Presentation Foundation
 
-Powiązanie danych WPF umożliwia elementu interfejsu użytkownika do jednej z jego właściwości skojarzenia ze źródłem danych. Jest to prosty przykład <xref:System.Windows.Controls.Label> którego tekst przedstawia wartość publiczny właściwości w obiekcie użytkownika. Powiązanie danych WPF opiera się na następujących składników:
+Powiązanie danych WPF umożliwia elementowi interfejsu użytkownika kojarzenie jednej z właściwości ze źródłem danych. Prostym przykładem jest <xref:System.Windows.Controls.Label>, którego tekst przedstawia wartość właściwości publicznej w obiekcie zdefiniowanym przez użytkownika. Powiązanie danych WPF opiera się na następujących składnikach:
 
 |Składnik|Opis|
 |---------------|-----------------|
-|Wiązanie docelowe|Element interfejsu użytkownika, który ma zostać skojarzony ze źródłem danych. Elementy wizualne na platformie WPF są uzyskiwane z <xref:System.Windows.UIElement> klasy.|
-|Właściwość docelowa|*Właściwość zależności* docelowego powiązania, który odzwierciedla wartość źródła powiązanie danych. Właściwości zależności są bezpośrednio obsługiwane przez <xref:System.Windows.DependencyObject> klasy, która <xref:System.Windows.UIElement> pochodzi od klasy.|
-|Źródło wiążące|Obiekt źródłowy dla co najmniej jednej wartości, które są dostarczane do elementu interfejsu użytkownika, aby obejrzeć prezentację. WPF automatycznie obsługuje następujące typy jako wiązanie źródeł: CLR obiekty, obiekty danych ADO.NET, dane XML (z lub składnika LINQ to XML kwerendy XPath) lub innego <xref:System.Windows.DependencyObject>.|
-|Ścieżka źródłowa|Właściwość źródło powiązania, który jest rozpoznawany jako wartość lub zbiór wartości, która ma zostać powiązany.|
+|Obiekt docelowy powiązania|Element interfejsu użytkownika, który ma zostać skojarzony ze źródłem danych. Elementy wizualne w WPF pochodzą od klasy <xref:System.Windows.UIElement>.|
+|Target — właściwość|*Właściwość zależności* obiektu docelowego powiązania, która odzwierciedla wartość źródła powiązań danych. Właściwości zależności są bezpośrednio obsługiwane przez klasę <xref:System.Windows.DependencyObject>, która <xref:System.Windows.UIElement> pochodzi od.|
+|Źródło powiązania|Obiekt źródłowy dla co najmniej jednej wartości, która jest dostarczana do elementu interfejsu użytkownika dla prezentacji. WPF automatycznie obsługuje następujące typy jako źródła powiązań: obiekty CLR, obiekty danych ADO.NET, dane XML (z zapytań XPath lub LINQ to XML) lub inne <xref:System.Windows.DependencyObject>.|
+|Ścieżka źródłowa|Właściwość źródła powiązania, która jest rozpoznawana jako wartość lub zbiór wartości, które mają być powiązane.|
 
-Właściwość zależności jest pojęciem specyficzne dla WPF, który reprezentuje dynamicznie obliczaną właściwością elementu interfejsu użytkownika. Na przykład właściwości zależności często mają wartości domyślne lub wartości, które są dostarczane przez element nadrzędny. Specjalne właściwości są wspierane przez wystąpienia <xref:System.Windows.DependencyProperty> klasy (i nie pola jako standardowe właściwości). Aby uzyskać więcej informacji, zobacz [Przegląd właściwości zależności](/dotnet/framework/wpf/advanced/dependency-properties-overview).
+Właściwość zależności jest koncepcją specyficzną dla WPF, która reprezentuje dynamiczną obliczaną właściwość elementu interfejsu użytkownika. Na przykład właściwości zależności często mają wartości domyślne lub wartości, które są dostarczane przez element nadrzędny. Te właściwości specjalne są obsługiwane przez wystąpienia klasy <xref:System.Windows.DependencyProperty> (a nie pola z właściwościami standardowymi). Aby uzyskać więcej informacji, zobacz [Omówienie właściwości zależności](/dotnet/framework/wpf/advanced/dependency-properties-overview).
 
-### <a name="dynamic-data-binding-in-wpf"></a>Powiązanie danych dynamicznych w WPF
+### <a name="dynamic-data-binding-in-wpf"></a>Dynamiczne powiązanie danych w WPF
 
-Domyślnie powiązanie danych występuje tylko wtedy, gdy element interfejsu użytkownika docelowej jest inicjowany. Jest to nazywane *jednorazowe* powiązania. W większości przypadków jest to niewystarczające; zwykle rozwiązaniem powiązanie danych wymaga dynamicznie propagowane zmiany w czasie wykonywania przy użyciu jednej z następujących czynności:
+Domyślnie powiązanie danych występuje tylko wtedy, gdy docelowy element interfejsu użytkownika jest zainicjowany. Ta nazwa jest nazywana *jednorazowym* wiązaniem. W większości przypadków jest to niewystarczające. zwykle rozwiązanie do powiązania danych wymaga dynamicznego rozpropagowania zmian w czasie wykonywania przy użyciu jednego z następujących elementów:
 
-- *Jednokierunkowa* powiązania powoduje, że zmiany po jednej stronie można automatycznie propagowane. Najczęściej zmiany do źródła są uwzględniane w elemencie docelowym, ale odwrotnie Czasami przydatne mogą być.
+- Powiązanie *jednokierunkowe* powoduje automatyczne propagowanie zmian w jednej stronie. Najczęściej zmiany w źródle są odzwierciedlane w elemencie docelowym, ale czasami może być przydatne.
 
-- W *dwukierunkowe* powiązania, zmiany w źródle są automatycznie propagowane do obiektu docelowego, a zmiany do obiektu docelowego są automatycznie propagowane do źródła.
+- W przypadku powiązań *dwukierunkowych* zmiany w źródle są automatycznie propagowane do obiektu docelowego, a zmiany w obiekcie docelowym są automatycznie propagowane do źródła.
 
-- Lub dwukierunkowo powiązań, wystąpią, źródło musisz zaimplementować mechanizm powiadamiania zmiany na przykład poprzez implementację <xref:System.ComponentModel.INotifyPropertyChanged> interfejs lub przy użyciu *PropertyNameChanged* wzorca dla każdej właściwości obsługiwane.
+W przypadku powiązań jednokierunkowych lub dwukierunkowych Źródło musi implementować mechanizm powiadamiania o zmianach, na przykład przez implementację interfejsu <xref:System.ComponentModel.INotifyPropertyChanged> lub przy użyciu wzorca *PropertyNameChanged* dla każdej obsługiwanej właściwości.
 
-Aby uzyskać więcej informacji o wiązaniu danych na platformie WPF, zobacz [powiązanie danych (WPF)](/dotnet/framework/wpf/data/data-binding-wpf).
+Aby uzyskać więcej informacji na temat powiązania danych w WPF, zobacz [powiązanie danych (WPF)](/dotnet/framework/wpf/data/data-binding-wpf).
 
-## <a name="dynamic-properties-in-linq-to-xml-classes"></a>Właściwości dynamiczne w składniku LINQ to XML klasy
+## <a name="dynamic-properties-in-linq-to-xml-classes"></a>Właściwości dynamiczne w klasach LINQ to XML
 
-Większość klasy programu LINQ to XML nie kwalifikują się jako prawidłowego źródła danych dynamicznych WPF. Niektóre z najbardziej przydatnych informacji jest dostępna wyłącznie za pośrednictwem metody, a nie właściwości i właściwości w ramach tych zajęć, nie należy implementować powiadomienia o zmianach. Aby zapewnić obsługę powiązanie danych WPF, LINQ to XML udostępnia zestaw *właściwości dynamicznych*.
+Większość klas LINQ to XML nie kwalifikuje się do poprawnego dynamicznego źródła danych WPF. Niektóre z najbardziej przydatnych informacji są dostępne tylko za pomocą metod, a nie właściwości, a właściwości w tych klasach nie implementują powiadomień o zmianach. Aby zapewnić obsługę powiązania danych WPF, LINQ to XML uwidacznia zestaw *właściwości dynamicznych*.
 
-Właściwości dynamiczne są specjalne właściwości czasu wykonywania, które duplikują funkcjonalność istniejących metod i właściwości w <xref:System.Xml.Linq.XAttribute> i <xref:System.Xml.Linq.XElement> klasy. Zostały one dodane do tych klas wyłącznie w celu umożliwienia im na działanie jako źródła danych dynamicznych dla WPF. Aby spełnić te wymagania, te właściwości dynamicznych zaimplementować powiadomienia o zmianach. Szczegółową dokumentację dla tych właściwości dynamicznych znajduje się w następnej sekcji [XML właściwości dynamiczne LINQ to](../designers/linq-to-xml-dynamic-properties.md).
+Te właściwości dynamiczne są specjalnymi właściwościami czasu wykonywania, które duplikują funkcje istniejących metod i właściwości w klasach <xref:System.Xml.Linq.XAttribute> i <xref:System.Xml.Linq.XElement>. Zostały dodane do tych klas wyłącznie w celu umożliwienia im działania jako dynamiczne źródła danych dla WPF. Aby spełnić to wymaganie, wszystkie te właściwości dynamiczne implementują powiadomienia o zmianach. Szczegółowe informacje o tych właściwościach dynamicznych znajdują się w następnej sekcji [LINQ to XML właściwości dynamiczne](../designers/linq-to-xml-dynamic-properties.md).
 
 > [!NOTE]
-> Znaleziono wiele standardowych właściwości publicznej, w różnych klas w <xref:System.Xml.Linq> przestrzeni nazw może służyć do wiązania danych jednorazowego. Należy jednak pamiętać, że źródłowego ani docelowego nie zostaną dynamicznie zaktualizowane zgodnie z tym systemem.
+> Wiele standardowych właściwości publicznych, które znajdują się w różnych klasach w przestrzeni nazw <xref:System.Xml.Linq>, może być używany do jednorazowego wiązania danych. Należy jednak pamiętać, że żadne Źródło ani obiekt docelowy nie będą aktualizowane dynamicznie w ramach tego schematu.
 
-### <a name="accessing-dynamic-properties"></a>Uzyskiwanie dostępu do właściwości dynamicznej
+### <a name="accessing-dynamic-properties"></a>Uzyskiwanie dostępu do właściwości dynamicznych
 
-Właściwości dynamiczne w <xref:System.Xml.Linq.XAttribute> i <xref:System.Xml.Linq.XElement> klasy nie można uzyskać dostępu, takich jak standardowe właściwości. Na przykład w CLR zgodne języków, takich jak C#, mogą nie może być:
+Nie można uzyskać dostępu do właściwości dynamicznych z klas <xref:System.Xml.Linq.XAttribute> i <xref:System.Xml.Linq.XElement>, takich jak właściwości standardowe. Na przykład w przypadku języków zgodnych ze środowiskiem C#CLR takie jak nie mogą być:
 
-- Dostępne bezpośrednio w czasie kompilacji. Właściwości dynamiczne są niewidoczne, aby kompilator i funkcji IntelliSense Visual Studio.
+- Dostępne bezpośrednio w czasie kompilacji. Właściwości dynamiczne są niewidoczne dla kompilatora i programu Visual Studio IntelliSense.
 
-- Odnalezione lub używanych w czasie wykonywania za pomocą odbicia .NET. Nawet w czasie wykonywania nie są one właściwości w tym sensie, podstawowego środowiska CLR.
+- Odnalezione lub dostępne w czasie wykonywania przy użyciu odbicia platformy .NET. Nawet w czasie wykonywania nie są właściwościami w podstawowym sensie CLR.
 
-W języku C#, właściwości dynamicznych są dostępne tylko w czasie wykonywania za pomocą przez <xref:System.ComponentModel> przestrzeni nazw.
+W C#programie właściwości dynamiczne są dostępne tylko w czasie wykonywania za pomocą obiektów dostarczonych przez przestrzeń nazw <xref:System.ComponentModel>.
 
-Z kolei jednak w formacie XML źródła właściwości dynamicznych jest możliwy za pośrednictwem prostego notacji w następującej postaci:
+Natomiast w przypadku właściwości dynamicznych źródła XML można uzyskać dostęp za pomocą prostej notacji w następującej postaci:
 
 ```xml
 <object>.<dynamic-property>
 ```
 
-Właściwości dynamiczne dla tych dwóch klas rozwiązać jedną wartość, która może być używany bezpośrednio lub działanie indeksatora, który należy podać przy użyciu indeksu w celu uzyskania wynikową wartość lub zbiór wartości. Ostatnie składni ma postać:
+Właściwości dynamiczne tych dwóch klas są rozpoznawane jako wartość, która może być używana bezpośrednio lub do indeksatora, który musi być dostarczony z indeksem w celu uzyskania wartości lub kolekcji wartości. Ostatnia składnia przyjmuje postać:
 
 ```xml
 <object>.<dynamic-property>[<index-value>]
 ```
 
-Aby uzyskać więcej informacji, zobacz [XML właściwości dynamiczne LINQ to](../designers/linq-to-xml-dynamic-properties.md).
+Aby uzyskać więcej informacji, zobacz [LINQ to XML właściwości dynamiczne](../designers/linq-to-xml-dynamic-properties.md).
 
-Aby zaimplementować wiązanie dynamiczne WPF, właściwości dynamicznych będą używane z przez <xref:System.Windows.Data> przestrzeni nazw, głównie <xref:System.Windows.Data.Binding> klasy.
+Aby zaimplementować dynamiczne powiązanie WPF, właściwości dynamiczne będą używane z obiektami dostarczanymi przez przestrzeń nazw <xref:System.Windows.Data>, w szczególności dla klasy <xref:System.Windows.Data.Binding>.
 
 ## <a name="see-also"></a>Zobacz także
 
@@ -97,4 +97,4 @@ Aby zaimplementować wiązanie dynamiczne WPF, właściwości dynamicznych będ�
 - [Właściwości dynamiczne LINQ to XML](../designers/linq-to-xml-dynamic-properties.md)
 - [XAML w WPF](/dotnet/framework/wpf/advanced/xaml-in-wpf)
 - [Powiązanie danych (WPF)](/dotnet/framework/wpf/data/data-binding-wpf)
-- [Za pomocą znaczników przepływu pracy](http://go.microsoft.com/fwlink/?LinkId=98685)
+- [Używanie znaczników przepływu pracy](http://go.microsoft.com/fwlink/?LinkId=98685)

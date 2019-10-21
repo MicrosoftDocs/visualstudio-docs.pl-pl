@@ -1,47 +1,47 @@
 ---
-title: 'Instrukcje: Eksport cieniowania'
+title: 'Porady: eksport cieniowania'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0bd48bf4-9792-4456-a545-e462a2be668d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d0a962fe941f676369c4c3575647610df809d58
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c05e40b76d60a5602cee1cb67b5c3094fb94d249
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844400"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635547"
 ---
 # <a name="how-to-export-a-shader"></a>Instrukcje: Eksportowanie cieniowania
 
-W tym artykule przedstawiono sposób użycia **Shader Designer** wyeksportować modułu cieniującego kierowane wykres modułu cieniującego języka (DGSL) służy w swojej aplikacji.
+W tym artykule pokazano, jak używać **projektanta cieniowania** do eksportowania programu cieniowania ukierunkowanego języka programu Graph (DGSL), dzięki czemu można go używać w aplikacji.
 
 ## <a name="export-a-shader"></a>Eksportowanie cieniowania
 
-Po utworzeniu modułu cieniującego, przy użyciu narzędzia Projektant programu do cieniowania i przed użyciem w swojej aplikacji, należy go wyeksportować w formacie, który rozumie interfejsu API grafiki. Możesz wyeksportować modułu cieniującego na różne sposoby do potrzeb różnych.
+Po utworzeniu modułu cieniującego przy użyciu projektanta programu do cieniowania i przed użyciem go w aplikacji należy wyeksportować go w formacie, który rozpoznaje interfejs API grafiki. Program do cieniowania można wyeksportować na różne sposoby, aby zaspokoić różne potrzeby.
 
-1. W programie Visual Studio, otwórz **wizualny wykres modułu cieniującego (.dgsl)** pliku.
+1. W programie Visual Studio Otwórz plik **grafu programu Visual Shader (. dgsl)** .
 
-     Jeśli nie masz **wizualny wykres modułu cieniującego (.dgsl)** plik, aby otworzyć, utwórz je, zgodnie z opisem w [jak: Tworzenie cieniowania koloru podstawowego](../designers/how-to-create-a-basic-color-shader.md).
+     Jeśli nie masz pliku **grafu programu Visual Shader (. dgsl)** do otwarcia, utwórz go zgodnie z opisem w temacie [How to: Create a Basic Color Shader](../designers/how-to-create-a-basic-color-shader.md).
 
-2. Na **Shader Designer** narzędzi, wybierz **zaawansowane** > **wyeksportować** > **Eksportuj jako**. **Eksportowania modułu cieniującego** pojawi się okno dialogowe.
+2. Na pasku narzędzi **projektanta cieniowania** wybierz pozycję **zaawansowane**  > **Eksportuj**  > **Eksportuj jako**. Zostanie wyświetlone okno dialogowe Eksportowanie programu do **cieniowania** .
 
-3. W **Zapisz jako typ** listy rozwijanej wybierz format, który chcesz wyeksportować.
+3. Z listy rozwijanej **Zapisz jako typ** wybierz format, który chcesz wyeksportować.
 
-     Poniżej przedstawiono formaty, które można wybrać:
+     Oto formaty, które możesz wybrać:
 
-     **Program do cieniowania pikseli HLSL (\*.hlsl)** eksportuje programu do cieniowania w postaci kodu źródłowego wysokiej Level Shader Language (HLSL). Ta opcja umożliwia później zmodyfikować cieniowanie tak, nawet w przypadku, po jej wdrożeniu w aplikacji. To może ułatwić debugowanie i poprawki kodu, w oparciu problemy użytkowników końcowych, ale również ułatwia użytkownikowi modyfikowanie modułu cieniującego niechciane — na przykład, aby uzyskać nienależną przewagę w grze przewagę. Ponadto może to zwiększyć czas ładowania modułu cieniującego.
+     Program do **cieniowania pikseli HLSL (\*. HLSL)** Eksportuje program do cieniowania jako kod źródłowy języka HLSL (High Level Shader Language). Ta opcja umożliwia późniejsze modyfikowanie modułu cieniującego, nawet po jego wdrożeniu w aplikacji. Może to ułatwić debugowanie i poprawianie kodu w oparciu o problemy z użytkownikami końcowymi, ale ułatwia użytkownikowi modyfikowanie modułu cieniującego na niechcianych sposobach — na przykład w celu uzyskania nieuczciwej korzyści w ramach konkurencyjnej gry. Może również zwiększyć czas ładowania cieniowania.
 
-     **Skompilowany program do cieniowania pikseli (\*.cso)** eksportuje programu do cieniowania w postaci kodu bajtowego języka HLSL. Ta opcja umożliwia później zmodyfikować cieniowanie tak, nawet w przypadku, po jej wdrożeniu w aplikacji. To może ułatwić debugowanie i poprawki kodu, w oparciu problemy użytkowników końcowych, ale ponieważ programu do cieniowania jest wstępnie skompilowanym, go nie są naliczane dodatkowe środowiska uruchomieniowego obciążenie podczas ładowania programu do cieniowania za pomocą aplikacji. Wystarczająco doświadczeni użytkownicy mogą modyfikować programu do cieniowania w sposób niepożądane, ale kompilowanie programu do cieniowania sprawia, że to znacznie trudniejsze.
+     **Skompilowany program do cieniowania pikseli (\*. CSO)** Eksportuje cieniowanie jako HLSL kod bajtowy. Ta opcja umożliwia późniejsze modyfikowanie modułu cieniującego, nawet po jego wdrożeniu w aplikacji. Może to ułatwić debugowanie i poprawianie kodu w oparciu o problemy z użytkownikami końcowymi, ale ponieważ program do cieniowania jest wstępnie skompilowany, nie wiąże się z dodatkowym obciążeniem środowiska uruchomieniowego, gdy program do cieniowania jest ładowany przez aplikację. Wystarczająco wykwalifikowanych użytkowników nadal można modyfikować cieniowanie na niechcianych sposobach, ale Kompilowanie cieniowania znacznie trudniejsze.
 
-     **Nagłówek języka C++ (\*.h)** eksportuje programu do cieniowania jako nagłówek stylu C, który definiuje tablica bajtów, która zawiera kod bajtowy HLSL. Tej opcji można tworzyć bardziej czasochłonne debugować i poprawki kodu, w oparciu problemy użytkowników końcowych, ponieważ aplikacja musi ponownie skompilowana, aby przetestować poprawki. Jednak ponieważ dzięki temu jest trudne, chociaż nie jest to niemożliwe, aby zmodyfikować cieniowanie tak, po jej wdrożeniu w aplikacji, stanowi trudności w większości użytkownikowi, który chce się zmodyfikować cieniowanie tak, w sposób niepożądane.
+     **Nagłówek (\*. h) C++**  Eksportuje program do cieniowania jako nagłówek w stylu C, który definiuje tablicę bajtową, która zawiera kod bajtowy HLSL. Ta opcja może zwiększyć czasochłonną funkcję debugowania i poprawiania kodu na podstawie problemów z użytkownikami końcowymi, ponieważ należy ponownie skompilować aplikację w celu przetestowania poprawki. Jednak ponieważ ta opcja utrudnia, chociaż nie jest to możliwe, można zmodyfikować program do cieniowania po jego wdrożeniu w aplikacji, co sprawia, że użytkownik chce zmodyfikować cieniowanie w niepożądane sposoby.
 
-4. W **nazwy pliku** pola kombi, określ nazwę dla eksportowanego programu do cieniowania, a następnie wybierz **Zapisz** przycisku.
+4. W polu kombi **Nazwa pliku** Podaj nazwę wyeksportowanego programu do cieniowania, a następnie wybierz przycisk **Zapisz** .
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Instrukcje: Tworzenie cieniowania koloru podstawowego](../designers/how-to-create-a-basic-color-shader.md)
+- [Instrukcje: tworzenie cieniowania koloru podstawowego](../designers/how-to-create-a-basic-color-shader.md)
 - [Projektant cieniowania](../designers/shader-designer.md)

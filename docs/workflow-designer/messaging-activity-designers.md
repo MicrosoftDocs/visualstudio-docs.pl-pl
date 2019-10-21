@@ -1,25 +1,25 @@
 ---
-title: Projektant przepływu pracy — Projektanci działań Messaging
+title: Projektanci działań Projektant przepływu pracy — obsługa komunikatów
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 897e63cf-a42f-4edd-876f-c4ccfffaf6d6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9868b5eb52edde8e12d6a3b4f5edab1a4a9e499
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 0ba6aaaf0f6e77714af14e690d4944eac031e1d7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747103"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650141"
 ---
 # <a name="messaging-activity-designers"></a>Projektanci działań Messaging
 
-Projektanci działań obsługi komunikatów są używane do tworzenia i konfigurowania działań dotyczących komunikatów, które wysyłania i odbierania komunikatów Windows Communication Foundation (WCF) z poziomu aplikacji Windows Workflow Foundation (WF). Pięciu działań dotyczących komunikatów zostały wprowadzone w .NET Framework 4. Projektanta przepływu pracy zawiera dwa projektantom szablonów, które umożliwiają zarządzanie komunikatów w przepływie pracy.
+Projektanci działań obsługi komunikatów służą do tworzenia i konfigurowania działań związanych z obsługą komunikatów, które wysyłają i odbierają wiadomości Windows Communication Foundation (WCF) z aplikacji Windows Workflow Foundation (WF). W .NET Framework 4 wprowadzono pięć działań związanych z obsługą komunikatów. Projektant przepływu pracy zawiera dwóch projektantów szablonów, które umożliwiają zarządzanie komunikatami w ramach przepływu pracy.
 
-Tematy zawarte w tej sekcji i wymienione w poniższej tabeli zawiera wskazówek na temat korzystania z projektanta przepływów pracy działania i projektanci szablonu.
+Tematy zawarte w tej sekcji i wymienione w poniższej tabeli zawierają wskazówki dotyczące korzystania z Projektant przepływu pracy działań i projektantów szablonów.
 
 - <xref:System.Activities.Activity>
 
@@ -37,7 +37,7 @@ Tematy zawarte w tej sekcji i wymienione w poniższej tabeli zawiera wskazówek 
 
 ## <a name="related-sections"></a>Sekcje pokrewne
 
-Dla innych typów Projektanci działań zobacz następujące tematy:
+W przypadku innych typów projektantów działań zapoznaj się z następującymi tematami:
 
 - [Przepływ sterowania](../workflow-designer/control-flow-activity-designers.md)
 

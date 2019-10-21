@@ -3,28 +3,28 @@ title: Powiązanie danych WPF za pomocą LINQ to XML — przykład
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 8e90b252-646e-4449-a898-5f03e40df87d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6407102230141ab75e819f32f03eb6acad94a004
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1bc1a6a37871b5326295b3c8168f96ebf5a8cf91
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62892451"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72633550"
 ---
-# <a name="wpf-data-binding-using-linq-to-xml-example"></a>Powiązanie danych WPF za pomocą LINQ to XML — przykład
+# <a name="wpf-data-binding-using-linq-to-xml-example"></a>Powiązanie danych WPF przy użyciu LINQ to XML przykładu
 
-Ta sekcja zawiera przykład Windows Presentation Foundation (WPF), która jest powiązywana składników interfejsu użytkownika z osadzonego źródła danych XML. Nazwa w tym przykładzie (i projekt programu Visual Studio, która ją zawiera) jest *elementu linqtoxmldatabinding —*.
+Ta sekcja zawiera przykład Windows Presentation Foundation (WPF), który wiąże składniki interfejsu użytkownika z osadzonym źródłem danych XML. Nazwa tego przykładu (oraz projekt programu Visual Studio, który go zawiera) to *elementu LinqToXmlDataBinding —* .
 
 ## <a name="in-this-section"></a>W tej sekcji
 
 |Temat|Opis|
 |-----------|-----------------|
-|[Instrukcje: Kompilowanie i uruchamianie elementu linqtoxmldatabinding — przykład](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md)|Zawiera instrukcje krok po kroku do tworzenia, wypełnij i skompiluj projekt programu Visual Studio, w tym przykładzie.|
-|[Przewodnik: LinqToXmlDataBinding example](../designers/walkthrough-linqtoxmldatabinding-example.md)|Zawiera pliki podstawowego źródła dla projektu oraz opis sposobu używania składnika LINQ to XML dla powiązania danych w ramach tego kodu.|
+|[Instrukcje: kompilowanie i uruchamianie elementu LinqToXmlDataBinding — przykład](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md)|Zawiera instrukcje krok po kroku dotyczące sposobu tworzenia, wypełniania i kompilowania projektu programu Visual Studio na potrzeby tego przykładu.|
+|[Przewodnik: elementu LinqToXmlDataBinding — przykład](../designers/walkthrough-linqtoxmldatabinding-example.md)|Zawiera podstawowe pliki źródłowe dla projektu oraz opis sposobu, w jaki LINQ to XML jest używany do wiązania danych w tym kodzie.|
 
 ## <a name="see-also"></a>Zobacz także
 

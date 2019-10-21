@@ -7,17 +7,17 @@ helpviewer_keywords:
 - user permissions
 - administrative privileges
 - permissions
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97ecddfa317eb522a8ce29a53482df5581912dad
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
+ms.openlocfilehash: 6086485ef20330de7971297f52a112d5183ee4a2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891242"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647346"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Uprawnienia użytkownika i program Visual Studio
 
@@ -32,7 +32,7 @@ Niemal wszystko to można zrobić w środowisku IDE programu Visual Studio jako 
 |----------|----------| - |
 |Instalacja|Zainstaluj program Visual Studio.|[Instalowanie programu Visual Studio](../install/install-visual-studio.md)|
 ||Instalowanie, aktualizowanie lub usuwanie lokalnej zawartości pomocy.|[Instalowanie zawartości pomocy lokalnej i zarządzanie nią](../help-viewer/install-manage-local-content.md)|
-|Przybornik|Dodawanie klasycznych kontrolekcom do przybornika.|[Przybornik](../ide/reference/toolbox.md)|
+|Przybornik|Dodawanie klasycznych kontrolek COM do **przybornika**.|[Przybornik](../ide/reference/toolbox.md)|
 |Kompilowanie|Użyj zdarzeń po kompilacji, które rejestrują składnik.|[Zrozumienie niestandardowych kroków kompilacji i zdarzeń kompilacji](/cpp/build/understanding-custom-build-steps-and-build-events)|
 ||Uwzględnij etap rejestracji podczas kompilowania C++ projektów.||
 |Debugowanie|Debuguj aplikacje, które działają z podniesionymi uprawnieniami.|[Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)|
@@ -55,7 +55,7 @@ Jeśli musisz uruchomić program Visual Studio jako administrator, wykonaj nast�
 
 1. Otwórz menu **Start** i przewiń do programu Visual Studio 2017.
 
-1. Z menu kontekstowego kliknij prawym przyciskiem myszy lub w **programie Visual Studio 2017**wybierz polecenie **więcej** > **Uruchom jako administrator**.
+1. W menu kontekstowym kliknij prawym przyciskiem myszy lub w **programie Visual Studio 2017**wybierz polecenie **więcej** > **Uruchom jako administrator**.
 
    Po uruchomieniu programu Visual Studio **(Administrator)** pojawia się po nazwie produktu na pasku tytułu.
 
@@ -65,7 +65,7 @@ Jeśli musisz uruchomić program Visual Studio jako administrator, wykonaj nast�
 
 1. Otwórz menu **Start** i przewiń do programu Visual Studio 2019.
 
-1. Z menu kontekstowego kliknij prawym przyciskiem myszy lub w **programie Visual Studio 2019**wybierz polecenie **więcej** > **Uruchom jako administrator**.
+1. W menu kontekstowym kliknij prawym przyciskiem myszy lub w **programie Visual Studio 2019**wybierz polecenie **więcej** > **Uruchom jako administrator**.
 
    Po uruchomieniu programu Visual Studio **(Administrator)** pojawia się po nazwie produktu na pasku tytułu.
 

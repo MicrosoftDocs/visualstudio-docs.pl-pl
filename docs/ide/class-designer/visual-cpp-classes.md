@@ -7,39 +7,39 @@ f1_keywords:
 helpviewer_keywords:
 - Class Designer [Visual Studio], classes
 ms.assetid: 75e56f8c-11ef-42a3-b7ec-3d2cf25c581b
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b8312e0db76dd3ce064172116aecd82daab56e90
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 596d7a41b9f63179a0469840d948430ed0294b56
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975050"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647639"
 ---
-# <a name="visual-c-classes-in-class-designer"></a>Wizualne klasy języka C++ w Projektancie klas
+# <a name="visual-c-classes-in-class-designer"></a>Klasy C++ wizualne w Projektant klas
 
-**Projektant klasy** obsługuje klasy języka C++ i umożliwia wizualizowanie klas natywnych języka C++ w taki sam sposób, jak Visual Basic i C# klasy kształtów, z tą różnicą, że klasy C++ może istnieć wiele relacji dziedziczenia. Można rozwinąć kształt klasy, aby wyświetlić więcej pól i metod w klasie lub Zwiń go do oszczędzania przestrzeni dyskowej.
+**Projektant klas** obsługuje C++ klasy i wizualizacje klas C++ macierzystych w taki sam sposób jak w C# przypadku Visual Basic i kształtów klas C++ , z wyjątkiem tego, że klasy mogą mieć wiele relacji dziedziczenia. Można rozwinąć kształt klasy, aby wyświetlić więcej pól i metod w klasie, lub zwinąć go, aby zaoszczędzić miejsce.
 
 > [!NOTE]
-> **Projektant klasy** nie obsługuje Unii (specjalny typ klasy, w której pamięć przydzielona jest niezbędne dla Unii zajmuje największy element członkowski danych ilość).
+> **Projektant klas** nie obsługuje Unii (specjalny typ klasy, w której przydzielono pamięć jest tylko ilością potrzebną dla największego elementu członkowskiego danych Unii).
 
-## <a name="simple-inheritance"></a>Proste dziedziczenie
+## <a name="simple-inheritance"></a>Dziedziczenie proste
 
-Przeciągnij więcej niż jednej klasy na diagramie klasy, gdy klasy mają relację dziedziczenia klasy, Strzałka łączy je. Wskazuje strzałka w kierunku klasy bazowej. Na przykład gdy następujące klasy są wyświetlane na diagramie klasy, Strzałka łączy je, wskazującą z B na A:
+Po przeciągnięciu więcej niż jednej klasy na Diagram klas, a klasy mają relację dziedziczenia klasy, strzałka łączy je. Strzałka wskazuje kierunek klasy bazowej. Na przykład gdy następujące klasy są wyświetlane na diagramie klas, strzałka łączy je, wskazując od B do A:
 
 ```cpp
 class A {};
 class B : A {};
 ```
 
-Możesz również przeciągnąć klasy B do diagramu klas, kliknij prawym przyciskiem myszy kształt klasy B, a następnie kliknij **Pokaż klasy podstawowej**. Spowoduje to wyświetlenie jej klasa bazowa: A.
+Możesz również przeciągnąć tylko klasę B do diagramu klasy, kliknij prawym przyciskiem myszy kształt klasy dla B, a następnie kliknij polecenie **Pokaż klasy bazowe**. Spowoduje to wyświetlenie klasy podstawowej: A.
 
-## <a name="multiple-inheritance"></a>Dziedziczenie wielokrotne
+## <a name="multiple-inheritance"></a>Wielokrotne dziedziczenie
 
-**Projektant klasy** obsługuje wizualizację relacji dziedziczenia wielu klas. *Dziedziczenie wielokrotne* jest używany, gdy klasa pochodna zawiera atrybuty więcej niż jednej klasy bazowej. Poniżej przedstawiono przykład wielokrotnego dziedziczenia:
+**Projektant klas** obsługuje wizualizację relacji dziedziczenia z wieloma klasami. *Wielokrotne dziedziczenie* jest używane, gdy Klasa pochodna ma atrybuty więcej niż jednej klasy bazowej. Poniżej przedstawiono przykład dziedziczenia wielokrotnego:
 
 ```cpp
 class Bird {};
@@ -47,18 +47,18 @@ class Swimmer {};
 class Penguin : public Bird, public Swimmer {};
 ```
 
-Przeciągnij więcej niż jednej klasy na diagramie klasy, gdy klasy mają relację dziedziczenia wielu klas, Strzałka łączy je. Wskazuje strzałka w kierunku klas bazowych.
+Po przeciągnięciu więcej niż jednej klasy na Diagram klas, a klasy mają relację dziedziczenia z wieloma klasami, strzałka łączy je. Strzałka wskazuje kierunek klas bazowych.
 
-Kliknij prawym przyciskiem myszy kształt klasy, a następnie klikając polecenie **Pokaż klasy podstawowe** Wyświetla klas bazowych dla wybranej klasy.
+Kliknięcie prawym przyciskiem myszy kształtu klasy, a następnie kliknięcie pozycji **Pokaż klasy podstawowe** powoduje wyświetlenie klas bazowych dla wybranej klasy.
 
 > [!NOTE]
-> **Pokaż klasy pochodne** polecenie nie jest obsługiwane dla kodu C++. Klasy pochodne można wyświetlić, przechodząc do **Widok klas**, rozwijając węzeł typu, rozszerzając **typów pochodnych** podfolder, a następnie przeciągając tych typów na diagramie klasy.
+> Polecenie **Pokaż klasy pochodne** nie jest obsługiwane dla C++ kodu. Klasy pochodne można wyświetlić, przechodząc do **Widok klasy**, rozszerzając węzeł typu, rozwijając podfolder **Typy pochodne** , a następnie przeciągając te typy na Diagram klas.
 
-Aby uzyskać więcej informacji na temat dziedziczenia klas wielu zobacz [wielokrotne dziedziczenie](https://msdn.microsoft.com/library/6td5yws2.aspx) i [wiele klas podstawowych](/cpp/cpp/multiple-base-classes).
+Aby uzyskać więcej informacji na temat dziedziczenia z wieloma klasami, zobacz [wielokrotne dziedziczenie](https://msdn.microsoft.com/library/6td5yws2.aspx) i [wiele klas podstawowych](/cpp/cpp/multiple-base-classes).
 
 ## <a name="abstract-classes"></a>Klasy abstrakcyjne
 
-**Projektant klasy** obsługuje abstrakcyjnej klasy (zwaną również "abstrakcyjne klasy podstawowe"). Są to klasy, która nigdy nie wystąpienia, ale z którego można uzyskać innych klas. Przy użyciu przykładu z "Wielokrotne dziedziczenie" wcześniej w tym dokumencie, może być wystąpienia `Bird` klasy jako pojedyncze obiekty w następujący sposób:
+**Projektant klas** obsługuje klasy abstrakcyjne (nazywane również "abstrakcyjnymi klasami podstawowymi"). Są to klasy, które nigdy nie występują, ale z których można utworzyć inne klasy. Korzystając z przykładu z "wielokrotne dziedziczenie" wcześniej w tym dokumencie, można utworzyć wystąpienie klasy `Bird` jako pojedyncze obiekty w następujący sposób:
 
 ```cpp
 int main()
@@ -69,9 +69,9 @@ int main()
 }
 ```
 
-Jednak może nie zamierzasz utworzyć wystąpienie `Swimmer` klasy jako pojedyncze obiekty. Zamierzasz tylko do innych typów klas zwierząt od niej pochodzić, na przykład `Penguin`, `Whale`, i `Fish`. W takim przypadku może zadeklarować `Swimmer` klasy jako abstrakcyjna klasa bazowa.
+Nie można jednak utworzyć wystąpienia klasy `Swimmer` jako pojedynczych obiektów. Można jedynie utworzyć inne typy klas zwierzęcia, na przykład `Penguin`, `Whale` i `Fish`. W takim przypadku należy zadeklarować klasę `Swimmer` jako abstrakcyjną klasę bazową.
 
-Aby zadeklarować klasy jako abstrakcyjnej, można użyć `abstract` — słowo kluczowe. Elementy członkowskie oznaczony jako abstrakcyjny lub zawarte w klasie abstrakcyjnej, wirtualne i musi być implementowane przez klasy, które pochodzą z klasy abstrakcyjnej.
+Aby zadeklarować klasę jako abstrakcyjną, można użyć słowa kluczowego `abstract`. Elementy członkowskie oznaczone jako abstrakcyjne lub zawarte w klasie abstrakcyjnej są wirtualne i muszą być zaimplementowane przez klasy pochodne od klasy abstrakcyjnej.
 
 ```cpp
 class Swimmer abstract
@@ -81,7 +81,7 @@ class Swimmer abstract
 };
 ```
 
-Można również zadeklarować klasy jako abstrakcyjny, przez co najmniej jedną czystą mfunkcję wirtualną:
+Można również zadeklarować klasę jako abstrakcyjną poprzez dołączenie co najmniej jednej czystej funkcji wirtualnej:
 
 ```cpp
 class Swimmer
@@ -91,9 +91,9 @@ class Swimmer
 };
 ```
 
-Po wyświetleniu tych deklaracji na diagramie klasy, nazwa klasy `Swimmer` i jego czystą funkcję wirtualną `swim` w wyświetlanych kursywą kształtu klasę abstrakcyjną, wraz z notacji **klasę abstrakcyjną**. Zwróć uwagę, że kształt typu klasy abstrakcyjnej jest taka sama, jak w przypadku zwykłej klasy, z tą różnicą, że jej obramowanie jest linię kropkowaną.
+Po wyświetleniu tych deklaracji w diagramie klas nazwa klasy `Swimmer` i jej czysta funkcja wirtualna `swim` są wyświetlane kursywnie w kształcie klasy abstrakcyjnej, wraz z **klasą abstrakcyjną**notacji. Zwróć uwagę, że kształt typu klasy abstrakcyjnej jest taki sam jak w przypadku zwykłej klasy, z tą różnicą, że jej obramowanie jest linią kropkowaną.
 
-Klasy pochodzącej od abstrakcyjna klasa bazowa musi przesłonić metodę każdego czystej funkcji wirtualnej w klasie bazowej lub nie można utworzyć wystąpienia klasy pochodnej. Tak więc, na przykład w przypadku klasy wyprowadzonej `Fish` klasy z `Swimmer` klasy `Fish` przesłonięcie `swim` metody:
+Klasa pochodna z abstrakcyjnej klasy bazowej musi przesłonić każdą czystą funkcję wirtualną w klasie podstawowej lub nie można utworzyć wystąpienia klasy pochodnej. Aby na przykład utworzyć klasę `Fish` z klasy `Swimmer`, `Fish` musi zastąpić metodę `swim`:
 
 ```cpp
 class Fish : public Swimmer
@@ -107,11 +107,11 @@ int main()
 }
 ```
 
-Gdy ten kod jest wyświetlana na diagramie klasy **projektanta klas** rysuje linię dziedziczenia z `Fish` do `Swimmer`.
+Po wyświetleniu tego kodu w diagramie klas **Projektant klas** rysuje linię dziedziczenia z `Fish` do `Swimmer`.
 
 ## <a name="anonymous-classes"></a>Klasy anonimowe
 
-**Projektant klasy** obsługuje klasy anonimowe. *Anonimowe typy klas* klasy są deklarowane bez identyfikatora. One nie może mieć Konstruktor lub destruktor nie mogą być przekazywane jako argumenty do funkcji i nie może być zwracane jako wartości zwracane przez funkcje. Można użyć klasy anonimowe, aby zastąpić nazwę typedef, jak w poniższym przykładzie nazwa klasy:
+**Projektant klas** obsługuje klasy anonimowe. *Anonimowe typy klas* to klasy zadeklarowane bez identyfikatora. Nie mogą one mieć konstruktora ani destruktora, nie mogą być przekazane jako argumenty do funkcji i nie mogą być zwracane jako wartości zwracane z funkcji. Można użyć anonimowej klasy, aby zastąpić nazwę klasy nazwą typedef, jak w poniższym przykładzie:
 
 ```cpp
 typedef struct
@@ -121,15 +121,15 @@ typedef struct
 } POINT;
 ```
 
-Struktury mogą być również anonimowe. **Projektant klasy** Wyświetla anonimowe klasy i struktury takie same, jak jest wyświetlana odpowiedniego typu. Mimo że można zadeklarować i wyświetlić anonimowe klas i struktur, **projektanta klas** nie będzie używać nazwa tagu, który określisz. Nazwa która generuje widoku klasy zostanie użyty. Klasy lub struktury jest wyświetlana w widoku klas i **projektanta klas** jako element o nazwie **__unnamed**.
+Struktury mogą być również anonimowe. **Projektant klas** wyświetla anonimowe klasy i struktury tak samo, jak w przypadku wyświetlania odpowiedniego typu. Chociaż można zadeklarować i wyświetlić anonimowe klasy i struktury, **Projektant klas** nie użyje nazwy tagu, którą określisz. Zostanie użyta nazwa generowana Widok klasy. Klasa lub struktura pojawia się w Widok klasy i **Projektant klas** jako element o nazwie **__unnamed**.
 
-Aby uzyskać więcej informacji na temat klasy anonimowe, zobacz [anonimowe typy klas](/cpp/cpp/anonymous-class-types).
+Aby uzyskać więcej informacji na temat klas anonimowych, zobacz [anonimowe typy klas](/cpp/cpp/anonymous-class-types).
 
 ## <a name="template-classes"></a>Klasy szablonów
 
-**Projektant klasy** obsługuje wizualizacji klasy szablonu. Zagnieżdżone deklaracje są obsługiwane. W poniższej tabeli przedstawiono kilka typowych deklaracji.
+**Projektant klas** obsługuje wizualizację klas szablonów. Deklaracje zagnieżdżone są obsługiwane. W poniższej tabeli przedstawiono niektóre typowe deklaracje.
 
-| Element Code | Widok projektanta klas |
+| Element Code | Widok Projektant klas |
 | - | - |
 | `template <class T>`<br /><br /> `class A {};` | `A<T>`<br /><br /> Klasa szablonu |
 | `template <class T, class U>`<br /><br /> `class A {};` | `A<T, U>`<br /><br /> Klasa szablonu |
@@ -138,45 +138,45 @@ Aby uzyskać więcej informacji na temat klasy anonimowe, zobacz [anonimowe typy
 
 W poniższej tabeli przedstawiono kilka przykładów częściowej specjalizacji.
 
-|Element Code|Widok projektanta klas|
+|Element Code|Widok Projektant klas|
 |------------------| - |
 |`template<class T, class U>`<br /><br /> `class A {};`|`A<T, U>`<br /><br /> Klasa szablonu|
 |`template<class T>`<br /><br /> `class A<T, T> {};`|`A<T, T>`<br /><br /> Klasa szablonu|
 |`template <class T>`<br /><br /> `class A<T, int> {};`|`A<T, int>`<br /><br /> Klasa szablonu|
 |`template <class T1, class T2>`<br /><br /> `class A<T1*, T2*> {};`|`A<T1*, T2*>`<br /><br /> Klasa szablonu|
 
-W poniższej tabeli przedstawiono kilka przykładów dziedziczenia w składowej specjalizacji.
+W poniższej tabeli przedstawiono kilka przykładów dziedziczenia w częściowej specjalizacji.
 
-|Element Code|Widok projektanta klas|
+|Element Code|Widok Projektant klas|
 |------------------| - |
-|`template <class T, class U>`<br /><br /> `class A {};`<br /><br /> `template <class TC>`<br /><br /> `class A<T, int> {};`<br /><br /> `class B : A<int, float>`<br /><br /> `{};`<br /><br /> `class C : A<int, int>`<br /><br /> `{};`|`A<T, U>`<br /><br /> Klasa szablonu<br /><br /> `B`<br /><br /> Class<br /><br /> (wskazuje klasy A)<br /><br /> `C`<br /><br /> Class<br /><br /> (wskazuje klasy A)|
+|`template <class T, class U>`<br /><br /> `class A {};`<br /><br /> `template <class TC>`<br /><br /> `class A<T, int> {};`<br /><br /> `class B : A<int, float>`<br /><br /> `{};`<br /><br /> `class C : A<int, int>`<br /><br /> `{};`|`A<T, U>`<br /><br /> Klasa szablonu<br /><br /> `B`<br /><br /> Class<br /><br /> (wskazuje klasę A)<br /><br /> `C`<br /><br /> Class<br /><br /> (wskazuje klasę A)|
 
-W poniższej tabeli przedstawiono kilka przykładów częściowa specjalizacja szablonu funkcji.
+W poniższej tabeli przedstawiono kilka przykładów funkcji szablonu częściowej specjalizacji.
 
-|Element Code|Widok projektanta klas|
+|Element Code|Widok Projektant klas|
 |------------------| - |
-|`class A`<br /><br /> `{`<br /><br /> `template <class T, class U>`<br /><br /> `void func(T a, U b);`<br /><br /> `template <class T>`<br /><br /> `void func(T a, int b);`<br /><br /> `};`|`A`<br /><br /> FUNC\<T, N > (+ przeciążenie 1)|
-|`template <class T1>`<br /><br /> `class A {`<br /><br /> `template <class T2>`<br /><br /> `class B {};`<br /><br /> `};`<br /><br /> `template<> template<>`<br /><br /> `class A<type>::B<type> {};`|`A<T1>`<br /><br /> Klasa szablonu<br /><br /> `B<T2>`<br /><br /> Klasa szablonu<br /><br /> (B znajduje się w obrębie klasy A w obszarze **typy zagnieżdżone**)|
-|`template <class T>`<br /><br /> `class C {};`<br /><br /> `class A : C<int> {};`|`A`<br /><br /> Class<br /><br /> -> C\<int><br /><br /> `C<T>`<br /><br /> Klasa szablonu|
+|`class A`<br /><br /> `{`<br /><br /> `template <class T, class U>`<br /><br /> `void func(T a, U b);`<br /><br /> `template <class T>`<br /><br /> `void func(T a, int b);`<br /><br /> `};`|`A`<br /><br /> Func \<T, U > (przeciążanie + 1)|
+|`template <class T1>`<br /><br /> `class A {`<br /><br /> `template <class T2>`<br /><br /> `class B {};`<br /><br /> `};`<br /><br /> `template<> template<>`<br /><br /> `class A<type>::B<type> {};`|`A<T1>`<br /><br /> Klasa szablonu<br /><br /> `B<T2>`<br /><br /> Klasa szablonu<br /><br /> (B jest zawarty w klasie A w **zagnieżdżonych typach**)|
+|`template <class T>`<br /><br /> `class C {};`<br /><br /> `class A : C<int> {};`|`A`<br /><br /> Class<br /><br /> -> C \<int ><br /><br /> `C<T>`<br /><br /> Klasa szablonu|
 
-W poniższej tabeli przedstawiono kilka przykładów szablon dziedziczenia.
+W poniższej tabeli przedstawiono kilka przykładów dziedziczenia szablonów.
 
-|Element Code|Widok projektanta klas|
+|Element Code|Widok Projektant klas|
 |------------------| - |
-|`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {`<br /><br /> `class B {};`<br /><br /> `}`<br /><br /> `class A : C<int>::B {};`|`A`<br /><br /> Class<br /><br /> ->B<br /><br /> `C<int>`<br /><br /> Class<br /><br /> (B znajduje się w obrębie klasy C w ramach **typy zagnieżdżone**)<br /><br /> `C<T>`<br /><br /> Klasa szablonu|
+|`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {`<br /><br /> `class B {};`<br /><br /> `}`<br /><br /> `class A : C<int>::B {};`|`A`<br /><br /> Class<br /><br /> -> B<br /><br /> `C<int>`<br /><br /> Class<br /><br /> (B jest zawarty w klasie C w **zagnieżdżonych typach**)<br /><br /> `C<T>`<br /><br /> Klasa szablonu|
 
-W poniższej tabeli przedstawiono kilka przykładów klas wyspecjalizowanych canonical połączenia.
+W poniższej tabeli przedstawiono kilka przykładów kanonicznych, wyspecjalizowanych połączeń klas.
 
-|Element Code|Widok projektanta klas|
+|Element Code|Widok Projektant klas|
 |------------------| - |
-|`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {};`<br /><br /> `class A : C<int> {};`<br /><br /> `class D : C<float> {};`|`A`<br /><br /> Class<br /><br /> ->C\<int><br /><br /> `C<int>`<br /><br /> Class<br /><br /> `C<T>`<br /><br /> Klasa szablonu<br /><br /> `D`<br /><br /> Class<br /><br /> ->C\<float>|
-|`class B {`<br /><br /> `template <class T>`<br /><br /> `T min (const T &a, const T &b);`<br /><br /> `};`|`B`<br /><br /> min \<T >|
+|`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {};`<br /><br /> `class A : C<int> {};`<br /><br /> `class D : C<float> {};`|`A`<br /><br /> Class<br /><br /> -> C \<int ><br /><br /> `C<int>`<br /><br /> Class<br /><br /> `C<T>`<br /><br /> Klasa szablonu<br /><br /> `D`<br /><br /> Class<br /><br /> -> C \<float >|
+|`class B {`<br /><br /> `template <class T>`<br /><br /> `T min (const T &a, const T &b);`<br /><br /> `};`|`B`<br /><br /> Minimalna \<T >|
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Praca z kodem Visual C++](working-with-visual-cpp-code.md)
 - [Klasy i struktury](/cpp/cpp/classes-and-structs-cpp)
 - [Anonimowe typy klas](/cpp/cpp/anonymous-class-types)
-- [Dziedziczenie wielokrotne](https://msdn.microsoft.com/library/6td5yws2.aspx)
+- [Wielokrotne dziedziczenie](https://msdn.microsoft.com/library/6td5yws2.aspx)
 - [Wiele klas podstawowych](/cpp/cpp/multiple-base-classes)
 - [Szablony](/cpp/cpp/templates-cpp)

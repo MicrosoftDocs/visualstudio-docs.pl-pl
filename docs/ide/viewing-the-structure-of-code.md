@@ -20,17 +20,17 @@ helpviewer_keywords:
 - Visual Studio, call hierarchy window
 - class view
 - object browser
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 616f62110dbaa18d53b4ecc3cade7737f551e5f9
-ms.sourcegitcommit: a2df993dc5e11c5131dbfcba686f0028a589068f
+ms.openlocfilehash: 0fc7ade360ac586f09eb838057251172be5d0e81
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71150126"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647303"
 ---
 # <a name="view-the-structure-of-code-using-different-tool-windows"></a>Wyświetlanie struktury kodu przy użyciu różnych okien narzędzi
 
@@ -59,7 +59,7 @@ Pasek narzędzi **Widok klasy** zawiera następujące polecenia:
 |**Nowy folder**|Tworzy folder wirtualny lub podfolder, w którym można organizować często używane elementy. Są one zapisywane w aktywnym pliku rozwiązania ( *. suo*). Po zmianie nazwy lub usunięciu elementu w kodzie może on pojawić się w folderze wirtualnym jako węzeł błędu. Aby rozwiązać ten problem, Usuń węzeł błędu. Jeśli zmieniono nazwę elementu, można go przenieść z hierarchii projektu do folderu ponownie.|
 |**Wstecz**|Przechodzi do poprzednio wybranego elementu.|
 |**Prześlą**|Przechodzi do następnego wybranego elementu.|
-|**Pokaż Diagram klas** (tylko projekty kodu zarządzanego)|Staną się dostępne po wybraniu przestrzeni nazw lub typu w **Widok klasy**. Po wybraniu przestrzeni nazw Diagram klas pokazuje wszystkie typy w nim. Po wybraniu typu Diagram klas pokazuje tylko ten typ.|
+|**Widok diagramu klas** (tylko projekty kodu zarządzanego)|Staną się dostępne po wybraniu przestrzeni nazw lub typu w **Widok klasy**. Po wybraniu przestrzeni nazw Diagram klas pokazuje wszystkie typy w nim. Po wybraniu typu Diagram klas pokazuje tylko ten typ.|
 
 ### <a name="class-view-settings"></a>Ustawienia Widok klasy
 
@@ -119,7 +119,7 @@ Menu skrótów w oknie **Hierarchia wywołań** zawiera następujące polecenia:
 |**Przejdź do definicji**|Przechodzi do oryginalnej definicji metody.|
 |**Znajdź wszystkie odwołania**|Znajduje w projekcie wszystkie odwołania do wybranej metody.|
 |**Kopiuj**|Kopiuje wybrany węzeł (ale nie jego węzły podrzędne).|
-|**Odśwież**|Odświeża informacje.|
+|**Odowieżenie**|Odświeża informacje.|
 
 ## <a name="BKMK_ObjectBrowser"></a>Przeglądarka obiektów
 
@@ -202,7 +202,7 @@ Menu skrótów (lub kliknij prawym przyciskiem myszy) w oknie **definicji kodu**
 |**Szybkie akcje i refaktoryzacje**||
 |**Zmiana nazwy**||
 |**Generowanie grafu plików dołączanych**||
-|**Zobacz definicję**||
+|**Definicja wglądu**||
 |**Przejdź do definicji**|Znajduje definicję (lub definicje, dla klas częściowych) i wyświetla je w oknie **Znajdź wyniki** .|
 |**Przejdź do deklaracji**||
 |**Znajdź wszystkie odwołania**|Znajduje odwołania do typu lub elementu członkowskiego w rozwiązaniu.|

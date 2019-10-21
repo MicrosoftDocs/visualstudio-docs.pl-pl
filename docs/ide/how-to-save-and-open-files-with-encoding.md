@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Zapisywanie i otwieranie plików z zastosowaniem kodowania'
+title: 'Instrukcje: zapisywanie i otwieranie plików przy użyciu kodowania'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,56 +8,56 @@ helpviewer_keywords:
 - bidirectional language support, encoded files
 - file encoding, bidirectional languages
 ms.assetid: cb52b732-b395-4ba1-a3ef-104b3942a12a
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd3d7ccc248785c127c1eaf34da8840f824e4195
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b02734af3efb24e1e3791246b0cea405b12d7b15
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946950"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645801"
 ---
-# <a name="how-to-save-and-open-files-with-encoding"></a>Instrukcje: Zapisywanie i otwieranie plików z zastosowaniem kodowania
+# <a name="how-to-save-and-open-files-with-encoding"></a>Instrukcje: zapisywanie i otwieranie plików przy użyciu kodowania
 
-Pliki można zapisać przy użyciu określonych znaków kodowania w celu włączenia obsługi języków dwukierunkowych. Można również określić kodowanie podczas otwierania pliku, tak aby program Visual Studio Wyświetla plik poprawnie.
+Pliki z określonym kodowaniem znaków można zapisać w celu obsługi języków dwukierunkowych. Możesz również określić kodowanie podczas otwierania pliku, aby program Visual Studio prawidłowo wyświetlał plik.
 
 ## <a name="to-save-a-file-with-encoding"></a>Aby zapisać plik z kodowaniem
 
-1. Z **pliku** menu, wybierz **Zapisz plik jako**, a następnie kliknij przycisk listy rozwijanej obok pola **Zapisz** przycisku.
+1. Z menu **plik** wybierz polecenie **Zapisz plik jako**, a następnie kliknij przycisk listy rozwijanej obok przycisku **Zapisz** .
 
-     **Zaawansowane opcje zapisywania** zostanie wyświetlone okno dialogowe.
+     Zostanie wyświetlone okno dialogowe **Zaawansowane opcje zapisywania** .
 
-2. W obszarze **kodowanie**, wybierz kodowanie do użycia dla pliku.
+2. W obszarze **kodowanie**wybierz kodowanie, które ma być używane dla pliku.
 
-3. Opcjonalnie w obszarze **zakończenia wierszy**, wybierz format znaki końca wiersza.
+3. Opcjonalnie w obszarze **końce wiersza**wybierz format znaków końca wiersza.
 
-     Ta opcja jest przydatna, jeśli zamierzasz wymiany plików z użytkownicy systemów operacyjnych.
+     Ta opcja jest przydatna, jeśli zamierzasz wymieniać plik z użytkownikami innego systemu operacyjnego.
 
-     Jeśli chcesz pracować z pliku, który został zakodowany w określony sposób można stwierdzić, Visual Studio, aby użyć kodowania podczas otwierania pliku. Metody, których używasz, zależy od tego, czy plik jest częścią projektu.
+     Jeśli chcesz współpracować z plikiem, który znasz w określony sposób, możesz poinstruować program Visual Studio, aby używał tego kodowania podczas otwierania pliku. Używana metoda zależy od tego, czy plik jest częścią projektu.
 
-## <a name="to-open-an-encoded-file-that-is-part-of-a-project"></a>Aby otworzyć plik zakodowany, który jest częścią projektu
+## <a name="to-open-an-encoded-file-that-is-part-of-a-project"></a>Aby otworzyć zakodowany plik, który jest częścią projektu
 
-1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy plik i wybierz **Otwórz za pomocą**.
+1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy plik i wybierz polecenie **Otwórz za pomocą**.
 
-2. W **Otwórz za pomocą** okno dialogowe, wybierz Otwórz plik w edytorze.
+2. W oknie dialogowym **Otwórz za pomocą** wybierz Edytor, dla którego chcesz otworzyć plik.
 
-     Wiele edytorów programu Visual Studio, takich jak edytor formularzy spowoduje automatyczne wykrywanie kodowania i Otwórz plik odpowiednio. Jeśli wybierzesz Edytor który pozwala wybrać kodowanie **kodowanie** zostanie wyświetlone okno dialogowe.
+     Wiele edytorów programu Visual Studio, takich jak edytor formularzy, automatycznie wykryje kodowanie i odpowiednio otworzy plik. W przypadku wybrania edytora, który umożliwia wybranie kodowania, wyświetlane jest okno dialogowe **kodowanie** .
 
-3. W **kodowanie** okna dialogowego Wybierz kodowanie, który ma być używany w edytorze.
+3. W oknie dialogowym **kodowanie** wybierz kodowanie, które ma być używane przez Edytor.
 
-## <a name="to-open-an-encoded-file-that-is-not-part-of-a-project"></a>Aby otworzyć plik zakodowany, który nie jest częścią projektu
+## <a name="to-open-an-encoded-file-that-is-not-part-of-a-project"></a>Aby otworzyć zakodowany plik, który nie jest częścią projektu
 
-1. Na **pliku** menu wskaż **Otwórz**, wybierz **pliku** lub **plik z sieci Web**, a następnie wybierz plik aby otworzyć.
+1. W menu **plik** wskaż polecenie **Otwórz**, wybierz **plik** lub **plik z sieci Web**, a następnie wybierz plik do otwarcia.
 
-2. Kliknij przycisk listy rozwijanej obok pozycji **Otwórz** przycisk, a następnie wybierz **Otwórz za pomocą**.
+2. Kliknij przycisk listy rozwijanej obok przycisku **Otwórz** i wybierz polecenie **Otwórz za pomocą**.
 
-3. Wykonaj kroki 2 i 3 poprzedniej procedury.
+3. Wykonaj kroki 2 i 3 z poprzedniej procedury.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Kodowanie i linia podziału](encodings-and-line-breaks.md)
-- [Globalizacja formularzy Windows i kodowanie](/dotnet/framework/winforms/advanced/encoding-and-windows-forms-globalization)
-- [Sprzedawać i lokalizowanie aplikacji](../ide/globalizing-and-localizing-applications.md)
+- [Kodowanie i podziały wierszy](encodings-and-line-breaks.md)
+- [Kodowanie i globalizacja Windows Forms](/dotnet/framework/winforms/advanced/encoding-and-windows-forms-globalization)
+- [Globalizacja i lokalizowanie aplikacji](../ide/globalizing-and-localizing-applications.md)

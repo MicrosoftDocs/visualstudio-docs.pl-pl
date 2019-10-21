@@ -9,17 +9,17 @@ helpviewer_keywords:
 - service references [Visual Studio], configuring behavior
 - Configure Service Reference dialog box
 ms.assetid: 25e4c36b-2db6-4e71-9010-b7068255d09d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1cf4a809c1353f2fe30383a312f65b6c623083db
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 033663c347a39c63a76bddd10625bdc86cec1f00
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925668"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72642858"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Konfiguruj odwołanie do usługi — Okno dialogowe
 
@@ -39,11 +39,11 @@ Aby uzyskać dostęp do okna dialogowego **Konfigurowanie odwołania do usługi*
 
 - Aby określić typy kolekcji list lub słowników dla klienta WCF, wybierz typy z listy **Typ kolekcji** i **Typ kolekcji słownika** .
 
-- Aby wyłączyć udostępnianie typów, wyczyść pole wyboru **Użyj ponownie typów w** przywoływanych zestawach. Aby włączyć udostępnianie typu dla podzbioru zestawów, do których się odwołuje, zaznacz pole wyboru **Użyj ponownie typów w** przywoływanych zestawach, wybierz pozycję **Użyj ponownie typów w określonych**przywoływanych zestawach i wybierz odpowiednie odwołania w **odwołaniach Lista zestawów**.
+- Aby wyłączyć udostępnianie typów, wyczyść pole wyboru **Użyj ponownie typów w przywoływanych zestawach** . Aby włączyć udostępnianie typu dla podzbioru zestawów, do których się odwołuje, zaznacz pole wyboru **Użyj ponownie typów w przywoływanych zestawach** , wybierz pozycję **Użyj ponownie typów w określonych przywoływanych zestawach**i wybierz odpowiednie odwołania w **odwołaniach Lista zestawów**.
 
 ## <a name="uielement-list"></a>Lista elementów UIElement
 
-**Adres**
+**Ulica**
 
 Aktualizuje adres sieci Web, w którym odwołanie do usługi poszukuje usługi. Na przykład podczas opracowywania usługa może być hostowana na serwerze deweloperskim, a następnie przeniesiona na serwer produkcyjny, co wymaga zmiany adresu.
 
@@ -55,7 +55,7 @@ Aktualizuje adres sieci Web, w którym odwołanie do usługi poszukuje usługi. 
 Określa poziom dostępu kodu dla klas klienta WCF.
 
 > [!NOTE]
-> W przypadku projektów witryny sieci Web Ta opcja jest zawsze `Public` ustawiana na i nie można jej zmienić. Aby uzyskać więcej informacji, zobacz [Rozwiązywanie problemów z usługą](../data-tools/troubleshooting-service-references.md).
+> W przypadku projektów witryny sieci Web Ta opcja jest zawsze ustawiana na `Public` i nie można jej zmienić. Aby uzyskać więcej informacji, zobacz [Rozwiązywanie problemów z usługą](../data-tools/troubleshooting-service-references.md).
 
 **Generuj operacje asynchroniczne**
 
@@ -71,11 +71,11 @@ Określa, czy typy kontraktów komunikatów są generowane dla klienta WCF. Aby 
 
 **Typ kolekcji**
 
-Określa typ kolekcji listy dla klienta WCF. Domyślnym typem jest <xref:System.Array>.
+Określa typ kolekcji listy dla klienta WCF. Domyślny typ to <xref:System.Array>.
 
 **Typ kolekcji słownika**
 
-Określa typ kolekcji słownika dla klienta WCF. Domyślnym typem jest <xref:System.Collections.Generic.Dictionary%602>.
+Określa typ kolekcji słownika dla klienta WCF. Domyślny typ to <xref:System.Collections.Generic.Dictionary%602>.
 
 **Ponowne używanie typów w przywoływanych zestawach**
 
@@ -91,7 +91,7 @@ Po wybraniu są ponownie używane tylko wybrane typy z **listy przywoływanych z
 
 **Lista zestawów, do których się odwołuje**
 
-Zawiera listę zestawów, do których odwołuje się projekt lub witryna sieci Web. W przypadku wybrania opcji **Użyj ponownie typów w określonych**przywoływanych zestawach można wybrać lub wyczyścić poszczególne zestawy.
+Zawiera listę zestawów, do których odwołuje się projekt lub witryna sieci Web. W przypadku wybrania opcji **Użyj ponownie typów w określonych przywoływanych zestawach**można wybrać lub wyczyścić poszczególne zestawy.
 
 **Dodaj odwołanie sieci Web**
 

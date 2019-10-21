@@ -1,5 +1,5 @@
 ---
-title: Obsługiwanie zabezpieczeń | Dokumentacja firmy Microsoft
+title: Zachowanie bezpieczeństwa | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,33 +13,29 @@ helpviewer_keywords:
 - security [.NET Framework], maintaining after deployment
 ms.assetid: 621d10c1-842b-4902-be60-bb9719591751
 caps.latest.revision: 22
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b99db8a9e1f34bc724059ff9cbf2a065df39e78f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 008199331778a1e7d780a6aac7591ca2285d683e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68186091"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651411"
 ---
 # <a name="maintaining-security"></a>Obsługiwanie zabezpieczeń
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Często mówi się, że ceną bezpieczeństwa jest nieprzerwana czujność. Pomimo najwyższej uwagi poświęconej bezpieczeństwu podczas projektowania i rozwoju aplikacji, należy przyjąć, że po jej wdrożeniu pojawią się luki w zabezpieczeniach. Dzięki audytom aplikacji i analizie dzienników zdarzeń, możesz odkryć poprzednio ukryte wady.  
-  
- Ponadto, musisz zachowywać czujność nie tylko, jeśli chodzi o swoją własną aplikację. Musisz też być na bieżąco ze wszystkimi zagrożeniami bezpieczeństwa i błędami dotyczącymi platformy, na której działa aplikacja, i innych produktów, od których zależy aplikacja.  
-  
- [Bezpieczeństwo, prywatność i konta](http://go.microsoft.com/fwlink/?LinkId=72881)  
- Uzyskaj pomoc dotyczącą bezpieczeństwa, prywatności i kont użytkownika, w tym informacje o wirusach, hasłach, kontroli rodzicielskiej, zaporach sieciowych i szyfrowaniu dysków...  
-  
- [Microsoft Security Bulletin Search](/security-updates/)  
- Na tej stronie można łatwo znaleźć wydane wcześniej biuletyny. Biuletyny bezpieczeństwa, przeznaczone dla specjalistów IT, zawierają szczegółowe informacje dotyczące aktualizacji zabezpieczeń.  
-  
- [Przewodnik po zabezpieczeniach systemu Windows Server 2003] (/previous-versions/tn-archive/cc163140(v=technet.10) dostarcza wskazówki konieczne dla specjalistów IT bezpiecznie pracować w środowisku systemu Windows Server 2003 przy jednoczesnym zapewnieniu odpowiedniego dostępu do odpowiedniej zawartości przez odpowiednie osoby.  
-  
- [Najlepsze rozwiązania dotyczące zabezpieczeń przedsiębiorstwa](/previous-versions/tn-archive/cc750076%28v%3dtechnet.10%29)  
- Zbiór oficjalnych dokumentów, koncentrujących się na różnych aspektach bezpieczeństwa w sieciach firmowych.  
-  
- [Microsoft Baseline Security Analyzer](/windows/security/threat-protection/mbsa-removal-and-guidance)  
- Microsoft Baseline Security Analyzer (MBSA) to narzędzie, które umożliwia poszczególnym użytkownikom domowym, użytkownikom korporacyjnym lub administratorom skanowanie jednej lub większej liczby komputerów opartych na systemie Windows pod kątem typowych błędów konfiguracji zabezpieczeń.
+Często mówi się, że ceną bezpieczeństwa jest nieprzerwana czujność. Pomimo najwyższej uwagi poświęconej bezpieczeństwu podczas projektowania i rozwoju aplikacji, należy przyjąć, że po jej wdrożeniu pojawią się luki w zabezpieczeniach. Dzięki audytom aplikacji i analizie dzienników zdarzeń, możesz odkryć poprzednio ukryte wady.
+
+ Ponadto, musisz zachowywać czujność nie tylko, jeśli chodzi o swoją własną aplikację. Musisz też być na bieżąco ze wszystkimi zagrożeniami bezpieczeństwa i błędami dotyczącymi platformy, na której działa aplikacja, i innych produktów, od których zależy aplikacja.
+
+ [Zabezpieczenia, prywatność i konta](http://go.microsoft.com/fwlink/?LinkId=72881) Uzyskaj pomoc dotyczącą zabezpieczeń, ochrony prywatności i kont użytkowników, w tym informacji o wirusach, hasłach, kontrolach rodzicielskich, zaporach i szyfrowaniu dysków.
+
+ [Wyszukiwanie biuletynu zabezpieczeń firmy Microsoft](/security-updates/) Ta strona ułatwia znalezienie wcześniej wydanych biuletynów. Biuletyny bezpieczeństwa, przeznaczone dla specjalistów IT, zawierają szczegółowe informacje dotyczące aktualizacji zabezpieczeń.
+
+ [Przewodnik po zabezpieczeniach systemu Windows Server 2003] (/Previous-Versions/TN-Archive/cc163140 (v = TechNet. 10) zawiera wskazówki niezbędne dla specjalistów IT, aby bezpiecznie działały środowisko systemu Windows Server 2003 przy jednoczesnym zapewnieniu odpowiedniego dostępu do odpowiedniej zawartości przez odpowiednie osoby.
+
+ [Najlepsze rozwiązania dotyczące zabezpieczeń przedsiębiorstwa](/previous-versions/tn-archive/cc750076%28v%3dtechnet.10%29) Zbiór oficjalnych dokumentów koncentruje się na różnych aspektach zabezpieczeń w sieciach przedsiębiorstwa.
+
+ [Microsoft Baseline Security Analyzer](/windows/security/threat-protection/mbsa-removal-and-guidance) Microsoft Baseline Security Analyzer (MBSA) to narzędzie, które umożliwia indywidualnemu użytkownikowi głównemu, użytkownikowi korporacyjnemu lub administratorowi skanowanie jednego lub większej liczby komputerów z systemem Windows pod kątem typowych błędów konfiguracji zabezpieczeń.

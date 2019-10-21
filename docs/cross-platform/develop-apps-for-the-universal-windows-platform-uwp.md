@@ -4,17 +4,17 @@ ms.date: 10/24/2017
 ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: eac59cb6-f12e-4a77-9953-6d62b164a643
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 3bfe4b1a172158740705e392c573de7911016583
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: d526d5df8ba03374fd26ceb870d4b240b6fc2fa4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70179870"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648961"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Opracowywanie aplikacji na platformę uniwersalną systemu Windows (UWP)
 
@@ -22,7 +22,7 @@ Korzystając z platforma uniwersalna systemu Windows i naszego systemu Windows C
 
 ![Platforma uniwersalna systemu Windows](../cross-platform/media/uwp_coreextensions.png)
 
-Uruchom aplikację na telefonie z systemem Windows 10, system Windows 10 desktop lub konsoli Xbox. Jest to ten sam pakiet aplikacji. Wraz z wprowadzeniem core systemu Windows 10 w pojedynczą, jednolitą jednego pakietu aplikacji można uruchamiać na wszystkich platformach. Kilka platform zawiera zestawy SDK rozszerzeń, które można dodać do aplikacji, aby korzystać z zachowań specyficznych dla platformy. Na przykład zestawu SDK rozszerzenia dla urządzeń przenośnych obsługuje przycisku Wstecz naciśniętym na urządzeniu z systemem Windows phone. Jeśli odwołujesz się do zestawu SDK rozszerzenia w projekcie, po prostu Dodaj testy środowiska uruchomieniowego, aby sprawdzić, czy ten zestaw SDK jest dostępny na tej platformie. Oznacza to, że możesz mieć ten sam pakiet aplikacji dla każdej platformy.
+Uruchom aplikację na telefonie z systemem Windows 10, Windows 10 Desktop lub Xbox. Jest to ten sam pakiet aplikacji. Wraz z wprowadzeniem pojedynczego, ujednoliconego rdzeń systemu Windows 10 jeden pakiet aplikacji może być uruchamiany na wszystkich platformach. Kilka platform zawiera zestawy SDK rozszerzeń, które można dodać do aplikacji, aby korzystać z zachowań specyficznych dla platformy. Na przykład zestaw SDK rozszerzenia dla urządzeń przenośnych obsługuje naciśnięcie przycisku Wstecz w systemie Windows Phone. Jeśli odwołujesz się do zestawu SDK rozszerzenia w projekcie, po prostu Dodaj testy środowiska uruchomieniowego, aby sprawdzić, czy ten zestaw SDK jest dostępny na tej platformie. Oznacza to, że możesz mieć ten sam pakiet aplikacji dla każdej platformy.
 
 **Co to jest rdzeń systemu Windows?**
 

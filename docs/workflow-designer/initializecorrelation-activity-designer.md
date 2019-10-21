@@ -1,49 +1,49 @@
 ---
-title: Projektant przepływu pracy — InitializeCorrelation, Projektant działań
+title: Projektant przepływu pracy — Projektant działań InitializeCorrelation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.ServiceModel.Activities.InitializeCorrelation.UI
 ms.assetid: 4c54f34c-ee84-42a6-abb0-ec260c1ccb76
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 496aefb2679edd87c892c54f44b14876b4ebce5b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 98a9a6bccb6eab2c4565a717daa897f93dbe8f53
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62536442"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650225"
 ---
 # <a name="initializecorrelation-activity-designer"></a>InitializeCorrelation, projektant działań
 
-**InitializeCorrelation** projektanta działań służy do tworzenia i konfigurowania <xref:System.ServiceModel.Activities.InitializeCorrelation> działania. <xref:System.ServiceModel.Activities.InitializeCorrelation> Działanie ustanawia korelacja komunikatów przed wysyłać ani odbierać z nich.
+Projektant działań **InitializeCorrelation** służy do tworzenia i konfigurowania działania <xref:System.ServiceModel.Activities.InitializeCorrelation>. Działanie <xref:System.ServiceModel.Activities.InitializeCorrelation> ustanawia korelację między komunikatami przed ich wysłaniem lub odebraniem.
 
 ## <a name="the-initializecorrelation-activity"></a>Działanie InitializeCorrelation
 
-<xref:System.ServiceModel.Activities.InitializeCorrelation> To działanie służy do zainicjowania korelacji bez wysyłania i odbierania wiadomości. Zazwyczaj korelacji jest inicjowany przy wysyłaniu lub odbieraniu wiadomości. Jeśli przed wysłanego lub odebranego komunikatu, należy ustanowić korelacji, użyj <xref:System.ServiceModel.Activities.InitializeCorrelation> zainicjować korelacji.
+Działanie <xref:System.ServiceModel.Activities.InitializeCorrelation> służy do inicjowania korelacji bez wysyłania ani otrzymywania wiadomości. Zwykle korelacja jest inicjowana podczas wysyłania lub otrzymywania wiadomości. Jeśli należy ustalić korelację przed wysłaniem lub odebraniem komunikatu, użyj <xref:System.ServiceModel.Activities.InitializeCorrelation> do zainicjowania korelacji.
 
-### <a name="using-the-initializecorrelation-activity-designer"></a>Za pomocą InitializeCorrelation, Projektant działań
+### <a name="using-the-initializecorrelation-activity-designer"></a>Korzystanie z projektanta działań InitializeCorrelation
 
-Dostęp do **InitializeCorrelation** projektanta działań w **komunikatów** kategorii **przybornika**.
+Dostęp do projektanta działań **InitializeCorrelation** w kategorii **Obsługa wiadomości** w **przyborniku**.
 
-**InitializeCorrelation** projektanta działań mogą być przeciągnięte z **przybornika** i porzucić do powierzchni projektanta przepływów pracy. Projektant działań porzucenie tworzy <xref:System.ServiceModel.Activities.InitializeCorrelation> działanie przy użyciu domyślnego <xref:System.Activities.Activity.DisplayName%2A> z InitializeCorrelation. <xref:System.Activities.Activity.DisplayName%2A> Mogą być edytowane w nagłówku **InitializeCorrelation** projektanta działań lub **DisplayName** pole **właściwości** okna.
+Projektanta działań **InitializeCorrelation** można przeciągnąć z **przybornika** i porzucić na Projektant przepływu pracy powierzchnię. Porzucenie projektanta działań powoduje utworzenie działania <xref:System.ServiceModel.Activities.InitializeCorrelation> przy użyciu domyślnego <xref:System.Activities.Activity.DisplayName%2A> InitializeCorrelation. @No__t_0 można edytować w nagłówku projektanta działań **InitializeCorrelation** lub w polu **DisplayName** okna **Właściwości** .
 
-<xref:System.ServiceModel.Activities.CorrelationHandle> Może być Określa **korelacji** pole **właściwości** okno na **InitializeCorrelation** powierzchni projektanta działań.
+@No__t_0 można określić w polu **korelacji** w oknie **Właściwości** na powierzchni projektanta aktywności **InitializeCorrelation** .
 
-Aby wyświetlić **inicjowanie korelacji** okno dialogowe, w którym można określić dojście korelacji i pary klucz wartość, używane do zainicjowania, kliknij przycisk wielokropka obok **CorrelationData** pole **właściwości** okna. Lub wybierz "Wyświetl..." tekst wskazówki w **InitializeCorrelation** powierzchni projektanta działań. Aby uzyskać więcej informacji o korzystaniu z tego okna dialogowego, zobacz [okno dialogowe Edytor kolekcji typów](../workflow-designer/type-collection-editor-dialog-box.md) artykułu.
+Aby wyświetlić okno dialogowe **Inicjowanie korelacji** , w którym można określić uchwyt korelacji i par klucz-wartość używanych do jego zainicjowania, wybierz przycisk wielokropka obok pola **Initalizecorrelation** w oknie **Właściwości** . Lub wybierz pozycję "widok..." tekst wskazówki na powierzchni projektanta działań **InitializeCorrelation** . Aby uzyskać więcej informacji na temat korzystania z tego okna dialogowego, zobacz artykuł [okno dialogowe Edytor kolekcji typów](../workflow-designer/type-collection-editor-dialog-box.md) .
 
 ### <a name="the-initializecorrelation-properties"></a>Właściwości InitializeCorrelation
 
-W poniższej tabeli przedstawiono <xref:System.ServiceModel.Activities.InitializeCorrelation> właściwości oraz opisano sposoby ich używania w projektancie. Te właściwości można edytować w **właściwości** oknie lub na powierzchni projektanta przepływów pracy.
+W poniższej tabeli przedstawiono właściwości <xref:System.ServiceModel.Activities.InitializeCorrelation> i opisano, jak są one używane w projektancie. Te właściwości można edytować w oknie **Właściwości** lub na Projektant przepływu pracy powierzchni.
 
 |Nazwa właściwości|Wymagane|Użycie|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Przyjazna nazwa <xref:System.ServiceModel.Activities.InitializeCorrelation> działania. Wartość domyślna to InitializeCorrelation.<br /><br /> Mimo że użycie wartości innych niż domyślne przyjazna <xref:System.Activities.Activity.DisplayName%2A> nie jest bezwzględnie konieczne jest zalecane.|
-|<xref:System.ServiceModel.Activities.InitializeCorrelation.Correlation%2A>|False|<xref:System.ServiceModel.Activities.CorrelationHandle> Używanego do kojarzenia działań przepływu pracy w korelacji.|
-|<xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>|False|Słownik danych korelacji, który odnosi się komunikaty do wystąpienia przepływu pracy.<br /><br /> Użyj **inicjowanie korelacji** okno dialogowe konfigurowania <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>. Aby uzyskać więcej informacji na temat użycia to okno dialogowe, zobacz [okno dialogowe Edytor kolekcji typów](../workflow-designer/type-collection-editor-dialog-box.md) artykułu.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Przyjazna nazwa działania <xref:System.ServiceModel.Activities.InitializeCorrelation>. Wartość domyślna to InitializeCorrelation.<br /><br /> Chociaż użycie wartości innej niż domyślna dla przyjaznego <xref:System.Activities.Activity.DisplayName%2A> nie jest absolutnie wymagane, zaleca się ją.|
+|<xref:System.ServiceModel.Activities.InitializeCorrelation.Correlation%2A>|False|@No__t_0 używany do kojarzenia działań przepływu pracy w korelacji.|
+|<xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>|False|Słownik danych korelacji, który wiąże komunikaty z wystąpieniem przepływu pracy.<br /><br /> Aby skonfigurować <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>, użyj okna dialogowego **Inicjowanie korelacji** . Aby uzyskać więcej informacji na temat korzystania z tego okna dialogowego, zobacz [okno dialogowe Edytor kolekcji typów](../workflow-designer/type-collection-editor-dialog-box.md) .|
 
 ## <a name="see-also"></a>Zobacz także
 

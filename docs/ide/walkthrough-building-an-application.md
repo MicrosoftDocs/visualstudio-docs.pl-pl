@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8964fc81b8323b6720d7c6d960449c7a9134658b
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 0f94cc62cdadb2df3806f5b188278f49e4041235
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416889"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647174"
 ---
 # <a name="walkthrough-build-an-application"></a>Przewodnik: kompilowanie aplikacji
 
@@ -25,7 +25,7 @@ Pobierz [wprowadzenie do kompilowania przykładowych aplikacji WPF](https://code
 
 ## <a name="create-a-custom-build-configuration"></a>Utwórz niestandardową konfigurację kompilacji
 
-Podczas tworzenia rozwiązania, debugowanie i wydanie konfiguracji kompilacji oraz ich domyślne obiekty docelowe platformy są definiowane automatycznie dla rozwiązania. Następnie można dostosować te konfiguracje lub utworzyć własne. Konfiguracje kompilacji określają typ kompilacji. Platformy kompilacji określają system operacyjny, dla którego aplikacja jest przeznaczona dla danej konfiguracji. Aby uzyskać więcej informacji, zobacz [Omówienie konfiguracji kompilacji](../ide/understanding-build-configurations.md), [Opis platform kompilacji](../ide/understanding-build-platforms.md)i [instrukcje: Ustawianie konfiguracji](../debugger/how-to-set-debug-and-release-configurations.md)debugowania i wydania.
+Podczas tworzenia rozwiązania, debugowanie i wydanie konfiguracji kompilacji oraz ich domyślne obiekty docelowe platformy są definiowane automatycznie dla rozwiązania. Następnie można dostosować te konfiguracje lub utworzyć własne. Konfiguracje kompilacji określają typ kompilacji. Platformy kompilacji określają system operacyjny, dla którego aplikacja jest przeznaczona dla danej konfiguracji. Aby uzyskać więcej informacji, zobacz [Omówienie konfiguracji kompilacji](../ide/understanding-build-configurations.md), [Opis platform kompilacji](../ide/understanding-build-platforms.md)i [instrukcje: Ustawianie konfiguracji debugowania i wersji](../debugger/how-to-set-debug-and-release-configurations.md).
 
 Ustawienia konfiguracji i platformy można zmienić lub utworzyć przy użyciu okna dialogowego **Configuration Manager** . W tej procedurze utworzysz konfigurację kompilacji na potrzeby testowania.
 
@@ -35,25 +35,25 @@ Ustawienia konfiguracji i platformy można zmienić lub utworzyć przy użyciu o
 
    ![Menu Kompilacja, Configuration Manager polecenie](../ide/media/buildwalk_configurationmanagerdialogbox.png)
 
-1. Na liście **Konfiguracja rozwiązania aktywnego** wybierz  **\<pozycję Nowy... \>** .
+1. Na liście **Konfiguracja rozwiązania aktywnego** wybierz pozycję **\<New... \>** .
 
 1. W oknie dialogowym **Nowa konfiguracja rozwiązania** Nazwij nową konfigurację `Test`, skopiuj ustawienia z istniejącej konfiguracji **debugowania** , a następnie wybierz przycisk **OK** .
 
    ![Okno dialogowe Nowa konfiguracja rozwiązania](../ide/media/buildwalk_newsolutionconfigdlgbox.png)
 
-1. Na liście **aktywnych platform rozwiązań** wybierz  **\<pozycję Nowy... \>** .
+1. Na liście **aktywnych platform rozwiązań** wybierz **\<New... \>** .
 
 1. W oknie dialogowym **Nowa platforma rozwiązania** wybierz pozycję **x64**i nie Kopiuj ustawień z platformy x86.
 
    ![Okno dialogowe Nowa platforma rozwiązania](../ide/media/buildwalk_newsolutionplatform.png)
 
-1. Wybierz **OK** przycisku.
+1. Wybierz przycisk **OK** .
 
    Aktywna Konfiguracja rozwiązania została zmieniona na **test** z aktywną platformą rozwiązania ustawioną na x64.
 
    ![Configuration Manager z konfiguracją testu](../ide/media/buildwalk_configmanagertestconfig.png)
 
-1. Wybierz **Zamknij**.
+1. Wybierz pozycję **Zamknij**.
 
 Możesz szybko sprawdzić lub zmienić aktywną konfigurację rozwiązania, korzystając z listy **konfiguracje rozwiązania** na pasku narzędzi **Standardowy** .
 
@@ -65,7 +65,7 @@ Następnie można skompilować rozwiązanie przy użyciu konfiguracji kompilacji
 
 ### <a name="build-the-solution"></a>Kompilowanie rozwiązania
 
-- Na pasku menu wybierz polecenie **Kompiluj** > **kompilację rozwiązania**.
+- Na pasku menu wybierz **kompiluj**  > **Kompiluj rozwiązanie**lub naciśnij **klawisze CTRL** +**SHIFT** +**B**.
 
     W oknie **danych wyjściowych** zostaną wyświetlone wyniki kompilacji. Kompilacja powiodła się.
 
@@ -77,7 +77,7 @@ Następnie wprowadzimy kod, który powoduje wygenerowanie ostrzeżenia przez kom
 
     LUB
 
-    W projekcie Visual Basic Otwórz plik *ExpenseReportPage. XAML. vb* . W publicznym konstruktorze niestandardowym **Sub New...** , Dodaj następujący kod `Dim i`:.
+    W projekcie Visual Basic Otwórz plik *ExpenseReportPage. XAML. vb* . W publicznym konstruktorze niestandardowym **Sub New...** Dodaj następujący kod: `Dim i`.
 
 1. Skompiluj rozwiązanie.
 
@@ -93,7 +93,7 @@ Można tymczasowo ukryć niektóre komunikaty ostrzegawcze podczas kompilacji, a
 
 1. W **Eksplorator rozwiązań**wybierz węzeł najwyższego poziomu projektu.
 
-1. Na pasku menu wybierz **widoku** > **stron właściwości**.
+1. Na pasku menu wybierz pozycję **wyświetl**  > **strony właściwości**.
 
      Zostanie otwarty **Projektant projektu** .
 
@@ -113,7 +113,7 @@ Można tymczasowo ukryć niektóre komunikaty ostrzegawcze podczas kompilacji, a
 
 1. W **Eksplorator rozwiązań**wybierz węzeł najwyższego poziomu projektu.
 
-2. Na pasku menu wybierz **widoku** > **stron właściwości**.
+2. Na pasku menu wybierz pozycję **wyświetl**  > **strony właściwości**.
 
      Zostanie otwarty **Projektant projektu** .
 
@@ -121,7 +121,7 @@ Można tymczasowo ukryć niektóre komunikaty ostrzegawcze podczas kompilacji, a
 
      ![Strona kompilowania, Projektant projektu](../ide/media/buildwalk_vbsuppresswarnings.png)
 
-     Aby uzyskać więcej informacji, zobacz [Konfigurowanie ostrzeżeń w języku Visual Basic](../ide/configuring-warnings-in-visual-basic.md).
+     Aby uzyskać więcej informacji, zobacz [Konfigurowanie ostrzeżeń w Visual Basic](../ide/configuring-warnings-in-visual-basic.md).
 
 4. Skompiluj rozwiązanie.
 
@@ -129,11 +129,11 @@ Można tymczasowo ukryć niektóre komunikaty ostrzegawcze podczas kompilacji, a
 
    ![Okno Dane wyjściowe, Visual Basic ostrzeżeń kompilacji](../ide/media/buildwalk_visualbasicbuildwarnings.png)
 
-   Aby uzyskać więcej informacji, zobacz [jak: Pomijanie ostrzeżeń](../ide/how-to-suppress-compiler-warnings.md)kompilatora.
+   Aby uzyskać więcej informacji, zobacz [How to: pomijanie ostrzeżeń kompilatora](../ide/how-to-suppress-compiler-warnings.md).
 
 ## <a name="display-additional-build-details-in-the-output-window"></a>Wyświetl dodatkowe szczegóły kompilacji w oknie danych wyjściowych
 
-W oknie **dane wyjściowe** można zmienić ilość informacji o procesie kompilacji. Poziom szczegółowości kompilacji jest zwykle ustawiony na wartość minimalną, co oznacza, że okno **danych wyjściowych** wyświetla tylko podsumowanie procesu kompilacji wraz z ostrzeżeniami lub błędami o wysokim priorytecie. Więcej informacji na temat kompilacji można wyświetlić za pomocą [okna dialogowego Opcje, projektów i rozwiązań, kompilowania i uruchamiania](../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md).
+W oknie **dane wyjściowe** można zmienić ilość informacji o procesie kompilacji. Poziom szczegółowości kompilacji jest zwykle ustawiony na wartość **minimalną**, co oznacza, że okno **danych wyjściowych** wyświetla tylko podsumowanie procesu kompilacji wraz z ostrzeżeniami lub błędami o wysokim priorytecie. Więcej informacji na temat kompilacji można wyświetlić za pomocą [okna dialogowego Opcje, projektów i rozwiązań, kompilowania i uruchamiania](../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md).
 
 > [!IMPORTANT]
 > Jeśli wyświetli się więcej informacji, kompilacja zajmie więcej czasu.
@@ -148,7 +148,7 @@ W oknie **dane wyjściowe** można zmienić ilość informacji o procesie kompil
 
 1. Na liście **poziom szczegółowości danych wyjściowych kompilacji projektu programu MSBuild** wybierz pozycję **normalne**, a następnie wybierz przycisk **OK** .
 
-1. Na pasku menu wybierz kolejno opcje **Kompiluj** > **czyste rozwiązanie**.
+1. Na pasku menu wybierz **kompiluj**  > **czyste rozwiązanie**.
 
 1. Skompiluj rozwiązanie, a następnie przejrzyj informacje w oknie **danych wyjściowych** .
 
@@ -159,15 +159,15 @@ W oknie **dane wyjściowe** można zmienić ilość informacji o procesie kompil
      W kompilacji Visual Basic [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) nie zawiera określonych ostrzeżeń do wykluczenia, więc nie są wyświetlane żadne ostrzeżenia.
 
     > [!TIP]
-    > Możesz przeszukać zawartość okna **danych wyjściowych** , jeśli zostanie wyświetlone okno dialogowe **Znajdź** , wybierając klawisze **Ctrl**+**F** .
+    > Możesz przeszukać zawartość okna **danych wyjściowych** , jeśli zostanie wyświetlone okno dialogowe **Znajdź** , wybierając klawisze **Ctrl** +**F** .
 
-Aby uzyskać więcej informacji, zobacz [jak: Wyświetlanie, zapisywanie i konfigurowanie plików](../ide/how-to-view-save-and-configure-build-log-files.md)dziennika kompilacji.
+Aby uzyskać więcej informacji, zobacz [jak: wyświetlanie, zapisywanie i konfigurowanie plików dziennika kompilacji](../ide/how-to-view-save-and-configure-build-log-files.md).
 
 ## <a name="create-a-release-build"></a>Utwórz kompilację wydania
 
 Możesz utworzyć wersję przykładowej aplikacji, która została zoptymalizowana pod kątem wysyłania. W przypadku kompilacji wydania należy określić, że plik wykonywalny jest kopiowany do udziału sieciowego przed rozpoczęciem kompilacji.
 
-Aby uzyskać więcej informacji, zobacz [jak: Zmień katalog](../ide/how-to-change-the-build-output-directory.md) wyjściowy kompilacji i [Kompiluj i oczyść projekty i rozwiązania w programie Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md).
+Aby uzyskać więcej informacji, zobacz [How to: zmiana katalogu wyjściowego kompilacji](../ide/how-to-change-the-build-output-directory.md) i [Kompilowanie i czyszczenie projektów oraz rozwiązań w programie Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md).
 
 ### <a name="specify-a-release-build-for-visual-basic"></a>Określ kompilację wydania dla Visual Basic
 
@@ -192,13 +192,13 @@ Aby uzyskać więcej informacji, zobacz [jak: Zmień katalog](../ide/how-to-chan
 
      ![Kompiluj polecenie rozwiązania w menu Kompilacja](../ide/media/exploreide-buildsolution.png)
 
-### <a name="specify-a-release-build-for-c"></a>Określ kompilację wydania dla języka C\#
+### <a name="specify-a-release-build-for-c"></a>Określ kompilację wydania dla języka C \#
 
 1. Otwórz **projektanta projektu**.
 
      ![Menu Widok, polecenie strony właściwości](../ide/media/buildwalk_viewpropertypages.png)
 
-1. Wybierz **kompilacji** strony.
+1. Wybierz stronę **kompilacja** .
 
 1. Na liście **Konfiguracja** wybierz pozycję **Zwolnij**.
 
@@ -206,7 +206,7 @@ Aby uzyskać więcej informacji, zobacz [jak: Zmień katalog](../ide/how-to-chan
 
 1. W polu **Ścieżka wyjściowa** określ ścieżkę sieciową.
 
-     Na przykład można określić `\\myserver\builds`.
+     Można na przykład określić `\\myserver\builds`.
 
     > [!IMPORTANT]
     > Może pojawić się okno komunikatu z ostrzeżeniem, że określony udział sieciowy może nie być zaufaną lokalizacją. Jeśli ufasz określonej lokalizacji, wybierz przycisk **OK** w oknie komunikatu.
@@ -217,12 +217,12 @@ Aby uzyskać więcej informacji, zobacz [jak: Zmień katalog](../ide/how-to-chan
 
      ![Kompiluj polecenie rozwiązania w menu Kompilacja](../ide/media/exploreide-buildsolution.png)
 
-   Plik wykonywalny jest kopiowany do określonej ścieżki sieciowej. Jego ścieżką `\\myserver\builds\\FileName.exe`będzie.
+   Plik wykonywalny jest kopiowany do określonej ścieżki sieciowej. Jego ścieżka zostanie `\\myserver\builds\\FileName.exe`.
 
-Gratulacje! Przewodnik został pomyślnie ukończony.
+Nabycia! Przewodnik został pomyślnie ukończony.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Przewodnik: Kompiluj projekt (C++)](/cpp/ide/walkthrough-building-a-project-cpp)
+- [Przewodnik: kompilowanie projektu (C++)](/cpp/ide/walkthrough-building-a-project-cpp)
 - [Przegląd prekompilowania projektu aplikacji sieci Web ASP.NET](/previous-versions/aspnet/aa983464\(v\=vs.110\))
-- [Przewodnik: Korzystanie z programu MSBuild](../msbuild/walkthrough-using-msbuild.md)
+- [Przewodnik: korzystanie z programu MSBuild](../msbuild/walkthrough-using-msbuild.md)

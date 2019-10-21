@@ -1,5 +1,5 @@
 ---
-title: Okno dialogowe Opcje, projekty i rozwiązania, skompilować i uruchomić | Dokumentacja firmy Microsoft
+title: Okno dialogowe Opcje, projekty i rozwiązania, kompilacja i uruchomienie | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,69 +13,58 @@ helpviewer_keywords:
 - debugger, run options
 ms.assetid: c884976e-c0df-4c6d-8e3a-856ea2bd547c
 caps.latest.revision: 24
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a0ce02a76d32a967e2c7e5f06818b5838337f9b1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9b7eb229c5938165607b797205b94a318e3303b3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433677"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655188"
 ---
-# <a name="options-dialog-box--projects-and-solutions-build-and-run"></a>Okno dialogowe Opcje, projekty i rozwiązania, kompilowanie i uruchamianie
+# <a name="options-dialog-box--projects-and-solutions-build-and-run"></a>Okno dialogowe Opcje, Projekty i rozwiązania, Kompilowanie i uruchamianie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-W tym oknie można określić maksymalną liczbę projektów Visual C++ lub Visual C#, które można tworzyć w tym samym czasie, niektóre domyślne tworzenia zachowań i niektóre ustawienia dziennika kompilacji. Aby otworzyć **opcje** okna dialogowego wybierz **narzędzia**, **opcje** na pasku menu. Aby uzyskać dostęp do tego zestawu opcji, należy rozwinąć **projekty i rozwiązania**, a następnie wybierz **kompilowanie i uruchamianie**.  
-  
-## <a name="uielement-list"></a>Lista elementów UI  
- **Maksymalna liczba równoległych projektów kompilacji**  
- Określa maksymalną liczbę projektów Visual C++ i Visual C#, które można tworzyć w tym samym czasie. Aby zoptymalizować proces kompilacji, maksymalną liczbę równolegle kompilowanych projektów automatycznie jest równa liczbie procesorów na komputerze. Wartość maksymalna to 32.  
-  
- **Tylko tworzyć projekty startowe i zależności przy uruchomieniu**  
- Tylko projekt startowy i jego zależności są tworzone, jeśli to pole wyboru jest zaznaczone, po wybraniu klawisza F5; Wybierz **debugowania**, **Start** menu paska; lub wybierz **kompilacji**, **kompilacji** na pasku menu. Wszystkie projekty, zależności i pliki rozwiązania są tworzone, jeśli to pole wyboru jest wyczyszczone po wybraniu klawisza F5; Wybierz **debugowania**, **Start** menu paska; lub wybierz **kompilacji**, **kompilacji** na pasku menu. Domyślnie ta opcja jest zaznaczona.  
-  
- **Przy starcie, gdy projekty są nieaktualne**  
+W tym oknie dialogowym można określić maksymalną liczbę projektów wizualizacji C++ lub wizualizacji C# , które mogą być kompilowane w tym samym czasie, określonych domyślnych zachowań kompilacji i niektórych ustawień dziennika kompilacji. Aby otworzyć okno dialogowe **Opcje** , wybierz **Narzędzia**, **Opcje** na pasku menu. Aby uzyskać dostęp do tego zestawu opcji, rozwiń węzeł **projekty i rozwiązania**, a następnie wybierz polecenie **Kompiluj i uruchom**.
+
+## <a name="uielement-list"></a>Lista elementów UI
+ **Maksymalna liczba równoległych kompilacji projektów** Określa maksymalną liczbę projektów wizualizacji C++ i wizualizacji C# , które mogą być kompilowane w tym samym czasie. Aby zoptymalizować proces kompilacji, Maksymalna liczba kompilacji projektów równoległych jest automatycznie ustawiana na liczbę procesorów danego komputera. Wartość maksymalna to 32.
+
+ **Kompiluj tylko projekty startowe i zależności przy uruchomieniu** Tylko projekt startowy i jego zależności są kompilowane, jeśli to pole wyboru jest zaznaczone po wybraniu klawisza F5; Wybierz **Debuguj**, **Rozpocznij** na pasku menu; lub wybierz **kompilację**, **Kompiluj** na pasku menu. Wszystkie projekty, zależności i pliki rozwiązań są kompilowane, jeśli to pole wyboru jest wyczyszczone po naciśnięciu klawisza F5; Wybierz **Debuguj**, **Rozpocznij** na pasku menu; lub wybierz **kompilację**, **Kompiluj** na pasku menu. Domyślnie ta opcja jest wyczyszczona.
+
+ **Przy uruchomieniu, gdy projekty są nieaktualne**
  > [!NOTE]
-> Ta lista dotyczy [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] wyłącznie dla projektów.  
-  
- Domyślnie, pojawi się komunikat z konfiguracji projektu jest nieaktualna, kiedy wybierz klawisz F5 lub wybierz **debugowania**, **Start** na pasku menu. Można określić, czy mimo to skompilować projekt i tego, czy komunikat jest wyświetlany. Użyj tej opcji, aby określić, czy komunikat jest wyświetlany, i co zachowanie kompilacji należy wiadomość, nie są wyświetlane.  
-  
- **Zawsze Kompiluj**  
- Nie jest wyświetlane okno komunikatu, a projekt jest kompilowany pomimo nieaktualne konfiguracji. Ta opcja jest ustawiona, po wybraniu **nie pokazuj więcej tego okna dialogowego** pole w wiadomości, a następnie wybierz **tak** przycisku.  
-  
- **Nigdy nie Kompiluj**  
- Nie jest wyświetlane okno komunikatu, a projekt nie jest kompilowany. Ta opcja jest ustawiona, po wybraniu **nie pokazuj więcej tego okna dialogowego** pole w wiadomości, a następnie wybierz **nie** przycisku.  
-  
- **Monituj o kompilacje**  
- Wyświetla okno komunikatu, ilekroć dany plik konfiguracyjny jest nieaktualna.  
-  
- **Uruchom następujący skrypt, podczas kompilacji lub występują błędy związane z wdrażaniem**  
- Jeśli wystąpią błędy kompilacji podczas kompilacji z **kompilacji** menu, zostanie wyświetlony komunikat. Można określić, czy kontynuować poprzez uruchomienie aplikacji i tego, czy komunikat jest wyświetlany za każdym razem, gdy, błędy kompilacji. Użyj tej opcji, aby określić czy komunikat jest wyświetlany, i jakie zachowanie powinny być wiadomość, nie są wyświetlane.  
-  
+> Ta lista ma zastosowanie tylko do projektów [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)].
+
+ Domyślnie komunikat jest wyświetlany, jeśli konfiguracja projektu jest nieaktualna po wybraniu klawisza F5 lub wybraniu opcji **Debuguj**, **Rozpocznij** na pasku menu. Możesz określić, czy chcesz skompilować projekt mimo to, czy komunikat zostanie wyświetlony. Użyj tej opcji, aby określić, czy komunikat ma być wyświetlany i jakie ma być zachowanie kompilacji, jeśli komunikat nie zostanie wyświetlony.
+
+ **Zawsze Kompiluj** Okno komunikatu nie jest wyświetlane, a projekt jest kompilowany pomimo nieaktualnej konfiguracji. Ta opcja jest ustawiana po zaznaczeniu pola wyboru **nie wyświetlaj ponownie tego okna dialogowego** w komunikacie, a następnie wybierz przycisk **tak** .
+
+ **Nigdy nie Kompiluj** Okno komunikatu nie jest wyświetlane i projekt nie został skompilowany. Ta opcja jest ustawiana po zaznaczeniu pola wyboru **nie wyświetlaj ponownie tego okna dialogowego** w komunikacie, a następnie wybierz przycisk **nie** .
+
+ **Monituj o kompilację** Wyświetla okno komunikatu za każdym razem, gdy konfiguracja projektu jest nieaktualna.
+
+ Przy **uruchomieniu, gdy wystąpią błędy kompilacji lub wdrożenia** Jeśli podczas uruchamiania kompilacji z menu **kompilacja** wystąpią błędy kompilacji, zostanie wyświetlony komunikat. Możesz określić, czy chcesz kontynuować, uruchamiając aplikację i czy komunikat pojawia się za każdym razem, gdy wystąpią błędy kompilacji. Użyj tej opcji, aby określić, czy komunikat ma być wyświetlany i jakie ma być zachowanie, jeśli komunikat nie zostanie wyświetlony.
+
 > [!NOTE]
-> Ta opcja dotyczy [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] wyłącznie dla projektów.  
-  
- **Monituj o uruchomienie**  
- Wyświetla okno komunikatu, za każdym razem, gdy, błędy kompilacji wystąpić.  
-  
- **Nie uruchamiaj**  
- Nie jest wyświetlane okno komunikatu, a nie jest uruchomiona aplikacja. Ta opcja jest ustawiona, po wybraniu **nie pokazuj więcej tego okna dialogowego** w oknie oknie komunikatu, a następnie wybierz **nie** przycisku.  
-  
- **Uruchom starą wersję**  
- Nie jest wyświetlane okno komunikatu, a nowo utworzonej wersji aplikacji nie jest uruchomiona. Ta opcja jest ustawiona, po wybraniu **nie pokazuj więcej tego okna dialogowego** w oknie oknie komunikatu, a następnie wybierz **tak** przycisku.  
-  
- **W przypadku nowych rozwiązań Użyj obecnie wybranego projektu jako projekt startowy**  
- Jeśli to pole wyboru jest zaznaczone, nowych rozwiązań Użyj obecnie wybranego projektu jako projekt startowy.  
-  
- **Program MSBuild poziom szczegółowości danych wyjściowych kompilacji dla projektu**  
- Określa, ile informacji ma pojawia się w **dane wyjściowe** okna dla kompilacji.  
-  
- **Poziom szczegółowości pliku dziennika MSBuild projektu kompilacji**  
+> Ta opcja dotyczy tylko projektów [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)].
+
+ **Monituj o uruchomienie** Wyświetla okno komunikatu za każdym razem, gdy wystąpią błędy kompilacji.
+
+ **Nie uruchamiaj** Okno komunikatu nie jest wyświetlane i aplikacja nie jest uruchomiona. Ta opcja jest ustawiana po zaznaczeniu pola wyboru nie **pokazuj tego okna dialogowego ponownie** w polu komunikat, a następnie wybierz przycisk **nie** .
+
+ **Uruchom starą wersję** Okno komunikatu nie jest wyświetlane i nowo utworzona wersja aplikacji nie jest uruchomiona. Ta opcja jest ustawiana po zaznaczeniu pola wyboru **nie pokazuj tego okna dialogowego ponownie** w polu komunikat, a następnie wybierz przycisk **tak** .
+
+ **W przypadku nowych rozwiązań Użyj obecnie wybranego projektu jako projektu startowego** Jeśli to pole wyboru jest zaznaczone, nowe rozwiązania użyją aktualnie wybranego projektu jako projektu startowego.
+
+ **Poziom szczegółowości danych wyjściowych kompilacji projektu programu MSBuild** Określa, ile informacji pojawia się w oknie **danych wyjściowych** kompilacji.
+
+ **Poziom szczegółowości pliku dziennika kompilacji projektu programu MSBuild**
  > [!NOTE]
-> Ta opcja dotyczy tylko projektów Visual C++.  
-  
- Określa, ile informacji ma są zapisywane do pliku dziennika kompilacji, który znajduje się w folderze \\... \\ *ProjectName*\Debug\\*ProjectName*. log.  
-  
-## <a name="see-also"></a>Zobacz też  
+> Ta opcja ma zastosowanie tylko C++ do projektów wizualnych.
+
+ Określa, ile informacji jest zapisywana w pliku dziennika kompilacji, który znajduje się w \\... \\*ProjectName*\debug. \\*ProjectName*. log.
+
+## <a name="see-also"></a>Zobacz też
  [Kompilowanie i tworzenie](../../ide/compiling-and-building-in-visual-studio.md)

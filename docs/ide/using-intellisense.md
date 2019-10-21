@@ -10,21 +10,21 @@ helpviewer_keywords:
 - Complete word
 - List members
 - IntelliSense [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32e62131b2a66052ad4712b434c7b6f2b89065d0
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
+ms.openlocfilehash: 011542bc45680f6fb5b7bd2b83283605922189ee
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68493287"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647355"
 ---
 # <a name="intellisense-in-visual-studio"></a>Technologia IntelliSense w programie Visual Studio
 
-IntelliSense to pomoc dla uzupełniania kodu, która obejmuje wiele funkcji: Wyświetlanie listy członków, informacji o parametrach, szybkich informacji i kompletnego wyrazu. Te funkcje pozwalają dowiedzieć się więcej o kodzie, którego używasz, śledzić parametry, które wpisujesz, i dodawać wywołania do właściwości i metod za pomocą tylko kilku naciśnięć klawiszy.
+IntelliSense to pomoc dla uzupełniania kodu, która obejmuje wiele funkcji: członków listy, informacji o parametrach, szybkich informacji i kompletnego wyrazu. Te funkcje pozwalają dowiedzieć się więcej o kodzie, którego używasz, śledzić parametry, które wpisujesz, i dodawać wywołania do właściwości i metod za pomocą tylko kilku naciśnięć klawiszy.
 
 Wiele aspektów IntelliSense jest specyficzne dla języków. Aby uzyskać więcej informacji na temat technologii IntelliSense dla różnych języków, zobacz tematy wymienione w sekcji [Zobacz też](#see-also) .
 
@@ -38,11 +38,11 @@ Na liście składowych ikona po lewej stronie reprezentuje typ składowej, taki 
 
 ![Lista elementów członkowskich programu Visual Studio](../ide/media/vs2015_intellisense.png)
 
-Można wywołać funkcję **listy członków** ręcznie, wpisując **Ctrl**+**J**, wybierając **Edytuj** > **członków listy** **IntelliSense** > lub wybierając **członków listy** na pasku narzędzi edytora. Gdy jest wywoływana w pustym wierszu lub poza rozpoznawalnym zasięgiem, na liście wyświetlane są symbole w globalnej przestrzeni nazw.
+Można wywołać funkcję **listy członków** ręcznie, wpisując **Ctrl** +**J**, wybierając opcję **Edytuj**  > **IntelliSense**  > **listę członków**lub wybierając przycisk **listy członków** w edytorze pasku narzędzi. Gdy jest wywoływana w pustym wierszu lub poza rozpoznawalnym zasięgiem, na liście wyświetlane są symbole w globalnej przestrzeni nazw.
 
-Aby wyłączyć członków listy domyślnie (tak, aby nie były wyświetlane, chyba że jest to określone), przejdź do pozycji **Narzędzia** > **Opcje** > **wszystkie języki** i usuń zaznaczenie pozycji autolista **członków**. Jeśli chcesz wyłączyć członków listy tylko dla określonego języka, przejdź do ustawień **ogólnych** dla tego języka.
+Aby wyłączyć członków listy domyślnie (tak, aby nie były wyświetlane, chyba że jest to określone), przejdź do pozycji **narzędzia**  > **Opcje**  > **wszystkie języki** i usuń zaznaczenie pozycji **autolista członków**. Jeśli chcesz wyłączyć członków listy tylko dla określonego języka, przejdź do ustawień **ogólnych** dla tego języka.
 
-Można również przejść do trybu sugestii, w którym tylko wpisany tekst jest umieszczony w kodzie. Na przykład, jeśli wprowadzisz identyfikator, który nie znajduje się na liście, i naciśniesz klawisz **Tab**, w trybie uzupełniania wpis zastąpi wpisanego identyfikatora. Aby przełączać się między trybem ukończenia i trybem sugestii, naciśnij klawisz **Ctrl**+**Alt**+**spacja**lub wybierz opcję **Edytuj** > Tryb uzupełniania funkcji**IntelliSense** > .
+Można również przejść do trybu sugestii, w którym tylko wpisany tekst jest umieszczony w kodzie. Na przykład, jeśli wprowadzisz identyfikator, który nie znajduje się na liście, i naciśniesz klawisz **Tab**, w trybie uzupełniania wpis zastąpi wpisanego identyfikatora. Aby przełączać się między trybem ukończenia i trybem sugestii, naciśnij klawisz **Ctrl** +**Alt** +**miejsce**lub wybierz opcję **Edytuj**  > **IntelliSense**  > **Przełącz tryb uzupełniania**.
 
 ## <a name="parameter-info"></a>Informacje o parametrach
 
@@ -54,7 +54,7 @@ Parametr pogrubiony wskazuje następny parametr, który jest wymagany podczas wp
 
 Gdy opisujesz funkcje i parametry za pomocą komentarzy dokumentacji XML, komentarze będą wyświetlane jako informacje o parametrach. Aby uzyskać więcej informacji, zobacz [dostarczanie komentarzy do kodu XML](reference/generate-xml-documentation-comments.md).
 
-Można ręcznie wywołać informacje o parametrach poprzez wybranie opcji **Edytuj** > **Informacje o parametrach** **IntelliSense** > , naciskając **klawisze CTRL**+**SHIFT**+**Space**lub przez Wybieranie przycisku **Informacje o parametrach** na pasku narzędzi edytora.
+Można ręcznie wywołać informacje o parametrach, **wybierając edytuj**  > **IntelliSense**  > **informacji o parametrach**, naciskając klawisz **Ctrl** +**SHIFT** +**miejsce**lub wybierając **Informacje o parametrach** na pasku narzędzi edytora.
 
 ## <a name="quick-info"></a>Szybkie informacje
 
@@ -66,19 +66,19 @@ Po wybraniu elementu członkowskiego z pola **członków listy** pojawiają się
 
 ![Informacje o parametrach w&#35; pliku kodu języka C](../ide/media/vs2015_paraminfo.png)
 
-Szybkie informacje można wywołać ręcznie, wybierając pozycję **Edytuj** > **szybkie informacje** **IntelliSense** > , naciskając klawisz **Ctrl**+**i**lub wybierając przycisk **szybkie informacje** w edytorze. pasku narzędzi.
+Szybkie informacje można wywołać ręcznie, wybierając opcję **edytuj**  > **IntelliSense**  > **szybkie informacje**, naciskając klawisz **Ctrl** +**I**lub wybierając przycisk **szybkie informacje** na pasku narzędzi edytora.
 
 Jeżeli funkcja jest przeciążona, mechanizm IntelliSense może nie wyświetlać informacji dla wszystkich postaci przeciążenia.
 
-C++ Szybkie informacje można wyłączyć dla kodu, przechodząc do**opcji** >  **Narzędzia** > **Edytor** > tekstu**C/C++**  > Advanced i ustawienie Auto  **Szybkie informacje** do `false`.
+Szybkie informacje C++ można wyłączyć dla kodu, przechodząc do pozycji **Narzędzia**  > **Opcje**  > **edytorze tekstów**  > **C/C++**   > **Advanced**i ustawiając opcję **autoszybkie informacje** na 2.
 
 ## <a name="complete-word"></a>Dokończ wyraz
 
-Po wprowadzeniu wystarczającej liczby znaków, aby odróżnić ten wyraz, kończy się pozostałą częścią zmiennej, polecenia lub nazwy funkcji. Możesz wywołać kompletny wyraz, wybierając opcję **Edytuj** > **kompletny wyraz** **IntelliSense** > , naciskając klawisz **Ctrl**+lub wybierając przycisk **Ukończ wyraz** na stronie pasek narzędzi edytora.
+Po wprowadzeniu wystarczającej liczby znaków, aby odróżnić ten wyraz, kończy się pozostałą częścią zmiennej, polecenia lub nazwy funkcji. Możesz wywołać kompletny wyraz, wybierając **edytuj**  > **IntelliSense**  > **ukończeniem wyrazu**, naciskając klawisz **Ctrl** +**miejsce**lub wybierając przycisk **Ukończ słowo** na pasku narzędzi edytora.
 
 ## <a name="intellisense-options"></a>Opcje IntelliSense
 
-Opcje IntelliSense są domyślnie włączone. Aby je wyłączyć, wybierz opcje **Narzędzia** > **Edytor tekstu** i usuń zaznaczenie**opcji** >  **Informacje o parametrach** lub **Lista członków listy** , jeśli nie chcesz, aby lista członków była dostępna.
+Opcje IntelliSense są domyślnie włączone. Aby je wyłączyć, wybierz pozycję **narzędzia**  > **Opcje**  > **Edytor tekstu** i usuń zaznaczenie opcji **Informacje o parametrach** lub **Lista członków listy** , jeśli nie chcesz, aby lista członków była niedostępna.
 
 ## <a name="intellisense-icons"></a>Ikony IntelliSense
 Ikony w IntelliSense mogą przekazać dodatkowe znaczenie za pomocą modyfikatorów ikon. Są to gwiazdki, kiery i blokady warstwowe na ikonie obiektu, która odpowiednio przekazuje ochronę, wewnętrzną lub prywatną.

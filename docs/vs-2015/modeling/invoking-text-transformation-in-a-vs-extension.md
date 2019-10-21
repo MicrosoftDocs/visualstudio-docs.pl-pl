@@ -6,15 +6,15 @@ ms.technology: vs-ide-modeling
 ms.topic: conceptual
 ms.assetid: 64674976-841f-43cb-8e61-0645c8a89eec
 caps.latest.revision: 7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: cd491ea0a17bcc0a4fccc0ade205736daae552d5
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: a87f84a945d9d79f6d481f7bcc9e656f7ec7bcbd
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871868"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72646148"
 ---
 # <a name="invoking-text-transformation-in-a-vs-extension"></a>Wywoływanie transformacji tekstu w rozszerzeniu VS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,11 +39,11 @@ string result = t4.ProcessTemplate(filePath, System.IO.File.ReadAllText(filePath
 ```
 
 ## <a name="passing-parameters-to-the-template"></a>Przekazywanie parametrów do szablonu
- Parametry można przekazać do szablonu. Wewnątrz szablonu można uzyskać wartości parametrów za pomocą `<#@parameter#>` dyrektywy.
+ Parametry można przekazać do szablonu. Wewnątrz szablonu można uzyskać wartości parametrów za pomocą dyrektywy `<#@parameter#>`.
 
- Jeśli chodzi o typ parametru należy użyć typu, który jest możliwy do serializacji lub który może być organizowany. Oznacza to, że typ musi być zadeklarowany <xref:System.SerializableAttribute>z lub musi pochodzić od. <xref:System.MarshalByRefObject> To ograniczenie jest konieczne, ponieważ szablon tekstowy jest wykonywany w oddzielnym elemencie AppDomain. Wszystkie typy wbudowane, takie jak **System. String** i **System. Int32** , można serializować.
+ Jeśli chodzi o typ parametru należy użyć typu, który jest możliwy do serializacji lub który może być organizowany. Oznacza to, że typ musi być zadeklarowany za pomocą <xref:System.SerializableAttribute> lub musi pochodzić od <xref:System.MarshalByRefObject>. To ograniczenie jest konieczne, ponieważ szablon tekstowy jest wykonywany w oddzielnym elemencie AppDomain. Wszystkie typy wbudowane, takie jak **System. String** i **System. Int32** , można serializować.
 
- Aby przekazać wartości parametrów, kod wywołujący może umieścić wartości w `Session` słowniku lub <xref:System.Runtime.Remoting.Messaging.CallContext>w.
+ Aby przekazać wartości parametrów, kod wywołujący może umieścić wartości w słowniku `Session` lub <xref:System.Runtime.Remoting.Messaging.CallContext>.
 
  W poniższym przykładzie użyto obu tych metod, aby przekształcić krótki szablon tekstowy:
 
@@ -80,9 +80,9 @@ string result = t4.ProcessTemplate("",
 ```
 
 ## <a name="error-reporting-and-the-output-directive"></a>Raportowanie błędów i dyrektywa wyjściowa
- Wszystkie błędy powstające podczas przetwarzania będą wyświetlane w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] oknie błędów. Ponadto można otrzymywać powiadomienia o błędach przez określenie wywołania zwrotnego implementującego [ITextTemplatingCallback](/previous-versions/visualstudio/visual-studio-2012/bb932397(v=vs.110)).
+ Wszystkie błędy powstające podczas przetwarzania będą wyświetlane w oknie błędu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Ponadto można otrzymywać powiadomienia o błędach przez określenie wywołania zwrotnego implementującego [ITextTemplatingCallback](/previous-versions/visualstudio/visual-studio-2012/bb932397(v=vs.110)).
 
- Jeśli chcesz zapisać ciąg wyniku do pliku, warto wiedzieć, jakie rozszerzenie pliku i kodowanie zostały określone w `<#@output#>` dyrektywie w szablonie. Te informacje również zostaną przekazane do wywołania zwrotnego. Aby uzyskać więcej informacji, zobacz [dyrektywa Output T4](../modeling/t4-output-directive.md).
+ Jeśli chcesz zapisać ciąg wyniku do pliku, warto wiedzieć, jakie rozszerzenie pliku i kodowanie zostały określone w dyrektywie `<#@output#>` w szablonie. Te informacje również zostaną przekazane do wywołania zwrotnego. Aby uzyskać więcej informacji, zobacz [dyrektywa Output T4](../modeling/t4-output-directive.md).
 
 ```csharp
 void ProcessMyTemplate(string MyTemplateFile)
@@ -134,14 +134,14 @@ class T4Callback : ITextTemplatingCallback
 Sample text.
 ```
 
- Ostrzeżenie kompilatora pojawi się w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] oknie błędu i zostanie również wygenerowane `ErrorCallback`wywołanie.
+ Ostrzeżenie kompilatora pojawi się w oknie błędów [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] i spowoduje również wygenerowanie wywołania `ErrorCallback`.
 
 ## <a name="reference-parameters"></a>Parametry odwołania
- Można przekazać wartości z szablonu tekstu przy użyciu klasy parametrów pochodnej od <xref:System.MarshalByRefObject>.
+ Można przekazać wartości z szablonu tekstu przy użyciu klasy parametrów, która jest pochodną <xref:System.MarshalByRefObject>.
 
 ## <a name="related-topics"></a>Tematy pokrewne
- Aby wygenerować tekst ze wstępnie przetworzonego szablonu tekstu: Wywołaj `TransformText()` metodę wygenerowanej klasy. Aby uzyskać więcej informacji, zobacz [Generowanie tekstu w czasie wykonywania przy użyciu szablonów tekstowych T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ Aby wygenerować tekst na podstawie wstępnie przetworzonego szablonu tekstu: Wywołaj metodę `TransformText()` wygenerowanej klasy. Aby uzyskać więcej informacji, zobacz [Generowanie tekstu w czasie wykonywania przy użyciu szablonów tekstowych T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
- Aby wygenerować tekst poza [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozszerzeniem: Zdefiniuj niestandardowego hosta. Aby uzyskać więcej informacji, zobacz [przetwarzanie szablonów tekstowych przy użyciu hosta niestandardowego](../modeling/processing-text-templates-by-using-a-custom-host.md).
+ Aby wygenerować tekst poza rozszerzeniem [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]: Zdefiniuj hosta niestandardowego. Aby uzyskać więcej informacji, zobacz [Przetwarzanie szablonów tekstowych przy użyciu hosta niestandardowego](../modeling/processing-text-templates-by-using-a-custom-host.md).
 
- Aby wygenerować kod źródłowy, który później zostanie skompilowany i wykonany: Wywołaj metodę [PreprocessTemplate](/previous-versions/visualstudio/visual-studio-2012/ee844321(v=vs.110)) z [ITextTemplating](/previous-versions/visualstudio/visual-studio-2012/bb932392(v=vs.110)).
+ Aby wygenerować kod źródłowy, który można później skompilować i wykonać: Wywołaj metodę [PreprocessTemplate](/previous-versions/visualstudio/visual-studio-2012/ee844321(v=vs.110)) z [ITextTemplating](/previous-versions/visualstudio/visual-studio-2012/bb932392(v=vs.110)).

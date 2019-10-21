@@ -9,17 +9,17 @@ helpviewer_keywords:
 - ListModules command
 - list modules command
 ms.assetid: 3cb73774-6ac0-43b2-b781-75ed47175bfd
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89be89bb3befa6f6ab9e67f6e98ae4d7b1b94e64
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 1fef8f314f5b416edcf40c8b2f7da4eaa471a28c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926205"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72610653"
 ---
 # <a name="list-modules-command"></a>Lista modułów — Polecenie
 Wyświetla listę modułów dla bieżącego procesu.
@@ -33,39 +33,39 @@ Debug.ListModules [/Address:yes|no] [/Name:yes|no] [/Order:yes|no]
 ```
 
 #### <a name="parameters"></a>Parametry
-Ulica`yes|no`
+/Address: `yes|no`
 
 Opcjonalny. Określa, czy mają być pokazywane adresy pamięci modułów. Wartość domyślna to `yes`.
 
-Nazwij`yes|no`
+/Name: `yes|no`
 
 Opcjonalny. Określa, czy mają być wyświetlane nazwy modułów. Wartość domyślna to `yes`.
 
-Porządek`yes|no`
+/Order: `yes|no`
 
 Opcjonalny. Określa, czy ma być wyświetlana kolejność modułów. Wartość domyślna to `no`.
 
-Ścieżka`yes|no`
+/Path: `yes|no`
 
-Opcjonalna. Określa, czy mają być wyświetlane ścieżki modułów. Wartość domyślna to `yes`.
+Opcjonalny. Określa, czy mają być wyświetlane ścieżki modułów. Wartość domyślna to `yes`.
 
-Podstawowych`yes|no`
+/Process: `yes|no`
 
-Opcjonalna. Określa, czy mają być wyświetlane procesy modułów. Wartość domyślna to `no`.
+Opcjonalny. Określa, czy mają być wyświetlane procesy modułów. Wartość domyślna to `no`.
 
-/SymbolFile:`yes|no`
+/SymbolFile: `yes|no`
 
 Opcjonalny. Określa, czy mają być pokazywane pliki symboli modułów. Wartość domyślna to `no`.
 
-Stansymboli`yes|no`
+/SymbolStatus: `yes|no`
 
 Opcjonalny. Określa, czy mają być pokazywane Stany symboli modułów. Wartość domyślna to `yes`.
 
-Znacznik czasu`yes|no`
+/Timestamp: `yes|no`
 
-Opcjonalna. Określa, czy mają być pokazywane sygnatury czasowe modułów. Wartość domyślna to `no`.
+Opcjonalny. Określa, czy mają być pokazywane sygnatury czasowe modułów. Wartość domyślna to `no`.
 
-Nowszym`yes|no`
+/Version: `yes|no`
 
 Opcjonalny. Określa, czy mają być wyświetlane wersje modułów. Wartość domyślna to `no`.
 
@@ -80,4 +80,4 @@ Debug.ListModules /Address:yes /Name:yes /Order:no /Path:no /Process:no /SymbolF
 
 - [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
 - [Okno Polecenie](../../ide/reference/command-window.md)
-- [Instrukcje: Korzystanie z okna modułów](../../debugger/how-to-use-the-modules-window.md)
+- [Instrukcje: korzystanie z okna modułów](../../debugger/how-to-use-the-modules-window.md)

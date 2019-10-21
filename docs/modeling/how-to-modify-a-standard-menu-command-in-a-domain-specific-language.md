@@ -5,57 +5,57 @@ ms.topic: conceptual
 helpviewer_keywords:
 - .vsct files, adding commands to a domain-specific language
 - Domain-Specific Language, adding custom commands
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 466df3030793603319cf73085910a164fd222e29
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 4ae2aa04eb415ee5c4b7aaa41ea4c6abb49333f7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67890597"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72605261"
 ---
-# <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Instrukcje: Modyfikowanie standardowego polecenia menu w języku specyficznym dla domeny
+# <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Porady: modyfikowanie standardowego polecenia menu w języku specyficznym dla domeny
 
-Można zmodyfikować zachowanie niektóre standardowe polecenia, które są automatycznie definiowane w DSL. Na przykład, można zmodyfikować **Wytnij** tak, aby nie obejmuje on poufne informacje. Aby to zrobić, można zastąpić metody w klasie zestawu poleceń. Te klasy są zdefiniowane w pliku CommandSet.cs w projekcie DslPackage i są uzyskiwane z <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.
+Można zmodyfikować zachowanie niektórych standardowych poleceń, które są zdefiniowane automatycznie w DSL. Na przykład można zmodyfikować **wycinanie** , aby wykluczyć informacje poufne. W tym celu należy zastąpić metody w klasie zestawu poleceń. Te klasy są zdefiniowane w pliku CommandSet.cs, w projekcie DslPackage i pochodzą z <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.
 
 > [!NOTE]
-> Jeśli chcesz utworzyć własne polecenia menu, zobacz [jak: Dodawanie polecenia do Menu skrótów](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
+> Jeśli chcesz utworzyć własne polecenia menu, zobacz [jak: Dodawanie polecenia do menu skrótów](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
 
-## <a name="what-commands-can-you-modify"></a>Jakie polecenia mogą zmodyfikować?
+## <a name="what-commands-can-you-modify"></a>Jakie polecenia można modyfikować?
 
-### <a name="to-discover-what-commands-you-can-modify"></a>Aby dowiedzieć się, co polecenia, należy zmodyfikować
+### <a name="to-discover-what-commands-you-can-modify"></a>Aby poznać, jakie polecenia można modyfikować
 
-1. W `DslPackage` otwarty projekt `GeneratedCode\CommandSet.cs`. Ten plik C# można znaleźć w Eksploratorze rozwiązań jako podmiot zależny firmy `CommandSet.tt`.
+1. W projekcie `DslPackage` Otwórz `GeneratedCode\CommandSet.cs`. Ten C# plik można znaleźć w Eksplorator rozwiązań jako filia `CommandSet.tt`.
 
-2. Znajdź klas w tym pliku, których nazwy kończą się za pomocą "`CommandSet`", na przykład `Language1CommandSet` i `Language1ClipboardCommandSet`.
+2. Znajdź klasy w tym pliku, których nazwy kończą się znakiem "`CommandSet`", na przykład `Language1CommandSet` i `Language1ClipboardCommandSet`.
 
-3. W każdej klasie zestaw poleceń, wpisz "`override`" następuje spacja. Funkcja IntelliSense wyświetli listę metod, które można przesłonić. Każde polecenie parą metod, których nazwy zaczynają się "`ProcessOnStatus`"i"`ProcessOnMenu`".
+3. W każdej klasie zestawu poleceń wpisz "`override`", a po nim spację. Funkcja IntelliSense wyświetli listę metod, które można przesłonić. Każde polecenie ma parę metod, których nazwy zaczynają się od "`ProcessOnStatus`" i "`ProcessOnMenu`".
 
-4. Zwróć uwagę, które polecenia Ustaw klasy zawiera polecenia, które chcesz zmodyfikować.
+4. Należy pamiętać, że klasy zestawu poleceń zawierają polecenie, które chcesz zmodyfikować.
 
 5. Zamknij plik bez zapisywania zmian.
 
     > [!NOTE]
-    > Zazwyczaj nie należy edytować pliki, które zostały wygenerowane. Wszelkie zmiany zostaną utracone pliki są generowane przy następnym uruchomieniu.
+    > Zwykle nie należy edytować plików, które zostały wygenerowane. Wszelkie zmiany zostaną utracone przy następnym wygenerowanym pliku.
 
-## <a name="extend-the-appropriate-command-set-class"></a>Rozszerzenie klasy zestawu odpowiednie polecenie
+## <a name="extend-the-appropriate-command-set-class"></a>Poszerzenie odpowiedniej klasy zestawu poleceń
 
-Utwórz nowy plik, który zawiera deklarację częściowe klasy zestawu poleceń.
+Utwórz nowy plik zawierający częściową deklarację klasy zestawu poleceń.
 
-### <a name="to-extend-the-command-set-class"></a>Aby rozszerzyć polecenia Set — klasa
+### <a name="to-extend-the-command-set-class"></a>Aby rozwinąć klasę zestawu poleceń
 
-1. W Eksploratorze rozwiązań w projekcie DslPackage Otwórz GeneratedCode folder, a następnie sprawdź w obszarze CommandSet.tt i otwieranie jego pliku wygenerowanego CommandSet.cs. Należy pamiętać, że przestrzeń nazw i nazwę pierwszej klasy, która jest zdefiniowany w niej. Na przykład może zostać wyświetlony:
+1. W Eksplorator rozwiązań w projekcie DslPackage Otwórz folder GeneratedCode, a następnie poszukaj w obszarze CommandSet.tt i otwórz jego wygenerowany plik CommandSet.cs. Zanotuj przestrzeń nazw i nazwę pierwszej klasy, która jest tam zdefiniowana. Na przykład można zobaczyć:
 
      `namespace Company.Language1`
 
      `{ ...  internal partial class Language1CommandSet : ...`
 
-2. W **DslPackage**, Utwórz folder o nazwie **kod niestandardowy**. W tym folderze utwórz nowy plik klasy o nazwie `CommandSet.cs`.
+2. W **DslPackage**Utwórz folder o nazwie **kod niestandardowy**. W tym folderze Utwórz nowy plik klasy o nazwie `CommandSet.cs`.
 
-3. W nowym pliku zapisu częściowa deklaracja, która ma tę samą nazwę jak wygenerowanej częściowej klasy i przestrzeni nazw. Na przykład:
+3. W nowym pliku Napisz deklarację częściową, która ma taką samą przestrzeń nazw i nazwę jak wygenerowana Klasa częściowa. Na przykład:
 
     ```csharp
     using System;
@@ -66,22 +66,22 @@ Utwórz nowy plik, który zawiera deklarację częściowe klasy zestawu poleceń
     ```
 
     > [!NOTE]
-    > Jeśli szablon pliku klasy został użyty do utworzenia nowego pliku, należy poprawić przestrzeni nazw i nazwę klasy.
+    > Jeśli do utworzenia nowego pliku użyto szablonu pliku klasy, należy poprawić zarówno przestrzeń nazw, jak i nazwę klasy.
 
-## <a name="override-the-command-methods"></a>Przesłaniaj metody polecenia
+## <a name="override-the-command-methods"></a>Zastąp metody polecenia
 
-Większość poleceń mają dwie metody skojarzone: Metody o nazwie, takich jak `ProcessOnStatus`... określa, czy polecenie powinno być widoczne i włączone. Jest wywoływane, gdy użytkownik kliknie prawym przyciskiem myszy diagram i powinna wykonać szybkie i nie wprowadzaj żadnych zmian. `ProcessOnMenu`... jest wywoływana, gdy użytkownik kliknie polecenie i należy wykonać funkcję polecenia. Można zastąpić jedną lub obie te metody.
+Większość poleceń ma dwie skojarzone metody: metodę o nazwie, takiej jak `ProcessOnStatus`... Określa, czy polecenie powinno być widoczne i włączone. Jest wywoływana za każdym razem, gdy użytkownik kliknie prawym przyciskiem myszy diagram i powinien być wykonywany szybko i nie wprowadzać żadnych zmian. `ProcessOnMenu`... jest wywoływana, gdy użytkownik kliknie polecenie i powinien wykonać funkcję polecenia. Możesz chcieć przesłonić jedną lub obie te metody.
 
-### <a name="to-change-when-the-command-appears-on-a-menu"></a>Aby zmienić, gdy polecenie jest wyświetlane w menu
+### <a name="to-change-when-the-command-appears-on-a-menu"></a>Aby zmienić, gdy polecenie pojawia się w menu
 
-Zastąp ProcessOnStatus... metody. Ta metoda powinna być ustawiona widoczne i włączone właściwości tego parametru MenuCommand. Zazwyczaj polecenia wygląda na to. CurrentSelection, aby określić, czy polecenie ma zastosowanie do wybranych elementów i mogą również przeglądać ich właściwości, aby określić, czy polecenia mogą być stosowane w jego bieżącym stanie.
+Zastąp ProcessOnStatus... Method. Ta metoda powinna ustawiać właściwości Visible i Enabled parametru MenuCommand. Zwykle jest to polecenie. CurrentSelection, aby określić, czy polecenie ma zastosowanie do wybranych elementów, i może również sprawdzić ich właściwości, aby określić, czy polecenie można zastosować w bieżącym stanie.
 
-Jako ogólnej wskazówki należy określić właściwość Visible przez elementy są zaznaczone. Właściwość włączone, która określa, czy polecenie pojawia się czarny lub szary w menu, powinna zależeć od bieżącego stanu zaznaczenia.
+Ogólnie rzecz biorąc, właściwość Visible powinna być określona przez elementy, które są zaznaczone. Właściwość Enabled, która określa, czy polecenie pojawia się jako czarno lub szaro w menu, powinno zależeć od bieżącego stanu zaznaczenia.
 
-Poniższy przykład wyłącza usuwanie elementu menu, po użytkownik wybrał więcej niż jeden kształt.
+Poniższy przykład wyłącza element menu Usuń, gdy użytkownik wybierze więcej niż jeden kształt.
 
 > [!NOTE]
-> Ta metoda nie wpływa na czy polecenie jest dostępne poprzez naciśnięcie klawisza. Na przykład wyłączenie usuwanie elementu menu nie uniemożliwia polecenia są wywoływane za pośrednictwem klawisz Delete.
+> Ta metoda nie ma wpływu na to, czy polecenie jest dostępne przez naciśnięcie klawisza. Na przykład wyłączenie elementu menu Usuń nie uniemożliwia wywołania polecenia za pomocą klucza usuwania.
 
 ```csharp
 /// <summary>
@@ -100,13 +100,13 @@ protected override void ProcessOnStatusDeleteCommand (MenuCommand command)
 }
 ```
 
-Jest dobrą praktyką, najpierw wywołać metodę bazową, aby poradzić sobie ze wszystkimi przypadków i ustawienia, z którymi nie jest niezbędne.
+Dobrym sposobem jest Wywołaj metodę bazową w pierwszej kolejności, aby zająć się wszystkimi przypadkami i ustawieniami, których nie dotyczy.
 
-Metoda ProcessOnStatus nie powinien Utwórz, usuń lub zaktualizuj elementy Store.
+Metoda ProcessOnStatus nie powinna tworzyć, usuwać ani aktualizować elementów w sklepie.
 
 ### <a name="to-change-the-behavior-of-the-command"></a>Aby zmienić zachowanie polecenia
 
-Zastąp ProcessOnMenu... metody. Poniższy przykład uniemożliwia użytkownikowi usunięcie więcej niż jeden element w czasie, nawet przy użyciu klawisza Delete.
+Zastąp ProcessOnMenu... Method. Poniższy przykład uniemożliwia użytkownikowi usunięcie więcej niż jednego elementu jednocześnie, nawet przy użyciu klucza Delete.
 
 ```csharp
 /// <summary>
@@ -123,25 +123,25 @@ protected override void ProcessOnMenuDeleteCommand()
 }
 ```
 
-Jeśli Twój kod zmienia Store, takie jak tworzenie, usuwanie lub aktualizowania elementów lub łącza, należy to zrobić w transakcji. Aby uzyskać więcej informacji, zobacz [jak tworzenie i aktualizowanie elementów modelu](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
+Jeśli kod wprowadza zmiany do magazynu, takie jak tworzenie, usuwanie lub aktualizowanie elementów lub łączy, należy to zrobić w ramach transakcji. Aby uzyskać więcej informacji, zobacz [jak tworzyć i aktualizować elementy modelu](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
-### <a name="write-the-code-of-the-methods"></a>Pisanie kodu metody
+### <a name="write-the-code-of-the-methods"></a>Napisz kod metod
 
-Następujące fragmenty są często przydatne w przypadku tych metod:
+Następujące fragmenty są często przydatne w następujących metodach:
 
-- `this.CurrentSelection`. Kształt, który kliknięto prawym przyciskiem myszy użytkownika, zawsze znajduje się na tej liście kształtów i łączników. Gdy użytkownik kliknie pustą część diagramu, Diagram jest jedynym członkiem listy.
+- `this.CurrentSelection`., Kształt kliknięty prawym przyciskiem myszy jest zawsze uwzględniony na liście kształtów i łączników. Jeśli użytkownik kliknie pustą część diagramu, diagram jest jedyną składową listy.
 
-- `this.IsDiagramSelected()` - `true` Jeśli użytkownik kliknął pustą część diagramu.
+- `this.IsDiagramSelected()`  -  `true`, jeśli użytkownik kliknął pustą część diagramu.
 
 - `this.IsCurrentDiagramEmpty()`
 
-- `this.IsSingleSelection()` — użytkownik nie został wybrany wiele kształtów
+- `this.IsSingleSelection()` — użytkownik nie wybrał wielu kształtów
 
-- `this.SingleSelection` -kształt lub diagram, który kliknięto prawym przyciskiem myszy użytkownika
+- `this.SingleSelection` — kształt lub diagram, który kliknięto prawym przyciskiem myszy.
 
-- `shape.ModelElement as MyLanguageElement` — element modelu, reprezentowane przez kształty.
+- `shape.ModelElement as MyLanguageElement` — element modelu reprezentowany przez kształt.
 
-Aby uzyskać więcej informacji na temat sposobu nawigowania element po elemencie oraz o sposobie tworzenia obiektów i łączy, zobacz [nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md).
+Aby uzyskać więcej informacji na temat nawigowania z elementu do elementu i sposobu tworzenia obiektów i linków, zobacz [nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
 ## <a name="see-also"></a>Zobacz także
 
@@ -151,4 +151,4 @@ Aby uzyskać więcej informacji na temat sposobu nawigowania element po elemenci
 - [Dodawanie elementów interfejsu użytkownika przy użyciu pakietów VSPackage](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Tabela poleceń programu Visual Studio (pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [Odwołanie do schematu XML VSCT](../extensibility/vsct-xml-schema-reference.md)
-- [VMSDK — przykładowe wykresy obwodu. Dostosowywanie rozbudowane DSL](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+- [Przykładowe diagramy obwodów VMSDK. Szerokie dostosowanie DSL](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

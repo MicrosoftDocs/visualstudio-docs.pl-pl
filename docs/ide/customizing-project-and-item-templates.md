@@ -1,45 +1,45 @@
 ---
-title: Dostosowywanie szablonów projektów i elementów
+title: Dostosowywanie szablonów projektu i elementu
 ms.date: 01/02/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - customizing templates [Visual Studio]
 - Visual Studio templates, customizing
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7e80bf422906c2b89e75462938d736fd3a0e5a41
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 401b1b3d2b37f74ae28b0b27bad5b1715497a4e7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978149"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652556"
 ---
 # <a name="customize-project-and-item-templates"></a>Dostosowywanie szablonów projektów i elementów
 
-Nawet w przypadku, po utworzeniu szablonów projektów i elementów, można dostosować je do swoich potrzeb.
+Nawet po utworzeniu szablonów projektów i elementów można je dodatkowo dostosować do własnych potrzeb.
 
-## <a name="customizations"></a>Dostosowania
+## <a name="customizations"></a>Zmiany
 
-Na przykład należy wykonać następujące zadania:
+Na przykład można wykonać następujące zadania:
 
-- Zmodyfikuj i wyeksportować istniejący szablon jako szablon użytkownika.
+- Modyfikuj i Eksportuj istniejący szablon jako szablon użytkownika.
 
-   Aby uzyskać więcej informacji, zobacz [jak: Aktualizowanie istniejących szablonów](../ide/how-to-update-existing-templates.md).
+   Aby uzyskać więcej informacji, zobacz [How to: Update Existing Templates](../ide/how-to-update-existing-templates.md).
 
-- Niestandardowe parametry są przekazywane do szablonu, aby zastąpić istniejące wartości.
+- Przekaż parametry niestandardowe do szablonu, aby zastąpić istniejące wartości.
 
-   Aby uzyskać więcej informacji, zobacz [jak: Zastępowanie parametrów w szablonie](../ide/how-to-substitute-parameters-in-a-template.md).
+   Aby uzyskać więcej informacji, zobacz [jak: zastępowanie parametrów w szablonie](../ide/how-to-substitute-parameters-in-a-template.md).
 
-- Dostosowywanie kreatorów, które tworzenie projektów z szablonów.
+- Dostosowywanie kreatorów tworzących projekty z szablonów.
 
-   Aby uzyskać więcej informacji, zobacz [jak: Korzystanie z kreatorów z szablonami projektu (rozszerzalność)](../extensibility/how-to-use-wizards-with-project-templates.md).
+   Aby uzyskać więcej informacji, zobacz [How to: use kreators with Project Templates (rozszerzalność)](../extensibility/how-to-use-wizards-with-project-templates.md).
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)
 - [Instrukcje: Rozwiązywanie problemów z szablonami](../ide/how-to-troubleshoot-templates.md)
-- [Instrukcje: Tworzenie szablonów projektów](../ide/how-to-create-project-templates.md)
+- [Instrukcje: Tworzenie szablonów projektu](../ide/how-to-create-project-templates.md)
 - [Instrukcje: Tworzenie szablonów elementów](../ide/how-to-create-item-templates.md)
-- [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>

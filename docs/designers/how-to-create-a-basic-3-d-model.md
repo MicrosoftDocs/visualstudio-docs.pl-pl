@@ -3,19 +3,19 @@ title: 'Instrukcje: Tworzenie podstawowego modelu 3W'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: a0d97966-2df8-449b-a8cf-5a19684dc773
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5f4bb3c6d429fb40d97e748798610e4e46262eb
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 604847e5f9bf6111d548b9d3bbdc0a0e10301784
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924509"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72636732"
 ---
-# <a name="how-to-create-a-basic-3d-model"></a>Instrukcje: Tworzenie podstawowego modelu 3D
+# <a name="how-to-create-a-basic-3d-model"></a>Instrukcje: Tworzenie podstawowego modelu 3W
 
 W tym artykule pokazano, jak utworzyć podstawowy model 3W przy użyciu edytora modelu. Omówione są następujące działania:
 
@@ -25,9 +25,9 @@ W tym artykule pokazano, jak utworzyć podstawowy model 3W przy użyciu edytora 
 
 - Tłumaczenie wybranych opcji
 
-- Korzystanie z narzędzi do tworzenia i **wyciągnięcie kroju**
+- Korzystanie z **narzędzi do tworzenia i** **wyciągnięcie kroju**
 
-- Korzystanie z polecenia triangulacja
+- Korzystanie z polecenia **triangulacja**
 
 ## <a name="create-a-basic-3d-model"></a>Tworzenie podstawowego modelu 3D
 Możesz użyć edytora modelu, aby utworzyć i zmodyfikować modele 3D i sceny dla swojej gry lub aplikacji. Poniższe kroki pokazują, jak za pomocą edytora modelu utworzyć uproszczony model 3W dla domu. Model uproszczony może służyć jako autonomiczna dla końcowych zasobów grafiki, które są nadal tworzone, jako siatka do wykrywania kolizji lub jako model niskiego szczegółowości, który ma być używany, gdy obiekt, który reprezentuje, jest zbyt daleko, aby można było skorzystać z bardziej szczegółowego renderowania.
@@ -46,7 +46,7 @@ Przed rozpoczęciem upewnij się, że okno **Właściwości** i **Przybornik** s
 
 3. Przełącz się na wybór obszaru. Na pasku narzędzi Edytor modelu wybierz **pozycję Wybierz opcję**.
 
-4. Podziel górną część modułu. W trybie zaznaczania ze stroną wybierz moduł jeden raz, aby aktywować go do wyboru, a następnie wybierz górną część modułu, aby zaznaczyć górną miarę. Na pasku narzędzi Edytor modelu wybierz opcjęPodziel na siebie. Spowoduje to dodanie nowych wierzchołków na górze modułu, który dzieli go na cztery partycje o równym rozmiarze.
+4. Podziel górną część modułu. W trybie zaznaczania ze stroną wybierz moduł jeden raz, aby aktywować go do wyboru, a następnie wybierz górną część modułu, aby zaznaczyć górną miarę. Na pasku narzędzi Edytor **modelu wybierz opcję**Podziel na siebie. Spowoduje to dodanie nowych wierzchołków na górze modułu, który dzieli go na cztery partycje o równym rozmiarze.
 
     ![Górna część modułu została podzielona](../designers/media/gfx_model_demo_house_subdiv.png)
 
@@ -54,26 +54,26 @@ Przed rozpoczęciem upewnij się, że okno **Właściwości** i **Przybornik** s
 
     ![Boki modułu zostały wywytłaczane](../designers/media/gfx_model_demo_house_extrude.png)
 
-6. Poszerzenie jednego z wytłoczeniów. Wybierz jedną z wysuniętych twarzy, a następnie na pasku narzędzi Edytor modelu wybierz narzędzie translacji i Przenieś Manipulator tłumaczenia w tym samym kierunku co wytłoczenie.
+6. Poszerzenie jednego z wytłoczeniów. Wybierz jedną z wysuniętych twarzy, a następnie na pasku narzędzi Edytor modelu wybierz narzędzie **translacji** i Przenieś Manipulator tłumaczenia w tym samym kierunku co wytłoczenie.
 
     ![Jedna strona modułu została przeprojektowana w dalszej części.](../designers/media/gfx_model_demo_house_extend.png)
 
-7. Triangulacja modelu. Na pasku narzędzi Edytor modelu wybierz kolejno opcje **Zaawansowane** > **Narzędzia** > **triangulacja**.
+7. Triangulacja modelu. Na pasku narzędzi Edytor modelu wybierz kolejno opcje **zaawansowane**  > **Narzędzia**  > **triangulacja**.
 
 8. Utwórz dach domu. Przejdź do trybu wyboru krawędzi, wybierając **pozycję Wybierz krawędź** na pasku narzędzi Edytor modelu, a następnie wybierz moduł, aby go uaktywnić. Naciśnij i przytrzymaj klawisz **Ctrl** podczas zaznaczania krawędzi, które są wyświetlane w tym miejscu:
 
     ![Krawędzie, które będą stanowić szczyt dachu](../designers/media/gfx_model_demo_house_edges.png)
 
-    Po wybraniu krawędzi na pasku narzędzi Edytor modelu wybierz narzędzie Translacja, a następnie przenieś tłumaczenie Manipulator do góry, aby utworzyć dach domu.
+    Po wybraniu krawędzi na pasku narzędzi Edytor modelu wybierz narzędzie **translacja** , a następnie przenieś tłumaczenie Manipulator do góry, aby utworzyć dach domu.
 
    Model uproszczonej konstrukcji został ukończony. Poniżej znajduje się ostateczny model z zastosowanym płaskim cieniowaniem:
 
    ![Ukończony model uproszczonego](../designers/media/gfx_model_demo_house_final.png)
 
-   W następnym kroku można zastosować cieniowanie do tego modelu 3W. Aby uzyskać więcej informacji [, zobacz How to: Zastosuj cieniowanie do modelu](../designers/how-to-apply-a-shader-to-a-3-d-model.md)3W.
+   W następnym kroku można zastosować cieniowanie do tego modelu 3W. Aby uzyskać więcej informacji, zobacz [How to: Apply a Shader to the 3D model](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Instrukcje: Modelowanie terenów 3W](../designers/how-to-model-3-d-terrain.md)
+- [Instrukcje: modelowanie terenu 3D](../designers/how-to-model-3-d-terrain.md)
 - [Edytor modelu](../designers/model-editor.md)
 - [Projektant cieniowania](../designers/shader-designer.md)

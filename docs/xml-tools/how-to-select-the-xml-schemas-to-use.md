@@ -3,78 +3,78 @@ title: 'Instrukcje: Wybieranie schematów XML do użycia'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d6fda3ef-d465-4788-8514-2f2d528d658c
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41f830214b20df24587cf902e6b180e8a43a8cd3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 275def786a93d42e6b8e110d3b3d785a24e948b1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63007405"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72601910"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>Instrukcje: Wybieranie schematów XML do użycia
 
-Edytor XML udostępnia znajduje się w pamięci podręcznej schematów *%VSInstallDir%\xml\Schemas* katalogu. Pamięci podręcznej schematów obejmuje dobrze znanych schematów XML, które są używane do weryfikacji dokumentu IntelliSense i XML.
+Edytor XML udostępnia pamięć podręczną schematu znajdującą się w katalogu *%VSInstallDir%\xml\Schemas* . Pamięć podręczna schematu zawiera dobrze znane schematy XML, które są używane do sprawdzania poprawności dokumentów IntelliSense i XML.
 
-Użyj **schematów** dokumentów właściwości, aby wybrać co najmniej jeden schemat definicji języka (XSD) schematów XML. Możesz wybrać schematów z pamięci podręcznej schematu lub w innym miejscu.
+Użyj właściwości dokumentu **schematów** , aby wybrać co najmniej jeden schemat języka definicji schematu XML (XSD). Można wybrać schematy z pamięci podręcznej schematów lub w innym miejscu.
 
-Schematy, należy określić są zapisywane w plik opcji użytkownika rozwiązania (ukryte) (. *suo*), wraz z innych XML właściwości dokumentu. W rezultacie nie trzeba ponownie wprowadzić te wartości przy następnym otwarciu rozwiązania.
+Określone schematy są zapisywane w postaci (ukrytego) pliku opcji użytkownika rozwiązania (. *SUO*), wraz ze wszystkimi innymi właściwościami dokumentu XML. W związku z tym nie trzeba ponownie wprowadzać tych wartości przy następnym otwarciu rozwiązania.
 
 > [!NOTE]
-> Edytora można sprawdzić poprawność przy użyciu wbudowanego schematu lub schemat przywoływany przez `xsd:schemaLocation` atrybutu. Aby uzyskać więcej informacji, zobacz [Walidacja dokumentów XML](../xml-tools/xml-document-validation.md).
+> Edytor może sprawdzić poprawność przy użyciu schematu wbudowanego lub schematu, do którego odwołuje się atrybut `xsd:schemaLocation`. Aby uzyskać więcej informacji, zobacz [Walidacja dokumentu XML](../xml-tools/xml-document-validation.md).
 
-## <a name="to-select-an-xml-schema-from-the-schema-cache"></a>Aby wybrać schematu XML z pamięci podręcznej schematów
+## <a name="to-select-an-xml-schema-from-the-schema-cache"></a>Aby wybrać schemat XML z pamięci podręcznej schematów
 
 1. Otwórz plik w edytorze XML.
 
-2. W oknie dialogowym właściwości dokumentu kliknij **schematów** pola. Gdy przycisku Przeglądaj, (...) zostanie wyświetlona, kliknij go.
+2. W oknie właściwości dokumentu kliknij w polu **schematy** . Gdy zostanie wyświetlony przycisk przeglądania (...), kliknij go.
 
-   ![Właściwość schematu dla pliku XML](media/properties-schemas.png)
+   ![Właściwość schematów dla pliku XML](media/properties-schemas.png)
 
-   [Schematów XML, okno dialogowe](xml-schemas-dialog-box.md) zostanie otwarty. Okno dialogowe wyświetla listę wszystkich schematów z. *xsd* rozszerzenie w pamięci podręcznej schematu (w tym schematy przywoływane w *catalog.xml* pliku), a także dowolnego schematu, który w bieżącym rozwiązaniu, Otwórz w programie Visual Studio, o której mowa w `xsd:schemaLocation` atrybut lub do których odwołuje się **schematów** właściwości.
+   Zostanie otwarte okno [dialogowe schematy XML](xml-schemas-dialog-box.md) . W oknie dialogowym są wyświetlane wszystkie schematy z. rozszerzenie *XSD* w pamięci podręcznej schematów (w tym schematy, do których odwołuje się plik *Catalog. XML* ), a także wszystkie schematy, które znajdują się w bieżącym rozwiązaniu, otwierają się w programie Visual Studio, do których odwołuje się atrybut `xsd:schemaLocation` lub przywoływane w **schematach** wartość.
 
-3. Wybieranie schematów do użycia w celu weryfikacji, wykonując jedną z następujących czynności:
+3. Wybierz schematy do użycia na potrzeby walidacji, wykonując jedną z następujących czynności:
 
-   - Wybierz schemat na liście **schematów XML** okno dialogowe, kliknij przycisk **użyj** kolumny, a następnie wybierz **używają tego schematu**.
+   - Wybierz schemat z listy w oknie dialogowym **schematy XML** , kliknij kolumnę **Użyj** , a następnie wybierz pozycję **Użyj tego schematu**.
 
      —lub—
 
-   - Wybierz wiele schematów na liście **schematów XML** okno dialogowe, a następnie kliknij prawym przyciskiem myszy i wybierz pozycję **używają tego schematu**.
+   - Zaznacz wiele schematów w oknie dialogowym **schematy XML** , a następnie kliknij prawym przyciskiem myszy i wybierz pozycję **Użyj tego schematu**.
 
-4. Wybierz **OK**.
+4. Wybierz **przycisk OK**.
 
-   Lista wybranych schematów są kopiowane z powrotem do **schematów** właściwości dokumentu.
+   Lista wybranych schematów jest kopiowana z powrotem do właściwości dokumentu **schematu** .
 
-## <a name="to-add-an-xml-schema-to-the-schema-cache"></a>Aby dodać schematu XML do pamięci podręcznej schematów
+## <a name="to-add-an-xml-schema-to-the-schema-cache"></a>Aby dodać schemat XML do pamięci podręcznej schematu
 
-1. W oknie dialogowym właściwości dokumentu, kliknij przycisk **schematów** pola.
+1. W oknie właściwości dokumentu kliknij przycisk w polu **schematy** .
 
 2. Kliknij przycisk **Dodaj**.
 
-   **Otwieranie schematu XSD** zostanie otwarte okno dialogowe.
+   Otworzy się okno dialogowe **Otwórz schemat XSD** .
 
-3. Przeglądaj i wybierz schematy, aby dodać do pamięci podręcznej schematów.
+3. Przeglądaj i wybierz schematy, które mają zostać dodane do pamięci podręcznej schematów.
 
 4. Kliknij przycisk **Otwórz**.
 
-   Schematy są dodawane do pamięci podręcznej schematów i **użyj** jest równa wartości w kolumnie **używają tego schematu**.
+   Schematy są dodawane do pamięci podręcznej schematu, a wartość **Użyj** wartości kolumna jest ustawiona na **Użyj tego schematu**.
 
-## <a name="to-delete-an-xml-schema-from-the-schema-cache"></a>Aby usunąć schematu XML z pamięci podręcznej schematów
+## <a name="to-delete-an-xml-schema-from-the-schema-cache"></a>Aby usunąć schemat XML z pamięci podręcznej schematów
 
-1. W oknie dialogowym właściwości dokumentu, kliknij przycisk **schematów** pola.
+1. W oknie właściwości dokumentu kliknij przycisk w polu **schematy** .
 
-2. Wybierz schemat, Usuń, a następnie kliknij przycisk **Usuń**.
+2. Wybierz schemat do usunięcia, a następnie kliknij przycisk **Usuń**.
 
-   Schemat zostanie usunięty z pamięci podręcznej schematów w pamięci, ale nie jest on usuwany z systemu plików.
+   Schemat zostanie usunięty z pamięci podręcznej schematu w pamięci, ale nie jest usuwany z systemu plików.
 
    > [!NOTE]
-   > Jeśli nadal masz odwołanie do schematu za pomocą `schemaLocation` atrybutu lub pasujący obiekt typu `targetNamespace` następnie **Usuń** nie będzie działać w tej sytuacji ze względu na skojarzenie automatyczne. W takim przypadku zalecane jest, oznaczeniu schematu jako **nie używaj wybranych schematów** w **użyj** kolumny.
+   > Jeśli nadal masz odwołanie do schematu za pośrednictwem atrybutu `schemaLocation` lub pasujące `targetNamespace` następnie **Remove** nie będą działały w tej sytuacji z powodu autoskojarzenia. W takim przypadku zaleca się oznaczyć schemat jako **nieużywający wybranych schematów** w kolumnie **Użyj** .
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Pamięci podręcznej schematów](../xml-tools/schema-cache.md)
+- [Pamięć podręczna schematu](../xml-tools/schema-cache.md)
 - [Okno dialogowe schematy XML](../xml-tools/xml-schemas-dialog-box.md)
 - [Edytor XML](../xml-tools/xml-editor.md)

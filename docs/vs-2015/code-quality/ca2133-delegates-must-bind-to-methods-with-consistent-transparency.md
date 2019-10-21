@@ -1,5 +1,5 @@
 ---
-title: 'CA2133: Delegatów należy powiązać z metodami ze spójną jawnością | Dokumentacja firmy Microsoft'
+title: 'CA2133: Delegaty muszą być powiązane z metodami ze spójną przezroczystością | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -8,17 +8,17 @@ f1_keywords:
 - CA2133
 ms.assetid: a09672e2-63cb-4abd-9e8f-dff515e101ce
 caps.latest.revision: 13
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: a8a19a84336cc6452f663eb65429326b52268728
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 487047b7dd3096e65a6e287d79d91d3029f3dc5a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386955"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72608987"
 ---
-# <a name="ca2133-delegates-must-bind-to-methods-with-consistent-transparency"></a>CA2133: Delegaci muszą być powiązani z metodami ze spójną przezroczystością
+# <a name="ca2133-delegates-must-bind-to-methods-with-consistent-transparency"></a>CA2133: Delegatów należy powiązać z metodami ze spójną jawnością
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -29,16 +29,16 @@ ms.locfileid: "63386955"
 |Zmiana kluczowa|Kluczowa|
 
 > [!NOTE]
-> To ostrzeżenie jest stosowane tylko do kodu, który jest uruchomiony w środowisku CoreCLR (wersja środowiska CLR, które są specyficzne dla aplikacji sieci Web w technologii Silverlight).
+> To ostrzeżenie jest stosowane tylko do kodu, na którym działa CoreCLR (wersja środowiska CLR, która jest specyficzna dla aplikacji sieci Web Silverlight).
 
 ## <a name="cause"></a>Przyczyna
- To ostrzeżenie uruchamiane jest na metodzie wiążącej obiekt delegowany, która jest oznaczona za pomocą <xref:System.Security.SecurityCriticalAttribute> do metody, która jest przezroczysta lub oznaczona za pomocą <xref:System.Security.SecuritySafeCriticalAttribute>. Ostrzeżenie jest także uruchamiane na metodzie wiążącej obiekt delegowany, który jest przezroczysty lub bezpieczny-krytyczny dla metody krytycznej.
+ To ostrzeżenie jest generowane na metodzie, która wiąże delegata, który jest oznaczony <xref:System.Security.SecurityCriticalAttribute> do metody, która jest przezroczysta lub oznaczona przy użyciu <xref:System.Security.SecuritySafeCriticalAttribute>. Ostrzeżenie jest także uruchamiane na metodzie wiążącej obiekt delegowany, który jest przezroczysty lub bezpieczny-krytyczny dla metody krytycznej.
 
 ## <a name="rule-description"></a>Opis reguły
- Typy delegatów i metod, które mogą powiązać musi mieć spójną przezroczystość. Delegaty przejrzyste i bezpieczny krytyczny może powiązać tylko z innych metod przezroczysty lub bezpieczny krytyczny. Podobnie krytyczne delegatów mogą powiązać tylko z metody krytyczne. Te reguły powiązania upewnij się, że tylko kod, który może wywołać metodę za pośrednictwem delegata można również wywoływane ma tę samą metodę bezpośrednio. Na przykład zasad powiązania uniemożliwia podczas wywoływania kodu krytycznego bezpośrednio przez obiekt delegowany przezroczysty kod przezroczysty.
+ Typy delegatów i metody, do których są powiązane, muszą mieć spójną przejrzystość. Delegaty przezroczyste i krytyczne o krytycznym znaczeniu mogą wiązać się tylko z innymi niejawnymi lub bezpiecznymi metodami. Podobnie Delegaty krytyczne mogą wiązać się tylko z metodami krytycznymi. Te reguły powiązań zapewniają, że jedyny kod, który może wywołać metodę za pośrednictwem delegata, mógł również wywołać tę samą metodę bezpośrednio. Na przykład reguły powiązań uniemożliwiają przezroczystemu kodowi Wywoływanie kodu krytycznego bezpośrednio za pośrednictwem przezroczystego delegata.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie to ostrzeżenie, zmień przezroczystość, delegata lub metody, która wiąże ją tak, aby przezroczystość dwa są równoważne.
+ Aby naprawić naruszenie tego ostrzeżenia, Zmień przezroczystość delegata lub metodę, która jest powiązana, tak aby przezroczystość obu tych elementów była odpowiednikiem.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Nie pomijaj ostrzeżeń dla tej reguły.

@@ -3,17 +3,17 @@ title: Sprawdzanie poprawności dokumentu XML w edytorze XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: abb353bd-6c4a-4978-b03b-a8c245bbfb55
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13574a13aecf7edbc9627e7b8288689206f278c2
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 2c4133268f2e07753ab7ecd276bf92712484e9f5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926702"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72604044"
 ---
 # <a name="xml-document-validation"></a>Walidacja dokumentów XML
 
@@ -25,7 +25,7 @@ Schematy używane w walidacji są dostępne przez dopasowanie `targetNamespace` 
 
 - Osadzony schemat lub DTD.
 
-- Zewnętrzna definicja DTD lub `xsd:schemaLocation` atrybut i `xsd:noNamespaceSchemaLocation`
+- Zewnętrzna definicja DTD lub `xsd:schemaLocation` i atrybut `xsd:noNamespaceSchemaLocation`
 
 - Identyfikator URI przestrzeni nazw schematu XDR "x-Schema".
 

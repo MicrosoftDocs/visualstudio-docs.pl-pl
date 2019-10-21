@@ -3,23 +3,23 @@ title: Ta powiązana metoda to metoda zapasowa następujących domyślnych metod
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 62afa6da-97cf-48b9-8de3-33e4d72a0377
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 11c5c7d3c8078aa420074e9e32bb132489b169c8
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 8a7a422cff33fd361b784fd9cae6d5053fbe84fa
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71252946"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72639666"
 ---
 # <a name="this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods"></a>Ta powiązana metoda to metoda zapasowa następujących domyślnych metod wstawiania, aktualizowania lub usuwania
 
-Ta powiązana Metoda to metoda tworzenia kopii zapasowej dla `Insert`następujących `Update`metod domyślnych `Delete` , lub. Jeśli zostanie usunięty, te metody również zostaną usunięte. Czy chcesz kontynuować?
+Powiązana Metoda to metoda tworzenia kopii zapasowych dla następujących domyślnych `Insert`, `Update` lub `Delete` metod. Jeśli zostanie usunięty, te metody również zostaną usunięte. Czy chcesz kontynuować?
 
-Wybrana `DataContext` Metoda jest obecnie używana jako jedna `Insert`z metod, `Update`lub `Delete` dla jednej z klas obiektów w **projektancie o/R**. Usunięcie wybranej metody powoduje, że Klasa jednostki, która używa tej metody, przywraca domyślne zachowanie w czasie wykonywania w celu wykonania operacji INSERT, Update lub DELETE podczas aktualizacji.
+Wybrana metoda `DataContext` jest obecnie używana jako jedna z metod `Insert`, `Update` lub `Delete` dla jednej z klas obiektów w **projektancie o/R**. Usunięcie wybranej metody powoduje, że Klasa jednostki, która używa tej metody, przywraca domyślne zachowanie w czasie wykonywania w celu wykonania operacji INSERT, Update lub DELETE podczas aktualizacji.
 
 ## <a name="selected-method-options"></a>Opcje wybranej metody
 

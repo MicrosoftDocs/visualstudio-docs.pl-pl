@@ -1,5 +1,5 @@
 ---
-title: Nieobsługiwane scenariusze w Projektancie przepływu pracy debugowania | Dokumentacja firmy Microsoft
+title: Nieobsługiwane scenariusze debugowania w Projektant przepływu pracy | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -7,50 +7,50 @@ ms.topic: reference
 ms.assetid: 6adbe379-41d0-4681-9cd0-b91f187c3c2c
 caps.latest.revision: 4
 author: steved0x
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d931325bd9e323fdf8fa31848a5c2671b5382543
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: fdbe68b416560b85580e3dd30e5f8138b7cd08fe
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825223"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72606936"
 ---
 # <a name="unsupported-debugging-scenarios-in-the-workflow-designer"></a>Nieobsługiwane scenariusze debugowania w Projektancie przepływu pracy
-Projektant przepływu pracy w [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] dodano wiele nowych funkcji, ale nadal istnieje kilka scenariuszy debugowania, które nie obsługuje. Ten dokument wyszczególnia nieobsługiwany projektanta przepływu pracy debugowania scenariuszy.  
-  
-- Wykonywanie nie mogą być kontynuowane po kod został zmodyfikowany.  
-  
-- Wykonywanie nie mogą być kontynuowane z dowolnego punktu w przepływie pracy (Ustaw dalej).  
-  
-- Wykonanie nie może być kontynuowane, aż do osiągnięcia kursora (Uruchom do kursora).  
-  
-- Projektanta przepływu pracy nie może służyć do debugowania utworzonych w kodzie bez korzystania z projektanta przepływów pracy.  
-  
-- Przepływy pracy utworzone we wcześniejszych wersjach programu [!INCLUDE[wf](../includes/wf-md.md)] nie można debugować w [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] projektanta.  
-  
-- Punkty przerwania nie może być zdefiniowana w łączach między działaniami lub <xref:System.Activities.Statements.Flowchart> węzłów.  
-  
-- Schowek nie jest dostępne podczas debugowania.  
-  
-- Punkty przerwania nie są zachowywane podczas działania są kopiowane lub wklejone.  
-  
-- Nie można ustawić punktów przerwania przepływu pracy w oknie stosu wywołań.  
-  
-- Podczas tworzenia punktów przerwania w Projektancie **wiersza** i **znak** ustawienia w **nowego punktu przerwania** okna dialogowego nie są używane.  
-  
-- Menu okna lub skrót punkt przerwania nie obsługuje następujących kolumn lub opcji dla debugowanie przepływu pracy:  
-  
-  - Warunek  
+Projektant przepływu pracy w [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] dodaliśmy wiele nowych funkcji, ale nadal istnieją scenariusze debugowania, które nie są obsługiwane przez program. Szczegóły tego dokumentu nie są obsługiwane w scenariuszach debugowania Projektant przepływu pracy.
 
-  - Liczba trafień  
+- Nie można kontynuować wykonywania po edycji kodu.
 
-  - Gdy trafiony  
+- Nie można kontynuować wykonywania z dowolnego miejsca w przepływie pracy (w dalszej kolejności).
 
-  - Funkcja  
+- Nie można kontynuować wykonywania, dopóki nie zostanie osiągnięty kursor (Uruchom do kursora).
 
-  - Dane  
+- Nie można użyć projektanta przepływu pracy do debugowania przepływów pracy utworzonych w kodzie bez użycia projektanta.
 
-  - Proces  
+- Przepływy pracy utworzone we wcześniejszych wersjach [!INCLUDE[wf](../includes/wf-md.md)] nie mogą być debugowane w projektancie [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)].
+
+- Nie można definiować punktów przerwania dla linków między działaniami lub węzłami <xref:System.Activities.Statements.Flowchart>.
+
+- Schowek nie jest dostępny podczas debugowania.
+
+- Punkty przerwania nie są zachowywane, gdy działania są kopiowane lub wklejane.
+
+- Nie można ustawić punktów przerwania przepływu pracy w oknie stosu wywołań.
+
+- Podczas tworzenia punktów przerwania w projektancie, ustawienia **wiersza** i **znaku** w oknie dialogowym **nowy punkt przerwania** nie są używane.
+
+- Okno punktu przerwania lub menu skrótów nie obsługują następujących kolumn lub opcji debugowania przepływu pracy:
+
+  - Warunek
+
+  - Liczba trafień
+
+  - Po trafieniu
+
+  - Funkcja
+
+  - Dane
+
+  - Proces
 
   - Przejdź do demontażu

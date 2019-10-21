@@ -1,5 +1,5 @@
 ---
-title: Znajdowanie i zastępowanie tekstu | Dokumentacja firmy Microsoft
+title: Znajdowanie i zastępowanie tekstu | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -34,50 +34,50 @@ helpviewer_keywords:
 - replacing text
 ms.assetid: a62545c3-1570-4d12-99fb-a82607eb35a1
 caps.latest.revision: 35
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 51d361bf74fb1181c64e5299b0925c262f185e9b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 025ba2eb95514efc740d1f8f7b3bf674d6bf237a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426334"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645637"
 ---
 # <a name="finding-and-replacing-text"></a>Znajdowanie i zastępowanie tekstu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Możesz znaleźć i zamienić tekst w Edytor kodu programu Visual Studio, a niektóre oparte na tekście oknie danych wyjściowych, takich jak **Find Results** systemu windows, za pomocą **Znajdź i Zamień** kontroli lub **Znajdź / Zastąp w plikach**. Możesz również wyszukiwać i zamieniać w niektórych oknach projektantów, takich jak projektant XAML i Projektant Windows Forms i okna narzędzi  
-  
- Możesz ograniczyć wyszukiwanie do bieżącego dokumentu, bieżącego rozwiązania lub niestandardowego zestawu folderów. Można również określić zestaw rozszerzeń nazw plików dla wyszukiwania wieloplikowego. Można dostosować składnię wyszukiwania za pomocą wyrażeń regularnych programu .NET.  
-  
- Aby znaleźć i zamienić wyrażenia regularne, zobacz [za pomocą wyrażeń regularnych w programie Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).  
-  
+Możesz znaleźć i zamienić tekst w edytorze kodu programu Visual Studio oraz niektóre okna danych wyjściowych oparte na tekście, takie jak okna **szukania wyników** , przy użyciu kontrolki **Znajdź i Zamień** lub **Znajdź/Zamień w plikach**. Możesz również wyszukiwać i zamieniać w niektórych oknach projektanta, takich jak Projektant XAML i Projektant Windows Forms, oraz okna narzędzi
+
+ Można zakres wyszukiwania do bieżącego dokumentu, bieżącego rozwiązania lub niestandardowego zestawu folderów. Możesz również określić zestaw rozszerzeń nazw plików dla wyszukiwania wieloplikowego. Składnię wyszukiwania można dostosować za pomocą wyrażeń regularnych programu .NET.
+
+ Aby znaleźć i zamienić wyrażenia regularne, zobacz [Używanie wyrażeń regularnych w programie Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
+
 > [!TIP]
-> **Find/Command** pole jest nadal dostępne jako formant paska narzędzi, ale nie jest już domyślnie widoczne. Możesz wyświetlić **Find/Command** pola, wybierając **apletu Dodaj lub usuń przyciski** na **standardowa** narzędzi, a następnie wybierając **znaleźć**. Aby uzyskać więcej informacji, zobacz [polu Znajdź/polecenie](../ide/find-command-box.md).  
-  
-## <a name="find-and-replace-control"></a>Formant Znajdź i Zamień  
- **Znajdź i Zamień** formant jest widoczny w prawym górnym rogu okna edytora kodu. **Znajdź i Zamień** kontroli natychmiast wyróżnia każde wystąpienie wyszukiwanego ciągu w bieżącym dokumencie. Możesz przejść z jednego wystąpienia do innego, wybierając **Znajdź następny** przycisk lub **Find Previous** przycisku na kontrolce wyszukiwania.  
-  
- Dostęp do opcji zastępowania, wybierając przycisk obok **znaleźć** pola tekstowego. Aby wykonywać jedną zamianę naraz, wybierz opcję **Zamień następny** znajdujący się obok **Zastąp** pola tekstowego. Aby zamienić wszystkie dopasowania, wybierz opcję **Zamień wszystkie** przycisku.  
-  
- Aby zmienić kolor podświetlenia dopasowań, wybierz **narzędzia** menu, wybierz opcję **opcje**, a następnie wybierz **środowiska**i wybierz **czcionki i kolory** . W **Pokaż ustawienia dla** listy wybierz **edytora tekstów**, a następnie w polu **wyświetlania elementów** listy wybierz **Znajdź zaznaczone (rozszerzenie)** .  
-  
-### <a name="searching-tool-windows"></a>Wyszukiwanie narzędzia Windows  
- Możesz użyć **znaleźć** kontrolować w oknach kodu lub tekstu, takie jak **dane wyjściowe** systemu windows, i **Find Results** systemu windows, wybierając **Znajdź i Zamień**na **Edytuj** menu lub (CTRL + F).  
-  
- W niektórych oknach narzędzi jest także dostępna wersja Znajdź formant. Na przykład, można teraz filtrować listę formantów w **przybornika** okna, wprowadzając tekst w polu wyszukiwania. Innymi oknami narzędzi, które obecnie umożliwiają wyszukiwanie ich zawartość zawierają **Eksploratora rozwiązań**, **właściwości** oknie i **Team Explorer**, między innymi.  
-  
-## <a name="findreplace-in-files"></a>Znajdź/Zamień w plikach  
- **Znajdź/Zamień w plikach** działa jak **Znajdź i Zamień** kontrolować, z tą różnicą, że można zdefiniować zakres wyszukiwania. Nie tylko można przeszukiwać bieżący plik otwarty w edytorze, ale można także przeszukać wszystkie otwarte dokumenty, całe rozwiązanie, bieżące projekty i wybrane foldery zestawów. Możesz również wyszukiwać według rozszerzenia nazwy pliku. Aby uzyskać dostęp do **Znajdź/Zamień w plikach** okna dialogowego wybierz **Znajdź i Zamień** na **Edytuj** menu (lub CTRL + SHIFT + F).  
-  
- Po wybraniu **Znajdź wszystkie**, **Find Results** okna otwiera i wyświetla listę wyników wyszukiwania. Wybranie wyniku na liście Wyświetla skojarzony plik i wyróżnienie dopasowania. Jeśli plik nie jest już otwarty do edycji, jest otwierany w karcie podglądu po prawej stronie na karcie dobrze. Możesz użyć **znaleźć** formantu, aby przeszukiwać **Find Results** listy.  
-  
-### <a name="creating-custom-search-folder-sets"></a>Tworzenie zestawów folderu wyszukiwania niestandardowego  
- Można zdefiniować zakres wyszukiwania, wybierając **Choose Search Folders** przycisku (wygląda jak **...** ) obok pozycji **przeszukania** pole. W **Choose Search Folders** okno dialogowe, można określić zbiór folderów wyszukiwania i zapisać specyfikację dzięki czemu użytkownik może użyć go ponownie później. Foldery na komputerze zdalnym można określić tylko wtedy, gdy zmapowano jego dysk do maszyny lokalnej.  
-  
-### <a name="creating-custom-component-sets"></a>Tworzenie zestawów składników niestandardowych  
- Można zdefiniować zestawy składników jako zakres wyszukiwania, wybierając **Edit Custom Component Set** znajdujący się obok **przeszukania** pole. Można określić zainstalowane składniki .NET lub COM, projekty programu Visual Studio, które znajdują się w rozwiązaniu lub wszystkie zestawy lub typy biblioteki (.dll, .tlb, .olb, .exe lub .ocx). Aby przeszukać odwołania, zaznacz **Szukaj w odwołaniach** pole.  
-  
-## <a name="see-also"></a>Zobacz też  
+> Pole **Znajdź/polecenie** jest nadal dostępne jako kontrolka paska narzędzi, ale nie jest już widoczne domyślnie. Możesz wyświetlić okno **Znajdź/polecenie** , wybierając pozycję **Dodaj lub usuń przyciski** na pasku narzędzi **Standardowy** , a następnie wybierając pozycję **Znajdź**. Aby uzyskać więcej informacji, zobacz [Find/Command Box](../ide/find-command-box.md).
+
+## <a name="find-and-replace-control"></a>Znajdź i Zamień formant
+ Kontrolka **Znajdź i Zamień** pojawia się w prawym górnym rogu okna edytora kodu. Kontrolka **Znajdź i Zamień** natychmiast podświetla każde wystąpienie danego ciągu wyszukiwania w bieżącym dokumencie. Możesz nawigować z jednego wystąpienia do innego, wybierając przycisk **Znajdź dalej** lub przycisk **Znajdź poprzedni** w kontrolce wyszukiwanie.
+
+ Możesz uzyskać dostęp do opcji zamiany, wybierając przycisk obok pola tekstowego **Znajdź** . Aby dokonać jednej zamiany, wybierz przycisk **Zamień następny** obok pola tekstowego **Zastąp** . Aby zastąpić wszystkie dopasowania, wybierz przycisk **Zamień wszystko** .
+
+ Aby zmienić kolor podświetlenia dla dopasowania, wybierz menu **Narzędzia** , wybierz pozycję **Opcje**, a następnie wybierz pozycję **środowisko**i wybierz pozycję **czcionki i kolory**. Na liście **Pokaż ustawienia dla** wybierz pozycję **Edytor tekstu**, a następnie na liście **Wyświetl elementy** wybierz pozycję **Znajdź Wyróżnij (rozszerzenie)** .
+
+### <a name="searching-tool-windows"></a>Wyszukiwanie okien narzędzi
+ Możesz użyć kontrolki **Znajdź** w oknach kodu lub tekstu, takich jak okna **danych wyjściowych** , i **znajdować wyniki** w systemie Windows, wybierając **Znajdź i Zamień** w menu **Edycja** lub (Ctrl + F).
+
+ Wersja kontrolki Znajdź jest również dostępna w niektórych oknach narzędzi. Na przykład możesz teraz filtrować listę kontrolek w oknie **przybornika** , wprowadzając tekst w polu wyszukiwania. Inne okna narzędzi, które teraz umożliwiają wyszukiwanie ich zawartości, obejmują **Eksplorator rozwiązań**, okna **Właściwości** i **Team Explorer**, między innymi.
+
+## <a name="findreplace-in-files"></a>Znajdź/Zamień w plikach
+ **Znajdź/Zamień w plikach** działa jak formant **Znajdź i Zamień** , z tą różnicą, że można zdefiniować zakres wyszukiwania. Można nie tylko przeszukiwać bieżący otwarty plik w edytorze, ale można również przeszukiwać wszystkie otwarte dokumenty, całe rozwiązanie, bieżący projekt i wybrane foldery. Możesz również wyszukiwać według rozszerzenia nazwy pliku. Aby uzyskać dostęp do okna dialogowego **Znajdź/Zastąp w plikach** , wybierz pozycję **Znajdź i Zamień** w menu **Edycja** (lub naciśnij klawisze Ctrl + Shift + F).
+
+ Po wybraniu przycisku **Znajdź wszystkie**zostanie otwarte okno **Znajdź wyniki** i zostanie wyświetlona lista dopasowań dla wyszukiwania. Wybranie wyniku z listy powoduje wyświetlenie skojarzonego pliku i wyróżnienie dopasowania. Jeśli plik nie jest jeszcze otwarty do edycji, zostanie otwarty na karcie podglądu po prawej stronie w obszarze karty. Możesz użyć kontrolki **Znajdź** , aby przeszukać listę **Znajdź wyniki** .
+
+### <a name="creating-custom-search-folder-sets"></a>Tworzenie niestandardowych zestawów folderów wyszukiwania
+ Zakres wyszukiwania można zdefiniować, wybierając przycisk **Wybierz foldery wyszukiwania** (wygląda jak **...** ) obok pola **Szukaj w** . W oknie dialogowym **Wybieranie folderów wyszukiwania** możesz określić zestaw folderów do wyszukania, a także zapisać specyfikację, aby później można było użyć jej ponownie. Foldery na komputerze zdalnym można określić tylko wtedy, gdy dysk został zmapowany na komputer lokalny.
+
+### <a name="creating-custom-component-sets"></a>Tworzenie niestandardowych zestawów składników
+ Zestawy składników można definiować jako zakres wyszukiwania, wybierając przycisk **Edytuj niestandardowy zestaw składników** obok pola **Szukaj w** . Można określić zainstalowane składniki .NET lub COM, projekty programu Visual Studio, które znajdują się w rozwiązaniu lub dowolnego zestawu lub biblioteki typów (. dll,. tlb,. olb,. exe lub. ocx). Aby wyszukać odwołania, zaznacz pole **odszukaj w odwołaniach** .
+
+## <a name="see-also"></a>Zobacz też
  [Używanie wyrażeń regularnych w programie Visual Studio](../ide/using-regular-expressions-in-visual-studio.md)

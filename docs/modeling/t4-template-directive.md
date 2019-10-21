@@ -2,21 +2,21 @@
 title: Dyrektywa T4 dotycząca szablonu
 ms.date: 11/04/2016
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8d00bf3055d1706b459baaf48d1b8e5dca3f282
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 4932a20fbcaee4d5aef6aac03252ee6062fbd035
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870502"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72606209"
 ---
 # <a name="t4-template-directive"></a>Dyrektywa T4 dotycząca szablonu
 
-Szablon tekstu T4 programu Visual Studio zwykle zaczyna się od `template` dyrektywy, która określa, jak szablon powinien być przetwarzany. Powinna istnieć nie więcej niż jedna dyrektywa szablonu w szablonie tekstowym i wszystkich plikach, które on uwzględnia.
+Szablon tekstu T4 programu Visual Studio zwykle zaczyna się od dyrektywy `template`, która określa, jak szablon powinien być przetwarzany. Powinna istnieć nie więcej niż jedna dyrektywa szablonu w szablonie tekstowym i wszystkich plikach, które on uwzględnia.
 
 Ogólne omówienie pisania szablonów tekstowych można znaleźć w artykule [pisanie szablonu tekstowego T4](../modeling/writing-a-t4-text-template.md).
 
@@ -26,7 +26,7 @@ Ogólne omówienie pisania szablonów tekstowych można znaleźć w artykule [pi
 <#@ template [language="VB"] [compilerOptions="options"] [culture="code"] [debug="true"] [hostspecific="true"] [inherits="templateBaseClass"] [visibility="internal"] [linePragmas="false"] #>
 ```
 
-`template` Dyrektywa zawiera kilka atrybutów, które umożliwiają określenie różnych aspektów transformacji. Wszystkie atrybuty są opcjonalne.
+Dyrektywa `template` ma kilka atrybutów, które umożliwiają określenie różnych aspektów transformacji. Wszystkie atrybuty są opcjonalne.
 
 ## <a name="compileroptions-attribute"></a>Atrybut compilerOptions
 
@@ -40,7 +40,7 @@ Wszystkie prawidłowe opcje kompilatora.
 
 Ignorowane dla szablonów w czasie wykonywania (wstępnie przetworzonych).
 
-Te opcje są stosowane, gdy szablon został przekonwertowany na [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] lub [!INCLUDE[vb_current_short](../debugger/includes/vb_current_short_md.md)], a kod wyniku jest kompilowany.
+Te opcje są stosowane, gdy szablon został przekonwertowany na [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] lub [!INCLUDE[vb_current_short](../debugger/includes/vb_current_short_md.md)], a wynikiem jest kompilowanie kodu.
 
 ## <a name="culture-attribute"></a>Atrybut culture
 
@@ -68,9 +68,9 @@ Prawidłowe wartości:
 
 `true`
 
-`false`wartooć
+`false` (wartość domyślna)
 
-Jeśli atrybut ma `true`wartość, plik kodu pośredniego będzie zawierać informacje, które umożliwiają debugerowi dokładniejsze określenie pozycji w szablonie, w której wystąpił przerwanie lub wyjątek. `debug`
+Jeśli atrybut `debug` jest `true`, plik kodu pośredniego będzie zawierać informacje, które umożliwiają debugerowi dokładniejsze określenie pozycji w szablonie, w której wystąpił przerwanie lub wyjątek.
 
 W przypadku szablonów czasu projektowania plik kodu pośredniego zostanie zapisany w katalogu **% temp%** .
 
@@ -88,15 +88,15 @@ Prawidłowe wartości:
 
 `true`
 
-`false`wartooć
+`false` (wartość domyślna)
 
 `trueFromBase`
 
-Jeśli ustawisz wartość tego atrybutu na `true`, właściwość o nazwie `Host` jest dodawana do klasy wygenerowanej przez szablon tekstu. Właściwość jest odwołaniem do hosta aparatu transformacji i jest zadeklarowana jako [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). Jeśli został zdefiniowany niestandardowy host, można go rzutować na niestandardowy typ hosta.
+Jeśli ustawisz wartość tego atrybutu na `true`, właściwość o nazwie `Host` zostanie dodana do klasy wygenerowanej przez szablon tekstu. Właściwość jest odwołaniem do hosta aparatu transformacji i jest zadeklarowana jako [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). Jeśli został zdefiniowany niestandardowy host, można go rzutować na niestandardowy typ hosta.
 
 Ponieważ typ tej właściwości zależy od typu hosta, jest to przydatne wyłącznie podczas pisania szablonu tekstu, który działa tylko z określonym hostem. Ma zastosowanie do [szablonów czasu projektowania](../modeling/design-time-code-generation-by-using-t4-text-templates.md), ale nie do [szablonów czasu wykonywania](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
-Gdy `hostspecific` `this.Host` jest `true` i używasz programu Visual Studio, można rzutować na IServiceProvider w celu uzyskania dostępu do funkcji programu Visual Studio. Można również użyć `Host.ResolvePath(filename)` , aby uzyskać ścieżkę bezwzględną pliku w projekcie. Przykład:
+Gdy `hostspecific` jest `true` i używasz programu Visual Studio, możesz rzutować `this.Host` na IServiceProvider, aby uzyskać dostęp do funkcji programu Visual Studio. Możesz również użyć `Host.ResolvePath(filename)`, aby uzyskać ścieżkę bezwzględną pliku w projekcie. Na przykład:
 
 ```csharp
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -118,7 +118,7 @@ Content of myFile is:
 <#= myFile #>
 ```
 
-Jeśli używasz `inherits` atrybutów i `hostspecific` razem, określ host = "trueFromBase" w klasie pochodnej i host = "true" w klasie bazowej. Pozwala to uniknąć podwójnej definicji `Host` właściwości w wygenerowanym kodzie.
+Jeśli używasz atrybutów `inherits` i `hostspecific` razem, określ wartość host = "trueFromBase" w klasie pochodnej i host = "true" w klasie bazowej. Pozwala to uniknąć podwójnej definicji właściwości `Host` w wygenerowanym kodzie.
 
 ## <a name="language-attribute"></a>Atrybut language
 
@@ -128,11 +128,11 @@ Przykład:
 
 Prawidłowe wartości:
 
-`C#`wartooć
+`C#` (wartość domyślna)
 
 `VB`
 
-Atrybut określa język ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] lub [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]) do użycia dla kodu źródłowego w blokach instrukcji i wyrażeń. `language` Pliku kodu pośredniego, z którego jest generowane wyjście, użyje tego języka. Język ten nie jest powiązany z językiem generowanym przez szablon, który może być dowolnym rodzajem tekstu.
+Atrybut `language` określa język ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] lub [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]) do użycia dla kodu źródłowego w blokach instrukcji i wyrażeń. Pliku kodu pośredniego, z którego jest generowane wyjście, użyje tego języka. Język ten nie jest powiązany z językiem generowanym przez szablon, który może być dowolnym rodzajem tekstu.
 
 Na przykład:
 
@@ -158,9 +158,9 @@ Można określić, aby kod szablonu dziedziczył z innej klasy, która również
 
 Można użyć dziedziczenia między szablonami tekstowymi czasu wykonywania, aby utworzyć podstawowy szablon, który ma kilka wariantów pochodnych. Szablony czasu wykonywania to te, które mają właściwość **niestandardowego narzędzia** ustawioną na **TextTemplatingFilePreprocessor**. Szablon czasu wykonywania generuje kod, który można wywoływać w aplikacji, aby tworzyć tekst zdefiniowany w szablonie. Aby uzyskać więcej informacji, zobacz [Generowanie tekstu w czasie wykonywania przy użyciu szablonów tekstowych T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
-Jeśli nie określisz `inherits` atrybutu, Klasa bazowa i Klasa pochodna są generowane na podstawie szablonu tekstu. Po określeniu `inherits` atrybutu jest generowana tylko Klasa pochodna. Klasa bazowa może być napisana odręcznie, ale musi mieć metody, które są używane w klasie pochodnej.
+Jeśli nie określisz atrybutu `inherits`, Klasa bazowa i Klasa pochodna są generowane na podstawie szablonu tekstu. Po określeniu atrybutu `inherits` jest generowana tylko Klasa pochodna. Klasa bazowa może być napisana odręcznie, ale musi mieć metody, które są używane w klasie pochodnej.
 
-Zazwyczaj można określić inny wstępnie przetworzony szablon jako klasę bazową. Szablon podstawowy dostarcza wspólne bloki tekstu, które mogą się przeplatać z tekstem z szablonów pochodnych. Można użyć bloków `<#+ ... #>` funkcji klasy do definiowania metod, które zawierają fragmenty tekstu. Na przykład można umieścić strukturę tekstu wyjściowego w szablonie podstawowym, zapewniającym wirtualne metody, które mogą zostać zastąpione w szablonach pochodnych:
+Zazwyczaj można określić inny wstępnie przetworzony szablon jako klasę bazową. Szablon podstawowy dostarcza wspólne bloki tekstu, które mogą się przeplatać z tekstem z szablonów pochodnych. Można użyć bloków funkcji klasy `<#+ ... #>`, aby zdefiniować metody, które zawierają fragmenty tekstu. Na przykład można umieścić strukturę tekstu wyjściowego w szablonie podstawowym, zapewniającym wirtualne metody, które mogą zostać zastąpione w szablonach pochodnych:
 
 Szablon tekstowy (wstępnie przetworzony) czasu wykonywania BaseTemplate.tt:
 
@@ -227,13 +227,13 @@ Można utworzyć klasy podstawowe i pochodne w różnych projektach. Pamiętaj, 
 Można również użyć zwykłej klasy odręcznej jako klasy bazowej. Klasa bazowa musi dostarczać metody stosowane w klasie pochodnej.
 
 > [!WARNING]
-> Jeśli używasz `inherits` atrybutów i `hostspecific` razem, Określ hostspecific = "trueFromBase" w klasie pochodnej i host = "true" w klasie bazowej. Pozwala to uniknąć podwójnej definicji `Host` właściwości w wygenerowanym kodzie.
+> Jeśli używasz atrybutów `inherits` i `hostspecific` razem, Określ hostspecific = "trueFromBase" w klasie pochodnej i host = "true" w klasie bazowej. Pozwala to uniknąć podwójnej definicji właściwości `Host` w wygenerowanym kodzie.
 
 ### <a name="inheritance-in-a-design-time-text-template"></a>Dziedziczenie w szablonie tekstowym czasu projektowania
 
-Szablon tekstu czasu projektowania to plik, dla którego **Narzędzie niestandardowe** jest ustawione na **TextTemplatingFileGenerator**. Szablon generuje plik wyjściowy kodu lub tekstu, który stanowi część projektu programu Visual Studio. Aby wygenerować plik wyjściowy, szablon najpierw jest tłumaczony na plik kodu programu pośredniego, którego zwykle nie widać. Ten `inherits` atrybut określa klasę bazową dla tego kodu pośredniego.
+Szablon tekstu czasu projektowania to plik, dla którego **Narzędzie niestandardowe** jest ustawione na **TextTemplatingFileGenerator**. Szablon generuje plik wyjściowy kodu lub tekstu, który stanowi część projektu programu Visual Studio. Aby wygenerować plik wyjściowy, szablon najpierw jest tłumaczony na plik kodu programu pośredniego, którego zwykle nie widać. Atrybut `inherits` określa klasę bazową dla tego kodu pośredniego.
 
-Dla szablonu tekstu czasu projektowania można określić dowolną klasę bazową, która jest pochodną <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>. `<#@assembly#>` Użyj dyrektywy do załadowania zestawu lub projektu, który zawiera klasę bazową.
+Dla szablonu tekstu czasu projektowania można określić dowolną klasę bazową, która jest pochodną <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>. Użyj dyrektywy `<#@assembly#>` do załadowania zestawu lub projektu, który zawiera klasę bazową.
 
 Aby uzyskać więcej informacji, zobacz ["dziedziczenie w szablonach tekstowych" w blogu Gareth Nowak](http://go.microsoft.com/fwlink/?LinkId=208373).
 
@@ -245,7 +245,7 @@ Przykład:
 
 Prawidłowe wartości:
 
-`true`wartooć
+`true` (wartość domyślna)
 
 `false`
 
@@ -261,7 +261,7 @@ Przykład:
 
 Prawidłowe wartości:
 
-`public`wartooć
+`public` (wartość domyślna)
 
 `internal`
 

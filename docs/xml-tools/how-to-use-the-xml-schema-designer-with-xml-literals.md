@@ -1,49 +1,49 @@
 ---
-title: 'Instrukcje: Używanie projektanta schematu XML z literałami XML'
+title: 'Instrukcje: korzystanie z projektanta schematu XML z literałami XML'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d11803e7-f81a-41a2-a145-ba494a45cc93
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e92cbdca3ac2c5c366ec054ba79f2e7324986c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ed987a54004004fe8c4fbfba686ae1a35d12bb06
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001820"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72601852"
 ---
-# <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Instrukcje: Używanie projektanta schematu XML z literałami XML
+# <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Instrukcje: korzystanie z projektanta schematu XML z literałami XML
 
-W tym temacie opisano sposób wyświetlania schemat jest skojarzony z danymi XML literału w projekcie Visual Basic.
+W tym temacie opisano sposób wyświetlania schematu skojarzonego z literałem XML w projekcie Visual Basic.
 
-## <a name="create-a-new-visual-basic-project"></a>Utwórz nowy projekt języka Visual Basic
+## <a name="create-a-new-visual-basic-project"></a>Utwórz nowy projekt Visual Basic
 
 1. Otwórz program Visual Studio.
 
-2. Utwórz nowego języka Visual Basic **aplikacja Konsolowa** projektu o nazwie **XMLLiterals**.
+2. Utwórz nowy projekt **aplikacji konsoli** Visual Basic o nazwie **XMLLiterals**.
 
-     Nowy projekt zawiera jeden plik źródłowy języka Visual Basic, *Module1.vb*.
+     Nowy projekt zawiera jeden Visual Basic plik źródłowy, *Module1. vb*.
 
 ## <a name="add-an-existing-xsd-file"></a>Dodaj istniejący plik XSD
 
-1. Otwórz nowy plik tekstowy w Notatniku. Skopiuj przykładowy kod XML schematu z [schemat zamówienia zakupu](../xml-tools/sample-xsd-file-simple-schema.md) a następnie wklej je do pliku.
+1. Otwórz nowy plik tekstowy w Notatniku. Skopiuj przykładowy kod schematu XML z [schematu zamówienia zakupu](../xml-tools/sample-xsd-file-simple-schema.md) i wklej go do pliku.
 
-2. Zapisz plik w lokalizacji o nazwie *PurchaseOrderSchema.xsd*.
+2. Zapisz plik w lokalizacji o nazwie *PurchaseOrderSchema. xsd*.
 
-3. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy nazwę projektu, wybierz **Dodaj**, a następnie wybierz pozycję **istniejący element**. **Elementu AddExisting** pojawi się okno dialogowe. Przejdź do *PurchaseOrderSchema.xsd* plików, wybierz ją, a następnie kliknij **Dodaj**.
+3. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy nazwę projektu, wybierz polecenie **Dodaj**, a następnie wybierz pozycję **istniejący element**. Zostanie wyświetlone okno dialogowe **AddExisting Item** . Przejdź do pliku *PurchaseOrderSchema. xsd* , zaznacz go, a następnie kliknij przycisk **Dodaj**.
 
-     Projekt XMLLiterals zawiera teraz dwa pliki: *Module1.VB* i *PurchaseOrderSchema.xsd*.
+     Projekt XMLLiterals zawiera teraz dwa pliki: *Module1. vb* i *PurchaseOrderSchema. xsd*.
 
 ## <a name="add-code"></a>Dodaj kod
 
-Aby dodać kod języka Visual Basic z literał, XML na podstawie pliku XSD, zawarty w projekcie:
+Aby dodać kod Visual Basic za pomocą literału XML, na podstawie pliku XSD zawartego w projekcie:
 
-1. Zastąp kod w *Module1.vb* pliku następującym kodem:
+1. Zastąp kod w pliku *Module1. vb* następującym kodem:
 
    ```vb
    Imports <xmlns:ns="http://tempuri.org/PurchaseOrderSchema.xsd">
@@ -72,6 +72,6 @@ Aby dodać kod języka Visual Basic z literał, XML na podstawie pliku XSD, zawa
    End Module
    ```
 
-2. Kliknij prawym przyciskiem myszy dowolny węzeł XML w literał XML lub importu przestrzeni nazw XML, a następnie wybierz pozycję **Pokaż w Eksploratorze schematu**.
+2. Kliknij prawym przyciskiem myszy dowolny węzeł XML w literale XML lub Importuj przestrzeń nazw XML i wybierz **Pokaż w Eksploratorze schematu**.
 
-   **Eksploratora schematu XML** jest wyświetlany obok plik w języku Visual Basic, który ma literał XML skojarzony zestaw schematów XML.
+   **Eksplorator schematu XML** jest wyświetlany obok pliku Visual Basic, który ma literał XML skojarzony z zestawem schematu XML.

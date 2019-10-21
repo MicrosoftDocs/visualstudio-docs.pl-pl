@@ -1,47 +1,46 @@
 ---
-title: 'Instrukcje: Tworzenie aplikacji usługi przepływu pracy WCF | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Tworzenie aplikacji usługi przepływu pracy WCF | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: 12d675ac-27d8-4d86-ba16-6f7688f8c841
 caps.latest.revision: 14
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d0c258ea081e95179c507f76413ae2a5fc7d71a5
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 9bf941babd943c6856809a13de847b62745b2056
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65705851"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72605010"
 ---
 # <a name="how-to-create-a-wcf-workflow-service-application"></a>Instrukcje: Tworzenie aplikacji usługi przepływu pracy WCF
-[!INCLUDE[indigo1](../includes/indigo1-md.md)] aplikacje usług przepływu pracy są usług łączności rozproszonych, które przekazywania wiadomości między klientami a same granice procesu. Implementację kontraktu usługi po stronie usługi odbywa się deklaratywne za pośrednictwem działań przepływu pracy w [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] w sposób analogiczny do usług przepływu pracy w starszej wersji w .NET Framework 3.5.  
-  
-### <a name="to-create-a-wcf-workflow-service-application"></a>Do tworzenia aplikacji usługi przepływu pracy WCF  
-  
-1. Rozpocznij [!INCLUDE[vs2010](../includes/vs2010-md.md)].  
-  
-2. Na **pliku** menu wskaż **New**, a następnie wybierz pozycję **projektu...** .  
-  
-     **Nowy projekt** zostanie otwarte okno dialogowe.  
-  
-3. W **zainstalowane szablony** okienku wybierz **WCF** lub **przepływu pracy** albo **Visual C#** lub **języka Visual Basic** grupowania w zależności od języka wybranego.  
-  
-4. W środkowym okienku wybierz **aplikacja usługi przepływu pracy WCF**.  
-  
-5. W **nazwa** wprowadź opisową nazwę projektu ułatwić identyfikowanie.  
-  
-6. W **lokalizacji** wprowadź katalog, w którym chcesz zapisać projekt, lub kliknij przycisk **Przeglądaj** można przejść do niego.  
-  
-7. W **rozwiązania** wybierz albo utworzyć nowe rozwiązanie, a następnie kliknij przycisk **OK**.  
-  
+aplikacje usługi przepływu pracy [!INCLUDE[indigo1](../includes/indigo1-md.md)] są rozproszonymi usługami komunikacyjnymi, które przesyłają komunikaty między klientami i w granicach procesów. Implementacja kontraktu usługi po stronie usługi jest przeprowadzana w sposób deklaratywny przez działania przepływu pracy w [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] w sposób analogiczny do starszych usług przepływu pracy w programie .NET Framework 3,5.
+
+### <a name="to-create-a-wcf-workflow-service-application"></a>Aby utworzyć aplikację usługi przepływu pracy WCF
+
+1. Rozpocznij [!INCLUDE[vs2010](../includes/vs2010-md.md)].
+
+2. W menu **plik** wskaż polecenie **Nowy**, a następnie wybierz pozycję **projekt...** .
+
+     Zostanie otwarte okno dialogowe **Nowy projekt** .
+
+3. W okienku **zainstalowane szablony** wybierz opcję **WCF** lub **przepływ pracy** z grup **wizualizacji C#**  lub **Visual Basic** w zależności od wybranego języka.
+
+4. W środkowym okienku wybierz pozycję **aplikacja usługi przepływu pracy WCF**.
+
+5. W polu **Nazwa** Wprowadź opisową nazwę projektu, aby ułatwić jego identyfikację.
+
+6. W polu **Lokalizacja** wprowadź katalog, w którym chcesz zapisać projekt, lub kliknij przycisk **Przeglądaj** , aby przejść do niego.
+
+7. W polu **rozwiązanie** wybierz opcję utworzenia nowego rozwiązania, a następnie kliknij przycisk **OK**.
+
     > [!NOTE]
-    > Jeśli chcesz dodać aplikację konsoli przepływu pracy do istniejącego rozwiązania, otwórz rozwiązanie w [!INCLUDE[vs2010](../includes/vs2010-md.md)], kliknij prawym przyciskiem myszy rozwiązanie w **Eksploratora rozwiązań**i wybierz **Dodaj**, następnie  **Nowy projekt...** Aby otworzyć **nowy projekt** okno dialogowe. Należy postępować zgodnie z powyższym opisem w tej procedurze.  
-  
-8. Szablon projektu umożliwia utworzenie definicji usługi jako XAML. [!INCLUDE[wfd1](../includes/wfd1-md.md)] Zostanie otwarty widok projektu za pomocą <xref:System.Activities.Statements.Sequence> działania, który zawiera zbiór <xref:System.ServiceModel.Activities.Receive> i <xref:System.ServiceModel.Activities.SendReply> działań.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Instrukcje: Utwórz działanie](https://msdn.microsoft.com/library/c09b1e99-21b5-4d96-9c04-ec31db3f4436)   
- [Tworzenie projektu przepływu pracy](../workflow-designer/creating-a-workflow-project.md)
+    > Jeśli chcesz dodać aplikację konsoli przepływu pracy do istniejącego rozwiązania, Otwórz to rozwiązanie w [!INCLUDE[vs2010](../includes/vs2010-md.md)], kliknij prawym przyciskiem myszy rozwiązanie w **Eksplorator rozwiązań**, a następnie wybierz polecenie **Dodaj**, a następnie **Nowy projekt...** Aby otworzyć okno dialogowe **Nowy projekt** . Postępuj zgodnie z powyższym opisem w tej procedurze.
+
+8. Szablon projektu tworzy definicję usługi jako XAML. @No__t_0 otwiera widok projektu z działaniem <xref:System.Activities.Statements.Sequence>, które zawiera zestaw działań <xref:System.ServiceModel.Activities.Receive> i <xref:System.ServiceModel.Activities.SendReply>.
+
+## <a name="see-also"></a>Zobacz też
+ [Instrukcje: tworzenie działania](https://msdn.microsoft.com/library/c09b1e99-21b5-4d96-9c04-ec31db3f4436) [tworzenia projektu przepływu pracy](../workflow-designer/creating-a-workflow-project.md)

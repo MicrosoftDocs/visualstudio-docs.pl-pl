@@ -1,56 +1,56 @@
 ---
-title: 'Instrukcje: Zmienianie przestrzeni nazw języka specyficznego dla domeny'
+title: 'Instrukcje: zmienianie przestrzeni nazw języka specyficznego dla domeny'
 ms.date: 10/31/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, namespace
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16fec4cf6150fe0711812d9fabe57fc667e36eef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b64a61c02f44db0ce70b758331d0d70f7bb8014d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993504"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653763"
 ---
-# <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>Instrukcje: Zmienianie przestrzeni nazw języka specyficznego dla domeny
+# <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>Instrukcje: zmienianie przestrzeni nazw języka specyficznego dla domeny
 
-Można zmienić przestrzeni nazw języka specyficznego dla domeny. Wprowadź zmiany w **Eksplorator DSL**, we właściwościach projektu Dsl pakietu oraz informacje o zestawie.
+Można zmienić przestrzeń nazw języka specyficznego dla domeny. Wprowadź zmiany w **Eksploratorze DSL**, we właściwościach projektu pakietu DSL i w informacjach o zestawie.
 
-## <a name="to-change-the-namespace-of-a-domain-specific-language"></a>Aby zmienić przestrzeni nazw języka specyficznego dla domeny
+## <a name="to-change-the-namespace-of-a-domain-specific-language"></a>Aby zmienić przestrzeń nazw języka specyficznego dla domeny
 
-1. W **Eksplorator DSL**, wybierz opcję **Dsl** węzła.
+1. W **Eksploratorze DSL**wybierz węzeł **DSL** .
 
-2. W **właściwości** oknie zmiany **Namespace** właściwości.
+2. W oknie **Właściwości** Zmień właściwość **przestrzeń nazw** .
 
-3. Zapisywanie rozwiązania i przekształcania szablonów.
+3. Zapisz rozwiązanie i Przekształć szablony.
 
-4. Na **projektu** menu, wybierz **właściwości Dsl**.
+4. W menu **projekt** wybierz polecenie **Właściwości DSL**.
 
-   Właściwości projektu są wyświetlane.
+   Pojawią się właściwości projektu.
 
-5. Wybierz **aplikacji** kartę.
+5. Wybierz kartę **aplikacja** .
 
-6. Zmiana **domyślny obszar nazw** właściwości na nową nazwę przestrzeni nazw.
+6. Zmień **domyślną właściwość Namespace** na nową nazwę przestrzeni nazw.
 
-7. Jeśli chcesz także zmienić nazwę zestawu, zmień **właściwości nazwy zestawu.**
+7. Jeśli chcesz również zmienić nazwę zestawu, Zmień **Właściwość Nazwa zestawu.**
 
-8. Jeśli zmieniono nazwę zestawu, otwórz DslPackage\Package.tt i zaktualizować ten wiersz:
+8. Jeśli zmieniono nazwę zestawu, Otwórz DslPackage\Package.tt i zaktualizuj ten wiersz:
 
    `string dslAssembly = "YourDSLassembly.Dsl.dll";`
 
-9. Jeśli napisano kodu niestandardowego, upewnij się zmienić odwołania do przestrzeni nazw i klasy w plikach kodu.
+9. Jeśli Zapisano kod niestandardowy, pamiętaj o zmianie przestrzeni nazw i odwołań do klas w plikach kodu.
 
 10. Zresetuj wystąpienie eksperymentalne programu Visual Studio.
 
-    1. Usuń **\Users\\** _{name}_ **\AppData\Local\Microsoft\VisualStudio\\\*Exp**.
+    1. Usuń **\users \\** _{name}_ **\AppData\Local\Microsoft\VisualStudio \\ \*Exp**.
 
-    2. Na Windows **Start** menu, wybierz **wszystkie programy** > **Microsoft Visual Studio 2010 SDK** > **narzędzia**  >  **Zresetuj wystąpienie eksperymentalne**.
+    2. W menu **Start** systemu Windows wybierz kolejno pozycje **wszystkie programy**  > **Microsoft Visual Studio 2010 SDK**  > **Narzędzia**  > **Zresetuj wystąpienie eksperymentalne**.
 
-11. Na **kompilacji** menu, wybierz **Kompiluj rozwiązanie**.
+11. W menu **kompilacja** wybierz polecenie **Kompiluj ponownie rozwiązanie**.
 
 ## <a name="see-also"></a>Zobacz także
 

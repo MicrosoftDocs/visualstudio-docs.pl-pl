@@ -1,23 +1,23 @@
 ---
-title: 'Przykładowy plik XSD: Prosty schemat'
+title: 'Przykładowy plik XSD: prosty schemat'
 ms.date: 11/04/2016
 ms.topic: sample
 ms.assetid: f7e1dde1-b4f6-4371-add4-935b68ec77d7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0228ab75da15099aad3a6f60feca3d71f644b4ff
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 0b6681e47ba33d16cd48f5f34389a5d113fc36ef
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65455090"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651163"
 ---
-# <a name="sample-xsd-file-simple-schema"></a>Przykładowy plik XSD: Prosty schemat
+# <a name="sample-xsd-file-simple-schema"></a>Przykładowy plik XSD: prosty schemat
 
-Następujący plik XSD jest używany w różne przykłady w dokumentacji projektanta schematu XSD. Ten plik jest schemat zamówienia zakupu proste.
+Następujący plik XSD jest używany w różnych przykładach w dokumentacji projektanta schematu XSD. Ten plik jest prostym schematem zamówienia zakupu.
 
 ```xml
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
@@ -47,4 +47,4 @@ Następujący plik XSD jest używany w różne przykłady w dokumentacji projekt
 ```
 
 > [!NOTE]
-> Przykładowe firmy, organizacje, produkty, nazwy domen, adresy e-mail, logo, osoby, miejsca i zdarzenia wymienione w niniejszym dokumencie są fikcyjne. Wszelkie rzeczywistą firmą, organizacji, produktu, nazwy domeny, adres e-mail, logo, osoby, miejsca lub zdarzeń jest przeznaczone i powinno być wnioskowane.
+> Przykładowe firmy, organizacje, produkty, nazwy domen, adresy e-mail, logo, osoby, miejsca i zdarzenia wymienione w tym dokumencie są fikcyjne. Żadne powiązania z rzeczywistymi firmami, organizacjami, produktami, nazwami domen, adresami e-mail, logo, osobami, miejscami lub zdarzeniami nie są zamierzone ani wywnioskowane.

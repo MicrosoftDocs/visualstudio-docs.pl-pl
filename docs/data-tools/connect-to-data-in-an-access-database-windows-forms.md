@@ -7,17 +7,17 @@ helpviewer_keywords:
 - connecting to data, Access databases
 - Access databases, connecting
 ms.assetid: 4159e815-d430-4ad0-a234-e4125fcbef18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2a068414fb157ab71733d6c726b6ec71532629d4
-ms.sourcegitcommit: 8562a337cc9f674c756a4a0b2c7e288ebd61b51e
+ms.openlocfilehash: d24fc2fa1ee34567e0c32859eeccf6af62813a20
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68345412"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648721"
 ---
 # <a name="connect-to-data-in-an-access-database"></a>Łączenie z danymi w bazie danych programu Access
 
@@ -33,7 +33,7 @@ Nawiąż połączenie z bazami danych utworzonymi przy użyciu pakietu Office 36
 
 1. Otwórz projekt aplikacji Windows Forms lub WPF w programie Visual Studio.
 
-2. Aby otworzyć okno **źródła danych** , w menu **Widok** wybierz inne**źródła danych** **systemu Windows** > .
+2. Aby otworzyć okno **źródła danych** , w menu **widok** wybierz **inne  >  Windows** **źródła danych**.
 
    ![Wyświetl inne źródła danych systemu Windows](../data-tools/media/viewdatasources.png)
 
@@ -75,7 +75,7 @@ Połącz się z bazami danych utworzonymi przy użyciu programu Access 2000-2003
 
 1. Otwórz projekt aplikacji Windows Forms lub WPF w programie Visual Studio.
 
-2. W menu **Widok** wybierz inne**źródła danych** **systemu Windows** > .
+2. W menu **Widok** wybierz inne**źródła danych** **systemu Windows**  > .
 
    ![Wyświetl inne źródła danych systemu Windows](../data-tools/media/viewdatasources.png)
 
@@ -113,7 +113,7 @@ Utworzony zestaw danych jest dostępny w oknie **źródła danych** . Teraz moż
 
 - Otwórz źródło danych w **Projektant obiektów DataSet** , aby dodać lub edytować obiekty wchodzące w skład zestawu danych.
 
-- Dodaj logikę walidacji <xref:System.Data.DataTable.ColumnChanging> do <xref:System.Data.DataTable.RowChanging> zdarzenia lub tabel danych w zestawie danych (zobacz [Validate Data in DataSets](../data-tools/validate-data-in-datasets.md)).
+- Dodaj logikę walidacji do <xref:System.Data.DataTable.ColumnChanging> lub <xref:System.Data.DataTable.RowChanging> zdarzenia tabel [danych w zestawie](../data-tools/validate-data-in-datasets.md)danych
 
 ## <a name="see-also"></a>Zobacz także
 

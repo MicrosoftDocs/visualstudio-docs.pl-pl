@@ -6,56 +6,56 @@ helpviewer_keywords:
 - lookup tables
 - lookup tables, creating
 ms.assetid: 0edd5385-c381-4b17-9096-74e2778db9d5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 782f5b422058d1564bde04251a92d95145f6edf3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f7660eba181c0a08ea3736c36e84bc7c9a574e10
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62567279"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72642244"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Tworzenie tabel wyszukiwania w aplikacjach Windows Forms
 
-Termin *tabeli odnośników* dotyczy kontrolek, które są powiązane z dwoma pokrewnymi tabelami danych. Te kontrolki wyszukiwania odnośników pokazują dane z pierwszej tabeli w oparciu o wartości wybrane w drugiej tabeli.
+W *tabeli wyszukiwania* terminów opisano formanty, które są powiązane z dwiema powiązanymi tabelami danych. Te kontrolki wyszukiwania odnośników pokazują dane z pierwszej tabeli w oparciu o wartości wybrane w drugiej tabeli.
 
-Utworzenia tabel odnośników, można przeciągnąć główny węzeł tabeli nadrzędnej (z [okna źródeł danych](add-new-data-sources.md#data-sources-window)) na kontrolkę w formularzu, która jest już powiązana z kolumną w pokrewnej tabeli podrzędnej.
+Tabelę odnośników można utworzyć, przeciągając główny węzeł tabeli nadrzędnej (z [okna źródła danych](add-new-data-sources.md#data-sources-window)) na kontrolkę w formularzu, która jest już powiązana z kolumną w powiązanej tabeli podrzędnej.
 
-Na przykład rozważmy tabelę `Orders` w bazie danych sprzedaży. Każdy rekord w `Orders` tabela zawiera `CustomerID`, wskazujący, który klient złożył zamówienie. `CustomerID` to klucz obcy wskazujący rekord klienta w tabeli `Customers`. W tym scenariuszu jest rozwiniesz `Orders` tabelę **źródeł danych** okna i ustaw węzeł główny **szczegóły**. Następnie ustaw `CustomerID` kolumny na <xref:System.Windows.Forms.ComboBox> (lub innej kontrolki obsługującej powiązanie wyszukiwania odnośników), a następnie przeciągnij `Orders` węzła do formularza. Na koniec, przeciągnij `Customers` węzła na kontrolkę powiązaną z pokrewną kolumną — w tym przypadku <xref:System.Windows.Forms.ComboBox> powiązany z `CustomerID` kolumny.
+Na przykład rozważmy tabelę `Orders` w bazie danych sprzedaży. Każdy rekord w tabeli `Orders` zawiera `CustomerID`, wskazujący, który klient złożył zamówienie. `CustomerID` to klucz obcy wskazujący rekord klienta w tabeli `Customers`. W tym scenariuszu należy rozwinąć tabelę `Orders` w oknie **źródła danych** i ustawić węzeł główny na **szczegóły**. Następnie ustaw kolumnę `CustomerID` tak, aby korzystała z <xref:System.Windows.Forms.ComboBox> (lub innej kontrolki obsługującej powiązanie wyszukiwania), a następnie przeciągnij węzeł `Orders` do formularza. Na koniec przeciągnij węzeł `Customers` do formantu, który jest powiązany z kolumną powiązaną — w tym przypadku <xref:System.Windows.Forms.ComboBox> powiązany z kolumną `CustomerID`.
 
 ## <a name="to-databind-a-lookup-control"></a>Aby powiązać z danymi kontrolkę wyszukiwania odnośników
 
-1. Za pomocą projektu open, otwórz **źródeł danych** okna, wybierając **widoku** > **Windows inne** > **źródeł danych**.
+1. Po otwarciu projektu Otwórz okno **źródła danych** , wybierając opcję **wyświetl**  >  inne  > **źródła danych** **systemu Windows** .
 
     > [!NOTE]
-    > Tabele odnośników wymagają, że dwie pokrewne tabele lub obiekty są dostępne w **źródeł danych** okna. Aby uzyskać więcej informacji, zobacz [relacje w zestawach danych](relationships-in-datasets.md).
+    > Tabele wyszukiwania wymagają, aby w oknie **źródła danych** były dostępne dwie powiązane tabele lub obiekty. Aby uzyskać więcej informacji, zobacz [relacje w zestawach danych](relationships-in-datasets.md).
 
-2. Rozwiń węzły w **źródeł danych** okna, aż zobaczysz tabelę nadrzędną i wszystkie jej kolumny oraz pokrewną tabelę podrzędną i jej wszystkie kolumny.
+2. Rozwiń węzły w oknie **źródła danych** , aż zobaczysz tabelę nadrzędną i jej wszystkie kolumny oraz powiązaną tabelę podrzędną i jej wszystkie kolumny.
 
     > [!NOTE]
     > Węzłem tabeli podrzędnej jest węzeł pokazywany jako rozwijany węzeł podrzędny tabeli nadrzędnej.
 
-3. Zmień upuszczany typ tabeli podrzędnej na **szczegóły** , wybierając **szczegóły** na liście kontrolek w węźle tabeli podrzędnej. Aby uzyskać więcej informacji, zobacz [Ustawianie formantu do utworzenia podczas przeciągania z okna źródeł danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+3. Zmień typ upuszczania tabeli podrzędnej na **szczegóły** , wybierając pozycję **szczegóły** z listy kontrolek w węźle tabeli podrzędnej. Aby uzyskać więcej informacji, zobacz [Ustawianie kontrolki do utworzenia podczas przeciągania z okna źródła danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
-4. Odszukaj węzeł, który łączy dwie tabele ( `CustomerID` węzła w poprzednim przykładzie). Zmień jego upuszczany typ <xref:System.Windows.Forms.ComboBox> , wybierając **ComboBox** na liście kontrolek.
+4. Zlokalizuj węzeł, który wiąże dwie tabele (`CustomerID` węzła w poprzednim przykładzie). Zmień typ upuszczania na <xref:System.Windows.Forms.ComboBox>, wybierając **pole kombi** z listy kontrolek.
 
-5. Przeciągnij główny węzeł tabeli podrzędnej z **źródeł danych** okna do formularza.
+5. Przeciągnij węzeł głównej tabeli podrzędnej z okna **źródła danych** na formularz.
 
-     W formularzu pojawią się kontrolki powiązane z danymi (z etykietami opisowymi) oraz pasek narzędzi (<xref:System.Windows.Forms.BindingNavigator>). A [DataSet](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/create-and-configure-tableadapters.md), <xref:System.Windows.Forms.BindingSource>, i <xref:System.Windows.Forms.BindingNavigator> są wyświetlane w zasobniku składnika.
+     W formularzu pojawią się kontrolki powiązane z danymi (z etykietami opisowymi) oraz pasek narzędzi (<xref:System.Windows.Forms.BindingNavigator>). [Zestaw danych](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/create-and-configure-tableadapters.md), <xref:System.Windows.Forms.BindingSource> i <xref:System.Windows.Forms.BindingNavigator> pojawiają się na pasku składnika.
 
-6. Teraz przeciągnij główny węzeł tabeli nadrzędnej z **źródeł danych** okna bezpośrednio na kontrolkę wyszukiwania odnośników ( <xref:System.Windows.Forms.ComboBox>).
+6. Teraz przeciągnij główny węzeł tabeli nadrzędnej z okna **źródła danych** bezpośrednio do formantu wyszukiwania (<xref:System.Windows.Forms.ComboBox>).
 
-     Powiązania wyszukiwania odnośników są teraz ustanowione. Można znaleźć w poniższej tabeli przedstawiono określone właściwości, które zostały ustawione na formancie.
+     Powiązania wyszukiwania odnośników są teraz ustanowione. Zapoznaj się z poniższą tabelą dotyczącą określonych właściwości, które zostały ustawione w formancie.
 
     |Właściwość|Wyjaśnienie ustawienia|
     |--------------| - |
-    |**DataSource**|Program Visual Studio ustawia tę właściwość <xref:System.Windows.Forms.BindingSource>utworzony dla tabeli przeciągniętej na kontrolkę (w przeciwieństwie do <xref:System.Windows.Forms.BindingSource>, utworzone podczas tworzenia kontrolki).<br /><br /> Jeśli potrzebujesz wprowadzić poprawkę, ustaw tę opcję na <xref:System.Windows.Forms.BindingSource> tabeli zawierającej kolumnę, którą chcesz wyświetlić.|
-    |**DisplayMember**|Jako wartość tej właściwości program Visual Studio ustawia pierwszą kolumnę po kluczu podstawowym zawierającą dane będące ciągiem tekstowym w tabeli, która została przeciągnięta na kontrolkę.<br /><br /> Jeśli potrzebujesz wprowadzić poprawkę, ustaw tę opcję na nazwę kolumny, która ma być wyświetlany.|
-    |**ValueMember**|Jako wartość tej właściwości program Visual Studio ustawia pierwszą kolumnę należącą do klucza podstawowego, a jeśli klucz nie został zdefiniowany, pierwszą kolumnę tabeli.<br /><br /> Jeśli musisz wprowadzić poprawkę, wartość klucza podstawowego w tabeli zawierającej kolumnę, którą chcesz wyświetlić.|
-    |**SelectedValue**|Program Visual Studio ustawia oryginalną kolumnę upuszczoną z tej właściwości **źródeł danych** okna.<br /><br /> Jeśli potrzebujesz wprowadzić poprawkę, ustaw tę opcję na kolumny klucza obcego w pokrewnej tabeli.|
+    |**DataSource**|Program Visual Studio ustawia tę właściwość na <xref:System.Windows.Forms.BindingSource>, która została utworzona dla tabeli przeciąganej do formantu (w przeciwieństwie do <xref:System.Windows.Forms.BindingSource>, utworzonego podczas tworzenia kontrolki).<br /><br /> Jeśli musisz wprowadzić korektę, ustaw tę wartość na <xref:System.Windows.Forms.BindingSource> tabeli z kolumną, która ma być wyświetlana.|
+    |**DisplayMember**|Jako wartość tej właściwości program Visual Studio ustawia pierwszą kolumnę po kluczu podstawowym zawierającą dane będące ciągiem tekstowym w tabeli, która została przeciągnięta na kontrolkę.<br /><br /> Jeśli musisz wprowadzić korektę, ustaw ją na nazwę kolumny, która ma być wyświetlana.|
+    |**ValueMember**|Jako wartość tej właściwości program Visual Studio ustawia pierwszą kolumnę należącą do klucza podstawowego, a jeśli klucz nie został zdefiniowany, pierwszą kolumnę tabeli.<br /><br /> Jeśli musisz wprowadzić korektę, ustaw ją na klucz podstawowy w tabeli z kolumną, która ma zostać wyświetlona.|
+    |**SelectedValue**|Program Visual Studio ustawia tę właściwość na oryginalna kolumna porzucona z okna **źródła danych** .<br /><br /> Jeśli musisz wprowadzić korektę, ustaw ją na kolumnę klucza obcego w powiązanej tabeli.|
 
 ## <a name="see-also"></a>Zobacz także
 

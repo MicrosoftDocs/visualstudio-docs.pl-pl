@@ -9,24 +9,24 @@ helpviewer_keywords:
 - Option Compare statement, setting in the IDE
 - Option Strict statement, setting in the IDE
 ms.assetid: 2465cd9d-18b6-4c4a-b1ea-86dbab23fc79
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7322ee72509a199e3b4168a0b24083fe463e2457
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 64641ebf47e5a5c91b7e20f1ddafe9490649ec9a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925959"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72622388"
 ---
 # <a name="visual-basic-defaults-projects-options-dialog-box"></a>Domyślne ustawienia programu Visual Basic, Projekty, okno dialogowe Opcje
 Określa ustawienia domyślne dla opcji projektu Visual Basic. Po utworzeniu nowego projektu określone instrukcje opcji zostaną dodane do nagłówka projektu w edytorze kodu. Opcje stosują się do wszystkich projektów Visual Basic.
 
 Aby uzyskać dostęp do tego okna dialogowego, w menu **Narzędzia** kliknij pozycję **Opcje**, rozwiń folder **projekty i rozwiązania** , a następnie kliknij pozycję **domyślne ustawienia języka vb**.
 
- **Option Explicit**
+ **Opcja Explicit**
 
 Ustawia wartość domyślną kompilatora, tak aby jawne deklaracje zmiennych są wymagane. Domyślnie **opcja Explicit** jest ustawiona na wartość **włączone**. Aby uzyskać więcej informacji, zobacz [/optionexplicit —](/dotnet/visual-basic/reference/command-line-compiler/optionexplicit).
 
@@ -34,11 +34,11 @@ Ustawia wartość domyślną kompilatora, tak aby jawne deklaracje zmiennych są
 
 Ustawia wartość domyślną kompilatora, tak aby jawne konwersje zawężające są wymagane i późne wiązanie jest niedozwolone. Domyślnie ustawienie **Option Strict** jest **wyłączone**. Aby uzyskać więcej informacji, zobacz [/optionstrict —](/dotnet/visual-basic/reference/command-line-compiler/optionstrict).
 
- **Option Compare**
+ **Opcja Porównaj**
 
 Ustawia domyślny kompilator dla porównań ciągów: binarny (z uwzględnieniem wielkości liter) lub tekst (bez uwzględniania wielkości liter). Domyślnie **opcja Porównaj** jest ustawiona na wartość **binarną**. Aby uzyskać więcej informacji, zobacz [/optioncompare —](/dotnet/visual-basic/reference/command-line-compiler/optioncompare).
 
- **Option Infer**
+ **Wnioskowanie dotyczące opcji**
 
 Ustawia wartość domyślną kompilatora dla wnioskowania o typie lokalnym. Domyślnie **opcja wnioskowanie** jest ustawiona na wartość **włączone** dla nowo utworzonych projektów i **wyłączone** dla zmigrowanych projektów utworzonych we wcześniejszych wersjach Visual Basic. Aby uzyskać więcej informacji, zobacz [/optioninfer —](/dotnet/visual-basic/reference/command-line-compiler/optioninfer).
 

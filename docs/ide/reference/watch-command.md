@@ -8,20 +8,20 @@ helpviewer_keywords:
 - Watch command
 - Debug.Watch command
 ms.assetid: aa02e647-d9f5-4905-a651-52a8df595795
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ac779dc902a331a45b600113a11db5364293f74
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: ccb87fef9ff91c77c926d5bca40a5e5ec08c3720
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925949"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72622025"
 ---
 # <a name="watch-command"></a>Czujka — Polecenie
-Tworzy i otwiera określone wystąpienie **Obejrzyj** okna. Można użyć okna **czujki** do obliczenia wartości zmiennych, wyrażeń i rejestrów, aby edytować te wartości i zapisać wyniki.
+Tworzy i otwiera określone wystąpienie okna **czujka** . Można użyć okna **czujki** do obliczenia wartości zmiennych, wyrażeń i rejestrów, aby edytować te wartości i zapisać wyniki.
 
 ## <a name="syntax"></a>Składnia
 
@@ -32,11 +32,11 @@ Debug.Watch[index]
 ## <a name="arguments"></a>Argumenty
 
 `index`\
-Wymagane. Numer wystąpienia okna Czujka.
+Wymagany. Numer wystąpienia okna Czujka.
 
 ## <a name="remarks"></a>Uwagi
 
-Wartość `index` musi być liczbą całkowitą. Prawidłowe wartości to 1, 2, 3 lub 4.
+@No__t_0 musi być liczbą całkowitą. Prawidłowe wartości to 1, 2, 3 lub 4.
 
 ## <a name="example"></a>Przykład
 

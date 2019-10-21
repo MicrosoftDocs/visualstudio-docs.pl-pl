@@ -6,111 +6,111 @@ f1_keywords:
 - vs.dsltools.dsldesigner.explorerbehavior
 helpviewer_keywords:
 - Domain-Specific Language Tools, Domain-Specific Language Explorer
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65ada4a061fd928a074c9fcdb24fab60a277c457
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 82d9a64721f9d1c4f4db982e3a39c65a4b29f167
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445844"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653979"
 ---
 # <a name="customizing-the-model-explorer"></a>Dostosowywanie Eksploratora modelu
-Możesz zmienić wygląd i zachowanie Eksploratora dla projektanta języka specyficznego dla domeny w następujący sposób:
+Wygląd i zachowanie Eksploratora dla projektanta języka specyficznego dla domeny można zmienić w następujący sposób:
 
-- Zmienianie tytułu okna.
+- Zmień tytuł okna.
 
-- Zmień ikonę na karcie.
+- Zmień ikonę tabulacji.
 
-- Zmiana ikony dla węzłów.
+- Zmień ikony dla węzłów.
 
-- Aby ukryć węzły.
+- Ukryj węzły.
 
-## <a name="changing-the-window-title"></a>Zmienianie tytułu okna
- Aby zmienić tytuł okna Eksploratora wygenerowane, wybierz **zachowanie Eksploratora** w **Eksplorator DSL**, a następnie w polu **właściwości** oknie  **Tytuł** właściwości tytułu ma.
+## <a name="changing-the-window-title"></a>Zmiana tytułu okna
+ Aby zmienić tytuł okna wygenerowanego Eksploratora, wybierz pozycję **zachowanie Eksploratora** w **Eksploratorze DSL**, a następnie w oknie **Właściwości** ustaw właściwość **title** na tytuł, który ma zostać wybrany.
 
 ## <a name="changing-the-tab-icon"></a>Zmiana ikony karty
- Aby zmienić ikony kartę dla Eksploratora, użyj ikony 16 x 16 pikseli w pliku .bmp. Umieść plik ikony w folderze \DslPackage\Resources\, a następnie zmień nazwę pliku, aby **ModelExplorerToolWindowBitmaps.bmp**. Na przykład można zmienić pliku ikony programu Visual Studio setup.ico bmp format i zmień jej nazwę na **DSLLanguageName\DslPackage\Resources\ModelExplorerToolWindowBitmaps.bmp**. Wygenerowanego projektanta będzie ta ikona jest wyświetlana na karcie Eksplorator usługi, gdy jest zadokowany wraz z **Eksploratora rozwiązań**.
+ Aby zmienić ikonę karty dla Eksploratora, użyj ikony 16x16 pikseli w pliku BMP. Umieść plik ikony w folderze \DslPackage\Resources\, a następnie zmień nazwę pliku na **ModelExplorerToolWindowBitmaps. bmp**. Można na przykład zmienić plik ikony instalacji. ico programu Visual Studio na format bmp i zmienić jego nazwę na **DSLLanguageName\DslPackage\Resources\ModelExplorerToolWindowBitmaps.bmp**. Wygenerowany Projektant wyświetli tę ikonę na karcie Eksploratora, gdy zostanie ona zadokowany przy użyciu **Eksplorator rozwiązań**.
 
-## <a name="setting-custom-icons-on-explorer-nodes"></a>Ustawienia niestandardowe ikony na węzłach Explorer
- Węzły w Eksploratorze można dostosować za pomocą ustawienia węzła Eksploratora. Poniższa procedura pokazuje, jak dodać ikonę do węzła.
+## <a name="setting-custom-icons-on-explorer-nodes"></a>Ustawianie ikon niestandardowych w węzłach Eksploratora
+ Węzły w Eksploratorze można dostosować za pomocą ustawień węzła Eksploratora. Poniższa procedura pokazuje, jak dodać ikonę do węzła.
 
 #### <a name="to-add-an-icon-to-an-explorer-node"></a>Aby dodać ikonę do węzła Eksploratora
 
-1. Utwórz [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] rozwiązania za pomocą szablonu rozwiązania przepływu zadań.
+1. Utwórz rozwiązanie [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] przy użyciu szablonu rozwiązania przepływu zadań.
 
-2. Umieść plik .bmp, który zawiera ikonę 16 x 16 pikseli **Dsl\Resources** folder w rozwiązaniu.
+2. Umieść plik BMP, który zawiera ikonę 16x16 pikseli w folderze **Dsl\Resources** w rozwiązaniu.
 
-3. W **Eksplorator DSL**, kliknij prawym przyciskiem myszy **zachowanie Eksploratora** a następnie kliknij przycisk **Dodaj nowe ustawienia węzła Eksploratora**.
+3. W **Eksploratorze DSL**kliknij prawym przyciskiem myszy pozycję **zachowanie Eksploratora** , a następnie kliknij polecenie **Dodaj nowe ustawienia węzła Eksploratora**.
 
-    **ExplorerNodeSettings** pojawia się pod węzłem **niestandardowe ustawienia węzła** węzła.
+    Węzeł **ExplorerNodeSettings** jest wyświetlany w węźle **niestandardowe ustawienia węzła** .
 
-4. Wybierz **ExplorerNodeSettings**, a następnie w polu **właściwości** oknie **klasy** do **aktora**.
+4. Wybierz pozycję **ExplorerNodeSettings**, a następnie w oknie **Właściwości** ustaw pozycję **Klasa** na **aktor**.
 
-5. Ustaw **ikonę do wyświetlenia** ścieżkę pliku ikony.
+5. Ustaw **ikonę, aby wyświetlić** ścieżkę pliku ikony.
 
-6. Transformuj wszystkie szablony, a następnie, skompiluj i uruchom rozwiązanie.
+6. Przekształć wszystkie szablony, a następnie Skompiluj i uruchom rozwiązanie.
 
-7. Otwórz przykładowy diagram w wygenerowanym projektancie.
+7. W wygenerowanym projektancie Otwórz przykładowy diagram.
 
-    Eksplorator powinny być widoczne trzy **aktora** węzły, które mają ikona.
+    Eksplorator powinien pokazać trzy węzły **aktora** , które mają swoją ikonę.
 
 > [!NOTE]
-> Jeśli zostały ustawione ikoną węzła dla każdego elementu wyświetlanego w Eksploratorze wygenerowane, wszystkie węzły w Eksploratorze zostanie wyświetlona ikona. Jeśli nie ustawiono żadnej ikony, węzły, zostanie wyświetlona ikona domyślna.
+> Jeśli ustawiono ikonę węzła dla każdego elementu, który jest wyświetlany w wygenerowanym Eksploratorze, wszystkie węzły Eksploratora będą wyświetlały tę ikonę. Jeśli ikona nie została ustawiona, w węzłach zostanie wyświetlona ikona domyślna.
 
-## <a name="changing-the-name-displayed-on-an-explorer-node"></a>Zmiana nazwy wyświetlane w węźle Explorer
- Możesz zmienić sposób wyświetlania nazwy elementów modelu w Eksploratorze. Poniższa procedura przedstawia sposób wyświetlania nazwy **zadań** która odwołuje się do niej **komentarz** w węźle komentarz.
+## <a name="changing-the-name-displayed-on-an-explorer-node"></a>Zmiana nazwy wyświetlanej w węźle Eksploratora
+ Można zmienić sposób wyświetlania nazw elementów modelu w Eksploratorze. Poniższa procedura pokazuje, jak wyświetlić nazwę **zadania** , do którego odwołuje się **komentarz** w węźle komentarz.
 
-#### <a name="to-display-a-property"></a>Aby wyświetlić właściwości
+#### <a name="to-display-a-property"></a>Aby wyświetlić właściwość
 
-1. Otwórz rozwiązanie, który został utworzony we wcześniejszej procedurze.
+1. Otwórz rozwiązanie, które zostało utworzone we wcześniejszej procedurze.
 
-2. Upewnij się, że **komentarz** odwołuje się do klasy pojedynczej domeny przez ustawienie Liczebność roli o nazwie właściwości **przedmioty** się od 0 do 1. Nazwa właściwości, powinny stać się **podmiotu**, a Nazwa relacji powinna stać się **CommentReferencesSubject**.
+2. Upewnij się, że **komentarz** odwołuje się tylko do pojedynczej klasy domeny, ustawiając liczebność roli z **tematami** nazw właściwości na 0.. 1. Nazwa właściwości powinna być **podmiotem**, a nazwa relacji powinna być **CommentReferencesSubject**.
 
-3. W **Eksplorator DSL**, kliknij prawym przyciskiem myszy **zachowanie Eksploratora** a następnie kliknij przycisk **Dodaj nowe ustawienia węzła Eksploratora**.
+3. W **Eksploratorze DSL**kliknij prawym przyciskiem myszy pozycję **zachowanie Eksploratora** , a następnie kliknij polecenie **Dodaj nowe ustawienia węzła Eksploratora**.
 
-     **ExplorerNodeSettings** pojawia się pod węzłem **niestandardowe ustawienia węzła** węzła.
+     Węzeł **ExplorerNodeSettings** jest wyświetlany w węźle **niestandardowe ustawienia węzła** .
 
-4. Wybierz **ExplorerNodeSettings**, a następnie w polu **właściwości** oknie **klasy** do **komentarz**.
+4. Wybierz pozycję **ExplorerNodeSettings**, a następnie w oknie **Właściwości** **Ustaw wartość** **komentarz**.
 
-5. Kliknij prawym przyciskiem myszy **komentarz** węzłem, a następnie kliknij przycisk **Dodaj nową ścieżkę właściwości**.
+5. Kliknij prawym przyciskiem myszy węzeł **komentarz** , a następnie kliknij polecenie **Dodaj nową ścieżkę właściwości**.
 
-     Pojawi się nowy węzeł o nazwie **właściwość wyświetlana**.
+     Zostanie wyświetlony nowy węzeł o nazwie **wyświetlana właściwość**.
 
-6. Wybierz **właściwość wyświetlana**, a następnie w polu **właściwości** okna, kliknij pole wartości **właściwości ścieżki**. Wybierz **komentarz**, następnie **CommentReferencesSubject**, następnie **FlowElement**. Ścieżka wynikowa powinien przypominać **CommentReferencesSubject.Subject/! Temat**.
+6. Wybierz pozycję **Właściwość wyświetlana**, a następnie w oknie **Właściwości** kliknij pole wartość **ścieżka do właściwości**. Wybierz pozycję **komentarz**, a następnie **CommentReferencesSubject**, a następnie pozycję **FlowElement**. Ścieżka wyników powinna wyglądać podobnie do **CommentReferencesSubject. Subject/! Temat**.
 
-7. W polu wartość **właściwość**, wybierz opcję **nazwa**.
+7. W polu wartość **Właściwości**wybierz pozycję **Nazwa**.
 
-8. Transformuj wszystkie szablony, a następnie Skompiluj i uruchom swoje rozwiązanie.
+8. Przekształć wszystkie szablony, a następnie Skompiluj i uruchom swoje rozwiązanie.
 
-9. Otwórz przykładowy diagram w wygenerowanym projektancie.
+9. W wygenerowanym projektancie Otwórz przykładowy diagram.
 
-10. Rysowanie **łącznika komentarz** między elementem komentarz i **Task1** elementu na diagramie.
+10. Narysuj **Łącznik komentarzy** między elementem komentarza a elementem **Task1** na diagramie.
 
-     Węzła Eksploratora powinien być wyświetlany w komentarzu jako **Task1**.
+     W węźle Eksploratora powinien być wyświetlany komentarz jako **Task1**.
 
 ## <a name="hiding-nodes"></a>Ukrywanie węzłów
- Można ukryć węzeł w Eksploratorze przez dodanie jego ścieżki do **ukrytych węzłów** węźle **Eksplorator DSL**. Poniższa procedura pokazuje, jak ukrywać **komentarz** węzłów.
+ Węzeł w Eksploratorze można ukryć, dodając jego ścieżkę do węzła **węzły ukryte** w **Eksploratorze DSL**. Poniższa procedura pokazuje, jak ukryć węzły **komentarzy** .
 
 #### <a name="to-hide-an-explorer-node"></a>Aby ukryć węzeł Eksploratora
 
-1. Otwórz rozwiązanie, który został utworzony we wcześniejszej procedurze.
+1. Otwórz rozwiązanie, które zostało utworzone we wcześniejszej procedurze.
 
-2. W **Eksplorator DSL**, kliknij prawym przyciskiem myszy **zachowanie Eksploratora** a następnie kliknij przycisk **Dodaj nową ścieżkę domeny**.
+2. W **Eksploratorze DSL**kliknij prawym przyciskiem myszy pozycję **zachowanie Eksploratora** , a następnie kliknij polecenie **Dodaj nową ścieżkę domeny**.
 
-     A **ścieżka domeny** pojawia się pod węzłem **ukrytych węzłów**.
+     Węzeł **ścieżki domeny** jest wyświetlany w obszarze **ukryte węzły**.
 
-3. Wybierz **ścieżka domeny**, a następnie w polu **właściwości** okna, kliknij pole wartości **definicja ścieżki**. Wybierz **FlowGraph**, następnie **FlowGraphHasComments**. Ścieżka wynikowa powinien przypominać **FlowGraphHasComments.Comments**
+3. Wybierz pozycję **ścieżka domeny**, a następnie w oknie **Właściwości** kliknij pole wartość **definicji ścieżki**. Wybierz pozycję **FlowGraph**, a następnie **FlowGraphHasComments**. Ścieżka wyników powinna wyglądać podobnie do **FlowGraphHasComments. Comments**
 
-4. Transformuj wszystkie szablony, a następnie Skompiluj i uruchom swoje rozwiązanie.
+4. Przekształć wszystkie szablony, a następnie Skompiluj i uruchom swoje rozwiązanie.
 
-5. Otwórz przykładowy diagram w wygenerowanym projektancie.
+5. W wygenerowanym projektancie Otwórz przykładowy diagram.
 
-     Eksplorator powinny pokazywać tylko **aktorów** węzeł i nie powinien być wyświetlony **komentarze** węzła.
+     Eksplorator powinien wyświetlać tylko węzeł **aktorzy** i nie powinien wyświetlać węzła **Komentarze** .
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Słownik narzędzi języka specyficznego dla domeny](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [narzędzia języka specyficznego dla domeny słownik](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

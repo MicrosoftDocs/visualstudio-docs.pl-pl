@@ -1,40 +1,40 @@
 ---
-title: 'Projektant przepływu pracy — jak: Używanie projektanta zmiennych'
+title: 'Projektant przepływu pracy — How to: Use the Variable Designer'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
 - System.Activities.Presentation.View.DesignTimeVariable.UI
 ms.assetid: 0318dfb0-bf8f-4f92-9b86-ae4c1b2161ad
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f90cbb58406df2410361bf9409c843b5c35b4331
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 59a0da5ad0345ba0733f52d087b262bdc706cd21
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949050"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650248"
 ---
-# <a name="how-to-use-the-variable-designer"></a>Instrukcje: Używanie projektanta zmiennych
+# <a name="how-to-use-the-variable-designer"></a>Instrukcje: korzystanie z projektanta zmiennych
 
-Projektanta zmiennych służy do tworzenia zmiennych do użytku w scenariuszach powiązanie danych i instrukcji warunkowych. Projektant jest dostępne po kliknięciu **zmienne** przycisku w lewym dolnym rogu obszaru roboczego projektowania. Projektant zawiera listę zmiennych, które są wyświetlane w formie tabelarycznej i mogą być sortowane przez każdy z nagłówków kolumn, z wyjątkiem **domyślne** kolumny. Każda zmienna zawiera nazwę, typ zmiennej, zakresu i wartość domyślną (jeśli istnieje). Nazwa i domyślne wartości są tekst do edycji i typie i zakresie są rozwijane. Zakres jest działania, który został wybrany, gdy wywołano projektanta zmiennych. Jeśli nie można utworzyć zmiennej w zakresie wyboru, zakres będzie domyślnie do najbliższej działania nadrzędnego zaznaczenia, umożliwiający zmiennych, które można utworzyć w swoim zakresie. Aby uzyskać więcej informacji, zobacz [zmienne i argumenty (.NET)](/dotnet/framework/windows-workflow-foundation/variables-and-arguments).
+Projektant zmiennych służy do tworzenia zmiennych do użycia w scenariuszach powiązań danych i instrukcjach warunkowych. Dostęp do projektanta można uzyskać, klikając przycisk **zmienne** w lewym dolnym rogu kanwy projektowania. Projektant zawiera listę zmiennych, które są wyświetlane w formie tabelarycznej i mogą być posortowane według poszczególnych nagłówków kolumn, z wyjątkiem kolumny **domyślnej** . Każda zmienna zawiera nazwę, typ zmiennej, zakres i wartość domyślną (jeśli istnieje). Nazwa i wartość domyślna są edytowalnymi polami tekstowymi, a typ i zakres są rozwijane. Zakres to działanie, które zostało wybrane podczas wywoływania projektanta zmiennych. Jeśli zmienna nie może zostać utworzona w ramach zakresu zaznaczenia, zakres domyślnie będzie najbliższym działaniem nadrzędnym zaznaczenia, które pozwala na tworzenie zmiennych w swoim zakresie. Aby uzyskać więcej informacji, zobacz [zmienne i argumenty (.NET)](/dotnet/framework/windows-workflow-foundation/variables-and-arguments).
 
- Kolejność sortowania nie została zastosowana, dopóki użytkownik jawnie używa sortowania formantów, zostanie zamknięty i ponownie otwiera projektanta zmiennych lub tworzy innej zmiennej.
+ Kolejność sortowania nie zostanie zastosowana, dopóki użytkownik jawnie nie użyje kontrolki sortowania, zamknie i ponownie otworzy projektanta zmiennych lub utworzy kolejną zmienną.
 
 ## <a name="to-create-a-new-variable"></a>Aby utworzyć nową zmienną
 
-1. Otwórz rozwiązanie, przepływ pracy lub działania w programie Visual Studio.
+1. Otwórz rozwiązanie przepływu pracy lub działania w programie Visual Studio.
 
-2. W obszarze roboczym projektu wybierz działanie w przepływie pracy.
+2. Na kanwie projektowania wybierz działanie w przepływie pracy.
 
-3. Otwórz projektanta zmiennych, klikając pozycję **zmienne** przycisku w lewym dolnym rogu obszaru roboczego projektowania. Pojawi się projektanta zmiennych.
+3. Otwórz projektanta zmiennych, klikając przycisk **zmienne** w lewym dolnym rogu kanwy projektowania. Zostanie wyświetlony Projektant zmiennych.
 
-4. Kliknij pusty wiersz etykietą **Tworzenie zmiennej**. Spowoduje to dodanie nowego wiersza przy użyciu nowej zmiennej, używając następujących wartości domyślne: variablex dla **nazwa** gdzie x jest liczbą całkowitą o początkowej wartości 1, który jest automatycznie zwiększany w celu tworzenia unikatowych nazw zmiennych,  **Ciąg** dla **typ zmiennej**, i **sekwencji** dla **zakres**. Wartość nie jest dodawany do **domyślne**. Wartości te można zmienić w dowolnym momencie podczas procesu projektowania przepływu pracy.
+4. Kliknij pusty wiersz z etykietą **Utwórz zmienną**. Spowoduje to dodanie nowego wiersza z nową zmienną przy użyciu następujących wartości domyślnych: variablex dla **nazwy** , gdzie x jest liczbą całkowitą z początkową wartością 1, która jest automatycznie zwiększana w celu utworzenia unikatowych nazw zmiennych, **ciągu** dla **zmiennej Typ**i **sekwencja** dla **zakresu**. Żadna wartość nie jest dodawana **Domyślnie**. Te wartości można zmienić w dowolnym momencie podczas procesu projektowania przepływu pracy.
 
     > [!NOTE]
-    > Aby usunąć zmienną, wybierz zmienną, klikając go, a następnie naciśnij klawisz **Usuń** klucza.
+    > Aby usunąć zmienną, wybierz ją, klikając ją, a następnie naciśnij klawisz **delete** .
 
 ## <a name="see-also"></a>Zobacz także
 

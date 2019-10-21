@@ -6,39 +6,39 @@ f1_keywords:
 - InvokeDelegate Designer
 - System.Activities.Statements.InvokeDelegate.UI
 ms.assetid: 289a7498-5127-453f-beb5-05f05b80d26f
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 511d73ea2992887f31bc8750cc9ba32934bddd91
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+author: jillre
+ms.openlocfilehash: 5227d96e3fad03dd3e3309523a6d2c68a1abdc11
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62537091"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650178"
 ---
 # <a name="invokedelegate"></a>InvokeDelegate
 
-**InvokeDelegate** projektanta jest używany do tworzenia i konfigurowania <xref:System.Activities.Statements.InvokeDelegate> działania.
+Projektant **InvokeDelegate** służy do tworzenia i konfigurowania działania <xref:System.Activities.Statements.InvokeDelegate>.
 
 ## <a name="the-invokedelegate-activity"></a>Działanie InvokeDelegate
 
-<xref:System.Activities.Statements.InvokeDelegate> Wywołuje Delegat publiczny.
+@No__t_0 wywołuje delegata publicznego.
 
-### <a name="use-the-invokedelegate-activity-designer"></a>Użyj InvokeDelegate Projektant działań
+### <a name="use-the-invokedelegate-activity-designer"></a>Korzystanie z projektanta działań InvokeDelegate
 
-Dostęp do **InvokeDelegate** projektanta działań w **podstawowych** kategorii **przybornika**. **InvokeDelegate** projektanta działań mogą być przeciągnięte z **przybornika** i porzucić do powierzchni projektanta przepływów pracy, gdzie odkąd działań są zazwyczaj umieszczane, takie jak wewnątrz <xref:System.Activities.Statements.Sequence>. Projektant działań porzucenie tworzy <xref:System.Activities.Statements.InvokeDelegate> działanie przy użyciu domyślnego <xref:System.Activities.Activity.DisplayName%2A> z InvokeDelegate. <xref:System.Activities.Activity.DisplayName%2A> Mogą być edytowane w nagłówku **InvokeDelegate** projektanta działań lub **DisplayName** pola siatki właściwości.
+Dostęp do projektanta działań **InvokeDelegate** w kategorii elementy **pierwotne** w **przyborniku**. Projektanta działań **InvokeDelegate** można przeciągnąć z **przybornika** i porzucić na Projektant przepływu pracyą powierzchnię, w której są zwykle umieszczane działania, takie jak wewnątrz <xref:System.Activities.Statements.Sequence>. Porzucenie projektanta działań powoduje utworzenie działania <xref:System.Activities.Statements.InvokeDelegate> przy użyciu domyślnego <xref:System.Activities.Activity.DisplayName%2A> InvokeDelegate. @No__t_0 można edytować w nagłówku projektanta działań **InvokeDelegate** lub w polu **DisplayName** siatki właściwości.
 
 ### <a name="the-invokedelegate-properties"></a>Właściwości InvokeDelegate
 
-W poniższej tabeli przedstawiono <xref:System.Activities.Statements.InvokeDelegate> właściwości i w tym artykule opisano, jak są używane w projektancie. Te właściwości można edytować w siatce właściwości, a niektóre z nich mogą być edytowane na powierzchni projektanta przepływów pracy.
+W poniższej tabeli przedstawiono właściwości <xref:System.Activities.Statements.InvokeDelegate> i opisano sposób ich używania w projektancie. Te właściwości można edytować w siatce właściwości, a niektóre z nich można edytować na Projektant przepływu pracy powierzchni.
 
 |Nazwa właściwości|Wymagane|Użycie|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Przyjazna nazwa <xref:System.Activities.Statements.InvokeDelegate> działania. Wartość domyślna to InvokeDelegate.<br /><br /> Mimo że <xref:System.Activities.Activity.DisplayName%2A> nie jest ściśle wymagane, zaleca się go użyć.|
-|<xref:System.Activities.Statements.InvokeDelegate.Delegate%2A>|Prawda|Nazwa <xref:System.Activities.ActivityDelegate> wywoływana, gdy działanie wykonuje. Ta właściwość może być edytowany na powierzchni projektanta i jest wymagana.|
-|<xref:System.Activities.Statements.InvokeDelegate.DelegateArguments%2A>|False|Kolekcja argument wywoływany delegat. Klucze są nazwy obiektów parametru na <xref:System.Activities.ActivityDelegate>, a ich wartości są argumenty, których wyrażenia są obliczane i przypisane do odpowiednich obiektów parametru. Aby wyświetlić **DelegateArguments** okna dialogowego, w którym można ustawić tę właściwość, kliknij przycisk wielokropka w **DelegateArguments** pola siatki właściwości. Kliknij przycisk **Utwórz Argument** pola w celu dodania argumenty.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Przyjazna nazwa działania <xref:System.Activities.Statements.InvokeDelegate>. Wartość domyślna to InvokeDelegate.<br /><br /> Mimo że <xref:System.Activities.Activity.DisplayName%2A> nie jest ściśle wymagane, najlepiej użyć jednej z nich.|
+|<xref:System.Activities.Statements.InvokeDelegate.Delegate%2A>|Oznacza|Nazwa <xref:System.Activities.ActivityDelegate>, która ma być wywoływana, gdy działanie jest wykonywane. Tę właściwość można edytować na powierzchni projektanta i jest obowiązkowe.|
+|<xref:System.Activities.Statements.InvokeDelegate.DelegateArguments%2A>|False|Kolekcja argumentów wywołanego delegata. Klucze są nazwami obiektów parametrów w <xref:System.Activities.ActivityDelegate>, a wartości to argumenty, których wyrażenia są oceniane i przypisywane do odpowiednich obiektów parametrów. Aby wyświetlić okno dialogowe **DelegateArguments** , w którym można ustawić tę właściwość, kliknij przycisk wielokropka w polu **DelegateArguments** siatki właściwości. Kliknij pole **Utwórz argument** , aby dodać argumenty.|
 
 ## <a name="see-also"></a>Zobacz także
 

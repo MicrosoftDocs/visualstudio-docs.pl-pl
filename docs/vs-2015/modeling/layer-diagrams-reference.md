@@ -1,5 +1,5 @@
 ---
-title: 'Diagramy warstw: Dokumentacja | Dokumentacja firmy Microsoft'
+title: 'Diagramy warstw: Informacje ogólne | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -19,80 +19,80 @@ helpviewer_keywords:
 - constraints, architectural
 ms.assetid: f26c986c-1e79-420e-b29a-a283e6d8a71d
 caps.latest.revision: 35
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d281b0ddb15a2acc455acd037c088c133c74c1f1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a8a0654936ac102891981ecbee43430172487628
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440985"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72646123"
 ---
-# <a name="layer-diagrams-reference"></a>Diagramy warstw: Tematy pomocy
+# <a name="layer-diagrams-reference"></a>Diagramy warstw: Odwołanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W programie Visual Studio, można użyć *diagramu warstwowego* aby zwizualizować logiczną architekturę wysokiego systemu. Diagram warstwy organizuje artefaktów fizycznych w systemie w logiczne, abstrakcyjne grupy o nazwie *warstwy*. Te warstwy opisania głównych zadań wykonywanych przez te artefakty pełnią lub główne składniki systemu. Każda warstwa może również zawierać zagnieżdżone warstwy opisujące bardziej szczegółowe zadania.  
-  
- Aby zobaczyć, które wersje programu Visual Studio obsługuje tę funkcję, zobacz [obsługiwana wersja dla narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
-  
- Można określić zamierzone lub istniejące zależności między warstwami. Te zależności, które są reprezentowane jako strzałki, wskazują, które warstwy mogą używać lub obecnie używają funkcje reprezentowane przez inne warstwy. Organizacja systemu na warstwy, które opisują różne role i funkcje, diagram warstwowy może ułatwić ułatwiają zrozumienie, ponowne użycie i utrzymywać kod.  
-  
- Użyj diagramu warstwowego, które ułatwiają wykonywanie następujących zadań:  
-  
-- Komunikować się z istniejącą lub zamierzonego logiczną architekturę systemu.  
-  
-- Odkryj konfliktów między istniejący kod i planowaną architekturę.  
-  
-- Wizualizacja wpływu zmian na planowaną architekturę podczas refaktoryzacji, zaktualizować lub ewolucji systemu.  
-  
-- Wzmocnienie planowaną architekturę podczas tworzenia i konserwacji kodu, umieszczając Weryfikacja przy użyciu zaewidencjonowania i operacji kompilacji.  
-  
-  W tym temacie opisano elementy, które można użyć na diagramie warstwy. Aby uzyskać szczegółowe informacje o sposobie tworzenia i narysuj diagramy warstwowe, zobacz [diagramy warstw: Wytyczne dotyczące](../modeling/layer-diagrams-guidelines.md). Aby uzyskać więcej informacji na temat wzorców warstwowe, odwiedź stronę [lokacji wzorców i praktyk](http://go.microsoft.com/fwlink/?LinkId=145794).  
-  
-## <a name="reading-layer-diagrams"></a>Odczytywanie diagramów warstw  
- ![Elementy na diagramach warstwy](../modeling/media/uml-layerrefreading.png "UML_LayerRefReading")  
-  
- W poniższej tabeli opisano elementy, które można użyć na diagramie warstwy.  
-  
-|**Kształt**|**Element**|**Opis**|  
-|---------------|-----------------|---------------------|  
-|1|**Warstwa**|Grupy logicznej artefaktów fizycznych w systemie. Te artefakty mogą być przestrzenie nazw, projekty, klasy, metody i tak dalej.<br /><br /> Aby zobaczyć artefakty, które są połączone z warstwą, otwórz menu skrótów dla warstwy, a następnie wybierz **Wyświetl łącza** otworzyć **Eksplorator warstw**.<br /><br /> Aby uzyskać więcej informacji, zobacz [Eksplorator warstw](#Explorer).<br /><br /> -   **Zabronione zależności Namespace** — Określa, że artefakty skojarzone z tą warstwą nie może zależeć od określonych przestrzeni nazw.<br />-   **Zabronione przestrzenie nazw** — Określa, że artefakty skojarzone z tą warstwą nie mogą należeć do określonych przestrzeni nazw.<br />-   **Wymagane przestrzenie nazw** — Określa, że artefakty skojarzone z tą warstwą muszą należeć do jednej z określonych przestrzeni nazw.|  
-|2|**Zależności**|Wskazuje, że jedna warstwę może korzystać z funkcji w innej warstwie, ale nie odwrotnie.<br /><br /> -   **Kierunek** -Określa kierunek zależności.|  
-|3|**Zależność dwukierunkowa**|Wskazuje, że jedna warstwę może korzystać z funkcji w innej warstwie i odwrotnie.<br /><br /> -   **Kierunek** -Określa kierunek zależności.|  
-|4|**Komentarz**|Służy do dodawania notatek do diagramu lub elementy na diagramie.|  
-|5|**Link komentarza**|Usługa umożliwia łączenie komentarze do elementów na diagramie.|  
-  
-## <a name="Explorer"></a> Eksplorator warstw  
- Możesz połączyć każdą warstwę artefakty w rozwiązaniu, takich jak projekty, klasy, przestrzeni nazw, pliki projektu i innymi częściami oprogramowania. Liczba na warstwie pokazuje liczbę artefaktów, które są połączone z warstwą. Jednak podczas odczytywania liczbę artefaktów na warstwie, pamiętaj o następujących kwestiach:  
-  
-- Jeśli warstwa jest połączona z artefaktem zawierającym inne artefakty, ale warstwy nie łączy się bezpośrednio z innymi artefaktami, wówczas liczba uwzględnia tylko połączony artefakt. Jednak inne artefakty są uwzględniane w analizie podczas walidacji warstwy.  
-  
-   Na przykład, jeżeli warstwa jest połączona z pojedynczą przestrzenią nazw, liczba połączonych artefaktów wynosi 1, nawet jeśli przestrzeń nazw zawiera klasy. Jeśli warstwa zawiera także łącza do każdej klasy w przestrzeni nazw, liczba będzie uwzględniać połączone klasy.  
-  
-- Jeśli warstwa zawiera inne warstwy, które są połączone z artefaktami, warstwa kontenerów jest także połączona z tymi artefaktami, mimo że liczba na warstwie kontenerów nie uwzględnia tych artefaktów.  
-  
-  Aby uzyskać więcej informacji na temat łączenia warstwami i artefaktami zobacz:  
-  
-- [Diagramy warstw: wskazówki](../modeling/layer-diagrams-guidelines.md)  
-  
-- [Tworzenie diagramów warstw z kodu](../modeling/create-layer-diagrams-from-your-code.md)  
-  
-#### <a name="to-examine-the-linked-artifacts"></a>Aby zbadać połączonych artefaktów  
-  
-- Na diagramie warstwowym Otwórz menu skrótów dla jednej lub kilku warstw, a następnie wybierz **Wyświetl łącza**.  
-  
-     **Eksplorator warstw** otwiera się i pokazuje artefaktów, które są połączone z wybranej warstwy. **Eksplorator warstw** zawiera kolumnę, który pokazuje poszczególne właściwości łącza artefaktu.  
-  
+W programie Visual Studio można użyć *diagramu warstwowego* w celu wizualizowania logicznej architektury systemu. Diagram warstwowy organizuje fizyczne artefakty w systemie jako logiczne, abstrakcyjne grupy o nazwie *warstwy*. Te warstwy opisują najważniejsze zadania wykonywane przez artefakty lub główne składniki systemu. Każda warstwa może również zawierać zagnieżdżone warstwy, które opisują bardziej szczegółowe zadania.
+
+ Aby sprawdzić, które wersje programu Visual Studio obsługują tę funkcję, zobacz [Obsługa wersji dla narzędzi architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+
+ Można określić zamierzone lub istniejące zależności między warstwami. Te zależności, które są reprezentowane jako strzałki, wskazują, które warstwy mogą używać lub obecnie używają funkcji reprezentowanych przez inne warstwy. Organizując system do warstw, które opisują różne role i funkcje, diagram warstwowy może ułatwić zrozumienie, ponowne użycie i konserwację kodu.
+
+ Użyj diagramu warstwowego, aby ułatwić wykonywanie następujących zadań:
+
+- Przekazanie istniejącej lub zamierzonej logicznej architektury systemu.
+
+- Odkryj konflikty między istniejącym kodem a zamierzoną architekturą.
+
+- Wizualizuj wpływ zmian w zamierzonej architekturze podczas refaktoryzacji, aktualizowania lub rozwijania systemu.
+
+- Zapoznaj się z zamierzoną architekturą podczas opracowywania i konserwowania kodu przez uwzględnienie walidacji operacji ewidencjonowania i kompilowania.
+
+  W tym temacie opisano elementy, których można użyć na diagramie warstwowym. Aby uzyskać szczegółowe informacje na temat tworzenia i rysowania diagramów warstwowych, zobacz [diagramy warstwowe: wytyczne](../modeling/layer-diagrams-guidelines.md). Aby uzyskać więcej informacji na temat wzorców warstwowych, odwiedź [witrynę wzorców & Practices](http://go.microsoft.com/fwlink/?LinkId=145794).
+
+## <a name="reading-layer-diagrams"></a>Odczytywanie diagramów warstwy
+ ![Elementy na diagramach warstw](../modeling/media/uml-layerrefreading.png "UML_LayerRefReading")
+
+ W poniższej tabeli opisano elementy, których można użyć na diagramie warstwowym.
+
+|**Przekształca**|**Element**|**Opis**|
+|---------------|-----------------|---------------------|
+|1|**Warstwy**|Logiczna Grupa artefaktów fizycznych w systemie. Te artefakty mogą być przestrzeniami nazw, projektami, klasami, metodami i tak dalej.<br /><br /> Aby wyświetlić artefakty, które są połączone z warstwą, otwórz menu skrótów dla warstwy, a następnie wybierz polecenie **Wyświetl linki** , aby otworzyć **Eksploratora warstw**.<br /><br /> Aby uzyskać więcej informacji, zobacz [Eksplorator warstw](#Explorer).<br /><br /> -   **zabronionych zależności przestrzeni nazw** — określa, że artefakty skojarzone z tą warstwą nie mogą zależeć od określonych przestrzeni nazw.<br />-   **zabronionych przestrzenie nazw** — określa, że artefakty skojarzone z tą warstwą nie mogą należeć do określonych przestrzeni nazw.<br />-   **wymagane przestrzenie nazw** — określa, że artefakty skojarzone z tą warstwą muszą należeć do jednej z określonych przestrzeni nazw.|
+|2|**Zależności**|Wskazuje, że jedna warstwa może korzystać z funkcjonalności w innej warstwie, ale nie odwrotnie.<br /><br /> **kierunek** -    — określa kierunek zależności.|
+|3|**Zależność dwukierunkowa**|Wskazuje, że jedna warstwa może korzystać z funkcjonalności w innej warstwie i na odwrót.<br /><br /> **kierunek** -    — określa kierunek zależności.|
+|4|**Komentarz**|Służy do dodawania ogólnych notatek do diagramu lub elementów na diagramie.|
+|5|**Link komentarza**|Służy do łączenia komentarzy do elementów na diagramie.|
+
+## <a name="Explorer"></a>Eksplorator warstw
+ Możesz połączyć każdą warstwę z artefaktami w rozwiązaniu, takich jak projekty, klasy, przestrzenie nazw, pliki projektu i inne części oprogramowania. Liczba na warstwie pokazuje liczbę artefaktów, które są połączone z warstwą. Jednak podczas odczytywania liczby artefaktów na warstwie należy pamiętać o następujących kwestiach:
+
+- Jeśli warstwa jest połączona z artefaktem zawierającym inne artefakty, ale warstwy nie łączy się bezpośrednio z innymi artefaktami, wówczas liczba uwzględnia tylko połączony artefakt. Jednak inne artefakty są uwzględniane w analizie podczas walidacji warstwy.
+
+   Na przykład, jeżeli warstwa jest połączona z pojedynczą przestrzenią nazw, liczba połączonych artefaktów wynosi 1, nawet jeśli przestrzeń nazw zawiera klasy. Jeśli warstwa zawiera także łącza do każdej klasy w przestrzeni nazw, liczba będzie uwzględniać połączone klasy.
+
+- Jeśli warstwa zawiera inne warstwy, które są połączone z artefaktami, warstwa kontenerów jest także połączona z tymi artefaktami, mimo że liczba na warstwie kontenerów nie uwzględnia tych artefaktów.
+
+  Aby uzyskać więcej informacji na temat łączenia warstw i artefaktów, zobacz:
+
+- [Diagramy warstw: wskazówki](../modeling/layer-diagrams-guidelines.md)
+
+- [Tworzenie diagramów warstw z kodu](../modeling/create-layer-diagrams-from-your-code.md)
+
+#### <a name="to-examine-the-linked-artifacts"></a>Aby przejrzeć połączone artefakty
+
+- Na diagramie warstwowym Otwórz menu skrótów dla jednej lub wielu warstw, a następnie wybierz polecenie **Wyświetl linki**.
+
+     **Eksplorator warstwy** otwiera i pokazuje artefakty, które są połączone z wybranymi warstwami. **Eksplorator warstw** zawiera kolumnę, która zawiera wszystkie właściwości linków artefaktów.
+
     > [!NOTE]
-    > Jeśli nie widzisz wszystkie te właściwości, rozwiń **Eksplorator warstw** okna.  
-  
-    |**Kolumna w Eksploratorze warstw**|**Opis**|  
-    |----------------------------------|---------------------|  
-    |**Kategorie**|Rodzaj artefaktu, takie jak klasy, przestrzeni nazw, plik źródłowy i tak dalej|  
-    |**Warstwa**|Warstwy, który stanowi łącze do artefaktu|  
-    |**Obsługuje walidację**|Jeśli **True**, a następnie proces sprawdzania poprawności warstwy można sprawdzić, czy projekt jest zgodny ze zależności do lub z tego elementu.<br /><br /> Jeśli **False**, a następnie łącze nie uczestniczy w procesie walidacji warstwy.<br /><br /> Aby uzyskać więcej informacji, zobacz [diagramy warstw: Wytyczne dotyczące](../modeling/layer-diagrams-guidelines.md).|  
-    |**Identyfikator**|Odwołanie do połączonych artefaktów|  
-  
-## <a name="see-also"></a>Zobacz też  
+    > Jeśli nie są widoczne wszystkie te właściwości, rozwiń okno **Eksplorator warstwy** .
+
+    |**Kolumna w Eksploratorze warstwy**|**Opis**|
+    |----------------------------------|---------------------|
+    |**Rodzaj**|Rodzaj artefaktu, taki jak Klasa, przestrzeń nazw, plik źródłowy itd.|
+    |**Warstwy**|Warstwa, która łączy się z artefaktem|
+    |**Obsługuje walidację**|W przypadku **wartości true**proces walidacji warstwy może sprawdzić, czy projekt jest zgodny z zależnościami lub z tego elementu.<br /><br /> W przypadku **wartości false**link nie uczestniczy w procesie walidacji warstwy.<br /><br /> Aby uzyskać więcej informacji, zobacz [diagramy warstwowe: wytyczne](../modeling/layer-diagrams-guidelines.md).|
+    |**Identyfikatora**|Odwołanie do połączonego artefaktu|
+
+## <a name="see-also"></a>Zobacz też
  [Tworzenie modeli aplikacji](../modeling/create-models-for-your-app.md)

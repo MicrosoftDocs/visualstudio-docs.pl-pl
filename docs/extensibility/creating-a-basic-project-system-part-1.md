@@ -1,5 +1,5 @@
 ---
-title: Tworzenie systemu podstawowego projektu, część 1 | Dokumentacja firmy Microsoft
+title: Tworzenie systemu podstawowego projektu, część 1 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,75 +12,75 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 19c73e47e8c07ebcf7c1124e6e59d80f76101458
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 73bacf2c5d1650da91093c92c67e6b67bbbc73a5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341657"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72633502"
 ---
-# <a name="create-a-basic-project-system-part-1"></a>Tworzenie systemu podstawowego projektu, część 1
-W programie Visual Studio projekty są kontenerami, używanych przez deweloperów do organizowania plików kodu źródłowego i inne zasoby. Projekty są traktowane jako elementy podrzędne rozwiązań w **Eksploratora rozwiązań**. Projekty umożliwiają organizowanie, tworzenie, debugowanie i wdrażanie kodu źródłowego i utworzyć odwołania do usług sieci Web, baz danych i innych zasobów.
+# <a name="create-a-basic-project-system-part-1"></a>Tworzenie podstawowego systemu projektu, część 1
+W programie Visual Studio projekty są kontenerami używanymi przez deweloperów do organizowania plików kodu źródłowego i innych zasobów. Projekty są wyświetlane jako elementy podrzędne rozwiązań w **Eksplorator rozwiązań**. Projekty pozwalają organizować, kompilować, debugować i wdrażać kod źródłowy oraz tworzyć odwołania do usług sieci Web, baz danych i innych zasobów.
 
- Projekty są zdefiniowane w plikach projektu, na przykład *.csproj* plik projektu języka Visual C#. Można utworzyć swój własny typ projektu, który ma własne rozszerzenia nazw plików projektu. Aby uzyskać więcej informacji na temat typów projektów, zobacz [typów projektów](../extensibility/internals/project-types.md).
-
-> [!NOTE]
-> Jeśli zachodzi potrzeba Rozszerzanie programu Visual Studio przy użyciu typu niestandardowego projektu, zdecydowanie zalecamy korzystanie z [systemu projektu programu Visual Studio](https://github.com/Microsoft/VSProjectSystem) (VSPS) który ma kilka zalet w stosunku do tworzenia projektu systemu od zera:
->
-> - Łatwiejsze dołączanie.  Nawet systemu podstawowego projektu wymaga dziesiątki tysięcy wierszy kodu.  Wykorzystując VSPS zmniejsza koszty dołączania do kilku kliknięć, zanim można przystąpić do go dostosować do swoich potrzeb.
-> - Łatwiejsze konserwacji.  Dzięki wykorzystaniu VSPS, wystarczy do obsługi własnych scenariuszy.  My zajmujemy utrzymania wszystkich infrastruktury systemu projektu.
->
->   Jeśli potrzebujesz do wersji docelowej programu Visual Studio starszych niż program Visual Studio 2013, nie można wykorzystać VSPS w rozszerzeniu Visual Studio.  Jeśli tak jest rzeczywiście, ten przewodnik jest dobrym miejscem, aby rozpocząć pracę.
-
- W tym instruktażu dowiesz się, jak utworzyć typ projektu, który ma rozszerzenie nazwy pliku projektu *.myproj*. W tym przewodniku pożycza z istniejącego systemu projektów języka Visual C#.
+ Projekty są zdefiniowane w plikach projektu, na przykład plik *. csproj* dla projektu wizualnego C# . Można utworzyć własny typ projektu, który ma własne rozszerzenie nazwy pliku projektu. Aby uzyskać więcej informacji na temat typów projektów, zobacz [typy projektów](../extensibility/internals/project-types.md).
 
 > [!NOTE]
-> Aby uzyskać więcej przykładów projektów rozszerzeń, zobacz [przykłady VSSDK](https://aka.ms/vs2015sdksamples).
+> Jeśli musisz rozbudować program Visual Studio z niestandardowym typem projektu, zdecydowanie zalecamy użycie [systemu projektu programu Visual Studio](https://github.com/Microsoft/VSProjectSystem) (vsps), który ma wiele zalet w porównaniu do kompilowania systemu projektu od podstaw:
+>
+> - Łatwiejsze dołączanie.  Nawet podstawowy system projektu wymaga dziesiątek tysięcy wierszy kodu.  Korzystanie z VSPS zmniejsza koszt dołączania do kilku kliknięć, zanim wszystko będzie gotowe do dostosowania go do Twoich potrzeb.
+> - Łatwiejsza konserwacja.  Korzystając z VSPS, wystarczy zachować własne scenariusze.  Obsługujemy całą infrastrukturę systemu projektu.
+>
+>   Jeśli chcesz docelować wersje programu Visual Studio starsze niż Visual Studio 2013, nie będziesz w stanie korzystać z VSPS w rozszerzeniu programu Visual Studio.  W takim przypadku ten przewodnik jest dobrym miejscem, aby rozpocząć pracę.
 
- Ten przewodnik omawia sposób wykonywania tych zadań:
+ W tym instruktażu pokazano, jak utworzyć typ projektu, który ma rozszerzenie nazwy pliku projektu *. proj*. Ten Instruktaż zażyczy sobie z istniejącego C# systemu Visual Project.
 
-- Tworzenie typu podstawowego projektu.
+> [!NOTE]
+> Aby uzyskać więcej przykładów projektów rozszerzeń, zobacz [VSSDK Samples](https://aka.ms/vs2015sdksamples).
 
-- Utwórz szablon podstawowy projekt.
+ W tym instruktażu przedstawiono sposób wykonywania następujących zadań:
 
-- Szablon projektu należy zarejestrować w usłudze Visual Studio.
+- Utwórz podstawowy typ projektu.
 
-- Utwórz wystąpienie projektu, otwierając **nowy projekt** okno dialogowe, a następnie za pomocą szablonu.
+- Utwórz podstawowy szablon projektu.
 
-- Tworzenie fabryki projektu w systemie projektu.
+- Zarejestruj szablon projektu w programie Visual Studio.
 
-- Utwórz węzeł projektu w systemie projektu.
+- Utwórz wystąpienie projektu, otwierając okno dialogowe **Nowy projekt** , a następnie używając szablonu.
 
-- Dodaj niestandardowe ikony system projektu.
+- Utwórz fabrykę projektu dla systemu projektu.
 
-- Implementuje podstawowy szablon Podstawienie parametru.
+- Utwórz węzeł projektu dla systemu projektu.
+
+- Dodaj niestandardowe ikony dla systemu projektu.
+
+- Zaimplementuj Podstawienie parametru podstawowego szablonu.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
- Począwszy od programu Visual Studio 2015, możesz nie należy instalować programu Visual Studio SDK z Centrum pobierania. Jest dołączony jako opcjonalna funkcja w Instalatorze programu Visual Studio. Możesz także zainstalować zestaw SDK programu VS później. Aby uzyskać więcej informacji, zobacz [instalacji programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visual Studio SDK z centrum pobierania. Jest ona dostępna jako opcjonalna funkcja w Instalatorze programu Visual Studio. Zestaw VS SDK można także zainstalować później. Aby uzyskać więcej informacji, zobacz [Instalowanie zestawu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
- Należy również pobrać kod źródłowy [zarządzanego środowiska pakietu dla projektów](https://github.com/tunnelvisionlabs/MPFProj10). Wyodrębnij plik do lokalizacji, który jest dostępny do rozwiązania, które chcesz utworzyć.
+ Należy również pobrać kod źródłowy dla [struktury zarządzanego pakietu dla projektów](https://github.com/tunnelvisionlabs/MPFProj10). Wyodrębnij plik do lokalizacji dostępnej dla rozwiązania, które chcesz utworzyć.
 
-## <a name="create-a-basic-project-type"></a>Tworzenie typu podstawowego projektu
- Utwórz projekt VSIX języka C# o nazwie **SimpleProject**. (**Pliku** > **nowe** > **projektu** i następnie **Visual C#**  >   **Rozszerzalność** > **projekt VSIX**). Dodawanie szablonu elementu projektu pakietu Visual Studio (na **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu i wybierz **Dodaj** > **nowy element**, a następnie przejdź do **Rozszerzalności** > **pakietu Visual Studio**). Nadaj plikowi nazwę *SimpleProjectPackage*.
+## <a name="create-a-basic-project-type"></a>Tworzenie podstawowego typu projektu
+ Utwórz projekt C# VSIX o nazwie **SimpleProject**. (**Plik**  > **Nowy**  > **projekt** , a **następnie C# Visual**  > **rozszerzalność**  > **Project VSIX**). Dodaj szablon elementu projektu pakietu programu Visual Studio (na **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj**  > **nowy element**, a następnie przejdź do opcji **rozszerzalność**  > **pakiet Visual Studio**). Nazwij plik *SimpleProjectPackage*.
 
-## <a name="creating-a-basic-project-template"></a>Tworzenie podstawowego projektu szablonu
- Teraz można zmodyfikować tego podstawowego pakietu VSPackage wdrożyć nowy *.myproj* typ projektu. Aby utworzyć projekt, który jest oparty na *.myproj* typu projektu programu Visual Studio musi wiedzieć, które pliki, zasobów i odwołania do dodania do nowego projektu. Aby podać te informacje, należy umieścić pliki projektu w folderze szablonu projektu. Gdy użytkownik używa *.myproj* projekt do tworzenia projektu, pliki są kopiowane do nowego projektu.
+## <a name="creating-a-basic-project-template"></a>Tworzenie podstawowego szablonu projektu
+ Teraz możesz zmodyfikować ten podstawowy pakietu VSPackage, aby zaimplementować nowy typ projektu *. proj* . Aby utworzyć projekt oparty na typie projektu *. proj* , program Visual Studio musi wiedzieć, które pliki, zasoby i odwołania, które mają zostać dodane do nowego projektu. Aby podać te informacje, Umieść pliki projektu w folderze szablonu projektu. Gdy użytkownik używa projektu *. proj* do tworzenia projektu, pliki są kopiowane do nowego projektu.
 
-### <a name="to-create-a-basic-project-template"></a>Aby utworzyć szablon podstawowy projekt
+### <a name="to-create-a-basic-project-template"></a>Aby utworzyć podstawowy szablon projektu
 
-1. Dodaj trzy foldery w projekcie, jeden pod innymi: *Templates\Projects\SimpleProject*. (W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **SimpleProject** węzła projektu, wskaż opcję **Dodaj**, a następnie kliknij przycisk **nowy Folder**. Nazwa folderu *szablony*. W *szablony* folderu, Dodaj folder o nazwie *projektów*. W *projektów* folderu, Dodaj folder o nazwie *SimpleProject*.)
+1. Dodaj trzy foldery do projektu, jeden pod drugim: *Templates\Projects\SimpleProject*. (W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł projektu **SimpleProject** , wskaż polecenie **Dodaj**, a następnie kliknij pozycję **Nowy folder**. Nazwij *Szablony*folderów. W folderze *Szablony* Dodaj folder o nazwie *projekty*. W folderze *projekty* Dodaj folder o nazwie *SimpleProject*.)
 
-2. W *Templates\Projects\SimpleProject* folderu, Dodaj plik obrazu mapy bitowej jako ikony o nazwie *SimpleProject.ico*. Po kliknięciu **Dodaj**, zostanie otwarty Edytor ikon.
+2. W folderze *Templates\Projects\SimpleProject* Dodaj plik obrazu mapy bitowej, który ma być używany jako ikona o nazwie *SimpleProject. ico*. Po kliknięciu przycisku **Dodaj**zostanie otwarty Edytor ikon.
 
-3. Ikona szczególne. Ta ikona pojawi się w **nowy projekt** okno dialogowe w dalszej części przewodnika.
+3. Ustaw charakterystyczną ikonę. Ta ikona zostanie wyświetlona w oknie dialogowym **Nowy projekt** w dalszej części przewodnika.
 
     ![Ikona prostego projektu](../extensibility/media/simpleprojicon.png "SimpleProjIcon")
 
-4. Ikonę Zapisz i zamknij Edytor ikon.
+4. Zapisz ikonę i Zamknij Edytor ikon.
 
-5. W *Templates\Projects\SimpleProject* folderu, Dodaj **klasy** element o nazwie *Program.cs*.
+5. W folderze *Templates\Projects\SimpleProject* Dodaj element **klasy** o nazwie *program.cs*.
 
-6. Zastąp istniejący kod z następującymi wierszami.
+6. Zastąp istniejący kod następującymi wierszami.
 
    ```csharp
    using System;
@@ -101,18 +101,18 @@ W programie Visual Studio projekty są kontenerami, używanych przez deweloperó
    ```
 
    > [!IMPORTANT]
-   > Nie jest ostatnim formie *Program.cs* kod; zastąpienia parametrów, zostaną omówione w dalszej części. Może zostać wyświetlony błędy kompilacji, ale tak długo, jak plik **BuildAction** jest **zawartości**, powinno być możliwe skompilować i uruchomić projekt w zwykły sposób.
+   > To nie jest końcowa postać kodu *program.cs* ; parametry zastępujące będą rozpatrywane w późniejszym kroku. Mogą pojawić się błędy kompilacji, ale o ile plik **BuildAction** ma **zawartość**, powinno być możliwe skompilowanie i uruchomienie projektu w zwykły sposób.
 
 7. Zapisz plik.
 
-8. Kopiuj *AssemblyInfo.cs* plik wchodzącej w skład *właściwości* folder *Projects\SimpleProject* folderu.
+8. Skopiuj plik *AssemblyInfo.cs* z folderu *Properties* do folderu *Projects\SimpleProject* .
 
-9. W *Projects\SimpleProject* folderu Dodaj plik XML o nazwie *SimpleProject.myproj*.
+9. W folderze *Projects\SimpleProject* Dodaj plik XML o nazwie *SimpleProject. webproj*.
 
    > [!NOTE]
-   > Rozszerzenie nazwy pliku dla wszystkich projektów tego typu jest *.myproj*. Jeśli chcesz ją zmienić, należy zmienić go wszędzie tam, gdzie jest wymieniony w instruktażu.
+   > Rozszerzenie nazwy pliku dla wszystkich projektów tego typu to *. proj*. Jeśli chcesz ją zmienić, musisz ją zmienić wszędzie tam, gdzie jest to opisane w przewodniku.
 
-10. Zastąp istniejącą zawartość z następującymi wierszami.
+10. Zastąp istniejącą zawartość następującymi wierszami.
 
     ```xml
     <?xml version="1.0" encoding="utf-8" ?>
@@ -154,11 +154,11 @@ W programie Visual Studio projekty są kontenerami, używanych przez deweloperó
 
 11. Zapisz plik.
 
-12. W **właściwości** oknie **Build Action** z *AssemblyInfo.cs*, *Program.cs*, *SimpleProject.ico* , i *SimpleProject.myproj* do **zawartości**i ustaw ich **Include w VSIX** właściwości **True**.
+12. W oknie **Właściwości** Ustaw **akcję kompilacja** z *AssemblyInfo.cs*, *program.cs*, *SimpleProject. ico*i *SimpleProject. webproj* na **zawartość**, a następnie ustaw właściwość **include na** właściwościach VSIX. na **wartość true**.
 
-    Ten szablon projektu w tym artykule opisano podstawowe Visual C# projekt, który ma zarówno konfigurację debugowania, jak i konfiguracji wydania. Projekt zawiera dwa pliki źródłowe, *AssemblyInfo.cs* i *Program.cs*oraz kilka odwołań do zestawów. Gdy projekt jest tworzony na podstawie tego szablonu, wartość ProjectGuid jest automatycznie zastępowany przez nowy identyfikator GUID.
+    Ten szablon projektu opisuje podstawowy projekt wizualny C# , który ma zarówno konfigurację debugowania, jak i konfigurację wydania. Projekt zawiera dwa pliki źródłowe, *AssemblyInfo.cs* i *program.cs*oraz kilka odwołań do zestawów. Po utworzeniu projektu na podstawie szablonu wartość ProjectGuid jest automatycznie zastępowana przez nowy identyfikator GUID.
 
-    W **Eksploratora rozwiązań**, rozwiniętym okienku **szablony** folderu powinna wyglądać następująco:
+    W **Eksplorator rozwiązań**folder rozwinięte **Szablony** powinien wyglądać następująco:
 
 ```
 Templates
@@ -170,12 +170,12 @@ Templates
          SimpleProject.myproj
 ```
 
-## <a name="create-a-basic-project-factory"></a>Utwórz fabrykę podstawowego projektu
- Musisz poinformować lokalizacji folderu szablonu projektu programu Visual Studio. Aby to zrobić, należy dodać atrybut do klasy pakietu VSPackage, która implementuje fabryka projektu, dzięki czemu lokalizacja szablonu są zapisywane w rejestrze systemu podczas tworzenia pakietu VSPackage. Rozpocznij od utworzenia fabryki podstawowego projektu, która jest identyfikowana przez fabrykę projektu identyfikatora GUID. Użyj <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> atrybutu, aby połączyć fabryki projektu, aby `SimpleProjectPackage` klasy.
+## <a name="create-a-basic-project-factory"></a>Utwórz podstawową fabrykę projektu
+ Musisz poinformować program Visual Studio o lokalizacji folderu szablonów projektu. Aby to zrobić, Dodaj atrybut do klasy pakietu VSPackage, która implementuje fabrykę projektu, tak aby lokalizacja szablonu została zapisana do rejestru systemowego podczas kompilowania pakietu VSPackage. Zacznij od utworzenia podstawowej fabryki projektu, która jest identyfikowana przez identyfikator GUID fabryki projektu. Użyj atrybutu <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute>, aby połączyć fabrykę projektu z klasą `SimpleProjectPackage`.
 
-### <a name="to-create-a-basic-project-factory"></a>Umożliwia ono utworzenie fabryki podstawowego projektu
+### <a name="to-create-a-basic-project-factory"></a>Aby utworzyć podstawową fabrykę projektu
 
-1. Tworzenie identyfikatorów GUID fabryki projekt (na **narzędzia** menu, kliknij przycisk **Utwórz GUID**), lub użyj w poniższym przykładzie. Dodaj identyfikatory GUID do `SimpleProjectPackage` klasy obok sekcji z już zdefiniowanym `PackageGuidString`. Identyfikatory GUID musi być zarówno w formie GUID, jak i w postaci ciągu. Po modyfikacji kod powinien wyglądać następująco.
+1. Utwórz identyfikatory GUID dla fabryki projektu (w menu **Narzędzia** kliknij polecenie **Utwórz GUID**) lub użyj jednego z nich w poniższym przykładzie. Dodaj identyfikatory GUID do klasy `SimpleProjectPackage` w sekcji o już zdefiniowanej `PackageGuidString`. Identyfikatory GUID muszą znajdować się zarówno w formie identyfikatora GUID, jak i w postaci ciągu. Otrzymany kod powinien wyglądać podobnie do poniższego przykładu.
 
    ```csharp
        public sealed class SimpleProjectPackage : Package
@@ -188,16 +188,16 @@ Templates
        }
    ```
 
-2. Dodaj klasę do góry *SimpleProject* folder o nazwie *SimpleProjectFactory.cs*.
+2. Dodaj klasę do folderu Top *SimpleProject* o nazwie *SimpleProjectFactory.cs*.
 
-3. Dodaj następujące instrukcje using:
+3. Dodaj następujące dyrektywy using:
 
    ```csharp
    using System.Runtime.InteropServices;
    using Microsoft.VisualStudio.Shell;
    ```
 
-4. Dodaj atrybut GUID, aby `SimpleProjectFactory` klasy. Wartość atrybutu jest nowa fabryka projektu identyfikatora GUID.
+4. Dodaj atrybut GUID do klasy `SimpleProjectFactory`. Wartość atrybutu jest nowym identyfikatorem GUID fabryki projektu.
 
    ```csharp
    [Guid(SimpleProjectPackage.SimpleProjectFactoryString)]
@@ -210,7 +210,7 @@ Templates
 
 ### <a name="to-register-the-project-template"></a>Aby zarejestrować szablon projektu
 
-1. W *SimpleProjectPackage.cs*, Dodaj <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> atrybutu `SimpleProjectPackage` klasy w następujący sposób.
+1. W *SimpleProjectPackage.cs*dodaj atrybut <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> do klasy `SimpleProjectPackage`, jak pokazano poniżej.
 
    ```csharp
    [ProvideProjectFactory(    typeof(SimpleProjectFactory),     "Simple Project",
@@ -220,31 +220,31 @@ Templates
    public sealed class SimpleProjectPackage : Package
    ```
 
-2. Ponownie skompiluj rozwiązanie, a następnie sprawdź, czy opiera się bez błędów.
+2. Skompiluj ponownie rozwiązanie i sprawdź, czy jest ono kompilacje bez błędów.
 
-    Ponowne tworzenie rejestruje szablonu projektu.
+    Ponowne kompilowanie rejestruje szablon projektu.
 
-   Parametry `defaultProjectExtension` i `possibleProjectExtensions` są ustawione na rozszerzenia nazw plików projektu ( *.myproj*). `projectTemplatesDirectory` Parametr ma wartość względną ścieżkę *szablony* folderu. Podczas kompilacji ta ścieżka zostanie przekonwertowane na pełnej kompilacji i dodany do rejestru, aby zarejestrować system projektu.
+   Parametry `defaultProjectExtension` i `possibleProjectExtensions` są ustawiane na rozszerzenie nazwy pliku projektu ( *. proj*). Parametr `projectTemplatesDirectory` jest ustawiony na ścieżkę względną folderu *templates* . Podczas kompilacji Ta ścieżka zostanie przekonwertowana na pełną kompilację i dodana do rejestru w celu zarejestrowania systemu projektu.
 
-## <a name="test-the-template-registration"></a>Test rejestracji szablonu
- Szablon rejestracji informuje program Visual Studio lokalizacji folderu szablonu projektu tak, aby program Visual Studio można wyświetlić nazwę szablonu i ikony w **nowy projekt** okno dialogowe.
+## <a name="test-the-template-registration"></a>Testowanie rejestracji szablonu
+ Rejestracja szablonu informuje program Visual Studio o lokalizacji folderu szablonu projektu, aby program Visual Studio mógł wyświetlić nazwę i ikonę szablonu w oknie dialogowym **Nowy projekt** .
 
-### <a name="to-test-the-template-registration"></a>Aby przetestować Rejestracja szablonu
+### <a name="to-test-the-template-registration"></a>Aby przetestować rejestrację szablonu
 
-1. Naciśnij klawisz **F5** można rozpocząć debugowania doświadczalne wystąpienie programu Visual Studio.
+1. Naciśnij klawisz **F5** , aby rozpocząć debugowanie eksperymentalnego wystąpienia programu Visual Studio.
 
-2. W doświadczalnym wystąpieniu Utwórz nowy projekt typu nowo utworzonego projektu. W **nowy projekt** okno dialogowe powinna zostać wyświetlona **SimpleProject** w obszarze **zainstalowane szablony**.
+2. W eksperymentalnym wystąpieniu Utwórz nowy projekt nowo utworzonego typu projektu. W oknie dialogowym **Nowy projekt** w obszarze **zainstalowane szablony**powinny być widoczne **SimpleProject** .
 
-   Masz teraz fabryka projektu, który jest zarejestrowany. Jednak nie można jeszcze utworzyć projekt. Pakiet projektu i projektu fabryki współpracują ze sobą, aby utworzyć i zainicjować projektu.
+   Teraz masz zarejestrowaną fabrykę projektów. Jednak nie może jeszcze utworzyć projektu. Pakiet projektu i fabryka projektów współpracują ze sobą, aby utworzyć i zainicjować projekt.
 
-## <a name="add-the-managed-package-framework-code"></a>Dodaj kod środowiska pakietu zarządzanego
- Implementuje połączenie między pakietu z projektem i fabryka projektu.
+## <a name="add-the-managed-package-framework-code"></a>Dodawanie kodu struktury zarządzanego pakietu
+ Zaimplementuj połączenie między pakietem projektu a fabryką projektu.
 
-- Zaimportuj pliki kodu źródłowego dla środowiska pakietu zarządzanego.
+- Zaimportuj pliki kodu źródłowego dla struktury pakietu zarządzanego.
 
-    1. Cofnij ładowanie projektu SimpleProject (w **Eksploratora rozwiązań**, wybierz węzeł projektu i w menu kontekstowym kliknij **Zwolnij projekt**.), a następnie otwórz plik projektu w edytorze XML.
+    1. Zwolnij projekt SimpleProject (w **Eksplorator rozwiązań**wybierz węzeł projektu, a następnie w menu kontekstowym kliknij polecenie **Zwolnij projekt**.) i Otwórz plik projektu w edytorze XML.
 
-    2. Dodaj poniższe bloki do pliku projektu (tuż powyżej \<Import > bloków). Ustaw `ProjectBasePath` do lokalizacji *ProjectBase.files* pliku w kodzie środowiska pakietu zarządzanego został pobrany. Być może będzie trzeba dodać ukośnik odwrotny na nazwę ścieżki. Jeśli tego nie zrobisz, projekt może się nie powieść można znaleźć środowiska pakietu zarządzanego kodu źródłowego.
+    2. Dodaj następujące bloki do pliku projektu (tuż powyżej bloków > \<Import). Ustaw `ProjectBasePath` na lokalizację pliku *ProjectBase. Files* w pobranym kodzie struktury pakietu zarządzanego. Może być konieczne dodanie ukośnika odwrotnego do nazwy ścieżki. W przeciwnym razie projekt może nie znaleźć kodu źródłowego struktury pakietu zarządzanego.
 
         ```
         <PropertyGroup>
@@ -255,40 +255,40 @@ Templates
         ```
 
         > [!IMPORTANT]
-        > Nie zapomnij ukośnik odwrotny na końcu ścieżki.
+        > Nie zapomnij ukośnika odwrotnego na końcu ścieżki.
 
-    3. Ponownie Załaduj projekt.
+    3. Załaduj ponownie projekt.
 
     4. Dodaj odwołania do następujących zestawów:
 
-        - `Microsoft.VisualStudio.Designer.Interfaces` (w  *\<VSSDK instalacji > \VisualStudioIntegration\Common\Assemblies\v2.0*)
+        - `Microsoft.VisualStudio.Designer.Interfaces` (w *\<VSSDK zainstaluj > \VisualStudioIntegration\Common\Assemblies\v2.0*)
 
         - `WindowsBase`
 
         - `Microsoft.Build.Tasks.v4.0`
 
-### <a name="to-initialize-the-project-factory"></a>Aby zainicjować fabryka projektu
+### <a name="to-initialize-the-project-factory"></a>Aby zainicjować fabrykę projektu
 
-1. W *SimpleProjectPackage.cs* plików, Dodaj następujący kod `using` instrukcji.
+1. W pliku *SimpleProjectPackage.cs* Dodaj następującą dyrektywę `using`.
 
     ```csharp
     using Microsoft.VisualStudio.Project;
     ```
 
-2. Pochodzi `SimpleProjectPackage` klasy z `Microsoft.VisualStudio.Package.ProjectPackage`.
+2. Utwórz klasę `SimpleProjectPackage` z `Microsoft.VisualStudio.Package.ProjectPackage`.
 
     ```csharp
     public sealed class SimpleProjectPackage : ProjectPackage
     ```
 
-3. Zarejestrować fabryki projektu. Dodaj następujący wiersz do `SimpleProjectPackage.Initialize` metody tuż za `base.Initialize`.
+3. Zarejestruj fabrykę projektu. Dodaj następujący wiersz do metody `SimpleProjectPackage.Initialize` po `base.Initialize`.
 
     ```csharp
     base.Initialize();
     this.RegisterProjectFactory(new SimpleProjectFactory(this));
     ```
 
-4. Implementuje właściwość abstrakcyjną `ProductUserContext`:
+4. Zaimplementuj Właściwość abstrakcyjną `ProductUserContext`:
 
     ```csharp
     public override string ProductUserContext
@@ -297,19 +297,19 @@ Templates
     }
     ```
 
-5. W *SimpleProjectFactory.cs*, Dodaj następujący kod `using` instrukcji znajdującej się po istniejącej `using` instrukcji.
+5. W *SimpleProjectFactory.cs*, Dodaj następującą dyrektywę `using` po istniejących dyrektywach `using`.
 
     ```csharp
     using Microsoft.VisualStudio.Project;
     ```
 
-6. Pochodzi `SimpleProjectFactory` klasy z `ProjectFactory`.
+6. Utwórz klasę `SimpleProjectFactory` z `ProjectFactory`.
 
     ```csharp
     class SimpleProjectFactory : ProjectFactory
     ```
 
-7. Dodaj następującą metodę fikcyjnego do `SimpleProjectFactory` klasy. Ta metoda będzie implementowany w dalszej części tego tematu.
+7. Dodaj następującą metodę fikcyjną do klasy `SimpleProjectFactory`. Ta metoda zostanie zaimplementowana w dalszej części.
 
     ```csharp
     protected override ProjectNode CreateProject()
@@ -318,7 +318,7 @@ Templates
     }
     ```
 
-8. Dodaj następujące pola i Konstruktor `SimpleProjectFactory` klasy. To `SimpleProjectPackage` odwołanie jest buforowany w pole prywatne, dzięki czemu mogą służyć podczas ustawiania witryna dostawcy usług.
+8. Dodaj następujące pole i Konstruktor do klasy `SimpleProjectFactory`. To odwołanie `SimpleProjectPackage` jest buforowane w polu prywatnym, dzięki czemu może być używane podczas ustawiania lokacji dostawcy usług.
 
     ```csharp
     private SimpleProjectPackage package;
@@ -330,39 +330,39 @@ Templates
     }
     ```
 
-9. Ponownie skompiluj rozwiązanie, a następnie sprawdź, czy opiera się bez błędów.
+9. Skompiluj ponownie rozwiązanie i sprawdź, czy jest ono kompilacje bez błędów.
 
-## <a name="test-the-project-factory-implementation"></a>Wdrożenie fabryki projekt testu
- Sprawdź, czy wywoływany jest konstruktor implementacji fabryka projektu.
+## <a name="test-the-project-factory-implementation"></a>Testowanie implementacji fabryki projektu
+ Sprawdź, czy Konstruktor dla implementacji fabryki projektu jest wywoływany.
 
-### <a name="to-test-the-project-factory-implementation"></a>Aby przetestować wdrożenie fabryki projektu
+### <a name="to-test-the-project-factory-implementation"></a>Aby przetestować implementację programu Project Factory
 
-1. W *SimpleProjectFactory.cs* plików, ustaw punkt przerwania na następujący wiersz w `SimpleProjectFactory` konstruktora.
+1. W pliku *SimpleProjectFactory.cs* Ustaw punkt przerwania w następującym wierszu w konstruktorze `SimpleProjectFactory`.
 
     ```csharp
     this.package = package;
     ```
 
-2. Naciśnij klawisz **F5** można uruchomić doświadczalne wystąpienie programu Visual Studio.
+2. Naciśnij klawisz **F5** , aby uruchomić eksperymentalne wystąpienie programu Visual Studio.
 
-3. W doświadczalnym wystąpieniu Uruchom utworzyć nowy projekt. W **nowy projekt** okno dialogowe, wybierz opcję **SimpleProject** typ projektu, a następnie kliknij przycisk **OK**. Zatrzymuje wykonywanie w punkcie przerwania.
+3. W eksperymentalnym wystąpieniu Rozpocznij tworzenie nowego projektu. W oknie dialogowym **Nowy projekt** wybierz typ projektu **SimpleProject** , a następnie kliknij przycisk **OK**. Wykonywanie jest zatrzymane w punkcie przerwania.
 
-4. Wyczyść punkt przerwania i zatrzymać debugowanie. Ponieważ nie utworzono jeszcze węzła projektu, kod tworzenia projektu nadal zgłasza wyjątków.
+4. Wyczyść punkt przerwania i Zatrzymaj debugowanie. Ponieważ nie został jeszcze utworzony węzeł projektu, kod tworzenia projektu nadal zgłasza wyjątki.
 
-## <a name="extend-the-projectnode-class"></a>Rozszerzenie klasy
- Teraz można zaimplementować `SimpleProjectNode` klasy, która jest pochodną `ProjectNode` klasy. `ProjectNode` Klasy bazowej obsługuje następujące zadania tworzenia projektu:
+## <a name="extend-the-projectnode-class"></a>Poszerzenie klasy ProjectNode
+ Teraz można zaimplementować klasę `SimpleProjectNode`, która pochodzi od klasy `ProjectNode`. Klasa bazowa `ProjectNode` obsługuje następujące zadania tworzenia projektu:
 
-- Kopiuje plik szablonu projektu *SimpleProject.myproj*, do nowego folderu projektu. Kopia jest zmieniana zgodnie z nazwą wprowadzoną w **nowy projekt** okno dialogowe. `ProjectGuid` Wartość właściwości jest zastępowana przez nowy identyfikator GUID.
+- Kopiuje plik szablonu projektu, *SimpleProject. webproj*do nowego folderu projektu. Nazwa kopii zostanie zmieniona na podstawie nazwy wprowadzonej w oknie dialogowym **Nowy projekt** . Wartość właściwości `ProjectGuid` jest zastępowana przez nowy identyfikator GUID.
 
-- Przechodzi przez elementy programu MSBuild w pliku szablonu projektu *SimpleProject.myproj*, a szuka `Compile` elementów. Dla każdego `Compile` pliku docelowego, kopiuje plik do nowego folderu projektu.
+- Przechodzi elementy programu MSBuild pliku szablonu projektu, *SimpleProject. webproj*i wyszukuje `Compile` elementów. Dla każdego pliku docelowego `Compile` kopiuje plik do folderu nowego projektu.
 
-  Pochodnej `SimpleProjectNode` klasa obsługuje następujące zadania:
+  Klasa pochodna `SimpleProjectNode` obsługuje następujące zadania:
 
-- Włącza ikony dla projektu i pliku węzłów w **Eksploratora rozwiązań** ma zostać utworzona lub wybrana.
+- Włącza lub wybiera ikony dla węzłów projektu i pliku w **Eksplorator rozwiązań** .
 
-- Umożliwia podstawieniach parametrów szablonu projektu dodatkowe należy określić.
+- Zezwala na określenie dodatkowych podstawiania parametrów szablonu projektu.
 
-### <a name="to-extend-the-projectnode-class"></a>Aby rozszerzyć klasę
+### <a name="to-extend-the-projectnode-class"></a>Aby zwiększyć klasę ProjectNode
 
 1. Dodaj klasę o nazwie `SimpleProjectNode.cs`.
 
@@ -402,27 +402,27 @@ Templates
    }
    ```
 
-   To `SimpleProjectNode` Implementacja klasy ma następujące przesłonięte metody:
+   Ta implementacja klasy `SimpleProjectNode` ma następujące zastąpione metody:
 
-- `ProjectGuid`, która zwraca GUID fabryki projektu.
+- `ProjectGuid`, która zwraca identyfikator GUID fabryki projektu.
 
-- `ProjectType`, która zwraca zlokalizowana nazwa typu projektu.
+- `ProjectType`, która zwraca zlokalizowaną nazwę typu projektu.
 
-- `AddFileFromTemplate`, który kopiuje wybrane pliki z folderu szablonu do projektu docelowego. Ta metoda jest dalsze implementowana w dalszej części tego tematu.
+- `AddFileFromTemplate`, która kopiuje wybrane pliki z folderu Template do projektu docelowego. Ta metoda jest zaimplementowana w dalszej części.
 
-  `SimpleProjectNode` Konstruktora, takiej jak `SimpleProjectFactory` konstruktora, buforuje `SimpleProjectPackage` odwołanie do pola prywatnego w celu późniejszego użycia.
+  Konstruktor `SimpleProjectNode`, taki jak Konstruktor `SimpleProjectFactory`, buforuje odwołanie `SimpleProjectPackage` w prywatnym polu do późniejszego użycia.
 
-  Do łączenia z `SimpleProjectFactory` klasy `SimpleProjectNode` klasy, trzeba utworzyć nową `SimpleProjectNode` w `SimpleProjectFactory.CreateProject` metody i zapisać go w pamięci podręcznej w prywatnego pola do późniejszego użycia.
+  Aby połączyć klasę `SimpleProjectFactory` z klasą `SimpleProjectNode`, należy utworzyć wystąpienie nowej `SimpleProjectNode` w metodzie `SimpleProjectFactory.CreateProject` i buforować ją w prywatnym polu do późniejszego użycia.
 
-### <a name="to-connect-the-project-factory-class-and-the-node-class"></a>Aby połączyć klasę fabryki projektu i klasa węzła
+### <a name="to-connect-the-project-factory-class-and-the-node-class"></a>Aby połączyć klasę fabryki projektu i klasę węzła
 
-1. W *SimpleProjectFactory.cs* plików, Dodaj następujący kod `using` instrukcji:
+1. W pliku *SimpleProjectFactory.cs* Dodaj następującą dyrektywę `using`:
 
     ```csharp
     using IOleServiceProvider =    Microsoft.VisualStudio.OLE.Interop.IServiceProvider;
     ```
 
-2. Zastąp `SimpleProjectFactory.CreateProject` metody, używając następującego kodu.
+2. Zastąp metodę `SimpleProjectFactory.CreateProject` przy użyciu następującego kodu.
 
     ```csharp
     protected override ProjectNode CreateProject()
@@ -434,40 +434,40 @@ Templates
     }
     ```
 
-3. Ponownie skompiluj rozwiązanie, a następnie sprawdź, czy opiera się bez błędów.
+3. Skompiluj ponownie rozwiązanie i sprawdź, czy jest ono kompilacje bez błędów.
 
-## <a name="test-the-projectnode-class"></a>Klasa testu
- Przetestuj fabryką projektu, aby zobaczyć, czy zostaje utworzony hierarchii projektu.
+## <a name="test-the-projectnode-class"></a>Testowanie klasy ProjectNode
+ Przetestuj fabrykę projektu, aby zobaczyć, czy tworzy hierarchię projektu.
 
-### <a name="to-test-the-projectnode-class"></a>Aby przetestować klasy
+### <a name="to-test-the-projectnode-class"></a>Aby przetestować klasę ProjectNode
 
-1. Naciśnij klawisz **F5** można rozpocząć debugowania. W doświadczalnym wystąpieniu należy utworzyć nowe SimpleProject.
+1. Naciśnij klawisz **F5** , aby rozpocząć debugowanie. W eksperymentalnym wystąpieniu Utwórz nowy SimpleProject.
 
-2. Program Visual Studio, należy wywołać fabryką projektu, aby utworzyć projekt.
+2. Program Visual Studio powinien wywołać fabrykę projektu, aby utworzyć projekt.
 
-3. Zamknij wystąpienie doświadczalne programu Visual Studio.
+3. Zamknij wystąpienie eksperymentalne programu Visual Studio.
 
-## <a name="add-a-custom-project-node-icon"></a>Dodaj ikonę węzła niestandardowego projektu
- Ikona węzła projektu we wcześniejszej sekcji znajduje się ikona domyślna. Można go zmienić, na ikony niestandardowej.
+## <a name="add-a-custom-project-node-icon"></a>Dodaj niestandardową ikonę węzła projektu
+ Ikona węzła projektu w poprzedniej sekcji jest domyślną ikoną. Można ją zmienić na ikonę niestandardową.
 
-### <a name="to-add-a-custom-project-node-icon"></a>Aby dodać ikonę węzła niestandardowego projektu
+### <a name="to-add-a-custom-project-node-icon"></a>Aby dodać niestandardową ikonę węzła projektu
 
-1. W **zasobów** folderu, Dodaj plik mapy bitowej o nazwie *SimpleProjectNode.bmp*.
+1. W folderze **resources** Dodaj plik mapy bitowej o nazwie *SimpleProjectNode. bmp*.
 
-2. W **właściwości** systemu windows, zmniejszyć mapę bitową do 16 na 16 pikseli. Mapy bitowej wprowadzić szczególne.
+2. W oknach **Właściwości** Zmniejsz mapę bitową do 16 pikseli. Oznacz mapę bitową.
 
-    ![Simple Project Comm](../extensibility/media/simpleprojprojectcomm.png "SimpleProjProjectComm")
+    ![Prosta Communication Project](../extensibility/media/simpleprojprojectcomm.png "SimpleProjProjectComm")
 
-3. W **właściwości** oknie zmiany **Akcja kompilacji** mapy bitowej do **zasób osadzony**.
+3. W oknie **Właściwości** Zmień **akcję kompilacja** mapy bitowej na **zasób osadzony**.
 
-4. W *SimpleProjectNode.cs*, Dodaj następujący kod `using` instrukcji:
+4. W *SimpleProjectNode.cs*Dodaj następujące dyrektywy `using`:
 
    ```csharp
    using System.Drawing;
    using System.Windows.Forms;
    ```
 
-5. Dodaj następujące pola statyczne i Konstruktor `SimpleProjectNode` klasy.
+5. Dodaj następujące pole statyczne i Konstruktor do klasy `SimpleProjectNode`.
 
    ```csharp
    private static ImageList imageList;
@@ -478,7 +478,7 @@ Templates
    }
    ```
 
-6. Dodaj następującą właściwość do stanu sprzed `SimpleProjectNode` klasy.
+6. Dodaj następującą właściwość na początku klasy `SimpleProjectNode`.
 
    ```csharp
    internal static int imageIndex;
@@ -488,7 +488,7 @@ Templates
       }
    ```
 
-7. Zamień Konstruktor wystąpienia następujący kod.
+7. Zastąp Konstruktor wystąpienia poniższym kodem.
 
    ```csharp
    public SimpleProjectNode(SimpleProjectPackage package)
@@ -504,36 +504,36 @@ Templates
    }
    ```
 
-   Podczas konstruowania statyczne `SimpleProjectNode` pobiera mapy bitowej węzła projektu z zasobów manifestu zestawu i zapisuje go w pamięci podręcznej prywatnego pola do późniejszego użycia. Zwróć uwagę, składnia <xref:System.Reflection.Assembly.GetManifestResourceStream%2A> ścieżkę obrazu. Aby wyświetlić nazwy zasobów manifestu osadzonego w zestawie, należy użyć <xref:System.Reflection.Assembly.GetManifestResourceNames%2A> metody. Gdy ta metoda jest stosowany do `SimpleProject` zestawu, wyniki powinny być następujące:
+   Podczas konstruowania statycznego `SimpleProjectNode` pobiera mapę bitową węzła projektu z zasobów manifestu zestawu i buforuje ją w prywatnym polu do późniejszego użycia. Zwróć uwagę na składnię ścieżki obrazu <xref:System.Reflection.Assembly.GetManifestResourceStream%2A>. Aby wyświetlić nazwy zasobów manifestu osadzone w zestawie, użyj metody <xref:System.Reflection.Assembly.GetManifestResourceNames%2A>. Gdy ta metoda jest stosowana do zestawu `SimpleProject`, wyniki powinny być następujące:
 
-- *SimpleProject.Resources.resources*
+- *SimpleProject. resources. resources*
 
-- *VisualStudio.Project.resources*
+- *VisualStudio. Project. resources*
 
-- *SimpleProject.VSPackage.resources*
+- *SimpleProject. pakietu VSPackage. resources*
 
-- *Resources.imagelis.bmp*
+- *Resources. imagelis. bmp*
 
-- *Microsoft.VisualStudio.Project.DontShowAgainDialog.resources*
+- *Microsoft. VisualStudio. Project. DontShowAgainDialog. resources*
 
-- *Microsoft.VisualStudio.Project.SecurityWarningDialog.resources*
+- *Microsoft. VisualStudio. Project. SecurityWarningDialog. resources*
 
-- *SimpleProject.Resources.SimpleProjectNode.bmp*
+- *SimpleProject. resources. SimpleProjectNode. bmp*
 
-  Podczas tworzenia wystąpienia `ProjectNode` ładowania klasy bazowej *Resources.imagelis.bmp*, w którym są osadzone powszechnie używane bitmap 16 x 16 z *Resources\imagelis.bmp*. Ta lista mapy bitowej ma zostać udostępnione `SimpleProjectNode` jako `ImageHandler.ImageList`. `SimpleProjectNode` dołącza mapy bitowej węzła projektu do listy. Przesunięcie mapy bitowej węzła projektu z listy obrazów jest buforowany do późniejszego użycia z wartością publicznie `ImageIndex` właściwości. Program Visual Studio używa tej właściwości, aby określić, które mapy bitowej do wyświetlenia jako ikona węzła projektu.
+  Podczas konstruowania wystąpienia Klasa bazowa `ProjectNode` ładuje *zasoby. imagelis. bmp*, w których są osadzone powszechnie używane 16 x 16 map bitowych z *Resources\imagelis.bmp*. Ta lista mapy bitowej jest udostępniona do `SimpleProjectNode` jako `ImageHandler.ImageList`. `SimpleProjectNode` dołącza mapę bitową węzła projektu do listy. Przesunięcie mapy bitowej węzła projektu na liście obrazów jest buforowane do późniejszego użycia jako wartość właściwości publicznej `ImageIndex`. Program Visual Studio używa tej właściwości, aby określić, która mapa bitowa ma być wyświetlana jako ikona węzła projektu.
 
-## <a name="test-the-custom-project-node-icon"></a>Testowanie ikony węzła niestandardowego projektu
- Przetestuj fabryką projektu, aby zobaczyć, czy zostaje utworzony hierarchii projektu ikona węzła niestandardowego projektu.
+## <a name="test-the-custom-project-node-icon"></a>Przetestuj ikonę niestandardowego węzła projektu
+ Przetestuj fabrykę projektu, aby zobaczyć, czy tworzy hierarchię projektu, która ma niestandardową ikonę węzła projektu.
 
-### <a name="to-test-the-custom-project-node-icon"></a>Aby przetestować niestandardowego projektu ikony węzła
+### <a name="to-test-the-custom-project-node-icon"></a>Aby przetestować ikonę węzła projektu niestandardowego
 
-1. Rozpocznij debugowanie, a w doświadczalnym wystąpieniu tworzenie nowych SimpleProject.
+1. Rozpocznij debugowanie i w eksperymentalnym wystąpieniu Utwórz nowy SimpleProject.
 
-2. W nowo utworzonym projekcie, zwróć uwagę, że *SimpleProjectNode.bmp* jest używany jako ikona węzła projektu.
+2. W nowo utworzonym projekcie należy zauważyć, że *SimpleProjectNode. bmp* jest używany jako ikona węzła projektu.
 
-     ![Prosty projekt nowy węzeł projektu](../extensibility/media/simpleprojnewprojectnode.png "SimpleProjNewProjectNode")
+     ![Prosty węzeł projektu nowego projektu](../extensibility/media/simpleprojnewprojectnode.png "SimpleProjNewProjectNode")
 
-3. Otwórz *Program.cs* w edytorze kodu. Kod źródłowy, który przypomina poniższy kod powinien być widoczny.
+3. Otwórz *program.cs* w edytorze kodu. Powinien zostać wyświetlony kod źródłowy podobny do następującego kodu.
 
     ```csharp
     using System;
@@ -553,22 +553,22 @@ Templates
     }
     ```
 
-     Zwróć uwagę, parametry szablonu $nameSpace$ i $className$ ma nowe wartości. Dowiesz się jak zaimplementować Podstawienie parametru szablonu w następnej sekcji.
+     Zwróć uwagę, że parametry szablonu $nameSpace $ i $className $ nie mają nowych wartości. Dowiesz się, jak zaimplementować podstawienie parametrów szablonu w następnej sekcji.
 
-## <a name="substitute-template-parameters"></a>Zastąp parametry szablonu
- W wcześniejszej sekcji rejestrowania szablon projektu przy użyciu programu Visual Studio przy użyciu `ProvideProjectFactory` atrybutu. Rejestrowanie ścieżkę do folderu szablonu w ten sposób pozwala włączyć Podstawienie parametru podstawowy szablon, zastępowanie i rozszerzanie `ProjectNode.AddFileFromTemplate` klasy. Aby uzyskać więcej informacji, zobacz [Generowanie nowego projektu: Za kulisami, część dwóch](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).
+## <a name="substitute-template-parameters"></a>Podstawianie parametrów szablonu
+ W poprzedniej sekcji zarejestrowano szablon projektu w programie Visual Studio przy użyciu atrybutu `ProvideProjectFactory`. Zarejestrowanie ścieżki folderu szablonów w ten sposób umożliwia włączenie podstawiania parametrów podstawowego szablonu przez zastępowanie i rozwinięcie klasy `ProjectNode.AddFileFromTemplate`. Aby uzyskać więcej informacji, zobacz temat [Nowa generacja projektu: pod okapem, część druga](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).
 
- Teraz Dodaj kod zastępczy `AddFileFromTemplate` klasy.
+ Teraz Dodaj kod zastępczy do klasy `AddFileFromTemplate`.
 
 ### <a name="to-substitute-template-parameters"></a>Aby zastąpić parametry szablonu
 
-1. W *SimpleProjectNode.cs* plików, Dodaj następujący kod `using` instrukcji.
+1. W pliku *SimpleProjectNode.cs* Dodaj następującą dyrektywę `using`.
 
    ```csharp
    using System.IO;
    ```
 
-2. Zastąp `AddFileFromTemplate` metody, używając następującego kodu.
+2. Zastąp metodę `AddFileFromTemplate` przy użyciu następującego kodu.
 
    ```csharp
    public override void AddFileFromTemplate(
@@ -586,30 +586,30 @@ Templates
    }
    ```
 
-3. Ustaw punkt przerwania w metodzie zaraz po `className` instrukcji przypisania.
+3. Ustaw punkt przerwania w metodzie tuż po instrukcji przypisania `className`.
 
-   Instrukcje przypisania określa rozsądne wartości dla przestrzeni nazw i nazwy klasy. Dwa `ProjectNode.FileTemplateProcessor.AddReplace` wywołania metody Zastąp odpowiednie wartości parametrów szablonu, używając tych nowych wartości.
+   Instrukcje przypisania określają odpowiednie wartości dla przestrzeni nazw i nazwę nowej klasy. Dwa wywołania metody `ProjectNode.FileTemplateProcessor.AddReplace` zastępują odpowiednie wartości parametrów szablonu przy użyciu tych nowych wartości.
 
-## <a name="test-the-template-parameter-substitution"></a>Testowanie Podstawienie parametru szablonu
- Teraz można przetestować Podstawienie parametru szablonu.
+## <a name="test-the-template-parameter-substitution"></a>Testowanie podstawienia parametru szablonu
+ Teraz można testować Podstawienie parametrów szablonu.
 
 ### <a name="to-test-the-template-parameter-substitution"></a>Aby przetestować Podstawienie parametru szablonu
 
-1. Rozpocznij debugowanie, a w doświadczalnym wystąpieniu tworzenie nowych SimpleProject.
+1. Rozpocznij debugowanie i w eksperymentalnym wystąpieniu Utwórz nowy SimpleProject.
 
-2. Wykonanie zatrzymuje się w punkcie przerwania w `AddFileFromTemplate` metody.
+2. Wykonywanie jest zatrzymane w punkcie przerwania w metodzie `AddFileFromTemplate`.
 
-3. Sprawdź wartości `nameSpace` i `className` parametrów.
+3. Przejrzyj wartości parametrów `nameSpace` i `className`.
 
-   - `nameSpace` podano wartość \<RootNamespace > element *\Templates\Projects\SimpleProject\SimpleProject.myproj* pliku szablonu projektu. W tym przypadku wartość jest `MyRootNamespace`.
+   - `nameSpace` ma wartość \<RootNamespace > elementu w pliku szablonu projektu *\Templates\Projects\SimpleProject\SimpleProject.myproj* . W tym przypadku wartość jest `MyRootNamespace`.
 
-   - `className` podana jest wartość nazwę klasy źródłowej pliku bez rozszerzenia nazwy pliku. W tym przypadku jest to plik był kopiowany do folderu docelowego *AssemblyInfo.cs*; w związku z tym, wartość className `AssemblyInfo`.
+   - `className` otrzymuje wartość nazwy pliku źródłowego klasy, bez rozszerzenia nazwy pliku. W takim przypadku pierwszy plik do skopiowania do folderu docelowego to *AssemblyInfo.cs*; w związku z tym wartość className jest `AssemblyInfo`.
 
-4. Usuń punkt przerwania, a następnie naciśnij klawisz **F5** do kontynuowania wykonywania.
+4. Usuń punkt przerwania i naciśnij klawisz **F5** , aby kontynuować wykonywanie.
 
-    Program Visual Studio powinno zostać zakończone, tworzenia projektu.
+    Program Visual Studio powinien zakończyć tworzenie projektu.
 
-5. Otwórz *Program.cs* w edytorze kodu. Kod źródłowy, który przypomina poniższy kod powinien być widoczny.
+5. Otwórz *program.cs* w edytorze kodu. Powinien zostać wyświetlony kod źródłowy podobny do następującego kodu.
 
    ```csharp
    using System;
@@ -632,8 +632,8 @@ Templates
 
     Należy zauważyć, że przestrzeń nazw jest teraz `MyRootNamespace` i nazwa klasy jest teraz `Program`.
 
-6. Uruchom debugowanie projektu. Nowy projekt powinien kompilowania, uruchamiania i wyświetlić "Hello VSX!!!" w oknie konsoli.
+6. Rozpocznij debugowanie projektu. Nowy projekt powinien kompilować, uruchamiać i wyświetlać "Hello VSX!!!" w oknie konsoli.
 
-    ![Polecenie prostego projektu](../extensibility/media/simpleprojcommand.png "SimpleProjCommand")
+    ![Proste polecenie projektu](../extensibility/media/simpleprojcommand.png "SimpleProjCommand")
 
-   Gratulacje! Udało Ci się wdrożyć systemu podstawowego projektu zarządzanego.
+   Nabycia! Wdrożono podstawowy zarządzany system projektów.

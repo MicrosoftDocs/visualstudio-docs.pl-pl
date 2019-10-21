@@ -1,63 +1,63 @@
 ---
-title: Projektant przepływu pracy — InvokeMethod, Projektant działań
+title: Projektant przepływu pracy-InvokeMethod — Projektant działań
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.InvokeMethod.UI
 ms.assetid: 15e6efdc-52ca-46d8-9c5e-063f7c8265a6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eed5d81cce05b316ef7593639e868936e7f2fa69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 593ec198cdfdd8acd1967abb046384711e1fa9ac
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62537644"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650165"
 ---
 # <a name="invokemethod-activity-designer"></a>InvokeMethod, projektant działań
 
-**InvokeMethod** projektanta jest używany do tworzenia i konfigurowania <xref:System.Activities.Statements.InvokeMethod> działania.
+Projektant **InvokeMethod** służy do tworzenia i konfigurowania działania <xref:System.Activities.Statements.InvokeMethod>.
 
-## <a name="the-invokemethod-activity"></a>Działania InvokeMethod
+## <a name="the-invokemethod-activity"></a>Działanie InvokeMethod
 
-<xref:System.Activities.Statements.InvokeMethod> Wywołuje metodę publicznych określonego obiektu lub typu.
+@No__t_0 wywołuje publiczną metodę określonego obiektu lub typu.
 
-### <a name="use-the-invokemethod-activity-designer"></a>Użyj InvokeMethod, Projektant działań
+### <a name="use-the-invokemethod-activity-designer"></a>Korzystanie z projektanta działań InvokeMethod
 
-Dostęp do **InvokeMethod** projektanta działań w **podstawowych** kategorii **przybornika**. **InvokeMethod** projektanta działań mogą być przeciągnięte z **przybornika** i porzucić do powierzchni projektanta przepływów pracy, gdzie odkąd działań są zazwyczaj umieszczane, takie jak wewnątrz <xref:System.Activities.Statements.Sequence>. Projektant działań porzucenie tworzy <xref:System.Activities.Statements.InvokeMethod> działanie przy użyciu domyślnego <xref:System.Activities.Activity.DisplayName%2A> z InvokeMethod. <xref:System.Activities.Activity.DisplayName%2A> Mogą być edytowane w nagłówku **InvokeMethod** projektanta działań lub **DisplayName** pola siatki właściwości.
+Dostęp do projektanta działań **InvokeMethod** w kategorii elementy **pierwotne** w **przyborniku**. Projektant działań **InvokeMethod** można przeciągnąć z **przybornika** i porzucić na Projektant przepływu pracyą powierzchnię, w której są zwykle umieszczane działania, takie jak wewnątrz <xref:System.Activities.Statements.Sequence>. Porzucenie projektanta działań powoduje utworzenie działania <xref:System.Activities.Statements.InvokeMethod> z domyślną <xref:System.Activities.Activity.DisplayName%2A> InvokeMethod. @No__t_0 można edytować w nagłówku projektanta działań **InvokeMethod** lub w polu **DisplayName** siatki właściwości.
 
 ### <a name="the-invokemethod-properties"></a>Właściwości InvokeMethod
 
-W poniższej tabeli przedstawiono <xref:System.Activities.Statements.InvokeMethod> właściwości oraz opisano sposoby ich używania w projektancie. Te właściwości można edytować w siatce właściwości, a niektóre z nich mogą być edytowane na powierzchni projektanta przepływów pracy.
+W poniższej tabeli przedstawiono właściwości <xref:System.Activities.Statements.InvokeMethod> i opisano, jak są one używane w projektancie. Te właściwości można edytować w siatce właściwości, a niektóre z nich można edytować na Projektant przepływu pracy powierzchni.
 
 |Nazwa właściwości|Wymagane|Użycie|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Przyjazna nazwa <xref:System.Activities.Statements.InvokeMethod> działania. Wartość domyślna to InvokeMethod.<br /><br /> Mimo że <xref:System.Activities.Activity.DisplayName%2A> nie jest ściśle wymagane, zaleca się go użyć.|
-|<xref:System.Activities.Statements.InvokeMethod.MethodName%2A>|Prawda|Nazwa metody do wywołania, gdy działanie wykonuje. Metoda wywoływana musi być zadeklarowany jako **publicznych**. Ta właściwość może być edytowany na powierzchni projektanta i jest wymagana.|
-|<xref:System.Activities.Statements.InvokeMethod.Parameters%2A>|False|Kolekcja parametrów wywoływanej metody. Parametry muszą zostać dodane do kolekcji w tej samej kolejności, które są wyświetlane w podpisie metody. Aby wyświetlić **parametry** okna dialogowego, w którym można ustawić tę właściwość, kliknij przycisk wielokropka w **parametry** pola siatki właściwości. Kliknij przycisk **Utwórz Argument** przycisk, aby dodać parametry.|
-|<xref:System.Activities.Statements.InvokeMethod.Result%2A>|False|Wartość zwracaną przez wywołanie metody.|
-|<xref:System.Activities.Statements.InvokeMethod.RunAsynchronously%2A>|Prawda|Określa, czy metoda jest wywoływana asynchronicznie. Wartość domyślna to **False**.|
-|<xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>|False|Obiekt, który zawiera metodę do wywołania. Tej właściwości można edytować na powierzchni projektowej.<br /><br /> Albo <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A> lub <xref:System.Activities.Statements.InvokeMethod.TargetType%2A> jest wymagany do skonfigurowania.|
-|<xref:System.Activities.Statements.InvokeMethod.TargetType%2A>|False|Typ <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>. Tej właściwości można edytować na powierzchni projektowej. Ta właściwość musi można ustawić tylko, gdy wywoływana metoda jest statyczna.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Przyjazna nazwa działania <xref:System.Activities.Statements.InvokeMethod>. Wartość domyślna to InvokeMethod.<br /><br /> Mimo że <xref:System.Activities.Activity.DisplayName%2A> nie jest ściśle wymagane, najlepiej użyć jednej z nich.|
+|<xref:System.Activities.Statements.InvokeMethod.MethodName%2A>|Oznacza|Nazwa metody, która ma zostać wywołana, gdy działanie jest wykonywane. Wywoływana metoda musi być zadeklarowana jako **publiczna**. Tę właściwość można edytować na powierzchni projektanta i jest obowiązkowe.|
+|<xref:System.Activities.Statements.InvokeMethod.Parameters%2A>|False|Kolekcja parametrów wywoływanej metody. Parametry należy dodać do kolekcji w takiej samej kolejności, w jakiej występują w podpisie metody. Aby wyświetlić okno dialogowe **parametrów** , w którym można ustawić tę właściwość, kliknij przycisk wielokropka w polu **Parametry** siatki właściwości. Kliknij przycisk **Utwórz argument** , aby dodać parametry.|
+|<xref:System.Activities.Statements.InvokeMethod.Result%2A>|False|Wartość zwracana wywołania metody.|
+|<xref:System.Activities.Statements.InvokeMethod.RunAsynchronously%2A>|Oznacza|Określa, czy metoda jest wywoływana asynchronicznie. Wartość domyślna to **false**.|
+|<xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>|False|Obiekt, który zawiera metodę do wywołania. Tę właściwość można edytować na powierzchni projektanta.<br /><br /> Należy ustawić <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A> lub <xref:System.Activities.Statements.InvokeMethod.TargetType%2A>.|
+|<xref:System.Activities.Statements.InvokeMethod.TargetType%2A>|False|Typ <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>. Tę właściwość można edytować na powierzchni projektanta. Tę właściwość należy ustawić tylko wtedy, gdy wywoływana metoda jest statyczna.|
 
-Do przekazania parametrów jako C# **się** parametrów (na przykład `Method1(out myParam))`, użyj **OutArgument** zamiast **InOutArgument**
+Aby przekazać parametry C# jako parametr **out** (na przykład `Method1(out myParam))`, użyj wartości **unargument** zamiast **InOutArgument**
 
-Metody z argumentami o nazwie **TargetObject** lub **wynik** nie można wywołać za pomocą <xref:System.Activities.Statements.InvokeMethod> działania. Jest to spowodowane tym, że <xref:System.Activities.Statements.InvokeMethod> rejestruje działanie <xref:System.Activities.Statements.InvokeMethod.GenericTypeArguments%2A>, <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A> i <xref:System.Activities.Statements.InvokeMethod.Result%2A> w <xref:System.Activities.Activity.CacheMetadata%2A>.
+Metody z argumentami o nazwie **TargetObject** lub **Result** nie mogą być wywoływane przy użyciu działania <xref:System.Activities.Statements.InvokeMethod>. Przyczyną jest to, że <xref:System.Activities.Statements.InvokeMethod> działanie rejestruje <xref:System.Activities.Statements.InvokeMethod.GenericTypeArguments%2A>, <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A> i <xref:System.Activities.Statements.InvokeMethod.Result%2A> w <xref:System.Activities.Activity.CacheMetadata%2A>.
 
-Algorytm parametry w rejestrowaniu <xref:System.Activities.Activity.CacheMetadata%2A> jest wyświetlany na poniższej liście:
+Algorytm rejestrowania parametrów w <xref:System.Activities.Activity.CacheMetadata%2A> przedstawiono na poniższej liście:
 
-1. Zarejestruj <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A> argumentu.
+1. Zarejestruj <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A> argument.
 
-2. Zarejestruj <xref:System.Activities.Statements.InvokeMethod.Result%2A> argumentu.
+2. Zarejestruj <xref:System.Activities.Statements.InvokeMethod.Result%2A> argument.
 
-3. Iteracyjne przeglądanie <xref:System.Activities.Statements.InvokeMethod.Parameters%2A> kolekcji i zarejestrować każdy argument.
+3. Wykonaj iterację w kolekcji <xref:System.Activities.Statements.InvokeMethod.Parameters%2A> i zarejestruj każdy argument.
 
-Wyjątek wynikowa jest typu <xref:System.Activities.InvalidWorkflowException> z następującym komunikatem: "InvokeMethod": Istnieje RuntimeArgument lub DelegateArgument już zmienną o nazwie "TargetObject". Nazwy muszą być unikatowe w obrębie zakresu środowiska.
+Wyjątek wynikający z typu <xref:System.Activities.InvalidWorkflowException> z następującym komunikatem: "InvokeMethod": zmienna, obiekt RuntimeArgument lub obiekt DelegateArgument już istnieje o nazwie "TargetObject". Nazwy muszą być unikatowe w obrębie zakresu środowiska.
 
-To ograniczenie nie ma zastosowania do <xref:System.Activities.Statements.InvokeMethod.TargetType%2A> i <xref:System.Activities.Statements.InvokeMethod.RunAsynchronously%2A>. Nie ma argumentów przepływu pracy i w związku z tym nie są zarejestrowane w <xref:System.Activities.Statements.InvokeMethod.GenericTypeArguments%2A> zbiór <xref:System.Activities.Statements.InvokeMethod> działania w <xref:System.Activities.Activity.CacheMetadata%2A> metody.
+To ograniczenie nie ma zastosowania do <xref:System.Activities.Statements.InvokeMethod.TargetType%2A> i <xref:System.Activities.Statements.InvokeMethod.RunAsynchronously%2A>. Nie są to argumenty przepływu pracy i w związku z tym nie są rejestrowane w kolekcji <xref:System.Activities.Statements.InvokeMethod.GenericTypeArguments%2A> działania <xref:System.Activities.Statements.InvokeMethod> w metodzie <xref:System.Activities.Activity.CacheMetadata%2A>.
 
 ## <a name="see-also"></a>Zobacz także
 

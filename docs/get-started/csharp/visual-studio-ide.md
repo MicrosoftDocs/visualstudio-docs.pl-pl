@@ -1,55 +1,55 @@
 ---
-title: Przegląd C# deweloperów
+title: Przegląd dla C# deweloperów
 ms.date: 03/19/2019
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9ba78c7ee3cd723fdb89b833df7974d700337c38
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ca48b0510c36bd0d5528cda5d4514f12763ee243
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62952612"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72632857"
 ---
-# <a name="welcome-to-the-visual-studio-ide--c"></a>Witamy w środowisku IDE programu Visual Studio | C\#
+# <a name="welcome-to-the-visual-studio-ide--c"></a>Witamy w programie Visual Studio IDE | @No__t_0 C
 
 [!INCLUDE [overview-part-1](../includes/ide-overview.md)]
 
 ## <a name="select-environment-settings"></a>Wybierz ustawienia środowiska
 
-Skonfigurujmy Visual Studio, aby użyć ustawienia środowiska dostosowane do C# deweloperów.
+Skonfigurujmy program Visual Studio tak, aby korzystał z ustawień C# środowiska, które są dostosowane do deweloperów.
 
-1. Na pasku menu wybierz **narzędzia** > **Import i eksport ustawień**.
+1. Na pasku menu wybierz kolejno opcje **narzędzia**  > **Importuj i Eksportuj ustawienia**.
 
-2. W **Kreatora importowania i eksportowania ustawień**, wybierz opcję **Resetuj wszystkie ustawienia** na pierwszej stronie, a następnie wybierz **dalej**.
+2. W **Kreatorze importowania i eksportowania ustawień**wybierz pozycję **Zresetuj wszystkie ustawienia** na pierwszej stronie, a następnie wybierz przycisk **dalej**.
 
-3. Na **zapisać bieżące ustawienia** stronie, wybierz opcję, aby zapisać bieżące ustawienia lub nie, a następnie wybierz **dalej**. (Jeśli nie zostały dostosowane ustawienia, wybierz opcję **nie, tylko Zresetuj ustawienia, zastępując Moje bieżące ustawienia**.)
+3. Na stronie **Zapisywanie bieżących ustawień** wybierz opcję zapisania bieżących ustawień, a następnie wybierz przycisk **dalej**. (Jeśli nie dostosowano żadnych ustawień, wybierz pozycję **nie, po prostu Zresetuj ustawienia, zastępując Moje bieżące ustawienia**).
 
-4. Na **wybierz domyślnej kolekcji ustawień** wybierz **Visual C#** , a następnie wybierz **Zakończ**.
+4. Na stronie **Wybierz domyślną kolekcję ustawień** wybierz pozycję **Wizualizacja C#** , a następnie wybierz pozycję **Zakończ**.
 
-5. Na **resetowania pełną** wybierz **Zamknij**.
+5. Na stronie **Resetowanie ukończone** wybierz pozycję **Zamknij**.
 
-Aby dowiedzieć się więcej o innych metodach, które można spersonalizować środowisko IDE, zobacz [Personalizowanie programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
+Aby dowiedzieć się więcej na temat innych sposobów personalizowania środowiska IDE, zobacz [Personalizowanie programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="next-steps"></a>Następne kroki
 
-Zapoznaj się dodatkowo program Visual Studio, wykonując wraz z jednym niniejsze artykuły wprowadzające zawierają:
+Poznanie programu Visual Studio w następujący sposób wraz z jednym z następujących artykułów wprowadzających:
 
 > [!div class="nextstepaction"]
-> [Dowiedz się, jak za pomocą edytora kodu](tutorial-editor.md)
+> [Dowiedz się, jak używać edytora kodu](tutorial-editor.md)
 
 > [!div class="nextstepaction"]
-> [Dowiedz się więcej o projekty i rozwiązania](tutorial-projects-solutions.md)
+> [Informacje o projektach i rozwiązaniach](tutorial-projects-solutions.md)
 
 ## <a name="see-also"></a>Zobacz także
 
 - Odkryj [więcej funkcji programu Visual Studio](../../ide/advanced-feature-overview.md)
-- Odwiedź stronę [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)
-- Odczyt [blog Visual Studio](https://devblogs.microsoft.com/visualstudio/)
+- Odwiedź witrynę [VisualStudio.Microsoft.com](https://visualstudio.microsoft.com/vs/)
+- Przeczytaj [Blog programu Visual Studio](https://devblogs.microsoft.com/visualstudio/)

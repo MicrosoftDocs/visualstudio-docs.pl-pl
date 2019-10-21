@@ -1,60 +1,60 @@
 ---
-title: 'Instrukcje: Zapisywanie i Edycja parametrów połączeń'
+title: 'Porady: zapisywanie i edycja parametrów połączeń'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f8ef3a2c-029c-423b-9d9e-a4f1add4f640
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1f8300043f9a16c7d92d72c4dcb22e4cd0432a06
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a78194ae6e4f462ec732e1ae2a1981aa8d857978
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566977"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72641800"
 ---
-# <a name="how-to-save-and-edit-connection-strings"></a>Instrukcje: Zapisywanie i edytowanie parametrów połączeń
-Parametry połączenia w aplikacjach Visual Studio są zapisywane w pliku konfiguracyjnym aplikacji (nazywane także ustawienia aplikacji) lub zakodowane bezpośrednio w aplikacji. Zapisywanie ciągów połączenia w pliku konfiguracji aplikacji upraszcza zadanie obsługi aplikacji. Jeśli parametry połączenia muszą być zmienione, należy je zaktualizować w pliku ustawień aplikacji (w przeciwieństwie do konieczności odbywają się w kodzie źródłowym i ponownie skompilować aplikację).
+# <a name="how-to-save-and-edit-connection-strings"></a>Instrukcje: zapisywanie i edytowanie parametrów połączenia
+Parametry połączenia w aplikacjach Visual Studio są zapisywane w pliku konfiguracyjnym aplikacji (nazywanego również ustawieniami aplikacji) lub trwale kodowane bezpośrednio w aplikacji. Zapisywanie parametrów połączenia w pliku konfiguracji aplikacji upraszcza zadanie obsługi aplikacji. Jeśli parametry połączenia należy zmienić, można je zaktualizować w pliku ustawień aplikacji (w przeciwieństwie do zmiany w kodzie źródłowym i ponownej kompilacji aplikacji).
 
-Przechowywanie poufnych informacji (na przykład hasło) w ciągu połączenia mogą wpływać na bezpieczeństwo aplikacji. Parametry połączenia, zapisane w pliku konfiguracji aplikacji nie są szyfrowane lub zaciemniony w plikach, dlatego może być osoba uzyskać dostęp do pliku i wyświetlić jego zawartość. Korzysta ze zintegrowanych zabezpieczeń Windows jest Bezpieczniejszym sposobem na kontrolowanie dostępu do bazy danych.
+Przechowywanie poufnych informacji (takich jak hasło) w ciągu połączenia może wpłynąć na bezpieczeństwo aplikacji. Parametry połączenia zapisane w pliku konfiguracyjnym aplikacji nie są szyfrowane ani zasłaniane, dlatego może być możliwe, aby ktoś mógł uzyskać dostęp do pliku i wyświetlić jego zawartość. Używanie zintegrowanych zabezpieczeń systemu Windows jest bezpieczniejszym sposobem na kontrolowanie dostępu do bazy danych.
 
-Jeśli użytkownik nie chce używać Windows zintegrowane zabezpieczenia baza danych wymaga nazwy użytkownika i hasła, można je pominąć w ciągu połączenia, a aplikacja będzie konieczne udostępnienie tych informacji do pomyślnego połączenia z bazą danych. Na przykład można utworzyć okno dialogowe, który monituje użytkownika o te informacje i dynamicznie tworzy ciąg połączenia w czasie wykonywania. Zabezpieczenia nadal może być problemem, jeśli informacje zostaną przechwycone w drodze do bazy danych.
-Aby uzyskać więcej informacji, zobacz [ochrona informacji o połączeniu](/dotnet/framework/data/adonet/protecting-connection-information).
+Jeśli nie zdecydujesz się używać zintegrowanych zabezpieczeń systemu Windows, a Twoja baza danych wymaga nazwy użytkownika i hasła, możesz pominąć je w parametrach połączenia, ale aplikacja będzie musiała podać te informacje, aby pomyślnie połączyć się z bazą danych. Na przykład można utworzyć okno dialogowe, które będzie monitował użytkownika o te informacje, i dynamicznie kompiluje parametry połączenia w czasie wykonywania. W przypadku przechwycenia informacji na drodze do bazy danych może być nadal przyczyną problemu.
+Aby uzyskać więcej informacji, zobacz [Ochrona informacji o połączeniu](/dotnet/framework/data/adonet/protecting-connection-information).
 
-## <a name="to-save-a-connection-string-from-within-the-data-source-configuration-wizard"></a>Aby zapisać parametry połączenia z w ramach Kreatora konfiguracji źródła danych
-W **Kreatora konfiguracji źródła danych**, wybierz opcję, aby zapisać połączenie na **Zapisz parametry połączenia do pliku konfiguracji aplikacji** strony.
+## <a name="to-save-a-connection-string-from-within-the-data-source-configuration-wizard"></a>Aby zapisać parametry połączenia z poziomu kreatora konfiguracji źródła danych
+W **Kreatorze konfiguracji źródła danych**wybierz opcję zapisu połączenia na stronie **Zapisz parametry połączenia do pliku konfiguracji aplikacji** .
 
-## <a name="to-save-a-connection-string-directly-into-application-settings"></a>Aby zapisać parametry połączenia bezpośrednio w aplikacji ustawienia
-1. W **Eksploratora rozwiązań**, kliknij dwukrotnie **mój projekt** ikonę (Visual Basic) lub **właściwości** ikonę (C#) aby otworzyć **projektanta projektu**.
-1. Wybierz **ustawienia** kartę.
-1. Wprowadź **nazwa** ciągu połączenia. Podczas uzyskiwania dostępu do ciągu połączenia w kodzie należy odwoływać się do tej nazwy.
-1. Ustaw **typu** do (**parametry połączenia**).
-1. Pozostaw **zakres** równa **aplikacji**.
-1. Wpisz parametry połączenia do **wartość** pola, lub kliknij przycisk **wielokropka** przycisku (...) w **wartość** pole, aby otworzyć **właściwości połączenia** okno dialogowe Tworzenie parametrów połączenia.
+## <a name="to-save-a-connection-string-directly-into-application-settings"></a>Aby zapisać parametry połączenia bezpośrednio w ustawieniach aplikacji
+1. W **Eksplorator rozwiązań**kliknij dwukrotnie ikonę **mój projekt** (Visual Basic) lub ikonę **Właściwości** (C#), aby otworzyć **projektanta projektu**.
+1. Wybierz kartę **Ustawienia** .
+1. Wprowadź **nazwę** parametrów połączenia. Odnosi się do tej nazwy podczas uzyskiwania dostępu do parametrów połączenia w kodzie.
+1. Ustaw **Typ** na (**Parametry połączenia**).
+1. Pozostaw **zakres** ustawiony na wartość **aplikacja**.
+1. Wpisz parametry połączenia w polu **wartość** lub kliknij przycisk **wielokropka** (...) w polu **wartość** , aby otworzyć okno dialogowe **Właściwości połączenia** w celu skompilowania parametrów połączenia.
 
-## <a name="edit-connection-strings-stored-in-application-settings"></a>Edytuj parametry połączenia przechowywana w ustawieniach aplikacji
-Możesz zmodyfikować informacje o połączeniu, który został zapisany w ustawieniach aplikacji przy użyciu **projektanta projektu**.
+## <a name="edit-connection-strings-stored-in-application-settings"></a>Edytuj parametry połączenia przechowywane w ustawieniach aplikacji
+Informacje o połączeniu zapisane w ustawieniach aplikacji można zmodyfikować przy użyciu **projektanta projektu**.
 
-### <a name="to-edit-a-connection-string-stored-in-application-settings"></a>Aby edytować ciąg połączenia przechowywana w ustawieniach aplikacji
-1. W **Eksploratora rozwiązań**, kliknij dwukrotnie **mój projekt** ikonę (Visual Basic) lub **właściwości** ikonę (C#) aby otworzyć **projektanta projektu**.
-1. Wybierz **ustawienia** kartę.
-1. Znajdź połączenie, o których chcesz edytować, a następnie zaznacz tekst w **wartość** pola.
-1. Edytuj parametry połączenia w **wartość** pola, lub kliknij przycisk **wielokropka** przycisku (...) w **wartość** pole, aby edytować połączenie za pomocą **połączenia Właściwości** okno dialogowe.
+### <a name="to-edit-a-connection-string-stored-in-application-settings"></a>Aby edytować parametry połączenia przechowywane w ustawieniach aplikacji
+1. W **Eksplorator rozwiązań**kliknij dwukrotnie ikonę **mój projekt** (Visual Basic) lub ikonę **Właściwości** (C#), aby otworzyć **projektanta projektu**.
+1. Wybierz kartę **Ustawienia** .
+1. Znajdź połączenie, które chcesz edytować, a następnie wybierz tekst w polu **wartość** .
+1. Edytuj parametry połączenia w polu **wartość** lub kliknij przycisk **wielokropka** (...) w polu **wartość** , aby edytować połączenie przy użyciu okna dialogowego **Właściwości połączenia** .
 
 ## <a name="edit-connection-strings-for-datasets"></a>Edytuj parametry połączenia dla zestawów danych
-Można zmodyfikować informacje o połączeniu dla każdy obiekt TableAdapter w zestawie danych.
+Informacje o połączeniu dla każdego TableAdapteru można zmodyfikować w zestawie danych.
 
-### <a name="to-edit-a-connection-string-for-a-tableadapter-in-a-dataset"></a>Aby edytować parametry połączenia dla TableAdapter w zestawie danych
-1. W **Eksploratora rozwiązań**, kliknij dwukrotnie zestaw danych (**XSD** pliku) zawierający połączenia, którą chcesz edytować.
-1. Wybierz **TableAdapter** lub kwerendę, która ma połączenie, którą chcesz edytować.
-1. W **właściwości** okna, rozwiń węzeł **węzła połączenia**.
-1. Aby szybko zmodyfikować parametry połączenia, należy edytować **ConnectionString** właściwości, lub kliknij strzałkę w dół na **połączenia** właściwości i wybierz polecenie **nowe połączenie**.
+### <a name="to-edit-a-connection-string-for-a-tableadapter-in-a-dataset"></a>Aby edytować parametry połączenia dla elementu TableAdapter w zestawie danych
+1. W **Eksplorator rozwiązań**kliknij dwukrotnie zestaw danych (plik**XSD** ), który ma połączenie, które chcesz edytować.
+1. Wybierz **TableAdapter** lub zapytanie z połączeniem, które chcesz edytować.
+1. W oknie **Właściwości** rozwiń **węzeł połączenie**.
+1. Aby szybko zmodyfikować parametry połączenia, Edytuj Właściwość **ConnectionString** lub kliknij strzałkę w dół we właściwości **połączenie** i wybierz pozycję **nowe połączenie**.
 
 ## <a name="security"></a>Zabezpieczenia
-Przechowywanie poufnych informacji (na przykład hasło) w ciągu połączenia mogą wpływać na bezpieczeństwo aplikacji. Korzysta ze zintegrowanych zabezpieczeń Windows jest Bezpieczniejszym sposobem na kontrolowanie dostępu do bazy danych.
-Aby uzyskać więcej informacji, zobacz [ochrona informacji o połączeniu](/dotnet/framework/data/adonet/protecting-connection-information).
+Przechowywanie poufnych informacji (takich jak hasło) w ciągu połączenia może wpłynąć na bezpieczeństwo aplikacji. Używanie zintegrowanych zabezpieczeń systemu Windows jest bezpieczniejszym sposobem na kontrolowanie dostępu do bazy danych.
+Aby uzyskać więcej informacji, zobacz [Ochrona informacji o połączeniu](/dotnet/framework/data/adonet/protecting-connection-information).
 
 ## <a name="see-also"></a>Zobacz także
 

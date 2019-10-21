@@ -1,5 +1,5 @@
 ---
-title: Zarządzanie oknem podglądu pomocy | Dokumentacja firmy Microsoft
+title: Zarządzanie oknem podglądu pomocy | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-help-viewer
@@ -9,28 +9,28 @@ helpviewer_keywords:
 - Help Viewer 2.0, restoring the default window layout
 ms.assetid: 98625016-acce-46c9-9b5a-2107d2939a5e
 caps.latest.revision: 9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8931b37805e1f24dfaf7fad35a70434da3ed9ebf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9d8e386e505e50f17959fb9fc33de4bf8175e95c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68186077"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651394"
 ---
 # <a name="manage-the-help-viewer-window"></a>Zarządzanie oknem Podglądu Pomocy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W Podglądzie pomocy można dostosować układ okna.  
-  
-## <a name="docking-tabs"></a>Dokowanie kart  
- Podgląd pomocy obsługuje standardowe funkcje dokowania. Domyślnie wszystkie karty w Podglądzie pomocy są zadokowane, ale możesz przenieść je, zmieniać ich rozmiar, dokować w innych lokalizacjach i "zwalniać", aby były wyświetlane jako niezależne podrzędne okna.  
-  
- Aby przywrócić układ domyślny okna podglądu pomocy, otwórz **Opcje podglądu** okna dialogowego pole, a następnie wybierz **resetowania** przycisku.  
-  
-## <a name="opening-a-topic-in-a-new-tab"></a>Otwieranie tematu na nowej karcie  
- Wybierz temat w dowolnej karcie nawigacji i następnie wybierz klawisze Ctrl + Enter kluczy.  
-  
-## <a name="minimize-a-navigation-tab"></a>Minimalizuj kartę nawigacji  
- Utwórz więcej miejsca na wyświetlanie tematów wybierając ikonę pin dla kart nawigacji. Gdy te karty są zminimalizowane, tylko ich etykiety pojawiają się w najbliższej krawędzi okna. Aby przywrócić karty, wybierz etykietę dowolnej karty, a następnie ponownie wybierz ikonę pinezki.
+W podglądzie pomocy można dostosować układ okna.
+
+## <a name="docking-tabs"></a>Dokowanie kart
+ Podgląd pomocy obsługuje standardowe funkcje dokowania. Domyślnie wszystkie karty w podglądzie pomocy są zadokowane, ale można je przenosić, zmieniać ich rozmiar, dokować w innych lokalizacjach i "zmiennoprzecinkowe", aby były wyświetlane jako niezależne okna podrzędne.
+
+ Aby przywrócić domyślny układ okna podglądu pomocy, Otwórz okno dialogowe **Opcje podglądu** , a następnie wybierz przycisk **Resetuj** .
+
+## <a name="opening-a-topic-in-a-new-tab"></a>Otwieranie tematu na nowej karcie
+ Wybierz temat na dowolnej karcie nawigacyjnej, a następnie wybierz klawisze CTRL + ENTER.
+
+## <a name="minimize-a-navigation-tab"></a>Minimalizowanie karty nawigacji
+ Utwórz więcej miejsca do wyświetlania tematów, wybierając ikonę pinezki dla kart nawigacji. Gdy karty są zminimalizowane, tylko ich etykiety pojawiają się na najbliższej krawędzi okna. Aby przywrócić karty, wybierz etykietę dowolnej karty, a następnie ponownie wybierz ikonę pinezki.

@@ -5,21 +5,21 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Class Designer [Visual Studio], structures
 ms.assetid: bad18ab6-d956-47a6-a413-811cc26db5f5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e9b8e81ee25e081a324a8520317fa57a1314ccd0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: da786e6f598b4b28aeb7758df41f54ea23c4185d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975037"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647595"
 ---
-# <a name="visual-c-structures-in-class-designer"></a>Struktury Visual C++ w w Projektancie klas
+# <a name="visual-c-structures-in-class-designer"></a>Struktury C++ wizualizacji w Projektant klas
 
-**Projektant klasy** obsługuje struktury, C++, które są zadeklarowane za pomocą słowa kluczowego `struct`. Poniżej znajduje się przykład:
+**Projektant klas** obsługuje C++ struktury, które są zadeklarowane za pomocą słowa kluczowego `struct`. Oto przykład:
 
 ```cpp
 struct MyStructure
@@ -30,11 +30,11 @@ struct MyStructure
 };
 ```
 
-Aby uzyskać więcej informacji o korzystaniu z `struct` typu, zobacz [struktury](/cpp/cpp/struct-cpp).
+Aby uzyskać więcej informacji o używaniu typu `struct`, zobacz [struct](/cpp/cpp/struct-cpp).
 
-Kształt struktury języka C++ na diagramie klasy wygląda i działa jak kształt klasy, z tą różnicą, że czyta etykietę **struktury** i ma ostre rogi zamiast zaokrąglone rogi.
+Kształt C++ struktury na diagramie klas wygląda i działa jak kształt klasy, z tą różnicą, że etykieta odczytuje **strukturę** i ma kwadratowe rogi zamiast zaokrąglonych rogów.
 
-|Element Code|Widok projektanta klas|
+|Element Code|Widok Projektant klas|
 |------------------| - |
 |`struct StructureName {};`|**StructureName**<br /><br /> Struct|
 

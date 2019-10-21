@@ -8,51 +8,51 @@ helpviewer_keywords:
 - editors, windows management
 - Code Editor, windows management
 ms.assetid: 340143d4-8a71-490d-823e-162b276f4c6d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a8b6d1d4c39f09382dd0e4a12660bed31ad9b2d
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: 3493a70bd1257194f8c95a58eb6c2890d83ed418
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531941"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645809"
 ---
 # <a name="how-to-manage-editor-windows"></a>Instrukcje: Zarządzanie oknami edytora
 
-Możesz jest od razu pracować nad kodem w kilku lokalizacjach. W tym przez podział okna edytora lub przez otwarcie kilka wystąpień okna edytora.
+Można korzystać z kodu w kilku lokalizacjach jednocześnie. W tym celu należy podzielić się oknem edytora lub otwierając kilka wystąpień okna edytora.
 
 > [!NOTE]
 > Nie wszystkie okna edytora obsługują wiele wystąpień.
 
-## <a name="split-an-editor-window"></a>Podziel okno edytora
+## <a name="split-an-editor-window"></a>Dzielenie okna edytora
 
-Wystąpienie okno edytora można podzielić na dwa oddzielne widoki w celu ułatwienia edycji.
+Wystąpienie okna edytora można podzielić na dwa osobne widoki w celu ułatwienia edycji.
 
 ### <a name="to-split-a-pane"></a>Aby podzielić okienko
 
-1. Kliknij w oknie edytora, aby ustawić fokus.
+1. Kliknij w oknie edytora, aby nadać fokus.
 
-2. Z **okna** menu, wybierz opcję **podziału**.
+2. W menu **okno** wybierz opcję **Podziel**.
 
-     Obszar edytowania dzieli się na dwie części oddzielone pasek podziału. Można przewijać te okienka niezależnie, aby wyświetlić i edytować różne części aktywnego dokumentu w tym samym czasie. Wszelkie zmiany wprowadzone w jednym okienku są odzwierciedlane w innych.
+     Obszar edycji dzieli się na dwa okienka oddzielone paskiem podziału. Można przewijać te okienka niezależnie, aby wyświetlać i edytować różne części aktywnego dokumentu w tym samym czasie. Wszelkie zmiany wprowadzone w jednym okienku są odzwierciedlane w drugim.
 
     > [!TIP]
-    > Aby powiększyć jedno okienko niż ten drugi, przeciągnij pasek podziału rosnące i malejące.
+    > Aby jedno okienko było większe niż pozostałe, przeciągnij pasek podziału w górę lub w dół.
 
-### <a name="to-return-to-single-pane-view"></a>Aby powrócić do widoku
+### <a name="to-return-to-single-pane-view"></a>Aby powrócić do widoku pojedynczego okienka
 
-- Z **okna** menu, wybierz opcję **Usuń podział**.
+- W menu **okno** wybierz polecenie **Usuń podział**.
 
-## <a name="create-new-windows"></a>Tworzenie nowych okien
+## <a name="create-new-windows"></a>Utwórz nowe okna
 
-Można również utworzyć wiele wystąpień okno edytora. Ta funkcja umożliwia otwarcie długich dokumentu w więcej niż jedno wystąpienie edytora, tak że można wyświetlać i edytować poszczególne sekcje jednocześnie w oknach Edytora oddzielny, pełny.
+Możesz również utworzyć wiele wystąpień okna edytora. Ta funkcja umożliwia otwarcie długiego dokumentu w więcej niż jednym wystąpieniu edytora, dzięki czemu można wyświetlać i edytować różne sekcje jednocześnie w oddzielnych oknach edytora w pełnym rozmiarze.
 
-- Na **okna** menu, kliknij przycisk **nowe okno**.
+- W menu **okno** kliknij pozycję **nowe okno**.
 
-   Nowe wystąpienie z kartami edytora zostanie dodany.
+   Dodawane jest nowe wystąpienie edytora z kartami.
 
 ## <a name="see-also"></a>Zobacz także
 

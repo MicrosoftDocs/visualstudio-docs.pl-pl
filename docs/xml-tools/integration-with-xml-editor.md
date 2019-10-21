@@ -1,33 +1,33 @@
 ---
-title: Projektant schematu XML Integracja z edytorem XML
+title: Integracja projektanta schematu XML z edytorem XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 43d7a8e6-bd94-4407-a800-15a145c74223
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8a233c0a1bbd456e08fe5343adae8328c5cb774
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b9df2d97a6ff68299ab70545683970188eb1bfea
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001879"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72601782"
 ---
 # <a name="integration-with-xml-editor"></a>Integracja z edytorem XML
 
-Projektant schematu XML jest zintegrowany z edytora XML. Jeśli zmodyfikujesz plik XSD w edytorze XML, zmiany zostaną odzwierciedlone w [Eksploratora schematu XML](../xml-tools/xml-schema-explorer.md). Jeśli masz [widoku wykresu](../xml-tools/graph-view.md) lub [widoku modelu zawartości](../xml-tools/content-model-view.md) otwarte, zmiany zostaną także odzwierciedlone istnieje. Możesz przechodzić między projektanta schematu XML i edytorem XML w następujący sposób:
+Projektant schematu XML jest zintegrowany z edytorem XML. Jeśli zmodyfikujesz plik XSD w edytorze XML, zmiana zostanie odzwierciedlona w [Eksploratorze schematu XML](../xml-tools/xml-schema-explorer.md). Jeśli masz [Widok wykresu](../xml-tools/graph-view.md) lub otwarty [Widok modelu zawartości](../xml-tools/content-model-view.md) , zmiana zostanie również odzwierciedlona. Możesz nawigować między projektantem schematu XML a edytorem XML w następujący sposób:
 
-- W edytorze XML, kliknij prawym przyciskiem myszy węzeł, a następnie wybierz **Pokaż w Eksplorator schematu XML**.
+- W edytorze XML kliknij prawym przyciskiem myszy węzeł i wybierz polecenie **Pokaż w Eksploratorze schematu XML**.
 
-- W widoku wykresu i **Eksploratora schematu XML**, kliknij dwukrotnie węzeł, lub kliknij prawym przyciskiem myszy węzeł i wybierz pozycję **Wyświetl kod**. W widoku modelu zawartości, kliknij prawym przyciskiem myszy węzeł, a następnie wybierz **Wyświetl kod**.
+- W widoku wykresu i w **Eksploratorze schematu XML**, kliknij dwukrotnie węzeł, lub kliknij prawym przyciskiem myszy węzeł i wybierz polecenie **Wyświetl kod**. W widoku model zawartości kliknij prawym przyciskiem myszy węzeł i wybierz polecenie **Wyświetl kod**.
 
-Poniższy zrzut ekranu przedstawia schematu XML, który jest otwierany w **Eksploratora schematu XML**. **Eksploratora schematu XML** Wyświetla schemat w widoku drzewa. Edytor XML przedstawia widok tekstu węzła, który jest aktualnie aktywne w **Eksploratora schematu XML**.
+Poniższy zrzut ekranu przedstawia schemat XML otwarty w **Eksploratorze schematu XML**. **Eksplorator schematu XML** Wyświetla zestaw schematów w widoku drzewa. Edytor XML Wyświetla widok tekstu węzła, który jest obecnie aktywny w **Eksploratorze schematu XML**.
 
 ![XSDDesignerWithXMLEditor](../xml-tools/media/xsddesignerwithxmleditor.gif)
 
-Czasami warto wyświetlić kod w edytorze XML i graficzny Projektant obok siebie. Aby wyświetlić oba pliki, w tym samym czasie, kliknij prawym przyciskiem myszy w dowolnym miejscu w edytorze XML, a następnie wybierz **Projektant widoków**. Wybierz z menu programu Visual Studio Windows **nowe poziomy (lub w pionie) grupy kart**.
+Czasami warto zobaczyć kod w edytorze XML i projektanta graficznego obok siebie. Aby wyświetlić oba pliki w tym samym czasie, kliknij prawym przyciskiem myszy w dowolnym miejscu w edytorze XML i wybierz polecenie **Projektant widoków**. W menu programu Visual Studio systemu Windows wybierz kolejno pozycje **Nowa pozioma (lub pionowa) Grupa kart**.
 
 ![XSDDesignerWithXMLEditorAndCMV](../xml-tools/media/xsddesignerwithxmleditorandcmv.gif)
 
