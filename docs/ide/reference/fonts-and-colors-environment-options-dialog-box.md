@@ -20,21 +20,21 @@ helpviewer_keywords:
 - defaults, colors
 - printers, customizing
 ms.assetid: c767d302-51ed-47a8-a527-c07bce2aa485
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b05d6651f865a300a0c065c5e0a275cb29fd309
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 527c01629fbff856748a50d393ca5df2a413d056
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605418"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667017"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Czcionki i kolory, środowisko, opcje — Okno dialogowe
 
-Na stronie **czcionki i kolory** okna dialogowego **Opcje** można utworzyć niestandardową czcionkę i schemat kolorów dla różnych elementów interfejsu użytkownika w zintegrowanym środowisku programistycznym (IDE). Możesz uzyskać dostęp do tego okna dialogowego, klikając**Opcje** **Narzędzia** > , a następnie wybierając**czcionki i kolory** **środowiska** > .
+Na stronie **czcionki i kolory** okna dialogowego **Opcje** można utworzyć niestandardową czcionkę i schemat kolorów dla różnych elementów interfejsu użytkownika w zintegrowanym środowisku programistycznym (IDE). Możesz uzyskać dostęp do tego okna dialogowego, klikając pozycję **narzędzia**  > **Opcje**, a następnie wybierając pozycję **środowisko**  > **czcionki i kolory**.
 
 Zmiany schematu kolorów nie są stosowane podczas sesji, w której zostały wprowadzone. Zmiany kolorów można oszacować, otwierając inne wystąpienie programu Visual Studio i podając warunki, w których zmiany mają być stosowane.
 
@@ -111,18 +111,18 @@ Do niektórych elementów wyświetlanych należą:
 |**Dopasowywanie nawiasów klamrowych (wyróżnianie)**|Wyróżnianie, które jest zwykle pogrubione dla pasujących nawiasów klamrowych.|
 |**Dopasowywanie nawiasów klamrowych (prostokąt)**|Wyróżnianie zwykle szarego prostokąta w tle.|
 |**Punkt przerwania (wyłączony)**|Nie używany.|
-|**Punkt przerwania (włączony)**|Określa kolor wyróżniania dla instrukcji lub linii zawierających proste punkty przerwania. Ta opcja ma zastosowanie tylko wtedy, gdy punkty przerwania na poziomie instrukcji są aktywne lub opcja Wyróżnij **cały wiersz źródła dla punktów przerwania lub bieżącej instrukcji** jest zaznaczona w [oknie dialogowym ogólne, debugowanie, opcje](../../debugger/general-debugging-options-dialog-box.md).|
-|**Punkt przerwania (błąd)**|Określa kolor wyróżnienia dla instrukcji lub wierszy zawierających punkty przerwania, które są w stanie błędu. Dotyczy tylko sytuacji, gdy punkty przerwania na poziomie instrukcji są aktywne lub opcja Wyróżnij **cały wiersz źródła dla punktów przerwania lub bieżącej instrukcji** jest zaznaczona w [oknie dialogowym ogólne, debugowanie, opcje](../../debugger/general-debugging-options-dialog-box.md).|
-|**Punkt przerwania (ostrzeżenie)**|Określa kolor wyróżnienia dla instrukcji lub wierszy zawierających punkty przerwania, które są w stanie ostrzegawczym. Dotyczy tylko sytuacji, gdy punkty przerwania na poziomie instrukcji są aktywne lub opcja Wyróżnij **cały wiersz źródła dla punktów przerwania lub bieżącej instrukcji** jest zaznaczona w [oknie dialogowym ogólne, debugowanie, opcje](../../debugger/general-debugging-options-dialog-box.md).|
-|**Punkt przerwania — zaawansowany (wyłączony)**|Określa kolor wyróżnienia dla instrukcji lub linii zawierających wyłączone punkty przerwania, które zostały obliczone warunkowo lub trafień. Dotyczy tylko sytuacji, gdy punkty przerwania na poziomie instrukcji są aktywne lub opcja Wyróżnij **cały wiersz źródła dla punktów przerwania lub bieżącej instrukcji** jest zaznaczona w [oknie dialogowym ogólne, debugowanie, opcje](../../debugger/general-debugging-options-dialog-box.md).|
-|**Punkt przerwania — zaawansowany (włączony)**|Określa kolor wyróżnienia dla instrukcji lub linii zawierających punkty przerwania, które są zliczane lub trafień. Dotyczy tylko sytuacji, gdy punkty przerwania na poziomie instrukcji są aktywne lub opcja Wyróżnij **cały wiersz źródła dla punktów przerwania lub bieżącej instrukcji** jest zaznaczona w [oknie dialogowym ogólne, debugowanie, opcje](../../debugger/general-debugging-options-dialog-box.md).|
-|**Punkt przerwania — zaawansowany (błąd)**|Określa kolor wyróżnienia instrukcji lub linii zawierających punkty przerwania, które znajdują się w stanie błędu. Dotyczy tylko sytuacji, gdy punkty przerwania na poziomie instrukcji są aktywne lub opcja Wyróżnij **cały wiersz źródła dla punktów przerwania lub bieżącej instrukcji** jest zaznaczona w [oknie dialogowym ogólne, debugowanie, opcje](../../debugger/general-debugging-options-dialog-box.md).|
-|**Punkt przerwania — zaawansowany (ostrzeżenie)**|Określa kolor wyróżnienia dla instrukcji lub linii zawierających punkty przerwania, które są w stanie ostrzeżenia. Dotyczy tylko sytuacji, gdy punkty przerwania na poziomie instrukcji są aktywne lub opcja Wyróżnij **cały wiersz źródła dla punktów przerwania lub bieżącej instrukcji** jest zaznaczona w [oknie dialogowym ogólne, debugowanie, opcje](../../debugger/general-debugging-options-dialog-box.md).|
+|**Punkt przerwania (włączony)**|Określa kolor wyróżniania dla instrukcji lub linii zawierających proste punkty przerwania. Ta opcja ma zastosowanie tylko wtedy, gdy punkty przerwania na poziomie instrukcji są aktywne lub opcja **Wyróżnij cały wiersz źródła dla punktów przerwania lub bieżącej instrukcji** jest zaznaczona w [oknie dialogowym ogólne, debugowanie, opcje](../../debugger/general-debugging-options-dialog-box.md).|
+|**Punkt przerwania (błąd)**|Określa kolor wyróżnienia dla instrukcji lub wierszy zawierających punkty przerwania, które są w stanie błędu. Dotyczy tylko sytuacji, gdy punkty przerwania na poziomie instrukcji są aktywne lub opcja **Wyróżnij cały wiersz źródła dla punktów przerwania lub bieżącej instrukcji** jest zaznaczona w [oknie dialogowym ogólne, debugowanie, opcje](../../debugger/general-debugging-options-dialog-box.md).|
+|**Punkt przerwania (ostrzeżenie)**|Określa kolor wyróżnienia dla instrukcji lub wierszy zawierających punkty przerwania, które są w stanie ostrzegawczym. Dotyczy tylko sytuacji, gdy punkty przerwania na poziomie instrukcji są aktywne lub opcja **Wyróżnij cały wiersz źródła dla punktów przerwania lub bieżącej instrukcji** jest zaznaczona w [oknie dialogowym ogólne, debugowanie, opcje](../../debugger/general-debugging-options-dialog-box.md).|
+|**Punkt przerwania — zaawansowany (wyłączony)**|Określa kolor wyróżnienia dla instrukcji lub linii zawierających wyłączone punkty przerwania, które zostały obliczone warunkowo lub trafień. Dotyczy tylko sytuacji, gdy punkty przerwania na poziomie instrukcji są aktywne lub opcja **Wyróżnij cały wiersz źródła dla punktów przerwania lub bieżącej instrukcji** jest zaznaczona w [oknie dialogowym ogólne, debugowanie, opcje](../../debugger/general-debugging-options-dialog-box.md).|
+|**Punkt przerwania — zaawansowany (włączony)**|Określa kolor wyróżnienia dla instrukcji lub linii zawierających punkty przerwania, które są zliczane lub trafień. Dotyczy tylko sytuacji, gdy punkty przerwania na poziomie instrukcji są aktywne lub opcja **Wyróżnij cały wiersz źródła dla punktów przerwania lub bieżącej instrukcji** jest zaznaczona w [oknie dialogowym ogólne, debugowanie, opcje](../../debugger/general-debugging-options-dialog-box.md).|
+|**Punkt przerwania — zaawansowany (błąd)**|Określa kolor wyróżnienia instrukcji lub linii zawierających punkty przerwania, które znajdują się w stanie błędu. Dotyczy tylko sytuacji, gdy punkty przerwania na poziomie instrukcji są aktywne lub opcja **Wyróżnij cały wiersz źródła dla punktów przerwania lub bieżącej instrukcji** jest zaznaczona w [oknie dialogowym ogólne, debugowanie, opcje](../../debugger/general-debugging-options-dialog-box.md).|
+|**Punkt przerwania — zaawansowany (ostrzeżenie)**|Określa kolor wyróżnienia dla instrukcji lub linii zawierających punkty przerwania, które są w stanie ostrzeżenia. Dotyczy tylko sytuacji, gdy punkty przerwania na poziomie instrukcji są aktywne lub opcja **Wyróżnij cały wiersz źródła dla punktów przerwania lub bieżącej instrukcji** jest zaznaczona w [oknie dialogowym ogólne, debugowanie, opcje](../../debugger/general-debugging-options-dialog-box.md).|
 |**Punkt przerwania — zamapowany (wyłączony)**|Określa kolor wyróżnienia dla instrukcji lub wierszy zawierających wyłączone zmapowane punkty przerwania. Dotyczy debugowania ASP lub **ASP.NET, jeśli** są aktywne punkty przerwania na poziomie instrukcji lub w [oknie dialogowym ogólne, debugowanie, opcje](../../debugger/general-debugging-options-dialog-box.md).|
 |**Punkt przerwania — zamapowany (włączony)**|Określa kolor wyróżnienia dla instrukcji lub linii zawierających zmapowane punkty przerwania. Dotyczy debugowania ASP lub **ASP.NET, jeśli** są aktywne punkty przerwania na poziomie instrukcji lub w [oknie dialogowym ogólne, debugowanie, opcje](../../debugger/general-debugging-options-dialog-box.md).|
 |**Punkt przerwania — zamapowany (błąd)**|Określa kolor wyróżnienia dla instrukcji lub linii zawierających zamapowane punkty przerwania w stanie błędu. Dotyczy debugowania ASP lub **ASP.NET, jeśli** są aktywne punkty przerwania na poziomie instrukcji lub w [oknie dialogowym ogólne, debugowanie, opcje](../../debugger/general-debugging-options-dialog-box.md).|
 |**Punkt przerwania — zamapowany (ostrzeżenie)**|Określa kolor wyróżnienia dla instrukcji lub linii zawierających zamapowane punkty przerwania w stanie ostrzegawczym. Dotyczy debugowania ASP lub **ASP.NET, jeśli** są aktywne punkty przerwania na poziomie instrukcji lub w [oknie dialogowym ogólne, debugowanie, opcje](../../debugger/general-debugging-options-dialog-box.md).|
-|**Słowa kluczoweC++ języka C/User**|Stała w ramach określonego pliku kodu zdefiniowanego za pomocą `#define` dyrektywy.|
+|**Słowa kluczoweC++ języka C/User**|Stała w ramach określonego pliku kodu zdefiniowanego za pomocą dyrektywy `#define`.|
 |**Wywołanie zwrotne**|Określa kolor wyróżnienia dla instrukcji lub wierszy źródła, które wskazują punkty powrotu wywołania, gdy kontekst jest przełączany do nienajwyższej ramki stosu podczas debugowania.|
 |**Pole zależne od fragmentu kodu**|Pole, które zostanie zaktualizowane po zmodyfikowaniu bieżącego pola edytowalnego.|
 |**Pole fragmentu kodu**|Pole można edytować, gdy fragment kodu jest aktywny.|
@@ -132,7 +132,7 @@ Do niektórych elementów wyświetlanych należą:
 |**Obszar nieobjęty pokryciem**|Kod, który nie został objęty testem jednostkowym.|
 |**Obszar pokrycia częściowo naruszony**|Kod, który został częściowo objęty testem jednostkowym.|
 |**Obszar objęty pokryciem**|Kod, który został całkowicie objęty testem jednostkowym.|
-|**Komentarz CSS**|Komentarz w kaskadowe arkusze stylów. Na przykład:<br /><br /> /* komentarz\*/|
+|**Komentarz CSS**|Komentarz w kaskadowe arkusze stylów. Na przykład:<br /><br /> /* \* komentarza /|
 |**Słowo kluczowe CSS**|Słowa kluczowe w kaskadowym arkuszu stylów.|
 |**Nazwa właściwości CSS**|Nazwa właściwości, na przykład tło.|
 |**Wartość właściwości CSS**|Wartość przypisana do właściwości, takiej jak niebieska.|
@@ -149,13 +149,13 @@ Do niektórych elementów wyświetlanych należą:
 |**Rozmontaż tekstu**|Kolor tekstu służący do wyświetlania wartości op-Code i danych w oknie **demontażu** .|
 |**Wykluczony kod**|Kod, który nie jest kompilowany, na warunkową dyrektywę preprocesora, taką jak `#if`.|
 |**Identyfikatora**|Identyfikatory w kodzie, takie jak nazwy klas, metody nazw i nazwy zmiennych.|
-|**Keyword**|Słowa kluczowe dla danego języka, które są zarezerwowane. Na przykład: Klasa i przestrzeń nazw.|
+|**Kodu**|Słowa kluczowe dla danego języka, które są zarezerwowane. Na przykład: Klasa i przestrzeń nazw.|
 |**Adres pamięci**|Kolor tekstu używanego do wyświetlania kolumny Address w oknie **pamięci** .|
 |**Pamięć zmieniła się**|Kolor tekstu używanego do wyświetlania zmienionych danych w oknie **pamięci** .|
 |**Dane pamięci**|Kolor tekstu używanego do wyświetlania danych w oknie **pamięci** .|
 |**Pamięć nieczytelna**|Kolor tekstu służący do wyświetlania nieczytelnych obszarów pamięci w oknie **pamięci** .|
 |**Liczba**|Liczba w kodzie, która reprezentuje rzeczywistą wartość liczbową.|
-|**Operator**|Operatory, takie jak +,-i! =.|
+|**Zakład**|Operatory, takie jak +,-i! =.|
 |**Inny błąd**|Inne typy błędów, które nie są objęte innymi zygzakami błędów. Obecnie obejmuje to edycję prosta w obszarze Edytuj i Kontynuuj.|
 |**Preprocesor — słowo kluczowe**|Słowa kluczowe używane przez preprocesor, takie jak #include.|
 |**Region tylko do odczytu**|Kod, którego nie można edytować. Przykład kodu wyświetlanego w oknie widoku definicji kodu lub w kodzie, którego nie można modyfikować podczas Edytuj i Kontynuuj.|
@@ -172,13 +172,13 @@ Do niektórych elementów wyświetlanych należą:
 |**Błąd składniowy**|Analizuj błędy.|
 |**Skrót Lista zadań**|Jeśli do wiersza zostanie dodany skrót **Lista zadań** , a margines wskaźnika jest wyłączony, wiersz zostanie wyróżniony.|
 |**Punkt śledzenia (wyłączone)**|Nie używany.|
-|**Punkt śledzenia (włączone)**|Określa kolor wyróżnienia dla instrukcji lub linii zawierających prostą punkty śledzenia. Ta opcja ma zastosowanie tylko wtedy, gdy punkty śledzenia na poziomie instrukcji są aktywne lub opcja Wyróżnij **cały wiersz źródłowy dla punktów przerwania lub bieżącej instrukcji** jest zaznaczona w [oknie dialogowym ogólne, debugowanie, opcje](../../debugger/general-debugging-options-dialog-box.md).|
-|**Punkt śledzenia (błąd)**|Określa kolor wyróżnienia dla instrukcji lub wierszy zawierających punkty śledzenia, które są w stanie błędu. Ta opcja ma zastosowanie tylko wtedy, gdy punkty śledzenia na poziomie instrukcji są aktywne lub opcja Wyróżnij **cały wiersz źródłowy dla punktów przerwania lub bieżącej instrukcji** jest zaznaczona w [oknie dialogowym ogólne, debugowanie, opcje](../../debugger/general-debugging-options-dialog-box.md).|
-|**Punkt śledzenia (ostrzeżenie)**|Określa kolor wyróżnienia dla instrukcji lub wierszy zawierających punkty śledzenia, które są w stanie ostrzegawczym. Ta opcja ma zastosowanie tylko wtedy, gdy punkty śledzenia na poziomie instrukcji są aktywne lub opcja Wyróżnij **cały wiersz źródłowy dla punktów przerwania lub bieżącej instrukcji** jest zaznaczona w [oknie dialogowym ogólne, debugowanie, opcje](../../debugger/general-debugging-options-dialog-box.md).|
-|**Punkt śledzenia — zaawansowany (wyłączony)**|Określa kolor wyróżnienia dla instrukcji lub linii zawierających wyłączoną punkty śledzenia warunkowe lub z trafieniem. Ta opcja ma zastosowanie tylko wtedy, gdy punkty śledzenia na poziomie instrukcji są aktywne lub opcja Wyróżnij **cały wiersz źródłowy dla punktów przerwania lub bieżącej instrukcji** jest zaznaczona w [oknie dialogowym ogólne, debugowanie, opcje](../../debugger/general-debugging-options-dialog-box.md).|
-|**Punkt śledzenia — zaawansowany (włączony)**|Określa kolor wyróżnienia dla instrukcji lub linii zawierających punkty śledzenia lub zliczane jako trafień. Ta opcja ma zastosowanie tylko wtedy, gdy punkty śledzenia na poziomie instrukcji są aktywne lub opcja Wyróżnij **cały wiersz źródłowy dla punktów przerwania lub bieżącej instrukcji** jest zaznaczona w [oknie dialogowym ogólne, debugowanie, opcje](../../debugger/general-debugging-options-dialog-box.md).|
-|**Punkt śledzenia — zaawansowany (błąd)**|Określa kolor wyróżnienia dla instrukcji lub wierszy zawierających punkty śledzenia lub zliczane jako trafień, które są w stanie błędu. Ta opcja ma zastosowanie tylko wtedy, gdy punkty śledzenia na poziomie instrukcji są aktywne lub opcja Wyróżnij **cały wiersz źródłowy dla punktów przerwania lub bieżącej instrukcji** jest zaznaczona w [oknie dialogowym ogólne, debugowanie, opcje](../../debugger/general-debugging-options-dialog-box.md).|
-|**Punkt śledzenia — zaawansowany (ostrzeżenie)**|Określa kolor wyróżnienia dla instrukcji lub linii zawierających punkty śledzenia lub zliczane jako trafień, które są w stanie ostrzegawczym. Ta opcja ma zastosowanie tylko wtedy, gdy punkty śledzenia na poziomie instrukcji są aktywne lub opcja Wyróżnij **cały wiersz źródłowy dla punktów przerwania lub bieżącej instrukcji** jest zaznaczona w [oknie dialogowym ogólne, debugowanie, opcje](../../debugger/general-debugging-options-dialog-box.md).|
+|**Punkt śledzenia (włączone)**|Określa kolor wyróżnienia dla instrukcji lub linii zawierających prostą punkty śledzenia. Ta opcja ma zastosowanie tylko wtedy, gdy punkty śledzenia na poziomie instrukcji są aktywne lub opcja **Wyróżnij cały wiersz źródłowy dla punktów przerwania lub bieżącej instrukcji** jest zaznaczona w [oknie dialogowym ogólne, debugowanie, opcje](../../debugger/general-debugging-options-dialog-box.md).|
+|**Punkt śledzenia (błąd)**|Określa kolor wyróżnienia dla instrukcji lub wierszy zawierających punkty śledzenia, które są w stanie błędu. Ta opcja ma zastosowanie tylko wtedy, gdy punkty śledzenia na poziomie instrukcji są aktywne lub opcja **Wyróżnij cały wiersz źródłowy dla punktów przerwania lub bieżącej instrukcji** jest zaznaczona w [oknie dialogowym ogólne, debugowanie, opcje](../../debugger/general-debugging-options-dialog-box.md).|
+|**Punkt śledzenia (ostrzeżenie)**|Określa kolor wyróżnienia dla instrukcji lub wierszy zawierających punkty śledzenia, które są w stanie ostrzegawczym. Ta opcja ma zastosowanie tylko wtedy, gdy punkty śledzenia na poziomie instrukcji są aktywne lub opcja **Wyróżnij cały wiersz źródłowy dla punktów przerwania lub bieżącej instrukcji** jest zaznaczona w [oknie dialogowym ogólne, debugowanie, opcje](../../debugger/general-debugging-options-dialog-box.md).|
+|**Punkt śledzenia — zaawansowany (wyłączony)**|Określa kolor wyróżnienia dla instrukcji lub linii zawierających wyłączoną punkty śledzenia warunkowe lub z trafieniem. Ta opcja ma zastosowanie tylko wtedy, gdy punkty śledzenia na poziomie instrukcji są aktywne lub opcja **Wyróżnij cały wiersz źródłowy dla punktów przerwania lub bieżącej instrukcji** jest zaznaczona w [oknie dialogowym ogólne, debugowanie, opcje](../../debugger/general-debugging-options-dialog-box.md).|
+|**Punkt śledzenia — zaawansowany (włączony)**|Określa kolor wyróżnienia dla instrukcji lub linii zawierających punkty śledzenia lub zliczane jako trafień. Ta opcja ma zastosowanie tylko wtedy, gdy punkty śledzenia na poziomie instrukcji są aktywne lub opcja **Wyróżnij cały wiersz źródłowy dla punktów przerwania lub bieżącej instrukcji** jest zaznaczona w [oknie dialogowym ogólne, debugowanie, opcje](../../debugger/general-debugging-options-dialog-box.md).|
+|**Punkt śledzenia — zaawansowany (błąd)**|Określa kolor wyróżnienia dla instrukcji lub wierszy zawierających punkty śledzenia lub zliczane jako trafień, które są w stanie błędu. Ta opcja ma zastosowanie tylko wtedy, gdy punkty śledzenia na poziomie instrukcji są aktywne lub opcja **Wyróżnij cały wiersz źródłowy dla punktów przerwania lub bieżącej instrukcji** jest zaznaczona w [oknie dialogowym ogólne, debugowanie, opcje](../../debugger/general-debugging-options-dialog-box.md).|
+|**Punkt śledzenia — zaawansowany (ostrzeżenie)**|Określa kolor wyróżnienia dla instrukcji lub linii zawierających punkty śledzenia lub zliczane jako trafień, które są w stanie ostrzegawczym. Ta opcja ma zastosowanie tylko wtedy, gdy punkty śledzenia na poziomie instrukcji są aktywne lub opcja **Wyróżnij cały wiersz źródłowy dla punktów przerwania lub bieżącej instrukcji** jest zaznaczona w [oknie dialogowym ogólne, debugowanie, opcje](../../debugger/general-debugging-options-dialog-box.md).|
 |**Punkt śledzenia — zamapowany (wyłączony)**|Określa kolor wyróżnienia dla instrukcji lub wierszy zawierających wyłączone mapowane punkty śledzenia. Dotyczy debugowania ASP lub **ASP.NET, jeśli** są aktywne punkty przerwania na poziomie instrukcji lub w [oknie dialogowym ogólne, debugowanie, opcje](../../debugger/general-debugging-options-dialog-box.md).|
 |**Punkt śledzenia — zamapowany (włączony)**|Określa kolor wyróżnienia dla instrukcji lub linii zawierających zamapowane punkty śledzenia. Dotyczy debugowania ASP lub **ASP.NET, jeśli** są aktywne punkty przerwania na poziomie instrukcji lub w [oknie dialogowym ogólne, debugowanie, opcje](../../debugger/general-debugging-options-dialog-box.md).|
 |**Punkt śledzenia — zamapowany (błąd)**|Określa kolor wyróżnienia dla instrukcji lub wierszy zawierających zamapowane punkty śledzenia w stanie błędu. Dotyczy debugowania ASP lub **ASP.NET, jeśli** są aktywne punkty przerwania na poziomie instrukcji lub w [oknie dialogowym ogólne, debugowanie, opcje](../../debugger/general-debugging-options-dialog-box.md).|
@@ -191,17 +191,17 @@ Do niektórych elementów wyświetlanych należą:
 |**Typy użytkowników (interfejsy)**|Kolor typu dla interfejsów.|
 |**Typy użytkowników (typy wartości)**|Kolor typu dla typów wartości, takich jak struktury w C#.|
 |**Visual Basic znacznik tylko do odczytu**|Znacznik charakterystyczny dla Visual Basic używany do wyznaczania elementu EnC, takiego jak regiony wyjątków, definicja metody i ramki wywołania innego niż liść.|
-|**Ostrzeżenie**|Ostrzeżenia kompilatora.|
+|**Wyświetlania**|Ostrzeżenia kompilatora.|
 |**Ścieżka linii ostrzeżeń**|Używane dla linii ostrzeżeń analizy statycznej.|
 |**Atrybut XML**|Nazwy atrybutów.|
 |**Cudzysłowy atrybutu XML**|Znaki cudzysłowu dla atrybutów XML.|
 |**Wartość atrybutu XML**|Zawartość atrybutów XML.|
-|**Sekcja CDATA XML**|Zawartość \<![CDATA[...]]>.|
-|**Komentarz XML**|Zawartość \<>!----.|
-|**Ogranicznik XML**|Ograniczniki składni XML, w tym <, <?, <!, \<!--,-->,?\>, \<! [,]] > i [,].|
-|**Atrybut XML doc**|Wartość atrybutu dokumentacji XML, taka jak \<param Name = "I" >, gdzie "i" jest kolorem.|
+|**Sekcja CDATA XML**|Zawartość \<! [CDATA [...]] >.|
+|**Komentarz XML**|Zawartość \<!---->.|
+|**Ogranicznik XML**|Ograniczniki składni XML, w tym <, <?, <!, \<!--,-->,? \>, \<! [, ]] > i [,].|
+|**Atrybut XML doc**|Wartość atrybutu dokumentacji XML, taka jak \<param Name = "I" >, gdzie "I" jest kolorem.|
 |**Komentarz dokumentacji XML**|Komentarze ujęte w komentarzach dokumentacji XML.|
-|**Tag doc XML**|Tagi w komentarzach doc XML, takie jak<br /><br /> /// \<> podsumowania.|
+|**Tag doc XML**|Tagi w komentarzach doc XML, takie jak<br /><br /> ///  \<summary >.|
 |**Słowo kluczowe XML**|Słowa kluczowe DTD, takie jak CDATA, IDREF i nnazwa.|
 |**Nazwa XML**|Nazwy elementów i instrukcje przetwarzania nazwy docelowej.|
 |**Instrukcja przetwarzania XML**|Zawartość instrukcji przetwarzania, bez uwzględnienia nazwy docelowej.|
@@ -220,7 +220,7 @@ Elementy mogą dziedziczyć kolor pierwszego planu z innych elementów wyświetl
 
 Kolor wyświetlany dla elementu przy pierwszym otwarciu programu Visual Studio. Kliknięcie przycisku **Użyj ustawień domyślnych** spowoduje zresetowanie do tego koloru.
 
-**Custom**
+**Niestandardowy**
 
 Wyświetla okno dialogowe Kolor umożliwiające ustawienie niestandardowego koloru dla elementu zaznaczonego na liście elementy wyświetlania.
 
@@ -239,11 +239,11 @@ Elementy mogą dziedziczyć kolor tła z innych elementów wyświetlanych, takic
 
 Kolor wyświetlany dla elementu przy pierwszym otwarciu programu Visual Studio. Kliknięcie przycisku **Użyj ustawień domyślnych** spowoduje zresetowanie do tego koloru.
 
-**Custom**
+**Niestandardowy**
 
 Wyświetla okno dialogowe Kolor umożliwiające ustawienie niestandardowego koloru dla elementu zaznaczonego na liście elementy wyświetlania.
 
-**Bold**
+**Zapis**
 
 Zaznacz tę opcję, aby wyświetlić tekst wybranych **elementów wyświetlanych** w postaci pogrubionego tekstu. Tekst pogrubiony jest łatwiejszy do zidentyfikowania w edytorze.
 
@@ -254,4 +254,4 @@ Wyświetla przykładowy styl czcionki, rozmiar i schemat kolorów dla wybranych 
 ## <a name="see-also"></a>Zobacz także
 
 - [Opcje, okno dialogowe](../../ide/reference/options-dialog-box-visual-studio.md)
-- [Instrukcje: Zmiana czcionek i kolorów](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+- [Instrukcje: zmiana czcionek i kolorów](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

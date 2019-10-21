@@ -1,5 +1,5 @@
 ---
-title: ExistsInCollection&lt;T&gt; projektanta działań | Dokumentacja firmy Microsoft
+title: ExistsInCollection &lt;T &gt; — Projektant działań | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -8,40 +8,37 @@ f1_keywords:
 - System.Activities.Statements.ExistsInCollection`1.UI
 ms.assetid: 0acf9a13-caf5-4bb4-ba22-ec37d2b7267a
 caps.latest.revision: 6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 263bbf16c72bab5a42dc0ba1465d4c7062333071
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 08aabbcb7dbef2df9a3affa8589a9c6d4205ac58
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62952830"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656731"
 ---
-# <a name="existsincollectionlttgt-activity-designer"></a>ExistsInCollection&lt;T&gt; Projektant działań
-**ExistsInCollection\<T >** projektanta działań służy do tworzenia i konfigurowania <xref:System.Activities.Statements.ExistsInCollection%601> działania.  
-  
-## <a name="the-existsincollectiont-activity"></a>ExistsInCollection\<T > działania  
- <xref:System.Activities.Statements.ExistsInCollection%601> Działania określa, czy określony element istnieje w określonej kolekcji.  
-  
-### <a name="using-the-existsincollectiont-activity-designer"></a>Za pomocą ExistsInCollection\<T > Projektant działań  
- **ExistsInCollection\<T >** projektanta działań można znaleźć w **kolekcji** kategorii **przybornika**, które jest dostępne po kliknięciu  **Przybornik** karcie [!INCLUDE[wfd2](../includes/wfd2-md.md)] (można także wybrać **narzędzi** z **widoku** menu lub klawiszy CTRL + ALT + X.)  
-  
- **ExistsInCollection\<T >** projektanta działań mogą być przeciągnięte z **przybornika** i porzuconych do [!INCLUDE[wfd2](../includes/wfd2-md.md)] powierzchni wszędzie tam, gdzie działań są zazwyczaj umieszczane, takich jak wewnątrz <xref:System.Activities.Statements.Sequence>. Spowoduje to utworzenie <xref:System.Activities.Statements.ExistsInCollection%601> działanie przy użyciu domyślnego <xref:System.Activities.Activity.DisplayName%2A> z ExistsInCollection\<Int32 >. (Domyślnie *elementu typeargument w języku* jest **Int32**. Można ją zmienić w siatce właściwości.)  <xref:System.Activities.Activity.DisplayName%2A> Wartość może być edytowana w nagłówku **ExistsInCollection\<T >** projektanta działań lub **DisplayName** pola siatki właściwości. W siatce właściwości, należy edytować inne właściwości.  
-  
-### <a name="the-existsincollectiont-properties"></a>ExistsInCollection\<T > Właściwości  
- W poniższej tabeli przedstawiono <xref:System.Activities.Statements.ExistsInCollection%601> właściwości i w tym artykule opisano, jak są używane w projektancie.  
-  
-|Nazwa właściwości|Wymagane|Użycie|  
-|-------------------|--------------|-----------|  
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Przyjazna nazwa <xref:System.Activities.Statements.ExistsInCollection%601> działania. Wartość domyślna to ExistsInCollection\<Int32 >. Mimo że <xref:System.Activities.Activity.DisplayName%2A> wartość nie jest bezwzględnie konieczne, jest najlepszym rozwiązaniem, aby użyć jednego.|  
-|<xref:System.Activities.Statements.ExistsInCollection%601.Item%2A>|Prawda|Element do dodania do kolekcji\<T >. Ten element jest typu *T* typu *elementu typeargument w języku*. Aby określić element, wpisz wyrażenie języka Visual Basic w siatce właściwości.|  
-|<xref:System.Activities.Statements.ExistsInCollection%601.Collection%2A>|Prawda|Kolekcja, do którego ma zostać dodany element. Ta kolekcja jest typu **ICollection\<elementu typeargument w języku >.** Aby określić kolekcję, wpisz wyrażenie języka Visual Basic w siatce właściwości.|  
-|*TypeArgument*|Prawda|Typu T z elementów znajdujących się w <xref:System.Collections.Generic.ICollection%601>. Domyślnie to *elementu typeargument w języku* ustawiono typ **Int32**. Aby zmienić typ, zmień wartość *elementu typeargument w języku* w polu kombi w siatce właściwości.|  
-|<xref:System.Activities.Activity%601.Result%2A>|False|Wartość, która wskazuje, czy określony element istnieje w kolekcji. Aby określić zmienną, aby powiązać wynik, typ zmiennej języka Visual Basic w siatce właściwości.|  
-  
-## <a name="see-also"></a>Zobacz też  
- [Kolekcja](../workflow-designer/collection-activity-designers.md)   
- [AddToCollection\<T>](../workflow-designer/addtocollection-t-activity-designer.md)   
- [ClearCollection\<T>](../workflow-designer/clearcollection-t-activity-designer.md)   
- [RemoveFromCollection\<T>](../workflow-designer/removefromcollection-t-activity-designer.md)
+# <a name="existsincollectionlttgt-activity-designer"></a>ExistsInCollection &lt;T &gt; — Projektant działań
+**ExistsInCollection \<T >** Projektant działań służy do tworzenia i konfigurowania działania <xref:System.Activities.Statements.ExistsInCollection%601>.
+
+## <a name="the-existsincollectiont-activity"></a>Działanie ExistsInCollection \<T >
+ Działanie <xref:System.Activities.Statements.ExistsInCollection%601> określa, czy określony element istnieje w określonej kolekcji.
+
+### <a name="using-the-existsincollectiont-activity-designer"></a>Korzystanie z ExistsInCollection \<T > Projektant działań
+ Projektanta działań programu **ExistsInCollection \<T >** można znaleźć w kategorii **kolekcji** **przybornika**, do którego uzyskuje się dostęp przez kliknięcie karty **przybornika** w [!INCLUDE[wfd2](../includes/wfd2-md.md)] (Alternatywnie wybierz pozycję **pasek narzędzi** z Menu **Widok** lub CTRL + ALT + X.)
+
+ **ExistsInCollection \<T >** projektanta aktywności można przeciągnąć z **przybornika** i porzucić na [!INCLUDE[wfd2](../includes/wfd2-md.md)] powierzchni wszędzie tam, gdzie działania są zwykle umieszczane, na przykład w <xref:System.Activities.Statements.Sequence>. Spowoduje to utworzenie działania <xref:System.Activities.Statements.ExistsInCollection%601> przy użyciu domyślnego <xref:System.Activities.Activity.DisplayName%2A> ExistsInCollection \<Int32 >. (Domyślnie *elementu TypeArgument* jest **Int32**. Można ją zmienić w siatce właściwości.  Wartość <xref:System.Activities.Activity.DisplayName%2A> można edytować w nagłówku projektanta działań programu **ExistsInCollection \<T >** lub w polu **DisplayName** siatki właściwości. Inne właściwości muszą być edytowane w siatce właściwości.
+
+### <a name="the-existsincollectiont-properties"></a>Właściwości ExistsInCollection \<T >
+ W poniższej tabeli przedstawiono właściwości <xref:System.Activities.Statements.ExistsInCollection%601> i opisano sposób ich używania w projektancie.
+
+|Nazwa właściwości|Wymagane|Użycie|
+|-------------------|--------------|-----------|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Przyjazna nazwa działania <xref:System.Activities.Statements.ExistsInCollection%601>. Wartość domyślna to ExistsInCollection \<Int32 >. Mimo że wartość <xref:System.Activities.Activity.DisplayName%2A> nie jest ściśle wymagana, najlepszym rozwiązaniem jest użycie jednego z nich.|
+|<xref:System.Activities.Statements.ExistsInCollection%601.Item%2A>|Oznacza|Element, który ma zostać dodany do kolekcji \<T >. Ten element jest typu *T* jest typu *elementu TypeArgument*. Aby określić element, wpisz wyrażenie Visual Basic w siatce właściwości.|
+|<xref:System.Activities.Statements.ExistsInCollection%601.Collection%2A>|Oznacza|Kolekcja, do której należy dodać element. Ta kolekcja jest typu **\<TypeArgument ICollection >.** Aby określić kolekcję, wpisz wyrażenie Visual Basic w siatce właściwości.|
+|*Elementu TypeArgument*|Oznacza|Typ T elementów zawartych w <xref:System.Collections.Generic.ICollection%601>. Domyślnie ten typ *elementu TypeArgument* jest ustawiony na **Int32**. Aby zmienić typ, Zmień wartość *elementu TypeArgument* w polu kombi w siatce właściwości.|
+|<xref:System.Activities.Activity%601.Result%2A>|False|Wartość wskazująca, czy określony element istnieje w kolekcji. Aby określić zmienną, która ma zostać powiązana z wynikiem, wpisz zmienną Visual Basicną w siatce właściwości.|
+
+## <a name="see-also"></a>Zobacz też
+ [Kolekcja](../workflow-designer/collection-activity-designers.md) [AddToCollection \<T >](../workflow-designer/addtocollection-t-activity-designer.md) [clearcollection \<T >](../workflow-designer/clearcollection-t-activity-designer.md) [RemoveFromCollection \<T >](../workflow-designer/removefromcollection-t-activity-designer.md)

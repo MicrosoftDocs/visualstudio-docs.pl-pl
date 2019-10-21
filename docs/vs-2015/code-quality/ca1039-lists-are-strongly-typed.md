@@ -1,5 +1,5 @@
 ---
-title: 'CA1039: Listy są silnie typizowane | Dokumentacja firmy Microsoft'
+title: 'CA1039: listy są silnie wpisane | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - ListsAreStronglyTyped
 ms.assetid: 5ac366c4-fd87-4d5c-95d5-f755510c8e5c
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 3fb1a6255539ded989c5ad9638fc961d606a19f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8845fb8bcd08f076ddc3c509a37948cf008e0623
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62559753"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661799"
 ---
 # <a name="ca1039-lists-are-strongly-typed"></a>CA1039: Listy są silnie typizowane
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,39 +29,39 @@ ms.locfileid: "62559753"
 |-|-|
 |TypeName|ListsAreStronglyTyped|
 |CheckId|CA1039|
-|Kategoria|Microsoft.Design|
+|Kategoria|Microsoft. Design|
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Publiczny lub chroniony typ implementuje <xref:System.Collections.IList?displayProperty=fullName> , ale udostępnia silnie typizowane metody dla co najmniej jednej z następujących czynności:
+ Typ publiczny lub chroniony implementuje <xref:System.Collections.IList?displayProperty=fullName>, ale nie zapewnia metody silnie wpisanej dla co najmniej jednego z następujących elementów:
 
-- IList.Item
+- Element IList. Item
 
-- IList.Add
+- IList. Add
 
-- IList.Contains
+- IList. Contains
 
-- IList.IndexOf
+- IList. IndexOf
 
-- IList.Insert
+- IList. Insert
 
-- IList.Remove
+- IList. Remove
 
 ## <a name="rule-description"></a>Opis reguły
- Ta reguła wymaga <xref:System.Collections.IList> implementacji w celu dostarczenia silnie typizowane składowe, dzięki czemu użytkownicy nie musieli rzutować argumentów na <xref:System.Object?displayProperty=fullName> wpisz podczas korzystania z funkcji dostępnych przez interfejs. <xref:System.Collections.IList> Interfejs jest implementowany przez kolekcje obiektów, które mogą być udostępniane przez indeks. Reguła ta zakłada, że typ, który zawiera <xref:System.Collections.IList> robi to, aby zarządzać kolekcją wystąpień typów mocniejszych niż <xref:System.Object>.
+ Ta reguła wymaga implementacji <xref:System.Collections.IList>, aby zapewnić składowe o jednoznacznie określonym typie, tak aby użytkownicy nie musieli rzutować argumentów na typ <xref:System.Object?displayProperty=fullName>, gdy korzystają z funkcji dostarczonych przez interfejs. Interfejs <xref:System.Collections.IList> jest implementowany przez kolekcje obiektów, do których można uzyskać dostęp za pomocą indeksu. Ta reguła zakłada, że typ, który implementuje <xref:System.Collections.IList>, służy do zarządzania kolekcją wystąpień typu, które są silniejszymi niż <xref:System.Object>.
 
- <xref:System.Collections.IList> implementuje <xref:System.Collections.ICollection?displayProperty=fullName> i <xref:System.Collections.IEnumerable?displayProperty=fullName> interfejsów. W przypadku zaimplementowania <xref:System.Collections.IList>, musisz podać wymagane silnie typizowanych elementów członkowskich dla <xref:System.Collections.ICollection>. Jeśli obiekty z kolekcji rozszerzony <xref:System.ValueType?displayProperty=fullName>, należy podać element silnie typizowaną dla <xref:System.Collections.IEnumerable.GetEnumerator%2A> w celu uniknięcia spadek wydajności, jest spowodowany przez pakowania; nie jest to wymagane w przypadku obiektów kolekcji typu odwołania.
+ <xref:System.Collections.IList> implementuje interfejsy <xref:System.Collections.ICollection?displayProperty=fullName> i <xref:System.Collections.IEnumerable?displayProperty=fullName>. Jeśli zaimplementowano <xref:System.Collections.IList>, należy dostarczyć wymagane elementy członkowskie o jednoznacznie określonym typie dla <xref:System.Collections.ICollection>. Jeśli obiekty w kolekcji są rozbudowywane <xref:System.ValueType?displayProperty=fullName>, musisz dostarczyć składową o jednoznacznie określonym typie dla <xref:System.Collections.IEnumerable.GetEnumerator%2A>, aby uniknąć spadku wydajności, który jest spowodowany opakowaniem; nie jest to wymagane, gdy obiekty kolekcji są typu referencyjnego.
 
- Aby jest zgodne z tą regułą, należy zaimplementować składowych interfejsu jawnie przy użyciu nazwy w postaci InterfaceName.InterfaceMemberName, takich jak <xref:System.Collections.IList.Add%2A>. Elementy członkowskie interfejsu jawnego używania typów danych, które są zadeklarowane przez interfejs. Implementowanie silnie typizowanych elementów członkowskich przy użyciu nazwy elementu członkowskiego interfejsu, takiego jak `Add`. Zadeklaruj silnie typizowanych elementów członkowskich jako publiczne i można deklarować parametrów i zwracają wartości na typ silny, który jest zarządzany przez kolekcję. Silne typy Zastąp słabszych typów, takich jak <xref:System.Object> i <xref:System.Array> , są zadeklarowane przez interfejs.
+ Aby zachować zgodność z tą regułą, należy zaimplementować elementy członkowskie interfejsu jawnie przy użyciu nazw w formie InterfaceName. InterfaceMemberName, takiej jak <xref:System.Collections.IList.Add%2A>. Jawne elementy członkowskie interfejsu używają typów danych zadeklarowanych przez interfejs. Zaimplementuj silnie wpisaną składowe przy użyciu nazwy elementu członkowskiego interfejsu, takiej jak `Add`. Zadeklaruj elementy członkowskie z jednoznacznie określonymi typami jako publiczne i zadeklaruj parametry i zwróć wartości jako typ silny, który jest zarządzany przez kolekcję. Silne typy zastępują słabsze typy, takie jak <xref:System.Object> i <xref:System.Array>, które są zadeklarowane przez interfejs.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, jawne Implementowanie <xref:System.Collections.IList> elementów członkowskich i dostarczają alternatywy silnie typizowanych elementów członkowskich, które zostały podane wcześniej. Dla kodu, który implementuje prawidłowo <xref:System.Collections.IList> interfejs i zapewnia wymagane silnie typizowanych elementów członkowskich, zobacz poniższy przykład.
+ Aby naprawić naruszenie tej reguły, jawnie Zaimplementuj członków <xref:System.Collections.IList> i zapewnij silnie wpisane alternatywy dla elementów członkowskich, które zostały zanotowane wcześniej. W przypadku kodu, który poprawnie implementuje interfejs <xref:System.Collections.IList> i udostępnia wymagane elementy o jednoznacznie określonym typie, zapoznaj się z poniższym przykładem.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Pomijaj ostrzeżeń dla tej reguły w przypadku implementowania nowej kolekcji opartej na obiektach takich jak liście połączonej, których typy rozszerzające możliwości Nowa kolekcja określić silnego typu. Te typy powinny są zgodne z tą regułą i udostępnić silnie typizowanych elementów członkowskich.
+ Pomijaj ostrzeżenie z tej reguły podczas implementowania nowej kolekcji opartej na obiektach, takiej jak lista połączona, gdzie typy, które poszerzają nową kolekcję, określają typ silny. Te typy powinny być zgodne z tą regułą i uwidaczniają silnie wpisaną składowe.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie typ `YourType` rozszerza <xref:System.Collections.CollectionBase?displayProperty=fullName>, podobnie jak wszystkie kolekcje silnie typizowane. Należy pamiętać, że <xref:System.Collections.CollectionBase> zapewnia jawną implementację <xref:System.Collections.IList> interfejsu. W związku z tym, należy tylko podać silnie typizowanych elementów członkowskich dla <xref:System.Collections.IList> i <xref:System.Collections.ICollection>.
+ W poniższym przykładzie typ `YourType` rozszerza <xref:System.Collections.CollectionBase?displayProperty=fullName>, tak jak w przypadku wszystkich kolekcji o jednoznacznie określonym typie. Należy pamiętać, że <xref:System.Collections.CollectionBase> zapewnia jawną implementację interfejsu <xref:System.Collections.IList>. W związku z tym należy dostarczyć tylko elementy o jednoznacznie określonym typie dla <xref:System.Collections.IList> i <xref:System.Collections.ICollection>.
 
  [!code-csharp[FxCop.Design.IListStrongTypes#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.IListStrongTypes/cs/FxCop.Design.IListStrongTypes.cs#1)]
 
