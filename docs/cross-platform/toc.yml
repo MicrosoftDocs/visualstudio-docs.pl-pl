@@ -31,13 +31,13 @@
       href: change-log-visual-studio-tools-for-unity-mac.md
     - name: Metodyka DevOps z użyciem aplikacji Unity
       href: application-lifecycle-management-alm-with-unity-apps.md
-- name: Język Visual C++ dla opracowywania aplikacji mobilnych na wiele platform
+- name: Opracowywanie aplikacji mobilnych na wiele platform w języku C++
   items:
-    - name: Język Visual C++ dla opracowywania aplikacji mobilnych na wiele platform
+    - name: Opracowywanie aplikacji mobilnych na wiele platform w języku C++
       href: visual-cpp-for-cross-platform-mobile-development.md
-    - name: Instalowanie języka Visual C++ dla opracowywania aplikacji mobilnych na wiele platform
+    - name: Instalowanie środowiska opracowywania aplikacji mobilnych na wiele platform w języku C++
       items:
-        - name: Instalowanie języka Visual C++ dla opracowywania aplikacji mobilnych na wiele platform
+        - name: Instalowanie środowiska opracowywania aplikacji mobilnych na wiele platform w języku C++
           href: install-visual-cpp-for-cross-platform-mobile-development.md
         - name: Instalowanie i konfigurowanie narzędzi do kompilacji przy użyciu systemu iOS
           href: install-and-configure-tools-to-build-using-ios.md
@@ -47,13 +47,13 @@
       href: build-an-opengl-es-application-on-android-and-ios.md
     - name: Importowanie projektu XCode
       href: import-an-xcode-project.md
-    - name: Synchronizacja zmian między XCode i Visual Studio
+    - name: Synchronizacja zmian między środowiskiem XCode a programem Visual Studio
       href: sync-changes-between-xcode-and-visual-studio.md
     - name: Przykłady programowania międzyplatformowych aplikacji mobilnych
       href: cross-platform-mobile-development-examples.md
-    - name: Właściwości międzyplatformowego projektu w języku C++
+    - name: Dokumentacja strony właściwości języka C++ dla wielu platform
       items:
-        - name: Właściwości międzyplatformowego projektu w języku C++
+        - name: Dokumentacja strony właściwości języka C++ dla wielu platform
           href: cross-platform-prop-pages.md
         - name: Ogólne właściwości projektu (Android C++)
           href: general-android-prop-page.md

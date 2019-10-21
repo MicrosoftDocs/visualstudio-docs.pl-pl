@@ -11,6 +11,8 @@
           href: container-tools.md
         - name: Aplikacja jednostronicowa platformy React.js w kontenerze
           href: container-tools-react.md
+        - name: Programowanie na platformie Kubernetes przy użyciu usługi Azure Dev Spaces >>
+          href: /azure/dev-spaces/quickstart-netcore-visualstudio
     - name: Samouczki
       expanded: true
       items:

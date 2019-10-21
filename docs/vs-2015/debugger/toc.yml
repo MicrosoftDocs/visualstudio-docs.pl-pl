@@ -155,7 +155,7 @@
         - name: Tworzenie niestandardowych widoków obiektów zarządzanych
           items:
             - name: Tworzenie niestandardowych widoków obiektów zarządzanych
-              href: create-custom-views-of-dot-managed-objects.md
+              href: create-custom-views-of-managed-objects.md
             - name: Korzystanie z atrybutu DebuggerTypeProxy
               href: using-debuggertypeproxy-attribute.md
             - name: Używanie atrybutu DebuggerDisplay
