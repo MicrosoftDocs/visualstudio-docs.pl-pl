@@ -105,6 +105,10 @@
 ### [Używanie nawigacji za pomocą klawiatury](accessibility-keyboard.md)
 ### [Korzystanie z usługi VoiceOver](accessibility-voiceover.md)
 
+# Samouczki wideo
+## [Rozpoczynanie pracy z platformą ASP.NET Core przy użyciu programu Visual Studio dla komputerów Mac](tutorial-aspnet-core-vsmac-getting-started.md)
+## [Rozszerzanie istniejącej aplikacji sieci Web ASP.NET Core](tutorial-aspnet-core-vsmac-extending.md)
+
 # [Visual Studio dla komputerów Mac dla użytkowników systemu Windows](vsmac-for-windows-users.md)
 
 # Rozwiązywanie problemów
