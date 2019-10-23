@@ -9,30 +9,30 @@ f1_keywords:
 helpviewer_keywords:
 - task list
 - Visual Studio, task list
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ffbe1b7f293bc525aa03a536c0fa4fa55ce3e82a
-ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
+ms.openlocfilehash: 69c0e4c3a19358d9b29e4d7d3616c6718117e059
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70154862"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647321"
 ---
 # <a name="use-the-task-list"></a>Korzystanie z listy zadań
 
-Użyj **Lista zadań** do śledzenia komentarzy do kodu, które używają tokenów `HACK`, takich jak `TODO` i, lub tokenów niestandardowych, oraz do zarządzania skrótami, które przełączeją bezpośrednio do wstępnie zdefiniowanej lokalizacji w kodzie. Kliknij element na liście, aby przejść do jego lokalizacji w kodzie źródłowym.
+Użyj **Lista zadań** do śledzenia komentarzy do kodu, które używają tokenów, takich jak `TODO` i `HACK` lub tokenów niestandardowych, oraz do zarządzania skrótami, które umożliwiają bezpośrednie przejście do wstępnie zdefiniowanej lokalizacji w kodzie. Kliknij element na liście, aby przejść do jego lokalizacji w kodzie źródłowym.
 
 > [!NOTE]
-> Ten temat dotyczy programu Visual Studio w Windows. Aby uzyskać Visual Studio dla komputerów Mac, zobacz [Komentarze zadań (Visual Studio dla komputerów Mac)](/visualstudio/mac/task-comments).
+> Ten temat ma zastosowanie do programu Visual Studio w systemie Windows. Aby uzyskać Visual Studio dla komputerów Mac, zobacz [Komentarze zadań (Visual Studio dla komputerów Mac)](/visualstudio/mac/task-comments).
 
 ## <a name="the-task-list-window"></a>Okno Lista zadań
 
 Gdy **Lista zadań** jest otwarty, pojawia się u dołu okna aplikacji.
 
-Aby otworzyć **Lista zadań**, wybierz **pozycję Wyświetl** > **Lista zadań**lub na klawiaturze naciśnij **klawisz Ctrl**+ **\\** ,**T**.
+Aby otworzyć **Lista zadań**, wybierz **pozycję Wyświetl**  > **Lista zadań**lub na klawiaturze naciśnij + **kombinację klawiszy CTRL +**  **\\** ,**t**.
 
 ![okno listy zadań](../ide/media/vs2015_task_list.png)
 
@@ -62,18 +62,18 @@ Komentarz w kodzie poprzedzony znacznikiem komentarza i wstępnie zdefiniowany t
 // TODO: Load state from previously suspended application
 ```
 
-Ponieważ `TODO` jest wstępnie zdefiniowanym tokenem, ten komentarz jest `TODO` wyświetlany jako zadanie na liście.
+Ponieważ `TODO` jest wstępnie zdefiniowanym tokenem, ten komentarz jest wyświetlany jako zadanie `TODO` na liście.
 
 > [!NOTE]
 > Tokeny domyślne są dostępne tylko dla języków CC++/ C#, i VB. W przypadku innych języków zapoznaj się z sekcją **tokeny niestandardowe** .
 
 ### <a name="custom-tokens"></a>Tokeny niestandardowe
 
-Domyślnie program Visual Studio zawiera `HACK`następujące tokeny:, `TODO`, `UNDONE`i `UnresolvedMergeConflict`. Wielkość liter nie jest rozróżniana. Można również utworzyć własne niestandardowe tokeny.
+Domyślnie program Visual Studio zawiera następujące tokeny: `HACK`, `TODO`, `UNDONE` i `UnresolvedMergeConflict`. Wielkość liter nie jest rozróżniana. Można również utworzyć własne niestandardowe tokeny.
 
 Aby utworzyć token niestandardowy:
 
-1. Na **narzędzia** menu, wybierz **opcje**.
+1. W menu **Narzędzia** wybierz polecenie **Opcje**.
 
 2. Otwórz folder **środowisko** , a następnie wybierz **Lista zadań**.
 
@@ -81,11 +81,11 @@ Aby utworzyć token niestandardowy:
 
    ![Lista zadań programu Visual Studio](../ide/media/vs2015_task_list_options.png)
 
-3. W polu tekstowym **Nazwa** wprowadź nazwę tokenu, na przykład usterka.
+3. W polu tekstowym **Nazwa** wprowadź nazwę tokenu, na przykład **usterka**.
 
 4. Z listy rozwijanej **priorytet** wybierz domyślny priorytet dla nowego tokenu.
 
-5. Wybierz **Dodaj**.
+5. Wybierz pozycję **Dodaj**.
 
 > [!TIP]
 > Przycisk **Dodaj** zostanie włączony po wprowadzeniu nazwy. Musisz wprowadzić nazwę przed kliknięciem przycisku **Dodaj**.
@@ -94,7 +94,7 @@ Aby utworzyć token niestandardowy:
 
 Domyślnie Komentarze do C++ zrobienia są wyświetlane w **Lista zadań**.
 
-C++ Aby wyłączyć Komentarze do wykonania, w menu **Narzędzia** wybierz polecenie **Opcje** > **Edytor** > tekstu > **C/C++** **Wyświetl** > **Wyliczenie komentarzy zadania** i ustaw wartość na **false**.
+C++ Aby wyłączyć Komentarze z zadaniami do wykonania, w menu **Narzędzia** wybierz polecenie **Opcje**  > **Edytor tekstu**  > **C/C++**   > **Widok** 0**Wyliczenie komentarzy**i ustaw wartość false.
 
 ## <a name="shortcuts"></a>Skróty
 
@@ -104,7 +104,7 @@ C++ Aby wyłączyć Komentarze do wykonania, w menu **Narzędzia** wybierz polec
 
 ### <a name="create-a-shortcut"></a>Utwórz skrót
 
-Aby utworzyć skrót, Wstaw wskaźnik do kodu, w którym chcesz umieścić skrót. Wybierz pozycję **Edytuj** > **zakładki** ++Dodaj Lista zadań skrót lub naciśnij klawisze CTRL K, CTRL H. > 
+Aby utworzyć skrót, Wstaw wskaźnik do kodu, w którym chcesz umieścić skrót. Wybierz **edytuj**  > **zakładki**  > **dodaj skrót Lista zadań** lub naciśnij + **klawisze CTRL +** **K**, **Ctrl** +**H**.
 
 Aby nawigować przez skróty w kodzie, wybierz skrót z listy, a następnie wybierz **następne zadanie** lub **poprzednie zadanie** z menu skrótów.
 

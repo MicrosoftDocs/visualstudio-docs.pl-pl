@@ -1,71 +1,71 @@
 ---
-title: Ostrzeżenia i błędy | Narzędzie Test Microsoft IntelliTest dla deweloperów
+title: Ostrzeżenia i błędy | Narzędzie testowe dla deweloperów Microsoft IntelliTest
 ms.date: 05/02/2017
 ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Warnings and errors
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 85957c18abff9d49e62570375177aa262b08739b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+author: jillre
+ms.openlocfilehash: b9349e2c1c9ebb52e6172cc37ab1113aff95d511
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62952749"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653129"
 ---
 # <a name="warnings-and-errors"></a>Ostrzeżenia i błędy
 
 ## <a name="warnings-and-errors-by-category"></a>Ostrzeżenia i błędy według kategorii
 
-* **Granice**
+* **Granice
   * [Przekroczono MaxBranches](#maxbranches-exceeded)
   * [Przekroczono MaxConstraintSolverTime](#maxconstraintsolvertime-exceeded)
   * [Przekroczono MaxConditions](#maxconditions-exceeded)
   * [Przekroczono MaxCalls](#maxcalls-exceeded)
   * [Przekroczono MaxStack](#maxstack-exceeded)
   * [Przekroczono MaxRuns](#maxruns-exceeded)
-  * [MaxRunsWithoutNewTests exceeded](#maxrunswithoutnewtests-exceeded)
+  * [Przekroczono MaxRunsWithoutNewTests](#maxrunswithoutnewtests-exceeded)
 
 * **Rozwiązywanie ograniczeń**
-  * [Cannot Concretize Solution](#cannot-concretize-solution)
+  * [Nie można skonkretyzować rozwiązania](#cannot-concretize-solution)
 
-* **Domains**
-  * [Potrzebna pomoc do konstruowania obiektu](#help-construct)
-  * [Potrzebujesz pomocy w celu odnalezienia typów](#help-types)
-  * [Można używać typu złamać](#usable-type-guessed)
+* **3.x**
+  * [Potrzebna pomoc dla konstruowania obiektu](#help-construct)
+  * [Potrzebujesz pomocy w znalezieniu typów](#help-types)
+  * [Typ możliwych do użycia](#usable-type-guessed)
 
 * **Wykonanie**
   * [Nieoczekiwany błąd podczas eksploracji](#unexpected-exploration)
-  * [TargetInvocationException](#targetinvocationexception)
+  * [TargetInvocationException —](#targetinvocationexception)
 
-* **Instrumentacja**
-  * [Niezinstrumentowanej metody o nazwie](#uninstrumented-method-called)
-  * [Zewnętrzne metodę o nazwie](#external-method-called)
-  * [Niemożliwy do Instrumentacji metodę o nazwie](#uninstrumentable-method-called)
-  * [Problem z testowalnością](#testability-issue)
-  * [Ograniczenie](#limitation)
+* **WMI**
+  * [Wywołana metoda bez Instrumentacji](#uninstrumented-method-called)
+  * [Wywołana metoda zewnętrzna](#external-method-called)
+  * [Wywołana metoda bezinstrumentowa](#uninstrumentable-method-called)
+  * [Problem z testowaniem](#testability-issue)
+  * [Bieg](#limitation)
 
-* **Interpreter**
-  * [Zaobserwowana niezgodność wywołań](#observed-call-mismatch)
+* **Interpretera**
+  * [Obserwowana niezgodność wywołań](#observed-call-mismatch)
   * [Wartość przechowywana w polu statycznym](#value-static-field)
 
 <a name="maxbranches-exceeded"></a>
 ## <a name="maxbranches-exceeded"></a>Przekroczono MaxBranches
 
-IntelliTest ogranicza długość dowolną ścieżkę wykonywania, który pokazuje go podczas [wejściowych generowania](input-generation.md). Ta funkcja zapobiega IntelliTest przestanie odpowiadać, gdy program przechodzi w pętli nieskończonej.
+IntelliTest ogranicza długość dowolnej ścieżki wykonywania badanej podczas [generowania danych wejściowych](input-generation.md). Ta funkcja zapobiega niereagowaniu IntelliTest, gdy program przejdzie w nieskończoną pętlę.
 
-Każdego rozgałęzienia warunkowego i bezwarunkowe wykonane i monitorowane kodu jest liczone kierunku ten limit, w tym gałęzi, które nie są zależne od dane wejściowe [sparametryzowanego testu jednostkowego](test-generation.md#parameterized-unit-testing).
+Wszystkie warunkowe i bezwarunkowe rozgałęzienia wykonanego i monitorowanego kodu są zliczane do tego limitu, w tym gałęzie, które nie zależą od danych wejściowych [testów jednostkowych sparametryzowane](test-generation.md#parameterized-unit-testing).
 
-Na przykład poniższy kod wykorzystuje gałęzie zgodnie z kolejnością 100:
+Na przykład poniższy kod zużywa gałęzie w kolejności od 100:
 
 ```csharp
 for (int i=0; i<100; i++) { }
 ```
 
-Możesz edytować **MaxBranches** opcji atrybut pochodną **PexSettingsAttributeBase**, takich jak [PexClass](attribute-glossary.md#pexclass) lub [PexMethod](attribute-glossary.md#pexmethod) . Poniższy przykład usuwa skutecznie to powiązane:
+Można edytować opcję **MaxBranches** atrybutu pochodnego od **PexSettingsAttributeBase**, takich jak [PexClass](attribute-glossary.md#pexclass) lub [PexMethod](attribute-glossary.md#pexmethod). Poniższy przykład skutecznie usuwa ten zakres:
 
 ```csharp
 [PexMethod(MaxBranches=int.MaxValue)]
@@ -74,9 +74,9 @@ public void MyTest(...) {
 }
 ```
 
-Można również ustawić **TestExcludePathBoundsExceeded** opcję, aby poinformować program IntelliTest jak ogólnie do czynienia z tymi problemami.
+Możesz również ustawić opcję **TestExcludePathBoundsExceeded** , aby informować IntelliTest o tym, jak ogólnie rozwiązać te problemy.
 
-W kodzie testu, można użyć [PexSymbolicValue](static-helper-classes.md#pexsymbolicvalue) ignorowanie generowane przez warunek pętli ograniczenia:
+W kodzie testowym można użyć [PexSymbolicValue](static-helper-classes.md#pexsymbolicvalue) do ignorowania ograniczeń generowanych przez warunek pętli:
 
 ```csharp
 for (int i=0;
@@ -88,18 +88,18 @@ for (int i=0;
 <a name="maxconstraintsolvertime-exceeded"></a>
 ## <a name="maxconstraintsolvertime-exceeded"></a>Przekroczono MaxConstraintSolverTime
 
-Używa funkcji IntelliTest [moduł rozwiązywania ograniczeń](input-generation.md#constraint-solver) do obliczenia nowe dane wejściowe testu. Ograniczenie rozwiązywania może być procesem bardzo dużo czasu, więc IntelliTest umożliwia konfigurowanie granic — w szczególności **MaxConstraintSolverTime**.
+IntelliTest używa [funkcji ograniczającej ograniczenia](input-generation.md#constraint-solver) , aby obliczyć nowe dane wejściowe testu. Rozwiązywanie ograniczeń może być bardzo czasochłonne, więc IntelliTest umożliwia skonfigurowanie granic — w szczególności **MaxConstraintSolverTime**.
 
-W przypadku wielu aplikacji znaczne zwiększenie limitu czasu nie spowoduje lepszego pokrycia. Dzieje się większość przekroczeń limitu czasu są spowodowane ograniczenia systemów, na których brak rozwiązań. Jednak program IntelliTest nie może być możliwe ustalenie, czy jest on niezgodny bez próby wszystkie możliwe rozwiązania, które będą powodować przekroczenie limitu czasu.
+W przypadku wielu aplikacji znacznie zwiększenie limitu czasu nie spowoduje lepszego pokrycia. Przyczyną tego jest to, że większość limitów czasu jest spowodowana przez systemy ograniczeń, które nie mają rozwiązań. Niemniej jednak IntelliTest może nie być w stanie ustalić, że jest niespójna, bez konieczności ponawiania wszystkich możliwych rozwiązań, co spowoduje przekroczenie limitu czasu.
 
 <a name="maxconditions-exceeded"></a>
 ## <a name="maxconditions-exceeded"></a>Przekroczono MaxConditions
 
-IntelliTest ogranicza długość dowolną ścieżkę wykonywania, który pokazuje go podczas [wejściowych generowania](input-generation.md). Ta funkcja zapobiega IntelliTest przestanie odpowiadać, gdy pole jest wypełniane wejścia w nieskończoną pętlę.
+IntelliTest ogranicza długość dowolnej ścieżki wykonywania badanej podczas [generowania danych wejściowych](input-generation.md). Ta funkcja zapobiega niereagowaniu IntelliTest, gdy program wejdzie w nieskończoną pętlę.
 
-Każdej gałęzi warunkowej, który zależy od dane wejściowe [sparametryzowanego testu jednostkowego](test-generation.md#parameterized-unit-testing) jest liczony w kierunku tego limitu.
+Wszystkie gałęzie warunkowe, które są zależne od danych wejściowych [testu jednostkowego](test-generation.md#parameterized-unit-testing) , są zliczane do tego limitu.
 
-Na przykład, każda ścieżka w poniższym kodzie zużywa **n + 1** warunków:
+Na przykład każda ścieżka w poniższym kodzie zużywa **n + 1** warunek:
 
 ```csharp
 [PexMethod]
@@ -114,7 +114,7 @@ void ParameterizedTest(int n) {
 }
 ```
 
-Możesz edytować **MaxConditions** opcji atrybut pochodną **PexSettingsAttributeBase**, takich jak [PexClass](attribute-glossary.md#pexclass) lub [PexMethod](attribute-glossary.md#pexmethod). Na przykład:
+Można edytować opcję **MaxConditions** atrybutu pochodnego od **PexSettingsAttributeBase**, takich jak [PexClass](attribute-glossary.md#pexclass) lub [PexMethod](attribute-glossary.md#pexmethod). Na przykład:
 
 ```csharp
 [PexMethod(MaxConditions=10000)]
@@ -123,9 +123,9 @@ void ParameterizedTest(int n) {
 }
 ```
 
-Można również ustawić **TestExcludePathBoundsExceeded** opcję, aby poinformować program IntelliTest ogólnie radzenia sobie z tymi problemami.
+Możesz również ustawić opcję **TestExcludePathBoundsExceeded** , aby poinformować IntelliTest o tym, jak ogólnie rozwiązać te problemy.
 
-Możesz użyć [PexSymbolicValue](static-helper-classes.md#pexsymbolicvalue) ignorowanie generowane przez warunek pętli ograniczenia:
+Można użyć [PexSymbolicValue](static-helper-classes.md#pexsymbolicvalue) do ignorowania ograniczeń generowanych przez warunek pętli:
 
 ```csharp
 [PexMethod]
@@ -141,11 +141,11 @@ void ParameterizedTest(int n) {
 <a name="maxcalls-exceeded"></a>
 ## <a name="maxcalls-exceeded"></a>Przekroczono MaxCalls
 
-IntelliTest ogranicza długość dowolną ścieżkę wykonywania, który pokazuje go podczas [wejściowych generowania](input-generation.md). Ta funkcja zapobiega IntelliTest przestanie odpowiadać, gdy program przechodzi w pętli nieskończonej.
+IntelliTest ogranicza długość dowolnej ścieżki wykonywania badanej podczas [generowania danych wejściowych](input-generation.md). Ta funkcja zapobiega niereagowaniu IntelliTest, gdy program przejdzie w nieskończoną pętlę.
 
-Każde wywołanie (bezpośrednie, pośrednie, wirtualnej lub przejść) wykonanych i monitorowane kodu jest liczone wobec tego limitu.
+Każde wywołanie (bezpośrednie, pośrednie, wirtualne lub skok) wykonanego i monitorowanego kodu jest zliczane do tego limitu.
 
-Możesz edytować **MaxCalls** opcji atrybut pochodną **PexSettingsAttributeBase**, takich jak [PexClass](attribute-glossary.md#pexclass) lub [PexMethod](attribute-glossary.md#pexmethod). Poniższy przykład usuwa skutecznie to powiązane:
+Można edytować opcję **MaxCalls** atrybutu pochodnego od **PexSettingsAttributeBase**, takich jak [PexClass](attribute-glossary.md#pexclass) lub [PexMethod](attribute-glossary.md#pexmethod). Poniższy przykład skutecznie usuwa ten zakres:
 
 ```csharp
 [PexMethod(MaxCalls=int.MaxValue)]
@@ -154,14 +154,14 @@ public void MyTest(...) {
 }
 ```
 
-Można również ustawić **TestExcludePathBoundsExceeded** opcję, aby poinformować program IntelliTest ogólnie radzenia sobie z tymi problemami.
+Możesz również ustawić opcję **TestExcludePathBoundsExceeded** , aby poinformować IntelliTest o tym, jak ogólnie rozwiązać te problemy.
 
 <a name="maxstack-exceeded"></a>
 ## <a name="maxstack-exceeded"></a>Przekroczono MaxStack
 
-IntelliTest ogranicza rozmiar stosu wywołań dowolną ścieżkę wykonywania, który pokazuje go podczas [wejściowych generowania](input-generation.md). Ta funkcja zapobiega IntelliTest przerywa, jeśli występuje przepełnienie stosu.
+IntelliTest ogranicza rozmiar stosu wywołań dowolnej ścieżki wykonywania, którą bada podczas [generowania danych wejściowych](input-generation.md). Ta funkcja uniemożliwia zakończenie działania usługi IntelliTest w przypadku przepełnienia stosu.
 
-Możesz edytować **MaxStack** opcji atrybut pochodną **PexSettingsAttributeBase**, takich jak [PexClass](attribute-glossary.md#pexclass) lub [PexMethod](attribute-glossary.md#pexmethod). Poniższy przykład usuwa skutecznie tej granicy (niezalecane):
+Można edytować opcję **MaxStack** atrybutu pochodnego od **PexSettingsAttributeBase**, takich jak [PexClass](attribute-glossary.md#pexclass) lub [PexMethod](attribute-glossary.md#pexmethod). Poniższy przykład skutecznie usuwa to powiązanie (niezalecane):
 
 ```csharp
 [PexMethod(MaxStack=int.MaxValue)]
@@ -170,16 +170,16 @@ public void MyTest(...) {
 }
 ```
 
-Można również ustawić **TestExcludePathBoundsExceeded** opcję, aby poinformować program IntelliTest ogólnie radzenia sobie z tymi problemami.
+Możesz również ustawić opcję **TestExcludePathBoundsExceeded** , aby poinformować IntelliTest o tym, jak ogólnie rozwiązać te problemy.
 
 <a name="maxruns-exceeded"></a>
 ## <a name="maxruns-exceeded"></a>Przekroczono MaxRuns
 
-IntelliTest ogranicza liczbę ścieżek wykonywania, które analizuje go podczas [wejściowych generowania](input-generation.md). Ta funkcja pozwala zagwarantować, że IntelliTest kończy działanie, gdy program ma pętli lub rekursji.
+IntelliTest ogranicza liczbę ścieżek wykonywania, które bada podczas [generowania danych wejściowych](input-generation.md). Ta funkcja zapewnia, że IntelliTest kończy się, gdy program ma pętle lub rekursję.
 
-Nie może być tak, że w każdym uruchomieniu programu IntelliTest test sparametryzowany określoną w danych wejściowych, emituje nowy przypadek testowy. Zobacz [TestEmissionFilter](exploration-bounds.md#testemissionfilter) Aby uzyskać więcej informacji.
+Może to nie być przypadek, który, za każdym razem, gdy IntelliTest uruchamia test sparametryzowany z konkretnymi danymi wejściowymi, emituje nowy przypadek testowy. Aby uzyskać więcej informacji, zobacz [TestEmissionFilter](exploration-bounds.md#testemissionfilter) .
 
-Możesz edytować **MaxRuns** opcji atrybut pochodną **PexSettingsAttributeBase**, takich jak [PexClass](attribute-glossary.md#pexclass) lub [PexMethod](attribute-glossary.md#pexmethod). Poniższy przykład usuwa skutecznie tej granicy (niezalecane):
+Można edytować opcję **MaxRuns** atrybutu pochodnego od **PexSettingsAttributeBase**, takich jak [PexClass](attribute-glossary.md#pexclass) lub [PexMethod](attribute-glossary.md#pexmethod). Poniższy przykład skutecznie usuwa to powiązanie (niezalecane):
 
 ```csharp
 [PexMethod(MaxRuns=2000)]
@@ -189,15 +189,15 @@ public void MyTest(...) {
 ```
 
 <a name="maxrunswithoutnewtests-exceeded"></a>
-## <a name="maxrunswithoutnewtests-exceeded"></a>MaxRunsWithoutNewTests exceeded
+## <a name="maxrunswithoutnewtests-exceeded"></a>Przekroczono MaxRunsWithoutNewTests
 
-IntelliTest ogranicza liczbę ścieżek wykonywania, które analizuje go podczas [wejściowych generowania](input-generation.md). Ta funkcja pozwala zagwarantować, że IntelliTest kończy działanie, gdy program ma pętli lub rekursji.
+IntelliTest ogranicza liczbę ścieżek wykonywania, które bada podczas [generowania danych wejściowych](input-generation.md). Ta funkcja zapewnia, że IntelliTest kończy się, gdy program ma pętle lub rekursję.
 
-Nie może być tak, że w każdym uruchomieniu programu IntelliTest test sparametryzowany określoną w danych wejściowych, emituje nowy przypadek testowy. Zobacz [TestEmissionFilter](exploration-bounds.md#testemissionfilter) Aby uzyskać więcej informacji.
+Może to nie być przypadek, który, za każdym razem, gdy IntelliTest uruchamia test sparametryzowany z konkretnymi danymi wejściowymi, emituje nowy przypadek testowy. Aby uzyskać więcej informacji, zobacz [TestEmissionFilter](exploration-bounds.md#testemissionfilter) .
 
-Podczas testów funkcji IntelliTest znajdzie często wiele interesujące dane wejściowe testu początkowo, jego mogą nie - po chwili - emitować żadnych więcej testów. Ta opcja decyduje o tym, ile testów funkcji IntelliTest mogą próbować można znaleźć innego testu odpowiednie dane wejściowe.
+Mimo że IntelliTest często znajduje wiele interesujących danych wejściowych testów, może nie być za chwilą i emitować więcej testów. Ta opcja określa, jak długo IntelliTest może próbować znaleźć inne odpowiednie dane wejściowe testu.
 
-Możesz edytować **MaxRunsWithoutNewTests** opcji atrybut pochodną **PexSettingsAttributeBase**, takich jak [PexClass](attribute-glossary.md#pexclass) lub [PexMethod](attribute-glossary.md#pexmethod). Poniższy przykład usuwa skutecznie tej granicy (niezalecane):
+Można edytować opcję **MaxRunsWithoutNewTests** atrybutu pochodnego od **PexSettingsAttributeBase**, takich jak [PexClass](attribute-glossary.md#pexclass) lub [PexMethod](attribute-glossary.md#pexmethod). Poniższy przykład skutecznie usuwa to powiązanie (niezalecane):
 
 ```csharp
 [PexMethod(MaxRunsWithoutNewTests=2000)]
@@ -209,33 +209,33 @@ public void MyTest(...) {
 <a name="cannot-concretize-solution"></a>
 ## <a name="cannot-concretize-solution"></a>Nie można skonkretyzować rozwiązania
 
-Ten błąd jest często jego konsekwencję wcześniejszego błędu. Używa funkcji IntelliTest [moduł rozwiązywania ograniczeń](input-generation.md#constraint-solver) ustalenie nowe dane wejściowe testu. Czasami testowanie danych wejściowych proponowanych przez [moduł rozwiązywania ograniczeń](input-generation.md#constraint-solver) są nieprawidłowe. Taka sytuacja może wystąpić jeśli:
+Ten błąd jest często wynikiem wcześniejszego błędu. IntelliTest używa [funkcji ograniczającej ograniczenia](input-generation.md#constraint-solver) , aby określić nowe dane wejściowe testu. Czasami dane wejściowe testów proponowane przez program do [rozwiązywania ograniczeń](input-generation.md#constraint-solver) są nieprawidłowe. Może się tak zdarzyć w następujących okolicznościach:
 
-* Niektóre ograniczenia nie są znane.
-* Jeśli wartości są tworzone w sposób zdefiniowany przez użytkownika, powodując błędy w kodzie użytkownika
-* Niektóre typy, które są zaangażowane mają logiki inicjowania nie są kontrolowane przez funkcję IntelliTest (na przykład klasy COM)
+* Niektóre ograniczenia są nieznane
+* Jeśli wartości są tworzone w sposób zdefiniowany przez użytkownika, powodując błędy występujące w kodzie użytkownika
+* Niektóre z typów, których dotyczy logika inicjalizacji, nie są kontrolowane przez IntelliTest (na przykład klasy COM)
 
 <a name="help-construct"></a>
-## <a name="need-help-to-construct-object"></a>Potrzebna pomoc do konstruowania obiektu
+## <a name="need-help-to-construct-object"></a>Potrzebna pomoc dla konstruowania obiektu
 
-Funkcja IntelliTest [generuje dane wejściowe testu](input-generation.md), a niektóre dane wejściowe mogą być obiekty z polami.
-W tym miejscu IntelliTest próbuje generowania wystąpienia klasy, która zawiera pole prywatne i przyjęto założenie, że interesujące zachowanie programu podczas wystąpi to prywatne pole ma określoną wartość.
+IntelliTest [generuje dane wejściowe testu](input-generation.md), a niektóre dane wejściowe mogą być obiektami z polami.
+W tym miejscu IntelliTest próbuje wygenerować wystąpienie klasy zawierającej pole prywatne i założono, że w przypadku tego pola prywatnego zostanie wykonane ciekawe zachowanie programu.
 
-Jednak gdy jest to możliwe za pomocą odbicia, IntelliTest nie produkcji obiekty z dowolnego pola wartościami.
-Zamiast tego w takich przypadkach opiera się na użytkownika dostarczanie wskazówek na temat sposobu używania metody publiczne klasy utworzenia obiektu w celu dostosowania go do stanu, w której jej pola prywatnego ma wymaganą wartość.
+Jednak chociaż jest to możliwe przy odbiciu, IntelliTest nie produkuje obiektów z dowolnymi wartościami pól.
+Zamiast tego w takich przypadkach zależy od użytkownika, aby przedstawić wskazówki dotyczące sposobu używania metod publicznych klasy w celu utworzenia obiektu i przełączenia go do stanu, w którym jego pole prywatne ma wymaganą wartość.
 
-Odczyt [wystąpienia istniejących klas](input-generation.md#existing-classes) Aby dowiedzieć się, jak możesz pomóc IntelliTest konstruowania interesujących obiektów.
+Przeczytaj [Tworzenie wystąpienia istniejących klas](input-generation.md#existing-classes) , aby dowiedzieć się, jak można ułatwić IntelliTest konstruowanie interesujących obiektów.
 
 <a name="help-types"></a>
-## <a name="need-help-to-find-types"></a>Potrzebujesz pomocy w celu odnalezienia typów
+## <a name="need-help-to-find-types"></a>Potrzebujesz pomocy w znalezieniu typów
 
-Funkcja IntelliTest [generuje dane wejściowe testu](input-generation.md) dla dowolnego typu platformy .NET. W tym miejscu IntelliTest próbuje utworzyć wystąpienie, która pochodzi z klasy abstrakcyjnej lub implementuje abstrakcyjny interfejs i funkcji IntelliTest nie zna dowolnego typu, który spełnia ograniczenia.
+IntelliTest [generuje dane wejściowe testów](input-generation.md) dla dowolnego typu .NET. W tym miejscu IntelliTest próbuje utworzyć wystąpienie pochodzące z klasy abstrakcyjnej lub implementuje interfejs abstrakcyjny, a IntelliTest nie wie o żadnym typie, który spełnia ograniczenia.
 
-Możesz pomóc IntelliTest poprzez wskazanie jednego lub więcej typów, które pasują do ograniczeń. Zazwyczaj jedną z następujących atrybutów pomoże:
+Możesz pomóc IntelliTest, wskazując jeden lub więcej typów, które pasują do ograniczeń. Zazwyczaj jeden z następujących atrybutów pomoże:
 
-* **PexUseTypeAttribute**, który wskazuje na określonego typu.
+* **PexUseTypeAttribute**, który wskazuje na konkretny typ.
 
-  Na przykład, jeśli program IntelliTest zgłasza, że "nie ma żadnych typów, które można przypisać do **System.Collections.IDictionary**", pomaga, dołączając następujące **PexUseTypeAttribute** do testu (lub do klasy początkowych):
+  Na przykład jeśli IntelliTest zgłasza, że "nie wie o żadnych typach, które można przypisać do **System. Collections. IDictionary**", można to pomóc poprzez dołączenie następującego **PexUseTypeAttribute** do testu (lub klasy osprzętu):
 
   ```csharp
   [PexMethod]
@@ -243,105 +243,105 @@ Możesz pomóc IntelliTest poprzez wskazanie jednego lub więcej typów, które 
   public void MyTest(IDictionary[] dictionaries) { ... }
   ```
 
-* **Atrybut poziomu zestawu**
+* **Atrybut na poziomie zestawu**
 
   ```csharp
   [assembly: PexUseType(typeof(System.Collections.Hashtable))]
   ```
 
 <a name="usable-type-guessed"></a>
-## <a name="usable-type-guessed"></a>Można używać typu złamać
+## <a name="usable-type-guessed"></a>Typ możliwych do użycia
 
-Funkcja IntelliTest [generuje dane wejściowe testu](input-generation.md) dla wszystkich typów .NET. Gdy typ jest abstrakcyjny lub interfejs, IntelliTest musi wybrać określoną implementację tego typu. Aby wybrać, musi wiedzieć, jakie typy istnieje.
+IntelliTest [generuje dane wejściowe testów](input-generation.md) dla dowolnego typu .NET. Gdy typ jest abstrakcyjny lub interfejs, IntelliTest musi wybrać określoną implementację tego typu. Aby to umożliwić, należy wiedzieć, które typy istnieją.
 
-Jeśli to ostrzeżenie jest wyświetlane, it indiicates, że program IntelliTest przyglądaliśmy przywoływanych zestawach, a znaleziono typ implementacji, ale nie jest pewności, czy powinna korzystać, wpisz lub w przypadku bardziej odpowiednie typy były dostępe gdzie indziej. IntelliTest po prostu wybrać typu, która wyglądały obietnicy.
+Gdy to ostrzeżenie jest wyświetlane, indiicates, że IntelliTest wyglądało na niektórych przywoływanych zestawach i znalazł typ implementacji, ale nie ma pewności, czy powinien on używać tego typu, czy też w innym miejscu dostępne są inne typy. IntelliTest po prostu wybierz typ, który ma wyszukiwane obietnice.
 
-Aby uniknąć tego ostrzeżenia, można zaakceptować wybór typu dla funkcji IntelliTest, lub pomocy programu IntelliTest w użycie innych typów, dodając odpowiednią [PexUseType](attribute-glossary.md#pexusetype).
+Aby uniknąć tego ostrzeżenia, można zaakceptować wybór typu IntelliTest lub pomóc IntelliTest w użyciu innych typów przez dodanie odpowiedniego [PexUseType](attribute-glossary.md#pexusetype).
 
 <a name="unexpected-exploration"></a>
 ## <a name="unexpected-failure-during-exploration"></a>Nieoczekiwany błąd podczas eksploracji
 
-Przechwycono nieoczekiwany wyjątek podczas eksploracji testu.
+Podczas eksplorowania testu przechwycono nieoczekiwany wyjątek.
 
-Proszę [Zgłoś to jako usterkę](#report-bug).
+[Zgłoś ten błąd jako usterkę](#report-bug).
 
 <a name="targetinvocationexception"></a>
-## <a name="targetinvocationexception"></a>TargetInvocationException
+## <a name="targetinvocationexception"></a>TargetInvocationException —
 
-Wystąpił wyjątek w kodzie użytkownika. Sprawdź ślad stosu i usuwanie błędów w kodzie.
+Wystąpił wyjątek w kodzie użytkownika. Zbadaj ślad stosu i Usuń usterkę w kodzie.
 
 <a name="uninstrumented-method-called"></a>
-## <a name="uninstrumented-method-called"></a>Niezinstrumentowanej metody o nazwie
+## <a name="uninstrumented-method-called"></a>Wywołana metoda bez Instrumentacji
 
-Funkcja IntelliTest [generuje dane wejściowe testu](input-generation.md) dzięki monitorowaniu wykonywania programu. Istotne jest, że odpowiedni kod prawidłowo Instrumentacji tak, aby program IntelliTest można monitorować jego zachowanie.
+IntelliTest [generuje dane wejściowe testów](input-generation.md) przez wykonanie programu monitorowania. Istotne jest, aby odpowiedni kod był prawidłowo instrumentem, dzięki czemu IntelliTest może monitorować jego zachowanie.
 
-To ostrzeżenie jest wyświetlane, gdy instrumentowanych kod wywołuje metody w zestawie innym, niezinstrumentowanej.
-Chcąc IntelliTest, aby zapoznać się z interakcji zarówno, również muszą instrumentować innych zestawów (lub jej części).
+To ostrzeżenie jest wyświetlane, gdy kod Instrumentacji wywołuje metody z innego, nieinstrumentacja zestawu.
+Jeśli chcesz, aby IntelliTest interakcje obu tych elementów, należy również instrumentować inne zestawy (lub ich części).
 
 <a name="external-method-called"></a>
-## <a name="external-method-called"></a>Zewnętrzne metodę o nazwie
+## <a name="external-method-called"></a>Wywołana metoda zewnętrzna
 
-Funkcja IntelliTest [generuje dane wejściowe testu](input-generation.md) dzięki monitorowaniu wykonywania aplikacji .NET.
-Funkcja IntelliTest nie można wygenerować dane wejściowe testu istotnych dla kodu, który nie został napisany w języku .NET.
+IntelliTest [generuje dane wejściowe testów](input-generation.md) przez monitorowanie wykonywania aplikacji .NET.
+IntelliTest nie może wygenerować znaczących danych wejściowych testu dla kodu, który nie jest pisany w języku .NET.
 
-To ostrzeżenie jest wyświetlane, gdy instrumentowanych kod wywołuje metodę niezarządzane, natywnej funkcji IntelliTest nie można przeanalizować. Chcąc IntelliTest, aby zapoznać się z interakcji zarówno musi testowanie metody niezarządzanego.
+To ostrzeżenie jest wyświetlane, gdy kod Instrumentacji wywołuje niezarządzaną metodę natywną, którą IntelliTest nie może przeanalizować. Jeśli chcesz, aby IntelliTest interakcje obu tych elementów, musisz zasymulować niezarządzaną metodę.
 
 <a name="uninstrumentable-method-called"></a>
-## <a name="uninstrumentable-method-called"></a>Niemożliwy do Instrumentacji metodę o nazwie
+## <a name="uninstrumentable-method-called"></a>Wywołana metoda bezinstrumentowa
 
-Funkcja IntelliTest [generuje dane wejściowe testu](input-generation.md) dzięki monitorowaniu wykonywania aplikacji .NET. Istnieją jednak niektóre metody, z przyczyn technicznych programu IntelliTest nie może monitorować. Na przykład programu IntelliTest nie może monitorować Konstruktor statyczny.
+IntelliTest [generuje dane wejściowe testów](input-generation.md) przez monitorowanie wykonywania aplikacji .NET. Istnieją jednak pewne metody, które ze względów technicznych nie mogą monitorować IntelliTest. Na przykład IntelliTest nie może monitorować statycznego konstruktora.
 
-To ostrzeżenie jest wyświetlane, gdy instrumentowanych kod wywołuje metodę, która nie może monitorować IntelliTest.
+To ostrzeżenie jest wyświetlane, gdy kod Instrumentacji wywołuje metodę, którą nie może monitorować IntelliTest.
 
 <a name="testability-issue"></a>
-## <a name="testability-issue"></a>Problem z testowalnością
+## <a name="testability-issue"></a>Problem z testowaniem
 
-Funkcja IntelliTest [generuje dane wejściowe testu](input-generation.md) dzięki monitorowaniu wykonywania programu. Dane wejściowe testu istotne może generować tylko, gdy program jest deterministyczna, a odpowiednie zachowanie jest kontrolowane przez dane wejściowe testu.
+IntelliTest [generuje dane wejściowe testów](input-generation.md) przez monitorowanie wykonywania programu. Może generować tylko istotne dane wejściowe testu, gdy program jest deterministyczny i gdy odpowiednie zachowanie jest kontrolowane przez dane wejściowe testu.
 
-Ostrzeżenie to pojawia się, ponieważ, podczas wykonywania przypadku testowego, metoda została wywołana, działa w sposób niejednoznaczny, albo wchodzi w interakcje ze środowiskiem. Należą do nich metod **System.Random** i **System.IO.File**. Jeśli chcesz, aby program IntelliTest, aby utworzyć dane wejściowe testu znaczący, należy testowanie metody, które program IntelliTest flagi jako problemy z testowalnością.
+To ostrzeżenie jest wyświetlane, ponieważ podczas wykonywania przypadku testowego wywołana została metoda, która zachowuje się niedeterministycznie lub współdziała ze środowiskiem. Przykłady to metody **System. Random** i **System. IO. File**. Jeśli chcesz, aby IntelliTest tworzyć znaczące dane wejściowe testów, musisz zasymulować metody, które IntelliTest flagi jako problemy z testowaniem.
 
 <a name="limitation"></a>
 ## <a name="limitation"></a>Ograniczenie
 
-Funkcja IntelliTest [generuje dane wejściowe testu](input-generation.md) przy użyciu [moduł rozwiązywania ograniczeń](input-generation.md#constraint-solver).
-Istnieją jednak pewne operacje, które wykraczają poza zakres [moduł rozwiązywania ograniczeń](input-generation.md#constraint-solver).
-Obecnie dotyczy to:
+IntelliTest [generuje dane wejściowe testów](input-generation.md) przy użyciu [funkcji ograniczenia Solver](input-generation.md#constraint-solver).
+Istnieją jednak pewne operacje, które wykraczają poza zakres [funkcji ograniczenia](input-generation.md#constraint-solver).
+Obecnie obejmuje to:
 
-* operacje najczęściej zmiennoprzecinkowe (tylko niektóre liniowej arytmetyczny jest obsługiwany na liczb zmiennoprzecinkowych)
-* konwersje między liczb zmiennoprzecinkowych i liczb całkowitych
-* wszystkie operacje na **System.Decimal** typu
+* Większość operacji zmiennoprzecinkowych (w liczbie zmiennoprzecinkowej jest obsługiwana tylko część arytmetyczna)
+* Konwersje między liczbami zmiennoprzecinkowymi a liczbami całkowitymi
+* wszystkie operacje na typie **System. Decimal**
 
-To ostrzeżenie jest wyświetlane, gdy wykonywany kod wykonuje operację lub wywołuje metodę, która nie może zinterpretować IntelliTest.
+To ostrzeżenie jest wyświetlane, gdy wykonany kod wykonuje operację lub wywołuje metodę, którą nie można zinterpretować IntelliTest.
 
 <a name="observed-call-mismatch"></a>
-## <a name="observed-call-mismatch"></a>Zaobserwowana niezgodność wywołań
+## <a name="observed-call-mismatch"></a>Obserwowana niezgodność wywołań
 
-Funkcja IntelliTest [generuje dane wejściowe testu](input-generation.md) dzięki monitorowaniu wykonywania programu. Jednak program IntelliTest nie można monitorować wszystkie instrukcje. Na przykład nie można monitorować, kodu natywnego, a nie można monitorować, kod, który nie ma instrumentacji.
+IntelliTest [generuje dane wejściowe testów](input-generation.md) przez wykonanie programu monitorowania. Jednak IntelliTest może nie być w stanie monitorować wszystkich instrukcji. Na przykład nie może monitorować kodu natywnego i nie może monitorować kodu, który nie jest Instrumentacją.
 
-Funkcja IntelliTest nie może monitorować kodu, nie może generować dane wejściowe testu, które są istotne dla tego kodu.
-Często programu IntelliTest nie są świadomi, że nie można go monitorować metody aż wywołanie tej metody zwraca. Jednak jest przyczyną tego ostrzeżenia:
+Gdy IntelliTest nie może monitorować kodu, nie może wygenerować danych wejściowych testów, które są istotne dla tego kodu.
+Często IntelliTest nie wie, że nie może monitorować metody do momentu, gdy wywołanie tej metody nie zwraca. Przyczyną tego ostrzeżenia jest jednak:
 
-* Funkcja IntelliTest monitorowane kodu, który zainicjował wywołanie niezinstrumentowanej metody
-* Niezinstrumentowanej metody wywoływanej metody, która ma Instrumentacji
-* Funkcja IntelliTest monitoruje instrumentowanych metodę, która została wywołana
+* IntelliTest monitorować jakiś kod, który zainicjował wywołanie metody bez instrumentu
+* Metoda bez Instrumentacji nazywana metodą, która jest Instrumentacją
+* IntelliTest monitoruje metodę instrumentową, która została wywołana
 
-IntelliTest nie zna co niezinstrumentowanej metody pośrednie zostały, więc może być możliwe wygenerowanie dane wejściowe testu, które są istotne dla zagnieżdżone instrumentowanej wywołania.
+IntelliTest nie wie, jak Metoda pośrednia bezinstrumentacja zakończyła działanie, dlatego może nie być w stanie wygenerować danych wejściowych testów, które są istotne dla zagnieżdżonego wywołania Instrumentacji.
 
 <a name="value-static-field"></a>
 ## <a name="value-stored-in-static-field"></a>Wartość przechowywana w polu statycznym
 
-IntelliTest systematycznie można określić [dane wejściowe testu odpowiednie](input-generation.md) tylko podczas testów jednostkowych jest deterministyczna; innymi słowy, zawsze działa ten sam sposób dla tych samych wejściach testu. W szczególności oznacza to, test należy pozostawić system w stanie, który umożliwia ponowne wykonanie tego testu.
-W idealnym przypadku testu jednostkowego nie należy zmieniać dowolny stan globalny, ale wszystkie interakcje z funkcje globalne powinny być w postaci makiet.
+IntelliTest może systematycznie określić [istotne dane wejściowe testu](input-generation.md) tylko wtedy, gdy test jednostkowy jest deterministyczny; Innymi słowy, zawsze zachowuje ten sam sposób dla tych samych testów danych wejściowych. W szczególności oznacza to, że test powinien opuścić system w stanie, który umożliwia ponowne uruchomienie tego testu.
+W idealnym przypadku test jednostkowy nie powinien zmieniać żadnego stanu globalnego, ale należy zasymulować wszystkie interakcje z Globals.
 
-To ostrzeżenie wskazuje, że pole statyczne został zmieniony; Dzięki temu może być testu zachowują się w sposób niejednoznaczny.
+To ostrzeżenie wskazuje, że pole statyczne zostało zmienione; może to spowodować, że test zadziała niedeterministycznie.
 
-W niektórych sytuacjach dopuszczalne jest zmienianie statycznego pola:
+W niektórych sytuacjach dopuszczalna jest zmiana pola statycznego:
 
-* gdy dane wejściowe testu powoduje, że Instalator lub oczyścić kod, aby cofnąć zmianę
-* gdy pole jest inicjowane tylko raz, i wartość nie zmienia się później
+* gdy dane wejściowe testu powodują, że Instalator lub kod czyszczący cofa zmiany
+* gdy pole jest inicjowane tylko raz, a wartość nie zmienia się później
 
 <a name="report-bug"></a>
 
-## <a name="got-feedback"></a>Czy chcesz przesłać opinię?
+## <a name="got-feedback"></a>Masz opinię?
 
-Opublikuj swoje pomysły i funkcji żądania na [społeczności deweloperów](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
+Publikuj swoje pomysły i żądania funkcji w [społeczności deweloperów](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).

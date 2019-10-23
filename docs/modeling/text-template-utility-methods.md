@@ -4,30 +4,30 @@ ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - text templates, utility methods
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c65960b2ad7f0eb31a9c969fb4671f883dc477c7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1e6426ea57fbdbec6ec47a4f6348463b88b250e0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001464"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72606005"
 ---
 # <a name="text-template-utility-methods"></a>Metody korzystania z szablonów tekstowych
 
-Istnieje kilka metod, które są zawsze dostępne dla Ciebie podczas pisania kodu w szablonie tekstu Visual Studio. Te metody są zdefiniowane w <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.
+Istnieje kilka metod, które są zawsze dostępne, gdy piszesz kod w szablonie tekstu programu Visual Studio. Te metody są zdefiniowane w <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.
 
 > [!TIP]
-> Można również użyć innych metod i usług udostępnianych przez środowisko hosta w regularnych szablon tekstowy (nieprzetworzony). Na przykład, można rozpoznać ścieżki do plików, rejestrowanie błędów i Pobierz usług dostarczanych przez program Visual Studio i wszystkie załadowane pakietów. Aby uzyskać więcej informacji, zobacz [uzyskiwania dostępu do programu Visual Studio z szablonu tekstowego](/previous-versions/visualstudio/visual-studio-2010/gg604090\(v\=vs.100\)).
+> Można również użyć innych metod i usług udostępnianych przez środowisko hosta w zwykłym (niewstępnie przetworzonym) szablonie tekstowym. Można na przykład rozpoznać ścieżki plików, rejestrować błędy i pobrać usługi udostępniane przez program Visual Studio oraz wszystkie załadowane pakiety. Aby uzyskać więcej informacji, zobacz [Uzyskiwanie dostępu do programu Visual Studio z szablonu tekstu](/previous-versions/visualstudio/visual-studio-2010/gg604090\(v\=vs.100\)).
 
-## <a name="write-methods"></a>Pisanie metod
+## <a name="write-methods"></a>Metody zapisu
 
-Możesz użyć `Write()` i `WriteLine()` metody dołączyć tekst wewnątrz bloku standardowego kodu, zamiast korzystać z blokiem kodu wyrażenia. Poniższe bloki kodu dwa są funkcjonalnie równoważne.
+Możesz użyć metod `Write()` i `WriteLine()` do dołączania tekstu wewnątrz standardowego bloku kodu, zamiast korzystać z bloku kodu wyrażenia. Poniższe dwa bloki kodu są funkcjonalnie równoważne.
 
-### <a name="code-block-with-an-expression-block"></a>Blok kodu za pomocą bloku wyrażenia
+### <a name="code-block-with-an-expression-block"></a>Blok kodu z blokiem wyrażenia
 
 ```
 <#
@@ -39,7 +39,7 @@ while (i-- > 0)
 #>
 ```
 
-### <a name="code-block-using-writeline"></a>Blok kodu przy użyciu metody WriteLine()
+### <a name="code-block-using-writeline"></a>Blok kodu z użyciem funkcji WriteLine ()
 
 ```
 <#
@@ -51,9 +51,9 @@ while (i-- > 0)
 #>
 ```
 
-Może okazać się przydatne do korzystania z jednej z następujących metod narzędzia zamiast bloku wyrażenia wewnątrz bloku kodu długie przy użyciu zagnieżdżone struktury sterujące.
+Przydatne może okazać się użycie jednej z tych metod narzędzi zamiast bloku wyrażenia wewnątrz długiego bloku kodu z zagnieżdżonymi strukturami formantów.
 
-`Write()` i `WriteLine()` metody mają dwa przeciążenia, ta, która przyjmuje jako parametr ciągu jednego i jeden, który przyjmuje ciąg formatu złożonego, a także tablicę obiektów do uwzględnienia w ciągu (takich jak `Console.WriteLine()` metody). Następujące dwa zastosowania `WriteLine()` są funkcjonalnie równoważne:
+Metody `Write()` i `WriteLine()` mają dwa przeciążenia, jeden, który przyjmuje jeden parametr ciągu i jeden, który pobiera ciąg formatu złożonego i tablicę obiektów do uwzględnienia w ciągu (jak Metoda `Console.WriteLine()`). Poniższe dwa zastosowania `WriteLine()` są funkcjonalnie równoważne:
 
 ```
 <#
@@ -69,7 +69,7 @@ Może okazać się przydatne do korzystania z jednej z następujących metod nar
 
 ## <a name="indentation-methods"></a>Metody wcięć
 
-Wcięcie metody można użyć do formatowania danych wyjściowych szablonu tekstu. <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation> Klasa ma `CurrentIndent` ciągu właściwość, która pokazuje bieżącym wcięciu w szablonie tekstowym i `indentLengths` oznacza to pole listy wcięcia, które zostały dodane. Możesz dodać wcięć za pomocą `PushIndent()` — metoda i odejmowanie wcięć za pomocą `PopIndent()` metody. Aby usunąć wszystkie wcięcia, należy użyć `ClearIndent()` metody. Poniższy blok kodu pokazano sposób użycia tych metod:
+Możesz użyć metod wcięć, aby sformatować dane wyjściowe szablonu tekstu. Klasa <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation> ma właściwość `CurrentIndent` String, która pokazuje bieżące wcięcia w szablonie tekstowym i pole `indentLengths`, które jest listą wcięć, które zostały dodane. Możesz dodać wcięcie z użyciem metody `PushIndent()` i odjąć wcięcie przy użyciu metody `PopIndent()`. Jeśli chcesz usunąć wszystkie wcięcia, użyj metody `ClearIndent()`. Poniższy blok kodu przedstawia sposób korzystania z tych metod:
 
 ```
 <#
@@ -85,7 +85,7 @@ Wcięcie metody można użyć do formatowania danych wyjściowych szablonu tekst
 #>
 ```
 
-Ten blok kodu generuje następujące wyniki:
+Ten blok kodu generuje następujące dane wyjściowe:
 
 ```
 Hello
@@ -95,9 +95,9 @@ Hello
         Hello
 ```
 
-## <a name="error-and-warning-methods"></a>Błąd i ostrzeżenie metody
+## <a name="error-and-warning-methods"></a>Metody błędów i ostrzeżeń
 
-Błąd i ostrzeżenie metody narzędziowe służy do dodawania komunikatów do listy błędów programu Visual Studio. Na przykład poniższy kod doda komunikat o błędzie na liście błędów.
+Za pomocą metod narzędzi Error i Warning można dodawać komunikaty do Lista błędów programu Visual Studio. Na przykład poniższy kod doda komunikat o błędzie do Lista błędów.
 
 ```
 <#
@@ -113,25 +113,25 @@ Błąd i ostrzeżenie metody narzędziowe służy do dodawania komunikatów do l
 #>
 ```
 
-## <a name="access-to-host-and-service-provider"></a>Dostęp do hosta i usługodawcy
+## <a name="access-to-host-and-service-provider"></a>Dostęp do hosta i dostawcy usług
 
-Właściwość `this.Host` można zapewnić dostęp do właściwości udostępniane przez hosta, który jest wykonywany szablonu. Aby użyć `this.Host`, należy ustawić `hostspecific` atrybutu w `<@template#>` dyrektywy:
+Właściwość `this.Host` może zapewnić dostęp do właściwości uwidocznionych przez hosta, który wykonuje szablon. Aby użyć `this.Host`, należy ustawić atrybut `hostspecific` w dyrektywie `<@template#>`:
 
 `<#@template ... hostspecific="true" #>`
 
-Typ `this.Host` zależy od typu hosta, w którym szablon jest wykonywany. W szablonie, który jest uruchomiony w programie Visual Studio, można rzutować `this.Host` do `IServiceProvider` do uzyskania dostępu do usług, takich jak środowiska IDE. Na przykład:
+Typ `this.Host` zależy od typu hosta, w którym wykonywany jest szablon. W szablonie działającym w programie Visual Studio można rzutować `this.Host` na `IServiceProvider`, aby uzyskać dostęp do usług, takich jak środowisko IDE. Na przykład:
 
 ```
 EnvDTE.DTE dte = (EnvDTE.DTE) ((IServiceProvider) this.Host)
                        .GetService(typeof(EnvDTE.DTE));
 ```
 
-## <a name="using-a-different-set-of-utility-methods"></a>Przy użyciu różnych zestaw metod narzędziowych
+## <a name="using-a-different-set-of-utility-methods"></a>Korzystanie z innego zestawu metod narzędzi
 
-W ramach procesu tworzenia tekstu, plik szablonu jest przekształcana na klasy, która nosi nazwę zawsze `GeneratedTextTransformation`i dziedziczy <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>. Jeśli chcesz użyć innego zestawu metod zamiast tego można napisać własne klasy i je określić w dyrektywie szablonu. Klasa musi dziedziczyć <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.
+W ramach procesu generowania tekstu plik szablonu jest przekształcany do klasy, która zawsze nosi nazwę `GeneratedTextTransformation`and dziedziczy po <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>. Jeśli zamiast tego chcesz użyć innego zestawu metod, możesz napisać własną klasę i określić ją w dyrektywie Template. Klasa musi dziedziczyć po <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.
 
 ```
 <#@ template inherits="MyUtilityClass" #>
 ```
 
-Użyj `assembly` dyrektywy odwołać się do zestawu, gdzie można znaleźć klasy skompilowany.
+Użyj dyrektywy `assembly`, aby odwołać się do zestawu, w którym można znaleźć skompilowaną klasę.

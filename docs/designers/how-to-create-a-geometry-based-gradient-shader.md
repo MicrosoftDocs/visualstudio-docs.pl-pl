@@ -1,21 +1,21 @@
 ---
-title: 'Instrukcje: Tworzenie cieniowania gradientu geometrycznego'
+title: 'Instruktaż: Tworzenie cieniowania gradientu geometrycznego'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 4b204405-ba95-4c5e-bd51-ec033a3ebfb6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e138f253a734608140533de8019d2e5fb7577a7
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 3b34d51177e392b46c655c857b7015011818a888
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924345"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635638"
 ---
-# <a name="how-to-create-a-geometry-based-gradient-shader"></a>Instrukcje: Tworzenie cieniowania gradientu geometrycznego
+# <a name="how-to-create-a-geometry-based-gradient-shader"></a>Instruktaż: Tworzenie cieniowania gradientu geometrycznego
 
 W tym artykule pokazano, jak używać projektanta programu do cieniowania i języka ukierunkowanego modułu cieniującego Graph do tworzenia cieniowania gradientowego opartego na geometrii. Ten program do cieniowania skaluje stałą wartość koloru RGB o wysokości każdego punktu obiektu w przestrzeni światowej.
 
@@ -37,7 +37,7 @@ Przed rozpoczęciem upewnij się, że wyświetlane jest okno **Właściwości** 
 
 6. Dodaj węzeł **pozycji świata** do grafu. W **przyborniku**, w obszarze **stałe**wybierz **pozycję świat** i przenieś ją do powierzchni projektowej.
 
-7. Maskowanie położenia obszaru na całym świecie. W trybie **wyboru** Przenieś Terminal **wyjściowy** węzła **pozycja świata** do terminalu **wektorowego** węzła wektora **maski** . To połączenie maskuje położenie fragmentu, aby zignorować składniki x i z.
+7. Maskowanie położenia obszaru na całym świecie. W trybie **wyboru** Przenieś Terminal **wyjściowy** węzła **pozycja świata** do terminalu **wektorowego** węzła **wektora maski** . To połączenie maskuje położenie fragmentu, aby zignorować składniki x i z.
 
 8. Pomnóż wartość koloru RGB przez zamaskowane miejsce na całym świecie. Przenieś Terminal **RGB** węzła **koloru punktu** do terminalu **Y** węzła **pomnóż** , a następnie przenieś Terminal **wyjściowy** węzła **wektora maski** do terminalu **X** w **rozmnożonym** węźle. To połączenie skaluje wartość koloru o wysokości pikseli w przestrzeni świata.
 
@@ -52,17 +52,17 @@ Na poniższej ilustracji przedstawiono ukończony wykres modułu cieniującego i
 
 Niektóre kształty mogą zapewniać lepszy Podgląd niektórych programów do cieniowania. Aby uzyskać informacje o tym, jak wyświetlić podgląd programów do cieniowania w projektancie cieniowania, zobacz **Podgląd** programów do cieniowania w [projektancie cieniowania](../designers/shader-designer.md).
 
-Na poniższej ilustracji przedstawiono program do cieniowania opisany w tym dokumencie, który został zastosowany do sceny 3W, która [została pokazana w temacie How to: Modelowanie terenów](../designers/how-to-model-3-d-terrain.md)3W. Intensywność koloru zwiększa się o wysokość punktu na świecie.
+Na poniższej ilustracji przedstawiono program do cieniowania opisany w tym dokumencie dotyczący sceny 3W, która jest przedstawiona w [How: Modelowanie terenów 3W ](../designers/how-to-model-3-d-terrain.md). Intensywność koloru zwiększa się o wysokość punktu na świecie.
 
 ![Efekt gradientu stosowany do modelu&#45;terenowego 3 D](../designers/media/digit-gradient-effect-result.png)
 
-Aby uzyskać więcej informacji o sposobie zastosowania cieniowania do modelu 3D, zobacz [How to: Zastosuj cieniowanie do modelu](../designers/how-to-apply-a-shader-to-a-3-d-model.md)3W.
+Aby uzyskać więcej informacji na temat sposobu stosowania cieniowania do modelu 3D, zobacz [How: Zastosuj cieniowanie do modelu 3W ](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Instrukcje: Stosowanie cieniowania do modelu 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
-- [Instrukcje: Eksportowanie programu do cieniowania](../designers/how-to-export-a-shader.md)
-- [Instrukcje: Modelowanie terenów 3W](../designers/how-to-model-3-d-terrain.md)
-- [Instrukcje: Tworzenie cieniowania tekstury w skali szarości](../designers/how-to-create-a-grayscale-texture-shader.md)
+- [Instrukcje: Zastosuj cieniowanie do modelu 3W ](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Instrukcje: Eksportowanie ](../designers/how-to-export-a-shader.md) cieniowania
+- [Instrukcje: Modelowanie terenów 3W ](../designers/how-to-model-3-d-terrain.md)
+- [Instrukcje: Tworzenie cieniowania tekstury w skali szarości ](../designers/how-to-create-a-grayscale-texture-shader.md)
 - [Projektant cieniowania](../designers/shader-designer.md)
 - [Węzły projektanta cieniowania](../designers/shader-designer-nodes.md)

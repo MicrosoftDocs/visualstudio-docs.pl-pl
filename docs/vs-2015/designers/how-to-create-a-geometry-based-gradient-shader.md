@@ -1,80 +1,75 @@
 ---
-title: 'Instrukcje: Tworzenie cieniowania gradientu geometrycznego | Dokumentacja firmy Microsoft'
+title: 'Instruktaż: Tworzenie cieniowania gradientowego opartego na geometrii | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 4b204405-ba95-4c5e-bd51-ec033a3ebfb6
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: eda8424aeb28231df0ae0355931989bec13a89b7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1d9bfa9a6e9be1a97b3a606aa302defd12a8d062
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436178"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664519"
 ---
-# <a name="how-to-create-a-geometry-based-gradient-shader"></a>Instrukcje: Tworzenie cieniowania gradientu geometrycznego
+# <a name="how-to-create-a-geometry-based-gradient-shader"></a>Instruktaż: Tworzenie cieniowania gradientu geometrycznego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W tym dokumencie przedstawiono sposób umożliwia tworzenie cieniowania gradientu geometrycznego Shader Designer i język programu do cieniowania wykres kierowany. Ten program do cieniowania można skalować stałej wartości kolorów RGB przez wysokość każdego punktu obiektu w przestrzeni świata.  
-  
- Ten dokument przedstawia te działania:  
-  
-- Dodawanie węzłów do wykresu programu do cieniowania  
-  
-- Ustawianie właściwości węzła  
-  
-- Trwa rozłączanie węzłów  
-  
-- Łączenie z węzłami  
-  
-## <a name="creating-a-geometry-based-gradient-shader"></a>Tworzenie cieniowania gradientu geometrycznego  
- Można zaimplementować programu do cieniowania geometrycznego, dołączając pozycja piksela do modułu cieniującego. W językach cieniowania pikseli zawiera więcej informacji, niż tylko jego kolor i położenie na ekranie 2-D. Piksel — znane jako *fragmentu* w niektórych systemach — jest to zbiór wartości, które opisują powierzchni, który odpowiada pikseli. Wysokość każdego piksela w przestrzeni świata wpływa na kolor ostatecznymi fragmentu obiektu 3-D korzysta z modułem cieniującym, który jest opisany w tym dokumencie.  
-  
- Przed rozpoczęciem upewnij się, że **właściwości** okna i **przybornika** są wyświetlane.  
-  
-#### <a name="to-create-a-geometry-based-gradient-shader"></a>Aby utworzyć cieniowania gradientu geometrycznego  
-  
-1. Tworzenie modułu cieniującego DGSL chcesz pracować. Aby uzyskać informacje dotyczące sposobu dodawania modułu cieniującego DGSL do projektu, zobacz sekcję pierwsze kroki w [Shader Designer](../designers/shader-designer.md).  
-  
-2. Odłącz **koloru punktu** węzła z **ostateczny kolor** węzła. Wybierz **RGB** terminali z **koloru punktu** węzła, a następnie wybierz **Przerwij linki**. To sprawia, że miejsce na węzeł, który zostanie dodany do następnego kroku.  
-  
-3. Dodaj **mnożenia** węzła do wykresu. W **przybornika**w obszarze **matematyczne**, wybierz opcję **mnożenia** i przenieś go do powierzchni projektowej.  
-  
-4. Dodaj **wektor maski** węzła do wykresu. W **przybornika**w obszarze **narzędzie**, wybierz opcję **wektor maski** i przenieś go do powierzchni projektowej.  
-  
-5. Określ wartości maski **wektor maski** węzła. W **wybierz** tryb, wybierz **wektor maski** węzła, a następnie w polu **właściwości** oknie **zielony / Y** właściwość **Wartość true,**, a następnie ustaw **czerwony / X**, **niebieski / Z** i **alfa / W** właściwości w celu **False**. W tym przykładzie **czerwony / X**, **zielony / Y**, i **niebieski / Z** właściwości odpowiadają x, y i składniki z **pozycja świata** węzeł, i **alfa / W** jest nieużywana. Ponieważ tylko **zielony / Y** ustawiono **True**, tylko składnik y wektor wejściowy pozostaje po jego są wyświetlane jako znaki.  
-  
-6. Dodaj **pozycja świata** węzła do wykresu. W **przybornika**w obszarze **stałe**, wybierz opcję **pozycja świata** i przenieś go do powierzchni projektowej.  
-  
-7. Maski pozycji miejsca na świecie fragmentu. W **wybierz** tryb, Przenieś **dane wyjściowe** terminali z **pozycja świata** węzeł, aby **wektor** terminali z **maski Wektor** węzła. To połączenie maskuje pozycji fragmentu, aby zignorować x i z składników.  
-  
-8. Mnożenie — stała koloru RGB według pozycji miejsca na świecie maskowanego. Przenieś **RGB** terminali z **koloru punktu** węzeł, aby **Y** terminali z **mnożenia** węzeł, a następnie przenieść  **Dane wyjściowe** terminali z **wektor maski** węzeł **X** terminali z **mnożenia** węzła. To połączenie jest skalowana w wartości koloru, wysokość piksela w przestrzeni świata.  
-  
-9. Połącz się ostateczny kolor z wartości koloru skalowany. Przenieś **dane wyjściowe** terminali z **mnożenia** węzeł, aby **RGB** terminali z **ostateczny kolor** węzła.  
-  
-   Poniższej ilustracji ukończone programu do cieniowania programu graph i wersję zapoznawczą programu do cieniowania zastosowane do kuli.  
-  
+W tym dokumencie pokazano, jak używać projektanta programu do cieniowania i języka ukierunkowanego modułu cieniującego Graph do tworzenia cieniowania gradientowego opartego na geometrii. Ten program do cieniowania skaluje stałą wartość koloru RGB o wysokości każdego punktu obiektu w przestrzeni światowej.
+
+ W tym dokumencie przedstawiono następujące działania:
+
+- Dodawanie węzłów do wykresu cieniowania
+
+- Ustawianie właściwości węzła
+
+- Odłączanie węzłów
+
+- Łączenie węzłów
+
+## <a name="creating-a-geometry-based-gradient-shader"></a>Tworzenie cieniowania gradientowego opartego na geometrii
+ Można zaimplementować cieniowanie oparte na geometrii, dołączając pozycję piksela do cieniowania. W językach cieniowania piksel zawiera więcej informacji niż tylko jego kolor i lokalizacja na ekranie 2-D. Piksel — znany jako *fragment* w niektórych systemach — jest kolekcją wartości, które opisują powierzchnię, która odnosi się do piksela. Program do cieniowania, który jest opisany w tym dokumencie, wykorzystuje wysokość każdego piksela obiektu 3-D w przestrzeni kosmicznej, aby mieć wpływ na końcowy kolor wyjściowy fragmentu.
+
+ Przed rozpoczęciem upewnij się, że wyświetlane jest okno **Właściwości** i **Przybornik** .
+
+#### <a name="to-create-a-geometry-based-gradient-shader"></a>Aby utworzyć cieniowanie gradientowe oparte na geometrii
+
+1. Utwórz program do cieniowania DGSL. Aby dowiedzieć się, jak dodać cieniowanie DGSL do projektu, zobacz sekcję Wprowadzenie w [projektancie cieniowania](../designers/shader-designer.md).
+
+2. Odłącz węzeł **koloru punktu** od końcowego węzła **koloru** . Wybierz Terminal **RGB** w węźle **Kolor punktu** , a następnie wybierz polecenie **Przerwij linki**. Powoduje to powolne miejsce dla węzła, który jest dodawany w następnym kroku.
+
+3. Dodaj węzeł **pomnóż** do grafu. W **przyborniku**, w obszarze **Math**, zaznacz opcję **pomnóż** i przenieś ją na powierzchnię projektu.
+
+4. Dodaj węzeł **wektora maski** do grafu. W **przyborniku**w obszarze **Narzędzia**wybierz pozycję **maska wektora** i przenieś ją na powierzchnię projektu.
+
+5. Określ wartości maski dla węzła **wektora maski** . W obszarze tryb **wyboru** wybierz węzeł **Vector Mask** , a następnie w oknie **Właściwości** ustaw właściwość **Green/Y** na **wartość true**, a następnie ustaw wartość **false** dla właściwości **Red/X**, **Blue/Z** i **Alpha/W**. W tym przykładzie właściwości **Red/X**, **Green/Y**i **Blue/Z** są zgodne ze składnikami X, Y i z w węźle **pozycja świata** , a **alfa/W** nie są używane. Ponieważ tylko **zielony/Y** ma **wartość true**, tylko składnik Y wektora wejściowego pozostaje po zamaskowanyu.
+
+6. Dodaj węzeł **pozycji świata** do grafu. W **przyborniku**, w obszarze **stałe**wybierz **pozycję świat** i przenieś ją do powierzchni projektowej.
+
+7. Maskowanie położenia obszaru na całym świecie. W trybie **wyboru** Przenieś Terminal **wyjściowy** węzła **pozycja świata** do terminalu **wektorowego** węzła **wektora maski** . To połączenie maskuje położenie fragmentu, aby zignorować składniki x i z.
+
+8. Pomnóż wartość koloru RGB przez zamaskowane miejsce na całym świecie. Przenieś Terminal **RGB** węzła **koloru punktu** do terminalu **Y** węzła **pomnóż** , a następnie przenieś Terminal **wyjściowy** węzła **wektora maski** do terminalu **X** w **rozmnożonym** węźle. To połączenie skaluje wartość koloru o wysokości pikseli w przestrzeni świata.
+
+9. Połącz wartość skalowanego koloru z końcowym kolorem. Przenieś Terminal **wyjściowy** węzła **mnożenia** do terminalu **RGB** **końcowego węzła Color** .
+
+   Na poniższej ilustracji przedstawiono ukończony wykres modułu cieniującego i Podgląd cieniowania zastosowany do sfery.
+
 > [!NOTE]
-> Na tej ilustracji określono koloru pomarańczowego, aby lepiej pokazują wpływ programu do cieniowania, ale ponieważ kształtu (wersja zapoznawcza) nie ma żadnych pozycji w przestrzeni świata, programu do cieniowania nie pełni podglądu w projektancie programu do cieniowania. W rzeczywistych sceny w celu wykazania pełnego wpływu, można wyświetlić podglądu modułu cieniującego.  
-  
- ![Wykres modułu cieniującego i podgląd efektów jej](../designers/media/digit-gradient-effect-graph.png "cyfry-gradientu — efekt-Graph")  
-  
- Niektórych kształtów udostępniać lepsze wersje zapoznawcze niektórych programów do cieniowania. Aby dowiedzieć się, jak wyświetlić podgląd programów do cieniowania w projektancie programu do cieniowania, zobacz **Podgląd cieniowania** w [Shader Designer](../designers/shader-designer.md)  
-  
- Poniższa ilustracja przedstawia programu do cieniowania, który jest opisany w tym dokumencie dotyczą w scenie 3-D, która została przedstawiona w [jak: Modelowanie terenu 3D](../designers/how-to-model-3-d-terrain.md). Intensywność koloru zwiększa się o wysokości punktów na całym świecie.  
-  
- ![Efekt gradientu stosowane do 3&#45;modelu terenu D](../designers/media/digit-gradient-effect-result.png "cyfry-gradientu — efekt — wynik")  
-  
- Aby uzyskać więcej informacji dotyczących sposobu stosowania programu do cieniowania do modelu 3-D, zobacz [jak: Stosowanie cieniowania do modelu 3-D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
-  
-## <a name="see-also"></a>Zobacz też  
- [Instrukcje: Stosowanie cieniowania do modelu 3-D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
- [Instrukcje: Eksport cieniowania](../designers/how-to-export-a-shader.md)   
- [Instrukcje: Model terenu 3D](../designers/how-to-model-3-d-terrain.md)   
- [Instrukcje: Tworzenie cieniowania tekstury skali szarości](../designers/how-to-create-a-grayscale-texture-shader.md)   
- [Projektant programu do cieniowania](../designers/shader-designer.md)   
- [Węzły projektanta cieniowania](../designers/shader-designer-nodes.md)
+> Na tej ilustracji zostanie określony pomarańczowy kolor, aby lepiej zademonstrować efekt cieniowania, ale ponieważ kształt podglądu nie ma pozycji na świecie, cieniowanie nie może być w pełni przeglądane w projektancie cieniowania. Aby zademonstrować pełen efekt, cieniowanie musi być widoczne w prawdziwej scenie.
+
+ ![Graf cieniowania i podgląd jego efektu](../designers/media/digit-gradient-effect-graph.png "Cyfra — efekt gradientu — wykres")
+
+ Niektóre kształty mogą zapewniać lepszy Podgląd niektórych programów do cieniowania. Aby uzyskać informacje o sposobach podglądu programów do cieniowania w projektancie cieniowania, zobacz **Podgląd** programów do cieniowania w [projektancie cieniowania](../designers/shader-designer.md)
+
+ Na poniższej ilustracji przedstawiono program do cieniowania opisany w tym dokumencie dotyczący sceny trójwymiarowej, która jest przedstawiona w [How: Modelowanie terenu 3-D ](../designers/how-to-model-3-d-terrain.md). Intensywność koloru zwiększa się o wysokość punktu na świecie.
+
+ ![Efekt gradientu stosowany do modelu&#45;terenowego 3 D](../designers/media/digit-gradient-effect-result.png "Cyfra — wynik gradientu")
+
+ Aby uzyskać więcej informacji o sposobie zastosowania cieniowania do modelu 3-D, zobacz [How: Zastosuj cieniowanie do modelu 3-D ](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+
+## <a name="see-also"></a>Zobacz też
+ [Instrukcje: Zastosuj cieniowanie do modelu 3-w ](../designers/how-to-apply-a-shader-to-a-3-d-model.md) [How, aby: Eksportuj [How ](../designers/how-to-export-a-shader.md) cieniowania do: Modelowanie terenu 3-D ](../designers/how-to-model-3-d-terrain.md) [How do: Tworzenie cieniowania tekstury w skali szarości ](../designers/how-to-create-a-grayscale-texture-shader.md) [węzły projektanta cieniowania](../designers/shader-designer-nodes.md) [projektanta](../designers/shader-designer.md) cieniowania
