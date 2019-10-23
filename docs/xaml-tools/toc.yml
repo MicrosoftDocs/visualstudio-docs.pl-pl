@@ -60,7 +60,7 @@
       href: ../debugger/debugging-windows-store-and-windows-universal-apps.md
 - name: Windows Presentation Foundation (WPF)
   items:
-    - name: Wprowadzenie
+    - name: Rozpoczęcie pracy
       displayName: Windows Presentation Foundation (WPF)
       href: ../designers/getting-started-with-wpf.md
     - name: Omówienie podsystemu WPF
@@ -107,8 +107,8 @@
     - name: Debugowanie aplikacji platformy WPF >>
       items:
         - name: Debugowanie platformy WPF
-          href: ../debugger/debugging-wpf.md?toc=/visualstudio/xaml-tools/toc.json
+          href: ../debugger/debugging-wpf.md?toc=/visualstudio/xaml-tools/toc.json&bc=/visualstudio/xaml-tools/breadcrumb/toc.json
         - name: Korzystanie z wizualizatora drzewa platformy WPF
-          href: ../debugger/how-to-use-the-wpf-tree-visualizer.md?toc=/visualstudio/xaml-tools/toc.json
+          href: ../debugger/how-to-use-the-wpf-tree-visualizer.md?toc=/visualstudio/xaml-tools/toc.json&bc=/visualstudio/xaml-tools/breadcrumb/toc.json
         - name: Wyświetlanie informacji o śledzeniu platformy WPF
-          href: ../debugger/how-to-display-wpf-trace-information.md?toc=/visualstudio/xaml-tools/toc.json
+          href: ../debugger/how-to-display-wpf-trace-information.md?toc=/visualstudio/xaml-tools/toc.json&bc=/visualstudio/xaml-tools/breadcrumb/toc.json
