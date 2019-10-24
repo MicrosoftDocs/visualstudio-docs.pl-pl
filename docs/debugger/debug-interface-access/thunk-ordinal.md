@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 776ee35e57b62463d47fc6f7fa26133f507f16f9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1de2d6c9700dcb7b1106c3693d855bb1d8ae2cfa
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62854436"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738494"
 ---
-# <a name="thunkordinal"></a>THUNK_ORDINAL
-Określa typy thunk.
+# <a name="thunk_ordinal"></a>THUNK_ORDINAL
+Wyznacza typy thunk.
 
 ## <a name="syntax"></a>Składnia
 
@@ -39,26 +39,26 @@ typedef enum THUNK_ORDINAL {
 ```
 
 ## <a name="elements"></a>Elementy
-Standardowa THUNK_ORDINAL_NOTYPE thunk.
+THUNK_ORDINAL_NOTYPE standardowa THUNK.
 
-THUNK_ORDINAL_ADJUSTOR A `this` adjustor thunk.
+THUNK_ORDINAL_ADJUSTOR `this` THUNK.
 
-Wirtualne THUNK_ORDINAL_VCALL thunk wywołania.
+THUNK_ORDINAL_VCALL wirtualne wywołania THUNK.
 
-Thunk P-code THUNK_ORDINAL_PCODE.
+THUNK_ORDINAL_PCODE P-Code THUNK.
 
-Opóźnienie THUNK_ORDINAL_LOAD thunk obciążenia.
+THUNK_ORDINAL_LOAD Opóźnij obciążenie THUNK.
 
-Przyrostowe THUNK_ORDINAL_TRAMP_INCREMENTAL thunk trampoline (trampoline sekcją thunk służy do Odbijanie wywołania z miejsca w pamięci z jednego do drugiego).
+THUNK_ORDINAL_TRAMP_INCREMENTAL przyrostowe Trampoline THUNK (Trampoline THUNK jest używany do odbijania wywołań z jednego miejsca w pamięci do innej).
 
-Thunk trampoline punktu THUNK_ORDINAL_TRAMP_BRANCHISLAND gałęzi.
+THUNK_ORDINAL_TRAMP_BRANCHISLAND Trampoline THUNK.
 
 ## <a name="remarks"></a>Uwagi
-Wartości w tym wyliczeniu są zwracane z wywołania [idiasymbol::get_thunkordinal —](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md) metody.
+Wartości w tym wyliczeniu są zwracane z wywołania metody [IDiaSymbol:: get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md) .
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: cvconst.h
+Nagłówek: cvconst. h
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wyliczenia i struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaSymbol::get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md)

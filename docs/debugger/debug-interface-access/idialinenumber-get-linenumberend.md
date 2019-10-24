@@ -1,5 +1,5 @@
 ---
-title: Idialinenumber::get_linenumberend — | Dokumentacja firmy Microsoft
+title: 'IDiaLineNumber:: get_lineNumberEnd | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb62d8588fdbf439508eed3e5b2cc81a840b9f3d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c43c1d4b3b6a59f6601684fe20e238782448decb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828682"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743166"
 ---
-# <a name="idialinenumbergetlinenumberend"></a>IDiaLineNumber::get_lineNumberEnd
-Pobiera numer wiersza liczonego od jednego źródła, gdzie kończy się instrukcja lub wyrażenie.
+# <a name="idialinenumberget_linenumberend"></a>IDiaLineNumber::get_lineNumberEnd
+Pobiera numer linii źródłowej, w której znajduje się instrukcja lub wyrażenie.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,10 +33,10 @@ HRESULT get_lineNumberEnd ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca numer wiersza, w którym kończy się instrukcja lub wyrażenie. Jeśli wartość wynosi zero, end information nie jest obecny.
+określoną Zwraca numer wiersza, w którym znajduje się instrukcja lub wyrażenie. Jeśli wartość jest równa zero, wówczas informacje końcowe nie są obecne.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`. Zwraca `S_FALSE`, jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

@@ -1,5 +1,5 @@
 ---
-title: Struktura pliku [Content_types] .xml | Dokumentacja firmy Microsoft
+title: Struktura pliku [Content_Types]. XML | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,78 +13,78 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ef77c610bd310347c7ba60048bda342e997da33
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5cc42a5346498c04f759956b2ca00094ac1df119
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316416"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72718728"
 ---
-# <a name="the-structure-of-the-contenttypesxml-file"></a>Struktura pliku [Content_types].xml
-Zawiera informacje na temat rodzajów zawartości w pakiecie VSIX. Program Visual Studio używa pliku [Content_Types] .xml, aby zainstalować pakiet, ale nie jest instalowana w samym pliku.
+# <a name="the-structure-of-the-content_typesxml-file"></a>Struktura pliku [Content_types].xml
+Zawiera informacje o rodzaju zawartości w pakiecie VSIX. Program Visual Studio używa pliku [Content_Types]. XML do zainstalowania pakietu, ale nie instaluje samego pliku.
 
 > [!NOTE]
-> Mimo że w tym temacie mają zastosowanie tylko do plików XML [Content_Type], które są używane w pakietów VSIX, typu pliku [Content_Types] .xml jest częścią *otwarte konwencje tworzenia pakietów (OPC)* standardowych. Aby uzyskać więcej informacji, zobacz [OPC: Nowy Standard dla pakowania własnych danych](http://go.microsoft.com/fwlink/?LinkID=148207) w witrynie MSDN w sieci Web.
+> Chociaż ten temat dotyczy tylko plików [Content_Type]. XML, które są używane w pakietach VSIX, typ pliku [Content_Types]. XML jest częścią standardu *Open Package Conventions (OPC)* . Aby uzyskać więcej informacji, zobacz [OPC: A New Standard for pakowanie danych](http://go.microsoft.com/fwlink/?LinkID=148207) w witrynie MSDN w sieci Web.
 
 ## <a name="attributes-and-elements"></a>Atrybuty i elementy
- Poniższe sekcje opisują element główny i jego atrybuty i elementy podrzędne.
+ W poniższych sekcjach opisano element główny oraz jego atrybuty i elementy podrzędne.
 
 ### <a name="root-element"></a>Element główny
 
 |Element|Opis|
 |-------------|-----------------|
-|`Types`|Zawiera elementy podrzędne, które wyliczanie typów plików w pakiecie VSIX.|
+|`Types`|Zawiera elementy podrzędne, które wyliczają typy plików w pakiecie VSIX.|
 
 ### <a name="attributes"></a>Atrybuty
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`Xmlns`|(Wymagane). Lokalizacja schematu, używany dla tego pliku XML [Content_Types].|
+|`Xmlns`|(Wymagane). Lokalizacja schematu używanego dla tego pliku [Content_Types]. XML.|
 
-### <a name="attribute-name-attribute"></a>{Atrybut name} Atrybut
+### <a name="attribute-name-attribute"></a>{Nazwa atrybutu} Przypisane
 
 | Wartość | Opis |
 | - | - |
-| http://schemas.openformats.org/package/2006/content-types | Lokalizacja schematu, typy zawartości. |
+| http://schemas.openformats.org/package/2006/content-types | Lokalizacja schematu typów zawartości. |
 
 ### <a name="child-elements"></a>Elementy podrzędne
- `Types` Element może zawierać dowolną liczbę `Default` elementów.
+ Element `Types` może zawierać dowolną liczbę `Default` elementów.
 
 |Element|Opis|
 |-------------|-----------------|
-|`Default`|Opisuje typ zawartości w pakiecie VSIX. Każdy typ pliku do pakietu musi mieć swój własny `Default` elementu.|
+|`Default`|Opisuje typ zawartości w pakiecie VSIX. Każdy typ pliku w pakiecie musi mieć własny `Default` elementu.|
 
 ### <a name="attributes"></a>Atrybuty
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`Extension`|Rozszerzenie nazwy pliku plików w pakiecie VSIX.|
-|`ContentType`|Opisuje typ zawartości skojarzonej z rozszerzeniem nazwy pliku.|
+|`Extension`|Rozszerzenie nazwy pliku w pakiecie VSIX.|
+|`ContentType`|Opisuje rodzaj zawartości skojarzonej z rozszerzeniem nazwy pliku.|
 
-### <a name="attribute-name-attribute"></a>{Atrybut name} Atrybut
- Program Visual Studio rozpoznaje następujące `ContentType` wartości skojarzonych z nim `Extension` typów.
+### <a name="attribute-name-attribute"></a>{Nazwa atrybutu} Przypisane
+ Program Visual Studio rozpoznaje następujące wartości `ContentType` dla skojarzonych typów `Extension`.
 
-|Wewnętrzny|Typ zawartości|
+|rozszerzenia|contentType|
 |---------------|-----------------|
-|txt|zwykły tekst|
-|pkgdef|zwykły tekst|
-|xml|text/xml|
-|vsixmanifest|text/xml|
-|htm i html|text/html|
-|RTF|Aplikacja/rtf|
-|pdf|Aplikacja/pdf|
-|Obraz GIF|image/gif|
-|jpg lub jpeg|image/jpg|
-|TIFF|image/tiff|
+|zawierającego|tekst/zwykły|
+|pkgdef|tekst/zwykły|
+|dokument|tekst/XML|
+|vsixmanifest|tekst/XML|
+|htm lub HTML|tekst/HTML|
+|RTF|Aplikacja/RTF|
+|formatach|Aplikacja/plik PDF|
+|GIF|obraz/GIF|
+|jpg lub JPEG|obraz/jpg|
+|TIFF|obraz/TIFF|
 |vsix|Aplikacja/zip|
-|ZIP|Aplikacja/zip|
-|biblioteki dll|application/octet-stream.|
-|wszystkie typy plików|application/octet-stream.|
+|kodu|Aplikacja/zip|
+|bibliotece|Aplikacja/oktet — strumień|
+|wszystkie inne typy plików|Aplikacja/oktet — strumień|
 
 ## <a name="example"></a>Przykład
 
 ### <a name="description"></a>Opis
- Następującego pliku [Content_Types] .xml w tym artykule opisano typowe pakiet VSIX.
+ Następujący plik [Content_Types]. XML opisuje typowy pakiet VSIX.
 
 ### <a name="code"></a>Kod
 
@@ -99,7 +99,7 @@ Zawiera informacje na temat rodzajów zawartości w pakiecie VSIX. Program Visua
 </Types>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Anatomia pakietu VSIX](../extensibility/anatomy-of-a-vsix-package.md)
-- [Odwołanie do schematu 1.0 rozszerzenia VSIX](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
-- [OPC: Nowy Standard do pakowania danych](http://go.microsoft.com/fwlink/?LinkID=148207)
+- [Dokumentacja schematu rozszerzenia VSIX 1,0](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
+- [OPC: nowy standard tworzenia pakietów danych](http://go.microsoft.com/fwlink/?LinkID=148207)

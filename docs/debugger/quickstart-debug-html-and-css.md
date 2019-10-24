@@ -17,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 36b17adfd3968031983965ca47574804a9f1738e
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: 52235ab4770f5267de8507ff67fcda0aa1370392
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72589096"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72730551"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Debugowanie kodu HTML i CSS w aplikacjach platformy UWP w programie Visual Studio
 
@@ -254,7 +254,7 @@ W przypadku debugowania aplikacji można wybrać elementy DOM na trzy sposoby:
 > [!NOTE]
 > Wyróżnianie elementów przez umieszczenie ich nad nimi jest tylko częściowo obsługiwane w emulatorze Windows Phone.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Debugowanie aplikacji w programie Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
 - [Odświeżanie aplikacji (JavaScript)](../debugger/refresh-an-app-javascript.md)
 - [Debugowanie kontrolki WebView](../debugger/debug-a-webview-control.md)

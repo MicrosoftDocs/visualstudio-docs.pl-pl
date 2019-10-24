@@ -13,12 +13,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d78371b638b9a584ba27a1ed035cf188c3e66e0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1de6841f25bcc6f6c45bde93fdd4cf2cb49481ab
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655653"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747804"
 ---
 # <a name="quick-watch-command"></a>Szybka czujka — Polecenie
 Wyświetla wybrany lub określony tekst w polu wyrażenie okna [QuickWatch](../../debugger/watch-and-quickwatch-windows.md) . Za pomocą tego okna dialogowego można obliczyć bieżącą wartość zmiennej lub wyrażenia rozpoznawanego przez debuger lub zawartość rejestru. Ponadto można zmienić wartość dowolnej zmiennej innej niż stała lub zawartości dowolnego rejestru.
@@ -44,7 +44,7 @@ W przypadku pominięcia `text`, w okno wyrażeń kontrolnych zostanie dodany akt
 >Debug.QuickWatch
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Ustaw kontrolkę na zmienne przy użyciu okien czujki i QuickWatch w programie Visual Studio](../../debugger/watch-and-quickwatch-windows.md)
 - [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)

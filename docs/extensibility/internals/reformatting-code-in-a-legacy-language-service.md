@@ -1,5 +1,5 @@
 ---
-title: Ponowne formatowanie kodu w starszej wersji usługi językowej | Dokumentacja firmy Microsoft
+title: Ponowne formatowanie kodu w starszej wersji usługi językowej | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,35 +11,35 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16130191eb6a4d8b6d7703a05aaf3271f8c739f5
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: ae48e1b97b5c9194cf3081687ab31ea9f857e6c9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67891124"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72724757"
 ---
 # <a name="reformatting-code-in-a-legacy-language-service"></a>Ponowne formatowanie kodu w starszej wersji usługi językowej
 
-W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] kod źródłowy może ponownie sformatowane, przez normalizowanie stosowania wcięć i białe znaki. Może to obejmować wstawiania lub usuwając spacje lub tabulatory na początku każdego wiersza, dodawanie nowych wierszy między liniami lub zastępowania miejsca do magazynowania za pomocą karty lub kart przy użyciu miejsc do magazynowania.
+W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] kodzie źródłowym można ponownie sformatować przez znormalizowanie użycia wcięć i odstępów. Może to obejmować Wstawianie lub usuwanie spacji lub kart na początku każdego wiersza, dodawanie nowych wierszy między wierszami lub zastępowanie spacji znakami tabulacji lub tabulatorami spacjami.
 
 > [!NOTE]
-> Wstawiając lub usuwając znaki nowego wiersza może mieć wpływ na znaczników, takich jak punkty przerwania i zakładki, ale dodając lub usuwając spacje lub tabulatory nie ma wpływu na znaczników.
+> Wstawianie lub usuwanie znaków nowego wiersza może mieć wpływ na znaczniki takie jak punkty przerwania i zakładki, ale Dodawanie lub usuwanie spacji lub kart nie ma wpływu na znaczniki.
 
-Użytkownicy mogą uruchamiać operację reformatting, wybierając **Formatuj zaznaczenie** lub **Formatuj dokument** z **zaawansowane** menu **Edytuj**menu. Operacja reformatting mogą być też wywoływane po wstawieniu fragmentu kodu lub określonego znaku. Na przykład po wpisaniu zamykającego nawiasu klamrowego w języku C# wszystko pomiędzy otwierający nawias klamrowy dopasowania i zamknij nawiasów klamrowych jest automatycznie z wcięciami, aby zapewnić odpowiedni poziom.
+Użytkownicy mogą rozpocząć operację ponownego formatowania, wybierając **opcję Formatuj zaznaczenie** lub **Formatuj dokument** z menu **Zaawansowane** w menu **Edycja** . Operację ponownego formatowania można również wyzwolić, gdy zostanie wstawiony fragment kodu lub określony znak. Na przykład po wpisaniu zamykającego nawiasu klamrowego C#, wszystkie elementy między odpowiednim otwierającym nawiasem klamrowym i zamykanym nawiasem klamrowym są automatycznie wcięte do odpowiedniego poziomu.
 
-Gdy [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] wysyła **Formatuj zaznaczenie** lub **Formatuj dokument** polecenia do usługi języka <xref:Microsoft.VisualStudio.Package.ViewFilter> klasy wywołania <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> method in Class metoda <xref:Microsoft.VisualStudio.Package.Source> klasy. Do obsługi formatowania, konieczne jest przesłonięcie <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> metody i dostarczyć własne formatowanie kodu.
+Gdy [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] wysyła polecenie **formatowania lub** **Formatuj dokument** do usługi językowej, klasa <xref:Microsoft.VisualStudio.Package.ViewFilter> wywołuje metodę <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> w klasie <xref:Microsoft.VisualStudio.Package.Source>. Aby można było obsługiwać formatowanie, należy zastąpić metodę <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> i podać własny kod formatowania.
 
-## <a name="enabling-support-for-reformatting"></a>Włączanie obsługi formatowania
+## <a name="enabling-support-for-reformatting"></a>Włączanie obsługi ponownego formatowania
 
-Do obsługi formatowania, `EnableFormatSelection` parametru <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> musi być równa `true` po dokonaniu rejestracji Twojego pakietu VSPackage. To ustawienie <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableFormatSelection%2A> właściwość `true`. <xref:Microsoft.VisualStudio.Package.ViewFilter.CanReformat%2A> Metoda zwraca wartość tej właściwości. Jeśli zostanie zwrócona wartość true, <xref:Microsoft.VisualStudio.Package.ViewFilter> klasy wywołania <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A>.
+Aby można było obsługiwać formatowanie, `EnableFormatSelection` parametr <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> musi być ustawiony na `true` po zarejestrowaniu pakietu VSPackage. Spowoduje to ustawienie właściwości <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableFormatSelection%2A> na `true`. Metoda <xref:Microsoft.VisualStudio.Package.ViewFilter.CanReformat%2A> zwraca wartość tej właściwości. Jeśli zwraca wartość true, Klasa <xref:Microsoft.VisualStudio.Package.ViewFilter> wywołuje <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A>.
 
 ## <a name="implementing-reformatting"></a>Implementowanie ponownego formatowania
 
-Aby zaimplementować formatowania, należy wyprowadzić klasę z <xref:Microsoft.VisualStudio.Package.Source> klasy, a także Przesłoń <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> metody. <xref:Microsoft.VisualStudio.TextManager.Interop.TextSpan> Obiekt w tym artykule opisano zakres do formatowania i <xref:Microsoft.VisualStudio.Package.EditArray> obiekt zawiera zmiany wprowadzone na zakres. Należy pamiętać, że ten zakres można całego dokumentu. Jednak ponieważ może być wiele zmian w zakresie, wszystkie zmiany powinny być odwracalnego w ramach jednej akcji. Aby to zrobić, opakować wszystkie zmiany w <xref:Microsoft.VisualStudio.Package.CompoundAction> obiektu (patrz sekcja "Używanie klasy CompoundAction" w tym temacie).
+Aby zaimplementować ponowne formatowanie, należy utworzyć klasę z klasy <xref:Microsoft.VisualStudio.Package.Source> i zastąpić metodę <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A>. Obiekt <xref:Microsoft.VisualStudio.TextManager.Interop.TextSpan> opisuje zakres do formatowania, a obiekt <xref:Microsoft.VisualStudio.Package.EditArray> przechowuje zmiany wprowadzone w zakresie. Należy pamiętać, że ten zakres może być całym dokumentem. Jednak ze względu na to, że może być wiele zmian wprowadzonych w tym zakresie, wszystkie zmiany powinny być odwracalne w jednej akcji. W tym celu zawiń wszystkie zmiany w obiekcie <xref:Microsoft.VisualStudio.Package.CompoundAction> (zobacz sekcję "Używanie klasy CompoundAction" w tym temacie).
 
 ### <a name="example"></a>Przykład
 
-Poniższy przykład gwarantuje, że istnieje pojedyncza spacja po każdym przecinku w zaznaczeniu, chyba że przecinek następuje karty lub znajduje się na końcu wiersza. Końcowe spacje, po usunięciu ostatniego przecinkami w wierszu. Zobacz sekcję "Przy użyciu klasy CompoundAction" w tym temacie, aby zobaczyć, jak ta metoda jest wywoływana z <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> metody.
+Poniższy przykład gwarantuje, że istnieje pojedyncze miejsce po każdym przecinku w zaznaczeniu, chyba że przecinek następuje tabulator lub znajduje się na końcu wiersza. Spacje końcowe po ostatnim przecinku w wierszu są usuwane. Zobacz sekcję "Używanie klasy CompoundAction" w tym temacie, aby zobaczyć, jak ta metoda jest wywoływana z metody <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A>.
 
 ```csharp
 using Microsoft.VisualStudio.Package;
@@ -153,13 +153,13 @@ namespace MyLanguagePackage
 }
 ```
 
-## <a name="using-the-compoundaction-class"></a>Używanie klasy CompoundAction
+## <a name="using-the-compoundaction-class"></a>Korzystanie z klasy CompoundAction
 
-Wszystkie ponownego formatowania na sekcję kodu powinny być odwracalnego w ramach jednej akcji. Można to zrobić za pomocą <xref:Microsoft.VisualStudio.Package.CompoundAction> klasy. Ta klasa opakowuje zestaw operacji edycji w buforze tekstu operacji edycji jednego.
+Wszystkie ponowne formatowanie wykonywane w sekcji kodu powinno być odwracalne w jednej akcji. Można to zrobić za pomocą klasy <xref:Microsoft.VisualStudio.Package.CompoundAction>. Ta klasa otacza zestaw operacji edycji w buforze tekstowym w ramach jednej operacji edycji.
 
 ### <a name="example"></a>Przykład
 
-Oto przykład sposobu użycia <xref:Microsoft.VisualStudio.Package.CompoundAction> klasy. Zobacz przykład w sekcji "Wdrażanie pomocy technicznej dla formatowania" w tym temacie przedstawiono przykład `DoFormatting` metody.
+Oto przykład użycia klasy <xref:Microsoft.VisualStudio.Package.CompoundAction>. Zapoznaj się z przykładem w sekcji "implementacja obsługi dla formatowania" w tym temacie, aby zapoznać się z przykładową metodą `DoFormatting`.
 
 ```csharp
 using Microsoft.VisualStudio.Package;
@@ -183,6 +183,6 @@ namespace MyLanguagePackage
 }
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Funkcje starszej wersji usługi językowej](legacy-language-service-features1.md)

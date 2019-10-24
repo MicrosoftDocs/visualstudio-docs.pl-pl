@@ -1,5 +1,5 @@
 ---
-title: Błędy potwierdzenia — okno dialogowe | Dokumentacja firmy Microsoft
+title: Nieudane okno dialogowe potwierdzenia | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -20,22 +20,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39362adf5837e3293782df04627af9acd06fdd88
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cb42067bb4c88777a6c25ace71f53b9d9b3aa36b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564622"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745766"
 ---
 # <a name="assertion-failed-dialog-box"></a>Błędy potwierdzenia — Okno dialogowe
-Instrukcji asercji określa warunek, który chcą przechowywać wartość true, w pewnym momencie określonej w programie. Ten warunek nie ma wartość true, potwierdzenie nie powiedzie się, wykonanie programu zostało przerwane i pojawi się okno dialogowe.
+Instrukcja Assert określa warunek, który powinien zostać przetrzymany w pewnym konkretnym punkcie w programie. Jeśli ten warunek nie ma wartości true, potwierdzenie nie powiedzie się, wykonywanie programu zostanie przerwane i zostanie wyświetlone okno dialogowe.
 
-|Kliknij|Zadanie|
+|Kliknij|Do|
 |-----------|--------|
-|Ponawianie próby|Potwierdzenie debugowania lub get pomoc dotyczącą asercji.|
-|Zignoruj|Ignoruj potwierdzenia i kontynuacji działania programu.|
-|Przerwij|Zatrzymaj wykonywanie programu i zakończenie sesji debugowania.|
+|Spróbuj ponownie wykonać|Debuguj potwierdzenie lub uzyskaj pomoc dotyczącą potwierdzeń.|
+|Ignoruj|Zignoruj potwierdzenie i kontynuuj wykonywanie programu.|
+|Anuluj|Zatrzymanie wykonywania programu i zakończenie sesji debugowania.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Instrukcje asercji w języku C/C++](../debugger/c-cpp-assertions.md)

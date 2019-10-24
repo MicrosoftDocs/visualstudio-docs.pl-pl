@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Ustawianie nazw wątków w kodzie zarządzanym | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Ustawianie nazwy wątku w kodzie zarządzanym | Microsoft Docs'
 ms.date: 04/27/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,17 +18,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d0954ffadd1bb1b09d7294be673f961ca2f18058
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cf05c0eea2ec05f04c1c792145218f570c4bce96
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62906459"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72732781"
 ---
-# <a name="how-to-set-a-thread-name-in-managed-code"></a>Instrukcje: Ustawianie nazw wątków w kodzie zarządzanym
-Nazwy wątków jest możliwe w dowolnej wersji programu Visual Studio. Nazewnictwo wątku jest przydatne do śledzenia wątków w **wątków** okna.
+# <a name="how-to-set-a-thread-name-in-managed-code"></a>Porady: ustawianie nazw wątków w kodzie zarządzanym
+Nazewnictwo wątków jest możliwe w dowolnej wersji programu Visual Studio. Nazewnictwo wątków jest przydatne do śledzenia wątków w oknie **wątków** .
 
- Aby Ustawianie nazw wątków w kodzie zarządzanym, użyć <xref:System.Threading.Thread.Name%2A> właściwości.
+ Aby ustawić nazwę wątku w kodzie zarządzanym, użyj właściwości <xref:System.Threading.Thread.Name%2A>.
 
 ## <a name="example"></a>Przykład
 
@@ -75,6 +75,6 @@ Sub Main()
 End Sub
 ```
 
-## <a name="see-also"></a>Zobacz też
-- [DDebug aplikacji wielowątkowych](../debugger/debug-multithreaded-applications-in-visual-studio.md)
-- [Instrukcje: Ustawianie nazwy wątku w kodzie natywnym](../debugger/how-to-set-a-thread-name-in-native-code.md)
+## <a name="see-also"></a>Zobacz także
+- [DDebug aplikacje wielowątkowe](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+- [Instrukcje: ustawianie nazw wątków w kodzie natywnym](../debugger/how-to-set-a-thread-name-in-native-code.md)

@@ -1,5 +1,5 @@
 ---
-title: Podstawowe informacje dotyczące projektów internetowych | Dokumentacja firmy Microsoft
+title: Podstawowe informacje o projekcie sieci Web | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,52 +10,52 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ddc8bcef8612459ce9816e79250ba8b93194292
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5f3d3069d8cc539deeda7c9d44f8d1cbf27e8821
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66323315"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72721674"
 ---
 # <a name="web-project-essentials"></a>Podstawowe informacje dotyczące projektów internetowych
-Projekty sieci Web tworzyć aplikacje sieci Web. Projekt sieci Web można użyć, aby utworzyć aplikację internetową, która ma inteligentne strony sieci Web. Inteligentne strony sieci Web zawiera kod po stronie serwera, który renderuje stronę sieci Web na żądanie.
+Projekty sieci Web tworzą aplikacje sieci Web. Możesz użyć projektu sieci Web, aby utworzyć aplikację sieci Web, która ma inteligentne strony sieci Web. Inteligentna Strona sieci Web zawiera kod po stronie serwera, który renderuje stronę sieci Web na żądanie.
 
- Przy użyciu tradycyjnych językach programowania, takich jak [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] lub [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], można tworzyć inteligentne strony sieci Web do zbierania i przetwarzania informacji od użytkownika, zapisz go w bazie danych i tak dalej.
+ Używając tradycyjnych języków programowania, takich jak [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] lub [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], można utworzyć inteligentne strony sieci Web, aby zbierać i przetwarzać informacje od użytkownika, przechowywać je w bazie danych i tak dalej.
 
-- Model związanym z kodem kojarzy plików kodu źródłowego zależne ze stronami sieci Web, w których .aspx rozszerzenia pliku lub .asmx. Na przykład hello.aspx może być hello.aspx.cs pliku kodu źródłowego zależnych.
+- Model związany z kodem kojarzy zależne pliki kodu źródłowego ze stronami sieci Web, które mają rozszerzenie. aspx lub. asmx. Na przykład Hello. aspx może mieć zależny plik kodu źródłowego hello.aspx.cs.
 
-- Kod po stronie serwera, skojarzone ze stroną sieci Web inteligentne jest kompilowany do pliku wykonywalnego, który znajduje się w katalogu/bin witryny sieci Web.
+- Kod po stronie serwera skojarzony z inteligentną stroną sieci Web jest kompilowany do pliku wykonywalnego, który znajduje się w folderze/bin. witryny sieci Web.
 
-- Pliki kodu dodatkowe źródła, takich jak klasy pomocnika, które nie są skojarzone z określonej strony sieci Web znajdują się w folderze /App_Code witryny sieci Web.
+- Dodatkowe pliki kodu źródłowego, takie jak klasy pomocnika, które nie są skojarzone z konkretną stroną sieci Web, znajdują się w folderze/App_Code witryny sieci Web.
 
-  - Projekt witryny sieci Web (WSP) generuje jednego pliku wykonywalnego, dla każdej inteligentne strony sieci Web. Dodatkowe pliki wykonywalne są generowane na podstawie żadnych plików kodu źródłowego w folderze /App_Code.
+  - Projekt witryny sieci Web (WSP) generuje jeden plik wykonywalny dla każdej z inteligentnych stron sieci Web. Dodatkowe pliki wykonywalne są generowane na podstawie dowolnych plików kodu źródłowego w folderze/App_Code.
 
-  - Projekt aplikacji sieci Web (WAP) tworzy jednej plik wykonywalny, który łączy kod dla wszystkich stron sieci Web inteligentnego, a także wszystkich plików źródłowych z folderu /App_Code.
+  - Projekt aplikacji sieci Web (WAP) tworzy pojedynczy plik wykonywalny, który łączy kod dla wszystkich inteligentnych stron sieci Web, a także wszystkie pliki źródłowe w folderze/App_Code.
 
-- Niezależnie od w witrynie sieci Web znajduje się plik rozwiązania dla projektu sieci Web. Domyślnie pliki rozwiązania znajdują się w \Documents and Settings\\*Twojekonto*\My dokumenty\\ *\<programu Visual Studio ### >* \Projects\\ *YourWebSite*.
+- Plik rozwiązania dla projektu sieci Web znajduje się niezależnie od samej witryny sieci Web. Domyślnie pliki rozwiązania znajdują się w obszarze \Documents and Settings \\*YourAccount*\moje dokumenty \\ *\<Visual Studio # # # # >* \Projects \\*YourWebSite*.
 
   > [!NOTE]
-  > Jeśli chcesz zachować plik rozwiązania z witryny sieci Web, po prostu przesuń istnieje i otwórz go ponownie.
+  > Jeśli chcesz zachować plik rozwiązania z witryną sieci Web, wystarczy przenieść go tam i otworzyć ponownie.
 
-- Po otwarciu witryny sieci Web, która nie ma rozwiązania pliku w programie Visual Studio, nowy plik rozwiązania jest generowane automatycznie dla niego.
+- Jeśli otworzysz witrynę sieci Web, która nie ma pliku rozwiązania w programie Visual Studio, zostanie automatycznie wygenerowany nowy plik rozwiązania.
 
-- Projekty sieci Web nie ma żadnych plików projektu. Informacje o projekcie są przechowywane w pliku rozwiązania, w pliku web.config i w innych miejscach.
+- Projekty sieci Web nie mają plików projektu. Informacje o projekcie są przechowywane w pliku rozwiązania, w pliku Web. config i w innym miejscu.
 
-- Dodanie właściwości globalne do projektu sieci Web automatycznie tworzy plik magazynu w folderze rozwiązania projektu sieci Web.
+- Dodanie globalnych właściwości do projektu sieci Web powoduje automatyczne utworzenie pliku magazynu w folderze rozwiązania projektu sieci Web.
 
-- Inteligentne strony sieci Web mogą być skojarzone z językiem programowania po stronie serwera za pomocą dyrektywy strony lub \<skryptu runat = "server" > tag.
+- Inteligentna Strona sieci Web może być skojarzona z językiem programowania po stronie serwera za pomocą dyrektywy Page lub tagu \<script runat = "Server" >.
 
-- Ponadto stron sieci Web może mieć dowolną liczbę bloków skryptów po stronie klienta, napisane w dowolnym języku skryptów.
+- Ponadto strony sieci Web mogą zawierać dowolną liczbę bloków skryptów po stronie klienta, które są zapisywane w dowolnym języku skryptowym.
 
-- System projektu witryny sieci Web jest implementowany przez dodanie szablonów projektów i elementów i rejestracji w celu [!INCLUDE[vwprvw](../../extensibility/internals/includes/vwprvw_md.md)] projektu.
+- System projektu witryny sieci Web jest implementowany przez dodanie szablonów projektów i elementów i zarejestrowanie do projektu [!INCLUDE[vwprvw](../../extensibility/internals/includes/vwprvw_md.md)].
 
-- System proxy aplikacji sieci Web jest wdrażany jako podtypem projektu, jest określana skrótem podtypem projektu. [!INCLUDE[vwprvw](../../extensibility/internals/includes/vwprvw_md.md)] Projektu jest składni, podtypu WAP tworzenia systemu WAP. Aby uzyskać więcej informacji na temat podtypy projektów, zobacz [podtypy projektów](../../extensibility/internals/project-subtypes.md).
+- System WAP jest implementowany jako podtyp projektu, nazywany również projektem. Projekt [!INCLUDE[vwprvw](../../extensibility/internals/includes/vwprvw_md.md)] jest poddany przez podtyp WAP w celu utworzenia systemu WAP. Aby uzyskać więcej informacji na temat podtypów projektów, zobacz [podtypy projektów](../../extensibility/internals/project-subtypes.md).
 
-- Inteligentne strony sieci Web łączy HTML w języku programowania po stronie serwera. Język po stronie serwera jest nazywany językowych zawarte. Aby umożliwić obsługę ograniczonego języka, system projektu sieci Web musi implementować <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage> rodziny interfejsów.
+- Inteligentna Strona sieci Web łączy kod HTML z językiem programowania po stronie serwera. Język po stronie serwera jest nazywany zawartym językiem. Aby zapewnić obsługę zawartego języka, system projektu sieci Web musi implementować <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage>ą rodziną interfejsów.
 
-  - Aby zapewnić obsługę języka zawartych w edytorze, usługa języka HTML musi Odrocz wyświetlające kod języka zawartej z usługą językowych zawarte.
+  - Aby zapewnić obsługę zawartego języka w edytorze, usługa języka HTML musi odroczyć wyświetlanie zawartego w nim kodu języka do zawartej usługi językowej.
 
-  - Znaczniki błędów (czerwony squigglies) zawsze powinny być tworzone w edytorze kodu podstawowego buforu.
+  - Znaczniki błędów (Red squigglies) powinny zawsze być tworzone w podstawowym buforze edytora kodu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Projekty internetowe](../../extensibility/internals/web-projects.md)

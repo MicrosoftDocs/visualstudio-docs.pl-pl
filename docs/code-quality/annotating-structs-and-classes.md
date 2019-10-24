@@ -24,12 +24,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: ac3d6225bc765ec404784589d2faa06f155265ab
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 93c6826f2903f30fbbdcb9c40ec5f695df32ac05
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72446296"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747052"
 ---
 # <a name="annotating-structs-and-classes"></a>Dodawanie adnotacji struktur i klas
 
@@ -39,17 +39,17 @@ Możesz dodawać adnotacje do struktury i składowych klas przy użyciu adnotacj
 
 - `_Field_range_(low, high)`
 
-     Pole znajduje się w zakresie (włącznie) od `low` do `high`.  Odpowiednik `_Satisfies_(_Curr_ >= low && _Curr_ <= high)` zastosowany do obiektu z adnotacją przy użyciu odpowiednich warunków wstępnych lub post.
+     Pole znajduje się w zakresie (włącznie) od `low` do `high`.  Odpowiednik do `_Satisfies_(_Curr_ >= low && _Curr_ <= high)` stosowany do obiektu z adnotacją przy użyciu odpowiednich warunków poprzedzających lub post.
 
-- `_Field_size_(size)`, `_Field_size_opt_(size)`, `_Field_size_bytes_(size)`, `_Field_size_bytes_opt_(size)`
+- `_Field_size_(size)`, `_Field_size_opt_(size)`, `_Field_size_bytes_(size)` `_Field_size_bytes_opt_(size)`
 
      Pole, które ma rozmiar zapisywalny w elementach (lub bajtach) określony przez `size`.
 
-- `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`, `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`
+- `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`, `_Field_size_bytes_part_(size, count)` `_Field_size_bytes_part_opt_(size, count)`
 
      Pole, które ma zapisywalny rozmiar w elementach (lub bajtach) określony przez `size` i `count` tych elementów (bajtów), które są odczytywane.
 
-- `_Field_size_full_(size)`, `_Field_size_full_opt_(size)`, `_Field_size_bytes_full_(size)`, `_Field_size_bytes_full_opt_(size)`
+- `_Field_size_full_(size)`, `_Field_size_full_opt_(size)`, `_Field_size_bytes_full_(size)` `_Field_size_bytes_full_opt_(size)`
 
      Pole, które ma zarówno czytelny, jak i zapisywalny rozmiar w elementach (lub bajtach) określony przez `size`.
 
@@ -106,11 +106,11 @@ struct MyBuffer
 
 Uwagi dotyczące tego przykładu:
 
-- `_Field_z_` jest równoważne z `_Null_terminated_`.  `_Field_z_` dla pola Nazwa Określa, że pole Nazwa jest ciągiem zakończonym wartością null.
+- `_Field_z_` jest równoznaczna z `_Null_terminated_`.  `_Field_z_` pola Nazwa Określa, że pole Nazwa jest ciągiem zakończonym wartością null.
 - `_Field_range_` dla `bufferSize` określa, że wartość `bufferSize` powinna należeć do zakresu od 1 do `MaxBufferSize` (włącznie).
-- Końcowe wyniki adnotacji `_Struct_size_bytes_` i `_Field_size_` są równoważne. W przypadku struktur lub klas, które mają podobny układ, `_Field_size_` jest łatwiejsze do odczytania i konserwowania, ponieważ ma mniejszą liczbę odwołań i obliczeń niż odpowiednik adnotacji `_Struct_size_bytes_`. `_Field_size_` nie wymaga konwersji do rozmiaru bajtowego. Jeśli rozmiar bajtu jest jedyną opcją, na przykład dla pola wskaźnika void, można użyć `_Field_size_bytes_`. Jeśli istnieje zarówno `_Struct_size_bytes_`, jak i `_Field_size_`, oba będą dostępne dla narzędzi. Jest to narzędzie, co należy zrobić, jeśli dwa adnotacje nie zgadzają się.
+- Końcowe wyniki `_Struct_size_bytes_` i `_Field_size_` adnotacji są równoważne. W przypadku struktur lub klas, które mają podobny układ, `_Field_size_` jest łatwiejsze do odczytania i konserwowania, ponieważ ma mniejszą liczbę odwołań i obliczeń niż odpowiednik `_Struct_size_bytes_`j adnotacji. `_Field_size_` nie wymaga konwersji do rozmiaru bajtowego. Jeśli rozmiar bajtu jest jedyną opcją, na przykład dla pola wskaźnika void, można użyć `_Field_size_bytes_`. Jeśli zarówno `_Struct_size_bytes_`, jak i `_Field_size_` istnieją, oba będą dostępne dla narzędzi. Jest to narzędzie, co należy zrobić, jeśli dwa adnotacje nie zgadzają się.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Korzystanie z adnotacji SAL w celu zmniejszenia liczby defektów kodu C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 - [Informacje o języku SAL](../code-quality/understanding-sal.md)

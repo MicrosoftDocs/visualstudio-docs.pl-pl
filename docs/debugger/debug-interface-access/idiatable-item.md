@@ -1,5 +1,5 @@
 ---
-title: IDiaTable::Item | Microsoft Docs
+title: 'IDiaTable:: Item | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d8070acfa254ae26e017a0070a21884309bc4d7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d402f5ad54d5c0f487cebb3a8c53f68d17828ed4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840642"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738726"
 ---
 # <a name="idiatableitem"></a>IDiaTable::Item
 Pobiera odwołanie do określonego wpisu w tabeli.
@@ -34,21 +34,21 @@ HRESULT Item ( 
 #### <a name="parameters"></a>Parametry
  `index`
 
-[in] Indeks wpisu tabeli z zakresu od 0 do `count`-1, gdzie `count` jest zwracany przez [idiatable::get_count —](../../debugger/debug-interface-access/idiatable-get-count.md)metody.
+podczas Indeks wpisu tabeli w zakresie od 0 do `count`-1, gdzie `count` jest zwracany przez metodę [IDiaTable:: get_Count](../../debugger/debug-interface-access/idiatable-get-count.md).
 
  `element`
 
-[out] Zwraca `IUnknown` obiekt, który reprezentuje wpis określonej tabeli.
+określoną Zwraca obiekt `IUnknown` reprezentujący określony wpis w tabeli.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Tabela reprezentuje kolekcję obiektów. W zależności od tych obiektów parametru elementu mogą być rzutowane na odpowiedni interfejs. Na przykład, jeśli tabela zawiera [idiasegment —](../../debugger/debug-interface-access/idiasegment.md) obiektów, a następnie można rzutować parametru elementu `IDiaSegment` interfejsu.
+ Tabela reprezentuje kolekcję obiektów. W zależności od tych obiektów parametr elementu może być rzutowany do odpowiedniego interfejsu. Na przykład jeśli tabela zawiera obiekty [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) , parametr elementu może być rzutowany do interfejsu `IDiaSegment`.
 
- Jest bardziej powszechne podejście do wywołania `QueryInterface` method in Class metoda [idiatable —](../../debugger/debug-interface-access/idiatable.md) interfejsu dla interfejsu odpowiedniego modułu wyliczającego i umożliwia dostęp do treści modułu wyliczającego konkretnych metod. Zobacz [idiaenuminjectedsources —](../../debugger/debug-interface-access/idiaenuminjectedsources.md) interfejsu, na przykład.
+ Jest to bardziej typowe podejście do wywołania metody `QueryInterface` w interfejsie [IDiaTable](../../debugger/debug-interface-access/idiatable.md) dla odpowiedniego interfejsu modułu wyliczającego i używania określonych metod modułu wyliczającego w celu uzyskania dostępu do zawartości tabeli. Zapoznaj się z przykładowym interfejsem [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaTable](../../debugger/debug-interface-access/idiatable.md)
 - [IDiaTable::get_Count](../../debugger/debug-interface-access/idiatable-get-count.md)
 - [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

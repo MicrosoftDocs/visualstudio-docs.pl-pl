@@ -15,12 +15,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61772ead029dccaff9b1090a469865fcc3742df6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 791663c04d1c1e79eebaed39d339d8d118ffeaae
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666819"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748864"
 ---
 # <a name="outlining"></a>Tworzenie konspektu
 
@@ -48,8 +48,8 @@ Poniższe polecenia można znaleźć w podmenu **edytuj**  >  tworzenia**konspek
 |Zatrzymaj tworzenie konspektu|(**Ctrl** +**M**, **Ctrl** +**P**) — usuwa wszystkie informacje dotyczące tworzenia konspektu dla całego dokumentu.|
 |Przestań ukrywać bieżące|(**Ctrl** +**M**, **Ctrl** +**U**) — usuwa informacje dotyczące tworzenia konspektu dla aktualnie wybranego regionu zdefiniowanego przez użytkownika. Niedostępne w Visual Basic.|
 |Zwiń do definicji|(**Ctrl** +**M**, **Ctrl** +**O**) — zwija elementy członkowskie wszystkich typów.|
-|Zwiń blok: \<logical granicy >|(Wizualizacja C++) Zwija region w funkcji zawierającej punkt wstawiania. Na przykład, jeśli punkt wstawiania leży wewnątrz pętli, pętla jest ukryta.|
-|Zwiń wszystko w: struktury \<logical >|(Wizualizacja C++) Zwija wszystkie struktury wewnątrz funkcji.|
+|Zwiń blok: \<logical granicy >|(C++) Zwija region w funkcji zawierającej punkt wstawiania. Na przykład, jeśli punkt wstawiania leży wewnątrz pętli, pętla jest ukryta.|
+|Zwiń wszystko w: struktury \<logical >|(C++) Zwija wszystkie struktury wewnątrz funkcji.|
 
 Możesz również użyć zestawu Visual Studio SDK, aby zdefiniować regiony tekstu, które mają zostać rozwinięte lub zwinięte. Zobacz [Przewodnik: Tworzenie konspektu](../extensibility/walkthrough-outlining.md).
 

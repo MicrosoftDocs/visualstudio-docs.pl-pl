@@ -1,5 +1,5 @@
 ---
-title: Showbydefault — element (szablony Visual Studio)
+title: ShowByDefault, element (szablony Visual Studio)
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,15 +14,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c211f45423ce0f2166bbf8aa189d35ab386a7fee
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2405e46a7f1ed8d2e4ae33b1b58ec44e06aa7d3b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331986"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72720100"
 ---
-# <a name="showbydefault-element-visual-studio-templates"></a>Showbydefault — element (szablony Visual Studio)
-Jeśli `false`, określa, że szablon będzie wyświetlane tylko w ramach określonego [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md).
+# <a name="showbydefault-element-visual-studio-templates"></a>ShowByDefault, element (szablony Visual Studio)
+Jeśli `false`, określa, że szablon będzie wyświetlany tylko w określonym [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md).
 
  \<VSTemplate > \<TemplateData > \<ShowByDefault >
 
@@ -45,18 +45,18 @@ Jeśli `false`, określa, że szablon będzie wyświetlane tylko w ramach okreś
 
 |Element|Opis|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Klasyfikuje szablon i definiuje sposób wyświetlania albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Klasyfikuje szablon i definiuje sposób wyświetlania w oknie dialogowym **Nowy projekt** lub **Dodaj nowy element** .|
 
 ## <a name="text-value"></a>Wartość tekstowa
  Wartość tekstowa jest wymagana.
 
- Tekst musi być albo `true` lub `false`. W przypadku opcji true Określa, że szablon będzie wyświetlana dla wszystkich typów projektów. Jeśli ma wartość FAŁSZ, szablon będzie wyświetlane tylko w ramach określonego `TemplateGroupID`.
+ Tekst musi mieć wartość `true` lub `false`. Jeśli wartość jest równa true, określa, że szablon będzie wyświetlany dla wszystkich typów projektów. W przypadku wartości false szablon zostanie wyświetlony tylko w określonym `TemplateGroupID`.
 
 ## <a name="remarks"></a>Uwagi
- `ShowByDefault` element jest opcjonalny. Wartość domyślna to `true`.
+ `ShowByDefault` jest elementem opcjonalnym. Wartość domyślna to `true`.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie pokazano metadanych [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] szablonu.
+ Poniższy przykład ilustruje metadane szablonu [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -83,7 +83,7 @@ Jeśli `false`, określa, że szablon będzie wyświetlane tylko w ramach okreś
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Tworzenie szablonów projektu i elementu](../ide/creating-project-and-item-templates.md)
 - [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [TemplateGroupID, element (szablony Visual Studio)](../extensibility/templategroupid-element-visual-studio-templates.md)

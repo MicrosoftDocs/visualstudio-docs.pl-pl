@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 940097c58d6c18e3be5f6659d764007b16cd4859
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: e7c7ba163010a14102aa3e1b0160e1c3cf294db1
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211267"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745564"
 ---
 # <a name="debug-azure-services-in-visual-studio"></a>Debugowanie usług platformy Azure w programie Visual Studio
 
@@ -33,6 +33,6 @@ Możesz użyć programu Visual Studio do debugowania usług platformy Azure w r�
 
 - Aby uzyskać zdalną ASP.NET debugowania na platformie Azure Service Fabric, zobacz [debugowanie aplikacji Service Fabric zdalnej](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Debugowanie w programie Visual Studio](../debugger/index.yml)

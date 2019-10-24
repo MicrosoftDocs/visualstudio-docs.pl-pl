@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 42cbc0ea5694e462faf6d3995bc68723a3f522e7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 391dff6540bcea26f63d8ea88f344455722b742a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605840"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748219"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Opis modeli, klas i relacji
 Język specyficzny dla domeny (DSL) jest zdefiniowany przez plik definicji DSL, wraz z dowolnym niestandardowym kodem programu, który można napisać. Większość kodu programu w rozwiązaniu DSL jest generowana z tego pliku.
@@ -148,6 +148,6 @@ Język specyficzny dla domeny (DSL) jest zdefiniowany przez plik definicji DSL, 
 
  Relacja pochodna określa swoją relację podstawową. Klasy domeny, z którymi łączy się, powinny pochodzić lub takie same, jak klasy połączone przez relację podstawową. Gdy w modelu tworzony jest link do relacji pochodnej, jest to wystąpienie zarówno pochodne, jak i podstawowych relacji. W kodzie programu można przejść do przeciwległego końca łącza przy użyciu właściwości generowanych przez bazę lub klasę pochodną.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [narzędzia języka specyficznego dla domeny słownik](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

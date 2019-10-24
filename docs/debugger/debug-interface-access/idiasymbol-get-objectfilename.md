@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_objectFileName | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_objectFileName | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 841fe2b1ae6f54b3bc7deea97b335790ca6dac5f
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 8e7717e6fbf19fdf8f14e7667db171991319fb3b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62841816"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739625"
 ---
-# <a name="idiasymbolgetobjectfilename"></a>IDiaSymbol::get_objectFileName
+# <a name="idiasymbolget_objectfilename"></a>IDiaSymbol::get_objectFileName
 Pobiera nazwę pliku obiektu.
 
 ## <a name="syntax"></a>Składnia
@@ -30,10 +30,10 @@ HRESULT get_objectFilename(
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Wskaźnik do `BSTR` przechowuje nazwy pliku obiektu.
+określoną Wskaźnik do `BSTR`, który zawiera nazwę pliku obiektu.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

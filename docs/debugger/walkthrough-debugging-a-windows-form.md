@@ -1,5 +1,5 @@
 ---
-title: Debugowanie formularza Windows | Dokumentacja firmy Microsoft
+title: Debugowanie formularza systemu Windows | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -23,50 +23,50 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2f581582acfed38d55a2cfef351856cc0caa945
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 701d156d5fdc23a5e98ac1de43c1882f3065171e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65678925"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72728333"
 ---
-# <a name="walkthrough-debugging-a-windows-form"></a>Przewodnik: Debugowanie formularza Windows Forms
+# <a name="walkthrough-debugging-a-windows-form"></a>Wskazówki: Debugowanie formatu Windows
 Formularz systemu Windows jest jedną z najczęściej używanych aplikacji zarządzanych. Formularz systemu Windows tworzy standardową aplikację systemu Windows. Można wykonać instrukcje z tego przewodnika przy użyciu języka Visual Basic, C# lub C++.
 
  Po pierwsze, należy zamknąć wszystkie otwarte rozwiązania.
 
 ### <a name="to-prepare-for-this-walkthrough"></a>Aby przygotować się do tego przewodnika
 
-- Jeśli masz już otwarte rozwiązanie, zamknij je. (Na **pliku** menu, wybierz opcję **Zamknij rozwiązanie**.)
+- Jeśli masz już otwarte rozwiązanie, zamknij je. (W menu **plik** wybierz pozycję **Zamknij rozwiązanie**).
 
 ## <a name="create-a-new-windows-form"></a>Tworzenie nowego formularza systemu Windows
  Następnie można utworzyć nowy formularz systemu Windows.
 
 #### <a name="to-create-the-windows-form-for-this-walkthrough"></a>Aby utworzyć formularz systemu Windows dla tego przewodnika
 
-1. Na **pliku** menu, wybierz **New** i kliknij przycisk **projektu**.
+1. W menu **plik** wybierz polecenie **Nowy** , a następnie kliknij pozycję **projekt**.
 
-     **Nowy projekt** pojawi się okno dialogowe.
+     Pojawi się okno dialogowe **Nowy projekt** .
 
-2. W okienku typów projektów, otwórz **języka Visual Basic**, **Visual C#** , lub **Visual C++** węzła, a następnie
+2. W okienku typy projektów Otwórz **Visual Basic**, **C#wizualizację**lub węzeł **wizualny C++**  , a następnie
 
-    1. W języku Visual Basic lub Visual C#, wybierz **pulpitu Windows** > **aplikacja formularza Windows**.
+    1. W przypadku Visual Basic lub C#wizualizacji wybierz pozycję **Windows Desktop**  > **aplikacja Windows form**.
 
-    2. W języku Visual C++, wybierz **aplikację pulpitu Windows**.
+    2. Dla wizualizacji C++wybierz pozycję **aplikacja klasyczna systemu Windows**.
 
-3. W **nazwa** pole, należy nadać projektowi unikatową nazwę (na przykład Walkthrough_SimpleDebug).
+3. W polu **Nazwa** Nadaj projektowi unikatową nazwę (na przykład Walkthrough_SimpleDebug).
 
 4. Kliknij przycisk **OK**.
 
-     Visual Studio tworzy nowy projekt i wyświetla nowy formularz w Projektancie Windows Forms. Aby uzyskać więcej informacji, zobacz [Windows Forms Designer](/previous-versions/visualstudio/visual-studio-2010/e06hs424\(v\=vs.100\)).
+     Visual Studio tworzy nowy projekt i wyświetla nowy formularz w Projektancie Windows Forms. Aby uzyskać więcej informacji, zobacz [Projektant formularzy systemu Windows](/previous-versions/visualstudio/visual-studio-2010/e06hs424\(v\=vs.100\)).
 
-5. Na **widoku** menu, wybierz opcję **przybornika**.
+5. W menu **Widok** wybierz pozycję **Przybornik**.
 
-     Przybornik zostaje otwarty. Aby uzyskać więcej informacji, zobacz [przybornika](../ide/reference/toolbox.md).
+     Przybornik zostaje otwarty. Aby uzyskać więcej informacji, zobacz [Przybornik](../ide/reference/toolbox.md).
 
-6. W przyborniku kliknij **przycisk** kontroli i przeciągnij go na powierzchnię projektową formularza. Upuść przycisk na formularzu.
+6. W przyborniku kliknij kontrolkę **przycisk** i przeciągnij formant na powierzchnię projektu formularza. Upuść przycisk na formularzu.
 
-7. W przyborniku kliknij **TextBox** kontroli i przeciągnij go na powierzchnię projektową formularza. Upuść **TextBox** w formularzu.
+7. W przyborniku kliknij kontrolkę **TextBox** i przeciągnij formant na powierzchnię projektu formularza. Upuść **pole TextBox** w formularzu.
 
 8. Na powierzchni projektowej formularza, dwukrotnie kliknij przycisk.
 
@@ -86,7 +86,7 @@ Formularz systemu Windows jest jedną z najczęściej używanych aplikacji zarz�
     textBox1->Text = "Button was clicked!";
     ```
 
-11. Na **kompilacji** menu, wybierz opcję **Kompiluj rozwiązanie**.
+11. W menu **kompilacja** wybierz opcję **Kompiluj rozwiązanie**.
 
      Projekt powinien być kompilowany bez błędów.
 
@@ -109,12 +109,12 @@ Formularz systemu Windows jest jedną z najczęściej używanych aplikacji zarz�
     textBox1->Text = "Button was clicked!";
     ```
 
-     Pojawi się czerwona kropka i tekst w wierszu zostanie wyróżniony czerwonym kolorem. Czerwona kropka reprezentuje punkt przerwania. Aby uzyskać więcej informacji, zobacz [punktów przerwania](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583). Po uruchomieniu aplikacji w trybie debugowania, debuger zlokalizuje miejsce trafienia kodu i przerwie tam wykonywanie. Można wówczas wyświetlić stan aplikacji i zdebugować ją.
+     Pojawi się czerwona kropka i tekst w wierszu zostanie wyróżniony czerwonym kolorem. Czerwona kropka reprezentuje punkt przerwania. Aby uzyskać więcej informacji, zobacz [punkty przerwania](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583). Po uruchomieniu aplikacji w trybie debugowania, debuger zlokalizuje miejsce trafienia kodu i przerwie tam wykonywanie. Można wówczas wyświetlić stan aplikacji i zdebugować ją.
 
     > [!NOTE]
-    > Również kliknięciu prawym przyciskiem myszy dowolny wiersz kodu, wskaż polecenie **punktu przerwania**, a następnie kliknij przycisk **Wstaw punkt przerwania** można dodać punkt przerwania w danym wierszu.
+    > Możesz również kliknąć prawym przyciskiem myszy dowolny wiersz kodu, wskazać punkt **przerwania**, a następnie kliknąć polecenie **Wstaw punkt przerwania** , aby dodać punkt przerwania w tym wierszu.
 
-2. ON **debugowania** menu, wybierz **Start**.
+2. W menu **debugowanie** wybierz polecenie **Uruchom**.
 
      Formularz systemu Windows zostaje uruchomiony.
 
@@ -122,21 +122,21 @@ Formularz systemu Windows jest jedną z najczęściej używanych aplikacji zarz�
 
      W programie Visual Studio powoduje to przejście do wiersza, w którym został ustawiony punkt przerwania na stronie kodowej. Ten wiersz powinien być wyróżniony żółtym kolorem. Można teraz wyświetlić zmienne w aplikacji i kontrolować jej wykonanie. Aplikacja zatrzymała teraz wykonywanie, czekając na akcję ze strony użytkownika.
 
-4. Na **debugowania** menu, wybierz **Windows**, następnie **Obejrzyj**i kliknij przycisk **Watch1**.
+4. W menu **Debuguj** wybierz pozycję **Windows**, następnie **Obejrzyj**i kliknij pozycję **Watch1**.
 
-5. W **Watch1** oknie i kliknij pusty wiersz. W **nazwa** wpisz `textBox1.Text` (Jeśli używasz języka Visual Basic lub Visual C#) lub `textBox1->Text` (Jeśli używasz języka C++), naciśnij klawisz ENTER.
+5. W oknie **Watch1** kliknij pusty wiersz. W kolumnie **Nazwa** wpisz `textBox1.Text` (jeśli używasz Visual Basic lub Visual C#) lub `textBox1->Text` (Jeśli używasz C++), a następnie naciśnij klawisz ENTER.
 
-     **Watch1** okno pokazuje wartość tej zmiennej w cudzysłowie jako:
+     W oknie **Watch1** jest wyświetlana wartość tej zmiennej w cudzysłowie:
 
     `""`
 
-6. Na **debugowania** menu, wybierz **Step Into**.
+6. W menu **Debuguj** wybierz pozycję **krok do**.
 
-     Wartość textBox1.Text zmienia się w **Watch1** okna, aby:
+     Wartość textBox1. Text zmienia się w oknie **Watch1** na:
 
     `Button was clicked!`
 
-7. Na **debugowania** menu, wybierz **Kontynuuj** Aby wznowić debugowanie programu.
+7. W menu **Debuguj** wybierz polecenie **Kontynuuj** , aby wznowić debugowanie programu.
 
 8. W formularzu systemu Windows, należy ponownie kliknąć przycisk.
 
@@ -146,7 +146,7 @@ Formularz systemu Windows jest jedną z najczęściej używanych aplikacji zarz�
 
      Spowoduje to usunięcie punktu przerwania z kodu.
 
-10. Na **debugowania** menu, wybierz **Zatrzymaj debugowanie**.
+10. W menu **Debuguj** wybierz polecenie **Zatrzymaj debugowanie**.
 
 ## <a name="attach-to-your-windows-form-application-for-debugging"></a>Dołącz do aplikacji formularza systemu Windows w celu debugowania
  W [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] można dołączyć debuger do działającego procesu. Jeśli użytkownik wykorzystuje Express Edition, ta funkcja nie jest obsługiwana.
@@ -167,22 +167,22 @@ Formularz systemu Windows jest jedną z najczęściej używanych aplikacji zarz�
     textBox1->Text = "Button was clicked!";
     ```
 
-2. Na **debugowania** menu, wybierz opcję **Rozpocznij bez debugowania**.
+2. W menu **debugowanie** wybierz polecenie **Uruchom bez debugowania**.
 
      Formularz systemu Windows zaczyna działanie w systemie Windows, tak jak gdyby użytkownik dwukrotnie kliknął jego plik wykonawczy. Debuger nie jest dołączony.
 
-3. Na **debugowania** menu, wybierz opcję **dołączyć do procesu**. (To polecenie jest dostępna również na **narzędzia** menu.)
+3. W menu **debugowanie** wybierz pozycję **Dołącz do procesu**. (To polecenie jest również dostępne w menu **Narzędzia** .)
 
-     **Dołączyć do procesu** pojawi się okno dialogowe.
+     Zostanie wyświetlone okno dialogowe **Dołącz do procesu** .
 
-4. W **dostępne procesy** okienko, należy znaleźć nazwę procesu (Walkthrough_SimpleDebug.exe) w **procesu** kolumny i kliknij ją.
+4. W okienku **dostępne procesy** Znajdź nazwę procesu (Walkthrough_SimpleDebug. exe) w kolumnie **proces** i kliknij ją.
 
-5. Kliknij przycisk **Dołącz** przycisku.
+5. Kliknij przycisk **Dołącz** .
 
 6. W formularzu systemu Windows, należy kliknąć jedyny przycisk.
 
      Debuger przerywa wykonywanie formularza systemu Windows w punkcie przerwania.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Debugowanie kodu zarządzanego](../debugger/debugging-managed-code.md)
 - [Zabezpieczenia debugera](../debugger/debugger-security.md)

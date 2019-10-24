@@ -1,5 +1,5 @@
 ---
-title: IDiaFrameData::get_allocatesBasePointer | Microsoft Docs
+title: 'IDiaFrameData:: get_allocatesBasePointer | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b9efd6500f979436027a160357c881ae6d1de426
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 283ef71b32c186956804cb3afe121af53a99abfc
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829076"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743652"
 ---
-# <a name="idiaframedatagetallocatesbasepointer"></a>IDiaFrameData::get_allocatesBasePointer
-Pobiera flagę wskazującą, czy podstawowy wskaźnik jest przydzielany dla kodu w tym zakresie adresów. Ta metoda jest przestarzała.
+# <a name="idiaframedataget_allocatesbasepointer"></a>IDiaFrameData::get_allocatesBasePointer
+Pobiera flagę wskazującą, czy wskaźnik podstawowy został przydzielony do kodu w tym zakresie adresów. Ta metoda jest przestarzała.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,14 +33,14 @@ HRESULT get_allocatesBasePointer ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca `TRUE` Jeśli podstawowy wskaźnik jest przydzielany; w przeciwnym razie zwraca `FALSE`.
+określoną Zwraca `TRUE`, jeśli zostanie przydzielony wskaźnik podstawowy; w przeciwnym razie zwraca `FALSE`.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`. Zwraca `S_FALSE`, jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Ta właściwość powinna być używana tylko przez kod, który poprzednio dostępny FPO_DATA lub gdy zwracany ciąg program przez [idiaframedata::get_program —](../../debugger/debug-interface-access/idiaframedata-get-program.md) metodą jest `NULL`. W przeciwnym razie ciąg program zawiera wszystkie informacje potrzebne do obliczenia poprzedniej wartości rejestru.
+ Ta właściwość powinna być używana tylko przez kod, który wcześniej uzyskał dostęp FPO_DATA, lub gdy ciąg programu zwracany przez metodę [IDiaFrameData:: get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) jest `NULL`. W przeciwnym razie ciąg programu zawiera wszystkie informacje, które są konieczne do obliczenia poprzednich wartości rejestru.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
 - [IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)

@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalkHelper::get_registerValue | Dokumentacja firmy Microsoft
+title: 'IDiaStackWalkHelper:: get_registerValue | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 275941aaf3a1eb2cab6554b18c6d9aa66605121a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bfb3e219012effe47a2352f7c22c6cf51b4617f9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62831835"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741417"
 ---
-# <a name="idiastackwalkhelpergetregistervalue"></a>IDiaStackWalkHelper::get_registerValue
+# <a name="idiastackwalkhelperget_registervalue"></a>IDiaStackWalkHelper::get_registerValue
 Pobiera wartość rejestru.
 
 ## <a name="syntax"></a>Składnia
@@ -34,18 +34,18 @@ HRESULT get_registerValue ( 
 #### <a name="parameters"></a>Parametry
  `index`
 
-[in] Wartość z zakresu od [cv_hreg_e — wyliczenie](../../debugger/debug-interface-access/cv-hreg-e.md) wyliczenie opisujące który Zarejestruj, aby pobrać wartość z.
+podczas Wartość z wyliczenia [CV_HREG_e wyliczenie](../../debugger/debug-interface-access/cv-hreg-e.md) określające, z którego rejestru pobrać wartość.
 
  `pRetVal`
 
-[out] Zwraca bieżącą wartość rejestru.
+określoną Zwraca bieżącą wartość rejestru.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Niezależnie od rozmiaru `pRetVal` parametru, co rejestru zwykle zawiera jedynie implementację powinny być przechowywane. Na przykład rejestr 8-bitowy przechowuje tylko najniższy 8 bitów danej wartości. Ta wartość 8-bitową można rozszerzyć, aby 64-bitowego, gdy zwracany z tej metody.
+ Pomimo rozmiaru parametru `pRetVal` implementacja powinna przechowywać tylko te dane, które są zwykle przechowywane w rejestrze. Na przykład rejestr 8-bitowy zawiera tylko najmniejsze 8 bitów danej wartości. Ta wartość 8-bitowa jest rozwinięta do 64-bitów, gdy zwracana jest z tej metody.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)
 - [CV_HREG_e, wyliczenie](../../debugger/debug-interface-access/cv-hreg-e.md)

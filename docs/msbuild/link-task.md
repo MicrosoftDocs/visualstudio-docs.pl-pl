@@ -1,5 +1,5 @@
 ---
-title: Łączenie zadań | Dokumentacja firmy Microsoft
+title: Połącz zadanie | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -22,904 +22,904 @@ dev_langs:
 - C++
 - jsharp
 helpviewer_keywords:
-- MSBuild (Visual C++), Link task
-- Link task (MSBuild (Visual C++))
+- MSBuild (C++), Link task
+- Link task (MSBuild (C++))
 ms.assetid: 0a61f168-3113-4fa7-83a3-d9142e2a33f8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 432ef1231f551d265e06242e2ab4ddc58a0fe5ac
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: f2241daa50a35a9714fd66b10966298279bc37fe
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825409"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747290"
 ---
 # <a name="link-task"></a>Link — Zadanie
-Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsolidatora łączy pliki obiektu Common Object File Format (COFF) i biblioteki, aby utworzyć plik wykonywalny ( *.exe*) pliku lub biblioteki dołączanej (dynamicznie DLL). Aby uzyskać więcej informacji, zobacz [opcje konsolidatora](/cpp/build/reference/linker-options).
+Zawija narzędzia konsolidatora C++ firmy Microsoft, *link. exe*. Narzędzie konsolidatora łączy pliki i biblioteki obiektów Common Object Format (COFF), aby utworzyć plik wykonywalny (*exe*) lub bibliotekę dołączaną dynamicznie (dll). Aby uzyskać więcej informacji, zobacz [Opcje konsolidatora](/cpp/build/reference/linker-options).
 
 ## <a name="parameters"></a>Parametry
- Poniżej opisano parametry **łącze** zadania. Większość parametrów zadania oraz kilka zestawów parametrów, odpowiada opcji wiersza polecenia.
+ Poniżej opisano parametry zadania **linku** . Większość parametrów zadań i kilku zestawów parametrów odpowiada opcji wiersza polecenia.
 
 - **AdditionalDependencies**
 
-  Opcjonalnie **String []** parametru.
+  Opcjonalny parametr **String []** .
 
-  Określa listę plików wejściowych, aby dodać do polecenia.
+  Określa listę plików wejściowych do dodania do polecenia.
 
-  Aby uzyskać więcej informacji, zobacz [pliki wejściowe LINK](/cpp/build/reference/link-input-files).
+  Aby uzyskać więcej informacji, zobacz [łączenie plików wejściowych](/cpp/build/reference/link-input-files).
 
 - **AdditionalLibraryDirectories**
 
-  Opcjonalnie **String []** parametru.
+  Opcjonalny parametr **String []** .
 
-  Zastępuje ścieżki biblioteki środowiska. Określ nazwę katalogu.
+  Zastępuje ścieżkę biblioteki środowiska. Określ nazwę katalogu.
 
-  Aby uzyskać więcej informacji, zobacz [/libpath — (dodatkowa Libpath)](/cpp/build/reference/libpath-additional-libpath).
+  Aby uzyskać więcej informacji, zobacz [/LIBPATH (dodatkowa LIBPATH)](/cpp/build/reference/libpath-additional-libpath).
 
 - **AdditionalManifestDependencies**
 
-  Opcjonalnie **String []** parametru.
+  Opcjonalny parametr **String []** .
 
-  Określa atrybuty, które zostaną umieszczone w `dependency` części pliku manifestu.
+  Określa atrybuty, które zostaną umieszczone w sekcji `dependency` pliku manifestu.
 
-  Aby uzyskać więcej informacji, zobacz [/MANIFESTDEPENDENCY (Określ zależności manifestu)](/cpp/build/reference/manifestdependency-specify-manifest-dependencies). Zobacz też [pliki konfiguracyjne wydawcy](https://docs.microsoft.com/windows/desktop/SbsCs/publisher-configuration-files).
+  Aby uzyskać więcej informacji, zobacz [/MANIFESTDEPENDENCY (Określ zależności manifestu)](/cpp/build/reference/manifestdependency-specify-manifest-dependencies). Zobacz również [pliki konfiguracji wydawcy](https://docs.microsoft.com/windows/desktop/SbsCs/publisher-configuration-files).
 
 - **AdditionalOptions**
 
-  Opcjonalnie **ciąg** parametru.
+  Opcjonalny parametr **ciągu** .
 
-  Lista opcji konsolidatora, jak określono w wierszu polecenia. Na przykład /\<opcja1 > /\<opcja2 > /\<opcja #>. Użyj tego parametru, aby określić opcje konsolidatora, które nie są reprezentowane przez inne **łącze** parametru zadania.
+  Lista opcji konsolidatora określona w wierszu polecenia. Na przykład/\<option1 >/\<option2 >/\<option # >. Użyj tego parametru, aby określić Opcje konsolidatora, które nie są reprezentowane przez żaden inny parametr zadania **linku** .
 
-  Aby uzyskać więcej informacji, zobacz [opcje konsolidatora](/cpp/build/reference/linker-options).
+  Aby uzyskać więcej informacji, zobacz [Opcje konsolidatora](/cpp/build/reference/linker-options).
 
 - **AddModuleNamesToAssembly**
 
-  Opcjonalnie **String []** parametru.
+  Opcjonalny parametr **String []** .
 
-  Dodaje odwołania modułu do zestawu.
+  Dodaje odwołanie do modułu do zestawu.
 
-  Aby uzyskać więcej informacji, zobacz [assemblymodule (Dodaj moduł MSIL do zestawu)](/cpp/build/reference/assemblymodule-add-a-msil-module-to-the-assembly).
+  Aby uzyskać więcej informacji, zobacz [/ASSEMBLYMODULE (Dodaj moduł MSIL do zestawu)](/cpp/build/reference/assemblymodule-add-a-msil-module-to-the-assembly).
 
 - **AllowIsolation**
 
-  Opcjonalnie **logiczna** parametru.
+  Opcjonalny parametr **logiczny** .
 
-  Jeśli `true`, powoduje, że system operacyjny do manifestu wyszukiwań i ładuje. Jeśli `false`, wskazuje, że biblioteki DLL są ładowane tak, jakby nie było żadnych manifestu.
+  Jeśli `true`, powoduje, że system operacyjny przeszukiwanie i ładowanie manifestu. Jeśli `false`, wskazuje, że biblioteki DLL są ładowane tak, jakby nie było manifestu.
 
-  Aby uzyskać więcej informacji, zobacz [/ALLOWISOLATION (wyszukiwania plików manifestu)](/cpp/build/reference/allowisolation-manifest-lookup).
+  Aby uzyskać więcej informacji, zobacz [/ALLOWISOLATION (odnośnik manifestu)](/cpp/build/reference/allowisolation-manifest-lookup).
 
 - **AssemblyDebug**
 
-  Opcjonalnie **logiczna** parametru.
+  Opcjonalny parametr **logiczny** .
 
-  Jeśli `true`, emituje **DebuggableAttribute** atrybut wraz z debugowania informacji śledzenia i wyłącza optymalizacje JIT. Jeśli `false`, emituje **DebuggableAttribute** atrybut, ale powoduje wyłączenie śledzenia informacji o debugowaniu i włącza optymalizacje JIT.
+  Jeśli `true`, emituje atrybut **DebuggableAttribute** wraz ze śledzeniem informacji debugowania i wyłącza optymalizacje JIT. Jeśli `false`, emituje atrybut **DebuggableAttribute** , ale wyłącza śledzenie informacji debugowania i włącza optymalizacje JIT.
 
-  Aby uzyskać więcej informacji, zobacz [/assemblydebug (Dodaj DebuggableAttribute)](/cpp/build/reference/assemblydebug-add-debuggableattribute).
+  Aby uzyskać więcej informacji, zobacz [/ASSEMBLYDEBUG (Add DebuggableAttribute)](/cpp/build/reference/assemblydebug-add-debuggableattribute).
 
 - **AssemblyLinkResource**
 
-  Opcjonalnie **String []** parametru.
+  Opcjonalny parametr **String []** .
 
-  Tworzy łącze do zasobów .NET Framework w pliku wyjściowym; plik zasobu nie zostanie umieszczony w pliku wyjściowym. Określ nazwę zasobu.
+  Tworzy łącze do zasobu .NET Framework w pliku wyjściowym; plik zasobu nie jest umieszczany w pliku wyjściowym. Określ nazwę zasobu.
 
-  Aby uzyskać więcej informacji, zobacz [assemblylinkresource (Link do zasobów .NET Framework)](/cpp/build/reference/assemblylinkresource-link-to-dotnet-framework-resource).
+  Aby uzyskać więcej informacji, zobacz [/ASSEMBLYLINKRESOURCE (link do zasobów .NET Framework)](/cpp/build/reference/assemblylinkresource-link-to-dotnet-framework-resource).
 
 - **AttributeFileTracking**
 
-  Niejawne **logiczna** parametru.
+  Niejawny parametr **logiczny** .
 
-  Umożliwia bardziej plik śledzenia do przechwytywania zachowanie łącza przyrostowe firmy. Zawsze zwraca `true`.
+  Umożliwia dokładniejsze śledzenie plików, aby przechwycić zachowanie przyrostu łącza. Zawsze zwraca `true`.
 
 - **BaseAddress**
 
-  Opcjonalnie **ciąg** parametru.
+  Opcjonalny parametr **ciągu** .
 
-  Ustawia adres bazowy programu lub biblioteka DLL jest kompilowana. Określ `{address[,size] | @filename,key}`.
+  Ustawia adres podstawowy dla kompilowanego programu lub biblioteki DLL. Określ `{address[,size] | @filename,key}`.
 
-  Aby uzyskać więcej informacji, zobacz [uwzględniają (adres podstawowy)](/cpp/build/reference/base-base-address).
+  Aby uzyskać więcej informacji, zobacz [/Base (adres podstawowy)](/cpp/build/reference/base-base-address).
 
 - **BuildingInIDE**
 
-  Opcjonalnie **logiczna** parametru.
+  Opcjonalny parametr **logiczny** .
 
-  W przypadku opcji true wskazuje, że program MSBuild jest wywoływana z poziomu środowiska IDE. W przeciwnym razie wskazuje, że program MSBuild jest wywoływana z poziomu wiersza polecenia.
+  Jeśli wartość jest równa true, wskazuje, że MSBuild jest wywoływany z IDE. W przeciwnym razie wskazuje, że MSBuild jest wywoływany z wiersza polecenia.
 
-  Ten parametr nie ma żadnej opcji równoważne konsolidatora.
+  Ten parametr nie ma równoważnej opcji konsolidatora.
 
 - **CLRImageType**
 
-  Opcjonalnie **ciąg** parametru.
+  Opcjonalny parametr **ciągu** .
 
-  Ustawia typ wspólnej obrazu od języka wspólnego (CLR).
+  Ustawia typ obrazu środowiska uruchomieniowego języka wspólnego (CLR).
 
   Określ jedną z następujących wartości, z których każdy odpowiada opcji konsolidatora.
 
-  - **Domyślne** -  *\<Brak >*
+  - **Domyślne**  *\<none  -  >*
 
-  - **ForceIJWImage** -  **/CLRIMAGETYPE:IJW**
+  - **ForceIJWImage**  -  **/CLRIMAGETYPE: IJW**
 
-  - **ForcePureILImage** -  **/CLRIMAGETYPE:PURE**
+  - **ForcePureILImage**  -  **/CLRIMAGETYPE: czysty**
 
-  - **ForceSafeILImage** -  **/CLRIMAGETYPE:SAFE**
+  - **ForceSafeILImage**  -  **/CLRIMAGETYPE: Safe**
 
-  Aby uzyskać więcej informacji, zobacz [/clrimagetype (określenie typu obrazu CLR)](/cpp/build/reference/clrimagetype-specify-type-of-clr-image).
+  Aby uzyskać więcej informacji, zobacz [/CLRIMAGETYPE (Określ typ obrazu CLR)](/cpp/build/reference/clrimagetype-specify-type-of-clr-image).
 
 - **CLRSupportLastError**
 
-  Opcjonalnie **ciąg** parametru.
+  Opcjonalny parametr **ciągu** .
 
-  Zachowuje kod ostatniego błędu funkcji wywołanych za pomocą mechanizmu P/Invoke.
+  Zachowuje kod ostatniego błędu funkcji wywoływanych za pomocą mechanizmu P/Invoke.
 
   Określ jedną z następujących wartości, z których każdy odpowiada opcji konsolidatora.
 
-  - **Włączone** -  **/CLRSupportLastError**
+  - **Włączone**  -  **/CLRSupportLastError**
 
-  - **Wyłączone** -  **/CLRSupportLastError:NO**
+  - **Wyłączone**  -  **/CLRSupportLastError: nie**
 
-  - **SystemDlls** -  **/CLRSupportLastError:SYSTEMDLL**
+  - **SystemDlls**  -  **/CLRSupportLastError: SYSTEMDLL**
 
   Aby uzyskać więcej informacji, zobacz [/CLRSUPPORTLASTERROR (Zachowaj kod ostatniego błędu dla wywołań PInvoke)](/cpp/build/reference/clrsupportlasterror-preserve-last-error-code-for-pinvoke-calls).
 
 - **CLRThreadAttribute**
 
-  Opcjonalnie **ciąg** parametru.
+  Opcjonalny parametr **ciągu** .
 
-  Określa jawnie atrybut wątkowości dla punktu wejścia programu CLR.
+  Jawnie określa atrybut wątkowości dla punktu wejścia programu CLR.
 
   Określ jedną z następujących wartości, z których każdy odpowiada opcji konsolidatora.
 
-  - **DefaultThreadingAttribute** -  **/CLRTHREADATTRIBUTE: Brak**
+  - **DefaultThreadingAttribute**  -  **/CLRTHREADATTRIBUTE: brak**
 
-  - **MTAThreadingAttribute** -  **: MTA**
+  - **MTAThreadingAttribute**  -  **/CLRTHREADATTRIBUTE: MTA**
 
-  - **STAThreadingAttribute** -  **/CLRTHREADATTRIBUTE:STA**
+  - **STAThreadingAttribute**  -  **/CLRTHREADATTRIBUTE: sta**
 
-  Aby uzyskać więcej informacji, zobacz [/CLRTHREADATTRIBUTE (atrybut wątku CLR Ustaw)](/cpp/build/reference/clrthreadattribute-set-clr-thread-attribute).
+  Aby uzyskać więcej informacji, zobacz [/CLRTHREADATTRIBUTE (ustaw atrybut wątku CLR)](/cpp/build/reference/clrthreadattribute-set-clr-thread-attribute).
 
 - **CLRUnmanagedCodeCheck**
 
-  Opcjonalnie **logiczna** parametru.
+  Opcjonalny parametr **logiczny** .
 
-  Określa, czy konsolidator zastosuje **SuppressUnmanagedCodeSecurityAttribute** na generowanych przez konsolidator wywołania metody P/Invoke z kodu zarządzanego, do macierzystych bibliotek DLL.
+  Określa, czy konsolidator będzie stosował **SuppressUnmanagedCodeSecurityAttribute** do wygenerowanych przez konsolidatora wywołań P/Invoke z kodu zarządzanego do natywnych bibliotek DLL.
 
-  Aby uzyskać więcej informacji, zobacz [opcji/clrunmanagedcodecheck (Dodaj atrybut SuppressUnmanagedCodeSecurityAttribute)](/cpp/build/reference/clrunmanagedcodecheck-add-suppressunmanagedcodesecurityattribute).
+  Aby uzyskać więcej informacji, zobacz [/CLRUNMANAGEDCODECHECK (Add SuppressUnmanagedCodeSecurityAttribute)](/cpp/build/reference/clrunmanagedcodecheck-add-suppressunmanagedcodesecurityattribute).
 
 - **CreateHotPatchableImage**
 
-  Opcjonalnie **ciąg** parametru.
+  Opcjonalny parametr **ciągu** .
 
-  Przygotowuje obraz do poprawki.
+  Przygotowuje obraz do stosowania poprawek na gorąco.
 
-  Określ jedną z następujących wartości, które odpowiada opcji konsolidatora.
+  Określ jedną z następujących wartości, która odnosi się do opcji konsolidatora.
 
-  - **Enabled** -  **/FUNCTIONPADMIN**
+  - **Włączone**  -  **/functionpadmin**
 
-  - **X86Image** -  **/FUNCTIONPADMIN:5**
+  - **X86Image**  -  **/functionpadmin: 5**
 
-  - **X64Image** -  **/FUNCTIONPADMIN:6**
+  - **X64Image**  -  **/functionpadmin: 6**
 
-  - **ItaniumImage** -  **/FUNCTIONPADMIN:16**
+  - **ItaniumImage**  -  **/functionpadmin: 16**
 
-  Aby uzyskać więcej informacji, zobacz [/FUNCTIONPADMIN (Utwórz obraz hotpatchable)](/cpp/build/reference/functionpadmin-create-hotpatchable-image).
+  Aby uzyskać więcej informacji, zobacz [/functionpadmin (Create możliwy do poprawiania Image)](/cpp/build/reference/functionpadmin-create-hotpatchable-image).
 
 - **DataExecutionPrevention**
 
-  Opcjonalnie **logiczna** parametru.
+  Opcjonalny parametr **logiczny** .
 
-  Jeśli `true`, wskazuje, że plik wykonywalny został sprawdzony w celu uzyskania zgodności z funkcją zapobiegania wykonywaniu danych Windows.
+  Jeśli `true`, wskazuje, że plik wykonywalny został przetestowany pod kątem zgodności z funkcją zapobiegania wykonywaniu danych systemu Windows.
 
   Aby uzyskać więcej informacji, zobacz [/NXCOMPAT (zgodny z zapobieganiem wykonywaniu danych)](/cpp/build/reference/nxcompat-compatible-with-data-execution-prevention).
 
 - **DelayLoadDLLs**
 
-  Opcjonalnie **String []** parametru.
+  Opcjonalny parametr **String []** .
 
-  Powoduje, że ten parametr *opóźnione ładowanie* bibliotek DLL. Określ nazwę biblioteki DLL w celu opóźnienia ładowania.
+  Ten parametr powoduje *opóźnione ładowanie* bibliotek DLL. Określ nazwę pliku DLL, aby opóźnić ładowanie.
 
-  Aby uzyskać więcej informacji, zobacz [/delayload (Opóźnij importowanie ładowania)](/cpp/build/reference/delayload-delay-load-import).
+  Aby uzyskać więcej informacji, zobacz [/DELAYLOAD (opóźnienie importowania ładowania)](/cpp/build/reference/delayload-delay-load-import).
 
 - **DelaySign**
 
-  Opcjonalnie **logiczna** parametru.
+  Opcjonalny parametr **logiczny** .
 
-  Jeśli `true`, częściowo podpisuje zestaw. Domyślna wartość to `false`.
+  Jeśli `true`, częściowo podpisuje zestaw. Domyślnie wartość jest `false`.
 
-  Aby uzyskać więcej informacji, zobacz [/DelaySign (częściowo podpisać zestaw)](/cpp/build/reference/delaysign-partially-sign-an-assembly).
+  Aby uzyskać więcej informacji, zobacz [/delaysign (częściowo podpisz zestaw)](/cpp/build/reference/delaysign-partially-sign-an-assembly).
 
-- **Sterownik**
+- **Kierowc**
 
-  Opcjonalnie **ciąg** parametru.
+  Opcjonalny parametr **ciągu** .
 
-  Określenia tego parametru, aby zbudować sterownik trybu jądra Windows NT.
+  Określ ten parametr, aby skompilować sterownik trybu jądra systemu Windows NT.
 
   Określ jedną z następujących wartości, z których każdy odpowiada opcji konsolidatora.
 
-  - **NotSet** -  *\<none>*
+  - **NotSet**  -  *\<none >*
 
-  - **Driver** -  **/Driver**
+  - **@No__t_1** **sterownika sterowników**
 
-  - **UpOnly** -  **/DRIVER:UPONLY**
+  - **Tylko**  - object **: tylko** do
 
-  - **WDM** -  **/DRIVER:WDM**
+  - **Wdm**  -  **: WDM**
 
-  Aby uzyskać więcej informacji, zobacz [Driver/Driver (sterownik trybu jądra Windows NT)](/cpp/build/reference/driver-windows-nt-kernel-mode-driver).
+  Aby uzyskać więcej informacji, zobacz [Sterownik systemu Windows NT — sterowniki trybu jądra](/cpp/build/reference/driver-windows-nt-kernel-mode-driver).
 
 - **EmbedManagedResourceFile**
 
-  Opcjonalnie **String []** parametru.
+  Opcjonalny parametr **String []** .
 
-  Osadza plik zasobów w zestawie. Określ nazwę pliku wymaganego zasobu. Opcjonalnie można określić nazwy logicznej, która jest używana do ładowania zasobu, a **PRYWATNEJ** opcja, która wskazuje w manifeście zestawu, czy plik zasobów jest prywatny.
+  Osadza plik zasobów w zestawie. Określ wymaganą nazwę pliku zasobu. Opcjonalnie można określić nazwę logiczną, która jest używana do ładowania zasobu, oraz opcję **prywatną** wskazującą w manifeście zestawu, że plik zasobów jest prywatny.
 
-  Aby uzyskać więcej informacji, zobacz [linkowany (Osadź zarządzany zasób)](/cpp/build/reference/assemblyresource-embed-a-managed-resource).
+  Aby uzyskać więcej informacji, zobacz [/ASSEMBLYRESOURCE (osadzanie zarządzanego zasobu)](/cpp/build/reference/assemblyresource-embed-a-managed-resource).
 
 - **EnableCOMDATFolding**
 
-  Opcjonalnie **logiczna** parametru.
+  Opcjonalny parametr **logiczny** .
 
-  Jeśli `true`, umożliwia identyczne składanie COMDAT.
+  Jeśli `true`, włącza identyczne składanie COMDAT.
 
-  Aby uzyskać więcej informacji, zobacz `ICF[= iterations]` argument [od (optymalizacje)](/cpp/build/reference/opt-optimizations).
+  Aby uzyskać więcej informacji, zobacz `ICF[= iterations]` argument [/opt (optymalizacje)](/cpp/build/reference/opt-optimizations).
 
 - **EnableUAC**
 
-  Opcjonalnie **logiczna** parametru.
+  Opcjonalny parametr **logiczny** .
 
-  Jeśli `true`, określa, czy informacje kontroli konta użytkownika (UAC) będą osadzone w manifeście programu.
+  Jeśli `true`, określa, że informacje kontroli konta użytkownika (UAC) są osadzone w manifeście programu.
 
-  Aby uzyskać więcej informacji, zobacz [/MANIFESTUAC (osadza informacje UAC w manifeście)](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest).
+  Aby uzyskać więcej informacji, zobacz [/MANIFESTUAC (osadzanie informacji UAC w manifeście)](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest).
 
 - **EntryPointSymbol**
 
-  Opcjonalnie **ciąg** parametru.
+  Opcjonalny parametr **ciągu** .
 
-  Określa funkcję punktu wejścia jako adres początkowy *.exe* pliku lub biblioteki DLL. Określ nazwę funkcji jako wartość parametru.
+  Określa funkcję punktu wejścia jako adres początkowy dla pliku *. exe* lub dll. Określ nazwę funkcji jako wartość parametru.
 
-  Aby uzyskać więcej informacji, zobacz [/Entry (symbol punktu wejścia)](/cpp/build/reference/entry-entry-point-symbol).
+  Aby uzyskać więcej informacji, zobacz [/entry (symbol punktu wejścia)](/cpp/build/reference/entry-entry-point-symbol).
 
 - **FixedBaseAddress**
 
-  Opcjonalnie **logiczna** parametru.
+  Opcjonalny parametr **logiczny** .
 
-  Jeśli `true`, tworzy program lub biblioteki DLL, który może zostać załadowany tylko pod swoim preferowanym adresem bazowym.
+  W przypadku `true` tworzy program lub plik DLL, który można załadować tylko przy użyciu preferowanego adresu podstawowego.
 
-  Aby uzyskać więcej informacji, zobacz [/Fixed (stały adres podstawowy)](/cpp/build/reference/fixed-fixed-base-address).
+  Aby uzyskać więcej informacji, zobacz [/FIXED (stały adres podstawowy)](/cpp/build/reference/fixed-fixed-base-address).
 
 - **ForceFileOutput**
 
-  Opcjonalnie **ciąg** parametru.
+  Opcjonalny parametr **ciągu** .
 
-  Informuje konsolidator, aby utworzyć prawidłowy *.exe* pliku DLL nawet wtedy, gdy symbolu występują odwołania, ale nie zdefiniowana lub został zdefiniowany wiele razy.
+  Nakazuje konsolidatorowi utworzenie prawidłowego pliku *. exe* lub dll, nawet jeśli istnieje odwołanie do symbolu, ale nie zdefiniowane lub jest zdefiniowane wielokrotnie.
 
   Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
 
-  - **Włączone** -   **/FORCE**
+  - **Włączono**  -  **/Force**
 
-  - **MultiplyDefinedSymbolOnly** -  **/FORCE:MULTIPLE**
+  - **MultiplyDefinedSymbolOnly**  -  **/Force: wiele**
 
-  - **UndefinedSymbolOnly** -   **/FORCE: NIEROZPOZNANA**
+  - **UndefinedSymbolOnly**  -  **/Force: nierozwiązane**
 
-  Aby uzyskać więcej informacji, zobacz [/Force (Wymuszaj produkt wyjściowy pliku)](/cpp/build/reference/force-force-file-output).
+  Aby uzyskać więcej informacji, zobacz [/Force (Wymuś dane wyjściowe pliku)](/cpp/build/reference/force-force-file-output).
 
 - **ForceSymbolReferences**
 
-  Opcjonalnie **String []** parametru.
+  Opcjonalny parametr **String []** .
 
-  Ten parametr informuje konsolidator, aby dodał określony symbol do tabeli symboli.
+  Ten parametr nakazuje konsolidatorowi dodanie określonego symbolu do tabeli symboli.
 
   Aby uzyskać więcej informacji, zobacz [/include (Wymuszaj odwołania do symboli)](/cpp/build/reference/include-force-symbol-references).
 
 - **FunctionOrder**
 
-  Opcjonalnie **ciąg** parametru.
+  Opcjonalny parametr **ciągu** .
 
-  Ten parametr optymalizuje program, umieszczając określonego funkcje pakowane (COMDATs) w obrazie w ustalonej kolejności.
+  Ten parametr optymalizuje program przez umieszczenie określonych spakowanych funkcji (COMDAT) w obrazie w ustalonej kolejności.
 
-  Aby uzyskać więcej informacji, zobacz [/order (Put funkcje w kolejności)](/cpp/build/reference/order-put-functions-in-order).
+  Aby uzyskać więcej informacji, zobacz [/Order (Put funkcje w kolejności)](/cpp/build/reference/order-put-functions-in-order).
 
 - **GenerateDebugInformation**
 
-  Opcjonalnie **logiczna** parametru.
+  Opcjonalny parametr **logiczny** .
 
-  Jeśli `true`, tworzy informacji o debugowaniu dla *.exe* pliku lub biblioteki DLL.
+  Jeśli `true`, program tworzy informacje debugowania dla pliku *exe* lub dll.
 
-  Aby uzyskać więcej informacji, zobacz [/Debug (generowanie informacji o debugowaniu)](/cpp/build/reference/debug-generate-debug-info).
+  Aby uzyskać więcej informacji, zobacz [/debug (generowanie informacji o debugowaniu)](/cpp/build/reference/debug-generate-debug-info).
 
 - **GenerateManifest**
 
-  Opcjonalnie **logiczna** parametru.
+  Opcjonalny parametr **logiczny** .
 
-  Jeśli `true`, tworzy plik manifestu side-by-side.
+  Jeśli `true`, program tworzy plik manifestu obok siebie.
 
-  Aby uzyskać więcej informacji, zobacz [/MANIFEST (Tworzenie manifestu zestawu side-by-side)](/cpp/build/reference/manifest-create-side-by-side-assembly-manifest).
+  Aby uzyskać więcej informacji, zobacz [/manifest (Create Side-by-Side manifest zestawu)](/cpp/build/reference/manifest-create-side-by-side-assembly-manifest).
 
 - **GenerateMapFile**
 
-  Opcjonalnie **logiczna** parametru.
+  Opcjonalny parametr **logiczny** .
 
-  Jeśli `true`, tworzy *pliku mapy*. Rozszerzenie nazwy pliku mapy jest *.map*.
+  Jeśli `true`, program tworzy *plik mapy*. Rozszerzenie nazwy pliku mapy to *. map*.
 
-  Aby uzyskać więcej informacji, zobacz [/map (Generuj plik mapy)](/cpp/build/reference/map-generate-mapfile).
+  Aby uzyskać więcej informacji, zobacz [/map (Generate Mapfile)](/cpp/build/reference/map-generate-mapfile).
 
 - **HeapCommitSize**
 
-  Opcjonalnie **ciąg** parametru.
+  Opcjonalny parametr **ciągu** .
 
-  Określa ilość fizycznej pamięci na stosie, można przydzielić w danym momencie.
+  Określa ilość pamięci fizycznej na stercie do przydzielenia w danym momencie.
 
-  Aby uzyskać więcej informacji, zobacz `commit` argument [/HEAP (Ustaw rozmiar sterty)](/cpp/build/reference/heap-set-heap-size). Zobacz też **HeapReserveSize** parametru.
+  Aby uzyskać więcej informacji, zobacz argument `commit` w [/Heap (Ustawianie rozmiaru sterty)](/cpp/build/reference/heap-set-heap-size). Zobacz również parametr **HeapReserveSize** .
 
 - **HeapReserveSize**
 
-  Opcjonalnie **ciąg** parametru.
+  Opcjonalny parametr **ciągu** .
 
-  Określa Alokacja sterty całkowitej pamięci wirtualnej.
+  Określa całkowitą alokację sterty w pamięci wirtualnej.
 
-  Aby uzyskać więcej informacji, zobacz `reserve` argument [/HEAP (Ustaw rozmiar sterty)](/cpp/build/reference/heap-set-heap-size). Zobacz też **HeapCommitSize** parametru w tej tabeli.
+  Aby uzyskać więcej informacji, zobacz argument `reserve` w [/Heap (Ustawianie rozmiaru sterty)](/cpp/build/reference/heap-set-heap-size). Zobacz również parametr **HeapCommitSize** w tej tabeli.
 
 - **IgnoreAllDefaultLibraries**
 
-  Opcjonalnie **logiczna** parametru.
+  Opcjonalny parametr **logiczny** .
 
-  Jeśli `true`, informuje konsolidator, aby usunąć jedną lub więcej bibliotek domyślnych z listy bibliotek wyszukiwania podczas rozpoznawania odwołań zewnętrznych.
+  Jeśli `true`, nakazuje konsolidatorowi usunięcie co najmniej jednej biblioteki domyślnej z listy bibliotek, które przeszukuje, gdy rozwiązuje odwołania zewnętrzne.
 
-  Aby uzyskać więcej informacji, zobacz [/nodefaultlib (Ignoruj biblioteki)](/cpp/build/reference/nodefaultlib-ignore-libraries).
+  Aby uzyskać więcej informacji, zobacz [/NODEFAULTLIB (Ignoruj biblioteki)](/cpp/build/reference/nodefaultlib-ignore-libraries).
 
 - **IgnoreEmbeddedIDL**
 
-  Opcjonalnie **logiczna** parametru.
+  Opcjonalny parametr **logiczny** .
 
-  Jeśli `true`, określa, czy jakiekolwiek atrybuty IDL w kodzie źródłowym nie powinny być przetwarzane w *.idl* pliku.
+  Jeśli `true`, określa, że żadne atrybuty IDL w kodzie źródłowym nie powinny być przetwarzane do pliku *. idl* .
 
   Aby uzyskać więcej informacji, zobacz [/IGNOREIDL (nie Przetwarzaj atrybutów w MIDL)](/cpp/build/reference/ignoreidl-don-t-process-attributes-into-midl).
 
 - **IgnoreImportLibrary**
 
-  Opcjonalnie **logiczna** parametru.
+  Opcjonalny parametr **logiczny** .
 
-  Jeśli `true`, określa, że biblioteka importowana, generowana przez tą konfigurację nie będzie importowana do projektów zależnych.
+  Jeśli `true`, określa, że biblioteka importowana, generowana przez tę konfigurację, nie powinna być importowana do projektów zależnych.
 
-  Ten parametr nie odpowiada — opcja konsolidatora.
+  Ten parametr nie odpowiada opcji konsolidatora.
 
 - **IgnoreSpecificDefaultLibraries**
 
-  Opcjonalnie **String []** parametru.
+  Opcjonalny parametr **String []** .
 
-  Określa jedną lub więcej nazw bibliotek domyślnych do zignorowania. Rozdzielaj wielokrotne biblioteki przy użyciu średników.
+  Określa co najmniej jedną nazwę bibliotek domyślnych do zignorowania. Oddziel wiele bibliotek przy użyciu średników.
 
-  Aby uzyskać więcej informacji, zobacz [/nodefaultlib (Ignoruj biblioteki)](/cpp/build/reference/nodefaultlib-ignore-libraries).
+  Aby uzyskać więcej informacji, zobacz [/NODEFAULTLIB (Ignoruj biblioteki)](/cpp/build/reference/nodefaultlib-ignore-libraries).
 
 - **ImageHasSafeExceptionHandlers**
 
-  Opcjonalnie **logiczna** parametru.
+  Opcjonalny parametr **logiczny** .
 
-  Jeśli `true`, konsolidator generuje obraz tylko wtedy, gdy może utworzyć również tabelę obsługi bezpiecznych wyjątków obrazu.
+  Jeśli `true`, konsolidator tworzy obraz tylko wtedy, gdy może również generować tabelę obsługi wyjątków bezpiecznego obrazu.
 
-  Aby uzyskać więcej informacji, zobacz [opcja/SAFESEH (obraz ma obsługi bezpiecznych wyjątków)](/cpp/build/reference/safeseh-image-has-safe-exception-handlers).
+  Aby uzyskać więcej informacji, zobacz [/SAFESEH (obraz ma bezpieczne procedury obsługi wyjątków)](/cpp/build/reference/safeseh-image-has-safe-exception-handlers).
 
 - **ImportLibrary**
 
-  Nazwa biblioteki importu określonych przez użytkownika, która zastępuje domyślną nazwę biblioteki.
+  Nazwa biblioteki importu określona przez użytkownika, która zastępuje domyślną nazwę biblioteki.
 
-  Aby uzyskać więcej informacji, zobacz [/IMPLIB (Nazwij bibliotekę importowaną)](/cpp/build/reference/implib-name-import-library).
+  Aby uzyskać więcej informacji, zobacz [/IMPLIB (Name import Library)](/cpp/build/reference/implib-name-import-library).
 
 - **KeyContainer**
 
-  Opcjonalnie **ciąg** parametru.
+  Opcjonalny parametr **ciągu** .
 
-  Kontener, który zawiera klucz dla zestawu podpisem.
+  Kontener, który zawiera klucz dla podpisanego zestawu.
 
-  Aby uzyskać więcej informacji, zobacz [/KeyContainer (Określ kontener klucza do podpisywania zestawu)](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly). Zobacz też **KeyFile** parametru w tej tabeli.
+  Aby uzyskać więcej informacji, zobacz [/KEYCONTAINER (Określ kontener klucza do podpisania zestawu)](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly). Zobacz również parametr **KeyFile** w tej tabeli.
 
 - **KeyFile**
 
-  Opcjonalnie **ciąg** parametru.
+  Opcjonalny parametr **ciągu** .
 
-  Określa plik, który zawiera klucz dla zestawu podpisanego za pomocą.
+  Określa plik, który zawiera klucz dla podpisanego zestawu.
 
-  Aby uzyskać więcej informacji, zobacz [/KeyFile (Określ klucz lub parę kluczy, aby podpisać zestaw)](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly). Zobacz też **KeyContainer** parametru.
+  Aby uzyskać więcej informacji, zobacz [/keyfile (Określ klucz lub parę kluczy, aby podpisać zestaw)](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly). Należy również zapoznać się z parametrem **kontenera** .
 
 - **LargeAddressAware**
 
-  Opcjonalnie **logiczna** parametru.
+  Opcjonalny parametr **logiczny** .
 
-  Jeśli `true`, aplikacja może obsługiwać adresy większe niż 2 gigabajty.
+  Jeśli `true`, aplikacja może obsłużyć adresy większe niż 2 gigabajty.
 
-  Aby uzyskać więcej informacji, zobacz [/largeaddressaware (Obsługa dużych adresów)](/cpp/build/reference/largeaddressaware-handle-large-addresses).
+  Aby uzyskać więcej informacji, zobacz [/LARGEADDRESSAWARE (obsługa dużych adresów)](/cpp/build/reference/largeaddressaware-handle-large-addresses).
 
 - **LinkDLL**
 
-  Opcjonalnie **logiczna** parametru.
+  Opcjonalny parametr **logiczny** .
 
-  Jeśli `true`, kompiluje bibliotekę DLL jako plik wyjściowy głównego.
+  Jeśli `true`, program kompiluje bibliotekę DLL jako główny plik wyjściowy.
 
-  Aby uzyskać więcej informacji, zobacz [/dll (kompilowanie biblioteki DLL)](/cpp/build/reference/dll-build-a-dll).
+  Aby uzyskać więcej informacji, zobacz [/dll (Kompilowanie biblioteki dll)](/cpp/build/reference/dll-build-a-dll).
 
 - **LinkErrorReporting**
 
-  Opcjonalnie **ciąg** parametru.
+  Opcjonalny parametr **ciągu** .
 
-  Pozwala zapewnić wewnętrznych kompilatora-informacje o błędzie (ICE) bezpośrednio do firmy Microsoft.
+  Umożliwia dostarczenie informacji o wewnętrznym błędzie kompilatora (lodem) bezpośrednio do firmy Microsoft.
 
   Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
 
-  - **NoErrorReport** -   **/errorreport: Brak**
+  - **NoErrorReport**  -  **/errorReport: brak**
 
-  - **PromptImmediately** -  **/ERRORREPORT:PROMPT**
+  - **Monituj bezzwłocznie**  -  **/errorReport: Prompt**
 
-  - **QueueForNextLogin** -  **/ERRORREPORT:QUEUE**
+  - **QueueForNextLogin**  -  **/errorReport: Queue**
 
-  - **SendErrorReport** -  **/ERRORREPORT:SEND**
+  - **SendErrorReport**  -  **/errorReport: Send**
 
   Aby uzyskać więcej informacji, zobacz [/errorreport (zgłaszaj wewnętrzne błędy konsolidatora)](/cpp/build/reference/errorreport-report-internal-linker-errors).
 
 - **LinkIncremental**
 
-  Opcjonalnie **logiczna** parametru.
+  Opcjonalny parametr **logiczny** .
 
-  Jeśli `true`, włącza konsolidację przyrostową.
+  Jeśli `true`, włącza łączenie przyrostowe.
 
-  Aby uzyskać więcej informacji, zobacz [/INCREMENTAL (łącz stopniowo)](/cpp/build/reference/incremental-link-incrementally).
+  Aby uzyskać więcej informacji, zobacz [/Incremental (łączenie przyrostowe)](/cpp/build/reference/incremental-link-incrementally).
 
 - **LinkLibraryDependencies**
 
-  Opcjonalnie **logiczna** parametru.
+  Opcjonalny parametr **logiczny** .
 
-  Jeśli `true`, określa, czy biblioteka wyników z odwoływanych projektów jest automatycznie konsolidowana.
+  Jeśli `true`, określa, że dane wyjściowe biblioteki z zależności projektu są automatycznie dołączane.
 
-  Ten parametr nie odpowiada — opcja konsolidatora.
+  Ten parametr nie odpowiada opcji konsolidatora.
 
 - **LinkStatus**
 
-  Opcjonalnie **logiczna** parametru.
+  Opcjonalny parametr **logiczny** .
 
-  Jeśli `true`, określa, że konsolidator jest wyświetlenie wskaźnika postępu, który pokazuje, jaki procent łącze zostało zakończone.
+  Jeśli `true`, określa, że konsolidator ma wyświetlać wskaźnik postępu, który pokazuje, jaki procent łącza zostało zakończone.
 
-  Aby uzyskać więcej informacji, zobacz `STATUS` argument [opcję/LTCG (Generowanie kodu Link-time)](/cpp/build/reference/ltcg-link-time-code-generation).
+  Aby uzyskać więcej informacji, zobacz argument `STATUS` [/LTCG (generowanie kodu w czasie konsolidacji)](/cpp/build/reference/ltcg-link-time-code-generation).
 
 - **LinkTimeCodeGeneration**
 
-  Opcjonalnie **ciąg** parametru.
+  Opcjonalny parametr **ciągu** .
 
-  Określa opcje optymalizacji sterowanej profilem.
+  Określa opcje optymalizacji profilowanej.
 
   Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
 
-  - **Domyślne** -  *\<Brak >*
+  - **Domyślne**  *\<none  -  >*
 
-  - **UseLinkTimeCodeGeneration** -  **/LTCG**
+  - **UseLinkTimeCodeGeneration**  -  **/LTCG**
 
-  - **PGInstrument** -  **/LTCG:PGInstrument**
+  - **PGInstrument**  -  **/LTCG: PGInstrument**
 
-  - **PGOptimization** -  **/LTCG:PGOptimize**
+  - **PGOptimization**  -  **/LTCG: PGOptimize**
 
   - **PGUpdate**
 
-    \- **/LTCG:PGUpdate**
+    \- **/LTCG: PGUpdate**
 
-  Aby uzyskać więcej informacji, zobacz [opcję/LTCG (Generowanie kodu Link-time)](/cpp/build/reference/ltcg-link-time-code-generation).
+  Aby uzyskać więcej informacji, zobacz [/LTCG (generowanie kodu w czasie konsolidacji)](/cpp/build/reference/ltcg-link-time-code-generation).
 
 - **ManifestFile**
 
-  Opcjonalnie **ciąg** parametru.
+  Opcjonalny parametr **ciągu** .
 
-  Zmienia domyślna nazwa pliku manifestu do określonej nazwy pliku.
+  Zmienia domyślną nazwę pliku manifestu na określoną nazwę pliku.
 
-  Aby uzyskać więcej informacji, zobacz [/MANIFESTFILE (nazwa pliku manifestu)](/cpp/build/reference/manifestfile-name-manifest-file).
+  Aby uzyskać więcej informacji, zobacz [/MANIFESTFILE (Nazwij plik manifestu)](/cpp/build/reference/manifestfile-name-manifest-file).
 
 - **MapExports**
 
-  Opcjonalnie **logiczna** parametru.
+  Opcjonalny parametr **logiczny** .
 
-  Jeśli `true`, informuje konsolidator, aby dołączał eksportowane funkcje w pliku mapy.
+  Jeśli `true`, nakazuje konsolidatorowi uwzględnienie wyeksportowanych funkcji w pliku mapy.
 
-  Aby uzyskać więcej informacji, zobacz `EXPORTS` argument [/MapInfo (Dołącz informacje mapfile)](/cpp/build/reference/mapinfo-include-information-in-mapfile).
+  Aby uzyskać więcej informacji, zobacz argument `EXPORTS` [/MapInfo (Dołącz informacje w mapfile)](/cpp/build/reference/mapinfo-include-information-in-mapfile).
 
 - **MapFileName**
 
-  Opcjonalnie **ciąg** parametru.
+  Opcjonalny parametr **ciągu** .
 
-  Zmienia domyślna nazwa pliku mapy z określoną nazwą pliku.
+  Zmienia domyślną nazwę pliku mapy na określoną nazwę pliku.
 
 - **MergedIDLBaseFileName**
 
-  Opcjonalnie **ciąg** parametru.
+  Opcjonalny parametr **ciągu** .
 
-  Określa nazwę pliku i rozszerzenie nazwy pliku *.idl* pliku.
+  Określa nazwę pliku i rozszerzenie nazwy pliku *IDL* .
 
-  Aby uzyskać więcej informacji, zobacz [/idlout (pliki wyjściowe Name MIDL)](/cpp/build/reference/idlout-name-midl-output-files).
+  Aby uzyskać więcej informacji, zobacz [/IDLOUT (Name MIDL Output Files)](/cpp/build/reference/idlout-name-midl-output-files).
 
 - **MergeSections**
 
-  Opcjonalnie **ciąg** parametru.
+  Opcjonalny parametr **ciągu** .
 
   Łączy sekcje w obrazie. Określ `from-section=to-section`.
 
-  Aby uzyskać więcej informacji, zobacz [/merge (Połącz sekcje)](/cpp/build/reference/merge-combine-sections).
+  Aby uzyskać więcej informacji, zobacz [/merge (łączenie sekcji)](/cpp/build/reference/merge-combine-sections).
 
 - **MidlCommandFile**
 
-  Opcjonalnie **ciąg** parametru.
+  Opcjonalny parametr **ciągu** .
 
   Określ nazwę pliku, który zawiera opcje wiersza polecenia MIDL.
 
-  Aby uzyskać więcej informacji, zobacz [/MIDL (Opcje wiersza polecenia MIDL określić)](/cpp/build/reference/midl-specify-midl-command-line-options).
+  Aby uzyskać więcej informacji, zobacz [/MIDL (Określ opcje wiersza polecenia MIDL)](/cpp/build/reference/midl-specify-midl-command-line-options).
 
 - **MinimumRequiredVersion**
 
-  Opcjonalnie **ciąg** parametru.
+  Opcjonalny parametr **ciągu** .
 
   Określa minimalną wymaganą wersję podsystemu. Argumenty są liczbami dziesiętnymi z zakresu od 0 do 65535.
 
 - **ModuleDefinitionFile**
 
-  Opcjonalnie **ciąg** parametru.
+  Opcjonalny parametr **ciągu** .
 
-  Określa nazwę [plik definicji modułu](/cpp/build/reference/module-definition-dot-def-files).
+  Określa nazwę [pliku definicji modułu](/cpp/build/reference/module-definition-dot-def-files).
 
   Aby uzyskać więcej informacji, zobacz [/DEF (Określ plik definicji modułu)](/cpp/build/reference/def-specify-module-definition-file).
 
 - **MSDOSStubFileName**
 
-  Opcjonalnie **ciąg** parametru.
+  Opcjonalny parametr **ciągu** .
 
-  Dołącza określony program szczątkowy systemu MS-DOS do programu systemu Win32.
+  Dołącza określony program zastępczy systemu MS-DOS do programu systemu Win32.
 
-  Aby uzyskać więcej informacji, zobacz [/stub (nazwa pliku klasy zastępczej MS-DOS)](/cpp/build/reference/stub-ms-dos-stub-file-name).
+  Aby uzyskać więcej informacji, zobacz [/stub (nazwa pliku szczątkowego systemu MS-DOS)](/cpp/build/reference/stub-ms-dos-stub-file-name).
 
-- **NoEntryPoint**
+- **Noentrypoint**
 
-  Opcjonalnie **logiczna** parametru.
+  Opcjonalny parametr **logiczny** .
 
-  Jeśli `true`, określa bibliotekę DLL tylko do zasobów.
+  Jeśli `true`, określa plik DLL z tylko zasobami.
 
-  Aby uzyskać więcej informacji, zobacz [/noentry (Brak punktu wejścia)](/cpp/build/reference/noentry-no-entry-point).
+  Aby uzyskać więcej informacji, zobacz [/NOENTRY (brak punktu wejścia)](/cpp/build/reference/noentry-no-entry-point).
 
 - **ObjectFiles**
 
-  Niejawne **String []** parametru.
+  Parametr niejawnego **ciągu []** .
 
   Określa pliki obiektów, które są połączone.
 
 - **OptimizeReferences**
 
-  Opcjonalnie **logiczna** parametru.
+  Opcjonalny parametr **logiczny** .
 
-  Jeśli `true`, eliminuje funkcje i/lub dane, które nigdy nie są wywoływane.
+  Jeśli `true`, eliminuje funkcje i/lub dane, które nigdy nie są przywoływane.
 
-  Aby uzyskać więcej informacji, zobacz `REF` argument [od (optymalizacje)](/cpp/build/reference/opt-optimizations).
+  Aby uzyskać więcej informacji, zobacz argument `REF` w [/opt (optymalizacje)](/cpp/build/reference/opt-optimizations).
 
-- **OutputFile**
+- **Plik_wyjściowy**
 
-  Opcjonalnie **ciąg** parametru.
+  Opcjonalny parametr **ciągu** .
 
-  Przesłania domyślną nazwę i lokalizację programu tworzonego przez konsolidatora.
+  Zastępuje domyślną nazwę i lokalizację programu tworzonego przez konsolidatora.
 
-  Aby uzyskać więcej informacji, zobacz [/OUT (nazwa pliku wyjściowego)](/cpp/build/reference/out-output-file-name).
+  Aby uzyskać więcej informacji, zobacz [/out (nazwa pliku wyjściowego)](/cpp/build/reference/out-output-file-name).
 
 - **PerUserRedirection**
 
-  Opcjonalnie **logiczna** parametru.
+  Opcjonalny parametr **logiczny** .
 
-  Jeśli `true` i włączono rejestrowanie wyników rejestru wymusza zapisuje **HKEY_CLASSES_ROOT** do **HKEY_CURRENT_USER**.
+  Jeśli `true` i rejestrowanie danych wyjściowych jest włączone, wymusza przekierowanie zapisów rejestru do **klucza HKEY_CLASSES_ROOT** do **HKEY_CURRENT_USER**.
 
 - **PreprocessOutput**
 
-  Opcjonalnie `ITaskItem[]` parametru.
+  Opcjonalny parametr `ITaskItem[]`.
 
-  Określa tablicę elementów dane wyjściowe preprocesora, które może być używany i wyemitowane przez zadania.
+  Definiuje tablicę elementów wyjściowych preprocesora, które mogą być używane i emitowane przez zadania.
 
 - **PreventDllBinding**
 
-  Opcjonalnie **logiczna** parametru.
+  Opcjonalny parametr **logiczny** .
 
-  Jeśli `true`, wskazuje *Bind.exe* która obraz połączony nie ma zostać powiązana.
+  Jeśli `true`, wskazuje, że program *bind. exe* nie powinien być powiązany z połączonym obrazem.
 
-  Aby uzyskać więcej informacji, zobacz [/ALLOWBIND (Zapobiegaj powiązaniu biblioteki DLL)](/cpp/build/reference/allowbind-prevent-dll-binding).
+  Aby uzyskać więcej informacji, zobacz [/ALLOWBIND (Zapobiegaj powiązaniu biblioteki dll)](/cpp/build/reference/allowbind-prevent-dll-binding).
 
-- **Profil**
+- **Profilu**
 
-  Opcjonalnie **logiczna** parametru.
+  Opcjonalny parametr **logiczny** .
 
-  Jeśli `true`, tworzy plik wyjściowy, który może być używany z **narzędzia do oceny wydajności** profilera.
+  Jeśli `true`, tworzy plik wyjściowy, który może być używany z profilerem **narzędzi do oceny wydajności** .
 
-  Aby uzyskać więcej informacji, zobacz [/profile (profiler narzędzi wydajności)](/cpp/build/reference/profile-performance-tools-profiler).
+  Aby uzyskać więcej informacji, zobacz [/Profile (Profiler narzędzi do oceny wydajności)](/cpp/build/reference/profile-performance-tools-profiler).
 
 - **ProfileGuidedDatabase**
 
-  Opcjonalnie **ciąg** parametru.
+  Opcjonalny parametr **ciągu** .
 
-  Określa nazwę *.pgd* pliku, który będzie używany do przechowywania informacji na temat uruchomiony program
+  Określa nazwę pliku *. PGD* , który będzie używany do przechowywania informacji o działającym programie
 
-  Aby uzyskać więcej informacji, zobacz [/PGD (Określ bazę danych dla optymalizacji sterowanej profilem)](/cpp/build/reference/pgd-specify-database-for-profile-guided-optimizations).
+  Aby uzyskać więcej informacji, zobacz [/PGD (Określ bazę danych dla optymalizacji](/cpp/build/reference/pgd-specify-database-for-profile-guided-optimizations)profilowanej).
 
 - **ProgramDatabaseFile**
 
-  Opcjonalnie **ciąg** parametru.
+  Opcjonalny parametr **ciągu** .
 
-  Określa nazwę bazy danych programu (PDB) tworzonego przez konsolidatora.
+  Określa nazwę bazy danych programu (PDB), którą tworzy konsolidator.
 
-  Aby uzyskać więcej informacji, zobacz [/PDB (Użyj bazy danych programu)](/cpp/build/reference/pdb-use-program-database).
+  Aby uzyskać więcej informacji, zobacz [/PDB (Korzystanie z bazy danych programu)](/cpp/build/reference/pdb-use-program-database).
 
 - **RandomizedBaseAddress**
 
-  Opcjonalnie **logiczna** parametru.
+  Opcjonalny parametr **logiczny** .
 
-  Jeśli `true`, generuje obraz wykonywalny, który może być losowo przebazowanych w czasie ładowania przy użyciu *randomizacji układu przestrzeni adresów* (ASLR) funkcja systemu Windows.
+  Jeśli `true`, program generuje obraz wykonywalny, który może być losowo zmieniany w czasie ładowania przy użyciu funkcji *losowego układu przestrzeni adresowej* (ASLR) systemu Windows.
 
-  Aby uzyskać więcej informacji, zobacz [opcja/DynamicBase (randomizacji układu przestrzeni adresowej Użyj)](/cpp/build/reference/dynamicbase-use-address-space-layout-randomization).
+  Aby uzyskać więcej informacji, zobacz [/DYNAMICBASE (Użyj losowości układu przestrzeni adresowej)](/cpp/build/reference/dynamicbase-use-address-space-layout-randomization).
 
 - **RegisterOutput**
 
-  Opcjonalnie **logiczna** parametru.
+  Opcjonalny parametr **logiczny** .
 
-  Jeśli `true`, rejestruje główny wynik tej kompilacji.
+  Jeśli `true`, rejestruje podstawowe dane wyjściowe tej kompilacji.
 
-- **SectionAlignment**
+- **Wyrównanie sekcji**
 
-  Opcjonalnie **całkowitą** parametru.
+  Opcjonalny parametr **liczby całkowitej** .
 
-  Określa wyrównanie każdej sekcji w liniowej przestrzeni adresowej programu. Wartość tego parametru jest jednostka liczba bajtów i jest potęgą liczby dwa.
+  Określa wyrównanie każdej sekcji w liniowej przestrzeni adresowej programu. Wartość parametru jest liczbą jednostek bajtów i jest potęgą liczby 2.
 
   Aby uzyskać więcej informacji, zobacz [/align (wyrównanie sekcji)](/cpp/build/reference/align-section-alignment).
 
-- **SetChecksum**
+- **SetCheckSum —**
 
-  Opcjonalnie **logiczna** parametru.
+  Opcjonalny parametr **logiczny** .
 
-  Jeśli `true`, ustawia sumę kontrolną w nagłówku *.exe* pliku.
+  Jeśli `true`, ustawia sumę kontrolną w nagłówku pliku *. exe* .
 
   Aby uzyskać więcej informacji, zobacz [/Release (Ustaw sumę kontrolną)](/cpp/build/reference/release-set-the-checksum).
 
 - **ShowProgress**
 
-  Opcjonalnie **ciąg** parametru.
+  Opcjonalny parametr **ciągu** .
 
-  Określa poziom szczegółowości raportów postępu dla operacji łączenia.
+  Określa szczegółowość raportów postępu dla operacji łączenia.
 
   Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
 
-  - **NotSet** -  *\<none>*
+  - **NotSet**  -  *\<none >*
 
-  - **LinkVerbose** -  **/VERBOSE**
+  - **LinkVerbose**  -  **/verbose**
 
-  - **LinkVerboseLib** -  **/VERBOSE:Lib**
+  - **LinkVerboseLib**  -  **/verbose: lib**
 
-  - **LinkVerboseICF** -  **/VERBOSE:ICF**
+  - **LinkVerboseICF**  -  **/verbose: ICF**
 
-  - **LinkVerboseREF** -  **/VERBOSE:REF**
+  - **LinkVerboseREF**  -  **/verbose: ref**
 
-  - **LinkVerboseSAFESEH** -  **/VERBOSE:SAFESEH**
+  - **LinkVerboseSAFESEH**  -  **/verbose: SAFESEH**
 
-  - **LinkVerboseCLR** -  **/VERBOSE:CLR**
+  - **LinkVerboseCLR**  -  **/verbose: CLR**
 
-  Aby uzyskać więcej informacji, zobacz [opcjami/verbose (Drukuj komunikaty o postępie)](/cpp/build/reference/verbose-print-progress-messages).
+  Aby uzyskać więcej informacji, zobacz [/verbose (drukowanie komunikatów o postępie)](/cpp/build/reference/verbose-print-progress-messages).
 
-- **Źródła**
+- **Źródeł**
 
-  Wymagane `ITaskItem[]` parametru.
+  Wymagany `ITaskItem[]` parametr.
 
-  Określa tablicę elementów pliku źródłowego programu MSBuild, które mogą być używane i wyemitowane przez zadania.
+  Definiuje tablicę elementów plików źródłowych MSBuild, które mogą być używane i emitowane przez zadania.
 
 - **SpecifySectionAttributes**
 
-  Opcjonalnie **ciąg** parametru.
+  Opcjonalny parametr **ciągu** .
 
-  Określa atrybuty sekcji. Zastępuje atrybuty, które zostały określone podczas *.obj* pliku sekcji został skompilowany.
+  Określa atrybuty sekcji. Zastępuje to atrybuty, które zostały ustawione, gdy plik *. obj* sekcji został skompilowany.
 
   Aby uzyskać więcej informacji, zobacz [/Section (Określ atrybuty sekcji)](/cpp/build/reference/section-specify-section-attributes).
 
 - **StackCommitSize**
 
-  Opcjonalnie **ciąg** parametru.
+  Opcjonalny parametr **ciągu** .
 
-  Określa ilość pamięci fizycznej w każdej alokacji, gdy jest przydzielany dodatkowej pamięci.
+  Określa ilość pamięci fizycznej w każdej alokacji po przydzieleniu dodatkowej pamięci.
 
-  Aby uzyskać więcej informacji, zobacz `commit` argument [/STACK (twórz stos z alokacji)](/cpp/build/reference/stack-stack-allocations).
+  Aby uzyskać więcej informacji, zobacz argument `commit` [/Stack (alokacje stosu)](/cpp/build/reference/stack-stack-allocations).
 
 - **StackReserveSize**
 
-  Opcjonalnie **ciąg** parametru.
+  Opcjonalny parametr **ciągu** .
 
   Określa całkowity rozmiar alokacji stosu w pamięci wirtualnej.
 
-  Aby uzyskać więcej informacji, zobacz `reserve` argument [/STACK (twórz stos z alokacji)](/cpp/build/reference/stack-stack-allocations).
+  Aby uzyskać więcej informacji, zobacz argument `reserve` [/Stack (alokacje stosu)](/cpp/build/reference/stack-stack-allocations).
 
 - **StripPrivateSymbols**
 
-  Opcjonalnie **ciąg** parametru.
+  Opcjonalny parametr **ciągu** .
 
-  Tworzy drugi plik bazy danych (PDB) programu, które pomija symbole, których nie chcesz dystrybuować swoim klientom. Określ nazwę drugiego pliku PDB.
+  Tworzy drugi plik bazy danych programu (PDB), który pomija symbole, które nie mają być rozpowszechniane do klientów. Określ nazwę drugiego pliku PDB.
 
-  Aby uzyskać więcej informacji, zobacz [/pdbstripped (Usuń symboli prywatnych)](/cpp/build/reference/pdbstripped-strip-private-symbols).
+  Aby uzyskać więcej informacji, zobacz [/PDBSTRIPPED (symbole prywatne)](/cpp/build/reference/pdbstripped-strip-private-symbols).
 
-- **SubSystem**
+- **Wykonawc**
 
-  Opcjonalnie **ciąg** parametru.
+  Opcjonalny parametr **ciągu** .
 
   Określa środowisko dla pliku wykonywalnego.
 
   Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
 
-  - **NotSet** -  *\<none>*
+  - **NotSet**  -  *\<none >*
 
-  - **Konsola** - **opcji**
+  - **Konsola**  -  **/SUBSYSTEM: Konsola**
 
-  - **Windows** -  **/SUBSYSTEM:WINDOWS**
+  - **Windows**  -  **/SUBSYSTEM: Windows**
 
-  - **Native** -  **/SUBSYSTEM:NATIVE**
+  - **Natywne**  -  **/SUBSYSTEM: natywne**
 
-  - **Aplikacja EFI** -  **/SUBSYSTEM:EFI_APPLICATION**
+  - **Aplikacja EFI**  -  **/SUBSYSTEM: EFI_APPLICATION**
 
-  - **Sterownik usługi rozruchu interfejsu EFI** -  **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**
+  - **Sterownik usługi rozruchu EFI**  -  **/SUBSYSTEM: EFI_BOOT_SERVICE_DRIVER**
 
-  - **EFI ROM** -  **/SUBSYSTEM:EFI_ROM**
+  - **Interfejs EFI ROM**  -  **/SUBSYSTEM: EFI_ROM**
 
-  - **EFI Runtime** -  **/SUBSYSTEM:EFI_RUNTIME_DRIVER**
+  - **Środowisko uruchomieniowe EFI**  -  **/SUBSYSTEM: EFI_RUNTIME_DRIVER**
 
-  - **WindowsCE** -  **/SUBSYSTEM:WINDOWSCE**
+  - **WindowsCE**  -  **/SUBSYSTEM: WindowsCE**
 
-  - **POSIX** -  **/SUBSYSTEM:POSIX**
+  - **Posix**  -  **/SUBSYSTEM: POSIX**
 
-  Aby uzyskać więcej informacji, zobacz [/Subsystem (Określ podsystem)](/cpp/build/reference/subsystem-specify-subsystem).
+  Aby uzyskać więcej informacji, zobacz [/subsystem (Określanie podsystemu)](/cpp/build/reference/subsystem-specify-subsystem).
 
 - **SupportNobindOfDelayLoadedDLL**
 
-  Opcjonalnie **logiczna** parametru.
+  Opcjonalny parametr **logiczny** .
 
-  Jeśli `true`, informuje konsolidator, nie można dołączyć powiązania tabeli adresów importowania (IAT) do obrazu końcowego.
+  Jeśli `true`, nakazuje konsolidatorowi nieuwzględnienie tabeli adresów importu (IAT) w końcowym obrazie.
 
-  Aby uzyskać więcej informacji, zobacz `NOBIND` argument [przełącznik/DELAY (ustawienia opóźnienia importowania ładowania)](/cpp/build/reference/delay-delay-load-import-settings).
+  Aby uzyskać więcej informacji, zobacz argument `NOBIND` [/Delay (ustawienia opóźnienia importowania ładowania)](/cpp/build/reference/delay-delay-load-import-settings).
 
 - **SupportUnloadOfDelayLoadedDLL**
 
-  Opcjonalnie **logiczna** parametru.
+  Opcjonalny parametr **logiczny** .
 
-  Jeśli `true`, informuje funkcję pomocnika obciążenia opóźnienia, aby wspierała jawne zwalnianie biblioteki DLL.
+  Jeśli `true`, nakazuje funkcji pomocnika ładowania opóźnień, aby obsługiwała jawne wyładowywanie biblioteki DLL.
 
-  Aby uzyskać więcej informacji, zobacz `UNLOAD` argument [przełącznik/DELAY (ustawienia opóźnienia importowania ładowania)](/cpp/build/reference/delay-delay-load-import-settings).
+  Aby uzyskać więcej informacji, zobacz argument `UNLOAD` [/Delay (ustawienia opóźnienia importowania ładowania)](/cpp/build/reference/delay-delay-load-import-settings).
 
 - **SuppressStartupBanner**
 
-  Opcjonalnie **logiczna** parametru.
+  Opcjonalny parametr **logiczny** .
 
-  Jeśli `true`, uniemożliwia wyświetlanie wiadomości praw autorskich i wersji, podczas uruchamiania zadania.
+  Jeśli `true`, program zapobiega wyświetlaniu komunikatu o prawach autorskich i numerze wersji, gdy zadanie zostanie uruchomione.
 
-  Aby uzyskać więcej informacji, zobacz [/nologo (Pomijaj transparent startowy) (konsolidator)](/cpp/build/reference/nologo-suppress-startup-banner-linker).
+  Aby uzyskać więcej informacji, zobacz [/nologo (Pomijanie transparentu startowego) (Konsolidator)](/cpp/build/reference/nologo-suppress-startup-banner-linker).
 
 - **SwapRunFromCD**
 
-  Opcjonalnie **logiczna** parametru.
+  Opcjonalny parametr **logiczny** .
 
-  Jeśli `true`, informuje system operacyjny, aby najpierw skopiować konsolidatora dane wyjściowe do pliku wymiany, a następnie uruchomił obraz stamtąd.
+  W przypadku `true` program instruuje system operacyjny, aby najpierw skopiował dane wyjściowe konsolidatora do pliku wymiany, a następnie uruchomił obraz stamtąd.
 
-  Aby uzyskać więcej informacji, zobacz `CD` argument [swaprun (Załaduj dane wyjściowe konsolidatora do pliku swap)](/cpp/build/reference/swaprun-load-linker-output-to-swap-file). Zobacz też **SwapRunFromNET** parametru.
+  Aby uzyskać więcej informacji, zobacz argument `CD` [/SWAPRUN (ładowanie danych wyjściowych konsolidatora do pliku wymiany)](/cpp/build/reference/swaprun-load-linker-output-to-swap-file). Zobacz również parametr **SwapRunFromNET** .
 
 - **SwapRunFromNET**
 
-  Opcjonalnie **logiczna** parametru.
+  Opcjonalny parametr **logiczny** .
 
-  Jeśli `true`, informuje system operacyjny, aby najpierw skopiować konsolidatora dane wyjściowe do pliku wymiany, a następnie uruchomił obraz stamtąd.
+  W przypadku `true` program instruuje system operacyjny, aby najpierw skopiował dane wyjściowe konsolidatora do pliku wymiany, a następnie uruchomił obraz stamtąd.
 
-  Aby uzyskać więcej informacji, zobacz `NET` argument [swaprun (Załaduj dane wyjściowe konsolidatora do pliku swap)](/cpp/build/reference/swaprun-load-linker-output-to-swap-file). Zobacz też **SwapRunFromCD** parametru w tej tabeli.
+  Aby uzyskać więcej informacji, zobacz argument `NET` [/SWAPRUN (ładowanie danych wyjściowych konsolidatora do pliku wymiany)](/cpp/build/reference/swaprun-load-linker-output-to-swap-file). Zobacz również parametr **SwapRunFromCD** w tej tabeli.
 
 - **TargetMachine**
 
-  Opcjonalnie **ciąg** parametru.
+  Opcjonalny parametr **ciągu** .
 
-  Określa platformę docelową dla tego programu lub DLL.
+  Określa platformę docelową dla programu lub biblioteki DLL.
 
   Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
 
-  - **NotSet** -  *\<none>*
+  - **NotSet**  -  *\<none >*
 
-  - **MachineARM** -  **/MACHINE:ARM**
+  - **MachineARM**  -  **/Machine: ARM**
 
-  - **MachineEBC** -  **/MACHINE:EBC**
+  - **MachineEBC**  -  **/Machine: EBC**
 
-  - **MachineIA64** -  **/MACHINE:IA64**
+  - **MachineIA64**  -  **/Machine: IA64**
 
-  - **MachineMIPS** -  **/MACHINE:MIPS**
+  - **MachineMIPS**  -  **/Machine: MIPS**
 
-  - **MachineMIPS16** -  **/MACHINE:MIPS16**
+  - **MachineMIPS16**  -  **/Machine: MIPS16**
 
-  - **MachineMIPSFPU** -  **/MACHINE:MIPSFPU**
+  - **MachineMIPSFPU**  -  **/Machine: MIPSFPU**
 
-  - **MachineMIPSFPU16** -  **/MACHINE:MIPSFPU16**
+  - **MachineMIPSFPU16**  -  **/Machine: MIPSFPU16**
 
-  - **MachineSH4** -  **/MACHINE:SH4**
+  - **MachineSH4**  -  **/Machine: sh4**
 
-  - **MachineTHUMB** -  **/MACHINE:THUMB**
+  - **MachineTHUMB**  -  **/Machine: kciuk**
 
-  - **MachineX64** -  **/MACHINE:X64**
+  - **MachineX64**  -  **/Machine: x64**
 
-  - **MachineX86** -  **/MACHINE:X86**
+  - **MachineX86**  -  **/Machine: x86**
 
   Aby uzyskać więcej informacji, zobacz [/Machine (Określ platformę docelową)](/cpp/build/reference/machine-specify-target-platform).
 
 - **TerminalServerAware**
 
-  Opcjonalnie **logiczna** parametru.
+  Opcjonalny parametr **logiczny** .
 
-  Jeśli `true`, ustawia flagę w polu IMAGE_OPTIONAL_HEADER dllcharacteristics w opcjonalnym nagłówku obrazu programu. Gdy ta flaga jest ustawiona, serwera terminali nie wprowadzi pewnych zmian aplikacji.
+  Jeśli `true`, ustawia flagę w polu IMAGE_OPTIONAL_HEADER DllCharacteristics w opcjonalnym nagłówku obrazu programu. Po ustawieniu tej flagi serwer terminali nie wprowadza pewnych zmian do aplikacji.
 
-  Aby uzyskać więcej informacji, zobacz [/tsaware (Utwórz serwer terminali pamiętać aplikacji)](/cpp/build/reference/tsaware-create-terminal-server-aware-application).
+  Aby uzyskać więcej informacji, zobacz [/TSAWARE (Tworzenie aplikacji z obsługą serwera terminali)](/cpp/build/reference/tsaware-create-terminal-server-aware-application).
 
-- **TrackerLogDirectory**
+- **Katalog trackerlogdirectory**
 
-  Opcjonalnie **ciąg** parametru.
+  Opcjonalny parametr **ciągu** .
 
   Określa katalog dziennika śledzenia.
 
 - **TreatLinkerWarningAsErrors**
 
-  Opcjonalnie **logiczna** parametru.
+  Opcjonalny parametr **logiczny** .
 
-  Jeśli `true`, powoduje, że plik wyjściowy nie zostanie wygenerowany, jeśli konsolidator wygeneruje ostrzeżenie.
+  Jeśli `true`, powoduje, że plik wyjściowy nie zostanie wygenerowany, jeśli konsolidator generuje ostrzeżenie.
 
   Aby uzyskać więcej informacji, zobacz [/WX (Traktuj ostrzeżenia konsolidatora jako błędy)](/cpp/build/reference/wx-treat-linker-warnings-as-errors).
 
 - **TurnOffAssemblyGeneration**
 
-  Opcjonalnie **logiczna** parametru.
+  Opcjonalny parametr **logiczny** .
 
-  Jeśli `true`, tworzy obraz dla bieżącego pliku wyjściowego bez zestawu .NET Framework.
+  Jeśli `true`, program tworzy obraz dla bieżącego pliku wyjściowego bez zestawu .NET Framework.
 
-  Aby uzyskać więcej informacji, zobacz [/noassembly (Utwórz moduł MSIL)](/cpp/build/reference/noassembly-create-a-msil-module).
+  Aby uzyskać więcej informacji, zobacz [/NOASSEMBLY (Create a module MSIL)](/cpp/build/reference/noassembly-create-a-msil-module).
 
 - **TypeLibraryFile**
 
-  Opcjonalnie **ciąg** parametru.
+  Opcjonalny parametr **ciągu** .
 
-  Określa nazwę pliku i rozszerzenie nazwy pliku *.tlb* pliku. Określ nazwę pliku lub ścieżkę i nazwę pliku.
+  Określa nazwę pliku i rozszerzenie nazwy pliku *. tlb* . Określ nazwę pliku lub ścieżkę i nazwę pliku.
 
-  Aby uzyskać więcej informacji, zobacz [/tlbout (Nazywanie pliku .tlb)](/cpp/build/reference/tlbout-name-dot-tlb-file).
+  Aby uzyskać więcej informacji, zobacz [/TLBOUT (nazwa pliku. tlb)](/cpp/build/reference/tlbout-name-dot-tlb-file).
 
 - **TypeLibraryResourceID**
 
-  Opcjonalnie **całkowitą** parametru.
+  Opcjonalny parametr **liczby całkowitej** .
 
-  Określa wartość określone przez użytkownika dla biblioteki typów, utworzone przez konsolidator. Określ wartość z zakresu od 1 do 65 535.
+  Określa wartość określoną przez użytkownika dla biblioteki typów utworzonej przez konsolidator. Określ wartość od 1 do 65535.
 
-  Aby uzyskać więcej informacji, zobacz [/TLBID (Określ identyfikator zasobu dla TypeLib)](/cpp/build/reference/tlbid-specify-resource-id-for-typelib).
+  Aby uzyskać więcej informacji, zobacz [/TLBID (Określ identyfikator zasobu dla biblioteki typów)](/cpp/build/reference/tlbid-specify-resource-id-for-typelib).
 
 - **UACExecutionLevel**
 
-  Opcjonalnie **ciąg** parametru.
+  Opcjonalny parametr **ciągu** .
 
-  Określa wymagany poziom wykonywania dla aplikacji, gdy jest uruchamiana przy użyciu kontroli konta użytkownika.
+  Określa żądany poziom wykonywania aplikacji, gdy jest uruchamiany w ramach kontroli konta użytkownika.
 
   Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
 
-  - **AsInvoker** - `level='asInvoker'`
+  - **Jako źródło**  -  `level='asInvoker'`
 
-  - **HighestAvailable** - `level='highestAvailable'`
+  - **Najwyższe dostępne**  -  `level='highestAvailable'`
 
-  - **RequireAdministrator** - `level='requireAdministrator'`
+  - **Wymaga administratora**  -  `level='requireAdministrator'`
 
-  Aby uzyskać więcej informacji, zobacz `level` argument [/MANIFESTUAC (osadza informacje UAC w manifeście)](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest).
+  Aby uzyskać więcej informacji, zobacz argument `level` [/MANIFESTUAC (osadza informacje funkcji kontroli konta użytkownika w manifeście)](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest).
 
 - **UACUIAccess**
 
-  Opcjonalnie **logiczna** parametru.
+  Opcjonalny parametr **logiczny** .
 
-  Jeśli `true`, aplikacja pomija poziomów ochrony interfejsu użytkownika i dyski danych wejściowych do wyższych uprawnień okien na pulpicie; w przeciwnym razie `false`.
+  Jeśli `true`, aplikacja pomija poziomy ochrony interfejsu użytkownika i dyski wejściowe w oknach wyższych uprawnień na pulpicie; w przeciwnym razie `false`.
 
-  Aby uzyskać więcej informacji, zobacz `uiAccess` argument [/MANIFESTUAC (osadza informacje UAC w manifeście)](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest).
+  Aby uzyskać więcej informacji, zobacz argument `uiAccess` [/MANIFESTUAC (osadza informacje funkcji kontroli konta użytkownika w manifeście)](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest).
 
 - **UseLibraryDependencyInputs**
 
-  Opcjonalnie **logiczna** parametru.
+  Opcjonalny parametr **logiczny** .
 
-  Jeśli `true`i wejścia do narzędzia bibliotekarza są używane zamiast pliku biblioteki samego w sobie podczas produktów wyjściowych biblioteki zależności projektów są dołączane.
+  Jeśli `true`, dane wejściowe narzędzia bibliotekarza są używane zamiast pliku biblioteki, gdy dane wyjściowe biblioteki są połączone w programie.
 
 - **Wersja**
 
-  Opcjonalnie **ciąg** parametru.
+  Opcjonalny parametr **ciągu** .
 
-  Umieszczenie numeru wersji w nagłówku *.exe* lub *.dll* pliku. Określ "`major[.minor]`". `major` i `minor` argumenty są liczbami dziesiętnymi z zakresu od 0 do 65 535.
+  Umieść numer wersji w nagłówku pliku *. exe* lub *. dll* . Określ wartość "`major[.minor]`". Argumenty `major` i `minor` są liczbami dziesiętnymi od 0 do 65535.
 
   Aby uzyskać więcej informacji, zobacz [/Version (informacje o wersji)](/cpp/build/reference/version-version-information).
 

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9c2b06e8d89405b38afe2b740ce860a78bc46cc
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.openlocfilehash: 61905c0c6c40d893cc8723b711d67690133a7155
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68661806"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738615"
 ---
 # <a name="namesearchoptions"></a>NameSearchOptions
 Określa opcje wyszukiwania dla nazw symboli i plików.
@@ -43,17 +43,17 @@ enum NameSearchOptions {
 ```
 
 ## <a name="elements"></a>Elementy
-`nsNone`Nie określono żadnych opcji.
+`nsNone` nie określono żadnych opcji.
 
-`nsfCaseSensitive`Stosuje dopasowanie nazw z uwzględnieniem wielkości liter.
+`nsfCaseSensitive` stosuje dopasowanie nazw z uwzględnieniem wielkości liter.
 
-`nsfCaseInsensitive`Stosuje dopasowanie nazw bez uwzględniania wielkości liter.
+`nsfCaseInsensitive` stosuje dopasowanie nazw bez uwzględniania wielkości liter.
 
-`nsfFNameExt`Traktuje nazwy jako ścieżki i stosuje dopasowanie nazwy pliku. ext.
+`nsfFNameExt` traktuje nazwy jako ścieżki i stosuje dopasowanie nazwy pliku. ext.
 
-`nsfRegularExpression`Stosuje dopasowanie nazwy z uwzględnieniem wielkości liter przy użyciu gwiazdek (*) i znaków zapytania (?) jako symboli wieloznacznych. (Inne typowe znaki wyrażenia regularnego nie są obsługiwane).
+`nsfRegularExpression` stosuje dopasowanie nazw z uwzględnieniem wielkości liter przy użyciu gwiazdek (*) i znaków zapytania (?) jako symboli wieloznacznych. (Inne typowe znaki wyrażenia regularnego nie są obsługiwane).
 
-`nsfUndecoratedName`Dotyczy tylko symboli, które mają nazwy niedekoracyjne i dekoracyjne.
+`nsfUndecoratedName` ma zastosowanie tylko do symboli, które mają nazwy niedekoracyjne i dekoracyjne.
 
 ## <a name="remarks"></a>Uwagi
 Wartości z tego wyliczenia są przesyłane do następujących metod:
@@ -67,7 +67,7 @@ Wartości z tego wyliczenia są przesyłane do następujących metod:
 ## <a name="requirements"></a>Wymagania
 Nagłówek: dia2. h
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wyliczenia i struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)
 - [IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)

@@ -1,5 +1,5 @@
 ---
-title: Idiasession::findlinesbyaddr — | Dokumentacja firmy Microsoft
+title: 'IDiaSession:: findLinesByAddr | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 730793d2b9f2e02d7e5665777f8df4d245b0ddf6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 328589df0e662ca27db634017005344d44491275
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62827698"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742110"
 ---
 # <a name="idiasessionfindlinesbyaddr"></a>IDiaSession::findLinesByAddr
-Pobiera wierszy w określonej compiland —, które zawierają określony adres.
+Pobiera wiersze w określonym jednostka kompilacji, które zawierają określony adres.
 
 ## <a name="syntax"></a>Składnia
 
@@ -36,25 +36,25 @@ HRESULT findLinesByAddr (
 #### <a name="parameters"></a>Parametry
 `seg`
 
-[in] Określa składnik sekcji określonego adresu.
+podczas Określa składnik sekcji określonego adresu.
 
 `offset`
 
-[in] Określa przesunięcie składnik określonego adresu.
+podczas Określa składnik przesunięcia określonego adresu.
 
 `length`
 
-[in] Określa liczbę bajtów zakres adresów, aby pokrywał się z tym zapytaniem.
+podczas Określa liczbę bajtów zakresu adresów, które mają być pokryte dla tego zapytania.
 
 `ppResult`
 
-[out] Zwraca [idiaenumlinenumbers —](../../debugger/debug-interface-access/idiaenumlinenumbers.md) obiektu, który zawiera listę wszystkich linii numery określające określony zakres adresów.
+określoną Zwraca obiekt [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) , który zawiera listę wszystkich numerów wierszy, które obejmują określony zakres adresów.
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="example"></a>Przykład
-W tym przykładzie pokazano funkcję, która uzyskuje wszystkie numery wierszy zawartych w funkcji za pomocą funkcji adres i długość.
+Ten przykład pokazuje funkcję, która uzyskuje wszystkie numery wierszy zawarte w funkcji przy użyciu adresu i długości funkcji.
 
 ```C++
 IDiaEnumLineNumbers* GetLineNumbersByAddr(IDiaSymbol *pFunc,
@@ -75,7 +75,7 @@ IDiaEnumLineNumbers* GetLineNumbersByAddr(IDiaSymbol *pFunc,
 }
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaSession::findLinesByVA](../../debugger/debug-interface-access/idiasession-findlinesbyva.md)

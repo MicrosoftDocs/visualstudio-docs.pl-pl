@@ -14,12 +14,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 206f97dcb264f85a15a9293e55a3f2ccc6173aa5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: abe2cbd18e87c7045d44e597e3a5bb93a64a1c35
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652615"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747961"
 ---
 # <a name="create-solutions-and-projects"></a>Tworzenie rozwiązań i projektów
 
@@ -53,7 +53,7 @@ Jeśli masz kolekcję plików źródłowych kodu, możesz łatwo dodać je do pr
 1. W Kreatorze przejdź do lokalizacji plików, a następnie wprowadź nazwę nowego projektu w polu **Nazwa** . Gdy wszystko będzie gotowe, wybierz przycisk **Zakończ** .
 
 > [!NOTE]
-> Ta opcja działa najlepiej dla stosunkowo prostej kolekcji plików. Obecnie obsługiwane są tylko C++typy wizualizacji, Apache Cordova, C# Visual Basic i projektu.
+> Ta opcja działa najlepiej dla stosunkowo prostej kolekcji plików. Obecnie obsługiwane są C++tylko typy Apache Cordova, Visual Basic i C# projektu.
 
 ## <a name="add-files-to-a-solution"></a>Dodawanie plików do rozwiązania
 

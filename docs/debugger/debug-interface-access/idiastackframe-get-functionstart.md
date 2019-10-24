@@ -1,5 +1,5 @@
 ---
-title: IDiaStackFrame::get_functionStart | Dokumentacja firmy Microsoft
+title: 'IDiaStackFrame:: get_functionStart | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56a1c700b2a98b51f846e5f1136ef45c67fd5f99
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b9900b6301388479fc71f1b257113974056aeb3b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832079"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741724"
 ---
-# <a name="idiastackframegetfunctionstart"></a>IDiaStackFrame::get_functionStart
+# <a name="idiastackframeget_functionstart"></a>IDiaStackFrame::get_functionStart
 Pobiera flagę wskazującą, czy blok zawiera punkt wejścia funkcji.
 
 ## <a name="syntax"></a>Składnia
@@ -33,10 +33,10 @@ HRESULT get_functionStart ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca `TRUE` Jeśli ramka stosu nie zawiera punktu wejścia funkcji; w przeciwnym razie zwraca `FALSE`.
+określoną Zwraca `TRUE`, jeśli Ramka stosu zawiera punkt wejścia funkcji. w przeciwnym razie zwraca `FALSE`.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`. Zwraca `S_FALSE`, jeśli właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

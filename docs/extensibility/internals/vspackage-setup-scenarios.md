@@ -1,5 +1,5 @@
 ---
-title: Scenariusze instalacji pakietu VSPackage | Dokumentacja firmy Microsoft
+title: Scenariusze instalacji pakietu VSPackage | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,74 +9,74 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 433819e269e546b224dd34cf47b2f127ea9813aa
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: eddfc0aa9b8f5b3a169ce87b31a2221983f57aaa
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66332711"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72722186"
 ---
 # <a name="vspackage-setup-scenarios"></a>Scenariusze instalacji pakietu VSPackage
 
-Należy zaprojektować swój Instalatora pakietu VSPackage, aby zapewnić elastyczność. Na przykład może być konieczne w przyszłości wersji poprawki zabezpieczeń lub mogą ulec zmianie strategii biznesowej, która wymaga dokładnego side-by-side obsługą kontroli wersji.
+Ważne jest zaprojektowanie Instalatora pakietu VSPackage w celu zapewnienia elastyczności. Na przykład może być konieczne wydanie poprawki zabezpieczeń w przyszłości lub można zmienić strategię biznesową, która wymaga gruntownej obsługi wersji równoległych.
 
-W [obsługi wielu wersji programu Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md), możesz przeczytać o korzyści i problemy dotyczące obsługi instalacje side-by-side [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] z udostępnionego lub side-by-side instalacje Twojego pakietu VSPackage. Krótko mówiąc, pakietów VSPackage side-by-side zapewniają większą elastyczność do obsługi nowych funkcji [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+W przypadku [obsługi wielu wersji programu Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md)można zapoznać się z zaletami i problemami z obsługą równoległych instalacji [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] przy użyciu lub równoległych instalacji pakietu VSPackage. Krótko mówiąc, Side-by-Side pakietów VSPackage zapewnia największą elastyczność obsługi nowych funkcji [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 
-Scenariusze omówione w tym temacie nie są tylko wybrane opcje, ale są przedstawione jako sugerowane najlepsze rozwiązanie.
+Scenariusze omówione w tym temacie nie są jedynymi opcjami, ale są prezentowane jako sugerowane najlepsze rozwiązania.
 
-## <a name="components-privacy-and-sharing"></a>Składniki, ochrony prywatności i udostępnianie
+## <a name="components-privacy-and-sharing"></a>Składniki, prywatność i udostępnianie
 
-### <a name="make-your-components-independent"></a>Uniezależnić składników
+### <a name="make-your-components-independent"></a>Ustaw składniki jako niezależne
 
-Po identyfikować i wypełnić składnika, przypisać `GUID`i wdrożyć składnik, nie można zmienić jego skład. Jeśli zmienisz kompozycji składnika, wynikowy składnika musi być nowego składnika z nową `GUID`. Biorąc pod uwagę następujące fakty, największą elastyczność versioning jest udzielone, wprowadzając jednostki niezależne, samodzielnego każdego składnika. Aby uzyskać więcej informacji na temat zasad regulujących składniki zobacz [zmiany kodu składnika](/windows/desktop/Msi/changing-the-component-code) i [co się stanie, jeśli składnik reguły są uszkodzone?](/windows/desktop/Msi/what-happens-if-the-component-rules-are-broken).
+Po zidentyfikowaniu i wypełnieniu składnika Przypisz `GUID` i Wdróż składnik, nie można zmienić jego kompozycji. Jeśli zmienisz kompozycję składnika, składnik wyniku musi być nowym składnikiem z nowym `GUID`. Uwzględniając te fakty, elastyczność zapewnia największą wersję, dzięki czemu każdy składnik jest niezależny od siebie jednostkowo. Aby uzyskać więcej informacji na temat reguł związanych ze składnikami, zobacz [zmiana kodu komponentu](/windows/desktop/Msi/changing-the-component-code) i [co się stanie, jeśli reguły składników są zerwane?](/windows/desktop/Msi/what-happens-if-the-component-rules-are-broken).
 
-### <a name="do-not-mix-shared-and-private-resources-in-a-component"></a>Nie należy mieszać prywatnych i udostępnionych zasobów w składniku
+### <a name="do-not-mix-shared-and-private-resources-in-a-component"></a>Nie należy mieszać zasobów udostępnionych i prywatnych w składniku
 
-Zliczanie odwołań występuje na poziomie składnika. W związku z tym mieszanie zasobów udostępnionych i prywatnych w jednym składniku uniemożliwia aktualizują zasoby z prywatnych, takich jak plik wykonywalny bez zastępowania także zasoby udostępnione. W tym scenariuszu tworzy problemy ze zgodnością wsteczną i uniemożliwia tworzenie funkcji side-by-side.
+Zliczanie odwołań odbywa się na poziomie składnika. W związku z tym mieszanie zasobów udostępnionych i prywatnych w jednym składniku uniemożliwia zaktualizowanie zasobów prywatnych, takich jak plik wykonywalny, bez konieczności zastępowania zasobów udostępnionych. W tym scenariuszu są tworzone problemy ze zgodnością z poprzednimi wersjami i uniemożliwiają tworzenie funkcji obok siebie.
 
-Na przykład, wartości rejestru są używane do rejestrowania swojej pakietów VSPackage przy użyciu [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] powinny być przechowywane w składniku oddzielnie od używany do rejestrowania Twojego pakietu VSPackage przy użyciu programu Visual Studio. Wartości rejestru lub plików udostępnionych przejść w jeszcze inny składnik.
+Na przykład wartości rejestru używane do rejestrowania pakietu VSPackage z [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] powinny być przechowywane w składniku innym niż używany do rejestrowania pakietu VSPackage w programie Visual Studio. Udostępnione pliki lub wartości rejestru przechodzą jeszcze przez inny składnik.
 
-## <a name="scenario-1-shared-vspackage"></a>Scenariusz 1: Shared VSPackage
+## <a name="scenario-1-shared-vspackage"></a>Scenariusz 1: Shared pakietu VSPackage
 
-W tym scenariuszu udostępnionego pakietu VSPackage (pojedynczy plik binarny, który obsługuje wielu wersji programu Visual Studio jest dostarczany w pakiecie Instalatora Windows. Rejestrowanie z każdą wersją programu Visual Studio jest kontrolowana przez funkcje wybierane przez użytkownika. Oznacza to również, że po przypisaniu do oddzielania funkcji, każdego składnika można wybrać indywidualnie celu instalacji lub odinstalowania, zapewnieniem użytkownikowi kontroli nad integrowanie pakietu VSPackage różne wersje [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. (Zobacz [funkcje Instalatora Windows](/windows/desktop/Msi/windows-installer-features) Aby uzyskać więcej informacji na temat korzystania z funkcji w pakietów Instalatora Windows.)
+W tym scenariuszu udostępniony pakietu VSPackage (pojedynczy plik binarny obsługujący wiele wersji programu Visual Studio jest dostarczany w pakiecie Instalator Windows. Rejestrowanie w każdej wersji programu Visual Studio jest kontrolowane przez funkcje wybierane przez użytkownika. Oznacza to również, że po przypisaniu do oddzielnych funkcji każdy składnik można wybrać osobno w celu instalacji lub odinstalowania, co umożliwia użytkownikowi sterowanie integracją pakietu VSPackage z różnymi wersjami [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. (Zobacz [Instalator Windows funkcje](/windows/desktop/Msi/windows-installer-features) , aby uzyskać więcej informacji na temat korzystania z funkcji w pakietach Instalator Windows).
 
-![VS Shared VSPackage installer](../../extensibility/internals/media/vs_sharedpackage.gif "VS_SharedPackage")
+![VS Shared pakietu VSPackage Installer](../../extensibility/internals/media/vs_sharedpackage.gif "VS_SharedPackage")
 
-Jak pokazano na ilustracji, składników udostępnionych stają się częścią funkcji Feat_Common, która będzie zawsze instalowana. Przez funkcje Feat_VS2002 i Feat_VS2003 widoczności, użytkownicy mogą wybrać w momencie instalacji w wersjach programu Visual Studio mają pakietu VSPackage, aby zintegrować. Użytkownicy mogą również używać trybu konserwacji Instalatora Windows do dodawania lub usuwania funkcji, która w tym przypadku dodaje lub usuwa informacje o rejestracji pakietu VSPackage z różnych wersji programu Visual Studio.
+Jak pokazano na ilustracji, współdzielone składniki są częścią funkcji Feat_Common, która jest zawsze zainstalowana. Dzięki udostępnieniu funkcji Feat_VS2002 i Feat_VS2003 użytkownicy mogą wybrać w czasie instalacji, w którym wersje programu Visual Studio chcą zintegrować pakietu VSPackage. Użytkownicy mogą również używać trybu konserwacji Instalator Windows, aby dodawać lub usuwać funkcje, co w tym przypadku dodaje lub usuwa informacje o rejestracji pakietu VSPackage z różnych wersji programu Visual Studio.
 
 > [!NOTE]
-> Ustawienie funkcji kolumnę wyświetlaną na wartość 0 powoduje ukrycie go. Wartość w kolumnie poziom niski, taką jak 1, gwarantuje, że zawsze zostanie ona zainstalowana. Aby uzyskać więcej informacji, zobacz [właściwość INSTALLLEVEL](/windows/desktop/Msi/installlevel) i [tabeli funkcji](/windows/desktop/Msi/feature-table).
+> Ustawienie kolumny wyświetlania funkcji na 0 powoduje ukrycie jej. Wartość kolumny niskiego poziomu, na przykład 1, zapewnia, że będzie ona zawsze instalowana. Aby uzyskać więcej informacji, zobacz [INSTALLLEVEL właściwości](/windows/desktop/Msi/installlevel) i [funkcji tabeli](/windows/desktop/Msi/feature-table).
 
-## <a name="scenario-2-shared-vspackage-update"></a>Scenariusz 2: Udostępnione aktualizacji pakietu VSPackage
+## <a name="scenario-2-shared-vspackage-update"></a>Scenariusz 2: współdzielona aktualizacja pakietu VSPackage
 
-W tym scenariuszu jest dostarczany zaktualizowaną wersję Instalatora pakietu VSPackage w scenariuszu 1. Rozważań aktualizacja dodaje obsługę programu Visual Studio, ale jej może również być prostsze poprawkę zabezpieczeń lub poprawki z dodatkiem service pack. Instalowanie składników nowszej zasady Instalatora Windows wymagają, że niezmienione składniki już w systemie nie są ponownie kopiowane. W takim przypadku system w wersji 1.0 już istnieje zastąpić aktualizowanego składnika Comp_MyVSPackage.dll i Pozwól użytkownikom wybrać, można dodać nowej funkcji Feat_VS2005 za jego pomocą Comp_VS2005_Reg składnika.
+W tym scenariuszu jest wysyłana zaktualizowana wersja Instalatora pakietu VSPackage w scenariuszu 1. Na potrzeby dyskusji aktualizacja dodaje obsługę programu Visual Studio, ale może również być prostszym poprawkami zabezpieczeń lub błędem dodatku Service Pack. Reguły Instalator Windows instalowania nowszych składników wymagają, aby niezmienione składniki już w systemie nie były ponownie kopiowane. W takim przypadku system z wersją 1,0 już istnieje, zastępując zaktualizowany składnik Comp_MyVSPackage. dll i zezwoli użytkownikom na dodanie nowej funkcji Feat_VS2005 z jej składnikiem Comp_VS2005_Reg.
 
 > [!CAUTION]
-> Zawsze, gdy pakietu VSPackage jest współużytkowana przez wiele wersji [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], istotne jest, że kolejne wersje pakietu VSPackage zachowania zgodności z poprzednimi wersjami z wcześniejszych wersji programu Visual Studio. W przypadku, gdy nie można zachować zgodności z poprzednimi wersjami, należy użyć pakietów VSPackage side-by-side przypadku wartość prywatna. Aby uzyskać więcej informacji, zobacz [obsługi wielu wersji programu Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md).
+> Za każdym razem, gdy pakietu VSPackage jest współużytkowany między wieloma wersjami [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], ważne jest, aby kolejne wydania pakietu VSPackage zachować zgodność z poprzednimi wersjami programu Visual Studio. Jeśli nie możesz zachować zgodności z poprzednimi wersjami, musisz użyć pakietów VSPackage prywatnego. Aby uzyskać więcej informacji, zobacz [Obsługa wielu wersji programu Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md).
 
-![VS udostępnione VS Update pakiet Instalatora](../../extensibility/internals/media/vs_sharedpackageupdate.gif "VS_SharedPackageUpdate")
+![VS współużytkowany Instalator aktualizacji pakietu vs](../../extensibility/internals/media/vs_sharedpackageupdate.gif "VS_SharedPackageUpdate")
 
-W tym scenariuszu przedstawiono nowego Instalatora pakietu VSPackage, korzystając z zalet Instalatora Windows obsługę niewielkie uaktualnienia. Użytkownicy instalują wersji 1.1 i uaktualni ona w wersji 1.0. Jednak nie jest konieczne w wersji 1.0 w systemie. Tym samym Instalator zainstaluje wersji 1.1 w systemie bez wersji 1.0. Zaletą zapewnienie niewielkie uaktualnienia w ten sposób jest to, że nie jest konieczne przechodzą przez prac związanych z tworzeniem uaktualnienia Instalatora i Instalator pełnego produktu. Jeden Instalator wykonuje oba zadania. Poprawkę zabezpieczeń lub service pack może zamiast tego skorzystaj z zalet poprawek Instalatora Windows. Aby uzyskać więcej informacji, zobacz [stosowanie poprawek i uaktualnień](/windows/desktop/Msi/patching-and-upgrades).
+W tym scenariuszu jest wyświetlany nowy Instalator pakietu VSPackage, dzięki któremu można skorzystać z pomocy technicznej Instalator Windows w przypadku dodatkowych uaktualnień. Użytkownicy po prostu instalują wersję 1,1 i uaktualniają wersję 1,0. Nie jest jednak konieczne posiadanie wersji 1,0 w systemie. Ten sam Instalator zainstaluje wersję 1,1 w systemie bez wersji 1,0. Zaletą udostępniania drobnych uaktualnień w ten sposób jest to, że nie jest konieczne przechodzenie przez proces tworzenia Instalatora uaktualnienia i Instalatora w całym produkcie. Jeden Instalator wykonuje oba zadania. Poprawka zabezpieczeń lub dodatek Service Pack może zamiast tego wykorzystać zalety Instalator Windows poprawek. Aby uzyskać więcej informacji, zobacz [poprawek i uaktualnień](/windows/desktop/Msi/patching-and-upgrades).
 
-## <a name="scenario-3-side-by-side-vspackage"></a>Scenariusz 3: Side-by-Side pakietu VSPackage
+## <a name="scenario-3-side-by-side-vspackage"></a>Scenariusz 3. pakietu VSPackage równoległe
 
-W tym scenariuszu przedstawiono dwa pliki instalacyjne pakietu VSPackage — jeden dla każdej wersji programu Visual Studio .NET 2003 i programu Visual Studio. Każdy Instalator instaluje side-by-side i prywatnych, pakietu VSPackage (jedna, która jest specjalnie utworzone zainstalowane dla konkretnej wersji programu Visual Studio). Każdego pakietu VSPackage znajduje się w jego własnej składnika. W związku z tym, każdy może być indywidualnie obsługiwany przy użyciu poprawek lub obsługi wersji. Ponieważ biblioteki DLL pakietu VSPackage teraz jest specyficzny dla wersji, jest bezpieczne dołączyć swoje informacje rejestracyjne w jednym składniku jako biblioteki DLL.
+Ten scenariusz przedstawia dwa Instalatory pakietu VSPackage — jedną dla każdej wersji programu Visual Studio .NET 2003 i Visual Studio. Każdy Instalator instaluje obok siebie lub prywatne pakietu VSPackage (jeden, który jest specjalnie zbudowany i instalowany dla określonej wersji programu Visual Studio). Każdy pakietu VSPackage jest w jego własnym składniku. W związku z tym każdy może być osobno serwisowany z poprawkami lub wersjami konserwacji. Ponieważ biblioteka DLL pakietu VSPackage jest teraz specyficzna dla wersji, można bezpiecznie uwzględnić informacje o rejestracji w tym samym składniku co Biblioteka DLL.
 
-![VS Side-by-Side a Package installer](../../extensibility/internals/media/vs_sbys_package.gif "VS_SbyS_Package")
+![Instalator pakietu vs Side-by-Side](../../extensibility/internals/media/vs_sbys_package.gif "VS_SbyS_Package")
 
-Instalator, każdy zawiera również kod, który jest współużytkowana przez dwa pliki instalacyjne. Po zainstalowaniu udostępnionego kodu do wspólnej lokalizacji instalacji oba pliki .msi zostanie zainstalowany kod udostępniony tylko raz. Instalator w drugi po prostu zwiększa licznik odwołań do składnika. Licznik odwołań temu, jeśli jeden z pakietów VSPackage zostanie odinstalowany, kod udostępniony pozostanie dla pakietu VSPackage. Drugi pakietu VSPackage odinstalowanie spowoduje także udostępnionego kodu zostaną usunięte.
+Każdy Instalator zawiera również kod współużytkowany między dwoma instalatorami. Jeśli kod współużytkowany został zainstalowany w wspólnej lokalizacji, zainstalowanie obu plików. msi spowoduje zainstalowanie kodu udostępnionego tylko raz. Drugi Instalator po prostu zwiększa liczbę odwołań do składnika. Liczba odwołań gwarantuje, że jeśli jedna z pakietów VSPackage zostanie odinstalowana, udostępniony kod pozostanie dla innych pakietu VSPackage. Jeśli druga pakietu VSPackage jest również odinstalowywana, kod współużytkowany zostanie usunięty.
 
-## <a name="scenario-4-side-by-side-vspackage-update"></a>Scenariusz 4: Side-by-Side pakietu VSPackage aktualizacji
+## <a name="scenario-4-side-by-side-vspackage-update"></a>Scenariusz 4: Aktualizacja pakietu VSPackage obok siebie
 
-W tym scenariuszu Twojego pakietu VSPackage dla programu Visual Studio dotknięte luki w zabezpieczeniach, a następnie należy wydać aktualizacji. Tak jak w scenariuszu 2 można utworzyć nowy plik msi, która aktualizuje istniejącą instalację do poprawkę zabezpieczeń, a także wdrażanie nowych instalacji poprawki zabezpieczeń już w miejscu.
+W tym scenariuszu pakietu VSPackage dla programu Visual Studio zostały poniesione z luki w zabezpieczeniach i trzeba wydać aktualizację. Tak jak w scenariuszu 2, można utworzyć nowy plik msi, który aktualizuje istniejącą instalację, aby uwzględnić poprawkę zabezpieczeń, a także wdrożyć nowe instalacje z poprawkami zabezpieczeń, które już istnieją.
 
-W tym przypadku pakietu VSPackage jest zarządzanych pakietu VSPackage, zainstalowane w globalnej pamięci podręcznej zestawów (GAC). Kiedy ponownie kompilujesz hurtownię go, aby uwzględniał poprawki zabezpieczeń, należy zmienić numer poprawki część numeru wersji zestawu. Informacje o rejestracji dla nowego numeru wersji zestawu zastępuje poprzednią wersję, powodując [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] można załadować zestawu stały.
+W takim przypadku pakietu VSPackage jest zarządzanym pakietu vspackagem zainstalowanym w globalnej pamięci podręcznej zestawów (GAC). Podczas ponownego kompilowania programu w celu uwzględnienia poprawki zabezpieczeń należy zmienić część numeru wersji zestawu. Informacje rejestracyjne dla nowego numeru wersji zestawu zastępują poprzednią wersję, co powoduje [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ładowania ustalonego zestawu.
 
-![Instalator Side-by-Side VS pakiet aktualizacji programu VS](../../extensibility/internals/media/vs_sbys_packageupdate.gif "VS_SbyS_PackageUpdate")
+![Instalator aktualizacji pakietu programu vs Side-by-Side](../../extensibility/internals/media/vs_sbys_packageupdate.gif "VS_SbyS_PackageUpdate")
 
-Aby uzyskać więcej informacji na temat wdrażania zestawów side-by-side, zobacz [upraszczanie wdrażania i rozwiązywania piekłem bibliotek DLL, przy użyciu programu .NET Framework](https://msdn.microsoft.com/library/ms973843.aspx).
+Aby uzyskać więcej informacji na temat wdrażania zestawów równoległych, zobacz [uproszczenie wdrażania i rozwiązywanie problemów z biblioteką DLL Hell przy użyciu .NET Framework](https://msdn.microsoft.com/library/ms973843.aspx).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
-- [Windows Installer](/windows/desktop/Msi/windows-installer-portal)
+- [Instalator Windows](/windows/desktop/Msi/windows-installer-portal)
 - [Obsługiwanie wielu wersji programu Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md)

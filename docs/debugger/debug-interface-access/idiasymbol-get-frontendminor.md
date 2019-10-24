@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_frontendminor — | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_frontEndMinor | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87a23d3aeade62865f768f54eb8face462affee8
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 2b329cd69d010cba4e3667bde0d7b976389037bb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64832759"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740647"
 ---
-# <a name="idiasymbolgetfrontendminor"></a>IDiaSymbol::get_frontEndMinor
+# <a name="idiasymbolget_frontendminor"></a>IDiaSymbol::get_frontEndMinor
 Pobiera numer wersji pomocniczej frontonu.
 
 ## <a name="syntax"></a>Składnia
@@ -33,25 +33,25 @@ HRESULT get_frontEndMinor ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca front.end pomocniczy numer wersji.
+określoną Zwraca pierwszy podrzędny numer wersji.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
-> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Wartość zwracana `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
 ## <a name="remarks"></a>Uwagi
- Kompilatora zwykle składa się z dwóch podstawowe elementy: fronton (analizatora), która obsługuje analizowania kodu źródłowego w formie pośredniego, i zapleczem (generator kodu) konwertująca pośrednich formularza do zestawu. Nie jest niczym niezwykłym frontonu do innej wersji niż zaplecza.
+ Kompilator zwykle składa się z dwóch głównych elementów: fronton (Parser), który obsługuje Analizowanie kodu źródłowego w postaci pośredniej i zaplecza (Generator kodu), który konwertuje pośredni formularz do zestawu. Nie zdarza się, że fronton nie ma innej wersji niż zaplecze.
 
- Frontonu lub zaplecza numer wersji składa się z trzech części: \<główna >.\< pomocnicza >. \<kompilacji >, gdzie \<główne > jest główny numer wersji, \<pomocnicza > jest numerem wersji pomocniczej i \<kompilacji > jest numerem kompilacji. Na przykład 13.10.3077.
+ Numer wersji frontonu lub zaplecza składa się z trzech części: \<major >. > \<minor. \<build >, gdzie \<major > jest głównym numerem wersji, \<minor > jest numerem wersji pomocniczej, a \<build > jest numerem kompilacji. Na przykład 13.10.3077.
 
 ## <a name="requirements"></a>Wymagania
 
 |Wymaganie|Opis|
 |-----------------|-----------------|
-|Nagłówek:|dia2.h|
-|Wersja:|V7.0 DIA SDK|
+|Nagłówki|dia2. h|
+|Wersja:|DIA SDK v 7.0|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

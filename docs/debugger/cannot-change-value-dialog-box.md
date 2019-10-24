@@ -1,5 +1,5 @@
 ---
-title: Nie można zmienić wartości, okno dialogowe | Dokumentacja firmy Microsoft
+title: Nie można zmienić wartości — okno dialogowe | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,22 +18,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f8f9dafe8ada8914591426dea9abc867de2236f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 97f057edefefd590c37b49d709ecf8a6e029b905
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564154"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745740"
 ---
 # <a name="cannot-change-value-dialog-box"></a>Nie można zmienić wartości — okno dialogowe
 ## <a name="error"></a>Błąd
- `The value of this variable cannot be changed` &#124;`The name` *nazwa* `does not exist in the current context` &#124; *różne inne komunikaty*
+ `The value of this variable cannot be changed` &#124; `The name` *nazwy* `does not exist in the current context` &#124; *różnych innych komunikatów*
 
- To okno komunikatu pojawia się podczas próby zmiany zawartości zmiennej na niedozwoloną wartość okna debugera (windows automatyczne, wyrażenie kontrolne lub lokalne) lub okna dialogowego QuickWatch. Na przykład Jeśli spróbujesz ustawić wartość zmiennej liczby całkowitej na ciąg znaków, pojawi się to okno komunikatu.
+ To okno komunikatu pojawia się, gdy użytkownik próbuje zmienić zawartość zmiennej do niedozwolonej wartości w oknie debugera (autostarty, czujka lub lokalnych oknach) lub w oknie dialogowym QuickWatch. Na przykład, jeśli spróbujesz ustawić wartość zmiennej liczb całkowitych na ciąg znaków, zostanie wyświetlone okno komunikatu.
 
 ## <a name="solution"></a>Rozwiązanie
- Upewnij się, dane wejściowe, można wpisać w oknie debugera lub okno dialogowe QuickWatch reprezentuje dozwoloną wartością dla zmiennej, którą chcesz ustawić.
+ Upewnij się, że dane wejściowe wpisane do okna debugera lub okna dialogowego QuickWatch reprezentują wartość prawną dla zmiennej, którą próbujesz ustawić.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Wyrażenia w debugerze](../debugger/expressions-in-the-debugger.md)

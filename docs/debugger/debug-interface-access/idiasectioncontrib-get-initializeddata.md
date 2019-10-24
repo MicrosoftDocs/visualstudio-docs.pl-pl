@@ -1,5 +1,5 @@
 ---
-title: Idiasectioncontrib::get_initializeddata — | Dokumentacja firmy Microsoft
+title: 'IDiaSectionContrib:: get_initializedData | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef878dcae9f8d6d29761bcda5f5aa9588f26d66c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6386fc6bb460f7e0947680a9776af7646f1bec14
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828172"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742633"
 ---
-# <a name="idiasectioncontribgetinitializeddata"></a>IDiaSectionContrib::get_initializedData
-Pobiera flagę wskazującą, czy sekcja zawiera dane zainicjowane.
+# <a name="idiasectioncontribget_initializeddata"></a>IDiaSectionContrib::get_initializedData
+Pobiera flagę wskazującą, czy sekcja zawiera zainicjowane dane.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,10 +33,10 @@ HRESULT get_initializedData ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca `TRUE` Jeśli sekcja zawiera dane zainicjowany; w przeciwnym razie zwraca `FALSE`.
+określoną Zwraca `TRUE`, jeśli sekcja zawiera zainicjowane dane; w przeciwnym razie zwraca `FALSE`.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`. Zwraca `S_FALSE`, jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

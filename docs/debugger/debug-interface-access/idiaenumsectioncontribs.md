@@ -1,5 +1,5 @@
 ---
-title: Idiaenumsectioncontribs — | Dokumentacja firmy Microsoft
+title: IDiaEnumSectionContribs | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ede7789fcdba63595cecd6426c8f3ca1a4048e07
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e332bacdeaeca00d4e43d80807ee5f95c51c7e93
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833262"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744248"
 ---
 # <a name="idiaenumsectioncontribs"></a>IDiaEnumSectionContribs
-Wylicza różnych wkładów sekcji zawarte w źródle danych.
+Wylicza różne wkłady sekcji zawarte w źródle danych.
 
 ## <a name="syntax"></a>Składnia
 
@@ -28,26 +28,26 @@ Wylicza różnych wkładów sekcji zawarte w źródle danych.
 IDiaEnumSectionContribs : IUnknown
 ```
 
-## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych
 W poniższej tabeli przedstawiono metody `IDiaEnumSectionContribs`.
 
 |Metoda|Opis|
 |------------|-----------------|
-|[IDiaEnumSectionContribs::get__NewEnum](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-newenum.md)|Pobiera [interfejsu interfejs IEnumVARIANT](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) wersję tego modułu wyliczającego.|
-|[IDiaEnumSectionContribs::get_Count](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-count.md)|Pobiera liczbę sekcji wkładów.|
-|[IDiaEnumSectionContribs::Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md)|Pobiera sekcji wkładów za pomocą indeksu.|
-|[IDiaEnumSectionContribs::Next](../../debugger/debug-interface-access/idiaenumsectioncontribs-next.md)|Pobiera określoną liczbę sekcji wkład w kolejności wyliczenia.|
-|[IDiaEnumSectionContribs::Skip](../../debugger/debug-interface-access/idiaenumsectioncontribs-skip.md)|Pomija określoną liczbę sekcji wkład w kolejności wyliczenia.|
-|[IDiaEnumSectionContribs::Reset](../../debugger/debug-interface-access/idiaenumsectioncontribs-reset.md)|Resetuje sekwencji wyliczenia na początku.|
-|[IDiaEnumSectionContribs::Clone](../../debugger/debug-interface-access/idiaenumsectioncontribs-clone.md)|Tworzy moduł wyliczający, który zawiera ten sam stan wyliczenia jako bieżącego modułu wyliczającego.|
+|[IDiaEnumSectionContribs::get__NewEnum](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-newenum.md)|Pobiera wersję [interfejsu IEnumVARIANT](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) tego modułu wyliczającego.|
+|[IDiaEnumSectionContribs::get_Count](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-count.md)|Pobiera liczbę udziałów sekcji.|
+|[IDiaEnumSectionContribs::Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md)|Pobiera udziały sekcji za pomocą indeksu.|
+|[IDiaEnumSectionContribs::Next](../../debugger/debug-interface-access/idiaenumsectioncontribs-next.md)|Pobiera określoną liczbę udziałów sekcji w sekwencji wyliczenia.|
+|[IDiaEnumSectionContribs::Skip](../../debugger/debug-interface-access/idiaenumsectioncontribs-skip.md)|Pomija określoną liczbę udziałów sekcji w sekwencji wyliczenia.|
+|[IDiaEnumSectionContribs::Reset](../../debugger/debug-interface-access/idiaenumsectioncontribs-reset.md)|Resetuje sekwencję wyliczenia na początek.|
+|[IDiaEnumSectionContribs::Clone](../../debugger/debug-interface-access/idiaenumsectioncontribs-clone.md)|Tworzy moduł wyliczający, który zawiera ten sam stan wyliczania co bieżący moduł wyliczający.|
 
 ## <a name="remarks"></a>Uwagi
 
 ## <a name="note-for-callers"></a>Uwaga dla obiektów wywołujących
-Uzyskanie tego interfejsu z [idiasession::getenumtables —](../../debugger/debug-interface-access/idiasession-getenumtables.md) metody. Zobacz przykład, aby uzyskać szczegółowe informacje.
+Uzyskaj ten interfejs z metody [IDiaSession:: getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md) . Zobacz przykład, aby uzyskać szczegółowe informacje.
 
 ## <a name="example"></a>Przykład
-W tym przykładzie pokazano, jak uzyskać ( `GetEnumSectionContribs` funkcja) i użyj ( `ShowSectionContribs` funkcji) `IDiaEnumSectionContribs` interfejsu. Aby uzyskać bardziej szczegółowy przykład za pomocą sekcji wkładów, zobacz [idiasectioncontrib —](../../debugger/debug-interface-access/idiasectioncontrib.md) interfejsu.
+Ten przykład pokazuje, jak uzyskać (funkcja `GetEnumSectionContribs`) i użyć (funkcji `ShowSectionContribs`) interfejsu `IDiaEnumSectionContribs`. Aby zapoznać się z bardziej kompletnym przykładem użycia rozdziałów, zobacz Interfejs [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md) .
 
 ```C++
 
@@ -100,13 +100,13 @@ void ShowSectionContribs(IDiaSession *pSession)
 ```
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: Dia2.h
+Nagłówek: dia2. h
 
-Biblioteka: diaguids.lib
+Biblioteka: diaguids. lib
 
-DLL: msdia80.dll
+DLL: msdia80. dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Interfejsy (Zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

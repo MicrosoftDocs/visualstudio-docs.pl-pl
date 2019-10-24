@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalker::getEnumFrames2 | Dokumentacja firmy Microsoft
+title: 'IDiaStackWalker:: getEnumFrames2 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35886ea0456426c30c44d5fd8e90399d4a2143ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f6de78b5553719def2fd7ef9c6adb55e823aac34
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62837943"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741529"
 ---
 # <a name="idiastackwalkergetenumframes2"></a>IDiaStackWalker::getEnumFrames2
-Pobiera moduł wyliczający ramek stosu dla typu określonej platformy.
+Pobiera moduł wyliczający ramek stosu dla określonego typu platformy.
 
 ## <a name="syntax"></a>Składnia
 
@@ -36,23 +36,23 @@ Pobiera moduł wyliczający ramek stosu dla typu określonej platformy.
 #### <a name="parameters"></a>Parametry
  `cpuid`
 
-[in] Wartość z zakresu od [cv_cpu_type_e — wyliczenie](../../debugger/debug-interface-access/cv-cpu-type-e.md) wyliczenia, określając typ platformy.
+podczas Wartość z wyliczenia [CV_CPU_TYPE_e](../../debugger/debug-interface-access/cv-cpu-type-e.md) , określając typ platformy.
 
  `pHelper`
 
-[in] Pomocnik [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) obiektu.
+podczas Obiekt pomocnika [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) .
 
  `ppEnum`
 
-[out] Zwraca [idiaenumstackframes —](../../debugger/debug-interface-access/idiaenumstackframes.md) obiektu zawierającego listę [idiastackframe —](../../debugger/debug-interface-access/idiastackframe.md) obiektów.
+określoną Zwraca obiekt [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md) zawierający listę obiektów [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md) .
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Aby uzyskać listę ramek stosu dla właśnie x86 platforma, wywołanie [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md) metody.
+ Aby uzyskać listę ramek stosu tylko dla platformy x86, wywołaj metodę [IDiaStackWalker:: getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md) .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaStackWalker](../../debugger/debug-interface-access/idiastackwalker.md)
 - [CV_CPU_TYPE_e, wyliczenie](../../debugger/debug-interface-access/cv-cpu-type-e.md)
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

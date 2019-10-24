@@ -1,5 +1,5 @@
 ---
-title: Idiainjectedsource::get_source — | Dokumentacja firmy Microsoft
+title: 'IDiaInjectedSource:: get_source | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 604160cdaf8c1ff28b306106afe34e047768f3c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b389df8220766ffbdbf865a2b8e70877fe91b3f1
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828427"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743333"
 ---
-# <a name="idiainjectedsourcegetsource"></a>IDiaInjectedSource::get_source
+# <a name="idiainjectedsourceget_source"></a>IDiaInjectedSource::get_source
 Pobiera bajty kodu źródłowego.
 
 ## <a name="syntax"></a>Składnia
@@ -35,18 +35,18 @@ HRESULT get_source ( 
 #### <a name="parameters"></a>Parametry
  `cbData`
 
-[in] Liczba bajtów, która przedstawia rozmiar buforu danych.
+podczas Liczba bajtów reprezentujących rozmiar buforu danych.
 
  `pcbData`
 
-[out] Zwraca liczbę bajtów, która reprezentuje bajtów zwracane. Jeśli `data` jest `NULL`, następnie `pcbData` dostępnej całkowita liczba bajtów danych.
+określoną Zwraca liczbę bajtów reprezentujących bajty zwrócone. Jeśli `data` jest `NULL`, `pcbData` jest łączną liczbą dostępnych bajtów danych.
 
  `data[]`
 
-[out] Buforu, który jest wypełniona bajtów źródła.
+określoną Bufor, który ma zostać wypełniony przez bajty źródłowe.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`. Zwraca `S_FALSE`, jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

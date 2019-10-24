@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_liveRangeStartRelativeVirtualAddress | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_liveRangeStartRelativeVirtualAddress | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 338775a2c36415d471d0d59176ce38f6df1827bb
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: ea82e9d1dee4b82e78ea3f6409acfdcfc30b2a27
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64806863"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739892"
 ---
-# <a name="idiasymbolgetliverangestartrelativevirtualaddress"></a>IDiaSymbol::get_liveRangeStartRelativeVirtualAddress
-Zwraca początek zakresu adresów, w którym symbolu lokalnego jest poprawna.
+# <a name="idiasymbolget_liverangestartrelativevirtualaddress"></a>IDiaSymbol::get_liveRangeStartRelativeVirtualAddress
+Zwraca początek zakresu adresów, w którym lokalny symbol jest prawidłowy.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,22 +33,22 @@ HRESULT get_liveRangeStartRelativeVirtualAddress ( 
 #### <a name="parameters"></a>Parametry
  `address`
 
-[out] Zwraca początek zakresu adresów.
+określoną Zwraca początek zakresu adresów.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Względny adres wirtualny, zwracany jest początek zakresu, w którym symbol jest poprawna.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Zwrócony adres wirtualny jest początkiem zakresu, w którym symbol jest prawidłowy.
 
 > [!NOTE]
-> Zwrócony kod błędu: oznacza, że symbol nie ma informacji o zakresie na żywo.
+> Zwrócony kod błędu oznacza, że symbol nie zawiera informacji o zakresie na żywo.
 
 ## <a name="remarks"></a>Uwagi
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: Dia2.h
+ Nagłówek: dia2. h
 
- Biblioteka: diaguids.lib
+ Biblioteka: diaguids. lib
 
- DLL: msdia100.dll
+ DLL: msdia100. dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

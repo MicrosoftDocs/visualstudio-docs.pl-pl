@@ -1,5 +1,5 @@
 ---
-title: Idiasectioncontrib::get_compiland — | Dokumentacja firmy Microsoft
+title: 'IDiaSectionContrib:: get_compiland | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b920a9f1c3191bfea580df510c7a44c2b7929e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d9a398d7cc0ff8efc9dacc726205cd0d8fa02473
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828255"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742716"
 ---
-# <a name="idiasectioncontribgetcompiland"></a>IDiaSectionContrib::get_compiland
-Pobiera odwołanie do compiland — symbol, który zamieszczone w tej sekcji.
+# <a name="idiasectioncontribget_compiland"></a>IDiaSectionContrib::get_compiland
+Pobiera odwołanie do symbolu jednostka kompilacji, który należy do tej sekcji.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,11 +33,11 @@ HRESULT get_compiland ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca [idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md) obiekt reprezentujący compiland —, które przyczyniły się w tej sekcji.
+określoną Zwraca obiekt [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) reprezentujący jednostka kompilacji, który współtworzył tę sekcję.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`. Zwraca `S_FALSE`, jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

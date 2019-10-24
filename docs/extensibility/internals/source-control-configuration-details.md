@@ -1,5 +1,5 @@
 ---
-title: Szczegóły konfiguracji kontroli źródła | Dokumentacja firmy Microsoft
+title: Szczegóły konfiguracji kontroli źródła | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,47 +10,47 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 917354534ee3dbb2b615ec031f0a41c31bd88235
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0a6c51dfe4ad9378af04da61dbd7e9011c4678f1
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322585"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72723795"
 ---
 # <a name="source-control-configuration-details"></a>Szczegóły konfiguracji kontroli kodu źródłowego
-W celu wdrożenia kontroli źródła, należy poprawnie skonfigurować system projektu lub edytora, aby wykonać następujące czynności:
+W celu zaimplementowania kontroli źródła należy prawidłowo skonfigurować system lub Edytor projektu, aby wykonać następujące czynności:
 
-- Żądanie uprawnień do przejścia do zmiany stanu
+- Zażądaj uprawnienia do przejścia do zmienionego stanu
 
-- Żądanie uprawnień do zapisania pliku
+- Zażądaj uprawnień do zapisania pliku
 
-- Poproś o uprawnienia do dodawania, usuwania lub zmiany nazwy plików w projekcie
+- Zażądaj uprawnień do dodawania, usuwania lub zmiany nazwy plików w projekcie
 
-## <a name="request-permission-to-transition-to-changed-state"></a>Żądanie uprawnień do przejścia do zmiany stanu
- Projekt lub Edytor musi żądać uprawnienia do przejścia do zmiany stanu (dirty) przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>. Każdy edytor, który implementuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData.IsDocDataDirty%2A> musi wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> i uzyskać zatwierdzenie, aby zmienić dokumentu w środowisku przed zwróceniem `True` dla <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData.IsDocDataDirty%2A>. Projekt jest zasadniczo edytor dla pliku projektu, a co w efekcie ponosi odpowiedzialność tej samej dotyczące implementowania śledzenia zmianie stanu w pliku projektu, podobnie jak edytor tekstu dla jego plików. Środowisko obsługuje stan zmienionego rozwiązania, ale musi obsługiwać zmiana stanu dowolnego obiektu odwołuje się do rozwiązania, ale nie są zapisywane, takich jak plik projektu lub jego elementów. Ogólnie rzecz biorąc Jeśli projekt lub edytora jest odpowiedzialny za zarządzanie stanów trwałych dla elementu, następnie odpowiada dotyczące implementowania śledzenia zmianie stanu.
+## <a name="request-permission-to-transition-to-changed-state"></a>Zażądaj uprawnienia do przejścia do zmienionego stanu
+ Projekt lub Edytor musi zażądać uprawnień do przejścia do zmienionego stanu (zanieczyszczony) przez wywołanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>. Każdy edytor implementujący <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData.IsDocDataDirty%2A> musi wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> i odebrać zatwierdzenie zmiany dokumentu ze środowiska przed zwróceniem `True` dla <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData.IsDocDataDirty%2A>. Projekt jest zasadniczo edytorem pliku projektu, a w związku z tym jest taka sama odpowiedzialność za wdrożenie śledzenia zmian stanu dla pliku projektu jako edytora tekstu dla plików. Środowisko obsługuje zmieniony stan rozwiązania, ale musisz obsłużyć zmieniony stan dowolnego obiektu, który odwołuje się do rozwiązania, ale nie magazynu, takiego jak plik projektu lub jego elementy. Ogólnie rzecz biorąc, jeśli projekt lub Edytor jest odpowiedzialny za zarządzanie trwałością dla elementu, jest odpowiedzialny za wdrożenie śledzenia zmian stanu.
 
- W odpowiedzi na `IVsQueryEditQuerySave2::QueryEditFiles` wywołać, środowiska może wykonać następujące czynności:
+ W odpowiedzi na wywołanie `IVsQueryEditQuerySave2::QueryEditFiles` środowisko może wykonać następujące czynności:
 
-- Odrzuć wywołanie, aby zmienić, w którym to przypadku Edytor lub projekt musi pozostać bez zmian stanu (czyszczenie).
+- Odrzuć wywołanie zmiany, w takim przypadku Edytor lub projekt muszą pozostać w stanie niezmienionym (czystym).
 
-- Wskazuje, czy należy ponownie załadować danych dokumentu. Dla projektu środowiska spowoduje ponowne załadowanie danych dla projektu. Edytor należy ponownie załadować dane z dysku za pomocą jego <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A> implementacji. W obu przypadkach kontekstu w projekcie lub w edytorze można zmienić po załadowaniu danych.
+- Wskaż, że dane dokumentu powinny zostać ponownie załadowane. W przypadku projektu środowisko spowoduje ponowne załadowanie danych dla projektu. Edytor musi ponownie załadować dane z dysku za pośrednictwem jego implementacji <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A>. W obu przypadkach kontekst w projekcie lub edytorze może ulec zmianie po ponownym załadowaniu danych.
 
-  Jest to zadanie złożonej i trudnej do przeprojektować odpowiednie `IVsQueryEditQuerySave2::QueryEditFiles` wywołania do istniejącej bazy kodu. W wyniku tych wywołań powinny być włączone podczas tworzenia projektu lub edytorze.
+  Jest to złożone i trudne zadanie umożliwiające przeprojektowywania odpowiednich wywołań `IVsQueryEditQuerySave2::QueryEditFiles` na istniejącą bazę kodu. W związku z tym te wywołania powinny być zintegrowane podczas tworzenia projektu lub edytora.
 
-## <a name="request-permission-to-save-a-file"></a>Żądanie uprawnień do zapisania pliku
- Zanim projekt lub Edytor zapisuje plik, należy wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A> lub <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A>. Pliki projektu te wywołania są automatycznie uzupełniane przez rozwiązanie, który wie, kiedy można zapisać pliku projektu. Edytory jest odpowiedzialny za wykonywanie tych wywołań, chyba że implementacja edytora `IVsPersistDocData2` korzysta z funkcji pomocnika <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SaveDocDataToFile%2A>. Jeśli Edytor implementuje `IVsPersistDocData2` w ten sposób, a następnie wywołania `IVsQueryEditQuerySave2::QuerySaveFile` lub `IVsQueryEditQuerySave2::QuerySaveFiles` ma zostać dla Ciebie.
+## <a name="request-permission-to-save-a-file"></a>Zażądaj uprawnień do zapisania pliku
+ Przed zapisaniem pliku przez projekt lub Edytor musi on wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A> lub <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A>. W przypadku plików projektu te wywołania są automatycznie uzupełniane przez rozwiązanie, które wie, kiedy zapisać plik projektu. Edytory są odpowiedzialni za wykonywanie tych wywołań, chyba że implementacja edytora `IVsPersistDocData2` używa funkcji pomocnika <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SaveDocDataToFile%2A>. Jeśli Edytor implementuje `IVsPersistDocData2` w ten sposób, zostanie wykonane wywołanie `IVsQueryEditQuerySave2::QuerySaveFile` lub `IVsQueryEditQuerySave2::QuerySaveFiles`.
 
 > [!NOTE]
-> Zawsze tworzyć te wywołania prewencyjnego — oznacza to, że w danym momencie, gdy edytor jest możliwość odbierania Anuluj.
+> Zawsze zapobiegawczo te wywołania — to znaczy, na czas, kiedy Edytor może odebrać Anuluj.
 
-## <a name="request-permission-to-add-remove-or-rename-files-in-the-project"></a>Poproś o uprawnienia do dodawania, usuwania lub zmiany nazwy plików w projekcie
- Zanim projektu można dodać, zmienić lub usunięcia pliku lub katalogu, należy wywołać odpowiednie `IVsTrackProjectDocuments2::OnQuery*` metody, aby poprosić o uprawnienie ze środowiska. Jeśli uprawnienia, a następnie projekt musi ukończyć operacji, a następnie wywołaj odpowiedni `IVsTrackProjectDocuments2::OnAfter*` metodę, aby powiadomić środowiska o ukończeniu operacji. Projekt należy wywołać metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> interfejs wszystkie pliki (na przykład specjalnych) i nie tylko pliki nadrzędnej. Wywołania pliku są obowiązkowe, ale wywołania katalogu są opcjonalne. Jeśli projekt zawiera informacje o katalogu, a następnie wywołać odpowiednie <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> metody, ale jeśli nie ma tych informacji, a następnie środowiska wywnioskuje informacji o katalogu.
+## <a name="request-permission-to-add-remove-or-rename-files-in-the-project"></a>Zażądaj uprawnień do dodawania, usuwania lub zmiany nazwy plików w projekcie
+ Aby projekt mógł dodać, zmienić nazwę lub usunąć plik lub katalog, musi wywołać odpowiednią metodę `IVsTrackProjectDocuments2::OnQuery*`, aby zażądać uprawnień ze środowiska. Jeśli przyznano uprawnienia, projekt musi wykonać operację, a następnie wywołać odpowiednią metodę `IVsTrackProjectDocuments2::OnAfter*`, aby powiadomić środowisko o ukończeniu operacji. Projekt musi wywoływać metody interfejsu <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> dla wszystkich plików (na przykład plików specjalnych), a nie tylko plików nadrzędnych. Wywołania plików są obowiązkowe, ale wywołania katalogu są opcjonalne. Jeśli projekt zawiera informacje o katalogu, należy wywołać odpowiednie metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>, ale jeśli nie ma tych informacji, środowisko będzie wywnioskować informacje o katalogu.
 
- Projekt nie powinien wywoływać metody `IVsTrackProjectDocuments2` w projekcie, Otwórz lub Zamknij. Odbiorniki, które te informacje podczas uruchamiania poczekać, aż <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenSolution%2A> zdarzeń i iteracyjnego przeglądania rozwiązanie, aby znaleźć potrzebnych informacji. Podczas zamykania te informacje nie są potrzebne. `IVsTrackProjectDocuments2` udostępnionych w serwisie <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackProjectDocuments>.
+ Projekt nie powinien wywoływać metod `IVsTrackProjectDocuments2` w projekcie otwartym lub zamkniętym. Detektory, które chcą uzyskać te informacje podczas uruchamiania, mogą czekać na zdarzenie <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenSolution%2A> i wykonać iterację w rozwiązaniu, aby znaleźć potrzebne informacje. W przypadku zamknięcia te informacje nie są zbędne. `IVsTrackProjectDocuments2` podano z <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackProjectDocuments>.
 
- Dla każdego Dodawanie, zmianę nazwy i akcji Usuń ma `OnQuery*` metody i `OnAfter*` metody. Wywołaj `OnQuery*` metody uprawnienia do dodawania, zmienić lub usunąć pliku lub katalogu. Wywołaj `OnAfter*` metoda po pliku lub katalogu został dodany, zmieniono jego nazwę lub został usunięty i stanie projektu odzwierciedla nowy stan.
+ Dla każdej akcji Dodaj, Zmień nazwę i Usuń istnieje metoda `OnQuery*` i Metoda `OnAfter*`. Wywołaj metodę `OnQuery*`, aby zażądać uprawnienia do dodawania, zmieniania nazwy lub usuwania pliku lub katalogu. Wywołaj metodę `OnAfter*` po dodaniu pliku lub katalogu, zmianie nazwy lub usunięciu, a stan projektu odzwierciedla nowy stan.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A>

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: faff61833cb130902efbd64d60a16f74c507a3e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dc40cc6cc8e821db7c28a4647e36e7bad241b29f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62834133"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738647"
 ---
 # <a name="locationtype"></a>LocationType
-Wskazuje rodzaj informacji o lokalizacji zawarte w symbolu.
+Wskazuje rodzaj informacji o lokalizacji zawartych w symbolu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -42,39 +42,39 @@ enum LocationType {
 ```
 
 ## <a name="elements"></a>Elementy
-`LocIsNull` Informacje o lokalizacji jest niedostępny.
+Informacje o lokalizacji `LocIsNull` są niedostępne.
 
-`LocIsStatic` Lokalizacja jest statyczne.
+Lokalizacja `LocIsStatic` jest statyczna.
 
-`LocIsTLS` Lokalizacja znajduje się w pamięci lokalnej wątku.
+Lokalizacja `LocIsTLS` znajduje się w lokalnym magazynie wątków.
 
-`LocIsRegRel` Lokalizacja jest powiązane z wątkiem rejestru.
+Lokalizacja `LocIsRegRel` jest zależna od rejestru.
 
-`LocIsThisRel` Lokalizacja jest `this`— względna.
+Lokalizacja `LocIsThisRel` jest `this` względem.
 
-`LocIsEnregistered` Lokalizacja znajduje się w rejestrze.
+Lokalizacja `LocIsEnregistered` jest w rejestrze.
 
-`LocIsBitField` Lokalizacja jest polem bitowym.
+`LocIsBitField` lokalizacja znajduje się w polu bitowym.
 
-`LocIsSlot` Lokalizacja jest miejsce Microsoft Intermediate Language (MSIL).
+Lokalizacja `LocIsSlot` to gniazdo języka pośredniego firmy Microsoft (MSIL).
 
-`LocIsIlRel` Lokalizacja jest powiązane z wątkiem MSIL.
+Lokalizacja `LocIsIlRel` jest zależna od języka MSIL.
 
-`LocInMetaData` Lokalizacja znajduje się w metadanych.
+Lokalizacja `LocInMetaData` jest w metadanych.
 
-`LocIsConstant` Lokalizacja jest wartością stałą.
+Lokalizacja `LocIsConstant` jest w stałej wartości.
 
-`LocTypeMax` Liczba typów lokalizacji, w tym wyliczeniu.
+`LocTypeMax` liczbę typów lokalizacji w tym wyliczeniu.
 
 ## <a name="remarks"></a>Uwagi
-Właściwości dostępne dla [idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md) interfejsu są zależne od lokalizacji symbolu w pliku obrazu. Aby uzyskać więcej informacji, zobacz [lokalizacje symboli](../../debugger/debug-interface-access/symbol-locations.md).
+Właściwości dostępne dla interfejsu [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) zależą od lokalizacji symbolu w pliku obrazu. Aby uzyskać więcej informacji, zobacz [lokalizacje symboli](../../debugger/debug-interface-access/symbol-locations.md).
 
-Wartości w tym wyliczeniu są zwracane przez wywołanie [idiasymbol::get_locationtype —](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md) metody.
+Wartości w tym wyliczeniu są zwracane przez wywołanie metody [IDiaSymbol:: get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md) .
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: cvconst.h
+Nagłówek: cvconst. h
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wyliczenia i struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [IDiaSymbol::get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)

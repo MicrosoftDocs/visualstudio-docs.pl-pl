@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8343f3a417c0c435711fb1df337d47c3a747905
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 37255345c1d394130872dc65a8568309a3091347
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653805"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747575"
 ---
 # <a name="domain-path-syntax"></a>Składnia ścieżki domeny
 Definicje DSL używają składni podobnej do XPath do lokalizowania określonych elementów w modelu.
@@ -35,6 +35,6 @@ Definicje DSL używają składni podobnej do XPath do lokalizowania określonych
 
  Nazwa, która jest używana na potrzeby przeskoku elementu do linku, jest wartością `Property Name` roli. Nazwa użyta dla przeskoku link-element jest nazwą roli docelowej.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Opis modeli, klas i relacji](../modeling/understanding-models-classes-and-relationships.md)

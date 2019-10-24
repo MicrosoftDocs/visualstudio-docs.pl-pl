@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_isdataaligned — | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_isDataAligned | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8a46b84ff8af4163d6341f1cabbbe339379c0de
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 27a03dbc66cd3ba46fc080d856c559eabc7e289e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64808842"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740260"
 ---
-# <a name="idiasymbolgetisdataaligned"></a>IDiaSymbol::get_isDataAligned
-Pobiera flagę określającą, czy typ zdefiniowany przez użytkownika (UDT) została wyrównana do granicy niektóre pamięci.
+# <a name="idiasymbolget_isdataaligned"></a>IDiaSymbol::get_isDataAligned
+Pobiera flagę, która określa, czy typ zdefiniowany przez użytkownika (UDT) został wyrównany do określonej granicy pamięci.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,23 +33,23 @@ HRESULT get_isDataAligned(
 #### <a name="parameters"></a>Parametry
  `pFlag`
 
-[out] Zwraca `TRUE` Jeśli UDT ma zostać wyrównane do pewnych granic pamięci; w przeciwnym razie zwraca `FALSE`.
+określoną Zwraca `TRUE`, jeśli typ UDT został wyrównany do pewnej granicy pamięci; w przeciwnym razie zwraca `FALSE`.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
-> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Wartość zwracana przez `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
 ## <a name="remarks"></a>Uwagi
- Ta właściwość jest ustawiona zazwyczaj, gdy plik wykonywalny został skompilowany z wyrównanie danych innej niż domyślna. Na przykład, kompilator Microsoft C++ można zmienić wyrównanie danych przy użyciu opcji wiersza polecenia/ZP<em>#</em>, gdzie *#* jest wartością bajtu.
+ Ta właściwość jest zazwyczaj ustawiana, gdy plik wykonywalny jest kompilowany z niedomyślnymi wyrównaniami danych. Na przykład kompilator firmy Microsoft C++ może zmienić wyrównanie danych za pomocą opcji wiersza polecenia/ZP <em>#</em>, gdzie *#* jest wartością typu Byte.
 
 ## <a name="requirements"></a>Wymagania
 
 |Wymaganie|Opis|
 |-----------------|-----------------|
-|Nagłówek:|dia2.h|
-|Wersja:|DIA SDK w wersji 8.0|
+|Nagłówki|dia2. h|
+|Wersja:|DIA SDK v 8.0|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
