@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_hasSecurityChecks | Microsoft Docs
+title: 'IDiaSymbol:: get_hasSecurityChecks | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5a760389f589dc14e8a768991323c0419dac527
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 11fd7f70da9ae47b9858f8265d0608e3d6994ef7
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64808710"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740467"
 ---
-# <a name="idiasymbolgethassecuritychecks"></a>IDiaSymbol::get_hasSecurityChecks
-Pobiera flagę określającą, czy compiland — lub funkcji został skompilowany przy użyciu sprawdzeń zabezpieczeń przepełnienia buforu (na przykład [/GS (Sprawdzanie zabezpieczeń bufora)](/cpp/build/reference/gs-buffer-security-check) przełącznika kompilatora).
+# <a name="idiasymbolget_hassecuritychecks"></a>IDiaSymbol::get_hasSecurityChecks
+Pobiera flagę, która określa, czy jednostka kompilacji lub funkcja została skompilowana przy użyciu kontroli zabezpieczeń przepełnienia buforu (na przykład przełącznika kompilatora [/GS (sprawdzanie zabezpieczeń bufora)](/cpp/build/reference/gs-buffer-security-check) .
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,21 +33,21 @@ HRESULT get_hasSecurityChecks(
 #### <a name="parameters"></a>Parametry
  `pFlag`
 
-[out] Zwraca `TRUE` Jeśli funkcja ma żadnych kontroli zabezpieczeń; w przeciwnym razie zwraca `FALSE`.
+określoną Zwraca `TRUE`, jeśli funkcja ma jakiekolwiek sprawdzenia zabezpieczeń; w przeciwnym razie zwraca `FALSE`.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
-> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Wartość zwracana przez `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
 ## <a name="requirements"></a>Wymagania
 
 |Wymaganie|Opis|
 |-----------------|-----------------|
-|Nagłówek:|dia2.h|
-|Wersja:|DIA SDK w wersji 8.0|
+|Nagłówki|dia2. h|
+|Wersja:|DIA SDK v 8.0|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [/GS (Sprawdzanie zabezpieczeń bufora)](/cpp/build/reference/gs-buffer-security-check)

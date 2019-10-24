@@ -1,5 +1,5 @@
 ---
-title: Idiasession::getenumtables — | Dokumentacja firmy Microsoft
+title: 'IDiaSession:: getEnumTables | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 759972fa02c7645ae457e0b715d835b2d717e26f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 41679304986f5de948119a2958524b8f269ceb42
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839176"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741923"
 ---
 # <a name="idiasessiongetenumtables"></a>IDiaSession::getEnumTables
 Pobiera moduł wyliczający dla wszystkich tabel znajdujących się w magazynie symboli.
@@ -33,13 +33,13 @@ HRESULT getEnumTables (
 #### <a name="parameters"></a>Parametry
 `ppEnumTables`
 
-[out] Zwraca [idiaenumtables —](../../debugger/debug-interface-access/idiaenumtables.md) obiektu. Używaj tego interfejsu, można wyliczyć tabel w magazynie symboli.
+określoną Zwraca obiekt [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md) . Użyj tego interfejsu, aby wyliczyć tabele w magazynie symboli.
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="example"></a>Przykład
-W tym przykładzie przedstawiono ogólne funkcję, która używa `getEnumTables` metodę, aby uzyskać obiekt określonego modułu wyliczającego. Jeśli moduł wyliczający zostanie znaleziony, funkcja zwraca wskaźnik, który może być rzutowany na żądanego interfejsu; w przeciwnym razie funkcja zwraca `NULL`.
+Ten przykład przedstawia ogólną funkcję, która używa metody `getEnumTables`, aby uzyskać określony obiekt modułu wyliczającego. W przypadku znalezienia modułu wyliczającego funkcja zwraca wskaźnik, który można rzutować na żądany interfejs; w przeciwnym razie funkcja zwraca `NULL`.
 
 ```C++
 IUnknown *GetTable(IDiaSession *pSession, REFIID iid)
@@ -67,6 +67,6 @@ IUnknown *GetTable(IDiaSession *pSession, REFIID iid)
 }
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

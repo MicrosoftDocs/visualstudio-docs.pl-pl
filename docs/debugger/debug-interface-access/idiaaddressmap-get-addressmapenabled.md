@@ -1,5 +1,5 @@
 ---
-title: IDiaAddressMap::get_addressMapEnabled | Microsoft Docs
+title: 'IDiaAddressMap:: get_addressMapEnabled | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7391010e409cc25a3151bb2abb806289c81288a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b518cf3728279ea8db267d01867fa66ceae35b21
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554416"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745181"
 ---
-# <a name="idiaaddressmapgetaddressmapenabled"></a>IDiaAddressMap::get_addressMapEnabled
-Wskazuje, czy mapa adresu została ustanowiona dla określonej sesji.
+# <a name="idiaaddressmapget_addressmapenabled"></a>IDiaAddressMap::get_addressMapEnabled
+Wskazuje, czy mapa adresów została ustanowiona dla konkretnej sesji.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,17 +33,17 @@ HRESULT get_addressMapEnabled ( 
 #### <a name="parameters"></a>Parametry
  pRetVal
 
-[out] Zwraca `TRUE` Jeśli mapowanie adresu jest włączona.
+określoną Zwraca `TRUE`, jeśli mapowanie adresów jest włączone.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Wykonywalny procesorów po aktualizacji czasami pliku wykonywalnego. DIA zawiera mechanizm obsługi tłumaczenia symboli do nowego układu.
+ Wykonywalne przetwórcy czasami aktualizują plik wykonywalny. DIA zawiera mechanizm do obsługi tłumaczenia symboli do nowego układu.
 
- Aplikacje klienckie można ustawić mapy adresów dla określonej sesji uzyskując [idiaaddressmap —](../../debugger/debug-interface-access/idiaaddressmap.md) interfejs z [idiasession —](../../debugger/debug-interface-access/idiasession.md) interfejsu i wywoływania [IDiaAddressMap::set_ addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) metody następuje po wywołaniu [idiaaddressmap::put_addressmapenabled —](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md) metody. `get_addressMapEnabled` Metoda zwraca wyniki wywołania `put_addressMapEnabled` metody.
+ Aplikacje klienckie mogą ustawić mapę adresów dla określonej sesji, pobierając Interfejs [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md) z interfejsu [IDiaSession](../../debugger/debug-interface-access/idiasession.md) i wywołując metodę [IDiaAddressMap:: set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) , a następnie wywołanie do [ IDiaAddressMap::p ut_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md) Metoda. Metoda `get_addressMapEnabled` zwraca wyniki wywołania metody `put_addressMapEnabled`.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)

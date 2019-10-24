@@ -1,5 +1,5 @@
 ---
-title: Kontynuowanie wykonania po wystąpieniu wyjątku | Dokumentacja firmy Microsoft
+title: Kontynuowanie wykonania po wystąpieniu wyjątku | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -25,24 +25,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d557fc0ec056cac22603338f95920e5c721f67dd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e7be214a950c8cc93d986f97834a848bd9ab824e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564102"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745646"
 ---
 # <a name="continuing-execution-after-an-exception"></a>Kontynuowanie wykonania po wyjątkach
-Kiedy debuger przerywa wykonywanie z powodu wyjątku, zobaczysz **pomocnika wyjątków**, domyślnie. Jeśli wyłączono **pomocnika wyjątków** w **opcje** zobaczysz okno dialogowe **Asystenta wyjątków** (C# lub Visual Basic) lub  **Wyjątek** okno dialogowe (C++).
+Gdy debuger przerywa wykonywanie z powodu wyjątku, domyślnie zobaczysz **pomocnika wyjątków**. Jeśli w oknie dialogowym **Opcje** wyłączono **pomocnika wyjątków** , zobaczysz **asystenta wyjątków** (C# lub Visual Basic) lub okno dialogowe **wyjątku** (C++).
 
- Gdy **pomocnika wyjątków** zostanie wyświetlony, możesz spróbować rozwiązać ten problem, który spowodował wyjątek.
+ Po wyświetleniu **pomocnika wyjątków** można spróbować rozwiązać problem, który spowodował wyjątek.
 
-## <a name="managed-and-native-code"></a>Kodu zarządzanego i natywnego
- W kodu zarządzanego i natywnego można kontynuować wykonywania w tym samym wątku, po wystąpieniu nieobsługiwanego wyjątku. **Pomocnika wyjątków** rozwija stos wywołań do punktu, w którym został zgłoszony wyjątek.
+## <a name="managed-and-native-code"></a>Kod zarządzany i natywny
+ W kodzie zarządzanym i natywnym można kontynuować wykonywanie w tym samym wątku po wystąpieniu nieobsłużonego wyjątku. **Pomocnik wyjątku** rozwinięcia stos wywołań do punktu, w którym został zgłoszony wyjątek.
 
 ## <a name="mixed-code"></a>Kod mieszany
- Jeśli napotkasz nieobsługiwany wyjątek podczas debugowania mieszane kodu natywnego i zarządzanego, ograniczenia systemu operacyjnego uniemożliwiają odwijanie stosu wywołań. Jeśli spróbujesz przewijanie stosu wywołań, za pomocą menu skrótów, komunikat o błędzie wyjaśniono, że debuger nie może wykonać odwinięcia z nieobsługiwanego z wyjątkiem podczas debugowania kodu mieszanego.
+ Jeśli wystąpił nieobsługiwany wyjątek podczas debugowania kodu natywnego i zarządzanego, ograniczenia systemu operacyjnego uniemożliwiają rozwinięcia stosu wywołań. Jeśli spróbujesz odwinąć stos wywołań za pomocą menu skrótów, komunikat o błędzie wyjaśnia, że debuger nie może wycofać się z nieobsłużonego elementu, z wyjątkiem debugowania kodu mieszanego.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Zarządzanie wyjątkami za pomocą debugera](../debugger/managing-exceptions-with-the-debugger.md)

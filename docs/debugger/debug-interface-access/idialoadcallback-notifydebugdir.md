@@ -1,5 +1,5 @@
 ---
-title: IDiaLoadCallback::NotifyDebugDir | Microsoft Docs
+title: 'IDiaLoadCallback:: NotifyDebugDir | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce251da3c1cb7b1da00971d46cc0801ad24b8985
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6618440cab9b9042ec371383f6c809ca1d0d11f7
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839826"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743093"
 ---
 # <a name="idialoadcallbacknotifydebugdir"></a>IDiaLoadCallback::NotifyDebugDir
-Wywołuje się, gdy katalog debugowania został znaleziony w pliku .exe.
+Wywoływana, gdy w pliku exe znaleziono katalog debugowania.
 
 ## <a name="syntax"></a>Składnia
 
@@ -35,26 +35,26 @@ HRESULT NotifyDebugDir ( 
 #### <a name="parameters"></a>Parametry
  `fExecutable`
 
-[in] `TRUE` Jeśli katalog debugowania są odczytywane z pliku wykonywalnego (a nie plikiem .dbg).
+[in] `TRUE`, jeśli katalog debugowania jest odczytywany z pliku wykonywalnego (a nie pliku. dbg).
 
  `cbData`
 
-[in] Liczba bajtów danych w katalogu debugowania.
+podczas Liczba bajtów danych w katalogu debugowania.
 
  `data[]`
 
-[in] Tablica, która jest wypełniane katalog debugowania.
+podczas Tablica, która jest wypełniana katalogiem debugowania.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Kod powrotny zwykle jest ignorowany.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Kod powrotny jest zwykle ignorowany.
 
 ## <a name="remarks"></a>Uwagi
- [Idiadatasource::loaddataforexe —](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) metoda wywołuje to wywołanie zwrotne, gdy znajdzie katalog debugowania podczas przetwarzania pliku wykonywalnego.
+ Metoda [IDiaDataSource:: loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) wywołuje to wywołanie zwrotne, gdy odnajdzie katalog debugowania podczas przetwarzania pliku wykonywalnego.
 
- Ta metoda usuwa potrzebę informacje debugowania innych niż znajdującą się w pliku .pdb pomocy technicznej dla klienta w celu odtworzenia pliku wykonywalnego i/lub debugowania. Dzięki tym danym klienta można rozpoznać typu dostępne informacje o debugowaniu i czy znajduje się on w pliku .dbg lub pliku wykonywalnego.
+ Ta metoda eliminuje konieczność odtwarzania pliku wykonywalnego i/lub debugowania przez klienta w celu obsługi informacji debugowania innych niż Znalezione w pliku. pdb. Za pomocą tych danych klient może rozpoznać typ dostępnych informacji debugowania i określić, czy znajduje się on w pliku wykonywalnym lub pliku. dbg.
 
- Większość klientów nie wymaga to wywołanie zwrotne, ponieważ `IDiaDataSource::loadDataForExe` metody przezroczyste otwiera pliki .pdb i .dbg, gdy jest to niezbędne do obsługi symboli.
+ Większość klientów nie będzie potrzebować tego wywołania zwrotnego, ponieważ metoda `IDiaDataSource::loadDataForExe` w sposób przezroczysty otwiera zarówno pliki PDB i. dbg, gdy jest to niezbędne do obsłużynia symboli.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)
 - [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)

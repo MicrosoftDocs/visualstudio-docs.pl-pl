@@ -24,12 +24,12 @@ ms.assetid: c7c60904-27f9-4f1f-b79b-ddf65041b810
 author: Joe-Sewell-PreEmptive
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 78a26da7734e4fa74a9b312b41786caca4b7cc67
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 555b23f33ee1e3541afc6181a9ec6c4ece833b81
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652822"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748888"
 ---
 # <a name="upgrade-dotfuscator-community"></a>Uaktualnianie programu Dotfuscator Community
 
@@ -65,7 +65,7 @@ Ponadto program Dotfuscator Professional oferuje ściślejszą integrację z pro
 Aby uzyskać więcej informacji na temat zaawansowanych funkcji ochrony aplikacji w programie Dotfuscator Professional, odwiedź [stronę omówienia Dotfuscator][product-about] rozwiązań z rozwiązaniami do zaawansowania i [porównaj ją z społecznością Dotfuscator][product-compare].
 [W pełni obsługiwane wersje próbne są dostępne pod adresem PreEmptive.com][eval].
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 [Ten artykuł znajduje się w pełnym podręczniku użytkownika Dotfuscator Community][full]
 

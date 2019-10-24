@@ -1,5 +1,5 @@
 ---
-title: Debugowanie F# | Dokumentacja firmy Microsoft
+title: Debugowanie F# | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,21 +16,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92f570aece9d68e2a4be20c3487137e085e33001
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e7bc3934136f0966439bec2e4368488e52099602
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62851889"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738266"
 ---
-# <a name="debugging-f"></a>Debugowanie F\#
-Debugowanie F# jest podobne do debugowania jakiegokolwiek języka zarządzanego, z pewnymi wyjątkami:
+# <a name="debugging-f"></a>Debugowanie F \#
+Debugowanie F# jest podobne do debugowania dowolnego zarządzanego języka, z kilkoma wyjątkami:
 
-- **Autos** nie są wyświetlane w oknie F# zmiennych.
+- W oknie **samochody** nie są wyświetlane F# zmienne.
 
-- Edytuj i Kontynuuj nie jest obsługiwana dla F#. Edytowanie F# kodu podczas sesji debugowania jest możliwe, ale należy unikać. Ponieważ zmiany w kodzie nie są stosowane podczas sesji debugowania, edytowanie F# kodu podczas debugowania spowoduje niezgodność między kodem źródłowym i debugowany kod.
+- Edytuj i Kontynuuj nie są obsługiwane w F#programie. Edytowanie F# kodu podczas sesji debugowania jest możliwe, ale należy je unikać. Ponieważ zmiany kodu nie są stosowane podczas sesji debugowania, edytowanie F# kodu podczas debugowania spowoduje niezgodność między kodem źródłowym i debugowanym kodem.
 
-- Debuger nie może rozpoznać F# wyrażenia. Wprowadzenia wyrażenia, w oknie debugera lub okno dialogowe podczas F# profilowanie, musi przetłumaczyć wyrażenia w C# składni. Podczas translacji F# wyrażenie C#, upewnij się, że należy pamiętać, że C# używa == jako operator porównania dla równości, które F# używa pojedynczego =.
+- Debuger nie rozpoznaje F# wyrażeń. Aby wprowadzić wyrażenie w oknie debugera lub w oknie dialogowym podczas F# debugowania, należy przetłumaczyć wyrażenie na C# składnię. F# W przypadku tłumaczenia wyrażenia C#na, pamiętaj, aby pamiętać, że C# użycie = = jako operatora porównania dla równości i F# używa jednego =.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Debugowanie kodu zarządzanego](../debugger/debugging-managed-code.md)

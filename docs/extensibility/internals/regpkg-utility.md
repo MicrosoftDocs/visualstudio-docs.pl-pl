@@ -1,5 +1,5 @@
 ---
-title: RegPkg Utility | Microsoft Docs
+title: Narzędzie RegPkg | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,49 +11,49 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5b4e6384730492e0f34470bbe4676ce0d9012c3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f811eb37da730d63e199a0e378b8a9122143649e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310981"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72724446"
 ---
 # <a name="regpkg-utility"></a>Narzędzie RegPkg
 > [!NOTE]
-> Jest preferowanym sposobem rejestrowanie pakietów w programie Visual Studio przy użyciu plików .pkgdef. Pozwala to na rozszerzenie wdrożenia bez potrzeby dostępu do rejestru systemu, która jest wymagana dla wdrożenia VSIX. Pkgdef pliki są tworzone za pomocą [narzędzie CreatePkgDef](../../extensibility/internals/createpkgdef-utility.md). Aby uzyskać więcej informacji na temat wdrażania pakietu Visual Studio, zobacz [wysyłania rozszerzenia programu Visual Studio](../../extensibility/shipping-visual-studio-extensions.md).
+> Preferowanym sposobem rejestrowania pakietów w programie Visual Studio jest użycie plików. pkgdef. Pozwala to na wdrożenie rozszerzenia bez konieczności uzyskiwania dostępu do rejestru systemowego, który jest wymaganiem wdrożenia VSIX. Pliki pkgdef są tworzone za pomocą [Narzędzia CreatePkgDef](../../extensibility/internals/createpkgdef-utility.md). Aby uzyskać więcej informacji na temat wdrażania pakietu programu Visual Studio, zobacz [wysyłanie rozszerzeń programu Visual Studio](../../extensibility/shipping-visual-studio-extensions.md).
 
- Narzędzie RegPkg.exe rejestruje pakietów VSPackage przy użyciu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] i przygotowuje je do wdrożenia. To narzędzie jest używany w tle podczas programowania pakietu VSPackage. Działa jako część procesu kompilacji, aby możesz skompilować i uruchomić pakietu VSPackage w gałęzi eksperymentalne.
+ Narzędzie RegPkg. exe rejestruje pakietu VSPackage z [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] i przygotowuje go do wdrożenia. To narzędzie jest używane w tle podczas opracowywania pakietu VSPackage. Działa w ramach procesu kompilacji, dzięki czemu można kompilować i uruchamiać pakietu VSPackage w eksperymentalnym elemencie Hive.
 
- RegPkg można wygenerować skryptów rejestru systemu w różnych formatach. Można zastosować tych skryptów w projektach wdrożenia, takich jak projekty msi lub pliki zestaw narzędzi XML Instalatora Windows.
+ RegPkg może generować skrypty rejestru systemowego w kilku formatach. Te skrypty można dołączyć do projektów wdrażania, takich jak projekty MSI lub Instalator Windows pliki zestawu narzędzi XML.
 
- RegPkg.exe znajduje się zwykle w \< *ścieżka instalacji programu Visual Studio SDK*> \VisualStudioIntegration\Tools\Bin\RegPkg.exe. RegPkg poniżej następującej składni:
+ RegPkg. exe znajduje się zazwyczaj w lokalizacji \<*ścieżka instalacji zestawu SDK programu Visual Studio*> \VisualStudioIntegration\Tools\Bin\RegPkg.exe. RegPkg ma następującą składnię:
 
 ```
 RegPkg [/root:<root>] [/regfile:<regfile>] [/rgsfile:<rgsfile> [/rgm]] [/vrgfile:<vrgfile>] [/codebase | /assembly] [/unregister] AssemblyPath
 ```
 
- /Root:root wykonanie rejestracji o określonej nazwie.
+ /root: element główny wykonuje rejestrację pod określonym
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] element główny.
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] główny.
 
- /RegFile:filename tworzy plik .reg, a nie aktualizacji rejestru.  Nie można używać z /vrgfile lub /rgsfile lub /wixfile.
+ /regfile: nazwa pliku tworzy plik reg zamiast aktualizować rejestr.  Nie można używać z/vrgfile lub/rgsfile lub/wixfile.
 
- /rgsfile:filename tworzy plik .rgs, a nie aktualizacji rejestru.  Nie można używać z /vrgfile lub/regfile razem lub /wixfile.
+ /rgsfile: nazwa pliku tworzy plik. RGS, a nie aktualizuje rejestru.  Nie można używać z/vrgfile lub/regfile lub/wixfile.
 
- /vrgfile:filename tworzy plik .vrg, a nie aktualizacji rejestru.  Nie można używać z/regfile razem lub /rgsfile lub /wixfile.
+ /vrgfile: nazwa pliku tworzy plik. VRG, a nie aktualizuje rejestru.  Nie można używać z/regfile lub/rgsfile lub/wixfile.
 
- /rgm tworzy plik .rgm oprócz pliku rgs.  Musi być łączona z /rgsfile.
+ /RGM tworzy plik. RGM oprócz pliku RGS.  Muszą być połączone z/rgsfile.
 
- /wixfile:filename tworzy plik zgodnego zestawu narzędzi XML Instalatora Windows, a nie aktualizacji rejestru.  Nie można używać z/regfile razem lub /rgsfile lub /vrgfile.
+ /wixfile: FileName tworzy plik zgodny Instalator Windows z zestawem narzędzi XML, a nie aktualizuje rejestru.  Nie można używać z/regfile lub/rgsfile lub/vrgfile.
 
- / codebase wymusza rejestracji w bazie kodu, a nie zestaw.
+ /CodeBase wymusza rejestrację z użyciem kodu bazowej, a nie zestawu.
 
- / Assembly wymusza rejestrację przy użyciu zestawu, a nie bazy kodu.
+ /Assembly wymusza rejestrację z zestawem, a nie z bazą kodu.
 
- / unregister Unregisters tego pakietu.  Nie można użyć
+ /Unregister wyrejestrowuje ten pakiet.  Nie można użyć
 
- / regfile razem lub /vrgfile lub /rgsfile albo /wixfile.
+ z/regfile lub/vrgfile lub/rgsfile lub/wixfile.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Pakiety VSPackage](../../extensibility/internals/vspackages.md)
 - [Rozwiązywanie problemów z rejestracją pakietu RegPkg](../../extensibility/internals/troubleshooting-regpkg-package-registration.md)

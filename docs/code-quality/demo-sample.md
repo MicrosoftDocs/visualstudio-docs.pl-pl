@@ -11,16 +11,16 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 648d00cd59d056e0874c91338a39667088d93e2e
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 071c16267486e1dda1e183cad3c488345974a3cc
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018435"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745927"
 ---
 # <a name="sample-c-project-for-code-analysis"></a>Przykładowy C++ projekt na potrzeby analizy kodu
 
-W poniższych procedurach pokazano, jak utworzyć przykład dla [Walkthrough: Analizuj kod CC++ /Code dla wad @ no__t-1. Procedury tworzą:
+W poniższych procedurach przedstawiono sposób tworzenia przykładu dla [przewodnika: Analizowanie kodu CC++ /Code pod kątem wad](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md). Procedury tworzą:
 
 - Rozwiązanie programu Visual Studio o nazwie CppDemo.
 
@@ -34,7 +34,7 @@ Procedury te zawierają również kod dla plików nagłówkowych i *. cpp* dla b
 
 1. Kliknij menu **plik** , wskaż polecenie **Nowy**, a następnie kliknij pozycję **Nowy projekt**.
 
-2. Na liście drzewo **typów projektu** , jeśli Wizualizacja C++ nie jest domyślnym językiem programu vs rozwiń **inne języki**.
+2. Na liście drzewa **typy projektów** , jeśli C++ nie jest domyślnym językiem programu vs rozwiń **inne języki**.
 
 3. Rozwiń **węzeł C++Wizualizacja** , a następnie kliknij pozycję **Ogólne**.
 

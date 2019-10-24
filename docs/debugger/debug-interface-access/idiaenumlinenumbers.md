@@ -1,5 +1,5 @@
 ---
-title: Idiaenumlinenumbers — | Dokumentacja firmy Microsoft
+title: IDiaEnumLineNumbers | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49257aa3b9b51a1e8b62c867ced030b853deae9c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c779b82f0e62b2ba71a1ebed8ac695ab0cf0ac7e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833512"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744352"
 ---
 # <a name="idiaenumlinenumbers"></a>IDiaEnumLineNumbers
-Wylicza różne numery wierszy zawartych w źródle danych.
+Wylicza różne numery wierszy zawarte w źródle danych.
 
 ## <a name="syntax"></a>Składnia
 
@@ -28,23 +28,23 @@ Wylicza różne numery wierszy zawartych w źródle danych.
 IDiaEnumLineNumbers : IUnknown
 ```
 
-## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych
 W poniższej tabeli przedstawiono metody `IDiaEnumLineNumbers`.
 
 |Metoda|Opis|
 |------------|-----------------|
-|[IDiaEnumLineNumbers::get__NewEnum](../../debugger/debug-interface-access/idiaenumlinenumbers-get-newenum.md)|Pobiera [interfejsu interfejs IEnumVARIANT](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) wersję tego modułu wyliczającego.|
+|[IDiaEnumLineNumbers::get__NewEnum](../../debugger/debug-interface-access/idiaenumlinenumbers-get-newenum.md)|Pobiera wersję [interfejsu IEnumVARIANT](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) tego modułu wyliczającego.|
 |[IDiaEnumLineNumbers::get_Count](../../debugger/debug-interface-access/idiaenumlinenumbers-get-count.md)|Pobiera liczbę numerów wierszy.|
 |[IDiaEnumLineNumbers::Item](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md)|Pobiera numer wiersza za pomocą indeksu.|
-|[IDiaEnumLineNumbers::Next](../../debugger/debug-interface-access/idiaenumlinenumbers-next.md)|Pobiera określoną liczbę numery wierszy w kolejności wyliczenia.|
-|[IDiaEnumLineNumbers::Skip](../../debugger/debug-interface-access/idiaenumlinenumbers-skip.md)|Pomija określoną liczbę numery wierszy w kolejności wyliczenia.|
-|[IDiaEnumLineNumbers::Reset](../../debugger/debug-interface-access/idiaenumlinenumbers-reset.md)|Resetuje sekwencji wyliczenia na początku.|
-|[IDiaEnumLineNumbers::Clone](../../debugger/debug-interface-access/idiaenumlinenumbers-clone.md)|Tworzy moduł wyliczający, który zawiera ten sam stan wyliczenia jako bieżącego modułu wyliczającego.|
+|[IDiaEnumLineNumbers::Next](../../debugger/debug-interface-access/idiaenumlinenumbers-next.md)|Pobiera określoną liczbę numerów wierszy w sekwencji wyliczenia.|
+|[IDiaEnumLineNumbers::Skip](../../debugger/debug-interface-access/idiaenumlinenumbers-skip.md)|Pomija określoną liczbę numerów wierszy w sekwencji wyliczenia.|
+|[IDiaEnumLineNumbers::Reset](../../debugger/debug-interface-access/idiaenumlinenumbers-reset.md)|Resetuje sekwencję wyliczenia na początek.|
+|[IDiaEnumLineNumbers::Clone](../../debugger/debug-interface-access/idiaenumlinenumbers-clone.md)|Tworzy moduł wyliczający, który zawiera ten sam stan wyliczania co bieżący moduł wyliczający.|
 
 ## <a name="remarks"></a>Uwagi
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
-Ten interfejs jest można uzyskać przez wywołanie jednej z następujących metod w [idiasession —](../../debugger/debug-interface-access/idiasession.md) interfejsu:
+Ten interfejs jest uzyskiwany przez wywołanie jednej z następujących metod w interfejsie [IDiaSession](../../debugger/debug-interface-access/idiasession.md) :
 
 - [IDiaSession::findLines](../../debugger/debug-interface-access/idiasession-findlines.md)
 
@@ -57,7 +57,7 @@ Ten interfejs jest można uzyskać przez wywołanie jednej z następujących met
 - [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)
 
 ## <a name="example"></a>Przykład
-W tym przykładzie pokazano, jak uzyskać `IDiaEnumLineNumbers` interfejsu z sesji. W takim przypadku w przykładzie pokazano sposób uzyskiwania wyliczenie numeru wiersza dla funkcji (reprezentowane przez `pSymbol`). Aby uzyskać bardziej szczegółowy przykład przy użyciu numerów wierszy, zobacz [idialinenumber —](../../debugger/debug-interface-access/idialinenumber.md) interfejsu.
+Ten przykład pokazuje, jak uzyskać interfejs `IDiaEnumLineNumbers` z sesji. W tym przypadku przykład pokazuje, jak uzyskać Wyliczenie numerów wierszy dla funkcji (reprezentowane przez `pSymbol`). Aby zapoznać się z bardziej kompletnym przykładem używania numerów wierszy, zobacz Interfejs [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) .
 
 ```C++
 void dumpFunctionLines( IDiaSymbol* pSymbol, IDiaSession* pSession )
@@ -86,13 +86,13 @@ void dumpFunctionLines( IDiaSymbol* pSymbol, IDiaSession* pSession )
 ```
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: Dia2.h
+Nagłówek: dia2. h
 
-Biblioteka: diaguids.lib
+Biblioteka: diaguids. lib
 
-DLL: msdia80.dll
+DLL: msdia80. dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Interfejsy (Zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)

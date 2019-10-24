@@ -1,5 +1,5 @@
 ---
-title: Okno dialogowe Wizualizator zestawu danych | Dokumentacja firmy Microsoft
+title: Wizualizator zestawu danych — okno dialogowe | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -19,22 +19,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4086c473270befcf2213f003e516128b45c4227
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1e215d4a52965b4e89bc3a01b15da57fc8919437
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62563549"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745603"
 ---
 # <a name="dataset-visualizer-dialog-box"></a>Dataset Visualizer — Okno dialogowe
-Wizualizator zestawu danych służy do wyświetlania zawartości obiektu DataSet, DataTable, widoku danych lub DataViewManager. Ten Wizualizator dostęp, klikając ikonę lupy, który pojawia się obok wartości dla jednej z tych obiektów w oknie zmiennych debugera, lub w poradzie dotyczącej danych.
+Wizualizator zestawu danych umożliwia wyświetlenie zawartości obiektu DataSet, DataTable, DataView lub DataViewManager. Możesz uzyskać dostęp do tego wizualizatora, klikając ikonę lupy, która pojawia się obok wartości jednego z tych obiektów w oknie zmiennych debugera lub w etykietki danych.
 
- Można wprowadzić zmiany do obiektów w tym wizualizatora. Zmiany zostaną zapisane, tak szybko, jak Zatwierdź wiersz.
+ Można wprowadzać zmiany w obiektach w tym wizualizatoru. Zmiany zostaną zapisane zaraz po zatwierdzeniu wiersza.
 
 ## <a name="uielement-list"></a>Lista elementów UI
- Tabela Umożliwia to pole listy rozwijanej wybierz tabelę, w ramach zestawu danych, które mają być wyświetlane.
+ Użyj tej listy rozwijanej, aby wybrać tabelę w zestawie danych, którą chcesz wizualizować.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Zabezpieczenia debugera](../debugger/debugger-security.md)
 - [Tworzenie niestandardowych wizualizatorów](../debugger/create-custom-visualizers-of-data.md)

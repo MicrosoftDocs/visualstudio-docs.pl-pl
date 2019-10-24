@@ -1,5 +1,5 @@
 ---
-title: Idiasourcefile::get_compilands — | Dokumentacja firmy Microsoft
+title: 'IDiaSourceFile:: get_compilands | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15ebc8296bdf78515b31d38a7543a4f41db84664
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dea4b53daae31c90753ef7afb293e69157f58e41
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838249"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741811"
 ---
-# <a name="idiasourcefilegetcompilands"></a>IDiaSourceFile::get_compilands
-Pobiera moduł wyliczający compilands, które mają numery wierszy, które odwołuje się do tego pliku.
+# <a name="idiasourcefileget_compilands"></a>IDiaSourceFile::get_compilands
+Pobiera moduł wyliczający compilands, który ma numery wierszy odwołujące się do tego pliku.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,11 +33,11 @@ HRESULT get_compilands ( 
 #### <a name="parameters"></a>Parametry
  `ppRetVal`
 
-[out] Zwraca [idiaenumsymbols —](../../debugger/debug-interface-access/idiaenumsymbols.md) obiektu, który zawiera listę wszystkich compilands, które mają numery wierszy, które odwołuje się do tego pliku.
+określoną Zwraca obiekt [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) , który zawiera listę wszystkich compilands zawierających numery wierszy odwołujące się do tego pliku.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)
 - [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

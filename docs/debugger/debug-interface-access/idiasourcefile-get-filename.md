@@ -1,5 +1,5 @@
 ---
-title: IDiaSourceFile::get_fileName | Microsoft Docs
+title: 'IDiaSourceFile:: get_fileName | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6f57454be3690f36cbf1addddb3d51bb01a39f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a6e871570ad49a4efe2df320f98fe56b5372c6bb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838353"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741806"
 ---
-# <a name="idiasourcefilegetfilename"></a>IDiaSourceFile::get_fileName
+# <a name="idiasourcefileget_filename"></a>IDiaSourceFile::get_fileName
 Pobiera nazwę pliku źródłowego.
 
 ## <a name="syntax"></a>Składnia
@@ -33,10 +33,10 @@ HRESULT get_fileName ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca nazwę pliku źródłowego.
+określoną Zwraca nazwę pliku źródłowego.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

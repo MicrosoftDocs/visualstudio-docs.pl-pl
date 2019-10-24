@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_isReturnValue | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_isReturnValue | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14ae065f16c2d047311308d63da7680a61fa22ad
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 7bf9d94cd090fdf3993f84147f43a7b2f70dc7e2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62836471"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740099"
 ---
-# <a name="idiasymbolgetisreturnvalue"></a>IDiaSymbol::get_isReturnValue
-Określa, czy zmienna zawiera wartość zwracaną.
+# <a name="idiasymbolget_isreturnvalue"></a>IDiaSymbol::get_isReturnValue
+Określa, czy zmienna przenosi wartość zwracaną.
 
 ## <a name="syntax"></a>Składnia
 
@@ -30,10 +30,10 @@ HRESULT get_isReturnValue(
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Wskaźnik do `BOOL` określająca, czy zmienna zawiera wartość zwracaną.
+określoną Wskaźnik do `BOOL`, który określa, czy zmienna przenosi wartość zwracaną.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

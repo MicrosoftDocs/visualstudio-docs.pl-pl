@@ -13,12 +13,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65ea2f4bc06ee1db5042219d1dd3b4bb38f0a80e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 02f6872ef2acaef65bf6ef1b7631bb06c89518ab
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666473"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747873"
 ---
 # <a name="new-file-command"></a>Nowy plik — Polecenie
 Tworzy nowy plik i otwiera go. Plik zostanie wyświetlony w folderze różne pliki.
@@ -66,7 +66,7 @@ Ten przykład tworzy nową stronę sieci Web "test1. htm" i otwiera ją w edytor
 >File.NewFile test1 /t:"General\HTML Page" /e:"Source Code (text) Editor"
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
 - [Okno Polecenie](../../ide/reference/command-window.md)

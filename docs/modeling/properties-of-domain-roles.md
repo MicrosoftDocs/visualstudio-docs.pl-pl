@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a992cc06a177d329701ca98278ad14632bda8df1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 97df4ceca2c511265a51f89c2f39a6595d200abf
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658167"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748298"
 ---
 # <a name="properties-of-domain-roles"></a>Właściwości ról w domenie
 Właściwości w poniższej tabeli są skojarzone z rolą domeny. Aby uzyskać informacje na temat ról domeny, zobacz [Opis modeli, klas i relacji](../modeling/understanding-models-classes-and-relationships.md). Aby uzyskać więcej informacji o sposobach korzystania z tych właściwości, zobacz [Dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md).
@@ -41,6 +41,6 @@ Właściwości w poniższej tabeli są skojarzone z rolą domeny. Aby uzyskać i
 > [!NOTE]
 > Wartość domyślna nazwy wyświetlanej jest oparta na wartości skojarzonej właściwości przez Wstawianie spacji przed każdym wielkie litery, które jest poprzedzone znakiem małych liter i nie następuje po nim kolejnego znaku Case.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Właściwości relacji domeny](../modeling/properties-of-domain-relationships.md)

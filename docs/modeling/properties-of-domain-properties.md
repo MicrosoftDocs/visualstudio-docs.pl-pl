@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: debf263fa18d2a6af8e95ee959002686540e2c06
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 44fcc45191d6c1e42256a503e98f753b54535e5f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658202"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748315"
 ---
 # <a name="properties-of-domain-properties"></a>Właściwości właściwości domeny
 *Właściwość domeny* jest funkcją elementu modelu, która może zawierać wartość. Na przykład Klasa domeny `Person` może mieć właściwości `Name` i `BirthDate`. W definicji DSL właściwości domeny są wyświetlane w polu Klasa domeny na diagramie i w obszarze klasy domeny w Eksploratorze DSL. Aby uzyskać więcej informacji, zobacz [jak zdefiniować język specyficzny dla domeny](../modeling/how-to-define-a-domain-specific-language.md).
@@ -48,6 +48,6 @@ ms.locfileid: "72658202"
 |**Modyfikator dostępu metody ustawiającej**|Modyfikator dostępu dla metody ustawiającej. Określa zakres, w którym kod programu może ustawić właściwość.|`public`|
 |**Wprowadź**|Typ właściwości. Aby dodać do listy dostępnych typów, kliknij prawym przyciskiem myszy katalog główny DSL w Eksploratorze DSL, a następnie kliknij polecenie **Dodaj typ zewnętrzny**.|`String`|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [narzędzia języka specyficznego dla domeny słownik](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

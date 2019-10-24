@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_textureSlot | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_textureSlot | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b480cfee85af750addddbbc195881adab002e07c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 92aa950447d46f2342fdbaa0114e2bec956cd5a5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62841545"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739165"
 ---
-# <a name="idiasymbolgettextureslot"></a>IDiaSymbol::get_textureSlot
-Pobiera miejsca tekstury.
+# <a name="idiasymbolget_textureslot"></a>IDiaSymbol::get_textureSlot
+Pobiera gniazdo tekstury.
 
 ## <a name="syntax"></a>Składnia
 
@@ -30,10 +30,10 @@ HRESULT get_textureSlot(
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Wskaźnik do `DWORD` zawierający miejsce tekstury.
+określoną Wskaźnik do `DWORD`, który zawiera gniazdo tekstury.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1380cf2cfd4d1ffe729fdd4a6ce9cfb2ba7d9ab6
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: dd4a481a8d4f283204b99cfef4a07106d3e479cb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72435646"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72731279"
 ---
 # <a name="mfc-debugging-techniques"></a>Techniki testowania MFC
 W przypadku debugowania programu MFC te techniki debugowania mogą być przydatne.
@@ -97,7 +97,7 @@ TRACE( "x = %d and y = %d\n", x, y );
 TRACE( "x = %d and y = %x and z = %f\n", x, y, z );
 ```
 
-Makro śledzenia odpowiednio obsługuje parametry char @ no__t-0 i wchar_t @ no__t-1. W poniższych przykładach pokazano użycie makra śledzenia wraz z różnymi typami parametrów ciągu.
+Makro śledzenia odpowiednio obsługuje parametry \* i \* wchar_t. W poniższych przykładach pokazano użycie makra śledzenia wraz z różnymi typami parametrów ciągu.
 
 ```cpp
 TRACE( "This is a test of the TRACE macro that uses an ANSI string: %s %d\n", "The number is:", 2);
@@ -115,7 +115,7 @@ Aby uzyskać więcej informacji na temat makra **śledzenia** , zobacz [usługi 
 MFC udostępnia klasy i funkcje do wykrywania pamięci, która jest przydzielna, ale nigdy nie została cofnięta.
 
 ### <a name="BKMK_Tracking_memory_allocations"></a>Śledzenie alokacji pamięci
-W MFC można użyć makra [DEBUG_NEW](https://msdn.microsoft.com/Library/9b379344-4093-4bec-a3eb-e0d8a63ada9d) zamiast operatora **New** , aby ułatwić lokalizowanie przecieków pamięci. W wersji debugowej programu, `DEBUG_NEW` śledzi nazwę pliku i numer wiersza dla każdego przydzielonego obiektu. Podczas kompilowania wersji programu, `DEBUG_NEW` jest rozpoznawana jako prosta **Nowa** operacja bez nazwy pliku i informacji o numerze wiersza. W ten sposób płatność nie jest kara w wydanej wersji programu.
+W MFC można użyć makra [DEBUG_NEW](https://msdn.microsoft.com/Library/9b379344-4093-4bec-a3eb-e0d8a63ada9d) zamiast operatora **New** , aby ułatwić lokalizowanie przecieków pamięci. W wersji debugowej programu `DEBUG_NEW` śledzi nazwę pliku i numer wiersza dla każdego przydzielonego obiektu. Podczas kompilowania wersji programu, `DEBUG_NEW` jest rozpoznawana jako prosta **Nowa** operacja bez nazwy pliku i informacji o numerze wiersza. W ten sposób płatność nie jest kara w wydanej wersji programu.
 
 Jeśli nie chcesz ponownie pisać całego programu, aby użyć `DEBUG_NEW` zamiast **nowego**, możesz zdefiniować to makro w plikach źródłowych:
 
@@ -125,7 +125,7 @@ Jeśli nie chcesz ponownie pisać całego programu, aby użyć `DEBUG_NEW` zamia
 
 Gdy wykonujesz [zrzut obiektu](#BKMK_Taking_object_dumps), każdy obiekt przydzielony przy użyciu `DEBUG_NEW` będzie wyświetlał plik i numer wiersza, w którym został przydzielony, co pozwala na lokalizowanie źródeł przecieków pamięci.
 
-Wersja do debugowania środowiska MFC używa `DEBUG_NEW` automatycznie, ale kod nie. Jeśli chcesz korzystać z zalet `DEBUG_NEW`, musisz **#define** jawnie użyć `DEBUG_NEW`, jak pokazano powyżej.
+Wersja do debugowania struktury MFC automatycznie używa `DEBUG_NEW`, ale kod nie. Jeśli potrzebujesz korzyści z `DEBUG_NEW`, musisz użyć `DEBUG_NEW` jawnie lub **#define nowe** , jak pokazano powyżej.
 
 [W tym temacie](#BKMK_In_this_topic)
 
@@ -264,9 +264,9 @@ Phone #: 581-0215
 
 Liczby w nawiasach klamrowych na początku większości wierszy określają kolejność, w jakiej obiekty zostały przydzieloną. Ostatnio przydzielony obiekt ma największą liczbę i pojawia się u góry zrzutu.
 
-Aby uzyskać maksymalną ilość informacji z zrzutu obiektu, można przesłonić funkcję członkowską `Dump` dowolnego @no__t obiektu pochodnego -1, aby dostosować zrzut obiektu.
+Aby uzyskać maksymalną ilość informacji z zrzutu obiektu, można przesłonić `Dump` funkcję członkowską dowolnego obiektu pochodnego `CObject`, aby dostosować zrzut obiektu.
 
-Możesz ustawić punkt przerwania dla określonego przydziału pamięci, ustawiając zmienną globalną `_afxBreakAlloc` do liczby pokazanej w nawiasach klamrowych. Po ponownym uruchomieniu programu debuger spowoduje przerwanie wykonywania, gdy ta alokacja zostanie wykonana. Następnie można przyjrzeć się stosowi wywołań, aby zobaczyć, jak Twój program uzyskał do tego punktu.
+Możesz ustawić punkt przerwania dla określonego przydziału pamięci, ustawiając zmienną globalną `_afxBreakAlloc` na liczbę pokazaną w nawiasach klamrowych. Po ponownym uruchomieniu programu debuger spowoduje przerwanie wykonywania, gdy ta alokacja zostanie wykonana. Następnie można przyjrzeć się stosowi wywołań, aby zobaczyć, jak Twój program uzyskał do tego punktu.
 
 Biblioteka wykonawcza C ma podobną funkcję, [_CrtSetBreakAlloc](/cpp/c-runtime-library/reference/crtsetbreakalloc), której można użyć do przydziałów czasu wykonywania w języku c.
 
@@ -378,7 +378,7 @@ public:
 };
 ```
 
-Ponieważ zatopienie obiektu ma sens tylko w przypadku debugowania programu, deklaracja funkcji `Dump` jest zamykana z blokiem **#ifdef _DEBUG/#endif** .
+Ponieważ zatopienie obiektu ma sens tylko w przypadku debugowania programu, deklaracja funkcji `Dump` jest przenawiasem klamrowym **#ifdef _DEBUG/#endif** .
 
 W poniższym przykładzie funkcja `Dump` najpierw wywołuje funkcję `Dump` dla swojej klasy bazowej. Następnie zapisuje Krótki opis każdej zmiennej składowej wraz z wartością elementu członkowskiego w strumieniu diagnostyki.
 
@@ -480,5 +480,5 @@ Kompilowanie wybranych modułów przy użyciu bibliotek debugowania MFC umożliw
 
    [W tym temacie](#BKMK_In_this_topic)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 [Debugowanie kodu natywnego](../debugger/debugging-native-code.md)

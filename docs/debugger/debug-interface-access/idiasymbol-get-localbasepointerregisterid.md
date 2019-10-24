@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_localBasePointerRegisterId | Microsoft Docs
+title: 'IDiaSymbol:: get_localBasePointerRegisterId | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2c556d67ca8823ce54da19de51c934181465807
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 5f9ad47a37c2d9306cc4f087719bfef7a52be308
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64803577"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739875"
 ---
-# <a name="idiasymbolgetlocalbasepointerregisterid"></a>IDiaSymbol::get_localBasePointerRegisterId
-Pobiera identyfikator rejestru, który zawiera podstawowy wskaźnik do zmiennych lokalnych na stosie. Zastosowania [symtagenum — wyliczenie](../../debugger/debug-interface-access/symtagenum.md) ustawiono `SymTagFunction`.
+# <a name="idiasymbolget_localbasepointerregisterid"></a>IDiaSymbol::get_localBasePointerRegisterId
+Pobiera identyfikator rejestru, który zawiera wskaźnik podstawowy do zmiennych lokalnych na stosie. Użyj, gdy [Wyliczenie SymTagEnum —](../../debugger/debug-interface-access/symtagenum.md) jest ustawione na `SymTagFunction`.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,22 +33,22 @@ HRESULT get_localBasePointerRegisterId ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca identyfikator rejestru, który zawiera podstawowy wskaźnik do zmiennych lokalnych na stosie.
+określoną Zwraca identyfikator rejestru, który przechowuje wskaźnik podstawowy do zmiennych lokalnych na stosie.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
-> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Wartość zwracana `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
 ## <a name="remarks"></a>Uwagi
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: Dia2.h
+ Nagłówek: dia2. h
 
- Biblioteka: diaguids.lib
+ Biblioteka: diaguids. lib
 
- DLL: msdia100.dll
+ DLL: msdia100. dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

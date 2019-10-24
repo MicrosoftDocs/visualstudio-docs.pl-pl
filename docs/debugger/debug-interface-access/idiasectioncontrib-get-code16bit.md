@@ -1,5 +1,5 @@
 ---
-title: Idiasectioncontrib::get_code16bit — | Dokumentacja firmy Microsoft
+title: 'IDiaSectionContrib:: get_code16bit | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4e9c190108cdbf1eb7be2d21927a95fe56fca75
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 94fcc9ae93a515890025bb74a810733f213c869a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832473"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742734"
 ---
-# <a name="idiasectioncontribgetcode16bit"></a>IDiaSectionContrib::get_code16bit
-Pobiera flagę wskazującą, czy sekcja zawiera 16-bitowego kodu.
+# <a name="idiasectioncontribget_code16bit"></a>IDiaSectionContrib::get_code16bit
+Pobiera flagę wskazującą, czy sekcja zawiera kod 16-bitowy.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,13 +33,13 @@ HRESULT get_code16bit(
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca `TRUE` w przypadku 16-bitową; w przeciwnym razie kod w sekcji zwraca `FALSE`.
+określoną Zwraca `TRUE`, jeśli kod w sekcji jest 16-bitowy; w przeciwnym razie zwraca `FALSE`.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Ta metoda wskazuje tylko, jeśli kod jest 16-bitowych. Jeśli kod jest nie 16-bitowych, może to być dowolne inne, takie jak kod 32-bitową lub 64-bitowych.
+ Ta metoda wskazuje tylko, czy kod jest 16-bitowy. Jeśli kod nie jest 16-bitowy, może to być coś innego, takiego jak 32-bitowy lub 64-bitowy kod.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

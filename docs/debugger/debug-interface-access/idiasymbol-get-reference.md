@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_reference — | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_reference | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a14e3a380c1409be14142ae9ff3711ab03f410f
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 1bef59b6b7ed2e4161a6687b0e5799cd5683537b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64808881"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739452"
 ---
-# <a name="idiasymbolgetreference"></a>IDiaSymbol::get_reference
-Pobiera flagę określającą, czy wskaźnik typu jest odwołaniem.
+# <a name="idiasymbolget_reference"></a>IDiaSymbol::get_reference
+Pobiera flagę, która określa, czy typ wskaźnika jest odwołaniem.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,13 +33,13 @@ HRESULT get_reference ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca `TRUE` Jeśli typ wskaźnika jest odwołanie; w przeciwnym razie zwraca `FALSE`.
+określoną Zwraca `TRUE`, jeśli typ wskaźnika jest odwołaniem. w przeciwnym razie zwraca `FALSE`.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
-> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Wartość zwracana `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

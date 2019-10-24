@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_targetrelativevirtualaddress — | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_targetRelativeVirtualAddress | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54e573cde9b2317be39f18e3953ebeaedf2717e3
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: c51a946ed6b78220846e779f9849d3b8ae9fd20d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64808999"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739191"
 ---
-# <a name="idiasymbolgettargetrelativevirtualaddress"></a>IDiaSymbol::get_targetRelativeVirtualAddress
-Pobiera względne adres wirtualnych (RVA) obiektu docelowego thunk.
+# <a name="idiasymbolget_targetrelativevirtualaddress"></a>IDiaSymbol::get_targetRelativeVirtualAddress
+Pobiera względny adres wirtualny (RVA) elementu docelowego thunk.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,19 +33,19 @@ HRESULT get_targetRelativeVirtualAddress ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca adres RVA obiektu docelowego thunk.
+określoną Zwraca RVA elementu docelowego thunk.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
-> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Wartość zwracana `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
 ## <a name="remarks"></a>Uwagi
- Ta właściwość jest prawidłowa tylko wtedy, gdy symbol jako [symtagenum — wyliczenie](../../debugger/debug-interface-access/symtagenum.md) wartość `SymTagThunk`.
+ Ta właściwość jest prawidłowa tylko wtedy, gdy symbol jako wartość [wyliczenia symtagenum —](../../debugger/debug-interface-access/symtagenum.md) `SymTagThunk`.
 
- "thunk" jest fragmentem kodu, który wykonuje konwersję między pamięci 32-bitowej przestrzeni adresowej (znany także jako płaska przestrzeń adresowa) i 16-bitowej przestrzeni adresowej (znanych jako przestrzeń adresową segmenty).
+ "Thunk" to fragment kodu, który konwertuje między 32-bitową przestrzenią adresową (znaną również jako płaska przestrzeń adresów) i 16-bitową przestrzenią adresową (znaną jako segmentowy obszar adresów).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [SymTagEnum, wyliczenie](../../debugger/debug-interface-access/symtagenum.md)

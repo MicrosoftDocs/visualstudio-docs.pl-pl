@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_haseh — | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_hasEH | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f861d5cf8be8fedec6d32158aa735b8dfd826587
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 1f08cd539d3042ff0715a5c84445e4cc40214a41
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64786333"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740535"
 ---
-# <a name="idiasymbolgethaseh"></a>IDiaSymbol::get_hasEH
-Pobiera flagę określającą, czy funkcja zawiera wszystkie style języka C++ obsługę niezarządzanych wyjątków (na przykład bloku try/catch).
+# <a name="idiasymbolget_haseh"></a>IDiaSymbol::get_hasEH
+Pobiera flagę, która określa, czy funkcja zawiera niezarządzaną C++obsługę wyjątków (na przykład blok try/catch).
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,20 +33,20 @@ HRESULT get_hasEH(
 #### <a name="parameters"></a>Parametry
  `pFlag`
 
-[out] Zwraca `TRUE` Jeśli funkcja ma jakiekolwiek C++-stylu wyjątek obsługi; w przeciwnym razie zwraca `FALSE`.
+określoną Zwraca `TRUE`, jeśli funkcja ma obsługę C++wyjątków w dowolnym stylu; w przeciwnym razie zwraca `FALSE`.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
-> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Wartość zwracana `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
 ## <a name="requirements"></a>Wymagania
 
 |Wymaganie|Opis|
 |-----------------|-----------------|
-|Nagłówek:|dia2.h|
-|Wersja:|DIA SDK w wersji 8.0|
+|Nagłówki|dia2. h|
+|Wersja:|DIA SDK v 8.0|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

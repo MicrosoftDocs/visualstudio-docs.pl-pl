@@ -1,5 +1,5 @@
 ---
-title: Debugowanie przykładowego kodu HTML i CSS | Dokumentacja firmy Microsoft
+title: Debuguj kod przykładowy HTML i CSS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -14,19 +14,19 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 10fda5038ab1c69a27e79406167c69adcc560658
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 460419d976211747c44f156a5821b88b75aa2e6b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62563477"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745546"
 ---
 # <a name="debug-html-and-css-sample-code"></a>Debugowanie przykładowego kodu HTML i CSS
 
-Kod w tym temacie jest przykładowy plik dla [Szybki Start: Debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md). Błędy obecny zgodnie z projektem w przewodniku Szybki Start zostały rozwiązane w tej wersji kodu.
+Kod w tym temacie to przykładowy plik do [szybkiego startu: Debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md). Błędy występujące w projekcie w szybkim samouczku są rozwiązane w tej wersji kodu.
 
 ## <a name="sample-code"></a>Przykładowy kod
-Poniższy kod HTML jest używany w \<treści > tag w przypadku tego przewodnika Szybki Start.
+Następujący kod HTML jest używany w tagu \<body > w przewodniku Szybki Start.
 
 ```html
 <div id="flipTemplate" data-win-control="WinJS.Binding.Template"
@@ -40,7 +40,7 @@ Poniższy kod HTML jest używany w \<treści > tag w przypadku tego przewodnika 
 </div>
 ```
 
-Następujące arkusze CSS pokazuje dodatki do default.css.
+Poniższy kod CSS pokazuje Dodatki wprowadzone do default. css.
 
 ```css
 #fView {
@@ -50,7 +50,7 @@ Następujące arkusze CSS pokazuje dodatki do default.css.
 }
 ```
 
-Poniższy przykład kodu pokazuje kompletny kod JavaScript w pliku default.js. Odwołania do przestrzeni nazw WinJS, dla tego kodu znajdują się w pliku default.html szablonu.
+Poniższy przykład kodu pokazuje kompletny kod JavaScript w default. js. Odwołania do przestrzeni nazw WinJS dla tego kodu znajdują się w pliku default. html szablonu.
 
 ```javascript
 (function () {
@@ -101,5 +101,5 @@ Poniższy przykład kodu pokazuje kompletny kod JavaScript w pliku default.js. O
 })();
 ```
 
-## <a name="see-also"></a>Zobacz też
-- [Szybki start: Debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md)
+## <a name="see-also"></a>Zobacz także
+- [Szybki start: debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md)

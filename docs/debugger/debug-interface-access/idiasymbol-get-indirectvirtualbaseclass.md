@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_indirectvirtualbaseclass — | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_indirectVirtualBaseClass | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a442585f9b93c08250039a088ed36a9a2bda41c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 32aa963aecc2e44ea2eb808ab5932df8a72fb33f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64786554"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740402"
 ---
-# <a name="idiasymbolgetindirectvirtualbaseclass"></a>IDiaSymbol::get_indirectVirtualBaseClass
-Pobiera flagę określającą, czy typ danych zdefiniowany przez użytkownika jest pośredniej wirtualnej klasy bazowej.
+# <a name="idiasymbolget_indirectvirtualbaseclass"></a>IDiaSymbol::get_indirectVirtualBaseClass
+Pobiera flagę, która określa, czy typ danych zdefiniowany przez użytkownika jest pośrednią wirtualną klasą bazową.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,20 +33,20 @@ HRESULT get_indirectVirtualBaseClass ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca `TRUE` Jeśli typ danych zdefiniowany przez użytkownika jest pośrednia wirtualna klasa bazowa; w przeciwnym razie zwraca `FALSE`.
+określoną Zwraca `TRUE`, jeśli typ danych zdefiniowany przez użytkownika jest pośrednią wirtualną klasą bazową; w przeciwnym razie zwraca `FALSE`.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
-> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Wartość zwracana `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
 ## <a name="requirements"></a>Wymagania
 
 |Wymaganie|Opis|
 |-----------------|-----------------|
-|Nagłówek:|dia2.h|
-|Wersja:|V7.0 DIA SDK|
+|Nagłówki|dia2. h|
+|Wersja:|DIA SDK v 7.0|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

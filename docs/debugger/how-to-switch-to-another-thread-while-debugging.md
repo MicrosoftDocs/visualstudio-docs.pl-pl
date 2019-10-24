@@ -16,36 +16,36 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31eb3427a441b4b79bbd57d9da9871118173b15c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 11ad6280ad1213008bbb8ca8f6311ca34231d308
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62849401"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72732440"
 ---
-# <a name="how-to-switch-to-another-thread-while-debugging-in-visual-studio-c-visual-basic-c"></a>Instrukcje: Przełączanie na inny wątek w trakcie debugowania w programie Visual Studio (C#, Visual Basic, C++)
-Podczas debugowania aplikacji wielowątkowych, można użyć jednego z kilku metod, aby przełączyć się z wątku, który odbywała się wcześniej Praca z do innego wątku.
+# <a name="how-to-switch-to-another-thread-while-debugging-in-visual-studio-c-visual-basic-c"></a>Instrukcje: przełączanie do innego wątku podczas debugowania w programie Visual Studio (C#, Visual Basic, C++)
+Podczas debugowania aplikacji wielowątkowej można użyć dowolnej z kilku metod, aby przełączyć się z wątku, z którym pracujesz w innym wątku.
 
 > [!NOTE]
-> Jeśli chcesz kontrolować kolejność, w którym wykonywanie wątków, musisz [Zablokuj i Odblokuj wątki](../debugger/get-started-debugging-multithreaded-apps.md).
+> Jeśli chcesz kontrolować kolejność wykonywania wątków, należy [zablokować i odblokować wątki](../debugger/get-started-debugging-multithreaded-apps.md).
 
-Żółta strzałka wskazuje bieżący wątek, podczas badania wątków w edytorze kodu i różnych wielowątkowe debugowanie systemu windows. Zielona strzałka z zakręconym ogonkiem wskazuje, czy innym niż bieżący wątek jest bieżący kontekst debugera.
+Gdy badasz wątki w edytorze kodu i różne okna debugowania wielowątkowego, żółta strzałka wskazuje bieżący wątek. Zielona strzałka z ogonem klamrowym wskazuje, że wątek inny niż bieżący ma bieżący kontekst debugera.
 
-### <a name="to-switch-to-any-thread-that-appears"></a>Aby przełączyć się do dowolnego wątku, który pojawia się
+### <a name="to-switch-to-any-thread-that-appears"></a>Aby przełączyć się na dowolny wątek, który pojawia się
 
-- W **wątków** lub **równoległego wyrażenia kontrolnego** okna, kliknij dwukrotnie wątek.
+- W oknie **wątki** lub **równoległe polecenie Watch** kliknij dwukrotnie wątek.
 
-### <a name="to-switch-to-a-thread-in-a-source-window"></a>Aby przełączyć się do wątku w oknie źródła
+### <a name="to-switch-to-a-thread-in-a-source-window"></a>Aby przełączyć się do wątku w oknie źródłowym
 
-- Na lewym marginesie, kliknij prawym przyciskiem myszy ikonę znacznika wątku ![znacznika wątku](../debugger/media/dbg-thread-marker.png "ThreadMarker"), wskaż polecenie **przełączyć się do**, a następnie kliknij nazwę tego wątku, do którego chcesz się przełączyć . Menu skrótów pokazuje tylko wątków w tej konkretnej lokalizacji.
+- Na lewym marginesie kliknij prawym przyciskiem myszy ![znacznik](../debugger/media/dbg-thread-marker.png "ThreadMarker")wątku ikony znacznika, wskaż polecenie **Przełącz do**, a następnie kliknij nazwę tego wątku, do którego chcesz się przełączyć. Menu skrótów zawiera tylko wątki w tym konkretnym miejscu.
 
-     Jeśli są wyświetlane bez znaczników do wątku, kliknij prawym przyciskiem myszy **wątków** okna i sprawdź, czy **Pokaż wątki w źródle** jest zaznaczone.
+     Jeśli nie ma żadnych znaczników wątków, kliknij prawym przyciskiem myszy w oknie **wątki** i sprawdź, czy wybrano opcję **Pokaż wątki w źródle** .
 
-### <a name="to-switch-to-a-thread-in-the-debug-location-toolbar"></a>Aby przełączyć się do wątku w pasku narzędzi debugowania lokalizacji
+### <a name="to-switch-to-a-thread-in-the-debug-location-toolbar"></a>Aby przełączyć się do wątku na pasku narzędzi lokalizacji debugowania
 
-1. Na **Lokalizacja debugowania** narzędzi, kliknij przycisk **wątku** listy.
+1. Na pasku narzędzi **Lokalizacja debugowania** kliknij listę **wątek** .
 
-2. Na liście kliknij wątku, do którego chcesz się przełączyć.
+2. Na liście kliknij wątek, do którego chcesz się przełączyć.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Debugowanie aplikacji wielowątkowych](../debugger/debug-multithreaded-applications-in-visual-studio.md)

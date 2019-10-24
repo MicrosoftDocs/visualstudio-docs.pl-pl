@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_value — | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_value | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f7eee2acc1c131e146f115d75130eabbb5fd1a8
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: ea0a0a2df1687d965437a8977eea649f77ea1ce4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62834548"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738929"
 ---
-# <a name="idiasymbolgetvalue"></a>IDiaSymbol::get_value
-Pobiera wartość stałą.
+# <a name="idiasymbolget_value"></a>IDiaSymbol::get_value
+Pobiera wartość stałej.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,16 +33,16 @@ HRESULT get_value (
 #### <a name="parameters"></a>Parametry
 `pRetVal`
 
-[out w] A `VARIANT` obiekt, który jest wypełniane wartością stałą.
+[in. out] Obiekt `VARIANT`, który jest wypełniony wartością stałej.
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
+Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
-> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Wartość zwracana `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
 ## <a name="remarks"></a>Uwagi
-Podany typ VARIANT musi być zainicjowany, zanim zostanie on przekazany do tej metody. Aby uzyskać więcej informacji zobacz przykład.
+Dostarczony wariant musi zostać zainicjowany przed przekazaniem do tej metody. Aby uzyskać więcej informacji, zobacz przykład.
 
 ## <a name="example"></a>Przykład
 
@@ -69,5 +69,5 @@ void ProcessValue2(IDiaSymbol *pSymbol)
 }
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

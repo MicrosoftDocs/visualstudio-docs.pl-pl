@@ -1,5 +1,5 @@
 ---
-title: Idiaenumsymbolsbyaddr::Prev — | Dokumentacja firmy Microsoft
+title: IDiaEnumSymbolsByAddr::P Rev | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a1b69dbd7e502340e7d563523288a095b733c2d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 70265976e5c6e7c2b3f536f2b8648aaba44df528
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830262"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743858"
 ---
 # <a name="idiaenumsymbolsbyaddrprev"></a>IDiaEnumSymbolsByAddr::Prev
-Pobiera poprzednich symboli w kolejności według adresu.
+Pobiera poprzednie symbole w kolejności według adresu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -35,22 +35,22 @@ HRESULT Prev ( 
 #### <a name="parameters"></a>Parametry
  celt
 
-[in] Liczba symboli w modułu wyliczającego do pobrania.
+podczas Liczba symboli w module wyliczającym do pobrania.
 
  rgelt
 
-[out] Tablica, która ma zostać wypełniony przy użyciu [idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md) obiekty reprezentujące żądaną symboli.
+określoną Tablica, która ma zostać wypełniona obiektami [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) , które reprezentują żądane symbole.
 
  pceltFetched
 
-[out] Zwraca liczbę symboli w pobrano modułu wyliczającego.
+określoną Zwraca liczbę symboli w ramach pobranego modułu wyliczającego.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` przypadku żadnych poprzednich symboli. W przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`. Zwraca `S_FALSE`, jeśli nie ma żadnych poprzednich symboli. W przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Ta metoda aktualizuje pozycja modułu wyliczającego według liczby elementów pobrana.
+ Ta metoda aktualizuje pozycję modułu wyliczającego o liczbę pobranych elementów.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

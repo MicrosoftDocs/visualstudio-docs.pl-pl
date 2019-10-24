@@ -1,5 +1,5 @@
 ---
-title: Idiasectioncontrib::get_comdat — | Dokumentacja firmy Microsoft
+title: 'IDiaSectionContrib:: get_comdat | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49502c0d693c7a309da9756f73c34df361b7d7bb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ef38d5c4afcb065f7a095501e2bf5d95ee493789
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832529"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742727"
 ---
-# <a name="idiasectioncontribgetcomdat"></a>IDiaSectionContrib::get_comdat
-Pobiera flagę wskazującą, czy sekcja jest rekord COMDAT.
+# <a name="idiasectioncontribget_comdat"></a>IDiaSectionContrib::get_comdat
+Pobiera flagę wskazującą, czy sekcja jest rekordem COMDAT.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,13 +33,13 @@ HRESULT get_comdat ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca `TRUE` sekcja jest rekord COMDAT; w przeciwnym razie zwraca `FALSE`.
+określoną Zwraca `TRUE`, jeśli sekcja jest rekordem COMDAT; w przeciwnym razie zwraca `FALSE`.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`. Zwraca `S_FALSE`, jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Rekord COMDAT jest rekord Common Object File Format (COFF), który sprawia, że spakowanych funkcji jest widoczna do konsolidatora.
+ Rekord COMDAT jest rekordem Common Object Format (COFF), który sprawia, że spakowane funkcje widoczne dla konsolidatora.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

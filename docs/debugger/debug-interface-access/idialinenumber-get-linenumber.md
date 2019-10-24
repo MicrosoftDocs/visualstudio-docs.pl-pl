@@ -1,5 +1,5 @@
 ---
-title: Idialinenumber::get_linenumber — | Dokumentacja firmy Microsoft
+title: 'IDiaLineNumber:: get_lineNumber | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77a1554e749e6f5186f7c99844cb793814b0129b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 726f5df7ff898675fc9253b47785c666d435a387
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839839"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743202"
 ---
-# <a name="idialinenumbergetlinenumber"></a>IDiaLineNumber::get_lineNumber
+# <a name="idialinenumberget_linenumber"></a>IDiaLineNumber::get_lineNumber
 Pobiera numer wiersza w pliku źródłowym.
 
 ## <a name="syntax"></a>Składnia
@@ -33,10 +33,10 @@ HRESULT get_lineNumber ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca numer wiersza w pliku źródłowym.
+określoną Zwraca numer wiersza w pliku źródłowym.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`. Zwraca `S_FALSE`, jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
 
 ## <a name="example"></a>Przykład
 
@@ -46,5 +46,5 @@ DWORD linenum;
 pLine->get_lineNumber( &linenum );
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

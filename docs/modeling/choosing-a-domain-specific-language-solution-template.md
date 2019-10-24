@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d5eac08833c534e9da3a998687992cca6bc47c2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 110d357bd113913ab73990b8e3cfa12e4dd1cdae
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653681"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748522"
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>Wybieranie szablonu rozwiązania dotyczącego języka specyficznego dla domeny
 Aby utworzyć rozwiązanie dla języka specyficznego dla domeny, wybierz jeden z szablonów rozwiązań dostępnych w Kreatorze projektant języka specyficznego dla domeny. Wybierając szablon, który najlepiej przypomina język, który chcesz utworzyć, możesz zminimalizować modyfikacje, które należy wykonać w rozwiązaniu początkowym.
@@ -31,6 +31,6 @@ Aby utworzyć rozwiązanie dla języka specyficznego dla domeny, wybierz jeden z
 |Minimalny Projektant WPF|-Mały model<br />-Windows Presentation Foundation interfejs użytkownika, który wyświetla model|Użyj tego szablonu, jeśli chcesz skompilować aplikację, w której jest powiązany DSL z interfejsem użytkownika WPF, a nie projektantem graficznym.<br /><br /> Projektant dla interfejsu użytkownika znajduje się w folderze Dsl\UI.<br /><br /> Należy skompilować projekt przed otwarciem projektanta interfejsu użytkownika.<br /><br /> Aby uzyskać więcej informacji, zobacz [Tworzenie języka specyficznego dla domeny opartego na platformie WPF](../modeling/creating-a-wpf-based-domain-specific-language.md).|
 |Biblioteka DSL|-Minimalna Biblioteka|Użyj tego szablonu, jeśli chcesz skompilować częściową definicję DSL, którą można zaimportować do innych definicji DSL.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Przegląd narzędzi języka specyficznego dla domeny](../modeling/overview-of-domain-specific-language-tools.md)

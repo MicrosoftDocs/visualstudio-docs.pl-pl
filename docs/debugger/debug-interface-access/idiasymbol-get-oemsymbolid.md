@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_oemsymbolid — | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_oemSymbolId | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0a08b29c3d1dae8b79650f450faaf8b9e1d452a
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 60d1486ba654ddba9fdd1dae6439cafbb1f81f29
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64830774"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739592"
 ---
-# <a name="idiasymbolgetoemsymbolid"></a>IDiaSymbol::get_oemSymbolId
-Pobiera wartość Identyfikatora symbolu producenta sprzętu (OEM).
+# <a name="idiasymbolget_oemsymbolid"></a>IDiaSymbol::get_oemSymbolId
+Pobiera wartość identyfikatora symbolu OEM (Original Equipment Manufacturer).
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,19 +33,19 @@ HRESULT get_oemSymbolId ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca wewnętrznie przypisanej producenta OEM symboli identyfikatora.
+określoną Zwraca identyfikator symbolu przypisanego wewnętrznie przez producenta OEM.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
-> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Wartość zwracana `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
 ## <a name="remarks"></a>Uwagi
- Identyfikator jest wartością unikatową, utworzone przez DIA SDK, aby oznaczyć wszystkie symbole jako unikatowy.
+ Identyfikator jest unikatową wartością utworzoną przez DIA SDK, aby oznaczyć wszystkie symbole jako unikatowe.
 
- Ta właściwość ma zastosowanie tylko do symboli z [symtagenum — wyliczenie](../../debugger/debug-interface-access/symtagenum.md) typu `SymTagCustomType`.
+ Ta właściwość ma zastosowanie tylko do symboli z typem [wyliczenia SymTagEnum —](../../debugger/debug-interface-access/symtagenum.md) o wartości `SymTagCustomType`.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [SymTagEnum, wyliczenie](../../debugger/debug-interface-access/symtagenum.md)

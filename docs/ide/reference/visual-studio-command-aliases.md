@@ -16,12 +16,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac67e89ebf04979f8aec55f100e2b1138e9feb22
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f56161e1fd89ce29924368b6029ee12c17e75a65
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72622248"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747702"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio — Aliasy poleceń
 
@@ -99,7 +99,7 @@ Poniższa tabela zawiera listę wstępnie zdefiniowanych aliasów poleceń progr
 |Plik wydruku|drukowany|File.Print|
 |Okno Właściwości|props|View.PropertiesWindow|
 |Zatrzymywanie|q|Debug.StopDebugging|
-|Ponawia|ponawia|Edit.Redo|
+|Ponawia|Ponawia|Edit.Redo|
 |Okno rejestrów|rejestry|Debug.Registers|
 |Uruchom do kursora|RTC|Debug.RunToCursor|
 |Zapisz zaznaczone elementy|pisał|File.SaveSelectedItems|
@@ -125,7 +125,7 @@ Poniższa tabela zawiera listę wstępnie zdefiniowanych aliasów poleceń progr
 |Wyświetlanie listy procesów|&#124;|Debuguj. ListProcesses|
 |[Lista wątków, polecenie](../../ide/reference/list-threads-command.md)|~ ~ * KB ~ \*kb|Debug. Listthreads — Debug. ListTheads/AllThreads|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
 - [Okno Polecenie](../../ide/reference/command-window.md)

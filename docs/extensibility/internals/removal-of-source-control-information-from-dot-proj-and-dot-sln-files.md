@@ -1,5 +1,5 @@
 ---
-title: Usuń informacje o kontroli źródła z plików Proj i SLN
+title: Usuń informacje o kontroli źródła z plików. proj i. sln
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,20 +10,20 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 081766a8169ccc54888a076012b8281c485a20e5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 68e50932a83e3db6d405119d3721d021144cbaeb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318821"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72724276"
 ---
 # <a name="removal-of-source-control-information-from-proj-and-sln-files"></a>Usuwanie informacji o kontroli kodu źródłowego z plików Proj i Sln
-W wersji 1.2 API wtyczki kontroli źródła SCC informacje są przechowywane w MSSCCPRJ. Plik SCC. Zaletą MSSCCPRJ. Plik SCC jest o tym, czy informacje SCC jest nie źródła - kontrolowane, tak jak w przypadku plików Proj i sln.
+W wersji 1,2 interfejsu API dodatku plug-in kontroli źródła informacje o SCC są przechowywane w MSSCCPRJ. Plik SCC. Zaletą MSSCCPRJ. Plik SCC to informacja, że informacje SCC nie są kontrolowane przez źródło, takie jak w plikach. proj i. sln.
 
-## <a name="version-12-changes"></a>Zmiany w wersji 1.2
- W źródła wtyczek kontroli, które są oparte na API wtyczki kontroli źródła w wersji 1.1 informacje o kontroli źródła znajduje się w projekcie (plików Proj) i pliki rozwiązania (.sln). Lokalizacja bazy danych informacji dotyczących kontroli źródła jest określona przez AuxPath, a określonej lokalizacji w bazie danych jest określona przez ProjName. To zachowanie może powodować problemy po gałęzi, rozwidlenia lub operacji kopiowania, ponieważ ProjName zwykle są nieprawidłowe po każdym z tych operacji.
+## <a name="version-12-changes"></a>Zmiany w wersji 1,2
+ W wtyczkach kontroli źródła, które są oparte na interfejsie API wtyczki kontroli źródła w wersji 1,1, informacje o kontroli źródła są przechowywane w plikach projektu (. proj) i rozwiązania (. sln). Lokalizacja bazy danych informacji o kontroli źródła jest określana przez AuxPath, a określona lokalizacja w bazie danych jest określana przez Projname. Takie zachowanie może spowodować problemy po operacji rozgałęzienia, rozwidlenia lub kopiowania, ponieważ Projname zwykle jest nieważny po którejkolwiek z tych operacji.
 
- W interfejsie API wtyczki kontroli źródła w wersji 1.1, IDE używane ~ SAK plików, aby wykryć, czy dodatek typu plug-in obsługiwana MSSCCPRJ. Metoda SCC przechowywania informacje kontroli źródła. API wtyczki kontroli źródła w wersji 1.2 zapewnia nowe możliwości wykrywania obsługę MSSCCPRJ. Plik SCC bez użycia ~ SAK pliku. Aby uzyskać więcej informacji, zobacz [eliminacja ~ SAK pliki](../../extensibility/internals/elimination-of-tilde-sak-files.md).
+ W interfejsie API dodatku plug-in kontroli źródła w wersji 1,1 środowisko IDE używane ~ SAK pliki do wykrycia, czy wtyczka obsługuje MSSCCPRJ. Metoda SCC przechowująca informacje o kontroli źródła. Interfejs API wtyczki kontroli źródła w wersji 1,2 oferuje nową funkcję wykrywania obsługi MSSCCPRJ. Plik SCC bez użycia pliku ~ SAK. Aby uzyskać więcej informacji, zobacz [eliminacja plików ~ SAK](../../extensibility/internals/elimination-of-tilde-sak-files.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Nowości dotyczące wtyczki kontroli kodu źródłowego w interfejsie API w wersji 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

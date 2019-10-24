@@ -1,5 +1,5 @@
 ---
-title: Utrwalanie danych w pliku projektu MSBuild | Dokumentacja firmy Microsoft
+title: Utrwalanie danych w pliku projektu MSBuild | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,61 +10,61 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2f09d84d61464b22b9bbe01478f35410bdd0904
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7772f633c44c50b24995b7cc8a3f2f8bbbb01863
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328512"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72726052"
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>Utrwalanie danych w pliku projektu programu MSBuild
-Podtypu projektu może być konieczne do utrwalenia danych specyficznych dla podtypu do pliku projektu do późniejszego użycia. Podtypu projektu używa trwałość plików projektu, aby spełniać następujące wymagania:
+Podtyp projektu może wymagać utrwalenia danych specyficznych dla określonego typu w pliku projektu w celu późniejszego użycia. Podtyp projektu używa trwałości pliku projektu, aby spełnić następujące wymagania:
 
-1. Utrwalanie danych używanych w ramach tworzenia projektu. (Aby uzyskać więcej informacji na temat aparatu Microsoft Build Engine, zobacz [MSBuild](../../msbuild/msbuild.md).) Informacje dotyczące kompilacji wykonać jedną z następujących:
+1. Utrwalaj dane używane w ramach kompilowania projektu. (Aby uzyskać więcej informacji na Microsoft Build Engine, zobacz [MSBuild](../../msbuild/msbuild.md).) Informacje związane z kompilacją mogą:
 
-    1. Dane niezależnie od konfiguracji. Oznacza to, że — dane przechowywane w elementach programu MSBuild z warunki pustego lub Brak.
+    1. Dane niezależne od konfiguracji. Oznacza to, że dane przechowywane w elementach MSBuild mają puste lub brakujące warunki.
 
-    2. Dane zależne od konfiguracji. Oznacza to, że — dane przechowywane w elementy programu MSBuild, które są można korzystać w konfiguracji określonego projektu. Na przykład:
+    2. Dane zależne od konfiguracji. Oznacza to, że dane przechowywane w elementach programu MSBuild są kondycjonowane dla konkretnej konfiguracji projektu. Na przykład:
 
         ```
         <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
         ```
 
-2. Utrwalanie danych, która nie jest odpowiednia do kompilacji. Te dane mogą być wyrażone w dowolnej postaci XML, który nie jest weryfikowane względem schematu XML.
+2. Utrwalaj dane, które nie są istotne do kompilowania. Te dane mogą być wyrażone w postaci formatu XML bez sprawdzania poprawności względem schematu XML.
 
-    1. Dane niezależnie od konfiguracji.
+    1. Dane niezależne od konfiguracji.
 
     2. Dane zależne od konfiguracji.
 
-## <a name="persisting-build-related-information"></a>Przechowywanie informacji dotyczących kompilacji
- Trwałość danych, które są przydatne podczas tworzenia projektu odbywa się za pośrednictwem programu MSBuild. MSBuild system przechowuje tabelę główną informacji dotyczących kompilacji. Podtypy projektów są zobowiązani do uzyskania dostępu do tych danych do pobierania i ustawiania wartości właściwości. Podtypy projektów można także rozszerzyć w tabeli dane dotyczące kompilacji przez dodanie dodatkowych właściwości w celu jego utrwalenia i usuwając właściwości, więc nie zostaną utrwalone.
+## <a name="persisting-build-related-information"></a>Utrwalanie informacji związanych z kompilacją
+ Trwałość danych przydatnych do kompilowania projektu jest obsługiwana za pomocą programu MSBuild. System MSBuild zachowuje główną tabelę informacji związanych z kompilacją. Podtypy projektu są odpowiedzialne za uzyskiwanie dostępu do tych danych w celu uzyskania i ustawienia wartości właściwości. Podtypy projektu mogą również rozszerzać tabelę danych związanych z kompilacją przez dodanie dodatkowych właściwości, które mają zostać utrwalone i przez usunięcie właściwości, aby nie były utrwalane.
 
- Można zmodyfikować danych MSBuild, podtypu projektu jest odpowiedzialny za pobieranie obiektu właściwości programu MSBuild z systemu podstawowego projektu, za pośrednictwem <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>. <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> to interfejs implementowany podstawowego systemu projektu i agregację zapytania podtypu projektu dla niego, uruchamiając `QueryInterface`.
+ Aby zmodyfikować dane programu MSBuild, podtyp projektu jest odpowiedzialny za pobieranie obiektu właściwości programu MSBuild z podstawowego systemu projektu za pośrednictwem <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>. <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> jest interfejsem zaimplementowanym w podstawowym systemie projektu i agregowanym podtypem projektu zapytania dla niego przez uruchomienie `QueryInterface`.
 
- Poniższa procedura przedstawiono procedurę usuwania właściwość za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>.
+ Poniższa procedura zawiera opis czynności usuwania właściwości przy użyciu <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>.
 
-#### <a name="to-remove-a-property-from-an-msbuild-project-file"></a>Aby usunąć właściwość z pliku projektu programu MSBuild
+#### <a name="to-remove-a-property-from-an-msbuild-project-file"></a>Aby usunąć właściwość z pliku projektu MSBuild
 
-1. Wywołaj `QueryInterface` na <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> podtypu projektu.
+1. Wywołaj `QueryInterface` na <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> podtyp projektu.
 
-2. Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.RemoveProperty%2A> z `pszPropName` ustawienia właściwości do usunięcia.
+2. Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.RemoveProperty%2A> z `pszPropName` ustawioną na właściwość, którą chcesz usunąć.
 
-### <a name="persisting-non-build-related-information"></a>Utrwalanie-Build powiązane informacje.
- Trwałość danych w plikach projektu, który nie ma znaczenia, aby zbudować odbywa się za pośrednictwem <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>.
+### <a name="persisting-non-build-related-information"></a>Utrwalanie informacji dotyczących niezwiązanych z kompilacją
+ Trwałość danych w plikach projektu, które nie mają znaczenia dla kompilacji, jest obsługiwana przez <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>.
 
- Możesz zaimplementować <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> w głównym `project subtype aggregator` obiektu `project subtype project configuration` obiektu i / lub.
+ Można zaimplementować <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> w głównym obiekcie `project subtype aggregator`, obiekcie `project subtype project configuration` lub obu.
 
- Następujące punkty konturu główne pojęcia dotyczące trwałości-build powiązane informacje.
+ Poniższe punkty przedstawiają główne koncepcje dotyczące trwałości informacji niezwiązanych z niekompilacją.
 
-- Podstawowy projekt wywołuje na obiekcie agregatora podtyp (oznacza to, podtypu projektu najbardziej zewnętrznej) głównego projektu, tak aby ładują i zapisują dane niezależnie od konfiguracji i wywoływanych przez nią obiektów konfiguracji projektu podtypu projektu do załadowania lub zapisania zależne od konfiguracji dane.
+- Projekt podstawowy nawołuje się do głównego podtypu projektu (czyli tego, że skrajny podtyp projektu) do załadowania i zapisania danych niezależnych od konfiguracji, a następnie wywołuje obiekty konfiguracji projektu podtypu projektu w celu załadowania lub zapisania zależnej od konfiguracji Data.
 
-- Podstawowy projekt wywołuje metody <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> wiele razy dla każdego poziomu Agregacja podtypu projektu i przekazuje identyfikator GUID dla poszczególnych poziomów.
+- Projekt podstawowy wywołuje metody <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> wiele razy dla każdego poziomu agregacji podtypu projektu i przekazuje identyfikator GUID dla każdego poziomu.
 
-- Podstawowy projekt przekazuje lub odbiera fragment XML dedykowanego podtypem konkretnego projektu, która używa tego mechanizmu jako sposób utrwalanie stanu między poziomach agregacji.
+- Projekt podstawowy przekazuje lub odbiera fragment XML, który jest przeznaczony dla określonego podtypu projektu i używa tego mechanizmu jako sposobu utrwalania stanu między poziomami agregacji.
 
-- Podstawowy projekt wywołuje podtypu projektu najbardziej zewnętrznej <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>implementacji, przekazując identyfikatorem GUID. Jeśli identyfikator GUID należy do podtypu projektu najbardziej zewnętrznej, obsługuje on wywołania. w przeciwnym razie deleguje ona wywołanie podtypu projektu wewnętrzny i tak dalej, aż do znalezienia podtypu projektu, który odpowiada identyfikator GUID.
+- Projekt podstawowy wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>implementation przekazaniem najbardziej zewnętrznego podtypu projektu w identyfikatorze GUID. Jeśli identyfikator GUID należy do zewnętrznego podtypu projektu, obsługuje wywołanie. w przeciwnym razie deleguje wywołanie do wewnętrznego podtypu projektu i tak dalej, aż zostanie znaleziony podtyp projektu, do którego odnosi się identyfikator GUID.
 
-- Podtypu projektu można również zmodyfikować XML fragment przed lub po deleguje ona wywołanie podtypu projektu wewnętrznego. Poniższy przykład przedstawia fragment pliku projektu, w których nazwa pliku, który zawiera właściwości specyficzne dla podtypem projektu jest przekazywany do tego podtypu projektu.
+- Podtyp projektu może również zmodyfikować fragment XML przed lub po oddelegowaniu wywołania do wewnętrznego podtypu projektu. Poniższy przykład przedstawia fragment z pliku projektu, gdzie nazwa pliku, który zawiera właściwości specyficzne dla podtypu projektu, jest przenoszona do tego podtypu projektu.
 
     ```
     <ProjectExtensions>
@@ -76,5 +76,5 @@ Podtypu projektu może być konieczne do utrwalenia danych specyficznych dla pod
       </ProjectExtensions>
     ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Podtypy projektów](../../extensibility/internals/project-subtypes.md)

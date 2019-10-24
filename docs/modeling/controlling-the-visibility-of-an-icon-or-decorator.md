@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13f019fcb42d908d81d4e356f664772029141993
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 76db7caa14050c924706763214e92a6ee3d68975
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654147"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748501"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Kontrolowanie widoczności ikony lub elementu Decorator
 *Dekoratora* jest ikoną lub wierszem tekstu, który pojawia się na kształcie w języku specyficznym dla domeny (DSL). Można sprawić, aby dekoratora pojawiał się i znikał w zależności od stanu właściwości w modelu. Na przykład na kształcie reprezentującym osobę można mieć różne ikony, które są wyświetlane w zależności od płci osoby, liczby elementów podrzędnych itd.
@@ -103,7 +103,7 @@ ms.locfileid: "72654147"
 
 8. Skompiluj ponownie i uruchom rozwiązanie.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Definiowanie kształtów i łączników](../modeling/defining-shapes-and-connectors.md)
 - [Ustawienie obrazu tła w diagramie](../modeling/setting-a-background-image-on-a-diagram.md)

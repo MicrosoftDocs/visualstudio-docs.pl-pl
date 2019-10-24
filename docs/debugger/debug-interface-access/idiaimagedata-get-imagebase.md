@@ -1,5 +1,5 @@
 ---
-title: Idiaimagedata::get_imagebase — | Dokumentacja firmy Microsoft
+title: 'IDiaImageData:: get_imageBase | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de8c333391530cd86c6fc66a8e6c36ce8cfecd5f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7887fea30b04f4ebb6605169c58551122eccf73d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829058"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743434"
 ---
-# <a name="idiaimagedatagetimagebase"></a>IDiaImageData::get_imageBase
-Pobiera lokalizację pamięci, gdzie obraz powinien opierać się.
+# <a name="idiaimagedataget_imagebase"></a>IDiaImageData::get_imageBase
+Pobiera lokalizację pamięci, w której powinien być oparty obraz.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,13 +33,13 @@ HRESULT get_imageBase ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca obraz sugerowane wartości bazowej.
+określoną Zwraca sugerowaną wartość bazową obrazu.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Z powodu konfliktów podstawowego obrazu obraz może być zmieniona automatycznie lokalizacją nieużywanej pamięci podczas jego ładowania. Ta metoda zwraca podstawowej wskazówki (lokalizacja zalecany rozmiar pamięci) są przechowywane w module w czasie kompilacji.
+ Ze względu na konflikty na podstawie obrazu można automatycznie zmienić bazę obrazu do nieużywanej lokalizacji pamięci podczas ładowania. Ta metoda zwraca wskazówkę bazową (sugerowaną lokalizację pamięci) przechowywaną w module w czasie kompilacji.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaImageData](../../debugger/debug-interface-access/idiaimagedata.md)

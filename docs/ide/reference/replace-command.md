@@ -13,12 +13,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: efd6398e475f08d07b8c2fd2eadb3d580aa4255d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b13dee4ec87a0a4c2735d9523bff093046c5b38c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655587"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747784"
 ---
 # <a name="replace-command"></a>Zastąp — Polecenie
 Zamienia tekst w plikach za pomocą podzestawu opcji dostępnych na karcie **Zamień na pliki w** oknie **Znajdź i Zamień** .
@@ -100,7 +100,7 @@ Ten przykład zastępuje `btnSend` z `btnSubmit` we wszystkich otwartych dokumen
 >Edit.Replace btnSend btnSubmit /open
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Znajdowanie i zastępowanie tekstu](../../ide/finding-and-replacing-text.md)
 - [Okno Polecenie](../../ide/reference/command-window.md)

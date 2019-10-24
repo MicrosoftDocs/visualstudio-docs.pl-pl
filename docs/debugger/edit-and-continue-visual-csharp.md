@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 665e778fc0881ac05e165c85700d15285622c762
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: a4d11875a7ab2ca3f21f364308580a732b7516e6
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186359"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737931"
 ---
 # <a name="edit-and-continue-visual-c"></a>Edytuj i kontynuuj (Visual C#)
  Za pomocą Edytuj i Kontynuuj C#dla można wprowadzać zmiany w kodzie w trybie przerwania podczas debugowania. Zmiany można zastosować bez konieczności zatrzymywania i ponownego uruchamiania sesji debugowania. W trybie uruchamiania Edytor źródła jest tylko do odczytu.
@@ -36,9 +36,9 @@ ms.locfileid: "71186359"
 
  Gdy funkcja Edytuj i Kontynuuj jest włączona, obsługiwane zmiany są stosowane automatycznie podczas korzystania z polecenia debugger Execution, takiego jak **Kontynuuj**, **Step**, **Set Next**lub przeprowadź ocenę funkcji w oknie debugera.
 
- Aby uzyskać więcej informacji, zobacz [jak: Użyj Edytuj i Kontynuuj (C#)](../debugger/how-to-use-edit-and-continue-csharp.md).
+ Aby uzyskać więcej informacji, zobacz [How to: use Edit and ContinueC#()](../debugger/how-to-use-edit-and-continue-csharp.md).
 
-## <a name="see-also"></a>Zobacz też
-- [Instrukcje: Korzystanie z funkcji Edytuj i kontynuuj (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
+## <a name="see-also"></a>Zobacz także
+- [Instrukcje: używanie funkcji Edytuj i kontynuuj (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
 - [Obsługiwane zmiany kodu (C# i Visual Basic)](../debugger/supported-code-changes-csharp.md)
 - [Pisanie i debugowanie uruchomionego kodu XAML przy użyciu gorącego ponownego ładowania XAML w programie Visual Studio](../debugger/xaml-hot-reload.md)

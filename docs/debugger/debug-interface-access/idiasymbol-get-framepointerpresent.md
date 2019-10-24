@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_framepointerpresent — | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_framePointerPresent | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7914845bccb43ce302665428c824bbf3ebb2c819
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 1fce085f134b844d7e53e19d9e2ec057aa8a89ca
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64825337"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740668"
 ---
-# <a name="idiasymbolgetframepointerpresent"></a>IDiaSymbol::get_framePointerPresent
-Pobiera flagę określającą, czy znajduje się wskaźnik ramki. Zastosowania [symtagenum — wyliczenie](../../debugger/debug-interface-access/symtagenum.md) ustawiono `SymTagFunction`.
+# <a name="idiasymbolget_framepointerpresent"></a>IDiaSymbol::get_framePointerPresent
+Pobiera flagę, która określa, czy wskaźnik ramki jest obecny. Użyj, gdy [Wyliczenie SymTagEnum —](../../debugger/debug-interface-access/symtagenum.md) jest ustawione na `SymTagFunction`.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,22 +33,22 @@ HRESULT get_framePointerPresent( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out]] Zwraca `TRUE` wskaźnik ramki jest obecny; w przeciwnym razie, zwraca wartość `FALSE`.
+[out]] Zwraca `TRUE`, jeśli wskaźnik ramki jest obecny; w przeciwnym razie zwraca `FALSE`.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
-> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Wartość zwracana `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
 ## <a name="remarks"></a>Uwagi
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: Dia2.h
+ Nagłówek: dia2. h
 
- Biblioteka: diaguids.lib
+ Biblioteka: diaguids. lib
 
- DLL: msdia100.dll
+ DLL: msdia100. dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

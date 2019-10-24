@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1e3dd8c395c59bc3255c1c9ee55837466c1cef7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 75a81ae23db90b06915e7090a9f2918be3ff18ae
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828512"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743407"
 ---
 # <a name="idiaimagedata"></a>IDiaImageData
-Przedstawia szczegółowe informacje o podstawowej przesunięcia lokalizacji i pamięci, modułu lub obrazu.
+Opisuje szczegóły lokalizacji podstawowej i przesunięcia pamięci modułu lub obrazu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -28,23 +28,23 @@ Przedstawia szczegółowe informacje o podstawowej przesunięcia lokalizacji i p
 IDiaImageData : IUnknown
 ```
 
-## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych
 W poniższej tabeli przedstawiono metody `IDiaImageData`.
 
 |Metoda|Opis|
 |------------|-----------------|
 |[IDiaImageData::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-relativevirtualaddress.md)|Pobiera lokalizację w pamięci wirtualnej modułu względem aplikacji.|
 |[IDiaImageData::get_virtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-virtualaddress.md)|Pobiera lokalizację w pamięci wirtualnej obrazu.|
-|[IDiaImageData::get_imageBase](../../debugger/debug-interface-access/idiaimagedata-get-imagebase.md)|Pobiera lokalizację pamięci, gdzie obraz powinien opierać się.|
+|[IDiaImageData::get_imageBase](../../debugger/debug-interface-access/idiaimagedata-get-imagebase.md)|Pobiera lokalizację pamięci, w której powinien być oparty obraz.|
 
 ## <a name="remarks"></a>Uwagi
-Niektóre strumienie debugowania (XDATA, PDATA) zawierają kopie danych również przechowywane na obrazie. Strumienia tych obiektów można wykonywać zapytania dla danych `IDiaImageData` interfejsu. Zobacz sekcję "Uwagi dla wywołań" w tym temacie, aby uzyskać szczegółowe informacje.
+Niektóre strumienie debugowania (XDATA, PDATA) zawierają kopie danych również przechowywane w obrazie. Te obiekty danych strumienia mogą być zapytania dla interfejsu `IDiaImageData`. Aby uzyskać szczegółowe informacje, zobacz sekcję "uwagi dotyczące wywoływania" w tym temacie.
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
-Uzyskanie tego interfejsu, wywołując `QueryInterface` na [idiaenumdebugstreamdata —](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) obiektu. Należy zauważyć, że debugowanie nie wszystkie strumienie pomocy technicznej `IDiaImageData` interfejsu. Na przykład aktualnie obsługuje tylko strumienie XDATA i PDATA `IDiaImageData` interfejsu.
+Uzyskaj ten interfejs, wywołując `QueryInterface` na obiekcie [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) . Należy zauważyć, że nie wszystkie strumienie debugowania obsługują interfejs `IDiaImageData`. Na przykład obecnie tylko strumienie XDATA i PDATA obsługują interfejs `IDiaImageData`.
 
 ## <a name="example"></a>Przykład
-W tym przykładzie wyszukuje wszystkie strumienie debugowania dla strumieniem, który obsługuje `IDiaImageData` interfejsu. Jeśli zostanie znaleziony taki strumienia, niektóre informacje o strumieniu jest wyświetlany.
+W tym przykładzie przeszukiwane są wszystkie strumienie debugowania dla dowolnego strumienia, który obsługuje interfejs `IDiaImageData`. Jeśli zostanie znaleziony taki strumień, wyświetlane są pewne informacje o tym strumieniu.
 
 ```C++
 void ShowImageData(IDiaSession *pSession)
@@ -111,12 +111,12 @@ void ShowImageData(IDiaSession *pSession)
 ```
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: Dia2.h
+Nagłówek: dia2. h
 
-Biblioteka: diaguids.lib
+Biblioteka: diaguids. lib
 
-DLL: msdia80.dll
+DLL: msdia80. dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Interfejsy (Zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)

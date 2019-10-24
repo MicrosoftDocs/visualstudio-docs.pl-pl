@@ -1,5 +1,5 @@
 ---
-title: Zapytania Edytuj zapytanie, Zapisz (pakiet VSPackage kontroli) | Dokumentacja firmy Microsoft
+title: Zapytanie edycji zapytania Save (pakietu VSPackage kontroli źródła) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,28 +12,28 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3bffdac79a9f4274fbd6465c33e8659caf9d1f6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: be12297bdaeb112d7421b02da1153ed62d6d14f8
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341462"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72724772"
 ---
 # <a name="query-edit-query-save-source-control-vspackage"></a>Edytowanie i zapisywanie zapytań (pakiet VSPackage kontroli kodu źródłowego)
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] edytory może emitować zdarzenia zapytania Edytuj zapytanie Zapisz (QEQS). [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Klasy zastępczej kontroli źródła implementuje usługę QEQS tak, aby odbiorca zdarzenia QEQS. Zdarzenia te są następnie delegowane do kontroli źródła aktualnie aktywnego pakietu VSPackage. Implementuje pakietu VSPackage do kontroli źródła active <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> i jego metod. Metody `IVsQueryEditQuerySave2` interfejsu są zwykle nazywane bezpośrednio przed wykonaniem edycji dokumentu po raz pierwszy, i od razu, aby dokument został zapisany.
+Edytory [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] mogą emitować zdarzenia edycji zapytania Save (QEQS). [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] stub kontroli źródła implementuje usługę QEQS, tak aby była odbiorcą zdarzeń QEQS. Te zdarzenia są następnie delegowane do aktualnie aktywnej kontroli źródła pakietu VSPackage. Aktywna pakietu VSPackage kontroli źródła implementuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> i jej metody. Metody interfejsu `IVsQueryEditQuerySave2` są zwykle wywoływane bezpośrednio przed edytowaniem dokumentu po raz pierwszy i bezpośrednio przed zapisaniem dokumentu.
 
 ## <a name="queryeditquerysave-events"></a>Zdarzenia QueryEditQuerySave
- Kontrola źródła pakietu VSPackage musi obsługiwać zdarzenia QEQS implementując `IVsQueryEditQuerySave2` interfejsu i niezbędne metody. Poniżej przedstawiono krótki opis pakietu VSPackage musi implementować co najmniej dwóch metod. Rzeczywiste wdrożenie muszą być zgodne z logiką odpowiedni model kontroli źródła.
+ Pakietu VSPackage kontroli źródła musi obsługiwać zdarzenia QEQS przez implementację interfejsu `IVsQueryEditQuerySave2` i niezbędnych metod. Poniżej znajduje się krótki opis dwóch metod, które pakietu VSPackage muszą zaimplementować co najmniej. Rzeczywista implementacja musi być zgodna z logiką modelu kontroli źródła.
 
-### <a name="queryeditfiles-method"></a>Metoda QueryEditFiles
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> Jest wywoływana, gdy projekt lub Edytor chce modyfikacji pliku. W idealnym przypadku ta metoda jest wywoływana *przed* plik zostanie zmodyfikowany i przy zapisywaniu pliku. Po wywołaniu, `IVsQueryEditQuerySave2::QueryEditFiles` metoda sprawdza, czy dany pliki znajdują się pod kontrolą źródła, czy muszą zostać wyewidencjonowany i czy można wykorzystać. Jeśli okoliczności uniemożliwić pliki można edytować, `IVsQueryEditQuerySave2::QueryEditFiles` metoda informuje program wywołujący, aby anulować edycję. Jest również możliwe do obiektu wywołującego określić tryb wywołania. W trybie "silent" Ta metoda przyjmuje akcję tylko wtedy, gdy nie powoduje wyświetlenie wszelkich elementów interfejsu użytkownika. Jeśli interfejs użytkownika jest nieuniknione, Flaga musi zostać zwrócona do wskazują na problem.
+### <a name="queryeditfiles-method"></a>QueryEditFiles, Metoda
+ @No__t_0 jest wywoływana, gdy dowolny projekt lub Edytor chce zmodyfikować plik. W idealnym przypadku ta metoda jest wywoływana *przed* zmodyfikowaniem pliku i po jego zapisaniu. Po wywołaniu metoda `IVsQueryEditQuerySave2::QueryEditFiles` sprawdza, czy dane znajdują się pod kontrolą źródła, czy muszą zostać wyewidencjonowane, oraz czy można je ponownie załadować. Jeśli nie można edytować plików, Metoda `IVsQueryEditQuerySave2::QueryEditFiles` informuje program wywołujący, aby anulował edycję. Istnieje również możliwość określenia trybu wywołania przez obiekt wywołujący. W trybie dyskretnym ta metoda wykonuje akcję tylko wtedy, gdy nie powoduje wyświetlania żadnego interfejsu użytkownika. Jeśli nie można uniknąć tego interfejsu, należy zwrócić flagę w celu wskazania problemu.
 
- Metoda działa w sposób transakcyjny; oznacza to jeśli edycji zostanie anulowana na pojedynczy plik, Edytuj została anulowana, dla wszystkich plików. Z drugiej strony Jeśli edycja jest dozwolone, jest dozwolona dla wszystkich plików. Jeśli ta metoda umożliwia edytowanie raz dla danego zestawu plików, jego musi zawsze Zezwalaj na edycję w kolejnych wywołaniach dla tego samego zestawu plików. Zezwalaj na edytowanie pętli jest powtarzany do momentu pliki są zamknięte, zapisać i ponownie załadować; do momentu zmiany jego atrybutów (właściwości); lub dopóki nie zostanie zmieniony pakietu kontroli źródła. Sytuacjach należy rozważyć Implementowanie `IVsQueryEditQuerySave2::QueryEditFiles` metody obejmują wiele plików, pliki specjalne, Anuluj od użytkownika i edycję w pamięci.
+ Metoda zachowuje się w sposób transakcyjny; oznacza to, że jeśli Edycja zostanie anulowana w jednym pliku, Edycja zostanie anulowana dla wszystkich plików. Na odwrót, jeśli Edycja jest dozwolona, jest dozwolona dla wszystkich plików. Jeśli ta metoda umożliwia edytowanie jednokrotne dla danego zestawu plików, musi zawsze zezwalać na edycję w kolejnych wywołaniach dla tego samego zestawu plików. Pętla zezwalania na edycję będzie kontynuowana do momentu zamknięcia, zapisania i ponownego załadowania plików; do momentu zmiany atrybutów (właściwości); lub do momentu zmiany pakietu kontroli źródła. Przypadki, do których należy wziąć pod uwagę wdrożenie metody `IVsQueryEditQuerySave2::QueryEditFiles`, obejmują wiele plików, pliki specjalne, anulowanie z użytkownika i edycję w pamięci.
 
-### <a name="querysavefiles-method"></a>Metoda QuerySaveFiles
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A> Jest wywoływana, gdy projekt lub Edytor potrzebne do zapisania zestawu plików. Po wywołaniu, `IVsQueryEditQuerySave2::QuerySaveFiles` metoda sprawdza w przypadku danego pliki tylko do odczytu oraz czy są one pod kontrolą źródła. Jeśli pliki muszą zostać wyewidencjonowane, wywołanie jest delegowane do pakietu kontroli źródła. Jeśli okoliczności uniemożliwić pliki są zapisywane, `IVsQueryEditQuerySave2::QuerySaveFiles` metoda musisz poinformować edytora, aby anulować zapisywanie. Podobnie jak w przypadku `IVsQueryEditQuerySave2::QueryEditFiles` metody jest możliwe do obiektu wywołującego określić tryb wywołania. W trybie "silent" Ta metoda przyjmuje akcję tylko wtedy, gdy nie powoduje wyświetlenie wszelkich elementów interfejsu użytkownika. Jeśli interfejs użytkownika jest nieuniknione, Flaga musi zostać zwrócona do wskazują na problem.
+### <a name="querysavefiles-method"></a>QuerySaveFiles, Metoda
+ @No__t_0 jest wywoływana, gdy dowolny projekt lub Edytor muszą zapisać zestaw plików. Gdy jest wywoływana, Metoda `IVsQueryEditQuerySave2::QuerySaveFiles` sprawdza, czy dany plik jest tylko do odczytu i czy znajduje się pod kontrolą źródła. Jeśli pliki wymagają wyewidencjonowania, wywołanie jest delegowane do pakietu kontroli źródła. Jeśli nie ma możliwości zapisania plików, Metoda `IVsQueryEditQuerySave2::QuerySaveFiles` musi poinformować Edytor, aby anulował zapisywanie. Podobnie jak w przypadku metody `IVsQueryEditQuerySave2::QueryEditFiles`, możliwe jest określenie trybu wywołania przez obiekt wywołujący. W trybie dyskretnym ta metoda wykonuje akcję tylko wtedy, gdy nie powoduje wyświetlania żadnego interfejsu użytkownika. Jeśli nie można uniknąć tego interfejsu, należy zwrócić flagę w celu wskazania problemu.
 
- Ta metoda musi zachowywać się w sposób transakcyjny; oznacza to jeśli zapisu została anulowana na pojedynczy plik, Zapisz została anulowana, dla wszystkich plików. Z drugiej strony jeśli jest dozwolone zapisywanie, muszą być dozwolone dla wszystkich plików. Podobnie jak w przypadku `IVsQueryEditQuerySave2::QueryEditFiles` metody, przypadkach należy rozważyć Implementowanie `IVsQueryEditQuerySave2::QuerySaveFiles` metody obejmują wiele plików, pliki specjalne, Anuluj od użytkownika i edycję w pamięci.
+ Ta metoda musi działać w sposób transakcyjny; oznacza to, że jeśli zapis zostanie anulowany w jednym pliku, operacja zapisywania zostanie anulowana dla wszystkich plików. Z drugiej strony, jeśli zapis jest dozwolony, musi być dozwolony dla wszystkich plików. Podobnie jak w przypadku metody `IVsQueryEditQuerySave2::QueryEditFiles`, sytuacje, w których należy wziąć pod uwagę implementację metody `IVsQueryEditQuerySave2::QuerySaveFiles`, obejmują wiele plików, pliki specjalne, anulowanie z użytkownika i edycję w pamięci.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>
