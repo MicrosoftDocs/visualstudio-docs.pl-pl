@@ -1,5 +1,5 @@
 ---
-title: Idiainjectedsource::get_sourcecompression — | Dokumentacja firmy Microsoft
+title: 'IDiaInjectedSource:: get_sourceCompression | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00c7783752a183e8afc580c4c74285add8a51041
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9428b30df82d92a8c74511644aaf97f2166807a2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839917"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743317"
 ---
-# <a name="idiainjectedsourcegetsourcecompression"></a>IDiaInjectedSource::get_sourceCompression
-Pobiera wskaźnik kompresji źródła używane.
+# <a name="idiainjectedsourceget_sourcecompression"></a>IDiaInjectedSource::get_sourceCompression
+Pobiera wskaźnik używanej kompresji źródłowej.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,13 +33,13 @@ HRESULT get_sourceCompression ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca wskaźnik kompresji źródła używane. Wartość zero wskazuje, czy użyto bez kompresji źródła.
+określoną Zwraca wskaźnik używanej kompresji źródłowej. Wartość zerowa wskazuje, że nie użyto kompresji źródłowej.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`. Zwraca `S_FALSE`, jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Wartość zwrócona przez tę metodę jest specyficzne dla kompilatora używane. Na przykład kompilatora może użyć kompresji kodowania o długości przebiegu lub stylu Huffmana.
+ Wartość zwracana przez tę metodę jest specyficzna dla używanego kompilatora. Na przykład kompilator może użyć kodowania o długości uruchomienia lub kompresji w stylu Huffmana.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

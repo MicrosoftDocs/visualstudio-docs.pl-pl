@@ -13,12 +13,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 813b9ea0c51b4812c1d8bab4f1fb8be624893016
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9ab914d62053b5cbefe92ee0ce8356c10dad82e6
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654353"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748760"
 ---
 # <a name="find-command"></a>Find — Polecenie
 Przeszukuje pliki za pomocą podzestawu opcji dostępnych na karcie **Znajdź w plikach** okna **Znajdź i Zamień** .
@@ -77,7 +77,7 @@ W tym przykładzie jest wykonywane wyszukiwanie z uwzględnieniem wielkości lit
 >Edit.Find somestring /sel /case
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Okno Polecenie](../../ide/reference/command-window.md)
 - [Pole znajdowania i polecenia](../../ide/find-command-box.md)

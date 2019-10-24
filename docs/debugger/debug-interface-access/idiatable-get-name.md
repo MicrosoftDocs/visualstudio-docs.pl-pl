@@ -1,5 +1,5 @@
 ---
-title: IDiaTable::get_name | Microsoft Docs
+title: 'IDiaTable:: get_name | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc5ac9b3892ad9447f413df58d43791b1be1720a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e3874ad63026208d096a2b7866377d09ac79cbe9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840484"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738759"
 ---
-# <a name="idiatablegetname"></a>IDiaTable::get_name
+# <a name="idiatableget_name"></a>IDiaTable::get_name
 Pobiera nazwę tabeli.
 
 ## <a name="syntax"></a>Składnia
@@ -33,10 +33,10 @@ HRESULT get_name ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca nazwę tabeli.
+określoną Zwraca nazwę tabeli.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaTable](../../debugger/debug-interface-access/idiatable.md)

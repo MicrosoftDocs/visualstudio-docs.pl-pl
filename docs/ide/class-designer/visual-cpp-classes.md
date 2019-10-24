@@ -1,5 +1,5 @@
 ---
-title: Klasy Visual C++ w Projektancie klas
+title: C++Klasy w Projektant klas
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,14 +12,14 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 596d7a41b9f63179a0469840d948430ed0294b56
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 84fc10a3f62ea4bef82a466b2d76c46e73eb7e6e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647639"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748925"
 ---
-# <a name="visual-c-classes-in-class-designer"></a>Klasy C++ wizualne w Projektant klas
+# <a name="c-classes-in-class-designer"></a>C++klasy w Projektant klas
 
 **Projektant klas** obsługuje C++ klasy i wizualizacje klas C++ macierzystych w taki sam sposób jak w C# przypadku Visual Basic i kształtów klas C++ , z wyjątkiem tego, że klasy mogą mieć wiele relacji dziedziczenia. Można rozwinąć kształt klasy, aby wyświetlić więcej pól i metod w klasie, lub zwinąć go, aby zaoszczędzić miejsce.
 
@@ -174,7 +174,7 @@ W poniższej tabeli przedstawiono kilka przykładów kanonicznych, wyspecjalizow
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Praca z kodem Visual C++](working-with-visual-cpp-code.md)
+- [Praca z C++ kodem](working-with-visual-cpp-code.md)
 - [Klasy i struktury](/cpp/cpp/classes-and-structs-cpp)
 - [Anonimowe typy klas](/cpp/cpp/anonymous-class-types)
 - [Wielokrotne dziedziczenie](https://msdn.microsoft.com/library/6td5yws2.aspx)

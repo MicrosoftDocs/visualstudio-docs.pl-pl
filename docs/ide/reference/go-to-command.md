@@ -13,12 +13,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 93ad14561b1fdd2aade1978831b784e014568a6c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5782f5e7dba8d18f9d6f48f345d5e133138e6eea
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668260"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748749"
 ---
 # <a name="go-to-command"></a>Przejdź do — Polecenie
 Przenosi kursor do określonego wiersza.
@@ -46,7 +46,7 @@ Alias dla tego polecenia to GoToLn.
 >Edit.GoTo 125
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
 - [Okno Polecenie](../../ide/reference/command-window.md)

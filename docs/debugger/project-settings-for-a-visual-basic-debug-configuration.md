@@ -1,5 +1,5 @@
 ---
-title: Ustawienia projektu dla języka VB debugowania konfiguracji | Dokumentacja firmy Microsoft
+title: Ustawienia projektu dla konfiguracji debugowania w języku VB | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: reference
@@ -23,39 +23,39 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6d948595dcf34bba32708f04e4bdf2f16ba1166
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: bcac88c2faf1af7378ce25597789700df61648a9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408663"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72730604"
 ---
 # <a name="project-settings-for-a-visual-basic-debug-configuration"></a>Ustawienia projektu dla konfiguracji debugowania w Visual Basic
-Można zmienić ustawienia projektu dla [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] konfiguracji debugowania w **stron właściwości** zgodnie z opisem w oknie [konfiguracji Debug i Release](../debugger/how-to-set-debug-and-release-configurations.md). W poniższej tabeli przedstawiono, gdzie można znaleźć ustawienia związane z debugerem w **stron właściwości** okna.
+Ustawienia projektu dla konfiguracji debugowania [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] można zmienić w oknie **strony właściwości** , zgodnie z opisem w sekcji [debugowanie i wydawanie konfiguracji](../debugger/how-to-set-debug-and-release-configurations.md). W poniższych tabelach przedstawiono, gdzie znaleźć ustawienia związane z debugerem w oknie **strony właściwości** .
 
 > [!WARNING]
-> W tym temacie nie ma zastosowania do aplikacji platformy uniwersalnej systemu Windows. Zobacz [uruchomić sesję debugowania (VB, C#, C++ i XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
+> Ten temat nie dotyczy aplikacji platformy UWP. Zobacz [Rozpoczynanie sesji debugowania (VB, C# C++ i XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
 
-### <a name="debug-tab"></a>Debugowanie kartę
+### <a name="debug-tab"></a>Karta debugowanie
 
 | Ustawienie | Opis |
 |------------------------------| - |
-| **Konfiguracja** | Ustawia tryb do kompilowania aplikacji. Można wybrać jedną z **aktywna (debugowanie)**, **debugowania**, **wersji**, **wszystkie konfiguracje**. |
-| **Akcja uruchamiania** | Ta grupa formantów Określa akcję, która ma miejsce, gdy z menu debugowanie wybierz przycisk Start.<br /><br /> -   **Rozpocznij projekt** jest ustawieniem domyślnym i uruchamia projekt startowy do debugowania. <br />-   **Uruchom zewnętrzny program** pozwala uruchomić i Dołącz do programu, który nie jest częścią [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu. Aby uzyskać więcej informacji, zobacz [dołączenia do uruchamiania procesów](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).<br />-   **Uruchom przeglądarkę w adresie URL** umożliwia debugowanie aplikacji sieci Web. |
-| **Argumenty wiersza polecenia** | Określa argumenty wiersza polecenia dla programu do debugowania. Nazwa polecenia jest nazwa programu, określone w uruchomienia programu zewnętrznego. Jeśli akcja uruchamiania jest ustawiony na początkowy adres URL, argumenty wiersza polecenia są ignorowane. |
-| **Katalog roboczy** | Określa katalog roboczy debugowanego programu. W [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], katalog roboczy jest katalog, aplikacja zostanie uruchomiona z. Domyślny katalog roboczy jest \bin\Debug lub \bin\Release, w zależności od bieżącej konfiguracji. |
-| **Użyj komputera zdalnego** | Gdy pole wyboru jest zaznaczone, zdalne debugowanie jest włączone. W polu tekstowym, możesz wpisać nazwę komputera zdalnego, gdy aplikacja zostanie uruchomiona na potrzeby debugowania lub [nazwy serwera Msvsmon](../debugger/remote-debugging.md). Lokalizacja pliku EXE na komputerze zdalnym jest określona przez właściwość ścieżki wyjściowej na karcie kompilacji. Lokalizacja musi być możliwe do udostępnienia katalogu na komputerze zdalnym. |
-| **Debugowanie kodu niezarządzanego** | Umożliwia debugowanie wywołań do kodu natywnego (niezarządzanego) Win32 z zarządzanych aplikacji. Ma to taki sam skutek jak wybierać mieszany typ debugera w [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] projektu. |
-| **Debugowanie serwera SQL Server** | Umożliwia debugowanie obiektów bazy danych programu SQL Server. |
+| **Konfiguracja** | Tryb zestawów do kompilowania aplikacji. Wybierz spośród **aktywnych (Debuguj)** , **Debug**, **Release**, **All Configurations**. |
+| **Uruchom akcję** | Ta grupa formantów określa akcję, która będzie wykonywana po wybraniu polecenia Rozpocznij z menu Debuguj.<br /><br /> -   **początkowy projekt** jest domyślnym i uruchamia projekt startowy na potrzeby debugowania. <br />-   **Uruchom program zewnętrzny** umożliwia uruchamianie i dołączanie do programu, który nie jest częścią [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu. Aby uzyskać więcej informacji, zobacz [dołączanie do uruchomionych procesów](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).<br />-   **Uruchom przeglądarkę w adresie URL** umożliwia debugowanie aplikacji sieci Web. |
+| **Argumenty wiersza polecenia** | Określa argumenty wiersza polecenia dla programu, który ma być debugowany. Nazwa polecenia to nazwa programu określona w początkowym programie zewnętrznym. Jeśli akcja uruchamiania jest ustawiona na początkowy adres URL, argumenty wiersza polecenia są ignorowane. |
+| **Katalog roboczy** | Określa katalog roboczy debugowanego programu. W [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] katalog roboczy jest katalogiem, z którego aplikacja jest uruchamiana. Domyślny katalog roboczy to \bin\Debug lub \bin\Release, w zależności od bieżącej konfiguracji. |
+| **Użyj maszyny zdalnej** | Gdy to pole wyboru jest zaznaczone, debugowanie zdalne jest włączone. W polu tekstowym można wpisać nazwę komputera zdalnego, na którym aplikacja będzie działać na potrzeby debugowania lub [nazwę serwera msvsmon](../debugger/remote-debugging.md). Lokalizacja EXE na komputerze zdalnym jest określana przez właściwość Ścieżka wyjściowa na karcie kompilacja. Lokalizacja musi być katalogiem udostępnionym na komputerze zdalnym. |
+| **Debugowanie kodu niezarządzanego** | Umożliwia debugowanie wywołań natywnego (niezarządzanego) kodu Win32 z aplikacji zarządzanej. Jest to ten sam efekt, co wybranie opcji mieszane dla typu debugera w projekcie [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. |
+| **Debugowanie SQL Server** | Umożliwia debugowanie obiektów SQL Server bazy danych. |
 
-### <a name="compile-tab-press-advanced-compile-options-button"></a>Skompilować karta: kliknij przycisk Zaawansowane opcje kompilacji
+### <a name="compile-tab-press-advanced-compile-options-button"></a>Karta kompilacja: naciśnij przycisk Zaawansowane opcje kompilacji
 
 | Ustawienie | Opis |
 |---------------------------| - |
-| **Włącz optymalizacje** | Tej opcji powinno być zaznaczone. Optymalizacja powoduje, że kod, który jest faktycznie wykonywane różnił się od kodu źródłowego w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]i w ten sposób sprawia, że debugowanie trudne. Jeśli kod jest zoptymalizowany, symbole nie są ładowane automatycznie podczas debugowania przy użyciu tylko mój kod. |
-| **Generuj informacje o debugowaniu** | Definiowane przez domyślne zarówno w przypadku debugowania, jak i wydania wersji, to ustawienie (równoważne/Debug — opcja kompilatora) tworzy informacje debugowania w czasie kompilacji. Debuger używa tych informacji, aby pokazać nazwy zmiennych i inne informacje w postaci przydatne podczas debugowania. Jeśli kompilujesz program bez tych informacji, debuger funkcjonalność będzie ograniczona. Aby uzyskać więcej informacji, zobacz [/debug](/dotnet/visual-basic/reference/command-line-compiler/debug). |
-| **Zdefiniuj stałą DEBUG** | Definiowanie tego symbolu umożliwia kompilowanie warunkowe funkcji danych wyjściowych z [Klasa Debug](/dotnet/api/system.diagnostics.debug). Z tego symbolu zdefiniowanego, metody klasy debugowania generują dane wyjściowe do [okno danych wyjściowych](../ide/reference/output-window.md). Bez tego symbolu metod klasy debugowania nie są kompilowane i generowane żadne dane wyjściowe. Ten symbol powinien być zdefiniowany w wersji do debugowania i nie jest zdefiniowany w pełnej wersji. Definiowanie tego symbolu w wersji tworzy zbędny kod, który spowalnia program. |
-| **Zdefiniuj stałą TRACE** | Definiowanie tego symbolu umożliwia kompilowanie warunkowe funkcji danych wyjściowych z [klasa śledzenia](/dotnet/api/system.diagnostics.trace). Z tego symbolu zdefiniowanego, metody klasy śledzenia generują dane wyjściowe do [okno danych wyjściowych](../ide/reference/output-window.md). Bez tego symbolu metod klasy śledzenia nie są kompilowane i są generowane nie dane wyjściowe śledzenia. Ten symbol jest definiowany przez domyślne dla wersji zarówno Debug i Release. |
+| **Włącz optymalizacje** | Ta opcja powinna być niezaznaczone. Optymalizacja powoduje, że kod, który jest faktycznie wykonywany, jest inny niż kod źródłowy widziany w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], co sprawia, że debugowanie jest trudne. Jeśli kod jest zoptymalizowany, symbole nie są ładowane domyślnie podczas debugowania za pomocą Tylko mój kod. |
+| **Generuj informacje o debugowaniu** | Zdefiniowane domyślnie w wersji Debug i Release, to ustawienie (równoważne opcji kompilatora/Debug) tworzy informacje debugowania w czasie kompilacji. Debuger używa tych informacji do wyświetlania nazw zmiennych i innych informacji w przydatnym formularzu podczas debugowania. Jeśli kompilujesz program bez tych informacji, funkcjonalność debugera zostanie ograniczona. Aby uzyskać więcej informacji, zobacz [/Debug](/dotnet/visual-basic/reference/command-line-compiler/debug). |
+| **Zdefiniuj stałą DEBUG** | Zdefiniowanie tego symbolu umożliwia warunkowe Kompilowanie funkcji wyjściowych z [klasy Debug](/dotnet/api/system.diagnostics.debug). Z tym zdefiniowanym symbolem metody klasy Debug generują dane wyjściowe do [okna danych wyjściowych](../ide/reference/output-window.md). Bez tego symbolu metody klasy debugowania nie są kompilowane i nie są generowane żadne dane wyjściowe. Ten symbol powinien być zdefiniowany w wersji Debug i nie jest zdefiniowany w wersji Release. Definiowanie tego symbolu w wersji wydanej powoduje utworzenie niepotrzebnego kodu, który spowalnia program. |
+| **Zdefiniuj stałą TRACE** | Zdefiniowanie tego symbolu umożliwia warunkowe Kompilowanie funkcji wyjściowych z [klasy śledzenia](/dotnet/api/system.diagnostics.trace). Po zdefiniowaniu tego symbolu metody klasy śledzenia generują dane wyjściowe w [oknie danych wyjściowych](../ide/reference/output-window.md). Bez tego symbolu metody klasy śledzenia nie są kompilowane i nie są generowane żadne dane wyjściowe śledzenia. Ten symbol jest definiowany domyślnie dla wersji Debug i Release. |
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)

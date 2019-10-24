@@ -1,5 +1,5 @@
 ---
-title: Idiaenumframedata::get_count — | Dokumentacja firmy Microsoft
+title: 'IDiaEnumFrameData:: get_Count | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16b5be9ee787a2d4397d7384116cc9d7ac751d53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ec182918cccb42cf4d1c3cfdb3ae816aeef97a73
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838236"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744638"
 ---
-# <a name="idiaenumframedatagetcount"></a>IDiaEnumFrameData::get_Count
-Pobiera liczbę elementów danych ramki.
+# <a name="idiaenumframedataget_count"></a>IDiaEnumFrameData::get_Count
+Pobiera liczbę elementów danych ramek.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,11 +33,11 @@ HRESULT get_Count ( 
 #### <a name="parameters"></a>Parametry
  pRetVal
 
-[out] Zwraca liczbę elementów danych ramki.
+określoną Zwraca liczbę elementów danych ramek.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)
 - [IDiaEnumFrameData::Item](../../debugger/debug-interface-access/idiaenumframedata-item.md)

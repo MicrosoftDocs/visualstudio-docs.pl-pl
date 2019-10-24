@@ -1,5 +1,5 @@
 ---
-title: Potwierdzenia w zarządzanym kodzie | Dokumentacja firmy Microsoft
+title: Potwierdzenia w kodzie zarządzanym | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -22,40 +22,40 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a2637e801ba0d317e4c0abec8bd12197656dc844
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 529c19753d09d6335e5c9fc5e839cdb7cd0c118c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564141"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745775"
 ---
 # <a name="assertions-in-managed-code"></a>Potwierdzenia w zarządzanym kodzie
-Na potwierdzenie lub `Assert` instrukcji sprawdza warunek, który jest określony jako argument do `Assert` instrukcji. Jeśli warunek jest spełniony, występuje żadna akcja. Gdy warunek jest spełniony, potwierdzenie nie powiedzie się. Jeśli korzystasz z kompilacji debugowania, programach przechodzi w tryb podziału.
+Potwierdzenie lub `Assert` instrukcji, testuje warunek, który jest określany jako argument instrukcji `Assert`. Jeśli warunek ma wartość true, nie występuje żadna akcja. Jeśli warunek zwróci wartość false, potwierdzenie kończy się niepowodzeniem. W przypadku uruchamiania programu z kompilacją debugowania program wprowadza tryb przerwania.
 
-## <a name="BKMK_In_this_topic"></a> W tym temacie
- [Potwierdzenia w Namespace System.Diagnostics](#BKMK_Asserts_in_the_System_Diagnostics_Namespace)
+## <a name="BKMK_In_this_topic"></a>W tym temacie
+ [Potwierdzenia w przestrzeni nazw System. Diagnostics](#BKMK_Asserts_in_the_System_Diagnostics_Namespace)
 
- [Debug.Assert — metoda](#BKMK_The_Debug_Assert_method)
+ [Debug. Assert — Metoda](#BKMK_The_Debug_Assert_method)
 
- [Efekty uboczne Debug.Assert](#BKMK_Side_effects_of_Debug_Assert)
+ [Efekty uboczne debugowania. Assert](#BKMK_Side_effects_of_Debug_Assert)
 
- [Wymagania debugowania i śledzenia](#BKMK_Trace_and_Debug_Requirements)
+ [Wymagania dotyczące śledzenia i debugowania](#BKMK_Trace_and_Debug_Requirements)
 
- [Asercja argumentów](#BKMK_Assert_arguments)
+ [Argumenty potwierdzenia](#BKMK_Assert_arguments)
 
- [Dostosowywanie zachowania dotyczącego Assert](#BKMK_Customizing_Assert_behavior)
+ [Dostosowywanie zachowania potwierdzenia](#BKMK_Customizing_Assert_behavior)
 
- [Ustawienie potwierdzenia w plikach konfiguracji](#BKMK_Setting_assertions_in_configuration_files)
+ [Ustawianie potwierdzeń w plikach konfiguracji](#BKMK_Setting_assertions_in_configuration_files)
 
-## <a name="BKMK_Asserts_in_the_System_Diagnostics_Namespace"></a> Potwierdzenia w Namespace System.Diagnostics
- W języku Visual Basic i Visual C#, można użyć `Assert` z jednej metody <xref:System.Diagnostics.Debug> lub <xref:System.Diagnostics.Trace>, które znajdują się w <xref:System.Diagnostics> przestrzeni nazw. <xref:System.Diagnostics.Debug> metody klasy nie są uwzględnione w wersji programu, więc nie zwiększenie rozmiaru lub zmniejsz szybkość wersji kodu.
+## <a name="BKMK_Asserts_in_the_System_Diagnostics_Namespace"></a>Potwierdzenia w przestrzeni nazw System. Diagnostics
+ W Visual Basic i wizualizacji C#, można użyć metody `Assert` z <xref:System.Diagnostics.Debug> lub <xref:System.Diagnostics.Trace>, które znajdują się w przestrzeni nazw <xref:System.Diagnostics>. metody klasy <xref:System.Diagnostics.Debug> nie są uwzględnione w wydanej wersji programu, więc nie zwiększają rozmiaru ani nie zmniejszają szybkości kodu wydania.
 
- Język C++ nie obsługuje <xref:System.Diagnostics.Debug> metody klasy. Ten sam efekt można osiągnąć za pomocą <xref:System.Diagnostics.Trace> klasy kompilacji warunkowej, takie jak `#ifdef DEBUG`... `#endif`.
+ C++nie obsługuje metod klasy <xref:System.Diagnostics.Debug>. Ten sam efekt można osiągnąć przy użyciu klasy <xref:System.Diagnostics.Trace> z kompilacją warunkową, taką jak `#ifdef DEBUG`...  `#endif`.
 
  [W tym temacie](#BKMK_In_this_topic)
 
-## <a name="BKMK_The_Debug_Assert_method"></a> Debug.Assert — metoda
- Użyj <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> metoda za darmo, aby przetestować warunki, które mają być przechowywane w wartość true, jeśli Twój kod jest poprawny. Na przykład załóżmy, że zostały napisane Funkcja dzielenia liczby całkowitej. Przez reguły matematyce dzielnik nigdy nie może być równy zero. Może to przetestować za pomocą potwierdzenia:
+## <a name="BKMK_The_Debug_Assert_method"></a>Debug. Assert — Metoda
+ Użyj metody <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> swobodnie, aby sprawdzić warunki, które powinny mieć wartość PRAWDA, jeśli kod jest poprawny. Załóżmy na przykład, że Zapisano funkcję dzielenia liczb całkowitych. Według reguł matematycznych, dzielnik nie może być równy zero. Można to przetestować przy użyciu potwierdzenia:
 
 ```VB
 Function IntegerDivide(ByVal dividend As Integer, ByVal divisor As Integer) As Integer
@@ -70,9 +70,9 @@ int IntegerDivide ( int dividend , int divisor )
         return ( dividend / divisor ); }
 ```
 
- Podczas uruchamiania tego kodu w debugerze, instrukcji asercji jest obliczane, ale w wersji, nie dokonywane jest porównanie, więc istnieje bez dodatkowych nakładów.
+ Gdy uruchamiasz ten kod w debugerze, zostanie oceniona instrukcja assertion, ale w wersji wydanej nie zostanie wykonane porównanie, więc nie ma dodatkowych kosztów.
 
- Oto inny przykład. Masz klasę, która implementuje konta rozliczeniowego, w następujący sposób:
+ Oto inny przykład. Masz klasę implementującą konto sprawdzania w następujący sposób:
 
 ```VB
 Dim amount, balance As Double
@@ -87,7 +87,7 @@ Debug.Assert ( amount <= balance );
 savingsAccount.Withdraw ( amount );
 ```
 
- Przed pieniądze wycofać się z konta, która ma być upewnij się, że saldo konta jest wystarczające, aby objąć kwotę, które są przygotowania do wycofania. Można napisać potwierdzenie, aby sprawdzić saldo:
+ Przed wycofaniem pieniędzy z konta należy upewnić się, że saldo konta jest wystarczające, aby pokryć kwotę przygotowywaną do wycofania. Możesz napisać potwierdzenie, aby sprawdzić saldo:
 
 ```VB
 Dim amount, balance As Double
@@ -102,14 +102,14 @@ Trace.Assert ( amount <= balance );
 savingsAccount.Withdraw ( amount );
 ```
 
- Należy zauważyć, że wywołania <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> metoda zniknąć po utworzeniu wersji kodu. Oznacza to, że wywołanie, które sprawdza, czy saldo znika w pełnej wersji. Aby rozwiązać ten problem, należy zastąpić <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> z <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName>, której nie znika w wersji:
+ Należy pamiętać, że wywołania metody <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> znikają podczas tworzenia wydania wersji kodu. Oznacza to, że wywołanie sprawdzające saldo znika w wersji wydanej. Aby rozwiązać ten problem, należy zastąpić <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> z <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName>, które nie znikają w wersji wydania:
 
- Wywołania <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> obciążenie dodać do swojej wersji, w przeciwieństwie do wywołania <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>.
+ Wywołania do <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> dodać narzuty do wersji wydania, w przeciwieństwie do wywołań <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>.
 
  [W tym temacie](#BKMK_In_this_topic)
 
-## <a name="BKMK_Side_effects_of_Debug_Assert"></a> Efekty uboczne Debug.Assert
- Kiedy używasz <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>, upewnij się, że dowolny kod `Assert` nie zmienia wyniki program, jeśli `Assert` zostanie usunięty. W przeciwnym razie może przypadkowo wprowadzone usterki, które są wyświetlane tylko w wersji programu. Należy zachować szczególną ostrożność około potwierdza, które zawierają funkcji lub procedury wywołań, takich jak na poniższym przykładzie:
+## <a name="BKMK_Side_effects_of_Debug_Assert"></a>Efekty uboczne debugowania. Assert
+ W przypadku używania <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> upewnij się, że żaden kod wewnątrz `Assert` nie zmienia wyników programu, jeśli `Assert` został usunięty. W przeciwnym razie można przypadkowo wprowadzić usterkę, która jest wyświetlana tylko w wydaniu wersji programu. Należy zwrócić szczególną uwagę na temat potwierdzeń, które zawierają wywołania funkcji lub procedur, takie jak Poniższy przykład:
 
 ```VB
 ' unsafe code
@@ -121,7 +121,7 @@ Debug.Assert (meas(i) <> 0 )
 Debug.Assert (meas(i) != 0 );
 ```
 
- Użycie tego <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> mogą być wyświetlane na pierwszy rzut oka bezpieczne, ale Załóżmy, że meas funkcji aktualizacji licznika każdym razem jest wywoływana. Podczas tworzenia wersji to wywołanie meas została pominięta, więc ten licznik nie zostaje zaktualizowana. Jest to przykład funkcji z atrybutem efekt uboczny. Wywołanie funkcji, która ma efekty uboczne, eliminując może spowodować usterkę, która jest wyświetlana tylko w pełnej wersji. Aby uniknąć tych problemów, nie należy umieszczać wywołania funkcji w <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> instrukcji. Zamiast tego użyj zmienna tymczasowa:
+ Użycie <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> może wydawać się w pierwszej kolejności, ale Załóżmy, że funkcja MEAS aktualizuje licznik przy każdym wywołaniu. Podczas kompilowania wersji wydania to wywołanie do MEAS jest eliminowane, więc licznik nie zostanie zaktualizowany. Jest to przykład funkcji z efektem ubocznym. Usunięcie wywołania funkcji, która ma efekty uboczne, może spowodować błąd, który pojawia się tylko w wersji Release. Aby uniknąć takich problemów, nie należy umieszczać wywołań funkcji w instrukcji <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>. Zamiast tego użyj zmiennej tymczasowej:
 
 ```VB
 temp = meas( i )
@@ -133,31 +133,31 @@ temp = meas( i );
 Debug.Assert ( temp != 0 );
 ```
 
- Nawet jeśli używasz <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName>, może nadal chcesz uniknąć umieszczenie wywołania funkcji wewnątrz `Assert` instrukcji. Takie połączenia powinny być bezpieczne, ponieważ <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> instrukcje nie są eliminowane kompilację wydania. Jednak jeśli uniknąć takich konstrukcji ewentualnemu przyzwyczajenia prawdopodobnie mniej popełnienia błędu w przypadku, gdy używasz <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>.
+ Nawet w przypadku używania <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> można nadal unikać umieszczania wywołań funkcji wewnątrz instrukcji `Assert`. Takie wywołania powinny być bezpieczne, ponieważ instrukcje <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> nie są eliminowane w kompilacji wydania. Jednakże w przypadku uniknięcia takich konstrukcji jako kwestii wykonywać, podczas korzystania z <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> nie będzie można wprowadzać błędu.
 
  [W tym temacie](#BKMK_In_this_topic)
 
-## <a name="BKMK_Trace_and_Debug_Requirements"></a> Wymagania debugowania i śledzenia
- Jeśli tworzysz projekt przy użyciu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] kreatorów, symbol śledzenia jest zdefiniowana w konfiguracji wydania i debugowania. Symbol debugowania jest definiowany przez domyślne tylko w kompilacji debugowania.
+## <a name="BKMK_Trace_and_Debug_Requirements"></a>Wymagania dotyczące śledzenia i debugowania
+ Jeśli tworzysz projekt przy użyciu kreatorów [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], symbol śledzenia jest definiowany domyślnie w konfiguracjach wersji i debugowania. Symbol debugowania jest definiowany domyślnie tylko w kompilacji debugowania.
 
- W przeciwnym razie dla <xref:System.Diagnostics.Trace> metody do pracy, program musi mieć jedną z następujących czynności w górnej części pliku źródłowego:
+ W przeciwnym razie aby metody <xref:System.Diagnostics.Trace> działały, program musi mieć jedną z następujących wartości w górnej części pliku źródłowego:
 
-- `#Const TRACE = True` W języku Visual Basic
+- `#Const TRACE = True` w Visual Basic
 
-- `#define TRACE` w środowisku Visual C# i C++
+- `#define TRACE` w wizualizacjach C# iC++
 
-  Lub program muszą zostać skompilowane przy użyciu opcji śledzenia:
+  Lub program musi być skompilowany przy użyciu opcji śledzenia:
 
-- `/d:TRACE=True` W języku Visual Basic
+- `/d:TRACE=True` w Visual Basic
 
-- `/d:TRACE` w środowisku Visual C# i C++
+- `/d:TRACE` w wizualizacjach C# iC++
 
-  W przypadku należy użyć metody debugowania w języku C# lub Visual Basic wersji kompilacji, zdefiniuj symbol debugowania w konfiguracji wydania.
+  Jeśli konieczne jest użycie metod debugowania w kompilacji C# lub Visual Basic wydania, należy zdefiniować symbol debugowania w konfiguracji wydania.
 
-  Język C++ nie obsługuje <xref:System.Diagnostics.Debug> metody klasy. Ten sam efekt można osiągnąć za pomocą <xref:System.Diagnostics.Trace> klasy kompilacji warunkowej, takie jak `#ifdef DEBUG`... `#endif`. Można zdefiniować te symbole w  **\<Projekt > strony właściwości** okno dialogowe. Aby uzyskać więcej informacji, zobacz [Zmienianie ustawienia projektu dla konfiguracji debugowania języka Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md) lub [Zmienianie ustawienia projektu dla konfiguracji debugowania języka C++ lub C](../debugger/project-settings-for-a-cpp-debug-configuration.md).
+  C++nie obsługuje metod klasy <xref:System.Diagnostics.Debug>. Ten sam efekt można osiągnąć przy użyciu klasy <xref:System.Diagnostics.Trace> z kompilacją warunkową, taką jak `#ifdef DEBUG`...  `#endif`. Można zdefiniować te symbole w oknie dialogowym **\<Project strony właściwości >** . Aby uzyskać więcej informacji, zobacz [Zmiana ustawień projektu dla konfiguracji debugowania Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md) lub [Zmiana ustawień projektu dla konfiguracji języka C C++ lub debugowania](../debugger/project-settings-for-a-cpp-debug-configuration.md).
 
-## <a name="BKMK_Assert_arguments"></a> Asercja argumentów
- <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> i <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> zająć maksymalnie trzy argumenty. Pierwszy argument, który jest wymagany, jest warunek, który chcesz sprawdzić. Jeśli wywołasz <xref:System.Diagnostics.Trace.Assert(System.Boolean)?displayProperty=fullName> lub <xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=fullName> z tylko jednym argumentem, `Assert` metoda sprawdza warunek i, jeśli wynikiem jest wartość FAŁSZ, wyświetla zawartość stosu wywołań, aby **dane wyjściowe** okna. W poniższym przykładzie przedstawiono <xref:System.Diagnostics.Trace.Assert(System.Boolean)?displayProperty=fullName> i <xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=fullName>:
+## <a name="BKMK_Assert_arguments"></a>Argumenty potwierdzenia
+ <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> i <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> zapoznaj się z trzema argumentami. Pierwszy argument, który jest obowiązkowy, to warunek, który chcesz sprawdzić. Jeśli wywołasz <xref:System.Diagnostics.Trace.Assert(System.Boolean)?displayProperty=fullName> lub <xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=fullName> z tylko jednym argumentem, Metoda `Assert` sprawdza warunek i, jeśli wynik ma wartość false, wyprowadza zawartość stosu wywołań do okna **danych wyjściowych** . Poniższy przykład pokazuje <xref:System.Diagnostics.Trace.Assert(System.Boolean)?displayProperty=fullName> i <xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=fullName>:
 
 ```VB
 Debug.Assert(stacksize > 0)
@@ -169,7 +169,7 @@ Debug.Assert ( stacksize > 0 );
 Trace.Assert ( stacksize > 0 );
 ```
 
- Jeśli jest obecny, drugi i trzeci argument musi być ciągami. Jeśli wywołasz <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> lub <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> przy użyciu dwóch lub trzech argumentów, pierwszy argument jest warunek. Metoda sprawdza warunek i, jeśli wynikiem jest wartość FAŁSZ, dane wyjściowe ciągu drugiego i trzeciego ciągi. W poniższym przykładzie przedstawiono <xref:System.Diagnostics.Debug.Assert(System.Boolean,System.String)?displayProperty=fullName> i <xref:System.Diagnostics.Trace.Assert(System.Boolean,System.String)?displayProperty=fullName> używane w przypadku dwóch argumentów:
+ Drugi i trzeci argument, jeśli istnieją, muszą być ciągami. Jeśli wywołasz <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> lub <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> z dwoma lub trzema argumentami, pierwszym argumentem jest warunek. Metoda sprawdza warunek i, jeśli wynik ma wartość false, wyprowadza drugi ciąg i trzecie ciągi. Poniższy przykład pokazuje <xref:System.Diagnostics.Debug.Assert(System.Boolean,System.String)?displayProperty=fullName> i <xref:System.Diagnostics.Trace.Assert(System.Boolean,System.String)?displayProperty=fullName> używany z dwoma argumentami:
 
 ```VB
 Debug.Assert(stacksize > 0, "Out of stack space")
@@ -181,7 +181,7 @@ Debug.Assert ( stacksize > 0, "Out of stack space" );
 Trace.Assert ( stacksize > 0, "Out of stack space" );
 ```
 
- W poniższym przykładzie przedstawiono <xref:System.Diagnostics.Debug.Assert%2A> i <xref:System.Diagnostics.Trace.Assert%2A>:
+ Poniższy przykład pokazuje <xref:System.Diagnostics.Debug.Assert%2A> i <xref:System.Diagnostics.Trace.Assert%2A>:
 
 ```VB
 Debug.Assert(stacksize > 0, "Out of stack space. Bytes left:" , Format(size, "G"))
@@ -196,23 +196,23 @@ Trace.Assert ( stacksize > 0, "Out of stack space", "Failed in inctemp" );
 
  [W tym temacie](#BKMK_In_this_topic)
 
-## <a name="BKMK_Customizing_Assert_behavior"></a> Dostosowywanie zachowania dotyczącego Assert
- Jeśli uruchomisz aplikację w trybie interfejsu użytkownika `Assert` metoda Wyświetla **potwierdzenie nie powiodło się** okno dialogowe, gdy warunek nie powiodło się. Akcje, które występują, gdy nie powiedzie się potwierdzenie są kontrolowane przez <xref:System.Diagnostics.Debug.Listeners%2A> lub <xref:System.Diagnostics.Trace.Listeners%2A> właściwości.
+## <a name="BKMK_Customizing_Assert_behavior"></a>Dostosowywanie zachowania potwierdzenia
+ Jeśli uruchomisz aplikację w trybie interfejsu użytkownika, Metoda `Assert` wyświetli okno dialogowe **nie powiodło się** , gdy warunek nie powiedzie się. Akcje, które występują, gdy potwierdzenie nie powiedzie się, jest kontrolowane przez właściwość <xref:System.Diagnostics.Debug.Listeners%2A> lub <xref:System.Diagnostics.Trace.Listeners%2A>.
 
- Zachowanie danych wyjściowych można dostosować, dodając <xref:System.Diagnostics.TraceListener> obiekt `Listeners` kolekcji, usuwając <xref:System.Diagnostics.TraceListener> z `Listeners` kolekcji, lub poprzez zastąpienie <xref:System.Diagnostics.TraceListener.Fail%2A?displayProperty=fullName> metoda istniejącego `TraceListener` się to zachowują się inaczej.
+ Możesz dostosować zachowanie danych wyjściowych, dodając obiekt <xref:System.Diagnostics.TraceListener> do kolekcji `Listeners`, usuwając <xref:System.Diagnostics.TraceListener> z kolekcji `Listeners` lub zastępując metodę <xref:System.Diagnostics.TraceListener.Fail%2A?displayProperty=fullName> istniejącej `TraceListener`, aby zachowywać się inaczej.
 
- Na przykład, można zastąpić <xref:System.Diagnostics.TraceListener.Fail%2A?displayProperty=fullName> metodę do zapisu do dziennika zdarzeń, zamiast **potwierdzenie nie powiodło się** okno dialogowe.
+ Na przykład można zastąpić metodę <xref:System.Diagnostics.TraceListener.Fail%2A?displayProperty=fullName>, aby zapisywać dane w dzienniku zdarzeń zamiast wyświetlania okna dialogowego **potwierdzenie nie powiodło się** .
 
- Aby dostosować dane wyjściowe w ten sposób, program musi zawierać odbiornik i musi dziedziczyć <xref:System.Diagnostics.TraceListener> i zastąpić jej <xref:System.Diagnostics.TraceListener.Fail%2A?displayProperty=fullName> metody.
+ Aby dostosować dane wyjściowe w ten sposób, program musi zawierać odbiornik i należy dziedziczyć po <xref:System.Diagnostics.TraceListener> i zastąpić jego metodę <xref:System.Diagnostics.TraceListener.Fail%2A?displayProperty=fullName>.
 
- Aby uzyskać więcej informacji, zobacz [detektorów śledzenia](/dotnet/framework/debug-trace-profile/trace-listeners).
+ Aby uzyskać więcej informacji, zobacz [detektory śledzenia](/dotnet/framework/debug-trace-profile/trace-listeners).
 
  [W tym temacie](#BKMK_In_this_topic)
 
-## <a name="BKMK_Setting_assertions_in_configuration_files"></a> Ustawienie potwierdzenia w plikach konfiguracji
- Potwierdzenia można ustawić w pliku konfiguracyjnym programu także, jak w poniższym kodzie. Aby uzyskać więcej informacji, zobacz <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> lub <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>.
+## <a name="BKMK_Setting_assertions_in_configuration_files"></a>Ustawianie potwierdzeń w plikach konfiguracji
+ Można ustawić potwierdzenia w pliku konfiguracyjnym programu oraz w kodzie. Aby uzyskać więcej informacji, zobacz <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> lub <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>
 - <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName>

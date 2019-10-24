@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::findChildrenEx | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: findChildrenEx | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b833353beb009bb4eabbf000d45e0eb44a5794f
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 26fdced012baada390cdd0a112856b592d3c923e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62837878"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741270"
 ---
 # <a name="idiasymbolfindchildrenex"></a>IDiaSymbol::findChildrenEx
-Pobiera elementy podrzędne symbolu. Symbole lokalne, które są zwracane obejmują informacje dotyczące zakresów na żywo, jeśli program został skompilowany z optymalizacji na.
+Pobiera elementy podrzędne symbolu. Symbole lokalne, które są zwracane, zawierają informacje o zakresie aktywnym, jeśli program jest kompilowany z optymalizacją na.
 
 ## <a name="syntax"></a>Składnia
 
@@ -36,34 +36,34 @@ HRESULT findChildrenEx ( 
 #### <a name="parameters"></a>Parametry
  `symtag`
 
-[in] Określa tagi symboli elementów podrzędnych, które mają zostać pobrane, zgodnie z definicją w [symtagenum — wyliczenie](../../debugger/debug-interface-access/symtagenum.md). Ustaw `SymTagNull` dla wszystkich elementów podrzędnych do pobrania.
+podczas Określa Tagi symboli elementów podrzędnych, które mają zostać pobrane, zgodnie z definicją w [wyliczeniu SymTagEnum —](../../debugger/debug-interface-access/symtagenum.md). Ustaw na `SymTagNull` dla wszystkich elementów podrzędnych do pobrania.
 
  `name`
 
-[in] Określa nazwę elementy podrzędne, które mają zostać pobrane. Ustaw `NULL` dla wszystkich elementów podrzędnych do pobrania.
+podczas Określa nazwę elementów podrzędnych do pobrania. Ustaw na `NULL` dla wszystkich elementów podrzędnych do pobrania.
 
  `compareFlags`
 
-[in] Określa opcje porównywania, która ma zostać zastosowany do dopasowania nazwy. Wartości z kolekcji [namesearchoptions — wyliczenie](../../debugger/debug-interface-access/namesearchoptions.md) wyliczenia można samodzielnie lub w połączeniu.
+podczas Określa opcje porównywania, które mają być stosowane do dopasowywania nazw. Wartości z wyliczenia [namesearchoptions —](../../debugger/debug-interface-access/namesearchoptions.md) można użyć samodzielnie lub w połączeniu.
 
  `ppResult`
 
-[out] Zwraca [idiaenumsymbols —](../../debugger/debug-interface-access/idiaenumsymbols.md) pobrać obiekt, który zawiera listę symbolami podrzędnymi.
+określoną Zwraca obiekt [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) , który zawiera listę pobranych symboli podrzędnych.
 
 ## <a name="return-value"></a>Wartość zwracana
- Zwraca `S_OK` Jeśli co najmniej jeden element podrzędny symbol został znaleziony lub zwraca `S_FALSE` Jeśli żadne elementy podrzędne nie znaleziono; w przeciwnym razie zwraca kod błędu.
+ Zwraca `S_OK`, jeśli co najmniej jeden element podrzędny symbolu został znaleziony lub zwraca `S_FALSE`, jeśli nie znaleziono żadnych elementów podrzędnych; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Ta metoda jest rozszerzona wersja [idiasymbol::findchildren —](../../debugger/debug-interface-access/idiasymbol-findchildren.md).
+ Ta metoda jest rozszerzoną wersją [IDiaSymbol:: findChildren —](../../debugger/debug-interface-access/idiasymbol-findchildren.md).
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: Dia2.h
+ Nagłówek: dia2. h
 
- Biblioteka: diaguids.lib
+ Biblioteka: diaguids. lib
 
- DLL: msdia100.dll
+ DLL: msdia100. dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [SymTagEnum, wyliczenie](../../debugger/debug-interface-access/symtagenum.md)
 - [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

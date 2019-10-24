@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 604c68ef82f66358238f94b43f000fae24a076f1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bc7a573eb92d7c51079b0a7e97067abd155ae4fa
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62834155"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738712"
 ---
 # <a name="idiatable"></a>IDiaTable
-Wylicza DIA tabeli źródła danych.
+Wylicza tabelę źródła danych DIA.
 
 ## <a name="syntax"></a>Składnia
 
@@ -28,25 +28,25 @@ Wylicza DIA tabeli źródła danych.
 IDiaTable : IEnumUnknown
 ```
 
-## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych
 W poniższej tabeli przedstawiono metody `IDiaTable`.
 
 |Metoda|Opis|
 |------------|-----------------|
-|[IDiaTable::get__NewEnum](../../debugger/debug-interface-access/idiatable-get-newenum.md)|Pobiera [interfejsu interfejs IEnumVARIANT](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) wersję tego modułu wyliczającego.|
+|[IDiaTable::get__NewEnum](../../debugger/debug-interface-access/idiatable-get-newenum.md)|Pobiera wersję [interfejsu IEnumVARIANT](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) tego modułu wyliczającego.|
 |[IDiaTable::get_name](../../debugger/debug-interface-access/idiatable-get-name.md)|Pobiera nazwę tabeli.|
 |[IDiaTable::get_Count](../../debugger/debug-interface-access/idiatable-get-count.md)|Pobiera liczbę elementów w tabeli.|
-|[IDiaTable::Item](../../debugger/debug-interface-access/idiatable-item.md)|Pobiera odwołanie do indeksu dany wpis.|
+|[IDiaTable::Item](../../debugger/debug-interface-access/idiatable-item.md)|Pobiera odwołanie do określonego indeksu wpisów.|
 
 ## <a name="remarks"></a>Uwagi
-Implementuje ten interfejs `IEnumUnknown` metody wyliczania w przestrzeni nazw Microsoft.VisualStudio.OLE.Interop. `IEnumUnknown` Interfejs wyliczenia jest znacznie bardziej wydajne dla Iterowanie treści niż [idiatable::get_count —](../../debugger/debug-interface-access/idiatable-get-count.md) i [idiatable::Item —](../../debugger/debug-interface-access/idiatable-item.md) metody.
+Ten interfejs implementuje metody wyliczania `IEnumUnknown` w przestrzeni nazw Microsoft. VisualStudio. OLE. Interop. Interfejs wyliczania `IEnumUnknown` jest znacznie bardziej wydajny w przypadku iteracji na zawartość tabeli niż Metoda [IDiaTable:: get_Count](../../debugger/debug-interface-access/idiatable-get-count.md) i [IDiaTable:: Item](../../debugger/debug-interface-access/idiatable-item.md) .
 
-Interpretacja `IUnknown` interfejsu zwróciło albo `IDiaTable::Item` metody lub `Next` metody (w przestrzeni nazw Microsoft.VisualStudio.OLE.Interop) jest zależna od typu tabeli. Na przykład jeśli `IDiaTable` interfejs reprezentuje listę źródeł wprowadzonego `IUnknown` interfejsu powinny być badane dla [idiainjectedsource —](../../debugger/debug-interface-access/idiainjectedsource.md) interfejsu.
+Interpretacja interfejsu `IUnknown` zwróconego z metody `IDiaTable::Item` lub metody `Next` (w przestrzeni nazw Microsoft. VisualStudio. OLE. Interop) jest zależna od typu tabeli. Na przykład jeśli interfejs `IDiaTable` reprezentuje listę wstrzykniętych źródeł, należy zbadać interfejs `IUnknown` dla interfejsu [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) .
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
-Uzyskanie tego interfejsu, wywołując [idiaenumtables::Item —](../../debugger/debug-interface-access/idiaenumtables-item.md) lub [idiaenumtables::Next —](../../debugger/debug-interface-access/idiaenumtables-next.md) metody.
+Uzyskaj ten interfejs, wywołując metodę [IDiaEnumTables:: Item](../../debugger/debug-interface-access/idiaenumtables-item.md) lub [IDiaEnumTables:: Next](../../debugger/debug-interface-access/idiaenumtables-next.md) .
 
-Następujące interfejsy są implementowane za pomocą `IDiaTable` interfejsu (oznacza to, że można tworzyć zapytania `IDiaTable` interfejsu dla jednego z następujących interfejsów):
+Następujące interfejsy są implementowane za pomocą interfejsu `IDiaTable` (oznacza to, że można wykonać zapytanie o interfejs `IDiaTable` dla jednego z następujących interfejsów):
 
 - [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
 
@@ -63,10 +63,10 @@ Następujące interfejsy są implementowane za pomocą `IDiaTable` interfejsu (o
 - [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)
 
 ## <a name="example"></a>Przykład
-Pierwsza funkcja `ShowTableNames`, wyświetla nazwy wszystkich tabel w sesji. Druga funkcja `GetTable`, przeszukiwane są wszystkie tabele dla tabeli, która implementuje interfejs określony. Trzecia funkcja `UseTable`, przedstawia sposób użycia `GetTable` funkcji.
+Pierwsza funkcja, `ShowTableNames`, wyświetla nazwy wszystkich tabel w sesji. Druga funkcja, `GetTable`, przeszukuje wszystkie tabele w tabeli, która implementuje określony interfejs. Trzecia funkcja, `UseTable`, pokazuje, jak używać funkcji `GetTable`.
 
 > [!NOTE]
-> `CDiaBSTR` jest klasą, która otacza `BSTR` i automatycznie obsługuje zwalnianie ciągu, gdy podczas tworzenia wystąpienia wykracza poza zakres.
+> `CDiaBSTR` jest klasą, która zawija `BSTR` i automatycznie obsługuje zwalnianie ciągu, gdy utworzenie wystąpienia wykracza poza zakres.
 
 ```C++
 void ShowTableNames(IDiaSession *pSession)
@@ -131,13 +131,13 @@ void UseTable(IDiaSession *pSession)
 ```
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: Dia2.h
+Nagłówek: dia2. h
 
-Biblioteka: diaguids.lib
+Biblioteka: diaguids. lib
 
-DLL: msdia80.dll
+DLL: msdia80. dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Interfejsy (Zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)
 - [IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)

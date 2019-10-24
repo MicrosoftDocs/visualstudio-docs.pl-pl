@@ -1,5 +1,5 @@
 ---
-title: Idiasegment::get_length — | Dokumentacja firmy Microsoft
+title: 'IDiaSegment:: get_length | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7f559c76bdaf4ca363a374566f4f820cc47dc14
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 74b4e0d96013504a0fd03b7350c58f1987903ad0
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839488"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742417"
 ---
-# <a name="idiasegmentgetlength"></a>IDiaSegment::get_length
+# <a name="idiasegmentget_length"></a>IDiaSegment::get_length
 Pobiera liczbę bajtów w segmencie.
 
 ## <a name="syntax"></a>Składnia
@@ -33,10 +33,10 @@ HRESULT get_ length ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca liczbę bajtów w segmencie.
+określoną Zwraca liczbę bajtów w segmencie.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`. Zwraca `S_FALSE`, jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

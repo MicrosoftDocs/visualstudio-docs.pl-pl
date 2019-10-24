@@ -1,5 +1,5 @@
 ---
-title: 'Obszar testowy 6: Delete | Microsoft Docs'
+title: 'Obszar testowy 6: usuwanie | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,46 +11,46 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 935c735009d83274cc1a8ae126d46f8ee9dbe1ae
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1d75721a09615026cd10a42e4b6d8d8520b41239
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327988"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72722443"
 ---
-# <a name="test-area-6-delete"></a>Obszar testowy 6: Usuwanie
-Ten obszar testowy wtyczki kontroli źródła obejmuje akcje usuwania.
+# <a name="test-area-6-delete"></a>Obszar testowy 6: usuwanie
+Ten obszar testowania wtyczki kontroli źródła obejmuje akcje usuwania.
 
- Kontrola źródła reaguje na usuwanie akcji w **Eksploratora rozwiązań**.
+ Kontrola źródła reaguje na usunięcie akcji w **Eksplorator rozwiązań**.
 
- Poniżej przedstawiono listę elementów, które można usunąć:
+ Poniżej znajduje się lista elementów, które mogą zostać usunięte:
 
 - Pliki
 
-- Foldery
+- Katalogów
 
 - Projekt
 
-  W zależności od typu projektu może mieć możliwość **Usuń** projektu (pozostawia pliki na dysku) lub **Usuń** projektu (spowoduje to usunięcie plików na dysku). Każda z tych akcji spowoduje usunięcie projektu lub elementu z **Eksploratora rozwiązań**.
+  W zależności od typu projektu może istnieć możliwość **usunięcia** projektu (pozostawia pliki na dysku) lub **usunięcia** projektu (usuwa pliki na dysku). Każda akcja powoduje usunięcie projektu lub elementu z **Eksplorator rozwiązań**.
 
 ## <a name="expected-behavior"></a>Oczekiwane zachowanie
- To oczekiwane zachowanie dla przypadków testowych, w obszarze badania delete:
+ Oczekiwane zachowanie przypadków testowych w obszarze testowym usuwania to:
 
-- Usunięty element nie jest już widoczna w ramach **Eksploratora rozwiązań**.
+- Usunięty element nie jest już widoczny w **Eksplorator rozwiązań**.
 
-- Element nadrzędny usuniętego projektu lub element jest wyewidencjonowany, zgodnie z potrzebami (prawdopodobnie wraz z monitem o.)
+- Element nadrzędny usuniętego projektu lub elementu jest wyewidencjonowany w razie potrzeby (prawdopodobnie z monitem).
 
-- Po usunięciu zaznaczenia lub dodano element, nie ma w **oczekujące elementy do zaewidencjonowania** okna.
+- Po usunięciu wyewidencjonowanego lub dodanego elementu nie jest on wyświetlany w oknie **Oczekujące zaewidencjonowania** .
 
-- Element nadal istnieje w magazynie kontroli źródła, nawet po usunięciu i musi ręcznie przeczyścić.
+- Element nadal istnieje w magazynie kontroli źródła, nawet po usunięciu, i musi zostać ręcznie przeczyszczony.
 
-|Akcja|Kroki testu|Oczekiwanych wyników, aby sprawdzić|
+|Akcja|Kroki testu|Oczekiwane wyniki do zweryfikowania|
 |------------|----------------|--------------------------------|
-|Usuń projekt klienta|1.  Utwórz projekt klienta.<br />2.  Dodaj rozwiązanie do kontroli źródła.<br />3.  Usuń cały projekt z rozwiązania|Typowe oczekiwane zachowanie.|
-|Usuń pusty plik|1.  Utwórz projekt klienta.<br />2.  Dodaj plik zero bajtów do projektu.<br />3.  Dodaj rozwiązanie do kontroli źródła.<br />4.  Wybierz plik, usuń go.|Typowe oczekiwane zachowanie.|
-|Usuń folder z plikami|1.  Utwórz rozwiązanie pojedynczego projektu.<br />2.  Dodaj folder.<br />3.  Dodaj jeden plik do folderu.<br />4.  Dodaj rozwiązanie do kontroli źródła.<br />5.  Zapoznaj się z projektu, aby uniknąć monity.<br />6.  Usuń folder.|Typowe oczekiwane zachowanie.|
-|Usuwanie projektu sieci Web systemu plików|1.  Utwórz projekt sieci Web systemu plików (Użyj przycisk Przeglądaj, aby określić ścieżkę UNC).<br />2.  Dodaj rozwiązanie do kontroli źródła.<br />3.  Usuń cały projekt z rozwiązania.<br />4.  Powtórz kroki od 1 do 3 dla lokalnego projektu sieci Web (korzysta z różnych ścieżek za pośrednictwem kodu, ale ma ten sam interfejs zewnętrzny i zachowanie).|Typowe oczekiwane zachowanie.|
-|Usuwanie pliku z projektem sieci Web systemu plików|1.  Utwórz projekt sieci Web systemu plików.<br />2.  Dodaj rozwiązanie do kontroli źródła.<br />3.  Usuń plik z projektu.<br />4.  Powtórz kroki od 1 do 3 dla lokalnego projektu sieci Web (korzysta z różnych ścieżek za pośrednictwem kodu, ale ma ten sam interfejs zewnętrzny i zachowanie).|Typowe oczekiwane zachowanie.|
+|Usuwanie projektu klienta|1. Utwórz projekt klienta.<br />2. Dodaj rozwiązanie do kontroli źródła.<br />3. Usuń cały projekt z rozwiązania|Typowe oczekiwane zachowanie.|
+|Usuń pusty plik|1. Utwórz projekt klienta.<br />2. Dodaj plik o zerowej bajcie do projektu.<br />3. Dodaj rozwiązanie do kontroli źródła.<br />4. Wybierz plik, a następnie usuń go.|Typowe oczekiwane zachowanie.|
+|Usuń folder z jednym plikiem|1. Utwórz rozwiązanie pojedynczego projektu.<br />2. Dodaj folder.<br />3. Dodaj jeden plik do folderu.<br />4. Dodaj rozwiązanie do kontroli źródła.<br />5. Sprawdź projekt, aby uniknąć wyświetlania.<br />6. Usuń folder.|Typowe oczekiwane zachowanie.|
+|Usuń projekt sieci Web systemu plików|1. Utwórz projekt sieci Web systemu plików (Użyj przycisku Przeglądaj, aby określić ścieżkę UNC).<br />2. Dodaj rozwiązanie do kontroli źródła.<br />3. Usuń cały projekt z rozwiązania.<br />4. Powtórz kroki od 1 do 3 dla lokalnego projektu sieci Web (wykonuje różne ścieżki poprzez kod, ale ma ten sam interfejs zewnętrzny i zachowanie).|Typowe oczekiwane zachowanie.|
+|Usuń plik z projektu sieci Web systemu plików|1. Utwórz projekt systemu plików w sieci Web.<br />2. Dodaj rozwiązanie do kontroli źródła.<br />3. Usuń plik z projektu.<br />4. Powtórz kroki od 1 do 3 dla lokalnego projektu sieci Web (wykonuje różne ścieżki poprzez kod, ale ma ten sam interfejs zewnętrzny i zachowanie).|Typowe oczekiwane zachowanie.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Przewodnik testowania wtyczek kontroli kodu źródłowego](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

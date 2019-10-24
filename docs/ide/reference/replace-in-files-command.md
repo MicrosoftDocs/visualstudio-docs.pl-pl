@@ -14,12 +14,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f7cb81f99644fc9d7253487030ed6da1f400bb5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fccfe696da2d38ff03ffb2f9b91de481e924a514
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655571"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748669"
 ---
 # <a name="replace-in-files-command"></a>Zastąp w plikach — Polecenie
 Zamienia tekst w plikach za pomocą podzestawu opcji dostępnych na karcie **Zamień na pliki w** oknie **Znajdź i Zamień** .
@@ -105,7 +105,7 @@ Ten przykład wyszukuje `btnCancel` i zastępuje go `btnReset` we wszystkich pli
 >Edit.ReplaceinFiles btnCancel btnReset /lookin:"c:/my visual studio projects" /ext:.cls /text2
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Znajdowanie i zastępowanie tekstu](../../ide/finding-and-replacing-text.md)
 - [Zastąp w plikach](../../ide/replace-in-files.md)

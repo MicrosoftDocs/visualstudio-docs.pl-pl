@@ -1,5 +1,5 @@
 ---
-title: 'Obszar testowy 8: Przełączanie wtyczki | Dokumentacja firmy Microsoft'
+title: 'Obszar testowy 8: przełączanie wtyczek | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,46 +11,46 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6af0a0333131697526d1ffcc8394f7bfe81ca6b4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fb815a773351c1bb6212962a639e2758114a0e2c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327812"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72722429"
 ---
 # <a name="test-area-8-plug-in-switching"></a>Obszar testowy 8: przełączanie wtyczki
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Zintegrowanego środowiska programistycznego (IDE) ma interfejs użytkownika (UI), aby zmienić bieżącą wtyczką kontroli źródła. Ten obszar testowy zawiera przypadki testowe dla procesu pobrania, który wtyczki do użycia rozwiązania kontroli źródła.
+@No__t_0 zintegrowanego środowiska programistycznego (IDE) ma interfejs użytkownika, aby zmienić bieżącą wtyczkę kontroli źródła. Ten obszar testowy zawiera przypadki testowe dla procesu wybierania wtyczki, która ma być używana na potrzeby kontroli źródła rozwiązania.
 
-## <a name="command-menu-access"></a>Dostęp do Menu polecenia
- Następujące [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ścieżki menu środowiska zintegrowanego rozwoju są używane w przypadkach testowych.
+## <a name="command-menu-access"></a>Dostęp do menu poleceń
+ W przypadku przypadków testowych używane są [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] następujące ścieżki menu zintegrowanego środowiska deweloperskiego.
 
-- Bieżącą wtyczką kontroli źródła: **Narzędzia** -> **opcje** -> **kontroli źródła** -> **wybór wtyczki**.
+- Bieżąca Wtyczka kontroli źródła: **narzędzia**  -> **Opcje**  -> **kontroli źródła**  -> **wyboru wtyczki**.
 
-- Zmień źródło powiązaniu kontroli: **Plik** -> **kontroli źródła** -> **Zmień kontrolę źródła**...
+- Zmień powiązanie kontroli źródła: **plik**  -> **kontroli źródła**  -> **Zmień kontrolę źródła**...
 
-## <a name="common-expected-behavior"></a>Typowe oczekiwane zachowanie.
- Zmiana wtyczka do kontroli źródła dla rozwiązania jest możliwa bez zamykania programu Visual Studio lub ponowne załadowanie rozwiązania. Ponadto bieżącą wtyczką kontroli źródła automatycznie zmieni się używaną przez rozwiązanie po załadowaniu tego rozwiązania.
+## <a name="common-expected-behavior"></a>Typowe oczekiwane zachowanie
+ Zmiana wtyczki kontroli źródła dla rozwiązania jest możliwa bez kończenia działania programu Visual Studio lub ponownego załadowania rozwiązania. Ponadto obecnie wtyczka do kontroli źródła jest automatycznie zmieniana na ten, który jest używany przez rozwiązanie po załadowaniu tego rozwiązania.
 
 ## <a name="test-cases"></a>Przypadki testowe
- Poniżej przedstawiono określonych przypadków testowych dla obszaru wtyczki testu przełączania.
+ Poniżej wymieniono określone przypadki testowe dla obszaru testowego przełączania wtyczki.
 
-### <a name="case-8a-automatic-change"></a>8a przypadków: Automatyczna zmiana
+### <a name="case-8a-automatic-change"></a>Przypadek 8a: Automatyczna zmiana
 
 #### <a name="expected-behavior"></a>Oczekiwane zachowanie
- Gdy użytkownik wczytuje rozwiązanie, które jest pod kontrolą źródła, to rozwiązanie jest ładowane automatycznie i odpowiednie wtyczka do kontroli źródła jest wybrany jako bieżący.
+ Gdy użytkownik ładuje rozwiązanie, które jest pod kontrolą źródła, jest automatycznie ładowane, a odpowiednia wtyczka kontroli źródła jest wybierana jako bieżąca.
 
-| Akcja | Kroki testu | Oczekiwanych wyników, aby sprawdzić |
+| Akcja | Kroki testu | Oczekiwane wyniki do zweryfikowania |
 | - | - | - |
-| Zmiana wtyczki kontroli źródła automatyczne | 1.  Wybierz wtyczkę w ramach testu jako bieżący (**narzędzia** -> **opcje** -> **kontroli źródła** -> **wtyczki Wybór**.)<br />2.  Utwórz nowy projekt.<br />3.  Dodaj rozwiązanie do kontroli źródła.<br />4.  Wybierz inne wtyczki (na przykład [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]).<br />5.  Zaakceptuj zwalnianie monit rozwiązania.<br />6.  Ponownie otwórz rozwiązanie z dysku. | Rozwiązanie jest otwierane.<br /><br /> Dodatek w ramach testu jest bieżącą wtyczką kontroli źródła. |
+| Automatyczna zmiana wtyczki kontroli źródła | 1. Wybierz wtyczkę w obszarze Testuj jako bieżący (**narzędzia**  -> **Opcje**  -> **kontroli źródła**  -> **wyboru wtyczki**).<br />2. Utwórz nowy projekt.<br />3. Dodaj rozwiązanie do kontroli źródła.<br />4. Wybierz inną wtyczkę (na przykład [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]).<br />5. Zaakceptuj monit rozładowania rozwiązania.<br />6. Otwórz ponownie rozwiązanie z dysku. | Rozwiązanie jest otwarte.<br /><br /> Wtyczka poddawana testom jest bieżącą wtyczką kontroli źródła. |
 
-### <a name="case-8b-solution-based-change"></a>8b przypadków: Oparte na rozwiązaniach zmiany
+### <a name="case-8b-solution-based-change"></a>Przypadek 8b: zmiana oparta na rozwiązaniu
 
 #### <a name="expected-behavior"></a>Oczekiwane zachowanie
- Rozwiązanie może mieć jego skojarzony wtyczka do kontroli źródła zmienione.
+ Rozwiązanie może mieć zmienioną skojarzoną wtyczkę kontroli źródła.
 
-| Akcja | Kroki testu | Oczekiwanych wyników, aby sprawdzić |
+| Akcja | Kroki testu | Oczekiwane wyniki do zweryfikowania |
 |----------------------------------| - | - |
-| Zmiana wtyczki dla rozwiązania | 1.  Wybierz wtyczkę w ramach testu jako bieżący (**narzędzia** -> **opcje** -> **kontroli źródła** -> **wtyczki Wybór**).<br />2.  Utwórz nowy projekt i rozwiązanie.<br />3.  Dodaj rozwiązanie do kontroli źródła.<br />4.  Usuń powiązanie rozwiązanie z kontroli źródła (przy użyciu **Zmień kontrolę źródła** okno dialogowe).<br />5.  Wybierz inne wtyczki (na przykład [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]).<br />6.  Załaduj ponownie rozwiązanie z dysku, jeśli pozostaną niezaładowane.<br />7.  Dodaj rozwiązanie do kontroli źródła.<br />8.  Usuń powiązanie rozwiązanie z kontroli źródła (przy użyciu **Zmień kontrolę źródła** okno dialogowe).<br />9. Wybierz wtyczkę w ramach testu ponownie.<br />10. Załaduj ponownie rozwiązanie z dysku, jeśli pozostaną niezaładowane.<br />11. Powiązać rozwiązanie z oryginalnej lokalizacji (przy użyciu **Zmień kontrolę źródła** okno dialogowe). | Rozwiązanie zostanie dodany do kontroli źródła przy użyciu wybranej wtyczki. |
+| Zmiana wtyczki dla rozwiązania | 1. Wybierz wtyczkę w obszarze Testuj jako bieżący (**narzędzia**  -> **Opcje**  -> **kontroli źródła**  -> **wyboru wtyczki**).<br />2. Utwórz nowy projekt i rozwiązanie.<br />3. Dodaj rozwiązanie do kontroli źródła.<br />4. Usuń powiązanie rozwiązania z kontroli źródła (przy użyciu okna dialogowego **Zmień kontrolę źródła** ).<br />5. Wybierz inną wtyczkę (na przykład [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]).<br />6. Załaduj ponownie rozwiązanie z dysku w przypadku jego niezaładowania.<br />7. Dodaj rozwiązanie do kontroli źródła.<br />8. Usuń powiązanie rozwiązania z kontroli źródła (przy użyciu okna dialogowego **Zmień kontrolę źródła** ).<br />9. Wybierz wtyczkę ponownie w obszarze Testuj.<br />10. Załaduj ponownie rozwiązanie z dysku, jeśli zostało zwolnione.<br />11. Powiąż rozwiązanie z oryginalną lokalizacją (przy użyciu okna dialogowego **Zmień kontrolę źródła** ). | Rozwiązanie jest dodawane do kontroli źródła przy użyciu wybranej wtyczki. |
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Przewodnik testowania wtyczek kontroli kodu źródłowego](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

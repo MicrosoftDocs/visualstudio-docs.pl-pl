@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_virtualbaseclass — | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_virtualBaseClass | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c97290f878a8b3b0835c7e3ac33aa2ebecfb019
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: c0dfee1fd4dfda2c70da1061fed89ed8864153e0
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64799270"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738888"
 ---
-# <a name="idiasymbolgetvirtualbaseclass"></a>IDiaSymbol::get_virtualBaseClass
-Pobiera flagę określającą, czy typ danych zdefiniowany przez użytkownika jest wirtualnej klasy bazowej.
+# <a name="idiasymbolget_virtualbaseclass"></a>IDiaSymbol::get_virtualBaseClass
+Pobiera flagę, która określa, czy typ danych zdefiniowany przez użytkownika jest wirtualną klasą bazową.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,13 +33,13 @@ HRESULT get_virtualBaseClass ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca `TRUE` Jeśli typ danych zdefiniowany przez użytkownika jest wirtualnej klasy bazowej; w przeciwnym razie zwraca `FALSE`.
+określoną Zwraca `TRUE`, jeśli typ danych zdefiniowany przez użytkownika jest wirtualną klasą bazową; w przeciwnym razie zwraca `FALSE`.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
-> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Wartość zwracana `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

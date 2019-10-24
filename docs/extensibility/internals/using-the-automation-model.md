@@ -1,5 +1,5 @@
 ---
-title: Przy użyciu modelu automatyzacji | Dokumentacja firmy Microsoft
+title: Korzystanie z modelu automatyzacji | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,18 +10,18 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be793e5cc4db30fa410e0218a7f780b6c2826838
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4f1e1479232a684758359de7527f0c2fc9990cc7
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324598"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72722098"
 ---
 # <a name="using-the-automation-model"></a>Korzystanie z modelu automatyzacji
-Po połączeniu usługi pakietu VSPackage do automatyzacji, wywołując można uzyskać właściwości i metody <xref:EnvDTE.DTEClass.GetObject%2A> metody <xref:EnvDTE._DTE> obiektu, przekazując ciąg reprezentujący obiekt, który chcesz pobrać.
+Po nawiązaniu połączenia pakietu VSPackage z automatyzacją można uzyskać właściwości i metody, wywołując metodę <xref:EnvDTE.DTEClass.GetObject%2A> na obiekcie <xref:EnvDTE._DTE>, przekazując ciąg reprezentujący obiekt, który ma zostać pobrany.
 
 ## <a name="obtaining-project-objects"></a>Uzyskiwanie obiektów projektu
- Poniżej przedstawiono dwa przykłady kodu, które pokazują, jak konsumenta automatyzacji uzyskuje projektu obiektów automatyzacji. Aby uzyskać informacje o tym, jak można pobrać obiektu DTE, zobacz [jak: Pobieranie odwołań do obiektów DTE i DTE2](https://msdn.microsoft.com/Library/c92e3c8e-82e6-4a67-85da-e43c50ffd8e4).
+ Poniżej przedstawiono dwa przykłady kodu, które pokazują, jak konsument automatyzacji uzyskuje obiekty automatyzacji projektu. Aby uzyskać informacje na temat pobierania obiektu DTE, zobacz [How to: Get References to the DTE i DTE2 Objects](https://msdn.microsoft.com/Library/c92e3c8e-82e6-4a67-85da-e43c50ffd8e4).
 
 ```vb
 Sub DoAutomation()
@@ -43,9 +43,9 @@ void DoAutomation(void)
 
 ```
 
- W tym momencie można użyć obiektów standardowy projekt, które należą do określonego pakietu VSPackage, aby przenieść w dół hierarchii modelu.
+ W tym momencie można użyć standardowych obiektów projektu, które są częścią określonego pakietu VSPackage, aby przenieść model hierarchii.
 
- Poniższy przykład kodu pokazuje, jak uzyskać niestandardowy obiekt, który jest właściwością typu niestandardowego projektu.:
+ Poniższy przykład kodu pokazuje, jak uzyskać niestandardowy obiekt, który jest właściwością niestandardowego typu projektu.:
 
 ```vb
 Dim MyPrj As Project
@@ -58,7 +58,7 @@ objMyObject = MyPrj.Object 'You call .Object to get to special Project
 objMyObject.MySpecialMethodOrProperty
 ```
 
- Poniższy kod wyświetla nazwy wszystkich właściwości w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] środowiska **ogólne** opcja **narzędzia** menu:
+ Poniższy kod wyświetla nazwy wszystkich właściwości w opcji **Ogólne** środowiska [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] w menu **Narzędzia** :
 
 ```vb
 dim objDTE
@@ -71,5 +71,5 @@ Next
 
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - <xref:EnvDTE.DTEClass.GetObject%2A>

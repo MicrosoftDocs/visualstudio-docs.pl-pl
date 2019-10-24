@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_virtualbasetabletype — | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_virtualBaseTableType | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edbd1d8ae66e58611ab538cf0bfe695cb22b3412
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: aaddb8b71ba96511af3682b442c1e5c8e84a409c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64793030"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738840"
 ---
-# <a name="idiasymbolgetvirtualbasetabletype"></a>IDiaSymbol::get_virtualBaseTableType
-Pobiera typ wskaźnika wirtualnego tabeli podstawowej.
+# <a name="idiasymbolget_virtualbasetabletype"></a>IDiaSymbol::get_virtualBaseTableType
+Pobiera typ wskaźnika wirtualnej tabeli bazowej.
 
 ## <a name="syntax"></a>Składnia
 
@@ -34,25 +34,25 @@ HRESULT get_virtualBaseTableType(
 
 |Parametr|Opis|
 |---------------|-----------------|
-|`pRetVal`|[out] Zwraca [idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md) obiektu, który określa typ tabeli podstawowej.|
+|`pRetVal`|określoną Zwraca obiekt [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) , który określa typ tabeli podstawowej.|
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
-> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Wartość zwracana `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
 ## <a name="remarks"></a>Uwagi
- Wskaźnik wirtualnego tabeli podstawowej (`vbtptr`) jest ukryty wskaźnik w [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] wartości vtable, która obsługuje dziedziczenie z wirtualnej klasy bazowej. A `vbtptr` mogą mieć różne rozmiary, w zależności od klasy dziedziczone.
+ Wskaźnik wirtualnej tabeli podstawowej (`vbtptr`) jest ukrytym wskaźnikiem w [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] tablicy bazowej, która obsługuje dziedziczenie z wirtualnych klas bazowych. @No__t_0 może mieć różne rozmiary w zależności od klas dziedziczonych.
 
- Ta metoda zwraca [idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md) obiekt, który może służyć do określenia rozmiaru vbtptr.
+ Ta metoda zwraca obiekt [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) , którego można użyć do określenia rozmiaru vbtptr.
 
 ## <a name="requirements"></a>Wymagania
 
 |Wymaganie|Opis|
 |-----------------|-----------------|
-|Nagłówek:|dia2.h|
-|Wersja:|DIA SDK w wersji 8.0|
+|Nagłówki|dia2. h|
+|Wersja:|DIA SDK v 8.0|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

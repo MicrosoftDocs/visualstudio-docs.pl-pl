@@ -1,5 +1,5 @@
 ---
-title: Interfejsy (debugowanie zestaw SDK dostępu do interfejsu) | Dokumentacja firmy Microsoft
+title: Interfejsy (zestaw SDK dostępu do interfejsu debugowania) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,21 +13,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f60f4b9018f5b2fff9a5426c28dba40177d9ae9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a0aa48ae0d3c3b6b05ea469baea1a1e1aa106667
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840694"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738696"
 ---
 # <a name="interfaces-debug-interface-access-sdk"></a>Interfejsy (Zestaw SDK dostępu do interfejsu debugowania)
-Metody są wymieniane alfabetycznie w ramach każdego interfejsu w tabeli treści i na stronie interfejsu w Vtable kolejności.
+Metody są wyświetlane alfabetycznie w każdym interfejsie w spisie treści i na stronie interfejsu w kolejności tablic wirtualnych.
 
 ## <a name="in-this-section"></a>W tej sekcji
 
 [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)
 
-Zapewnia kontrolę nad jak DIA SDK oblicza względne i wirtualnego wirtualne adresy obiektów debugowania.
+Zapewnia kontrolę nad sposobem, w jaki DIA SDK oblicza wirtualne i względne adresy wirtualne dla obiektów debugowania.
 
 [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
 
@@ -39,95 +39,95 @@ Zapewnia dostęp do rekordów w strumieniu danych debugowania.
 
 [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)
 
-Wylicza różnych strumieni debugowania zawartych w źródle danych.
+Wylicza różne strumienie debugowania zawarte w źródle danych.
 
 [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)
 
-Wylicza różnych elementów danych ramek, znajdujących się w źródle danych.
+Wylicza różne elementy danych ramek zawarte w źródle danych.
 
 [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)
 
-Wyliczanie różnych źródeł wprowadzonego znajdujących się w źródle danych.
+Wyliczyć różne wstrzyknięte źródła zawarte w źródle danych.
 
 [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
 
-Wylicza różne numery wierszy zawartych w źródle danych.
+Wylicza różne numery wierszy zawarte w źródle danych.
 
 [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)
 
-Wylicza różnych wkładów sekcji zawarte w źródle danych.
+Wylicza różne wkłady sekcji zawarte w źródle danych.
 
 [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)
 
-Wylicza różnych segmentów znajdujących się w źródle danych.
+Wylicza różne segmenty zawarte w źródle danych.
 
 [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)
 
-Wylicza różnych plików źródłowych znajdujących się w źródle danych.
+Wylicza różne pliki źródłowe zawarte w źródle danych.
 
 [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)
 
-Wylicza różnych dostępnych ramek stosu.
+Wylicza różne dostępne ramki stosu.
 
 [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
 
-Wylicza różnych symboli znajdujących się w źródle danych.
+Wylicza różne symbole zawarte w źródle danych.
 
 [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)
 
-Wylicza przy użyciu adresu różnych symboli znajdujących się w źródle danych.
+Wylicza według adresów różnych symboli zawartych w źródle danych.
 
 [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)
 
-Wylicza różnych tabel znajdujących się w źródle danych.
+Wylicza różne tabele zawarte w źródle danych.
 
 [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
 
-Przedstawia szczegóły ramki stosu.
+Uwidacznia szczegóły ramki stosu.
 
 [IDiaImageData](../../debugger/debug-interface-access/idiaimagedata.md)
 
-Przedstawia szczegółowe informacje o podstawowej przesunięcia lokalizacji i pamięci, modułu lub obrazu.
+Opisuje szczegóły lokalizacji podstawowej i przesunięcia pamięci modułu lub obrazu.
 
 [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)
 
-Uzyskuje dostęp do kodu źródłowego programu są przechowywane w źródle danych DIA.
+Uzyskuje dostęp do kodu źródłowego programu przechowywanego w źródle danych DIA.
 
 [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
 
-Uzyskuje dostęp do informacji w tym artykule opisano proces mapowanie bloku bajtów tekst obrazu na numer wiersza pliku źródłowego.
+Uzyskuje dostęp do informacji opisujących proces mapowania z bloku bajtów tekstu obrazu do numeru wiersza pliku źródłowego.
 
 [IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md)
 
-Odbiera wywołania zwrotne z symboli DIA lokalizowanie procedury, umożliwiając w ten sposób interfejs użytkownika może raportować postęp lokalizacji.
+Odbiera wywołania zwrotne z DIA symbol lokalizowania procedury, dzięki czemu interfejs użytkownika może raportować postęp próby lokalizacji.
 
 [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)
 
-Odbiera wywołania zwrotne z symboli DIA lokalizowanie procedury, dzięki czemu ograniczenia nakładane na temat procesu lokalizowania.
+Odbiera wywołania zwrotne z DIA symbol lokalizacji procedury, co pozwala na nakładanie ograniczeń w procesie lokalizowania.
 
 [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)
 
-Pozwala na trwałe właściwości zestawu właściwości DIA odczytu.
+Umożliwia odczytywanie trwałych właściwości zestawu właściwości DIA.
 
 [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)
 
-Umożliwia aplikacji klienta podać plik wykonywalny określony przez położenie pliku w bajtach.
+Umożliwia aplikacji klienckiej dostarczanie bajtów pliku wykonywalnego określonego przez położenie pliku.
 
 [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)
 
-Umożliwia aplikacji klienckiej umożliwiają określanie wartości bajtów plik wykonywalny określony przez względny adres wirtualny.
+Umożliwia aplikacji klienckiej dostarczanie bajtów pliku wykonywalnego określonego przez względny adres wirtualny.
 
 [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
 
-Pobiera dane opisujące wkład sekcji, czyli ciągłego bloku pamięci pochodzącego z danego obrazu compiland —.
+Pobiera dane opisujące udział sekcji, czyli ciągły blok pamięci, który tworzy obraz przez jednostka kompilacji.
 
 [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)
 
-Mapuje dane z numer sekcji na segmenty przestrzeni adresowej.
+Mapuje dane z sekcji Number na segmenty przestrzeni adresowej.
 
 [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 
-Udostępnia kontekst zapytania dla symboli debugowania.
+Zawiera kontekst zapytania dla symboli debugowania.
 
 [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)
 
@@ -135,37 +135,37 @@ Reprezentuje plik źródłowy.
 
 [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)
 
-Udostępnia właściwości ramki stosu.
+Uwidacznia właściwości ramki stosu.
 
 [IDiaStackWalker](../../debugger/debug-interface-access/idiastackwalker.md)
 
-Udostępnia metody stosu zapoznaj się z przy użyciu pliku PDB.
+Zapewnia metody do przeszukiwania stosu przy użyciu pliku PDB.
 
 [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)
 
-Utrzymuje kontekst stosu między wywołań [idiaframedata::EXECUTE —](../../debugger/debug-interface-access/idiaframedata-execute.md) metody.
+Utrzymuje kontekst stosu między wywołaniami metody [IDiaFrameData:: Execute](../../debugger/debug-interface-access/idiaframedata-execute.md) .
 
 [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)
 
-Ułatwia zalet stosu przy użyciu pliku bazy danych (PDB) programu debugowania.
+Ułatwia przechodzenie stosu przy użyciu pliku bazy danych debugowania programu (PDB).
 
 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 
-Opisuje właściwości instancji symbolu.
+Opisuje właściwości wystąpienia symbolu.
 
 [IDiaTable](../../debugger/debug-interface-access/idiatable.md)
 
-Wylicza DIA tabeli źródła danych.
+Wylicza tabelę źródła danych DIA.
 
 ## <a name="related-sections"></a>Sekcje pokrewne
 [Wyliczenia i struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)
 
-W tym artykule opisano, wyliczenia i struktury używane przez różne interfejsy DIA SDK.
+Opisuje wyliczenia i struktury używane przez różne interfejsy DIA SDK.
 
 [Stałe (Zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)
 
-W tym artykule opisano dostępne w DIA SDK stałe.
+Opisuje stałe dostępne w DIA SDK.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
-- [Dokumentacja](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)
+- [Tematy pomocy](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)

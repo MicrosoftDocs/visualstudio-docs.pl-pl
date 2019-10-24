@@ -1,5 +1,5 @@
 ---
-title: Memorytypeenum — | Dokumentacja firmy Microsoft
+title: Memorytypeenum — | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19776c8d4ef72149c575d6835e9265e9cdb33727
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e0710ec5cdfcfcb59407d18b43b885603f017fdb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62855133"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738633"
 ---
 # <a name="memorytypeenum"></a>MemoryTypeEnum
-Określa typ pamięci, aby uzyskać dostęp.
+Określa typ pamięci do uzyskania dostępu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -34,20 +34,20 @@ enum MemoryTypeEnum {
 ```
 
 #### <a name="parameters"></a>Parametry
-`MemTypeCode` Uzyskuje dostęp do kodu tylko pamięci.
+`MemTypeCode` uzyskuje dostęp tylko do pamięci kodowej.
 
-`MemTypeData` Uzyskuje dostęp do danych lub stosu pamięci.
+`MemTypeData` uzyskuje dostęp do danych lub pamięci stosu.
 
-`MemTypeStack` Uzyskuje dostęp do tylko stosu pamięci.
+`MemTypeStack` uzyskuje dostęp tylko do pamięci stosu.
 
-`MemTypeAny` Uzyskuje dostęp do dowolnego rodzaju pamięci.
+`MemTypeAny` uzyskuje dostęp do dowolnego rodzaju pamięci.
 
 ## <a name="remarks"></a>Uwagi
-Wartości w tym wyliczeniu są przekazywane do [IDiaStackWalkHelper::readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md) metodę, aby ograniczyć dostęp do różnych typów pamięci.
+Wartości w tym wyliczeniu są przesyłane do metody [IDiaStackWalkHelper:: ReadMemory —](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md) w celu ograniczenia dostępu do różnych typów pamięci.
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: cvconst.h
+Nagłówek: cvconst. h
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wyliczenia i struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaStackWalkHelper::readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md)

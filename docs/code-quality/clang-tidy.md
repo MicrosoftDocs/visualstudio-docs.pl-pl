@@ -8,12 +8,12 @@ author: frozenpandaman
 ms.author: efessler
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 430d0e271f83332f7163c9c0c947f96756ca7a7d
-ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
+ms.openlocfilehash: e226ac6c83839474b9d8ac6be7fb57e376de4a4f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72165193"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745990"
 ---
 # <a name="using-clang-tidy-in-visual-studio"></a>Korzystanie z Clang-uporządkowanego w programie Visual Studio
 
@@ -28,29 +28,29 @@ Clang-uporządkowanego jest uruchamiany po pomyślnej kompilacji; może być kon
 
 ## <a name="msbuild"></a>MSBuild
 
-Można skonfigurować Clang-uporządkowanego do uruchamiania w ramach analizy kodu i kompilacji na stronie**ogólnej** **analizy kodu** >  w okno właściwości projektu. Opcje konfigurowania narzędzia znajdują się w podmenu Clang-uporządkowanego.
+Można skonfigurować Clang-uporządkowanego do uruchamiania w ramach analizy kodu i kompilowania na stronie**ogólne**  >  **analizy kodu** w okno właściwości projektu. Opcje konfigurowania narzędzia znajdują się w podmenu Clang-uporządkowanego.
 
-Aby uzyskać więcej informacji, zobacz [jak: Ustawianie właściwości analizy kodu dla C/C++ projects @ no__t-1.
+Aby uzyskać więcej informacji, zobacz [How to: Set Code Analysis Properties for CC++ /projects](../code-quality/how-to-set-code-analysis-properties-for-c-cpp-projects.md).
 
-## <a name="cmake"></a>Narzędzia CMake
+## <a name="cmake"></a>CMake
 
 W projektach CMake można skonfigurować kontrole Clang-uporządkowanego w `CMakeSettings.json`. Po otwarciu kliknij pozycję "Edytuj kod JSON" w prawym górnym rogu edytora ustawień projektu CMake. Następujące klucze są rozpoznawane:
 
-- `enableMicrosoftCodeAnalysis`: Włącza analizę kodu firmy Microsoft
-- `enableClangTidyCodeAnalysis`: Włącza analizę Clang-uporządkowanego
-- `clangTidyChecks`: Konfiguracja Clang-uporządkowanego, określona jako rozdzielana przecinkami lista, tj. czeków, które mają być włączone lub wyłączone.
+- `enableMicrosoftCodeAnalysis`: włącza analizę kodu firmy Microsoft
+- `enableClangTidyCodeAnalysis`: włącza analizę Clang-uporządkowanego
+- `clangTidyChecks`: Konfiguracja Clang-uporządkowanego, określona jako lista rozdzielona przecinkami, tj. czeków, które mają być włączone lub wyłączone.
 
 Jeśli żadna z opcji "Włącz" nie zostanie określona, program Visual Studio wybierze narzędzie do analizy pasujące do używanego zestawu narzędzi platformy.
 
 ## <a name="warning-display"></a>Wyświetlanie ostrzeżeń
 
-Uruchomienia Clang-uporządkowanego powodują ostrzeżenia wyświetlane w Lista błędów, a jak w edytorze. Użyj kolumny "Kategoria" w Lista błędów, aby sortować i organizować ostrzeżenia Clang-uporządkowanego. Ostrzeżenia w edytorze można skonfigurować przez przełączenie ustawienia "Wyłącz Zawijanie analizy kodu" w obszarze **narzędzia** > **Opcje**.
+Uruchomienia Clang-uporządkowanego powodują ostrzeżenia wyświetlane w Lista błędów, a jak w edytorze. Użyj kolumny "Kategoria" w Lista błędów, aby sortować i organizować ostrzeżenia Clang-uporządkowanego. Ostrzeżenia w edytorze można skonfigurować przez przełączenie ustawienia "Wyłącz Zawijanie analizy kodu" w obszarze **narzędzia**  > **Opcje**.
 
 ## <a name="clang-tidy-configuration"></a>Clang — konfiguracja uporządkowanego
 
 Można skonfigurować sprawdzanie, czy Clang-uporządkowanego działa w programie Visual Studio za pomocą opcji **checks Clang-uporządkowanego** . Dane wejściowe są przekazywane do argumentu **--checks** narzędzia. Każdą następną konfigurację można uwzględnić w plikach Custom **. Clang-uporządkowanego** . Aby uzyskać więcej informacji, zobacz [dokumentację Clang-uporządkowanego w witrynie LLVM.org](https://clang.llvm.org/extra/clang-tidy/) .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Obsługa Clang/LLVM dla projektów MSBuild](https://aka.ms/cpp/clangmsbuild)
 - [Obsługa Clang/LLVM dla projektów CMake](https://aka.ms/cpp/clangcmake)

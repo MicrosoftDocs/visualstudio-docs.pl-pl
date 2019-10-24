@@ -1,5 +1,5 @@
 ---
-title: Idiasegment::get_read — | Dokumentacja firmy Microsoft
+title: 'IDiaSegment:: get_read | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 933a77e85a75cff3d846d0e28ff437039b32ffe9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: faa616709015afb74db93e5a12ae8c684d93e88f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839449"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742388"
 ---
-# <a name="idiasegmentgetread"></a>IDiaSegment::get_read
-Pobiera flagę wskazującą, czy mogą być odczytywane segmentu.
+# <a name="idiasegmentget_read"></a>IDiaSegment::get_read
+Pobiera flagę wskazującą, czy można odczytać segment.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,10 +33,10 @@ HRESULT get_read ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca `TRUE` Jeśli segment mogą być odczytywane; w przeciwnym razie zwraca `FALSE`.
+określoną Zwraca `TRUE`, jeśli segment może być odczytany; w przeciwnym razie zwraca `FALSE`.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`. Zwraca `S_FALSE`, jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

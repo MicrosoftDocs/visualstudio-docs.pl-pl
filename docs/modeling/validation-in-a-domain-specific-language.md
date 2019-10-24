@@ -10,12 +10,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9737c9f02f9231aae5d20bd22321024fcfd7fd69
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fb059a9175c61c238abf0881cd96e4179fcf6f65
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663731"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748167"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Sprawdzanie poprawności w języku specyficznym dla domeny
 Jako autor języka specyficznego dla domeny (DSL) można zdefiniować ograniczenia sprawdzania poprawności, aby sprawdzić, czy model utworzony przez użytkownika ma znaczenie. Jeśli na przykład linia DSL umożliwia użytkownikom rysowanie drzewa rodzin osób i ich przodków, można napisać ograniczenie, które zapewnia, że dzieci mają daty urodzenia po nadrzędnych.
@@ -334,7 +334,7 @@ validationController.ValidateCustom
 > [!WARNING]
 > Upewnij się, że użytkownik wie, że zmiana została skorygowana lub wycofana. Na przykład użyj `System.Windows.Forms.MessageBox.Show("message").`
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [Programy obsługi zdarzeń propagujące zmiany poza modelem](../modeling/event-handlers-propagate-changes-outside-the-model.md)

@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_nostackordering — | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_noStackOrdering | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d36a934fe9475613e916d51290ac6f8960a6b42
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: a9c93119ee89355c9aae5c91caa185c9a1a6bb5d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64791996"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739725"
 ---
-# <a name="idiasymbolgetnostackordering"></a>IDiaSymbol::get_noStackOrdering
-Ta funkcja pobiera flagę wskazującą, czy kolejność stosu nie może zostać wykonane w ramach sprawdzania bufora stosu ([/GS (Sprawdzanie zabezpieczeń bufora)](/cpp/build/reference/gs-buffer-security-check) — opcja kompilatora).
+# <a name="idiasymbolget_nostackordering"></a>IDiaSymbol::get_noStackOrdering
+Ta funkcja Pobiera flagę wskazującą, czy nie można wykonać porządkowania stosu w ramach sprawdzania buforu stosu (opcja kompilatora[(sprawdzanie zabezpieczeń buforu)](/cpp/build/reference/gs-buffer-security-check) ).
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,21 +33,21 @@ HRESULT get_noStackOrdering(
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca `TRUE` Jeśli kolejność stosu nie może być wykonana w ramach sprawdzeniem stosu buforu; w przeciwnym razie zwraca `FALSE`.
+określoną Zwraca `TRUE`, jeśli nie można wykonać porządkowania stosu w ramach sprawdzania buforu stosu; w przeciwnym razie zwraca `FALSE`.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
-> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Wartość zwracana przez `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
 ## <a name="requirements"></a>Wymagania
 
 |Wymaganie|Opis|
 |-----------------|-----------------|
-|Nagłówek:|dia2.h|
-|Wersja:|DIA SDK w wersji 8.0|
+|Nagłówki|dia2. h|
+|Wersja:|DIA SDK v 8.0|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [/GS (Sprawdzanie zabezpieczeń bufora)](/cpp/build/reference/gs-buffer-security-check)

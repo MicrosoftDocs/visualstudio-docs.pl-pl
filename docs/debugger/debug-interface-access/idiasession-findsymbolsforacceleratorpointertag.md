@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findSymbolsForAcceleratorPointerTag | Dokumentacja firmy Microsoft
+title: 'IDiaSession:: findSymbolsForAcceleratorPointerTag | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 72510e9e82c1ec6983075880d4335dee8c0ad23c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: da795770ad0f6f57697bc17a4ee8cf936cfc1183
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839241"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741977"
 ---
 # <a name="idiasessionfindsymbolsforacceleratorpointertag"></a>IDiaSession::findSymbolsForAcceleratorPointerTag
-Zwraca wyliczenie symboli dla zmiennej, która odpowiada wartości określonego tagu w obiekcie nadrzędnym funkcji klasy zastępczej akceleratora.
+Zwraca Wyliczenie symboli dla zmiennej, do której odnosi się określona wartość tagu w funkcji zastępczej akceleratora nadrzędnego.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,19 +33,19 @@ HRESULT findSymbolsForAcceleratorPointerTag ( 
 #### <a name="parameters"></a>Parametry
  `parent`
 
-[in] Idiasymbol —, która odnosi się do funkcji klasy zastępczej akcelerator ma być przeszukiwany.
+podczas Element IDiaSymbol, który odpowiada funkcji zastępczej akceleratora do przeszukania.
 
  `tagValue`
 
-[in] Wartość tagu wskaźnika.
+podczas Wartość znacznika wskaźnika.
 
  `ppResult`
 
-[out] Wskaźnik do `IDiaEnumSymbols` wskaźnik interfejsu, który jest inicjowany z wynikiem.
+określoną Wskaźnik do `IDiaEnumSymbols` wskaźnika interfejsu, który jest inicjowany z wynikiem.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

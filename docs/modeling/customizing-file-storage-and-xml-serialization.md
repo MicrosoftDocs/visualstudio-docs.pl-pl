@@ -11,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 51173fcf2e8f6785b61bfd348178a59b5fb933dc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 27d8672ea94cf2a1547904f313ac36509f111462
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654015"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748461"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>Dostosowywanie przechowywania plików i serializacji XML
 
@@ -306,7 +306,7 @@ Węzły danych roli znajdują się w węzłach klasy źródłowej.
 |Nazwa elementu roli|Określa nazwę elementu XML, który jest pochodną roli źródłowej. Wartość domyślna to nazwa właściwości roli.|
 |Użyj pełnego formularza|W przypadku wartości true każdy element docelowy lub moniker jest ujęty w węźle XML reprezentującym relację. Ta wartość powinna być ustawiona na true, jeśli relacja ma własne właściwości domeny.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [Generowanie kodu z języka specyficznego dla domeny](../modeling/generating-code-from-a-domain-specific-language.md)

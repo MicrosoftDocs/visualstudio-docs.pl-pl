@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: d526d5df8ba03374fd26ceb870d4b240b6fc2fa4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c3c5d648a5880da43d96e6741656da1023f7cf7f
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648961"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777760"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Opracowywanie aplikacji na platformę uniwersalną systemu Windows (UWP)
 
@@ -40,7 +40,7 @@ Poniżej znajduje się lista programów, które są potrzebne:
 
 ::: moniker range="vs-2017"
 
-- [System Windows 10](http://windows.microsoft.com/windows/downloads). Program Visual Studio 2017 obsługuje programowanie platformy UWP tylko w systemie Windows 10. Aby uzyskać więcej informacji, zobacz [wymagania systemowe dotyczące](/visualstudio/productinfo/vs2017-system-requirements-vs) [platformy](/visualstudio/productinfo/vs2017-compatibility-vs) programu Visual Studio i system.
+- [System Windows 10](https://support.microsoft.com/help/17777/downloads-for-windows). Program Visual Studio 2017 obsługuje programowanie platformy UWP tylko w systemie Windows 10. Aby uzyskać więcej informacji, zobacz [wymagania systemowe dotyczące](/visualstudio/productinfo/vs2017-system-requirements-vs) [platformy](/visualstudio/productinfo/vs2017-compatibility-vs) programu Visual Studio i system.
 
 - [Program Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download). Wymagane jest również opcjonalne platforma uniwersalna systemu Windows obciążenie pracą programistyczną.
 
@@ -50,7 +50,7 @@ Poniżej znajduje się lista programów, które są potrzebne:
 
 ::: moniker range="vs-2019"
 
-- [System Windows 10](http://windows.microsoft.com/windows/downloads). Program Visual Studio 2019 obsługuje programowanie platformy UWP tylko w systemie Windows 10. Aby uzyskać więcej informacji, zobacz [wymagania systemowe dotyczące](/visualstudio/releases/2019/system-requirements/) [platformy](/visualstudio/releases/2019/compatibility/) programu Visual Studio i system.
+- [System Windows 10](https://support.microsoft.com/help/17777/downloads-for-windows). Program Visual Studio 2019 obsługuje programowanie platformy UWP tylko w systemie Windows 10. Aby uzyskać więcej informacji, zobacz [wymagania systemowe dotyczące](/visualstudio/releases/2019/system-requirements/) [platformy](/visualstudio/releases/2019/compatibility/) programu Visual Studio i system.
 
 - [Program Visual Studio](https://visualstudio.microsoft.com/downloads). Wymagane jest również opcjonalne platforma uniwersalna systemu Windows obciążenie pracą programistyczną.
 

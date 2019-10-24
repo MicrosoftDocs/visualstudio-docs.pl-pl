@@ -11,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a24d288e7c5572ca96dcc43466c2163d9ecca67
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6ad53866c1930edb01ccd163131ce5e23644929c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658265"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747509"
 ---
 # <a name="properties-of-compartment-shapes"></a>Właściwości kształtów przedziałów
 Kształty przedziału są jednym z kształtów, których można użyć do wyświetlania klasy domeny w języku specyficznym dla domeny. Przedziały można rozwijać i zwijać.
@@ -55,6 +55,6 @@ Kształty przedziału są jednym z kształtów, których można użyć do wyświ
 |Stały tekst etykietki narzędzia|Tekst, który jest używany dla stałej etykietki narzędzia.|\<none >|
 |Słowo kluczowe pomocy|Słowo kluczowe, które jest używane do indeksowania pomocy F1 dla tego kształtu.|\<none >|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [narzędzia języka specyficznego dla domeny słownik](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

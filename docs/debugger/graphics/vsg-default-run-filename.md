@@ -1,5 +1,5 @@
 ---
-title: VSG_DEFAULT_RUN_FILENAME | Dokumentacja firmy Microsoft
+title: VSG_DEFAULT_RUN_FILENAME | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ea549d2f-c857-458c-93c7-bc5a2d11d15d
@@ -8,15 +8,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb56f7ef08241aed2e109e6845af8fb596cb42e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 835e2cec19e36418091e094abd2ec76bd6403398
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62895395"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72734828"
 ---
-# <a name="vsgdefaultrunfilename"></a>VSG_DEFAULT_RUN_FILENAME
-Definiuje domyślną nazwę pliku pliku dziennika grafiki.
+# <a name="vsg_default_run_filename"></a>VSG_DEFAULT_RUN_FILENAME
+Określa domyślną nazwę pliku dziennika grafiki.
 
 ## <a name="syntax"></a>Składnia
 
@@ -25,22 +25,22 @@ Definiuje domyślną nazwę pliku pliku dziennika grafiki.
 ```
 
 #### <a name="parameters"></a>Parametry
- `filename` Nazwa pliku nadaną domyślnie plik dziennika grafiki podczas przechwytywania informacji graficznych programowo.
+ `filename` nazwę pliku, która jest domyślnie określona w pliku dziennika grafiki, gdy dane graficzne są przechwytywane programowo.
 
 ## <a name="value"></a>Wartość
- Plik dziennika ciąg literału, który reprezentuje nazwę pliku w oknie grafiki. Domyślnie L"default.vsglog".
+ Literał ciągu, który reprezentuje nazwę pliku dziennika grafiki. Domyślnie L "default. vsglog".
 
 ```C++
 #define VSG_DEFAULT_FILENAME L"default.vsglog"
 ```
 
 ## <a name="remarks"></a>Uwagi
- Jeśli symbol preprocesora `DONT_SAVE_VSGLOG_TO_TEMP` jest zdefiniowany, następnie nazwa pliku jest określana względem bieżącego katalogu przechwyconych aplikacji lub jest ścieżką bezwzględną; w przeciwnym razie jest określana względem katalogu plików tymczasowych użytkownika i nie może być ścieżką bezwzględną.
+ Jeśli zostanie zdefiniowany symbol preprocesora `DONT_SAVE_VSGLOG_TO_TEMP`, nazwa pliku jest określana względem bieżącego katalogu przechwyconej aplikacji lub jest ścieżką bezwzględną; w przeciwnym razie odnoszą się do katalogu plików tymczasowych użytkownika i nie może być ścieżką bezwzględną.
 
- Aby zmienić nazwę pliku zdefiniowane, trzeba będzie ponownie zdefiniować je przed wprowadzeniem `vsgcapture.h` w programach.
+ Aby zmienić zdefiniowaną nazwę pliku, należy ją przedefiniować przed dołączeniem `vsgcapture.h` do programu.
 
 ## <a name="example"></a>Przykład
- W tym przykładzie pokazano sposób zmiany pliku przechwytywania domyślnej nazwy pliku:
+ Ten przykład pokazuje, jak zmienić domyślną nazwę pliku przechwytywania:
 
 ```C++
 // Redefine the default capture filename before including vsgcapture.h
@@ -49,5 +49,5 @@ Definiuje domyślną nazwę pliku pliku dziennika grafiki.
 #include <vsgcapture.h>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [DONT_SAVE_VSGLOG_TO_TEMP](dont-save-vsglog-to-temp.md)

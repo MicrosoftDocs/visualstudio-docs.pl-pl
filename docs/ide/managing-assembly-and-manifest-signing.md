@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3add6e3e4f38b5ba73cd5154720d7b283189526e
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 8cf721e9880ce7f0b7c3191f73f16366637f0704
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461499"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748878"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>Zarządzanie podpisywaniem zestawu i manifestu
 
@@ -29,7 +29,7 @@ Silna nazwa składa się z tożsamości zestawu (prostej nazwy tekstu, numeru we
 
 Aby uzyskać informacje na temat podpisywania zestawów w C# Visual Basic i projektach, zobacz [Tworzenie i używanie zestawów o silnej nazwie](/dotnet/framework/app-domains/create-and-use-strong-named-assemblies).
 
-Aby uzyskać informacje na temat podpisywania zestawów C++ w projektach wizualnych, zobacz [zestawy oC++silnych nazwach (/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli).
+Aby uzyskać informacje na temat podpisywania C++ zestawów w projektach, zobacz [zestawy o silnych nazwachC++(/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli).
 
 > [!NOTE]
 > Podpisywanie silnej nazwy nie chroni przed odtwarzaniem przez proces odtwarzania zestawu. Aby chronić przed odwróceniem, zobacz [społeczność Dotfuscator](dotfuscator/index.md).
@@ -58,7 +58,7 @@ Ogólnie rzecz biorąc nie należy podpisywać plików wykonywalnych. Silnie naz
 
 ## <a name="how-to-sign-an-assembly-in-visual-studio"></a>Jak podpisać zestaw w programie Visual Studio
 
-Aplikację lub składnik należy podpisać przy użyciu karty  podpisywanie okna właściwości projektu (kliknij prawym przyciskiem myszy węzeł projektu w **Eksplorator rozwiązań** i wybierz polecenie **Właściwości**). Wybierz kartę  podpisywanie, a następnie zaznacz pole wyboru **podpisz zestaw** .
+Aplikację lub składnik należy podpisać przy użyciu karty **podpisywanie** okna właściwości projektu (kliknij prawym przyciskiem myszy węzeł projektu w **Eksplorator rozwiązań** i wybierz polecenie **Właściwości**). Wybierz kartę **podpisywanie** , a następnie zaznacz pole wyboru **podpisz zestaw** .
 
 Określ plik klucza. Jeśli zdecydujesz się utworzyć nowy plik klucza, nowe pliki kluczy są zawsze tworzone w formacie *PFX* . Musisz mieć nazwę i hasło dla nowego pliku.
 
@@ -67,9 +67,9 @@ Określ plik klucza. Jeśli zdecydujesz się utworzyć nowy plik klucza, nowe pl
 
 Możesz również wskazać klucz, który został już utworzony. Aby uzyskać więcej informacji na temat tworzenia kluczy, zobacz [Tworzenie pary kluczy publiczny-prywatny](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair).
 
-Jeśli masz tylko dostęp do klucza publicznego, możesz użyć podpisywania opóźnień, aby odroczyć przypisanie klucza. Aby włączyć podpisywanie opóźnień, należy zaznaczyć pole wyboru **Opóźnij tylko znak** . Projekt podpisany z opóźnieniem nie jest uruchomiony i nie można go debugować. Można jednak pominąć weryfikację podczas opracowywania przy użyciu [Narzędzia do silnej nazwy SN. exe](/dotnet/framework/tools/sn-exe-strong-name-tool) z `-Vr` opcją.
+Jeśli masz tylko dostęp do klucza publicznego, możesz użyć podpisywania opóźnień, aby odroczyć przypisanie klucza. Aby włączyć podpisywanie opóźnień, należy zaznaczyć pole wyboru **Opóźnij tylko znak** . Projekt podpisany z opóźnieniem nie jest uruchomiony i nie można go debugować. Można jednak pominąć weryfikację podczas opracowywania przy użyciu [Narzędzia do silnej nazwy SN. exe](/dotnet/framework/tools/sn-exe-strong-name-tool) z opcją `-Vr`.
 
-Aby uzyskać informacje na temat podpisywania manifestów [, zobacz How to: Podpisywanie aplikacji i manifestów](../ide/how-to-sign-application-and-deployment-manifests.md)wdrożenia.
+Informacje o podpisywaniu manifestów znajdują się w temacie [How to: Signing Application and Deployment Manifests](../ide/how-to-sign-application-and-deployment-manifests.md).
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_builtInKind | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_builtInKind | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d18edfaa5e30ba4a8c3e370eca1ab2398e6229a
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 183e4da9eebb1a6b26bceb38a3f00a5a64864c8a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62837490"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740896"
 ---
-# <a name="idiasymbolgetbuiltinkind"></a>IDiaSymbol::get_builtInKind
-Pobiera wbudowanych rodzaj typu HLSL.
+# <a name="idiasymbolget_builtinkind"></a>IDiaSymbol::get_builtInKind
+Pobiera wbudowany rodzaj typu HLSL.
 
 ## <a name="syntax"></a>Składnia
 
@@ -30,10 +30,10 @@ HRESULT get_buildInKind(
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Wskaźnik do `DWORD` przechowuje wbudowaną rodzaju typu HLSL.
+określoną Wskaźnik do `DWORD`, który posiada wbudowany rodzaj typu HLSL.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

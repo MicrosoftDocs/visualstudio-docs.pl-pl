@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::findInlineFramesByAddr | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: findInlineFramesByAddr | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1a5af94d6a5d6100f8ffb6047f57ee59f780da5
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 57cb155d5cfcb4f2b59c101388dcc4907e1b6d80
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62831727"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741180"
 ---
 # <a name="idiasymbolfindinlineframesbyaddr"></a>IDiaSymbol::findInlineFramesByAddr
-Pobiera wyliczenie, które umożliwia klientowi wykonać iterację przez wszystkie ramki wbudowane danego adresu.
+Pobiera wyliczenie, które pozwala klientowi na iterację we wszystkich wbudowanych ramkach na danym adresie.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,20 +33,20 @@ HRESULT findInlineFramesByAddr ( 
 #### <a name="parameters"></a>Parametry
  `isect`
 
-[in] Określa składnik części adresu.
+podczas Określa składnik sekcji adresu.
 
  `offset`
 
-[in] Określa przesunięcie składnik adresu.
+podczas Określa składnik przesunięcia adresu.
 
  `ppResult`
 
-[out] Przechowuje `IDiaEnumSymbols` obiektu, który zawiera listę ramek, które są pobierane.
+określoną Przechowuje `IDiaEnumSymbols` obiektu, który zawiera listę pobieranych ramek.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [SymTagEnum, wyliczenie](../../debugger/debug-interface-access/symtagenum.md)

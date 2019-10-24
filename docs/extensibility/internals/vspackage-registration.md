@@ -11,22 +11,22 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4b68d23211b0a6e1847c7cd22a79b44327e4aa6
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 44114ccdc4a0873887d48c3d191506f10cc3eaf3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924187"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72722000"
 ---
 # <a name="vspackage-registration"></a>Rejestracja pakietu VSPackage
-Pakietów VSPackage musi poinformować [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , że są one zainstalowane i powinny zostać załadowane. Ten proces jest realizowany przez zapisanie informacji w rejestrze. Jest to typowe zadanie Instalatora.
+Pakietów VSPackage musi poinformować [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], że są one zainstalowane i powinny zostać załadowane. Ten proces jest realizowany przez zapisanie informacji w rejestrze. Jest to typowe zadanie Instalatora.
 
 > [!NOTE]
-> Jest to zaakceptowane rozwiązanie podczas opracowywania pakietu VSPackage w celu korzystania z samorejestracji. [!INCLUDE[vsipprvsip](../../extensibility/includes/vsipprvsip_md.md)] Jednak partnerzy nie mogą dostarczać swoich produktów przy użyciu samorejestracji w ramach instalacji.
+> Jest to zaakceptowane rozwiązanie podczas opracowywania pakietu VSPackage w celu korzystania z samorejestracji. Jednak partnerzy [!INCLUDE[vsipprvsip](../../extensibility/includes/vsipprvsip_md.md)] nie mogą wydać swoich produktów przy użyciu samorejestracji w ramach instalacji.
 
  Wpisy rejestru w pakiecie Instalator Windows są zwykle wprowadzane w tabeli rejestru. Można również zarejestrować rozszerzenia plików w tabeli rejestru. Jednak Instalator Windows zapewnia wbudowaną obsługę za pomocą tabel identyfikatorów programowych (ProgId), klas, rozszerzeń i zleceń. Aby uzyskać więcej informacji, zobacz [tabele bazy danych](/windows/desktop/Msi/database-tables).
 
- Upewnij się, że wpisy rejestru są skojarzone ze składnikiem odpowiednim dla wybranej strategii Side-by-side. Na przykład wpisy rejestru dla udostępnionego pliku powinny być skojarzone ze składnikiem Instalator Windows tego pliku. Podobnie wpisy rejestru dla pliku specyficznego dla wersji powinny być skojarzone ze składnikiem tego pliku. W przeciwnym razie Instalowanie lub odinstalowywanie pakietu VSPackage dla jednej wersji [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] programu może spowodować uszkodzenie pakietu VSPackage w innych wersjach. Aby uzyskać więcej informacji, zobacz [obsługi wielu wersji programu Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md).
+ Upewnij się, że wpisy rejestru są skojarzone ze składnikiem odpowiednim dla wybranej strategii Side-by-side. Na przykład wpisy rejestru dla udostępnionego pliku powinny być skojarzone ze składnikiem Instalator Windows tego pliku. Podobnie wpisy rejestru dla pliku specyficznego dla wersji powinny być skojarzone ze składnikiem tego pliku. W przeciwnym razie Instalowanie lub odinstalowywanie pakietu VSPackage dla jednej wersji [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] może spowodować uszkodzenie pakietu VSPackage w innych wersjach. Aby uzyskać więcej informacji, zobacz [Obsługa wielu wersji programu Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md).
 
 > [!NOTE]
 > Najprostszym sposobem zarządzania rejestracją jest użycie tych samych danych w tych samych plikach zarówno w przypadku rejestracji dla deweloperów, jak i rejestracji w czasie instalacji. Na przykład niektóre narzędzia programistyczne Instalatora mogą korzystać z pliku w formacie reg w czasie kompilacji. Jeśli deweloperzy przechowują pliki reg do własnych codziennych wdrożeń i debugowania, te same pliki mogą być automatycznie dołączane do Instalatora. Jeśli nie można automatycznie udostępnić danych rejestracji, należy się upewnić, że kopia danych rejestracyjnych Instalatora jest aktualna.
@@ -55,6 +55,6 @@ Pakietów VSPackage musi poinformować [!INCLUDE[vsprvs](../../code-quality/incl
 
 - Kod samodzielnej rejestracji można odmówić dostępu do zasobów sieciowych, takich jak biblioteki typów, jeśli składnik jest jednocześnie określony jako Run-from-Source i znajduje się w tabeli SelfReg. Może to spowodować niepowodzenie instalacji składnika podczas instalacji administracyjnej.
 
-## <a name="see-also"></a>Zobacz też
-- [Windows Installer](/windows/desktop/Msi/windows-installer-portal)
+## <a name="see-also"></a>Zobacz także
+- [Instalator Windows](/windows/desktop/Msi/windows-installer-portal)
 - [Rejestracja pakietu zarządzanego](https://msdn.microsoft.com/library/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)

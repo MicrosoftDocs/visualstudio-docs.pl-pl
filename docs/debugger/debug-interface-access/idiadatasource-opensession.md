@@ -1,5 +1,5 @@
 ---
-title: Idiadatasource::opensession — | Dokumentacja firmy Microsoft
+title: 'IDiaDataSource:: openSession | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 393abb3b1e1872a416865cbfee5c142bef98ce78
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7dd6ab61db3e3bafd594298aa41d32bce64d4941
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838457"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744917"
 ---
 # <a name="idiadatasourceopensession"></a>IDiaDataSource::openSession
-Zostanie otwarta sesja zapytań symboli.
+Otwiera sesję do wykonywania zapytań o symbole.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,21 +33,21 @@ HRESULT openSession ( 
 #### <a name="parameters"></a>Parametry
 ppSession
 
-[out] Zwraca [idiasession —](../../debugger/debug-interface-access/idiasession.md) obiekt reprezentujący Otwórz sesję.
+określoną Zwraca obiekt [IDiaSession](../../debugger/debug-interface-access/idiasession.md) reprezentujący otwartą sesję.
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. W poniższej tabeli przedstawiono możliwe wartości zwracane dla tej metody.
+Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. W poniższej tabeli przedstawiono możliwe wartości zwracane dla tej metody.
 
 |Wartość|Opis|
 |-----------|-----------------|
-|E_UNEXPECTED|[Idiadatasource —](../../debugger/debug-interface-access/idiadatasource.md) obiektu nie wcześniej została zainicjowana przy użyciu źródła symboli.|
-|E_INVALIDARG|Nieprawidłowy `ppSession` parametru.|
-|E_OUTOFMEMORY|Za mało pamięci, aby otworzyć sesji.|
+|E_UNEXPECTED|Obiekt [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md) nie został wcześniej zainicjowany ze źródłem symboli.|
+|E_INVALIDARG|Nieprawidłowy parametr `ppSession`.|
+|E_OUTOFMEMORY|Za mało pamięci, aby otworzyć sesję.|
 
 ## <a name="remarks"></a>Uwagi
-Ta metoda otwiera [idiasession —](../../debugger/debug-interface-access/idiasession.md) obiekt dla źródła danych.
+Ta metoda otwiera obiekt [IDiaSession](../../debugger/debug-interface-access/idiasession.md) dla źródła danych.
 
-`IDiaSession` obiekty zaimplementować zapytania do źródła danych. Sesja zarządza jednej przestrzeni adresowej dla każdego zestawu symboli debugowania. Jeśli plik .exe lub .dll, opisanego przez symbole źródło danych jest aktywny adres wielu zakresów (na przykład, ponieważ wiele procesów jest załadowany), a następnie używać jednej sesji dla każdego zakresu adresów.
+obiekty `IDiaSession` implementują zapytania do źródła danych. Sesja zarządza jedną przestrzenią adresową dla każdego zestawu symboli debugowania. Jeśli plik exe lub dll opisany przez symbole źródła danych jest aktywny w wielu zakresach adresów (na przykład, ponieważ załadowano wiele procesów), należy użyć jednej sesji dla każdego zakresu adresów.
 
 ## <a name="example"></a>Przykład
 
@@ -60,7 +60,7 @@ if (FAILED(hr))
 }
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
 - [Omówienie](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

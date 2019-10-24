@@ -1,5 +1,5 @@
 ---
-title: Idiasegment — | Dokumentacja firmy Microsoft
+title: IDiaSegment | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dfb0330f08dab158c298bbc944d8dc6410f719f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 855b40f3d35d884a366e8fdc36ed1ec4f2bef85a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839436"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742337"
 ---
 # <a name="idiasegment"></a>IDiaSegment
-Mapuje dane z numer sekcji na segmenty przestrzeni adresowej.
+Mapuje dane z sekcji Number na segmenty przestrzeni adresowej.
 
 ## <a name="syntax"></a>Składnia
 
@@ -28,29 +28,29 @@ Mapuje dane z numer sekcji na segmenty przestrzeni adresowej.
 IDiaSegment : IUnknown
 ```
 
-## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych
 W poniższej tabeli przedstawiono metody `IDiaSegment`.
 
 |Metoda|Opis|
 |------------|-----------------|
 |[IDiaSegment::get_frame](../../debugger/debug-interface-access/idiasegment-get-frame.md)|Pobiera numer segmentu.|
-|[IDiaSegment::get_offset](../../debugger/debug-interface-access/idiasegment-get-offset.md)|Pobiera przesunięcie w segmentach, gdzie rozpoczyna się w sekcji.|
+|[IDiaSegment::get_offset](../../debugger/debug-interface-access/idiasegment-get-offset.md)|Pobiera przesunięcie w segmentach, w których rozpoczyna się sekcja.|
 |[IDiaSegment::get_length](../../debugger/debug-interface-access/idiasegment-get-length.md)|Pobiera liczbę bajtów w segmencie.|
-|[IDiaSegment::get_read](../../debugger/debug-interface-access/idiasegment-get-read.md)|Pobiera flagę wskazującą, czy mogą być odczytywane segmentu.|
-|[IDiaSegment::get_write](../../debugger/debug-interface-access/idiasegment-get-write.md)|Pobiera flagę wskazującą, czy może być modyfikowana segmentu.|
-|[IDiaSegment::get_execute](../../debugger/debug-interface-access/idiasegment-get-execute.md)|Pobiera flagę wskazującą, czy segment jest wykonywalny.|
-|[IDiaSegment::get_addressSection](../../debugger/debug-interface-access/idiasegment-get-addresssection.md)|Pobiera numer sekcji, która mapuje do tego segmentu.|
-|[IDiaSegment::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasegment-get-relativevirtualaddress.md)|Pobiera wirtualny adres względny (RVA) początkowi sekcji.|
-|[IDiaSegment::get_virtualAddress](../../debugger/debug-interface-access/idiasegment-get-virtualaddress.md)|Pobiera adres wirtualny (oceny luk w zabezpieczeniach) początkowi sekcji.|
+|[IDiaSegment::get_read](../../debugger/debug-interface-access/idiasegment-get-read.md)|Pobiera flagę wskazującą, czy można odczytać segment.|
+|[IDiaSegment::get_write](../../debugger/debug-interface-access/idiasegment-get-write.md)|Pobiera flagę wskazującą, czy segment może być modyfikowany.|
+|[IDiaSegment::get_execute](../../debugger/debug-interface-access/idiasegment-get-execute.md)|Pobiera flagę wskazującą, czy segment jest plikiem wykonywalnym.|
+|[IDiaSegment::get_addressSection](../../debugger/debug-interface-access/idiasegment-get-addresssection.md)|Pobiera numer sekcji, który jest mapowany na ten segment.|
+|[IDiaSegment::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasegment-get-relativevirtualaddress.md)|Pobiera względny adres wirtualny (RVA) początku sekcji.|
+|[IDiaSegment::get_virtualAddress](../../debugger/debug-interface-access/idiasegment-get-virtualaddress.md)|Pobiera adres wirtualny (VA) początku sekcji.|
 
 ## <a name="remarks"></a>Uwagi
-Bo DIA SDK już tłumaczeń od przesunięcia sekcji do względnych adresów wirtualnych, większość aplikacji nie spowoduje, że wykorzystanie informacji na mapie segmentu.
+Ponieważ DIA SDK już wykonuje tłumaczenia z sekcji przesunięcie do względnych adresów wirtualnych, większość aplikacji nie będzie korzystać z informacji znajdujących się na mapie segmentów.
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
-Uzyskanie tego interfejsu, wywołując [idiaenumsegments::Item —](../../debugger/debug-interface-access/idiaenumsegments-item.md) lub [idiaenumsegments::Next —](../../debugger/debug-interface-access/idiaenumsegments-next.md) metody. Zobacz przykład, aby uzyskać szczegółowe informacje.
+Uzyskaj ten interfejs, wywołując metodę [IDiaEnumSegments:: Item](../../debugger/debug-interface-access/idiaenumsegments-item.md) lub [IDiaEnumSegments:: Next](../../debugger/debug-interface-access/idiaenumsegments-next.md) . Zobacz przykład, aby uzyskać szczegółowe informacje.
 
 ## <a name="example"></a>Przykład
-Ta funkcja zawiera adres wszystkich segmentów w tabeli i najbliższych symboli.
+Ta funkcja wyświetla adres wszystkich segmentów w tabeli i najbliższy symbol.
 
 ```C++
 void ShowSegments(IDiaTable *pTable, IDiaSession *pSession)
@@ -94,13 +94,13 @@ void ShowSegments(IDiaTable *pTable, IDiaSession *pSession)
 ```
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: Dia2.h
+Nagłówek: dia2. h
 
-Biblioteka: diaguids.lib
+Biblioteka: diaguids. lib
 
-DLL: msdia80.dll
+DLL: msdia80. dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Interfejsy (Zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaEnumSegments::Item](../../debugger/debug-interface-access/idiaenumsegments-item.md)
 - [IDiaEnumSegments::Next](../../debugger/debug-interface-access/idiaenumsegments-next.md)

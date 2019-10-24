@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 352315b518102c5b9576c19611522e87d0e67ffe
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5ede0f61d2cec78ac4981e487b72eb4d78508c98
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666904"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748161"
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>Praca z eksploratorem języka specyficznego dla domeny
 **Eksplorator DSL** wyświetla kilka rodzajów informacji w widoku drzewa. Aby uzyskać więcej informacji na temat większości elementów w Eksploratorze DSL, zobacz [jak zdefiniować język specyficzny dla domeny](../modeling/how-to-define-a-domain-specific-language.md).
@@ -41,6 +41,6 @@ ms.locfileid: "72666904"
 
 - **Zachowanie serializacji kodu XML**. Ustawienia serializacji dla modelu. Aby uzyskać więcej informacji na temat serializacji, zobacz [dostosowywanie File Storage i serializacji XML](../modeling/customizing-file-storage-and-xml-serialization.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [narzędzia języka specyficznego dla domeny słownik](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

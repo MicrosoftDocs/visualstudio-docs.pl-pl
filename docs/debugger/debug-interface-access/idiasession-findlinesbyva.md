@@ -1,5 +1,5 @@
 ---
-title: Idiasession::findlinesbyva — | Dokumentacja firmy Microsoft
+title: 'IDiaSession:: findLinesByVA | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29f3f714cdcbe529dac98948f6568934a6f508af
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2513825fd2b6f4e6035f9f23295f0c9f00385d0a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832409"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742075"
 ---
 # <a name="idiasessionfindlinesbyva"></a>IDiaSession::findLinesByVA
-Pobiera informacje o numerze wiersza dla wierszy znajdujących się w zakresie określony adres wirtualny (oceny luk w zabezpieczeniach).
+Pobiera informacje o numerze wiersza dla linii zawartych w zakresie określonego adresu wirtualnego (VA).
 
 ## <a name="syntax"></a>Składnia
 
@@ -35,18 +35,18 @@ HRESULT findLinesByVA (
 #### <a name="parameters"></a>Parametry
 `va`
 
-[in] Określa adres jako VA.
+podczas Określa adres jako VA.
 
 `length`
 
-[in] Określa liczbę bajtów zakres adresów, aby pokrywał się z tym zapytaniem.
+podczas Określa liczbę bajtów zakresu adresów, które mają być pokryte dla tego zapytania.
 
 `ppResult`
 
-[out] Zwraca [idiaenumlinenumbers —](../../debugger/debug-interface-access/idiaenumlinenumbers.md) obiektu, który zawiera listę wszystkich linii numery określające określony zakres adresów.
+określoną Zwraca obiekt [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) , który zawiera listę wszystkich numerów wierszy, które obejmują określony zakres adresów.
 
 ## <a name="example"></a>Przykład
-W tym przykładzie pokazano funkcję, która uzyskuje wszystkie numery wierszy zawartych w funkcji za pomocą funkcji wirtualny adres i długość.
+Ten przykład pokazuje funkcję, która uzyskuje wszystkie numery wierszy zawarte w funkcji przy użyciu adresu wirtualnego i długości funkcji.
 
 ```C++
 IDiaEnumLineNumbers *GetLineNumbersByVA(IDiaSymbol *pFunc, IDiaSession *pSession)
@@ -64,6 +64,6 @@ IDiaEnumLineNumbers *GetLineNumbersByVA(IDiaSymbol *pFunc, IDiaSession *pSession
 }
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

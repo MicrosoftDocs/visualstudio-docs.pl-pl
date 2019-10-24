@@ -1,5 +1,5 @@
 ---
-title: IDiaAddressMap::put_addressMapEnabled | Microsoft Docs
+title: IDiaAddressMap::p ut_addressMapEnabled | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f36cf93beb6b6c8b66ec25dc8008be7024e398b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b5fe5589b667054ee75e3b01743553a2d60bef92
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554342"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745062"
 ---
-# <a name="idiaaddressmapputaddressmapenabled"></a>IDiaAddressMap::put_addressMapEnabled
-Określa, czy mapa adresu powinien być używany do translacji adresów symboli.
+# <a name="idiaaddressmapput_addressmapenabled"></a>IDiaAddressMap::put_addressMapEnabled
+Określa, czy mapa adresów ma być używana do tłumaczenia adresów symboli.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,19 +33,19 @@ HRESULT put_addressMapEnabled ( 
 #### <a name="parameters"></a>Parametry
  NewVal
 
-[in] Ustaw `TRUE` Aby włączyć translację symboli, lub `FALSE` można wyłączyć.
+podczas Ustaw wartość `TRUE`, aby umożliwić tłumaczenie symboli lub `FALSE` do wyłączenia.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Wykonywalny procesorów po aktualizacji czasami pliku wykonywalnego. DIA zawiera mechanizm obsługi tłumaczenia symboli do nowego układu.
+ Wykonywalne przetwórcy czasami aktualizują plik wykonywalny. DIA zawiera mechanizm do obsługi tłumaczenia symboli do nowego układu.
 
- Po załadowaniu pliku PDB, przechowywane w pliku mapy adresów jest włączona. Czasami jednak gdy aplikacja kliencka może być konieczne podanie własnej mapy adresów przez wywołanie metody [idiaaddressmap::set_addressmap —](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) metody. Jeśli `set_addressMap` metoda zakończy się powodzeniem, aplikacja kliencka musi wywołać `put_addressMapEnabled` metody z `NewVal` parametru `TRUE` umożliwia korzystanie z tej mapy adresów.
+ Po załadowaniu pliku PDB Mapa adresów przechowywana w pliku jest włączona. Czasami jednak, gdy aplikacja kliencka może potrzebować własnej mapy adresów, wywołując metodę [IDiaAddressMap:: set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) . Jeśli `set_addressMap` Metoda zakończy się pomyślnie, aplikacja kliencka musi wywołać metodę `put_addressMapEnabled` za pomocą `NewVal` parametru `TRUE`, aby umożliwić korzystanie z tej mapy adresów.
 
- Bieżący stan mapowania adresów włączane mogą być pobierane z wywołaniem [idiaaddressmap::get_addressmapenabled —](../../debugger/debug-interface-access/idiaaddressmap-get-addressmapenabled.md) metody.
+ Bieżący stan włączonego mapowania adresów można pobrać z wywołaniem metody [IDiaAddressMap:: get_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-addressmapenabled.md) .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)
 - [IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)
 - [IDiaAddressMap::get_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-addressmapenabled.md)

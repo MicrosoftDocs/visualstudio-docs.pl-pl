@@ -9,12 +9,12 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: a81c1869bf7587aa30dbc02f0e9aec4c97776e5f
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: fb296346d54b0774bdd9a738581ee28fe99b1de0
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918044"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777469"
 ---
 # <a name="installation"></a>Instalacja
 
@@ -26,7 +26,7 @@ To rozszerzenie współpracuje z programem Visual Studio 2015 i Visual Studio 20
 
 Narzędzia można pobrać z [Visual Studio Marketplace](https://aka.ms/vstoolsforai)lub z poziomu programu Visual Studio:
 
-1. Wybierz pozycję **Narzędzia** > **rozszerzenia i aktualizacje**.
+1. Wybierz pozycję **narzędzia**  > **rozszerzenia i aktualizacje**.
 
    ![Menu rozszerzenia i aktualizacje w programie Visual Studio](media/installation/extensions.png)
 
@@ -44,7 +44,7 @@ Przed rozpoczęciem szkolenia modeli uczenia głębokiego na komputerze lokalnym
 
 ### <a name="nvidia-gpu-driver"></a>Sterownik procesora GPU NVIDIA
 
-Platformy uczenia głębokiego korzystają z technologii NVIDIA GPU, aby umożliwić maszynom uczenie się o szybkości, dokładności i skalowaniu w kierunku prawdziwej sztucznej analizy. Jeśli komputer ma karty graficzne procesora NVIDIA, zobacz artykuł [sterowniki firmy NVIDIA — pliki do pobrania](http://www.nvidia.com/Download/index.aspx) lub wypróbuj aktualizację systemu operacyjnego w celu zainstalowania najnowszego sterownika.
+Platformy uczenia głębokiego korzystają z technologii NVIDIA GPU, aby umożliwić maszynom uczenie się o szybkości, dokładności i skalowaniu w kierunku prawdziwej sztucznej analizy. Jeśli komputer ma karty graficzne procesora NVIDIA, zobacz artykuł [sterowniki firmy NVIDIA — pliki do pobrania](https://www.nvidia.com/Download/index.aspx) lub wypróbuj aktualizację systemu operacyjnego w celu zainstalowania najnowszego sterownika.
 
 ### <a name="cuda"></a>CUDA
 
@@ -60,7 +60,7 @@ Aby zainstalować CUDA
 
 ### <a name="cudnn"></a>cuDNN
 
-[cuDNN](https://developer.nvidia.com/cudnn) (CUDA głęboka biblioteka sieciowa neuronowych) to przyspieszona w procesorze GPU Biblioteka elementów podstawowych dla zaawansowanych sieci neuronowych przez NVIDIA. cuDNN v6 jest wymagana przez najnowsze platformy uczenia głębokiego.
+[cuDNN](https://developer.nvidia.com/cudnn) (cuda głęboka biblioteka sieciowa neuronowych) to przyspieszona w procesorze GPU Biblioteka elementów podstawowych dla głębokiej sieci neuronowych przez NVIDIA. cuDNN v6 jest wymagana przez najnowsze platformy uczenia głębokiego.
 
 Aby zainstalować cuDNN:
 
@@ -82,7 +82,7 @@ Język Python jest głównym języku programowania aplikacji do uczenia głębok
 
 Platformy uczenia głębokiego są zależne od PIP na potrzeby własnej instalacji.
 
-![Instalowanie języka Python w Windows](media/installation/install_python_win.png)
+![Instalowanie języka Python w systemie Windows](media/installation/install_python_win.png)
 
 Następnie musimy sprawdzić, czy środowisko Python 3,5 zostało poprawnie zainstalowane, a następnie Uaktualnij program PIP do najnowszej wersji, wykonując następujące polecenia w terminalu:
 
@@ -119,7 +119,7 @@ Dowiedz się więcej o instalowaniu języka [Python dla Visual Studio Tools](../
 
 - **Numpy** to pakiet przetwarzania tablicowego ogólnego przeznaczenia zaprojektowany w celu wydajnego manipulowania wielowymiarowymi tablicami dowolnych rekordów bez pogorszenia zbyt dużej szybkości dla małych wielowymiarowych tablic.
 
-- **SciPy** (wymawiane jako "sigh kołowy") to oprogramowanie typu "open source" służące do nauki, nauki i inżynierii, w zależności od NumPy. Począwszy od wersji 1.0.0, SciPy ma teraz oficjalnego prekompilowanego pakietu dla systemu Windows.
+- **SciPy** (wymawiane "sigh kołowe") to oprogramowanie typu "open source" służące do nauki, nauki i inżynierii, w zależności od numpy. Począwszy od wersji 1.0.0, SciPy ma teraz oficjalnego prekompilowanego pakietu dla systemu Windows.
 
 Aby zainstalować NumPy i SciPy, uruchom następujące polecenie w terminalu:
 
@@ -128,7 +128,7 @@ pip3.5 install -U numpy scipy
 ```
 
 > [!NOTE]
-> Powyższe polecenie uaktualnia istniejący stary lub nieoficjalny (np. pakiety innych firm z http://www.lfd.uci.edu/~gohlke/pythonlibs/ systemu Windows) numpy i SciPy do najnowszych oficjalnych.
+> Powyższe polecenie uaktualnia istniejący stary lub nieoficjalny (np. pakiety innych firm z http://www.lfd.uci.edu/~gohlke/pythonlibs/ dla systemu Windows) NumPy i SciPy do najnowszych oficjalnych.
 
 ### <a name="microsoft-cognitive-toolkit-cntk"></a>Microsoft Cognitive Toolkit (CNTK)
 
@@ -172,7 +172,7 @@ Aby zainstalować MXNet, uruchom następujące polecenie w terminalu:
   pip3.5 install mxnet==0.12.0
   ```
 
-### <a name="keras"></a>Biblioteki Keras
+### <a name="keras"></a>Keras
 
 [Keras](https://keras.io/) to interfejs API sieci neuronowych wysokiego poziomu, zapisany w języku Python, który może działać w oparciu o CNTK, TensorFlow lub Theano. Został zaprojektowany z myślą o umożliwieniu szybkiego eksperymentowania. Możliwość przechodzenia z pomysłu w celu uzyskania najmniejszego możliwego opóźnienia jest kluczem do wykonywania dobrych badań.
 
@@ -194,7 +194,7 @@ pip3.5 install Theano==0.9.0
 
 ### <a name="pytorch"></a>PyTorch
 
-[PyTorch](http://pytorch.org/) to pakiet języka Python, który udostępnia dwie funkcje wysokiego poziomu:
+[PyTorch](https://pytorch.org/) to pakiet języka Python, który udostępnia dwie funkcje wysokiego poziomu:
 
 - Obliczanie dwuskładnikowe (na przykład numpy) z silnym przyspieszeniem GPU
 - Głębokie sieci neuronowych oparte na taśmach systemu o podwójnej klasyfikacji
@@ -222,7 +222,7 @@ Aby zainstalować PyTorch, uruchom następujące polecenie w terminalu:
   > [!NOTE]
   > pliki binarne macOS nie obsługują CUDA, Instaluj ze źródła, jeśli jest potrzebny CUDA
 
-- **Linux**
+- **System**
 
   ```bash
   pip3.5 install http://download.pytorch.org/whl/cu80/torch-0.2.0.post3-cp35-cp35m-manylinux1_x86_64.whl

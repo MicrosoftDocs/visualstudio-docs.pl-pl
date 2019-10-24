@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findAcceleratorInlineesByLinenum | Dokumentacja firmy Microsoft
+title: 'IDiaSession:: findAcceleratorInlineesByLinenum | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12a2f23c42de99e0ea9a9d6c50e2d9aabed589d4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6d08168a83b9bb635fd6a0e22dc22f91a454001f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839462"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742321"
 ---
 # <a name="idiasessionfindacceleratorinlineesbylinenum"></a>IDiaSession::findAcceleratorInlineesByLinenum
-Zwraca wyliczenie symboli dla ramek wbudowanych, które odnoszą się do określonej lokalizacji źródłowej.
+Zwraca Wyliczenie symboli dla ramek wbudowanych, które odpowiadają określonej lokalizacji źródłowej.
 
 ## <a name="syntax"></a>Składnia
 
@@ -35,28 +35,28 @@ HRESULT findAcceleratorInlineeLinesByName ( 
 #### <a name="parameters"></a>Parametry
  `parent`
 
-[in] `IDiaSymbol` Odnosi się do funkcji klasy zastępczej akceleratora, która ma być przeszukiwany.
+podczas @No__t_0, która odnosi się do funkcji zastępczej akceleratora, która musi być przeszukiwana.
 
  `file`
 
-[in] `IDiaSourceFile` Lokalizacji źródła.
+podczas @No__t_0 lokalizacji źródłowej.
 
  `linenum`
 
-[in] Numer wiersza lokalizacji źródła.
+podczas Numer wiersza lokalizacji źródłowej.
 
  `colnum`
 
-[in] Numer kolumny lokalizacji źródła.
+podczas Numer kolumny lokalizacji źródłowej.
 
  `ppResult`
 
-[out] Wskaźnik do `IDiaEnumLineNumbers` wskaźnik interfejsu, który jest inicjowany z wynikiem.
+określoną Wskaźnik do `IDiaEnumLineNumbers` wskaźnika interfejsu, który jest inicjowany z wynikiem.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

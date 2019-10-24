@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_isPointerToMemberFunction | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_isPointerToMemberFunction | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b666aa19e574702655178790b8aa0463a0d5c2d5
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: d1cbbc9a38ef8d92233175380455fbe8c8291263
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62836550"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740110"
 ---
-# <a name="idiasymbolgetispointertomemberfunction"></a>IDiaSymbol::get_isPointerToMemberFunction
-Określa, czy ten symbol jest wskaźnikiem do funkcji członkowskiej.
+# <a name="idiasymbolget_ispointertomemberfunction"></a>IDiaSymbol::get_isPointerToMemberFunction
+Określa, czy ten symbol jest wskaźnikiem do funkcji składowej.
 
 ## <a name="syntax"></a>Składnia
 
@@ -30,10 +30,10 @@ HRESULT get_isPointerToMemberFunction(
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Wskaźnik do `BOOL` określająca, czy ten symbol jest wskaźnikiem do funkcji członkowskiej.
+określoną Wskaźnik do `BOOL`, który określa, czy ten symbol jest wskaźnikiem do funkcji składowej.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

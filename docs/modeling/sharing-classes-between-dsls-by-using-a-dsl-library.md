@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5293473e35424ccc6ee357d63a9355cacf0d6725
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a09622a2cc7ae6d2a2451ac1de6b628020cff19f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670751"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747407"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>Udostępnianie klas między językami DSL za pomocą biblioteki DSL
 W programie Visual Studio Wizualizacja i Modeling SDK można utworzyć niekompletną definicję DSL, którą można zaimportować do innego modemu DSL. Pozwala to na wspólne części podobnych modeli.
@@ -61,7 +61,7 @@ W programie Visual Studio Wizualizacja i Modeling SDK można utworzyć niekomple
 
    Biblioteka DSL może importować inne biblioteki. Podczas importowania biblioteki jego Importy są również automatycznie wyświetlane w Eksploratorze DSL.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Instrukcje: Definiowanie języka właściwego dla domeny](../modeling/how-to-define-a-domain-specific-language.md)
 

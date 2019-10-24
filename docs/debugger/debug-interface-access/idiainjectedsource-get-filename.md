@@ -1,5 +1,5 @@
 ---
-title: Idiainjectedsource::get_filename — | Dokumentacja firmy Microsoft
+title: 'IDiaInjectedSource:: get_filename | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26c68e4f58706fe9d65738e2e58b6ba011999e6a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3aa2929ac592d475896eff0c1969115f971a8572
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828666"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743376"
 ---
-# <a name="idiainjectedsourcegetfilename"></a>IDiaInjectedSource::get_filename
-Pobiera nazwę pliku źródłowego.
+# <a name="idiainjectedsourceget_filename"></a>IDiaInjectedSource::get_filename
+Pobiera nazwę pliku źródła.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,10 +33,10 @@ HRESULT get_filename ( 
 #### <a name="parameters"></a>Parametry
  pRetVal
 
-[out] Zwraca nazwę pliku źródłowego.
+określoną Zwraca nazwę pliku źródła.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`. Zwraca `S_FALSE`, jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

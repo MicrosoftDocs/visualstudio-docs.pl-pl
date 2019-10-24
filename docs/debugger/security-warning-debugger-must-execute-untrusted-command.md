@@ -1,5 +1,5 @@
 ---
-title: 'Ostrzeżenie o zabezpieczeniach: Debuger musi wykonać polecenie niezaufane | Dokumentacja firmy Microsoft'
+title: 'Ostrzeżenie o zabezpieczeniach: debuger musi wykonać niezaufane polecenie | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,31 +15,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c4ab45feeae409a1951e1a57e964eaaa5963896
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b0922461c4ca5366e6d1dc215f5711f5566d00ae
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62902587"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72729747"
 ---
-# <a name="security-warning-debugger-must-execute-untrusted-command"></a>Ostrzeżenie o zabezpieczeniach: Debuger musi wykonać polecenie niezaufane
-To okno dialogowe ostrzeżenia pojawia się podczas korzystania z serwera źródłowego. Oznacza, że polecenie, które debugger musi wykonać, aby uzyskać kod źródłowy nie jest na liście zaufanych poleceń dla serwera źródłowego, zawartej w pliku srcsvr.ini. Jeśli jest to prawidłowe polecenie, można dodać go do pliku srcsvr.ini. W przeciwnym razie nie należy uruchamiać go. Aby uzyskać więcej informacji, zobacz [Określ symboli (.pdb) i plików źródłowych](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
+# <a name="security-warning-debugger-must-execute-untrusted-command"></a>Ostrzeżenie o zabezpieczeniach: Debuger musi wykonać niezaufaną komendę
+To ostrzeżenie jest wyświetlane podczas korzystania z serwera źródłowego. Wskazuje, że polecenie debuger musi zostać wykonane w celu uzyskania kodu źródłowego nie znajduje się na liście zaufanych poleceń dla serwera źródłowego zawartego w pliku pliku srcsvr. ini. Jeśli jest to prawidłowe polecenie, można je dodać do pliku pliku srcsvr. ini. W przeciwnym razie nie należy uruchamiać go. Aby uzyskać więcej informacji, zobacz [Określanie symboli (. pdb) i plików źródłowych](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
 ## <a name="message-text"></a>Tekst komunikatu
- **Debuger musi wykonać następujące polecenie niezaufane, aby uzyskać kod źródłowy z serwera źródłowego.**
+ **Debuger musi wykonać następujące niezaufane polecenie, aby uzyskać kod źródłowy z serwera źródłowego.**
 
- **Jeśli pliku symboli, debugowania (\*.pdb) jest spoza znanego i zaufanego źródła, to polecenie może być nieprawidłowe lub niebezpieczne do uruchomienia.**
+ **Jeśli plik symbolu debugowania (\*. pdb) nie pochodzi z znanego i zaufanego źródła, to polecenie może być nieprawidłowe lub niebezpieczne do uruchomienia.**
 
  **Czy chcesz uruchomić to polecenie?**
 
 ## <a name="uielement-list"></a>Lista elementów UI
- Okno polecenia tekst z pliku .pdb do uruchomienia.
+ Polecenie pola tekstowego z pliku. pdb do uruchomienia.
 
- Uruchom Zezwalaj na polecenie do uruchomienia.
+ Uruchom polecenie Zezwalaj na uruchomienie polecenia.
 
- Nie, uruchom, Zatrzymaj wykonywanie polecenia i pobieranie plików z serwera źródłowego.
+ Nie uruchamiaj zatrzymania wykonywania polecenia i pobierania pliku z serwera źródłowego.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Określanie plików symboli (pdb) i plików źródłowych](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 - [Zabezpieczenia debugera](../debugger/debugger-security.md)
-- [Source Server](/windows/desktop/Debug/source-server-and-source-indexing)
+- [Serwer źródłowy](/windows/desktop/Debug/source-server-and-source-indexing)

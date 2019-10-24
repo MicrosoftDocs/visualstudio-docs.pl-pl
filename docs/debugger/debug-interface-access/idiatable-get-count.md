@@ -1,5 +1,5 @@
 ---
-title: IDiaTable::get_Count | Microsoft Docs
+title: 'IDiaTable:: get_Count | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a64fcf47e6d1b315499bc2e43ab32459bf11c091
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9ce325c51a9dfcee32093a0a1fafe82ea6a7fdd6
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62834523"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738753"
 ---
-# <a name="idiatablegetcount"></a>IDiaTable::get_Count
+# <a name="idiatableget_count"></a>IDiaTable::get_Count
 Pobiera liczbę elementów w tabeli.
 
 ## <a name="syntax"></a>Składnia
@@ -33,11 +33,11 @@ HRESULT get_Count ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca liczbę elementów w tabeli.
+określoną Zwraca liczbę elementów w tabeli.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaTable](../../debugger/debug-interface-access/idiatable.md)
 - [IDiaTable::Item](../../debugger/debug-interface-access/idiatable-item.md)

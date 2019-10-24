@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 154abe3d73fa71ac897f0442697196cd859f32bd
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 9e2e6d69e4c621d6be81a00a61482b71199bc0fc
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72435889"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745758"
 ---
 # <a name="cc-assertions"></a>Potwierdzenia C/C++
 Instrukcja Assert określa warunek, który powinien być prawdziwy w punkcie w programie. Jeśli ten warunek nie ma wartości true, potwierdzenie nie powiedzie się, wykonywanie programu zostanie przerwane i zostanie wyświetlone okno [dialogowe potwierdzenie nie powiodło](../debugger/assertion-failed-dialog-box.md) się.
@@ -109,11 +109,11 @@ CRTDBG. Plik nagłówkowy H definiuje [makra _ASSERT i _ASSERTE](/cpp/c-runtime-
 | Makro | Wynik |
 |------------| - |
 | `_ASSERT` | Jeśli określone wyrażenie zwróci wartość FALSE, nazwa pliku i numer wiersza `_ASSERT`. |
-| `_ASSERTE` | Analogicznie jak `_ASSERT` i ciąg reprezentujący wyrażenie, które zostało potwierdzone. |
+| `_ASSERTE` | Analogicznie jak `_ASSERT`, a także ciąg reprezentujący wyrażenie, które zostało potwierdzone. |
 
-`_ASSERTE` jest bardziej wydajny, ponieważ raportuje wyrażenie potwierdzone, które wystąpiło FALSE. Może to być wystarczające do zidentyfikowania problemu bez odwoływania się do kodu źródłowego. Jednak wersja do debugowania aplikacji będzie zawierać stałą ciągu dla każdego wyrażenia potwierdzonego przy użyciu `_ASSERTE`. Jeśli używasz wielu `_ASSERTE` makr, te wyrażenia ciągu zajmują znaczną ilość pamięci. Jeśli okaże się to problem, użyj `_ASSERT` w celu zaoszczędzenia pamięci.
+`_ASSERTE` jest bardziej wydajny, ponieważ zgłasza potwierdzone wyrażenie, które wystąpiło FALSE. Może to być wystarczające do zidentyfikowania problemu bez odwoływania się do kodu źródłowego. Jednak wersja do debugowania aplikacji będzie zawierać stałą ciągu dla każdego wyrażenia potwierdzonego przy użyciu `_ASSERTE`. Jeśli używasz wielu `_ASSERTE`ych makr, te wyrażenia ciągu zajmują znaczną ilość pamięci. Jeśli okaże się to problem, użyj `_ASSERT`, aby zaoszczędzić pamięć.
 
-Po zdefiniowaniu `_DEBUG` makro `_ASSERTE` jest zdefiniowane w następujący sposób:
+Gdy `_DEBUG` jest zdefiniowany, makro `_ASSERTE` jest zdefiniowane w następujący sposób:
 
 ```cpp
 #define _ASSERTE(expr) \
@@ -124,7 +124,7 @@ Po zdefiniowaniu `_DEBUG` makro `_ASSERTE` jest zdefiniowane w następujący spo
     } while (0)
 ```
 
-Jeśli potwierdzone wyrażenie daje w wyniku wartość FALSE, [_CrtDbgReport](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw) jest wywoływana w celu zgłaszania błędu potwierdzenia (domyślnie okno dialogowe komunikatu). Jeśli wybierzesz pozycję **Ponów** w oknie dialogowym komunikat, `_CrtDbgReport` zwróci wartość 1, a `_CrtDbgBreak` wywoła debuger za pomocą `DebugBreak`.
+Jeśli potwierdzone wyrażenie daje w wyniku wartość FALSE, [_CrtDbgReport](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw) jest wywoływana w celu zgłaszania błędu potwierdzenia (domyślnie okno dialogowe komunikatu). Jeśli wybierzesz pozycję **Ponów** w oknie dialogowym komunikat, `_CrtDbgReport` zwróci wartość 1 i `_CrtDbgBreak` wywoła debuger za pomocą `DebugBreak`.
 
 ### <a name="checking-for-heap-corruption"></a>Sprawdzanie uszkodzenia sterty
 Poniższy przykład używa [_CrtCheckMemory](/cpp/c-runtime-library/reference/crtcheckmemory) do sprawdzania uszkodzeń sterty:
@@ -156,7 +156,7 @@ _ASSERTE(_CrtIsMemoryBlock (myData, size, &requestNumber, &filename, &linenumber
 [W tym temacie](#BKMK_In_this_topic)
 
 ## <a name="BKMK_MFC_assertions"></a>Potwierdzenia MFC
-MFC definiuje makro [potwierdzenia](https://msdn.microsoft.com/Library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c) do sprawdzenia potwierdzenia. Definiuje także metody `MFC ASSERT_VALID` i `CObject::AssertValid` do sprawdzania stanu wewnętrznego @no__t obiektu pochodnego -2.
+MFC definiuje makro [potwierdzenia](https://msdn.microsoft.com/Library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c) do sprawdzenia potwierdzenia. Definiuje również `MFC ASSERT_VALID` i `CObject::AssertValid` metod sprawdzania stanu wewnętrznego obiektu pochodnego `CObject`.
 
 Jeśli argument makra MFC `ASSERT` ma wartość zero lub false, makro zatrzymuje wykonywanie programu i ostrzega użytkownika; w przeciwnym razie wykonywanie jest kontynuowane.
 
@@ -215,7 +215,7 @@ void CPerson::AssertValid() const
 #endif
 ```
 
-Jeśli dowolna ze zmiennych składowych przechowuje obiekty, można użyć makra `ASSERT_VALID` do przetestowania ich wewnętrznej ważności (jeśli ich klasy zastępują `AssertValid`).
+Jeśli dowolna ze zmiennych składowych przechowuje obiekty, można użyć makra `ASSERT_VALID`, aby przetestować swoją wewnętrzną ważność (jeśli ich klasy zastępują `AssertValid`).
 
 Rozważmy na przykład klasę `CMyData`, która przechowuje [CObList](/cpp/mfc/reference/coblist-class) w jednej z jej zmiennych członkowskich. Zmienna `CObList`, `m_DataList`, przechowuje kolekcję obiektów `CPerson`. Skrócona deklaracja `CMyData` wygląda następująco:
 
@@ -250,7 +250,7 @@ void CMyData::AssertValid( ) const
 #endif
 ```
 
-`CMyData` używa mechanizmu `AssertValid` do testowania ważności obiektów przechowywanych w elemencie członkowskim danych. Przesłanianie `AssertValid` z `CMyData` wywołuje makro `ASSERT_VALID` dla własnej zmiennej składowej m_pDataList.
+`CMyData` używa mechanizmu `AssertValid` do testowania ważności obiektów przechowywanych w elemencie członkowskim danych. @No__t_0 przesłaniania `CMyData` wywołuje makro `ASSERT_VALID` dla własnej zmiennej składowej m_pDataList.
 
 Testowanie ważności nie jest zatrzymywane na tym poziomie, ponieważ Klasa `CObList` również zastępuje `AssertValid`. To zastąpienie wykonuje dodatkowe Testowanie poprawności na wewnętrznym stanie listy. W rezultacie test poprawności na obiekcie `CMyData` prowadzi do dodatkowych testów ważności dla Stanów wewnętrznych przechowywanego obiektu listy `CObList`.
 
@@ -337,7 +337,7 @@ Ten kod opiera się na instrukcji Assert, aby obsłużyć warunek błędu. W zwi
 
 [W tym temacie](#BKMK_In_this_topic)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Zabezpieczenia debugera](../debugger/debugger-security.md)
 - [Debugowanie kodu natywnego](../debugger/debugging-native-code.md)

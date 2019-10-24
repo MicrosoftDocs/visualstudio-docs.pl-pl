@@ -1,5 +1,5 @@
 ---
-title: Za pomocą środowiska wykonawczego sprawdza, czy bez biblioteki wykonawczej języka C | Dokumentacja firmy Microsoft
+title: Używanie testów w czasie wykonywania bez biblioteki wykonawczej C | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -23,17 +23,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2d9d97b9ba8a93864ec9af6ff02df7b20bbb35e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 029aafa634ba0e6837cdc7d4304d0419420dd912
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929648"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72728663"
 ---
 # <a name="using-run-time-checks-without-the-c-run-time-library"></a>Korzystanie ze sprawdzania w trakcie wykonywania bez biblioteki wykonawczej języka C
-W przypadku połączenia programu bez biblioteki wykonawczej C za pomocą **/nodefaultlib**i chcesz używać do sprawdzania w trakcie wykonywania, należy połączyć z RunTmChk.lib.
+Jeśli połączysz program bez biblioteki wykonawczej C, przy użyciu **/NODEFAULTLIB**i chcesz użyć kontroli w czasie wykonywania, musisz połączyć się z RunTmChk. lib.
 
-`_RTC_Initialize` Inicjuje program do sprawdzania w trakcie wykonywania. Jeśli nie łączysz się z biblioteki wykonawczej języka C, należy musi Sprawdź, czy program został skompilowany z sprawdzanie błędów czasu wykonywania przed wywołaniem `_RTC_Initialize`, wykonując następujące czynności:
+`_RTC_Initialize` inicjuje program do sprawdzania w czasie wykonywania. Jeśli nie utworzysz połączenia z biblioteką wykonawczą C, musisz sprawdzić, czy program został skompilowany z kontrolami błędów czasu wykonywania przed wywołaniem `_RTC_Initialize`, w następujący sposób:
 
 ```cpp
 #ifdef __MSVC_RUNTIME_CHECKS
@@ -41,7 +41,7 @@ W przypadku połączenia programu bez biblioteki wykonawczej C za pomocą **/nod
 #endif
 ```
 
-Jeśli nie możesz połączyć przy użyciu biblioteki wykonawczej języka C, należy zdefiniować funkcję o nazwie `_CRT_RTC_INITW`. `_CRT_RTC_INITW` funkcja zdefiniowana przez użytkownika jest instalowany jako błąd domyślny zgłoszenie funkcji w następujący sposób:
+Jeśli nie utworzysz połączenia z biblioteką wykonawczą C, musisz również zdefiniować funkcję o nazwie `_CRT_RTC_INITW`. `_CRT_RTC_INITW` instaluje funkcji zdefiniowanej przez użytkownika jako domyślną funkcję raportowania błędów w następujący sposób:
 
 ```cpp
 // C version:
@@ -61,7 +61,7 @@ extern "C" _RTC_error_fnW __cdecl _CRT_RTC_INITW(
 }
 ```
 
-Po wykonaniu procedury instalacji funkcji raportowania błędów domyślne, można zainstalować dodatkowe błędów raportowania funkcje za pomocą `_RTC_SetErrorFuncW`. Aby uzyskać więcej informacji, zobacz [_RTC_SetErrorFuncW](/cpp/c-runtime-library/reference/rtc-seterrorfuncw).
+Po zainstalowaniu domyślnej funkcji raportowania błędów można zainstalować dodatkowe funkcje raportowania błędów z `_RTC_SetErrorFuncW`. Aby uzyskać więcej informacji, zobacz [_RTC_SetErrorFuncW](/cpp/c-runtime-library/reference/rtc-seterrorfuncw).
 
-## <a name="see-also"></a>Zobacz też
-[Instrukcje: Korzystanie z natywnego sprawdzania w trakcie wykonywania](../debugger/how-to-use-native-run-time-checks.md)
+## <a name="see-also"></a>Zobacz także
+[Instrukcje: korzystanie z macierzystego sprawdzania w trakcie wykonywania](../debugger/how-to-use-native-run-time-checks.md)

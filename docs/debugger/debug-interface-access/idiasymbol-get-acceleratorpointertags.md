@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_acceleratorPointerTags | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_acceleratorPointerTags | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1724ee3e81ac00ed048f323105842361ec22bc7
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: f36b4bf9fdd362f4941e33745d59d481a473c607
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62827297"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741114"
 ---
-# <a name="idiasymbolgetacceleratorpointertags"></a>IDiaSymbol::get_acceleratorPointerTags
-Zwraca wszystkie akceleratora wskaźnik wartości tagów, które odpowiadają do funkcji klasy zastępczej akceleratora C++ AMP.
+# <a name="idiasymbolget_acceleratorpointertags"></a>IDiaSymbol::get_acceleratorPointerTags
+Zwraca wszystkie wartości tagów wskaźnika akceleratora, które odpowiadają funkcji zastępczej akceleratora C++ amp.
 
 ## <a name="syntax"></a>Składnia
 
@@ -32,21 +32,21 @@ HRESULT get_acceleratorPointerTags(
 #### <a name="parameters"></a>Parametry
  `cnt`
 
-[in] Rozmiar tablicy danych wyjściowych `pPointerTags`.
+podczas Rozmiar tablicy wyjściowej `pPointerTags`.
 
  `pcnt`
 
-[out] Liczba tagów wskaźnika akceleratora w C++ funkcji klasy zastępczej akcelerator AMP.
+określoną Liczba tagów wskaźnika akceleratora w funkcji zastępczej akceleratora C++ amp.
 
  `pPointerTags`
 
-[out] A `DWORD` wskaźnika tablicy, który zostanie wypełniony kolorem wartości tagów wskaźnika akceleratora w C++ funkcji klasy zastępczej akcelerator AMP.
+określoną @No__t_0 wskaźnik tablicy, który jest wypełniony wartościami tagów wskaźnika akceleratora w funkcji zastępczej akceleratora C++ amp.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Ta metoda jest wywoływana w `IDiaSymbol` interfejs, który odnosi się do funkcji klasy zastępczej akceleratora C++ AMP.
+ Ta metoda jest wywoływana w interfejsie `IDiaSymbol`, który odpowiada funkcji zastępczej akceleratora C++ amp.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

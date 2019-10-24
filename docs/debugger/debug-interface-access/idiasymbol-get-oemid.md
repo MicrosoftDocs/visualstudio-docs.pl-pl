@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_oemid — | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_oemId | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91d6097fd558ee3fd4e61485eb53cd25a0b7c6a2
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: d417b0c75db1b2153e9a43eb2e45f3d9550971d1
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64796042"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739606"
 ---
-# <a name="idiasymbolgetoemid"></a>IDiaSymbol::get_oemId
-Pobiera wartość Identyfikatora producenta sprzętu (OEM) dla symbolu.
+# <a name="idiasymbolget_oemid"></a>IDiaSymbol::get_oemId
+Pobiera oryginalną wartość identyfikatora producenta sprzętu (OEM) symbolu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,17 +33,17 @@ HRESULT get_oemId ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca unikatową wartość, która identyfikuje producenta OEM.
+określoną Zwraca unikatową wartość, która identyfikuje producenta OEM.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
-> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Wartość zwracana przez `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
 ## <a name="remarks"></a>Uwagi
- Ta właściwość ma zastosowanie tylko do symboli z [symtagenum — wyliczenie](../../debugger/debug-interface-access/symtagenum.md) typu `SymTagCustomType`.
+ Ta właściwość ma zastosowanie tylko do symboli z typem [wyliczenia SymTagEnum —](../../debugger/debug-interface-access/symtagenum.md) o wartości `SymTagCustomType`.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [SymTagEnum, wyliczenie](../../debugger/debug-interface-access/symtagenum.md)

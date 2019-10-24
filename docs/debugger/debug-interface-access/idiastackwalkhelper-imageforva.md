@@ -1,5 +1,5 @@
 ---
-title: Idiastackwalkhelper::imageforva — | Dokumentacja firmy Microsoft
+title: 'IDiaStackWalkHelper:: imageForVA | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56f71364f28bec56c058a52f5a9e79c6bba298b8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 609a9370181937323f2bc3e8ca0a0765cd1f4a12
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62837956"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741383"
 ---
 # <a name="idiastackwalkhelperimageforva"></a>IDiaStackWalkHelper::imageForVA
-Zwraca początek obrazu pliku wykonywalnego w pamięci podany wirtualny adres gdzieś w obszarze pamięci pliku wykonywalnego.
+Zwraca początek obrazu pliku wykonywalnego w pamięci pod adresem wirtualnym znajdującym się w miejscu pliku wykonywalnego.
 
 ## <a name="syntax"></a>Składnia
 
@@ -34,14 +34,14 @@ HRESULT imageForVA(
 #### <a name="parameters"></a>Parametry
  `vaContext`
 
-[in] Wirtualny adres znajduje się gdzieś w miejscu do pliku wykonywalnego.
+podczas Adres wirtualny, który znajduje się w miejscu pliku wykonywalnego.
 
  `pvaImageStart`
 
-[out] Zwraca adres początkowy wirtualnego obrazu pliku wykonywalnego.
+określoną Zwraca początkowy adres wirtualny obrazu pliku wykonywalnego.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

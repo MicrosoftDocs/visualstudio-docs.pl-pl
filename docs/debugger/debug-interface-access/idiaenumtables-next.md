@@ -1,5 +1,5 @@
 ---
-title: Idiaenumtables::Next — | Dokumentacja firmy Microsoft
+title: 'IDiaEnumTables:: Next | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15a9ebbd3a3993568e4b6496e04661a63290399e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 688652fe3915e1974d5d0e1d04fb1ac075863d8c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832743"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743739"
 ---
 # <a name="idiaenumtablesnext"></a>IDiaEnumTables::Next
-Pobiera określoną liczbę tabel w kolejności wyliczenia.
+Pobiera określoną liczbę tabel w sekwencji wyliczenia.
 
 ## <a name="syntax"></a>Składnia
 
@@ -35,19 +35,19 @@ HRESULT Next ( 
 #### <a name="parameters"></a>Parametry
  `celt`
 
-[in] Liczba tabel w modułu wyliczającego do pobrania.
+podczas Liczba tabel w module wyliczającym do pobrania.
 
  `rgelt`
 
-[out] Tablica, która ma zostać wypełniony przy użyciu [idiatable —](../../debugger/debug-interface-access/idiatable.md) obiekty, które reprezentują tabele żądaną.
+określoną Tablica, która ma zostać wypełniona obiektami [IDiaTable](../../debugger/debug-interface-access/idiatable.md) , które reprezentują żądane tabele.
 
  `pceltFetched`
 
-[out] Zwraca liczbę tabel w pobrano modułu wyliczającego.
+określoną Zwraca liczbę tabel w ramach pobranego modułu wyliczającego.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli nie ma żadnych więcej tabel. W przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`. Zwraca `S_FALSE`, jeśli nie ma więcej tabel. W przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)
 - [IDiaTable](../../debugger/debug-interface-access/idiatable.md)

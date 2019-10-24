@@ -1,5 +1,5 @@
 ---
-title: Punkty zaczepienia alokacji i alokacji pamięci środowiska wykonawczego języka C | Dokumentacja firmy Microsoft
+title: Punkty zaczepienia alokacji i alokacje pamięci w czasie wykonywania C | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -20,24 +20,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1840f6f5650b3491cf7898c1d8d6a6fcae19f906
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 79e55ec521de098a7ae0339c4460502dde3d482d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564977"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745798"
 ---
 # <a name="allocation-hooks-and-c-run-time-memory-allocations"></a>Punkty zaczepienia alokacji i alokacja pamięci środowiska wykonawczego języka C
-Ograniczenie funkcje punktu zaczepienia alokacji z bardzo ważne jest, musisz jawnie Ignoruj `_CRT_BLOCK` bloków. Te bloki są alokacji pamięci dokonanych wewnętrznie przez funkcje biblioteki wykonawczej języka C, jeśli dokonają wszelkie wywołania do funkcji biblioteki wykonawczej C, które przydzielają pamięć. Możesz zignorować `_CRT_BLOCK` funkcję podłączania bloków, dodając następujący kod na początku przydziału:
+Bardzo ważne ograniczenie dotyczące funkcji punktów zaczepienia alokacji polega na tym, że muszą jawnie ignorować bloki `_CRT_BLOCK`. Te bloki to alokacje pamięci wewnętrznie wykonywane przez funkcje biblioteki wykonawczej C, jeśli wykonają jakiekolwiek wywołania funkcji biblioteki wykonawczej języka C, które przydzielą pamięć wewnętrzną. Bloki `_CRT_BLOCK` można zignorować, dołączając następujący kod na początku funkcji punktu zaczepienia alokacji:
 
 ```cpp
 if ( nBlockUse == _CRT_BLOCK )
     return( TRUE );
 ```
 
-Jeśli Twoje punktu zaczepienia alokacji nie Ignoruj `_CRT_BLOCK` blokuje, a następnie program w pętli nieskończonej może być stosowane do dowolnej funkcji biblioteki wykonawczej C o nazwie w swojej punktów zaczepienia. Na przykład `printf` sprawia, że wewnętrzna alokacja. Wywołuje kod punktu zaczepienia `printf`, a następnie wynikowy alokacji spowoduje, że Twoje zaczepienia volat jen ponownie, co spowoduje wywołanie **printf** ponownie, i tak dalej do momentu przepełnienia stosu. Jeśli potrzebujesz do raportu `_CRT_BLOCK` operacji alokacji jednym ze sposobów obejścia tego ograniczenia jest używać funkcji Windows API, a nie funkcji wykonawczej języka C, formatowania i danych wyjściowych. Ponieważ interfejsy API Windows nie jest używana sterty biblioteki wykonawczej C, nie będzie komunikat pułapki Twojego punktu zaczepienia alokacji w pętli nieskończonej.
+Jeśli punkt zaczepienia alokacji nie ignoruje bloków `_CRT_BLOCK`, wówczas każda funkcja biblioteki wykonawczej C wywołana w elemencie Hook może Zalewka programu w pętli nieskończonej. Na przykład `printf` wykonuje alokację wewnętrzną. Jeśli kod punktu zaczepienia wywoła `printf`, wówczas przydziały będą powodowały ponowne wywoływanie punktu zaczepienia, który będzie ponownie wywoływał **printf** i tak dalej, aż do przepełnienia stosu. Jeśli zachodzi potrzeba raportowania `_CRT_BLOCK` operacji alokacji, jednym ze sposobów obejścia tego ograniczenia jest użycie funkcji interfejsu API systemu Windows, a nie funkcji czasu wykonywania języka C, do formatowania i wyjścia. Ponieważ interfejsy API systemu Windows nie używają sterty biblioteki wykonawczej języka C, nie będą zalewkować punktu zaczepienia alokacji w pętli nieskończonej.
 
-Jeśli badania biblioteki wykonawczej pliki źródłowe zobaczysz czy funkcję, podłączania Alokacja domyślna **CrtDefaultAllocHook** (po prostu zwraca ona **TRUE**), znajduje się w oddzielnym pliku własnych, DBGHOOK. C. Jeśli chcesz, aby Twoje punktu zaczepienia alokacji wywoływana, nawet w przypadku alokacji dokonanych przez kod startowy czasu wykonywania, który jest wykonywany przed aplikacji **głównego** funkcji, możesz zastąpić tę funkcję domyślną własny, zamiast za pomocą [_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook).
+Jeśli sprawdzisz pliki źródłowe biblioteki wykonawczej, zobaczysz, że domyślna funkcja podłączania alokacji, **CrtDefaultAllocHook** (która po prostu zwraca **wartość true**), znajduje się w osobnym pliku, DBGHOOK. S. Jeśli chcesz, aby punkt zaczepienia alokacji był wywoływany nawet w przypadku alokacji wykonanych przez kod uruchomienia w czasie wykonywania, który jest wykonywany przed **główną** funkcją aplikacji, można zastąpić tę funkcję domyślną, zamiast używać [_ CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Pisanie funkcji debugowania punktów zaczepienia](../debugger/debug-hook-function-writing.md)

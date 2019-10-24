@@ -16,12 +16,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1542f51b561e46bc6b75016fc6669bda602ceab
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f117b2c50bfb3a50f794236505fe02ffd8e2395b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605831"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748433"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Porady: definiowanie języka właściwego dla domeny
 Aby zdefiniować język specyficzny dla domeny (DSL), należy utworzyć rozwiązanie programu Visual Studio na podstawie szablonu. Kluczową częścią rozwiązania jest diagram definicji DSL, który jest przechowywany w DslDefinition. DSL. Definicja DSL definiuje klasy i kształty DSL. Po zmodyfikowaniu i dodaniu tych elementów możesz dodać kod programu, aby dostosować DSL w bardziej szczegółowy sposób.
@@ -620,7 +620,7 @@ Aby utworzyć nowy język specyficzny dla domeny, należy utworzyć nowe rozwią
 | Przybornik elementu DSL nie pojawia się po zmianie nazw zestawów. | **Aby uzyskać** więcej informacji, zobacz [temat jak: zmienianie przestrzeni nazw języka specyficznego dla domeny](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md). |
 | Przybornik elementu DSL nie jest wyświetlany, ale nie zmieniono nazwy zestawu.<br /><br /> Lub pojawi się okno komunikatu z raportowaniem niepowodzenia załadowania rozszerzenia. | Zresetuj wystąpienie eksperymentalne i Skompiluj ponownie rozwiązanie.<br /><br /> 1. w menu Start systemu Windows w obszarze **Wszystkie programy**rozwiń węzeł [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)], a następnie **Narzędzia**, a następnie kliknij pozycję **Zresetuj wystąpienie eksperymentalne Microsoft Visual Studio**.<br />2. w menu **kompilacja** kliknij polecenie **Kompiluj ponownie rozwiązanie**. |
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Wprowadzenie do języków specyficznych dla domeny](../modeling/getting-started-with-domain-specific-languages.md)
 - [Tworzenie języka specyficznego dla domeny opartego na modelu Windows Forms](../modeling/creating-a-windows-forms-based-domain-specific-language.md)

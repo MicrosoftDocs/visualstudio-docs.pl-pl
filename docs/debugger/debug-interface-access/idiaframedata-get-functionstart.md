@@ -1,5 +1,5 @@
 ---
-title: Idiaframedata::get_functionstart — | Dokumentacja firmy Microsoft
+title: 'IDiaFrameData:: get_functionStart | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43c825bd621ada3f3e81d76f09a1f4bf9e30a67e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 324cad63a597768dc2c13447c6d2d68756878695
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839982"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743612"
 ---
-# <a name="idiaframedatagetfunctionstart"></a>IDiaFrameData::get_functionStart
+# <a name="idiaframedataget_functionstart"></a>IDiaFrameData::get_functionStart
 Pobiera flagę wskazującą, czy blok zawiera punkt wejścia funkcji.
 
 ## <a name="syntax"></a>Składnia
@@ -33,13 +33,13 @@ HRESULT get_functionStart ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca `TRUE` Jeśli blok zawiera punkt wejścia; w przeciwnym razie zwraca `FALSE`.
+określoną Zwraca `TRUE`, jeśli blok zawiera punkt wejścia; w przeciwnym razie zwraca `FALSE`.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`. Zwraca `S_FALSE`, jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Istnieje możliwość ramka stosu nie są początku funkcji, ponieważ ramka reprezentuje wbudowane metody lub funkcji wstawione do funkcji.
+ Jest możliwe, że ramka stosu nie jest początkiem funkcji, ponieważ ramka reprezentuje wbudowaną metodę lub funkcję wstawioną do funkcji.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

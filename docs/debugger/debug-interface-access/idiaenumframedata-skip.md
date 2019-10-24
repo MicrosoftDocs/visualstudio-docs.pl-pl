@@ -1,5 +1,5 @@
 ---
-title: Idiaenumframedata::SKIP — | Dokumentacja firmy Microsoft
+title: 'IDiaEnumFrameData:: Skip | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d747149e18f831b9f57249503a64c37141c4daa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c49aaf1f648a52e1701088b6579eda55cde6c355
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833601"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744573"
 ---
 # <a name="idiaenumframedataskip"></a>IDiaEnumFrameData::Skip
-Pomija określoną liczbę elementów danych ramki w kolejności wyliczenia.
+Pomija określoną liczbę elementów danych ramek w sekwencji wyliczenia.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,10 +33,10 @@ HRESULT Skip ( 
 #### <a name="parameters"></a>Parametry
  celt
 
-[in] Liczba elementów danych ramki w kolejności wyliczenie, aby pominąć.
+podczas Liczba elementów danych ramek w sekwencji wyliczenia do pominięcia.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` Jeśli nie ma żadnych więcej rekordów do pominięcia.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE`, jeśli nie ma więcej rekordów do pominięcia.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)

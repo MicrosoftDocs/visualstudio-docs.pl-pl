@@ -1,5 +1,5 @@
 ---
-title: DiaAddressMapEntry | Microsoft Docs
+title: DiaAddressMapEntry — | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 311762f4eafc8dad63da5854870f2836ee68b3ee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 54b326116b1e1b677a997b264cf0c168a93febb0
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554899"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745263"
 ---
 # <a name="diaaddressmapentry"></a>DiaAddressMapEntry
-W tym artykule opisano wpis z mapy adresów.
+Opisuje wpis w mapie adresowej.
 
 ## <a name="syntax"></a>Składnia
 
@@ -32,26 +32,26 @@ struct DiaAddressMapEntry {
 ```
 
 ## <a name="elements"></a>Elementy
-`rva` Względny adres wirtualny (RVA) obraz A.
+`rva` względny adres wirtualny (RVA) w obrazie A.
 
-`rvaTo` Względny adres wirtualny `rva` jest mapowany na obrazie B.
+`rvaTo` względny adres wirtualny `rva` jest mapowany na obraz B.
 
 ## <a name="remarks"></a>Uwagi
-Mapa adres udostępnia tłumaczenia z jednego obrazu układu (A) do innego (B). Tablica `DiaAddressMapEntry` struktur, posortowane według `rva` definiuje mapę adresu.
+Mapa adresów zapewnia tłumaczenie z jednego układu obrazu (A) na inny (B). Tablica struktur `DiaAddressMapEntry` posortowanych przez `rva` definiuje mapę adresów.
 
-Do translacji adresów `addrA`, na ilustracji A adres `addrB`, na ilustracji B, wykonaj następujące czynności:
+Aby przetłumaczyć adres, `addrA`, w obraz A na adres, `addrB`, w obrazie B, wykonaj następujące czynności:
 
-1. Wyszukaj mapy dla wpisu, `e`, za pomocą największej `rva` mniejsze niż lub równe `addrA`.
+1. Przeszukaj mapę dla wpisu, `e`, z największą `rva` mniejszą lub równą `addrA`.
 
 2. Ustaw `delta = addrA - e.rva`.
 
 3. Ustaw `addrB = e.rvaTo + delta`.
 
-    Tablica `DiaAddressMapEntry` struktury jest przekazywany do [idiaaddressmap::set_addressmap —](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) metody.
+    Tablica struktur `DiaAddressMapEntry` jest przenoszona do metody [IDiaAddressMap:: set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) .
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: dia2.h
+Nagłówek: dia2. h
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wyliczenia i struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)

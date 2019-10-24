@@ -1,5 +1,5 @@
 ---
-title: Funkcja SccOpenProject | Dokumentacja firmy Microsoft
+title: Funkcja SccOpenProject | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +12,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ebb8f4250b4ef4c022c5c21d748e025ca31e35a7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a6aa4a715f8d1b87aa831f6a315f07a19e5d4f46
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353601"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72721055"
 ---
 # <a name="sccopenproject-function"></a>SccOpenProject, funkcja
 Ta funkcja otwiera istniejący projekt kontroli źródła lub tworzy nowy.
@@ -41,80 +41,80 @@ SCCRTN SccOpenProject (
 #### <a name="parameters"></a>Parametry
  pvContext
 
-[in] Struktura kontekście wtyczki kontroli źródła.
+podczas Struktura kontekstu wtyczki kontroli źródła.
 
- hWnd
+ Właściwość
 
-[in] Uchwyt okna środowiska IDE, które wtyczka do kontroli źródła można użyć jako element nadrzędny dla wszystkie okna dialogowe, które zawiera.
+podczas Uchwyt okna środowiska IDE, który może być używany przez wtyczkę kontroli źródła jako element nadrzędny dla dowolnych okien dialogowych, które zapewnia.
 
  lpUser
 
-[out w] Nazwa użytkownika (nie przekraczając liczby SCC_USER_SIZE, w tym terminator o wartości NULL).
+[in. out] Nazwa użytkownika (nie przekraczająca SCC_USER_SIZE, łącznie z terminatorem wartości NULL).
 
  lpProjName
 
-[in] Ciąg, który identyfikuje nazwę projektu.
+podczas Ciąg identyfikujący nazwę projektu.
 
  lpLocalProjPath
 
-[in] Ścieżka do folderu roboczego dla projektu.
+podczas Ścieżka do folderu roboczego dla projektu.
 
  lpAuxProjPath
 
-[out w] Opcjonalny ciąg pomocnicze, identyfikowanie projektu (nie przekraczając liczby SCC_AUXPATH_SIZE, w tym terminator o wartości NULL).
+[in. out] Opcjonalny ciąg pomocniczy identyfikujący projekt (nie przekraczający SCC_AUXPATH_SIZE, łącznie z terminatorem wartości NULL).
 
  lpComment
 
-[in] Komentarz do nowego projektu, która jest tworzona.
+podczas Dodaj komentarz do nowego projektu, który jest tworzony.
 
  lpTextOutProc
 
-[in] Funkcja wywołania zwrotnego opcjonalne do wyświetlania tekstu w danych wyjściowych z wtyczka do kontroli źródła.
+podczas Opcjonalna funkcja wywołania zwrotnego do wyświetlania tekstu wyjściowego z wtyczki kontroli źródła.
 
- Flagidw
+ flagiDW
 
-[in] Sygnały czy nowy projekt musi zostać utworzona, jeśli projekt jest nieznany w źródle kontrolować wtyczki. Wartość może być kombinacją `SCC_OP_CREATEIFNEW` i `SCC_OP_SILENTOPEN.`
+podczas Informuje, czy należy utworzyć nowy projekt, jeśli projekt jest nieznany dla wtyczki kontroli źródła. Wartość może być kombinacją `SCC_OP_CREATEIFNEW` i `SCC_OP_SILENTOPEN.`
 
 ## <a name="return-value"></a>Wartość zwracana
- Implementacja wtyczki kontroli źródła tej funkcji powinien zwrócić jedną z następujących wartości:
+ Implementacja wtyczki kontroli źródła tej funkcji powinna zwracać jedną z następujących wartości:
 
 |Wartość|Opis|
 |-----------|-----------------|
-|SCC_OK|Podczas otwierania projektu zakończyło się pomyślnie.|
+|SCC_OK|Sukces w otwieraniu projektu.|
 |SCC_E_INITIALIZEFAILED|Nie można zainicjować projektu.|
-|SCC_E_INVALIDUSER|Użytkownik nie może zalogować do systemu kontroli źródła.|
-|SCC_E_COULDNOTCREATEPROJECT|Projekt nie istnieje przed wywołaniem;  `SCC_OPT_CREATEIFNEW` została ustawiona flaga, ale nie można utworzyć projektu.|
-|SCC_E_PROJSYNTAXERR|Składnia nieprawidłowy projekt.|
-|SCC_E_UNKNOWNPROJECT|Projekt jest nieznany do wtyczki kontroli źródła i `SCC_OPT_CREATEIFNEW` nie ustawiono flagi.|
-|SCC_E_INVALIDFILEPATH|Ścieżka pliku nieprawidłowy lub nie do użytku.|
+|SCC_E_INVALIDUSER|Użytkownik nie mógł zalogować się do systemu kontroli źródła.|
+|SCC_E_COULDNOTCREATEPROJECT|Projekt nie istniał przed wywołaniem;  Flaga `SCC_OPT_CREATEIFNEW` została ustawiona, ale nie można utworzyć projektu.|
+|SCC_E_PROJSYNTAXERR|Nieprawidłowa składnia projektu.|
+|SCC_E_UNKNOWNPROJECT|Projekt jest nieznany dla wtyczki kontroli źródła, a flaga `SCC_OPT_CREATEIFNEW` nie została ustawiona.|
+|SCC_E_INVALIDFILEPATH|Nieprawidłowa lub niezdatna do użycia ścieżka pliku.|
 |SCC_E_NOTAUTHORIZED|Użytkownik nie może wykonać tej operacji.|
-|SCC_E_ACCESSFAILURE|Wystąpił problem podczas uzyskiwania dostępu do systemu kontroli źródła, prawdopodobnie z powodu problemów z siecią lub rywalizacji o zasoby. Ponowienie próby jest zalecane.|
-|SCC_E_NONSPECFICERROR|Nieokreślony błąd; Nie można zainicjować systemu kontroli źródła.|
+|SCC_E_ACCESSFAILURE|Wystąpił problem z uzyskaniem dostępu do systemu kontroli źródła prawdopodobnie z powodu problemów z siecią lub rywalizacją. Zalecana jest ponowna próba.|
+|SCC_E_NONSPECFICERROR|Nieokreślony błąd; System kontroli źródła nie został zainicjowany.|
 
 ## <a name="remarks"></a>Uwagi
- IDE może przekazać nazwę użytkownika (`lpUser`), lub ją po prostu przekazać wskaźnik na pusty ciąg. W przypadku nazwy użytkownika, wtyczka do kontroli źródła należy używać go jako domyślny. Jednak jeśli nazwa nie została przekazana lub logowanie nie powiodło się o podanej nazwie, wtyczka powinien zostać wyświetlony monit logowania i zwraca prawidłową nazwę w `lpUser` po odebraniu prawidłową nazwą logowania`.` ponieważ wtyczki mogą zmienić ciągu nazwy użytkownika , IDE będzie zawsze Przydziel bufor o rozmiarze (`SCC_USER_LEN`+ 1 lub SCC_USER_SIZE, w tym miejsce terminator o wartości null).
+ IDE może przejść do nazwy użytkownika (`lpUser`) lub po prostu przekazać wskaźnik do pustego ciągu. Jeśli istnieje nazwa użytkownika, wtyczka do kontroli źródła powinna używać go jako domyślnego. Jeśli jednak nazwa nie została przeniesiona lub logowanie nie powiodło się o podanej nazwie, wtyczka powinna monitować użytkownika o zalogowanie się i zwróci poprawną nazwę w `lpUser`, gdy odbierze prawidłowy `.` logowania, ponieważ wtyczka może zmienić ciąg nazwy użytkownika IDE zawsze przydzieli bufor rozmiaru (`SCC_USER_LEN` + 1 lub SCC_USER_SIZE, który obejmuje miejsce dla terminatora o wartości null).
 
 > [!NOTE]
-> Pierwszą akcją IDE może wymagać wykonania może być wywołanie `SccOpenProject` funkcji lub [SccGetProjPath](../extensibility/sccgetprojpath-function.md). Z tego powodu w obu z nich ma takie same `lpUser` parametru.
+> Pierwszą akcją, jaką może wykonać środowisko IDE, może być wywołanie funkcji `SccOpenProject` lub [SccGetProjPath](../extensibility/sccgetprojpath-function.md). Z tego powodu oba mają identyczny `lpUser` parametr.
 
- `lpAuxProjPath` i`lpProjName` są odczytywane z pliku rozwiązania lub zostaną one zwrócone w wyniku wywołania `SccGetProjPath` funkcji. Parametry te zawierają ciągi, które wtyczka do kontroli źródła zostanie skojarzony z projektem i mają znaczenie tylko dla wtyczki. Jeśli nie takie ciągi znajdują się w pliku rozwiązania, a użytkownik nie ma monicie do przeglądania (która zwraca ciąg za pośrednictwem `SccGetProjPath` funkcji), IDE przekazuje puste ciągi dla obu `lpAuxProjPath` i `lpProjName`i oczekuje, że te wartości do zaktualizowania Wtyczka gdy ta funkcja zwraca.
+ `lpAuxProjPath` i `lpProjName` są odczytywane z pliku rozwiązania lub są zwracane z wywołania funkcji `SccGetProjPath`. Parametry te zawierają ciągi, które są skojarzone z wtyczką kontroli źródła z projektem i są zrozumiałe tylko dla wtyczki. Jeśli takie ciągi nie znajdują się w pliku rozwiązania, a użytkownik nie otrzyma monitu o przeszukanie (który zwróci ciąg za pomocą funkcji `SccGetProjPath`), IDE przekaże puste ciągi dla obu `lpAuxProjPath` i `lpProjName` i oczekuje, że te wartości zostaną zaktualizowane przez wtyczkę, gdy jest to ty Funkcja zwraca wartość.
 
- `lpTextOutProc` jest wskaźnikiem do funkcji wywołania zwrotnego, udostępniane przez środowisko IDE będzie wtyczka do kontroli źródła na potrzeby wyświetlania danych wyjściowych polecenia wynik. Ta funkcja wywołania zwrotnego jest szczegółowo opisane w [LPTEXTOUTPROC](../extensibility/lptextoutproc.md).
-
-> [!NOTE]
-> Jeśli wtyczka do kontroli źródła nie chce skorzystać z tej, musi być zainstalowany `SCC_CAP_TEXTOUT` znacznik w [SccInitialize](../extensibility/sccinitialize-function.md). Jeśli nie ustawiono tej flagi lub IDE nie obsługuje tej funkcji `lpTextOutProc` będzie `NULL`.
-
- `dwFlags` Parametr określa wynik w przypadku, gdy do projektu jest obecnie nie istnieje. Składa się z dwóch flag bitowych, `SCC_OP_CREATEIFNEW` i `SCC_OP_SILENTOPEN`. Jeśli projekt jest już otwarty, funkcja po prostu otwiera projekt i zwraca `SCC_OK`. Jeśli projekt nie istnieje, a jeśli `SCC_OP_CREATEIFNEW` flaga jest włączona, wtyczka do kontroli źródła można utworzyć projekt w systemie kontroli źródła, otwórz go i zwracają `SCC_OK`. Jeśli projekt nie istnieje, a `SCC_OP_CREATEIFNEW` flaga jest wyłączona, wtyczki należy następnie wyszukiwać `SCC_OP_SILENTOPEN` flagi. Jeśli tej flagi nie jest włączony, wtyczki może monitować użytkownika o podanie nazwy projektu. Jeśli tę flagę znajduje się na, wtyczkę należy po prostu zwrócenia `SCC_E_UNKNOWNPROJECT`.
-
-## <a name="calling-order"></a>Kolejności wywoływania
- W trakcie normalnego przebiegu zdarzenia [SccInitialize](../extensibility/sccinitialize-function.md) może zostać wywołane najpierw otworzyć sesji kontroli źródła. Sesja może składać się wywołania `SccOpenProject`, następuje inne wywołania funkcji API wtyczki kontroli źródła i będą kończyć się wywołanie [SccCloseProject](../extensibility/scccloseproject-function.md). Takie sesje mogą należy powtórzyć kilkakrotnie przed [SccUninitialize](../extensibility/sccuninitialize-function.md) jest wywoływana.
-
- Jeśli zestawy wtyczki kontroli źródła `SCC_CAP_REENTRANT` bit w `SccInitialize`, a następnie powyżej sekwencji sesji może być powtarzany tyle razy równolegle. Różne `pvContext` struktury śledzenia różne sesje, w których każdy `pvContext` jest skojarzony z jednym Otwórz projekt w danym momencie. Na podstawie`pvContext` parametr wtyczki można określić, który projekt odwołuje się do dowolnego konkretnego wywołania. Jeśli bit możliwości `SCC_CAP_REENTRANT` nie ustawiono, nonreentrant wtyczek kontroli kodu źródłowego są ograniczone zdolności do pracy z wieloma projektami.
+ `lpTextOutProc` jest wskaźnikiem do funkcji wywołania zwrotnego dostarczonej przez IDE do wtyczki kontroli źródła na potrzeby wyświetlania danych wyjściowych wyników polecenia. Ta funkcja wywołania zwrotnego została szczegółowo opisana w [lpTextOutProc](../extensibility/lptextoutproc.md).
 
 > [!NOTE]
-> `SCC_CAP_REENTRANT` Bitowa została wprowadzona w wersji 1.1 API wtyczki kontroli źródła. Nie jest ustawiona, lub w wersji 1.0 jest ignorowana, a wszystkie w wersji 1.0 źródła wtyczek kontroli są zakłada się, że nonreentrant.
+> Jeśli wtyczka kontroli źródła zamierza korzystać z tego, musi ustawić flagę `SCC_CAP_TEXTOUT` w [SccInitialize](../extensibility/sccinitialize-function.md). Jeśli ta flaga nie została ustawiona lub jeśli IDE nie obsługuje tej funkcji, `lpTextOutProc` zostanie `NULL`.
 
-## <a name="see-also"></a>Zobacz też
+ Parametr `dwFlags` kontroluje wynik w przypadku, gdy otwarty projekt nie istnieje. Składa się z dwóch bitflagsów, `SCC_OP_CREATEIFNEW` i `SCC_OP_SILENTOPEN`. Jeśli otwarty projekt już istnieje, funkcja po prostu otwiera projekt i zwraca `SCC_OK`. Jeśli projekt nie istnieje i jeśli flaga `SCC_OP_CREATEIFNEW` jest włączona, wtyczka do kontroli źródła może utworzyć projekt w systemie kontroli źródła, otworzyć go i zwrócić `SCC_OK`. Jeśli projekt nie istnieje i jeśli flaga `SCC_OP_CREATEIFNEW` jest wyłączona, wtyczka powinna następnie sprawdzić flagę `SCC_OP_SILENTOPEN`. Jeśli ta flaga nie jest włączona, wtyczka może monitować użytkownika o nazwę projektu. Jeśli ta flaga jest włączona, wtyczka powinna po prostu zwracać `SCC_E_UNKNOWNPROJECT`.
+
+## <a name="calling-order"></a>Kolejność wywoływania
+ W normalnych warunkach zdarzeń [SccInitialize](../extensibility/sccinitialize-function.md) zostanie wywołana jako pierwsza, aby otworzyć sesję kontroli źródła. Sesja może składać się z wywołania do `SccOpenProject`, a następnie innych wywołań funkcji interfejsu API Plug-in kontroli źródła i zakończy się wywołaniem do [SccCloseProject](../extensibility/scccloseproject-function.md). Takie sesje mogą powtarzać się kilka razy przed wywołaniem [SccUninitialize](../extensibility/sccuninitialize-function.md) .
+
+ Jeśli wtyczka do kontroli źródła ustawia `SCC_CAP_REENTRANT` bit w `SccInitialize`, powyższą sekwencję sesji można powtarzać wielokrotnie. Różne struktury `pvContext` śledzą różne sesje, w których każdy `pvContext` jest skojarzony z jednym otwartym projektem w danym momencie. Na podstawie parametru `pvContext` wtyczka może określić, który projekt jest przywoływany w konkretnym wywołaniu. Jeśli `SCC_CAP_REENTRANT` bit możliwości nie jest ustawiona, wtyczki kontroli źródła nonreentrant są ograniczone do pracy z wieloma projektami.
+
+> [!NOTE]
+> Bit `SCC_CAP_REENTRANT` został wprowadzony w wersji 1,1 interfejsu API wtyczki kontroli źródła. Nie jest on ustawiony lub jest ignorowany w wersji 1,0 i założono, że wszystkie wtyczki kontroli źródła wersji 1,0 są nonreentrant.
+
+## <a name="see-also"></a>Zobacz także
 - [Funkcje interfejsu API wtyczki kontroli źródła ](../extensibility/source-control-plug-in-api-functions.md)
 - [SccCloseProject](../extensibility/scccloseproject-function.md)
 - [SccGetProjPath](../extensibility/sccgetprojpath-function.md)

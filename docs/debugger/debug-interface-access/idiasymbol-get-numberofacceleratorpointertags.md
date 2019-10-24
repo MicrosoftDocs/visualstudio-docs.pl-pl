@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_numberOfAcceleratorPointerTags | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_numberOfAcceleratorPointerTags | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 283533b20614ea727be620669ea5ab66cf00e5ed
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 47c5827348c7b7cb450017a0e6176d71f555c841
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62835777"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739699"
 ---
-# <a name="idiasymbolgetnumberofacceleratorpointertags"></a>IDiaSymbol::get_numberOfAcceleratorPointerTags
-Zwraca liczbę znaczników wskaźnika akceleratora w funkcji skrótową, C++ AMP.
+# <a name="idiasymbolget_numberofacceleratorpointertags"></a>IDiaSymbol::get_numberOfAcceleratorPointerTags
+Zwraca liczbę tagów wskaźnika akceleratora w funkcji zastępczej C++ amp.
 
 ## <a name="syntax"></a>Składnia
 
@@ -30,13 +30,13 @@ HRESULT get_numberOfAcceleratorPointerTags(
 #### <a name="parameters"></a>Parametry
  `count`
 
-[out] Wskaźnik do `DWORD` przechowuje liczbę akceleratora tagów wskaźnika w C++ funkcji klasy zastępczej AMP.
+określoną Wskaźnik do `DWORD`, który przechowuje liczbę tagów wskaźnika akceleratora w funkcji zastępczej C++ amp.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Ta metoda jest wywoływana w `IDiaSymbol` interfejs, który odnosi się do funkcji klasy zastępczej akceleratora C++ AMP.
+ Ta metoda jest wywoływana w interfejsie `IDiaSymbol`, który odpowiada funkcji zastępczej akceleratora C++ amp.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

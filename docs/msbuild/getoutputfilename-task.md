@@ -1,5 +1,5 @@
 ---
-title: Zadanie GetOutputFileName | Dokumentacja firmy Microsoft
+title: GetOutputFileName — zadanie | Microsoft Docs
 ms.date: 03/10/2019
 ms.topic: reference
 f1_keywords:
@@ -11,33 +11,33 @@ dev_langs:
 - jsharp
 - C++
 helpviewer_keywords:
-- MSBuild (Visual C++), GetOutputFileName task
-- GetOutputFileName task (MSBuild (Visual C++))
+- MSBuild (C++), GetOutputFileName task
+- GetOutputFileName task (MSBuild (C++))
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - multiple
-ms.openlocfilehash: c6298a512a1848622bf854d6d9ee9084309a0b4f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9733aae5e53948cdf07d62f62cd7ca5f930d08a3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977116"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747302"
 ---
-# <a name="getoutputfilename-task"></a>GetOutputFileName task
+# <a name="getoutputfilename-task"></a>GetOutputFileName, zadanie
 
-Zadanie pomocy w celu uzyskania nazwa pliku wyjściowego dla cl i inne narzędzia, umożliwią określenie tylko danych wyjściowych, nazwę katalogu lub pełnego pliku lub nie rób.
+Zadanie pomocnika, aby uzyskać nazwę pliku wyjściowego dla CL i innych narzędzi, które umożliwiają określenie tylko katalogu wyjściowego lub pełną nazwę pliku lub Nothing.
 
 ## <a name="parameters"></a>Parametry
 
-W poniższej tabeli opisano parametry **GetOutputFileName** zadania.
+W poniższej tabeli opisano parametry zadania **GetOutputFileName** .
 
 |Parametr|Opis|
 |---------------|-----------------|
-|**OutputExtension**|Wymagane **ciąg** parametru.|
-|**OutputFile**|Opcjonalnie **ciąg** parametr wyjściowy.|
-|**OutputPath**|Opcjonalnie **ciąg** parametru.|
-|**SourceFile**|Wymagane **ciąg** parametru.|
+|**OutputExtension**|Wymagany parametr **ciągu** .|
+|**Plik_wyjściowy**|Opcjonalny parametr wyjściowy **ciągu** .|
+|**OutputPath**|Opcjonalny parametr **ciągu** .|
+|**SourceFile**|Wymagany parametr **ciągu** .|
 
 ## <a name="see-also"></a>Zobacz także
 
