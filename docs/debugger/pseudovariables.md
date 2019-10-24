@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b6856517a680809ccc802c02dc880b6349eadc5
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: e328e85f58e69ef1d579fd979f629c59b90caf3e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72535960"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72730520"
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Pseudozmiennych pokazanych w debugerze programu Visual Studio
 Pseudozmiennych pokazanych są terminami używanymi do wyświetlania pewnych informacji w oknie zmiennych lub oknie dialogowym **QuickWatch** . Możesz wprowadzić pseudozmienna w taki sam sposób, jak w przypadku wprowadzenia zmiennej normalnej. Pseudozmiennych pokazanych nie są zmienne, ale nie odpowiadają nazwom zmiennych w programie.
@@ -67,6 +67,6 @@ Pseudozmiennych pokazanych są terminami używanymi do wyświetlania pewnych inf
 |`$` *N* `#`|Wyświetla obiekt z IDENTYFIKATORem obiektu równy *N*.|
 |`$dynamic`|Wyświetla specjalny węzeł **widoku dynamicznego** dla obiektu, który implementuje `IDynamicMetaObjectProvider`. Interfejsu. Składnia jest `$dynamic,` *obiektu*. Ta funkcja ma zastosowanie tylko do kodu, który używa .NET Framework w wersji 4 lub nowszej.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Okna wyrażeń kontrolnych i szybkich wyrażeń kontrolnych](../debugger/watch-and-quickwatch-windows.md)
 - [Zmienne okna](../debugger/debugger-windows.md)

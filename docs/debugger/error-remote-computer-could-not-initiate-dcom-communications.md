@@ -1,5 +1,5 @@
 ---
-title: 'Błąd: Zdalny komputer nie mógł zainicjować komunikacji DCOM | Dokumentacja firmy Microsoft'
+title: 'Błąd: komputer zdalny nie może zainicjować komunikacji DCOM | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -14,29 +14,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ceb796b3a4b3cbc2b239a09ac8c173e746f194c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2d61fe145a8dc301c928b81f9b57f1a574865a1d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850908"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737551"
 ---
 # <a name="error-remote-computer-could-not-initiate-dcom-communications"></a>Błąd: Zdalny komputer nie mógł zainicjować komunikacji DCOM
-Wystąpił błąd modelu DCOM podczas próby komunikacji z komputera lokalnego komputera zdalnego. Komputer lokalny to komputer, na którym jest
+Wystąpił błąd DCOM, gdy maszyna zdalna próbowała komunikować się z maszyną lokalną. Komputer lokalny jest maszyną, która jest
 
  Uruchamianie programu Visual Studio. Ten błąd może wystąpić z kilku powodów:
 
-- Komputer lokalny jest włączona Zapora.
+- Na komputerze lokalnym jest włączona Zapora.
 
-- Uwierzytelnianie Windows z komputera zdalnego na komputer lokalny nie działa.
+- Uwierzytelnianie systemu Windows z komputera zdalnego na komputerze lokalnym nie działa.
 
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd
 
-1. Jeśli komputer lokalny jest włączona Zapora Windows, zobacz [zdalne debugowanie](../debugger/remote-debugging.md) instrukcje dotyczące sposobu konfigurowania zapory dla debugowania lokalnego.
+1. Jeśli na komputerze lokalnym jest włączona Zapora systemu Windows, zobacz [debugowanie zdalne](../debugger/remote-debugging.md) , aby uzyskać instrukcje dotyczące sposobu konfigurowania zapory na potrzeby debugowania lokalnego.
 
-2. Testuj uwierzytelnienie Windows przez próby otwarcia udział plików na komputerze lokalnym z serwera zdalnego.
+2. Przetestuj uwierzytelnianie systemu Windows, próbując otworzyć udział plików na komputerze lokalnym z serwera zdalnego.
 
-3. Aby przywrócić uwierzytelniania Windows, spróbuj wykonać ponowny rozruch obu komputerach. Sprawdź dzienniki zdarzeń na komputerach lokalnych i zdalnych dla błędów protokołu Kerberos i skontaktuj się z administratorami domeny o znanych problemach.
+3. Aby przywrócić uwierzytelnianie systemu Windows, spróbuj ponownie uruchomić obie maszyny. Należy przejrzeć dzienniki zdarzeń na maszynach lokalnych i zdalnych pod kątem błędów protokołu Kerberos i skontaktować się z administratorami domeny w poszukiwaniu znanych problemów.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
  [Debugowanie zdalne](../debugger/remote-debugging.md)

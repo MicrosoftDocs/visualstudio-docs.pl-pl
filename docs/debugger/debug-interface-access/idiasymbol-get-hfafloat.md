@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_hfaFloat | Microsoft Docs
+title: 'IDiaSymbol:: get_hfaFloat | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3305efc101603d66511e1e2c5ef356ead22b59f
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: a13d35e494bad6bc844ea585b89f75dbe6665224
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64801311"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740410"
 ---
-# <a name="idiasymbolgethfafloat"></a>IDiaSymbol::get_hfaFloat
-Pobiera flagę określającą, czy typ zdefiniowany przez użytkownika (UDT) zawiera jednorodnych zmiennoprzecinkowych agregacji (HFA) danych typu zmiennoprzecinkowego.
+# <a name="idiasymbolget_hfafloat"></a>IDiaSymbol::get_hfaFloat
+Pobiera flagę, która określa, czy typ zdefiniowany przez użytkownika (UDT) zawiera jednorodne dane agregacji zmiennoprzecinkowej (HFA) typu zmiennoprzecinkowego.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,23 +33,23 @@ HRESULT get_hfaFloat( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca `TRUE` Jeśli UDT zawiera HFA danych typu zmiennoprzecinkowego; w przeciwnym razie zwraca `FALSE`.
+określoną Zwraca `TRUE`, Jeśli UDT zawiera dane HFA typu zmiennoprzecinkowego; w przeciwnym razie zwraca `FALSE`.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
-> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Wartość zwracana `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
 ## <a name="remarks"></a>Uwagi
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: Dia2.h
+ Nagłówek: dia2. h
 
- Biblioteka: diaguids.lib
+ Biblioteka: diaguids. lib
 
- DLL: msdia100.dll
+ DLL: msdia100. dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [IDiaSymbol::get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md)

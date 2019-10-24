@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e82828296234b13e36b7d3eabf071071ebb708d
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: 7d3df97bf8e180eae99e6ba27466fbde7a8466ad
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72589014"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777771"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Programowanie aplikacji mobilnych na wiele platform w programie Visual Studio
 
@@ -33,7 +33,7 @@ Za pomocą Visual Studio Tools dla platformy Xamarin można docelowo dla system�
 
 |**Dowiedz się więcej**|
 |--------------------|
-|[Zainstaluj program Visual Studio](http://visualstudio.microsoft.com/products/visual-studio-community-vs) (VisualStudio.com)|
+|[Zainstaluj program Visual Studio](https://visualstudio.microsoft.com/vs/community/) (VisualStudio.com)|
 |[Informacje o programie Xamarin w programie Visual Studio](https://visualstudio.microsoft.com/xamarin/) (VisualStudio.com)|
 |[Dokumentacja dotycząca tworzenia aplikacji mobilnych dla oprogramowania Xamarin](/xamarin/) |
 |[DevOps z aplikacjami platformy Xamarin](/xamarin/tools/ci/devops/) |
@@ -108,9 +108,9 @@ Za pomocą Visual Studio Tools dla platformy Xamarin można docelowo dla system�
 
 |**Dowiedz się więcej**|
 |--------------------|
-|[Zainstaluj program Visual Studio](http://visualstudio.microsoft.com/products/visual-studio-community-vs) (VisualStudio.com)|
+|[Zainstaluj program Visual Studio](https://visualstudio.microsoft.com/vs/community/) (VisualStudio.com)|
 |[Wprowadzenie do Visual Studio Tools dla Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/)|
-|[Dowiedz się więcej o programie Visual Studio Emulator for Android](http://visualstudio.microsoft.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
+|[Dowiedz się więcej o programie Visual Studio Emulator for Android](https://visualstudio.microsoft.com/vs/msft-android-emulator/) (VisualStudio.com)|
 
 ::: moniker-end
 
@@ -140,7 +140,7 @@ Za pomocą Visual Studio Tools dla platformy Xamarin można docelowo dla system�
 
 |**Dowiedz się więcej**|
 |--------------------|
-|[Pobierz program Visual Studio](http://visualstudio.microsoft.com/products/visual-studio-community-vs) (VisualStudio.com)|
+|[Pobierz program Visual Studio](https://visualstudio.microsoft.com/vs/community/) (VisualStudio.com)|
 |[Instalowanie aplikacji mobilnych dla wielu platform za pomocą programuC++](install-visual-cpp-for-cross-platform-mobile-development.md)|
 |[Dowiedz się więcej C++ o korzystaniu z programu w celu użycia na wielu platformach](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
 |[Zainstaluj to, czego potrzebujesz, a następnie utwórz natywną aplikację działania dla systemu Android](create-an-android-native-activity-app.md)|
@@ -163,10 +163,10 @@ Za pomocą Visual Studio Tools dla platformy Xamarin można docelowo dla system�
 |[Przeczytaj więcej na temat Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md) |
 |[Zacznij korzystać z Visual Studio Tools for Unity](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) |
 |Zapoznaj się z [najnowszymi ulepszeniami w wersji Zapoznawczej Visual Studio Tools for Unity 2,0](https://devblogs.microsoft.com/visualstudio/visual-studio-tools-for-unity-2-0-preview/) (blog programu Visual Studio)|
-|[Obejrzyj film wideo z wprowadzeniem do wersji Zapoznawczej Visual Studio Tools for Unity 2,0](http://www.bing.com/videos/search?q=visual+studio+tools+for+unity&qs=n&form=QBVLPG&pq=visual+studio+tools+for+unity&sc=6-29&sp=-1&sk=#view=detail&mid=0A13177F0BC7463A24080A13177F0BC7463A2408) (wideo)|
-|[Dowiedz się więcej na temat aparatu Unity](http://unity3d.com/) (witryna sieci Web Unity)|
+|[Obejrzyj film wideo z wprowadzeniem do wersji Zapoznawczej Visual Studio Tools for Unity 2,0](https://www.bing.com/videos/search?q=visual+studio+tools+for+unity&qs=n&form=QBVLPG&pq=visual+studio+tools+for+unity&sc=6-29&sp=-1&sk=#view=detail&mid=0A13177F0BC7463A24080A13177F0BC7463A2408) (wideo)|
+|[Dowiedz się więcej na temat aparatu Unity](https://unity.com/) (witryna sieci Web Unity)|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Dodawanie interfejsów API pakietu Office 365 do projektu programu Visual Studio](https://docs.microsoft.com/office/developer-program/office-365-developer-program)
 - [App Services platformy Azure — Mobile Apps](https://azure.microsoft.com/services/app-service/mobile/)

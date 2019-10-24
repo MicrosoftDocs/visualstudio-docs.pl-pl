@@ -1,5 +1,5 @@
 ---
-title: Zadanie ParallelCustomBuild | Dokumentacja firmy Microsoft
+title: ParallelCustomBuild — zadanie | Microsoft Docs
 ms.date: 03/10/2019
 ms.topic: reference
 f1_keywords:
@@ -11,33 +11,33 @@ dev_langs:
 - jsharp
 - C++
 helpviewer_keywords:
-- MSBuild (Visual C++), ParallelCustomBuild task
-- ParallelCustomBuild task (MSBuild (Visual C++))
+- MSBuild (C++), ParallelCustomBuild task
+- ParallelCustomBuild task (MSBuild (C++))
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - multiple
-ms.openlocfilehash: 54623ab1c58d85de55c5b8a24384bf0be46f1a61
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c6ea14e61eb2d62f3fc9ccdac3a17010ccc9194f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963757"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747226"
 ---
-# <a name="parallelcustombuild-task"></a>Zadanie ParallelCustomBuild
+# <a name="parallelcustombuild-task"></a>ParallelCustomBuild, zadanie
 
-Uruchamianie równoległych wystąpień [zadań CustomBuild](../msbuild/custombuild-task.md).
+Uruchamianie równoległych wystąpień [zadania CustomBuild](../msbuild/custombuild-task.md).
 
 ## <a name="parameters"></a>Parametry
 
-W poniższej tabeli opisano parametry **ParallelCustomBuild** zadania.
+W poniższej tabeli opisano parametry zadania **ParallelCustomBuild** .
 
 |Parametr|Opis|
 |---------------|-----------------|
-|**BreakOnFirstFailure**|Opcjonalnie **bool** parametru.|
-|**MaxItemsInBatch**|Opcjonalnie **int** parametru.|
-|**MaxProcesses**|Opcjonalnie **int** parametru.|
-|**Źródła**|Wymagane **[] ITaskItem** parametru.|
+|**BreakOnFirstFailure**|Opcjonalny parametr **bool** .|
+|**MaxItemsInBatch**|Opcjonalny parametr **int** .|
+|**MaxProcesses**|Opcjonalny parametr **int** .|
+|**Źródeł**|Wymagany parametr **ITaskItem []** .|
 
 ## <a name="see-also"></a>Zobacz także
 

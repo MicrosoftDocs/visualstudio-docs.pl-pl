@@ -12,14 +12,14 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 31619757684811fb5090e6edb05c464be59fa4dd
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: 8eb8b53da30f0c0896ac9576407d34f9a2f9bdbc
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72589002"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777710"
 ---
-# <a name="cross-platform-mobile-development-examples"></a>Przykłady tworzenia aplikacji mobilnych dla wielu platform
+# <a name="cross-platform-mobile-development-examples"></a>Przykłady programowania międzyplatformowych aplikacji mobilnych
 
 Kilka szablonów zainstalowanych przez **Programowanie aplikacji mobilnych za pomocą C++**  obciążeń generuje kompletne przykłady, których można użyć do uzyskania informacji. Ponadto Centrum deweloperów systemu Windows zawiera kilka przykładowych aplikacji, które można pobrać i wypróbować w programie Visual Studio.
 

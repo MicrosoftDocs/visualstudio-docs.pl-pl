@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_symbolsFileName | Microsoft Docs
+title: 'IDiaSymbol:: get_symbolsFileName | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eced26fe8316966807dab68c5361535cb551f5d1
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: f282f7eeae0dd4def8468322bf73e192503ceef1
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64796082"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739256"
 ---
-# <a name="idiasymbolgetsymbolsfilename"></a>IDiaSymbol::get_symbolsFileName
-Pobiera nazwę pliku, w którym symbole zostały załadowane.
+# <a name="idiasymbolget_symbolsfilename"></a>IDiaSymbol::get_symbolsFileName
+Pobiera nazwę pliku, z którego zostały załadowane symbole.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,17 +33,17 @@ HRESULT get_symbolsFileName ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca nazwę pliku, w którym symbole zostały załadowane.
+określoną Zwraca nazwę pliku, z którego zostały załadowane symbole.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
-> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Wartość zwracana `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
 ## <a name="remarks"></a>Uwagi
- Ta właściwość jest prawidłowa tylko dla symboli z [symtagenum — wyliczenie](../../debugger/debug-interface-access/symtagenum.md) wartość `SymTagExe` mają zakres globalny.
+ Ta właściwość jest prawidłowa tylko dla symboli z [SymTagEnum — wyliczeniem](../../debugger/debug-interface-access/symtagenum.md) wartości `SymTagExe`, które mają również zakres globalny.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [SymTagEnum, wyliczenie](../../debugger/debug-interface-access/symtagenum.md)

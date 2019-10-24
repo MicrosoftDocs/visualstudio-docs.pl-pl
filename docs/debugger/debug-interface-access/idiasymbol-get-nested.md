@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_nested — | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_nested | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 864a57b7adb8c77c342367ad5652fb2d839861de
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 16bbc876f3fcafea0c542daec02dbc8a108f203a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64796088"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739770"
 ---
-# <a name="idiasymbolgetnested"></a>IDiaSymbol::get_nested
-Pobiera flagę określającą, czy jest zagnieżdżony typ danych zdefiniowany przez użytkownika.
+# <a name="idiasymbolget_nested"></a>IDiaSymbol::get_nested
+Pobiera flagę, która określa, czy typ danych zdefiniowany przez użytkownika jest zagnieżdżony.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,13 +33,13 @@ HRESULT get_nested ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca `TRUE` jeśli zagnieżdżony jest typ danych zdefiniowany przez użytkownika; w przeciwnym razie zwraca `FALSE`.
+określoną Zwraca `TRUE`, jeśli typ danych zdefiniowany przez użytkownika jest zagnieżdżony; w przeciwnym razie zwraca `FALSE`.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
-> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Wartość zwracana przez `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

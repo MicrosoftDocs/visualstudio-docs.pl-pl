@@ -1,5 +1,5 @@
 ---
-title: IDiaFrameData::get_program | Microsoft Docs
+title: 'IDiaFrameData:: get_program | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6b893a40172bfd806130bef663da8676b513042
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 135f2b0a042dd74b573a0746831a48fb27e7c2a9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832841"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743518"
 ---
-# <a name="idiaframedatagetprogram"></a>IDiaFrameData::get_program
-Pobiera ciąg program, który jest używany do obliczania rejestru ustawić przed wywołaniem do bieżącej funkcji.
+# <a name="idiaframedataget_program"></a>IDiaFrameData::get_program
+Pobiera ciąg programu, który jest używany do obliczenia zestawu rejestru przed wywołaniem bieżącej funkcji.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,23 +33,23 @@ HRESULT get_program ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca ciąg program.
+określoną Zwraca ciąg programu.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`. Zwraca `S_FALSE`, jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Ciąg program jest sekwencją makra jest interpretowany w celu ustanowienia prologu. Na przykład użyć ramkę stosu typowe parametry programu `"$T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + ="`. Format jest Polski odwrotnej notacji, gdy operatory postępuj zgodnie z argumentów. `T0` reprezentuje zmienną tymczasową na stosie. W tym przykładzie wykonuje następujące czynności:
+ Ciąg programu jest sekwencją makr, które są interpretowane w celu ustalenia prologu. Na przykład typowa Ramka stosu może używać ciągu programu `"$T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + ="`. Format jest odwrotnym zapisem polskim, gdzie operatory obserwują operandy. `T0` reprezentuje zmienną tymczasową na stosie. W tym przykładzie wykonywane są następujące czynności:
 
-1. Przenieś zawartość rejestru `ebp` do `T0`.
+1. Przenieś zawartość rejestru `ebp`, aby `T0`.
 
-2. Dodaj `4` wartość `T0` do utworzenia adresu, pobrać wartości z tego adresu i przechowywana wartość rejestru `eip`.
+2. Dodaj `4` do wartości w `T0`, aby utworzyć adres, Pobierz wartość z tego adresu i Zapisz wartość w `eip`register.
 
-3. Pobiera wartość z adresem przechowywanym w `T0` i zapisać wartości rejestru `ebp`.
+3. Pobierz wartość z adresu przechowywanego w `T0` i Zapisz tę wartość w `ebp`rejestru.
 
-4. Dodaj `8` wartość `T0` i zapisać wartości rejestru `esp`.
+4. Dodaj `8` do wartości w `T0` i Zapisz tę wartość w `esp`register.
 
-   Pamiętaj, że ciąg program zależy od procesora CPU i konwencji wywoływania, skonfiguruj dla funkcji, reprezentowane przez bieżącą ramkę stosu.
+   Należy zauważyć, że ciąg programu jest specyficzny dla procesora i do konwencji wywoływania dla funkcji reprezentowanej przez bieżącą ramkę stosu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

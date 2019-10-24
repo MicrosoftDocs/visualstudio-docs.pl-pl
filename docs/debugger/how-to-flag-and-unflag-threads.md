@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Oflagowanie i usuwanie oflagowania wątków | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Flagowanie i usuwanie flag wątków | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,52 +15,52 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e63f081ff54a18bb4b5ca5c1cbdf947670f10a7e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 68a2ce8b6ec429b3f7f5cd782c3dac52602eff16
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62906728"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733239"
 ---
-# <a name="how-to-flag-and-unflag-threads-c-visual-basic-c"></a>Instrukcje: Oflagowanie i usuwanie oflagowania wątków (C#, Visual Basic, C++)
+# <a name="how-to-flag-and-unflag-threads-c-visual-basic-c"></a>Instrukcje: Flagowanie i usuwanie flag wątków (C#, Visual Basic, C++)
 
-Można flagę wątku, który chcesz poświęcić szczególną uwagę, oznaczając je za pomocą ikony w **wątków**, **stosów równoległych** (Widok wątku) **równoległego wyrażenia kontrolnego**i  **Wątki GPU** systemu windows. Ta ikona może pomóc i inne odróżnić oflagowane wątki z innych wątków.
+Można oflagować wątek, który ma dawać szczególną uwagę, poprzez oznaczenie go ikoną w **wątkach**, **stosów równoległych** (Widok wątków), **zegarków równoległych**i **wątków GPU** . Ta ikona może pomóc Tobie i innym osobom odróżnić oflagowane wątki od innych wątków.
 
-Oflagowane wątki otrzymają specjalnego traktowania w **wątku** listy na **Lokalizacja debugowania** narzędzi i w innych wielowątkowe debugowanie systemu windows. Możesz wyświetlić wszystkie wątki lub tylko oflagowane wątki w **wątku** listy lub w innych oknach.
+Wątki oflagowane otrzymują również specjalne traktowanie na liście **wątków** na pasku narzędzi **Lokalizacja debugowania** oraz w innych oknach debugowania wielowątkowego. Można pokazać wszystkie wątki lub tylko Oflagowane wątki na liście **wątków** lub w innych oknach.
 
-### <a name="to-flag-or-unflag-a-thread"></a>Flaga lub usuń flagę wątku
+### <a name="to-flag-or-unflag-a-thread"></a>Aby oflagować lub Usuń flagę wątku
 
-- W **wątków** lub **równoległego wyrażenia kontrolnego** oknie Znajdź wątek Cię interesuje i kliknij ikonę flagi, aby zaznacz lub Wyczyść flagę.
-- W **stosów równoległych** okna, kliknij prawym przyciskiem myszy na wątku lub grupy wątków, a następnie wybierz pozycję **flagi / \<wątku >** lub **Unflag / \<wątku >**.
+- W oknie **wątki** lub **równoległe czujki** Znajdź interesujący Cię wątek i kliknij ikonę flagi, aby zaznaczyć lub wyczyścić flagę.
+- W oknie **stosów równoległych** kliknij prawym przyciskiem myszy wątek lub grupę wątków, a następnie wybierz polecenie **Oflaguj/\<wątek >** lub usuń **flagę/\<wątku >** .
 
 ### <a name="to-unflag-all-threads"></a>Aby Usuń flagę ze wszystkich wątków
 
-- W **wątków** okna, kliknij prawym przyciskiem myszy dowolnego wątku, a następnie kliknij przycisk **Usuń flagę ze wszystkich wątków**.
-- W **równoległego wyrażenia kontrolnego** wybierz wszystkie oflagowane wątki, a następnie kliknij prawym przyciskiem myszy i wybierz **Unflag**.
+- W oknie **wątki** kliknij prawym przyciskiem myszy dowolny wątek, a następnie kliknij pozycję Usuń **flagę wszystkie wątki**.
+- W oknie **czujki równoległej** zaznacz wszystkie oflagowane wątki, a następnie kliknij prawym przyciskiem myszy i wybierz pozycję Usuń **flagę**.
 
-### <a name="to-display-only-flagged-threads"></a>Aby wyświetlić tylko oflagowane wątki
+### <a name="to-display-only-flagged-threads"></a>Aby wyświetlić tylko Oflagowane wątki
 
-- Wybierz **Pokaż wątki tylko oflagowane** przycisk w jedną z wielowątkowych debugowania systemu windows.
+- Wybierz przycisk **Pokaż tylko Oflagowane wątki** w jednym z okien debugowania wielowątkowego.
 
-### <a name="to-flag-just-my-code"></a>Flagi tylko mój kod
+### <a name="to-flag-just-my-code"></a>Aby oflagować Tylko mój kod
 
-1. Na pasku narzędzi u góry **wątków** okna, kliknij ikonę flagi.
+1. Na pasku narzędzi w górnej części okna **wątki** kliknij ikonę flagi.
 
-2. Na liście rozwijanej kliknij **flagę tylko mój kod**.
+2. Na liście rozwijanej kliknij pozycję **flaga tylko mój kod**.
 
-### <a name="to-flag-threads-that-are-associated-with-selected-modules"></a>Aby Oflaguj wątki, które są skojarzone z wybranych modułów
+### <a name="to-flag-threads-that-are-associated-with-selected-modules"></a>Aby oflagować wątki, które są skojarzone z wybranymi modułami
 
-1. Na pasku narzędzi **wątków** okna, kliknij ikonę flagi.
+1. Na pasku narzędzi okna **wątki** kliknij ikonę flagi.
 
-2. Na liście rozwijanej kliknij **Oflaguj niestandardowy wybór modułów**.
+2. Z listy rozwijanej kliknij pozycję **Oflaguj niestandardowy wybór modułu**.
 
-3. W **wybierz moduły** okna dialogowego Wybierz moduły, które chcesz.
+3. W oknie dialogowym **Wybieranie modułów** wybierz odpowiednie moduły.
 
-4. (Opcjonalnie) W **wyszukiwania** wpisz ciąg do wyszukiwania określonych modułów.
+4. Obowiązkowe W polu **wyszukiwania** wpisz ciąg w celu wyszukania określonych modułów.
 
 5. Kliknij przycisk **OK**.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Debugowanie aplikacji wielowątkowych](../debugger/debug-multithreaded-applications-in-visual-studio.md)
-- [Rozpoczynanie debugowania aplikacji wielowątkowych](../debugger/get-started-debugging-multithreaded-apps.md)
-- [Przewodnik: Debugowanie aplikacji wielowątkowych, za pomocą okna wątków](../debugger/how-to-use-the-threads-window.md)
+- [Rozpocznij debugowanie aplikacji wielowątkowych](../debugger/get-started-debugging-multithreaded-apps.md)
+- [Przewodnik: debugowanie aplikacji wielowątkowych za pomocą okna wątków](../debugger/how-to-use-the-threads-window.md)

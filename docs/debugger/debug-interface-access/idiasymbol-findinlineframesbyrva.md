@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::findInlineFramesByRVA | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: findInlineFramesByRVA | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d43863f44ec80dce283b1746be12f7a6f47cfe4f
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 3e174db264a7d8c3576054fcccf8da333d3e1e76
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62838987"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741170"
 ---
 # <a name="idiasymbolfindinlineframesbyrva"></a>IDiaSymbol::findInlineFramesByRVA
-Pobiera wyliczenie, które umożliwia klientowi wykonać iterację przez wszystkie ramki wbudowane w określonym względny adres wirtualny (RVA).
+Pobiera wyliczenie, które pozwala klientowi na iterację we wszystkich wbudowanych ramkach w określonym względnym adresie wirtualnym (RVA).
 
 ## <a name="syntax"></a>Składnia
 
@@ -31,16 +31,16 @@ HRESULT findInlineFramesByRVA (    DWORD             rva,
 #### <a name="parameters"></a>Parametry
  `rva`
 
-[in] Określa adres jako adres RVA.
+podczas Określa adres jako RVA.
 
  `ppResult`
 
-[out] Przechowuje `IDiaEnumSymbols` obiektu, który zawiera listę ramek, które są pobierane.
+określoną Przechowuje `IDiaEnumSymbols` obiektu, który zawiera listę pobieranych ramek.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [SymTagEnum, wyliczenie](../../debugger/debug-interface-access/symtagenum.md)

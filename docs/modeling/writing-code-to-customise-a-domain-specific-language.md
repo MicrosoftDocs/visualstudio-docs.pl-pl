@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c8a65b19baeb3a03c8ada039bce354140aecbf6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3954f271d4bcdc222841bbcb435cdadf115ac263
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666883"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748134"
 ---
 # <a name="write-code-to-customize-a-domain-specific-language"></a>Pisanie kodu pod kątem dostosowywania języka specyficznego dla domeny
 
@@ -72,6 +72,6 @@ przechowywanie obiektów w sklepie (zamiast zwykłych obiektów) zapewnia kilka 
 
 - **Serializacja**. Magazyn zapewnia standardowy sposób serializacji obiektów, które zawiera do pliku. Można dostosować reguły serializacji i deserializacji. Aby uzyskać więcej informacji, zobacz [Dostosowywanie serializacji File Storage i XML](../modeling/customizing-file-storage-and-xml-serialization.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md)

@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findInlineeLinesByAddr | Dokumentacja firmy Microsoft
+title: 'IDiaSession:: findInlineeLinesByAddr | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a40cc8afdb60ad8ad76a0d6ee8e502a6a0b720b7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 496f6b569b3ac02c625ddf18406b78fdb1687be2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832542"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742233"
 ---
 # <a name="idiasessionfindinlineelinesbyaddr"></a>IDiaSession::findInlineeLinesByAddr
-Pobiera wyliczenie, które umożliwia klientowi iteracyjne przeglądanie informacji o numerze wiersza wszystkich funkcji, które są śródwierszowych, bezpośrednio lub pośrednio, za pomocą symbolu określonego elementu nadrzędnego i znajdują się w obrębie określonego zakresu adresów.
+Pobiera wyliczenie, które umożliwia klientowi przechodzenie do kolejnych informacji o numerze wiersza wszystkich funkcji, które są wbudowane, bezpośrednio lub pośrednio, przez określony symbol nadrzędny i są zawarte w określonym zakresie adresów.
 
 ## <a name="syntax"></a>Składnia
 
@@ -32,28 +32,28 @@ HRESULT findInlineeLinesByAddr ( 
 #### <a name="parameters"></a>Parametry
  `parent`
 
-[in] `IDiaSymbol` Obiekt reprezentujący element nadrzędny.
+podczas Obiekt `IDiaSymbol` reprezentujący element nadrzędny.
 
  `isect`
 
-[in] Określa składnik części adresu.
+podczas Określa składnik sekcji adresu.
 
  `offset`
 
-[in] Określa przesunięcie składnik adresu.
+podczas Określa składnik przesunięcia adresu.
 
  `length`
 
-[in] Określa zakres adresów w liczbę bajtów, aby pokrywał się z tym zapytaniem.
+podczas Określa zakres adresów (w bajtach), który będzie obejmować to zapytanie.
 
  `ppResult`
 
-[out] Przechowuje `IDiaEnumLineNumbers` obiektu, który zawiera listę numerów wierszy, które są pobierane.
+określoną Zawiera obiekt `IDiaEnumLineNumbers` zawierający listę numerów wierszy, które są pobierane.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [SymTagEnum, wyliczenie](../../debugger/debug-interface-access/symtagenum.md)

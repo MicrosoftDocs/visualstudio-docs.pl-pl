@@ -37,12 +37,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3cef755721a9c5b917b080fa10f1819055a18ed7
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 954cf8436a9f0653685b41920cad84698ae50abb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72430554"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72732160"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>Porady: Korzystanie z macierzystego sprawdzania w trakcie wykonywania
 W projekcie programu Visual C++ Studio można użyć natywnej [runtime_checks](/cpp/preprocessor/runtime-checks) do przechwytywania typowych błędów czasu wykonywania, takich jak:
@@ -57,7 +57,7 @@ W projekcie programu Visual C++ Studio można użyć natywnej [runtime_checks](/
 
 - Utrata danych w przypisaniu do krótszej zmiennej.
 
-  Jeśli używasz **/RTC** z zoptymalizowaną ( **/o**) kompilacją, wynik błędu kompilatora. Jeśli w zoptymalizowanej kompilacji używasz dyrektywy pragma `runtime_checks`, pragma nie ma żadnego wpływu.
+  Jeśli używasz **/RTC** z zoptymalizowaną ( **/o**) kompilacją, wynik błędu kompilatora. Jeśli używasz dyrektywy pragma `runtime_checks` w zoptymalizowanej kompilacji, pragma nie ma żadnego wpływu.
 
   Podczas debugowania programu, który ma włączone sprawdzanie czasu wykonywania, domyślną akcją jest zatrzymanie i przerwanie działania programu w debugerze w przypadku wystąpienia błędu w czasie wykonywania. Można zmienić to zachowanie domyślne dla dowolnego sprawdzenia w czasie wykonywania. Aby uzyskać więcej informacji, zobacz [Zarządzanie wyjątkami za pomocą debugera](../debugger/managing-exceptions-with-the-debugger.md).
 
@@ -77,7 +77,7 @@ W projekcie programu Visual C++ Studio można użyć natywnej [runtime_checks](/
 
 - Użyj dyrektywy pragma `runtime_checks`.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Debugowanie w programie Visual Studio](../debugger/index.yml)
 - [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)
 - [runtime_checks](/cpp/preprocessor/runtime-checks)

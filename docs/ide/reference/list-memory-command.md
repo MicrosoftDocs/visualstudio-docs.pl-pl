@@ -14,12 +14,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb5e6181c2dbe9a79b2ab1d0859722de324d768e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7bb92f3ac3420f146fdcd39b5925f7b3a517959a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72610694"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748699"
 ---
 # <a name="list-memory-command"></a>Lista pamięci — Polecenie
 Wyświetla zawartość określonego zakresu pamięci.
@@ -85,7 +85,7 @@ Poniżej znajduje się lista dostępnych aliasów dla polecenia **Debug. ListMem
 >Debug.ListMemory /Format:float /Count:30 /Unicode
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Lista stosu wywołań, polecenie](../../ide/reference/list-call-stack-command.md)
 - [Lista wątków, polecenie](../../ide/reference/list-threads-command.md)

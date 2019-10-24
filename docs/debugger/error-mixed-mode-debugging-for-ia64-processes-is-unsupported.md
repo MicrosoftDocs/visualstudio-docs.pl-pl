@@ -1,5 +1,5 @@
 ---
-title: 'Błąd: Debugowanie w trybie mieszanym dla procesów IA64 nie jest obsługiwany | Dokumentacja firmy Microsoft'
+title: 'Błąd: debugowanie w trybie mieszanym dla procesów IA64 nie jest obsługiwane | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -14,19 +14,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c4414651249aa7622e7f7be59e6150a4925f1b8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0bddbb1572bd0258eae2052eb34dfa3d0d67a134
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850865"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737622"
 ---
-# <a name="error-mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>Błąd: Debugowanie procesów IA64 w trybie mieszanym nie jest obsługiwane
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Debugger nie obsługuje debugowania kod mieszany natywnych i zarządzanych w procesie opartych na procesorach Itanium.
+# <a name="error-mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>Błąd: debugowanie w trybie mieszanym dla procesów IA64 nie jest obsługiwane
+Debuger [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nie obsługuje debugowania kodu natywnego i zarządzanego w procesie opartym na architekturze Itanium.
 
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd
 
-- Twórz 32-bitowej wersji aplikacji do debugowania.
+- Utwórz 32-bitową wersję aplikacji na potrzeby debugowania.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Debugowanie zdalne](../debugger/remote-debugging.md)

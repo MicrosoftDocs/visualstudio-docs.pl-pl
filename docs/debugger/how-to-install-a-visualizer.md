@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Instalacja programu Visualizer | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Instalowanie wizualizatora | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,33 +17,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b9b09bc837cae4eaad2c0dbcb2bb82a7daa248eb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 3c9c2fa8a8fb300c3b7eb702ae3efd216e17141a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63389318"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733105"
 ---
-# <a name="how-to-install-a-visualizer"></a>Instrukcje: Instalacja programu Visualizer
-Po utworzeniu wizualizatora, należy zainstalować wizualizatora tak, że będzie on dostępny w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Instalowanie wizualizatora jest prostym procesem.
+# <a name="how-to-install-a-visualizer"></a>Porady: instalacja programu Visualizer
+Po utworzeniu wizualizatora należy zainstalować wizualizator, aby był dostępny w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Instalowanie wizualizatora jest prostym procesem.
 
 > [!NOTE]
-> W aplikacjach platformy UWP, tylko standardowy tekst, HTML, XML i JSON wizualizatory są obsługiwane. Wizualizatory niestandardowe (utworzone przez użytkownika) nie są obsługiwane.
+> W aplikacjach platformy UWP obsługiwane są tylko wizualizacje tekstu standardowego, HTML, XML i JSON. Wizualizacje niestandardowe (utworzone przez użytkownika) nie są obsługiwane.
 
-### <a name="to-install-a-visualizer"></a>Aby instalacja programu visualizer
+### <a name="to-install-a-visualizer"></a>Aby zainstalować wizualizator
 
-1. Znajdź bibliotekę DLL, która zawiera visualizer, który został wcześniej utworzony.
+1. Znajdź bibliotekę DLL, która zawiera skompilowany wizualizator.
 
-2. Kopiuj bibliotekę DLL do jednej z następujących lokalizacji:
+2. Skopiuj bibliotekę DLL do jednej z następujących lokalizacji:
 
     - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers`
 
     - `My Documents\` *VisualStudioVersion* `\Visualizers`
 
-3. Jeśli chcesz użyć zarządzany Wizualizator dla zdalnego debugowania, należy skopiować bibliotekę DLL do tej samej ścieżki na komputerze zdalnym.
+3. Jeśli chcesz użyć zarządzanego wizualizatora na potrzeby debugowania zdalnego, Skopiuj bibliotekę DLL do tej samej ścieżki na komputerze zdalnym.
 
 4. Uruchom ponownie sesję debugowania.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Tworzenie niestandardowych wizualizatorów](../debugger/create-custom-visualizers-of-data.md)
-- [Instrukcje: Pisanie wizualizatora](/visualstudio/debugger/create-custom-visualizers-of-data)
+- [Instrukcje: pisanie wizualizatora](/visualstudio/debugger/create-custom-visualizers-of-data)

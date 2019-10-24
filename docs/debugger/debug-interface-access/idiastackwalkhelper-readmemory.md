@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalkHelper::readMemory | Dokumentacja firmy Microsoft
+title: 'IDiaStackWalkHelper:: ReadMemory — | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 530b6c3f6873724f8a8ca06ea4228b017de281f9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 57afd033b2d969a4ed57dc713b2c4266e0ead632
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62831809"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741362"
 ---
 # <a name="idiastackwalkhelperreadmemory"></a>IDiaStackWalkHelper::readMemory
-Odczytuje blok danych z pliku wykonywalnego obrazu w pamięci.
+Odczytuje blok danych z obrazu pliku wykonywalnego w pamięci.
 
 ## <a name="syntax"></a>Składnia
 
@@ -37,27 +37,27 @@ HRESULT readMemory( 
 #### <a name="parameters"></a>Parametry
  `type`
 
-[in] Wartość z zakresu od [memorytypeenum — wyliczenie](../../debugger/debug-interface-access/memorytypeenum.md) wyliczenie opisujące typ pamięci do odczytu.
+podczas Wartość z wyliczenia [Memorytypeenum — Wyliczenie](../../debugger/debug-interface-access/memorytypeenum.md) określa typ pamięci do odczytania.
 
- va
+ VA
 
-[in] Wirtualny adres obrazu, w którym ma rozpocząć się odczyt.
+podczas Adres wirtualny w obrazie, od którego ma się zacząć odczytywanie.
 
  `cbData`
 
-[in] Rozmiar buforu danych w bajtach.
+podczas Rozmiar buforu danych w bajtach.
 
  `pcbData`
 
-[out] Zwraca liczbę bajtów odczytanych w rzeczywistości. Jeśli `pbData` jest `NULL`, a następnie jest to całkowita liczba bajtów dostępnych danych.
+określoną Zwraca liczbę bajtów, które są faktycznie odczytywane. Jeśli `pbData` jest `NULL`, to całkowita liczba dostępnych bajtów danych.
 
  `pbData`
 
-[out w] Buforu, który jest wypełniane pamięci odczytu.
+[in. out] Bufor, który jest wypełniony za pomocą odczytu pamięci.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)
 - [MemoryTypeEnum, wyliczenie](../../debugger/debug-interface-access/memorytypeenum.md)

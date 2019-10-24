@@ -1,5 +1,5 @@
 ---
-title: Pobieranie listy zainstalowane fragmenty kodu (starsza wersja) | Dokumentacja firmy Microsoft
+title: Pobieranie listy zainstalowanych fragmentów kodu (starsza wersja) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,23 +12,23 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: de116d6abb995375ba04ae1e8407eba7754ae5e9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 072827bbb9676ba49df5ccd69f329ea9b04c78b2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66323372"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72721658"
 ---
-# <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>Przewodnik: Pobieranie listy zainstalowanych fragmentów kodu (starsza wersja implementacji)
-Fragment kodu jest fragmentem kodu, które mogą być wstawiane do bufor źródłowy za pomocą polecenia menu (umożliwiającą wybierania listy zainstalowanych fragmentów kodu) lub przez wybranie skrótów fragmentu kodu z poziomu listy uzupełniania IntelliSense.
+# <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>Przewodnik: pobieranie listy zainstalowanych fragmentów kodu (starsza wersja implementacji)
+Fragment kodu to fragment kodu, który może zostać wstawiony do bufora źródłowego za pomocą polecenia menu (co umożliwia wybranie spośród listy zainstalowanych fragmentów kodu) lub wybranie skrótu fragmentu z listy uzupełniania IntelliSense.
 
- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.EnumerateExpansions%2A> Metoda pobiera wszystkie fragmenty kodu dla określonego języka identyfikator GUID. Skróty klawiaturowe te fragmenty kodu mogą być wstawiane do listy uzupełniania IntelliSense.
+ Metoda <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.EnumerateExpansions%2A> pobiera wszystkie fragmenty kodu dla określonego identyfikatora GUID języka. Skróty do tych fragmentów kodu można wstawiać do listy uzupełniania IntelliSense.
 
- Zobacz [Obsługa fragmentów kodu w starszej wersji usługi językowej](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md) szczegółowe informacje na temat Implementowanie fragmentów kodu w usługi językowej pakietu zarządzanego framework (MPF).
+ Zobacz [Obsługa fragmentów kodu w starszej wersji usługi językowej,](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md) Aby uzyskać szczegółowe informacje na temat implementowania fragmentów kodu w usłudze języka Managed Package Framework (MPF).
 
 ### <a name="to-retrieve-a-list-of-code-snippets"></a>Aby pobrać listę fragmentów kodu
 
-1. Poniższy kod przedstawia sposób uzyskiwania listy fragmentów kodu dla danego języka. Wyniki są przechowywane w tablicy <xref:Microsoft.VisualStudio.TextManager.Interop.VsExpansion> struktury. Ta metoda jest używana statyczna <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> metodę, aby uzyskać <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> interfejs z <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> usługi. Jednak również użyć dostawcy usług danego pakietu VSPackage i wywołania <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> metody.
+1. Poniższy kod pokazuje, jak uzyskać listę fragmentów kodu dla danego języka. Wyniki są przechowywane w tablicy struktur <xref:Microsoft.VisualStudio.TextManager.Interop.VsExpansion>. Ta metoda używa statycznej metody <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>, aby uzyskać interfejs <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> z usługi <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>. Można jednak również użyć dostawcy usług danego pakietu VSPackage i wywołać metodę <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>.
 
     ```csharp
     using System;
@@ -101,12 +101,12 @@ Fragment kodu jest fragmentem kodu, które mogą być wstawiane do bufor źród�
     }
     ```
 
-### <a name="to-call-the-getsnippets-method"></a>Aby wywołać metodę GetSnippets
+### <a name="to-call-the-getsnippets-method"></a>Aby wywołać metodę getwstaweks
 
-1. Poniższa metoda przedstawiono sposób wywoływania `GetSnippets` metoda po zakończeniu operacji analizowania. <xref:Microsoft.VisualStudio.Package.LanguageService.OnParseComplete%2A> Metoda jest wywoływana po operacji analizowania, która została uruchomiona z powodu <xref:Microsoft.VisualStudio.Package.ParseReason>.
+1. Poniższa metoda pokazuje, jak wywołać metodę `GetSnippets` po zakończeniu operacji analizowania. Metoda <xref:Microsoft.VisualStudio.Package.LanguageService.OnParseComplete%2A> jest wywoływana po operacji analizowania, która została rozpoczęta z powodu <xref:Microsoft.VisualStudio.Package.ParseReason>.
 
 > [!NOTE]
-> `expansionsList` Listy tablicy jest buforowana ze względu na wydajność. Zmiany fragmenty kodu nie są odzwierciedlane na liście, dopóki usługa języka jest zatrzymana i ponownie załadować (np. przez zatrzymanie i ponowne uruchomienie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]).
+> Lista tablic `expansionsList`ch jest buforowana ze względu na wydajność. Zmiany w fragmentach kodu nie są odzwierciedlane na liście do momentu zatrzymania i ponownego załadowania usługi języka (na przykład przez zatrzymanie i ponowne uruchomienie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]).
 
 ```csharp
 class TestLanguageService : LanguageService
@@ -125,13 +125,13 @@ class TestLanguageService : LanguageService
 }
 ```
 
-### <a name="to-use-the-snippet-information"></a>Aby użyć informacji fragmentu kodu
+### <a name="to-use-the-snippet-information"></a>Aby użyć informacji z fragmentu kodu
 
-1. Poniższy kod przedstawia sposób użycia informacji fragment zwracanych przez `GetSnippets` metody. `AddSnippets` Metoda jest wywoływana z analizatora w odpowiedzi na jakiegokolwiek powodu analizy, który jest używany do wypełniania listy fragmentów kodu. To powinno nastąpić po pełnej analizy zostało wykonane po raz pierwszy.
+1. Poniższy kod pokazuje, jak używać informacji z fragmentu zwracanych przez metodę `GetSnippets`. Metoda `AddSnippets` jest wywoływana z analizatora w odpowiedzi na dowolny powód analizy, który jest używany do wypełniania listy fragmentów kodu. Powinno to nastąpić po wykonaniu pełnej analizy po raz pierwszy.
 
-     `AddDeclaration` Metoda tworzy listę deklaracje, które są później jest wyświetlana na liście uzupełniania.
+     Metoda `AddDeclaration` tworzy listę deklaracji, które są później wyświetlane na liście uzupełniania.
 
-     `TestDeclaration` Klasa zawiera wszystkie informacje, które mogą być wyświetlane na liście uzupełniania, a także typ deklaracji.
+     Klasa `TestDeclaration` zawiera wszystkie informacje, które mogą być wyświetlane na liście uzupełniania, a także typ deklaracji.
 
     ```csharp
     class TestAuthoringScope : AuthoringScope
@@ -176,5 +176,5 @@ class TestLanguageService : LanguageService
 
     ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Obsługa fragmentów kodu w starszej wersji usługi językowej](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md)

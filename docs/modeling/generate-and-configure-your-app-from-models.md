@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 801423ee8ad5bb9a63ebb4f970d9c53e5fe8c1e4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 13d943b8d86bd9ca912816e0f19993959ca303c1
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605697"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748388"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Generowanie i konfigurowanie aplikacji na podstawie modeli
 Można generować lub konfigurować części aplikacji z modelu.
@@ -70,7 +70,7 @@ Można generować lub konfigurować części aplikacji z modelu.
 
      Na przykład Diagram klas UML jest kolekcją pól i strzałek; za pomocą tej notacji można określić wszystko. Nie zaleca się jednak używania diagramu klas, z wyjątkiem sytuacji, w których fakt opisywania zestawu typów. Na przykład można dostosować diagramy klas do opisywania różnych typów stron sieci Web.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Generowanie kodu z języka specyficznego dla domeny](../modeling/generating-code-from-a-domain-specific-language.md)
 - [Instrukcje: Otwieranie modelu z pliku w kodzie programu](../modeling/how-to-open-a-model-from-file-in-program-code.md)

@@ -12,12 +12,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3c1f6761c6cef968c965a7f0d766d3b7da6183e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9e6ff6000f0eab60e17642bf2bd8257154e54a9d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72622606"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745954"
 ---
 # <a name="code-analysis-policy-errors"></a>Błędy zasad analizy kodu
 
@@ -59,7 +59,7 @@ Ten błąd dotyczy projektów platformy .NET. Ustawienia reguł kodu zarządzane
 
 **Analiza kodu nie jest włączona w aktywnej konfiguracji. Przed zaewidencjonowaniem przejdź do konfiguracji {0} i skompiluj projekt {1}.**
 
-W [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] aktywna konfiguracja nie ma włączonej analizy kodu, ale jest włączona co najmniej jedna Analiza kodu.
+W [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]aktywna konfiguracja nie ma włączonej analizy kodu, ale jest włączona co najmniej jedna Analiza kodu.
 
 **Należy włączyć analizę kodu dla zarządzanych plików binarnych w projekcie {0} właściwości i skompilować przed zaewidencjonowaniem.**
 
@@ -73,6 +73,6 @@ Ten błąd został zastosowany do [!INCLUDE[vsprvs](../code-quality/includes/vsp
 
 Ten błąd dotyczy projektów niezarządzanych. Zasady analizy kodu wymagają analizy kodu dla języka C/C++, ale nie jest ona włączona w bieżącym projekcie na kliencie.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Błędy zgłaszane przez aplikację do analizy kodu](../code-quality/code-analysis-application-errors.md)

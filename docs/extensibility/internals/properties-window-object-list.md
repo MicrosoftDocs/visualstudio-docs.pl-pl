@@ -1,5 +1,5 @@
 ---
-title: Lista obiektów okna właściwości | Dokumentacja firmy Microsoft
+title: Lista obiektów okna właściwości | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,24 +10,24 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 751339d0e9f8d4dd6d43a1f786e08b57d0ac7555
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e50b3fe46edb8d14cad9a03a45bc8650cb9713ab
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347799"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72725187"
 ---
 # <a name="properties-window-object-list"></a>Lista obiektów okna właściwości
-Lista obiektów w **właściwości** okno jest listy umożliwia zmianę zaznaczenia do innych obiektów, które są dostępne w ramach jednego lub kilku wybranych okien. Wybierając inny obiekt na tej liście wyzwala wywołanie <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A> poinformować środowiska wybrano nowego obiektu. Informacje wyświetlane w **właściwości** okna jest następnie zmieniane, aby wyświetlić właściwości skojarzone z nowo wybrany obiekt.
+Lista obiektów w oknie **Właściwości** jest listą rozwijaną, która umożliwia zmianę zaznaczenia na inne obiekty dostępne w jednym lub kilku wybranych oknach. Wybranie innego obiektu z tej listy wyzwala wywołanie <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A>, aby poinformować środowisko o wybranym nowym obiekcie. Informacje wyświetlane w oknie **Właściwości** są następnie zmieniane, aby pokazać właściwości skojarzone z nowo wybranym obiektem.
 
 ## <a name="the-object-list"></a>Lista obiektów
- Lista obiektów składa się z dwóch pól: Nazwa obiektu (wyświetlone czcionką pogrubioną) i typ obiektu.
+ Lista obiektów składa się z dwóch pól: nazwę obiektu (wyświetlaną pogrubioną czcionką) i typ obiektu.
 
- Nazwa obiektu wyświetlany po lewej stronie, typu obiektu wytłuszczonym drukiem jest pobierana z samego obiektu przy użyciu `Name` podana przez właściwość <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo> interfejsu. <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo.GetClassInfo%2A>, jedyną metodą na <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo>, zwraca <xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo> dla klasy coclass tego interfejsu. **Właściwości** okno używa <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo> można pobrać nazwy klasy coclass, który jest wyświetlany jako nazwa obiektu na liście rozwijanej.
+ Nazwa obiektu wyświetlana po lewej stronie typu obiektu w pogrubieniu jest pobierana z samego obiektu za pomocą właściwości `Name` dostarczonej przez interfejs <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo>. <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo.GetClassInfo%2A>jedyną metodą <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo>, zwraca <xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo> dla klasy coclass tego interfejsu. Okno **Właściwości** używa <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo>, aby uzyskać nazwę klasy coclass, która jest wyświetlana jako nazwa obiektu na liście rozwijanej.
 
- Jeśli obiekt nie ma `Name` właściwości, nazwa nie jest wyświetlana w obszarze nazwy listy obiektów. Jeśli chcesz, aby nazwa wyświetlana na liście obiektów, można dodać do obiektu Właściwość Name.
+ Jeśli obiekt nie ma właściwości `Name`, nazwa nie zostanie wyświetlona w obszarze Nazwa listy obiektów. Możesz dodać właściwość Name do obiektu, jeśli chcesz, aby nazwa była wyświetlana na liście obiektów.
 
- Jeśli obiekt COM nie implementuje <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo>, **właściwości** okna wyświetla nazwę interfejsu zamiast nazwy obiektu po lewej stronie listy.
+ Jeśli obiekt COM nie implementuje <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo>, w oknie **Właściwości** zostanie wyświetlona nazwa interfejsu w miejscu nazwy obiektu po lewej stronie listy.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Rozszerzanie właściwości](../../extensibility/internals/extending-properties.md)

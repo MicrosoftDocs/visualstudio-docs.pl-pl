@@ -1,5 +1,5 @@
 ---
-title: Idiaenumstackframes::Next — | Dokumentacja firmy Microsoft
+title: 'IDiaEnumStackFrames:: Next | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9cf220c65cf11836e64a7e1f4c0142c89669f4b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ffde40e221823d9656c4b6414b14067ac9d0537a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833311"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744040"
 ---
 # <a name="idiaenumstackframesnext"></a>IDiaEnumStackFrames::Next
-Pobiera określoną liczbę elementów w ramce stosu z sekwencji wyliczenia.
+Pobiera określoną liczbę elementów ramek stosu z sekwencji wyliczenia.
 
 ## <a name="syntax"></a>Składnia
 
@@ -35,19 +35,19 @@ HRESULT Next( 
 #### <a name="parameters"></a>Parametry
  celt
 
-[in] Liczba elementów stackframe modułu wyliczającego do pobrania.
+podczas Liczba elementów StackFrame w module wyliczającym do pobrania.
 
  rgelt
 
-[out] Tablica, która ma być wypełnione z żądanym [idiastackframe —](../../debugger/debug-interface-access/idiastackframe.md) obiektów.
+określoną Tablica, która ma zostać wypełniona z żądanymi obiektami [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md) .
 
  pceltFetched
 
-[out] Zwraca liczbę stosu ramki elementów w pobrano modułu wyliczającego.
+określoną Zwraca liczbę elementów ramek stosu w ramach pobranego modułu wyliczającego.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli nie ma żadnych więcej ramek stosu. W przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`. Zwraca `S_FALSE`, jeśli nie ma więcej ramek stosu. W przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

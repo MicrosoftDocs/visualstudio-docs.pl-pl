@@ -1,5 +1,5 @@
 ---
-title: 'Błąd: Nie masz uprawnień do sprawdzania procesu&#39;tożsamości s | Dokumentacja firmy Microsoft'
+title: 'Błąd: nie masz uprawnień do sprawdzenia tożsamości procesu&#39;| Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 dev_langs:
@@ -12,55 +12,55 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 437693b289723c44986f61cc65d644742cd8e77c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cad229f80676c3d1f7a7d23ad7a29729c834929b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62849928"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72736218"
 ---
-# <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>Błąd: Nie masz uprawnień do sprawdzania procesu&#39;tożsamości s
-Nie masz uprawnień do sprawdzania tożsamości procesu. Może to być spowodowane konfiguracji systemu.
+# <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>Błąd: nie masz uprawnień do sprawdzania tożsamości procesu&#39;
+Nie masz uprawnień do sprawdzenia tożsamości procesu. Może to być spowodowane konfiguracją systemu.
 
- Debuger nie mógł sprawdzić tożsamość procesu, który jest niezbędne informacje dotyczące debugowania. Najbardziej prawdopodobną przyczyną jest usług terminalowych, które są wyłączone. Usługa terminalowa usług jest domyślnie włączone. Wykonaj następujące kroki, aby włączyć ją ponownie.
+ Debuger nie mógł sprawdzić tożsamości procesu, która jest niezbędna do debugowania. Najbardziej prawdopodobną przyczyną jest wyłączenie usług terminalowych. Usługi terminalowe są domyślnie włączone. Wykonaj następujące kroki, aby je ponownie włączyć.
 
 ### <a name="to-enable-terminal-services"></a>Aby włączyć usługi terminalowe
 
-1. Kliknij przycisk **Start** , a następnie wybierz **Panelu sterowania**.
+1. Kliknij przycisk **Start** , a następnie wybierz pozycję **Panel sterowania**.
 
-2. W Panelu sterowania wybierz **Przełącz na widok klasyczny**, jeśli to konieczne, a następnie kliknij dwukrotnie **narzędzia administracyjne**.
+2. W panelu sterowania wybierz opcję **Przełącz do widoku klasycznego**, w razie potrzeby, a następnie kliknij dwukrotnie ikonę **Narzędzia administracyjne**.
 
-3. W **narzędzia administracyjne** okna, kliknij dwukrotnie **Zarządzanie komputerem**.
+3. W oknie **Narzędzia administracyjne** kliknij dwukrotnie pozycję **Zarządzanie komputerem**.
 
-4. W oknie Zarządzanie komputerem rozwiń **usługi i aplikacje** węzła.
+4. W oknie Zarządzanie komputerem rozwiń węzeł **usługi i aplikacje** .
 
-5. W obszarze **usługi i aplikacje**, kliknij przycisk **usług**.
+5. W obszarze **usługi i aplikacje**kliknij pozycję **usługi**.
 
      W okienku po prawej stronie zostanie wyświetlona lista usług.
 
-6. W **usług** listy, kliknij prawym przyciskiem myszy **usług terminalowych** , a następnie wybierz **właściwości**.
+6. Na liście **usługi** kliknij prawym przyciskiem myszy pozycję **usługi terminalowe** , a następnie wybierz polecenie **Właściwości**.
 
-7. W **właściwości usług terminalowych** okna, przejdź do **ogólne** kartę i ustawić **uruchamiana** do **ręczne**.
+7. W oknie **właściwości usług terminalowych** przejdź do karty **Ogólne** i ustaw **Typ uruchamiania** na **ręczny**.
 
 8. Kliknij przycisk **OK**.
 
 9. Uruchom ponownie komputer.
 
-     Ta procedura nie włącza automatycznie pulpitu zdalnego. Jeśli chcesz włączyć Pulpit zdalny na komputerze, należy wykonać poniższą procedurę dodatkowe.
+     Ta procedura nie włącza automatycznie Pulpit zdalny. Jeśli chcesz włączyć Pulpit zdalny na komputerze, wykonaj poniższą procedurę.
 
 ### <a name="to-enable-remote-desktop"></a>Aby włączyć Pulpit zdalny
 
-1. Kliknij przycisk **Start** i kliknij prawym przyciskiem myszy **Mój komputer**.
+1. Kliknij przycisk **Start** , a następnie kliknij prawym przyciskiem myszy pozycję **mój komputer**.
 
-2. Wybierz **właściwości**.
+2. Wybierz **Właściwości**.
 
-     **Właściwości systemu** zostanie wyświetlone okno.
+     Zostanie wyświetlone okno **Właściwości systemu** .
 
-3. Kliknij przycisk **zdalnego**.
+3. Kliknij pozycję **zdalne**.
 
-4. W obszarze **pulpitu zdalnego**, wybierz opcję **umożliwiają użytkownikom zdalne łączenie się na tym komputerze**.
+4. W obszarze **pulpit zdalny**wybierz opcję **zezwól użytkownikom na zdalne nawiązywanie połączenia z tym komputerem**.
 
 5. Kliknij przycisk **OK**.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Błędy związane z debugowaniem zdalnym i rozwiązywanie problemów](../debugger/remote-debugging-errors-and-troubleshooting.md)

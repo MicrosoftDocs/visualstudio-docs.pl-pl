@@ -14,12 +14,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8a5ad6c57ed25d251ff7ce0e51093f5b542ed54
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a0e52f42e495c2bac5e80195d360096947210980
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72610501"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748694"
 ---
 # <a name="list-registers-command"></a>Lista rejestrów — Polecenie
 Wyświetla wartość wybranych rejestrów i pozwala modyfikować listę rejestrów do wyświetlenia.
@@ -33,7 +33,7 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 ```
 
 ## <a name="switches"></a>Przełączniki
-/Display [{`register`&#124; `registerGroup`}...]
+/Display [{`register`&#124;`registerGroup`}...]
 
 Wyświetla wartości określonego `register` lub `registerGroup`. Jeśli nie określono `register` lub `registerGroup`, zostanie wyświetlona domyślna lista rejestrów. Jeśli nie określono przełącznika, zachowanie jest takie samo. Na przykład:
 
@@ -47,11 +47,11 @@ jest równoważny
 
 Wyświetla wszystkie grupy rejestrów na liście.
 
-/Watch [{`register`&#124; `registerGroup`}...]
+/Watch [{`register`&#124;`registerGroup`}...]
 
 Dodaje do listy co najmniej jedną wartość `register` lub `registerGroup`.
 
-/Unwatch [{`register`&#124; `registerGroup`}...]
+/Unwatch [{`register`&#124;`registerGroup`}...]
 
 Usuwa co najmniej jedną `register` lub `registerGroup` wartości z listy.
 
@@ -65,7 +65,7 @@ Ten przykład używa `r` aliasu `Debug.ListRegisters`, aby wyświetlić wartośc
 r /Display Flags
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
 - [Podstawy debugowania: okno rejestrów](../../debugger/debugging-basics-registers-window.md)

@@ -7,12 +7,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5c95990eb875c52a66cd0efa5579c9d39eab5469
-ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
+ms.openlocfilehash: b0a909c25af3de22019327bb890da9e26bcce1c8
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70154907"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748591"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>Konfigurowanie projektu w języku C++ pod kątem funkcji IntelliSense
 
@@ -38,7 +38,7 @@ Jeśli uruchamiasz kompilacje poza środowiskiem IDE programu Visual Studio, a k
 
 ![Katalogi dołączania VC + +](media/vcpp-intellisense-include-paths.png)
 
-Aby wyświetlić bieżące wartości dla makr kompilacji, takich jak **VC_IncludePath**, zaznacz wiersz Uwzględnij katalogi i kliknij listę rozwijaną po prawej stronie. Następnie wybierz  **\<pozycję Edytuj >** i kliknij przycisk **makra** .
+Aby wyświetlić bieżące wartości dla makr kompilacji, takich jak **VC_IncludePath**, zaznacz wiersz Uwzględnij katalogi i kliknij listę rozwijaną po prawej stronie. Następnie wybierz **\<edytuj >** i kliknij przycisk **makra** .
 
 ### <a name="makefile-projects"></a>Projekty pliku reguł dla programu make
 
@@ -120,6 +120,6 @@ W przypadku ustawienia zmiennej środowiskowej środowiskową TRACEDESIGNTIME na
 
 Aby dowiedzieć się więcej na temat zmiennej środowiskowej środowiskową TRACEDESIGNTIME, zobacz [Roslyn](https://github.com/dotnet/roslyn/wiki/Diagnosing-Project-System-Build-Errors) i [Common Project System](https://github.com/dotnet/project-system/blob/master/docs/design-time-builds.md). Informacje zawarte w tych artykułach są odpowiednie C++ dla projektów.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Visual C++ IntelliSense](visual-cpp-intellisense.md)

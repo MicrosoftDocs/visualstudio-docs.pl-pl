@@ -1,5 +1,5 @@
 ---
-title: Idiaenumsymbols::get__newenum — | Dokumentacja firmy Microsoft
+title: 'IDiaEnumSymbols:: get__NewEnum | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32525e2cf275b5918d5575caa1eec2ef56b46f46
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dccfb37d2abe38a9fd1c805f03acd7172ca01af6
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830452"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743961"
 ---
-# <a name="idiaenumsymbolsgetnewenum"></a>IDiaEnumSymbols::get__NewEnum
-Pobiera <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> wersję tego modułu wyliczającego.
+# <a name="idiaenumsymbolsget__newenum"></a>IDiaEnumSymbols::get__NewEnum
+Pobiera wersję <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> tego modułu wyliczającego.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,10 +33,10 @@ HRESULT get__NewEnum ( 
 #### <a name="parameters"></a>Parametry
  pRetVal
 
-[out] Zwraca `IUnknown` interfejs, który reprezentuje <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> wersję tego modułu wyliczającego.
+określoną Zwraca interfejs `IUnknown`, który reprezentuje <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> wersję tego modułu wyliczającego.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

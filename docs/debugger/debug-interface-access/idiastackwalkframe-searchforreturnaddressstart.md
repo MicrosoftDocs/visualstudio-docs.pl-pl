@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalkFrame::searchForReturnAddressStart | Microsoft Docs
+title: 'IDiaStackWalkFrame:: Searchforreturnaddressstart — | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf7de77016f5ccc15f2cea8bf3172321dd824096
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7ad1c42a39b9c35cc1436488e19481f2b286b6f5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838057"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741445"
 ---
 # <a name="idiastackwalkframesearchforreturnaddressstart"></a>IDiaStackWalkFrame::searchForReturnAddressStart
-Wyszukuje ramki określonego stosu, dla adres zwrotny po lub w pobliżu podanym adresem.
+Przeszukuje określoną ramkę stosu dla adresu zwrotnego pod określonym adresem lub w jego prawie.
 
 ## <a name="syntax"></a>Składnia
 
@@ -35,19 +35,19 @@ HRESULT searchForReturnAddressStart ( 
 #### <a name="parameters"></a>Parametry
  `frame`
 
-[in] [Idiaframedata —](../../debugger/debug-interface-access/idiaframedata.md) obiekt, który reprezentuje bieżącą ramkę stosu.
+podczas Obiekt [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) , który reprezentuje bieżącą ramkę stosu.
 
  `startAddress`
 
-[in] Adres pamięci wirtualnej, z którego należy rozpocząć wyszukiwanie.
+podczas Adres pamięci wirtualnej, z której należy rozpocząć wyszukiwanie.
 
  `returnAddress`
 
-[out] Zwraca funkcję najbliższej zwrotny adres, który `startAddress`.
+określoną Zwraca najbliższy adres zwrotny funkcji do `startAddress`.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

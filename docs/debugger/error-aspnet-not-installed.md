@@ -1,5 +1,5 @@
 ---
-title: 'Błąd: ASP.NET nie jest zainstalowany | Dokumentacja firmy Microsoft'
+title: 'Błąd: nie zainstalowano ASP.NET | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -19,28 +19,28 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 98db3475c7d83427eb516f696731a738e34bd7a1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 7d754cc2bb7931cdcbdb42abeddd554390ba320c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63399308"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737917"
 ---
 # <a name="error-aspnet-not-installed"></a>Błąd: ASP.NET nie jest zainstalowany
-Ten błąd występuje, gdy [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] nie jest poprawnie zainstalowany na komputerze, który chcesz debugować. Może to oznaczać, że [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] nigdy nie został zainstalowany lub [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] została zainstalowana jako pierwsza i IIS został zainstalowany później.
+Ten błąd występuje, gdy [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] nie jest prawidłowo zainstalowany na komputerze, który próbujesz debugować. Może to oznaczać, że nie zainstalowano jeszcze [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] lub [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] został on zainstalowany w pierwszej kolejności, a usługi IIS zostały zainstalowane później.
 
-### <a name="to-reinstall-aspnet"></a>Ponowna instalacja programu ASP.NET
+### <a name="to-reinstall-aspnet"></a>Aby ponownie zainstalować ASP.NET
 
-1. Z poziomu okna wiersza polecenia Uruchom następujące polecenie:
+1. W oknie wiersza polecenia Uruchom następujące polecenie:
 
    ```cmd
    \WINDOWS\Microsoft.NET\Framework\version\aspnet_regiis -i
    ```
 
-    gdzie *wersji* reprezentuje numer wersji .NET Framework zainstalowanej na komputerze, na przykład v1.0.370. Można określić framework w wersji, przeszukując `\WINDOWS\Microsoft.NET\Framework` katalogu.
+    gdzie *wersja* reprezentuje numer wersji .NET Framework zainstalowanej na komputerze, na przykład v 1.0.370. Możesz określić wersję platformy, przeglądając katalog `\WINDOWS\Microsoft.NET\Framework`.
 
    > [!NOTE]
-   > Windows Server 2003, można zainstalować [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] przy użyciu **apletu Dodaj lub usuń programy** w Panelu sterowania.
+   > W systemie Windows Server 2003 można zainstalować [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] za pomocą apletu **Dodaj lub usuń programy** w panelu sterowania.
 
-## <a name="see-also"></a>Zobacz też
-- [Debugowanie aplikacji internetowych: Błędy i rozwiązywanie problemów](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+## <a name="see-also"></a>Zobacz także
+- [Debugowanie aplikacji internetowych: błędy i rozwiązywanie problemów](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

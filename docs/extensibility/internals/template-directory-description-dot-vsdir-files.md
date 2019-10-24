@@ -1,5 +1,5 @@
 ---
-title: Opis katalogu szablonu (. Pliki Vsdir) | Dokumentacja firmy Microsoft
+title: Opis katalogu szablonów (. VSDIR) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,56 +12,56 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad06428905f924e0e339882057ee4e657da47e8a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fb20a1fbc8d5edd9783521fa933dbddc74ac2a22
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331115"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72722815"
 ---
 # <a name="template-directory-description-vsdir-files"></a>Opis katalogu szablonu (pliki Vsdir)
-Plik opis katalogu szablonu (vsdir) to plik tekstowy, który umożliwia zintegrowanego środowiska programistycznego (IDE), aby wyświetlić folderów, plików .vsz kreatora i plików szablonów, które są skojarzone z projektem w oknach dialogowych. Zawartość obejmują jeden rekord w pliku lub folderu. Wszystkich plików .vsdir w lokalizacji, do którego istnieje odwołanie są scalane, mimo że .vsdir tylko jeden plik jest zazwyczaj podawana do opisania wiele folderów, pliki szablonów lub kreatorów.
+Plik opisu katalogu szablonu (. vsdir) to plik tekstowy, który umożliwia zintegrowane środowisko programistyczne (IDE) do wyświetlania folderów, plików kreatora. vsz i plików szablonów, które są skojarzone z projektem w oknach dialogowych. Zawartość zawiera jeden rekord na plik lub folder. Wszystkie pliki. vsdir w lokalizacji, do której się odwołuje, są scalane, chociaż tylko jeden plik. vsdir jest ogólnie dostarczany, aby opisać wiele folderów, kreatorów lub plików szablonów.
 
- Foldery (w podkatalogach), pliki, które są określone w pliku .vsdir i sam plik .vsdir znajdują się w tym samym katalogu. Gdy IDE uruchamia Kreator lub wyświetla folderu lub pliku w **nowy projekt** lub **Dodaj nowy element** okien dialogowych, IDE sprawdza, czy katalog, który zawiera pliki wykonane, aby ustalić, czy plik .vsdir jest obecne. Jeśli zostanie znaleziony plik .vsdir, IDE odczytuje go, aby ustalić, czy zawiera on wpis dla wykonany lub wyświetlanych folderu lub pliku. Jeśli wpis zostanie znaleziony, IDE używa tych informacji w wykonanie kreatora lub wyświetlanie zawartości.
+ Foldery (podkatalogi), pliki, do których odwołuje się plik. vsdir, i sam plik. vsdir znajdują się w tym samym katalogu. Gdy środowisko IDE uruchamia kreatora lub wyświetla folder lub plik w oknie dialogowym **Nowy projekt** lub **Dodaj nowy element** , IDE sprawdza katalog zawierający wykonane pliki, aby określić, czy plik. vsdir jest obecny. Jeśli zostanie znaleziony plik. vsdir, środowisko IDE odczytuje je w celu określenia, czy zawiera wpis dla wykonanego lub wyświetlanego folderu lub pliku. W przypadku znalezienia wpisu środowisko IDE używa informacji w trakcie wykonywania kreatora lub wyświetlania zawartości.
 
- Poniższy przykładowy kod pochodzi z pliku SourceFiles.vsdir w \<EnvSDK > \BscPrj\BscPrj\BscPrjProjectItems\Source_Files klucz rejestru:
+ Poniższy przykład kodu pochodzi z pliku SourceFiles. vsdir w kluczu rejestru \<EnvSDK > \BscPrj\BscPrj\BscPrjProjectItems\Source_Files:
 
 ```
 HeaderFile.h|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#125|130|#126|0|0|0|#127
 SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
 ```
 
- W takim przypadku dwa rekordy są w jednym pliku. Nowy wiersz (znaku powrotu karetki) oddziela każdego rekordu. Każdy wiersz reprezentuje inny typ pliku. Potok (&#124;) rozdziela pola w każdym rekordzie. Jeden katalog może zawierać wiele plików .vsdir, które mają różne nazwy plików lub może mieć jeden plik .vsdir, dla każdego typu pliku.
+ W takim przypadku dwa rekordy znajdują się w jednym pliku. Nowy wiersz (znak powrotu karetki) oddziela każdy rekord. Każdy wiersz reprezentuje inny typ pliku. Znak potoku&#124;() oddziela pola w każdym rekordzie. Pojedynczy katalog może zawierać wiele plików. vsdir o różnych nazwach plików lub jeden plik. vsdir dla każdego typu pliku.
 
 ## <a name="fields"></a>Pola
- Poniższa lista zawiera pola określone dla każdego rekordu.
+ Poniższa tabela zawiera listę pól określonych dla każdego rekordu.
 
 | Pole | Opis |
 | - | - |
-| Nazwa ścieżki względnej (RelPathName) | Nazwa pliku folderu, szablonu lub .vsz, takie jak HeaderFile.h lub MyWizard.vsz. To pole może być również nazwa używana do reprezentowania folderem. |
-| {clsidPackage} | Identyfikator GUID pakietu VSPackage, który umożliwia dostęp do zlokalizowanych ciągów, takich jak LocalizedName, opis, IconResourceId i SuggestedBaseName, w ramach pakietu VSPackage satelitarnej dołączana dynamicznie biblioteka (DLL) zasobów. IconResourceId ma zastosowanie, jeśli nie zostanie dostarczona ścieżka dll. **Uwaga:**  To pole jest opcjonalne, chyba że co najmniej jeden poprzednie pola Identyfikator zasobu. To pole jest zwykle puste w przypadku plików .vsdir, które odpowiadają za pomocą kreatorów innych firm, które nie jest lokalizowany ich tekst. |
-| LocalizedName | Zlokalizowana nazwa pliku szablonu lub kreatora. To pole może być ciąg lub identyfikator zasobu formularza "#ResID". Ta nazwa będzie wyświetlana w **Dodaj nowy element** okno dialogowe. **Uwaga:**  Jeśli LocalizedName jest identyfikatorem zasobu {clsidPackage} jest wymagana. |
-| SortPriority | Liczba całkowita reprezentująca względny priorytet tej pliku szablonu lub kreatora. Na przykład jeśli ten element ma wartość 1, ten element jest wyświetlany obok innych elementów o wartości 1 i wcześniejsze wszystkie elementy z wartością sortowania 2 lub większy.<br /><br /> Priorytet sortowania jest określana względem elementów w tym samym katalogu. Może istnieć więcej niż jeden plik .vsdir w tym samym katalogu. W takim przypadku elementy ze wszystkich <em>.</em> pliki vsdir, w tym katalogu są scalane. Elementy z tym samym priorytecie są wyświetlane w porządku leksykograficznym bez uwzględniania wielkości liter nazwę wyświetlaną. `_wcsicmp` Funkcja jest używana w celu uporządkowania elementów.<br /><br /> Elementy, które nie zostały opisane w plikach .vsdir obejmują większy niż najwyższy priorytet, na liście plików .vsdir priorytety. Wynik jest, że te elementy są na końcu wyświetlonej listy, niezależnie od ich nazwy. |
-| Opis | Zlokalizowany opis pliku szablonu lub kreatora. To pole może być ciąg lub identyfikator zasobu formularza "#ResID". Ten ciąg jest wyświetlana w **nowy projekt** lub **Dodaj nowy element** okno dialogowe, gdy element jest zaznaczony. |
-| DLLPath lub {clsidPackage} | Używane do ładowania ikony dla pliku szablonu lub kreatora. Ikona jest ładowana jako zasób z pliku .dll lub .exe przy użyciu IconResourceId. Ten plik .dll i .exe można zidentyfikować za pomocą pełną ścieżkę lub przy użyciu identyfikatora GUID pakietu VSPackage. Implementacja DLL pakietu VSPackage jest używana do ładowania ikona (nie satelitarną bibliotekę DLL). |
-| IconResourceId | Identyfikator zasobu w pliku DLL lub pakietu VSPackage implementacji biblioteki DLL, który określa ikonę do wyświetlenia. |
-| Flagi (<xref:Microsoft.VisualStudio.Shell.Interop.__VSDIRFLAGS>) | Pozwala włączyć lub wyłączyć **nazwa** i **lokalizacji** pola na **Dodaj nowy element** okno dialogowe. Wartość **flagi** pola jest wartość dziesiętna kombinacja flag bitowych wymagane.<br /><br /> Gdy użytkownik wybierze element na **New** kartę, projektu określa, czy pola nazwy i lokalizacji są wyświetlane podczas **Dodaj nowy element** najpierw zostanie wyświetlone okno dialogowe. Element, za pomocą plików .vsdir, można kontrolować tylko czy pola są włączone i wyłączone, gdy element jest zaznaczony. |
-| SuggestedBaseName | Reprezentuje nazwę domyślnego pliku, kreatora lub szablonu. To pole jest ciągiem lub identyfikator zasobu formularza "#ResID". IDE używa tej wartości, aby podać nazwę domyślnej dla elementu. Ta wartość podstawowa jest dołączany wraz z wartością całkowitą z zakresu unikatowość nazwy, takie jak MyFile21.asp.<br /><br /> Na poprzedniej liście opis, ścieżka dll, IconResourceId, flag i SuggestedBaseNumber dotyczą tylko plików szablonów i kreatora. Te pola nie są stosowane do folderów. Ten fakt zilustrowano w kodzie w pliku BscPrjProjectItems w \<EnvSDK > \BscPrj\BscPrj\BscPrjProjectItems klucza rejestru. Ten plik zawiera trzy rekordy, (po jednym dla każdego folderu) przy użyciu cztery pola dla każdego rekordu: RelPathName, {clsidPackage} LocalizedName i SortPriority.<br /><br /> `General&#124;{E59935A1-6156-11d1-87A6-00A0C91E2A46}&#124;#110&#124;100`<br /><br /> `Source_Files&#124;{E59935A1-6156-11d1-87A6-00A0C91E2A46}&#124;#111&#124;110`<br /><br /> `Env&#124;{E59935A1-6156-11d1-87A6-00A0C91E2A46}&#124;#112&#124;120` |
+| Nazwa ścieżki względnej (RelPathName) | Nazwa folderu, szablonu lub pliku VSZ, na przykład HeaderFile. h lub Kreator. vsz. To pole może również być nazwą używaną do reprezentowania folderu. |
+| {clsidPackage} | Identyfikator GUID pakietu VSPackage, który umożliwia dostęp do zlokalizowanych ciągów, takich jak Zlokalizowanename, Description, IconResourceId i SuggestedBaseName, w zasobach biblioteki DLL () satelitarnych w pakietu VSPackage. IconResourceId stosuje się, jeśli nie podano ścieżka dll. **Uwaga:**  To pole jest opcjonalne, chyba że co najmniej jedno z poprzednich pól jest identyfikatorem zasobu. To pole jest zwykle puste dla plików. vsdir, które są zgodne z kreatorami innych firm, które nie lokalizują tekstu. |
+| Zlokalizowana | Zlokalizowana nazwa pliku lub Kreatora szablonu. To pole może być ciągiem lub identyfikatorem zasobu w postaci "#ResID". Ta nazwa zostanie wyświetlona w oknie dialogowym **Dodaj nowy element** . **Uwaga:**  Jeśli parametr Lokalizowaćname jest identyfikatorem zasobu, wymagany jest element {clsidPackage}. |
+| SortPriority | Liczba całkowita reprezentująca względny priorytet tego pliku lub Kreatora szablonu. Na przykład, jeśli ten element ma wartość 1, ten element będzie wyświetlany obok innych elementów o wartości 1 i przed wszystkie elementy z wartością sortowania równą 2 lub większą.<br /><br /> Priorytet sortowania jest względny dla elementów w tym samym katalogu. Może istnieć więcej niż jeden plik. vsdir w tym samym katalogu. W takim przypadku elementy ze wszystkich <em>.</em> Pliki VSDir w tym katalogu są scalane. Elementy o takim samym priorytecie są wymienione w kolejności leksykograficznych bez uwzględniania wielkości liter dla wyświetlanej nazwy. Funkcja `_wcsicmp` służy do porządkowania elementów.<br /><br /> Elementy nieopisane w plikach. vsdir zawierają numer priorytetu większy niż najwyższy numer priorytetu wymieniony w plikach. vsdir. Wynika to z tego, że te elementy znajdują się na końcu wyświetlonej listy, niezależnie od ich nazwy. |
+| Opis | Zlokalizowany Opis pliku lub Kreatora szablonu. To pole może być ciągiem lub identyfikatorem zasobu w postaci "#ResID". Ten ciąg jest wyświetlany w oknie dialogowym **Nowy projekt** lub **Dodaj nowy element** , gdy element jest zaznaczony. |
+| Ścieżka dll lub {clsidPackage} | Służy do ładowania ikony pliku lub Kreatora szablonu. Ikona jest ładowana jako zasób z pliku DLL lub exe przy użyciu IconResourceId. Plik. dll lub. exe można zidentyfikować za pomocą pełnej ścieżki lub za pomocą identyfikatora GUID pakietu VSPackage. Biblioteka DLL implementacji pakietu VSPackage jest używana do załadowania ikony (a nie satelitarnej biblioteki DLL). |
+| IconResourceId | Identyfikator zasobu w bibliotece DLL lub pakietu VSPackage implementacji, który określa ikonę, która ma zostać wyświetlona. |
+| Flagi (<xref:Microsoft.VisualStudio.Shell.Interop.__VSDIRFLAGS>) | Służy do wyłączania lub włączania pól **Nazwa** i **Lokalizacja** w oknie dialogowym **Dodaj nowy element** . Wartość pola **flags** jest odpowiednikiem dziesiętnym kombinacji wymaganych flag bitowych.<br /><br /> Gdy użytkownik wybierze element na **nowej** karcie, projekt określa, czy pole Nazwa i pole Lokalizacja są wyświetlane, gdy zostanie wyświetlone okno dialogowe **Dodaj nowy element** . Element, za pomocą pliku. vsdir, może kontrolować tylko to, czy pola są włączone i wyłączone, gdy element jest zaznaczony. |
+| SuggestedBaseName | Reprezentuje domyślną nazwę pliku, kreatora lub szablonu. To pole jest ciągiem lub identyfikatorem zasobu w postaci "#ResID". IDE używa tej wartości do podania nazwy domyślnej dla elementu. Ta wartość podstawowa jest dołączana do wartości całkowitej, aby nazwa była unikatowa, na przykład MyFile21. ASP.<br /><br /> W poprzednich listach, Description, ścieżka dll, IconResourceId, Flags i SuggestedBaseNumber dotyczą tylko plików szablonów i kreatora. Te pola nie dotyczą folderów. Ten fakt jest przedstawiony w kodzie w pliku BscPrjProjectItems w kluczu rejestru \<EnvSDK > \BscPrj\BscPrj\BscPrjProjectItems. Ten plik zawiera trzy rekordy (jeden dla każdego folderu) z czterema polami dla każdego rekordu: RelPathName, {clsidPackage}, Lokalizowaćname i SortPriority.<br /><br /> `General&#124;{E59935A1-6156-11d1-87A6-00A0C91E2A46}&#124;#110&#124;100`<br /><br /> `Source_Files&#124;{E59935A1-6156-11d1-87A6-00A0C91E2A46}&#124;#111&#124;110`<br /><br /> `Env&#124;{E59935A1-6156-11d1-87A6-00A0C91E2A46}&#124;#112&#124;120` |
 
- Podczas tworzenia pliku kreatora, należy również rozważyć następujące kwestie.
+ Podczas tworzenia pliku kreatora należy również wziąć pod uwagę następujące problemy.
 
-- Wszystkie pole Niewymagane, dla których nie ma żadnych istotnych danych powinny zawierać wartość 0 (zero) jako symbolu zastępczego.
+- Każde niewymagane pole, dla którego nie ma znaczących danych, powinno zawierać 0 (zero) jako symbol zastępczy.
 
-- Jeśli nie podano żadnej zlokalizowanej nazwy, nazwa ścieżka względna jest używana w pliku kreatora.
+- Jeśli nie podano zlokalizowanej nazwy, nazwa ścieżki względnej jest używana w pliku Kreatora.
 
-- Ścieżka dll zastępuje clsidPackage dla lokalizacji ikony.
+- Ścieżka dll przesłania clsidPackage dla lokalizacji ikony.
 
-- Jeśli nie zdefiniowano żadnej ikony, IDE zastępuje domyślną ikonę pliku z tego rozszerzenia.
+- Jeśli nie zdefiniowano żadnej ikony, IDE zastępuje domyślną ikonę pliku, który ma to rozszerzenie.
 
-- Jeśli nie podano żadnych sugerowane nazwy podstawowej, "Projekt" jest używana.
+- Jeśli nie zostanie podana Sugerowana nazwa podstawowa, jest używany element "Project".
 
-- Jeśli usuniesz plików .vsz, foldery lub pliki szablonów, należy także usunąć ich skojarzonych rekordów z pliku .vsdir.
+- W przypadku usunięcia plików. vsz, folderów lub plików szablonów, należy również usunąć skojarzone z nimi rekordy z pliku. vsdir.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Kreatory](../../extensibility/internals/wizards.md)
 - [Kreator (plik Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)

@@ -13,12 +13,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e82e7b9629e956a69e3ee69972c6e244ce10153
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 88d70df94b8b15037b9c4ce6f7830faa50f2d6c7
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661598"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748729"
 ---
 # <a name="go-to-line-dialog-box"></a>Idź do linii — Okno dialogowe
 
@@ -30,7 +30,7 @@ Okno dialogowe **Przejdź do wiersza** umożliwia przejście do określonego wie
 
 W polu **numer wiersza (1-\<n >)** wprowadź numer wiersza w aktywnym dokumencie, do którego chcesz przenieść. Wprowadzona liczba musi należeć do zakresu od 1 do ostatniego numeru wiersza w bieżącym dokumencie.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Znajdowanie kodu za pomocą poleceń Przejdź do](../../ide/go-to.md)
 - [Ustawianie zakładek w kodzie](../../ide/setting-bookmarks-in-code.md)

@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_isSdl | Microsoft Docs
+title: 'IDiaSymbol:: get_isSdl | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6904fc673462a79578549bcf22c2973a5c10c95c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 01503bca82046ace7f27cf4f80c163944009e89b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62836438"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740073"
 ---
-# <a name="idiasymbolgetissdl"></a>IDiaSymbol::get_isSdl
-Określa, czy moduł został skompilowany z opcją/SDL.
+# <a name="idiasymbolget_issdl"></a>IDiaSymbol::get_isSdl
+Określa, czy moduł jest kompilowany przy użyciu opcji/SDL.
 
 ## <a name="syntax"></a>Składnia
 
@@ -30,10 +30,10 @@ HRESULT get_isSdl(
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Wskaźnik do `BOOL` określająca, czy moduł został skompilowany z opcją/SDL.
+określoną Wskaźnik do `BOOL`, który określa, czy moduł jest kompilowany przy użyciu opcji/SDL.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

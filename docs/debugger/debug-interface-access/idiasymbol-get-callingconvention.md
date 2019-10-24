@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_callingconvention — | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_callingConvention | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9865d917e24abf58bdcf63e8abb21370f223aad2
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: b1b0581e7a49ac8c8681077a7f40133498a48789
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64806996"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740875"
 ---
-# <a name="idiasymbolgetcallingconvention"></a>IDiaSymbol::get_callingConvention
-Zwraca wskaźnik metod konwencji wywoływania.
+# <a name="idiasymbolget_callingconvention"></a>IDiaSymbol::get_callingConvention
+Zwraca wskaźnik metody wywoływania Konwencji.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,21 +33,21 @@ HRESULT get_callingConvention ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca wartość z zakresu od [cv_call_e — wyliczenie](../../debugger/debug-interface-access/cv-call-e.md) wyliczenie, które wskazuje metodę w konwencji wywoływania.
+określoną Zwraca wartość z wyliczenia [CV_call_e](../../debugger/debug-interface-access/cv-call-e.md) , która określa konwencję wywoływania metody.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
-> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Wartość zwracana `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
 ## <a name="requirements"></a>Wymagania
 
 |Wymaganie|Opis|
 |-----------------|-----------------|
-|Nagłówek:|dia2.h|
-|Wersja:|V7.0 DIA SDK|
+|Nagłówki|dia2. h|
+|Wersja:|DIA SDK v 7.0|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [CV_call_e, wyliczenie](../../debugger/debug-interface-access/cv-call-e.md)

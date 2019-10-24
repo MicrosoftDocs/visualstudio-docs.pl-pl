@@ -1,5 +1,5 @@
 ---
-title: Debugowanie usług WCF | Dokumentacja firmy Microsoft
+title: Debugowanie usług WCF | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,21 +16,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02ca94704d09288d1e29f6a530ae818053a9d368
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 92349fe14aef8204c67b88ad0f6a4b34346d2347
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62851754"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738075"
 ---
 # <a name="debugging-wcf-services"></a>Debugowanie usług WCF
 ## <a name="in-this-section"></a>W tej sekcji
- [Ograniczenia debugowania WCF](../debugger/limitations-on-wcf-debugging.md) opisano ograniczenia dotyczące debugowania usług WCF.
+ [Ograniczenia dotyczące debugowania WCF](../debugger/limitations-on-wcf-debugging.md) Opisuje ograniczenia dotyczące debugowania WCF.
 
- [Instrukcje: Przechodzenie do usług WCF](../debugger/how-to-step-into-wcf-services.md) objaśnia obsługę debugera Wkraczanie do usługi WCF.
+ [Instrukcje: przechodzenie do usług WCF](../debugger/how-to-step-into-wcf-services.md) Zawiera opis obsługi debugera w celu przechodzenia do usługi WCF.
 
- [Instrukcje: Debugowanie usługi WCF własne](../debugger/how-to-debug-a-self-hosted-wcf-service.md) w tym artykule opisano sposób debugowania usługi WCF, w którym działa program IIS poza lub [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] serwera projektowego.
+ [Instrukcje: debugowanie Samohostowanej usługi WCF](../debugger/how-to-debug-a-self-hosted-wcf-service.md) Opisuje sposób debugowania usługi WCF działającej poza programem IIS lub [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] serwerze deweloperskim.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Zabezpieczenia debugera](../debugger/debugger-security.md)
 - [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)

@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_numberOfColumns | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_numberOfColumns | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49482c99f3d735618cb9caab02a04fea1e81ebc9
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: ca99493f136c1a932f45fe719c52a9d85a1a852e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62841878"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739686"
 ---
-# <a name="idiasymbolgetnumberofcolumns"></a>IDiaSymbol::get_numberOfColumns
+# <a name="idiasymbolget_numberofcolumns"></a>IDiaSymbol::get_numberOfColumns
 Pobiera liczbę kolumn w macierzy.
 
 ## <a name="syntax"></a>Składnia
@@ -30,10 +30,10 @@ HRESULT get_numberOfColumns(
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Wskaźnik do `DWORD` przechowuje liczbę kolumn w macierzy.
+określoną Wskaźnik do `DWORD`, który przechowuje liczbę kolumn w macierzy.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

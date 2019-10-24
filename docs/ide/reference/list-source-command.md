@@ -14,12 +14,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3123479d819662905020c27060e1234bd01c9077
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6c211773f20ab4643b62c8c71fc6ae6581a91987
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72610513"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747904"
 ---
 # <a name="list-source-command"></a>Lista źródeł — Polecenie
 Wyświetla określone wiersze kodu źródłowego.
@@ -59,7 +59,7 @@ W tym przykładzie przedstawiono kod źródłowy z wiersza 4 pliku Form1. vb, z 
 Debug.ListSource /File:"C:\Visual Studio Projects\Form1.vb" /Line:4 /ShowLineNumbers:yes
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
 - [Okno Polecenie](../../ide/reference/command-window.md)

@@ -1,5 +1,5 @@
 ---
-title: Przyciski okna właściwości | Dokumentacja firmy Microsoft
+title: Przyciski okna właściwości | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,31 +10,31 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2040dd9294b19db7fc2806222b13e12e6abdf4ad
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3f2a41917a58a6fc5780b62c2c9e3db8aa52d407
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347889"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72725268"
 ---
 # <a name="properties-window-buttons"></a>Przyciski okna właściwości
-W zależności od języka programowania i typ produktu, domyślnie na pasku narzędzi są wyświetlane określone przyciski **właściwości** okna. We wszystkich przypadkach **kategorii**, **Alphabetized**, **właściwości**, i **stron właściwości** przyciski są wyświetlane. W środowisku Visual C# i Visual Basic **zdarzenia** przycisk jest również wyświetlany. W niektórych projektów języka Visual C++ **VC ++ wiadomości** i **zastępuje VC** przyciski są wyświetlane. Mogą być wyświetlane dodatkowe przyciski dla innych typów projektów. Aby uzyskać więcej informacji na temat przycisków w **właściwości** okna, zobacz [okno właściwości](../../ide/reference/properties-window.md).
+W zależności od języka programowania i typu produktu niektóre przyciski są domyślnie wyświetlane na pasku narzędzi okna **Właściwości** . We wszystkich przypadkach są wyświetlane **przyciski z**przydzielonymi, **alfabetycznymi**, **właściwościami**i **stronami właściwości** . W wizualizacjach C# i Visual Basic jest również wyświetlany przycisk **zdarzenia** . W niektórych projektach C++ wizualizacji są wyświetlane **komunikaty VC + +** i przyciski **zastąpień VC** . Dodatkowe przyciski mogą być wyświetlane dla innych typów projektów. Aby uzyskać więcej informacji o przyciskach w oknie **Właściwości** , zobacz [okno właściwości](../../ide/reference/properties-window.md).
 
-## <a name="implementation-of-properties-window-buttons"></a>Implementacja przyciski okna właściwości
- Po kliknięciu **kategorii** przycisk wywołań programu Visual Studio <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties> interfejsu na obiekt, który ma fokus, by Sortuj właściwości według kategorii. <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties> jest wdrażana w `IDispatch` obiektów, które są prezentowane **właściwości** okna.
+## <a name="implementation-of-properties-window-buttons"></a>Implementacja przycisków okna właściwości
+ Po kliknięciu przycisku z **kategoryzacją** program Visual Studio wywoła interfejs <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties> na obiekcie, który ma fokus, aby posortować jego właściwości według kategorii. <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties> jest zaimplementowana w obiekcie `IDispatch`, który jest prezentowany w oknie **Właściwości** .
 
- Istnieje 11 kategorii wstępnie zdefiniowanych właściwości, które mają wartości ujemnych. Można zdefiniować własne kategorie, ale zaleca się, że zostanie przypisana wartość dodatnią, aby odróżnić je od wstępnie zdefiniowanych kategorii.
+ Istnieją 11 wstępnie zdefiniowanych kategorii właściwości, które mają wartości ujemne. Można definiować niestandardowe kategorie, ale zalecamy przypisanie im wartości dodatnich, aby odróżnić je od wstępnie zdefiniowanych kategorii.
 
- <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties.MapPropertyToCategory%2A> Metoda zwraca wartość kategorii odpowiednie właściwości dla określonej właściwości. <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties.GetCategoryName%2A> Metoda zwraca ciąg zawierający nazwę kategorii. Wystarczy zapewniają obsługę wartości kategorię niestandardową, ponieważ wartości kategorii standardowe właściwości wie, Visual Studio.
+ Metoda <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties.MapPropertyToCategory%2A> zwraca odpowiednią wartość kategorii właściwości dla określonej właściwości. Metoda <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties.GetCategoryName%2A> zwraca ciąg, który zawiera nazwę kategorii. Musisz zapewnić obsługę niestandardowych wartości kategorii, ponieważ program Visual Studio wie standardowe wartości kategorii właściwości.
 
- Po kliknięciu **Alphabetized** przycisku właściwości są wyświetlane w porządku alfabetycznym według nazwy. Nazwy są pobierane przez `IDispatch` zgodnie z zlokalizowanych algorytmu sortowania.
+ Po kliknięciu przycisku z **alfabetem** właściwości są wyświetlane w kolejności alfabetycznej według nazwy. Nazwy są pobierane przez `IDispatch` zgodnie z zlokalizowanym algorytmem sortowania.
 
- Gdy **właściwości** okno jest otwarte, **właściwości** przycisk jest automatycznie wyświetlana zaznaczona. W innych częściach środowiska wyświetlany jest ten sam przycisk, a kliknięcie, aby pokazać **właściwości** okna.
+ Po otwarciu okna **Właściwości** przycisk **Właściwości** jest automatycznie pokazywany jako zaznaczony. W innych częściach środowiska zostanie wyświetlony ten sam przycisk, a następnie można kliknąć go, aby wyświetlić okno **Właściwości** .
 
- **Stron właściwości** przycisk jest niedostępny, jeśli `ISpecifyPropertyPages` nie został zaimplementowany dla wybranego obiektu. Strony właściwości wyświetlania właściwości zależne od konfiguracji, które są zwykle skojarzone z rozwiązaniami i projektami, ale mogą być również być skojarzone z elementami projektu (na przykład w programie Visual C++).
+ Przycisk **strony właściwości** jest niedostępny, jeśli `ISpecifyPropertyPages` nie jest zaimplementowany dla wybranego obiektu. Na stronach właściwości są wyświetlane właściwości zależne od konfiguracji, które są zwykle skojarzone z rozwiązaniami i projektami, ale można je także kojarzyć z elementami projektu (na przykład C++w wizualizacji).
 
 > [!NOTE]
-> Nie można dodać przyciski paska narzędzi na **właściwości** oknie za pomocą kodu niezarządzanego. Aby dodać przycisk paska narzędzi, należy utworzyć obiektu zarządzanego, która pochodzi od klasy <xref:System.Windows.Forms.Design.PropertyTab>.
+> Nie można dodać przycisków paska narzędzi do okna **Właściwości** przy użyciu kodu niezarządzanego. Aby dodać przycisk paska narzędzi, należy utworzyć obiekt zarządzany, który pochodzi z <xref:System.Windows.Forms.Design.PropertyTab>.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Rozszerzanie właściwości](../../extensibility/internals/extending-properties.md)

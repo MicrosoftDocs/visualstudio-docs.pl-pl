@@ -1,5 +1,5 @@
 ---
-title: Kolorowanie składni w edytorach niestandardowych | Dokumentacja firmy Microsoft
+title: Kolorowanie składni w edytorach niestandardowych | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,51 +10,51 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ff717c8586e22d82a79344dd3c134c604f868d10
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f4302f463d93776d17be0251e6194375c15adc19
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316652"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72718765"
 ---
 # <a name="syntax-coloring-in-custom-editors"></a>Kolorowanie składni w edytorach niestandardowych
-Edytory wizualne zestawu SDK środowiska Studio, w tym podstawowy edytor używanie usług językowych, aby zidentyfikować konkretne elementy syntaktycznych i wyświetlać je za pomocą kolorów określonego w celu wyświetlenia danego dokumentu.
+Edytory SDK środowiska programu Visual Studio, w tym podstawowy edytor, wykorzystują usługi językowe do identyfikowania określonych elementów składniowych i wyświetlania ich z określonymi kolorami dla danego widoku dokumentu.
 
 ## <a name="colorization-requirements"></a>Wymagania dotyczące kolorowania
- Wszystkie edytory Implementowanie colorizer usługi języka musi:
+ Wszystkie edytory implementujące kolor koloru usługi językowej muszą:
 
-1. Użyj obiektu Implementowanie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> Zarządzanie tekst, który ma być pokolorowane i implementacji obiektu <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> zapewnienie dokumentu widoku tekstu.
+1. Użyj obiektu implementującego <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>, aby zarządzać tekstem w celu uzyskania koloru i obiektu implementującego <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> w celu udostępnienia widoku dokumentu dla tekstu.
 
-2. Uzyskaj interfejsu usługi danego języka, badając dostawcy usług pakietu VSPackage przy użyciu identyfikatora GUID identyfikujący usługi języków.
+2. Uzyskaj interfejs do określonej usługi językowej, badając dostawcę usług pakietu VSPackage przy użyciu identyfikującego go identyfikatora GUID usługi.
 
-3. Wywołaj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.SetLanguageServiceID%2A> metody obiektu implementującego <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>. Ta metoda kojarzy usługi języka o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> implementację, która pakietu VSPackage używa do zarządzania tekst, który ma być wyróżnione kolorem.
+3. Wywołaj metodę <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.SetLanguageServiceID%2A> obiektu implementującego <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>. Ta metoda kojarzy usługę języka z implementacją <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>, której pakietu VSPackage używa do zarządzania tekstem, który ma być kolorem.
 
-## <a name="core-editor-usage-of-a-language-services-colorizer"></a>Podstawowy edytor użytkowania Colorizer usługi językowej
- Gdy język usługi za pomocą colorizer uzyskuje się przez wystąpienie podstawowy edytor, analizowania i renderowanie tekstu przez colorizer usługi języka odbywa się automatycznie bez jakiejkolwiek dalszej interwencji ze strony użytkownika.
+## <a name="core-editor-usage-of-a-language-services-colorizer"></a>Użycie podstawowego edytora dla kolorowania usługi językowej
+ Gdy usługa językowa ze kolorem jest uzyskiwana przez wystąpienie podstawowego edytora, analizowanie i renderowanie tekstu przez kolorowanie przez program obsługi języka odbywa się automatycznie, bez konieczności dalszej interwencji z Twojej strony.
 
- IDE sposób niewidoczny dla użytkownika:
+ Środowisko IDE w sposób przezroczysty:
 
-- Wywołuje colorizer zgodnie z potrzebami, aby przeanalizować i analizowanie tekstu, podczas dodawania lub zmodyfikowany w implementacji <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>.
+- Wywołuje kolor w miarę potrzeby, aby analizować i analizować tekst w miarę ich dodawania lub modyfikowania w implementacji <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>.
 
-- Zapewnia, że wyświetlana dostarczonych przez widok dokumentu, dostarczone przez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> wdrożenia są aktualizowane i odświeżana przy użyciu informacji o wypychaniu colorizer.
+- Zapewnia, że wyświetlanie dostarczone przez widok dokumentu zapewniane przez implementację <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> jest aktualizowane i odświeżane przy użyciu informacji zwracanych przez kolor.
 
-## <a name="non-core-editor-usage-of-a-language-services-colorizer"></a>-Core Editor użytkowania Colorizer usługi językowej
- Edytor dodatkowe wystąpienia można również użyć usługi kolorowanie składni usługi języka, ale jawnie należy pobrać i zastosować colorizer usługi i repaint ich widoków dokumentów, samodzielnie.
+## <a name="non-core-editor-usage-of-a-language-services-colorizer"></a>Użycie nierdzeniowego edytora kolorowania usługi języka
+ Wystąpienia edytora nierdzeniowego mogą również używać usługi języka do tworzenia kolorowania składni, ale muszą jawnie pobierać i stosować kolorowanie, a także odświeżać własne widoki dokumentów.
 
- Aby to zrobić, należy edytora-core:
+ W tym celu niepodstawowy Edytor musi:
 
-1. Uzyskanie obiektu colorizer usługi języka (który implementuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> i <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer2>). Robi to przez wywołanie metody pakietu VSPackage <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> metoda w interfejsie usługi języka.
+1. Uzyskaj obiekt kolorystyki usługi językowej (który implementuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> i <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer2>). Pakietu VSPackage to przez wywołanie metody <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> w interfejsie usługi językowej.
 
-2. Wywołaj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> metodę, aby zażądać kolorowane określonego zakres tekstu.
+2. Wywołaj metodę <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A>, aby zażądać przebarwienia określonego zakresu tekstu.
 
-     <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> Metoda zwraca tablicę wartości, jeden dla każdej litery w tekście span są wyróżnione kolorem. Identyfikuje zakres tekstu jako określony typ elementu z możliwością kolorowania, takie jak komentarz, słowo kluczowe lub typu danych.
+     Metoda <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> zwraca tablicę wartości, jedną dla każdej litery w przedziale tekstu. Identyfikuje także zakres tekstu jako konkretny typ elementu, na przykład komentarz, słowo kluczowe lub typ danych.
 
-3. Użyj dane kolorowania zwrócony przez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> repaint i wyświetlić jego tekstu.
+3. Użyj informacji o kolorach zwracanych przez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A>, aby odświeżyć i wyświetlić jego tekst.
 
 > [!NOTE]
-> Oprócz używania usługi języka colorizer, pakietu VSPackage można użyć ogólnego przeznaczenia mechanizmu Kolorowanie tekstu Visual Studio SDK środowiska. Aby uzyskać więcej informacji na temat tego mechanizmu, zobacz [przy użyciu czcionki i kolory](../extensibility/using-fonts-and-colors.md).
+> Oprócz używania Kolorka usługi językowej pakietu VSPackage może zdecydować się na użycie mechanizmu kolorowania tekstu zestawu SDK środowiska programu Visual Studio ogólnego przeznaczenia. Aby uzyskać więcej informacji na temat tego mechanizmu, zobacz [using Fonts and Colors](../extensibility/using-fonts-and-colors.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Kolorowanie składni w starszej wersji usługi językowej](../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)
 - [Implementowanie kolorowania składni](../extensibility/internals/implementing-syntax-coloring.md)

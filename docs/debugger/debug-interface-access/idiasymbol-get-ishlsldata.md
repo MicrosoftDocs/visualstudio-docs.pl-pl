@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_isHLSLData | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_isHLSLData | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03b0bf45d4b8100f4ebfd1d6a61dc73547312fe6
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: f158264bbbb18e074788925534c6c9ba1a9d79a6
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62836706"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740243"
 ---
-# <a name="idiasymbolgetishlsldata"></a>IDiaSymbol::get_isHLSLData
-Określa, czy ten symbol reprezentuje dane wysokiej Level Shader Language (HLSL).
+# <a name="idiasymbolget_ishlsldata"></a>IDiaSymbol::get_isHLSLData
+Określa, czy ten symbol reprezentuje dane języka cieniowania wysokiego poziomu (HLSL).
 
 ## <a name="syntax"></a>Składnia
 
@@ -30,10 +30,10 @@ HRESULT get_isHLSLData(
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Wskaźnik do `BOOL` określająca, czy ten symbol reprezentuje dane HLSL.
+określoną Wskaźnik do `BOOL`, który określa, czy ten symbol reprezentuje dane HLSL.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

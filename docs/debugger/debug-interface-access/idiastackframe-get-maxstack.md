@@ -1,5 +1,5 @@
 ---
-title: IDiaStackFrame::get_maxStack | Microsoft Docs
+title: 'IDiaStackFrame:: get_maxStack | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32e0d8c37b4016412f6dca8772d22baf65799429
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b9640fa8f82c7bb87990c97ef7916e7323943ece
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832802"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741645"
 ---
-# <a name="idiastackframegetmaxstack"></a>IDiaStackFrame::get_maxStack
-Pobiera maksymalną liczbę bajtów wypychane na stos w ramce.
+# <a name="idiastackframeget_maxstack"></a>IDiaStackFrame::get_maxStack
+Pobiera maksymalną liczbę bajtów wypychanych na stosie w ramce.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,10 +33,10 @@ HRESULT get_maxStack ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca maksymalną liczbę bajtów wypychane na stos.
+określoną Zwraca maksymalną liczbę bajtów wypychanych na stosie.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`. Zwraca `S_FALSE`, jeśli właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

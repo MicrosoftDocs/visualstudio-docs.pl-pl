@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_targetoffset — | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_targetOffset | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a356eafb2afbd63613c0fe6be6b794822e5f91e
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 3e7cb1ccc2a3b0208bf34ef06a12324f38913c45
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64796541"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739218"
 ---
-# <a name="idiasymbolgettargetoffset"></a>IDiaSymbol::get_targetOffset
-Pobiera przesunięcia sekcji thunk docelowy.
+# <a name="idiasymbolget_targetoffset"></a>IDiaSymbol::get_targetOffset
+Pobiera sekcję przesunięcia elementu docelowego thunk.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,13 +33,13 @@ HRESULT get_targetOffset ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca przesunięcia część adresu docelowego thunk.
+określoną Zwraca część przesunięcia adresu docelowego thunk.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
-> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Wartość zwracana `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

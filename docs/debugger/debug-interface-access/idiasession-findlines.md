@@ -1,5 +1,5 @@
 ---
-title: Idiasession::findlines — | Dokumentacja firmy Microsoft
+title: 'IDiaSession:: findLines | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b127cbc5c9ddc5a2aa2d293d1371bab18d191fdb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d6082bfe8a3eee00d425441ff44a6eadd1c36e27
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839293"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742124"
 ---
 # <a name="idiasessionfindlines"></a>IDiaSession::findLines
-Pobiera numery wierszy w ramach określonego compiland — i identyfikatory plików źródłowych.
+Pobiera numery wierszy w ramach określonych identyfikatorów plików jednostka kompilacji i źródłowych.
 
 ## <a name="syntax"></a>Składnia
 
@@ -35,20 +35,20 @@ HRESULT findLines ( 
 #### <a name="parameters"></a>Parametry
  `compiland`
 
-[in] [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md) obiekt reprezentujący compiland —. Używaj tego interfejsu, ponieważ kontekst, w których należy szukać numery wierszy.
+podczas Obiekt [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) reprezentujący jednostka kompilacji. Użyj tego interfejsu jako kontekstu, w którym mają być wyszukiwane numery wierszy.
 
  `file`
 
-[in] [Idiasourcefile —](../../debugger/debug-interface-access/idiasourcefile.md) obiekt reprezentujący pliku źródłowego, w których należy szukać numerów wierszy.
+podczas Obiekt [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) reprezentujący plik źródłowy, w którym mają być wyszukiwane numery wierszy.
 
  `ppResult`
 
-[out] Zwraca [idiaenumlinenumbers —](../../debugger/debug-interface-access/idiaenumlinenumbers.md) pobrać obiekt, który zawiera listę numerów wierszy.
+określoną Zwraca obiekt [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) , który zawiera listę pobranych wierszy.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

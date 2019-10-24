@@ -1,5 +1,5 @@
 ---
-title: Makra raportowania | Dokumentacja firmy Microsoft
+title: Makra raportowania | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -22,20 +22,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c92424275a1dff69863b81fbf8567fbc4b84499
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c2129db98293cef678527fb331992c6c5960d8f9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62905558"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72731388"
 ---
 # <a name="macros-for-reporting"></a>Makra raportowania
-W przypadku debugowania, można użyć **_RPTn** i **_RPTFn** makra, zdefiniowane w CRTDBG. Godz., aby zastąpić użycie `printf` instrukcji. Nie trzeba ich w inclose **#ifdef**s, ponieważ ich automatycznie znikają w Twojej wersji podczas kompilacji **_DEBUG** nie jest zdefiniowany.
+Na potrzeby debugowania można użyć makr **_RPTn** i **_RPTFn** , zdefiniowanych w CRTDBG. H, aby zastąpić użycie instrukcji `printf`. Nie musisz zamykać ich w **#ifdef**s, ponieważ są one automatycznie znikane w kompilacji wydania, gdy **_DEBUG** nie jest zdefiniowany.
 
-|Macro|Opis|
+|Makro|Opis|
 |-----------|-----------------|
-|**_RPT0**, **_RPT1**, **_RPT2**, **_RPT3**, **_RPT4**|Generuje ciąg wiadomości i zero do czterech argumentów. Dla _RPT1 za pośrednictwem **_RPT4**, ciąg komunikatu o służy jako ciąg formatowania funkcji printf stylu dla argumentów.|
-|**_RPTF0**, **_RPTF1**, **_RPTF2**, **_RPTF4**|Taki sam jak **_RPTn**, ale te makra dane wyjściowe pliku nazwa i numer wiersza gdzie znajduje się makro.|
+|**_RPT0**, **_RPT1**, **_RPT2**, **_RPT3**, **_RPT4**|Wyprowadza ciąg komunikatu i zero do czterech argumentów. W przypadku _RPT1 przez **_RPT4**ciąg komunikatu służy jako ciąg formatowania w stylu printf dla argumentów.|
+|**_RPTF0**, **_RPTF1**, **_RPTF2**, **_RPTF4**|Analogicznie jak **_RPTn**, ale te makra również wyprowadzają nazwę pliku i numer wiersza, w którym znajduje się makro.|
 
  Rozważmy następujący przykład:
 
@@ -48,13 +48,13 @@ W przypadku debugowania, można użyć **_RPTn** i **_RPTFn** makra, zdefiniowan
 #endif
 ```
 
- Ten kod wyświetla wartości `someVar` i `otherVar` do **stdout**. Można użyć następujących wywołanie `_RPTF2` zgłosić te same wartości, a ponadto pliku nazwa i numer wiersza:
+ Ten kod wyprowadza wartości `someVar` i `otherVar` do **stdout**. Możesz użyć następującego wywołania, aby `_RPTF2` zgłosić te same wartości, a także nazwę pliku i numer wiersza:
 
 ```cpp
 if (someVar > MAX_SOMEVAR) _RPTF2(_CRT_WARN, "In NameOfThisFunc( ), someVar= %d, otherVar= %d\n", someVar, otherVar );
 ```
 
-Może się okazać, że określona aplikacja musi raportowanie, którego nie oferują makra dostarczony wraz z biblioteki wykonawczej C debugowania. W takich przypadkach można napisać makra, zaprojektowany specjalnie w celu dopasowania do własnych wymagań. W jednym z plików nagłówka, na przykład, możesz dołączyć kod, takie jak następujące polecenie, aby zdefiniować makro o nazwie **ALERT_IF2**:
+Może się okazać, że określona aplikacja wymaga debugowania, że makra dostarczone z biblioteką wykonawczą języka C nie zapewniają. W takich przypadkach można napisać makro zaprojektowane specjalnie w celu dopasowania do własnych wymagań. W jednym z plików nagłówkowych, na przykład, można dołączyć kod podobny do poniższego, aby zdefiniować makro o nazwie **ALERT_IF2**:
 
 ```cpp
 #ifndef _DEBUG                  /* For RELEASE builds */
@@ -70,14 +70,14 @@ Może się okazać, że określona aplikacja musi raportowanie, którego nie ofe
 #endif
 ```
 
- Jedno wywołanie **ALERT_IF2** zrobić wszystkie funkcje **printf** kodu:
+ Jedno wywołanie **ALERT_IF2** może wykonać wszystkie funkcje kodu **printf** :
 
 ```cpp
 ALERT_IF2(someVar > MAX_SOMEVAR, "OVERFLOW! In NameOfThisFunc( ),
 someVar=%d, otherVar=%d.\n", someVar, otherVar );
 ```
 
- Można łatwo zmienić niestandardowe — makro więcej lub mniej zgłaszania informacji dotyczących różnych miejsc docelowych. To podejście jest szczególnie przydatne w miarę ewolucji wymagań dotyczących debugowania.
+ Możesz łatwo zmienić niestandardowe makro, aby zgłosić więcej lub mniej informacji do różnych miejsc docelowych. Takie podejście jest szczególnie przydatne, gdy Twoje wymagania dotyczące debugowania są rozwijane.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Techniki debugowania CRT](../debugger/crt-debugging-techniques.md)

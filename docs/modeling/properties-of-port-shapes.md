@@ -11,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a5fbe5dc38eaf029f0061c90c1ca37b1d9210b8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 60498c57e80b474bae8d5c320183442bbc4fcfd4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658140"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747448"
 ---
 # <a name="properties-of-port-shapes"></a>Właściwości kształtów portu
 Za pomocą kształtów portów można reprezentować klasy domeny w wygenerowanym projektancie.
@@ -53,6 +53,6 @@ Za pomocą kształtów portów można reprezentować klasy domeny w wygenerowany
 |Stały tekst etykietki narzędzia|Tekst, który jest używany dla stałej etykietki narzędzia.|\<none >|
 |Słowo kluczowe pomocy|Słowo kluczowe, które jest używane do indeksowania pomocy F1 dla tego kształtu.|\<none >|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [narzędzia języka specyficznego dla domeny słownik](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

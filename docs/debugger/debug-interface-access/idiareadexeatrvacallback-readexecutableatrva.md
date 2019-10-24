@@ -1,5 +1,5 @@
 ---
-title: Idiareadexeatrvacallback::readexecutableatrva — | Dokumentacja firmy Microsoft
+title: 'IDiaReadExeAtRVACallback:: ReadExecutableAtRVA | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf423ddc91926fb04adac849783b7c26b4c4f720
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ca1b1ec2bea56ad167951ad8b60cf849bd22e315
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828479"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742785"
 ---
 # <a name="idiareadexeatrvacallbackreadexecutableatrva"></a>IDiaReadExeAtRVACallback::ReadExecutableAtRVA
-Odczytuje określoną liczbę bajtów, zaczynając od określonego względny adres wirtualny (RVA) z pliku wykonywalnego.
+Odczytuje określoną liczbę bajtów, zaczynając od określonego względnego adresu wirtualnego (RVA) z pliku wykonywalnego.
 
 ## <a name="syntax"></a>Składnia
 
@@ -36,23 +36,23 @@ HRESULT ReadExecutableAtRVA ( 
 #### <a name="parameters"></a>Parametry
  `relativeVirtualAddress`
 
-[in] RVA w pliku wykonywalnym ma rozpocząć się odczyt.
+podczas Adres RVA w pliku wykonywalnym, aby rozpocząć odczytywanie.
 
  `cbData`
 
-[in] Liczba bajtów do odczytania.
+podczas Liczba bajtów do odczytu.
 
  `pcbData`
 
-[out] Zwraca liczbę odczytanych bajtów.
+określoną Zwraca liczbę odczytanych bajtów.
 
  `data[]`
 
-[out w] Tablica, która jest wypełniane bajtów odczytanych z pliku.
+[in. out] Tablica, która jest uzupełniona o Bajty odczytane z pliku.
 
 ## <a name="remarks"></a>Uwagi
- Ta metoda jest wywoływana przez kod pomocy technicznej DIA załadować bajtów danych z pliku wykonywalnego przy użyciu względny adres wirtualny. Ta metoda jest wywoływana wspierających [idiadatasource::loaddataforexe —](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) metody.
+ Ta metoda jest wywoływana przez kod obsługi DIA do ładowania bajtów danych z pliku wykonywalnego przy użyciu względnego adresu wirtualnego. Ta metoda jest wywoływana w ramach obsługi metody [IDiaDataSource:: loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)
 - [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)

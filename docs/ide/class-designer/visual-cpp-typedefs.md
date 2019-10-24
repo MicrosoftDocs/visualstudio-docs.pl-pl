@@ -1,5 +1,5 @@
 ---
-title: Definicje typów Visual C++ w Projektancie klas
+title: C++Definicje typów w Projektant klas
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7bf886aedc27b6e702637b84bbe919971baec9e3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 94dc4a6687a2aaede7fc901884c5d3acc6fbf56f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647584"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748009"
 ---
-# <a name="visual-c-typedefs-in-class-designer"></a>Visual C++ Typedefs w Projektant klas
+# <a name="c-typedefs-in-class-designer"></a>C++definicje typów w Projektant klas
 
 [Typedef](/cpp/cpp/aliases-and-typedefs-cpp#typedefs) — instrukcje Utwórz co najmniej jedną warstwę pośrednika między nazwą i jej typem podstawowym. **Projektant klas** obsługuje C++ typy typedef, które są zadeklarowane za pomocą słowa kluczowego `typedef`, na przykład:
 
@@ -84,5 +84,5 @@ typedef class coord
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Pracuj z kodem C++ wizualizacji](working-with-visual-cpp-code.md)
+- [Pracuj z C++ kodem](working-with-visual-cpp-code.md)
 - [Definicje typów](/cpp/cpp/aliases-and-typedefs-cpp#typedefs)

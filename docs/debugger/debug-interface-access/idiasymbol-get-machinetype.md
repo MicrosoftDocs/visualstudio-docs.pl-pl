@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_machinetype — | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_machineType | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eef0507ccb7036748f5c9d36c9de521a17860a39
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 5ea9f5762e265b2892a906060a430db03f7b7d67
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "67032708"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739836"
 ---
-# <a name="idiasymbolgetmachinetype"></a>IDiaSymbol::get_machineType
-Pobiera typ docelowy adres CPU.
+# <a name="idiasymbolget_machinetype"></a>IDiaSymbol::get_machineType
+Pobiera typ docelowego procesora CPU.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,14 +33,14 @@ HRESULT get_machineType ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca wartość z zakresu od [stałe IMAGE_FILE_MACHINE_](/windows/desktop/SysInfo/image-file-machine-constants) , który określa element docelowy typ Procesora.
+określoną Zwraca wartość ze [stałych IMAGE_FILE_MACHINE_](/windows/desktop/SysInfo/image-file-machine-constants) , które określają docelowy typ procesora.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
-> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Wartość zwracana `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
-## <a name="see-also"></a>Zobacz też
-- [Stałe IMAGE_FILE_MACHINE_](/windows/desktop/SysInfo/image-file-machine-constants) 
+## <a name="see-also"></a>Zobacz także
+- [IMAGE_FILE_MACHINE_ — stałe](/windows/desktop/SysInfo/image-file-machine-constants) 
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

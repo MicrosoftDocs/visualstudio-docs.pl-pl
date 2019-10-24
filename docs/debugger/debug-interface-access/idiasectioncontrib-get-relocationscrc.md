@@ -1,5 +1,5 @@
 ---
-title: Idiasectioncontrib::get_relocationscrc — | Dokumentacja firmy Microsoft
+title: 'IDiaSectionContrib:: get_relocationsCrc | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a57c46bef62039241c7d0cc064753199440893e3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4b8602cfefbd414561ebfbaee979e6af5711b879
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839514"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742545"
 ---
-# <a name="idiasectioncontribgetrelocationscrc"></a>IDiaSectionContrib::get_relocationsCrc
-Pobiera wyboru cyklicznej kontroli nadmiarowości (CRC) przenoszenia informacji w sekcji.
+# <a name="idiasectioncontribget_relocationscrc"></a>IDiaSectionContrib::get_relocationsCrc
+Pobiera cykliczne sprawdzenie nadmiarowości (CRC) informacji o relokacji dla sekcji.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,10 +33,10 @@ HRESULT get_relocationsCrc ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca wartość sumy kontrolnej przenoszenia informacji w sekcji.
+określoną Zwraca wartość CRC informacji o relokacji dla sekcji.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`. Zwraca `S_FALSE`, jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

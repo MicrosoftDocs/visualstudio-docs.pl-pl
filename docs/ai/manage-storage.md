@@ -1,5 +1,5 @@
 ---
-title: Przeglądaj magazyn przekazywania danych
+title: Przeglądaj magazyn, aby przekazać dane
 author: lisawong19
 ms.author: liwong
 manager: routlaw
@@ -7,29 +7,29 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 8990252f78a9e89b9bdaa825d5443e4d38d2ae89
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7d0f2522117f4c5a5b85e99e2779d10cffcb7f22
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62548235"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777409"
 ---
-# <a name="browse-storage-to-upload-data-or-download-models-and-logs"></a>Przeglądaj magazyn do przekazywania danych lub pobrać dzienniki i modeli
+# <a name="browse-storage-to-upload-data-or-download-models-and-logs"></a>Przeglądaj magazyn, aby przekazać dane lub pobrać modele i dzienniki
 
-Możesz przeglądać cały magazyn na zdalnym komputerze lub udziału plików platformy Azure, aby umożliwić przekazywanie danych i pobierania modeli dzienników i. Lub, jeśli chcesz uzyskać dostęp do dzienników i dane wyjściowe zadania dotyczące określonego zadania, możecie również w przeglądarce zadania.
+Możesz przeglądać wszystkie magazyny na komputerze zdalnym lub udziale plików platformy Azure, aby umożliwić przekazywanie danych lub pobieranie modeli i dzienników. Lub, jeśli chcesz uzyskać dostęp do dzienników i danych wyjściowych zadania dla konkretnego zadania, możesz to zrobić również w przeglądarce zadań.
 
-## <a name="to-access-all-data-on-the-remote-machine-or-file-share"></a>Dostęp do wszystkich danych na zdalnym komputerze lub udziału plikowego
+## <a name="to-access-all-data-on-the-remote-machine-or-file-share"></a>Aby uzyskać dostęp do wszystkich danych na komputerze zdalnym lub udziale plików
 
-1. Otwórz **Eksploratora serwera**.
-2. Rozwiń węzeł kontekstu obliczeniowego usługi Batch AI lub maszynie zdalnej.
-3. Kliknij prawym przyciskiem myszy **magazynu**; kliknij przycisk **Przeglądaj**.
+1. Otwórz **Eksplorator serwera**.
+2. Rozwiń węzeł maszyny zdalnej lub Batch AI kontekstu obliczeniowego.
+3. Kliknij prawym przyciskiem myszy pozycję **Magazyn**; następnie kliknij przycisk **Przeglądaj**.
 
     ![magazyn](media/manage-storage/browse-storage.png)
 
-## <a name="to-access-job-specific-data-on-the-remote-machine-or-file-share"></a>Dostęp do danych z określonych zadań na zdalnym komputerze lub udziału plikowego
+## <a name="to-access-job-specific-data-on-the-remote-machine-or-file-share"></a>Aby uzyskać dostęp do danych specyficznych dla zadania na komputerze zdalnym lub w udziale plików
 
-1. Otwórz [Historia zadania](job-details.md)
+1. Otwórz [historię zadania](job-details.md)
 2. Wybierz zadanie.
-3. Kliknij przycisk **pracy folderu** lub kliknij przycisk **StdOut / Stderr** umożliwiającą szybki dostęp do tych plików ważne dziennika.
+3. Kliknij pozycję **folder roboczy** lub kliknij pozycję **stdout/stderr** , aby uzyskać szybki dostęp do tych ważnych plików dziennika.
 
     ![magazyn](media/manage-storage/job-workingfolder.png)

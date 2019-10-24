@@ -1,5 +1,5 @@
 ---
-title: Monitorowanie za pomocą narzędzia TensorBoard
+title: Monitoruj przy użyciu TensorBoard
 author: lisawong19
 ms.author: liwong
 manager: routlaw
@@ -7,21 +7,21 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: daf7c7fbc9ea7f9a3bfb04d6df600712b0be5237
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7c05c9b802a490596fe69256c4ccc8dc5cb047c7
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62560923"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777423"
 ---
-# <a name="monitor-with-tensorboard"></a>Monitorowanie za pomocą narzędzia TensorBoard
+# <a name="monitor-with-tensorboard"></a>Monitoruj przy użyciu TensorBoard
 
-Można wizualizować postęp szkolenia modelu przy użyciu narzędzia TensorBoard.
+Możesz wizualizować postęp szkolenia modelu za pomocą TensorBoard.
 
-1. Kliknij prawym przyciskiem myszy projekt, a następnie kliknij przycisk **uruchom narzędzia TensorBoard**; następnie wybierz katalog danych wyjściowych dzienników narzędzia TensorBoard.
+1. Kliknij prawym przyciskiem myszy projekt, a następnie kliknij polecenie **Uruchom TensorBoard**; następnie wybierz katalog wyjściowych dzienników TensorBoard.
 
-    ![Uruchom narzędzia tensorboard](media/monitor-tensorboard/run-tensorboard.png)
+    ![Uruchom tensorboard](media/monitor-tensorboard/run-tensorboard.png)
 
-2. Zwróć uwagę, błąd, zmniejsza się wraz z upływem czasu, co oznacza, że w celu ulepszania jakości.
+2. Zwróć uwagę na to, że błąd zmniejsza się w miarę upływu czasu, co oznacza zwiększenie jakości.
 
-    ![Uruchom narzędzia tensorboard](media/monitor-tensorboard/tensorboard.png)
+    ![Uruchom tensorboard](media/monitor-tensorboard/tensorboard.png)

@@ -7,22 +7,22 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: a2970c0086ec18789347eebdea752487be18ce7d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 79b396946666077dcdedb3ee2a5ab891c2bb4fb8
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62548406"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777395"
 ---
-# <a name="view-recent-job-performance-and-details"></a>Wyświetl ostatnią wydajność zadania i szczegóły
+# <a name="view-recent-job-performance-and-details"></a>Wyświetl ostatnią wydajność i szczegóły zadania
 
-Po przesłaniu zadania można wyświetlić listę zadań, aby wyświetlić ich stan, czas trwania i nie tylko.
+Po przesłaniu zadań można wyświetlić listę zadań, aby zobaczyć ich stan, czas trwania i inne.
 
-1. W **Eksploratora serwera**, rozwiń węzeł kontekstu obliczeniowego określone.
-2. Kliknij dwukrotnie **zadań**.
-3. Zobaczysz listę zadania przesłane do danego kontekstu obliczeniowego.
-4. Wybierz konkretną **zadania** na liście, aby wyświetlić szczegóły.
+1. W **Eksplorator serwera**rozwiń określony kontekst obliczeniowy.
+2. Kliknij dwukrotnie pozycję **zadania**.
+3. Zostanie wyświetlona lista zadań przesłanych do tego kontekstu obliczeniowego.
+4. Wybierz określone **zadanie** na liście, aby wyświetlić szczegóły.
 
 ![Monitorowanie zadań](media/job-details/monitor-jobs.png)
 
-> Historia zadania przesłane do maszyn wirtualnych systemu Linux są przechowywane na maszynie Wirtualnej w folderze/tmp katalogu. W związku z tym w każdym przypadku, gdy zostanie ona ponownie uruchomiona w historii zadań jest wyczyszczone. Stałe rekordu historii zadania skonfigurować swoją maszynę Wirtualną jako kontekst obliczeniowy w Azure Machine learning, następnie prześlij zadanie usługi Azure Machine Learning (Wybieranie maszyny Wirtualnej jako kontekst obliczeniowy).
+> Historia zadań przesłana do maszyn wirtualnych systemu Linux jest przechowywana na maszynie wirtualnej w katalogu/tmp. W związku z tym po każdym ponownym uruchomieniu historia zadania jest czyszczona. W przypadku stałego rekordu historii zadania Skonfiguruj maszynę wirtualną jako kontekst obliczeniowy w usłudze Azure Machine Learning, a następnie Prześlij zadanie do Azure Machine Learning (Wybierz maszynę wirtualną jako kontekst obliczeń).

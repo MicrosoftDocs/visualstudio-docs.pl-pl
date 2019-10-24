@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_isCTypes | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_isCTypes | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c60c4eac676936147760359e2b707814702846f
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 64be123de60608aa82e2e271b1f14d0de7be2cb4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64798847"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740277"
 ---
-# <a name="idiasymbolgetisctypes"></a>IDiaSymbol::get_isCTypes
+# <a name="idiasymbolget_isctypes"></a>IDiaSymbol::get_isCTypes
 Pobiera flagę wskazującą, czy plik symboli zawiera typy C.
 
 ## <a name="syntax"></a>Składnia
@@ -33,24 +33,24 @@ HRESULT get_isCTypes(
 #### <a name="parameters"></a>Parametry
  `pFlag`
 
-[out] Zwraca `TRUE` Jeśli plik symboli zawiera typy C; w przeciwnym razie zwraca `FALSE`.
+określoną Zwraca `TRUE`, jeśli plik symboli zawiera typy C; w przeciwnym razie zwraca `FALSE`.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
-> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Wartość zwracana przez `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
 ## <a name="remarks"></a>Uwagi
- Ta właściwość jest dostępna z `SymTagExe` typu symbolu (zobacz [Exe](../../debugger/debug-interface-access/exe.md)).
+ Ta właściwość jest dostępna z poziomu typu symbolu `SymTagExe` (zobacz [exe](../../debugger/debug-interface-access/exe.md)).
 
 ## <a name="requirements"></a>Wymagania
 
 |Wymaganie|Opis|
 |-----------------|-----------------|
-|Nagłówek:|dia2.h|
-|Wersja:|DIA SDK w wersji 8.0|
+|Nagłówki|dia2. h|
+|Wersja:|DIA SDK v 8.0|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [Exe](../../debugger/debug-interface-access/exe.md)

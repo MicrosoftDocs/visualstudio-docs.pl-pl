@@ -1,5 +1,5 @@
 ---
-title: Idialinenumber::get_addressoffset — | Dokumentacja firmy Microsoft
+title: 'IDiaLineNumber:: get_addressOffset | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c29f2f8b84c68e9f4f0f7425ed5566b9180b1ac3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b99addc04a7b9dc2f2b77d1943605f8c24af6aa7
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828701"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743285"
 ---
-# <a name="idialinenumbergetaddressoffset"></a>IDiaLineNumber::get_addressOffset
-Pobiera przesunięcia część adresu pamięci, gdzie rozpoczyna się w bloku.
+# <a name="idialinenumberget_addressoffset"></a>IDiaLineNumber::get_addressOffset
+Pobiera część przesunięcia adresu pamięci, w której rozpoczyna się blok.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,10 +33,10 @@ HRESULT get_addressOffset ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca przesunięcia częściami składowymi adresu pamięci, gdzie rozpoczyna się w bloku.
+określoną Zwraca część przesunięcia adresu pamięci, w której rozpoczyna się blok.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`. Zwraca `S_FALSE`, jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
 
 ## <a name="example"></a>Przykład
 
@@ -46,6 +46,6 @@ DWORD offset;
 pLine->get_addressOffset( &offset);
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
 - [IDiaLineNumber::get_addressSection](../../debugger/debug-interface-access/idialinenumber-get-addresssection.md)

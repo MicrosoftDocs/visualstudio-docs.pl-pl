@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c5f54a2b50447125b0abffd8cc62ba9c2a1d2b37
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: 44881035da14483c3ddf1f4c48cb3957a1ce8b50
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887777"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72729088"
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>Obsługiwane zmiany kodu (C# i Visual Basic)
 Edytuj i Kontynuuj obsługuje większość typów zmian kodu w treści metody. Większość zmian poza treściami metod oraz kilka zmian w obrębie treści metody nie można zastosować podczas debugowania. Aby zastosować te nieobsługiwane zmiany, należy zatrzymać debugowanie i ponownie uruchomić za pomocą nowej wersji kodu.
@@ -32,11 +32,11 @@ W poniższej tabeli przedstawiono zmiany, które mogą zostać wprowadzone do C#
 
 |Element/funkcja języka|Obsługiwana operacja edycji|Ograniczenia|
 |-|-|-|
-|Types|Dodawanie metod, pól, konstruktorów, et al|[Tak](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
+|Types|Dodawanie metod, pól, konstruktorów, et al|[Opcję](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
 |Iteratory|Dodaj lub zmodyfikuj|Nie|
-|wyrażenia asynchroniczne/await|Dodaj lub zmodyfikuj|[Tak](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
-|obiekty dynamiczne|Dodaj lub zmodyfikuj|Nie|
-|wyrażenia lambda|Dodaj lub zmodyfikuj|[Tak](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
+|wyrażenia asynchroniczne/await|Dodaj lub zmodyfikuj|[Opcję](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
+|Obiekty dynamiczne|Dodaj lub zmodyfikuj|Nie|
+|wyrażenia lambda|Dodaj lub zmodyfikuj|[Opcję](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
 |Wyrażenia LINQ|Dodaj lub zmodyfikuj|[Analogicznie jak wyrażenia lambda](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
 
 > [!NOTE]
@@ -79,7 +79,7 @@ W poniższej tabeli przedstawiono zmiany, które mogą zostać wprowadzone do C#
 |Iteratory|Modyfikowanie iteratora w projekcie docelowym .NET Framework 4 i niższym (zobacz [szczegóły](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
 
 ## <a name="unsafe-code"></a>Niebezpieczny kod
- Zmiany w niebezpiecznym kodzie mają takie same ograniczenia jak zmiany w bezpiecznym kodzie, z jednym dodatkowym ograniczeniem: Polecenia Edytuj i Kontynuuj nie obsługują zmian niebezpiecznego kodu, który kończy się w ramach metody `stackalloc` zawierającej operatora.
+ Zmiany w niebezpiecznym kodzie mają takie same ograniczenia jak zmiany w bezpiecznym kodzie, z jednym dodatkowym ograniczeniem: polecenie Edytuj i Kontynuuj nie obsługuje zmian w niebezpiecznym kodzie, który opuszcza metodę, która zawiera operator `stackalloc`.
 
 ## <a name="unsupported-app-scenarios"></a>Nieobsługiwane scenariusze aplikacji
 
@@ -95,7 +95,7 @@ Nieobsługiwane aplikacje i platformy obejmują ASP.NET 5, Silverlight 5 i Windo
 
 - Debugowanie SQL.
 
-- Debugowanie odzyskiwania po awarii. Zrzut programu Watson.
+- Debugowanie zrzutu Dr. Watson.
 
 - Debugowanie osadzonej aplikacji środowiska uruchomieniowego.
 
@@ -105,6 +105,6 @@ Nieobsługiwane aplikacje i platformy obejmują ASP.NET 5, Silverlight 5 i Windo
 
 - Debugowanie starej wersji kodu od momentu kompilacji nowej wersji nie powiodło się z powodu błędów kompilacji.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Edytuj i kontynuuj (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)
-- [Instrukcje: Korzystanie z funkcji Edytuj i kontynuuj (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
+- [Instrukcje: używanie funkcji Edytuj i kontynuuj (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)

@@ -1,5 +1,5 @@
 ---
-title: Init | Microsoft Docs
+title: init | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c55ddec8-9101-4673-979b-4109caca9146
@@ -8,15 +8,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a2bd17b91f7a18adce1153634cb9fc55902720b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0b2ed132e072d9ca8a0b9c98bfc5be6e25931805
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62848489"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72735002"
 ---
 # <a name="init"></a>Init
-Przygotowuje składnik w aplikacji Narzędzie Diagnostyka grafiki aktywnie przechwytywanie i rejestrowanie informacji graficznych w pliku dziennika grafiki.
+Przygotowuje składnik aplikacji diagnostyki grafiki do aktywnego przechwytywania i rejestrowania informacji graficznych w pliku dziennika grafiki.
 
 ## <a name="syntax"></a>Składnia
 
@@ -27,12 +27,12 @@ void Init(
 ```
 
 #### <a name="parameters"></a>Parametry
- `vsgLogGetter` Wywoływane jednostki — takich jak funkcja, wskaźnik funkcji, lambda lub obiekt funkcyjny — która przyjmuje jako parametry długość buforu, składające się z `wchar_t` i wskaźnik do buforu i zwraca `void`. Po wywołaniu, wywoływane jednostki Określa nazwę pliku, który będzie używany do rejestrowania informacji graficznych i zapisuje go do określonego bufora przed zwróceniem.
+ `vsgLogGetter` możliwej do napisania jednostce — takiej jak funkcja, wskaźnik funkcji, lambda lub obiekt funkcji — który przyjmuje jako parametry długość buforu składającego się z `wchar_t` i wskaźnik do tego buforu i zwraca `void`. Gdy wywoływana jednostka określa nazwę pliku, który będzie używany do rejestrowania informacji graficznych, i zapisuje je do określonego buforu przed zwróceniem.
 
 ## <a name="remarks"></a>Uwagi
- `Init` Funkcja jest wywoływana automatycznie, gdy wystąpienie klasy `VsgDbg` klasy jest tworzony przez określenie `bDefaultInit` parametr jej konstruktora jako `true`; w przeciwnym razie `Init` musi być jawnie wywołana przed można aktywnie przechwytywanie i rejestrowanie informacji graficznych.
+ Funkcja `Init` jest wywoływana automatycznie, gdy wystąpienie klasy `VsgDbg` jest konstruowane przez określenie parametru `bDefaultInit` jego konstruktora jako `true`; w przeciwnym razie `Init` musi zostać wywołana jawnie przed rozpoczęciem aktywnego przechwytywania i rejestrowania informacji graficznych.
 
- Można zakończyć, i zamknij aktywne grafiki pliku dziennika przez wywołanie metody `UnInit`, a następnie przechwycić i zarejestrować więcej informacji graficznych w pliku dziennika grafiki, wywołując `Init` ponownie. To można powtarzać dowolną liczbę razy utworzyć kilka niezależnych grafiki pliki dziennika, korzystając z tych samych `VsgDbg` wystąpienia.
+ Można sfinalizować i zamknąć plik dziennika grafiki Active, wywołując `UnInit`, a następnie przechwycić i nagrać więcej informacji graficznych do nowego pliku dziennika grafiki, wywołując `Init` ponownie. Możesz powtórzyć tyle razy, ile chcesz utworzyć kilka niezależnych plików dziennika grafiki przy użyciu tego samego wystąpienia `VsgDbg`.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [UnInit](init.md)

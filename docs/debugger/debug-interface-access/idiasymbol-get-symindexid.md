@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_symindexid — | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_symIndexId | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c76bd8da28742f0618dcd6ee68d46a1b4578580
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 7d75fbb5c556a730dc38b4c592b660c0a3a0e876
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64786321"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739241"
 ---
-# <a name="idiasymbolgetsymindexid"></a>IDiaSymbol::get_symIndexId
-Pobiera identyfikator unikatowy symbol.
+# <a name="idiasymbolget_symindexid"></a>IDiaSymbol::get_symIndexId
+Pobiera unikatowy identyfikator symbolu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,16 +33,16 @@ HRESULT get_symIndexId ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca identyfikator symbol symbolu.
+określoną Zwraca identyfikator symbolu symbolu.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
-> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Wartość zwracana `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
 ## <a name="remarks"></a>Uwagi
- Identyfikator jest wartością unikatową, utworzone przez DIA SDK, aby oznaczyć wszystkie symbole jako unikatowy.
+ Identyfikator jest unikatową wartością utworzoną przez DIA SDK, aby oznaczyć wszystkie symbole jako unikatowe.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

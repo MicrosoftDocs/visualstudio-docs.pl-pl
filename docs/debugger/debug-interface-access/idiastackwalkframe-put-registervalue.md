@@ -1,5 +1,5 @@
 ---
-title: Idiastackwalkframe::put_registervalue — | Dokumentacja firmy Microsoft
+title: IDiaStackWalkFrame::p ut_registerValue | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 440c7d19382b813b3f34451d7c177c6e8b57f16f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 24bcafcc373e3c03bd1e656f26ee9a8aa443d320
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62831850"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741494"
 ---
-# <a name="idiastackwalkframeputregistervalue"></a>IDiaStackWalkFrame::put_registerValue
+# <a name="idiastackwalkframeput_registervalue"></a>IDiaStackWalkFrame::put_registerValue
 Ustawia wartość rejestru.
 
 ## <a name="syntax"></a>Składnia
@@ -34,15 +34,15 @@ HRESULT put_registerValue ( 
 #### <a name="parameters"></a>Parametry
  `index`
 
-[in] Wartość z zakresu od [cv_hreg_e — wyliczenie](../../debugger/debug-interface-access/cv-hreg-e.md) wyliczenie opisujące rejestru do zapisu.
+podczas Wartość z wyliczenia [CV_HREG_e wyliczenie](../../debugger/debug-interface-access/cv-hreg-e.md) określające rejestr do zapisu.
 
  `NewVal`
 
-[in] Nowa wartość rejestru.
+podczas Nowa wartość rejestru.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)
 - [CV_HREG_e, wyliczenie](../../debugger/debug-interface-access/cv-hreg-e.md)

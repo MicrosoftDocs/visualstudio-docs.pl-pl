@@ -1,5 +1,5 @@
 ---
-title: Idiaenumdebugstreamdata::Item — | Dokumentacja firmy Microsoft
+title: 'IDiaEnumDebugStreamData:: Item | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f4a3e3f668789f98600cd649716413a57b13130
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e221516198d186dd08c353123ce4236f0be1383c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838509"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744817"
 ---
 # <a name="idiaenumdebugstreamdataitem"></a>IDiaEnumDebugStreamData::Item
 Pobiera określony rekord.
@@ -36,24 +36,24 @@ HRESULT Item ( 
 #### <a name="parameters"></a>Parametry
  indeks
 
-[in] Indeks rekordu do pobrania. Indeks znajduje się w zakresie od 0 do `count`-1, gdzie `count` jest zwracany przez [idiaenumdebugstreamdata::get_count —](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md).
+podczas Indeks rekordu do pobrania. Indeks znajduje się w zakresie od 0 do `count`-1, gdzie `count` jest zwracany przez [IDiaEnumDebugStreamData:: get_Count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md).
 
  cbData
 
-[in] Rozmiar buforu danych, w bajtach.
+podczas Rozmiar buforu danych w bajtach.
 
  pcbData
 
-[out] Zwraca liczbę bajtów zwróconych. Jeśli `data` jest `NULL`, następnie `pcbData` zawiera całkowitą liczbę bajtów danych dostępnych w określonego rekordu.
+określoną Zwraca liczbę zwracanych bajtów. Jeśli `data` jest `NULL`, `pcbData` zawiera łączną liczbę bajtów danych dostępnych w określonym rekordzie.
 
- dane]
+ dane []
 
-[out] Bufor, który jest wypełniane dane rekord strumienia debugowania.
+określoną Bufor, który jest wypełniony przy użyciu danych rekordu strumienia debugowania.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Zwraca `E_INVALIDARG` dla nieprawidłowe parametry i, jeśli `index` parametr jest spoza zakresu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Zwraca `E_INVALIDARG` dla nieprawidłowych parametrów i jeśli parametr `index` jest poza zakresem.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)
 - [IDiaEnumDebugStreamData::Next](../../debugger/debug-interface-access/idiaenumdebugstreamdata-next.md)
 - [IDiaEnumDebugStreams::Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)
