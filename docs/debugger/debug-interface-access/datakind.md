@@ -1,5 +1,5 @@
 ---
-title: Datakind — | Dokumentacja firmy Microsoft
+title: Typ datakind | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21630bea3022769d18748190c2a2d24c0e519a3c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 31be0615fd7d1da279ecf414260af21cb8239dc8
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554925"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745289"
 ---
 # <a name="datakind"></a>DataKind
-Wskazuje zakresu określonej wartości danych.
+Wskazuje konkretny zakres wartości danych.
 
 ## <a name="syntax"></a>Składnia
 
@@ -40,13 +40,13 @@ enum DataKind {
 ```
 
 ## <a name="elements"></a>Elementy
-Nie można ustalić symbol DataIsUnknown danych.
+Nie można określić symbolu danych DataIsUnknown.
 
 Element danych DataIsLocal jest zmienną lokalną.
 
-Element danych DataIsStaticLocal jest statyczna zmienna lokalna.
+Element danych DataIsStaticLocal jest statyczną zmienną lokalną.
 
-Element danych DataIsParam jest parametrów formalnych.
+Element danych DataIsParam jest parametrem formalnym.
 
 Element danych DataIsObjectPtr jest wskaźnikiem obiektu (`this`).
 
@@ -56,16 +56,16 @@ Element danych DataIsGlobal jest zmienną globalną.
 
 Element danych DataIsMember jest zmienną elementu członkowskiego obiektu.
 
-Element danych DataIsStaticMember jest zmienna statyczna klasy.
+Element danych DataIsStaticMember jest zmienną statyczną klasy.
 
-Element danych DataIsConstant jest wartością stałą.
+Element danych DataIsConstant jest stałą wartością.
 
 ## <a name="remarks"></a>Uwagi
-Wartości w tym wyliczeniu są zwracane przez [idiasymbol::get_datakind —](../../debugger/debug-interface-access/idiasymbol-get-datakind.md) metody.
+Wartości w tym wyliczeniu są zwracane przez metodę [IDiaSymbol:: get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md) .
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: cvconst.h
+Nagłówek: cvconst. h
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wyliczenia i struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaSymbol::get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md)

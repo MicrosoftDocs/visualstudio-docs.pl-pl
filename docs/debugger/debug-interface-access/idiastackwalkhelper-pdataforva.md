@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalkHelper::pdataForVA | Dokumentacja firmy Microsoft
+title: IDiaStackWalkHelper::p dataForVA | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6315032a36369eff7a5d43241ae4968a64ad42cc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8d51736a80021847881db164c9e176a010124638
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62831898"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741405"
 ---
 # <a name="idiastackwalkhelperpdataforva"></a>IDiaStackWalkHelper::pdataForVA
-Zwraca skojarzony z wirtualnym adresem bloku danych PDATA.
+Zwraca blok danych PDATA skojarzony z adresem wirtualnym.
 
 ## <a name="syntax"></a>Składnia
 
@@ -36,27 +36,27 @@ HRESULT pdataForVA( 
 #### <a name="parameters"></a>Parametry
  `va`
 
-[in] Określa adres wirtualny danych w celu uzyskania.
+podczas Określa adres wirtualny danych do uzyskania.
 
  `cbData`
 
-[in] Rozmiar danych w bajtach, aby uzyskać.
+podczas Rozmiar danych w bajtach do uzyskania.
 
  `pcbData`
 
-[out] Zwraca rzeczywisty rozmiar danych w bajtach, które zostały pobrane.
+określoną Zwraca rzeczywisty rozmiar danych uzyskanych w bajtach.
 
  `pbData`
 
-[out w] Bufor, który jest wypełniane żądanych danych. Nie może być `NULL`.
+[in. out] Bufor, który jest wypełniony danymi żądanymi. Nie można `NULL`.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` przypadku nie PDATA dla określonego adresu. W przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`. Zwraca `S_FALSE`, jeśli nie ma żadnych PDATA dla podanego adresu. W przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- PDATA (sekcja o nazwie ".pdata") compiland — zawiera informacje dotyczące obsługi funkcji wyjątków.
+ PDATA (sekcja o nazwie ". pdata") jednostka kompilacji zawiera informacje o obsłudze wyjątków dla funkcji.
 
- Obiekt wywołujący wie, jak dużo danych jest zwracane, więc nie trzeba zadać, jak dużo danych jest dostępna na obiekt wywołujący. Dlatego jest dopuszczalne związanych z implementacją tę metodę, aby zwrócić błąd, jeśli `pbData` parametr `NULL`.
+ Obiekt wywołujący wie, ile danych ma zostać zwróconych, aby obiekt wywołujący nie musiał żądać ilości dostępnych danych. W związku z tym jest akceptowalny dla implementacji tej metody w celu zwrócenia błędu, jeśli parametr `pbData` jest `NULL`.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

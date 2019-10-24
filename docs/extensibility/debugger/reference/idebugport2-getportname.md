@@ -1,5 +1,5 @@
 ---
-title: IDebugPort2::GetPortName | Dokumentacja firmy Microsoft
+title: 'IDebugPort2:: GetPortName | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a2b058466608597656641a013a4dea0c1bc5716f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0a382a77693fc8839721c0cdd139af2dd5208c69
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343764"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72727724"
 ---
 # <a name="idebugport2getportname"></a>IDebugPort2::GetPortName
 Pobiera nazwę portu.
@@ -41,10 +41,10 @@ int GetPortName( 
 
 ## <a name="parameters"></a>Parametry
 `pbstrName`\
-[out] Zwraca nazwę portu.
+określoną Zwraca nazwę portu.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

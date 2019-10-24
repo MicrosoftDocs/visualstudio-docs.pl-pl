@@ -1,5 +1,5 @@
 ---
-title: Debugowanie kontenera i serwera COM | Dokumentacja firmy Microsoft
+title: Debugowanie kontenera i serwera COM | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,39 +21,39 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40edce29e8d40310f6eab37309c4c2ca7eb8a85a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ec5ed51c72ad7fd64bbdfd0135f53a13bb8c6e4b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62563998"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745679"
 ---
 # <a name="com-server-and-container-debugging"></a>Debugowanie kontenera i serwera COM
-Aplikacje COM wykonywanie szeregu zadań poza programisty bezpośrednią kontrolę. Komunikacja między bibliotek DLL, liczniki użycia obiektów i operacje na schowku przedstawiono kilka obszarów, w którym mogą wystąpić nieoczekiwane zachowanie. W takim przypadku Twoim pierwszym krokiem jest śledzenie źródła problemu.
+Aplikacje COM wykonują wiele zadań poza bezpośrednią kontrolą programisty. Komunikacja między bibliotekami DLL, licznikami użycia obiektów i operacjami schowka to tylko kilka obszarów, w których może wystąpić nieoczekiwane zachowanie. W takim przypadku pierwszym krokiem jest śledzenie źródła problemu.
 
- Debuger programu Visual Studio obsługuje przechodzenie między oraz kontenery i serwery. Obejmuje to możliwość krok w zdalnych wywołań procedur (RPC).
+ Debuger programu Visual Studio obsługuje krokowe przechodzenie między kontenerami i serwerami. Obejmuje to możliwość wykonywania kroków w ramach zdalnych wywołań procedur (RPC).
 
-## <a name="BKMK_COMServerandContainerintheSameSolution"></a> Debugowanie kontenera w tym samym rozwiązaniu i serwera COM
- Można debugować kontenera za pomocą dwóch projektów w obrębie tego samego rozwiązania i serwera COM. Ustaw odpowiednie punkty przerwania w każdym projekcie i debugowania. Gdy kontener wywołuje do serwera, na którym trafienia punktu przerwania, kontener będzie czekał kod serwera zwraca (oznacza to, aż do zakończenia jej debugowanie).
+## <a name="BKMK_COMServerandContainerintheSameSolution"></a>Debugowanie serwera COM i kontenera w tym samym rozwiązaniu
+ Można debugować serwer COM i kontener przy użyciu dwóch projektów w ramach tego samego rozwiązania. Ustaw odpowiednie punkty przerwania w każdym projekcie i Debuguj. Gdy kontener wykonuje wywołanie do serwera, który trafi do punktu przerwania, kontener będzie oczekiwać do momentu, aż kod serwera zwróci wartość (czyli do momentu zakończenia debugowania).
 
- Debugowanie kontenerów COM jest podobne do debugowania program standardowy. Jedną różnicaą jest to podczas debugowania zdarzeń, która generuje wywołanie zwrotne (na przykład przeciągnięcie danych za pośrednictwem aplikacji kontenera). W takim przypadku należy ustawić punkt przerwania w funkcji wywołania zwrotnego.
+ Debugowanie kontenera COM jest podobne do debugowania programu standardowego. Jedna różnica polega na debugowaniu zdarzenia, które generuje wywołanie zwrotne (na przykład przeciąganie danych przez aplikację kontenera). W takim przypadku należy ustawić punkt przerwania w funkcji wywołania zwrotnego.
 
-## <a name="BKMK_ServerApplicationWithoutContainerInformation"></a> Debugowanie aplikacji serwera bez informacji o kontenerze
- Jeśli nie masz, lub nie chcesz użyć informacji debugowania dla aplikacji kontenera, uruchamianie na potrzeby debugowania aplikacji serwera jest procesem trzech kroków:
+## <a name="BKMK_ServerApplicationWithoutContainerInformation"></a>Debugowanie aplikacji serwera bez informacji o kontenerach
+ Jeśli nie masz lub nie chcesz używać informacji debugowania dla aplikacji kontenera, rozpoczęcie debugowania aplikacji serwera jest procesem dwuetapowym:
 
-1. Rozpocznij debugowanie serwera jako normalna aplikacja.
+1. Rozpocznij debugowanie serwera jako zwykłej aplikacji.
 
-2. Ustaw punkty przerwania, zgodnie z potrzebami.
+2. Ustaw punkty przerwania zgodnie z potrzebami.
 
 3. Uruchom aplikację kontenera.
 
-## <a name="BKMK_DebuggingaServerandDomainIsolationSDIApplication"></a> Debugowanie serwera i aplikacji (SDI) izolacji domeny
- Jeśli debugujesz aplikację serwera SDI, należy określić `/Embedding` lub `/Automation` w **argumenty wiersza polecenia** właściwość *projektu* okno dialogowe strony właściwości dla C/C++, C#, lub Projekty języka Visual Basic.
+## <a name="BKMK_DebuggingaServerandDomainIsolationSDIApplication"></a>Debugowanie aplikacji do izolacji serwera i domeny (SDI)
+ W przypadku debugowania aplikacji serwera SDI należy określić `/Embedding` lub `/Automation` w właściwości **argumenty wiersza polecenia** w oknie dialogowym strony właściwości *projektu* dla projektów C/C++, C#lub Visual Basic.
 
- Za pomocą tych argumentów wiersza polecenia debugera można uruchomić aplikacji serwera, tak, jakby zostały uruchomione z kontenera. Uruchamianie kontenera za pomocą Menedżera programu lub Menedżer plików następnie spowoduje, że kontener, aby użyć wystąpienia programu server uruchomiony w debugerze.
+ Za pomocą tych argumentów wiersza polecenia debuger może uruchomić aplikację serwera, tak jakby była uruchamiana z kontenera. Uruchomienie kontenera z Menedżera programu lub Menedżera plików spowoduje, że kontener użyje wystąpienia serwera uruchomionego w debugerze.
 
- Aby uzyskać dostęp do *projektu* okno dialogowe strony właściwości, kliknij prawym przyciskiem myszy projekt w Eksploratorze rozwiązań, a następnie z menu skrótów wybierz polecenie Właściwości. Aby znaleźć właściwości argumenty wiersza polecenia, rozwiń kategorię właściwości konfiguracji, a następnie kliknij przycisk na stronie debugowanie.
+ Aby uzyskać dostęp do okna dialogowego strony właściwości *projektu* , kliknij prawym przyciskiem myszy projekt w Eksplorator rozwiązań, a następnie wybierz polecenie Właściwości z menu skrótów. Aby znaleźć Właściwość argumenty wiersza polecenia, rozwiń kategorię właściwości konfiguracji i kliknij stronę debugowanie.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Debugowanie aplikacji COM i kontrolek ActiveX](../debugger/com-and-activex-debugging.md)

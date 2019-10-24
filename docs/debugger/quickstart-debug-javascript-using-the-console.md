@@ -16,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b61147467ff27ec8b69e1a2fddfcd00138065fa
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: 2a92daf09f033da020fe54369a20483686c72f81
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72589056"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72730429"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>Debugowanie kodu JavaScript przy użyciu konsoli programu Visual Studio
 
@@ -249,7 +249,7 @@ Na poniższej ilustracji przedstawiono listę docelową w oknie konsoli JavaScri
 
 Możesz również przełączyć kontekst wykonywania za pomocą polecenia `cd`, ale musisz znać nazwę innego kontekstu wykonywania, a używane odwołanie musi znajdować się w zakresie. Lista **obiektów docelowych** zapewnia lepszy dostęp do innych kontekstów wykonywania.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Debugowanie aplikacji w programie Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
 - [Polecenia konsoli JavaScript](../debugger/javascript-console-commands.md?view=vs-2017)
 - [Odświeżanie aplikacji (JavaScript)](../debugger/refresh-an-app-javascript.md)

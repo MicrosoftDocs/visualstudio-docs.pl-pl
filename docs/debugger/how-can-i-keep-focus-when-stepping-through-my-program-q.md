@@ -1,5 +1,5 @@
 ---
-title: Zachowaj fokus przy przechodzeniu przez aplikację | Dokumentacja firmy Microsoft
+title: Zachowaj fokus podczas przechodzenia przez moją aplikację | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -21,21 +21,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a409ee1e8d1b633689a0c33e39e300071b9b4d83
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 48c4bd882dd1704099b24f07f744a1615cf7d412
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62848079"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72734185"
 ---
-# <a name="how-can-i-keep-focus-when-stepping-through-my-app"></a>Jak utrzymać fokus przy przechodzeniu przez moją aplikację?
+# <a name="how-can-i-keep-focus-when-stepping-through-my-app"></a>Jak zachować fokus podczas przechodzenia przez aplikację?
 ## <a name="description"></a>Opis
- Program wystąpił problem z okna aktywacji. Krokowe wykonywanie programu za pomocą debugera koliduje z moich możliwość Odtwórz problem, ponieważ program przechowuje tracąc koncentracji. Czy istnieje sposobem uniknięcia tego problemu?
+ Mój program ma problem z aktywacją okna. Przechodzenie przez program za pomocą debugera zakłóca moją możliwość odtworzenia problemu, ponieważ mój program utrzymuje fokus. Czy istnieje sposób, aby to uniknąć?
 
 ## <a name="solution"></a>Rozwiązanie
- Jeśli masz drugiego komputera, należy użyć, zdalne debugowanie. Może działać programu na komputerze zdalnym, gdy uruchamiasz debuger na hoście. Aby uzyskać więcej informacji, zobacz [jak: Wybierz komputer zdalny](/previous-versions/visualstudio/visual-studio-2010/w8wtw2f3(v=vs.100)).
+ Jeśli używasz drugiego komputera, Użyj zdalnego debugowania. Program można obsługiwać na komputerze zdalnym podczas uruchamiania debugera na hoście. Aby uzyskać więcej informacji, zobacz [How to: Select a Remote Computer](/previous-versions/visualstudio/visual-studio-2010/w8wtw2f3(v=vs.100)).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Debugowanie kodu natywnego — często zadawane pytania](../debugger/debugging-native-code-faqs.md)
 - [Dołączanie do uruchomionego procesu](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
 - [Debugowanie kodu natywnego](../debugger/debugging-native-code.md)

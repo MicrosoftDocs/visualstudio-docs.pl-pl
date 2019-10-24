@@ -1,5 +1,5 @@
 ---
-title: Pisanie funkcji raportowania błędów czasu wykonywania | Dokumentacja firmy Microsoft
+title: Napisz funkcję raportowania błędów czasu wykonywania | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -18,17 +18,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ff16a1443b05dc7021406cde03a4153f3234602
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b145e34b0dfeafbb7fde436dd561721962a89f3b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62905905"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72731805"
 ---
-# <a name="how-to-write-a-run-time-error-reporting-function-c"></a>Instrukcje: Pisanie funkcji (C++) raportowania błędów czasu wykonywania
-Raportów niestandardowych funkcji błędów czasu wykonywania musi mieć tej samej deklaracji jako `_CrtDbgReportW`. Wartość 1 powinien zostać zwrócony do debugera.
+# <a name="how-to-write-a-run-time-error-reporting-function-c"></a>Instrukcje: pisanie funkcji raportowania błędów czasu wykonywania (C++)
+Niestandardowa funkcja raportowania błędów czasu wykonywania musi mieć tę samą deklarację co `_CrtDbgReportW`. Powinien zwrócić wartość 1 do debugera.
 
-Poniższy przykład pokazuje jak zdefiniować niestandardowe funkcji raportowania.
+Poniższy przykład pokazuje, jak zdefiniować funkcję raportowania niestandardowego.
 
 ## <a name="example"></a>Przykład
 
@@ -62,7 +62,7 @@ int MyErrorFunc(int errorType, const wchar_t *filename,
 ```
 
 ## <a name="example"></a>Przykład
-Poniższy przykład przedstawia bardziej złożone niestandardowe funkcji raportowania. W tym przykładzie instrukcji switch obsługuje różne typy błędów, zgodnie z definicją `reportType` parametru `_CrtDbgReportW`. Ponieważ zastępowane `_CrtDbgReportW`, nie można użyć `_CrtSetReportMode`. Funkcję musi obsługiwać dane wyjściowe. Pierwszy argument w postaci zmiennej w tej funkcji ma wiele błędów czasu wykonywania. Aby uzyskać więcej informacji, zobacz [_RTC_SetErrorType](/cpp/c-runtime-library/reference/rtc-seterrortype).
+Poniższy przykład przedstawia bardziej złożoną funkcję raportowania niestandardowego. W tym przykładzie instrukcja SWITCH obsługuje różne typy błędów, zgodnie z definicją `reportType` parametr `_CrtDbgReportW`. Ponieważ zamieniasz `_CrtDbgReportW`, nie możesz używać `_CrtSetReportMode`. Funkcja musi obsługiwać dane wyjściowe. Pierwszy argument zmiennej w tej funkcji przyjmuje numer błędu czasu wykonywania. Aby uzyskać więcej informacji, zobacz [_RTC_SetErrorType](/cpp/c-runtime-library/reference/rtc-seterrortype).
 
 ```cpp
 #include <windows.h>
@@ -107,7 +107,7 @@ int Catch_RTC_Failure(int errType, const wchar_t *file, int line,
 ```
 
 ## <a name="example"></a>Przykład
-Użyj `_RTC_SetErrorFuncW` do zainstalowania funkcji niestandardowych zamiast `_CrtDbgReportW`. Aby uzyskać więcej informacji, zobacz [_RTC_SetErrorFuncW](/cpp/c-runtime-library/reference/rtc-seterrorfuncw). `_RTC_SetErrorFuncW` Zwracają wartość poprzedniej funkcji raportowania, który można zapisać i przywrócić w razie potrzeby.
+Użyj `_RTC_SetErrorFuncW`, aby zainstalować funkcję niestandardową zamiast `_CrtDbgReportW`. Aby uzyskać więcej informacji, zobacz [_RTC_SetErrorFuncW](/cpp/c-runtime-library/reference/rtc-seterrorfuncw). Wartość zwracana `_RTC_SetErrorFuncW` jest poprzednią funkcją raportowania, którą można zapisać i przywrócić w razie potrzeby.
 
 ```cpp
 #include <rtcapi.h>
@@ -122,5 +122,5 @@ int main()
 }
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 [Dostosowywanie macierzystego sprawdzania w trakcie wykonywania](../debugger/native-run-time-checks-customization.md)

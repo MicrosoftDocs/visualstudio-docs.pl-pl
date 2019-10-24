@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_targetsection — | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_targetSection | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1dcfd72d7cd4cca527c2318b0c3c412020457e8e
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 923c4558429927d95e333ff34ed136fdcf90ba4b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64821021"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739198"
 ---
-# <a name="idiasymbolgettargetsection"></a>IDiaSymbol::get_targetSection
-Pobiera sekcja adresu docelowego thunk.
+# <a name="idiasymbolget_targetsection"></a>IDiaSymbol::get_targetSection
+Pobiera sekcję Address elementu docelowego thunk.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,13 +33,13 @@ HRESULT get_targetSection ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Część sekcji thunk adresu docelowego.
+określoną Część sekcji adresu docelowego thunk.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
-> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Wartość zwracana `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

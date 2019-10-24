@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e51918122834dd6b50952b9cc81a1d24a6477dd0
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: f98b99a31d9215d661879aa7fa52d4b671024496
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72431765"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738165"
 ---
 # <a name="debugging-native-code"></a>Debugowanie kodu natywnego
 Sekcja dotyczy niektórych typowych problemów z debugowaniem i technik dla aplikacji natywnych. Techniki omówione w tej sekcji są technikami wysokiego poziomu. Aby Mechanics za pomocą debugera programu Visual Studio, zobacz [pierwsze spojrzenie na debuger](../debugger/debugger-feature-tour.md)).
@@ -33,9 +33,9 @@ Sekcja dotyczy niektórych typowych problemów z debugowaniem i technik dla apli
 ## <a name="in-this-section"></a>W tej sekcji
  [Instrukcje: debugowanie zoptymalizowanego kodu](../debugger/how-to-debug-optimized-code.md) Podaje porady dotyczące debugowania zoptymalizowanego kodu, w tym, dlaczego należy debugować niezoptymalizowaną wersję programu, domyślne ustawienia optymalizacji konfiguracji debugowania i wydania oraz porady dotyczące znajdowania błędów, które pojawiają się tylko w zoptymalizowanym kodzie (Włączanie Optymalizacja w konfiguracji kompilacji debugowania).
 
- [DebugBreak i __debugbreak](../debugger/debugbreak-and-debugbreak.md) Opisuje funkcję Win32 `DebugBreak` i zawiera link do jego tematu referencyjnego w zestawie SDK platformy. Opisuje również `__debugbreak` wewnętrznie.
+ [DebugBreak i __debugbreak](../debugger/debugbreak-and-debugbreak.md) Opisuje funkcję Win32 `DebugBreak` i zawiera łącze do jej tematu referencyjnego w zestawie SDK platformy. Opisuje również `__debugbreak` wewnętrznie.
 
- [C/C++ potwierdzenia](../debugger/c-cpp-assertions.md) W tym artykule omówiono instrukcje potwierdzania, sposób ich działania, korzyści wynikające z ich używania (przechwytywanie błędów logiki, sprawdzanie wyników operacji i testowanie warunków błędów), interakcje z `_DEBUG` i typy potwierdzeń obsługiwanych w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+ [C/C++ potwierdzenia](../debugger/c-cpp-assertions.md) W tym artykule omówiono instrukcje potwierdzania, sposób ich działania, korzyści wynikające z ich używania (przechwytywanie błędów logiki, sprawdzanie wyników operacji i testowanie warunków błędów), interakcje z `_DEBUG`ami i typy potwierdzeń, które są obsługiwane w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
  [Instrukcje: Debugowanie kodu zestawu wbudowanego](../debugger/how-to-debug-inline-assembly-code.md) Zawiera krótkie instrukcje dotyczące korzystania z okna demontażu w celu wyświetlenia instrukcji zestawu i okna rejestrów, aby wyświetlić zawartość rejestru i zawiera łącza do tematów dotyczących tych okien.
 
@@ -58,7 +58,7 @@ Sekcja dotyczy niektórych typowych problemów z debugowaniem i technik dla apli
 
  [Pierwsze spojrzenie na debuger](../debugger/debugger-feature-tour.md) Zawiera łącza do większych sekcji dokumentacji debugowania. Informacje obejmują nowości w debugerze, ustawienia i przygotowania, punkty przerwania, obsługa wyjątków, edytowanie i kontynuowanie, debugowanie kodu zarządzanego, debugowanie kodu natywnego, debugowanie SQL i odwołania do interfejsu użytkownika.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Zabezpieczenia debugera](../debugger/debugger-security.md)
 - [Debugowanie w programie Visual Studio](../debugger/index.yml)

@@ -1,5 +1,5 @@
 ---
-title: Idiaenuminjectedsources::get__newenum — | Dokumentacja firmy Microsoft
+title: 'IDiaEnumInjectedSources:: get__NewEnum | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd2eb5df6c5635a2b2407cf9286b175a593dc25a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3b1a1a03545b20591aaa4c4e95f25d5927c428fc
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554176"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744518"
 ---
-# <a name="idiaenuminjectedsourcesgetnewenum"></a>IDiaEnumInjectedSources::get__NewEnum
-Pobiera <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> wersję tego modułu wyliczającego.
+# <a name="idiaenuminjectedsourcesget__newenum"></a>IDiaEnumInjectedSources::get__NewEnum
+Pobiera wersję <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> tego modułu wyliczającego.
 
 ## <a name="syntax"></a>Składnia
 
@@ -32,10 +32,10 @@ HRESULT get__NewEnum ( 
 
 #### <a name="parameters"></a>Parametry
  pRetVal
-- [out, retval] Zwraca `IUnknown` interfejs, który reprezentuje <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> wersję tego modułu wyliczającego.
+- [out, retval] Zwraca interfejs `IUnknown`, który reprezentuje <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> wersję tego modułu wyliczającego.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

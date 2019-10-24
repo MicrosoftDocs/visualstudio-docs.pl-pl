@@ -1,5 +1,5 @@
 ---
-title: Idiastackframe::get_registervalue — | Dokumentacja firmy Microsoft
+title: 'IDiaStackFrame:: get_registerValue | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a819293863b658f6e12609b2c1cd83c37532e02d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d270b9b177367c9a15c2b64f6f8bc5607c5a459d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832108"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741624"
 ---
-# <a name="idiastackframegetregistervalue"></a>IDiaStackFrame::get_registerValue
-Pobiera wartość określonego rejestru, ponieważ przechowywane w ramce stosu.
+# <a name="idiastackframeget_registervalue"></a>IDiaStackFrame::get_registerValue
+Pobiera wartość określonego rejestru jako przechowywaną w ramce stosu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -34,15 +34,15 @@ HRESULT get_registerValue(
 #### <a name="parameters"></a>Parametry
  `registerIndex`
 
-[in] Jedną z [cv_hreg_e — wyliczenie](../../debugger/debug-interface-access/cv-hreg-e.md) wartości wyliczenia.
+podczas Jedna z wartości wyliczenia [CV_HREG_e](../../debugger/debug-interface-access/cv-hreg-e.md) .
 
  `pRetVal`
 
-[out] Wartość przechowywana w rejestrze.
+określoną Wartość przechowywana w rejestrze.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)
 - [CV_HREG_e, wyliczenie](../../debugger/debug-interface-access/cv-hreg-e.md)

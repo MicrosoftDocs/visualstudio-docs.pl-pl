@@ -14,24 +14,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0c121e996972b47a91a018d910a5d3677cb4cffa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bf61dce9940279b490d9270420cc45baf0b82dc0
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62855201"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738654"
 ---
 # <a name="managedtype"></a>ManagedType
-Typ zarządzany (dowolny symbol zdefiniowany przez metadane lub natywnego do funkcji zarządzania w pamięci i zasobów, języków, takich jak C#) jest identyfikowane za pomocą `SymTagManagedType` symboli.
+Typ zarządzany (dowolny symbol zdefiniowany przez metadane lub natywny dla funkcji zarządzania pamięcią i zasobami języków takich jak C#) jest identyfikowany przez symbol `SymTagManagedType`.
 
 ## <a name="properties"></a>Właściwości
  W poniższej tabeli przedstawiono dodatkowe prawidłowe właściwości dla tego typu symbolu.
 
 |Właściwość|Typ danych|Opis|
 |--------------|---------------|-----------------|
-|[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|`BSTR`|Nazwy symboli zarządzanych.|
-|[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|Identyfikator indeksu: symbolu.|
-|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Zwraca `SymTagManagedType` (jeden z [symtagenum — wyliczenie](../../debugger/debug-interface-access/symtagenum.md) wartości).|
+|[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|`BSTR`|Nazwa zarządzanego symbolu.|
+|[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|Identyfikator indeksu symbolu.|
+|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Zwraca `SymTagManagedType` (jedną z wartości [wyliczenia SymTagEnum —](../../debugger/debug-interface-access/symtagenum.md) ).|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Hierarchia klas typów symboli](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)

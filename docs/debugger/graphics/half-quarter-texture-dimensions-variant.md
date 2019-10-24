@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 620300d1727adc41d5655bd33dde87ad592bba1c
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: f4c82836f5a80fae421a30721d8c3ee4c3d6893d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71252986"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72735393"
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>Wariant wymiarów połowy/ćwiartki tekstury
 Zmniejsza wymiary tekstury dla tekstury, które nie są obiektami docelowymi.
@@ -28,7 +28,7 @@ Zmniejsza wymiary tekstury dla tekstury, które nie są obiektami docelowymi.
  Jeśli tekstury zajmują większą ilość pamięci GPU niż jest dostępna, należy rozważyć zmniejszenie rozmiaru tekstury, ale dopiero po rozważeniu kompresji odpowiednich tekstur. Podobnie jak w przypadku mniejszych tekstur, skompresowane tekstury zajmują mniej pamięci i zmniejszają potrzebę przenoszące się do pamięci systemowej, ale ich wierność kolorów są ograniczone. Kompresja nie jest odpowiednia dla wszystkich tekstur, w zależności od ich zawartości — na przykład te, które mają znaczącą odmianę koloru w niewielkim obszarze — ale w przypadku wielu tekstur kompresja może zachować lepszą ogólną jakość obrazu niż zmniejszenie ich rozmiaru.
 
 ## <a name="remarks"></a>Uwagi
- Wymiary tekstury są skracane dla każdego wywołania `ID3D11Device::CreateTexture2D` , które tworzy teksturę źródłową. W `pDesc` odróżnieniu od tego, czy wymiary tekstury są ograniczone, gdy obiekt D3D11_TEXTURE2D_DESC został przemieszczony, opisuje teksturę, która jest używana podczas renderowania; to jest:
+ Wymiary tekstury są redukowane dla każdego wywołania `ID3D11Device::CreateTexture2D`, które tworzy teksturę źródłową. W odróżnieniu od tego, czy wymiary tekstury są ograniczone, gdy obiekt D3D11_TEXTURE2D_DESC przeszedł w `pDesc` opisuje teksturę używaną podczas renderowania; Czyli:
 
 - Element członkowski BindFlags ma tylko ustawioną flagę D3D11_BIND_SHADER_RESOURCE.
 
@@ -43,6 +43,6 @@ Zmniejsza wymiary tekstury dla tekstury, które nie są obiektami docelowymi.
 ## <a name="example"></a>Przykład
  Ten wariant zmienia rozmiar tekstury w czasie wykonywania przed wywołaniem do `CreateTexture2D`. Zalecamy stosowanie tego podejścia do kodu produkcyjnego, ponieważ tekstury o pełnym rozmiarze zużywają więcej miejsca na dysku, ponieważ dodatkowy krok może zwiększyć czas ładowania w aplikacji — szczególnie w przypadku skompresowanych tekstur, które wymagają znaczącego obliczenia zasoby do zakodowania. Zamiast tego zalecamy zmianę rozmiaru tekstury w tryb offline przy użyciu edytora obrazu lub procesora obrazu, który jest częścią potoku kompilacji. Te podejścia zmniejszają wymagania dotyczące miejsca na dysku i eliminują obciążenie środowiska uruchomieniowego w aplikacji oraz zapewniają większy czas przetwarzania, dzięki czemu można zachować najlepszą jakość obrazu podczas zmniejszania lub kompresowania tekstur.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wariant generowania mipmapy](mip-map-generation-variant.md)
 - [Wariant kompresji tekstury BC](bc-texture-compression-variant.md)

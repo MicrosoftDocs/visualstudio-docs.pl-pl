@@ -1,5 +1,5 @@
 ---
-title: Ustawianie wyrażenia kontrolnego na zmiennych w równoległych wątków | Dokumentacja firmy Microsoft
+title: Ustaw obserwację zmiennych w wątkach równoległych | Microsoft Docs
 ms.date: 04/25/2017
 ms.topic: conceptual
 f1_keywords:
@@ -17,74 +17,74 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6026ab6d0d59fb3a8f945e554fda26f10d98f952
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0628e75c54cf0da10dc5aecdf243ae1dda3485fb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388471"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72732016"
 ---
-# <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio-c-visual-basic-c"></a>Ustawianie wyrażenia kontrolnego na zmiennych w równoległych wątków w programie Visual Studio (C#, Visual Basic, C++)
-W oknie czujki równoległej może jednocześnie wyświetlać wartości, które zawiera jedno wyrażenie, w wielu wątkach. Każdy wiersz reprezentuje wątek, który jest uruchomiony w aplikacji, ale wątek może być reprezentowany w wielu wierszach. Dokładniej mówiąc każdy wiersz reprezentuje wywołanie funkcji, w których funkcja Podpis pasuje do funkcji w bieżącej ramki stosu. Można sortować, zmienić kolejność, Usuń i grupować elementy, które w kolumnach. Możesz Flaga, Usuń flagę, blokowanie (zawieszenie) i Odblokuj wątki (Wznów). Następujące kolumny są wyświetlane w **równoległego wyrażenia kontrolnego** okna:
+# <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio-c-visual-basic-c"></a>Ustaw obserwację zmiennych w wątkach równoległych w programie VisualC#Studio (, C++Visual Basic,)
+W okno wyrażeń kontrolnych równoległym można jednocześnie wyświetlić wartości, które są przechowywane w jednym wyrażeniu na wielu wątkach. Każdy wiersz reprezentuje wątek, który jest uruchomiony w aplikacji, ale wątek może być reprezentowany w wielu wierszach. Dokładniej mówiąc, każdy wiersz reprezentuje wywołanie funkcji, którego sygnatura funkcji dopasowuje funkcję w bieżącej klatce stosu. Elementy, które znajdują się w kolumnach, można sortować, zmienić ich kolejność, usunąć i zgrupować. Wątki można flagować, anulować flagować, zamrażać (wstrzymywać) i rozmrażać (wznawiać). W oknie **czujki równoległej** są wyświetlane następujące kolumny:
 
-- Kolumna flagi, w którym można oznaczyć wątek, który chcesz zwrócić szczególną uwagę.
+- Kolumna flagi, w której można oznaczyć wątek, do którego chcemy zwrócić szczególną uwagę.
 
-- Bieżącej kolumny wątku, w której żółta strzałka wskazuje bieżący wątek (zielona strzałka z zakręconym ogonkiem wskazuje, czy innym niż bieżący wątek jest bieżący kontekst debugera).
+- Kolumna bieżącego wątku, w której żółta strzałka wskazuje bieżący wątek (zielona strzałka z ogonem klamrowym wskazuje, że wątek inny niż bieżący ma bieżący kontekst debugera).
 
-- Konfigurowalna kolumna, która może wyświetlać maszynę, proces, kafelków, zadania i wątku.
+- Konfigurowalna kolumna, która może wyświetlać maszynę, proces, kafelek, zadanie i wątek.
 
   > [!TIP]
-  > Aby wyświetlić informacje o zadaniu w **równoległego wyrażenia kontrolnego** okna, należy najpierw otworzyć **zadań** okna.
+  > Aby wyświetlić informacje o zadaniu w oknie **czujki równoległej** , należy najpierw otworzyć okno **zadania** .
 
-- Pustą *Dodaj wyrażenie kontrolne* kolumn, w których można wprowadzić wyrażenia, aby obejrzeć.
+- Puste *Dodaj kolumny czujki* , w której można wprowadzać wyrażenia do obejrzenia.
 
   [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-### <a name="to-display-the-parallel-watch-window"></a>Aby wyświetlić okno czujki równoległej
+### <a name="to-display-the-parallel-watch-window"></a>Aby wyświetlić okno wyrażeń kontrolnych równoległy
 
 1. Ustaw punkt przerwania w kodzie.
 
-2. Na pasku menu wybierz **debugowania**, **Rozpocznij debugowanie**. Poczekaj, aż aplikacja do osiągnięcia punktu przerwania.
+2. Na pasku menu wybierz **Debuguj**, **Rozpocznij debugowanie**. Poczekaj, aż aplikacja osiągnie punkt przerwania.
 
-3. Na pasku menu wybierz **debugowania**, **Windows**, **równoległego wyrażenia kontrolnego**, a następnie wybierz Okno czujki. Możesz otworzyć maksymalnie cztery systemu windows.
+3. Na pasku menu wybierz kolejno opcje **Debuguj**, **Windows**i **Parallel Watch**, a następnie okno Czujka. Możesz otworzyć maksymalnie cztery okna.
 
-### <a name="to-add-a-watch-expression"></a>Aby dodać wyrażenia kontrolnego
+### <a name="to-add-a-watch-expression"></a>Aby dodać wyrażenie czujki
 
-- Wybierz jedną z pustą *Dodaj wyrażenie kontrolne* kolumny, a następnie wprowadź wyrażenie czujki.
+- Wybierz jedną z pustych opcji *Dodaj* kolumny, a następnie wprowadź wyrażenie kontrolne.
 
-### <a name="to-flag-or-unflag-a-thread"></a>Flaga lub usuń flagę wątku
+### <a name="to-flag-or-unflag-a-thread"></a>Aby oflagować lub Usuń flagę wątku
 
-- Wybierz kolumny flag wiersza (pierwsza kolumna) lub Otwórz menu skrótów dla wątku i wybierz pozycję **flagi** lub **Unflag**.
+- Wybierz kolumnę flag dla wiersza (pierwszej kolumny) lub Otwórz menu skrótów dla wątku, a następnie wybierz **flagę** lub Usuń **flagę**.
 
-### <a name="to-display-only-flagged-threads"></a>Aby wyświetlić tylko oflagowane wątki
+### <a name="to-display-only-flagged-threads"></a>Aby wyświetlić tylko Oflagowane wątki
 
-- Wybierz **Pokaż tylko oflagowane** przycisk w lewym górnym rogu **równoległego wyrażenia kontrolnego** okna.
+- Wybierz przycisk **Pokaż tylko Oflagowane** w lewym górnym rogu okna **czujki równoległej** .
 
 ### <a name="to-switch-to-another-thread"></a>Aby przełączyć się do innego wątku
 
-- Kliknij dwukrotnie kolumnę bieżącego wątku (druga kolumna). (Klawiatura: Zaznacz wiersz i naciśnij klawisz Enter).
+- Kliknij dwukrotnie kolumnę bieżący wątek (druga kolumna). (Klawiatura: zaznacz wiersz i naciśnij klawisz ENTER).
 
 ### <a name="to-sort-a-column"></a>Aby posortować kolumnę
 
 - Wybierz nagłówek kolumny.
 
-### <a name="to-group-threads"></a>Grupa wątków
+### <a name="to-group-threads"></a>Do grup wątków
 
-- Otwórz menu skrótów dla okno czujki równoległej, wybierz polecenie **Group By**, a następnie wybierz element odpowiednie podmenu.
+- Otwórz menu skrótów dla okno wyrażeń kontrolnych równoległych, wybierz pozycję **Grupuj według**, a następnie wybierz odpowiedni element podmenu.
 
-### <a name="to-freeze-or-thaw-threads"></a>Na blokowanie lub odblokowywanie wątków
+### <a name="to-freeze-or-thaw-threads"></a>Aby zablokować lub odblokować wątki
 
-- Otwórz menu skrótów dla wiersza, a następnie wybierz **Freeze** lub **Odblokuj**.
+- Otwórz menu skrótów dla wiersza, a następnie wybierz polecenie **Zablokuj** lub **rozmrażaj**.
 
-### <a name="to-export-the-data-in-the-parallel-watch-window"></a>Aby wyeksportować dane w oknie czujki równoległej
+### <a name="to-export-the-data-in-the-parallel-watch-window"></a>Aby wyeksportować dane w okno wyrażeń kontrolnych równoległym
 
-- Wybierz **Otwórz w programie Excel** przycisk, a następnie wybierz **Otwórz w programie Excel** lub **Eksportuj do pliku CSV**.
+- Wybierz przycisk **Otwórz w programie Excel** , a następnie wybierz **Otwórz w programie Excel** lub **Eksportuj do pliku CSV**.
 
-### <a name="to-filter-by-a-boolean-expression"></a>Aby filtrować według wyrażenie warunkowe
+### <a name="to-filter-by-a-boolean-expression"></a>Aby odfiltrować według wyrażenia logicznego
 
-- Wprowadź wyrażenie warunkowe w **filtr, używając wyrażenia warunkowego** pole. Debuger ocenia wyrażenia dla każdego kontekstu wątku. Tylko wiersze, w których wartość jest `true` są wyświetlane.
+- Wprowadź wyrażenie logiczne w polu **Filtruj według wartości logicznej** . Debuger oblicza wyrażenie dla każdego kontekstu wątku. Wyświetlane są tylko wiersze, w których jest `true` wartość.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Debugowanie aplikacji wielowątkowych](../debugger/debug-multithreaded-applications-in-visual-studio.md)
-- [Instrukcje: Korzystanie z okna wątków procesora GPU](../debugger/how-to-use-the-gpu-threads-window.md)
+- [Instrukcje: korzystanie z okna wątków GPU](../debugger/how-to-use-the-gpu-threads-window.md)
 - [Przewodnik: debugowanie aplikacji C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

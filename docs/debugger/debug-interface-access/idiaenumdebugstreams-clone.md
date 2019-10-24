@@ -1,5 +1,5 @@
 ---
-title: Idiaenumdebugstreams::clone — | Dokumentacja firmy Microsoft
+title: 'IDiaEnumDebugStreams:: Clone | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11a7f8e051350b066c745c47530ab4ed818f8b1b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 105a84b7c4a1b0a43f8f8008cffbebe7b6e23af5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838392"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744778"
 ---
 # <a name="idiaenumdebugstreamsclone"></a>IDiaEnumDebugStreams::Clone
-Tworzy moduł wyliczający, który zawiera ten sam stan wyliczenia jako bieżącego modułu wyliczającego.
+Tworzy moduł wyliczający, który zawiera ten sam stan wyliczania co bieżący moduł wyliczający.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,10 +33,10 @@ HRESULT Clone ( 
 #### <a name="parameters"></a>Parametry
  `ppenum`
 
-[out] Zwraca [idiaenumdebugstreams —](../../debugger/debug-interface-access/idiaenumdebugstreams.md) obiekt, który zawiera zduplikowane modułu wyliczającego. Strumienie nie są duplikowane, tylko moduł wyliczający.
+określoną Zwraca obiekt [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md) , który zawiera duplikat modułu wyliczającego. Strumienie nie są duplikowane, tylko moduł wyliczający.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)

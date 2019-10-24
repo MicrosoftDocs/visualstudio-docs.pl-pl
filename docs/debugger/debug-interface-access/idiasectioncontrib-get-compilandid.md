@@ -1,5 +1,5 @@
 ---
-title: Idiasectioncontrib::get_compilandid — | Dokumentacja firmy Microsoft
+title: 'IDiaSectionContrib:: get_compilandId | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e4a548a5d6e564c2be3148d63ee28913fb1143d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b66740fc4c767dca3539d4a2889d82b485902603
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839527"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742698"
 ---
-# <a name="idiasectioncontribgetcompilandid"></a>IDiaSectionContrib::get_compilandId
-Pobiera identyfikator compiland — w sekcji.
+# <a name="idiasectioncontribget_compilandid"></a>IDiaSectionContrib::get_compilandId
+Pobiera identyfikator jednostka kompilacji dla sekcji.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,10 +33,10 @@ HRESULT get_compilandId ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca identyfikator compiland — w sekcji.
+określoną Zwraca identyfikator jednostka kompilacji dla sekcji.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`. Zwraca `S_FALSE`, jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

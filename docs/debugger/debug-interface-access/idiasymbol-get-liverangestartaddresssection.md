@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_liveRangeStartAddressSection | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_liveRangeStartAddressSection | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c99b5a14a321a28bdbe7337dcc7cdfa5febdad5d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: a23f0661d8af6417d754fd7a71c66c5dd3ef1135
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64786530"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739904"
 ---
-# <a name="idiasymbolgetliverangestartaddresssection"></a>IDiaSymbol::get_liveRangeStartAddressSection
-Zwraca część sekcji adres początkowy zakresu, w którym symbolu lokalnego jest poprawna.
+# <a name="idiasymbolget_liverangestartaddresssection"></a>IDiaSymbol::get_liveRangeStartAddressSection
+Zwraca część sekcji adresu początkowego zakresu, w którym lokalny symbol jest prawidłowy.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,25 +33,25 @@ HRESULT get_liveRangeStartAddressSection ( 
 #### <a name="parameters"></a>Parametry
  `section`
 
-[out] Zwraca część sekcji początkowy zakresu adresów.
+określoną Zwraca część sekcji zakresu adresów początkowych.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
 > [!NOTE]
-> Zwrócony kod błędu: oznacza, że symbol nie ma informacji o zakresie na żywo.
+> Zwrócony kod błędu oznacza, że symbol nie zawiera informacji o zakresie na żywo.
 
 ## <a name="remarks"></a>Uwagi
- Adres utworzone przez sekcję i przesunięcie to początek zakresu, w którym symbol jest poprawna.
+ Adres utworzony przez sekcję i przesunięcie to początek zakresu, w którym symbol jest prawidłowy.
 
- Aby uzyskać przesunięcia częściami składowymi adresu, użyj [IDiaSymbol::get_liveRangeStartAddressOffset](../../debugger/debug-interface-access/idiasymbol-get-liverangestartaddressoffset.md).
+ Aby uzyskać część przesunięcia adresu, użyj [IDiaSymbol:: get_liveRangeStartAddressOffset](../../debugger/debug-interface-access/idiasymbol-get-liverangestartaddressoffset.md).
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: Dia2.h
+ Nagłówek: dia2. h
 
- Biblioteka: diaguids.lib
+ Biblioteka: diaguids. lib
 
- DLL: msdia100.dll
+ DLL: msdia100. dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

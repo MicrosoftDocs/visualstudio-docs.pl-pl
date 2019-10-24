@@ -1,5 +1,5 @@
 ---
-title: Idiainjectedsource::get_objectfilename — | Dokumentacja firmy Microsoft
+title: 'IDiaInjectedSource:: get_objectFilename | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bf9b325354bd95678969e5d1db4c13370d6d8b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f4c35a0f6473e2cc71079f8c453215d51494632c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839891"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743346"
 ---
-# <a name="idiainjectedsourcegetobjectfilename"></a>IDiaInjectedSource::get_objectFilename
-Pobiera nazwę pliku obiektu, do którego został skompilowany źródła.
+# <a name="idiainjectedsourceget_objectfilename"></a>IDiaInjectedSource::get_objectFilename
+Pobiera nazwę pliku obiektu, do którego zostało skompilowane źródło.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,10 +33,10 @@ HRESULT get_objectFilename ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca nazwę pliku obiektu, do którego został skompilowany źródła.
+określoną Zwraca nazwę pliku obiektu, do którego zostało skompilowane źródło.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`. Zwraca `S_FALSE`, jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

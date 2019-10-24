@@ -1,5 +1,5 @@
 ---
-title: 'Błąd: Sprawdzanie zabezpieczeń nie powiodło się, ponieważ administrator usług IIS nie odpowiada. | Dokumentacja firmy Microsoft'
+title: 'Błąd: Sprawdzanie zabezpieczeń nie powiodło się, ponieważ usługa administratora usług IIS nie odpowiada | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,33 +16,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ae97ae0594b06e9b35ac3bdd61eacf852968889
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f668de3d7c7e9a8bd075beb972199cf849feea65
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62851035"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737872"
 ---
-# <a name="error-a-security-check-failed-because-the-iis-admin-service-did-not-respond"></a>Błąd: Sprawdzanie zabezpieczeń nie powiodło się, ponieważ administrator usług IIS nie odpowiada.
-Ten błąd występuje, gdy administrator usług IIS nie odpowiada. Zwykle oznacza to, że występuje problem z instalacją usług IIS. Po pierwsze sprawdzenie, czy usługa jest uruchomiona przy użyciu **usług** narzędzia z **narzędzia administracyjne**.
+# <a name="error-a-security-check-failed-because-the-iis-admin-service-did-not-respond"></a>Błąd: Sprawdzanie zabezpieczeń nie powiodło się ponieważ usługa administratora nie odpowiada
+Ten błąd występuje, gdy usługa administratora usług IIS nie odpowiada. Zazwyczaj oznacza to, że występuje problem z instalacją usług IIS. Najpierw sprawdź, czy usługa jest uruchomiona przy użyciu narzędzia **usług** z **narzędzi administracyjnych**.
 
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd
 
-- Ponowne zainstalowanie usług IIS, przy użyciu **apletu Dodaj lub usuń programy** Panelu sterowania.
+- Ponownie zainstaluj usługi IIS przy użyciu apletu **Dodaj lub usuń programy** w panelu sterowania.
 
 - —lub—
 
-- Usuwanie usług IIS z komputera, przy użyciu apletu Dodaj lub usuń programy w Panelu sterowania. Jeśli usunięto usług IIS i nadal występują problemy, sprawdź rejestru i upewnij się, że ten klucz nie istnieje:
+- Usuń usługi IIS z maszyny za pomocą panelu sterowania Dodaj lub usuń programy. Jeśli usługi IIS zostały usunięte i nadal występują problemy, sprawdź rejestr i upewnij się, że ten klucz już nie istnieje:
 
     `HKEY_CLASSES_ROOT\CLSID\{A9E69610-B80D-11D0-B9B9-00A0C922E750}`
 
      —lub—
 
-- Wyłącz Administrator usług IIS, za pomocą Panelu sterowania narzędzia administracyjne. Spowoduje to wyłączenie usług IIS na komputerze.
+- Wyłącz usługę administratora usług IIS przy użyciu panelu sterowania narzędzia administracyjne. Spowoduje to wyłączenie usług IIS na komputerze.
 
-     Po wykonaniu dowolnej z tych trzech kroków, uruchom ponownie komputer.
+     Po wykonaniu któregoś z tych trzech kroków ponownie uruchom maszynę.
 
-     Aby uzyskać dodatkowe informacje Zobacz dokumentację usług IIS.
+     Dodatkowe informacje znajdują się w dokumentacji usług IIS.
 
-## <a name="see-also"></a>Zobacz też
-- [Debugowanie aplikacji internetowych: Błędy i rozwiązywanie problemów](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+## <a name="see-also"></a>Zobacz także
+- [Debugowanie aplikacji internetowych: błędy i rozwiązywanie problemów](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

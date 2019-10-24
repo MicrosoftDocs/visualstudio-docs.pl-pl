@@ -10,12 +10,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9419721a7d18f694f3be0afe4f12c9a3c8594ad2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fa4d5013aea15bec9b2d7c308836ef5e9d212a65
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666405"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747861"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>Okno dialogowe Opcje, Projekty i rozwiązania, Projekty sieci Web
 
@@ -33,7 +33,7 @@ Wybierz tę opcję, aby użyć IIS Express zamiast serwera deweloperskiego progr
 
 Jeśli ta opcja jest ustawiona, pojawi się ostrzeżenie, jeśli spróbujesz uruchomić aplikację sieci Web, gdy nie zostanie ona skompilowana bez błędów.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Okno dialogowe Opcje, projekty i rozwiązania](projects-and-solutions-options-dialog-box.md)
 - [Okno dialogowe Opcje, projekty i rozwiązania, kompilacja i uruchomienie](options-dialog-box-projects-and-solutions-web-projects.md)

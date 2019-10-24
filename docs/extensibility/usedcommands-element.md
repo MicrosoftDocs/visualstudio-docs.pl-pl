@@ -1,5 +1,5 @@
 ---
-title: UsedCommands, Element | Dokumentacja firmy Microsoft
+title: UsedCommands — element | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,17 +13,17 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e43834517855f72dd32c024c222089cf42c7c3ac
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 66361ad58c15e8539fcda6d0ec4468dd8b68289b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316282"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72718624"
 ---
 # <a name="usedcommands-element"></a>UsedCommands, element
-UsedCommands, element grupy elementów UsedCommand i inne grupy UsedCommands.
+Element UsedCommands Grupuje elementy UsedCommand i inne grupowania UsedCommands.
 
- UsedCommands, element jest opcjonalne. Nie wywołuj polecenia zdefiniowane poza pakietu, nie trzeba umieścić w tej sekcji w pliku vsct.
+ Element UsedCommands jest opcjonalny. Jeśli nie wywołasz poleceń zdefiniowanych poza pakietem, nie musisz uwzględniać tej sekcji w pliku. vsct.
 
 ## <a name="syntax"></a>Składnia
 
@@ -40,19 +40,19 @@ UsedCommands, element grupy elementów UsedCommand i inne grupy UsedCommands.
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|Warunek|Opcjonalna. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Warunek|Opcjonalny. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementy podrzędne
 
 |Element|Opis|
 |-------------|-----------------|
-|[UsedCommand, element](../extensibility/usedcommand-element.md)|Polecenie, które jest implementowany przez inny kod.|
+|[UsedCommand, element](../extensibility/usedcommand-element.md)|Polecenie, które jest implementowane przez inny kod.|
 
 ### <a name="parent-elements"></a>Elementy nadrzędne
 
 |Element|Opis|
 |-------------|-----------------|
-|[CommandTable, element](../extensibility/commandtable-element.md)|Definiuje wszystkie elementy, które reprezentują poleceń (na przykład, elementy menu, menu, paski narzędzi i pola kombi), które zapewnia pakietu VSPackage do zintegrowanego środowiska programistycznego (IDE).|
+|[CommandTable, element](../extensibility/commandtable-element.md)|Definiuje wszystkie elementy, które reprezentują polecenia (na przykład elementy menu, menu, paski narzędzi i pola kombi), które pakietu VSPackage zapewnia zintegrowane środowisko programistyczne (IDE).|
 
 ## <a name="example"></a>Przykład
 
@@ -64,6 +64,6 @@ UsedCommands, element grupy elementów UsedCommand i inne grupy UsedCommands.
 </UsedCommands>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [UsedCommand, element](../extensibility/usedcommand-element.md)
 - [Tabela poleceń programu Visual Studio (pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

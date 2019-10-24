@@ -1,5 +1,5 @@
 ---
-title: Idiaenuminjectedsources — | Dokumentacja firmy Microsoft
+title: IDiaEnumInjectedSources | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a9b480a497953eebeef1918657ed901de10845a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: feaf5d372279c6ab24053058a14aba4b3a71fd78
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829924"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744469"
 ---
 # <a name="idiaenuminjectedsources"></a>IDiaEnumInjectedSources
-Wyliczanie różnych źródeł wprowadzonego znajdujących się w źródle danych.
+Wyliczyć różne wstrzyknięte źródła zawarte w źródle danych.
 
 ## <a name="syntax"></a>Składnia
 
@@ -28,26 +28,26 @@ Wyliczanie różnych źródeł wprowadzonego znajdujących się w źródle danyc
 IDiaEnumInjectedSources : IUnknown
 ```
 
-## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych
 W poniższej tabeli przedstawiono metody `IDiaEnumInjectedSources`.
 
 |Metoda|Opis|
 |------------|-----------------|
-|[IDiaEnumInjectedSources::get__NewEnum](../../debugger/debug-interface-access/idiaenuminjectedsources-get-newenum.md)|Pobiera [interfejsu interfejs IEnumVARIANT](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) wersję tego modułu wyliczającego.|
-|[IDiaEnumInjectedSources::get_Count](../../debugger/debug-interface-access/idiaenuminjectedsources-get-count.md)|Pobiera numer wprowadzony źródeł.|
-|[IDiaEnumInjectedSources::Item](../../debugger/debug-interface-access/idiaenuminjectedsources-item.md)|Pobiera wstrzyknięte źródło za pomocą indeksu.|
-|[IDiaEnumInjectedSources::Next](../../debugger/debug-interface-access/idiaenuminjectedsources-next.md)|Pobiera określoną liczbę źródeł wprowadzonego w kolejności wyliczenia.|
-|[IDiaEnumInjectedSources::Skip](../../debugger/debug-interface-access/idiaenuminjectedsources-skip.md)|Pomija określoną liczbę źródeł wprowadzonego w kolejności wyliczenia.|
-|[IDiaEnumInjectedSources::Reset](../../debugger/debug-interface-access/idiaenuminjectedsources-reset.md)|Resetuje sekwencji wyliczenia na początku.|
-|[IDiaEnumInjectedSources::Clone](../../debugger/debug-interface-access/idiaenuminjectedsources-clone.md)|Tworzy moduł wyliczający, który zawiera ten sam stan wyliczenia jako bieżącego modułu wyliczającego.|
+|[IDiaEnumInjectedSources::get__NewEnum](../../debugger/debug-interface-access/idiaenuminjectedsources-get-newenum.md)|Pobiera wersję [interfejsu IEnumVARIANT](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) tego modułu wyliczającego.|
+|[IDiaEnumInjectedSources::get_Count](../../debugger/debug-interface-access/idiaenuminjectedsources-get-count.md)|Pobiera liczbę wstrzykniętych źródeł.|
+|[IDiaEnumInjectedSources::Item](../../debugger/debug-interface-access/idiaenuminjectedsources-item.md)|Pobiera wstrzykiwane Źródło przy użyciu indeksu.|
+|[IDiaEnumInjectedSources::Next](../../debugger/debug-interface-access/idiaenuminjectedsources-next.md)|Pobiera określoną liczbę wstrzykniętych źródeł w sekwencji wyliczenia.|
+|[IDiaEnumInjectedSources::Skip](../../debugger/debug-interface-access/idiaenuminjectedsources-skip.md)|Pomija określoną liczbę wprowadzonych źródeł w sekwencji wyliczenia.|
+|[IDiaEnumInjectedSources::Reset](../../debugger/debug-interface-access/idiaenuminjectedsources-reset.md)|Resetuje sekwencję wyliczenia na początek.|
+|[IDiaEnumInjectedSources::Clone](../../debugger/debug-interface-access/idiaenuminjectedsources-clone.md)|Tworzy moduł wyliczający, który zawiera ten sam stan wyliczania co bieżący moduł wyliczający.|
 
 ## <a name="remarks"></a>Uwagi
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
-Ten interfejs jest można uzyskać przez wywołanie [idiasession::findinjectedsource —](../../debugger/debug-interface-access/idiasession-findinjectedsource.md) metodę o nazwie pliku określonego źródła lub przez wywołanie [idiasession::getenumtables —](../../debugger/debug-interface-access/idiasession-getenumtables.md) metody z identyfikatorem GUID `IDiaEnumInjectedSources` interfejsu.
+Ten interfejs jest uzyskiwany przez wywołanie metody [IDiaSession:: findInjectedSource](../../debugger/debug-interface-access/idiasession-findinjectedsource.md) z nazwą określonego pliku źródłowego lub wywołaniem metody [IDiaSession:: getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md) z identyfikatorem GUID interfejsu `IDiaEnumInjectedSources`.
 
 ## <a name="example"></a>Przykład
-W tym przykładzie pokazano, jak uzyskać ( `GetEnumInjectedSources` funkcja) i użyj ( `DumpAllInjectedSources` funkcji) `IDiaEnumInjectedSources` interfejsu. Zobacz [idiapropertystorage —](../../debugger/debug-interface-access/idiapropertystorage.md) interfejs do implementacji `PrintPropertyStorage` funkcji. Dla alternatywnej danych wyjściowych, zobacz [idiainjectedsource —](../../debugger/debug-interface-access/idiainjectedsource.md) interfejsu.
+Ten przykład pokazuje, jak uzyskać (funkcja `GetEnumInjectedSources`) i użyć (funkcji `DumpAllInjectedSources`) interfejsu `IDiaEnumInjectedSources`. Zobacz interfejs [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md) , aby uzyskać implementację funkcji `PrintPropertyStorage`. Aby uzyskać alternatywny wynik, zobacz Interfejs [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) .
 
 ```C++
 
@@ -106,13 +106,13 @@ void DumpAllInjectedSources( IDiaSession* pSession)
 ```
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: Dia2.h
+Nagłówek: dia2. h
 
-Biblioteka: diaguids.lib
+Biblioteka: diaguids. lib
 
-DLL: msdia80.dll
+DLL: msdia80. dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Interfejsy (Zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaSession::findInjectedSource](../../debugger/debug-interface-access/idiasession-findinjectedsource.md)
 - [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)

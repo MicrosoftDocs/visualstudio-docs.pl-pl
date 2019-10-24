@@ -1,5 +1,5 @@
 ---
-title: 'Błąd: Trybu mieszanego debugowania x64 procesów jest obsługiwana tylko w przypadku korzystania z programu Microsoft .NET Framework 4 lub nowszej | Dokumentacja firmy Microsoft'
+title: 'Błąd: debugowanie w trybie mieszanym dla procesów x64 jest obsługiwane tylko w przypadku korzystania z Microsoft .NET Framework 4 lub nowszego | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -14,23 +14,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9ef0daf5fd28bd829edcdce412839b03ed8347bf
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 67b9d1c737e4490195b209abca824b2d6d51176c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745440"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737602"
 ---
-# <a name="error-mixed-mode-debugging-for-x64-processes-is-supported-only-when-using-microsoft-net-framework-4-or-greater"></a>Błąd: Debugowanie procesów 64-bitowych w trybie mieszanym jest obsługiwane tylko w przypadku korzystania z programu Microsoft .NET Framework 4 lub nowszej wersji
-Aby debugować kod mieszany natywnych i zarządzanych w procesie 64-bitowym, konieczne jest posiadanie .NET Framework w wersji 4. Debugowanie w trybie mieszanym dla procesów 64-bitowych z .NET Framework w wersji wcześniejszej niż 4 nie jest obsługiwane.
+# <a name="error-mixed-mode-debugging-for-x64-processes-is-supported-only-when-using-microsoft-net-framework-4-or-greater"></a>Błąd: debugowanie w trybie mieszanym dla procesów x64 jest obsługiwane tylko w przypadku korzystania z programu Microsoft .NET Framework 4 lub nowszej wersji
+Aby debugować mieszany kod natywny i zarządzany w procesie 64-bitowym, musisz mieć .NET Framework w wersji 4. Debugowanie w trybie mieszanym 64-bitowych procesów z .NET Framework wersjami wcześniejszymi niż 4 nie jest obsługiwane.
 
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd
 
 - Wykonaj jedną z następujących czynności:
 
-  - Uaktualnić używany program .NET Framework w wersji 4.
+  - Uaktualnij .NET Framework do wersji 4.
 
-  - Twórz 32-bitowej wersji aplikacji do debugowania.
+  - Utwórz 32-bitową wersję aplikacji na potrzeby debugowania.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Debugowanie zdalne](../debugger/remote-debugging.md)

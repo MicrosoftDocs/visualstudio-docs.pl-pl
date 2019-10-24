@@ -1,5 +1,5 @@
 ---
-title: Przy użyciu platformy .NET 4.x na platformie Unity
+title: Używanie platformy .NET 4.x w aparacie Unity
 author: therealjohn
 ms.author: johmil
 ms.date: 08/29/2018
@@ -8,85 +8,85 @@ ms.assetid: E2C9420F-A5D5-4472-9020-2B63FB27A133
 ms.technology: vs-unity-tools
 ms.workload:
 - unity
-ms.openlocfilehash: 0fb4560a196404687c60ce67f39b9c0754a24769
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: b1f10778c4866e67630fcac7af3b92b3de780aa5
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253142"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777741"
 ---
-# <a name="using-net-4x-in-unity"></a>Przy użyciu platformy .NET 4.x na platformie Unity
+# <a name="using-net-4x-in-unity"></a>Używanie platformy .NET 4.x w aparacie Unity
 
-C# i .NET, technologii podstawowych skryptów Unity, nadal otrzymywać aktualizacje, ponieważ program Microsoft pierwotnie udostępnionego im w 2002 roku. Ale deweloperów Unity mogą nie być świadomy nieprzerwany strumień nowych funkcji dodanych do języka C# i .NET Framework. Wynika to z przed środowisku Unity 2017.1 Unity używał .NET 3.5 równoważne skryptów środowiska uruchomieniowego, brak lat aktualizacji.
+C#i .NET, technologie bazowe skryptów środowiska Unity, nadal mogą otrzymywać aktualizacje, ponieważ firma Microsoft pierwotnie wydała je w 2002. Jednak deweloperzy środowiska Unity mogą nie wiedzieć o stałym strumieniu nowych funkcji dodanych do C# języka i .NET Framework. Jest to spowodowane tym, że przed Unity 2017,1 aparat Unity korzysta z programu .NET 3,5 równoważnego środowiska uruchomieniowego skryptów, w którym brakuje lat aktualizacji.
 
-Wydanej w środowisku Unity 2017.1 Unity wprowadzona wersja eksperymentalna jego skryptów środowiska uruchomieniowego, uaktualnienie do platformy .NET 4.6, C# 6 zgodnej wersji. W Unity 2018.1 4.x równoważne środowiska uruchomieniowego .NET przestaje być uważany za eksperymentalnych, podczas starsze równoważne środowiska uruchomieniowego jest teraz uważany za starszą wersją .NET 3.5. A wraz z wydaniem Unity 2018.3 Unity jest projekcji się uaktualniony skryptów środowiska uruchomieniowego wybór domyślny i zaktualizować nawet w przypadku języka C# 7. Więcej informacji oraz najświeższe informacje na ten harmonogram działania dla odczytu mechanizmu Unity [wpis w blogu](https://blogs.unity3d.com/2018/07/11/scripting-runtime-improvements-in-unity-2018-2/) lub odwiedź ich [forum eksperymentalne podglądy skryptów](https://forum.unity.com/forums/experimental-scripting-previews.107/). W międzyczasie zapoznaj się z sekcje poniżej, aby dowiedzieć się więcej o nowych funkcjach, teraz dostępna do platformy .NET 4.x skryptów aparatu plików wykonywalnych.
+W wersji aparatu Unity 2017,1 środowisko Unity wprowadziło eksperymentalną wersję środowiska uruchomieniowego skryptów do wersji zgodnej z programem C# .NET 4,6, 6. W środowisku Unity 2018,1 środowisko uruchomieniowe programu .NET 4. x nie jest już uważane za eksperymentalne, natomiast starsze środowisko uruchomieniowe programu .NET 3,5 jest teraz uznawane za starszą wersję. Wraz z wydaniem aparatu Unity 2018,3, środowisko Unity jest projekcją w celu przeprowadzenia domyślnego wyboru środowiska uruchomieniowego skryptów i zaktualizowania jeszcze bardziej C# do 7. Aby uzyskać więcej informacji i najnowsze aktualizacje dotyczące tego przewodnika, Przeczytaj [wpis w blogu](https://blogs.unity3d.com/2018/07/11/scripting-runtime-improvements-in-unity-2018-2/) aparatu Unity lub odwiedź [forum wglądu w skrypty eksperymentalne](https://forum.unity.com/forums/experimental-scripting-previews.107/). W międzyczasie zapoznaj się z poniższymi sekcjami, aby dowiedzieć się więcej o nowych funkcjach dostępnych teraz w środowisku uruchomieniowym obsługi skryptów .NET 4. x.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-* [Środowisku Unity 2017.1 lub nowszej](https://unity3d.com/) (2018.2 zalecane)
+* [Unity 2017,1 lub nowszy](https://unity3d.com/) (zalecane jest 2018,2)
 * [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
 
-## <a name="enabling-the-net-4x-scripting-runtime-in-unity"></a>Włączanie 4.x skryptów środowiska uruchomieniowego .NET na platformie Unity
+## <a name="enabling-the-net-4x-scripting-runtime-in-unity"></a>Włączanie środowiska uruchomieniowego obsługi skryptów .NET 4. x w środowisku Unity
 
-Aby włączyć 4.x skryptów środowiska uruchomieniowego .NET, wykonaj następujące czynności:
+Aby włączyć środowisko uruchomieniowe skryptów .NET 4. x, wykonaj następujące czynności:
 
-1. Otwórz PlayerSettings w Inspektorze Unity, wybierając **Edytuj > Ustawienia projektu > Player**.
+1. Otwórz PlayerSettings w Inspektorze Unity, wybierając **edytuj > ustawienia projektu > Player**.
 
-1. W obszarze **konfiguracji** nagłówek, kliknij przycisk **skryptów wersji środowiska uruchomieniowego** listy rozwijanej i wybierz **.NET 4.x odpowiednik**. Zostanie wyświetlony monit ponownego uruchomienia aparatu Unity.
+1. Pod nagłówkiem **Konfiguracja** kliknij listę rozwijaną **wersja środowiska uruchomieniowego tworzenia skryptów** i wybierz **odpowiedniki .NET 4. x**. Zostanie wyświetlony monit o ponowne uruchomienie aparatu Unity.
 
-![Wybierz pozycję .NET 4.x równoważne](media/vstu_scripting-runtime-version.png)
+![Wybierz odpowiednik .NET 4. x](media/vstu_scripting-runtime-version.png)
 
-## <a name="choosing-between-net-4x-and-net-standard-20-profiles"></a>Wybieranie między .NET 4.x i profilów platformy .NET Standard 2.0
+## <a name="choosing-between-net-4x-and-net-standard-20-profiles"></a>Wybieranie między profilami .NET 4. x i .NET Standard 2,0
 
-Po przełączeniu się do platformy .NET 4.x równoważne skryptów środowiska uruchomieniowego, można określić **poziom zgodności Api** przy użyciu menu rozwijane w PlayerSettings (**Edytuj > Ustawienia projektu > Player**). Dostępne są dwie opcje:
+Po przełączeniu się do środowiska uruchomieniowego skryptów programu .NET 4. x można określić **poziom zgodności interfejsu API** za pomocą menu rozwijanego w PlayerSettings (**edytuj ustawienia projektu > > Player**). Dostępne są dwie opcje:
 
-* **.NET standard 2.0**. Ten profil jest zgodny z [profilu .NET Standard 2.0](https://github.com/dotnet/standard/blob/master/docs/versions/netstandard2.0.md) opublikowanych przez .NET Foundation. Unity zaleca .NET Standard 2.0 dla nowych projektów. Jest mniejsze niż .NET 4.x, co jest korzystna dla platform ograniczony rozmiar. Ponadto Unity została zatwierdzona do obsługi tego profilu na wszystkich platformach, które obsługuje platformy Unity.
+* **.NET Standard 2,0**. Ten profil jest zgodny z [profilem .NET Standard 2,0](https://github.com/dotnet/standard/blob/master/docs/versions/netstandard2.0.md) opublikowanym przez platformę .NET Foundation. Środowisko Unity zaleca .NET Standard 2,0 dla nowych projektów. Jest to mniejsze niż .NET 4. x, co jest korzystne dla platform z ograniczoną wielkością. Ponadto aparat Unity zatwierdził obsługę tego profilu na wszystkich platformach obsługiwanych przez środowisko Unity.
 
-* **.NET 4.x**. Ten profil umożliwia dostęp do najnowszych 4 interfejsu API programu .NET. Ona obejmuje wszystkie dostępne kod w bibliotekach klas .NET Framework i obsługuje także profile .NET Standard 2.0. Jeśli Twój projekt wymaga częścią interfejsu API, które nie są uwzględnione w profilu .NET Standard 2.0, należy użyć profilu platformy .NET 4.x. Jednak niektóre elementy tego interfejsu API nie może być obsługiwane na wszystkich platformach firmy Unity.
+* **.NET 4. x**. Ten profil zapewnia dostęp do najnowszego interfejsu API programu .NET 4. Obejmuje on cały kod dostępny w bibliotekach klas .NET Framework i obsługuje również profile .NET Standard 2,0. Użyj profilu .NET 4. x, jeśli projekt wymaga części interfejsu API, która nie jest uwzględniona w profilu .NET Standard 2,0. Niektóre części tego interfejsu API mogą jednak nie być obsługiwane na wszystkich platformach aparatu Unity.
 
-Możesz przeczytać więcej na temat tych opcji na liście mechanizmu Unity [wpis w blogu](https://blogs.unity3d.com/2018/03/28/updated-scripting-runtime-in-unity-2018-1-what-does-the-future-hold/).
+Więcej informacji na temat tych opcji można znaleźć w [wpisie w blogu](https://blogs.unity3d.com/2018/03/28/updated-scripting-runtime-in-unity-2018-1-what-does-the-future-hold/)aparatu Unity.
 
-### <a name="adding-assembly-references-when-using-the-net-4x-api-compatibility-level"></a>Dodawanie odwołania do zestawów, korzystając z programu .NET 4.x poziom zgodności interfejsu Api
+### <a name="adding-assembly-references-when-using-the-net-4x-api-compatibility-level"></a>Dodawanie odwołań do zestawów w przypadku używania poziomu zgodności interfejsu API .NET 4. x
 
-Korzystając z ustawienia .NET Standard 2.0 w **poziom zgodności interfejsu Api** listy rozwijanej, wszystkie zestawy w profilu interfejsu API są odwołania i użyteczne. Jednak podczas korzystania z większych profilu platformy .NET w 4.x, niektóre zestawy, które Unity jest dostarczany z nie są określone przez domyślny. Aby korzystać z tych interfejsów API, należy ręcznie dodać odwołania do zestawu. Możesz wyświetlić zestawy Unity jest dostarczany z programem w **MonoBleedingEdge/lib/mono** katalogu instalacji programu Unity editor:
+W przypadku używania ustawienia .NET Standard 2,0 na liście rozwijanej **poziomu zgodności interfejsu API** wszystkie zestawy w profilu interfejsu API są przywoływane i mogą być używane. Jednak w przypadku używania większego profilu platformy .NET 4. x niektóre zestawy, które są dostarczane z systemem Unity, nie są domyślnie przywoływane. Aby użyć tych interfejsów API, należy ręcznie dodać odwołanie do zestawu. Zestawy Unity można wyświetlić w katalogu **MonoBleedingEdge/lib/mono** instalacji edytora Unity:
 
 ![Katalog MonoBleedingEdge](media/vstu_monobleedingedge.png)
 
-Na przykład, jeśli używasz profilu platformy .NET 4.x i chcesz używać `HttpClient`, należy dodać odwołanie do zestawu System.Net.Http.dll. Bez tego kompilator będzie reklamację, że masz brakuje odwołania do zestawu:
+Na przykład, jeśli używasz profilu .NET 4. x i chcesz używać `HttpClient`, musisz dodać odwołanie do zestawu dla elementu System. NET. http. dll. Bez niej, kompilator będzie wnoszących skargę o brak odwołania do zestawu:
 
 ![Brak odwołania do zestawu](media/vstu_missing-reference.png)
 
-Program Visual Studio generuje pliki .csproj i .sln dla projektów aparatu Unity, każdym razem, gdy są one otwarte. W rezultacie nie można dodać odwołania do zestawu bezpośrednio w programie Visual Studio, ponieważ były one utracone po ponownym otwarciu projektu. Zamiast tego, o nazwie pliku tekstowego specjalne **mcs.rsp** należy użyć:
+Program Visual Studio generuje pliki. csproj i. sln dla projektów Unity przy każdym otwarciu. W związku z tym nie można dodać odwołań do zestawu bezpośrednio w programie Visual Studio, ponieważ zostaną one utracone po ponownym otwarciu projektu. Zamiast tego należy użyć specjalnego pliku tekstowego o nazwie **MCS. rsp** :
 
-1. Utwórz nowy plik tekstowy o nazwie **mcs.rsp** w swoim projekcie aparatu Unity w katalogu głównym **zasoby** katalogu.
+1. Utwórz nowy plik tekstowy o nazwie **MCS. rsp** w katalogu głównych **zasobów** projektu środowiska Unity.
 
-1. W pierwszym wierszu w pliku tekstowym pusty, wprowadź: `-r:System.Net.Http.dll` , a następnie zapisz plik. Możesz zastąpić "System.Net.Http.dll" dołączony zestawów, które być może brakuje odwołania.
+1. W pierwszym wierszu pustego pliku tekstowego wpisz: `-r:System.Net.Http.dll` a następnie Zapisz plik. Plik "System. NET. http. dll" można zastąpić dowolnym zestawem dołączonym, w którym może brakować odwołania.
 
-1. Ponowne uruchomienie programu Unity editor.
+1. Uruchom ponownie edytor aparatu Unity.
 
-## <a name="taking-advantage-of-net-compatibility"></a>Korzystając z zalet zgodność z platformą .NET
+## <a name="taking-advantage-of-net-compatibility"></a>Korzystanie z zalet zgodności z platformą .NET
 
-Oprócz nowych funkcji C# składni i język 4.x skryptów środowiska uruchomieniowego .NET umożliwia Unity użytkownikom dostęp do ogromnej biblioteki .NET pakietów, które nie są zgodne ze środowiskiem uruchomieniowym starszej wersji skryptu .NET 3.5.
+Oprócz nowych C# funkcji składni i języka środowisko uruchomieniowe skryptów .NET 4. x zapewnia użytkownikom Unity dostęp do ogromnej biblioteki pakietów .NET, które są niezgodne ze starszym środowiskiem obsługi skryptów .NET 3,5.
 
-### <a name="add-packages-from-nuget-to-a-unity-project"></a>Dodaj pakiety z pakietów NuGet do projektu środowiska Unity
+### <a name="add-packages-from-nuget-to-a-unity-project"></a>Dodawanie pakietów z narzędzia NuGet do projektu środowiska Unity
 
-[NuGet](https://www.nuget.org/) to Menedżer pakietów dla platformy .NET. NuGet jest zintegrowana w programie Visual Studio. Jednak projekty Unity wymagają specjalnej procedury do dodawania pakietów NuGet. Jest to spowodowane po otwarciu projektu na platformie Unity jego pliki projektu programu Visual Studio są generowane, cofnięcie wymagane opcje. Aby dodać pakiet z pakietów NuGet do Twojego projektu środowiska Unity wykonaj następujące czynności:
+Pakiet [NuGet](https://www.nuget.org/) jest menedżerem pakietów dla platformy .NET. Pakiet NuGet jest zintegrowany z Visual Studio. Jednak projekty Unity wymagają specjalnego procesu dodawania pakietów NuGet. Jest to spowodowane tym, że po otwarciu projektu w aparacie Unity pliki projektu programu Visual Studio są ponownie generowane, cofają niezbędne konfiguracje. Aby dodać pakiet z programu NuGet do projektu środowiska Unity, wykonaj następujące czynności:
 
-1. Przeglądaj pakietu NuGet, aby zlokalizować pakiet zgodne, czy chcesz dodać (.NET Standard 2.0 i .NET 4.x). W tym przykładzie przedstawiono dodawanie [Json.NET](https://www.nuget.org/packages/Newtonsoft.Json/), popularnego pakietu do pracy z formatu JSON, do projektu .NET Standard 2.0.
+1. Przeglądaj program NuGet, aby zlokalizować zgodny pakiet, który chcesz dodać (.NET Standard 2,0 lub .NET 4. x). W tym przykładzie przedstawiono dodawanie [JSON.NET](https://www.nuget.org/packages/Newtonsoft.Json/), popularnego pakietu do pracy z JSON, do projektu .NET Standard 2,0.
 
-1. Kliknij przycisk **Pobierz** przycisku:
+1. Kliknij przycisk **Pobierz** :
 
     ![przycisk Pobierz](media/vstu_nuget-download.png)
 
-1. Znajdź pobrany plik i zmień rozszerzenie z **.nupkg** do **zip**.
+1. Znajdź pobrany plik i Zmień rozszerzenie z **. nupkg** na **. zip**.
 
-1. W pliku zip, przejdź do **lib/netstandard2.0** katalogu i skopiuj **pliku Newtonsoft.Json.dll** pliku.
+1. W pliku zip przejdź do katalogu **lib/Standard 2.0** i skopiuj plik **Newtonsoft. JSON. dll** .
 
-1. W swoim projekcie aparatu Unity w katalogu głównym **zasoby** folderu, Utwórz nowy folder o nazwie **wtyczek**. Wtyczki to nazwa folderu specjalnego na platformie Unity. Zobacz [dokumentacja aparatu Unity](https://docs.unity3d.com/Manual/Plugins.html) Aby uzyskać więcej informacji.
+1. W folderze głównych **zasobów** projektu środowiska Unity Utwórz nowy folder o nazwie **wtyczki**. Wtyczki to specjalna nazwa folderu w aparacie Unity. Aby uzyskać więcej informacji, zobacz [dokumentację aparatu Unity](https://docs.unity3d.com/Manual/Plugins.html) .
 
-1. Wklej **pliku Newtonsoft.Json.dll** plik do projektu środowiska Unity **wtyczek** katalogu.
+1. Wklej plik **Newtonsoft. JSON. dll** do katalogu **wtyczek** projektu aparatu Unity.
 
-1. Utwórz plik o nazwie **link.xml** w swoim projekcie aparatu Unity **zasoby** katalogu i Dodaj następujący kod XML.  Pozwoli to zagwarantować, że proces oddzielającego kodu bajtowego mechanizmu Unity nie powoduje usunięcia niezbędnych danych, podczas eksportowania platformę IL2CPP.  Ten krok jest specyficzne dla tej biblioteki, mogą występować problemy z innych bibliotek, które używają odbicia w podobny sposób.  Aby uzyskać więcej informacji, zobacz [docs mechanizmu Unity](https://docs.unity3d.com/Manual/IL2CPP-BytecodeStripping.html) na ten temat.
+1. Utwórz plik o nazwie **link. XML** w katalogu **zasobów** projektu Unity i Dodaj następujący kod XML.  Zapewni to, że proces usuwania kodu bajtowego aparatu Unity nie spowoduje usunięcia niezbędnych danych podczas eksportowania na platformę IL2CPP.  Ten krok jest specyficzny dla tej biblioteki, ale może wystąpić problemy z innymi bibliotekami, które używają odbicia w podobny sposób.  Aby uzyskać więcej informacji, zobacz dokumentację [aparatu Unity](https://docs.unity3d.com/Manual/IL2CPP-BytecodeStripping.html) w tym temacie.
 
     ```xml
     <linker>
@@ -96,7 +96,7 @@ Oprócz nowych funkcji C# składni i język 4.x skryptów środowiska uruchomien
     </linker>
     ```
 
-Wszystko w miejscu można teraz użyć pakietu struktury Json.NET.
+W przypadku wszystkich elementów na miejscu możesz teraz korzystać z pakietu Json.NET.
 
 ```csharp
 using Newtonsoft.Json;
@@ -126,15 +126,15 @@ public class JSONTest : MonoBehaviour
 }
 ```
 
-Jest to prosty przykład za pomocą biblioteki, która nie ma zależności. Gdy pakiety NuGet zależą inne pakiety NuGet, należy ręcznie pobrać te zależności, i dodaj je do projektu w taki sam sposób.
+Jest to prosty przykład użycia biblioteki, która nie ma zależności. Gdy pakiety NuGet korzystają z innych pakietów NuGet, należy ręcznie pobrać te zależności i dodać je do projektu w taki sam sposób.
 
 ## <a name="new-syntax-and-language-features"></a>Nowe funkcje składni i języka
 
-Przy użyciu zaktualizowanych skryptów środowiska uruchomieniowego udostępnia Unity deweloperów C# 6 i hostem nowe funkcje języka i składni.
+Za pomocą zaktualizowanego środowiska uruchomieniowego skryptów zapewnia deweloperom aparatu Unity dostęp do C# 6 i hosta nowych funkcji języka i składni.
 
-### <a name="auto-property-initializers"></a>Inicjatory właściwości automatycznej
+### <a name="auto-property-initializers"></a>Inicjatory właściwości autoproperty
 
-Firmy Unity .NET 3.5 skryptów środowiska wykonawczego składni właściwości automatycznej można łatwo szybko zdefiniować niezainicjowanych właściwości, ale inicjowania ma mieć miejsce w innych miejscach w skrypcie. Teraz ze środowiskiem uruchomieniowym .NET 4.x, możliwe jest do zainicjowania właściwości auto w tym samym wierszu:
+W środowisku uruchomieniowym skryptów .NET 3,5 aparatu Unity, składnia autowłaściwości ułatwia szybkie Definiowanie niezainicjowanych właściwości, ale Inicjalizacja musi być zawarta w innym miejscu skryptu. Teraz w przypadku środowiska uruchomieniowego .NET 4. x możliwe jest zainicjowanie autowłaściwości w tym samym wierszu:
 
 ```csharp
 // .NET 3.5
@@ -146,7 +146,7 @@ public int Health { get; set; } = 100;
 
 ### <a name="string-interpolation"></a>Interpolacja ciągów
 
-Za pomocą starsze środowisko uruchomieniowe .NET 3.5 ciągów wymagane składni niewygodna. Teraz za pomocą środowiska uruchomieniowego .NET 4.x [ `$` Interpolacja ciągów](https://docs.microsoft.com/dotnet/csharp/language-reference/tokens/interpolated) funkcja umożliwia wyrażeń, które ma zostać wstawiony do ciągów, w składni bardziej bezpośrednie i możliwych do odczytu:
+W przypadku starszego środowiska uruchomieniowego programu .NET 3,5, łączenie ciągów wymagało składni niewygodna. Teraz przy użyciu środowiska uruchomieniowego .NET 4. x funkcja [interpolacji ciągu `$`](https://docs.microsoft.com/dotnet/csharp/language-reference/tokens/interpolated) umożliwia wstawianie wyrażeń do ciągów w bardziej bezpośrednie i czytelnej składni:
 
 ```csharp
 // .NET 3.5
@@ -157,9 +157,9 @@ Debug.Log("Player health: " + Health);
 Debug.Log($"Player health: {Health}");
 ```
 
-### <a name="expression-bodied-members"></a>Elementy członkowskie z wyrażeniem
+### <a name="expression-bodied-members"></a>Składowe z wyrażeniem w treści
 
-Przy użyciu nowszej C# składni dostępnych w środowisku uruchomieniowym .NET 4.x [wyrażeń lambda](https://docs.microsoft.com/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions) można zastąpić treści funkcji, aby były one bardziej zwięzłą:
+Mając nowszą C# składnię dostępną w środowisku uruchomieniowym .NET 4. x, [wyrażenia lambda](https://docs.microsoft.com/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions) mogą zastąpić treść funkcji, aby były bardziej zwięzłe:
 
 ```csharp
 // .NET 3.5
@@ -172,7 +172,7 @@ private int TakeDamage(int amount)
 private int TakeDamage(int amount) => Health -= amount;
 ```
 
-Elementy członkowskie z wyrażeniem można również użyć właściwości tylko do odczytu:
+W właściwościach tylko do odczytu można również używać składowych wyrażeń w postaci:
 
 ```csharp
 // .NET 4.x
@@ -181,9 +181,9 @@ public string PlayerHealthUiText => $"Player health: {Health}";
 
 ### <a name="task-based-asynchronous-pattern-tap"></a>Wzorzec asynchroniczny oparty na zadaniach (TAP)
 
-[Programowanie asynchroniczne](https://docs.microsoft.com/dotnet/csharp/async) umożliwia wykonywanie operacji czasochłonne została wykonana bez powodowania aplikacja przestanie odpowiadać. Ta funkcja umożliwia także swój kod, aby czekać na operacje dużo czasu na zakończenie przed kontynuowaniem kod, który jest zależny od wyniki tych operacji. Można na przykład trzeba odczekać pliku do obciążenia lub na zakończenie operacji sieciowych.
+[Programowanie asynchroniczne](https://docs.microsoft.com/dotnet/csharp/async) umożliwia czasochłonne operacje bez powodowania, że aplikacja przestanie odpowiadać. Ta funkcja umożliwia również kodowi oczekiwanie na zakończenie czasochłonnych operacji przed kontynuowaniem kodu, który zależy od wyników tych operacji. Na przykład możesz poczekać na załadowanie pliku lub zakończenie operacji sieciowej.
 
-Na platformie Unity, programowanie asynchroniczne zwykle odbywa się za pomocą [koprocedury](https://docs.unity3d.com/Manual/Coroutines.html). Jednak od C# 5, preferowaną metodą programowania asynchronicznego w .NET development został [opartego na zadaniach asynchronicznej wzorca (TAP)](https://docs.microsoft.com/dotnet/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap) przy użyciu `async` i `await` słowa kluczowe w [ System.Threading.Task](https://docs.microsoft.com/dotnet/api/system.threading.tasks.task). Podsumowując w `async` funkcji możesz `await` ukończenia zadań bez blokowania pozostałych aplikacji z aktualizacji:
+W środowisku Unity programowanie asynchroniczne jest zwykle realizowane przy użyciu [procedur wspólnych](https://docs.unity3d.com/Manual/Coroutines.html). Jednak od C# 5, preferowana metoda programowania asynchronicznego w środowisku programowania .NET była [oparta na zadaniach wzorca asynchronicznego (TAP)](https://docs.microsoft.com/dotnet/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap) przy użyciu słów kluczowych `async` i `await` z obiektem [System. Threading. Task](https://docs.microsoft.com/dotnet/api/system.threading.tasks.task). Podsumowując, w funkcji `async` można `await` ukończenie zadania bez blokowania pozostałej części aplikacji przed aktualizacją:
 
 ```csharp
 // Unity coroutine
@@ -223,35 +223,35 @@ public class AsyncAwaitExample : MonoBehaviour
 }
 ```
 
-Wzorzec TAP jest złożonym zagadnieniem, za pomocą niuanse specyficzne dla aparatu Unity, które należy wziąć pod uwagę deweloperów. W wyniku wzorca TAP nie jest uniwersalny zastępuje koprocedury na platformie Unity; jest jednak inne narzędzie, aby wykorzystać. Zakres tej funkcji jest wyższy niż w tym artykule, ale niektóre najważniejsze wskazówki i porady, które są przedstawione poniżej.
+NACIŚNIĘCIe jest złożonym tematem, w przypadku których deweloperzy wszystkie szczegóły powinni wziąć pod uwagę. W związku z tym naciśnij pozycję nie jest uniwersalnym zastępowaniem wspólnych procedur w środowisku Unity; jest to jednak inne narzędzie do wykorzystania. Zakres tej funkcji wykracza poza ten artykuł, ale niektóre ogólne najlepsze rozwiązania i porady są podane poniżej.
 
-#### <a name="getting-started-reference-for-tap-with-unity"></a>Pobieranie odwołania wprowadzenie wzorca TAP przy użyciu aparatu Unity
+#### <a name="getting-started-reference-for-tap-with-unity"></a>Wprowadzenie do korzystania z programu TAP przy użyciu aparatu Unity
 
-Poniższe wskazówki mogą pomóc Ci rozpocząć pracę z wzorca TAP na platformie Unity:
+Te porady ułatwiają rozpoczęcie pracy z programem TAP w środowisku Unity:
 
-* Funkcje asynchroniczne, które mają być oczekiwana powinien mieć typ zwracany [ `Task` ](https://docs.microsoft.com/dotnet/api/system.threading.tasks.task) lub [ `Task<TResult>` ](https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1).
-* Funkcje asynchroniczne, które zwracają zadania powinny mieć sufiks **"Async"** dołączany do ich nazw. Przyrostku "Async" pomaga wskazać funkcji zawsze należy oczekiwane.
-* Używaj tylko `async void` zwracany typ dla funkcji, które szybko włączyć funkcje asynchroniczne z tradycyjnego kodu synchronicznego. Takie funkcje, nie może się być oczekiwana i nie powinny mieć przyrostku "Async" w nazwach.
-* Unity używa UnitySynchronizationContext, aby upewnić się, że funkcje asynchroniczne domyślnie uruchamiane w wątku głównym. Interfejs API aparatu Unity nie jest niedostępny poza wątku głównego.
-* Umożliwia uruchamianie zadań na wątkach w tle za pomocą metod, takich jak [ `Task.Run` ](https://msdn.microsoft.com/library/hh195051.aspx) i [ `Task.ConfigureAwait(false)` ](https://msdn.microsoft.com/library/system.threading.tasks.task.configureawait.aspx). Ta technika jest przydatny przy przekazywaniu kosztownych operacji z wątku głównego w celu zwiększenia wydajności. Jednak za pomocą wątków w tle może prowadzić do problemów, które są trudne do debugowania, takie jak [wyścigu](https://wikipedia.org/wiki/Race_condition).
-* Interfejs API aparatu Unity nie jest dostępny na zewnątrz głównego wątku.
-* Tworzy zadania, użyj wątki nie są obsługiwane w WebGL aparatu Unity.
+* Funkcje asynchroniczne przeznaczone do oczekiwania powinny mieć typ zwracany [`Task`](https://docs.microsoft.com/dotnet/api/system.threading.tasks.task) lub [`Task<TResult>`](https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1).
+* Funkcje asynchroniczne, które zwracają zadanie, powinny mieć sufiks **"Async"** dołączony do ich nazw. Sufiks "Async" pomaga wskazać, że funkcja powinna zawsze oczekiwać.
+* Użyj `async void` zwracanego typu dla funkcji, które wyłączają funkcje asynchroniczne z tradycyjnego kodu synchronicznego. Takie funkcje nie mogą być oczekiwane i nie powinny mieć sufiksu "Async" w swoich nazwach.
+* Środowisko Unity korzysta z UnitySynchronizationContext w celu zapewnienia domyślnego uruchamiania funkcji asynchronicznych w wątku głównym. Interfejs API Unity nie jest dostępny poza głównym wątkiem.
+* Istnieje możliwość uruchamiania zadań w wątkach w tle z metodami takimi jak [`Task.Run`](https://msdn.microsoft.com/library/hh195051.aspx) i [`Task.ConfigureAwait(false)`](https://msdn.microsoft.com/library/system.threading.tasks.task.configureawait.aspx). Ta technika jest przydatna do odciążania kosztownych operacji z wątku głównego w celu zwiększenia wydajności. Korzystanie z wątków w tle może jednak prowadzić do problemów, które są trudne do debugowania, takich jak sytuacje [wyścigu](https://wikipedia.org/wiki/Race_condition).
+* Interfejs API Unity nie jest dostępny poza głównym wątkiem.
+* Zadania korzystające z wątków nie są obsługiwane w kompilacjach WebGL środowiska Unity.
 
-#### <a name="differences-between-coroutines-and-tap"></a>Różnice w koprocedury i naciśnij pozycję
+#### <a name="differences-between-coroutines-and-tap"></a>Różnice między procedurami wspólną i NACIŚNIĘCIem
 
-Istnieją pewne ważne różnice między w koprocedury i naciśnij pozycję / async-await:
+Istnieją pewne istotne różnice między procedurami wspólną i poleceniem TAP/Async-await:
 
-* Koprocedury nie może zwracać wartości, ale `Task<TResult>` może.
-* Nie można umieścić `yield` w instrukcji try-catch, utrudniając koprocedur obsługi błędów. Try-catch — działa jednak naciśnięciem.
-* Unity w koprocedury funkcja jest niedostępna w klasach, które nie pochodzą z obiekt MonoBehaviour. NACIŚNIJ to idealne narzędzie do programowania asynchronicznego w tych grupach.
-* W tym momencie Unity nie sugerują wzorca TAP jako całościowego zastąpienia procedur wspólnych. Profilowanie jest jedynym sposobem ustalenia określone wyniki z jednej metody, a drugi dla każdego projektu w serwisie.
+* Współprocedury nie mogą zwracać wartości, ale `Task<TResult>` mogą.
+* Nie można umieścić `yield` w instrukcji try-catch, co sprawia, że obsługa błędów jest trudna z procedurami. Jednak polecenie try-catch współpracuje z programem TAP.
+* Funkcja wspólna aparatu Unity nie jest dostępna w klasach, które nie pochodzą od siebie. Program TAP jest doskonałym rozwiązaniem do programowania asynchronicznego w takich klasach.
+* W tym momencie środowisko Unity nie sugeruje NACISKu na sprzedaż hurtową. Profilowanie jest jedynym sposobem, aby poznać konkretne wyniki jednego podejścia, a drugie dla każdego projektu.
 
 > [!NOTE]
-> Począwszy od Unity 2018.2 debugowanie metod asynchronicznych za pomocą punktów przerwania w pełni nie jest obsługiwane; jednak [ta funkcja jest oczekiwany w Unity 2018.3](https://twitter.com/jbevain/status/900043560665235456).
+> W przypadku aparatu Unity 2018,2 debugowanie metod asynchronicznych za pomocą punktów przerwania nie jest w pełni obsługiwane. jednak [Ta funkcja jest oczekiwana w środowisku Unity 2018,3](https://twitter.com/jbevain/status/900043560665235456).
 
-### <a name="nameof-operator"></a>nameof operator
+### <a name="nameof-operator"></a>nameof, operator
 
-`nameof` Operator pobiera nazwę ciągu zmiennej, typu lub składowej. Niektórych przypadków, gdy `nameof` przydatność rejestrowanie błędów i uzyskiwania informacji o nazwę ciągu elementu wyliczenia:
+Operator `nameof` Pobiera nazwę ciągu zmiennej, typu lub składowej. Niektóre przypadki, w których `nameof` są przydatne, są błędy rejestrowania i pobieranie nazwy ciągu wyliczenia:
 
 ```csharp
 // Get the string name of an enum:
@@ -272,9 +272,9 @@ private void RecordHighScore(string playerName)
 }
 ```
 
-### <a name="caller-info-attributes"></a>Caller — atrybuty informacji
+### <a name="caller-info-attributes"></a>Atrybuty informacji o wywołującym
 
-[Caller — atrybuty informacji](https://docs.microsoft.com/dotnet/csharp/programming-guide/concepts/caller-information) zawierają informacje o obiekcie wywołującym metodę. Należy podać wartość domyślną dla każdego parametru, który chcesz korzystać z atrybutem informacji o obiekcie wywołującym:
+[Atrybuty informacji o wywołującym](https://docs.microsoft.com/dotnet/csharp/programming-guide/concepts/caller-information) zawierają informacje o wywołującym metodę. Należy podać wartość domyślną dla każdego parametru, który ma być używany z atrybutem informacje o wywołującym:
 
 ```csharp
 private void Start ()
@@ -298,9 +298,9 @@ private void Start ()
 // source line number: 10
 ```
 
-### <a name="using-static"></a>Przy użyciu statycznej
+### <a name="using-static"></a>Używanie static
 
-[Przy użyciu statycznej](https://docs.microsoft.com/dotnet/csharp/language-reference/keywords/using-static) pozwala na używanie statycznych funkcji bez wpisywania nazwy klasy. Przy użyciu statycznych, można zapisać czas i miejsce, jeśli musisz użyć kilku statyczne funkcje z tej samej klasy:
+[Użycie static](https://docs.microsoft.com/dotnet/csharp/language-reference/keywords/using-static) umożliwia korzystanie z funkcji statycznych bez wpisywania nazwy klasy. Korzystając ze statycznego, można zaoszczędzić miejsce i czas, jeśli trzeba użyć kilku funkcji statycznych z tej samej klasy:
 
 ```csharp
 // .NET 3.5
@@ -333,19 +333,19 @@ public class UsingStaticExample: MonoBehaviour
 
 ## <a name="il2cpp-considerations"></a>Zagadnienia dotyczące IL2CPP
 
-Podczas eksportowania swoją grę do platform, takich jak iOS, Unity użyje jej aparat IL2CPP "transpiluj" IL dla kodu C++, który następnie jest kompilowany przy użyciu natywnego kompilatora platformę docelową. W tym scenariuszu istnieje kilka funkcji .NET, które nie są obsługiwane, takich jak części odbicia i użycie `dynamic` — słowo kluczowe. Podczas korzystania z tych funkcji we własnym kodzie można kontrolować, mogą występować problemy z używaniem 3rd dll innych firm i zestawy SDK, które nie zostały zapisane za pomocą aparatu Unity i IL2CPP na uwadze. Aby uzyskać więcej informacji na ten temat, zobacz [skryptów ograniczenia](https://docs.unity3d.com/Manual/ScriptingRestrictions.html) dokumentacja w witrynie firmy Unity.
+Podczas eksportowania gry na platformy, takie jak iOS, środowisko Unity będzie używać aparatu IL2CPP do "transsterty" C++ Il do kodu, który jest następnie kompilowany przy użyciu natywnego kompilatora platformy docelowej. W tym scenariuszu istnieje kilka funkcji platformy .NET, które nie są obsługiwane, takie jak części odbicia i użycie słowa kluczowego `dynamic`. Chociaż możesz kontrolować korzystanie z tych funkcji w własnym kodzie, możesz wypróbować problemy przy użyciu bibliotek DLL innych firm i zestawów SDK, które nie zostały zapisaną przy użyciu aparatu Unity i IL2CPP. Więcej informacji na ten temat można znaleźć w dokumentacji dotyczącej [ograniczeń skryptów](https://docs.unity3d.com/Manual/ScriptingRestrictions.html) w witrynie aparatu Unity.
 
-Ponadto jak wspomniano w powyższym przykładzie na składnik Json.NET, Unity będzie podejmować próby odłączenia nieużywany kod w procesie IL2CPP eksportu.  Chociaż zwykle nie jest to problem, z bibliotekami, które używają odbicia, może przypadkowo oddzielić właściwości lub metody, które będą wywoływane w czasie wykonywania, których nie można określić w czasie eksportowania.  Aby rozwiązać te problemy, należy dodać **link.xml** plik do projektu, który zawiera listę zestawy i przestrzenie nazw, aby nie uruchamiać oddzielającego procesu przed.  Aby uzyskać szczegółowe informacje, zobacz [dokumentów firmy Unity w obcięcie kodu bajtowego](https://docs.unity3d.com/Manual/IL2CPP-BytecodeStripping.html).
+Ponadto, jak wspomniano w powyższym przykładzie Json.NET, aparat Unity podejmie próbę odłożenia nieużywanego kodu podczas procesu eksportowania IL2CPP.  Chociaż zwykle nie jest to problem, z bibliotekami, które używają odbicia, może przypadkowo oddzielić właściwości lub metody, które będą wywoływane w czasie wykonywania, których nie można określić w czasie eksportowania.  Aby rozwiązać te problemy, Dodaj plik **link. XML** do projektu, który zawiera listę zestawów i przestrzenie nazw, dla których nie ma zostać uruchomiony proces usuwania.  Aby uzyskać szczegółowe informacje, zobacz [dokumenty aparatu Unity dotyczące rozdzielania kodu bajtowego](https://docs.unity3d.com/Manual/IL2CPP-BytecodeStripping.html).
 
-## <a name="net-4x-sample-unity-project"></a>Programu .NET 4.x przykładowego projektu aparatu Unity
+## <a name="net-4x-sample-unity-project"></a>Przykładowy projekt aparatu Unity dla programu .NET 4. x
 
-Przykład zawiera przykłady niektórych funkcji programu .NET 4.x. Można pobrać projektu lub wyświetlić kod źródłowy na [GitHub](https://github.com/Microsoft/unity-scripting-upgrade).
+Przykład zawiera przykłady kilku funkcji platformy .NET 4. x. Możesz pobrać projekt lub wyświetlić kod źródłowy w serwisie [GitHub](https://github.com/Microsoft/unity-scripting-upgrade).
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-* [Blog platformy Unity — skryptów środowiska uruchomieniowego poprawę 2018.2 aparatu Unity](https://blogs.unity3d.com/2018/07/11/scripting-runtime-improvements-in-unity-2018-2/)
-* [Historia języka C#](https://docs.microsoft.com/dotnet/csharp/whats-new/csharp-version-history)
-* [Co nowego w języku C# 6](https://docs.microsoft.com/dotnet/csharp/whats-new/csharp-6)
-* [Programowanie Unity i Koprocedury za pomocą wzorca TAP asynchroniczne](https://blogs.msdn.microsoft.com/appconsult/2017/09/01/unity-coroutine-tap)
-* [Async-Await, zamiast w Koprocedury w 2017 aparatu Unity](http://www.stevevermeulen.com/index.php/2017/09/using-async-await-in-unity3d-2017/)
+* [Blog aparatu Unity — ulepszenia środowiska uruchomieniowego skryptów w środowisku Unity 2018,2](https://blogs.unity3d.com/2018/07/11/scripting-runtime-improvements-in-unity-2018-2/)
+* [HistoriaC#](https://docs.microsoft.com/dotnet/csharp/whats-new/csharp-version-history)
+* [Co nowego w C# 6](https://docs.microsoft.com/dotnet/csharp/whats-new/csharp-6)
+* [Programowanie asynchroniczne w aparacie Unity przy użyciu wspólnej procedury i naciśnij](https://blogs.msdn.microsoft.com/appconsult/2017/09/01/unity-coroutine-tap)
+* [Metoda async-await zamiast procedur wspólnych w środowisku Unity 2017](http://www.stevevermeulen.com/index.php/2017/09/using-async-await-in-unity3d-2017/)
 * [Forum aparatu Unity — eksperymentalne podglądy skryptów](https://forum.unity.com/forums/experimental-scripting-previews.107/)

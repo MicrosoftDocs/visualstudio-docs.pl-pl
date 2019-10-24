@@ -1,5 +1,5 @@
 ---
-title: Supportslanguagedropdown — Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
+title: SupportsLanguageDropDown —, element (szablony Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,17 +14,17 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6dbc2c5cae40078f033fa0fb85c6fda032e8ec4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d9b5727bd9aa09b05fc95d8f9f9b7913a6046b81
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316799"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72719415"
 ---
 # <a name="supportslanguagedropdown-element-visual-studio-templates"></a>SupportsLanguageDropDown — Element (szablony Visual Studio)
-Określa, czy szablon elementu sieci Web jest taka sama dla wielu języków oraz czy **języka** jest włączona opcja **Dodaj nowy element** okno dialogowe.
+Określa, czy szablon elementu sieci Web jest identyczny dla wielu języków i czy opcja **Język** jest włączona w oknie dialogowym **Dodaj nowy element** .
 
- \<VSTemplate> \<TemplateData> \<SupportsLanguageDropDown>
+ \<VSTemplate > \<TemplateData > \<SupportsLanguageDropDown >
 
 ## <a name="syntax"></a>Składnia
 
@@ -45,22 +45,22 @@ Określa, czy szablon elementu sieci Web jest taka sama dla wielu języków oraz
 
 |Element|Opis|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Klasyfikuje szablon i definiuje sposób wyświetlania albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Klasyfikuje szablon i definiuje sposób wyświetlania w oknie dialogowym **Nowy projekt** lub **Dodaj nowy element** .|
 
 ## <a name="text-value"></a>Wartość tekstowa
  Wartość tekstowa jest wymagana.
 
- Tekst musi być albo `true` lub `false`oznaczający czy **języka** opcja jest dostępna z **Dodaj nowy element** okno dialogowe.
+ Tekst musi mieć wartość `true` lub `false`, wskazując, czy opcja **języka** jest dostępna w oknie dialogowym **Dodaj nowy element** .
 
 ## <a name="remarks"></a>Uwagi
- `SupportsLanguageDropDown` element jest opcjonalny. Wartość domyślna to `false`.
+ `SupportsLanguageDropDown` jest elementem opcjonalnym. Wartość domyślna to `false`.
 
- `SupportsLanguageDropDown` Element jest dostępny tylko dla szablonów elementów sieci Web.
+ Element `SupportsLanguageDropDown` jest dostępny tylko dla szablonów elementów sieci Web.
 
- Jeśli ustawiono wartość dla tego elementu `true`, a następnie szablon elementu jest taka sama dla wszystkich języków programowania i **języka** opcja jest włączona w **Dodaj nowy element** okno dialogowe. Ta opcja umożliwia wybranie języka programowania nowego elementu, który ma zostać utworzona na podstawie szablonu.
+ Jeśli wartość dla tego elementu jest ustawiona na `true`, szablon elementu jest identyczny dla wszystkich języków programowania, a opcja **Język** jest włączona w oknie dialogowym **Dodaj nowy element** . Ta opcja umożliwia wybranie języka programowania nowego elementu, który ma zostać utworzony na podstawie szablonu.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład określa, aby wyświetlić **języka** listy rozwijanej opcję.
+ Poniższy przykład określa, aby wyświetlić opcję Lista rozwijana **języka** .
 
 ```
 <VSTemplate Version="3.0.0" Type="Project"
@@ -84,6 +84,6 @@ Określa, czy szablon elementu sieci Web jest taka sama dla wielu języków oraz
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektu i elementu](../ide/creating-project-and-item-templates.md)

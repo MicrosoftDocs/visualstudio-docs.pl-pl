@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_typeids — | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_typeIds | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7b32ab5b1965ea7a641cfac470addd2aae0ede0
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 4db7c1d7e3ed19268d94b28a7f0500788f7d21f5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64791765"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739072"
 ---
-# <a name="idiasymbolgettypeids"></a>IDiaSymbol::get_typeIds
-Pobiera tablicę wartości identyfikatora typu specyficznych dla kompilatora dla tego symbolu.
+# <a name="idiasymbolget_typeids"></a>IDiaSymbol::get_typeIds
+Pobiera tablicę wartości identyfikatorów typu specyficznych dla kompilatora dla tego symbolu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -35,21 +35,21 @@ HRESULT get_typeIds ( 
 #### <a name="parameters"></a>Parametry
  `cTypeIds`
 
-[in] Rozmiar buforu do przechowywania danych.
+podczas Rozmiar buforu do przechowywania danych.
 
  `pcTypeIds`
 
-[out] Zwraca liczbę `typeIds` zapisanych, lub jeśli `typeIds` jest `NULL`, następnie łączna liczba dostępnych identyfikatorów typu.
+określoną Zwraca liczbę `typeIds` zapisanych lub, jeśli `typeIds` jest `NULL`, Łączna liczba dostępnych identyfikatorów typu.
 
  `typeIds[]`
 
-[out] Tablica, która jest wypełniona identyfikatory typów.
+określoną Tablica, która ma zostać wypełniona przy użyciu identyfikatorów typu.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
-> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Wartość zwracana `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

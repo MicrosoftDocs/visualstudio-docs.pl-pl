@@ -1,5 +1,5 @@
 ---
-title: SccQueryChanges Function | Microsoft Docs
+title: Funkcja SccQueryChanges | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,15 +12,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5e2b1e504bef3ec9507afcddf4f75bc5f697e843
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 617f07a11f92ab65f079c7d1b41773494e3d0c8b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353506"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72720850"
 ---
 # <a name="sccquerychanges-function"></a>SccQueryChanges, funkcja
-Ta funkcja wylicza danej listy plików, przekazywania informacji na temat zmiany nazwy dla każdego pliku za pomocą funkcji wywołania zwrotnego.
+Ta funkcja wylicza daną listę plików, dostarczając informacje o zmianach nazw poszczególnych plików za pośrednictwem funkcji wywołania zwrotnego.
 
 ## <a name="syntax"></a>Składnia
 
@@ -37,38 +37,38 @@ SCCRTN SccQueryChanges(
 #### <a name="parameters"></a>Parametry
  pContext
 
-[in] Wskaźnik kontekście wtyczki kontroli źródła.
+podczas Wskaźnik kontekstu wtyczki kontroli źródła.
 
- Niepowodzeń
+ nFiles
 
-[in] Liczba plików w `lpFileNames` tablicy.
+podczas Liczba plików w tablicy `lpFileNames`.
 
  lpFileNames
 
-[in] Tablica nazw plików, aby uzyskać informacje na.
+podczas Tablica nazw plików, dla których mają zostać wyświetlone informacje.
 
  pfnCallback
 
-[in] Funkcja wywołania zwrotnego do wywołania dla każdej nazwy pliku na liście (patrz [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md) Aby uzyskać szczegółowe informacje).
+podczas Funkcja wywołania zwrotnego do wywołania dla każdej nazwy pliku na liście (zobacz [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md) , aby uzyskać szczegółowe informacje).
 
  pvCallerData
 
-[in] Niezmieniona wartość, które zostaną przekazane do funkcji wywołania zwrotnego.
+podczas Wartość, która zostanie przeniesiona bez zmian do funkcji wywołania zwrotnego.
 
 ## <a name="return-value"></a>Wartość zwracana
- Implementacja wtyczki kontroli źródła tej funkcji powinien zwrócić jedną z następujących wartości:
+ Implementacja wtyczki kontroli źródła tej funkcji powinna zwracać jedną z następujących wartości:
 
 |Wartość|Opis|
 |-----------|-----------------|
-|SCC_OK|Proces wykonywania zapytania, zostało ukończone pomyślnie.|
+|SCC_OK|Proces zapytania został ukończony pomyślnie.|
 |SCC_E_PROJNOTOPEN|Projekt nie został otwarty w kontroli źródła.|
-|SCC_E_ACCESSFAILURE|Wystąpił problem podczas uzyskiwania dostępu do systemu kontroli źródła, prawdopodobnie z powodu problemów z siecią lub rywalizacji o zasoby.|
-|SCC_E_NONSPECIFICERROR|Wystąpił nieokreślony lub ogólny błąd.|
+|SCC_E_ACCESSFAILURE|Wystąpił problem z uzyskaniem dostępu do systemu kontroli źródła prawdopodobnie z powodu problemów z siecią lub rywalizacją.|
+|SCC_E_NONSPECIFICERROR|Wystąpił błąd nieokreślony lub ogólny.|
 
 ## <a name="remarks"></a>Uwagi
- Odpytywane dla zmiany są do przestrzeni nazw: ściślej mówiąc, zmiana nazwy, dodawania i usuwania pliku.
+ Zmiany, których dotyczy zapytanie, są w przestrzeni nazw: w przypadku, zmiana nazwy, dodanie i usunięcie pliku.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Funkcje interfejsu API wtyczki kontroli źródła ](../extensibility/source-control-plug-in-api-functions.md)
 - [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md)
 - [Kody błędów](../extensibility/error-codes.md)

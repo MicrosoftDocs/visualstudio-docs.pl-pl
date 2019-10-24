@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Debugowanie hostowania samoobsługowego WCF usługi | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: debugowanie samohostowanej usługi WCF | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,43 +17,43 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8440c1bae9d9e405fd0bf0e1462467e7a51dad5e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 12654a6aa1abb34c9813e8d29c7608814021a3f0
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62848018"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733980"
 ---
-# <a name="how-to-debug-a-self-hosted-wcf-service"></a>Instrukcje: Debugowanie hostowania samoobsługowego WCF usługi
-A *usługi hosta samodzielnego* to usługa WCF, która nie jest uruchamiane w usługach IIS, Host usługi WCF, lub [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] serwera projektowego. Najprostszym sposobem na debugowanie hostowania samoobsługowego WCF jest skonfigurowanie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] do uruchomienia klienta i serwera, po wybraniu **Rozpocznij debugowanie** na **debugowania** menu.
+# <a name="how-to-debug-a-self-hosted-wcf-service"></a>Porady: debugowanie hostowania samoobsługowego WCF
+*Samoobsługowa usługa* to usługa WCF, która nie działa w ramach usług IIS, hosta usługi WCF ani [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] serwera deweloperskiego. Najprostszym sposobem na Debugowanie samohostowanego programu WCF jest skonfigurowanie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] uruchamiania klienta i serwera w przypadku wybrania opcji **Rozpocznij debugowanie** w menu **Debuguj** .
 
- Jeśli usługa WCF jest hostingu samodzielnego wewnątrz, czy Proces, który nie można uruchomić w ten sposób, takich jak usługa NT nie można użyć tej metody. Zamiast tego możesz wykonać jedną z następujących czynności:
+ Jeśli usługa WCF jest w trakcie samodzielnego hostowania lub proces, którego nie można uruchomić w ten sposób, na przykład usługa NT, nie można użyć tej metody. Zamiast tego można wykonać jedną z następujących czynności:
 
-- Ręcznie dołączyć debuger do procesu hostingu. Aby uzyskać więcej informacji, zobacz [dołączenia do uruchamiania procesów](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
+- Ręcznie Dołącz debuger do procesu hostingu. Aby uzyskać więcej informacji, zobacz [dołączanie do uruchomionych procesów](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
 
-     — lub —
+     oraz
 
-- Rozpocznij debugowanie klienta, a następnie wejdź do wywołań do usługi. Ta migracja wymaga włączenia debugowania w pliku app.config. Aby uzyskać więcej informacji [ograniczenia debugowania WCF](../debugger/limitations-on-wcf-debugging.md).
+- Rozpocznij debugowanie klienta, a następnie przejdź do wywołania usługi. Wymaga to włączenia debugowania w pliku App. config. Aby uzyskać więcej informacji, [ograniczenia dotyczące debugowania WCF](../debugger/limitations-on-wcf-debugging.md).
 
-### <a name="to-start-both-client-and-host-from-visual-studio"></a>Można uruchomić zarówno klient, jak i hosta w programie Visual Studio
+### <a name="to-start-both-client-and-host-from-visual-studio"></a>Aby uruchomić klienta i hosta z programu Visual Studio
 
-1. Utwórz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozwiązania zawierającego projekty zarówno klient, jak i serwera.
+1. Utwórz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozwiązanie, które zawiera zarówno projekty klienta, jak i serwera.
 
-2. Konfigurowanie rozwiązania do uruchamiania procesów klienta i serwera, po wybraniu **Start** na **debugowania** menu.
+2. Skonfiguruj rozwiązanie do uruchamiania procesów klienta i serwera, gdy wybierzesz pozycję **Rozpocznij** w menu **debugowanie** .
 
-   1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy nazwę rozwiązania.
+   1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy nazwę rozwiązania.
 
-   2. Kliknij przycisk **Ustaw projekty startowe**.
+   2. Kliknij pozycję **Ustaw projekty startowe**.
 
-   3. W **rozwiązania \<name > właściwości** okno dialogowe, wybierz opcję **wiele projektów startowych**.
+   3. W oknie dialogowym **\<name rozwiązania > właściwości** wybierz **wiele projektów startowych**.
 
-   4. W **wiele projektów startowych** siatki w wierszu, który odnosi się do projektu serwera, kliknij przycisk **akcji** i wybierz polecenie **Start**.
+   4. W siatce **wielu projektów startowych** , w wierszu, który odnosi się do projektu serwera, kliknij przycisk **Akcja** , a następnie wybierz pozycję **Uruchom**.
 
-   5. W wierszu, który odnosi się do projektu klienta, kliknij przycisk **akcji** i wybierz polecenie **Start**.
+   5. W wierszu, który odpowiada projektowi klienta, kliknij pozycję **Akcja** , a następnie wybierz pozycję **Uruchom**.
 
    6. Kliknij przycisk **OK**.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Debugowanie usług WCF](../debugger/debugging-wcf-services.md)
 - [Ograniczenia dotyczące debugowania usług WCF](../debugger/limitations-on-wcf-debugging.md)
-- [Instrukcje: Przechodzenie do usług WCF](../debugger/how-to-step-into-wcf-services.md)
+- [Instrukcje: przechodzenie do usług WCF](../debugger/how-to-step-into-wcf-services.md)

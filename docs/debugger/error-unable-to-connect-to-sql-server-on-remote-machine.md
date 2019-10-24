@@ -1,5 +1,5 @@
 ---
-title: 'Błąd: Nie można nawiązać połączenia z SQL Server na maszynie zdalnej | Dokumentacja firmy Microsoft'
+title: 'Błąd: nie można nawiązać połączenia z SQL Server na maszynie zdalnej | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -15,19 +15,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4038f1f65d688ee8d9bbf9ad01eb1698b811bee5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1ecee2a2dbf7c849549ed6f5e844714cbb88bfda
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850117"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72736826"
 ---
 # <a name="error-unable-to-connect-to-sql-server-on-remote-machine"></a>Błąd: Nie można połączyć się z serwerem SQL na zdalnym komputerze
-Nie można nawiązać połączenia z SQL Server na maszynie zdalnej *nazwa*. Odmowa dostępu. Sprawdź, czy zainstalowano zdalnego debugera na komputerze zdalnym. Czy zdalny komputer nie jest w domenie, czy program Visual Studio jest uruchomiony jako konto lokalne, komputer zdalny musi mieć konto z tą samą nazwą użytkownika i hasło jako lokalne konto.
+Nie można nawiązać połączenia z SQL Server na zdalnej *nazwie*maszyny. Odmowa dostępu. Sprawdź, czy na maszynie zdalnej zainstalowano zdalny debuger. Jeśli maszyna zdalna nie znajduje się w domenie lub jeśli program Visual Studio jest uruchomiony jako konto lokalne, maszyna zdalna musi mieć konto z tą samą nazwą użytkownika i hasłem co konto lokalne.
 
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd
 
-- Zobacz [zdalne debugowanie](../debugger/remote-debugging.md).
+- Zobacz [debugowanie zdalne](../debugger/remote-debugging.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Debugowanie SQL](/previous-versions/visualstudio/visual-studio-2010/zefbf0t6(v=vs.100))

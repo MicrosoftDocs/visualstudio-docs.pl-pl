@@ -1,5 +1,5 @@
 ---
-title: IDiaPropertyStorage::ReadMultiple | Dokumentacja firmy Microsoft
+title: 'IDiaPropertyStorage:: ReadMultiple | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ec66de4feea1a59ca1ef71f48bae49ed5ac2232
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9cd1e419e1d08120274fc627a672eb52331ca50f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839540"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742885"
 ---
 # <a name="idiapropertystoragereadmultiple"></a>IDiaPropertyStorage::ReadMultiple
-Odczytuje określony właściwości z bieżącego zestawu właściwości.
+Odczytuje określone właściwości z bieżącego zestawu właściwości.
 
 ## <a name="syntax"></a>Składnia
 
@@ -35,21 +35,21 @@ HRESULT ReadMultiple( 
 #### <a name="parameters"></a>Parametry
  `cpspec`
 
-[in] Liczba właściwości określonych w `rgpspec` tablicy. Jeśli zero, metoda zwraca żadnych właściwości, ale przywraca `S_OK` jako kod powodzenia.
+podczas Liczba właściwości określona w tablicy `rgpspec`. Jeśli zero, metoda nie zwraca żadnych właściwości, ale zwraca `S_OK` jako kod sukcesu.
 
  `rgpspec`
 
-[in] Tablica właściwości do odczytu. Właściwości można określić Identyfikatora właściwości lub nazwa opcjonalny ciąg. Nie jest to konieczne określić właściwości w określonej kolejności w tablicy. Tablica może zawierać zduplikowanych właściwości, wynikiem wartości zduplikowaną właściwość przy powrocie z prostych właściwości. Inne niż proste właściwości powinien zwrócić odmowa dostępu w momencie próby otwierać je po raz drugi. Tablica może zawierać kombinację identyfikatory właściwości i identyfikatory ciągu. Ta tablica musi mieć co najmniej `cpspec` liczba wartości właściwości.
+podczas Tablica właściwości, które mają zostać odczytane. Właściwości można określić za pomocą identyfikatora właściwości lub opcjonalnej nazwy ciągu. Nie jest konieczne Określanie właściwości w określonej kolejności w tablicy. Tablica może zawierać zduplikowane właściwości, co powoduje duplikowanie wartości właściwości przy zwracaniu dla prostych właściwości. Nieproste właściwości powinny zwracać odmowę dostępu podczas próby otwarcia ich po raz drugi. Tablica może zawierać kombinację identyfikatorów właściwości i identyfikatorów ciągów. Ta tablica musi mieć co najmniej `cpspec` liczbę wartości właściwości.
 
  `rgvar`
 
-[out w] Tablica `PROPVARIANT` struktury (w przestrzeni nazw Microsoft.VisualStudio.OLE.Interop) w celu wprowadzenia wartości dla każdej właściwości. Tablica musi wynosić co najmniej `cpspec` elementów w rozmiarze. Obiekt wywołujący nie musi zainicjować wartości w tablicy.
+[in. out] Tablica struktur `PROPVARIANT` (w przestrzeni nazw Microsoft. VisualStudio. OLE. Interop), które mają być wypełnione wartościami dla każdej właściwości. Tablica musi mieć co najmniej `cpspec` elementy. Obiekt wywołujący nie musi inicjować wartości w tablicy.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli jeden lub więcej właściwości nie został znaleziony. W przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`. Zwraca `S_FALSE`, jeśli nie odnaleziono co najmniej jednej właściwości. W przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Jeśli nie znaleziono właściwości, odpowiadający mu wpis w `rgvar` tablica zawiera `VARIANT` z typem `VT_EMPTY`.
+ Jeśli właściwość nie została znaleziona, odpowiadający jej wpis w tablicy `rgvar` zawiera `VARIANT` z typem `VT_EMPTY`.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

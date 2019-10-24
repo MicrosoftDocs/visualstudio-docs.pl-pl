@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_scoped — | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_scoped | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c9c4864f09c4e66bada76f9d9b058c7d3660c96
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 862fa147b5f157760a93631d0e2c8addbd3bd1f2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64790287"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739373"
 ---
-# <a name="idiasymbolgetscoped"></a>IDiaSymbol::get_scoped
-Pobiera flagę określającą, czy typ danych zdefiniowany przez użytkownika pojawia się w zakresie leksykalnym nieglobalnej.
+# <a name="idiasymbolget_scoped"></a>IDiaSymbol::get_scoped
+Pobiera flagę, która określa, czy typ danych zdefiniowany przez użytkownika pojawia się w nieglobalnym zakresie leksykalnym.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,13 +33,13 @@ HRESULT get_scoped ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca `TRUE` Jeśli typ danych zdefiniowany przez użytkownika, który pojawia się w nieglobalnych zakresie leksykalnym; w przeciwnym razie zwraca `FALSE`.
+określoną Zwraca `TRUE`, jeśli typ danych zdefiniowany przez użytkownika pojawia się w nieglobalnym zakresie leksykalnym; w przeciwnym razie zwraca `FALSE`.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
-> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Wartość zwracana przez `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

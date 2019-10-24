@@ -1,5 +1,5 @@
 ---
-title: Ograniczenia debugowania WCF | Dokumentacja firmy Microsoft
+title: Ograniczenia dotyczące debugowania WCF | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,34 +16,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34b69ac69c580fbd40278b5b7a0c9be26d672fa3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c70195cdc0a6a03395744c63f556ce8c2970aa30
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62905971"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72731510"
 ---
 # <a name="limitations-on-wcf-debugging"></a>Ograniczenia debugowania WCF
-Istnieją trzy sposoby, aby można było rozpocząć debugowanie usługi WCF:
+Istnieją trzy sposoby rozpoczęcia debugowania usługi WCF:
 
-- Debugowany proces klienta, który wywołuje usługę. Debuger nie wchodzi do usługi. Usługa nie ma znajdować się w tym samym rozwiązaniu jako aplikację kliencką.
+- Debugujesz proces klienta wywołujący usługę. Debuger prowadzi do usługi. Usługa nie musi znajdować się w tym samym rozwiązaniu co aplikacja kliencka.
 
-- Debugowany proces klienta, który wysyła żądanie do usługi. Usługa musi być częścią rozwiązania.
+- Debugujesz proces klienta, który wysyła żądanie do usługi. Usługa musi być częścią rozwiązania.
 
-- Możesz użyć **dołączyć do procesu** do dołączenia do usługi, które jest aktualnie uruchomione. Debugowanie rozpoczyna się w usłudze.
+- W celu dołączenia do usługi, która jest aktualnie uruchomiona, należy użyć **dołączania do procesu** . Debugowanie zaczyna się wewnątrz usługi.
 
   W tym temacie opisano ograniczenia dotyczące tych scenariuszy.
 
-## <a name="limitations-on-stepping-into-a-service"></a>Ograniczenia dotyczące Wkraczanie do usługi
- Aby wkraczać do usługi z aplikacji klienckich, które jest debugowany, muszą być spełnione następujące warunki:
+## <a name="limitations-on-stepping-into-a-service"></a>Ograniczenia dotyczące przechodzenia do usługi
+ Aby przejść do usługi z aplikacji klienckich, które są debugowane, muszą zostać spełnione następujące warunki:
 
-- Klient musi wywołać usługę za pomocą obiektu klienta synchroniczne.
+- Klient musi wywoływać usługę za pomocą synchronicznego obiektu klienckiego.
 
-- Operacja Umowy nie może być jednokierunkowe.
+- Operacja kontraktu nie może być jednokierunkowa.
 
-- Jeśli serwer jest asynchroniczne, nie można wyświetlić pełny stos wywołania, gdy są wykonywane kod wewnątrz usługi.
+- Jeśli serwer jest asynchroniczny, nie można wyświetlić pełnego stosu wywołań podczas wykonywania kodu w ramach usługi.
 
-- Debugowanie musi być włączone w pliku Web.config lub app.config następującym kodem:
+- Debugowanie musi być włączone przy użyciu następującego kodu w pliku App. config lub Web. config:
 
     ```xml
     <system.web>
@@ -51,21 +51,21 @@ Istnieją trzy sposoby, aby można było rozpocząć debugowanie usługi WCF:
     </system.web>
     ```
 
-     Ten kod ma tylko do dodania jeden raz. Ten kod można dodawać, edytując plik .config lub dołączanie do usługi przy użyciu **dołączyć do procesu**. Kiedy używasz **dołączyć do procesu** w usłudze kod debugowania jest automatycznie dodawany do pliku Config. Po tym można debugować i przejść do usługi bez konieczności edytowania pliku Config.
+     Ten kod należy dodać tylko jeden raz. Możesz dodać ten kod, edytując plik. config lub dołączając do usługi za pomocą **dołączania do procesu**. W przypadku korzystania **z dołączania do procesu** w usłudze kod debugowania jest automatycznie dodawany do pliku. config. Następnie można debugować i przechodzenie do usługi bez konieczności edytowania pliku. config.
 
-## <a name="limitations-on-stepping-out-of-a-service"></a>Ograniczenia dotyczące przechodzenie krok po kroku, poza eksploatacją
- Przechodzenie z usługi z powrotem do klienta ma te same ograniczenia opisane do przechodzenia do usługi. Ponadto debuger musi być dołączony do klienta. Jeśli debugujesz, klient i usługa krok po kroku, debuger nadal jest dołączony do usługi. Jest to istotne, czy klient jest uruchomiony przy użyciu **Rozpocznij debugowanie** lub dołączone do klienta przy użyciu **dołączyć do procesu**. Jeśli zostało uruchomione, debugowanie, dołączając do usługi, debuger nie jest jeszcze dołączony do klienta. W takiej sytuacji, mając do kroku poza usługi i do klienta, należy najpierw użyć **dołączyć do procesu** ręcznie Dołącz do klienta.
+## <a name="limitations-on-stepping-out-of-a-service"></a>Ograniczenia dotyczące stopniowego działania usługi
+ Przechodzenie do usługi i powrót do klienta ma takie same ograniczenia, jak w przypadku przechodzenia do usługi. Ponadto debuger musi być dołączony do klienta programu. Jeśli debugujesz klienta i przechodzenie do usługi, debuger pozostanie dołączony do usługi. Jest to prawdziwe, niezależnie od tego, czy klient został uruchomiony przy użyciu polecenia **Rozpocznij debugowanie** , czy dołączone do klienta przy użyciu funkcji **Dołącz do procesu**. Po rozpoczęciu debugowania przez dołączenie do usługi debuger nie jest jeszcze dołączony do klienta programu. W takim przypadku, jeśli konieczne jest przechodzenie do usługi i powrót do klienta programu, należy najpierw użyć **Dołącz do procesu** , aby dołączyć do klienta ręcznie.
 
-## <a name="limitations-on-automatic-attach-to-a-service"></a>Ograniczenia dotyczące automatyczne dołączanie do usługi
+## <a name="limitations-on-automatic-attach-to-a-service"></a>Ograniczenia dotyczące automatycznego dołączania do usługi
  Automatyczne dołączanie do usługi ma następujące ograniczenia:
 
-- Usługa musi być częścią [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozwiązania debugowania.
+- Usługa musi być częścią debugowanego rozwiązania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
-- Usługa musi być obsługiwana. Może być częścią projektu witryny sieci Web (System plików i HTTP), projekt aplikacji sieci Web (System plików i HTTP) lub projektu biblioteki usługi WCF. Projekty biblioteki usługi WCF może być Usługa biblioteki lub biblioteki usługi przepływu pracy.
+- Usługa musi być hostowana. Może być częścią projektu witryny sieci Web (systemu plików i HTTP), projektu aplikacji sieci Web (systemu plików i HTTP) lub projektu biblioteki usług WCF. Projekty biblioteki usług WCF mogą być bibliotekami usług lub bibliotekami usługi przepływu pracy.
 
-- Usługa musi być wywoływane z klienta programu WCF.
+- Usługa musi być wywołana z poziomu klienta WCF.
 
-- Debugowanie musi być włączone w pliku Web.config lub app.config następującym kodem:
+- Debugowanie musi być włączone przy użyciu następującego kodu w pliku App. config lub Web. config:
 
   ```xml
   <system.web>
@@ -73,12 +73,12 @@ Istnieją trzy sposoby, aby można było rozpocząć debugowanie usługi WCF:
   <system.web>
   ```
 
-## <a name="self-hosting"></a>Hostingu samodzielnego
- A *usługi hosta samodzielnego* to usługa WCF, która nie jest uruchamiane w usługach IIS, Host usługi WCF, lub [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] serwera projektowego. Aby uzyskać informacje o tym, jak można debugować samodzielnie hostowanej usługi, zobacz [jak: Debugowanie hostowania samoobsługowego WCF usługi](../debugger/how-to-debug-a-self-hosted-wcf-service.md).
+## <a name="self-hosting"></a>Samoobsługowe hosting
+ *Samoobsługowa usługa* to usługa WCF, która nie działa w ramach usług IIS, hosta usługi WCF ani [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] serwera deweloperskiego. Informacje o sposobie debugowania usługi samodzielnej można znaleźć w temacie [How to: Debug a The Inhosteding WCF Service](../debugger/how-to-debug-a-self-hosted-wcf-service.md).
 
-## <a name="self-hosting"></a>Hostingu samodzielnego
- Aby włączyć debugowanie [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji w wersji 3.0 lub 3.5, [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 lub 3.5 musi zostać zainstalowany przed [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] jest zainstalowany. Jeśli [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] została zainstalowana przed [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 lub 3.5, wystąpi błąd podczas próby debugowania [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji w wersji 3.0 lub 3.5. Jest komunikat o błędzie, "nie można automatycznie wkroczyć do serwera." Aby rozwiązać ten problem, należy użyć Windows **Panelu sterowania** > **programy i funkcje** naprawić swoje [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] instalacji.
+## <a name="self-hosting"></a>Samoobsługowe hosting
+ Aby włączyć debugowanie aplikacji [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3,0 lub 3,5, przed zainstalowaniem [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] należy zainstalować [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3,0 lub 3,5. Jeśli [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] jest zainstalowana przed [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3,0 lub 3,5, wystąpi błąd podczas próby debugowania aplikacji [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3,0 lub 3,5. Komunikat o błędzie to "nie można automatycznie wkroczyć do serwera". Aby rozwiązać ten problem, należy użyć **Panelu sterowania** systemu Windows  > **programów i funkcji** w celu naprawy [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] instalacji.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Debugowanie usług WCF](../debugger/debugging-wcf-services.md)
-- [Instrukcje: Debugowanie samodzielnie hostowanej usługi WCF](../debugger/how-to-debug-a-self-hosted-wcf-service.md)
+- [Instrukcje: debugowanie hostowanej samodzielnie usługi WCF](../debugger/how-to-debug-a-self-hosted-wcf-service.md)

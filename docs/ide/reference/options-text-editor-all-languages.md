@@ -42,12 +42,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c33ccbaa21008ab3fa3d1122847c5e18708f9fc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 22ab23911baab30c7617525d318795b1be708bb9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666349"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747847"
 ---
 # <a name="options-dialog-box-text-editor--all-languages"></a>Opcje — okno dialogowe: Edytor tekstu \> wszystkie języki
 
@@ -124,7 +124,7 @@ To ustawienie nie ma wpływu na kopiowanie lub wycinanie, gdy linia nie jest pus
 > [!TIP]
 > Aby wyświetlić wskaźniki dla spacji, kart i punktów końcowych, a tym samym rozróżnić wcięcia wierszy od wierszy, które są całkowicie puste, wybierz opcję **Zaawansowane** z menu **Edycja** i wybierz opcję **Wyświetl biały znak**.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Opcje, Edytor tekstów, Wszystkie języki, Karty](../../ide/reference/options-text-editor-all-languages-tabs.md)
 - [Ogólne, Środowisko, Opcje — okno dialogowe](../../ide/reference/general-environment-options-dialog-box.md)

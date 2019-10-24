@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_count — | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_Count | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 657a2d2f21378dffb6f2ef0c557d02f7858e5328
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 5d8574b610bb913e2cf2dda8a4778dead8a1b2fe
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64808395"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740764"
 ---
-# <a name="idiasymbolgetcount"></a>IDiaSymbol::get_count
-Pobiera liczbę elementów na liście lub tablicy.
+# <a name="idiasymbolget_count"></a>IDiaSymbol::get_count
+Pobiera liczbę elementów z listy lub tablicy.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,20 +33,20 @@ HRESULT get_count ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca liczbę elementów na liście lub tablicy.
+określoną Zwraca liczbę elementów na liście lub w tablicy.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
-> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Wartość zwracana przez `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
 ## <a name="requirements"></a>Wymagania
 
 |Wymaganie|Opis|
 |-----------------|-----------------|
-|Nagłówek:|dia2.h|
-|Wersja:|V7.0 DIA SDK|
+|Nagłówki|dia2. h|
+|Wersja:|DIA SDK v 7.0|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

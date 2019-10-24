@@ -1,5 +1,5 @@
 ---
-title: Idiainjectedsource::get_crc — | Dokumentacja firmy Microsoft
+title: 'IDiaInjectedSource:: get_crc | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39fb027c5e23d0d18443a22848b181e64347669a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5e20cdf82af3b36c589879c81c492a3f58b67f90
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839905"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743392"
 ---
-# <a name="idiainjectedsourcegetcrc"></a>IDiaInjectedSource::get_crc
-Pobiera wyboru cyklicznej kontroli nadmiarowości (CRC) obliczonym na podstawie kodu źródłowego w bajtach.
+# <a name="idiainjectedsourceget_crc"></a>IDiaInjectedSource::get_crc
+Pobiera cykliczne sprawdzenie nadmiarowości (CRC) obliczone na podstawie bajtów kodu źródłowego.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,10 +33,10 @@ HRESULT get_crc ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca wartości CRC obliczonym na podstawie kodu źródłowego w bajtach.
+określoną Zwraca wartość CRC obliczoną na podstawie bajtów kodu źródłowego.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`. Zwraca `S_FALSE`, jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

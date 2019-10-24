@@ -1,5 +1,5 @@
 ---
-title: Projekt modelowania | Dokumentacja firmy Microsoft
+title: Modelowanie projektu | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +11,17 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11f865a0c39f67b0505a16b209511943756a6981
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 42e810a36478e49a578c6713d20f1bfc6be98309
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328292"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72725559"
 ---
 # <a name="project-modeling"></a>Modelowanie projektu
-Następnym krokiem w zapewnianie automatyzacji dla projektu jest zaimplementowanie obiektów standardowy projekt: <xref:EnvDTE.Projects> i `ProjectItems` kolekcji; `Project` i <xref:EnvDTE.ProjectItem> obiekty; i pozostałe obiekty unikatowy dla implementacji. Te standardowe obiekty są zdefiniowane w pliku Dteinternal.h. Implementacja standardowych obiektów znajduje się w próbce BscPrj. Można użyć tych klas jako modele do tworzenia własnych obiektów standardowy projekt, które utrudniają korzystanie z side-by-side przy użyciu obiektów projektu z innych typów projektów.
+Następnym krokiem w celu zapewnienia automatyzacji projektu jest zaimplementowanie standardowych obiektów projektu: kolekcji <xref:EnvDTE.Projects> i `ProjectItems`; obiekty `Project` i <xref:EnvDTE.ProjectItem>; i pozostałe obiekty, które są unikatowe dla Twojej implementacji. Te standardowe obiekty są zdefiniowane w pliku Dteinternal. h. Implementacja standardowych obiektów znajduje się w próbce BscPrj. Tych klas można używać jako modeli do tworzenia własnych standardowych obiektów projektu, które obok siebie są obiektami projektów z innych typów projektów.
 
- Zakłada konsumenta automatyzacji, aby można było wywołać <xref:EnvDTE.Solution>("`<UniqueProjName>")` i <xref:EnvDTE.ProjectItems> (`n`) gdzie n to numer indeksu, umożliwiającą uzyskanie określonego projektu w rozwiązaniu. Wywołania usługi automation powoduje, że do środowiska, aby wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.GetProperty%2A> na odpowiedni projekt hierarchii, przekazując VSITEMID_ROOT jako parametr ItemID i VSHPROPID_ExtObject jako parametr VSHPROPID. `IVsHierarchy::GetProperty` Zwraca `IDispatch` wskaźnik do obiektu automatyzacji, podając podstawowe `Project` interfejs, który został zaimplementowany.
+ Odbiorca automatyzacji zakłada, że może wywoływać <xref:EnvDTE.Solution> ("`<UniqueProjName>")` i <xref:EnvDTE.ProjectItems> (`n`), gdzie n jest numerem indeksu do uzyskania określonego projektu w rozwiązaniu. Wykonanie tego wywołania automatyzacji powoduje, że środowisko wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.GetProperty%2A> w odpowiedniej hierarchii projektu, przekazując VSITEMID_ROOT jako parametr ItemID i VSHPROPID_ExtObject jako parametr VSHPROPID. `IVsHierarchy::GetProperty` zwraca wskaźnik `IDispatch` do obiektu automatyzacji dostarczającego podstawowy interfejs `Project`, który został zaimplementowany.
 
  Poniżej przedstawiono składnię `IVsHierarchy::GetProperty`.
 
@@ -35,7 +35,7 @@ Następnym krokiem w zapewnianie automatyzacji dla projektu jest zaimplementowan
 
  `);`
 
- Projekty uwzględnić zagnieżdżanie i tworzenia grup elementów projektu za pomocą kolekcji. Hierarchia wygląda następująco.
+ Projekty umożliwiają zagnieżdżanie i Używanie kolekcji do tworzenia grup elementów projektu. Hierarchia wygląda następująco.
 
 ```
 Projects
@@ -44,15 +44,15 @@ Projects
           |- ProjectItem (single object) or ProjectItems (another collection)
 ```
 
- Zagnieżdżanie oznacza, że <xref:EnvDTE.ProjectItem> obiekt może być <xref:EnvDTE.ProjectItems> kolekcji, w tym samym czasie ponieważ `ProjectItems` Kolekcja może zawierać obiekty zagnieżdżone. Przykład podstawowego projektu nie przedstawiono tu to zagnieżdżania. Implementując `Project` obiektu uczestniczyć w strukturze drzewa, który charakteryzuje Projekt modelu automatyzacji ogólnej.
+ Zagnieżdżanie oznacza, że <xref:EnvDTE.ProjectItem> obiektu może być <xref:EnvDTE.ProjectItems> kolekcji w tym samym czasie, ponieważ kolekcja `ProjectItems` może zawierać obiekty zagnieżdżone. Przykład projektu podstawowego nie pokazuje tego zagnieżdżenia. Implementując obiekt `Project`, należy wziąć udział w strukturze podobnej do drzewa, która charakteryzuje projekt ogólnego modelu automatyzacji.
 
- Automatyzacja projektu postępuje zgodnie ze ścieżką na poniższym diagramie.
+ Automatyzacja projektu następuje po ścieżce na poniższym diagramie.
 
- ![Obiekty projektu usługi Visual Studio](../../extensibility/internals/media/projectobjects.gif "ProjectObjects") projektu automatyzacji
+ ![Obiekty projektu programu Visual Studio](../../extensibility/internals/media/projectobjects.gif "ProjectObjects") Automatyzacja projektu
 
- Jeśli nie należy implementować `Project` obiektu, środowiska nadal będzie zwracać ogólnego `Project` obiekt, który zawiera tylko nazwę projektu.
+ Jeśli obiekt `Project` nie zostanie wdrożony, środowisko będzie nadal zwracać ogólny obiekt `Project`, który zawiera tylko nazwę projektu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - <xref:EnvDTE.Projects>
 - <xref:EnvDTE.ProjectItem>
 - <xref:EnvDTE.ProjectItems>

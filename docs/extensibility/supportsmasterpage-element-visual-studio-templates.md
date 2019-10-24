@@ -1,5 +1,5 @@
 ---
-title: Supportsmasterpage — Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
+title: SupportsMasterPage —, element (szablony Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,17 +14,17 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba409c831dd508dae796bca1ea2837674459690d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 02c3915be318e7c4b3d82965f6d4640069f7a0c4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316683"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72719381"
 ---
 # <a name="supportsmasterpage-element-visual-studio-templates"></a>SupportsMasterPage — Element (szablony Visual Studio)
-Określa, czy nie **wybierz stronę wzorcową** pole wyboru jest włączona na **Dodaj nowy element** okno dialogowe.
+Określa, czy pole wyboru **Wybierz stronę wzorcową** jest włączone w oknie dialogowym **Dodaj nowy element** .
 
- \<VSTemplate> \<TemplateData> \<SupportsMasterPage>
+ \<VSTemplate > \<TemplateData > \<SupportsMasterPage >
 
 ## <a name="syntax"></a>Składnia
 
@@ -45,20 +45,20 @@ Określa, czy nie **wybierz stronę wzorcową** pole wyboru jest włączona na *
 
 |Element|Opis|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Określa dane, która klasyfikuje szablon i definiuje sposób wyświetlania w **nowy projekt** lub **nowy element** okno dialogowe.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Określa dane, które klasyfikują szablon i definiuje sposób wyświetlania w oknie dialogowym **Nowy projekt** lub **nowy element** .|
 
 ## <a name="text-value"></a>Wartość tekstowa
  Wartość tekstowa jest wymagana.
 
- Tekst musi być albo `true` lub `false`oznaczający czy **wybierz stronę wzorcową** pole wyboru jest włączona na **Dodaj nowy element** okno dialogowe.
+ Tekst musi mieć wartość `true` lub `false`, wskazując, czy pole wyboru **Wybierz stronę wzorcową** jest włączone w oknie dialogowym **Dodaj nowy element** .
 
 ## <a name="remarks"></a>Uwagi
- `SupportsMasterPage` element jest opcjonalny. Wartość domyślna to `false`.
+ `SupportsMasterPage` jest elementem opcjonalnym. Wartość domyślna to `false`.
 
- `SupportsMasterPage` Element jest dostępny tylko dla szablonów elementów sieci Web.
+ Element `SupportsMasterPage` jest dostępny tylko dla szablonów elementów sieci Web.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład ilustruje metadanych dla projektu sieci Web, który zawiera obsługę dla strony wzorcowej.
+ Poniższy przykład ilustruje metadane dla projektu sieci Web, który obejmuje obsługę strony wzorcowej.
 
 ```
 <VSTemplate Version="3.0.0" Type="Project"
@@ -82,6 +82,6 @@ Określa, czy nie **wybierz stronę wzorcową** pole wyboru jest włączona na *
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektu i elementu](../ide/creating-project-and-item-templates.md)

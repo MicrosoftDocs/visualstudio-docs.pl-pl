@@ -1,5 +1,5 @@
 ---
-title: Ciągi używane jako klucze do znajdowania wtyczki kontroli źródła | Dokumentacja firmy Microsoft
+title: Ciągi używane jako klucze do znajdowania wtyczki kontroli źródła | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,21 +10,21 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31c2b30fb41976cdbbab13fa22d438c63bddbbef
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 07962ff9e0f9371b1fc308a35600a6819602b4f5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331705"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72719452"
 ---
 # <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>Ciągi używane jako klucze do znajdowania wtyczki kontroli źródła
-Następujące ciągi są klucze służące do uzyskiwania dostępu do rejestru, aby znaleźć informacje o kontroli źródła wtyczek.
+Następujące ciągi są kluczami służącymi do uzyskiwania dostępu do rejestru w celu znalezienia informacji o wtyczce kontroli źródła.
 
- `STR_SCC_PROVIDER_REG_LOCATION`, `STR_PROVIDERREGKEY`, `STR_SCCPROVIDERPATH`, i `STR_SCCPROVIDERNAME` kluczy rejestru i wartości używane do rejestrowania biblioteki DLL jako wtyczka do kontroli źródła dla programu Visual Studio.
+ `STR_SCC_PROVIDER_REG_LOCATION`, `STR_PROVIDERREGKEY`, `STR_SCCPROVIDERPATH` i `STR_SCCPROVIDERNAME` to klucze rejestru lub wartości używane do zarejestrowania biblioteki DLL jako wtyczki kontroli źródła dla programu Visual Studio.
 
- `SCC_PROJECTNAME_KEY`, `SCC_PROJECTAUX_KEY`, `SCC_KEY, SCC_FILE_SIGNATURE`, i `SCC_STATUS_FILE` są używane do opisywania formatu MSSCCPRJ. Plik SCC.
+ `SCC_PROJECTNAME_KEY`, `SCC_PROJECTAUX_KEY`, `SCC_KEY, SCC_FILE_SIGNATURE` i `SCC_STATUS_FILE` są używane do opisywania formatu MSSCCPRJ. Plik SCC.
 
-## <a name="string-keys-and-values"></a>Ciąg kluczy i wartości
+## <a name="string-keys-and-values"></a>Klucze i wartości ciągów
 
 |Key|Wartość|
 |---------|-----------|
@@ -36,17 +36,17 @@ Następujące ciągi są klucze służące do uzyskiwania dostępu do rejestru, 
 |`STR_SCC_INI_KEY`|SourceCodeControlProvider|
 |`SCC_PROJECTNAME_KEY`|SCC_Project_Name|
 |`SCC_PROJECTAUX_KEY`|SCC_Aux_Path|
-|`SCC_STATUS_FILE`|MSSCCPRJ.SCC|
+|`SCC_STATUS_FILE`|MSSCCPRJ. SCC|
 |`SCC_KEY`|SCC|
 |`SCC_FILE_SIGNATURE`|Plik kontroli kodu źródłowego|
-|`SCC_NSE`|Rozszerzenie Namespace|
-|`SCC_NSE_PREFIX`|Prefiks od protokołu|
+|`SCC_NSE`|Rozszerzenie przestrzeni nazw|
+|`SCC_NSE_PREFIX`|Prefiks Protocal|
 |`SCC_NSE_DisableOpenSCC`|DisableOpenFromSourceControl|
 |`STR_SCCHELPCOLLECTION`|HelpCollection|
 |`STR_UI_LANGUAGE`|UILanguage|
 |`STR_SRCSAFE_ROOT_KEY`|Software\Microsoft\SourceSafe|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wtyczki kontroli źródła](../extensibility/source-control-plug-ins.md)
 - [Instrukcje: instalowanie wtyczki kontroli kodu źródłowego](../extensibility/internals/how-to-install-a-source-control-plug-in.md)
 - [Plik MSSCCPRJ.SCC](../extensibility/mssccprj-scc-file.md)

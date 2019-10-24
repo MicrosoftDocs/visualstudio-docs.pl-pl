@@ -13,12 +13,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 229ee7f4384c5ab93a329104ecbe165e0e1136a4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 894d425d934043b7ed06b29bc3d6fa19115ccf17
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666456"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748683"
 ---
 # <a name="my-extensions-page-project-designer-visual-basic"></a>Strona Moje rozszerzenia, Projektant projektu (Visual Basic)
 Użyj strony **Moje rozszerzenia** **projektanta projektu** , aby zarządzać rozszerzeniami przestrzeni nazw `My` w projekcie. rozszerzenia przestrzeni nazw `My` umożliwiają dostosowanie przestrzeni nazw `My` w celu dodania własnych niestandardowych elementów członkowskich. Aby uzyskać informacje na temat tworzenia rozszerzeń niestandardowej przestrzeni nazw `My`, zobacz [rozszerzanie przestrzeni nazw my w Visual Basic](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace).
@@ -40,7 +40,7 @@ Kliknij ten przycisk, aby dodać rozszerzenie `My` przestrzeni nazw zainstalowan
 
 Wybierz co najmniej jedno odwołanie na liście **rozszerzeń my Namespace** , a następnie kliknij ten przycisk, aby usunąć rozszerzenie przestrzeni nazw `My` z projektu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Rozszerzanie przestrzeni nazw my w Visual Basic](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace)
 - [Pakowanie i wdrażanie niestandardowych rozszerzeń My](/dotnet/visual-basic/developing-apps/customizing-extending-my/packaging-and-deploying-custom-my-extensions)

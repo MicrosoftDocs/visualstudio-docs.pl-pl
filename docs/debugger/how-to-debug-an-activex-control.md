@@ -1,5 +1,5 @@
 ---
-title: 'Porady: Debugowanie kontrolki ActiveX | Microsoft Docs'
+title: 'Instrukcje: debugowanie kontrolki ActiveX | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -24,23 +24,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1d02cb4d581a7234ad2dd950fa51f46a5d128b2
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 75abf76516d3827a748e1b896d4c2e8c93bb34da
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211084"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733869"
 ---
-# <a name="how-to-debug-an-activex-control"></a>Instrukcje: Debugowanie kontrolki ActiveX
+# <a name="how-to-debug-an-activex-control"></a>Porady: debugowanie formantu ActiveX
 
 > [!NOTE]
-> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, wybierz Importuj i Eksportuj ustawienia w menu Narzędzia. Aby uzyskać więcej informacji, zobacz [zresetować ustawienia](../ide/environment-settings.md#reset-settings).
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, wybierz Importuj i Eksportuj ustawienia w menu Narzędzia. Aby uzyskać więcej informacji, zobacz [Resetowanie ustawień](../ide/environment-settings.md#reset-settings).
 
 Aby debugować formant ActiveX, należy określić kontener (plik wykonywalny), w którym ma zostać uruchomiony formant.
 
 ## <a name="to-specify-a-container-for-the-debug-session"></a>Aby określić kontener dla sesji debugowania
 
-1. W Eksploratorze rozwiązań wybierz projekt.
+1. W Eksplorator rozwiązań wybierz projekt.
 
 2. Z menu **Widok** wybierz polecenie **strony właściwości**.
 
@@ -50,13 +50,13 @@ Aby debugować formant ActiveX, należy określić kontener (plik wykonywalny), 
 
 5. Określ nazwę ścieżki dla kontenera. Na przykład C:\Program Files\Internet Explorer\IEXPLORE. EXE.
 
-6. W przypadku określenia programu Internet Explorer jako kontenera i używania programu Active Desktop wpisz `/new` w polu **argumenty polecenia** .
+6. W przypadku określenia programu Internet Explorer jako kontenera i używania usługi Active Desktop wpisz `/new` w polu **argumenty polecenia** .
 
 7. Kliknij przycisk **OK**.
 
      Jeśli nie określisz kontenera w oknie dialogowym **strony właściwości projektu** , możesz określić kontener po rozpoczęciu debugowania. Po wybraniu polecenia wykonywania w celu rozpoczęcia debugowania zostanie wyświetlone okno [dialogowe plik wykonywalny dla sesji debugowania](../debugger/executable-for-debugging-session-dialog-box.md) . Określ nazwę ścieżki kontenera w oknie dialogowym.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Kontrolki ActiveX](/cpp/mfc/activex-controls)
 - [Testowanie właściwości i zdarzeń za pomocą kontenera testu](/cpp/mfc/testing-properties-and-events-with-test-container)

@@ -1,5 +1,5 @@
 ---
-title: Zadanie FXC | Dokumentacja firmy Microsoft
+title: FXC — zadanie | Microsoft Docs
 ms.date: 03/10/2019
 ms.topic: reference
 f1_keywords:
@@ -11,53 +11,53 @@ dev_langs:
 - jsharp
 - C++
 helpviewer_keywords:
-- MSBuild (Visual C++), FXC task
-- FXC task (MSBuild (Visual C++))
+- MSBuild (C++), FXC task
+- FXC task (MSBuild (C++))
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - multiple
-ms.openlocfilehash: 65819f1625477effab024055828301b26ab5804a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 766a3dc35d72e21fc0aca9436ebff25dc3193a2e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62931481"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747325"
 ---
-# <a name="fxc-task"></a>Zadanie FXC
+# <a name="fxc-task"></a>FXC, zadanie
 
-W procesie kompilacji, należy użyć kompilatorów programu do cieniowania HLSL.
+Użyj kompilatorów modułu cieniującego HLSL w procesie kompilacji.
 
 ## <a name="parameters"></a>Parametry
 
-W poniższej tabeli opisano parametry **FXC** zadania.
+W poniższej tabeli opisano parametry zadania **fxc** .
 
 |Parametr|Opis|
 |---------------|-----------------|
-|**AdditionalIncludeDirectories**|Opcjonalnie **string []** parametru.<br/><br/>Określa jeden lub więcej katalogów do dodania do ścieżki dołączenia; Oddziel przy użyciu średnikami, jeśli istnieje więcej niż jedna.<br/><br/>Użyj `/I[path]`.|
-|**AdditionalOptions**|Opcjonalnie **ciąg** parametru.|
-|**AllResourcesBound**|Opcjonalnie **bool** parametru.<br/><br/>Kompilator zakłada, że wszystkie zasoby, które mogą odwoływać się do modułu cieniującego są powiązane i są w dobrym stanie w czasie trwania operacji wykonywania programu do cieniowania. Dostępne dla modelu modułu cieniującego 5.1 i nowszych.<br/><br/>Użyj `/all_resources_bound`.|
-|**AssemblerOutput**|Opcjonalnie **ciąg** parametru.<br/><br/>Określa zawartość pliku wyjściowego języka asemblera.<br/><br/>Użyj `/Fc, /Fx`.<br/><br/>**NoListing**<br/>**AssemblyCode**, użyj `Fc`.<br/>**AssemblyCodeAndHex**, użyj `Fx`.|
-|**AssemblerOutputFile**|Opcjonalnie **ciąg** parametru.<br/><br/>Określa nazwę pliku, plik listingu z kodem asemblera.|
-|**CompileD2DCustomEffect**|Opcjonalnie **bool** parametru.<br/><br/>Kompiluj niestandardowy efekt Direct2D i zawiera programów do cieniowania pikseli. Na użytek wierzchołek lub nie obliczenia niestandardowego efektu.|
-|**ConsumeExportFile**|Opcjonalnie **ciąg** parametru.|
-|**DisableOptimizations**|Opcjonalnie **bool** parametru.<br/><br/>Wyłącz optymalizacje.<br/><br/>`/Od` oznacza `/Gfp` jednak wynik może nie być taka sama jak `/Od /Gfp`.|
-|**EnableDebuggingInformation**|Opcjonalnie **bool** parametru.<br/><br/>Włącz informacje debugowania.|
-|**EnableUnboundedDescriptorTables**|Opcjonalnie **bool** parametru.<br/><br/>Informuje kompilator, że program cieniujący może zawierać deklarację tablicy zasobów z zakresem niepowiązanych. Dostępne dla modelu modułu cieniującego 5.1 i nowszych.<br/><br/>Użyj `/enable_unbounded_descriptor_tables`.|
-|**EntryPointName**|Opcjonalnie **ciąg** parametru.<br/><br/>Określa nazwę punktu wejścia dla programu do cieniowania.<br/><br/>Użyj `/E[name]`.|
-|**GenerateExportFile**|Opcjonalnie **ciąg** parametru.|
-|**GenerateExportShaderProfile**|Opcjonalnie **ciąg** parametru.|
-|**HeaderFileOutput**|Opcjonalnie **ciąg** parametru.<br/><br/>Określa nazwę pliku nagłówkowego, zawierającego kod obiektu.<br/><br/>Użyj `/Fh [name]`.|
-|**ObjectFileOutput**|Opcjonalnie **ciąg** parametru.<br/><br/>Określa nazwę pliku obiektu.<br/><br/>Użyj `/Fo [name]`.|
-|**PreprocessorDefinitions**|Opcjonalnie **string []** parametru.<br/><br/>Definiuje symbole przetwarzania wstępnego dla pliku źródłowego.|
-|**SetRootSignature**|Opcjonalnie **ciąg** parametru.<br/><br/>Dołącz podpis głównego do kodu bajtowego programu cieniującego. Dostępne dla modelu modułu cieniującego 5.0 i nowszych.<br/><br/>Użyj `/setrootsignature`.|
-|**ShaderModel**|Opcjonalnie **ciąg** parametru.<br/><br/>Określa model cieniowania. Niektóre typy cieniowania należy używać tylko z najnowszymi modelami cieniowania.<br/><br/>Użyj `/T [type]_[model]`.|
-|**ShaderType**|Opcjonalnie **ciąg** parametru.<br/><br/>Określa typ programu do cieniowania.<br/><br/>Użyj `/T [type]_[model]`.<br/><br/>**Efekt**, użyj `fx`.<br/>**Wierzchołek**, użyj `vs`.<br/>**Piksel**, użyj `ps`.<br/>**Geometria**, użyj `gs`.<br/>**Kadłuba**, użyj `hs`.<br/>**Domeny**, użyj `ds`.<br/>**Obliczenia**, użyj `cs`.<br/>**Biblioteka**, użyj `lib`.<br/>**RootSignature**, Generuj obiekt sygnatury głównej.|
-|**Element źródłowy**|Wymagane **ITaskItem** parametru.|
-|**SuppressStartupBanner**|Opcjonalnie **bool** parametru.<br/><br/>Pomija wyświetlanie komunikat transparentu i informacje o uruchamiania.<br/><br/>Użyj `/nologo`.|
-|**TrackerLogDirectory**|Opcjonalnie **ciąg** parametru.|
-|**TreatWarningAsError**|Opcjonalnie **bool** parametru.<br/><br/>Traktuje wszystkie ostrzeżenia kompilatora jako błędy.<br/><br/>Dla nowego projektu może być najlepiej użyć `/WX` we wszystkich kompilacjach; rozwiązanie wszystkich ostrzeżeń zapewni najmniejszą liczbą wad możliwe kodu twardych do znalezienia.|
-|**VariableName**|Opcjonalnie **ciąg** parametru.<br/><br/>Określa nazwę zmiennej w pliku nagłówkowym.<br/><br/>Użyj `/Vn [name]`.|
+|**AdditionalIncludeDirectories**|Opcjonalny parametr **String []** .<br/><br/>Określa co najmniej jeden katalog do dodania do ścieżki dołączania; Oddzielaj średnikami, jeśli więcej niż jeden.<br/><br/>Użyj `/I[path]`.|
+|**AdditionalOptions**|Opcjonalny parametr **ciągu** .|
+|**AllResourcesBound**|Opcjonalny parametr **bool** .<br/><br/>Kompilator zakłada, że wszystkie zasoby, które mogą odwoływać się do programu do cieniowania, są powiązane i są w dobrym stanie na czas trwania wykonywania programu do cieniowania. Dostępne dla modelu modułu cieniującego 5,1 lub nowszego.<br/><br/>Użyj `/all_resources_bound`.|
+|**AssemblerOutput**|Opcjonalny parametr **ciągu** .<br/><br/>Określa zawartość pliku wyjściowego języka asemblera.<br/><br/>Użyj `/Fc, /Fx`.<br/><br/>**Nolisting**<br/>**AssemblyCode**, użyj `Fc`.<br/>**AssemblyCodeAndHex**, użyj `Fx`.|
+|**AssemblerOutputFile**|Opcjonalny parametr **ciągu** .<br/><br/>Określa nazwę pliku dla pliku listy kodu zestawu.|
+|**CompileD2DCustomEffect**|Opcjonalny parametr **bool** .<br/><br/>Kompiluj niestandardowy efekt Direct2D, który zawiera cieniowanie pikseli. Nie należy używać dla efektu niestandardowego wierzchołka ani obliczeń.|
+|**ConsumeExportFile**|Opcjonalny parametr **ciągu** .|
+|**DisableOptimizations**|Opcjonalny parametr **bool** .<br/><br/>Wyłącz optymalizacje.<br/><br/>`/Od` oznacza `/Gfp`, gdy dane wyjściowe mogą nie być takie same jak `/Od /Gfp`.|
+|**EnableDebuggingInformation**|Opcjonalny parametr **bool** .<br/><br/>Włącz informacje debugowania.|
+|**EnableUnboundedDescriptorTables**|Opcjonalny parametr **bool** .<br/><br/>Informowanie kompilatora, że program wykorzystujący cieniowanie może zawierać deklarację tablicy zasobów z nieograniczonym zakresem. Dostępne dla modelu modułu cieniującego 5,1 lub nowszego.<br/><br/>Użyj `/enable_unbounded_descriptor_tables`.|
+|**EntryPointName**|Opcjonalny parametr **ciągu** .<br/><br/>Określa nazwę punktu wejścia dla programu do cieniowania.<br/><br/>Użyj `/E[name]`.|
+|**GenerateExportFile**|Opcjonalny parametr **ciągu** .|
+|**GenerateExportShaderProfile**|Opcjonalny parametr **ciągu** .|
+|**HeaderFileOutput**|Opcjonalny parametr **ciągu** .<br/><br/>Określa nazwę pliku nagłówkowego zawierającego kod obiektu.<br/><br/>Użyj `/Fh [name]`.|
+|**ObjectFileOutput**|Opcjonalny parametr **ciągu** .<br/><br/>Określa nazwę pliku obiektu.<br/><br/>Użyj `/Fo [name]`.|
+|**PreprocessorDefinitions**|Opcjonalny parametr **String []** .<br/><br/>Definiuje symbole przetwarzania wstępnego dla pliku źródłowego.|
+|**SetRootSignature**|Opcjonalny parametr **ciągu** .<br/><br/>Dołącz podpis główny do kodu bajtowego modułu cieniującego. Dostępne dla modelu modułu cieniującego 5,0 lub nowszego.<br/><br/>Użyj `/setrootsignature`.|
+|**ShaderModel**|Opcjonalny parametr **ciągu** .<br/><br/>Określa model programu do cieniowania. Niektóre typy cieniowania mogą być używane tylko z najnowszymi modelami programu do cieniowania.<br/><br/>Użyj `/T [type]_[model]`.|
+|**Program do cieniowania**|Opcjonalny parametr **ciągu** .<br/><br/>Określa typ cieniowania.<br/><br/>Użyj `/T [type]_[model]`.<br/><br/>**Efekt**, użyj `fx`.<br/>Użyj `vs`.<br/>**Piksel**, użyj `ps`.<br/>**Geometria**, użyj `gs`.<br/>**Kadłub**, użyj `hs`.<br/>**Domenę**, użyj `ds`.<br/>**Obliczenia**, użyj `cs`.<br/>**Biblioteka**, użyj `lib`.<br/>**RootSignature**, Generuj obiekt sygnatury głównej.|
+|**Zewnętrz**|Wymagany parametr **ITaskItem** .|
+|**SuppressStartupBanner**|Opcjonalny parametr **bool** .<br/><br/>Pomija wyświetlanie transparentu startowego i komunikatu informacyjnego.<br/><br/>Użyj `/nologo`.|
+|**Katalog trackerlogdirectory**|Opcjonalny parametr **ciągu** .|
+|**TreatWarningAsError**|Opcjonalny parametr **bool** .<br/><br/>Traktuje wszystkie ostrzeżenia kompilatora jako błędy.<br/><br/>W przypadku nowego projektu najlepiej jest używać `/WX` we wszystkich kompilacjach; rozwiązanie wszystkich ostrzeżeń zapewni najmniejszą możliwą trudną do znalezienia wady kodu.|
+|**VariableName**|Opcjonalny parametr **ciągu** .<br/><br/>Określa nazwę zmiennej w pliku nagłówkowym.<br/><br/>Użyj `/Vn [name]`.|
 
 ## <a name="see-also"></a>Zobacz także
 

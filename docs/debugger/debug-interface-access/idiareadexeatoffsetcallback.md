@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df32012a100d36c8d288b6b988b9498ff4afd3b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f8498b0189a1d5bfb876417d4719adb3487065d5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832558"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742817"
 ---
 # <a name="idiareadexeatoffsetcallback"></a>IDiaReadExeAtOffsetCallback
-Umożliwia aplikacji klienta podać plik wykonywalny określony przez położenie pliku w bajtach.
+Umożliwia aplikacji klienckiej dostarczanie bajtów pliku wykonywalnego określonego przez położenie pliku.
 
 ## <a name="syntax"></a>Składnia
 
@@ -28,27 +28,27 @@ Umożliwia aplikacji klienta podać plik wykonywalny określony przez położeni
 IDiaReadExeAtOffsetCallback : IUnknown
 ```
 
-## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych
  W poniższej tabeli przedstawiono metody `IDiaReadExeAtOffsetCallback`.
 
 |Metoda|Opis|
 |------------|-----------------|
-|[IDiaReadExeAtOffsetCallback::ReadExecutableAt](../../debugger/debug-interface-access/idiareadexeatoffsetcallback-readexecutableat.md)|Odczytuje określoną liczbę bajtów, rozpoczynając od określonego przesunięcia przy użyciu pliku wykonywalnego.|
+|[IDiaReadExeAtOffsetCallback::ReadExecutableAt](../../debugger/debug-interface-access/idiareadexeatoffsetcallback-readexecutableat.md)|Odczytuje określoną liczbę bajtów rozpoczynając od określonego przesunięcia z pliku wykonywalnego.|
 
 ## <a name="remarks"></a>Uwagi
- Aplikacja kliencka implementuje ten interfejs zapewnić bajtów wykonywalny wykorzystujący przesunięcie bezwzględna do pliku wykonywalnego. Aby użyć względny adres wirtualny, należy zaimplementować [idiareadexeatrvacallback —](../../debugger/debug-interface-access/idiareadexeatrvacallback.md) interfejsu.
+ Aplikacja kliencka implementuje ten interfejs, aby zapewnić bajty pliku wykonywalnego, używając bezwzględnego przesunięcia do pliku wykonywalnego. Aby użyć względnego adresu wirtualnego, należy zaimplementować interfejs [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md) .
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
- Ta metoda jest implementowana przez aplikację klienta i przekazywane do [idiadatasource::loaddataforexe —](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) metodę jako alternatywną metodą dla odczytu pliku.
+ Ta metoda jest implementowana przez aplikację kliencką i przenoszona do metody [IDiaDataSource:: loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) jako alternatywna metoda odczytu pliku.
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: Dia2.h
+ Nagłówek: dia2. h
 
- Biblioteka: diaguids.lib
+ Biblioteka: diaguids. lib
 
- DLL: msdia80.dll
+ DLL: msdia80. dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Interfejsy (Zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)
 - [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)

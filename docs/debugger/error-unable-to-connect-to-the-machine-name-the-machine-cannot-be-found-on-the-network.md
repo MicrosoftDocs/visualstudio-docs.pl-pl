@@ -1,5 +1,5 @@
 ---
-title: 'Błąd: Nie można nawiązać połączenia z maszyną &lt;nazwa&gt;. Nie można odnaleźć maszyny w sieci. | Microsoft Docs'
+title: 'Błąd: nie można nawiązać połączenia z maszyną &lt;name &gt;. Nie można odnaleźć maszyny w sieci. | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,34 +16,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8eebd082df031161604bd04afe61d1aca652f6a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7d0f820156714a726d506d8871d4e42a8dc12a23
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850062"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72736834"
 ---
-# <a name="error-unable-to-connect-to-the-machine-ltnamegt-the-machine-cannot-be-found-on-the-network"></a>Błąd: Nie można nawiązać połączenia z maszyną &lt;nazwa&gt;. Nie można odnaleźć maszyny w sieci.
-Dzieje się tak, jeśli jest spełniony jeden z następujących warunków:
+# <a name="error-unable-to-connect-to-the-machine-ltnamegt-the-machine-cannot-be-found-on-the-network"></a>Błąd: nie można nawiązać połączenia z maszyną &lt;name &gt;. Nie można odnaleźć maszyny w sieci.
+Takie zachowanie występuje, gdy spełniony jest jeden z następujących warunków:
 
 - Połączenie z komputerem zdalnym zostało przerwane.
 
 - Twoje konto użytkownika na komputerze zdalnym jest wyłączone.
 
-- Wygasło hasło na komputerze zdalnym.
+- Hasło na komputerze zdalnym wygasło.
 
 ### <a name="to-resolve-this-behavior"></a>Aby rozwiązać ten problem
 
-- Upewnij się, że komputer lokalny i komputer zdalny znajdują się w tej samej sieci. Aby to zrobić, należy użyć Eksplorator systemu Microsoft Windows (lub Eksploratora plików), aby spróbować uzyskać dostęp do komputera zdalnego.
+- Upewnij się, że komputer lokalny i komputer zdalny znajdują się w tej samej sieci. Aby to zrobić, użyj Eksploratora Microsoft Windows (lub Eksploratora plików), aby spróbować uzyskać dostęp do komputera zdalnego.
 
-     — i —
+     lub
 
-- Upewnij się, że konto użytkownika, którego używasz, aby nawiązać połączenie z komputerem zdalnym jest włączona.
+- Upewnij się, że konto użytkownika używane do nawiązywania połączenia z komputerem zdalnym jest włączone.
 
-     — i —
+     lub
 
-- Upewnij się, że hasło, którego używasz do podłączenia do komputera zdalnego jest prawidłowy i nie wygasł.
+- Upewnij się, że hasło używane do nawiązania połączenia z komputerem zdalnym jest prawidłowe i nie wygasło.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Debugowanie zdalne](../debugger/remote-debugging.md)
 - [Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)

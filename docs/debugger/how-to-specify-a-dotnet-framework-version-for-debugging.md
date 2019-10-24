@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d612c3f0a542fe30e9241b43c1df5d82a09832fd
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: 1f6107d6396c6228be1d511e81003fbe7faf06c9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72535975"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72732639"
 ---
 # <a name="specify-an-older-net-framework-version-for-debugging-c-visual-basic-f"></a>Określ starszą wersję .NET Framework na potrzeby debugowaniaC#(, Visual Basic F#,)
 
@@ -64,5 +64,5 @@ W rzadkich przypadkach, gdy ten błąd pojawia się, można ustawić klucz rejes
 
      Jeśli po rozpoczęciu debugowania nadal pojawia się komunikat o błędzie, sprawdź, czy w rejestrze wprowadzono numer wersji. Sprawdź również, czy używasz wersji .NET Framework obsługiwanej przez program Visual Studio. Debuger jest zgodny z bieżącą wersją .NET Framework i poprzednimi wersjami, ale może nie być zgodny z przyszłymi wersjami.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)

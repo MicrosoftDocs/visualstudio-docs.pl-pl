@@ -1,5 +1,5 @@
 ---
-title: Dokumentacja interfejsu API wizualizatora | Dokumentacja firmy Microsoft
+title: Wizualizacja interfejsu API wizualizatora | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,16 +17,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79d417bcee4bb6e058ea90028a29a87a3527aa5c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: efcba8397ce766409715f24e184b3c77aad53eea
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929459"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72728652"
 ---
 # <a name="visualizer-api-reference"></a>Wizualizator API — Odwołanie
 
-Wizualizator interfejsów API znajdują się dla użytkowników, którzy chcą pisanie wizualizatora w debugerze programu Visual Studio. Wizualizatora to mała aplikacja, która umożliwia rozbudowanie interfejsu użytkownika funkcji debugera programu Visual Studio. Wizualizatora może wyświetlić (i opcjonalnie edytować) obiekt danych określonego typu, dla których zaprojektowano wizualizatora.
+Interfejsy API wizualizatora są udostępniane dla użytkowników, którzy chcą napisać wizualizator dla debugera programu Visual Studio. Wizualizator to mała aplikacja, która rozszerza funkcjonalność interfejsu użytkownika debugera programu Visual Studio. Wizualizator może wyświetlać (i opcjonalnie edytować) obiekt danych określonego typu, dla którego został zaprojektowany wizualizator.
 
 ## <a name="in-this-section"></a>W tej sekcji
 
@@ -40,8 +40,8 @@ Wizualizator interfejsów API znajdują się dla użytkowników, którzy chcą p
 
 - <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource?displayProperty=fullName>
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
-- [Przewodnik: Pisanie wizualizatora w języku C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
-- [Instrukcje: Pisanie wizualizatora](/visualstudio/debugger/create-custom-visualizers-of-data)
+- [Przewodnik: pisanie wizualizatora w języku C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
+- [Instrukcje: pisanie wizualizatora](/visualstudio/debugger/create-custom-visualizers-of-data)
 - [Tworzenie niestandardowych wizualizatorów](../debugger/create-custom-visualizers-of-data.md)

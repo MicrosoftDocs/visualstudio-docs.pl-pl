@@ -1,5 +1,5 @@
 ---
-title: 'Błąd: Usługa zdalnego debugera programu Visual Studio na komputerze docelowym nie może połączyć się ponownie z tym komputerem'
+title: 'Błąd: Usługa zdalnego debugera Visual Studio na komputerze docelowym nie może połączyć się ponownie z tym komputerem'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 11/04/2016
@@ -16,64 +16,64 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c07557fa64f86349a3baf8956d99b937ceab9f5a
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: 695c4c9e84ce9eb851a551dc9821bff00123a35c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043439"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737406"
 ---
-# <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>Błąd: Usługa zdalnego debugera programu Visual Studio na komputerze docelowym nie może połączyć się ponownie z tym komputerem
-Ten błąd oznacza, że usługa zdalnego debugera jest uruchomiona w ramach konta użytkownika, które nie mogą uwierzytelnić się podczas próby połączenia z komputerem, na którym wykonujesz debugowanie z. Ten błąd może wystąpić, gdy zdalne debugowanie przy użyciu starego aparatu debugowania i zdalny debuger działa jako usługa.
+# <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>Błąd: Usługa zdalnego debugera Visual Studio na komputerze docelowym nie może połączyć się ponownie z tym komputerem
+Ten błąd oznacza, że usługa zdalnego debugera jest uruchomiona w ramach konta użytkownika, którego nie można uwierzytelnić, gdy próbuje nawiązać połączenie z komputerem, na którym odbywa się debugowanie. Ten błąd może wystąpić, gdy debugowanie zdalne korzysta ze starszego aparatu debugowania, a zdalny debuger działa jako usługa.
 
- W poniższej tabeli przedstawiono, jakie kont mogą uzyskiwać dostęp do komputera:
+ W poniższej tabeli przedstawiono, jakie konta mogą uzyskać dostęp do komputera:
 
 |||||
 |-|-|-|-|
-||Konto System lokalny|Konto domeny|Konta lokalne, które mają tej samej nazwy użytkownika i hasła na obu komputerach|
-|Oba komputery w tej samej domenie|Tak|Yes|Tak|
-|Oba komputery w domenach, które mają dwukierunkowe relacje zaufania|Nie|Nie|Tak|
+||Konto LocalSystem|Konto domeny|Konta lokalne, które mają taką samą nazwę użytkownika i hasło na obu komputerach|
+|Oba komputery w tej samej domenie|Tak|Tak|Tak|
+|Oba komputery w domenach z zaufaniem dwukierunkowym|Nie|Nie|Tak|
 |Jeden lub oba komputery w grupie roboczej|Nie|Nie|Tak|
 |Komputery w różnych domenach|Nie|Nie|Tak|
 
  Ponadto:
 
-- Konto uruchamiania usługi zdalnego debugera Visual Studio w obszarze należy administrator na komputerze zdalnym, aby go debugować dowolny proces.
+- Konto, na którym uruchomiono usługę zdalny debuger programu Visual Studio, powinno być kontem administratora na komputerze zdalnym, aby można było debugować każdy proces.
 
-- Ponadto konto musi mieć uprawnienia `Log on as a service` uprawnień na komputerze zdalnym, który używa **zasady zabezpieczeń lokalnych** narzędzie administracyjne.
+- Konto musi mieć również przyznane uprawnienie `Log on as a service` na komputerze zdalnym, który korzysta z narzędzia administracyjnego **zasad zabezpieczeń lokalnych** .
 
-- Korzystając z dostępu do lokalnego konta komputera, należy uruchomić usługę zdalnego debugera Visual Studio przy użyciu lokalnego konta.
+- Jeśli używasz konta lokalnego dostępu do komputera, musisz uruchomić usługę zdalny debuger programu Visual Studio w ramach konta lokalnego.
 
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd
 
-1. Upewnij się, że usługa zdalnego debugera Visual Studio jest prawidłowo skonfigurowany na komputerze zdalnym. Aby uzyskać więcej informacji, zobacz [zdalne debugowanie](../debugger/remote-debugging.md).
+1. Upewnij się, że usługa zdalny debuger programu Visual Studio została prawidłowo skonfigurowana na komputerze zdalnym. Aby uzyskać więcej informacji, zobacz [debugowanie zdalne](../debugger/remote-debugging.md).
 
-2. Uruchom usługę zdalnego debugera przy użyciu konta, które mogą uzyskiwać dostęp do komputera hosta debugera, jak pokazano w poprzedniej tabeli.
+2. Uruchom usługę zdalnego debugera w ramach konta, które ma dostęp do komputera hosta debugera, jak pokazano w poprzedniej tabeli.
 
-### <a name="to-add-log-on-as-a-service-privilege"></a>Aby dodać uprawnienie "Logowanie jako usługa"
+### <a name="to-add-log-on-as-a-service-privilege"></a>Aby dodać uprawnienie "Logowanie w trybie usługi"
 
-1. Na **Start** menu, wybierz **Panelu sterowania**.
+1. W menu **Start** wybierz pozycję **Panel sterowania**.
 
-2. W Panelu sterowania wybierz **Klasyczny**, jeśli to konieczne.
+2. W panelu sterowania wybierz pozycję **Widok klasyczny**, w razie potrzeby.
 
-3. Kliknij dwukrotnie **narzędzia administracyjne**.
+3. Kliknij dwukrotnie pozycję **Narzędzia administracyjne**.
 
-4. W oknie Narzędzia administracyjne kliknij dwukrotnie **zasady zabezpieczeń lokalnych**.
+4. W oknie Narzędzia administracyjne kliknij dwukrotnie pozycję **zasady zabezpieczeń lokalnych**.
 
-5. W **ustawienia zabezpieczeń lokalnych** okna, rozwiń węzeł **zasady lokalne** folderu.
+5. W oknie **Ustawienia zabezpieczeń lokalnych** rozwiń folder **Zasady lokalne** .
 
-6. Kliknij przycisk **Przypisywanie praw użytkownika**.
+6. Kliknij pozycję **Przypisywanie praw użytkownika**.
 
-7. W **zasad** kolumny, kliknij dwukrotnie **Zaloguj się jako usługa** Aby przejrzeć bieżące przypisania zasad grupy lokalne, w **Zaloguj się jako usługa** okno dialogowe.
+7. W kolumnie **zasady** kliknij dwukrotnie pozycję **Logowanie jako usługa** , aby wyświetlić bieżące przypisania lokalnego zasady grupy w oknie dialogowym **Logowanie jako usługa** .
 
-8. Aby dodać nowych użytkowników, kliknij **Dodaj użytkownika lub grupę** przycisku.
+8. Aby dodać nowych użytkowników, kliknij przycisk **Dodaj użytkownika lub grupę** .
 
-9. Po zakończeniu dodawania użytkowników kliknij **OK**.
+9. Po zakończeniu dodawania użytkowników kliknij przycisk **OK**.
 
 ### <a name="to-work-around-this-error"></a>Aby obejść ten błąd
 
-- Uruchom Monitor debugera zdalnego jako aplikację, a nie jako usługa.
+- Uruchom Monitor zdalnego debugowania jako aplikację zamiast usługi.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Błędy związane z debugowaniem zdalnym i rozwiązywanie problemów](../debugger/remote-debugging-errors-and-troubleshooting.md)
 - [Debugowanie zdalne](../debugger/remote-debugging.md)

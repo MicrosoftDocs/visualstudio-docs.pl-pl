@@ -1,5 +1,5 @@
 ---
-title: Przeglądanie wątków GPU w debugerze | Dokumentacja firmy Microsoft
+title: Wyświetlanie wątków GPU w debugerze | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -18,91 +18,91 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59229b1ca2b055fc8242bf6446541a395eceaa56
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 972b21c4535df37dd81da6aceaa062b39176469c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62846866"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72732087"
 ---
-# <a name="how-to-use-the-gpu-threads-window-c"></a>Instrukcje: Korzystanie z okna wątków procesora GPU (C++)
-Okno wątków GPU można zbadać i Praca z wątkami, które są uruchomione w procesorze GPU w aplikacji, na którym wykonujesz debugowanie. Aby uzyskać więcej informacji na temat aplikacji działających na procesorze GPU, zobacz [Przegląd C++ AMP](/cpp/parallel/amp/cpp-amp-overview).
+# <a name="how-to-use-the-gpu-threads-window-c"></a>Instrukcje: korzystanie z okna wątków procesora GPU (C++)
+W oknie wątki GPU można przeanalizować i pracować z wątkami uruchomionymi na procesorze GPU w debugowanej aplikacji. Aby uzyskać więcej informacji o aplikacjach uruchamianych na procesorze GPU, zobacz [ C++ amp Overview](/cpp/parallel/amp/cpp-amp-overview).
 
- Okno wątków GPU zawiera tabelę, w którym każdy wiersz reprezentuje zestaw wątków GPU, które mają takie same wartości we wszystkich kolumnach. Można sortować, zmienić kolejność, Usuń i grupowania elementów, które w kolumnach. Możesz Flaga, Usuń flagę, blokowanie (zawieszenie) i Odblokuj wątki (Wznów) z okna wątków GPU. Następujące kolumny są wyświetlane w oknie wątków GPU:
+ Okno wątki GPU zawiera tabelę, w której każdy wiersz reprezentuje zestaw wątków procesora GPU, które mają te same wartości we wszystkich kolumnach. Można sortować, zmienić kolejność, usuwać i grupować elementy, które znajdują się w kolumnach. Wątki z okna wątków GPU umożliwiają Flagowanie, usuwanie flag, blokowanie (Wstrzymywanie) i odblokowywanie (wznawianie). W oknie wątki GPU są wyświetlane następujące kolumny:
 
-- Kolumna flagi, w którym można oznaczyć wątek, który chcesz zwrócić szczególną uwagę.
+- Kolumna flagi, w której można oznaczyć wątek, do którego chcemy zwrócić szczególną uwagę.
 
-- Bieżący wątek kolumna, w której żółta strzałka wskazuje bieżący wątek.
+- Kolumna bieżącego wątku, w której żółta strzałka wskazuje bieżący wątek.
 
-- **Liczba wątków** kolumny, która wyświetla liczbę wątków w tej samej lokalizacji.
+- Kolumna **Liczba wątków** , która wyświetla liczbę wątków w tej samej lokalizacji.
 
-- **Wiersza** kolumny, która wyświetla wiersz kodu, w którym znajduje się każda grupa wątków.
+- Kolumna **wiersz** , w której jest wyświetlany wiersz kodu, w którym znajduje się każda grupa wątków.
 
-- **Adres** kolumny, która wyświetla adres instrukcji, w którym znajduje się każda grupa wątków. Domyślnie ta kolumna jest ukryta.
+- Kolumna **adres** , w której jest wyświetlany adres instrukcji, w której znajduje się każda grupa wątków. Domyślnie ta kolumna jest ukryta.
 
-- **Lokalizacji** kolumny, która jest lokalizacją w kodzie źródłowym.
+- Kolumna **lokalizacji** , która jest lokalizacją w kodzie źródłowym.
 
-- **Stan** kolumny, która wskazuje, czy wątek aktywnych, zablokowane, nie jest uruchomiona lub ukończone.
+- Kolumna **stan** , która pokazuje, czy wątek jest aktywny, zablokowany, nie uruchomiono lub został ukończony.
 
-- **Kafelek** kolumny, która zawiera indeks kafelka dla wątków w wierszu.
+- Kolumna **kafelka** , która pokazuje indeks kafelków dla wątków w wierszu.
 
-  Nagłówek tabeli pokazuje Kafelek i wątku są wyświetlane.
+  Nagłówek tabeli pokazuje wyświetlany kafelek i wątek.
 
   [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
 ### <a name="to-display-the-gpu-threads-window"></a>Aby wyświetlić okno wątków GPU
 
-1. W **Eksploratora rozwiązań**, otwórz menu skrótów dla projektu, a następnie wybierz **właściwości**.
+1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla projektu, a następnie wybierz polecenie **Właściwości**.
 
-2. W **stron właściwości** okna dla projektu, w obszarze **właściwości konfiguracji**, wybierz **debugowanie**.
+2. W oknie **strony właściwości** dla projektu, w obszarze **Właściwości konfiguracji**wybierz **debugowanie**.
 
-3. W **debuger do uruchomienia** listy wybierz **lokalny debuger Windows**. W **typ debugera** listy wybierz **tylko GPU**. Musisz wybrać to przerwanie debugowania w punktach przerwania w kodzie, który działa na procesorze GPU.
+3. Na liście **debuger do uruchomienia** wybierz pozycję **lokalny debuger systemu Windows**. Na liście **Typ debugera** wybierz pozycję **tylko procesor GPU**. Musisz wybrać ten debuger, aby przerwać w punkcie przerwania w kodzie, który jest uruchamiany na procesorze GPU.
 
-4. Wybierz **OK** przycisku.
+4. Wybierz przycisk **OK** .
 
 5. Ustaw punkt przerwania w kodzie procesora GPU.
 
-6. Na pasku menu wybierz **debugowania**, **Rozpocznij debugowanie**. Poczekaj, aż aplikacja do osiągnięcia punktu przerwania.
+6. Na pasku menu wybierz **Debuguj**, **Rozpocznij debugowanie**. Poczekaj, aż aplikacja osiągnie punkt przerwania.
 
-7. Jeden na pasku menu wybierz **debugowania**, **Windows**, **wątków GPU**.
+7. Na pasku menu wybierz kolejno opcje **Debuguj**, **Windows**i **GPU**.
 
 ### <a name="to-switch-to-a-different-thread"></a>Aby przełączyć się do innego wątku
 
-- Kliknij dwukrotnie kolumnę. (Klawiatura: Zaznacz wiersz i wybierz klawisz Enter).
+- Kliknij dwukrotnie kolumnę. (Klawiatura: zaznacz wiersz i wybierz klawisz ENTER).
 
-### <a name="to-display-a-particular-tile-and-thread"></a>Do wyświetlania określonego fragmentu i wątku
+### <a name="to-display-a-particular-tile-and-thread"></a>Aby wyświetlić określony kafelek i wątek
 
-1. Wybierz **rozwiń przełącznik wątku** przycisku z okna wątków GPU.
+1. Wybierz przycisk **rozszerzanie wątku** w oknie wątki GPU.
 
-2. Wprowadź fragmentu i wątku wartości w polach tekstowych.
+2. Wprowadź wartości kafelka i wątku w polach tekstowych.
 
-3. Wybierz przycisk, który zawiera strzałkę znajdującą się na nim.
+3. Wybierz przycisk, który ma strzałkę na nim.
 
-### <a name="to-display-or-hide-a-column"></a>Aby wyświetlić lub ukryć kolumny
+### <a name="to-display-or-hide-a-column"></a>Aby wyświetlić lub ukryć kolumnę
 
-- Otwórz menu skrótów okna wątków GPU, wybierz **kolumn**, a następnie wybierz kolumnę, którą chcesz wyświetlić lub ukryć.
+- Otwórz menu skrótów okna wątki GPU, wybierz **kolumny**, a następnie wybierz kolumnę, która ma być wyświetlana lub ukryta.
 
-### <a name="to-sort-by-a-column"></a>Aby sortować według kolumny
+### <a name="to-sort-by-a-column"></a>Aby posortować według kolumny
 
 - Wybierz nagłówek kolumny.
 
-### <a name="to-group-threads"></a>Grupa wątków
+### <a name="to-group-threads"></a>Do grup wątków
 
-- Otwórz menu skrótów okna wątków GPU, wybierz **Group By**, a następnie wybierz jedną z nazw kolumn wyświetlane. Wybierz **Brak** rozgrupować wątków.
+- Otwórz menu skrótów okna wątków GPU, wybierz pozycję **Grupuj według**, a następnie wybierz jedną z wyświetlanych nazw kolumn. Wybierz **Brak** , aby rozgrupować wątki.
 
-### <a name="to-freeze-or-thaw-a-row-of-threads"></a>Na blokowanie lub odblokowywanie wątków wiersz
+### <a name="to-freeze-or-thaw-a-row-of-threads"></a>Aby zablokować lub odblokować wiersz wątków
 
-- Otwórz menu skrótów dla wiersza, a następnie wybierz **Freeze** lub **Odblokuj**.
+- Otwórz menu skrótów dla wiersza, a następnie wybierz polecenie **Zablokuj** lub **rozmrażaj**.
 
-### <a name="to-flag-or-unflag-a-row-of-threads"></a>Aby Flagowanie wiersz wątków lub
+### <a name="to-flag-or-unflag-a-row-of-threads"></a>Aby oflagować lub Usuń flagę wiersza wątków
 
-- Wybierz kolumnę flagę wątku, lub Otwórz menu skrótów dla wątku i wybierz **flagi** lub **Unflag**.
+- Wybierz kolumnę flag dla wątku lub Otwórz menu skrótów dla wątku, a następnie wybierz **flagę** lub Usuń **flagę**.
 
-### <a name="to-display-only-flagged-threads"></a>Aby wyświetlić tylko oflagowane wątki
+### <a name="to-display-only-flagged-threads"></a>Aby wyświetlić tylko Oflagowane wątki
 
-- Kliknij przycisk flagi w okno wątków GPU.
+- Wybierz przycisk flagi w oknie wątki GPU.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Debugowanie aplikacji wielowątkowych](../debugger/debug-multithreaded-applications-in-visual-studio.md)
-- [Instrukcje: Korzystanie z okna równoległego wyrażenia kontrolnego](../debugger/how-to-use-the-parallel-watch-window.md)
+- [Instrukcje: korzystanie z okna równoległego wyrażenia kontrolnego](../debugger/how-to-use-the-parallel-watch-window.md)
 - [Przewodnik: debugowanie aplikacji C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

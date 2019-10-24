@@ -1,5 +1,5 @@
 ---
-title: Idiasession::symsareequiv — | Dokumentacja firmy Microsoft
+title: 'IDiaSession:: symsAreEquiv | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0253104cf29e86825fadc8c8bd18133e0d3cf593
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 61cfc582f11670af8c956c3334681284ce5172a6
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839078"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741868"
 ---
 # <a name="idiasessionsymsareequiv"></a>IDiaSession::symsAreEquiv
 Sprawdza, czy dwa symbole są równoważne.
@@ -34,15 +34,15 @@ HRESULT symsAreEquiv ( 
 #### <a name="parameters"></a>Parametry
  `symbolA`
 
-[in] Pierwszy [idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md) obiekt używany do porównania.
+podczas Pierwszy obiekt [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) używany w porównaniu.
 
  `symbolB`
 
-[in] Drugi `IDiaSymbol` obiekt używany do porównania.
+podczas Drugi obiekt `IDiaSymbol` używany w porównaniu.
 
 ## <a name="return-value"></a>Wartość zwracana
- Symbole są równoważne, funkcja zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE`, symbole nie są równoważne. W przeciwnym razie zwraca kod błędu.
+ Jeśli symbole są równoważne, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE`, symbole nie są równoważne. W przeciwnym razie Zwróć kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

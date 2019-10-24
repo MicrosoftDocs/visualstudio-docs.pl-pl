@@ -13,26 +13,26 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 289062a15c35641d5558409c7643301e346b6e65
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: f291a9c105c8207fb6721d32d4d0481e49dd4295
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "69976704"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72726426"
 ---
 # <a name="nesting-projects"></a>Zagnieżdżanie projektów
-Deweloperzy aplikacji korporacyjnych korzystających z pakietu programu vs mogą wygodnie grupować podobne typy projektów [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] w programie przy użyciu *zagnieżdżania projektów*. Na przykład projekt szablon przedsiębiorstwa używa zagnieżdżonych projektów do grupowania projektów w kategorii. Projekty fasady biznesowej, projekty interfejsu użytkownika sieci Web i tak dalej są pogrupowane w jednej kategorii.
+Deweloperzy aplikacji korporacyjnych korzystających z pakietu programu VS mogą wygodnie grupować podobne typy projektów w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] przy użyciu *zagnieżdżania projektu*. Na przykład projekt szablon przedsiębiorstwa używa zagnieżdżonych projektów do grupowania projektów w kategorii. Projekty fasady biznesowej, projekty interfejsu użytkownika sieci Web i tak dalej są pogrupowane w jednej kategorii.
 
  W tym scenariuszu nie ma żadnego limitu liczby projektów, które deweloper może zagnieżdżać w każdym projekcie nadrzędnym, Chociaż deweloper może programowo wprowadzić limity. Ten typ grupowania może również spowodować cykliczność, w takim przypadku projekty tego samego typu co projekt podrzędny mogą być zagnieżdżane w elemencie podrzędnym, aby stał się podprojektem elementu podrzędnego, który jest podprojektem elementu nadrzędnego.
 
- Zagnieżdżanie projektu nie jest częścią [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]wewnętrzną. Należy napisać kod w celu włączenia zagnieżdżania i zagnieżdżania projektu w ramach projektów podrzędnych. Projekt nadrzędny jest specjalnym pakietu VSPackage lub typem projektu, utworzonym i zarejestrowanym przy użyciu własnego identyfikatora GUID, który zawiera kod, który jest wymagany do wdrożenia zagnieżdżania projektu.
+ Zagnieżdżanie projektu nie jest wewnętrzną częścią [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Należy napisać kod w celu włączenia zagnieżdżania i zagnieżdżania projektu w ramach projektów podrzędnych. Projekt nadrzędny jest specjalnym pakietu VSPackage lub typem projektu, utworzonym i zarejestrowanym przy użyciu własnego identyfikatora GUID, który zawiera kod, który jest wymagany do wdrożenia zagnieżdżania projektu.
 
- Przykład sposobu zagnieżdżania projektów można znaleźć w [temacie How to: Implementowanie zagnieżdżonych projektów](../../extensibility/internals/how-to-implement-nested-projects.md).
+ Przykład sposobu zagnieżdżania projektów można znaleźć w temacie [How to: Implementuj zagnieżdżone projekty](../../extensibility/internals/how-to-implement-nested-projects.md).
 
 ## <a name="nested-projects-example"></a>Przykład zagnieżdżonych projektów
  ![Rozwiązanie zagnieżdżonych projektów](../../extensibility/internals/media/vsnestedprojects.gif "vsNestedProjects") Przykład zagnieżdżonych projektów
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Zagadnienia dotyczące zwalniania i ponownego ładowania zagnieżdżonych projektów](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)
 - [Obsługa kreatora dla zagnieżdżonych projektów](../../extensibility/internals/wizard-support-for-nested-projects.md)
 - [Rejestrowanie szablonów projektów i elementów](../../extensibility/internals/registering-project-and-item-templates.md)

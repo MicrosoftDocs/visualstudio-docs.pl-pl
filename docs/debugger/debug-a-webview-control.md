@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 8ba9b0eb17a492bf1912281038ffc35732ece96d
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: 2ce889f83c4d21a8b2464cab108fa165e1144791
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72589073"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745573"
 ---
 # <a name="debug-a-webview-control-in-a-uwp-app"></a>Debugowanie kontrolki WebView w aplikacji platformy UWP
 
@@ -83,6 +83,6 @@ ms.locfileid: "72589073"
 
 6. Wyświetlaj i Modyfikuj zmienne w aplikacji lub korzystaj z poleceń konsoli, zgodnie z opisem w [przewodniku szybki start: debugowanie](../debugger/quickstart-debug-javascript-using-the-console.md) [poleceń konsoli](../debugger/javascript-console-commands.md?view=vs-2017)JavaScript i JavaScript.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Szybki start: debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md)

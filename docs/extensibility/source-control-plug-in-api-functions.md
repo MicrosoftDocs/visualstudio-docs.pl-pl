@@ -1,5 +1,5 @@
 ---
-title: Funkcje interfejsu API wtyczki kontroli źródła | Dokumentacja firmy Microsoft
+title: Funkcje interfejsu API wtyczki kontroli źródła | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,81 +10,81 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9426d4f1f673d0d82c6ce3fd84c76a1c42d8ec4e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 57e451ebb4693e7742208ab6a375fa7d50563a17
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331926"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72719897"
 ---
 # <a name="source-control-plug-in-api-functions"></a>Funkcje interfejsu API wtyczki kontroli źródła
-Interfejs API wtyczki kontroli źródła zapewnia następujące funkcje, które muszą być zaimplementowane przez wtyczka do kontroli źródła zgodnie z tego interfejsu API. Podpisy każdej funkcji i semantyka skojarzone z flag bitowych, i inne parametry zostały szczegółowo opisane w tym dokumencie.
+Interfejs API wtyczki kontroli źródła udostępnia następujące funkcje, które muszą zostać zaimplementowane przez wtyczkę kontroli źródła zgodnie z tym interfejsem API. Sygnatury każdej funkcji i semantyki skojarzonej z flagami bitowymi i innymi parametrami są szczegółowo opisane w tym odwołaniu.
 
-## <a name="initialization-and-housekeeping-functions"></a>Inicjowanie i celów funkcji
+## <a name="initialization-and-housekeeping-functions"></a>Funkcje inicjacji i dla gospodarstw domowych
 
 |Funkcja|Opis|
 |--------------|-----------------|
-|[SccCloseProject](../extensibility/scccloseproject-function.md)|Zamknięcie projektu.|
-|[SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)|Monituje użytkownika o zaawansowane opcje dla danego polecenia.|
-|[SccGetVersion](../extensibility/sccgetversion-function.md)|Zwraca wersję do kontroli źródła wtyczek.|
-|[SccInitialize](../extensibility/sccinitialize-function.md)|Inicjuje wtyczka do kontroli źródła. Jest on wywoływany raz dla każdego wystąpienia wtyczki.|
-|[SccOpenProject](../extensibility/sccopenproject-function.md)|Zostanie otwarty projekt.|
-|[SccSetOption](../extensibility/sccsetoption-function.md)|Funkcja ogólna, używane do ustawiania szeroką gamę opcji. Każda opcja zaczyna się od `SCC_OPT_xxx` i ma swój własny zestaw zdefiniowanych wartości.|
-|[SccUninitialize](../extensibility/sccuninitialize-function.md)|Wywołuje się, gdy po wtyczki kontroli źródła musi zostać odłączone.|
+|[SccCloseProject](../extensibility/scccloseproject-function.md)|Zamyka projekt.|
+|[SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)|Monituje użytkownika o opcje zaawansowane dla danego polecenia.|
+|[SccGetVersion](../extensibility/sccgetversion-function.md)|Zwraca wersję wtyczki kontroli źródła.|
+|[SccInitialize](../extensibility/sccinitialize-function.md)|Inicjuje wtyczkę kontroli źródła. Jest wywoływana jednokrotnie dla każdego wystąpienia wtyczki.|
+|[SccOpenProject](../extensibility/sccopenproject-function.md)|Otwiera projekt.|
+|[SccSetOption](../extensibility/sccsetoption-function.md)|Funkcja ogólna używana do ustawiania szerokiej gamy opcji. Każda opcja rozpoczyna się od `SCC_OPT_xxx` i ma swój własny zdefiniowany zestaw wartości.|
+|[SccUninitialize](../extensibility/sccuninitialize-function.md)|Wywoływana raz, gdy wtyczka kontroli źródła musi być odłączona.|
 
 ## <a name="core-source-control-functions"></a>Podstawowe funkcje kontroli źródła
 
 |Funkcja|Opis|
 |--------------|-----------------|
-|[SccAdd](../extensibility/sccadd-function.md)|Dodaje tablicę plików określone przez nazwy w pełni kwalifikowana ścieżka do systemu kontroli źródła.|
-|[SccAddFromScc](../extensibility/sccaddfromscc-function.md)|Umożliwia użytkownikowi przeglądanie w poszukiwaniu plików, które znajdują się już w systemie kontroli źródła, a następnie wprowadź tych plików będących częścią bieżącego projektu.|
-|[SccCheckin](../extensibility/scccheckin-function.md)|Sprawdza, czy w tablicy plików.|
-|[SccCheckout](../extensibility/scccheckout-function.md)|Wyewidencjonowuje tablicę plików.|
-|[SccDiff](../extensibility/sccdiff-function.md)|Przedstawiono różnice między użytkownika lokalnego pliku, określonego przez nazwę pełną ścieżkę i wersji pod kontrolą źródła.|
-|[SccGet](../extensibility/sccget-function.md)|Pobiera kopię grupy plików tylko do odczytu.|
-|[SccGetEvents](../extensibility/sccgetevents-function.md)|Umożliwia sprawdzenie stanu plików, które obiekt wywołujący poprosił o (za pośrednictwem `SccQueryInfo`).|
-|[SccGetProjPath](../extensibility/sccgetprojpath-function.md)|Powoduje, że wtyczka na monitowanie użytkownika o ścieżkę projektu, która jest zrozumiały dla dodatku typu plug-in do kontroli źródła.|
-|[SccHistory](../extensibility/scchistory-function.md)|Przedstawia historię tablicę nazw FQDN pliku lokalnego.|
-|[SccPopulateList](../extensibility/sccpopulatelist-function.md)|Sprawdza, czy lista plików dla ich bieżący stan. Ponadto używa `pfnPopulate` funkcję, aby powiadomić obiekt wywołujący, gdy plik jest niezgodny z kryteriami, które dla `nCommand`.|
-|[SccProperties](../extensibility/sccproperties-function.md)|Zawiera właściwości pliku w pełni kwalifikowana.|
-|[SccQueryInfo](../extensibility/sccqueryinfo-function.md)|Sprawdza, czy lista plików w pełni kwalifikowaną dla ich bieżący stan.|
-|[SccRemove](../extensibility/sccremove-function.md)|Usuwa tablicy w pełni kwalifikowaną plików z systemu kontroli źródła.|
-|[SccRename](../extensibility/sccrename-function.md)|Zmienia nazwę danego pliku pod nową nazwą w systemie kontroli źródła.|
+|[SccAdd](../extensibility/sccadd-function.md)|Dodaje tablicę plików określoną za pomocą w pełni kwalifikowanych nazw ścieżek do systemu kontroli źródła.|
+|[SccAddFromScc](../extensibility/sccaddfromscc-function.md)|Umożliwia użytkownikowi przeglądanie w poszukiwaniu plików, które znajdują się już w systemie kontroli źródła, a następnie stanowią część tego pliku w bieżącym projekcie.|
+|[SccCheckin](../extensibility/scccheckin-function.md)|Sprawdza tablicę plików.|
+|[SccCheckout](../extensibility/scccheckout-function.md)|Sprawdza tablicę plików.|
+|[SccDiff](../extensibility/sccdiff-function.md)|Pokazuje różnice między plikiem użytkownika lokalnego określonym za pomocą w pełni kwalifikowanej nazwy ścieżki i wersji pod kontrolą źródła.|
+|[SccGet](../extensibility/sccget-function.md)|Pobiera kopię zestawu plików tylko do odczytu.|
+|[SccGetEvents](../extensibility/sccgetevents-function.md)|Sprawdza stan plików, na które prosi obiekt wywołujący (za pośrednictwem `SccQueryInfo`).|
+|[SccGetProjPath](../extensibility/sccgetprojpath-function.md)|Powoduje, że wtyczka do kontroli źródła monituje użytkownika o ścieżkę projektu, która ma znaczenie dla wtyczki.|
+|[SccHistory](../extensibility/scchistory-function.md)|Pokazuje historię tablicy w pełni kwalifikowanych lokalnych nazw plików.|
+|[SccPopulateList](../extensibility/sccpopulatelist-function.md)|Bada listę plików do ich bieżącego stanu. Ponadto program używa funkcji `pfnPopulate`, aby powiadomić obiekt wywołujący, gdy plik jest niezgodny z kryteriami `nCommand`.|
+|[SccProperties](../extensibility/sccproperties-function.md)|Pokazuje właściwości w w pełni kwalifikowany plik.|
+|[SccQueryInfo](../extensibility/sccqueryinfo-function.md)|Bada listę w pełni kwalifikowanych plików dla ich bieżącego stanu.|
+|[SccRemove](../extensibility/sccremove-function.md)|Usuwa tablicę w pełni kwalifikowanych plików z systemu kontroli źródła.|
+|[SccRename](../extensibility/sccrename-function.md)|Zmienia nazwę danego pliku na nową nazwę w systemie kontroli źródła.|
 |[SccRunScc](../extensibility/sccrunscc-function.md)|Uzyskuje dostęp do pełnego zakresu funkcji systemu kontroli źródła.|
 |[SccUncheckout](../extensibility/sccuncheckout-function.md)|Cofa wyewidencjonowanie tablicy plików.|
 
-## <a name="functions-that-support-additional-capability-version-12-of-the-source-control-plug-in-api"></a>Funkcje, które obsługują dodatkowe możliwości (wersja 1.2 interfejsu API wtyczki kontroli źródła)
- Ta grupa funkcji określa dodatkowe funkcje uwzględnione w wersji 1.2 API wtyczki kontroli źródła. Zapewniają one dostęp do bardziej zaawansowanych funkcji kontroli źródła i możliwości.
+## <a name="functions-that-support-additional-capability-version-12-of-the-source-control-plug-in-api"></a>Funkcje, które obsługują dodatkową możliwość (wersja 1,2 interfejsu API wtyczki kontroli źródła)
+ Ta grupa funkcji definiuje dodatkowe funkcje dostępne w wersji 1,2 interfejsu API wtyczki kontroli źródła. Zapewniają one dostęp do bardziej zaawansowanych funkcji i możliwości kontroli źródła.
 
 |Funkcja|Opis|
 |--------------|-----------------|
-|[SccBeginBatch](../extensibility/sccbeginbatch-function.md)|Rozpoczyna operację usługi batch.|
-|[SccCreateSubProject](../extensibility/scccreatesubproject-function.md)|Utworzenie podprojektu o podanej nazwie w ramach istniejącego nadrzędnego projektu.|
-|[SccDirDiff](../extensibility/sccdirdiff-function.md)|Przedstawiono różnice między katalogu lokalnego użytkownika określonego przez nazwę pełną ścieżkę i lokalizację bazy danych kontroli źródła.|
-|[SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md)|Sprawdza, czy lista katalogów w pełni kwalifikowaną ich bieżący stan.|
-|[SccEndBatch](../extensibility/sccendbatch-function.md)|Kończy operację usługi batch.|
-|[SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md)|Zwraca nadrzędny ścieżkę danego projektu (projekt musi istnieć).|
-|[SccIsMultiCheckoutEnabled](../extensibility/sccismulticheckoutenabled-function.md)|Sprawdza, czy wiele operacji wyewidencjonowania w pliku są dozwolone.|
+|[SccBeginBatch](../extensibility/sccbeginbatch-function.md)|Uruchamia operację wsadową.|
+|[SccCreateSubProject](../extensibility/scccreatesubproject-function.md)|Tworzy podprojekt o podaną nazwę w istniejącym projekcie nadrzędnym.|
+|[SccDirDiff](../extensibility/sccdirdiff-function.md)|Pokazuje różnice między katalogiem użytkownika lokalnego określonym przy użyciu w pełni kwalifikowanej nazwy ścieżki i lokalizacji bazy danych kontroli źródła.|
+|[SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md)|Bada listę w pełni kwalifikowanych katalogów dla ich bieżącego stanu.|
+|[SccEndBatch](../extensibility/sccendbatch-function.md)|Zamyka operację wsadową.|
+|[SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md)|Zwraca ścieżkę nadrzędną danego projektu (projekt musi istnieć).|
+|[SccIsMultiCheckoutEnabled](../extensibility/sccismulticheckoutenabled-function.md)|Sprawdza, czy jest dozwolone wielokrotne wyewidencjonowanie pliku.|
 |[SccWillCreateSccFile](../extensibility/sccwillcreatesccfile-function.md)|Sprawdza, czy wtyczka utworzy MSSCCPRJ. Pliki SCC.|
 
-## <a name="functions-that-support-advanced-capability-version-13-of-the-source-control-plug-in-api"></a>Funkcje, które obsługują zaawansowane możliwości (wersja 1.3 interfejsu API wtyczki kontroli źródła)
- Ta grupa funkcji określa dodatkowe funkcje uwzględnione w wersji 1.3 API wtyczki kontroli źródła. Zapewniają one dostęp do bardziej zaawansowanych funkcji kontroli źródła i możliwości.
+## <a name="functions-that-support-advanced-capability-version-13-of-the-source-control-plug-in-api"></a>Funkcje, które obsługują funkcję zaawansowaną (wersja 1,3 interfejsu API wtyczki kontroli źródła)
+ Ta grupa funkcji definiuje dodatkowe funkcje dostępne w wersji 1,3 interfejsu API wtyczki kontroli źródła. Zapewniają one dostęp do bardziej zaawansowanych funkcji i możliwości kontroli źródła.
 
 |Funkcja|Opis|
 |--------------|-----------------|
-|[SccAddFilesFromSCC](../extensibility/sccaddfilesfromscc-function.md)|Lista plików z kontroli źródła są dodawane do bieżącego projektu.|
+|[SccAddFilesFromSCC](../extensibility/sccaddfilesfromscc-function.md)|Dodaje listę plików z kontroli źródła do bieżącego projektu.|
 |[SccBackgroundGet](../extensibility/sccbackgroundget-function.md)|Pobiera listę plików z kontroli źródła bez interfejsu użytkownika.|
 |[SccEnumChangedFiles](../extensibility/sccenumchangedfiles-function.md)|Pobiera listę plików w kontroli źródła, które różnią się od plików lokalnych.|
-|[SccGetExtendedCapabilities](../extensibility/sccgetextendedcapabilities-function.md)|Pobranie flagi określające, rozszerzone możliwości obsługiwany przez wtyczka do kontroli źródła.|
+|[SccGetExtendedCapabilities](../extensibility/sccgetextendedcapabilities-function.md)|Pobiera flagi określające rozszerzone możliwości obsługiwane przez wtyczkę kontroli źródła.|
 |[SccGetUserOption](../extensibility/sccgetuseroption-function.md)|Pobiera opcje specyficzne dla użytkownika.|
-|[SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)|Sprawdza, czy lista katalogów i plików w projekcie, lub projekty, które są pod kontrolą źródła. Każdy katalog oraz nazwę pliku znaleziono jest przekazywany do funkcji wywołania zwrotnego.|
-|[SccQueryChanges](../extensibility/sccquerychanges-function.md)|Sprawdza, czy zmiany nazwy plików. Każda nazwa pliku jest przekazywany do funkcji wywołania zwrotnego z jego zmiana stanu.|
+|[SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)|Bada listę katalogów i plików w projekcie lub projektach, które znajdują się pod kontrolą źródła. Każdy znaleziony katalog i nazwa pliku są przesyłane do funkcji wywołania zwrotnego.|
+|[SccQueryChanges](../extensibility/sccquerychanges-function.md)|Bada zmiany nazw wprowadzone do listy plików. Każda nazwa pliku jest przenoszona do funkcji wywołania zwrotnego ze stanem zmiany.|
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: scc.h
+ Nagłówek: SCC. h
 
- (Dostarczone w zestawie SDK środowiska wspólnego folderu, domyślnie zawiera *[dysk]* \Program Files\VSIP 8.0\EnvSDK\common\inc; również podane w folderze VSIP z przykładem MSSCCI *[dysk]* \Program Files\VSIP 8.0\MSSCCI).
+ (Dostarczane w folderze typowego zestawu SDK środowiska, domyślnie *[dysk]* \Program Files\VSIP 8.0 \ EnvSDK\common\inc;, także dostarczone w folderze VSIP z przykładem MSSCCI *[dysk]* \Program Files\VSIP 8.0 \ MSSCCI).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wtyczki kontroli źródła](../extensibility/source-control-plug-ins.md)
 - [Tworzenie wtyczki kontroli kodu źródłowego](../extensibility/internals/creating-a-source-control-plug-in.md)

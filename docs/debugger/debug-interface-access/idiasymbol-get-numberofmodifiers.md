@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_numberOfModifiers | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_numberOfModifiers | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74a83a83a805aa86d10b3c051ac1c6fc39f36f14
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: e034f081f8a279a65134c40e5ee485cd1d08d9b3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62835997"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739670"
 ---
-# <a name="idiasymbolgetnumberofmodifiers"></a>IDiaSymbol::get_numberOfModifiers
-Pobiera numer modyfikatory, które są stosowane do oryginalnego typu.
+# <a name="idiasymbolget_numberofmodifiers"></a>IDiaSymbol::get_numberOfModifiers
+Pobiera liczbę modyfikatorów, które są stosowane do oryginalnego typu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -30,10 +30,10 @@ HRESULT get_numberOfModifiers(
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Wskaźnik do `DWORD` , który określa liczbę modyfikatory, które są stosowane do oryginalnego typu.
+określoną Wskaźnik do `DWORD`, który określa liczbę modyfikatorów, które są stosowane do oryginalnego typu.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Korzystanie z wizualizatora drzewa WPF | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: korzystanie z wizualizatora drzewa WPF | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,51 +16,51 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e005c1b41d2c563c5b47f358e87912cba64bf7f
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 0adcca4acd5fc72d301d707ccdd831c86ef3e48f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821378"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72731921"
 ---
-# <a name="how-to-use-the-wpf-tree-visualizer"></a>Instrukcje: Korzystanie z wizualizatora drzewa platformy WPF
-Można użyć wizualizatora drzewa WPF, aby zapoznać się z drzewa wizualnego obiektu WPF i wyświetlić właściwości zależności WPF dla obiektów, które są zawarte w drzewie. Aby uzyskać więcej informacji na temat drzewa wizualnego, zobacz [drzewa w WPF](/dotnet/framework/wpf/advanced/trees-in-wpf). Aby uzyskać więcej informacji na temat właściwości zależności zobacz [Przegląd właściwości zależności](/dotnet/framework/wpf/advanced/dependency-properties-overview).
+# <a name="how-to-use-the-wpf-tree-visualizer"></a>Porady: korzystanie z wizualizatora drzewa WPF
+Można użyć wizualizatora drzewa WPF do eksplorowania drzewa wizualnego obiektu WPF i wyświetlić właściwości zależności WPF dla obiektów, które są zawarte w tym drzewie. Aby uzyskać więcej informacji na temat drzew wizualizacji, zobacz [drzewa w WPF](/dotnet/framework/wpf/advanced/trees-in-wpf). Aby uzyskać więcej informacji na temat właściwości zależności, zobacz [Omówienie właściwości zależności](/dotnet/framework/wpf/advanced/dependency-properties-overview).
 
- Po otwarciu wizualizatora drzewa WPF, zobaczysz dwa okienka: **drzewa wizualnego** po lewej stronie i **właściwości** _nazwa_ **:**  _Typ_ w okienku po prawej stronie. Zaznacz dowolny obiekt w **drzewa wizualnego** okienku i **właściwości** _nazwa_ **:** _typu_ okienka automatycznie aktualizowane, aby wyświetlić właściwości tego obiektu.
+ Po otwarciu wizualizatora drzewa WPF zobaczysz dwa okienka: **drzewo wizualizacji** po lewej stronie i **Właściwości** _nazwy_ **:** _w okienku po_ prawej stronie. Zaznacz dowolny obiekt w okienku **drzewa wizualnego** , a **Właściwości** **:** _Typ_ , okienko jest automatycznie aktualizowane, aby pokazać właściwości tego obiektu.
 
-### <a name="to-open-the-wpf-tree-visualizer"></a>Aby otworzyć z wizualizatora drzewa WPF
+### <a name="to-open-the-wpf-tree-visualizer"></a>Aby otworzyć wizualizator drzewa WPF
 
-1. W DataTip **Obejrzyj** oknie **automatyczne** oknie lub **lokalne** oknie obok nazwy obiektów programu WPF, kliknij strzałkę obok ikony lupy.
+1. W oknie etykietki danych, okno **czujki** , okno **autouzupełniania** lub okno **lokalne** obok nazwy obiektu WPF kliknij strzałkę obok ikony lupy.
 
      Zostanie wyświetlona lista wizualizatorów.
 
-2. Kliknij przycisk **wizualizatora drzewa WPF**.
+2. Kliknij przycisk **wizualizator drzewa WPF**.
 
 ### <a name="to-search-the-visual-tree"></a>Aby przeszukać drzewo wizualne
 
-- W **drzewa wizualnego** okienko, wpisz ciąg, aby wyszukać w **wyszukiwania** pole.
+- W okienku **drzewa wizualnego** wpisz ciąg, który chcesz wyszukać w polu **wyszukiwania** .
 
-  Z wizualizatora drzewa WPF natychmiast znajduje pierwszy obiekt w drzewie wizualnym, który pasuje do ciągu, które zostały wpisane. Wpisz więcej znaków, aby znaleźć bardziej dokładne dopasowanie.
+  Wizualizator drzewa WPF natychmiast znajduje pierwszy obiekt w drzewie wizualnym odpowiadający wpisanemu ciągowi. Wpisz więcej znaków, aby znaleźć dokładniejsze dopasowanie.
 
-  - Aby przejść do następnego dopasowania w obrębie drzewa wizualnego, kliknij przycisk **dalej**.
+  - Aby przejść do następnego dopasowania w drzewie wizualnym, kliknij przycisk **dalej**.
 
-  - Aby wrócić do poprzedniego dopasowania, kliknij przycisk **poprzedni**.
+  - Aby powrócić do poprzedniego dopasowania, kliknij przycisk **poprzedni**.
 
-  - Aby wyczyścić kryteria wyszukiwania, kliknij pozycję **wyczyść**.
+  - Aby wyczyścić kryteria wyszukiwania, kliknij przycisk **Wyczyść**.
 
-### <a name="to-search-the-properties-list"></a>Lista właściwości wyszukiwania
+### <a name="to-search-the-properties-list"></a>Aby przeszukać listę właściwości
 
-- W **właściwości** _nazwa_ **:** _typu_ okienko, wpisz ciąg, aby wyszukać w **filtrowania**pole.
+- W okienku **Właściwości** _nazwy_ **:** _wpisz ciąg_ , który chcesz wyszukać w polu **Filtr** .
 
-  Z wizualizatora drzewa WPF natychmiast wyszukuje właściwości, które pasuje do ciągu, które zostały wpisane; teraz na liście zostaną wyświetlone tylko te właściwości, które są dopasowywania ciągu, które zostały wpisane. Wpisz więcej znaków, aby znaleźć bardziej dokładne dopasowanie.
+  Wizualizator drzewa WPF natychmiast znajdzie właściwości, które pasują do wpisanego ciągu; teraz na liście są wyświetlane tylko te właściwości, które pasują do wpisanego ciągu. Wpisz więcej znaków, aby znaleźć bardziej dokładne dopasowanie.
 
-  - Aby wyczyścić kryteria wyszukiwania, kliknij pozycję **wyczyść**.
+  - Aby wyczyścić kryteria wyszukiwania, kliknij przycisk **Wyczyść**.
 
-### <a name="to-close-the-visualizer"></a>Aby zamknąć wizualizatora
+### <a name="to-close-the-visualizer"></a>Aby zamknąć wizualizator
 
-- Kliknij przycisk **Zamknij** ikonę w prawym górnym rogu okna dialogowego.
+- Kliknij ikonę **Zamknij** w prawym górnym rogu okna dialogowego.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Tworzenie niestandardowych wizualizatorów](../debugger/create-custom-visualizers-of-data.md)
 - [Drzewa w WPF](/dotnet/framework/wpf/advanced/trees-in-wpf)
 - [Przegląd właściwości zależności](/dotnet/framework/wpf/advanced/dependency-properties-overview)

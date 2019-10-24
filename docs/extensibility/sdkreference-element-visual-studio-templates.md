@@ -1,5 +1,5 @@
 ---
-title: SDKReference, Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
+title: SDKReference, element (szablony Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,15 +9,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: da11d9e01802bff8162b2767444c7a1d225200a0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3cf1b3bed942894e20132ecd7b06c1884caa9a93
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338478"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72720091"
 ---
 # <a name="sdkreference-element-visual-studio-templates"></a>SDKReference, element (szablony Visual Studio)
-Określa, że szablon elementu używa odwołanie do zestawu SDK.
+Określa, że szablon elementu używa odwołania do zestawu SDK.
 
 ## <a name="syntax"></a>Składnia
 
@@ -42,13 +42,13 @@ Określa, że szablon elementu używa odwołanie do zestawu SDK.
 
 |Element|Opis|
 |-------------|-----------------|
-|[Dokumentacja](../extensibility/reference-element-visual-studio-templates.md)|Określa odwołanie do zestawu do dodania, gdy element zostanie dodany do projektu.|
+|[Tematy pomocy](../extensibility/reference-element-visual-studio-templates.md)|Określa odwołanie do zestawu, które ma zostać dodane, gdy element zostanie dodany do projektu.|
 
 ## <a name="text-value"></a>Wartość tekstowa
  Wartość tekstowa jest wymagana.
 
 ## <a name="remarks"></a>Uwagi
- Ten tekst Określa dokumentacja zestawu SDK, aby dodać do projektu przy tworzeniu wystąpienia szablonu elementu.
+ Ten tekst określa odwołanie do zestawu SDK, które ma zostać dodane do projektu po utworzeniu wystąpienia szablonu elementu.
 
 ```xml
 <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
@@ -60,7 +60,7 @@ Określa, że szablon elementu używa odwołanie do zestawu SDK.
 ...
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [References, element (szablony Visual Studio)](../extensibility/references-element-visual-studio-templates.md)
 - [Reference, element (szablony Visual Studio)](../extensibility/reference-element-visual-studio-templates.md)
 - [Tworzenie szablonów projektu i elementu](../ide/creating-project-and-item-templates.md)

@@ -1,5 +1,5 @@
 ---
-title: IDiaStackFrame::get_cplusplusExceptionHandling | Microsoft Docs
+title: 'IDiaStackFrame:: get_cplusplusExceptionHandling | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f0c2e07b5c9141b8cf31511405939fc65be6446
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d78a4c73d7954f48c87c1eafec4d0b35fc1292ef
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839065"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741746"
 ---
-# <a name="idiastackframegetcplusplusexceptionhandling"></a>IDiaStackFrame::get_cplusplusExceptionHandling
-Pobiera flagę wskazującą, czy obsługa wyjątków języka C++ jest obowiązywały.
+# <a name="idiastackframeget_cplusplusexceptionhandling"></a>IDiaStackFrame::get_cplusplusExceptionHandling
+Pobiera flagę wskazującą, czy C++ obsługa wyjątków jest włączona.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,16 +33,16 @@ HRESULT get_cplusplusExceptionHandling ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca `TRUE` Jeśli C++ obsługi wyjątków są włączone dla tej ramki; w przeciwnym razie zwraca `FALSE`.
+określoną Zwraca `TRUE`, C++ Jeśli obsługa wyjątków jest obowiązująca dla tej ramki; w przeciwnym razie zwraca `FALSE`.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`. Zwraca `S_FALSE`, jeśli właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Obsługa wyjątków języka C++ nie jest identyczna ze strukturą ani obsługi wyjątków systemu.
+ C++Obsługa wyjątków nie jest taka sama jak obsługa wyjątków strukturalnych lub systemowych.
 
- Aby określić, czy mają strukturę obsługi wyjątków jest aktywna, należy wywołać [IDiaStackFrame::get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md) metody.
+ Aby określić, czy obsługa wyjątków strukturalnych jest skuteczna, wywołaj metodę [IDiaStackFrame:: get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md) .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)
 - [IDiaStackFrame::get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md)

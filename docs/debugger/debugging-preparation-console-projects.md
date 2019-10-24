@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ddfc17d4f9bcb1f4f2585aa91319f06be6936e6f
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: e92e27b123102cb45069c47ebf9de3971039801d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72431468"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738132"
 ---
 # <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>Przygotowanie debugowania: Projekty konsoli (C#, C++, Visual Basic, F#)
 
@@ -57,7 +57,7 @@ Podobnie jak wszystkie właściwości projektu, te argumenty są utrwalane międ
 
   Po uruchomieniu aplikacji konsolowej z programu Visual Studio okno **konsoli** czasami pojawia się za oknem programu Visual Studio. Jeśli spróbujesz uruchomić aplikację konsolową z programu Visual Studio i nic się nie dzieje, spróbuj przenieść okno programu Visual Studio.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Debugowanie kodu natywnego](../debugger/debugging-native-code.md)
 - [Debugowanie kodu zarządzanego](../debugger/debugging-managed-code.md)
 - [Przygotowanie do debugowania C++ projektów](../debugger/debugging-preparation-visual-cpp-project-types.md)

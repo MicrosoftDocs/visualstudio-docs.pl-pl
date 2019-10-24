@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e4adb0747ce569bc372daf0d36cfe1719a2ff61
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d586cfe3e78a320ffed42e7181463eb79a6b313a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830298"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743468"
 ---
 # <a name="idiaframedata"></a>IDiaFrameData
-Przedstawia szczegóły ramki stosu.
+Uwidacznia szczegóły ramki stosu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -28,38 +28,38 @@ Przedstawia szczegóły ramki stosu.
 IDiaFrameData : IUnknown
 ```
 
-## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych
 W poniższej tabeli przedstawiono metody `IDiaFrameData`.
 
 |Metoda|Opis|
 |------------|-----------------|
-|[IDiaFrameData::get_addressSection](../../debugger/debug-interface-access/idiaframedata-get-addresssection.md)|Pobiera część sekcji adresem kod dla ramki.|
-|[IDiaFrameData::get_addressOffset](../../debugger/debug-interface-access/idiaframedata-get-addressoffset.md)|Pobiera przesunięcia część adresu kodu dla ramki.|
-|[IDiaFrameData::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiaframedata-get-relativevirtualaddress.md)|Pobiera obraz wirtualny adres względny (RVA) kod dla ramki.|
-|[IDiaFrameData::get_virtualAddress](../../debugger/debug-interface-access/idiaframedata-get-virtualaddress.md)|Pobiera adres wirtualny (oceny luk w zabezpieczeniach) kod dla ramki.|
-|[IDiaFrameData::get_lengthBlock](../../debugger/debug-interface-access/idiaframedata-get-lengthblock.md)|Pobiera długość w bajtach, w bloku kodu opisanego przez ramkę.|
-|[IDiaFrameData::get_lengthLocals](../../debugger/debug-interface-access/idiaframedata-get-lengthlocals.md)|Pobiera liczbę bajtów zmienne lokalne są wypychane na stos.|
-|[IDiaFrameData::get_lengthParams](../../debugger/debug-interface-access/idiaframedata-get-lengthparams.md)|Pobiera liczbę bajtów parametrów wypychane na stos.|
-|[IDiaFrameData::get_maxStack](../../debugger/debug-interface-access/idiaframedata-get-maxstack.md)|Pobiera maksymalną liczbę bajtów wypychane na stos w ramce.|
-|[IDiaFrameData::get_lengthProlog](../../debugger/debug-interface-access/idiaframedata-get-lengthprolog.md)|Pobiera liczbę bajtów kod prologu w bloku.|
-|[IDiaFrameData::get_lengthSavedRegisters](../../debugger/debug-interface-access/idiaframedata-get-lengthsavedregisters.md)|Pobiera liczba bajtów zapisanych rejestrów wypychane na stos.|
-|[IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)|Pobiera ciąg program, który jest używany do obliczania rejestru ustawić przed wywołaniem do bieżącej funkcji.|
-|[IDiaFrameData::get_systemExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md)|Pobiera flagę wskazującą, że obsługi wyjątków systemu jest aktywna.|
-|[IDiaFrameData::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md)|Pobiera flagę wskazującą, że obsługa wyjątków języka C++ jest włączona.|
+|[IDiaFrameData::get_addressSection](../../debugger/debug-interface-access/idiaframedata-get-addresssection.md)|Pobiera część sekcji adresu kodu dla ramki.|
+|[IDiaFrameData::get_addressOffset](../../debugger/debug-interface-access/idiaframedata-get-addressoffset.md)|Pobiera część przesunięcia adresu kodu dla ramki.|
+|[IDiaFrameData::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiaframedata-get-relativevirtualaddress.md)|Pobiera adres wirtualny względem obrazu (RVA) kodu dla ramki.|
+|[IDiaFrameData::get_virtualAddress](../../debugger/debug-interface-access/idiaframedata-get-virtualaddress.md)|Pobiera adres wirtualny (VA) kodu dla ramki.|
+|[IDiaFrameData::get_lengthBlock](../../debugger/debug-interface-access/idiaframedata-get-lengthblock.md)|Pobiera długość (w bajtach) bloku kodu opisanego przez ramkę.|
+|[IDiaFrameData::get_lengthLocals](../../debugger/debug-interface-access/idiaframedata-get-lengthlocals.md)|Pobiera liczbę bajtów zmiennych lokalnych wypychanych na stosie.|
+|[IDiaFrameData::get_lengthParams](../../debugger/debug-interface-access/idiaframedata-get-lengthparams.md)|Pobiera liczbę bajtów parametrów wypychanych na stosie.|
+|[IDiaFrameData::get_maxStack](../../debugger/debug-interface-access/idiaframedata-get-maxstack.md)|Pobiera maksymalną liczbę bajtów wypychanych na stosie w ramce.|
+|[IDiaFrameData::get_lengthProlog](../../debugger/debug-interface-access/idiaframedata-get-lengthprolog.md)|Pobiera liczbę bajtów kodu prologu w bloku.|
+|[IDiaFrameData::get_lengthSavedRegisters](../../debugger/debug-interface-access/idiaframedata-get-lengthsavedregisters.md)|Pobiera liczbę bajtów zapisanych rejestrów wypchnięcia na stosie.|
+|[IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)|Pobiera ciąg programu, który jest używany do obliczenia zestawu rejestru przed wywołaniem bieżącej funkcji.|
+|[IDiaFrameData::get_systemExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md)|Pobiera flagę wskazującą, że obsługa wyjątków systemu obowiązuje.|
+|[IDiaFrameData::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md)|Pobiera flagę wskazującą, że C++ obsługa wyjątków jest obowiązująca.|
 |[IDiaFrameData::get_functionStart](../../debugger/debug-interface-access/idiaframedata-get-functionstart.md)|Pobiera flagę wskazującą, że blok zawiera punkt wejścia funkcji.|
-|[IDiaFrameData::get_allocatesBasePointer](../../debugger/debug-interface-access/idiaframedata-get-allocatesbasepointer.md)|Pobiera flagę wskazującą, czy podstawowy wskaźnik jest przydzielany dla kodu w tym zakresie adresów. Ta metoda jest przestarzała.|
-|[IDiaFrameData::get_type](../../debugger/debug-interface-access/idiaframedata-get-type.md)|Pobiera typ ramki specyficznych dla kompilatora.|
-|[IDiaFrameData::get_functionParent](../../debugger/debug-interface-access/idiaframedata-get-functionparent.md)|Pobiera ramki danych interfejsu dla funkcji otaczającej.|
-|[IDiaFrameData::execute](../../debugger/debug-interface-access/idiaframedata-execute.md)|Wykonuje odwijanie stosu, a następnie zwraca bieżący stan rejestrów w interfejsie ramki przeszukiwania stosu.|
+|[IDiaFrameData::get_allocatesBasePointer](../../debugger/debug-interface-access/idiaframedata-get-allocatesbasepointer.md)|Pobiera flagę wskazującą, że wskaźnik podstawowy został przydzielony do kodu w tym zakresie adresów. Ta metoda jest przestarzała.|
+|[IDiaFrameData::get_type](../../debugger/debug-interface-access/idiaframedata-get-type.md)|Pobiera typ ramki specyficznej dla kompilatora.|
+|[IDiaFrameData::get_functionParent](../../debugger/debug-interface-access/idiaframedata-get-functionparent.md)|Pobiera interfejs danych ramek dla otaczającej funkcji.|
+|[IDiaFrameData::execute](../../debugger/debug-interface-access/idiaframedata-execute.md)|Wykonuje odwinięcia stosu i zwraca bieżący stan rejestrów w interfejsie przeszukiwania stosu.|
 
 ## <a name="remarks"></a>Uwagi
- Szczegóły dostępne dla ramki związanych z punktami wykonania zakresu adresów, wskazywanym przez długość adresu i bloku.
+ Szczegóły dostępne dla ramki są przeznaczone dla punktów wykonywania w zakresie adresów wskazanym przez adres i długość bloku.
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
- Uzyskanie tego interfejsu, wywołując [idiaenumframedata::Next —](../../debugger/debug-interface-access/idiaenumframedata-next.md) lub [idiaenumframedata::Item —](../../debugger/debug-interface-access/idiaenumframedata-item.md) metody. Zobacz [idiaenumframedata —](../../debugger/debug-interface-access/idiaenumframedata.md) interfejsu, aby uzyskać szczegółowe informacje.
+ Uzyskaj ten interfejs, wywołując metodę [IDiaEnumFrameData:: Next](../../debugger/debug-interface-access/idiaenumframedata-next.md) lub [IDiaEnumFrameData:: Item](../../debugger/debug-interface-access/idiaenumframedata-item.md) . Aby uzyskać szczegółowe informacje, zobacz Interfejs [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md) .
 
 ## <a name="example"></a>Przykład
- W tym przykładzie drukuje się właściwości `IDiaFrameData` obiektu. Zobacz [idiaenumframedata —](../../debugger/debug-interface-access/idiaenumframedata.md) interfejsu przykładowy sposób, w jaki `IDiaFrameData` uzyskuje się interfejs.
+ Ten przykład drukuje właściwości obiektu `IDiaFrameData`. Zobacz interfejs [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md) , aby zapoznać się z przykładem uzyskiwania interfejsu `IDiaFrameData`.
 
 ```C++
 void PrintFrameData(IDiaFrameData* pFrameData){
@@ -113,13 +113,13 @@ void PrintFrameData(IDiaFrameData* pFrameData){
 ```
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: Dia2.h
+Nagłówek: dia2. h
 
-Biblioteka: diaguids.lib
+Biblioteka: diaguids. lib
 
-DLL: msdia80.dll
+DLL: msdia80. dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Interfejsy (Zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)
 - [IDiaEnumFrameData::Item](../../debugger/debug-interface-access/idiaenumframedata-item.md)

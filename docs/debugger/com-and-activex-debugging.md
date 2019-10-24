@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 701a0096e89123fc9c5445805bb43777735c0924
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: f6dc69a18aa09536e5735431aa451bc2dd3933ee
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72435917"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745692"
 ---
 # <a name="com-and-activex-debugging"></a>COM i debugowanie ActiveX
 Ta sekcja zawiera wskazówki dotyczące debugowania aplikacji COM i kontrolek ActiveX.
@@ -41,7 +41,7 @@ Ta sekcja zawiera wskazówki dotyczące debugowania aplikacji COM i kontrolek Ac
 ## <a name="related-sections"></a>Sekcje pokrewne
  [Pierwsze spojrzenie na debuger](../debugger/debugger-feature-tour.md) Zawiera łącza do większych sekcji dokumentacji debugowania. Informacje: co nowego w debugerze, ustawieniach i przygotowaniu, punktach przerwania, obsługa wyjątków, edytowanie i kontynuowanie, debugowanie kodu zarządzanego, C++ Debugowanie projektów, debugowanie modelu COM i ActiveX, debugowanie bibliotek DLL, debugowanie SQL i użytkownik odwołania do interfejsu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Zabezpieczenia debugera](../debugger/debugger-security.md)
 - [Wprowadzenie do modelu COM](/cpp/atl/introduction-to-com)

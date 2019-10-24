@@ -1,5 +1,5 @@
 ---
-title: Debugowanie naruszenie zasad dostępu C++ | Dokumentacja firmy Microsoft
+title: Debugowanie naruszenia C++ zasad dostępu | Microsoft Docs
 ms.custom: seodec18
 ms.date: 02/05/2019
 ms.topic: conceptual
@@ -19,24 +19,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2be6c13e2a3c83d31540399dd3387addb08e8686
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eebbdfd7774018ecf49801c6b01b5867b7bd3408
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62895133"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72734544"
 ---
-# <a name="how-can-i-debug-a-c-access-violation"></a>W jaki sposób można debugować naruszenie zasad dostępu C++?
+# <a name="how-can-i-debug-a-c-access-violation"></a>Jak debugować naruszenie zasad C++ dostępu?
 
 ## <a name="problem-description"></a>Opis problemu
 
-Program powoduje naruszenie zasad dostępu. W jaki sposób można to debugować?
+Mój program powoduje naruszenie zasad dostępu. Jak można debugować ten program?
 
 ## <a name="solution"></a>Rozwiązanie
 
-Jeśli w wierszu kodu, który wyłuskań wielu wskaźników naruszenie zasad dostępu, może być trudne dowiedzieć się, wskaźnika, który spowodował naruszenie zasad dostępu. Począwszy od programu Visual Studio 2015 Update 1, okno dialogowe wyjątku teraz jawnie nazwy wskaźnika, który spowodował naruszenie zasad dostępu.
+W przypadku naruszenia zasad dostępu w wierszu kodu, który odwołuje się do wielu wskaźników, może być trudne, aby dowiedzieć się, który wskaźnik spowodował naruszenie zasad dostępu. Począwszy od programu Visual Studio 2015 Update 1, okno dialogowe wyjątku jawnie odwołuje się do wskaźnika, który spowodował naruszenie zasad dostępu.
 
-Na przykład biorąc pod uwagę następujący kod, należy uzyskać naruszenie zasad dostępu:
+Na przykład, uwzględniając Poniższy kod, należy uzyskać naruszenie zasad dostępu:
 
 ```C++
 #include <iostream>
@@ -73,11 +73,11 @@ int main() {
 }
 ```
 
-Jeśli uruchomisz ten kod w Visual Studio 2015 Update 1, powinny zostać wyświetlone następujące okno dialogowe wyjątku:
+W przypadku uruchomienia tego kodu w programie Visual Studio 2015 Update 1 powinno zostać wyświetlone następujące okno dialogowe wyjątku:
 
 ![AccessViolationCPlus](../debugger/media/accessviolationcplus.png "AccessViolationCPlus")
 
-Jeśli nie można ustalić, dlaczego wskaźnik spowodował naruszenie zasad dostępu, prześledzi kod, aby upewnić się, że wskaźnik przyczyną problemu jest poprawnie przypisany.  Jeśli został przekazany jako parametr, upewnij się, że jest prawidłowo przekazane i nie są przypadkowe tworzenie [skrócona kopiowania](http://stackoverflow.com/questions/184710/what-is-the-difference-between-a-deep-copy-and-a-shallow-copy). Następnie sprawdź, czy wartości są nie przypadkowo zmieniane gdzieś w programie, tworząc upewnij się, że nie są modyfikowane w innym miejscu w programie dany punkt przerwania danych zostanie wskaźnika. Aby uzyskać więcej informacji na temat punkty przerwania danych, zobacz sekcję punktu przerwania danych w [przy użyciu punktów przerwania](../debugger/using-breakpoints.md).
+Jeśli nie możesz określić, dlaczego wskaźnik spowodował naruszenie zasad dostępu, śledź kod, aby upewnić się, że wskaźnik powodujący problem został poprawnie przypisany.  Jeśli jest ona przenoszona jako parametr, upewnij się, że jest prawidłowo przenoszona i nie utworzysz przypadkowo [kopii płytki](http://stackoverflow.com/questions/184710/what-is-the-difference-between-a-deep-copy-and-a-shallow-copy). Następnie sprawdź, czy wartości nie są przypadkowo zmieniane w programie, tworząc punkt przerwania danych dla danego wskaźnika, aby upewnić się, że nie jest on modyfikowany w innym miejscu programu. Aby uzyskać więcej informacji na temat punktów przerwania danych, zobacz sekcję punkt przerwania danych w temacie [Używanie punktów przerwania](../debugger/using-breakpoints.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Debugowanie kodu natywnego — często zadawane pytania](../debugger/debugging-native-code-faqs.md)

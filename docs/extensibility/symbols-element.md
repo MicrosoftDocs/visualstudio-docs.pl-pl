@@ -1,5 +1,5 @@
 ---
-title: Symbole Element | Dokumentacja firmy Microsoft
+title: Symbols — element | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,19 +11,19 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 303d13d94a413ad3ce17e0bd2b56fe95455e9f54
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ce299f99699a7bc048b3dc7da39aea3f734addeb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316660"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72719399"
 ---
 # <a name="symbols-element"></a>Symbols, element
-Określa identyfikatory GUID i identyfikatory, które są używane przez inne elementy VSCT. Dla niezarządzanego kodu, te informacje zazwyczaj pochodzą z pliki nagłówkowe, które są określone przez [Extern, Element](../extensibility/extern-element.md). Zarządzany kod używa elementów podrzędnych elementu symbole, aby zdefiniować te informacje.
+Definiuje identyfikatory GUID i identyfikatorów, które są używane przez inne elementy VSCT. W przypadku kodu niezarządzanego te informacje zazwyczaj pochodzą z plików nagłówkowych, które są określone przez [element extern](../extensibility/extern-element.md). Kod zarządzany używa elementów podrzędnych elementu Symbols do definiowania tych informacji.
 
- Jeśli tworzysz pliku vsct z istniejącego pliku .cto symbole zostanie wygenerowany jako elementy podrzędne elementu symboli. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie. Plik Vsct z istniejącej. Dyrektor ds. technologii pliku](../extensibility/internals/how-to-create-a-dot-vsct-file.md#how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file).
+ Jeśli utworzysz plik. vsct z istniejącego pliku. Dyrektor ds, symbole zostaną wygenerowane jako elementy podrzędne elementu symboli. Aby uzyskać więcej informacji, zobacz [How to: Create a. Plik vsct z istniejącego. Plik dyrektor ds](../extensibility/internals/how-to-create-a-dot-vsct-file.md#how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file).
 
- Symbols, element nie należy mylić z [zdefiniować Element](../extensibility/define-element.md), która definiuje pary nazwa wartość do użytku przez preprocesor.
+ Elementu Symbols nie należy mylić z [elementem define](../extensibility/define-element.md), który definiuje pary nazwa-wartość do użycia przez preprocesor.
 
 ## <a name="syntax"></a>Składnia
 
@@ -47,14 +47,14 @@ Określa identyfikatory GUID i identyfikatory, które są używane przez inne el
 
 |Element|Opis|
 |-------------|-----------------|
-|GuidSymbol|Definiuje symbol identyfikatora GUID. GuidSymbol ma dwa wymagane atrybuty: nazwę i wartość. Nazwa jest nazwą symbolu, a wartość jest wartością identyfikatora GUID jako ciąg.<br /><br /> Na przykład:\<GuidSymbol name = "guidVsPackage1Pkg" value = "{c5f54698-101a-4846-84d3-dc748f9cd848}" / >|
-|IDSymbol|Definiuje symbol. IDSymbol ma dwa wymagane atrybuty: nazwę i wartość. Nazwa jest nazwą symbolu, a wartość jest wartością symbolu jako ciąg.<br /><br /> Na przykład:\<IDSymbol name = "MyMenuGroup" value = "0x1020" / >|
+|GuidSymbol|Definiuje symbol GUID. GuidSymbol ma dwa wymagane atrybuty: Name i value. Nazwa jest nazwą symbolu, a wartość jest wartością identyfikatora GUID w postaci ciągu.<br /><br /> Na przykład: \<GuidSymbol Name = "guidVsPackage1Pkg" value = "{c5f54698-101A-4846-84d3-dc748f9cd848}"/>|
+|IDSymbol|Definiuje symbol. IDSymbol ma dwa wymagane atrybuty: Name i value. Nazwa jest nazwą symbolu, a wartość jest wartością symbolu jako ciąg.<br /><br /> Na przykład: \<IDSymbol Name = "0x1020"/>|
 
 ### <a name="parent-elements"></a>Elementy nadrzędne
 
 |Element|Opis|
 |-------------|-----------------|
-|[CommandTable, element](../extensibility/commandtable-element.md)|Element główny pliku vsct.|
+|[CommandTable, element](../extensibility/commandtable-element.md)|Element główny pliku. vsct.|
 
 ## <a name="example"></a>Przykład
 
@@ -69,5 +69,5 @@ Określa identyfikatory GUID i identyfikatory, które są używane przez inne el
 </Symbols>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Tabela poleceń programu Visual Studio (pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

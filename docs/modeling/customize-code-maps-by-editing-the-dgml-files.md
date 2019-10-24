@@ -20,12 +20,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d871a6aa8cff6e06f02e61407d2c9e59e03cd65
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ace7da233f135aa795d73d43a5e10e411c0d646f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654039"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748467"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Dostosowanie map kodu przez edycję plików DGML
 
@@ -638,7 +638,7 @@ Edytuj plik. dgml mapy kodu w edytorze tekstu lub XML. Jeśli mapa jest części
 
 5. Aby wyświetlić przywoływany element kodu lub elementy kodu z mapy, otwórz menu skrótów dla elementu kodu lub łącza. Wybierz **Przejdź do odwołania** , a następnie element kodu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)
 - [Używanie map kodu do debugowania aplikacji](../modeling/use-code-maps-to-debug-your-applications.md)

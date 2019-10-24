@@ -1,5 +1,5 @@
 ---
-title: StackFrameTypeEnum | Microsoft Docs
+title: Stackframetypeenum — | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44f715c4f74d9b120b324e2d68417a24c9b42684
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 20b0c9dd106e5744a369ddaa6cb870788f7464d3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62854833"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738556"
 ---
 # <a name="stackframetypeenum"></a>StackFrameTypeEnum
 Określa typ ramki stosu.
@@ -36,24 +36,24 @@ enum StackFrameTypeEnum {
 ```
 
 ## <a name="elements"></a>Elementy
-`FrameTypeFPO` Wskaźnik ramki pominięta; FPO informacji.
+pominięto wskaźnik `FrameTypeFPO` ramki: Dostępne są informacje FPO.
 
-`FrameTypeTrap` Ramka pułapki jądra.
+`FrameTypeTrap` ramki pułapki jądra.
 
-`FrameTypeTSS` Ramka pułapki jądra.
+`FrameTypeTSS` ramki pułapki jądra.
 
-`FrameTypeStandard` Standardowa EBP ramki stosu.
+`FrameTypeStandard` standardowa Ramka stosu EBP.
 
-`FrameTypeFrameData` Wskaźnik ramki pominięta; Ramka danych informacji.
+pominięto wskaźnik `FrameTypeFrameData` ramki: Dostępne są informacje o danych ramek.
 
-`FrameTypeUnknown` Ramki, który nie ma żadnych informacji o debugowaniu.
+Ramka `FrameTypeUnknown`, która nie zawiera żadnych informacji debugowania.
 
 ## <a name="remarks"></a>Uwagi
-Wartości w tym wyliczeniu są zwracane przez wywołanie [idiastackframe::get_type —](../../debugger/debug-interface-access/idiastackframe-get-type.md) metody.
+Wartości w tym wyliczeniu są zwracane przez wywołanie metody [IDiaStackFrame:: get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md) .
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: cvconst.h
+Nagłówek: cvconst. h
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wyliczenia i struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)

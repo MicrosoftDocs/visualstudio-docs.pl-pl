@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumDebugStreams::get_Count | Microsoft Docs
+title: 'IDiaEnumDebugStreams:: get_Count | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5840bbcc012fdcb209fbfb19c0119ad94f3073f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 21697d53f0b221d3d5f94f85e3fb18a0a2c2692e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838444"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744770"
 ---
-# <a name="idiaenumdebugstreamsgetcount"></a>IDiaEnumDebugStreams::get_Count
+# <a name="idiaenumdebugstreamsget_count"></a>IDiaEnumDebugStreams::get_Count
 Pobiera liczbę strumieni debugowania.
 
 ## <a name="syntax"></a>Składnia
@@ -33,11 +33,11 @@ HRESULT get_Count( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca liczbę strumieni debugowania dostępnych w tym modułu wyliczającego.
+określoną Zwraca liczbę strumieni debugowania dostępnych w tym module wyliczającym.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)
 - [IDiaEnumDebugStreams::Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)

@@ -1,8 +1,8 @@
 ---
-title: AI Tools for Visual Studio
+title: Narzędzia AI Tools for Visual Studio
 titleSuffix: ''
-description: Przegląd narzędzi SI dla programu Visual Studio
-keywords: sztuczna inteligencja, program visual studio
+description: Omówienie narzędzi AI Tools for Visual Studio
+keywords: AI, Visual Studio
 author: lisawong19
 ms.author: liwong
 manager: routlaw
@@ -10,40 +10,40 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 39d562509a62874a32e8442e18dece8e3c26fbfc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 497287e2f281a5884ba50a850169770f6750bbed
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62430450"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777460"
 ---
 # <a name="visual-studio-tools-for-ai"></a>Narzędzia Visual Studio Tools for AI
 
-Visual Studio Tools for AI to rozszerzenie do tworzenia, testowania i wdrażania uczenia głębokiego / sztucznej Inteligencji rozwiązania. Go bezproblemowo integrują się z usługą Azure Machine Learning dla możliwości niezawodne eksperymenty, w tym między innymi przesyłanie przygotowania danych i zadań szkoleniowych modelu w sposób niewidoczny dla użytkownika do różnych obliczeniowych elementów docelowych. Ponadto zapewnia obsługę metryki niestandardowe i uruchom historii śledzenia, umożliwiając odtwarzaniem do nauki o danych i inspekcji. Enterprise gotowe współpracy, umożliwia bezpieczną współpracę nad projektem w innym osobom.
+Visual Studio Tools for AI to rozszerzenie do kompilowania, testowania i wdrażania rozwiązań do uczenia głębokiego/AI. Bezproblemowo integruje się z Azure Machine Learning w celu zapewnienia niezawodnego eksperymentu, w tym między innymi przesyłania zadań związanych z przygotowaniem i modelem do różnych elementów docelowych obliczeniowych. Ponadto zapewnia ona obsługę niestandardowych metryk i śledzi śledzenie historii oraz umożliwia odtwarzalność i inspekcję danych. Gotowa do współpracy w przedsiębiorstwie, umożliwia bezpieczną współpracę nad projektem z innymi osobami.
 
-Wprowadzenie do uczenia głębokiego przy użyciu [Microsoft Cognitive Toolkit (CNTK)](http://www.microsoft.com/en-us/cognitive-toolkit), [Google TensorFlow](https://www.tensorflow.org), lub innych platform uczenia głębokiego, już dziś.
+Zacznij już korzystać z uczenia głębokiego za pomocą [Microsoft Cognitive Toolkit (CNTK)](https://docs.microsoft.com/cognitive-toolkit/), [Google TensorFlow](https://www.tensorflow.org)lub innych platform głębokiego uczenia.
 
-## <a name="develop-debug-and-deploy-deep-learning-models-and-ai-solutions"></a>Tworzyć, debugować i wdrażać modele uczenia głębokiego i rozwiązań sztucznej Inteligencji
-Skorzystaj z funkcji produktywności programu Visual Studio, aby przyspieszyć innowacji sztucznej Inteligencji już dziś. Użyj kodu wbudowanego edytora funkcje, takie jak wyróżniania składni, funkcję IntelliSense i tekst automatycznego formatowania. Możesz przetestować interaktywnie Twojej aplikacji w środowisku lokalnym za pomocą krokowym debugowania na zmienne lokalne i modeli do uczenia głębokiego.
+## <a name="develop-debug-and-deploy-deep-learning-models-and-ai-solutions"></a>Opracowywanie, debugowanie i wdrażanie modeli uczenia głębokiego oraz rozwiązań AI
+Korzystaj z funkcji produktywności programu Visual Studio, aby przyspieszyć innowacje AI. Korzystaj z wbudowanych funkcji edytora kodu, takich jak wyróżnianie składni, IntelliSense i formatowanie tekstu. Interaktywnie Przetestuj aplikację do uczenia głębokiego w środowisku lokalnym, używając debugowania krok po kroku na temat zmiennych lokalnych i modeli.
 
-![ide uczenia głębokiego](media/about/ide.png)
+![środowisko IDE uczenia głębokiego](media/about/ide.png)
 
-## <a name="get-started-quickly-with-the-azure-machine-learning-sample-gallery"></a>Szybko Rozpocznij pracę z galerii przykładów usługi Azure Machine Learning
-Visual Studio Tools for AI jest zintegrowane usługi Azure Machine Learning, aby ułatwić przeglądanie galerii przykładowych eksperymentów przy użyciu CNTK, TensorFlow, MMLSpark i innych.
+## <a name="get-started-quickly-with-the-azure-machine-learning-sample-gallery"></a>Szybko Rozpocznij pracę dzięki galerii przykładów Azure Machine Learning
+Visual Studio Tools for AI jest zintegrowana z Azure Machine Learning, aby ułatwić przeglądanie galerii przykładowych eksperymentów przy użyciu CNTK, TensorFlow, MMLSpark i innych.
 
-![Eksploratora przykładów](media/about/gallery.png)
+![Eksplorator przykładów](media/about/gallery.png)
 
-[Dowiedz się więcej na temat tworzenia projektów z galerii przykładów](create-project-gallery.md)
+[Dowiedz się więcej o tworzeniu projektów z galerii przykładów](create-project-gallery.md)
 
-## <a name="scale-out-deep-learning-model-training-andor-inferencing-to-the-cloud"></a>Skalowanie w poziomie szkoleń modelowych i/lub wnioskowania w chmurze do uczenia głębokiego
-To rozszerzenie ułatwia szkolenie modeli na komputerze lokalnym lub można przesłać zadania w chmurze przy użyciu naszej integracji z usługą Azure Machine Learning. Można przesyłać zadania do innego obliczeniowych elementów docelowych, takich jak klastry Spark, maszyn wirtualnych procesorów GPU platformy Azure i nie tylko.
+## <a name="scale-out-deep-learning-model-training-andor-inferencing-to-the-cloud"></a>Skalowanie szkoleń modelu uczenia głębokiego i/lub inferencing do chmury
+To rozszerzenie ułatwia uczenie modeli na komputerze lokalnym lub przesyłanie zadań do chmury przy użyciu integracji z Azure Machine Learning. Zadania można przesyłać do różnych obiektów docelowych obliczeń, takich jak klastry Spark, maszyny wirtualne procesora GPU platformy Azure i nie tylko.
 
-![przesyłanie zadania](media/about/submitjobs.png)
+![Prześlij zadanie](media/about/submitjobs.png)
 
-[Dowiedz się więcej o szkolenie modeli w chmurze](tensorflow-vm.md)
+[Dowiedz się więcej o modelach szkoleniowych w chmurze](tensorflow-vm.md)
 
 ## <a name="supported-operating-systems"></a>Obsługiwane systemy operacyjne
-To rozszerzenie obsługuje obecnie Windows 64-bitowych systemach operacyjnych.
+Obecnie to rozszerzenie obsługuje systemy operacyjne Windows 64-bitowe.
 
-## <a name="support"></a>Pomoc techniczna
-Pomoc techniczna dla tego rozszerzenia znajduje się na naszych [narzędzie do śledzenia problemów GitHub](http://github.com/Microsoft/vs-tools-for-ai/issues). Możesz przesłać sugestię dotyczącą usterki raportu lub funkcji i uczestniczyć w dyskusjach na forach.
+## <a name="support"></a>Obsługa
+Obsługa tego rozszerzenia jest dostępna w naszym [monitorze problemów usługi GitHub](https://github.com/Microsoft/vs-tools-for-ai/issues). Można przesłać raport o usterkach lub sugestię funkcji oraz wziąć udział w dyskusjach.

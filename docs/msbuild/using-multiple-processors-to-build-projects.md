@@ -1,5 +1,5 @@
 ---
-title: Używanie wielu procesorów w projektach kompilacji | Dokumentacja firmy Microsoft
+title: Używanie wielu procesorów do kompilowania projektów | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,33 +11,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4af67aa3961b92b55abfdcf7a811daef284ca523
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 065b11b689189f5ad833ce642cfcfc94da06f83d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970838"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747201"
 ---
-# <a name="use-multiple-processors-to-build-projects"></a>Użycie wielu procesorów w projektach kompilacji
-Program MSBuild potrafi optymalnie wykorzystywać komputery z wieloma procesorami lub procesorami wielordzeniowymi. Dla każdego dostępnego procesora jest tworzony oddzielny proces kompilacji. Jeśli na przykład system ma cztery procesory, powstają cztery procesy kompilacji. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] może przetwarzać te kompilacje równocześnie, a w związku z tym, całkowity czas kompilacji jest krótszy. Jednak kompilowanie równoległe wprowadza pewne zmiany w przebiegu procesów kompilacji. Omówiono je w tym temacie.
+# <a name="use-multiple-processors-to-build-projects"></a>Używanie wielu procesorów do kompilowania projektów
+Program MSBuild potrafi optymalnie wykorzystywać komputery z wieloma procesorami lub procesorami wielordzeniowymi. Dla każdego dostępnego procesora jest tworzony oddzielny proces kompilacji. Jeśli na przykład system ma cztery procesory, powstają cztery procesy kompilacji. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] mogą przetwarzać te kompilacje jednocześnie, a w związku z tym łączny czas kompilacji jest zmniejszany. Jednak kompilowanie równoległe wprowadza pewne zmiany w przebiegu procesów kompilacji. Omówiono je w tym temacie.
 
 ## <a name="project-to-project-references"></a>Odwołania projektu do projektu
- Gdy [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] napotka odwołanie projektu do projektu (P2P) podczas równoległego kompilacji, aby skompilować projekt, tworzy on odwołanie tylko jeden raz. Jeśli dwa projekty mają to samo odwołanie P2P, nie będzie ono kompilowane osobno dla każdego projektu. Zamiast tego aparat kompilacji zwraca to samo odwołanie P2P do obu projektów, które go używają. Na przyszłe żądania o ten sam element docelowy w trakcie jednej sesji jest podawane to samo odwołanie P2P.
+ Gdy [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] napotka odwołanie projekt-do-Project (P2P), gdy używa kompilacji równoległych do kompilowania projektu, kompiluje tylko jeden raz. Jeśli dwa projekty mają to samo odwołanie P2P, nie będzie ono kompilowane osobno dla każdego projektu. Zamiast tego aparat kompilacji zwraca to samo odwołanie P2P do obu projektów, które go używają. Na przyszłe żądania o ten sam element docelowy w trakcie jednej sesji jest podawane to samo odwołanie P2P.
 
 ## <a name="cycle-detection"></a>Wykrywanie cyklu
- Wykrywanie cyklu działa tak samo jak w programie [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0, poza tym, że teraz [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] może zgłaszać wykrycie cyklu w innym czasie lub podczas kompilacji.
+ Funkcja wykrywania cyklu działa tak samo jak w [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2,0, z tą różnicą, że teraz [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] może zgłosić wykrycie cyklu w innym czasie lub w kompilacji.
 
 ## <a name="errors-and-exceptions-during-parallel-builds"></a>Błędy i wyjątki podczas kompilacji równoległych
- W kompilacjach równoległych błędy i wyjątki mogą się wydarzyć o innym czasie niż podczas kompilacji nierównoległej i gdy jeden projekt nie jest kompilowany, druga kompilacja trwa dalej. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] nie powoduje wstrzymania każda kompilacja projektu, który tworzy równolegle z jednego, który uległ awarii. Inne projekty w dalszym ciągu kompilacji, aż się zakończą sukcesem lub niepowodzeniem. Jednak jeśli włączono opcję <xref:Microsoft.Build.Framework.IBuildEngine.ContinueOnError%2A>, kompilacje nie będą zatrzymywane nawet mimo wystąpienia błędów.
+ W kompilacjach równoległych błędy i wyjątki mogą się wydarzyć o innym czasie niż podczas kompilacji nierównoległej i gdy jeden projekt nie jest kompilowany, druga kompilacja trwa dalej. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] nie zatrzyma żadnej kompilacji projektu, która jest tworzona równolegle z tą, która się nie powiodła. Inne projekty kontynuują kompilację do momentu pomyślnego lub niepowodzenia. Jednak jeśli włączono opcję <xref:Microsoft.Build.Framework.IBuildEngine.ContinueOnError%2A>, kompilacje nie będą zatrzymywane nawet mimo wystąpienia błędów.
 
-## <a name="visual-c-project-vcproj-and-solution-sln-files"></a>Projekt Visual C++ (.vcproj) i pliki rozwiązania (.sln)
- Zarówno [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] projektów (*.vcproj*) i rozwiązanie (*.sln*) pliki mogą być przekazywane do [zadanie MSBuild](../msbuild/msbuild-task.md). Dla [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] projektów jest wywoływany obiekt VCWrapperProject, a następnie wewnętrzny [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projekt zostanie utworzony. Dla [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] rozwiązania, zostanie utworzony SolutionWrapperProject, a następnie wewnętrzny [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projekt zostanie utworzony. W obu przypadkach powstały projekt jest traktowany tak samo jak każdy inny projekt programu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
+## <a name="c-project-vcxproj-and-solution-sln-files"></a>C++pliki projektu (. vcxproj) i rozwiązania (. sln)
+ Do [zadania programu MSBuild](../msbuild/msbuild-task.md)można przesłać zarówno pliki projektów programu [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] ( *. vcxproj*), jak i rozwiązania ( *. sln*). W przypadku projektów [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] jest wywoływana VCWrapperProject, a następnie tworzony jest projekt wewnętrzny [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. W przypadku rozwiązań [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] jest tworzony SolutionWrapperProject, a następnie projekt wewnętrzny [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zostanie utworzony. W obu przypadkach powstały projekt jest traktowany tak samo jak każdy inny projekt programu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
 
-## <a name="multi-process-execution"></a>Wykonanie etapu wieloprocesowego
+## <a name="multi-process-execution"></a>Wykonywanie przez wiele procesów
  Prawie wszystkie czynności dotyczące kompilacji wymagają, aby bieżący katalog pozostał bez zmian przez cały proces kompilacji, ponieważ zapobiega to błędom związanym ze ścieżką. W związku z tym projektów nie można uruchamiać w różnych wątkach programu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], ponieważ spowodowałoby to utworzenie wielu katalogów.
 
  Aby zabiec temu problemowi, ale nadal umożliwiać kompilowanie na wielu procesorach, program [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] stosuje „izolację procesów”. Za pomocą tego mechanizmu program [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] może utworzyć maksymalnie `n` procesów, gdzie `n` odpowiada liczbie procesorów dostępnych w komputerze. Jeśli na przykład program [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] kompiluje rozwiązanie na komputerze, który ma dwa procesory, zostaną utworzone tylko dwa procesy kompilacji. Procesy te są wykonywane wielokrotnie w celu skompilowania wszystkich projektów w rozwiązaniu.
 
 ## <a name="see-also"></a>Zobacz także
-- [Tworzenie wielu projektów wykonywane równolegle](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)
+- [Równoległe kompilowanie wielu projektów](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)
 - [Zadania](../msbuild/msbuild-tasks.md)

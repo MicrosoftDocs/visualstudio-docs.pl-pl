@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_intro — | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_intro | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 153daa1f43ba4945a5eb32aea82c5d58ff57c5f6
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 4680af2d41ef3fa06a89784003c98982a09c2b63
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62836803"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740349"
 ---
-# <a name="idiasymbolgetintro"></a>IDiaSymbol::get_intro
-Pobiera flagę określającą, czy funkcja jest wprowadzenie do funkcji wirtualnej.
+# <a name="idiasymbolget_intro"></a>IDiaSymbol::get_intro
+Pobiera flagę, która określa, czy funkcja jest wprowadzeniem do funkcji wirtualnej.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,13 +33,13 @@ HRESULT get_intro ( 
 #### <a name="parameters"></a>Parametry
 `pRetVal`
 
-[out] Zwraca `TRUE` Jeśli funkcja jest wprowadzenie wirtualnych; w przeciwnym razie zwraca `FALSE`.
+określoną Zwraca `TRUE`, jeśli funkcja jest wprowadzeniem wirtualnym; w przeciwnym razie zwraca `FALSE`.
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
+Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
-> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Wartość zwracana `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
 ## <a name="example"></a>Przykład
 
@@ -52,14 +52,14 @@ class B : public A {
 }
 ```
 
-Zarówno `A::f1` i `B::f1` funkcji wirtualnych, ale `A::f1` jest wprowadzenie wirtualny.
+Zarówno `A::f1`, jak i `B::f1` są funkcjami wirtualnymi, ale `A::f1` jest wprowadzeniem wirtualnym.
 
 ## <a name="requirements"></a>Wymagania
 
 |Wymaganie|Opis|
 |-----------------|-----------------|
-|Nagłówek:|dia2.h|
-|Wersja:|V7.0 DIA SDK|
+|Nagłówki|dia2. h|
+|Wersja:|DIA SDK v 7.0|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

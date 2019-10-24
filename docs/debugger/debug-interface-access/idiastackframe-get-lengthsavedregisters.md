@@ -1,5 +1,5 @@
 ---
-title: Idiastackframe::get_lengthsavedregisters — | Dokumentacja firmy Microsoft
+title: 'IDiaStackFrame:: get_lengthSavedRegisters | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 936cd1f057258bdeda455c67e69e3cd7a9272cc7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3a06e96091a32f1425495a941f418a292f4155d2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839052"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741670"
 ---
-# <a name="idiastackframegetlengthsavedregisters"></a>IDiaStackFrame::get_lengthSavedRegisters
-Pobiera liczba bajtów zapisanych rejestrów wypychane na stos.
+# <a name="idiastackframeget_lengthsavedregisters"></a>IDiaStackFrame::get_lengthSavedRegisters
+Pobiera liczbę bajtów zapisanych rejestrów wypchnięcia na stosie.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,10 +33,10 @@ HRESULT get_lengthSavedRegisters ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca liczbę bajtów zapisanych rejestrów.
+określoną Zwraca liczbę bajtów zapisanych rejestrów.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`. Zwraca `S_FALSE`, jeśli właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

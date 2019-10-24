@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_volatiletype — | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_volatileType | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cef843a2e214dbf66107a5ac7462ae6a2672fafe
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 5967a13596b5fad99f0f14277ea0e9505e222a41
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64798864"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738801"
 ---
-# <a name="idiasymbolgetvolatiletype"></a>IDiaSymbol::get_volatileType
-Pobiera flagę określającą, czy typ danych zdefiniowany przez użytkownika (UDT) jest nietrwały.
+# <a name="idiasymbolget_volatiletype"></a>IDiaSymbol::get_volatileType
+Pobiera flagę, która określa, czy typ danych zdefiniowany przez użytkownika (UDT) jest nietrwały.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,16 +33,16 @@ HRESULT get_volatileType ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca `TRUE` w przypadku UDT volatile; w przeciwnym razie, zwraca `FALSE`.
+określoną Zwraca `TRUE`, Jeśli UDT jest nietrwałe; w przeciwnym razie zwraca `FALSE`.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
-> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Wartość zwracana `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
 ## <a name="remarks"></a>Uwagi
- W języku C++, mogą być oznaczone UDT `volatile` — słowo kluczowe, wskazujący, że jego zawartość nie zakłada się, że istnieje jeden dostępem do następnego.
+ W C++programie UDT można oznaczyć za pomocą słowa kluczowego `volatile`, wskazując, że jego zawartość nie może być założono, że istnieje z jednego dostępu do następnego.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

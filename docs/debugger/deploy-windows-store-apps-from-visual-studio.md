@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: b2fa0bd62b88602ee5a4d5091821e2c2a18f6374
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: d902403b111e92f302ff907a29eaaa99ee181058
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72430762"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737992"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Wdrażanie aplikacji platformy UWP przy użyciu programu Visual Studio
 
@@ -98,7 +98,7 @@ Można ustawić następujące opcje wdrażania na stronie właściwości debugow
 
 **Zezwalaj na sprzężenie zwrotne sieci**
 
-Ze względów bezpieczeństwa aplikacja platformy UWP lub [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)], która jest zainstalowana w standardowym sposobie, nie może wykonywać wywołań sieciowych na urządzeniu, na którym jest zainstalowana. Domyślnie wdrożenie programu Visual Studio tworzy wykluczenie z tej reguły dla wdrożonej aplikacji. To wykluczenie umożliwia testowanie procedur komunikacji na pojedynczym komputerze. Przed przesłaniem aplikacji do [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)] należy przetestować aplikację bez wykluczania.
+Ze względów bezpieczeństwa aplikacja platformy UWP lub [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] zainstalowana w standardowym sposobie nie może wykonywać wywołań sieciowych na urządzeniu, na którym jest zainstalowana. Domyślnie wdrożenie programu Visual Studio tworzy wykluczenie z tej reguły dla wdrożonej aplikacji. To wykluczenie umożliwia testowanie procedur komunikacji na pojedynczym komputerze. Przed przesłaniem aplikacji do [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)] należy przetestować aplikację bez wykluczania.
 
 Aby usunąć wykluczenie sprzężenia zwrotnego sieci z aplikacji:
 
@@ -114,7 +114,7 @@ Aby skonfigurować wdrożenie w celu automatycznego uruchamiania sesji debugowan
 
 - Na stronie C++ właściwości debugowania dla opcji **Uruchom aplikację** ustaw wartość **tak**.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Zaawansowane opcje zdalnego wdrażania](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)
 - [Debugowanie zainstalowanego pakietu aplikacji](../debugger/debug-installed-app-package.md)

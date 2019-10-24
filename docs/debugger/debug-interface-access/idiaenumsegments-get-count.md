@@ -1,5 +1,5 @@
 ---
-title: Idiaenumsegments::get_count — | Dokumentacja firmy Microsoft
+title: 'IDiaEnumSegments:: get_Count | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eac1b6d88917ca94db82a3e4e8c20c4be3060560
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 16287d83c19ef01f5ba59127ce49bec4b7312b4b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833200"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744219"
 ---
-# <a name="idiaenumsegmentsgetcount"></a>IDiaEnumSegments::get_Count
+# <a name="idiaenumsegmentsget_count"></a>IDiaEnumSegments::get_Count
 Pobiera liczbę segmentów.
 
 ## <a name="syntax"></a>Składnia
@@ -35,8 +35,8 @@ HRESULT get_Count ( 
 - [out, retval] Zwraca liczbę segmentów.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)
 - [IDiaEnumSegments::Item](../../debugger/debug-interface-access/idiaenumsegments-item.md)

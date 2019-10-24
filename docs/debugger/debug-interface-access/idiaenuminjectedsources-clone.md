@@ -1,5 +1,5 @@
 ---
-title: Idiaenuminjectedsources::clone — | Dokumentacja firmy Microsoft
+title: 'IDiaEnumInjectedSources:: Clone | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb1502c875c04955578686113d8ad491311e800d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9baba1709e3e89a982c0347cb744950a14cbb0b8
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554134"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744541"
 ---
 # <a name="idiaenuminjectedsourcesclone"></a>IDiaEnumInjectedSources::Clone
-Tworzy moduł wyliczający, który zawiera ten sam stan wyliczenia jako bieżącego modułu wyliczającego.
+Tworzy moduł wyliczający, który zawiera ten sam stan wyliczania co bieżący moduł wyliczający.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,10 +33,10 @@ HRESULT Clone ( 
 #### <a name="parameters"></a>Parametry
  `ppenum`
 
-[out] Zwraca [idiaenuminjectedsources —](../../debugger/debug-interface-access/idiaenuminjectedsources.md) obiekt, który zawiera zduplikowane modułu wyliczającego. Wprowadzony źródeł nie są duplikowane, tylko moduł wyliczający.
+określoną Zwraca obiekt [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) , który zawiera duplikat modułu wyliczającego. Wprowadzone źródła nie są duplikowane, tylko moduł wyliczający.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

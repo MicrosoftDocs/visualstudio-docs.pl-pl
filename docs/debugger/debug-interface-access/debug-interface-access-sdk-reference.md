@@ -1,5 +1,5 @@
 ---
-title: Dokumentacja zestawu SDK dostępu do interfejsu debugowania | Dokumentacja firmy Microsoft
+title: Odwołanie do zestawu SDK dostępu do interfejsu debugowania | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -14,37 +14,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6760e77fc59292c8d4bdeee02690ab65d5edf7f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5aa8e898a4f045f739eed156e181346a9a6e2df3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62555029"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745268"
 ---
 # <a name="debug-interface-access-sdk-reference"></a>Odwołanie do zestawu SDK dostępu do interfejsu debugowania
 
-Pełną dokumentację dla wszystkich interfejsów i pomocnicze wyliczeń i struktur w DIA SDK.
+Kompletne odwołanie do wszystkich interfejsów i obsługę wyliczeń i struktur w DIA SDK.
 
 ## <a name="in-this-section"></a>W tej sekcji
 
 [Interfejsy (Zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 
-Pełną dokumentację dla wszystkich interfejsów zapewnianych przez DIA SDK.
+Pełne odwołanie do wszystkich interfejsów dostarczonych przez DIA SDK.
 
 [Wyliczenia i struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)
 
-Pełną dokumentację wszystkich wyliczenia i struktury wymagane przez interfejsy.
+Kompletne odwołanie do wszystkich wyliczeń i struktur wymaganych przez interfejsy.
 
 [Stałe (Zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)
 
-W tym artykule opisano pewną liczbę parametrów i ich etykiet, które mogą być używane z interfejsów.
+Opisuje szereg ciągów i ich etykiety, które mogą być używane z interfejsami.
 
 ## <a name="related-sections"></a>Sekcje pokrewne
 
 [Symbole i tagi symboli](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)
 
-W tym artykule opisano, jakie symbole są i jak są identyfikowane przez typ.
+Opisuje, jakie symbole są i jak są identyfikowane przez typ.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Zestaw SDK dostępu do interfejsu debugowania](../../debugger/debug-interface-access/debug-interface-access-sdk.md)

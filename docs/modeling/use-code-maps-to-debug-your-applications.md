@@ -16,12 +16,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a88a72e043f1a4bdbc3bb520161e2f6be92e394
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d0b3c65c0a7e5cb08869a6d756ce0c443fa3bf2e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663778"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748272"
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>Używanie map kodu do debugowania aplikacji
 
@@ -140,7 +140,7 @@ Aby uzyskać szczegółowe informacje o poleceniach i akcjach, których można u
 
  Teraz dowiesz się, jak to zrobić. Problem został znaleziony i rozwiązany pomyślnie dzięki mapowaniu kodu. Istnieje również mapa pomagająca w nawigowaniu po kodzie, zapamiętaniu nowych informacji, a także pokazująca kroki, które zostały podjęte w celu rozwiązania problemu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Metody mapowania dla stosu wywołań podczas debugowania](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
 - [Tworzenie wizualizacji kodu](../modeling/visualize-code.md)

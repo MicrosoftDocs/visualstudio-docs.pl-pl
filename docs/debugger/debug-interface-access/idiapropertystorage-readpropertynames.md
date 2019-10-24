@@ -1,5 +1,5 @@
 ---
-title: IDiaPropertyStorage::ReadPropertyNames | Dokumentacja firmy Microsoft
+title: 'IDiaPropertyStorage:: ReadPropertyNames | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7492e0eee0523fd102ecd057d075f2672bf3b25b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f554485ae56a9d5f190c749879545165d299531c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839579"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742869"
 ---
 # <a name="idiapropertystoragereadpropertynames"></a>IDiaPropertyStorage::ReadPropertyNames
-Pobiera odpowiadający nazwy ciągu dla danej właściwości identyfikatorów.
+Pobiera odpowiednie nazwy ciągów dla danego identyfikatora właściwości.
 
 ## <a name="syntax"></a>Składnia
 
@@ -35,21 +35,21 @@ HRESULT ReadPropertyNames (
 #### <a name="parameters"></a>Parametry
  `cpropid`
 
-[in] Liczba identyfikatorów właściwości w `rgpropid`.
+podczas Liczba identyfikatorów właściwości w `rgpropid`.
 
  `rgpropid`
 
-[in] Tablica identyfikatory właściwości, dla którego można pobrać nazwy (`PROPID` jest zdefiniowany w WTypes.h jako `ULONG`).
+podczas Tablica identyfikatorów właściwości, dla których mają zostać pobrane nazwy (`PROPID` jest zdefiniowana w WTypes. h jako `ULONG`).
 
  `rglpwstrName`
 
-[out w] Tablica nazwy właściwości dla identyfikatorów określonej właściwości. Tablica musi być wstępnie przydzielić do przechowywania żądana liczba nazw właściwości i musi być w stanie co najmniej `cpropid``BSTR` ciągów.
+[in. out] Tablica nazw właściwości dla określonych identyfikatorów właściwości. Tablica musi być wstępnie przydzieloną, aby można było przechowywać żądaną liczbę nazw właściwości i musi być w stanie przechowywać co najmniej `cpropid``BSTR` ciągi.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Nazwy właściwości zwracanego należy oddzielić (przez wywołanie metody `SysFreeString` funkcji) kiedy są już potrzebne.
+ Zwracane nazwy właściwości muszą zostać zwolnione (przez wywołanie funkcji `SysFreeString`), gdy nie są już potrzebne.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

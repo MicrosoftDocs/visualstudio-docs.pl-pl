@@ -1,5 +1,5 @@
 ---
-title: 'ASP.NET Debugging: Wymagania systemowe | Dokumentacja firmy Microsoft'
+title: 'Debugowanie ASP.NET: Wymagania systemowe | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,42 +16,42 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 63a94f9ae6c35ef304af334737a8f206da911afd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 78f947c7ab9fcc1031d457526240ecdd7e9119a3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63402714"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745809"
 ---
-# <a name="aspnet-debugging-system-requirements"></a>ASP.NET Debugging: Wymagania systemowe
-W tym temacie opisano wymagania dotyczące oprogramowania i zabezpieczeń dla [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] debugowania scenariuszy:
+# <a name="aspnet-debugging-system-requirements"></a>ASP.NET Debugowanie: wymagania systemu
+W tym temacie opisano wymagania dotyczące oprogramowania i zabezpieczeń dotyczące [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] scenariuszy debugowania:
 
-- Debugowanie lokalne, w którym [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] i aplikacji sieci Web, uruchom na tym samym komputerze. Istnieją dwie wersje tego scenariusza:
+- Debugowanie lokalne, w którym [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] i aplikacja sieci Web działa na tym samym komputerze. Istnieją dwie wersje tego scenariusza:
 
-  - [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Kod znajduje się w systemie plików.
+  - Kod [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] znajduje się w systemie plików.
 
-  - [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Kod znajduje się w witrynie sieci Web usług IIS.
+  - Kod [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] znajduje się w witrynie sieci Web usług IIS.
 
-- Zdalne debugowanie, w którym [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] działa na komputerze klienckim i debugować aplikację internetową, która jest uruchomiona na komputerze serwera zdalnego.
+- Zdalne debugowanie, w którym [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] działa na komputerze klienckim i debuguje aplikację sieci Web, która jest uruchomiona na komputerze serwera zdalnego.
 
 ## <a name="security-requirements"></a>Wymagania dotyczące zabezpieczeń
- Zdalne debugowanie lokalne i zdalne komputery muszą należeć do Instalatora domeny lub grupy roboczej.
+ W przypadku zdalnego debugowania na komputerach lokalnych i zdalnych musi znajdować się konfiguracja domeny lub Konfiguracja grupy roboczej.
 
- Aby debugować [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] proces roboczy (obsługiwanych przez pulę aplikacji), musi mieć uprawnienia do debugowania tego procesu. Domyślnie [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji przed ich usług IIS 6.0, Uruchom jako **ASPNET** użytkownika. W usługach IIS 6.0 i IIS 7.0 **Usługa sieciowa** konta jest ustawieniem domyślnym. Jeśli proces roboczy jest uruchomione jako **ASPNET**, lub jako **Usługa sieciowa**, musi mieć uprawnienia administratora, aby go debugować.
+ Aby debugować proces roboczy [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] (hostowany przez pulę aplikacji), musisz mieć uprawnienia do debugowania tego procesu. Domyślnie aplikacje [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] przed usługami IIS 6,0 są uruchamiane jako użytkownik **ASPNET** . W usługach IIS 6,0 i IIS 7,0 konto **usługi sieciowej** jest domyślnie. Jeśli proces roboczy jest uruchomiony jako **ASPNET**lub jako **Usługa sieciowa**, musisz mieć uprawnienia administratora, aby go debugować.
 
  > [!IMPORTANT]
- > Począwszy od systemu Windows Server 2008 R2, firma Microsoft zaleca użycie [ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities) jako tożsamość, dla każdej puli aplikacji.
+ > Począwszy od systemu Windows Server 2008 R2 zaleca się użycie [ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities) jako tożsamości dla każdej puli aplikacji.
 
- Nazwa [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] proces roboczy zmienia się przez scenariusz debugowania i wersję usług IIS. Aby uzyskać więcej informacji, zobacz [jak: Znajdowanie nazwy procesu ASP.NET](../debugger/how-to-find-the-name-of-the-aspnet-process.md).
+ Nazwa procesu roboczego [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] zależy od scenariusza debugowania i wersji usług IIS. Aby uzyskać więcej informacji, zobacz [How to: find a Name the ASP.NET Process](../debugger/how-to-find-the-name-of-the-aspnet-process.md).
 
- Można zmienić użytkownika konta, do którego [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] proces działa, edytując plik machine.config na serwerze, na którym działa program IIS. Najlepszym sposobem, w tym celu jest użycie **Internet Information Services (IIS) Manager**. Aby uzyskać więcej informacji, zobacz [jak: Uruchamianie procesu roboczego w ramach konta użytkownika](../debugger/how-to-run-the-worker-process-under-a-user-account.md).
+ Można zmienić konto użytkownika, na którym działa proces roboczy [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], edytując plik Machine. config na serwerze z uruchomionymi usługami IIS. Najlepszym sposobem jest użycie **menedżera Internet Information Services (IIS)** . Aby uzyskać więcej informacji, zobacz [jak: uruchamianie procesu roboczego w ramach konta użytkownika](../debugger/how-to-run-the-worker-process-under-a-user-account.md).
 
- Jeśli zmienisz [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] procesu roboczego w ramach własnego konta użytkownika, nie masz uprawnienia administratora na serwerze, na którym działa program IIS.
+ Jeśli zmienisz [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] proces roboczy na uruchomiony przy użyciu własnego konta użytkownika, nie musisz być administratorem na serwerze, na którym są uruchomione usługi IIS.
 
 > [!CAUTION]
-> Zanim będzie można zmienić [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] do uruchamiania przy użyciu innego konta, procesu roboczego należy wziąć pod uwagę ewentualne konsekwencje Jeśli [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] procesu roboczego powinien stać się celem ataku podczas pracy w ramach tego konta. Konta użytkowników ASPNET i usługa sieci uruchomić z minimalnymi uprawnieniami, zmniejszając ryzyko uszkodzenia, jeśli proces jest włamania. Jeśli musisz zmienić [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] proces uruchamiany w kontekście konta mającego większe uprawnienia potencjalne szkody jest większa.
+> Przed zmianą procesu roboczego [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] na inny należy wziąć pod uwagę ewentualne konsekwencje, jeśli proces roboczy [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] powinien zostać zaatakowana podczas działania w ramach tego konta. Konta użytkowników ASPNET i NETWORK SERVICE działają z minimalnymi uprawnieniami, co zmniejsza możliwą szkodę, jeśli proces jest zaatakowana. Jeśli musisz zmienić proces roboczy [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] na konto, które ma większe uprawnienia, potencjalne uszkodzenie jest większe.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
-- [Debugowanie aplikacji ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
-- [Instrukcje: Uruchamianie procesu roboczego z konta użytkownika](../debugger/how-to-run-the-worker-process-under-a-user-account.md)
+- [Debuguj aplikacje ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
+- [Instrukcje: uruchamianie procesu roboczego z konta użytkownika](../debugger/how-to-run-the-worker-process-under-a-user-account.md)

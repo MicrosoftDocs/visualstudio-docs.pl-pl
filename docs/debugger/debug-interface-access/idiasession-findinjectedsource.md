@@ -1,5 +1,5 @@
 ---
-title: Idiasession::findinjectedsource — | Dokumentacja firmy Microsoft
+title: 'IDiaSession:: findInjectedSource | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bef903304e3892284fc38d9e2b2367ebfe650f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5e2145c90c25c448880e51b9b394c7085e0d49b7
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839345"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742258"
 ---
 # <a name="idiasessionfindinjectedsource"></a>IDiaSession::findInjectedSource
-Pobiera listę źródeł, który został umieszczony w magazynie symboli przez atrybut dostawców lub innych części procesu kompilacji.
+Pobiera listę źródeł umieszczonych w magazynie symboli według dostawców atrybutów lub innych składników procesu kompilacji.
 
 ## <a name="syntax"></a>Składnia
 
@@ -34,15 +34,15 @@ HRESULT findInjectedSource ( 
 #### <a name="parameters"></a>Parametry
  srcFile
 
-[in] Nazwa pliku źródłowego, który chcesz wyszukać.
+podczas Nazwa pliku źródłowego, który ma zostać wyszukany.
 
  ppResult
 
-[out] Zwraca [idiaenuminjectedsources —](../../debugger/debug-interface-access/idiaenuminjectedsources.md) obiekt, który zawiera listę wszystkich źródeł wprowadzony.
+określoną Zwraca obiekt [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) , który zawiera listę wszystkich wprowadzonych źródeł.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

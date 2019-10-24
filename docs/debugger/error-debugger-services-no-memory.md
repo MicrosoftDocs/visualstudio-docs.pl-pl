@@ -1,5 +1,5 @@
 ---
-title: Debuger usługi brakować pamięci | Dokumentacja firmy Microsoft
+title: Usługi debugera zaczynają za mało pamięci | Microsoft Docs
 ms.date: 07/10/2019
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,21 +16,21 @@ ms.author: isgarcia
 manager: caslan
 ms.workload:
 - multiple
-ms.openlocfilehash: 05664ffd056f69215e6fb00d6d49a59382a3692f
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.openlocfilehash: 12215f9c740e68c4f2749a51b06c09a1385dae1a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "67861172"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737842"
 ---
-# <a name="debugger-services-running-out-of-memory"></a>Debuger usług uruchomionych za mało pamięci
-Debugowanie usług zabrakło pamięci i spowodował zakończenie sesji debugowania.
+# <a name="debugger-services-running-out-of-memory"></a>Za mało pamięci w usługach debugera
+Usługa debugowania przekroczyła ilość pamięci i spowodowała przerwanie sesji debugowania.
 
-## <a name="to-investigate-this-error-on-windows"></a>Aby zbadać wystąpienie tego błędu dla Windows
-- Możesz ewidencjonować wykres pamięci procesu **narzędzia diagnostyczne** oknie, aby zobaczyć, jeśli aplikacja docelowa występuje ogromnego wzrostu w pamięci. Jeśli tak, użyj **użycie pamięci** narzędzie, aby zdiagnozować, co to jest problem, zobacz [Analizowanie użycia pamięci](../profiling/memory-usage.md).
+## <a name="to-investigate-this-error-on-windows"></a>Aby zbadać ten błąd w systemie Windows
+- Możesz sprawdzić wykres pamięci procesu w oknie **Narzędzia diagnostyczne** , aby sprawdzić, czy w aplikacji docelowej występuje ogromny wzrost ilości pamięci. W takim przypadku należy użyć narzędzia **użycie pamięci** do zdiagnozowania, jaki jest podstawowy problem, zobacz [Analizowanie użycia pamięci](../profiling/memory-usage.md).
 
-- Jeśli aplikacja docelowa nie wydaje się zużywałoby dużej ilości pamięci, należy użyć **Menedżera zadań** oknie, aby sprawdzić limit użycia pamięci programu Visual Studio (devenv.exe), proces roboczy (msvsmon.exe) lub programu VS Code (vsdbg.exe/vsdbg-ui.exe) do Ustal, czy problem debugera. Uruchamianie za mało pamięci procesu devenv.exe należy rozważyć zmniejszenie liczby rozszerzeń programu Visual Studio uruchomiony.
+- Jeśli aplikacja docelowa nie zużywa dużej ilości pamięci, użyj okna **Menedżera zadań** , aby wyewidencjonować użycie pamięci przez program Visual Studio (devenv. exe), proces roboczy (msvsmon. exe) lub vs Code (vsdbg. exe/vsdbg-UI. exe), aby określić, czy jest to problem z debugerem. Jeśli jest devenv. exe, należy rozważyć zmniejszenie liczby uruchomionych rozszerzeń programu Visual Studio.
 
-## <a name="see-also"></a>Zobacz też
-- [Wpis w blogu: Analizowanie użycia Procesora i pamięci podczas debugowania](https://devblogs.microsoft.com/visualstudio/analyze-cpu-memory-while-debugging/)
-- [Zarządzanie pamięcią-informacje](/windows/win32/memory/about-memory-management)
+## <a name="see-also"></a>Zobacz także
+- [Wpis w blogu: analizowanie procesora i pamięci podczas debugowania](https://devblogs.microsoft.com/visualstudio/analyze-cpu-memory-while-debugging/)
+- [Informacje o zarządzaniu pamięcią](/windows/win32/memory/about-memory-management)

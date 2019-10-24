@@ -1,5 +1,5 @@
 ---
-title: Idiasegment::get_virtualaddress — | Dokumentacja firmy Microsoft
+title: 'IDiaSegment:: get_virtualAddress | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7daec26817638be5338eb10dce83b59a1283d15
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 94958fb51f6742bf07cc5a4cd34da059c05adc23
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839410"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742356"
 ---
-# <a name="idiasegmentgetvirtualaddress"></a>IDiaSegment::get_virtualAddress
-Pobiera adres wirtualny (oceny luk w zabezpieczeniach) początkowi sekcji.
+# <a name="idiasegmentget_virtualaddress"></a>IDiaSegment::get_virtualAddress
+Pobiera adres wirtualny (VA) początku sekcji.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,10 +33,10 @@ HRESULT get_virtualAddress ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca oceny luk w zabezpieczeniach z początku sekcji.
+określoną Zwraca wartość VA początku sekcji.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`. Zwraca `S_FALSE`, jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

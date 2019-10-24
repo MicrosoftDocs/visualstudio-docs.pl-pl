@@ -1,5 +1,5 @@
 ---
-title: Okno dialogowe ostrzeżenia o kod starych | Dokumentacja firmy Microsoft
+title: Okno dialogowe ostrzeżenia o nieodświeżonym kodzie | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -20,22 +20,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9173563239084b8367d9815b46f28d0626ebe04a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dba38e5b5d9f7a2be710cad58d6f2297dd03a412
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62902494"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72729548"
 ---
 # <a name="stale-code-warning-dialog-box"></a>Ostrzeżenie o kodzie nieodświeżonym — Okno dialogowe
 
-To okno dialogowe pojawia się po dokonaniu zmiany natywny kod, który **Edytuj i Kontynuuj** nie może od razu zastosować. Zgodnie z wynikiem, natywnego kodu w bieżącej ramki stosu jest obecnie nieaktualna, czyli starych. Aby uzyskać więcej informacji, zobacz [Edytuj i Kontynuuj (C++)](edit-and-continue-visual-cpp.md).
+To okno dialogowe pojawia się po wprowadzeniu zmian w kodzie natywnym, który **Edytuj i Kontynuuj** nie może natychmiast zastosować. W efekcie jakiś kod natywny w bieżącej klatce stosu jest teraz nieaktualny, czyli przestarzały. Aby uzyskać więcej informacji, zobacz [Edytuj i KontynuujC++()](edit-and-continue-visual-cpp.md).
 
-**Nie pokazuj ponownie tego okna dialogowego**
+**Nie pokazuj więcej tego okna dialogowego**
 
-Jeśli wybierzesz to pole wyboru, Edytuj i Kontynuuj zastosuje zmiany kodu bez pytania o uprawnienia w przyszłości. Można włączyć tego ostrzeżenia ponownie, przechodząc do **opcje** okno dialogowe, otwierając **debugowanie** folderu, klikając **Edytuj i Kontynuuj** strony i wybierając **Ostrzegaj o nieodświeżonym kodzie**.
+Jeśli zaznaczysz to pole wyboru, polecenie Edytuj i Kontynuuj zastosuje zmiany kodu bez pytania o zgodę w przyszłości. To ostrzeżenie można ponownie włączyć, przechodząc do okna dialogowego **Opcje** , otwierając folder **debugowanie** , klikając stronę **Edytuj i Kontynuuj** i wybierając opcję **Ostrzegaj o nieodświeżonym kodzie**.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Obsługiwane zmiany kodu (C++)](supported-code-changes-cpp.md)
-- [Edytuj i Kontynuuj, debugowanie, opcje — Okno dialogowe](edit-and-continue.md)
+- [Edytuj i Kontynuuj, debugowanie, Opcje — okno dialogowe](edit-and-continue.md)

@@ -1,5 +1,5 @@
 ---
-title: Uruchom proces roboczy w ramach konta użytkownika | Dokumentacja firmy Microsoft
+title: Uruchamianie procesu roboczego przy użyciu konta użytkownika | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -20,72 +20,72 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aebe1faf31d53fb44cf5efddbee154018e42a365
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 5905ad87eb534013bdfd786a79e40e46087dff55
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62847764"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72732819"
 ---
-# <a name="how-to-run-the-worker-process-under-a-user-account"></a>Instrukcje: Uruchamianie procesu roboczego w ramach konta użytkownika
-Aby skonfigurować komputer, dzięki czemu możesz uruchomić [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] proces roboczy (aspnet_wp.exe lub w3wp.exe) w ramach konta użytkownika, wykonaj następujące kroki.
+# <a name="how-to-run-the-worker-process-under-a-user-account"></a>Porady: uruchamianie procesu roboczego z konta użytkownika
+Aby skonfigurować komputer w taki sposób, aby można było uruchomić proces roboczy [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] (Aspnet_wp. exe lub w3wp. exe) w ramach konta użytkownika, wykonaj następujące kroki.
 
  > [!IMPORTANT]
- > Począwszy od systemu Windows Server 2008 R2, firma Microsoft zaleca użycie [ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities) jako tożsamość, dla każdej puli aplikacji.
+ > Począwszy od systemu Windows Server 2008 R2 zaleca się użycie [ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities) jako tożsamości dla każdej puli aplikacji.
 
 ## <a name="procedure"></a>Procedura
 
-#### <a name="to-run-aspnetwpexe-under-a-user-account"></a>Aby uruchomić aspnet_wp.exe przy użyciu konta użytkownika
+#### <a name="to-run-aspnet_wpexe-under-a-user-account"></a>Aby uruchomić proces aspnet_wp. exe w ramach konta użytkownika
 
-1. Otwórz plik machine.config, znajduje się w folderze konfiguracji w ścieżce, gdzie zainstalowano środowisko uruchomieniowe na komputerze.
+1. Otwórz plik Machine. config znajdujący się na komputerze w folderze CONFIG pod ścieżką, w której zainstalowano środowisko uruchomieniowe.
 
-2. Znajdź &lt;processModel&gt; sekcji, a następnie zmień atrybuty użytkownika i hasła na nazwę i hasło konta użytkownika, które chcesz aspnet_wp.exe uruchamiany w kontekście.
+2. Znajdź sekcję &gt; &lt;processModel i zmień atrybuty użytkownika i hasła na nazwę i hasło konta użytkownika, w ramach którego ma zostać uruchomiony proces aspnet_wp. exe.
 
-3. Zapisz plik machine.config.
+3. Zapisz plik Machine. config.
 
-4. Na [!INCLUDE[winxpsvr](../debugger/includes/winxpsvr_md.md)], usług IIS 6.0 jest instalowany domyślnie. Odpowiedni proces roboczy jest w3wp.exe.To uruchamiania w trybie aspnet_wp.exe jako proces roboczy usług IIS 6.0, należy wykonać następujące czynności:
+4. W [!INCLUDE[winxpsvr](../debugger/includes/winxpsvr_md.md)] usługi IIS 6,0 są instalowane domyślnie. Odpowiedni proces roboczy jest w3wp.exe.To uruchomiony w trybie usług IIS 6,0 z procesem aspnet_wp. exe jako proces roboczy, należy wykonać następujące czynności:
 
-   1. Kliknij przycisk **Start**, kliknij przycisk **narzędzia administracyjne** , a następnie wybierz **Internetowe usługi informacyjne**.
+   1. Kliknij przycisk **Start**, kliknij pozycję **Narzędzia administracyjne** , a następnie wybierz pozycję **Internet Information Services**.
 
-   2. W **Internetowe usługi informacyjne** okno dialogowe, kliknij prawym przyciskiem myszy **witryn sieci Web** folder i wybierz polecenie **właściwości**.
+   2. W oknie dialogowym **Internet Information Services** kliknij prawym przyciskiem myszy folder **witryny sieci Web** i wybierz polecenie **Właściwości**.
 
-   3. W **właściwości witryn sieci Web** okna dialogowego wybierz **usługi**.
+   3. W oknie dialogowym **Właściwości witryn sieci Web** wybierz pozycję **Usługa**.
 
-   4. Wybierz **Uruchom usługę WWW w trybie izolacji IIS6.0**.
+   4. Wybierz pozycję **Uruchom usługę WWW w trybie izolacji usług IIS 6.0**.
 
-   5. Zamknij **właściwości** okno dialogowe i **Menedżera internetowych usług**.
+   5. Zamknij okno dialogowe **Właściwości** i **Menedżer usług internetowych**.
 
-5. Otwórz wiersz polecenia programu Windows i zresetuj serwera, uruchamiając:
+5. Otwórz wiersz polecenia systemu Windows i zresetuj serwer, uruchamiając polecenie:
 
    ```cmd
    iisreset
    ```
 
-   — lub —
+   oraz
 
    ```cmd
    net stop iisadmin /y
    net start w3svc
    ```
 
-6. Znajdź tymczasowy [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] folderu plików, który powinien znajdować się w tej samej ścieżce co folder konfiguracji. Kliknij prawym przyciskiem myszy tymczasowy [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] folder plików, a następnie wybierz **właściwości** w menu skrótów.
+6. Zlokalizuj folder tymczasowych plików [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], który powinien znajdować się w tej samej ścieżce co folder konfiguracji. Kliknij prawym przyciskiem myszy folder Temporary [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Files i wybierz polecenie **Właściwości** w menu skrótów.
 
-7. W **tymczasowe ASP.NET pliki właściwości** okno dialogowe, kliknij przycisk **zabezpieczeń** kartę.
+7. W oknie dialogowym **właściwości plików tymczasowych ASP.NET** kliknij kartę **zabezpieczenia** .
 
-8. Kliknij przycisk **zaawansowane**.
+8. Kliknij pozycję **Zaawansowane**.
 
-9. W **Zaawansowane ustawienia zabezpieczeń dla Temporary ASP.Net Files** okno dialogowe, kliknij przycisk **Dodaj**.
+9. W oknie dialogowym **Zaawansowane ustawienia zabezpieczeń dla plików tymczasowych ASP.NET** kliknij przycisk **Dodaj**.
 
-    **Wybierz użytkownika, komputera lub grupy, okno dialogowe** pojawia się.
+    Zostanie wyświetlone okno **dialogowe Wybieranie użytkownika, komputera lub grupy** .
 
-10. Wpisz nazwę żądanego użytkownika w **wprowadź nazwę obiektu do wybrania** , a następnie kliknij przycisk **OK**. Nazwa użytkownika, należy wykonać następujący format: Nazwa_domeny\nazwa_użytkownika.
+10. Wpisz nazwę użytkownika w polu **Wprowadź nazwę obiektu do wybrania** , a następnie kliknij przycisk **OK**. Nazwa użytkownika musi być zgodna z formatem: DomainName\UserName.
 
-11. W **wpis uprawnienia dla Temporary ASP.NET Files** okna dialogowego pole, przyznać użytkownikowi **Pełna kontrola**, a następnie kliknij przycisk **OK** zamknąć **wpis dla tymczasowych ASP Pliki .NET** okno dialogowe.
+11. W oknie dialogowym **wpis uprawnienia dla plików tymczasowych ASP.NET** nadaj użytkownikowi **pełną kontrolę**, a następnie kliknij przycisk **OK** , aby zamknąć **wpis dla tymczasowych plików ASP.NET** okno dialogowe.
 
-12. A **zabezpieczeń** pojawi się okno dialogowe i pyta, jeśli na pewno chcesz zmienić uprawnienia do folderu systemu. Kliknij przycisk **Tak**.
+12. Zostanie wyświetlone okno dialogowe **zabezpieczenia** z pytaniem, czy naprawdę chcesz zmienić uprawnienia do folderu systemowego. Kliknij przycisk **Tak**.
 
-13. Kliknij przycisk **OK** zamknąć **tymczasowe ASP.NET pliki właściwości** okno dialogowe.
+13. Kliknij przycisk **OK** , aby zamknąć okno dialogowe **właściwości plików tymczasowych ASP.NET** .
 
-## <a name="see-also"></a>Zobacz też
-- [Debugowanie aplikacji ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
-- [ASP.NET Debugging: Wymagania systemowe](../debugger/aspnet-debugging-system-requirements.md)
+## <a name="see-also"></a>Zobacz także
+- [Debuguj aplikacje ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
+- [Debugowanie ASP.NET: Wymagania systemowe](../debugger/aspnet-debugging-system-requirements.md)

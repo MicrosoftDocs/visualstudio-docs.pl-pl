@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c7ff2be87a91e6c01ec275bcff1d77aa6481df1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1ae26dc54c8f57348ed00196d86629e3515a1835
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658274"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748335"
 ---
 # <a name="properties-of-a-dsl-definition"></a>Właściwości definicji DSL
 Właściwości DslDefinition definiują *specyficzne dla domeny* właściwości definicji języka, takie jak numer wersji. Właściwości DslDefinition są wyświetlane w oknie **Właściwości** po kliknięciu otwartego obszaru diagramu w *Projektant języka specyficznego dla domeny*.
@@ -42,6 +42,6 @@ Właściwości DslDefinition definiują *specyficzne dla domeny* właściwości 
 |Wersja pomocnicza|Przyrostowy numer kompilacji dla tej definicji języka specyficznego dla domeny.|0|
 |skorygowan|Numer kompilacji poprawki przyrostowej dla tej definicji języka specyficznego dla domeny.|0|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [narzędzia języka specyficznego dla domeny słownik](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

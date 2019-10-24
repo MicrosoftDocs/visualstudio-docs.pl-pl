@@ -1,7 +1,7 @@
 ---
-title: Uczenie modelu tensorflow lokalnie
-description: Uruchamianie modelu tensorflow lokalnie w narzędzia sztucznej Inteligencji dla programu Visual Studio
-keywords: Program visual studio, tensorflow, lokalny w sztucznej inteligencji
+title: Lokalne uczenie modelu tensorflow
+description: Uruchamianie modelu tensorflow lokalnie w narzędziach AI Tools for Visual Studio
+keywords: AI, Visual Studio, tensorflow, Local
 author: lisawong19
 ms.author: liwong
 manager: routlaw
@@ -10,22 +10,22 @@ ms.topic: quickstart
 ms.devlang: python
 ms.workload:
 - multiple
-ms.openlocfilehash: 26668247bf993da3eb3f2803abaf9288e566ffee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 43ce126baeb96efcaab3c40bac912274ee1cd8c7
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62555470"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777428"
 ---
-# <a name="train-a-tensorflow-model-locally"></a>Uczenie modelu TensorFlow lokalnie
+# <a name="train-a-tensorflow-model-locally"></a>Lokalne uczenie modelu TensorFlow
 
-W tym przewodniku Szybki Start będzie uczenie modelu TensorFlow z [mnist ręcznie ZAPISANYCH](http://yann.lecun.com/exdb/mnist/) zestawu danych lokalnie w programie Visual Studio Tools for AI.
+W tym przewodniku szybki start poprowadzimy model TensorFlow z zestawem danych [mnist ręcznie](http://yann.lecun.com/exdb/mnist/) lokalnie w Visual Studio Tools for AI.
 
-Bazy danych mnist ręcznie ZAPISANYCH ma zestaw szkolenia 60 000 przykłady i zbiór 10 000 przykłady pisma odręcznego cyfr.
+Baza danych MNIST ręcznie ma zestaw szkoleniowy 60 000 przykładów oraz zestaw testów 10 000 cyfr odręcznych.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-Przed rozpoczęciem upewnij się, że masz zainstalowane następujące oprogramowanie:
+Przed rozpoczęciem upewnij się, że zainstalowano następujące elementy:
 
 ### <a name="google-tensorflow"></a>Google TensorFlow
 
@@ -36,26 +36,26 @@ C:\>pip.exe install tensorflow
 ```
 
 ### <a name="numpy-and-scipy"></a>NumPy i SciPy
-Zainstaluj [NumPy](https://www.lfd.uci.edu/~gohlke/pythonlibs/#numpy) i [SciPy](https://www.lfd.uci.edu/~gohlke/pythonlibs/#scipy).
+Zainstaluj [numpy](https://www.lfd.uci.edu/~gohlke/pythonlibs/#numpy) i [SciPy](https://www.lfd.uci.edu/~gohlke/pythonlibs/#scipy).
 
 ### <a name="download-sample-code"></a>Pobierz przykładowy kod
-Pobierz ten [repozytorium GitHub](https://github.com/Microsoft/samples-for-ai) zawierający wprowadzenie do uczenia głębokiego TensorFlow, CNTK, Theano i przykłady.
+Pobierz to [repozytorium GitHub](https://github.com/Microsoft/samples-for-ai) zawierające przykłady umożliwiające wprowadzenie do uczenia głębokiego w ramach usługi TENSORFLOW, CNTK, Theano i innych.
 
-## <a name="open-solution-and-train-model"></a>Otwórz rozwiązanie i wytrenuj model
+## <a name="open-solution-and-train-model"></a>Otwórz rozwiązanie i model uczenia
 
-- Uruchom program Visual Studio i wybierz **Plik > Otwórz > Projekt/rozwiązanie**.
+- Uruchom program Visual Studio i wybierz pozycję **plik > otwórz > projektu/rozwiązania**.
 
-- Wybierz **przykłady Tensorflow** folderu z repozytorium przykładów pobrany i otwarty **TensorflowExamples.sln** pliku.
+- Wybierz folder **przykładów Tensorflow** z pobranego repozytorium Samples i Otwórz plik **TensorflowExamples. sln** .
 
-   ![Otwieranie projektu](media/tensorflow-local/open-project.png)
+   ![Otwórz projekt](media/tensorflow-local/open-project.png)
 
    ![Otwórz rozwiązanie](media/tensorflow-local/open-solution.png)
 
-- Znajdź projekt mnist ręcznie ZAPISANYCH w **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy i wybierz **Ustaw jako projekt startowy**.
+- Znajdź projekt MNIST ręcznie w **Eksplorator rozwiązań**, kliknij prawym przyciskiem myszy i wybierz pozycję **Ustaw jako projekt startowy**.
 
 - Kliknij przycisk **Uruchom**.
 
-- Dane wyjściowe będą drukowane w konsoli.
+- Dane wyjściowe są drukowane w konsoli programu.
 
    ![Przykładowe dane wyjściowe z konsoli](media/tensorflow-local/console-output.png)
 

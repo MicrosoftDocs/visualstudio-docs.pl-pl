@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0ebe31267ee666250fbaeda73f1678051f1d4727
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: c2d92477e37b4918e0601bf163e07f5a8492136c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72435860"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737899"
 ---
-# <a name="edit-and-continue-c"></a>Edytuj i Kontynuuj (C++)
+# <a name="edit-and-continue-c"></a>Edytuj i kontynuuj (C++)
 Możesz użyć Edytuj i Kontynuuj w C++ projektach. Zobacz [obsługiwane zmiany kodu (C++)](../debugger/supported-code-changes-cpp.md) , aby uzyskać informacje o ograniczeniach Edytuj i Kontynuuj.
 
 Aby uzyskać więcej informacji na temat ulepszeń programu Visual Studio 2015 Update 3, zobacz [ C++ Edytuj i Kontynuuj w programie Visual Studio 2015 Update 3](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/).
@@ -79,5 +79,5 @@ Aby uzyskać więcej informacji na temat ulepszeń programu Visual Studio 2015 U
 
  W takich przypadkach Debuger kontynuuje wykonywanie oryginalnego kodu do momentu zastosowania zmian. Nieodświeżony kod pojawia się jako tymczasowe okno pliku źródłowego w osobnym oknie źródłowym z tytułem, takim jak `enc25.tmp`. Edytowane Źródło nadal pojawia się w oryginalnym oknie źródłowym. Jeśli spróbujesz edytować nieodświeżony kod, zostanie wyświetlony komunikat ostrzegawczy.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Obsługiwane zmiany kodu (C++)](../debugger/supported-code-changes-cpp.md)

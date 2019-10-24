@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_hasLongJump | Microsoft Docs
+title: 'IDiaSymbol:: get_hasLongJump | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70036cd8add5c9c72262f29ba92fa6c7eaf8977d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 8fb1e23d252b7cb4f2685a9b07d6e3e92db801bd
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64817131"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740501"
 ---
-# <a name="idiasymbolgethaslongjump"></a>IDiaSymbol::get_hasLongJump
-Pobiera flagę określającą, czy funkcja zawiera korzystanie z [longjmp](/cpp/c-runtime-library/reference/longjmp) polecenia (parowania z [setjmp](/cpp/c-runtime-library/reference/setjmp) polecenia tworzą one stylu C sposób obsługi wyjątków).
+# <a name="idiasymbolget_haslongjump"></a>IDiaSymbol::get_hasLongJump
+Pobiera flagę, która określa, czy funkcja zawiera użycie polecenia [longjmp](/cpp/c-runtime-library/reference/longjmp) (sparowane z poleceniem [setjmp](/cpp/c-runtime-library/reference/setjmp) , takie jak Metoda stylu języka C dla obsługi wyjątków).
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,22 +33,22 @@ HRESULT get_hasLongJump
 #### <a name="parameters"></a>Parametry
  `pFlag`
 
-[out] Zwraca `TRUE` Jeśli funkcja zawiera `longjmp` polecenie; w przeciwnym razie zwraca `FALSE`.
+określoną Zwraca `TRUE`, jeśli funkcja zawiera polecenie `longjmp`; w przeciwnym razie zwraca `FALSE`.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
-> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Wartość zwracana przez `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
 ## <a name="requirements"></a>Wymagania
 
 |Wymaganie|Opis|
 |-----------------|-----------------|
-|Nagłówek:|dia2.h|
-|Wersja:|DIA SDK w wersji 8.0|
+|Nagłówki|dia2. h|
+|Wersja:|DIA SDK v 8.0|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [IDiaSymbol::get_hasSetJump](../../debugger/debug-interface-access/idiasymbol-get-hassetjump.md)
 - [longjmp](/cpp/c-runtime-library/reference/longjmp)

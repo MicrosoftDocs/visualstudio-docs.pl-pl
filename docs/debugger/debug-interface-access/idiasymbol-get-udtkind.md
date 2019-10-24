@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_udtkind — | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_udtKind | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34faf217f77bd30ba707f5ae17886b05dac8ab4f
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: b1bd7e4963796858e7055667c1ae6a9557c77205
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64796641"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739028"
 ---
-# <a name="idiasymbolgetudtkind"></a>IDiaSymbol::get_udtKind
-Pobiera różne typu zdefiniowanego przez użytkownika (UDT).
+# <a name="idiasymbolget_udtkind"></a>IDiaSymbol::get_udtKind
+Pobiera odmianę typu zdefiniowanego przez użytkownika (UDT).
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,14 +33,14 @@ HRESULT get_udtKind ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca wartość z zakresu od [udtkind — wyliczenie](../../debugger/debug-interface-access/udtkind.md) wyliczenie, które określa rodzaj UDT: struktury, klasy lub Unii.
+określoną Zwraca wartość z wyliczenia [udtkind —](../../debugger/debug-interface-access/udtkind.md) , która określa rodzaj typu UDT: Structure, Class lub Union.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
-> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Wartość zwracana `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [UdtKind, wyliczenie](../../debugger/debug-interface-access/udtkind.md)

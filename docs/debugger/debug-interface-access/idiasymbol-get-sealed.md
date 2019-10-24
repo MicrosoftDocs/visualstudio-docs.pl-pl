@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_sealed — | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_sealed | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c75148fdf8453590be7eb0f9fbde95e4bb4b981
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: ece720a42b606640d02729951c11ae03d092aedf
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64791682"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739362"
 ---
-# <a name="idiasymbolgetsealed"></a>IDiaSymbol::get_sealed
-Pobiera flagę określającą, czy ta klasa lub metoda jest zapieczętowany.
+# <a name="idiasymbolget_sealed"></a>IDiaSymbol::get_sealed
+Pobiera flagę, która określa, czy Klasa lub metoda są zapieczętowane.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,23 +33,23 @@ HRESULT get_sealed( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca `TRUE` Jeśli klasa lub metoda jest zapieczętowana; w przeciwnym razie zwraca `FALSE`.
+określoną Zwraca `TRUE`, jeśli Klasa lub metoda są zapieczętowane; w przeciwnym razie zwraca `FALSE`.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
-> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Wartość zwracana `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
 ## <a name="remarks"></a>Uwagi
- Klasa zapieczętowana nie może służyć jako klasę bazową. Metody zapieczętowane nie może być overidden.
+ Klasa zapieczętowana nie może być używana jako klasa bazowa. Metoda zapieczętowana nie może być overidden.
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: Dia2.h
+ Nagłówek: dia2. h
 
- Biblioteka: diaguids.lib
+ Biblioteka: diaguids. lib
 
- DLL: msdia100.dll
+ DLL: msdia100. dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

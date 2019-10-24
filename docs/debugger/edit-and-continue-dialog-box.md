@@ -1,5 +1,5 @@
 ---
-title: Edytuj i Kontynuuj — okno dialogowe | Dokumentacja firmy Microsoft
+title: Edytuj i Kontynuuj — okno dialogowe | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,18 +17,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fdf515e5ca4aeb20cd9fce0b2a2ea829ad3d2e10
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e9de4e43346c0c7261bbd834349f09619b262e17
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62851321"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737940"
 ---
 # <a name="edit-and-continue-dialog-box"></a>Edytuj i kontynuuj — okno dialogowe
-(Tylko natywne) To okno dialogowe pojawia się po zakończeniu edycji kodu podczas debugowania i **Edytuj i Kontynuuj** rozpoznaje, że możliwość stosowania zmian kodu. Aby uzyskać więcej informacji, zobacz [Edytuj i Kontynuuj](../debugger/edit-and-continue.md).
+(Tylko kod natywny) To okno dialogowe pojawia się, gdy edytowano kod podczas debugowania, a **Edycja i kontynuacja** uznaje, że można zastosować zmiany kodu. Aby uzyskać więcej informacji, zobacz [Edytuj i Kontynuuj](../debugger/edit-and-continue.md).
 
- **Nigdy nie pokazuj tego okna dialogowego ponownie** Jeśli zaznaczysz to pole wyboru **Edytuj i Kontynuuj** zastosuje zmiany kodu bez pytania o uprawnienia w przyszłości. Można włączyć tego ostrzeżenia ponownie, przechodząc do **opcje** okno dialogowe, otwierając **debugowanie** folderu, klikając **Edytuj i Kontynuuj** strony i wybierając **Wywoływane za pomocą poleceń debugowania** i **najpierw zapytaj mnie**.
+ **Nigdy nie pokazuj tego okna dialogowego ponownie** Jeśli zaznaczysz to pole wyboru, polecenie **Edytuj i Kontynuuj** zastosuje zmiany kodu bez pytania o zgodę w przyszłości. To ostrzeżenie można ponownie włączyć, przechodząc do okna dialogowego **Opcje** , otwierając folder **debugowanie** , klikając stronę **Edytuj i Kontynuuj** , a następnie wybierając polecenie **wywoływane przez polecenia debugowania** i **pytaj mnie jako pierwsze**.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Zabezpieczenia debugera](../debugger/debugger-security.md)
-- [Edytuj i Kontynuuj, debugowanie, opcje — Okno dialogowe](https://msdn.microsoft.com/library/bcew296c.aspx)
+- [Edytuj i Kontynuuj, debugowanie, Opcje — okno dialogowe](https://msdn.microsoft.com/library/bcew296c.aspx)

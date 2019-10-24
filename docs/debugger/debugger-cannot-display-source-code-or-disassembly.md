@@ -1,5 +1,5 @@
 ---
-title: Debuger nie może wyświetlić kodu źródłowego lub dezasemblacji
+title: Debuger nie może wyświetlić kodu źródłowego lub demontażu
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -16,27 +16,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ee3181bedc520f24840f1b16221ea21055bf698
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: d87de3034cb6cb8ba3364fa362eff1c27e6bae9d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211179"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738342"
 ---
 # <a name="debugger-cannot-display-source-code-or-disassembly"></a>Debuger nie może wyświetlić kodu źródłowego lub dezasemblacji
-Odczytuje ten błąd:
+Ten błąd odczytuje:
 
- Debuger nie może wyświetlić kodu źródłowego lub dezasemblacji dla bieżącej lokalizacji, w którym wykonywanie zostało zatrzymane.
+ Debuger nie może wyświetlić kodu źródłowego lub odasemblowania dla bieżącej lokalizacji, w której wykonywanie zostało zatrzymane.
 
  Ten komunikat o błędzie może wystąpić z kilku powodów:
 
-- Możesz przekroczyć punkt przerwania w lokalizacji, dla których nie ma żadnych kodu źródłowego podczas debugowania języka, który nie obsługuje dezasemblacji. Otwórz **punktów przerwania** oknie zlokalizować punkt przerwania i usuń go.
+- Być może osiągnięto punkt przerwania w lokalizacji, dla której nie ma kodu źródłowego, podczas debugowania języka, który nie obsługuje demontażu. Otwórz okno **punkty przerwania** , Znajdź punkt przerwania i usuń go.
 
-- Jeśli debugujesz skryptu możesz przekroczyć punkt przerwania podczas, gdy nie było żadnych wątków w programach. Wybierz **kroku** lub **Kontynuuj** z **debugowania** menu, aby wznowić debugowanie.
+- Jeśli debugujesz skrypt, być może osiągnięto punkt przerwania, gdy w programie nie było wątków. Wybierz pozycję **krok** lub **Kontynuuj** z menu **Debuguj** , aby wznowić debugowanie.
 
-- Zagadnienia dotyczące zabezpieczeń może uniemożliwić debugera na podstawie odczytu stosu, wątek, zarejestruj się i innymi informacjami kontekstu z programu, który debugujesz. Jest to najbardziej prawdopodobne w przypadku debugowania aplikacji sieci Web i nie mieć odpowiednich uprawnień dostępu do katalogu wirtualnego. Ustawienia zabezpieczeń katalogu wirtualnego na anonimowe i spróbuj ponownie.
+- Zagadnienia dotyczące zabezpieczeń mogły uniemożliwić odczytywanie informacji o stosie, wątkach, rejestrowaniu i innych kontekstach z debugowanego programu. Najprawdopodobniej dzieje się tak, jeśli debugujesz aplikację sieci Web i nie masz odpowiednich uprawnień, aby uzyskać dostęp do katalogu wirtualnego. Ustaw dla katalogu wirtualnego zabezpieczenia anonimowe i spróbuj ponownie.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Debugowanie w programie Visual Studio](../debugger/index.yml)
 - [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)
 - [Wyświetlanie danych w debugerze](../debugger/viewing-data-in-the-debugger.md)

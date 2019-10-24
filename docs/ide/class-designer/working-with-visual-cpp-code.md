@@ -1,15 +1,15 @@
 ---
-title: Praca z kodem Visual C++ (Projektant klas)
+title: Praca z C++ kodem (Projektant klas)
 ms.date: 06/21/2017
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.cpplimitation
 helpviewer_keywords:
-- Visual C++, Class Designer
-- Class Designer, Visual C++ support
+- C++, Class Designer
+- Class Designer, C++ support
 - Class Designer, limitations
-- Class Designer, tasks in Visual C++
-- Visual C++, class diagrams
+- Class Designer, tasks in C++
+- C++, class diagrams
 - C++, class diagrams
 - C++, Class Designer
 ms.assetid: f5b40921-2ef7-4de0-b595-45b44c79ffa6
@@ -18,14 +18,14 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b2252b5e6d8da9f81fbcca9b856222a3230cd080
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e59ee1305c0c482686505959aac7187902906086
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647571"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748894"
 ---
-# <a name="work-with-visual-c-code-in-class-designer"></a>Pracuj z kodem C++ wizualizacji w Projektant klas
+# <a name="work-with-c-code-in-class-designer"></a>Pracuj z C++ kodem w Projektant klas
 
 **Projektant klas** wyświetla wizualną powierzchnię projektową o nazwie *Diagram klas* , który zapewnia wizualną reprezentację elementów kodu w projekcie. Diagramów klas można używać do projektowania i wizualizacji klas i innych typów w projekcie.
 
@@ -56,7 +56,7 @@ ms.locfileid: "72647571"
 
 ### <a name="update-and-performance-issues"></a>Problemy z aktualizacją i wydajnością
 
-W przypadku C++ projektów wizualnych może upłynąć od 30 do 60 sekund, aby zmiana w pliku źródłowym była wyświetlana na diagramie klas. To opóźnienie może być również przyczyną **Projektant klas** zgłoszenia błędu **nie znaleziono żadnych typów w zaznaczeniu**. Jeśli wystąpi błąd, na przykład, kliknij przycisk **Anuluj** w komunikacie o błędzie i poczekaj na wyświetlenie elementu kodu w **Widok klasy**. Po wykonaniu tej czynności **Projektant klas** powinna być w stanie wyświetlić typ.
+W C++ przypadku projektów może upłynąć od 30 do 60 sekund, aby zmiana w pliku źródłowym była wyświetlana na diagramie klas. To opóźnienie może być również przyczyną **Projektant klas** zgłoszenia błędu **nie znaleziono żadnych typów w zaznaczeniu**. Jeśli wystąpi błąd, na przykład, kliknij przycisk **Anuluj** w komunikacie o błędzie i poczekaj na wyświetlenie elementu kodu w **Widok klasy**. Po wykonaniu tej czynności **Projektant klas** powinna być w stanie wyświetlić typ.
 
 Jeśli Diagram klas nie jest aktualizowany ze zmianami wprowadzonymi w kodzie, może być konieczne zamknięcie diagramu i otwarcie go ponownie.
 
@@ -88,11 +88,11 @@ Pomoc dotyczącą rozwiązywania problemów i ostrzeżeń można znaleźć w pub
 
 ## <a name="limitations-for-c-code-elements"></a>Ograniczenia dotyczące C++ elementów kodu
 
-- Po załadowaniu C++ projektu Visual **Projektant klas** funkcje w trybie tylko do odczytu. Można zmienić Diagram klas, ale nie można zapisać zmian z diagramu klas z powrotem do kodu źródłowego.
+- Po załadowaniu C++ projektu **Projektant klas** funkcje w sposób tylko do odczytu. Można zmienić Diagram klas, ale nie można zapisać zmian z diagramu klas z powrotem do kodu źródłowego.
 
-- **Projektant klas** obsługuje tylko semantykę natywną C++ . W przypadku C++ projektów wizualnych, które są kompilowane w kodzie zarządzanym, **Projektant klas** będzie wizualizować tylko elementy kodu, które są typami natywnymi. W związku z tym, można dodać Diagram klas do projektu, ale **Projektant klas** nie pozwoli na wizualizację elementów, w których właściwość `IsManaged` jest ustawiona na `true` (to jest, typy wartości i typy odwołań).
+- **Projektant klas** obsługuje tylko semantykę natywną C++ . W C++ przypadku projektów, które są kompilowane w kodzie zarządzanym, **Projektant klas** będzie wizualizować tylko elementy kodu, które są typami natywnymi. W związku z tym, można dodać Diagram klas do projektu, ale **Projektant klas** nie pozwoli na wizualizację elementów, w których właściwość `IsManaged` jest ustawiona na `true` (to jest, typy wartości i typy odwołań).
 
-- W przypadku C++ projektów wizualnych **Projektant klas** odczytuje tylko definicję typu. Załóżmy na przykład, że zdefiniujesz typ w pliku nagłówka (. h) i zdefiniujesz jego składowe w pliku implementacji (. cpp). Jeśli wywołasz polecenie "Wyświetl Diagram klas" w pliku implementacji (. cpp), **Projektant klas** nie wyświetla niczego. W innym przykładzie, jeśli wywołasz "Widok diagramu klas" w pliku. cpp, który używa instrukcji `#include`, aby uwzględnić inne pliki, ale nie zawiera żadnych rzeczywistych definicji klas, **Projektant klas** ponownie wyświetli niczego.
+- W C++ przypadku projektów **Projektant klas** odczytuje tylko definicję typu. Załóżmy na przykład, że zdefiniujesz typ w pliku nagłówka (. h) i zdefiniujesz jego składowe w pliku implementacji (. cpp). Jeśli wywołasz polecenie "Wyświetl Diagram klas" w pliku implementacji (. cpp), **Projektant klas** nie wyświetla niczego. W innym przykładzie, jeśli wywołasz "Widok diagramu klas" w pliku. cpp, który używa instrukcji `#include`, aby uwzględnić inne pliki, ale nie zawiera żadnych rzeczywistych definicji klas, **Projektant klas** ponownie wyświetli niczego.
 
 - Pliki IDL (. idl), które definiują interfejsy COM i biblioteki typów, nie są wyświetlane w diagramach, chyba że są C++ kompilowane do kodu natywnego.
 
@@ -112,7 +112,7 @@ Pomoc dotyczącą rozwiązywania problemów i ostrzeżeń można znaleźć w pub
 
 - [Projektowanie i wyświetlanie klas i typów](designing-and-viewing-classes-and-types.md)
 - [Dodatkowe informacje na temat błędów Projektanta klas](additional-information-about-errors.md)
-- [Klasy Visual C++ w Projektancie klas](visual-cpp-classes.md)
-- [Struktury Visual C++ w Projektancie klas](visual-cpp-structures.md)
-- [Wyliczenia Visual C++ w Projektancie klas](visual-cpp-enumerations.md)
-- [Definicje typów języka Visual C++ w Projektancie klas](visual-cpp-typedefs.md)
+- [C++Klasy w Projektant klas](visual-cpp-classes.md)
+- [C++Struktury w Projektant klas](visual-cpp-structures.md)
+- [C++Wyliczenia w Projektant klas](visual-cpp-enumerations.md)
+- [C++Definicje typów w Projektant klas](visual-cpp-typedefs.md)

@@ -1,5 +1,5 @@
 ---
-title: Idiastackframe::get_returnaddress — | Dokumentacja firmy Microsoft
+title: 'IDiaStackFrame:: get_returnAddress | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5c81f1c8ee49600dacfd5d725188306d5cae2a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5312eb455de8ce187bf4ae2acc2fc5b4b57a07bc
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838275"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741603"
 ---
-# <a name="idiastackframegetreturnaddress"></a>IDiaStackFrame::get_returnAddress
+# <a name="idiastackframeget_returnaddress"></a>IDiaStackFrame::get_returnAddress
 Pobiera adres zwrotny ramki.
 
 ## <a name="syntax"></a>Składnia
@@ -33,10 +33,10 @@ HRESULT get_returnAddress ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca adres zwrotny ramki.
+określoną Zwraca adres zwrotny ramki.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`. Zwraca `S_FALSE`, jeśli właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

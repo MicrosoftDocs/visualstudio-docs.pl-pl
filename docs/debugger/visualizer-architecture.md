@@ -1,5 +1,5 @@
 ---
-title: Architektura wizualizatora | Dokumentacja firmy Microsoft
+title: Architektura wizualizatora | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,81 +13,81 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3064f387c0a6233b1cd38c4ed81680ef7991abd4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5c92723a1b6abb371b44f1793f9ea5b1f8ad3bca
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62901156"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72728478"
 ---
 # <a name="visualizer-architecture"></a>Architektura wizualizatora
-Architektura wizualizatora debuger ma dwie części:
+Architektura wizualizatora debugera ma dwie części:
 
-- *Debugera po stronie* jest uruchamiany w ramach debugera programu Visual Studio. Kod po stronie debugera tworzy i wyświetla interfejsu użytkownika dla usługi wizualizatora.
+- *Strona debugera* działa w debugerze programu Visual Studio. Kod po stronie debugera tworzy i wyświetla interfejs użytkownika wizualizatora.
 
-- *Po stronie debugowanego obiektu* jest uruchamiany w ramach procesu programu Visual Studio debuguje ( *obiekt debugowany*).
+- *Po stronie debugowanego obiektu* w procesie programu Visual Studio jest debugowane ( *debugowanego obiektu*).
 
-  Wizualizatora jest składnikiem debugera, które umożliwiają debugerowi wyświetlić (*wizualizować*) zawartości obiektu danych w postaci zrozumiałe i zrozumiałej. Niektóre wizualizatorów obsługuje także edytować obiekt danych. Pisząc wizualizatory niestandardowe, można rozszerzyć debuger mógł obsłużyć własne niestandardowe typy danych.
+  Wizualizator to składnik debugera, który umożliwia debugerowi wyświetlanie (*wizualizowanie*) zawartości obiektu danych w zrozumiałej, zrozumiałej postaci. Niektóre Wizualizatory obsługują również Edytowanie obiektu danych. Pisząc niestandardowe wizualizacje, możesz rozwinąć debuger, aby obsługiwał własne niestandardowe typy danych.
 
-  Obiekt danych, aby być wizualizowane znajduje się w debugowanym procesie ( *obiekt debugowany* procesu). Interfejs użytkownika, który spowoduje wyświetlenie danych jest tworzony w ramach procesu debugera programu Visual Studio:
+  Obiekt danych do wizualizacji znajduje się w debugowanym procesie (proces *debugowanego obiektu* ). Interfejs użytkownika, który będzie wyświetlał dane, zostanie utworzony w ramach procesu debugera programu Visual Studio:
 
-|Proces w debugerze|Obiekt debugowany proces|
+|Proces debugera|Proces debugowanego obiektu|
 |----------------------|----------------------|
-|Interfejs użytkownika (DataTips, okno czujki QuickWatch) debugera|Można wywołać obiektu danych|
+|Debuger interfejsu użytkownika (etykietki danych, okno czujki, QuickWatch)|Obiekt danych do wizualizacji|
 
- Aby zwizualizować obiekt danych w ramach interfejsu debugera, należy kodu do komunikowania się między dwoma procesami. W związku z tym, architektura wizualizatora składa się z dwóch części: *debugera po stronie* kodu i *po stronie debugowanego obiektu* kodu.
+ Aby wizualizować obiekt danych w interfejsie debugera, potrzebny jest kod do komunikacji między dwoma procesami. W związku z tym Architektura wizualizatora składa się z dwóch części: kodu *bocznego debugera* i kodu *po stronie debugowanego obiektu* .
 
- Kod po stronie debuger umożliwia utworzenie własnego interfejsu użytkownika, który może być wywoływany przy użyciu interfejsu debugera, takie jak etykietki danych, okno czujki lub QuickWatch. Interfejs Wizualizator jest tworzona przy użyciu <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer> klasy i <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService> interfejsu. Tak jak wszystkie interfejsy API wizualizatora, DialogDebuggerVisualizer i IDialogVisualizerService znajdują się w <xref:Microsoft.VisualStudio.DebuggerVisualizers> przestrzeni nazw.
+ Kod po stronie debugera tworzy własny interfejs użytkownika, który może być wywoływany z interfejsu debugera, takiego jak etykietki danych, okno czujki lub QuickWatch. Interfejs wizualizatora jest tworzony przy użyciu klasy <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer> i interfejsu <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService>. Podobnie jak wszystkie interfejsy API wizualizatora, DialogDebuggerVisualizer i IDialogVisualizerService znajdują się w przestrzeni nazw <xref:Microsoft.VisualStudio.DebuggerVisualizers>.
 
-|Po stronie debugera|Po stronie debugowanego obiektu|
+|Strona debugera|Debugowanego obiektu|
 |-------------------|-------------------|
-|Klasa DialogDebuggerVisualizer<br /><br /> Interfejs IDialogVisualizerService|Obiekt danych|
+|Klasa DialogDebuggerVisualizer<br /><br /> IDialogVisualizerService, interfejs|Obiekt danych|
 
- Interfejs użytkownika pobiera dane, które mają być wizualizowane od dostawcy obiektu, który znajduje się na stronie debugera:
+ Interfejs użytkownika pobiera dane do wizualizacji od dostawcy obiektów, który istnieje po stronie debugera:
 
-|Po stronie debugera|Po stronie debugowanego obiektu|
+|Strona debugera|Debugowanego obiektu|
 |-------------------|-------------------|
-|Klasa DialogDebuggerVisualizer<br /><br /> Interfejs IDialogVisualizerService|Obiekt danych|
-|Obiekt dostawcy (implementuje <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider>)||
+|Klasa DialogDebuggerVisualizer<br /><br /> IDialogVisualizerService, interfejs|Obiekt danych|
+|Dostawca obiektów (implementuje <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider>)||
 
- Brak odpowiedniego obiektu po stronie debugowanego obiektu o nazwie źródła obiektu:
+ Po stronie debugowanego obiektu o nazwie źródło obiektu istnieje odpowiedni obiekt:
 
-|Po stronie debugera|Po stronie debugowanego obiektu|
+|Strona debugera|Debugowanego obiektu|
 |-------------------|-------------------|
-|Klasa DialogDebuggerVisualizer<br /><br /> Interfejs IDialogVisualizerService|Obiekt danych|
-|Obiekt dostawcy (implementuje <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider>)|Obiekt źródłowy (pochodną <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>)|
+|Klasa DialogDebuggerVisualizer<br /><br /> IDialogVisualizerService, interfejs|Obiekt danych|
+|Dostawca obiektów (implementuje <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider>)|Źródło obiektu (pochodzące z <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>)|
 
- Dostawca obiektu udostępnia dane obiektu, który ma być wizualizowane do Wizualizator interfejsu użytkownika. Dostawca obiekt otrzymuje dane obiektu ze źródła obiektu. Obiekt dostawcy i źródła obiektu zapewniają interfejsy API w celu przekazywania danych obiektu między po stronie debugera i debugee.
+ Dostawca obiektów udostępnia dane obiektów, które mają być wizualizacje w interfejsie użytkownika wizualizatora. Dostawca obiektów pobiera dane obiektu ze źródła obiektu. Dostawca obiektów i źródło obiektów zapewniają interfejsy API do przekazywania danych obiektu między stroną debugera a stroną debugee.
 
- Wizualizator co należy uzyskać obiekt danych, aby być wizualizowane. W poniższej tabeli przedstawiono odpowiednie interfejsy API, w tym celu użyć obiektu dostawcy i źródła obiektu:
+ Każdy wizualizator musi pobrać obiekt danych do wizualizacji. W poniższej tabeli przedstawiono interfejsy API odpowiednie do użycia przez dostawcę obiektów i źródło obiektów:
 
-|Obiekt dostawcy|Źródło obiektu|
+|Dostawca obiektów|Źródło obiektu|
 |---------------------|-------------------|
 |<xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A><br /><br /> —lub—<br /><br /> <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetObject%2A>|<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.GetData%2A>|
 
- Zwróć uwagę, dostawcy obiektów można użyć dowolnego <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A> lub <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetObject%2A>. Albo interfejsu API powoduje wywołanie <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.GetData%2A> źródła obiektu. Wywołanie <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.GetData%2A?displayProperty=fullName> wypełnia <xref:System.IO.Stream?displayProperty=fullName>, która reprezentuje serializowane postaci obiekt, który jest wizualizowanego.
+ Zwróć uwagę, że dostawca obiektów może używać obu <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A> lub <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetObject%2A>. Interfejs API powoduje wywołanie <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.GetData%2A> w źródle obiektu. Wywołanie <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.GetData%2A?displayProperty=fullName> wypełnia <xref:System.IO.Stream?displayProperty=fullName>, który reprezentuje serializowaną postać wizualizacji obiektu.
 
- <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetObject%2A?displayProperty=fullName> deserializuje dane z powrotem do obiektu formularza, który następnie można wyświetlić w interfejsie użytkownika, możesz utworzyć przy użyciu <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>. <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A?displayProperty=fullName> wypełnia dane pierwotne `Stream`, które należy wykonać deserializacji samodzielnie. <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetObject%2A?displayProperty=fullName> działa przez wywołanie metody <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A?displayProperty=fullName> można pobrać Zserializowany `Stream`, a następnie deserializacji danych. Użyj <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A?displayProperty=fullName> gdy obiekt jest niemożliwa, .NET i wymaga niestandardowej serializacji. W takim przypadku konieczne jest również przesłonięcie <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.Serialize%2A?displayProperty=fullName> metody.
+ <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetObject%2A?displayProperty=fullName> deserializacji danych z powrotem do formularza obiektu, który można następnie wyświetlić w interfejsie użytkownika utworzonym przy użyciu <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>. <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A?displayProperty=fullName> wypełnia dane jako pierwotne `Stream`, które należy zdeserializować samodzielnie. <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetObject%2A?displayProperty=fullName> działa przez wywoływanie <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A?displayProperty=fullName> w celu uzyskania serializowanych `Stream`, a następnie deserializacji danych. Użyj <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A?displayProperty=fullName>, gdy obiekt nie jest możliwy do serializacji przez platformę .NET i wymaga serializacji niestandardowej. W takim przypadku należy również zastąpić metodę <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.Serialize%2A?displayProperty=fullName>.
 
- Jeśli tworzysz Wizualizator tylko do odczytu, komunikacja jednokierunkowa przy użyciu <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A> lub <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetObject%2A> jest wystarczająca. Jeśli tworzysz visualizer, który obsługuje edycji obiektów danych, należy wykonać więcej. Musi umożliwiać odesłania obiektu danych od dostawcy obiektu do źródłowego obiektu również. W poniższej tabeli przedstawiono dostawcy obiektów i interfejsów API źródła obiektu do tego celu:
+ Jeśli tworzysz wizualizator tylko do odczytu, wystarczy jednokierunkową komunikację z <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A> lub <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetObject%2A>. Jeśli tworzysz wizualizator, który obsługuje edytowanie obiektów danych, musisz wykonać więcej czynności. Musisz być w stanie wysłać obiekt danych z dostawcy obiektów z powrotem do źródła obiektu. W poniższej tabeli przedstawiono dostawcę obiektów i interfejsy API źródła obiektów używane w tym celu:
 
-|Obiekt dostawcy|Źródło obiektu|
+|Dostawca obiektów|Źródło obiektu|
 |---------------------|-------------------|
 |<xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.ReplaceData%2A><br /><br /> —lub—<br /><br /> <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.ReplaceObject%2A>|<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.CreateReplacementObject%2A>|
 
- Zwróć uwagę, ponownie, że istnieją dwa interfejsy API, których można użyć dostawcy obiektów. Dane są zawsze wysyłane z dostawcy obiektów do źródła obiektu jako `Stream`, ale <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.ReplaceData%2A> wymaga, że serializacji obiektu do `Stream` samodzielnie.
+ Zwróć uwagę, że istnieją dwa interfejsy API, z których może korzystać dostawca obiektów. Dane są zawsze wysyłane z dostawcy obiektów do źródła obiektu jako `Stream`, ale <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.ReplaceData%2A> wymaga serializacji obiektu do `Stream` samodzielnie.
 
- <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.ReplaceObject%2A> pobiera obiekt, który podasz, serializuje do `Stream`, następnie wywołuje <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.ReplaceData%2A> wysyłać `Stream` do <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.CreateReplacementObject%2A>.
+ <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.ReplaceObject%2A> pobiera obiekt, który jest udostępniany, serializować go do `Stream`, a następnie wywołuje <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.ReplaceData%2A> w celu wysłania `Stream` do <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.CreateReplacementObject%2A>.
 
- Przy użyciu jednej z metod Zastąp tworzy nowy obiekt danych w debugowanym obiekcie, który zastępuje wizualizowanego obiektu. Jeśli chcesz zmienić zawartość oryginalnego obiektu bez zastąpienia, użyj jednej z metod transferu, pokazano w poniższej tabeli. Te interfejsy API transferu danych w obu kierunkach w tym samym czasie, bez zastępowania obiektu, który jest wizualizowanego:
+ Użycie jednej z metod zamiany powoduje utworzenie nowego obiektu danych w debugowanego obiektu, który zastępuje wizualizację obiektu. Jeśli chcesz zmienić zawartość oryginalnego obiektu bez zastępowania, użyj jednej z metod transferu przedstawionych w poniższej tabeli. Te interfejsy API przesyłają dane w obu kierunkach w tym samym czasie, bez zastępowania obiektu, który jest wizualizacją:
 
-|Obiekt dostawcy|Źródło obiektu|
+|Dostawca obiektów|Źródło obiektu|
 |---------------------|-------------------|
 |<xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.TransferData%2A><br /><br /> —lub—<br /><br /> <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.TransferObject%2A>|<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.TransferData%2A>|
 
-## <a name="see-also"></a>Zobacz też
-- [Instrukcje: Pisanie wizualizatora](/visualstudio/debugger/create-custom-visualizers-of-data)
-- [Przewodnik: Pisanie wizualizatora w języku C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
-- [Przewodnik: Pisanie wizualizatora w języku Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)
-- [Przewodnik: Pisanie wizualizatora w języku Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)
+## <a name="see-also"></a>Zobacz także
+- [Instrukcje: pisanie wizualizatora](/visualstudio/debugger/create-custom-visualizers-of-data)
+- [Przewodnik: pisanie wizualizatora w języku C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
+- [Przewodnik: pisanie wizualizatora w języku Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)
+- [Przewodnik: pisanie wizualizatora w języku Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)
 - [Zagadnienia dotyczące zabezpieczeń wizualizatora](../debugger/visualizer-security-considerations.md)

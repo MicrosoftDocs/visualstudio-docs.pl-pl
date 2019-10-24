@@ -1,5 +1,5 @@
 ---
-title: Zapisywanie niestandardowego dokumentu | Dokumentacja firmy Microsoft
+title: Zapisywanie dokumentu niestandardowego | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,35 +12,35 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b90938e44b4227f8aad43542fc99136745a8af4e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cf67335b6a12b966eb148b3f8dcaf16339e2a29f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318741"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72724085"
 ---
 # <a name="saving-a-custom-document"></a>Zapisywanie niestandardowego dokumentu
-Obsługuje środowisko **Zapisz**, **Zapisz jako**, i **Zapisz wszystko** poleceń. Kiedy użytkownik kliknie **Zapisz**, **Zapisz jako**, **lub Zapisz wszystko** na **pliku** menu lub zamyka rozwiązania skutkuje Zapisz wszystko, następujące proces.
+Środowisko obsługuje polecenia **Zapisz**, **Zapisz jako**i **Zapisz wszystkie** . Gdy użytkownik kliknie pozycję **Zapisz**, **Zapisz jako** **lub Zapisz wszystko** w menu **plik** lub zamknie rozwiązanie, co spowoduje wystąpienie poniższego procesu.
 
- ![Zapisywanie w edytorze niestandardowym](../../extensibility/internals/media/private.gif "prywatnej") Zapisz, Zapisz jako i Zapisz wszystkie obsługi poleceń dla niestandardowego edytora
+ ![Zapisywanie w edytorze klienta](../../extensibility/internals/media/private.gif "Private") Zapisz, Zapisz jako i Zapisz całą obsługę poleceń dla edytora niestandardowego
 
- Ten proces opisano szczegółowo w poniższych krokach:
+ Ten proces jest szczegółowo opisany w następujących krokach:
 
-1. Dla **Zapisz** i **Zapisz jako** poleceń, używa środowiska <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> service, aby ustalić aktywne okno dokumentu i w ten sposób elementy powinny być zapisywane. Gdy aktywne okno dokumentu jest znany, środowiska znajduje wskaźnik hierarchii i identyfikator elementu (identyfikator elementu) dla dokumentów w uruchomionej tabeli dokumentu. Aby uzyskać więcej informacji, zobacz [uruchamianie tabeli dokumentu](../../extensibility/internals/running-document-table.md).
+1. W przypadku poleceń **Zapisz** i **Zapisz jako** środowisko używa usługi <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>, aby określić okno aktywnego dokumentu, a tym samym elementy, które mają zostać zapisane. Po znalezieniu okna aktywnego dokumentu środowisko odnajdzie wskaźnik hierarchii i identyfikator elementu (itemID) dla dokumentu w uruchomionej tabeli dokumentów. Aby uzyskać więcej informacji, zobacz [Uruchamianie tabeli dokumentów](../../extensibility/internals/running-document-table.md).
 
-     Zapisz wszystkie polecenia środowiska używa tych informacji w uruchomionej tabeli dokumentu do kompilacji listę wszystkich elementów do zapisania.
+     W przypadku polecenia Zapisz wszystko środowisko używa informacji w uruchomionej tabeli dokumentu do skompilowania listy wszystkich elementów do zapisania.
 
-2. Po odebraniu rozwiązania <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> wywołania iteruje zbiór wybranych elementów (czyli udostępnianych przez wiele zaznaczeń <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> usługi).
+2. Gdy rozwiązanie odbiera wywołanie <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>, przechodzi przez zestaw wybranych elementów (to znaczy wybór wielokrotny uwidoczniony przez usługę <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>).
 
-3. Dla każdego elementu w zaznaczeniu odbywa się za wskaźnik hierarchii wywołań <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IsItemDirty%2A> metodę pozwala ustalić, czy polecenie menu Zapisz powinien być włączony. Jeśli co najmniej jeden element jest zanieczyszczony, polecenie Zapisz jest włączone. Jeśli hierarchia używa standardowy edytor, następnie delegatów hierarchii, wykonanie zapytania dotyczącego zakłóconych stanu do edytora, wywołując <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.IsDocDataDirty%2A> metody.
+3. Dla każdego elementu w zaznaczeniu, rozwiązanie używa wskaźnika hierarchii do wywołania metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IsItemDirty%2A>, aby określić, czy polecenie Zapisz menu powinno być włączone. Jeśli co najmniej jeden element jest zanieczyszczony, polecenie Zapisz jest włączone. Jeśli hierarchia używa edytora standardowego, wówczas obiekt delegowany tworzy zapytania o zmieniony stan do edytora przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.IsDocDataDirty%2A>.
 
-4. Dla każdego wybranego elementu, który został zmieniony, odbywa się za wskaźnik hierarchii wywołań <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A> metody w odpowiedniej hierarchii.
+4. Dla każdego wybranego elementu, który jest zanieczyszczony, rozwiązanie używa wskaźnika hierarchii do wywołania metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A> w odpowiednich hierarchiach.
 
-     W przypadku niestandardowego edytora komunikacji między obiektem danych dokumentów i projektu jest prywatny. W efekcie wszelkie problemy dotyczące trwałości specjalne są obsługiwane między tymi dwoma obiektami.
+     W przypadku edytora niestandardowego komunikacja między obiektem danych dokumentu a projektem jest prywatna. W ten sposób wszystkie szczególne problemy związane z trwałością są obsługiwane między tymi dwoma obiektami.
 
     > [!NOTE]
-    > W przypadku zastosowania własne trwałości, pamiętaj wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A> metodę, aby zaoszczędzić czas. Ta metoda sprawdza się upewnić, że jest bezpieczne zapisać plik (na przykład plik nie jest tylko do odczytu).
+    > W przypadku zaimplementowania własnej trwałości upewnij się, że Wywołaj metodę <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A>, aby zaoszczędzić czas. Ta metoda sprawdza, czy można bezpiecznie zapisać plik (na przykład plik nie jest tylko do odczytu).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
 - [Otwieranie i zapisywanie elementów projektu](../../extensibility/internals/opening-and-saving-project-items.md)

@@ -1,5 +1,5 @@
 ---
-title: Omówienie okna właściwości | Dokumentacja firmy Microsoft
+title: Przegląd okna właściwości | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,44 +10,44 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05c772365c42037bfd97a2a31b80efc2f5f1a48b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 61887844e06a88cab9eaa8ca8be7a89c124e2340
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347813"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72725083"
 ---
 # <a name="properties-window-overview"></a>Omówienie okna właściwości
-**Właściwości** okno służy do wyświetlania właściwości obiektów wybranych w dwa główne typy dostępnych w systemie windows [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowanego środowiska programistycznego (IDE). Te dwa rodzaje systemu windows są:
+Okno **Właściwości** służy do wyświetlania właściwości obiektów wybranych w dwóch głównych typach systemu Windows dostępnych w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowanym środowisku programistycznym (IDE). Te dwa typy okien są następujące:
 
-- Okna narzędzi, takich jak przeglądarki w Eksploratorze rozwiązań, widoku klas i obiektów
+- Okna narzędzi, takie jak Eksplorator rozwiązań, Widok klasy i Przeglądarka obiektów
 
-- Okna dokumentów zawierających takie edytorach i projektantach jako projektant formularzy, edytora XML i edytora HTML
+- Okna dokumentów zawierające takie redaktorzy i projektanci jak Projektant formularzy, Edytor XML i Edytor HTML
 
-## <a name="using-the-properties-window"></a>W oknie właściwości
- **Właściwości** oknie zostaną wyświetlone właściwości jednego lub wielu wybranych elementów. Jeśli zaznaczono wiele elementów jest wyświetlany przecięcia wszystkie właściwości dla wszystkich wybranych obiektów.
+## <a name="using-the-properties-window"></a>Korzystanie z okna właściwości
+ W oknie **Właściwości** są wyświetlane właściwości jednego lub wielu zaznaczonych elementów. Jeśli wybrano wiele elementów, zostanie wyświetlona część wspólna wszystkich właściwości dla wszystkich wybranych obiektów.
 
- Zdarzenia związane z wybranym obiektem w oknie projektowania formularza lub edytora HTML przy użyciu metadanych modelu COM + są wyświetlane w **właściwości** okna. Na przykład, można wybrać przycisk i wyświetlić jego skojarzonego zdarzenia, takie jak `OnClick` zdarzenie, które mogą być połączone z tego przycisku.
+ Zdarzenia związane z wybranym obiektem w oknie Projekt formularza lub edytorem HTML przy użyciu metadanych modelu COM+ są wyświetlane w oknie **Właściwości** . Na przykład można wybrać przycisk i wyświetlić skojarzone z nim zdarzenia, takie jak zdarzenie `OnClick`, które można połączyć z tym przyciskiem.
 
- Zdarzenia wyświetlane w **właściwości** okna są używane przede wszystkim z obiektami, które są powiązane z kodu. Jeśli edytujesz format pliku, który nie ma nic wspólnego z kodu nie będą mieć żadnych zdarzeń. Zdarzenia są wyświetlane tylko w **właściwości** okna, jeśli jest powiązaniem między systemem kodu i określonych zdarzeń skojarzone z określonymi obiektami. Na przykład będzie kod związany z wybranego obiektu, który jest wykonywany, gdy ten obiekt jest aktywny.
+ Zdarzenia wyświetlane w oknie **Właściwości** są używane głównie z obiektami, które są powiązane z kodem. Jeśli edytujesz format pliku, który nie ma niczego do wykonania przy użyciu kodu, nie będziesz mieć żadnych zdarzeń. Zdarzenia są wyświetlane w oknie **Właściwości** tylko wtedy, gdy istnieje powiązanie między uruchomionym kodem a określonymi zdarzeniami związanymi z konkretnymi obiektami. Przykładem może być kod związany z wybranym obiektem, który jest wykonywany po aktywowaniu tego obiektu.
 
- W poniższej tabeli wymieniono podstawowe interfejsy używane przez **właściwości** okna.
+ W poniższej tabeli wymieniono podstawowe interfejsy używane przez okno **Właściwości** .
 
 |Nazwa interfejsu|Opis|
 |--------------------|-----------------|
-|<xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties>|Zawiera listę kategorii, aby **właściwości** okna i mapuje każdej właściwości w kategorii.|
-|[IDispatch — interfejs](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch)|Udostępnia metody i właściwości do programowania, narzędzia i inne aplikacje obsługujące automatyzację obiektu.|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IProvidePropertyBuilder>|Zawiera przyciski wielokropek (...) o nazwie *Konstruktorzy* , Otwórz program windows modalne okno dialogowe implementowany przez sam obiekt. Używane, gdy wartość nie jest łatwo wpisana przez użytkownika w polu tekstowym. Na przykład może być używane otworzyć selektor kolorów, który określa wartość RGB dla Ciebie.|
-|<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>|Zapewnia dostęp do obiektów używane do aktualizowania informacji wyświetlanych w **właściwości** okna. <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> jest implementowana przez pakietów VSPackage dla każdego okna, który zawiera obiekty można wybierać z powiązanych właściwości, które mają być wyświetlane.|
-|<xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo>|Zawiera informacje o typie obiektu, takiego jak metody interfejsu i pola struktury.|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>|Umożliwia pakietów VSPackage do otrzymywania powiadomień o zdarzeniach wybór i pobrać informacje o bieżącej hierarchii projektu, element, wartość elementu i kontekstu interfejsu użytkownika polecenia.|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsMultiItemSelect>|Zapewnia środowisko z dostępem do wielokrotny wybór.|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing>|Używane do zapewnienia zlokalizowanych nazw na niektórych właściwości wyświetlane w **właściwości** okna.|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents>|Powiadamia zarejestrowanych pakietów VSPackage zmian w bieżącym zaznaczeniu, wartość elementu lub kontekstu interfejsu użytkownika polecenia.|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx>|Powiadamia środowiska zmiany w bieżącym zaznaczeniu i zapewnia dostęp do informacji o hierarchii i elementów odnoszących się do wyboru nowego.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties>|Zawiera listę kategorii w oknie **Właściwości** i mapuje każdą właściwość na kategorię.|
+|[Interfejs IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch)|Uwidacznia metody i właściwości obiektu dla narzędzi programistycznych i innych aplikacji, które obsługują automatyzację.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IProvidePropertyBuilder>|Zawiera przyciski wielokropka (...) o nazwie *konstruktory* otwierające modalne okna dialogowe systemu Windows zaimplementowane przez sam obiekt. Używane, gdy wartość nie jest łatwo wpisywana przez użytkownika w polu tekstowym. Na przykład może służyć do otwierania selektora kolorów, który określa wartość RGB.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>|Zapewnia dostęp do obiektów używanych do aktualizowania informacji wyświetlanych w oknie **Właściwości** . <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> jest implementowana przez pakietów VSPackage dla każdego okna, które zawiera obiekty możliwe do wybrania z powiązanymi właściwościami do wyświetlenia.|
+|<xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo>|Zawiera informacje na temat typu obiektu, takiego jak metody interfejsu i pola struktury.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>|Umożliwia pakietów VSPackage otrzymywanie powiadomień o zdarzeniach wyboru i pobieranie informacji o bieżącej hierarchii projektu, elemencie, wartości elementu i kontekście interfejsu użytkownika poleceń.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsMultiItemSelect>|Zapewnia środowisko z dostępem do wielu zaznaczeń.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing>|Służy do udostępniania zlokalizowanych nazw na niektórych właściwościach wyświetlanych w oknie **Właściwości** .|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents>|Powiadamia zarejestrowane pakietów VSPackage o zmianach w bieżącym zaznaczeniu, wartości elementu lub kontekście interfejsu użytkownika poleceń.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx>|Powiadamia środowisko o zmianie w bieżącym zaznaczeniu i zapewnia dostęp do hierarchii i informacji o elemencie odnoszących się do nowego zaznaczenia.|
 
- Więcej informacji na temat `IDispatch`, zobacz: Biblioteka MSDN.
+ Więcej informacji o `IDispatch` można znaleźć w bibliotece MSDN.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Rozszerzanie właściwości](../../extensibility/internals/extending-properties.md)
 - [Pola i interfejsy okna właściwości](../../extensibility/internals/properties-window-fields-and-interfaces.md)

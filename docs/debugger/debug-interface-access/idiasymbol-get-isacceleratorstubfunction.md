@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_isAcceleratorStubFunction | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_isAcceleratorStubFunction | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbcfbfcd1e95a45388d0b7c0626f1cd529607ce4
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: baf71d3be8916c18b16e4022a2af884617b5fd70
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62836632"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740305"
 ---
-# <a name="idiasymbolgetisacceleratorstubfunction"></a>IDiaSymbol::get_isAcceleratorStubFunction
-Wskazuje, czy symbol odpowiada symbolowi funkcji najwyższego poziomu do programu do cieniowania, skompilowane dla akceleratora, który odpowiada `parallel_for_each` wywołania.
+# <a name="idiasymbolget_isacceleratorstubfunction"></a>IDiaSymbol::get_isAcceleratorStubFunction
+Wskazuje, czy symbol odnosi się do symbolu funkcji najwyższego poziomu dla modułu cieniującego skompilowanego dla akceleratora, który odnosi się do wywołania `parallel_for_each`.
 
 ## <a name="syntax"></a>Składnia
 
@@ -30,10 +30,10 @@ HRESULT get_isAcceleratorStubFunction(
 #### <a name="parameters"></a>Parametry
  `pFlag`
 
-[out] Wskaźnik do `BOOL` oznacza to, czy symbol odpowiada symbolowi funkcji najwyższego poziomu do programu do cieniowania, skompilowane dla akceleratora, który odpowiada `parallel_for_each` wywołania.
+określoną Wskaźnik do `BOOL`, który wskazuje, czy symbol odpowiada symbolowi funkcji najwyższego poziomu dla modułu cieniującego skompilowanego dla akceleratora, który odnosi się do `parallel_for_each` wywołania.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

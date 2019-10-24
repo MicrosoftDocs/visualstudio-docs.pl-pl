@@ -1,5 +1,5 @@
 ---
-title: Idiaenumsegments::Next — | Dokumentacja firmy Microsoft
+title: 'IDiaEnumSegments:: Next | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9b0f0d06ae5303277c296fd56e36e60b9a6f022
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 34062b654cbaccec053c5ac50bfb041d37a0f4e6
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829644"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744188"
 ---
 # <a name="idiaenumsegmentsnext"></a>IDiaEnumSegments::Next
-Pobiera określoną liczbę segmentów w kolejności wyliczenia.
+Pobiera określoną liczbę segmentów w sekwencji wyliczenia.
 
 ## <a name="syntax"></a>Składnia
 
@@ -35,19 +35,19 @@ HRESULT Next ( 
 #### <a name="parameters"></a>Parametry
  celt
 
-[in] Liczba segmentów w modułu wyliczającego do pobrania.
+podczas Liczba segmentów w module wyliczającym do pobrania.
 
  rgelt
 
-[out] Tablica, która ma być wypełnione z żądaną [idiasegment —](../../debugger/debug-interface-access/idiasegment.md) obiekty reprezentujące segmenty.
+określoną Tablica, która ma zostać wypełniona przy użyciu żądanych obiektów [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) , które reprezentują segmenty.
 
  pceltFetched
 
-[out] Zwraca liczbę segmentów w pobrano modułu wyliczającego.
+określoną Zwraca liczbę segmentów z pobranego modułu wyliczającego.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli nie ma żadnych więcej segmentów. W przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`. Zwraca `S_FALSE`, jeśli nie ma więcej segmentów. W przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)
 - [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

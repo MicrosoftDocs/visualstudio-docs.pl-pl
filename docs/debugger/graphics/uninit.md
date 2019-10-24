@@ -1,5 +1,5 @@
 ---
-title: UnInit | Microsoft Docs
+title: Odinicjuj inicjowanie | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 4cd4fc0b-974a-4e61-9ea8-0aaa1a0c52ea
@@ -8,15 +8,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8165b2e1993a6ea52127536a058f662e1a3d92cc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ef809b646a0af58e46b8c68dc5a8cf7633692bcc
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62848720"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72734819"
 ---
 # <a name="uninit"></a>UnInit
-Kończenie znajdujących się w pliku dziennika grafiki, a następnie zamyka i zwalnia zasoby, które były używane podczas, gdy aplikacja została aktywnie rejestrowanie informacji graficznych.
+Kończy plik dziennika grafiki, zamyka go i zwalnia zasoby, które były używane podczas aktywnie rejestrowania informacji graficznych przez aplikację.
 
 ## <a name="syntax"></a>Składnia
 
@@ -25,9 +25,9 @@ void UnInit();
 ```
 
 ## <a name="remarks"></a>Uwagi
- `UnInit` jest wywoływana automatycznie, gdy wystąpienie `VsgDbg` klasa jest niszczona. Jeśli `VsgDbg` wystąpienia nie została aktywnie rejestrowanie informacji graficznych, nie ma to wpływu.
+ `UnInit` jest wywoływana automatycznie, gdy wystąpienie klasy `VsgDbg` jest niszczone. Jeśli wystąpienie `VsgDbg` nie było aktywnie rejestrować informacji graficznych, nie ma to żadnego efektu.
 
- Po `UnInit` została wywołana w wystąpieniu `VsgDbg` klasy grafiki nowy plik dziennika można utworzyć przez wywołanie metody `Init` i opracowane przez wywołanie `UnInit`. To można powtarzać dowolną liczbę razy używać tego samego `VsgDbg` wystąpienia, aby utworzyć kilka niezależnych grafiki pliki dziennika.
+ Po wywołaniu `UnInit` na wystąpieniu klasy `VsgDbg` można utworzyć nowy plik dziennika grafiki, wywołując `Init` i finaljąc wywołując `UnInit`. Możesz powtórzyć tyle razy, ile chcesz użyć tego samego wystąpienia `VsgDbg`, aby utworzyć kilka niezależnych plików dziennika grafiki.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Init](init.md)

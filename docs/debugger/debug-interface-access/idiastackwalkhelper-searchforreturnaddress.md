@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalkHelper::searchForReturnAddress | Dokumentacja firmy Microsoft
+title: 'IDiaStackWalkHelper:: Searchforreturnaddress — | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87518257d9cab91976f69dd03c9026b0800a0680
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 548475f45c9f7b0ec90e305e146b9c5f7b4fb20d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62837904"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741342"
 ---
 # <a name="idiastackwalkhelpersearchforreturnaddress"></a>IDiaStackWalkHelper::searchForReturnAddress
-Wyszukuje ramki określonego stosu, dla najbliższej adres zwrotny funkcji.
+Przeszukuje określoną ramkę stosu dla najbliższego adresu zwrotnego funkcji.
 
 ## <a name="syntax"></a>Składnia
 
@@ -34,15 +34,15 @@ HRESULT searchForReturnAddress( 
 #### <a name="parameters"></a>Parametry
  `frame`
 
-[in] [Idiaframedata —](../../debugger/debug-interface-access/idiaframedata.md) obiekt, który reprezentuje bieżącą ramkę stosu.
+podczas Obiekt [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) , który reprezentuje bieżącą ramkę stosu.
 
  `returnAddress`
 
-[out] Zwraca najbliższej adres zwrotny funkcji.
+określoną Zwraca najbliższy zwrotny adres funkcji.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

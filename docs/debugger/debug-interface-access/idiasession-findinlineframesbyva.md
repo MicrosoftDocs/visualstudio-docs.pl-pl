@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findInlineFramesByVA | Dokumentacja firmy Microsoft
+title: 'IDiaSession:: findInlineFramesByVA | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aeb9d7b9925e8708ab100e68f88b28310da68fce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dca26021909220f9bb68a6794c299ec6c5a3d75a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62827323"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742146"
 ---
 # <a name="idiasessionfindinlineframesbyva"></a>IDiaSession::findInlineFramesByVA
-Pobiera wyliczenie, które umożliwia klientowi wykonać iterację przez wszystkie ramki wbudowane na określony adres wirtualny (oceny luk w zabezpieczeniach).
+Pobiera wyliczenie, które pozwala klientowi na iterację we wszystkich wbudowanych ramkach w określonym adresie wirtualnym (VA).
 
 ## <a name="syntax"></a>Składnia
 
@@ -32,20 +32,20 @@ HRESULT findInlineFramesByVA ( 
 #### <a name="parameters"></a>Parametry
  `parent`
 
-[in] `IDiaSymbol` Obiekt reprezentujący element nadrzędny.
+podczas Obiekt `IDiaSymbol` reprezentujący element nadrzędny.
 
  `va`
 
-[in] Określa adres jako VA.
+podczas Określa adres jako VA.
 
  `ppResult`
 
-[out] Przechowuje `IDiaEnumSymbols` obiektu, który zawiera listę ramek, które są pobierane.
+określoną Przechowuje `IDiaEnumSymbols` obiektu, który zawiera listę pobieranych ramek.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [SymTagEnum, wyliczenie](../../debugger/debug-interface-access/symtagenum.md)

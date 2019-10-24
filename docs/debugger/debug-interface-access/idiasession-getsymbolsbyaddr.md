@@ -1,5 +1,5 @@
 ---
-title: Idiasession::getsymbolsbyaddr — | Dokumentacja firmy Microsoft
+title: 'IDiaSession:: getSymbolsByAddr | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f114d14da44d782dbda9e9f792f9268ceb598e23
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bfe5c047876b6e23c24ad850900cb0c66a4819d2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832334"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741902"
 ---
 # <a name="idiasessiongetsymbolsbyaddr"></a>IDiaSession::getSymbolsByAddr
-Pobiera moduł wyliczający, który wyszukuje symbole w kolejności ich adresów.
+Pobiera moduł wyliczający, który odnajdzie symbole w kolejności ich adresów.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,11 +33,11 @@ HRESULT getSymbolsByAddr( 
 #### <a name="parameters"></a>Parametry
  `ppEnumbyAddr`
 
-[out] Zwraca [idiaenumsymbolsbyaddr —](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md) obiektu. Ten interfejs umożliwia wyszukiwanie symboli w magazynie symboli według lokalizacji w pamięci.
+określoną Zwraca obiekt [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md) . Użyj tego interfejsu do wyszukiwania symboli w magazynie symboli według lokalizacji pamięci.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)

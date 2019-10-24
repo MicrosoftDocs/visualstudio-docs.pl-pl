@@ -16,12 +16,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d89b06c406d0495a5699f707c85b4e9e9b3a804
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 75792518eadc5449f070b90f3f1e8c2da38bf2b3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654589"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748781"
 ---
 # <a name="command-window"></a>Okno polecenia
 Okno **polecenia** służy do wykonywania poleceń lub aliasów bezpośrednio w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowanym środowisku programistycznym (IDE). Można wykonać Oba polecenia menu i polecenia, które nie są wyświetlane w żadnym menu. Aby wyświetlić okno **poleceń** , wybierz **inne okna** z menu **Widok** i wybierz **polecenie Okno**.
@@ -109,7 +109,7 @@ Daszek działa tak samo, niezależnie od tego, czy znajduje się wewnątrz, czy 
 ## <a name="use-quotes-for-path-names-with-spaces"></a>Używanie cudzysłowów dla nazw ścieżek ze spacjami
 Jeśli na przykład chcesz otworzyć plik, który ma ścieżkę zawierającą spacje, musisz umieścić podwójne cudzysłowy wokół segmentu ścieżki lub ścieżki zawierającej spacje: **C: \\ "Program Files"** lub **"C:\Program Files"** .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Visual Studio — aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)
 - [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)

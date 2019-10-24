@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Wyświetlanie widoków Spy ++ | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: wyświetlanie widoków Spy + + | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,16 +10,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 230834e7915114e2a647b21834b4e90b12c54a64
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9f56a57a347b6cd8892a264070a3ee022ffb7853
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894264"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733560"
 ---
-# <a name="how-to-display-spy-views"></a>Instrukcje: Wyświetlanie widoków Spy ++
-Uruchomienia programu Spy ++, zostanie on otwarty w [widoku Windows](../debugger/windows-view.md), widok drzewa wszystkich okien i formantów, które są dostępne na komputerze. Napisy to tego okna głównego "Windows 1". Dostępne są także trzy inne widoków programu Spy ++: [Widoku komunikatów](../debugger/messages-view.md), [widok procesów](../debugger/processes-view.md), i [wątki widoku](../debugger/threads-view.md). Możesz wyświetlić odpowiedni widok z **Spy** menu. Aby uzyskać więcej informacji, zobacz [widoków programu Spy ++](../debugger/spy-increment-views.md).
+# <a name="how-to-display-spy-views"></a>Porady: wyświetlanie widoków Spy++
+Gdy uruchamiany jest program Spy + +, zostanie on otwarty w [widoku systemu Windows](../debugger/windows-view.md), a w widoku drzewa wszystkich okien i kontrolek dostępnych na komputerze. To okno główne ma podpis "Windows 1". Dostępne są również trzy inne widoki programu Spy + +: [Widok wiadomości](../debugger/messages-view.md), [widok procesów](../debugger/processes-view.md)i [Widok wątków](../debugger/threads-view.md). Żądany widok można wyświetlić z menu **Spy** . Aby uzyskać więcej informacji, zobacz temat [widoki programu Spy + +](../debugger/spy-increment-views.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Korzystanie z programu Spy++](../debugger/using-spy-increment.md)
 - [Spy++ — dokumentacja](../debugger/spy-increment-reference.md)

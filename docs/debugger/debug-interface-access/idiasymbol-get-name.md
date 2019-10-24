@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_name — | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_name | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed872bd0cf90bef4433e3430ea8a7557213cbb4c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 754416049197a92344fd238b28ec99e8fb912791
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64809008"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739765"
 ---
-# <a name="idiasymbolgetname"></a>IDiaSymbol::get_name
+# <a name="idiasymbolget_name"></a>IDiaSymbol::get_name
 Pobiera nazwę symbolu.
 
 ## <a name="syntax"></a>Składnia
@@ -33,13 +33,13 @@ HRESULT get_name ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca nazwę symbolu.
+określoną Zwraca nazwę symbolu.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
-> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Wartość zwracana `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
 ## <a name="example"></a>Przykład
 
@@ -49,5 +49,5 @@ BSTR        name;
 pType->get_name( &name );
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

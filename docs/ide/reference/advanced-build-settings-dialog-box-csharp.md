@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c4a1c902047b76ef3b29814d10cfc112ab9c7274
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 78817f65197c2dd295a6f2202f913c48b54e1ed9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186789"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748804"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>Zaawansowane ustawienia kompilacji — okno dialogoweC#()
 
@@ -50,11 +50,11 @@ Określa, czy raportować błędy kompilatora do firmy Microsoft. Jeśli zostani
 
 **Sprawdź, czy jest przepełnienie arytmetyczne/nadmiarowy**
 
-Określa, czy instrukcja arytmetyczna liczb całkowitych, która nie znajduje się [sprawdzone](/dotnet/csharp/language-reference/keywords/checked) w [niepowstrzymany](/dotnet/csharp/language-reference/keywords/unchecked) zakresie zaznaczonych lub niesprawdzonych słów kluczowych i powoduje, że wartość spoza zakresu typu danych spowoduje wystąpienie wyjątku czasu wykonywania. Aby uzyskać więcej informacji, zobacz [/CheckedC# (opcje kompilatora)](/dotnet/csharp/language-reference/compiler-options/checked-compiler-option).
+Określa, czy instrukcja arytmetyczna liczb całkowitych, która nie znajduje się w zakresie [zaznaczonych](/dotnet/csharp/language-reference/keywords/checked) lub [niesprawdzonych](/dotnet/csharp/language-reference/keywords/unchecked) słów kluczowych i powoduje, że wartość spoza zakresu typu danych spowoduje wystąpienie wyjątku czasu wykonywania. Aby uzyskać więcej informacji, zobacz [/CheckedC# (opcje kompilatora)](/dotnet/csharp/language-reference/compiler-options/checked-compiler-option).
 
 **Nie Odwołuj się do biblioteki mscorlib. dll**
 
-Określa, czy biblioteka mscorlib. dll zostanie zaimportowana do programu w celu <xref:System> zdefiniowania całej przestrzeni nazw. Zaznacz to pole wyboru, jeśli chcesz zdefiniować lub utworzyć własną <xref:System> przestrzeń nazw i obiekty. Aby uzyskać więcej informacji, zobacz [/nostdlibC# (opcje kompilatora)](/dotnet/csharp/language-reference/compiler-options/nostdlib-compiler-option).
+Określa, czy biblioteka mscorlib. dll zostanie zaimportowana do programu w celu zdefiniowania całej przestrzeni nazw <xref:System>. Zaznacz to pole wyboru, jeśli chcesz zdefiniować lub utworzyć własne <xref:System> przestrzeni nazw i obiektów. Aby uzyskać więcej informacji, zobacz [/nostdlibC# (opcje kompilatora)](/dotnet/csharp/language-reference/compiler-options/nostdlib-compiler-option).
 
 ## <a name="output"></a>Dane wyjściowe
 
@@ -68,7 +68,7 @@ Określa typ informacji o debugowaniu generowanych przez kompilator. Informacje 
 
    Określa, że nie będą generowane żadne informacje o debugowaniu.
 
-- **full**
+- **szczegółowe**
 
    Umożliwia dołączenie debugera do działającego programu.
 
@@ -94,7 +94,7 @@ Określa rozmiar sekcji w pliku wyjściowym. Prawidłowe wartości to **512**, *
 
 Określa preferowany adres podstawowy, z którego ma zostać załadowana Biblioteka DLL. Domyślny adres podstawowy dla biblioteki DLL jest ustawiany przez środowisko uruchomieniowe języka wspólnego .NET Framework. Aby uzyskać więcej informacji, zobacz [/BaseAddressC# (opcje kompilatora)](/dotnet/csharp/language-reference/compiler-options/baseaddress-compiler-option).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Opcje kompilatora języka C#](/dotnet/csharp/language-reference/compiler-options/index)
 - [Strona kompilacji, Projektant projektu (C#)](../../ide/reference/build-page-project-designer-csharp.md)

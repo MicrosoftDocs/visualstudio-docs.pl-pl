@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_classparent — | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_classParent | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c6419153777b5af071b59b6b7888c4f18f228b1
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 36dfed97fb8abd30f97c4068da94148715cae5c7
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64830581"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740853"
 ---
-# <a name="idiasymbolgetclassparent"></a>IDiaSymbol::get_classParent
-Pobiera odwołanie do elementu nadrzędnego klasy symbolu.
+# <a name="idiasymbolget_classparent"></a>IDiaSymbol::get_classParent
+Pobiera odwołanie do klasy nadrzędnej symbolu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,24 +33,24 @@ HRESULT get_classParent ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca [idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md) obiekt, który reprezentuje nadrzędnej klasy symbolu.
+określoną Zwraca obiekt [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) , który reprezentuje klasę nadrzędną symbolu.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
-> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Wartość zwracana przez `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
 ## <a name="requirements"></a>Wymagania
 
 |Wymaganie|Opis|
 |-----------------|-----------------|
-|Nagłówek:|dia2.h|
-|Wersja:|V7.0 DIA SDK|
+|Nagłówki|dia2. h|
+|Wersja:|DIA SDK v 7.0|
 
 ## <a name="remarks"></a>Uwagi
- Rodzaje symboli, które mogą być elementami nadrzędnymi klasy są udokumentowane w artykule [symboli typów klasy hierarchii](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md).
+ Typy symboli, które mogą być klasami nadrzędnymi, są udokumentowane w [hierarchii klas typów symboli](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [Hierarchia klas typów symboli](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)

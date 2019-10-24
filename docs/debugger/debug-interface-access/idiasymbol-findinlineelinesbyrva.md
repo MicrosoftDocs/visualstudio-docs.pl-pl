@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::findInlineeLinesByRVA | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: findInlineeLinesByRVA | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bdcb85db51a3fcfca434af9d39bc88587a0e5cdc
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 737bc647cf3f5b64bdd8c48f7c827e8ef86a1386
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62831760"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741204"
 ---
 # <a name="idiasymbolfindinlineelinesbyrva"></a>IDiaSymbol::findInlineeLinesByRVA
-Pobiera wyliczenie, które umożliwia klientowi do iterowania po informacje o numerze wiersza wszystkich funkcji, które są śródwierszowych, bezpośrednio lub pośrednio, w tym symbolu w ramach określonego względny adres wirtualny (RVA).
+Pobiera wyliczenie, które umożliwia klientowi przechodzenie do kolejnych informacji o numerze wiersza wszystkich funkcji, które są wbudowane, bezpośrednio lub pośrednio, w tym symbolu w ramach określonego względnego adresu wirtualnego (RVA).
 
 ## <a name="syntax"></a>Składnia
 
@@ -31,20 +31,20 @@ HRESULT findInlineeLinesByRVA (    DWORD                 rva,   DWORD          
 #### <a name="parameters"></a>Parametry
  `rva`
 
-[in] Określa adres jako adres RVA.
+podczas Określa adres jako RVA.
 
  `length`
 
-[in] Określa zakres adresów w liczbę bajtów, aby pokrywał się z tym zapytaniem.
+podczas Określa zakres adresów (w bajtach), który będzie obejmować to zapytanie.
 
  `ppResult`
 
-[out] Przechowuje `IDiaEnumLineNumbers` obiektu, który zawiera listę numerów wierszy, które są pobierane.
+określoną Zawiera obiekt `IDiaEnumLineNumbers` zawierający listę numerów wierszy, które są pobierane.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [SymTagEnum, wyliczenie](../../debugger/debug-interface-access/symtagenum.md)

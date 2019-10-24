@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f372d42869bf533b598f3e2aba9e60e34e47144d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1443cacd6d2e7c8f980e0bf423832d9b013e560f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605289"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748381"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Porady: przechwytywanie kliknięć w kształcie lub elemencie Decorator
 Poniższe procedury demonstrują sposób przechwycenia kliknięcia kształtu lub ikony dekoratora. Możesz przechwycić kliknięcia, podwójne kliknięcia, przeciąganie i inne gesty, a następnie odpowiedzieć na element.
@@ -393,7 +393,7 @@ namespace Company.CompartmentDrag
 }
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Odpowiadanie na zmiany i propagowanie zmian](../modeling/responding-to-and-propagating-changes.md)
 - [Właściwości elementów Decorator](../modeling/properties-of-decorators.md)

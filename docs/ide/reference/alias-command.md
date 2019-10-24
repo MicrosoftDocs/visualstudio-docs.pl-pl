@@ -16,12 +16,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 48fa131514f82ec13538b8f5a0662fde7388ddea
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8fdcc816510642c7800b6fbeacfa3fcdeff5e0b3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651987"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748799"
 ---
 # <a name="alias-command"></a>Alias — Polecenie
 Tworzy nowy alias dla kompletnego polecenia, kompletne polecenie i argumenty lub inny alias.
@@ -75,7 +75,7 @@ Ten przykład wyświetla listę wszystkich bieżących aliasów i definicji.
 >Tools.Alias
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
 - [Okno Polecenie](../../ide/reference/command-window.md)

@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8e38123be6b780aa9f37dc2b329ec36e3f18e793
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: b93c9cfa6767aea83d941cbc8684b27517c8f911
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72430570"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72729550"
 ---
 # <a name="supported-code-changes-c"></a>Obsługiwane zmiany kodu (C++)
 Edytuj i Kontynuuj dla C++ projektów obsługuje większość typów zmian kodu. Jednak niektórych zmian nie można zastosować podczas wykonywania programu. Aby zastosować te zmiany, należy zatrzymać wykonywanie i utworzyć nową wersję kodu.
@@ -136,5 +136,5 @@ Edytuj i Kontynuuj dla C++ projektów obsługuje większość typów zmian kodu.
 ## <a name="BKMK_IDL_Attribute_Limitations"></a>Ograniczenia atrybutów IDL
  Edytuj i Kontynuuj nie generuj ponownie plików definicji interfejsu (IDL). W związku z tym zmiany atrybutów IDL nie zostaną odzwierciedlone podczas debugowania. Aby zobaczyć wynik zmian atrybutów IDL, należy zatrzymać debugowanie i ponownie skompilować aplikację. Edytuj i Kontynuuj nie generuje błędu lub ostrzeżenia, jeśli atrybuty IDL zostały zmienione. Aby uzyskać więcej informacji, zobacz [atrybuty IDL](/cpp/windows/idl-attributes).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Edytuj i Kontynuuj (C++)](../debugger/edit-and-continue-visual-cpp.md)

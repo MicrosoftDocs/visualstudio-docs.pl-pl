@@ -18,17 +18,17 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8ecae431f75e14443895b816a24000b6fe3fba52
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: efcb6c5aeb60062dea75906969b71e65ac4912bb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72445856"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745975"
 ---
 # <a name="code-analysis-for-cc-warnings"></a>Analiza kodu dla C/C++ — Ostrzeżenia
 W tej sekcji przedstawiono ostrzeżeniaC++ analizy kodu C/Code, z wyjątkiem tych, które zostały zgłoszone przez [ C++ sprawdzenie podstawowych wytycznych](code-analysis-for-cpp-corecheck.md). Aby uzyskać informacje na temat analizy kodu, zobacz [/analyze (analiza kodu)](/cpp/build/reference/analyze-code-analysis) i [Szybki Start: Analiza kodu CC++/](../code-quality/quick-start-code-analysis-for-c-cpp.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Analiza jakości kodu C/C++ za pomocą funkcji analizy kodu](../code-quality/code-analysis-for-c-cpp-overview.md)
 - [Korzystanie z adnotacji SAL w celu zmniejszenia liczby defektów kodu C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)

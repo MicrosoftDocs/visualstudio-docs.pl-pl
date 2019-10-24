@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_compilergenerated — | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_compilerGenerated | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8cc1d59accb63ea7ef8b939e9e0912ee03dc4e8
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: c67a3ae78db3f91f25f69c1045856c5d167c2d34
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64808700"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740823"
 ---
-# <a name="idiasymbolgetcompilergenerated"></a>IDiaSymbol::get_compilerGenerated
+# <a name="idiasymbolget_compilergenerated"></a>IDiaSymbol::get_compilerGenerated
 Pobiera flagę wskazującą, czy symbol został wygenerowany przez kompilator.
 
 ## <a name="syntax"></a>Składnia
@@ -33,20 +33,20 @@ HRESULT get_compilerGenerated ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca `TRUE` Jeśli kompilator wygenerowany symbol; w przeciwnym razie zwraca `FALSE` Jeśli symbol został wygenerowany z źródłowy napisany przez użytkownika.
+określoną Zwraca `TRUE`, jeśli kompilator wygenerował symbol; w przeciwnym razie zwraca `FALSE`, jeśli symbol został wygenerowany ze źródła z zapisaniem przez użytkownika.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
-> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Wartość zwracana `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
 ## <a name="requirements"></a>Wymagania
 
 |Wymaganie|Opis|
 |-----------------|-----------------|
-|Nagłówek:|dia2.h|
-|Wersja:|V7.0 DIA SDK|
+|Nagłówki|dia2. h|
+|Wersja:|DIA SDK v 7.0|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

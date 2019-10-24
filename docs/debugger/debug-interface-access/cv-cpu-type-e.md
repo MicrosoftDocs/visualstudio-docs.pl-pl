@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d3d1df772dc6fa4b1ad6e38a319532bea111e97
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: ccc83062427ac2ecd3f340d6e1dbbe4d988ab0af
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66431728"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745325"
 ---
-# <a name="cvcputypee"></a>CV_CPU_TYPE_e
+# <a name="cv_cpu_type_e"></a>CV_CPU_TYPE_e
 Określa procesor docelowy.
 
 > [!NOTE]
-> Procesor został określony w elemencie wyliczenie po `CV_CFL_*` prefiks.
+> Procesor jest identyfikowany w elemencie Enumeration po prefiksie `CV_CFL_*`.
 
 ## <a name="syntax"></a>Składnia
 
@@ -96,11 +96,11 @@ typedef enum CV_CPU_TYPE_e {
 ```
 
 ## <a name="remarks"></a>Uwagi
-Wartości w tym wyliczeniu są zwracane przez wywołanie [idiasymbol::get_platform —](../../debugger/debug-interface-access/idiasymbol-get-platform.md) metody.
+Wartości w tym wyliczeniu są zwracane przez wywołanie metody [IDiaSymbol:: get_platform](../../debugger/debug-interface-access/idiasymbol-get-platform.md) .
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: cvconst.h
+Nagłówek: cvconst. h
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wyliczenia i struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaSymbol::get_platform](../../debugger/debug-interface-access/idiasymbol-get-platform.md)

@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14d4ac95aae860e0750af66aec6adb2969434f11
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 92cf53ed499318d60c8da5147685e3f0f340e404
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211051"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72736236"
 ---
 # <a name="executable-for-debugging-session-dialog-box"></a>Wykonywalny dla sesji debugowania — Okno dialogowe
 
@@ -37,7 +37,7 @@ To okno dialogowe jest wyświetlane podczas próby debugowania biblioteki DLL, d
 
  Po wprowadzeniu tych ustawień te ustawienia są przechowywane na stronach właściwości projektu, więc nie trzeba wprowadzać ich ponownie w przypadku kolejnych sesji debugowania. Jeśli trzeba zmienić ustawienia, można otworzyć strony właściwości i zmienić wartości. Aby uzyskać więcej informacji na temat określania pliku wykonywalnego dla sesji debugowania, zobacz [debugowanie bibliotek DLL](../debugger/how-to-debug-from-a-dll-project.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Debugowanie w programie Visual Studio](../debugger/index.yml)
 - [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)

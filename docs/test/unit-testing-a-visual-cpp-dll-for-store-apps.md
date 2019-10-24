@@ -1,5 +1,5 @@
 ---
-title: Jak przetestować biblioteki DLL Visual C++ dla aplikacji platformy uniwersalnej systemu Windows
+title: Jak przetestować C++ plik DLL dla aplikacji platformy UWP
 ms.date: 05/01/2019
 ms.topic: conceptual
 ms.author: mblome
@@ -7,26 +7,26 @@ manager: jillfra
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: 6e0599445ff07227f5075a1a10a8dfdfe50e88f0
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 18d8382bcb4f3e348443050e818f0b59c2a18688
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925787"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748076"
 ---
-# <a name="how-to-test-a-visual-c-dll"></a>Jak przetestować biblioteki DLL Visual C++
+# <a name="how-to-test-a-c-dll"></a>Jak przetestować C++ plik dll
 
-W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych dla języka C++ bibliotek DLL z aplikacji platformy uniwersalnej Windows (UWP) przy użyciu Frameworka testów firmy Microsoft dla języka C++. Biblioteka DLL RooterLib pokazuje niejasne chwile teorii limit z calculus poprzez implementację funkcji, który oblicza oszacowanie pierwiastek kwadratowy z podanej liczbie. Biblioteki DLL, następnie mógłby być zawarty w aplikacji platformy uniwersalnej systemu Windows, która zawiera użytkownika fun rzeczy, które można wykonać za pomocą matematyczne.
+W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych C++ dla aplikacji DLL for platforma uniwersalna systemu Windows (platformy UWP) przy użyciu platformy Microsoft Test C++Framework dla programu. Biblioteka DLL RooterLib pokazuje niejasne odnoszące się do granicy granicznej z calculus przez implementację funkcji, która oblicza oszacowanie wartości pierwiastek kwadratowy danej liczby. Biblioteka DLL może zostać następnie dołączona do aplikacji platformy UWP, która przedstawia użytkownikowi zabawne rzeczy, które można wykonać za pomocą obliczeń matematycznych.
 
-W tym temacie dowiesz się, jak używać jednostki testowania jako pierwszy krok w rozwoju. W tym podejściu najpierw napisać metodę testową, która sprawdza określone zachowanie w systemie, które testujesz, a następnie napisać kod, który przejdzie test. Wycofanie tej strategii, wprowadzając zmiany kolejności poniższych procedur, w pierwszej operacji zapisu kod, który chcesz przetestować, a następnie napisz testy jednostkowe.
+W tym temacie przedstawiono sposób korzystania z testów jednostkowych jako pierwszego kroku projektowania. W tym podejściu najpierw napiszesz metodę testową, która weryfikuje określone zachowanie w testowanym systemie, a następnie pisze kod, który przekazuje test. Wprowadzając zmiany w kolejności następującej procedury, można odwrócić tę strategię, aby najpierw napisać kod, który ma zostać przetestowany, a następnie napisać testy jednostkowe.
 
-W tym temacie tworzy również jedno rozwiązanie Visual Studio i oddzielnych projektów dla testów jednostkowych i biblioteki DLL, która ma zostać przetestowana. Możesz również uwzględnić testy jednostkowe bezpośrednio w projekcie biblioteki DLL lub można utworzyć oddzielne rozwiązania dla testów jednostkowych i. BIBLIOTEKI DLL. Zobacz [Dodawanie testów jednostkowych do istniejących aplikacji C++](../test/how-to-use-microsoft-test-framework-for-cpp.md) zawiera porady na temat struktury, która do użycia.
+W tym temacie jest również tworzone pojedyncze rozwiązanie programu Visual Studio i oddzielne projekty dla testów jednostkowych i biblioteki DLL, która ma zostać przetestowana. Możesz również uwzględnić testy jednostkowe bezpośrednio w projekcie DLL lub utworzyć oddzielne rozwiązania dla testów jednostkowych i. Bibliotece. Zobacz [Dodawanie testów jednostkowych do C++ istniejących aplikacji](../test/how-to-use-microsoft-test-framework-for-cpp.md) , aby uzyskać wskazówki dotyczące struktury do użycia.
 
-## <a name="Create_the_solution_and_the_unit_test_project"></a> Tworzenie rozwiązania i projektu testu jednostkowego
+## <a name="Create_the_solution_and_the_unit_test_project"></a>Utwórz rozwiązanie i projekt testu jednostkowego
 
 ::: moniker range="vs-2019"
 
-Zacznij od utworzenia nowego projektu testowego. Na **pliku** menu, wybierz **New** > **projektu**. W oknie dialogowym **Tworzenie nowego projektu** wpisz "test" w polu wyszukiwania, a następnie ustaw **Język** na C++. Następnie wybierz **aplikacji testów jednostkowych (Windows Universal)** z listy szablonów projektu.
+Zacznij od utworzenia nowego projektu testowego. W menu **plik** wybierz **Nowy** **projekt** > . W oknie dialogowym **Tworzenie nowego projektu** wpisz "test" w polu wyszukiwania, a następnie ustaw **Język** na C++. Następnie wybierz pozycję **aplikacja testów jednostkowych (uniwersalna systemu Windows)** z listy szablonów projektu.
 
    ![Utwórz nowy projekt testu platformy UWP](media/vs-2019/cpp-new-uwp-test-project-vs2019.png)
 
@@ -34,31 +34,31 @@ Zacznij od utworzenia nowego projektu testowego. Na **pliku** menu, wybierz **Ne
 
 ::: moniker range="vs-2017"
 
-Zacznij od utworzenia nowego projektu testowego. Na **pliku** menu, wybierz **New** > **projektu**. W oknie dialogowym **Nowy projekt** rozwiń węzeł **zainstalowane** >  **C++ wizualizacje** i wybierz pozycję **Windows Universal**. Następnie wybierz **aplikacji testów jednostkowych (Windows Universal)** z listy szablonów projektu.
+Zacznij od utworzenia nowego projektu testowego. W menu **plik** wybierz **Nowy** **projekt** > . W oknie dialogowym **Nowy projekt** rozwiń węzeł **zainstalowane**  >  **C++ Wizualizacja** i wybierz pozycję **Windows Universal**. Następnie wybierz pozycję **aplikacja testów jednostkowych (uniwersalna systemu Windows)** z listy szablonów projektu.
 
 ::: moniker-end
 
-1. W oknie dialogowym Nowy projekt rozwiń **zainstalowane** > **Visual C++** i wybierz polecenie **Windows Universal**. Następnie wybierz **aplikacji testów jednostkowych (Windows Universal)** z listy szablonów projektu.
+1. W oknie dialogowym Nowy projekt rozwiń węzeł **zainstalowane**  > **Wizualizacja C++**  i wybierz pozycję **Windows Universal**. Następnie wybierz pozycję **aplikacja testów jednostkowych (uniwersalna systemu Windows)** z listy szablonów projektu.
 
-2. Nadaj projektowi nazwę `RooterLibTests`; Określ lokalizację; nazwij rozwiązanie `RooterLib`; i upewnij się, że **Utwórz katalog rozwiązania** jest zaznaczone.
+2. Nadaj projektowi nazwę `RooterLibTests`; Określ lokalizację; Nazwij rozwiązanie `RooterLib`; Upewnij się, że jest zaznaczone pole wyboru **Utwórz katalog dla rozwiązania** .
 
-     ![Określ nazwę rozwiązania i projektu i lokalizacji](../test/media/ute_cpp_windows_unittestlib_createspecs.png)
+     ![Określ rozwiązanie i nazwę projektu i lokalizację](../test/media/ute_cpp_windows_unittestlib_createspecs.png)
 
-3. Otwórz w nowym projekcie **unittest1.cpp**.
+3. W nowym projekcie Otwórz **UnitTest1. cpp**.
 
-     ![unittest1.cpp](../test/media/ute_cpp_windows_unittest1_cpp.png)
+     ![UnitTest1. cpp](../test/media/ute_cpp_windows_unittest1_cpp.png)
 
      Należy pamiętać o następujących kwestiach:
 
-    - Każdy test jest definiowana za pomocą `TEST_METHOD(YourTestName){...}`.
+    - Każdy test jest definiowany przy użyciu `TEST_METHOD(YourTestName){...}`.
 
-         Nie trzeba napisać podpis konwencjonalnych funkcji. Podpis jest tworzony za pomocą makra TEST_METHOD. Makro generuje funkcją wystąpienia, która zwraca wartość void. Polecenie to generuje także funkcję statyczną, która zwraca informacje na temat metody testowej. Te informacje temu Eksplorator testów, można znaleźć metody.
+         Nie trzeba pisać sygnatury funkcji konwencjonalnej. Podpis jest tworzony przez makro TEST_METHOD. Makro generuje funkcję wystąpienia zwracającą typ void. Generuje również funkcję statyczną, która zwraca informacje o metodzie testowej. Te informacje umożliwiają Eksploratorowi testów znalezienie metody.
 
-    - Metody testowe są pogrupowane według klasy przy użyciu `TEST_CLASS(YourClassName){...}`.
+    - Metody testowe są pogrupowane w klasy przy użyciu `TEST_CLASS(YourClassName){...}`.
 
-         Gdy testy są uruchamiane, tworzone jest wystąpienie każdej klasy testu. Metody testowe są wywoływane w nieokreślonej kolejności. Można zdefiniować specjalne metody, które są wywoływane przed i po każdym modułu, klasy lub metody. Aby uzyskać więcej informacji, zobacz [korzystanie z Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md).
+         Gdy testy są uruchamiane, tworzone jest wystąpienie każdej klasy testowej. Metody testowe są wywoływane w nieokreślonej kolejności. Można zdefiniować metody specjalne, które są wywoływane przed i po każdym module, klasie lub metodzie. Aby uzyskać więcej informacji, zobacz [using Microsoft. VisualStudio. TestTools. CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md).
 
-## <a name="Verify_that_the_tests_run_in_Test_Explorer"></a> Sprawdź, czy testy zostaną wykonane w Eksploratorze testów
+## <a name="Verify_that_the_tests_run_in_Test_Explorer"></a>Sprawdź, czy testy są uruchamiane w Eksploratorze testów
 
 1. Wstaw kod testu:
 
@@ -69,34 +69,34 @@ Zacznij od utworzenia nowego projektu testowego. Na **pliku** menu, wybierz **Ne
     }
     ```
 
-     Należy zauważyć, że `Assert` klasa udostępnia kilka metod statycznych, których można sprawdzić wyniki za pomocą metod testowych.
+     Należy zauważyć, że Klasa `Assert` dostarcza kilka metod statycznych, których można użyć do sprawdzenia wyników w metodach testowych.
 
-2. Na **testu** menu, wybierz **Uruchom** , a następnie wybierz **Uruchom wszystkie**.
+2. W menu **test** wybierz polecenie **Uruchom** , a następnie wybierz polecenie **Uruchom wszystkie**.
 
-     Projekt testowy skompilowane i uruchomione. **Eksploratora testów** zostanie wyświetlone okno i test znajduje się w obszarze **testy zakończone powodzeniem**. **Podsumowanie** okienku u dołu okna udostępnia dodatkowe szczegóły dotyczące wybranego testu.
+     Projekt testowy zostanie skompilowany i uruchomiony. Zostanie wyświetlone okno **Eksplorator testów** , a test zostanie wyświetlony na liście **zakończonych testów**. Okienko **Podsumowanie** u dołu okna zawiera dodatkowe szczegółowe informacje o wybranym teście.
 
      ![Eksplorator testów](../test/media/ute_cpp_testexplorer_testmethod1.png)
 
-## <a name="Add_the_DLL_project_to_the_solution"></a> Dodaj projekt biblioteki DLL do rozwiązania
+## <a name="Add_the_DLL_project_to_the_solution"></a>Dodawanie projektu DLL do rozwiązania
 
 ::: moniker range="vs-2019"
 
-W **Eksploratora rozwiązań**, wybierz nazwę rozwiązania. Z menu skrótów wybierz polecenie **Dodaj**, a następnie **Nowy projekt**. W oknie dialogowym **Dodawanie nowego projektu** Ustaw **Język** na C++ i wpisz "dll" w polu wyszukiwania. Z listy wyników wybierz pozycję **aplikacja testów jednostkowych (Universal Windows- C++/CX)** .
+W **Eksplorator rozwiązań**wybierz nazwę rozwiązania. Z menu skrótów wybierz polecenie **Dodaj**, a następnie **Nowy projekt**. W oknie dialogowym **Dodawanie nowego projektu** Ustaw **Język** na C++ i wpisz "dll" w polu wyszukiwania. Z listy wyników wybierz pozycję **aplikacja testów jednostkowych (Universal Windows- C++/CX)** .
 
-![Utwórz projekt RooterLib](../test/media/vs-2019/cpp-new-uwp-test-project-vs2019.png)
+![Tworzenie projektu RooterLib](../test/media/vs-2019/cpp-new-uwp-test-project-vs2019.png)
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
-W **Eksploratora rozwiązań**, wybierz nazwę rozwiązania. Z menu skrótów wybierz polecenie **Dodaj**, a następnie **Nowy projekt**.
+W **Eksplorator rozwiązań**wybierz nazwę rozwiązania. Z menu skrótów wybierz polecenie **Dodaj**, a następnie **Nowy projekt**.
 
-![Utwórz projekt RooterLib](../test/media/ute_cpp_windows_rooterlib_create.png)
+![Tworzenie projektu RooterLib](../test/media/ute_cpp_windows_rooterlib_create.png)
 
 ::: moniker-end
 
-1. W **Dodaj nowy projekt** okna dialogowego wybierz **biblioteki DLL (platformy uwp)** .
+1. W oknie dialogowym **Dodaj nowy projekt** wybierz pozycję **dll (aplikacje platformy UWP)** .
 
-2. Dodaj następujący kod do *RooterLib.h* pliku:
+2. Dodaj następujący kod do pliku *RooterLib. h* :
 
     ```cpp
     // The following ifdef block is the standard way of creating macros which make exporting
@@ -118,21 +118,21 @@ W **Eksploratora rozwiązań**, wybierz nazwę rozwiązania. Z menu skrótów wy
     };
     ```
 
-     Zostało wyjaśnione w komentarzach blok ifdef nie tylko do deweloperów biblioteki dll, ale dla każdego, kto odwołuje się do biblioteki DLL w projekcie. Możesz dodać ROOTERLIB_EXPORTS symbol do wiersza polecenia przy użyciu właściwości projektu biblioteki dll.
+     Komentarze wyjaśniają blok ifdef nie tylko dla dewelopera biblioteki DLL, ale do każdego, kto odwołuje się do biblioteki DLL w projekcie. Symbol ROOTERLIB_EXPORTS można dodać do wiersza polecenia przy użyciu właściwości projektu biblioteki DLL.
 
-     `CRooterLib` Klasa deklaruje Konstruktor i `SqareRoot` metoda narzędzie do szacowania.
+     Klasa `CRooterLib` deklaruje konstruktora i metodę `SqareRoot` szacowania.
 
-3. Dodaj ROOTERLIB_EXPORTS symbol w wierszu polecenia.
+3. Dodaj symbol ROOTERLIB_EXPORTS do wiersza polecenia.
 
-    1. W **Eksploratora rozwiązań**, wybierz **RooterLib** projektu, a następnie wybierz **właściwości** z menu skrótów.
+    1. W **Eksplorator rozwiązań**wybierz projekt **RooterLib** , a następnie wybierz polecenie **Właściwości** z menu skrótów.
 
-         ![Dodawanie definicji symboli preprocesora](../test/media/ute_cpp_windows_addpreprocessorsymbol.png)
+         ![Dodaj definicję symbolu preprocesora](../test/media/ute_cpp_windows_addpreprocessorsymbol.png)
 
-    2. W **strona właściwości RooterLib** okna dialogowego rozwiń **właściwości konfiguracji**, rozwiń węzeł **C++** i wybierz polecenie **preprocesora**.
+    2. Na **stronie właściwości RooterLib** rozwiń węzeł **Właściwości konfiguracji**, rozwiń **C++** i wybierz **preprocesor**.
 
-    3. Wybierz  **\<edytujący... >** z **definicje preprocesora** listy, a następnie dodaj `ROOTERLIB_EXPORTS` w **definicje preprocesora** okno dialogowe.
+    3. Wybierz **\<Edit... >** z listy **Definicje preprocesora** , a następnie Dodaj `ROOTERLIB_EXPORTS` do okna dialogowego **Definicje preprocesora** .
 
-4. Dodaj implementacje minimalne funkcje zadeklarowane. Otwórz *RooterLib.cpp* i Dodaj następujący kod:
+4. Dodaj minimalne implementacje zadeklarowanych funkcji. Otwórz *RooterLib. cpp* i Dodaj następujący kod:
 
     ```cpp
     // constructor
@@ -148,25 +148,25 @@ W **Eksploratora rozwiązań**, wybierz nazwę rozwiązania. Z menu skrótów wy
 
     ```
 
-## <a name="make_the_dll_functions_visible_to_the_test_code"></a> Uwidacznianie funkcji dll z kodem testu
+## <a name="make_the_dll_functions_visible_to_the_test_code"></a>Uczyń funkcje biblioteki DLL widocznymi dla kodu testu
 
-1. Dodaj RooterLib projektu RooterLibTests.
+1. Dodaj RooterLib do projektu RooterLibTests.
 
-   1. W **Eksplorator rozwiązań**wybierz projekt **RooterLibTests** , a następnie wybierz polecenie **Dodaj** > **odwołanie** w menu skrótów.
+   1. W **Eksplorator rozwiązań**wybierz projekt **RooterLibTests** , a następnie wybierz pozycję **Dodaj**  > **odwołanie** w menu skrótów.
 
-   1. W oknie dialogowym **Dodaj odwołanie** wybierz pozycję **projekty**. Następnie wybierz pozycję **RouterLib** elementu.
+   1. W oknie dialogowym **Dodaj odwołanie** wybierz pozycję **projekty**. Następnie wybierz element **RouterLib** .
 
-2. Uwzględnić plik nagłówka RooterLib w *unittest1.cpp*.
+2. Dołącz plik nagłówka RooterLib w *UnitTest1. cpp*.
 
-   1. Otwórz *unittest1.cpp*.
+   1. Otwórz *UnitTest1. cpp*.
 
-   2. Dodaj następujący kod poniżej `#include "CppUnitTest.h"` wiersza:
+   2. Dodaj następujący kod do `#include "CppUnitTest.h"` wiersza:
 
        ```cpp
        #include "..\RooterLib\RooterLib.h"
        ```
 
-3. Dodaj test, który używa funkcji zaimportowane. Dodaj następujący kod do *unittest1.cpp*:
+3. Dodaj test, który używa zaimportowanej funkcji. Dodaj następujący kod do *UnitTest1. cpp*:
 
    ```cpp
    TEST_METHOD(BasicTest)
@@ -188,15 +188,15 @@ W **Eksploratora rozwiązań**, wybierz nazwę rozwiązania. Z menu skrótów wy
 
 4. Skompiluj rozwiązanie.
 
-    Nowy test jest wyświetlany w **Eksploratora testów** w **testy nieuruchamiane** węzła.
+    Nowy test zostanie wyświetlony w **Eksploratorze testów** w węźle **nie uruchomiono testy** .
 
-5. W **Eksplorator testów**, wybierz **Uruchom wszystkie**.
+5. W **Eksploratorze testów**wybierz opcję **Uruchom wszystkie**.
 
-    ![Podstawowy Test zakończony pomyślnie](../test/media/ute_cpp_testexplorer_basictest.png)
+    ![Test podstawowy zakończony zakończono](../test/media/ute_cpp_testexplorer_basictest.png)
 
-   Mają ustawienie testu i projekty kodu, a następnie zweryfikować, że można uruchomić testy, które uruchamiania funkcji w projekcie kodu. Teraz możesz rozpocząć pisanie rzeczywistych testów i kodu.
+   Został skonfigurowany test i projekty kodu i zweryfikowane, że można uruchomić testy, które uruchamiają funkcje w projekcie kodu. Teraz możesz zacząć pisać prawdziwe testy i kod.
 
-## <a name="Iteratively_augment_the_tests_and_make_them_pass"></a> Iteracyjne Udoskonal testy i nadawać im przekazać
+## <a name="Iteratively_augment_the_tests_and_make_them_pass"></a>Iteracyjnie rozszerza testy i przekazują je
 
 1. Dodaj nowy test:
 
@@ -215,20 +215,20 @@ W **Eksploratora rozwiązań**, wybierz nazwę rozwiązania. Z menu skrótów wy
     ```
 
     > [!TIP]
-    > Firma Microsoft zaleca, nie należy zmieniać testy, które zostały przekazane. Zamiast tego Dodaj nowy test, zaktualizować kod, tak aby test zakończy się pomyślnie, a następnie dodaj innego testu, i tak dalej.
+    > Zalecamy, aby nie zmieniać testów, które zostały zakończone. Zamiast tego Dodaj nowy test, zaktualizuj kod tak, aby test zakończył się powodzeniem, a następnie Dodaj inny test i tak dalej.
     >
-    > Użytkownicy zmiany ich wymagań, wyłącz testy, które nie są już prawidłowe. Zapisz nowe testy i ich działania pojedynczo, w taki sam sposób przyrostowego.
+    > Gdy użytkownicy zmienią swoje wymagania, należy wyłączyć testy, które nie są już poprawne. Napisz nowe testy i Przekształć je w jeden raz w ten sam przyrostowy sposób.
 
-2. W **Eksplorator testów**, wybierz **Uruchom wszystkie**.
+2. W **Eksploratorze testów**wybierz opcję **Uruchom wszystkie**.
 
-3. Test nie powiedzie się.
+3. Test zakończy się niepowodzeniem.
 
      ![RangeTest kończy się niepowodzeniem](../test/media/ute_cpp_testexplorer_rangetest_fail.png)
 
     > [!TIP]
-    > Upewnij się, że każdy test zakończy się niepowodzeniem, natychmiast, po napisaniu go. Dzięki temu można uniknąć łatwe Błąd zapisywania testu, który nigdy nie zakończy się niepowodzeniem.
+    > Sprawdź, czy każdy test kończy się niepowodzeniem natychmiast po jego zapisaniu. Dzięki temu można uniknąć łatwego błędu podczas pisania testu, który nigdy nie powiedzie się.
 
-4. Tak, aby nowy test zakończy się pomyślnie, należy zwiększyć testowany kod. Dodaj następujące polecenie, aby *RooterLib.cpp*:
+4. Podnieś poziom testowanego kodu, tak aby nowe testy zostały przekazane. Dodaj następujący do *RooterLib. cpp*:
 
     ```cpp
     #include <math.h>
@@ -249,16 +249,16 @@ W **Eksploratora rozwiązań**, wybierz nazwę rozwiązania. Z menu skrótów wy
 
     ```
 
-5. Kompiluj rozwiązanie, a następnie w polu **Eksplorator testów**, wybierz **Uruchom wszystkie**.
+5. Skompiluj rozwiązanie, a następnie w **Eksploratorze testów**wybierz opcję **Uruchom wszystkie**.
 
-     Kod przechodzi oba testy.
+     Oba testy zostały zakończone pomyślnie.
 
 > [!TIP]
-> Tworzenie kodu, dodając jeden testów w danym momencie. Upewnij się, że po każdej iteracji kod przechodzi wszystkie testy.
+> Opracowuj kod przez dodanie testów pojedynczo. Upewnij się, że wszystkie testy są zakończone po każdej iteracji.
 
-## <a name="Debug_a_failing_test"></a> Debuguj test niepowodzeniem
+## <a name="Debug_a_failing_test"></a>Debuguj test zakończony niepowodzeniem
 
-1. Dodaj kolejny test do *unittest1.cpp*:
+1. Dodaj inny test do *UnitTest1. cpp*:
 
    ```cpp
    // Verify that negative inputs throw an exception.
@@ -289,21 +289,21 @@ W **Eksploratora rozwiązań**, wybierz nazwę rozwiązania. Z menu skrótów wy
    };
    ```
 
-2. W **Eksplorator testów**, wybierz **Uruchom wszystkie**.
+2. W **Eksploratorze testów**wybierz opcję **Uruchom wszystkie**.
 
-    Test nie powiedzie się. Wybierz nazwę testu w **Eksploratora testów**. Potwierdzenie nie powiodło się, jest wyróżniona. Komunikat o błędzie jest widoczny w okienku szczegółów **Eksplorator testów**.
+    Test zakończy się niepowodzeniem. Wybierz nazwę testu w **Eksploratorze testów**. Niepowodzenie zostało wyróżnione. Komunikat o błędzie jest widoczny w okienku szczegółów w **Eksploratorze testów**.
 
-    ![NegativeRangeTests nie powiodło się.](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
+    ![NegativeRangeTests nie powiodło się](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
 
-3. Aby zobaczyć, dlaczego test zakończy się niepowodzeniem, krok przy użyciu funkcji:
+3. Aby zobaczyć dlaczego test nie powiedzie się, przechodzenie przez funkcję:
 
-   1. Ustaw punkt przerwania na początku `SquareRoot` funkcji.
+   1. Ustaw punkt przerwania na początku funkcji `SquareRoot`.
 
-   2. W menu skrótów testów zakończonych niepowodzeniem, wybierz **Debuguj wybrane testy**.
+   2. W menu skrótów testu zakończonego niepowodzeniem wybierz **Debuguj wybrane testy**.
 
-        Po zatrzymaniu w punkcie przerwania Uruchom przejść przez kod.
+        Gdy przebieg zostanie zatrzymany w punkcie przerwania, przejdź do kodu.
 
-   3. Dodaj kod, aby *RooterLib.cpp* zostać przechwycony wyjątek:
+   3. Dodaj kod do *RooterLib. cpp* , aby przechwycić wyjątek:
 
        ```cpp
        #include <stdexcept>
@@ -319,15 +319,15 @@ W **Eksploratora rozwiązań**, wybierz nazwę rozwiązania. Z menu skrótów wy
 
        ```
 
-   1. W **Eksploratora testów**, wybierz **Uruchom wszystkie** poprawiony metoda testowa, i upewnij się, że nie zostały wprowadzone regresji.
+   1. W **Eksploratorze testów**wybierz opcję **Uruchom wszystkie** , aby przetestować poprawioną metodę i upewnić się, że regresja nie została wprowadzona.
 
-   Teraz kod przechodzi wszystkie testy.
+   Wszystkie testy są teraz zakończone pomyślnie.
 
-   ![Kod przechodzi wszystkie testy](../test/media/ute_ult_alltestspass.png)
+   ![Wszystkie testy zakończone powodzeniem](../test/media/ute_ult_alltestspass.png)
 
-## <a name="Refactor_the_code_without_changing_tests"></a> Refaktoryzacja kodu bez zmieniania testów
+## <a name="Refactor_the_code_without_changing_tests"></a>Refaktoryzacja kodu bez zmiany testów
 
-1. Uprość centralnej obliczeń w `SquareRoot` funkcji:
+1. Uprość Obliczanie centralne w funkcji `SquareRoot`:
 
     ```csharp
     // old code
@@ -336,9 +336,9 @@ W **Eksploratora rozwiązań**, wybierz nazwę rozwiązania. Z menu skrótów wy
     result = (result + v/result) / 2.0;
     ```
 
-2. Wybierz **Uruchom wszystkie** wycofanej metoda testowa, i upewnij się, że nie zostały wprowadzone regresji.
+2. Wybierz opcję **Uruchom wszystkie** , aby przetestować metodę refaktoryzacji i upewnić się, że regresja nie została wprowadzona.
 
     > [!TIP]
-    > Stabilne zestawy testów jednostkowych dobre daje pewność, że użytkownik nie wprowadzają błędów po zmianie kodu.
+    > Stabilny zestaw dobrych testów jednostkowych daje pewność, że podczas zmiany kodu nie wprowadzono usterek.
     >
-    > Zachowaj refaktoryzacji oddzielnie od innych zmian.
+    > Kontynuuj refaktoryzację niezależnie od innych zmian.

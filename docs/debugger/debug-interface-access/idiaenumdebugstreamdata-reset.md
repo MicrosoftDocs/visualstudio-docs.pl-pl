@@ -1,5 +1,5 @@
 ---
-title: Idiaenumdebugstreamdata::reset — | Dokumentacja firmy Microsoft
+title: 'IDiaEnumDebugStreamData:: Reset | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a93172c634b9a56df5ebcfb58c131916c4c6282
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7237951c930fb302ec1fcd6766beb510c5f985da
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838288"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744807"
 ---
 # <a name="idiaenumdebugstreamdatareset"></a>IDiaEnumDebugStreamData::Reset
-Resetuje na początku sekwencji wyliczany.
+Resetuje do początku wyliczenia sekwencji.
 
 ## <a name="syntax"></a>Składnia
 
@@ -31,5 +31,5 @@ HRESULT Reset ();
 ## <a name="return-value"></a>Wartość zwracana
  Zwraca `S_OK`.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)

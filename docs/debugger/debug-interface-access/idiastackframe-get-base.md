@@ -1,5 +1,5 @@
 ---
-title: Idiastackframe::get_base — | Dokumentacja firmy Microsoft
+title: 'IDiaStackFrame:: get_base | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f72c39e7cbfe9589d2fdf6ed8d1b8f25dee99936
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6802737a69467fb823fb2df8df8160f459e739f1
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838161"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741735"
 ---
-# <a name="idiastackframegetbase"></a>IDiaStackFrame::get_base
+# <a name="idiastackframeget_base"></a>IDiaStackFrame::get_base
 Pobiera adres podstawowy ramki.
 
 ## <a name="syntax"></a>Składnia
@@ -33,10 +33,10 @@ HRESULT get_base ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca adres podstawowy.
+określoną Zwraca adres podstawowy.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`. Zwraca `S_FALSE`, jeśli właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

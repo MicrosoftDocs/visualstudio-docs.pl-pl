@@ -1,5 +1,5 @@
 ---
-title: 'Błąd: Debugowanie nie powiodło się, ponieważ nie włączono uwierzytelniania zintegrowanego Windows | Dokumentacja firmy Microsoft'
+title: 'Błąd: debugowanie nie powiodło się, ponieważ zintegrowane uwierzytelnianie systemu Windows nie jest włączone | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -17,103 +17,103 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2969e5c6e8e3a5fd5612fa843309e36f0dbc4c9b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ca4b4ee5bb254f952fb6eb02e255320a337f657c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850842"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737800"
 ---
-# <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Błąd: Debugowanie nie powiodło się, ponieważ nie włączono uwierzytelniania zintegrowanego Windows
-Uwierzytelnianie użytkownika, która wnioskowała o debugowaniu została uniemożliwiona przez błąd uwierzytelniania. Taka sytuacja może wystąpić przy próbie wkraczać do aplikacji sieci Web lub usługi sieci Web XML. Jedną z przyczyn tego błędu jest to zintegrowane uwierzytelnianie Windows nie jest włączona. Aby ją włączyć, wykonaj kroki opisane w "Aby włączyć zintegrowane uwierzytelnianie Windows".
+# <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Błąd: debugowanie nie powiodło się ponieważ zintegrowane uwierzytelnianie systemu Windows nie jest włączone
+Błąd uwierzytelniania uniemożliwił uwierzytelnienie użytkownika, który zażądał debugowania. Taka sytuacja może wystąpić podczas próby przekroczenia kroku do aplikacji sieci Web lub usługi sieci Web XML. Jedną z przyczyn tego błędu jest to, że zintegrowane uwierzytelnianie systemu Windows nie jest włączone. Aby je włączyć, wykonaj kroki opisane w sekcji "aby włączyć zintegrowane uwierzytelnianie systemu Windows".
 
- Jeśli ma włączone zintegrowane uwierzytelnianie Windows, a ten błąd jest nadal wyświetlana, może się zdarzyć, że ten błąd jest spowodowany **szyfrowanego uwierzytelniania dla Windows serwerów domeny** jest włączona. W takiej sytuacji należy skontaktować się z administratorem sieci.
+ Jeśli włączono zintegrowane uwierzytelnianie systemu Windows i nadal pojawia się ten błąd, może to być spowodowane tym, że jest włączone **uwierzytelnianie szyfrowane dla serwerów domeny systemu Windows** . W takiej sytuacji należy skontaktować się z administratorem sieci.
 
-### <a name="to-enable-integrated-windows-authentication"></a>Aby włączyć zintegrowane uwierzytelnianie Windows
+### <a name="to-enable-integrated-windows-authentication"></a>Aby włączyć zintegrowane uwierzytelnianie systemu Windows
 
-1. Zaloguj się do serwera sieci Web przy użyciu konta administratora.
+1. Zaloguj się na serwerze sieci Web przy użyciu konta administratora.
 
-2. Kliknij przycisk **Start** a następnie kliknij przycisk **Panelu sterowania**.
+2. Kliknij przycisk **Start** , a następnie kliknij pozycję **Panel sterowania**.
 
-3. W **Panelu sterowania**, kliknij dwukrotnie **narzędzia administracyjne**.
+3. W **Panelu sterowania**kliknij dwukrotnie ikonę **Narzędzia administracyjne**.
 
-4. Kliknij dwukrotnie **Internetowe usługi informacyjne**.
+4. Kliknij dwukrotnie **Internet Information Services**.
 
-5. Kliknij węzeł serwera sieci Web.
+5. Kliknij węzeł serwer sieci Web.
 
-     A **witryn sieci Web** zostanie otwarty folder poniżej nazwę serwera.
+     Folder **witryn sieci Web** zostanie otwarty pod nazwą serwera.
 
-6. Można skonfigurować uwierzytelniania dla wszystkich witryn sieci Web lub dla poszczególnych witryn sieci Web. Aby skonfigurować uwierzytelnianie dla wszystkich witryn sieci Web, kliknij prawym przyciskiem myszy **witryn sieci Web** folder, a następnie kliknij przycisk **właściwości**. Aby skonfigurować uwierzytelnianie witryny sieci Web, otwórz **witryn sieci Web** folderu, kliknij prawym przyciskiem myszy witryny sieci Web, a następnie kliknij przycisk **właściwości**.
+6. Można skonfigurować uwierzytelnianie dla wszystkich witryn sieci Web lub poszczególnych witryn sieci Web. Aby skonfigurować uwierzytelnianie dla wszystkich witryn sieci Web, kliknij prawym przyciskiem myszy folder **witryny sieci Web** , a następnie kliknij polecenie **Właściwości**. Aby skonfigurować uwierzytelnianie dla pojedynczej witryny sieci Web, Otwórz folder **witryny sieci Web** , kliknij prawym przyciskiem myszy poszczególne witryny sieci Web, a następnie kliknij polecenie **Właściwości**.
 
-     **Właściwości** zostanie wyświetlone okno dialogowe.
+     Zostanie wyświetlone okno dialogowe **Właściwości** .
 
-7. Kliknij przycisk **zabezpieczeń katalogu** kartę.
+7. Kliknij kartę **Zabezpieczenia katalogów** .
 
-8. W **anonimowy dostęp i kontrola uwierzytelniania** kliknij **Edytuj**.
+8. W sekcji **dostęp anonimowy i kontrola uwierzytelnienia** kliknij przycisk **Edytuj**.
 
-     **Metod uwierzytelniania** zostanie wyświetlone okno dialogowe.
+     Zostanie wyświetlone okno dialogowe **metody uwierzytelniania** .
 
-9. W obszarze **dostępu uwierzytelnionego**, wybierz opcję **uwierzytelniania zintegrowanego Windows**.
+9. W obszarze **dostęp uwierzytelniony**wybierz pozycję **zintegrowane uwierzytelnianie systemu Windows**.
 
-10. Kliknij przycisk **OK** zamknąć **metod uwierzytelniania** okno dialogowe.
+10. Kliknij przycisk **OK** , aby zamknąć okno dialogowe **metody uwierzytelniania** .
 
-11. Kliknij przycisk **OK** zamknąć **właściwości** okno dialogowe.
+11. Kliknij przycisk **OK** , aby zamknąć okno dialogowe **Właściwości** .
 
-12. Zamknij **Internetowe usługi informacyjne** okna.
+12. Zamknij okno **Internet Information Services** .
 
-### <a name="to-enable-integrated-windows-authentication-in-windows-vistaiis-7"></a>Aby włączyć zintegrowane uwierzytelnianie Windows w systemie Windows Vista/IIS 7
+### <a name="to-enable-integrated-windows-authentication-in-windows-vistaiis-7"></a>Aby włączyć zintegrowane uwierzytelnianie systemu Windows w systemie Windows Vista/IIS 7
 
-1. Zaloguj się do serwera sieci Web przy użyciu konta administratora.
+1. Zaloguj się na serwerze sieci Web przy użyciu konta administratora.
 
-2. Włącz uwierzytelnianie Windows oraz zgodność z narzędziami zarządzania II6, jeśli nie została wcześniej utworzona, wykonując następujące czynności:
+2. Włącz uwierzytelnianie systemu Windows i zgodność zarządzania II6, jeśli nie zostało to zrobione wcześniej, wykonując następujące czynności:
 
-    1. Kliknij przycisk **Start**, kliknij przycisk **Panelu sterowania** a następnie kliknij przycisk **programy**.
+    1. Kliknij przycisk **Start**, kliknij pozycję **Panel sterowania** , a następnie kliknij pozycję **programy**.
 
-    2. W obszarze **programy i funkcje**, kliknij przycisk **Windows Włącz lub wyłącz funkcje**.
+    2. W obszarze **programy i funkcje**kliknij pozycję **Włącz lub wyłącz funkcje systemu Windows**.
 
-         Okno dialogowe User Access Control pojawia się i wyświetli monit o uprawnienia kontynuować.
+         Zostanie wyświetlone okno dialogowe Access Control użytkownika i zostanie wyświetlony komunikat z prośbą o zgodę na kontynuowanie.
 
     3. Kliknij przycisk **Kontynuuj**.
 
-         Zostanie wyświetlone okno dialogowe funkcji Windows.
+         Zostanie wyświetlone okno dialogowe funkcje systemu Windows.
 
-    4. Na liście funkcji Rozwiń **Internetowe usługi informacyjne** węzła.
+    4. Na liście funkcja rozwiń węzeł **Internet Information Services** .
 
-    5. W obszarze **Internetowe usługi informacyjne**, rozwiń węzeł **usługi World Wide Web** węzła.
+    5. W obszarze **Internet Information Services**rozwiń węzeł **usługi World Wide Web Services** .
 
-    6. W obszarze **usługi World Wide Web**, kliknij przycisk **zabezpieczeń**.
+    6. W obszarze **World Wide Web Services**kliknij pozycję **zabezpieczenia**.
 
-    7. Kliknij przycisk **uwierzytelniania Windows**.
+    7. Kliknij pozycję **uwierzytelnianie systemu Windows**.
 
-    8. W obszarze **Internetowe usługi informacyjne**, rozwiń węzeł **narzędzia zarządzania siecią Web** węzła.
+    8. W obszarze **Internet Information Services**rozwiń węzeł **Narzędzia do zarządzania siecią Web** .
 
-    9. W obszarze **narzędzia zarządzania siecią Web**, rozwiń węzeł **zgodność z narzędziami zarządzania usług IIS 6** , a następnie wybierz węzeł **metabazy programu IIS 6 i zgodności konfiguracji usług IIS 6** pole wyboru.
+    9. W obszarze **Narzędzia do zarządzania siecią Web**rozwiń węzeł **zgodność zarządzania usługami IIS** w wersji 6, a następnie zaznacz pole wyboru **Zgodność konfiguracji metabazy usług IIS 6 i usług IIS 6** .
 
-    10. W obszarze **narzędzia zarządzania siecią Web**, wybierz opcję **Konsola zarządzania usługami IIS** i kliknij przycisk **OK.**
+    10. W obszarze **Narzędzia do zarządzania siecią Web**wybierz pozycję **Konsola zarządzania usługami IIS** , a następnie kliknij przycisk **OK.**
 
-    11. Uruchom ponownie komputer, aby zmiany zaczęły obowiązywać.
+    11. Uruchom ponownie komputer, aby te zmiany zaczęły obowiązywać.
 
-3. Kliknij przycisk **Start** , a następnie kliknij **Panelu sterowania**.
+3. Kliknij przycisk **Start** , a następnie kliknij pozycję **Panel sterowania**.
 
-4. Kliknij przycisk **Klasyczny**, a następnie kliknij dwukrotnie **narzędzia administracyjne**.
+4. Kliknij pozycję **Widok klasyczny**, a następnie kliknij dwukrotnie ikonę **Narzędzia administracyjne**.
 
-5. W **nazwa** kolumny i kliknij dwukrotnie plik **Internet Information Services (IIS) Manager**.
+5. W kolumnie **Nazwa** kliknij dwukrotnie pozycję **Menedżer Internet Information Services (IIS)** .
 
-6. W **połączeń** kolumny, rozwiń węzeł serwera.
+6. W kolumnie **połączenia** rozwiń węzeł serwera.
 
-     A **witryn sieci Web** zostanie otwarty folder poniżej nazwę serwera.
+     Folder **witryn sieci Web** zostanie otwarty pod nazwą serwera.
 
-7. Rozwiń **witryn sieci Web** węzła i kliknij witrynę sieci Web, dla której chcesz włączyć zintegrowane uwierzytelnianie Windows.
+7. Rozwiń węzeł **witryny sieci Web** , a następnie kliknij witrynę sieci Web, dla której chcesz włączyć zintegrowane uwierzytelnianie systemu Windows.
 
-8. Tytuł w środkowym okienku zmienia nazwę wybranej witryny sieci Web. W tym okienku w obszarze **IIS** nagłówek, kliknij dwukrotnie **uwierzytelniania**.
+8. Tytuł środkowego okienka zmienia nazwę wybranej witryny sieci Web. W tym okienku w obszarze nagłówek **usług IIS** kliknij dwukrotnie pozycję **uwierzytelnianie**.
 
-     Zmiany tytułu okienka **uwierzytelniania**.
+     Tytuł okienka zmieni się na **uwierzytelnianie**.
 
-9. W **uwierzytelniania** okienko w **nazwa** kolumny, kliknij prawym przyciskiem myszy **uwierzytelniania Windows** a następnie kliknij przycisk **Włącz**.
+9. W okienku **uwierzytelnianie** w kolumnie **Nazwa** kliknij prawym przyciskiem myszy pozycję **uwierzytelnianie systemu Windows** , a następnie kliknij pozycję **Włącz**.
 
-10. Zamknij **Internet Information Services (IIS) Manager** okna.
+10. Zamknij okno **menedżera Internet Information Services (IIS)** .
 
-## <a name="see-also"></a>Zobacz też
-- [Debugowanie aplikacji internetowych: Błędy i rozwiązywanie problemów](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
-- [Uwierzytelnianie szyfrowane firmy Microsoft](http://go.microsoft.com/fwlink/?LinkId=77938)
-- [Uruchamianie aplikacji sieci Web w systemie Windows Vista z usługami IIS 7.0 i Visual Studio](https://msdn.microsoft.com/Library/262a82ac-dd0e-4096-86c6-fb463e88be66)
+## <a name="see-also"></a>Zobacz także
+- [Debugowanie aplikacji internetowych: błędy i rozwiązywanie problemów](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+- [Uwierzytelnianie Microsoft Digest](http://go.microsoft.com/fwlink/?LinkId=77938)
+- [Uruchamianie aplikacji sieci Web w systemie Windows Vista przy użyciu usług IIS 7,0 i programu Visual Studio](https://msdn.microsoft.com/Library/262a82ac-dd0e-4096-86c6-fb463e88be66)

@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_undecoratedname — | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_undecoratedName | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9650c2ea67d847f225f047d62dd7d1867a61d4d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 533fc28da8cdd500234e07d2294a9d503476568e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64809176"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739011"
 ---
-# <a name="idiasymbolgetundecoratedname"></a>IDiaSymbol::get_undecoratedName
-Pobiera nieozdobioną nazwę zawartej dekorowane, C++ lub połączenia, nazwa.
+# <a name="idiasymbolget_undecoratedname"></a>IDiaSymbol::get_undecoratedName
+Pobiera niedekoracyjną nazwę dla C++ dekoracyjnego lub łączenia, nazwy.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,13 +33,13 @@ HRESULT get_undecoratedName ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca nieozdobioną nazwę C++ nazwy ozdobionej.
+określoną Zwraca niedekoracyjną nazwę nazwy C++ dekoracyjnej.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
-> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Wartość zwracana `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
