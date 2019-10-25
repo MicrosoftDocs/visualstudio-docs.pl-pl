@@ -14,12 +14,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 944825c00e55fcdb3a1a8f1f0c11d3a37a25025c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8fad79423465ac3d90c426862f93f09d721c7df3
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72639401"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72806989"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>Przewodnik: Tworzenie wielowarstwowej aplikacji danych
 *N-warstwowe* aplikacje danych to aplikacje, które uzyskują dostęp do danych i są rozdzielone na wiele warstw logicznych lub *warstw*. Oddzielenie składników aplikacji do odrębnych warstw zwiększa łatwość utrzymania i skalowalność aplikacji. Pozwala to na łatwiejsze wdrażanie nowych technologii, które mogą być stosowane do jednej warstwy, bez konieczności ponownego projektowania całego rozwiązania. Architektura N-warstwowa obejmuje warstwę prezentacji, warstwę środkową i warstwę danych. Warstwa środkowa zazwyczaj obejmuje warstwę dostępu do danych, warstwę logiki biznesowej i składniki współużytkowane, takie jak uwierzytelnianie i sprawdzanie poprawności. Warstwa danych obejmuje relacyjną bazę danych. Aplikacje N-warstwowe zwykle przechowują informacje poufne w warstwie dostępu do danych warstwy środkowej, aby zachować izolację od użytkowników końcowych, którzy uzyskują dostęp do warstwy prezentacji. Aby uzyskać więcej informacji, zobacz [Omówienie wielowarstwowych aplikacji do obsługi danych](../data-tools/n-tier-data-applications-overview.md).
@@ -48,7 +48,7 @@ W tym instruktażu należy wykonać następujące czynności:
 
 - Napisz kod, aby wypełnić tabele danych.
 
-![link wideo ](../data-tools/media/playvideo.gif) wersja wideo tego tematu, zobacz [wideo: jak utworzyć wielowarstwową aplikację do obsługi danych](http://go.microsoft.com/fwlink/?LinkId=115188).
+![link do](../data-tools/media/playvideo.gif) wideo dla wersji wideo tego tematu, zobacz [wideo How to: Tworzenie wielowarstwowej aplikacji danych](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/cc178916(v=vs.90)).
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 W tym instruktażu jest stosowana SQL Server Express LocalDB i Przykładowa baza danych Northwind.

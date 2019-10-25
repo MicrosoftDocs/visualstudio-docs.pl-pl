@@ -35,12 +35,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3c83e6b85e8657487254f1f4fb275a6280c786ff
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8654e42db8ec2a285c9104c6f43bc34beb22ad22
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72638944"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72806959"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Usługi Windows Communication Foundation i usługi danych WCF w programie Visual Studio
 
@@ -52,7 +52,7 @@ Windows Communication Foundation (WCF) to ujednolicona platforma służąca do t
 
 ### <a name="what-are-wcf-data-services"></a>Co to są Usługi danych programu WCF
 
-Usługi danych programu WCF to implementacja standardu protokołu Open Data (OData).  Usługi danych programu WCF pozwala uwidocznić dane tabelaryczne jako zestaw interfejsów API REST, co umożliwia Zwracanie danych przy użyciu standardowych czasowników HTTP, takich jak GET, POST, PUT i DELETE. Po stronie serwera Usługi danych programu WCF są zastępowane przez [interfejs API sieci Web ASP.NET](http://www.asp.net/web-api) na potrzeby tworzenia nowych usług OData. Biblioteka klienta Usługi danych programu WCF nadal jest dobrym rozwiązaniem w przypadku używania usług OData w aplikacji .NET z programu Visual Studio (**Project**  > **Dodaj odwołanie do usługi**). Aby uzyskać więcej informacji, zobacz [Usługi danych programu WCF 4,5](http://go.microsoft.com/fwlink/?LinkID=119952).
+Usługi danych programu WCF to implementacja standardu protokołu Open Data (OData).  Usługi danych programu WCF pozwala uwidocznić dane tabelaryczne jako zestaw interfejsów API REST, co umożliwia Zwracanie danych przy użyciu standardowych czasowników HTTP, takich jak GET, POST, PUT i DELETE. Po stronie serwera Usługi danych programu WCF są zastępowane przez [interfejs API sieci Web ASP.NET](https://dotnet.microsoft.com/apps/aspnet/apis) na potrzeby tworzenia nowych usług OData. Biblioteka klienta Usługi danych programu WCF nadal jest dobrym rozwiązaniem w przypadku używania usług OData w aplikacji .NET z programu Visual Studio (**Project**  > **Dodaj odwołanie do usługi**). Aby uzyskać więcej informacji, zobacz [Usługi danych programu WCF 4,5](http://go.microsoft.com/fwlink/?LinkID=119952).
 
 ### <a name="wcf-programming-model"></a>Model programowania WCF
 

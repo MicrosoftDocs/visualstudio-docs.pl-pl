@@ -1,7 +1,7 @@
 ---
 title: Tworzenie instalacji w trybie offline
 description: Dowiedz się, jak zainstalować program Visual Studio w trybie offline, gdy masz zawodne połączenie internetowe lub niska przepustowość.
-ms.date: 10/11/2019
+ms.date: 10/22/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b9c8b60914e814ab6957ee9ec9307b12d9c3d1ba
-ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.openlocfilehash: c8b59ce38657bab157b966a25e0cd27109510215
+ms.sourcegitcommit: 58000baf528da220fdf7a999d8c407a4e86c1278
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72516883"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72789983"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Tworzenie instalacji w trybie offline programu Visual Studio
 
@@ -180,6 +180,8 @@ Następnie użyj tego polecenia, aby uruchomić instalację:
 ```cmd
 c:\vslayout\vs_community.exe --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional
 ```
+
+Aby uzyskać więcej przykładów użycia [parametrów wiersza polecenia](use-command-line-parameters-to-install-visual-studio.md), zobacz [przykłady parametrów wiersza polecenia dla strony instalacji programu Visual Studio](command-line-parameter-examples.md) . 
 
 > [!NOTE]
 > Jeśli zostanie wyświetlony komunikat o błędzie z nieprawidłowym podpisem, należy zainstalować zaktualizowane certyfikaty. Otwórz folder certyfikaty w pamięci podręcznej offline. Kliknij dwukrotnie każdy plik certyfikatu, a następnie kliknij przycisk za pomocą kreatora Menedżera certyfikatów. Jeśli zostanie wyświetlony monit o podanie hasła, pozostaw to pole puste.

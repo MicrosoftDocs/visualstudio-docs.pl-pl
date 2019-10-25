@@ -21,16 +21,16 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3a20637b7c7c3afcf594d1498b6030c685e4be72
-ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
+ms.openlocfilehash: 515b9b7eb1b1a4d2dbee6329be782386b8370338
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72163060"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72806312"
 ---
 # <a name="code-analysis-for-cc-overview"></a>Analiza kodu dla języka CC++ /przegląd
 
-Narzędzie analityczneC++ c/Code zawiera informacje o możliwych defektach w kodzie źródłowymC++ c/. Typowe błędy kodowania zgłoszone przez narzędzie obejmują przepełnienia buforów, niezainicjowaną pamięć, odnośniki wskaźnika o wartości null oraz przecieki pamięci i zasobów. Narzędzie może również uruchamiać testy w oparciu o [ C++ podstawowe wytyczne](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
+Narzędzie analityczneC++ c/Code zawiera informacje o możliwych defektach w kodzie źródłowymC++ c/. Typowe błędy kodowania zgłoszone przez narzędzie obejmują przepełnienia buforów, niezainicjowaną pamięć, odnośniki wskaźnika o wartości null oraz przecieki pamięci i zasobów. Narzędzie może również uruchamiać testy w oparciu o [ C++ podstawowe wytyczne](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
 
 ## <a name="ide-integrated-development-environment-integration"></a>Integracja IDE (zintegrowane środowisko programistyczne)
 
@@ -50,7 +50,7 @@ C:\>cl /analyze Sample.cpp
 
 ## <a name="pragma-support"></a>Obsługa #pragma
 
-Można użyć dyrektywy `#pragma`, aby traktować ostrzeżenia jako błędy; Włącza lub wyłącza ostrzeżenia oraz pomija ostrzeżenia dla poszczególnych wierszy kodu. Aby uzyskać więcej informacji, zobacz [dyrektywy pragma i słowo kluczowe __pragma](https://docs.microsoft.com/cpp/preprocessor/pragma-directives-and-the-pragma-keyword).
+Aby traktować ostrzeżenia jako błędy, można użyć dyrektywy `#pragma`. Włącza lub wyłącza ostrzeżenia oraz pomija ostrzeżenia dla poszczególnych wierszy kodu. Aby uzyskać więcej informacji, zobacz [dyrektywy pragma i słowo kluczowe __pragma](/cpp/preprocessor/pragma-directives-and-the-pragma-keyword).
 
 ## <a name="annotation-support"></a>Obsługa adnotacji
 
@@ -62,12 +62,12 @@ Można wymagać, aby wszystkie operacje ewidencjonowania kodu źródłowego spe�
 
 ## <a name="team-build-integration"></a>Integracja kompilacji zespołowej
 
-Możesz użyć zintegrowanych funkcji systemu kompilacji, aby uruchomić Narzędzie analizy kodu jako krok procesu kompilacji [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)]. Aby uzyskać więcej informacji, zobacz [potoki Azure](/azure/devops/pipelines/index?view=vsts).
+Możesz użyć zintegrowanych funkcji systemu kompilacji, aby uruchomić Narzędzie analizy kodu jako krok procesu kompilacji [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)]. Aby uzyskać więcej informacji, zobacz [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Szybki start: Analiza kodu dla C/C++](quick-start-code-analysis-for-c-cpp.md)
-- [Przewodnik: Analizowanie kodu CC++ /Code dla wad @ no__t-1
+- [Szybki Start: Analiza kodu dla języka C/C++](quick-start-code-analysis-for-c-cpp.md)
+- [Przewodnik: Analizowanie kodu CC++ /Code dla wad](walkthrough-analyzing-c-cpp-code-for-defects.md)
 - [Analiza kodu C/C++ — ostrzeżenia](code-analysis-for-c-cpp-warnings.md)
 - [Korzystanie z kontrolerów podstawowych wytycznych dotyczących języka C++](using-the-cpp-core-guidelines-checkers.md)
 - [C++Informacje dotyczące najważniejszych wskazówek dotyczących sprawdzania](code-analysis-for-cpp-corecheck.md)

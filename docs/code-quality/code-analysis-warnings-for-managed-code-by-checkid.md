@@ -263,12 +263,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 621615879f4e9ee61a2830fd93c53a2baf64b898
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d8700d058c694afbea551e5b117a0e4a0461f2e8
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72622450"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72806170"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Ostrzeżenia analizy kodu dla kodu zarządzanego według CheckId
 
@@ -339,7 +339,7 @@ Poniższa tabela zawiera ostrzeżenia analizy kodu dla kodu zarządzanego przez 
 | CA1064 | [CA1064: Wyjątki powinny być publiczne](../code-quality/ca1064.md) | Wyjątek wewnętrzny jest widoczny tylko wewnątrz własnego zakresu wewnętrznego. W przypadku wystąpienia wyjątku poza zakresem wewnętrznym tylko wyjątek podstawowy może zostać użyty do jego przechwycenia. Jeśli wewnętrzny wyjątek jest Dziedziczony z <xref:System.Exception>, <xref:System.SystemException> lub <xref:System.ApplicationException>, kod zewnętrzny nie będzie miał wystarczających informacji, aby dowiedzieć się, co należy zrobić z wyjątkiem. |
 | CA1065 | [CA1065: Nie zgłaszaj wyjątków w nieoczekiwanych lokalizacjach](../code-quality/ca1065.md) | Metoda, od której nie oczekiwano zgłaszania wyjątków, zgłasza wyjątek. |
 | CA1068 | [CA1068: parametry CancellationToken muszą pochodzić z ostatnich](../code-quality/ca1068.md) | Metoda ma parametr CancellationToken, który nie jest ostatnim parametrem. |
-| CA1200 | [CA1200: Unikaj używania tagów cref z prefiksem](../code-quality/ca1200.md) | Atrybut [cref](https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/cref-attribute) w tagu dokumentacji XML oznacza "odwołanie do kodu". Określa, że wewnętrznym tekstem znacznika jest element kodu, taki jak typ, metoda lub właściwość. Unikaj używania tagów `cref` z prefiksami, ponieważ uniemożliwia kompilatorowi Weryfikowanie odwołań. Uniemożliwia również znajdowanie i aktualizowanie tych odwołań do tych symboli podczas refaktoryzacji przez program Visual Studio Integrated Development Environment (IDE). |
+| CA1200 | [CA1200: Unikaj używania tagów cref z prefiksem](../code-quality/ca1200.md) | Atrybut [cref](/dotnet/csharp/programming-guide/xmldoc/cref-attribute) w tagu dokumentacji XML oznacza "odwołanie do kodu". Określa, że wewnętrznym tekstem znacznika jest element kodu, taki jak typ, metoda lub właściwość. Unikaj używania tagów `cref` z prefiksami, ponieważ uniemożliwia kompilatorowi Weryfikowanie odwołań. Uniemożliwia również znajdowanie i aktualizowanie tych odwołań do tych symboli podczas refaktoryzacji przez program Visual Studio Integrated Development Environment (IDE). |
 | CA1300 | [CA1300: Określ wyliczenie MessageBoxOptions](../code-quality/ca1300.md) | Aby poprawnie wyświetlić okno komunikatu dla kultur stosujących pismo od prawej do lewej, członkowie RightAlign i RtlReading wyliczenia MessageBoxOptions muszą być przekazani do metody Show. |
 | CA1301 | [CA1301: Unikaj duplikowania akceleratorów](../code-quality/ca1301.md) | Klucz dostępu, znany również jako akcelerator, umożliwia dostęp z klawiatury do formantu za pomocą klawisza ALT. Gdy wiele kontrolek ma zduplikowane klucze dostępu, zachowanie klucza dostępu nie jest dobrze zdefiniowane. |
 | CA1302 | [CA1302: Nie umieszczaj w kodzie na stałe ciągów specyficznych dla ustawień regionalnych](../code-quality/ca1302.md) | Wyliczenie System.Environment.SpecialFolder zawiera elementy, które odwołują się do folderów specjalnych systemu. Lokalizacje tych folderów mogą mieć różne wartości w poszczególnych systemach operacyjnych; użytkownik może zmienić niektóre z tych lokalizacji; lokalizacje są zlokalizowane. Metoda Environment.GetFolderPath zwraca lokalizacje, które są skojarzone z wyliczeniem Environment.SpecialFolder, zlokalizowane i odpowiednie dla danego komputera. |

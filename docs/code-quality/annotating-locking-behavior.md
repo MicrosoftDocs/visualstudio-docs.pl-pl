@@ -32,12 +32,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 2460ca1c76eb43bdff89c87c880f405cdce12b48
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 26c788319331d0da4024844b50b4c495ed2c3a37
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72446313"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72806766"
 ---
 # <a name="annotating-locking-behavior"></a>Dodawanie adnotacji do zachowania blokującego
 Aby uniknąć błędów współbieżności w programie wielowątkowym, zawsze postępuj zgodnie z odpowiednią dyscypliną blokowania i korzystaj z adnotacji SAL.
@@ -70,7 +70,7 @@ Poniższa tabela zawiera listę adnotacji blokowania.
 |`_Acquires_lock_(expr)`|Adnotuj funkcję i wskazuje, że w stanie post funkcja zwiększa się o jedną liczbę blokad obiektu blokady o nazwie `expr`.|
 |`_Acquires_nonreentrant_lock_(expr)`|Zostanie wykorzystana blokada o nazwie `expr`.  Gdy blokada jest już utrzymywana, zgłaszany jest błąd.|
 |`_Acquires_shared_lock_(expr)`|Adnotuj funkcję i wskazuje, że w stanie post funkcja zwiększa się o jedną współdzieloną liczbę blokad obiektu blokady o nazwie `expr`.|
-|`_Create_lock_level_(name)`|Instrukcja, która deklaruje symbol `name` jako poziom blokady, aby mogła być używana w adnotacjach `_Has_Lock_level_` i `_Lock_level_order_`.|
+|`_Create_lock_level_(name)`|Instrukcja, która deklaruje symbol `name` być poziomem blokady, aby mogła być używana w `_Has_Lock_level_` adnotacji i `_Lock_level_order_`.|
 |`_Has_lock_kind_(kind)`|Adnotuj każdy obiekt, aby uściślić informacje o typie obiektu zasobu. Czasami typowy typ jest używany dla różnych rodzajów zasobów i przeciążony typ nie jest wystarczający do odróżnienia wymagań semantycznych między różnymi zasobami. Poniżej znajduje się lista wstępnie zdefiniowanych parametrów `kind`:<br /><br /> `_Lock_kind_mutex_`<br /> Identyfikator typu blokady dla muteksów.<br /><br /> `_Lock_kind_event_`<br /> Identyfikator rodzaju blokady dla zdarzeń.<br /><br /> `_Lock_kind_semaphore_`<br /> Identyfikator rodzaju blokady dla semaforów.<br /><br /> `_Lock_kind_spin_lock_`<br /> Identyfikator typu blokady dla blokad pokrętła.<br /><br /> `_Lock_kind_critical_section_`<br /> Identyfikator rodzaju blokady dla sekcji krytycznych.|
 |`_Has_lock_level_(name)`|Adnotuj obiekt blokady i nadaje mu poziom blokady `name`.|
 |`_Lock_level_order_(name1, name2)`|Instrukcja, która zapewnia kolejność blokowania między `name1` i `name2`.|
@@ -112,12 +112,12 @@ Inteligentne blokady zwykle zawijają natywne blokady i zarządzają ich okresem
 |----------------|-----------------|
 |`_Analysis_assume_smart_lock_acquired_`|Informuje Analizator, aby założyć, że inteligentna Blokada została pobrana. Ta adnotacja oczekuje typu blokady odwołania jako parametru.|
 |`_Analysis_assume_smart_lock_released_`|Nakazuje analizatorowi założenie, że inteligentna Blokada została wydana. Ta adnotacja oczekuje typu blokady odwołania jako parametru.|
-|`_Moves_lock_(target, source)`|Opisuje operację `move constructor`, która przenosi stan blokady z obiektu `source` do `target`. @No__t-0 jest traktowany jak nowo skonstruowany obiekt, dlatego każdy stan, który miał przed, zostanie utracony i zastąpiony przez stan `source`. @No__t-0 jest również resetowany do stanu czystego bez liczby blokad ani obiektu docelowego aliasu, ale aliasy wskazujące, pozostaną bez zmian.|
-|`_Replaces_lock_(target, source)`|Opisuje semantykę `move assignment operator`, w której wydano blokadę docelową przed przeniesieniem stanu ze źródła. Ta wartość może być traktowana jako kombinacja `_Moves_lock_(target, source)` poprzedzona `_Releases_lock_(target)`.|
+|`_Moves_lock_(target, source)`|Opisuje operację `move constructor`, która przenosi stan blokady z obiektu `source` do `target`. `target` jest traktowany jako nowo skonstruowany obiekt, dlatego każdy stanie musiał przed utratą i został zastąpiony przez stan `source`. `source` jest również resetowany do stanu czystego bez liczby blokad ani obiektu docelowego aliasu, ale aliasy wskazujące, pozostaną bez zmian.|
+|`_Replaces_lock_(target, source)`|Opisuje semantykę `move assignment operator`, w której wydano blokadę docelową przed przeniesieniem stanu ze źródła. Można to traktować jako kombinację `_Moves_lock_(target, source)` poprzedzonej `_Releases_lock_(target)`.|
 |`_Swaps_locks_(left, right)`|W tym artykule opisano zachowanie standardowego `swap`, które zakłada, że obiekty `left` i `right` wymieniają swój stan. Wymieniany stan obejmuje liczbę blokad i obiekt docelowy aliasu, jeśli jest obecny. Aliasy wskazujące na obiekty `left` i `right` pozostaną niezmienione.|
-|`_Detaches_lock_(detached, lock)`|Opisuje scenariusz, w którym typ otoki blokady zezwala na skojarzenie z zawartym w nim zasobem. Jest to podobne do sposobu, w jaki `std::unique_ptr` współpracuje ze swoim wskaźnikiem wewnętrznym: umożliwia programistom wyodrębnienie wskaźnika i pozostawienie jego kontenera inteligentnego wskaźnika w stanie czystym. Podobna logika jest obsługiwana przez `std::unique_lock` i może być implementowana w niestandardowych otokach blokady. Odłączona blokada zachowuje swój stan (liczba zablokowanych i obiekt docelowy aliasu, jeśli istnieje), podczas gdy otoka jest resetowana, aby zawierała liczbę blokad równą zero i bez obiektu docelowego aliasu, zachowując własne aliasy. Nie ma operacji dotyczących liczby blokad (zwalniania i pozyskiwania). Ta adnotacja zachowuje się dokładnie jako `_Moves_lock_`, z tą różnicą, że odłączony argument powinien być `return`, a nie `this`.|
+|`_Detaches_lock_(detached, lock)`|Opisuje scenariusz, w którym typ otoki blokady zezwala na skojarzenie z zawartym w nim zasobem. Jest to podobne do sposobu, w jaki `std::unique_ptr` współpracuje ze swoim wskaźnikiem wewnętrznym: umożliwia programistom wyodrębnienie wskaźnika i pozostawienie jego kontenera inteligentnego wskaźnika w stanie czystym. Podobna logika jest obsługiwana przez `std::unique_lock` i może być implementowana w niestandardowych otokach blokady. Odłączona blokada zachowuje swój stan (liczba zablokowanych i obiekt docelowy aliasu, jeśli istnieje), podczas gdy otoka jest resetowana, aby zawierała liczbę blokad równą zero i bez obiektu docelowego aliasu, zachowując własne aliasy. Nie ma operacji dotyczących liczby blokad (zwalniania i pozyskiwania). Ta adnotacja zachowuje się dokładnie tak, jak `_Moves_lock_`, z tą różnicą, że odłączony argument powinien być `return`, a nie `this`.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Korzystanie z adnotacji SAL w celu zmniejszenia liczby defektów kodu C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 - [Informacje o języku SAL](../code-quality/understanding-sal.md)
@@ -127,4 +127,4 @@ Inteligentne blokady zwykle zawijają natywne blokady i zarządzają ich okresem
 - [Określanie miejsca i warunków stosowania adnotacji](../code-quality/specifying-when-and-where-an-annotation-applies.md)
 - [Funkcje wewnętrzne](../code-quality/intrinsic-functions.md)
 - [Najlepsze rozwiązania i przykłady](../code-quality/best-practices-and-examples-sal.md)
-- [Blog zespołu ds. analizy kodu](http://go.microsoft.com/fwlink/p/?LinkId=251197)
+- [Blog zespołu ds. analizy kodu](https://blogs.msdn.microsoft.com/codeanalysis/)

@@ -7,12 +7,12 @@ ms.author: mblome
 manager: markl
 dev_langs:
 - CPP
-ms.openlocfilehash: fee4478f52cd107d2173919617aca8acd07234eb
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 762ba639c1443bb737087233d04c9e3753f2f455
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72445654"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72807071"
 ---
 # <a name="use-the-c-core-guidelines-checkers"></a>Korzystanie z kontrolerów podstawowych wytycznych dotyczących języka C++
 
@@ -73,24 +73,24 @@ c:\users\username\documents\visual studio 2015\projects\corecheckexample\coreche
 ========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
 ```
 
-C++ Podstawowe wskazówki ułatwiają pisanie lepszych i bezpieczniejszych kodów. Jeśli jednak istnieje wystąpienie, w którym nie należy stosować reguły lub profilu, można je łatwo pominąć bezpośrednio w kodzie. Można użyć atrybutu `gsl::suppress`, aby zachować C++ podstawowe sprawdzenie w wykrywaniu i raportowaniu naruszeń reguły w poniższym bloku kodu. Można oznaczyć poszczególne instrukcje, aby pominąć określone reguły. Można nawet pominąć profil całego ograniczenia, pisząc `[[gsl::suppress(bounds)]]` bez dołączania określonego numeru reguły.
+C++ Podstawowe wskazówki ułatwiają pisanie lepszych i bezpieczniejszych kodów. Jeśli jednak istnieje wystąpienie, w którym nie należy stosować reguły lub profilu, można je łatwo pominąć bezpośrednio w kodzie. Można użyć atrybutu `gsl::suppress`, aby zachować C++ podstawowe sprawdzenie w wykrywaniu i raportowaniu naruszeń reguły w poniższym bloku kodu. Można oznaczyć poszczególne instrukcje, aby pominąć określone reguły. Można nawet pominąć profil całego ograniczenia, pisząc `[[gsl::suppress(bounds)]]` bez uwzględniania określonego numeru reguły.
 
 ## <a name="supported-rule-sets"></a>Obsługiwane zestawy reguł
 W miarę dodawania nowych reguł do narzędzia C++ sprawdzania podstawowych wytycznych liczba ostrzeżeń, które są generowane dla istniejącego kodu, może się zwiększyć. Wstępnie zdefiniowanych zestawów reguł można użyć do filtrowania typów reguł do włączenia.
 Tematy referencyjne dotyczące większości reguł znajdują się w sekcji [Visual Studio C++ Core Check Reference](code-analysis-for-cpp-corecheck.md).
 
 W programie Visual Studio 2017 w wersji 15,3 obsługiwane są następujące zestawy reguł:
-- **Reguły wskaźnika właściciela** wymuszają [operacje sprawdzania zarządzania zasobami powiązane ze współwłaścicielem @ no__t-2T C++ > od podstawowych wytycznych](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- **Reguły wskaźnika właściciela** wymuszają [operacje sprawdzania zarządzania zasobami powiązane z właścicielami\<t > C++ z podstawowych wytycznych](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
-- **Reguły const** wymuszają [kontrole związane z wartością stałą C++ z podstawowych wytycznych](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).
+- **Reguły const** wymuszają [kontrole związane z wartością stałą C++ z podstawowych wytycznych](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).
 
-- **Reguły wskaźnika RAW** wymuszają [operacje sprawdzania zarządzania zasobami powiązane ze wskaźnikami nieprzetworzonymi z C++ podstawowych wskazówek](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- **Reguły wskaźnika RAW** wymuszają [operacje sprawdzania zarządzania zasobami powiązane ze wskaźnikami nieprzetworzonymi z C++ podstawowych wskazówek](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
-- **Reguły unikatowego wskaźnika** wymuszają [operacje sprawdzania zarządzania zasobami powiązane z typami z semantyką unikatowego C++ wskaźnika z podstawowych wytycznych](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- **Reguły unikatowego wskaźnika** wymuszają [operacje sprawdzania zarządzania zasobami powiązane z typami z semantyką unikatowego C++ wskaźnika z podstawowych wytycznych](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
-- **Reguły związane z ograniczeniami** wymuszają [profil ograniczenia C++ podstawowych wytycznych](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
+- **Reguły związane z ograniczeniami** wymuszają [profil ograniczenia C++ podstawowych wytycznych](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
 
-- **Reguły typu** wymuszają [Profil typu C++ podstawowych wytycznych](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile).
+- **Reguły typu** wymuszają [Profil typu C++ podstawowych wytycznych](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile).
 
 **Program Visual Studio 2017 w wersji 15,5**:
 
@@ -131,7 +131,7 @@ Te makra odpowiadają zestawom reguł i rozszerzają je na listę wartości ostr
 
 ## <a name="attributes"></a>Atrybuty
 
-Kompilator Microsoft Visual C++ Compiler ma ograniczoną obsługę atrybutu pomijania GSL. Może służyć do pomijania ostrzeżeń dotyczących wyrażeń i bloków instrukcji wewnątrz funkcji.
+Kompilator firmy C++ Microsoft ma ograniczoną obsługę atrybutu pomijania GSL. Może służyć do pomijania ostrzeżeń dotyczących wyrażeń i bloków instrukcji wewnątrz funkcji.
 
 ```cpp
 // Suppress only warnings from the 'r.11' rule in expression.
@@ -231,11 +231,11 @@ Należy ustawić kilka zmiennych środowiskowych i użyć odpowiednich opcji wie
    - `/analyze:plugin EspXEngine.dll` ta opcja ładuje aparat rozszerzeń analizy kodu do przodu. Ten aparat, z kolei, ładuje C++ najważniejsze wskazówki.
 
 ## <a name="use-the-guideline-support-library"></a>Korzystanie z biblioteki podstawowej pomocy technicznej
-Podstawowa Biblioteka pomocy technicznej została zaprojektowana w celu ułatwienia przestrzegania podstawowych wytycznych. GSL zawiera definicje, które umożliwiają zamianę konstrukcji podatnych na błędy z bezpieczniejszymi alternatywami. Na przykład można zastąpić parę `T*, length` parametrów z typem `span<T>`. GSL jest dostępny w [http://www.nuget.org/packages/Microsoft.Gsl](http://www.nuget.org/packages/Microsoft.Gsl). Biblioteka jest open source, dzięki czemu można przeglądać źródła, wprowadzać komentarze lub współtworzyć. Projekt można znaleźć pod adresem [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).
+Podstawowa Biblioteka pomocy technicznej została zaprojektowana w celu ułatwienia przestrzegania podstawowych wytycznych. GSL zawiera definicje, które umożliwiają zamianę konstrukcji podatnych na błędy z bezpieczniejszymi alternatywami. Na przykład można zastąpić parę `T*, length` parametrów z typem `span<T>`. GSL jest dostępny w [http://www.nuget.org/packages/Microsoft.Gsl](https://www.nuget.org/packages/Microsoft.Gsl). Biblioteka jest open source, dzięki czemu można przeglądać źródła, wprowadzać komentarze lub współtworzyć. Projekt można znaleźć pod adresem [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).
 
 ## <a name="vs2015_corecheck"></a>Korzystanie z C++ podstawowych wskazówek dotyczących sprawdzania w projektach programu Visual Studio 2015
 
-W przypadku korzystania z C++ programu Visual Studio 2015 zestawy reguł analizy kodu podstawowego nie są instalowane domyślnie. Należy wykonać kilka dodatkowych kroków, aby można było włączyć podstawowe C++ narzędzia do analizy kodu w programie Visual Studio 2015. Firma Microsoft zapewnia pomoc techniczną dla projektów programu Visual Studio 2015 przy użyciu pakietu NuGet. Pakiet ma nazwę Microsoft. CppCoreCheck i jest dostępny w [http://www.nuget.org/packages/Microsoft.CppCoreCheck](http://www.nuget.org/packages/Microsoft.CppCoreCheck). Ten pakiet wymaga co najmniej programu Visual Studio 2015 z aktualizacją Update 1.
+W przypadku korzystania z C++ programu Visual Studio 2015 zestawy reguł analizy kodu podstawowego nie są instalowane domyślnie. Należy wykonać kilka dodatkowych kroków, aby można było włączyć podstawowe C++ narzędzia do analizy kodu w programie Visual Studio 2015. Firma Microsoft zapewnia pomoc techniczną dla projektów programu Visual Studio 2015 przy użyciu pakietu NuGet. Pakiet ma nazwę Microsoft. CppCoreCheck i jest dostępny w [http://www.nuget.org/packages/Microsoft.CppCoreCheck](https://www.nuget.org/packages/Microsoft.CppCoreCheck). Ten pakiet wymaga co najmniej programu Visual Studio 2015 z aktualizacją Update 1.
 
 Pakiet instaluje również inny pakiet jako zależność, tylko w przypadku podstawowej biblioteki obsługi (GSL). GSL jest również dostępna w witrynie GitHub pod adresem [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).
 
@@ -253,6 +253,6 @@ Ze względu na sposób ładowania reguł analizy kodu należy zainstalować paki
 
    Pakiet NuGet dodaje do projektu dodatkowy plik MSBuild *. targets* , który jest wywoływany po włączeniu analizy kodu dla projektu. Ten plik *targets* dodaje C++ podstawowe reguły sprawdzania jako dodatkowe rozszerzenie narzędzia do analizy kodu programu Visual Studio. Po zainstalowaniu pakietu można użyć okna dialogowego strony właściwości, aby włączyć lub wyłączyć reguły wydane i eksperymentalne.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Podstawowe informacje C++ o sprawdzaniu programu Visual Studio](code-analysis-for-cpp-corecheck.md)

@@ -10,55 +10,55 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: d1703fb5386c7b29446b621d2e83f9486e93dd3d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 4bbff0c2d149afddc355afe5f6c93e9d0aea54c0
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679262"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72806912"
 ---
-# <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Publikowanie aplikacji sieci Web w usłudze Azure App Service przy użyciu programu Visual Studio
+# <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Publikowanie aplikacji sieci Web w celu Azure App Service przy użyciu programu Visual Studio
 
-W przypadku aplikacji ASP.NET, ASP.NET Core, Node.js i platformy .NET Core, publikowanie do usługi Azure App Service lub Azure App Service dla systemu Linux (przy użyciu kontenerów) przy użyciu jednej z następujących metod.
+W przypadku aplikacji ASP.NET, ASP.NET Core, Node. js i .NET Core można publikować w Azure App Service lub Azure App Service Linux (przy użyciu kontenerów) przy użyciu jednej z poniższych metod.
 
-* Ciągła (lub automatycznych) wdrożenia aplikacji, użyj DevOps platformy Azure za pomocą [potoki Azure](https://docs.microsoft.com/azure/devops/pipelines/get-started-yaml?view=azdevops).
+* Aby ciągłe (lub zautomatyzowane) wdrażanie aplikacji, użyj platformy Azure DevOps z [Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops).
 
-* Jednorazowe (lub ręczne) wdrożenia aplikacji, należy użyć **Publikuj** narzędzia w programie Visual Studio, aby wdrożyć aplikacje ASP.NET, ASP.NET Core, Node.js i platformy .NET Core w usłudze Azure App Service lub usługi App Service dla systemu Linux (przy użyciu kontenerów). Dla aplikacji w języku Python, postępuj zgodnie z instrukcjami [językiem Python — publikowanie w usłudze Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md).
+* W przypadku wdrożenia aplikacji jednorazowego (lub ręcznego) Użyj narzędzia do **publikowania** w programie Visual Studio, aby wdrożyć aplikacje ASP.NET, ASP.NET Core, Node. js i .NET Core do Azure App Service lub App Service dla systemu Linux (przy użyciu kontenerów). W przypadku aplikacji języka Python postępuj zgodnie z instrukcjami w sekcji [Python-Publish, aby Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md).
 
-W tym artykule opisano sposób używania **Publikuj** narzędzie jednorazowe wdrożenia.
+W tym artykule opisano sposób korzystania z narzędzia do **publikowania** na potrzeby wdrożenia jednorazowego.
 
 [!INCLUDE [quickstart-prereqs-azure](includes/quickstart-prereqs-azure.md)]
 
 ## <a name="publish-to-azure-app-service"></a>Publikowanie w usłudze Azure App Service
 
-1. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Publikuj** (lub użyj **kompilacji** > **Publikuj** element menu).
+1. W Eksplorator rozwiązań kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Publikuj** (lub użyj elementu menu **Kompiluj** > **Opublikuj** ).
 
-    ![Polecenia Opublikuj w menu kontekstowym projektu w Eksploratorze rozwiązań](../deployment/media/quickstart-publish.png "wybierz polecenie Publikuj")
+    ![Polecenie Publikuj w menu kontekstowym projektu w Eksplorator rozwiązań](../deployment/media/quickstart-publish.png "Wybierz pozycję Publikuj")
 
-1. Jeśli wcześniej skonfigurowano żadnych profilów publikowania **Publikuj** zostanie wyświetlone okienko, w których wielkość wybranych **Utwórz nowy profil**.
+1. Jeśli wszystkie profile publikowania zostały wcześniej skonfigurowane, pojawi się okienko **Publikowanie** , w którym należy wybrać opcję **Utwórz nowy profil**.
 
-1. W **wybierz lokalizację docelową publikowania** okna dialogowego wybierz **usługi App Service**.
+1. W oknie dialogowym **Wybieranie elementu docelowego publikowania** wybierz **App Service**.
 
-    ![Usługa Azure App Service wybierz](../deployment/media/quickstart-publish-azure.png "wybierz usługi Azure App Service")
+    ![Wybierz Azure App Service](../deployment/media/quickstart-publish-azure.png "Wybierz Azure App Service")
 
-1. Wybierz **publikowania**. **Tworzenie usługi App Service** pojawi się okno dialogowe. Zaloguj się przy użyciu konta platformy Azure możesz, jeśli to konieczne, a następnie domyślnych ustawień usługi app Wypełnij pola.
+1. Wybierz pozycję **Publikuj**. Zostanie wyświetlone okno dialogowe **tworzenie App Service** . Zaloguj się przy użyciu konta platformy Azure, jeśli to konieczne, domyślne ustawienia usługi aplikacji wypełniają pola.
 
-    ![Utwórz usługę App Service](../deployment/media/quickstart-publish-settings-app-service.png "Tworzenie usługi Azure App Service")
+    ![Utwórz App Service](../deployment/media/quickstart-publish-settings-app-service.png "Utwórz Azure App Service")
 
-1. Wybierz pozycję **Utwórz**. Program Visual Studio wdroży aplikację do usługi Azure App Service i ładowania aplikacji sieci web w przeglądarce. Właściwości projektu **Publikuj** okienko zawiera adres URL witryny oraz inne szczegóły.
+1. Wybierz pozycję **Utwórz**. Program Visual Studio wdraża aplikację w Azure App Service, a aplikacja sieci Web ładuje się w przeglądarce. W okienku **Publikowanie** właściwości projektu wyświetlany jest adres URL witryny i inne szczegóły.
 
-    ![Okienko właściwości wyświetlanie podsumowania profil publikowania](../deployment/media/quickstart-publish-app-service-summary.png)
+    ![Okienko właściwości publikowania przedstawiające Podsumowanie profilu](../deployment/media/quickstart-publish-app-service-summary.png)
 
-## <a name="clean-up-resources"></a>Oczyszczanie zasobów
+## <a name="clean-up-resources"></a>Czyszczenie zasobów
 
-W poprzednich krokach utworzono zasoby platformy Azure w grupie zasobów. Jeśli nie będziesz już potrzebować tych zasobów w przyszłości, możesz je usunąć przez usunięcie grupy zasobów.
-Wybierz z menu po lewej stronie w witrynie Azure portal, **grup zasobów** , a następnie wybierz **myResourceGroup**.
-Na stronie grupy zasobów upewnij się, że zasoby na liście są tymi, które chcesz usunąć.
-Wybierz **Usuń**, typ **myResourceGroup** w polu tekstowym, a następnie wybierz pozycję **Usuń**.
+W poprzednich krokach zostały utworzone zasoby platformy Azure w grupie zasobów. Jeśli nie chcesz potrzebować tych zasobów w przyszłości, możesz je usunąć przez usunięcie grupy zasobów.
+Z menu po lewej stronie w obszarze Azure Portal wybierz pozycję **grupy zasobów** , a następnie wybierz pozycję Moja **resourceName**.
+Na stronie Grupa zasobów upewnij się, że wymienione zasoby są tymi, które chcesz usunąć.
+Wybierz pozycję **Usuń**, wpisz w polu tekstowym pozycję Moja **resourceName** , a następnie wybierz pozycję **Usuń**.
 
 ## <a name="next-steps"></a>Następne kroki
 
-W tym przewodniku Szybki Start przedstawiono sposób tworzenia profilu publikowania do wdrożenia na platformie Azure przy użyciu programu Visual Studio. Można również skonfigurować publikowanie profilu, importując opublikowania ustawień usługi Azure App Service.
+W tym przewodniku szybki start przedstawiono sposób użycia programu Visual Studio do utworzenia profilu publikowania na potrzeby wdrożenia na platformie Azure. Możesz również skonfigurować profil publikowania, importując ustawienia publikowania z Azure App Service.
 
 > [!div class="nextstepaction"]
 > [Importowanie ustawień publikowania i wdrażanie na platformie Azure](tutorial-import-publish-settings-azure.md)

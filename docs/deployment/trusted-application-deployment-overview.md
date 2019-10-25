@@ -1,5 +1,5 @@
 ---
-title: Trusted Application Deployment Overview | Dokumentacja firmy Microsoft
+title: Omówienie wdrażania zaufanych aplikacji | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,91 +16,91 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d4339295c47ee6bc8915eecfb581d9a0e8a4bed
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 8b3fca6db978eefc5af751d793ad299d89688cba
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747665"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72806827"
 ---
-# <a name="trusted-application-deployment-overview"></a>Zaufane wdrożenie aplikacji — omówienie
-Ten temat zawiera omówienie sposobu wdrażania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji, które mają podwyższony poziom uprawnień przy użyciu technologii zaufanego wdrożenia aplikacji.
+# <a name="trusted-application-deployment-overview"></a>Omówienie wdrażania zaufanych aplikacji
+Ten temat zawiera omówienie sposobu wdrażania aplikacji [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], które mają podwyższony poziom uprawnień przy użyciu technologii wdrażania zaufanych aplikacji.
 
- Zaufane wdrożenie aplikacji, część [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] technologii wdrażania ułatwia organizacjom o dowolnym rozmiarze, aby udzielić dodatkowych uprawnień do zarządzanej aplikacji w sposób, bezpieczeństwo, bardziej bezpiecznymi bez monitowania użytkownika. Za pomocą zaufanego wdrożenia aplikacji organizacji można skonfigurować tylko na kliencie, aby wyświetlić listę zaufanych wydawców, którzy są identyfikowane za pomocą certyfikatów Authenticode. Następnie dowolne [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji podpisanej przez jedną z tych zaufanych wydawców odbiera wyższego poziomu zaufania.
+ Wdrożenie zaufanej aplikacji, część technologii wdrażania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], ułatwia organizacjom dowolnego rozmiaru przyznawanie dodatkowych uprawnień do zarządzanej aplikacji w bezpieczny, bezpieczniejszy sposób bez monitowania użytkownika. W przypadku wdrażania zaufanych aplikacji organizacja może po prostu skonfigurować komputer kliencki w taki sposób, aby miał listę zaufanych wydawców, którzy zostali określeni przy użyciu certyfikatów Authenticode. Następnie każda aplikacja [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] podpisana przez jednego z tych zaufanych wydawców otrzymuje wyższy poziom zaufania.
 
 > [!NOTE]
-> Zaufane wdrożenie aplikacji wymaga jednorazowej konfiguracji komputera użytkownika. W zarządzanych środowiskach pulpitu tej konfiguracji można wykonać przy użyciu zasad globalnych. Jeśli to nie chcemy dla aplikacji, należy użyć podnoszenia poziomu uprawnień. Aby uzyskać więcej informacji, zobacz [zabezpieczanie aplikacji ClickOnce](../deployment/securing-clickonce-applications.md).
+> Wdrożenie zaufanej aplikacji wymaga jednorazowej konfiguracji komputera użytkownika. W zarządzanych środowiskach klasycznych tę konfigurację można wykonać przy użyciu zasad globalnych. Jeśli nie ma tego, czego potrzebujesz w aplikacji, użyj podniesienia uprawnień. Aby uzyskać więcej informacji, zobacz [Zabezpieczanie aplikacji ClickOnce](../deployment/securing-clickonce-applications.md).
 
-## <a name="trusted-application-deployment-basics"></a>Zaufanej podstawy wdrażania aplikacji
- W poniższej tabeli przedstawiono obiekty i role, które są zaangażowane w zaufanego wdrożenia aplikacji.
+## <a name="trusted-application-deployment-basics"></a>Podstawowe informacje dotyczące wdrażania aplikacji zaufanych
+ W poniższej tabeli przedstawiono obiekty i role, które są objęte wdrożeniem zaufanej aplikacji.
 
-|Obiekt lub roli|Opis|
+|Obiekt lub rola|Opis|
 |--------------------|-----------------|
-|administrator|Jednostki organizacyjne odpowiedzialny za aktualizowanie i utrzymywanie komputerów klienckich|
-|Menedżer zaufania|Podsystem we wspólnym środowisku uruchomieniowym (języka wspólnego CLR) odpowiedzialnych za wymuszania zabezpieczeń aplikacji klienta.|
-|Wydawcy|Jednostka, która zapisuje i przechowuje ją.|
-|Narzędzia wdrażania|Jednostka, która pakietów i rozpowszechnianie aplikacji dla użytkowników.|
-|certificate|Podpisu kryptograficznego, który zawiera klucz publiczny i prywatny; ogólnie wystawiony przez urząd certyfikacji (CA), który można ciesząca jego autentyczności.|
-|Certyfikatu Authenticode|Certyfikat z osadzone metadane opisujące między innymi do zastosowań, w których można zastosować certyfikat.|
-|Urząd certyfikacji|Organizacja, która weryfikuje tożsamość wydawcy i wystawia ich certyfikaty osadzone metadane wydawcy.|
-|główny urząd certyfikacji|Urząd certyfikacji, które autoryzują innych urzędów certyfikacji do wystawiania certyfikatów.|
-|kontener klucza|Logiczne miejsce do magazynowania w programie Microsoft Windows do przechowywania certyfikatów.|
-|zaufanego wydawcy|Wydawca, którego certyfikat Authenticode został dodany do listy zaufania certyfikatów (CTL) na komputerze klienckim.|
+|administratora|Jednostka organizacyjna odpowiedzialna za aktualizowanie i obsługiwanie komputerów klienckich|
+|Menedżer zaufania|Podsystem w środowisku uruchomieniowym języka wspólnego (CLR) odpowiedzialny za Wymuszanie zabezpieczeń aplikacji klienta.|
+|dawc|Jednostka, która zapisuje i utrzymuje aplikację.|
+|narzędzia wdrażania|Jednostka, która pakuje i dystrybuuje aplikację dla użytkowników.|
+|certificate|Sygnatura kryptograficzna, która składa się z klucza publicznego i prywatnego; Ogólnie wystawiony przez urząd certyfikacji (CA), który może zaręczyć za jego autentyczność.|
+|Certyfikat Authenticode|Certyfikat z osadzonymi metadanymi opisującymi, między innymi, zastosowania, dla których można zastosować certyfikat.|
+|Urząd certyfikacji|Organizacja, która weryfikuje tożsamość wydawców i wystawia certyfikaty z certyfikatem osadzonym w metadanych wydawcy.|
+|urząd główny|Urząd certyfikacji, który autoryzuje inne urzędy certyfikacji do wystawiania certyfikatów.|
+|kontener kluczy|Logiczna przestrzeń magazynowa w systemie Microsoft Windows do przechowywania certyfikatów.|
+|zaufany wydawca|Wydawca, którego certyfikat Authenticode został dodany do listy zaufania certyfikatów (CTL) na komputerze klienckim.|
 
- W większych organizacji wydawcy i wdrażania są często dwa osobne jednostki:
+ W dużych organizacjach Wydawca i program wdrażania często są dwoma osobnymi jednostkami:
 
-- Wydawca jest grupa, która tworzy [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji.
+- Wydawca jest grupą, która tworzy aplikację [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].
 
-- Wdrażania jest to grupa, zazwyczaj dział technologii informatycznych (IT) informacji, która będzie dystrybuować [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji na komputerach stacjonarnych korporacyjnym.
+- Wdrożenie to grupa, zazwyczaj dział IT, który dystrybuuje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji na komputery stacjonarne korporacyjne przedsiębiorstwa.
 
-Należy wykonać następujące kroki, aby móc korzystać z zaufanego wdrożenia aplikacji:
+Aby skorzystać z zaufanego wdrożenia aplikacji, należy wykonać następujące czynności:
 
 1. Uzyskaj certyfikat dla wydawcy.
 
-2. Dodaj wydawcy do magazynu zaufanych wydawców na wszystkich klientach.
+2. Dodaj wydawcę do magazynu zaufanych wydawców na wszystkich klientach.
 
-3. Utwórz swoje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji.
+3. Utwórz aplikację [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].
 
-4. Podpisać manifest wdrożenia przy użyciu certyfikatu wydawcy.
+4. Podpisz manifest wdrożenia za pomocą certyfikatu wydawcy.
 
-5. Publikowanie wdrażania aplikacji na komputerach klienckich.
+5. Opublikuj wdrożenie aplikacji na komputerach klienckich.
 
 ### <a name="obtain-a-certificate-for-the-publisher"></a>Uzyskaj certyfikat dla wydawcy
- Certyfikaty cyfrowe są podstawowym składnikiem systemu zabezpieczeń i uwierzytelniania Microsoft Authenticode. Jest standardowa częścią systemu operacyjnego Windows. Wszystkie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacje muszą być podpisane za pomocą certyfikatu cyfrowego, niezależnie od tego, czy uczestniczą w zaufanego wdrożenia aplikacji. Aby uzyskać pełne wyjaśnienie sposobu działania kodu Authenticode z [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], zobacz [ClickOnce i podpis Authenticode](../deployment/clickonce-and-authenticode.md).
+ Certyfikaty cyfrowe są głównym składnikiem systemu zabezpieczeń i uwierzytelniania Authenticode firmy Microsoft. Authenticode jest standardową częścią systemu operacyjnego Windows. Wszystkie aplikacje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] muszą być podpisane przy użyciu certyfikatu cyfrowego, niezależnie od tego, czy uczestniczą w wdrożeniu zaufanej aplikacji. Aby uzyskać pełne wyjaśnienie działania technologii Authenticode z [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], zobacz [ClickOnce i Authenticode](../deployment/clickonce-and-authenticode.md).
 
-### <a name="add-the-publisher-to-the-trusted-publishers-store"></a>Dodać wydawcę do magazynu zaufanych wydawców
- Dla Twojej [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji w celu otrzymywania wyższego poziomu zaufania, konieczne jest dodanie certyfikatu jako zaufanego wydawcę na każdym komputerze klienckim, na którym aplikacja zostanie uruchomiona. Wykonanie tego zadania jest jednorazowej konfiguracji. Po zakończeniu, można wdrożyć jako wiele [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacje podpisane przy użyciu certyfikatu wydawcy, jak chcesz, a zostaną wszystkie działają z wysokim poziomem zaufania.
+### <a name="add-the-publisher-to-the-trusted-publishers-store"></a>Dodawanie wydawcy do magazynu zaufanych wydawców
+ Aby aplikacja [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] mogła uzyskać wyższy poziom zaufania, należy dodać certyfikat jako zaufany wydawca do każdego komputera klienckiego, na którym będzie uruchamiana aplikacja. Wykonanie tego zadania jest konfiguracją jednorazową. Po zakończeniu można wdrożyć dowolną liczbę [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji podpisanych za pomocą certyfikatu wydawcy zgodnie z potrzebami, a wszystkie będą uruchamiane z wysokim zaufaniem.
 
- Jeżeli wdrażasz aplikację w środowisku zarządzanym pulpitu; na przykład firmowego intranetu uruchomiony system operacyjny Windows; Tworząc nową listę zaufania certyfikatów (CTL) za pomocą zasad grupy może dodawać zaufanych wydawców do magazynu klienta. Aby uzyskać więcej informacji, zobacz [utworzyć listę zaufania certyfikatów dla obiektu zasad grupy](http://go.microsoft.com/fwlink/?LinkId=102576).
+ Jeśli aplikacja jest wdrażana w środowisku pulpitu zarządzanego; na przykład firmowy intranet działający w systemie operacyjnym Windows; zaufanych wydawców można dodać do magazynu klienta, tworząc nową listę zaufania certyfikatów (CTL) za pomocą zasady grupy. Aby uzyskać więcej informacji, zobacz [Tworzenie listy zaufania certyfikatów dla obiektu zasady grupy](/previous-versions/windows/it-pro/windows-server-2003/cc728449(v=ws.10)).
 
- Nie wymaga wdrażania aplikacji w środowisku zarządzanym pulpitu, masz następujące opcje umożliwiające dodawanie certyfikatu do magazynu zaufanego wydawcy:
+ Jeśli aplikacja nie jest wdrażana w środowisku zarządzanym, dostępne są następujące opcje dodawania certyfikatu do magazynu zaufanych wydawców:
 
-- <xref:System.Security.Cryptography?displayProperty=fullName> Przestrzeni nazw.
+- Przestrzeń nazw <xref:System.Security.Cryptography?displayProperty=fullName>.
 
-- *CertMgr.exe*, który jest składnikiem programu Internet Explorer i w związku z tym istnieje w systemach Windows 98 i wszystkich nowszych wersji. Aby uzyskać więcej informacji, zobacz [Certmgr.exe (Menedżer certyfikatów narzędzie)](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool).
+- *Certmgr. exe*, który jest składnikiem programu Internet Explorer i w związku z tym istnieje w systemie Windows 98 i wszystkich nowszych wersjach. Aby uzyskać więcej informacji, zobacz [certmgr. exe (narzędzie Menedżer certyfikatów)](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool).
 
 ### <a name="create-a-clickonce-application"></a>Tworzenie aplikacji ClickOnce
- A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacja jest aplikacją kliencką programu .NET Framework, w połączeniu z plików manifestu, które opisują aplikacji, a następnie podaj parametry instalacji. Można włączyć program do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikację za pomocą **Publikuj** polecenia w pliku [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Alternatywnie można wygenerować wszystkie pliki, które są wymagane do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia za pomocą narzędzi, które są dołączone [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Aby uzyskać szczegółowe instrukcje dotyczące [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrażania, zobacz [instruktażu: Ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
+ Aplikacja [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] to .NET Frameworka aplikacja kliencka w połączeniu z plikami manifestu opisującymi aplikację i parametry instalacji. Program można przekształcić w aplikację [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] przy użyciu polecenia **Publikuj** w programie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Alternatywnie można generować wszystkie pliki wymagane do wdrożenia [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] przy użyciu narzędzi, które są dołączone do [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Aby uzyskać szczegółowe instrukcje dotyczące wdrażania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], zobacz [Przewodnik: ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
- Wdrażanie zaufanej aplikacji zależy od [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]i mogą być używane tylko z [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji.
+ Wdrożenie zaufanej aplikacji jest specyficzne dla [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]i może być używane tylko z aplikacjami [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].
 
-### <a name="sign-the-deployment"></a>Utwórz wdrożenie
- Po uzyskaniu certyfikatu, musisz podać go do podpisania wdrożenia. Jeśli aplikacja jest wdrażana przy użyciu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Kreator publikacji, Kreator automatycznie wygeneruje certyfikat testowy dla Ciebie, jeśli nie podano certyfikatu samodzielnie. Można również użyć [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] okno projektanta projektu, jednak podać certyfikat podany przez urząd certyfikacji.  Zobacz też [jak: Publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
+### <a name="sign-the-deployment"></a>Podpisz wdrożenie
+ Po uzyskaniu certyfikatu należy go użyć do podpisania wdrożenia. Jeśli aplikacja jest wdrażana za pomocą Kreatora publikowania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], Kreator automatycznie wygeneruje certyfikat testowy, jeśli certyfikat nie został określony samodzielnie. Jednak można również użyć okna projektanta projektu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], aby dostarczyć certyfikat dostarczony przez urząd certyfikacji.  Zobacz również [instrukcje: publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
 
 > [!CAUTION]
-> Zaleca się, że aplikacja jest wdrożona za pomocą certyfikatu testu.
+> Nie zalecamy, aby aplikacja była wdrażana z certyfikatem testowym.
 
- Możesz też zarejestrować aplikację za pomocą *Mage.exe* lub *MageUI.exe* narzędzi zestawu SDK. Aby uzyskać więcej informacji, zobacz [instruktażu: Ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Aby uzyskać pełną listę opcji wiersza polecenia, które dotyczą wdrażania podpisywania, zobacz [Mage.exe (Manifest Generation i narzędzia do edytowania)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).
+ Możesz również podpisać aplikację przy użyciu narzędzi programu *Mage. exe* lub *MageUI. exe* SDK. Aby uzyskać więcej informacji, zobacz [Przewodnik: ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Aby uzyskać pełną listę opcji wiersza polecenia związanych z podpisywaniem wdrożenia, zobacz [plik Mage. exe (narzędzie tworzenia i edycji manifestów)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).
 
 ### <a name="publish-the-application"></a>Publikowanie aplikacji
- Zaraz po zarejestrowaniu Twojego [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestów, aplikacja jest gotowa do opublikowania w lokalizacji instalacji. Lokalizacja instalacji może być serwerem sieci Web, udziału plików lub dysk lokalny. Gdy klient uzyskuje dostęp do pliku manifestu wdrożenia po raz pierwszy, musisz wybrać Menedżer zaufania czy [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji udzielono uprawnienia lub nie było uruchamiane na wyższym poziomie zaufania przez zainstalowany zaufany wydawcy. Menedżer zaufania sprawia, że ten wybór porównując certyfikat użyty do podpisania wdrożenia przy użyciu certyfikatów przechowywanych w klienta zaufanego wydawcę, przechowywania. Jeśli Menedżer zaufania znajdzie dopasowanie, aplikacja będzie działać z wysokim poziomem zaufania.
+ Po podpisaniu manifestów [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacja jest gotowa do opublikowania w lokalizacji instalacji. Lokalizacją instalacji może być serwer sieci Web, udział plików lub dysk lokalny. Gdy klient uzyskuje dostęp do manifestu wdrożenia po raz pierwszy, Menedżer zaufania musi określić, czy aplikacja [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ma przyznane uprawnienia, czy nie do uruchamiania na wyższym poziomie zaufania przez zainstalowanego zaufanego wydawcę. Menedżer zaufania dokonuje tego wyboru, porównując certyfikat używany do podpisywania wdrożenia z certyfikatami przechowywanymi w zaufanym magazynie wydawcy klienta. Jeśli Menedżer zaufania odnajdzie dopasowanie, aplikacja działa z wysokim zaufaniem.
 
 ## <a name="trusted-application-deployment-and-permission-elevation"></a>Wdrażanie zaufanej aplikacji i podniesienie uprawnień
- Bieżący wydawcy nie jest zaufanym wydawcą, Menedżer zaufania użyje podnoszenia poziomu uprawnień do wykonywania zapytań użytkownika dotyczące tego, czy użytkownik chce, aby przyznać aplikacji podwyższony poziom uprawnień. Jeśli podniesienie uprawnień jest wyłączona przez administratora, jednak aplikacja nie może uzyskać uprawnienia do uruchomienia. Aplikacja nie zostanie uruchomiona, i bez powiadomienia będzie widoczny dla użytkownika. Aby uzyskać więcej informacji o podniesienie uprawnień, zobacz [zabezpieczanie aplikacji ClickOnce](../deployment/securing-clickonce-applications.md).
+ Jeśli bieżący Wydawca nie jest zaufanym wydawcą, Menedżer zaufania będzie używać podniesienia uprawnień, aby wysłać zapytanie do użytkownika o tym, czy chce udzielić aplikacji podniesionych uprawnień. Jeśli jednak podniesienie uprawnień zostanie wyłączone przez administratora, aplikacja nie będzie mogła uzyskać uprawnień do uruchomienia. Aplikacja nie zostanie uruchomiona, a użytkownik nie będzie mógł wyświetlać żadnych powiadomień. Aby uzyskać więcej informacji na temat podniesienia uprawnień, zobacz [Zabezpieczanie aplikacji ClickOnce](../deployment/securing-clickonce-applications.md).
 
-## <a name="limitations-of-trusted-application-deployment"></a>Ograniczenia dotyczące wdrażania zaufanych aplikacji
- Wdrażanie zaufanych aplikacji służy do udzielania podwyższonego zaufania do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacje wdrożone za pośrednictwem sieci Web lub przez udział plików przedsiębiorstwa. Nie masz do użycia zaufanego wdrożenia aplikacji dla [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji rozproszonych na dysku CD, ponieważ domyślnie, te aplikacje są udzielane pełne zaufanie.
+## <a name="limitations-of-trusted-application-deployment"></a>Ograniczenia wdrożenia zaufanej aplikacji
+ Możesz użyć wdrożenia zaufanej aplikacji, aby udzielić podwyższonego zaufania do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji wdrożonych za pośrednictwem sieci Web lub udziału plików przedsiębiorstwa. Nie jest konieczne używanie wdrożenia zaufanej aplikacji na potrzeby aplikacji [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dystrybuowanych na dysku CD, ponieważ domyślnie te aplikacje mają przyznane pełne zaufanie.
 
 ## <a name="see-also"></a>Zobacz także
 - [Mage.exe (narzędzie generowania manifestu i edytowania)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
-- [Przewodnik: Ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
+- [Przewodnik: ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)

@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02e8beae03dc2828d81b80813325300fe31b3cea
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.openlocfilehash: 006ecdffd7b109c32f7063fee5f454e43c6c4597
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128155"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72806917"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Pierwsze spojrzenie na wdrożenie w programie Visual Studio
 
@@ -40,7 +40,7 @@ Zapoznaj się z przewodnikami Szybki Start i samouczkami, aby uzyskać instrukcj
 
 Wdrożenie do folderu lokalnego jest zwykle używane do testowania lub do rozpoczęcia wdrożenia etapowego, w którym jest używane inne narzędzie do wdrożenia końcowego.
 
-- **ASP.NET**, **ASP.NET Core**, **Node. js**, **Python**i. **Rdzeń netto**: Użyj narzędzia do publikowania do wdrożenia w folderze lokalnym. Dokładne dostępne opcje zależą od typu aplikacji. W Eksplorator rozwiązań kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Publikuj**. (Jeśli nie skonfigurowano wcześniej żadnych profilów publikowania, należy kliknąć przycisk **Utwórz nowy profil**). Następnie wybierz **folder**. Aby uzyskać więcej informacji, zobacz [wdrażanie w folderze lokalnym](quickstart-deploy-to-local-folder.md).
+- **ASP.NET**, **ASP.NET Core**, **Node. js**, **Python**i. **NET Core**: Użyj narzędzia do publikowania do wdrożenia w folderze lokalnym. Dokładne dostępne opcje zależą od typu aplikacji. W Eksplorator rozwiązań kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Publikuj**. (Jeśli nie skonfigurowano wcześniej żadnych profilów publikowania, należy kliknąć przycisk **Utwórz nowy profil**). Następnie wybierz **folder**. Aby uzyskać więcej informacji, zobacz [wdrażanie w folderze lokalnym](quickstart-deploy-to-local-folder.md).
 
     ![Wybierz pozycję Publikuj](../deployment/media/quickstart-publish.png)
 
@@ -48,9 +48,9 @@ Wdrożenie do folderu lokalnego jest zwykle używane do testowania lub do rozpoc
 
 ## <a name="publish-to-azure"></a>Publikowanie na platformie Azure
 
-- **ASP.NET**, **ASP.NET Core**, **Python**i **Node. js**: Publikowanie w usłudze Azure App Service lub Azure App Service Linux (przy użyciu kontenerów) przy użyciu jednej z poniższych metod.
+- **ASP.NET**, **ASP.NET Core**, **Python**i **Node. js**: publikowanie w Azure App Service lub Azure App Service Linux (przy użyciu kontenerów) przy użyciu jednej z poniższych metod.
 
-  - Aby ciągłe (lub zautomatyzowane) wdrażanie aplikacji, użyj platformy Azure DevOps z [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started-yaml?view=azdevops).
+  - Aby ciągłe (lub zautomatyzowane) wdrażanie aplikacji, użyj platformy Azure DevOps z [Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops).
 
   - W przypadku wdrożenia aplikacji jednorazowego (lub ręcznego) Użyj narzędzia do **publikowania** w programie Visual Studio.
 
@@ -73,15 +73,15 @@ Wdrożenie do folderu lokalnego jest zwykle używane do testowania lub do rozpoc
 
 ## <a name="publish-to-web-or-deploy-to-network-share"></a>Publikowanie w Internecie lub wdrażanie w udziale sieciowym
 
-- **ASP.NET**, **ASP.NET Core**, **Node. js**i **Python**: Za pomocą narzędzia do publikowania można wdrożyć w witrynie sieci Web za pomocą protokołu FTP lub Web Deploy. Aby uzyskać więcej informacji, zobacz [wdrażanie w witrynie sieci Web](quickstart-deploy-to-a-web-site.md).
+- **ASP.NET**, **ASP.NET Core**, **Node. js**i **Python**: można użyć narzędzia do publikowania do wdrożenia w witrynie sieci Web przy użyciu protokołu FTP lub Web Deploy. Aby uzyskać więcej informacji, zobacz [wdrażanie w witrynie sieci Web](quickstart-deploy-to-a-web-site.md).
 
     W Eksplorator rozwiązań kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Publikuj**. (Jeśli wcześniej skonfigurowano wszystkie profile publikowania, należy kliknąć przycisk **Utwórz nowy profil**). W narzędziu do publikowania wybierz żądaną opcję i wykonaj kroki konfiguracji.
 
-    ![Choose IIS, FTP, etc.](../deployment/media/quickstart-publish-iis-ftp.png)
+    ![Wybierz usługi IIS, FTP itp.](../deployment/media/quickstart-publish-iis-ftp.png)
 
     Aby uzyskać informacje na temat importowania profilu publikowania w programie Visual Studio, zobacz [Importowanie ustawień publikowania i wdrażanie w usługach IIS](../deployment/tutorial-import-publish-settings-iis.md).
 
-    Możesz również wdrożyć aplikacje i usługi ASP.NET na wiele innych sposobów. Aby uzyskać więcej informacji, zobacz [wdrażanie aplikacji i usług sieci web ASP.NET](http://www.asp.net/aspnet/overview/deployment).
+    Możesz również wdrożyć aplikacje i usługi ASP.NET na wiele innych sposobów. Aby uzyskać więcej informacji, zobacz [wdrażanie aplikacji i usług sieci web ASP.NET](/aspnet/mvc/overview/deployment/).
 
 - **Pulpit systemu Windows** Można opublikować aplikację klasyczną systemu Windows na serwerze sieci Web lub sieciowym udziale plików przy użyciu wdrażania ClickOnce. Użytkownicy mogą następnie zainstalować aplikację za pomocą jednego kliknięcia. Aby uzyskać więcej informacji, zobacz [wdrażanie aplikacji klasycznej przy użyciu technologii ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# i Visual Basic). Aby C++uzyskać/CLI, zobacz [wdrażanie aplikacji natywnej przy użyciu technologii ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) lub dlaC++języka C/, zobacz [wdrażanie aplikacji natywnej przy użyciu projektu Instalatora](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
@@ -89,11 +89,11 @@ Wdrożenie do folderu lokalnego jest zwykle używane do testowania lub do rozpoc
 
 W programie Visual Studio można tworzyć pakiety aplikacji do wdrożenia w Microsoft Store.
 
-- **PLATFORMY UWP**: Możesz spakować aplikację i wdrożyć ją za pomocą elementów menu. Aby uzyskać więcej informacji, zobacz [pakowanie aplikacji platformy UWP przy użyciu programu Visual Studio](/windows/uwp/packaging/packaging-uwp-apps).
+- **Platformy UWP**: Możesz spakować aplikację i wdrożyć ją za pomocą elementów menu. Aby uzyskać więcej informacji, zobacz [pakowanie aplikacji platformy UWP przy użyciu programu Visual Studio](/windows/uwp/packaging/packaging-uwp-apps).
 
     ![Tworzenie pakietu aplikacji](../deployment/media/feature-tour-create-app-package.jpg)
 
-- **Pulpit systemu Windows**: Program można wdrożyć do Microsoft Store, rozpoczynając od programu Visual Studio 2017 w wersji 15,4. Aby to zrobić, Zacznij od utworzenia projektu pakietu aplikacji systemu Windows. Aby uzyskać więcej informacji, zobacz [pakowanie aplikacji klasycznych na Microsoft Store](/windows/msix/desktop/desktop-to-uwp-packaging-dot-net).
+- **Pulpit systemu Windows**: można wdrożyć do Microsoft Store, rozpoczynając od programu Visual Studio 2017 w wersji 15,4. Aby to zrobić, Zacznij od utworzenia projektu pakietu aplikacji systemu Windows. Aby uzyskać więcej informacji, zobacz [pakowanie aplikacji klasycznych na Microsoft Store](/windows/msix/desktop/desktop-to-uwp-packaging-dot-net).
 
     ![Pakowanie aplikacji klasycznej](../deployment/media/feature-tour-desktop-bridge.png)
 
@@ -118,7 +118,7 @@ Jeśli potrzebujesz większej złożonej instalacji aplikacji klasycznej niż za
    W przypadku programu Visual Studio 2019 Pobierz [rozszerzenie WIX zestawu narzędzi programu Visual studio 2019](https://marketplace.visualstudio.com/items?itemName=WixToolset.WixToolsetVisualStudio2019Extension).
    ::: moniker-end
 
-- Pakiet Instalatora MSI lub EXE można utworzyć przy użyciu narzędzia [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) z oprogramowania Flexera. Program InstallShield może być używany z programem Visual Studio 2017 i nowszymi wersjami (wersja Community nie jest obsługiwana). Należy pamiętać, że program InstallShield Limited Edition nie jest już dołączony do programu Visual Studio i nie jest obsługiwany w programie Visual Studio 2017 i nowszych wersjach. Zapoznaj się z [oprogramowaniem Flexera](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) na temat przyszłej dostępności.
+- Pakiet Instalatora MSI lub EXE można utworzyć przy użyciu narzędzia [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) z oprogramowania Flexera. Program InstallShield może być używany z programem Visual Studio 2017 i nowszymi wersjami (wersja Community nie jest obsługiwana). Należy pamiętać, że program InstallShield Limited Edition nie jest już dołączony do programu Visual Studio i nie jest obsługiwany w programie Visual Studio 2017 i nowszych wersjach. Zapoznaj się z [oprogramowaniem Flexera](https://info.flexerasoftware.com/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) na temat przyszłej dostępności.
 
 - Pakiet Instalatora MSI lub EXE można utworzyć przy użyciu projektu konfiguracji (VDPROJ). Aby użyć tej opcji, zainstaluj [rozszerzenie projekty Instalator programu Visual Studio](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.MicrosoftVisualStudio2017InstallerProjects#overview).
 
@@ -148,7 +148,7 @@ Za pomocą Azure Pipelines można włączyć ciągłe wdrażanie aplikacji. Aby 
 | --- | --- | --- |
 | **Aplikacja pakietu Office** | Dodatek dla pakietu Office można opublikować w programie Visual Studio. | [Wdrażanie i publikowanie dodatku dla pakietu Office](https://dev.office.com/docs/add-ins/publish/publish) |
 | **Usługa WCF lub OData** | Inne aplikacje mogą używać usług WCF RIA wdrożonych na serwerze sieci Web. | [Opracowywanie i wdrażanie Usługi danych programu WCF](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
-| **LightSwitch** | LightSwitch nie jest już obsługiwany w programie Visual Studio 2017, ale nadal można ją wdrożyć z poziomu programu Visual Studio 2015 lub starszej wersji. | [Wdrażanie aplikacji LightSwitch](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) |
+| **Środowisku** | LightSwitch nie jest już obsługiwany w programie Visual Studio 2017, ale nadal można ją wdrożyć z poziomu programu Visual Studio 2015 lub starszej wersji. | [Wdrażanie aplikacji LightSwitch](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) |
 
 ## <a name="next-steps"></a>Następne kroki
 

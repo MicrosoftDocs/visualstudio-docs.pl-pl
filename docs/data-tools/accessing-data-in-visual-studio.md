@@ -14,12 +14,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f2a33a0090be980c221ebfbe7f3116cdfef7b23b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 07c7c9db37a951b689e28e87a02c7f41a667685b
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648984"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72807048"
 ---
 # <a name="access-data-in-visual-studio"></a>Uzyskiwanie dostępu do danych w programie Visual Studio
 
@@ -94,7 +94,7 @@ Jeśli łączysz się z usługami platformy Azure, pamiętaj o pobraniu najnowsz
 
 ### <a name="data-providers"></a>Dostawcy danych
 
-Aby można było korzystać z bazy danych w programie ADO.NET, musi ona mieć niestandardowego *dostawcę danych ADO.NET* lub musi uwidaczniać interfejs ODBC lub OLE DB. Firma Microsoft udostępnia [listę dostawców danych ADO.NET](https://docs.microsoft.com/dotnet/framework/data/adonet/ado-net-overview) dla produktów SQL Server, a także dostawców ODBC i OLE DB.
+Aby można było korzystać z bazy danych w programie ADO.NET, musi ona mieć niestandardowego *dostawcę danych ADO.NET* lub musi uwidaczniać interfejs ODBC lub OLE DB. Firma Microsoft udostępnia [listę dostawców danych ADO.NET](/dotnet/framework/data/adonet/ado-net-overview) dla produktów SQL Server, a także dostawców ODBC i OLE DB.
 
 ### <a name="data-modeling"></a>Modelowanie danych
 
@@ -144,9 +144,9 @@ Zainstaluj [obsługę języka Python w programie Visual Studio](../python/overvi
 
 [ADO.NET](/dotnet/framework/data/adonet/index) &mdash;Describes architekturę ADO.NET i sposób używania klas ADO.NET do zarządzania danymi aplikacji i współdziałania ze źródłami danych i XML.
 
-[ADO.NET Entity Framework](https://docs.microsoft.com/ef/ef6/) &mdash;Describes sposób tworzenia aplikacji do danych, które umożliwiają deweloperom programowanie w modelu koncepcyjnym, a nie bezpośrednio w odniesieniu do relacyjnej bazy danych.
+[ADO.NET Entity Framework](/ef/ef6/) &mdash;Describes sposób tworzenia aplikacji do danych, które umożliwiają deweloperom programowanie w modelu koncepcyjnym, a nie bezpośrednio w odniesieniu do relacyjnej bazy danych.
 
-[Usługi danych programu WCF 4,5](/dotnet/framework/data/wcf/index) &mdash;Describes używanie [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] do wdrażania usług danych w sieci Web lub intranecie implementujących [protokół Open Data Protocol (OData)](https://www.odata.org/).
+[Usługi danych programu WCF 4,5](/dotnet/framework/data/wcf/index)&mdash;opisuje, jak używać [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] do wdrażania usług danych w sieci Web lub intranecie implementujących [protokół Open Data Protocol (OData)](https://www.odata.org/).
 
 [Dane w rozwiązaniach pakietu office](../vsto/data-in-office-solutions.md) &mdash;Contains linki do tematów, które wyjaśniają, jak dane działają w rozwiązaniach pakietu Office. Obejmuje to informacje o programowaniu zorientowanym na schematach, buforowaniu danych i dostępie do danych po stronie serwera.
 
