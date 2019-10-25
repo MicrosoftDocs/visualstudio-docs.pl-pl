@@ -25,7 +25,7 @@
 ### [Kontaktowanie się z administratorem subskrypcji](contact-my-admin.md)
 ### Zalety
 #### Narzędzia
-##### [Środki na korzystanie z platformy Azure](vs-azure.md)
+##### [Indywidualne środki na korzystanie z usługi Azure DevTest](vs-azure.md)
 ##### [Azure DevOps](vs-azure-devops.md)
 ##### [Platforma Azure rozliczana według bieżącego użycia](vs-azure-payg.md)
 ##### [CAST Highlight](vs-cast.md)
