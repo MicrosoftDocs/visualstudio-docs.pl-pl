@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: Dowiedz się więcej na temat korzyści z pomocy technicznej dla społeczności platformy Azure zawartych w wybranych subskrypcjach programu Visual Studio.
-ms.openlocfilehash: 0f03d269ab316801a75cbb3b1b618d722ec46b89
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: 128147833baf450c0d161f39628a0928e9118412
+ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681254"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72816541"
 ---
 # <a name="azure-community-support-forum-in-visual-studio-subscriptions"></a>Forum pomocy technicznej platformy Azure w ramach subskrypcji programu Visual Studio
 Uzyskaj pomoc bezpośrednio z zespołu platformy Azure w ramach wybranych forów pomocy technicznej za pośrednictwem społeczności platformy Azure.  Korzyść społeczność platformy Azure zapewnia dostęp do kolekcji forów skoncentrowanych na tematach związanych z platformą Azure.
@@ -24,43 +24,43 @@ Uzyskaj pomoc bezpośrednio z zespołu platformy Azure w ramach wybranych forów
 | [Azure SQL Database](https://social.msdn.microsoft.com/Forums/home?forum=ssdsgetstarted&filter=alltypes&sort=lastpostdesc)                    | [Azure Active Directory](https://social.msdn.microsoft.com/forums/home?forum=WindowsAzureAD&filter=alltypes&sort=lastpostdesc)                             | [Azure Service Bus](https://social.msdn.microsoft.com/forums/home?forum=servbus&filter=alltypes&sort=lastpostdesc)                    |
 | [Azure Storage](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuredata&filter=alltypes&sort=lastpostdesc)                         | [API Management platformy Azure](https://social.msdn.microsoft.com/Forums/home?forum=azureapimgmt&filter=alltypes&sort=lastpostdesc)                               | [Azure DevTest Labs](https://social.msdn.microsoft.com/forums/home?forum=AzureDevTestLabs&filter=alltypes&sort=lastpostdesc)                   |
 | [Usługa Azure HDInsight](https://social.msdn.microsoft.com/Forums/azure/home?forum=hdinsight&filter=alltypes&sort=lastpostdesc)                       | [Azure Websites](https://social.msdn.microsoft.com/Forums/home?forum=windowsazurewebsitespreview&filter=alltypes&sort=lastpostdesc)                                     | [Azure Mobile Apps](https://social.msdn.microsoft.com/forums/home?forum=azuremobile&filter=alltypes&sort=lastpostdesc)                    |
-| [Usługa Azure Multi-Factor Authentication](https://social.msdn.microsoft.com/Forums/azure/home?forum=windowsazureactiveauthentication&filter=alltypes&sort=lastpostdesc)     | [Cennik i rozliczenia](https://social.msdn.microsoft.com/Forums/azure/home?forum=windowsazurepurchasing&filter=alltypes&sort=lastpostdesc)                                | [Narzędzia wiersza polecenia & Azure Scripting](https://social.msdn.microsoft.com/forums/home?forum=azurescripting&filter=alltypes&sort=lastpostdesc) |
+| [Multi-Factor Authentication platformy Azure](https://social.msdn.microsoft.com/Forums/azure/home?forum=windowsazureactiveauthentication&filter=alltypes&sort=lastpostdesc)     | [Cennik i rozliczenia](https://social.msdn.microsoft.com/Forums/azure/home?forum=windowsazurepurchasing&filter=alltypes&sort=lastpostdesc)                                | [Narzędzia wiersza polecenia & Azure Scripting](https://social.msdn.microsoft.com/forums/home?forum=azurescripting&filter=alltypes&sort=lastpostdesc) |
 | [portal zarządzania platformy Azure](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuremanagement&filter=alltypes&sort=lastpostdesc)               | [Azure Backup](https://social.msdn.microsoft.com/forums/home?forum=windowsazureonlinebackup&filter=alltypes&sort=lastpostdesc)                                       | [Azure Stack](https://social.msdn.microsoft.com/forums/home?forum=AzureStack&filter=alltypes&sort=lastpostdesc)                          |
-| [Usługa Azure Virtual Machines](https://social.msdn.microsoft.com/Forums/home?forum=WAVirtualMachinesforWindows&filter=alltypes&sort=lastpostdesc)                | [Azure Site Recovery](https://social.msdn.microsoft.com/forums/home?forum=hypervrecovmgr&filter=alltypes&sort=lastpostdesc)                                | [Azure Marketplace](https://social.msdn.microsoft.com/forums/home?forum=DataMarket&filter=alltypes&sort=lastpostdesc)                    |
+| [Virtual Machines platformy Azure](https://social.msdn.microsoft.com/Forums/home?forum=WAVirtualMachinesforWindows&filter=alltypes&sort=lastpostdesc)                | [Azure Site Recovery](https://social.msdn.microsoft.com/forums/home?forum=hypervrecovmgr&filter=alltypes&sort=lastpostdesc)                                | [Portal Azure Marketplace](https://social.msdn.microsoft.com/forums/home?forum=DataMarket&filter=alltypes&sort=lastpostdesc)                    |
 
 ## <a name="get-started"></a>Wprowadzenie
 Wprowadzenie do społeczności platformy Azure jest proste.
-1. Zaloguj się do witryny [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1. Zaloguj się do [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Znajdź kafelek społeczność platformy Azure w sekcji Pomoc techniczna i kliknij link **Uzyskaj pomoc** .
     > [!div class="mx-imgBorder"]
-    >![Kafelek społeczności platformy Azure](_img/vs-azure-community/vs-azure-community-tile.png)
+    >![kafelka społeczności platformy Azure](_img/vs-azure-community/vs-azure-community-tile.png)
 
 3. Zostanie wyświetlona lista dostępnych forów.  Po prostu kliknij wybrane forum.
     > [!div class="mx-imgBorder"]
-    > ![Fora społeczności platformy Azure](_img/vs-azure-community/vs-azure-community-forums.png)
+    > ![forów społeczności platformy Azure](_img/vs-azure-community/vs-azure-community-forums.png)
 
 4. Na forum można wyświetlać tematy i odpowiedzi, wyszukiwać odpowiedzi na pytania lub publikować nowe pytanie.
     > [!div class="mx-imgBorder"]
-    > ![Przykład społeczności platformy Azure](_img/vs-azure-community/vs-azure-community-example.png)
+    > Przykład ![platformy Azure Community](_img/vs-azure-community/vs-azure-community-example.png)
 
 ## <a name="eligibility"></a>Kryteria
 Dostępność korzyści społeczności platformy Azure zależy od poziomu subskrypcji, jak pokazano poniżej:
 
 |                                          Poziom subskrypcji                                           |     Kanały      |    Korzyść    | Odnawialny? |
 |-------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
-|                           Visual Studio Enterprise (standardowa)                           | VL, Azure, Retail |   Jeden rok    |    Tak     |
-|                          Visual Studio Professional (standardowa)                          | VL, Azure, Retail |   Jeden rok    |    Yes     |
+|                           Visual Studio Enterprise (standardowa)                           | LICENCJONOWANie, Azure, sprzedaż detaliczna |   Jeden rok    |    Tak     |
+|                          Visual Studio Professional (standardowa)                          | LICENCJONOWANie, Azure, sprzedaż detaliczna |   Jeden rok    |    Tak     |
 |                              Visual Studio Test Professional (standardowa)                               |    LICENCJONOWANie detaliczne     |   Jeden rok    |    Tak     |
-|                                       Platformy MSDN (standardowa)                                       |    LICENCJONOWANie detaliczne     |   Jeden rok    |    Yes     |
+|                                       Platformy MSDN (standardowa)                                       |    LICENCJONOWANie detaliczne     |   Jeden rok    |    Tak     |
 | Visual Studio Enterprise (chmura miesięczna), Visual Studio Professional (chmura miesięczna), NFR<sup>1</sup> |        Wszystkie        | Niedostępne |     Nie     |
 
-<sup></sup>1*obejmuje:    Nie do odsprzedaży (NFR), Microsoft EKWIWALENT, najbardziej cenny specjalista (MVP), kierownik regionalny (RD), Visual Studio Industry partner (VSIP), BizSpark, Wyobraź sobie, że firma Microsoft Certified Trainer (MCT)*
+<sup>1</sup>  *obejmuje: nie do odsprzedaży (NFR), Microsoft w pełni, najbardziej cennych profesjonalistów (MVP), regionalnego dyrektora (RD), Visual Studio Industry partner (VSIP), BizSpark, Wyobraź sobie, że firma Microsoft Certified Trainer (MCT)*
 
 > [!NOTE]
-> Firma Microsoft nie oferuje już Visual Studio Professional rocznych subskrypcji i Visual Studio Enterprise rocznych subskrypcji w ramach subskrypcji chmury. Istnieją zmiany w istniejących klientach i możliwość odnowienia, zwiększenia, zmniejszenia lub anulowania subskrypcji. Zachęcamy [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) nowych klientów do przeglądania różnych opcji zakupu programu Visual Studio.
+> Firma Microsoft nie oferuje już Visual Studio Professional rocznych subskrypcji i Visual Studio Enterprise rocznych subskrypcji w ramach subskrypcji chmury. Istnieją zmiany w istniejących klientach i możliwość odnowienia, zwiększenia, zmniejszenia lub anulowania subskrypcji. Zachęcamy nowych klientów do przechodzenia do [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) , aby poznać różne opcje zakupu programu Visual Studio.
 
-Nie masz pewności, której subskrypcji używasz?  Połącz się z, [AbywyświetlićwszystkiesubskrypcjeprzypisanedoTwojegoadresue-mail. https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Jeśli nie widzisz wszystkich subskrypcji, być może masz co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby zobaczyć te subskrypcje.
+Nie masz pewności, której subskrypcji używasz?  Połącz się z [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) , aby wyświetlić wszystkie subskrypcje przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkich subskrypcji, być może masz co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby zobaczyć te subskrypcje.
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
 - Inne zasoby społeczności platformy Azure można znaleźć na [stronie pomocy technicznej](https://azure.microsoft.com/support/forums/)dla społeczności platformy Azure.
@@ -69,4 +69,4 @@ Nie masz pewności, której subskrypcji używasz?  Połącz się z, [Abywyświet
 - Masz pytanie dotyczące środowiska IDE programu Visual Studio, Azure DevOps Services lub innych produktów lub usług Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Następne kroki
-Czy wiesz, że wiele subskrypcji programu Visual Studio ma kredyty na korzystanie z systemu Azure?  Dowiedz się, jak [aktywować swoją funkcję](vs-azure.md) .
+Czy wiesz, że wiele subskrypcji programu Visual Studio jest dostępnych w ramach usługi Azure DevTest w ramach pojedynczego kredytu?  Dowiedz się, jak [aktywować swoją funkcję](vs-azure.md) .
