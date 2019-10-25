@@ -15,12 +15,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 400e69ddaf9ebd3596edf3b926484b623225d672
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4df842f83f92afe8a8f747135632eb30a715d43f
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72634534"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888504"
 ---
 # <a name="how-to-use-3d-assets-in-your-game-or-app"></a>Instrukcje: korzystanie z zasobów 3D w grach lub aplikacjach
 
@@ -97,7 +97,7 @@ Korzystając z narzędzia potoku zawartości obrazów do tworzenia zasobów teks
 
 |Właściwość|Opis|
 |--------------|-----------------|
-|**Kompresuj**|Określa typ kompresji, który jest używany dla pliku wyjściowego.<br /><br /> Dostępne opcje to:<br /><br /> -   **bez kompresji**<br />-   **kompresję BC1_UNORM**<br />-   **kompresję BC1_UNORM_SRGB**<br />-   **kompresję BC2_UNORM**<br />-   **kompresję BC2_UNORM_SRGB**<br />-   **kompresję BC3_UNORM**<br />-   **kompresję BC3_UNORM_SRGB**<br />-   **kompresję BC4_UNORM**<br />-   **kompresję BC4_SNORM**<br />-   **kompresję BC5_UNORM**<br />-   **kompresję BC5_SNORM**<br />-   **kompresję BC6H_UF16**<br />-   **kompresję BC6H_SF16**<br />-   **kompresję BC7_UNORM**<br />-   **kompresję BC7_UNORM_SRGB**<br /><br /> Aby uzyskać informacje o tym, które formaty kompresji są obsługiwane w różnych wersjach programu DirectX, zobacz [Przewodnik programowania dla infrastruktury dxgi](http://go.microsoft.com/fwlink/p/?LinkId=246265).|
+|**Kompresuj**|Określa typ kompresji, który jest używany dla pliku wyjściowego.<br /><br /> Dostępne opcje to:<br /><br /> -   **bez kompresji**<br />-   **kompresję BC1_UNORM**<br />-   **kompresję BC1_UNORM_SRGB**<br />-   **kompresję BC2_UNORM**<br />-   **kompresję BC2_UNORM_SRGB**<br />-   **kompresję BC3_UNORM**<br />-   **kompresję BC3_UNORM_SRGB**<br />-   **kompresję BC4_UNORM**<br />-   **kompresję BC4_SNORM**<br />-   **kompresję BC5_UNORM**<br />-   **kompresję BC5_SNORM**<br />-   **kompresję BC6H_UF16**<br />-   **kompresję BC6H_SF16**<br />-   **kompresję BC7_UNORM**<br />-   **kompresję BC7_UNORM_SRGB**<br /><br /> Aby uzyskać informacje o tym, które formaty kompresji są obsługiwane w różnych wersjach programu DirectX, zobacz [Przewodnik programowania dla infrastruktury dxgi](/windows/win32/direct3ddxgi/dx-graphics-dxgi-overviews).|
 |Konwertuj na wstępnie przemnożony format alfa|**Tak** , aby przekonwertować obraz na wstępnie przemnożony format alfa w pliku wyjściowym; w przeciwnym razie **nie**. Tylko plik wyjściowy zostanie zmieniony, obraz źródłowy nie zmieni się.|
 |**Generuj MIPS**|**Wartość tak** powoduje wygenerowanie pełnego łańcucha MIP w czasie kompilacji i uwzględnienie go w pliku wyjściowym; w przeciwnym razie **nie**. Jeśli **nie**, a plik źródłowy zawiera już łańcuch mipmappingu, plik wyjściowy będzie miał łańcuch MCI; w przeciwnym razie plik wyjściowy nie będzie miał łańcucha MIP.|
 |**Dane wyjściowe zawartości**|Określa nazwę pliku wyjściowego. **Ważne:**  Zmiana rozszerzenia nazwy pliku wyjściowego nie ma wpływu na jego format pliku.|
@@ -122,7 +122,7 @@ Korzystając z narzędzia potoku zawartości programu do cieniowania, można zmi
 
 ### <a name="use-textures-and-images"></a>Używanie tekstur i obrazów
 
-Direct3D oferuje funkcje do tworzenia zasobów tekstury. W programie Direct3D 11 biblioteka narzędzi D3DX11 udostępnia dodatkowe funkcje do tworzenia zasobów tekstury i widoków zasobów bezpośrednio z plików obrazów. Aby uzyskać więcej informacji na temat sposobu tworzenia zasobu tekstury w programie Direct3D 11, zobacz [tekstury](http://go.microsoft.com/fwlink/p/?LinkID=246267). Aby uzyskać więcej informacji na temat używania biblioteki D3DX11 do tworzenia zasobów tekstury lub widoku zasobów na podstawie pliku obrazu, zobacz [How to: Initialize a Texture from a File](http://go.microsoft.com/fwlink/p/?LinkId=246268).
+Direct3D oferuje funkcje do tworzenia zasobów tekstury. W programie Direct3D 11 biblioteka narzędzi D3DX11 udostępnia dodatkowe funkcje do tworzenia zasobów tekstury i widoków zasobów bezpośrednio z plików obrazów. Aby uzyskać więcej informacji na temat sposobu tworzenia zasobu tekstury w programie Direct3D 11, zobacz [tekstury](/windows/win32/direct3d11/overviews-direct3d-11-resources-textures). Aby uzyskać więcej informacji na temat używania biblioteki D3DX11 do tworzenia zasobów tekstury lub widoku zasobów na podstawie pliku obrazu, zobacz [How to: Initialize a Texture from a File](/windows/win32/direct3d11/overviews-direct3d-11-resources-textures-how-to).
 
 ### <a name="use-3d-models"></a>Korzystanie z modeli 3D
 
@@ -130,7 +130,7 @@ Program Direct3D 11 nie udostępnia funkcji służących do tworzenia zasobów z
 
 ### <a name="use-shaders"></a>Używanie programów do cieniowania
 
-Direct3D oferuje funkcje do tworzenia zasobów programu do cieniowania i wiązania ich z programowalnym potokiem grafiki. Aby uzyskać więcej informacji na temat sposobu tworzenia zasobu modułu cieniującego w programie Direct3D i powiązania go z potokiem, zobacz [Przewodnik programowania dla HLSL](http://go.microsoft.com/fwlink/p/?LinkID=261521).
+Direct3D oferuje funkcje do tworzenia zasobów programu do cieniowania i wiązania ich z programowalnym potokiem grafiki. Aby uzyskać więcej informacji na temat sposobu tworzenia zasobu modułu cieniującego w programie Direct3D i powiązania go z potokiem, zobacz [Przewodnik programowania dla HLSL](/windows/win32/direct3dhlsl/dx-graphics-hlsl-pguide).
 
 W przypadku programowalnego potoku grafiki każdy etap potoku musi przydzielić do następnego etapu potoku wynik sformatowany w sposób, który może zrozumieć. Ponieważ projektant programu do cieniowania może tworzyć tylko cieniowanie pikseli, oznacza to, że jest to aplikacja, aby upewnić się, że odebrane dane są w oczekiwanym formacie. Kilka programowalnych etapów modułu cieniującego występuje przed cieniowanie pikseli i wykonywanie transformacji geometrycznych — cieniowania wierzchołków, cieniowania kadłuba, cieniowania domeny i cieniowania geometrycznego. Nieprogramowalny etap mozaikowania również występuje przed cieniowanie pikseli. Niezależnie od tego, który z tych etapów bezpośrednio poprzedza cieniowanie pikseli, musi podać swój wynik w tym formacie:
 

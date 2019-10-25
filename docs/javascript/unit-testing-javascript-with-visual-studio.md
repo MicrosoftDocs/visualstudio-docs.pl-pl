@@ -1,6 +1,6 @@
 ---
 title: Testowanie jednostkowe JavaScript i TypeScript
-description: Program Visual Studio zapewnia obsługę testów jednostkowych w języku JavaScript i kodzie TypeScript przy użyciu narzędzi Node. js dla programu Visual Studio
+description: Program Visual Studio zapewnia obsługę testów jednostkowych w języku JavaScript i kodzie TypeScript przy użyciu Node.js Tools for Visual Studio
 ms.date: 06/06/2018
 ms.topic: conceptual
 ms.devlang: javascript
@@ -11,23 +11,23 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: b1ef763295db7673896189ce000ed59d5da5becf
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.openlocfilehash: 90a440ce88690c12792c17729e93f9fa287dabb6
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787977"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888630"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Testowanie jednostkowe JavaScript i TypeScript w programie Visual Studio
 
 Narzędzia Node. js Tools for Visual Studio umożliwiają pisanie i uruchamianie testów jednostkowych przy użyciu niektórych popularnych platform języka JavaScript bez konieczności przełączania się do wiersza polecenia.
 
 Obsługiwane są następujące platformy:
-* Mocha ([mochajs.org](http://mochajs.org/))
-* Jasmine ([Jasmine.github.io](https://jasmine.github.io/))
-* Taśmy ([github.com/substack/tape](https://github.com/substack/tape))
+* Środowiska Mocha ([mochajs.org](https://mochajs.org/))
+* Jasmine ([Jasmine.GitHub.IO](https://jasmine.github.io/))
+* Taśma ([GitHub.com/Substack/Tape](https://github.com/substack/tape))
 * On ([jestjs.IO](https://jestjs.io/))
-* Eksportuj moduł uruchamiający (Platforma ta jest specyficzna dla narzędzi Node. js dla programu Visual Studio)
+* Eksportuj moduł uruchamiający (Platforma ta jest specyficzna dla Node.js Tools for Visual Studio)
 
 > [!WARNING]
 > Problem na taśmie uniemożliwia uruchomienie testów taśmowych. W przypadku scalania [#361](https://github.com/substack/tape/pull/361) żądania ściągnięcia należy rozwiązać problem.
@@ -38,7 +38,7 @@ Jeśli Twoja ulubiona platforma nie jest obsługiwana, zobacz [Dodawanie obsług
 
 Przed dodaniem testów jednostkowych do projektu upewnij się, że struktura, którą planujesz użyć, jest zainstalowana lokalnie w projekcie. Można to łatwo zrobić przy użyciu [okna instalacji pakietu npm](npm-package-management.md#npmInstallWindow).
 
-Preferowanym sposobem dodawania testów jednostkowych do projektu jest utworzenie folderu Tests w projekcie i ustawienie tego jako elementu głównego testu we właściwościach projektu. Należy również wybrać platformę testową, która ma być używana.
+Preferowanym sposobem dodawania testów jednostkowych do projektu jest utworzenie folderu *Tests* w projekcie i ustawienie tego jako elementu głównego testu we właściwościach projektu. Należy również wybrać platformę testową, która ma być używana.
 
 ![Ustawianie testów głównych i testów](../javascript/media/unit-test-project-properties.png)
 
@@ -65,17 +65,17 @@ describe('Test Suite 1', function() {
 
 Jeśli nie ustawisz opcji testów jednostkowych we właściwościach projektu, musisz upewnić się, że właściwość **Framework testów** w oknie **Właściwości** jest ustawiona na poprawną strukturę testową dla plików testów jednostkowych. Jest to wykonywane automatycznie przez szablony plików testów jednostkowych.
 
-![Struktury testowej](../javascript/media/UnitTestsFrameworkMocha.png)
+![Platforma testowa](../javascript/media/UnitTestsFrameworkMocha.png)
 
 > [!Note]
 > Opcje testów jednostkowych będą mieć preferencję dotyczącą ustawień poszczególnych plików.
 
-Po otwarciu Eksploratora testów (wybierz **testu** > **Windows** > **Eksplorator testów**), Visual Studio wykrywa i wyświetla testów. Jeśli testy nie są początkowo wyświetlane, ponownie skompiluj projekt, aby odświeżyć listę.
+Po otwarciu Eksploratora testów (wybierz **Test** > **Windows** > **Test Explorer**) program Visual Studio odnajduje i wyświetla testy. Jeśli testy nie są początkowo wyświetlane, ponownie skompiluj projekt, aby odświeżyć listę.
 
 ![Eksplorator testów](../javascript/media/UnitTestsDiscoveryMocha.png)
 
 > [!NOTE]
-> Nie używaj `outdir` opcji or `outfile` w *tsconfig. JSON*, ponieważ Eksplorator testów nie będzie w stanie znaleźć testów jednostkowych w plikach TypeScript.
+> Nie należy używać opcji `outdir` ani `outfile` w *tsconfig. JSON*, ponieważ Eksplorator testów nie będzie w stanie znaleźć testów jednostkowych w plikach TypeScript.
 
 ## <a name="run-tests"></a>Uruchom testy
 
@@ -86,7 +86,7 @@ Testy można uruchamiać w programie Visual Studio 2017 lub w wierszu polecenia.
 Testy można uruchomić, klikając link **Uruchom wszystkie** w Eksploratorze testów. Lub można uruchomić testy, wybierając jeden lub więcej testów lub grup, klikając prawym przyciskiem myszy i wybierając polecenie **Uruchom wybrane testy** z menu skrótów. Testy są uruchamiane w tle, a Eksplorator testów automatycznie aktualizuje i wyświetla wyniki. Ponadto można debugować wybrane testy, wybierając **Debuguj wybrane testy**.
 
 > [!Warning]
-> Debugowanie testów jednostkowych za pomocą węzła 8 + obecnie działa tylko w przypadku plików testowych języka JavaScript, pliki testowe TypeScript nie trafią na punkty przerwania. Aby obejść ten `debugger` element, użyj słowa kluczowego.
+> Debugowanie testów jednostkowych za pomocą węzła 8 + obecnie działa tylko w przypadku plików testowych języka JavaScript, pliki testowe TypeScript nie trafią na punkty przerwania. Jako obejście Użyj słowa kluczowego `debugger`.
 
 > [!NOTE]
 > Obecnie nie obsługujemy testów profilowania ani pokrycia kodu.
@@ -141,7 +141,7 @@ Ten folder musi zawierać plik JavaScript o tej samej nazwie, który eksportuje 
 * `find_tests`
 * `run_tests`
 
-Aby zapoznać się z dobrymi `find_tests` przykładami `run_tests` i implementacjami, zobacz implementację struktury testów jednostkowych środowiska Mocha w:
+Aby zapoznać się z dobrym przykładem `find_tests` i implementacji `run_tests`, zobacz Implementacja struktury testowania jednostek środowiska Mocha w programie:
 
 `<VisualStudioFolder>\Common7\IDE\Extensions\Microsoft\NodeJsTools\TestAdapter\TestFrameworks\mocha\mocha.js`
 

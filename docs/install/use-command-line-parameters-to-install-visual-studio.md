@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: fa423e3e45e5cfc859c08d0c633e671ea33bb134
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.openlocfilehash: fd40a1adbf6f1f35a651f38ce5173400d208b2bc
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777798"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888513"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio
 
@@ -249,7 +249,7 @@ W zależności od wyniku operacji `%ERRORLEVEL%` zmienna środowiskowa jest usta
 
 [!INCLUDE[install-error-codes-md](includes/install-error-codes-md.md)]
 
-Każda operacja generuje kilka plików dziennika w katalogu `%TEMP%`, które wskazują postęp instalacji. Posortuj folder według daty i Wyszukaj pliki zaczynające się od `dd_bootstrapper`, `dd_client` i `dd_setup` dla programu inicjującego, aplikacji Instalatora i aparatu Instalatora.
+Każda operacja generuje kilka plików dziennika w katalogu `%TEMP%`, które wskazują postęp instalacji. Posortuj folder według daty i Wyszukaj pliki zaczynające się od `dd_bootstrapper`, `dd_client`i `dd_setup` dla programu inicjującego, aplikacji Instalatora i aparatu Instalatora.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

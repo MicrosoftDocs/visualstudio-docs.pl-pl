@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/31/2019
 ms.topic: conceptual
 description: Dowiedz się, jak aktywować subskrypcję Test Professional wirtualizacji/SOA Parasoft w ramach subskrypcji programu Visual Studio.
-ms.openlocfilehash: 64aa689780dc30a5a6fcadf3e31ec24d3289056a
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.openlocfilehash: a1bd6525df65ee8cc0c9f3dd9dfd60673dbb6df1
+ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787711"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72816480"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Parasoft wirtualizację/SOAtest Professional w subskrypcjach programu Visual Studio
 
@@ -23,11 +23,11 @@ Przetestuj się wcześniej i częściej.  Symuluj i Przetestuj zachowanie niedos
 
 2. Znajdź kafelek Parasoft w sekcji Tools (narzędzia) i kliknij link **Pobierz kod** w dolnej części kafelka korzyści.   Otrzymasz powiadomienie, że kod został pomyślnie pobrany.  Kliknij przycisk **Aktywuj**.
    > [!div class="mx-imgBorder"]
-   > ![Kafelek korzyści Parasoft](_img/vs-parasoft/vs-parasoft-tile.png)
+   > Kafelek ![Parasoft korzyść](_img/vs-parasoft/vs-parasoft-tile.png)
 
 3. Nastąpi przekierowanie do witryny sieci Web Parasoft, w której utworzysz konto.  Po prostu podaj swoje informacje kontaktowe i kliknij przycisk **Prześlij**.
    > [!div class="mx-imgBorder"]
-   > ![Parasoft korzyści tworzenia konta](_img/vs-parasoft/vs-parasoft-new-account.png)
+   > ![](_img/vs-parasoft/vs-parasoft-new-account.png) tworzenia konta w ramach korzyści Parasoft
 
    > [!Note]
    > Tabela na stronie zawiera ceny za pełny rok i rabat dla programu Visual Studio. Te ceny będą obowiązywać po użyciu subskrypcji z sześciu miesięcy.  
@@ -38,7 +38,7 @@ Przetestuj się wcześniej i częściej.  Symuluj i Przetestuj zachowanie niedos
 
 6. Kliknij link odpowiadający systemowi operacyjnemu.
    > [!div class="mx-imgBorder"]
-   > ![Powitalna wiadomość E-mail z Parasoft korzyść](_img/vs-parasoft/vs-parasoft-email.png)
+   > ![powitalnej poczty E-mail](_img/vs-parasoft/vs-parasoft-email.png)
 
 7. W zależności od używanej przeglądarki mogą pojawić się różne okna dialogowe z możliwością uruchomienia Instalatora.  Na przykład w programie Internet Explorer zostanie wyświetlona lista ostatnich pobrań z parasoft_soavirt_ 9.10.2 _win32_x86_64. exe w górnej części strony. Kliknij przycisk **Uruchom** , aby uruchomić Instalatora.
 
@@ -48,7 +48,7 @@ Przetestuj się wcześniej i częściej.  Symuluj i Przetestuj zachowanie niedos
 
 10. Zostanie uruchomiony Kreator instalacji wirtualizacji Parasoft SOAtest &.  Kliknij przycisk **Dalej**.
     > [!div class="mx-imgBorder"]
-    > ![Rozpoczęcie instalacji korzyści Parasoft](_img/vs-parasoft/vs-parasoft-start-install.png)
+    > ![](_img/vs-parasoft/vs-parasoft-start-install.png) rozpoczęcia instalacji korzyści Parasoft
 
 11. Kliknij przycisk Akceptuję **umowę**, a następnie kliknij przycisk **dalej**.
 
@@ -73,23 +73,23 @@ Przetestuj się wcześniej i częściej.  Symuluj i Przetestuj zachowanie niedos
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Odnawialny?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (standardowa)   | LICENCJONOWANie, Azure, sprzedaż detaliczna, wybrane NFR<sup>1</sup> | 6 miesięcy       |  Tak       |
-| Visual Studio Professional (standardowa) | VL, Azure, Retail                                       | Niedostępne                                                           |Nie dotyczy         |
-| Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Niedostępne                                                           |Nie dotyczy         |
-| Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | Niedostępne                                                           |Nie dotyczy         |
-| Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure                                       | Niedostępne                                                           |Nie dotyczy|
+| Visual Studio Professional (standardowa) | LICENCJONOWANie, Azure, sprzedaż detaliczna                                       | Niedostępne                                                           |POTRĄCON         |
+| Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Niedostępne                                                           |POTRĄCON         |
+| Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | Niedostępne                                                           |POTRĄCON         |
+| Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure                                       | Niedostępne                                                           |POTRĄCON|
 ||
 
-<sup></sup>1*obejmuje:   Microsoft Partner Network (Enterprise).  Wyklucza  Nie do odsprzedaży (NFR), programu Visual Studio Industry partner (VSIP), pełnego etatu, MCT Software & Services Developer, BizSpark, Wyobraź sobie, najbardziej cennych profesjonalistów (MVP), dyrektora regionalnego (RD).  MCT & usług.*
+<sup>1</sup>  *zawiera: Microsoft Partner Network (Enterprise).  Wyklucza: nie dotyczy odsprzedaży (NFR), programu Visual Studio Industry partner (VSIP), pełnego etatu, MCT Software & Services Developer, BizSpark, Wyobraź sobie, najbardziej cennych profesjonalistów (MVP), kierownika Regionalnego (RD).  MCT & usług.*
 
 > [!NOTE]
-> Firma Microsoft nie oferuje już Visual Studio Professional rocznych subskrypcji i Visual Studio Enterprise rocznych subskrypcji w ramach subskrypcji chmury. Istnieją zmiany w istniejących klientach i możliwość odnowienia, zwiększenia, zmniejszenia lub anulowania subskrypcji. Zachęcamy [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) nowych klientów do przeglądania różnych opcji zakupu programu Visual Studio.
+> Firma Microsoft nie oferuje już Visual Studio Professional rocznych subskrypcji i Visual Studio Enterprise rocznych subskrypcji w ramach subskrypcji chmury. Istnieją zmiany w istniejących klientach i możliwość odnowienia, zwiększenia, zmniejszenia lub anulowania subskrypcji. Zachęcamy nowych klientów do przechodzenia do [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) , aby poznać różne opcje zakupu programu Visual Studio.
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
 - Potrzebujesz pomocy dotyczącej produktów Parasoft?  Zapoznaj się z następującymi zasobami:
   - Pomoc techniczna: https://www.parasoft.com/support/
-  - Parasoft centrum zasobów: https://www.parasoft.com/resources/
+  - Parasoft Resource Center: https://www.parasoft.com/resources/
 - Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
 - Masz pytanie dotyczące środowiska IDE programu Visual Studio, Azure DevOps Services lub innych produktów lub usług Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Następne kroki
-Skorzystaj z własnej piaskownicy programistycznej, aktywując środki na korzystanie z [platformy Azure](vs-azure.md). 
+Skorzystaj z własnej piaskownicy programistycznej, aktywując swoje środki na korzystanie z [platformy Azure DevTest](vs-azure.md). 

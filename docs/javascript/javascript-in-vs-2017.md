@@ -13,55 +13,55 @@ author: bowdenk7
 ms.author: wilkelly
 manager: jillfra
 monikerRange: vs-2017
-ms.openlocfilehash: c86dd5090d2cee6c49bd97f0895bba397e10c1ae
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 653b2576b0076d02f2e18cedc6f9f9890fd98fe5
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263051"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888662"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>Język JavaScript w programie Visual Studio 2017
 
-JavaScript jest językiem pierwszej klasy w programie Visual Studio. Podczas pisania kodu w języku JavaScript w środowisku IDE programu Visual Studio można używać większości lub wszystkich standardowych ułatwień edycji (fragmenty kodu, technologia IntelliSense itd.). W przypadku wielu typów aplikacji i usług, można napisać kod JavaScript.
+JavaScript to język pierwszej klasy w programie Visual Studio. Podczas pisania kodu w języku JavaScript w środowisku IDE programu Visual Studio można używać większości lub wszystkich standardowych ułatwień edycji (fragmenty kodu, technologia IntelliSense itd.). Można napisać kod JavaScript dla wielu typów i usług aplikacji.
 
 > [!NOTE]
-> Przyłączył nakład pracy całej społeczności, aby [dokumentów sieci web powiadomienia MDN](https://developer.mozilla.org/en-US/) zasobu kompleksowy deweloperach projektowania sieci web, przekierowując wszystkich (ponad 500 stron) firmy Microsoft odwołanie interfejsu API języka JavaScript z witryny docs.microsoft.com do ich powiadomienia MDN odpowiedniki. Aby uzyskać więcej informacji, zobacz ten [ogłoszenie](https://blogs.windows.com/msedgedev/2018/06/26/chakra-docs-mdn-web-docs/).
+> Dodaliśmy do społeczności społeczność rzeczy, aby powiadomienia MDN w witrynie [sieci Web dokumenty](https://developer.mozilla.org/en-US/) z jednym zatrzymywaniem, bardzo różnorodnym zasobem programistycznym, przekierowując wszystkie (500 + strony) informacje o interfejsie API języka JavaScript firmy Microsoft z docs.Microsoft.com do ich odpowiedników powiadomienia MDN. Aby uzyskać szczegółowe informacje, zobacz ten [anons](https://blogs.windows.com/msedgedev/2018/06/26/chakra-docs-mdn-web-docs/).
 
-## <a name="ES6"></a> Obsługa dla ECMAScript 2015 (ES6) i nie tylko
+## <a name="ES6"></a>Obsługa języka ECMAScript 2015 (ES6) i poza nim
 
-Program Visual Studio obsługuje teraz składnię dla aktualizacji języka ECMAScript, takich jak ECMAScript 2015 sierpnia 2016 r.
+Program Visual Studio obsługuje teraz składnię aktualizacji języka ECMAScript, takich jak ECMAScript 2015/2016.
 
 ### <a name="what-is-ecmascript-2015"></a>Co to jest ECMAScript 2015?
 
-Nadal ewoluuje JavaScript jako języka programowania i [TC39](https://www.ecma-international.org/memento/tc39-m.htm) jest odpowiedzialny za wprowadzanie aktualizacji Komitet.
-ECMAScript 2015 r. jest to aktualizacja dla języka JavaScript, którego oferuje przydatne nową składnię i funkcje. Aby uzyskać szczegółowe informacje na temat funkcji ES6, zapoznaj się z [to](http://es6-features.org) lokacji odniesienia.
+Kod JavaScript ciągle się rozwija jako język programowania, a [TC39](https://www.ecma-international.org/memento/tc39-m.htm) jest odpowiedzialny za Dokonywanie aktualizacji.
+ECMAScript 2015 to Aktualizacja języka JavaScript, która umożliwia korzystanie z nowej składni i funkcji. Aby uzyskać głębokie szczegółowe na temat funkcji ES6, zapoznaj się z [tą](http://es6-features.org/#Constants) lokacją odniesienia.
 
-Oprócz obsługi ECMAScript 2015 Visual Studio obsługuje ECMAScript 2016 i będą oferować obsługę dla przyszłych wersji ECMAScript, po ich wydaniu. Na bieżąco z TC39 i najnowsze zmiany w ECMAScript, postępuj zgodnie z ich pracy na [github](https://github.com/tc39).
+Oprócz obsługi języka ECMAScript 2015, Visual Studio obsługuje również ECMAScript 2016 i będzie obsługiwał przyszłe wersje języka ECMAScript w miarę ich wydaniu. Aby zachować TC39 i najnowsze zmiany w języku ECMAScript, postępuj zgodnie z ich pracą w witrynie [GitHub](https://github.com/tc39).
 
-### <a name="transpile-javascript"></a>Transpile JavaScript
+### <a name="transpile-javascript"></a>Transstertowanie kodu JavaScript
 
-Typowy problem za pomocą języka JavaScript jest chcesz używać najnowszych funkcji języków ES6 +, ponieważ pomagają mu bardziej wydajnej pracy, ale środowiska czasu wykonywania (często przeglądarki) nie obsługują te nowe funkcje. Oznacza to, że masz albo do śledzenia jakie przeglądarki obsługują funkcjach, (które może być uciążliwe) lub potrzebujesz możliwości wykonania konwersji kodu ES6 + do wersji, środowisk wykonawczych usługi docelowej zrozumieć (zazwyczaj ES5). Konwertowanie kodu na wersję obsługującą środowisko uruchomieniowe jest często określany jako "transpiling".
+Typowym problemem związanym z JavaScript jest korzystanie z najnowszych funkcji języka ES6 +, ponieważ mogą one zwiększyć produktywność, ale środowiska uruchomieniowe (często przeglądarki) nie obsługują jeszcze tych nowych funkcji. Oznacza to, że trzeba będzie śledzić, które przeglądarki obsługują funkcje (które mogą być żmudnym), lub że konieczne jest przekonwertowanie kodu ES6 + na wersję, którą ma zrozumieć docelowy program obsługi (zwykle ES5). Konwersja kodu do wersji, którą rozpoznaje środowisko uruchomieniowe, jest często określana jako "transpiling".
 
-Jedną z kluczowych funkcji TypeScript jest możliwość transpiluj ES6 kod jest współdzielony ES5 lub ES3, aby napisać kod, który sprawia, że są możesz najwydajniejszej, ale nadal uruchamiać kod na dowolnej platformie. Ponieważ języka JavaScript w programie [!include[vs_dev15](../../docs/misc/includes/vs_dev15_md.md)] używa tego samego języka usługi jako TypeScript, zbyt może korzystać ES6 + do ES5 transpilation.
+Jedną z najważniejszych funkcji języka TypeScript jest możliwość transsterty ES6 + Code do ES5 lub ES3, dzięki czemu można napisać kod, który zapewnia największą produktywność, ale nadal uruchamia kod na dowolnej platformie. Ponieważ język JavaScript w [!include[vs_dev15](../../docs/misc/includes/vs_dev15_md.md)] korzysta z tej samej usługi językowej co TypeScript, można skorzystać z zalet ES6 + ES5 transpilation.
 
-Zanim transpilation można skonfigurować pod kątem, niektóre wiedzę na temat opcji konfiguracji jest wymagana.
-TypeScript jest skonfigurowany za pośrednictwem `tsconfig.json` pliku.
-W przypadku braku takiego pliku niektóre wartości domyślne są używane.
-Ze względu na zgodność, te ustawienia domyślne różnią się w kontekście, w przypadku, gdy tylko pliki JavaScript (i opcjonalnie `.d.ts` plików) występują.
-Aby skompilować pliki JavaScript `tsconfig.json` musi zostać dodany plik, a niektóre z tych opcji musi być ustawiony w sposób jawny.
+Aby można było skonfigurować transpilation, jest wymagane pewne zrozumienie opcji konfiguracji.
+Język TypeScript jest konfigurowany za pośrednictwem pliku `tsconfig.json`.
+W przypadku braku takiego pliku są używane pewne wartości domyślne.
+Ze względu na zgodność te wartości domyślne są inne w kontekście, w którym znajdują się tylko pliki JavaScript (i opcjonalnie `.d.ts` pliki).
+Aby kompilować pliki JavaScript, należy dodać plik `tsconfig.json` i niektóre z tych opcji muszą zostać ustawione jawnie.
 
 Wymagane ustawienia dla pliku tsconfig są następujące:
 
-- `allowJs`: Ta wartość musi być równa `true` dla plików JavaScript uznać. Wartość domyślna to `false`, ponieważ TypeScript kompiluje w kodzie JavaScript, a kompilator nie może zawierać tylko skompilowanych plików.
-- `outDir`: Ta wartość powinna być równa lokalizacji nie są uwzględnione w projekcie, że emitowany plików JavaScript nie są wykrywane oraz dołączone do projektu (zobacz `exclude`).
-- `module`: Jeśli przy użyciu modułów, to ustawienie informuje kompilator, który format modułu należy używać emitowany kod (na przykład `commonjs` dla węzła lub narzędzia tworzące pakiety, takich jak Browserify).
-- `exclude`: To ustawienie stanów folderów nie do uwzględnienia w projekcie.
-Lokalizacja danych wyjściowych, foldery poza projektem, takie jak `node_modules` lub `temp`, powinny zostać dodane do tego ustawienia.
-- `enableAutoDiscovery`: To ustawienie umożliwia automatyczne wykrywanie i pobierania plików definicji, co zostało opisane wcześniej.
-- `compileOnSave`: To ustawienie informuje kompilator, jeśli należy ponownie skompilować każdym razem, gdy plik źródłowy jest zapisany w programie Visual Studio.
-- `typeAcquisition`: Ten zbiór ustawień kontrolowania zachowania przejęcia automatyczne typu (dokładniejszego wyjaśnienia w [w tej sekcji](/visualstudio/ide/javascript-intellisense#Auto))
+- `allowJs`: Ta wartość musi być ustawiona na `true`, aby można było rozpoznać pliki JavaScript. Wartość domyślna to `false`, ponieważ program TypeScript kompiluje się do języka JavaScript, a kompilator nie powinien zawierać plików, które właśnie skompilowano.
+- `outDir`: Ta wartość powinna być ustawiona na lokalizację, która nie jest uwzględniona w projekcie, w kolejności, w jakiej emitowane pliki JavaScript nie są wykrywane, a następnie uwzględniane w projekcie (zobacz `exclude`).
+- `module`: Jeśli używasz modułów, to ustawienie instruuje kompilator, który format modułu, który emituje kod powinien używać (na przykład `commonjs` dla węzła lub dla pakietów, takich jak Browserify).
+- `exclude`: to ustawienie określa, które foldery nie mają być uwzględnione w projekcie.
+Do tego ustawienia należy dodać lokalizację wyjściową, a także foldery spoza projektu, takie jak `node_modules` lub `temp`.
+- `enableAutoDiscovery`: to ustawienie umożliwia automatyczne wykrywanie i pobieranie plików definicji zgodnie z wcześniejszym opisem.
+- `compileOnSave`: to ustawienie instruuje kompilator, jeśli powinien ponownie kompilować plik źródłowy w programie Visual Studio.
+- `typeAcquisition`: ten zestaw ustawień steruje zachowaniem automatycznego pozyskiwania typów (w dalszej [części tego](/visualstudio/ide/javascript-intellisense#Auto)tematu)
 
-Aby można było przekonwertować plików JavaScript z modułami CommonJS i umieść je w `./out` folderu, można użyć następującego `tsconfig.json` pliku:
+Aby przekonwertować pliki JavaScript na moduły CommonJS i umieścić je w folderze `./out`, można użyć następującego pliku `tsconfig.json`:
 
 ```json
 {
@@ -82,7 +82,7 @@ Aby można było przekonwertować plików JavaScript z modułami CommonJS i umie
 }
 ```
 
-Przy użyciu ustawień w miejscu, jeśli plik źródłowy (`./app.js`) istnieje i zawiera kilka funkcji języka ECMAScript 2015 w następujący sposób:
+Jeśli plik źródłowy (`./app.js`) istniał i zawiera kilka funkcji języka ECMAScript 2015 w następujący sposób:
 
 ```js
 import {Subscription} from 'rxjs/Subscription';  // ES6 import
@@ -97,7 +97,7 @@ export let sqr = x => x * x;  //ES6 export, let, and arrow function
 export default Subscription;  //ES6 default export
 ```
 
-Wówczas plik będzie emitowany do `./out/app.js` przeznaczonych dla ECMAScript 5 (ustawienie domyślne), który wygląda podobnie do poniższego:
+Następnie plik zostanie wyemitowany do `./out/app.js` docelowego języka ECMAScript 5 (domyślnie), który wygląda podobnie do poniższego:
 
 ```js
 "use strict";
@@ -117,21 +117,21 @@ exports.default = Subscription_1.Subscription;
 
 ## <a name="better-intellisense"></a>Lepsza technologia IntelliSense
 
-Funkcja IntelliSense języka JavaScript w [!include[vs_dev15](../../docs/misc/includes/vs_dev15_md.md)] będą teraz wyświetlane znacznie więcej informacji na temat parametrów i listy elementów członkowskich. To nowe informacje są udostępniane przez usługę języka TypeScript, która używa analiza statyczna w tle, aby lepiej zrozumieć swój kod. Możesz przeczytać więcej na temat nowe środowisko IntelliSense, i jak działa [tutaj](/visualstudio/ide/javascript-intellisense/).
+Funkcja IntelliSense języka JavaScript w [!include[vs_dev15](../../docs/misc/includes/vs_dev15_md.md)] będzie teraz wyświetlała więcej informacji na temat parametrów i list elementów członkowskich. Nowe informacje są dostarczane przez usługę języka TypeScript, która używa analizy statycznej w tle, aby lepiej zrozumieć swój kod. Więcej informacji na temat nowego środowiska IntelliSense i sposobu jego działania można znaleźć w [tym miejscu](/visualstudio/ide/javascript-intellisense/).
 
-## <a name="JSX"></a> Obsługę składni JSX
+## <a name="JSX"></a>Obsługa składni JSX
 
-Język JavaScript w [!include[vs_dev15](../../docs/misc/includes/vs_dev15_md.md)] ma rozbudowaną obsługę składni JSX. JSX to zestaw składnię umożliwiającą tagów HTML w plikach JavaScript.
+Język JavaScript w [!include[vs_dev15](../../docs/misc/includes/vs_dev15_md.md)] ma rozbudowaną obsługę składni JSX. JSX to zestaw składni, który umożliwia Tagi HTML w plikach JavaScript.
 
-Na poniższej ilustracji przedstawiono składnik platformy React, zdefiniowane w `comps.tsx` plik TypeScript, a następnie ten składnik używany z `app.jsx` pliku ukończony z obsługą technologii IntelliSense dla uzupełnienia i dokumentach w obrębie wyrażenia JSX.
-Nie ma potrzeby TypeScript w tym miejscu, w tym przykładzie określonych dzieją zawierać części kodu TypeScript.
+Na poniższej ilustracji przedstawiono składnik reakcji zdefiniowany w pliku `comps.tsx` TypeScript, a następnie ten składnik jest używany z pliku `app.jsx`, uzupełniany przy użyciu funkcji IntelliSense do uzupełniania i dokumentacji w wyrażeniach JSX.
+Nie potrzebujesz języka TypeScript w tym miejscu, tym konkretnym przykładem może być również kod języka TypeScript.
 
 ![Składnia JSX](../javascript/media/js-react.png)
 
 > [!NOTE]
-> Aby przekonwertować składni JSX React wywołuje, ustawienie `"jsx": "react"` muszą zostać dodane do `compilerOptions` w `tsconfig.json` pliku.
+> Aby skonwertować składnię JSX na wywołania reakcji, należy dodać ustawienie `"jsx": "react"` do `compilerOptions` w pliku `tsconfig.json`.
 
-Utworzono plik JavaScript ". / out/app.js podczas kompilacji zawierałoby kod:
+Plik JavaScript utworzony w lokalizacji "./out/App.js" podczas kompilacji będzie zawierać kod:
 
 ```js
 "use strict";
@@ -139,25 +139,25 @@ var comps_1 = require('./comps');
 var x = React.createElement(comps_1.RepoDisplay, {description: "test"});
 ```
 
-## <a name="configure-your-javascript-project"></a>Konfigurowanie projektu języka JavaScript
+## <a name="configure-your-javascript-project"></a>Konfigurowanie projektu JavaScript
 
-Usługa języka jest obsługiwana przez analizy statycznej, co oznacza, że analizuje ona kodu źródłowego bez jego faktycznego wykonania go w celu zwracania wyników funkcji IntelliSense i podaj inne funkcje edycji.
-Dlatego im większa ilość i rozmiar plików, które są dołączone kontekst projektu, więcej pamięci i procesora CPU, które będą używane podczas analizy.
-W związku z tym istnieje kilka założeń domyślne, które składają się o kształt projektu:
+Usługa językowa jest oparta na analizie statycznej, co oznacza, że analizuje kod źródłowy bez jego rzeczywistego wykonywania w celu zwracania wyników IntelliSense i zapewnia inne funkcje edycji.
+W związku z tym większa ilość i rozmiar plików, które znajdują się w danym kontekście projektu, użycie większej ilości pamięci i procesora CPU będzie możliwe podczas analizy.
+W związku z tym istnieje kilka domyślnych założeń dotyczących kształtu projektu:
 
-- `package.json` i `bower.json` listę zależności, używany w projekcie i domyślnie są uwzględnione w pozyskiwania typu automatyczne (ATA)
-- Najwyższego poziomu `node_modules` folder zawiera kod źródłowy biblioteki i jego zawartość zostaną wykluczone z kontekstem projektu domyślnie
-- Co drugi `.js`, `.jsx`, `.ts`, i `.tsx` pliku jest prawdopodobnie jednym z *własne* pliki źródłowe i muszą być zawarte w kontekście projektu
+- zależności `package.json` i `bower.json`y używane przez projekt i domyślnie są uwzględniane w funkcji automatycznego pozyskiwania typów (ATA)
+- Folder `node_modules` najwyższego poziomu zawiera kod źródłowy biblioteki, a jego zawartość jest domyślnie wykluczona z kontekstu projektu
+- Każdy inny `.js`, `.jsx`, `.ts`i plik `.tsx` jest prawdopodobnie jednym z *własnych* plików źródłowych i musi być uwzględniony w kontekście projektu
 
-W większości przypadków można po prostu Otwórz swój projekt i spełni przy użyciu domyślnej konfiguracji projektu. Jednak w projektach, które mają duży lub ma inny folder struktury, może być pożądane, aby kontynuować konfigurowanie usługi języka, które mogą skoncentrować się tylko na plikach źródłowych.
+W większości przypadków można po prostu otworzyć projekt i uzyskać doskonałe środowisko przy użyciu domyślnej konfiguracji projektu. Jednak w projektach, które są duże lub mają różne struktury folderów, może być pożądane dalsze skonfigurowanie usługi językowej w celu lepszego skoncentrowania się tylko na własnych plikach źródłowych.
 
-### <a name="override-defaults"></a>Zastąp wartości domyślne
+### <a name="override-defaults"></a>Przesłoń wartości domyślne
 
-Można zastąpić domyślną konfigurację, dodając `tsconfig.json` plik do katalogu głównego projektu.
-Element `tsconfig.json` ma kilka różnych opcji, które można manipulować kontekst projektu.
-Niektóre z nich wymieniono poniżej, ale aby uzyskać pełny zestaw wszystkich dostępnych opcjach [wyświetlić schemat przechowywania](http://json.schemastore.org/tsconfig).
+Konfigurację domyślną można zastąpić, dodając plik `tsconfig.json` do katalogu głównego projektu.
+`tsconfig.json` ma kilka różnych opcji, które mogą manipulować kontekstem projektu.
+Poniżej wymieniono kilka z nich, ale pełny zestaw wszystkich dostępnych opcji [można znaleźć w artykule magazyn schematu](http://json.schemastore.org/tsconfig).
 
-## <a name="important-tsconfigjson-options"></a>Ważne `tsconfig.json` opcje
+## <a name="important-tsconfigjson-options"></a>Ważne opcje `tsconfig.json`
 
 ```json
 {
@@ -178,16 +178,16 @@ Niektóre z nich wymieniono poniżej, ale aby uzyskać pełny zestaw wszystkich 
 
 ### <a name="example-project-configuration"></a>Przykładowa konfiguracja projektu
 
-Podane projektu przy użyciu następujących ustawień:
+Nadany projekt o następującej konfiguracji:
 
 - pliki źródłowe projektu znajdują się w `wwwroot/js`
-- pliki biblioteki projektu znajdują się w `wwwroot/lib`
-- `bootstrap`, `jquery`, `jquery-validation`, i `jquery-validation-unobtrusive` są wymienione w `bower.json`
-- `kendo-ui` ręcznie został dodany do folderu biblioteki
+- Pliki lib projektu znajdują się w `wwwroot/lib`
+- `bootstrap`, `jquery`, `jquery-validation`i `jquery-validation-unobtrusive` są wymienione w `bower.json`
+- `kendo-ui` został ręcznie dodany do folderu lib
 
 ![Struktura folderów](../javascript/media/js-folderstructure.png)
 
-Można użyć następującego `tsconfig.json` aby upewnić się, że język usługi analizuje tylko plików źródłowych w `js` folder, ale pobiera i używa `.d.ts` plików do biblioteki w sieci `lib` folderu.
+Poniższe `tsconfig.json` można użyć, aby upewnić się, że usługa języka analizuje tylko pliki źródłowe w folderze `js`, ale nadal pobiera i używa plików `.d.ts` dla bibliotek w folderze `lib`.
 
 ```json
 {
@@ -203,10 +203,10 @@ Można użyć następującego `tsconfig.json` aby upewnić się, że język usł
 }
 ```
 
-## <a name="troubleshooting-the-javascript-language-service-has-been-disabled-for-the-following-projects"></a>Rozwiązywanie problemów z usługa języka JavaScript została wyłączona dla następujących projektów
-Po otwarciu projektu w języku JavaScript, który ma bardzo dużą ilość zawartości, możesz otrzymać komunikat "Usługa języka JavaScript została wyłączona dla następujących projektów". Najbardziej typową przyczyną występowania bardzo dużą ilość źródłowy JavaScript wynika z tym bibliotek z kodem źródłowym, która przekracza limit projektu o rozmiarze 20 MB.
+## <a name="troubleshooting-the-javascript-language-service-has-been-disabled-for-the-following-projects"></a>Rozwiązywanie problemów z usługą języka JavaScript została wyłączona dla następujących projektów
+Po otwarciu projektu JavaScript z bardzo dużą ilością zawartości może zostać wyświetlony komunikat "Usługa języka JavaScript została wyłączona dla następujących projektów" (). Najbardziej typową przyczyną wystąpienia bardzo dużej ilości źródła JavaScript jest dołączenie bibliotek z kodem źródłowym, które przekraczają limit projektu baza.
 
-Prosty sposób na optymalizację projektu jest dodanie `tsconfig.json` pliku w katalogu głównym projektu aby umożliwić usługa językowa wiedzieć, które pliki są bezpiecznie zignorować. Użyj poniższego przykładu aby wykluczać katalogi najczęściej, gdzie są przechowywane biblioteki:
+Prostym sposobem na optymalizację projektu jest dodanie `tsconfig.json` pliku w katalogu głównym projektu, aby poinformować usługę języka o tym, które pliki są bezpieczne do ignorowania. Użyj poniższego przykładu, aby wykluczyć najpopularniejsze katalogi, w których są przechowywane biblioteki:
 
 ```json
 {
@@ -228,39 +228,39 @@ Prosty sposób na optymalizację projektu jest dodanie `tsconfig.json` pliku w k
 }
 ```
 
-Dodaj więcej katalogi, zgodnie z potrzebami. Niektóre inne przykłady katalogi "dostawca" lub "wwwroot/lib".
+Dodaj więcej katalogów w miarę potrzeb. Niektóre inne przykłady obejmują katalogi "Vendor" lub "wwwroot/lib".
 
 > [!NOTE]
-> Właściwość kompilatora `disableSizeLimit` można również wyłączyć limit wyboru o rozmiarze 20 MB. Należy zachować środki ostrożności, specjalne, gdy za pomocą tej właściwości, ponieważ wyłączenie limit może ulec awarii usługi języka.
+> Właściwości kompilatora `disableSizeLimit` można również użyć, aby wyłączyć limit sprawdzania baza. W przypadku korzystania z tej właściwości należy podjąć specjalne środki ostrożności, ponieważ wyłączenie limitu może spowodować awarię usługi językowej.
 
-## <a name="notable-changes-from-visual-studio-2015"></a>Znaczące zmiany z programu Visual Studio 2015
+## <a name="notable-changes-from-visual-studio-2015"></a>Istotne zmiany w programie Visual Studio 2015
 
-Jako [!include[vs_dev15](../../docs/misc/includes/vs_dev15_md.md)] funkcji całkowicie nową usługę językową, istnieje kilka zachowań, które będą różnić się lub Brak z poprzednich doświadczeń.
-Najbardziej znaczące zmiany są zastąpienia VSDoc z JSDoc, usunięcie niestandardowego `.intellisense.js` rozszerzenia i ograniczone IntelliSense pod kątem wzorców określonego kodu.
+Jako [!include[vs_dev15](../../docs/misc/includes/vs_dev15_md.md)] funkcje zupełnie nowej usługi językowej, istnieje kilka zachowań, które będą się różnić lub nieobecne w poprzednim środowisku.
+Najbardziej istotnymi zmianami są zastąpienie VSDoc z JSDoc, usuwanie niestandardowych rozszerzeń `.intellisense.js` i ograniczoną technologią IntelliSense dla określonych wzorców kodu.
 
-### <a name="no-more-references-or-referencesjs"></a>Nie ma więcej `///<references/>` lub `_references.js`
+### <a name="no-more-references-or-_referencesjs"></a>Nie ma więcej `///<references/>` lub `_references.js`
 
-Wcześniej był dość skomplikowane zrozumieć, w danej chwili, które pliki zostały w zakresie Twoich obowiązków IntelliSense. Czasami zostało wskazane w zakresie oraz innych przypadków, gdy nie wszystkie pliki i doprowadziło to do złożonych konfiguracji obejmujących odwołanie do ręcznego zarządzania. Idąc dalej, nie trzeba myśleć o zarządzaniu odwołania, a więc nie trzeba Potrójna kreska ułamkowa odwołuje się komentarze lub `_references.js` plików.
+Wcześniej było to dość skomplikowane, aby zrozumieć w dowolnym momencie, które pliki znajdowały się w zakresie funkcji IntelliSense. Czasami było wskazane, aby wszystkie pliki były w określonym zakresie, a inne nie były, a to doprowadziło do złożonych konfiguracji obejmujących ręczne Zarządzanie odwołaniami. W przód nie trzeba już myśleć o zarządzaniu odwołaniami i dlatego nie potrzebujesz potrójnych odwołań do komentarzy ani plików `_references.js`.
 
-Zobacz [JavaScript IntelliSense](/visualstudio/ide/javascript-intellisense/) strony, aby uzyskać więcej informacji o sposobie działania funkcji IntelliSense.
+Więcej informacji na temat działania technologii IntelliSense można znaleźć na stronie [JavaScript IntelliSense](/visualstudio/ide/javascript-intellisense/) .
 
 ### <a name="vsdoc"></a>VSDoc
 
-Komentarze dokumentacji XML, czasami nazywane VSDocs, wcześniej może służyć do dekorowania kodu źródłowego za dodatkowe dane, które będzie służyć do pasjonatem wyniki funkcji IntelliSense.
-VSDoc nie jest już obsługiwana zastąpiona ceną [JSDoc](https://jsdoc.app/about-getting-started.html) co jest łatwiejsze do zapisu i zaakceptowane standard dla języka JavaScript.
+Komentarze dokumentacji XML, czasami określane jako VSDocs, mogły być wcześniej używane do dekorować kodu źródłowego z dodatkowymi danymi, które będą używane do buff wyników IntelliSense.
+VSDoc nie jest już obsługiwana na korzyść [JSDoc](https://jsdoc.app/about-getting-started.html) , która jest łatwiejsza do pisania i zaakceptowana Standard dla języka JavaScript.
 
-### <a name="intellisensejs-extensions"></a>`.intellisense.js` Rozszerzenia
+### <a name="intellisensejs-extensions"></a>rozszerzenia `.intellisense.js`
 
-Wcześniej, można utworzyć [rozszerzenia IntelliSense](https://msdn.microsoft.com/library/hh874692.aspx) pozwoliłoby można dodać niestandardowe uzupełniania wyniki dla bibliotek innych firm.
-Te rozszerzenia są dość trudny do zapisu i instalowania i odwoływanie się do nich był obciążeniem, więc przyszłości Nowa usługa języka nie obsługuje tych plików.
-Jako alternatywę łatwiej, można napisać pliku definicji TypeScript w celu udostępnienia tych samych korzyści IntelliSense, jak stary `.intellisense.js` rozszerzenia.
-Dowiedz się więcej na temat deklaracji (`.d.ts`) opracowywania pliku [tutaj](http://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html).
+Wcześniej można było tworzyć [rozszerzenia IntelliSense](https://msdn.microsoft.com/library/hh874692.aspx) , które umożliwiają dodawanie niestandardowych wyników uzupełniania dla bibliotek innych firm.
+Te rozszerzenia były dość trudne do pisania i instalowania i odwoływania się do nich są trudne, więc przekazanie nowej usługi językowej nie będzie obsługiwać tych plików.
+Dzięki łatwiejszej alternatywie można napisać plik definicji TypeScript, aby zapewnić te same korzyści funkcji IntelliSense, co w przypadku starych rozszerzeń `.intellisense.js`.
+Więcej informacji na temat tworzenia pliku deklaracji (`.d.ts`) można znaleźć [tutaj](http://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html).
 
-### <a name="unsupported-patterns"></a>Nieobsługiwana wzorców
+### <a name="unsupported-patterns"></a>Nieobsługiwane wzorce
 
-Ponieważ nowa usługa języka jest obsługiwana przez analizy statycznej, a nie jako aparatu wykonywania (odczyt [ten problem](https://github.com/Microsoft/TypeScript/issues/4789) informacji o różnicach), istnieje kilka wzorców JavaScript, które już nie może zostać wykryte.
-Najczęstszym wzorcem jest wzorzec "expando".
-Obecnie usługa języka nie może dostarczyć IntelliSense dla obiektów, które mają właściwości kumulowany po deklaracji.
+Ponieważ nowa usługa języka jest oparta na analizie statycznej, a nie w aparacie wykonywania (Przeczytaj [ten problem](https://github.com/Microsoft/TypeScript/issues/4789) , aby uzyskać informacje o różnicach), istnieje kilka wzorców języka JavaScript, które nie mogą już być wykrywane.
+Najbardziej typowym wzorcem jest wzorzec "expando".
+Obecnie usługa językowa nie może zapewnić funkcji IntelliSense dla obiektów, które mają właściwości, które są włączone po deklaracji.
 Na przykład:
 
 ```js
@@ -270,7 +270,7 @@ obj.b = "hello world";
 obj. // IntelliSense won't show properties a or b
 ```
 
-Aby uzyskać obejścia tego problemu, należy deklarowanie właściwości podczas tworzenia obiektu:
+Można to zrobić, deklarując właściwości podczas tworzenia obiektu:
 
 ```js
 var obj = {
@@ -280,7 +280,7 @@ var obj = {
 obj. // IntelliSense shows properties a and b
 ```
 
-Możesz również dodać komentarzy JSDoc w następujący sposób:
+Możesz również dodać komentarz JSDoc w następujący sposób:
 
 ```js
 /**

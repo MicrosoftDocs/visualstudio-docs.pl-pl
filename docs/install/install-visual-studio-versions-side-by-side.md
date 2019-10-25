@@ -11,48 +11,48 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 123f01b2e4545545a380f5a37adcdaf883bc9e91
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b7fb1e057ffd9f3824fa1fe49e353fd54694da91
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974725"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888685"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Instalowanie obok siebie różnych wersji programu Visual Studio
 
-Visual Studio można zainstalować na komputerze, który ma już zainstalowanego programu Visual Studio w wersji starszej lub nowszej.
+Program Visual Studio można zainstalować na komputerze, na którym jest już zainstalowana wcześniejsza lub nowsza wersja programu Visual Studio.
 
 ::: moniker range="vs-2017"
 
-Przed zainstalowaniem wersji obok siebie, przejrzyj następujące warunki:
+Przed zainstalowaniem wersji obok siebie zapoznaj się z następującymi warunkami:
 
-* Jeśli używasz programu Visual Studio 2017 do otwarcia rozwiązania, który został utworzony w programie Visual Studio 2015 możesz później otwierać i modyfikować rozwiązanie ponownie w starszej wersji, tak długo, jak jeszcze nie zaimplementowano żadnych funkcji, które są specyficzne dla programu Visual Studio 2017.
+* Jeśli używasz programu Visual Studio 2017 do otwierania rozwiązania utworzonego w programie Visual Studio 2015, możesz później otworzyć i zmodyfikować rozwiązanie ponownie w starszej wersji, o ile nie zaimplementowano żadnych funkcji specyficznych dla programu Visual Studio 2017.
 
-* Jeśli spróbujesz otworzyć rozwiązanie utworzone w programie Visual Studio 2015 lub starsza wersja za pomocą programu Visual Studio 2017, może być konieczne zmodyfikowanie projektów i plików, aby były zgodne z programem Visual Studio 2017. Aby uzyskać więcej informacji, zobacz [Port, migrowanie i uaktualnianie projektów programu Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2017) strony.
+* Jeśli spróbujesz użyć programu Visual Studio 2017 do otwarcia rozwiązania, które zostało utworzone w programie Visual Studio 2015 lub starszej wersji, może być konieczne zmodyfikowanie projektów i plików, aby były zgodne z programem Visual Studio 2017. Aby uzyskać więcej informacji, zobacz stronę [port, migrowanie i uaktualnianie projektów programu Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2017) .
 
 ::: moniker-end
 
 ::: moniker range=">= vs-2019"
 
-Przed zainstalowaniem wersji obok siebie, przejrzyj następujące warunki:
+Przed zainstalowaniem wersji obok siebie zapoznaj się z następującymi warunkami:
 
-* Jeśli używasz programu Visual Studio 2019 r. Aby otworzyć rozwiązanie utworzone w programie Visual Studio 2017, możesz później otworzyć i modyfikować rozwiązanie ponownie w starszej wersji, tak długo, jak nie zaimplementowano żadnych funkcji, które są specyficzne dla programu Visual Studio 2019 r.
+* Jeśli używasz programu Visual Studio 2019 do otwierania rozwiązania utworzonego w programie Visual Studio 2017, możesz później otworzyć i zmodyfikować rozwiązanie ponownie w starszej wersji, o ile nie zaimplementowano żadnych funkcji specyficznych dla programu Visual Studio 2019.
 
-* Jeśli spróbujesz otworzyć rozwiązanie utworzone w programie Visual Studio 2017 lub starszej wersji za pomocą programu Visual Studio 2019 r, może być konieczne zmodyfikowanie projektów i plików, aby był zgodny z programu Visual Studio 2019 r. Aby uzyskać więcej informacji, zobacz [Port, migrowanie i uaktualnianie projektów programu Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md) strony.
+* Jeśli spróbujesz użyć programu Visual Studio 2019 do otwarcia rozwiązania, które zostało utworzone w programie Visual Studio 2017 lub starszej wersji, może być konieczne zmodyfikowanie projektów i plików, aby były zgodne z programem Visual Studio 2019. Aby uzyskać więcej informacji, zobacz stronę [port, migrowanie i uaktualnianie projektów programu Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md) .
 
 ::: moniker-end
 
-* Jeśli odinstalujesz daną wersję programu Visual Studio na komputerze, na którym została zainstalowana więcej niż jedna wersja, skojarzenia plików dla programu Visual Studio są usuwane dla wszystkich wersji.
+* W przypadku odinstalowania wersji programu Visual Studio na komputerze, na którym jest zainstalowana więcej niż jedna wersja, skojarzenia plików dla programu Visual Studio zostaną usunięte dla wszystkich wersji.
 
-* Program Visual Studio nie aktualizuje automatycznie rozszerzeń, ponieważ nie wszystkie rozszerzenia są zgodne. Należy ponownie zainstalować rozszerzenia z [Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkId=178891) lub od wydawcy oprogramowania.
+* Program Visual Studio nie uaktualnia automatycznie rozszerzeń, ponieważ nie wszystkie rozszerzenia są zgodne. Należy ponownie zainstalować rozszerzenia z [Visual Studio Marketplace](https://marketplace.visualstudio.com/) lub wydawcy oprogramowania.
 
-## <a name="net-framework-versions-and-side-by-side-installations"></a>Wersje programu .NET framework i instalacje side-by-side
+## <a name="net-framework-versions-and-side-by-side-installations"></a>Wersje .NET Framework i instalacje równoczesne
 
-Visual Basic, Visual C#i Visual F# projektów użyj **platformę docelową** opcji **projektanta projektu** do określenia którą wersję programu .NET Framework, która używa projektu. Dla projektu w języku C++ można ręcznie zmienić platformę docelową, modyfikując plik vcxproj. Aby uzyskać więcej informacji, zobacz [zgodność wersji w programie .NET Framework](/dotnet/framework/migration-guide/version-compatibility) strony.
+Projekty Visual Basic, C#wizualizacji i F# wizualizacji używają opcji **platformy docelowej** w **projektancie projektu** , aby określić, która wersja .NET Framework jest używana przez projekt. W przypadku C++ projektu można ręcznie zmienić platformę docelową, modyfikując plik. vcxproj. Aby uzyskać więcej informacji, zobacz [zgodność wersji na stronie .NET Framework](/dotnet/framework/migration-guide/version-compatibility) .
 
-Podczas tworzenia projektu można określić, która wersja programu .NET Framework jest przeznaczony projekt **.NET Framework** listy w **nowy projekt** okno dialogowe.
+Podczas tworzenia projektu można określić, która wersja .NET Framework obiektów docelowych projektu na liście **.NET Framework** w oknie dialogowym **Nowy projekt** .
 
-Aby uzyskać informacje specyficzne dla języka zobacz odpowiedni temat w poniższej tabeli.
+Aby uzyskać informacje dotyczące języka, zobacz odpowiedni temat w poniższej tabeli.
 
 ::: moniker range="vs-2017"
 
@@ -60,8 +60,8 @@ Aby uzyskać informacje specyficzne dla języka zobacz odpowiedni temat w poniż
 |--------------|-----------|
 | Visual Basic | [Strona aplikacji, Projektant projektu (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md?view=vs-2017) |
 | Visual C# | [Strona aplikacji, Projektant projektu (C#)](../ide/reference/application-page-project-designer-csharp.md?view=vs-2017) |
-| Visual F# | [Programowanie za pomocą wizualizacji F# w programie Visual Studio](../ide/fsharp-visual-studio.md?view=vs-2017) |
-|C++ | [Instrukcje: Modyfikowanie docelowego framework i zestaw narzędzi platformy](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |
+| Visual F# | [Programowanie za pomocą F# wizualizacji w Visual Studio](../ide/fsharp-visual-studio.md?view=vs-2017) |
+|C++ | [Instrukcje: modyfikowanie platformy docelowej i zestawu narzędzi platformy](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
@@ -69,7 +69,7 @@ Aby uzyskać informacje specyficzne dla języka zobacz odpowiedni temat w poniż
 
 * [Instalowanie programu Visual Studio](install-visual-studio.md?view=vs-2017)
 * [Przenoszenie, migrowanie i uaktualnianie projektów programu Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2017)
-* [Tworzenie języka C/C++ izolowanymi oraz aplikacjami wykonywanymi side-by-side](/cpp/build/building-c-cpp-isolated-applications-and-side-by-side-assemblies/)
+* [Kompilowanie aplikacjiC++ C/izolowanych i zestawów równoległych](/cpp/build/building-c-cpp-isolated-applications-and-side-by-side-assemblies/)
 
 ::: moniker-end
 
@@ -79,8 +79,8 @@ Aby uzyskać informacje specyficzne dla języka zobacz odpowiedni temat w poniż
 |--------------|-----------|
 | Visual Basic | [Strona aplikacji, Projektant projektu (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md) |
 | Visual C# | [Strona aplikacji, Projektant projektu (C#)](../ide/reference/application-page-project-designer-csharp.md) |
-| Visual F# | [Programowanie za pomocą wizualizacji F# w programie Visual Studio](../ide/fsharp-visual-studio.md) |
-| C++ | [Instrukcje: Modyfikowanie docelowego framework i zestaw narzędzi platformy](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |
+| Visual F# | [Programowanie za pomocą F# wizualizacji w Visual Studio](../ide/fsharp-visual-studio.md) |
+| C++ | [Instrukcje: modyfikowanie platformy docelowej i zestawu narzędzi platformy](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
@@ -88,6 +88,6 @@ Aby uzyskać informacje specyficzne dla języka zobacz odpowiedni temat w poniż
 
 * [Instalowanie programu Visual Studio](install-visual-studio.md)
 * [Przenoszenie, migrowanie i uaktualnianie projektów programu Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md)
-* [Tworzenie języka C/C++ izolowanymi oraz aplikacjami wykonywanymi side-by-side](/cpp/build/building-c-cpp-isolated-applications-and-side-by-side-assemblies/)
+* [Kompilowanie aplikacjiC++ C/izolowanych i zestawów równoległych](/cpp/build/building-c-cpp-isolated-applications-and-side-by-side-assemblies/)
 
 ::: moniker-end

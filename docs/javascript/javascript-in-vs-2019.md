@@ -1,5 +1,5 @@
 ---
-title: JavaScript i TypeScript w programie Visual Studio 2019 r.
+title: JavaScript i TypeScript w programie Visual Studio 2019
 ms.date: 03/27/2019
 ms.technology: vs-javascript
 ms.topic: conceptual
@@ -11,35 +11,35 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 3000510c6bb6079629a3df05909417593569c932
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3412e1d27a365a6c6302c56ada865f33a436b639
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62553258"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888621"
 ---
-# <a name="javascript-and-typescript-in-visual-studio-2019"></a>JavaScript i TypeScript w programie Visual Studio 2019 r.
+# <a name="javascript-and-typescript-in-visual-studio-2019"></a>JavaScript i TypeScript w programie Visual Studio 2019
 
 ## <a name="overview"></a>Omówienie
 
-Visual Studio 2019 udostępnia, zaawansowana obsługa programowania języka JavaScript, zarówno bezpośrednio przy użyciu języka JavaScript, a także za pomocą [TypeScript język programowania](http://www.typescriptlang.org), który został opracowany, aby zapewnić JavaScript i bardziej wydajna środowisko programistyczne, szczególnie w przypadku, gdy tworzenie projektów w dużej skali. W przypadku wielu typów aplikacji i usług, można napisać kod JavaScript lub TypeScript w programie Visual Studio.
+Program Visual Studio 2019 zapewnia rozbudowaną obsługę programowania w języku JavaScript, zarówno przy użyciu języka JavaScript, jak i przy użyciu [języka programowania TypeScript](http://www.typescriptlang.org/), który został opracowany w celu zapewnienia bardziej wydajnego i efektywnego programowania kodu JavaScript środowisko, szczególnie podczas opracowywania projektów na dużą skalę. Można napisać kod JavaScript lub TypeScript w programie Visual Studio dla wielu typów i usług aplikacji.
 
 ## <a name="javascript-language-service"></a>Usługa języka JavaScript
 
-Środowisko języka JavaScript w programie Visual Studio 2019 r jest obsługiwana przez tego samego aparatu, który zapewnia obsługę TypeScript. Daje lepszą obsługę funkcji, złożonością i integracji natychmiast out-of--box.
+Środowisko JavaScript w programie Visual Studio 2019 jest obsługiwane przez ten sam aparat, który zapewnia obsługę języka TypeScript. Zapewnia to lepszą pomoc techniczną, rozbudowaną i integrację.
 
-Możliwość przywrócenia starszej wersji usługi językowej JavaScript nie jest już dostępna. Użytkownicy mają teraz nowe JavaScript language usługi out-of box. Nowa usługa języka zależy wyłącznie usługi języka TypeScript, która jest obsługiwana przez analizę statyczną. Pozwala to nam umożliwiają lepsze narzędzia, dzięki czemu kod JavaScript może być korzystne ulepszoną funkcję IntelliSense, na podstawie definicji typu. Nowa usługa ma uproszczoną konstrukcję i zużywa mniej pamięci niż starszej wersji usługi, zapewniając lepszą wydajność w miarę skalowania kodu. Poprawiono również wydajność, aby obsłużyć większe projekty wersję usługi języka.
+Opcja przywrócenia starszej wersji usługi językowej JavaScript nie jest już dostępna. Użytkownicy mają teraz nową usługę językową JavaScript. Nowa usługa języka jest oparta wyłącznie na usłudze języka TypeScript, która jest obsługiwana przez analizę statyczną. Dzięki temu możemy zapewnić lepsze narzędzia, dzięki czemu kod JavaScript może korzystać z bogatszej technologii IntelliSense na podstawie definicji typów. Nowa usługa jest lekki i zużywa mniejszą ilość pamięci niż Starsza usługa, co zapewnia lepszą wydajność w miarę skalowania kodu. Ulepszono również wydajność usługi językowej w celu obsługi większych projektów.
 
-## <a name="typescript-support"></a>Obsługa TypeScript
+## <a name="typescript-support"></a>Obsługa języka TypeScript
 
-Visual Studio 2019 udostępnia kilka rozwiązań integracji kompilacji TypeScript do projektu:
+Program Visual Studio 2019 udostępnia kilka opcji integracji kompilacji języka TypeScript z projektem:
 
-* [Pakiet TypeScript NuGet](https://www.nuget.org/packages/Microsoft.TypeScript.MSBuild). Po zainstalowaniu do projektu pakiet NuGet dla TypeScript 3.2 lub nowszej odpowiednią wersję usługi języka TypeScript pobiera załadowany w edytorze.
-* TypeScript SDK oferowana domyślnie w Instalatorze programu Visual Studio, a także autonomiczny pakiet zestawu SDK do pobrania z [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=TypeScriptTeam.typescript-331-vs2017).
-* [Pakiet npm TypeScript](https://www.npmjs.com/package/typescript). Po zainstalowaniu pakietu npm dla TypeScript 2.1 lub nowszej do projektu odpowiednią wersję usługi języka TypeScript pobiera załadowany w edytorze.
+* [Pakiet NuGet języka TypeScript](https://www.nuget.org/packages/Microsoft.TypeScript.MSBuild). Gdy pakiet NuGet dla języka TypeScript 3,2 lub nowszego jest zainstalowany w projekcie, odpowiednia wersja usługi języka TypeScript zostanie załadowana w edytorze.
+* TypeScript SDK, dostępna domyślnie w Instalatorze programu Visual Studio, a także do pobrania autonomicznego zestawu SDK z [witryny vs Marketplace](https://marketplace.visualstudio.com/items?itemName=TypeScriptTeam.typescript-331-vs2017).
+* [Pakiet TypeScript npm](https://www.npmjs.com/package/typescript). Gdy pakiet npm dla języka TypeScript 2,1 lub nowszego jest instalowany w projekcie, odpowiednia wersja usługi języka TypeScript zostanie załadowana w edytorze.
 
-W przypadku projektów opracowane w programie Visual Studio 2019 firma Microsoft zachęca do na użytek pakietów npm i TypeScript NuGet mobilność na różnych platformach i środowisk.
+W przypadku projektów utworzonych w programie Visual Studio 2019 zachęcamy do korzystania z pakietów NuGet i npm języka TypeScript w celu uzyskania większej przenośności na różnych platformach i środowiskach.
 
 ## <a name="projects"></a>Projekty
 
-Aplikacje JavaScript platformy uniwersalnej systemu Windows nie są już obsługiwane w programie Visual Studio 2019. Nie można utworzyć lub otworzyć projekty języka JavaScript platformy uniwersalnej systemu Windows (pliki z rozszerzeniem *.jsproj*). Dowiedz się więcej przy użyciu naszej dokumentacji w [tworzenie aplikacji sieci Web progresywnego (PWAs)](https://docs.microsoft.com/microsoft-edge/progressive-web-apps/get-started) , działają na Windows.
+Aplikacje JavaScript platformy uniwersalnej systemu Windows nie są już obsługiwane w programie Visual Studio 2019. Nie można tworzyć ani otwierać projektów platformy UWP JavaScript (pliki z rozszerzeniem *JSProj*). Więcej informacji można znaleźć w naszej dokumentacji dotyczącej [tworzenia progresywnych Web Apps (PWAs)](/microsoft-edge/progressive-web-apps/get-started) , które działają prawidłowo w systemie Windows.

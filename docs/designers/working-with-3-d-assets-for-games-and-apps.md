@@ -10,12 +10,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55986a703bd53318f8c0f74b8cf661412a82b716
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4269a6f17c83e7fe6f111c4e564ace0e40cfa7e6
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72633995"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888477"
 ---
 # <a name="work-with-3d-assets-for-games-and-apps"></a>Praca z zasobami 3D dla gier i aplikacji
 
@@ -46,11 +46,11 @@ Programy do cieniowania są niewielkimi programami specyficznymi dla domeny, kt�
 Możesz użyć projektanta cieniowania programu Visual Studio, który jest narzędziem do projektowania cieniowania opartym na grafie, w celu utworzenia niestandardowych efektów wizualnych bez znajomości programowania HLSL.
 
 > [!NOTE]
-> Aby uzyskać więcej informacji na temat rozpoczynania pracy z programowaniem DirectX, zobacz [DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633). Aby uzyskać więcej informacji na temat debugowania aplikacji opartych na technologii DirectX, zobacz [Diagnostyka grafiki (Debugowanie grafiki DirectX)](../debugger/graphics/visual-studio-graphics-diagnostics.md).
+> Aby uzyskać więcej informacji na temat rozpoczynania pracy z programowaniem DirectX, zobacz [DirectX](/windows/win32/directx). Aby uzyskać więcej informacji na temat debugowania aplikacji opartych na technologii DirectX, zobacz [Diagnostyka grafiki (Debugowanie grafiki DirectX)](../debugger/graphics/visual-studio-graphics-diagnostics.md).
 
 ## <a name="directx-version-compatibility"></a>Zgodność wersji programu DirectX
 
-Program Visual Studio używa technologii DirectX do renderowania zasobów 2D i 3W. Można wybrać moduł renderujący programu DirectX 11 lub program Windows Advanced rasteryzacji platform (Wypaczenie). Moduł renderowania DirectX 11 zapewnia wysoką wydajność, przyspieszanie sprzętowe w przypadku procesorów DirectX 11 i DirectX 10. Moduł renderowania ZNIEKSZTAŁCAnia pomaga upewnić się, że zasoby współpracują z szeroką gamą komputerów — dotyczy to również komputerów, które nie mają nowoczesnego sprzętu graficznego i komputerów z zintegrowanym sprzętem grafiki. Aby uzyskać więcej informacji na temat wypaczania, zobacz [Przewodnik dotyczący platformy Windows Advanced rasteryzacji](http://go.microsoft.com/fwlink/p/?LinkId=224634).
+Program Visual Studio używa technologii DirectX do renderowania zasobów 2D i 3W. Można wybrać moduł renderujący programu DirectX 11 lub program Windows Advanced rasteryzacji platform (Wypaczenie). Moduł renderowania DirectX 11 zapewnia wysoką wydajność, przyspieszanie sprzętowe w przypadku procesorów DirectX 11 i DirectX 10. Moduł renderowania ZNIEKSZTAŁCAnia pomaga upewnić się, że zasoby współpracują z szeroką gamą komputerów — dotyczy to również komputerów, które nie mają nowoczesnego sprzętu graficznego i komputerów z zintegrowanym sprzętem grafiki. Aby uzyskać więcej informacji na temat wypaczania, zobacz [Przewodnik dotyczący platformy Windows Advanced rasteryzacji](/windows/win32/direct3darticles/directx-warp).
 
 ## <a name="related-topics"></a>Tematy pokrewne
 

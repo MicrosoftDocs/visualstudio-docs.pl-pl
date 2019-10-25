@@ -10,12 +10,12 @@ metadata:
   author: gewarren
   ms.author: gewarren
   ms.date: 10/10/2019
-  ms.openlocfilehash: 6f04176e3952d3b90fc31ba42a5e8d11c10ca456
-  ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+  ms.openlocfilehash: 8daaad2dcabfb3636e91d81368e4d56666e37e30
+  ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
   ms.translationtype: MT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 10/22/2019
-  ms.locfileid: "72777679"
+  ms.lasthandoff: 10/24/2019
+  ms.locfileid: "72888551"
 landingContent:
 - title: Informacje o języku XAML
   linkLists:
@@ -37,12 +37,14 @@ landingContent:
     links:
     - text: Pisanie i debugowanie uruchomionego kodu XAML
       url: xaml-hot-reload.md
-    - text: Debugowanie XAML w Blend
-      url: debug-xaml-in-blend.md
+    - text: Sprawdzanie właściwości XAML
+      url: inspect-xaml-properties-while-debugging.md
     - text: Debugowanie aplikacji platformy WPF >>
-      url: ../debugger/debugging-wpf.md?toc=/visualstudio/debugger/toc.json&bc=/visualstudio/debugger/breadcrumb/toc.json
+      url: ../debugger/debugging-wpf.md
     - text: Debugowanie aplikacji platformy UWP
       url: ../debugger/debugging-windows-store-and-windows-universal-apps.md
+    - text: Debugowanie XAML w Blend
+      url: debug-xaml-in-blend.md
 - title: Opracowywanie aplikacji WPF
   linkLists:
   - linkListType: overview

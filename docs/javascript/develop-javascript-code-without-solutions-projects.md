@@ -13,54 +13,54 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 1541f3608aef33cbd286a8c96257eb191712e245
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: 288cb11d3e6ae3917f5fcc6ec9ed242549908576
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681293"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888641"
 ---
-# <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Tworzenie kodu JavaScript i TypeScript w programie Visual Studio bez rozwiązań lub projektów
+# <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Programowanie kodu JavaScript i TypeScript w programie Visual Studio bez rozwiązań i projektów
 
-Począwszy od programu Visual Studio 2017, można [opracowywać kod bez projektów i rozwiązań](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md), dzięki czemu można otwierać foldery kodu i od razu zacząć pracę z zaawansowaną obsługą edytora, taką jak IntelliSense, wyszukiwanie, Refaktoryzacja, debugowanie i nie tylko. Poza tymi funkcjami Node.js Tools for Visual Studio dodaje obsługę tworzenia plików TypeScript, Zarządzanie pakietami npm i uruchamiania skryptów npm.
+Począwszy od programu Visual Studio 2017, można [opracowywać kod bez projektów i rozwiązań](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md), dzięki czemu można otwierać foldery kodu i od razu zacząć pracę z zaawansowaną obsługą edytora, taką jak IntelliSense, wyszukiwanie, Refaktoryzacja, debugowanie i nie tylko. Oprócz tych funkcji Node.js Tools for Visual Studio dodaje obsługę tworzenia plików TypeScript, zarządzania pakietami npm oraz uruchamiania skryptów npm.
 
-Aby rozpocząć, wybierz pozycję **plik** > **Otwórz** > **folder** na pasku narzędzi. Eksplorator rozwiązań zawiera wszystkie pliki w folderze, a następnie można otworzyć dowolne pliki, aby rozpocząć edycję. W tle programu Visual Studio indeksuje pliki, aby włączyć npm, kompilacji i funkcji debugowania.
+Aby rozpocząć, wybierz pozycję **plik** > **Otwórz** **folder** > z paska narzędzi. Eksplorator rozwiązań wyświetla wszystkie pliki w folderze, a wszystkie pliki można otworzyć, aby rozpocząć edycję. W tle program Visual Studio indeksuje pliki w celu włączenia funkcji npm, Build i Debug.
 
 > [!IMPORTANT]
 > Wiele funkcji opisanych w tym artykule, łącznie z integracją npm, wymaga programu Visual Studio 2017 w wersji 15,8 lub nowszej.
 
-## <a name="npm-integration"></a>Integracja z menedżerem npm
+## <a name="npm-integration"></a>Integracja npm
 
-Możesz otworzyć zawiera *package.json* pliku, możesz kliknąć prawym przyciskiem myszy *package.json* do wyświetlenia menu kontekstowego (menu skrótów) specyficzne dla Menedżera npm.
+Jeśli otwarty folder zawiera plik *Package. JSON* , możesz kliknąć prawym przyciskiem myszy element *Package. JSON* , aby wyświetlić menu kontekstowe (menu skrótów) specyficzne dla npm.
 
-![menu npm w oknie Eksploratora rozwiązań](../javascript/media/solution-explorer-npm-ctx.png)
+![menu npm w Eksplorator rozwiązań](../javascript/media/solution-explorer-npm-ctx.png)
 
-W menu skrótów, można zarządzać pakiety instalowane przez pakiety npm w taki sam sposób, jak [Zarządzanie pakietami npm](npm-package-management.md) podczas korzystania z pliku projektu.
+W menu skrótów można zarządzać pakietami instalowanymi przez npm w taki sam sposób, jak [w przypadku korzystania](npm-package-management.md) z pliku projektu.
 
-Ponadto menu umożliwia również uruchamiać skrypty zdefiniowane w `scripts` element *package.json*. Te skrypty będą używać wersji środowiska node.js jest dostępny na `PATH` zmiennej środowiskowej. Skrypty uruchamiane w nowym oknie. Jest to doskonały sposób na wykonanie kompilacji lub uruchamiania skryptów.
+Ponadto menu pozwala także uruchamiać skrypty zdefiniowane w `scripts` elementu w pliku *Package. JSON*. Te skrypty będą używać wersji środowiska Node. js dostępnej w zmiennej środowiskowej `PATH`. Skrypty są uruchamiane w nowym oknie. To świetny sposób na wykonanie kompilacji lub uruchomienie skryptów.
 
-## <a name="build-and-debug"></a>Kompilowanie i debugowanie
+## <a name="build-and-debug"></a>Kompiluj i Debuguj
 
-### <a name="packagejson"></a>pliku Package.JSON
-Jeśli *package.json* w folderze Określa `main` elementu **debugowania** polecenia będą dostępne w menu skrótów kliknij prawym przyciskiem myszy *package.json*.
-Kliknięcie rozpocznie *node.exe* przy użyciu określonego skryptu jako argumentem.
+### <a name="packagejson"></a>plik Package. JSON
+Jeśli plik *Package. JSON* w folderze określa `main` element, polecenie **Debug** będzie dostępne w menu skrótów kliknij prawym przyciskiem myszy pliku *Package. JSON*.
+Kliknięcie tej opcji spowoduje uruchomienie programu *Node. exe* z określonym skryptem jako argumentem.
 
 ### <a name="javascript-files"></a>Pliki JavaScript
-Pliki JavaScript można debugować, kliknij plik prawym przyciskiem myszy i wybierając **debugowania** z menu skrótów. Spowoduje to uruchomienie *node.exe* razem z tym plikiem języka JavaScript jako argumentem.
+Aby debugować pliki JavaScript, kliknij prawym przyciskiem myszy plik i wybierz polecenie **Debuguj** z menu skrótów. Spowoduje to uruchomienie programu *Node. exe* z tym plikiem JavaScript jako argumentem.
 
-### <a name="typescript-files-and-tsconfigjson"></a>Pliki TypeScript i plik tsconfig.json
-W przypadku nie *tsconfig.json* istnieje w folderze, kliknąć prawym przyciskiem myszy plik TypeScript, aby wyświetlić polecenia menu skrótów, aby kompilować i debugować tego pliku. Korzystając z tych poleceń kompilacji lub debugowania za pomocą *tsc.exe* z użyciem opcji domyślnych. (Potrzebne do tworzenia pliku, zanim można było debugować).
-
-> [!NOTE]
-> Podczas kompilowania kodu TypeScript, korzystamy z najnowszej wersji, które są zainstalowane w `C:\Program Files (x86)\Microsoft SDKs\TypeScript`.
-
-W przypadku *tsconfig.json* plików w folderze, możesz kliknąć prawym przyciskiem myszy plik TypeScript, aby wyświetlić polecenia menu, aby debugować ten plik TypeScript. Opcja jest wyświetlana tylko wtedy, gdy nie `outFile` określonych w *tsconfig.json*. Jeśli `outFile` jest określony, ten plik można debugować, klikając prawym przyciskiem myszy *tsconfig.json* i wybranie opcji jest poprawne. `tsconfig.json` Pliku oferuje również możliwość kompilacji pozwala użytkownikowi na określenie opcji kompilatora.
+### <a name="typescript-files-and-tsconfigjson"></a>Pliki TypeScript i tsconfig. JSON
+Jeśli w folderze nie ma pliku *tsconfig. JSON* , można kliknąć prawym przyciskiem myszy plik TypeScript, aby wyświetlić polecenia menu skrótów, które umożliwiają kompilowanie i debugowanie tego pliku. Korzystając z tych poleceń, można skompilować lub debugować przy użyciu programu *TSC. exe* z opcjami domyślnymi. (Należy skompilować plik przed rozpoczęciem debugowania).
 
 > [!NOTE]
-> Więcej informacji można znaleźć o *tsconfig.json* w [tsconfig.json TypeScript Handbook strony](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).
+> Podczas kompilowania kodu TypeScript używamy najnowszej wersji zainstalowanej w `C:\Program Files (x86)\Microsoft SDKs\TypeScript`.
+
+Jeśli istnieje plik *tsconfig. JSON* znajdujący się w folderze, można kliknąć prawym przyciskiem myszy plik TypeScript, aby wyświetlić polecenie menu, aby debugować ten plik TypeScript. Ta opcja jest dostępna tylko wtedy, gdy nie określono `outFile` w pliku *tsconfig. JSON*. Jeśli określono `outFile`, można debugować ten plik przez kliknięcie prawym przyciskiem myszy *tsconfig. JSON* i wybranie odpowiedniej opcji. Plik `tsconfig.json` udostępnia również opcję kompilacji umożliwiającą określenie opcji kompilatora.
+
+> [!NOTE]
+> Więcej informacji na temat pliku *tsconfig. JSON* można znaleźć na [stronie podręcznika języka TypeScript tsconfig. JSON](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).
 
 ## <a name="unit-tests"></a>Testy jednostkowe
-Aby umożliwić integrację testu jednostkowego w programie Visual Studio, określając katalog główny testu, w swojej *package.json*:
+Możesz włączyć integrację testu jednostkowego w programie Visual Studio, określając główny test w pliku *Package. JSON*:
 
 ```json
 {
@@ -72,14 +72,14 @@ Aby umożliwić integrację testu jednostkowego w programie Visual Studio, okre�
 }
 ```
 
-Narzędzie test runner wylicza lokalnie zainstalowane pakiety, aby określić, które struktury testów do użycia.
-Jeśli żaden z obsługiwanych platform są rozpoznawane, narzędzia test runner domyślnie *ExportRunner*. Inne obsługiwane platformy to:
-* Mocha ([mochajs.org](http://mochajs.org/))
-* Jasmine ([Jasmine.github.io](https://jasmine.github.io/))
-* Taśmy ([github.com/substack/tape](https://github.com/substack/tape))
+Moduł uruchamiający testy wylicza zainstalowane lokalnie pakiety, aby określić, która Platforma testowa ma być używana.
+Jeśli żadna z obsługiwanych struktur nie zostanie rozpoznana, program Test Runner domyślnie *ExportRunner*. Inne obsługiwane struktury to:
+* Środowiska Mocha ([mochajs.org](https://mochajs.org/))
+* Jasmine ([Jasmine.GitHub.IO](https://jasmine.github.io/))
+* Taśma ([GitHub.com/Substack/Tape](https://github.com/substack/tape))
 * On ([jestjs.IO](https://jestjs.io/))
 
-Po otwarciu Eksploratora testów (wybierz **testu** > **Windows** > **Eksplorator testów**), Visual Studio wykrywa i wyświetla testów.
+Po otwarciu Eksploratora testów (wybierz **Test** > **Windows** > **Test Explorer**) program Visual Studio odnajduje i wyświetla testy.
 
 > [!NOTE]
-> Narzędzie test runner wyliczą tylko pliki JavaScript, w katalogu głównym testu, jeśli aplikacja została napisana TypeScript, musisz utworzyć je w pierwszej kolejności.
+> Moduł uruchamiający testy będzie wyliczał tylko pliki JavaScript w katalogu głównym testu, jeśli aplikacja jest zapisywana w języku TypeScript, należy najpierw ją skompilować.

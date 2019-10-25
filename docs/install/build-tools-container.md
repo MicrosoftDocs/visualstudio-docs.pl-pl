@@ -1,7 +1,7 @@
 ---
-title: Instalowanie narzędzia Visual Studio Build Tools do kontenera
+title: Instalowanie Visual Studio Build Tools w kontenerze
 titleSuffix: ''
-description: Dowiedz się, jak zainstalować narzędzia Visual Studio Build Tools w kontenerze Windows do obsługi ciągłej integracji i przepływów pracy ciągłego dostarczania (CI/CD).
+description: Dowiedz się, jak zainstalować Visual Studio Build Tools w kontenerze systemu Windows, aby obsługiwać przepływy pracy ciągłej integracji i ciągłego dostarczania (CI/CD).
 ms.date: 07/03/2019
 ms.custom: seodec18
 ms.topic: conceptual
@@ -13,33 +13,33 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 24e27c8ca2c75e2345bea4f4393fcb00bba1a0d8
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 0a16f9501b9ce1e7c69eaa8f2460a50affd6d579
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821720"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888711"
 ---
-# <a name="install-build-tools-into-a-container"></a>Zainstaluj narzędzia kompilacji do kontenera
+# <a name="install-build-tools-into-a-container"></a>Instalowanie narzędzi kompilacji do kontenera
 
-Visual Studio Build Tools można zainstalować w kontenerze Windows do obsługi ciągłej integracji i przepływów pracy ciągłego dostarczania (CI/CD). Ten artykuł przeprowadzi Cię przez jakie zmiany konfiguracji platformy Docker są wymagane, a także co [obciążenia i składniki](workload-component-id-vs-build-tools.md) można zainstalować w kontenerze.
+Visual Studio Build Tools można zainstalować w kontenerze systemu Windows w celu obsługi przepływów pracy ciągłej integracji i ciągłego dostarczania (CI/CD). W tym artykule opisano, jakie zmiany w konfiguracji platformy Docker są wymagane, a także jakie [obciążenia i składniki](workload-component-id-vs-build-tools.md) można zainstalować w kontenerze.
 
-[Kontenery](https://www.docker.com/what-container) to doskonały sposób do pakietu przez system kompilacji spójne, można użyć nie tylko w środowisku serwera ciągłej integracji/ciągłego wdrażania, ale również w środowiskach programowania. Na przykład można zainstalować kod źródłowy w kontenerze, który ma zostać utworzony przez dostosowane środowisko, gdy będziesz nadal używać programu Visual Studio lub innych narzędzi, należy napisać kod. Jeśli przepływ pracy ciągłej integracji/ciągłego wdrażania korzysta z tego samego obrazu kontenera, możesz mieć pewność, Twój kod się kompiluje spójne. Możesz używać kontenerów środowiska uruchomieniowego sprawdzania spójności, która jest często mikrousługi przy użyciu wielu kontenerów z systemem aranżacji; jednak wykracza poza zakres tego artykułu.
+[Kontenery](https://www.docker.com/what-container) są doskonałym sposobem na spakowanie spójnego systemu kompilacji, którego można użyć nie tylko w środowisku serwera ciągłej integracji/ciągłego wdrażania, ale również w środowiskach deweloperskich. Można na przykład zainstalować kod źródłowy w kontenerze, który ma zostać skompilowany przez dostosowane środowisko, podczas gdy nadal używasz programu Visual Studio lub innych narzędzi do pisania kodu. Jeśli przepływ pracy CI/CD korzysta z tego samego obrazu kontenera, możesz zapewnić spójność kodu. Kontenerów można również użyć do zapewnienia spójności środowiska uruchomieniowego, która jest powszechna dla mikrousług korzystających z wielu kontenerów z systemem aranżacji. jednak wykracza poza zakres tego artykułu.
 
-Jeśli program Visual Studio Build Tools nie ma wymagane do kompilowania swojego kodu źródłowego, można te same kroki dla innych produktów Visual Studio. Należy jednak pamiętać, że kontenery Windows nie obsługują interaktywny interfejs użytkownika, więc wszystkie polecenia, które muszą być zautomatyzowane.
+Jeśli Visual Studio Build Tools nie ma potrzebnych do skompilowania kodu źródłowego, te same kroki mogą być używane dla innych produktów Visual Studio. Należy jednak pamiętać, że kontenery systemu Windows nie obsługują interaktywnego interfejsu użytkownika, więc wszystkie polecenia muszą być zautomatyzowane.
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
-Pewną znajomość [Docker](https://www.docker.com/what-docker) zakłada, że poniżej. Jeśli nie znasz już z uruchomionymi platformy Docker na Windows, uzyskać informacje dotyczące sposobu [Zainstaluj i skonfiguruj aparat platformy Docker na Windows](https://docs.microsoft.com/virtualization/windowscontainers/manage-docker/configure-docker-daemon).
+Poniżej założono pewną znajomość [platformy Docker](https://www.docker.com/what-docker) . Jeśli nie znasz jeszcze programu Docker w systemie Windows, przeczytaj temat jak [zainstalować i skonfigurować aparat platformy Docker w systemie Windows](/virtualization/windowscontainers/manage-docker/configure-docker-daemon).
 
-Obraz podstawowy poniżej znajduje się przykładowy i może nie działać w systemie. Odczyt [zgodność wersji kontenerów Windows](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/version-compatibility) Aby określić, które obraz podstawowy, należy użyć w danym środowisku.
+Poniższy obraz podstawowy jest przykładem i może nie zadziałać w systemie. Przeczytaj temat [zgodność wersji kontenera systemu Windows](/virtualization/windowscontainers/deploy-containers/version-compatibility) , aby określić, który obraz podstawowy ma być używany w danym środowisku.
 
-## <a name="create-and-build-the-dockerfile"></a>Utwórz i skompiluj plik Dockerfile
+## <a name="create-and-build-the-dockerfile"></a>Tworzenie i Kompilowanie pliku dockerfile
 
-Zapisz poniższy plik Dockerfile do nowego pliku na dysku. Jeśli plik nosi po prostu plik Dockerfile"", który jest rozpoznawany przez domyślny.
+Zapisz Poniższy przykład pliku dockerfile do nowego pliku na dysku. Jeśli plik ma nazwę "pliku dockerfile", jest rozpoznawany domyślnie.
 
 > [!WARNING]
-> W tym przykładzie plik Dockerfile nie obejmuje tylko wcześniej SDK Windows, które nie może zostać zainstalowana w kontenerach. Wcześniejszych wersjach spowodować, że polecenie kompilacji, aby zakończyć się niepowodzeniem.
+> Ten przykład pliku dockerfile wyklucza tylko starsze zestawy Windows SDK, których nie można zainstalować w kontenerach. Wcześniejsze wersje powodują niepowodzenie polecenia kompilacji.
 
 1. Otwórz wiersz polecenia.
 
@@ -49,13 +49,13 @@ Zapisz poniższy plik Dockerfile do nowego pliku na dysku. Jeśli plik nosi po p
    mkdir C:\BuildTools
    ```
 
-1. Zmień katalogi do tego nowego katalogu:
+1. Zmień katalogi na ten nowy katalog:
 
    ```shell
    cd C:\BuildTools
    ```
 
-1. Zapisz C:\BuildTools\Dockerfile następującą zawartością.
+1. Zapisz poniższą zawartość w usłudze C:\BuildTools\Dockerfile.
  
    ::: moniker range="vs-2017"
 
@@ -89,11 +89,11 @@ Zapisz poniższy plik Dockerfile do nowego pliku na dysku. Jeśli plik nosi po p
    ```
 
    > [!WARNING]
-   > Jeśli podstawowy obraz bezpośrednio w programie microsoft/windowsservercore lub mcr.microsoft.com/windows/servercore (zobacz [syndykaty Microsoft katalogu kontenera](https://azure.microsoft.com/blog/microsoft-syndicates-container-catalog/)), .NET Framework nie może być poprawnie zainstalowany i jest brak błędu instalacji wskazane. Kod zarządzany może nie działać po zakończeniu instalacji. Zamiast tego należy utworzyć obraz na [microsoft/dotnet-framework:4.7.2](https://hub.docker.com/r/microsoft/dotnet-framework) lub nowszej. Należy również zauważyć, że obrazy, które są oznaczone wersji 4.7.2 lub później użyć programu PowerShell jako domyślny `SHELL`, co spowoduje `RUN` i `ENTRYPOINT` instrukcjami, aby zakończyć się niepowodzeniem.
+   > W przypadku opierania się na obrazie bezpośrednio w usłudze Microsoft/windowsservercore lub mcr.microsoft.com/windows/servercore (Zobacz artykuł [Microsoft syndykats Catalog katalog](https://azure.microsoft.com/blog/microsoft-syndicates-container-catalog/)), .NET Framework może nie zostać poprawnie zainstalowany i nie jest wskazywany żaden błąd instalacji. Kod zarządzany może nie działać po zakończeniu instalacji. Zamiast tego należy oprzeć obraz na [platformie Microsoft/dotnet-Framework: 4.7.2](https://hub.docker.com/r/microsoft/dotnet-framework) lub nowszym. Należy również zauważyć, że obrazy otagowane w wersji 4.7.2 lub nowszej mogą używać programu PowerShell jako domyślnego `SHELL`, co spowoduje niepowodzenie wykonywania instrukcji `RUN` i `ENTRYPOINT`.
    >
-   > Visual Studio 2017, wersja, należy zachować 15,8 lub starszym (dowolny produkt) nie zostaną prawidłowo zainstalowane na mcr.microsoft.com/windows/servercore:1809 lub nowszej. Nie jest wyświetlany błąd.
+   > Program Visual Studio 2017 w wersji 15,8 lub starszej (dowolny produkt) nie zostanie poprawnie zainstalowany w systemie mcr.microsoft.com/windows/servercore:1809 lub nowszym. Nie jest wyświetlany żaden błąd.
    >
-   > Zobacz [zgodność wersji kontenerów Windows](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/version-compatibility) aby zobaczyć, które wersje kontenera systemu operacyjnego są obsługiwane w wersjach systemu operacyjnego hosta i [znane problemy dotyczące kontenerów](build-tools-container-issues.md) pod kątem znanych problemów.
+   > Zobacz [zgodność wersji kontenera systemu Windows](/virtualization/windowscontainers/deploy-containers/version-compatibility) , aby sprawdzić, które wersje systemu operacyjnego kontenera są obsługiwane, w których wersjach systemu operacyjnego hosta i [znanych problemów dotyczących kontenerów](build-tools-container-issues.md) znanych problemów.
 
    ::: moniker-end
 
@@ -129,13 +129,13 @@ Zapisz poniższy plik Dockerfile do nowego pliku na dysku. Jeśli plik nosi po p
    ```
 
    > [!WARNING]
-   > Jeśli obraz jest oparty bezpośrednio na microsoft/windowsservercore, .NET Framework nie może być poprawnie zainstalowany i błąd instalacji nie zostanie zgłoszony. Kod zarządzany może nie działać po zakończeniu instalacji. Zamiast tego należy utworzyć obraz na [microsoft/dotnet-framework: 4.8](https://hub.docker.com/r/microsoft/dotnet-framework) lub nowszej. Również należy pamiętać, że obrazy, które są oznaczone wersji 4,8 lub nowszej mogą użyć środowiska PowerShell jako domyślny `SHELL`, co spowoduje `RUN` i `ENTRYPOINT` instrukcjami, aby zakończyć się niepowodzeniem.
+   > Jeśli zamierzasz oprzeć obraz bezpośrednio w firmie Microsoft/windowsservercore, .NET Framework może nie zostać zainstalowana prawidłowo i nie wskazano błędu instalacji. Kod zarządzany może nie działać po zakończeniu instalacji. Zamiast tego należy oprzeć obraz na [platformie Microsoft/dotnet-Framework: 4.8](https://hub.docker.com/r/microsoft/dotnet-framework) lub nowszej. Należy również zauważyć, że obrazy oznaczone w wersji 4,8 lub nowszej mogą używać programu PowerShell jako domyślnego `SHELL`, co spowoduje niepowodzenie instrukcji `RUN` i `ENTRYPOINT`.
    >
-   > Zobacz [zgodność wersji kontenerów Windows](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/version-compatibility) aby zobaczyć, które wersje kontenera systemu operacyjnego są obsługiwane w wersjach systemu operacyjnego hosta i [znane problemy dotyczące kontenerów](build-tools-container-issues.md) pod kątem znanych problemów.
+   > Zobacz [zgodność wersji kontenera systemu Windows](/virtualization/windowscontainers/deploy-containers/version-compatibility) , aby sprawdzić, które wersje systemu operacyjnego kontenera są obsługiwane, w których wersjach systemu operacyjnego hosta i [znanych problemów dotyczących kontenerów](build-tools-container-issues.md) znanych problemów.
 
    ::: moniker-end
 
-1. Uruchom następujące polecenie, w tym katalogu.
+1. Uruchom następujące polecenie w tym katalogu.
 
    ::: moniker range="vs-2017"
 
@@ -143,9 +143,9 @@ Zapisz poniższy plik Dockerfile do nowego pliku na dysku. Jeśli plik nosi po p
    docker build -t buildtools2017:latest -m 2GB .
    ```
 
-   To polecenie tworzy plik Dockerfile w bieżącym katalogu przy użyciu 2 GB pamięci. Wartość domyślna 1 GB nie wystarcza podczas instalowania niektórych obciążeń; jednak może być zdolny do skompilowania z tylko 1 GB pamięci, w zależności od wymagań dotyczących kompilacji.
+   To polecenie kompiluje pliku dockerfile w bieżącym katalogu przy użyciu 2 GB pamięci. Domyślnie 1 GB nie wystarcza w przypadku zainstalowania niektórych obciążeń; Jednak może być możliwe skompilowanie tylko 1 GB pamięci, w zależności od wymagań dotyczących kompilacji.
 
-   Finalnego obrazu jest oznakowany "buildtools2017:latest", aby można było łatwo uruchomić go w kontenerze jako "buildtools2017" od "najnowsza" tag jest domyślnie, jeśli jest określony żaden tag. Jeśli chcesz użyć określonej wersji programu Visual Studio kompilacji 2017 narzędzia w bardziej [zaawansowanym scenariuszu](advanced-build-tools-container.md), może być zamiast tego tagu kontener za pomocą określonego programu Visual Studio kompilacji numer, a także "najnowsza", więc kontenerów można użyć określonego Wersja spójne.
+   Obraz końcowy jest oznaczony jako "buildtools2017: Najnowsza", więc można go łatwo uruchomić w kontenerze jako "buildtools2017", ponieważ tag "Najnowsza" jest wartością domyślną, jeśli nie określono tagu. Jeśli chcesz użyć określonej wersji Visual Studio Build Tools 2017 w bardziej [zaawansowanym scenariuszu](advanced-build-tools-container.md), możesz zamiast tego oznaczyć kontener z konkretnym numerem kompilacji programu Visual Studio, a także "najnowszy", aby kontenery mogły korzystać z określonej wersji.
 
    ::: moniker-end
 
@@ -155,19 +155,19 @@ Zapisz poniższy plik Dockerfile do nowego pliku na dysku. Jeśli plik nosi po p
    docker build -t buildtools2019:latest -m 2GB .
    ```
 
-   To polecenie tworzy plik Dockerfile w bieżącym katalogu przy użyciu 2 GB pamięci. Wartość domyślna 1 GB nie wystarcza podczas instalowania niektórych obciążeń; jednak może być zdolny do skompilowania z tylko 1 GB pamięci, w zależności od wymagań dotyczących kompilacji.
+   To polecenie kompiluje pliku dockerfile w bieżącym katalogu przy użyciu 2 GB pamięci. Domyślnie 1 GB nie wystarcza w przypadku zainstalowania niektórych obciążeń; Jednak może być możliwe skompilowanie tylko 1 GB pamięci, w zależności od wymagań dotyczących kompilacji.
 
-   Finalnego obrazu jest oznakowany "buildtools2019:latest", aby można było łatwo uruchomić go w kontenerze jako "buildtools2019" od "najnowsza" tag jest domyślnie, jeśli jest określony żaden tag. Jeśli chcesz użyć określonej wersji programu Visual Studio kompilacji narzędzia 2019 w bardziej [zaawansowanym scenariuszu](advanced-build-tools-container.md), może być zamiast tego tagu kontener za pomocą określonego programu Visual Studio kompilacji numer, a także "najnowsza", więc kontenerów można użyć określonego Wersja spójne.
+   Obraz końcowy jest oznaczony jako "buildtools2019: Najnowsza", więc można go łatwo uruchomić w kontenerze jako "buildtools2019", ponieważ tag "Najnowsza" jest wartością domyślną, jeśli nie określono tagu. Jeśli chcesz użyć określonej wersji Visual Studio Build Tools 2019 w bardziej [zaawansowanym scenariuszu](advanced-build-tools-container.md), możesz zamiast tego oznaczyć kontener z konkretnym numerem kompilacji programu Visual Studio, a także "najnowszy", aby kontenery mogły korzystać z określonej wersji.
 
    ::: moniker-end
 
-## <a name="using-the-built-image"></a>Przy użyciu wbudowanego obrazu
+## <a name="using-the-built-image"></a>Korzystanie z skompilowanego obrazu
 
-Teraz, po utworzeniu obrazu, możesz ją uruchomić w kontenerze celu zarówno interaktywny, jak i automatyczne kompilacje. W przykładzie użyto wiersza polecenia dewelopera, więc zmiennej PATH i inne zmienne środowiskowe są już skonfigurowane.
+Teraz, po utworzeniu obrazu, można go uruchomić w kontenerze, aby wykonać kompilacje interaktywne i zautomatyzowane. W przykładzie zastosowano wiersz polecenia dla deweloperów, więc ścieżka i inne zmienne środowiskowe są już skonfigurowane.
 
 1. Otwórz wiersz polecenia.
 
-1. Uruchom kontener, aby rozpoczynać Środowisko PowerShell dla wszystkich deweloperów zmiennych środowiskowych ustawionych:
+1. Uruchom kontener, aby uruchomić środowisko PowerShell ze wszystkimi ustawionymi zmiennymi środowiskowymi dla deweloperów:
 
    ::: moniker range="vs-2017"
 
@@ -185,7 +185,7 @@ Teraz, po utworzeniu obrazu, możesz ją uruchomić w kontenerze celu zarówno i
 
    ::: moniker-end
 
-Aby użyć tego obrazu dla przepływu pracy ciągłej integracji/ciągłego wdrażania, można opublikować ją w ramach swojej własnej [usługi Azure Container Registry](https://azure.microsoft.com/services/container-registry) lub innych wewnętrznych [rejestru platformy Docker](https://docs.docker.com/registry/deploying) , serwery muszą tylko wyciągniesz go.
+Aby użyć tego obrazu dla przepływu pracy ciągłej integracji/ciągłego dostarczania, możesz opublikować go we własnym [Azure Container Registry](https://azure.microsoft.com/services/container-registry) lub innym wewnętrznym [rejestrze platformy Docker](https://docs.docker.com/registry/deploying) , aby serwery musiały je tylko ściągnąć.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
@@ -193,4 +193,4 @@ Aby użyć tego obrazu dla przepływu pracy ciągłej integracji/ciągłego wdra
 
 * [Zaawansowany przykład dotyczący kontenerów](advanced-build-tools-container.md)
 * [Znane problemy z kontenerami](build-tools-container-issues.md)
-* [Visual Studio Build Tools obciążeń i składników identyfikatorów](workload-component-id-vs-build-tools.md)
+* [Visual Studio Build Tools obciążenia i identyfikatory składników](workload-component-id-vs-build-tools.md)

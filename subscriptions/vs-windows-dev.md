@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/31/2019
 ms.topic: conceptual
 description: Dowiedz się więcej na temat konta dewelopera systemu Windows dołączonego do subskrypcji programu Visual Studio.
-ms.openlocfilehash: 506edeb75a2dba2831c57698a4259a09834633de
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.openlocfilehash: e7dc24fef7328dee38f9aca92f3676573b0143ef
+ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787797"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72816429"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Konto dewelopera systemu Windows w subskrypcjach programu Visual Studio
 Konto dewelopera systemu Windows, dołączone do wybranej subskrypcji programu Visual Studio, umożliwia przesyłanie bezpłatnych i płatnych aplikacji systemu Windows do sklepu Windows.
@@ -21,17 +21,17 @@ Aby korzystać z konta dewelopera systemu Windows, musisz skonfigurować konto l
 
 Zalecamy utworzenie "prywatnego" okna przeglądarki dla tego procesu.  Na przykład w przeglądarce Google Chrome Utwórz nowe okno "incongnito".  W programie Internet Explorer Utwórz nowe okno "InPrivate".
 
-1. Zaloguj się do witryny [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1. Zaloguj się do [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 2. Znajdź kafelek konto dewelopera systemu Windows w sekcji Narzędzia i kliknij link **uzyskaj kod** w dolnej części kafelka korzyści.  Skopiuj kod do schowka, a następnie kliknij przycisk **Aktywuj**.
    > [!div class="mx-imgBorder"]
-   > ![Kafelek korzyści dla deweloperów systemu Windows](_img/vs-windows-dev/vs-windows-dev-tile.png)
-3. [https://developer.microsoft.com](https://developer.microsoft.com) W witrynie można rozpocząć proces rejestracji.  Kliknij przycisk **Utwórz konto** , aby kontynuować.
+   > ![kafelka korzyści dla deweloperów systemu Windows](_img/vs-windows-dev/vs-windows-dev-tile.png)
+3. W witrynie [https://developer.microsoft.com](https://developer.microsoft.com) można rozpocząć proces rejestracji.  Kliknij przycisk **Utwórz konto** , aby kontynuować.
    > [!div class="mx-imgBorder"]
-   > ![Rejestracja korzyści dla deweloperów systemu Windows](_img/vs-windows-dev/vs-windows-dev-register1-cropped.png)
+   > ![](_img/vs-windows-dev/vs-windows-dev-register1-cropped.png) rejestracji korzyści dla deweloperów systemu Windows
 4. Zaloguj się do subskrypcji.  Jeśli masz wiele kont, wybierz konto skojarzone z subskrypcją przedsiębiorstwa.
 0. Wprowadź swój adres e-mail, wybierz preferowany język i kliknij przycisk **Zapisz**.
 5. Na następnej stronie Wybierz kraj lub region, w którym mieszkasz lub w którym znajduje się Twoja firma, a następnie kliknij przycisk **dalej**.
-6. Wybierz opcję indywidualna jako typ konta.
+6. Wybierz opcję **indywidualna** jako typ konta.
 7. Utwórz nazwę wyświetlaną wydawcy.  Będzie to unikatowa nazwa, którą klienci będą widzieli w przypadku aplikacji, dodatków i usług.
 8. Podaj informacje kontaktowe i preferowany język poczty e-mail, a następnie kliknij przycisk **dalej**.
 9. Może zostać wyświetlony monit o zweryfikowanie hasła.  Wprowadź ją i kliknij przycisk **Zaloguj**.
@@ -42,19 +42,19 @@ Zalecamy utworzenie "prywatnego" okna przeglądarki dla tego procesu.  Na przyk�
 ## <a name="eligibility"></a>Kryteria
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Odnawialny?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standardowa)   | LICENCJONOWANie, Azure, sprzedaż detaliczna, wybrane NFR<sup>1</sup> | Dołączono       |  Yes|
-| Visual Studio Professional (standardowa) | VL, Azure, Retail                                       | Dołączono                                                            |Tak|
-| Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Niedostępne                                            |  Nie dotyczy|
-| Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              |  Niedostępne                                            |  Nie dotyczy|
-| Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure                                       | Niedostępne                                                           |Nie dotyczy|
+| Visual Studio Enterprise (standardowa)   | LICENCJONOWANie, Azure, sprzedaż detaliczna, wybrane NFR<sup>1</sup> | Uwzględnione       |  Tak|
+| Visual Studio Professional (standardowa) | LICENCJONOWANie, Azure, sprzedaż detaliczna                                       | Uwzględnione                                                            |Tak|
+| Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Niedostępne                                            |  POTRĄCON|
+| Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              |  Niedostępne                                            |  POTRĄCON|
+| Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure                                       | Niedostępne                                                           |POTRĄCON|
 ||
 
-<sup></sup>1*obejmuje:    Nie do odsprzedaży (NFR), pełnego etatu, programu Visual Studio Industry partner (VSIP), BizSpark, MCT Software & Services developer. Wyklucza  Microsoft Partner Network (MPN), Wyobraź sobie, najbardziej cenne profesjonalne (MVP), regionalne dyrektora (RD), MCT Software & Services.*
+<sup>1</sup>  *obejmuje: nie dotyczy odsprzedaży (NFR), pełnego etatu, programu Visual Studio Industry partner (VSIP), BizSpark, MCT Software & Services developer. Wyklucza: Microsoft Partner Network (MPN), Wyobraź sobie, najbardziej cenne profesjonalne (MVP), regionalne dyrektora (RD), MCT Software & Services.*
 
 > [!NOTE]
-> Firma Microsoft nie oferuje już Visual Studio Professional rocznych subskrypcji i Visual Studio Enterprise rocznych subskrypcji w ramach subskrypcji chmury. Istnieją zmiany w istniejących klientach i możliwość odnowienia, zwiększenia, zmniejszenia lub anulowania subskrypcji. Zachęcamy [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) nowych klientów do przeglądania różnych opcji zakupu programu Visual Studio.
+> Firma Microsoft nie oferuje już Visual Studio Professional rocznych subskrypcji i Visual Studio Enterprise rocznych subskrypcji w ramach subskrypcji chmury. Istnieją zmiany w istniejących klientach i możliwość odnowienia, zwiększenia, zmniejszenia lub anulowania subskrypcji. Zachęcamy nowych klientów do przechodzenia do [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) , aby poznać różne opcje zakupu programu Visual Studio.
 
-Nie masz pewności, której subskrypcji używasz?  Połącz się z, [AbywyświetlićwszystkiesubskrypcjeprzypisanedoTwojegoadresue-mail. https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Jeśli nie widzisz wszystkich subskrypcji, być może masz co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby zobaczyć te subskrypcje.
+Nie masz pewności, której subskrypcji używasz?  Połącz się z [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) , aby wyświetlić wszystkie subskrypcje przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkich subskrypcji, być może masz co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby zobaczyć te subskrypcje.
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
 - Potrzebujesz pomocy przy korzystaniu z konta dewelopera systemu Windows?  Zapoznaj się z zasobami [pomocy technicznej](https://developer.microsoft.com/windows/support) w [Centrum deweloperów systemu Windows](https://developer.microsoft.com/windows).
@@ -63,4 +63,4 @@ Nie masz pewności, której subskrypcji używasz?  Połącz się z, [Abywyświet
 - Masz pytanie dotyczące środowiska IDE programu Visual Studio, Azure DevOps Services lub innych produktów lub usług Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Następne kroki
-Platforma Azure to osobista piaskownica do celów deweloperskich i testowych.  Możesz udostępniać maszyny wirtualne, usługi w chmurze i inne zasoby platformy Azure. Pamiętaj, aby aktywować [korzyść platformy Azure](vs-azure.md) , aby rozpocząć korzystanie z platformy Azure z miesięcznymi kredytami.
+Platforma Azure to osobista piaskownica do celów deweloperskich i testowych.  Możesz udostępniać maszyny wirtualne, usługi w chmurze i inne zasoby platformy Azure. Pamiętaj, aby aktywować [korzyść platformy Azure](vs-azure.md) , aby rozpocząć korzystanie z funkcji Azure DevTest.

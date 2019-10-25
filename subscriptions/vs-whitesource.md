@@ -6,12 +6,12 @@ manager: lank
 ms.date: 08/01/2019
 ms.topic: conceptual
 description: Dowiedz się, jak aktywować subskrypcję usługi WhiteSource w ramach subskrypcji programu Visual Studio.
-ms.openlocfilehash: 4119e188a265660b805c1ce404cb909f600fb30a
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.openlocfilehash: 54248c0291fe54c2cb7db9155233d08e96991581
+ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787850"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72816411"
 ---
 # <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>WhiteSource w subskrypcjach programu Visual Studio
 
@@ -23,11 +23,11 @@ Znajdź i napraw luki w zabezpieczeniach typu "open source" i Generuj kompleksow
 
 2. Znajdź kafelek "WhiteSource" w sekcji Tools, a następnie kliknij link **Pobierz kod** w dolnej części kafelka korzyści.
    > [!div class="mx-imgBorder"]
-   > ![Kafelek korzyści WhiteSource](_img/vs-whitesource/vs-whitesource-tile.png)
+   > Kafelek ![WhiteSource korzyść](_img/vs-whitesource/vs-whitesource-tile.png)
 
 3. Otrzymasz powiadomienie z informacją o kodzie aktywacji.  **Skopiuj kod do schowka**, a następnie kliknij przycisk **Aktywuj**.
    > [!div class="mx-imgBorder"]
-   > ![Kod korzyści WhiteSource](_img/vs-whitesource/vs-whitesource-code.png)
+   > ![](_img/vs-whitesource/vs-whitesource-code.png) kodu korzyści WhiteSource
 
 4. Na stronie **Aktywuj Twoje konto** kliknij link **instalacji** w kroku 1.
 5. Kliknij przycisk **Pobierz bezpłatnie** w Visual Studio Marketplace.
@@ -41,9 +41,9 @@ Znajdź i napraw luki w zabezpieczeniach typu "open source" i Generuj kompleksow
 WhiteSource jest teraz dostępna bezpłatnie w Visual Studio Marketplace. 
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
-- Potrzebujesz pomocy z WhiteSourceem?  Czat z przedstawicielem WhiteSource https://www.whitesourcesoftware.com/vse_whitesource_bolt/
+- Potrzebujesz pomocy z WhiteSourceem?  Czat z WhiteSourceem na żywo w https://www.whitesourcesoftware.com/vse_whitesource_bolt/
 - Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
 - Masz pytanie dotyczące środowiska IDE programu Visual Studio, Azure DevOps Services lub innych produktów lub usług Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Następne kroki
-Jako subskrybent programu Visual Studio możesz używać Microsoft Azure bez dodatkowych opłat.  Miesięczne środki na korzystanie z [platformy Azure](vs-azure.md)to osobista piaskownica do celów deweloperskich i testowych.  Możesz udostępniać maszyny wirtualne, usługi w chmurze i inne zasoby platformy Azure.  Kwoty kredytowe różnią się w zależności od poziomu subskrypcji.
+Jako subskrybent programu Visual Studio możesz używać Microsoft Azure bez dodatkowych opłat.  W przypadku comiesięcznych środków na korzystanie z [platformy Azure DevTest](vs-azure.md), platforma Azure jest osobistą piaskownicą na potrzeby tworzenia i testowania.  Możesz udostępniać maszyny wirtualne, usługi w chmurze i inne zasoby platformy Azure.  Kwoty kredytowe różnią się w zależności od poziomu subskrypcji.

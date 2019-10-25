@@ -16,17 +16,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0adcca4acd5fc72d301d707ccdd831c86ef3e48f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: bbc705a20f8d878d85dc6aba14c64178c76041ac
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72731921"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888401"
 ---
 # <a name="how-to-use-the-wpf-tree-visualizer"></a>Porady: korzystanie z wizualizatora drzewa WPF
 Można użyć wizualizatora drzewa WPF do eksplorowania drzewa wizualnego obiektu WPF i wyświetlić właściwości zależności WPF dla obiektów, które są zawarte w tym drzewie. Aby uzyskać więcej informacji na temat drzew wizualizacji, zobacz [drzewa w WPF](/dotnet/framework/wpf/advanced/trees-in-wpf). Aby uzyskać więcej informacji na temat właściwości zależności, zobacz [Omówienie właściwości zależności](/dotnet/framework/wpf/advanced/dependency-properties-overview).
 
  Po otwarciu wizualizatora drzewa WPF zobaczysz dwa okienka: **drzewo wizualizacji** po lewej stronie i **Właściwości** _nazwy_ **:** _w okienku po_ prawej stronie. Zaznacz dowolny obiekt w okienku **drzewa wizualnego** , a **Właściwości** **:** _Typ_ , okienko jest automatycznie aktualizowane, aby pokazać właściwości tego obiektu.
+
+ > [!NOTE]
+ > Możesz również użyć [aktywnego drzewa wizualnego i Eksploratora właściwości na żywo](../xaml-tools/inspect-xaml-properties-while-debugging.md) , aby przeanalizować drzewo wizualne obiektów WPF. Wizualizator drzewa WPF jest starszą funkcją i nie jest aktywnym programowaniem.
 
 ### <a name="to-open-the-wpf-tree-visualizer"></a>Aby otworzyć wizualizator drzewa WPF
 
