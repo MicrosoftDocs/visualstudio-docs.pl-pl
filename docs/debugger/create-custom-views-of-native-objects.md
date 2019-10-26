@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cb2f9d9319a943182c8256256ca6ea7334c532d1
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
+ms.openlocfilehash: 53483979600093133c2b059d9ea921cdb8a08ab1
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72349482"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911626"
 ---
 # <a name="create-custom-views-of-c-objects-in-the-debugger-using-the-natvis-framework"></a>Tworzenie niestandardowych widoków C++ obiektów w debugerze przy użyciu struktury Natvis
 
@@ -30,15 +30,15 @@ Natvis zastępuje plik *autoexp. dat* we wcześniejszych wersjach programu Visua
 
 Struktura Natvis służy do tworzenia reguł wizualizacji dla tworzonych typów, dzięki czemu deweloperzy mogą łatwiej widzieć je podczas debugowania.
 
-Na przykład na poniższej ilustracji przedstawiono zmienną typu [Windows:: UI:: XAML:: Controls:: TextBox](http://go.microsoft.com/fwlink/?LinkId=258422) w oknie debugera bez zastosowanych niestandardowych wizualizacji.
+Na przykład na poniższej ilustracji przedstawiono zmienną typu [Windows:: UI:: XAML:: Controls:: TextBox](/uwp/api/Windows.UI.Xaml.Controls.TextBox) w oknie debugera bez zastosowanych niestandardowych wizualizacji.
 
-![Domyślna](../debugger/media/dbg_natvis_textbox_default.png "Wizualizacja") domyślnego pola tekstowego wizualizacji
+![Wizualizacja domyślna TextBox](../debugger/media/dbg_natvis_textbox_default.png "Wizualizacja domyślna TextBox")
 
 Wyróżniony wiersz zawiera właściwość `Text` klasy `TextBox`. Złożona hierarchia klas utrudnia znalezienie tej właściwości. Debuger nie wie, jak interpretować niestandardowy typ ciągu, dlatego nie można zobaczyć ciągu przechowywanego wewnątrz pola tekstowego.
 
 Ten sam `TextBox` wygląda znacznie prostsze w oknie zmiennych, gdy stosowane są reguły niestandardowego wizualizatora Natvis. Ważne elementy członkowskie klasy są wyświetlane razem, a debuger pokazuje podstawową wartość ciągu niestandardowego typu ciągu.
 
-![Dane TextBox przy użyciu danych tekstowych wizualizatora](../debugger/media/dbg_natvis_textbox_visualizer.png "przy użyciu wizualizatora")
+![Dane TextBox przy użyciu wizualizatora](../debugger/media/dbg_natvis_textbox_visualizer.png "Dane TextBox przy użyciu wizualizatora")
 
 ## <a name="BKMK_Using_Natvis_files"></a>Korzystanie z plików. Natvis C++ w projektach
 
@@ -138,7 +138,7 @@ Wizualizacje Natvis używają C++ wyrażeń do określania elementów danych do 
 
 ## <a name="natvis-views"></a>Widoki Natvis
 
-Można zdefiniować różne widoki Natvis do wyświetlania typów na różne sposoby. Na przykład poniżej przedstawiono wizualizację `std::vector`, która definiuje uproszczony widok o nazwie `simple`. @No__t_0 i `ArrayItems` elementy są wyświetlane w widoku domyślnym i `simple` widoku, podczas gdy elementy `[size]` i `[capacity]` nie są wyświetlane w widoku `simple`.
+Można zdefiniować różne widoki Natvis do wyświetlania typów na różne sposoby. Na przykład poniżej przedstawiono wizualizację `std::vector`, która definiuje uproszczony widok o nazwie `simple`. `DisplayString` i `ArrayItems` elementy są wyświetlane w widoku domyślnym i `simple` widoku, podczas gdy elementy `[size]` i `[capacity]` nie są wyświetlane w widoku `simple`.
 
 ```xml
 <Type Name="std::vector&lt;*&gt;">
@@ -156,7 +156,7 @@ Można zdefiniować różne widoki Natvis do wyświetlania typów na różne spo
 
 W oknie **czujki** Użyj specyfikatora formatu **widoku,** aby określić widok alternatywny. Widok prosty jest wyświetlany jako **VEC, View (Simple)** :
 
-![Okno wyrażeń kontrolnych z widokiem prostym](../debugger/media/watch-simpleview.png "okno wyrażeń kontrolnych z widokiem prostym")
+![okno wyrażeń kontrolnych z widokiem prostym](../debugger/media/watch-simpleview.png "okno wyrażeń kontrolnych z widokiem prostym")
 
 ## <a name="BKMK_Diagnosing_Natvis_errors"></a>Błędy Natvis
 
@@ -256,7 +256,7 @@ Poniższy przykład najpierw analizuje wpis pasujący do 2015 STL. Jeśli przean
 ```
 
 ### <a name="optional-attribute"></a>Opcjonalny atrybut
-Atrybut `Optional` można umieścić w dowolnym węźle. Jeśli Podwyrażenie w opcjonalnym węźle nie zostanie przeanalizowane, debuger zignoruje ten węzeł, ale stosuje pozostałe reguły `Type`. W poniższym typie `[State]` nie jest opcjonalny, ale `[Exception]` jest opcjonalne.  Jeśli `MyNamespace::MyClass` ma pole o nazwie _ `M_exceptionHolder`, pojawi się zarówno węzeł `[State]`, jak i węzeł `[Exception]`, ale jeśli nie ma pola `_M_exceptionHolder`, pojawi się tylko węzeł `[State]`.
+Atrybut `Optional` można umieścić w dowolnym węźle. Jeśli Podwyrażenie w opcjonalnym węźle nie zostanie przeanalizowane, debuger zignoruje ten węzeł, ale stosuje pozostałe reguły `Type`. W poniższym typie `[State]` nie jest opcjonalny, ale `[Exception]` jest opcjonalne.  Jeśli `MyNamespace::MyClass` ma pole o nazwie _`M_exceptionHolder`, pojawi się zarówno węzeł `[State]`, jak i węzeł `[Exception]`, ale jeśli nie ma pola `_M_exceptionHolder`, pojawi się tylko węzeł `[State]`.
 
 ```xml
 <Type Name="MyNamespace::MyClass">
@@ -285,7 +285,7 @@ Na przykład następująca Wizualizacja ma dwa elementy `DisplayString` dla typu
 
 ### <a name="includeview-and-excludeview-attributes"></a>IncludeView i ExcludeView — atrybuty
 
-Atrybuty `IncludeView` i `ExcludeView` określają elementy do wyświetlenia lub nie są wyświetlane w określonych widokach. Na przykład w poniższej specyfikacji Natvis dla `std::vector` widok `simple` nie wyświetla `[size]` i `[capacity]` elementów.
+Atrybuty `IncludeView` i `ExcludeView` określają elementy do wyświetlenia lub nie są wyświetlane w określonych widokach. Na przykład w poniższej specyfikacji Natvis dla `std::vector`widok `simple` nie wyświetla `[size]` i `[capacity]` elementów.
 
 ```xml
 <Type Name="std::vector&lt;*&gt;">
@@ -331,7 +331,7 @@ Element `DisplayString` określa ciąg, który ma być wyświetlany jako wartoś
 
 Oznacza, że zmienne typu `CPoint` wyświetlane jak na poniższej ilustracji:
 
- ![Użyj elementu DisplayString](../debugger/media/dbg_natvis_cpoint_displaystring.png "Użyj elementu klasy DisplayString")
+ ![Korzystanie z elementu DisplayString](../debugger/media/dbg_natvis_cpoint_displaystring.png "Korzystanie z elementu DisplayString")
 
 W wyrażeniu `DisplayString` `x` i `y`, które są elementami członkowskimi `CPoint`, znajdują się wewnątrz nawiasów klamrowych, więc ich wartości są oceniane. W przykładzie pokazano również, jak można wyjść z klamry klamrowej przy użyciu podwójnych nawiasów klamrowych (`{{` lub `}}`).
 
@@ -350,7 +350,7 @@ Element `StringView` definiuje wartość, którą debuger może wysłać do wbud
 
 Obiekt `CStringT` jest wyświetlany w oknie zmiennych podobnym do tego przykładu:
 
-![CStringT DisplayString element](../debugger/media/dbg_natvis_displaystring_cstringt.png "CStringT element DisplayString")
+![CStringT — element klasy DisplayString](../debugger/media/dbg_natvis_displaystring_cstringt.png "CStringT — element klasy DisplayString")
 
 Dodanie elementu `StringView` informuje debuger, że może wyświetlić wartość jako wizualizację tekstu.
 
@@ -363,7 +363,7 @@ Dodanie elementu `StringView` informuje debuger, że może wyświetlić wartoś�
 
 Podczas debugowania można wybrać ikonę lupy obok zmiennej, a następnie wybrać **wizualizator tekstu** , aby wyświetlić ciąg, do którego wskazuje **m_pszData** .
 
- ![CStringT dane za pomocą wizualizacji StringView](../debugger/media/dbg_natvis_stringview_cstringt.png "CStringT danych za pomocą wizualizatora StringView")
+ ![CStringT danych za pomocą wizualizatora StringView](../debugger/media/dbg_natvis_stringview_cstringt.png "CStringT danych za pomocą wizualizatora StringView")
 
 Wyrażenie `{m_pszData,su}` zawiera specyfikator C++ formatu **Su**, aby wyświetlić wartość jako ciąg Unicode. Aby uzyskać więcej informacji, zobacz [specyfikatory formatu C++w ](../debugger/format-specifiers-in-cpp.md).
 
@@ -391,7 +391,7 @@ Opcjonalny węzeł `Expand` dostosowuje elementy podrzędne typu wizualizacji po
 
 W oknie debugera typ `CRect` wygląda następująco:
 
-![CRect z rozszerzeniem elementu elementu](../debugger/media/dbg_natvis_expand_item_crect1.png "CRect z rozwinięciem elementu elementu")
+![CRect z rozwinięciem elementu elementu](../debugger/media/dbg_natvis_expand_item_crect1.png "CRect z rozwinięciem elementu elementu")
 
 Debuger oblicza wyrażenia określone w `Width` i `Height` elementów, a następnie wyświetla wartości w kolumnie **wartość** w oknie zmiennych.
 
@@ -419,7 +419,7 @@ Użyj węzła `ArrayItems`, aby debuger programu Visual Studio interpretuje typ 
 
 W oknie zmiennych `std::vector` są wyświetlane poszczególne elementy:
 
-![std:: Vector using ArrayItems ekspansji](../debugger/media/dbg_natvis_expand_arrayitems_stdvector.png "std:: Vector przy użyciu rozszerzenia ArrayItems")
+![std:: Vector przy użyciu rozszerzenia ArrayItems](../debugger/media/dbg_natvis_expand_arrayitems_stdvector.png "std:: Vector przy użyciu rozszerzenia ArrayItems")
 
 Węzeł `ArrayItems` musi mieć:
 
@@ -454,7 +454,7 @@ Można również określić wielowymiarowe tablice. W takim przypadku debuger po
 
 Poniżej przedstawiono sposób, w jaki obiekt dwuwymiarowy `Concurrency::array` przeszukuje okno debugera:
 
-![Dwuwymiarowa tablica z ArrayItems ekspansją](../debugger/media/dbg_natvis_expand_arrayitems_2d.png "dwuwymiarową z rozwinięciem ArrayItems")
+![Dwuwymiarowa tablica z rozszerzeniem ArrayItems](../debugger/media/dbg_natvis_expand_arrayitems_2d.png "Dwuwymiarowa tablica z rozszerzeniem ArrayItems")
 
 #### <a name="BKMK_IndexListItems_expansion"></a>Rozwinięcie IndexListItems
 
@@ -497,7 +497,7 @@ Jeśli typ wizualizacji reprezentuje listę połączoną, debuger może wyświet
 </Type>
 ```
 
-@No__t_0 element odnosi się do długości listy. `HeadPointer` wskazuje na pierwszy element, `NextPointer` odnosi się do następnego elementu, a `ValueNode` odnosi się do wartości elementu.
+`Size` element odnosi się do długości listy. `HeadPointer` wskazuje na pierwszy element, `NextPointer` odnosi się do następnego elementu, a `ValueNode` odnosi się do wartości elementu.
 
 Debuger oblicza wyrażenia `NextPointer` i `ValueNode` w kontekście `LinkedListItems` elementu węzła, a nie typu listy nadrzędnej. W poprzednim przykładzie `CAtlList` ma klasę `CNode` (znajdującą się w `atlcoll.h`), która jest węzłem listy połączonej. `m_pNext` i `m_element` są polami tej klasy `CNode`, a nie z klasą `CAtlList`.
 
@@ -541,7 +541,7 @@ Za pomocą `Exec` można wykonać kod wewnątrz `CustomListItems` rozwinięcia p
 
 `CustomListItems` obsługuje następujące funkcje wewnętrzne:
 
-- `strlen`, `wcslen`, `strnlen`, `wcsnlen`, `strcmp`, `wcscmp`, `_stricmp`, `_strcmpi`, `_wcsicmp`, `strncmp`, 0, 1, 2, 3, 4, 5 , 6, 7, 8, 9, 0, 1, 2, 3
+- `strlen`, `wcslen`, `strnlen`, `wcsnlen`, `strcmp`, `wcscmp`, `_stricmp`, `_strcmpi`, `_wcsicmp`, `strncmp`, `wcsncmp`, `_strnicmp`, `_wcsnicmp`, `memcmp`, `memicmp`, `wmemcmp`, `strchr`, `wcschr`, `memchr`, `wmemchr`, `strstr`, `wcsstr`, `__log2`, `__findNonNull`
 - `GetLastError`, `TlsGetValue`, `DecodeHString`, `WindowsGetStringLen`, `WindowsGetStringRawBuffer`, `WindowsCompareStringOrdinal`, `RoInspectCapturedStackBackTrace`, `CoDecodeProxy`, `GetEnvBlockLength`, `DecodeWinRTRestrictedException`, 0, 1, 2
 - `ConcurrencyArray_OperatorBracket_idx // Concurrency::array<>::operator[index<>] and operator(index<>)`
 - `ConcurrencyArray_OperatorBracket_int // Concurrency::array<>::operator(int, int, ...)`
@@ -582,7 +582,7 @@ Składnia jest podobna do węzła `LinkedListItems`. `LeftPointer`, `RightPointe
 
 Na przykład typ inteligentnego wskaźnika `auto_ptr<vector<int>>` zwykle jest wyświetlany jako:
 
- (../debugger/media/dbg_natvis_expand_expandeditem_default.png "rozwinięcie") domyślnego ![rozwinięcia wektora&#95;&#60;&#60;&#62; &#62; autoptr]
+ ![rozwinięcie&#60;&#62; domyślnego&#60;rozmiaru&#62; wektora&#95;autoptr](../debugger/media/dbg_natvis_expand_expandeditem_default.png "Domyślne rozwinięcie")
 
  Aby wyświetlić wartości wektora, należy przejść do szczegółów dwóch poziomów w oknie zmiennych, przechodząc przez składową `_Myptr`. Poprzez dodanie elementu `ExpandedItem` można wyeliminować zmienną `_Myptr` z hierarchii i bezpośrednio przeglądać elementy wektorowe:
 
@@ -595,7 +595,7 @@ Na przykład typ inteligentnego wskaźnika `auto_ptr<vector<int>>` zwykle jest w
 </Type>
 ```
 
- ![Funkcja&#95;&#60;autoptr&#60;Vector&#62; &#62; int ExpandedItem ekspansja](../debugger/media/dbg_natvis_expand_expandeditem_visualized.png "ExpandedItem")
+ ![&#95;rozwinięcie&#60;&#62; ExpandedItem&#60;wektora&#62; autoptr](../debugger/media/dbg_natvis_expand_expandeditem_visualized.png "Rozwinięcie ExpandedItem")
 
 Poniższy przykład pokazuje, jak agregować właściwości z klasy podstawowej w klasie pochodnej. Załóżmy, że Klasa `CPanel` dziedziczy z `CFrameworkElement`. Zamiast powtarzania właściwości, które pochodzą z klasy podstawowej `CFrameworkElement`, Wizualizacja `ExpandedItem` węzła dołącza te właściwości do listy podrzędnej klasy `CPanel`.
 
@@ -631,7 +631,7 @@ Specyfikator formatu **ND** , który wyłącza dopasowanie wizualizacji dla klas
 </Type>
 ```
 
- ![Concurrency:: Array z syntetycznym rozszerzeniem elementu](../debugger/media/dbg_natvis_expand_synthetic.png "concurrency:: Array z syntetycznym rozszerzeniem elementu")
+ ![Concurrency:: Array z syntetycznym rozszerzeniem elementu](../debugger/media/dbg_natvis_expand_synthetic.png "Concurrency:: Array z syntetycznym rozszerzeniem elementu")
 
 ### <a name="BKMK_HResult"></a>HResult, element
  Element `HResult` umożliwia dostosowanie informacji pokazywanych dla **HRESULT** w oknach debugera. Element `HRValue` musi zawierać wartość 32-bitową **HRESULT** , która ma zostać dostosowana. Element `HRDescription` zawiera informacje, które mają być wyświetlane w oknie debugera.
@@ -661,11 +661,11 @@ Oto przykład elementu UIVisualizer:
 </AutoVisualizer>
 ```
 
-- @No__t_0  -  `Id` para atrybutów identyfikuje `UIVisualizer`. @No__t_0 jest identyfikatorem GUID usługi udostępnianej przez pakiet wizualizatora. `Id` jest unikatowym identyfikatorem odróżniającym Wizualizatory, jeśli usługa zawiera więcej niż jeden element. W poprzednim przykładzie ta sama usługa wizualizatora udostępnia dwa Wizualizatory.
+- `ServiceId` - `Id` para atrybutów identyfikuje `UIVisualizer`. `ServiceId` jest identyfikatorem GUID usługi udostępnianej przez pakiet wizualizatora. `Id` jest unikatowym identyfikatorem odróżniającym Wizualizatory, jeśli usługa zawiera więcej niż jeden element. W poprzednim przykładzie ta sama usługa wizualizatora udostępnia dwa Wizualizatory.
 
 - Atrybut `MenuName` definiuje nazwę wizualizatora do wyświetlenia na liście rozwijanej obok ikony lupy w debugerze. Na przykład:
 
-  Menu ![skrótów menu UIVisualizer](../debugger/media/dbg_natvis_vectorvisualizer.png "UIVisualizer menu skrótów")
+  ![Menu skrótów menu UIVisualizer](../debugger/media/dbg_natvis_vectorvisualizer.png "Menu skrótów menu UIVisualizer")
 
 Każdy typ zdefiniowany w pliku *Natvis* musi jawnie zawierać wszystkie WIZUALIZATORY interfejsu użytkownika, które mogą je wyświetlić. Debuger dopasowuje odwołania wizualizatora w wpisach typu do zarejestrowanych wizualizatorów. Na przykład następujący wpis typu dla `std::vector` odwołuje się do `UIVisualizer` w poprzednim przykładzie.
 

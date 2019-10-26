@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b908e4fe9ed0087abaf5f1390bb8faf5cc12bdaa
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 27e551132e66ef0cb380b56441d19b1436d19df2
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72737558"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911533"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a>Błąd: Monitor debugera zdalnego Microsoft Visual (MSVSMON.EXE) zdaje się nie być uruchomiony na komputerze zdalnym.
 Ten komunikat o błędzie oznacza, że program Visual Studio nie może znaleźć poprawnego wystąpienia Monitor zdalnego debugowania programu Visual Studio na komputerze zdalnym. Aby debugowanie zdalne działało, należy zainstalować Monitor zdalnego debugowania programu Visual Studio. Aby uzyskać informacje o pobieraniu i konfigurowaniu zdalnego debugera, zobacz [zdalne debugowanie](../debugger/remote-debugging.md).
@@ -41,7 +41,7 @@ Ten komunikat o błędzie oznacza, że program Visual Studio nie może znaleźć
  Spróbuj [wysłać polecenie ping](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee624059(v=ws.10)) do komputera zdalnego. Jeśli nie odpowiada na polecenie ping, narzędzia zdalne nie będą mogły nawiązywać połączenia. Spróbuj ponownie uruchomić maszynę zdalną i w inny sposób upewnij się, że jest prawidłowo skonfigurowana w sieci.
 
 ## <a name="the-version-of-the-remote-debugger-doesnt-match-the-version-of-visual-studio"></a>Wersja zdalnego debugera nie jest zgodna z wersją programu Visual Studio
- Wersja programu Visual Studio, która jest uruchamiana lokalnie, musi być zgodna z wersją monitora debugowania zdalnego, który jest uruchomiony na komputerze zdalnym. Aby rozwiązać ten problem, Pobierz i zainstaluj zgodną wersję monitora zdalnego debugowania. Przejdź do [Centrum pobierania](http://www.microsoft.com/en-us/download) , aby znaleźć odpowiednią wersję zdalnego debugera.
+ Wersja programu Visual Studio, która jest uruchamiana lokalnie, musi być zgodna z wersją monitora debugowania zdalnego, który jest uruchomiony na komputerze zdalnym. Aby rozwiązać ten problem, Pobierz i zainstaluj zgodną wersję monitora zdalnego debugowania. Przejdź do [Centrum pobierania](https://www.microsoft.com/download) , aby znaleźć odpowiednią wersję zdalnego debugera.
 
 ## <a name="the-local-and-remote-machines-have-different-authentication-modes"></a>Komputery lokalne i zdalne mają różne tryby uwierzytelniania
  Maszyny lokalne i zdalne muszą korzystać z tego samego trybu uwierzytelniania. Aby rozwiązać ten problem, upewnij się, że obie maszyny używają tego samego trybu uwierzytelniania. Aby uzyskać więcej informacji na temat trybów uwierzytelniania, zobacz [Omówienie uwierzytelniania systemu Windows](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831472(v=ws.11)).
@@ -72,7 +72,7 @@ Ten komunikat o błędzie oznacza, że program Visual Studio nie może znaleźć
 ## <a name="more-help"></a>Więcej pomocy
  Aby uzyskać więcej pomocy dotyczącej zdalnego debugera, w tym przełączników wiersza polecenia, kliknij przycisk **pomoc > użycie** w oknie Debuger zdalny. Jeśli go nie masz, możesz zobaczyć stronę sieci Web, kopiując Poniższy wiersz do okna **Eksploratora plików** . (Należy zastąpić katalog instalacyjny programu \<Visual Studio > z lokalizacją instalacji programu Visual Studio).
 
- *katalog instalacyjny res://\<Visual Studio >* \ COMMON7 \ IDE \ zdalny %2 0 Debugger \ x64 \ msvsmon. exe/help. htm
+ res:// *\<katalog instalacyjny programu Visual Studio >* \ COMMON7 \ IDE \ zdalny %2 0 Debugger \ x64 \ msvsmon. exe/help. htm
 
 ## <a name="see-also"></a>Zobacz także
 - [Błędy związane z debugowaniem zdalnym i rozwiązywanie problemów](../debugger/remote-debugging-errors-and-troubleshooting.md)

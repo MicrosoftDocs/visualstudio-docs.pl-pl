@@ -14,44 +14,44 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b91cc92abca856e3a23e7b1154e378c99923fcf
-ms.sourcegitcommit: 8a699df154464387f327691dce507d7c3d0e2aab
+ms.openlocfilehash: dbca6429c1cc1669345cda465ec9ecfe3af0ed06
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "70060373"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919187"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Funkcje ułatwień dostępu programu Visual Studio
 
 Oprócz funkcji i narzędzi ułatwień dostępu w systemie Windows następujące funkcje sprawiają, że program Visual Studio jest bardziej dostępny dla osób niepełnosprawnych:
 
-- Rozszerzenia narzędzi przycisk i tekst
+- Przycisk paska narzędzi i rozszerzenie tekstu
 
 - Opcje rozmiaru tekstu w edytorach
 
-- Dostosowywanie kolorów w edytorach
+- Dostosowanie koloru w edytorach
 
-- Dostosowywanie skrótów klawiatury
+- Dostosowywanie skrótu klawiaturowego
 
-- Automatyczne uzupełnianie metody i parametrów
+- Autouzupełnianie dla metod i parametrów
 
 > [!NOTE]
-> Ten temat dotyczy programu Visual Studio w Windows. Aby uzyskać Visual Studio dla komputerów Mac, zobacz [ułatwienia dostępu dla Visual Studio dla komputerów Mac](/visualstudio/mac/accessibility).
+> Ten temat ma zastosowanie do programu Visual Studio w systemie Windows. Aby uzyskać Visual Studio dla komputerów Mac, zobacz [ułatwienia dostępu dla Visual Studio dla komputerów Mac](/visualstudio/mac/accessibility).
 
 Więcej informacji znajduje się w następujących tematach:
 
 - [Instrukcje: Ustawianie opcji ułatwień dostępu IDE](../../ide/reference/how-to-set-ide-accessibility-options.md)
 
-- [Instrukcje: Używaj wyłącznie klawiatury](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
+- [Instrukcje: korzystanie wyłącznie z klawiatury](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
 
 - [Domyślne skróty klawiaturowe](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
 
-- [Ułatwienia dostępu, porady i wskazówki](../../ide/reference/accessibility-tips-and-tricks.md)
+- [Porady i wskazówki dotyczące ułatwień dostępu](../../ide/reference/accessibility-tips-and-tricks.md)
 
-- [Instrukcje: Zmień czcionki i kolory](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+- [Instrukcje: zmiana czcionek i kolorów](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 
 > [!IMPORTANT]
-> Informacje na tej stronie mogą dotyczyć tylko użytkowników, którzy chcą uzyskać licencję na produkty firmy Microsoft w Stany Zjednoczone. Jeśli ten produkt został uzyskany poza Stany Zjednoczone, odwiedź witrynę internetową [Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431) , aby uzyskać listę numerów telefonów i adresów usług pomocy technicznej firmy Microsoft. Możesz skontaktować się z działem pomocy technicznej, aby dowiedzieć się, czy typ produktów i usług opisanych na tej stronie jest dostępny w Twoim regionie. Informacje o ułatwieniach dostępu są również dostępne w innych językach.
+> Informacje na tej stronie mogą dotyczyć tylko użytkowników, którzy chcą uzyskać licencję na produkty firmy Microsoft w Stany Zjednoczone. Jeśli ten produkt został uzyskany poza Stany Zjednoczone, odwiedź witrynę internetową [Microsoft Accessibility](https://www.microsoft.com/accessibility/) , aby uzyskać listę numerów telefonów i adresów usług pomocy technicznej firmy Microsoft. Możesz skontaktować się z działem pomocy technicznej, aby dowiedzieć się, czy typ produktów i usług opisanych na tej stronie jest dostępny w Twoim regionie. Informacje o ułatwieniach dostępu są również dostępne w innych językach.
 
 ::: moniker range="vs-2017"
 

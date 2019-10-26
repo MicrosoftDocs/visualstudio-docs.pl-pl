@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16b46d47ec5850a79d78667671c7eb671d859f3e
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.openlocfilehash: 56ecf4cb1d777362daf381646094c20f82f30f85
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128232"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72910344"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>Analizowanie użycia pamięci bez debugera
 
@@ -36,7 +36,7 @@ Narzędzie **użycie pamięci** można uruchomić z debugerem lub bez niego. Pon
 
 1. Otwórz projekt C# uniwersalnego systemu Windows (platformy UWP) w programie Visual Studio.
 
-1. Na pasku menu wybierz kolejno opcje **Debuguj program** > **Profiler wydajności**.
+1. Na pasku menu wybierz kolejno opcje **debuguj** > narzędzie do **oceny wydajności**.
 
 1. Wybierz opcję **użycie pamięci**, a następnie wybierz pozycję **Uruchom**.
 
@@ -217,6 +217,6 @@ Drzewo **typów, do których istnieją odwołania** w raporcie różnic migawek,
 ## <a name="see-also"></a>Zobacz także
 - [Pamięć JavaScript](../profiling/javascript-memory.md)
 - [Profilowanie w programie Visual Studio](../profiling/index.yml)
-- [Pierwsze spojrzenie na narzędziach profilowania](../profiling/profiling-feature-tour.md)
-- [Wydajność — najlepsze rozwiązania dla aplikacji platformy uniwersalnej systemu Windows przy użyciu języka C++, C# i Visual Basic](/previous-versions/windows/apps/hh750313\(v\=win.10\))
-- [Diagnozowanie problemów z pamięcią za pomocą nowego narzędzia użycie pamięci w programie Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=394706)
+- [Pierwsze spojrzenie na narzędzia profilowania](../profiling/profiling-feature-tour.md)
+- [Najlepsze rozwiązania w zakresie wydajności dla aplikacji C++platformy UWP C#przy użyciu, i Visual Basic](/previous-versions/windows/apps/hh750313\(v\=win.10\))
+- [Diagnozowanie problemów z pamięcią za pomocą nowego narzędzia użycie pamięci w programie Visual Studio](https://devblogs.microsoft.com/devops/diagnosing-memory-issues-with-the-new-memory-usage-tool-in-visual-studio/)

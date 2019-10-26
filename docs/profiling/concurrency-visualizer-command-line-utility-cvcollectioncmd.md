@@ -1,5 +1,5 @@
 ---
-title: Narzędzie wiersza polecenia CONCURRENCY Visualizer (CVCollectionCmd) | Dokumentacja firmy Microsoft
+title: Narzędzie wiersza polecenia Concurrency Visualizer (CVCollectionCmd) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,89 +10,89 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09222971ea5150b280014d85f801a82a8eccc5d2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2721798ee9f0c7e006acdedbecaecbd56068be3f
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406145"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911206"
 ---
-# <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Narzędzie wiersza polecenia CONCURRENCY Visualizer (CVCollectionCmd)
-Można użyć narzędzia wiersza polecenia Concurrency Visualizer (*CVCollectionCmd.exe*) aby zbierać ślady z wiersza polecenia, dzięki czemu można je przeglądać w Wizualizatorze współbieżności dla programu Visual Studio. Narzędzia można używać na komputerach, które nie mają zainstalowanego programu Visual Studio.
+# <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Narzędzie wiersza polecenia Concurrency Visualizer (CVCollectionCmd)
+Za pomocą narzędzia wiersza polecenia wizualizatora współbieżności (*CVCollectionCmd. exe*) można zbierać ślady z wiersza polecenia, aby można było je wyświetlać w wizualizatorze współbieżności dla programu Visual Studio. Narzędzia te mogą być używane na komputerach, na których nie zainstalowano programu Visual Studio.
 
 > [!NOTE]
-> Narzędzie Concurrency Visualizer, począwszy od programu Visual Studio 2013 to opcjonalne rozszerzenie. (Wcześniej on miał została uwzględniona w programie Visual Studio.) Możesz pobrać [Concurrency Visualizer kolekcji tools for Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103) z Centrum pobierania.
+> Począwszy od Visual Studio 2013, Wizualizator współbieżności jest opcjonalnym rozszerzeniem. (Poprzednio został on uwzględniony w programie Visual Studio). [Narzędzia do zbierania danych Concurrency Visualizer dla programu Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=49103) można pobrać z centrum pobierania.
 
-## <a name="download-the-concurrency-visualizer-command-line-utility"></a>Pobierz narzędzia wiersza polecenia Concurrency Visualizer
- Aby pobrać i zainstalować narzędzia wiersza polecenia, przejdź do [Concurrency Visualizer Collection Tools for Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103) i postępuj zgodnie z instrukcjami. Domyślnie *CVCollectionCmd.exe* jest zainstalowany w folderze %ProgramFiles%\Microsoft SDKs\Windows\v8.0a\bin\netfx kolekcji wizualizatora współbieżności (% ProgramFiles (x86) %\Microsoft Concurrency Visualizer kolekcji SDKs\Windows\v8.0a\bin\netfx na x64 komputerów).
+## <a name="download-the-concurrency-visualizer-command-line-utility"></a>Pobierz narzędzie wiersza polecenia wizualizatora współbieżności
+ Aby pobrać i zainstalować narzędzie wiersza polecenia, przejdź do narzędzia do [zbierania danych Concurrency Visualizer dla programu Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=49103) i postępuj zgodnie z instrukcjami. Domyślnie program *CVCollectionCmd. exe* jest instalowany w narzędziach kolekcji%ProgramFiles%\Microsoft concurrency wizualizatora \ (% ProgramFiles (x86)% \ narzędzia kolekcji Microsoft Concurrency Visualizer \ na komputerach x64.
 
-## <a name="collect-a-trace-with-cvcollectioncmd"></a>Zbierać dane śledzenia z CVCollectionCmd
- Uruchamianie aplikacji za pomocą CVCollectionCmd lub dołączanie do niego, można zbierać dane śledzenia. Zobacz informacje o poleceniu poniżej dla opcji. Na przykład
+## <a name="collect-a-trace-with-cvcollectioncmd"></a>Zbierz ślad z CVCollectionCmd
+ Można zbierać ślady, uruchamiając aplikację z CVCollectionCmd lub dołączając do niej. Zapoznaj się z poleceniem poniżej, aby poznać odpowiednie opcje. Na przykład
 
 ```cmd
 <Path>CVCollectionCmd /launch c:\myapp\myapp.exe /outdir c:\myapp\data
 ```
 
 ## <a name="commands-and-parameters"></a>Polecenia i parametry
- Aby uzyskać pomoc dotyczącą poleceń i parametrów w narzędziu wiersza polecenia, wpisz to polecenie w wierszu polecenia:
+ Aby uzyskać pomoc dotyczącą poleceń i parametrów w narzędziu wiersza polecenia, wpisz w wierszu polecenia:
 
- **CvCollectionCmd /?**
+ **CvCollectionCmd/?**
 
 |Opcja|Opis|Parametry|Zwracane wartości|
 |------------|-----------------|----------------|-------------------|
-|Zapytanie|Zwraca, czy można uruchomić kolekcjonowania.|Brak|0, jeśli kolekcja jest gotowy do uruchomienia.<br /><br /> 1, jeśli kolekcja jest już w toku.<br /><br /> 2, jeśli kolekcja nie jest w toku, ale co najmniej wymaganych [ETW](/dotnet/framework/wcf/samples/etw-tracing) sesji jest włączony.|
-|Uruchom|Uruchamia określony proces w Wizualizatorze współbieżności.|Ścieżka pliku wykonywalnego.|0, jeśli działanie zakończyło się pomyślnie.<br /><br /> 1, jeśli działanie nie powiodło się, ponieważ nie można uruchomić aplikacji docelowej.<br /><br /> 13, jeśli działanie nie powiodło się, ponieważ CVCollectionCmd ma niewystarczające uprawnienia do zapisu w katalogu określonym produktem wyjściowym.|
-|Dołącz|Rozpoczyna się Kolekcjonowanie śladu całego systemu; w przeciwnym razie dołącza do procesu, jeśli mapa została określona.|Brak.|0, jeśli załącznika zakończyło się pomyślnie.<br /><br /> 1, jeśli załącznika nie powiodło się, ponieważ określony proces jest nieprawidłowa lub niejednoznaczna.<br /><br /> 13, jeśli załącznika nie powiodło się, ponieważ CVCollectionCmd ma niewystarczające uprawnienia do zapisu w katalogu określonym produktem wyjściowym.|
-|Odłącz|Zatrzymuje kolekcję.|Brak.|0, jeśli odłączenie zakończyło się pomyślnie.<br /><br /> 1, jeśli odłączenie nie powiodło się, ponieważ kolekcja nie jest obecnie w toku.<br /><br /> 2, jeśli odłączenie nie powiodło się, ponieważ nie można zatrzymać kolekcji.|
-|Analiza|Analizuje określony śledzenia.|Pełna ścieżka pliku CVTrace.|0, jeśli analiza powiodła się.<br /><br /> 1, jeśli analiza nie można uruchomić, ponieważ śledzenia w określonym został całego systemu, ale nie określono żadnego procesu docelowego.<br /><br /> określono wartość 2, jeśli nie można rozpocząć analizy, ponieważ ślad nie był na poziomie systemu i procesu.<br /><br /> 3, jeśli analiza nie powiodła się, ponieważ określony proces jest nieprawidłowy.<br /><br /> 4, jeśli analiza nie powiodła się, ponieważ określony plik CVTrace jest nieprawidłowy.|
-|LaunchArgs|Określa argumenty pliku wykonywalnego docelowego. Ta opcja dotyczy tylko za pomocą polecenia uruchamiania.|Argumenty wiersza polecenia do aplikacji.|Brak.|
-|Outdir|Określa katalog, w której chcesz zapisać pliki śledzenia. Ma zastosowanie do dołączania i uruchamiania poleceń.|Ścieżka katalogu lub ścieżką względną.|Brak.|
-|Proces|Określa proces do dołączenia podczas wykonywania polecenia Attach lub procesu w śladzie do analizowania podczas wykonywania polecenia analizy. Ma zastosowanie do polecenia Attach i analizy.|Identyfikator PID lub nazwę procesu.|Brak.|
-|Konfiguracja|Określa ścieżkę pliku konfiguracji, jeśli chcesz, aby ustawienia kolekcji innych niż domyślne.   Ma zastosowanie do polecenia uruchomienia, Dołącz i analizy.|Ścieżka katalogu lub ścieżka względna pliku konfiguracyjnego XML.|Brak.|
+|Zapytanie|Zwraca czy można rozpocząć zbieranie danych.|Brak|0, jeśli zbieranie danych jest gotowe do rozpoczęcia.<br /><br /> 1, jeśli kolekcja jest już w toku.<br /><br /> 2 Jeśli kolekcja nie jest w toku, ale co najmniej jedna z wymaganych sesji [ETW](/dotnet/framework/wcf/samples/etw-tracing) jest już włączona.|
+|Uruchom|Uruchamia określony proces w ramach wizualizatora współbieżności.|Ścieżka pliku wykonywalnego.|0, Jeśli uruchomienie zakończyło się pomyślnie.<br /><br /> 1 Jeśli uruchomienie nie powiodło się, ponieważ nie można uruchomić aplikacji docelowej.<br /><br /> 13 Jeśli uruchomienie nie powiodło się, ponieważ CVCollectionCmd ma niewystarczające uprawnienia do zapisu w określonym katalogu wyjściowym.|
+|Dołącz|Rozpoczyna zbieranie śladów całego systemu; w przeciwnym razie dołącza do procesu, jeśli został określony.|Brak.|0, jeśli załącznik zakończył się pomyślnie.<br /><br /> 1 Jeśli załącznik nie powiódł się, ponieważ określony proces jest nieprawidłowy lub niejednoznaczny.<br /><br /> 13 Jeśli załącznik nie powiódł się, ponieważ CVCollectionCmd ma niewystarczające uprawnienia do zapisu w określonym katalogu wyjściowym.|
+|Odłącz|Kończy zbieranie.|Brak.|0 w przypadku pomyślnego odłączenia.<br /><br /> 1 Jeśli odłączenie nie powiodło się, ponieważ kolekcja nie jest obecnie w toku.<br /><br /> 2 Jeśli odłączenie nie powiodło się, ponieważ nie można zatrzymać kolekcjonowania.|
+|Analiza|Analizuje określony ślad.|Pełna ścieżka pliku CVTrace.|0, jeśli analiza powiodła się.<br /><br /> 1 Jeśli nie można rozpocząć analizy, ponieważ określony ślad dotyczył całego systemu, ale żaden proces docelowy nie został określony.<br /><br /> 2 Jeśli nie można rozpocząć analizy, ponieważ ślad nie był na poziomie systemu i został określony proces.<br /><br /> 3 Jeśli analiza nie powiodła się, ponieważ określony proces jest nieprawidłowy.<br /><br /> 4 Jeśli analiza nie powiodła się, ponieważ określony plik CVTrace jest nieprawidłowy.|
+|LaunchArgs|Określa docelowe argumenty pliku wykonywalnego. Ta opcja ma zastosowanie tylko do polecenia Uruchom.|Argumenty wiersza polecenia do aplikacji.|Brak.|
+|OutDir|Określa katalog, w którym mają zostać zapisane pliki śledzenia. Dotyczy poleceń uruchamiania i dołączania.|Ścieżka katalogu lub ścieżka względna.|Brak.|
+|Proces|Określa proces dołączania po wykonaniu polecenia Attach lub proces w śladach do analizy podczas wykonywania polecenia Analizuj. Dotyczy poleceń Attach i Analizuj.|Identyfikator PID lub nazwa procesu.|Brak.|
+|Konfiguracja|Określa ścieżkę pliku konfiguracji, jeśli chcesz, aby ustawienia kolekcji były inne niż domyślne.   Dotyczy poleceń uruchamiania, dołączania i analizowania.|Ścieżka katalogu lub względna ścieżka pliku konfiguracyjnego XML.|Brak.|
 
-## <a name="customize-configuration-settings"></a>Dostosowywanie ustawień konfiguracji
- Jeśli używasz CVCollectionCmd zbierać dane śledzenia, i chcesz dostosować ustawienia kolekcji, a następnie określ je przy użyciu pliku konfiguracji.
+## <a name="customize-configuration-settings"></a>Dostosuj ustawienia konfiguracji
+ Jeśli używasz CVCollectionCmd do zbierania śladów i chcesz dostosować ustawienia kolekcji, użyj pliku konfiguracji, aby je określić.
 
 > [!NOTE]
-> Gdy zbieranie danych śledzenia przy użyciu programu Visual Studio, nie należy bezpośrednio modyfikować pliku konfiguracji.  Zamiast tego należy użyć [Zaawansowane ustawienia](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) okno dialogowe, aby zmodyfikować ustawienia.
+> Gdy używasz programu Visual Studio do zbierania śladów, nie Modyfikuj bezpośrednio pliku konfiguracji.  Zamiast tego użyj okna dialogowego [Ustawienia zaawansowane](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) , aby zmodyfikować ustawienia.
 
- Aby zmodyfikować ustawienia zbierania, należy utworzyć plik konfiguracji na komputerze, w którym będą uruchamiane narzędzie CVCollectionCmd. Plik konfiguracji można utworzyć od podstaw lub można skopiować pliku konfiguracji na komputerze, na którym jest zainstalowany program Visual Studio i zmodyfikować to. Plik *UserConfig.xml* i znajduje się w *lokalnych danych aplikacji* folderu. Po uruchomieniu narzędzia, należy użyć opcji konfiguracji, w połączeniu z polecenia uruchomienia, Dołącz lub analizy.  W parametr, który jest skojarzony z opcją konfiguracji należy określić ścieżkę do pliku konfiguracji.
+ Aby zmodyfikować ustawienia kolekcji, Utwórz plik konfiguracji na komputerze, na którym zostanie uruchomione narzędzie CVCollectionCmd. Plik konfiguracji można utworzyć od podstaw lub skopiować plik konfiguracyjny na komputerze, na którym jest zainstalowany program Visual Studio i zmodyfikować go. Plik ma nazwę *userconfig. XML* i znajduje się w folderze *Local AppData* . Po uruchomieniu narzędzia Użyj opcji konfiguracji w połączeniu z poleceniem uruchamiania, dołączania lub analizowania.  W parametrze, który jest skojarzony z opcją konfiguracji, określ ścieżkę do pliku konfiguracji.
 
-### <a name="configuration-file-tags"></a>Tagi plików konfiguracji
- Plik konfiguracji jest oparty na formacie XML. Poniżej przedstawiono prawidłowe tagi i wartości:
+### <a name="configuration-file-tags"></a>Tagi pliku konfiguracji
+ Plik konfiguracji jest oparty na języku XML. Oto prawidłowe Tagi i wartości:
 
-| Tag | Opis | Wartości |
+| Seryjn | Opis | Wartości |
 |-------------------------| - | - |
-| Konfiguracja | Rozgranicza ogólnej pliku konfiguracji. | Musi zawierać następujące elementy:<br /><br /> -MinorVersion<br />-Brak elementu MajorVersion |
-| Brak elementu MajorVersion | Określa wersji głównej pliku konfiguracji. | Musi mieć wartość 1 dla [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] projektów. W przeciwnym razie 1, narzędzie nie będzie działać. |
-| MinorVersion | Określa wersję pomocniczą w pliku konfiguracji. | Musi mieć wartość 0 odpowiadającą [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] projektów. W przeciwnym razie 0, narzędzie nie będzie działać. |
-| IncludeEnvSymbolPath | Ustawia wartość określającą, czy jest używane środowisko ścieżki symboli (_NT_SYMBOL_PATH). | — Wartość true<br />— Wartość false |
-| DeleteEtlsAfterAnalysis | Ustawia wartość określającą, czy pliki ETL są usuwane po zakończeniu analizy. | — Wartość true<br />— Wartość false |
-| SymbolPath | Określa ścieżkę serwera symboli. Aby uzyskać więcej informacji, zobacz [Użyj Microsoft Symbol Server do uzyskania plików symboli debugowania](http://go.microsoft.com/fwlink/?LinkID=149389). | Nazwa katalogu lub adres URL. |
-| Znaczniki | Zawiera listę dostawców znaczników. | Może zawierać zero lub więcej elementów MarkerProvider. |
-| MarkerProvider | Określa dostawcę jednego znacznika. | Musi zawierać następujące elementy:<br /><br /> -Level<br />— IDENTYFIKATOR GUID<br />— Nazwa<br /><br /> Może zawierać następujące elementy:<br /><br /> -Kategorii<br />-IsEnabled |
-| Poziom | Ustawia poziom ważności MarkerProvider. | -Niski<br />-Normalny<br />-Wysoka<br />-Krytyczne<br />— Wszystko |
-| Guid | Globalnie unikatowy identyfikator znacznika dostawcy funkcji ETW. | IDENTYFIKATOR GUID. |
-| Nazwa | Określa opis dostawcę znaczników. | Ciąg. |
-| Kategorie | Określa kategorie zbierane na potrzeby dostawcę znaczników. | Rozdzielana przecinkami ciąg liczb lub zakresy liczb. |
-| isEnabled | Ustawia wartość określającą, czy dostawca znacznika jest włączony dla kolekcji. | — Wartość true<br />— Wartość false |
-| FilterConfig | Określa listę opcji konfiguracji zdarzeń ETW, które zostały przefiltrowane z kolekcji. | Może zawierać następujące elementy:<br /><br /> -CollectClrEvents<br />-ClrCollectionOptions<br />-CollectSampleEvents<br />-CollectGpuEvents<br />-   CollectFileIO |
-| CollectClrEvents | Wartość, która określa, czy są zbierane zdarzenia CLR. | — Wartość true<br />— Wartość false |
-| ClrCollectionOptions | Określa, czy służąca do gromadzenia zdarzeń CLR w przypadku aplikacji natywnych i czy służąca do gromadzenia zdarzeń podsumowania NGEN. | Może zawierać jeden, zarówno lub żadna z tych wartości:<br /><br /> -CollectForNative<br />-DisableNGenRundown |
-| CollectSampleEvents | Ustawia wartość określającą, czy próbkowane zdarzenia są zbierane. | — Wartość true<br />— Wartość false |
-| CollectGpuEvents | Ustawia wartość określającą, czy zdarzenia wygenerowane przez DX są zbierane. | — Wartość true<br />— Wartość false |
-| CollectFileIO | Ustawia wartość określającą, czy są zbierane zdarzenia We/Wy pliku. | — Wartość true<br />— Wartość false |
-| UserBufferSettings | Określa listę parametrów ustawienia bufora użytkownika. | Musi zawierać następujące elementy:<br /><br /> -BufferFlushTimer<br />-BufferSize<br />-MinimumBuffers<br />-MaximumBuffers |
-| KernelBufferSettings | Określa listę parametrów ustawień buforu jądra. | Musi zawierać następujące elementy:<br /><br /> -BufferFlushTimer<br />-BufferSize<br />-MinimumBuffers<br />-MaximumBuffers |
-| BufferFlushTimer | Określa Czasomierz opróżniania buforów ETW. | Dodatnia liczba całkowita. |
-| BufferSize | Ilość pamięci przydzielona do każdego buforu sesji śledzenia zdarzeń, w kilobajtach. | Liczba z przedziału od 0 do 1024. |
-| MinimumBuffers | Minimalna liczba buforów, które są przydzielane dla puli buforów sesji śledzenia zdarzeń. | Dodatnia liczba całkowita większa lub równa dwa razy liczba rdzeni logicznych. |
-| MaximumBuffers | Maksymalna liczba buforów, które są przydzielane dla puli buforów sesji śledzenia zdarzeń. | Liczba większa niż lub równa MinimumBuffers. |
-| JustMyCode | Określa listę katalogów tylko mój kod. | Lista elementów MyCodeDirectory zero lub więcej. |
+| Konfiguracja | Rozgranicza ogólny plik konfiguracji. | Musi zawierać następujące elementy:<br /><br /> - MinorVersion<br />-MajorVersion |
+| MajorVersion | Określa wersję główną pliku konfiguracyjnego. | Dla projektów [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] musi być 1. Jeśli nie, narzędzie nie będzie działało. |
+| MinorVersion | Określa wersję pomocniczą pliku konfiguracyjnego. | Dla projektów [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] należy mieć wartość 0. Jeśli nie jest równa 0, narzędzie nie będzie działało. |
+| IncludeEnvSymbolPath | Ustawia wartość określającą, czy jest używana ścieżka symboli środowiska (_NT_SYMBOL_PATH). | -True<br />-FAŁSZ |
+| DeleteEtlsAfterAnalysis | Ustawia wartość określającą, czy pliki ETL zostaną usunięte po zakończeniu analizy. | -True<br />-FAŁSZ |
+| SymbolPath — | Określa ścieżkę serwera symboli. Aby uzyskać więcej informacji, zobacz [Korzystanie z serwera symboli firmy Microsoft w celu uzyskania plików symboli debugowania](/windows/win32/dxtecharts/debugging-with-symbols). | Nazwa lub adres URL katalogu. |
+| Wyświetla | Zawiera listę dostawców znaczników. | Może zawierać zero lub więcej elementów MarkerProvider. |
+| MarkerProvider | Określa dostawcę pojedynczego znacznika. | Musi zawierać następujące elementy:<br /><br /> -Poziom<br />-Identyfikator GUID<br />-Nazwa<br /><br /> Może zawierać następujące elementy:<br /><br /> -Kategorie<br />-IsEnabled |
+| Poziom | Ustawia poziom ważności MarkerProvider. | — Niska<br />-Normalny<br />— Wysoka<br />-Krytyczny<br />— Wszystko |
+| Ident | Unikatowy identyfikator globalny dostawcy znaczników ETW. | IDENTYFIKATOR GUID. |
+| Nazwa | Określa opis dostawcy znaczników. | Ciąg. |
+| Kategorie | Określa kategorie zebrane dla dostawcy znaczników. | Rozdzielany przecinkami ciąg liczb lub zakresów liczb. |
+| isEnabled | Ustawia wartość określającą, czy dostawca znacznika jest włączony dla kolekcji. | -True<br />-FAŁSZ |
+| FilterConfig | Określa listę opcji konfiguracji zdarzeń ETW, które są filtrowane z kolekcji. | Może zawierać następujące elementy:<br /><br /> - CollectClrEvents<br />- ClrCollectionOptions<br />- CollectSampleEvents<br />- CollectGpuEvents<br />- CollectFileIO |
+| CollectClrEvents | Ustaw wartość określającą, czy są zbierane zdarzenia środowiska CLR. | -True<br />-FAŁSZ |
+| ClrCollectionOptions | Określa, czy mają być zbierane zdarzenia środowiska CLR dla aplikacji natywnych oraz czy mają być zbierane zdarzenia dotyczące uwalniania NGEN. | Może zawierać jedną z następujących wartości:<br /><br /> - CollectForNative<br />- DisableNGenRundown |
+| CollectSampleEvents | Ustawia wartość określającą, czy będą zbierane Przykładowe zdarzenia. | -True<br />-FAŁSZ |
+| CollectGpuEvents | Ustawia wartość określającą, czy zdarzenia generowane przez DX są zbierane. | -True<br />-FAŁSZ |
+| CollectFileIO | Ustawia wartość określającą, czy zbierane są zdarzenia we/wy pliku. | -True<br />-FAŁSZ |
+| UserBufferSettings | Określa listę parametrów ustawień buforu użytkownika. | Musi zawierać następujące elementy:<br /><br /> - BufferFlushTimer<br />-BufferSize<br />- MinimumBuffers<br />- MaximumBuffers |
+| KernelBufferSettings | Określa listę parametrów dla ustawień buforu jądra. | Musi zawierać następujące elementy:<br /><br /> - BufferFlushTimer<br />-BufferSize<br />- MinimumBuffers<br />- MaximumBuffers |
+| BufferFlushTimer | Określa czasomierz opróżniania buforów ETW. | Dodatnia liczba całkowita. |
+| BufferSize | Ilość pamięci przydzieloną dla każdego buforu sesji śledzenia zdarzeń w kilobajtach. | Liczba z przewartości od 0 do 1024. |
+| MinimumBuffers | Minimalna liczba buforów przyznanych dla puli buforów sesji śledzenia zdarzeń. | Dodatnia liczba całkowita większa lub równa podwójnej liczbie rdzeni logicznych. |
+| MaximumBuffers | Maksymalna liczba buforów przyznanych dla puli buforów sesji śledzenia zdarzeń. | Liczba większa niż lub równa MinimumBuffers. |
+| JustMyCode | Określa listę katalogów Tylko mój kod. | Lista elementów MyCodeDirectory, które są równe zero lub więcej. |
 | MyCodeDirectory | Określa katalog, który zawiera kod. | Ścieżka bezwzględna. |
 
 ### <a name="example"></a>Przykład
- Zamiast tworzenia pliku konfiguracji, od początku, możesz skopiować poniższy przykład, a następnie zmodyfikuj je zgodnie z wymaganiami.
+ Zamiast tworzyć plik konfiguracji od początku, można skopiować Poniższy przykład, a następnie zmodyfikować go w celu spełnienia wymagań.
 
 ```xml
 <?xml version="1.0"?>

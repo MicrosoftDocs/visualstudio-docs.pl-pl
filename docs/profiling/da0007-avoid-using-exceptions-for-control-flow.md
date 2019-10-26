@@ -1,5 +1,5 @@
 ---
-title: 'DA0007: Unikaj używania wyjątków do przepływu sterowania | Dokumentacja firmy Microsoft'
+title: 'DA0007: Unikaj używania wyjątków dla przepływu sterowania | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,34 +13,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 088b42862065f031347f51bec791ec866b6fb87e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9509168878d18ea3074dd91b4929313a959138c2
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62936497"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911026"
 ---
-# <a name="da0007-avoid-using-exceptions-for-control-flow"></a>DA0007: Unikaj używania wyjątków w przepływie sterowania
+# <a name="da0007-avoid-using-exceptions-for-control-flow"></a>DA0007: Unikaj używania wyjątków do przepływu sterowania
 
 |||
 |-|-|
 |Identyfikator reguły|DA0007|
-|Kategoria|Sposób użycia programu .NET framework|
-|Metod profilowania|Wszystkie|
-|Komunikat|Stale jest zgłaszana wysoka liczba wyjątków. Należy rozważyć ograniczenie użycia wyjątków w logice programu.|
+|Kategoria|Użycie .NET Framework|
+|Metody profilowania|Wszystkie|
+|Komunikat|Często są zgłaszane duże liczby wyjątków. Rozważ zmniejszenie użycia wyjątków w logice programu.|
 |Typ komunikatu|Ostrzeżenie|
 
- Podczas profilowania za pomocą próbkowania pamięci platformy .NET i metod rywalizacji zasobów musi zebrać co najmniej 25 próbek do wyzwolenia tej reguły.
+ Podczas profilowania przy użyciu metod próbkowania, pamięci .NET lub rywalizacji o zasoby należy zebrać co najmniej 25 próbek, aby wyzwolić tę regułę.
 
 ## <a name="cause"></a>Przyczyna
- Wysoki współczynnik obsługi wyjątków w .NET Framework zostały wywołane w danych profilowania. Należy rozważyć użycie inną logikę przepływu sterowania w celu zmniejszenia liczby wyjątków, które są generowane.
+ W danych profilowania wywołano wysoką częstotliwość obsługi wyjątków .NET Framework. Rozważ użycie innej logiki przepływu sterowania, aby zmniejszyć liczbę zgłaszanych wyjątków.
 
 ## <a name="rule-description"></a>Opis reguły
- Korzystanie z obsługi wyjątków w celu przechwytywania błędów i innych zdarzeń, które zakłócają działanie programu jest dobrym rozwiązaniem, korzystanie z obsługi wyjątków jako część logiki wykonywania regularnych program może być kosztowne i należy ich unikać. W większości przypadków wyjątki należy używać tylko w przypadku okoliczności, które występują rzadko i nie oczekuje. Wyjątki nie stosuje się do zwracania wartości jako część przepływu typowego programu. W wielu przypadkach można uniknąć zgłaszania wyjątków, sprawdzanie poprawności wartości i przy użyciu logikę warunkową w celu wstrzymania wykonywania instrukcji, które powodują problemu.
+ Chociaż używanie obsługi wyjątków do przechwytywania błędów i innych zdarzeń, które zakłócają wykonywanie programu, jest dobrym sposobem, korzystanie z programu obsługi wyjątków jako części zwykłej logiki wykonywania programu może być kosztowne i powinno być nieuniknione. W większości przypadków wyjątki powinny być używane tylko w przypadku sytuacji, w których występują rzadko i nie są oczekiwane. Wyjątków nie należy używać do zwracania wartości jako części typowego przepływu programu. W wielu przypadkach można uniknąć wywoływania wyjątków przez sprawdzenie poprawności wartości i użycie logiki warunkowej do zatrzymania wykonywania instrukcji, które powodują wystąpienie problemu.
 
- Aby uzyskać więcej informacji, zobacz [Zarządzanie wyjątkami](http://go.microsoft.com/fwlink/?LinkID=177825) części **rozdział 5 — poprawę wydajności kodu zarządzanego** w **poprawy wydajności aplikacji platformy .NET i skalowalności** ilości **Microsoft Patterns and Practices** biblioteki w witrynie MSDN.
+ Aby uzyskać więcej informacji, zobacz sekcję [Zarządzanie wyjątkami](/previous-versions/msp-n-p/ff647790(v=pandp.10)#scalenetchapt05_topic24) w **rozdziale 5 — Poprawianie wydajności kodu zarządzanego** w celu **zwiększenia wydajności aplikacji .NET i skalowalności** **wzorców i praktyk firmy Microsoft** Biblioteka w witrynie MSDN.
 
-## <a name="how-to-investigate-a-warning"></a>Jak badać ostrzeżenie
- Kliknij dwukrotnie komunikat w oknie Lista błędów, przejdź do widoku znaczników. Znajdź kolumnę, która zawiera **wyjątki .NET CLR (@ProcessInstance)\\liczba Excels zgłoszony / sec** pomiarów. Określa, czy określone faz wykonywania programu obsługi wyjątków w przypadku częściej niż inne. Przy użyciu profilu pobierania próbek, spróbuj zidentyfikować instrukcji throw i bloki, które generują występujących wyjątków try/catch. Jeśli to konieczne, należy dodać logikę do bloki, które pomagają zrozumieć, które wyjątki, które są aktualnie obsługiwane najczęściej catch. W przypadku, gdy jest to możliwe, Zastąp często wykonywane throw instrukcje lub bloki catch prosty przepływ kontrolować kod logiki i walidacji.
+## <a name="how-to-investigate-a-warning"></a>Jak zbadać ostrzeżenie
+ Kliknij dwukrotnie komunikat w oknie Lista błędów, aby przejść do widoku znaczniki. Znajdź kolumnę zawierającą wyjątki środowiska **.NET CLR (@ProcessInstance)\\liczbę pomiarów w programie Excel/s** . Ustal, czy istnieją określone fazy wykonywania programu, w których obsługa wyjątków jest częściej niż inne. Przy użyciu profilu próbkowania spróbuj identyfikować instrukcje throw i bloki try/catch generujące częste wyjątki. W razie potrzeby Dodaj logikę do bloków catch, aby ułatwić zrozumienie, które wyjątki są najczęściej obsługiwane. Jeśli to możliwe, Zastąp często wykonywane instrukcje throw lub bloki catch z prostą logiką sterowania przepływem lub kodem walidacji.
 
- Na przykład gdyby się okazać, że aplikacji została obsługa występujących wyjątków dividebyzeroexception —, dodając logikę do programu, aby sprawdzić, czy mianownikach z wartościami zerowymi zwiększa wydajność aplikacji.
+ Na przykład jeśli okaże się, że aplikacja obsługiwała częste wyjątki DivideByZeroException, dodanie logiki do programu w celu sprawdzenia, czy nie ma żadnych wartości, zwiększa wydajność aplikacji.

@@ -1,6 +1,6 @@
 ---
-title: Opcje debugowania Azure usługi w chmurze | Dokumentacja firmy Microsoft
-description: Debugowanie usług Azure cloud services
+title: Opcje debugowania usług Azure Cloud Services | Microsoft Docs
+description: Debugowanie usług Azure Cloud Services
 author: mikejo5000
 manager: jillfra
 ms.assetid: 80755da7-8350-4f5c-97ce-2962beabb36d
@@ -9,24 +9,24 @@ ms.workload: azure-vs
 ms.date: 03/18/2017
 ms.author: mikejo
 ms.technology: vs-ide-debug
-ms.openlocfilehash: 3ec6778f7244df7ad535da066d8e0d91d8c0671e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 94e7d48c767ef9705c20b049b57f459290679217
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62560730"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911846"
 ---
 # <a name="learn-the-various-ways-to-debug-an-azure-cloud-service"></a>Informacje dotyczące różnych sposobów debugowania usługi w chmurze platformy Azure
-Ten artykuł zawiera łącza do różnych sposobów debugowanie usługi w chmurze platformy Azure.
+Ten artykuł zawiera linki do różnych sposobów debugowania usługi w chmurze platformy Azure.
 
 ## <a name="debugging-an-azure-cloud-service-in-visual-studio"></a>Debugowanie usługi w chmurze platformy Azure w programie Visual Studio
-Możesz zaoszczędzić czas i pieniądze za pomocą usługi Azure compute emulatora do debugowania na maszynie lokalnej usługi w chmurze. Debugowanie usługi lokalnie przed przystąpieniem do wdrażania, może zwiększyć niezawodność i wydajność bez konieczności płacenia za czas obliczeń. Jednak niektóre błędy mogą wystąpić tylko w przypadku korzystania z usługi w chmurze na platformie Azure. Błędy występujące tylko w przypadku korzystania z usługi w chmurze na platformie Azure może być debugowany, należy włączyć zdalne debugowanie po opublikowaniu usługi, a następnie dołączanie debugera do wystąpienia roli. Aby uzyskać więcej informacji, zobacz [debugowanie usługi w chmurze na komputerze lokalnym](vs-azure-tools-debug-cloud-services-virtual-machines.md#debug-your-cloud-service-on-your-local-computer).
+Możesz zaoszczędzić czas i pieniądze, korzystając z emulatora obliczeń platformy Azure w celu debugowania usługi w chmurze na komputerze lokalnym. Przez debugowanie usługi lokalnie przed jej wdrożeniem można zwiększyć niezawodność i wydajność bez płacenia za czas obliczeń. Niektóre błędy mogą jednak wystąpić tylko w przypadku uruchomienia usługi w chmurze na platformie Azure. Błędy występujące tylko w przypadku uruchomienia usługi w chmurze na platformie Azure mogą być debugowane przez włączenie debugowania zdalnego podczas publikowania usługi, a następnie dołączenie debugera do wystąpienia roli. Aby uzyskać więcej informacji, zobacz [debugowanie usługi w chmurze na komputerze lokalnym](vs-azure-tools-debug-cloud-services-virtual-machines.md#debug-your-cloud-service-on-your-local-computer).
 
 ## <a name="using-intellitrace"></a>Używanie funkcji IntelliTrace
-Jeśli używasz programu Visual Studio Enterprise do zapisania ról docelowych programu .NET Framework 4.5, można włączyć funkcji IntelliTrace w czasie wdrażania usługi w chmurze platformy Azure z programu Visual Studio. IntelliTrace zawiera dziennik, który za pomocą programu Visual Studio umożliwia debugowanie aplikacji, tak jakby były uruchamiane na platformie Azure. Aby uzyskać więcej informacji, zobacz [debugowanie opublikowanych usług w chmurze za pomocą IntelliTrace i Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=623016).
+Jeśli używasz Visual Studio Enterprise do zapisywania ról przeznaczonych dla .NET Framework 4,5, możesz włączyć IntelliTrace w czasie wdrażania usługi w chmurze platformy Azure z poziomu programu Visual Studio. IntelliTrace zawiera dziennik, którego można użyć w programie Visual Studio do debugowania aplikacji tak, jakby była uruchomiona na platformie Azure. Aby uzyskać więcej informacji, zobacz [debugowanie opublikowanej usługi w chmurze za pomocą IntelliTrace i programu Visual Studio](vs-azure-tools-intellitrace-debug-published-cloud-services.md).
 
 ## <a name="remote-debugging"></a>Debugowanie zdalne
-Aby umożliwić zdalne debugowanie usług w chmurze w czasie, podczas wdrażania usługi w chmurze z programu Visual Studio. Jeśli chcesz włączyć zdalne debugowanie dla wdrożenia zdalnego debugowania są instalowane na maszynach wirtualnych, które są uruchamiane każde wystąpienie roli. Te usługi — takich jak `msvsmon.exe` — nie wpływa na wydajność lub powodować dodatkowych kosztów. Aby uzyskać więcej informacji, zobacz [debugowanie usługi w chmurze na platformie Azure](vs-azure-tools-debug-cloud-services-virtual-machines.md#debug-a-cloud-service-in-azure).
+Podczas wdrażania usługi w chmurze z poziomu programu Visual Studio można włączyć debugowanie zdalne w usługach w chmurze. W przypadku wybrania opcji włączenia debugowania zdalnego dla wdrożenia usługi zdalnego debugowania są instalowane na maszynach wirtualnych, na których działa każde wystąpienie roli. Te usługi, takie jak `msvsmon.exe` — nie wpływają na wydajność ani nie powodują dodatkowych kosztów. Aby uzyskać więcej informacji, zobacz [debugowanie usługi w chmurze na platformie Azure](vs-azure-tools-debug-cloud-services-virtual-machines.md#debug-a-cloud-service-in-azure).
 
 ## <a name="next-steps"></a>Następne kroki
-- [Debugowanie usługi w chmurze platformy Azure lub maszynie Wirtualnej w programie Visual Studio](./vs-azure-tools-debug-cloud-services-virtual-machines.md) — Dowiedz się, szczegóły dotyczące debugowania usług Azure cloud services.
+- [Debugowanie usługi w chmurze lub maszyny wirtualnej platformy Azure w programie Visual Studio](./vs-azure-tools-debug-cloud-services-virtual-machines.md) — Poznaj szczegóły dotyczące debugowania usług Azure Cloud Services.

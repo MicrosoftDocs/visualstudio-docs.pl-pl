@@ -1,5 +1,5 @@
 ---
-title: Diagnostyka grafiki | Dokumentacja firmy Microsoft
+title: Diagnostyka grafiki | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,60 +11,60 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbc3edfabe041804a632b919eff4e565be9cc5e3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 875c2578d5f8cc1aa68cc624adc0a6e2a1713472
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62848599"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911363"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Diagnostyka grafiki w programie Visual Studio
-Program Visual Studio*Graphics Diagnostics* to zestaw narzędzi do rejestrowania i następnie analizowania problemów renderowania i wydajności w aplikacjach Direct3D. Diagnostyka grafiki może służyć w aplikacjach, które działają lokalnie na komputerze z systemem Windows, w emulatorze urządzenia Windows lub na zdalnym komputerze lub urządzeniu.
+Visual Studio*Diagnostyka grafiki* to zestaw narzędzi do nagrywania, a następnie analizowania problemów z renderowaniem i wydajnością w aplikacjach Direct3D. Diagnostyka grafiki można używać w aplikacjach, które są uruchamiane lokalnie na komputerze z systemem Windows, w emulatorze urządzenia z systemem Windows lub na komputerze zdalnym lub urządzeniu.
 
- Diagnostyka grafiki przepływu pracy rozpoczyna się od przechwytywania rekordu w jaki sposób aplikacja używa technologii Direct3D — na żywo, podczas jego wykonywania — tak, aby od razu można analizować swoje zachowanie, udostępnione lub zapisywane do użycia w dalszej części. Sesji przechwytywania, które mogą być zainicjowane i kontrolowane ręcznie z poziomu programu Visual Studio lub za pomocą narzędzia wiersza polecenia do przechwytywania **dxcap.exe**. Można również inicjowane sesji przechwytywania i kontrolowany programowo za pomocą Graphics Diagnostics przechwytywania interfejsów API.
+ Przepływ pracy Diagnostyka grafiki rozpoczyna się od przechwytywania rekordu, w jaki sposób aplikacja korzysta z Direct3D — na żywo, tak jak jest uruchomiona, tak aby jej zachowanie można było przeanalizować natychmiast, udostępnić lub zapisać w przyszłości. Sesje przechwytywania można inicjować i kontrolować ręcznie z poziomu programu Visual Studio lub za pomocą narzędzia do przechwytywania wiersza polecenia **DXCap. exe**. Sesje przechwytywania można także inicjować i kontrolować programowo przy użyciu interfejsów API przechwytywania Diagnostyka grafiki.
 
- Po sesji przechwytywania zarejestrowano jego zawartość może zostać odtworzony przez program Visual Studio *analizatora grafiki* w dowolnym momencie i ponowne utworzenie przechwycone ramki przy użyciu dokładnie tych samych zasobów i renderowanie poleceń, aplikacja używana. Następnie przy użyciu narzędzi dostępnych w okno analizator grafiki, dowolny przechwycone ramki mogą być analizowane szczegółowo. Te narzędzia można zbadać każde wywołanie interfejsu API Direct3D, zasobów, obiekt stanu potoku, etap potoku lub nawet pełną historię dowolny piksel w przechwyconej ramce. Za pomocą tych narzędzi z optymalizacją, problem z renderowaniem, można eksplorować tylko intuicyjnie, począwszy od sposobu jej wyświetlania w przechwyconej ramce i wyświetlających jego głównej przyczyny problemu w aplikacji źródła kodu, programów do cieniowania lub grafiki zasoby.
+ Po zarejestrowaniu sesji przechwytywania jej zawartość może zostać odtworzona przez *Analizator grafiki* programu Visual Studio w dowolnym momencie, a następnie ponownie utworzona przechwycone ramki przy użyciu dokładnie tych samych zasobów i poleceń renderowania używanych przez aplikację. Następnie przy użyciu narzędzi dostępnych w oknie Analizator grafiki można analizować wszystkie przechwycone ramki. Te narzędzia mogą służyć do badania dowolnego wywołania interfejsu API Direct3D, zasobu, obiektu stanu potoku, etapu potoku, a nawet pełnej historii dowolnego piksela w przechwyconej ramce. Korzystając z tych narzędzi w ramach uzgodnienia, problem z renderowaniem można zbadać intuicyjnie, rozpoczynając od sposobu jego wyświetlania w przechwyconej ramce i przechodzenia do jego głównej przyczyny w kodzie źródłowym aplikacji, cieniach lub zasobach graficznych.
 
- Aby zdiagnozować problemy z wydajnością, przechwyconej ramki mogą być analizowane za pomocą *analizy klatek* narzędzia. To narzędzie analizuje potencjalnych optymalizacji wydajności, automatycznie zmienia sposób aplikacja używa technologii Direct3D i testów porównawczych wszystkie odmiany dla Ciebie. W przeszłości, może zostały wprowadzone i ręcznie po prostu badany w tego rodzaju zmian można znaleźć poza te, które wprowadzone różnica. Za pomocą analizy ramek wystarczy wprowadzić zmiany, które już znasz, będzie spłacenie.
+ Aby zdiagnozować problemy z wydajnością, przechwyconą ramkę można analizować przy użyciu narzędzia do *analizy klatek* . To narzędzie eksploruje potencjalne optymalizacje wydajności przez automatyczne zmianę sposobu, w jaki aplikacja korzysta z Direct3D i przeprowadzania testów porównawczych dla użytkownika. W przeszłości można było wprowadzać i testować ręcznie tego rodzaju zmiany, aby dowiedzieć się, które z nich dokonały różnic. Dzięki analizie klatek wystarczy tylko, że zmiany, które już wiesz, będą obciążane.
 
- Diagnostyka grafiki pomaga w aplikacji rozbudowanej graficznie Direct3D wyglądają i uruchom doskonale.
+ Diagnostyka grafiki pomaga w rozbudowanej i najlepiej funkcjonalnej aplikacji Direct3D.
 
- W dalszym ciągu [Przegląd](overview-of-visual-studio-graphics-diagnostics.md) dowiedzieć się więcej o co oferuje program Visual Studio diagnostyki grafiki.
+ Przejdź do [omówienia](overview-of-visual-studio-graphics-diagnostics.md) , aby dowiedzieć się więcej na temat ofert oferowanych przez program Visual Studio Diagnostyka grafiki.
 
 ## <a name="in-this-section"></a>W tej sekcji
- [Omówienie](overview-of-visual-studio-graphics-diagnostics.md) wprowadza przepływu pracy diagnostyki grafiki i narzędzi.
+ [Przegląd](overview-of-visual-studio-graphics-diagnostics.md) Wprowadza Diagnostyka grafiki przepływ pracy i narzędzia.
 
- [Wprowadzenie do](getting-started-with-visual-studio-graphics-diagnostics.md) w tej sekcji dowiesz się, jak zainstalować program Visual Studio diagnostyki grafiki i jak rozpocząć korzystanie z diagnostyki grafiki z aplikacją Direct3D.
+ [Wprowadzenie](getting-started-with-visual-studio-graphics-diagnostics.md) W tej sekcji dowiesz się, jak zainstalować program Visual Studio Diagnostyka grafiki i jak zacząć korzystać z Diagnostyka grafiki z aplikacją Direct3D.
 
- [Przechwytywanie informacji graficznych](capturing-graphics-information.md) można skorzystać z Graphics Diagnostics, aby zbadać problem z renderowaniem w aplikacji, zapisanie informacji o używaniu aplikacji DirectX. Podczas sesji nagrywania, co aplikacja uruchamia się normalnie, możesz *przechwytywania* (czyli wybierz) ramek, które interesują Cię. Elementy zawierają szczegółowe informacje na temat sposobu renderowania ramek. Przechwycone informacje można zapisać jako grafiki dokument dziennika, aby sprawdzić później lub udostępnianie innym członkom zespołu.
+ [Przechwytywanie informacji graficznych](capturing-graphics-information.md) Aby użyć Diagnostyka grafiki do badania problemu renderowania w aplikacji, należy najpierw zarejestrować informacje o sposobie korzystania z programu DirectX przez aplikację. Podczas sesji rejestrowania, gdy aplikacja działa normalnie, należy *przechwycić* (czyli zaznaczyć) interesujące Cię ramki. Przechwytywanie zawiera szczegółowe informacje o sposobie renderowania ramek. Przechwycone informacje można zapisać jako dokument dziennika grafiki, aby przeanalizować go później lub udostępnić innym członkom zespołu.
 
- [Użycie procesora GPU](gpu-usage.md) można skorzystać z Graphics Diagnostics do profilu aplikacji, użyj narzędzia użycie procesora GPU. Użycie procesora GPU może służyć w połączeniu z innymi narzędziami profilowania, takie jak użycie procesora CPU do skorelowania GPU i CPU działanie, które mogą przyczynić się do problemów z wydajnością w aplikacji.
+ [Użycie procesora GPU](gpu-usage.md) Aby użyć Diagnostyka grafiki do profilowania aplikacji, użyj narzędzia użycie procesora GPU. Użycie procesora GPU może być używane w połączeniu z innymi narzędziami profilowania, takimi jak użycie procesora CPU, w celu skorelowania aktywności procesora i procesora GPU, które mogą przyczynić się do problemów z wydajnością w aplikacji.
 
- [Dokument dziennika grafiki](graphics-log-document.md) aby rozpocząć badanie dziennik grafiki zarejestrowane, umożliwia okno dokumentu dziennika grafiki wybierz przechwyconej ramki — a nawet określonych pikseli — tak, aby szczegółowo, można sprawdzić *zdarzenia* (który to wywołania interfejsu API programu DirectX) który wpływa na.
+ [Dokument dziennika grafiki](graphics-log-document.md) Aby rozpocząć badanie zarejestrowanego dziennika grafiki, należy użyć okna dokumentu dziennika grafiki do wybrania przechwyconej ramki — lub nawet określonego piksela, aby można było szczegółowo przejrzeć *zdarzenia* (czyli wywołania interfejsu API programu DirectX), które mają na nie wpływ.
 
- [Analiza klatek](graphics-frame-analysis.md) po zaznaczeniu klatki, należy użyć analiza klatek grafiki do badania i Dostosuj wydajność renderowania.
+ [Analiza klatek](graphics-frame-analysis.md) Po wybraniu ramki, użyj analiza klatek grafiki do sprawdzenia i dostrajania wydajności renderowania.
 
- [Lista zdarzeń](graphics-event-list.md) po zaznaczeniu klatki, należy użyć **Lista zdarzeń graficznych** aby zbadać jego zdarzeń, aby ustalić, czy są one związane z problemem renderowania.
+ [Lista zdarzeń](graphics-event-list.md) Po wybraniu ramki należy użyć **listy zdarzeń grafiki** , aby sprawdzić jej zdarzenia w celu ustalenia, czy są one związane z problemem renderowania.
 
- [Stan](graphics-state.md) okna stanu ułatwi Ci zrozumienie stanu grafiki, który jest aktywny w momencie bieżącego zdarzenia.
+ [Stan](graphics-state.md) Okno stanu pomaga zrozumieć stan grafiki, który jest aktywny w momencie bieżącego zdarzenia.
 
- [Etapy potoku](graphics-pipeline-stages.md) w **etapy potoku grafiki** okna, Zbadaj, jak aktualnie wybranego zdarzenia jest przetwarzany przez każdy etap potoku grafiki, aby wskazać, gdzie problem z renderowaniem pierwszy zostanie wyświetlone. Badanie etapy potoku jest szczególnie przydatne w przypadku, gdy obiekt nie jest wyświetlane ze względu na nieprawidłowe przekształcenie, lub gdy jeden z etapów generuje dane wyjściowe, który nie odpowiada oczekiwaniom kolejnego etapu.
+ [Etapy potoku](graphics-pipeline-stages.md) W oknie **etapy potoku grafiki** można sprawdzić, w jaki sposób aktualnie wybrane zdarzenie jest przetwarzane przez każdy etap potoku grafiki, aby można było określić, gdzie pojawia się pierwszy problem z renderowaniem. Sprawdzanie etapów potoku jest szczególnie przydatne w przypadku, gdy obiekt nie pojawia się z powodu niepoprawnego przekształcenia lub gdy jeden z etapów produkuje dane wyjściowe, które nie są zgodne z oczekiwanym następnym etapem.
 
- [Stos wywołań zdarzenia](graphics-event-call-stack.md) używasz **stos wywołań zdarzenia grafiki** można analizować stos wywołań, które aktualnie wybranego zdarzenia, dzięki czemu można przejść do kodu aplikacji, który jest powiązany z problemem renderowania.
+ [Stos wywołań zdarzeń](graphics-event-call-stack.md) **Stos wywołań zdarzeń grafiki** służy do badania stosu wywołań aktualnie wybranego zdarzenia, dzięki czemu można przejść do kodu aplikacji, który jest powiązany z problemem renderowania.
 
- [Historia pikseli](graphics-pixel-history.md) przy użyciu **Historia pikseli grafiki** okna, aby analizować aktualnie wybrany piksel wpływ zdarzeń, które wpływ, można zidentyfikować zdarzenia lub kombinacji zdarzenia, które powodują pewnych rodzaje problemów z renderowaniem. Historia pikseli jest szczególnie przydatne w przypadku, gdy obiekt jest renderowany niepoprawnie, ponieważ dane wyjściowe programu do cieniowania pikseli jest niepoprawna lub została połączona niepoprawnie z buforu ramki lub jeśli obiekt nie nawet pojawia się, ponieważ zostały odrzucone pikseli zanim osiągną one buforu ramki.
+ [Historia pikseli](graphics-pixel-history.md) Za pomocą okna **Historia pikseli grafiki** , aby przeanalizować sposób, w jaki ma wpływ na bieżące wybrane piksele zdarzeń, które na to wpłynęło, można zidentyfikować zdarzenie lub kombinację zdarzeń, które powodują pewne rodzaje problemów z renderowaniem. Historia pikseli jest szczególnie przydatna, gdy obiekt jest renderowany nieprawidłowo, ponieważ dane wyjściowe programu do cieniowania pikseli są nieprawidłowe lub zostały nieprawidłowo połączone z buforem ramek albo gdy obiekt nie jest nawet wyświetlany, ponieważ jego piksele zostały odrzucone. przed osiągnięciem buforu ramek.
 
- [Tabela obiektów](graphics-object-table.md) używasz **Graphics Object Table** badało właściwości i zawartość określonego obiektami i zasobami Direct3D, które są stosowane dla aktualnie wybranego zdarzenia. Tabela obiektów może pomóc ustalić kontekst urządzenia grafiki, które są aktywne podczas zdarzenia i sprawdź zawartość zasobów graficznych, takich jak tekstury, stałe bufory i bufory wierzchołków.
+ [Tabela obiektów](graphics-object-table.md) Za pomocą **tabeli obiektów graficznych** można przeanalizować właściwości i zawartość określonych obiektów i zasobów Direct3D, które obowiązują dla aktualnie wybranego zdarzenia. Tabela obiektów może pomóc określić kontekst urządzenia graficznego, który jest aktywny podczas zdarzenia, i sprawdzić zawartość zasobów graficznych, takich jak stałe bufory, bufory wierzchołków i tekstury.
 
- [Debuger HLSL](hlsl-shader-debugger.md) zbadać kod modułu cieniującego dla aktualnie wybranego zdarzenia i grafiki potoku etapu zachowania, należy użyć **Debuger języka HLSL** przejść przez kod, zbadać zawartość zmiennych i wykonywania innych do typowych zadań debugowania. Debuger HLSL służy również do sprawdzenia kodu cieniowania obliczenia, niezależnie od tego, czy wyniki są dalej przetwarzane przez potok grafiki i po prostu są odczytywane przez aplikację.
+ [Debuger HLSL](hlsl-shader-debugger.md) Aby sprawdzać, jak zachowuje się kod programu do cieniowania aktualnie wybranego zdarzenia i etapu potoku grafiki, należy użyć **debugera HLSL** , aby przejść do kodu, przejrzeć zawartość zmiennych i wykonać inne typowe zadania debugowania. Można również użyć debugera HLSL do zbadania kodu programu do cieniowania obliczeń, bez względu na to, czy wyniki są przetworzone przez potok graficzny, czy po prostu są odczytywane przez aplikację.
 
- [Narzędzie wiersza polecenia przechwytywania](command-line-capture-tool.md) Użyj narzędzia wiersza polecenia do przechwytywania do szybkiego przechwytywania i odtwarzania informacji graficznych bez korzystania z programu Visual Studio lub przechwytywanie programistyczne. W szczególności można użyć narzędzia wiersza polecenia do przechwytywania, w przypadku usługi automation lub w środowisku testowym.
+ [Narzędzie do przechwytywania wiersza polecenia](command-line-capture-tool.md) Narzędzie do przechwytywania wiersza polecenia umożliwia szybkie przechwytywanie i odtwarzanie informacji graficznych bez użycia programu Visual Studio lub funkcji przechwytywania programowego. W szczególności można użyć narzędzia do przechwytywania wiersza polecenia do automatyzacji lub w środowisku testowym.
 
- [Przykłady](graphics-diagnostics-examples.md) kilka przykładów pokazują, jak za pomocą narzędzi programu Graphics Diagnostics razem diagnozować różne rodzaje problemów z renderowaniem.
+ [Przykłady](graphics-diagnostics-examples.md) Kilka przykładów pokazuje, jak za pomocą narzędzi Diagnostyka grafiki narzędzia zdiagnozować różne rodzaje problemów z renderowaniem.
 
 ## <a name="related-sections"></a>Sekcje pokrewne
 
 | Tytuł | Opis |
 | - | - |
-| [Przewodnik po funkcjach debugera](/visualstudio/debugger/debugger-feature-tour) | Wprowadza funkcji debugowania w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. |
-| [DirectX Graphics i gry](http://go.microsoft.com/fwlink/?LinkId=256498) | Zawiera artykuły na temat technologii grafiki DirectX. |
+| [Przewodnik po funkcjach debugera](/visualstudio/debugger/debugger-feature-tour) | Wprowadza funkcje debugowania w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. |
+| [Grafika i gry DirectX](/windows/win32/directx) | Zawiera artykuły, które omawiają technologie grafiki DirectX. |

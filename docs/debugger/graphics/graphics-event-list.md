@@ -1,5 +1,5 @@
 ---
-title: Lista zdarzeń graficznych | Dokumentacja firmy Microsoft
+title: Lista zdarzeń grafiki | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,108 +10,108 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 710cc8cae2b1974529be1eded6c5148eedd1211e
-ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
+ms.openlocfilehash: d5c4e8f39ff77779985536e53d98ddc2785b109b
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65805315"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911488"
 ---
 # <a name="graphics-event-list"></a>Lista zdarzeń grafiki
-Umożliwia Lista zdarzeń graficznych w analizatora grafiki programu Visual Studio Eksploruj zdarzenia Direct3D, które zostały zarejestrowane podczas renderowania ramki grach i aplikacjach.
+Użyj listy zdarzeń grafiki w analizator grafiki programu Visual Studio, aby eksplorować zdarzenia Direct3D, które zostały zarejestrowane podczas renderowania ramki gry lub aplikacji.
 
  Jest to lista zdarzeń:
 
- ![Lista zdarzeń, które mają "Index" w nazwie. ](media/gfx_diag_demo_event_list_orientation.png "gfx_diag_demo_event_list_orientation")
+ ![Lista zdarzeń o nazwie "index".](media/gfx_diag_demo_event_list_orientation.png "gfx_diag_demo_event_list_orientation")
 
-## <a name="using-the-event-list"></a>Przy użyciu listy zdarzeń
- Po wybraniu zdarzenia w przypadku listy, jego ma odzwierciedlone w informacje, które jest wyświetlane za pomocą innych narzędzi analizy grafiki; za pomocą listy zdarzeń w połączeniu z innych narzędzi można zbadać problem z renderowaniem szczegółowo w celu ustalenia jego przyczyny. Aby dowiedzieć się, jak rozwiązać problemy z renderowaniem, używając listy zdarzeń, razem z innymi narzędziami analizy grafiki, zobacz [przykłady](graphics-diagnostics-examples.md).
+## <a name="using-the-event-list"></a>Korzystanie z listy zdarzeń
+ Po wybraniu zdarzenia na liście zdarzeń zostanie ono odzwierciedlone w informacjach wyświetlanych przez inne narzędzia do analizy grafiki; Korzystając z listy zdarzeń w połączeniu z tymi innymi narzędziami, można szczegółowo sprawdzić problem z renderowaniem w celu ustalenia jego przyczyny. Aby dowiedzieć się więcej o sposobach rozwiązywania problemów z renderowaniem przy użyciu listy zdarzeń wraz z innymi narzędziami do analizy grafiki, zobacz [przykłady](graphics-diagnostics-examples.md).
 
- Skutecznego korzystania z funkcji listy zdarzeń jest ważne dla poruszanie się po złożone klatek, które mogą zawierać tysięcy zdarzeń. Efektywne wykorzystanie listy zdarzeń wybierz widok działa najlepiej dla Ciebie, użyć wyszukiwania, aby filtrować listę zdarzeń, skorzystaj z linków, aby dowiedzieć się więcej o obiekty Direct3D, które są skojarzone ze zdarzeniem oraz za pomocą strzałki przycisków, aby przenosić między narysuj szybko wywołania.
+ Efektywne korzystanie z funkcji listy zdarzeń jest ważne dla zaawansowania ramek, które mogą zawierać tysiące zdarzeń. Aby efektywnie korzystać z listy zdarzeń, wybierz widok najlepiej sprawdza się dla Ciebie, użyj wyszukiwania do filtrowania listy zdarzeń, postępuj zgodnie z linkami, aby dowiedzieć się więcej na temat obiektów Direct3D, które są skojarzone ze zdarzeniem, i użyj przycisków strzałek, aby szybko przełączać się między wywołaniami rysowania.
 
-### <a name="color-coded-events-in-direct3d-12"></a>Oznaczone kolorami zdarzenia w Direct3D 12
- Direct3D 12 udostępnia wiele kolejek, które odnoszą się do funkcji z innego sprzętu. Aby ułatwić identyfikację kolejki, który jest skojarzony ze zdarzeniem grafiki określonego w Direct3D 12, zdarzenia są oznaczone kolorami zgodnie z ich kolejki na liście zdarzeń podczas pracy z przechwytywania aplikacji Direct3D 12.
+### <a name="color-coded-events-in-direct3d-12"></a>Zdarzenia kodowane kolorem w programie Direct3D 12
+ Direct3D 12 uwidacznia wiele kolejek, które odpowiadają różnym funkcjom sprzętowym. Aby ułatwić zidentyfikowanie kolejki skojarzonej z konkretnym zdarzeniem grafiki w programie Direct3D 12, zdarzenia są kodowane kolorami na liście zdarzeń zgodnie z ich kolejką podczas pracy z funkcją przechwytywania aplikacji Direct3D 12.
 
-|Direct3D 12 Queue|Kolor|
+|Kolejka Direct3D|Kolor|
 |-----------------------|-----------|
-|Renderowanie kolejki|Zielony|
-|Obliczenia kolejki|Żółty|
-|Kolejka kopiowania|Pomarańczowy|
+|Kolejka renderowania|znacznika|
+|Kolejka obliczeń|kryje|
+|Kopiuj kolejkę|pomarańcz|
 
- Direct3D 11 nie uwidocznić wielu kolejek, więc zdarzenia nie są oznaczone kolorami listy zdarzeń podczas pracy z przechwytywania aplikacji Direct3D 11.
+ Program Direct3D 11 nie uwidacznia wielu kolejek, dlatego zdarzenia nie są kodowane na liście zdarzeń podczas pracy z funkcją przechwytywania aplikacji Direct3D 11.
 
-### <a name="event-list-views"></a>Widoki list zdarzeń
- Lista zdarzeń obsługuje dwa różne widoki, pozwalające organizować zdarzenia grafiki na różne sposoby do obsługi przepływu pracy i preferencje. Jest to pierwszy widok *widok pracy procesora GPU* który organizuje zdarzenia i ich stan skojarzony hierarchicznie. Drugi widok jest *widok osi czasu* zdarzenia który organizuje chronologicznie, w formie płaskiej listy.
+### <a name="event-list-views"></a>Widoki listy zdarzeń
+ Lista zdarzeń obsługuje dwa różne widoki, które organizują zdarzenia grafiki na różne sposoby obsługi przepływu pracy i preferencji. Pierwszy widok to *Widok pracy procesora GPU* , który organizuje zdarzenia i ich stan skojarzony hierarchicznie. Drugi widok to *Widok osi czasu* , który organizuje zdarzenia chronologicznie, na płaskiej liście.
 
- **Działanie procesora GPU** widoku przechwycone zdarzenia i ich stan w hierarchii. Najwyższego poziomu hierarchii składają się zdarzenia, takie jak wywołania rysowania, czyści, obecny i te, w których za pomocą widoków. W przypadku listy, możesz wywołania rysowania można rozwijać w celu wyświetlenia stanu urządzenia, które były aktualne w momencie zgłoszenia wywołania rysowania; i możesz można rozwijać każdy stan, aby wyświetlić zdarzenia modyfikujące jego wartości. Na tym poziomie widać również, czy określony stan został ustawiony w poprzedniej ramki, jeśli została ustawiona więcej niż jeden raz od czasu ostatniego wywołania rysowania.
+ W widoku **roboczym procesora GPU** są wyświetlane przechwycone zdarzenia i ich stan w hierarchii. Najwyższego poziomu hierarchii składają się z zdarzeń, takich jak wywołania rysowania, czyszczenia, obecności i tych, które są związane z widokami. Na liście zdarzeń można rozwinąć wywołania rysowania, aby wyświetlić stan urządzenia, który był aktualny w momencie wywołania remisu; można również rozszerzyć każdy rodzaj stanu, aby wyświetlić zdarzenia ustawiające ich wartości. Na tym poziomie można także sprawdzić, czy określony stan został ustawiony w poprzedniej klatce lub czy został ustawiony więcej niż jeden raz od ostatniego wywołania rysowania.
 
- **Osi czasu** każdego przechwycone zdarzenia w widoku są wyświetlane w porządku chronologicznym. Ten sposób organizowania Lista zdarzeń jest taka sama, jak w poprzednich wersjach programu Visual Studio.
+ Widok **oś czasu** wyświetla każde przechwycone zdarzenie w kolejności chronologicznej. Ten sposób organizowania listy zdarzeń jest taki sam jak w poprzednich wersjach programu Visual Studio.
 
 ##### <a name="to-change-the-event-list-view-mode"></a>Aby zmienić tryb widoku listy zdarzeń
 
-- W **Lista zdarzeń graficznych** Znajdź okno powyżej listy zdarzeń, **widoku** listy rozwijanej i wybierz **osi czasu** widoku lub **działanie procesora GPU** widoku.
+- W oknie **Lista zdarzeń grafiki** , powyżej listy zdarzeń, zlokalizuj listę rozwijaną **Widok** i wybierz widok **oś czasu** lub widok **pracy procesora GPU** .
 
 ### <a name="filtering-events"></a>Filtrowanie zdarzeń
- Można użyć pola wyszukiwania — znajdującego się w prawym górnym rogu **Lista zdarzeń graficznych** okna — Aby filtrować listę zdarzeń, aby uwzględnić tylko zdarzenia, których nazwy zawierają konkretnych słów kluczowych. Można określić pojedynczy słów kluczowych, takich jak `Vertex`— jak pokazano na poprzedniej ilustracji — lub wiele słów kluczowych, korzystając z rozdzielaną średnikami listę `Draw;Primitive`— który dopasowuje zdarzenia, które mają jedną `Draw` lub `Primitive` w nazwach. Wyszukiwania są wrażliwe na białe znaki — na przykład `VSSet` i `VS Set` są różne wyszukiwania — więc upewnij się, że formularz wyszukiwania ostrożnie.
+ Możesz użyć pola wyszukiwania — znajdującego się w prawym górnym rogu okna **Lista zdarzeń grafiki** — aby przefiltrować listę zdarzeń w celu uwzględnienia tylko zdarzeń, których nazwy zawierają określone słowa kluczowe. Możesz określić pojedyncze słowa kluczowe, takie jak `Vertex`— jak pokazano na poprzedniej ilustracji — lub kilka słów kluczowych przy użyciu listy rozdzielanej średnikami, takiej jak `Draw;Primitive`— które pasują do zdarzeń, które mają `Draw` lub `Primitive` nazwy. Wyszukiwania są wrażliwe na odstępy — na przykład `VSSet` i `VS Set` są różnymi wyszukiwaniami, dlatego należy uważnie przeszukiwać dane.
 
-### <a name="moving-between-draw-calls"></a>Przenoszenie między wywołaniami rysowania
- Ponieważ badanie `Draw` wywołań jest szczególnie ważne, można użyć **przejdź do następnego wywołania rysowania** i **przejdź do poprzedniego wywołania rysowania** przyciski — znajdującego się w lewym górnym rogu **Lista zdarzeń graficznych** okna, aby znaleźć i szybkie przenoszenie między wywołaniami rysowania.
+### <a name="moving-between-draw-calls"></a>Przechodzenie między wywołaniami rysowania
+ Ponieważ badanie wywołań `Draw` jest szczególnie ważne, można użyć **przejść do następnego wywołania rysowania** i **przejść do poprzedniego przycisku rysowania wywołania** — znajdującego się w lewym górnym rogu okna **Lista zdarzeń grafiki** — w celu znalezienia i przesunięcia między rysowaniem szybkie wywołania.
 
-### <a name="links-to-graphics-objects"></a>Łącza do obiektów graficznych
- Aby poznać niektóre zdarzenia grafiki, może być konieczne dodatkowe informacje dotyczące bieżącego stanu Direct3D lub obiekty Direct3D, które są przywoływane przez zdarzenie. Wiele zdarzeń zawierają łącza do tych informacji, które można wykonać, aby uzyskać więcej szczegółów.
+### <a name="links-to-graphics-objects"></a>Linki do obiektów graficznych
+ W celu zrozumienia pewnych zdarzeń graficznych mogą być potrzebne dodatkowe informacje o bieżącym stanie Direct3D lub obiektów Direct3D, do których odwołuje się zdarzenie. Wiele zdarzeń zawiera linki do tych informacji, które można wykonać, aby uzyskać więcej szczegółów.
 
-## <a name="kinds-of-events-and-event-markers"></a>Rodzaje zdarzeń i znaczników zdarzeń
- Zdarzenia, które są wyświetlane w przypadku listy są zorganizowane w cztery kategorie: Ogólne zdarzenia rysowania zdarzenia, grup zdarzeń zdefiniowanych przez użytkownika i znaczniki zdarzenie zdefiniowane przez użytkownika. Z wyjątkiem zdarzenia ogólne każde zdarzenie jest wyświetlana wraz z ikonami oznaczającymi, należącego do kategorii.
+## <a name="kinds-of-events-and-event-markers"></a>Rodzaje zdarzeń i znaczniki zdarzeń
+ Zdarzenia, które są wyświetlane na liście zdarzeń, są zorganizowane w cztery kategorie: zdarzenia ogólne, narysuj zdarzenia, zdefiniowane przez użytkownika grupy zdarzeń i znaczniki zdarzeń zdefiniowane przez użytkownika. Z wyjątkiem ogólnych zdarzeń każde zdarzenie jest wyświetlane wraz z ikoną wskazującą kategorię, do której należy.
 
 |Ikona|Opis zdarzenia|
 |----------|-----------------------|
-|(Brak ikony)|Zdarzenia ogólne<br /> Dowolne zdarzenie, który nie jest zdarzenie zdefiniowane przez użytkownika, grupy zdarzeń zdefiniowanych przez użytkownika lub sięganie zdarzeń.|
-|![Ikona Zdarzenie draw](media/vsg_eventlist_icon_draw.png "vsg_eventlist_icon_draw")|Zdarzenia rysowania<br /> Oznacza zdarzenia remis, które wystąpiły podczas przechwyconej ramki.|
-|![Użytkownik&#45;zdefiniowane ikony znacznika zdarzenia](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|Grupa zdarzeń zdefiniowanych przez użytkownika<br /> Grupy zdarzenia związane z, zgodnie z definicją w aplikacji.|
-|![Użytkownik&#45;zdefiniowane ikony znacznika zdarzenia](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|Znacznik zdarzenia zdefiniowane przez użytkownika<br /> Oznacza określonej lokalizacji, zgodnie z definicją w aplikacji.|
+|(brak ikony)|Zdarzenie ogólne<br /> Każde zdarzenie, które nie jest zdarzeniem zdefiniowanym przez użytkownika, grupą zdarzeń zdefiniowanym przez użytkownika lub zdarzeniem remisu.|
+|![Ikona zdarzenia rysowania](media/vsg_eventlist_icon_draw.png "vsg_eventlist_icon_draw")|Rysuj wydarzenie<br /> Oznacza zdarzenie rysowania, które wystąpiło w przechwyconej ramce.|
+|![Ikona znacznika&#45;zdarzenia zdefiniowanego przez użytkownika](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|Grupa zdarzeń zdefiniowana przez użytkownika<br /> Grupuje zdarzenia pokrewne zdefiniowane przez aplikację.|
+|![Ikona znacznika&#45;zdarzenia zdefiniowanego przez użytkownika](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|Znacznik zdarzenia zdefiniowany przez użytkownika<br /> Oznacza określoną lokalizację zdefiniowaną przez aplikację.|
 
 ## <a name="marking-user-defined-events-in-your-app"></a>Oznaczanie zdarzeń zdefiniowanych przez użytkownika w aplikacji
- Zdarzenia zdefiniowane przez użytkownika są specyficzne dla aplikacji. Ich umożliwia korelowanie istotne zdarzenia, które wystąpiły w aplikacji za pomocą zdarzeń na liście zdarzeń grafiki. Na przykład można utworzyć grupy zdarzeń zdefiniowanych przez użytkownika w celu uporządkowania zdarzeń powiązanych — takich jak te, które renderują interfejsu użytkownika — na grupy i hierarchie są tak, aby łatwiej przeglądać listę zdarzeń, lub możesz utworzyć znaczniki, gdy niektóre rodzaje obiektów rysowany tak, aby można łatwo znaleźć listy zdarzeń ich zdarzenia grafiki.
+ Zdarzenia zdefiniowane przez użytkownika są specyficzne dla Twojej aplikacji. Można ich użyć do skorelowania poważnych zdarzeń występujących w aplikacji ze zdarzeniami na liście zdarzeń grafiki. Można na przykład utworzyć grupy zdarzeń zdefiniowane przez użytkownika, aby organizować powiązane zdarzenia, takie jak te, które renderują interfejs użytkownika w grupach lub hierarchiach, dzięki czemu można łatwiej przeglądać listę zdarzeń. można też tworzyć znaczniki, gdy niektóre obiekty są narysowana, aby można było łatwo znaleźć na liście zdarzeń swoje zdarzenia graficzne.
 
- Aby utworzyć grupy i znaczników w swojej aplikacji, należy użyć tych samych interfejsów API, który program Direct3D oferuje do użytku przez inne Direct3D, narzędzia debugowania. Te interfejsy API czasami się zmieniać między wersjami programu Direct3D, ale podstawowa funkcjonalność jest taka sama.
+ Aby utworzyć grupy i znaczniki w aplikacji, należy użyć tych samych interfejsów API, które są dostępne dla innych narzędzi debugowania Direct3D przez program Direct3D. Te interfejsy API czasami zmieniają się między wersjami programu Direct3D, ale podstawowe funkcje są takie same.
 
-### <a name="user-defined-events-in-direct3d-12"></a>Zdarzeń zdefiniowanych przez użytkownika w Direct3D 12
- Aby utworzyć grupy i znaczników w Direct3D 12, przy użyciu interfejsów API, opisane w tej sekcji. Poniższa tabela zawiera podsumowanie interfejsów API, które można użyć w zależności od tego, czy są oznaczanie zdarzeń w kolejce poleceń, czy polecenie listy.
+### <a name="user-defined-events-in-direct3d-12"></a>Zdarzenia zdefiniowane przez użytkownika w programie Direct3D 12
+ Aby utworzyć grupy i znaczniki w programie Direct3D 12, Użyj interfejsów API opisanych w tej sekcji. Poniższa tabela zawiera podsumowanie interfejsów API, których można użyć w zależności od tego, czy oznaczasz zdarzenia w kolejce poleceń, czy na liście poleceń.
 
 |Opis interfejsu API|[ID3D12CommandQueue](/windows/desktop/api/d3d12/nn-d3d12-id3d12commandqueue)|[ID3D12GraphicsCommandList](/windows/desktop/api/d3d12/nn-d3d12-id3d12graphicscommandlist)|
 |---------------------| - | - |
-|Sprawdź dostępność zdarzenie zdefiniowane przez użytkownika|[PIXGetStatus](/previous-versions//dn788637(v=vs.85))|[PIXGetStatus](/previous-versions//dn788637(v=vs.85))|
-|Rozpocznij grupy zdarzeń|[PIXBeginEvent](/windows/desktop/api/d3d12/nf-d3d12-id3d12commandqueue-beginevent)|[PIXBeginEvent](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-beginevent)|
-|W końcu grupy zdarzeń|[PIXEndEvent](/windows/desktop/api/d3d12/nf-d3d12-id3d12commandqueue-endevent)|[PIXEndEvent](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-endevent)|
-|Utwórz — znacznik zdarzenia|[PIXSetMarker](/windows/desktop/api/d3d12/nf-d3d12-id3d12commandqueue-setmarker)|[PIXSetMarker](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-setmarker)|
+|Sprawdź dostępność zdarzeń zdefiniowanych przez użytkownika|[PIXGetStatus](/previous-versions//dn788637(v=vs.85))|[PIXGetStatus](/previous-versions//dn788637(v=vs.85))|
+|Rozpocznij pracę grupy zdarzeń|[PIXBeginEvent](/windows/desktop/api/d3d12/nf-d3d12-id3d12commandqueue-beginevent)|[PIXBeginEvent](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-beginevent)|
+|Zakończ grupę zdarzeń|[PIXEndEvent](/windows/desktop/api/d3d12/nf-d3d12-id3d12commandqueue-endevent)|[PIXEndEvent](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-endevent)|
+|Tworzenie znacznika zdarzenia|[PIXSetMarker](/windows/desktop/api/d3d12/nf-d3d12-id3d12commandqueue-setmarker)|[PIXSetMarker](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-setmarker)|
 
-### <a name="user-defined-events-in-direct3d-11-and-earlier"></a>Zdarzenia zdefiniowane przez użytkownika w programie Direct3D 11 i jego starszych wersji
- Aby utworzyć grupy i znaczniki w interfejsie Direct3D 11 lub wcześniej, przy użyciu interfejsów API, opisane w tej sekcji. Poniższa tabela zawiera podsumowanie interfejsów API, które służy do różnych wersji programu Direct3D 11 i starszych wersji Direct3D.
+### <a name="user-defined-events-in-direct3d-11-and-earlier"></a>Zdarzenia zdefiniowane przez użytkownika w programie Direct3D 11 i starszych wersjach
+ Aby utworzyć grupy i znaczniki w programie Direct3D 11 lub starszym, Użyj interfejsów API opisanych w tej sekcji. Poniższa tabela zawiera podsumowanie interfejsów API, których można użyć dla różnych wersji programu Direct3D 11 i starszych wersji programu Direct3D.
 
-|Opis interfejsu API|[ID3D11DeviceContext2](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11devicecontext2) (Direct3D 11.2)|[ID3DUserDefinedAnnotation](http://go.microsoft.com/fwlink/p/?LinkID=250967) (Direct3D 11.1)|Rodzina D3DPerf_ interfejsu API (Direct3D 11.0 i starsze)|
+|Opis interfejsu API|[ID3D11DeviceContext2](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11devicecontext2) (Direct3D 11,2)|[ID3DUserDefinedAnnotation](/windows/win32/api/d3d11_1/nn-d3d11_1-id3duserdefinedannotation) (Direct3D 11,1)|Rodzina interfejsów API D3DPerf_ (Direct3D 11,0 i starsze)|
 |---------------------| - | - | - |
-|Rozpocznij grupy zdarzeń|`BeginEventInt`|`BeginEvent`|`D3DPerf_BeginEvent`|
-|W końcu grupy zdarzeń|`EndEventInt`|`EndEvent`|`D3DPerf_EndEvent`|
-|Utwórz — znacznik zdarzenia|`SetMarkerInt`|`SetMarker`|`D3DPerf_SetMarker`|
+|Rozpocznij pracę grupy zdarzeń|`BeginEventInt`|`BeginEvent`|`D3DPerf_BeginEvent`|
+|Zakończ grupę zdarzeń|`EndEventInt`|`EndEvent`|`D3DPerf_EndEvent`|
+|Tworzenie znacznika zdarzenia|`SetMarkerInt`|`SetMarker`|`D3DPerf_SetMarker`|
 
- Można użyć dowolnego z tych interfejsów API, które obsługuje daną wersję programu Direct3D — na przykład, jeśli są przeznaczone dla interfejsu API Direct3D 11.1, możesz użyć albo `SetMarker` lub `D3DPerf_SetMarker` utworzyć znacznika zdarzenia, ale nie `SetMarkerInt` ponieważ jej dostępność tylko w Direct3D 11.2 — a nawet można łączyć te, które obsługują różne wersje programu Direct3D ze sobą w tej samej aplikacji.
+ Możesz użyć dowolnego z tych interfejsów API, które obsługuje wersja Direct3D — na przykład, jeśli docelowym interfejsem API programu Direct3D 11,1, możesz użyć albo `SetMarker` lub `D3DPerf_SetMarker` do utworzenia znacznika zdarzenia, ale nie `SetMarkerInt`, ponieważ jest on dostępny tylko w programie Direct3D 11.2 — i możesz nawet wymieszać te, które obsługują różne wersje programu Direct3D razem w tej samej aplikacji.
 
 <!-- VERSIONLESS -->
 <a name="resource-history"></a>
 ## <a name="resource-history"></a>Historia zasobów
-Visual Studio 2017 i większa zawierają **Historia zasobów** okna.  Wybierając ikonę Obejrzyj ![ikona monitorowania](media/gfx_watch.png) obok wpisu w **listy zdarzeń** oknie zostanie wyświetlone okno **Historia zasobów** okna, które przedstawiono poniżej:
+Program Visual Studio 2017 lub nowszy zawiera okno **historia zasobów** .  Wybranie ikony czujki ![ikonę Obserwuj](media/gfx_watch.png) obok pozycji w oknie **Lista zdarzeń** spowoduje wyświetlenie okna **historii zasobów** wyświetlonego poniżej:
 
 ![Historia zasobów](media/gfx_diag_resource_history.png)
 
-To okno służy do wyświetlania historii elementu wybranego na liście zdarzeń.  Lista rozwijana u góry, można wybrać inne elementy, aby wyświetlić historię.  W górnej połowie okna zawiera **zdarzenia konfiguracji klatki**.  Są to zdarzenia, które można podzielić na *Utwórz* wpisz kategorię i wywołań, które zwykle inicjowania i Utwórz zasób.  Dolnej części okna zawiera **zdarzenia klatki** sekcji.  Te są normalne odczytu i zapisu zdarzenia, które wystąpiły w czasie korzystania z zasobów.
+To okno umożliwia wyświetlenie historii wybranego elementu na liście zdarzeń.  Lista rozwijana u góry może służyć do wybierania innych elementów w celu wyświetlenia historii.  Górna połowa okna zawiera **zdarzenia konfiguracji klatki**.  Są to zdarzenia, które znajdują się w kategorii *Create* Type i są wywołaniami, które zazwyczaj inicjują i tworzą zasób.  Dolna połowa okna zawiera sekcję **zdarzenia ramki** .  Są to normalne zdarzenia odczytu i zapisu występujące podczas korzystania z zasobu.
 
 | Kolumna | Opis |
 |-----------| - |
-| **Typ** | Zazwyczaj zawiera typ wpisu *Utwórz*, *odczytu* i *zapisu*. |
-| **Widok** | Pokazuje Miniatura zasobu w tej chwili czasu.  Dwukrotnie kliknij miniaturę, aby otworzyć widok szczegółów zasobów w tym czasie. |
-| **Event** | Pokazuje wywołanie metody, które wystąpiły, który wygenerował zdarzenie.  Wszelkie dodatkowe historię na poszczególne elementy można wyświetlić, wybierając ikonę Obejrzyj ![ikona monitorowania](media/gfx_watch.png) odpowiedniego wiersza.  Ponadto dowolnego elementu, który jest rysowana w kolorze niebieskim, takich jak `m_commandList` na powyższym zrzucie ekranu, można wybrać Aby uzyskać więcej informacji. |
+| **Wprowadź** | Pokazuje typ wpisu, zazwyczaj *Tworzenie*, *Odczyt* i *zapis*. |
+| **Widokiem** | Pokazuje w tym momencie miniaturę zasobu.  Kliknij dwukrotnie miniaturę, aby otworzyć w tym momencie widok szczegółów zasobu. |
+| **Event** | Pokazuje wywołanie metody, które wygenerowało zdarzenie.  Każdą dodatkową historię poszczególnych elementów można wyświetlić, wybierając ikonę czujki ![ikonę czujki,](media/gfx_watch.png) w odpowiednim wierszu.  Ponadto, aby uzyskać więcej informacji, można wybrać każdy element, który jest rysowany w niebieskim tekście, na przykład `m_commandList` na poniższym zrzucie ekranu. |
 
 <!-- /VERSIONLESS -->
 
-## <a name="see-also"></a>Zobacz też
-- [Przewodnik: Brak obiektów spowodowany stanem urządzenia](walkthrough-missing-objects-due-to-device-state.md)
+## <a name="see-also"></a>Zobacz także
+- [Przewodnik: brak obiektów spowodowany stanem urządzenia](walkthrough-missing-objects-due-to-device-state.md)

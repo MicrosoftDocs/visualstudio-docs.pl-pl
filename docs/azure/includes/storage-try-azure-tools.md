@@ -1,15 +1,15 @@
 ---
-ms.openlocfilehash: 9584a26883b48ffb27a2e040784e997c2d9ed036
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: fbaef2430183841098d8c3eb53b3712322204c27
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68147202"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911707"
 ---
 > [!TIP]
 > 
-> **Wypróbuj program Microsoft Azure Storage Explorer**
+> **Wypróbuj Eksplorator usługi Microsoft Azure Storage**
 > 
-> [Microsoft Azure Storage Explorer](/azure/vs-azure-tools-storage-manage-with-storage-explorer) jest bezpłatną, autonomiczną aplikacją oferowaną przez firmę Microsoft. Go umożliwia wizualną pracę z danymi usługi Azure Storage w Windows, macOS i Linux.
+> [Eksplorator usługi Microsoft Azure Storage](/azure/vs-azure-tools-storage-manage-with-storage-explorer) to bezpłatna, autonomiczna aplikacja od firmy Microsoft. Można jej używać do wizualizacji danych usługi Azure Storage w systemach Windows, macOS i Linux.
 > 
-> 
+>

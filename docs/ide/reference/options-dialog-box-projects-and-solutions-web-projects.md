@@ -10,12 +10,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa4d5013aea15bec9b2d7c308836ef5e9d212a65
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: bae8a8679a3295f665a15cc6b088cc93aaababd9
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747861"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919206"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>Okno dialogowe Opcje, Projekty i rozwiązania, Projekty sieci Web
 
@@ -27,7 +27,7 @@ Domyślnie uruchamianie projektu sieci Web w programie Visual Studio korzysta z 
 
 **Korzystanie z 64-bitowej wersji IIS Express dla witryn i projektów sieci Web**
 
-Wybierz tę opcję, aby użyć IIS Express zamiast serwera deweloperskiego programu Visual Studio. Aby uzyskać więcej informacji, zobacz [wprowadzenie IIS Express](http://go.microsoft.com/?linkid=9747914) i [IIS Express przegląd](http://go.microsoft.com/?linkid=9747915).
+Wybierz tę opcję, aby użyć IIS Express zamiast serwera deweloperskiego programu Visual Studio. Aby uzyskać więcej informacji, zobacz [wprowadzenie IIS Express](https://weblogs.asp.net/scottgu/introducing-iis-express) i [IIS Express przegląd](/iis/extensions/introduction-to-iis-express/iis-express-overview).
 
 **Ostrzegaj przed uruchomieniem aplikacji sieci Web, jeśli na liście błędów znajdują się błędy**
 

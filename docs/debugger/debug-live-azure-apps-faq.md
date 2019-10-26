@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ceda2dd4e85c8db5b66ef753a748977204b8caab
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 5e0d8839daac2d470f4275257bfcfbc83fc7a62f
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211215"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911404"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Często zadawane pytania dotyczące debugowania migawek w programie Visual Studio
 
@@ -125,7 +125,7 @@ W przypadku maszyn wirtualnych i zestawów skalowania maszyn wirtualnych Usuń r
 
    - Certyfikat serwera
       - Odpowiedni odcisk palca certyfikatu serwera jest wdrażany jako klucz tajny magazynu kluczy platformy Azure. Program VS podejmie próbę znalezienia lub utworzenia magazynu kluczy z prefiksem MSVSAZ * w regionie odpowiadającym zasobie maszyny wirtualnej lub zestawu skalowania maszyn wirtualnych. Wszystkie zasoby maszyn wirtualnych i zestawów skalowania maszyn wirtualnych wdrożone w tym regionie będą współużytkować ten sam magazyn kluczy.
-      - Aby usunąć wpis tajny odcisku palca certyfikatu serwera, przejdź do Azure Portal i Znajdź Magazyn kluczy MSVSAZ * w tym samym regionie, w którym znajduje się zasób. Usuń klucz tajny, który powinien być oznaczony etykietą`remotedebugcert<<ResourceName>>`
+      - Aby usunąć wpis tajny odcisku palca certyfikatu serwera, przejdź do Azure Portal i Znajdź Magazyn kluczy MSVSAZ * w tym samym regionie, w którym znajduje się zasób. Usuń klucz tajny, który powinien mieć etykietę `remotedebugcert<<ResourceName>>`
       - Należy również usunąć klucz tajny serwera z zasobu za pośrednictwem programu PowerShell.
 
       Dla maszyn wirtualnych:
@@ -181,7 +181,7 @@ Istnieje kilka sposobów wyłączenia Snapshot Debugger:
 
 - Azure Portal > bloku zasobów maszyny wirtualnej/zestawu skalowania maszyn wirtualnych > rozszerzenia > Odinstaluj rozszerzenie Microsoft. Insights. VMDiagnosticsSettings
 
-- Polecenia cmdlet programu PowerShell z programu [AZ PowerShell](https://docs.microsoft.com/powershell/azure/overview)
+- Polecenia cmdlet programu PowerShell z programu [AZ PowerShell](/powershell/azure/overview)
 
    Maszyna wirtualna:
 
@@ -199,7 +199,7 @@ Istnieje kilka sposobów wyłączenia Snapshot Debugger:
 ## <a name="see-also"></a>Zobacz także
 
 - [Debugowanie w programie Visual Studio](../debugger/index.yml)
-- [Debugowanie na żywo aplikacji ASP.NET, przy użyciu rozszerzenia Snapshot Debugger](../debugger/debug-live-azure-applications.md)
+- [Debuguj aplikacje Live ASP.NET przy użyciu Snapshot Debugger](../debugger/debug-live-azure-applications.md)
 - [Debuguj zestawy skalowania maszyn wirtualnych ASP.NET platformy Azure na żywo przy użyciu Snapshot Debugger](../debugger/debug-live-azure-virtual-machines.md)
 - [Debuguj Live ASP.NET Azure Kubernetes przy użyciu Snapshot Debugger](../debugger/debug-live-azure-kubernetes.md)
 - [Rozwiązywanie problemów i znane problemy związane z debugowaniem migawek](../debugger/debug-live-azure-apps-troubleshooting.md)

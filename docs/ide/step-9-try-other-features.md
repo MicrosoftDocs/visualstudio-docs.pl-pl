@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5af132efde0c1a49e5404fa602363aab0554e6f
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 07c0a3e24ac089bf29501dfd4e101baef73318fb
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72572466"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919140"
 ---
 # <a name="step-9-try-other-features"></a>Krok 9. Wypróbuj inne funkcje
 Aby dowiedzieć się więcej, spróbuj zmienić ikony i kolory, dodać czasomierz gry i dźwięki. Aby gra była bardziej wymagająca, spróbuj zwiększyć planszę i dostosować czasomierz.
@@ -37,7 +37,7 @@ Aby pobrać kompletną wersję przykładu, zobacz [kompletny przykładowy samouc
 - Dodaj dźwięk, gdy gracz znajdzie dopasowanie, inny dźwięk, gdy gracz odkrywa dwie ikony, które nie pasują, a trzeci dźwięk, gdy program ukrywa ikony ponownie.
 
     > [!TIP]
-    > Aby odtwarzać dźwięki, można użyć przestrzeni nazw <xref:System.Media>. Aby uzyskać więcej informacji, zobacz [OdtwórzC#dźwięki w aplikacji Windows Forms ()](http://youtu.be/qOh4ooHg1UU) lub [Odtwórz dźwięk w programie Visual Basic](http://youtu.be/-4oPDeQrtMs) .
+    > Aby odtwarzać dźwięki, można użyć przestrzeni nazw <xref:System.Media>. Aby uzyskać więcej informacji, zobacz [OdtwórzC#dźwięki w aplikacji Windows Forms ()](https://www.youtube.com/watch?v=qOh4ooHg1UU&feature=youtu.be) lub [Odtwórz dźwięk w programie Visual Basic](https://www.youtube.com/watch?v=-4oPDeQrtMs&feature=youtu.be) .
 
 - Utrudnij grę, zwiększając planszę.
 

@@ -9,19 +9,19 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 5314e92065cb29691aca75d424a331d10284a558
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 7b9df8c5609c92a6b6631d1ed9fdda8d65e9b605
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253435"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911806"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Konfigurowanie projektu platformy Azure w programie Visual Studio w celu używania wielu konfiguracji usługi
 
-Projekt usługi w chmurze platformy Azure w programie Visual Studio zawiera trzy pliki `ServiceDefinition.csdef`konfiguracji `ServiceConfiguration.Local.cscfg`:, `ServiceConfiguration.Cloud.cscfg`i:
+Projekt usługi w chmurze platformy Azure w programie Visual Studio zawiera trzy pliki konfiguracji: `ServiceDefinition.csdef`, `ServiceConfiguration.Local.cscfg`i `ServiceConfiguration.Cloud.cscfg`:
 
-- `ServiceDefinition.csdef`Program został wdrożony na platformie Azure, aby opisać wymagania usługi w chmurze i jej ról oraz zapewnić ustawienia, które mają zastosowanie do wszystkich wystąpień. Ustawienia można odczytać w czasie wykonywania za pomocą interfejsu API środowiska uruchomieniowego hostingu usług platformy Azure. Ten plik można zaktualizować na platformie Azure tylko wtedy, gdy usługa w chmurze jest zatrzymana.
-- `ServiceConfiguration.Local.cscfg`i `ServiceConfiguration.Cloud.cscfg` podaj wartości ustawień w pliku definicji i określ liczbę wystąpień do uruchomienia dla każdej roli. Plik "Local" zawiera wartości używane w debugowaniu lokalnym; plik "Cloud" został wdrożony na platformie Azure `ServiceConfiguration.cscfg` jako i zawiera ustawienia dla środowiska serwera. Ten plik można zaktualizować, gdy usługa w chmurze jest uruchomiona na platformie Azure.
+- `ServiceDefinition.csdef` został wdrożony na platformie Azure, aby opisać wymagania usługi w chmurze i jej ról oraz podać ustawienia, które mają zastosowanie do wszystkich wystąpień. Ustawienia można odczytać w czasie wykonywania za pomocą interfejsu API środowiska uruchomieniowego hostingu usług platformy Azure. Ten plik można zaktualizować na platformie Azure tylko wtedy, gdy usługa w chmurze jest zatrzymana.
+- `ServiceConfiguration.Local.cscfg` i `ServiceConfiguration.Cloud.cscfg` podaj wartości ustawień w pliku definicji i określ liczbę wystąpień do uruchomienia dla każdej roli. Plik "Local" zawiera wartości używane w debugowaniu lokalnym; plik "Cloud" został wdrożony na platformie Azure jako `ServiceConfiguration.cscfg` i zawiera ustawienia dla środowiska serwera. Ten plik można zaktualizować, gdy usługa w chmurze jest uruchomiona na platformie Azure.
 
 Ustawienia konfiguracji są zarządzane i modyfikowane w programie Visual Studio przy użyciu stron właściwości dla odpowiedniej roli (kliknij prawym przyciskiem myszy rolę i wybierz pozycję **Właściwości**lub kliknij dwukrotnie rolę). Zmiany mogą być ograniczone do zakresu konfiguracji wybranej na liście rozwijanej **Konfiguracja usługi** . Właściwości ról Sieć Web i proces roboczy są podobne, z wyjątkiem przypadków opisanych w poniższych sekcjach.
 
@@ -33,7 +33,7 @@ Aby uzyskać informacje na temat podstawowych schematów dla plików definicji u
 
 ### <a name="service-configuration"></a>Konfiguracja usługi
 
-Wybiera plik `ServiceConfiguration.*.cscfg` , na który mają wpływ zmiany. Domyślnie istnieją zarówno odmiany lokalne, jak i w chmurze, a także można użyć polecenia **Zarządzaj...** , aby skopiować, zmienić nazwę i usunąć pliki konfiguracji. Te pliki są dodawane do projektu usługi w chmurze i pojawiają się w **Eksplorator rozwiązań**. Zmiany nazw lub usuwania konfiguracji można jednak wykonać tylko z tego formantu.
+Wybiera, do których plików `ServiceConfiguration.*.cscfg` mają wpływ zmiany. Domyślnie istnieją zarówno odmiany lokalne, jak i w chmurze, a także można użyć polecenia **Zarządzaj...** , aby skopiować, zmienić nazwę i usunąć pliki konfiguracji. Te pliki są dodawane do projektu usługi w chmurze i pojawiają się w **Eksplorator rozwiązań**. Zmiany nazw lub usuwania konfiguracji można jednak wykonać tylko z tego formantu.
 
 ### <a name="instances"></a>Wystąpienia
 
@@ -55,7 +55,7 @@ Domyślnie Diagnostyka jest włączona dla roli sieci Web. Projekt usługi w chm
 
 ## <a name="settings-page"></a>Strona Ustawienia
 
-Na stronie **Ustawienia** można dodać ustawienia do konfiguracji jako pary nazwa-wartość. Kod uruchomiony w roli może odczytywać wartości ustawień konfiguracji w czasie wykonywania przy użyciu klas udostępnianych przez [bibliotekę zarządzaną platformy Azure](http://go.microsoft.com/fwlink?LinkID=171026), w tym w ramach metody [GetConfigurationSettingValue](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleenvironment.getconfigurationsettingvalue.aspx) .
+Na stronie **Ustawienia** można dodać ustawienia do konfiguracji jako pary nazwa-wartość. Kod uruchomiony w roli może odczytywać wartości ustawień konfiguracji w czasie wykonywania przy użyciu klas udostępnianych przez [bibliotekę zarządzaną platformy Azure](/previous-versions/azure/dn602775(v=azure.11)), w tym w ramach metody [GetConfigurationSettingValue](/previous-versions/azure/reference/ee772857(v=azure.100)) .
 
 ### <a name="configuring-a-connection-string-for-a-storage-account"></a>Konfigurowanie parametrów połączenia dla konta magazynu
 
@@ -70,7 +70,7 @@ Aby utworzyć parametry połączenia, wybierz opcję **Dodaj ustawienie** i usta
 
 W przypadku nowych lub istniejących parametrów połączenia wybierz pozycję **...** * po prawej stronie pola **wartość** , aby otworzyć okno dialogowe **Tworzenie parametrów połączenia magazynu** :
 
-1. W obszarze **Połącz przy użyciu**wybierz opcję **subskrypcja** , aby wybrać konto magazynu z subskrypcji. Program Visual Studio następnie automatycznie uzyskuje poświadczenia konta magazynu z `.publishsettings` pliku.
+1. W obszarze **Połącz przy użyciu**wybierz opcję **subskrypcja** , aby wybrać konto magazynu z subskrypcji. Program Visual Studio następnie automatycznie uzyskuje poświadczenia konta magazynu z pliku `.publishsettings`.
 1. Wybranie pozycji **Ręczne wprowadzanie poświadczeń** pozwala określić nazwę konta i klucz bezpośrednio przy użyciu informacji z Azure Portal. Aby skopiować klucz konta:
     1. Przejdź do konta magazynu na Azure Portal a następnie wybierz pozycję **Zarządzaj kluczami**.
     1. Aby skopiować klucz konta, przejdź do konta magazynu w Azure Portal, wybierz pozycję **ustawienia > klucze dostępu**, a następnie użyj przycisku kopiowania, aby skopiować podstawowy klucz dostępu do Schowka.
@@ -95,7 +95,7 @@ Korzystając ze strony właściwości **magazynu lokalnego** , można zarezerwow
 
 ## <a name="certificates-page"></a>Strona certyfikaty
 
-Strona właściwości **Certyfikaty** umożliwia dodanie informacji o certyfikatach do konfiguracji usługi. Należy pamiętać, że certyfikaty nie są pakowane z usługą; certyfikaty należy przekazać osobno na platformę Azure za pomocą [Azure Portal](http://portal.azure.com).
+Strona właściwości **Certyfikaty** umożliwia dodanie informacji o certyfikatach do konfiguracji usługi. Należy pamiętać, że certyfikaty nie są pakowane z usługą; certyfikaty należy przekazać osobno na platformę Azure za pomocą [Azure Portal](https://portal.azure.com).
 
 Dodanie tutaj certyfikatu powoduje dodanie informacji o certyfikatach do konfiguracji usługi. Certyfikaty nie są pakowane z usługą; certyfikaty należy przekazać oddzielnie za pomocą Azure Portal.
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
-ms.openlocfilehash: 911a366aa69cf0a45cb030bb83017895500ad32f
-ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
+ms.openlocfilehash: d8da94fc7b4735198eafa33edfe72cba0eb1ea59
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71962978"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911853"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Konfigurowanie diagnostyki dla usług w chmurze i maszyn wirtualnych platformy Azure
 W przypadku konieczności rozwiązywania problemów z usługą w chmurze lub maszyną wirtualną platformy Azure można użyć programu Visual Studio, aby łatwiej skonfigurować Diagnostyka Azure. Diagnostyka przechwytuje dane systemowe i rejestruje dane na maszynach wirtualnych i wystąpieniach maszyn wirtualnych, na których działa usługa w chmurze. Dane diagnostyczne są przesyłane do wybranego konta magazynu. Aby uzyskać więcej informacji na temat rejestrowania diagnostycznego na platformie Azure, zobacz [Włączanie rejestrowania diagnostyki dla Web Apps w Azure App Service](/azure/app-service/web-sites-enable-diagnostic-log).
@@ -28,15 +28,15 @@ Aby skonfigurować Diagnostyka Azure, można użyć jednej z następujących opc
 ## <a name="azure-sdk-26-diagnostics-changes"></a>Zmiany diagnostyczne zestawu Azure SDK 2,6
 Poniższe zmiany dotyczą zestawu Azure SDK 2,6 i nowszych projektów w programie Visual Studio:
 
-* Emulator lokalny obsługuje teraz diagnostykę. Oznacza to, że można zbierać dane diagnostyczne i upewnić się, że aplikacja tworzy odpowiednie ślady podczas tworzenia i testowania w programie Visual Studio. Parametry połączenia `UseDevelopmentStorage=true` włącza zbieranie danych diagnostycznych podczas korzystania z projektu usługi w chmurze w programie Visual Studio przy użyciu emulatora usługi Azure Storage. Wszystkie dane diagnostyczne są zbierane na koncie magazynu magazynu deweloperskiego.
-* Parametry połączenia konta magazynu diagnostyki `Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString` są przechowywane w pliku konfiguracji usługi (cscfg). W zestawie Azure SDK 2,5 konto magazynu diagnostyki jest określone w pliku Diagnostics. wadcfgx.
+* Emulator lokalny obsługuje teraz diagnostykę. Oznacza to, że można zbierać dane diagnostyczne i upewnić się, że aplikacja tworzy odpowiednie ślady podczas tworzenia i testowania w programie Visual Studio. Parametry połączenia `UseDevelopmentStorage=true` włączają zbieranie danych diagnostycznych podczas korzystania z projektu usługi w chmurze w programie Visual Studio przy użyciu emulatora usługi Azure Storage. Wszystkie dane diagnostyczne są zbierane na koncie magazynu magazynu deweloperskiego.
+* Parametry połączenia konta magazynu diagnostyki `Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString` są przechowywane w pliku konfiguracji usługi (. cscfg). W zestawie Azure SDK 2,5 konto magazynu diagnostyki jest określone w pliku Diagnostics. wadcfgx.
 
 Parametry połączenia działają inaczej w niektórych kluczowych sposobach zestawu Azure SDK 2,6 i nowszych, a w przypadku zestawów Azure SDK 2,4 i starszych:
 
 * W zestawie Azure SDK 2,4 i starszych parametry połączenia są używane jako środowisko uruchomieniowe przez wtyczkę diagnostyki w celu uzyskania informacji o koncie magazynu na potrzeby przesyłania dzienników diagnostycznych.
 * W zestawie Azure SDK 2,6 i nowszych program Visual Studio używa parametrów połączenia diagnostyki do konfigurowania rozszerzenia Diagnostyka Azure z odpowiednimi informacjami o koncie magazynu podczas publikowania. Parametry połączenia służą do definiowania różnych kont magazynu dla różnych konfiguracji usługi używanych przez program Visual Studio podczas publikowania. Jednak ponieważ wtyczka diagnostyki nie jest dostępna po zestawie Azure SDK 2,5, plik. cscfg przez samego siebie nie może skonfigurować rozszerzenia diagnostyki. Rozszerzenie należy skonfigurować oddzielnie przy użyciu narzędzi, takich jak Visual Studio lub PowerShell.
-* Aby uprościć proces konfigurowania rozszerzenia diagnostyki przy użyciu programu PowerShell, dane wyjściowe pakietu z programu Visual Studio obejmują plik XML konfiguracji publicznej dla rozszerzenia diagnostyki dla każdej roli. Program Visual Studio używa parametrów połączenia diagnostyki, aby wypełnić informacje o koncie magazynu w konfiguracji publicznej. Pliki konfiguracji publicznej są tworzone w folderze rozszerzenia. Pliki konfiguracji publicznej używają wzorca nazewnictwa PaaSDiagnostics. &lt;role Name @ no__t-1. PubConfig. XML. Wszystkie wdrożenia oparte na programie PowerShell mogą używać tego wzorca do mapowania każdej konfiguracji do roli.
-* [Azure Portal](http://go.microsoft.com/fwlink/p/?LinkID=525040) używa parametrów połączenia w pliku cscfg w celu uzyskania dostępu do danych diagnostycznych. Dane są wyświetlane na karcie **monitorowanie** . Aby skonfigurować usługę do wyświetlania pełnych danych monitorowania w portalu, wymagane są parametry połączenia.
+* Aby uprościć proces konfigurowania rozszerzenia diagnostyki przy użyciu programu PowerShell, dane wyjściowe pakietu z programu Visual Studio obejmują plik XML konfiguracji publicznej dla rozszerzenia diagnostyki dla każdej roli. Program Visual Studio używa parametrów połączenia diagnostyki, aby wypełnić informacje o koncie magazynu w konfiguracji publicznej. Pliki konfiguracji publicznej są tworzone w folderze rozszerzenia. Pliki konfiguracji publicznej używają wzorca nazewnictwa PaaSDiagnostics.&lt;\>nazwy roli. PubConfig. XML. Wszystkie wdrożenia oparte na programie PowerShell mogą używać tego wzorca do mapowania każdej konfiguracji do roli.
+* [Azure Portal](https://portal.azure.com) używa parametrów połączenia w pliku cscfg w celu uzyskania dostępu do danych diagnostycznych. Dane są wyświetlane na karcie **monitorowanie** . Aby skonfigurować usługę do wyświetlania pełnych danych monitorowania w portalu, wymagane są parametry połączenia.
 
 ## <a name="migrate-projects-to-azure-sdk-26-and-later"></a>Migrowanie projektów do zestawu Azure SDK 2,6 i nowszego
 W przypadku migrowania z zestawu Azure SDK 2,5 do zestawu Azure SDK 2,6 lub nowszego, jeśli w pliku wadcfgx określono konto magazynu diagnostyki, konto magazynu pozostaje w tym pliku. Aby skorzystać z elastyczności korzystania z różnych kont magazynu dla różnych konfiguracji magazynu, należy ręcznie dodać parametry połączenia do projektu. W przypadku migrowania projektu z zestawu Azure SDK 2,4 lub starszego do zestawu Azure SDK 2,6 parametry połączenia diagnostyki są zachowywane. Należy jednak pamiętać o zmianach sposobu traktowania parametrów połączenia w zestawie Azure SDK 2,6, opisanym w poprzedniej sekcji.
@@ -49,9 +49,9 @@ W przypadku migrowania z zestawu Azure SDK 2,5 do zestawu Azure SDK 2,6 lub nows
 ### <a name="what-does-the-update-development-storage-connection-strings-check-box-do"></a>Co to jest "Aktualizacja parametrów połączenia magazynu programistycznego"... " Zaznacz pole wyboru?
 **Parametry połączenia magazynu deweloperskiego aktualizacji dla celów diagnostycznych i buforowania przy użyciu poświadczeń konta magazynu Microsoft Azure podczas publikowania w Microsoft Azure** pole wyboru jest wygodnym sposobem aktualizacji dowolnego połączenia z kontem magazynu ciągi z kontem usługi Azure Storage, które określisz podczas publikowania.
 
-Na przykład jeśli zaznaczysz to pole wyboru, a parametry połączenia diagnostyki określają `UseDevelopmentStorage=true`, podczas publikowania projektu na platformie Azure program Visual Studio automatycznie aktualizuje parametry połączenia diagnostyki przy użyciu konta magazynu określonego w Kreator publikacji. Jeśli jednak prawdziwe konto magazynu zostało określone jako parametry połączenia diagnostyki, to konto jest używane zamiast tego.
+Na przykład jeśli zaznaczysz to pole wyboru, a parametry połączenia diagnostyki będą określać `UseDevelopmentStorage=true`, podczas publikowania projektu na platformie Azure program Visual Studio automatycznie aktualizuje parametry połączenia diagnostyki przy użyciu konta magazynu określonego w Kreator publikacji. Jeśli jednak prawdziwe konto magazynu zostało określone jako parametry połączenia diagnostyki, to konto jest używane zamiast tego.
 
-## <a name="diagnostics-functionality-differences-in-azure-sdk-24-and-earlier-vs-azure-sdk-25-and-later"></a>Różnice między funkcjami diagnostyki w zestawie Azure SDK 2,4 i wcześniejszymi a Zestaw Azure SDK 2,5 i nowsze
+## <a name="diagnostics-functionality-differences-in-azure-sdk-24-and-earlier-vs-azure-sdk-25-and-later"></a>Różnice między funkcjami diagnostyki w zestawie Azure SDK 2,4 i wcześniejszymi a zestawem Azure SDK 2,5 lub nowszym
 Jeśli uaktualniasz projekt z zestawu Azure SDK 2,4 i wcześniejszego do zestawu Azure SDK 2,5 lub nowszego, pamiętaj o następujących różnicach w funkcjonalności diagnostyki:
 
 * **Interfejsy API konfiguracji są przestarzałe**. Programistyczna konfiguracja diagnostyki jest dostępna w zestawie Azure SDK 2,4 i starszych wersjach, ale jest przestarzała w zestawie Azure SDK 2,5 lub nowszym. Jeśli konfiguracja diagnostyki jest obecnie zdefiniowana w kodzie, należy ponownie skonfigurować te ustawienia od podstaw w migrowanym projekcie na potrzeby diagnostyki, aby kontynuować pracę. Plik konfiguracji diagnostyki dla zestawu Azure SDK 2,4 to Diagnostics. wadcfg. Plik konfiguracji diagnostyki dla zestawu Azure SDK 2,5 i nowszego to Diagnostics. wadcfgx.
@@ -67,7 +67,7 @@ W programie Visual Studio można zbierać dane diagnostyczne dla ról działają
 ### <a name="to-turn-on-diagnostics-in-visual-studio-before-deployment"></a>Aby włączyć diagnostykę w programie Visual Studio przed wdrożeniem
 
 1. W menu skrótów dla roli wybierz pozycję **Właściwości**. W oknie dialogowym **Właściwości** roli wybierz kartę **Konfiguracja** .
-2. W **diagnostyki** sekcji, upewnij się, że **Włącz diagnostykę** pole wyboru jest zaznaczone.
+2. W sekcji **Diagnostyka** upewnij się, że zaznaczone jest pole wyboru **Włącz diagnostykę** .
 
     ![Dostęp do opcji Włącz diagnostykę](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796660.png)
 3. Aby określić konto magazynu dla danych diagnostycznych, wybierz przycisk wielokropka (...).
@@ -77,10 +77,10 @@ W programie Visual Studio można zbierać dane diagnostyczne dla ról działają
 
     ![Konto magazynu — okno dialogowe](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796662.png)
 
-   * W przypadku wybrania **Microsoft Azure emulatora magazynu**w parametrach połączenia zostanie ustawiona wartość `UseDevelopmentStorage=true`.
+   * W przypadku wybrania **Microsoft Azure emulatora magazynu**parametry połączenia są ustawiane na `UseDevelopmentStorage=true`.
    * Jeśli wybierzesz **subskrypcję**, możesz wybrać subskrypcję platformy Azure, której chcesz użyć, a następnie wprowadzić nazwę konta. Aby zarządzać subskrypcjami platformy Azure, wybierz pozycję **Zarządzaj kontami**.
    * W przypadku wybrania **ręcznie wprowadzonych poświadczeń**wprowadź nazwę i klucz konta platformy Azure, którego chcesz użyć.
-5. Aby wyświetlić okno dialogowe **Konfiguracja diagnostyki** , wybierz pozycję **Konfiguruj**. Każda karta reprezentuje źródło danych diagnostycznych, które można zbierać, z wyjątkiem katalogów **ogólnych** i **dzienników**. Domyślna karta **Ogólne** oferuje następujące opcje zbierania danych diagnostycznych: **Tylko błędy**, **wszystkie informacje**i **Plan niestandardowy**. Opcja **tylko błędy** domyślne używa najmniejszej ilości miejsca w magazynie, ponieważ nie przesyła ostrzeżeń ani śledzenia komunikatów. Opcja **wszystkie informacje** transferuje najwięcej informacji, korzysta z większości magazynu i dlatego jest najbardziej kosztowną opcją.
+5. Aby wyświetlić okno dialogowe **Konfiguracja diagnostyki** , wybierz pozycję **Konfiguruj**. Każda karta reprezentuje źródło danych diagnostycznych, które można zbierać, z wyjątkiem katalogów **ogólnych** i **dzienników**. Domyślna karta **Ogólne** oferuje następujące opcje zbierania danych diagnostycznych: **tylko błędy**, **wszystkie informacje**i **plany niestandardowe**. Opcja **tylko błędy** domyślne używa najmniejszej ilości miejsca w magazynie, ponieważ nie przesyła ostrzeżeń ani śledzenia komunikatów. Opcja **wszystkie informacje** transferuje najwięcej informacji, korzysta z większości magazynu i dlatego jest najbardziej kosztowną opcją.
 
    > [!NOTE]
    > Minimalny obsługiwany rozmiar dla przydziału dysku w MB to 50 MB, a rozmiar domyślny to 4 GB. Jeśli jednak zbierasz zrzuty pamięci, zwiększ ten poziom do wyższej wartości, na przykład 10 GB.
@@ -89,7 +89,7 @@ W programie Visual Studio można zbierać dane diagnostyczne dla ról działają
     ![Włącz diagnostykę i konfigurację platformy Azure](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758144.png)
 6. Na potrzeby tego przykładu wybierz opcję **Plan niestandardowy** , aby można było dostosować zebrane dane.
 7. W polu **limit przydziału dysku w MB** można ustawić ilość miejsca przydzielonego na koncie magazynu na potrzeby danych diagnostycznych. Można zmienić lub zaakceptować wartość domyślną.
-8. Na każdej karcie danych diagnostycznych, które mają być zbierane, zaznacz pole wyboru **Włącz Transfer \<log Type @ no__t-2** . Jeśli na przykład chcesz zbierać Dzienniki aplikacji, na karcie **Dzienniki aplikacji** zaznacz pole wyboru **Włącz transfer dzienników aplikacji** . Określ również inne informacje, które są wymagane przez poszczególne typy danych diagnostycznych. Informacje o konfiguracji poszczególnych kart znajdują się w sekcji **Konfigurowanie źródeł danych diagnostycznych** w dalszej części tego artykułu.
+8. Na każdej karcie danych diagnostycznych, które mają być zbierane, zaznacz pole wyboru **Włącz Transfer \<typ dziennika\>** . Jeśli na przykład chcesz zbierać Dzienniki aplikacji, na karcie **Dzienniki aplikacji** zaznacz pole wyboru **Włącz transfer dzienników aplikacji** . Określ również inne informacje, które są wymagane przez poszczególne typy danych diagnostycznych. Informacje o konfiguracji poszczególnych kart znajdują się w sekcji **Konfigurowanie źródeł danych diagnostycznych** w dalszej części tego artykułu.
 9. Po włączeniu zbierania wszystkich danych diagnostycznych wybierz pozycję **OK**.
 10. Uruchom projekt usługi w chmurze platformy Azure w programie Visual Studio w zwykły sposób. Podczas korzystania z aplikacji informacje o dziennikach, które zostały włączone, są zapisywane na określonym koncie usługi Azure Storage.
 
@@ -108,7 +108,7 @@ W programie Visual Studio można zbierać dane diagnostyczne dotyczące maszyn w
     ![Instalowanie rozszerzenia maszyny wirtualnej platformy Azure](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC766024.png)
 
     > [!NOTE]
-   > Inne rozszerzenia diagnostyki są dostępne dla maszyn wirtualnych. Aby uzyskać więcej informacji, zobacz [rozszerzenia i funkcje maszyny wirtualnej dla systemu Windows](https://docs.microsoft.com/azure/virtual-machines/windows/extensions-features).
+   > Inne rozszerzenia diagnostyki są dostępne dla maszyn wirtualnych. Aby uzyskać więcej informacji, zobacz [rozszerzenia i funkcje maszyny wirtualnej dla systemu Windows](/azure/virtual-machines/windows/extensions-features).
    >
    >
 5. Aby dodać rozszerzenie i wyświetlić okno dialogowe **konfiguracji diagnostyki** , wybierz pozycję **Dodaj**.
@@ -118,10 +118,10 @@ W programie Visual Studio można zbierać dane diagnostyczne dotyczące maszyn w
 
     ![Włącz diagnostykę i konfigurację platformy Azure](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758144.png)
 
-    Domyślna karta, **Ogólne**, oferuje następujące opcje zbierania danych diagnostycznych: **Tylko błędy**, **wszystkie informacje**i **Plan niestandardowy**. Opcja domyślna, **tylko błędy**, wymaga co najmniej magazynu, ponieważ nie przesyła ostrzeżeń ani śledzenia komunikatów. Opcja **wszystkie informacje** transferuje najwięcej informacji i jest z tego powodu najbardziej kosztowną opcją w obszarze magazyn.
+    Karta domyślna, **Ogólne**, oferuje następujące opcje zbierania danych diagnostycznych: **tylko błędy**, **wszystkie informacje**i **plany niestandardowe**. Opcja domyślna, **tylko błędy**, wymaga co najmniej magazynu, ponieważ nie przesyła ostrzeżeń ani śledzenia komunikatów. Opcja **wszystkie informacje** transferuje najwięcej informacji i jest z tego powodu najbardziej kosztowną opcją w obszarze magazyn.
 7. Na potrzeby tego przykładu wybierz opcję **Plan niestandardowy** , aby można było dostosować zbierane dane.
 8. **Limit przydziału dysku w MB** określa, ile miejsca chcesz przydzielić na koncie magazynu na potrzeby danych diagnostycznych. Jeśli chcesz, możesz zmienić wartość domyślną.
-9. Na każdej karcie danych diagnostycznych, które mają być zbierane, zaznacz pole wyboru **Włącz Transfer \<log Type @ no__t-2** .
+9. Na każdej karcie danych diagnostycznych, które mają być zbierane, zaznacz pole wyboru **Włącz Transfer \<typ dziennika\>** .
 
     Jeśli na przykład chcesz zbierać Dzienniki aplikacji, zaznacz pole wyboru **Włącz transfer dzienników aplikacji** na karcie **Dzienniki aplikacji** . Określ również inne informacje, które są wymagane dla każdego typu danych diagnostycznych. Informacje o konfiguracji poszczególnych kart znajdują się w sekcji **Konfigurowanie źródeł danych diagnostycznych** w dalszej części tego artykułu.
 10. Po włączeniu zbierania wszystkich danych diagnostycznych wybierz pozycję **OK**.
@@ -144,7 +144,7 @@ Aby przechwycić dzienniki zdarzeń systemu Windows, zaznacz pole wyboru **Włą
 
 ![Dzienniki zdarzeń](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796664.png)
 
-Jeśli korzystasz z zestawu Azure SDK 2,6 lub nowszego i chcesz określić niestandardowe źródło danych, wprowadź je w polu tekstowym **\<Data Source Name @ no__t-2** , a następnie wybierz pozycję **Dodaj**. Źródło danych jest dodawane do pliku Diagnostics. cfcfg.
+Jeśli używasz zestawu Azure SDK 2,6 lub nowszego i chcesz określić niestandardowe źródło danych, wprowadź je w polu tekstowym **\<nazwa źródła danych\>** , a następnie wybierz pozycję **Dodaj**. Źródło danych jest dodawane do pliku Diagnostics. cfcfg.
 
 Jeśli korzystasz z zestawu Azure SDK 2,5 i chcesz określić niestandardowe źródło danych, możesz dodać je do sekcji `WindowsEventLog` pliku Diagnostics. wadcfgx, jak w poniższym przykładzie:
 
@@ -194,7 +194,7 @@ Aktualnie śledzone procesy są wymienione na następnym zrzucie ekranu. Zaznacz
 
 ![Zrzuty awaryjne](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC766026.png)
 
-Aby uzyskać więcej informacji, zobacz [przejmowanie kontroli nad rejestrowaniem i śledzeniem w Microsoft Azure](https://msdn.microsoft.com/magazine/ff714589.aspx) i [Microsoft Diagnostyka Azure części 4: Niestandardowe składniki rejestrowania i Diagnostyka Azure 1,3 zmiany @ no__t-0.
+Aby uzyskać więcej informacji, zobacz [przejmowanie kontroli nad rejestrowaniem i śledzeniem w Microsoft Azure](https://msdn.microsoft.com/magazine/ff714589.aspx) i [Diagnostyka Microsoft Azure część 4: niestandardowe składniki rejestrowania i zmiany Diagnostyka Azure 1,3](https://www.red-gate.com/simple-talk/cloud/platform-as-a-service/microsoft-azure-diagnostics-part-4-custom-logging-components-and-azure-diagnostics-1.3-changes/).
 
 ## <a name="view-the-diagnostics-data"></a>Wyświetlanie danych diagnostycznych
 Po zebraniu danych diagnostycznych dla usługi w chmurze lub maszyny wirtualnej można ją wyświetlić.
@@ -216,7 +216,7 @@ Po zebraniu danych diagnostycznych dla usługi w chmurze lub maszyny wirtualnej 
     W programie Cloud Explorer lub Eksplorator serwera Otwórz konto magazynu skojarzone ze wdrożeniem.
 3. Otwórz tabele diagnostyki w przeglądarce tabel, a następnie przejrzyj zebrane dane. W przypadku dzienników usług IIS i dzienników niestandardowych można otworzyć kontener obiektów BLOB. W poniższej tabeli wymieniono tabele lub kontenery obiektów blob zawierające dane dla różnych plików dziennika. Oprócz danych dla tego pliku dziennika, wpisy tabeli zawierają **EventTickCount**, **DeploymentId**, **role**i **RoleInstance**, aby ułatwić identyfikację, która maszyna wirtualna i rola wygenerowała dane oraz kiedy.
 
-   | Dane diagnostyczne | Opis | Location |
+   | Dane diagnostyczne | Opis | Lokalizacja |
    | --- | --- | --- |
    | Dzienniki aplikacji |Rejestruje kod generowany przez wywołanie metod klasy **System. Diagnostics. Trace** . |WADLogsTable |
    | Dzienniki zdarzeń |Dane z dzienników zdarzeń systemu Windows na maszynach wirtualnych. System Windows przechowuje informacje w tych dziennikach, ale aplikacje i usługi również używają dzienników do raportowania błędów lub informacji dziennika. |WADWindowsEventLogsTable |
@@ -256,9 +256,9 @@ Jeśli badasz problem z usługą w chmurze, która jest już uruchomiona, możes
     W przypadku zmiany zbierania danych w Eksplorator serwera zmiany będą obowiązywać do momentu całkowitego wdrożenia usługi w chmurze. Jeśli używasz domyślnych ustawień publikowania, zmiany nie są zastępowane. Domyślnym ustawieniem publikowania jest Aktualizowanie istniejącego wdrożenia, a nie wykonanie pełnego ponownego wdrożenia. Aby upewnić się, że ustawienia są jasne w czasie wdrażania, przejdź do karty **Ustawienia zaawansowane** w Kreatorze publikacji, a następnie wyczyść pole wyboru **Aktualizacja wdrożenia** . Po ponownym wdrożeniu za pomocą tego pola wyboru ustawienia są przywracane do tych w pliku. wadcfgx (lub. wadcfg), jak określono za pomocą edytora **Właściwości** dla roli. Jeśli zaktualizujesz wdrożenie, platforma Azure zachowuje wcześniejsze ustawienia.
 
 ## <a name="troubleshoot-azure-cloud-service-issues"></a>Rozwiązywanie problemów z usługą w chmurze platformy Azure
-Jeśli wystąpią problemy z projektami usług w chmurze, takimi jak rola, która jest zablokowana w stanie "zajęty", wielokrotnie odtwarza lub zgłasza wewnętrzny błąd serwera, istnieją narzędzia i techniki, których można użyć do diagnozowania i rozwiązywania problemu. Aby zapoznać się z konkretnymi przykładami typowych problemów i rozwiązań oraz zapoznać się z omówieniem pojęć i narzędzi, których można użyć do diagnozowania i rozwiązywania tych błędów, zobacz [dane diagnostyczne usługi Azure PaaS COMPUTE](http://blogs.msdn.com/b/kwill/archive/2013/08/09/windows-azure-paas-compute-diagnostics-data.aspx).
+Jeśli wystąpią problemy z projektami usług w chmurze, takimi jak rola, która jest zablokowana w stanie "zajęty", wielokrotnie odtwarza lub zgłasza wewnętrzny błąd serwera, istnieją narzędzia i techniki, których można użyć do diagnozowania i rozwiązywania problemu. Aby zapoznać się z konkretnymi przykładami typowych problemów i rozwiązań oraz zapoznać się z omówieniem pojęć i narzędzi, których można użyć do diagnozowania i rozwiązywania tych błędów, zobacz [dane diagnostyczne usługi Azure PaaS COMPUTE](https://blogs.msdn.microsoft.com/kwill/2013/08/09/windows-azure-paas-compute-diagnostics-data/).
 
-## <a name="q--a"></a>Pytania i odpowiedzi
+## <a name="q--a"></a>p & A
 **Jaki jest rozmiar buforu i jak jest on duży?**
 
 W każdym wystąpieniu maszyny wirtualnej limity przydziału ograniczają ilość danych diagnostycznych, które można przechowywać w lokalnym systemie plików. Ponadto należy określić rozmiar buforu dla każdego typu danych diagnostycznych, które są dostępne. Ten rozmiar buforu działa jak indywidualny przydział dla tego typu danych. Aby określić całkowity limit przydziału i ilość pamięci, która pozostała, zobacz dolną część okna dialogowego dla typu danych diagnostycznych. Jeśli określisz większą liczbę buforów lub więcej typów danych, zbliżasz się do ogólnego limitu przydziału. Całkowity limit przydziału można zmienić, modyfikując plik konfiguracyjny Diagnostics. wadcfg lub. wadcfgx. Dane diagnostyczne są przechowywane w tym samym systemie plików co dane aplikacji. Jeśli aplikacja używa dużej ilości miejsca na dysku, nie należy zwiększać całkowitego limitu przydziału diagnostyki.
@@ -271,9 +271,9 @@ Okres transferu to czas, jaki upływa między przechwytywaniem danych. Po każdy
 
 Sygnatury czasowe znajdują się w lokalnej strefie czasowej centrum danych, które hostuje usługę w chmurze. Używane są następujące trzy kolumny sygnatur czasowych w tabelach dziennika:
 
-* **PreciseTimeStamp**: Sygnatura czasowa ETW zdarzenia. Oznacza to, że czas rejestrowania zdarzenia przez klienta.
-* **SYGNATURA CZASOWA**: Wartość **PreciseTimeStamp** zaokrąglona w dół do granicy częstotliwości przekazywania. Na przykład jeśli częstotliwość przekazywania wynosi 5 minut, a czas zdarzenia 00:17:12, SYGNATURa czasowa to 00:15:00.
-* **Sygnatura czasowa**: Sygnatura czasowa, w której jednostka została utworzona w tabeli platformy Azure.
+* **PreciseTimeStamp**: sygnatura czasowa ETW zdarzenia. Oznacza to, że czas rejestrowania zdarzenia przez klienta.
+* **Sygnatura czasowa**: wartość **PreciseTimeStamp** zaokrąglana w dół do granicy częstotliwości przekazywania. Na przykład jeśli częstotliwość przekazywania wynosi 5 minut, a czas zdarzenia 00:17:12, SYGNATURa czasowa to 00:15:00.
+* **Timestamp**: sygnatura czasowa, w której jednostka została utworzona w tabeli platformy Azure.
 
 **Jak mogę zarządzać kosztami podczas zbierania informacji diagnostycznych?**
 
@@ -283,7 +283,7 @@ Ustawienia domyślne (**poziom dziennika** ustawiony na **błąd**i **okres tran
 
 Domyślnie usługi IIS nie zbierają dzienników żądań zakończonych niepowodzeniem. Można skonfigurować usługi IIS do zbierania dzienników żądań zakończonych niepowodzeniem, edytując plik Web. config dla roli sieci Web.
 
-@no__t — 0I'm nie pobiera informacji o śledzeniu z metod RoleEntryPoint, takich jak OnStart. Co jest nieprawidłowe? **
+**Nie otrzymuję informacji śledzenia z metod RoleEntryPoint, takich jak OnStart. Co jest nie tak?**
 
 Metody **RoleEntryPoint** są wywoływane w kontekście WAIISHost. exe, a nie w usługach IIS. Informacje o konfiguracji w pliku Web. config, które normalnie włączają śledzenie, nie są stosowane. Aby rozwiązać ten problem, Dodaj plik. config do projektu roli sieci Web i Nadaj plikowi nazwę zgodną z zestawem danych wyjściowych zawierającym kod **RoleEntryPoint** . W domyślnym projekcie roli sieci Web nazwa pliku. config powinna być WAIISHost. exe. config. Dodaj następujące wiersze do tego pliku:
 

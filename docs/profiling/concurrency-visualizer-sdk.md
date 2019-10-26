@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33b8f0215e09dd43c265c7eb8ba08613132fabbc
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: cb48733f84dcf484d2c2d7ffb18e838faae07ab0
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870306"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911195"
 ---
 # <a name="concurrency-visualizer-sdk"></a>Concurrency Visualizer SDK
-Możesz instrumentować kod źródłowy przy użyciu zestawu SDK wizualizatora współbieżności, aby wyświetlić dodatkowe informacje w wizualizatorze współbieżności. Możesz skojarzyć dodatkowe dane z fazami i zdarzeniami w kodzie. Te dodatkowe wizualizacje są znane jako *znaczniki*.  Aby zapoznać się z przewodnikiem wprowadzającym, zobacz [wprowadzenie do zestawu SDK wizualizatora współbieżności](http://go.microsoft.com/fwlink/?LinkId=235405).
+Możesz instrumentować kod źródłowy przy użyciu zestawu SDK wizualizatora współbieżności, aby wyświetlić dodatkowe informacje w wizualizatorze współbieżności. Możesz skojarzyć dodatkowe dane z fazami i zdarzeniami w kodzie. Te dodatkowe wizualizacje są znane jako *znaczniki*.  Aby zapoznać się z przewodnikiem wprowadzającym, zobacz [wprowadzenie do zestawu SDK wizualizatora współbieżności](https://blogs.msdn.microsoft.com/visualizeparallel/2011/10/17/introducing-the-concurrency-visualizer-sdk/).
 
 ## <a name="properties"></a>Właściwości
  Flagi, zakresy i komunikaty mają dwie właściwości: Category i ważności. W oknie dialogowym [Ustawienia zaawansowane](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) można użyć tych właściwości do filtrowania zestawu znaczników, które są wyświetlane. Ponadto te właściwości wpływają na wizualną reprezentację znaczników. Na przykład rozmiar flag jest używany do reprezentowania znaczenia. Dodatkowo kolor jest używany do wskazania kategorii.
@@ -27,7 +27,7 @@ Możesz instrumentować kod źródłowy przy użyciu zestawu SDK wizualizatora w
  Wizualizator współbieżności uwidacznia domyślnego dostawcę, którego można użyć do generowania znaczników. Dostawca jest już zarejestrowany razem ze Wizualizatorem współbieżności i nie trzeba wykonywać żadnych innych czynności, aby znaczniki były wyświetlane w interfejsie użytkownika.
 
 ### <a name="c-and-visual-basic"></a>C# i Visual Basic
- W C#języku Visual Basic i innym zarządzanym kodzie Użyj domyślnego dostawcy, wywołując metody w klasie Markers [](/previous-versions/hh694099(v=vs.140)) . Udostępnia cztery metody generowania znaczników: [WriteFlag](/previous-versions/hh694185%28v%3dvs.140%29), [EnterSpan](/previous-versions/hh694205(v=vs.140)), [WriteMessage](/previous-versions/hh694161(v=vs.140))i [WriteAlert](/previous-versions/hh694180(v=vs.140)). Dla tych funkcji istnieje wiele przeciążeń, w zależności od tego, czy chcesz użyć wartości domyślnych dla właściwości.  Najprostszy Przeciążenie pobiera tylko parametr ciągu, który określa opis zdarzenia. Opis jest wyświetlany w raportach wizualizatora współbieżności.
+ W C#języku Visual Basic i innym zarządzanym kodzie Użyj domyślnego dostawcy, wywołując metody w klasie [Markers](/previous-versions/hh694099(v=vs.140)) . Udostępnia cztery metody generowania znaczników: [WriteFlag](/previous-versions/hh694185%28v%3dvs.140%29), [EnterSpan](/previous-versions/hh694205(v=vs.140)), [WriteMessage](/previous-versions/hh694161(v=vs.140))i [WriteAlert](/previous-versions/hh694180(v=vs.140)). Dla tych funkcji istnieje wiele przeciążeń, w zależności od tego, czy chcesz użyć wartości domyślnych dla właściwości.  Najprostszy Przeciążenie pobiera tylko parametr ciągu, który określa opis zdarzenia. Opis jest wyświetlany w raportach wizualizatora współbieżności.
 
 ##### <a name="to-add-sdk-support-to-a-c-or-visual-basic-project"></a>Aby dodać obsługę zestawu SDK do C# projektu lub Visual Basic
 
@@ -46,7 +46,7 @@ Możesz instrumentować kod źródłowy przy użyciu zestawu SDK wizualizatora w
     ```
 
 ### <a name="c"></a>C++
- W C++programie Utwórz obiekt [klasy marker_series](../profiling/marker-series-class.md) i użyj go do wywołania funkcji.  Klasa uwidacznia trzy funkcje do generowania znaczników, Metoda [marker_series:: write_flag](../profiling/marker-series-write-flag-method.md), Metoda [marker_series:: write_message](../profiling/marker-series-write-message-method.md)oraz [Metoda marker_series:: write_alert.](../profiling/marker-series-write-alert-method.md) `marker_series`
+ W C++programie Utwórz obiekt [klasy marker_series](../profiling/marker-series-class.md) i użyj go do wywołania funkcji.  Klasa `marker_series` uwidacznia trzy funkcje do generowania znaczników, Metoda [marker_series:: write_flag](../profiling/marker-series-write-flag-method.md), Metoda [marker_series:: write_message](../profiling/marker-series-write-message-method.md)oraz [Metoda marker_series:: write_alert](../profiling/marker-series-write-alert-method.md).
 
 ##### <a name="to-add-sdk-support-to-a-c-or-c-project"></a>Aby dodać obsługę zestawu SDK do C++ projektu C lub
 
@@ -54,7 +54,7 @@ Możesz instrumentować kod źródłowy przy użyciu zestawu SDK wizualizatora w
 
 2. Wybierz projekt, do którego chcesz uzyskać dostęp do zestawu SDK, a następnie wybierz przycisk **Dodaj zestaw SDK do wybranego projektu** .
 
-3. Dla C++elementu, `cvmarkersobj.h`include. Dla języka C należy `cvmarkers.h`uwzględnić.
+3. W C++przypadku programu uwzględnij`cvmarkersobj.h`. Dla języka C Uwzględnij `cvmarkers.h`.
 
 4. Dodaj instrukcję using do kodu.
 
@@ -62,7 +62,7 @@ Możesz instrumentować kod źródłowy przy użyciu zestawu SDK wizualizatora w
     using namespace Concurrency::diagnostic;
     ```
 
-5. Utwórz obiekt i przekaż go `span` do konstruktora. `marker_series`
+5. Utwórz obiekt `marker_series` i przekaż go do konstruktora `span`.
 
     ```C++
 
@@ -82,7 +82,7 @@ Możesz instrumentować kod źródłowy przy użyciu zestawu SDK wizualizatora w
 
 #### <a name="to-use-a-new-marker-provider-in-a-c-or-c-project"></a>Aby użyć nowego dostawcy znaczników w projekcie C++ lub C
 
-1. Użyj funkcji `CvInitProvider` , aby zainicjować PCV_PROVIDER.  Konstruktor przyjmuje identyfikatory GUID * i PCV_PROVIDER\*.
+1. Użyj funkcji `CvInitProvider`, aby zainicjować PCV_PROVIDER.  Konstruktor przyjmuje identyfikatory GUID * i PCV_PROVIDER\*.
 
 2. Aby zarejestrować dostawcę, Otwórz okno dialogowe [Ustawienia zaawansowane](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) .  Wybierz kartę **znaczniki** , a następnie wybierz przycisk **Dodaj nowy dostawca** . W tym oknie dialogowym wprowadź identyfikator GUID, który został użyty do utworzenia dostawcy i opis dostawcy.
 
@@ -102,7 +102,7 @@ Możesz instrumentować kod źródłowy przy użyciu zestawu SDK wizualizatora w
 
 #### <a name="to-use-a-marker-series-in-a-c-project"></a>Aby użyć serii znaczników w C++ projekcie
 
-1. Tworzy obiekt `marker_series`.  Można generować zdarzenia z tej nowej serii.
+1. Utwórz obiekt `marker_series`.  Można generować zdarzenia z tej nowej serii.
 
     ```scr
     marker_series series;
@@ -111,7 +111,7 @@ Możesz instrumentować kod źródłowy przy użyciu zestawu SDK wizualizatora w
 
 #### <a name="to-use-a-marker-series-in-a-c-project"></a>Aby użyć serii znaczników w projekcie C
 
-1. Użyj funkcji `CvCreateMarkerSeries` , aby utworzyć PCV_MARKERSERIES.
+1. Użyj funkcji `CvCreateMarkerSeries`, aby utworzyć PCV_MARKERSERIES.
 
     ```C++
     PCV_MARKERSERIES series;

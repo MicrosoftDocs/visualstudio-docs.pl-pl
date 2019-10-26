@@ -1,5 +1,5 @@
 ---
-title: Debugowanie kodu GPU | Dokumentacja firmy Microsoft
+title: Debugowanie kodu GPU | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,73 +13,73 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea3286c2d4ae27afc7422700bd4f745ab28520fa
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: cec341df3cfe81f339322f5e7c584151d9030490
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63399441"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911573"
 ---
 # <a name="debugging-gpu-code"></a>Debugowanie kodu GPU
-Można debugować kodu C++, który działa na jednostka przetwarzania grafiki (GPU). Obsługa w programie Visual Studio do debugowania GPU obejmuje wykrywania wyścigu, uruchamianie procesów i dołączanie do, a Integracja debugowania systemu windows.
+Można debugować C++ kod, który jest uruchomiony w procesorze GPU. Obsługa debugowania GPU w programie Visual Studio obejmuje wykrywanie wyścigu, uruchamianie procesów i ich dołączanie oraz integrację z oknami debugowania.
 
 ## <a name="supported-platforms"></a>Obsługiwane platformy
- Debugowanie jest obsługiwane w [!INCLUDE[win7](../debugger/includes/win7_md.md)], [!INCLUDE[win8](../debugger/includes/win8_md.md)], [!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)], i [!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)]. Do debugowania na emulatorze oprogramowania [!INCLUDE[win8](../debugger/includes/win8_md.md)], lub [!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)] jest wymagana. Do debugowania na sprzęcie, należy zainstalować sterowniki dla karty graficznej. Nie wszyscy dostawcy sprzętu zaimplementuj wszystkie funkcje debugera. W dokumentacji dostawcy ograniczenia.
+ Debugowanie jest obsługiwane w [!INCLUDE[win7](../debugger/includes/win7_md.md)], [!INCLUDE[win8](../debugger/includes/win8_md.md)], [!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)]i [!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)]. Na potrzeby debugowania na emulatorze oprogramowania jest wymagane [!INCLUDE[win8](../debugger/includes/win8_md.md)]lub [!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)]. Na potrzeby debugowania sprzętu należy zainstalować sterowniki karty graficznej. Nie wszyscy dostawcy sprzętu implementują wszystkie funkcje debugera. Zapoznaj się z dokumentacją dostawcy, aby uzyskać ograniczenia.
 
 > [!NOTE]
-> Niezależnych dostawców sprzętu, którzy mają być obsługiwane debugowania GPU w programie Visual Studio, należy utworzyć bibliotekę DLL, która implementuje interfejs VSD3DDebug i elementy docelowe swoje własne sterowniki.
+> Niezależni dostawcy sprzętu, którzy chcą obsługiwać debugowanie procesora GPU w programie Visual Studio, muszą utworzyć bibliotekę DLL, która implementuje interfejs VSD3DDebug i jest przeznaczony dla własnych sterowników.
 
-## <a name="configuring-gpu-debugging"></a>Konfigurowanie debugowania GPU
- Debuger nie można przerwać w kodzie procesora CPU i procesora GPU kodu w tym samym wykonywanie aplikacji. Domyślnie debuger przerywa na kodzie procesora CPU. Debugowanie kodu GPU, użyj jednej z tych dwóch kroków:
+## <a name="configuring-gpu-debugging"></a>Konfigurowanie debugowania procesora GPU
+ Debuger nie może przerwać obu kodów procesora i procesora GPU w tym samym wykonaniu aplikacji. Domyślnie debuger dzieli się na kod procesora CPU. Aby debugować kod procesora GPU, użyj jednego z następujących dwóch kroków:
 
-- W **debugowania typu** listy na **standardowa** narzędzi, wybierz **tylko GPU**.
+- Na liście **Typ debugowania** na pasku narzędzi **Standardowy** wybierz pozycję **tylko procesor GPU**.
 
-- W **Eksploratora rozwiązań**, w menu skrótów dla projektu, wybierz **właściwości**. W **stron właściwości** okno dialogowe, wybierz opcję **debugowanie**, a następnie wybierz pozycję **tylko GPU** w **typ debugera** listy.
+- W **Eksplorator rozwiązań**, w menu skrótów dla projektu, wybierz **Właściwości**. W oknie dialogowym **strony właściwości** wybierz pozycję **debugowanie**, a następnie na liście **Typ debugera** wybierz pozycję **GPU** .
 
 ## <a name="launching-and-attaching-to-applications"></a>Uruchamianie i dołączanie do aplikacji
- Za pomocą poleceń debugowania programu Visual Studio uruchamianie i zatrzymywanie debugowania GPU. Aby uzyskać więcej informacji, zobacz [nawigowanie po kodzie za pomocą debugera za](../debugger/navigating-through-code-with-the-debugger.md). Można również dołączyć debuger procesora GPU do uruchomionego procesu, ale tylko wtedy, jeśli ten proces wykonuje kodu GPU. Aby uzyskać więcej informacji, zobacz [dołączenia do uruchamiania procesów](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
+ Możesz użyć poleceń debugowania programu Visual Studio, aby uruchomić i zatrzymać debugowanie procesora GPU. Aby uzyskać więcej informacji, zobacz [nawigowanie po kodzie za pomocą debugera](../debugger/navigating-through-code-with-the-debugger.md). Debuger GPU można także dołączyć do uruchomionego procesu, ale tylko wtedy, gdy ten proces wykonuje kod procesora GPU. Aby uzyskać więcej informacji, zobacz [dołączanie do uruchomionych procesów](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
 
-## <a name="run-current-tile-to-cursor-and-run-to-cursor"></a>Uruchom bieżący Kafelek do kursora a następnie uruchom do kursora
- Podczas debugowania na procesorze GPU, masz dwie opcje uruchamiania do lokalizacji kursora. Polecenia dla obu opcji są dostępne w menu skrótów w edytorze kodu.
+## <a name="run-current-tile-to-cursor-and-run-to-cursor"></a>Uruchom bieżący kafelek do kursora i uruchom do kursora
+ Podczas debugowania na procesorze GPU dostępne są dwie opcje uruchamiania do lokalizacji kursora. Polecenia dla obu opcji są dostępne w menu skrótów edytora kodu.
 
-1. **Uruchom do kursora** polecenie uruchamia aplikację, dopóki nie osiągnie lokalizacji kursora, a następnie przerywa. Nie oznacza to, że bieżący wątek działa do kursora; przeciwnie oznacza to, czy pierwszy wątek, który osiągnie punktu kursora wyzwala przerwy. Zobacz [w nawigowaniu po kodzie za pomocą debugera](../debugger/navigating-through-code-with-the-debugger.md)
+1. Polecenie **Uruchom do kursora** uruchamia aplikację do momentu, aż osiągnie lokalizację kursora, a następnie przerwie. Nie oznacza to, że bieżący wątek jest uruchomiony do kursora; nie oznacza to, że pierwszy wątek, który osiągnie punkt kursora wyzwala przerwy. Zobacz [nawigowanie po kodzie za pomocą debugera](../debugger/navigating-through-code-with-the-debugger.md)
 
-2. **Uruchom bieżący Kafelek do kursora** polecenie uruchamia aplikację, aż wszystkie wątki w bieżącym fragmencie kursora, a następnie podziału.
+2. Polecenie **Uruchom bieżący kafelek do kursora** uruchamia aplikację do momentu, aż wszystkie wątki w bieżącym kafelku osiągną kursora, a następnie przerwie.
 
-## <a name="debugging-windows"></a>Debugowanie Windows
- Za pomocą niektórych okien debugowania, można sprawdzić, Flaga i Zablokuj wątki procesora GPU. Aby uzyskać więcej informacji, zobacz:
+## <a name="debugging-windows"></a>Okna debugowania
+ Za pomocą pewnych okien debugowania można testować, flagować i zamrażać wątki GPU. Aby uzyskać więcej informacji, zobacz:
 
 - [Korzystanie z okna stosów równoległych](../debugger/using-the-parallel-stacks-window.md)
 
 - [Korzystanie z okna zadań](../debugger/using-the-tasks-window.md)
 
-- [Instrukcje: Korzystanie z okna równoległego wyrażenia kontrolnego](../debugger/how-to-use-the-parallel-watch-window.md)
+- [Instrukcje: korzystanie z okna równoległego wyrażenia kontrolnego](../debugger/how-to-use-the-parallel-watch-window.md)
 
-- [Debugowanie wątków i procesów](../debugger/debug-threads-and-processes.md) (pasek narzędzi debugowania lokalizacji)
+- [Debuguj wątki i procesy](../debugger/debug-threads-and-processes.md) (pasek narzędzi lokalizacji debugowania)
 
-- [Instrukcje: Korzystanie z okna wątków procesora GPU](../debugger/how-to-use-the-gpu-threads-window.md)
+- [Instrukcje: korzystanie z okna wątków GPU](../debugger/how-to-use-the-gpu-threads-window.md)
 
 ## <a name="data-synchronization-exceptions"></a>Wyjątki synchronizacji danych
- Debuger można określić wiele warunków synchronizacji danych podczas wykonywania. Gdy zostanie wykryty warunek, debuger przejdzie w stan przerwania. Dostępne są dwie opcje —**Przerwij** lub **Kontynuuj**. Za pomocą **wyjątki** okno dialogowe, możesz określić, czy debuger wykryje te warunki, a także jakich warunkach go spowoduje przerwanie dla. Aby uzyskać więcej informacji, zobacz [Zarządzanie wyjątkami za pomocą debugera](../debugger/managing-exceptions-with-the-debugger.md). Można również użyć **opcje** okno dialogowe, aby określić, czy debuger powinien Ignoruj wyjątki, jeśli dane, które są zapisywane nie zmienia wartość danych. Aby uzyskać więcej informacji, zobacz [ogólne, debugowanie, okno dialogowe Opcje](../debugger/general-debugging-options-dialog-box.md).
+ Debuger może zidentyfikować kilka warunków synchronizacji danych podczas wykonywania. Po wykryciu warunku debuger przechodzi do stanu przerwania. Dostępne są dwie opcje —**Przerwij** lub **Kontynuuj**. Za pomocą okna dialogowego **wyjątki** można określić, czy debuger wykrywa te warunki, a także jakie warunki spowodują przerwanie. Aby uzyskać więcej informacji, zobacz [Zarządzanie wyjątkami za pomocą debugera](../debugger/managing-exceptions-with-the-debugger.md). Możesz również użyć okna dialogowego **Opcje** , aby określić, że debuger powinien ignorować wyjątki, jeśli zapisywana dane nie zmienią wartości danych. Aby uzyskać więcej informacji, zobacz [Ogólne, debugowanie, opcje](../debugger/general-debugging-options-dialog-box.md)— okno dialogowe.
 
 ## <a name="troubleshooting"></a>Rozwiązywanie problemów
 
-### <a name="specifying-an-accelerator"></a>Określanie klawiszy skrótów
- Punkty przerwania w kodzie procesora GPU tylko są osiągane, jeśli kod jest uruchomiony na [Accelerator::direct3d_ref —](/cpp/parallel/amp/reference/accelerator-class#direct3d_ref) akcelerator (REF). Jeśli nie określisz akceleratora w kodzie, akcelerator REF jest automatycznie wybierany jako **typowi akceleratora debugowania** we właściwościach projektu. Jeśli Twój kod jawnie wybiera akcelerator, akcelerator REF nie będą używane podczas debugowania, a punkty przerwania nie zostanie uruchomiona, jeśli sprzęt procesora GPU nie ma obsługi debugowania. Użytkownik może rozwiązać ten problem przez napisanie kodu, tak aby używał akcelerator REF podczas debugowania. Aby uzyskać więcej informacji, zobacz właściwości projektu i [używanie akceleratora i obiektów accelerator_view](/cpp/parallel/amp/using-accelerator-and-accelerator-view-objects) i [ustawienia projektu dla C++ konfiguracji debugowania](../debugger/project-settings-for-a-cpp-debug-configuration.md).
+### <a name="specifying-an-accelerator"></a>Określanie akceleratora
+ Punkty przerwania w kodzie GPU są osiągane tylko wtedy, gdy kod jest uruchomiony w akceleratorze [akceleratora::d irect3d_ref](/cpp/parallel/amp/reference/accelerator-class#direct3d_ref) (ref). Jeśli nie określisz akceleratora w kodzie, akcelerator REF jest automatycznie wybierany jako **Typ akceleratora debugowania** we właściwościach projektu. Jeśli kod jawnie wybiera akcelerator, akcelerator REF nie będzie używany podczas debugowania, a punkty przerwania nie będą trafiać, chyba że sprzęt procesora GPU ma obsługę debugowania. Można to naprawić, pisząc swój kod, tak aby używał akceleratora REF podczas debugowania. Aby uzyskać więcej informacji, zobacz właściwości projektu i [Używanie akceleratora i accelerator_view obiektów](/cpp/parallel/amp/using-accelerator-and-accelerator-view-objects) oraz [ustawień projektu C++ dla konfiguracji debugowania](../debugger/project-settings-for-a-cpp-debug-configuration.md).
 
 ### <a name="conditional-breakpoints"></a>Warunkowe punkty przerwania
- Warunkowe punkty przerwania w kodzie GPU są obsługiwane, ale nie każde wyrażenie może przyjąć na urządzeniu. Gdy na urządzeniu nie można obliczyć wyrażenia, sprawdzana jest zgodność to debugera. Debuger będzie prawdopodobnie działać wolniej niż urządzenia.
+ Warunkowe punkty przerwania w kodzie GPU są obsługiwane, ale nie każde wyrażenie może być oceniane na urządzeniu. Gdy nie można obliczyć wyrażenia na urządzeniu, jest ono oceniane w debugerze. Debuger może działać wolniej niż urządzenie.
 
-### <a name="error-there-is-a-configuration-issue-with-the-selected-debugging-accelerator-type"></a>Błąd: Istnieje problem konfiguracji wybranego typu akceleratora debugowania.
- Ten błąd występuje, gdy występuje niespójność między ustawień projektu i konfiguracji komputera, na którym wykonujesz debugowanie na. Aby uzyskać więcej informacji, zobacz [ustawienia projektu dla konfiguracji debugowania języka C++](../debugger/project-settings-for-a-cpp-debug-configuration.md).
+### <a name="error-there-is-a-configuration-issue-with-the-selected-debugging-accelerator-type"></a>Błąd: Wystąpił problem z konfiguracją z wybranym typem akceleratora debugowania.
+ Ten błąd występuje w przypadku niespójności między ustawieniami projektu i konfiguracją komputera, na którym odbywa się debugowanie. Aby uzyskać więcej informacji, zobacz [Ustawienia projektu dla C++ konfiguracji debugowania](../debugger/project-settings-for-a-cpp-debug-configuration.md).
 
-### <a name="error-the-debug-driver-for-the-selected-debugging-accelerator-type-is-not-installed-on-the-target-machine"></a>Błąd: Na komputerze docelowym nie zainstalowano sterownika debugowania odpowiadającego wybranemu typowi akceleratora debugowania.
- Ten błąd występuje, Jeśli debugujesz na komputerze zdalnym. Debuger nie może określić do czasu wykonywania, czy sterowniki są zainstalowane na komputerze zdalnym. Sterowniki są dostępne od producenta karty graficznej.
+### <a name="error-the-debug-driver-for-the-selected-debugging-accelerator-type-is-not-installed-on-the-target-machine"></a>Błąd: Sterownik debugowania dla wybranego typu akceleratora debugowania nie jest zainstalowany na maszynie docelowej.
+ Ten błąd występuje w przypadku debugowania na komputerze zdalnym. Debuger nie może ustalić czasu uruchomienia sterowników na komputerze zdalnym. Sterowniki są dostępne od producenta karty graficznej.
 
-### <a name="error-timeout-detection-and-recovery-tdr-must-be-disabled-at-the-remote-site"></a>Błąd: I wykrywania limitu czasu odzyskiwania (TDR) musi być wyłączone w lokacji zdalnej.
- Istnieje możliwość dla obliczeń C++ AMP może przekroczyć domyślny interwał czasu jest ustawiana przez proces odzyskiwania (TDR) i wykrywania limitu czasu Windows. Jeśli tak się stanie, obliczenie zostanie anulowane, a dane zostaną utracone. Aby uzyskać więcej informacji, zobacz [obsługi TDR w bibliotece C++ AMP](http://go.microsoft.com/fwlink/p/?LinkId=249154).
+### <a name="error-timeout-detection-and-recovery-tdr-must-be-disabled-at-the-remote-site"></a>Błąd: wykrywanie limitu czasu i odzyskiwanie (TDR) musi być wyłączone w lokacji zdalnej.
+ Istnieje możliwość, że C++ obliczenia amp przekroczą domyślny interwał czasu ustawiony przez proces wykrywania i odzyskiwania limitu czasu systemu Windows. W takim przypadku Obliczanie zostanie anulowane, a dane zostaną utracone. Aby uzyskać więcej informacji, zobacz temat [Obsługa C++ TDRs w amp](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/03/06/handling-tdrs-in-c-amp/).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Przewodnik: debugowanie aplikacji C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)
 - [Ustawienia projektu dla konfiguracji debugowania w języku C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
-- [Rozpocznij debugowanie GPU w programie Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=255381)
+- [Rozpocznij debugowanie procesora GPU w programie Visual Studio](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/03/17/start-gpu-debugging-in-visual-studio-2012/)

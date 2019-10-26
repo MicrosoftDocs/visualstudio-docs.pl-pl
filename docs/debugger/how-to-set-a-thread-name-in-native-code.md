@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f9df52bee88722006c21c28e88a2e32113942e4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1e719563c831c50cc325d70d0de431f4be1bf514
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72732756"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911428"
 ---
 # <a name="how-to-set-a-thread-name-in-native-code"></a>Porady: ustawianie nazw wątków w kodzie natywnym
 Nazewnictwo wątków jest możliwe w dowolnej wersji programu Visual Studio. Nazewnictwo wątków jest przydatne do identyfikowania wątków interesujących w oknie **wątków** podczas debugowania uruchomionego procesu. Mając rozpoznawalne i nazwane wątki mogą być również pomocne podczas przeprowadzania debugowania po awarii przez inspekcję zrzutów awaryjnych i podczas analizowania przechwytywania wydajności przy użyciu różnych narzędzi.
@@ -37,7 +37,7 @@ Należy zauważyć, że _oba_ podejścia mogą być używane razem, w razie potr
 Korzysta
 * Nazwy wątków są widoczne podczas debugowania w programie Visual Studio, niezależnie od tego, czy debuger został dołączony do procesu w momencie wywołania SetThreadDescription.
 * Nazwy wątków są widoczne podczas przeprowadzania debugowania po załadowaniu zrzutu awaryjnego w programie Visual Studio.
-* Nazwy wątków są również widoczne w przypadku korzystania z innych narzędzi, takich jak program [WinDbg](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-tools) Debugger i Analizator wydajności [Analizator wydajności systemu Windows](https://docs.microsoft.com/windows-hardware/test/wpt/windows-performance-analyzer) .
+* Nazwy wątków są również widoczne w przypadku korzystania z innych narzędzi, takich jak program [WinDbg](/windows-hardware/drivers/debugger/debugger-download-tools) Debugger i Analizator wydajności [Analizator wydajności systemu Windows](/windows-hardware/test/wpt/windows-performance-analyzer) .
 
 Zastrzeżenia
 * Nazwy wątków są widoczne tylko w programie Visual Studio 2017 w wersji 15,6 i nowszych.

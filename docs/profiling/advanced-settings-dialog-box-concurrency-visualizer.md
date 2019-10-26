@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae0507e75a84f18350817a33abe25d3e59fa9aa2
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: fa9d6658ae14c4b84aae9361f73e4701e758f975
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926325"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911219"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Okno dialogowe Ustawienia zaawansowane (Concurrency Visualizer)
 Korzystając z okna dialogowego **Ustawienia zaawansowane** w wizualizatorze współbieżności, można kontrolować sposób zbierania śladów.  Okno dialogowe zawiera karty symboli, Tylko mój kod, buforowanie, filtrowanie, zdarzenia CLR, znaczniki, dostawcy i pliki.
@@ -29,16 +29,16 @@ Korzystając z okna dialogowego **Ustawienia zaawansowane** w wizualizatorze wsp
  Ścieżki. *exe* i. pliki *dll* są przechowywane w pliku śledzenia podczas zbierania śladu.  Zmiana tego ustawienia nie dotyczy żadnych wcześniej zebranych śladów.
 
 ## <a name="buffering"></a>Buforowania
- Narzędzie Concurrency Visualizer używa śledzenia zdarzeń systemu Windows (ETW) podczas zbierania śladu.  Funkcja ETW używa różnych buforów, ponieważ przechowuje zdarzenia.  Domyślne ustawienia buforu ETW mogą nie być optymalne we wszystkich przypadkach, a w niektórych przypadkach mogą powodować problemy, takie jak utracone zdarzenia.  Karta buforowanie służy do konfigurowania ustawień buforu funkcji ETW. Aby uzyskać więcej informacji, zobacz [Śledzenie zdarzeń](http://go.microsoft.com/fwlink/?LinkId=234579) i [Struktura EVENT_TRACE_PROPERTIES](http://go.microsoft.com/fwlink/?LinkId=234580).
+ Narzędzie Concurrency Visualizer używa śledzenia zdarzeń systemu Windows (ETW) podczas zbierania śladu.  Funkcja ETW używa różnych buforów, ponieważ przechowuje zdarzenia.  Domyślne ustawienia buforu ETW mogą nie być optymalne we wszystkich przypadkach, a w niektórych przypadkach mogą powodować problemy, takie jak utracone zdarzenia.  Karta buforowanie służy do konfigurowania ustawień buforu funkcji ETW. Aby uzyskać więcej informacji, zobacz [Śledzenie zdarzeń](/windows/win32/etw/event-tracing-portal) i [Struktura EVENT_TRACE_PROPERTIES](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties).
 
-## <a name="filter"></a>Filtr
+## <a name="filter"></a>filtru
  Na karcie filtr można wybrać zestaw zdarzeń zbieranych przez Wizualizator współbieżności. Wybranie podzestawu zdarzeń ogranicza typy danych, które są wyświetlane w raportach, zmniejsza rozmiar każdego śledzenia i skraca czas wymagany do przetworzenia śladów.
 
 ### <a name="clr-events"></a>zdarzenia CLR
  Zdarzenia generowane przez środowisko uruchomieniowe języka wspólnego (CLR) umożliwiają Wizualizatorowi współbieżności rozpoznawanie zarządzanych stosów wywołań.  Jeśli wyłączysz kolekcję zdarzeń CLR, rozmiar śladu zostanie zmniejszony, ale niektóre stosy wywołań nie będą rozpoznawane.  W związku z tym niektóre działania wątków procesora mogą być nieprawidłowo klasyfikowane.
 
 ### <a name="collect-for-native-processes"></a>Zbieranie dla procesów natywnych
- Domyślnie zdarzenia CLR są zbierane tylko wtedy, gdy zarządzany proces jest profilowany, ponieważ zwykle nie jest to wymagane w przypadku procesów natywnych.  W niektórych przypadkach (na przykład gdy natywny proces obsługuje środowisko CLR) może być konieczne zebranie zdarzeń CLR dla procesu macierzystego.  W takim przypadku zaznacz pole wyboru Zbieraj **dla procesów natywnych** .
+ Domyślnie zdarzenia CLR są zbierane tylko wtedy, gdy zarządzany proces jest profilowany, ponieważ zwykle nie jest to wymagane w przypadku procesów natywnych.  W niektórych przypadkach (na przykład gdy natywny proces obsługuje środowisko CLR) może być konieczne zebranie zdarzeń CLR dla procesu macierzystego.  W takim przypadku zaznacz pole wyboru **Zbieraj dla procesów natywnych** .
 
 ### <a name="disable-rundown-events"></a>Wyłącz zdarzenia uwalniania
  Środowisko CLR generuje zdarzenia od dwóch dostawców: środowisko uruchomieniowe i uwalnianie.  Jeśli chcesz zbierać zdarzenia środowiska uruchomieniowego CLR, ale chcesz uniknąć zbierania zdarzeń uwalniania, zaznacz pole wyboru **Wyłącz zdarzenia uwalniania** .  Zmniejsza to rozmiar pliku śledzenia, który jest generowany przez kolekcję, ale niektóre stosy mogą nie zostać rozpoznane. Aby uzyskać więcej informacji, zobacz [dostawcy CLR ETW](/dotnet/framework/performance/clr-etw-providers).
@@ -56,11 +56,11 @@ Korzystając z okna dialogowego **Ustawienia zaawansowane** w wizualizatorze wsp
  Na karcie **znaczniki** można skonfigurować zestaw dostawców ETW, które są wyświetlane jako znaczniki w wizualizatorze współbieżności.  Można również filtrować kolekcję znaczników na podstawie poziomu ważności i kategorii ETW.  Jeśli używasz [zestawu SDK narzędzia Concurrency Visualizer](../profiling/concurrency-visualizer-sdk.md) i korzystasz z własnego dostawcy znaczników, możesz zarejestrować go w tym miejscu, aby pojawił się w widoku wątki.
 
 ### <a name="add-a-new-provider"></a>Dodaj nowego dostawcę
- Jeśli kod używa [zestawu SDK wizualizatora współbieżności](../profiling/concurrency-visualizer-sdk.md) lub generuje zdarzenia ETW zgodne z <xref:System.Diagnostics.Tracing.EventSource> Konwencją, można wyświetlić te zdarzenia w wizualizatorze współbieżności, rejestrując je w tym oknie dialogowym.
+ Jeśli kod używa [zestawu SDK wizualizatora współbieżności](../profiling/concurrency-visualizer-sdk.md) lub GENERUJE zdarzenia ETW, które są zgodne z konwencją <xref:System.Diagnostics.Tracing.EventSource>, można wyświetlić te zdarzenia w wizualizatorze współbieżności, rejestrując je w tym oknie dialogowym.
 
  W polu **Nazwa** wprowadź nazwę opisującą typy zdarzeń generowanych przez dostawcę.  W polu **GUID** wprowadź identyfikator GUID, który jest skojarzony z tym dostawcą. (Identyfikator GUID jest skojarzony z każdym dostawcą ETW).
 
- Opcjonalnie można określić, czy zdarzenia mają być filtrowane z tego dostawcy, na podstawie kategorii lub poziomu ważności.  Możesz użyć pola Kategoria do filtrowania na podstawie kategorii zestawu SDK wizualizatora współbieżności.  W tym celu wprowadź rozdzielany przecinkami ciąg kategorii lub zakresów kategorii.  Określa kategorie zdarzeń w bieżącym dostawcy do wyświetlenia.  W przypadku dodawania <xref:System.Diagnostics.Tracing.EventSource> dostawcy można użyć pola Kategoria do filtrowania według słowa kluczowego ETW.  Ponieważ słowo kluczowe jest wektorem, można użyć rozdzielanego przecinkami ciągu liczb całkowitych, aby określić, które bity w masce są ustawione. Na przykład, "1, 2" ustawia pierwszy i drugi bity, a to jest tłumaczone na 6 w postaci dziesiętnej.
+ Opcjonalnie można określić, czy zdarzenia mają być filtrowane z tego dostawcy, na podstawie kategorii lub poziomu ważności.  Możesz użyć pola Kategoria do filtrowania na podstawie kategorii zestawu SDK wizualizatora współbieżności.  W tym celu wprowadź rozdzielany przecinkami ciąg kategorii lub zakresów kategorii.  Określa kategorie zdarzeń w bieżącym dostawcy do wyświetlenia.  W przypadku dodawania dostawcy <xref:System.Diagnostics.Tracing.EventSource> można użyć pola Kategoria do filtrowania według słowa kluczowego ETW.  Ponieważ słowo kluczowe jest wektorem, można użyć rozdzielanego przecinkami ciągu liczb całkowitych, aby określić, które bity w masce są ustawione. Na przykład, "1, 2" ustawia pierwszy i drugi bity, a to jest tłumaczone na 6 w postaci dziesiętnej.
 
  Za pomocą listy poziomu ważności można odfiltrować zdarzenia, które mają poziom ważności lub ETW, który jest mniejszy niż określona wartość.
 

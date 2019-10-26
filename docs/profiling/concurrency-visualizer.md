@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1e9109493ea78542afaedabbcce3841e3eac0e7
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.openlocfilehash: 913984bcc5f9546589421d66d95b6bfb2740b870
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128134"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72912027"
 ---
 # <a name="concurrency-visualizer"></a>Concurrency Visualizer
 
@@ -29,7 +29,7 @@ ms.locfileid: "71128134"
 >
 > - Pobierz rozszerzenie [Concurrency Visualizer dla rozszerzenia programu Visual Studio 2017](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ConcurrencyVisualizer2017#overview) .
 > - Pobierz rozszerzenie [Concurrency Visualizer dla rozszerzenia programu Visual Studio 2015](https://marketplace.visualstudio.com/items?itemName=Diagnostics.ConcurrencyVisualizerforVisualStudio2015) .
-> - Pobierz [Narzędzia do zbierania danych Concurrency Visualizer dla programu Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103).
+> - Pobierz [Narzędzia do zbierania danych Concurrency Visualizer dla programu Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=49103).
 >
 > [Narzędzie wiersza polecenia narzędzia Concurrency Visualizer (CVCollectionCmd)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md) umożliwia zbieranie śladów z wiersza polecenia, które można wyświetlić w programie Concurrency Visualizer dla programu Visual Studio 2015. Narzędzia można używać na komputerach, na których nie zainstalowano programu Visual Studio.
 
@@ -38,7 +38,7 @@ Możesz użyć wizualizatora współbieżności, aby zobaczyć, jak działa apli
 > [!NOTE]
 > Wizualizator współbieżności nie obsługuje projektów sieci Web.
 
-Wizualizator współbieżności korzysta z funkcji [śledzenia zdarzeń dla systemu Windows](http://go.microsoft.com/fwlink/?LinkId=234579) .
+Wizualizator współbieżności korzysta z funkcji [śledzenia zdarzeń dla systemu Windows](/windows/win32/etw/event-tracing-portal) .
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
@@ -48,7 +48,7 @@ Wizualizator współbieżności korzysta z funkcji [śledzenia zdarzeń dla syst
 |[Widok wątków](../profiling/threads-view-parallel-performance.md)|Opisuje sposób analizowania interakcji między wątkami w programie.|
 |[Widok rdzeni](../profiling/cores-view.md)|Opisuje sposób analizowania migracji wątków między rdzeniami.|
 |[Typowe nieprawidłowo działające wzorce dla aplikacji wielowątkowych](../profiling/common-patterns-for-poorly-behaved-multithreaded-applications.md)|Opisuje kilka typowych wzorców i pokazuje, jak pojawiają się one w wizualizatorze współbieżności.|
-|[Programowanie równoległe w blogu programu Visual Studio](http://go.microsoft.com/fwlink/?LinkId=235385)|Zawiera wskazówki i najlepsze rozwiązania dotyczące wizualizatora współbieżności.|
+|[Programowanie równoległe w blogu programu Visual Studio](https://blogs.msdn.microsoft.com/visualizeparallel/)|Zawiera wskazówki i najlepsze rozwiązania dotyczące wizualizatora współbieżności.|
 |[Widoki raportu wydajności](../profiling/performance-report-views.md)|Zawiera informacje referencyjne dotyczące raportów i widoków narzędzia profilowania programu Visual Studio.|
 |[Zestaw SDK narzędzia Concurrency Visualizer](../profiling/concurrency-visualizer-sdk.md)|Opisuje sposób Instrumentacji kodu źródłowego do wyświetlania dodatkowych informacji w wizualizatorze współbieżności.|
 |[Narzędzie wiersza polecenia Concurrency Visualizer (CVCollectionCmd)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md)|Opisuje, jak używać narzędzia wiersza polecenia Concurrency Visualizer (CVCollectionCmd. exe) do zbierania i przetwarzania śladów na maszynach, które nie mają programu Visual Studio.|
@@ -56,4 +56,4 @@ Wizualizator współbieżności korzysta z funkcji [śledzenia zdarzeń dla syst
 ## <a name="see-also"></a>Zobacz także
 
 - [Profilowanie w programie Visual Studio](../profiling/index.yml)
-- [Pierwsze spojrzenie na narzędziach profilowania](../profiling/profiling-feature-tour.md)
+- [Pierwsze spojrzenie na narzędzia profilowania](../profiling/profiling-feature-tour.md)

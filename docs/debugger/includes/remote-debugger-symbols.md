@@ -13,15 +13,15 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 26d9169be242990b9ca99b4fe4fe043d56fb7f30
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 5033580f253a5eb42cbc64656e8c4661a2e246c1
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68149175"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72912855"
 ---
-Można debugować kodu za pomocą symboli, które można generować na komputerze programu Visual Studio. Wydajność debugera zdalnego jest znacznie lepiej, gdy używasz symboli lokalnych.  Jeśli musisz użyć zdalnego symbole, należy poinformować monitor debugera zdalnego do wyszukiwania symboli na komputerze zdalnym.  
+Powinno być możliwe debugowanie kodu przy użyciu symboli generowanych na komputerze z programem Visual Studio. Wydajność zdalnego debugera jest znacznie lepsza w przypadku używania symboli lokalnych.  Jeśli musisz użyć symboli zdalnych, musisz poinformować Monitor debugowania zdalnego, aby szukać symboli na maszynie zdalnej.  
 
-Począwszy od programu Visual Studio 2013 Update 2 umożliwia następujące polecenia msvsmon przełącznik wiersza polecenia za pomocą zdalnego symboli dla kodu zarządzanego: `Msvsmon /FallbackLoadRemoteManagedPdbs`  
+Począwszy od Visual Studio 2013 Update 2, można użyć następującego przełącznika wiersza polecenia msvsmon, aby użyć symboli zdalnych dla kodu zarządzanego: `Msvsmon /FallbackLoadRemoteManagedPdbs`  
 
-Aby uzyskać więcej informacji, zobacz pomocy debugowania zdalnego (naciśnij klawisz **F1** w oknie zdalnego debugera, lub kliknij przycisk **Pomoc > użycie**). Więcej informacji można znaleźć [.NET zdalnego ładowania zmiany symboli w programie Visual Studio 2012 i 2013](http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013.aspx)
+Aby uzyskać więcej informacji, zobacz Pomoc dotyczącą debugowania zdalnego (naciśnij klawisz **F1** w oknie debugera zdalnego lub kliknij pozycję **Pomoc > Użycie**). Więcej informacji można znaleźć w temacie [zdalne ładowanie symboli .NET w programie Visual Studio 2012 i 2013](https://devblogs.microsoft.com/devops/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013/)

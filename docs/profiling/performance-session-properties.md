@@ -1,5 +1,5 @@
 ---
-title: Właściwości sesji wydajności | Dokumentacja firmy Microsoft
+title: Właściwości sesji wydajności | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,57 +11,57 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77da53856e0562d036fade431dd0deba0376fe9f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2c8a5058d52684ec08e13641953c789c244f2fa9
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62798373"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72910145"
 ---
 # <a name="performance-session-properties"></a>Właściwości sesji wydajności
 
-A **sesji wydajności** umożliwia skonfigurowanie ustawień, które określają, jak jest profilowana aplikacja. Przechowuje także raporty, które są generowane dla sesji profilowania.
+**Sesja wydajności** umożliwia skonfigurowanie ustawień, które określają, w jaki sposób aplikacja jest profilowana. Przechowuje również raporty, które są generowane dla sesji profilowania.
 
-Możesz utworzyć **sesji wydajności** , uruchamiając **kreatora wydajności** lub za pomocą ręcznego tworzenia sesji. **Sesji wydajności** jest wyświetlany w **Eksplorator wydajności** po **sesji wydajności** została utworzona.
+**Sesję wydajności** można utworzyć, uruchamiając **Kreatora wydajności** lub ręcznie tworząc sesję. **Sesja wydajności** zostanie wyświetlona w **Eksplorator wydajności** po utworzeniu **sesji wydajności** .
 
-Aby wyświetlić **sesji wydajności** właściwości, wybierz nazwę sesji, w **Eksplorator wydajności**, kliknij go prawym przyciskiem myszy, a następnie wybierz **właściwości**.
+Aby wyświetlić właściwości **sesji wydajności** , wybierz nazwę sesji w **Eksplorator wydajności**, kliknij ją prawym przyciskiem myszy, a następnie wybierz polecenie **Właściwości**.
 
 Sesja wydajności ma następujące strony właściwości:
 
 ## <a name="general"></a>Ogólne
 
-Te ustawienia umożliwiają wybór metody, można dodać kolekcji obiektów .NET i danych o okresie istnienia, aby określić domyślną lokalizację raportu profilowania i nazewnictwa konwencje.
+Te ustawienia umożliwiają wybranie metody profilowania, dodanie kolekcji obiektów .NET i danych okresu istnienia oraz określenie domyślnej lokalizacji raportu i konwencji nazewnictwa.
 
 Aby uzyskać więcej informacji, zobacz:
 
-[Instrukcje: Wybieranie metod kolekcji](../profiling/how-to-choose-collection-methods.md)
+[Instrukcje: wybieranie metod zbierania](../profiling/how-to-choose-collection-methods.md)
 
 [Zbieranie danych alokacji pamięci .NET i okresu istnienia](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)
 
-- [Instrukcje: Ustawianie opcji nazwy pliku danych wydajności](../profiling/how-to-set-performance-data-file-name-options.md)
+- [Instrukcje: ustawianie opcji nazwy pliku danych wydajności](../profiling/how-to-set-performance-data-file-name-options.md)
 
 ## <a name="launch"></a>Uruchom
 
-Te ustawienia pozwalają na wybranie z listy plików binarnych, a także określić kolejność uruchamiania plików binarnych.
+Te ustawienia umożliwiają wybranie z listy plików binarnych i określenie kolejności uruchamiania plików binarnych.
 
-Aby uzyskać więcej informacji, zobacz [jak: Określanie plików binarnych do uruchomienia](../profiling/how-to-specify-the-binary-to-start.md)
+Aby uzyskać więcej informacji, zobacz [How to: Określ plik binarny do uruchomienia](../profiling/how-to-specify-the-binary-to-start.md)
 
-## <a name="sampling"></a>Próbkowania
+## <a name="sampling"></a>Sond
 
-Te ustawienia umożliwiają wybierz interwał próbkowania zdarzeń i próbkowania, podczas próbkowania jest używana jako metoda profilowania. Zdarzenie próbkowania służy do zbierania danych profilowania w określonym interwale. Na przykład, jeśli zdarzenie próbkowania cykli zegara, a interwał próbkowania jest ustawiony na 10 000 000, następnie danych profilowania są zbierane po co 10 milionów cykli zegara. Dostępne są następujące cztery przykładowe zdarzenia:
+Te ustawienia umożliwiają wybranie przykładowego zdarzenia i interwału próbkowania, gdy próbkowanie jest używane jako metoda profilowania. Przykładowe zdarzenie służy do zbierania danych profilowania w określonym interwale. Na przykład jeśli przykładowe zdarzenie to cykle zegara, a interwał próbkowania jest ustawiony na 10 000 000, dane profilowania są zbierane po każdym cyklu 10 000 000 cykli zegara. Dostępne są następujące cztery typy przykładowych zdarzeń:
 
-- Cykle zegara - procesora CPU związane problemy
-- Problemy związane z błędów stron — pamięci
-- System wywołuje — dla operacji We/Wy problemy związane z
-- Liczniki wydajności — problemy z wydajnością niskiego poziomu
-- Przykładowe dodatkowe zdarzenia może być określony w oparciu o dostępne liczniki wydajności
+- Cykle zegara — w przypadku problemów związanych z procesorem CPU
+- Błędy stron — w przypadku problemów związanych z pamięcią
+- Wywołania systemowe — w przypadku problemów związanych we/wy
+- Liczniki wydajności — w przypadku problemów z wydajnością niskiego poziomu
+- Dodatkowe przykładowe zdarzenia można określić na podstawie dostępnych liczników wydajności
 
-Aby uzyskać więcej informacji, zobacz [jak: Wybieranie zdarzeń pobierania próbek](../profiling/how-to-choose-sampling-events.md)
+Aby uzyskać więcej informacji, zobacz [How to: Wybieranie zdarzeń próbkowania](../profiling/how-to-choose-sampling-events.md)
 
 ## <a name="binary"></a>plików binarnych
-Te ustawienia umożliwiają określenie, czy chcesz przenieść instrumentowanego pliku binarnego do innej lokalizacji. Na przykład, jeśli profilowany *My.DLL* i nie chcesz przenosić instrumentowanego pliku binarnego kopii zapasowej *My.DLL* o nazwie *My.Orig.DLL* zostanie utworzony. Następnie *My.DLL* jest modyfikowany przez wstawianie sond w celu zbierania danych. Jeśli zdecydujesz się zmienić lokalizację instrumentowanych danych binarnych, oryginalny plik binarny nie została zmieniona i instrumentowanego pliku binarnego jest kopiowany do określonej lokalizacji do użycia podczas instrumentacji.
+Te ustawienia umożliwiają określenie, czy chcesz przenieść plik binarny instrumentacji do innej lokalizacji. Na przykład, jeśli profiluje *moją bibliotekę DLL* i nie można przenieść pliku binarnego z instrumentacją, tworzona jest kopia zapasowa *My. dll* o nazwie *My. orig. dll* . Następnie *plik my. dll* jest modyfikowany przez wstawianie sond do zbierania danych. Jeśli zdecydujesz się przenieść plik binarny z instrumentacją, oryginalny plik binarny nie jest zmieniany, a plik binarny Instrumentacji jest kopiowany do określonej lokalizacji do użycia podczas Instrumentacji.
 
-Aby uzyskać więcej informacji, zobacz [jak: Określanie plików binarnych do uruchomienia](../profiling/how-to-specify-the-binary-to-start.md)
+Aby uzyskać więcej informacji, zobacz [How to: Określ plik binarny do uruchomienia](../profiling/how-to-specify-the-binary-to-start.md)
 
 ## <a name="tier-interactions"></a>Interakcje warstw
 
@@ -69,48 +69,48 @@ Aby uzyskać więcej informacji, zobacz [zbieranie danych o interakcji między w
 
 ## <a name="instrumentation"></a>Oprzyrządowanie
 
-Te ustawienia umożliwiają zbieranie danych dotyczących wydajności dla kodu języka JScript w [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] strony sieci Web i określ opcje **przed Instrumentacją** i **po Instrumentacji** zdarzenia, które ma być wykonywana przed lub po nim proces instrumentacji.
+Te ustawienia umożliwiają zbieranie danych dotyczących wydajności kodu w języku JScript w [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] stronach sieci Web i określanie wszelkich zdarzeń przedprodukcyjnych i związanych z **przygotowaniem** **instrumentów** , które mają być wykonywane przed procesem Instrumentacji lub po nim.
 
 Aby uzyskać więcej informacji, zobacz:
 
-[Instrukcje: Profiluj kod JavaScript na stronach sieci web](../profiling/how-to-profile-javascript-code-in-web-pages.md)
+[Instrukcje: profilowanie kodu JavaScript na stronach sieci Web](../profiling/how-to-profile-javascript-code-in-web-pages.md)
 
-[Instrukcje: Określ polecenia przed i po Instrumentacji](../profiling/how-to-specify-pre-and-post-instrument-commands.md)
+[Instrukcje: określanie poleceń przed i po instrumentacji](../profiling/how-to-specify-pre-and-post-instrument-commands.md)
 
 ## <a name="cpu-counters"></a>Liczniki procesora CPU
 
-Te ustawienia umożliwiają zbieranie danych dotyczących liczników wydajności procesora CPU, gdy używana jest metoda profilowania instrumentacji. Przenośne liczniki wydajności są dostępne niezależnie od tego, czy projekt procesora CPU lub producentem. Zdarzenia platformy są specyficzne dla projektu procesora CPU i producenta. Więcej informacji na temat liczników wydajności na układ znajduje się w dokumentacji określony procesor.
+Te ustawienia umożliwiają zbieranie danych o licznikach wydajności procesora CPU podczas korzystania z metody profilowania Instrumentacji. Przenośne liczniki wydajności są dostępne niezależnie od projektu lub producenta procesora. Zdarzenia platformy są specyficzne dla projektowania i producenta procesora CPU. Więcej informacji o licznikach wydajności mikroukładów znajduje się w dokumentacji dotyczącej określonego procesora.
 
-Aby uzyskać więcej informacji, zobacz [jak: Zbieranie danych licznika procesora CPU](../profiling/how-to-collect-cpu-counter-data.md)
+Aby uzyskać więcej informacji, zobacz [jak: zbierać dane licznika procesora CPU](../profiling/how-to-collect-cpu-counter-data.md)
 
-## <a name="windows-events"></a>Zdarzenia Windows
+## <a name="windows-events"></a>Zdarzenia systemu Windows
 
-Podczas profilowania, umożliwia zbieranie danych z dostawców śledzenia zdarzeń. Dane można wyświetlić za pomocą *VSPerfReport.exe* narzędzia wiersza polecenia `/calltrace` opcji. Aby uzyskać więcej informacji na temat śledzenie zdarzeń dla Windows (ETW), zobacz [temat śledzenia zdarzeń](http://go.microsoft.com/fwlink/?linkid=90752).
+Podczas profilowania można zbierać dane od dostawców śledzenia zdarzeń. Dane można wyświetlić przy użyciu opcji `/calltrace` narzędzia wiersza polecenia *VSPerfReport. exe* . Aby uzyskać więcej informacji na temat śledzenia zdarzeń systemu Windows (ETW), zobacz [Informacje o śledzeniu zdarzeń](/windows/win32/etw/about-event-tracing).
 
 Aby uzyskać więcej informacji, zobacz:
 
-[Instrukcje: Zbieranie, śledzenie zdarzeń systemu Windows (ETW) danych](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)
+[Instrukcje: zbieranie danych śledzenia zdarzeń dla systemu Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)
 
 [VSPerfReport](../profiling/vsperfreport.md).
 
-## <a name="windows-counters"></a>Liczniki Windows
+## <a name="windows-counters"></a>Liczniki systemu Windows
 
-Ta opcja umożliwia zbieranie danych z liczników monitora wydajności Windows. Aby zbierać dane, zaznacz pole wyboru przy opcji **zbierania liczników wydajności Windows**. Interwał zbierania można ustawić w **interwał zbierania** pole. **Kategoria licznika** i **wystąpienia** mogą być również dostępne. Niektóre domyślne liczniki Monitora wydajności Windows są dostępne.
+Ta opcja umożliwia zbieranie danych z liczników monitora wydajności systemu Windows. Aby zebrać te dane, zaznacz pole wyboru z etykietą **Zbieranie liczników wydajności systemu Windows**. Interwał kolekcji można ustawić w polu **Interwał kolekcji** . **Kategoria licznika** i **wystąpienie** mogą być również dostępne. Dostępne są niektóre domyślne liczniki Monitora wydajności systemu Windows.
 
- Aby uzyskać więcej informacji, zobacz [jak: Zbieranie danych licznika Windows](../profiling/how-to-collect-windows-counter-data.md).
+ Aby uzyskać więcej informacji, zobacz [jak: zbierać dane liczników systemu Windows](../profiling/how-to-collect-windows-counter-data.md).
 
 ## <a name="advanced"></a>Zaawansowane
 
-Te ustawienia umożliwiają dodawanie opcji do procesu instrumentacji, określając jeden lub więcej opcji [VSInstr](../profiling/vsinstr.md) wiersza polecenia narzędzia profilowania. Jeśli aplikacja korzysta z więcej niż jedna wersja, można również określić wersję środowiska uruchomieniowego wspólnego profilu.
+Te ustawienia umożliwiają dodanie opcji do procesu instrumentacji przez określenie co najmniej jednej opcji narzędzia profilowania wiersza polecenia [VSInstr](../profiling/vsinstr.md) . Możesz również określić wersję wspólnego środowiska uruchomieniowego do profilowania, gdy aplikacja korzysta z więcej niż jednej wersji.
 
 Aby uzyskać więcej informacji, zobacz:
 
-[Instrukcje: Określ środowisko uruchomieniowe programu .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)
+[Instrukcje: określanie środowiska uruchomieniowego programu .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)
 
-[Instrukcje: Określanie dodatkowych opcji Instrumentacji](../profiling/how-to-specify-additional-instrumentation-options.md)
+[Instrukcje: określanie dodatkowych opcji instrumentacji](../profiling/how-to-specify-additional-instrumentation-options.md)
 
 ## <a name="see-also"></a>Zobacz także
 
-[Omówienie](../profiling/overviews-performance-tools.md)
-[Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md)
-[kontrolować zbieranie danych](../profiling/controlling-data-collection.md)
+[Omówienia](../profiling/overviews-performance-tools.md)
+[konfigurowania sesji wydajności](../profiling/configuring-performance-sessions.md)
+[zbieranie danych kontroli](../profiling/controlling-data-collection.md)

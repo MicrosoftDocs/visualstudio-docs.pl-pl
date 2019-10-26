@@ -20,18 +20,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 852070c74a7e7171525a5feaa6cc7617fe83c00d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: bcdb1b2b6dc4b64d180eb03fc76b26b4ef16e9d0
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925364"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911416"
 ---
 # <a name="intellitrace-features-c-visual-basic-c"></a>Funkcje IntelliTrace (C#, Visual Basic, C++)
 
-Za pomocą IntelliTrace można rejestrować zdarzenia i metody wywołania aplikacji, co umożliwia badanie stanu (stos wywołań i wartości zmiennych lokalnych) w różnych punktach wykonywania. Po prostu Rozpocznij debugowanie w zwykły sposób — IntelliTrace jest domyślnie włączone i zobaczysz, że IntelliTrace informacje są rejestrowane w nowym oknie **Narzędzia diagnostyczne** na karcie **zdarzenia** . Wybierz zdarzenie, a następnie kliknij pozycję **Aktywuj debugowanie historyczne** , aby zobaczyć stos wywołań i zarejestrowane lokalnie dla tego zdarzenia.
+Za pomocą IntelliTrace można rejestrować zdarzenia i metody wywołania aplikacji, co umożliwia badanie stanu (stos wywołań i wartości zmiennych lokalnych) w różnych punktach wykonywania. Po prostu Rozpocznij debugowanie w zwykły sposób — IntelliTrace jest domyślnie włączone i zobaczysz, że IntelliTrace informacje są rejestrowane w nowym oknie **Narzędzia diagnostyczne** na karcie **zdarzenia** . Wybierz zdarzenie, a następnie kliknij pozycję **Aktywuj debugowanie historyczne.** aby wyświetlić stos wywołań i lokalne zarejestrowane dla tego zdarzenia.
 
-Aby zapoznać się z opisem krok po kroku, zobacz [Przewodnik: Korzystanie z](../debugger/walkthrough-using-intellitrace.md)IntelliTrace.
+Aby zapoznać się z opisem krok po kroku, zobacz [Przewodnik: korzystanie z IntelliTrace](../debugger/walkthrough-using-intellitrace.md).
 
 Program IntelliTrace jest dostępny w wersji Visual Studio Enterprise, ale nie w wersjach Visual Studio Professional i Community.
 
@@ -63,7 +63,7 @@ Dzięki temu można zobaczyć historię stosu wywołań i przejść do tyłu i d
 > [!TIP]
 > Ta opcja nie jest domyślnie włączona, ponieważ zwiększa nakłady pracy. Nie tylko IntelliTrace muszą przechwycić każde wywołanie metody dla aplikacji, ale również musi zająć dużo większego zestawu danych, gdy jest on wyświetlany na ekranie lub utrwala go na dysku.
 >
-> Możesz zmniejszyć obciążenie wydajności, ograniczając listę zdarzeń, które IntelliTrace rekordy i utrzymując liczbę modułów, które są zbierane do minimum. Aby uzyskać więcej informacji, zobacz Kontrolowanie, [jak dużo informacji o wywołaniu IntelliTrace rekordy](../debugger/intellitrace-features.md#ControlCallData).
+> Możesz zmniejszyć obciążenie wydajności, ograniczając listę zdarzeń, które IntelliTrace rekordy i utrzymując liczbę modułów, które są zbierane do minimum. Aby uzyskać więcej informacji, zobacz [kontrolowanie, jak dużo informacji o wywołaniu IntelliTrace rekordy](../debugger/intellitrace-features.md#ControlCallData).
 
 ### <a name="use-the-navigation-gutter"></a>Używanie marginesu nawigacji
 
@@ -123,7 +123,7 @@ Gdy zapisujesz dane IntelliTrace w pliku, uzyskasz jeden plik. iTrace dla każde
 
 ## <a name="forums"></a>Fora
 
-[Visual Studio Debugger](http://go.microsoft.com/fwlink/?LinkId=262263)
+[Debuger programu Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home)
 
 ## <a name="videos"></a>Wideo
 

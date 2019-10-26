@@ -1,5 +1,5 @@
 ---
-title: 'DA0012: Znacząca ilość odbicia | Dokumentacja firmy Microsoft'
+title: 'DA0012: znaczna ilość odbicia | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,30 +13,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33617b71c8ba13c459df8bcf29fb8a51cf948299
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d3f2537b5a56e2d3be9fd6129c3733e9a82c150e
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62936460"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72910560"
 ---
 # <a name="da0012-significant-amount-of-reflection"></a>DA0012: Znaczne odbicie
 
 |||
 |-|-|
 |Identyfikator reguły|DA0012|
-|Kategoria|Sposób użycia programu .NET framework|
-|Metod profilowania|Próbkowania|
-|Komunikat|Użytkownik może być nadmiernie używasz odbicia. Jest kosztowną operacją.|
+|Kategoria|Użycie .NET Framework|
+|Metody profilowania|Sond|
+|Komunikat|Może być używane nadmierne odbicie. Jest to kosztowna operacja.|
 |Typ reguły|Ostrzeżenie|
 
 ## <a name="cause"></a>Przyczyna
- Wywołania do metody System.Reflection, takie jak element InvokeMember i GetMember lub typ metod, takich jak MemberInvoke są znaczna część danych profilowania. Jeśli to możliwe, należy wziąć pod uwagę zastąpienie tych metod wczesne powiązania do metod zestawów zależnych.
+ Wywołania metody System. odbicia, takie jak InvokeMember i GetMember albo metody Type, takie jak MemberInvoke, są znaczną częścią danych profilowania. Jeśli to możliwe, rozważ zastąpienie tych metod wczesnym wiązaniem do metod zestawów zależnych.
 
 ## <a name="rule-description"></a>Opis reguły
- Odbicie jest elastyczne możliwości programu .NET Framework, który może służyć do wykonywania późne powiązania aplikacji zależnego zestawu środowiska wykonawczego, albo do tworzenia i dynamicznie wykonywanie nowych typów w czasie wykonywania. Jednak te techniki może obniżyć wydajność, jeśli są one często używane lub o nazwie w ścisłą pętli.
+ Odbicie jest elastyczną funkcją .NET Framework, która może służyć do wykonywania późnego powiązania aplikacji z zależnym zestawem czasu wykonywania lub do tworzenia i dynamicznego wykonywania nowych typów w czasie wykonywania. Jednak te techniki mogą zmniejszyć wydajność, jeśli są używane często lub wywoływane w ścisłych pętlach.
 
- Aby uzyskać więcej informacji, zobacz [odbicia, a późne wiązanie](http://go.microsoft.com/fwlink/?LinkId=177826) sekcji rozdział 5 — poprawianie zarządzane działania kodu, zbiorczo poprawy wydajności aplikacji platformy .NET i skalowalność Microsoft Patterns and Practices Biblioteka w witrynie MSDN.
+ Aby uzyskać więcej informacji, zobacz sekcję [odbicie i późne wiązanie](/previous-versions/msp-n-p/ff647790(v=pandp.10)#scalenetchapt05_topic31) w rozdziale 5 — Poprawianie wydajności kodu zarządzanego w celu zwiększenia wydajności aplikacji .NET i skalowalności biblioteki wzorców i praktyk firmy Microsoft w witrynie MSDN.
 
-## <a name="how-to-investigate-a-warning"></a>Jak badać ostrzeżenie
- Kliknij dwukrotnie komunikat w oknie Lista błędów, aby przejść do [widok szczegółów funkcji](../profiling/function-details-view.md) danych profilowania. Zbadaj funkcje wywoływania metody System.Type lub System.Reflection można odnaleźć sekcji programów Najczęściej korzystanie z interfejsów API odbicia platformy .NET. Należy unikać używania metod, które zwracają metadanych. Wydajność aplikacji ma kluczowe znaczenie, należy unikać używania i późne wiązanie dynamiczne tworzenie typów w czasie wykonywania.
+## <a name="how-to-investigate-a-warning"></a>Jak zbadać ostrzeżenie
+ Kliknij dwukrotnie komunikat w oknie Lista błędów, aby przejść do [widoku Szczegóły funkcji](../profiling/function-details-view.md) danych profilowania. Sprawdź wywołania funkcji metody System. Type lub system. odbicie, aby znaleźć sekcje programu, które najczęściej wykorzystują interfejsy API odbicia programu .NET. Unikaj używania metod, które zwracają metadane. Gdy wydajność aplikacji jest krytyczna, może być konieczne uniknięcie używania późnego powiązania i tworzenia typów dynamicznie w czasie wykonywania.

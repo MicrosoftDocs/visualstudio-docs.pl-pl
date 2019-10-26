@@ -26,15 +26,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2c5f7e425a7a8c1220ee4b9b09831831c8f0a9a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: a2ad8163b86742da99be2a2a626eab58d27cb22b
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747250"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911252"
 ---
 # <a name="midl-task"></a>MIDL — Zadanie
-Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *MIDL. exe*. Aby uzyskać więcej informacji, zobacz [MIDL — dokumentacja wiersza polecenia](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
+Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *MIDL. exe*. Aby uzyskać więcej informacji, zobacz [MIDL — dokumentacja wiersza polecenia](/windows/desktop/Midl/midl-command-line-reference).
 
 ## <a name="parameters"></a>Parametry
  Poniżej opisano parametry zadania **MIDL** . Większość parametrów zadań i kilku zestawów parametrów odpowiada opcji wiersza polecenia.
@@ -45,7 +45,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
 
      Dodaje katalog do listy katalogów przeszukiwanych pod kątem importowanych plików IDL, dołączonych plików nagłówkowych i plików konfiguracji aplikacji (ACF).
 
-     Aby uzyskać więcej informacji, zobacz **/i** opcja w [MIDL wiersza polecenia](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
+     Aby uzyskać więcej informacji, zobacz **/i** opcja w [MIDL wiersza polecenia](/windows/desktop/Midl/midl-command-line-reference).
 
 - **AdditionalOptions**
 
@@ -53,7 +53,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
 
      Lista opcji wiersza polecenia. Na przykład/\<option1 >/\<option2 >/\<option # >. Użyj tego parametru, aby określić opcje wiersza polecenia, które nie są reprezentowane przez żaden inny parametr zadania MIDL.
 
-     Aby uzyskać więcej informacji, zobacz [MIDL — dokumentacja wiersza polecenia](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
+     Aby uzyskać więcej informacji, zobacz [MIDL — dokumentacja wiersza polecenia](/windows/desktop/Midl/midl-command-line-reference).
 
 - **ApplicationConfigurationMode**
 
@@ -61,7 +61,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
 
      Jeśli `true`, program pozwala używać niektórych słów kluczowych ACF w pliku IDL.
 
-     Aby uzyskać więcej informacji, zobacz **/app_config** opcji w [wierszu polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
+     Aby uzyskać więcej informacji, zobacz **/app_config** opcji w [wierszu polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference).
 
 - **ClientStubFile**
 
@@ -69,7 +69,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
 
      Określa nazwę pliku szczątkowego klienta dla interfejsu RPC.
 
-     Aby uzyskać więcej informacji, zobacz **/cstub** opcji w [wierszu polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). Zobacz również parametr **ServerStubFile** w tej tabeli.
+     Aby uzyskać więcej informacji, zobacz **/cstub** opcji w [wierszu polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference). Zobacz również parametr **ServerStubFile** w tej tabeli.
 
 - **CPreprocessOptions**
 
@@ -77,7 +77,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
 
      Określa opcje do przekazania do języka C/C++ preprocesora. Określ rozdzielaną spacją listę opcji preprocesora.
 
-     Aby uzyskać więcej informacji, zobacz **/cpp_opt** opcji w [wierszu polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
+     Aby uzyskać więcej informacji, zobacz **/cpp_opt** opcji w [wierszu polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference).
 
 - **DefaultCharType**
 
@@ -93,7 +93,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
     |**Bajt**|**/char bez znaku**|
     |**ASCII**|**/char ascii7**|
 
-     Aby uzyskać więcej informacji, zobacz **/char** opcji w [wierszu polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
+     Aby uzyskać więcej informacji, zobacz **/char** opcji w [wierszu polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference).
 
 - **DllDataFileName**
 
@@ -101,7 +101,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
 
      Określa nazwę pliku dla wygenerowanego pliku *dlldata* dla biblioteki DLL proxy.
 
-     Aby uzyskać więcej informacji, zobacz **/dlldata** opcji w [wierszu polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
+     Aby uzyskać więcej informacji, zobacz **/dlldata** opcji w [wierszu polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference).
 
 - **EnableErrorChecks**
 
@@ -117,7 +117,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
     |**EnableCustom**|**/Error**|
     |**Całą**|**/Error wszystko**|
 
-     Aby uzyskać więcej informacji, zobacz **/Error** opcji w [wierszu polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
+     Aby uzyskać więcej informacji, zobacz **/Error** opcji w [wierszu polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference).
 
 - **ErrorCheckAllocations**
 
@@ -125,7 +125,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
 
      Jeśli `true`, sprawdź, czy nie występują błędy braku pamięci.
 
-     Aby uzyskać więcej informacji, zobacz opcja **alokacji/Error** w [wierszu polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
+     Aby uzyskać więcej informacji, zobacz opcja **alokacji/Error** w [wierszu polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference).
 
 - **ErrorCheckBounds**
 
@@ -133,7 +133,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
 
      Jeśli `true`, sprawdza rozmiar zgodnych i zróżnicowanych tablic względem specyfikacji długości transmisji.
 
-     Aby uzyskać więcej informacji, zobacz **/Error bounds_check** Option w [wierszu polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
+     Aby uzyskać więcej informacji, zobacz **/Error bounds_check** Option w [wierszu polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference).
 
 - **ErrorCheckEnumRange**
 
@@ -149,7 +149,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
 
      Jeśli `true`, sprawdź, czy do wycinków klientów nie są przenoszone żadne wskaźniki odwołań o wartości null.
 
-     Aby uzyskać więcej informacji, zobacz **/Error ref** Option in [MIDL Command-Line Reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
+     Aby uzyskać więcej informacji, zobacz **/Error ref** Option in [MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference).
 
 - **ErrorCheckStubData**
 
@@ -157,7 +157,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
 
      Jeśli `true`, generuje procedurę pośredniczącą, która przechwytuje wyjątki po stronie serwera i propaguje je z powrotem do klienta.
 
-     Aby uzyskać więcej informacji, zobacz **/Error stub_data** Option w [wierszu polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
+     Aby uzyskać więcej informacji, zobacz **/Error stub_data** Option w [wierszu polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference).
 
 - **GenerateClientFiles**
 
@@ -172,7 +172,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
     |**Dawaj**|**/Client brak**|
     |**Szkieletu**|**/Client**|
 
-     Aby uzyskać więcej informacji, zobacz **/Client** opcji w [wierszu polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
+     Aby uzyskać więcej informacji, zobacz **/Client** opcji w [wierszu polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference).
 
 - **GenerateServerFiles**
 
@@ -187,7 +187,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
     |**Dawaj**|**/Server brak**|
     |**Szkieletu**|**/Server — stub**|
 
-     Aby uzyskać więcej informacji, zobacz opcja **/Server** w [MIDL w wierszu polecenia](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
+     Aby uzyskać więcej informacji, zobacz opcja **/Server** w [MIDL w wierszu polecenia](/windows/desktop/Midl/midl-command-line-reference).
 
 - **GenerateStublessProxies**
 
@@ -195,7 +195,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
 
      W przypadku `true` program generuje w pełni interpretowane klasy zastępcze z niepośredniczącymi serwerami proxy dla interfejsów obiektów.
 
-     Aby uzyskać więcej informacji, zobacz **/Oicf** opcji w [wierszu polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
+     Aby uzyskać więcej informacji, zobacz **/Oicf** opcji w [wierszu polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference).
 
 - **GenerateTypeLibrary**
 
@@ -203,7 +203,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
 
      Jeśli `true`, plik biblioteki typów (*TLB*) nie zostanie wygenerowany.
 
-     Aby uzyskać więcej informacji, zobacz **/notlb** opcji w [wierszu polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
+     Aby uzyskać więcej informacji, zobacz **/notlb** opcji w [wierszu polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference).
 
 - **HeaderFileName**
 
@@ -211,7 +211,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
 
      Określa nazwę wygenerowanego pliku nagłówkowego.
 
-     Aby uzyskać więcej informacji, zobacz opcja **/h** lub **/header** w [wierszu polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
+     Aby uzyskać więcej informacji, zobacz opcja **/h** lub **/header** w [wierszu polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference).
 
 - **IgnoreStandardIncludePath**
 
@@ -219,7 +219,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
 
      Jeśli `true`, zadanie MIDL przeszukuje tylko katalogi określone za pomocą przełącznika **AdditionalIncludeDirectories** i ignoruje bieżący katalog i katalogi określone przez zmienną środowiskową INCLUDE.
 
-     Aby uzyskać więcej informacji, zobacz **/no_def_idir** opcji w [wierszu polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
+     Aby uzyskać więcej informacji, zobacz **/no_def_idir** opcji w [wierszu polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference).
 
 - **InterfaceIdentifierFileName**
 
@@ -227,7 +227,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
 
      Określa nazwę *pliku identyfikatora interfejsu* dla interfejsu com. Zastępuje domyślną nazwę uzyskaną przez dodanie "_i. c" do nazwy pliku IDL.
 
-     Aby uzyskać więcej informacji, zobacz **/IID** opcji w [wierszu polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
+     Aby uzyskać więcej informacji, zobacz **/IID** opcji w [wierszu polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference).
 
 - **LocaleID**
 
@@ -235,7 +235,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
 
      Określa *identyfikator ustawień regionalnych* , który umożliwia używanie znaków międzynarodowych w plikach wejściowych, nazwach plików i ścieżkach katalogów. Określ identyfikator ustawień regionalnych dziesiętnych.
 
-     Aby uzyskać więcej informacji, zobacz **/LCID** opcji w [wierszu polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). Zobacz również [identyfikatory ustawień regionalnych](https://docs.microsoft.com/windows/desktop/intl/locale-identifiers).
+     Aby uzyskać więcej informacji, zobacz **/LCID** opcji w [wierszu polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference). Zobacz również [identyfikatory ustawień regionalnych](/windows/desktop/intl/locale-identifiers).
 
 - **MkTypLibCompatible**
 
@@ -243,7 +243,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
 
      Jeśli `true`, program wymaga, aby format pliku wejściowego był zgodny z *MkTypLib. exe* w wersji 2,03.
 
-     Aby uzyskać więcej informacji, zobacz **/mktyplib203** opcji w [wierszu polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). Zobacz też [składnię pliku ODL](/previous-versions/windows/desktop/automat/odl-file-syntax) w witrynie MSDN.
+     Aby uzyskać więcej informacji, zobacz **/mktyplib203** opcji w [wierszu polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference). Zobacz też [składnię pliku ODL](/previous-versions/windows/desktop/automat/odl-file-syntax) w witrynie MSDN.
 
 - **OutputDirectory**
 
@@ -251,7 +251,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
 
      Określa domyślny katalog, w którym zadanie MIDL zapisuje pliki wyjściowe.
 
-     Aby uzyskać więcej informacji, zobacz opcję **/out** w [MIDL wiersza polecenia](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
+     Aby uzyskać więcej informacji, zobacz opcję **/out** w [MIDL wiersza polecenia](/windows/desktop/Midl/midl-command-line-reference).
 
 - **PreprocessorDefinitions**
 
@@ -259,7 +259,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
 
      Określa co najmniej jedną *definicję*; oznacza to, że nazwa i wartość opcjonalna, które mają zostać przesłane do preprocesora C, tak jak w przypadku dyrektywy `#define`. Każdy z nich definiuje, *nazwa [= wartość]* .
 
-     Aby uzyskać więcej informacji, zobacz **/d** opcja w [MIDL wiersza polecenia](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). Zobacz również parametr **UndefinePreprocessorDefinitions** w tej tabeli.
+     Aby uzyskać więcej informacji, zobacz **/d** opcja w [MIDL wiersza polecenia](/windows/desktop/Midl/midl-command-line-reference). Zobacz również parametr **UndefinePreprocessorDefinitions** w tej tabeli.
 
 - **ProxyFileName**
 
@@ -267,7 +267,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
 
      Określa nazwę pliku serwera proxy interfejsu dla interfejsu COM.
 
-     Aby uzyskać więcej informacji, zobacz **/proxy** opcji w [wierszu polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
+     Aby uzyskać więcej informacji, zobacz **/proxy** opcji w [wierszu polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference).
 
 - **RedirectOutputAndErrors**
 
@@ -275,7 +275,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
 
      Przekierowuje dane wyjściowe, takie jak komunikaty o błędach i ostrzeżenia, ze standardowego wyjścia do określonego pliku.
 
-     Aby uzyskać więcej informacji, zobacz **/o** opcja w [MIDL wiersza polecenia](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
+     Aby uzyskać więcej informacji, zobacz **/o** opcja w [MIDL wiersza polecenia](/windows/desktop/Midl/midl-command-line-reference).
 
 - **ServerStubFile**
 
@@ -283,7 +283,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
 
      Określa nazwę pliku szczątkowego serwera dla interfejsu RPC.
 
-     Aby uzyskać więcej informacji, zobacz **/sstub** opcji w [wierszu polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). Zobacz również parametr **ClientStubFile** w tej tabeli.
+     Aby uzyskać więcej informacji, zobacz **/sstub** opcji w [wierszu polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference). Zobacz również parametr **ClientStubFile** w tej tabeli.
 
 - **Zewnętrz**
 
@@ -307,7 +307,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
     |**czwart**|**/Zp4**|
     |**0,8**|**/ZP8**|
 
-     Aby uzyskać więcej informacji, zobacz **/ZP** opcji w [wierszu polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). Opcja **/ZP** jest równoważna z opcją **/Pack** i starszą opcją **/align** .
+     Aby uzyskać więcej informacji, zobacz **/ZP** opcji w [wierszu polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference). Opcja **/ZP** jest równoważna z opcją **/Pack** i starszą opcją **/align** .
 
 - **SuppressCompilerWarnings**
 
@@ -315,7 +315,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
 
      Jeśli `true`, program pomija komunikaty ostrzegawcze z zadania MIDL.
 
-     Aby uzyskać więcej informacji, zobacz **/no_warn** opcji w [wierszu polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
+     Aby uzyskać więcej informacji, zobacz **/no_warn** opcji w [wierszu polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference).
 
 - **SuppressStartupBanner**
 
@@ -323,7 +323,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
 
      Jeśli `true`, program zapobiega wyświetlaniu komunikatu o prawach autorskich i numerze wersji, gdy zadanie zostanie uruchomione.
 
-     Aby uzyskać więcej informacji, zobacz **/nologo** opcji w [wierszu polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
+     Aby uzyskać więcej informacji, zobacz **/nologo** opcji w [wierszu polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference).
 
 - **TargetEnvironment**
 
@@ -340,7 +340,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
     |**Itanium**|**/ENV ia64**|
     |**Procesorów**|**/ENV x64**|
 
-     Aby uzyskać więcej informacji, zobacz **/ENV** opcji w [wierszu polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
+     Aby uzyskać więcej informacji, zobacz **/ENV** opcji w [wierszu polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference).
 
 - **Katalog trackerlogdirectory**
 
@@ -361,7 +361,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
     |**NewFormat**|**/newtlb**|
     |**OldFormat**|**/oldtlb**|
 
-     Aby uzyskać więcej informacji, zobacz Opcje **/newtlb** i **/oldtlb** w [dokumentacji wiersza polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
+     Aby uzyskać więcej informacji, zobacz Opcje **/newtlb** i **/oldtlb** w [dokumentacji wiersza polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference).
 
 - **TypeLibraryName**
 
@@ -369,7 +369,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
 
      Określa nazwę pliku biblioteki typów.
 
-     Aby uzyskać więcej informacji, zobacz **/TLB** opcji w [wierszu polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
+     Aby uzyskać więcej informacji, zobacz **/TLB** opcji w [wierszu polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference).
 
 - **UndefinePreprocessorDefinitions**
 
@@ -377,7 +377,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
 
      Usuwa wszystkie poprzednie definicje nazw, przekazując nazwę do preprocesora C, tak jak w przypadku dyrektywy `#undefine`. Określ co najmniej jedną wcześniej zdefiniowaną nazwę.
 
-     Aby uzyskać więcej informacji, zobacz **/u** opcji w [MIDL wiersza polecenia](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). Zobacz również parametr **PreprocessorDefinitions** w tej tabeli.
+     Aby uzyskać więcej informacji, zobacz **/u** opcji w [MIDL wiersza polecenia](/windows/desktop/Midl/midl-command-line-reference). Zobacz również parametr **PreprocessorDefinitions** w tej tabeli.
 
 - **ValidateAllParameters**
 
@@ -385,7 +385,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
 
      Jeśli `true`, program generuje dodatkowe informacje o sprawdzaniu błędów, które są używane do przeprowadzania sprawdzania integralności w czasie wykonywania. W przypadku `false` nie są generowane informacje o sprawdzaniu błędów.
 
-     Aby uzyskać więcej informacji, zobacz Opcje **/Robust** i **/no_robust** w [dokumentacji wiersza polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
+     Aby uzyskać więcej informacji, zobacz Opcje **/Robust** i **/no_robust** w [dokumentacji wiersza polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference).
 
 - **Warnaserror —**
 
@@ -395,7 +395,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
 
      Jeśli parametr zadania **WarningLevel** MIDL nie zostanie określony, ostrzeżenia na poziomie domyślnym na poziomie 1 są traktowane jako błędy.
 
-     Aby uzyskać więcej informacji, zobacz Opcje **/WX** w [wierszu polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). Zobacz również parametr **WarningLevel** w tej tabeli.
+     Aby uzyskać więcej informacji, zobacz Opcje **/WX** w [wierszu polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference). Zobacz również parametr **WarningLevel** w tej tabeli.
 
 - **WarningLevel**
 
@@ -413,7 +413,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
     |**r.3**|**/W3**|
     |**czwart**|**/W4**|
 
-     Aby uzyskać więcej informacji, zobacz opcja **/w** w [wierszu polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). Zobacz również parametr **warnaserror —** w tej tabeli.
+     Aby uzyskać więcej informacji, zobacz opcja **/w** w [wierszu polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference). Zobacz również parametr **warnaserror —** w tej tabeli.
 
 ## <a name="see-also"></a>Zobacz także
 - [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

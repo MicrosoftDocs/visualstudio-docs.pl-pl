@@ -1,6 +1,6 @@
 ---
-title: Przeglądanie i zarządzanie zasobami magazynu za pomocą Eksploratora serwera | Dokumentacja firmy Microsoft
-description: Przeglądanie i zarządzanie zasobami magazynowania za pomocą Eksploratora serwera
+title: Przeglądanie zasobów magazynu i zarządzanie nimi przy użyciu Eksplorator serwera | Microsoft Docs
+description: Przeglądanie zasobów magazynu i zarządzanie nimi za pomocą Eksplorator serwera
 author: ghogen
 manager: jillfra
 assetId: 658dc064-4a4e-414b-ae5a-a977a34c930d
@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: 22c266516a2810191f05bb3de1d7215ea65dd040
-ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
+ms.openlocfilehash: ad7d2ca7738d4ba0e05e3a75a2a4b6b155e46dbd
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67624102"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911713"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Przeglądanie zasobów magazynu i zarządzanie nimi za pomocą Eksploratora serwera
 
@@ -22,275 +22,275 @@ ms.locfileid: "67624102"
 
 ## <a name="overview"></a>Omówienie
 
-Jeśli po zainstalowaniu narzędzi platformy Azure dla programu Microsoft Visual Studio, można wyświetlić obiektów blob, kolejki i tabelę danych z kont magazynu dla platformy Azure. Azure **magazynu** węzła w Eksploratorze serwera wyświetlane dane, które jest kontem emulatora magazynu lokalnego i konta magazynu platformy Azure.
+Jeśli zainstalowano narzędzia platformy Azure dla Microsoft Visual Studio, można wyświetlać dane obiektów blob, kolejek i tabel z kont magazynu dla platformy Azure. Węzeł usługi Azure **Storage** w Eksplorator serwera zawiera dane znajdujące się na koncie emulatora magazynu lokalnego oraz inne konta usługi Azure Storage.
 
-Aby wyświetlić Eksploratora serwera w programie Visual Studio, na pasku menu, wybierz **widoku** > **Eksploratora serwera**. **Magazynu** węzeł zawiera wszystkich kont magazynu, które istnieją w ramach każdej subskrypcji platformy Azure lub certyfikat, który jest połączony z. Jeśli nie ma konta magazynu, można dodać go zgodnie z instrukcjami [w dalszej części tego artykułu](#add-storage-accounts-by-using-server-explorer).
+Aby wyświetlić Eksplorator serwera w programie Visual Studio, na pasku menu wybierz pozycję **wyświetl** > **Eksplorator serwera**. W węźle **Magazyn** są wyświetlane wszystkie konta magazynu, które istnieją w ramach każdej subskrypcji lub certyfikatu platformy Azure, z którym nawiązano połączenie. Jeśli konto magazynu nie jest wyświetlane, możesz je dodać, postępując zgodnie z instrukcjami [w dalszej części tego artykułu](#add-storage-accounts-by-using-server-explorer).
 
-Począwszy od platformy Azure SDK 2.7 umożliwia także programu Cloud Explorer do przeglądania i zarządzania zasobami platformy Azure. Aby uzyskać więcej informacji, zobacz [Zarządzanie zasobów platformy Azure za pomocą Eksploratora chmury](vs-azure-tools-resources-managing-with-cloud-explorer.md).
+Począwszy od zestawu Azure SDK 2,7, można również wyświetlać zasoby platformy Azure i zarządzać nimi za pomocą programu Cloud Explorer. Aby uzyskać więcej informacji, zobacz [Zarządzanie zasobami platformy Azure za pomocą programu Cloud Explorer](vs-azure-tools-resources-managing-with-cloud-explorer.md).
 
-## <a name="view-and-manage-storage-resources-in-visual-studio"></a>Wyświetlanie i zarządzanie zasobami magazynu w programie Visual Studio
+## <a name="view-and-manage-storage-resources-in-visual-studio"></a>Wyświetlanie zasobów magazynu i zarządzanie nimi w programie Visual Studio
 
-Eksplorator serwera automatycznie pokazuje listę obiektów blob, kolejek i tabel na koncie emulatora magazynu. W ramach emulatora magazynu znajduje się w Eksploratorze serwera w obszarze **magazynu** węzła jako **rozwoju** węzła.
+Eksplorator serwera automatycznie pokazuje listę obiektów blob, kolejek i tabel na koncie emulatora magazynu. Konto emulatora magazynu jest wymienione w Eksplorator serwera w węźle **Magazyn** jako węzeł **deweloperski** .
 
-Aby wyświetlić zasoby konta emulatora magazynu, rozwiń węzeł **rozwoju** węzła. Jeśli emulator magazynu nie została uruchomiona, po rozwinięciu **rozwoju** węzła, automatycznie uruchamia. Ten proces może potrwać kilka sekund. Możesz kontynuować pracę w innych obszarach programu Visual Studio, podczas uruchamiania emulatora magazynu.
+Aby wyświetlić zasoby konta emulatora magazynu, rozwiń węzeł **programowanie** . Jeśli emulator magazynu nie został uruchomiony po rozwinięciu węzła **deweloperskiego** , zostanie automatycznie uruchomiony. Ten proces może potrwać kilka sekund. Podczas uruchamiania emulatora magazynu można nadal korzystać z innych obszarów programu Visual Studio.
 
-Do wyświetlania zasobów w ramach konta magazynu, rozwiń węzeł konta magazynu, w Eksploratorze serwera, gdzie widać **obiektów blob**, **kolejek**, i **tabel** węzłów.
+Aby wyświetlić zasoby na koncie magazynu, rozwiń węzeł konta magazynu w Eksplorator serwera, w którym znajdują się węzły **obiektów BLOB**, **kolejek**i **tabel** .
 
-## <a name="work-with-blob-resources"></a>Praca z zasobami obiektów blob
+## <a name="work-with-blob-resources"></a>Korzystanie z zasobów obiektów BLOB
 
-**Obiektów blob** węzła Wyświetla listę kontenerów dla wybranego konta magazynu. Kontenery obiektów blob zawierają pliki obiektów blob, a tych obiektów blob można organizować w foldery i podfoldery. Aby uzyskać więcej informacji, zobacz [jak używać magazynu obiektów Blob w języku .NET](/azure/storage/blobs/storage-dotnet-how-to-use-blobs).
+Węzeł **obiekty blob** wyświetla listę kontenerów dla wybranego konta magazynu. Kontenery obiektów BLOB zawierają pliki obiektów blob, a obiekty te można organizować w folderach i podfolderach. Aby uzyskać więcej informacji, zobacz [jak używać usługi BLOB Storage z platformy .NET](/azure/storage/blobs/storage-dotnet-how-to-use-blobs).
 
-### <a name="to-create-a-blob-container"></a>Aby utworzyć kontener obiektów blob
+### <a name="to-create-a-blob-container"></a>Aby utworzyć kontener obiektów BLOB
 
-1. Otwórz menu skrótów dla **obiektów blob** węzeł, a następnie wybierz **Utwórz kontener obiektów Blob**.
-1. W **Utwórz kontener obiektów Blob** okna dialogowego wprowadź nazwę nowego kontenera.
-1. Naciśnij klawisz Enter na klawiaturze lub możesz kliknąć lub nacisnąć poza pole nazwy, aby zapisać kontenera obiektów blob.
+1. Otwórz menu skrótów dla węzła **obiekty blob** , a następnie wybierz pozycję **Utwórz kontener obiektów BLOB**.
+1. W oknie dialogowym **Tworzenie kontenera obiektów BLOB** wprowadź nazwę nowego kontenera.
+1. Wybierz klawisz Enter na klawiaturze lub kliknij lub naciśnij poza polem nazwy, aby zapisać kontener obiektów BLOB.
 
    > [!NOTE]
-   > Nazwa kontenera obiektu blob musi zaczynać się od liczby (0 – 9) lub małą literą (a – z).
+   > Nazwa kontenera obiektów BLOB musi rozpoczynać się od cyfry (0-9) lub małej litery (a – z).
 
-### <a name="to-delete-a-blob-container"></a>Aby usunąć kontener obiektów blob
+### <a name="to-delete-a-blob-container"></a>Aby usunąć kontener obiektów BLOB
 
-Otwórz menu skrótów dla kontenera obiektów blob, który chcesz usunąć, a następnie wybierz **Usuń**.
+Otwórz menu skrótów dla kontenera obiektów blob, który chcesz usunąć, a następnie wybierz polecenie **Usuń**.
 
-### <a name="to-display-a-list-of-the-items-in-a-blob-container"></a>Aby wyświetlić listę elementów w kontenerze obiektów blob
+### <a name="to-display-a-list-of-the-items-in-a-blob-container"></a>Aby wyświetlić listę elementów w kontenerze obiektów BLOB
 
-Otwórz menu skrótów dla nazwy kontenera obiektów blob na liście, a następnie wybierz pozycję **Otwórz**.
+Otwórz menu skrótów dla nazwy kontenera obiektów BLOB na liście, a następnie wybierz polecenie **Otwórz**.
 
-Po wyświetleniu zawartości kontenera obiektów blob zostanie wyświetlony na karcie, znane jako widok kontenera obiektów blob.
+Po wyświetleniu zawartości kontenera obiektów BLOB pojawia się on na karcie znanej jako widok kontenera obiektów BLOB.
 
-![Widok kontenera obiektów blob](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC749016.png)
+![Widok kontenera obiektów BLOB](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC749016.png)
 
-Korzystając z przycisków w prawym górnym rogu widoku kontenera obiektów blob, należy wykonać następujące operacje obiektów blob:
+Można wykonać następujące operacje na obiektach Blob przy użyciu przycisków w prawym górnym rogu widoku kontenera obiektów blob:
 
-* Wprowadź wartość filtru i zastosować je.
-* Odśwież listę obiektów blob w kontenerze.
+* Wprowadź wartość filtru i Zastosuj ją.
+* Odśwież listę obiektów BLOB w kontenerze.
 * Przekaż plik.
-* Usuwanie obiektu blob. (Usunięcie pliku z kontenera obiektów blob nie powoduje usunięcia pliku podstawowego. Powoduje tylko usunięcie go z kontenera obiektów blob.)
-* Otwórz obiekt blob.
-* Zapisywanie obiektu blob na komputerze lokalnym.
+* Usuń obiekt BLOB. (Usunięcie pliku z kontenera obiektów BLOB nie powoduje usunięcia pliku bazowego. Usuwa go tylko z kontenera obiektów BLOB.)
+* Otwórz obiekt BLOB.
+* Zapisz obiekt BLOB na komputerze lokalnym.
 
-### <a name="to-create-a-folder-or-subfolder-in-a-blob-container"></a>Aby utworzyć folder lub podfolder w kontenerze obiektów blob
+### <a name="to-create-a-folder-or-subfolder-in-a-blob-container"></a>Aby utworzyć folder lub podfolder w kontenerze obiektów BLOB
 
-1. Wybierz kontener obiektów blob w Eksploratorze chmury. W oknie kontenera wybierz **przekazywanie obiektu Blob** przycisku.
+1. Wybierz kontener obiektów BLOB w Eksploratorze chmury. W oknie kontenera wybierz przycisk **Przekaż obiekt BLOB** .
 
-1. W **Przekaż nowy plik** okno dialogowe, wybierz opcję **Przeglądaj** przycisk, aby określić plik, który chcesz przekazać, a następnie wprowadź nazwę folderu, w **folderu (opcjonalnie)** pole.
+1. W oknie dialogowym **Przekaż nowy plik** wybierz przycisk **Przeglądaj** , aby określić plik do przekazania, a następnie wprowadź nazwę folderu w polu **folder (opcjonalnie)** .
 
-   ![Próba przekazania pliku do folderu obiektów blob](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766037.png)
+   ![Przekazywanie pliku do folderu obiektów BLOB](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766037.png)
 
-   Możesz dodać podfoldery w folderach kontenera, postępując zgodnie z tego samego kroku. Jeśli nie określisz nazwy folderu, plik jest przekazywany do najwyższego poziomu określonego kontenera obiektów blob. Plik pojawi się w określonym folderze w kontenerze.
+   Można dodać podfoldery w folderach kontenerów, wykonując ten sam krok. Jeśli nie określisz nazwy folderu, plik zostanie przekazany do najwyższego poziomu kontenera obiektów BLOB. Plik pojawi się w określonym folderze w kontenerze.
 
-   ![Folder dodany do kontenera obiektów blob](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766038.png)
+   ![Folder dodany do kontenera obiektów BLOB](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766038.png)
 
-1. Kliknij dwukrotnie folder lub wybierz klawisz Enter, aby wyświetlić zawartość tego folderu. Gdy jesteś w folderze kontenera, wróć do głównego kontenera, wybierając **Otwórz katalog nadrzędny** przycisku (strzałka).
+1. Kliknij dwukrotnie folder lub wybierz klawisz ENTER, aby wyświetlić zawartość folderu. Gdy jesteś w folderze kontenera, możesz wrócić do katalogu głównego kontenera, wybierając przycisk **Otwórz katalog nadrzędny** (strzałka).
 
 ### <a name="to-delete-a-container-folder"></a>Aby usunąć folder kontenera
 
 Usuń wszystkie pliki w folderze.
 
-Ponieważ folderów w kontenerach obiektów blob są foldery wirtualne, nie można utworzyć pustego folderu. Również nie można usunąć folderu, aby usunąć jej zawartość pliku, ale zamiast tego należy usunąć całą zawartość folderu można usunąć folderu, sam.
+Ponieważ foldery w kontenerach obiektów BLOB są folderami wirtualnymi, nie można utworzyć pustego folderu. Nie można również usunąć folderu, aby usunąć jego zawartość, ale należy usunąć całą zawartość folderu, aby usunąć sam folder.
 
-### <a name="to-filter-blobs-in-a-container"></a>Aby odfiltrować obiekty BLOB w kontenerze
+### <a name="to-filter-blobs-in-a-container"></a>Aby odfiltrować obiekty blob w kontenerze
 
-Można filtrować obiektów blob, które są wyświetlane, określając Wspólny prefiks.
+Można filtrować obiekty blob, które są wyświetlane przez określenie wspólnego prefiksu.
 
-Na przykład, jeśli wprowadzony prefiks **hello** w polu tekstowym filtru, a następnie wybierz **Execute** ( **!** ) są wyświetlane tylko obiekty BLOB, które zaczynają się ciągiem "hello" przycisku.
+Jeśli na przykład wprowadzisz polecenie **Hello** w polu tekstowym filtr, a następnie wybierzesz przycisk **Execute** ( **!** ), zostaną wyświetlone tylko obiekty blob zaczynające się od "Hello".
 
 ![Pole tekstowe filtru](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC519076.png)
 
-W polu tekstowym filtru jest rozróżniana wielkość liter i nie obsługuje filtrowanie przy użyciu symboli wieloznacznych. Obiekty BLOB można filtrować tylko według prefiksu. Prefiks mogą zawierać ogranicznik, korzystając z ogranicznika do organizowania obiektów blob w wirtualnej hierarchii. Na przykład filtrowania według prefiksu "HelloFabric /" zwraca wszystkie obiekty BLOB, które zaczynają się od tego ciągu.
+W polu tekstowym filtr jest rozróżniana wielkość liter i nie jest obsługiwane filtrowanie z użyciem symboli wieloznacznych. Obiekty blob można filtrować tylko według prefiksu. Prefiks może zawierać ogranicznik, jeśli używasz ogranicznika do organizowania obiektów BLOB w hierarchii wirtualnej. Na przykład filtrowanie na prefiksie "HelloFabric/" zwraca wszystkie obiekty blob, które zaczynają się od tego ciągu.
 
-### <a name="to-download-blob-data"></a>Aby pobrać dane obiektów blob
+### <a name="to-download-blob-data"></a>Aby pobrać dane obiektów BLOB
 
-W programie Cloud Explorer należy użyć jednej z następujących metod:
+W programie Cloud Explorer Użyj dowolnej z następujących metod:
 
-* Otwórz menu skrótów dla jednego lub więcej obiektów blob, a następnie wybierz **Otwórz**.
-* Wybierz nazwę obiektu blob, a następnie wybierz pozycję **Otwórz** przycisku.
-* Kliknij dwukrotnie nazwę obiektu blob.
+* Otwórz menu skrótów dla co najmniej jednego obiektu BLOB, a następnie wybierz polecenie **Otwórz**.
+* Wybierz nazwę obiektu BLOB, a następnie wybierz przycisk **Otwórz** .
+* Kliknij dwukrotnie nazwę obiektu BLOB.
 
-Postęp pobierania obiektów blob, który pojawia się w **dziennika aktywności platformy Azure** okna.
+Postęp pobierania obiektu BLOB jest wyświetlany w oknie **Dziennik aktywności platformy Azure** .
 
-Obiekt blob zostanie otwarty w domyślny edytor dla tego typu pliku. System operacyjny rozpoznaje typ pliku, plik jest otwierany w aplikacji zainstalowanej lokalnie. W przeciwnym razie zostanie wyświetlony monit wybierz aplikację, która jest odpowiednia dla typu pliku obiektu blob. Plik lokalny, który jest tworzony podczas pobierania obiektu blob jest oznaczony jako tylko do odczytu.
+Obiekt BLOB zostanie otwarty w domyślnym edytorze dla tego typu pliku. Jeśli system operacyjny rozpoznaje typ pliku, plik zostanie otwarty w aplikacji zainstalowanej lokalnie. W przeciwnym razie zostanie wyświetlony monit o wybranie aplikacji, która jest odpowiednia dla typu pliku obiektu BLOB. Plik lokalny, który jest tworzony podczas pobierania obiektu BLOB, jest oznaczony jako tylko do odczytu.
 
-Dane obiektu blob jest lokalnie w pamięci podręcznej i sprawdza, czy czas ostatniej modyfikacji obiektu blob w usłudze Azure Blob storage. Jeśli obiekt blob został zaktualizowany od czasu ostatniego pobrania, zostanie pobrana ponownie. W przeciwnym razie obiekt blob jest ładowany z dysku lokalnego.
+Dane obiektów BLOB są buforowane lokalnie i sprawdzane względem czasu ostatniej modyfikacji obiektu BLOB w usłudze Azure Blob Storage. Jeśli obiekt BLOB został zaktualizowany od czasu ostatniego pobrania, zostanie pobrany ponownie. W przeciwnym razie obiekt BLOB jest ładowany z dysku lokalnego.
 
-Domyślnie obiekt blob jest pobierany do katalogu tymczasowego. Aby pobrać obiekty BLOB do określonego katalogu, otwórz menu skrótów dla nazwy wybranego obiektu blob, a następnie wybierz **Zapisz jako**. Po zapisaniu obiektu blob w ten sposób pliku obiektu blob nie jest otwarty, a plik lokalny jest tworzony za pomocą atrybutów odczytu/zapisu.
+Domyślnie obiekt BLOB jest pobierany do katalogu tymczasowego. Aby pobrać obiekty blob do określonego katalogu, otwórz menu skrótów dla wybranych nazw obiektów blob i wybierz polecenie **Zapisz jako**. Gdy zapisujesz obiekt BLOB w ten sposób, plik obiektu BLOB nie zostanie otwarty, a plik lokalny jest tworzony przy użyciu atrybutów odczytu i zapisu.
 
-### <a name="to-upload-blobs"></a>Do przekazania obiektów blob
+### <a name="to-upload-blobs"></a>Aby przekazać obiekty blob
 
-Do przekazania obiektów blob, wybierz **przekazywanie obiektu Blob** przycisku, gdy kontener jest otwarte na potrzeby wyświetlania w widoku do kontenera obiektów blob.
+Aby przekazać obiekty blob, wybierz przycisk **Przekaż obiekt BLOB** , gdy kontener jest otwarty do wyświetlania w widoku kontenera obiektów BLOB.
 
-Można wybrać jeden lub więcej plików do przekazania, a następnie możesz przekazać pliki dowolnego typu. **Dziennika aktywności platformy Azure** okno pokazuje postęp przekazywania. Aby uzyskać więcej informacji o tym, jak pracować z danymi obiektów blob, zobacz [jak używać usługi Azure Blob storage na platformie .NET](http://go.microsoft.com/fwlink/p/?LinkId=267911).
+Można wybrać co najmniej jeden plik do przekazania i można przekazać pliki dowolnego typu. W oknie **Dziennik aktywności platformy Azure** zostanie wyświetlony postęp przekazywania. Aby uzyskać więcej informacji na temat sposobu pracy z danymi obiektów blob, zobacz [jak korzystać z usługi Azure Blob Storage w środowisku .NET](/azure/storage/blobs/storage-quickstart-blobs-dotnet).
 
-### <a name="to-view-logs-transferred-to-blobs"></a>Aby wyświetlić dzienniki przekazywane do obiektów blob
+### <a name="to-view-logs-transferred-to-blobs"></a>Aby wyświetlić dzienniki przesłane do obiektów BLOB
 
-Jeśli używasz usługi Azure Diagnostics dane dziennika z aplikacji systemu Azure i dzienników zostały przeniesione do swojego konta magazynu, zostanie wyświetlone kontenerów, które platformy Azure utworzone dla tych dzienników. Wyświetlanie dzienników w Eksploratorze serwera jest prosty sposób zidentyfikować problemy z aplikacją, zwłaszcza, jeśli jest został wdrożony na platformie Azure.
+Jeśli używasz Diagnostyka Azure do rejestrowania danych z aplikacji platformy Azure i przeniesionosz dzienniki do konta magazynu, zobaczysz kontenery utworzone przez platformę Azure dla tych dzienników. Wyświetlanie tych dzienników w Eksplorator serwera to prosty sposób na zidentyfikowanie problemów z aplikacją, szczególnie w przypadku, gdy została ona wdrożona na platformie Azure.
 
-Aby uzyskać więcej informacji na temat usługi Azure Diagnostics, zobacz [zbierania danych rejestrowania przez diagnostykę platformy Azure przy użyciu](https://msdn.microsoft.com/library/azure/gg433048.aspx).
+Aby uzyskać więcej informacji na temat Diagnostyka Azure, zobacz [zbieranie danych rejestrowania przy użyciu Diagnostyka Azure](https://msdn.microsoft.com/library/azure/gg433048.aspx).
 
-### <a name="to-get-the-url-for-a-blob"></a>Aby uzyskać adres URL obiektu blob
+### <a name="to-get-the-url-for-a-blob"></a>Aby uzyskać adres URL dla obiektu BLOB
 
-Otwórz menu skrótów obiektu blob, a następnie wybierz pozycję **URL kopii**.
+Otwórz menu skrótów obiektu BLOB, a następnie wybierz polecenie **Kopiuj adres URL**.
 
-### <a name="to-edit-a-blob"></a>Aby edytować obiekt blob
+### <a name="to-edit-a-blob"></a>Aby edytować obiekt BLOB
 
-Wybierz obiekt blob, a następnie wybierz pozycję **otwarty obiekt Blob** przycisku.
+Wybierz obiekt BLOB, a następnie wybierz przycisk **Otwórz obiekt BLOB** .
 
-Plik jest pobierany do tymczasowej lokalizacji i otworzyć na komputerze lokalnym. Po wprowadzeniu zmian ponownie przekazać obiekt blob.
+Plik zostanie pobrany do lokalizacji tymczasowej i otwarty na komputerze lokalnym. Przekaż obiekt BLOB ponownie po wprowadzeniu zmian.
 
-## <a name="work-with-queue-resources"></a>Praca z zasobami queue
+## <a name="work-with-queue-resources"></a>Współpraca z zasobami kolejki
 
-Kolejki usługi Storage są hostowane na koncie usługi Azure storage. Aby zezwolić na chmurze usługi ról, aby komunikować się ze sobą oraz z innymi usługami przez mechanizm przekazywania komunikatów, można użyć ich. Kolejki są dostępne programowo za pośrednictwem usługi w chmurze, jak i za pośrednictwem usługi sieci web dla klientów zewnętrznych. Kolejkę można także przejść bezpośrednio przy użyciu Eksploratora serwera w programie Visual Studio.
+Kolejki usług magazynu są hostowane na koncie usługi Azure Storage. Można ich użyć, aby umożliwić role usługi w chmurze komunikować się ze sobą i z innymi usługami przez mechanizm przekazywania komunikatów. Dostęp do kolejki można wykonać programowo za pośrednictwem usługi w chmurze i za pośrednictwem usługi sieci Web dla klientów zewnętrznych. Dostęp do kolejki można także uzyskać bezpośrednio przy użyciu Eksplorator serwera w programie Visual Studio.
 
-Podczas tworzenia usługi w chmurze, która używa kolejek można użyć programu Visual Studio do tworzenia kolejek i interaktywnej pracy z nimi podczas tworzenia i testowania kodu.
+Podczas tworzenia usługi w chmurze, która korzysta z kolejek, możesz chcieć użyć programu Visual Studio do tworzenia kolejek i pracy z nimi interaktywnie podczas tworzenia i testowania kodu.
 
-W Eksploratorze serwera można wyświetlić kolejek na koncie magazynu, tworzenie i usuwanie kolejek, otworzyć kolejkę, aby wyświetlić jego wiadomości i dodawanie komunikatów do kolejki. Podczas otwierania kolejki do wyświetlania, można wyświetlić pojedyncze wiadomości i wykonywać następujące akcje w kolejce, korzystając z przycisków w lewym górnym rogu:
+W Eksplorator serwera można wyświetlić kolejki na koncie magazynu, utworzyć i usunąć kolejki, otworzyć kolejkę w celu wyświetlenia jej komunikatów oraz dodać komunikaty do kolejki. Po otwarciu kolejki do wyświetlania można wyświetlić poszczególne komunikaty, a następnie wykonać następujące akcje w kolejce przy użyciu przycisków w lewym górnym rogu:
 
 * Odśwież widok kolejki.
-* Dodawanie komunikatu do kolejki.
-* Usuń z kolejki komunikatów najwyższego poziomu.
-* Wyczyść całej kolejki.
+* Dodaj komunikat do kolejki.
+* Usuwa komunikat z kolejki najwyższego poziomu.
+* Wyczyść całą kolejkę.
 
-Na poniższej ilustracji przedstawiono kolejkę, która zawiera dwa komunikaty:
+Na poniższej ilustracji przedstawiono kolejkę zawierającą dwie komunikaty:
 
 ![Wyświetlanie kolejki](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC651470.png)
 
-Aby uzyskać więcej informacji na temat magazynu usług kolejek, zobacz [Rozpoczynanie pracy z usługą Azure Queue storage przy użyciu platformy .NET](http://go.microsoft.com/fwlink/?LinkID=264702). Uzyskać informacji na temat usługi sieci web dla magazynu usług kolejek, zobacz [pojęcia dotyczące usługi kolejki](http://go.microsoft.com/fwlink/?LinkId=264788). Aby uzyskać informacje o sposobie wysyłania komunikatów do kolejki usługi storage przy użyciu programu Visual Studio, zobacz [wysyłanie komunikatów do kolejki usługi Storage](https://docs.microsoft.com/azure/visual-studio/vs-storage-cloud-services-getting-started-queues).
+Aby uzyskać więcej informacji o kolejkach usługi Storage, zobacz [Rozpoczynanie pracy z usługą Azure queue storage przy użyciu platformy .NET](/azure/storage/queues/storage-dotnet-how-to-use-queues). Aby uzyskać informacje na temat usługi sieci Web dla kolejek usług magazynu, zobacz temat [Omówienie usługi Queue](/rest/api/storageservices/Queue-Service-Concepts). Aby uzyskać informacje o sposobach wysyłania komunikatów do kolejki usług magazynu przy użyciu programu Visual Studio, zobacz [wysyłanie komunikatów do kolejki usług magazynu](/azure/visual-studio/vs-storage-cloud-services-getting-started-queues).
 
 > [!NOTE]
-> Kolejki usługi magazynu różnią się od kolejek usługi Azure Service Bus. Aby uzyskać więcej informacji na temat usługi Service Bus, zobacz [kolejek usługi Service Bus, tematy i subskrypcje](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-queues-topics-subscriptions).
+> Kolejki usług magazynu różnią się od kolejek Azure Service Bus. Więcej informacji o Service Bus kolejkach znajduje się w temacie [Service Bus Queues, tematy i subskrypcje](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions).
 
-## <a name="work-with-table-resources"></a>Praca z tabeli zasobów
+## <a name="work-with-table-resources"></a>Współpraca z zasobami tabeli
 
-Usługa Azure Table storage przechowuje duże ilości danych strukturalnych. Usługa jest magazynem danych NoSQL, który przyjmuje uwierzytelnione wywołania z wewnątrz i na zewnątrz chmury platformy Azure. Tabele platformy Azure są idealnym rozwiązaniem do przechowywania strukturalnych danych nierelacyjnych.
+Usługa Azure Table Storage przechowuje duże ilości danych strukturalnych. Usługa to magazyn danych NoSQL, który akceptuje uwierzytelnione wywołania z chmury platformy Azure i poza nią. Tabele platformy Azure doskonale nadają się do przechowywania strukturalnych danych nierelacyjnych.
 
 ### <a name="to-create-a-table"></a>Aby utworzyć tabelę
 
-1. W programie Cloud Explorer, wybierz **tabel** węzeł konta magazynu, a następnie wybierz **Create Table**.
-1. W **Create Table** okna dialogowego wprowadź nazwę tabeli.
+1. W programie Cloud Explorer wybierz węzeł **tabele** konta magazynu, a następnie wybierz pozycję **Utwórz tabelę**.
+1. W oknie dialogowym **Tworzenie tabeli** wprowadź nazwę tabeli.
 
-### <a name="to-view-table-data"></a>Aby wyświetlić dane w tabeli
+### <a name="to-view-table-data"></a>Aby wyświetlić dane tabeli
 
-1. W Eksploratorze chmury Otwórz **Azure** węzeł, a następnie otwórz **magazynu** węzła.
-1. Otwórz węzeł konta magazynu, że są Państwo zainteresowani, a następnie otwórz **tabel** węzeł, aby wyświetlić listę tabel dla konta magazynu.
-1. Otwórz menu skrótów dla tabeli, a następnie wybierz **widok tabeli**.
+1. W programie Cloud Explorer otwórz węzeł **Azure** , a następnie otwórz węzeł **Magazyn** .
+1. Otwórz węzeł konta magazynu, który Cię interesuje, a następnie otwórz węzeł **tabele** , aby wyświetlić listę tabel dla konta magazynu.
+1. Otwórz menu skrótów dla tabeli, a następnie wybierz polecenie **Wyświetl tabelę**.
 
-    ![Tabelę platformy Azure w Eksploratorze rozwiązań](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC744165.png)
+    ![Tabela platformy Azure w Eksplorator rozwiązań](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC744165.png)
 
-Tabela są zorganizowane według jednostek (pokazane w wierszach) i właściwości (pokazane w kolumnach). Na przykład Następna ilustracja przedstawia podmioty wymienione w Projektancie tabel.
+Tabela jest zorganizowana według jednostek (pokazanych w wierszach) i właściwości (pokazanych w kolumnach). Na przykład Następna ilustracja przedstawia jednostki wymienione w Projektancie tabel.
 
-### <a name="to-edit-table-data"></a>Aby edytować dane w tabeli
+### <a name="to-edit-table-data"></a>Aby edytować dane tabeli
 
-W Projektancie tabel, otwórz menu skrótów dla jednostki (pojedynczy wiersz) lub właściwości (jedną komórkę), a następnie wybierz **Edytuj**.
+W Projektancie tabel, otwórz menu skrótów dla jednostki (pojedynczy wiersz) lub właściwość (pojedyncza komórka), a następnie wybierz pozycję **Edytuj**.
 
-![Dodaj lub Edytuj jednostkę tabeli](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC656238.png)
+![Dodawanie lub edytowanie jednostki tabeli](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC656238.png)
 
-Jednostki w jednej tabeli nie są wymagane do tego samego zestawu właściwości (kolumny). Mieć na uwadze następujące ograniczenia na wyświetlanie i edytowanie danych w tabeli:
+Jednostki w pojedynczej tabeli nie muszą mieć tego samego zestawu właściwości (kolumn). Należy pamiętać o następujących ograniczeniach dotyczących wyświetlania i edytowania danych tabeli:
 
-* Nie można wyświetlić ani edytować danych binarnych (`type byte[]`), ale można go przechowywać w tabeli.
-* Nie można edytować **PartitionKey** lub **RowKey** wartości, ponieważ Magazyn tabel na platformie Azure nie obsługuje tej operacji.
-* Nie można utworzyć właściwość o nazwie **sygnatura czasowa**. Usługi magazynu platformy Azure Użyj właściwości o tej nazwie.
-* Jeśli wprowadzasz **daty/godziny** wartości, należy wykonać, format, który jest odpowiedni do ustawienia regionalne i językowe komputera (na przykład, MM/DD/rrrr hh: mm: [AM | PM] w Stanach Zjednoczonych w języku angielskim).
+* Nie można wyświetlać ani edytować danych binarnych (`type byte[]`), ale można je przechowywać w tabeli.
+* Nie można edytować wartości **PartitionKey** lub **RowKey** , ponieważ magazyn tabel na platformie Azure nie obsługuje tej operacji.
+* Nie można utworzyć właściwości o nazwie **timestamp**. Usługi Azure Storage używają właściwości o tej nazwie.
+* Jeśli wprowadzisz wartość **daty i godziny** , musisz użyć formatu odpowiedniego dla ustawienia Region i język komputera (na przykład mm/dd/rrrr hh: mm: SS [am | PM] dla angielskiej wersji językowej USA).
 
 ### <a name="to-add-entities"></a>Aby dodać jednostki
 
-1. W Projektancie tabel wybierz **Dodaj jednostkę** przycisku.
+1. W Projektancie tabel wybierz przycisk **Dodaj jednostkę** .
 
-    ![Dodawanie jednostki przycisku](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC655336.png)
+    ![Przycisk Dodaj jednostkę](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC655336.png)
 
-1. W **Dodaj jednostkę** okna dialogowego wprowadź wartości **PartitionKey** i **RowKey** właściwości.
+1. W oknie dialogowym **Dodawanie jednostki** wprowadź wartości właściwości **PartitionKey** i **RowKey** .
 
-    ![Dodaj jednostki, okno dialogowe](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC655335.png)
+    ![Okno dialogowe Dodawanie jednostki](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC655335.png)
 
-    Należy dokładnie wprowadzić wartości. Nie można ich zmienić po zamknięciu okna dialogowego, o ile nie można usunąć jednostki i dodaj go ponownie.
+    Należy uważnie wprowadzić wartości. Nie można ich zmienić po zamknięciu okna dialogowego, chyba że usuniesz jednostkę i dodasz ją ponownie.
 
-### <a name="to-filter-entities"></a>Aby filtrować jednostek
+### <a name="to-filter-entities"></a>Aby filtrować jednostki
 
-Można dostosować zestaw jednostek, które pojawiają się w tabeli, jeśli Użyj konstruktora zapytań.
+W przypadku korzystania z konstruktora kwerend można dostosować zestaw jednostek, które są wyświetlane w tabeli.
 
-1. Aby otworzyć Konstruktora zapytań, otwórz tabelę do wyświetlenia.
-1. Wybierz **konstruktora zapytań** na listwie narzędziowej widoku tabeli.
+1. Aby otworzyć konstruktora zapytań, Otwórz tabelę do wyświetlenia.
+1. Wybierz przycisk **Konstruktor zapytań** na pasku narzędzi widoku tabeli.
 
-    **Konstruktora zapytań** pojawi się okno dialogowe. Poniższa ilustracja przedstawia kwerendę, która jest tworzona w Konstruktorze zapytań.
+    Zostanie wyświetlone okno dialogowe **Konstruktor zapytań** . Na poniższej ilustracji przedstawiono zapytanie, które jest kompilowane w konstruktorze zapytań.
 
     ![Konstruktor zapytań](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC652231.png)
-1. Po zakończeniu tworzenia zapytania, zamknij okno dialogowe. Tekst w formularzu, zapytania pojawia się w polu tekstowym jako filtr usługi danych WCF.
-1. Aby uruchomić zapytanie, wybierz ikonę zielony trójkąt.
+1. Po zakończeniu tworzenia zapytania Zamknij okno dialogowe. Tekst w postaci tekstu zapytania pojawia się w polu tekstowym jako filtr Usługi danych programu WCF.
+1. Aby uruchomić zapytanie, wybierz ikonę zielonego trójkąta.
 
-Można także filtrować dane jednostki, która pojawia się w Projektancie tabel po wprowadzeniu ciąg filtru WCF Data Services bezpośrednio w polu tekstowym filtru. Tego rodzaju ciągu przypomina klauzulę WHERE języka SQL, ale jest wysyłane do serwera jako żądanie HTTP. Aby uzyskać informacje dotyczące sposobu konstruowania parametry filtru, zobacz [Constructing parametry filtru dla projektanta tabel](vs-azure-tools-table-designer-construct-filter-strings.md).
+Możesz również filtrować dane jednostki, które pojawiają się w Projektancie tabel, jeśli wprowadzisz ciąg filtru Usługi danych programu WCF bezpośrednio w polu tekstowym filtru. Ten rodzaj ciągu jest podobny do klauzuli SQL WHERE, ale jest wysyłany do serwera jako żądanie HTTP. Aby uzyskać informacje o sposobie konstruowania ciągów filtru, zobacz [konstruowanie ciągów filtru dla projektanta tabel](vs-azure-tools-table-designer-construct-filter-strings.md).
 
-Poniższa ilustracja przedstawia przykład ciągu prawidłowego filtru:
+Na poniższej ilustracji przedstawiono przykład prawidłowego ciągu filtru:
 
 ![Ciąg filtru](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC655337.png)
 
-## <a name="refresh-storage-data"></a>Odświeżanie magazynu danych
+## <a name="refresh-storage-data"></a>Odśwież dane magazynu
 
-Gdy Eksplorator serwera łączy się lub pobiera dane z konta magazynu, operacja może potrwać do minuty na zakończenie. Jeśli nie można nawiązać połączenia z Eksploratora serwera, operacja może upłynąć limit czasu. Gdy dane są pobierane, możesz kontynuować pracę w innych częściach programu Visual Studio. Aby anulować operację, jeśli trwa zbyt długo, wybierz pozycję **Zatrzymaj odświeżanie** przycisk na pasku narzędzi Eksploratora serwera.
+Gdy Eksplorator serwera nawiązuje połączenie lub pobiera dane z konta magazynu, operacja może potrwać do minuty. Jeśli nie można nawiązać połączenia Eksplorator serwera, operacja może przekroczyć limit czasu. Podczas pobierania danych można nadal korzystać z innych części programu Visual Studio. Aby anulować operację, jeśli trwa zbyt długo, wybierz przycisk **Zatrzymaj Odśwież** na pasku narzędzi Eksplorator serwera.
 
-### <a name="to-refresh-blob-container-data"></a>Aby odświeżyć dane w kontenerze obiektów blob
+### <a name="to-refresh-blob-container-data"></a>Aby odświeżyć dane kontenera obiektów BLOB
 
-* Wybierz **obiektów blob** węźle poniżej **magazynu**, a następnie wybierz pozycję **Odśwież** przycisk na pasku narzędzi Eksploratora serwera.
-* Aby odświeżyć listę obiektów blob, który jest wyświetlany, wybierz **Execute** przycisku.
+* Wybierz węzeł **obiekty blob** pod **magazynem**, a następnie wybierz przycisk **Odśwież** na pasku narzędzi Eksplorator serwera.
+* Aby odświeżyć listę obiektów blob, które są wyświetlane, wybierz przycisk **Execute (wykonaj** ).
 
-### <a name="to-refresh-table-data"></a>Aby odświeżyć dane w tabeli
+### <a name="to-refresh-table-data"></a>Aby odświeżyć dane tabeli
 
-* Wybierz **tabel** węźle poniżej **magazynu**, a następnie wybierz pozycję **Odśwież** przycisk na pasku narzędzi Eksploratora serwera.
-* Aby odświeżyć listę jednostek, który jest wyświetlany w Projektancie tabel, wybierz **Execute** przycisku w Projektancie tabel.
+* Wybierz węzeł **tabele** pod **magazynem**, a następnie wybierz przycisk **Odśwież** na pasku narzędzi Eksplorator serwera.
+* Aby odświeżyć listę jednostek, które są wyświetlane w Projektancie tabel, wybierz przycisk **Execute (wykonaj** ) w Projektancie tabel.
 
-### <a name="to-refresh-queue-data"></a>Aby odświeżyć dane w kolejce
+### <a name="to-refresh-queue-data"></a>Aby odświeżyć dane kolejki
 
-Wybierz **kolejek** węźle poniżej **magazynu**, a następnie wybierz pozycję **Odśwież** przycisk na pasku narzędzi Eksploratora serwera.
+Wybierz węzeł **kolejki** pod **magazynem**, a następnie wybierz przycisk **Odśwież** na pasku narzędzi Eksplorator serwera.
 
-### <a name="to-refresh-all-items-in-a-storage-account"></a>Aby odświeżyć wszystkie elementy w ramach konta magazynu
+### <a name="to-refresh-all-items-in-a-storage-account"></a>Aby odświeżyć wszystkie elementy na koncie magazynu
 
-Wybierz nazwę konta, a następnie wybierz **Odśwież** przycisk na pasku narzędzi Eksploratora serwera.
+Wybierz nazwę konta, a następnie wybierz przycisk **Odśwież** na pasku narzędzi Eksplorator serwera.
 
-## <a name="add-storage-accounts-by-using-server-explorer"></a>Dodawanie kont magazynu za pomocą Eksploratora serwera
+## <a name="add-storage-accounts-by-using-server-explorer"></a>Dodawanie kont magazynu przy użyciu Eksplorator serwera
 
-Istnieją dwa sposoby dodawania konta magazynu za pomocą Eksploratora serwera. Można utworzyć konta magazynu w ramach subskrypcji platformy Azure, lub można dołączyć istniejącego konta magazynu.
+Istnieją dwa sposoby dodawania kont magazynu za pomocą Eksplorator serwera. Możesz utworzyć konto magazynu w ramach subskrypcji platformy Azure lub dołączyć istniejące konto magazynu.
 
-### <a name="to-create-a-storage-account-by-using-server-explorer"></a>Aby utworzyć konto magazynu za pomocą Eksploratora serwera
+### <a name="to-create-a-storage-account-by-using-server-explorer"></a>Aby utworzyć konto magazynu przy użyciu Eksplorator serwera
 
-1. W Eksploratorze serwera, otwórz menu skrótów dla **magazynu** węzeł, a następnie wybierz **Utwórz konto magazynu**.
+1. W Eksplorator serwera Otwórz menu skrótów dla węzła **Magazyn** , a następnie wybierz pozycję **Utwórz konto magazynu**.
 
-1. W **Utwórz konto magazynu** okna dialogowego Wybierz lub wprowadź następujące informacje:
+1. W oknie dialogowym **Tworzenie konta magazynu** wybierz lub wprowadź następujące informacje:
 
    * Subskrypcja platformy Azure, do której chcesz dodać konto magazynu.
-   * Nazwa, którą chcesz użyć dla nowego konta magazynu.
-   * Region lub grupa koligacji, (na przykład zachodnie stany USA lub Azja Wschodnia).
-   * Typ replikacji, którego chcesz użyć dla konta magazynu, takich jak lokalnie nadmiarowy.
+   * Nazwa, która ma być używana dla nowego konta magazynu.
+   * Region lub grupa koligacji (na przykład zachodnie stany USA lub Azja Wschodnia).
+   * Typ replikacji, który ma być używany dla konta magazynu, na przykład lokalnie nadmiarowy.
 
-   ![Tworzenie konta usługi Azure storage](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC744166.png)
+   ![Utwórz konto usługi Azure Storage](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC744166.png)
 
-1. Wybierz **tworzenie**.
+1. Wybierz pozycję **Utwórz**.
 
-Nowe konto magazynu jest wyświetlana w **magazynu** listy w Eksploratorze rozwiązań.
+Nowe konto magazynu zostanie wyświetlone na liście **Magazyn** w Eksplorator rozwiązań.
 
-### <a name="to-attach-an-existing-storage-account-by-using-server-explorer"></a>Można dołączyć istniejącego konta magazynu za pomocą Eksploratora serwera
+### <a name="to-attach-an-existing-storage-account-by-using-server-explorer"></a>Aby dołączyć istniejące konto magazynu przy użyciu Eksplorator serwera
 
-1. W Eksploratorze serwera, otwórz menu skrótów dla platformy Azure **magazynu** węzeł, a następnie wybierz **dołączanie zewnętrznej usługi Storage**.
+1. W Eksplorator serwera Otwórz menu skrótów dla węzła usługi Azure **Storage** , a następnie wybierz pozycję **Dołącz magazyn zewnętrzny**.
 
     ![Dodawanie istniejącego konta magazynu](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766039.png)
-1. W **Utwórz konto magazynu** okna dialogowego Wybierz lub wprowadź następujące informacje:
+1. W oknie dialogowym **Tworzenie konta magazynu** wybierz lub wprowadź następujące informacje:
 
-   * Nazwa istniejącego konta magazynu, który chcesz dołączyć.
-   * Klucz dla wybranego konta magazynu. Ta wartość jest zwykle zapewniany dla Ciebie, po wybraniu konta magazynu. Visual Studio do zapamiętania klucza konta magazynu, zaznacz **klucz konta Zapamiętaj** pole wyboru.
-   * Protokół nawiązywania połączenia z kontem usługi storage, takie jak HTTP, HTTPS lub niestandardowego punktu końcowego. Aby uzyskać więcej informacji o niestandardowych punktach końcowych, zobacz [jak skonfigurować parametry połączenia](https://msdn.microsoft.com/library/azure/ee758697.aspx).
+   * Nazwa istniejącego konta magazynu, które chcesz dołączyć.
+   * Klucz dla wybranego konta magazynu. Ta wartość jest zazwyczaj podawana po wybraniu konta magazynu. Jeśli chcesz, aby program Visual Studio zapamiętał klucz konta magazynu, zaznacz pole wyboru **Pamiętaj klucz konta** .
+   * Protokół, który ma być używany do nawiązywania połączenia z kontem magazynu, na przykład HTTP, HTTPS lub niestandardowy punkt końcowy. Aby uzyskać więcej informacji na temat niestandardowych punktów końcowych, zobacz [jak skonfigurować parametry połączenia](https://msdn.microsoft.com/library/azure/ee758697.aspx).
 
-### <a name="to-view-the-secondary-endpoints"></a>Aby wyświetlić dodatkowych punktów końcowych
+### <a name="to-view-the-secondary-endpoints"></a>Aby wyświetlić pomocnicze punkty końcowe
 
-Jeśli utworzono konto magazynu przy użyciu **dostęp do odczytu z magazynu geograficznie nadmiarowego** opcji replikacji można wyświetlić jego dodatkowej punkty końcowe, otwierając menu skrótów dla nazwy konta i następnie wybierz pozycję **właściwości**.
+Jeśli utworzono konto magazynu za pomocą opcji replikacji **geograficznej dostępu do odczytu** , można wyświetlić jej pomocnicze punkty końcowe, otwierając menu skrótów dla nazwy konta, a następnie wybierając pozycję **Właściwości**.
 
-![Dodatkowej punkty końcowe usługi Storage](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766040.png)
+![Pomocnicze punkty końcowe magazynu](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766040.png)
 
-### <a name="to-remove-a-storage-account-from-server-explorer"></a>Aby usunąć konto storage z poziomu Eksploratora serwera
+### <a name="to-remove-a-storage-account-from-server-explorer"></a>Aby usunąć konto magazynu z Eksplorator serwera
 
-W Eksploratorze serwera, otwórz menu skrótów dla nazwy konta, a następnie wybierz **Usuń**.
+W Eksplorator serwera Otwórz menu skrótów dla nazwy konta, a następnie wybierz polecenie **Usuń**.
 
-Jeśli usuniesz konto magazynu, wszelkie zapisane informacje o kluczu dla tego konta zostaną również usunięte.
+Usunięcie konta magazynu spowoduje również usunięcie wszystkich zapisanych informacji o kluczu dla tego konta.
 
-Jeśli usuniesz konto magazynu z poziomu Eksploratora serwera nie ma wpływu na, konta magazynu ani żadnych danych, którą zawiera. Po prostu usuwa odwołanie z poziomu Eksploratora serwera. Aby trwale usunąć konto magazynu, należy użyć [witryny Azure portal](https://portal.azure.com/).
+Po usunięciu konta magazynu z Eksplorator serwera nie wpłynie to na konto magazynu ani żadne dane, które zawiera. Po prostu usuwa odwołanie z Eksplorator serwera. Aby trwale usunąć konto magazynu, użyj [Azure Portal](https://portal.azure.com/).
 
 ## <a name="next-steps"></a>Następne kroki
 
-Aby dowiedzieć się więcej o sposobie używania usługi Azure storage, zobacz [uzyskiwania dostępu do usług Azure Storage](/azure/storage/common/storage-introduction).
+Aby dowiedzieć się więcej na temat korzystania z usług Azure Storage, zobacz [dostęp do usług Azure Storage](/azure/storage/common/storage-introduction).

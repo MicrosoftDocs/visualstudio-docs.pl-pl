@@ -1,5 +1,5 @@
 ---
-title: Warunki MSBuild | Dokumentacja firmy Microsoft
+title: Warunki MSBuild | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,30 +16,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1070483e492bbbf6cc9f6e9f4a8f4b225f2b74b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cf77e4630cd52e8dcb354b5625ae24eabc9d8ae9
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62842464"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72912081"
 ---
 # <a name="msbuild-conditions"></a>Warunki MSBuild
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] obsługuje określony zbiór warunków, które mogą być stosowane wszędzie tam, gdzie `Condition` atrybut jest dozwolony. W poniższej tabeli opisano te warunki.
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] obsługuje określony zestaw warunków, które mogą być stosowane wszędzie tam, gdzie atrybut `Condition` jest dozwolony. W poniższej tabeli opisano te warunki.
 
 |Warunek|Opis|
 |---------------|-----------------|
-|'`stringA`' == '`stringB`'|Daje w wyniku `true` Jeśli `stringA` jest równa `stringB`.<br /><br /> Na przykład:<br /><br /> `Condition="'$(CONFIG)'=='DEBUG'"`<br /><br /> Apostrofy nie są wymagane dla prostych ciągów znaków alfanumerycznych lub wartościami logicznymi. Jednakże apostrofy są wymagane do wartości puste.|
-|'`stringA`' != '`stringB`'|Daje w wyniku `true` Jeśli `stringA` nie jest równa `stringB`.<br /><br /> Na przykład:<br /><br /> `Condition="'$(CONFIG)'!='DEBUG'"`<br /><br /> Apostrofy nie są wymagane dla prostych ciągów znaków alfanumerycznych lub wartościami logicznymi. Jednakże apostrofy są wymagane do wartości puste.|
-|\<, >, \<=, >=|Oblicza wartości liczbowych operandu. Zwraca `true` Jeśli relacyjnych oceny ma wartość true. Argumenty operacji musi być liczbą dziesiętną lub szesnastkową. Liczby szesnastkowe musi zaczynać się od "0 x". **Uwaga:**  W pliku XML, znaki `<` i `>` muszą być poprzedzone znakiem zmiany znaczenia. Symbol `<` jest reprezentowany jako `&lt;`. Symbol `>` jest reprezentowany jako `&gt;`.|
-|Istnieje ("`stringA`")|Daje w wyniku `true` Jeśli plik lub folder o nazwie `stringA` istnieje.<br /><br /> Na przykład:<br /><br /> `Condition="!Exists('$(builtdir)')"`<br /><br /> Apostrofy nie są wymagane dla prostych ciągów znaków alfanumerycznych lub wartościami logicznymi. Jednakże apostrofy są wymagane do wartości puste.|
-|HasTrailingSlash ("`stringA`")|Daje w wyniku `true` czy określony ciąg zawiera albo końcowej kreski ułamkowej odwróconej (\\) lub przekazywania znaku ukośnika (/).<br /><br /> Na przykład:<br /><br /> `Condition="!HasTrailingSlash('$(OutputPath)')"`<br /><br /> Apostrofy nie są wymagane dla prostych ciągów znaków alfanumerycznych lub wartościami logicznymi. Jednakże apostrofy są wymagane do wartości puste.|
-|!|Daje w wyniku `true` Jeśli argument daje w wyniku `false`.|
-|Oraz|Daje w wyniku `true` Jeśli oba koniunkcję `true`.|
-|Lub|Daje w wyniku `true` , gdy co najmniej jeden z operandów jest `true`.|
-|()|Grupowanie mechanizm, który daje w wyniku `true` Jeśli zawarte wewnątrz wyrażenia mają `true`.|
-|$if$ (% wyrażenie %) $else$, $endif$|Sprawdza, czy określony `%expression%` pasuje do wartości ciągu parametru przekazany szablon niestandardowy. Jeśli `$if$` warunek to `true`, a następnie jego instrukcje są wykonywania; w przeciwnym razie `$else$` warunek jest sprawdzany. Jeśli `$else$` warunek jest `true`, nie można jej instrukcje wykonywania; w przeciwnym razie `$endif$` warunku zakończenia Obliczanie wyrażenia.<br /><br /> Przykłady użycia, zobacz [logiki parametru szablonu projektu/elementu programu Visual Studio](http://stackoverflow.com/questions/6709057/visual-studio-project-item-template-parameter-logic).|
+|"`stringA`" = = "`stringB`"|Oblicza `true`, jeśli `stringA` jest równa `stringB`.<br /><br /> Na przykład:<br /><br /> `Condition="'$(CONFIG)'=='DEBUG'"`<br /><br /> Pojedyncze cudzysłowy nie są wymagane w przypadku prostych ciągów alfanumerycznych lub wartości logicznych. Jednak dla pustych wartości są wymagane pojedyncze cudzysłowy.|
+|"`stringA`"! = "`stringB`"|Oblicza wartość `true`, jeśli `stringA` nie jest równa `stringB`.<br /><br /> Na przykład:<br /><br /> `Condition="'$(CONFIG)'!='DEBUG'"`<br /><br /> Pojedyncze cudzysłowy nie są wymagane w przypadku prostych ciągów alfanumerycznych lub wartości logicznych. Jednak dla pustych wartości są wymagane pojedyncze cudzysłowy.|
+|\<, >, \<=, > =|Oblicza wartości liczbowe argumentów operacji. Zwraca `true`, jeśli szacowanie relacyjne ma wartość true. Operandy muszą mieć wartość dziesiętną lub szesnastkową. Liczby szesnastkowe muszą zaczynać się od ciągu "0x". **Uwaga:**  W kodzie XML znaki `<` i `>` muszą być zmienione. Symbol `<` jest reprezentowany jako `&lt;`. Symbol `>` jest reprezentowany jako `&gt;`.|
+|Istnieje ("`stringA`")|Oblicza `true`, jeśli istnieje plik lub folder o nazwie `stringA`.<br /><br /> Na przykład:<br /><br /> `Condition="!Exists('$(builtdir)')"`<br /><br /> Pojedyncze cudzysłowy nie są wymagane w przypadku prostych ciągów alfanumerycznych lub wartości logicznych. Jednak dla pustych wartości są wymagane pojedyncze cudzysłowy.|
+|HasTrailingSlash ("`stringA`")|Oblicza `true`, jeśli określony ciąg zawiera znak ukośnika odwrotnego (\\) lub ukośnika (/).<br /><br /> Na przykład:<br /><br /> `Condition="!HasTrailingSlash('$(OutputPath)')"`<br /><br /> Pojedyncze cudzysłowy nie są wymagane w przypadku prostych ciągów alfanumerycznych lub wartości logicznych. Jednak dla pustych wartości są wymagane pojedyncze cudzysłowy.|
+|!|Oblicza `true`, jeśli operand zostanie obliczony na `false`.|
+|Lub|Oblicza `true`, jeśli oba operandy są szacowane do `true`.|
+|Lub|Oblicza `true`, jeśli co najmniej jeden z operandów zwróci `true`.|
+|()|Mechanizm grupowania, który jest obliczany do `true`, jeśli wyrażenia zawarte w obliczaniu do `true`.|
+|$if $ (% Expression%), $else $, $endif $|Sprawdza, czy określony `%expression%` jest zgodny z wartością ciągu podanego parametru szablonu niestandardowego. Jeśli warunek `$if$` zostanie oszacowany na `true`, jego instrukcje są uruchamiane; w przeciwnym razie warunek `$else$` jest zaznaczone. Jeśli warunek `$else$` jest `true`, jego instrukcje są uruchamiane; w przeciwnym razie warunek `$endif$` spowoduje zakończenie obliczania wyrażenia.<br /><br /> Przykłady użycia można znaleźć w temacie [logika parametrów projektu/elementu programu Visual Studio](https://stackoverflow.com/questions/6709057/visual-studio-project-item-template-parameter-logic).|
 
 ## <a name="see-also"></a>Zobacz także
-- [Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)
+- [Dokumentacja programu MSBuild](../msbuild/msbuild-reference.md)
 - [Konstrukcje warunkowe](../msbuild/msbuild-conditional-constructs.md)
-- [Przewodnik: Tworzenie pliku projektu MSBuild od zera](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)
+- [Przewodnik: Tworzenie pliku projektu MSBuild od podstaw](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)

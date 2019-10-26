@@ -1,5 +1,5 @@
 ---
-title: Zarządzanie wyjątkami za pomocą debugera | Dokumentacja firmy Microsoft
+title: Zarządzanie wyjątkami za pomocą debugera | Microsoft Docs
 ms.custom: seodec18
 ms.date: 10/09/2018
 ms.topic: conceptual
@@ -33,47 +33,47 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b83cb026bec6d33490517e5703a042b4a8e2434c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 00ad5b41dd0a11661d281f24474b7673ea0a342c
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62846674"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911511"
 ---
-# <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Zarządzanie wyjątkami za pomocą debugera programu Visual Studio
+# <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Zarządzanie wyjątkami za pomocą debugera w programie Visual Studio
 
-Wyjątek jest wskazaniem stanu błędu, który występuje, gdy program jest wykonywane. Można polecić debugerowi, której wyjątki lub zestawy wyjątki, aby przerywał działanie w przypadku, a w tym momencie użytkownik chce debuger przerywa (czyli wstrzymywać w debugerze). Kiedy debuger przerywa, jego dowiesz się, gdy wyjątek został zgłoszony. Można również dodawać lub usuwać wyjątki. Za pomocą rozwiązania otwarte w programie Visual Studio, należy użyć **Debuguj > Windows > Ustawienia wyjątków** otworzyć **ustawienia wyjątków** okna.
+Wyjątek jest oznaczeniem stanu błędu, który występuje, gdy program jest wykonywany. Możesz powiedzieć debugerowi, w którym wyjątki lub zestawy wyjątków mają być przerywane, i w którym momencie chcesz, aby debuger został rozwierny (czyli wstrzymywać w debugerze). Gdy debuger przerwie, pokazuje, gdzie został zgłoszony wyjątek. Można również dodawać lub usuwać wyjątki. Aby otworzyć okno **Ustawienia wyjątku** w programie Visual Studio, należy użyć **ustawienia wyjątku debuguj > Windows >** .
 
-Podaj obsługi reagujące na najważniejszych wyjątków. Jeśli chcesz wiedzieć, jak dodać procedury obsługi wyjątków, zobacz [naprawiania błędów, pisząc lepiej C# kodu](../debugger/write-better-code-with-visual-studio.md). Ponadto Dowiedz się, jak skonfigurować debuger zawsze przerywa wykonywanie dla niektórych wyjątków.
+Podaj programy obsługi reagujące na najważniejsze wyjątki. Aby dowiedzieć się, jak dodać procedury obsługi wyjątków, zobacz [Rozwiązywanie usterek przez pisanie lepszego C# kodu](../debugger/write-better-code-with-visual-studio.md). Należy również dowiedzieć się, jak skonfigurować debuger, aby zawsze przerywał wykonywanie niektórych wyjątków.
 
-Gdy wystąpi wyjątek, debuger zapisuje komunikat o wyjątku do **dane wyjściowe** okna. Może je przerwać wykonywanie w następujących przypadkach, gdy:
+Gdy wystąpi wyjątek, debuger zapisuje komunikat o wyjątku w oknie **danych wyjściowych** . Może przerwać wykonywanie w następujących przypadkach:
 
-- Jest zgłaszany wyjątek, który nie jest obsługiwany.
-- Debuger jest skonfigurowany, aby przerwać wykonywanie, zanim wywoływana zostanie jakakolwiek Obsługa.
-- Ustawiono [tylko mój kod](../debugger/just-my-code.md), Debuger jest skonfigurowany do przerwania dla każdego wyjątku, który nie jest obsługiwany w kodzie użytkownika.
+- Zgłaszany jest wyjątek, który nie jest obsługiwany.
+- Debuger jest skonfigurowany do przerwania wykonywania przed wywołaniem jakiejkolwiek procedury obsługi.
+- Ustawiono [tylko mój kod](../debugger/just-my-code.md), a debuger jest skonfigurowany do przerw w każdym wyjątku, który nie jest obsługiwany w kodzie użytkownika.
 
 > [!NOTE]
-> Program ASP.NET ma program obsługi wyjątków najwyższego poziomu, pokazujący stron błędów, które w przeglądarce. Nie przerywa wykonywania, chyba że **tylko mój kod** jest włączona. Aby uzyskać przykład, zobacz [polecić debugerowi, aby kontynuować na wyjątkach nieobsługiwanych przez użytkownika](#BKMK_UserUnhandled) poniżej.
+> ASP.NET ma program obsługi wyjątków najwyższego poziomu, który pokazuje strony błędów w przeglądarce. Nie przerywa wykonywania, chyba że **tylko mój kod** jest włączona. Aby zapoznać się z przykładem, zobacz [Powiadom debugera, aby kontynuować Nieobsłużone wyjątki](#BKMK_UserUnhandled) poniżej.
 
 <!-- Two consecutive notes are intentional here...-->
 
 > [!NOTE]
-> W aplikacji Visual Basic debuger zarządza wszystkie błędy jako wyjątki, nawet jeśli jest używana w stylu błędu obsługi błędów.
+> W aplikacji Visual Basic debuger zarządza wszystkimi błędami jako wyjątkami, nawet jeśli są używane w przypadku obsługi błędów w stylu błędu.
 
-## <a name="tell-the-debugger-to-break-when-an-exception-is-thrown"></a>Polecić debugerowi, aby Przerwij, gdy zostanie zgłoszony wyjątek
+## <a name="tell-the-debugger-to-break-when-an-exception-is-thrown"></a>Poinformuj debugera o przerwaniu, gdy zostanie zgłoszony wyjątek
 
-Debuger może przerwać wykonywanie w punkcie, gdzie jest zgłaszany wyjątek, dzięki czemu może zbadać wyjątku przed wywołaniem programu obsługi.
+Debuger może przerwać wykonywanie w punkcie, w którym wystąpił wyjątek, więc możesz przejrzeć wyjątek przed wywołaniem programu obsługi.
 
-W **ustawienia wyjątków** okna (**Debuguj > Windows > Ustawienia wyjątków**), rozwiń węzeł kategorii wyjątków, takie jak **wyjątki środowiska uruchomieniowego języka wspólnego**. Następnie zaznacz pole wyboru dla określonego wyjątku w ramach tej kategorii, takich jak **System.AccessViolationException**. Możesz również wybrać całej kategorii wyjątków.
+W oknie **Ustawienia wyjątku** (**Debuguj > Ustawienia wyjątku > systemu Windows**) rozwiń węzeł kategorii wyjątków, na przykład **wyjątki środowiska uruchomieniowego języka wspólnego**. Następnie zaznacz pole wyboru dla określonego wyjątku w tej kategorii, na przykład **System. AccessViolationException**. Można również wybrać całą kategorię wyjątków.
 
-![Zaznaczone AccessViolationException](../debugger/media/exceptionsettingscheckaccess.png "ExceptionSettingsCheckAccess")
+![Sprawdzone AccessViolationException](../debugger/media/exceptionsettingscheckaccess.png "ExceptionSettingsCheckAccess")
 
 > [!TIP]
-> Możesz znaleźć określone wyjątki za pomocą **wyszukiwania** okna **ustawienia wyjątków** paska narzędzi lub użyj Wyszukaj, aby filtrować dla określonych przestrzeni nazw (takich jak **System.IO**).
+> Określone wyjątki można znaleźć za pomocą okna **wyszukiwania** na pasku narzędzi **Ustawienia wyjątku** lub użyć wyszukiwania do filtrowania określonych przestrzeni nazw (takich jak **System.IO**).
 
-Jeśli wybierzesz wyjątek **ustawienia wyjątków** okna debugera wykonywanie zostanie przerwane wszędzie tam, gdzie jest zgłaszany wyjątek, niezależnie od tego, czy jest obsługiwany. Wyjątek jest teraz nazywana wyjątku pierwszej szansy. Na przykład poniżej przedstawiono kilka scenariuszy:
+W przypadku wybrania wyjątku w oknie **Ustawienia wyjątku** , wykonanie debugera będzie przerywane wszędzie tam, gdzie wystąpił wyjątek, niezależnie od tego, czy jest on obsługiwany. Teraz wyjątek jest wywoływany jako wyjątek pierwszej szansy. Na przykład poniżej przedstawiono kilka scenariuszy:
 
-- W poniższym aplikacji konsolowej C#, metoda Main zgłasza **AccessViolationException** wewnątrz `try/catch` bloku.
+- W poniższej C# aplikacji konsolowej Metoda Main zgłasza **AccessViolationException** wewnątrz bloku`try/catch`.
 
   ```csharp
   static void Main(string[] args)
@@ -91,16 +91,16 @@ Jeśli wybierzesz wyjątek **ustawienia wyjątków** okna debugera wykonywanie z
   }
   ```
 
-  Jeśli masz **AccessViolationException** zaewidencjonowany **ustawienia wyjątków**, wykonywanie zostanie przerwane na `throw` wiersz po uruchomieniu tego kodu w debugerze. Następnie można kontynuować wykonywania. Obie linie powinien być wyświetlany w konsoli:
+  Jeśli **AccessViolationException** zaznaczono **Ustawienia wyjątków**, wykonanie zostanie przerwane w wierszu `throw` po uruchomieniu tego kodu w debugerze. Następnie można kontynuować wykonywanie. W konsoli powinny być wyświetlane obie linie:
 
   ```cmd
   caught exception
   goodbye
   ```
 
-  ale ona nie wyświetla `here` wiersza.
+  ale nie wyświetla `here` wiersza.
 
-- Aplikacja konsolowa C# odwołuje się do biblioteki klas w języku klasę, która ma dwie metody. Jedna metoda zgłasza wyjątek i obsługuje go, podczas gdy druga metoda generuje ten sam wyjątek, ale nie obsługują jej.
+- Aplikacja C# konsolowa odwołuje się do biblioteki klas z klasą, która ma dwie metody. Jedna metoda zgłasza wyjątek i obsługuje go, podczas gdy druga metoda zgłasza ten sam wyjątek, ale nie obsłuży go.
 
   ```csharp
   public class Class1
@@ -124,7 +124,7 @@ Jeśli wybierzesz wyjątek **ustawienia wyjątków** okna debugera wykonywanie z
   }
   ```
 
-  Poniżej przedstawiono metody Main() aplikacji konsoli:
+  Oto główna Metoda aplikacji konsolowej:
 
   ```csharp
   static void Main(string[] args)
@@ -135,56 +135,56 @@ Jeśli wybierzesz wyjątek **ustawienia wyjątków** okna debugera wykonywanie z
   }
   ```
 
-  Jeśli masz **AccessViolationException** zaewidencjonowany **ustawienia wyjątków**, wykonywanie zostanie przerwane na `throw` wiersza w obu **ThrowHandledException()** i **ThrowUnhandledException()** po uruchomieniu tego kodu w debugerze.
+  Jeśli **AccessViolationException** zaznaczono **Ustawienia wyjątków**, wykonanie zostanie przerwane w wierszu `throw` w obu **ThrowHandledException (** ) i **ThrowUnhandledException ()** po uruchomieniu tego kodu w debugerze.
 
-Aby przywrócić ustawienia domyślne ustawienia wyjątków, wybierz **przywrócić ustawienia domyślne listy** przycisku:
+Aby przywrócić ustawienia wyjątków do ustawień domyślnych, wybierz przycisk **Przywróć ustawienia do ustawień domyślnych** :
 
-![Przywróć ustawienia domyślne w ustawieniach wyjątek](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")
+![Przywróć wartości domyślne w ustawieniach wyjątku](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")
 
-## <a name="BKMK_UserUnhandled"></a>Polecić debugerowi, aby kontynuować na wyjątkach nieobsługiwanych przez użytkownika
+## <a name="BKMK_UserUnhandled"></a>Poinformuj debugera, aby kontynuował pracę z nieobsługiwanymi wyjątkami użytkownika
 
-Jeśli debugujesz kod .NET lub języka JavaScript za pomocą [tylko mój kod](../debugger/just-my-code.md), można polecić debugerowi, aby uniknąć podziału na wyjątki, które nie są obsługiwane w kodzie użytkownika, ale są obsługiwane w innym miejscu.
+Jeśli debugujesz kod .NET lub JavaScript przy użyciu [tylko mój kod](../debugger/just-my-code.md), możesz powiedzieć debuger, aby zapobiec przerywaniu wyjątków, które nie są obsługiwane w kodzie użytkownika, ale są obsługiwane w innym miejscu.
 
-1. W **ustawienia wyjątków** , otwórz menu skrótów, klikając prawym przyciskiem myszy etykiety kolumn, a następnie wybierz pozycję **Pokaż kolumny > dodatkowe akcje**. (Jeśli zostały wyłączone **tylko mój kod**, nie zobaczysz tego polecenia.) Trzecia kolumna o nazwie **dodatkowe akcje** pojawia się.
+1. W oknie **Ustawienia wyjątku** Otwórz menu skrótów, klikając prawym przyciskiem myszy etykietę kolumny, a następnie wybierz polecenie **Pokaż kolumny > dodatkowe akcje**. (Jeśli wyłączono **tylko mój kod**, to polecenie nie zostanie wyświetlone). Zostanie wyświetlona trzecia kolumna o nazwie **dodatkowe akcje** .
 
-   ![Dodatkową kolumnę akcji](../debugger/media/additionalactionscolumn.png "AdditionalActionsColumn")
+   ![Kolumna dodatkowych akcji](../debugger/media/additionalactionscolumn.png "AdditionalActionsColumn")
 
-   Wyjątku, który pokazuje **Kontynuuj w przypadku braku obsługi w kodzie użytkownika** w tej kolumnie, Debuger kontynuuje, jeśli ten wyjątek nie jest obsługiwany w kodzie użytkownika, ale jest obsługiwany zewnętrznie.
+   W przypadku wyjątku, który pokazuje **kontynuację w przypadku nieobsłużonego kodu użytkownika** w tej kolumnie, debuger kontynuuje działanie, jeśli ten wyjątek nie zostanie obsłużony w kodzie użytkownika, ale jest obsługiwany zewnętrznie.
 
-2. Aby zmienić to ustawienie dla określonego wyjątku, wybierz wyjątek, kliknij prawym przyciskiem myszy, aby wyświetlić menu skrótów i wybierz **kontynuować po nieobsługiwany w kodzie użytkownika**. Można również zmienić ustawienie dla całej kategorii wyjątków, takie jak całego wyjątki środowiska uruchomieniowego języka wspólnego).
+2. Aby zmienić to ustawienie dla określonego wyjątku, zaznacz wyjątek, kliknij prawym przyciskiem myszy, aby wyświetlić menu skrótów, a następnie wybierz pozycję **Kontynuuj w przypadku nieobsługiwanych w kodzie użytkownika**. Można również zmienić ustawienie dla całej kategorii wyjątków, takie jak całe wyjątki środowiska uruchomieniowego języka wspólnego.
 
-   ![** Kontynuuj w przypadku braku obsługi w ustawienie kodu ** użytkownika](../debugger/media/continuewhenunhandledinusercodesetting.png "ContinueWhenUnhandledInUserCodeSetting")
+   ![* * Kontynuuj w przypadku nieobsłużonego kodu użytkownika * * ustawienie](../debugger/media/continuewhenunhandledinusercodesetting.png "ContinueWhenUnhandledInUserCodeSetting")
 
-Na przykład aplikacji sieci web ASP.NET obsługi wyjątków, konwertując je na kod stanu HTTP 500 ([obsługi wyjątków w ASP.NET Web API](http://www.asp.net/web-api/overview/error-handling/exception-handling)), który nie pomogą Ci określić źródło wyjątku. W poniższym przykładzie kod użytkownika wywołuje `String.Format()` która zgłasza <xref:System.FormatException>. Wykonanie przerywa w następujący sposób:
+Na przykład ASP.NET aplikacje sieci Web obsługują wyjątki poprzez konwersję ich do kodu stanu HTTP 500 ([Obsługa wyjątków w interfejsie Web API ASP.NET](/aspnet/web-api/overview/error-handling/exception-handling)), co może nie pomóc w ustaleniu źródła wyjątku. W poniższym przykładzie kod użytkownika wywołuje `String.Format()`, które zgłasza <xref:System.FormatException>. Przerwania wykonywania w następujący sposób:
 
-![Przerywa użytkownika&#45;nieobsłużony wyjątek](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")
+![Podziały na&#45;wyjątek nieobsłużony przez użytkownika](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")
 
 ## <a name="add-and-delete-exceptions"></a>Dodawanie i usuwanie wyjątków
 
-Można dodawać i usuwać wyjątki. Aby usunąć typ wyjątku z kategorii, wybierz wyjątek, a następnie wybierz **Usuń wybrany wyjątek z listy** przycisku (znak minus) na **ustawienia wyjątków** paska narzędzi. Albo kliknij prawym przyciskiem myszy wyjątek i wybierz **Usuń** z menu skrótów. Usuwanie wyjątek działa tak samo jako posiadające wyjątek nie jest zaznaczone, czyli o tym, że debuger nie zostanie przerwane, gdy jest generowany.
+Można dodawać i usuwać wyjątki. Aby usunąć typ wyjątku z kategorii, zaznacz wyjątek, a następnie wybierz przycisk **Usuń wybrany wyjątek z listy** (znak minus) na pasku narzędzi **Ustawienia wyjątku** . Możesz też kliknąć prawym przyciskiem myszy wyjątek, a następnie wybrać polecenie **Usuń** z menu skrótów. Usuwanie wyjątku ma ten sam skutek, co w przypadku niezaznaczania wyjątku, co oznacza, że debuger nie będzie przerywał działania po jego zgłoszeniu.
 
 Aby dodać wyjątek:
 
-1. W **ustawienia wyjątków** okna, wybierz jedną z kategorii wyjątków (na przykład **środowiska uruchomieniowego języka wspólnego**).
+1. W oknie **Ustawienia wyjątku** wybierz jedną z kategorii wyjątków (na przykład **środowisko uruchomieniowe języka wspólnego**).
 
-2. Wybierz **Dodaj wyjątek do wybranej kategorii** przycisku (znak plus).
+2. Wybierz przycisk **Dodaj wyjątek do wybranej kategorii** (znak plus).
 
-   ![** Dodać wyjątek do wybranej kategorii ** przycisku](../debugger/media/addanexceptiontotheselectedcategorybutton.png "AddAnExceptionToTheSelectedCategoryButton")
+   ![* * Dodaj wyjątek do wybranej kategorii * * przycisk](../debugger/media/addanexceptiontotheselectedcategorybutton.png "AddAnExceptionToTheSelectedCategoryButton")
 
-3. Wpisz nazwę wyjątku (na przykład **System.UriTemplateMatchException**).
+3. Wpisz nazwę wyjątku (na przykład **System. UriTemplateMatchException**).
 
-   ![Wpisz nazwę wyjątek](../debugger/media/typetheexceptionname.png "TypeTheExceptionName")
+   ![Wpisz nazwę wyjątku](../debugger/media/typetheexceptionname.png "TypeTheExceptionName")
 
-   Wyjątek zostanie dodany do listy (w kolejności alfabetycznej) i automatycznie sprawdzane.
+   Wyjątek jest dodawany do listy (w kolejności alfabetycznej) i automatycznie zaznaczony.
 
-Aby dodać wyjątek wyjątki dostępu do pamięci procesora GPU, wyjątki środowiska uruchomieniowego JavaScript lub kategorii wyjątki Win32, zawierają kod błędu i opis.
+Aby dodać wyjątek do wyjątków dostępu do pamięci procesora GPU, wyjątków środowiska uruchomieniowego języka JavaScript lub kategorii wyjątków Win32, należy uwzględnić kod błędu i opis.
 
 > [!TIP]
-> Sprawdź pisownię! **Ustawienia wyjątków** okna nie sprawdza istnienie dodano wyjątek. Tak, jeśli wpiszesz **Sytem.UriTemplateMatchException**, otrzymasz wpis dla tego wyjątku (a nie **System.UriTemplateMatchException**).
+> Sprawdź pisownię. Okno **Ustawienia wyjątku** nie sprawdza istnienia dodanego wyjątku. Dlatego jeśli wpiszesz system **. UriTemplateMatchException**, otrzymasz wpis dla tego wyjątku (a nie w przypadku **systemu. UriTemplateMatchException**).
 
-Ustawienia wyjątków są utrwalane w pliku .suo rozwiązania, dzięki czemu mają one zastosowanie do danego rozwiązania. Nie można ponownie użyć ustawienia określonego wyjątku w rozwiązań. Teraz są utrwalane tylko wyjątków dodanych; nie usunięto wyjątki. Możesz dodać wyjątek, zamknij i ponownie otwórz rozwiązanie, a wyjątek będą nadal dostępne. Ale jeśli usuniesz wyjątek, a Zamknij i otwórz ponownie rozwiązanie, pojawi się wyjątek.
+Ustawienia wyjątków są utrwalane w pliku. suo rozwiązania, dlatego mają zastosowanie do określonego rozwiązania. Nie można ponownie użyć określonych ustawień wyjątków w różnych rozwiązaniach. Teraz tylko dodane wyjątki są utrwalane; usunięte wyjątki nie są. Możesz dodać wyjątek, zamknąć i ponownie otworzyć rozwiązanie, a mimo to nadal wystąpił wyjątek. Jednak po usunięciu wyjątku i zamknięciu/ponownym otwarciu rozwiązania zostanie wyświetlony wyjątek.
 
-**Ustawienia wyjątków** okna obsługuje typów wyjątków ogólnych w języku C#, ale nie w języku Visual Basic. Przerwanie przy wyjątkach, takich jak `MyNamespace.GenericException<T>`, należy dodać wyjątek jako **MyNamespace.GenericException'1**. Oznacza to jeśli został utworzony wyjątek podobnie do tego kodu:
+Okno **Ustawienia wyjątku** obsługuje typy wyjątków ogólnych w programie C# , ale nie w Visual Basic. Aby przerwać wyjątki, takie jak `MyNamespace.GenericException<T>`, należy dodać wyjątek jako **przestrzeń nazw. generycznexception ' 1**. Oznacza to, że jeśli utworzono wyjątek podobny do tego:
 
 ```csharp
 public class GenericException<T> : Exception
@@ -195,35 +195,35 @@ public class GenericException<T> : Exception
 }
 ```
 
-Możesz dodać wyjątek **ustawienia wyjątków** za pomocą poprzedniej procedury:
+Wyjątek można dodać do **ustawień wyjątków** przy użyciu poprzedniej procedury:
 
-![Dodawanie wyjątek ogólny](../debugger/media/addgenericexception.png "AddGenericException")
+![Dodawanie wyjątku generycznego](../debugger/media/addgenericexception.png "Addgenericexception")
 
 ## <a name="add-conditions-to-an-exception"></a>Dodawanie warunków do wyjątku
 
-Użyj **ustawienia wyjątków** okna Ustawianie warunków wyjątków. Obecnie obsługiwane warunki obejmują nazwy modułu do dołączania lub wykluczania dla wyjątku. Przez ustawienie nazwy modułów, jako warunków, można wybrać przerwanie dla wyjątku tylko w przypadku niektórych modułów kodu. Można także uniknąć istotne dla konkretnego modułów.
+Użyj okna **Ustawienia wyjątku** , aby ustawić warunki dotyczące wyjątków. Obecnie obsługiwane warunki obejmują nazwy modułów, które mają zostać dołączone lub wykluczone dla wyjątku. Ustawiając nazwy modułów jako warunki, można wybrać opcję przerwania dla wyjątku tylko dla niektórych modułów kodu. Możesz również wybrać, aby uniknąć przerywania określonych modułów.
 
 > [!NOTE]
-> Dodawanie warunków do wyjątku jest obsługiwane począwszy [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+> Dodawanie warunków do wyjątku jest obsługiwane w [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Aby dodać wyjątki warunkowe:
 
-1. Wybierz **Edytuj warunki** znajdujący się w oknie Ustawienia wyjątków lub kliknij prawym przyciskiem myszy wyjątek i wybierz pozycję **edytowanie warunków**.
+1. Wybierz przycisk **Edytuj warunki** w oknie Ustawienia wyjątku lub kliknij prawym przyciskiem myszy wyjątek, a następnie wybierz polecenie **Edytuj warunki**.
 
-   ![Warunki, dla wyjątku](../debugger/media/dbg-conditional-exception.png "DbgConditionalException")
+   ![Warunki wyjątku](../debugger/media/dbg-conditional-exception.png "DbgConditionalException")
 
-2. Aby dodać dodatkowe wymagane warunki do wyjątku, zaznacz **Dodaj warunek** dla każdego nowego warunku. Zdefiniuj dodatkowy warunek wiersze są wyświetlane.
+2. Aby dodać do wyjątku dodatkowe wymagane warunki, wybierz opcję **Dodaj warunek** dla każdego nowego warunku. Pojawią się dodatkowe wiersze warunków.
 
-   ![Dodatkowe warunki, dla wyjątku](../debugger/media/extraconditionsforanexception.png "ExtraConditionsForAnException")
+   ![Dodatkowe warunki dla wyjątku](../debugger/media/extraconditionsforanexception.png "ExtraConditionsForAnException")
 
-3. Dla każdego wiersza warunku wpisz nazwę modułu, a na liście operator porównania, aby zmienić **jest równa** lub **nie równa się**. Można określić symbole wieloznaczne (**\\\***) w nazwie, aby określić więcej niż jeden moduł.
+3. Dla każdego wiersza warunku wpisz nazwę modułu i zmień listę operatorów porównania na **wartość Equals** lub **nie równa**się. Możesz określić symbole wieloznaczne ( **\\\*** ) w nazwie, aby określić więcej niż jeden moduł.
 
-4. Jeśli musisz usunąć warunek, wybierz opcję **X** na końcu wiersza warunku.
+4. Jeśli musisz usunąć warunek, wybierz **znak X** na końcu wiersza warunku.
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Kontynuowanie wykonania po wystąpieniu wyjątku](../debugger/continuing-execution-after-an-exception.md)<br/>
-- [Instrukcje: Badanie kodu systemu po wystąpieniu wyjątku](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
-- [Instrukcje: Korzystanie z macierzystego sprawdzania w czasie wykonywania](../debugger/how-to-use-native-run-time-checks.md)<br/>
-- [Używanie sprawdzania w trakcie wykonywania bez biblioteki wykonawczej języka C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)<br/>
+- [Instrukcje: badanie kodu systemu po wystąpieniu wyjątku](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
+- [Instrukcje: korzystanie z macierzystego sprawdzania w trakcie wykonywania](../debugger/how-to-use-native-run-time-checks.md)<br/>
+- [Używanie sprawdzeń w czasie wykonywania bez biblioteki wykonawczej C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)<br/>
 - [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)

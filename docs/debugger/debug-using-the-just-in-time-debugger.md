@@ -1,5 +1,5 @@
 ---
-title: Debugowanie za pomocą debugera just in Time | Dokumentacja firmy Microsoft
+title: Debugowanie przy użyciu debugera just-in-Time | Microsoft Docs
 ms.date: 09/24/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,76 +10,76 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2aff8e1b515f460e6fdc31a528e6730971b7853
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 32a3ebd6e9047271a21425ac5b7eaaf715955b61
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62853172"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911389"
 ---
-# <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Debugowanie w programie Visual Studio za pomocą debugera just in Time
+# <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Debugowanie przy użyciu debugera just-in-Time w programie Visual Studio
 
-Debugowanie Just In Time uruchomić program Visual Studio automatycznie podczas uruchamiania poza programem Visual Studio błędy lub awarie aplikacji. Za pomocą Just-In-Time debugging można testować aplikacje poza programem Visual Studio i Otwórz program Visual Studio, aby rozpocząć debugowanie, jeśli wystąpi problem.
+Debugowanie just in time może automatycznie uruchamiać program Visual Studio, gdy aplikacja działa poza błędami lub awariami programu Visual Studio. Dzięki debugowaniu just-in-time można testować aplikacje poza programem Visual Studio, a następnie otwierać program Visual Studio, aby rozpocząć debugowanie w przypadku wystąpienia problemu.
 
-Debugowanie Just In Time działa w przypadku aplikacji komputerowych Windows. Nie działa dla uniwersalnych aplikacji dla Windows lub dla kodu zarządzanego, który znajduje się w aplikacji macierzystej, jak na przykład Wizualizatory.
+Debugowanie just in Time działa w przypadku aplikacji klasycznych systemu Windows. Nie działa w przypadku aplikacji uniwersalnych systemu Windows lub kodu zarządzanego hostowanego w aplikacji natywnej, takiej jak Wizualizatory.
 
 > [!TIP]
-> Jeśli chcesz zatrzymać okno dialogowe debuger just in Time pojawianiu się, ale nie ma zainstalowanego programu Visual Studio, zobacz [wyłączyć debuger just in Time](../debugger/just-in-time-debugging-in-visual-studio.md). Jeśli po był zainstalowany program Visual Studio, konieczne może być [wyłączyć Just-In-Time, debugowanie z rejestru Windows](#disable-just-in-time-debugging-from-the-windows-registry).
+> Jeśli chcesz zatrzymać wyświetlanie okna dialogowego debugera just in Time, ale nie masz zainstalowanego programu Visual Studio, zobacz temat [Wyłączanie debugera just in Time](../debugger/just-in-time-debugging-in-visual-studio.md). Jeśli masz zainstalowany program Visual Studio, może być konieczne [wyłączenie debugowania just in Time z rejestru systemu Windows](#disable-just-in-time-debugging-from-the-windows-registry).
 
-## <a name="BKMK_Enabling"></a> Włączanie lub wyłączanie debugowania w programie Visual Studio Just-In-Time
+## <a name="BKMK_Enabling"></a>Włączanie lub wyłączanie debugowania just-in-Time w programie Visual Studio
 
 >[!NOTE]
->Aby włączyć lub wyłączyć debugowanie Just In Time, że uruchomione programu Visual Studio jako administrator. Włączanie lub wyłączanie Just-In-Time debugging Ustawia klucz rejestru i może być wymagane uprawnienia administratora, aby zmienić ten klucz. Aby otworzyć program Visual Studio jako administrator, kliknij prawym przyciskiem myszy aplikację programu Visual Studio, a następnie wybierz **Uruchom jako administrator**.
+>Aby włączyć lub wyłączyć debugowanie just-in-Time, musisz mieć uruchomiony program Visual Studio jako administrator. Włączenie lub wyłączenie debugowania just in Time ustawia klucz rejestru, a uprawnienia administratora mogą być wymagane do zmiany tego klucza. Aby otworzyć program Visual Studio jako administrator, kliknij prawym przyciskiem myszy aplikację Visual Studio i wybierz polecenie **Uruchom jako administrator**.
 
-Można skonfigurować debugowania programu Visual Studio Just-In-Time **narzędzia** > **opcje** (lub **debugowania** > **opcje**) okno dialogowe.
+Debugowanie just in time można skonfigurować przy użyciu **opcji** > **narzędzi** programu Visual Studio (lub **opcji** > **debugowania** ).
 
-**Aby włączyć lub wyłączyć Just-In-Time debugowanie:**
+**Aby włączyć lub wyłączyć debugowanie just in Time:**
 
-1. Na **narzędzia** lub **debugowania** menu, wybierz opcję **opcje** > **debugowanie**  >   **Just In Time**.
+1. W menu **Narzędzia** lub **debuguj** wybierz **Opcje** > **debugowanie** > **just in Time**.
 
-   ![Włączanie lub wyłączanie debugowania JIT](../debugger/media/dbg-jit-enable-or-disable.png "włączyć lub wyłączyć debugowanie JIT")
+   ![Włącz lub Wyłącz debugowanie JIT](../debugger/media/dbg-jit-enable-or-disable.png "Włącz lub Wyłącz debugowanie JIT")
 
-1. W **włączyć debugowanie just in Time dla tych typów kodu** wybierz typy kodu, które chcesz, aby debugowanie debugowania Just In Time: **Zarządzane**, **natywnych**, i/lub **skryptu**.
+1. W polu **Włącz debugowanie just in Time dla tych typów kodu** wybierz typy kodu, które mają być debugowane debugowania just-in-Time: **zarządzane**, **natywne**i/lub **skrypt**.
 
-1. Kliknij przycisk **OK**.
+1. Wybierz **przycisk OK**.
 
-Po włączeniu Just-In-Time debugera, ale nie zostanie otwarte, gdy aplikacja ulegnie awarii lub błędy, zobacz [Rozwiązywanie problemów z debudowanie](#jit_errors).
+Jeśli włączysz debuger just in Time, ale nie zostanie on otwarty w przypadku awarii lub błędów aplikacji, zobacz [Rozwiązywanie problemów z debugowaniem just in Time](#jit_errors).
 
-## <a name="disable-just-in-time-debugging-from-the-windows-registry"></a>Wyłącz debugowanie z rejestru Windows Just In Time
+## <a name="disable-just-in-time-debugging-from-the-windows-registry"></a>Wyłącz debugowanie just in Time z rejestru systemu Windows
 
-Debugowanie Just In Time może być wciąż włączone, nawet jeśli program Visual Studio nie jest już zainstalowane na tym komputerze. Jeśli program Visual Studio nie jest już zainstalowany, możesz wyłączyć debugowanie, edytując Rejestr Windows Just In Time.
+Debugowanie just in Time nadal może być włączone nawet wtedy, gdy program Visual Studio nie jest już zainstalowany na komputerze. Jeśli program Visual Studio nie jest już zainstalowany, można wyłączyć debugowanie just in Time, edytując rejestr systemu Windows.
 
-**Aby wyłączyć debugowanie, edytując rejestr Just In Time:**
+**Aby wyłączyć debugowanie just in Time, edytując rejestr:**
 
-1. Od Windows **Start** menu, uruchom **Edytora rejestru** (*regedit.exe*).
+1. W menu **Start** systemu Windows uruchom **Edytor rejestru** (*regedit. exe*).
 
-2. W **Edytora rejestru** okna, zlokalizuj i Usuń następujące wpisy rejestru:
+2. W oknie **Edytor rejestru** zlokalizuj i Usuń następujące wpisy rejestru:
 
-    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\DbgManagedDebugger**
+    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\. NETFramework\DbgManagedDebugger**
 
     - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
 
-    ![Klucz rejestru JIT](../debugger/media/dbg-jit-registry.png "klucza rejestru JIT")
+    ![Klucz rejestru JIT](../debugger/media/dbg-jit-registry.png "Klucz rejestru JIT")
 
-3. Jeśli komputer działa w 64-bitowym systemie operacyjnym, także Usuń następujące wpisy rejestru:
+3. Jeśli na komputerze jest uruchomiony 64-bitowy system operacyjny, Usuń również następujące wpisy rejestru:
 
-    - **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\DbgManagedDebugger**
+    - **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\. NETFramework\DbgManagedDebugger**
 
     - **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
 
-    Upewnij się nie usunąć ani zmienić żadnych kluczy rejestru.
+    Pamiętaj, aby nie usuwać ani zmieniać żadnych innych kluczy rejestru.
 
-5. Zamknij **Edytora rejestru** okna.
+5. Zamknij okno **Edytor rejestru** .
 
-## <a name="enable-just-in-time-debugging-of-a-windows-form"></a>Włącz Just-In-Time debugowanie formularza Windows
+## <a name="enable-just-in-time-debugging-of-a-windows-form"></a>Włącz debugowanie just in Time formularza systemu Windows
 
-Domyślnie aplikacje Windows formularza mają program obsługi wyjątków najwyższego poziomu, który umożliwia aplikacji działały, jeśli możliwe jest odzyskiwanie. Jeśli w aplikacji Windows Forms zwraca nieobsługiwany wyjątek, przedstawia następujące okno dialogowe:
+Domyślnie aplikacje formularzy systemu Windows mają program obsługi wyjątków najwyższego poziomu, który pozwala aplikacji na działanie, jeśli może ją odzyskać. Jeśli aplikacja Windows Forms zgłasza nieobsługiwany wyjątek, zostanie wyświetlone następujące okno dialogowe:
 
-![Formularz Windows nieobsłużony wyjątek](../debugger/media/windowsformsunhandledexception.png "formularza Windows nieobsługiwany wyjątek")
+![Nieobsługiwany wyjątek w formularzu systemu Windows](../debugger/media/windowsformsunhandledexception.png "Nieobsługiwany wyjątek w formularzu systemu Windows")
 
-Aby włączyć debugowanie zamiast standardowego obsługi błędów formularza Windows Just In Time, należy dodać te ustawienia:
+Aby włączyć debugowanie just in Time zamiast standardowej obsługi błędów formularzy systemu Windows, Dodaj następujące ustawienia:
 
-- W `system.windows.forms` części *machine.config* lub  *\<Nazwa aplikacji >. exe.config* plików, należy ustawić `jitDebugging` wartość `true`:
+- W sekcji `system.windows.forms` pliku *Machine. config* lub *\<nazwa aplikacji >. exe. config* ustaw wartość `jitDebugging` na `true`:
 
     ```xml
     <configuration>
@@ -87,7 +87,7 @@ Aby włączyć debugowanie zamiast standardowego obsługi błędów formularza W
     </configuration>
     ```
 
-- W aplikacji formularzy Windows w języku C++, należy również ustawić `DebuggableAttribute` do `true` w *.config* plików lub w kodzie. Jeśli kompilujesz z opcją [/zi](/cpp/build/reference/z7-zi-zi-debug-information-format) i bez [/Og](/cpp/build/reference/og-global-optimizations), kompilator ustawia ten atrybut. Jeśli chcesz debugować kompilację niezoptymalizowanego wydania, jednak należy ustawić `DebuggableAttribute` , dodając następujący wiersz w swojej aplikacji *AssemblyInfo.cpp* pliku:
+- W aplikacji C++ formularzy systemu Windows należy również ustawić`DebuggableAttribute`na`true`w pliku *. config* lub w kodzie. Jeśli kompilujesz z [/Zi](/cpp/build/reference/z7-zi-zi-debug-information-format) i bez [/og](/cpp/build/reference/og-global-optimizations), kompilator ustawi dla Ciebie ten atrybut. Jeśli jednak chcesz debugować niezoptymalizowaną kompilację wydania, musisz ustawić `DebuggableAttribute`, dodając następujący wiersz w pliku *AssemblyInfo. cpp* aplikacji:
 
    ```cpp
    [assembly:System::Diagnostics::DebuggableAttribute(true, true)];
@@ -95,18 +95,18 @@ Aby włączyć debugowanie zamiast standardowego obsługi błędów formularza W
 
    Aby uzyskać więcej informacji, zobacz <xref:System.Diagnostics.DebuggableAttribute>.
 
-## <a name="BKMK_Using_JIT"></a>Użyj Just-In-Time debugging
-W tym przykładzie przedstawiono w przypadku aplikacji zgłasza błąd debugowania Just In Time.
+## <a name="BKMK_Using_JIT"></a>Korzystanie z debugowania just in Time
+Ten przykład przeprowadzi Cię przez debugowanie just in Time, gdy aplikacja zgłosi błąd.
 
-- Konieczne jest posiadanie programu Visual Studio wykonaj następujące kroki. Jeśli nie masz programu Visual Studio, możesz pobrać bezpłatną [Visual Studio Community Edition](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15).
+- Aby wykonać te kroki, musisz mieć zainstalowany program Visual Studio. Jeśli nie masz programu Visual Studio, możesz pobrać bezpłatny [program Visual Studio Community Edition](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15).
 
-- Upewnij się, że Just-In-Time debugging jest [włączone](#BKMK_Enabling) w **narzędzia** > **opcje** > **debugowanie**  >  **Just-In-Time**.
+- Upewnij się, że debugowanie just in time jest [włączone](#BKMK_Enabling) w **narzędziu** > **Opcje** > **debugowanie** > **just in Time**.
 
-Na przykład wprowadzisz aplikację konsoli C# w programie Visual Studio, które zgłasza [obiektu NullReferenceException](/dotnet/api/system.nullreferenceexception).
+W tym przykładzie utworzysz aplikację C# konsolową w programie Visual Studio, która zgłasza [NullReferenceException](/dotnet/api/system.nullreferenceexception).
 
-1. W programie Visual Studio, tworzenie aplikacji konsolowej C# (**pliku** > **New** > **projektu** > **Visual C#**  >  **Aplikację konsolową**) o nazwie *ThrowsNullException*. Aby uzyskać więcej informacji dotyczących tworzeniu projektów w programie Visual Studio, zobacz [instruktażu: Tworzenie prostej aplikacji](/visualstudio/get-started/csharp/tutorial-wpf).
+1. W programie Visual Studio Utwórz aplikację C# konsolową (**plik** > **Nowy** > **Project** > **aplikacji konsolowej**  **C# Visual** > ) o nazwie *ThrowsNullException*. Aby uzyskać więcej informacji na temat tworzenia projektów w programie Visual Studio, zobacz [Przewodnik: tworzenie prostej aplikacji](/visualstudio/get-started/csharp/tutorial-wpf).
 
-1. Po otwarciu projektu w programie Visual Studio, otwórz *Program.cs* pliku. Zastąp następujący kod, który wyświetla wiersz do konsoli i następnie zgłasza obiektu NullReferenceException metody Main():
+1. Gdy projekt zostanie otwarty w programie Visual Studio, Otwórz plik *program.cs* . Zastąp metodę Main () następującym kodem, który drukuje linię do konsoli programu, a następnie zgłasza NullReferenceException:
 
    ```csharp
    static void Main(string[] args)
@@ -116,82 +116,82 @@ Na przykład wprowadzisz aplikację konsoli C# w programie Visual Studio, które
    }
    ```
 
-1. Aby skompilować rozwiązanie, wybierz **debugowania** (ustawienie domyślne) lub **wersji** konfiguracji, a następnie wybierz **kompilacji** > **Kompiluj ponownie rozwiązanie** .
+1. Aby skompilować rozwiązanie, wybierz opcję **debugowanie** (ustawienie domyślne) lub **wydawanie** , a następnie wybierz pozycję **kompilacja** > **Skompiluj ponownie rozwiązanie**.
 
    > [!NOTE]
-   > - Wybierz **debugowania** konfiguracji do pełnego środowiska debugowania.
-   > - Jeśli wybierzesz [wersji](../debugger/how-to-set-debug-and-release-configurations.md) konfiguracji, należy wyłączyć [tylko mój kod](../debugger/just-my-code.md) do wykonania tej procedury do pracy. W obszarze **narzędzia** > **opcje** > **debugowanie**, usuń zaznaczenie opcji **Włącz tylko mój kod**.
+   > - Wybierz konfigurację **debugowania** , aby uzyskać pełne środowisko debugowania.
+   > - W przypadku wybrania opcji konfiguracja [wydania](../debugger/how-to-set-debug-and-release-configurations.md) należy wyłączyć [tylko mój kod](../debugger/just-my-code.md) , aby ta procedura działała. W obszarze **narzędzia** > opcje > **debugowanie**, usuń zaznaczenie **opcji** **Włącz tylko mój kod**.
 
-   Aby uzyskać więcej informacji o konfiguracjach kompilacji, zobacz [opis konfiguracji kompilacji](../ide/understanding-build-configurations.md).
+   Aby uzyskać więcej informacji o konfiguracjach kompilacji, zobacz [Opis konfiguracji kompilacji](../ide/understanding-build-configurations.md).
 
-1. Otwórz aplikację utworzonych *ThrowsNullException.exe* w folderze projektu C# (*...\ThrowsNullException\ThrowsNullException\bin\Debug* lub *...\ThrowsNullException\ ThrowsNullException\bin\Release*).
+1. Otwórz aplikację *ThrowsNullException. exe* w folderze C# projektu ( *. ..\ThrowsNullException\ThrowsNullException\bin\Debug* lub *. ..\ThrowsNullException\ThrowsNullException\bin\Release*).
 
-   Powinny zostać wyświetlone następujące okno polecenia:
+   Powinno zostać wyświetlone następujące okno poleceń:
 
    ![ThrowsNullExceptionConsole](../debugger/media/throwsnullexceptionconsole.png "ThrowsNullExceptionConsole")
 
-1. **Wybierz debuger just in Time** zostanie otwarte okno dialogowe.
+1. Zostanie otwarte okno dialogowe **Wybierz debuger just in Time** .
 
    ![JustInTimeDialog](../debugger/media/justintimedialog.png "JustInTimeDialog")
 
-   W obszarze **dostępne debugery**, wybierz opcję **nowe wystąpienie klasy \<Twojego preferowanego wersji programu Visual Studio/wydania >**, jeśli jeszcze nie wybrano.
+   W obszarze **dostępne debugery**wybierz pozycję **nowe wystąpienie \<preferowaną > wersji programu Visual Studio**, jeśli nie została jeszcze wybrana.
 
-1. Kliknij przycisk **OK**.
+1. Wybierz **przycisk OK**.
 
-   Projekt ThrowsNullException zostanie otwarty w nowym wystąpieniu programu Visual Studio z wykonywaniem został zatrzymany na wierszu, który wygenerował wyjątek:
+   Projekt ThrowsNullException zostanie otwarty w nowym wystąpieniu programu Visual Studio, a wykonywanie zostało zatrzymane w wierszu, który wywołał wyjątek:
 
    ![NullReferenceSecondInstance](../debugger/media/nullreferencesecondinstance.png "NullReferenceSecondInstance")
 
-Można rozpocząć debugowania na tym etapie. Gdybyś debugował rzeczywistej aplikacji należy dowiedzieć się, dlaczego kod zgłasza wyjątek.
+Debugowanie można rozpocząć od tego momentu. W przypadku debugowania rzeczywistej aplikacji należy dowiedzieć się, dlaczego kod zgłasza wyjątek.
 
 > [!CAUTION]
-> Jeśli aplikacja zawiera niezaufanego kodu, pojawi się okno dialogowe ostrzeżenia o zabezpieczeniach, dzięki któremu można zdecydować, czy chcesz kontynuować debugowanie. Przed kontynuowaniem debugowania, należy zdecydować, czy kodowi można zaufać. Czy napisałeś kod samodzielnie? Jeśli aplikacja jest uruchomiona na komputerze zdalnym, czy rozpoznajesz nazwę procesu? Jeśli aplikacja działa lokalnie, należy wziąć pod uwagę możliwość złośliwy kod uruchomiony na Twoim komputerze. Kod jest godny zaufania, należy zaznaczyć opcję **OK**. W przeciwnym razie wybierz **anulować**.
+> Jeśli aplikacja zawiera niezaufany kod, pojawi się okno dialogowe Ostrzeżenie o zabezpieczeniach, które pozwala zdecydować, czy kontynuować debugowanie. Przed kontynuowaniem debugowania Zdecyduj, czy ufasz kodowi. Czy udało Ci się napisać kod samodzielnie? Jeśli aplikacja jest uruchomiona na komputerze zdalnym, czy nazwa procesu jest rozpoznawana? Jeśli aplikacja działa lokalnie, weź pod uwagę możliwość złośliwego kodu uruchomionego na komputerze. Jeśli zdecydujesz, że kod jest godny zaufania, wybierz **przycisk OK**. W przeciwnym razie wybierz pozycję **Anuluj**.
 
-## <a name="jit_errors"></a> Rozwiązywanie problemów z Just-In-Time debugging
+## <a name="jit_errors"></a>Rozwiązywanie problemów z debugowaniem just in Time
 
-Jeśli Just-In-Time debugowania nie zaczyna się, gdy aplikacja ulegnie awarii, nawet jeśli jest włączona w programie Visual Studio:
+Jeśli debugowanie just in Time nie rozpocznie się, gdy aplikacja ulega awarii, mimo że jest włączona w programie Visual Studio:
 
-- Raportowanie błędów Windows może biorąc błędów, obsługę na tym komputerze.
+- Raportowanie błędów systemu Windows może przejąć obsługę błędów na komputerze.
 
-  Aby rozwiązać ten problem, użyj Edytora rejestru w celu dodania **wartość DWORD** z **wyłączone**, za pomocą **dane wartości** z **1**, do następujących kluczy rejestru:
+  Aby rozwiązać ten problem, użyj Edytora rejestru w celu dodania **wartości DWORD** z **wyłączonymi** **danymi o wartości** **1**do następujących kluczy rejestru:
 
   - **Raportowanie błędów HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\Windows**
 
-  - (Dla 64-bitowych komputerów): **Raportowanie błędów HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\Windows**
+  - (Dla maszyn 64-bitowych): **raportowanie błędów HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\Windows**
 
-  Aby uzyskać więcej informacji, zobacz [. Ustawienia raportowania błędów systemu Windows](https://docs.microsoft.com/windows/desktop/wer/wer-settings).
+  Aby uzyskać więcej informacji, zobacz [. Ustawienia raportowania błędów systemu Windows](/windows/desktop/wer/wer-settings).
 
-- Znany problem Windows może być przyczyną Just-In-Time debugera, aby zakończyć się niepowodzeniem.
+- Znany problem z systemem Windows może spowodować niepowodzenie debugera just in Time.
 
-  Poprawka jest dodanie **wartość DWORD** z **automatycznie**, za pomocą **dane wartości** z **1**, do następujących kluczy rejestru:
+  Poprawka polega na dodaniu **wartości DWORD** z danymi **o** **wartości** **1**do następujących kluczy rejestru:
 
   - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug**
 
-  - (Dla 64-bitowych komputerów): **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug**
+  - (Dla maszyn 64-bitowych): **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug**
 
-Można napotkać następujące komunikaty o błędach podczas Just-In-Time debugging:
+Podczas debugowania just in Time mogą pojawić się następujące komunikaty o błędach:
 
-- **Nie można dołączyć do procesu powodującego awarię. Określony program nie jest programem Windows ani MS-DOS.**
+- **Nie można dołączyć do procesu powodującego awarię. Określony program nie jest programem systemu Windows lub MS-DOS.**
 
-    Debuger próbował dołączanie do procesu uruchomionego w ramach innego użytkownika.
+    Debuger podjął próbę dołączenia do procesu działającego w innym użytkowniku.
 
-    Aby obejść ten problem, w programie Visual Studio, otwórz **debugowania** > **dołączyć do procesu**i Znajdź proces, który chcesz debugować w **dostępne procesy** Lista. Jeśli nie znasz nazwy procesu, Znajdź identyfikator procesu w **debuger just in Time programu Visual Studio** okna dialogowego. Wybierz proces na **dostępne procesy** listy i wybierz **Dołącz**. Wybierz **nie** odrzucać Just-In-Time okno dialogowe debugera.
+    Aby obejść ten problem, w programie Visual Studio Otwórz > **Debuguj** , **Dołącz do procesu**i Znajdź proces, który chcesz debugować, na liście **dostępne procesy** . Jeśli nie znasz nazwy procesu, Znajdź identyfikator procesu w oknie dialogowym **debuger just in Time programu Visual Studio** . Wybierz proces z listy **dostępne procesy** , a następnie wybierz pozycję **Dołącz**. Wybierz pozycję **nie** , aby odrzucić okno dialogowe debugera just in Time.
 
 - **Nie można uruchomić debugera, ponieważ żaden użytkownik nie jest zalogowany.**
 
-    Nie ma żadnego użytkownika zalogowany do konsoli, dlatego żadna sesja użytkownika, aby wyświetlić Just-In-Time debugging okna dialogowego.
+    Nie ma użytkownika zalogowanego w konsoli, dlatego nie istnieje sesja użytkownika do wyświetlania okna dialogowego debugowania just-in-Time.
 
-    Aby rozwiązać ten problem, należy zalogować się na komputerze.
+    Aby rozwiązać ten problem, zaloguj się na komputerze.
 
 - **Klasa nie jest zarejestrowana.**
 
-    Debuger próbował utworzyć klasę modelu COM, który nie jest zarejestrowana, prawdopodobnie z powodu problemu z instalacją.
+    Debuger próbował utworzyć klasę COM, która nie jest zarejestrowana, prawdopodobnie z powodu problemu z instalacją.
 
-    Aby rozwiązać ten problem, należy użyć Instalatora programu Visual Studio ponownie zainstalować lub naprawić instalację programu Visual Studio.
+    Aby rozwiązać ten problem, użyj Instalator programu Visual Studio do ponownego zainstalowania lub naprawy instalacji programu Visual Studio.
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Zabezpieczenia debugera](../debugger/debugger-security.md)
 - [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)
-- [Opcje debugowania Just-In-Time okno dialogowe](../debugger/just-in-time-debugging-options-dialog-box.md)
-- [Ostrzeżenie o zabezpieczeniach: Dołączanie do procesu należącego do niezaufanego użytkownika może być niebezpieczne. Jeśli informacje wyglądają podejrzanie lub nie masz do nich pełnego zaufania, nie dołączaj do tego procesu](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
+- [Opcje, debugowanie, just-in-Time — okno dialogowe](../debugger/just-in-time-debugging-options-dialog-box.md)
+- [Ostrzeżenie o zabezpieczeniach: dołączanie do procesu należącego do niezaufanego użytkownika może być niebezpieczne. Jeśli poniższe informacje wyglądają podejrzanie lub nie masz pewności, nie dołączaj do tego procesu](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
