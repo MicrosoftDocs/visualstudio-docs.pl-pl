@@ -93,12 +93,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2741e86bdc8e59434472242210cd6de2ffa8cee9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c71b281a89d0465ac80f04de868b16cc5468429a
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655552"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919073"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Zasoby do rozwiązywania błędów zintegrowanego środowiska programistycznego
 
@@ -119,7 +119,7 @@ Dostęp do forów, blogów, rozmów i innych zasobów można uzyskać w witrynie
 
 ## <a name="product-support"></a>Pomoc techniczna
 
-Jeśli nadal masz pytania po wypróbie innych zasobów, możesz skontaktować się z pomocą techniczną firmy Microsoft, odwiedzając witrynę [Pomoc techniczna firmy Microsoft](http://go.microsoft.com/fwlink/?linkid=1782) . Aby uzyskać informacje na temat pomocy technicznej dotyczącej produktów dostępnych w Twoim regionie, zobacz stronę [Opcje opinii programu Visual Studio](../../ide/feedback-options.md) .
+Jeśli nadal masz pytania po wypróbie innych zasobów, możesz skontaktować się z pomocą techniczną firmy Microsoft, odwiedzając witrynę [Pomoc techniczna firmy Microsoft](https://support.microsoft.com/en-us) . Aby uzyskać informacje na temat pomocy technicznej dotyczącej produktów dostępnych w Twoim regionie, zobacz stronę [Opcje opinii programu Visual Studio](../../ide/feedback-options.md) .
 
 ## <a name="see-also"></a>Zobacz także
 

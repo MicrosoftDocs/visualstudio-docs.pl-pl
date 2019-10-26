@@ -8,12 +8,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: bf3a1437c765a4e0e777534d64505ccb69c7ed94
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ea23186ff03ccdb0ff7678380eadc866b63654f2
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649106"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918916"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>Zestaw reguł zabezpieczeń dla zarządzanego kodu
 
@@ -86,3 +86,4 @@ Użyj zestawu reguł zabezpieczeń firmy Microsoft dla starszej wersji analizy k
 |[CA3010](../code-quality/ca3010.md)|Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie kodu XAML|
 |[CA3011](../code-quality/ca3011.md)|Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie biblioteki DLL|
 |[CA3012](../code-quality/ca3012.md)|Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie wyrażenia regularnego|
+|[CA5403](../code-quality/ca5403.md)|Nie wywołuj certyfikatu|

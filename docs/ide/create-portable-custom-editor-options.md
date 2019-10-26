@@ -7,16 +7,16 @@ helpviewer_keywords:
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: cab93bcf60c5a4fb5034bfdfd7601e4f846996d0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7cbb8c9be8ed56294d865d2612a8d79fcdb39df8
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652627"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919122"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Tworzenie przenośnych, niestandardowych ustawień edytora za pomocą EditorConfig
 
-Można dodać plik [EditorConfig](http://editorconfig.org/) do projektu lub bazy kodu w celu wymuszenia spójnych stylów kodowania dla wszystkich, które działają w bazie kodu. Ustawienia EditorConfig mają pierwszeństwo przed ustawieniami globalnego edytora tekstu programu Visual Studio. Oznacza to, że możesz dostosować każdą bazę kodu do używania ustawień edytora tekstów, które są specyficzne dla tego projektu. Nadal można ustawić własne preferencje edytora osobistego w oknie dialogowym **Opcje** programu Visual Studio. Te ustawienia są stosowane zawsze, gdy Pracujesz w bazie kodu bez pliku *. editorconfig* lub gdy plik *. editorconfig* nie przesłania określonego ustawienia. Przykładem takiego preferencji jest wcięcie &mdash;tabs stylu lub spacji.
+Można dodać plik [EditorConfig](https://editorconfig.org/) do projektu lub bazy kodu w celu wymuszenia spójnych stylów kodowania dla wszystkich, które działają w bazie kodu. Ustawienia EditorConfig mają pierwszeństwo przed ustawieniami globalnego edytora tekstu programu Visual Studio. Oznacza to, że możesz dostosować każdą bazę kodu do używania ustawień edytora tekstów, które są specyficzne dla tego projektu. Nadal można ustawić własne preferencje edytora osobistego w oknie dialogowym **Opcje** programu Visual Studio. Te ustawienia są stosowane zawsze, gdy Pracujesz w bazie kodu bez pliku *. editorconfig* lub gdy plik *. editorconfig* nie przesłania określonego ustawienia. Przykładem takiego preferencji jest wcięcie &mdash;tabs stylu lub spacji.
 
 Ustawienia EditorConfig są obsługiwane przez wiele edytorów kodu i środowisk IDE, w tym Visual Studio. Jest to składnik przenośny, który podróżuje z kodem i może wymuszać style kodowania nawet poza programem Visual Studio.
 
@@ -50,22 +50,22 @@ Ustawienia w plikach EditorConfig umożliwiają przechowywanie spójnych stylów
 
 Konwencje kodowania używane w Twoich projektach osobistych mogą różnić się od tych, które są używane w projektach Twojego zespołu. Na przykład, można wolisz, że podczas kodowania, wcięcie dodaje znak tabulacji. Jednak zespół może preferować, że wcięcie dodaje cztery znaki spacji zamiast znaku tabulacji. Pliki EditorConfig rozwiązują ten problem, umożliwiając konfigurację dla każdego scenariusza.
 
-Ponieważ ustawienia są zawarte w pliku w bazie kodu, są one przesyłane razem z tą bazą kodu. Dopóki plik kodu zostanie otwarty w edytorze zgodnym z EditorConfig, zostaną zaimplementowane ustawienia edytora tekstu. Aby uzyskać więcej informacji na temat plików EditorConfig, zobacz witrynę sieci Web [EditorConfig.org](http://editorconfig.org/) .
+Ponieważ ustawienia są zawarte w pliku w bazie kodu, są one przesyłane razem z tą bazą kodu. Dopóki plik kodu zostanie otwarty w edytorze zgodnym z EditorConfig, zostaną zaimplementowane ustawienia edytora tekstu. Aby uzyskać więcej informacji na temat plików EditorConfig, zobacz witrynę sieci Web [EditorConfig.org](https://editorconfig.org/) .
 
 > [!NOTE]
 > Konwencji ustawionych w pliku EditorConfig nie można obecnie wymuszać w potoku ciągłej integracji/ciągłego dostarczania jako błędy kompilacji lub ostrzeżenia. Wszelkie odchylenia stylu są wyświetlane tylko w edytorze programu Visual Studio i **Lista błędów**.
 
 ## <a name="supported-settings"></a>Obsługiwane ustawienia
 
-Edytor w programie Visual Studio obsługuje podstawowy zestaw [Właściwości EditorConfig](http://editorconfig.org/#supported-properties):
+Edytor w programie Visual Studio obsługuje podstawowy zestaw [Właściwości EditorConfig](https://editorconfig.org/#supported-properties):
 
 - indent_style
 - indent_size
 - tab_width
-- Zakończ \_of_line
+- Zakończ\_of_line
 - zestaw
-- Przycinanie \_trailing_whitespace
-- Wstaw \_final_newline
+- Przytnij\_trailing_whitespace
+- Wstaw\_final_newline
 - root
 
 Ustawienia edytora EditorConfig są obsługiwane we wszystkich językach obsługiwanych przez program Visual Studio, z wyjątkiem języka XML. Ponadto EditorConfig obsługuje konwencje [stylów kodu](../ide/editorconfig-code-style-settings-reference.md) , w tym [Język](../ide/editorconfig-language-conventions.md), [Formatowanie](../ide/editorconfig-formatting-conventions.md)i konwencje [nazewnictwa](../ide/editorconfig-naming-conventions.md) dla C# i Visual Basic.
@@ -182,6 +182,6 @@ Zakres Konwencji EditorConfig można kontrolować przez ustawienie właściwośc
 
 - [Konwencje stylu kodu platformy .NET](../ide/editorconfig-code-style-settings-reference.md)
 - [Obsługa EditorConfig dla usługi językowej](../extensibility/supporting-editorconfig.md)
-- [EditorConfig.org](http://editorconfig.org/)
+- [EditorConfig.org](https://editorconfig.org/)
 - [Funkcje edytora kodu](writing-code-in-the-code-and-text-editor.md)
 - [EditorConfig (Visual Studio dla komputerów Mac)](/visualstudio/mac/editorconfig)

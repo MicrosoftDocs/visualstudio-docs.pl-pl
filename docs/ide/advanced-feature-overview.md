@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c54983ee9025cf3e1c4df0161a6be55ebf9b2fa
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2283da7c212102ac948ea368bb95315344d2274e
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72631983"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919114"
 ---
 # <a name="features-of-visual-studio"></a>Funkcje programu Visual Studio
 
@@ -68,7 +68,7 @@ Aby uzyskać więcej informacji, zobacz [przenoszenie do chmury za pomocą progr
 
 ## <a name="create-apps-for-the-web"></a>Tworzenie aplikacji dla sieci Web
 
-Sieci Web w naszym współczesnym świecie, a program Visual Studio może pomóc Ci w pisaniu aplikacji. Aplikacje sieci Web można tworzyć przy użyciu ASP.NET, Node. js, Python, JavaScript i TypeScript. Program Visual Studio rozpoznaje platformy sieci Web, takie jak kątowe, jQuery, Express i inne. ASP.NET Core i .NET Core działają w systemach operacyjnych Windows, Mac i Linux. [ASP.NET Core](http://www.asp.net/core/overview) to główna Aktualizacja dla MVC, WebAPI i sygnalizująca, która działa w systemach Windows, Mac i Linux.  ASP.NET Core została zaprojektowana od podstaw, aby zapewnić, że można utworzyć i utworzyć nowoczesne aplikacje i usługi sieci Web oparte na chmurze.
+Sieci Web w naszym współczesnym świecie, a program Visual Studio może pomóc Ci w pisaniu aplikacji. Aplikacje sieci Web można tworzyć przy użyciu ASP.NET, Node. js, Python, JavaScript i TypeScript. Program Visual Studio rozpoznaje platformy sieci Web, takie jak kątowe, jQuery, Express i inne. ASP.NET Core i .NET Core działają w systemach operacyjnych Windows, Mac i Linux. [ASP.NET Core](https://dotnet.microsoft.com/learn/aspnet/what-is-aspnet-core) to główna Aktualizacja dla MVC, WebAPI i sygnalizująca, która działa w systemach Windows, Mac i Linux.  ASP.NET Core została zaprojektowana od podstaw, aby zapewnić, że można utworzyć i utworzyć nowoczesne aplikacje i usługi sieci Web oparte na chmurze.
 
 Aby uzyskać więcej informacji, zobacz [nowoczesne narzędzia sieci Web](https://visualstudio.microsoft.com/vs/modern-web-tooling/).
 

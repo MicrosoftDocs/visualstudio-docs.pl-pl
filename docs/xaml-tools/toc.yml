@@ -60,50 +60,9 @@
       href: ../debugger/debugging-windows-store-and-windows-universal-apps.md
 - name: Windows Presentation Foundation (WPF)
   items:
-    - name: Rozpoczęcie pracy
+    - name: Wprowadzenie
       displayName: Windows Presentation Foundation (WPF)
       href: ../designers/getting-started-with-wpf.md
-    - name: Omówienie podsystemu WPF
-      href: ../designers/introduction-to-wpf.md
-    - name: Powiązanie danych
-      items:
-        - name: Powiązanie danych WPF za pomocą LINQ to XML
-          href: ../designers/wpf-data-binding-with-linq-to-xml-overview.md
-        - name: Właściwości dynamiczne LINQ to XML
-          items:
-            - name: Omówienie
-              displayName: LINQ to XML dynamic properties
-              href: ../designers/linq-to-xml-dynamic-properties.md
-            - name: Właściwości dynamiczne klasy XAttribute
-              items:
-                - name: Wartość (właściwość dynamiczna XAttribute)
-                  href: ../designers/value-xattribute-dynamic-property.md
-            - name: Właściwości dynamiczne klasy XElement
-              items:
-                - name: Atrybut (właściwość dynamiczna XElement)
-                  href: ../designers/attribute-xelement-dynamic-property.md
-                - name: Element (właściwość dynamiczna XElement)
-                  href: ../designers/element-xelement-dynamic-property.md
-                - name: Elementy (właściwość dynamiczna XElement)
-                  href: ../designers/elements-xelement-dynamic-property.md
-                - name: Elementy podrzędne (właściwość dynamiczna XElement)
-                  href: ../designers/descendants-xelement-dynamic-property.md
-                - name: Wartość (właściwość dynamiczna XElement)
-                  href: ../designers/value-xelement-dynamic-property.md
-                - name: Xml (właściwość dynamiczna XElement)
-                  href: ../designers/xml-xelement-dynamic-property.md
-            - name: Przykłady
-              items:
-                - name: Powiązanie danych WPF za pomocą LINQ to XML
-                  href: ../designers/wpf-data-binding-using-linq-to-xml-example.md
-                - name: Kompilowanie i uruchamianie elementu LinqToXmlDataBinding — przykład
-                  href: ../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md
-                - name: 'Przewodnik: Powiązanie danych LINQ to XML'
-                  href: ../designers/walkthrough-linqtoxmldatabinding-example.md
-                - name: Kod źródłowy L2DBForm.xaml
-                  href: ../designers/l2dbform-xaml-source-code.md
-                - name: Kod źródłowy L2DBForm.xaml.cs
-                  href: ../designers/l2dbform-xaml-cs-source-code.md
     - name: Debugowanie aplikacji platformy WPF >>
       items:
         - name: Debugowanie platformy WPF

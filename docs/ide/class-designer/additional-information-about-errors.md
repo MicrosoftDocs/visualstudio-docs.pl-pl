@@ -28,12 +28,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2fe684f4b10e3570e96a88c34d1e1c08c7388da
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: de1c6c5ec6c5639cc8a9e036bcc674c407c1ac8f
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72631910"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919059"
 ---
 # <a name="class-designer-errors"></a>Błędy Projektanta klas
 
@@ -44,7 +44,7 @@ ms.locfileid: "72631910"
 Pomoc dotyczącą innych błędów i ostrzeżeń można znaleźć w następujących zasobach:
 
 - [Współpraca z kodem C++ wizualizacji](working-with-visual-cpp-code.md) zawiera informacje dotyczące rozwiązywania problemów z wyświetlaniem C++ w diagramie klas.
-- [Forum Projektant klas programu Visual Studio](http://go.microsoft.com/fwlink/?LinkId=160754) zawiera Forum dotyczące pytań dotyczących **Projektant klas**.
+- [Forum Projektant klas programu Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsclassdesigner) zawiera Forum dotyczące pytań dotyczących **Projektant klas**.
 
 ## <a name="see-also"></a>Zobacz także
 
