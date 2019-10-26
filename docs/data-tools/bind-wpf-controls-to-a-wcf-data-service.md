@@ -15,12 +15,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 15a34fdc4486a013999a6b53e34117008396c955
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: ecc08be8c865cefa9b440d9af61cf9d019865ea0
+ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72807011"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72924557"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Powiązywanie kontrolek WPF z usługą danych programu WCF
 
@@ -56,7 +56,7 @@ Wcześniejsza znajomość następujących pojęć jest również przydatna, ale 
 
 - Modele danych jednostek i Entity Framework ADO.NET. Aby uzyskać więcej informacji, zobacz [Entity Framework przegląd](/dotnet/framework/data/adonet/ef/overview).
 
-- Powiązanie danych WPF. Aby uzyskać więcej informacji, zobacz temat [powiązanie danych — omówienie](/dotnet/framework/wpf/data/data-binding-overview).
+- Powiązanie danych WPF. Aby uzyskać więcej informacji, zobacz temat [powiązanie danych — omówienie](/dotnet/desktop-wpf/data/data-binding-overview).
 
 ## <a name="create-the-service-project"></a>Tworzenie projektu usługi
 
@@ -301,4 +301,4 @@ Po zakończeniu tego instruktażu można wykonać następujące powiązane zadan
 - [Powiązywanie kontrolek WPF z zestawem danych](../data-tools/bind-wpf-controls-to-a-dataset.md)
 - [Omówienie WCF (.NET Framework)](/dotnet/framework/data/wcf/wcf-data-services-overview)
 - [Przegląd Entity Framework (.NET Framework)](/dotnet/framework/data/adonet/ef/overview)
-- [Przegląd powiązań danych (.NET Framework)](/dotnet/framework/wpf/data/data-binding-overview)
+- [Przegląd powiązań danych (.NET Framework)](/dotnet/desktop-wpf/data/data-binding-overview)

@@ -15,12 +15,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 56c49f0d3cef6dbb054c8d7d97b4e875b83cb518
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 68ffb040e7d642fc2bf285f0510850edc343a5ce
+ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648819"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72924546"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Powiązywanie kontrolek WPF z zestawem danych
 
@@ -50,7 +50,7 @@ Wcześniejsza znajomość następujących pojęć jest również przydatna, ale 
 
 - Zestawy danych i TableAdapters. Aby uzyskać więcej informacji, zobacz [Narzędzia zestawu danych w programie Visual Studio](../data-tools/dataset-tools-in-visual-studio.md) i [TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
-- Powiązanie danych WPF. Aby uzyskać więcej informacji, zobacz temat [powiązanie danych — omówienie](/dotnet/framework/wpf/data/data-binding-overview).
+- Powiązanie danych WPF. Aby uzyskać więcej informacji, zobacz temat [powiązanie danych — omówienie](/dotnet/desktop-wpf/data/data-binding-overview).
 
 ## <a name="create-the-project"></a>Utwórz projekt
 
@@ -197,7 +197,7 @@ Dodaj kod, który umożliwia użytkownikom przewijanie rekordów produktów za p
 
      Program Visual Studio otwiera plik związany z kodem i tworzy nowy program obsługi zdarzeń `backButton_Click` dla zdarzenia <xref:System.Windows.Controls.Primitives.ButtonBase.Click>.
 
-2. Zmodyfikuj procedurę obsługi zdarzeń `Window_Loaded`, więc `ProductViewSource`, `AdventureWorksLTDataSet` i `AdventureWorksLTDataSetProductTableAdapter` znajdują się poza metodą i są dostępne dla całego formularza. Zadeklaruj tylko te, które mają być globalne dla formularza, i przypisz je w ramach procedury obsługi zdarzeń `Window_Loaded`, podobne do następujących:
+2. Zmodyfikuj procedurę obsługi zdarzeń `Window_Loaded`, więc `ProductViewSource`, `AdventureWorksLTDataSet`i `AdventureWorksLTDataSetProductTableAdapter` znajdują się poza metodą i są dostępne dla całego formularza. Zadeklaruj tylko te, które mają być globalne dla formularza, i przypisz je w ramach procedury obsługi zdarzeń `Window_Loaded`, podobne do następujących:
 
      [!code-csharp[Data_WPFDATASET#1](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-dataset_1.cs)]
      [!code-vb[Data_WPFDATASET#1](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-dataset_1.vb)]
@@ -262,4 +262,4 @@ Po zakończeniu tego instruktażu można wypróbować następujące powiązane z
 
 - [Wiązanie kontrolek WPF z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [Narzędzia zestawów danych w programie Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
-- [Powiązanie danych — omówienie](/dotnet/framework/wpf/data/data-binding-overview)
+- [Powiązanie danych — omówienie](/dotnet/desktop-wpf/data/data-binding-overview)

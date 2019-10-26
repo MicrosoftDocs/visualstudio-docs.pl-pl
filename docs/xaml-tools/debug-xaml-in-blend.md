@@ -9,12 +9,12 @@ manager: jillfra
 ms.technology: vs-ide-debug
 ms.workload:
 - uwp
-ms.openlocfilehash: a9e111f904f0c017dbbe4487401e8e3c363931ac
-ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
-ms.translationtype: HT
+ms.openlocfilehash: 0c785be0002a1e6d4fd1934e559743502611f5fb
+ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
+ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/25/2019
-ms.locfileid: "72919214"
+ms.locfileid: "72924496"
 ---
 # <a name="debug-xaml-in-blend"></a>Debugowanie XAML w Blend
 
@@ -37,7 +37,7 @@ Niektóre typowe przyczyny błędów składni XAML to:
 
 - Element XAML istnieje w lokalizacji, w której jest niedozwolony.
 
-Aby uzyskać więcej informacji na temat typowej składni języka XAML, zobacz [podstawowy przewodnik po SKŁADNI XAML](/previous-versions/windows/apps/hh700351(v=win.10)).
+Aby uzyskać więcej informacji na temat typowej składni języka XAML, zobacz [podstawowy przewodnik po SKŁADNI XAML](/windows/uwp/xaml-platform/xaml-syntax-guide).
 
 Można również identyfikować i rozwiązywać proste błędy składni związane z kodem, błędy kompilacji i błędy czasu wykonywania w programie Blend. Błędy związane z kodem mogą jednak ułatwić identyfikowanie i rozwiązywanie problemów w programie Visual Studio.
 
@@ -119,7 +119,7 @@ Po wykryciu błędów XAML na powierzchni projektowej zostanie wyświetlony aler
 
 Możesz otworzyć projekty programu Blend w programie Visual Studio, aby łatwiej debugować kod w aplikacji. Aby otworzyć projekt programu Blend w programie Visual Studio, kliknij prawym przyciskiem myszy projekt w panelu **projekty** , a następnie kliknij polecenie **Edytuj w programie Visual Studio**. Po zakończeniu sesji debugowania w programie Visual Studio naciśnij kombinację klawiszy Ctrl + Shift + S, aby zapisać wszystkie zmiany, a następnie wróć do programu Blend. Zostanie wyświetlony monit o ponowne załadowanie projektu. Kliknij przycisk **tak, aby** kontynuować pracę w programie Blend.
 
-Aby uzyskać więcej informacji na temat debugowania aplikacji, zobacz [debugowanie aplikacji platformy UWP w programie Visual Studio](/visualstudio/debugger/debug-store-apps-in-visual-studio?view=vs-2015&redirectedfrom=MSDN).
+Aby uzyskać więcej informacji na temat debugowania aplikacji, zobacz [debugowanie aplikacji platformy UWP w programie Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).
 
 ## <a name="get-help"></a>Uzyskaj pomoc
 
