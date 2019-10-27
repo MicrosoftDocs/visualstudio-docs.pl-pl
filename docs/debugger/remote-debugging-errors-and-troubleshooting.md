@@ -1,5 +1,5 @@
 ---
-title: Błędy związane z debugowaniem zdalnym i rozwiązywanie problemów | Dokumentacja firmy Microsoft
+title: Błędy debugowania zdalnego i rozwiązywanie problemów | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -20,16 +20,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 078551111223f11b38f3192075caa9ddfabaf18c
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: f41292c22de1d9c76007ca44cb7accbf82359b3b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043346"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72730020"
 ---
 # <a name="remote-debugging-errors-and-troubleshooting"></a>Błędy związane z debugowaniem zdalnym i rozwiązywanie problemów
 
-Mogą pochodzić między następujące błędy podczas próby debugowania zdalnego.
+Podczas próby debugowania zdalnego mogą wystąpić następujące błędy.
 
 - [Błąd: Nie można automatycznie wkroczyć do serwera](../debugger/error-unable-to-automatically-step-into-the-server.md)
 
@@ -37,41 +37,41 @@ Mogą pochodzić między następujące błędy podczas próby debugowania zdalne
 
 - [Nie można połączyć z monitorem zdalnego debugowania programu Microsoft Visual Studio](../debugger/unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md)
 
-- [Błąd: Maszyna zdalna nie jest wyświetlana w oknie dialogowym połączeń zdalnych](../debugger/error-remote-machine-does-not-appear-in-a-remote-connections-dialog.md)
+- [Błąd: Komputer zdalny nie jest wyświetlany w oknie dialogowym połączeń zdalnych](../debugger/error-remote-machine-does-not-appear-in-a-remote-connections-dialog.md)
 
-## <a name="run-the-remote-debugger-as-an-administrator"></a>Uruchom zdalny debuger jako administrator
+## <a name="run-the-remote-debugger-as-an-administrator"></a>Uruchamianie debugera zdalnego jako administrator
 
-Mogą pochodzić różnych problemów, jeśli nie uruchomisz zdalny debuger jako administrator. Na przykład może zostać wyświetlony następujący błąd: "Visual Studio zdalny debuger (polecenia MSVSMON. Z rozszerzeniem EXE) ma niewystarczające uprawnienia do debugowania tego procesu". Jeśli używasz zdalnego debugera jako aplikacja (nie service), może zostać wyświetlony [innego konta użytkownika](error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-is-running-as-a-different-user.md) błędu.
+Jeśli zdalny debuger nie zostanie uruchomiony jako administrator, mogą występować problemy. Na przykład może zostać wyświetlony następujący błąd: "zdalny debuger programu Visual Studio (MSVSMON. EXE) ma niewystarczające uprawnienia do debugowania tego procesu ". W przypadku korzystania z zdalnego debugera jako aplikacji (a nie usługi) może zostać wyświetlony komunikat o błędzie [innego konta użytkownika](error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-is-running-as-a-different-user.md) .
 
 ### <a name="when-running-the-remote-debugger-as-a-service"></a>Podczas uruchamiania zdalnego debugera jako usługi
 
-Podczas uruchamiania zdalnego debugera jako usługi s, zaleca się uruchamianie jej jako administrator z kilku powodów:
+W przypadku uruchamiania zdalnego debugera jako usługi s zalecamy uruchomienie go jako administrator z kilku powodów:
 
-- Usługa zdalnego debugera umożliwia tylko nawiązywanie połączeń z administratorów, więc istnieją **nie** nowych zagrożeń bezpieczeństwa wprowadzone, uruchamiając go jako administrator.
+- Usługa zdalnego debugera zezwala tylko na połączenia od administratorów, więc **nie** wprowadzono nowych zagrożeń bezpieczeństwa przez uruchomienie go jako administrator.
 
-- Może zablokować błędy, które obsługuje wynik po użytkownik programu Visual Studio ma dodatkowe uprawnienia, aby debugować proces niż sam debuger zdalny.
+- Może to uniemożliwić błędy, jeśli użytkownik programu Visual Studio ma więcej praw do debugowania procesu niż sam debuger zdalny.
 
-- Aby uprościć instalację i konfigurację zdalnego debugera.
+- W celu uproszczenia instalacji i konfiguracji zdalnego debugera.
 
-Chociaż jest możliwe debugowanie bez uruchamiania debugera zdalnego jako administrator, kilka wymagań, aby działało prawidłowo, i często wymagają bardziej zaawansowanych kroki konfiguracji usługi.
+Chociaż jest możliwe debugowanie bez uruchamiania zdalnego debugera jako administrator, istnieje kilka wymagań, aby zapewnić to prawidłowe działanie i często wymagają bardziej zaawansowanych kroków konfiguracji usługi.
 
-- Konto używane na komputerze zdalnym musi mieć **Logowanie jako usługa** uprawnień. Zobacz opisane w sekcji "Dodawanie logowania jako usługa" w [nie można połączyć z powrotem](error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md) błędu.
+- Konto, którego używasz na komputerze zdalnym, musi mieć uprawnienie **Logowanie jako usługa** . Zapoznaj się z instrukcjami w sekcji "aby dodać Logowanie jako usługa" w artykule [nie można nawiązać połączenia z](error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md) błędem.
 
-- Konto musi mieć uprawnienia do debugowania procesu docelowego. Aby uzyskać te uprawnienia, możesz uruchomić zdalnego debugera z tego samego konta jako proces do debugowania. (Zamiast łatwiejsze jest do uruchomienia usługi jako administrator). 
+- Konto musi mieć uprawnienia do debugowania procesu docelowego. Aby uzyskać te prawa, należy uruchomić zdalny debuger w ramach tego samego konta, co proces, który ma być debugowany. (Łatwiejszym rozwiązaniem jest uruchomienie usługi jako administrator). 
 
-- Konto musi być w stanie nawiązać połączenia zwrotnego (czyli uwierzytelnianie za pomocą) komputer Visual Studio za pośrednictwem sieci. W domenie łatwiej jest Połącz ponownie, jeśli debuger zdalny jest uruchomiony w ramach wbudowane konta systemu lokalnego lub usługi sieciowej lub konta domeny. Wbudowane konta mają podwyższony poziom uprawnień, które mogą stanowić zagrożenie dla bezpieczeństwa.
+- Konto musi mieć możliwość nawiązania połączenia z programem (czyli uwierzytelnianiem za pomocą programu) komputera z programem Visual Studio za pośrednictwem sieci. W domenie łatwiej jest połączyć się, jeśli zdalny debuger jest uruchomiony w ramach wbudowanego systemu lokalnego lub kont usługi sieciowej lub konta domeny. Wbudowane konta mają podwyższone uprawnienia zabezpieczeń, które mogą stanowić zagrożenie dla bezpieczeństwa.
 
-### <a name="when-running-the-remote-debugger-as-an-application-normal-mode"></a>Podczas uruchamiania zdalnego debugera jako aplikacja (tryb normalny)
+### <a name="when-running-the-remote-debugger-as-an-application-normal-mode"></a>Podczas uruchamiania debugera zdalnego jako aplikacji (tryb normalny)
 
-Jeśli próbujesz dołączyć do własnego procesu bez podniesionych uprawnień (np. normalne aplikacji), nie ma znaczenia, jeśli używasz zdalnego debugera jako administrator.
+Jeśli próbujesz dołączyć do własnego procesu bez podwyższonego poziomu uprawnień (takiego jak zwykła aplikacja), nie ma znaczenia, czy używasz zdalnego debugera jako administrator.
 
 Chcesz uruchomić zdalny debuger jako administrator w kilku scenariuszach:
 
-- Aby dołączyć do procesów uruchomionych jako inny użytkownik (np. gdy debugowanie usług IIS), lub
+- Chcesz dołączyć do procesów uruchomionych jako inny użytkownik (na przykład podczas debugowania usług IIS) lub
 
-- Próbujesz uruchomić inny proces, a proces, który chcesz uruchomić, gdy administrator.
+- Próbujesz uruchomić inny proces, a proces, który chcesz uruchomić, jest administratorem.
 
-Możesz zrobić **nie** ma zostać uruchomiony z uprawnieniami administratora, jeśli chcesz uruchomić procesy, a proces, którego chcesz uruchomić powinien **nie** mieć uprawnienia administratora.
+**Nie** chcesz uruchamiać programu jako administrator, jeśli chcesz uruchamiać procesy, a proces, który chcesz uruchomić, **nie** powinien być administratorem.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Debugowanie zdalne](../debugger/remote-debugging.md)

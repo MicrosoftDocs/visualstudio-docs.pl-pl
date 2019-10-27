@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_datakind — | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_dataKind | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf4a0324046383557c9c32afae2e6f05a41124ba
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 1291c57425b7250af46b3b02ba8f407fb4959a05
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64790381"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740705"
 ---
-# <a name="idiasymbolgetdatakind"></a>IDiaSymbol::get_dataKind
-Pobiera zmienną klasyfikacji symbol danych.
+# <a name="idiasymbolget_datakind"></a>IDiaSymbol::get_dataKind
+Pobiera klasyfikację zmiennej symbolu danych.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,21 +33,21 @@ HRESULT get_dataKind ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca wartość z zakresu od [datakind — wyliczenie](../../debugger/debug-interface-access/datakind.md) wyliczenie opisujące typ danych, takich jak globalnego, statyczne lub wartością stałą, na przykład.
+określoną Zwraca wartość z wyliczenia [typu datakind](../../debugger/debug-interface-access/datakind.md) określającego rodzaj danych, takich jak globalne, statyczne lub stałe, na przykład.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
-> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Wartość zwracana przez `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
 ## <a name="requirements"></a>Wymagania
 
 |Wymaganie|Opis|
 |-----------------|-----------------|
-|Nagłówek:|dia2.h|
-|Wersja:|V7.0 DIA SDK|
+|Nagłówki|dia2. h|
+|Wersja:|DIA SDK v 7.0|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [DataKind, wyliczenie](../../debugger/debug-interface-access/datakind.md)

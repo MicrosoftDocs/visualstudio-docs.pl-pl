@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_guid — | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_guid | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b0fe27279c1f973743813cae00827a8ff063af4
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: e0618c3bf0c06ba0b529004f38985fd5dd90d688
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64796433"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740608"
 ---
-# <a name="idiasymbolgetguid"></a>IDiaSymbol::get_guid
-Pobiera symbolu Unikatowy identyfikator globalny (GUID).
+# <a name="idiasymbolget_guid"></a>IDiaSymbol::get_guid
+Pobiera unikatowy identyfikator globalny (GUID) symbolu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,20 +33,20 @@ HRESULT get_guid ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca identyfikator GUID symbolu.
+określoną Zwraca identyfikator GUID symbolu.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
-> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Wartość zwracana `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
 ## <a name="requirements"></a>Wymagania
 
 |Wymaganie|Opis|
 |-----------------|-----------------|
-|Nagłówek:|dia2.h|
-|Wersja:|V7.0 DIA SDK|
+|Nagłówki|dia2. h|
+|Wersja:|DIA SDK v 7.0|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

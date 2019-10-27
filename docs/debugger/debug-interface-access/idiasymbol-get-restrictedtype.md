@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_restrictedType | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_restrictedType | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8929414c0e36983d378ea2a801803321f3aa88c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: eac7e512d2fbfb5367725b3878d292444961b6de
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62835529"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739393"
 ---
-# <a name="idiasymbolgetrestrictedtype"></a>IDiaSymbol::get_restrictedType
-Określa, czy `this` wskaźnik jest oznaczony jako ograniczone.
+# <a name="idiasymbolget_restrictedtype"></a>IDiaSymbol::get_restrictedType
+Określa, czy `this` wskaźnik jest oflagowany jako ograniczony.
 
 ## <a name="syntax"></a>Składnia
 
@@ -30,10 +30,10 @@ HRESULT get_restrictedType(
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Wskaźnik do `BOOL` określająca czy `this` wskaźnik jest oznaczony jako ograniczone.
+określoną Wskaźnik do `BOOL`, który określa, czy `this` wskaźnik jest oflagowany jako ograniczony.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

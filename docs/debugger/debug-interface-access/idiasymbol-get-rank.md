@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_rank — | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_rank | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c38962ab5915a4235201e76e1828f84a56af1333
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: c5cff86464a4034ad869cdfe231a88ad128dbf52
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64830781"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739489"
 ---
-# <a name="idiasymbolgetrank"></a>IDiaSymbol::get_rank
-Pobiera rangę tablicy wielowymiarowej FORTRAN (liczba wymiarów).
+# <a name="idiasymbolget_rank"></a>IDiaSymbol::get_rank
+Pobiera rangę (liczbę wymiarów) Pascal wielowymiarowej tablicy.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,16 +33,16 @@ HRESULT get_rank ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca liczbę wymiarów w tablicy wielowymiarowej FORTRAN.
+określoną Zwraca liczbę wymiarów w wielowymiarowej tablicy Pascal.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
-> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Wartość zwracana `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
 ## <a name="remarks"></a>Uwagi
- Ranga odnosi się do liczby wymiarów w tablicy, gdy tablica jest zadeklarowana jako `myarray[1,2,3]`. W tym przykładzie randze wymiary 3 i 3. Ranga nie ma zastosowania do języka C++, która korzysta z koncepcji tablicy tablic dla każdego wymiaru (czyli `myarray[1][2][3]`).
+ Ranga odnosi się do liczby wymiarów w tablicy, w której tablica jest zadeklarowana jako `myarray[1,2,3]`. Ten przykład ma rangę 3 i 3 Wymiary. Ranga nie ma zastosowania C++ , która używa koncepcji tablicy tablic dla każdego wymiaru (to jest,`myarray[1][2][3]`).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

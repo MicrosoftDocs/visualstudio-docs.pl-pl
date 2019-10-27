@@ -1,5 +1,5 @@
 ---
-title: Funkcja SccRename | Dokumentacja firmy Microsoft
+title: Funkcja SccRename | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +12,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1329f847f7f961bf4c792cbdf7f40f8f04b1694c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 30b2928653507b670160c72ca3ce09a0227a4170
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338732"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72720766"
 ---
 # <a name="sccrename-function"></a>SccRename, funkcja
 Ta funkcja zmienia nazwę pliku w systemie kontroli źródła.
@@ -36,36 +36,36 @@ SCCRTN SccRename(
 #### <a name="parameters"></a>Parametry
  pvContext
 
-[in] Struktura kontekście wtyczki kontroli źródła.
+podczas Struktura kontekstu wtyczki kontroli źródła.
 
- hWnd
+ Właściwość
 
-[in] Uchwyt okna środowiska IDE, które wtyczka do kontroli źródła można użyć jako element nadrzędny dla wszystkie okna dialogowe, które zawiera.
+podczas Uchwyt okna środowiska IDE, który może być używany przez wtyczkę kontroli źródła jako element nadrzędny dla dowolnych okien dialogowych, które zapewnia.
 
  lpFileName
 
-[in] W pełni kwalifikowaną nazwę pliku nazwa jest zmieniana.
+podczas W pełni kwalifikowana nazwa pliku, którego nazwę zmieniono.
 
  lpNewName
 
-[in] W pełni kwalifikowana nazwa nowego. Jeśli ścieżka katalogu jest inna, plik został przeniesiony w z jednego podkatalogu do innego.
+podczas W pełni kwalifikowana nazwa. Jeśli ścieżka katalogu jest inna, plik został przeniesiony z jednego podkatalogu do innego.
 
 ## <a name="return-value"></a>Wartość zwracana
- Implementacja wtyczki kontroli źródła tej funkcji powinien zwrócić jedną z następujących wartości:
+ Implementacja wtyczki kontroli źródła tej funkcji powinna zwracać jedną z następujących wartości:
 
 |Wartość|Opis|
 |-----------|-----------------|
-|SCC_OK|Pomyślnie ukończono operację zmiany nazwy.|
-|SCC_E_PROJNOTOPEN|Projekt nie jest otwarty pod kontrolą źródła.|
-|SCC_E_FILENOTCONTROLLED|Plik nie jest pod kontrolą źródła.|
-|SCC_E_ACCESSFAILURE|Wystąpił problem podczas uzyskiwania dostępu do systemu kontroli źródła, prawdopodobnie z powodu problemów z siecią lub rywalizacji o zasoby.|
-|SCC_E_NOTAUTHORIZED|Użytkownik nie ma uprawnień do wykonania tej operacji.|
-|SCC_E_COULDNOTCREATEPROJECT|Nie można utworzyć projektu jako część procesu zmiany nazwy.|
-|SCC_E_OPNOTPERFORMED|Nie można wykonać operacji.|
-|SCC_E_NONSPECIFICERROR|Wystąpił nieokreślony lub ogólny błąd.|
+|SCC_OK|Operacja zmiany nazwy została zakończona pomyślnie.|
+|SCC_E_PROJNOTOPEN|Projekt nie jest otwarty w kontroli źródła.|
+|SCC_E_FILENOTCONTROLLED|Plik nie znajduje się pod kontrolą źródła.|
+|SCC_E_ACCESSFAILURE|Wystąpił problem z uzyskaniem dostępu do systemu kontroli źródła prawdopodobnie z powodu problemów z siecią lub rywalizacją.|
+|SCC_E_NOTAUTHORIZED|Użytkownik nie ma autoryzacji do wykonania tej operacji.|
+|SCC_E_COULDNOTCREATEPROJECT|Nie można utworzyć projektu w ramach procesu zmiany nazwy.|
+|SCC_E_OPNOTPERFORMED|Operacja nie została wykonana.|
+|SCC_E_NONSPECIFICERROR|Wystąpił błąd nieokreślony lub ogólny.|
 
 ## <a name="remarks"></a>Uwagi
- Ta funkcja może służyć do zmiany nazwy pliku lub przenieść je z jednej lokalizacji do innej, w systemie kontroli źródła. Wtyczka do kontroli źródła nie należy próbować uzyskać dostęp do pliku na dysku. Odpowiada środowiska IDE można zmienić nazwy pliku lokalnego.
+ Ta funkcja może służyć do zmiany nazwy pliku lub przenoszenia go z jednej lokalizacji do innej w systemie kontroli źródła. Wtyczka do kontroli źródła nie powinna próbować uzyskać dostępu do pliku na dysku. W środowisku IDE leży zmiana nazwy pliku lokalnego.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Funkcje interfejsu API wtyczki kontroli źródła ](../extensibility/source-control-plug-in-api-functions.md)

@@ -1,5 +1,5 @@
 ---
-title: THREADSTATE | Dokumentacja firmy Microsoft
+title: THREADSTATE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 50f487b3d44fc1b871b00348ec28693b36c49685
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d86baeeab046a7e605979d3af2d6329998f796ba
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316142"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72727495"
 ---
 # <a name="threadstate"></a>THREADSTATE
 Określa stan wątku.
@@ -59,21 +59,21 @@ public enum enum_THREADSTATE { 
  Wskazuje, że wątek został utworzony, ale nie jest jeszcze uruchomiony kod.
 
  `THREADSTATE_DEAD`\
- Wskazuje, że wątek jest nieaktywny.
+ Wskazuje, że wątek jest martwy.
 
  `THREADSTATE_FROZEN`\
- Wskazuje, że wątek jest zablokowane (mogą być wykonywane nie wykonywania).
+ Wskazuje, że wątek jest zablokowany (nie można wykonać wykonywania).
 
 ## <a name="remarks"></a>Uwagi
- Używany do `dwThreadState` pole [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) struktury.
+ Używane dla pola `dwThreadState` struktury [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) .
 
 ## <a name="requirements"></a>Wymagania
- Header: msdbg.h
+ Nagłówek: Msdbg. h
 
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
- Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
+ Zestaw: Microsoft. VisualStudio. Debugger. Interop. dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)

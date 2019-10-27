@@ -1,5 +1,5 @@
 ---
-title: Lokalizacje symboli | Dokumentacja firmy Microsoft
+title: Lokalizacje symboli | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,22 +13,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cc8ed99cad2fb0806c7072b1b2f494aa60e967c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f972d0d072aa36cab608c85305588f6bbd5d47d4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62854769"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738540"
 ---
 # <a name="symbol-locations"></a>Lokalizacje symboli
-Większość symbole mają określonej lokalizacji w pliku obrazu. Lokalizacja symbolu zostanie określony z wartością z przedziału od [locationtype — wyliczenie](../../debugger/debug-interface-access/locationtype.md) wyliczenia. Symbol może obsługiwać dodatkowe właściwości, w zależności od jego lokalizacji.
+Większość symboli ma zdefiniowaną lokalizację w pliku obrazu. Lokalizacja symbolu jest określana z wartością z wyliczenia elementu [LocationType](../../debugger/debug-interface-access/locationtype.md) . Symbol może obsługiwać dodatkowe właściwości w zależności od jego lokalizacji.
 
- W poniższej tabeli przedstawiono najczęściej używane typy lokalizacji i ich właściwości dodatkowych.
+ W poniższej tabeli przedstawiono najczęściej używane typy lokalizacji i ich dodatkowe właściwości.
 
 |Typ lokalizacji|Dodatkowe właściwości|
 |-------------------|---------------------------|
 |`LocIsNull`|brak|
-|`LocIsStatic`|[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)<br /><br /> [IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)<br /><br /> [Idiasymbol::get_relativevirtualaddress —](../../debugger/debug-interface-access/idiasymbol-get-relativevirtualaddress.md) (jeśli są włączone względnych adresów wirtualnych)<br /><br /> [Idiasymbol::get_virtualaddress —](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md) (jeśli jest to podstawowy obraz został ustawiony na wartość różną od zera)|
+|`LocIsStatic`|[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)<br /><br /> [IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)<br /><br /> [IDiaSymbol:: get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasymbol-get-relativevirtualaddress.md) (jeśli są włączone względne adresy wirtualne)<br /><br /> [IDiaSymbol:: get_virtualAddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md) (Jeśli baza obrazu ma ustawioną wartość różną od zera)|
 |`LocIsTLS`|[IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)<br /><br /> [IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|
 |`LocIsRegRel`|[IDiaSymbol::get_registerId](../../debugger/debug-interface-access/idiasymbol-get-registerid.md)<br /><br /> [IDiaSymbol::get_offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md)|
 |`LocIsThisRel`|[IDiaSymbol::get_offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md)|
@@ -39,7 +39,7 @@ Większość symbole mają określonej lokalizacji w pliku obrazu. Lokalizacja s
 |`LocInMetaData`|[IDiaSymbol::get_token](../../debugger/debug-interface-access/idiasymbol-get-token.md)|
 |`LocIsConstant`|[IDiaSymbol::get_value](../../debugger/debug-interface-access/idiasymbol-get-value.md)|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)
 - [IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)
 - [IDiaSymbol::get_bitPosition](../../debugger/debug-interface-access/idiasymbol-get-bitposition.md)

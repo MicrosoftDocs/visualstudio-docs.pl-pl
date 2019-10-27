@@ -1,5 +1,5 @@
 ---
-title: Idialoadcallback::restrictregistryaccess — | Dokumentacja firmy Microsoft
+title: 'IDiaLoadCallback:: RestrictRegistryAccess | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25e6397b65c717be65a9a707dd0a53fc70321acb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a2240ef2d20b46e50e36942553d76b83fce6232b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828507"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743047"
 ---
 # <a name="idialoadcallbackrestrictregistryaccess"></a>IDiaLoadCallback::RestrictRegistryAccess
-Określa, jeśli zapytania rejestru może służyć do zlokalizowania ścieżki wyszukiwania symboli.
+Określa, czy zapytania rejestru mogą służyć do lokalizowania ścieżek wyszukiwania symboli.
 
 ## <a name="syntax"></a>Składnia
 
@@ -29,10 +29,10 @@ HRESULT RestrictRegistryAccess();
 ```
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Dowolny kod powrotu innych niż `S_OK` zapobiega zapytanie w rejestrze dla ścieżki wyszukiwania symboli.
+ Każdy kod powrotny inny niż `S_OK` zapobiega wysyłaniu zapytań do rejestru pod kątem ścieżek wyszukiwania symboli.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

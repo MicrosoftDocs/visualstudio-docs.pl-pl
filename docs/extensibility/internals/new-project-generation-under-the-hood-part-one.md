@@ -1,5 +1,5 @@
 ---
-title: 'Generowanie nowego projektu: Za kulisami, część jednego | Dokumentacja firmy Microsoft'
+title: 'Nowa generacja projektu: pod okapem, część jednej | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,43 +11,43 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a657c59cba31ea48298179a41ab1024a0b7e948f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 41b2b229fe343c9f6d515ba757e4bd976ee7fda5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66326627"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72726526"
 ---
-# <a name="new-project-generation-under-the-hood-part-one"></a>Generowanie nowego projektu: szczegółowe informacje (część pierwsza)
-Nigdy nie myśl o tym, jak utworzyć swój własny typ projektu? Zastanawiasz się, co rzeczywiście się dzieje po utworzeniu nowego projektu? Teraz wykonać podglądu pod maską i zobacz, co naprawdę dzieje.
+# <a name="new-project-generation-under-the-hood-part-one"></a>Generowanie nowego projektu: za kulisami, część pierwsza
+Kiedykolwiek myślisz, jak utworzyć własny typ projektu? Zastanawiasz się, co faktycznie się dzieje podczas tworzenia nowego projektu? Przyjrzyjmy się pod okap i zobacz, co naprawdę się dzieje.
 
- Istnieje kilka zadań, które współrzędne programu Visual Studio:
+ Istnieje kilka zadań, które program Visual Studio koordynuje:
 
-- Wyświetla drzewo wszystkich typów dostępnych projektów.
+- Wyświetla drzewo wszystkich dostępnych typów projektów.
 
-- On Wyświetla listę szablonów aplikacji dla każdego typu projektu i umożliwia wybranie jednej.
+- Zostanie wyświetlona lista szablonów aplikacji dla każdego typu projektu i umożliwia wybranie jednego z nich.
 
-- Zbiera informacje o projekcie dla aplikacji, na przykład nazwę i ścieżkę projektu.
+- Zbiera informacje o projekcie dla aplikacji, takie jak nazwa projektu i ścieżka.
 
 - Przekazuje te informacje do fabryki projektu.
 
-- Generuje on elementy projektu i foldery w bieżącym rozwiązaniu.
+- Generuje elementy projektu i foldery w bieżącym rozwiązaniu.
 
 ## <a name="the-new-project-dialog-box"></a>Okno dialogowe Nowy projekt
- Wszystko zaczyna się po wybraniu typu projektu dla nowego projektu. Zacznijmy od kliknięcie **nowy projekt** na **pliku** menu. **Nowy projekt** pojawi się okno dialogowe, wyglądające podobnie do następującej:
+ Wszystko zaczyna się po wybraniu typu projektu dla nowego projektu. Zacznijmy od kliknięcia przycisku **Nowy projekt** w menu **plik** . Pojawi się okno dialogowe **Nowy projekt** , które wygląda następująco:
 
- ![Okno dialogowe Nowy projekt](../../extensibility/internals/media/newproject.gif "NewProject")
+ ![Nowy projekt — okno dialogowe](../../extensibility/internals/media/newproject.gif "NewProject")
 
- Przyjrzyjmy się im bliżej przyjrzeć. **Typów projektów** drzewa Wyświetla listę różnych typów projektów, można utworzyć. Po wybraniu typu projektu, takich jak **Visual C# Windows**, zobaczysz listę szablonów aplikacji, które ułatwią Ci rozpoczęcie pracy. **Zainstalowane szablony programu Visual Studio** instalowanych przez program Visual Studio i są dostępne dla każdego użytkownika komputera. Nowe szablony, które można tworzyć lub zebrać mogą być dodawane do **Moje szablony** i są dostępne tylko dla Ciebie.
+ Przyjrzyjmy się bliżej. Drzewo **typy projektów** zawiera listę różnych typów projektów, które można utworzyć. W przypadku wybrania typu projektu, takiego jak **Visual C# Windows**, zostanie wyświetlona lista szablonów aplikacji, które ułatwią rozpoczęcie pracy. **Zainstalowane szablony programu Visual Studio** są instalowane przez program Visual Studio i są dostępne dla każdego użytkownika komputera. Nowe szablony, które tworzysz lub zbierasz, można dodać do **moich szablonów** i są dostępne tylko dla Ciebie.
 
- Po wybraniu szablonu, takie jak **aplikacji Windows**, opis typu aplikacji jest wyświetlany w oknie dialogowym; w tym przypadku **projekt służący do tworzenia aplikacji za pomocą interfejsu użytkownika Windows**.
+ Po wybraniu szablonu, takiego jak **aplikacja systemu Windows**, w oknie dialogowym pojawi się opis typu aplikacji. w tym przypadku **projekt służący do tworzenia aplikacji z interfejsem użytkownika systemu Windows**.
 
- W dolnej części **nowy projekt** okno dialogowe pojawi się kilka formantów, które zebrać więcej informacji. Formanty, zostanie wyświetlony zależą od typu projektu, ale zazwyczaj obejmują one projektu **nazwa** pole tekstowe **lokalizacji** pole tekstowe i pokrewnych **Przeglądaj** przycisk i **Nazwa rozwiązania** pole tekstowe i pokrewnych **Utwórz katalog rozwiązania** pole wyboru.
+ W dolnej części okna dialogowego **Nowy projekt** zobaczysz kilka kontrolek, które zbierają więcej informacji. Kontrolki, które widzisz, zależą od typu projektu, ale zazwyczaj zawierają pole tekstowe **Nazwa** projektu, pole tekstowe **lokalizacji** i powiązany przycisk **Przeglądaj** , a także pole tekstowe **Nazwa rozwiązania** i powiązane **katalogi tworzenia dla rozwiązania** pole wyboru.
 
-## <a name="populating-the-new-project-dialog-box"></a>Wypełnianie okna dialogowego Nowy projekt
- Gdzie jest **nowy projekt** okno dialogowe uzyskać informacji o jej? Istnieją dwa mechanizmy, w tym miejscu pracy, jeden z nich jest przestarzałe. **Nowy projekt** okno dialogowe łączy i wyświetla informacje uzyskane z obu mechanizmów.
+## <a name="populating-the-new-project-dialog-box"></a>Zapełnianie okna dialogowego Nowy projekt
+ Gdzie okno dialogowe **Nowy projekt** otrzymuje informacje z? W tym miejscu istnieją dwa mechanizmy, z których jeden z nich jest przestarzały. Okno dialogowe **Nowy projekt** łączy i wyświetla informacje uzyskane z obu mechanizmów.
 
- Starsza metoda (przestarzałe) korzysta z wpisy rejestru systemowego i plików .vsdir. Ten mechanizm jest uruchamiany po otwarciu programu Visual Studio. Metoda nowszej używa plików .vstemplate. Ten mechanizm jest uruchamiany podczas inicjowania programu Visual Studio, na przykład, uruchamiając
+ Starsza (przestarzała) Metoda używa wpisów rejestru systemu i plików. vsdir. Ten mechanizm jest uruchamiany, gdy program Visual Studio jest otwarty. Nowsza metoda używa plików. vstemplate. Ten mechanizm jest uruchamiany po zainicjowaniu programu Visual Studio, na przykład przez uruchomienie
 
 ```
 devenv /setup
@@ -60,119 +60,119 @@ devenv /installvstemplates
 ```
 
 ### <a name="project-types"></a>Typy projektów
- Położenie i nazwy **typów projektów** główne węzły, takich jak **Visual C#** i **inne języki**, jest określana przez wpisy rejestru systemowego. Organizowanie węzłów podrzędnych, takich jak **bazy danych** i **urządzeń inteligentnych**, odzwierciedla hierarchię folderów, które zawierają odpowiadające im pliki vstemplate. Przyjrzyjmy się węzły główne najpierw.
+ Pozycja i nazwy węzłów głównych **typu projektu** , takich jak  **C# Wizualizacja** i **inne języki**, są określane przez wpisy rejestru systemowego. Organizacja węzłów podrzędnych, taka jak **baza danych** i **urządzenie inteligentne**, odzwierciedla hierarchię folderów zawierających odpowiednie pliki. vstemplate. Najpierw przyjrzyjmy się węzłom głównym.
 
 #### <a name="project-type-root-nodes"></a>Węzły główne typu projektu
- Gdy [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] jest zainicjowany, przechodzi przez podkluczy klucza rejestru systemu HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0\NewProjectTemplates\TemplateDirs do tworzenia i nazwy węzłów głównych **typówprojektów** drzewa. Te informacje są buforowane w celu późniejszego użycia. Przyjrzyj się TemplateDirs\\{FAE04EC1-301F-11D3-BF4B-00C04F79EFBC} \\ /1 klucza. Każdy wpis jest identyfikator GUID pakietu VSPackage. Nazwa podklucza (/ 1) jest ignorowany, ale jego obecność oznacza, że jest **typów projektów** węzła głównego. Węzeł główny z kolei może mieć kilka podkluczy, które kontrolują wygląd w **typów projektów** drzewa. Spójrzmy na niektóre z nich.
+ Po zainicjowaniu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] przechodzi podklucze rejestru systemowego Key HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0\NewProjectTemplates\TemplateDirs w celu skompilowania i nazwy głównych węzłów drzewa **typów projektu** . Te informacje są przechowywane w pamięci podręcznej do późniejszego użycia. Spójrz na klucz TemplateDirs\\{FAE04EC1-301F-11D3-BF4B-00C04F79EFBC}\\/1. Każdy wpis jest identyfikatorem GUID pakietu VSPackage. Nazwa podklucza (/1) jest ignorowana, ale jego obecność wskazuje, że jest to węzeł główny **typu projektu** . Węzeł główny może z kolei mieć kilka podkluczy kontrolujących jego wygląd w drzewie **typów projektu** . Przyjrzyjmy się niektórym z nich.
 
 ##### <a name="default"></a>(Domyślnie)
- To jest identyfikator zasobu ciągu zlokalizowane nazwy węzła głównego. Zasób ciągu znajduje się w towarzyszącej bibliotece DLL wybranych przez identyfikator GUID pakietu VSPackage.
+ Jest to identyfikator zasobu zlokalizowanego ciągu, który nazywa węzeł główny. Zasób ciągu znajduje się w satelickiej bibliotece DLL wybranej przez identyfikator GUID pakietu VSPackage.
 
- W tym przykładzie jest identyfikator GUID pakietu VSPackage
+ W przykładzie identyfikator GUID pakietu VSPackage to
 
  {FAE04EC1-301F-11D3-BF4B-00C04F79EFBC}
 
- i identyfikator zasobu (wartość domyślna) węzła głównego (/ 1) jest #2345
+ i identyfikator zasobu (wartość domyślna) węzła głównego (/1) jest #2345
 
- Jeśli wyszukiwanie identyfikatora GUID w pobliżu klucz pakietów i sprawdzić podklucz SatelliteDll, można znaleźć ścieżkę do zestawu, który zawiera zasób ciągu:
+ Jeśli szukasz identyfikatora GUID w kluczu pobliskich pakietów i sprawdzisz podklucz SatelliteDll, możesz znaleźć ścieżkę zestawu zawierającego zasób ciągu:
 
- \<Ścieżka instalacji usługi Visual Studio > \VC#\VCSPackages\1033\csprojui.dll
+ ścieżka instalacji programu Visual Studio \<>VC#\ \VCSPackages\1033\csprojui.dll
 
- Aby to sprawdzić, otwórz Eksploratora plików, a następnie przeciągnij csprojui.dll do katalogu programu Visual Studio... Tabela ciągów pokazuje, że zasób #2345 ma podpis **Visual C#** .
+ Aby to sprawdzić, otwórz Eksploratora plików i przeciągnij csprojui. dll do katalogu programu Visual Studio. Tabela ciągów pokazuje, że #2345 zasobów zawiera **wizualizację C#** napisów.
 
 ##### <a name="sortpriority"></a>SortPriority
- Określa położenie węzeł główny na **typów projektów** drzewa.
+ Określa położenie węzła głównego w drzewie **typów projektu** .
 
- REG_DWORD SortPriority 0x00000014 (20)
+ SortPriority REG_DWORD 0x00000014 (20)
 
- Im mniejsza liczba priorytet, tym większe pozycji w drzewie.
+ Im mniejsza liczba priorytetów, tym większa pozycja w drzewie.
 
-##### <a name="developeractivity"></a>DeveloperActivity
- Jeśli występuje ten podklucz Pozycja węzła głównego jest kontrolowana przez okno dialogowe Ustawienia dewelopera. Na przykład
+##### <a name="developeractivity"></a>Programowanie
+ Jeśli ten podklucz jest obecny, położenie węzła głównego jest kontrolowane przez okno dialogowe Ustawienia dewelopera. Na przykład
 
- DeveloperActivity REG_SZ VC#
+ Deweloper — REG_SZVC#
 
- Wskazuje, że Visual C# będą węzeł główny Jeśli ustawiono program Visual Studio na [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] rozwoju. W przeciwnym razie będzie elementem podrzędnym **inne języki**.
+ wskazuje, że C# Wizualizacja będzie węzłem głównym, jeśli program Visual Studio jest ustawiony na potrzeby tworzenia[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]. W przeciwnym razie będzie to węzeł podrzędny **innych języków**.
 
 ##### <a name="folder"></a>Folder
- Jeśli występuje ten podklucz węzeł główny staje się elementem podrzędnym określonego folderu. Zostanie wyświetlona lista możliwych folderów w kluczu
+ Jeśli ten podklucz jest obecny, węzeł główny będzie węzłem podrzędnym określonego folderu. W kluczu zostanie wyświetlona lista możliwych folderów
 
  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\NewProjectTemplates\PseudoFolders
 
- Na przykład zapis projektów bazy danych ma klucz Folder, który odpowiada wpisowi inne typy projektów PseudoFolders. Tak, to w **typów projektów** drzewie **projektów bazy danych** będzie elementem podrzędnym **inne typy projektów**.
+ Na przykład wpis projekty bazy danych ma klucz folderu pasujący do innego typu projektu w PseudoFolders. Dlatego w drzewie **typów projektu** **projekty bazy danych** będą węzłem podrzędnym **innych typów projektów**.
 
-#### <a name="project-type-child-nodes-and-vstdir-files"></a>Węzły podrzędne typu projektu i plików .vstdir
- Położenie węzłów podrzędnych w **typów projektów** drzewa następuje po hierarchii folderów w folderach ProjectTemplates. Dla szablonów maszyny (**zainstalowane szablony programu Visual Studio**), Typowa lokalizacja to \Program Files\Microsoft 14.0\Common7\IDE\ProjectTemplates\ programu Visual Studio i szablony użytkownika (**Moje szablony**), Typowa lokalizacja to \My Studio 14.0\Templates\ProjectTemplates\\. Hierarchie folderów z tymi dwiema lokalizacjami są scalane, tworząc **typów projektów** drzewa.
+#### <a name="project-type-child-nodes-and-vstdir-files"></a>Węzły podrzędne typu projektu i pliki. vstdir
+ Pozycja węzłów podrzędnych w drzewie **typów projektu** jest zgodna z hierarchią folderów w folderach ProjectTemplates. W przypadku szablonów komputera (**szablonów zainstalowanych w programie Visual Studio**) typowa lokalizacja to \Program Files\Microsoft Visual Studio 14.0 \ Common7\IDE\ProjectTemplates\ i szablonów użytkowników (**Moje szablony**), typowa lokalizacja to \Moje Documents \ Program Visual Studio 14.0 \ Templates\ProjectTemplates\\. Hierarchie folderów z tych dwóch lokalizacji są scalane w celu utworzenia drzewa **typów projektu** .
 
- Dla programu Visual Studio przy użyciu języka C# dla deweloperów ustawień **typów projektów** drzewa wygląda następująco:
+ W przypadku programu Visual C# Studio z ustawieniami dewelopera drzewo **typów projektu** wygląda następująco:
 
  ![Typy projektów](../../extensibility/internals/media/projecttypes.png "ProjectTypes")
 
  Odpowiedni folder ProjectTemplates wygląda następująco:
 
- ![Project Templates](../../extensibility/internals/media/projecttemplates.png "ProjectTemplates")
+ ![Szablony projektów](../../extensibility/internals/media/projecttemplates.png "ProjectTemplates")
 
- Gdy **nowy projekt** zostanie otwarte okno dialogowe [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] przechodzi przez ProjectTemplates folder i zostaje odtworzony strukturę w **typów projektów** drzewa z niektórych zmian:
+ Gdy zostanie otwarte okno dialogowe **Nowy projekt** , [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] przechodzą przez folder ProjectTemplates i ponownie utworzy swoją strukturę w drzewie **typów projektu** z pewnymi zmianami:
 
-- Węzeł główny na **typów projektów** drzewa jest określana przez szablon aplikacji.
+- Węzeł główny w drzewie **typów projektu** jest określany przez szablon aplikacji.
 
-- Nazwa węzła może być lokalizowana i może zawierać znaków specjalnych.
+- Nazwa węzła może być lokalizowana i może zawierać znaki specjalne.
 
-- Można zmienić kolejność sortowania.
+- Kolejność sortowania można zmienić.
 
-##### <a name="finding-the-root-node-for-a-project-type"></a>Znajdowanie węzeł główny dla typu projektu
- Gdy program Visual Studio przechodzi przez foldery ProjectTemplates, otworzy wszystkie pliki zip i wyodrębnia pliki vstemplate. Plik .vstemplate używa XML do opisu szablonu aplikacji. Aby uzyskać więcej informacji, zobacz [Generowanie nowego projektu: Za kulisami, część dwóch](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md).
+##### <a name="finding-the-root-node-for-a-project-type"></a>Znajdowanie węzła głównego dla typu projektu
+ Gdy program Visual Studio przechodzi przez foldery ProjectTemplates, otwiera wszystkie pliki zip i wyodrębnia wszystkie pliki. vstemplate. Plik. vstemplate używa kodu XML do opisania szablonu aplikacji. Aby uzyskać więcej informacji, zobacz temat [Nowa generacja projektu: pod okapem, część druga](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md).
 
- \<ProjectType > tag Określa typ projektu dla aplikacji. Na przykład plik \CSharp\SmartDevice\WindowsCE\1033\WindowsCE-EmptyProject.zip zawiera plik EmptyProject.vstemplate, który zawiera ten tag:
+ Tag \<ProjectType > określa typ projektu dla aplikacji. Na przykład plik \CSharp\SmartDevice\WindowsCE\1033\WindowsCE-EmptyProject.zip zawiera plik EmptyProject. vstemplate, który ma następujący Tag:
 
 ```
 <ProjectType>CSharp</ProjectType>
 ```
 
- \<ProjectType > tag, a nie podfolderu w folderze ProjectTemplates określa węzeł główny aplikacji w **typów projektów** drzewa. W tym przykładzie Windows CE aplikacji zostanie wyświetlony w obszarze **Visual C#** węzła głównego, a nawet wtedy, gdy zostały można przenieść folderu WindowsCE do folderu języka Visual Basic, Windows CE aplikacje nadal będzie pojawiają się w obszarze  **Visual C#** węzła głównego.
+ Tag \<ProjectType >, a nie podfolderu w folderze ProjectTemplates, określa węzeł główny aplikacji w drzewie **typów projektu** . W przykładzie Windows CE aplikacje pojawią się w węźle **Visual C#**  root, a nawet jeśli przeniesiesz folder WindowsCE do folderu VisualBasic, aplikacje Windows CE nadal pojawią się w obszarze **Visual C#**  root większości.
 
 ##### <a name="localizing-the-node-name"></a>Lokalizowanie nazwy węzła
- Gdy program Visual Studio przechodzi przez foldery ProjectTemplates, sprawdza, czy wszystkie pliki .vstdir, które znajdzie. Plik .vstdir jest plikiem XML, które kontrolują wygląd typ projektu w **nowy projekt** okno dialogowe. W pliku .vstdir użyj \<LocalizedName > tag, aby nazwa **typów projektów** węzła.
+ Gdy program Visual Studio przechodzi przez foldery ProjectTemplates, analizuje on wszystkie znalezione pliki. vstdir. Plik. vstdir jest plikiem XML, który steruje wyglądem typu projektu w oknie dialogowym **Nowy projekt** . W pliku. vstdir Użyj tagu \<zlokalizowany >, aby nazwać węzeł **typy projektów** .
 
- Na przykład plik \CSharp\Database\TemplateIndex.vstdir zawiera ten tag:
+ Na przykład plik \CSharp\Database\TemplateIndex.vstdir zawiera następujący Tag:
 
 ```
 <LocalizedName Package="{462b036f-7349-4835-9e21-bec60e989b9c}" ID="4598"/>
 ```
 
- Ta opcja określa satelitarnej biblioteki DLL i identyfikator zasobu ciągu zlokalizowane nazwy węzła głównego, w tym przypadku **bazy danych**. Zlokalizowana nazwa może zawierać znaków specjalnych, które nie są dostępne dla nazwy folderów, takie jak **.NET**.
+ Określa to satelitarną bibliotekę DLL i identyfikator zasobu zlokalizowanego ciągu, który nazywa węzeł główny, w tym przypadku **bazy danych**. Zlokalizowana nazwa może zawierać znaki specjalne, które nie są dostępne dla nazw folderów, takich jak **.NET**.
 
- Jeśli nie \<LocalizedName > tag jest obecny, typ projektu jest nazwany przez sam folder, **SmartPhone2003**.
+ Jeśli nie istnieje tag \<zlokalizowany >, typ projektu jest nazwany przez samego folderu, **SmartPhone2003**.
 
-##### <a name="finding-the-sort-order-for-a-project-type"></a>Znajdowanie porządek sortowania dla typu projektu
- Aby określić kolejność sortowania typów projektów, należy użyć plików .vstdir \<SortOrder > tag.
+##### <a name="finding-the-sort-order-for-a-project-type"></a>Znajdowanie kolejności sortowania dla typu projektu
+ Aby określić kolejność sortowania typu projektu, pliki. vstdir \<używają tagu > SortOrder.
 
- Na przykład plik \CSharp\Windows\Windows.vstdir zawiera ten tag:
+ Na przykład plik \CSharp\Windows\Windows.vstdir zawiera następujący Tag:
 
 ```
 <SortOrder>5</SortOrder>
 ```
 
- Plik \CSharp\Database\TemplateIndex.vstdir ma tag z większą wartością:
+ Plik \CSharp\Database\TemplateIndex.vstdir ma tag o większej wartości:
 
 ```
 <SortOrder>5000</SortOrder>
 ```
 
- Im mniejsza liczba w \<SortOrder > tag, tym większe pozycji w drzewie, więc **Windows** węzeł pojawi się powyżej **bazy danych** w węźle **typów projektów**  drzewa.
+ Im mniejsza liczba w znaczniku \<SortOrders >, tym większa pozycja w drzewie, więc węzeł **systemu Windows** jest widoczny w węźle **bazy danych** w drzewie **typów projektu** .
 
- Jeśli nie \<SortOrder > tag jest określona dla typu projektu pojawiają się one w kolejności alfabetycznej, zgodnie z wszelkich typów projektów, które zawierają \<SortOrder > specyfikacji.
+ Jeśli dla typu projektu nie określono > \<SortOrder, pojawia się on w kolejności alfabetycznej po każdym typie projektu, który zawiera \<SortOrder > specyfikacji.
 
- Należy pamiętać, że nie ma żadnych plików .vstdir w folderze Moje dokumenty (**Moje szablony**) folderów. Nazwy typów projektu aplikacji użytkownika nie są lokalizowane i są wyświetlane w kolejności alfabetycznej.
+ Zwróć uwagę, że w folderach Moje dokumenty (**Moje szablony**) nie ma plików VSTDIR. Nazwy typów projektów aplikacji użytkownika nie są zlokalizowane i są wyświetlane w kolejności alfabetycznej.
 
-#### <a name="a-quick-review"></a>Szybki przegląd
- Zmodyfikujmy **nowy projekt** okna dialogowego pole, a następnie utwórz nowy szablon projektu użytkownika.
+#### <a name="a-quick-review"></a>Krótki przegląd
+ Zmodyfikujmy okno dialogowe **Nowy projekt** i utworzysz nowy szablon projektu użytkownika.
 
-1. Dodaj obiekt MyProjectNode podfolderu do folderu 14.0\Common7\IDE\ProjectTemplates\CSharp programu Visual Studio \Program Files\Microsoft.
+1. Dodaj podfolder MyProjectNode do folderu \Program Files\Microsoft Visual Studio 14.0 \ Common7\IDE\ProjectTemplates\CSharp.
 
-2. Utwórz plik MyProject.vstdir w folderze Obiekt MyProjectNode za pomocą dowolnego edytora tekstów.
+2. Utwórz plik WebProject. vstdir w folderze MyProjectNode przy użyciu dowolnego edytora tekstu.
 
-3. Dodaj następujące wiersze do pliku .vstdir:
+3. Dodaj te wiersze do pliku VSTDIR:
 
    ```
    <TemplateDir Version="1.0.0">
@@ -180,11 +180,11 @@ devenv /installvstemplates
    </TemplateDir>
    ```
 
-4. Zapisz i zamknij plik .vstdir.
+4. Zapisz i zamknij plik. vstdir.
 
-5. Utwórz plik MyProject.vstemplate w folderze Obiekt MyProjectNode za pomocą dowolnego edytora tekstów.
+5. Utwórz plik WebProject. vstemplate w folderze MyProjectNode przy użyciu dowolnego edytora tekstu.
 
-6. Dodaj następujące wiersze do pliku .vstemplate:
+6. Dodaj te wiersze do pliku vstemplate:
 
    ```
    <VSTemplate Version="2.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
@@ -194,9 +194,9 @@ devenv /installvstemplates
    </VSTemplate>
    ```
 
-7. Zapisz plik the.vstemplate i zamknij Edytor.
+7. Zapisz plik. vstemplate i Zamknij Edytor.
 
-8. Wyślij plik .vstemplate do nowego folderu MyProjectNode\MyProject.zip skompresowany.
+8. Wyślij plik. vstemplate do nowego folderu skompresowanego MyProjectNode\MyProject.zip.
 
 9. W oknie wiersza polecenia programu Visual Studio wpisz:
 
@@ -206,11 +206,11 @@ devenv /installvstemplates
 
    Otwórz program Visual Studio.
 
-10. Otwórz **nowy projekt** okna dialogowego pole, a następnie rozwiń węzeł **Visual C#** węzeł projektu.
+10. Otwórz okno dialogowe **Nowy projekt** i rozwiń węzeł projektu **wizualizacji C#**  .
 
     ![MyProjectNode](../../extensibility/internals/media/myprojectnode.png "MyProjectNode")
 
-    **Obiekt MyProjectNode** jest wyświetlany jako węzeł podrzędny programu Visual C# tuż pod węzeł Windows.
+    **MyProjectNode** pojawia się jako węzeł podrzędny wizualizacji C# tylko w węźle systemu Windows.
 
-## <a name="see-also"></a>Zobacz też
-- [Generowanie nowego projektu: szczegółowe informacje (część druga)](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)
+## <a name="see-also"></a>Zobacz także
+- [Generowanie nowego projektu: za kulisami, część druga](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

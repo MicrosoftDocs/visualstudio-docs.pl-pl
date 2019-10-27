@@ -1,5 +1,5 @@
 ---
-title: TargetPlatformName, Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
+title: TargetPlatformName, element (szablony Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,15 +9,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c307a52b8f252f5059f2d4009e98fc4d497f616e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f22fb5d94b0f8c5147f014abdb973a23b1b9e24e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316696"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72718917"
 ---
 # <a name="targetplatformname-element-visual-studio-templates"></a>TargetPlatformName, element (szablony Visual Studio)
-Określa platformę, że projekt jest ukierunkowany szablonu. Ten element jest używany do określenia, że szablon projektu jest używany do tworzenia [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] aplikacji.
+Określa platformę, do której należy szablon projektu. Ten element służy do określenia, że szablon projektu jest używany do tworzenia aplikacji [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)].
 
 ## <a name="syntax"></a>Składnia
 
@@ -37,22 +37,22 @@ Określa platformę, że projekt jest ukierunkowany szablonu. Ten element jest u
 
 |Element|Opis|
 |-------------|-----------------|
-|[RequiredPlatformVersion](../extensibility/requiredplatformversion-element-visual-studio-templates.md)|Określa wersję system operacyjny, cele szablonu projektu.|
+|[RequiredPlatformVersion](../extensibility/requiredplatformversion-element-visual-studio-templates.md)|Określa wersję systemu operacyjnego, do którego odwołuje się szablon projektu.|
 
 ### <a name="parent-elements"></a>Elementy nadrzędne
 
 |Element|Opis|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Klasyfikuje szablon i definiuje sposób wyświetlania albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Klasyfikuje szablon i definiuje sposób wyświetlania w oknie dialogowym **Nowy projekt** lub **Dodaj nowy element** .|
 
 ## <a name="text-value"></a>Wartość tekstowa
  Wartość tekstowa jest wymagana.
 
 ## <a name="remarks"></a>Uwagi
- Tekst musi być **Windows**.
+ Tekst musi być w **systemie Windows**.
 
 ## <a name="example"></a>Przykład
- W tym przykładzie określa, że projekt jest ukierunkowany szablonu [!INCLUDE[win8](../debugger/includes/win8_md.md)] lub nowszej.
+ Ten przykład określa, że szablon projektu jest obiektem docelowym [!INCLUDE[win8](../debugger/includes/win8_md.md)] lub nowszym.
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
@@ -64,6 +64,6 @@ Określa platformę, że projekt jest ukierunkowany szablonu. Ten element jest u
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Tworzenie szablonów projektu i elementu](../ide/creating-project-and-item-templates.md)
 - [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

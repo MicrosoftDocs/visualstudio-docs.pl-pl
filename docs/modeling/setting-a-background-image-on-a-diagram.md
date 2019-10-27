@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37d590fb13f7b8b04005d2877d378c556c772af5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5f8806571939cb057852ddd9cca971f9415339ca
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670810"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748250"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Ustawienie obrazu tła w diagramie
 W programie Visual Studio Wizualizacja i Modeling SDK można ustawić obraz tła dla wygenerowanego projektanta przy użyciu kodu niestandardowego.
@@ -100,7 +100,7 @@ W programie Visual Studio Wizualizacja i Modeling SDK można ustawić obraz tła
 
      Aby uzyskać więcej informacji na temat dostosowywania modelu przy użyciu kodu programu, zobacz [nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Definiowanie kształtów i łączników](../modeling/defining-shapes-and-connectors.md)
 - [Dostosowywanie pól tekstowych i obrazu](../modeling/customizing-text-and-image-fields.md)

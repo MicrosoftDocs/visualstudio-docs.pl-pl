@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 091619353adacaeb9c6996653ac64a0bcd84bb5c
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: d56d173d715258153f284c55d9bac80c06a50002
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72568956"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72728718"
 ---
 # <a name="tell-the-debugger-what-type-to-show-using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>Poinformuj debugera o typie, który ma być wyświetlany przyC#użyciu atrybutu DebuggerTypeProxy C++(, Visual Basic,/CLI)
 
@@ -65,7 +65,7 @@ Visual Basic nie ma składni typu otwartego, dlatego nie można wykonać tej czy
 
 `"Namespace.TypeName'2"`
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Używanie atrybutu DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)
 - [Tworzenie niestandardowych widoków obiektów zarządzanych](../debugger/create-custom-views-of-managed-objects.md)

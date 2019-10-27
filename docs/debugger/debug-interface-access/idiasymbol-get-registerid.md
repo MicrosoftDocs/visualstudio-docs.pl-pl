@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_registerid — | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_registerId | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e2b1cbb6837ca139e735bef17bc0c2712d9cae7
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 6ffd349b56c4292de04d5d7a38e82eeafed6775e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64786577"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739467"
 ---
-# <a name="idiasymbolgetregisterid"></a>IDiaSymbol::get_registerId
-Pobiera oznaczenie Zarejestruj się w lokalizacji, gdy [locationtype — wyliczenie](../../debugger/debug-interface-access/locationtype.md) ustawiono `LocIsEnregistered`.
+# <a name="idiasymbolget_registerid"></a>IDiaSymbol::get_registerId
+Pobiera oznaczenie rejestru dla lokalizacji, gdy [Wyliczenie LocationType](../../debugger/debug-interface-access/locationtype.md) ma wartość `LocIsEnregistered`.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,17 +33,17 @@ HRESULT get_registerId ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Zwraca oznaczenie rejestru lokalizacji.
+określoną Zwraca oznaczenie rejestru lokalizacji.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
-> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Wartość zwracana przez `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
 ## <a name="remarks"></a>Uwagi
- Jeśli symbol jest określana względem rejestru, oznacza to, jeśli symbol [locationtype — wyliczenie](../../debugger/debug-interface-access/locationtype.md) jest ustawiona na `LocIsRegRel`, użyj `get_registerId` metody następuje po wywołaniu [idiasymbol::get_offset —](../../debugger/debug-interface-access/idiasymbol-get-offset.md) Metoda pobieranie przesunięcia z rejestru, w którym znajduje się symbol.
+ Jeśli symbol jest powiązany z rejestrem, czyli jeśli [Wyliczenie elementu LocationType](../../debugger/debug-interface-access/locationtype.md) ma ustawioną wartość `LocIsRegRel`, użyj metody `get_registerId`, po której następuje wywołanie metody [IDiaSymbol:: get_offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md) , aby uzyskać przesunięcie z rejestru, w którym symbol jest znajduje.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [LocationType, wyliczenie](../../debugger/debug-interface-access/locationtype.md)

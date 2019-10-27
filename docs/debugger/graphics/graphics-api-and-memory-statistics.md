@@ -1,5 +1,5 @@
 ---
-title: Interfejsu API grafiki i statystyki pamięci | Dokumentacja firmy Microsoft
+title: Interfejs API grafiki i statystyka pamięci | Microsoft Docs
 ms.date: 03/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -11,36 +11,36 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7810889d4af411477573c71aa694d797a90763f3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fa808e76e6655c5d57108c923b19794d0398b80c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62896022"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72735574"
 ---
-# <a name="graphics-api-and-memory-statistics"></a>Interfejsu API grafiki i statystyki pamięci
+# <a name="graphics-api-and-memory-statistics"></a>Interfejs API grafiki i statystyka pamięci
 <!-- VERSIONLESS -->
-Program Visual Studio 2017 i lepsze wsparcie Statystyka interfejsu API grafiki i narzędzia statystyki pamięci.  Te dwa narzędzia umożliwiają wyświetlanie różnych bity informacji na użycie interfejsu API Direct3D, a także użycie pamięci procesora GPU z różnych zasobów.
+Program Visual Studio 2017 lub nowszy obsługuje narzędzia graficzne API Graphics i statystyka pamięci.  Te dwa narzędzia pozwalają przeglądać różne bity informacji o użyciu interfejsu API Direct3D, a także zużywać pamięć procesora GPU dla różnych zasobów.
 
 ## <a name="graphics-api-statistics"></a>Statystyka interfejsu API grafiki
-Statystyka interfejsu API grafiki w programie Visual Studio Graphics Diagnostics umożliwia wyświetlanie wszystkich połączeń Direct3D, które zostały wprowadzone i liczba każde wywołanie.  Zaznacz, aby wyświetlić okno **Widok > Statystyka interfejsu API** elementu menu.
+Statystyka interfejsu API grafiki w programie Visual Studio Diagnostyka grafiki pozwala wyświetlić wszystkie wywołania Direct3D, które zostały wykonane, oraz liczbę każdego wywołania.  Aby wyświetlić okno, wybierz element menu **Statystyka interfejsu API >** .
 
 ![Statystyka interfejsu API](media/gfx_diag_api_statistics.png)
 
-To narzędzie może być przydatna w odnajdywania co wywołań programu DirectX, że nie może realizować możesz lub wywołania, które wykonujesz, zbyt często.
+To narzędzie może być przydatne w odnalezieniu wywołań DirectX, które nie mogą zostać zrealizowane lub wywołania są zbyt często.
 
-Możesz kliknąć prawym przyciskiem myszy w oknie danych Kopiuj wszystko jako plik CSV, który można wkleić do podobny do programu Excel w celu dalszej analizy.
+Możesz kliknąć prawym przyciskiem myszy w oknie, aby skopiować wszystkie dane jako wolumin CSV, które można wkleić do programu Excel w celu przeprowadzenia dalszej analizy.
 
 ## <a name="memory-statistics"></a>Statystyka pamięci
-To narzędzie spowoduje wyświetlenie ilości pamięci, sterownik karty graficznej jest przydzielanie zasobów tworzenie w ramce.  Aby wyświetlić to okno, wybierz **Widok > Statystyki pamięci** elementu menu.
+To narzędzie wyświetli ilość pamięci przydzielanej przez sterownik grafiki do zasobów tworzonych w ramce.  Aby wyświetlić to okno, wybierz element menu **Wyświetl statystykę pamięci >** .
 
 ![Statystyka pamięci](media/gfx_diag_memory_statistics.png)
 
-**Przydział procesora GPU** ilość pamięci używanej przez zdarzenia wyświetlane w kolumnie jest wyświetlana **zdarzeń** kolumny.  Możesz również wybrać ikonę Obejrzyj ![ikona monitorowania](media/gfx_watch.png) do wyświetlania [Historia zasobów](graphics-event-list.md#resource-history) dla wybranego zdarzenia.
+W kolumnie **alokacja procesora GPU** wyświetlana jest ilość pamięci używanej w zdarzeniu wyświetlanym w kolumnie **zdarzenie** .  Możesz również wybrać ikonę czujki ![ikonę czujki](media/gfx_watch.png), aby wyświetlić [historię zasobów](graphics-event-list.md#resource-history) dla wybranego zdarzenia.
 
-Podobnie jak w przypadku narzędzia Statystyka interfejsu API, możesz kliknąć prawym przyciskiem myszy w oknie danych Kopiuj wszystko jako plik CSV, który można wkleić do podobny do programu Excel w celu dalszej analizy.
+Podobnie jak w przypadku narzędzia Statystyka interfejsu API można kliknąć prawym przyciskiem myszy w oknie, aby skopiować wszystkie dane jako woluminy CSV, które można wkleić do programu Excel w celu przeprowadzenia dalszej analizy.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Diagnostyka grafiki (debugowanie grafiki DirectX)](visual-studio-graphics-diagnostics.md)
 - [Historia zasobów](graphics-event-list.md#resource-history)
 <!-- /VERSIONLESS -->

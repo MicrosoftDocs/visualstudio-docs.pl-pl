@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_baseSymbol | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_baseSymbol | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fd03eaead008c4014b10f9390610c7e103a4a6c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 307358522609659a8a95b94a0adf037026f5b948
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62837852"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740944"
 ---
-# <a name="idiasymbolgetbasesymbol"></a>IDiaSymbol::get_baseSymbol
-Pobiera symbol, z której opiera się wskaźnik myszy.
+# <a name="idiasymbolget_basesymbol"></a>IDiaSymbol::get_baseSymbol
+Pobiera symbol, z którego bazuje wskaźnik.
 
 ## <a name="syntax"></a>Składnia
 
@@ -30,11 +30,11 @@ HRESULT get_baseSymbol(
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Wskaźnik do symbolu, w którym opiera się wskaźnik.
+określoną Wskaźnik do symbolu, z którego bazuje wskaźnik.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [IDiaSymbol::get_baseSymbolId](../../debugger/debug-interface-access/idiasymbol-get-basesymbolid.md)

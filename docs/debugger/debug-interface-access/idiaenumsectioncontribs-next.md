@@ -1,5 +1,5 @@
 ---
-title: Idiaenumsectioncontribs::Next — | Dokumentacja firmy Microsoft
+title: 'IDiaEnumSectionContribs:: Next | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e8fd088ff6be619de56f27f91b198aed18e428c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 61d99b0c881abdb8974e94352911ae3234c440c1
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829787"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744271"
 ---
 # <a name="idiaenumsectioncontribsnext"></a>IDiaEnumSectionContribs::Next
-Pobiera określoną liczbę sekcji wkład w kolejności wyliczenia.
+Pobiera określoną liczbę udziałów sekcji w sekwencji wyliczenia.
 
 ## <a name="syntax"></a>Składnia
 
@@ -35,19 +35,19 @@ HRESULT Next( 
 #### <a name="parameters"></a>Parametry
  celt
 
-[in] Liczba sekcji wkład w modułu wyliczającego do pobrania.
+podczas Liczba udziałów sekcji w module wyliczającym do pobrania.
 
  rgelt
 
-[out] Tablica, która ma zostać wypełniony kolorem [idiasectioncontrib —](../../debugger/debug-interface-access/idiasectioncontrib.md) obiekty reprezentujące wkładów odpowiednią sekcję.
+określoną Tablica, która ma zostać wypełniona obiektami [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md) , które reprezentują żądane wkłady sekcji.
 
  pceltFetched
 
-[out] Zwraca liczbę sekcji wkład w pobrania modułu wyliczającego.
+określoną Zwraca liczbę udziałów sekcji w pobieranym module wyliczającym.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli nie ma żadnych więcej wkładów sekcji. W przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK`. Zwraca `S_FALSE`, jeśli nie ma więcej udziałów w sekcji. W przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

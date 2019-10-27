@@ -1,5 +1,5 @@
 ---
-title: Używać okien debugera przy debugowaniu aplikacji pierwszego planu | Dokumentacja firmy Microsoft
+title: Używaj okien debugera podczas debugowania aplikacji pierwszego planu | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -22,20 +22,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11bd61cda8c92721fb42c640b0b5100b8054acdf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 759d9a6a3beb55bf72a0f41a93cb26c8c15b0c5e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894869"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72734052"
 ---
 # <a name="how-can-i-use-debugger-windows-while-debugging-a-foreground-program"></a>Jak można używać okien debugera przy debugowaniu programu pierwszego planu?
 ## <a name="problem-description"></a>Opis problemu
- Próbuję debugować problem, malowaniu ekranu. Aby obserwować ten problem, muszę zachować program na pierwszym planie, co oznacza, że nie mam dostępu do debugowania systemu windows. Co mogę zrobić?
+ Próbuję debugować problem z narysowaniem ekranu. Aby obsłużyć ten problem, muszę zachować mój program na pierwszym planie, co oznacza, że nie ma dostępu do okien debugowania. Co mogę zrobić?
 
 ## <a name="solution"></a>Rozwiązanie
- Jeśli masz drugiego komputera, można użyć, zdalne debugowanie. Podczas działania debugera na hoście z konfiguracją dwóch komputerach możesz obejrzeć malowaniu ekranu na komputerze zdalnym. Aby uzyskać więcej informacji na temat debugowania zdalnego, zobacz [zdalne debugowanie](../debugger/remote-debugging.md).
+ Jeśli używasz drugiego komputera, możesz użyć zdalnego debugowania. W przypadku konfiguracji z dwoma komputerami można obejrzeć malowanie ekranu na komputerze zdalnym podczas korzystania z debugera na hoście. Aby uzyskać więcej informacji na temat debugowania zdalnego, zobacz [zdalne debugowanie](../debugger/remote-debugging.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Debugowanie kodu natywnego — często zadawane pytania](../debugger/debugging-native-code-faqs.md)
 - [Debugowanie kodu natywnego](../debugger/debugging-native-code.md)
