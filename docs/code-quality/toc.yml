@@ -751,6 +751,8 @@
                   href: ca5397.md
                 - name: 'CA5398: Unikaj zapisanych na stałe wartości SslProtocols'
                   href: ca5398.md
+                - name: 'CA5403: Nie zapisuj certyfikatu na stałe w kodzie'
+                  href: ca5403.md
             - name: Ostrzeżenia dotyczące wykorzystania
               items:
                 - name: Omówienie
