@@ -10,12 +10,12 @@ author: jillre
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: cbb47e07bbe3697f905a28d9771cf55fe6fcc74c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6c980ab2d920a80e49450f6ffe4a9433f490b412
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659741"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72982849"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Stosowanie wycinków kodu do izolowania od siebie poszczególnych części aplikacji w celu przeprowadzania testów jednostkowych
 
@@ -35,7 +35,7 @@ Wycinki opierają się w ten sposób na swoich możliwościach bycia strukturą 
 
 ### <a name="design-for-dependency-injection"></a>Zaprojektowane do wstrzykiwania zależności
 
-Aby korzystać z wycinków, aplikacja musi być tak zaprojektowana, aby różne składniki nie były zależne od siebie, ale tylko od definicji interfejsu. Zamiast być połączone w czasie kompilacji, składniki są połączone w czasie wykonywania. Ten wzór pomaga stworzyć oprogramowanie, które będzie niezawodne i łatwe do zaktualizowania, ponieważ zmiany zwykle nie są propagowane przez granice składnika. Zalecamy wykonanie poniższych czynności, nawet jeśli nie używasz wycinków. Jeśli piszesz nowy kod, możesz łatwo postępować zgodnie z wzorcem [iniekcji zależności](http://en.wikipedia.org/wiki/Dependency_injection) . Jeśli piszesz testy dla istniejącego oprogramowania, możliwe, że trzeba będzie je refraktoryzować. Jeżeli byłoby to niepraktyczne, można rozważyć użycie zamiast niego podkładki.
+Aby korzystać z wycinków, aplikacja musi być tak zaprojektowana, aby różne składniki nie były zależne od siebie, ale tylko od definicji interfejsu. Zamiast być połączone w czasie kompilacji, składniki są połączone w czasie wykonywania. Ten wzór pomaga stworzyć oprogramowanie, które będzie niezawodne i łatwe do zaktualizowania, ponieważ zmiany zwykle nie są propagowane przez granice składnika. Zalecamy wykonanie poniższych czynności, nawet jeśli nie używasz wycinków. Jeśli piszesz nowy kod, możesz łatwo postępować zgodnie z wzorcem [iniekcji zależności](https://en.wikipedia.org/wiki/Dependency_injection) . Jeśli piszesz testy dla istniejącego oprogramowania, możliwe, że trzeba będzie je refraktoryzować. Jeżeli byłoby to niepraktyczne, można rozważyć użycie zamiast niego podkładki.
 
 Zacznijmy od tej dyskusji z przykładem z motywem, który znajduje się na diagramie. Klasa, którą odczytuje StockAnalyzer, udostępnia ceny i generuje interesujące wyniki. Obejmuje ona niektóre metody publiczne, które chcemy sprawdzić. Aby zachować prostotę, przyjrzyjmy się jednej z tych metod, bardzo prostej, która raportuje bieżącą cenę określonego udziału. Chcemy napisać test jednostkowy tej metody. Oto pierwszy projekt testu:
 

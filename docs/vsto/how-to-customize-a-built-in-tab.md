@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Dostosowywanie wbudowanej karty'
+title: 'Instrukcje: dostosowywanie wbudowanej karty'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,15 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8e6f2d0da758a8897f28a22dec8adf1f8e05a36c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3550c3bd48a02d5daf4ef7156960e8a8fab3b93a
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63419465"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985944"
 ---
-# <a name="how-to-customize-a-built-in-tab"></a>Instrukcje: Dostosowywanie wbudowanej karty
-  Grupy i formanty można dodać do wbudowanej karty. Wbudowana karty to karta, która jest już na Wstążce aplikacji Microsoft Office. Na przykład **danych** karty to karta wbudowana w programie Excel. Podczas tworzenia grup niestandardowych, zostanie wyświetlone ostatnie na karcie, ale można przenieść grupy dowolne miejsce na karcie.
+# <a name="how-to-customize-a-built-in-tab"></a>Instrukcje: dostosowywanie wbudowanej karty
+  Do wbudowanej karty można dodać grupy i kontrolki. Karta wbudowana to karta, która znajduje się już na Wstążce aplikacji Microsoft Office. Na przykład karta **dane** jest wbudowaną kartą w programie Excel. Po utworzeniu grupy niestandardowej pojawia się ona jako Ostatnia na karcie, ale można ją przenieść w dowolnym miejscu na karcie.
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
@@ -30,49 +30,49 @@ ms.locfileid: "63419465"
 
 ### <a name="to-add-groups-to-a-built-in-tab"></a>Aby dodać grupy do wbudowanej karty
 
-1. Kliknij prawym przyciskiem myszy plik kodu wstążki w **Eksploratora rozwiązań**, a następnie kliknij przycisk **Projektant widoków**.
+1. Kliknij prawym przyciskiem myszy plik kodu wstążki w **Eksplorator rozwiązań**, a następnie kliknij pozycję **Projektant widoków**.
 
     > [!NOTE]
-    > Jeśli nie ma plik kodu wstążki **Eksploratora rozwiązań**, należy dodać **element wstążki** do projektu. Zobacz [jak: Wprowadzenie do dostosowywania wstążki](../vsto/how-to-get-started-customizing-the-ribbon.md).
+    > Jeśli plik kodu wstążki nie pojawia się w **Eksplorator rozwiązań**, należy dodać **element wstążki** do projektu. Zobacz [jak to zrobić: wprowadzenie do dostosowywania wstążki](../vsto/how-to-get-started-customizing-the-ribbon.md).
 
-2. Kliknij prawym przyciskiem myszy dowolną kartę w Projektancie wstążki, a następnie kliknij przycisk **właściwości**.
+2. Kliknij prawym przyciskiem myszy dowolną kartę w Projektancie wstążki, a następnie kliknij polecenie **Właściwości**.
 
-3. W **właściwości** okna, rozwiń węzeł **ControlId** właściwości, a następnie ustaw **ControlIdType** właściwości **Office**.
+3. W oknie **Właściwości** rozwiń Właściwość **ControlID** , a następnie ustaw właściwość **ControlIdType** na **Office**.
 
-4. Ustaw **OfficeId** właściwości *identyfikator formantu* wbudowane karty, który chcesz dostosować.
+4. Ustaw właściwość **OfficeId** na *Identyfikator formantu* wbudowanej karty, która ma zostać dostosowana.
 
-     Identyfikator kontrolki to nazwa, która unikatowo identyfikuje karty, grupy i formanty, które są wbudowane w aplikacji Microsoft Office.
+     Identyfikator kontrolki to nazwa, która jednoznacznie identyfikuje karty, grupy i kontrolki, które są wbudowane w Microsoft Office aplikacji.
 
-     Aby uzyskać listę kontroli identyfikatorów, zobacz [pliki Pomocy pakietu Office 2010: Identyfikatory kontrolki interfejsu użytkownika fluent Office](http://go.microsoft.com/fwlink/?LinkID=181052).
+     Aby uzyskać listę identyfikatorów sterowania, zobacz [pliki pomocy pakietu office 2010: identyfikatory formantów interfejsu użytkownika pakietu Office Fluent](https://www.microsoft.com/download/details.aspx?id=6627).
 
-5. Z **formanty wstążki Office** karcie **przybornika**, przeciągnij grupy na karcie.
+5. Na karcie **kontrolki wstążki pakietu Office** w **przyborniku**przeciągnij grupy na kartę.
 
     > [!NOTE]
-    > Wbudowane grupy nie są wyświetlane w projektancie. W związku z tym, jedynym sposobem ustalenia, czy użytkownik korzysta z wbudowanej karty jest zbadanie **ControlId** właściwości karty.
+    > Wbudowane grupy nie są wyświetlane w projektancie. W związku z tym jedynym sposobem ustalenia, czy pracujesz z wbudowaną kartą, jest sprawdzenie właściwości **ControlID** karty.
 
-### <a name="to-position-groups-on-a-built-in-tab"></a>Aby zmienić położenie grupy na karcie wbudowanej
+### <a name="to-position-groups-on-a-built-in-tab"></a>Aby umieścić grupy na karcie wbudowanej
 
 1. W Projektancie wstążki wybierz grupę niestandardową.
 
-2. W **właściwości** okna, rozwiń węzeł **pozycji** właściwości.
+2. W oknie **Właściwości** rozwiń Właściwość **Position** .
 
-3. Ustaw **PositionType** właściwość do odpowiedniej wartości:
+3. Ustaw właściwość **PositionType** na odpowiednią wartość:
 
-    - **BeforeOfficeId** umieszcza grupy przed określonej grupy wbudowane.
+    - **BeforeOfficeId** umieszcza grupę przed określoną grupą wbudowaną.
 
-    - **AfterOfficeId** umieszcza grupy po określonej grupy wbudowane.
+    - **AfterOfficeId** ustawia grupę po określonej wbudowanej grupie.
 
-4. Ustaw **OfficeId** właściwości Identyfikator kontrolki wbudowanej grupy.
+4. Ustaw właściwość **OfficeId** na identyfikator formantu wbudowanej grupy.
 
-     Aby uzyskać listę kontroli identyfikatorów, zobacz [pliki Pomocy pakietu Office 2010: Identyfikatory kontrolki interfejsu użytkownika fluent Office](http://go.microsoft.com/fwlink/?LinkID=181052).
+     Aby uzyskać listę identyfikatorów sterowania, zobacz [pliki pomocy pakietu office 2010: identyfikatory formantów interfejsu użytkownika pakietu Office Fluent](https://www.microsoft.com/download/details.aspx?id=6627).
 
 ## <a name="see-also"></a>Zobacz także
-- [Wstążka — omówienie](../vsto/ribbon-overview.md)
+- [Omówienie wstążki](../vsto/ribbon-overview.md)
 - [Projektant wstążki](../vsto/ribbon-designer.md)
 - [XML — wstążka](../vsto/ribbon-xml.md)
-- [Przewodnik: Tworzenie kart niestandardowych za pomocą projektanta wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
-- [Przewodnik: Tworzenie kart niestandardowych za pomocą XML wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)
-- [Instrukcje: Wprowadzenie do dostosowywania wstążki](../vsto/how-to-get-started-customizing-the-ribbon.md)
-- [Instrukcje: Zmiana położenia zakładki na Wstążce](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
-- [Instrukcje: Dodawanie formantów do widoku Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)
-- [Instrukcje: Pokaż błędy interfejsu użytkownika dodatku](../vsto/how-to-show-add-in-user-interface-errors.md)
+- [Przewodnik: Tworzenie niestandardowej karty przy użyciu projektanta wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
+- [Przewodnik: Tworzenie niestandardowej karty przy użyciu języka XML wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)
+- [Instrukcje: wprowadzenie do dostosowywania wstążki](../vsto/how-to-get-started-customizing-the-ribbon.md)
+- [Instrukcje: zmiana położenia karty na Wstążce](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
+- [Instrukcje: Dodawanie kontrolek do widoku Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)
+- [Instrukcje: pokazywanie błędów interfejsu użytkownika dodatku](../vsto/how-to-show-add-in-user-interface-errors.md)

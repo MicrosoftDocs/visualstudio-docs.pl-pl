@@ -10,12 +10,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6650edfc3c953d54578b800e213ee27092045e56
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9d24a2ea1b614cb0ca82bdcf1c4954aba9a9174c
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666936"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984408"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>Przewodnik: generowanie kodu przy użyciu szablonów tekstowych
 
@@ -28,7 +28,7 @@ Przestrzeń nazw System. xml zawiera kompleksowe narzędzia do ładowania dokume
 W tym przykładowym projekcie szablon odczytuje przykładowy plik XML i generuje klasy odpowiadające każdemu typowi węzła. W kodzie ręcznym można użyć tych klas do nawigowania w pliku XML. Możesz również uruchomić aplikację na innych plikach, które używają tych samych typów węzłów. Przykładowy plik XML ma dostarczyć przykłady wszystkich typów węzłów, z którymi aplikacja ma się zająć.
 
 > [!NOTE]
-> Aplikacja [XSD. exe](http://go.microsoft.com/fwlink/?LinkId=178765), która jest dołączona do programu Visual Studio, może generować klasy o jednoznacznie określonym typie z plików XML. Szablon przedstawiony tutaj jest podany jako przykład.
+> Aplikacja [XSD. exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe), która jest dołączona do programu Visual Studio, może generować klasy o jednoznacznie określonym typie z plików XML. Szablon przedstawiony tutaj jest podany jako przykład.
 
 Oto przykładowy plik:
 

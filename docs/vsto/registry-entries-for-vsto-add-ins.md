@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c0fe4061fe6aefc1e6849bddea1dbab9551b9884
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: a98164488d548a15c07e67b9a02cad2341f7300b
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551363"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985649"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>Wpisy rejestru dotyczące dodatków narzędzi VSTO
   Podczas wdrażania dodatków VSTO utworzonych przy użyciu programu Visual Studio należy utworzyć określony zbiór wpisów rejestru. Te wpisy rejestru zawierają informacje umożliwiające aplikacji Microsoft Office odnajdywania i ładowania dodatku VSTO.
@@ -42,14 +42,14 @@ ms.locfileid: "69551363"
 
 - Tylko dla bieżącego użytkownika (oznacza to, że jest dostępny tylko dla użytkownika, który jest zalogowany na komputerze po zainstalowaniu dodatku VSTO). W takim przypadku wpisy rejestru są tworzone w kluczu **HKEY_CURRENT_USER**.
 
-- Dla wszystkich użytkowników (oznacza to, że każdy Użytkownik logujący się na komputerze może korzystać z dodatku VSTO). W takim przypadku wpisy rejestru są tworzone w kluczu **HKEY_LOCAL_MACHINE**.
+- Dla wszystkich użytkowników (oznacza to, że każdy Użytkownik logujący się na komputerze może korzystać z dodatku VSTO). W takim przypadku wpisy rejestru są tworzone w **kluczu HKEY_LOCAL_MACHINE**.
 
   Wszystkie dodatki narzędzi VSTO tworzone za pomocą programu Visual Studio mogą być zarejestrowane dla bieżącego użytkownika. Jednak dodatki narzędzi VSTO mogą być rejestrowane dla wszystkich użytkowników tylko w określonych scenariuszach. Te scenariusze zależą od wersji Microsoft Office na komputerze oraz sposobu wdrożenia dodatku VSTO.
 
 ### <a name="microsoft-office-version"></a>Wersja Microsoft Office
  Aplikacje pakietu Office mogą ładować dodatki narzędzi VSTO zarejestrowane w obszarze **HKEY_LOCAL_MACHINE** lub **HKEY_CURRENT_USER**.
 
- Aby załadować dodatki narzędzi VSTO zarejestrowane w **kluczu HKEY_LOCAL_MACHINE**, na komputerach musi być zainstalowany pakiet aktualizacji 976477. Aby uzyskać więcej informacji, zobacz [http://go.microsoft.com/fwlink/?LinkId=184923](http://go.microsoft.com/fwlink/?LinkId=184923).
+ Aby załadować dodatki narzędzi VSTO zarejestrowane w **kluczu HKEY_LOCAL_MACHINE**, na komputerach musi być zainstalowany pakiet aktualizacji 976477. Aby uzyskać więcej informacji, zobacz [http://go.microsoft.com/fwlink/?LinkId=184923](https://support.microsoft.com/help/976811/a-2007-office-system-application-does-not-load-an-add-in-that-is-devel).
 
 ### <a name="deployment-type"></a>Typ wdrożenia
  Jeśli używasz technologii ClickOnce do wdrożenia dodatku VSTO, dodatek VSTO może być zarejestrowany tylko dla bieżącego użytkownika. Dzieje się tak, ponieważ ClickOnce obsługuje tylko tworzenie kluczy w kluczu **HKEY_CURRENT_USER**. Jeśli chcesz zarejestrować dodatek Narzędzia VSTO dla wszystkich użytkowników na komputerze, musisz użyć Instalator Windows do wdrożenia dodatku VSTO. Aby uzyskać więcej informacji na temat tych typów wdrożeń, zobacz [wdrażanie rozwiązania pakietu Office przy użyciu technologii ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md) i [wdrażanie rozwiązania pakietu office przy użyciu Instalator Windows](../vsto/deploying-an-office-solution-by-using-windows-installer.md).
@@ -61,40 +61,40 @@ ms.locfileid: "69551363"
 
 |Wersja pakietu Office|Ścieżka konfiguracyjna|
 |--------------------|------------------------|
-|32-bitowa|*Główna*\\*Nazwa aplikacji*\Software\Microsoft\Office \Addins\\*Identyfikator dodatku*|
-|64-bitowy|*Główna*\\*Nazwa aplikacji*\Software\Wow6432Node\Microsoft\Office \Addins\\*Identyfikator dodatku*|
+|32-bitowa|*Nazwa aplikacji* *głównej*\SOFTWARE\MICROSOFT\OFFICE\\\Addins\\*Identyfikator dodatku*|
+|64-bitowy|*Nazwa aplikacji* *głównej*\SOFTWARE\WOW6432NODE\MICROSOFT\OFFICE\\\Addins\\*Identyfikator dodatku*|
 
  **?**
 
 |Wersja pakietu Office|Ścieżka konfiguracyjna|
 |--------------------|------------------------|
-|32-bitowa|Identyfikator głównego\\*dodatku* \Software\Microsoft\Visio\Addins|
-|64-bitowy|Identyfikator głównego\\*dodatku* \Software\Wow6432Node\Visio\Addins|
+|32-bitowa|*Identyfikator dodatku* *głównego*\Software\Microsoft\Visio\Addins\\|
+|64-bitowy|*Identyfikator dodatku* *głównego*\Software\Wow6432Node\Visio\Addins\\|
 
  Poniższa tabela zawiera listę wpisów w tym kluczu rejestru.
 
-|Wpis|Typ|Wartość|
+|Entry|Typ|Wartość|
 |-----------|----------|-----------|
 |**Opis**|REG_SZ|Wymagany. Krótki opis dodatku narzędzi VSTO.<br /><br /> Ten opis jest wyświetlany, gdy użytkownik wybierze dodatek VSTO w okienku **dodatków** okna dialogowego **opcje** w aplikacji Microsoft Office.|
-|**FriendlyName**|REG_SZ|Wymagana. Opisowa nazwa dodatku VSTO, który jest wyświetlany w oknie dialogowym **dodatków COM** w aplikacji Microsoft Office. Wartość domyślna to identyfikator dodatku VSTO.|
-|**LoadBehavior**|REG_DWORD|Wymagane. Wartość określająca, kiedy aplikacja próbuje załadować dodatek narzędzi VSTO i bieżący stan dodatku VSTO (załadowany lub zwolniony).<br /><br /> Domyślnie ten wpis jest ustawiony na 3, co oznacza, że dodatek VSTO jest ładowany podczas uruchamiania. Aby uzyskać więcej informacji, zobacz [LoadBehavior wartości](#LoadBehavior). **Uwaga:**  Jeśli użytkownik wyłączy dodatek VSTO, ta akcja modyfikuje wartość **LoadBehavior** w gałęzi rejestru **HKEY_CURRENT_USER** . Dla każdego użytkownika wartość **LoadBehavior** w gałęzi HKEY_CURRENT_USER zastępuje domyślny **LoadBehavior** zdefiniowany w gałęzi **HKEY_LOCAL_MACHINE** .|
-|**Manifest**|REG_SZ|Wymagane. Pełna ścieżka manifestu wdrożenia dla dodatku VSTO. Ścieżka może być lokalizacją na komputerze lokalnym, udziałem sieciowym (UNC) lub serwerem sieci Web (HTTP).<br /><br /> Jeśli używasz Instalator Windows do wdrożenia rozwiązania, musisz dodać prefiks **File:///** do ścieżki **manifestu** . Należy również dołączyć ciąg  **&#124;vstolocal** (czyli znak **&#124;** potoku, a następnie **vstolocal**) na końcu tej ścieżki. Dzięki temu Twoje rozwiązanie zostanie załadowane z folderu instalacji, a nie z pamięci podręcznej ClickOnce. Aby uzyskać więcej informacji, zobacz [wdrażanie rozwiązania biurowego przy użyciu Instalator Windows](../vsto/deploying-an-office-solution-by-using-windows-installer.md). **Uwaga:**  Po utworzeniu dodatku narzędzi VSTO na komputerze deweloperskim program Visual Studio automatycznie dołącza ciąg  **&#124;vstolocal** do tego wpisu rejestru.|
+|**FriendlyName**|REG_SZ|Wymagany. Opisowa nazwa dodatku VSTO, który jest wyświetlany w oknie dialogowym **dodatków COM** w aplikacji Microsoft Office. Wartość domyślna to identyfikator dodatku VSTO.|
+|**LoadBehavior**|REG_DWORD|Wymagany. Wartość określająca, kiedy aplikacja próbuje załadować dodatek narzędzi VSTO i bieżący stan dodatku VSTO (załadowany lub zwolniony).<br /><br /> Domyślnie ten wpis jest ustawiony na 3, co oznacza, że dodatek VSTO jest ładowany podczas uruchamiania. Aby uzyskać więcej informacji, zobacz [LoadBehavior wartości](#LoadBehavior). **Uwaga:**  Jeśli użytkownik wyłączy dodatek VSTO, ta akcja modyfikuje wartość **LoadBehavior** w gałęzi rejestru **HKEY_CURRENT_USER** . Dla każdego użytkownika wartość **LoadBehavior** w gałęzi HKEY_CURRENT_USER zastępuje domyślny **LoadBehavior** zdefiniowany w gałęzi **HKEY_LOCAL_MACHINE** .|
+|**Manifestu**|REG_SZ|Wymagany. Pełna ścieżka manifestu wdrożenia dla dodatku VSTO. Ścieżka może być lokalizacją na komputerze lokalnym, udziałem sieciowym (UNC) lub serwerem sieci Web (HTTP).<br /><br /> Jeśli używasz Instalator Windows do wdrożenia rozwiązania, musisz dodać prefiks **File:///** do ścieżki **manifestu** . Należy również dołączyć ciąg  **&#124;vstolocal** (czyli znak **&#124;** potoku, a następnie **vstolocal**) na końcu tej ścieżki. Dzięki temu Twoje rozwiązanie zostanie załadowane z folderu instalacji, a nie z pamięci podręcznej ClickOnce. Aby uzyskać więcej informacji, zobacz [wdrażanie rozwiązania biurowego przy użyciu Instalator Windows](../vsto/deploying-an-office-solution-by-using-windows-installer.md). **Uwaga:**  Po utworzeniu dodatku narzędzi VSTO na komputerze deweloperskim program Visual Studio automatycznie dołącza ciąg  **&#124;vstolocal** do tego wpisu rejestru.|
 
 ### <a name="OutlookEntries"></a>Wpisy rejestru dla regionów formularzy programu Outlook
  Jeśli utworzysz niestandardowy region formularza w dodatku VSTO dla programu Outlook, do zarejestrowania regionu formularza w programie Outlook są używane dodatkowe wpisy rejestru. Te wpisy są tworzone w innym kluczu rejestru dla każdej klasy komunikatów obsługiwanej przez region formularza. Te klucze rejestru znajdują się w następującej lokalizacji, gdzie *root* to **HKEY_CURRENT_USER** lub **HKEY_LOCAL_MACHINE**.
 
- *Root*\Software\Microsoft\Office\Outlook\FormRegions\\*message class*
+ Klasa *głównego* *komunikatu* \Software\Microsoft\Office\Outlook\FormRegions\\
 
  Podobnie jak w przypadku innych wpisów rejestru udostępnionych przez wszystkie dodatki narzędzi VSTO, program Visual Studio tworzy wpisy rejestru regionów formularzy na komputerze deweloperskim podczas kompilowania projektu. Jeśli używasz technologii ClickOnce do wdrożenia dodatku VSTO, wpisy rejestru są tworzone automatycznie na komputerze użytkownika końcowego. Jeśli używasz Instalator Windows do wdrożenia dodatku VSTO, musisz skonfigurować projekt InstallShield Limited Edition, aby utworzyć wpisy rejestru na komputerze użytkownika końcowego.
 
- Aby uzyskać więcej informacji na temat wpisów rejestru regionów formularzy, zobacz [Określanie lokalizacji regionu formularza w formularzu](/office/vba/outlook/Concepts/Creating-Form-Regions/specify-the-location-of-a-form-region-in-a-custom-form)niestandardowym. Aby uzyskać więcej informacji na temat regionów formularzy programu Outlook, zobacz [Tworzenie regionów formularzy w programie Outlook](../vsto/creating-outlook-form-regions.md).
+ Aby uzyskać więcej informacji na temat wpisów rejestru regionów formularzy, zobacz [Określanie lokalizacji regionu formularza w formularzu niestandardowym](/office/vba/outlook/Concepts/Creating-Form-Regions/specify-the-location-of-a-form-region-in-a-custom-form). Aby uzyskać więcej informacji na temat regionów formularzy programu Outlook, zobacz [Tworzenie regionów formularzy w programie Outlook](../vsto/creating-outlook-form-regions.md).
 
 ## <a name="LoadBehavior"></a>LoadBehavior wartości
- Wpis **LoadBehavior** w *katalogu głównym*\Software\Microsoft\Office\\*Nazwa aplikacji*\Addins\\klucz*identyfikatora dodatku* zawiera bitową kombinację wartości, które określają zachowanie czasu wykonywania Dodatek narzędzi VSTO. Najniższy bit Order (wartości 0 i 1) wskazuje, czy dodatek VSTO jest obecnie zwolniony, czy załadowany. Inne bity wskazują, kiedy aplikacja próbuje załadować dodatek narzędzi VSTO.
+ Wpis **LoadBehavior** w *katalogu głównym*\Software\Microsoft\Office\\*Nazwa aplikacji*\Addins\\klucz *identyfikatora dodatku* zawiera bitową kombinację wartości, które określają zachowanie w czasie wykonywania dodatku VSTO. Najniższy bit Order (wartości 0 i 1) wskazuje, czy dodatek VSTO jest obecnie zwolniony, czy załadowany. Inne bity wskazują, kiedy aplikacja próbuje załadować dodatek narzędzi VSTO.
 
  Zazwyczaj wpis **LoadBehavior** ma być ustawiony na wartość 0, 3 lub 16 (w postaci dziesiętnej), gdy dodatek VSTO zostanie zainstalowany na komputerach użytkowników końcowych. Domyślnie program Visual Studio ustawia wpis **LoadBehavior** dodatku VSTO na 3 podczas kompilacji lub publikacji.
 
- W poniższej tabeli wymieniono wszystkie możliwe wartości wpisu **LoadBehavior** . Niektóre opisy w tej tabeli odnoszą się do ręcznego ładowania dodatku narzędzi VSTO lub programowo. Aby ręcznie załadować dodatek Narzędzia VSTO, zaznacz pole wyboru obok dodatku VSTO w oknie dialogowym **Dodatki COM** w aplikacji. Aby programowo załadować dodatek narzędzi VSTO, należy ustawić <xref:Microsoft.Office.Core.COMAddIn.Connect%2A> Właściwość <xref:Microsoft.Office.Core.COMAddIn> obiektu, który reprezentuje dodatek VSTO do **wartości true**.
+ W poniższej tabeli wymieniono wszystkie możliwe wartości wpisu **LoadBehavior** . Niektóre opisy w tej tabeli odnoszą się do ręcznego ładowania dodatku narzędzi VSTO lub programowo. Aby ręcznie załadować dodatek Narzędzia VSTO, zaznacz pole wyboru obok dodatku VSTO w oknie dialogowym **Dodatki COM** w aplikacji. Aby programowo załadować dodatek narzędzi VSTO, należy ustawić właściwość <xref:Microsoft.Office.Core.COMAddIn.Connect%2A> obiektu <xref:Microsoft.Office.Core.COMAddIn>, który reprezentuje dodatek VSTO do **wartości true**.
 
 |Wartość (w formacie dziesiętnym)|Stan dodatku narzędzi VSTO|Zachowanie ładowania dodatku narzędzi VSTO|Opis|
 |--------------------------|-------------------------|--------------------------------|-----------------|

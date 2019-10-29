@@ -1,5 +1,5 @@
 ---
-title: Pakowanie i wdrażanie informacji w elementach projektu
+title: Pakowanie & informacji o wdrożeniu w elementach projektu
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -24,72 +24,72 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a9af945ff377b30925a51875db205bcd882f4585
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: db805c308fd245554824997b24236eb2e2d80e62
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177711"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984214"
 ---
-# <a name="provide-packaging-and-deployment-information-in-project-items"></a>Podaj informacji opakowań i wdrażania w elementach projektu
-  Wszystkie elementy projektu programu SharePoint w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] mają właściwości, które służy do zapewnienia dodatkowych danych, gdy projekt jest wdrażany w programie SharePoint. Właściwości są następujące:
+# <a name="provide-packaging-and-deployment-information-in-project-items"></a>Udostępnianie informacji o pakowaniu i wdrożeniu w elementach projektu
+  Wszystkie elementy projektu programu SharePoint w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] mają właściwości, których można użyć do dostarczania dodatkowych danych podczas wdrażania projektu w programie SharePoint. Właściwości są następujące:
 
 - Właściwości funkcji
 
 - Odbiorcy funkcji
 
-- Odwołania danych wyjściowych projektu
+- Odwołania do danych wyjściowych projektu
 
-- Wpisy bezpiecznych kontrolek
+- Bezpieczne wpisy kontroli
 
-  Te właściwości są wyświetlane w **właściwości** okna.
+  Te właściwości są wyświetlane w oknie **Właściwości** .
 
 ## <a name="feature-properties"></a>Właściwości funkcji
- Użyj **właściwości funkcji** właściwości w celu określenia danych, która korzysta z tej funkcji. Dane właściwości funkcji jest zestaw wartości (przechowywanych jako pary klucz/wartość) jest uwzględniany w funkcji podczas wdrażania w programie SharePoint. Po wdrożeniu funkcji wartości właściwości są dostępne w kodzie.
+ Właściwość **właściwości funkcji** służy do określania danych używanych przez funkcję. Dane właściwości funkcji to zbiór wartości (przechowywanych jako pary klucz/wartość), które są dołączone do funkcji podczas wdrażania w programie SharePoint. Po wdrożeniu funkcji można uzyskać dostęp do wartości właściwości w kodzie.
 
- Po dodaniu funkcji wartości właściwości do elementu projektu, wartość jest dodawana jako element w manifeście funkcji elementu. W projekcie modelu łączności danych biznesowych (BDC) na przykład właściwość funkcji ModelFileName wygląda następująco:
+ Po dodaniu wartości właściwości funkcji do elementu projektu, wartość jest dodawana jako element w manifeście funkcji elementu. Na przykład w projekcie modelu łączności danych biznesowych (BDC) Właściwość funkcji ModelFileName jest wyświetlana jako:
 
 ```xml
 <Property Key="ModelFileName" Value="BdcModel1\BdcModel1.bdcm" />
 ```
 
- Po ustawieniu wartości właściwości funkcji zostanie dodany jako FeatureProperty — element w projekcie *spdata* pliku. Aby uzyskać informacje na temat uzyskiwania dostępu do właściwości w programie SharePoint, zobacz [klasy SPFeaturePropertyCollection](http://go.microsoft.com/fwlink/?LinkId=177391).
+ Po ustawieniu wartości właściwości funkcji jest ona dodawana jako element FeatureProperty w pliku *spdata* projektu. Aby uzyskać informacje o uzyskiwaniu dostępu do właściwości w programie SharePoint, zobacz [Klasa SPFeaturePropertyCollection](/previous-versions/office/sharepoint-server/ms461895(v=office.15)).
 
- Funkcja identyczne wartości właściwości z wszystkich elementów projektu są scalane w manifeście funkcji. Jednakże jeśli dwa elementy inny projekt określić ten sam klucz właściwości funkcji z wartościami niezgodny, wystąpienia błędu sprawdzania poprawności.
+ Identyczne wartości właściwości funkcji ze wszystkich elementów projektu są scalane razem w manifeście funkcji. Jeśli jednak dwa różne elementy projektu określają ten sam klucz właściwości funkcji z niezgodnymi wartościami, wystąpi błąd walidacji.
 
- Aby dodać właściwości funkcji bezpośrednio do pliku funkcji (*.feature*), wywołanie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] metoda modelu obiektu SharePoint <xref:Microsoft.VisualStudio.SharePoint.Features.IPropertyCollection.Add%2A>. Możesz użyć tej metody, należy pamiętać, że tę samą regułę o dodawaniu funkcji identyczne wartości właściwości w oknie właściwości funkcji dotyczy także dodać bezpośrednio do pliku funkcji właściwości.
+ Aby dodać właściwości funkcji bezpośrednio do pliku funkcji ( *. feature*), wywołaj metodę [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] <xref:Microsoft.VisualStudio.SharePoint.Features.IPropertyCollection.Add%2A>modelu obiektów programu SharePoint. W przypadku użycia tej metody należy pamiętać, że ta sama reguła dotycząca dodawania identycznych wartości właściwości funkcji we właściwościach funkcji ma również zastosowanie do właściwości dodanych bezpośrednio do pliku funkcji.
 
 ## <a name="feature-receiver"></a>Odbiorca funkcji
- Funkcji odbiorcy są kod wykonywany po wystąpieniu określonego zdarzenia z elementem projektu zawierającym funkcję. Na przykład można zdefiniować funkcji odbiorcy, które są wykonywane po zainstalowaniu, aktywacji lub uaktualnić tę funkcję. Jednym sposobem dodania odbiorcę funkcji jest dodanie go bezpośrednio do funkcji, zgodnie z opisem w [instruktażu: Dodawanie odbiorców zdarzeń funkcji](../sharepoint/walkthrough-add-feature-event-receivers.md). Innym sposobem jest odwołanie Nazwa klasy odbiorcy funkcji i zestawu w **odbiorcy funkcji** właściwości.
+ Odbiorniki funkcji to kod, który jest wykonywany w przypadku wystąpienia określonych zdarzeń do funkcji zawierającej element projektu. Można na przykład zdefiniować odbiorniki funkcji, które są wykonywane, gdy ta funkcja zostanie zainstalowana, aktywowana lub uaktualniona. Jednym ze sposobów dodawania odbiorcy funkcji jest dodanie go bezpośrednio do funkcji, zgodnie z opisem w [przewodniku: Dodawanie odbiorników zdarzeń funkcji](../sharepoint/walkthrough-add-feature-event-receivers.md). Innym sposobem jest odwołanie się do nazwy klasy odbiorcy funkcji i zestawu we właściwości **odbiorcy funkcji** .
 
 ### <a name="direct-method"></a>Metoda bezpośrednia
- Po dodaniu odbiorcę funkcji z funkcją bezpośrednio, plik kodu jest umieszczony pod **funkcji** węzła w Eksploratorze rozwiązań. W przypadku tworzenia rozwiązania programu SharePoint, kod kompiluje się do zestawu i wdrażania do programu SharePoint. Domyślnie właściwości funkcji **zestaw odbiorcy** i **Klasa odbiorcy** odwoływać się do nazwy klasy i zestawu.
+ Po dodaniu odbiorcy funkcji bezpośrednio do funkcji plik kodu jest umieszczany w węźle **funkcji** w Eksplorator rozwiązań. Podczas kompilowania rozwiązania programu SharePoint kod jest kompilowany do zestawu i wdrażany w programie SharePoint. Domyślnie właściwości funkcji **zestawu odbiorcy** i **klasy odbiornika** odwołują się do nazwy klasy i zestawu.
 
 ### <a name="reference-method"></a>reference — Metoda
- Innym sposobem dodania odbiorcę funkcji polega na użyciu **odbiorcy funkcji** właściwości elementu projektu, aby odwołać zestaw odbiorcy funkcji. Wartość właściwości odbiorcy funkcji ma dwie właściwości: **Zestaw** i **Nazwa klasy**. Zestaw, należy użyć jej w pełni kwalifikowaną, nazwę "strong" i nazwa klasy musi być pełna nazwa typu. Aby uzyskać więcej informacji, zobacz [zestawy Strong-Named](http://go.microsoft.com/fwlink/?LinkID=169573). Po wdrożeniu rozwiązania programu SharePoint, funkcja używa odbiorcy funkcji odwołania do obsługi zdarzeń funkcji.
+ Innym sposobem dodania odbiornika funkcji jest użycie właściwości **odbiorcy funkcji** elementu projektu, aby odwołać się do zestawu odbiorcy funkcji. Wartość właściwości odbiorcy funkcji ma dwie podwłaściwości: **zestaw** i **Nazwa klasy**. Zestaw musi używać w pełni kwalifikowanej nazwy "Strong", a nazwa klasy musi być pełną nazwą typu. Aby uzyskać więcej informacji, zobacz [zestawy o silnych nazwach](/previous-versions/dotnet/netframework-4.0/wd40t7ad(v=vs.100)). Po wdrożeniu rozwiązania do programu SharePoint Funkcja używa przywoływanego odbiornika funkcji do obsługi zdarzeń funkcji.
 
- Rozwiązania kompilowania, funkcji odbiorcy wartości właściwości w funkcji oraz jego projekty scalone razem można ustawić atrybuty ReceiverAssembly i ReceiverClass element funkcji w manifeście funkcji rozwiązania programu SharePoint (*.wsp* ) pliku. W związku z tym jeśli zestawu i nazwa klasy wartości właściwości elementu projektu i funkcji są określone oba wartości właściwości elementu i funkcji projektu muszą być zgodne. Jeśli wartości nie są zgodne, otrzymasz błąd sprawdzania poprawności. Jeśli chcesz, aby element projektu odwołanie zestaw odbiorcy funkcji, innej niż ta, do jego funkcja używa, przenieś go do innej funkcji.
+ W czasie kompilacji rozwiązania wartości właściwości odbiorcy funkcji w funkcji i jej projektach są scalane w celu ustawienia atrybutów ReceiverAssembly i ReceiverClass elementu Feature w manifeście funkcji pliku rozwiązania programu SharePoint (*wsp*). W związku z tym, jeśli określono wartości właściwości Assembly i Class elementu projektu i funkcji, element projektu i wartości właściwości funkcji muszą być zgodne. Jeśli wartości nie są zgodne, zostanie wyświetlony komunikat o błędzie walidacji. Jeśli chcesz, aby element projektu odwołuje się do zestawu odbiorcy funkcji innego niż używany przez jego funkcja, przenieś go do innej funkcji.
 
- Jeśli odwołujesz się zestaw odbiorcy funkcji, która nie znajduje się już na serwerze, należy również uwzględnić w samym pliku zestawu w pakiecie; [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nie powoduje dodania dla Ciebie. Podczas wdrażania funkcji plik zestawu jest kopiowany do tego systemu [!INCLUDE[TLA#tla_gac](../sharepoint/includes/tlasharptla-gac-md.md)] lub folder Bin w katalogu fizycznym programu SharePoint. Aby uzyskać więcej informacji, zobacz jak: [Instrukcje: Dodawanie i usuwanie zestawów dodatkowych](../sharepoint/how-to-add-and-remove-additional-assemblies.md).
+ Jeśli odwołujesz się do zestawu odbiorcy funkcji, który nie znajduje się jeszcze na serwerze, należy również dołączyć sam plik zestawu do pakietu. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nie dodaje go dla Ciebie. Podczas wdrażania tej funkcji plik zestawu jest kopiowany do [!INCLUDE[TLA#tla_gac](../sharepoint/includes/tlasharptla-gac-md.md)] systemu lub folderu bin w katalogu fizycznym programu SharePoint. Aby uzyskać więcej informacji, zobacz jak to zrobić: [Dodawanie i usuwanie dodatkowych zestawów](../sharepoint/how-to-add-and-remove-additional-assemblies.md).
 
- Aby uzyskać więcej informacji na temat funkcji odbiorcy, zobacz [odbiorcę zdarzeń funkcji](http://go.microsoft.com/fwlink/?LinkID=169574) i [zdarzeń funkcji](http://go.microsoft.com/fwlink/?LinkID=169575).
+ Aby uzyskać więcej informacji na temat odbiorników funkcji, zobacz [odbiornik zdarzeń funkcji](/previous-versions/office/developer/sharepoint-2007/bb862634(v=office.12)) i [zdarzenia funkcji](/previous-versions/office/developer/sharepoint-2010/ms469501(v=office.14)).
 
-## <a name="project-output-references"></a>Odwołania danych wyjściowych projektu
- Właściwości odwołania danych wyjściowych projektu określa zależność, takich jak zestaw, który element projektu musi zostać uruchomiony. Na przykład załóżmy, że rozwiązanie ma projektu usługi łączności danych biznesowych i klasy projektu. Jeśli projekt BDC ma zależność od zestawu, które znajdują się dane wyjściowe w projekcie klasy, można się odwołać zestawu we właściwości odwołania do projektu danych wyjściowych projektu usługi łączności danych biznesowych. Gdy projekt BDC jest spakowany, zależnego zestawu znajduje się w pakiecie.
+## <a name="project-output-references"></a>Odwołania do danych wyjściowych projektu
+ Właściwość odwołania danych wyjściowych projektu określa zależność, taką jak zestaw, że element projektu musi zostać uruchomiony. Załóżmy na przykład, że Twoje rozwiązanie ma projekt usługi BDC i projekt klasy. Jeśli projekt BDC ma zależność od zestawu, który jest wyprowadzany przez projekt klasy, można odwołać się do zestawu we właściwości odwołania danych wyjściowych projektu usługi BDC. Gdy projekt BDC jest spakowany, zestaw zależny jest dołączony do pakietu.
 
- Odwołania danych wyjściowych projektu są zazwyczaj zestawy, ale w niektórych przypadkach (na przykład projekty Silverlight) mogą być inne typy plików.
+ Odwołania do danych wyjściowych projektu są zwykle zestawami, ale w niektórych przypadkach (takich jak projekty Silverlight) mogą być innymi typami plików.
 
- Aby uzyskać więcej informacji, zobacz [jak: Dodawanie odwołania wyjścia projektu](../sharepoint/how-to-add-a-project-output-reference.md).
+ Aby uzyskać więcej informacji, zobacz [jak: Dodawanie odwołania do danych wyjściowych projektu](../sharepoint/how-to-add-a-project-output-reference.md).
 
-## <a name="safe-control-entries"></a>Wpisy bezpiecznych kontrolek
- Program SharePoint udostępnia mechanizm zabezpieczeń o nazwie wpisy kontroli bezpiecznego, aby ograniczyć dostęp niezaufanym użytkownikom na niektórych kontrolek. Zgodnie z projektem programu SharePoint pozwala niezaufanym użytkownikom na przekazywanie i tworzenie stron ASPX na serwerze programu SharePoint. Aby uniemożliwić dodawanie niebezpieczny kod do stron ASPX tych użytkowników, SharePoint ogranicza ich dostęp do *bezpiecznych kontrolek*. Bezpieczne kontrolki są formantów ASPX i składniki Web Part oznaczone jako bezpieczne i który może służyć przez dowolnego użytkownika w witrynie. Aby uzyskać więcej informacji, zobacz [krok 4: Dodaj składnik Web Part do listy bezpiecznych kontrolek](http://go.microsoft.com/fwlink/?LinkID=171014).
+## <a name="safe-control-entries"></a>Bezpieczne wpisy kontroli
+ Program SharePoint zapewnia mechanizm zabezpieczeń nazywany wpisami bezpiecznego sterowania, aby ograniczyć dostęp użytkowników niezaufanych do określonych kontrolek. Po zaprojektowaniu program SharePoint umożliwia niezaufanym użytkownikom przekazywanie i tworzenie stron ASPX na serwerze programu SharePoint. Aby uniemożliwić tym użytkownikom dodawanie niebezpiecznego kodu do stron ASPX, program SharePoint ogranicza dostęp do *bezpiecznych kontrolek*. Bezpieczne formanty to kontrolki ASPX i części sieci Web, które są oznaczone jako bezpieczne i mogą być używane przez dowolnego użytkownika w witrynie. Aby uzyskać więcej informacji, zobacz [krok 4. Dodawanie składnika Web Part do listy bezpiecznych kontrolek](/previous-versions/office/developer/sharepoint-2007/ms581321(v=office.12)).
 
- Każdy element projektu programu SharePoint w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ma właściwość o nazwie **wpisy bezpiecznych kontrolek** ma dwie właściwości logiczne: **Bezpieczne** i **zabezpieczony przed skryptami**. Bezpieczne właściwość określa, czy niezaufanym użytkownikom może uzyskiwać dostęp do formantu. Właściwość bezpieczne względem skryptu określa, czy niezaufanym użytkownikom można wyświetlać i zmieniać właściwości formantu.
+ Każdy element projektu programu SharePoint w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ma właściwość o nazwie **wpisy kontroli bezpiecznego** , która ma dwie właściwości logiczne: **bezpieczny** i **bezpieczny względem skryptu**. Bezpieczna Właściwość określa, czy niezaufani użytkownicy mogą uzyskiwać dostęp do kontrolki. Właściwość bezpieczne dla skryptu określa, czy niezaufani użytkownicy mogą wyświetlać i zmieniać właściwości kontrolki.
 
- Wpisy bezpiecznych kontrolek odwołują się na podstawie zestawu. Dodać wpisy bezpiecznych kontrolek do projektu zespołu, wprowadzając je w elemencie projektu **wpisy bezpiecznych kontrolek** właściwości. Jednak możesz można również dodać wpisy bezpiecznych kontrolek do projektu zestawu za pomocą **zaawansowane** karcie **projektancie pakietu** po dodaniu dodatkowego zestawu do pakietu. Aby uzyskać więcej informacji, zobacz [jak: Oznaczanie kontrolek pojęciem bezpiecznych kontrolek](../sharepoint/how-to-mark-controls-as-safe-controls.md) lub [rejestrowanie zestaw części sieci Web jako bezpiecznej kontrolki](http://go.microsoft.com/fwlink/?LinkID=171013).
+ Na podstawie zestawu są przywoływane bezpieczne wpisy kontroli. Aby dodać bezpieczne wpisy kontroli do zestawu projektu, wprowadź je w właściwości **wpisy kontroli bezpiecznego** elementu projektu. Można jednak dodać do zestawu projektu bezpieczne wpisy kontroli przy użyciu karty **Zaawansowane** w **projektancie pakietów** po dodaniu dodatkowego zestawu do pakietu. Aby uzyskać więcej informacji, zobacz [How to: Mark Controls as Safe Controls](../sharepoint/how-to-mark-controls-as-safe-controls.md) lub Register [a Assembly Web Part jako bezpieczną kontrolę](/previous-versions/office/developer/sharepoint2003/dd587360(v=office.11)).
 
-### <a name="xml-entries-for-safe-controls"></a>Wpisy XML dla bezpiecznych kontrolek
- Po dodaniu wpisu bezpiecznej kontrolki do elementu projektu lub zestawu projektu, odwołania są zapisywane do manifestu pakietu w następującym formacie:
+### <a name="xml-entries-for-safe-controls"></a>Wpisy XML dla bezpiecznych formantów
+ Po dodaniu wpisu kontroli bezpiecznego do elementu projektu lub zestawu projektu odwołanie jest zapisywane do manifestu pakietu w następującym formacie:
 
 ```xml
 <Assemblies>
@@ -106,6 +106,6 @@ ms.locfileid: "66177711"
 ```
 
 ## <a name="see-also"></a>Zobacz także
-- [Pakiet rozwiązania i wdrażania SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
-- [Użyj modułów, aby uwzględnić pliki w rozwiązaniu](../sharepoint/using-modules-to-include-files-in-the-solution.md)
-- [Rozszerzanie pakowania i wdrażania SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md)
+- [Pakowanie i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
+- [Używanie modułów do dołączania plików w rozwiązaniu](../sharepoint/using-modules-to-include-files-in-the-solution.md)
+- [Rozszerzona pakowanie i wdrażanie programu SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md)

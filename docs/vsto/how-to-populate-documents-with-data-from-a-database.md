@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Zapełnianie dokumentów danymi z bazy danych'
+title: 'Instrukcje: zapełnianie dokumentów danymi z bazy danych'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,65 +13,65 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4ec56ae4345405cfc704a97ec624f9c2e4d96a5b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 907b3deeadd0a56f9e47a6e17a40579a0c9ffa64
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967914"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985884"
 ---
-# <a name="how-to-populate-documents-with-data-from-a-database"></a>Instrukcje: Zapełnianie dokumentów danymi z bazy danych
+# <a name="how-to-populate-documents-with-data-from-a-database"></a>Instrukcje: zapełnianie dokumentów danymi z bazy danych
 
-Można uzyskujesz dostęp do danych w projektach na poziomie dokumentu dla programu Microsoft Office w taki sam sposób, uzyskujesz dostęp do danych w projektach Windows Forms. Użyj tego samego narzędzia i kod do przenoszenia danych z bazy danych w rozwiązaniu i kontrolek formularzy Windows Forms służy do wyświetlania danych.
+Można uzyskać dostęp do danych w projektach na poziomie dokumentu dla Microsoft Office w taki sam sposób, w jaki dane są uzyskiwane w projektach Windows Forms. Używasz tych samych narzędzi i kodu do przenoszenia danych z bazy danych do rozwiązania i możesz użyć kontrolek Windows Forms, aby wyświetlić dane.
 
-Ponadto można wyświetlić dane za pomocą kontrolki hosta. Formanty hosta to natywnych obiektów w programie Microsoft Word pakietu Office, które zostały rozszerzone ze zdarzeniami i możliwości wiązania danych. Aby uzyskać więcej informacji, zobacz [elementów, a omówienie kontrolek](../vsto/host-items-and-host-controls-overview.md).
+Ponadto można wyświetlać dane przy użyciu kontrolek hosta. Formanty hosta są obiektami natywnymi w Microsoft Office Word, które zostały ulepszone z możliwością zdarzeń i powiązania danych. Aby uzyskać więcej informacji, zobacz [Omówienie elementów hosta i kontrolek hosta](../vsto/host-items-and-host-controls-overview.md).
 
 [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]
 
-Poniższy przykład pokazuje, jak dodać formanty powiązane z danymi w użyciu projektanta projektów na poziomie dokumentu. Na przykład sposobu dodawania formantów powiązanych z danymi w projektach dodatku narzędzi VSTO w czasie wykonywania zobacz [instruktażu: Proste powiązanie danych w projekcie dodatku narzędzi VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md).
+Poniższy przykład pokazuje, jak dodać formanty powiązane z danymi w projektach na poziomie dokumentu przy użyciu projektanta. Aby zapoznać się z przykładem dodawania formantów związanych z danymi w projektach dodatku VSTO w czasie wykonywania, zobacz [Przewodnik: proste powiązanie danych w projekcie dodatku VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md).
 
-![Link do wideo](../vsto/media/playvideo.gif "link do wideo") powiązane demonstracyjne wideo – zobacz [powiązywanie danych do programu Word 2007 zawartości kontrolki przy użyciu programu Visual Studio Tools dla pakietu Office (3.0)](http://go.microsoft.com/fwlink/?LinkId=136785).
+![link do wideo](../vsto/media/playvideo.gif "link do wideo") Aby zapoznać się z pokrewną prezentacją wideo, zobacz temat [Powiązywanie danych z kontrolkami zawartości programu Word 2007 przy użyciu Visual Studio Tools dla systemu Office (3,0)](/previous-versions/office/developer/office-2007/bb967663(v=office.12)).
 
 ## <a name="add-a-control-to-a-document-at-design-time"></a>Dodawanie kontrolki do dokumentu w czasie projektowania
 
-### <a name="to-populate-a-document-with-data-from-a-database"></a>Aby wypełnić dokumentu przy użyciu danych z bazy danych
+### <a name="to-populate-a-document-with-data-from-a-database"></a>Aby wypełnić dokument danymi z bazy danych
 
-1. Otwórz projekt poziomu dokumentu programu Word w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], dokument jest otwarty w projektancie.
+1. Otwórz projekt na poziomie dokumentu programu Word w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], gdy dokument zostanie otwarty w projektancie.
 
-2. Otwórz **źródeł danych** okna i Utwórz źródło danych z bazy danych. Aby uzyskać więcej informacji, zobacz [dodać nowe połączenia](../data-tools/add-new-connections.md).
+2. Otwórz okno **źródła danych** i Utwórz źródło danych z bazy danych. Aby uzyskać więcej informacji, zobacz [Dodawanie nowych połączeń](../data-tools/add-new-connections.md).
 
-3. Przeciągnij pole z **źródeł danych** okna dokumentu.
+3. Przeciągnij odpowiednie pole z okna **źródła danych** do dokumentu.
 
-Kontrolki zawartości zostanie dodany do dokumentu. Typ zawartości kontrolki zależy od typu danych pola, które wybrano. Aby uzyskać więcej informacji, zobacz [udostępnia mechanizmy kontroli zawartości](../vsto/content-controls.md).
+Kontrolka zawartości zostanie dodana do dokumentu. Typ formantu zawartości zależy od typu danych wybranego pola. Aby uzyskać więcej informacji, zobacz [formanty zawartości](../vsto/content-controls.md).
 
-Innej kontrolki można dodawać przez zaznaczenie pola danych **źródeł danych** okna, a następnie wybierając innej kontrolki z listy rozwijanej.
+Możesz dodać inny formant, zaznaczając pole danych w oknie **źródła danych** , a następnie wybierając inną kontrolkę z listy rozwijanej.
 
 ## <a name="objects-in-the-project"></a>Obiekty w projekcie
 
-Oprócz sterowania następujące obiekty powiązane dane są automatycznie dodawane do projektu:
+Oprócz kontrolki następujące obiekty powiązane z danymi są automatycznie dodawane do projektu:
 
-- Wpisany zestaw danych, który hermetyzuje tabelami danych, które łączysz się w bazie danych. Aby uzyskać więcej informacji, zobacz [narzędzia zestawu danych w programie Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
+- Typ zestawu danych, który hermetyzuje tabele danych, z którymi nawiązano połączenie w bazie danych. Aby uzyskać więcej informacji, zobacz [Narzędzia zestawu danych w programie Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
 
-- A <xref:System.Windows.Forms.BindingSource> który formant łączy się z zestawu danych. Aby uzyskać więcej informacji, zobacz [— informacje o składniku BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview).
+- <xref:System.Windows.Forms.BindingSource>, który łączy formant z określonym zestawem danych. Aby uzyskać więcej informacji, zobacz [źródło BindingSource — Omówienie](/dotnet/framework/winforms/controls/bindingsource-component-overview).
 
-- TableAdapter, łączącej typizowany zestaw danych w bazie danych. Aby uzyskać więcej informacji, zobacz [tworzenie i konfigurowanie adapterów TableAdapter](../data-tools/create-and-configure-tableadapters.md).
+- TableAdapter, który nawiązuje połączenie określonego zestawu danych z bazą danych. Aby uzyskać więcej informacji, zobacz [Tworzenie i Konfigurowanie TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
-- TableAdapterManager, który służy do koordynowania adapterów tabel w zestawie danych w celu włączenia aktualizacji hierarchicznej. Aby uzyskać więcej informacji, zobacz [hierarchiczna aktualizacja](../data-tools/hierarchical-update.md) i [odwołania TableAdapterManager](../data-tools/fill-datasets-by-using-tableadapters.md#tableadaptermanager-reference).
+- TableAdapterManager, który służy do koordynowania kart tabeli w zestawie danych, aby włączyć hierarchiczne aktualizacje. Aby uzyskać więcej informacji, zobacz [hierarchiczne](../data-tools/hierarchical-update.md) informacje o aktualizacji i [TableAdapterManager](../data-tools/fill-datasets-by-using-tableadapters.md#tableadaptermanager-reference).
 
-Kiedy uruchamiasz projekt, kontrolka ma wyświetlać pierwszego rekordu w źródle danych. Możesz użyć <xref:System.Windows.Forms.BindingSource> aby umożliwić użytkownikom do przewijania rekordów.
+Po uruchomieniu projektu, formant Wyświetla pierwszy rekord w źródle danych. Możesz użyć <xref:System.Windows.Forms.BindingSource>, aby umożliwić użytkownikom przewijanie rekordów.
 
-### <a name="to-scroll-through-the-records"></a>Do przewijania rekordów
+### <a name="to-scroll-through-the-records"></a>Aby przewijać rekordy
 
-- Użyj <xref:System.Windows.Forms.BindingSource> metody takie jak <xref:System.Windows.Forms.BindingSource.MoveNext%2A> i <xref:System.Windows.Forms.BindingSource.MovePrevious%2A>.
+- Użyj metod <xref:System.Windows.Forms.BindingSource>, takich jak <xref:System.Windows.Forms.BindingSource.MoveNext%2A> i <xref:System.Windows.Forms.BindingSource.MovePrevious%2A>.
 
-Aby uzyskać informacje o sposobie wysyłania aktualizacji do zestawu danych i bazę danych, zobacz [jak: Aktualizowanie źródła danych danymi z kontrolki hosta](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).
+Informacje o sposobach wysyłania aktualizacji do określonego zestawu danych i bazy danych znajdują się w temacie [How to: Update a Data Source with Data from a host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Wiązanie danych do kontrolek w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)
+- [Powiązywanie danych z kontrolkami w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Dodawanie nowych źródeł danych](../data-tools/add-new-data-sources.md)
 - [Wiązanie kontrolek Windows Forms z danymi w programie Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-- [Instrukcje: Zapełnianie dokumentów danymi z obiektów](../vsto/how-to-populate-documents-with-data-from-objects.md)
-- [Instrukcje: Aktualizowanie źródła danych danymi z kontrolki hosta](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
-- [Korzystać z plików lokalnej bazy danych w rozwiązań Office ― omówienie](../vsto/using-local-database-files-in-office-solutions-overview.md)
-- [BindingSource, składnik — omówienie](/dotnet/framework/winforms/controls/bindingsource-component-overview)
+- [Instrukcje: zapełnianie dokumentów danymi z obiektów](../vsto/how-to-populate-documents-with-data-from-objects.md)
+- [Instrukcje: aktualizowanie źródła danych przy użyciu danych z kontrolki hosta](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
+- [Korzystanie z plików lokalnej bazy danych w rozwiązaniach pakietu Office — omówienie](../vsto/using-local-database-files-in-office-solutions-overview.md)
+- [BindingSource, składnik — Omówienie](/dotnet/framework/winforms/controls/bindingsource-component-overview)

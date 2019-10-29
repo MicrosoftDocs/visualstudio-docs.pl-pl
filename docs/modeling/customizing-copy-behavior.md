@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bcbe7a132f7e2f6f7d72cfd2ba210e5edba21b57
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e33ab59660263a5053642c95ec62ab36663f8e7b
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654096"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984305"
 ---
 # <a name="customizing-copy-behavior"></a>Dostosowywanie zachowania dotyczącego kopiowania
 W języku specyficznym dla domeny (DSL) utworzonym za pomocą wizualizacji programu Visual Studio i zestawu SDK modelowania można zmienić to, co się dzieje, gdy użytkownik kopiuje i wklei elementy.
@@ -86,7 +86,7 @@ Zastąp `ClipboardCommandSet.ProcessOnMenuCopyCommand()` *MyDsl* w projekcie Dsl
 Zastąp `ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` *MyDsl* w projekcie DslPackage.
 
  **Zachowaj układ kształtu przez kopiowanie i wklejanie.**
-Gdy użytkownik kopiuje wiele kształtów, można zachować ich względne położenie podczas wklejania. Ta technika jest przedstawiona przez przykład na [VMSDK: diagramy obwodów](http://go.microsoft.com/fwlink/?LinkId=213879).
+Gdy użytkownik kopiuje wiele kształtów, można zachować ich względne położenie podczas wklejania. Ta technika jest przedstawiona przez przykład na [VMSDK: diagramy obwodów](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8).
 
  Aby osiągnąć ten efekt, Dodaj kształty i łączniki do skopiowanego ElementGroupPrototype. Najbardziej wygodną metodą przesłonięcia jest ElementOperations. CreateElementGroupPrototype (). Aby to zrobić, Dodaj następujący kod do projektu DSL:
 
@@ -142,7 +142,7 @@ partial class MyDslDiagram // EDIT NAME
 ```
 
  **Wklej kształty w wybranej lokalizacji, na przykład w bieżącym położeniu kursora.**
-Gdy użytkownik kopiuje wiele kształtów, można zachować ich względne położenie podczas wklejania. Ta technika jest przedstawiona przez przykład na [VMSDK: diagramy obwodów](http://go.microsoft.com/fwlink/?LinkId=213879).
+Gdy użytkownik kopiuje wiele kształtów, można zachować ich względne położenie podczas wklejania. Ta technika jest przedstawiona przez przykład na [VMSDK: diagramy obwodów](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8).
 
  Aby osiągnąć ten efekt, Zastąp `ClipboardCommandSet.ProcessOnMenuPasteCommand()`, aby użyć wersji `ElementOperations.Merge()` specyficznej dla lokalizacji. Aby to zrobić, Dodaj następujący kod w projekcie DslPackage:
 
@@ -556,6 +556,6 @@ namespace Company.MyDsl
 
 - [Dostosowywanie tworzenia i przesuwania elementu](../modeling/customizing-element-creation-and-movement.md)
 - [Instrukcje: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-to-add-a-drag-and-drop-handler.md)
-- [Przykład: Przykładowe diagramy obwodów VMSDK](http://go.microsoft.com/fwlink/?LinkId=213879)
+- [Przykład: Przykładowe diagramy obwodów VMSDK](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

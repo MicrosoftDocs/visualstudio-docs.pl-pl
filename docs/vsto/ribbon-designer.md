@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f417c077d2280b951f0d101d79876c01cb33789d
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: e1c2941b0c088a832540fd3380c993fe2c380b44
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71256028"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985627"
 ---
 # <a name="ribbon-designer"></a>Projektant wstążki
   Projektant wstążki jest kanwą projektu wizualizacji. Użyj projektanta wstążki, aby dodać niestandardowe karty, grupy i kontrolki do wstążki aplikacji Microsoft Office.
@@ -49,10 +49,8 @@ ms.locfileid: "71256028"
 > [!NOTE]
 > Istnieją pewne zadania, których nie można osiągnąć przy użyciu projektanta wstążki. Więcej informacji o tych zadaniach i sposobach ich wykonywania można znaleźć w temacie [Omówienie wstążki](../vsto/ribbon-overview.md).
 
- ![link do wideo](../vsto/media/playvideo.gif "link do wideo") Aby zapoznać się z pokrewną [prezentacją wideo, zobacz Jak mogę: Korzystanie z projektanta wstążki w celu dostosowania wstążki w programie Outlook? ](http://go.microsoft.com/fwlink/?LinkID=130312).
-
 ## <a name="add-a-ribbon-visual-designer-item-to-a-project"></a>Dodaj Wstążkę (Visual Designer) do projektu
- Aby użyć projektanta wstążki, Dodaj nowy element **wstążki (projektant graficzny)** do projektu. Aby uzyskać więcej informacji, zobacz [jak: Wprowadzenie do dostosowywania wstążki](../vsto/how-to-get-started-customizing-the-ribbon.md).
+ Aby użyć projektanta wstążki, Dodaj nowy element **wstążki (projektant graficzny)** do projektu. Aby uzyskać więcej informacji, zobacz [How to: wprowadzenie dostosowywanie wstążki](../vsto/how-to-get-started-customizing-the-ribbon.md).
 
  Po dodaniu nowego elementu **wstążki (projektant graficzny)** program Visual Studio automatycznie dodaje do projektu następujące pliki:
 
@@ -107,7 +105,7 @@ ms.locfileid: "71256028"
 
 - Otwórz **Edytor kolekcji kart**, a następnie kliknij przycisk **Dodaj**.
 
-   Aby otworzyć **Edytor kolekcji kart**, w oknie **Właściwości** wybierz właściwość **tabulatory** , a następnie kliknij przycisk wielokropka ![ASP.net Mobile Designer Elipsa](../sharepoint/media/mwellipsis.gif "ASP.net Mobile Designer Elipsa").
+   Aby otworzyć **Edytor kolekcji kart**, w oknie **Właściwości** wybierz właściwość **tabulatory** , a następnie kliknij przycisk wielokropka ASP.NET Windows ![Mobile Designer](../sharepoint/media/mwellipsis.gif "Wielokropek projektanta ASP.NET Mobile").
 
   Po dodaniu karty można dodać grupy zawierające kontrolki.
 
@@ -121,7 +119,7 @@ ms.locfileid: "71256028"
 - Otwórz **Edytor kolekcji kart**, wybierz kartę, a następnie kliknij przycisk **Usuń**.
 
 #### <a name="change-the-position-of-a-tab-on-the-ribbon"></a>Zmiana pozycji karty na Wstążce
- Można zmienić kolejność kart niestandardowych na Wstążce. Możesz również umieścić karty niestandardowe przed lub po karcie wbudowanej na Wstążce. Aby uzyskać więcej informacji, zobacz [jak: Zmień pozycję karty na Wstążce](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md).
+ Można zmienić kolejność kart niestandardowych na Wstążce. Możesz również umieścić karty niestandardowe przed lub po karcie wbudowanej na Wstążce. Aby uzyskać więcej informacji, zobacz [How to: zmiana położenia karty na Wstążce](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md).
 
 #### <a name="customize-built-in-tabs-on-the-ribbon"></a>Dostosuj wbudowane karty na Wstążce
  Karta wbudowana to karta, która znajduje się już na Wstążce aplikacji Microsoft Office. Na przykład karta **dane** jest wbudowaną kartą w programie Excel.
@@ -130,7 +128,7 @@ ms.locfileid: "71256028"
 
  Nie można usunąć wbudowanych grup.
 
- Aby uzyskać szczegółowe informacje na temat dostosowywania wbudowanej karty, zobacz [How to: Dostosuj kartę](../vsto/how-to-customize-a-built-in-tab.md)wbudowaną.
+ Aby uzyskać szczegółowe informacje na temat dostosowywania wbudowanej karty, zobacz [How to: dostosowywanie wbudowanej karty](../vsto/how-to-customize-a-built-in-tab.md).
 
 ### <a name="AddGroupsToTab"></a>Dodawanie grup do karty
  Grupy logicznie organizują kontrolki na Wstążce. Dodaj grupy do kart. Dodaj wszystkie inne kontrolki do grupy.
@@ -140,16 +138,16 @@ ms.locfileid: "71256028"
 
 |formant|Opis|
 |-------------|-----------------|
-|**Box**|Kontener, który organizuje kontrolki w grupie. Możesz dodać dowolny formant do pola, z wyjątkiem separatora, grupy lub karty. Pole może być w poziomie lub w pionie.|
+|**Dialogowym**|Kontener, który organizuje kontrolki w grupie. Możesz dodać dowolny formant do pola, z wyjątkiem separatora, grupy lub karty. Pole może być w poziomie lub w pionie.|
 |**Przycisk**|Przycisk, który uruchamia akcję. Możesz dodać przycisk do grupy, grupy przycisków, listy rozwijanej, galerii, menu lub przycisku podziału.|
 |**ButtonGroup**|Grupa zawierająca jeden lub więcej przycisków, przycisków przełączników, menu, przycisków podzielonych i galerii. Grupę przycisków można dodać do grupy lub menu.|
 |**CheckBox**|Pole, które jest zaznaczone lub wyczyszczone, aby włączyć lub wyłączyć opcję.|
-|**ComboBox**|Pole edycji z dołączonym polem listy. Użytkownicy mogą wpisać lub wybrać opcję. W polu jest wyświetlany bieżący wybór. <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.Items%2A> Użyj właściwości, aby dodawać i usuwać elementy w czasie wykonywania przed lub po załadowaniu wstążki do aplikacji pakietu Office.|
-|**Przyjmij**|Lista elementów, które użytkownik może wybrać. Użytkownik nie może wpisać nowego elementu na liście rozwijanej.<br /><br /> Użyj właściwości <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Items%2A> , aby dodać elementy do listy. Można dodawać i usuwać elementy w czasie wykonywania.<br /><br /> Użyj właściwości <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Buttons%2A> , aby dodać przyciski do listy. Nie można jednak dodawać i usuwać przycisków w czasie wykonywania po załadowaniu wstążki do aplikacji pakietu Office.|
+|**ComboBox**|Pole edycji z dołączonym polem listy. Użytkownicy mogą wpisać lub wybrać opcję. W polu jest wyświetlany bieżący wybór. Użyj właściwości <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.Items%2A>, aby dodawać i usuwać elementy w czasie wykonywania przed lub po załadowaniu wstążki do aplikacji pakietu Office.|
+|**Przyjmij**|Lista elementów, które użytkownik może wybrać. Użytkownik nie może wpisać nowego elementu na liście rozwijanej.<br /><br /> Użyj właściwości <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Items%2A>, aby dodać elementy do listy. Można dodawać i usuwać elementy w czasie wykonywania.<br /><br /> Użyj właściwości <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Buttons%2A>, aby dodać do listy przyciski. Nie można jednak dodawać i usuwać przycisków w czasie wykonywania po załadowaniu wstążki do aplikacji pakietu Office.|
 |**EditBox**|Pole, w którym użytkownik może wpisać tekst.|
-|**Galeria**|Menu, które przedstawia tablicę lub siatkę opcji wizualizacji, z których użytkownicy mogą wybrać. Można kontrolować układ wybranych opcji w menu. Użyj właściwości <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A> i, aby określić liczbę wierszy i kolumn, w których będą wyświetlane elementy i przyciski galerii. <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A>|
+|**Galeria**|Menu, które przedstawia tablicę lub siatkę opcji wizualizacji, z których użytkownicy mogą wybrać. Można kontrolować układ wybranych opcji w menu. Użyj <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A> i właściwości <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A>, aby określić liczbę wierszy i kolumn, w których będą wyświetlane elementy i przyciski galerii.|
 |**Etykieta**|Tekst, którego można użyć do identyfikacji formantów na Wstążce.|
-|**Menu**|Lista rozwijana, która może zawierać dowolne z następujących kontrolek:<br /><br /> -Przycisk<br />— Pole wyboru<br />— Galeria<br />— Menu<br />-Split — przycisk<br />-Przycisk przełączania<br />-Separator<br /><br /> Aby dodać kontrolkę do menu w Projektancie wstążki, kliknij strzałkę w dół w menu, aby uwidocznić powierzchnię projektu menu. Następnie można przeciągać formanty wstążki z **przybornika** do menu. Aby rozmieścić formanty, przeciągnij je do żądanych pozycji.<br /><br /> Aby dodać formanty do <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> po załadowaniu wstążki do aplikacji pakietu Office, należy <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A> ustawić właściwość na **wartość true** przed załadowaniem Wstążki. Aby uzyskać informacje o tym, jak to zrobić, zobacz [Omówienie modelu obiektów wstążki](../vsto/ribbon-object-model-overview.md).|
+|**Menu**|Lista rozwijana, która może zawierać dowolne z następujących kontrolek:<br /><br /> -Przycisk<br />— Pole wyboru<br />— Galeria<br />— Menu<br />-Split — przycisk<br />-Przycisk przełączania<br />-Separator<br /><br /> Aby dodać kontrolkę do menu w Projektancie wstążki, kliknij strzałkę w dół w menu, aby uwidocznić powierzchnię projektu menu. Następnie można przeciągać formanty wstążki z **przybornika** do menu. Aby rozmieścić formanty, przeciągnij je do żądanych pozycji.<br /><br /> Aby dodać kontrolki do <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> po załadowaniu wstążki do aplikacji pakietu Office, należy ustawić właściwość <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A> na **wartość true** przed załadowaniem Wstążki. Aby uzyskać informacje o tym, jak to zrobić, zobacz [Omówienie modelu obiektów wstążki](../vsto/ribbon-object-model-overview.md).|
 |**Separator**|Cienki pasek używany do rozdzielania elementów na liście. Po dodaniu do grupy pasek jest pionowy. Po dodaniu do menu pasek jest poziomy.|
 |**SplitButton**|Przycisk z dołączonym menu. Przycisk podziału może zawierać dowolne z następujących kontrolek:<br /><br /> -Przycisk<br />— Pole wyboru<br />— Galeria<br />— Menu<br />-Split — przycisk<br />-Przycisk przełączania<br />-Separator<br /><br /> Podobnie jak w przypadku menu, przycisk podziału ma własną powierzchnię projektu. Jednak w przeciwieństwie do menu można aktualizować tylko elementy w przycisku podziału przed załadowaniem Wstążki do aplikacji pakietu Office. Aby uzyskać informacje o sposobach aktualizowania elementów w przycisku podziału, zobacz [Omówienie modelu obiektów wstążki](../vsto/ribbon-object-model-overview.md).|
 |**ToggleButton**|Przycisk, który pojawia się po naciśnięciu lub nienaciśnięciu.|
@@ -159,18 +157,18 @@ ms.locfileid: "71256028"
 
  Możesz kliknąć dwukrotnie dowolny formant w projektancie, aby otworzyć program obsługi zdarzeń dla domyślnego zdarzenia formantu. Programy obsługi zdarzeń można utworzyć dla wszystkich innych zdarzeń kontroli przy użyciu okna **Właściwości** .
 
- Zdarzenia wstążki i właściwości znajdują się w <xref:Microsoft.Office.Tools.Ribbon> przestrzeni nazw. Element **wstążka (projektant graficzny)** automatycznie dodaje odwołanie do tego zestawu w projekcie i wstawia odpowiednią instrukcję **using** lub **Imports** w górnej części pliku kodu wstążki.
+ Zdarzenia wstążki i właściwości znajdują się w przestrzeni nazw <xref:Microsoft.Office.Tools.Ribbon>. Element **wstążka (projektant graficzny)** automatycznie dodaje odwołanie do tego zestawu w projekcie i wstawia odpowiednią instrukcję **using** lub **Imports** w górnej części pliku kodu wstążki.
 
  Aby uzyskać informacje na temat obsługi zdarzeń wstążki i ustawiania właściwości formantów wstążki w czasie wykonywania, zobacz [Omówienie modelu obiektów wstążki](../vsto/ribbon-object-model-overview.md).
 
 ## <a name="CustomizingMicrosoftOfficeButton"></a>Dostosuj widok Backstage
  Za pomocą projektanta wstążki można dodać kontrolki do menu, które otwiera się po kliknięciu karty **plik** . To menu jest nazywane widokiem Backstage.
 
- Nie można umieścić kontrolek przed ani po wbudowanych kontrolkach przy użyciu projektanta wstążki. Wbudowana kontrolka to formant, który jest już wyświetlany w widoku Backstage. Jeśli chcesz umieścić formanty przed lub po wbudowanych kontrolkach, musisz użyć kodu XML wstążki. Aby uzyskać więcej informacji na temat **wstążki (XML)** , zobacz [kod XML wstążki](../vsto/ribbon-xml.md). Aby uzyskać więcej informacji na temat dostosowywania widoku Backstage, zobacz [wprowadzenie do widoku Backstage pakietu office 2010 dla deweloperów](http://go.microsoft.com/fwlink/?LinkId=182189) i [Dostosuj widok backstage pakietu Office 2010 dla deweloperów](http://go.microsoft.com/fwlink/?LinkId=182188).
+ Nie można umieścić kontrolek przed ani po wbudowanych kontrolkach przy użyciu projektanta wstążki. Wbudowana kontrolka to formant, który jest już wyświetlany w widoku Backstage. Jeśli chcesz umieścić formanty przed lub po wbudowanych kontrolkach, musisz użyć kodu XML wstążki. Aby uzyskać więcej informacji na temat **wstążki (XML)** , zobacz [kod XML wstążki](../vsto/ribbon-xml.md). Aby uzyskać więcej informacji na temat dostosowywania widoku Backstage, zobacz [wprowadzenie do widoku Backstage pakietu office 2010 dla deweloperów](/previous-versions/office/developer/office-2010/ee691833(v=office.14)) i [Dostosuj widok backstage pakietu Office 2010 dla deweloperów](/previous-versions/office/developer/office-2010/ee815851(v=office.14)).
 
  [!INCLUDE[appliesto_ribbon_2010](../vsto/includes/appliesto-ribbon-2010-md.md)]
 
- Aby uzyskać informacje o sposobach dodawania formantów do widoku Backstage, zobacz [How to: Dodaj formanty do widoku](../vsto/how-to-add-controls-to-the-backstage-view.md)Backstage.
+ Aby uzyskać informacje o sposobach dodawania formantów do widoku Backstage, zobacz [How to: Add Controls to the Backstage View](../vsto/how-to-add-controls-to-the-backstage-view.md).
 
 ## <a name="Accessibility"></a>Ułatwienia dostępu w Projektancie wstążki
  Za pomocą skrótów klawiaturowych można przenosić kontrolki w Projektancie wstążki. Niektóre skróty klawiaturowe mają zastosowanie do wszystkich kontrolek, a niektóre dotyczą tylko formantów, które mają menu.
@@ -179,33 +177,33 @@ ms.locfileid: "71256028"
 
 |Akcja|Skrót klawiaturowy|
 |------------|-----------------------|
-|Przenieś kontrolkę przed poprzednią kontrolką na liście.|**Ctrl**up+<br /><br /> Ctrl+w**lewo**|
-|Przenieś kontrolkę po następnej kontrolce na liście.|Ctrl+**w dół**<br /><br /> Ctrl+w**prawo**|
+|Przenieś kontrolkę przed poprzednią kontrolką na liście.|**Ctrl**+**up**<br /><br /> **Ctrl**+**lewo**|
+|Przenieś kontrolkę po następnej kontrolce na liście.|**Ctrl**+**w dół**<br /><br /> **Ctrl**+w **prawo**|
 |Przeniesienie zaznaczenia z jednej kontrolki do innej w tej samej grupie. Dla panelu listy rozwijanej Przechodź między kontrolką nadrzędną a kontrolkami w panelu rozwijanym.|**Konfigurowanie**<br /><br /> **Notuj**|
-|Wykonaj iterację w przód przez wszystkie kontrolki.|**Karta**|
-|Iterowanie do tyłu przez wszystkie kontrolki.|+**Tab** Shift|
+|Wykonaj iterację w przód przez wszystkie kontrolki.|**Tabulator**|
+|Iterowanie do tyłu przez wszystkie kontrolki.|**Karta** + **SHIFT**|
 |Usuń wybraną kontrolkę lub zestaw kontrolek.|**Delete**|
-|Skopiuj wybrane kontrolki.|**Ctrl**C+|
+|Skopiuj wybrane kontrolki.|**Ctrl**+**C**|
 |Wytnij zaznaczone kontrolki.|**Ctrl**+**X**|
 |Wklej kontrolki ze schowka.|**Ctrl**+**V**|
 |Wybierz **Przybornik**.|**Ctrl**+**Alt**+**X**|
 |Wybierz składnik nadrzędny.|**ESC**|
 
- Skróty klawiaturowe, które mają zastosowanie tylko do menu Microsoft Office <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>, i <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton> przedstawiono w poniższej tabeli.
+ W poniższej tabeli przedstawiono skróty klawiaturowe, które mają zastosowanie tylko do menu Microsoft Office, <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>i <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>.
 
 |Akcja|Skrót klawiaturowy|
 |------------|-----------------------|
-|Wybierz kontrolkę nadrzędną, jeśli jest otwarty panel listy rozwijanej, a w panelu listy rozwijanej wybrano kontrolkę.|**po lewej stronie**|
-|Zamknij panel listy rozwijanej, jeśli jest otwarty panel listy rozwijanej, a kontrolka nadrzędna jest zaznaczona.|**po lewej stronie**|
+|Wybierz kontrolkę nadrzędną, jeśli jest otwarty panel listy rozwijanej, a w panelu listy rozwijanej wybrano kontrolkę.|**Lewym**|
+|Zamknij panel listy rozwijanej, jeśli jest otwarty panel listy rozwijanej, a kontrolka nadrzędna jest zaznaczona.|**Lewym**|
 |Otwórz panel listy rozwijanej.|**Kliknij**|
 |Wybierz pierwszą kontrolkę z panelu listy rozwijanej, jeśli panel listy rozwijanej jest otwarty.|**Kliknij**|
 |Zamknij panel listy rozwijanej.|**ESC**|
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Wstążka — omówienie](../vsto/ribbon-overview.md)
+- [Omówienie wstążki](../vsto/ribbon-overview.md)
 - [XML — wstążka](../vsto/ribbon-xml.md)
 - [Przewodnik: Tworzenie niestandardowej karty przy użyciu projektanta wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
-- [Instrukcje: Eksportowanie wstążki z projektanta wstążki do kodu XML wstążki](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)
-- [Instrukcje: Wprowadzenie do dostosowywania wstążki](../vsto/how-to-get-started-customizing-the-ribbon.md)
+- [Instrukcje: Eksportowanie wstążki z projektanta wstążki do XML wstążki](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)
+- [Instrukcje: wprowadzenie do dostosowywania wstążki](../vsto/how-to-get-started-customizing-the-ribbon.md)
 - [Uzyskiwanie dostępu do wstążki w czasie wykonywania](../vsto/accessing-the-ribbon-at-run-time.md)

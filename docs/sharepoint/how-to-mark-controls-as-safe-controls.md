@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Oznaczanie kontrolek pojęciem bezpiecznych kontrolek | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Oznaczanie kontrolek jako bezpiecznych formantów | Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,104 +14,104 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 30bb597288c19328bb71ce7b5212200991d7181e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 232fef4908a6168d550d510a0d753fe8e39db02b
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443073"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72982730"
 ---
-# <a name="how-to-mark-controls-as-safe-controls"></a>Instrukcje: Oznaczanie kontrolek pojęciem bezpiecznych kontrolek
-  Dla bezpieczeństwa SharePoint oddzieli kontrolki sieci Web, które są chronione przed uruchomienie skryptu kontrolki sieci Web, które nie są. Chronione formantów, lub *bezpiecznych kontrolek*, może zostać oceniony przez niezaufanym użytkownikom. Możesz oznaczyć kontrolek jako bezpiecznych właściwości wpisy bezpiecznych kontrolek elementu projektu programu SharePoint lub w **projektancie pakietu** po dodaniu zestawu do pakietu. Aby uzyskać więcej informacji, zobacz artykuł
+# <a name="how-to-mark-controls-as-safe-controls"></a>Instrukcje: Oznaczanie kontrolek jako bezpiecznych formantów
+  W celu zapewnienia bezpieczeństwa program SharePoint rozróżnia kontrolki sieci Web, które są chronione przed iniekcją skryptu i kontrolkami sieci Web, które nie są. Dostęp do formantów chronionych lub *bezpiecznych kontrolek*można uzyskać za pomocą niezaufanych użytkowników. Kontrolki można oznaczyć jako bezpieczne we właściwości wpisy kontroli bezpieczeństwa elementu projektu programu SharePoint lub w **projektancie pakietów** po dodaniu zestawu do pakietu. Aby uzyskać więcej informacji, zobacz artykuł
 
-- [plik Web.config zmiana ustawień](http://go.microsoft.com/fwlink/?LinkId=178965) i [rejestrowanie zestaw części sieci Web jako bezpiecznej kontrolki](http://go.microsoft.com/fwlink/?LinkId=171013).
+- [Ustawienia pliku Web. config zmieniają](/previous-versions/office/developer/sharepoint-2007/bb802890(v=office.12)) i [rejestrują zestaw części sieci Web jako bezpieczną kontrolę](/previous-versions/office/developer/sharepoint2003/dd587360(v=office.11)).
 
 > [!IMPORTANT]
-> Te procedury są w celach ilustracyjnych. Oznaczanie kontrolek bezpieczne, tylko wtedy, gdy masz pewność, że są bezpieczne.
+> Te procedury są przeznaczone do celów informacyjnych. Oznacz formanty jako bezpieczne tylko wtedy, gdy masz pewność, że są one bezpieczne.
 
-## <a name="marking-safe-controls-in-the-safe-control-entries-property"></a>Oznaczanie bezpiecznych kontrolek we właściwości wpisy kontroli bezpiecznego
+## <a name="marking-safe-controls-in-the-safe-control-entries-property"></a>Oznaczanie bezpiecznych formantów we właściwości wpisy bezpiecznego sterowania
 
-#### <a name="to-mark-controls-as-safe-or-unsafe-in-the-safe-control-entries-property"></a>Aby oznaczyć kontrolek jako bezpiecznych lub niebezpieczne we właściwości wpisy kontroli bezpiecznego
+#### <a name="to-mark-controls-as-safe-or-unsafe-in-the-safe-control-entries-property"></a>Aby oznaczyć formanty jako bezpieczne lub niebezpieczne we właściwości wpisy dotyczące bezpiecznego sterowania
 
-1. Tworzenie rozwiązań programu SharePoint w projekcie wizualny składnik Web Part.
+1. Utwórz rozwiązanie SharePoint za pomocą projektu wizualnego składnika Web Part.
 
-2. Dodaj dwa formanty do składnika Web part: pole tekstowe i przycisk. Pozostaw nazwy wartości domyślnych, TextBox1 i Button1, odpowiednio.
+2. Dodaj dwa kontrolki do składnika Web Part: pole tekstowe i przycisk. Pozostaw odpowiednio nazwy domyślne, TextBox1 i Button1.
 
-3. Dodania dwóch wpisów do składnika Web part **wpisy bezpiecznych kontrolek** właściwości. Aby to zrobić, wybierz przycisk wielokropka (![elipsy projektanta Mobile ASP.NET](../sharepoint/media/mwellipsis.gif "elipsy projektanta Mobile ASP.NET")) znajdujący się obok **wpisy bezpiecznych kontrolek** właściwość  **Właściwości** okna.
+3. Dodaj dwa wpisy do właściwości **wpisów bezpiecznego sterowania** częścią sieci Web. Aby to zrobić, wybierz przycisk wielokropka (![ASP.net Mobile Designer](../sharepoint/media/mwellipsis.gif "Wielokropek projektanta ASP.NET Mobile")) obok właściwości **bezpieczne wpisy kontroli** w oknie **Właściwości** .
 
-     **Wpisy bezpiecznych kontrolek** pojawi się okno dialogowe.
+     Zostanie wyświetlone okno dialogowe **bezpieczne wpisy kontroli** .
 
-4. W **wpisy bezpiecznych kontrolek** okna dialogowego wybierz **Dodaj** przycisk dwa razy, aby dodać dwa wpisy bezpiecznych kontrolek do **członków** okienka: jeden dla przycisku i jeden dla pola tekstowego.
+4. W oknie dialogowym **bezpieczne wpisy kontroli** kliknij dwukrotnie przycisk **Dodaj** , aby dodać dwa bezpieczne wpisy kontroli do okienka **elementy członkowskie** : jeden dla przycisku i jeden dla pola tekstowego.
 
-5. Wybierz pierwszy wpis bezpiecznej kontrolki, a następnie zmień wartość jego **bezpieczne** właściwości **False**, jego **nazwy typu** właściwość **Button1**, a jego **bezpieczne względem skryptu** właściwości **False**.
+5. Wybierz pierwszy wpis bezpiecznego sterowania, a następnie zmień wartość jego właściwości **Safe** na **false**, jej właściwość **type name** na **Button1**i **bezpieczną Właściwość Script** na wartość **false**.
 
-     W tym kroku identyfikuje formant przycisku jako kontrolkę, która jest niebezpieczne.
+     Ten krok identyfikuje formant Button jako niebezpieczną kontrolę.
 
-6. Wybierz drugi wpis bezpiecznej kontrolki listy. Pozostaw wartość jego **bezpieczne** właściwość jako **True** i ustaw jego **nazwy typu** właściwości **TextBox1** i jego **bezpieczne Względem skryptu** właściwości **True**.
+6. Wybierz drugą pozycję bezpieczne sterowanie na liście. Pozostaw wartość swojej **bezpiecznej** właściwości jako **true** i ustaw jej właściwość **type name** na **TextBox1** i jej bezpieczną Właściwość **Script** na **wartość true**.
 
-     Formant pola tekstowego jest teraz oznaczone jako formant, który jest zabezpieczony przed uruchomienie skryptu.
+     Kontrolka pole tekstowe jest teraz oznaczona jako formant, który jest bezpieczny przed iniekcją skryptu.
 
-7. Wybierz **OK** przycisk, aby zamknąć okno dialogowe.
+7. Wybierz przycisk **OK** , aby zamknąć okno dialogowe.
 
-## <a name="marking-safe-controls-in-the-package-designer"></a>Oznaczanie bezpiecznych kontrolek w Projektancie pakietu
+## <a name="marking-safe-controls-in-the-package-designer"></a>Oznaczanie bezpiecznych kontrolek w projektancie pakietów
 
-#### <a name="to-mark-controls-as-safe-or-unsafe-in-the-package-designer"></a>Aby oznaczyć kontroluje jako bezpieczny lub niebezpiecznych w Projektancie pakietu
+#### <a name="to-mark-controls-as-safe-or-unsafe-in-the-package-designer"></a>Aby oznaczyć formanty jako bezpieczne lub niebezpieczne w projektancie pakietów
 
-1. Tworzenie rozwiązań programu SharePoint w projekcie wizualny składnik Web Part.
+1. Utwórz rozwiązanie SharePoint za pomocą projektu wizualnego składnika Web Part.
 
-2. Dodaj dwa formanty do składnika Web part: pole tekstowe i przycisk. Pozostaw nazwy wartości domyślnych, TextBox1 i Button1, odpowiednio.
+2. Dodaj dwa kontrolki do składnika Web Part: pole tekstowe i przycisk. Pozostaw odpowiednio nazwy domyślne, TextBox1 i Button1.
 
-     Zwróć uwagę na przestrzeń nazw formantu, ponieważ jest on używany później.
+     Zwróć uwagę na przestrzeń nazw kontrolki, ponieważ jest ona używana później.
 
-3. Na pasku menu wybierz **kompilacji** > **Kompiluj rozwiązanie** do skompilowania projektu.
+3. Na pasku menu wybierz kolejno opcje **kompiluj** > **Kompiluj rozwiązanie** , aby skompilować projekt.
 
-4. Utwórz innego rozwiązania programu SharePoint.
+4. Utwórz kolejne rozwiązanie programu SharePoint.
 
-5. W **Eksploratora rozwiązań**, otwórz menu skrótów dla *Package.Package* , a następnie wybierz **Otwórz** otworzyć **projektancie pakietu**.
+5. W **Eksplorator rozwiązań**Otwórz menu skrótów dla pliku *Package. Package* , a następnie wybierz **Otwórz** , aby otworzyć **projektanta pakietów**.
 
-6. W **projektancie pakietu**, wybierz **zaawansowane** kartę.
+6. W **projektancie pakietów**wybierz kartę **Zaawansowane** .
 
-7. W obszarze **dodatkowe zestawy**, wybierz **Dodaj** przycisk, a następnie wybierz **Dodaj istniejący zestaw** z listy.
+7. W obszarze **dodatkowe zestawy**wybierz przycisk **Dodaj** , a następnie wybierz pozycję **Dodaj istniejący zestaw** z listy.
 
-8. W **Dodaj istniejący zestaw** okno dialogowe, wybierz przycisk wielokropka (![elipsy projektanta Mobile ASP.NET](../sharepoint/media/mwellipsis.gif "elipsy projektanta Mobile ASP.NET")) znajdujący się obok  **Ścieżka źródłowa**.
+8. W oknie dialogowym **Dodaj istniejący zestaw** wybierz przycisk wielokropka (![ASP.net Mobile Designer](../sharepoint/media/mwellipsis.gif "Wielokropek projektanta ASP.NET Mobile")) obok **ścieżki źródłowej**.
 
-9. Wybierz zestaw z rozwiązania programu SharePoint, który został utworzony w kroku 1, a następnie wybierz **Otwórz** przycisku.
+9. Wybierz zestaw z rozwiązania programu SharePoint, który został utworzony w kroku 1, a następnie wybierz przycisk **Otwórz** .
 
-10. W tym przykładzie należy pozostawić **cel wdrożenia** opcji GlobalAssemblyCache.
+10. Na potrzeby tego przykładu pozostaw opcję **cel wdrożenia** jako GlobalAssemblyCache.
 
-     Ten krok powoduje, że zestaw do wdrażania systemu globalnej pamięci podręcznej zestawów (GAC). Jeśli chcesz, aby zestaw do wdrażania sieci Web folderu aplikacji (Bin), wybierz tę opcję. Aby uzyskać więcej informacji, zobacz [wdrażania składników Web Part w SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177509).
+     Ten krok powoduje wdrożenie zestawu w globalnej pamięci podręcznej zestawów (GAC) systemu. Jeśli chcesz, aby zestaw został wdrożony w folderze aplikacji sieci Web (bin), zaznacz tę opcję. Aby uzyskać więcej informacji, zobacz [wdrażanie składniki Web Part w programie SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/cc768621(v=office.14)).
 
-11. W **bezpiecznych kontrolek** wybierz **kliknij tutaj, aby dodać nowy element** przycisku.
+11. W polu **bezpieczne formanty** wybierz przycisk **kliknij tutaj, aby dodać nowy element** .
 
-12. Wprowadź wartości dla właściwości z poniższej tabeli.
+12. Wprowadź wartości właściwości z poniższej tabeli.
 
     |Nazwa właściwości|Wartość|
     |-------------------|-----------|
-    |Przestrzeń nazw|W pełni kwalifikowanych przestrzeni nazw kontrolki, takie jak **BdcModelProject1.VisualWebPart1**.|
+    |Przestrzeń nazw|W pełni kwalifikowana przestrzeń nazw dla kontrolki, na przykład **BdcModelProject1. VisualWebPart1**.|
     |Nazwa typu|Button1|
-    |Nazwa zestawu|Zestawu silne nazwy, takie jak: Microsoft.Office.SharePoint.ClientExtensions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c.|
-    |Bezpieczne|Wyczyść **bezpieczne** pole wyboru.|
-    |Bezpieczne względem skryptu|Pozostaw **bezpieczne względem skryptu** wyczyść pole wyboru.|
+    |Nazwa zestawu|Silna nazwa zestawu, na przykład: Microsoft. Office. SharePoint. ClientExtensions, Version = 14.0.0.0, Culture = neutral, PublicKeyToken = 71e9bce111e9429c.|
+    |Sejf|Wyczyść pole wyboru **bezpieczne** .|
+    |Bezpieczna przed skryptami|Pozostaw wyczyść pole wyboru **bezpieczne względem skryptu** .|
 
     > [!NOTE]
-    > **Nazwy zestawu** wartość dla zestawów dodane za pomocą **zaawansowane** karcie **projektancie pakietu** nie może być token, musi być silnej nazwy zestawu. Aby uzyskać więcej informacji, zobacz [tworzenie i zestawy Using Strong-Named](http://go.microsoft.com/fwlink/?LinkId=177513).
+    > Wartość **nazwy zestawu** dla zestawów dodawanych za pomocą karty **Zaawansowane** **projektanta pakietów** nie może być tokenem, musi to być zestaw o silnej nazwie. Aby uzyskać więcej informacji, zobacz [Tworzenie i używanie zestawów o silnej nazwie](/previous-versions/dotnet/netframework-4.0/xwb8f617(v=vs.100)).
 
-13. Wybierz **kartę** klawisz, aby utworzyć inny wpis bezpiecznej kontrolki.
+13. Wybierz klawisz **Tab** , aby utworzyć inny bezpieczny wpis kontroli.
 
-14. Wybierz **kliknij tutaj, aby dodać nowy element** ponownie przycisk.
+14. Wybierz ponownie przycisk **kliknij tutaj, aby dodać nowy element** .
 
-15. Wprowadź wartości dla właściwości z poniższej tabeli.
+15. Wprowadź wartości właściwości z poniższej tabeli.
 
     |Nazwa właściwości|Wartość|
     |-------------------|-----------|
-    |Przestrzeń nazw|W pełni kwalifikowanych przestrzeni nazw kontrolki, takie jak **BdcModelProject1.VisualWebPart1**.|
+    |Przestrzeń nazw|W pełni kwalifikowana przestrzeń nazw dla kontrolki, na przykład **BdcModelProject1. VisualWebPart1**.|
     |Nazwa typu|TextBox1|
-    |Nazwa zestawu|Zestawu silne nazwy, takie jak: Microsoft.Office.SharePoint.ClientExtensions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c.|
-    |Bezpieczne|Wybierz **bezpieczne** pole wyboru.|
-    |Bezpieczne względem skryptu|Wybierz **bezpieczne względem skryptu** pole wyboru.|
+    |Nazwa zestawu|Silna nazwa zestawu, na przykład: Microsoft. Office. SharePoint. ClientExtensions, Version = 14.0.0.0, Culture = neutral, PublicKeyToken = 71e9bce111e9429c.|
+    |Sejf|Zaznacz pole wyboru **bezpieczne** .|
+    |Bezpieczna przed skryptami|Zaznacz pole wyboru **bezpieczny względem skryptu** .|
 
-16. Wybierz **kartę** klucza, a następnie wybierz **OK** przycisk, aby zamknąć okno dialogowe.
+16. Wybierz klawisz **Tab** , a następnie wybierz przycisk **OK** , aby zamknąć okno dialogowe.
 
 ## <a name="see-also"></a>Zobacz także
-- [Podaj informacji opakowań i wdrażania w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
-- [Pakiet rozwiązania i wdrażania SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
+- [Udostępnianie informacji o pakowaniu i wdrożeniu w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
+- [Pakowanie i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

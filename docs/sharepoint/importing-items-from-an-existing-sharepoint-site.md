@@ -1,5 +1,5 @@
 ---
-title: Importowanie elementów z istniejącej witryny programu SharePoint | Dokumentacja firmy Microsoft
+title: Importowanie elementów z istniejącej witryny programu SharePoint | Microsoft Docs
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -18,23 +18,23 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 58f4dd6df35b9101ed3cd2a45943efc8078229f8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 820e7c6f2ac7ea3e65e2156f33464bec96fce091
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444362"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72982591"
 ---
-# <a name="import-items-from-an-existing-sharepoint-site"></a>Importowanie elementów z istniejącej witryny programu SharePoint
-  Importowanie pakietu rozwiązań programu SharePoint szablon projektu umożliwia ponowne używanie elementów, takich jak typy zawartości i pola z istniejącej witryny programu SharePoint, w nowym [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] rozwiązania programu SharePoint. Chociaż można uruchomić najbardziej importowanych rozwiązania bez żadnych modyfikacji, istnieją pewnych ograniczeń i zagadnień, które należy wziąć pod uwagę, zwłaszcza wtedy, gdy modyfikować elementów po ich zaimportowaniu.
+# <a name="import-items-from-an-existing-sharepoint-site"></a>Importuj elementy z istniejącej witryny programu SharePoint
+  Szablon projektu Importuj pakiet rozwiązania SharePoint umożliwia ponowne używanie elementów, takich jak typy zawartości i pola z istniejących witryn programu SharePoint w nowym [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] rozwiązaniu SharePoint. Chociaż można uruchamiać większość zaimportowanych rozwiązań bez modyfikacji, istnieją pewne ograniczenia i problemy, które należy wziąć pod uwagę, szczególnie w przypadku modyfikacji wszelkich elementów po ich zaimportowaniu.
 
 > [!NOTE]
-> Aby zaimportować przepływów danych wielokrotnego użytku, należy użyć szablonu projektu Importowanie przepływu pracy wielokrotnego użytku. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Wytyczne dotyczące importowania wielokrotnych przepływów danych](../sharepoint/guidelines-for-importing-reusable-workflows.md).
+> Aby zaimportować przepływy pracy wielokrotnego użytku, użyj szablonu projektu przepływu pracy wielokrotnego użytku. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [wytyczne dotyczące importowania przepływów pracy wielokrotnego użytku](../sharepoint/guidelines-for-importing-reusable-workflows.md).
 
-## <a name="supported-sharepoint-solutions"></a>Obsługiwane rozwiązań SharePoint
- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] Importowanie rozwiązania utworzone w w pełni obsługuje [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] i [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)].
+## <a name="supported-sharepoint-solutions"></a>Obsługiwane rozwiązania programu SharePoint
+ [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] w pełni obsługuje importowanie rozwiązań utworzonych w [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] i [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)].
 
- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] nie obsługuje importowania rozwiązania utworzone w następujących aplikacjach:
+ [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] nie obsługuje importowania rozwiązań utworzonych w następujących aplikacjach:
 
 - [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)]
 
@@ -46,95 +46,95 @@ ms.locfileid: "63444362"
 
 - [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]
 
-  Mimo że można często pomyślnie importować rozwiązań utworzonych przez te aplikacje, te funkcje jest nie przetestowane i nie jest obsługiwane.
+  Chociaż często można pomyślnie zaimportować rozwiązania utworzone przez te aplikacje, ta funkcja nie jest testowana i nie jest obsługiwana.
 
-## <a name="item-import-restrictions"></a>Ograniczenia importu elementu
- Mimo że większość elementów programu SharePoint mogą zostać zaimportowane z istniejącego *.wsp* pliku, następujące elementy nie są obsługiwane i mogą wymagać modyfikacji działał prawidłowo:
+## <a name="item-import-restrictions"></a>Ograniczenia importowania elementów
+ Chociaż większość elementów programu SharePoint można zaimportować z istniejącego pliku *. wsp* , następujące elementy nie są obsługiwane i mogą wymagać modyfikacji w celu poprawnego działania:
 
-- Jednostki usługi łączności danych biznesowych
+- Jednostki usługi BDC
 
-- Kod elementy skojarzenia przepływu pracy
+- Elementy skojarzenia przepływu pracy kodu
 
 - Przepływy pracy kodu
 
-- Wizualnego składnika Web Part (.ascx)
+- Wizualne części sieci Web (. ascx)
 
-- Usługi sieci Web (*.asmx*)
+- Usługi sieci Web ( *. asmx*)
 
 - Powiązania typu zawartości
 
 - Odbiorcy zdarzeń
 
-- Definicje list (szablonów)
+- Definicje list (szablony)
 
-- Definicje witryny
+- Definicje lokacji
 
-  Podczas eksportowania rozwiązania z [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] lub [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)], te elementy są automatycznie wykluczane z *.wsp* pliku. Jednak inne *.wsp* pliki wygenerowane z nieobsługiwaną narzędzi może zawierać tych elementów. (Zobacz "Obsługiwane rozwiązania programu SharePoint" wcześniej w tym temacie).
+  Podczas eksportowania rozwiązania z [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] lub [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)], te elementy są automatycznie wykluczane z pliku *. wsp* . Jednak inne pliki *. wsp* wygenerowane z nieobsługiwanych narzędzi mogą zawierać te elementy. (Zobacz sekcję "obsługiwane rozwiązania programu SharePoint" wcześniej w tym temacie).
 
-## <a name="what-happens-when-you-import-a-solution"></a>Co się dzieje w przypadku importowania rozwiązania
- Podczas importowania rozwiązania przy użyciu szablonu Importowanie pakietu rozwiązania programu SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] kopiuje wszystkie zawartości *.wsp* zaimportowany plik i próbuje uzgodnić i zachować dowolną liczbę skojarzeń i odwołania między elementy i ich pliki, jak to możliwe.
+## <a name="what-happens-when-you-import-a-solution"></a>Co się stanie w przypadku zaimportowania rozwiązania
+ Podczas importowania rozwiązania przy użyciu szablonu Importuj pakiet rozwiązania SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Kopiuje całą zawartość pliku *. wsp* i próbuje uzgodnić i zachować dowolną liczbę skojarzeń i odwołań między importowanymi elementami a ich plikami jako najmniejszy.
 
- Wszystkie zaimportowane elementy skopiować do odpowiednich folderów w **Eksploratora rozwiązań**. Na przykład, typy zawartości pojawiają się w folderze **typy zawartości** i wystąpienia listy są wyświetlane w obszarze **listy wystąpień**. Plików skojarzonych z importowany element również są kopiowane do folderu elementu. Na przykład wystąpienie listy importowanych obejmuje jego moduły, formularze i stron ASPX.
+ Wszystkie importowane elementy są kopiowane do odpowiednich folderów w **Eksplorator rozwiązań**. Na przykład typy zawartości są wyświetlane w obszarze **typy zawartości** folderu i wystąpienia list są wyświetlane w obszarze **listy wystąpienia**. Pliki skojarzone z zaimportowanym elementem są również kopiowane do folderu elementu. Na przykład wystąpienie importowanej listy zawiera swoje moduły, formularze i strony ASPX.
 
 ### <a name="dependent-items"></a>Elementy zależne
- Jeśli wybierzesz element w Kreatorze Importowanie pakietu rozwiązań programu SharePoint, ale nie jego elementów zależnych okno komunikatu informujące o tym, że elementy zależne należy również zaznaczyć przed zaimportowaniem
+ W przypadku wybrania elementu w Kreatorze importowania pakietu rozwiązań programu SharePoint, ale nie jego elementów zależnych, w oknie komunikatu jest wyświetlany komunikat informujący o tym, że elementy zależne muszą być również wybrane przed zaimportowaniem.
 
-### <a name="what-are-features"></a>Jakie są funkcje?
- Program SharePoint Designer, użytkownicy mogą zobaczyć nieoczekiwany plikach o nazwie *funkcji*, pojawiają się w swoich rozwiązaniach importowanych w **Eksploratora rozwiązań.** Chociaż funkcje istniał w rozwiązaniu programu SharePoint Designer, zostały one ukryte w widoku. Funkcje są teraz widoczne w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+### <a name="what-are-features"></a>Co to są funkcje?
+ Użytkownicy programu SharePoint Designer mogą widzieć nieoczekiwane pliki o nazwie *Features*, które są wyświetlane w zaimportowanych rozwiązaniach w **Eksplorator rozwiązań.** Chociaż funkcje istniały w rozwiązaniu programu SharePoint Designer, były ukryte z widoku. Funkcje są teraz widoczne w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
- Funkcje są kontenerami dla elementów programu SharePoint. Każda funkcja przechowuje odwołania do każdego elementu, takie jak typy zawartości i definicje list, które zawiera. Podczas importowania rozwiązania, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Ustawia funkcje wszystkie zaimportowane elementy i podejmuje próbę utrzymania relacji elementu funkcji dla plików. Wszystkie pliki, nie można rozpoznać odwołania do której są umieszczane w **inne zaimportowane pliki** folderu.
+ Funkcje są kontenerami dla elementów programu SharePoint. Każda funkcja zachowuje odwołanie do każdego elementu, takie jak typy zawartości i definicje list, które zawiera. Podczas importowania rozwiązania [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ustawia funkcje dla wszystkich zaimportowanych elementów i próbuje zachować relacje między elementami dla plików. Wszystkie pliki, których odwołania nie mogą zostać rozpoznane, są umieszczane w folderze **inne importowane pliki** .
 
- Aby uzyskać więcej informacji o funkcjach, zobacz [rozwiązań SharePoint opracowywanie](../sharepoint/developing-sharepoint-solutions.md) i [Praca z funkcjami](http://go.microsoft.com/fwlink/?LinkID=147704).
+ Aby uzyskać więcej informacji na temat funkcji, zobacz [opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md) i [Praca z funkcjami](/previous-versions/office/developer/sharepoint-2010/ms460318(v=office.14)).
 
-### <a name="handle-special-cases"></a>Obsługa szczególnych przypadków
- W niektórych przypadkach program Visual Studio nie można uzgodnić elementu z jego plików zależnych. Wszystkie pliki, które [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nie można rozpoznać pojawiają się w folderze **inne zaimportowane pliki**. Ponadto ich **DeploymentType** właściwości są ustawione na **NoDeployment** tak, aby nie są wdrażane za pomocą rozwiązania.
+### <a name="handle-special-cases"></a>Obsługa specjalnych przypadków
+ W niektórych przypadkach program Visual Studio nie może uzgodnić elementu z jego plikami zależnymi. Wszystkie pliki, które [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nie mogą zostać rozpoznane, są wyświetlane w folderze **inne zaimportowane pliki**. Ponadto ich właściwości **DeploymentType** są ustawiane jako **NoDeployment** , tak że nie są wdrażane przy użyciu rozwiązania.
 
- Na przykład po zaimportowaniu definicji listy ExpenseForms definicji listy o tej nazwie pojawia się w obszarze **listy definicji** folderu w **Eksploratora rozwiązań** wraz z jego  *Elements.XML* i *Schema.xml* plików. Jednak jego powiązanych formularzy ASPX, jak i HTML można umieścić w folderze o nazwie **ExpenseForms** w obszarze **inne zaimportowane pliki** folderu. Aby ukończyć importowanie, przenosić tych plików, w ramach definicji listy ExpenseForms w **Eksploratora rozwiązań** i zmień **DeploymentType** właściwości dla każdego pliku z **NoDeployment** do **plik elementu**.
+ Na przykład jeśli zaimportujesz definicję listy ExpenseForms, definicja listy o tej nazwie zostanie wyświetlona w folderze **definicje list** w **Eksplorator rozwiązań** wraz z jego *elementami Files. XML* i *Schema. XML* . Jednak skojarzone z nimi ASPX i formularze HTML mogą być umieszczane w folderze o nazwie **ExpenseForms** w folderze **inne importowane pliki** . Aby ukończyć importowanie, przenieś te pliki pod definicję listy ExpenseForms w **Eksplorator rozwiązań** i zmień właściwość **DeploymentType** dla każdego pliku z **NoDeployment** na **elementu**.
 
- Podczas importowania odbiorcy zdarzeń *Elements.xml* plik jest kopiowany do poprawnej lokalizacji, ale musisz ręcznie dołączyć zestawu w pakiecie rozwiązań, dzięki czemu wdrażania za pomocą rozwiązania. [!INCLUDE[crabout](../sharepoint/includes/crabout-md.md)] jak to zrobić, zobacz [jak: Dodawanie i usuwanie zestawów dodatkowych](../sharepoint/how-to-add-and-remove-additional-assemblies.md).
+ Podczas importowania odbiorców zdarzeń plik Packages *. XML* jest kopiowany do odpowiedniej lokalizacji, ale należy ręcznie dołączyć zestaw w pakiecie rozwiązania, aby wdrożyć go w rozwiązaniu. [!INCLUDE[crabout](../sharepoint/includes/crabout-md.md)] jak to zrobić, zobacz [jak: Dodawanie i usuwanie dodatkowych zestawów](../sharepoint/how-to-add-and-remove-additional-assemblies.md).
 
- Podczas importowania przepływów pracy, formularzy programu InfoPath są kopiowane do **inne zaimportowane pliki** folderu. Jeśli *.wsp* plik zawiera szablon sieci Web, jest ona ustawiona jako stronę startową w **Eksploratora rozwiązań**.
+ Podczas importowania przepływów pracy formularze programu InfoPath są kopiowane do folderu **inne zaimportowane pliki** . Jeśli plik *. wsp* zawiera szablon sieci Web, jest ustawiany jako Strona startowa w **Eksplorator rozwiązań**.
 
-## <a name="import-fields-and-property-bags"></a>Pola importowania i zbiory właściwości
- Podczas importowania rozwiązania, który ma wiele pól, wszystkie definicje osobnego pola są scalane w jednym *Elements.xml* plik w węźle w **Eksploratora rozwiązań** o nazwie **pola** . Podobnie, wszystkie wpisy zbioru właściwości są scalane w *Elements.xml* pliku pod węzeł o nazwie **PropertyBags**.
+## <a name="import-fields-and-property-bags"></a>Importowanie pól i toreb własności
+ Podczas importowania rozwiązania, które ma wiele pól, wszystkie oddzielne definicje pól są scalane w jeden plik *. XML* w węźle w **Eksplorator rozwiązań** nazywanymi **polami**. Podobnie wszystkie wpisy zbioru właściwości są scalane w pliku *. XML* w węźle o nazwie **PropertyBags**.
 
- Pola w programie SharePoint są kolumn typu określone dane, takie jak tekst, Boolean lub wyszukiwania. Aby uzyskać więcej informacji, zobacz [bloków konstrukcyjnych: Kolumny i typy pól](http://go.microsoft.com/fwlink/?LinkId=182304). Zbiory właściwości umożliwiają dodawanie właściwości do obiektów w programie SharePoint, wszystkie elementy z farmy serwerów do listy w witrynie programu SharePoint. Zbiory właściwości są implementowane jako tabelę mieszania nazw właściwości i wartości. Aby uzyskać więcej informacji, zobacz [Zarządzanie konfiguracją programu SharePoint](http://go.microsoft.com/fwlink/?LinkId=182296) lub [ustawienia zbioru właściwości SharePoint](http://go.microsoft.com/fwlink/?LinkId=182297).
+ Pola w programie SharePoint są kolumnami określonego typu danych, takimi jak tekst, wartość logiczna lub odnośnik. Aby uzyskać więcej informacji, zobacz [Budowanie bloku: kolumny i typy pól](/previous-versions/office/developer/sharepoint-2010/ee535893(v=office.14)). Torby właściwości umożliwiają dodawanie właściwości do obiektów w programie SharePoint, wszystko z farmy do listy w witrynie programu SharePoint. Torby właściwości są implementowane jako tablica skrótów nazw i wartości właściwości. Aby uzyskać więcej informacji, zobacz [Zarządzanie ustawieniami konfiguracji programu SharePoint](/previous-versions/msp-n-p/ff647766(v=pandp.10)) lub [zbiorem właściwości programu SharePoint](https://archive.codeplex.com/?p=pbs).
 
-## <a name="delete-items-in-the-project"></a>Usuwanie elementów projektu
- Większość elementów w rozwiązaniach programu SharePoint ma jeden lub więcej elementów zależnych. Na przykład wystąpienia listy są zależne od typów zawartości i typy zawartości są zależne od pola. Po zaimportowaniu rozwiązania programu SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nie powiadamia użytkownika o problemach odwołania w przypadku usunięcia elementu w rozwiązaniu, ale nie elementy zależne, dopóki próba wdrożenia rozwiązania. Na przykład jeśli rozwiązanie importowanych ma wystąpienie listy, który zależy od typu zawartości i usunięcie tego typu zawartości, na wdrożenie może wystąpić błąd. Ten błąd występuje, jeśli elementu zależnego nie znajduje się na serwerze programu SharePoint. Podobnie, jeśli usuniętego elementu ma również zbiór powiązanych właściwości, następnie usuń te wpisy zbiór właściwości z **PropertyBags** *Elements.xml* pliku. W związku z tym jeśli otrzymujesz błędy związane z wdrażaniem Usuń wszystkie elementy z zaimportowanych rozwiązania, sprawdź wszystkie elementy zależne muszą również zostaną usunięte.
+## <a name="delete-items-in-the-project"></a>Usuń elementy w projekcie
+ Większość elementów w rozwiązaniach programu SharePoint ma jeden lub więcej elementów zależnych. Na przykład wystąpienia list zależą od typów zawartości i typów zawartości zależą od pól. Po zaimportowaniu rozwiązania SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nie powiadamia o problemach z odwołaniami w przypadku usunięcia elementu w rozwiązaniu, ale nie jego elementów zależnych, dopóki nie zostanie podjęta próba wdrożenia rozwiązania. Na przykład jeśli zaimportowane rozwiązanie ma wystąpienie listy, które zależy od typu zawartości i usuniesz ten typ zawartości, może wystąpić błąd podczas wdrażania. Ten błąd występuje, gdy element zależny nie jest obecny na serwerze programu SharePoint. Podobnie, jeśli usunięty element ma również powiązany zbiór właściwości, usuń te wpisy zbioru właściwości z pliku **PropertyBags** *. XML* . W związku z tym po usunięciu wszelkich elementów z zaimportowanego rozwiązania i uzyskaniu błędów wdrożenia Sprawdź, czy wszystkie elementy zależne muszą być również usunięte.
 
-## <a name="restore-missing-feature-attributes"></a>Przywracanie brakujących atrybutów funkcji
- Podczas importowania rozwiązań, niektóre atrybuty opcjonalna funkcja zostały pominięte w manifeście funkcji zaimportowane. Jeśli chcesz przywrócić te atrybuty w nowym pliku funkcji, identyfikowanie brakujących atrybutów, porównując oryginalnego pliku funkcji do nowego manifestu funkcji i postępuj zgodnie z instrukcjami w temacie [jak: Dostosowywanie funkcji SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md).
+## <a name="restore-missing-feature-attributes"></a>Przywróć brakujące atrybuty funkcji
+ Podczas importowania rozwiązań niektóre opcjonalne atrybuty funkcji są pomijane z zaimportowanego manifestu funkcji. Jeśli chcesz przywrócić te atrybuty w nowym pliku funkcji, Zidentyfikuj brakujące atrybuty, porównując oryginalny plik funkcji z nowym manifestem funkcji i postępuj zgodnie z instrukcjami w temacie [How to: Dostosowywanie funkcji SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md).
 
-## <a name="deployment-conflict-detection-is-not-performed-on-built-in-list-instances"></a>Wykrywanie konfliktów wdrożenia nie jest wykonywana na wbudowane wystąpienia listy
- [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] nie powoduje wykonania wykrywania konfliktów wdrożenia na wbudowane wystąpienia listy (oznacza to, domyślna lista wystąpienia, które pochodzą z programem SharePoint). Aby uniknąć zastąpienia wbudowane wystąpienia listy w programie SharePoint odbywa się nie wykonuje wykrywanie konfliktów. Listy wbudowanych, których wystąpienia są nadal wdrożone zaktualizowane, ale są nigdy nie usunięto lub zastąpione. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Rozwiązywanie problemów z pakowaniem i wdrażaniem SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md).
+## <a name="deployment-conflict-detection-is-not-performed-on-built-in-list-instances"></a>Wykrywanie konfliktów wdrożenia nie jest wykonywane na wbudowanych wystąpieniach list
+ [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] nie wykonuje wykrywania konfliktów wdrożenia dla wbudowanych wystąpień list (czyli domyślnych wystąpień list, które są dostarczane z programem SharePoint). Wykrywanie konfliktów nie jest wykonywane, aby uniknąć zastępowania wbudowanych wystąpień list w programie SharePoint. Wbudowane wystąpienia list są nadal wdrażane lub aktualizowane, ale nigdy nie są usuwane ani zastępowane. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Rozwiązywanie problemów z pakietami i wdrażaniem programu SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md).
 
-## <a name="import-sharepoint-server-2010-workflows"></a>Importowanie przepływów pracy programu SharePoint Server 2010
- Jeśli importujesz przepływ pracy w [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)], nie będzie ona działać poprawnie po wdrożeniu. Przepływ pracy nie działa poprawnie, ponieważ brak jest niektórych zestawów i [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] przepływy pracy zawierają formularze programu InfoPath, które nie są obecnie obsługiwane w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] rozwiązań przepływu pracy. Jednak zaimportować [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] przepływów pracy, może również działać poprawnie po zmianie niektóre elementy, takie jak dodanie odwołania do [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] zestawów i ponowne łączenie formularzy programu InfoPath. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Importowanie przepływów pracy programu SharePoint Server 2010](http://go.microsoft.com/fwlink/?LinkId=182226).
+## <a name="import-sharepoint-server-2010-workflows"></a>Importuj przepływy pracy programu SharePoint Server 2010
+ W przypadku zaimportowania przepływu pracy utworzonego w [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)]nie zostanie on prawidłowo uruchomiony po wdrożeniu. Przepływ pracy nie działa prawidłowo, ponieważ brakuje niektórych zestawów, a przepływy pracy [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] zawierają formularze programu InfoPath, które nie są obecnie obsługiwane w rozwiązaniach przepływów pracy [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Jednak zaimportowane [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] przepływy pracy mogą działać prawidłowo po naprawieniu niektórych elementów, takich jak Dodawanie odwołań do zestawów [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] i ponowne łączenie formularzy programu InfoPath. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [importowania przepływów pracy programu SharePoint Server 2010](/sharepoint/dev/).
 
-## <a name="item-name-character-limit"></a>Limit liczby znaków nazwy elementów
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] obowiązuje limit 260 znaków całkowitą dla projektu i nazw elementów projektu, łącznie ze ścieżką. Podczas importowania rozwiązania, jeśli nazwa elementu przekracza ten limit, zostanie wyświetlony błąd:
+## <a name="item-name-character-limit"></a>Limit znaków nazwy elementu
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ma limit 260 znaków dla nazw elementów projektu i projektu, łącznie z ścieżką. W przypadku importowania rozwiązania, jeśli nazwa elementu przekroczy ten limit, zostanie wyświetlony następujący błąd:
 
- **Określona ścieżka i nazwa pliku jest za długa. W pełni kwalifikowanej nazwy pliku musi być mniejsza niż 260 znaków, a nazwy katalogu musi być mniejsza niż 248 znaków.**
+ **Określona ścieżka, nazwa pliku lub obie są zbyt długie. W pełni kwalifikowana nazwa pliku musi być krótsza niż 260 znaków, a nazwa katalogu musi być krótsza niż 248 znaków.**
 
- Jeśli ten błąd nie zostanie utworzony element. Ten problem występuje w większości przypadków z zaimportowanych modułów. Aby uniknąć tego problemu, wykonaj następujące czynności:
+ Po otrzymaniu tego błędu element nie zostanie utworzony. Ten problem występuje najczęściej w przypadku zaimportowanych modułów. Aby uniknąć tego problemu, wykonaj następujące czynności:
 
-- Użyj krótkich nazw dla projektu, po wprowadzeniu je w **Dodaj nowy projekt** okno dialogowe.
+- Użyj krótkich nazw projektu, gdy wprowadzisz je w oknie dialogowym **Dodaj nowy projekt** .
 
-- Utwórz projekt w lokalizacji co blisko folderu głównego, jak to możliwe, aby skrócić ścieżkę.
+- Utwórz projekt w lokalizacji jak najbliżej folderu głównego, aby skrócić ścieżkę.
 
 ## <a name="the-sharepointproductversion-attribute"></a>Atrybut SharePointProductVersion
- Jeśli importujesz rozwiązania utworzone we wcześniejszej wersji programu SharePoint, takich jak [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)] lub [!INCLUDE[offshare7](../sharepoint/includes/offshare7-md.md)], zmień wartość atrybutu SharePointProductVersion w manifeście pakietu do 12.0 lub wstawić kontrolki Menedżera skryptów do wszystkich importowanych aplikacji sieci Web strony i pozostaw SharePointProductVersion Ustaw 14.0. W przeciwnym razie importowanych formularzy sieci Web nie będą wyświetlane w programie SharePoint.
+ W przypadku zaimportowania rozwiązania utworzonego we wcześniejszej wersji programu SharePoint, takiego jak [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)] lub [!INCLUDE[offshare7](../sharepoint/includes/offshare7-md.md)], należy zmienić wartość atrybutu SharePointProductVersion w manifeście pakietu na 12,0 lub wstawić kontrolkę Menedżer skryptów do wszystkich zaimportowanych stron sieci Web i pozostawić SharePointProductVersion ustawiony na 14,0. W przeciwnym razie zaimportowane formularze sieci Web nie będą wyświetlane w programie SharePoint.
 
 ### <a name="background"></a>Tło
- Rozwiązania w [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] i [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] dołączyć atrybut o nazwie SharePointProductVersion. Program SharePoint używa tego atrybutu w swoich manifestach pakietu można określić wersji rozwiązania jest przeznaczony dla programu SharePoint. Dwa prawidłowe wartości to 12.0 i 14.0. Wartość 12.0 wskazuje, że element jest przeznaczony dla [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)] lub [!INCLUDE[offshare7](../sharepoint/includes/offshare7-md.md)]; wartość 14.0 wskazuje, że element jest przeznaczony dla [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] lub [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)].
+ Rozwiązania w [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] i [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] obejmują atrybut o nazwie SharePointProductVersion. Program SharePoint używa tego atrybutu w manifestach pakietu do określenia wersji programu SharePoint, dla której jest przeznaczone rozwiązanie. Dwie prawidłowe wartości to 12,0 i 14,0. Wartość 12,0 wskazuje, że element jest przeznaczony do [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)] lub [!INCLUDE[offshare7](../sharepoint/includes/offshare7-md.md)]; wartość 14,0 wskazuje, że element jest przeznaczony do [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] lub [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)].
 
- Aby zwiększyć bezpieczeństwo podczas renderowania stron ASPX [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] i [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] wymagają, że wszystkie ASPX lub stron wzorcowych zawierają kontrolki Menedżera skryptów. Aby uzyskać więcej informacji na temat Menedżera skryptów zobacz [— informacje o formancie ScriptManager](http://go.microsoft.com/fwlink/?LinkID=169399). Ponieważ kontrolki Menedżera skryptów nie jest dostępna w [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)] i [!INCLUDE[offshare7](../sharepoint/includes/offshare7-md.md)], jeden z nich muszą zostać dodane do żadnego [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)] lub [!INCLUDE[offshare7](../sharepoint/includes/offshare7-md.md)] strona, która została uaktualniona do [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] lub [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)]. Strony ASPX, które używają standardowych strony wzorcowej nie wymagają kontrolki Menedżera skryptów, ponieważ już jest dodawany do standardowej strony wzorcowej. Jednak stron ASPX, które nie korzystają z strony wzorcowej lub wykorzystujące niestandardową stronę wzorcową należy dodać formant script Aby móc pracować w [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] lub [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)].
+ W celu zwiększenia bezpieczeństwa podczas renderowania stron ASPX [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] i [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] wymagają, aby wszystkie strony ASPX lub wzorcowe zawierały formant Menedżera skryptów. Aby uzyskać więcej informacji na temat Menedżera skryptów, zobacz [kontrolka ScriptManager — Omówienie](/previous-versions/bb398863(v=vs.140)). Ponieważ kontrolka Menedżera skryptów była niedostępna w [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)] i [!INCLUDE[offshare7](../sharepoint/includes/offshare7-md.md)], należy dodać ją do każdej strony [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)] lub [!INCLUDE[offshare7](../sharepoint/includes/offshare7-md.md)] uaktualnionej do [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] lub [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)]. Strony ASPX korzystające ze standardowej strony wzorcowej nie wymagają kontrolki Menedżera skryptów, ponieważ jeden z nich został już dodany do standardowej strony wzorcowej. Jednak strony ASPX, które nie używają strony wzorcowej lub nie używają niestandardowej strony wzorcowej, muszą dodać kontrolkę skryptu, aby działała w [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] lub [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)].
 
- Brak kontrolki Menedżera skryptów może to stanowić problem podczas importowania [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)] lub [!INCLUDE[offshare7](../sharepoint/includes/offshare7-md.md)] projektu do [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)], ponieważ 14.0 ma ustawioną wartość atrybutu SharePointProductVersion wszystkich nowych projektów. W przypadku wdrożenia uaktualniony projekt, który ma formularza sieci Web bez Menedżera skryptów formularza nie będą wyświetlane w programie SharePoint.
+ Brak kontrolki Menedżera skryptów może być problemem podczas importowania [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)] lub [!INCLUDE[offshare7](../sharepoint/includes/offshare7-md.md)] projektu do [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)], ponieważ atrybut SharePointProductVersion wszystkich nowych projektów jest ustawiony na 14,0. W przypadku wdrożenia uaktualnionego projektu, który ma formularz sieci Web bez Menedżera skryptów, formularz nie będzie wyświetlany w programie SharePoint.
 
 ## <a name="see-also"></a>Zobacz także
 - [Przewodnik: Importowanie elementów z istniejącej witryny programu SharePoint](../sharepoint/walkthrough-import-items-from-an-existing-sharepoint-site.md)
-- [Wytyczne dotyczące importowania wielokrotnych przepływów danych](../sharepoint/guidelines-for-importing-reusable-workflows.md)
-- [Przewodnik: Importowanie przepływu pracy wielokrotnego użytku programu SharePoint Designer do Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)
-- [Instrukcje: Dodawanie istniejącego modelu BDC do projektu programu SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)
+- [Wytyczne dotyczące importowania przepływów pracy wielokrotnego użytku](../sharepoint/guidelines-for-importing-reusable-workflows.md)
+- [Przewodnik: Importowanie przepływu pracy wielokrotnego użytku programu SharePoint Designer do programu Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)
+- [Instrukcje: Dodawanie istniejącego pliku modelu BDC do projektu programu SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)

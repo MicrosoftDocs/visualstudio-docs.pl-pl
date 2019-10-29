@@ -1,5 +1,5 @@
 ---
-title: Rozszerzanie usługi językowej do obsługi polecenia EditorConfig
+title: Poszerzenie usługi językowej w celu obsługi EditorConfig
 ms.date: 11/22/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,40 +10,40 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c6974c7943a751f50cafb0b141ba9c1dfc85677
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 663a87ba15121896edcb4c049e7adc6b5c38492a
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353498"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72983107"
 ---
-# <a name="supporting-editorconfig-for-your-language-service"></a>Obsługa wtyczki EditorConfig dla usługi w języka
+# <a name="supporting-editorconfig-for-your-language-service"></a>Obsługa EditorConfig dla usługi językowej
 
-[Polecenie EditorConfig](http://editorconfig.org/) pliki umożliwiają opisano typowe opcje edytora tekstu, takie jak rozmiar wcięcia w poszczególnych projektów. Aby dowiedzieć się więcej na temat obsługi programu Visual Studio dla plików EditorConfig, zobacz [utworzyć ustawienia edytora przenośne przy użyciu pliku EditorConfig](../ide/create-portable-custom-editor-options.md).
+Pliki [EditorConfig](https://editorconfig.org/) umożliwiają opisywanie typowych opcji edytora tekstu, takich jak rozmiar wcięcia dla poszczególnych projektów. Aby dowiedzieć się więcej o obsłudze plików EditorConfig przez program Visual Studio, zobacz [Tworzenie ustawień przenośnego edytora przy użyciu EditorConfig](../ide/create-portable-custom-editor-options.md).
 
-W większości przypadków podczas implementowania usługi języka programu Visual Studio, żadne dodatkowe czynności jest wymagane do obsługi EditorConfig universal właściwości. Podstawowy edytor automatycznie wykrywa i odczytuje plik .editorconfig, gdy użytkownicy otwierają pliki i ustawia odpowiedni tekst w buforze i wyświetlanie opcji. Jednak do edycji, takie jak znaki tabulacji i spacje, niektóre usługi w języka zdecydować się na użycie odpowiedni tekst kontekstowe widoku opcji, a nie przy użyciu ustawień globalnych. W takich przypadkach usługa językowa musi zostać zaktualizowany do obsługi plików EditorConfig.
+W większości przypadków podczas implementowania usługi językowej programu Visual Studio nie trzeba wykonywać żadnych dodatkowych czynności, aby obsługiwać właściwości uniwersalne EditorConfig. Podstawowy edytor automatycznie odnajduje i odczytuje plik. editorconfig, gdy użytkownicy otwierają pliki, i ustawia odpowiednie bufory tekstu i opcje wyświetlania. Jednak w przypadku edycji, takich jak karty i spacje, niektóre usługi językowe pomogą korzystać z odpowiedniej opcji widoku tekstu kontekstowego zamiast używać ustawień globalnych. W takich przypadkach należy zaktualizować usługę języka, aby obsługiwała pliki EditorConfig.
 
-Poniżej przedstawiono zmiany, które są niezbędne do aktualizowania usługi język do obsługi plików EditorConfig, zastępując globalną _specyficzny dla języka_ z opcją _kontekstowych_ opcji:
+Poniżej przedstawiono zmiany, które są konieczne do zaktualizowania usługi językowej w celu obsługi plików EditorConfig, zastępując globalną opcję _specyficzną dla języka_ z opcją _kontekstową_ :
 
 ## <a name="indent-style"></a>Styl wcięcia
 
-Opcje specyficzne dla języka | Opcje kontekstowych
+Opcje specyficzne dla języka | Opcje kontekstowe
 -------|--------
-Microsoft.VisualStudio.TextManager.Interop.LANGPREFERENCES.fInsertTabs<br/>Microsoft.VisualStudio.Package.LanguagePreferences.InsertTabs|!textBufferOptions.GetOptionValue(DefaultOptions.ConvertTabsToSpacesOptionId)<br/>!textView.Options.GetOptionValue(DefaultOptions.ConvertTabsToSpacesOptionId)
+Microsoft. VisualStudio. TextManager. Interop. LANGPREFERENCES. fInsertTabs<br/>Microsoft. VisualStudio. Package. LanguagePreferences. InsertTabs|! textBufferOptions. GetOption (DefaultOptions. ConvertTabsToSpacesOptionId)<br/>! textView. options. GetOption (DefaultOptions. ConvertTabsToSpacesOptionId)
 
-## <a name="indent-size"></a>Wcięcie
+## <a name="indent-size"></a>Wcięcie rozmiaru
 
-Opcje specyficzne dla języka | Opcje kontekstowych
+Opcje specyficzne dla języka | Opcje kontekstowe
 -------|--------
-Microsoft.VisualStudio.TextManager.Interop.LANGPREFERENCES.uIndentSize<br/>Microsoft.VisualStudio.Package.LanguagePreferences.InsertTabs.IndentSize|textBufferOptions.GetOptionValue(DefaultOptions.IndentSizeOptionId)<br/>textView.Options.GetOptionValue(DefaultOptions.IndentSizeOptionId)
+Microsoft. VisualStudio. TextManager. Interop. LANGPREFERENCES. uIndentSize<br/>Microsoft. VisualStudio. Package. LanguagePreferences. InsertTabs. IndentSize|textBufferOptions. GetOption (DefaultOptions. IndentSizeOptionId)<br/>textView. options. GetOption (DefaultOptions. IndentSizeOptionId)
 
-## <a name="tab-size"></a>Rozmiar tabulatora
+## <a name="tab-size"></a>Rozmiar karty
 
-Opcje specyficzne dla języka | Opcje kontekstowych
+Opcje specyficzne dla języka | Opcje kontekstowe
 -------|--------
-Microsoft.VisualStudio.TextManager.Interop.LANGPREFERENCES.uTabSize<br/>Microsoft.VisualStudio.Package.LanguagePreferences.InsertTabs.TabSize|textBufferOptions.GetOptionValue(DefaultOptions.TabSizeOptionId)<br/>textView.Options.GetOptionValue(DefaultOptions.TabSizeOptionId)
+Microsoft. VisualStudio. TextManager. Interop. LANGPREFERENCES. uTabSize<br/>Microsoft. VisualStudio. Package. LanguagePreferences. InsertTabs. TabSize|textBufferOptions. GetOption (DefaultOptions. TabSizeOptionId)<br/>textView. options. GetOption (DefaultOptions. TabSizeOptionId)
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Utwórz ustawienia edytora przenośne przy użyciu pliku EditorConfig](../ide/create-portable-custom-editor-options.md)
-- [Rozszerzanie usług edytora i języka](../extensibility/extending-the-editor-and-language-services.md)
+- [Tworzenie ustawień edytora przenośnego za pomocą EditorConfig](../ide/create-portable-custom-editor-options.md)
+- [Rozszerzanie edytora i usług językowych](../extensibility/extending-the-editor-and-language-services.md)

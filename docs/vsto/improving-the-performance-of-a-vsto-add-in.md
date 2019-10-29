@@ -10,12 +10,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 79f1c4a55321a1b039cc2702b1040e2ab9d4ac9d
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 564672e01eeffbdcb53bf1af08f329d2f6bf218f
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255642"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985777"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>Poprawianie wydajności dodatku VSTO
   Możesz dać użytkownikom lepszy komfort, optymalizując dodatki narzędzi VSTO tworzone dla aplikacji pakietu Office, aby szybko uruchamiać, zamykać, otwierać elementy i wykonywać inne zadania. Jeśli dodatek VSTO jest przeznaczony dla programu Outlook, można również zmniejszyć prawdopodobieństwo wyłączenia dodatku VSTO z powodu niskiej wydajności. Możesz zwiększyć wydajność dodatku VSTO, implementując następujące strategie:
@@ -28,7 +28,7 @@ ms.locfileid: "71255642"
 
 - [Wykonywanie kosztownych operacji w osobnym wątku wykonania](#Perform).
 
-  Aby uzyskać więcej informacji na temat optymalizowania dodatku VSTO dla programu Outlook, zobacz [kryteria wydajności, które umożliwiają włączenie dodatków VSTO](http://go.microsoft.com/fwlink/?LinkID=266503).
+  Aby uzyskać więcej informacji na temat optymalizowania dodatku VSTO dla programu Outlook, zobacz [kryteria wydajności, które umożliwiają włączenie dodatków VSTO](/previous-versions/office/jj228679(v=office.15)#ol15WhatsNew_AddinDisabling).
 
 ## <a name="Load"></a>Załaduj Dodatki VSTO na żądanie
  Dodatek VSTO można skonfigurować do załadowania tylko w następujących okolicznościach:
@@ -43,7 +43,7 @@ ms.locfileid: "71255642"
 
 1. W **Eksplorator rozwiązań**wybierz węzeł projektu.
 
-2. Na pasku menu wybierz **widoku** > **stron właściwości**.
+2. Na pasku menu wybierz pozycję **wyświetl**  > **strony właściwości**.
 
 3. Na karcie **Publikowanie** wybierz przycisk **Opcje** .
 
@@ -51,13 +51,13 @@ ms.locfileid: "71255642"
 
 ### <a name="to-configure-a-windows-installer-solution-to-load-vsto-add-ins-on-demand"></a>Aby skonfigurować Instalator Windows rozwiązanie do ładowania dodatków VSTO na żądanie
 
-1. W rejestrze `LoadBehavior` Ustaw klucz **_identyfikatora dodatku_ _głównego_\\\Software\Microsoft\Office_ApplicationName_\Addins\\** na **0x10**.
+1. W rejestrze ustaw wpis `LoadBehavior` **_głównego_\Software\Microsoft\Office\\_ApplicationName_\Addins\\_Identyfikator dodatku_** na **0x10**.
 
      Aby uzyskać więcej informacji, zobacz [wpisy rejestru dotyczące dodatków narzędzi VSTO](../vsto/registry-entries-for-vsto-add-ins.md).
 
 ### <a name="to-configure-a-solution-to-load-vsto-add-ins-on-demand-while-you-debug-the-solution"></a>Aby skonfigurować rozwiązanie do ładowania dodatków VSTO na żądanie podczas debugowania rozwiązania
 
-1. `LoadBehavior` Utwórz skrypt ustawiający wpis  **_głównego_klucza\\_identyfikatora dodatku_ \Software\Microsoft\Office_ApplicationName_\Addins\\** na **0x10**.
+1. Utwórz skrypt ustawiający wpis `LoadBehavior` **_głównego_\Software\Microsoft\Office\\_ApplicationName_\Addins\\_Identyfikator dodatku_** na **0x10**.
 
      Poniższy kod przedstawia przykład tego skryptu.
 
@@ -79,9 +79,9 @@ ms.locfileid: "71255642"
 
     ```
 
-     Aby uzyskać informacje na temat sposobu tworzenia zdarzenia po kompilacji w C# projekcie, zobacz [How to: Określ &#40;zdarzenia kompilacji C&#35;&#41;](../ide/how-to-specify-build-events-csharp.md).
+     Aby uzyskać informacje o sposobach tworzenia zdarzenia po kompilacji w C# projekcie, zobacz [How to: debuild Events &#40;C&#35;](../ide/how-to-specify-build-events-csharp.md).
 
-     Aby uzyskać informacje na temat sposobu tworzenia zdarzenia po kompilacji w projekcie Visual Basic, zobacz [How to: Określ &#40;&#41;VisualBasic](../ide/how-to-specify-build-events-visual-basic.md)zdarzeń kompilacji.
+     Aby uzyskać informacje na temat sposobu tworzenia zdarzenia po kompilacji w projekcie Visual Basic, zobacz [How to: Określanie &#40;zdarzeń kompilacji Visual Basic&#41;](../ide/how-to-specify-build-events-visual-basic.md).
 
 ## <a name="Publish"></a>Publikowanie rozwiązań pakietu Office przy użyciu Instalator Windows
  W przypadku publikowania rozwiązania przy użyciu Instalator Windows narzędzia programu Visual Studio 2010 Tools for Office Runtime pomijają następujące kroki podczas ładowania dodatku VSTO.
@@ -98,9 +98,9 @@ ms.locfileid: "71255642"
   Aby uzyskać więcej informacji, zobacz [wdrażanie rozwiązania biurowego przy użyciu Instalator Windows](../vsto/deploying-an-office-solution-by-using-windows-installer.md).
 
 ## <a name="Bypass"></a>Obejście odbicia wstążki
- W przypadku tworzenia rozwiązania przy użyciu [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]programu upewnij się, że użytkownicy zainstalowali najnowszą wersję środowiska uruchomieniowego Visual Studio 2010 Tools for Office podczas wdrażania rozwiązania. Starsze wersje środowiska uruchomieniowego programu VSTO odzwierciedlone w zestawach rozwiązań w celu zlokalizowania dostosowań Wstążki. Ten proces może spowodować spowolnienie ładowania dodatku VSTO.
+ W przypadku tworzenia rozwiązania przy użyciu [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]upewnij się, że użytkownicy zainstalowali najnowszą wersję środowiska uruchomieniowego Visual Studio 2010 Tools for Office podczas wdrażania rozwiązania. Starsze wersje środowiska uruchomieniowego programu VSTO odzwierciedlone w zestawach rozwiązań w celu zlokalizowania dostosowań Wstążki. Ten proces może spowodować spowolnienie ładowania dodatku VSTO.
 
- Alternatywnie można zapobiec używaniu odbicia dla wszystkich wersji narzędzi Visual Studio 2010 Tools for Office Runtime do identyfikowania dostosowań Wstążki. Aby postępować zgodnie z tą strategią, Zastąp `CreateRibbonExtensibility` metodę i jawnie Zwróć obiekty wstążki. Jeśli dodatek VSTO nie zawiera żadnych dostosowań wstążki, Wróć `null` wewnątrz metody.
+ Alternatywnie można zapobiec używaniu odbicia dla wszystkich wersji narzędzi Visual Studio 2010 Tools for Office Runtime do identyfikowania dostosowań Wstążki. Aby postępować zgodnie z tą strategią, Zastąp metodę `CreateRibbonExtensibility` i jawnie Zwróć obiekty wstążki. Jeśli dodatek VSTO nie zawiera żadnych dostosowań wstążki, zwróć `null` wewnątrz metody.
 
  Poniższy przykład zwraca obiekt wstążki na podstawie wartości pola.
 

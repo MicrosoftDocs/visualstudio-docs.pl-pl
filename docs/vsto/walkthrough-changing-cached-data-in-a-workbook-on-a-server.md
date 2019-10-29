@@ -1,5 +1,5 @@
 ---
-title: 'Przewodnik: Zmiana danych z pamięci podręcznej w skoroszycie na serwerze'
+title: 'Przewodnik: zmiana danych buforowanych w skoroszycie na serwerze'
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -16,15 +16,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 06fb2532a128384369a9f3617166c9f340f21030
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: a88fef7afe198dd15716570b1875ea257d19be8b
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551338"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985520"
 ---
-# <a name="walkthrough-change-cached-data-in-a-workbook-on-a-server"></a>Przewodnik: Zmiana danych z pamięci podręcznej w skoroszycie na serwerze
-  W tym instruktażu przedstawiono sposób modyfikowania zestawu danych, który jest buforowany w Microsoft Office skoroszycie programu Excel bez uruchamiania programu Excel <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> przy użyciu klasy.
+# <a name="walkthrough-change-cached-data-in-a-workbook-on-a-server"></a>Przewodnik: zmiana danych buforowanych w skoroszycie na serwerze
+  W tym instruktażu przedstawiono sposób modyfikowania zestawu danych, który jest buforowany w Microsoft Office skoroszycie programu Excel bez uruchamiania programu Excel przy użyciu klasy <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>.
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
@@ -36,7 +36,7 @@ ms.locfileid: "69551338"
 
 - Tworzenie wystąpień zestawu danych w projekcie skoroszytu programu Excel i projekcie aplikacji konsolowej.
 
-- Utworzenie elementu <xref:Microsoft.Office.Tools.Excel.ListObject> , który jest powiązany z zestawem danych w skoroszycie, i <xref:Microsoft.Office.Tools.Excel.ListObject> wypełnienie danych przy otwartym skoroszycie.
+- Tworzenie <xref:Microsoft.Office.Tools.Excel.ListObject>, która jest powiązana z zestawem danych w skoroszycie, i wypełnianie <xref:Microsoft.Office.Tools.Excel.ListObject> danymi po otwarciu skoroszytu.
 
 - Dodawanie zestawu danych w skoroszycie do pamięci podręcznej danych.
 
@@ -52,13 +52,13 @@ ms.locfileid: "69551338"
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
-- [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
+- [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].,
 
-- Dostęp do uruchomionego wystąpienia Microsoft SQL Server lub Microsoft SQL Server Express z dołączoną przykładową bazą danych AdventureWorksLT. Bazę danych AdventureWorksLT można pobrać z [witryny sieci Web CodePlex](http://go.microsoft.com/fwlink/?linkid=87843). Aby uzyskać więcej informacji na temat dołączania bazy danych, zobacz następujące tematy:
+- Dostęp do uruchomionego wystąpienia Microsoft SQL Server lub Microsoft SQL Server Express z dołączoną przykładową bazą danych AdventureWorksLT. Bazę danych AdventureWorksLT można pobrać z [repozytorium SQL Server](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks)w witrynie GitHub. Aby uzyskać więcej informacji na temat dołączania bazy danych, zobacz następujące tematy:
 
-  - Aby dołączyć bazę danych za pomocą SQL Server Management Studio lub SQL Server Management Studio Express, zobacz [How to: Dołącz bazę danych (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
+  - Aby dołączyć bazę danych za pomocą SQL Server Management Studio lub SQL Server Management Studio Express, zobacz [How to: dołączanie bazy danych (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
 
-  - Aby dołączyć bazę danych za pomocą wiersza polecenia, zobacz [How to: Dołącz plik bazy danych do SQL Server Express](/previous-versions/sql/).
+  - Aby dołączyć bazę danych za pomocą wiersza polecenia, zobacz [How to: Dołączanie pliku bazy danych do SQL Server Express](/previous-versions/sql/).
 
 ## <a name="create-a-class-library-project-that-defines-a-dataset"></a>Utwórz projekt biblioteki klas, który definiuje zestaw danych
  Aby użyć tego samego zestawu danych w projekcie skoroszytu programu Excel i aplikacji konsolowej, należy zdefiniować zestaw danych w osobnym zestawie, do którego odwołuje się oba te projekty. W tym instruktażu Zdefiniuj zestaw danych w projekcie biblioteki klas.
@@ -81,7 +81,7 @@ ms.locfileid: "69551338"
 
 8. Kliknij przycisk **OK**.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]dodaje projekt **AdventureWorksDataSet** do **Eksplorator rozwiązań** i otwiera plik kodu **Class1.cs** lub **Class1. vb** .
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje projekt **AdventureWorksDataSet** do **Eksplorator rozwiązań** i otwiera plik kodu **Class1.cs** lub **Class1. vb** .
 
 9. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **Class1.cs** lub **Class1. vb**, a następnie kliknij polecenie **Usuń**. Ten plik nie jest potrzebny do tego przewodnika.
 
@@ -94,7 +94,7 @@ ms.locfileid: "69551338"
 
 1. W **Eksplorator rozwiązań**kliknij projekt **AdventureWorksDataSet** .
 
-2. Jeśli okno **źródła danych** nie jest widoczne, Wyświetl je na pasku menu, wybierając opcję **Wyświetl** > inne**źródła danych** **systemu Windows** > .
+2. Jeśli okno **źródła danych** nie jest widoczne, Wyświetl je przez, na pasku menu, wybierając opcję **Wyświetl** > inne **źródła danych** > **systemu Windows** .
 
 3. Wybierz pozycję **Dodaj nowe źródło danych** , aby uruchomić **Kreatora konfiguracji źródła danych**.
 
@@ -112,7 +112,7 @@ ms.locfileid: "69551338"
 
     Plik *AdventureWorksLTDataSet. xsd* zostanie dodany do projektu **AdventureWorksDataSet** . Ten plik definiuje następujące elementy:
 
-   - Określony zestaw danych o `AdventureWorksLTDataSet`nazwie. Ten zestaw danych reprezentuje zawartość tabeli Product w bazie danych AdventureWorksLT.
+   - Typ zestawu danych o nazwie `AdventureWorksLTDataSet`. Ten zestaw danych reprezentuje zawartość tabeli Product w bazie danych AdventureWorksLT.
 
    - TableAdapter o nazwie `ProductTableAdapter`. Ten TableAdapter może służyć do odczytywania i zapisywania danych w `AdventureWorksLTDataSet`. Aby uzyskać więcej informacji, zobacz [TableAdapter Overview (przegląd](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)).
 
@@ -123,7 +123,7 @@ ms.locfileid: "69551338"
      Upewnij się, że projekt kompiluje się bez błędów.
 
 ## <a name="create-an-excel-workbook-project"></a>Utwórz projekt skoroszytu programu Excel
- Utwórz projekt skoroszytu programu Excel dla interfejsu dla danych. W dalszej części tego instruktażu utworzysz, <xref:Microsoft.Office.Tools.Excel.ListObject> że zostaną wyświetlone dane, i dodasz wystąpienie zestawu danych do pamięci podręcznej danych w skoroszycie.
+ Utwórz projekt skoroszytu programu Excel dla interfejsu dla danych. W dalszej części tego przewodnika utworzysz <xref:Microsoft.Office.Tools.Excel.ListObject>, który wyświetla dane, i dodasz wystąpienie zestawu danych do pamięci podręcznej danych w skoroszycie.
 
 ### <a name="to-create-the-excel-workbook-project"></a>Aby utworzyć projekt skoroszytu programu Excel
 
@@ -143,7 +143,7 @@ ms.locfileid: "69551338"
 
 7. Upewnij się, że jest zaznaczona **wartość Utwórz nowy dokument** , a następnie kliknij przycisk **OK**.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]otwiera skoroszyt **AdventureWorksReport** w Projektancie i dodaje projekt **AdventureWorksReport** do **Eksplorator rozwiązań**.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] otwiera skoroszyt **AdventureWorksReport** w Projektancie i dodaje projekt **AdventureWorksReport** do **Eksplorator rozwiązań**.
 
 ## <a name="add-the-dataset-to-data-sources-in-the-excel-workbook-project"></a>Dodawanie zestawu danych do źródeł danych w projekcie skoroszytu programu Excel
  Zanim będzie można wyświetlić zestaw danych w skoroszycie programu Excel, musisz najpierw dodać zestaw danych do źródeł danych w projekcie skoroszytu programu Excel.
@@ -169,28 +169,28 @@ ms.locfileid: "69551338"
      Zostanie otwarte okno **źródła danych** , a do listy źródeł danych zostanie dodany **AdventureWorksLTDataSet** .
 
 ## <a name="create-a-listobject-that-is-bound-to-an-instance-of-the-dataset"></a>Utwórz listę obiektów, która jest powiązana z wystąpieniem zestawu danych
- Aby wyświetlić zestaw danych w skoroszycie, Utwórz obiekt <xref:Microsoft.Office.Tools.Excel.ListObject> , który jest powiązany z wystąpieniem zestawu danych. Aby uzyskać więcej informacji o kontrolkach powiązań z danymi, zobacz temat [Powiązywanie danych z kontrolkami w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md).
+ Aby wyświetlić zestaw danych w skoroszycie, Utwórz <xref:Microsoft.Office.Tools.Excel.ListObject>, który jest powiązany z wystąpieniem zestawu danych. Aby uzyskać więcej informacji o kontrolkach powiązań z danymi, zobacz temat [Powiązywanie danych z kontrolkami w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md).
 
 ### <a name="to-create-a-listobject-that-is-bound-to-an-instance-of-the-dataset"></a>Aby utworzyć listę obiektów, która jest powiązana z wystąpieniem zestawu danych
 
 1. W oknie **źródła danych** rozwiń węzeł **AdventureWorksLTDataSet** w obszarze **AdventureWorksDataSet**.
 
-2. Wybierz węzeł **produkt** , kliknij strzałkę listy rozwijanej, która zostanie wyświetlona, a następnie wybierz pozycję listaobject na liście rozwijanej.
+2. Wybierz węzeł **produkt** , kliknij strzałkę listy rozwijanej, która zostanie wyświetlona, a następnie wybierz pozycję **listaobject** na liście rozwijanej.
 
      Jeśli strzałka listy rozwijanej nie zostanie wyświetlona, upewnij się, że skoroszyt jest otwarty w projektancie.
 
 3. Przeciągnij tabelę **produktów** do komórki a1.
 
-     Kontrolka o `productListObject` nazwie jest tworzona w arkuszu, rozpoczynając od komórki a1. <xref:Microsoft.Office.Tools.Excel.ListObject> W tym samym czasie obiekt zestawu danych o nazwie `adventureWorksLTDataSet` <xref:System.Windows.Forms.BindingSource> i nazwie `productBindingSource` zostanie dodany do projektu. <xref:Microsoft.Office.Tools.Excel.ListObject> Jest powiązany<xref:System.Windows.Forms.BindingSource>z, który z kolei jest powiązany z obiektem DataSet.
+     Kontrolka <xref:Microsoft.Office.Tools.Excel.ListObject> o nazwie `productListObject` jest tworzona w arkuszu, rozpoczynając od komórki a1. W tym samym czasie obiekt zestawu danych o nazwie `adventureWorksLTDataSet` i <xref:System.Windows.Forms.BindingSource> o nazwie `productBindingSource` są dodawane do projektu. <xref:Microsoft.Office.Tools.Excel.ListObject> jest powiązany z <xref:System.Windows.Forms.BindingSource>, co z kolei jest powiązane z obiektem DataSet.
 
 ## <a name="add-the-dataset-to-the-data-cache"></a>Dodawanie zestawu danych do pamięci podręcznej danych
- Aby włączyć kod poza projektem skoroszytu programu Excel w celu uzyskania dostępu do zestawu danych w skoroszycie, należy dodać zestaw danych do pamięci podręcznej danych. Aby uzyskać więcej informacji o pamięci podręcznej danych, zobacz [buforowane dane w obszarze dostosowania na poziomie dokumentu](../vsto/cached-data-in-document-level-customizations.md) i [dane pamięci](../vsto/caching-data.md)podręcznej.
+ Aby włączyć kod poza projektem skoroszytu programu Excel w celu uzyskania dostępu do zestawu danych w skoroszycie, należy dodać zestaw danych do pamięci podręcznej danych. Aby uzyskać więcej informacji o pamięci podręcznej danych, zobacz [buforowane dane w obszarze dostosowania na poziomie dokumentu](../vsto/cached-data-in-document-level-customizations.md) i [dane pamięci podręcznej](../vsto/caching-data.md).
 
 ### <a name="to-add-the-dataset-to-the-data-cache"></a>Aby dodać zestaw danych do pamięci podręcznej danych
 
 1. W projektancie kliknij pozycję **AdventureWorksLTDataSet**.
 
-2. W oknie **Właściwości** ustaw właściwość Modyfikatory na **Public**.
+2. W oknie **Właściwości** ustaw właściwość **Modyfikatory** na **Public**.
 
 3. Ustaw właściwość **CacheInDocument** na **wartość true**.
 
@@ -201,12 +201,12 @@ ms.locfileid: "69551338"
 
 1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy plik **Sheet1.cs** lub **Arkusz1. vb** , a następnie kliknij polecenie **Wyświetl kod**.
 
-2. Zastąp procedurę obsługi zdarzeń poniższym kodem. `Sheet1_Startup` Ten kod używa instancji `ProductTableAdapter` klasy, która jest zdefiniowana w projekcie **AdventureWorksDataSet** , aby wypełnić buforowany zestaw danych danymi, jeśli jest to obecnie puste.
+2. Zastąp procedurę obsługi zdarzeń `Sheet1_Startup` poniższym kodem. Ten kod używa instancji klasy `ProductTableAdapter`, która jest zdefiniowana w projekcie **AdventureWorksDataSet** , aby wypełnić buforowany zestaw danych danymi, jeśli jest ona obecnie pusta.
 
      [!code-csharp[Trin_CachedDataWalkthroughs#8](../vsto/codesnippet/CSharp/AdventureWorksDataSet/AdventureWorksReport/Sheet1.cs#8)]
      [!code-vb[Trin_CachedDataWalkthroughs#8](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/AdventureWorksReport/Sheet1.vb#8)]
 
-## <a name="checkpoint"></a>Punkt kontrolny
+## <a name="checkpoint"></a>Elementu
  Kompiluj i uruchamiaj projekt skoroszytu programu Excel, aby upewnić się, że kompiluje i uruchamia się bez błędów. Ta operacja wypełnia również buforowany zestaw danych i zapisuje dane w skoroszycie.
 
 ### <a name="to-build-and-run-the-project"></a>Aby skompilować i uruchomić projekt
@@ -215,9 +215,9 @@ ms.locfileid: "69551338"
 
      Projekt został skompilowany, a skoroszyt zostanie otwarty w programie Excel. Sprawdź następujące kwestie:
 
-    - <xref:Microsoft.Office.Tools.Excel.ListObject> Wypełnienia danymi.
+    - <xref:Microsoft.Office.Tools.Excel.ListObject> wypełnia dane.
 
-    - Wartość w kolumnie **ListPrice** pierwszego wiersza elementu <xref:Microsoft.Office.Tools.Excel.ListObject> to 1431,5. W dalszej części tego instruktażu będziesz używać aplikacji konsolowej do modyfikowania wartości w kolumnie **ListPrice** .
+    - Wartość w kolumnie **ListPrice** pierwszego wiersza <xref:Microsoft.Office.Tools.Excel.ListObject> to 1431,5. W dalszej części tego instruktażu będziesz używać aplikacji konsolowej do modyfikowania wartości w kolumnie **ListPrice** .
 
 2. Zapisz skoroszyt. Nie należy modyfikować nazwy pliku ani lokalizacji skoroszytu.
 
@@ -234,24 +234,24 @@ ms.locfileid: "69551338"
 
 3. W okienku **Szablony** wybierz pozycję **Aplikacja konsolowa**.
 
-4. W polu **Nazwa** wpisz datawriteer. Nie należy modyfikować lokalizacji.
+4. W polu **Nazwa** wpisz **datawriteer**. Nie należy modyfikować lokalizacji.
 
 5. Kliknij przycisk **OK**.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]dodaje projekt **datawrite** do **Eksplorator rozwiązań** i otwiera plik kodu **program.cs** lub **Module1. vb** .
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje projekt **datawrite** do **Eksplorator rozwiązań** i otwiera plik kodu **program.cs** lub **Module1. vb** .
 
 ## <a name="change-data-in-the-cached-dataset-by-using-the-console-application"></a>Zmień dane w buforowanym zestawie danych przy użyciu aplikacji konsolowej
- Użyj klasy w aplikacji konsolowej, aby odczytać dane w obiekcie lokalnym `AdventureWorksLTDataSet` , zmodyfikować te dane, a następnie zapisać je z powrotem do buforowanego zestawu danych. <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>
+ Użyj klasy <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> w aplikacji konsolowej, aby odczytać dane w lokalnym obiekcie `AdventureWorksLTDataSet`, zmodyfikować te dane, a następnie zapisać je z powrotem do buforowanego zestawu danych.
 
 ### <a name="to-change-data-in-the-cached-dataset"></a>Aby zmienić dane w buforowanym zestawie danych
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt datawrite i kliknij polecenie **Dodaj odwołanie**.
+1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt **datawrite** i kliknij polecenie **Dodaj odwołanie**.
 
 2. Na karcie **.NET** wybierz pozycję **Microsoft. VisualStudio. Tools. Applications**.
 
 3. Kliknij przycisk **OK**.
 
-4. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt datawrite i kliknij polecenie **Dodaj odwołanie**.
+4. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt **datawrite** i kliknij polecenie **Dodaj odwołanie**.
 
 5. Na karcie **projekty** wybierz pozycję **AdventureWorksDataSet**, a następnie kliknij przycisk **OK**.
 
@@ -262,13 +262,13 @@ ms.locfileid: "69551338"
     [!code-csharp[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#1)]
     [!code-vb[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#1)]
 
-8. Dodaj następujący kod do `Main` metody. Ten kod deklaruje następujące obiekty:
+8. Dodaj następujący kod do metody `Main`. Ten kod deklaruje następujące obiekty:
 
-   - Wystąpienie `AdventureWorksLTDataSet` typu, który jest zdefiniowany w projekcie **AdventureWorksDataSet** .
+   - Wystąpienie typu `AdventureWorksLTDataSet`, które jest zdefiniowane w projekcie **AdventureWorksDataSet** .
 
    - Ścieżka do skoroszytu AdventureWorksReport w folderze Build projektu **AdventureWorksReport** .
 
-   - <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> Obiekt, który ma być używany do uzyskiwania dostępu do pamięci podręcznej danych w skoroszycie.
+   - Obiekt <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>, który ma być używany do uzyskiwania dostępu do pamięci podręcznej danych w skoroszycie.
 
      > [!NOTE]
      > Poniższy kod założono, że używasz skoroszytu o rozszerzeniu *. xlsx* . Jeśli skoroszyt w projekcie ma inne rozszerzenie pliku, w razie potrzeby zmodyfikuj ścieżkę.
@@ -276,9 +276,9 @@ ms.locfileid: "69551338"
      [!code-csharp[Trin_CachedDataWalkthroughs#6](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#6)]
      [!code-vb[Trin_CachedDataWalkthroughs#6](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#6)]
 
-9. Dodaj następujący kod do `Main` metody po kodzie dodanym w poprzednim kroku. Kod będzie wykonywał następujące zadania:
+9. Dodaj następujący kod do metody `Main` po kodzie dodanym w poprzednim kroku. Kod będzie wykonywał następujące zadania:
 
-   - Używa <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> właściwości<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> klasy w celu uzyskania dostępu do buforowanego zestawu danych w skoroszycie.
+   - Używa właściwości <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> klasy <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>, aby uzyskać dostęp do buforowanego zestawu danych w skoroszycie.
 
    - Odczytuje dane z buforowanego zestawu danych do lokalnego zestawu danych.
 
@@ -289,12 +289,12 @@ ms.locfileid: "69551338"
      [!code-csharp[Trin_CachedDataWalkthroughs#7](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#7)]
      [!code-vb[Trin_CachedDataWalkthroughs#7](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#7)]
 
-10. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt datawrite, wskaż polecenie **Debuguj**, a następnie kliknij polecenie **Uruchom nowe wystąpienie**.
+10. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt **datawrite** , wskaż polecenie **Debuguj**, a następnie kliknij polecenie **Uruchom nowe wystąpienie**.
 
      Aplikacja konsolowa wyświetla komunikaty, podczas gdy odczytuje buforowany zestaw danych do lokalnego zestawu danych, modyfikuje ceny produktu w lokalnym zestawie danych i zapisuje nowe wartości do buforowanego zestawu danych. Naciśnij klawisz **Enter** , aby zamknąć aplikację.
 
 ## <a name="test-the-workbook"></a>Testowanie skoroszytu
- Po otwarciu skoroszytu <xref:Microsoft.Office.Tools.Excel.ListObject> zostaną wyświetlone zmiany wprowadzone `ListPrice` w kolumnie danych w buforowanym zestawie danych.
+ Po otwarciu skoroszytu <xref:Microsoft.Office.Tools.Excel.ListObject> teraz zostaną wyświetlone zmiany wprowadzone w kolumnie `ListPrice` danych w buforowanym zestawie danych.
 
 ### <a name="to-test-the-workbook"></a>Aby przetestować skoroszyt
 
@@ -306,7 +306,7 @@ ms.locfileid: "69551338"
 
     - *%USERPROFILE%\Documents\AdventureWorksReport\bin\Debug* (dla systemu Windows Vista)
 
-3. Upewnij się, że wartość w kolumnie **ListPrice** pierwszego wiersza <xref:Microsoft.Office.Tools.Excel.ListObject> jest teraz równa 1574,65.
+3. Sprawdź, czy wartość w kolumnie **ListPrice** pierwszego wiersza <xref:Microsoft.Office.Tools.Excel.ListObject> to teraz 1574,65.
 
 4. Zamknij skoroszyt.
 

@@ -1,5 +1,5 @@
 ---
-title: Interfejs IWebAppDiagnosticsSetup | Dokumentacja firmy Microsoft
+title: Interfejs IWebAppDiagnosticsSetup | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,23 +13,23 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 71d4501fff04b62abe392c6684a4a0551dea9ee8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1e9bb3905da6227b978bc27b96493500f8d6d2ff
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443667"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984538"
 ---
 # <a name="iwebappdiagnosticssetup-interface"></a>Interfejs IWebAppDiagnosticsSetup
-Ten interfejs jest implementowany przez program PDM w debugowaniu aplikacji w języku do tworzenia obiektów COM w procesie, który jest debugowany i włączanie diagnostyki sieci web. Jeśli program PDM debugowania aplikacji obiekt implementuje [IObjectWithSite](http://go.microsoft.com/fwlink/?LinkId=232438), wymaga programu Internet Explorer [setsite —](http://go.microsoft.com/fwlink/?LinkId=232439) go po jego utworzeniu i przebiegów w odwołaniu do [IWebBrowser2](http://go.microsoft.com/fwlink/?LinkId=232449). Aplikacja WWA wywołuje [setsite —](http://go.microsoft.com/fwlink/?LinkId=232439) i przebiegów w WWA interfejsu IWebApplicationHost zamiast tego. Jeśli [setsite —](http://go.microsoft.com/fwlink/?LinkId=232439) została wywołana z wartością NIEZEROWĄ [IWebAppDiagnosticsSetup::DiagnosticsSupported](../../winscript/reference/iwebappdiagnosticssetup-diagnosticssupported.md) zwraca wartość true. Jeśli nie, zwraca wartość false i wywołania [IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md) się nie powieść.  
+Ten interfejs jest implementowany przez aplikację debugowania PDM do tworzenia obiektów COM w debugowanym procesie i w celu włączenia diagnostyki sieci Web. Jeśli obiekt aplikacji PDM Debug implementuje [IObjectWithSite](/windows/win32/api/ocidl/nn-ocidl-iobjectwithsite), program Internet Explorer wywołuje [ją w programie](/windows/win32/api/ocidl/nf-ocidl-iobjectwithsite-setsite) , po utworzeniu i przekazuje odwołanie do [IWebBrowser2](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752127(v=vs.85)). Aplikacja WWA wywołuje metodę [SetSite](/windows/win32/api/ocidl/nf-ocidl-iobjectwithsite-setsite) i przekazuje w IWebApplicationHost interfejsie WWA. Jeśli funkcja [SetSite](/windows/win32/api/ocidl/nf-ocidl-iobjectwithsite-setsite) została wywołana o wartości innej niż null, [IWebAppDiagnosticsSetup::D iagnosticssupported](../../winscript/reference/iwebappdiagnosticssetup-diagnosticssupported.md) zwraca wartość true. Jeśli nie, zwraca wartość false, a wywołania [IWebAppDiagnosticsSetup:: CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md) kończą się niepowodzeniem.  
   
 > [!IMPORTANT]
-> `IWebAppDiagnosticsSetup` jest implementowany przez program PDM w wersji 11.0 i nowszych. Znajduje się w zestawie activdbg100.h.  
+> `IWebAppDiagnosticsSetup` jest implementowana przez PDM v 11.0 i nowsze. Znajduje się w zestawie activdbg100.h.  
   
 ## <a name="methods"></a>Metody  
- Ten interfejs udostępnia następujące metody.  
+ Ten interfejs uwidacznia następujące metody.  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md)|Pobiera dokumenty tekstowe, ukryte przez określony filtr.|  
+|[IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md)|Pobiera dokumenty tekstowe, które są ukryte przez określony filtr.|  
 |[IWebAppDiagnosticsSetup::DiagnosticsSupported](../../winscript/reference/iwebappdiagnosticssetup-diagnosticssupported.md)|Określa, czy określony dokument należy do jednego z węzłów podrzędnych tego węzła.|

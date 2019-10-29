@@ -1,5 +1,5 @@
 ---
-title: Office development ― przykłady
+title: Przykłady programowania dla pakietu Office
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,33 +12,33 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5cc00d56b0abf02f99c7ab320ab0353d1b4b2317
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: b9e20f0d14b2940fdbe8096442848f38183b1db7
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447142"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985728"
 ---
-# <a name="office-development-samples"></a>Office development ― przykłady
-  Visual Studio zawiera przykładowe aplikacje, które pokazują, jak utworzyć rozwiązania pakietu Office za pomocą programu Microsoft Office developer tools. Kod w tych przykładach przedstawiono składnię, struktury i techniki używane do tworzenia rozwiązań dla pakietu Office.
+# <a name="office-development-samples"></a>Przykłady programowania dla pakietu Office
+  Program Visual Studio zawiera przykładowe aplikacje, które pokazują, jak używać narzędzi deweloperskich Microsoft Office do tworzenia rozwiązań pakietu Office. Kod w tych przykładach ilustruje składnię, strukturę i techniki używane do tworzenia rozwiązań pakietu Office.
 
- Aby poznać aktualne przykłady, zobacz [Przykłady dewelopera sieci MSDN: Ucz się dzięki kodowi](http://go.microsoft.com/fwlink/?LinkID=248199) w witrynie internetowej firmy Microsoft.
+ Aby zapoznać się z najnowszymi przykładami, zobacz [przykłady dla deweloperów MSDN: Poznaj kod](https://code.msdn.microsoft.com/site/search?query=vsto&f%5B1%5D.Value=vsto&f%5B1%5D.Type=SearchText&f%5B0%5D.Value=11.0&f%5B0%5D.Type=VisualStudioVersion&f%5B0%5D.Text=Visual%20Studio%2011&ac=8) w witrynie sieci Web firmy Microsoft.
 
  [!INCLUDE[note_security_multiplesample](../vsto/includes/note-security-multiplesample-md.md)]
 
-## <a name="office-development-samples"></a>Office development ― przykłady
+## <a name="office-development-samples"></a>Przykłady programowania dla pakietu Office
 
 |Przykład|Opis|
 |------------|-----------------|
-|Przykładowe dane szczegółowe głównego programu Excel|Pokazuje, jak pobierać dane z relacyjnej bazy danych lub plik XML i użyć tych danych w programie Excel.|
-|Przykładowe technik ochrony dokumentu programu Excel|Demonstruje różne techniki, które można użyć do ochrony, elementy strukturalne arkusza, aby pomóc, aby zapobiec przypadkowemu usunięciu formantów lub w przeciwnym razie zmiany ważne elementy dokument z rozwiązania.|
-|Próbka analizy danych programu Excel|Pokazuje spis aplikacji zarządzania, która wykonuje zadania analizy danych w programie Excel przy użyciu listy obiektów, tabel przestawnych i wykresów.|
-|Przykładowe okienka zadań programu Word|Pokazuje, jak utworzyć podstawowy niestandardowego okienka zadań dla programu Word.|
-|Próbka formantów zawartości programu Word|Pokazuje, jak powiązać formanty zawartości programu Word z polami bazy danych.|
-|Program Outlook formularza Region RSS czytnika próbki|Pokazuje, jak użyć regionach formularzy programu Outlook, aby wyświetlić pełnej zawartości artykuły z kanału informacyjnego RSS.|
-|Próbka formantów wstążki|W tym przykładzie pokazano, jak utworzyć niestandardową kartę, która pojawia się na wstążce programu Excel. Ta niestandardowa Wstążka pokazuje większości kontrolek dostępnych w tej grupie formanty wstążki pakietu Office w Visual Studio Toolbox.|
-|Interfejs użytkownika Menedżera próbki|Przedstawia sposób tworzenia dostosowania wstążki, niestandardowego okienka zadań i region formularza niestandardowego dla programu Outlook, implementując rozszerzalności interfejsów w dodatku narzędzi VSTO dla programów. Każde wystąpienie wstążki, w okienku zadań i regionu formularza poprawnie mogą komunikować się ze sobą.|
-|VBA i przykład międzyoperacyjności VSTO|Przedstawia sposób wywołania metody w dostosowaniu na poziomie dokumentu dla programu Excel z Visual Basic for Applications (VBA) kod w skoroszycie.<br /><br /> W tym przykładzie jest dostępna tylko online.|
+|Przykład danych szczegółów wzorca programu Excel|Pokazuje, jak pobrać dane z relacyjnej bazy danych lub pliku XML i używać tych danych w programie Excel.|
+|Przykłady technik ochrony dokumentów programu Excel|Pokazuje różne techniki, których można użyć do ochrony składników strukturalnych arkusza, aby zapobiec przypadkowemu usunięciu formantów lub zmianie ważnych części dokumentu rozwiązania.|
+|Przykład analizy danych programu Excel|Demonstruje aplikację do zarządzania spisem, która wykonuje zadania analizy danych w programie Excel przy użyciu obiektów list, tabel przestawnych i wykresów.|
+|Przykład okienka zadań programu Word|Pokazuje, jak utworzyć podstawowe niestandardowe okienko zadań dla programu Word.|
+|Przykład formantów zawartości programu Word|Demonstruje sposób powiązania formantów zawartości programu Word z polami bazy danych.|
+|Przykład czytnika RSS regionu formularza programu Outlook|Pokazuje, jak używać regionów formularzy programu Outlook do wyświetlania całej zawartości artykułów ze źródła danych RSS.|
+|Przykładowe kontrolki wstążki|Ten przykład pokazuje, jak utworzyć niestandardową kartę, która pojawia się na Wstążce arkusza programu Excel. Ta niestandardowa wstążka pokazuje większość kontrolek dostępnych w grupie Formanty wstążki pakietu Office w przyborniku programu Visual Studio.|
+|Przykład Menedżera interfejsu użytkownika|Demonstruje sposób tworzenia dostosowywania wstążki, niestandardowego okienka zadań i niestandardowego regionu formularzy dla programu Outlook przez implementację interfejsów rozszerzalności w dodatku narzędzi VSTO. Każde wystąpienie wstążki, okienka zadań i regionu formularza może prawidłowo komunikować się ze sobą.|
+|Przykład współpracy VBA i programu VSTO|Pokazuje, jak wywołać metodę w dostosowaniu na poziomie dokumentu dla programu Excel z kodu Visual Basic for Applications (VBA) w skoroszycie.<br /><br /> Ten przykład jest dostępny tylko w trybie online.|
 
 ## <a name="see-also"></a>Zobacz także
 - [Typowe zadania w programowaniu pakietu Office](../vsto/common-tasks-in-office-programming.md)

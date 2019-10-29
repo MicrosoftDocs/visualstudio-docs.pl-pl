@@ -13,18 +13,18 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5cc42a5346498c04f759956b2ca00094ac1df119
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: aac250053f90d99e7db27a9862d2dc1b33fadbfb
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72718728"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72983037"
 ---
 # <a name="the-structure-of-the-content_typesxml-file"></a>Struktura pliku [Content_types].xml
 Zawiera informacje o rodzaju zawartości w pakiecie VSIX. Program Visual Studio używa pliku [Content_Types]. XML do zainstalowania pakietu, ale nie instaluje samego pliku.
 
 > [!NOTE]
-> Chociaż ten temat dotyczy tylko plików [Content_Type]. XML, które są używane w pakietach VSIX, typ pliku [Content_Types]. XML jest częścią standardu *Open Package Conventions (OPC)* . Aby uzyskać więcej informacji, zobacz [OPC: A New Standard for pakowanie danych](http://go.microsoft.com/fwlink/?LinkID=148207) w witrynie MSDN w sieci Web.
+> Chociaż ten temat dotyczy tylko plików [Content_Type]. XML, które są używane w pakietach VSIX, typ pliku [Content_Types]. XML jest częścią standardu *Open Package Conventions (OPC)* . Aby uzyskać więcej informacji, zobacz [OPC: A New Standard for pakowanie danych](https://msdn.microsoft.com/magazine/cc163372.aspx) w witrynie MSDN w sieci Web.
 
 ## <a name="attributes-and-elements"></a>Atrybuty i elementy
  W poniższych sekcjach opisano element główny oraz jego atrybuty i elementy podrzędne.
@@ -102,4 +102,4 @@ Zawiera informacje o rodzaju zawartości w pakiecie VSIX. Program Visual Studio 
 ## <a name="see-also"></a>Zobacz także
 - [Anatomia pakietu VSIX](../extensibility/anatomy-of-a-vsix-package.md)
 - [Dokumentacja schematu rozszerzenia VSIX 1,0](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
-- [OPC: nowy standard tworzenia pakietów danych](http://go.microsoft.com/fwlink/?LinkID=148207)
+- [OPC: nowy standard tworzenia pakietów danych](https://msdn.microsoft.com/magazine/cc163372.aspx)

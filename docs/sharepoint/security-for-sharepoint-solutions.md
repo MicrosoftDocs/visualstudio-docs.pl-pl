@@ -1,5 +1,5 @@
 ---
-title: Zabezpieczenia dla rozwiązań SharePoint | Dokumentacja firmy Microsoft
+title: Zabezpieczenia rozwiązań programu SharePoint | Microsoft Docs
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,73 +15,73 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 31bcd41dc1a6fd7f314c7d701f52c3728dd2ee8c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 16fb3e4a0e1aed14e4a3f1b3178dc753f5dc10b4
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63009807"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984188"
 ---
-# <a name="security-for-sharepoint-solutions"></a>Zabezpieczenia dla rozwiązań SharePoint
-  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] obejmuje następujące funkcje, aby pomóc zwiększyć bezpieczeństwo aplikacji programu SharePoint.
+# <a name="security-for-sharepoint-solutions"></a>Zabezpieczenia rozwiązań programu SharePoint
+  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] obejmuje następujące funkcje, aby zwiększyć bezpieczeństwo aplikacji programu SharePoint.
 
-## <a name="safe-control-entries"></a>Wpisy bezpiecznych kontrolek
- Każdy element projektu programu SharePoint, utworzone w [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] ma **wpisy bezpiecznych kontrolek** właściwość, która reprezentuje bezpiecznego kontroluje kolekcji. Jego **bezpieczne** wykorzystanie pozwala na określenie formantów, które należy rozważyć bezpieczne. Aby uzyskać więcej informacji, zobacz [zawierają wdrażanie pakietów i informacje w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) i [Określanie bezpiecznych składników Web Part](http://go.microsoft.com/fwlink/?LinkId=177521).
+## <a name="safe-control-entries"></a>Bezpieczne wpisy kontroli
+ Każdy element projektu programu SharePoint utworzony w [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] ma właściwość **wpisów bezpiecznego sterowania** , która reprezentuje kolekcję bezpiecznych kontrolek. **Bezpieczna** podwłaściwość umożliwia określenie formantów, które są uważane za bezpieczne. Aby uzyskać więcej informacji, zobacz [udostępnianie informacji o pakiecie i wdrożeniu w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) i [Określanie bezpiecznego składniki Web Part](/previous-versions/office/developer/sharepoint2003/dd583154(v=office.11)#sharepoint_northwindwebparts_topic19).
 
-## <a name="allowpartiallytrustedcallers-attribute"></a>AllowPartiallyTrustedCallers attribute
- Domyślnie tylko aplikacje, które są w pełni zaufana przez system zabezpieczenia dostępu kodu plików środowiska uruchomieniowego dostęp można uzyskać zestawu udostępnionego kodu zarządzanego. Oznaczanie zestawie całkowicie zaufanym o atrybucie AllowPartiallyTrustedCallers umożliwia częściowo zaufanych zestawów do niego dostęp.
+## <a name="allowpartiallytrustedcallers-attribute"></a>AllowPartiallyTrustedCallers — atrybut
+ Domyślnie tylko aplikacje, które są w pełni zaufane przez system w środowisku uruchomieniowym zabezpieczenia dostępu kodu (CAS), mogą uzyskać dostęp do udostępnionego zestawu kodu zarządzanego. Oznaczenie w pełni zaufanego zestawu przy użyciu atrybutu AllowPartiallyTrustedCallers umożliwia częściowo zaufanym zestawom dostęp do niego.
 
- Wszystkie rozwiązania programu SharePoint, który nie jest wdrożony w globalnej pamięci podręcznej systemu jest dodawany atrybut AllowPartiallyTrustedCallers ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). Obejmuje to rozwiązania w trybie piaskownicy lub rozwiązań wdrożonych do katalogu Bin aplikacji programu SharePoint. Aby uzyskać więcej informacji, zobacz [wersji 1 zmiany dotyczące zabezpieczeń platformy Microsoft .NET Framework](http://go.microsoft.com/fwlink/?LinkId=177515) i [wdrażania składników Web Part w SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177509).
+ Atrybut AllowPartiallyTrustedCallers jest dodawany do dowolnego rozwiązania programu SharePoint, które nie zostało wdrożone w globalnej pamięci podręcznej zestawów systemu ([!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). Obejmuje to rozwiązania w trybie piaskownicy lub rozwiązania wdrożone w katalogu bin aplikacji programu SharePoint. Aby uzyskać więcej informacji, zobacz [zmiany zabezpieczeń w wersji 1 Microsoft .NET Framework](/previous-versions/msp-n-p/ff921345(v=pandp.10)) i [wdrażanie składniki Web Part w programie SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/cc768621(v=office.14)).
 
-## <a name="safe-against-script-property"></a>Bezpieczne względem skryptu właściwości
- *Skrypt iniekcji* to wstawianie potencjalnie złośliwego kodu do kontrolki lub strony sieci Web. Aby ułatwić ochronę witryn programu SharePoint 2010 na uruchomienie skryptu, współautorzy nie Wyświetl lub Edytuj ich właściwości lub składniki Web Part domyślnie. To zachowanie jest kontrolowana przez SafeControl — atrybut o nazwie SafeAgainstScript. W [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)], ustaw ten atrybut w elemencie projektu **wpisy bezpiecznych kontrolek** podwłaściwości **bezpieczne względem skryptu**. Aby uzyskać więcej informacji, zobacz [zawierają wdrażanie pakietów i informacje w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) i [jak: Oznaczanie kontrolek pojęciem bezpiecznych kontrolek](../sharepoint/how-to-mark-controls-as-safe-controls.md).
+## <a name="safe-against-script-property"></a>Bezpieczna przed właściwością skryptu
+ *Wstrzyknięcie skryptu* polega na wstawieniu potencjalnie złośliwego kodu do formantów lub stron sieci Web. Aby ułatwić ochronę witryn programu SharePoint 2010 przed iniekcją skryptów, współautorzy nie mogą wyświetlać ani edytować części sieci Web ani ich właściwości domyślnie. Takie zachowanie jest kontrolowane przez atrybut SafeControl o nazwie SafeAgainstScript. W [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]Ustaw ten atrybut **w bezpiecznym** **wpisie** dla elementu projektu. Aby uzyskać więcej informacji, zobacz [udostępnianie informacji o pakiecie i wdrożeniu w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) i [instrukcje: Oznaczanie kontrolek jako bezpiecznych](../sharepoint/how-to-mark-controls-as-safe-controls.md).
 
-## <a name="vista-and-windows-7-user-account-control"></a>Kontrola konta użytkownika 7 Vista i Windows
- [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] i [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] zestawowi funkcji zabezpieczeń, znane jako Kontrola konta użytkownika (UAC). Tworzenie rozwiązań programu SharePoint w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] na [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] i [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] systemów kontroli konta użytkownika, użytkownik musi uruchomić [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] administrator systemu. Z **Start** menu, otwórz menu skrótów dla [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], a następnie wybierz **Uruchom jako administrator**.
+## <a name="vista-and-windows-7-user-account-control"></a>Kontrola konta użytkownika w systemach Vista i Windows 7
+ [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] i [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] obejmują funkcję zabezpieczeń znaną jako Kontrola konta użytkownika (UAC). W celu opracowania rozwiązań programu SharePoint w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] w systemach [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] i [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] Kontrola konta użytkownika wymaga uruchomienia [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] jako administrator systemu. Z menu **Start** , otwórz menu skrótów dla [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], a następnie wybierz **Uruchom jako administrator**.
 
- Aby skonfigurować [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] skrótów, aby zawsze Uruchom jako administrator, otwórz jego menu skrótów, wybierz **właściwości**, wybierz **zaawansowane** znajdujący się w **właściwości**okno dialogowe, a następnie wybierz pozycję **Uruchom jako administrator** pole wyboru.
+ Aby skonfigurować skrót [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] tak, aby był zawsze uruchamiany jako administrator, otwórz jego menu skrótów, wybierz polecenie **Właściwości**, wybierz przycisk **Zaawansowane** w oknie dialogowym **Właściwości** , a następnie zaznacz pole wyboru **Uruchom jako administrator** .
 
- Aby uzyskać więcej informacji, zobacz [opis i konfigurowanie Kontrola konta użytkownika w Windows Vista](http://go.microsoft.com/fwlink/?LinkID=156476). i [Kontrola konta użytkownika Windows 7](http://go.microsoft.com/fwlink/?LinkId=177523).
+ Aby uzyskać więcej informacji, zobacz artykuł [Omówienie i Konfigurowanie kontroli konta użytkownika w systemie Windows Vista](/previous-versions/windows/it-pro/windows-vista/cc709628(v=ws.10)). i [Kontrola konta użytkownika systemu Windows 7](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731416(v=ws.10)).
 
 ## <a name="sharepoint-permissions-considerations"></a>Uwagi dotyczące uprawnień programu SharePoint
- Tworzenie rozwiązań programu SharePoint, musi mieć wystarczające uprawnienia do uruchamiania i debugowania rozwiązań programu SharePoint. Przed przetestowaniem rozwiązania programu SharePoint, wykonaj następujące kroki, aby upewnić się, że masz odpowiednie uprawnienia:
+ Aby tworzyć rozwiązania programu SharePoint, musisz mieć wystarczające uprawnienia do uruchamiania i debugowania rozwiązań programu SharePoint. Przed przetestowaniem rozwiązania SharePoint wykonaj następujące kroki, aby upewnić się, że masz wymagane uprawnienia:
 
-1. Dodaj konto użytkownika z uprawnieniami administracyjnymi w systemie.
+1. Dodaj konto użytkownika jako administratora w systemie.
 
-2. Dodaj konto użytkownika jako administratora farmy programu SharePoint server.
+2. Dodaj konto użytkownika jako administratora farmy dla serwera programu SharePoint.
 
-    1. W administracji centralnej programu SharePoint 2010, wybrać **Zarządzaj grupą administratorów farmy** łącza.
+    1. W obszarze Administracja centralna programu SharePoint 2010 wybierz łącze **Zarządzaj grupą Administratorzy farmy** .
 
-    2. Na **administratorzy farmy** wybierz **New** opcji menu
+    2. Na stronie **Administratorzy farmy** wybierz opcję menu **Nowy**
 
-3. Dodaj konto użytkownika do grupie WSS_ADMIN_WPG uprawnienia.
+3. Dodaj konto użytkownika do grupy WSS_ADMIN_WPG.
 
-## <a name="additional-security-resources"></a>Zasoby dodatkowe zabezpieczenia
- Aby uzyskać więcej informacji na temat problemów z zabezpieczeniami zobacz następujące tematy.
+## <a name="additional-security-resources"></a>Dodatkowe zasoby zabezpieczeń
+ Więcej informacji o problemach z zabezpieczeniami znajduje się w następujących tematach.
 
 ### <a name="visual-studio-security"></a>Zabezpieczenia Visual Studio
 
-- [Zabezpieczenia i uprawnienia użytkownika](http://go.microsoft.com/fwlink/?LinkId=177503)
+- [Uprawnienia zabezpieczeń i użytkowników](/previous-versions/visualstudio/visual-studio-2010/ms165099(v=vs.100))
 
-- [Zabezpieczenia w kodzie natywnym i kodzie .NET Framework](http://go.microsoft.com/fwlink/?LinkId=177504)
+- [Zabezpieczenia w kodzie natywnym i .NET Framework](/previous-versions/visualstudio/visual-studio-2010/1787tk12(v=vs.100))
 
-- [Zabezpieczenia w programie .NET Framework](http://go.microsoft.com/fwlink/?LinkId=177502)
+- [Zabezpieczenia w .NET Framework](/previous-versions/dotnet/netframework-4.0/fkytk30f(v=vs.100))
 
 ### <a name="sharepoint-security"></a>Zabezpieczenia programu SharePoint
 
-- [Administracja programu SharePoint Foundation i zabezpieczenia](http://go.microsoft.com/fwlink/?LinkId=177501)
+- [Administracja i zabezpieczenia programu SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ee537811(v=office.14))
 
-- [Centrum zasobów zabezpieczeń programu SharePoint](http://go.microsoft.com/fwlink/?LinkId=177498)
+- [Centrum zasobów zabezpieczeń programu SharePoint](/sharepoint/dev/)
 
-- [Zabezpieczanie składników Web Part w SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177511)
+- [Zabezpieczanie składniki Web Part w programie SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/cc768613(v=office.14))
 
-- [Zwiększenie zabezpieczenia aplikacji sieci Web: Zagrożenia i przeciwdziałanie](http://go.microsoft.com/fwlink/?LinkID=140080)
+- [Ulepszanie zabezpieczeń aplikacji sieci Web: zagrożenia i środki zaradcze](/previous-versions/msp-n-p/ff649874(v=pandp.10))
 
 ### <a name="general-security"></a>Zabezpieczenia ogólne
 
-- [Cykl projektowania zabezpieczeń sieci MSDN](http://go.microsoft.com/fwlink/?LinkID=147149)
+- [Cykl życia w witrynie MSDN Security Development](https://www.microsoft.com/msrc?rtc=1)
 
-- [Tworzenie aplikacji ASP.NET bezpiecznego: Uwierzytelniania, autoryzacji i bezpiecznej komunikacji](http://go.microsoft.com/fwlink/?LinkId=177494)
+- [Tworzenie bezpiecznych aplikacji ASP.NET: uwierzytelnianie, autoryzacja i Bezpieczna komunikacja](/previous-versions/msp-n-p/ff649100(v=pandp.10))
 
 ## <a name="see-also"></a>Zobacz także
 

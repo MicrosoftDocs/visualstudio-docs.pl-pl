@@ -1,5 +1,5 @@
 ---
-title: Omówienie programu Visual Studio dla programistów używających języka Python
+title: Omówienie programu Visual Studio dla deweloperów języka Python
 titleSuffix: ''
 ms.date: 03/13/2019
 ms.topic: conceptual
@@ -11,141 +11,141 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 690ffff0aa31b90cea58997c982406a900299550
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 3b01d088618c07f1a3ff24aff2386584ebfad060
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67826168"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72983686"
 ---
-# <a name="welcome-to-the-visual-studio-ide--python"></a>Witamy w środowisku IDE programu Visual Studio | Python
+# <a name="welcome-to-the-visual-studio-ide--python"></a>Witamy w programie Visual Studio IDE | Python
 
-Visual Studio *zintegrowanego środowiska programistycznego* to twórczych uruchamianie konsola dla języka Python (i inne języki) służąca do służy do edytowania, debugowania i testować kod, a następnie opublikować aplikację. Zintegrowanym środowisku programistycznym (IDE) to program bogate, który może służyć do wielu aspektów programowania. Podniesienia standardowy edytor i debuger, większości środowisk IDE podać, program Visual Studio obejmuje uzupełnianie kodu narzędzi, interaktywnego środowiska REPL, i innych funkcji, do jej obsługi ułatwiają realizację procesu tworzenia oprogramowania.
+*Zintegrowane środowisko programistyczne* programu Visual Studio to twórczy pad do uruchamiania dla języka Python (i innych języków), którego można użyć do edytowania, debugowania i testowania kodu, a następnie publikowania aplikacji. Zintegrowane środowisko programistyczne (IDE) to program bogaty w funkcje, który może być używany w wielu aspektach tworzenia oprogramowania. Poza standardowym edytorem i debugerem, który zapewnia większość środowisk IDE, program Visual Studio zawiera narzędzia do uzupełniania kodu, interaktywne środowiska REPL i inne funkcje ułatwiające proces tworzenia oprogramowania.
 
-[![Program Visual Studio z projektu języka Python](media/tour-ide-overview.png)](media/tour-ide-overview.png#lightbox)
+[![Visual Studio z projektem języka Python](media/tour-ide-overview.png)](media/tour-ide-overview.png#lightbox)
 
-Ten obraz pokazuje programu Visual Studio Otwórz projekt języka Python i kilkoma oknami narzędzi kluczy, które będą prawdopodobnie używane:
+Ten obraz przedstawia program Visual Studio z otwartym projektem języka Python i kilkoma oknami narzędzi kluczowych, których prawdopodobnie używasz:
 
-- [**Eksplorator rozwiązań** ](../ide/solutions-and-projects-in-visual-studio.md) (prawym górnym rogu) umożliwia wyświetlanie, przejść i zarządzanie plikami kodu. **Eksplorator rozwiązań** ułatwiają organizowanie kodu za pomocą tych plików do grupowania [rozwiązania i projekty](/visualstudio/get-started/tutorial-projects-solutions).
-  - Wraz z **Eksploratora rozwiązań** jest [ **środowiska Python**](managing-python-environments-in-visual-studio.md), gdzie zarządzać różnych interpreterów języka Python, które są zainstalowane na tym komputerze.
+- [**Eksplorator rozwiązań**](../ide/solutions-and-projects-in-visual-studio.md) (prawy górny) umożliwia wyświetlanie plików kodu i nawigowanie w nich oraz zarządzanie nimi. **Eksplorator rozwiązań** może pomóc organizować kod przez zgrupowanie plików na [rozwiązania i projekty](/visualstudio/get-started/tutorial-projects-solutions).
+  - Obok **Eksplorator rozwiązań** to [**środowiska Python**](managing-python-environments-in-visual-studio.md), w których są zarządzane różne interpretery języka Python, które są zainstalowane na komputerze.
 
   ::: moniker range=">=vs-2019"
-  - Możesz również otwarty i uruchom kod języka Python w folderze bez tworzenia plików projektu i rozwiązania Visual Studio. Aby uzyskać więcej informacji, zobacz [Szybki Start: Otwórz i uruchamianie kodu języka Python w folderze](quickstart-05-python-visual-studio-open-folder.md).
+  - Możesz również otworzyć i uruchomić kod Python w folderze bez tworzenia plików projektu i rozwiązania programu Visual Studio. Aby uzyskać więcej informacji, zobacz [Szybki Start: otwieranie i uruchamianie kodu w języku Python w folderze](quickstart-05-python-visual-studio-open-folder.md).
   ::: moniker-end
 
-- [Okna edytora](../ide/writing-code-in-the-code-and-text-editor.md) (center), gdzie prawdopodobnie spędzisz większość czasu, wyświetla zawartość pliku. To jest, gdy użytkownik [edycji kodu w języku Python](editing-python-code-in-visual-studio.md)nawigować do kodu struktury i ustawiać punkty przerwania podczas debugowania sesji. Za pomocą języka Python, możesz również wybrać kod i naciśnij klawisze Ctrl + Enter, aby uruchomić ten kod w [okna interaktywnego REPL](python-interactive-repl-in-visual-studio.md).
+- [Okno edytora](../ide/writing-code-in-the-code-and-text-editor.md) (środkowe), w którym najprawdopodobniej będzie można spędzać większość czasu, zostanie wyświetlona zawartość pliku. W tym miejscu można [edytować kod języka Python](editing-python-code-in-visual-studio.md), nawigować w strukturze kodu i ustawiać punkty przerwania podczas debugowania sesji. W języku Python można również wybrać kod i nacisnąć klawisze CTRL + ENTER, aby uruchomić ten kod w [interaktywnym oknie REPL](python-interactive-repl-in-visual-studio.md).
 
-- [Okno danych wyjściowych](../ide/reference/output-window.md) (na dole na środku) jest, gdzie program Visual Studio wysyła powiadomienia, takich jak debugowanie i komunikaty o błędach, ostrzeżenia, komunikaty o stanie publikowania i. Każde źródło komunikatu ma osobnej karcie.
-  - A [okna interaktywnego REPL języka Python](python-interactive-repl-in-visual-studio.md) pojawia się w tym samym regionie co okno danych wyjściowych.
+- W [oknie danych wyjściowych](../ide/reference/output-window.md) (u dołu) jest miejsce, gdzie program Visual Studio wysyła powiadomienia, takie jak debugowanie i komunikaty o błędach, ostrzeżenia, publikowanie komunikatów o stanie itd. Każde źródło wiadomości ma własną kartę.
+  - [Okno interaktywnej REPL](python-interactive-repl-in-visual-studio.md) w języku Python pojawia się w tym samym obszarze co okno dane wyjściowe.
 
-- [Team Explorer](/azure/devops/user-guide/work-team-explorer?view=vsts) (prawy dolny róg) umożliwia śledzenie elementów roboczych i udostępnianie kodu z innymi osobami przy użyciu technologii kontroli wersji, takich jak [Git](https://git-scm.com/) i [Team Foundation Version Control (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts).
+- [Team Explorer](/azure/devops/user-guide/work-team-explorer?view=vsts) (prawy dolny) umożliwia śledzenie elementów roboczych i udostępnianie kodu innym osobom korzystającym z technologii kontroli wersji, takich jak [git](https://git-scm.com/) i [Kontrola wersji serwera Team Foundation (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts).
 
 ## <a name="editions"></a>Wersje
 
-Program Visual Studio jest dostępna dla Windows i Mac; jednak obsługa w języku Python jest dostępna tylko w programie Visual Studio for Windows.
+Program Visual Studio jest dostępny dla systemów Windows i Mac. jednak obsługa języka Python jest dostępna tylko w programie Visual Studio dla systemu Windows.
 
-Istnieją trzy wersje programu Visual Studio w Windows: Community, Professional i Enterprise. Zobacz [porównanie środowiska IDE programu Visual Studio](https://visualstudio.microsoft.com/vs/compare/) Aby dowiedzieć się więcej o funkcji, które są obsługiwane w poszczególnych wydaniach.
+Istnieją trzy wersje programu Visual Studio w systemie Windows: Community, Professional i Enterprise. Zobacz [porównanie programu Visual Studio środowisk IDE](https://visualstudio.microsoft.com/vs/compare/) , aby dowiedzieć się, jakie funkcje są obsługiwane w poszczególnych wersjach.
 
-## <a name="popular-productivity-features"></a>Funkcje zwiększające produktywność popularne funkcje
+## <a name="popular-productivity-features"></a>Popularne funkcje produktywności
 
-Oto niektóre z najpopularniejszych funkcji w programie Visual Studio, które ułatwiają mu bardziej wydajnej pracy, podczas opracowywania oprogramowania:
+Niektóre popularne funkcje programu Visual Studio, które ułatwiają wydajniejszą pracę podczas opracowywania oprogramowania, obejmują:
 
 - [Funkcja IntelliSense](editing-python-code-in-visual-studio.md#intellisense)
 
-   Funkcja IntelliSense jest okres zestaw funkcji, który wyświetla informacje o kodzie bezpośrednio w edytorze, a w niektórych przypadkach zapisu małe fragmenty kodu dla Ciebie. To, jak podstawowa dokumentacja wbudowanego w edytorze, co pozwala uniknąć konieczności wyszukiwania informacji o typie w innym miejscu. Funkcje IntelliSense zależy od języka, a [kod Python edycji](editing-python-code-in-visual-studio.md#intellisense) artykuł zawiera szczegółowe informacje dla języka Python. Na poniższej ilustracji przedstawiono, jak technologia IntelliSense wyświetla listę elementu członkowskiego dla typu:
+   Technologia IntelliSense to termin dla zestawu funkcji, który wyświetla informacje o kodzie bezpośrednio w edytorze, a w niektórych przypadkach zapisuje małe bity kodu. Jest tak jak w przypadku, gdy podstawowa dokumentacja jest wbudowana w edytorze, co umożliwia zaoszczędzenie informacji o typie w innym miejscu. Funkcje IntelliSense różnią się w zależności od języka, a [Edycja artykułu kodu](editing-python-code-in-visual-studio.md#intellisense) w języku Python zawiera szczegółowe informacje dotyczące środowiska Python. Na poniższej ilustracji przedstawiono, w jaki sposób technologia IntelliSense wyświetla listę elementów członkowskich typu:
 
-   ![Uzupełnianie składowych za pomocą funkcji IntelliSense Visual Studio](media/code-editing-completions-simple.png)
+   ![Uzupełnianie elementu członkowskiego za pomocą funkcji IntelliSense programu Visual Studio](media/code-editing-completions-simple.png)
 
 - [Refaktoryzacja](refactoring-python-code.md)
 
-   Klikając prawym przyciskiem myszy na elemencie kodu i wybierając **szybkie akcje i Refaktoryzacje**, Visual Studio umożliwia operacje, takie jak inteligentne zmiana nazwy zmiennych, wyodrębnianie jeden lub więcej wierszy kodu do nowej metody, zmiana kolejność parametrów metod i inne.
+   Klikając prawym przyciskiem myszy fragment kodu i wybierając **szybkie akcje i refaktoryzacje**, program Visual Studio udostępnia operacje, takie jak inteligentne Zmienianie nazw zmiennych, wyodrębnianie jednego lub kilku wierszy kodu do nowej metody, zmiana kolejności metod parametry i nie tylko.
 
    ![Refaktoryzacja w programie Visual Studio](media/tour-ide-refactor-extract-method.png)
 
 - [Zaznaczanie błędów](refactoring-python-code.md)
 
-   Zaznaczanie błędów sprawdza, czy błędy i często spotykanych problemów z kodu w języku Python, co ułatwia zachowanie za pomocą języka Python dobre, wzorców.
+   Zaznaczanie błędów sprawdza, czy występują błędy i typowe problemy w kodzie w języku Python, zachęcając Cię do tworzenia dobrych wzorców kodowania języka Python.
 
    ![Polecenie PyLint w menu kontekstowym dla projektów języka Python](media/code-pylint-command.png)
 
 - Pole wyszukiwania
 
-   Program Visual Studio może wydawać się trudne w czasie za pomocą menu tak wiele, opcje i właściwości. Pole wyszukiwania jest doskonałym sposobem na szybkie znajdowanie potrzebnej w programie Visual Studio. Po uruchomieniu, wpisując nazwę coś, czego szukasz, program Visual Studio wyświetla wyniki, które przyjmują dokładnie miejscu należy przejść. Jeśli chcesz dodać funkcje do programu Visual Studio, na przykład aby dodać obsługę dodatkowych języka programowania, pole wyszukiwania zawiera wyniki, które Otwórz Instalator programu Visual Studio do zainstalowania obciążeń lub poszczególnych składników.
+   Program Visual Studio może pozornie przeciążać, tak jak wiele menu, opcji i właściwości. Pole wyszukiwania to doskonały sposób na szybkie znajdowanie potrzebnych informacji w programie Visual Studio. Po rozpoczęciu wpisywania nazwy szukanego elementu program Visual Studio Wyświetla listę wyników, które dokładnie zapoznają się z tym, co należy zrobić. Aby dodać funkcję do programu Visual Studio, na przykład w celu dodania obsługi dodatkowego języka programowania, w polu wyszukiwania znajdują się wyniki otwierające Instalator programu Visual Studio w celu zainstalowania obciążenia lub pojedynczego składnika.
 
    ![Pole wyszukiwania w programie Visual Studio](media/tour-ide-quick-launch.png)
 
 - Zygzaki i [szybkie akcje](../ide/quick-actions.md)
 
-   Zygzaki są faliste linie, które alertów dotyczących błędów lub potencjalnych problemów w kodzie podczas wpisywania. Te wskazówki visual umożliwiają rozwiązywanie problemów z natychmiast bez oczekiwania na błąd, które mają zostać odnalezione, podczas kompilacji lub po uruchomieniu programu. Po umieszczeniu wskaźnika myszy nad wężyk, zobaczysz dodatkowe informacje o tym błędzie. Żarówka może również wystąpić na lewym marginesie z akcjami, znane jako szybkich akcji, aby naprawić błąd.
+   Zygzaki to faliste podkreślenia, które wysyłają alerty do błędów lub potencjalnych problemów w kodzie podczas wpisywania. Te wizualne wskazówki umożliwiają natychmiastowe Rozwiązywanie problemów bez oczekiwania na odnalezienie błędu podczas kompilacji lub podczas uruchamiania programu. Po umieszczeniu wskaźnika myszy na zygzaku pojawią się dodatkowe informacje o błędzie. Żarówka może również pojawić się na lewym marginesie z akcjami, znanymi jako szybkie akcje, aby naprawić błąd.
 
-   ![Faliste linie w programie Visual Studio](media/tour-ide-squiggles.png)
+   ![Zygzaky w programie Visual Studio](media/tour-ide-squiggles.png)
 
-- [Przejdź do, a następnie zobacz definicję](../ide/go-to-and-peek-definition.md)
+- [Przejdź do definicji i wglądu](../ide/go-to-and-peek-definition.md)
 
-   **Przejdź do definicji** funkcji spowoduje przejście bezpośrednio do lokalizacji, w którym funkcja lub typ jest zdefiniowany. **Wgląd w definicje** polecenie wyświetla definicję w oknie bez konieczności otwierania pliku. **Znajdź wszystkie odwołania** polecenie dostarcza również pomocny sposób, aby dowiedzieć się, gdzie wszystkie danym identyfikatorem jest zdefiniowane i używane.
+   Funkcja **Przejdź do definicji** przenosi bezpośrednio do lokalizacji, w której zdefiniowana jest funkcja lub typ. Polecenie **wgląd do definicji** wyświetla definicję w oknie bez otwierania osobnego pliku. Polecenie **Znajdź wszystkie odwołania** zapewnia również przydatny sposób odnajdywania i używania danego identyfikatora.
 
    ![Polecenia nawigacji kodu](media/tour-ide-navigation-commands.png)
 
-## <a name="powerful-features-for-python"></a>Zaawansowane funkcje dla języka Python
+## <a name="powerful-features-for-python"></a>Zaawansowane funkcje języka Python
 
 ::: moniker range=">=vs-2019"
-- [Uruchamianie kodu bez projektu](quickstart-05-python-visual-studio-open-folder.md)
+- [Uruchom kod bez projektu](quickstart-05-python-visual-studio-open-folder.md)
 
-    Począwszy od programu Visual Studio 2019 r można otworzyć folderu zawierającego kod języka Python w celu korzystania z funkcji, takich jak technologia IntelliSense i debugowanie bez konieczności tworzenia projektu programu Visual Studio Code.
+    Począwszy od programu Visual Studio 2019, można otworzyć folder zawierający kod języka Python, aby korzystać z funkcji, takich jak IntelliSense i debugowanie, bez konieczności tworzenia projektu programu Visual Studio dla kodu.
 ::: moniker-end
 
-- [Współpraca przy użyciu programu Visual Studio](https://docs.microsoft.com/visualstudio/liveshare/use/vs)
+- [Współpraca przy użyciu programu Visual Studio](/visualstudio/liveshare/use/vs)
   
-    Visual Studio funkcja udostępniania na żywo umożliwia zespołowe przeprowadzanie edytowania i debugowania z innymi osobami w czasie rzeczywistym, niezależnie od tego, jakiego języka programowania używasz lub typów aplikacji, którą tworzysz. 
+    Visual Studio Live Share umożliwia zespołowe edytowanie i debugowanie z innymi osobami w czasie rzeczywistym, niezależnie od używanego języka programowania lub typów aplikacji, które tworzysz. 
 
-- [Interaktywna pętla REPL języka Python](python-interactive-repl-in-visual-studio.md)
+- [Interaktywny REPL języka Python](python-interactive-repl-in-visual-studio.md)
 
-    Program Visual Studio udostępnia okno interaktywne odczytu oceny — Drukuj pętli (REPL) dla każdego środowiska Python, które poprawia REPL, możesz uzyskać za pomocą *python.exe* w wierszu polecenia. W **Interactive** okna można wprowadzić dowolny kod języka Python oraz zobaczyć wyniki wprowadzenia.
+    Program Visual Studio udostępnia interaktywne okno pętle Read-Test-Print (REPL) dla każdego środowiska języka Python, które usprawnia REPL uzyskiwany z poziomu języka *Python. exe* w wierszu polecenia. W oknie **interaktywnym** możesz wprowadzić dowolny kod w języku Python i zobaczyć natychmiastowe wyniki.
 
     ![Okno interaktywne języka Python](media/interactive-window.png)
 
 - [Debugowanie](debugging-python-in-visual-studio.md)
 
-    Program Visual Studio udostępnia kompleksowe środowisko debugowania dla języka Python, dołączanie do uruchomionego procesu, w tym oceny wyrażenia w **Obejrzyj** i **bezpośrednie** systemu windows, inspekcja lokalne zmienne, punkty przerwania, krok instrukcji w/out/over **Ustaw następną instrukcję**i nie tylko. Można również debugować kod Python zdalnego uruchomionych na komputerach z systemem Linux.
+    Program Visual Studio oferuje kompleksowe środowisko debugowania dla języka Python, w tym dołączanie do uruchomionych procesów, ocenianie wyrażeń w oknach **czujka** i **natychmiastowe** , inspekcja zmiennych lokalnych, punktów przerwania, przechodzenie do trybu/out/over instrukcje, **Ustawianie następnej instrukcji**i innych. Można także debugować kod zdalnego kodu Python uruchomiony na komputerach z systemem Linux.
 
     ![Debugowanie języka Python w programie Visual Studio](media/remote-debugging-breakpoint-hit.png)
 
-- [Interakcja z językiem C++](working-with-c-cpp-python-in-visual-studio.md)
+- [Korzystanie zC++](working-with-c-cpp-python-in-visual-studio.md)
 
-    Wiele bibliotek utworzone dla języka Python są zapisywane w języku C++ pod kątem optymalnej wydajności. Program Visual Studio zapewnia zaawansowane funkcje służące do tworzenia rozszerzenia języka C++, w tym [debugowanie w trybie mieszanym](debugging-mixed-mode-c-cpp-python-in-visual-studio.md).
+    Wiele bibliotek utworzonych dla języka Python jest pisanych C++ w celu uzyskania optymalnej wydajności. Program Visual Studio oferuje bogate możliwości tworzenia C++ rozszerzeń, w tym [debugowania w trybie mieszanym](debugging-mixed-mode-c-cpp-python-in-visual-studio.md).
 
-    ![Debugowanie w trybie mieszanym, Python i C++ razem](media/mixed-mode-debugging.png)
+    ![Debugowanie w trybie mieszanym w języku C++ Python i razem](media/mixed-mode-debugging.png)
 
 - [Profilowanie](profiling-python-code-in-visual-studio.md)
 
-    Korzystając z interpreterem na podstawie języka CPython, będziesz w stanie ocenić wydajność kodu w języku Python w programie Visual Studio.
+    W przypadku korzystania z interpretera opartego na CPython można oszacować wydajność kodu w języku Python w programie Visual Studio.
 
-    ![Raport profilowania wydajności](media/profiling-results.png)
+    ![Raport dotyczący wydajności profilowania](media/profiling-results.png)
 
 - [Testowanie jednostek](unit-testing-python-in-visual-studio.md)
 
-    Program Visual Studio obsługuje zintegrowane odnajdywania, uruchomiona, i testów jednostkowych debugowania w kontekście IDE.
+    Program Visual Studio zapewnia zintegrowaną obsługę odnajdywania, uruchamiania i debugowania testów jednostkowych w kontekście IDE.
 
-    ![Testowania przedstawiająca stan nieudanego testu jednostkowego](media/unit-test-A-fail.png)
+    ![Testowanie jednostkowe pokazujące stan niepowodzenia testu](media/unit-test-A-fail.png)
 
 ## <a name="next-steps"></a>Następne kroki
 
-Poznaj języka Python w programie Visual Studio w dalszej, wykonując jedną z następujących przewodników Szybki Start lub samouczki:
+Poznaj środowisko Python w programie Visual Studio, wykonując jedną z następujących przewodników Szybki Start i samouczków:
 
 > [!div class="nextstepaction"]
-> [Szybki start: Tworzenie aplikacji sieci web za pomocą Flask](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)
+> [Szybki Start: Tworzenie aplikacji internetowej za pomocą kolby](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)
 
 > [!div class="nextstepaction"]
-> [Praca z językiem Python w programie Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
+> [Współpraca z językiem Python w programie Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
 > [!div class="nextstepaction"]
-> [Wprowadzenie do struktury sieci web Django w programie Visual Studio](learn-django-in-visual-studio-step-01-project-and-solution.md)
+> [Wprowadzenie do platformy sieci Web Django w programie Visual Studio](learn-django-in-visual-studio-step-01-project-and-solution.md)
 
 > [!div class="nextstepaction"]
-> [Rozpoczynanie pracy z usługą Flask struktury sieci web w programie Visual Studio](learn-flask-visual-studio-step-01-project-solution.md)
+> [Rozpocznij pracę z platformą sieci Web w programie Visual Studio](learn-flask-visual-studio-step-01-project-solution.md)
 
 ## <a name="see-also"></a>Zobacz także
 
 - Odkryj [więcej funkcji programu Visual Studio](../ide/advanced-feature-overview.md)
-- Odwiedź stronę [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)
-- Odczyt [blog Visual Studio](https://devblogs.microsoft.com/visualstudio/)
+- Odwiedź witrynę [VisualStudio.Microsoft.com](https://visualstudio.microsoft.com/vs/)
+- Przeczytaj [Blog programu Visual Studio](https://devblogs.microsoft.com/visualstudio/)

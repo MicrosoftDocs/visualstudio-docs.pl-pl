@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Zapełnianie dokumentów danymi z usług'
+title: 'Instrukcje: zapełnianie dokumentów danymi z usług'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,49 +14,47 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6239bc351872dc7a945c3fbff8ad1ed13817c3ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4f53000f7d6aa8bdd8261bbe5658607918b6b449
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967787"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985869"
 ---
-# <a name="how-to-populate-documents-with-data-from-services"></a>Instrukcje: Zapełnianie dokumentów danymi z usług
+# <a name="how-to-populate-documents-with-data-from-services"></a>Instrukcje: zapełnianie dokumentów danymi z usług
 
-Dostęp do danych działa tak samo w projektach na poziomie dokumentu, pakietu Microsoft Office, co w projektach Windows Forms. Użyj tego samego narzędzia i kod do przenoszenia danych do rozwiązania i kontrolek formularzy Windows Forms nawet służy do wyświetlania danych. Ponadto możesz korzystać z zalet kontrolki o nazwie formanty hosta, które są natywne obiekty Microsoft Office Excel i Microsoft Office Word, które zostały rozszerzone ze zdarzeniami i możliwość powiązania danych. Aby uzyskać więcej informacji, zobacz [elementów, a omówienie kontrolek](../vsto/host-items-and-host-controls-overview.md).
+Dostęp do danych działa w taki sam sposób w projektach na poziomie dokumentu dla Microsoft Office, jak w projektach Windows Forms. Używasz tych samych narzędzi i kodu do przenoszenia danych do rozwiązania i możesz nawet użyć formantów Windows Forms, aby wyświetlić dane. Ponadto można korzystać z formantów nazywanych kontrolkami hosta, które są obiektami natywnymi w Microsoft Office Excel i Microsoft Office Word, które zostały ulepszone przy użyciu funkcji zdarzenia i powiązania danych. Aby uzyskać więcej informacji, zobacz [Omówienie elementów hosta i kontrolek hosta](../vsto/host-items-and-host-controls-overview.md).
 
 [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
-Poniższy przykład pokazuje, jak dodać formanty powiązane z danymi do dokumentów w czasie projektowania. Na przykład sposobu dodawania formantów powiązanych z danymi w dodatkach VSTO w czasie wykonywania zobacz [instruktażu: Powiąż z danymi z usług w projektach dodatku narzędzi VSTO](../vsto/walkthrough-binding-to-data-from-a-service-in-a-vsto-add-in-project.md).
+Poniższy przykład pokazuje, jak dodać formanty powiązane z danymi do dokumentów w czasie projektowania. Aby zapoznać się z przykładem dodawania formantów związanych z danymi w dodatkach VSTO w czasie wykonywania, zobacz [Przewodnik: powiązanie z danymi z usługi w projekcie dodatku VSTO](../vsto/walkthrough-binding-to-data-from-a-service-in-a-vsto-add-in-project.md).
 
-![Link do wideo](../vsto/media/playvideo.gif "link do wideo") powiązane demonstracyjne wideo – zobacz [jak: Współdziałanie z usługami sieci web z programu Microsoft Excel? ](http://go.microsoft.com/fwlink/?LinkID=130284).
+## <a name="to-populate-a-document-level-project-with-data-from-a-web-service"></a>Aby wypełnić projekt na poziomie dokumentu danymi z usługi sieci Web
 
-## <a name="to-populate-a-document-level-project-with-data-from-a-web-service"></a>Aby wypełnić projektów dokumentów przy użyciu danych z usługi sieci web
+1. Otwórz okno **źródła danych** i Utwórz źródło danych usługi dla projektu. Aby uzyskać więcej informacji, zobacz [Dodawanie nowych źródeł danych](../data-tools/add-new-data-sources.md).
 
-1. Otwórz **źródeł danych** okna i Utwórz źródło danych usługi dla Twojego projektu. Aby uzyskać więcej informacji, zobacz [dodasz nowe źródła danych](../data-tools/add-new-data-sources.md).
+2. Przeciągnij żądaną tabelę lub pole z okna **źródła danych** do dokumentu.
 
-2. Przeciągnij tabelę lub pole, które ma z **źródeł danych** okna dokumentu.
+     W dokumencie jest tworzony formant <xref:System.Windows.Forms.BindingSource>, który jest powiązany z klasą obiektów w projekcie, a klasy są generowane dla usługi.
 
-     Kontrolki jest tworzona w dokumencie, <xref:System.Windows.Forms.BindingSource> jest tworzona, jest powiązany z klasy obiektu w projekcie, a klasy są generowane dla usługi.
+3. W kodzie Utwórz wystąpienie klasy usługi sieci Web, z którą nawiązano połączenie w kroku 1.
 
-3. W kodzie Utwórz wystąpienie klasy usługi sieci web, którą połączenia w kroku 1.
+4. Jeśli istnieją właściwości, które są wymagane do komunikacji z usługą sieci Web, Utwórz wystąpienia tych właściwości.
 
-4. Jeśli istnieją właściwości, które są wymagane do komunikacji z usługą sieci web, tworzenia wystąpień tych właściwości.
+5. Utwórz i Wyślij żądanie danych przy użyciu metod udostępnianych przez usługę sieci Web i wszystkie wystąpienia właściwości utworzone w kroku 4.
 
-5. Utwórz i Wyślij żądanie danych przy użyciu metod udostępnianych przez usługę sieci Web i wszystkie wystąpienia właściwości utworzonego w kroku 4.
+     Używane metody zależą od tego, co oferuje usługa sieci Web.
 
-     Metody, których można użyć, zależą od tego, jakie usługi sieci web oferuje.
+6. Przypisz odpowiedź danych z usługi sieci Web do właściwości <xref:System.Windows.Forms.BindingSource.DataSource%2A> <xref:System.Windows.Forms.BindingSource>.
 
-6. Przypisz odpowiedzi danych z usługi sieci web do <xref:System.Windows.Forms.BindingSource.DataSource%2A> właściwość <xref:System.Windows.Forms.BindingSource>.
-
-Kiedy uruchamiasz projekt, formanty wyświetlania pierwszego rekordu w źródle danych. Możesz włączyć przewijanie rekordów dzięki obsłudze zdarzeń walut, przy użyciu obiektów w <xref:System.Windows.Forms.BindingSource>.
+Po uruchomieniu projektu kontrolki wyświetlają pierwszy rekord w źródle danych. Możesz włączyć przewijanie rekordów przez obsługę zdarzeń walutowych przy użyciu obiektów w <xref:System.Windows.Forms.BindingSource>.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Wiązanie danych do kontrolek w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)
+- [Powiązywanie danych z kontrolkami w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Dodawanie nowych źródeł danych](../data-tools/add-new-data-sources.md)
 - [Wiązanie kontrolek Windows Forms z danymi w programie Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-- [Instrukcje: Zapełnianie arkuszy danymi z bazy danych](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
-- [Instrukcje: Zapełnianie dokumentów danymi z obiektów](../vsto/how-to-populate-documents-with-data-from-objects.md)
-- [Instrukcje: Zapełnianie dokumentów danymi z bazy danych](../vsto/how-to-populate-documents-with-data-from-a-database.md)
-- [Instrukcje: Aktualizowanie źródła danych danymi z kontrolki hosta](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
+- [Instrukcje: zapełnianie arkuszy danymi z bazy danych](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
+- [Instrukcje: zapełnianie dokumentów danymi z obiektów](../vsto/how-to-populate-documents-with-data-from-objects.md)
+- [Instrukcje: zapełnianie dokumentów danymi z bazy danych](../vsto/how-to-populate-documents-with-data-from-a-database.md)
+- [Instrukcje: aktualizowanie źródła danych przy użyciu danych z kontrolki hosta](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)

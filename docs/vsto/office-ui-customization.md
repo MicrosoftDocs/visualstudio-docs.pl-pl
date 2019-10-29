@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e5fd0253c6ca560c58724c8a83e343164b678923
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 15c7061030bec6aebca9cdc63d0cd0e0c79cc9aa
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254143"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985705"
 ---
 # <a name="office-ui-customization"></a>Dostosowywanie interfejsu użytkownika pakietu Office
   Interfejs użytkownika (UI) aplikacji Microsoft Office można dostosować przy użyciu narzędzi Office Developer Tools w programie Visual Studio. W tym temacie opisano funkcje interfejsu użytkownika, które można dostosować w następujących sekcjach:
@@ -48,7 +48,7 @@ ms.locfileid: "71254143"
 |Okienko akcje|Dostosowania na poziomie dokumentów|Excel<br /><br /> Word|
 |Niestandardowe okienka zadań|Dodatki narzędzi VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Word<br /><br /> Excel|
 |Niestandardowy interfejs użytkownika wstążki|Dostosowania na poziomie dokumentów<br /><br /> Dodatki narzędzi VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Projekt<br /><br /> Word<br /><br /> Visio|
-|Widok Backstage|Dostosowania na poziomie dokumentów<br /><br /> Dodatki narzędzi VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)].<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Projekt<br /><br /> Word<br /><br /> Visio|
+|Widok Backstage|Dostosowania na poziomie dokumentów<br /><br /> Dodatki narzędzi VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)].,<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Projekt<br /><br /> Word<br /><br /> Visio|
 |Regiony formularzy programu Outlook|Dodatki narzędzi VSTO|Outlook|
 |Kontrolki dokumentów|Dostosowania na poziomie dokumentów<br /><br /> Dodatki narzędzi VSTO|Excel<br /><br /> Word|
 |Menu skrótów|Dostosowania na poziomie dokumentów<br /><br /> Dodatki narzędzi VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Projekt<br /><br /> Word<br /><br /> Visio<br /><br /> Excel|
@@ -76,7 +76,7 @@ ms.locfileid: "71254143"
 
  Program Visual Studio nie udostępnia projektanta ani interfejsów API do dostosowywania widoku Backstage. Jeśli jednak dodasz element **wstążki (XML)** do projektu pakietu Office, możesz dodać kod XML do pliku XML wstążki, aby dostosować widok Backstage. Aby uzyskać więcej informacji na temat elementów **wstążki (XML)** , zobacz [kod XML wstążki](../vsto/ribbon-xml.md).
 
- Aby uzyskać więcej informacji na temat dostosowywania widoku Backstage, zobacz [wprowadzenie do widoku Backstage pakietu office 2010 dla deweloperów](http://go.microsoft.com/fwlink/?LinkId=182189) i [Dostosuj widok backstage pakietu Office 2010 dla deweloperów](http://go.microsoft.com/fwlink/?LinkId=182188).
+ Aby uzyskać więcej informacji na temat dostosowywania widoku Backstage, zobacz [wprowadzenie do widoku Backstage pakietu office 2010 dla deweloperów](/previous-versions/office/developer/office-2010/ee691833(v=office.14)) i [Dostosuj widok backstage pakietu Office 2010 dla deweloperów](/previous-versions/office/developer/office-2010/ee815851(v=office.14)).
 
 ## <a name="FormRegion"></a>Regiony formularzy programu Outlook
  Za pomocą regionów formularza można dodawać niestandardowe funkcje do standardowych formularzy programu Outlook Microsoft Office. Można tworzyć regiony formularzy, które poszerzają wszelkie istniejące formularze z dodatkowymi polami lub kontrolkami. Jeśli tworzysz nowy region formularza przy użyciu narzędzi programistycznych pakietu Office w programie Visual Studio, możesz użyć tylko formantów Windows Forms w regionie formularza. W przypadku zaimportowania regionu formularza, który został zaprojektowany w programie Outlook, można używać tylko natywnych kontrolek programu Outlook.
@@ -93,15 +93,15 @@ ms.locfileid: "71254143"
  Aby uzyskać więcej informacji, zobacz [Omówienie elementów hosta i kontrolek hosta](../vsto/host-items-and-host-controls-overview.md) oraz [kontrolek Windows Forms w dokumentach pakietu Office — omówienie](../vsto/windows-forms-controls-on-office-documents-overview.md).
 
 ## <a name="Shortcut"></a>Menu skrótów
- Menu skrótów pojawia się po kliknięciu prawym przyciskiem myszy w oknie dokumentu lub aplikacji. Można ustawić menu skrótów, które ma być wyświetlane po wystąpieniu zdarzenia, na przykład gdy użytkownik kliknie prawym przyciskiem myszy dokument, skoroszyt lub formant hosta. Do menu skrótów można dodać wiele różnych poleceń menu lub kontrolek. Utwórz menu skrótów za pomocą języka XML. Jeśli dodasz element **wstążki (XML)** do projektu pakietu Office, możesz dodać kod XML do pliku XML wstążki, aby utworzyć menu skrótów. Aby uzyskać więcej informacji na temat tworzenia menu skrótów przy użyciu języka [XML, zobacz How to: Dodaj polecenia do menu](../vsto/how-to-add-commands-to-shortcut-menus.md)skrótów.
+ Menu skrótów pojawia się po kliknięciu prawym przyciskiem myszy w oknie dokumentu lub aplikacji. Można ustawić menu skrótów, które ma być wyświetlane po wystąpieniu zdarzenia, na przykład gdy użytkownik kliknie prawym przyciskiem myszy dokument, skoroszyt lub formant hosta. Do menu skrótów można dodać wiele różnych poleceń menu lub kontrolek. Utwórz menu skrótów za pomocą języka XML. Jeśli dodasz element **wstążki (XML)** do projektu pakietu Office, możesz dodać kod XML do pliku XML wstążki, aby utworzyć menu skrótów. Aby uzyskać więcej informacji na temat tworzenia menu skrótów przy użyciu języka XML, zobacz [jak: Dodawanie poleceń do menu skrótów](../vsto/how-to-add-commands-to-shortcut-menus.md).
 
 ## <a name="see-also"></a>Zobacz także
-- [Wstążka — omówienie](../vsto/ribbon-overview.md)
+- [Omówienie wstążki](../vsto/ribbon-overview.md)
 - [Kontrolki formularzy Windows Forms w dokumentach pakietu Office — omówienie](../vsto/windows-forms-controls-on-office-documents-overview.md)
-- [Okienko akcji ― omówienie](../vsto/actions-pane-overview.md)
+- [Przegląd okienka Akcje](../vsto/actions-pane-overview.md)
 - [Tworzenie regionów formularzy programu Outlook](../vsto/creating-outlook-form-regions.md)
 - [Niestandardowe okienka zadań](../vsto/custom-task-panes.md)
 - [Korzystanie z formantów WPF w rozwiązaniach pakietu Office](../vsto/using-wpf-controls-in-office-solutions.md)
-- [Instrukcje: Pokaż kartę Deweloper na Wstążce](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)
-- [Instrukcje: Pokaż błędy interfejsu użytkownika dodatku](../vsto/how-to-show-add-in-user-interface-errors.md)
-- [Przewodnik: Zbieranie danych przy użyciu formularza systemu Windows](../vsto/walkthrough-collecting-data-using-a-windows-form.md)
+- [Instrukcje: pokazywanie karty dewelopera na Wstążce](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)
+- [Instrukcje: pokazywanie błędów interfejsu użytkownika dodatku](../vsto/how-to-show-add-in-user-interface-errors.md)
+- [Przewodnik: zbieranie danych przy użyciu formularza systemu Windows](../vsto/walkthrough-collecting-data-using-a-windows-form.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Zapełnianie arkuszy danymi z bazy danych'
+title: 'Instrukcje: zapełnianie arkuszy danymi z bazy danych'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,69 +14,65 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 67c12843d00bf8d5af51fa7af3175077527afa58
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0a1e01f5c9fc1372cda4d7d31f8ba56b90e166e7
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967764"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985860"
 ---
-# <a name="how-to-populate-worksheets-with-data-from-a-database"></a>Instrukcje: Zapełnianie arkuszy danymi z bazy danych
+# <a name="how-to-populate-worksheets-with-data-from-a-database"></a>Instrukcje: zapełnianie arkuszy danymi z bazy danych
 
-W taki sam sposób, uzyskujesz dostęp do danych w projektach formularzy Windows mogą uzyskać dostęp do danych w projektach pakietu Office poziomie dokumentu. Użyj tego samego narzędzia i kod do przenoszenia danych do rozwiązania i kontrolek formularzy Windows Forms nawet służy do wyświetlania danych. Ponadto możesz korzystać z zalet kontrolki o nazwie formanty hosta, które są natywne obiektów w programie Microsoft Office Excel, które zostały rozszerzone ze zdarzeniami i możliwości wiązania danych. Aby uzyskać więcej informacji, zobacz [elementów, a omówienie kontrolek](../vsto/host-items-and-host-controls-overview.md).
+Dostęp do danych można uzyskać w projektach pakietu Office na poziomie dokumentu w taki sam sposób, jak dostęp do danych w projektach Windows Forms. Używasz tych samych narzędzi i kodu do przenoszenia danych do rozwiązania i możesz nawet użyć formantów Windows Forms, aby wyświetlić dane. Ponadto można korzystać z formantów nazywanych kontrolkami hosta, które są obiektami natywnymi w programie Microsoft Office Excel, które zostały ulepszone przy użyciu funkcji zdarzeń i powiązania danych. Aby uzyskać więcej informacji, zobacz [Omówienie elementów hosta i kontrolek hosta](../vsto/host-items-and-host-controls-overview.md).
 
 [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
-Poniższy przykład pokazuje, jak dodać formanty powiązane z danymi w użyciu projektanta projektów na poziomie dokumentu. Na przykład sposobu dodawania formantów powiązanych z danymi w projektach na poziomie aplikacji w czasie wykonywania zobacz [instruktażu: Złożone powiązanie danych w projekcie dodatku narzędzi VSTO](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md).
+Poniższy przykład pokazuje, jak dodać formanty powiązane z danymi w projektach na poziomie dokumentu przy użyciu projektanta. Aby zapoznać się z przykładem dodawania formantów związanych z danymi w projektach na poziomie aplikacji w czasie wykonywania, zobacz [Przewodnik: złożone powiązanie danych w projekcie dodatku VSTO](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md).
 
-![Link do wideo](../vsto/media/playvideo.gif "link do wideo") powiązane demonstracyjne wideo – zobacz [jak: Przesyłanie danych do arkusza programu Excel? ](http://go.microsoft.com/fwlink/?LinkID=130277), i [jak: Używanie bazy danych w programie Excel? ](http://go.microsoft.com/fwlink/?LinkID=130287).
+## <a name="add-a-data-bound-control-to-a-worksheet-at-design-time"></a>Dodawanie formantu powiązanego z danymi do arkusza w czasie projektowania
 
-## <a name="add-a-data-bound-control-to-a-worksheet-at-design-time"></a>Dodaj formant powiązany z danymi do arkusza w czasie projektowania
+### <a name="to-populate-a-worksheet-with-data-from-a-database"></a>Aby wypełnić arkusz danymi z bazy danych
 
-### <a name="to-populate-a-worksheet-with-data-from-a-database"></a>Aby wypełnić arkusza z danymi z bazy danych
+1. Otwórz projekt na poziomie dokumentu programu Excel w programie Visual Studio, gdy arkusz jest otwarty w projektancie.
 
-1. Otwórz projekt poziomu dokumentu programu Excel w programie Visual Studio po otwarciu arkusza w projektancie.
+2. Otwórz okno **źródła danych** i Utwórz źródło danych dla projektu. Aby uzyskać więcej informacji, zobacz [Dodawanie nowych połączeń](../data-tools/add-new-connections.md).
 
-2. Otwórz **źródeł danych** okna i Utwórz źródło danych dla projektu. Aby uzyskać więcej informacji, zobacz [dodać nowe połączenia](../data-tools/add-new-connections.md).
+3. Przeciągnij odpowiednie pole lub tabelę z okna **źródła danych** do arkusza.
 
-3. Przeciągnij pole lub tabela, z **źródeł danych** okna do arkusza.
+Jeden z następujących kontrolek jest tworzony w arkuszu:
 
-Jedną z następujących formantów jest tworzony w arkuszu:
+- Jeśli przeciągniesz pole, w arkuszu zostanie utworzony formant <xref:Microsoft.Office.Tools.Excel.NamedRange>. Aby uzyskać więcej informacji, zobacz [NamedRange Control](../vsto/namedrange-control.md).
 
-- Jeśli przeciągniesz pole <xref:Microsoft.Office.Tools.Excel.NamedRange> formant zostanie utworzony w arkuszu. Aby uzyskać więcej informacji, zobacz [kontrolki NamedRange](../vsto/namedrange-control.md).
+- W przypadku przeciągnięcia tabeli w arkuszu zostanie utworzony formant <xref:Microsoft.Office.Tools.Excel.ListObject>. Aby uzyskać więcej informacji, zobacz [formant ListObject](../vsto/listobject-control.md).
 
-- Jeśli przeciągniesz tabeli <xref:Microsoft.Office.Tools.Excel.ListObject> formant zostanie utworzony w arkuszu. Aby uzyskać więcej informacji, zobacz [kontrolki ListObject](../vsto/listobject-control.md).
-
-Można dodać innej kontrolki, wybierając tabelę lub pole **źródeł danych** okna, a następnie wybierając innej kontrolki z listy rozwijanej.
+Możesz dodać inny formant, wybierając tabelę lub pole w oknie **źródła danych** , a następnie wybierając inną kontrolkę z listy rozwijanej.
 
 ## <a name="objects-in-the-project"></a>Obiekty w projekcie
 
-Oprócz sterowania następujące obiekty powiązane dane są automatycznie dodawane do projektu:
+Oprócz kontrolki następujące obiekty powiązane z danymi są automatycznie dodawane do projektu:
 
-- Wpisany zestaw danych, który hermetyzuje tabelami danych, które łączysz się w bazie danych. Aby uzyskać więcej informacji, zobacz [narzędzia zestawu danych w programie Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
+- Typ zestawu danych, który hermetyzuje tabele danych, z którymi nawiązano połączenie w bazie danych. Aby uzyskać więcej informacji, zobacz [Narzędzia zestawu danych w programie Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
 
-- A <xref:System.Windows.Forms.BindingSource> który formant łączy się z zestawu danych. Aby uzyskać więcej informacji, zobacz [— informacje o składniku BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview).
+- <xref:System.Windows.Forms.BindingSource>, który łączy formant z określonym zestawem danych. Aby uzyskać więcej informacji, zobacz [źródło BindingSource — Omówienie](/dotnet/framework/winforms/controls/bindingsource-component-overview).
 
-- TableAdapter, łączącej typizowany zestaw danych w bazie danych. Aby uzyskać więcej informacji, zobacz [TableAdapter — Przegląd](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
+- TableAdapter, który nawiązuje połączenie określonego zestawu danych z bazą danych. Aby uzyskać więcej informacji, zobacz [TableAdapter Overview (przegląd](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)).
 
-- TableAdapterManager, który służy do koordynowania adapterów tabel w zestawie danych w celu włączenia aktualizacji hierarchicznej. Aby uzyskać więcej informacji, zobacz [hierarchiczna aktualizacja](../data-tools/hierarchical-update.md) i [odwołania TableAdapterManager](../data-tools/fill-datasets-by-using-tableadapters.md#tableadaptermanager-reference).
+- TableAdapterManager, który służy do koordynowania kart tabeli w zestawie danych, aby włączyć hierarchiczne aktualizacje. Aby uzyskać więcej informacji, zobacz [hierarchiczne](../data-tools/hierarchical-update.md) informacje o aktualizacji i [TableAdapterManager](../data-tools/fill-datasets-by-using-tableadapters.md#tableadaptermanager-reference).
 
-Kiedy uruchamiasz projekt, kontrolka ma wyświetlać pierwszego rekordu w źródle danych. Możesz użyć <xref:System.Windows.Forms.BindingSource> aby umożliwić użytkownikom do przewijania rekordów.
+Po uruchomieniu projektu, formant Wyświetla pierwszy rekord w źródle danych. Możesz użyć <xref:System.Windows.Forms.BindingSource>, aby umożliwić użytkownikom przewijanie rekordów.
 
-### <a name="to-scroll-through-the-records"></a>Do przewijania rekordów
+### <a name="to-scroll-through-the-records"></a>Aby przewijać rekordy
 
-- Użyj <xref:System.Windows.Forms.BindingSource> metody takie jak <xref:System.Windows.Forms.BindingSource.MoveNext%2A> i <xref:System.Windows.Forms.BindingSource.MovePrevious%2A>.
+- Użyj metod <xref:System.Windows.Forms.BindingSource>, takich jak <xref:System.Windows.Forms.BindingSource.MoveNext%2A> i <xref:System.Windows.Forms.BindingSource.MovePrevious%2A>.
 
-Aby uzyskać informacje o sposobie wysyłania aktualizacji do zestawu danych i bazę danych, zobacz [jak: Aktualizowanie źródła danych danymi z kontrolki hosta](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).
+Informacje o sposobach wysyłania aktualizacji do określonego zestawu danych i bazy danych znajdują się w temacie [How to: Update a Data Source with Data from a host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Wiązanie danych do kontrolek w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)
+- [Powiązywanie danych z kontrolkami w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Dodawanie nowych źródeł danych](../data-tools/add-new-data-sources.md)
 - [Wiązanie kontrolek Windows Forms z danymi w programie Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-- [Instrukcje: Zapełnianie dokumentów danymi z obiektów](../vsto/how-to-populate-documents-with-data-from-objects.md)
-- [Instrukcje: Zapełnianie dokumentów danymi z bazy danych](../vsto/how-to-populate-documents-with-data-from-a-database.md)
-- [Instrukcje: Zapełnianie dokumentów danymi z usług](../vsto/how-to-populate-documents-with-data-from-services.md)
-- [Instrukcje: Aktualizowanie źródła danych danymi z kontrolki hosta](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
-- [Jak mogę Przesyłanie danych do arkusza programu Excel](http://go.microsoft.com/fwlink/?LinkID=130277)
-- [Jak mogę Używanie bazy danych w programie Excel?](http://go.microsoft.com/fwlink/?LinkID=130287)
+- [Instrukcje: zapełnianie dokumentów danymi z obiektów](../vsto/how-to-populate-documents-with-data-from-objects.md)
+- [Instrukcje: zapełnianie dokumentów danymi z bazy danych](../vsto/how-to-populate-documents-with-data-from-a-database.md)
+- [Instrukcje: zapełnianie dokumentów danymi z usług](../vsto/how-to-populate-documents-with-data-from-services.md)
+- [Instrukcje: aktualizowanie źródła danych przy użyciu danych z kontrolki hosta](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)

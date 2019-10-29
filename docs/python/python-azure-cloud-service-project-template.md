@@ -1,6 +1,6 @@
 ---
 title: Szablon projektu usługi w chmurze platformy Azure dla języka Python
-description: Program Visual Studio udostępnia szablony dla usług Azure cloud services, napisany w języku Python, w tym wdrażanie ról w zależności i rozwiązywania problemów.
+description: Program Visual Studio udostępnia szablony dla usług Azure Cloud Services utworzonych w języku Python, w tym wdrażanie roli, zależności i rozwiązywanie problemów.
 ms.date: 11/12/2018
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -11,96 +11,96 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 81dbe6189557f38daa23983a100c295654299a5d
-ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
+ms.openlocfilehash: 4d205ee2bbc0a6e9c44c34f3b0487abb4f22283e
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70154874"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72983663"
 ---
-# <a name="azure-cloud-service-projects-for-python"></a>Projekty usługi w chmurze platformy Azure dla języka Python
+# <a name="azure-cloud-service-projects-for-python"></a>Projekty usług w chmurze platformy Azure dla języka Python
 
-Program Visual Studio zawiera szablony ułatwiające wprowadzenie do tworzenia usług Azure Cloud Services przy użyciu języka Python.
+Program Visual Studio udostępnia szablony ułatwiające rozpoczęcie tworzenia Cloud Services platformy Azure przy użyciu języka Python.
 
-A [usługi w chmurze](https://docs.microsoft.com/azure/cloud-services/) składa się z dowolną liczbą *ról procesów roboczych* i *role sieci web*, z których każdy wykonuje koncepcyjnie osobne zadania, ale można osobno być replikowane między maszyny wirtualne w razie potrzeby skalowania. Role sieć Web udostępniają hosting dla aplikacji frontonu sieci web. W przypadku danego języka Python, wszystkie struktury sieci web, który obsługuje WSGI może być użyty do zapisu takiej aplikacji (obsługiwana przez [szablon projektów internetowych](python-web-application-project-templates.md)). Role procesów roboczych są przeznaczone dla długotrwałe procesy, które nie bezpośrednią interakcję z użytkownikami. Zazwyczaj należy używać pakietów w pakiecie "azure", który został zainstalowany przy użyciu [ `pip install azure` ](https://pypi.org/project/azure).
+[Usługa w chmurze](/azure/cloud-services/) składa się z dowolnej liczby *ról procesów roboczych* i *ról sieci Web*, z których każda wykonuje koncepcyjnie oddzielne zadanie, ale może być oddzielnie replikowana między maszynami wirtualnymi w razie potrzeby skalowania. Role sieci Web zapewniają hosting dla aplikacji sieci Web frontonu. W przypadku, gdy język Python jest objęty, dowolna architektura sieci Web, która obsługuje WSGI, może być używana do pisania takiej aplikacji (zgodnie z obsługą [szablonu projektu sieci Web](python-web-application-project-templates.md)). Role procesu roboczego są przeznaczone dla długotrwałych procesów, które nie współdziałają bezpośrednio z użytkownikami. Zwykle korzystają z pakietów w pakiecie "Azure", który jest instalowany z [`pip install azure`](https://pypi.org/project/azure).
 
-Ten artykuł zawiera szczegółowe informacje o szablonie projektu i innych obsłudze programu Visual Studio 2017 i nowszych (starsze wersje są podobne, ale z pewnymi różnicami). Aby uzyskać więcej informacji dotyczących pracy z platformą Azure za pomocą języka Python, odwiedź stronę [Centrum deweloperów języka Python Azure](https://docs.microsoft.com/azure/python/).
+Ten artykuł zawiera szczegółowe informacje o szablonie projektu i innych obsłudze programu Visual Studio 2017 i nowszych (starsze wersje są podobne, ale z pewnymi różnicami). Aby uzyskać więcej informacji na temat pracy z platformą Azure w języku Python, odwiedź [Centrum deweloperów języka Python platformy Azure](/azure/python/).
 
 ## <a name="create-a-project"></a>Tworzenie projektu
 
-1. Zainstaluj [Azure .NET SDK dla programu Visual Studio](https://visualstudio.microsoft.com/vs/azure-tools/), co jest wymagane do przy użyciu szablonu usługi w chmurze.
-1. W programie Visual Studio, wybierz **pliku** > **New** > **projektu**, a następnie wyszukaj "Python platformy Azure" i wybierz **w chmurze platformy Azure Usługa** z listy:
+1. Zainstaluj [zestaw Azure .NET SDK dla programu Visual Studio](https://visualstudio.microsoft.com/vs/azure-tools/), który jest wymagany do użycia szablonu usługi w chmurze.
+1. W programie Visual Studio wybierz pozycję **plik** > **Nowy** > **projekt**, wyszukaj ciąg "Azure Python" i wybierz z listy pozycję **Usługa w chmurze platformy Azure** :
 
-    ![Szablonu projektu w chmurze platformy Azure dla języka Python](media/template-azure-cloud-project.png)
+    ![Szablon projektu w chmurze platformy Azure dla języka Python](media/template-azure-cloud-project.png)
 
-1. Wybierz co najmniej jedną rolę, aby uwzględnić. Projekty w chmurze mogą łączyć role napisane w różnych językach, dzięki czemu można łatwo napisać poszczególnych części aplikacji w najbardziej odpowiedni język. Aby dodać nowe role do projektu po zakończeniu to okno dialogowe, kliknij prawym przyciskiem myszy **role** w **Eksploratora rozwiązań** i wybierz jeden z elementów w obszarze **Dodaj**.
+1. Wybierz co najmniej jedną rolę do dołączenia. Projekty w chmurze mogą łączyć role pisane w różnych językach, dzięki czemu można łatwo napisać każdą część aplikacji w najbardziej odpowiednim języku. Aby dodać nowe role do projektu po zakończeniu tego okna dialogowego, kliknij prawym przyciskiem myszy pozycję **role** w **Eksplorator rozwiązań** i wybierz jeden z elementów w obszarze **Dodaj**.
 
     ![Dodawanie ról w szablonie projektu w chmurze platformy Azure](media/template-azure-cloud-service-project-wizard.png)
 
-1. Podczas tworzenia projektów poszczególnych ról monit może zainstalować dodatkowe pakiety Python, takie jak struktury Django, Bottle lub Flask w przypadku wybrania roli, która korzysta z jednego z nich.
+1. W miarę tworzenia projektów poszczególnych ról może zostać wyświetlony monit o zainstalowanie dodatkowych pakietów języka Python, takich jak Django, butelka lub struktury kolb, jeśli wybrano rolę, która używa jednego z nich.
 
-1. Po dodaniu nowej roli do projektu, są wyświetlane instrukcje konfiguracji. Zmiany konfiguracji są zazwyczaj zbędna, ale mogą być przydatne do dostosowywania przyszłych projektów. Należy pamiętać, że podczas dodawania wielu ról w tym samym czasie, pozostają otwarte, tylko instrukcje dotyczące ostatniej roli. Jednakże, można znaleźć instrukcje i wskazówki dotyczące rozwiązywania problemów dla innych ról na odpowiednich *readme.mht* plików znajdujących się w domenie głównej roli lub w *bin* folderu.
+1. Po dodaniu nowej roli do projektu pojawiają się instrukcje dotyczące konfiguracji. Zmiany konfiguracji są zwykle niepotrzebne, ale mogą być przydatne do przyszłego dostosowywania projektów. Należy pamiętać, że podczas dodawania wielu ról w tym samym czasie tylko instrukcje dla ostatniej roli pozostają otwarte. Można jednak znaleźć instrukcje i wskazówki dotyczące rozwiązywania problemów dla innych ról w odpowiednich plikach *README. mht* , znajdujących się w katalogu głównym roli lub w folderze *bin* .
 
-1. Projekt *bin* folder zawiera także jednego lub dwóch skryptów programu PowerShell, które są używane do konfigurowania zdalnego maszyny wirtualnej, łącznie z zainstalowaniem języka Python, wszelkie [ *requirements.txt* ](#dependencies) plik w projekcie i konfigurowania usług IIS, jeśli to konieczne. Możesz edytować te pliki do wdrożenia, jednak najbardziej typowe opcje mogą być zarządzane w inny sposób (zobacz [skonfigurować wdrażanie ról w usługach](#configure-role-deployment) poniżej). Nie zaleca się usunięcie tych plików skryptu konfiguracyjnego starszej wersji jest używany zamiast tego, jeśli pliki nie są dostępne.
+1. Folder *bin* projektu zawiera również jeden lub dwa skrypty programu PowerShell, które służą do konfigurowania zdalnej maszyny wirtualnej, w tym Instalowanie języka Python, każdy plik [*Requirements. txt*](#dependencies) w projekcie i Konfigurowanie usług IIS w razie potrzeby. Pliki te można edytować zgodnie z potrzebami we wdrożeniu, ale większość typowych opcji można zarządzać innymi sposobami (zobacz [Konfigurowanie wdrożenia roli](#configure-role-deployment) poniżej). Nie sugerujemy usuwania tych plików, ponieważ zamiast nich jest używany starszy skrypt konfiguracji, jeśli pliki są niedostępne.
 
-    ![Pliki obsługi roli procesu roboczego](media/template-azure-cloud-service-worker-role-support-files.png)
+    ![Pliki obsługi roli proces roboczy](media/template-azure-cloud-service-worker-role-support-files.png)
 
-    Aby dodać te skrypty konfiguracji do nowego projektu, kliknij prawym przyciskiem myszy projekt, wybierz **Dodaj** > **nowy element**i wybierz opcję **pliki obsługi roli sieci Web** lub **Pliki obsługi roli procesu roboczego**.
+    Aby dodać te skrypty konfiguracji do nowego projektu, kliknij prawym przyciskiem myszy projekt, wybierz polecenie **dodaj** > **nowy element**i wybierz opcję **pliki obsługi roli sieci Web** lub **pliki obsługi roli procesu roboczego**.
 
 ## <a name="configure-role-deployment"></a>Konfigurowanie wdrożenia roli
 
-Skrypty programu PowerShell w projekcie roli *bin* folderu kontrolować wdrażanie tej roli i może być edytowana, aby dostosować konfigurację:
+Skrypty programu PowerShell w folderze *bin* projektu roli sterują wdrożeniem tej roli i mogą być edytowane w celu dostosowania konfiguracji:
 
-- *ConfigureCloudService.ps1* służy do ról sieć web i proces roboczy, zazwyczaj można zainstalować i skonfigurować zależności i ustaw wersję języka Python.
-- *Skryptu LaunchWorker.ps1* jest używany tylko w przypadku ról procesów roboczych i jest używany, aby zmienić zachowanie podczas uruchamiania, Dodaj argumenty wiersza polecenia lub dodać zmienne środowiskowe.
+- *ConfigureCloudService. ps1* jest używany dla ról Sieć Web i proces roboczy, zazwyczaj w celu zainstalowania i skonfigurowania zależności oraz ustawienia wersji języka Python.
+- *LaunchWorker. ps1* jest używany tylko dla ról procesów roboczych i służy do zmiany zachowania uruchamiania, dodawania argumentów wiersza polecenia lub dodawania zmiennych środowiskowych.
 
-Oba te pliki zawierają instrukcje dotyczące dostosowywania. Można także zainstalować własną wersję języka Python, dodając inne zadanie do głównego projektu usługi w chmurze firmy *ServiceDefinition.csdef* pliku, ustawianie `PYTHON` zmienną i jej zainstalowanych *python.exe*(lub równoważnego) ścieżki. Gdy `PYTHON` jest ustawiona, język Python nie jest instalowany z pakietów NuGet.
+Oba pliki zawierają instrukcje dotyczące dostosowywania. Możesz również zainstalować własną wersję środowiska Python, dodając kolejne zadanie do pliku *ServiceDefinition. csdef* projektu usługi w chmurze, ustawiając zmienną `PYTHON` na jej zainstalowaną ścieżkę *Python. exe* (lub równoważną). Po ustawieniu `PYTHON` Język Python nie jest instalowany z narzędzia NuGet.
 
-Dodatkowa konfiguracja może się odbywać w następujący sposób:
+Dodatkową konfigurację można wykonać w następujący sposób:
 
-1. Instalowanie pakietów przy użyciu `pip` , aktualizując *requirements.txt* pliku w katalogu głównym projektu. *ConfigureCloudService.ps1* skrypt instaluje ten plik na wdrożenie.
-1. Ustawianie zmiennych środowiskowych, modyfikując swoje *web.config* pliku (role sieci web) lub `Runtime` części Twojej *ServiceDefinition.csdef* pliku (role proces roboczy).
-1. Określ skrypt i argumenty do użycia dla roli procesu roboczego, modyfikując wiersza polecenia w pliku `Runtime/EntryPoint` części Twojej *ServiceDefinitions.csdef* pliku.
-1. Ustaw skrypt głównego programu obsługi dla roli sieci web, za pośrednictwem *web.config* pliku.
+1. Zainstaluj pakiety przy użyciu `pip`, aktualizując plik *Requirements. txt* w katalogu głównym projektu. Skrypt *ConfigureCloudService. ps1* instaluje ten plik we wdrożeniu.
+1. Ustaw zmienne środowiskowe, modyfikując plik *Web. config* (role sieci Web) lub sekcję `Runtime` pliku *ServiceDefinition. csdef* (role procesów roboczych).
+1. Określ skrypt i argumenty, które mają być używane przez rolę procesu roboczego, modyfikując wiersz polecenia w sekcji `Runtime/EntryPoint` pliku *ServiceDefinitions. csdef* .
+1. Ustaw główny skrypt obsługi dla roli sieci Web za pomocą pliku *Web. config* .
 
-## <a name="test-role-deployment"></a>Testowanie wdrażania roli
+## <a name="test-role-deployment"></a>Testowanie wdrożenia roli
 
-Podczas zapisywania roli, należy przetestować projekt w chmurze lokalnie przy użyciu emulatora usługi chmury. Emulator jest dołączony do platformy Azure SDK Tools i jest ograniczona wersja środowiska używane po opublikowaniu usługi w chmurze na platformie Azure.
+Podczas pisania ról można testować projekt w chmurze lokalnie za pomocą emulatora usługi w chmurze. Emulator jest dołączony do usługi Azure SDK Tools i jest ograniczoną wersją środowiska używanego podczas publikowania usługi w chmurze na platformie Azure.
 
-Aby uruchomić emulator, najpierw upewnij się, projekt w chmurze jest projektem startowym w rozwiązaniu, kliknij prawym przyciskiem myszy i wybierając **Ustaw jako projekt startowy**. Następnie wybierz pozycję **debugowania** > **Rozpocznij debugowanie** (**F5**) lub **debugowania** > **uruchomić bez Debugowanie** (**Ctrl**+**F5**).
+Aby uruchomić emulator, najpierw upewnij się, że projekt w chmurze jest projektem startowym w rozwiązaniu, klikając prawym przyciskiem myszy i wybierając pozycję **Ustaw jako projekt startowy**. Następnie wybierz kolejno opcje **debuguj** > **Rozpocznij debugowanie** (**F5**) lub **debuguj** > **Uruchom bez debugowania** (**Ctrl**+**F5**).
 
-Należy pamiętać, że ze względu na ograniczenia w emulatorze nie jest możliwe debugowanie kodu w języku Python. Dlatego zalecamy debugować role, uruchamiając je niezależnie, a następnie użyć emulatora usługi integracji, testowania, przed opublikowaniem.
+Należy zauważyć, że ze względu na ograniczenia w emulatorze nie jest możliwe debugowanie kodu w języku Python. W ten sposób zalecamy debugowanie ról przez uruchamianie ich niezależnie, a następnie użycie emulatora do testowania integracji przed opublikowaniem.
 
-## <a name="deploy-a-role"></a>Wdrażania roli
+## <a name="deploy-a-role"></a>Wdróż rolę
 
-Aby otworzyć **Publikuj** kreatora, wybierz rolę, projekt w **Eksploratora rozwiązań** i wybierz **kompilacji** > **Publikuj** z menu głównego, lub kliknij prawym przyciskiem myszy projekt i wybierz pozycję **Publikuj**.
+Aby otworzyć kreatora **publikacji** , wybierz projekt roli w **Eksplorator rozwiązań** i wybierz opcję **Kompiluj** > **Opublikuj** z menu głównego lub kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Publikuj**.
 
-Proces publikowania obejmuje dwa etapy. Po pierwsze Visual Studio tworzy pojedynczy pakiet zawierający wszystkie role dla usługi w chmurze. Ten pakiet jest o tym, co jest wdrożona na platformie Azure, inicjuje co najmniej jednej maszyny wirtualnej dla każdej roli, która wdraża źródła.
+Proces publikowania obejmuje dwie fazy. Po pierwsze program Visual Studio tworzy pojedynczy pakiet zawierający wszystkie role dla usługi w chmurze. Ten pakiet jest wdrożony na platformie Azure, co inicjuje co najmniej jedną maszynę wirtualną dla każdej roli i wdraża źródło.
 
-Ponieważ każda maszyna wirtualna aktywuje, wykonuje *ConfigureCloudService.ps1* skryptu i instaluje wszystkie zależności. Ten skrypt domyślnie instaluje najnowszą wersję języka Python z [NuGet](https://www.nuget.org/packages?q=Tags%3A%22python%22+Authors%3A%22Python+Software+Foundation%22) i wszelkich pakietów, które określono w *requirements.txt* pliku.
+W miarę aktywowania każdej maszyny wirtualnej jest wykonywany skrypt *ConfigureCloudService. ps1* i instalowane są wszystkie zależności. Ten skrypt domyślnie instaluje najnowszą wersję środowiska Python z narzędzia [NuGet](https://www.nuget.org/packages?q=Tags%3A%22python%22+Authors%3A%22Python+Software+Foundation%22) i wszystkie pakiety określone w pliku *Requirements. txt* .
 
-Na koniec ról procesów roboczych wykonania *skryptu LaunchWorker.ps1*, co spowoduje włączenie uruchamiania skryptu w języku Python; web zainicjować role usług IIS i rozpocząć obsługę żądań sieci web.
+Na koniec role procesów roboczych wykonują *LaunchWorker. ps1*, które zaczynają uruchamiać skrypt języka Python; role sieci Web inicjują usługi IIS i zaczynają obsługiwać żądania sieci Web.
 
 ## <a name="dependencies"></a>Zależności
 
-Dla usług Cloud Services *ConfigureCloudService.ps1* skrypt `pip` zainstalować zestaw zależności języka Python. Zależności powinny być określone w pliku o nazwie *requirements.txt* (można dostosować, modyfikując *ConfigureCloudService.ps1*). Plik jest wykonywane przy użyciu `pip install -r requirements.txt` częścią inicjowania.
+W przypadku Cloud Services skrypt *ConfigureCloudService. ps1* używa `pip` do instalowania zestawu zależności języka Python. Zależności należy określać w pliku o nazwie *Requirements. txt* (dostosowywalny, modyfikując *ConfigureCloudService. ps1*). Plik jest wykonywany z `pip install -r requirements.txt` w ramach inicjalizacji.
 
-Należy zauważyć, że wystąpienia usługi w chmurze nie zawierają Kompilatory języka C, dlatego wszystkie biblioteki za pomocą rozszerzenia języka C, należy podać wstępnie skompilowane pliki binarne.
+Należy pamiętać, że wystąpienia usługi w chmurze nie obejmują kompilatorów języka C, dlatego wszystkie biblioteki z rozszerzeniami języka C muszą udostępniać wstępnie skompilowane pliki binarne.
 
-narzędzia PIP i jego zależności, a także pakietów w *requirements.txt*, są pobierane automatycznie i może być liczone jako płatny przepustowości. Zobacz [zarządzania wymagane pakiety](managing-required-packages-with-requirements-txt.md) Aby uzyskać szczegółowe informacje na temat zarządzania *requirements.txt* plików.
+Program PIP i jego zależności, a także pakiety w programie *Requirements. txt*, są pobierane automatycznie i mogą być zliczane jako obciążenie przepustowością. Zobacz [Zarządzanie wymaganymi pakietami](managing-required-packages-with-requirements-txt.md) , aby uzyskać szczegółowe informacje na temat zarządzania plikami *Requirements. txt* .
 
 ## <a name="troubleshooting"></a>Rozwiązywanie problemów
 
-Jeśli po wdrożeniu Twojej roli sieci web lub proces roboczy nie działają prawidłowo, sprawdź następujące informacje:
+Jeśli rola sieci Web lub proces roboczy nie działa prawidłowo po wdrożeniu, należy sprawdzić następujące kwestie:
 
-- Obejmuje projektu języka Python *bin\\*  folder z (co najmniej):
+- Projekt w języku Python zawiera folder *\\bin* z (co najmniej):
 
-  - *ConfigureCloudService.ps1*
-  - *Skryptu LaunchWorker.ps1* (dla ról procesów roboczych)
-  - *PS.cmd*
+  - *ConfigureCloudService. ps1*
+  - *LaunchWorker. ps1* (dla ról procesów roboczych)
+  - *PS. cmd*
 
-- Obejmuje projektu języka Python *requirements.txt* plików, wyświetlanie listy wszystkich zależności (lub też Kolekcja plików kółka).
-- Włączanie pulpitu zdalnego w usłudze w chmurze i sprawdź pliki dziennika.
-- W dziennikach *ConfigureCloudService.ps1* i *skryptu LaunchWorker.ps1* są przechowywane w *C:\Resources\Directory\%roli o identyfikatorze %. DiagnosticStore\LogFiles* folderu na komputerze zdalnym.
-- Role sieci Web może tworzyć dodatkowe dzienniki ścieżką skonfigurowane w *web.config*, to znaczy ścieżka w `WSGI_LOG` appSetting. Działa także najbardziej regularne rejestrowania usług IIS i FastCGI.
-- Obecnie *LaunchWorker.ps1.log* plik jest jedynym sposobem, aby wyświetlić dane wyjściowe lub błędy wyświetlane przez rolę proces roboczy języka Python.
+- Projekt w języku Python zawiera plik *Requirements. txt* zawierający wszystkie zależności (lub alternatywnie zbiór plików kółka).
+- Włącz Pulpit zdalny w usłudze w chmurze i zbadaj pliki dziennika.
+- Dzienniki dla *ConfigureCloudService. ps1* i *LaunchWorker. ps1* są przechowywane w *folderze c:\resources\directory\%RoleId%. Folder DiagnosticStore\LogFiles* na komputerze zdalnym.
+- Role sieci Web mogą zapisywać dodatkowe dzienniki w ścieżce skonfigurowanej w *pliku Web. config*, a mianowicie ścieżki w `WSGI_LOG` element appSetting. Najczęściej działa również rejestrowanie w usługach IIS lub FastCGI.
+- Obecnie plik *LaunchWorker. ps1. log* jest jedynym sposobem wyświetlania danych wyjściowych lub błędów wyświetlanych przez rolę procesu roboczego języka Python.
