@@ -1,5 +1,5 @@
 ---
-title: 'Eksplorator serwera: Rozszerzanie węzła połączeń SharePoint'
+title: 'Eksplorator serwera: rozszerzanie węzła połączeń programu SharePoint'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,275 +13,275 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bf3d39a8a06a59ed337c0d847bb92875f0f68558
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 4a40c20b92dc221dfab566240d27912b2b7e58be
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824163"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985000"
 ---
-# <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Przewodnik: Wywoływanie modelu obiektu klienta SharePoint w rozszerzeniu Eksploratora serwera
-  W tym instruktażu pokazano, jak wywołać modelu obiektu klienta SharePoint z rozszerzeniem dla **połączeń SharePoint** w węźle **Eksploratora serwera**. Aby uzyskać więcej informacji o sposobie używania modelu obiektu klienta SharePoint, zobacz [wywoływanie modeli obiektów SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
+# <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Przewodnik: wywoływanie modelu obiektów klienta programu SharePoint w rozszerzeniu Eksplorator serwera
+  W tym instruktażu pokazano, jak wywołać model obiektów klienta programu SharePoint z rozszerzenia dla węzła **połączenia programu SharePoint** w **Eksplorator serwera**. Aby uzyskać więcej informacji o sposobach korzystania z modelu obiektów klienta programu SharePoint, zobacz [Wywoływanie modeli obiektów programu SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
 
- W tym instruktażu pokazano następujące zagadnienia:
+ W tym instruktażu przedstawiono następujące zadania:
 
-- Tworzenie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] rozszerzenia, która rozszerza **połączeń SharePoint** węźle **Eksploratora serwera** w następujący sposób:
+- Tworzenie rozszerzenia [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], które rozszerza węzeł **połączenia programu SharePoint** **Eksplorator serwera** w następujący sposób:
 
-  - Dodaje rozszerzenie **galerii składników Web Part** węźle każdy węzeł witryny programu SharePoint w **Eksploratora serwera**. Ten nowy węzeł zawiera węzły podrzędne, które reprezentują każdego składnika Web Part w galerii składników Web Part w witrynie.
+  - Rozszerzenie dodaje węzeł **Galerii składników Web Part** w każdym węźle witryny programu SharePoint w **Eksplorator serwera**. Ten nowy węzeł zawiera węzły podrzędne, które reprezentują każdy składnik Web Part w galerii składników Web Part w witrynie.
 
-  - Rozszerzenie definiuje nowy typ węzła, który reprezentuje wystąpienie składnika Web Part. Ten nowy typ węzła jest podstawą dla węzłów podrzędnych w nowym **galerii składników Web Part** węzła. Nowy typ węzła składnika Web Part wyświetla informacje w **właściwości** okna o składnika Web Part, który reprezentuje węzeł.
+  - Rozszerzenie definiuje nowy typ węzła, który reprezentuje wystąpienie składnika Web Part. Ten nowy typ węzła jest podstawą dla węzłów podrzędnych w węźle Galeria nowych **składników Web Part** . Nowy typ węzła składnika Web Part wyświetla informacje w oknie **Właściwości** dotyczące składnika Web Part reprezentowanego przez ten węzeł.
 
-- Tworzenie pakietu Visual Studio rozszerzenia (VSIX), aby wdrożyć rozszerzenie.
+- Kompilowanie pakietu rozszerzenia Visual Studio (VSIX) w celu wdrożenia rozszerzenia.
 
 - Debugowanie i testowanie rozszerzenia.
 
 > [!NOTE]
-> Rozszerzenie, które tworzysz w tym przewodniku przypomina rozszerzenia, który zostanie utworzony w [instruktażu: Rozszerzanie Eksploratora serwera na potrzeby wyświetlania składników web Part](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md). Ten przewodnik korzysta z modelu obiektów serwera SharePoint, ale w tym przewodniku wykonuje te same zadania przy użyciu client object model.
+> Rozszerzenie utworzone w tym instruktażu przypomina rozszerzenie utworzone w [przewodniku: rozszerzanie Eksplorator serwera, aby wyświetlić części sieci Web](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md). W tym instruktażu jest używany model obiektów programu SharePoint Server, ale ten przewodnik wykonuje te same zadania przy użyciu modelu obiektów klienta.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
- Potrzebne są następujące składniki na komputerze deweloperskim w celu przeprowadzenia tego instruktażu:
+ Aby ukończyć ten przewodnik, potrzebne są następujące składniki na komputerze deweloperskim:
 
 - Obsługiwane wersje systemu Windows, SharePoint i Visual Studio.
 
-- The Visual Studio SDK. W tym instruktażu wykorzystano **projekt VSIX** szablonu w zestawie SDK, aby utworzyć pakiet VSIX do wdrożenia rozszerzenia. Aby uzyskać więcej informacji, zobacz [Rozszerzanie narzędzi SharePoint w programie Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).
+- Zestaw SDK programu Visual Studio. W tym instruktażu zostanie użyty szablon **projektu VSIX** w zestawie SDK w celu utworzenia pakietu VSIX do wdrożenia rozszerzenia. Aby uzyskać więcej informacji, zobacz sekcję [rozszerzającą narzędzia programu SharePoint w programie Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).
 
-Znajomość następujących pojęć jest przydatna, ale nie jest to wymagane, aby ukończyć Instruktaż:
+Znajomość następujących pojęć jest pomocna, ale nie jest wymagana, aby ukończyć Przewodnik:
 
-- Przy użyciu modelu obiektu klienta SharePoint. Aby uzyskać więcej informacji, zobacz [zarządzane Client Object Model](http://go.microsoft.com/fwlink/?LinkId=177797).
+- Przy użyciu modelu obiektów klienta programu SharePoint. Aby uzyskać więcej informacji, zobacz [model obiektów klienta zarządzanego](/previous-versions/office/developer/sharepoint-2010/ee537247(v=office.14)).
 
-- Składniki Web Part w programie SharePoint. Aby uzyskać więcej informacji, zobacz [przegląd części sieci Web](http://go.microsoft.com/fwlink/?LinkId=177803).
+- Części sieci Web w programie SharePoint. Aby uzyskać więcej informacji, zobacz [składniki Web Part przegląd](/previous-versions/office/ms432401(v=office.14)).
 
 ## <a name="create-the-projects"></a>Tworzenie projektów
- Do przeprowadzenia tego instruktażu, należy utworzyć dwa projekty:
+ Aby ukończyć ten Instruktaż, należy utworzyć dwa projekty:
 
-- Projekt VSIX do stworzenia pakietu VSIX do wdrożenia **Eksploratora serwera** rozszerzenia.
+- Projekt VSIX, aby utworzyć pakiet VSIX do wdrożenia rozszerzenia **Eksplorator serwera** .
 
-- Projekt biblioteki klas, który implementuje **Eksploratora serwera** rozszerzenia.
+- Projekt biblioteki klas implementujący rozszerzenie **Eksplorator serwera** .
 
-  Instruktaż należy rozpocząć od utworzenia projektów.
+  Rozpocznij przewodnik, tworząc projekty.
 
 #### <a name="to-create-the-vsix-project"></a>Aby utworzyć projekt VSIX
 
 1. Rozpocznij [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2. Na pasku menu wybierz **pliku** > **New** > **projektu**.
+2. Na pasku menu wybierz kolejno pozycje **plik**  > **Nowy**  > **projekt**.
 
-3. W **nowy projekt** okna dialogowego rozwiń **Visual C#** lub **języka Visual Basic** węzłów, a następnie wybierz **rozszerzalności**.
+3. W oknie dialogowym **Nowy projekt** rozwiń węzeł **Wizualizacja C#**  lub **Visual Basic** , a następnie wybierz pozycję **rozszerzalność**.
 
     > [!NOTE]
-    > **Rozszerzalności** węzeł jest dostępny tylko w przypadku instalowania programu Visual Studio SDK. Aby uzyskać więcej informacji zobacz sekcję wymagania wstępne niniejszego tematu.
+    > Węzeł **rozszerzalności** jest dostępny tylko w przypadku instalowania programu Visual Studio SDK. Aby uzyskać więcej informacji, zobacz sekcję wymagania wstępne we wcześniejszej części tego tematu.
 
-4. W górnej części okna dialogowego wybierz **.NET Framework 4.5** na liście wersji programu .NET Framework.
+4. W górnej części okna dialogowego wybierz pozycję **.NET Framework 4,5** na liście wersji .NET Framework.
 
-     Rozszerzenia narzędzi programu SharePoint wymagają funkcji w tej wersji programu .NET Framework.
+     Rozszerzenia narzędzi programu SharePoint wymagają funkcji w tej wersji .NET Framework.
 
-5. Wybierz **projekt VSIX** szablonu.
+5. Wybierz szablon **projektu VSIX** .
 
-6. W **nazwa** wpisz **WebPartNode**, a następnie wybierz **OK** przycisku.
+6. W polu **Nazwa** wpisz **WebPartNode**, a następnie wybierz przycisk **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje **WebPartNode** projekt **Eksploratora rozwiązań**.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje projekt **WebPartNode** do **Eksplorator rozwiązań**.
 
 #### <a name="to-create-the-extension-project"></a>Aby utworzyć projekt rozszerzenia
 
-1. W **Eksploratora rozwiązań**, otwórz menu skrótów dla węzła rozwiązanie, wybierz pozycję **Dodaj**, a następnie wybierz **nowy projekt**.
+1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla węzła rozwiązanie, wybierz polecenie **Dodaj**, a następnie wybierz pozycję **Nowy projekt**.
 
-2. W **nowy projekt** okna dialogowego rozwiń **Visual C#** lub **języka Visual Basic** węzłów, a następnie wybierz **Windows**.
+2. W oknie dialogowym **Nowy projekt** rozwiń węzeł  **C# Wizualizacja** lub **Visual Basic** , a następnie wybierz pozycję **Windows**.
 
-3. W górnej części okna dialogowego wybierz **.NET Framework 4.5** na liście wersji programu .NET Framework.
+3. W górnej części okna dialogowego wybierz pozycję **.NET Framework 4,5** na liście wersji .NET Framework.
 
-4. Na liście szablonów projektu wybierz **biblioteki klas**.
+4. Na liście szablonów projektu wybierz pozycję **Biblioteka klas**.
 
-5. W **nazwa** wprowadź **WebPartNodeExtension**, a następnie wybierz **OK** przycisku.
+5. W polu **Nazwa** wprowadź **WebPartNodeExtension**, a następnie wybierz przycisk **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje **WebPartNodeExtension** projektu do rozwiązania i otwiera plik domyślny kodu Class1.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje projekt **WebPartNodeExtension** do rozwiązania i otwiera domyślny plik kodu Class1.
 
 6. Usuń plik kodu Class1 z projektu.
 
-## <a name="configure-the-extension-project"></a>Konfigurowanie projektu rozszerzenia
- Przed przystąpieniem do napisania kod, aby utworzyć rozszerzenie, należy dodać pliki kodu i odwołania do zestawów do projektu, a następnie należy zaktualizować domyślny obszar nazw.
+## <a name="configure-the-extension-project"></a>Skonfiguruj projekt rozszerzenia
+ Przed napisaniem kodu w celu utworzenia rozszerzenia należy dodać pliki kodu i odwołania do zestawu do projektu i należy zaktualizować domyślną przestrzeń nazw.
 
 #### <a name="to-configure-the-project"></a>Aby skonfigurować projekt
 
-1. W **WebPartNodeExtension** projektu, należy dodać dwa pliki kodu, które są nazywane SiteNodeExtension i WebPartNodeTypeProvider.
+1. W projekcie **WebPartNodeExtension** Dodaj dwa pliki kodu o nazwach SiteNodeExtension i WebPartNodeTypeProvider.
 
 2. Otwórz menu skrótów dla projektu WebPartNodeExtension, a następnie wybierz **Dodaj odwołanie**.
 
-3. W **Menadżer odwołań - WebPartNodeExtension** okna dialogowego wybierz **Framework** węzeł, a następnie zaznacz pola wyboru dla elementy System.ComponentModel.Composition i przestrzeń nazw System.Windows.Forms zestawy.
+3. W oknie dialogowym **Menedżer odwołań — WebPartNodeExtension** wybierz węzeł **Framework** , a następnie zaznacz pola wyboru dla zestawów System. ComponentModel. kompozycji i system. Windows. Forms.
 
-4. Wybierz **rozszerzenia** węzeł, zaznacz pole wyboru dla każdego z następujących zestawów, a następnie wybierz **OK** przycisku:
+4. Wybierz węzeł **rozszerzenia** , zaznacz pole wyboru dla każdego z następujących zestawów, a następnie wybierz przycisk **OK** :
 
-    - Microsoft.SharePoint.Client
+    - Microsoft. SharePoint. Client
 
-    - Microsoft.SharePoint.Client.Runtime
+    - Microsoft. SharePoint. Client. Runtime
 
-    - Microsoft.VisualStudio.SharePoint
+    - Microsoft. VisualStudio. SharePoint
 
-5. Otwórz menu skrótów dla **WebPartNodeExtension** projektu, a następnie wybierz **właściwości**.
+5. Otwórz menu skrótów dla projektu **WebPartNodeExtension** , a następnie wybierz polecenie **Właściwości**.
 
-     **Projektanta projektu** zostanie otwarty.
+     Zostanie otwarty **Projektant projektu** .
 
-6. Wybierz **aplikacji** kartę.
+6. Wybierz kartę **aplikacja** .
 
-7. W **domyślny obszar nazw** pola (C#) lub **głównej przestrzeni nazw** polu (Visual Basic), wprowadź **ServerExplorer.SharePointConnections.WebPartNode**.
+7. W polu **domyślny obszar nazw** (C#) lub **głównej przestrzeni nazw** (Visual Basic) wprowadź **ServerExplorer. SharePointConnections. WebPartNode**.
 
-## <a name="create-icons-for-the-new-nodes"></a>Tworzenie ikony dla nowych węzłów
- Utwórz dwie ikony **Eksploratora serwera** rozszerzenia: ikonę nowego **galerii składników Web Part** węzła i inną ikonę dla każdego węzła podrzędnego składnika Web Part, w obszarze **galerii składników Web Part** węzeł. W dalszej części tego przewodnika napiszesz kod, który kojarzy tych ikon z węzłów.
+## <a name="create-icons-for-the-new-nodes"></a>Utwórz ikony dla nowych węzłów
+ Utwórz dwie ikony rozszerzenia **Eksplorator serwera** : ikona nowego węzła **Galerii składników Web Part** oraz inna ikona dla każdego podrzędnego węzła składnika Web Part w węźle **Galeria składników Web Part** . W dalszej części tego przewodnika napiszesz kod, który kojarzy te ikony z węzłami.
 
 #### <a name="to-create-icons-for-the-nodes"></a>Aby utworzyć ikony dla węzłów
 
-1. W **projektanta projektu** WebPartNodeExtension projektu, wybierz **zasobów** kartę.
+1. W **projektancie projektu** dla projektu WebPartNodeExtension, wybierz kartę **zasoby** .
 
 2. Wybierz łącze **ten projekt nie zawiera domyślnego pliku zasobów. Kliknij tutaj, aby go utworzyć.**
 
      Program Visual Studio tworzy plik zasobów i otwiera go w projektancie.
 
-3. W górnej części projektanta, wybierz strzałkę znajdującą się na **Dodaj zasób** menu polecenia, a następnie wybierz **dodać nową ikonę**.
+3. W górnej części okna projektanta wybierz strzałkę w menu **Dodaj zasób** , a następnie wybierz polecenie **Dodaj nową ikonę**.
 
-4. Wprowadź **WebPartsNode** nowe ikony nazwę, a następnie wybierz **Dodaj** przycisku.
+4. Wprowadź **WebPartsNode** dla nowej nazwy ikony, a następnie wybierz przycisk **Dodaj** .
 
-     Nowa ikona otwiera się w **edytora obrazów**.
+     Nowa ikona zostanie otwarta w **Edytorze obrazu**.
 
-5. Edytuj ikonę w wersji 16 x 16 tak, aby miało projekt, który możesz łatwo rozpoznać.
+5. Edytuj wersję 16x16 ikon, aby mieć projekt, który można łatwo rozpoznać.
 
-6. Otwórz menu skrótów dla wersji 32 x 32, ikony, a następnie wybierz **Usuń typ obrazu**.
+6. Otwórz menu skrótów dla wersji 32x32 ikony, a następnie wybierz polecenie **Usuń typ obrazu**.
 
-7. Powtórz kroki od 3 do 7, aby dodać drugiej ikony do zasobów projektu i nazwij tę ikonę, **składnika Web Part**.
+7. Powtórz kroki od 3 do 7, aby dodać drugą ikonę do zasobów projektu i nazwać ten **składnik**.
 
-8. W **Eksploratora rozwiązań**w **zasobów** folder **WebPartNodeExtension** projektu, wybierz *WebPartsNode.ico*.
+8. W **Eksplorator rozwiązań**w folderze **resources** projektu **WebPartNodeExtension** wybierz *WebPartsNode. ico*.
 
-9. W **właściwości** otwarte okno **Build Action** , a następnie wybierz **zasób osadzony**.
+9. W oknie **Właściwości** Otwórz listę **Akcja kompilacji** , a następnie wybierz pozycję **zasób osadzony**.
 
-10. Powtórz ostatnie dwa kroki dla *WebPart.ico*.
+10. Powtórz ostatnie dwa kroki dla elementu *WebPart. ico*.
 
-## <a name="add-the-web-part-gallery-node-to-server-explorer"></a>Dodawanie węzła galerię części sieci web do Eksploratora serwera
- Utwórz klasę, która dodaje nowy **galerii składników Web Part** węzła do każdego węzła w witrynie programu SharePoint. Aby dodać nowy węzeł, klasa implementuje <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> interfejsu. Implementuje ten interfejs, zawsze wtedy, gdy chcesz rozszerzyć istniejący węzeł w zachowanie **Eksploratora serwera**, takie jak dodanie nowego węzła podrzędnego do węzła.
+## <a name="add-the-web-part-gallery-node-to-server-explorer"></a>Dodaj węzeł Galerii składników Web Part do Eksplorator serwera
+ Utwórz klasę, która dodaje nowy węzeł **Galerii składników Web Part** do każdego węzła witryny programu SharePoint. Aby dodać nowy węzeł, Klasa implementuje interfejs <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension>. Zaimplementuj ten interfejs w każdym przypadku, gdy chcesz zwiększyć zachowanie istniejącego węzła w **Eksplorator serwera**, na przykład dodając nowy węzeł podrzędny do węzła.
 
-#### <a name="to-add-the-web-part-gallery-node-to-server-explorer"></a>Aby dodać węzeł galerię części sieci web do Eksploratora serwera
+#### <a name="to-add-the-web-part-gallery-node-to-server-explorer"></a>Aby dodać węzeł Galerii składników Web Part do Eksplorator serwera
 
-1. Wklej następujący kod do **SiteNodeExtension** plik kodu dla **WebPartNodeExtension** projektu.
+1. Wklej następujący kod do pliku kodu **SiteNodeExtension** dla projektu **WebPartNodeExtension** .
 
     > [!NOTE]
-    > Po dodaniu tego kodu, projekt będzie miał pewne błędy kompilacji. Te błędy znikną po dodaniu kodu w dalszych krokach.
+    > Po dodaniu tego kodu projekt będzie zawierał błędy kompilacji. Te błędy zostaną odrzucone po dodaniu kodu w dalszych krokach.
 
      [!code-csharp[SPExtensibility.SPExplorer.WebPartNode#1](../sharepoint/codesnippet/CSharp/webpartnode/webpartnodeextension/sitenodeextension.cs#1)]
      [!code-vb[SPExtensibility.SPExplorer.WebPartNode#1](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnode.webpartnode/webpartnodeextension/sitenodeextension.vb#1)]
 
-## <a name="define-a-node-type-that-represents-a-web-part"></a>Zdefiniuj typ węzła, który reprezentuje składnik web part
- Utwórz klasę, która definiuje nowy typ węzła, który reprezentuje składnik Web Part. Program Visual Studio używa tego nowego typu węzła do wyświetlania węzłów podrzędnych pod **galerii składników Web Part** węzła. Każdy z tych węzłów podrzędnych reprezentuje pojedynczy składnik Web Part w witrynie programu SharePoint.
+## <a name="define-a-node-type-that-represents-a-web-part"></a>Zdefiniuj typ węzła, który reprezentuje część sieci Web
+ Utwórz klasę, która definiuje nowy typ węzła, który reprezentuje składnik Web Part. Program Visual Studio używa tego nowego typu węzła do wyświetlania węzłów podrzędnych w węźle **Galeria składników Web Part** . Każdy z tych węzłów podrzędnych reprezentuje pojedynczy składnik Web Part w witrynie programu SharePoint.
 
- Aby zdefiniować nowego typu węzła, klasa implementuje <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider> interfejsu. Implementuje ten interfejs, zawsze wtedy, gdy chcesz zdefiniować nowy typ węzła w **Eksploratora serwera**.
+ Aby zdefiniować nowy typ węzła, Klasa implementuje interfejs <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider>. Zaimplementuj ten interfejs w każdym przypadku, gdy chcesz zdefiniować nowy typ węzła w **Eksplorator serwera**.
 
-#### <a name="to-define-the-web-part-node-type"></a>Aby zdefiniować typ węzła części sieci web
+#### <a name="to-define-the-web-part-node-type"></a>Aby zdefiniować typ węzła składnika Web Part
 
-1. Wklej następujący kod do **WebPartNodeTypeProvider** plik kodu dla **WebPartNodeExtension** projektu.
+1. Wklej następujący kod do pliku kodu **WebPartNodeTypeProvider** dla projektu **WebPartNodeExtension** .
 
      [!code-csharp[SPExtensibility.SPExplorer.WebPartNode#2](../sharepoint/codesnippet/CSharp/webpartnode/webpartnodeextension/webpartnodetypeprovider.cs#2)]
      [!code-vb[SPExtensibility.SPExplorer.WebPartNode#2](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnode.webpartnode/webpartnodeextension/webpartnodetypeprovider.vb#2)]
 
-## <a name="checkpoint"></a>Punkt kontrolny
- Na tym etapie w instruktażu, cały kod dla **galerii składników Web Part** węzeł znajduje się teraz w projekcie. Tworzenie **WebPartNodeExtension** projektu, aby upewnić się, że kompiluje bez błędów.
+## <a name="checkpoint"></a>Elementu
+ W tym momencie w przewodniku cały kod węzła **Galerii składników Web Part** znajduje się teraz w projekcie. Utwórz projekt **WebPartNodeExtension** , aby upewnić się, że kompiluje się bez błędów.
 
 #### <a name="to-build-the-project"></a>Aby skompilować projekt
 
-1. W **Eksploratora rozwiązań**, otwórz menu skrótów dla **WebPartNodeExtension** projektu, a następnie wybierz **kompilacji**.
+1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla projektu **WebPartNodeExtension** , a następnie wybierz polecenie **Kompiluj**.
 
-## <a name="create-a-vsix-package-to-deploy-the-extension"></a>Utwórz pakiet VSIX, aby wdrożyć rozszerzenie
- Aby wdrożyć rozszerzenie, należy użyć projektu VSIX w rozwiązaniu Aby utworzyć pakiet VSIX. Najpierw należy skonfigurować pakiet VSIX modyfikując plik source.extension.vsixmanifest, który znajduje się w projekcie. Następnie należy utworzyć pakiet VSIX przez utworzenie rozwiązania.
+## <a name="create-a-vsix-package-to-deploy-the-extension"></a>Tworzenie pakietu VSIX w celu wdrożenia rozszerzenia
+ Aby wdrożyć rozszerzenie, użyj projektu VSIX w rozwiązaniu, aby utworzyć pakiet VSIX. Najpierw skonfiguruj pakiet VSIX, modyfikując plik source. Extension. vsixmanifest, który znajduje się w projekcie. Następnie Utwórz pakiet VSIX, tworząc rozwiązanie.
 
 #### <a name="to-configure-the-vsix-package"></a>Aby skonfigurować pakiet VSIX
 
-1. W **Eksploratora rozwiązań**w **WebPartNode** otwarty projekt **source.extension.vsixmanifest** plik w edytorze manifestu.
+1. W **Eksplorator rozwiązań**, w projekcie **WebPartNode** , Otwórz plik **source. Extension. vsixmanifest** w edytorze manifestu.
 
-     Plik source.extension.vsixmanifest jest podstawą dla pliku extension.vsixmanifest, które wymagają wszystkie pakiety VSIX. Aby uzyskać więcej informacji na temat tego pliku, zobacz [odwołania 1.0 schematu rozszerzenia VSIX](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).
+     Plik source. Extension. vsixmanifest jest podstawą dla pliku Extension. vsixmanifest, który wymaga wszystkich pakietów VSIX. Aby uzyskać więcej informacji na temat tego pliku, zobacz [Dokumentacja schematu rozszerzenia VSIX 1,0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).
 
-2. W **nazwa produktu** wprowadź **węzła galerię części sieci Web w Eksploratorze serwera**.
+2. W polu **Nazwa produktu** wprowadź **węzeł Galerii składników Web Part dla Eksplorator serwera**.
 
-3. W **Autor** wprowadź **Contoso**.
+3. W polu **autor** wprowadź wartość **contoso**.
 
-4. W **opis** wprowadź **dodaje niestandardowy węzeł galerii składników Web Part do węzła połączeń SharePoint w Eksploratorze serwera**.
+4. W polu **Opis** wprowadź polecenie **dodaje niestandardowy węzeł Galerii składników Web Part do węzła połączenia programu SharePoint w Eksplorator serwera**.
 
-5. Na **zasoby** karta w edytorze wybierz **nowy** przycisku.
+5. Na karcie **zasoby** edytora wybierz przycisk **Nowy** .
 
-6. W **Dodaj nowy zasób** dialogowym **typu** wybierz **Microsoft.VisualStudio.MefComponent**.
+6. W oknie dialogowym **Dodaj nowy zasób** , na liście **typ** wybierz **Microsoft. VisualStudio. MefComponent**.
 
     > [!NOTE]
-    > Ta wartość odpowiada `MefComponent` elementu w pliku extension.vsixmanifest. Ten element Określa nazwę zestawu rozszerzeń w pakiecie VSIX. Aby uzyskać więcej informacji, zobacz [MEFComponent — Element (schemat VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
+    > Ta wartość odpowiada elementowi `MefComponent` w pliku Extension. vsixmanifest. Ten element określa nazwę zestawu rozszerzenia w pakiecie VSIX. Aby uzyskać więcej informacji, zobacz [MefComponent element (schemat VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
-7. W **źródła** wybierz **projekt w bieżącym rozwiązaniu**.
+7. Z listy **Źródło** wybierz **projekt w bieżącym rozwiązaniu**.
 
-8. W **projektu** wybierz **WebPartNodeExtension**, a następnie wybierz **OK** przycisku.
+8. Na liście **projekt** wybierz pozycję **WebPartNodeExtension**, a następnie wybierz przycisk **OK** .
 
-9. Na pasku menu wybierz **kompilacji** > **Kompiluj rozwiązanie**, a następnie upewnij się, że rozwiązanie kompiluje bez błędów.
+9. Na pasku menu wybierz **kompiluj** > **Kompiluj rozwiązanie**, a następnie upewnij się, że rozwiązanie kompiluje się bez błędów.
 
-10. Upewnij się, że folder wyjściowy kompilacji dla projektu WebPartNode zawiera teraz plik WebPartNode.vsix.
+10. Upewnij się, że folder danych wyjściowych kompilacji dla projektu WebPartNode zawiera teraz plik WebPartNode. VSIX.
 
-     Domyślnie folderem wyjściowym kompilacji jest... folderze \bin\Debug w folderze, który zawiera plik projektu.
+     Domyślnie folder wyjściowy kompilacji to... folder \bin\Debug w folderze, który zawiera plik projektu.
 
 ## <a name="test-the-extension"></a>Testowanie rozszerzenia
- Teraz można przystąpić do testowania nowego **galerii składników Web Part** w węźle **Eksploratora serwera**. Po pierwsze uruchom debugowanie projektu rozszerzenia w eksperymentalnym wystąpieniu programu Visual Studio. Następnie użyj nowego **składników Web Part** węzła w doświadczalnym wystąpieniu programu Visual Studio.
+ Teraz można przystąpić do testowania nowego węzła **Galerii składników Web Part** w **Eksplorator serwera**. Najpierw Rozpocznij debugowanie projektu rozszerzenia w eksperymentalnym wystąpieniu programu Visual Studio. Następnie użyj nowego węzła **składniki Web Part** w eksperymentalnym wystąpieniu programu Visual Studio.
 
 #### <a name="to-start-debugging-the-extension"></a>Aby rozpocząć debugowanie rozszerzenia
 
-1. Uruchom program Visual Studio przy użyciu poświadczeń administracyjnych, a następnie otwórz **WebPartNode** rozwiązania.
+1. Uruchom ponownie program Visual Studio z poświadczeniami administracyjnymi, a następnie otwórz rozwiązanie **WebPartNode** .
 
-2. W projekcie WebPartNodeExtension Otwórz **SiteNodeExtension** plik kodu, a następnie Dodaj punkt przerwania do pierwszej linii kodu w `NodeChildrenRequested` i `CreateWebPartNodes` metody.
+2. W projekcie WebPartNodeExtension Otwórz plik kodu **SiteNodeExtension** , a następnie Dodaj punkt przerwania do pierwszego wiersza kodu w metodzie `NodeChildrenRequested` i `CreateWebPartNodes`.
 
-3. Wybierz **F5** klawisz, aby rozpocząć debugowanie.
+3. Wybierz klawisz **F5** , aby rozpocząć debugowanie.
 
-     Visual Studio instaluje rozszerzenia do %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Web część galerii węzła Rozszerzenia dla serwera Explorer\1.0 i uruchamia doświadczalne wystąpienie programu Visual Studio. Element projektu będzie testu, w tym wystąpieniu programu Visual Studio.
+     Program Visual Studio instaluje rozszerzenie rozszerzenia węzła galerii części%UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Web dla serwera Explorer\1.0 i uruchamia eksperymentalne wystąpienie programu Visual Studio. Testujesz element projektu w tym wystąpieniu programu Visual Studio.
 
 #### <a name="to-test-the-extension"></a>Aby przetestować rozszerzenie
 
-1. W doświadczalnym wystąpieniu programu Visual Studio, na pasku menu wybierz **widoku** > **Eksploratora serwera**.
+1. W eksperymentalnym wystąpieniu programu Visual Studio na pasku menu wybierz pozycję **wyświetl** > **Eksplorator serwera**.
 
-2. Sprawdź, czy witryna programu SharePoint chcesz używać do testowania jest wyświetlana w obszarze **połączeń SharePoint** w węźle **Eksploratora serwera**. Jeśli nie ma na liście, wykonaj następujące czynności:
+2. Sprawdź, czy witryna programu SharePoint, która ma być używana do testowania, jest wyświetlana w węźle **połączenia programu SharePoint** w **Eksplorator serwera**. Jeśli nie ma go na liście, wykonaj następujące kroki:
 
-    1. Otwórz menu skrótów dla **połączeń SharePoint**, a następnie wybierz **Dodaj połączenie**.
+    1. Otwórz menu skrótów dla **połączeń programu SharePoint**, a następnie wybierz polecenie **Dodaj połączenie**.
 
-    2. W **Dodawanie połączenia programu SharePoint** okna dialogowego wprowadź adres URL witryny programu SharePoint, do którego chcesz połączyć, a następnie wybierz **OK** przycisku.
+    2. W oknie dialogowym **Dodawanie połączenia programu SharePoint** wprowadź adres URL witryny programu SharePoint, z którą chcesz nawiązać połączenie, a następnie wybierz przycisk **OK** .
 
          Aby określić witrynę programu SharePoint na komputerze deweloperskim, wpisz **http://localhost** .
 
-3. Rozwiń węzeł połączenia lokacji (która zawiera adres URL witryny), a następnie rozwiń węzeł lokacji podrzędnej (na przykład **witryny zespołu**).
+3. Rozwiń węzeł połączenie lokacji (w którym jest wyświetlany adres URL witryny), a następnie rozwiń węzeł lokacji podrzędnej (na przykład **Witryna zespołu**).
 
-4. Sprawdź, czy kod w innym wystąpieniu programu Visual Studio zatrzymuje się na punkcie przerwania, który wcześniej w ustawieniu `NodeChildrenRequested` metody, a następnie wybierz **F5** klawisz, aby kontynuować debugowanie projektu.
+4. Sprawdź, czy kod w innym wystąpieniu programu Visual Studio jest zatrzymany w punkcie przerwania, który został ustawiony wcześniej w metodzie `NodeChildrenRequested`, a następnie wybierz klawisz **F5** , aby kontynuować debugowanie projektu.
 
-5. W doświadczalnym wystąpieniu programu Visual Studio, rozwiń **galerii składników Web Part** węzła, który pojawia się w węźle w lokacji najwyższego poziomu.
+5. W eksperymentalnym wystąpieniu programu Visual Studio rozwiń węzeł **Galeria składników Web Part** , który jest wyświetlany w węźle lokacja najwyższego poziomu.
 
-6. Sprawdź, czy kod w innym wystąpieniu programu Visual Studio zatrzymuje się na punkcie przerwania, który wcześniej w ustawieniu `CreateWebPartNodes` metody, a następnie wybierz **F5** klawisz, aby kontynuować debugowanie projektu.
+6. Sprawdź, czy kod w innym wystąpieniu programu Visual Studio jest zatrzymany w punkcie przerwania, który został ustawiony wcześniej w metodzie `CreateWebPartNodes`, a następnie wybierz klawisz **F5** , aby kontynuować debugowanie projektu.
 
-7. W doświadczalnym wystąpieniu programu Visual Studio, sprawdź, czy wszystkie składniki Web Part w podłączonej lokacji są wyświetlane w obszarze **galerii składników Web Part** w węźle **Eksploratora serwera**.
+7. W eksperymentalnym wystąpieniu programu Visual Studio Sprawdź, czy wszystkie składniki Web Part w połączonej lokacji są wyświetlane w węźle **Galeria składników Web Part** w **Eksplorator serwera**.
 
-8. Otwórz menu skrótów dla składnika Web Part, a następnie wybierz **właściwości**.
+8. Otwórz menu skrótów dla składnika Web Part, a następnie wybierz polecenie **Właściwości**.
 
-9. W **właściwości** okna, sprawdź, czy są wyświetlane szczegółowe informacje o składniku Web Part.
+9. W oknie **Właściwości** Sprawdź, czy są wyświetlane szczegółowe informacje o części sieci Web.
 
-10. W **Eksploratora serwera**, otwórz menu skrótów dla tego samego składnika Web Part, a następnie wybierz **Wyświetl komunikat**.
+10. W **Eksplorator serwera**Otwórz menu skrótów dla tego samego składnika Web Part, a następnie wybierz polecenie **Wyświetl komunikat**.
 
-     W wyświetlonym oknie komunikatu wybierz **OK** przycisku.
+     W wyświetlonym oknie komunikatu wybierz przycisk **OK** .
 
 ## <a name="uninstall-the-extension-from-visual-studio"></a>Odinstaluj rozszerzenie z programu Visual Studio
- Po zakończeniu badania rozszerzenia, należy go odinstalować za pomocą programu Visual Studio.
+ Po zakończeniu testowania rozszerzenia Odinstaluj je z programu Visual Studio.
 
 #### <a name="to-uninstall-the-extension"></a>Aby odinstalować rozszerzenie
 
-1. W doświadczalnym wystąpieniu programu Visual Studio, na pasku menu wybierz **narzędzia** > **rozszerzenia i aktualizacje**.
+1. W eksperymentalnym wystąpieniu programu Visual Studio na pasku menu wybierz kolejno opcje **narzędzia** > **rozszerzenia i aktualizacje**.
 
-     **Rozszerzenia i aktualizacje** zostanie otwarte okno dialogowe.
+     Zostanie otwarte okno dialogowe **rozszerzenia i aktualizacje** .
 
-2. Na liście rozszerzeń wybierz **węzła galerię części sieci Web w Eksploratorze serwera**, a następnie wybierz **Odinstaluj** przycisku.
+2. Na liście rozszerzeń wybierz **węzeł Galeria składników Web Part dla Eksplorator serwera**, a następnie wybierz przycisk **Odinstaluj** .
 
-3. W oknie dialogowym wybierz **tak** przycisku.
+3. W oknie dialogowym, które się pojawi, wybierz przycisk **tak** .
 
-4. Wybierz **Uruchom ponownie teraz** przycisk, aby ukończyć dezinstalację.
+4. Wybierz przycisk **Uruchom ponownie teraz** , aby ukończyć dezinstalację.
 
-     Element projektu również zostanie odinstalowana.
+     Element projektu również zostanie odinstalowany.
 
-5. Zamknij oba wystąpienia programu Visual Studio (wystąpienie doświadczalne i wystąpienie programu Visual Studio, w którym rozwiązanie WebPartNode jest otwarty).
+5. Zamknij oba wystąpienia programu Visual Studio (wystąpienie eksperymentalne i wystąpienie programu Visual Studio, w którym jest otwarte rozwiązanie WebPartNode).
 
 ## <a name="see-also"></a>Zobacz także
-- [Wywoływanie modeli obiektów SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)
-- [Rozszerzanie węzła połączeń SharePoint w Eksploratorze serwera](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
-- [Przewodnik: Rozszerzanie Eksploratora serwera na potrzeby wyświetlania składników web Part](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
+- [Wywoływanie modeli obiektów programu SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)
+- [Rozwiń węzeł połączenia programu SharePoint w Eksplorator serwera](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
+- [Przewodnik: rozszerzona Eksplorator serwera do wyświetlania składników Web Part](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
 - [Edytor obrazów dla ikon](/cpp/windows/image-editor-for-icons)
-- [Tworzenie ikony lub innego obrazu &#40;edytor obrazów dla ikon&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)
+- [Tworzenie ikony lub innego edytora obrazów &#40;obrazów dla ikon&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)

@@ -14,26 +14,23 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5487bd64e835f876141afb6657dd885c38223cc5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2c939d15375696aeef47754eec31f63d15b4371a
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72719460"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72982430"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Obsługa zestawu Visual Studio SDK
 Dostępne są różne opcje pomocy technicznej dla klientów z pytaniami dotyczącymi sposobu rozwinięcia zintegrowanego środowiska programistycznego (IDE) programu Visual Studio.
 
 ## <a name="free-support"></a>Bezpłatna pomoc techniczna
 
-### <a name="msdn-development-center"></a>Centrum deweloperskie MSDN
- [Centrum deweloperów rozszerzeń programu Visual Studio](http://go.microsoft.com/fwlink/?LinkID=84381) w witrynie MSDN zawiera zasoby, które pomagają odpowiedzieć na pytania dotyczące sposobu rozszerzania programu Visual Studio. Na przykład istnieje kilka linków do blogów dla deweloperów VSIP.
-
 ### <a name="microsoft-newsgroups"></a>Grupy dyskusyjne firmy Microsoft
  Członkowie zespołu deweloperów programu Visual Studio i inni deweloperzy, którzy rozszerzają program Visual Studio często uczestniczą w grupie dyskusyjnej Microsoft. Public. vstudio. rozszerzalności. Ta grupa dyskusyjna jest zarządzaną grupą dyskusyjną. Jeśli jesteś uniwersalnym subskrybentem MSDN, upewnij się, że rejestrujesz alias bez spamu, aby umożliwić firmie Microsoft odpowiadanie.
 
 ### <a name="msdn-forums"></a>Fora MSDN
- [Fora MSDN](http://go.microsoft.com/fwlink/?LinkID=76632) zapewniają inny sposób rozmowy z użytkownikami i ekspertami. Graficzny interfejs użytkownika (UI) forów jest zaprojektowany, aby ułatwić korzystanie z nich poza grupami dyskusyjnymi. [Forum rozszerzalności programu Visual Studio](http://go.microsoft.com/fwlink/?LinkID=121964) jest dobrym miejscem umożliwiającym rozpoczęcie wyszukiwania odpowiedzi na pytania dotyczące rozszerzalności. Zawsze wyszukuj przed zapytaniem pytania, ponieważ ktoś inny mógł już zadać to pytanie.
+ [Fora MSDN](https://social.msdn.microsoft.com/Forums/en-US/home) zapewniają inny sposób rozmowy z użytkownikami i ekspertami. Graficzny interfejs użytkownika (UI) forów jest zaprojektowany, aby ułatwić korzystanie z nich poza grupami dyskusyjnymi. [Forum rozszerzalności programu Visual Studio](/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts) jest dobrym miejscem umożliwiającym rozpoczęcie wyszukiwania odpowiedzi na pytania dotyczące rozszerzalności. Zawsze wyszukuj przed zapytaniem pytania, ponieważ ktoś inny mógł już zadać to pytanie.
 
 ### <a name="visual-studio-gallery"></a>Galeria programu Visual Studio
  [Visual Studio Marketplace](https://marketplace.visualstudio.com/) jest miejscem, w którym są rozszerzenia i przykładowy kod. Możesz znaleźć narzędzia, które zwiększają produktywność i środowisko użytkownika w programie Visual Studio, przykładowe aplikacje, które pokazują, jak używać pakietów VSPackage oraz Managed Extensibility Framework (MEF) i innych rodzajów przykładów.
@@ -63,7 +60,7 @@ Klienci, którzy chcą używać [!INCLUDE[vsipsdk](../extensibility/includes/vsi
 
 Pytania dotyczące ofert pomoc techniczna Premier w połączeniu z programem VSIP można wysyłać do [vsipsvs@microsoft.com](mailto:vsipsvs@microsoft.com). Pytania dotyczące nowego programu wykorzystującego zalety partnerów mogą być wysyłane do [advantg@microsoft.com](mailto:advantg@microsoft.com).
 
-Informacje o poszczególnych żądaniach pomocy technicznej można znaleźć w [poszczególnych żądaniach pomocy technicznej](http://go.microsoft.com/fwlink/?LinkID=82385).
+Informacje o poszczególnych żądaniach pomocy technicznej można znaleźć w [poszczególnych żądaniach pomocy technicznej](https://support.microsoft.com/supportforbusiness/productselection).
 
 ## <a name="see-also"></a>Zobacz także
 

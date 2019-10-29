@@ -1,5 +1,5 @@
 ---
-title: Pakowanie i wdrażanie rozwiązań programu SharePoint | Dokumentacja firmy Microsoft
+title: Pakowanie i wdrażanie rozwiązań SharePoint | Microsoft Docs
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,92 +14,92 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4c187865518c9556d63d9e5e632ec5c658fc3e0f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 45815e03d887f4d22f2559acf741f612cab34c49
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953507"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986208"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>Pakowanie i wdrażanie rozwiązań SharePoint
-  Zwykle rozwiązania programu SharePoint jest wdrażana na serwerze programu SharePoint przy użyciu pliku pakietu (wsp) rozwiązania. Można użyć programu Visual Studio, aby organizowanie elementów projektu programu SharePoint w funkcji i utworzyć pakiet do wdrożenia funkcji programu SharePoint.
+  Zazwyczaj rozwiązanie SharePoint jest wdrażane na serwerze programu SharePoint przy użyciu pliku pakietu rozwiązania (wsp). Za pomocą programu Visual Studio można organizować elementy projektu programu SharePoint w funkcje i utworzyć pakiet do wdrażania funkcji programu SharePoint.
 
  Ten temat zawiera następujące informacje:
 
-- [Tworzenie pakietów i funkcji](#create-features-and-packages)
+- [Tworzenie funkcji i pakietów](#create-features-and-packages)
 
-- [Funkcja i Obsługa narzędzia pakowania](#feature-and-packaging-tool-support)
+- [Obsługa narzędzi funkcji i pakietów](#feature-and-packaging-tool-support)
 
 - [Wdrażanie rozwiązań SharePoint](#deploy-sharepoint-solutions)
 
-- [Wdrażanie plików w rozwiązaniach programu SharePoint](#deploy-files-in-sharepoint-solutions)
+- [Wdrażanie plików w rozwiązaniach SharePoint](#deploy-files-in-sharepoint-solutions)
 
-## <a name="create-features-and-packages"></a>Tworzenie pakietów i funkcji
- Używasz programu Visual Studio do grupowania powiązanych elementów programu SharePoint do *funkcji*. Na przykład funkcję dla definicji listy kontaktów może obejmować wystąpienie listy i definicji listy. Te dwa elementy można łączyć w pojedynczej funkcji do celów wdrożenia. Aby uzyskać więcej informacji o funkcjach, zobacz [bloków konstrukcyjnych: Funkcje](http://go.microsoft.com/fwlink/?LinkID=169183).
+## <a name="create-features-and-packages"></a>Tworzenie funkcji i pakietów
+ Możesz użyć programu Visual Studio, aby pogrupować powiązane elementy programu SharePoint w *funkcję*. Na przykład funkcja definicji listy kontaktów może zawierać wystąpienie listy i definicję listy. Te dwa elementy można połączyć w jedną funkcję na potrzeby wdrożenia. Aby uzyskać więcej informacji na temat funkcji, zobacz [Building Block: Features](/previous-versions/office/developer/sharepoint-2010/ee537350(v=office.14)).
 
- Następnie można utworzyć pakietu rozwiązania programu SharePoint (*.wsp*) do połączenia wielu funkcji, lokacji w jeden pakiet, który przechowuje pliki w formacie wymagane przez program SharePoint do wdrożenia pliki do definicji, zespoły i inne pliki serwer. Aby uzyskać więcej informacji, zobacz [bloków konstrukcyjnych: Rozwiązania](http://go.microsoft.com/fwlink/?LinkID=169186).
+ Następnie można utworzyć pakiet rozwiązania programu SharePoint (*wsp*) do łączenia wielu funkcji, definicji lokacji, zestawów i innych plików w jeden pakiet, w którym są przechowywane pliki w formacie wymaganym przez program SharePoint w celu wdrożenia plików na serwerze. Aby uzyskać więcej informacji, zobacz [Building Block: Solutions](/previous-versions/office/developer/sharepoint-2010/ee537008(v=office.14)).
 
-## <a name="feature-and-packaging-tool-support"></a>Funkcja i Obsługa narzędzia pakowania
- Narzędzia programistyczne programu SharePoint w programie Visual Studio umożliwia szybkie organizowanie plików programu SharePoint do funkcji i pakietów rozwiązań ułatwia wdrożenia. Aby skonfigurować pakiet funkcji i rozwiązania, można użyć następujących narzędzi.
+## <a name="feature-and-packaging-tool-support"></a>Obsługa narzędzi funkcji i pakietów
+ Możesz użyć narzędzi programistycznych programu SharePoint w programie Visual Studio, aby szybko organizować pliki programu SharePoint w funkcje i pakiety rozwiązań w celu łatwiejszego wdrażania. Aby skonfigurować funkcję i pakiet rozwiązania, można użyć następujących narzędzi.
 
-- Projektant funkcji i projektancie pakietu.
+- Projektant funkcji i Projektant pakietów.
 
-- Eksploratora pakietów jest oknem narzędzi.
+- Eksplorator pakietów, okno narzędzia.
 
 - Eksplorator rozwiązań.
 
-### <a name="feature-designer-and-package-designer"></a>Funkcja projektanta i projektanta pakietów
- Możesz tworzyć funkcje, ustaw zakresy i inne funkcje należy oznaczyć jako zależności za pomocą projektanta funkcji. Projektant wyświetla również końcowego pliku XML, który opisuje każdej funkcji. Aby uzyskać więcej informacji, zobacz [funkcji SharePoint Utwórz](../sharepoint/creating-sharepoint-features.md).
+### <a name="feature-designer-and-package-designer"></a>Projektant funkcji i Projektant pakietów
+ Można tworzyć funkcje, ustawiać zakresy i oznaczyć inne funkcje jako zależności przy użyciu projektanta funkcji. Projektant wyświetla również końcowy plik XML, który opisuje każdą funkcję. Aby uzyskać więcej informacji, zobacz [Tworzenie funkcji programu SharePoint](../sharepoint/creating-sharepoint-features.md).
 
- Zastosuj tę funkcję z określonej witryny sieci Web lub grupą witryn sieci Web, ustawiając jego *zakres* w Projektancie funkcji. Jeśli funkcja jest aktywowana dla poszczególnych witryn sieci Web, ta funkcja działa tylko w tej konkretnej witryny sieci Web. Jeśli funkcja jest aktywowana dla zbioru witryn, elementy w funkcji są stosowane do kolekcji w całej lokacji. Aby uzyskać więcej informacji, zobacz [zakres elementu](http://go.microsoft.com/fwlink/?LinkID=169189).
+ Zastosuj funkcję do określonej witryny sieci Web lub grupy witryn sieci Web, ustawiając jej *zakres* w Projektancie funkcji. Jeśli funkcja jest aktywowana dla pojedynczej witryny sieci Web, funkcja działa tylko w tej konkretnej witrynie sieci Web. Jeśli funkcja jest aktywowana dla zbioru witryn, elementy w funkcji mają zastosowanie do całej kolekcji witryn. Aby uzyskać więcej informacji, zobacz [Zakres elementu](/previous-versions/office/developer/sharepoint-2010/ms476615(v=office.14)).
 
- Jeśli Twoja funkcja opiera się na inne funkcje, możesz ustawić *zależność aktywacji funkcji* do oznaczenia funkcji zależnych przed udostępnieniem Twojej funkcji. Zależność aktywacji funkcji kontroli, jeśli funkcje zależne są już aktywowane w tym zakresie. Aby uzyskać więcej informacji, zobacz [zależności aktywacji i zakres](http://go.microsoft.com/fwlink/?LinkID=169190).
+ Jeśli funkcja korzysta z innych funkcji, można ustawić *zależność aktywacji funkcji* , aby oznaczyć funkcje zależne przed udostępnieniem funkcji. Zależność aktywacji funkcji sprawdza, czy zależne funkcje są już aktywowane w tym zakresie. Aby uzyskać więcej informacji, zobacz [zależności aktywacji i zakres](/previous-versions/office/developer/sharepoint-2010/aa543162(v=office.14)).
 
- W Projektancie pakietów można grupować elementy programu SharePoint w pakiecie jednego rozwiązania i skonfiguruj opcję Resetuj serwer sieci Web podczas wdrażania. Aby ustawić typ serwera wdrożenia, użyj **właściwości** okna. Projektant generuje również plik XML, który opisuje zawartość pakietu. Aby uzyskać więcej informacji, zobacz [pakietów rozwiązania SharePoint Utwórz](../sharepoint/creating-sharepoint-solution-packages.md).
+ W projektancie pakietów można grupować elementy programu SharePoint w jednym pakiecie rozwiązań i konfigurować, czy serwer sieci Web ma być resetowany podczas wdrażania. Aby ustawić typ serwera wdrażania, użyj okna **Właściwości** . Projektant generuje również plik XML, który opisuje zawartość pakietu. Aby uzyskać więcej informacji, zobacz [Tworzenie pakietów rozwiązania SharePoint](../sharepoint/creating-sharepoint-solution-packages.md).
 
- Podczas wdrażania usługi Internet Information Services (IIS) jest zatrzymana, można skopiować pliki rozwiązania do serwera programu SharePoint. Przy użyciu projektanta pakietów w programie Visual Studio, możesz wybrać, czy należy ponownie uruchomić serwer sieci Web. Aby skonfigurować, jeśli rozwiązanie jest wdrożone na serwerze frontonu sieci Web lub serwera aplikacji, użyj **właściwości** okna. Aby uzyskać więcej informacji, zobacz [Element rozwiązania (rozwiązanie)](http://go.microsoft.com/fwlink/?LinkID=169191).
+ Podczas wdrażania usługa Internet Information Services (IIS) jest zatrzymana w celu skopiowania plików rozwiązania do serwera programu SharePoint. Korzystając z projektanta pakietów w programie Visual Studio, można wybrać, czy serwer sieci Web ma być uruchamiany ponownie. Aby skonfigurować, czy rozwiązanie jest wdrożone na serwerze frontonu sieci Web lub serwerze aplikacji, użyj okna **Właściwości** . Aby uzyskać więcej informacji, zobacz [element rozwiązania (rozwiązanie)](/previous-versions/office/developer/sharepoint-2010/ms412929(v=office.14)).
 
-### <a name="packaging-explorer"></a>Eksploratora pakietów
- Jako uzupełnienie funkcji projektanta i projektancie pakietu, można użyć Eksploratora pakietów do grupy plików programu SharePoint do funkcji i pakietów. Ponadto, zobaczysz hierarchiczny widok projektu SharePoint pakietu, funkcje, elementy i pliki. Eksploratora pakietów jest oknem narzędzi, który umożliwia wykonywanie następujących zadań:
+### <a name="packaging-explorer"></a>Eksplorator pakietów
+ Aby uzupełnić projektanta funkcji i projektanta pakietów, można użyć Eksploratora pakietów do grupowania plików programu SharePoint w funkcje i pakiety. Ponadto można zobaczyć hierarchiczny widok pakietu, funkcji, elementów projektu programu SharePoint i plików. Eksplorator pakietów jest oknem narzędzia, za pomocą którego można wykonać następujące zadania:
 
-- Otwórz elementów projektu programu SharePoint i plików.
+- Otwórz elementy projektu programu SharePoint i pliki.
 
-- Przeciągnij i upuść elementów projektu programu SharePoint z jedną funkcję.
+- Przeciągnij i upuść elementy projektu programu SharePoint z jednej funkcji do innej.
 
-- Przeciągnij i upuść elementów projektu programu SharePoint i funkcji z jednego pakietu.
+- Przeciągnij i upuść elementy projektu programu SharePoint i funkcje z jednego pakietu do innego.
 
-- Dodanie nowej funkcji do pakietu.
+- Dodaj nową funkcję do pakietu.
 
-- Otwórz projektanta funkcji lub pakietów.
+- Otwórz funkcję lub projektanta pakietów.
 
 - Sprawdź poprawność funkcji i pakietów.
 
-  Narzędzia projektowania programu SharePoint w programie Visual Studio mają reguły sprawdzania poprawności, aby mieć pewność, że pakiet rozwiązania jest poprawnie uformowany. Ponadto zasad upewnij się, że *.wsp* plik rozwiązania można pomyślnie wdrożyć i aktywować na serwerze programu SharePoint. Aby uzyskać więcej informacji na temat schematu XML dla funkcji, zobacz [schematów funkcji](http://go.microsoft.com/fwlink/?LinkID=169192).
+  Narzędzia deweloperskie programu SharePoint w programie Visual Studio mają reguły sprawdzania poprawności, aby pomóc w zapewnieniu prawidłowego tworzenia pakietu rozwiązania. Ponadto reguły sprawdzają, czy plik rozwiązania *wsp* można pomyślnie wdrożyć i aktywować na serwerze programu SharePoint. Aby uzyskać więcej informacji na temat schematu XML dla funkcji, zobacz [schematy funkcji](/previous-versions/office/developer/sharepoint-2010/ms414322(v=office.14)).
 
-  Można dodać funkcji niestandardowej oraz zasady walidacji pakietu do systemu projektu programu SharePoint. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie funkcji niestandardowej oraz pakiet reguł sprawdzania poprawności dla rozwiązań SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).
+  Do systemu projektu programu SharePoint można dodawać niestandardowe reguły sprawdzania poprawności funkcji i pakietów. Aby uzyskać więcej informacji, zobacz [How to: Create Custom Feature and Package Rules for SharePoint Solutions](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).
 
-  Aby uzyskać więcej informacji na temat Eksploratora pakietów, zobacz [jak: Dodawanie i usuwanie funkcji oraz elementów do pakietu przy użyciu Eksploratora pakietów](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).
+  Aby uzyskać więcej informacji na temat Eksploratora pakietów, zobacz [How to: Dodawanie i usuwanie funkcji oraz elementów do pakietu przy użyciu Eksploratora pakietów](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).
 
 ### <a name="solution-explorer"></a>Eksplorator rozwiązań
- Przejdź do otwierania plików projektu programu SharePoint, można użyć Eksploratora rozwiązań. Użyj menu kontekstowego w Eksploratorze rozwiązań, aby dodać funkcje, funkcji zdarzenia odbiorców, a zasoby funkcji. Ponadto można otworzyć funkcji projektantów i projektanci pakietów, do konfigurowania funkcji oraz pakiety na potrzeby wdrażania.
+ Za pomocą Eksplorator rozwiązań można nawigować i otwierać pliki projektu programu SharePoint. Użyj menu kontekstowego w Eksplorator rozwiązań, aby dodać funkcje, odbiorniki zdarzeń funkcji i zasoby funkcji. Ponadto można otworzyć projektantów funkcji i projektantów pakietów, aby skonfigurować funkcje i pakiety do wdrożenia.
 
 ## <a name="deploy-sharepoint-solutions"></a>Wdrażanie rozwiązań SharePoint
- Po dostosowaniu funkcji i pakietów w programie Visual Studio, można utworzyć *.wsp* plików do wdrożenia na serwerach programu SharePoint. Visual Studio umożliwia debugowanie i testowanie. *wsp* tylko na serwerze programu SharePoint na komputerze deweloperskim. Aby uzyskać więcej informacji na temat wdrażania rozwiązania programu SharePoint na serwerze zdalnym programu SharePoint, zobacz [wdrażanie rozwiązania](http://go.microsoft.com/fwlink/?LinkID=169194).
+ Po dostosowaniu funkcji i pakietów w programie Visual Studio można utworzyć plik *. wsp* do wdrożenia na serwerach programu SharePoint. Możesz użyć programu Visual Studio do debugowania i testowania. Program *wsp* tylko na serwerze programu SharePoint na komputerze deweloperskim. Aby uzyskać więcej informacji na temat sposobu wdrażania rozwiązań programu SharePoint na zdalnym serwerze programu SharePoint, zobacz [wdrażanie rozwiązania](/previous-versions/office/developer/sharepoint-2010/aa544500(v=office.14)).
 
- Można również dostosować kroki wdrażania na komputerze deweloperskim. Aby uzyskać więcej informacji, zobacz [wdrażanie, publikowanie oraz aktualizowanie pakietów rozwiązania SharePoint](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md).
+ Możesz również dostosować kroki wdrażania na komputerze deweloperskim. Aby uzyskać więcej informacji, zobacz [wdrażanie, publikowanie i uaktualnianie pakietów rozwiązania SharePoint](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md).
 
-## <a name="deploy-files-in-sharepoint-solutions"></a>Wdrażanie plików w rozwiązaniach programu SharePoint
- Zazwyczaj podczas dodawania elementu projektu programu SharePoint do rozwiązania programu SharePoint, wszystkie wymagane pliki są uwzględniane. Pliki, które mogą być skompilowane (pliki kodu) są wbudowane w zestawie danych wyjściowych rozwiązania. Jednak również może być konieczne dodanie nie można skompilować dla plików, na przykład *.xml*, *.txt*, lub pliki zasobów, do projektu programu SharePoint. Te pliki nie są automatycznie dostarczane w rozwiązaniu. Aby upewnić się, czy są pakowane, albo Dodaj pliki do zamapowany folder lub elementu projektu programu SharePoint.
+## <a name="deploy-files-in-sharepoint-solutions"></a>Wdrażanie plików w rozwiązaniach SharePoint
+ Zazwyczaj podczas dodawania elementu projektu programu SharePoint do rozwiązania programu SharePoint są uwzględniane wszystkie wymagane pliki. Pliki, które mogą być kompilowane (pliki kodu), są wbudowane w zestaw wyjściowy rozwiązania. Jednak może być również konieczne dodanie plików innych niż nadawać, na przykład plików *XML*, *txt*lub zasobów, do projektu programu SharePoint. Te pliki nie są automatycznie spakowane w rozwiązaniu. Aby upewnić się, że są one spakowane, Dodaj pliki do zamapowanego folderu lub do elementu projektu programu SharePoint.
 
- Pliki dodane do folderów mapowanych są automatycznie kopiowane do gałęzi programu SharePoint, gdy rozwiązanie jest wdrożone. Pliki dodane do elementu projektu programu SharePoint są wdrażane do lokalizacji, która została określona w **lokalizacji wdrożenia** na podstawie właściwości dla każdego pliku, który częściowo ustawiono **typu wdrożenia** właściwości. Domyślnie **typu wdrożenia** wartość właściwości jest **NoDeployment**, co oznacza, że plik nie jest wdrażany za pomocą rozwiązania. Należy ustawić inną wartość dla właściwości dołączenie pliku do pakietu.
+ Pliki dodane do zamapowanych folderów są automatycznie kopiowane do gałęzi programu SharePoint po wdrożeniu rozwiązania. Pliki dodane do elementu projektu programu SharePoint są wdrażane w lokalizacji określonej we właściwości **lokalizacji wdrożenia** dla każdego pliku, który jest częściowo ustawiony na podstawie właściwości **typ wdrożenia** . Domyślnie wartość właściwości **typ wdrożenia** to **NoDeployment**, co oznacza, że plik nie jest wdrażany wraz z rozwiązaniem. Należy ustawić inną wartość właściwości, aby dołączyć plik do pakietu.
 
- Na przykład, aby dodać *.xml* plik do projektu programu SharePoint, wykonaj jedną z następujących czynności:
+ Na przykład, aby dodać plik *XML* do projektu programu SharePoint, wykonaj jedną z następujących czynności:
 
-- Dodaj Folder mapowane "Układy" programu SharePoint do projektu. Spowoduje to utworzenie w **Eksploratora rozwiązań** folder o nazwie **układy** ma osobny podfolder dla projektu. Dodaj *.xml* plik do nowego podfolderu. Domyślnie plik jest wdrożony w systemie plików programu SharePoint w obszarze *... \TEMPLATE\LAYOUTS\\\<nazwę folderu >*. Aby uzyskać informacje dotyczące sposobu dodawania folderów mapowanych, zobacz [porady: Dodawanie i usuwanie folderów mapowanych](../sharepoint/how-to-add-and-remove-mapped-folders.md).
+- Dodaj zamapowany folder "Layouts" programu SharePoint do projektu. Powoduje to utworzenie w **Eksplorator rozwiązań** folderu o nazwie **Layouts** , który ma podfolder dla projektu. Dodaj plik *XML* do nowego podfolderu. Domyślnie plik jest wdrażany w systemie plików programu SharePoint w obszarze *.. \TEMPLATE\LAYOUTS\\\<> nazw folderów*. Aby uzyskać informacje o sposobach dodawania zamapowanych folderów, zobacz [How to: Add and Remove zamapowany Folders](../sharepoint/how-to-add-and-remove-mapped-folders.md).
 
-- Dodaj *.xml* pliku do folderu elementu projektu programu SharePoint, a następnie zmień **typu wdrożenia** właściwość *.xml* plik wchodzącej w skład **NoDeployment**  z innym ustawieniem dla takich jak **RootFile** lub **plik elementu**. Odpowiednie **typu wdrożenia** ustawienie zależy od projektu i pliku. Aby uzyskać więcej informacji na temat **typu wdrożenia** ustawienia właściwości, zobacz [rozwiązań SharePoint opracowywanie](../sharepoint/developing-sharepoint-solutions.md).
+- Dodaj plik *XML* do folderu elementu projektu programu SharePoint, a następnie zmień właściwość **typ wdrożenia** pliku *XML* z **NoDeployment** na inne ustawienie, takie jak **RootFile** lub **elementu**. Odpowiednie ustawienie **typu wdrożenia** zależy od pliku i projektu. Aby uzyskać więcej informacji na temat ustawień właściwości **typu wdrożenia** , zobacz [opracowywanie rozwiązań programu SharePoint](../sharepoint/developing-sharepoint-solutions.md).
 
-  Jeżeli dodany plik nie ma zastosowania do żadnego konkretnego projektu w rozwiązaniu, można dodać pusty projekt programu SharePoint do rozwiązania i następnie dodać dodatkowe pliki do niego. Innym sposobem wdrażania plików dla programu SharePoint, szczególnie do bazy danych zawartości jest dodanie modułu do projektu, a następnie dodaj pliki do modułu. Aby uzyskać więcej informacji, zobacz [używać modułów podczas dołączania plików rozwiązania](../sharepoint/using-modules-to-include-files-in-the-solution.md).
+  Jeśli dodany plik nie dotyczy żadnego konkretnego projektu w rozwiązaniu, można dodać do rozwiązania pusty projekt programu SharePoint, a następnie dodać do niego dodatkowe pliki. Inną alternatywą dla wdrażania plików w programie SharePoint, szczególnie w odniesieniu do bazy danych zawartości, jest dodanie modułu do projektu, a następnie dodanie plików do modułu. Aby uzyskać więcej informacji, zobacz [używanie modułów do dołączania plików w rozwiązaniu](../sharepoint/using-modules-to-include-files-in-the-solution.md).
 
 ## <a name="see-also"></a>Zobacz także
 - [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)

@@ -1,5 +1,5 @@
 ---
-title: Tworzenie niestandardowej akcji elementu projektu z szablonem elementu — część 1
+title: Utwórz niestandardowy element projektu akcji z szablonem elementu, część 1
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,189 +15,189 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3e00d87079fe4986dc378540c1456508c2afa0b7
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: 2a9370fbbd5c806bd3978e3c642da8a6dbd79fd1
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401115"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984988"
 ---
-# <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>Przewodnik: Tworzenie niestandardowej akcji elementu projektu z szablonem elementu, część 1
-  Możesz rozszerzyć systemu projektu programu SharePoint w programie Visual Studio, tworząc własny projekt typów elementów. W tym instruktażu utworzysz element projektu, który można dodać do projektu programu SharePoint w celu utworzenia akcji niestandardowej w witrynie programu SharePoint. Akcja niestandardowa dodaje element menu do **Akcje witryny** menu witryny programu SharePoint.
+# <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>Przewodnik: Tworzenie niestandardowego elementu projektu akcji z szablonem elementu część 1
+  Można zwiększyć system projektu programu SharePoint w programie Visual Studio, tworząc własne typy elementów projektu. W tym instruktażu utworzysz element projektu, który można dodać do projektu programu SharePoint, aby utworzyć akcję niestandardową w witrynie programu SharePoint. Akcja niestandardowa dodaje element menu do menu **Akcje witryny** w witrynie programu SharePoint.
 
- W tym instruktażu pokazano następujące zagadnienia:
+ W tym instruktażu przedstawiono następujące zadania:
 
-- Tworzenie rozszerzenia programu Visual Studio, który definiuje nowy typ elementu projektu programu SharePoint dla akcji niestandardowej. Nowy typ elementu projektu implementuje kilka niestandardowych funkcji:
+- Tworzenie rozszerzenia programu Visual Studio, które definiuje nowy typ elementu projektu programu SharePoint dla akcji niestandardowej. Nowy typ elementu projektu implementuje kilka funkcji niestandardowych:
 
-  - Menu skrótów, która służy jako punkt początkowy dla dodatkowych zadań związanych z elementu projektu, takich jak wyświetlanie projektanta dla akcji niestandardowej w programie Visual Studio.
+  - Menu skrótów, które służy jako punkt wyjścia dla dodatkowych zadań związanych z elementem projektu, takich jak wyświetlanie projektanta dla akcji niestandardowej w programie Visual Studio.
 
-  - Kod, który jest uruchamiany, gdy deweloper zmiany niektórych właściwości elementu projektu i projektu, który go zawiera.
+  - Kod, który jest uruchamiany, gdy deweloper zmieni pewne właściwości elementu projektu i projektu, który go zawiera.
 
-  - Ikony niestandardowej, która pojawia się obok elementu projektu w **Eksploratora rozwiązań**.
+  - Ikona niestandardowa, która pojawia się obok elementu projektu w **Eksplorator rozwiązań**.
 
 - Tworzenie szablonu elementu programu Visual Studio dla elementu projektu.
 
-- Tworzenie pakietu Visual Studio rozszerzenia (VSIX) do wdrożenia szablonu elementu projektu i zestawu rozszerzeń.
+- Kompilowanie pakietu rozszerzenia Visual Studio (VSIX) w celu wdrożenia szablonu elementu projektu i zestawu rozszerzeń.
 
 - Debugowanie i testowanie elementu projektu.
 
-  Jest to przewodnik autonomicznej. Po ukończeniu tego przewodnika, można zwiększyć elementu projektu, dodając Kreatora szablonu elementu. Aby uzyskać więcej informacji, zobacz [instruktażu: Tworzenie niestandardowej akcji elementu projektu z szablonem elementu, część 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).
+  Jest to przewodnik samodzielny. Po zakończeniu tego instruktażu można wzbogacić element projektu, dodając kreatora do szablonu elementu. Aby uzyskać więcej informacji, zobacz [Przewodnik: Tworzenie niestandardowego elementu projektu akcji z szablonem elementu, część 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).
 
 > [!NOTE]
-> Możesz pobrać próbkę z [Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) pokazujący sposób tworzenia działań niestandardowych do przepływu pracy.
+> Możesz pobrać przykład z witryny [GitHub](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) , który pokazuje, jak utworzyć niestandardowe działania dla przepływu pracy.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
- Potrzebne są następujące składniki na komputerze deweloperskim w celu przeprowadzenia tego instruktażu:
+ Aby ukończyć ten przewodnik, potrzebne są następujące składniki na komputerze deweloperskim:
 
 - Obsługiwane wersje systemu Microsoft Windows, SharePoint i Visual Studio.
 
-- [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. W tym instruktażu wykorzystano **projekt VSIX** szablonu w zestawie SDK, aby utworzyć pakiet VSIX do wdrożenia elementu projektu. Aby uzyskać więcej informacji, zobacz [Rozszerzanie narzędzi SharePoint w programie Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).
+- [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. W tym instruktażu zostanie użyty szablon **projektu VSIX** w zestawie SDK, aby utworzyć pakiet VSIX do wdrożenia elementu projektu. Aby uzyskać więcej informacji, zobacz sekcję [rozszerzającą narzędzia programu SharePoint w programie Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).
 
-  Znajomość następujących pojęć jest przydatna, ale nie jest to wymagane, aby ukończyć Instruktaż:
+  Znajomość następujących pojęć jest pomocna, ale nie jest wymagana, aby ukończyć Przewodnik:
 
-- Akcje niestandardowe w programie SharePoint. Aby uzyskać więcej informacji, zobacz [Akcja niestandardowa](http://go.microsoft.com/fwlink/?LinkId=177800).
+- Akcje niestandardowe w programie SharePoint. Aby uzyskać więcej informacji, zobacz [Akcja niestandardowa](/previous-versions/office/developer/sharepoint-2010/ms458635(v=office.14)).
 
-- Szablony elementów w programie Visual Studio. Aby uzyskać więcej informacji, zobacz [tworzenie projektów i szablonów elementów](../ide/creating-project-and-item-templates.md).
+- Szablony elementów w programie Visual Studio. Aby uzyskać więcej informacji, zobacz [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md).
 
 ## <a name="create-the-projects"></a>Tworzenie projektów
- Aby ukończyć ten Instruktaż, musisz utworzyć trzy projekty:
+ Aby ukończyć ten przewodnik, należy utworzyć trzy projekty:
 
-- A VSIX project. Ten projekt tworzy pakiet VSIX do wdrożenia elementu projektu programu SharePoint.
+- Projekt VSIX. Ten projekt tworzy pakiet VSIX do wdrożenia elementu projektu programu SharePoint.
 
-- Element projektu szablonu. Ten projekt tworzy szablon elementu, który może służyć do dodawania elementu projektu programu SharePoint do projektu programu SharePoint.
+- Projekt szablonu elementu. Ten projekt tworzy szablon elementu, którego można użyć do dodania elementu projektu programu SharePoint do projektu programu SharePoint.
 
-- Projekt biblioteki klas. Ten projekt implementuje rozszerzenie programu Visual Studio, która definiuje zachowanie elementu projektu programu SharePoint.
+- Projekt biblioteki klas. Ten projekt implementuje rozszerzenie programu Visual Studio, które definiuje zachowanie elementu projektu programu SharePoint.
 
-  Instruktaż należy rozpocząć od utworzenia projektów.
+  Rozpocznij przewodnik, tworząc projekty.
 
 #### <a name="to-create-the-vsix-project"></a>Aby utworzyć projekt VSIX
 
 1. Rozpocznij [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2. Na pasku menu wybierz **pliku** > **New** > **projektu**.
+2. Na pasku menu wybierz kolejno pozycje **plik**  > **Nowy**  > **projekt**.
 
-3. Na liście u góry **nowy projekt** okna dialogowego pole, upewnij się, że **.NET Framework 4.5** jest zaznaczone.
+3. Upewnij się, że na liście u góry okna dialogowego **Nowy projekt** jest zaznaczone pole wyboru **.NET Framework 4,5** .
 
-4. W **nowy projekt** okna dialogowego rozwiń **Visual C#** lub **języka Visual Basic** węzłów, a następnie wybierz **rozszerzalności** węzła.
+4. W oknie dialogowym **Nowy projekt** rozwiń węzły **wizualizacji C#**  lub **Visual Basic** , a następnie wybierz węzeł **rozszerzalności** .
 
     > [!NOTE]
-    > **Rozszerzalności** węzeł jest dostępny tylko w przypadku instalowania programu Visual Studio SDK. Aby uzyskać więcej informacji zobacz sekcję wymagania wstępne niniejszego tematu.
+    > Węzeł **rozszerzalności** jest dostępny tylko w przypadku instalowania programu Visual Studio SDK. Aby uzyskać więcej informacji, zobacz sekcję wymagania wstępne we wcześniejszej części tego tematu.
 
-5. Wybierz **projekt VSIX** szablonu.
+5. Wybierz szablon **projektu VSIX** .
 
-6. W **nazwa** wprowadź **CustomActionProjectItem**, a następnie wybierz **OK** przycisku.
+6. W polu **Nazwa** wprowadź **CustomActionProjectItem**, a następnie wybierz przycisk **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje **CustomActionProjectItem** projekt **Eksploratora rozwiązań**.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje projekt **CustomActionProjectItem** do **Eksplorator rozwiązań**.
 
 #### <a name="to-create-the-item-template-project"></a>Aby utworzyć projekt szablonu elementu
 
-1. W **Eksploratora rozwiązań**, otwórz menu skrótów dla węzła rozwiązanie, wybierz pozycję **Dodaj**, a następnie wybierz **nowy projekt**.
+1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla węzła rozwiązanie, wybierz polecenie **Dodaj**, a następnie wybierz pozycję **Nowy projekt**.
 
-2. Na liście u góry **nowy projekt** okna dialogowego pole, upewnij się, że **.NET Framework 4.5** jest zaznaczone.
+2. Upewnij się, że na liście u góry okna dialogowego **Nowy projekt** jest zaznaczone pole wyboru **.NET Framework 4,5** .
 
-3. W **nowy projekt** okna dialogowego rozwiń **Visual C#** lub **języka Visual Basic** węzłów, a następnie wybierz **rozszerzalności** węzła.
+3. W oknie dialogowym **Nowy projekt** rozwiń węzły **wizualizacji C#**  lub **Visual Basic** , a następnie wybierz węzeł **rozszerzalności** .
 
-4. Na liście szablonów projektu wybierz **szablon elementu języka C#** lub **szablon elementu języka Visual Basic** szablonu.
+4. Na liście szablonów projektu wybierz szablon  **C# elementu** szablonu lub szablon szablonu **Visual Basic** .
 
-5. W **nazwa** wprowadź **właściwości ItemTemplate**, a następnie wybierz **OK** przycisku.
+5. W polu **Nazwa** wprowadź **ItemTemplate**, a następnie wybierz przycisk **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje **właściwości ItemTemplate** projektu do rozwiązania.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje projekt **ItemTemplate** do rozwiązania.
 
 #### <a name="to-create-the-extension-project"></a>Aby utworzyć projekt rozszerzenia
 
-1. W **Eksploratora rozwiązań**, otwórz menu skrótów dla węzła rozwiązanie, wybierz pozycję **Dodaj**, a następnie wybierz **nowy projekt**.
+1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla węzła rozwiązanie, wybierz polecenie **Dodaj**, a następnie wybierz pozycję **Nowy projekt**.
 
-2. Na liście u góry **nowy projekt** okna dialogowego pole, upewnij się, że **.NET Framework 4.5** jest zaznaczone.
+2. Upewnij się, że na liście u góry okna dialogowego **Nowy projekt** jest zaznaczone pole wyboru **.NET Framework 4,5** .
 
-3. W **nowy projekt** okna dialogowego rozwiń **Visual C#** lub **języka Visual Basic** Wybierz węzły, **Windows** węzła, a następnie wybierz polecenie  **Biblioteka klas** szablonu projektu.
+3. W oknie **dialogowym Nowy projekt** rozwiń węzły  **C# wizualizacji** lub **Visual Basic** , wybierz węzeł **systemu Windows** , a następnie wybierz szablon projektu **Biblioteka klas** .
 
-4. W **nazwa** wprowadź **ProjectItemDefinition**, a następnie wybierz **OK** przycisku.
+4. W polu **Nazwa** wprowadź **ProjectItemDefinition**, a następnie wybierz przycisk **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje **ProjectItemDefinition** projektu do rozwiązania i otwiera plik domyślny kodu Class1.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje projekt **ProjectItemDefinition** do rozwiązania i otwiera domyślny plik kodu Class1.
 
 5. Usuń plik kodu Class1 z projektu.
 
-## <a name="configure-the-extension-project"></a>Konfigurowanie projektu rozszerzenia
- Przed przystąpieniem do napisania kod, aby zdefiniować typ elementu projektu SharePoint, trzeba dodać pliki kodu i odwołania do zestawów do projektu rozszerzenia.
+## <a name="configure-the-extension-project"></a>Skonfiguruj projekt rozszerzenia
+ Przed napisaniem kodu w celu zdefiniowania typu elementu projektu programu SharePoint należy dodać pliki kodu i odwołania do zestawu do projektu rozszerzenia.
 
 #### <a name="to-configure-the-project"></a>Aby skonfigurować projekt
 
-1. W **Eksploratora rozwiązań**, otwórz menu skrótów dla **ProjectItemDefinition** projektu, wybierz **Dodaj**, następnie wybierz **nowy element**.
+1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla projektu **ProjectItemDefinition** , wybierz **Dodaj**, a następnie wybierz **nowy element**.
 
-2. Na liście elementów projektu, wybierz opcję **pliku z kodem**.
+2. Na liście elementów projektu wybierz pozycję **plik kodu**.
 
-3. W **nazwa** wprowadź nazwę **Akcja niestandardowa** z odpowiednie rozszerzenie nazwy pliku, a następnie wybierz **Dodaj** przycisku.
+3. W polu **Nazwa** wprowadź wartość Nazwa wystąpienia z odpowiednim **rozszerzeniem nazwy pliku** , a następnie wybierz przycisk **Dodaj** .
 
-4. W **Eksploratora rozwiązań**, otwórz menu skrótów dla **ProjectItemDefinition** projektu, a następnie wybierz **Dodaj odwołanie**.
+4. W **Eksplorator rozwiązań**Otwórz menu skrótów dla projektu **ProjectItemDefinition** , a następnie wybierz **Dodaj odwołanie**.
 
-5. W **Menadżer odwołań - ProjectItemDefinition** okna dialogowego wybierz **zestawy** węzła, a następnie wybierz **Framework** węzła.
+5. W oknie dialogowym **Menedżer odwołań — ProjectItemDefinition** wybierz węzeł **zestawy** , a następnie wybierz węzeł **Struktura** .
 
-6. Zaznacz pole wyboru obok każdego następujących zestawów:
+6. Zaznacz pole wyboru obok każdego z następujących zestawów:
 
-    - System.ComponentModel.Composition
+    - System. ComponentModel. kompozycji
 
-    - System.Windows.Forms
+    - System. Windows. Forms
 
-7. Wybierz **rozszerzenia** węzeł, zaznacz pole wyboru obok zestawu Microsoft.VisualStudio.Sharepoint, a następnie wybierz **OK** przycisku.
+7. Wybierz węzeł **rozszerzenia** , zaznacz pole wyboru obok zestawu Microsoft. VisualStudio. SharePoint, a następnie wybierz przycisk **OK** .
 
-## <a name="define-the-new-sharepoint-project-item-type"></a>Definiowanie nowego typu elementu projektu SharePoint
- Utwórz klasę, która implementuje <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> interfejsu do określania zachowania nowym typem elementu projektu. Zawsze, gdy chcesz zdefiniować nowy typ elementu projektu, należy zaimplementować ten interfejs.
+## <a name="define-the-new-sharepoint-project-item-type"></a>Zdefiniuj nowy typ elementu projektu programu SharePoint
+ Utwórz klasę, która implementuje interfejs <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider>, aby zdefiniować zachowanie nowego typu elementu projektu. Zaimplementuj ten interfejs w każdym przypadku, gdy chcesz zdefiniować nowy typ elementu projektu.
 
-#### <a name="to-define-the-new-sharepoint-project-item-type"></a>Aby zdefiniować nowym typem elementu projektu SharePoint
+#### <a name="to-define-the-new-sharepoint-project-item-type"></a>Aby zdefiniować nowy typ elementu projektu programu SharePoint
 
-1. W projekcie ProjectItemDefinition Otwórz plik kodu Akcja niestandardowa.
+1. W projekcie ProjectItemDefinition Otwórz plik kodu.
 
 2. Zastąp kod w tym pliku następującym kodem.
 
      [!code-csharp[SPExtensibility.ProjectItem.CustomAction#1](../sharepoint/codesnippet/CSharp/customactionprojectitem/projectitemtypedefinition/customaction.cs#1)]
      [!code-vb[SPExtensibility.ProjectItem.CustomAction#1](../sharepoint/codesnippet/VisualBasic/customactionprojectitem/projectitemdefinition/customaction.vb#1)]
 
-## <a name="create-an-icon-for-the-project-item-in-solution-explorer"></a>Tworzenie ikony dla elementu projektu w Eksploratorze rozwiązań
- Podczas tworzenia niestandardowego elementu projektu programu SharePoint obrazu (ikony lub mapy bitowej) można skojarzyć z elementem projektu. Ten obraz, który pojawia się obok elementu projektu w **Eksploratora rozwiązań**.
+## <a name="create-an-icon-for-the-project-item-in-solution-explorer"></a>Utwórz ikonę dla elementu projektu w Eksplorator rozwiązań
+ Podczas tworzenia niestandardowego elementu projektu programu SharePoint można skojarzyć obraz (ikonę lub mapę bitową) z elementem projektu. Ten obraz pojawia się obok elementu projektu w **Eksplorator rozwiązań**.
 
- W poniższej procedurze należy utworzyć ikonę dla elementu projektu i osadzić ikonę w zestawu rozszerzeń. Odwołuje się ta ikona <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemIconAttribute> z `CustomActionProjectItemTypeProvider` klasę, która została utworzona wcześniej.
+ W poniższej procedurze utworzysz ikonę dla elementu projektu i osadzisz ikonę w zestawie rozszerzeń. Do tej ikony odwołuje się <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemIconAttribute> klasy `CustomActionProjectItemTypeProvider`, która została utworzona wcześniej.
 
-#### <a name="to-create-a-custom-icon-for-the-project-item"></a>Aby utworzyć ikony niestandardowej dla elementu projektu
+#### <a name="to-create-a-custom-icon-for-the-project-item"></a>Aby utworzyć niestandardową ikonę dla elementu projektu
 
-1. W **Eksploratora rozwiązań**, otwórz menu skrótów dla **ProjectItemDefinition** projektu, wybierz **Dodaj**, a następnie wybierz **nowy element...** .
+1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla projektu **ProjectItemDefinition** , wybierz **Dodaj**, a następnie wybierz **nowy element.** ...
 
-2. Na liście elementów projektu, wybierz opcję **plik ikony** elementu.
+2. Na liście elementów projektu wybierz pozycję **plik ikony** .
 
     > [!NOTE]
-    > W projektach języka Visual Basic, musisz wybrać **ogólne** węzeł, aby wyświetlić **plik ikony** elementu.
+    > W projektach Visual Basic należy wybrać węzeł **Ogólne** , aby wyświetlić element **ikony** elementu.
 
-3. W **nazwa** wprowadź **CustomAction_SolutionExplorer.ico**, a następnie wybierz **Dodaj** przycisku.
+3. W polu **Nazwa** wprowadź **CustomAction_SolutionExplorer. ico**, a następnie wybierz przycisk **Dodaj** .
 
-     Nowa ikona otwiera się w **edytora obrazów**.
+     Nowa ikona zostanie otwarta w **Edytorze obrazu**.
 
-4. Tak, aby miało projektu może rozpoznać, a następnie zapisz plik ikony, należy edytować plik ikony w wersji 16 x 16.
+4. Edytuj wersję 16x16 pliku ikony, aby można było rozpoznać projekt, a następnie Zapisz plik ikony.
 
-5. W **Eksploratora rozwiązań**, wybierz **CustomAction_SolutionExplorer.ico**.
+5. W **Eksplorator rozwiązań**wybierz **CustomAction_SolutionExplorer. ico**.
 
-6. W **właściwości** okna, wybierz strzałkę obok **Build Action** właściwości.
+6. W oknie **Właściwości** wybierz strzałkę obok właściwości **Akcja kompilacji** .
 
-7. Na wyświetlonej liście wybierz **zasób osadzony**.
+7. Na wyświetlonej liście wybierz pozycję **zasób osadzony**.
 
-## <a name="checkpoint"></a>Punkt kontrolny
- W tym momencie w instruktażu, cały kod dla elementu projektu jest teraz w projekcie. Skompiluj projekt, aby sprawdzić, czy kompiluje bez błędów.
+## <a name="checkpoint"></a>Elementu
+ W tym momencie w przewodniku cały kod elementu projektu jest teraz w projekcie. Skompiluj projekt, aby upewnić się, że kompiluje się bez błędów.
 
-#### <a name="to-build-your-project"></a>Do kompilowania projektu
+#### <a name="to-build-your-project"></a>Aby skompilować projekt
 
-1. Otwórz menu skrótów dla **ProjectItemDefinition** projektu, a następnie wybierz **kompilacji**.
+1. Otwórz menu skrótów dla projektu **ProjectItemDefinition** i wybierz polecenie **Kompiluj**.
 
-## <a name="create-a-visual-studio-item-template"></a>Tworzenie szablonu elementu programu Visual Studio
- Aby włączyć innych deweloperzy mogą używać element projektu, należy utworzyć szablon projektu lub szablon elementu. Deweloperzy używać tych szablonów w programie Visual Studio do utworzenia wystąpienia elementu projektu, tworząc nowy projekt lub poprzez dodanie elementu do istniejącego projektu. W ramach tego przewodnika należy użyć projektu właściwości ItemTemplate skonfigurować element projektu.
+## <a name="create-a-visual-studio-item-template"></a>Utwórz szablon elementu programu Visual Studio
+ Aby umożliwić innym deweloperom korzystanie z elementu projektu, należy utworzyć szablon projektu lub szablonu elementu. Deweloperzy używają tych szablonów w programie Visual Studio, aby utworzyć wystąpienie elementu projektu przez utworzenie nowego projektu lub poprzez dodanie elementu do istniejącego projektu. W tym instruktażu należy użyć projektu ItemTemplate, aby skonfigurować element projektu.
 
 #### <a name="to-create-the-item-template"></a>Aby utworzyć szablon elementu
 
-1. Usuń plik kodu Class1 z projektu właściwości ItemTemplate.
+1. Usuń plik kodu Class1 z projektu ItemTemplate.
 
-2. W projekcie właściwości ItemTemplate Otwórz *ItemTemplate.vstemplate* pliku.
+2. W projekcie ItemTemplate Otwórz plik *ItemTemplate. vstemplate* .
 
-3. Zastąp zawartość pliku następujący kod XML, a następnie zapisz i zamknij plik.
+3. Zastąp zawartość pliku następującym kodem XML, a następnie Zapisz i zamknij plik.
 
     > [!NOTE]
-    > Następujący kod XML jest szablon elementu Visual C#. Jeśli tworzysz szablon elementu języka Visual Basic, zastąp wartość `ProjectType` element z `VisualBasic`.
+    > Poniższy kod XML jest przeznaczony dla szablonu C# elementu wizualnego. Jeśli tworzysz szablon elementu Visual Basic, Zastąp wartość elementu `ProjectType` elementem `VisualBasic`.
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -218,15 +218,15 @@ ms.locfileid: "66401115"
     </VSTemplate>
     ```
 
-     Ten plik definiuje zawartości i zachowania szablon elementu. Aby uzyskać więcej informacji o zawartości tego pliku, zobacz [odwołanie do schematu szablonu Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference).
+     Ten plik definiuje zawartość i zachowanie szablonu elementu. Aby uzyskać więcej informacji na temat zawartości tego pliku, zobacz [Dokumentacja schematu szablonu programu Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference).
 
-4. W **Eksploratora rozwiązań**, otwórz menu skrótów dla **właściwości ItemTemplate** projektu, wybierz **Dodaj**, a następnie wybierz **nowy element**.
+4. W **Eksplorator rozwiązań**Otwórz menu skrótów dla projektu **ItemTemplate** , wybierz **Dodaj**, a następnie wybierz **nowy element**.
 
-5. W **Dodaj nowy element** okna dialogowego wybierz **plik tekstowy** szablonu.
+5. W oknie dialogowym **Dodaj nowy element** wybierz szablon **plik tekstowy** .
 
-6. W **nazwa** wprowadź **CustomAction.spdata**, a następnie wybierz **Dodaj** przycisku.
+6. W polu **Nazwa** wprowadź wartość **un. spdata**, a następnie wybierz przycisk **Dodaj** .
 
-7. Dodaj następujący kod XML do *CustomAction.spdata* pliku, a następnie zapisz i zamknij plik.
+7. Dodaj następujący kod XML do pliku *. spdata* , a następnie Zapisz i zamknij plik.
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -238,15 +238,15 @@ ms.locfileid: "66401115"
     </ProjectItem>
     ```
 
-     Ten plik zawiera informacje o plikach, które znajdują się elementu projektu. `Type` Atrybutu `ProjectItem` element musi być ustawiony na ten sam ciąg, który jest przekazywany do <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute> w definicji elementu projektu ( `CustomActionProjectItemTypeProvider` klasy utworzonej we wcześniejszej części tego przewodnika). Aby uzyskać więcej informacji na temat zawartości *spdata* plików, zobacz [odwołanie do schematu elementu projektu SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md).
+     Ten plik zawiera informacje o plikach, które są zawarte w elemencie projektu. Atrybut `Type` elementu `ProjectItem` musi być ustawiony na ten sam ciąg, który jest przesyłany do <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute> w definicji elementu projektu (Klasa `CustomActionProjectItemTypeProvider` utworzona wcześniej w tym instruktażu). Aby uzyskać więcej informacji o zawartości plików *. spdata* , zobacz [Dokumentacja schematu elementu projektu programu SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md).
 
-8. W **Eksploratora rozwiązań**, otwórz menu skrótów dla **właściwości ItemTemplate** projektu, wybierz **Dodaj**, a następnie wybierz **nowy element**.
+8. W **Eksplorator rozwiązań**Otwórz menu skrótów dla projektu **ItemTemplate** , wybierz **Dodaj**, a następnie wybierz **nowy element**.
 
-9. W **Dodaj nowy element** okna dialogowego wybierz **pliku XML** szablonu.
+9. W oknie dialogowym **Dodaj nowy element** wybierz szablon **pliku XML** .
 
-10. W **nazwa** wprowadź **Elements.xml**, a następnie wybierz **Dodaj** przycisku.
+10. W polu **Nazwa** wprowadź wartość **elementy. XML**, a następnie wybierz przycisk **Dodaj** .
 
-11. Zastąp zawartość *Elements.xml* plików z następujących XML, a następnie zapisz i zamknij plik.
+11. Zastąp zawartość pliku repliks *. XML* następującym kodem XML, a następnie Zapisz i zamknij plik.
 
     ```xml
     <?xml version="1.0" encoding="utf-8" ?>
@@ -262,21 +262,21 @@ ms.locfileid: "66401115"
     </Elements>
     ```
 
-     Ten plik definiuje niestandardową akcję domyślną, która tworzy element menu na **Akcje witryny** menu witryny programu SharePoint. Gdy użytkownik wybierze element menu, adres URL określony w `UrlAction` element zostanie otwarta w przeglądarce sieci web. Aby uzyskać więcej informacji o elementach języka XML, można użyć do zdefiniowania akcji niestandardowej, zobacz [niestandardowe definicje akcji](http://go.microsoft.com/fwlink/?LinkId=177801).
+     Ten plik definiuje domyślną akcję niestandardową, która tworzy element menu w menu **Akcje witryny** w witrynie programu SharePoint. Gdy użytkownik wybierze element menu, adres URL określony w `UrlAction` elementu zostanie otwarty w przeglądarce sieci Web. Aby uzyskać więcej informacji na temat elementów XML, których można użyć do zdefiniowania akcji niestandardowej, zobacz [niestandardowe definicje akcji](/sharepoint/dev/schema/custom-action-definition-schema).
 
-12. Opcjonalnie można otworzyć *ItemTemplate.ico* pliku i zmodyfikuj go tak, aby miało projekt, który można rozpoznać. Ta ikona pojawi się obok elementu projektu w **Dodaj nowy element** okno dialogowe.
+12. Opcjonalnie Otwórz plik *ItemTemplate. ico* i zmodyfikuj go tak, aby miał projekt, który można rozpoznać. Ta ikona będzie wyświetlana obok elementu projektu w oknie dialogowym **Dodaj nowy element** .
 
-13. W **Eksploratora rozwiązań**, otwórz menu skrótów dla **właściwości ItemTemplate** projektu, a następnie wybierz **Zwolnij projekt**.
+13. W **Eksplorator rozwiązań**Otwórz menu skrótów dla projektu **ItemTemplate** , a następnie wybierz polecenie **Zwolnij projekt**.
 
-14. Otwórz menu skrótów dla **właściwości ItemTemplate** ponownie projekt, a następnie wybierz **Edytuj ItemTemplate.csproj** lub **Edytuj ItemTemplate.vbproj**.
+14. Otwórz menu skrótów dla projektu **ItemTemplate** , a następnie wybierz polecenie **Edytuj ItemTemplate. csproj** lub **Edytuj ItemTemplate. vbproj**.
 
-15. Znajdź następujące `VSTemplate` elementu w pliku projektu.
+15. Znajdź Poniższy `VSTemplate` element w pliku projektu.
 
     ```xml
     <VSTemplate Include="ItemTemplate.vstemplate">
     ```
 
-16. Zastąp to `VSTemplate` element z następujący kod XML, a następnie zapisz i zamknij plik.
+16. Zastąp ten `VSTemplate` element następującym kodem XML, a następnie Zapisz i zamknij plik.
 
     ```xml
     <VSTemplate Include="ItemTemplate.vstemplate">
@@ -284,177 +284,177 @@ ms.locfileid: "66401115"
     </VSTemplate>
     ```
 
-     `OutputSubPath` Element określa dodatkowe foldery w ścieżce, w którym szablon elementu jest tworzony podczas kompilowania projektu. Foldery określone w tym miejscu, upewnij się, że szablon elementu będą dostępne tylko wtedy, gdy klienci otworzyć **Dodaj nowy element** okna dialogowego rozwiń **SharePoint** węzła, a następnie wybierz **2010**  węzła.
+     `OutputSubPath` element określa dodatkowe foldery w ścieżce, w której szablon elementu jest tworzony podczas kompilowania projektu. Foldery określone w tym miejscu zapewniają, że szablon elementu będzie dostępny tylko wtedy, gdy klienci otworzą okno dialogowe **Dodaj nowy element** , rozwiń węzeł **SharePoint** , a następnie wybierz węzeł **2010** .
 
-17. W **Eksploratora rozwiązań**, otwórz menu skrótów dla **właściwości ItemTemplate** projektu, a następnie wybierz **Załaduj ponownie projekt**.
+17. W **Eksplorator rozwiązań**Otwórz menu skrótów dla projektu **ItemTemplate** , a następnie wybierz polecenie **Załaduj ponownie projekt**.
 
-## <a name="create-a-vsix-package-to-deploy-the-project-item"></a>Utwórz pakiet VSIX do wdrożenia elementu projektu
- Aby wdrożyć rozszerzenie, należy użyć projektu VSIX w rozwiązaniu Aby utworzyć pakiet VSIX. Najpierw należy skonfigurować pakiet VSIX modyfikując plik source.extension.vsixmanifest, który znajduje się w projekcie VSIX. Następnie należy utworzyć pakiet VSIX przez utworzenie rozwiązania.
+## <a name="create-a-vsix-package-to-deploy-the-project-item"></a>Tworzenie pakietu VSIX do wdrożenia elementu projektu
+ Aby wdrożyć rozszerzenie, użyj projektu VSIX w rozwiązaniu, aby utworzyć pakiet VSIX. Najpierw skonfiguruj pakiet VSIX, modyfikując plik source. Extension. vsixmanifest, który jest zawarty w projekcie VSIX. Następnie Utwórz pakiet VSIX, tworząc rozwiązanie.
 
 #### <a name="to-configure-and-create-the-vsix-package"></a>Aby skonfigurować i utworzyć pakiet VSIX
 
-1. W **Eksploratora rozwiązań**, otwórz menu skrótów dla **source.extension.vsixmanifest** plik w projekcie CustomActionProjectItem, a następnie wybierz **Otwórz**.
+1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla pliku **source. Extension. vsixmanifest** w projekcie CustomActionProjectItem, a następnie wybierz polecenie **Otwórz**.
 
-     Program Visual Studio otwiera plik w edytorze manifestu. Plik source.extension.vsixmanifest jest podstawą dla pliku extension.vsixmanifest, które wymagają wszystkie pakiety VSIX. Aby uzyskać więcej informacji na temat tego pliku, zobacz [odwołania 1.0 schematu rozszerzenia VSIX](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).
+     Program Visual Studio otwiera plik w edytorze manifestu. Plik source. Extension. vsixmanifest jest podstawą dla pliku Extension. vsixmanifest, który wymaga wszystkich pakietów VSIX. Aby uzyskać więcej informacji na temat tego pliku, zobacz [Dokumentacja schematu rozszerzenia VSIX 1,0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).
 
-2. W **nazwa produktu** wprowadź **niestandardowych akcji elementu projektu**.
+2. W polu **Nazwa produktu** wprowadź **niestandardowy element projektu akcji**.
 
-3. W **Autor** wprowadź **Contoso**.
+3. W polu **autor** wprowadź wartość **contoso**.
 
-4. W **opis** wprowadź **elementu projektu programu SharePoint, która reprezentuje akcję niestandardową**.
+4. W polu **Opis** wprowadź **element projektu programu SharePoint, który reprezentuje akcję niestandardową**.
 
-5. Na **zasoby** kartę, wybrać **New** przycisku.
+5. Na karcie **zasoby** wybierz przycisk **Nowy** .
 
-     **Dodaj nowy zasób** pojawi się okno dialogowe.
+     Pojawi się okno dialogowe **Dodaj nowy element zawartości** .
 
-6. W **typu** wybierz **Microsoft.VisualStudio.ItemTemplate**.
-
-    > [!NOTE]
-    > Ta wartość odpowiada `ItemTemplate` elementu w pliku extension.vsixmanifest. Ten element umożliwia określenie podfolderu w pakiecie VSIX, zawierający szablonu elementu projektu. Aby uzyskać więcej informacji, zobacz [elementów właściwości ItemTemplate (schemat VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\)).
-
-7. W **źródła** wybierz **projekt w bieżącym rozwiązaniu**.
-
-8. W **projektu** wybierz **właściwości ItemTemplate**, a następnie wybierz **OK** przycisku.
-
-9. W **zasoby** kartę, wybrać **New** ponownie przycisk.
-
-     **Dodaj nowy zasób** pojawi się okno dialogowe.
-
-10. W **typu** wybierz **Microsoft.VisualStudio.MefComponent**.
+6. Na liście **Typ** wybierz **Microsoft. VisualStudio. ItemTemplate**.
 
     > [!NOTE]
-    > Ta wartość odpowiada `MefComponent` elementu w pliku extension.vsixmanifest. Ten element Określa nazwę zestawu rozszerzeń w pakiecie VSIX. Aby uzyskać więcej informacji, zobacz [MEFComponent — Element (schemat VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
+    > Ta wartość odpowiada elementowi `ItemTemplate` w pliku Extension. vsixmanifest. Ten element identyfikuje podfolder w pakiecie VSIX, który zawiera szablon elementu projektu. Aby uzyskać więcej informacji, zobacz [ItemTemplate element (schemat VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\)).
 
-11. W **źródła** wybierz **projekt w bieżącym rozwiązaniu**.
+7. Z listy **Źródło** wybierz **projekt w bieżącym rozwiązaniu**.
 
-12. W **projektu** wybierz **ProjectItemDefinition**.
+8. Na liście **projekt** wybierz pozycję **ItemTemplate**, a następnie wybierz przycisk **OK** .
 
-13. Wybierz **OK** przycisku.
+9. Na karcie **zasoby** wybierz ponownie przycisk **Nowy** .
 
-14. Na pasku menu wybierz **kompilacji** > **Kompiluj rozwiązanie**, a następnie upewnij się, że projekt kompiluje bez błędów.
+     Pojawi się okno dialogowe **Dodaj nowy element zawartości** .
 
-15. Upewnij się, że folder wyjściowy kompilacji dla projektu CustomActionProjectItem zawiera plik CustomActionProjectItem.vsix.
+10. Na liście **Typ** wybierz **Microsoft. VisualStudio. MefComponent**.
 
-     Domyślnie folderem wyjściowym kompilacji jest... folderze \bin\Debug w folderze, który zawiera projekt CustomActionProjectItem.
+    > [!NOTE]
+    > Ta wartość odpowiada elementowi `MefComponent` w pliku Extension. vsixmanifest. Ten element określa nazwę zestawu rozszerzenia w pakiecie VSIX. Aby uzyskać więcej informacji, zobacz [MefComponent element (schemat VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
+
+11. Z listy **Źródło** wybierz **projekt w bieżącym rozwiązaniu**.
+
+12. Na liście **projekt** wybierz pozycję **ProjectItemDefinition**.
+
+13. Wybierz przycisk **OK** .
+
+14. Na pasku menu wybierz **kompiluj** > **Kompiluj rozwiązanie**, a następnie upewnij się, że projekt kompiluje się bez błędów.
+
+15. Upewnij się, że folder danych wyjściowych kompilacji dla projektu CustomActionProjectItem zawiera plik CustomActionProjectItem. VSIX.
+
+     Domyślnie folder wyjściowy kompilacji to... folder \bin\Debug w folderze, który zawiera projekt CustomActionProjectItem.
 
 ## <a name="test-the-project-item"></a>Testowanie elementu projektu
- Teraz można przystąpić do przetestowania elementu projektu. Po pierwsze uruchom debugowanie rozwiązania CustomActionProjectItem w doświadczalnym wystąpieniu programu Visual Studio. Następnie sprawdź **Akcja niestandardowa** elementu projektu w projekcie programu SharePoint w doświadczalnym wystąpieniu programu Visual Studio. Na koniec Skompiluj i uruchom projekt programu SharePoint, aby sprawdzić, czy akcja niestandardowa działa zgodnie z oczekiwaniami.
+ Teraz można przystąpić do testowania elementu projektu. Najpierw Rozpocznij debugowanie rozwiązania CustomActionProjectItem w eksperymentalnym wystąpieniu programu Visual Studio. Następnie przetestuj element projektu **akcji niestandardowej** w projekcie programu SharePoint w eksperymentalnym wystąpieniu programu Visual Studio. Na koniec Skompiluj i Uruchom projekt programu SharePoint, aby sprawdzić, czy działanie niestandardowe działa zgodnie z oczekiwaniami.
 
 #### <a name="to-start-debugging-the-solution"></a>Aby rozpocząć debugowanie rozwiązania
 
-1. Uruchom program Visual Studio przy użyciu poświadczeń administracyjnych, a następnie otwórz rozwiązanie CustomActionProjectItem.
+1. Uruchom ponownie program Visual Studio z poświadczeniami administracyjnymi, a następnie otwórz rozwiązanie CustomActionProjectItem.
 
-2. Otwórz plik kodu Akcja niestandardowa, a następnie Dodaj punkt przerwania do pierwszego wiersza kodu w `InitializeType` metody.
+2. Otwórz plik kodu, a następnie Dodaj punkt przerwania do pierwszego wiersza kodu w metodzie `InitializeType`.
 
-3. Wybierz **F5** klawisz, aby rozpocząć debugowanie.
+3. Wybierz klawisz **F5** , aby rozpocząć debugowanie.
 
-     Visual Studio instaluje rozszerzenia do %UserProfile%\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Contoso\Custom Item\1.0 projektu działanie i uruchamia doświadczalne wystąpienie programu Visual Studio. Element projektu będzie testu, w tym wystąpieniu programu Visual Studio.
+     Program Visual Studio instaluje rozszerzenie do%UserProfile%\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Contoso\Custom akcji projektu Item\1.0 i uruchamia eksperymentalne wystąpienie programu Visual Studio. Testujesz element projektu w tym wystąpieniu programu Visual Studio.
 
 #### <a name="to-test-the-project-item-in-visual-studio"></a>Aby przetestować element projektu w programie Visual Studio
 
-1. W doświadczalnym wystąpieniu programu Visual Studio, na pasku menu wybierz **pliku** > **New** > **projektu**.
+1. W eksperymentalnym wystąpieniu programu Visual Studio na pasku menu wybierz kolejno pozycje **plik** > **Nowy** > **projekt**.
 
-2. Rozwiń **Visual C#** lub **języka Visual Basic** (w zależności od języka obsługującego szablonu elementu), rozwiń węzeł **SharePoint**, a następnie wybierz **2010**  węzła.
+2. Rozwiń **element C# Visual** lub **Visual Basic** (w zależności od języka obsługiwanego przez szablon elementu), rozwiń węzeł **SharePoint**, a następnie wybierz węzeł **2010** .
 
-3. Na liście szablonów projektu wybierz **projekt programu SharePoint 2010**.
+3. Na liście szablonów projektu wybierz **projekt SharePoint 2010**.
 
-4. W **nazwa** wprowadź **CustomActionTest**, a następnie wybierz **OK** przycisku.
+4. W polu **Nazwa** wprowadź **CustomActionTest**, a następnie wybierz przycisk **OK** .
 
-5. W **Kreator ustawień niestandardowych SharePoint**, wprowadź adres URL witryny, której chcesz używać do debugowania, a następnie wybierz **Zakończ** przycisku.
+5. W **Kreatorze dostosowania programu SharePoint**wprowadź adres URL witryny, która ma być używana do debugowania, a następnie wybierz przycisk **Zakończ** .
 
-6. W **Eksploratora rozwiązań**, otwórz menu skrótów dla węzła projektu, wybierz pozycję **Dodaj**, a następnie wybierz **nowy element**.
+6. W **Eksplorator rozwiązań**Otwórz menu skrótów dla węzła projektu, wybierz **Dodaj**, a następnie wybierz **nowy element**.
 
-7. W **Dodaj nowy element** okna dialogowego wybierz **2010** węźle **SharePoint** węzła.
+7. W oknie dialogowym **Dodaj nowy element** wybierz węzeł **2010** w węźle **SharePoint** .
 
-     Upewnij się, że **Akcja niestandardowa** element będzie wyświetlany na liście elementów projektu.
+     Sprawdź, czy element **akcji niestandardowej** pojawia się na liście elementów projektu.
 
-8. Wybierz **Akcja niestandardowa** elementu, a następnie wybierz **Dodaj** przycisku.
+8. Wybierz element **Akcja niestandardowa** , a następnie wybierz przycisk **Dodaj** .
 
-     Program Visual Studio dodaje element o nazwie **CustomAction1** do projektu i otwiera *Elements.xml* plik w edytorze.
+     Program Visual Studio dodaje element o nazwie **CustomAction1** do projektu i otwiera plik Items *. XML* w edytorze.
 
-9. Sprawdź, czy kod w innym wystąpieniu programu Visual Studio zatrzymuje się na punkcie przerwania, który wcześniej w ustawieniu `InitializeType` metody.
+9. Sprawdź, czy kod w innym wystąpieniu programu Visual Studio jest zatrzymany w punkcie przerwania, który został ustawiony wcześniej w metodzie `InitializeType`.
 
-10. Wybierz **F5** klawisz, aby kontynuować debugowanie projektu.
+10. Wybierz klawisz **F5** , aby kontynuować debugowanie projektu.
 
-11. W doświadczalnym wystąpieniu programu Visual Studio w **Eksploratora rozwiązań**, otwórz menu skrótów dla **CustomAction1** węzła, a następnie wybierz **Projektant akcji niestandardowych widoków**.
+11. W eksperymentalnym wystąpieniu programu Visual Studio, w **Eksplorator rozwiązań**Otwórz menu skrótów dla węzła **CustomAction1** , a następnie wybierz polecenie **Wyświetl niestandardowy Projektant akcji**.
 
-12. Sprawdź, czy pojawi się okno komunikatu, a następnie wybierz **OK** przycisku.
+12. Sprawdź, czy pojawi się okno komunikatu, a następnie wybierz przycisk **OK** .
 
-     Aby zapewnić dodatkowe opcje lub polecenia dla deweloperów, takie jak wyświetlanie projektanta dla akcji niestandardowej, można użyć tego menu skrótów.
+     Za pomocą tego menu skrótów można podać dodatkowe opcje lub polecenia dla deweloperów, takie jak wyświetlanie projektanta dla akcji niestandardowej.
 
-13. Na pasku menu wybierz **widoku** > **dane wyjściowe**.
+13. Na pasku menu wybierz polecenie **wyświetl** > **dane wyjściowe**.
 
-     **Dane wyjściowe** zostanie otwarte okno.
+     Zostanie otwarte okno **dane wyjściowe** .
 
-14. W **Eksploratora rozwiązań**, otwórz menu skrótów dla **CustomAction1** elementu, a następnie zmień jego nazwę na **MyCustomAction**.
+14. W **Eksplorator rozwiązań**Otwórz menu skrótów dla elementu **CustomAction1** , a następnie zmień jego nazwę na **MyCustomAction**.
 
-     W **dane wyjściowe** pojawi się komunikat z potwierdzeniem w oknie. Ta wiadomość została zapisana przy <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemNameChanged> programu obsługi zdarzeń, które zostały zdefiniowane w `CustomActionProjectItemTypeProvider` klasy. Może obsługiwać to zdarzenie i inne zdarzenia element projektu do zaimplementowania niestandardowe zachowanie, gdy deweloper modyfikuje element projektu.
+     W oknie **dane wyjściowe** zostanie wyświetlony komunikat z potwierdzeniem. Ten komunikat jest zapisywana przez procedurę obsługi zdarzeń <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemNameChanged>, która została zdefiniowana w klasie `CustomActionProjectItemTypeProvider`. Możesz obsłużyć to zdarzenie i inne zdarzenia elementów projektu, aby zaimplementować zachowanie niestandardowe, gdy deweloper modyfikuje element projektu.
 
-#### <a name="to-test-the-custom-action-in-sharepoint"></a>Aby przetestować akcji niestandardowej w programie SharePoint
+#### <a name="to-test-the-custom-action-in-sharepoint"></a>Aby przetestować akcję niestandardową w programie SharePoint
 
-1. W doświadczalnym wystąpieniu programu Visual Studio, otwórz *Elements.xml* pliku, który jest elementem podrzędnym **MyCustomAction** elementu projektu.
+1. W eksperymentalnym wystąpieniu programu Visual Studio Otwórz plik Items *. XML* , który jest elementem podrzędnym elementu projektu **MyCustomAction** .
 
-2. W *Elements.xml* pliku, dokonaj następujących zmian, a następnie zapisz plik:
+2. W pliku *elementy. XML* wprowadź następujące zmiany, a następnie Zapisz plik:
 
-    - W `CustomAction` elementu, ustaw `Id` atrybutu identyfikatora GUID lub unikatowego ciągu, jak w poniższym przykładzie pokazano:
+    - W elemencie `CustomAction` ustaw atrybut `Id` na identyfikator GUID lub inny ciąg unikatowy, jak pokazano na poniższym przykładzie:
 
         ```xml
         Id="cd85f6a7-af2e-44ab-885a-0c795b52121a"
         ```
 
-    - W `CustomAction` elementu, ustaw `Title` atrybut, co ilustruje poniższy przykład:
+    - W `CustomAction` elementu ustaw atrybut `Title`, jak pokazano na poniższym przykładzie:
 
         ```xml
         Title="SharePoint Developer Center"
         ```
 
-    - W `CustomAction` elementu, ustaw `Description` atrybut, co ilustruje poniższy przykład:
+    - W `CustomAction` elementu ustaw atrybut `Description`, jak pokazano na poniższym przykładzie:
 
         ```xml
         Description="Opens the SharePoint Developer Center Web site."
         ```
 
-    - W `UrlAction` elementu, ustaw `Url` atrybut, co ilustruje poniższy przykład:
+    - W `UrlAction` elementu ustaw atrybut `Url`, jak pokazano na poniższym przykładzie:
 
         ```xml
         Url="https://docs.microsoft.com/sharepoint/dev/"
         ```
 
-3. Wybierz **F5** klucza.
+3. Wybierz klawisz **F5** .
 
-     Akcja niestandardowa zostaje spakowany i wdrożyć w witrynie programu SharePoint, który jest określony w **adres URL witryny** właściwość projektu. Przeglądarka sieci web zostanie otwarta domyślna strona tej lokacji.
+     Akcja niestandardowa zostanie spakowana i wdrożona w witrynie programu SharePoint, która jest określona we właściwości **adres URL witryny** projektu. Przeglądarka sieci Web otworzy się na stronie domyślnej tej witryny.
 
     > [!NOTE]
-    > Jeśli **wyłączenia debugowania skryptu** pojawi się okno dialogowe, wybierz **tak** przycisk, aby kontynuować debugowanie projektu.
+    > Jeśli zostanie wyświetlone okno dialogowe **debugowanie skryptu wyłączone** , wybierz przycisk **tak** , aby kontynuować debugowanie projektu.
 
-4. Na **Akcje witryny** menu, wybierz **Centrum deweloperów programu SharePoint**, sprawdź, czy witryny sieci Web zostanie otwarta przeglądarka https://docs.microsoft.com/sharepoint/dev/, a następnie zamknij przeglądarkę sieci web.
+4. W menu **Akcje witryny** wybierz pozycję **Centrum deweloperów programu SharePoint**, sprawdź, czy przeglądarka otwiera witrynę sieci Web https://docs.microsoft.com/sharepoint/dev/, a następnie zamknij przeglądarkę sieci Web.
 
-## <a name="clean-up-the-development-computer"></a>Czyszczenie na komputerze deweloperskim
- Po zakończeniu badania elementu projektu, należy usunąć szablonu elementu projektu w doświadczalnym wystąpieniu programu Visual Studio.
+## <a name="clean-up-the-development-computer"></a>Czyszczenie komputera deweloperskiego
+ Po zakończeniu testowania elementu projektu, Usuń szablon elementu projektu z eksperymentalnego wystąpienia programu Visual Studio.
 
-#### <a name="to-clean-up-the-development-computer"></a>Aby wyczyścić komputerze deweloperskim
+#### <a name="to-clean-up-the-development-computer"></a>Aby wyczyścić komputer deweloperski
 
-1. W doświadczalnym wystąpieniu programu Visual Studio, na pasku menu wybierz **narzędzia** > **rozszerzenia i aktualizacje**.
+1. W eksperymentalnym wystąpieniu programu Visual Studio na pasku menu wybierz kolejno opcje **narzędzia** > **rozszerzenia i aktualizacje**.
 
-     **Rozszerzenia i aktualizacje** zostanie otwarte okno dialogowe.
+     Zostanie otwarte okno dialogowe **rozszerzenia i aktualizacje** .
 
-2. Na liście rozszerzeń wybierz **niestandardowych akcji elementu projektu**, a następnie wybierz **Odinstaluj** przycisku.
+2. Na liście rozszerzeń wybierz **element projekt akcji niestandardowej**, a następnie wybierz przycisk **Odinstaluj** .
 
-3. W oknie dialogowym wybierz **tak** przycisk, aby upewnić się, że chcesz odinstalować rozszerzenie.
+3. W wyświetlonym oknie dialogowym wybierz przycisk **tak** , aby potwierdzić, że chcesz odinstalować rozszerzenie.
 
-4. Wybierz **Uruchom ponownie teraz** przycisk, aby ukończyć dezinstalację.
+4. Wybierz przycisk **Uruchom ponownie teraz** , aby ukończyć dezinstalację.
 
-5. Zamknij zarówno w doświadczalnym wystąpieniu programu Visual Studio, jak i wystąpienia, w którym rozwiązanie CustomActionProjectItem jest otwarty.
+5. Zamknij zarówno eksperymentalne wystąpienie programu Visual Studio, jak i wystąpienie, w którym jest otwarte rozwiązanie CustomActionProjectItem.
 
 ## <a name="next-steps"></a>Następne kroki
- Po ukończeniu tego przewodnika kreatora można dodać do szablonu elementu. Gdy użytkownik doda Akcja niestandardowa elementu projektu do projektu programu SharePoint, Kreator zbiera informacje o akcji (na przykład lokalizacji i adres URL, aby przejść do po wybraniu akcji) i dodaje te informacje do *Elements.xml*plików do nowego elementu projektu. Aby uzyskać więcej informacji, zobacz [instruktażu: Tworzenie niestandardowej akcji elementu projektu z szablonem elementu, część 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).
+ Po zakończeniu tego instruktażu można dodać kreatora do szablonu elementu. Gdy użytkownik dodaje niestandardowy element projektu akcji do projektu programu SharePoint, Kreator zbiera informacje o akcji (na przykład o lokalizacji i adresie URL, do której należy przejść po wybraniu akcji) i dodaje te informacje do pliku Items *. XML* w nowym element projektu. Aby uzyskać więcej informacji, zobacz [Przewodnik: Tworzenie niestandardowego elementu projektu akcji z szablonem elementu, część 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Przewodnik: Tworzenie niestandardowej akcji elementu projektu z szablonem elementu, część 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)
+- [Przewodnik: Tworzenie niestandardowego elementu projektu akcji z szablonem elementu część 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)
 - [Definiowanie niestandardowych typów elementów projektu SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)
-- [Tworzenie szablonów elementów i szablonów projektu dla elementów projektu programu SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)
+- [Tworzenie szablonów elementów i szablonów projektu dla elementów projektu SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)
 - [Korzystanie z usługi projektu SharePoint](../sharepoint/using-the-sharepoint-project-service.md)
 - [Odwołanie do schematu szablonu Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference)
 - [Edytor obrazów dla ikon](/cpp/windows/image-editor-for-icons)
-- [Tworzenie ikony lub innego obrazu &#40;edytor obrazów dla ikon&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)
+- [Tworzenie ikony lub innego edytora obrazów &#40;obrazów dla ikon&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)

@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b27abf8470527e4e5de5c05ca3438a8471b7c80e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9b5a0ad18c7b1472e8c08ccc2902cade7714f2b9
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667779"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985266"
 ---
 # <a name="integrate-models-by-using-visual-studio-modelbus"></a>Integrowanie modeli za pomocą programu Visual Studio ModelBus
 
@@ -36,15 +36,13 @@ Aby uzyskać dodatkowe informacje i przykładowy kod, zobacz:
 
 ### <a name="expose"></a>Aby uwidocznić definicję DSL dla magistrali modelu
 
-1. Pobierz i zainstaluj rozszerzenie magistrali modelu programu Visual Studio, chyba że zostało już zainstalowane. Aby uzyskać więcej informacji, zobacz temat [Wizualizacja i Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579).
+1. Otwórz plik definicji DSL. Kliknij prawym przyciskiem myszy powierzchnię projektu, a następnie kliknij pozycję **Włącz ModelBus**.
 
-2. Otwórz plik definicji DSL. Kliknij prawym przyciskiem myszy powierzchnię projektu, a następnie kliknij pozycję **Włącz ModelBus**.
+2. W oknie dialogowym wybierz opcję **Chcę uwidocznić ten DSL w ModelBus**. Możesz wybrać obie opcje, jeśli chcesz, aby ta linia DSL mogła uwidocznić swoje modele i wykorzystać odwołania do innych językami DSL.
 
-3. W oknie dialogowym wybierz opcję **Chcę uwidocznić ten DSL w ModelBus**. Możesz wybrać obie opcje, jeśli chcesz, aby ta linia DSL mogła uwidocznić swoje modele i wykorzystać odwołania do innych językami DSL.
+3. Kliknij przycisk **OK**. Do rozwiązania DSL zostanie dodany nowy projekt "ModelBusAdapter".
 
-4. Kliknij przycisk **OK**. Do rozwiązania DSL zostanie dodany nowy projekt "ModelBusAdapter".
-
-5. Jeśli chcesz uzyskać dostęp do modemu DSL z szablonu tekstu, musisz zmodyfikować AdapterManager.tt w nowym projekcie. Pomiń ten krok, jeśli chcesz uzyskać dostęp do DSL z innego kodu, takiego jak polecenia i programy obsługi zdarzeń. Aby uzyskać więcej informacji, zobacz [używanie Visual Studio ModelBus w szablonie tekstowym](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
+4. Jeśli chcesz uzyskać dostęp do modemu DSL z szablonu tekstu, musisz zmodyfikować AdapterManager.tt w nowym projekcie. Pomiń ten krok, jeśli chcesz uzyskać dostęp do DSL z innego kodu, takiego jak polecenia i programy obsługi zdarzeń. Aby uzyskać więcej informacji, zobacz [używanie Visual Studio ModelBus w szablonie tekstowym](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
 
    1. Zmień klasę bazową AdapterManagerBase na [VsTextTemplatingModelingAdapterManager](/previous-versions/ee844317(v=vs.140)).
 
@@ -56,9 +54,9 @@ Aby uzyskać dodatkowe informacje i przykładowy kod, zobacz:
 
       Jeśli chcesz uzyskać dostęp do linii DSL zarówno z szablonów tekstu, jak i z innego kodu, musisz mieć dwie karty, jeden modyfikowany i jeden niemodyfikowany.
 
-6. Kliknij kolejno pozycje **Przekształć wszystkie szablony**.
+5. Kliknij kolejno pozycje **Przekształć wszystkie szablony**.
 
-7. Ponownie skompiluj rozwiązanie.
+6. Ponownie skompiluj rozwiązanie.
 
    Możliwe jest teraz, aby ModelBus otwarte wystąpienia tego języka DSL.
 
@@ -124,7 +122,7 @@ Aby włączyć użycie przez DSL odwołań do innego DSL, należy najpierw utwor
 
 2. Wybierz odpowiedni **rodzaj ModelBusReference**: do modelu lub do elementu wewnątrz modelu.
 
-3. W polu ciąg filtru okna dialogowego plików wprowadź ciąg, taki jak `Family Tree files |*.ftree`. Subsitute rozszerzenie pliku dla dostępnego DSL.
+3. W polu ciąg filtru okna dialogowego plików wprowadź ciąg, taki jak `Family Tree files |*.ftree`. Zastąp rozszerzenie pliku uwidocznionym DSL.
 
 4. Jeśli wybrano odwołanie do elementu w modelu, można dodać listę typów, które użytkownik może wybrać, na przykład Company. FamilyTree. Person.
 
@@ -358,7 +356,7 @@ Rekord MBR, który jest serializowany w ten sposób, jest niezależny od konteks
 
 ### <a name="serializing-relative-to-a-specified-file-path"></a>Serializacja względem określonej ścieżki pliku
 
-@No__t_0 zawiera `ReferenceContext`, który jest słownikiem, w którym można przechowywać informacje, takie jak ścieżka do pliku, względem której powinna być serializowana.
+`ModelBusReference` zawiera `ReferenceContext`, który jest słownikiem, w którym można przechowywać informacje, takie jak ścieżka do pliku, względem której powinna być serializowana.
 
 Aby serializować względem ścieżki względnej:
 
@@ -382,7 +380,7 @@ ModelBusReference elementReferenceRestored =
 ### <a name="modelbusreferences-created-by-other-adapters"></a>ModelBusReferences utworzone przez inne karty
  Poniższe informacje są przydatne, jeśli chcesz utworzyć własną kartę.
 
- @No__t_0 (MBR) składa się z dwóch części: nagłówka MBR, który jest deserializowany przez magistralę modelu i specyficzne dla adaptera, który jest obsługiwany przez określonego Menedżera adapterów. Pozwala to zapewnić własny format serializacji karty. Na przykład można odwołać się do bazy danych, a nie pliku, lub zapisać dodatkowe informacje w dokumentacji karty. Twoja własna karta może umieścić dodatkowe informacje w `ReferenceContext`.
+ `ModelBusReference` (MBR) składa się z dwóch części: nagłówka MBR, który jest deserializowany przez magistralę modelu i specyficzne dla adaptera, który jest obsługiwany przez określonego Menedżera adapterów. Pozwala to zapewnić własny format serializacji karty. Na przykład można odwołać się do bazy danych, a nie pliku, lub zapisać dodatkowe informacje w dokumentacji karty. Twoja własna karta może umieścić dodatkowe informacje w `ReferenceContext`.
 
  Podczas deserializacji rekordu MBR należy podać ReferenceContext, który jest następnie przechowywany w obiekcie MBR. Podczas serializacji rekordu MBR przechowywane ReferenceContext jest używane przez kartę do wygenerowania ciągu. Ciąg deserializowany nie zawiera wszystkich informacji w ReferenceContext. Na przykład w prostej karcie opartej na plikach ReferenceContext zawiera ścieżkę pliku głównego, która nie jest przechowywana w serializowanym ciągu MBR.
 

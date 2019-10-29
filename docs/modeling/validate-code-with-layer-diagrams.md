@@ -19,12 +19,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a2b972c3c275f3e43819220532ac0a3c4a597e3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9fc852b4d5003cf809248c72ca3ac42ad3a6bf23
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662937"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72981134"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Weryfikacja kodu przy użyciu diagramów zależności
 
@@ -52,7 +52,7 @@ Aby upewnić się, że kod nie powoduje konfliktu z projektem, zweryfikuj swój 
 
 Aby sprawdzić, które wersje programu Visual Studio obsługują tę funkcję, zobacz [Obsługa wersji dla narzędzi architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-Kod można zweryfikować ręcznie z otwartego diagramu zależności w programie Visual Studio lub z wiersza polecenia. Możesz również automatycznie sprawdzać kod podczas uruchamiania kompilacji lokalnych lub kompilacji Azure Pipelines. Zobacz [wideo Channel 9: projektowanie i weryfikowanie architektury przy użyciu diagramów zależności](http://go.microsoft.com/fwlink/?LinkID=252073).
+Kod można zweryfikować ręcznie z otwartego diagramu zależności w programie Visual Studio lub z wiersza polecenia. Możesz również automatycznie sprawdzać kod podczas uruchamiania kompilacji lokalnych lub kompilacji Azure Pipelines. Zobacz [wideo Channel 9: projektowanie i weryfikowanie architektury przy użyciu diagramów zależności](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Using-layer-diagrams-to-design-and-validate-your-architecture).
 
 > [!IMPORTANT]
 > Aby uruchomić walidację warstwy przy użyciu Team Foundation Server (TFS), należy również zainstalować tę samą wersję programu Visual Studio na serwerze kompilacji.

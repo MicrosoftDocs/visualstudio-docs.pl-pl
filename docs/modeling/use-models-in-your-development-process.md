@@ -9,16 +9,16 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c38cb246a1ec3e8a20793b37f0a231d2e118bd4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d30efd450f18832caadcc9a0008facc4388cd70a
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663762"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986285"
 ---
 # <a name="use-models-in-your-development-process"></a>Używanie modeli w procesie tworzenia aplikacji
 
-W programie Visual Studio można użyć modelu, aby pomóc zrozumieć i zmienić system, aplikację lub składnik. Model może pomóc w wizualizowaniu świata, w którym działa system, wyjaśnić potrzeby użytkowników, definiować architekturę systemu, analizować kod i upewnić się, że kod spełnia wymagania. Zobacz [wideo Channel 9: ulepszanie architektury za pośrednictwem modelowania](http://go.microsoft.com/fwlink/?LinkID=252078).
+W programie Visual Studio można użyć modelu, aby pomóc zrozumieć i zmienić system, aplikację lub składnik. Model może pomóc w wizualizowaniu świata, w którym działa system, wyjaśnić potrzeby użytkowników, definiować architekturę systemu, analizować kod i upewnić się, że kod spełnia wymagania. Zobacz [wideo Channel 9: ulepszanie architektury za pośrednictwem modelowania](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Improving-architecture-through-modeling).
 
 Aby sprawdzić, które wersje programu Visual Studio obsługują każdy typ modelu, zobacz [Obsługa wersji dla narzędzi architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -131,10 +131,10 @@ Różne rodzaje diagramów są przydatne do opisywania projektu na różnych poz
 
 |**Kategorii**|**Linki**|
 |-|-|
-|**Filmy wideo**|![link wideo ](../data-tools/media/playvideo.gif) [MSDN: jak tworzyć i używać modeli i diagramów UML (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![link wideo ](../data-tools/media/playvideo.gif) [kanału 9: UML z programem Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![link filmów wideo ](../data-tools/media/playvideo.gif) [MSDN jak serii: narzędzia i rozszerzalność UML (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|
-|**Dotyczące**|- [Wizualizacja programu Visual Studio & narzędzia do modelowania](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [wizualizacji programu Visual Studio & Modeling SDK (narzędzia DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
+|**Filmy wideo**|![link do wideo](../data-tools/media/playvideo.gif) [MSDN: jak tworzyć i używać modeli i diagramów UML (Visual Studio 2010 Ultimate)](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))<br /><br /> ![link do wideo](../data-tools/media/playvideo.gif) [kanału 9: UML z programem Visual Studio 2010](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-1-brainstorming-a-project)<br /><br /> ![link do wideo](../data-tools/media/playvideo.gif) [witrynie MSDN jak serii: narzędzia i rozszerzalność UML (Visual Studio 2010 Ultimate)](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))|
+|**Dotyczące**|- [Wizualizacja programu Visual Studio & narzędzia do modelowania](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />- [wizualizacji programu Visual Studio & Modeling SDK (narzędzia DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
 |**Blogi**|[DevOps firmy Microsoft](https://devblogs.microsoft.com/devops/)|
-|**Artykuły techniczne i dzienniki**|[Centrum architektury MSDN](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Architektura Visual Studio — wskazówki dotyczące oprzyrządowania](../modeling/visual-studio-architecture-tooling-guidance.md)|
+|**Artykuły techniczne i dzienniki**|[Centrum architektury MSDN](/previous-versions/dn630665(v=msdn.10))<br /><br /> [Architektura Visual Studio — wskazówki dotyczące oprzyrządowania](../modeling/visual-studio-architecture-tooling-guidance.md)|
 
 ## <a name="see-also"></a>Zobacz także
 

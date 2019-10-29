@@ -1,5 +1,5 @@
 ---
-title: Tworzenie i debugowanie rozwiązania przepływu pracy programu SharePoint
+title: Utwórz & Debuguj rozwiązanie przepływu pracy programu SharePoint
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,28 +16,28 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 51682ba54d6a6ae0698ade6bb52d5972cd63111f
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: 0e62226147fc160c6d967115fbd3aaa52dd69995
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401058"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985063"
 ---
 # <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>Przewodnik: Tworzenie i debugowanie rozwiązania przepływu pracy programu SharePoint
-  W tym instruktażu pokazano, jak utworzyć szablon podstawowy sekwencyjny przepływ pracy. Właściwość Biblioteka dokumentów udostępnionych w celu ustalenia, czy dokument został przejrzany sprawdza, czy przepływ pracy. Jeśli dokument został przejrzany, przepływ pracy zakończy się.
+  W tym instruktażu przedstawiono sposób tworzenia podstawowego sekwencyjnego szablonu przepływu pracy. Przepływ pracy sprawdza Właściwość udostępnionej biblioteki dokumentów, aby określić, czy dokument został sprawdzony. Jeśli dokument został zrecenzowany, przepływ pracy zakończy się.
 
  W instruktażu przedstawiono następujące zagadnienia:
 
-- Tworzenie projektu programu SharePoint listy definicji sekwencyjnego przepływu pracy w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+- Tworzenie projektu sekwencyjnego przepływu pracy definicji listy programu SharePoint w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
 - Tworzenie działań przepływu pracy.
 
-- Obsługa zdarzeń działania przepływu pracy.
+- Obsługa zdarzeń działań przepływu pracy.
 
 > [!NOTE]
-> Chociaż ten przewodnik korzysta z projektem sekwencyjnego przepływu pracy, ten proces jest taka sama dla projektu przepływu pracy stanu komputera.
+> Chociaż w tym instruktażu jest stosowany projekt sekwencyjnego przepływu pracy, proces ten jest identyczny dla projektu przepływu pracy automatu Stanów.
 >
-> Ponadto komputer może wyświetlać różne nazwy lub lokalizacje dla niektórych użytkowników programu Visual Studio elementy interfejsu w poniższych instrukcjach. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Ponadto w poniższych instrukcjach komputer może wyświetlać różne nazwy lub lokalizacje dla niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Wymagania wstępne
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:
@@ -46,133 +46,133 @@ ms.locfileid: "66401058"
 
 - Program Visual Studio.
 
-## <a name="add-properties-to-the-sharepoint-shared-documents-library"></a>Dodaj właściwości do biblioteki udostępnionych dokumentów programu SharePoint
- Aby śledzić stan przeglądu dokumentów w **dokumenty udostępnione** biblioteki, utworzymy trzy nowe właściwości dotyczące udostępnionych dokumentów w naszej witrynie programu SharePoint: `Status`, `Assignee`, i `Review Comments`. Definiujemy tych właściwości w **dokumenty udostępnione** biblioteki.
+## <a name="add-properties-to-the-sharepoint-shared-documents-library"></a>Dodawanie właściwości do biblioteki dokumentów udostępnionych programu SharePoint
+ Aby śledzić stan przeglądu dokumentów w bibliotece **dokumenty udostępnione** , utworzysz trzy nowe właściwości dokumentów udostępnionych w witrynie programu SharePoint: `Status`, `Assignee`i `Review Comments`. Te właściwości są zdefiniowane w bibliotece **dokumenty udostępnione** .
 
-#### <a name="to-add-properties-to-the-sharepoint-shared-documents-library"></a>Aby dodać właściwości do programu SharePoint, udostępnionych dokumentów biblioteki
+#### <a name="to-add-properties-to-the-sharepoint-shared-documents-library"></a>Aby dodać właściwości do biblioteki dokumentów udostępnionych programu SharePoint
 
-1. Otwórz witrynę programu SharePoint, takiej jak http://\<Nazwa systemowa > / SitePages/Home.aspx w przeglądarce sieci Web.
+1. Otwórz witrynę programu SharePoint, taką jak http://\<system Name >/SitePages/Home.aspx, w przeglądarce internetowej.
 
-2. Na pasku szybkiego uruchamiania wybierz **SharedDocuments**.
+2. Na pasku szybkiego uruchamiania wybierz pozycję **SharedDocuments**.
 
-3. Wybierz **biblioteki** na **narzędzia biblioteki** wstążki, a następnie wybierz **Utwórz kolumnę** przycisk na Wstążce, aby utworzyć nową kolumnę.
+3. Wybierz **bibliotekę** na Wstążce **Narzędzia biblioteki** , a następnie wybierz przycisk **Utwórz kolumnę** na Wstążce, aby utworzyć nową kolumnę.
 
-4. Nadaj kolumnie nazwę **stan dokumentu**, Ustaw typ **wyboru (menu do wyboru)** określ następujące trzy opcje, a następnie wybierz **OK** przycisku:
+4. Nadaj nazwę kolumnie **status dokumentu**, ustaw jej typ na **wybór (menu wybierz z)** , określ następujące trzy opcje, a następnie wybierz przycisk **OK** :
 
-    - **Potrzebny Przegląd**
+    - **Wymagana weryfikacja**
 
-    - **Zakończenie przeglądu**
+    - **Przegląd zakończony**
 
-    - **Żądanych zmian**
+    - **Żądane zmiany**
 
-5. Utwórz dwie kolumny i nazwij je **Assignee** i **komentarzy**. Ustaw typ kolumny Assignee jako pojedynczy wiersz tekstu i komentarzy typ kolumny jako wiele wierszy tekstu.
+5. Utwórz dwie więcej kolumn i nadaj im nazwę osoby **przydzielonej** i **zapoznaj się z komentarzami**. Ustaw typ kolumny osoby zależne jako pojedynczy wiersz tekstu, a kolumna Przejrzyj Komentarze jako wiele wierszy tekstu.
 
-## <a name="enable-documents-to-be-edited-without-requiring-a-check-out"></a>Włączanie dokumentów do edycji bez konieczności wyewidencjonowanie
- Łatwiej można przetestować szablonu przepływu pracy, gdy edytujesz dokumenty bez konieczności ich wyewidencjonowania. W następnej procedurze skonfigurujesz witryny programu SharePoint, aby to umożliwić.
+## <a name="enable-documents-to-be-edited-without-requiring-a-check-out"></a>Włącz edytowanie dokumentów bez konieczności wyewidencjonowania
+ Łatwiej jest przetestować szablon przepływu pracy, gdy można edytować dokumenty bez konieczności wyewidencjonowywania. W następnej procedurze należy skonfigurować witrynę programu SharePoint, aby ją włączyć.
 
-#### <a name="to-enable-documents-to-be-edited-without-checking-them-out"></a>Aby włączyć dokumentów do edycji bez wyewidencjonowania ich
+#### <a name="to-enable-documents-to-be-edited-without-checking-them-out"></a>Aby włączyć edycję dokumentów bez ich wyewidencjonowania
 
-1. Na pasku szybkiego uruchamiania wybierz **dokumenty udostępnione** łącza.
+1. Na pasku szybkiego uruchamiania wybierz link **dokumenty udostępnione** .
 
-2. Na **narzędzia biblioteki** Wstążce, wybierz polecenie **biblioteki** kartę, a następnie wybierz **ustawienia biblioteki** przycisk, aby wyświetlić **ustawienia biblioteki dokumentów** strony.
+2. Na Wstążce **Narzędzia biblioteki** wybierz kartę **Biblioteka** , a następnie wybierz przycisk **Ustawienia biblioteki** , aby wyświetlić stronę **Ustawienia biblioteki dokumentów** .
 
-3. W **ustawienia ogólne** wybierz pozycję **ustawienia przechowywania wersji** łącze, aby wyświetlić **ustawienia przechowywania wersji** strony.
+3. W sekcji **Ustawienia ogólne** wybierz łącze **Ustawienia wersji** , aby wyświetlić stronę **Ustawienia przechowywania wersji** .
 
-4. Upewnij się, że ustawienie **wymagają dokumentów, aby zostać wyewidencjonowany zanim można edytować** jest **nie**. Jeśli nie jest, zmień ją na **nie** , a następnie wybierz **OK** przycisku.
+4. Sprawdź, czy ustawienie **Wymagaj wyewidencjonowania dokumentów, zanim będzie można edytować** , ma wartość **nie**. Jeśli tak nie jest, Zmień wartość na **nie** , a następnie wybierz przycisk **OK** .
 
 5. Zamknij przeglądarkę.
 
 ## <a name="create-a-sharepoint-sequential-workflow-project"></a>Utwórz projekt sekwencyjnego przepływu pracy programu SharePoint
- Sekwencyjny przepływ pracy jest zestaw kroków, który jest wykonywany w kolejności, aż do zakończenia ostatniej aktywności. W tej procedurze utworzymy sekwencyjnego przepływu pracy, które zostaną zastosowane do naszej listy Dokumenty udostępnione. Kreator przepływ pracy umożliwia skojarzenie przepływu pracy przy użyciu definicji witryny lub definicji listy i pozwala określić, gdy rozpocznie się przepływ pracy.
+ Sekwencyjny przepływ pracy to zestaw kroków, które są wykonywane w kolejności do momentu zakończenia ostatniego działania. W tej procedurze utworzysz sekwencyjny przepływ pracy, który zostanie zastosowany do listy dokumentów udostępnionych. Kreator przepływu pracy umożliwia skojarzenie przepływu pracy z definicją lokacji lub definicją listy i pozwala określić, kiedy zostanie uruchomiony przepływ pracy.
 
 #### <a name="to-create-a-sharepoint-sequential-workflow-project"></a>Aby utworzyć projekt sekwencyjnego przepływu pracy programu SharePoint
 
 1. Rozpocznij [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2. Na pasku menu wybierz **pliku** > **New** > **projektu** do wyświetlenia **nowy projekt** okno dialogowe.
+2. Na pasku menu wybierz kolejno opcje **plik**  > **Nowy**  > **projekt** , aby wyświetlić okno dialogowe **Nowy projekt** .
 
-3. Rozwiń **SharePoint** węźle albo **Visual C#** lub **języka Visual Basic**, a następnie wybierz **2010** węzła.
+3. Rozwiń węzeł **SharePoint** w obszarze **Wizualizacja C#**  lub **Visual Basic**, a następnie wybierz węzeł **2010** .
 
-4. W **szablony** okienku wybierz **projekt programu SharePoint 2010** szablonu.
+4. W okienku **Szablony** wybierz szablon **projektu programu SharePoint 2010** .
 
-5. W **nazwa** wprowadź **MySharePointWorkflow** , a następnie wybierz **OK** przycisku.
+5. W polu **Nazwa** wprowadź **MySharePointWorkflow** , a następnie wybierz przycisk **OK** .
 
-     **Kreator ustawień niestandardowych SharePoint** pojawia się.
+     Zostanie wyświetlony **Kreator dostosowania programu SharePoint** .
 
-6. W **Określanie witryny i poziomu zabezpieczeń dla debugowania** wybierz **Wdróż jako rozwiązanie farmy** przycisk opcji, a następnie wybierz **Zakończ** przycisk, aby zaakceptować Witryna poziom i domyślne zaufanie.
+6. Na stronie **Określanie poziomu lokacji i zabezpieczeń na potrzeby debugowania** wybierz przycisk opcji **Wdróż jako farmę** , a następnie wybierz przycisk **Zakończ** , aby zaakceptować poziom zaufania i domyślną lokację.
 
-     W tym kroku ustawia poziom zaufania dla rozwiązania jako rozwiązanie farmy, jedyną dostępną opcją w przypadku projektów przepływu pracy. Aby uzyskać więcej informacji, zobacz [uwagi dotyczące rozwiązania typu piaskownica](../sharepoint/sandboxed-solution-considerations.md).
+     Ten krok powoduje ustawienie poziomu zaufania dla rozwiązania jako rozwiązania farmy — jedynej dostępnej opcji dla projektów przepływu pracy. Aby uzyskać więcej informacji, zobacz [zagadnienia dotyczące rozwiązania w trybie piaskownicy](../sharepoint/sandboxed-solution-considerations.md).
 
-7. W **Eksploratora rozwiązań**, wybierz węzeł projektu, a następnie na pasku menu wybierz **projektu** > **Dodaj nowy element**.
+7. W **Eksplorator rozwiązań**wybierz węzeł projektu, a następnie na pasku menu wybierz **projekt** > **Dodaj nowy element**.
 
-8. W obszarze **Visual C#** lub **języka Visual Basic**, rozwiń węzeł **SharePoint** węzła, a następnie wybierz **2010** węzła.
+8. W obszarze **Wizualizacja C#**  lub **Visual Basic**rozwiń węzeł **SharePoint** , a następnie wybierz węzeł **2010** .
 
-9. W **szablony** okienku wybierz **sekwencyjnego przepływu pracy (tylko rozwiązanie farmy)** szablonu, a następnie wybierz **Dodaj** przycisku.
+9. W okienku **Szablony** wybierz szablon **sekwencyjny przepływ pracy (tylko rozwiązanie farmy)** , a następnie wybierz przycisk **Dodaj** .
 
-     **Kreator ustawień niestandardowych SharePoint** pojawia się.
+     Zostanie wyświetlony **Kreator dostosowania programu SharePoint** .
 
-10. W **Określ nazwę przepływu pracy debugowania** strona, zaakceptuj nazwę domyślną (**MySharePointWorkflow - Workflow1**). Należy zachować wartość typu szablonu przepływu pracy domyślnego, **przepływu pracy dla listy**, a następnie wybierz **dalej** przycisku.
+10. Na stronie **Określanie nazwy przepływu pracy na potrzeby debugowania** Zaakceptuj nazwę domyślną (**MySharePointWorkflow-Workflow1**). Zachowaj domyślną wartość typ szablonu przepływu pracy, **przepływ pracy listy**, a następnie wybierz przycisk **dalej** .
 
-11. W **chcesz użyć programu Visual Studio automatycznie skojarzył przepływ pracy w sesji debugowania?** wybierz **dalej** przycisk, aby zaakceptować ustawienia domyślne.
+11. Czy chcesz, **Aby program Visual Studio automatycznie kojarzy przepływ pracy w sesji debugowania?** wybierz przycisk **dalej** , aby zaakceptować wszystkie ustawienia domyślne.
 
-     W tym kroku automatycznie kojarzy przepływu pracy przy użyciu biblioteki Dokumenty udostępnione.
+     Ten krok automatycznie kojarzy przepływ pracy z biblioteką dokumenty udostępnione.
 
-12. W **Określanie warunków dotyczących sposobu uruchamiania przepływu pracy** zostaw domyślne opcje wybrane w **jaki sposób ma zostać uruchomiony przepływ pracy?** sekcji, a następnie wybierz **Zakończ** przycisku.
+12. Na stronie **Określ warunki uruchamiania przepływu pracy** pozostaw opcje domyślne wybrane w sekcji **jak chcesz uruchomić przepływ pracy?** , a następnie wybierz przycisk **Zakończ** .
 
-     Ta strona umożliwia określenie, po rozpoczęciu pracy. Domyślnie, przepływ pracy jest uruchamiany albo po użytkownik ręcznie uruchamia go w programie SharePoint lub po utworzeniu elementu, z którym jest skojarzony przepływ pracy.
+     Ta strona umożliwia określenie czasu uruchamiania przepływu pracy. Domyślnie przepływ pracy jest uruchamiany, gdy użytkownik ręcznie uruchamia go w programie SharePoint lub gdy tworzony jest element, do którego jest skojarzony przepływ pracy.
 
 ## <a name="create-workflow-activities"></a>Tworzenie działań przepływu pracy
- Przepływy pracy zawierają co najmniej jeden *działania* reprezentujące akcje do wykonania. Rozmieść działań przepływu pracy za pomocą projektanta przepływu pracy. W tej procedurze dodamy dwa działania do przepływu pracy: Działanie HandleExternalEventActivity i OnWorkFlowItemChanged. Te działania monitorowania stanu przeglądu dokumentów w **dokumenty udostępnione** listy
+ Przepływy pracy zawierają co najmniej jedną *czynność* , która reprezentuje akcje do wykonania. Za pomocą projektanta przepływów pracy można rozmieścić działania dla przepływu pracy. W ramach tej procedury dodamy dwa działania do przepływu pracy: HandleExternalEventActivity i OnWorkFlowItemChanged. Te działania monitorują stan przeglądu dokumentów na liście **dokumenty udostępnione**
 
-#### <a name="to-create-workflow-activities"></a>Do tworzenia działań przepływu pracy
+#### <a name="to-create-workflow-activities"></a>Aby utworzyć działania przepływu pracy
 
-1. Przepływ pracy powinien być wyświetlany w Projektancie przepływu pracy. Jeśli nie jest dostępne, następnie otwórz okno dialogowe **Workflow1.cs** lub **Workflow1.vb** w **Eksploratora rozwiązań**.
+1. Przepływ pracy powinien być wyświetlany w Projektancie przepływu pracy. Jeśli tak nie jest, Otwórz **Workflow1.cs** lub **Workflow1. vb** w **Eksplorator rozwiązań**.
 
-2. W projektancie, wybierz **OnWorkflowActivated1** działania.
+2. W Projektancie wybierz działanie **onWorkflowActivated1** .
 
-3. W **właściwości** oknie wprowadź **ramach działania onWorkflowActivated** obok **Invoked** właściwości, a następnie naciśnij klawisz Enter.
+3. W oknie **Właściwości** wpisz **onWorkflowActivated** obok **wywołanej** właściwości, a następnie wybierz klawisz ENTER.
 
-     Zostanie otwarty Edytor kodu i metodę programu obsługi zdarzeń o nazwie w ramach działania onWorkflowActivated są dodawane do pliku kodu Workflow1.
+     Zostanie otwarty Edytor kodu, a metoda obsługi zdarzeń o nazwie onWorkflowActivated zostanie dodana do pliku kodu Workflow1.
 
-4. Przejdź z powrotem do projektanta przepływów pracy, Otwórz przybornik, a następnie rozwiń **Windows Workflow 3.0** węzła.
+4. Przełącz się z powrotem do projektanta przepływów pracy, Otwórz przybornik, a następnie rozwiń węzeł **Windows Workflow v 3.0** .
 
-5. W **Windows Workflow 3.0** węźle **przybornika**, wykonaj jedną z następujących zbiorów czynności:
+5. W węźle **Windows Workflow v 3.0** **przybornika**wykonaj jeden z następujących zestawów czynności:
 
-    1. Otwórz menu skrótów dla **podczas** działania, a następnie wybierz **kopiowania**. W Projektancie przepływu pracy, otwórz menu skrótów dla linii poniżej **onWorkflowActivated1** działania, a następnie wybierz **Wklej**.
+    1. Otwórz menu skrótów dla działania **while** , a następnie wybierz **Kopiuj**. W Projektancie przepływu pracy Otwórz menu skrótów dla wiersza w ramach działania **onWorkflowActivated1** , a następnie wybierz **Wklej**.
 
-    2. Przeciągnij **podczas** działanie z **przybornika** do projektanta przepływów pracy i połącz działania do wiersza, w obszarze **onWorkflowActivated1** działania.
+    2. Przeciągnij działanie **while** z **przybornika** do projektanta przepływu pracy i Połącz działanie z wierszem w obszarze działania **onWorkflowActivated1** .
 
-6. Wybierz **WhileActivity1** działania.
+6. Wybierz działanie **whileActivity1** .
 
-7. W **właściwości** oknie **warunek** do kodu stanu.
+7. W oknie **Właściwości** Ustaw **warunek** na warunek kodu.
 
-8. Rozwiń **warunek** właściwości wprowadź **isWorkflowPending** obok elementu podrzędnego **warunek** właściwości, a następnie naciśnij klawisz Enter.
+8. Rozwiń Właściwość **warunek** , wprowadź **IsWorkflowPending** obok właściwości **warunek** podrzędny, a następnie wybierz klawisz ENTER.
 
-     Zostanie otwarty Edytor kodu i metodę o nazwie isWorkflowPending są dodawane do pliku kodu Workflow1.
+     Zostanie otwarty Edytor kodu, a do pliku kodu Workflow1 zostanie dodana Metoda o nazwie isWorkflowPending.
 
-9. Przejdź z powrotem do projektanta przepływów pracy, Otwórz przybornik, a następnie rozwiń **przepływu pracy programu SharePoint** węzła.
+9. Przełącz się z powrotem do projektanta przepływów pracy, Otwórz przybornik, a następnie rozwiń węzeł **przepływ pracy programu SharePoint** .
 
-10. W **przepływu pracy programu SharePoint** węźle **przybornika**, wykonaj jedną z następujących zbiorów czynności:
+10. W węźle **przepływ pracy programu SharePoint** **przybornika**wykonaj jeden z następujących zestawów czynności:
 
-    - Otwórz menu skrótów dla **OnWorkflowItemChanged** działania, a następnie wybierz **kopiowania**. W Projektancie przepływu pracy, otwórz menu skrótów dla wiersza wewnątrz **whileActivity1** działania, a następnie wybierz **Wklej**.
+    - Otwórz menu skrótów dla działania **onWorkflowItemChanged** , a następnie wybierz **Kopiuj**. W Projektancie przepływu pracy Otwórz menu skrótów dla wiersza wewnątrz działania **whileActivity1** , a następnie wybierz **Wklej**.
 
-    - Przeciągnij **OnWorkflowItemChanged** działanie z **przybornika** do projektanta przepływów pracy i połącz działania do wiersza wewnątrz **whileActivity1** działania.
+    - Przeciągnij działanie **onWorkflowItemChanged** z **przybornika** do projektanta przepływu pracy i Połącz działanie z wierszem w działaniu **whileActivity1** .
 
-11. Wybierz **onWorkflowItemChanged1** działania.
+11. Wybierz działanie **onWorkflowItemChanged1** .
 
-12. W **właściwości** okna, ustaw właściwości, jak pokazano w poniższej tabeli.
+12. W oknie **Właściwości** ustaw właściwości, jak pokazano w poniższej tabeli.
 
     |Właściwość|Wartość|
     |--------------|-----------|
     |**CorrelationToken**|**workflowToken**|
-    |**Wywołany**|**onWorkflowItemChanged**|
+    |**Wywoływane**|**onWorkflowItemChanged**|
 
-## <a name="handle-activity-events"></a>Obsługa zdarzeń działania
- Na koniec sprawdź stan dokumentu z każdego działania. Jeśli dokument został przejrzany, przepływu pracy zostało zakończone.
+## <a name="handle-activity-events"></a>Obsługa zdarzeń działań
+ Na koniec sprawdź stan dokumentu z poszczególnych działań. Jeśli dokument został zrecenzowany, przepływ pracy zostanie zakończony.
 
-#### <a name="to-handle-activity-events"></a>Do obsługi zdarzeń działania
+#### <a name="to-handle-activity-events"></a>Aby obsłużyć zdarzenia aktywności
 
-1. W *Workflow1.cs* lub *Workflow1.vb*, Dodaj następujące pole na początku `Workflow1` klasy. To pole jest używane w działaniu w celu ustalenia, czy przepływ pracy jest zakończone.
+1. W *Workflow1.cs* lub *Workflow1. vb*Dodaj następujące pole na początku klasy `Workflow1`. To pole jest używane w działaniu, aby określić, czy przepływ pracy został ukończony.
 
     ```vb
     Dim workflowPending As Boolean = True
@@ -182,7 +182,7 @@ ms.locfileid: "66401058"
     Boolean workflowPending = true;
     ```
 
-2. Dodaj następującą metodę do `Workflow1` klasy. Ta metoda sprawdza wartość `Document Status` właściwości listy dokumentów, aby ustalić, czy dokument został przejrzany. Jeśli `Document Status` właściwość jest ustawiona na `Review Complete`, a następnie `checkStatus` metody ustawia `workflowPending` pole **false** do wskazania, że przepływ pracy jest gotowy do zakończenia.
+2. Dodaj następującą metodę do klasy `Workflow1`. Ta metoda sprawdza wartość właściwości `Document Status` listy dokumentów, aby określić, czy dokument został sprawdzony. Jeśli właściwość `Document Status` jest ustawiona na `Review Complete`, Metoda `checkStatus` ustawia **wartość false** dla pola `workflowPending`, aby wskazać, że przepływ pracy jest gotowy do zakończenia.
 
     ```vb
     Private Sub checkStatus()
@@ -200,7 +200,7 @@ ms.locfileid: "66401058"
     }
     ```
 
-3. Dodaj następujący kod do `onWorkflowActivated` i `onWorkflowItemChanged` metod do wywołania `checkStatus` metody. Po uruchomieniu przepływu pracy, `onWorkflowActivated` wywołania metody `checkStatus` metodę pozwala ustalić, czy dokument ma już przejrzane. Jeśli go nie została sprawdzona, przepływ pracy jest kontynuowany. Po zapisaniu dokumentu `onWorkflowItemChanged` wywołania metody `checkStatus` metoda ponownie, aby określić, czy dokument został przejrzany. Gdy `workflowPending` pole jest ustawione na **true**, przepływ pracy będzie nadal działać.
+3. Dodaj następujący kod do `onWorkflowActivated` i `onWorkflowItemChanged` metod, aby wywołać metodę `checkStatus`. Po uruchomieniu przepływu pracy Metoda `onWorkflowActivated` wywołuje metodę `checkStatus`, aby określić, czy dokument został już sprawdzony. Jeśli nie został on zweryfikowany, przepływ pracy będzie kontynuowany. Po zapisaniu dokumentu Metoda `onWorkflowItemChanged` ponownie wywołuje metodę `checkStatus`, aby określić, czy dokument został sprawdzony. Gdy pole `workflowPending` ma **wartość true**, przepływ pracy jest nadal uruchamiany.
 
     ```vb
     Private Sub onWorkflowActivated(ByVal sender As System.Object, ByVal e As System.Workflow.Activities.ExternalDataEventArgs)
@@ -226,7 +226,7 @@ ms.locfileid: "66401058"
     }
     ```
 
-4. Dodaj następujący kod do `isWorkflowPending` metodę, aby sprawdzić stan `workflowPending` właściwości. Każdorazowo, dokument zostanie zapisany, **whileActivity1** wywołania działania `isWorkflowPending` metody. Ta metoda sprawdza, czy <xref:System.Workflow.Activities.ConditionalEventArgs.Result%2A> właściwość <xref:System.Workflow.Activities.ConditionalEventArgs> obiektu, aby określić, czy **WhileActivity1** działania należy kontynuować, lub Zakończ. Jeśli ustawiono właściwość **true**, kontynuuje działanie. W przeciwnym razie kończy działanie i zakończeniu przepływu pracy.
+4. Dodaj następujący kod do metody `isWorkflowPending`, aby sprawdzić stan właściwości `workflowPending`. Za każdym razem, gdy dokument jest zapisywany, działanie **whileActivity1** wywołuje metodę `isWorkflowPending`. Ta metoda sprawdza Właściwość <xref:System.Workflow.Activities.ConditionalEventArgs.Result%2A> obiektu <xref:System.Workflow.Activities.ConditionalEventArgs>, aby określić, czy działanie **whileActivity1** ma być kontynuowane czy zakończone. Jeśli właściwość ma **wartość true**, działanie będzie kontynuowane. W przeciwnym razie działanie zostanie zakończone i zakończy się przepływ pracy.
 
     ```vb
     Private Sub isWorkflowPending(ByVal sender As System.Object, ByVal e As System.Workflow.Activities.ConditionalEventArgs)
@@ -244,50 +244,50 @@ ms.locfileid: "66401058"
 5. Zapisz projekt.
 
 ## <a name="test-the-sharepoint-workflow-template"></a>Testowanie szablonu przepływu pracy programu SharePoint
- Podczas uruchamiania debugera, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] wdraża szablonu przepływu pracy na serwerze programu SharePoint i skojarzenie przepływu pracy przy użyciu **dokumenty udostępnione** listy. Aby przetestować przepływ pracy, należy uruchomić wystąpienie przepływu pracy z dokumentu **dokumenty udostępnione** listy.
+ Po uruchomieniu debugera [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] wdraża szablon przepływu pracy na serwerze programu SharePoint i kojarzy przepływ pracy z listą **dokumenty udostępnione** . Aby przetestować przepływ pracy, uruchom wystąpienie przepływu pracy z dokumentu na liście **dokumenty udostępnione** .
 
-#### <a name="to-test-the-sharepoint-workflow-template"></a>Aby przetestować szablonu przepływu pracy programu SharePoint
+#### <a name="to-test-the-sharepoint-workflow-template"></a>Aby przetestować szablon przepływu pracy programu SharePoint
 
-1. W *Workflow1.cs* lub *Workflow1.vb*, ustaw punkt przerwania obok **ramach działania onWorkflowActivated** metody.
+1. W *Workflow1.cs* lub *Workflow1. vb*Ustaw punkt przerwania obok metody **onWorkflowActivated** .
 
-2. Wybierz **F5** klawisz, aby skompilować i uruchomić rozwiązanie.
+2. Wybierz klawisz **F5** , aby skompilować i uruchomić rozwiązanie.
 
      Zostanie wyświetlona witryna programu SharePoint.
 
-3. W okienku nawigacji w programie SharePoint, wybierz **dokumenty udostępnione** łącza.
+3. W okienku nawigacji w programie SharePoint wybierz link **dokumenty udostępnione** .
 
-4. W **dokumenty udostępnione** wybierz **dokumenty** link **narzędzia biblioteki** kartę, a następnie wybierz **Przekaż dokument** przycisku .
+4. Na stronie **dokumenty udostępnione** wybierz link **dokumenty** na karcie **Narzędzia biblioteki** , a następnie wybierz przycisk **Przekaż dokument** .
 
-5. W **Przekaż dokument** okna dialogowego wybierz **Przeglądaj** przycisku, wybierz dowolny plik dokumentu, wybierz **Otwórz** przycisk, a następnie wybierz **OK** przycisku.
+5. W oknie dialogowym **przekazywanie dokumentu** wybierz przycisk **Przeglądaj** , wybierz dowolny plik dokumentu, wybierz przycisk **Otwórz** , a następnie wybierz przycisk **OK** .
 
-     To przekazanie wybranego dokumentu w **dokumenty udostępnione** listy i uruchamia przepływ pracy.
+     Spowoduje to przekazanie wybranego dokumentu do listy **dokumenty udostępnione** i uruchomienie przepływu pracy.
 
-6. W [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], sprawdź, czy debuger zatrzymuje się w punkcie przerwania obok `onWorkflowActivated` metody.
+6. W [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]upewnij się, że debuger zatrzyma się w punkcie przerwania obok metody `onWorkflowActivated`.
 
-7. Wybierz **F5** klawisz, aby kontynuować wykonywanie.
+7. Wybierz klawisz **F5** , aby kontynuować wykonywanie.
 
-8. Możesz zmienić ustawienia dla dokumentu, w tym miejscu, ale pozostaw ich wartości domyślne teraz, wybierając **Zapisz** przycisku.
+8. W tym miejscu możesz zmienić ustawienia dla dokumentu, ale pozostawić je na wartości domyślne dla tej pory, wybierając przycisk **Zapisz** .
 
-     Nastąpi powrót do **dokumenty udostępnione** stronę domyślnej witryny sieci Web programu SharePoint.
+     Spowoduje to powrót do strony **dokumenty udostępnione** w domyślnej witrynie sieci Web programu SharePoint.
 
-9. W **dokumenty udostępnione** Sprawdź, czy wartość poniżej **MySharePointWorkflow - Workflow1** kolumny ustawiono **w toku**. Oznacza to, że przepływ pracy jest w toku i że dokument oczekuje na Przegląd.
+9. Na stronie **dokumenty udostępnione** Sprawdź, czy wartość poniżej kolumny **MySharePointWorkflow-Workflow1** jest ustawiona na **w toku**. Oznacza to, że przepływ pracy jest w toku i że dokument oczekuje na przegląd.
 
-10. W **dokumenty udostępnione** strony, wybierz dokument, wybierz strzałkę, która pojawia się, a następnie wybierz **Edytuj właściwości** elementu menu.
+10. Na stronie **dokumenty udostępnione** wybierz dokument, wybierz strzałkę, która zostanie wyświetlona, a następnie wybierz element menu **Edytuj właściwości** .
 
-11. Ustaw **stan dokumentu** do **kompletny przegląd**, a następnie wybierz **Zapisz** przycisku.
+11. Ustaw **stan dokumentu** na **Zakończono przegląd**, a następnie wybierz przycisk **Zapisz** .
 
-     Nastąpi powrót do **dokumenty udostępnione** stronę domyślnej witryny sieci Web programu SharePoint.
+     Spowoduje to powrót do strony **dokumenty udostępnione** w domyślnej witrynie sieci Web programu SharePoint.
 
-12. W **dokumenty udostępnione** Sprawdź, czy wartość poniżej **stan dokumentu** kolumny ustawiono **kompletny przegląd**. Odśwież **dokumenty udostępnione** strony i upewnij się, że wartość poniżej **MySharePointWorkflow - Workflow1** kolumny ustawiono **Ukończono**. Oznacza to, że przepływ pracy został zakończony, a dokument został przejrzany.
+12. Na stronie **dokumenty udostępnione** Sprawdź, czy wartość poniżej kolumny **stan dokumentu** jest ustawiona na **Przegląd zakończono**. Odśwież stronę **dokumenty udostępnione** i sprawdź, czy wartość poniżej kolumny **MySharePointWorkflow-Workflow1** jest ustawiona na **ukończone**. Oznacza to, że przepływ pracy został zakończony i dokument został sprawdzony.
 
 ## <a name="next-steps"></a>Następne kroki
- Możesz dowiedzieć się więcej na temat sposobu tworzenia szablonów przepływu pracy w tych tematach:
+ Więcej informacji na temat tworzenia szablonów przepływu pracy można znaleźć w następujących tematach:
 
-- Aby dowiedzieć się więcej na temat działania przepływu pracy programu SharePoint, zobacz [działań przepływu pracy programu SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=178992).
+- Aby dowiedzieć się więcej o działaniach przepływu pracy programu SharePoint, zobacz [działania przepływu pracy dla programu SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ms446847(v=office.14)).
 
-- Aby dowiedzieć się więcej na temat działania Windows Workflow Foundation, zobacz [Namespace System.Workflow.Activities](http://go.microsoft.com/fwlink/?LinkId=178993).
+- Aby dowiedzieć się więcej na temat Windows Workflow Foundation działań, zobacz [przestrzeń nazw System. Workflow. Activities](/dotnet/api/system.workflow.activities&view=netframework-4.8).
 
 ## <a name="see-also"></a>Zobacz także
-- [Tworzenie rozwiązań przepływu pracy SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)
-- [Projekt SharePoint oraz szablony elementów projektu](../sharepoint/sharepoint-project-and-project-item-templates.md)
+- [Tworzenie rozwiązań przepływu pracy programu SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)
+- [Projekty programu SharePoint i szablony elementów projektu](../sharepoint/sharepoint-project-and-project-item-templates.md)
 - [Kompilowanie i debugowanie rozwiązań SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)

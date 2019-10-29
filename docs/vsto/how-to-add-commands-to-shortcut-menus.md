@@ -13,42 +13,42 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3b20b10a37908e2c9744aeac63bb3eda091da478
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 82c26022f0c88f1ce125c64f5ec3b2df8d20346e
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62826408"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986029"
 ---
 # <a name="how-to-add-commands-to-shortcut-menus"></a>Instrukcje: Dodawanie poleceń do menu skrótów
-  W tym temacie pokazano, jak dodać polecenia do menu skrótów w aplikacji pakietu Office przy użyciu dodatku narzędzi VSTO.
+  W tym temacie pokazano, jak dodać polecenia do menu skrótów w aplikacji pakietu Office przy użyciu dodatku VSTO.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
 ### <a name="to-add-commands-to-shortcut-menus-in-office"></a>Aby dodać polecenia do menu skrótów w pakiecie Office
 
-1. Dodaj **kodu XML wstążki** elementu na poziomie dokumentu lub projekt dodatku narzędzi VSTO dla programów. Aby uzyskać więcej informacji, zobacz [jak: Wprowadzenie do dostosowywania wstążki](../vsto/how-to-get-started-customizing-the-ribbon.md). W
+1. Dodaj element **XML wstążki** do projektu dodatku VSTO lub poziomu dokumentu. Aby uzyskać więcej informacji, zobacz [How to: wprowadzenie dostosowywanie wstążki](../vsto/how-to-get-started-customizing-the-ribbon.md). W
 
-2. **Eksplorator rozwiązań**, wybierz opcję **ThisAddin.cs** lub **ThisAddin.vb**.
+2. **Eksplorator rozwiązań**, wybierz pozycję **ThisAddIn.cs** lub **ThisAddIn. vb**.
 
-3. Na pasku menu wybierz **widoku** > **kodu**.
+3. Na pasku menu wybierz polecenie **wyświetl**  > **kod**.
 
-     **ThisAddin** plik klas zostanie otwarty w edytorze kodu.
+     Plik klasy **ThisAddIn** zostanie otwarty w edytorze kodu.
 
-4. Dodaj następujący kod do **ThisAddin** klasy. Ten kod zastępuje `CreateRibbonExtensibilityObject` metodę i zwraca XML wstążki klasy do aplikacji pakietu Office.
+4. Dodaj następujący kod do klasy **ThisAddIn** . Ten kod zastępuje metodę `CreateRibbonExtensibilityObject` i zwraca klasę XML wstążki do aplikacji pakietu Office.
 
      [!code-csharp[Trin_WordAddIn_Menus#1](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/thisaddin.cs#1)]
      [!code-vb[Trin_WordAddIn_Menus#1](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/thisaddin.vb#1)]
 
-5. W **Eksploratora rozwiązań**, wybierz plik XML wstążki. Domyślnie, nosi nazwę pliku XML wstążki *Ribbon1.xml*.
+5. W **Eksplorator rozwiązań**wybierz plik XML wstążki. Domyślnie plik XML wstążki nosi nazwę *Ribbon1. XML*.
 
-6. Na pasku menu wybierz **widoku** > **kodu**.
+6. Na pasku menu wybierz polecenie **wyświetl**  > **kod**.
 
-     Plik xml wstążki, zostanie otwarty w edytorze kodu.
+     Plik XML wstążki zostanie otwarty w edytorze kodu.
 
-7. W edytorze kodu Dodaj kod XML, który opisuje, w menu skrótów i formant, który chcesz dodać do menu skrótów.
+7. W edytorze kodu, Dodaj kod XML, który opisuje menu skrótów i kontrolkę, którą chcesz dodać do menu skrótów.
 
-     Poniższy przykład dodaje przycisk, menu i kontrolkę galerii do menu skrótów dla dokumentu programu word. Identyfikator formantu tego menu skrótów jest ContextMenuText. Aby uzyskać pełną listę kontroli skrótów pakietu Office 2010 identyfikatory, zobacz [pliki Pomocy pakietu Office 2010: Identyfikatory kontrolki interfejsu użytkownika fluent Office](http://go.microsoft.com/fwlink/?LinkID=181052).
+     Poniższy przykład dodaje przycisk, menu i kontrolkę Galeria do menu skrótów dla dokumentu programu Word. Identyfikator kontrolki tego menu skrótów to ContextMenuText. Aby uzyskać pełną listę identyfikatorów kontrolek skrótu pakietu Office 2010, zobacz [pliki pomocy pakietu office 2010: identyfikatory formantów interfejsu użytkownika pakietu Office Fluent](https://www.microsoft.com/download/details.aspx?id=6627).
 
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
@@ -70,11 +70,11 @@ ms.locfileid: "62826408"
     </customUI>
     ```
 
-8. W **Eksploratora rozwiązań**, wybierz **MyRibbon.cs** lub **MyRibbon.vb**.
+8. W **Eksplorator rozwiązań**wybierz pozycję **MyRibbon.cs** lub **wstążka. vb**.
 
-9. Dodaj metodę wywołania zwrotnego, która `Ribbon1` klasy dla każdego formantu, który chcesz obsługiwać.
+9. Dodaj metodę wywołania zwrotnego do klasy `Ribbon1` dla każdej kontrolki, która ma być obsługiwana.
 
-     Następujące obsługuje metody wywołania zwrotnego **przycisk Moje** przycisku. Ten kod dodaje ciąg do aktywnego dokumentu w bieżącej lokalizacji kursor.
+     Następująca metoda wywołania zwrotnego obsługuje przycisk **My** . Ten kod dodaje ciąg do aktywnego dokumentu w bieżącej lokalizacji programu.
 
      [!code-vb[Trin_WordAddIn_Menus#2](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/ribbon1.vb#2)]
      [!code-csharp[Trin_WordAddIn_Menus#2](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/ribbon1.cs#2)]
@@ -83,4 +83,4 @@ ms.locfileid: "62826408"
 - [Dostosowywanie interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md)
 - [Przewodnik: Tworzenie menu skrótów dla zakładek](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)
 - [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)
-- [Dostosowywanie menu kontekstowe w pakiecie Office 2010](http://go.microsoft.com/fwlink/?LinkId=182186)
+- [Dostosowywanie menu kontekstowego w pakiecie Office 2010](/previous-versions/office/developer/office-2010/ee691832(v=office.14))

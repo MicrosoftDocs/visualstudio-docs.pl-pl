@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7b2de511b0d24df9c4e156ccef37ff053005af98
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 51723d22cd72de8333fca9b83c1643117a7413e5
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72450444"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986218"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>Krok 3. Korzystanie z okna interaktywnego REPL
 
@@ -25,7 +25,7 @@ ms.locfileid: "72450444"
 Okno **interaktywne** programu Visual Studio dla języka Python zawiera bogate środowisko REPL (Read-oszacować-Print-pętle), które znacznie skraca typowy cykl Edit-Build-Debug. Okno **interaktywne** zapewnia wszystkie możliwości środowiska REPL w wierszu polecenia języka Python. Ułatwia ona również wymianę kodu z plikami źródłowymi w edytorze programu Visual Studio, które w przeciwnym razie są kłopotliwe w wierszu polecenia.
 
 > [!NOTE]
-> W przypadku problemów z usługą REPL upewnij się, że zainstalowano pakiety `ipython` i `ipykernel`, a aby uzyskać pomoc dotyczącą instalowania pakietów, zobacz [kartę pakiety środowiska Python](https://docs.microsoft.com/en-us/visualstudio/python/python-environments-window-tab-reference#packages-tab).
+> W przypadku problemów z usługą REPL upewnij się, że zainstalowano pakiety `ipython` i `ipykernel`, a aby uzyskać pomoc dotyczącą instalowania pakietów, zobacz [kartę pakiety środowiska Python](/en-us/visualstudio/python/python-environments-window-tab-reference#packages-tab).
 
 1. Otwórz okno **interaktywne** , klikając prawym przyciskiem myszy środowisko Python projektu w **Eksplorator rozwiązań** (na przykład **Python 3,6 (32-bit)** , jak pokazano na poprzedniej ilustracji, a następnie wybierając polecenie **Otwórz okno interaktywne**. Możesz wybrać opcję **wyświetl** >  inne interaktywne okna środowiska**Python** **Windows** >  z głównego menu programu Visual Studio.
 
@@ -44,7 +44,7 @@ Okno **interaktywne** programu Visual Studio dla języka Python zawiera bogate �
 
     ![Okno interaktywne języka Python z kontynuacją instrukcji](media/vs-getting-started-python-13-interactive3.png)
 
-1. Okno **interaktywne** zawiera pełną historię wszystkich wprowadzonych elementów i usprawnia REPL wiersza polecenia z wielowierszowymi elementami historii. Na przykład można łatwo odwołać całą definicję funkcji `f` jako pojedynczą jednostkę i łatwo zmienić nazwę na `make_double`, a nie przez ponowne utworzenie wiersza funkcji po wierszu.
+1. Okno **interaktywne** zawiera pełną historię wszystkich wprowadzonych elementów i usprawnia REPL wiersza polecenia z wielowierszowymi elementami historii. Na przykład można łatwo odwołać całą definicję funkcji `f` jako pojedynczą jednostkę i łatwo zmienić nazwę na `make_double`, zamiast tworzyć ją od nowa wiersz.
 
 1. Program Visual Studio może wysyłać wiele wierszy kodu z okna edytora do okna **interaktywnego** . Ta funkcja pozwala zachować kod w pliku źródłowym i w łatwy sposób wysyłać wybrane części do okna **interaktywnego** . Następnie można pracować z takimi fragmentami kodu w szybkim środowisku REPL, zamiast uruchamiać cały program. Aby wyświetlić tę funkcję, najpierw Zastąp pętlę `for` w pliku *PythonApplication1.py* następującym:
 
@@ -54,7 +54,7 @@ Okno **interaktywne** programu Visual Studio dla języka Python zawiera bogate �
         return ' ' * int(20 * cos(radians(x)) + 20) + 'o'
     ```
 
-1. Zaznacz instrukcje funkcji `import`, `from` i `make_dot_string` w pliku *. PR* , kliknij prawym przyciskiem myszy i wybierz polecenie **Wyślij do interaktywnego** (lub naciśnij klawisz **Ctrl**+**Enter**). Fragment kodu zostanie natychmiast wklejony do okna **interaktywnego** i uruchomiony. Ponieważ kod definiuje funkcję, można szybko przetestować tę funkcję, wywołując ją kilka razy:
+1. Wybierz instrukcje `import`, `from`i `make_dot_string` funkcji w pliku *. PR* , kliknij prawym przyciskiem myszy i wybierz polecenie **Wyślij do interaktywnego** (lub naciśnij klawisz **Ctrl**+**Enter**). Fragment kodu zostanie natychmiast wklejony do okna **interaktywnego** i uruchomiony. Ponieważ kod definiuje funkcję, można szybko przetestować tę funkcję, wywołując ją kilka razy:
 
     ![Wysyłanie kodu do okna interaktywnego i testowanie go](media/vs-getting-started-python-14-interactive4.png)
 
@@ -91,7 +91,7 @@ Okno **interaktywne** programu Visual Studio dla języka Python zawiera bogate �
 
     Jeśli chcesz skopiować dokładną zawartość okna **interaktywnego** , w tym informacje o komunikatach i danych wyjściowych, po prostu Użyj standardowego polecenia **copy** .
 
-1. Właśnie gotowe środowisko jest używane przez szybkie REPL środowiska **interaktywnego** w celu wypróbowania szczegółowych informacji o małym fragmencie kodu, a następnie dodaliśmy ten kod do pliku źródłowego projektu. Po ponownym uruchomieniu kodu przy użyciu **kombinacji klawiszy Ctrl**@no__t-**1 F5** (lub **debugowania** > **Uruchom bez debugowania**) zobaczysz dokładne wyniki.
+1. Właśnie gotowe środowisko jest używane przez szybkie REPL środowiska **interaktywnego** w celu wypróbowania szczegółowych informacji o małym fragmencie kodu, a następnie dodaliśmy ten kod do pliku źródłowego projektu. Po ponownym uruchomieniu kodu przy użyciu **kombinacji klawiszy Ctrl**+**F5** (lub **debugowania** > **Uruchom bez debugowania**) zobaczysz dokładne wyniki.
 
 ## <a name="next-step"></a>Następny krok
 

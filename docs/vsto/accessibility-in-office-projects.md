@@ -15,16 +15,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e7b80db6f8f54c897a370d53db56773ad8296f6e
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 6159cd2afc5788e12a836c138ddcc1ea967a5381
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255781"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986337"
 ---
 # <a name="accessibility-in-office-projects"></a>Ułatwienia dostępu w projektach pakietu Office
 
-Microsoft Visual Studio i Microsoft Office obejmują wiele funkcji ułatwień dostępu, które umożliwiają tworzenie niestandardowych rozwiązań spełniających standardowe wymagania dotyczące ułatwień dostępu. Firma Microsoft publikuje wytyczne dotyczące ułatwień dostępu w sieci Web. Aby uzyskać szczegółowe informacje, zobacz [witrynę sieci Web ułatwień dostępu](http://go.microsoft.com/fwlink/?LinkID=37113).
+Microsoft Visual Studio i Microsoft Office obejmują wiele funkcji ułatwień dostępu, które umożliwiają tworzenie niestandardowych rozwiązań spełniających standardowe wymagania dotyczące ułatwień dostępu. Firma Microsoft publikuje wytyczne dotyczące ułatwień dostępu w sieci Web. Aby uzyskać szczegółowe informacje, zobacz [witrynę sieci Web ułatwień dostępu](https://www.microsoft.com/accessibility/).
 
 W większości przypadków projekty pakietu Office w programie Visual Studio spełniają standardy dostępności lub udostępniają właściwości, które można ustawić w celu udostępnienia rozwiązań. Istnieją jednak pewne funkcje z ograniczoną dostępnością.
 

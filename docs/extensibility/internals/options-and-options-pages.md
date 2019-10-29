@@ -1,5 +1,5 @@
 ---
-title: Opcje i strony opcji | Dokumentacja firmy Microsoft
+title: Opcje i strony opcji | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,62 +14,62 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c336503b80e2af34ac58c7debde16895d7f2585
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 963a73a3a8e079b2171c88e901913990892715cd
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314851"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72981901"
 ---
 # <a name="options-and-options-pages"></a>Opcje i strony opcji
-Klikając **opcje** na **narzędzia** zostanie otwarte menu **opcje** okno dialogowe. Opcje w oknie dialogowym są zbiorczo określany jako opcje strony. Drzewie w okienku nawigacji zawiera opcje kategorie, a każda kategoria ma stron opcji. Po wybraniu strony, dostępne opcje są wyświetlane w okienku po prawej stronie. Te strony umożliwiają zmienić wartości opcji, które określają stan pakietu VSPackage.
+Kliknięcie przycisku **Opcje** w menu **Narzędzia** powoduje otwarcie okna dialogowego **Opcje** . Opcje w tym oknie dialogowym są określane zbiorczo jako strony opcji. Kontrolka drzewa w okienku nawigacji zawiera kategorie opcji, a każda kategoria zawiera strony opcji. Po wybraniu strony opcje są wyświetlane w okienku po prawej stronie. Te strony umożliwiają zmianę wartości opcji, które określają stan pakietu VSPackage.
 
 ## <a name="support-for-options-pages"></a>Obsługa stron opcji
- <xref:Microsoft.VisualStudio.Shell.Package> Klasy zapewnia obsługę tworzenia stron opcji i opcje kategorii. <xref:Microsoft.VisualStudio.Shell.DialogPage> Klasa implementuje stronę opcji.
+ Klasa <xref:Microsoft.VisualStudio.Shell.Package> zapewnia obsługę tworzenia stron opcji i kategorii opcji. Klasa <xref:Microsoft.VisualStudio.Shell.DialogPage> implementuje stronę opcji.
 
- Domyślna implementacja klasy <xref:Microsoft.VisualStudio.Shell.DialogPage> oferuje jego właściwości publiczne użytkownikowi ogólnego siatki właściwości. To zachowanie można dostosować poprzez zastąpienie różne metody, na stronie, aby utworzyć stronę opcji niestandardowych, która ma własny interfejs użytkownika (UI). Aby uzyskać więcej informacji, zobacz [Tworzenie strony opcji](../../extensibility/creating-an-options-page.md).
+ Domyślna implementacja <xref:Microsoft.VisualStudio.Shell.DialogPage> oferuje jej właściwości publiczne użytkownikowi w ogólnej siatce właściwości. To zachowanie można dostosować, zastępując różne metody na stronie w celu utworzenia strony opcji niestandardowych, która ma własny interfejs użytkownika. Aby uzyskać więcej informacji, zobacz [Tworzenie strony opcji](../../extensibility/creating-an-options-page.md).
 
- <xref:Microsoft.VisualStudio.Shell.DialogPage> Klasy implementuje <xref:Microsoft.VisualStudio.Shell.IProfileManager>, zapewniającą stanów trwałych dla stron opcji, a także dla ustawień użytkownika. Domyślna implementacja metody <xref:Microsoft.VisualStudio.Shell.IProfileManager.LoadSettingsFromStorage%2A> i <xref:Microsoft.VisualStudio.Shell.IProfileManager.SaveSettingsToStorage%2A> metody utrwala zmiany właściwości użytkownika części rejestru, jeśli właściwości mogą być konwertowane do i z ciągu.
+ Klasa <xref:Microsoft.VisualStudio.Shell.DialogPage> implementuje <xref:Microsoft.VisualStudio.Shell.IProfileManager>, która zapewnia trwałość dla stron opcji, a także dla ustawień użytkownika. Domyślne implementacje metod <xref:Microsoft.VisualStudio.Shell.IProfileManager.LoadSettingsFromStorage%2A> i <xref:Microsoft.VisualStudio.Shell.IProfileManager.SaveSettingsToStorage%2A> utrzymują zmiany właściwości w sekcji użytkownika rejestru, jeśli właściwość może zostać przekonwertowana na i z ciągu.
 
-## <a name="options-page-registry-path"></a>Ścieżka rejestru strony opcji
- Domyślnie, ścieżka rejestru właściwości zarządzane przez stronę opcji jest określana przez połączenie <xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A>, word typu DialogPage i nazwę typu klasy strony opcje. Na przykład klasy strony opcji może być zdefiniowana w następujący sposób.
+## <a name="options-page-registry-path"></a>Strona opcji Ścieżka rejestru
+ Domyślnie ścieżka rejestru właściwości zarządzanych przez stronę opcji jest określana przez połączenie <xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A>, słowa typu DialogPage oraz nazwy typu klasy strony opcji. Na przykład Klasa strony opcji może być zdefiniowana w następujący sposób.
 
  [!code-csharp[VSSDKSupportForOptionsPages#1](../../extensibility/internals/codesnippet/CSharp/options-and-options-pages_1.cs)]
  [!code-vb[VSSDKSupportForOptionsPages#1](../../extensibility/internals/codesnippet/VisualBasic/options-and-options-pages_1.vb)]
 
- Jeśli <xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A> jest HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0Exp, pary nazw i wartości właściwości są podkluczy HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0Exp\DialogPage\ Company.OptionsPage.OptionsPageGeneral.
+ Jeśli <xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A> to HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0Exp, a następnie nazwa właściwości i pary wartości są podkluczami HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0Exp\DialogPage\Company.OptionsPage.OptionsPageGeneral.
 
- Ścieżka rejestru sama strona Opcje jest określana przez łączenie <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>, wyraz, ToolsOptionsPages i opcje strony kategorii i nazwę. Na przykład, jeśli niestandardowy strona opcji posiada kategorii Moje strony opcji, a <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A> jest HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp, Strona opcji posiada HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ klucza rejestru. VisualStudio\8.0Exp\ToolsOptionsPages\My Pages\Custom opcji.
+ Ścieżka rejestru samej strony opcji jest określana przez połączenie <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>, słowo, ToolsOptionsPages oraz kategorię i nazwę strony opcji. Na przykład jeśli strona Opcje niestandardowe zawiera kategorię, moje strony opcji, a <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A> to HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp, a następnie strona Opcje ma klucz rejestru, HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\ 8.0 EXP \ ToolsOptionsPages \ Moja opcja Pages\Custom.
 
-## <a name="toolsoptions-page-attributes-and-layout"></a>Narzędzia/Opcje atrybutów strony i układu
- <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> Atrybut określa zbiór niestandardowych stron opcji na kategorie w drzewie nawigacji **opcje** okno dialogowe. <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> Atrybut kojarzy strony opcji za pomocą pakietu VSPackage, który zapewnia interfejs. Rozważmy następujący fragment kodu:
+## <a name="toolsoptions-page-attributes-and-layout"></a>Narzędzia/Opcje strony — atrybuty i układ
+ Atrybut <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> określa grupowanie stron opcji niestandardowych w kategorii w drzewie nawigacji okna dialogowego **Opcje** . Atrybut <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> kojarzy stronę opcji z pakietu VSPackage, która dostarcza interfejs. Rozważmy następujący fragment kodu:
 
  [!code-csharp[VSSDKSupportForOptionsPages#2](../../extensibility/internals/codesnippet/CSharp/options-and-options-pages_2.cs)]
  [!code-vb[VSSDKSupportForOptionsPages#2](../../extensibility/internals/codesnippet/VisualBasic/options-and-options-pages_2.vb)]
 
- Deklaruje, że MyPackage oferuje dwie opcje strony, OptionsPageGeneral i OptionsPageCustom. W **opcje** okno dialogowe, obie strony opcje są wyświetlane w **Moje strony opcji** kategorii co **ogólne** i **niestandardowe**, odpowiednio.
+ Deklaruje, że pakiet webpackage udostępnia dwie strony opcji, OptionsPageGeneral i OptionsPageCustom. W oknie dialogowym **Opcje** obie strony opcji są wyświetlane w kategorii **Moje** opcje jako **Ogólne** i **niestandardowe**odpowiednio.
 
-## <a name="option-attributes-and-layout"></a>Opcja atrybutów i układu
- Interfejs użytkownika (UI), który zawiera strony określa wygląd opcje na stronie Opcje niestandardowe. Układ, etykietowania i opis opcji na stronie opcji ogólnych są określane przez następujące atrybuty:
+## <a name="option-attributes-and-layout"></a>Atrybuty i układ opcji
+ Interfejs użytkownika, który zawiera strona określa wygląd opcji na stronie opcji niestandardowych. Układ, etykietowanie i opis opcji na stronie opcji ogólnych są określane przez następujące atrybuty:
 
 - <xref:System.ComponentModel.CategoryAttribute> Określa kategorię opcji.
 
-- <xref:System.ComponentModel.DisplayNameAttribute> Określa nazwę wyświetlaną opcji.
+- <xref:System.ComponentModel.DisplayNameAttribute> określa nazwę wyświetlaną opcji.
 
-- <xref:System.ComponentModel.DescriptionAttribute> Określa opis opcji.
+- <xref:System.ComponentModel.DescriptionAttribute> określa opis opcji.
 
   > [!NOTE]
-  > Atrybuty równoważne, SRCategory, LocDisplayName i SRDescription, korzystać z zasobów ciągu dla lokalizacji i są definiowane w [przykładowym projekcie zarządzanych](http://go.microsoft.com/fwlink/?LinkId=122774).
+  > Równoważne atrybuty, SRCategory, LocDisplayName i SRDescription, służą do lokalizowania zasobów ciągów i są zdefiniowane w [próbce projektu zarządzanego](/azure/devops/integrate/index).
 
   Rozważmy następujący fragment kodu:
 
   [!code-csharp[VSSDKSupportForOptionsPages#3](../../extensibility/internals/codesnippet/CSharp/options-and-options-pages_3.cs)]
   [!code-vb[VSSDKSupportForOptionsPages#3](../../extensibility/internals/codesnippet/VisualBasic/options-and-options-pages_3.vb)]
 
-  Opcja OptionInteger pojawia się na stronie Opcje jako **opcji całkowitą** w **Moje opcje** kategorii. Jeśli wybrano opcję opisu, **Moje opcji całkowitą**, jest wyświetlany w polu opisu.
+  Opcja OptionInteger jest wyświetlana na stronie Opcje jako **Liczba całkowita** w kategorii **My Options** . Jeśli opcja jest zaznaczona, w polu Opis zostanie wyświetlona opcja Opis, **My Integer**.
 
-## <a name="accessing-options-pages-from-another-vspackage"></a>Uzyskiwanie dostępu do stron opcji z innego pakietu VSPackage
- Pakietu VSPackage, który hostuje i zarządza strony opcji programowo możliwy od innego pakietu VSPackage przy użyciu modelu automatyzacji. Na przykład w poniższym kodzie pakietu VSPackage jest zarejestrowany jako stanowiącego host strony opcji.
+## <a name="accessing-options-pages-from-another-vspackage"></a>Dostęp do stron opcji z innego pakietu VSPackage
+ Pakietu VSPackage, który hostuje i zarządza stroną opcji można programistycznie uzyskać dostęp z innego pakietu VSPackage przy użyciu modelu automatyzacji. Na przykład w poniższym kodzie pakietu VSPackage jest zarejestrowana jako hostowanie strony opcji.
 
  [!code-csharp[VSSDKSupportForOptionsPages#4](../../extensibility/internals/codesnippet/CSharp/options-and-options-pages_4.cs)]
  [!code-vb[VSSDKSupportForOptionsPages#4](../../extensibility/internals/codesnippet/VisualBasic/options-and-options-pages_4.vb)]
@@ -79,9 +79,9 @@ Klikając **opcje** na **narzędzia** zostanie otwarte menu **opcje** okno dialo
  [!code-csharp[VSSDKSupportForOptionsPages#5](../../extensibility/internals/codesnippet/CSharp/options-and-options-pages_5.cs)]
  [!code-vb[VSSDKSupportForOptionsPages#5](../../extensibility/internals/codesnippet/VisualBasic/options-and-options-pages_5.vb)]
 
- Gdy <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> atrybut rejestruje Strona opcji, strona jest zarejestrowany w obszarze Jeśli klucza AutomationProperties `SupportsAutomation` argument atrybutu jest `true`. Automatyzacja sprawdza, czy ten wpis rejestru, aby znaleźć skojarzonego pakietu VSPackage i automatyzacji, a następnie uzyskuje dostęp do właściwości przy użyciu hostowanego Strona opcji, w tym przypadku Moje strony siatki.
+ Gdy atrybut <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> rejestruje stronę opcji, strona jest zarejestrowana w kluczu AutomationProperties, jeśli argument `SupportsAutomation` atrybutu jest `true`. Usługa Automation analizuje ten wpis rejestru, aby znaleźć skojarzone pakietu VSPackage, a następnie usługa Automation uzyskuje dostęp do właściwości za pomocą strony Opcje hostowane, w tym przypadku strony Moje siatki.
 
- Ścieżka rejestru właściwości automatyzacji jest określana przez łączenie <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>, wyraz, AutomationProperties i opcje strony kategorii i nazwę. Na przykład, jeśli strona opcji posiada kategorii Moje kategorii, nazwę Moje strony siatki i <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>, HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp, a następnie właściwość automatyzacji zawiera klucz rejestru HKEY_LOCAL_MACHINE\SOFTWARE\ Strona siatki Category\My Microsoft\VisualStudio\8.0Exp\AutomationProperties\My.
+ Ścieżka rejestru właściwości automatyzacji jest określana przez połączenie <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>, wyrazów, AutomationProperties oraz kategorii i nazwy strony opcji. Na przykład, jeśli strona opcji zawiera kategorię my Category, nazwa strony My Grid i <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>, HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp, a następnie właściwość Automation ma klucz rejestru, HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ Strona siatki VisualStudio\8.0Exp\AutomationProperties\My Category\My.
 
 > [!NOTE]
-> Nazwa kanoniczna Moje Category.My stronie siatki, to wartość podklucza nazwę tego klucza.
+> Nazwa kanoniczna, Strona Category.My Grid, jest wartością podklucza nazwy tego klucza.

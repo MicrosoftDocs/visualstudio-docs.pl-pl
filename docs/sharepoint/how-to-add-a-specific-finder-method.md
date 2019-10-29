@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Dodawanie określonej metody wyszukiwania | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: dodawanie określonej metody wyszukiwania | Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,80 +17,80 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8fdd467f2b3a06398198f6fd8452c6a548bf0872
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 732921b021d7887faf31dd3f602f5400c1d06a59
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431269"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985263"
 ---
-# <a name="how-to-add-a-specific-finder-method"></a>Instrukcje: Dodawanie określonej metody wyszukiwania
-  Może zwrócić wystąpienia pojedynczej jednostki, tworząc *określonej metody wyszukiwania* metody. Usługa łączności danych biznesowych (BDC) wykonuje konkretną metodę wyszukiwania, gdy użytkownik wybierze jednostki w części sieci web danych biznesowych lub listy zewnętrznej. Aby uzyskać więcej informacji, zobacz [projektowanie modelu łączności danych biznesowych](../sharepoint/designing-a-business-data-connectivity-model.md).
+# <a name="how-to-add-a-specific-finder-method"></a>Instrukcje: dodawanie określonej metody wyszukiwania
+  Wystąpienie pojedynczej jednostki można zwrócić, tworząc określoną metodę *wyszukiwania* . Usługa łączności danych biznesowych (BDC) wykonuje określoną metodę wyszukiwania, gdy użytkownik wybierze jednostkę w składniku Web Part danych biznesowych lub liście zewnętrznej. Aby uzyskać więcej informacji, zobacz [Projektowanie modelu łączności danych firmowych](../sharepoint/designing-a-business-data-connectivity-model.md).
 
-### <a name="to-create-a-specific-finder-method"></a>Aby utworzyć określonej metody wyszukiwania
+### <a name="to-create-a-specific-finder-method"></a>Aby utworzyć konkretną metodę wyszukiwania
 
-1. Na **projektanta łączności danych biznesowych**, wybierz jednostkę.
+1. W **projektancie BDC**wybierz jednostkę.
 
-    Aby uzyskać informacje dotyczące sposobu dodawania jednostki do **projektanta łączności danych biznesowych** w programie Visual Studio, zobacz [jak: Dodawanie jednostki do modelu](../sharepoint/how-to-add-an-entity-to-a-model.md).
+    Aby uzyskać informacje na temat dodawania jednostki do **projektanta usługi BDC** w programie Visual Studio, zobacz [How to: Add a Entity to a model](../sharepoint/how-to-add-an-entity-to-a-model.md).
 
-2. Na pasku menu wybierz **widoku** > **Windows inne**, **szczegóły metody BDC**.
+2. Na pasku menu wybierz **widok** > **inne okna**, **Szczegóły metody BDC**.
 
-    **Szczegóły metody BDC** zostanie otwarte okno. Aby uzyskać więcej informacji na temat tego okna, zobacz [Omówienie narzędzia projektowania modelu usługi łączności danych biznesowych](../sharepoint/bdc-model-design-tools-overview.md).
+    Zostanie otwarte okno **Szczegóły metody BDC** . Aby uzyskać więcej informacji na temat tego okna, zobacz [narzędzia projektowania modelu usługi BDC — Omówienie](../sharepoint/bdc-model-design-tools-overview.md).
 
-3. W **Dodaj metodę** wybierz **Tworzenie określonej metody wyszukiwania**.
+3. Z listy **Dodaj metodę** wybierz opcję **Utwórz konkretną metodę wyszukiwania**.
 
-    Visual Studio dodaje następujące elementy w modelu. Te elementy są wyświetlane w **szczegóły metody BDC** okna.
+    Program Visual Studio dodaje do modelu następujące elementy. Te elementy pojawiają się w oknie **Szczegóły metody BDC** .
 
    - Metoda.
 
-   - Parametr wejściowy metody.
+   - Parametr wejściowy dla metody.
 
-   - Parametr zwracany przez metodę.
+   - Parametr Return dla metody.
 
    - Deskryptor typu dla każdego parametru.
 
-   - Wystąpienia metody dla metody.
+   - Wystąpienie metody dla metody.
 
-     Aby uzyskać więcej informacji, zobacz [projektowanie modelu łączności danych biznesowych](../sharepoint/designing-a-business-data-connectivity-model.md).
+     Aby uzyskać więcej informacji, zobacz [Projektowanie modelu łączności danych firmowych](../sharepoint/designing-a-business-data-connectivity-model.md).
 
-4. Otwórz program Visual Studio **właściwości** okna.
+4. Otwórz okno **Właściwości** programu Visual Studio.
 
-5. Deskryptor typu parametru zwracanego należy skonfigurować jako deskryptora typu. Aby uzyskać informacje o sposobach tworzenia deskryptora typu, zobacz [jak: Określanie deskryptora typu parametru](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
-
-   > [!NOTE]
-   > Nie trzeba wykonać ten krok, jeśli metoda wyszukiwania zostały dodane do jednostki. Visual Studio używa deskryptora typu, który zostały zdefiniowane w metodę wyszukiwania.
+5. Skonfiguruj deskryptor typu dla parametru Return jako deskryptora typu jednostki. Informacje o sposobach tworzenia deskryptora typu jednostki znajdują się w temacie [How to: define The Type Descriptor of an Parameter](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
 
    > [!NOTE]
-   > Jeśli pole identyfikatora typu jednostki reprezentuje pole w tabeli bazy danych, która jest generowana automatycznie, ustaw **tylko do odczytu** właściwości pola Identyfikator **True**.
+   > Nie trzeba wykonywać tego kroku, jeśli dodano metodę wyszukiwania do jednostki. Program Visual Studio używa deskryptora typu zdefiniowanego w metodzie wyszukiwania.
 
-6. W **szczegóły metody** okna, wybierz wystąpienie metody metody.
+   > [!NOTE]
+   > Jeśli pole identyfikatora typu jednostki reprezentuje pole w tabeli bazy danych, która jest generowana automatycznie, ustaw właściwość tylko do **odczytu** pola Identyfikator na **wartość true**.
 
-7. W **okno właściwości**ustaw **zwraca nazwę parametru** właściwość na nazwę parametru zwracanego metody. Aby uzyskać więcej informacji na temat właściwości wystąpienia metody zobacz [elementu MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282).
+6. W oknie **Szczegóły metody** wybierz wystąpienie metody metody.
 
-8. W **Eksploratora rozwiązań**, otwórz menu skrótów pliku kodu usługi, który został wygenerowany dla jednostki, a następnie wybierz **Wyświetl kod**.
+7. W **oknie właściwości**ustaw właściwość **Nazwa parametru powrotu** na nazwę parametru powrotu metody. Aby uzyskać więcej informacji na temat właściwości wystąpienia metody, zobacz element [MethodInstance](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14)).
 
-    Pliku kodu usługi jednostki zostanie otwarty w edytorze kodu. Aby uzyskać więcej informacji na temat pliku kodu usługi jednostki, zobacz [Tworzenie modelu łączności danych biznesowych](../sharepoint/creating-a-business-data-connectivity-model.md).
+8. W **Eksplorator rozwiązań**Otwórz menu skrótów pliku kodu usługi, który został wygenerowany dla jednostki, a następnie wybierz polecenie **Wyświetl kod**.
 
-9. Dodaj kod do metody wyszukiwania. Kod będzie wykonywał następujące zadania:
+    Plik kodu usługi jednostki zostanie otwarty w edytorze kodu. Aby uzyskać więcej informacji na temat pliku kodu usługi jednostki, zobacz [Tworzenie modelu łączności danych firmowych](../sharepoint/creating-a-business-data-connectivity-model.md).
+
+9. Dodaj kod do określonej metody wyszukiwania. Kod będzie wykonywał następujące zadania:
 
    - Pobiera rekord ze źródła danych.
 
-   - Zwraca jednostkę usługi łączności danych biznesowych.
+   - Zwraca jednostkę do usługi BDC.
 
-     Poniższy przykład zwraca kontakt z przykładowej bazy danych AdventureWorks programu SQL Server.
+     Poniższy przykład zwraca kontakt z przykładowej bazy danych AdventureWorks dla SQL Server.
 
      > [!NOTE]
-     > Zastąp wartość `ServerName` pole z nazwą serwera.
+     > Zastąp wartość pola `ServerName` nazwą serwera.
 
      [!code-csharp[SP_BDC#3](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#3)]
      [!code-vb[SP_BDC#3](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#3)]
 
 ## <a name="see-also"></a>Zobacz także
-- [Projektowanie modelu łączności danych biznesowych](../sharepoint/designing-a-business-data-connectivity-model.md)
+- [Projektowanie modelu łączności danych firmy](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [Instrukcje: Dodawanie metody wyszukiwania](../sharepoint/how-to-add-a-finder-method.md)
 - [Instrukcje: Dodawanie metody Creator](../sharepoint/how-to-add-a-creator-method.md)
-- [Instrukcje: Dodawanie metody Deleter](../sharepoint/how-to-add-a-deleter-method.md)
-- [Instrukcje: Dodawanie metody Updater](../sharepoint/how-to-add-an-updater-method.md)
+- [Instrukcje: Dodawanie metody usuwania](../sharepoint/how-to-add-a-deleter-method.md)
+- [Instrukcje: Dodawanie metody Aktualizator](../sharepoint/how-to-add-an-updater-method.md)
 - [Omówienie narzędzi projektowania modelu BDC](../sharepoint/bdc-model-design-tools-overview.md)
-- [Instrukcje: Dodaj parametr do metody](../sharepoint/how-to-add-a-parameter-to-a-method.md)
+- [Instrukcje: Dodawanie parametru do metody](../sharepoint/how-to-add-a-parameter-to-a-method.md)
 - [Instrukcje: Definiowanie wystąpienia metody](../sharepoint/how-to-define-a-method-instance.md)

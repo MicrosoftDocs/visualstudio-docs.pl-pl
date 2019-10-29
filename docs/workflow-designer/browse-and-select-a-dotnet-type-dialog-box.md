@@ -11,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: dfdbe972034920869908c1bac1cb349c98d96d3f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2efea8f23e42b9f4839c8a1ae0d74248738b9cf4
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650722"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985352"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Wyszukiwanie i wybieranie typu .NET, okno dialogowe
 
@@ -31,7 +31,7 @@ To okno dialogowe jest stosowane w wielu scenariuszach użytkowników, w tym:
 - Podczas dodawania catch dla działania <xref:System.Activities.Statements.TryCatch>.
 
 > [!NOTE]
-> Przeglądarka typów może wyświetlać Visual Basic nieregularne typy tablic, ale nie wielowymiarowe typy tablicowe. Zobacz [tablice nieregularne](http://go.microsoft.com/fwlink/?LinkId=195226) i [tablice wielowymiarowe](http://go.microsoft.com/fwlink/?LinkId=195227) , aby uzyskać szczegółowe informacje.
+> Przeglądarka typów może wyświetlać Visual Basic nieregularne typy tablic, ale nie wielowymiarowe typy tablicowe. Zobacz [tablice nieregularne](/previous-versions/visualstudio/visual-studio-2008/hkhhsz9t(v=vs.90)) i [tablice wielowymiarowe](/previous-versions/visualstudio/visual-studio-2008/d2de1t93(v=vs.90)) , aby uzyskać szczegółowe informacje.
 
 ## <a name="selecting-a-value-or-reference-type-from-the-type-browser"></a>Wybieranie typu wartości lub odwołania z przeglądarki typów
 

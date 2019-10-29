@@ -1,5 +1,5 @@
 ---
-title: Polecenia uruchamiane po zakończeniu instalacji | Dokumentacja firmy Microsoft
+title: Polecenia, które muszą zostać uruchomione po instalacji | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,69 +10,69 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8a59e1a6613936c586c5529dcfc6a56a957112c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7e85a03c71064687fdfbacf24b7aa59cd2a47f1a
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341993"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72982022"
 ---
-# <a name="commands-that-must-be-run-after-installation"></a>Polecenia uruchamiane po zakończeniu instalacji
-W przypadku wdrożenia rozszerzenia w ramach *.msi* pliku, należy uruchomić **devenv/Setup** jako część instalacji w kolejności dla programu Visual Studio odnaleźć rozszerzeń.
+# <a name="commands-that-must-be-run-after-installation"></a>Polecenia, które muszą zostać uruchomione po instalacji
+W przypadku wdrożenia rozszerzenia za pomocą pliku *MSI* należy uruchomić program **devenv/setup** w ramach instalacji, aby można było odnaleźć rozszerzenia w programie Visual Studio.
 
 > [!NOTE]
-> Informacje przedstawione w tym temacie mają zastosowanie do wyszukiwania *devenv.exe* za pomocą programu Visual Studio 2008 i starszych wersji. Aby uzyskać informacje na temat odnajdywania *devenv.exe* przy użyciu nowszej wersji programu Visual Studio, zobacz [wykrywanie wymagań systemowych](../../extensibility/internals/detecting-system-requirements.md).
+> Informacje przedstawione w tym temacie mają zastosowanie do znajdowania pliku *devenv. exe* z programem Visual Studio 2008 i jego wcześniejszymi wersjami. Aby uzyskać informacje na temat odnajdywania *devenv. exe* w nowszych wersjach programu Visual Studio, zobacz [wykrywanie wymagań systemowych](../../extensibility/internals/detecting-system-requirements.md).
 
-## <a name="find-devenvexe"></a>Znajdź devenv.exe
- Możesz znaleźć, każda wersja *devenv.exe* z rejestru wartości [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zapisu pliki instalacyjne, za pomocą tabeli RegLocator i AppSearch powoduje niepoprawne obcięcie tabel do przechowywania wartości rejestru jako właściwości. Aby uzyskać więcej informacji, zobacz [wykrywanie wymagań systemowych](../../extensibility/internals/detecting-system-requirements.md).
+## <a name="find-devenvexe"></a>Znajdź devenv. exe
+ Można zlokalizować *devenv. exe* każdej wersji z wartości rejestru, które [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] się pisać instalators, przy użyciu tabeli RegLocator i tabel AppSearch do przechowywania wartości rejestru jako właściwości. Aby uzyskać więcej informacji, zobacz [wykrywanie wymagań systemowych](../../extensibility/internals/detecting-system-requirements.md).
 
-### <a name="reglocator-table-rows-to-locate-devenvexe-from-different-versions-of-visual-studio"></a>RegLocator wiersze tabeli, aby zlokalizować devenv.exe z różnych wersji programu Visual Studio
+### <a name="reglocator-table-rows-to-locate-devenvexe-from-different-versions-of-visual-studio"></a>RegLocator wierszy tabeli, aby zlokalizować devenv. exe z różnych wersji programu Visual Studio
 
-|Podpis|Główny|Key|Nazwa|Typ|
+|podpisane|Pierwiastek|Key|Nazwa|Typ|
 |-----------------|----------|---------|----------|----------|
 |RL_DevenvExe_2002|2|SOFTWARE\Microsoft\VisualStudio\7.0\Setup\VS|EnvironmentPath|2|
 |RL_DevenvExe_2003|2|SOFTWARE\Microsoft\VisualStudio\7.1\Setup\VS|EnvironmentPath|2|
 |RL_DevenvExe_2005|2|SOFTWARE\Microsoft\VisualStudio\8.0\Setup\VS|EnvironmentPath|2|
 |RL_DevenvExe_2008|2|SOFTWARE\Microsoft\VisualStudio\9.0\Setup\VS|EnvironmentPath|2|
 
-### <a name="appsearch-table-rows-for-corresponding-reglocator-table-rows"></a>AppSearch powoduje niepoprawne obcięcie wiersze tabeli, aby uzyskać odpowiednie wiersze tabeli RegLocator
+### <a name="appsearch-table-rows-for-corresponding-reglocator-table-rows"></a>AppSearch wiersze tabeli dla odpowiednich wierszy tabeli RegLocator
 
-|Właściwość|Podpis|
+|Właściwość|podpisane|
 |--------------|-----------------|
 |DEVENV_EXE_2002|RL_DevenvExe_2002|
 |DEVENV_EXE_2003|RL_DevenvExe_2003|
 |DEVENV_EXE_2005|RL_DevenvExe_2005|
 |DEVENV_EXE_2008|RL_DevenvExe_2008|
 
- Na przykład, Instalator programu Visual Studio zapisuje wartość rejestru **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0\Setup\VS\EnvironmentPath** jako *C:\VS2008\Common7\IDE\devenv.exe*, pełną ścieżkę do pliku wykonywalnego, należy uruchomić Instalatora.
+ Na przykład Instalator programu Visual Studio zapisuje wartość rejestru **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0\Setup\VS\EnvironmentPath** jako *C:\VS2008\Common7\IDE\devenv.exe*, pełną ścieżkę do pliku wykonywalnego Instalator musi działać.
 
 > [!NOTE]
-> Ponieważ tabela RegLocator typ kolumny jest równa 2, nie jest konieczne Określ dodatkowe informacje o wersji w tabeli podpisu.
+> Ponieważ kolumna typu tabeli RegLocator ma wartość 2, nie trzeba określać informacji o dodatkowych wersjach w tabeli sygnatur.
 
-## <a name="run-devenvexe"></a>Uruchom devenv.exe
- Po zakończeniu AppSearch uruchamia akcję standardowego w Instalatorze, każdej właściwości w tabeli AppSearch powoduje niepoprawne obcięcie ma wartość wskazuje *devenv.exe* pliku odpowiednią wersję programu Visual Studio. Jeśli dowolna z wartości określonego rejestru nie są obecne — ponieważ nie zainstalowano tej wersji programu Visual Studio — określona właściwość jest ustawiona na wartość null.
+## <a name="run-devenvexe"></a>Uruchom devenv. exe
+ Po uruchomieniu akcji standardowej AppSearch w instalatorze Każda właściwość w tabeli AppSearch ma wartość wskazującą plik *devenv. exe* dla odpowiedniej wersji programu Visual Studio. Jeśli którekolwiek z określonych wartości rejestru nie są obecne — ponieważ ta wersja programu Visual Studio nie jest zainstalowana — określona właściwość jest ustawiona na wartość null.
 
- Instalator Windows obsługuje uruchamianie pliku wykonywalnego, na który wskazuje właściwość za pomocą akcji niestandardowej wpisz 50. Akcja niestandardowa powinna zawierać opcje wykonywania w skrypcie, `msidbCustomActionTypeInScript` (1024) i `msidbCustomActionTypeCommit` (512), aby upewnić się, że pakietu VSPackage został pomyślnie zainstalowany przed integrując je do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Aby uzyskać więcej informacji, zobacz [Akcja niestandardowa tabela](https://docs.microsoft.com/windows/desktop/msi/customaction-table) i [opcje wykonywania w skrypcie Akcja niestandardowa](https://docs.microsoft.com/windows/desktop/msi/custom-action-in-script-execution-options).
+ Instalator Windows obsługuje uruchamianie pliku wykonywalnego, do którego wskazuje właściwość, za pomocą typu akcji niestandardowej 50. Akcja niestandardowa powinna obejmować opcje wykonywania w skrypcie, `msidbCustomActionTypeInScript` (1024) i `msidbCustomActionTypeCommit` (512), aby upewnić się, że program pakietu VSPackage został pomyślnie zainstalowany przed integracją go w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Aby uzyskać więcej informacji, [Zobacz](/windows/desktop/msi/customaction-table) [Opcje wykonywania skryptu w skryptach i akcjach niestandardowych](/windows/desktop/msi/custom-action-in-script-execution-options).
 
- Niestandardowe akcje typu 50 Określ właściwości zawierające plik wykonywalny jako wartość kolumny źródłowej i argumenty wiersza polecenia, w kolumnie docelowej.
+ Akcje niestandardowe typu 50 określają Właściwość zawierającą plik wykonywalny jako wartość kolumny źródłowej i argumentów wiersza polecenia w kolumnie Target.
 
-### <a name="customaction-table-rows-to-run-devenvexe"></a>Akcja niestandardowa wiersze tabeli, aby uruchomić devenv.exe
+### <a name="customaction-table-rows-to-run-devenvexe"></a>Wiersz tabeli programu w celu uruchomienia devenv. exe
 
-|Akcja|Typ|Source|Cel|
+|Akcja|Typ|Obiekt źródłowy|Obiektów|
 |------------|----------|------------|------------|
-|CA_RunDevenv2002|1586|DEVENV_EXE_2002|/setup|
-|CA_RunDevenv2003|1586|DEVENV_EXE_2003|/setup|
-|CA_RunDevenv2005|1586|DEVENV_EXE_2005|/setup|
-|CA_RunDevenv2008|1586|DEVENV_EXE_2008|/setup|
+|CA_RunDevenv2002|1586|DEVENV_EXE_2002|/Setup|
+|CA_RunDevenv2003|1586|DEVENV_EXE_2003|/Setup|
+|CA_RunDevenv2005|1586|DEVENV_EXE_2005|/Setup|
+|CA_RunDevenv2008|1586|DEVENV_EXE_2008|/Setup|
 
- Akcje niestandardowe musi zostać utworzona do tabeli InstallExecuteSequence, aby zaplanować ich wykonanie w trakcie instalacji. Zapobiegaj akcji niestandardowej z są uruchamiane, czy za pomocą odpowiednich właściwości w każdym wierszu w kolumnie warunek wersję [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nie jest zainstalowany w systemie.
+ Akcje niestandardowe muszą zostać utworzone w tabeli InstallExecuteSequence w celu zaplanowania ich wykonywania podczas instalacji. Użyj odpowiedniej właściwości w każdym wierszu kolumny Condition, aby zapobiec uruchamianiu akcji niestandardowej, jeśli ta wersja [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nie jest zainstalowana w systemie.
 
 > [!NOTE]
-> Właściwości zwracające wartość null, być `False` przypadku użycia w warunkach.
+> Właściwości wartości null są oceniane do `False`, gdy są używane w warunkach.
 
- Wartość kolumny sekwencji dla każdej akcji niestandardowej jest zależny od innych wartości sekwencji do pakietu Instalatora Windows. Sekwencja wartości powinny być tak, aby *devenv.exe* akcje niestandardowe, Uruchom jako najbliżej bezpośrednio przed działań standardowych InstallFinalize.
+ Wartość kolumny sekwencji dla każdej akcji niestandardowej zależy od innych wartości sekwencji w pakiecie Instalator Windows. Wartości sekwencji powinny być takie, aby akcje niestandardowe *devenv. exe* działały jak najbliżej od razu przed akcją standardu funkcję InstallFinalize.
 
-### <a name="installexecutesequence-table-to-schedule-the-devenvexe-custom-actions"></a>InstallExecuteSequence tabeli, aby zaplanować akcje niestandardowe devenv.exe
+### <a name="installexecutesequence-table-to-schedule-the-devenvexe-custom-actions"></a>Tabela InstallExecuteSequence do zaplanowania akcji niestandardowych devenv. exe
 
 |Akcja|Warunek|Sequence|
 |------------|---------------|--------------|
@@ -82,4 +82,4 @@ W przypadku wdrożenia rozszerzenia w ramach *.msi* pliku, należy uruchomić **
 |CA_RunDevenv2008|DEVENV_EXE_2008|6608|
 
 ## <a name="see-also"></a>Zobacz także
-- [Instalowanie pakietów VSPackage przy użyciu Instalatora Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
+- [Zainstaluj pakietów VSPackage z Instalator Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 73a1c6458bf6afc5d6fce34208dd8c2c3ddda37f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: fecf0d146c1116e6ec6376ffd9ad929cc9179d1c
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748215"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985224"
 ---
 # <a name="structure-your-modeling-solution"></a>Tworzenie struktury rozwiązania modelowania
 
@@ -30,7 +30,7 @@ W średnim lub dużym projekcie struktura zespołu opiera się na strukturze apl
 
 ### <a name="to-divide-an-application-into-layers"></a>Aby podzielić aplikację na warstwy
 
-1. Podstawowe struktury rozwiązań na podstawie struktury aplikacji, takiej jak aplikacja sieci Web, aplikacja usługi lub aplikacja klasyczna. Wiele typowych architektur omówiono w temacie [Application Archetypes w przewodniku po architekturze aplikacji firmy Microsoft](http://go.microsoft.com/fwlink/?LinkId=196681).
+1. Podstawowe struktury rozwiązań na podstawie struktury aplikacji, takiej jak aplikacja sieci Web, aplikacja usługi lub aplikacja klasyczna. Wiele typowych architektur omówiono w temacie [Application Archetypes w przewodniku po architekturze aplikacji firmy Microsoft](/previous-versions/msp-n-p/ee658107(v=pandp.10)).
 
 2. Utwórz rozwiązanie programu Visual Studio, które wywoła rozwiązanie architektury. To rozwiązanie zostanie użyte do utworzenia ogólnego projektu systemu. Będzie zawierać modele, ale nie kod.
 
@@ -92,7 +92,7 @@ Jeśli na przykład często używasz rozwiązań z warstwami prezentacji, firmow
 
 ### <a name="to-create-a-solution-template"></a>Aby utworzyć szablon rozwiązania
 
-1. [Pobierz i zainstaluj Kreatora eksportu szablonów](http://go.microsoft.com/fwlink/?LinkId=196686).
+1. [Pobierz i zainstaluj Kreatora eksportu szablonów](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ExportTemplateWizard).
 
 2. Utwórz strukturę rozwiązania, która ma być używana jako punkt wyjścia dla przyszłych projektów.
 

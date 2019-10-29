@@ -15,33 +15,33 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: be8a17496788b0f4fe8abc9859b46cbfa11a6ed7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9d245ddf00e4005b763bcd4437d3f8c18d05291e
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62827040"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986038"
 ---
 # <a name="grant-trust-to-documents"></a>Udzielanie zaufania do dokumentów
-  Projektów dokumentów ma takie same wymagania dotyczące zabezpieczeń, jako projektów na poziomie aplikacji: podpisywanie manifestów za pomocą certyfikatu lub klikając monit o udzielenie zaufania. Ponadto dokument lub skoroszyt musi znajdować się w katalogu, który jest wyznaczone jako zaufaną lokalizację.
+  Projekt na poziomie dokumentu ma takie same wymagania dotyczące zabezpieczeń, co projekty na poziomie aplikacji: podpisywanie manifestów przy użyciu certyfikatu lub kliknięcie monitu zaufania. Ponadto dokument lub skoroszyt musi znajdować się w katalogu wyznaczono jako zaufaną lokalizację.
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
 ## <a name="trusted-locations"></a>Zaufane lokalizacje
- Aplikacje w [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] i Office 2010 mają centra zaufania, której użytkownicy mogą skonfigurować ustawienia zabezpieczeń i prywatności, takie jak zaufanych lokalizacji. Dla rozwiązań pakietu Office komputer lokalny jest uznawany za zaufanej lokalizacji. Jednak ze względu na większe ryzyko, istnieją niektóre katalogi, które nigdy nie może być zaufanych, takich jak foldery tymczasowe systemu dla każdego użytkownika i programu Internet Explorer.
+ Aplikacje w [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] i Office 2010 mają centra zaufania, w których użytkownicy mogą konfigurować ustawienia zabezpieczeń i prywatności, takie jak Zaufane lokalizacje. W przypadku rozwiązań pakietu Office komputer lokalny jest uznawany za zaufaną lokalizację. Jednak ze względu na wyższe ryzyko istnieją pewne katalogi, które nie mogą być zaufane, takie jak foldery tymczasowe systemu, dla każdego użytkownika i dla programu Internet Explorer.
 
- Aby uzyskać więcej informacji na temat Centrum zaufania Zobacz [i zasady ustawień zabezpieczeń i w pakiecie Office 2010](http://go.microsoft.com/fwlink/?LinkId=89202). Aby uzyskać więcej informacji o sposobie tworzenia, zarządzania, Usuń i Konfigurowanie zaufanych folderów, zobacz [skonfiguruj zaufane lokalizacje i ustawienia zaufanych wydawców w 2007 Office system](http://go.microsoft.com/fwlink/?LinkId=89203) i [Utwórz, usuń lub zmień zaufanej lokalizacji plików](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).
+ Aby uzyskać więcej informacji na temat Centrum zaufania, zobacz [zabezpieczenia i zasady oraz ustawienia w pakiecie Office 2010](/previous-versions/office/office-2010/cc178946(v=office.14)). Aby uzyskać więcej informacji na temat tworzenia, usuwania i konfigurowania zaufanych folderów oraz zarządzania nimi, zobacz [Konfigurowanie ustawień zaufanych lokalizacji i zaufanych wydawców w systemie 2007 pakietu Office](/previous-versions/office/office-2007-resource-kit/cc178948(v=office.12)) oraz [Tworzenie, usuwanie lub zmienianie zaufanej lokalizacji plików](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).
 
 ## <a name="security-considerations-for-office-solutions"></a>Zagadnienia dotyczące zabezpieczeń rozwiązań pakietu Office
- Istnieje kilka obawy związane z bezpieczeństwem, po zastanowieniu się nad foldery, które można dodać do zaufanych lokalizacji:
+ Istnieje kilka kwestii związanych z bezpieczeństwem, które należy wziąć pod uwagę, które foldery dodać do zaufanych lokalizacji:
 
-- Foldery lokalne są traktowane jako więcej bezpieczna i są niejawnie zaufane. Lokalizacjach zdalnych, takich jak udziały plików muszą być wyznaczone jako zaufanych lokalizacji.
+- Foldery lokalne są uważane za bezpieczniejsze i są niejawnie zaufane. Lokalizacje zdalne, takie jak udziały plików, muszą być wyznaczeni jako zaufane lokalizacje.
 
-- Po dodaniu katalogu do zaufanej lokalizacji, ta akcja spowoduje przyznanie pełnego zaufania nie tylko do rozwiązań pakietu Office, ale do kodu VBA i ActiveX. Z tego powodu, katalog główny i *Moje dokumenty* folderów nie powinno być wyznaczone jako zaufane.
+- Po dodaniu katalogu do zaufanych lokalizacji ta akcja przyznaje pełne zaufanie nie tylko do rozwiązań pakietu Office, ale również do kodu VBA i ActiveX. Z tego powodu katalogu głównego i folderów *Moje dokumenty* nie należy wyznaczyć jako zaufanego.
 
-- Mimo że samego dokumentu jest zaufany, korzystając z zaufanej lokalizacji, ufać dostosowania są wymagane dodatkowe uprawnienia. Można przyznać pełne zaufanie do dostosowania przy użyciu podpisywanie manifestów za pomocą certyfikatu, klikając monit o udzielenie zaufania lub instalowanie rozwiązania dla pakietu Office do *Program Files* katalogu.
+- Chociaż sam dokument jest zaufany przy użyciu zaufanych lokalizacji, dodatkowe uprawnienia są konieczne do zaufać dostosowaniu. Można udzielić pełnego zaufania do dostosowania przy użyciu podpisywania manifestów z certyfikatem, kliknięcia monitu zaufania lub zainstalowania rozwiązania pakietu Office w katalogu *Program Files* .
 
-- W tym samym katalogu co zestaw lub w innym katalogu może przechowywać na dokument lub skoroszyt to rozwiązanie na poziomie dokumentu. Na przykład dokument może znajdować się na serwerze programu SharePoint i zestaw może znajdować się w sieciowym udziale plików. Aby uzyskać więcej informacji, zobacz [jak: Publikowanie rozwiązań Office poziomu dokumentu na serwerze programu SharePoint przy użyciu technologii ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58).
+- Możesz przechowywać dokument lub skoroszyt rozwiązania poziomu dokumentu w tym samym katalogu, w którym znajduje się zestaw, lub w innym katalogu. Na przykład dokument może znajdować się na serwerze programu SharePoint, a zestaw może znajdować się w sieciowym udziale plików. Aby uzyskać więcej informacji, zobacz [jak: publikowanie rozwiązania Office na poziomie dokumentu na serwerze programu SharePoint przy użyciu technologii ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58).
 
 ## <a name="see-also"></a>Zobacz także
 - [Udzielanie zaufania do rozwiązań pakietu Office](../vsto/granting-trust-to-office-solutions.md)

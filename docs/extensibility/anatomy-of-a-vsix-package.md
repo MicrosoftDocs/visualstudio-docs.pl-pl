@@ -1,5 +1,5 @@
 ---
-title: Anatomia pakietu VSIX | Dokumentacja firmy Microsoft
+title: Anatomia pakietu VSIX | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,49 +12,49 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8f0b748e80726d69e5b826982596a0a32675bd7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d215849036e76cb51080775f5ea55e1eb0b28c56
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352276"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72981690"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Anatomia pakietu VSIX
-Pakiet VSIX jest *.vsix* pliku, który zawiera jeden lub więcej rozszerzeń programu Visual Studio, razem z metadanymi programu Visual Studio używa do klasyfikowania i zainstalować rozszerzenia. Tych metadanych znajduje się w manifestu VSIX i *[Content_Types] .xml* pliku. Pakiet VSIX może również zawierać co najmniej jeden *Extension.vsixlangpack* plików w celu zapewnienia zlokalizowane w tekście Instalatora i może zawierać dodatkowe pakiety VSIX, aby zainstalować zależności.
+Pakiet VSIX to plik *. vsix* , który zawiera co najmniej jedno rozszerzenie programu Visual Studio, wraz z metadanymi, które są używane przez program Visual Studio do klasyfikowania i instalowania rozszerzeń. Metadane są zawarte w manifeście VSIX i pliku *[Content_Types]. XML* . Pakiet VSIX może również zawierać co najmniej jeden plik *rozszerzenia. vsixlangpack* , aby zapewnić zlokalizowany tekst instalacji i może zawierać dodatkowe pakiety VSIX, aby zainstalować zależności.
 
- Formacie pakietu VSIX postępuje zgodnie ze standardowym otwarte konwencje tworzenia pakietów (OPC). Pakiet zawiera pliki binarne i pliki pomocnicze, wraz z *[Content_Types] .xml* pliku i *.vsix* pliku manifestu. Jeden pakiet VSIX może zawierać dane wyjściowe z wieloma projektami lub nawet utworzyć wiele pakietów, które mają własne manifestów.
+ Format pakietu VSIX jest zgodny ze standardem Open Package Conventions (OPC). Pakiet zawiera dane binarne i pliki pomocnicze wraz z plikiem *[Content_Types]. XML* i plikiem manifestu *. vsix* . Jeden pakiet VSIX może zawierać dane wyjściowe wielu projektów, a nawet wiele pakietów, które mają własne manifesty.
 
 > [!NOTE]
-> Nazwy plików zawarte w pakietów VSIX nie może zawierać spacji ani znaków, które są zastrzeżone w identyfikatorach URI (Uniform Resource), zdefiniowane w obszarze [ \[specyfikacja RFC 2396\]](http://go.microsoft.com/fwlink/?LinkId=90339).
+> Nazwy plików zawartych w pakietach VSIX nie mogą zawierać spacji ani znaków, które są zarezerwowane w Uniform Resource Identifier (URI), zgodnie z definicją w obszarze [\[RFC2396\]](https://www.rfc-editor.org/rfc/rfc2396.txt).
 
-## <a name="the-vsix-manifest"></a>VSIX manifest
- VSIX manifest zawiera informacje dotyczące rozszerzenia do zainstalowania, a schemat VSX w następujący sposób. Aby uzyskać więcej informacji, zobacz [odwołanie do schematu 1.0 rozszerzenia VSIX](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b). Aby uzyskać przykład manifestu VSIX, zobacz [PackageManifest elementu (element główny, schemat VSX)](https://msdn.microsoft.com/library/f8ae42ba-775a-4d2b-976a-f556e147f187).
+## <a name="the-vsix-manifest"></a>Manifest VSIX
+ Manifest VSIX zawiera informacje o rozszerzeniu, które mają zostać zainstalowane, i następuje po schemacie VSX. Aby uzyskać więcej informacji, zobacz [Informacje o schemacie rozszerzenia VSIX 1,0](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b). Przykładowy manifest VSIX można znaleźć w temacie [PackageManifest element (root element, VSX Schema)](https://msdn.microsoft.com/library/f8ae42ba-775a-4d2b-976a-f556e147f187).
 
- VSIX manifest, musi nosić `extension.vsixmanifest` gdy wchodzi on w ^ pliku .vsix *.
+ Manifest VSIX musi mieć nazwę `extension.vsixmanifest`, gdy jest zawarty w pliku ^. VSIX *.
 
 ## <a name="the-content"></a>Zawartość
- Pakiet VSIX może zawierać szablony, elementy do przybornika, pakietów VSPackage lub dowolny inny rodzaj rozszerzenia, która jest obsługiwana przez program Visual Studio.
+ Pakiet VSIX może zawierać szablony, elementy przybornika, pakietów VSPackage lub dowolny inny rodzaj rozszerzenia, które jest obsługiwane przez program Visual Studio.
 
 ## <a name="language-packs"></a>Pakiety językowe
- Pakiet VSIX może zawierać jeden raz lub więcej *Extension.vsixlangpack* plików, aby zapewnić zlokalizowanego tekstu podczas instalacji. Aby uzyskać więcej informacji, zobacz [pakietów VSIX lokalizowanie](../extensibility/localizing-vsix-packages.md).
+ Pakiet VSIX może zawierać co najmniej jeden plik *rozszerzenia. vsixlangpack* , aby zapewnić zlokalizowany tekst podczas instalacji. Aby uzyskać więcej informacji, zobacz [lokalizowanie pakietów VSIX](../extensibility/localizing-vsix-packages.md).
 
-## <a name="dependencies-and-references"></a>Zależności i odwołań
- Pakiet VSIX może zawierać innych pakietów VSIX jako odwołania. Każda z tych innych pakietów musi zawierać VSIX manifest.
+## <a name="dependencies-and-references"></a>Zależności i odwołania
+ Pakiet VSIX może zawierać inne pakiety VSIX jako odwołania. Każdy z tych pakietów musi zawierać swój własny manifest VSIX.
 
- Jeśli użytkownik próbuje zainstalować rozszerzenie, które ma zależności, Instalator sprawdza, czy wymagane zestawy są zainstalowane w systemie użytkownika. Jeśli nie ma wymaganych zestawów, **rozszerzenia i aktualizacje** Wyświetla listę brakujących zestawów.
+ Jeśli użytkownik spróbuje zainstalować rozszerzenie, które ma zależności, Instalator sprawdzi, czy wymagane zestawy są zainstalowane w systemie użytkownika. Jeśli nie odnaleziono wymaganych zestawów, **rozszerzenia i aktualizacje** będą wyświetlać listę brakujących zestawów.
 
- Jeśli manifest rozszerzenia zawiera co najmniej jedną [odwołania](/previous-versions/visualstudio/visual-studio-2010/dd393687(v=vs.100)) elementów **rozszerzenia i aktualizacje** porównuje manifest każde odwołanie do rozszerzenia, które są zainstalowane w systemie, a następnie instaluje Odwołanie do rozszerzenia, jeśli nie jest już zainstalowany. Jeśli jest zainstalowana wcześniejsza wersja odwołania rozszerzenia, nowsza wersja zastępuje go.
+ Jeśli manifest rozszerzenia zawiera jeden lub więcej elementów [odniesienia](/previous-versions/visualstudio/visual-studio-2010/dd393687(v=vs.100)) , **rozszerzenia i aktualizacje** porównuje manifest każdego odwołania do rozszerzeń zainstalowanych w systemie i instaluje przywoływane rozszerzenie, jeśli nie jest jeszcze instalować. Jeśli jest zainstalowana wcześniejsza wersja rozszerzenia, jego nowsza wersja zastępuje ją.
 
- Jeśli projektu w rozwiązaniu wieloprojektowego zawiera odwołanie do innego projektu w tym samym rozwiązaniu, pakiet VSIX zawiera zależności projektu. Zachowanie to można zastąpić, klikając odwołanie do wewnętrznego projekcie, a następnie w **właściwości** okna, ustawienie **dane wyjściowe grupy uwzględnione w VSIX** właściwość `BuiltProjectOutputGroup`.
+ Jeśli projekt w rozwiązaniu obejmującym wiele projektów zawiera odwołanie do innego projektu w tym samym rozwiązaniu, pakiet VSIX zawiera zależności tego projektu. Możesz przesłonić to zachowanie, klikając odwołanie do projektu wewnętrznego, a następnie w oknie **Właściwości** , ustawiając **grupy wyjściowe zawarte we właściwości VSIX** do `BuiltProjectOutputGroup`.
 
- Aby dołączyć satelickich bibliotek DLL z przywoływanych zestawów w pakiecie VSIX, należy dodać `SatelliteDllsProjectOutputGroup` do **dane wyjściowe grupy uwzględnione w VSIX** właściwości.
+ Aby uwzględnić satelitarne biblioteki DLL z przywoływanych zestawów w pakiecie VSIX, Dodaj `SatelliteDllsProjectOutputGroup` do **grup wyjściowych zawartych we właściwości VSIX** .
 
 ## <a name="installation-location"></a>Lokalizacja instalacji
- Podczas instalacji **rozszerzenia i aktualizacje** szuka zawartości pakietu VSIX w folderze w *%LocalAppData%\Microsoft\VisualStudio\14.0\Extensions*.
+ Podczas instalacji **rozszerzenia i aktualizacje** wyszukują zawartość pakietu VSIX w folderze w obszarze *%LocalAppData%\Microsoft\VisualStudio\14.0\Extensions*.
 
- Domyślnie instalacja ma zastosowanie tylko do bieżącego użytkownika, ponieważ *% LocalAppData %* jest katalogiem specyficzne dla użytkownika. Jednak jeśli ustawisz [AllUsers](https://msdn.microsoft.com/library/ac817f50-3276-4ddb-b467-8bbb1432455b) elementu manifestu do `True`, będzie można zainstalować rozszerzenia w ramach <em>... \\</em> VisualStudioInstallationFolder<em>\Common7\IDE\Extensions</em> i będzie dostępna dla wszystkich użytkowników komputera.
+ Domyślnie instalacja ma zastosowanie tylko do bieżącego użytkownika, ponieważ *% LocalAppData%* jest katalogiem specyficznym dla użytkownika. Jeśli jednak ustawisz element [ALLUSERS](https://msdn.microsoft.com/library/ac817f50-3276-4ddb-b467-8bbb1432455b) manifestu na `True`, rozszerzenie zostanie zainstalowane w obszarze <em>..\\</em>VisualStudioInstallationFolder<em>\Common7\IDE\Extensions</em> i będzie dostępne dla wszystkich użytkowników komputera.
 
-## <a name="contenttypesxml"></a>[Content_Types] .xml
- *[Content_Types] .xml* pliku Określa typy plików w rozwiniętym okienku *.vsix* pliku. Visual Studio używa tego pliku podczas instalacji pakietu, ale nie można zainstalować w samym pliku. Aby uzyskać więcej informacji na temat tego pliku, zobacz [struktura pliku [Content_types] .xml](the-structure-of-the-content-types-dot-xml-file.md).
+## <a name="content_typesxml"></a>[Content_Types]. XML
+ Plik *[Content_Types]. XML* identyfikuje typy plików w rozwiniętym pliku *VSIX* . Program Visual Studio używa tego pliku podczas instalacji pakietu, ale nie instaluje samego pliku. Aby uzyskać więcej informacji na temat tego pliku, zobacz [strukturę pliku [Content_Types]. XML](the-structure-of-the-content-types-dot-xml-file.md).
 
- A *[Content_Types] .xml* plików jest wymagane przez standard Open konwencje tworzenia pakietów (OPC). Aby uzyskać więcej informacji na temat OPC zobacz [OPC: Nowy standard do pakowania danych](https://blogs.msdn.microsoft.com/msdnmagazine/2007/08/08/opc-a-new-standard-for-packaging-your-data/) w witrynie MSDN w sieci Web.
+ Plik *[Content_Types]. XML* jest wymagany w standardzie Open pakowanie Conventions (OPC). Aby uzyskać więcej informacji na temat OPC, zobacz [OPC: A New Standard for pakowanie danych](https://blogs.msdn.microsoft.com/msdnmagazine/2007/08/08/opc-a-new-standard-for-packaging-your-data/) w witrynie MSDN w sieci Web.

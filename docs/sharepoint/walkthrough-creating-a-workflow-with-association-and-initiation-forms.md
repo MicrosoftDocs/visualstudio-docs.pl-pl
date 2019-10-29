@@ -1,5 +1,5 @@
 ---
-title: Tworzenie przepływu pracy z formularzami inicjacji i skojarzenia
+title: Tworzenie przepływu pracy z formularzami skojarzenia i inicjowania
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,112 +17,112 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b64d1c9fbbd81a21ab268dfa29287895bd355197
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: 7946e48502ea4fd8e9e9382a20de3c8ce25987b3
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401152"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984677"
 ---
-# <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Przewodnik: Tworzenie przepływu pracy z formularzami inicjacji i skojarzenia
-  W tym instruktażu pokazano, jak utworzyć podstawowy sekwencyjny przepływ pracy, który obejmuje korzystanie z formularzy skojarzenia i inicjacji. Są to formularze ASPX umożliwiające dodanie parametrów do przepływu pracy, gdy jest on pierwszy raz skojarzony przez administratora programu SharePoint (formularz skojarzenia) i po uruchomieniu przepływu pracy przez użytkownika (formularz inicjowania).
+# <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Przewodnik: tworzenie przepływu pracy z formularzami skojarzenia i inicjowania
+  W tym instruktażu pokazano, jak utworzyć podstawowy sekwencyjny przepływ pracy, który obejmuje użycie formularzy skojarzenia i inicjacji. Są to formularze ASPX, które umożliwiają dodawanie parametrów do przepływu pracy, gdy jest on najpierw skojarzony przez administratora programu SharePoint (formularz skojarzenia) i gdy przepływ pracy jest uruchamiany przez użytkownika (formularz inicjacji).
 
- Ten przewodnik przedstawia scenariusz, w którym użytkownik chce utworzyć przepływ pracy zatwierdzania w raportach wydatków i ma następujące wymagania:
+ W tym instruktażu przedstawiono scenariusz, w którym użytkownik chce utworzyć przepływ pracy zatwierdzania dla raportów wydatków, które mają następujące wymagania:
 
-- Gdy przepływ pracy jest skojarzony z listą, administrator jest proszony przy użyciu formularza skojarzenia o podanie limitu kwoty na raport wydatków.
+- Gdy przepływ pracy jest skojarzony z listą, administrator zostanie monitowany przy użyciu formularza skojarzenia, gdzie wprowadza limit dolarów dla raportów wydatków.
 
-- Pracownicy przesyłają swoje raporty wydatków na listę Dokumenty udostępnione, uruchamiają przepływ pracy, a następnie wprowadzają całkowitą kwotę wydatków w formularzu inicjowania przepływu pracy.
+- Pracownicy przekazują raporty wydatków do listy Dokumenty udostępnione, uruchamiają przepływ pracy, a następnie wprowadzają sumę wydatków w formularzu inicjowania przepływu pracy.
 
-- Jeśli całkowita suma wydatków w raporcie pracownika przekracza limit wstępnie zdefiniowany przez administratora, tworzone jest zadanie dla menedżera pracownika, aby zatwierdzić raport wydatków. Jeśli jednak suma wydatków w raporcie pracownika jest mniejsza od limitu wydatków lub równa temu limitowi, na liście historii przepływu pracy zostanie zapisany komunikat o automatycznym zatwierdzeniu raportu.
+- Jeśli raport wydatków pracowników łącznie przekracza wstępnie zdefiniowany limit administratora, zadanie zostanie utworzone dla Menedżera pracownika, aby zatwierdzić raport wydatków. Jeśli jednak raport wydatków pracownika jest mniejszy lub równy limitowi wydatków, zostanie on zapisany na liście historii przepływu pracy.
 
   W instruktażu przedstawiono następujące zagadnienia:
 
-- Tworzenie projektu programu SharePoint listy definicji sekwencyjnego przepływu pracy w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+- Tworzenie projektu sekwencyjnego przepływu pracy definicji listy programu SharePoint w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
 - Tworzenie harmonogramu przepływu pracy.
 
-- Obsługa zdarzeń działania przepływu pracy.
+- Obsługa zdarzeń działań przepływu pracy.
 
-- Tworzenie przepływu pracy, formularzy skojarzenia i inicjacji.
+- Tworzenie skojarzenia przepływu pracy i formularzy inicjacji.
 
-- Skojarzenie przepływu pracy.
+- Kojarzenie przepływu pracy.
 
 - Ręczne uruchamianie przepływu pracy.
 
 > [!NOTE]
-> Chociaż ten przewodnik korzysta z projektem sekwencyjnego przepływu pracy, proces jest taki sam dla przepływów pracy automatu stanów.
+> Chociaż w tym instruktażu jest stosowany projekt sekwencyjnego przepływu pracy, proces ten jest taki sam dla przepływów pracy automatu Stanów.
 >
-> Ponadto komputer może wyświetlać różne nazwy lub lokalizacje dla niektórych [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] elementy interfejsu użytkownika w poniższych instrukcjach. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Te elementy są określane edition, czy masz i ustawień, których używasz. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Ponadto w poniższych instrukcjach komputer może wyświetlać różne nazwy lub lokalizacje dla niektórych elementów interfejsu użytkownika [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Dostępne są następujące elementy [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] wersja i używane ustawienia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Wymagania wstępne
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:
 
-- Obsługiwane edycje [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] i programu SharePoint.
+- Obsługiwane wersje [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] i programu SharePoint.
 
 - Program Visual Studio.
 
 ## <a name="create-a-sharepoint-sequential-workflow-project"></a>Utwórz projekt sekwencyjnego przepływu pracy programu SharePoint
- Najpierw utwórz projekt sekwencyjnego przepływu pracy w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Sekwencyjny przepływ pracy jest serię kroków, który jest wykonywany w kolejności, aż do zakończenia ostatniej aktywności. W tej procedurze utworzysz sekwencyjnego przepływu pracy, który ma zastosowanie do listy dokumentów udostępnionych w programie SharePoint. Kreator przepływu pracy umożliwia skojarzenie przepływu pracy przy użyciu witryny lub definicji listy i pozwala określić, gdy rozpocznie się przepływ pracy.
+ Najpierw utwórz projekt sekwencyjnego przepływu pracy w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Sekwencyjny przepływ pracy to seria kroków, które są wykonywane w kolejności do momentu zakończenia ostatniego działania. W tej procedurze utworzysz sekwencyjny przepływ pracy, który jest stosowany do listy Dokumenty udostępnione w programie SharePoint. Kreator przepływu pracy umożliwia skojarzenie przepływu pracy z witryną lub definicją listy i pozwala określić, kiedy zostanie uruchomiony przepływ pracy.
 
 #### <a name="to-create-a-sharepoint-sequential-workflow-project"></a>Aby utworzyć projekt sekwencyjnego przepływu pracy programu SharePoint
 
-1. Na pasku menu wybierz **pliku** > **New** > **projektu** do wyświetlenia **nowy projekt** okno dialogowe.
+1. Na pasku menu wybierz kolejno opcje **plik**  > **Nowy**  > **projekt** , aby wyświetlić okno dialogowe **Nowy projekt** .
 
-2. Rozwiń **SharePoint** węźle albo **Visual C#** lub **języka Visual Basic**, a następnie wybierz **2010** węzła.
+2. Rozwiń węzeł **SharePoint** w obszarze **Wizualizacja C#**  lub **Visual Basic**, a następnie wybierz węzeł **2010** .
 
-3. W **szablony** okienku wybierz **projekt programu SharePoint 2010** szablonu projektu.
+3. W okienku **Szablony** wybierz szablon projektu **projektu programu SharePoint 2010** .
 
-4. W **nazwa** wprowadź **ExpenseReport** , a następnie wybierz **OK** przycisku.
+4. W polu **Nazwa** wprowadź **ExpenseReport** , a następnie wybierz przycisk **OK** .
 
-     **Kreator ustawień niestandardowych SharePoint** pojawia się.
+     Zostanie wyświetlony **Kreator dostosowania programu SharePoint** .
 
-5. W **Określanie witryny i poziomu zabezpieczeń dla debugowania** wybierz **Wdróż jako rozwiązanie farmy** przycisk opcji, a następnie wybierz **Zakończ** przycisk, aby zaakceptować Witryna poziom i domyślne zaufanie.
+5. Na stronie **Określanie poziomu lokacji i zabezpieczeń na potrzeby debugowania** wybierz przycisk opcji **Wdróż jako farmę** , a następnie wybierz przycisk **Zakończ** , aby zaakceptować poziom zaufania i domyślną lokację.
 
-     W tym kroku ustawi poziom zaufania dla rozwiązania, rozwiązanie farmy, który jest jedyną dostępną opcją w przypadku projektów przepływu pracy.
+     Ten krok ustawia również poziom zaufania dla rozwiązania jako rozwiązanie farmy, które jest jedyną dostępną opcją dla projektów przepływu pracy.
 
-6. W **Eksploratora rozwiązań**, wybierz węzeł projektu.
+6. W **Eksplorator rozwiązań**wybierz węzeł projektu.
 
-7. Na pasku menu wybierz **projektu** > **Dodaj nowy element**.
+7. Na pasku menu wybierz **projekt**  > **Dodaj nowy element**.
 
-8. W obszarze **Visual C#** lub **języka Visual Basic**, rozwiń węzeł **SharePoint** węzła, a następnie wybierz **2010** węzła.
+8. W obszarze **Wizualizacja C#**  lub **Visual Basic**rozwiń węzeł **SharePoint** , a następnie wybierz węzeł **2010** .
 
-9. W **szablony** okienku wybierz **sekwencyjnego przepływu pracy (tylko rozwiązanie farmy)** szablonu, a następnie wybierz **Dodaj** przycisku.
+9. W okienku **Szablony** wybierz szablon **sekwencyjny przepływ pracy (tylko rozwiązanie farmy)** , a następnie wybierz przycisk **Dodaj** .
 
-     **Kreator ustawień niestandardowych SharePoint** pojawia się.
+     Zostanie wyświetlony **Kreator dostosowania programu SharePoint** .
 
-10. W **Określ nazwę przepływu pracy debugowania** strona, zaakceptuj nazwę domyślną (**ExpenseReport - Workflow1**). Należy zachować wartość typu szablonu przepływu pracy domyślnego (**przepływu pracy dla listy)** . Wybierz **dalej** przycisku.
+10. Na stronie **Określanie nazwy przepływu pracy na potrzeby debugowania** Zaakceptuj nazwę domyślną (**ExpenseReport-Workflow1**). Zachowaj domyślną wartość typu szablonu przepływu pracy (**przepływ pracy listy)** . Wybierz przycisk **dalej** .
 
-11. W **chcesz użyć programu Visual Studio automatycznie skojarzył przepływ pracy w sesji debugowania?** strony, usuń zaznaczenie tego pola, które automatycznie kojarzy szablonu przepływu pracy, jeśli zaznaczono opcję on.
+11. Czy chcesz, **Aby program Visual Studio automatycznie kojarzy przepływ pracy w sesji debugowania?** wyczyść pole, które automatycznie kojarzy szablon przepływu pracy, jeśli jest zaznaczone.
 
-     Ten krok pozwala ręcznie skojarzyć przepływ pracy z listą dokumenty udostępnione w późniejszym czasie na, który wyświetla formularz skojarzenia.
+     Ten krok pozwala ręcznie skojarzyć przepływ pracy z listą udostępnionych dokumentów w dalszej części, która wyświetla formularz skojarzenia.
 
-12. Wybierz **Zakończ** przycisku.
+12. Wybierz przycisk **Zakończ** .
 
-## <a name="add-an-association-form-to-the-workflow"></a>Dodaj formularz skojarzenia przepływu pracy
- Następnie należy utworzyć. Formularz skojarzenia ASPX, który jest wyświetlany, gdy administrator programu SharePoint najpierw skojarzenie przepływu pracy z dokumentu raportu wydatków.
+## <a name="add-an-association-form-to-the-workflow"></a>Dodawanie formularza skojarzenia do przepływu pracy
+ Następnie utwórz. Formularz skojarzenia ASPX, który jest wyświetlany, gdy administrator programu SharePoint najpierw skojarzy przepływ pracy z dokumentem raportu wydatków.
 
-#### <a name="to-add-an-association-form-to-the-workflow"></a>Aby dodać formularz skojarzenia przepływu pracy
+#### <a name="to-add-an-association-form-to-the-workflow"></a>Aby dodać formularz skojarzenia do przepływu pracy
 
-1. Wybierz **Workflow1** w węźle **Eksploratora rozwiązań**.
+1. Wybierz węzeł **Workflow1** w **Eksplorator rozwiązań**.
 
-2. Na pasku menu wybierz **projektu** > **Dodaj nowy element** do wyświetlenia **Dodaj nowy element** okno dialogowe.
+2. Na pasku menu wybierz **projekt** > **Dodaj nowy element** , aby wyświetlić okno dialogowe **Dodaj nowy element** .
 
-3. W widoku drzewa okna dialogowego pole, rozwiń **Visual C#** lub **języka Visual Basic** (w zależności od Twój język projektu), rozwiń węzeł **SharePoint** węzła, a następnie wybierz polecenie **2010** węzła.
+3. W widoku drzewa okna dialogowego rozwiń pozycję **Wizualizacja C#**  lub **Visual Basic** (w zależności od języka projektu), rozwiń węzeł **SharePoint** , a następnie wybierz węzeł **2010** .
 
-4. Z listy szablonów wybierz **formularza skojarzenia przepływu pracy** szablonu.
+4. Na liście szablonów wybierz szablon **formularza skojarzenia przepływu pracy** .
 
-5. W **nazwa** tekstu wprowadź **ExpenseReportAssocForm.aspx**.
+5. W polu tekstowym **Nazwa** wprowadź **ExpenseReportAssocForm. aspx**.
 
-6. Wybierz **Dodaj** przycisk, aby dodać formularz do projektu.
+6. Wybierz przycisk **Dodaj** , aby dodać formularz do projektu.
 
-## <a name="designing-and-coding-the-association-form"></a>Projektowanie i programowanie formularza skojarzenia
- W tej procedurze wprowadzasz funkcje do formularza skojarzenia, dodając formanty i kod do niego.
+## <a name="designing-and-coding-the-association-form"></a>Projektowanie i kodowanie formularza skojarzenia
+ W tej procedurze wprowadzasz funkcję do formularza skojarzenia przez dodanie formantów i kodu do niego.
 
-#### <a name="to-design-and-code-the-association-form"></a>Do projektu i kodu formularza skojarzenia
+#### <a name="to-design-and-code-the-association-form"></a>Aby zaprojektować i zakodować formularz skojarzenia
 
-1. W formularzu skojarzenia (ExpenseReportAssocForm.aspx), Znajdź `asp:Content` element, który ma `ID="Main"`.
+1. W formularzu skojarzenia (ExpenseReportAssocForm. aspx) Znajdź element `asp:Content`, który ma `ID="Main"`.
 
-2. Bezpośrednio po pierwszy wiersz w tym elemencie content, Dodaj następujący kod do tworzenia etykiety i pola tekstowego, który wyświetla monit o zatwierdzenie limit wydatków (*AutoApproveLimit*):
+2. Bezpośrednio po pierwszym wierszu w tym elemencie zawartości Dodaj następujący kod, aby utworzyć etykietę i pole tekstowe z komunikatem o limicie zatwierdzenia wydatków (*AutoApproveLimit*):
 
     ```aspx-csharp
     <asp:Label ID="lblAutoApproveLimit" Text="Auto Approval Limit:" runat="server" />
@@ -131,14 +131,14 @@ ms.locfileid: "66401152"
     <br /><br />
     ```
 
-3. Rozwiń **ExpenseReportAssocForm.aspx** w pliku **Eksploratora rozwiązań** do wyświetlenia jego plików zależnych.
+3. Rozwiń plik **ExpenseReportAssocForm. aspx** w **Eksplorator rozwiązań** , aby wyświetlić jego pliki zależne.
 
     > [!NOTE]
-    > Jeśli projekt jest w [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)], musisz wybrać **Wyświetl wszystkie pliki** przycisk, aby wykonać ten krok.
+    > Jeśli projekt jest w [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)], musisz wybrać przycisk **Wyświetl wszystkie pliki** , aby wykonać ten krok.
 
-4. Otwórz menu skrótów dla pliku ExpenseReportAssocForm.aspx i wybierz polecenie **Wyświetl kod**.
+4. Otwórz menu skrótów dla pliku ExpenseReportAssocForm. aspx i wybierz polecenie **Wyświetl kod**.
 
-5. Zastąp `GetAssociationData` metody:
+5. Zastąp metodę `GetAssociationData`:
 
     ```vb
     Private Function GetAssociationData() As String
@@ -160,30 +160,30 @@ ms.locfileid: "66401152"
     ```
 
 ## <a name="add-an-initiation-form-to-the-workflow"></a>Dodawanie formularza inicjowania do przepływu pracy
- Następnie należy utworzyć formularza inicjowania, który pojawia się podczas uruchamiania przepływu pracy przez użytkowników względem ich raporty wydatków.
+ Następnie Utwórz formularz inicjowania, który pojawia się, gdy użytkownicy uruchamiają przepływ pracy względem raportów wydatków.
 
-#### <a name="to-create-an-initiation-form"></a>Aby utworzyć formularza inicjowania
+#### <a name="to-create-an-initiation-form"></a>Aby utworzyć formularz inicjowania
 
-1. Wybierz **Workflow1** w węźle **Eksploratora rozwiązań**.
+1. Wybierz węzeł **Workflow1** w **Eksplorator rozwiązań**.
 
-2. Na pasku menu wybierz **projektu** > **Dodaj nowy element** wyświetlić **Dodaj nowy element** okno dialogowe.
+2. Na pasku menu wybierz kolejno opcje **projekt** > **Dodaj nowy element** , a następnie Wyświetl okno dialogowe **Dodaj nowy element** .
 
-3. W widoku drzewa okna dialogowego pole, rozwiń **Visual C#** lub **języka Visual Basic** (w zależności od Twój język projektu), rozwiń węzeł **SharePoint** węzła, a następnie wybierz polecenie **2010** węzła.
+3. W widoku drzewa okna dialogowego rozwiń pozycję **Wizualizacja C#**  lub **Visual Basic** (w zależności od języka projektu), rozwiń węzeł **SharePoint** , a następnie wybierz węzeł **2010** .
 
-4. Z listy szablonów wybierz **formularza inicjowania przepływu pracy** szablonu.
+4. Na liście szablonów wybierz szablon **formularza inicjowania przepływu pracy** .
 
-5. W **nazwa** tekstu wprowadź **ExpenseReportInitForm.aspx**.
+5. W polu tekstowym **Nazwa** wprowadź **ExpenseReportInitForm. aspx**.
 
-6. Wybierz **Dodaj** przycisk, aby dodać formularz do projektu.
+6. Wybierz przycisk **Dodaj** , aby dodać formularz do projektu.
 
-## <a name="designing-and-coding-the-initiation-form"></a>Projektowanie i programowanie formularza inicjowania
- Następnie wprowadzić funkcje do formularza inicjowania, dodając formanty i kod do niego.
+## <a name="designing-and-coding-the-initiation-form"></a>Projektowanie i kodowanie formularza inicjacji
+ Następnie wprowadź funkcje do formularza inicjowania, dodając formanty i kod do niego.
 
-#### <a name="to-code-the-initiation-form"></a>Do kodu formularza inicjowania
+#### <a name="to-code-the-initiation-form"></a>Aby zakodować formularz inicjowania
 
-1. W formularzu inicjowania (ExpenseReportInitForm.aspx), Znajdź `asp:Content` element, który zawiera `ID="Main"`.
+1. W formularzu inicjowania (ExpenseReportInitForm. aspx) Znajdź element `asp:Content`, który zawiera `ID="Main"`.
 
-2. Bezpośrednio po pierwszy wiersz w tym elemencie content, Dodaj następujący kod, aby utworzyć etykiety i pole tekstowe zawierające zatwierdzenia limitu wydatków (*AutoApproveLimit*) wprowadzone w formularzu skojarzenia i inną etykietę i pole tekstowe, aby monitować o łączny koszt (*ExpenseTotal*):
+2. Bezpośrednio po pierwszym wierszu w tym elemencie zawartości Dodaj następujący kod, aby utworzyć etykietę i pole tekstowe, które wyświetla limit zatwierdzania wydatków (*AutoApproveLimit*), który został wprowadzony w formularzu skojarzenia, a następnie inną etykietę i pole tekstowe, aby wyświetlić monit o podanie suma wydatków (*ExpenseTotal*):
 
     ```aspx-csharp
     <asp:Label ID="lblAutoApproveLimit" Text="Auto Approval Limit:" runat="server" />
@@ -196,11 +196,11 @@ ms.locfileid: "66401152"
     <br /><br />
     ```
 
-3. Rozwiń **ExpenseReportInitForm.aspx** w pliku **Eksploratora rozwiązań** do wyświetlenia jego plików zależnych.
+3. Rozwiń plik **ExpenseReportInitForm. aspx** w **Eksplorator rozwiązań** , aby wyświetlić jego pliki zależne.
 
-4. Otwórz menu skrótów dla pliku ExpenseReportInitForm.aspx i wybierz polecenie **Wyświetl kod**.
+4. Otwórz menu skrótów dla pliku ExpenseReportInitForm. aspx i wybierz polecenie **Wyświetl kod**.
 
-5. Zastąp `Page_Load` metody z poniższym przykładzie:
+5. Zastąp metodę `Page_Load` następującym przykładem:
 
     ```vb
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As
@@ -222,7 +222,7 @@ ms.locfileid: "66401152"
     }
     ```
 
-6. Zastąp `GetInitiationData` metody z poniższym przykładzie:
+6. Zastąp metodę `GetInitiationData` następującym przykładem:
 
     ```vb
     ' This method is called when the user clicks the button to start the workflow.
@@ -246,57 +246,57 @@ ms.locfileid: "66401152"
     }
     ```
 
-## <a name="cutomize-the-workflow"></a>Dostosowywanie przepływu pracy
- Następnie można dostosować przepływ pracy. Później które skojarzysz dwie formy do przepływu pracy.
+## <a name="cutomize-the-workflow"></a>Cutomize przepływ pracy
+ Następnie dostosuj przepływ pracy. Później będziesz kojarzyć dwa formularze z przepływem pracy.
 
 #### <a name="to-customize-the-workflow"></a>Aby dostosować przepływ pracy
 
-1. Wyświetl przepływ pracy w Projektancie przepływu pracy, otwierając Workflow1 w projekcie.
+1. Wyświetl przepływ pracy w Projektancie przepływów pracy, otwierając Workflow1 w projekcie.
 
-2. W **przybornika**, rozwiń węzeł **Windows Workflow 3.0** węzła i Znajdź **Jeślilub** działania.
+2. W **przyborniku**rozwiń węzeł **Windows Workflow v 3.0** i Znajdź działanie **jeślilub** .
 
-3. Dodaj to działanie w przepływie pracy, wykonując jedną z następujących czynności:
+3. Dodaj to działanie do przepływu pracy, wykonując jedną z następujących czynności:
 
-    - Otwórz menu skrótów dla **Jeślilub** działania, wybierz **kopiowania**, otwórz menu skrótów dla linii poniżej **onWorkflowActivated1** działania w Projektancie przepływu pracy a następnie wybierz **Wklej**.
+    - Otwórz menu skrótów dla działania **jeślilub** , wybierz polecenie **Kopiuj**, otwórz menu skrótów dla wiersza w działaniu **onWorkflowActivated1** w Projektancie przepływu pracy, a następnie wybierz **Wklej**.
 
-    - Przeciągnij **Jeślilub** działanie z **przybornika**i podłącz go do nowego wiersza w obszarze **onWorkflowActiviated1** działania w Projektancie przepływu pracy.
+    - Przeciągnij działanie **jeślilub** z **przybornika**i połącz je z wierszem w obszarze działania **onWorkflowActiviated1** w Projektancie przepływu pracy.
 
-4. W przyborniku, rozwiń węzeł **przepływu pracy programu SharePoint** węzła i Znajdź **createtask —** działania.
+4. W przyborniku rozwiń węzeł **przepływ pracy programu SharePoint** i Znajdź działanie w ramach **zadania** .
 
-5. Dodaj to działanie w przepływie pracy, wykonując jedną z następujących czynności:
+5. Dodaj to działanie do przepływu pracy, wykonując jedną z następujących czynności:
 
-    - Otwórz menu skrótów dla **createtask —** działania, wybierz **kopiowania**, otwórz menu skrótów dla jednej z dwóch **Upuść tutaj działania** obszarów w obrębie  **IfElseActivity1** w Projektancie przepływu pracy, a następnie wybierz **Wklej**.
+    - Otwórz menu skrótów dla działania **zadania** , wybierz polecenie **Kopiuj**, otwórz menu skrótów dla jednej z dwóch **działań upuść** w obszarze **IfElseActivity1** w Projektancie przepływu pracy, a następnie wybierz **Wklej**.
 
-    - Przeciągnij **createtask —** działanie z **przybornika** na jedną z dwóch **Upuść tutaj działania** obszarów w obrębie **IfElseActivity1**.
+    - Przeciągnij działanie **zadania** podrzędnego z **przybornika** na jedną z dwóch **działań upuszczania** w obszarze **IfElseActivity1**.
 
-6. W **właściwości** okna, wprowadź wartość właściwości *taskToken* dla **CorrelationToken** właściwości.
+6. W oknie **Właściwości** wprowadź wartość właściwości *TaskToken* dla właściwości **CorrelationToken** .
 
-7. Rozwiń **CorrelationToken** właściwości, wybierając znak plus (![TreeView plus](../sharepoint/media/plus.gif "TreeView plus")) obok niego.
+7. Rozwiń Właściwość **CorrelationToken** , wybierając znak plus (![TreeView Plus](../sharepoint/media/plus.gif "TreeView i")) obok niego.
 
-8. Wybierz strzałkę listy rozwijanej na **OwnerActivityName** sub właściwości, a następnie ustaw *Workflow1* wartości.
+8. Wybierz strzałkę listy rozwijanej we właściwości Sub **OwnerActivityName** i ustaw wartość *Workflow1* .
 
-9. Wybierz **TaskId** właściwości, a następnie wybierz przycisk wielokropka (![elipsy projektanta Mobile ASP.NET](../sharepoint/media/mwellipsis.gif "elipsy projektanta Mobile ASP.NET")) przycisk, aby wyświetlić **Powiązania właściwości** okno dialogowe.
+9. Wybierz właściwość **TaskID** , a następnie wybierz przycisk wielokropka (![ASP.net Mobile Designer](../sharepoint/media/mwellipsis.gif "Wielokropek projektanta ASP.NET Mobile")), aby wyświetlić okno dialogowe **Właściwości powiązania** .
 
-10. Wybierz **powiązać nowy element członkowski** kartę, wybrać **utworzyć pole** przycisk opcji, a następnie wybierz **OK** przycisku.
+10. Wybierz kartę **powiąż z nowym członkiem** , wybierz przycisk opcji **Utwórz pole** , a następnie wybierz przycisk **OK** .
 
-11. Wybierz **TaskProperties** właściwości, a następnie wybierz przycisk wielokropka (![elipsy projektanta Mobile ASP.NET](../sharepoint/media/mwellipsis.gif "elipsy projektanta Mobile ASP.NET")) przycisk, aby wyświetlić  **Powiąż właściwości** okno dialogowe.
+11. Wybierz właściwość **TaskProperties** , a następnie wybierz przycisk wielokropka (![ASP.net Mobile Designer](../sharepoint/media/mwellipsis.gif "Wielokropek projektanta ASP.NET Mobile")), aby wyświetlić okno dialogowe **Właściwości powiązania** .
 
-12. Wybierz **powiązać nowy element członkowski** kartę, wybrać **utworzyć pole** przycisk opcji, a następnie wybierz **OK** przycisku.
+12. Wybierz kartę **powiąż z nowym członkiem** , wybierz przycisk opcji **Utwórz pole** , a następnie wybierz przycisk **OK** .
 
-13. W **przybornika**, rozwiń węzeł **przepływu pracy programu SharePoint** węzła, a następnie zlokalizuj **LogToHistoryListActivity** działania.
+13. W **przyborniku**rozwiń węzeł **przepływ pracy programu SharePoint** i Znajdź działanie **LogToHistoryListActivity** .
 
-14. Dodaj to działanie w przepływie pracy, wykonując jedną z następujących czynności:
+14. Dodaj to działanie do przepływu pracy, wykonując jedną z następujących czynności:
 
-    - Otwórz menu skrótów dla **LogToHistoryListActivity** działania, wybierz **kopiowania**, otwórz menu skrótów dla siebie **Upuść tutaj działania** obszar w obrębie **IfElseActivity1** w Projektancie przepływu pracy, a następnie wybierz **Wklej**.
+    - Otwórz menu skrótów dla działania **LogToHistoryListActivity** , wybierz polecenie **Kopiuj**, otwórz menu skrótów dla innych **działań upuść** w obszarze **IfElseActivity1** w Projektancie przepływu pracy, a następnie wybierz **Wklej.** .
 
-    - Przeciągnij **LogToHistoryListActivity** działanie z **przybornika**i upuść go na innych **Upuść tutaj działania** obszar w obrębie **IfElseActivity1** .
+    - Przeciągnij działanie **LogToHistoryListActivity** z **przybornika**i upuść je na inne **działania upuść** w obszarze **IfElseActivity1**.
 
-## <a name="add-code-to-the-workflow"></a>Dodaj kod do przepływu pracy
- Następnie dodaj kod do przepływu pracy w celu nadania mu funkcji.
+## <a name="add-code-to-the-workflow"></a>Dodawanie kodu do przepływu pracy
+ Następnie Dodaj kod do przepływu pracy, aby zapewnić jego funkcjonalność.
 
 #### <a name="to-add-code-to-the-workflow"></a>Aby dodać kod do przepływu pracy
 
-1. Otwórz menu skrótów dla **createTask1** działania w Projektancie przepływu pracy, a następnie wybierz **Wyświetl kod**.
+1. Otwórz menu skrótów dla działania **createTask1** w Projektancie przepływu pracy, a następnie wybierz polecenie **Wyświetl kod**.
 
 2. Dodaj następującą metodę:
 
@@ -325,9 +325,9 @@ ms.locfileid: "66401152"
     ```
 
     > [!NOTE]
-    > W kodzie, Zastąp `somedomain\\someuser` o nazwie domeny i użytkownika, dla której zostanie utworzone zadanie, takie jak "`Office\\JoeSch`". W przypadku badania jest najprostszym korzystać z konta, które tworzysz przy użyciu.
+    > W kodzie Zastąp `somedomain\\someuser` domeną i nazwą użytkownika, dla którego zadanie zostanie utworzone, na przykład "`Office\\JoeSch`". W przypadku testowania najłatwiejszym rozwiązaniem jest użycie konta, które jest opracowywane.
 
-3. Poniżej `MethodInvoking` metody, Dodaj poniższy przykład:
+3. Poniżej metody `MethodInvoking` Dodaj następujący przykład:
 
     ```vb
     Private Sub checkApprovalNeeded(ByVal sender As Object, ByVal e As
@@ -355,15 +355,15 @@ ms.locfileid: "66401152"
     }
     ```
 
-4. W Projektancie przepływu pracy wybierz **ifElseBranchActivity1** działania.
+4. W Projektancie przepływu pracy wybierz działanie **ifElseBranchActivity1** .
 
-5. W **właściwości** okna, wybierz strzałkę listy rozwijanej **warunek** właściwości, a następnie ustaw *warunek kodu* wartość.
+5. W oknie **Właściwości** , wybierz strzałkę listy rozwijanej właściwości **warunek** , a następnie ustaw wartość *warunek kodu* .
 
-6. Rozwiń **warunek** właściwości, wybierając znak plus (![TreeView plus](../sharepoint/media/plus.gif "TreeView plus")) obok niej, a następnie ustaw jego wartość na *checkApprovalNeeded* .
+6. Rozwiń Właściwość **Condition** , wybierając znak plus (![TreeView Plus](../sharepoint/media/plus.gif "TreeView i")) obok niego, a następnie ustaw jego wartość na *checkApprovalNeeded*.
 
-7. W Projektancie przepływu pracy, otwórz menu skrótów dla **logToHistoryListActivity1** działania, a następnie wybierz **Generowanie programów obsługi** można wygenerować pusty metody dla `MethodInvoking` zdarzeń.
+7. W Projektancie przepływu pracy Otwórz menu skrótów dla działania **logToHistoryListActivity1** , a następnie wybierz polecenie **Generuj programy obsługi** , aby wygenerować pustą metodę dla zdarzenia `MethodInvoking`.
 
-8. Zastąp `MethodInvoking` kod następującym kodem:
+8. Zastąp kod `MethodInvoking` następującym:
 
     ```vb
     Private Sub logToHistoryListActivity1_MethodInvoking(ByVal sender As
@@ -382,69 +382,69 @@ ms.locfileid: "66401152"
     }
     ```
 
-9. Wybierz **F5** klawisz, aby debugować program.
+9. Wybierz klawisz **F5** , aby debugować program.
 
-     Kompiluje aplikacji, pakietów go, wdraża ją, aktywuje jej funkcji, jest odtwarzana [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] puli aplikacji, a następnie uruchamia przeglądarkę w lokalizacji określone w **adres Url witryny** właściwości.
+     Spowoduje to skompilowanie aplikacji, przetworzenie pakietów, wdrożenie, aktywowanie jej funkcji, odtworzenie puli aplikacji [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)], a następnie uruchomienie przeglądarki w lokalizacji określonej we właściwości **adres URL witryny** .
 
-## <a name="associating-the-workflow-to-the-documents-list"></a>Skojarzenie przepływu pracy do listy dokumentów
- Następnie Wyświetl formularz skojarzenia przepływu pracy przez skojarzenie przepływu pracy przy użyciu **SharedDocuments** listy w witrynie programu SharePoint.
+## <a name="associating-the-workflow-to-the-documents-list"></a>Kojarzenie przepływu pracy z listą dokumentów
+ Następnie Wyświetl formularz skojarzenia przepływu pracy, kojarząc przepływ pracy z listą **SharedDocuments** w witrynie programu SharePoint.
 
 #### <a name="to-associate-the-workflow"></a>Aby skojarzyć przepływ pracy
 
-1. Wybierz **dokumenty udostępnione** łączy na pasku szybkiego uruchamiania.
+1. Na pasku szybkiego uruchamiania wybierz link **dokumenty udostępnione** .
 
-2. Wybierz **biblioteki** link **narzędzia biblioteki** kartę, a następnie wybierz **ustawienia biblioteki** przycisk na Wstążce.
+2. Wybierz łącze **Biblioteka** na karcie **Narzędzia biblioteki** , a następnie wybierz przycisk wstążki **Ustawienia biblioteki** .
 
-3. W **uprawnienia i zarządzanie** wybierz pozycję **ustawienia przepływu pracy** łącze, a następnie wybierz **Dodaj przepływ pracy** link **przepływówpracy** strony.
+3. W sekcji **uprawnienia i zarządzanie** wybierz łącze **Ustawienia przepływu pracy** , a następnie wybierz łącze **Dodaj przepływ pracy** na stronie **przepływy** pracy.
 
-4. W górnym listy na stronie ustawień przepływu pracy, wybierz **ExpenseReport - Workflow1** szablonu.
+4. Na górnej liście na stronie Ustawienia przepływu pracy wybierz szablon **ExpenseReport-Workflow1** .
 
-5. Wprowadź w polu dalej **ExpenseReportWorkflow** , a następnie wybierz **dalej** przycisku.
+5. W następnym polu wpisz **ExpenseReportWorkflow** , a następnie wybierz przycisk **dalej** .
 
-     Spowoduje to skojarzenie przepływu pracy przy użyciu **dokumenty udostępnione** listy, a następnie wyświetla formularz skojarzenia przepływu pracy.
+     Spowoduje to skojarzenie przepływu pracy z listą **udostępnionych dokumentów** i wyświetlenie formularza skojarzenia przepływu pracy.
 
-6. W **automatycznego zatwierdzenia limitu** tekstu wprowadź **1200** , a następnie wybierz **skojarzenia przepływu pracy** przycisku.
+6. W polu tekstowym **Limit autozatwierdzania** wprowadź **1200** , a następnie wybierz przycisk **Skojarz przepływ pracy** .
 
 ## <a name="start-the-workflow"></a>Uruchom przepływ pracy
- Następnie skojarzenia przepływu pracy do jednego z dokumentów w **dokumenty udostępnione** listy, aby wyświetlić formularz inicjowania przepływu pracy.
+ Następnie skojarz przepływ pracy z jednym z dokumentów na liście **dokumenty udostępnione** , aby wyświetlić formularz inicjowania przepływu pracy.
 
 #### <a name="to-start-the-workflow"></a>Aby uruchomić przepływ pracy
 
-1. Na stronie programu SharePoint wybierz **Home** przycisku.
+1. Na stronie programu SharePoint wybierz przycisk **Strona główna** .
 
-2. Wybierz **dokumenty udostępnione** łączy na pasku szybkiego uruchamiania, aby wyświetlić **dokumenty udostępnione** listy.
+2. Wybierz link **dokumenty udostępnione** na pasku szybkiego uruchamiania, aby wyświetlić listę **dokumenty udostępnione** .
 
-3. Wybierz **dokumenty** link **narzędzia biblioteki** karcie w górnej części strony, a następnie wybierz **Przekaż dokument** przycisk na Wstążce Aby przekazać nowy dokument do **Dokumenty udostępnione** listy.
+3. Wybierz link **dokumenty** na karcie **Narzędzia biblioteki** w górnej części strony, a następnie wybierz przycisk **Przekaż dokument** na Wstążce, aby przekazać nowy dokument do listy **dokumenty udostępnione** .
 
-4. W **Przekaż dokument** okna dialogowego wybierz **Przeglądaj** przycisku, wybierz dowolny plik dokumentu, wybierz **Otwórz** przycisk, a następnie wybierz **OK** przycisku.
+4. W oknie dialogowym **przekazywanie dokumentu** wybierz przycisk **Przeglądaj** , wybierz dowolny plik dokumentu, wybierz przycisk **Otwórz** , a następnie wybierz przycisk **OK** .
 
-     Możesz zmienić ustawienia dla dokumentu, w tym oknie dialogowym, ale pozostaw ich wartości domyślne, wybierając **Zapisz** przycisku.
+     Możesz zmienić ustawienia dla dokumentu w tym oknie dialogowym, ale pozostaw je wartościami domyślnymi, wybierając przycisk **Zapisz** .
 
-5. Wybierz przekazanego dokumentu, wybierz strzałkę listy rozwijanej, która pojawia się, a następnie wybierz **przepływy pracy** elementu.
+5. Wybierz przekazany dokument, wybierz strzałkę listy rozwijanej, która zostanie wyświetlona, a następnie wybierz element **przepływy pracy** .
 
 6. Wybierz obraz obok ExpenseReportWorkflow.
 
-     Spowoduje to wyświetlenie formularza inicjowania przepływu pracy. (Należy pamiętać, że wartość jest wyświetlana w **automatycznego zatwierdzenia limitu** pole jest tylko do odczytu, ponieważ został wprowadzony w postaci skojarzenia.)
+     Spowoduje to wyświetlenie formularza inicjowania przepływu pracy. (Należy zauważyć, że wartość wyświetlana w polu **Limit autozatwierdzania** jest tylko do odczytu, ponieważ została wprowadzona w formularzu skojarzenia).
 
-7. W **łączny koszt** tekstu wprowadź **1600**, a następnie wybierz **Uruchom przepływ pracy** przycisku.
+7. W polu tekstowym **Łączny koszt** wprowadź **1600**, a następnie wybierz przycisk **Uruchom przepływ pracy** .
 
-     Spowoduje to wyświetlenie **dokumenty udostępnione** ponownie listę. Nowa kolumna **ExpenseReportWorkflow** wartością **Ukończono** zostanie dodany do elementu właśnie został uruchomiony przepływ pracy.
+     Spowoduje to wyświetlenie listy **dokumenty udostępnione** ponownie. Nowa kolumna o nazwie **ExpenseReportWorkflow** z **Zakończono** wartością zostanie dodana do elementu, w którym właśnie uruchomiono przepływ pracy.
 
-8. Wybierz strzałkę listy rozwijanej obok przekazanego dokumentu, a następnie wybierz **przepływy pracy** element, aby wyświetlić na stronie stanu przepływu pracy. Wybierz **Ukończono** wartości w obszarze **ukończone przepływy pracy**. Zadanie jest wyświetlana w obszarze **zadania** sekcji.
+8. Wybierz strzałkę listy rozwijanej obok przekazanego dokumentu, a następnie wybierz element **przepływy pracy** , aby wyświetlić stronę Stan przepływu pracy. Wybierz wartość **ukończoną** w obszarze **ukończone przepływy pracy**. Zadanie jest wyświetlane w sekcji **zadania** .
 
 9. Wybierz tytuł zadania, aby wyświetlić jego szczegóły zadania.
 
-10. Wróć do **SharedDocuments** listy, a następnie ponownie uruchom przepływ pracy przy użyciu tego samego dokumentu lub inną.
+10. Wróć do listy **SharedDocuments** i ponownie uruchom przepływ pracy przy użyciu tego samego dokumentu lub innego.
 
-11. Wprowadź kwotę na stronie inicjowania, która jest mniejsza niż ilość wprowadzone na stronie skojarzenia (**1200**).
+11. Wprowadź kwotę na stronie inicjowania, która jest mniejsza lub równa wartości wprowadzonej na stronie skojarzenie (**1200**).
 
-     W takiej sytuacji, zamiast zadania jest tworzony wpis na liście historii. Wyświetla wpis **historii przepływu pracy** sekcji na stronie stanu przepływu pracy. Należy pamiętać, wiadomości w **wynik** kolumny zdarzenia historii. Zawiera on tekst wprowadzony w `logToHistoryListActivity1.MethodInvoking` zdarzeń, który zawiera kwotę, które zostało zatwierdzone automatycznie.
+     W takim przypadku zostanie utworzony wpis na liście historia zamiast zadania. Wpis zostanie wyświetlony w sekcji **Historia przepływu pracy** na stronie stan przepływu pracy. Zanotuj komunikat w kolumnie **wynik** zdarzenia historii. Zawiera tekst wprowadzony w zdarzeniu `logToHistoryListActivity1.MethodInvoking`, który obejmuje kwotę, która została zatwierdzona.
 
 ## <a name="next-steps"></a>Następne kroki
- Możesz dowiedzieć się więcej na temat sposobu tworzenia szablonów przepływu pracy w tych tematach:
+ Więcej informacji na temat tworzenia szablonów przepływu pracy można znaleźć w następujących tematach:
 
-- Aby dowiedzieć się więcej na temat przepływów pracy programu SharePoint, zobacz [przepływów pracy w programie Windows SharePoint Services](http://go.microsoft.com/fwlink/?LinkID=166275).
+- Aby dowiedzieć się więcej na temat przepływów pracy programu SharePoint, zobacz [przepływy pracy w programie Windows SharePoint Services](/previous-versions/office/developer/sharepoint-2010/ms416312(v=office.14)).
 
 ## <a name="see-also"></a>Zobacz także
-- [Tworzenie rozwiązań przepływu pracy SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)
+- [Tworzenie rozwiązań przepływu pracy programu SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)
 - [Przewodnik: Dodawanie strony aplikacji do przepływu pracy](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)

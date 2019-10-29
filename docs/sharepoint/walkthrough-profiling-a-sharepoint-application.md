@@ -1,5 +1,5 @@
 ---
-title: 'Przewodnik: Profilowanie aplikacji SharePoint | Dokumentacja firmy Microsoft'
+title: 'Przewodnik: Profilowanie aplikacji SharePoint | Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,25 +15,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3e10c76d40efefe28decd9efd554e928ffea20c5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d001edcd281a0c21d244704f0a068850804b8762
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62834014"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72981159"
 ---
-# <a name="walkthrough-profile-a-sharepoint-application"></a>Przewodnik: Profil aplikacji programu SharePoint
-  Ten poradnik pokazuje jak używać narzędzi profilowania w programie Visual Studio w celu zoptymalizowania wydajności aplikacji programu SharePoint. Przykładowa aplikacja jest zawierający pętli bezczynności, który obniża wydajność odbiorcę zdarzeń funkcji odbiorcy zdarzeń funkcji programu SharePoint. Profilera Visual Studio umożliwia znalezienie i wyeliminować najbardziej kosztowne (najwolniejsze wykonanie) części projektu, znany także jako *ścieżka aktywna*.
+# <a name="walkthrough-profile-a-sharepoint-application"></a>Przewodnik: Profilowanie aplikacji SharePoint
+  W tym instruktażu pokazano, jak za pomocą narzędzi profilowania w programie Visual Studio zoptymalizować wydajność aplikacji SharePoint. Przykładowa aplikacja jest odbiorcą zdarzeń funkcji programu SharePoint, który zawiera pętlę bezczynności, która obniża wydajność odbiorcy zdarzeń funkcji. Program Visual Studio profiler umożliwia znalezienie i wyeliminowanie najbardziej kosztownego (najwolniejszego wykonania) części projektu, zwanej również *ścieżką gorącą*.
 
- W tym instruktażu pokazano następujące zagadnienia:
+ W tym instruktażu przedstawiono następujące zadania:
 
-- [Addg funkcji i odbiorcę zdarzeń funkcji](#add-a-feature-and-feature-event-receiver).
+- [Addg funkcję i odbiorcę zdarzeń funkcji](#add-a-feature-and-feature-event-receiver).
 
-- [Konfigurowanie i wdrażanie aplikacji programu SharePoint](#configure-and-deploy-the-sharepoint-application).
+- [Skonfiguruj i Wdróż aplikację programu SharePoint](#configure-and-deploy-the-sharepoint-application).
 
-- [Uruchamianie aplikacji programu SharePoint](#run-the-sharepoint-application).
+- [Uruchom aplikację SharePoint](#run-the-sharepoint-application).
 
-- [Wyświetlanie i interpretacja wyników profilu](#view-and-interpret-the-profile-results).
+- [Wyświetl i Interpretuj wyniki profilu](#view-and-interpret-the-profile-results).
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -42,43 +42,43 @@ ms.locfileid: "62834014"
 
 - Obsługiwane wersje systemu Microsoft Windows i programu SharePoint.
 
-- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].
+- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].,
 
-## <a name="create-a-sharepoint-project"></a>Utwórz projekt programu SharePoint
+## <a name="create-a-sharepoint-project"></a>Tworzenie projektu programu SharePoint
  Najpierw utwórz projekt programu SharePoint.
 
 ### <a name="to-create-a-sharepoint-project"></a>Aby utworzyć projekt programu SharePoint
 
-1. Na pasku menu wybierz **pliku** > **New** > **projektu** do wyświetlenia **nowy projekt** okno dialogowe.
+1. Na pasku menu wybierz kolejno opcje **plik**  > **Nowy**  > **projekt** , aby wyświetlić okno dialogowe **Nowy projekt** .
 
-2. Rozwiń **SharePoint** węźle albo **Visual C#** lub **języka Visual Basic**, a następnie wybierz **2010** węzła.
+2. Rozwiń węzeł **SharePoint** w obszarze **Wizualizacja C#**  lub **Visual Basic**, a następnie wybierz węzeł **2010** .
 
-3. W okienku szablonów wybierz **projekt programu SharePoint 2010** szablonu.
+3. W okienku szablony wybierz szablon **projektu programu SharePoint 2010** .
 
-4. W **nazwa** wprowadź **ProfileTest**, a następnie wybierz **OK** przycisku.
+4. W polu **Nazwa** wprowadź **ProfileTest**, a następnie wybierz przycisk **OK** .
 
-    **Kreator ustawień niestandardowych SharePoint** pojawia się.
+    Zostanie wyświetlony **Kreator dostosowania programu SharePoint** .
 
-5. Na **Określanie witryny i poziomu zabezpieczeń dla debugowania** strony, wprowadź adres URL witryny programu SharePoint server gdzie chcesz debugować definicji witryny lub użyj domyślnej lokalizacji (http://<em>Nazwa systemowa</em>/) .
+5. Na stronie **Określanie poziomu lokacji i zabezpieczeń na potrzeby debugowania** wprowadź adres URL witryny programu SharePoint Server, w której ma być debugowana definicja lokacji, lub Użyj lokalizacji domyślnej (http://<em>system Name</em>/).
 
-6. W **co to jest poziom zaufania dla tego rozwiązania programu SharePoint?** wybierz pozycję **Wdróż jako rozwiązanie farmy** przycisku opcji.
+6. W sekcji **co to jest poziom zaufania dla tego rozwiązania programu SharePoint?** wybierz przycisk opcji **Wdróż jako farmę** .
 
-    Obecnie można tylko profile rozwiązania farmy. Aby uzyskać więcej informacji dotyczących rozwiązań sandbox w porównaniu z rozwiązaniami farmy, zobacz [uwagi dotyczące rozwiązania typu piaskownica](../sharepoint/sandboxed-solution-considerations.md).
+    Obecnie można tylko profilować rozwiązania farmy. Aby uzyskać więcej informacji o rozwiązaniach w trybie piaskownicy a rozwiązaniach farmy, zobacz [zagadnienia dotyczące rozwiązania w trybie piaskownicy](../sharepoint/sandboxed-solution-considerations.md).
 
-7. Wybierz **Zakończ** przycisku. Projekt, który pojawia się w **Eksploratora rozwiązań**.
+7. Wybierz przycisk **Zakończ** . Projekt pojawia się w **Eksplorator rozwiązań**.
 
-## <a name="add-a-feature-and-feature-event-receiver"></a>Dodawanie funkcji i odbiorcę zdarzeń funkcji
- Następnie dodaj funkcję do projektu, wraz z obsługiwanego odbiornika dla tej funkcji. Odbiornik zdarzeń będzie zawierał kod, które mają być profilowane.
+## <a name="add-a-feature-and-feature-event-receiver"></a>Dodaj funkcję i odbiorcę zdarzeń funkcji
+ Następnie Dodaj funkcję do projektu wraz z odbiorcą zdarzeń dla tej funkcji. Ten odbiorca zdarzeń będzie zawierać kod, który ma zostać profilowany.
 
 ### <a name="to-add-a-feature-and-feature-event-receiver"></a>Aby dodać funkcję i odbiorcę zdarzeń funkcji
 
-1. W **Eksploratora rozwiązań**, otwórz menu skrótów dla **funkcji** węzła, wybierz **Dodaj funkcję**i pozostawić nazwę wartość domyślną **Feature1**.
+1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla węzła **funkcje** , wybierz polecenie **Dodaj funkcję**i pozostaw nazwę domyślną, **Feature1**.
 
-2. W **Eksploratora rozwiązań**, otwórz menu skrótów dla **Feature1**, a następnie wybierz **Dodaj odbiorcę zdarzeń**.
+2. W **Eksplorator rozwiązań**Otwórz menu skrótów dla **Feature1**, a następnie wybierz polecenie **Dodaj odbiorcę zdarzeń**.
 
-     Dodaje plik kodu funkcji z kilka programów obsługi zdarzeń zakomentowany i otwiera plik do edycji.
+     Spowoduje to dodanie pliku kodu do funkcji z kilkoma komentarzami do obsługi zdarzeń, a następnie otwarcie pliku do edycji.
 
-3. W klasie odbiornika zdarzeń Dodaj następujące deklaracje zmiennych.
+3. W klasie odbiorcy zdarzeń Dodaj następujące deklaracje zmiennych.
 
     ```vb
     ' SharePoint site/subsite.
@@ -92,7 +92,7 @@ ms.locfileid: "62834014"
     private string webUrl = "/";
     ```
 
-4. Zastąp `FeatureActivated` procedury z następującym kodem.
+4. Zastąp procedurę `FeatureActivated` poniższym kodem.
 
     ```vb
     Public Overrides Sub FeatureActivated(properties As SPFeatureReceiverProperties)
@@ -151,7 +151,7 @@ ms.locfileid: "62834014"
     }
     ```
 
-5. Dodaj procedurę poniżej `FeatureActivated`procedury.
+5. Dodaj następującą procedurę poniżej procedury `FeatureActivated`.
 
     ```vb
 
@@ -178,102 +178,102 @@ ms.locfileid: "62834014"
     }
     ```
 
-6. W **Eksploratora rozwiązań**, otwórz menu skrótów dla projektu (**ProfileTest**), a następnie wybierz **właściwości**.
+6. W **Eksplorator rozwiązań**Otwórz menu skrótów dla projektu (**ProfileTest**), a następnie wybierz **Właściwości**.
 
-7. W **właściwości** okna dialogowego wybierz **SharePoint** kartę.
+7. W oknie dialogowym **Właściwości** wybierz kartę **SharePoint** .
 
-8. W **aktywnej konfiguracji wdrożenia** wybierz **aktywacji nie**.
+8. Na liście **Konfiguracja wdrożenia aktywnego** wybierz pozycję **Brak aktywacji**.
 
-     Wybranie tej konfiguracji wdrożenia można ręcznie włączyć funkcję później w programie SharePoint.
+     Wybranie tej konfiguracji wdrożenia umożliwia ręczne aktywowanie tej funkcji później w programie SharePoint.
 
 9. Zapisz projekt.
 
 ## <a name="configure-and-deploy-the-sharepoint-application"></a>Konfigurowanie i wdrażanie aplikacji programu SharePoint
- Teraz, gdy projekt programu SharePoint jest gotowa, ją skonfigurować i wdrożyć ją na serwerze programu SharePoint.
+ Teraz, gdy projekt programu SharePoint jest gotowy, skonfiguruj go i Wdróż na serwerze programu SharePoint.
 
-### <a name="to-configure-and-deploy-the-sharepoint-application"></a>Do konfigurowania i wdrażania aplikacji programu SharePoint
+### <a name="to-configure-and-deploy-the-sharepoint-application"></a>Aby skonfigurować i wdrożyć aplikację SharePoint
 
-1. Na **analizy** menu, wybierz **Uruchom Kreatora wydajności**.
+1. W menu **Analizuj** wybierz polecenie **Uruchom Kreatora wydajności**.
 
-2. Na stronie jeden **kreatora wydajności**, leave — metoda profilowania jako **próbkowania Procesora** i wybierz polecenie **dalej** przycisku.
+2. Na pierwszej stronie **Kreatora wydajności**pozostaw metodę profilowania jako **próbkowanie procesora** , a następnie wybierz przycisk **dalej** .
 
-     Inne metody profilowania może służyć w bardziej zaawansowane profilowania sytuacjach. Aby uzyskać więcej informacji, zobacz [metodami zbierania danych wydajności opis](/visualstudio/profiling/understanding-performance-collection-methods).
+     Inne metody profilowania mogą być używane w bardziej zaawansowanych sytuacjach profilowania. Aby uzyskać więcej informacji, zobacz [Omówienie metod zbierania danych o wydajności](/visualstudio/profiling/understanding-performance-collection-methods).
 
-3. Na stronie dwóch **kreatora wydajności**, pozostaw element docelowy profil jako **ProfileTest** i wybierz polecenie **dalej** przycisku.
+3. Na stronie dwóch **Kreatora wydajności**pozostaw obiekt docelowy profilu jako **ProfileTest** , a następnie wybierz przycisk **dalej** .
 
-     Jeśli rozwiązanie zawiera wiele projektów, zostaną one wyświetlone na tej liście.
+     Jeśli rozwiązanie ma wiele projektów, pojawiają się na tej liście.
 
-4. Na stronie trzy **kreatora wydajności**, wyczyść **Włącz profilowanie interakcji pomiędzy warstwami** pole wyboru, a następnie wybierz **dalej** przycisku.
+4. Na trzeciej stronie **Kreatora wydajności**wyczyść pole wyboru **Włącz profilowanie interakcji między warstwami** , a następnie wybierz przycisk **dalej** .
 
-     Funkcja profilowanie interakcji warstwy (TIP) jest przydatna do pomiaru wydajności aplikacji do tej kwerendy bazy danych i dla pokazuje, ile razy żądania strony sieci web. Ponieważ te dane nie jest wymagane w tym przykładzie, firma Microsoft nie włączać tej funkcji.
+     Funkcja profilowania interakcji między warstwami (TIP) jest przydatna do mierzenia wydajności aplikacji, które wysyłają zapytania do baz danych i pokazują, ile razy żąda się strony sieci Web. Ponieważ te dane nie są wymagane do tego przykładu, ta funkcja nie zostanie włączona.
 
-5. Na stronie czterech **kreatora wydajności**, pozostaw **Uruchom profilowanie po zakończeniu pracy kreatora** zaznaczone pole wyboru, a następnie wybierz **Zakończ** przycisku.
+5. Na stronie cztery w **Kreatorze wydajności**pozostaw zaznaczone pole wyboru **Uruchom profilowanie po zakończeniu pracy Kreatora** , a następnie wybierz przycisk **Zakończ** .
 
-     Kreator włącza profilowania aplikacji na serwerze, przedstawia **Eksplorator wydajności** okna, a następnie kompilacji, wdrażania i uruchamia aplikację programu SharePoint.
+     Kreator umożliwia Profilowanie aplikacji na serwerze, wyświetla okno **Eksplorator wydajności** , a następnie kompiluje, wdraża i uruchamia aplikację SharePoint.
 
-## <a name="run-the-sharepoint-application"></a>Uruchamianie aplikacji programu SharePoint
- Uaktywnij funkcję w programie SharePoint, wyzwalania `FeatureActivation` zdarzeń kod wymagany do uruchomienia.
+## <a name="run-the-sharepoint-application"></a>Uruchom aplikację SharePoint
+ Aktywuj funkcję w programie SharePoint, wyzwalając kod zdarzenia `FeatureActivation` do uruchomienia.
 
-### <a name="to-run-the-sharepoint-application"></a>Uruchamianie aplikacji programu SharePoint
+### <a name="to-run-the-sharepoint-application"></a>Aby uruchomić aplikację SharePoint
 
-1. W programie SharePoint, należy otworzyć **Akcje witryny** menu, a następnie wybierz **ustawienia lokacji**.
+1. W programie SharePoint otwórz menu **Akcje witryny** , a następnie wybierz pozycję **Ustawienia lokacji**.
 
-2. W **Akcje witryny** wybierz **Zarządzanie funkcjami witryny** łącza.
+2. Na liście **Akcje lokacji** wybierz łącze **Zarządzaj funkcjami lokacji** .
 
-3. W **funkcji** wybierz **Aktywuj** znajdujący się obok **ProfileTest Feature1**.
+3. Na liście **funkcje** wybierz przycisk **Aktywuj** obok pozycji **ProfileTest Feature1**.
 
-     Ma przerwie, gdy to zrobisz, z powodu wykonywania pętli bezczynności wywołanego `FeatureActivated` funkcji.
+     Gdy to zrobisz, występuje pauza z powodu wywołania bezczynnej pętli w funkcji `FeatureActivated`.
 
-4. Na **Szybkie uruchamianie** paska, wybierz polecenie **Wyświetla** a następnie w **Wyświetla** wybierz **anonsów**.
+4. Na pasku **szybkiego uruchamiania** wybierz pozycję **listy** , a następnie **na liście listy** wybierz pozycję **Anonsy**.
 
-     Należy zauważyć, że dodano nowe zawiadomienie do listy, stwierdzający, że funkcja została aktywowana.
+     Zwróć uwagę, że do listy zostało dodane nowe powiadomienie z informacją, że funkcja została aktywowana.
 
-5. Zamknij witryny programu SharePoint.
+5. Zamknij witrynę programu SharePoint.
 
-     Po zamknięciu programu SharePoint, program profilujący tworzy przedstawia przykładowy raport profilowania i zapisuje go jako plik Vsp w **ProfileTest** folderu projektu.
+     Po zamknięciu programu SharePoint Profiler tworzy i wyświetla przykładowy raport profilowania i zapisuje go jako plik VSP w folderze projektu **ProfileTest** .
 
-## <a name="view-and-interpret-the-profile-results"></a>Wyświetlanie i interpretacja wyników profilu
- Skoro masz uruchamiania i profilowania aplikacji programu SharePoint, należy wyświetlić wyniki testów.
+## <a name="view-and-interpret-the-profile-results"></a>Wyświetlanie i Interpretowanie wyników profilu
+ Teraz, gdy masz uruchomioną i profilowaną aplikację SharePoint, Wyświetl wyniki testów.
 
-### <a name="to-view-and-interpret-the-profile-results"></a>Aby wyświetlić i interpretacja wyników profilu
+### <a name="to-view-and-interpret-the-profile-results"></a>Aby wyświetlać i interpretować wyniki profilu
 
-1. W **funkcje wykonujące najwięcej pracy poszczególnych** sekcji raportu profilowania próbki, należy zauważyć, że `TimeCounter` znajduje się w pobliżu górnej części listy.
+1. W obszarze **funkcje wykonujące najwięcej poszczególnych zadań** w przykładowym raporcie profilowania należy zauważyć, że `TimeCounter` znajduje się w górnej części listy.
 
-     Ta lokalizacja wskazuje, że `TimeCounter` była jedna z funkcji o największej liczby próbek, co oznacza, jest jednym z największych wąskich gardeł wydajności w aplikacji. Ta sytuacja nie jest zaskoczysz, ponieważ była celowo zaprojektowany w ten sposób w celach demonstracyjnych.
+     Ta lokalizacja wskazuje, że `TimeCounter` była jedną z funkcji o najwyższej liczbie próbek, co oznacza, że jest to jeden z największych wąskich gardeł wydajności aplikacji. Ta sytuacja nie jest jednak zaskakujące, ponieważ została celowo zaprojektowana w celach demonstracyjnych.
 
-2. W **funkcje wykonujące najwięcej pracy poszczególnych** wybierz pozycję `ProcessRequest` łącze, aby wyświetlić dystrybucji kosztów dla `ProcessRequest` funkcji.
+2. W obszarze **funkcje wykonujące najwięcej poszczególnych zadań** wybierz łącze `ProcessRequest`, aby wyświetlić dystrybucję kosztów dla funkcji `ProcessRequest`.
 
-     W **nazywane funkcjami** sekcji `ProcessRequest`, zwróć uwagę, że **FeatureActiviated** funkcji znajduje się na liście jako najbardziej kosztowne wywołał funkcję.
+     W sekcji **wywołane funkcje** dla `ProcessRequest`należy zauważyć, że funkcja **FeatureActiviated** jest wyświetlana jako najbardziej kosztowna funkcja.
 
-3. W **nazywane funkcjami** wybierz pozycję **FeatureActivated** przycisku.
+3. W sekcji **wywoływane funkcje** wybierz przycisk **FeatureActivated** .
 
-     W **nazywane funkcjami** sekcji **FeatureActivated**, `TimeCounter` funkcji znajduje się na liście jako najbardziej kosztowne wywołał funkcję. W **widok kodu funkcji** okienko, wyróżniony kod (`TimeCounter`) jest punktem największej aktywności i wskazuje, gdzie jest potrzebne korekty.
+     W sekcji **o nazwie** Functions for **FeatureActivated**funkcja `TimeCounter` jest wyświetlana jako najbardziej kosztowna funkcja. W okienku **Widok kodu funkcji** wyróżniony kod (`TimeCounter`) jest punktem aktywnym i wskazuje, gdzie jest wymagana korekta.
 
-4. Zamknij próbki celów raportu profilowania.
+4. Zamknij przykładowy raport profilowania.
 
-     Aby wyświetlić raport w dowolnym momencie ponownie, otwórz plik Vsp w **Eksplorator wydajności** okna.
+     Aby ponownie wyświetlić raport w dowolnym momencie, Otwórz plik VSP w oknie **Eksplorator wydajności** .
 
-## <a name="fix-the-code-and-reprofile-the-application"></a>Napraw kod i reprofile aplikacji
- Teraz, gdy funkcja punkt aktywny w aplikacji programu SharePoint został określony, należy go naprawić.
+## <a name="fix-the-code-and-reprofile-the-application"></a>Popraw kod i przeprofiluj aplikację
+ Teraz funkcja hotspot w aplikacji SharePoint została zidentyfikowana. napraw ją.
 
-### <a name="to-fix-the-code-and-reprofile-the-application"></a>Aby naprawić kod i reprofile aplikacji
+### <a name="to-fix-the-code-and-reprofile-the-application"></a>Aby naprawić kod i zmienić profil aplikacji
 
-1. W kodzie funkcji odbiorcy zdarzeń komentarz `TimeCounter` metody wywołania w `FeatureActivated` aby zapobiec wywoływana.
+1. W kodzie odbiorniku zdarzenia funkcji Dodaj komentarz do wywołania metody `TimeCounter` w `FeatureActivated`, aby zapobiec jego wywołaniu.
 
 2. Zapisz projekt.
 
-3. W **Eksplorator wydajności**, otwórz folder elementów docelowych, a następnie wybierz **ProfileTest** węzła.
+3. W **Eksplorator wydajności**Otwórz folder targets, a następnie wybierz węzeł **ProfileTest** .
 
-4. Na **Eksplorator wydajności** narzędzi w **akcje** kartę, wybrać **Uruchom profilowanie** przycisku.
+4. Na pasku narzędzi **Eksplorator wydajności** na karcie **Akcje** wybierz przycisk **Rozpocznij profilowanie** .
 
-     Jeśli chcesz zmienić dowolne z właściwości profilowania, przed reprofiling aplikacji, wybierz opcję **Uruchom Kreatora wydajności** zamiast tego przycisku.
+     Jeśli chcesz zmienić właściwości profilowania przed ponownym profilem aplikacji, wybierz przycisk **Kreator wydajności uruchamiania** .
 
-5. Postępuj zgodnie z instrukcjami w **uruchamianie aplikacji programu SharePoint** sekcji wcześniej w tym temacie.
+5. Postępuj zgodnie z instrukcjami w sekcji **Uruchamianie aplikacji SharePoint** wcześniej w tym temacie.
 
-     Ta funkcja powinna być aktywowana znacznie szybciej, teraz, gdy wywołanie metody wykonywania pętli bezczynności zostały wyeliminowane. Przykładowy raport profilowania powinny odzwierciedlać to.
+     Funkcja powinna aktywować znacznie szybciej, gdy wywołanie do pętli bezczynności zostało wyeliminowane. Przykładowy raport profilowania powinien odzwierciedlać ten sposób.
 
 ## <a name="see-also"></a>Zobacz także
 - [Eksplorator wydajności](/visualstudio/profiling/performance-explorer)
 - [Sesja wydajności — omówienie](/visualstudio/profiling/performance-session-overview)
 - [Profilowanie wydajności — przewodnik dla początkujących](/visualstudio/profiling/beginners-guide-to-performance-profiling)
-- [Znajdź wąskie gardła za pomocą programu Visual Studio Profiler](http://go.microsoft.com/fwlink/?LinkID=137266)
+- [Znajdowanie wąskich gardeł aplikacji za pomocą programu Visual Studio profiler](https://msdn.microsoft.com/magazine/cc337887.aspx)

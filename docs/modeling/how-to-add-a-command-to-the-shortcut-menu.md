@@ -1,5 +1,5 @@
 ---
-title: 'Porady: dodawanie polecenia do menu skrótów'
+title: 'Instrukcje: Dodawanie polecenia do menu skrótów'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +10,14 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7d873a3401e37a18b938cb5785f33eb0bc9b8fb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e476f1db1e30a04e67e6b53f593f55ee3867fae2
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666719"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985127"
 ---
-# <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Porady: dodawanie polecenia do menu skrótów
+# <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Instrukcje: Dodawanie polecenia do menu skrótów
 
 Polecenia menu można dodać do języka specyficznego dla domeny (DSL), aby użytkownicy mogli wykonywać zadania specyficzne dla DSL. Polecenia pojawiają się w menu kontekstowym (skrót), gdy użytkownik kliknie prawym przyciskiem myszy na diagramie. Można zdefiniować polecenie, aby było wyświetlane tylko w menu w określonych okolicznościach. Można na przykład wykonać polecenie widoczne tylko wtedy, gdy użytkownik kliknie określone typy elementu lub elementy w określonych stanach.
 
@@ -28,8 +28,6 @@ Podsumowując, kroki są wykonywane w projekcie DslPackage w następujący spos�
 2. [Zaktualizuj numer wersji pakietu w Package.tt](#version). Należy to zrobić za każdym razem, gdy zmienisz polecenie. vsct
 
 3. [Metody zapisu w klasie element CommandSet](#CommandSet) , aby wyświetlić polecenie i zdefiniować, co ma być wykonywane w poleceniu.
-
-   Aby zapoznać się z przykładami, zobacz [witrynę internetową zestawu SDK wizualizacji i modelowania](http://go.microsoft.com/fwlink/?LinkID=185579).
 
 > [!NOTE]
 > Możesz również zmodyfikować zachowanie niektórych istniejących poleceń, takich jak Wytnij, wklej, zaznacz wszystko i Drukuj przez zastępowanie metod w CommandSet.cs. Aby uzyskać więcej informacji, zobacz [How to: Modify a standardowe polecenie menu](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
@@ -361,9 +359,9 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Pisanie kodu pod kątem dostosowywania języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+- [Pisanie kodu w celu dostosowania języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md)
 - [Instrukcje: modyfikowanie standardowego polecenia menu](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)
-- [Wdrażanie rozwiązań dla języka specyficznego dla domeny](msi-and-vsix-deployment-of-a-dsl.md)
+- [Wdrażanie rozwiązań językowych właściwych dla domeny](msi-and-vsix-deployment-of-a-dsl.md)
 - [Przykładowy kod: diagramy obwodów](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

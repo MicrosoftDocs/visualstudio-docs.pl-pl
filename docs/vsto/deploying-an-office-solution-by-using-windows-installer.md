@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 20df85952b4e76e60d6e93067c1f1e7838b692cd
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: a44781c6fea0ecf75dcdb8a5ab2e2b3bed8e52e9
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "69551717"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986140"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Wdróż rozwiązanie pakietu Office przy użyciu Instalator Windows
 
@@ -59,15 +59,15 @@ Za pomocą programu Visual Studio do tworzenia Instalator Windows można wdroży
 
 Aby uzyskać więcej informacji na temat wdrażania rozwiązania pakietu Office przy użyciu technologii ClickOnce, zobacz [wdrażanie rozwiązania z pakietu Office przy użyciu technologii ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).
 
-Aby uzyskać informacje na temat sposobu tworzenia pliku Instalator Windows przy użyciu [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)], zobacz [wdrażanie rozwiązania Visual Studio 2010 Tools for Office przy użyciu Instalator Windows](http://go.microsoft.com/fwlink/?LinkId=201807).
+Aby uzyskać informacje na temat sposobu tworzenia pliku Instalator Windows przy użyciu [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)], zobacz [wdrażanie rozwiązania Visual Studio 2010 Tools for Office przy użyciu Instalator Windows](/previous-versions/visualstudio/visual-studio-2010/ff937654(v=msdn.10)).
 
 ## <a name="Download"></a>Pobierz przykłady
 Ten temat odnosi się do następujących próbek do pobrania.
 
 |Przykład<br /><br />|Opis<br /><br />|
 |----------|---------------|
-|[ExcelAddIn](http://go.microsoft.com/fwlink/?LinkID=275492)<br /><br />|Dodatek narzędzi VSTO dla programu Excel, który można zainstalować na komputerze z uruchomioną 32-bitową lub 64-bitową wersją pakietu Office.<br /><br />|
-|[ExcelWorkbook](http://go.microsoft.com/fwlink/?LinkID=275493)<br /><br />|Dostosowanie na poziomie dokumentu programu Excel, które można zainstalować na komputerze z uruchomioną 32-bitową lub 64-bitową wersją pakietu Office.<br /><br />|
+|[ExcelAddIn](https://code.msdn.microsoft.com/VSTO-Deploy-an-Office-fbcc09ad)<br /><br />|Dodatek narzędzi VSTO dla programu Excel, który można zainstalować na komputerze z uruchomioną 32-bitową lub 64-bitową wersją pakietu Office.<br /><br />|
+|[ExcelWorkbook](https://code.msdn.microsoft.com/VSTO-Deploy-a-Customization-f70fae33)<br /><br />|Dostosowanie na poziomie dokumentu programu Excel, które można zainstalować na komputerze z uruchomioną 32-bitową lub 64-bitową wersją pakietu Office.<br /><br />|
 
 ## <a name="ApplySecurity"></a>Zdecyduj, jak udzielić zaufania do rozwiązania
 Aby można było uruchomić rozwiązanie na komputerach użytkowników, należy udzielić zaufania w jeden z następujących sposobów lub użytkownicy muszą odpowiedzieć na monit zaufania podczas instalacji rozwiązania.
@@ -103,7 +103,7 @@ Plik Instalator Windows można utworzyć przy użyciu narzędzia InstallShield L
 
 ## <a name="Create"></a>Tworzenie projektu konfiguracji
 
-1. W [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Otwórz projekt pakietu Office, który chcesz wdrożyć.
+1. W [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Otwórz projekt pakietu Office, który chcesz wdrożyć.
 
    Przykłady dodatków narzędzi VSTO, które są skojarzone z tym tematem, zawierają projekt o nazwie **ExcelAddIn**. Przykłady dostosowania na poziomie dokumentu zawierają projekt o nazwie **ExcelWorkbook**. Ten temat będzie odnosił się do projektu pakietu Office w rozwiązaniu przy użyciu jednej z tych dwóch nazw.
 
@@ -209,7 +209,7 @@ Strona **redystrybucyjna** zawiera element o nazwie **Microsoft VSTO 2010 Runtim
 
 4. W Notatniku Zastąp tekst, w którym znajduje się **Identyfikator GUID** , WKLEJAJĄC identyfikator GUID w jego miejscu.
 
-   **@No__t_1properties element &gt;** pliku jest podobny do poniższego.
+   **Właściwości&lt;&gt;** elementu pliku są podobne do następujących.
 
    ```xml
    <properties Id="{87989B73-21DC-4403-8FD1-0C68A41A6D8C}" Description="This prerequisite installs the most recent version of the Microsoft Visual Studio 2010 Tools for Office Runtime." >
@@ -231,9 +231,9 @@ Strona **redystrybucyjna** zawiera element o nazwie **Microsoft VSTO 2010 Runtim
 
 10. Z folderu **pulpitu** Skopiuj plik *Runtime. prq narzędzi programu Visual Studio 2010* do jednego z następujących katalogów na komputerze.
 
-   W przypadku 32-bitowych systemów operacyjnych: *%ProgramFiles%\InstallShield\2013LE\SetupPrerequisites \\*
+   W przypadku 32-bitowych systemów operacyjnych: *%ProgramFiles%\InstallShield\2013LE\SetupPrerequisites\\*
 
-   W przypadku 64-bitowych systemów operacyjnych: *% ProgramFiles (x86)% \ 2013LE \ SetupPrerequisites \\*
+   W przypadku 64-bitowych systemów operacyjnych: *% ProgramFiles (x86)% \ 2013LE \ SetupPrerequisites\\*
 
 11. Na stronie **redystrybucyjna** projektu InstallShield wybierz przycisk **Odśwież** , aby odświeżyć listę składników redystrybucyjnych, jak pokazano na poniższej ilustracji.
 
@@ -510,4 +510,4 @@ Aby zmodyfikować właściwości niestandardowe, należy utworzyć program, któ
 - [Przegląd właściwości dokumentu niestandardowego](../vsto/custom-document-properties-overview.md)
 - [Udzielanie zaufania do rozwiązań pakietu Office](../vsto/granting-trust-to-office-solutions.md)
 - [Udzielanie zaufania do dokumentów](../vsto/granting-trust-to-documents.md)
-- [Wdróż rozwiązanie Visual Studio 2010 Tools for Office przy użyciu Instalator Windows](http://go.microsoft.com/fwlink/?LinkId=201807)
+- [Wdróż rozwiązanie Visual Studio 2010 Tools for Office przy użyciu Instalator Windows](/previous-versions/visualstudio/visual-studio-2010/ff937654(v=msdn.10))

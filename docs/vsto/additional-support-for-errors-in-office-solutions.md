@@ -56,44 +56,44 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fb5877bccdc60d031e6ccd799eb6536df15fda38
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 01b225b27dfe9c5e1f006105b8e2676a509234b9
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953195"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984635"
 ---
 # <a name="additional-support-for-errors-in-office-solutions"></a>Dodatkowa obsługa błędów w rozwiązaniach pakietu Office
 
-Aby pomóc w znalezieniu odpowiedzi na problemy, z którymi zetknie się tworzenie rozwiązań pakietu Office w Visual Studio, można użyć następujących zasobów.
+Poniższe zasoby mogą pomóc w znalezieniu odpowiedzi na problemy występujące podczas tworzenia rozwiązań pakietu Office w programie Visual Studio.
 
-## <a name="troubleshoot-specific-errors"></a>Rozwiązywanie określonych problemów z
+## <a name="troubleshoot-specific-errors"></a>Rozwiązywanie określonych błędów
 
-Aby uzyskać pomoc dotyczącą typowych błędów w rozwiązaniach pakietu Office zobacz następujące tematy:
+Aby uzyskać pomoc dotyczącą niektórych typowych błędów w rozwiązaniach pakietu Office, zobacz następujące tematy:
 
 - [Rozwiązywanie problemów z błędami w rozwiązaniach pakietu Office](../vsto/troubleshooting-errors-in-office-solutions.md)
 
 - [Rozwiązywanie problemów z zabezpieczeniami rozwiązań pakietu Office](../vsto/troubleshooting-office-solution-security.md)
 
-- [Rozwiązywanie problemów z wdrażaniem rozwiązań Office](../vsto/troubleshooting-office-solution-deployment.md)
+- [Rozwiązywanie problemów z wdrażaniem rozwiązań pakietu Office](../vsto/troubleshooting-office-solution-deployment.md)
 
 ## <a name="other-resources"></a>Inne zasoby
 
-[Visual Studio tools dla pakietu Office forum](http://go.microsoft.com/fwlink/?LinkId=149744)
+[Forum dla programu Visual Studio Tools for Office](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=vsto)
 
-Udostępnia forum pytania na temat narzędzia Office developer tools w programie Visual Studio.
+Zawiera Forum dotyczące pytań dotyczących narzędzi deweloperskich pakietu Office w programie Visual Studio.
 
-[I pomocy technicznej firmy Microsoft](http://go.microsoft.com/fwlink/?LinkID=108287)
+[Pomoc i obsługa techniczna firmy Microsoft](https://support.microsoft.com)
 
 Umożliwia dostęp do artykułów w bazie wiedzy Knowledge Base (KB), plików do pobrania i aktualizacji, audycji pomocy technicznej i innych usług.
 
-[Dodatkowe zasoby do rozwoju rozwiązań Office](../vsto/additional-resources-for-developing-office-solutions.md)
+[Dodatkowe zasoby na potrzeby opracowywania rozwiązań pakietu Office](../vsto/additional-resources-for-developing-office-solutions.md)
 
-Zawiera łącza do dodatkowych zasobów dotyczących dowiedzieć się więcej na temat opracowywania rozwiązań pakietu Office i programowanie Office w programie Visual Studio.
+Oferuje linki do dodatkowych zasobów, aby dowiedzieć się więcej na temat opracowywania rozwiązań biurowych i programowania Office przy użyciu programu Visual Studio.
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Rozwiązywanie problemów z błędami w rozwiązaniach pakietu Office](../vsto/troubleshooting-errors-in-office-solutions.md)
 - [Rozwiązywanie problemów z zabezpieczeniami rozwiązań pakietu Office](../vsto/troubleshooting-office-solution-security.md)
-- [Rozwiązywanie problemów z wdrażaniem rozwiązań Office](../vsto/troubleshooting-office-solution-deployment.md)
-- [Dodatkowe zasoby do rozwoju rozwiązań Office](../vsto/additional-resources-for-developing-office-solutions.md)
+- [Rozwiązywanie problemów z wdrażaniem rozwiązań pakietu Office](../vsto/troubleshooting-office-solution-deployment.md)
+- [Dodatkowe zasoby na potrzeby opracowywania rozwiązań pakietu Office](../vsto/additional-resources-for-developing-office-solutions.md)

@@ -1,5 +1,5 @@
 ---
-title: Wiązanie skrótów klawiaturowych z elementami Menu | Dokumentacja firmy Microsoft
+title: Powiązywanie skrótów klawiaturowych z elementami menu | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,54 +14,54 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c9bfcf3a94a5615df892ab0ad88dca44c16e97b8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 98c0b6f5b26e7f423f2a89f680395ceaba7286bc
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352189"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72982271"
 ---
-# <a name="bind-keyboard-shortcuts-to-menu-items"></a>Powiąż skrótów klawiaturowych z elementami menu
-Aby powiązać polecenia niestandardowego menu skrótu klawiaturowego, wystarczy dodać wpis do *vsct* plik pakietu. W tym temacie opisano sposób mapowania skrótów klawiaturowych na niestandardowy przycisk, element menu lub paska narzędzi polecenia, a także jak zastosować Mapowanie klawiatury w edytorze domyślnej lub ograniczyć je do edytora niestandardowego.
+# <a name="bind-keyboard-shortcuts-to-menu-items"></a>Powiąż skróty klawiaturowe z elementami menu
+Aby powiązać skrót klawiaturowy z niestandardowym poleceniem menu, po prostu Dodaj wpis do pliku *. vsct* pakietu. W tym temacie opisano sposób mapowania skrótu klawiaturowego na przycisk niestandardowy, element menu lub polecenie paska narzędzi oraz sposób zastosowania mapowania klawiatury w domyślnym edytorze lub ograniczanie go do niestandardowego edytora.
 
- Aby przypisać skróty klawiaturowe do istniejących elementów menu programu Visual Studio, zobacz [identyfikowanie i dostosowywanie skrótów klawiaturowych](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
+ Aby przypisać skróty klawiaturowe do istniejących elementów menu programu Visual Studio, zobacz [Identyfikowanie i Dostosowywanie skrótów klawiaturowych](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
 
 ## <a name="choose-a-key-combination"></a>Wybierz kombinację klawiszy
- Wiele skrótów klawiaturowych są już używane w programie Visual Studio. Nie należy przypisywać ten sam skrót do więcej niż jednego polecenia, ponieważ zduplikowane powiązania są trudne do wykrycia, a także mogą powodować nieprzewidywalne skutki. Dlatego jest dobry pomysł, aby sprawdzić dostępność skrót, przed przypisaniem go.
+ Wiele skrótów klawiaturowych jest już używanych w programie Visual Studio. Nie należy przypisywać tego samego skrótu do więcej niż jednego polecenia, ponieważ duplikaty powiązań są trudne do wykrycia i mogą być również przyczyną nieprzewidzianych wyników. Z tego względu dobrym pomysłem jest zweryfikowanie dostępności skrótu przed przypisaniem.
 
-### <a name="to-verify-the-availability-of-a-keyboard-shortcut"></a>Aby sprawdzić dostępność skrót klawiaturowy
+### <a name="to-verify-the-availability-of-a-keyboard-shortcut"></a>Aby sprawdzić dostępność skrótu klawiaturowego
 
-1. W **narzędzia** > **opcje** > **środowiska** wybierz **klawiatury**.
+1. W oknie **narzędzia** > **Opcje** > **środowiska** wybierz pozycję **Klawiatura**.
 
-2. Upewnij się, że **Użyj nowego skrótu** ustawiono **Global**.
+2. Upewnij się, że dla **opcji Użyj nowego skrótu w programie** ustawiono wartość **globalne**.
 
-3. W **naciśnij klawisze skrótu** wpisz skrót klawiaturowy, który chcesz użyć.
+3. W polu **naciśnij klawisze skrótu** wpisz skrót klawiaturowy, który ma być używany.
 
-    Jeśli skrót jest już używany w programie Visual Studio, **skrót aktualnie używany przez** zostanie wyświetlone skrót aktualnie wywołuje polecenie.
+    Jeśli skrót jest już używany w programie Visual Studio, **skrót aktualnie używany przez** pole będzie zawierać polecenie, które aktualnie wywołuje skrót.
 
-4. Wypróbuj różne kombinacje klawiszy, dopóki nie znajdziesz taki, który nie jest zamapowany.
+4. Wypróbuj różne kombinacje kluczy, dopóki nie zostanie ono zamapowane.
 
    > [!NOTE]
-   > Skróty klawiaturowe, które używają **Alt** może otworzyć menu i nie są bezpośrednio wykonania polecenia. W związku z tym **skrót aktualnie używany przez** pole może być pusty podczas wpisywania tekstu skrót, który zawiera **Alt**. Możesz sprawdzić, czy skrót nie otwiera menu przez zamknięcie **opcje** okno dialogowe, a następnie naciskając klawisze.
+   > Skróty klawiaturowe używające **Alt** mogą otworzyć menu i nie wykonywać bezpośrednio polecenia. W związku z tym **skrót aktualnie używany przez** pole może być pusty po wpisaniu skrótu, który zawiera **Alt**. Możesz sprawdzić, czy skrót nie otwiera menu, zamykając okno dialogowe **Opcje** , a następnie naciskając klawisze.
 
-   W poniższej procedurze przyjęto, że masz istniejących pakietów VSPackage przy użyciu polecenia menu. Jeśli potrzebujesz pomocy z tą operacją, Przyjrzyj się [Tworzenie rozszerzenia za pomocą polecenia menu](../extensibility/creating-an-extension-with-a-menu-command.md).
+   W poniższej procedurze przyjęto założenie, że masz istniejący pakietu VSPackage z poleceniem menu. Jeśli potrzebujesz pomocy w tym celu, zapoznaj się z tematem [Tworzenie rozszerzenia za pomocą polecenia menu](../extensibility/creating-an-extension-with-a-menu-command.md).
 
 ### <a name="to-assign-a-keyboard-shortcut-to-a-command"></a>Aby przypisać skrót klawiaturowy do polecenia
 
-1. Otwórz *vsct* plik dla pakietu.
+1. Otwórz plik *. vsct* dla pakietu.
 
-2. Utwórz pustą `<KeyBindings>` sekcji po `<Commands>` Jeśli nie jest już obecny.
+2. Utwórz pustą sekcję `<KeyBindings>` po `<Commands>`, jeśli jeszcze jej nie ma.
 
    > [!WARNING]
-   > Aby uzyskać więcej informacji na temat powiązania klawiszy zobacz [powiązanie klawiszy](../extensibility/keybinding-element.md).
+   > Aby uzyskać więcej informacji na temat powiązań kluczy, zobacz [powiązanie klawiszy](../extensibility/keybinding-element.md).
 
-    W `<KeyBindings>` sekcji, Utwórz `<KeyBinding>` wpisu.
+    W sekcji `<KeyBindings>` Utwórz wpis `<KeyBinding>`.
 
-    Ustaw `guid` i `id` atrybuty do tych poleceń, aby wywołać.
+    Ustaw atrybuty `guid` i `id` na wartości poleceń, które chcesz wywołać.
 
-    Ustaw `mod1` atrybutu **kontroli**, **Alt**, lub **Shift**.
+    Ustaw atrybut `mod1` na **Control**, **Alt**lub **SHIFT**.
 
-    W sekcji powiązania klawiszy powinno wyglądać mniej więcej tak:
+    Sekcja powiązania klawiszy powinna wyglądać następująco:
 
    ```xml
    <KeyBindings>
@@ -71,18 +71,18 @@ Aby powiązać polecenia niestandardowego menu skrótu klawiaturowego, wystarczy
 
    ```
 
-   Jeśli skrót klawiaturowy wymaga więcej niż dwa klucze, należy ustawić `mod2` i `key2` atrybutów.
+   Jeśli skrót klawiaturowy wymaga więcej niż dwóch kluczy, ustaw atrybuty `mod2` i `key2`.
 
-   W większości sytuacji **Shift** nie należy używać bez modyfikatora drugiej już naciśnięcie klawisza powoduje, że większość klawisze alfanumeryczne wpisać wielką literę lub symbol.
+   W większości sytuacji nie należy używać **klawisza Shift** bez drugiego modyfikatora, ponieważ jego naciśnięcie już powoduje, że większość klawiszy alfanumerycznych może wpisać wielką literę lub symbol.
 
-   Kody klucz wirtualnej umożliwiają uzyskanie dostępu do klawisze specjalne, które nie mają skojarzonych z nimi, na przykład klawiszy funkcyjnych znak i **Backspace** klucza. Aby uzyskać więcej informacji, zobacz [kody klucz wirtualnej](https://docs.microsoft.com/windows/desktop/inputdev/virtual-key-codes).
+   Kody kluczy wirtualnych umożliwiają dostęp do kluczy specjalnych, które nie mają skojarzonego z nimi znaku, na przykład klawisze funkcyjne i klawisz **Backspace** . Aby uzyskać więcej informacji, zobacz [kody kluczy wirtualnych](/windows/desktop/inputdev/virtual-key-codes).
 
-   Aby udostępnić polecenie w programie Visual Studio edytor, należy ustawić `editor` atrybutu `guidVSStd97`.
+   Aby polecenie było dostępne w edytorze programu Visual Studio, ustaw atrybut `editor` na `guidVSStd97`.
 
-   Aby polecenie dostępne tylko w niestandardowy edytor, należy ustawić `editor` atrybutu Nazwa niestandardowy edytor, który został wygenerowany przez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] szablonu pakietu podczas tworzenia pakietu VSPackage, który zawiera niestandardowy Edytor. Aby znaleźć wartości nazwy, Szukaj w `<Symbols>` sekcji `<GuidSymbol>` węzła którego `name` atrybut kończy się na "`editorfactory`." Jest to nazwa edytora niestandardowego.
+   Aby polecenie było dostępne tylko w edytorze niestandardowym, należy ustawić atrybut `editor` na nazwę niestandardowego edytora, który został wygenerowany przez szablon pakietu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] podczas tworzenia pakietu VSPackage zawierającego Edytor niestandardowy. Aby znaleźć wartość nazwy, zapoznaj się z sekcją `<Symbols>` węzła `<GuidSymbol>`, którego atrybut `name` jest zakończony "`editorfactory`". To jest nazwa niestandardowego edytora.
 
 ## <a name="example"></a>Przykład
- W tym przykładzie wiąże skrótu klawiaturowego **Ctrl**+**Alt**+**C** do polecenia o nazwie `cmdidMyCommand` w pakiecie o nazwie `MyPackage`.
+ Ten przykład wiąże skrót klawiaturowy **Ctrl**+**Alt**+**C** do polecenia o nazwie `cmdidMyCommand` w pakiecie o nazwie `MyPackage`.
 
 ```
 <CommandTable>
@@ -99,7 +99,7 @@ Aby powiązać polecenia niestandardowego menu skrótu klawiaturowego, wystarczy
 ```
 
 ## <a name="example"></a>Przykład
- W tym przykładzie wiąże skrótu klawiaturowego **Ctrl**+**B** do polecenia o nazwie `cmdidBold` w projekcie o nazwie `TestEditor`. Polecenie jest dostępne tylko w edytorze niestandardowym i nie znajduje się w innych edytorów.
+ Ten przykład wiąże skrót klawiaturowy **Ctrl**+**B** do polecenia o nazwie `cmdidBold` w projekcie o nazwie `TestEditor`. Polecenie jest dostępne tylko w edytorze niestandardowym, a nie w innych edytorach.
 
 ```xml
 <KeyBinding guid="guidVSStd97" id="cmdidBold" editor="guidTestEditorEditorFactory" key1="B" mod1="Control" />

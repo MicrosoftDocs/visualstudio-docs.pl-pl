@@ -1,5 +1,5 @@
 ---
-title: Omówienie modelu programowania programu SharePoint rozszerzeń narzędzi
+title: Omówienie modelu programowania rozszerzeń narzędzi SharePoint
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,99 +14,99 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dbb496b077f1ff55fda53d3325765e8e58911096
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: 160751e7f580ede458232f98dc753a1145094f57
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401784"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985145"
 ---
-# <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>Omówienie modelu programowania programu SharePoint rozszerzeń narzędzi
-  Po utworzeniu rozszerzeń dla narzędzi SharePoint w programie Visual Studio, należy rozpocząć od implementacja interfejsów rozszerzeń, które są udostępniane przez narzędzia programu SharePoint. W większości przypadków będzie również użyć innych typów dostarczonych przez narzędzia programu SharePoint do zaimplementowania funkcji w rozszerzeniu. W niektórych przypadkach można także użyć typów w innych modeli obiektów, dostarczone przez program Visual Studio i programu SharePoint. Konieczne jest zrozumienie przeznaczenia każdego z tych modeli obiektów oraz wiedzieć, jak za ich pomocą ze sobą tworzenia rozszerzeń dla narzędzi SharePoint.
+# <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>Omówienie modelu programowania rozszerzeń narzędzi SharePoint
+  Po utworzeniu rozszerzenia dla narzędzi programu SharePoint w programie Visual Studio Zacznij od zaimplementowania jednego lub większej liczby interfejsów rozszerzalności, które są udostępniane przez narzędzia programu SharePoint. W większości przypadków do zaimplementowania funkcji w rozszerzeniu są również używane inne typy udostępniane przez narzędzia programu SharePoint. W niektórych scenariuszach można także używać typów w innych modelach obiektów udostępnianych przez program Visual Studio i program SharePoint. Musisz zrozumieć przeznaczenie każdego z tych modeli obiektów i wiedzieć, jak z nich korzystać, aby utworzyć rozszerzenia dla narzędzi programu SharePoint.
 
-## <a name="extend-the-sharepoint-tools-by-implementing-extensibility-interfaces"></a>Rozszerzanie narzędzi SharePoint poprzez implementację rozszerzalności interfejsów
- Visual Studio używa Managed Extensibility Framework (MEF) w programie .NET Framework 4, aby zapewnić modelu rozszerzalności dla narzędzi SharePoint. MEF jest interfejs API (zaimplementowanych w zestawie System.ComponentModel.Composition), umożliwia aplikacjom udostępnianie punkty rozszerzeń i wykrycie i załadowanie rozszerzenia w czasie wykonywania. Aby uzyskać więcej informacji na temat MEF, zobacz [Managed Extensibility Framework &#40;MEF&#41;](/dotnet/framework/mef/index).
+## <a name="extend-the-sharepoint-tools-by-implementing-extensibility-interfaces"></a>Rozszerzanie narzędzi programu SharePoint przez implementację interfejsów rozszerzalności
+ Program Visual Studio używa Managed Extensibility Framework (MEF) w .NET Framework 4, aby zapewnić model rozszerzalności dla narzędzi programu SharePoint. MEF to interfejs API (zaimplementowany w zestawie System. ComponentModel. kompozycji), który umożliwia aplikacjom udostępnianie punktów rozszerzalności oraz odnajdywanie i ładowanie rozszerzeń w czasie wykonywania. Aby uzyskać więcej informacji na temat MEF [, &#40;zobacz&#41;Managed Extensibility Framework MEF](/dotnet/framework/mef/index).
 
- Aby rozszerzyć narzędzia programu SharePoint, zaimplementuj jeden lub więcej interfejsów rozszerzeń, które są dostępne w programie Visual Studio. Należy również zastosować <xref:System.ComponentModel.Composition.ExportAttribute>, oraz dodatkowe SharePoint specyficzne dla narzędzia atrybutów w razie potrzeby implementacji interfejsu. Poniższa tabela zawiera listę interfejsów, które można zaimplementować w celu rozszerzenia narzędzi programu SharePoint.
+ Aby rozszerzać narzędzia programu SharePoint, zaimplementuj jeden lub więcej interfejsów rozszerzalności, które są udostępniane przez program Visual Studio. W razie potrzeby do implementacji interfejsu należy również zastosować <xref:System.ComponentModel.Composition.ExportAttribute>i dodatkowe atrybuty specyficzne dla narzędzi programu SharePoint. Poniższa tabela zawiera listę interfejsów, które można zaimplementować w celu rozbudowania narzędzi programu SharePoint.
 
 |Interface|Opis|
 |---------------|-----------------|
-|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider>|Implementuje ten interfejs do definiowania nowego typu elementu projektu programu SharePoint. Aby uzyskać przykład, zobacz [jak: Definiowanie typu elementu projektu SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).|
-|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension>|Implementuje ten interfejs w celu rozszerzania typu elementu projektu programu SharePoint, która jest już zainstalowana w programie Visual Studio. Aby uzyskać przykład, zobacz [jak: Tworzenie rozszerzenia elementu projektu SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).|
-|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension>|Implementuje ten interfejs, aby rozszerzyć projektów programu SharePoint. Aby uzyskać przykład, zobacz [jak: Tworzenie rozszerzenia projektu SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md).|
-|<xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentStep>|Implementuje ten interfejs do definiowania nowego kroku wdrożenia, które mogą być wykonywane, gdy element projektu programu SharePoint jest wdrożony lub wycofany. Aby uzyskać przykład, zobacz [instruktażu: Tworzenie niestandardowego kroku wdrożenia dla projektów programu SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).|
-|<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension>|Implementuje ten interfejs, aby rozszerzyć istniejący węzeł w obszarze **połączeń SharePoint** w węźle **Eksploratora serwera** okna. Aby uzyskać przykład, zobacz [jak: Rozszerzanie węzła SharePoint w Eksploratorze serwera](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).|
-|<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider>|Implementuje ten interfejs do definiowania nowego typu węzeł w węźle **połączeń SharePoint** w węźle **Eksploratora serwera** okna. Aby uzyskać przykład, zobacz [jak: Rozszerzanie węzła SharePoint w Eksploratorze serwera](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).|
-|<xref:Microsoft.VisualStudio.SharePoint.Validation.IFeatureValidationRule>|Implementuje ten interfejs zdefiniowanie funkcji niestandardowe reguły sprawdzania poprawności. Aby uzyskać przykład, zobacz [jak: Tworzenie funkcji niestandardowej oraz pakiet reguł sprawdzania poprawności dla rozwiązań SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).|
-|<xref:Microsoft.VisualStudio.SharePoint.Validation.IPackageValidationRule>|Implementuje ten interfejs, aby zdefiniować niestandardowy pakiet regułę sprawdzania poprawności. Aby uzyskać przykład, zobacz [jak: Tworzenie funkcji niestandardowej oraz pakiet reguł sprawdzania poprawności dla rozwiązań SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).|
+|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider>|Zaimplementuj ten interfejs, aby zdefiniować nowy typ elementu projektu programu SharePoint. Aby zapoznać się z przykładem, zobacz [How to: Zdefiniuj typ elementu projektu SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).|
+|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension>|Zaimplementuj ten interfejs, aby zwiększyć typ elementu projektu programu SharePoint, który jest już zainstalowany w programie Visual Studio. Aby zapoznać się z przykładem, zobacz [jak: Tworzenie rozszerzenia elementu projektu SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).|
+|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension>|Zaimplementuj ten interfejs, aby rozłożyć projekty programu SharePoint. Aby zapoznać się z przykładem, zobacz [How to: Create a SharePoint Project Extension](../sharepoint/how-to-create-a-sharepoint-project-extension.md).|
+|<xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentStep>|Zaimplementuj ten interfejs, aby zdefiniować nowy krok wdrożenia, który można wykonać, gdy element projektu programu SharePoint zostanie wdrożony lub wycofany. Aby zapoznać się z przykładem, zobacz [Przewodnik: Tworzenie niestandardowego kroku wdrożenia dla projektów programu SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).|
+|<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension>|Zaimplementuj ten interfejs, aby zwiększyć istniejący węzeł w węźle **połączenia programu SharePoint** w oknie **Eksplorator serwera** . Aby zapoznać się z przykładem, zobacz [How to: rozszerzając węzeł programu SharePoint w Eksplorator serwera](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).|
+|<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider>|Zaimplementuj ten interfejs, aby zdefiniować nowy typ węzła w węźle **połączenia programu SharePoint** w oknie **Eksplorator serwera** . Aby zapoznać się z przykładem, zobacz [How to: rozszerzając węzeł programu SharePoint w Eksplorator serwera](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).|
+|<xref:Microsoft.VisualStudio.SharePoint.Validation.IFeatureValidationRule>|Zaimplementuj ten interfejs, aby zdefiniować regułę walidacji niestandardowej funkcji. Aby zapoznać się z przykładem, zobacz [How to: Create Custom Feature and Package Rules for SharePoint Solutions](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).|
+|<xref:Microsoft.VisualStudio.SharePoint.Validation.IPackageValidationRule>|Zaimplementuj ten interfejs, aby zdefiniować niestandardową regułę walidacji pakietu. Aby zapoznać się z przykładem, zobacz [How to: Create Custom Feature and Package Rules for SharePoint Solutions](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).|
 
- Po zaimplementowaniu rozszerzenia narzędzi programu SharePoint, należy wdrożyć zestawu rozszerzeń w pakiecie Visual Studio rozszerzenia (VSIX), aby umożliwić programowi Visual Studio wykrycie i załadowanie rozszerzenia. Aby uzyskać więcej informacji, zobacz [wdrażanie rozszerzeń dla narzędzi SharePoint w programie Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
+ Po wdrożeniu rozszerzenia narzędzi programu SharePoint należy wdrożyć zestaw rozszerzeń w pakiecie Visual Studio Extension (VSIX), aby umożliwić programowi Visual Studio odnalezienie i załadowanie rozszerzenia. Aby uzyskać więcej informacji, zobacz [Wdrażanie rozszerzeń dla narzędzi programu SharePoint w programie Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-## <a name="understand-the-object-models-that-you-use-in-sharepoint-tools-extensions"></a>Zrozumienie modeli obiektów, używanych w rozszerzeń narzędzi SharePoint
- Istnieje kilka modeli obiektów, których można użyć podczas tworzenia rozszerzeń dla narzędzi SharePoint:
+## <a name="understand-the-object-models-that-you-use-in-sharepoint-tools-extensions"></a>Zrozumienie modeli obiektów używanych w rozszerzeniach narzędzi programu SharePoint
+ Istnieje kilka modeli obiektów, których można użyć podczas tworzenia rozszerzeń dla narzędzi programu SharePoint:
 
-- *Modelu obiektów programu SharePoint narzędzia*. Ten model obiektów zapewnia rozszerzalność interfejsów, które implementują do tworzenia rozszerzenia narzędzi programu SharePoint i innych powiązanych typów.
+- *Model obiektów narzędzi programu SharePoint*. Ten model obiektów udostępnia interfejsy rozszerzalności, które są implementowane w celu tworzenia rozszerzeń narzędzi SharePoint i innych powiązanych typów.
 
-- *Visual Studio Automatyzacja i integracja modele do obiektów*. Te modele obiektów umożliwia dostęp do funkcji programu Visual Studio, które wykraczają poza zakres modelu obiektów przy użyciu narzędzi programu SharePoint.
+- *Modele obiektów automatyzacji i integracji programu Visual Studio*. Te modele obiektów umożliwiają dostęp do funkcji programu Visual Studio, które wykraczają poza zakres modelu obiektów narzędzi programu SharePoint.
 
     > [!NOTE]
-    > Możesz przekonwertować niektóre obiekty w modelu obiektu narzędzi programu SharePoint do obiektów w automatyzacji programu Visual Studio i modeli obiektów integracji i odwrotnie, korzystając z usługi projektu programu SharePoint. Aby uzyskać więcej informacji, zobacz [konwersji między typami systemu projektu SharePoint a innymi typami projektu Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md).
+    > Niektóre obiekty w modelu obiektów narzędzi SharePoint można przekonwertować na obiekty w ramach modeli obiektów automatyzacji i integracji programu Visual Studio, a na odwrót — za pomocą usługi projektu programu SharePoint. Aby uzyskać więcej informacji, zobacz [konwertowanie między typami systemu projektu SharePoint a innymi typami projektów programu Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md).
 
-- *Modele obiektów serwera i klienta programu SharePoint*. Użyj tych modeli obiektów, do modyfikowania witryny programu SharePoint lub odbierać dane z witryny programu SharePoint z kontekstu rozszerzenia narzędzi programu SharePoint.
+- *Serwer programu SharePoint i modele obiektów klienta*. Użyj tych modeli obiektów, aby zmodyfikować witrynę programu SharePoint lub pobrać dane z witryny programu SharePoint z kontekstu rozszerzenia narzędzi programu SharePoint.
 
-### <a name="sharepoint-tools-object-model"></a>Model obiektów programu SharePoint narzędzia
- Każdego rozszerzenia narzędzi programu SharePoint używa typów w modelu obiektów programu SharePoint narzędzia do definiowania zachowania podstawowych i funkcji rozszerzenia. W poniższych tabelach opisano przestrzenie nazw, które mają zostać uwzględnione w tym modelu obiektu zestawu, który je zawiera.
+### <a name="sharepoint-tools-object-model"></a>Model obiektów narzędzi SharePoint
+ Każde rozszerzenie narzędzia programu SharePoint używa typów w modelu obiektów narzędzi programu SharePoint do definiowania podstawowego zachowania i funkcjonalności rozszerzenia. W poniższych tabelach opisano przestrzenie nazw, które są uwzględnione w tym modelu obiektów, przez zestaw, który je zawiera.
 
 #### <a name="microsoftvisualstudiosharepointdll"></a>Microsoft.VisualStudio.SharePoint.dll
 
 |Przestrzeń nazw|Opis|
 |-|-|
-|<xref:Microsoft.VisualStudio.SharePoint>|Zawiera typy, które służą do rozszerzania i automatyzacji systemu projektu programu SharePoint. Na przykład można rozszerzyć wbudowane projekty programu SharePoint i elementy projektu, lub możesz utworzyć własne elementy projektu. Aby uzyskać więcej informacji, zobacz [rozszerzanie systemu projektu SharePoint](../sharepoint/extending-the-sharepoint-project-system.md).|
-|<xref:Microsoft.VisualStudio.SharePoint.Deployment>|Zawiera typy, które służą do rozszerzenia procesu wdrażania projektów programu SharePoint, takich jak tworzenie własnych kroki wdrażania i konfiguracji wdrażania. Aby uzyskać więcej informacji, zobacz [pakowaniem i wdrażaniem SharePoint rozszerzyć](../sharepoint/extending-sharepoint-packaging-and-deployment.md).|
-|<xref:Microsoft.VisualStudio.SharePoint.Explorer>|Zawiera typy, które służą do rozszerzenia węzłów w ramach **połączeń SharePoint** w węźle **Eksploratora serwera** oknie lub do definiowania nowych typów węzłów. Aby uzyskać więcej informacji, zobacz [rozszerzanie węzła połączeń SharePoint w Eksploratorze serwera](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).|
-|<xref:Microsoft.VisualStudio.SharePoint.Features>|Zawiera typy, które umożliwiają dostęp do definicji funkcji w projekcie programu SharePoint.|
-|<xref:Microsoft.VisualStudio.SharePoint.Packages>|Zawiera typy, które umożliwiają dostęp do definicji pakietów w rozwiązaniu programu SharePoint.|
-|<xref:Microsoft.VisualStudio.SharePoint.Validation>|Zawiera typy, które służy do dostosowywania funkcji i zachowania poprawności pakietu dla projektów programu SharePoint. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie funkcji niestandardowej oraz pakiet reguł sprawdzania poprawności dla rozwiązań SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).|
+|<xref:Microsoft.VisualStudio.SharePoint>|Zawiera typy, które służą do rozszerania i automatyzowania systemu projektu programu SharePoint. Na przykład można rozbudować wbudowane projekty programu SharePoint i elementy projektu, a także utworzyć własne elementy projektu. Aby uzyskać więcej informacji, zobacz Rozpoznaj [system projektu programu SharePoint](../sharepoint/extending-the-sharepoint-project-system.md).|
+|<xref:Microsoft.VisualStudio.SharePoint.Deployment>|Zawiera typy, które służą do rozbudowania procesu wdrażania dla projektów programu SharePoint, takie jak tworzenie własnych kroków wdrożenia i konfiguracji wdrożenia. Aby uzyskać więcej informacji, zobacz sekcję [rozszerzając pakowanie i wdrażanie programu SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md).|
+|<xref:Microsoft.VisualStudio.SharePoint.Explorer>|Zawiera typy, które służą do rozszerania węzłów w węźle **połączenia SharePoint** w oknie **Eksplorator serwera** lub do definiowania nowych typów węzłów. Aby uzyskać więcej informacji, zobacz sekcję Rozpoznaj [węzeł połączenia SharePoint w Eksplorator serwera](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).|
+|<xref:Microsoft.VisualStudio.SharePoint.Features>|Zawiera typy, które są używane w celu uzyskania dostępu do definicji funkcji w projekcie programu SharePoint.|
+|<xref:Microsoft.VisualStudio.SharePoint.Packages>|Zawiera typy, które są używane w celu uzyskania dostępu do definicji pakietu w rozwiązaniu programu SharePoint.|
+|<xref:Microsoft.VisualStudio.SharePoint.Validation>|Zawiera typy, które służą do dostosowania funkcji i zachowania walidacji pakietu dla projektów programu SharePoint. Aby uzyskać więcej informacji, zobacz [How to: Create Custom Feature and Package Rules for SharePoint Solutions](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).|
 
-#### <a name="microsoftvisualstudiosharepointcommandsdll"></a>Microsoft.VisualStudio.SharePoint.Commands.dll
-
-|Przestrzeń nazw|Opis|
-|-|-|
-|<xref:Microsoft.VisualStudio.SharePoint.Commands>|Zawiera typy, które służą do tworzenia niestandardowych *poleceń programu SharePoint*. Polecenie programu SharePoint jest metodą, która wywołuje w modelu obiektów serwera SharePoint z rozszerzenia narzędzi programu SharePoint. Aby uzyskać więcej informacji, zobacz [wywoływanie modeli obiektów SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).|
-
-#### <a name="microsoftvisualstudiosharepointexplorerextensionsdll"></a>Microsoft.VisualStudio.SharePoint.Explorer.Extensions.dll
+#### <a name="microsoftvisualstudiosharepointcommandsdll"></a>Microsoft. VisualStudio. SharePoint. Commands. dll
 
 |Przestrzeń nazw|Opis|
 |-|-|
-|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions>|Zawiera typy, które można użyć, aby uzyskać informacje o wbudowanych **Eksploratora serwera** węzły, które reprezentują poszczególne składniki w witrynie programu SharePoint, takich jak węzeł, który reprezentuje listę, pole lub typ zawartości. Aby uzyskać więcej informacji, zobacz [rozszerzanie węzła połączeń SharePoint w Eksploratorze serwera](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).|
+|<xref:Microsoft.VisualStudio.SharePoint.Commands>|Zawiera typy, których można użyć do tworzenia niestandardowych *poleceń programu SharePoint*. Polecenie programu SharePoint to metoda, która wywołuje model obiektów programu SharePoint Server z rozszerzenia narzędzi programu SharePoint. Aby uzyskać więcej informacji, zobacz [Wywoływanie modeli obiektów programu SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).|
 
-### <a name="visual-studio-automation-object-model"></a>Model obiektowy automatyzacji w usłudze Visual Studio
- Modelu obiektu automatyzacji programu Visual Studio udostępnia interfejsy API, które można użyć do zautomatyzowania projektów programu Visual Studio i środowiska IDE. Wykonywanie zadań związanych z projektem, które nie są specyficzne dla projektów programu SharePoint lub wykonywać inne zadania automatyzacji ogólnej w programie Visual Studio, należy użyć modelu obiektów programu Visual Studio. Tradycyjnie ten model obiektów jest często używane w dodatkach programu Visual Studio i makra, ale można go także użyć w rozszerzenia narzędzi programu SharePoint.
+#### <a name="microsoftvisualstudiosharepointexplorerextensionsdll"></a>Microsoft. VisualStudio. SharePoint. Explorer. Extensions. dll
 
- Główna część modelu obiektu automatyzacji programu Visual Studio jest zdefiniowany w *EnvDTE.dll* zestawu. *EnvDTE\\\<wersji > .dll* zestawy oferowanie dodatkowych funkcji, która została wprowadzona w określonych wersjach programu Visual Studio. Te zestawy są dołączone do programu Visual Studio.
+|Przestrzeń nazw|Opis|
+|-|-|
+|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions>|Zawiera typy, których można użyć w celu uzyskania informacji na temat wbudowanych węzłów **Eksplorator serwera** , które reprezentują poszczególne składniki w witrynie programu SharePoint, takie jak węzeł, który reprezentuje listę, pole lub typ zawartości. Aby uzyskać więcej informacji, zobacz sekcję Rozpoznaj [węzeł połączenia SharePoint w Eksplorator serwera](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).|
 
- Aby uzyskać więcej informacji na temat modelu obiektu automatyzacji, zobacz [odwołanie do zestawu SDK programu Visual Studio](../extensibility/visual-studio-sdk-reference.md).
+### <a name="visual-studio-automation-object-model"></a>Model obiektów automatyzacji programu Visual Studio
+ Model obiektów automatyzacji programu Visual Studio udostępnia interfejsy API, których można używać do automatyzowania projektów programu Visual Studio i środowiska IDE. Model obiektów programu Visual Studio służy do wykonywania zadań związanych z projektem, które nie są specyficzne dla projektów programu SharePoint, ani do wykonywania innych ogólnych zadań automatyzacji w programie Visual Studio. Tradycyjnie ten model obiektów jest często używany w dodatkach i makrach programu Visual Studio, ale można go również użyć w rozszerzeniach narzędzi programu SharePoint.
 
-### <a name="visual-studio-integration-object-model"></a>Model obiektu integracji programu Visual Studio
- Integracja object model zawiera interfejsy API, które można użyć, aby dodać funkcje do programu Visual Studio, tworząc *pakietu VSPackage*. Pakietu VSPackage jest moduł, który rozszerza środowiska IDE programu Visual Studio, zapewniając niestandardowe funkcje, takie jak okna narzędzi, edytory, projektantów, usług i projektów.
+ Główna część modelu obiektów automatyzacji programu Visual Studio jest definiowana w zestawie *EnvDTE. dll* . Zestawy *EnvDTE\\\<wersja >. dll* oferują dodatkowe funkcje, które zostały wprowadzone w określonych wersjach programu Visual Studio. Te zestawy są dołączone do programu Visual Studio.
 
- Jeśli chcesz dodać nową funkcję programu Visual Studio, która będzie służyć za pomocą wbudowanych narzędzi programu SharePoint, można użyć modelu obiektów integracji. Na przykład jeśli utworzysz niestandardowego elementu projektu programu SharePoint, która reprezentuje akcję niestandardową dla witryny programu SharePoint, można utworzyć również pakietu VSPackage, który implementuje projektanta dla akcji niestandardowej. Projektant można skojarzyć z akcji niestandardowej, przez dodawanie pozycji menu skrótów do elementu projektu, która reprezentuje akcję niestandardową w **Eksploratora rozwiązań**. Można otworzyć projektanta, otwierając jego menu skrótów (klikając prawym przyciskiem myszy niestandardowej akcji elementu projektu lub wybierając je, a następnie wybierając **Shift**+**F10** kluczy), a następnie wybierając **Otwórz**.
+ Aby uzyskać więcej informacji na temat modelu obiektów automatyzacji, zobacz [Dokumentacja zestawu SDK programu Visual Studio](../extensibility/visual-studio-sdk-reference.md).
 
- Ten model obiektu jest zdefiniowana w zbiór zestawów, które są dołączone do zestawu SDK programu Visual Studio. Niektóre główne zestawy w modelu obiektowego *Microsoft.VisualStudio.Shell.11.0.dll*, *Microsoft.VisualStudio.Shell.Interop.dll*, i  *Microsoft.VisualStudio.OLE.Interop.dll*.
+### <a name="visual-studio-integration-object-model"></a>Model obiektów integracji programu Visual Studio
+ Model obiektów integracji udostępnia interfejsy API, których można użyć do dodawania funkcji do programu Visual Studio przez utworzenie *pakietu VSPackage*. Pakietu VSPackage to moduł, który rozszerza środowisko IDE programu Visual Studio, dostarczając niestandardowe funkcje, takie jak okna narzędzi, edytory, projektanci, usługi i projekty.
 
- Aby uzyskać więcej informacji na temat integracji modelu obiektów zobacz [omówienie modelu automatyzacji](../extensibility/internals/automation-model-overview.md) i [odwołanie do zestawu SDK programu Visual Studio](../extensibility/visual-studio-sdk-reference.md).
+ Możesz użyć modelu obiektów integracji, jeśli chcesz dodać nową funkcję programu Visual Studio, która będzie używana z wbudowanymi narzędziami programu SharePoint. Na przykład jeśli utworzysz niestandardowy element projektu programu SharePoint, który reprezentuje akcję niestandardową dla witryny programu SharePoint, możesz również utworzyć pakietu VSPackage, który implementuje projektanta dla akcji niestandardowej. Możesz skojarzyć projektanta z akcją niestandardową, dodając element menu skrótów do elementu projektu, który reprezentuje akcję niestandardową w **Eksplorator rozwiązań**. Możesz otworzyć projektanta, otwierając jego menu skrótów (klikając prawym przyciskiem myszy akcję niestandardową lub wybierając ją, a następnie wybierając **klawisz Shift**+**F10** ), a następnie wybierając pozycję **Otwórz**.
 
-### <a name="sharepoint-object-models"></a>Modeli obiektów SharePoint
- Rozszerzenia narzędzi programu SharePoint można użyć interfejsów API programu SharePoint, do modyfikowania witryny programu SharePoint lub odbierać dane z witryny programu SharePoint. [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] i [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] zapewnia dwa różne modele obiektów: modelu obiektów serwera i modelu obiektów klienta.
+ Ten model obiektów jest zdefiniowany w zestawie zestawów, które są zawarte w zestawie SDK programu Visual Studio. Niektóre główne zestawy w tym modelu obiektów obejmują *Microsoft. VisualStudio. Shell. 11.0. dll*, *Microsoft. VisualStudio. Shell. Interop.* dll i *Microsoft. VisualStudio. OLE. Interop. dll*.
 
- W modelu obiektu, albo w rozszerzenia narzędzi programu SharePoint mogą używać interfejsów API, ale każdy model obiektu ma niektóre zalety i wady w kontekście rozszerzenia narzędzi programu SharePoint. Aby uzyskać więcej informacji, zobacz [wywoływanie modeli obiektów SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
+ Aby uzyskać więcej informacji na temat modelu obiektów integracji, zobacz [Omówienie modelu automatyzacji](../extensibility/internals/automation-model-overview.md) i [Informacje o zestawie SDK programu Visual Studio](../extensibility/visual-studio-sdk-reference.md).
+
+### <a name="sharepoint-object-models"></a>Modele obiektów programu SharePoint
+ Rozszerzenia narzędzi SharePoint mogą używać interfejsów API programu SharePoint do modyfikowania witryny programu SharePoint lub pobierania danych z witryny programu SharePoint. [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] i [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] zapewniają dwa różne modele obiektów: model obiektów serwera i model obiektów klienta.
+
+ Można używać interfejsów API w obu modelach obiektów w rozszerzeniu narzędzi programu SharePoint, ale każdy model obiektów ma pewne korzyści i wady w kontekście rozszerzeń narzędzi programu SharePoint. Aby uzyskać więcej informacji, zobacz [Wywoływanie modeli obiektów programu SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
 
 |Model obiektów|Opis|
 |------------------|-----------------|
-|Model obiektu serwera|W modelu obiektów serwera zapewnia dostęp do wszystkich funkcji [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] i [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] ujawnić programowo. Ten model obiektów jest przeznaczony do użycia przez rozwiązania programu SharePoint, które są uruchamiane na serwerze programu SharePoint. Większość tego modelu obiektu jest zdefiniowana w *Microsoft.SharePoint.dll* zestawu. Aby uzyskać więcej informacji na temat modelu obiektów serwera, zobacz [za pomocą modelu obiektów programu SharePoint Foundation po stronie serwera](http://go.microsoft.com/fwlink/?LinkId=177796).|
-|Model obiektu klienta|Model obiektu klienta jest podzbiorem modelu obiektów serwera, który może służyć do współdziałania z danymi programu SharePoint z klientem zdalnym lub serwera. Zaprojektowano go w celu zminimalizowania liczby rund, które muszą być wykonane w celu wykonywania typowych zadań. Większość client object model jest zdefiniowana w *Microsoft.SharePoint.Client.dll* i *Microsoft.SharePoint.Client.Runtime.dll* zestawów. Aby uzyskać więcej informacji na temat modelu obiektów klienta, zobacz [zarządzane Client Object Model](http://go.microsoft.com/fwlink/?LinkId=177797).|
+|Model obiektów serwera|Model obiektów serwera zapewnia dostęp do wszystkich funkcji, które [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] i [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] uwidaczniać programowo. Ten model obiektów jest przeznaczony do użycia przez rozwiązania programu SharePoint, które działają na serwerze programu SharePoint. Większość tego modelu obiektów jest definiowana w zestawie *Microsoft. SharePoint. dll* . Aby uzyskać więcej informacji na temat modelu obiektów serwera, zobacz [Korzystanie z modelu obiektów po stronie serwera programu SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ee538251(v=office.14)).|
+|Model obiektów klienta|Model obiektów klienta jest podzbiorem modelu obiektów serwera, który może służyć do współdziałania z danymi programu SharePoint ze zdalnego klienta lub serwera. Zaprojektowano w celu zminimalizowania liczby rejsów, które muszą zostać wykonane w celu wykonywania typowych zadań. Większość modelu obiektów klienta jest definiowana w zestawach *Microsoft. SharePoint. Client. dll* i *Microsoft. SharePoint. Client. Runtime. dll* . Aby uzyskać więcej informacji na temat modelu obiektów klienta, zobacz [model obiektów klienta zarządzanego](/previous-versions/office/developer/sharepoint-2010/ee537247(v=office.14)).|
 
 ## <a name="see-also"></a>Zobacz także
-- [Rozszerzanie narzędzi SharePoint w programie Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
-- [Wywoływanie modeli obiektów SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)
+- [Poszerzanie narzędzi programu SharePoint w programie Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
+- [Wywoływanie modeli obiektów programu SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)
 - [Korzystanie z usługi projektu SharePoint](../sharepoint/using-the-sharepoint-project-service.md)

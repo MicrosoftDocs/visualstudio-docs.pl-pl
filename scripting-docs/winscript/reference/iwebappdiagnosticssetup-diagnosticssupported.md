@@ -1,5 +1,5 @@
 ---
-title: IWebAppDiagnosticsSetup::DiagnosticsSupported | Dokumentacja firmy Microsoft
+title: IWebAppDiagnosticsSetup::D iagnosticsSupported | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,18 +13,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1d4214dea16c1e8a96ece7428f9ea73640025a9c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: dd27e7c8759054fa2d7d67858d8d006fa9c9a152
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443673"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984582"
 ---
 # <a name="iwebappdiagnosticssetupdiagnosticssupported"></a>IWebAppDiagnosticsSetup::DiagnosticsSupported
-Określa, czy diagnostyki są obsługiwane w tej aplikacji. Jeśli [setsite —](http://go.microsoft.com/fwlink/?LinkId=232439) została wywołana na obiekt implementujący ten interfejs o wartości innej niż NULL, [DiagnosticsSupported](../../winscript/reference/iwebappdiagnosticssetup-diagnosticssupported.md) zwraca `true`. Jeśli nie, zwraca `false` i wywołania [IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md) się nie powieść.  
+Określa, czy Diagnostyka jest obsługiwana w tej aplikacji. Jeśli funkcja [SetSite](/windows/win32/api/ocidl/nf-ocidl-iobjectwithsite-setsite) została wywołana w obiekcie implementującym ten interfejs o wartości innej niż null, [DiagnosticsSupported](../../winscript/reference/iwebappdiagnosticssetup-diagnosticssupported.md) zwraca `true`. Jeśli nie, zwraca `false` i wywołuje wywołania [IWebAppDiagnosticsSetup:: CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md) .  
   
 > [!IMPORTANT]
-> [Interfejs IWebAppDiagnosticsSetup](../../winscript/reference/iwebappdiagnosticssetup-interface.md) jest implementowany przez program PDM w wersji 11.0 i nowszych. Znaleziono w activdbg100.  
+> [Interfejs IWebAppDiagnosticsSetup](../../winscript/reference/iwebappdiagnosticssetup-interface.md) jest implementowany przez PDM v 11.0 i nowsze. Znaleziono w activdbg100.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -34,4 +34,4 @@ HRESULT DiagnosticsSupported(        [out, retval] VARIANT_BOOL* pRetVal        
   
 #### <a name="parameters"></a>Parametry  
  `pRetVal`  
- Jeśli [setsite —](http://go.microsoft.com/fwlink/?LinkId=232439) została wywołana na obiekt implementujący ten interfejs o wartości innej niż NULL, [DiagnosticsSupported](../../winscript/reference/iwebappdiagnosticssetup-diagnosticssupported.md) zwraca `true`. Jeśli nie, zwraca `false`i zwraca [IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md) się nie powieść.
+ Jeśli funkcja [SetSite](/windows/win32/api/ocidl/nf-ocidl-iobjectwithsite-setsite) została wywołana w obiekcie implementującym ten interfejs o wartości innej niż null, [DiagnosticsSupported](../../winscript/reference/iwebappdiagnosticssetup-diagnosticssupported.md) zwraca `true`. Jeśli nie, zwraca `false`i wywołania do [IWebAppDiagnosticsSetup:: CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md) kończą się niepowodzeniem.

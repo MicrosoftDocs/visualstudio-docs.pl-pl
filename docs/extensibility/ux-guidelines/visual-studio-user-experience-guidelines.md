@@ -8,19 +8,19 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f01ddcd75aa02a9444f014898efd114ebdcd59d6
-ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
+ms.openlocfilehash: 28cf2f0542cc76e5045dbf0780e9899983084760
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68315123"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72982393"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Wskazówki dotyczące interfejsu użytkownika w programie Visual Studio
 Postępuj zgodnie z instrukcjami dotyczącymi środowiska użytkownika programu Visual Studio, jeśli projektujesz nowe funkcje programu Visual Studio. Te wytyczne zawierają informacje o typowych modelach użytkowników i wzorcach interakcji, dzięki którym projektanci nowych interfejsów użytkownika mogą tworzyć środowiska użytkownika, które są bezproblemowe i spójne w środowisku programistycznym.
 
 Jeśli tworzysz oprogramowanie dla produktów firmy Microsoft, Dowiedz się, jak korzystać z tych zasobów:
 
-- [Wskazówki dotyczące interakcji użytkownika systemu Windows](https://docs.microsoft.com/windows/win32/uxguide/guidelines) to podstawy zachowania i wyglądu pulpitu systemu Windows.
+- [Wskazówki dotyczące interakcji użytkownika systemu Windows](/windows/win32/uxguide/guidelines) to podstawy zachowania i wyglądu pulpitu systemu Windows.
 
 - Te wskazówki dotyczące programu Visual Studio, które są wskazówkami specyficznymi dla platformy, które zastępują ogólne wytyczne systemu Windows, tam gdzie jest to odpowiednie dla środowiska.
 

@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Korzystanie z pliku zasobu do określania zlokalizowanych nazw, właściwości oraz uprawnień | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: korzystanie z pliku zasobu do określania zlokalizowanych nazw, właściwości i uprawnień | Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,37 +19,37 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2be88a29d3e9e3da9d1963aa1226ffca0a0a2bbd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fa2fec260921d66328b2c16075d44b38686c08de
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62813052"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72982556"
 ---
-# <a name="how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions"></a>Instrukcje: Korzystanie z pliku zasobu do określania zlokalizowanych nazw, właściwości oraz uprawnień
-  Za pomocą pliku zasobów, można podać zlokalizowanych nazw, zdefiniuj właściwości i stosować uprawnienia tor obiekty, które są zdefiniowane w modelu łączności danych biznesowych (BDC). Aby podać te informacje, należy dodać **zasobu łączności danych biznesowych** elementu do projektu, który zawiera **Model usługi łączności danych biznesowych** elementu. Następnie można określić nazwy, właściwości i uprawnienia, edytując XML pliku zasobu.
+# <a name="how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions"></a>Instrukcje: korzystanie z pliku zasobu do określania zlokalizowanych nazw, właściwości i uprawnień
+  Za pomocą pliku zasobów można zapewnić zlokalizowane nazwy, definiować właściwości i stosować uprawnienia tor, które są zdefiniowane w modelu łączności danych biznesowych (BDC). Aby określić te informacje, należy dodać element **zasobu łączności danych firmowych** do projektu, który zawiera element **modelu łączności danych firmowych** . Następnie należy określić nazwy, właściwości i uprawnienia, edytując kod XML dla pliku zasobu.
 
-### <a name="to-add-a-bdc-resource-file-to-a-sharepoint-project"></a>Aby dodać plik zasobu usługi łączności danych biznesowych do projektu programu SharePoint
+### <a name="to-add-a-bdc-resource-file-to-a-sharepoint-project"></a>Aby dodać plik zasobów usługi BDC do projektu programu SharePoint
 
-1. W **Eksploratora rozwiązań**, rozwiń folder dla projektu programu SharePoint, a następnie wybierz folder, który zawiera model usługi łączności danych biznesowych.
+1. W **Eksplorator rozwiązań**rozwiń folder dla projektu programu SharePoint, a następnie wybierz folder, który zawiera model usługi BDC.
 
-2. Na pasku menu wybierz **projektu** > **Dodaj nowy element**.
+2. Na pasku menu wybierz **projekt**  > **Dodaj nowy element**.
 
-3. Rozwiń **SharePoint** węzła, a następnie wybierz **2010** węzła.
+3. Rozwiń węzeł **SharePoint** , a następnie wybierz węzeł **2010** .
 
-4. W **Dodaj nowy element** okna dialogowego wybierz **element zasobu usługi łączności danych biznesowych**.
+4. W oknie dialogowym **Dodaj nowy element** wybierz **element zasób łączności danych firmowych**.
 
-5. W **nazwa** , określ nazwę pliku zasobów, a następnie wybierz **Dodaj** przycisku.
+5. W polu **Nazwa** Określ nazwę pliku zasobów, a następnie wybierz przycisk **Dodaj** .
 
-     Plik zasobów, który ma rozszerzenie .bdcr jest dodawany do projektu i otworzyć do edycji.
+     Plik zasobów, który ma rozszerzenie. BCDR, jest dodawany do projektu i otwarty do edycji.
 
-6. Dodaj kod XML do definiowania zlokalizowanych nazw, właściwości i uprawnienia, które chcesz zastosować modelu usługi BDC.
+6. Dodaj plik XML, aby zdefiniować zlokalizowane nazwy, właściwości i uprawnienia, które mają zostać zastosowane w modelu usługi BDC.
 
-     Aby dowiedzieć się, jak zdefiniować te elementy, zobacz [modelu i pliki zasobów](http://go.microsoft.com/fwlink/?LinkID=169283).
+     Aby uzyskać informacje na temat sposobu definiowania tych elementów, zobacz [model i pliki zasobów](/previous-versions/office/developer/sharepoint-2010/aa674515(v=office.14)).
 
 ## <a name="see-also"></a>Zobacz także
-- [Instrukcje: Dodawanie istniejącego modelu BDC do projektu programu SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)
-- [Tworzenie modelu łączności danych biznesowych](../sharepoint/creating-a-business-data-connectivity-model.md)
-- [Instrukcje: Tworzenie modelu BDC](../sharepoint/how-to-create-a-bdc-model.md)
-- [Instrukcje: Dołączanie niestandardowego zestawu w funkcji BDC](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)
-- [Integrowanie danych biznesowych programu SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)
+- [Instrukcje: Dodawanie istniejącego pliku modelu BDC do projektu programu SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)
+- [Tworzenie modelu łączności danych firmy](../sharepoint/creating-a-business-data-connectivity-model.md)
+- [Instrukcje: Tworzenie modelu usługi BDC](../sharepoint/how-to-create-a-bdc-model.md)
+- [Instrukcje: uwzględnianie niestandardowego zestawu w funkcji BDC](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)
+- [Integrowanie danych firmowych z programem SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)

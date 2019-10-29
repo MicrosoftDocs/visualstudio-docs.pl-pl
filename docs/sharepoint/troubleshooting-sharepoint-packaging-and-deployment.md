@@ -1,5 +1,5 @@
 ---
-title: Rozwiązywanie problemów z pakowaniem i wdrażaniem SharePoint | Dokumentacja firmy Microsoft
+title: Rozwiązywanie problemów z pakietami i wdrażaniem programu SharePoint | Microsoft Docs
 ms.date: 02/22/2017
 ms.topic: conceptual
 f1_keywords:
@@ -23,49 +23,49 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0c949f9a5d8c56f44e0754715d056b4d3837f76a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7eafac8015b7a2c51279b7a2d664f0e094d2397b
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63008400"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72981936"
 ---
-# <a name="troubleshoot-sharepoint-packaging-and-deployment"></a>Rozwiązywanie problemów z pakowaniem i wdrażaniem SharePoint
+# <a name="troubleshoot-sharepoint-packaging-and-deployment"></a>Rozwiązywanie problemów z pakietami i wdrażaniem programu SharePoint
   W tym temacie omówiono różne problemy, które mogą wystąpić podczas pakowania i wdrażania rozwiązań programu SharePoint.
 
-## <a name="enable-enhanced-debugging"></a>Włączanie ulepszonego debugowania
- Aby zdiagnozować między Visual Studio, SharePoint i innymi warstwami, klucza rejestru EnableDiagnostics służy do wyświetlania śladu stosu. Aby uzyskać więcej informacji, zobacz [rozwiązań SharePoint debugowania](../sharepoint/debugging-sharepoint-solutions.md).
+## <a name="enable-enhanced-debugging"></a>Włącz ulepszone debugowanie
+ Aby zdiagnozować między programem Visual Studio, SharePoint i innymi warstwami, można użyć klucza rejestru EnableDiagnostics do wyświetlania śladu stosu. Aby uzyskać więcej informacji, zobacz [Debugowanie rozwiązań programu SharePoint](../sharepoint/debugging-sharepoint-solutions.md).
 
-## <a name="add-project-output-to-the-solution-package"></a>Dodaj dane wyjściowe projektu do pakietu rozwiązań
- Dane wyjściowe projektu można dodać do pakietu przy użyciu projektanta pakietów. Jednak podczas dodawania danych wyjściowych projektu upewnij się, że platforma projektu odpowiada platformie rozwiązania SharePoint. Firma Microsoft zaleca użycie **dowolny Procesor** platformy docelowej dla zespołów, które mają zostać wdrożone na serwerze programu SharePoint. Aby uzyskać więcej informacji, zobacz [strona kompilowania, Projektant projektu &#40;języka Visual Basic&#41; ](../ide/reference/compile-page-project-designer-visual-basic.md) i [okno dialogowe Zaawansowane ustawienia kompilatora &#40;języka Visual Basic&#41;](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md).
+## <a name="add-project-output-to-the-solution-package"></a>Dodawanie danych wyjściowych projektu do pakietu rozwiązania
+ Dane wyjściowe projektu można dodać do pakietu za pomocą projektanta pakietów. Jednak podczas dodawania danych wyjściowych projektu upewnij się, że platforma projektu jest zgodna z platformą rozwiązania SharePoint. Zalecamy używanie dowolnego celu platformy **procesora CPU** dla zestawów, które mają zostać wdrożone na serwerze programu SharePoint. Aby uzyskać więcej informacji, zobacz okno dialogowe [Kompilowanie &#40;strony&#41; , Projektant projektu Visual Basic](../ide/reference/compile-page-project-designer-visual-basic.md) i [Zaawansowane &#40;ustawienia&#41;kompilatora Visual Basic](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md).
 
-## <a name="validation-warnings-and-errors"></a>Walidacja ostrzeżeń i błędów
- Narzędzia projektowania programu SharePoint w programie Visual Studio wykonują czynności sprawdzania poprawności, aby sprawdzić, czy pakiet rozwiązania jest poprawnie uformowany. Można również utworzyć niestandardowe kroki sprawdzania poprawności dla pakietów i funkcji. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie funkcji niestandardowej oraz pakiet reguł sprawdzania poprawności dla rozwiązań SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).
+## <a name="validation-warnings-and-errors"></a>Ostrzeżenia i błędy walidacji
+ Narzędzia deweloperskie programu SharePoint w programie Visual Studio wykonują kroki weryfikacji, aby sprawdzić, czy pakiet rozwiązania został poprawnie sformatowany. Możesz również utworzyć niestandardowe kroki walidacji dla swoich funkcji i pakietów. Aby uzyskać więcej informacji, zobacz [How to: Create Custom Feature and Package Rules for SharePoint Solutions](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).
 
-## <a name="deployment-conflict-resolution"></a>Rozwiązywanie konfliktów wdrażania
- Podczas wdrażania rozwiązania programu SharePoint, może wystąpić kolizja, gdy element na serwerze ma nazwę, adres URL lub identyfikator co element z pakietu rozwiązania. Możesz zmienić **Rozwiązywanie konfliktów wdrażania** właściwość, aby rozwiązać, zaraportować lub zignorować kolizje dla modułów, części sieci Web, przejrzenia listy wystąpień i typów zawartości.
+## <a name="deployment-conflict-resolution"></a>Rozwiązywanie konfliktów wdrożenia
+ Po wdrożeniu rozwiązania programu SharePoint może wystąpić konflikty, gdy element na serwerze ma taką samą nazwę, adres URL lub identyfikator co element w pakiecie rozwiązania. Można zmienić właściwość **rozwiązywania konfliktów wdrażania** , aby rozwiązać, zgłosić lub zignorować kolizje dla modułów, składników Web Part, wystąpień list i typów zawartości.
 
- Poniższa tabela przedstawia ustawienia dla **Rozwiązywanie konfliktów wdrażania** właściwości.
+ W poniższej tabeli przedstawiono ustawienia właściwości **Rozwiązywanie konfliktów wdrażania** .
 
 |Wartość|Opis|
 |-----------|-----------------|
 |Automatyczne|Wykrywa kolizje i automatycznie rozwiązuje konflikty.|
-|wiersz|Wykrywa kolizje i raportuje je do dewelopera przed rozwiązaniem konfliktów.|
+|pytać|Wykrywa kolizje i przekazuje je deweloperom przed rozpuszczeniem konfliktów.|
 |Brak|Nie wykrywa kolizji.|
 
 ## <a name="differences-between-f5-deployment"></a>Różnice między wdrożeniem F5
- Kiedy używasz [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] do wdrożenia projektu programu SharePoint do lokalnego serwera programu SharePoint do testowania i debugowania, istnieją pewne dodatkowe kroki są wykonywane przez [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+ W przypadku użycia [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] do wdrożenia projektu programu SharePoint na lokalnym serwerze programu SharePoint do testowania i debugowania należy wykonać kilka dodatkowych kroków, które są wykonywane przez [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-1. Resetuj Internet Information Service (IIS) podczas wykonywania kroku wdrażania.
+1. Zresetuj Internet Information Service (IIS) podczas kroku wdrożenia.
 
-2. Automatycznie kojarzy przepływy pracy.
+2. Automatycznie Skojarz przepływy pracy.
 
-3. Ustaw kolejność aktywacji funkcji zgodnie z hierarchią w Projektancie pakietu.
+3. Ustaw kolejność aktywacji funkcji zgodnie z hierarchią w projektancie pakietów.
 
-   Możesz dodać kroki wdrażania niestandardowego do dalszych zmian **F5** zachowanie. Aby uzyskać więcej informacji, zobacz [instruktażu: Tworzenie niestandardowego kroku wdrożenia dla projektów programu SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).
+   Możesz dodać niestandardowe kroki wdrażania, aby zmienić zachowanie **F5** . Aby uzyskać więcej informacji, zobacz [Przewodnik: Tworzenie niestandardowego kroku wdrożenia dla projektów programu SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).
 
-## <a name="delay-displaying-sharepoint-page-when-deploy-visual-web-part"></a>Opóźnienie wyświetlania strony programu SharePoint podczas wdrażania wizualnego składnika web part
- Strony programu SharePoint wymaga dużo czasu, pojawiają się podczas wdrażania wizualnego składnika Web part do folderu Bin na [!INCLUDE[wiprlhext](../sharepoint/includes/wiprlhext-md.md)], [!INCLUDE[win7](../sharepoint/includes/win7-md.md)], lub [!INCLUDE[winsvr08](../sharepoint/includes/winsvr08-md.md)]. Jeśli zmienisz wszystkie pliki w najwyższego poziomu [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] następuje rekompilacja całej aplikacji sieci Web w katalogu, takiego jak katalog Bin. Może to spowodować opóźnienie maksymalnie 25 sekund dla strony programu SharePoint do renderowania.
+## <a name="delay-displaying-sharepoint-page-when-deploy-visual-web-part"></a>Opóźnienie wyświetlania strony programu SharePoint podczas wdrażania wizualnego składnika Web Part
+ Podczas wdrażania wizualnego składnika Web Part do folderu bin na [!INCLUDE[wiprlhext](../sharepoint/includes/wiprlhext-md.md)], [!INCLUDE[win7](../sharepoint/includes/win7-md.md)]lub [!INCLUDE[winsvr08](../sharepoint/includes/winsvr08-md.md)]trwa długi czas wyświetlania strony programu SharePoint. W przypadku zmiany plików w katalogu [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] najwyższego poziomu, takich jak katalog bin, cała aplikacja sieci Web zostanie ponownie skompilowana. Może to spowodować opóźnienie do 25 sekund, aby można było renderować stronę programu SharePoint.
 
 ### <a name="error-message"></a>Komunikat o błędzie
  Brak.
@@ -73,42 +73,42 @@ ms.locfileid: "63008400"
 ### <a name="resolution"></a>Rozwiązanie
  Aby obejść ten problem, wykonaj następujące czynności:
 
-1. Zainstaluj aktualizację KB967535, zgodnie z opisem w artykule firmy Microsoft Support [NAPRAW: Poprawka jest dostępna rozwiązać dwa problemy w programie ASP.NET przez usługi IIS 7.0, Windows Vista i Windows Server 2008](http://go.microsoft.com/fwlink/?LinkId=179055).
+1. Zainstaluj aktualizację KB967535, zgodnie z opisem w artykule Naprawa artykułu pomoc techniczna firmy Microsoft [: poprawka jest dostępna do rozwiązywania dwóch problemów w programie ASP.NET w usługach IIS 7,0 dla systemów Windows Vista i Windows Server 2008](https://support.microsoft.com/help/967535).
 
-2. Dodaj następujący wiersz do pliku Web.config:
+2. Dodaj następujący wiersz do pliku Web. config:
 
     ```xml
     <compilation batch="false" optimizeCompilations="true">
     ```
 
-## <a name="sharepoint-project-deployment-fails-with-error-failed-to-extract-the-cab-file-in-the-solution"></a>Wdrażanie projektu programu SharePoint kończy się niepowodzeniem z powodu błędu "Nie można wyodrębnić pliku cab w rozwiązaniu"
- Jeśli nazwa dowolnego elementu projektu programu SharePoint zawiera nawiasy, rozwiązania kończy się niepowodzeniem wdrożenia z powodu błędu.
+## <a name="sharepoint-project-deployment-fails-with-error-failed-to-extract-the-cab-file-in-the-solution"></a>Wdrożenie projektu programu SharePoint kończy się niepowodzeniem z powodu błędu "nie można wyodrębnić pliku cab w rozwiązaniu"
+ Jeśli nazwa dowolnego elementu projektu programu SharePoint zawiera nawiasy, jego rozwiązanie kończy się niepowodzeniem po wystąpieniu błędu.
 
 ### <a name="error-message"></a>Komunikat o błędzie
- Wystąpił błąd podczas kroku wdrażania "Dodaj rozwiązanie": Nie można wyodrębnić pliku cab w rozwiązaniu.
+ Wystąpił błąd w kroku wdrożenia "Dodaj rozwiązanie": nie można wyodrębnić pliku cab w rozwiązaniu.
 
 ### <a name="resolution"></a>Rozwiązanie
- Aby obejść ten problem, należy usunąć wszelkie nawiasy w nazwach elementów projektu programu SharePoint.
+ Aby obejść ten problem, Usuń wszystkie nawiasy w nazwach elementów projektu programu SharePoint.
 
-## <a name="error-appears-when-deploying-a-visual-web-part-to-a-site-on-a-different-web-application"></a>Błąd pojawia się podczas wdrażania wizualnego składnika web part do witryny innej aplikacji sieci web
- Przy pierwszym wdrożeniu wizualny składnik Web part do witryny aplikacji sieci Web innej niż ta, na którym jest aktualnie wdrożony (przez zmianę właściwości SiteUrl wizualnego składnika Web part), wystąpi błąd.
+## <a name="error-appears-when-deploying-a-visual-web-part-to-a-site-on-a-different-web-application"></a>Błąd pojawia się podczas wdrażania wizualnego składnika Web Part do witryny w innej aplikacji sieci Web
+ Przy pierwszym wdrożeniu wizualnego składnika Web Part do witryny w aplikacji sieci Web innej niż ta, na której jest aktualnie wdrożona (poprzez zmianę właściwości SiteUrl w składniku Web Part), pojawia się błąd.
 
 ### <a name="error-message"></a>Komunikat o błędzie
- Wystąpił błąd podczas kroku wdrażania "Dodaj rozwiązanie": Funkcja o identyfikatorze [#] został już zainstalowany w tej farmie. Użyj atrybutu force, aby jawnie ponownie zainstalować tę funkcję.
+ Wystąpił błąd w kroku wdrożenia "Dodaj rozwiązanie": funkcja o IDENTYFIKATORze [#] została już zainstalowana w tej farmie. Użyj atrybutu Force, aby jawnie ponownie zainstalować funkcję.
 
 ### <a name="resolution"></a>Rozwiązanie
- Ten błąd występuje ze względu na sposób, w jaki funkcje programu visual Web part jest wycofana w programie SharePoint. Aby pomyślnie wdrożyć wizualny składnik Web part, należy ponownie wdrożyć rozwiązanie, wybierając **F5** klucza.
+ Ten błąd występuje ze względu na sposób wycofywania funkcji wizualnego składnika Web Part w programie SharePoint. Aby pomyślnie wdrożyć wizualny składnik Web Part, wdróż rozwiązanie ponownie, wybierając klawisz **F5** .
 
 ## <a name="warning-appears-when-deploying-nested-user-controls"></a>Ostrzeżenie pojawia się podczas wdrażania zagnieżdżonych formantów użytkownika
- Ostrzeżenie to pojawia się podczas wdrażania rozwiązania programu SharePoint, które ma zagnieżdżone formanty użytkownika, takie jak wizualny składnik Web part, który zawiera formant użytkownika lub formant użytkownika, który zawiera wizualny składnik Web part lub inny formant użytkownika. Ostrzeżenie to pojawia się, czy dodajesz formant do projektanta, przeciągając go z przybornika lub przy użyciu @Register dyrektywy w widoku źródła.
+ To ostrzeżenie występuje, gdy wdrażasz rozwiązanie SharePoint z zagnieżdżonymi kontrolkami użytkownika, takimi jak wizualny składnik Web Part, który zawiera kontrolkę użytkownika lub kontrolkę użytkownika, która zawiera wizualny składnik Web Part lub inną kontrolkę użytkownika. To ostrzeżenie występuje niezależnie od tego, czy dodajesz formant do projektanta, przeciągając go z przybornika, czy za pomocą dyrektywy @Register w widoku źródło.
 
 ### <a name="error-message"></a>Komunikat o błędzie
- Ostrzeżenie 1 Element ' [*nazwa kontrolki*] "nie jest znanym elementem. Może to wystąpić, jeśli wystąpi błąd kompilacji w witrynie sieci Web, lub brakuje pliku web.config.
+ Ostrzeżenie 1 element ' [*Nazwa formantu*] ' nie jest znanym elementem. Taka sytuacja może wystąpić, jeśli wystąpi błąd kompilacji w witrynie sieci Web lub brakuje pliku Web. config.
 
 ### <a name="resolution"></a>Rozwiązanie
- Jeśli [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] system projektu nie ma informacji o zagnieżdżonego formantu użytkownika, nie może dostarczyć IntelliSense i emituje ostrzeżenie. System projektu nie rozpoznaje zagnieżdżonego formantu użytkownika jeśli projekt jest kompilowany, a projektant nie jest zamknięty i ponownie otwarty lub wycofać automatycznie opcja jest włączona, co powoduje, że formant użytkownika ma zostać wycofany z gałęzi programu SharePoint po debugowaniu.
+ Jeśli system projektu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nie rozpoznaje zagnieżdżonej kontrolki użytkownika, nie może dostarczyć funkcji IntelliSense i emituje ostrzeżenie. System projektu jest nieświadomy zagnieżdżonej kontrolki użytkownika, jeśli projekt nie został skompilowany i projektant nie zostanie zamknięty i ponownie otwarty, lub jeśli włączono opcję autowycofywania, co powoduje, że kontrolka użytkownika zostanie wycofana z gałęzi programu SharePoint po debugowaniu.
 
- Aby usunąć to ostrzeżenie, skompiluj projekt i następnie zamknij i ponownie otwórz projektanta lub wyłącz automatyczne wycofanie opcji dla projektu. Aby to zrobić, należy wyczyścić **automatycznie Wycofaj po debugowaniu** pole wyboru na **SharePoint** karty w oknie dialogowym właściwości projektu.
+ Aby usunąć to ostrzeżenie, Skompiluj projekt, a następnie zamknij i ponownie otwórz projektanta lub wyłącz opcję autowycofywania dla projektu. W tym celu wyczyść pole wyboru **autowycofywanie po debugowaniu** na karcie **SharePoint** w oknie dialogowym właściwości projektu.
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -17,12 +17,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 457b2ad1bda3226caf3604e3ccd6b976f01bca83
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: b8b9ad4677d580d495c72866be57712476d6a9c7
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72576212"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985323"
 ---
 # <a name="iactivescriptauthorgetinfofromcontext"></a>IActiveScriptAuthor::GetInfoFromContext
 Zwraca informacje o typie i położenia zakotwiczenia dla danego znaku w bloku kodu. Zawiera informacje na temat elementów członkowskich IntelliSense, list globalnych i porad dotyczących parametrów.  
@@ -94,7 +94,7 @@ HRESULT GetInfoFromContext(
  Informacje o typie, które są dostępne w formie obiektu `IProvideMultipleClassInfo`.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- @No__t_0. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -103,5 +103,5 @@ HRESULT GetInfoFromContext(
 ## <a name="remarks"></a>Uwagi  
   
 ## <a name="see-also"></a>Zobacz także  
- [IProvideMultipleClassInfo   interfejsu](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.ole.interop.iprovidemultipleclassinfo)  
+ [IProvideMultipleClassInfo   interfejsu](/dotnet/api/microsoft.visualstudio.ole.interop.iprovidemultipleclassinfo)  
  [IActiveScriptAuthor, interfejs](../../winscript/reference/iactivescriptauthor-interface.md)

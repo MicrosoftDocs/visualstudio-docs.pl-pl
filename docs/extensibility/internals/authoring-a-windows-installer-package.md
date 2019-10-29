@@ -1,5 +1,5 @@
 ---
-title: Tworzenie pakietu Instalatora Windows | Dokumentacja firmy Microsoft
+title: Tworzenie pakietu Instalator Windows | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,43 +11,43 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: da68fa0a6c115a09ba2050f8c84ea6700ee4fc76
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: aa967b5f23ff9f4e5afa67b9b1cb4e83707616c6
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315789"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72982233"
 ---
-# <a name="author-a-windows-installer-package"></a>Tworzenie pakietu Instalatora Windows
-Danych zależy od modelu Instalatora Windows. Zamiast pisania procedurach skryptu, aby skopiować pliki i Zapisz wpisy rejestru, na przykład, możesz tworzyć wierszy i kolumn w tabelach bazy danych, które zawierają dane plików i rejestru.
+# <a name="author-a-windows-installer-package"></a>Tworzenie pakietu Instalator Windows
+Dane są dyskami Instalator Windows modelem. Zamiast pisać skrypt proceduralny do kopiowania plików i zapisywania wpisów rejestru, na przykład w tabelach bazy danych można tworzyć wiersze i kolumny zawierające dane plików i rejestru.
 
-## <a name="database-entries"></a>Wpisy w bazie danych
-Do zainstalowania pakietu VSPackage, to pakiet Instalatora Windows musi zawierać wpisy w bazie danych można wykonywać następujące zadania:
+## <a name="database-entries"></a>Wpisy bazy danych
+Aby zainstalować pakietu VSPackage, pakiet Instalator Windows musi zawierać wpisy bazy danych, aby wykonać następujące zadania:
 
-- Wyszukaj systemu, aby zlokalizować wersje [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Twojego pakietu VSPackage obsługuje (przy użyciu tabel Instalatora Windows, które zawierają AppSearch powoduje niepoprawne obcięcie CompLocator, RegLocator, DrLocator i podpis).
+- Przeszukaj system, aby zlokalizować wersje [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] obsługiwane przez pakietu VSPackage (przy użyciu tabel Instalator Windows, które zawierają AppSearch, CompLocator, RegLocator, DrLocator i Signature).
 
-- Anuluj instalację, jeśli nie obsługiwaną wersję [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] jest zainstalowany lub jeśli wymagania systemu innego pakietu VSPackage nie jest spełniony (przy użyciu tabeli LaunchCondition).
+- Anuluj instalację, jeśli nie jest zainstalowana żadna obsługiwana wersja programu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] lub jeśli nie jest spełnione inne wymaganie systemowe pakietu VSPackage (za pomocą tabeli LaunchCondition).
 
-- Instalowanie pakietu VSPackage i pliki zależne (przy użyciu katalogu, składników i tabele plików).
+- Zainstaluj pliki pakietu VSPackage i zależne (przy użyciu katalogu, składnika i tabel plików).
 
-- Dodaj odpowiednie informacje dotyczące pakietu VSPackage (przy użyciu tabeli w rejestrze).
+- Dodaj odpowiednie informacje dotyczące pakietu VSPackage do rejestru (przy użyciu tabeli rejestru).
 
-- Integrowanie pakietu VSPackage w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] przez wywołanie metody **/Setup devenv.exe** (przy użyciu tabeli Akcja niestandardowa).
+- Zintegruj pakietu VSPackage w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], wywołując **devenv. exe/setup** (za pomocą tabeli GetProcAddress).
 
-Aby uzyskać więcej informacji, zobacz [Instalatora Windows](/windows/desktop/Msi/windows-installer-portal).
+Aby uzyskać więcej informacji, zobacz [Instalator Windows](/windows/desktop/Msi/windows-installer-portal).
 
-## <a name="setup-tools"></a>Konfigurowanie narzędzia
-Szeroką gamą narzędzi innych firm Instalatora zapewniają środowisko projektowe dla pakietów Instalatora Windows. Dostępne są następujące narzędzia wolne:
+## <a name="setup-tools"></a>Narzędzia Instalatora
+Różne narzędzia Instalatora innych firm zapewniają środowisko programistyczne dla pakietów Instalator Windows. Dostępne są następujące bezpłatne narzędzia:
 
-- Programu InstallShield limited edition
+- InstallShield Limited Edition
 
-   Ograniczona wersja programu InstallShield można uzyskać za pomocą programu Visual Studio **nowy projekt** okna dialogowego. Rozwiń **inne typy projektów** , a następnie wybierz **instalacja i wdrożenie**. Wybierz szablon InstallShield.
+   Ograniczoną wersję programu InstallShield można uzyskać za pomocą okna dialogowego **Nowy projekt** programu Visual Studio. Rozwiń węzeł **Inne typy projektów** , a następnie wybierz pozycję **Instalacja i wdrożenie**. Wybierz szablon InstallShield.
 
-- Zestaw narzędzi XML Instalatora Windows
+- Zestaw narzędzi Instalator Windows XML
 
-   Zestaw narzędzi XML Instalatora Windows (WiX) tworzy pakiety Instalatora Windows przy użyciu plików źródłowych XML. Zestaw narzędzi WiX to projekt typu open source firmy Microsoft. Możesz pobrać kod źródłowy i pliki wykonywalne z [zestaw narzędzi Wix](http://sourceforge.net/projects/wix).
+   Zestaw narzędzi Instalator Windows XML (WiX) kompiluje Instalator Windows pakiety ze źródłowych plików XML. Zestaw narzędzi WiX jest projektem typu open source firmy Microsoft. Możesz pobrać kod źródłowy i pliki wykonywalne z zestawu [narzędzi WIX](https://sourceforge.net/projects/wix/).
 
-   Komercyjne produktów, które integrują [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] przy użyciu [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], zobacz [Visual Studio Marketplace](https://marketplace.visualstudio.com/).
+   W przypadku produktów komercyjnych, które integrują się z [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] przy użyciu [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], zobacz [Visual Studio Marketplace](https://marketplace.visualstudio.com/).
 
 ## <a name="see-also"></a>Zobacz także
-- [Instalowanie pakietów VSPackage przy użyciu Instalatora Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
+- [Zainstaluj pakietów VSPackage z Instalator Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

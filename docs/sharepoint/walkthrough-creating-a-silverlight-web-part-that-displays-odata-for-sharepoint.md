@@ -12,15 +12,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 859944c51be0abf2e6a326a06a5e4432a69ee4ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bd2e42f48a6881b533a2f098e47ac92511b85aa3
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655922"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984825"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>Przewodnik: Tworzenie składnika Web Part programu Silverlight wyświetlającego Protokół OData dla programu SharePoint
-  Program SharePoint 2010 udostępnia swoje dane listy za pomocą protokołu OData. W programie SharePoint usługa OData jest implementowana przez usługę RESTful Service ListData. svc. W tym instruktażu pokazano, jak utworzyć składnik Web Part programu SharePoint, który jest hostem aplikacji Silverlight. Aplikacja Silverlight wyświetla informacje o liście anonsów programu SharePoint za pomocą ListData. svc. Aby uzyskać więcej informacji, zobacz [Interfejs REST programu SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=225999) i [Open Data Protocol](http://go.microsoft.com/fwlink/?LinkId=226000).
+  Program SharePoint 2010 udostępnia swoje dane listy za pomocą protokołu OData. W programie SharePoint usługa OData jest implementowana przez usługę RESTful Service ListData. svc. W tym instruktażu pokazano, jak utworzyć składnik Web Part programu SharePoint, który jest hostem aplikacji Silverlight. Aplikacja Silverlight wyświetla informacje o liście anonsów programu SharePoint za pomocą ListData. svc. Aby uzyskać więcej informacji, zobacz [Interfejs REST programu SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ff521587(v=office.14)) i [Open Data Protocol](https://www.odata.org/).
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -228,7 +228,7 @@ ms.locfileid: "72655922"
      Składnik Web Part Silverlight powinien teraz wyświetlać dane anonsów z witryny programu SharePoint. Domyślnie strona jest przechowywana na liście strony witryny w programie SharePoint.
 
     > [!NOTE]
-    > Podczas uzyskiwania dostępu do danych w programie Silverlight w różnych domenach Technologia Silverlight chroni przed lukami w zabezpieczeniach, które mogą być używane do korzystania z aplikacji sieci Web. W przypadku wystąpienia problemów podczas uzyskiwania dostępu do danych zdalnych w programie Silverlight zobacz [udostępnianie usługi w granicach domen](http://go.microsoft.com/fwlink/?LinkId=223276).
+    > Podczas uzyskiwania dostępu do danych w programie Silverlight w różnych domenach Technologia Silverlight chroni przed lukami w zabezpieczeniach, które mogą być używane do korzystania z aplikacji sieci Web. W przypadku wystąpienia problemów podczas uzyskiwania dostępu do danych zdalnych w programie Silverlight zobacz [udostępnianie usługi w granicach domen](/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc197955(v=vs.95)).
 
 ## <a name="see-also"></a>Zobacz także
 - [Tworzenie składników Web Part dla programu SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)

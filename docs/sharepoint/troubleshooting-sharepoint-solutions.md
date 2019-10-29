@@ -1,5 +1,5 @@
 ---
-title: Rozwiązywanie problemów z rozwiązaniami SharePoint | Dokumentacja firmy Microsoft
+title: Rozwiązywanie problemów z rozwiązaniami programu SharePoint | Microsoft Docs
 ms.date: 02/22/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,24 +16,24 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bab7f45824def7a4b5a385381a4789b7adc276d0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4e8ccaaf877c04b3d58fc6d54bb658c2cef77b6f
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63008091"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985315"
 ---
-# <a name="troubleshoot-sharepoint-solutions"></a>Rozwiązywanie problemów z rozwiązaniami SharePoint
-  Następujące problemy lub alerty, mogą wystąpić podczas debugowania rozwiązań programu SharePoint przy użyciu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debugera. Aby uzyskać więcej informacji, zobacz [debugowanie rozwiązania przepływu pracy programu SharePoint 2007](https://msdn.microsoft.com/3a5392f3-66f3-48be-956e-02de23fa6247).
+# <a name="troubleshoot-sharepoint-solutions"></a>Rozwiązywanie problemów z rozwiązaniami programu SharePoint
+  Podczas debugowania rozwiązań programu SharePoint za pomocą debugera [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] mogą wystąpić następujące problemy lub alerty. Aby uzyskać więcej informacji, zobacz [Debugowanie rozwiązań przepływu pracy programu SharePoint 2007](https://msdn.microsoft.com/3a5392f3-66f3-48be-956e-02de23fa6247).
 
-## <a name="token-restrictions-in-sandboxed-visual-web-parts"></a>Ograniczenia tokenu w trybie piaskownicy wizualne części sieci web
- Wizualne części sieci web w trybie piaskownicy rozwiązań nie może przetworzyć standardowa tokenów, takich jak $SPUrl, który obsługuje środowisko wykonawcze programu SharePoint. W rezultacie adres URL nie zostanie rozwiązany i nie można przeglądać zawartość w widoku projektowania projektanta wizualnego składnika web part, jeśli odwołujesz się do niego bezpośrednio w elemencie skryptu, takie jak w poniższym przykładzie:
+## <a name="token-restrictions-in-sandboxed-visual-web-parts"></a>Ograniczenia tokenu w wizualnych częściach sieci Web w trybie piaskownicy
+ Wizualne składniki Web Part w rozwiązaniach w trybie piaskownicy nie mogą przetwarzać tokenów standardowych, takich jak $SPUrl, obsługiwane przez środowisko uruchomieniowe programu SharePoint. W związku z tym adres URL nie jest rozpoznawany i nie można wyświetlić podglądu zawartości widok Projekt w programie Visual Web Part Designer, jeśli odwołujesz się do niego bezpośrednio w elemencie skryptu, na przykład w poniższym przykładzie:
 
 ```xml
 <script src="<% $SPUrl:~site/SiteAssets/ListOperations.js %>"></script>
 ```
 
- Aby obejść to ograniczenie i rozwiązać, token, znaleźć go za pomocą literałów ciągów:
+ Aby obejść to ograniczenie i rozwiązać token, należy odwołać się do niego przy użyciu literałów:
 
 ```xml
 <asp:literal ID="Literal1" runat="server" Text="<script src='" />
@@ -41,14 +41,14 @@ ms.locfileid: "63008091"
 <asp:literal ID="Literal3" runat="server" Text="' type='text/javascript' ></script>" />
 ```
 
-## <a name="character-restrictions-in-names-of-projects-and-project-items"></a>Ograniczenia dotyczące znaków w nazwach projektów i elementów projektu
- Nazwy projektów i elementów projektu może zawierać tylko znaki, które są dozwolone w ścieżce wdrożenia w programie SharePoint 2010. Inne znaki są niedozwolone.
+## <a name="character-restrictions-in-names-of-projects-and-project-items"></a>Ograniczenia znaków w nazwach projektów i elementów projektu
+ Nazwy projektów i elementów projektu mogą zawierać tylko znaki, które są prawidłowe w ścieżce wdrożenia w programie SharePoint 2010. Żadne inne znaki nie są dozwolone.
 
 ### <a name="error-message"></a>Komunikat o błędzie
- Komunikat o błędzie "Nieprawidłowe znaki".
+ Komunikat o błędzie "nieprawidłowe znaki".
 
 ### <a name="resolution"></a>Rozwiązanie
- Nazwy projektów programu SharePoint i elementy projektu można użyć w następujących znaków:
+ W przypadku nazw projektów programu SharePoint i elementów projektu należy używać tylko następujących znaków:
 
 - Alfanumeryczne znaki ASCII
 
@@ -58,22 +58,22 @@ ms.locfileid: "63008091"
 
 - Przecinek (,)
 
-- Znak podkreślenia (_)
+- Podkreślenie (_)
 
-- Łączniki (-)
+- Kreska (-)
 
 - Ukośnik odwrotny (\\)
 
-  Gdy projekt jest spakowany, reguły sprawdzania poprawności sprawdza, czy właściwość ścieżka do wdrożenia dla każdego pliku, który jest wdrażany zawiera tylko te prawidłowe znaki.
+  Gdy projekt jest spakowany, reguła walidacji sprawdza, czy właściwość ścieżka wdrożenia dla każdego wdrażanego pliku zawiera tylko te prawidłowe znaki.
 
-## <a name="errors-when-creating-custom-fields"></a>Błędy podczas tworzenia pola niestandardowego
- W [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], niestandardowych pól zdefiniowanych w pliku XML. Mogą wystąpić błędy, jeśli pole nie jest zdefiniowany lub odwołuje się przy użyciu określonego formatu.
+## <a name="errors-when-creating-custom-fields"></a>Błędy podczas tworzenia pól niestandardowych
+ W [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]pola niestandardowe są zdefiniowane w kodzie XML. Błędy mogą wystąpić, jeśli pole nie jest zdefiniowane lub nie można się do niego odwoływać przy użyciu określonego formatu.
 
 ### <a name="error-message"></a>Komunikat o błędzie
- Komunikat o błędzie "Nieprawidłowe znaki" w czasie tworzenia pakietów.
+ Komunikat o błędzie "nieprawidłowe znaki" w czasie pakowania.
 
 ### <a name="resolution"></a>Rozwiązanie
- Identyfikator definicji pola musi być identyfikatorem GUID, ujęte w nawiasy klamrowe, co ilustruje poniższy przykład:
+ Identyfikator dla definicji pola musi być identyfikatorem GUID ujętym w nawiasy klamrowe, jak pokazano w poniższym przykładzie:
 
 ```xml
 <Field ID="{5744d18c-305e-4632-8bd1-09d134f4830d}"
@@ -84,7 +84,7 @@ ms.locfileid: "63008091"
 </Field>.
 ```
 
- Jak pokazano na poniższym przykładzie, odwołanie do pola w typie zawartości musi być zdefiniowany przy użyciu formatu pustego elementu (\<FieldRef / >), nie za pomocą elementów rozpoczęcia/zakończenia (\<FieldRef >\</FieldRef >):
+ Jak pokazano na poniższym przykładzie, odwołanie do pola w typie zawartości musi być zdefiniowane przy użyciu formatu pustego elementu (\<FieldRef/>), a nie za pomocą elementów Start/end (\<FieldRef >\</FieldRef >):
 
 ```xml
 <FieldRef ID="{5744d18c-305e-4632-8bd1-09d134f4830d}"
@@ -93,192 +93,192 @@ ms.locfileid: "63008091"
     Required="TRUE"/>
 ```
 
- Jeśli źródła XML dla pola jest źle sformułowany, nie jest prawidłowym plikiem XML lub wykazuje jakiś inny problem, występuje błąd "nie może przeanalizować pliku".
+ Jeśli źródłowy kod XML dla pola jest źle sformułowany, nie jest prawidłowym plikiem XML lub wykazuje inny problem, wystąpił błąd "nie można przeanalizować pliku".
 
-## <a name="new-non-english-site-definitions-do-not-appear-in-site-creation-page-after-deployment"></a>Nowych definicji witryny innej niż angielska nie są wyświetlane na stronie tworzenia lokacji po wdrożeniu
- Po utworzeniu i wdrożenia definicji witryny przy użyciu innej niż angielska wersji [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (czyli wersji z ustawieniami regionalnymi [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)] niż 1033), **dostosowania SharePoint** karta nie pojawia się w **Wybór szablonu** pole i nowego szablonu witryny nie są wyświetlane w **nową witrynę programu SharePoint** strony.
+## <a name="new-non-english-site-definitions-do-not-appear-in-site-creation-page-after-deployment"></a>Nowe definicje lokacji inne niż angielskie nie są wyświetlane na stronie tworzenia witryny po wdrożeniu
+ Po utworzeniu i wdrożeniu definicji lokacji przy użyciu wersji językowej innej niż angielska [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (czyli wersji z ustawieniami regionalnymi [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)] inną niż 1033) karta **dostosowania programu SharePoint** nie będzie wyświetlana w polu **wyboru szablonu** i w nowej witrynie szablon nie jest wyświetlany na **nowej stronie witryny programu SharePoint** .
 
 ### <a name="error-message"></a>Komunikat o błędzie
  Brak.
 
 ### <a name="resolution"></a>Rozwiązanie
- Ten problem występuje z powodu nieprawidłowej wartości w **ścieżki** właściwość Konfiguracja definicji witryny webtemp plików, takich jak *webtemp_SiteDefinitionProject1.xml*. W **ścieżki** właściwość pliku webtemp znajdujący się w folderze **lokalizacji wdrożenia**, zmień odpowiednie ustawienia regionalne 1033 [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]. Na przykład aby użyć japońskich ustawieniach regionalnych zmień wartość 1041. Aby uzyskać więcej informacji, zobacz [identyfikatory ustawień regionalnych przypisane przez firmę Microsoft](http://go.microsoft.com/fwlink/?LinkID=165561).
+ Ten problem występuje z powodu nieprawidłowej wartości we właściwości **Path** pliku konfiguracji definicji witryny webtemp, takiej jak *webtemp_SiteDefinitionProject1. XML*. We właściwości **Path** pliku WEBTEMP, który znajduje się w **lokalizacji wdrożenia**, zmień 1033 na odpowiednie [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]ustawień regionalnych. Na przykład, aby użyć japońskiego ustawienia regionalnego, Zmień wartość na 1041. Aby uzyskać więcej informacji, zobacz [identyfikatory ustawień regionalnych przypisanych przez firmę Microsoft](/openspecs/windows_protocols/ms-lcid/a9eac961-e77d-41a6-90a5-ce1a8b0cdb9c).
 
-## <a name="error-appears-when-a-workflow-project-is-deployed-on-a-clean-system"></a>Błąd pojawia się podczas wdrażania projektu przepływu pracy w systemie czyste
- Ten problem występuje, gdy wdrożysz projektu przepływu pracy w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] systemie czyste. Oczyść system to komputer, który ma nowej instalacji [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] i programu SharePoint, ale żadne projekty wdrożonej przepływu pracy.
+## <a name="error-appears-when-a-workflow-project-is-deployed-on-a-clean-system"></a>Błąd pojawia się, gdy projekt przepływu pracy jest wdrażany w czystym systemie
+ Ten problem występuje w przypadku wdrożenia projektu przepływu pracy w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] w czystym systemie. Czysty system to komputer, który ma nową instalację [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] i SharePoint, ale nie wdrożonych projektów przepływu pracy.
 
 ### <a name="error-message"></a>Komunikat o błędzie
  Nie można znaleźć listy programu SharePoint: Historia przepływu pracy.
 
 ### <a name="resolution"></a>Rozwiązanie
- Ten błąd występuje ze względu na Brak listy historii przepływu pracy. Ponieważ środowisko programistyczne jest czysty system, żadne przepływy pracy są wdrażane, a na liście historii przepływu pracy jeszcze nie istnieje. Aby rozwiązać ten problem, ponownie otwórz Kreatora przepływu pracy, co powoduje, że listy historii przepływu pracy, który ma zostać utworzony.
+ Ten błąd występuje z powodu braku listy historii przepływu pracy. Ponieważ środowisko programistyczne jest czystym systemem, nie są wdrażane żadne przepływy pracy, a lista historii przepływu pracy jeszcze nie istnieje. Aby rozwiązać ten problem, Otwórz ponownie Kreatora przepływu pracy, co spowoduje utworzenie listy historii przepływu pracy.
 
 ##### <a name="to-reenter-the-workflow-wizard"></a>Aby ponownie wprowadzić kreatora przepływu pracy
 
-1. W **Eksploratora rozwiązań**, wybierz węzeł przepływ pracy.
+1. W **Eksplorator rozwiązań**wybierz węzeł przepływ pracy.
 
-2. W **właściwości** okna, wybierz przycisk wielokropka (...) w dowolnej właściwości, która zawiera przycisk wielokropka.
+2. W oknie **Właściwości** wybierz przycisk wielokropka (...) we właściwości, która ma przycisk wielokropka.
 
-## <a name="user-must-refresh-application-page-in-browser-while-debugging-to-view-updated-image"></a>Użytkownik musi odświeżać strony aplikacji w przeglądarce podczas debugowania, aby wyświetlić zaktualizowany obraz
- Jeśli debugujesz rozwiązania programu SharePoint, która zawiera strony aplikacji za pomocą kontrolki, który wyświetla obraz, taki jak [!INCLUDE[TLA2#tla_html](../sharepoint/includes/tla2sharptla-html-md.md)] kontrolki obrazu, należy odświeżyć stronę w przeglądarce, aby wyświetlić wszelkie zmiany, które zostały wprowadzone do obrazu.
+## <a name="user-must-refresh-application-page-in-browser-while-debugging-to-view-updated-image"></a>Użytkownik musi odświeżyć stronę aplikacji w przeglądarce podczas debugowania w celu wyświetlenia zaktualizowanego obrazu
+ Jeśli debugujesz rozwiązanie SharePoint zawierające stronę aplikacji z kontrolką wyświetlającą obraz, taki jak kontrolka obrazu [!INCLUDE[TLA2#tla_html](../sharepoint/includes/tla2sharptla-html-md.md)], należy odświeżyć stronę w przeglądarce, aby wyświetlić wszystkie zmiany wprowadzone do obrazu.
 
-## <a name="error-the-site-location-is-not-valid"></a>Błąd: Lokalizacja witryny jest nieprawidłowa
- Ten problem może wystąpić, jeśli [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] nie jest zainstalowany. Może również wystąpić, jeśli nie masz uprawnienia dostępu administratora do witryny sieci Web programu SharePoint, który jest określony w **Kreator ustawień niestandardowych SharePoint**.
+## <a name="error-the-site-location-is-not-valid"></a>Błąd: lokalizacja witryny jest nieprawidłowa
+ Ten problem może wystąpić, jeśli nie zainstalowano [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)]. Może się to zdarzyć również wtedy, gdy użytkownik nie ma dostępu administratora do witryny sieci Web programu SharePoint, która jest określona w **Kreatorze dostosowywania programu SharePoint**.
 
 ### <a name="error-message"></a>Komunikat o błędzie
 
-- Lokalizacja witryny programu SharePoint jest nieprawidłowy.
+- Lokalizacja witryny programu SharePoint jest nieprawidłowa.
 
 ### <a name="resolution"></a>Rozwiązanie
 
 - Zainstaluj [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)].
 
-- Upewnij się, że masz uprawnienia dostępu administratora do witryny sieci Web programu SharePoint. Aby uzyskać więcej informacji, zobacz [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] artykule Online [Przypisywanie lub usuwanie administratorów aplikacji usług w programie SharePoint Server](https://docs.microsoft.com/sharepoint/administration/assign-or-remove-administrators-of-service-applications).
+- Upewnij się, że masz uprawnienia administratora do witryny sieci Web programu SharePoint. Aby uzyskać więcej informacji, zobacz artykuł online [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] [przypisywanie lub usuwanie administratorów aplikacji usług w programie SharePoint Server](/sharepoint/administration/assign-or-remove-administrators-of-service-applications).
 
-## <a name="site-deletion-web-event-does-not-occur-in-event-receiver-project"></a>Witryna usuwania sieci web zdarzenie nie występuje w projekcie odbiorcy zdarzeń
- Podczas tworzenia projektu odbiorcy zdarzeń, a następnie wybierz wystąpienia określonych zdarzeń w sieci Web, takich jak "lokacji jest usuwana", nigdy nie wystąpi zdarzenie.
+## <a name="site-deletion-web-event-does-not-occur-in-event-receiver-project"></a>Zdarzenie sieci Web usuwania witryny nie występuje w projekcie odbiorcy zdarzeń
+ Podczas tworzenia projektu odbiorcy zdarzeń i wybierania pewnych zdarzeń sieci Web, takich jak "witryna jest usuwana", zdarzenie nigdy nie występuje.
 
 ### <a name="error-message"></a>Komunikat o błędzie
  Brak.
 
 ### <a name="resolution"></a>Rozwiązanie
- Ten problem występuje, ponieważ zakres funkcji musi być "Witryna", aby obsłużyć zdarzenia na poziomie witryny, ale domyślny zakres funkcji dla projektów odbiornik zdarzeń jest "Web". Dostępne są następujące zdarzenia sieci Web, których to dotyczy:
+ Ten problem występuje, ponieważ zakres funkcji musi mieć wartość "site" do obsługi zdarzeń na poziomie lokacji, ale domyślny zakres funkcji dla projektów odbiorcy zdarzeń to "Web". Zdarzenia sieci Web, których to dotyczy:
 
-- Lokacji są usuwane (WebDeleting)
+- Trwa usuwanie witryny (usuwanie elementu Web)
 
-- Usunięto witrynę (WebDeleted)
+- Lokacja została usunięta (usunięto ją z sieci)
 
-- Trwa lokacji przenieść (WebMoving)
+- Trwa przenoszenie witryny (przenoszenie)
 
-- Przeniesiono witrynę (WebMoved)
+- Witryna została przeniesiona (przeniesiono)
 
-  Aby rozwiązać ten problem, zmień zakres funkcji odbiorcy zdarzeń w następujący sposób.
+  Aby rozwiązać ten problem, Zmień zakres funkcji odbiorcy zdarzeń w następujący sposób.
 
 ##### <a name="to-change-the-feature-scope-of-the-event-receiver"></a>Aby zmienić zakres funkcji odbiorcy zdarzeń
 
-1. W **Eksploratora rozwiązań**, otwórz odbiorcy zdarzeń *.feature* w pliku **projektanta funkcji** przez dwukrotne kliknięcie pliku albo otwierając jego menu skrótów i następnie Wybieranie **Otwórz**.
+1. W **Eksplorator rozwiązań**Otwórz plik *. feature* odbiorcy zdarzeń w **Projektancie funkcji** przez dwukrotne kliknięcie pliku lub otwarcie jego menu skrótów, a następnie wybranie polecenia **Otwórz**.
 
-2. Wybierz strzałkę obok **zakres**, a następnie wybierz **witryny** na liście.
+2. Wybierz strzałkę obok pozycji **zakres**, a następnie wybierz pozycję **lokacja** na wyświetlonej liście.
 
-## <a name="deployment-error-appears-after-the-name-of-an-identifier-in-a-business-data-connectivity-model-project-is-changed"></a>Błąd wdrażania pojawia się po zmianie nazwy identyfikatora w projekcie modelu łączności danych biznesowych
- Ten problem występuje, jeśli zmiana nazwy identyfikatora jednostki w modelu łączności danych biznesowych (BDC), a następnie spróbuj wdrożyć to rozwiązanie.
+## <a name="deployment-error-appears-after-the-name-of-an-identifier-in-a-business-data-connectivity-model-project-is-changed"></a>Błąd wdrażania występuje po zmianie nazwy identyfikatora w projekcie modelu usługi łączności danych firmy
+ Ten problem występuje, jeśli zmienisz nazwę identyfikatora jednostki w modelu łączności danych biznesowych (BDC), a następnie spróbujesz wdrożyć rozwiązanie.
 
 ### <a name="error-messages"></a>Komunikaty o błędach
 
-- \<*Nazwa modelu*> ma następujące błędy aktywacji zewnętrznego typu zawartości...
+- *nazwa \<modelu*> ma następujące błędy aktywacji zewnętrznego typu zawartości...
 
-- IMetadataObject o nazwie "\<*nazwę modelu*>" ma wartość pola "name" zduplikowanych...
+- IMetadataObject o nazwie "\<*model name*>" zawiera zduplikowaną wartość w polu "name"...
 
 ### <a name="resolution"></a>Rozwiązanie
- Aby rozwiązać ten problem, ręcznie usuń model, a następnie należy ponownie wdrożyć rozwiązanie.  Usuń z modelu, przy użyciu jednej z następujących narzędzi:
+ Aby rozwiązać ten problem, Usuń model ręcznie, a następnie ponownie Wdróż rozwiązanie.  Model można usunąć przy użyciu jednego z następujących narzędzi:
 
-- Administracja centralna programu SharePoint 2010. Aby uzyskać więcej informacji, zobacz [zarządzania modelu usługi łączności danych biznesowych](http://go.microsoft.com/fwlink/?LinkID=181472) witryny sieci Web TechNet firmy Microsoft.
+- Administracja centralna programu SharePoint 2010. Aby uzyskać więcej informacji, zobacz [Zarządzanie modelami BDC](/previous-versions/office/sharepoint-server-2010/ee524073(v=office.14)#deleteamodel) w witrynie sieci Web Microsoft TechNet.
 
-- Windows PowerShell. Można usunąć modelu, wpisując polecenie w wierszu polecenia: **Remove-SPBusinessDataCatalogModel**. Aby uzyskać więcej informacji, zobacz [ogólne polecenia cmdlet (SharePoint Server 2010)](http://go.microsoft.com/fwlink/?LinkID=182375) witryny sieci Web TechNet firmy Microsoft.
+- Windows PowerShell. Możesz usunąć model, wpisując to polecenie w wierszu polecenia: **Remove-SPBusinessDataCatalogModel**. Aby uzyskać więcej informacji, zobacz [Ogólne polecenia cmdlet (SharePoint Server 2010)](/powershell/module/sharepoint-server/&view=sharepoint-ps) w witrynie sieci Web Microsoft TechNet.
 
-## <a name="an-error-appears-when-you-try-to-view-a-visual-web-part-in-sharepoint"></a>Błąd jest wyświetlany, gdy użytkownik próbuje wyświetlić wizualny składnik web part w programie SharePoint
- Ten problem występuje, gdy **ścieżki** właściwości kontrolki użytkownika nie zaczyna się od ciągu "CONTROLTEMPLATES\\".
+## <a name="an-error-appears-when-you-try-to-view-a-visual-web-part-in-sharepoint"></a>Wystąpił błąd podczas próby wyświetlenia wizualnego składnika Web Part w programie SharePoint
+ Ten problem występuje, gdy właściwość **Path** kontrolki użytkownika nie zaczyna się od ciągu "elementy ControlTemplates\\".
 
 ### <a name="error-messages"></a>Komunikaty o błędach
 
-- Plik "/_CONTROLTEMPLATES/*\<Nazwa projektu >*/*\<nazwa składnika Web Part >*/*\<kontrolki użytkownika nazwa >*.ascx "nie istnieje.
+- Plik "/_CONTROLTEMPLATES/ *\<nazwa projektu >* / *\<nazwa składnika sieci Web >* /\<*Nazwa kontrolki użytkownika >* . ascx" nie istnieje.
 
-- Błąd serwera w aplikacji» /».
+- Błąd serwera w aplikacji "/".
 
 ### <a name="resolution"></a>Rozwiązanie
 
 ##### <a name="to-resolve-this-issue"></a>Aby rozwiązać ten problem
 
-1. W **Eksploratora rozwiązań**, wybierz plik kontrolki użytkownika, którego rozszerzenie nazwy pliku jest *ascx*.
+1. W **Eksplorator rozwiązań**wybierz plik kontrolki użytkownika, którego rozszerzenie nazwy pliku to *. ascx*.
 
-2. Na pasku menu wybierz **widoku** > **okno właściwości**.
+2. Na pasku menu wybierz polecenie **wyświetl** > **okno właściwości**.
 
-3. W **właściwości** okna, rozwiń węzeł **lokalizacji wdrożenia** węzła.
+3. W oknie **Właściwości** rozwiń węzeł **Lokalizacja wdrożenia** .
 
-4. Upewnij się, że wartość **ścieżki** właściwość zaczyna się od ciągu "CONTROLTEMPLATES\\".
+4. Upewnij się, że wartość właściwości **Path** zaczyna się od ciągu "elementy ControlTemplates\\".
 
-## <a name="error-appears-when-an-imported-reusable-workflow-that-contains-a-task-form-field-is-run"></a>Błąd pojawia się po uruchomieniu importowanych wielokrotny przepływ danych zawierającego pole formularza zadania
- Ten problem występuje, jeśli Importowanie przepływu pracy, który zawiera formularz zadania, który znajduje się pole, a następnie uruchomić nowy przepływ pracy w tym samym systemie, w którym można zaimportować.
-
-### <a name="error-message"></a>Komunikat o błędzie
- Wystąpił błąd podczas kroku wdrażania "Aktywacja funkcji": Pole o identyfikatorze [*Guid*] zdefiniowany w funkcji [*Guid*] został znaleziony w bieżącej kolekcji witryn lub podwitryn.
-
-### <a name="resolution"></a>Rozwiązanie
- Ten błąd jest wynikiem kolizji identyfikator pola, które występują, ponieważ importowanie przepływu pracy wielokrotnego użytku, do projektu w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nie zmienia pole formularza zadania identyfikatorów. W przypadku wdrożenia importowanych przepływu pracy na tym samym serwerze, który zawiera oryginalny przepływ pracy występują kolizje identyfikator pola.
-
- Aby rozwiązać ten problem, należy użyć funkcji Znajdź i Zamień, aby zmienić wartość atrybutu Identyfikatora pola we wszystkich plikach importowanych przepływu pracy.
-
-## <a name="error-appears-when-a-renamed-imported-list-instance-is-run"></a>Błąd pojawia się po zaimportowaniu zmienionej nazwie wystąpienie listy jest wykonywane.
- Ten problem występuje, jeśli zmiana nazwy wystąpienia listy zaimportowane, a następnie uruchom go [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+## <a name="error-appears-when-an-imported-reusable-workflow-that-contains-a-task-form-field-is-run"></a>Błąd pojawia się, gdy zostanie uruchomiony importowany przepływ pracy wielokrotnego użytku zawierający pole formularza zadania
+ Ten problem występuje w przypadku zaimportowania przepływu pracy zawierającego formularz zadania, który ma pole, a następnie uruchomienie nowego przepływu pracy w tym samym systemie, z którego został on zaimportowany.
 
 ### <a name="error-message"></a>Komunikat o błędzie
- Błąd kompilacji: Wystąpił błąd podczas kroku wdrażania "Aktywacja funkcji": Plik Template\Features\\[*Importuj projekt*<em>funkcji</em>*nazwa*] \Files\Lists\\[*stare* <em>Nazwa listy</em>] \Schema.xml nie istnieje.
+ Wystąpił błąd w kroku wdrożenia "Activate Features": w bieżącym zbiorze witryn lub w podlokacji znaleziono pole o identyfikatorze [*GUID*] zdefiniowane w funkcji [*GUID*].
 
 ### <a name="resolution"></a>Rozwiązanie
- Po zaimportowaniu wystąpienie listy, atrybut o nazwie CustomSchema jest dodawany do pliku Elements.xml wystąpienia listy. Elements.XML zawiera ścieżkę do niestandardowego pliku schema.xml dla instancji listy. Po zmianie nazwy wystąpienia listy w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], zmieni się ścieżka wdrażania niestandardowego pliku schema.xml, ale wartość ścieżki atrybutu CustomSchema nie jest aktualizowana. W rezultacie nie można odnaleźć wystąpienia listy *schema.xml* pliku w starej ścieżki, który jest określony przez atrybut CustomSchema, gdy funkcja jest aktywowana.
+ Ten błąd jest wynikiem kolizji identyfikatora pola, który występuje, ponieważ projekt przepływu pracy wielokrotnego użytku w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nie zmienia identyfikatorów pól formularza zadania. W przypadku wdrożenia zaimportowanego przepływu pracy na tym samym serwerze, który zawiera oryginalny przepływ pracy, występują kolizje identyfikatora pola.
 
- Aby rozwiązać ten problem, należy zaktualizować ścieżki lokalizacji wdrożenia programu *schema.xml* pliku w atrybucie CustomSchema.
+ Aby rozwiązać ten problem, użyj funkcji Znajdź i Zamień, aby zmienić wartość atrybutu ID pola we wszystkich zaimportowanych plikach przepływu pracy.
 
-## <a name="sharepoint-debugging-session-terminated-by-iis"></a>Zakończony przez usługi IIS sesji debugowania programu SharePoint
- Ten problem występuje, jeśli ustawisz punkt przerwania w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] rozwiązania programu SharePoint, wybierz **F5** klawisz, aby ją uruchomić, a następnie pozostają w punkcie przerwania dłużej niż 90 sekund.
+## <a name="error-appears-when-a-renamed-imported-list-instance-is-run"></a>Błąd pojawia się, gdy zostanie uruchomione wystąpienie zaimportowanej nazwy listy
+ Ten problem występuje, jeśli zmienisz nazwę zaimportowanego wystąpienia listy, a następnie uruchomisz go w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
 ### <a name="error-message"></a>Komunikat o błędzie
- Debugowany proces serwera sieci Web został zakończony przez Internetowe usługi informacyjne (IIS). Można uniknąć tego problemu przez skonfigurowanie ustawień polecenia ping dla puli aplikacji w usługach IIS. Zobacz Pomoc, aby uzyskać więcej informacji.
+ Błąd kompilacji: Wystąpił błąd w kroku wdrożenia "Activate Features": plik Template\Features\\[*Nazwa*<em>funkcji</em>*importu projektu*] \Files\Lists\\[*stara*<em>Nazwa listy</em>] \Schema.XML nie istnieje.
 
 ### <a name="resolution"></a>Rozwiązanie
- Domyślnie pula aplikacji usług IIS czeka 90 sekund dla aplikacji, aby odpowiadać przed jej zamknięciem aplikacji. Ten proces jest nazywany "odpowiada na polecenie ping" aplikacji. Aby rozwiązać ten problem, możesz zwiększyć czas oczekiwania lub aplikacji, które odpowiada na polecenie ping całkowicie wyłączyć.
+ Podczas importowania wystąpienia listy atrybut o nazwie CustomSchema jest dodawany do pliku Elements. xml wystąpienia listy. Element elementy. xml zawiera ścieżkę niestandardowego pliku schema. XML dla wystąpienia listy. Po zmianie nazwy wystąpienia listy w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], ścieżka wdrożenia dla niestandardowego schematu. XML ulega zmianie, ale wartość Path atrybutu CustomSchema nie jest aktualizowana. W związku z tym wystąpienie listy nie może znaleźć pliku *Schema. XML* w starej ścieżce, która jest określona przez atrybut CustomSchema, gdy ta funkcja jest aktywowana.
+
+ Aby rozwiązać ten problem, zaktualizuj ścieżkę lokalizacji wdrożenia pliku *Schema. XML* w atrybucie CustomSchema.
+
+## <a name="sharepoint-debugging-session-terminated-by-iis"></a>Sesja debugowania programu SharePoint zakończona przez usługi IIS
+ Ten problem występuje, jeśli ustawisz punkt przerwania w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] rozwiązanie programu SharePoint, wybierz klawisz **F5** , aby go uruchomić, a następnie pozostanie w punkcie przerwania dłuższym niż 90 sekund.
+
+### <a name="error-message"></a>Komunikat o błędzie
+ Debugowany proces serwera sieci Web został przerwany przez Internet Information Services (IIS). Można uniknąć tego problemu przez skonfigurowanie ustawień ping puli aplikacji w usługach IIS. Aby uzyskać więcej informacji, zobacz Pomoc.
+
+### <a name="resolution"></a>Rozwiązanie
+ Domyślnie Pula aplikacji usług IIS czeka 90 sekund na odpowiedź aplikacji przed zamknięciem aplikacji. Ten proces jest nazywany "Pingowanie" aplikacji. Aby rozwiązać ten problem, można albo całkowicie zwiększyć czas oczekiwania lub wyłączyć polecenie ping aplikacji.
 
 ##### <a name="to-access-the-iis-app-pool-settings"></a>Aby uzyskać dostęp do ustawień puli aplikacji usług IIS
 
 1. Otwórz Menedżera usług IIS.
 
-2. W **połączeń** okienku rozwiń węzeł serwera programu SharePoint, a następnie wybierz **pul aplikacji** węzła.
+2. W okienku **połączenia** rozwiń węzeł serwer programu SharePoint, a następnie wybierz węzeł **Pule aplikacji** .
 
-3. Na **pul aplikacji** wybierz pulę aplikacji programu SharePoint (zazwyczaj "SharePoint - 80"), a następnie w **akcje** okienku wybierz **Zaawansowane ustawienia** łącze.
+3. Na stronie **Pule aplikacji** wybierz pulę aplikacji programu SharePoint (zazwyczaj "SharePoint-80"), a następnie w okienku **Akcje** wybierz łącze **Ustawienia zaawansowane** .
 
-4. Aby zwiększyć czas oczekiwania przed upływem limitu czasu usług IIS, należy zmienić wartość **maksymalny czas odpowiedzi polecenia Ping (sekundy)** wartość, która jest większa niż 90 sekund.
+4. Aby zwiększyć czas oczekiwania przed upływem limitu czasu usług IIS, Zmień wartość w polu **Maksymalny czas odpowiedzi polecenia ping (w sekundach)** na wartość, która jest większa niż 90 sekund.
 
-5. Aby wyłączyć odpowiada na polecenie ping usług IIS, należy ustawić **pingowanie włączone** do **False**.
+5. Aby wyłączyć funkcję ping dla usług IIS, ustaw dla opcji **ping** **wartość false**.
 
-## <a name="auto-retract-leaves-orphaned-list-instance-in-sharepoint"></a>Automatycznie Wycofaj pozostawia wystąpienie listy oddzielone w programie SharePoint
- Ten problem występuje, gdy należy wykonać następujące czynności.
+## <a name="auto-retract-leaves-orphaned-list-instance-in-sharepoint"></a>Funkcja autowycofywania opuszcza wystąpienie listy oddzielonej w programie SharePoint
+ Ten problem występuje w przypadku wykonania poniższych kroków.
 
-1. Tworzenie definicji listy, który powoduje wystąpienie listy [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+1. Utwórz definicję listy, która ma wystąpienie listy w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2. Wybierz **F5** klawisz, aby uruchomić rozwiązanie.
+2. Wybierz klawisz **F5** , aby uruchomić rozwiązanie.
 
-3. Zatrzymaj debugowanie lub zamknąć witrynę programu SharePoint.
+3. Zatrzymaj debugowanie lub Zamknij witrynę programu SharePoint.
 
-4. Otwórz witrynę programu SharePoint, a następnie otwórz wystąpienie listy.
+4. Otwórz ponownie witrynę programu SharePoint i Otwórz wystąpienie listy.
 
 ### <a name="error-message"></a>Komunikat o błędzie
- Błąd serwera w aplikacji» /».
+ Błąd serwera w aplikacji "/".
 
 ### <a name="resolution"></a>Rozwiązanie
- Dzieje się tak, ponieważ po zamknięciu sesji debugowania rozwiązania programu SharePoint, które automatycznie Wycofaj funkcji wycofuje rozwiązanie. Wycofywanie rozwiązania spowoduje usunięcie definicji listy z poziomu programu SharePoint, ale nie usuwa wystąpienie listy. Podstawową definicję listy jest wymagana przez wystąpienie listy.
+ Dzieje się tak, ponieważ po zamknięciu sesji debugowania rozwiązania SharePoint Funkcja autowycofywania wycofa rozwiązanie. Wycofywanie usuwa definicję listy z programu SharePoint, ale nie usuwa wystąpienia listy. Źródłowa definicja listy jest wymagana przez wystąpienie listy.
 
- Aby rozwiązać ten problem, należy wdrożyć rozwiązania, na pasku menu, wybierając **kompilacji** > **Wdróż**. (Nie Debuguj rozwiązanie, wybierając **F5** klucza.) Następnie można usunąć wystąpienia listy w programie SharePoint.
+ Aby rozwiązać ten problem, wdróż rozwiązanie przez program, na pasku menu wybierz pozycję **kompilacja** > **Wdróż**. (Nie Debuguj rozwiązania, wybierając klawisz **F5** ). Następnie Usuń wystąpienie listy w programie SharePoint.
 
-## <a name="original-sharepoint-solution-is-replaced-by-an-exported-version"></a>Oryginalne rozwiązanie programu SharePoint jest zastępowany przy użyciu wersji wyeksportowanego
- Podczas eksportowania rozwiązania programu SharePoint, należy zaimportować rozwiązanie do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], a następnie wdrożyć rozwiązanie tej samej lokacji, z której został wyeksportowany, zastępuje oryginalne rozwiązanie programu SharePoint. Ten problem występuje, gdy wdrożysz rozwiązania na serwerze, na którym nie ma oryginalne rozwiązanie, które aktywowano na nim.
+## <a name="original-sharepoint-solution-is-replaced-by-an-exported-version"></a>Oryginalne rozwiązanie programu SharePoint zostało zastąpione wyeksportowaną wersją
+ W przypadku eksportowania rozwiązania programu SharePoint zaimportuj rozwiązanie do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], a następnie wdróż rozwiązanie z powrotem do tej samej lokacji, z której zostały wyeksportowane, oryginalne rozwiązanie programu SharePoint zostanie zastąpione. Ten problem nie występuje w przypadku wdrożenia rozwiązania na serwerze, na którym nie zostało aktywowane oryginalne rozwiązanie.
 
 ### <a name="error-message"></a>Komunikat o błędzie
  Brak.
 
 ### <a name="resolution"></a>Rozwiązanie
- Aby uniknąć zastąpienia rozwiązanie w witrynie, z którego zostały wyeksportowane, zmienić identyfikatory GUID SolutionID i identyfikatory funkcji ze wszystkich funkcji importowanych w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu.
+ Aby uniknąć nadpisywania rozwiązania w lokacji, z której została wyeksportowana, należy zmienić identyfikatory GUID SolutionID i identyfikator funkcji wszystkich zaimportowanych funkcji w projekcie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-## <a name="error-appears-when-debugging-starts"></a>Pojawia się błąd, gdy debugowanie się rozpocznie
- Podczas uruchamiania debugowania rozwiązania programu SharePoint w programie Visual Studio, błąd wskazuje, że Visual Studio nie można załadować pliku Web.config, ponieważ podany klucz nie był w słowniku.
+## <a name="error-appears-when-debugging-starts"></a>Błąd pojawia się, gdy debugowanie rozpocznie się
+ Po rozpoczęciu debugowania rozwiązania SharePoint w programie Visual Studio błąd wskazuje, że program Visual Studio nie może załadować pliku Web. config, ponieważ dany klucz nie był w słowniku.
 
 ### <a name="error-message"></a>Komunikat o błędzie
- Nie można załadować pliku konfiguracji Web.config. Źle sformułowane elementów XML w pliku i spróbuj ponownie. Wystąpił następujący błąd: Podany klucz nie istnieje w słowniku.
+ Nie można załadować pliku konfiguracyjnego Web. config. Sprawdź plik pod kątem nieprawidłowych elementów XML i spróbuj ponownie. Wystąpił następujący błąd: podany klucz nie był obecny w słowniku.
 
 ### <a name="resolution"></a>Rozwiązanie
- Aby rozwiązać ten problem, upewnij się, że wartość właściwości adres URL witryny projektu programu SharePoint w programie Visual Studio jest zgodny adres URL, który jest przypisany do strefy domyślnej dla mapowania dostępu alternatywnego aplikacji sieci web. Nie można rozpoznać błędu przy użyciu innej strefy, takich jak Intranet, aby uzyskać adres URL. Witryna adres URL projektu i adres URL w strefie domyślne muszą być zgodne. Dostępu mapowań dostępu alternatywnego, Otwórz narzędzie administracji centralnej programu SharePoint 2010, wybrać **Zarządzanie aplikacjami** łącza, a następnie w obszarze **aplikacji sieci Web**, wybierz  **Konfigurowanie alternatywnych mapowań dostępu** łącza. Aby uzyskać więcej informacji, zobacz [tworzenie stref dla aplikacji sieci Web](http://go.microsoft.com/fwlink/?LinkId=192274).
+ Aby rozwiązać ten problem, upewnij się, że wartość właściwości adres URL witryny projektu programu SharePoint w programie Visual Studio jest zgodna z adresem URL przypisanym do strefy domyślnej dla mapowań dostępu alternatywnego aplikacji sieci Web. Nie można rozwiązać tego błędu za pomocą innej strefy, takiej jak intranet, dla adresu URL. Adres URL witryny dla projektu i adres URL w strefie domyślnej muszą być zgodne. Aby uzyskać dostęp do mapowań alternatywnego dostępu, Otwórz narzędzie SharePoint 2010 Central Administration, wybierz link **Zarządzanie aplikacjami** , a następnie w obszarze **aplikacje sieci Web**wybierz łącze **Konfiguruj alternatywne mapowania dostępu** . Aby uzyskać więcej informacji, zobacz [Tworzenie stref dla aplikacji sieci Web](/previous-versions/office/sharepoint-2007-products-and-technologies/cc263087(v=office.12)).
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Rozwiązywanie problemów z pakowaniem i wdrażaniem SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)
+- [Rozwiązywanie problemów z pakietami i wdrażaniem programu SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)
 - [Kompilowanie i debugowanie rozwiązań SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)
 - [Debugowanie w programie Visual Studio](../debugger/debugging-in-visual-studio.md)

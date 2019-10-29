@@ -1,5 +1,5 @@
 ---
-title: Przykłady debugowania programu Visual Studio | Dokumentacja firmy Microsoft
+title: Przykłady debugowania programu Visual Studio | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,16 +12,16 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e43c2b38d1da055a1a0a4533acc61cb3b8e6760
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ea408640b47b04041e99b9a4bff2605b6231a92f
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348297"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72981232"
 ---
-# <a name="visual-studio-debugging-samples"></a>Przykłady debugowania Visual Studio
-Dwa przykłady pokazują, jak rozszerzyć debugera programu Visual Studio przy użyciu [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].
+# <a name="visual-studio-debugging-samples"></a>Przykłady debugowania programu Visual Studio
+Dwa przykłady pokazują, jak zwiększyć debuger programu Visual Studio przy użyciu [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].
 
-- Przykładowe ewaluatora wyrażeń debugera, dla języków zarządzanych, znajduje się w [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. W [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] okna, kliknij przycisk **przykłady** kliknij pozycję **wszystkich** lub **C#** listy języków, a następnie kliknij przycisk **debugera**.
+- Przykładowa ewaluatora wyrażeń debugera dla języków zarządzanych jest uwzględniona w [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. W oknie [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] kliknij kartę **przykłady** , kliknij pozycję **wszystkie** lub **C#** na liście języków, a następnie kliknij przycisk **debuger**.
 
-- Visual Studio debugowanie aparatu przykładu w natywnych językach, jest dostępna w galerii kodu MSDN. Aby uzyskać więcej informacji, zobacz [przykład aparatu debugowania programu Visual Studio](http://go.microsoft.com/fwlink/?LinkId=150236) w witrynie sieci Web firmy Microsoft.
+- Przykładowy aparat debugowania programu Visual Studio dla języków natywnych jest dostępny w galerii kodu MSDN. Aby uzyskać więcej informacji, zobacz [przykład aparatu debugowania programu Visual Studio](https://code.msdn.microsoft.com/Visual-Studio-Debug-Engine-c2e21c0e) w witrynie sieci Web firmy Microsoft.

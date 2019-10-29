@@ -1,5 +1,5 @@
 ---
-title: IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp | Dokumentacja firmy Microsoft
+title: 'IWebAppDiagnosticsSetup:: CreateObjectWithSiteAtWebApp | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,18 +13,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 42f92cfe9245a5e3a6342c31fc996ae2db50ef70
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 253b995c200566868ac9ccc06b259e0a152e1676
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443699"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984605"
 ---
 # <a name="iwebappdiagnosticssetupcreateobjectwithsiteatwebapp"></a>IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp
-Ta metoda tworzy wspólnej klasy o identyfikatorze przekazywania przy użyciu `rclsid` przy użyciu `dwClsContext`. Jest to w sposób podobny do [IRemoteDebugApplication::CreateInstanceAtApplication](../../winscript/reference/iremotedebugapplication-createinstanceatapplication.md) działa, chyba że w przypadku właściwości `CreateObjectWithSiteAtWebApp` asynchronicznie tworzenia obiektu w wątku interfejsu użytkownika aplikacji sieci web. Obiekt określony przez identyfikator klasy należy zaimplementować [interfejs IWebAppDiagnosticsObjectInitialization](../../winscript/reference/iwebappdiagnosticsobjectinitialization-interface.md). Po utworzeniu obiektu [IWebAppDiagnosticsObjectInitialization::Initialize](../../winscript/reference/iwebappdiagnosticsobjectinitialization-initialize.md) jest wywoływana z odwołaniem do menedżerów PDM debugowania aplikacji i `hPassToObject` parametru `CreateObjectWithSiteAtWebApp`. Ta metoda służy do przekazania do niej dojścia do potoku anonimowego, które zostały skopiowane, za pomocą [DuplicateHandle](http://go.microsoft.com/fwlink/?LinkId=232450).  
+Ta metoda współtworzy klasę, której identyfikator został przekazany, `rclsid` przy użyciu `dwClsContext`. Jest to podobne do sposobu, w jaki [IRemoteDebugApplication:: CreateInstanceAtApplication](../../winscript/reference/iremotedebugapplication-createinstanceatapplication.md) działa, z tą różnicą, że w przypadku `CreateObjectWithSiteAtWebApp` obiekt jest tworzony asynchronicznie w wątku interfejsu użytkownika aplikacji sieci Web. Obiekt określony przez identyfikator klasy powinien implementować [interfejs IWebAppDiagnosticsObjectInitialization](../../winscript/reference/iwebappdiagnosticsobjectinitialization-interface.md). Po utworzeniu obiektu [IWebAppDiagnosticsObjectInitialization:: Initialize](../../winscript/reference/iwebappdiagnosticsobjectinitialization-initialize.md) jest wywoływana z odwołaniem do aplikacji debugowania PDM i parametrem `hPassToObject` `CreateObjectWithSiteAtWebApp`. Tej metody można użyć do przekazania do aplikacji dojścia do anonimowego potoku, który został skopiowany przy użyciu [DuplicateHandle](/windows/win32/api/handleapi/nf-handleapi-duplicatehandle).  
   
 > [!IMPORTANT]
-> [Interfejs IWebAppDiagnosticsSetup](../../winscript/reference/iwebappdiagnosticssetup-interface.md) jest implementowany przez program PDM w wersji 11.0 i nowszych. Znajduje się w zestawie activdbg100.h.  
+> [Interfejs IWebAppDiagnosticsSetup](../../winscript/reference/iwebappdiagnosticssetup-interface.md) jest implementowany przez PDM v 11.0 i nowsze. Znajduje się w zestawie activdbg100.h.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,10 +37,10 @@ HRESULT CreateObjectWithSiteAtWebApp(        [in] REFCLSID rclsid,         [in] 
  Identyfikator klasy do utworzenia.  
   
  `dwClsContext`  
- Kontekst, w którym będzie uruchamiany kod. W większości przypadków jest CLSCTX_INPROC_SERVER.  
+ Kontekst, w którym zostanie uruchomiony kod. W większości przypadków jest to CLSCTX_INPROC_SERVER.  
   
  `riid`  
  Nie używany.  
   
  `hPassToObject`  
- Wartość, które zostaną przekazane do obiektu po jego utworzeniu w wątku interfejsu użytkownika, jeśli obiekt implementuje [interfejs IWebAppDiagnosticsObjectInitialization](../../winscript/reference/iwebappdiagnosticsobjectinitialization-interface.md).
+ Wartość, która zostanie przeniesiona do obiektu po jego utworzeniu w wątku interfejsu użytkownika, jeśli obiekt implementuje [interfejs IWebAppDiagnosticsObjectInitialization](../../winscript/reference/iwebappdiagnosticsobjectinitialization-interface.md).

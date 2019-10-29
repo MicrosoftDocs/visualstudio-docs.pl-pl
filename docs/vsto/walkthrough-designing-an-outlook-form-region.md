@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4a346686ee89862abef046c066614eddce1cf3a3
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 01cfe55964a1d61c2ad200c9538ced9ff0aa5599
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255755"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985470"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>Przewodnik: Projektowanie regionu formularza programu Outlook
   Niestandardowe regiony formularzy poszerzają standardowe lub niestandardowe formularze programu Outlook Microsoft Office. W tym instruktażu zaprojektujesz niestandardowy region formularza, który pojawia się jako nowa strona w oknie Inspektora elementu kontaktu. Ten region formularza przedstawia mapę każdego adresu wymienionego dla kontaktu, wysyłając informacje o adresie do witryny sieci Web lokalnego wyszukiwania w usłudze Windows Live. Aby uzyskać informacje na temat regionów formularzy, zobacz [Tworzenie regionów formularzy w programie Outlook](../vsto/creating-outlook-form-regions.md).
@@ -44,22 +44,22 @@ ms.locfileid: "71255755"
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
-- [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)]lub nowszy.
+- [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)] lub nowszy.
 
-  ![link do wideo](../vsto/media/playvideo.gif "link do wideo") Aby uzyskać wersję wideo tego tematu, zobacz [temat wideo: Projektuj region](http://go.microsoft.com/fwlink/?LinkID=140824)formularza programu Outlook.
+  ![link do wideo](../vsto/media/playvideo.gif "link do wideo") Aby uzyskać wersję wideo tego tematu, zobacz [wideo How to: Design the Outlook form](/previous-versions/visualstudio/visual-studio-2008/cc837160(v=vs.90)).
 
 ## <a name="create-a-new-outlook-vsto-add-in-project"></a>Utwórz nowy projekt dodatku VSTO dla programu Outlook
  Najpierw Utwórz podstawowy projekt dodatku VSTO.
 
 ### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>Aby utworzyć nowy projekt dodatku VSTO dla programu Outlook
 
-1. W [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]programie Utwórz projekt dodatku VSTO programu Outlook o nazwie **MapItAddIn**.
+1. W [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Utwórz projekt dodatku VSTO programu Outlook o nazwie **MapItAddIn**.
 
 2. W oknie dialogowym **Nowy projekt** wybierz pozycję **Utwórz katalog dla rozwiązania**.
 
 3. Zapisz projekt w dowolnym katalogu.
 
-     Aby uzyskać więcej informacji, zobacz [jak: Utwórz projekty pakietu Office w programie](../vsto/how-to-create-office-projects-in-visual-studio.md)Visual Studio.
+     Aby uzyskać więcej informacji, zobacz [How to: Create Office projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
 ## <a name="add-a-form-region-to-the-outlook-vsto-add-in-project"></a>Dodawanie regionu formularza do projektu dodatku VSTO programu Outlook
  Rozwiązanie dodatku VSTO dla programu Outlook może zawierać jeden lub więcej elementów regionu formularza programu Outlook. Dodaj element regionu formularza do projektu za pomocą kreatora **nowego regionu formularza programu Outlook** .
@@ -122,16 +122,16 @@ ms.locfileid: "71255755"
 
     Klasa fabryki regionów formularza o nazwie `MapItFactory` jest udostępniona.
 
-3. Dodaj następujący kod do `MapItFactory_FormRegionInitializing` programu obsługi zdarzeń. Ta procedura obsługi zdarzeń jest wywoływana, gdy użytkownik otworzy element Contact. Poniższy kod określa, czy element Contact zawiera adres. Jeśli element Contact nie zawiera adresu, ten kod ustawia <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> Właściwość <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> klasy na **true** , a region formularza nie jest wyświetlany. W przeciwnym razie dodatek VSTO wywołuje <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> zdarzenie i wyświetla region formularza.
+3. Dodaj następujący kod do programu obsługi zdarzeń `MapItFactory_FormRegionInitializing`. Ta procedura obsługi zdarzeń jest wywoływana, gdy użytkownik otworzy element Contact. Poniższy kod określa, czy element Contact zawiera adres. Jeśli element Contact nie zawiera adresu, ten kod ustawia właściwość <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> klasy <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> na **true** , a region formularza nie jest wyświetlany. W przeciwnym razie dodatek VSTO wywołuje zdarzenie <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> i wyświetla region formularza.
 
     [!code-csharp[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#1)]
     [!code-vb[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb#1)]
 
-4. Dodaj następujący kod do <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> programu obsługi zdarzeń. Kod będzie wykonywał następujące zadania:
+4. Dodaj następujący kod do programu obsługi zdarzeń <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing>. Kod będzie wykonywał następujące zadania:
 
    - Łączy każdy adres w elemencie Contact i tworzy ciąg adresu URL.
 
-   - <xref:System.Windows.Forms.WebBrowser.Navigate%2A> Wywołuje metodę <xref:System.Windows.Forms.WebBrowser> obiektu i przekazuje ciąg adresu URL jako parametr.
+   - Wywołuje metodę <xref:System.Windows.Forms.WebBrowser.Navigate%2A> obiektu <xref:System.Windows.Forms.WebBrowser> i przekazuje ciąg adresu URL jako parametr.
 
      Lokalna witryna sieci Web wyszukiwania zostanie wyświetlona w regionie formularza Mapa IT i przedstawia każdy adres w konsoli.
 
@@ -151,10 +151,10 @@ ms.locfileid: "71255755"
 
 3. W formularzu Contact wpisz **Ann Beebe** jako nazwę kontaktu, a następnie określ następujące trzy adresy.
 
-    |Typ adresu|Adres|
+    |Typ adresu|Ulica|
     |------------------|-------------|
-    |**biznesowe**|**4567 Main St. Buffalo, NY**|
-    |**Strona główna**|**1234 północny St. Buffalo, NY**|
+    |**Gospodarcz**|**4567 Main St. Buffalo, NY**|
+    |**Mowa**|**1234 północny St. Buffalo, NY**|
     |**Inne**|**3456 Main St. Seattle, WA**|
 
 4. Zapisz i Zamknij element Contact.
@@ -176,8 +176,8 @@ ms.locfileid: "71255755"
 - [Dostęp do regionu formularza w czasie wykonywania](../vsto/accessing-a-form-region-at-run-time.md)
 - [Tworzenie regionów formularzy programu Outlook](../vsto/creating-outlook-form-regions.md)
 - [Wytyczne dotyczące tworzenia regionów formularzy programu Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)
-- [Przewodnik: Importowanie regionu formularza zaprojektowanego w programie Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)
+- [Przewodnik: Importowanie regionów formularzy zaprojektowanych w programie Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)
 - [Instrukcje: Dodawanie regionu formularza do projektu dodatku programu Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)
 - [Kojarzenie regionu formularza z klasą wiadomości programu Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md)
 - [Niestandardowe akcje w regionach formularzy programu Outlook](../vsto/custom-actions-in-outlook-form-regions.md)
-- [Instrukcje: Zapobiegaj wyświetlaniu przez program Outlook regionu formularza](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)
+- [Instrukcje: zapobieganie wyświetlaniu regionu formularza przez program Outlook](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)

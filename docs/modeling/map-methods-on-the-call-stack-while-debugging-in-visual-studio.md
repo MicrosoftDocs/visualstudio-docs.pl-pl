@@ -28,12 +28,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c294ce3c6dcf3a880cf5f57ca825064366e08e2b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 736b203feb5b1a640d7865b92a6d3ad191397d26
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668229"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985037"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Metody mapowania dla stosu wywołań podczas debugowania w programie Visual Studio.
 
@@ -59,7 +59,7 @@ Utwórz mapę kodu, aby wizualnie śledzić stos wywołań podczas debugowania. 
 
   Zobacz:
 
-- [Wideo: Debuguj wizualnie dzięki integracji z debugerem mapy kodu (Channel 9)](http://go.microsoft.com/fwlink/?LinkId=293418)
+- [Wideo: Debuguj wizualnie dzięki integracji z debugerem mapy kodu (Channel 9)](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012Debug-visually-with-Code-Map-debugger-integration)
 
 - [Mapowanie stosu wywołań](#MapStack)
 
@@ -178,7 +178,7 @@ Utwórz mapę kodu, aby wizualnie śledzić stos wywołań podczas debugowania. 
 
 - **Jak mogę zatrzymać automatyczne dodawanie nowych stosów wywołań przez mapę?**
 
-   Wybierz ![Button &#45; Pokaż stos wywołań na mapie kodu automatycznie ](../debugger/media/debuggermap_automaticupdateicon.gif) na pasku narzędzi Mapa. Aby ręcznie dodać bieżący stos wywołań do mapy, naciśnij **klawisze Ctrl**  + **SHIFT**  +  **`** .
+   Wybierz przycisk &#45; ![Pokaż stos wywołań na mapie kodu automatycznie](../debugger/media/debuggermap_automaticupdateicon.gif)na pasku narzędzi Mapa. Aby ręcznie dodać bieżący stos wywołań do mapy, naciśnij **klawisze Ctrl**  + **SHIFT**  +  **`** .
 
    Mapa będzie nadal wyróżniać istniejące stosy wywołań na mapie podczas debugowania.
 

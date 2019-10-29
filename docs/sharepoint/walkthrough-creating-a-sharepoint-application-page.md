@@ -1,5 +1,5 @@
 ---
-title: 'Przewodnik: Tworzenie strony aplikacji SharePoint | Dokumentacja firmy Microsoft'
+title: 'Przewodnik: Tworzenie strony aplikacji SharePoint | Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,25 +13,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 749ec5f7f7bd68911accb33e4e8631b42de8e630
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0eaf7bda4ac4ed67dae79b8dd83bb59ba6985343
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778635"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985025"
 ---
 # <a name="walkthrough-create-a-sharepoint-application-page"></a>Przewodnik: Tworzenie strony aplikacji SharePoint
 
-Na stronie aplikacji jest formą specjalistyczne strony ASP.NET. Strony aplikacji zawierają treści, która jest połączone ze stroną wzorcową programu SharePoint. Aby uzyskać więcej informacji, zobacz [tworzenie stron aplikacji dla programu SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).
+Strona aplikacji jest wyspecjalizowaną formą strony ASP.NET. Strony aplikacji zawierają zawartość scaloną ze stroną wzorcową programu SharePoint. Aby uzyskać więcej informacji, zobacz [Tworzenie stron aplikacji dla programu SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).
 
-W tym instruktażu dowiesz się, jak utworzyć witrynę aplikacji, a następnie ją debugować używając lokalnej witryny programu SharePoint. Ta strona pokazuje wszystkie elementy, które każdy użytkownik ma utworzone lub zmodyfikowane we wszystkich witrynach w farmie serwerów.
+W tym instruktażu przedstawiono sposób tworzenia strony aplikacji, a następnie debugowania jej przy użyciu lokalnej witryny programu SharePoint. Na tej stronie są wyświetlane wszystkie elementy utworzone lub zmodyfikowane przez każdego użytkownika we wszystkich lokacjach w farmie serwerów.
 
 W instruktażu przedstawiono następujące zagadnienia:
 
 - Tworzenie projektu programu SharePoint.
 - Dodawanie strony aplikacji do projektu programu SharePoint.
-- Dodawanie formantów ASP.NET na stronie aplikacji.
-- Dodając kodu związanego z formantami ASP.NET.
+- Dodawanie formantów ASP.NET do strony aplikacji.
+- Dodawanie kodu za kontrolkami ASP.NET.
 - Testowanie strony aplikacji.
 
 > [!NOTE]
@@ -41,51 +41,51 @@ W instruktażu przedstawiono następujące zagadnienia:
 
 - Obsługiwane wersje systemu Windows i programu SharePoint.
 
-## <a name="create-a-sharepoint-project"></a>Utwórz projekt programu SharePoint
+## <a name="create-a-sharepoint-project"></a>Tworzenie projektu programu SharePoint
 
-Najpierw utwórz **pusty projekt programu SharePoint**. Później dodasz **strony aplikacji** do tego projektu.
+Najpierw Utwórz **pusty projekt programu SharePoint**. Później dodasz element **strony aplikacji** do tego projektu.
 
 1. Rozpocznij [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2. Otwórz **nowy projekt** okna dialogowego rozwiń **Office/SharePoint** węzła dla języka, który chcesz użyć, a następnie wybierz **rozwiązań programu SharePoint** węzła.
+2. Otwórz okno dialogowe **Nowy projekt** , rozwiń węzeł **Office/SharePoint** w języku, którego chcesz użyć, a następnie wybierz węzeł **rozwiązania SharePoint** .
 
-3. W **zainstalowane szablony programu Visual Studio** okienku wybierz **SharePoint 2010 — pusty projekt** szablonu. Nadaj projektowi nazwę **MySharePointProject**, a następnie wybierz **OK** przycisku.
+3. W okienku **zainstalowane szablony programu Visual Studio** wybierz szablon **programu SharePoint 2010 i pusty projekt** . Nazwij projekt **MyShareProject**, a następnie wybierz przycisk **OK** .
 
-     **Kreator ustawień niestandardowych SharePoint** pojawia się. Ten kreator umożliwia wybór lokacji, który będzie używany do debugowania projektu i poziomu zaufania rozwiązania.
+     Zostanie wyświetlony **Kreator dostosowania programu SharePoint** . Ten Kreator umożliwia wybranie lokacji, która będzie używana do debugowania projektu i poziomu zaufania rozwiązania.
 
-4. Wybierz **Wdróż jako rozwiązanie farmy** przycisk opcji, a następnie wybierz **Zakończ** przycisk, aby zaakceptować domyślne lokalnej witryny programu SharePoint.
+4. Wybierz przycisk opcji **Wdróż jako rozwiązanie farmy** , a następnie wybierz przycisk **Zakończ** , aby zaakceptować domyślną lokalną witrynę programu SharePoint.
 
 ## <a name="create-an-application-page"></a>Tworzenie strony aplikacji
 
-Aby utworzyć stronę aplikacji, należy dodać **strony aplikacji** do projektu.
+Aby utworzyć stronę aplikacji, Dodaj element **strony aplikacji** do projektu.
 
-1. W **Eksploratora rozwiązań**, wybierz **MySharePointProject** projektu.
+1. W **Eksplorator rozwiązań**wybierz projekt **MyShareProject** .
 
-2. Na pasku menu wybierz **projektu** > **Dodaj nowy element**.
+2. Na pasku menu wybierz **projekt**  > **Dodaj nowy element**.
 
-3. W **Dodaj nowy element** okna dialogowego wybierz **strona aplikacji (tylko rozwiązanie farmy** szablonu.
+3. W oknie dialogowym **Dodaj nowy element** wybierz **stronę aplikacji (szablon tylko rozwiązanie farmy** ).
 
-4. Nazwij stronę **SearchItems**, a następnie wybierz **Dodaj** przycisku.
+4. Nadaj stronie nazwę **SearchItems**, a następnie wybierz przycisk **Dodaj** .
 
-     Projektant Visual Web Developer wyświetla witrynę aplikacji w **źródła** widok, w którym można zobaczyć elementy HTML strony. Projektant wyświetla znaczniki dla kilku <xref:System.Web.UI.WebControls.Content> kontrolki. Każdy formant mapy do <xref:System.Web.UI.WebControls.ContentPlaceHolder> kontrolki, która jest zdefiniowana w domyślnej stronie wzorcowej aplikacji.
+     Projektant Visual Web Developer wyświetla stronę aplikacji w widoku **źródła** , w której można zobaczyć elementy HTML strony. Projektant wyświetla znaczniki dla kilku kontrolek <xref:System.Web.UI.WebControls.Content>. Każda kontrolka mapuje do kontrolki <xref:System.Web.UI.WebControls.ContentPlaceHolder>, która jest zdefiniowana na domyślnej stronie wzorcowej aplikacji.
 
 ## <a name="design-the-layout-of-the-application-page"></a>Projektowanie układu strony aplikacji
 
-Element strona aplikacji umożliwia użycie projektanta do dodawania formantów ASP.NET na stronie aplikacji. Projektant jest tego samego projektanta, które są używane w Visual Web Developer. Dodaj etykietę, listę przycisków radiowych i tabelę do **źródła** Widok projektanta, a następnie ustaw właściwości tak samo jak podczas projektowania dowolnej standardowej strony ASP.NET.
+Element Strona aplikacji umożliwia dodawanie formantów ASP.NET do strony aplikacji przy użyciu projektanta. Ten Projektant jest tym samym projektantem, który jest używany w Visual Web Developer. Dodaj etykietę, listę przycisków radiowych i tabelę do widoku **źródła** projektanta, a następnie ustaw właściwości tak samo jak podczas projektowania dowolnej standardowej strony ASP.NET.
 
-1. Na pasku menu wybierz **widoku** > **przybornika**.
+1. Na pasku menu wybierz **widok**  > **Przybornik**.
 
-2. W węźle standardowy **przybornika**, wykonaj jedną z następujących czynności:
+2. W węźle standardowy **przybornika**wykonaj jedną z następujących czynności:
 
-    - Otwórz menu skrótów dla **etykiety** elementu, wybierz polecenie **kopiowania**, otwórz menu skrótów dla linii poniżej **PlaceHolderMain** zawartości formantu w projektancie, a następnie Wybierz **Wklej**.
+    - Otwórz menu skrótów dla elementu **etykieta** , wybierz **Kopiuj**, otwórz menu skrótów dla wiersza pod kontrolką zawartości **PlaceHolderMain** w projektancie, a następnie wybierz **Wklej**.
 
-    - Przeciągnij **etykiety** elementu z **przybornika** na treść **PlaceHolderMain** formantu zawartości.
+    - Przeciągnij element **Label** z **przybornika** na treść kontrolki zawartości **PlaceHolderMain** .
 
-3. Powtórz poprzedni krok, aby dodać **DropDownList** elementu i **tabeli** elementu do **PlaceHolderMain** formantu zawartości.
+3. Powtórz poprzedni krok, aby dodać element **DropDownList** i element **tabeli** do kontrolki zawartości **PlaceHolderMain** .
 
-4. W projektancie, zmień wartość `Text` atrybut formant etykiety, aby **pokazać wszystkie elementy**.
+4. W projektancie Zmień wartość atrybutu `Text` kontrolki etykieta, aby **wyświetlić wszystkie elementy**.
 
-5. W oknie Projektant zastępuje `<asp:DropDownList>` element z następujący kod XML.
+5. W projektancie Zastąp element `<asp:DropDownList>` następującym kodem XML.
 
     ```xml
     <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="true"
@@ -97,13 +97,13 @@ Element strona aplikacji umożliwia użycie projektanta do dodawania formantów 
 
 ## <a name="handle-the-events-of-controls-on-the-page"></a>Obsługa zdarzeń formantów na stronie
 
-Obsługuje formanty na stronie aplikacji, tak samo jak dowolnej strony ASP.NET. W tej procedurze, będziesz obsługiwać `SelectedIndexChanged` zdarzenie z listy rozwijanej.
+Obsłuż kontrolki na stronie aplikacji tak samo jak każda strona ASP.NET. W tej procedurze zostanie obsłużone zdarzenie `SelectedIndexChanged` listy rozwijanej.
 
-1. Na **widoku** menu, wybierz **kodu**.
+1. W menu **Widok** wybierz polecenie **kod**.
 
      Plik kodu strony aplikacji zostanie otwarty w edytorze kodu.
 
-2. Dodaj następującą metodę do `SearchItems` klasy. Ten kod obsługuje <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged> zdarzenia <xref:System.Web.UI.WebControls.DropDownList> przez wywołanie metody, która zostanie utworzona w dalszej części tego przewodnika.
+2. Dodaj następującą metodę do klasy `SearchItems`. Ten kod obsługuje zdarzenie <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged> <xref:System.Web.UI.WebControls.DropDownList> przez wywołanie metody, która zostanie utworzona w dalszej części tego instruktażu.
 
      [!code-vb[SP_ApplicationPage#5](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#5)]
      [!code-csharp[SP_ApplicationPage#5](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#5)]
@@ -113,45 +113,45 @@ Obsługuje formanty na stronie aplikacji, tak samo jak dowolnej strony ASP.NET. 
      [!code-vb[SP_ApplicationPage#1](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#1)]
      [!code-csharp[SP_ApplicationPage#1](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#1)]
 
-4. Dodaj następującą metodę do `SearchItems` klasy. Ta metoda wykonuje iterację przez wszystkie lokacje w farmie serwerów i wyszukuje elementów utworzonych lub zmodyfikowanych przez bieżącego użytkownika.
+4. Dodaj następującą metodę do klasy `SearchItems`. Ta metoda iteruje przez wszystkie lokacje w farmie serwerów i wyszukuje elementy utworzone lub zmodyfikowane przez bieżącego użytkownika.
 
      [!code-vb[SP_ApplicationPage#2](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#2)]
      [!code-csharp[SP_ApplicationPage#2](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#2)]
 
-5. Dodaj następującą metodę do `SearchItems` klasy. Ta metoda Wy Wyświetla elementy utworzone lub zmodyfikowane przez bieżącego użytkownika w tabeli.
+5. Dodaj następującą metodę do klasy `SearchItems`. Ta metoda wyświetla elementy utworzone lub zmodyfikowane przez bieżącego użytkownika w tabeli.
 
      [!code-vb[SP_ApplicationPage#3](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#3)]
      [!code-csharp[SP_ApplicationPage#3](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#3)]
 
 ## <a name="test-the-application-page"></a>Testowanie strony aplikacji
 
-Kiedy uruchamiasz projekt, otwiera się witryna SharePoint i zostanie wyświetlona strona aplikacji.
+Po uruchomieniu projektu zostanie otwarta witryna programu SharePoint, na której zostanie wyświetlona strona aplikacji.
 
-1. W **Eksploratora rozwiązań**, otwórz menu skrótów dla strony aplikacji, a następnie wybierz **Ustaw jako element startowy**.
+1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla strony aplikacji, a następnie wybierz polecenie **Ustaw jako element startowy**.
 
-2. Wybierz **F5** klucza.
+2. Wybierz klawisz **F5** .
 
-     Otwiera się witryna SharePoint.
+     Zostanie otwarta witryna programu SharePoint.
 
-3. Na stronie aplikacji wybierz **zmodyfikowane przeze mnie** opcji.
+3. Na stronie aplikacja wybierz opcję **zmodyfikowane przeze mnie** .
 
-     Strona aplikacji odświeża i wyświetla wszystkie elementy, które zostały zmodyfikowane we wszystkich witrynach w farmie serwerów.
+     Strona aplikacji odświeża i wyświetla wszystkie elementy, które zostały zmodyfikowane we wszystkich lokacjach w farmie serwerów.
 
-4. Na stronie aplikacji wybierz **utworzone przeze mnie** na liście.
+4. Na stronie aplikacja wybierz pozycję **utworzone przeze mnie** na liście.
 
-     Strona aplikacji odświeża i wyświetla wszystkie elementy, które zostały utworzone we wszystkich witrynach w farmie serwerów.
+     Strona aplikacji odświeża i wyświetla wszystkie elementy, które zostały utworzone we wszystkich lokacjach w farmie serwerów.
 
 ## <a name="next-steps"></a>Następne kroki
 
-Aby uzyskać więcej informacji dotyczących stron aplikacji programu SharePoint, zobacz [tworzenie stron aplikacji dla programu SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).
+Aby uzyskać więcej informacji o stronach aplikacji programu SharePoint, zobacz [Tworzenie stron aplikacji dla programu SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).
 
-Możesz dowiedzieć się więcej o projektowaniu zawartości strony SharePoint przy użyciu Visual Web Designer w tych tematach:
+Aby dowiedzieć się więcej na temat projektowania zawartości strony programu SharePoint, można użyć Visual Web Designer z następujących tematów:
 
-- [Tworzenie składników web Part programu SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md).
+- [Tworzenie składników Web Part dla programu SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md).
 
-- [Tworzenie formantów wielokrotnych dla części sieciowych lub stron aplikacji](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md).
+- [Tworzenie kontrolek wielokrotnego użytku dla części sieci Web lub stron aplikacji](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md).
 
 ## <a name="see-also"></a>Zobacz także
 
 [Instrukcje: Tworzenie strony aplikacji](../sharepoint/how-to-create-an-application-page.md)
-[układu aplikacji typ strony](http://go.microsoft.com/fwlink/?LinkID=169274)
+[Typ strony za_layouts aplikacji](/previous-versions/office/aa979604(v=office.14))

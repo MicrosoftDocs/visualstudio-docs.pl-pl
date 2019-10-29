@@ -1,5 +1,5 @@
 ---
-title: Stosowanie modułów podczas dołączania plików w rozwiązaniu | Dokumentacja firmy Microsoft
+title: Używanie modułów do dołączania plików w rozwiązaniu | Microsoft Docs
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,20 +14,20 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 569f1027163d5651d184254b4e6f57a02df2a39a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4f8f2aa6c5d86af2424a811b6167829cefdb6fb5
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63007844"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985297"
 ---
-# <a name="use-modules-to-include-files-in-the-solution"></a>Użyj modułów, aby uwzględnić pliki w rozwiązaniu
-  Mogą wystąpić sytuacje, kiedy warto wdrożyć pliki do serwera programu SharePoint, niezależnie od ich typu pliku, na przykład nowe strony wzorcowej. Aby to zrobić, można użyć *modułów* (nie należy mylić z [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] modułów kodu). Moduły są kontenerami dla plików w rozwiązaniu programu SharePoint. Po wdrożeniu rozwiązania plików w module są kopiowane do określonych folderów na serwerze programu SharePoint.
+# <a name="use-modules-to-include-files-in-the-solution"></a>Używanie modułów do dołączania plików w rozwiązaniu
+  Mogą wystąpić sytuacje, w których można chcieć wdrożyć pliki na serwerze programu SharePoint, niezależnie od ich typu plików, na przykład nowych stron wzorcowych. W tym celu można użyć *modułów* (nie należy mylić z [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] modułów kodu). Moduły są kontenerami dla plików w rozwiązaniu programu SharePoint. Po wdrożeniu rozwiązania pliki w module są kopiowane do określonych folderów na serwerze programu SharePoint.
 
-## <a name="module-items-and-elements"></a>Moduł elementów i elementów
- Aby utworzyć moduł, dodaj go do projektu, wybierając je w **Dodaj nowy element** okno dialogowe. Następnie należy zmodyfikować jego *Elements.xml* pliku, aby uwzględnić nazwy plików, którą chcesz wdrożyć, gdzie znajdują się w systemie, a powinny zostać skopiowane na serwerze programu SharePoint.
+## <a name="module-items-and-elements"></a>Elementy modułu i elementy
+ Aby utworzyć moduł, Dodaj go do projektu, wybierając go w oknie dialogowym **Dodaj nowy element** . Następnie zmodyfikuj plik *. XML* , aby uwzględnić nazwy plików, które mają zostać wdrożone, gdzie znajdują się w systemie, i miejsce, w którym powinny być kopiowane na serwer programu SharePoint.
 
- Oto przykład *Elements.xml* pliku modułu:
+ Oto przykład pliku *Elements. XML* dla modułu:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -39,26 +39,26 @@ ms.locfileid: "63007844"
 
 ```
 
- Nowo utworzony moduły zawierają następujące domyślne pliki:
+ Nowo utworzone moduły zawierają następujące pliki domyślne:
 
 |Nazwa pliku|Opis|
 |---------------|-----------------|
-|*Elements.xml*|Plik definicji modułu.|
-|*Przykład.txt*|Plik zastępczy, który stanowi przykład pliku w module.|
+|*Elementy. XML*|Plik definicji modułu.|
+|*Sample. txt*|Plik zastępczy, który służy jako przykład pliku w module.|
 
- *Elements.xml* plik zawiera następujące elementy:
+ Plik *Elements. XML* zawiera następujące elementy:
 
 |Nazwa elementu|Opis|
 |------------------|-----------------|
 |Elementy|Zawiera wszystkie elementy zdefiniowane w module.|
-|Moduł|Element modułu ma jeden atrybut *nazwa*, który określa nazwę modułu w formacie `<Module Name="Module1">`.<br /><br /> Należy pamiętać, że jeśli zmienisz nazwę modułu (lub jego *nazwa folderu* właściwości), należy ręcznie zaktualizować nazwy w elemencie modułu.<br /><br /> Jeśli określisz podkatalogu dla plików w elemencie modułu [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] (WSS) automatycznie utworzy pasującego strukturę katalogów dla nich.|
-|Plik|Element plików ma dwa parametry *ścieżki* i *adresu Url*.<br /><br /> -Path: Nazwa i lokalizacja pliku rozwiązania programu SharePoint. Ten format jest, `Path="Module1\Sample.txt"`.<br /><br /> — Adres Url: Lokalizacja, w której plik zostanie wdrożony na serwerze programu SharePoint. Ten format jest, `Url="Module1/Sample.txt"`.<br /><br /> -Type: Opcjonalny atrybut, który ma dwa ustawienia: *GhostableInLibrary* i *Ghostable*. Ten format jest, `Type="GhostableInLibrary"`. Określanie *GhostableInLibrary* oznacza, że plik zostanie dodany do biblioteki dokumentów programu SharePoint wraz z elementu listy, aby dołączyć plik, gdy zostanie dodany do biblioteki. Określanie *Ghostable* powoduje, że plik ma zostać dodany do programu SharePoint spoza biblioteki dokumentów.|
+|Moduł|Element module ma pojedynczy atrybut o *nazwie*, który określa nazwę modułu w formacie `<Module Name="Module1">`.<br /><br /> Należy pamiętać, że jeśli zmienisz nazwę modułu (lub jego właściwość *Nazwa folderu* ), musisz ręcznie zaktualizować nazwę w elemencie modułu.<br /><br /> Jeśli określisz podkatalog dla plików w module, [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] (WSS) automatycznie utworzy zgodną strukturę katalogów.|
+|Plik|Element pliku ma dwa parametry, *ścieżkę* i *adres URL*.<br /><br /> -Path: Nazwa i lokalizacja pliku w rozwiązaniu programu SharePoint. Format to, `Path="Module1\Sample.txt"`.<br /><br /> -URL: lokalizacja, w której plik zostanie wdrożony na serwerze programu SharePoint. Format to, `Url="Module1/Sample.txt"`.<br /><br /> -Type: opcjonalny atrybut, który ma dwa ustawienia: *GhostableInLibrary* i *Ghost*. Format to, `Type="GhostableInLibrary"`. Określenie *GhostableInLibrary* oznacza, że plik zostanie dodany do biblioteki dokumentów w programie SharePoint wraz z elementem listy, który będzie dołączany do pliku, gdy zostanie dodany do biblioteki. Określenie opcji z *duplikowaniem* powoduje, że plik zostanie dodany do programu SharePoint poza biblioteką dokumentów.|
 
- Każdy plik, który chcesz wdrożyć, wymaga oddzielnego `<File>` element wpisu w *Elements.xml*.
+ Każdy plik, który chcesz wdrożyć, wymaga oddzielnego wpisu elementu `<File>` w *elementach. XML*.
 
 ## <a name="see-also"></a>Zobacz także
-- [Instrukcje: Dołączanie plików za pomocą modułu](../sharepoint/how-to-include-files-by-using-a-module.md)
-- [Jak: Aprowizowanie pliku](http://go.microsoft.com/fwlink/?LinkID=144271)
+- [Instrukcje: Dołączanie plików przy użyciu modułu](../sharepoint/how-to-include-files-by-using-a-module.md)
+- [Instrukcje: Inicjowanie obsługi pliku](/previous-versions/office/developer/sharepoint-2010/ms441170(v=office.14))
 - [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)
-- [Tworzenie składników web Part dla SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)
+- [Tworzenie składników Web Part dla programu SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)
 - [Pakowanie i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

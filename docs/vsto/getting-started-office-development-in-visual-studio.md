@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7a8a49f2b72745dac18a46fe8567578bca090834
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 1439bef59c621523b74f0e0634cd809deea1f3ee
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551497"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986061"
 ---
 # <a name="get-started-office-development-in-visual-studio"></a>Wprowadzenie (Programowanie Office w Visual Studio)
   Ta sekcja zawiera tematy, które ułatwiają rozpoczęcie pracy przy użyciu narzędzi deweloperskich Microsoft Office w programie Visual Studio.
@@ -33,7 +33,7 @@ ms.locfileid: "69551497"
 
 - [Zmiany projektu pakietu Office przeznaczone dla .NET Framework 4 lub .NET Framework 4,5](../vsto/changes-to-the-design-of-office-projects-that-target-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)
 
- Opisuje nowy projekt projektów pakietu Office, które są przeznaczone [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] dla programu lub nowszego, i wyświetla istotne zmiany w kodzie w projektach pakietu Office, [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] które są migrowane do programu lub nowszego.
+ Zawiera opis nowego projektu pakietu Office, który jest przeznaczony dla [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszego, i listę istotnych zmian w kodzie w projektach pakietu Office migrowanych do [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszych.
 
 - [Funkcje dostępne według aplikacji pakietu Office i typu projektu](../vsto/features-available-by-office-application-and-project-type.md)
 
@@ -88,4 +88,4 @@ ms.locfileid: "69551497"
 
  Zawiera informacje o sposobach udostępniania rozwiązań pakietu Office użytkownikom oraz opisuje główne problemy, które należy wziąć pod uwagę w przypadku wybrania metody wdrażania i ustawienia zabezpieczeń.
 
-- [Visual Studio Tools artykułów technicznych pakietu Office i wizualizacji, jak OT](http://go.microsoft.com/fwlink/?LinkID=106640) Zawiera linki do filmów wideo i artykułów technicznych dotyczących rozwiązań pakietu Office utworzonych przy użyciu programu Visual Studio.
+- [Visual Studio Tools artykułów technicznych pakietu Office i wizualizacji, jak OT](/previous-versions/office/developer/office-2007/bb871648(v=office.12)) Zawiera linki do filmów wideo i artykułów technicznych dotyczących rozwiązań pakietu Office utworzonych przy użyciu programu Visual Studio.

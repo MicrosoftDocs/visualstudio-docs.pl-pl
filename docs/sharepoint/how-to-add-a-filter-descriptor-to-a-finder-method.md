@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Dodawanie opisu filtru do metody wyszukiwania | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Dodawanie deskryptora filtru do metody wyszukiwania | Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,62 +15,62 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fceb6270aea9da5af1a53adf7560df7dd3702349
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f9dd853142d970cd14de20f4782accb3ce3e17eb
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418317"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986250"
 ---
-# <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>Instrukcje: Dodawanie opisu filtru do metody wyszukiwania
-  Deskryptory filtrów umożliwiają użytkownikom modelu do przekazania wartości do metod, przed ich wykonania. Aby uzyskać więcej informacji, zobacz [projektowanie modelu łączności danych biznesowych](../sharepoint/designing-a-business-data-connectivity-model.md).
+# <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>Instrukcje: Dodawanie deskryptora filtru do metody wyszukiwania
+  Deskryptory filtru umożliwiają odbiorcom modelu przekazywanie wartości do metod przed ich wykonaniem. Aby uzyskać więcej informacji, zobacz [Projektowanie modelu łączności danych firmowych](../sharepoint/designing-a-business-data-connectivity-model.md).
 
- Jeden typowy scenariusz polega na tym, że użytkownicy w programie SharePoint ma zostać pobrane wystąpienia typu zawartości zewnętrznej, które spełniają pewne kryteria. Aby obsługiwać ten scenariusz, dodawanie deskryptora filtru do metody wyszukiwania.
+ Typowym scenariuszem jest to, że użytkownicy w programie SharePoint chcą pobrać wystąpienia zewnętrznego typu zawartości, które pasują do niektórych kryteriów. Możesz obsłużyć ten scenariusz, dodając Deskryptor filtru do metody wyszukiwania.
 
 ### <a name="to-add-a-filter-descriptor-to-a-finder-method"></a>Aby dodać Deskryptor filtru do metody wyszukiwania
 
-1. W **szczegóły metody BDC** okna, rozwiń węzeł metody wyszukiwania, rozwiń **parametry** węzła, a następnie dodaj parametr wejściowy. Aby uzyskać więcej informacji, zobacz [jak: Dodaj parametr do metody](../sharepoint/how-to-add-a-parameter-to-a-method.md).
+1. W oknie **Szczegóły metody BDC** rozwiń węzeł metody wyszukiwania, rozwiń węzeł **Parametry** , a następnie Dodaj parametr wejściowy. Aby uzyskać więcej informacji, zobacz [How to: Add a Parameter to a Method](../sharepoint/how-to-add-a-parameter-to-a-method.md).
 
-2. W **szczegóły metody** oknie Wybierz deskryptor typu parametru.
+2. W oknie **Szczegóły metody** wybierz deskryptor typu parametru.
 
-3. Na pasku menu wybierz **widoku** > **okno właściwości**.
+3. Na pasku menu wybierz polecenie **wyświetl** > **okno właściwości**.
 
-4. W **właściwości** oknie **nazwy typu** właściwość do typu danych, która jest odpowiednia dla filtru.
+4. W oknie **Właściwości** ustaw właściwość **Nazwa typu** na typ danych, który jest odpowiedni dla filtra.
 
-     Filtr może na przykład użyć datę zamówienia, aby ograniczyć liczbę zamówień sprzedaży, zwracany przez metodę. Do obsługi z filtrem **nazwy typu** właściwości deskryptora typu musi być równa **System.DateTime**.
+     Na przykład filtr może użyć daty zamówienia, aby ograniczyć liczbę zamówień sprzedaży zwracanych przez metodę. Aby można było obsługiwać ten filtr, właściwość **Nazwa typu** deskryptora typu musi być ustawiona na **System. DateTime**.
 
-5. W **szczegóły metody** okna, rozwiń węzeł **deskryptory filtrów** węzła.
+5. W oknie **Szczegóły metody** rozwiń węzeł **deskryptory filtru** .
 
-6. W **Dodaj Deskryptor filtru** wybierz **Utwórz Deskryptor filtru**.
+6. Na liście **Dodaj Deskryptor filtru** wybierz pozycję **Utwórz Deskryptor filtru**.
 
-     Nowy Deskryptor filtru, który pojawia się poniżej **deskryptory filtrów** węzła.
+     Nowy Deskryptor filtru pojawia się pod węzłem **deskryptorów filtru** .
 
-7. Na pasku menu wybierz **widoku** > **okno właściwości**.
+7. Na pasku menu wybierz polecenie **wyświetl** > **okno właściwości**.
 
-8. W **właściwości** oknie Wybierz **typu** właściwości.
+8. W oknie **Właściwości** wybierz właściwość **Typ** .
 
-9. Na liście, który pojawia się dla **typu** właściwości filtrowania wzorzec, który chcesz wybrać.
+9. Na liście, która pojawia się dla właściwości **Typ** , wybierz odpowiedni wzorzec filtrowania.
 
-     Na przykład, aby utworzyć filtr, który używa datę zamówienia, aby ograniczyć liczbę zamówień sprzedaży zwrócony w metodę wyszukiwania, wybierz **porównania**. Filtr porównywania gwarantuje, że metody wyszukiwania zwraca tylko te wystąpienia, które spełniają określony warunek. Aby uzyskać więcej informacji na temat każdego wzorca filtrowania zobacz [typy z filtrów obsługiwane przez usługi łączności danych biznesowych](http://go.microsoft.com/fwlink/?LinkId=169287).
+     Na przykład, aby utworzyć filtr, który używa daty zamówienia, aby ograniczyć liczbę zamówień sprzedaży zwracanych w metodzie wyszukiwania, wybierz opcję **porównanie**. Filtr porównania zapewnia, że metoda wyszukiwania zwraca tylko te wystąpienia, które spełniają określony warunek. Aby uzyskać więcej informacji na temat poszczególnych wzorców filtrowania, zobacz [typy filtrów obsługiwanych przez ten kontroler BDC](/previous-versions/office/developer/sharepoint-2010/ee556392(v=office.14)).
 
-10. W **właściwości** oknie Wybierz **skojarzone deskryptory typu** właściwości.
+10. W oknie **Właściwości** wybierz **skojarzoną Właściwość deskryptorów typu** .
 
-11. Na liście, który pojawia się dla **skojarzone deskryptory typu** właściwości, wybierz deskryptor typu, który został utworzony we wcześniejszej części tej procedury. Filtr odnosi się do parametru wejściowego metody wyszukiwania.
+11. Na liście, która pojawia się dla właściwości **skojarzonej deskryptorów typu** , wybierz deskryptor typu, który został utworzony wcześniej w tej procedurze. Powoduje to odfiltrowanie filtru do parametru wejściowego metody wyszukiwania.
 
-12. Dodaj kod do metody wyszukiwania, która zwraca dane. Parametr wejściowy służy jako warunku w zapytaniu select.
+12. Dodaj kod do metody wyszukiwania, która zwraca dane. W zapytaniu SELECT można użyć parametru wejściowego jako warunku.
 
-     Poniższy przykład zwraca zamówień sprzedaży, datą w określonej kolejności.
+     Poniższy przykład zwraca zamówienia sprzedaży z określoną datą zamówienia.
 
     > [!NOTE]
-    > Zastąp wartość `ServerName` pole z nazwą serwera.
+    > Zastąp wartość pola `ServerName` nazwą serwera.
 
      [!code-csharp[SP_BDC#11](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderservice.cs#11)]
      [!code-vb[SP_BDC#11](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderservice.vb#11)]
 
 ## <a name="see-also"></a>Zobacz także
 - [Instrukcje: Dodawanie metody wyszukiwania](../sharepoint/how-to-add-a-finder-method.md)
-- [Instrukcje: Dodawanie określonej metody wyszukiwania](../sharepoint/how-to-add-a-specific-finder-method.md)
-- [Instrukcje: Dodaj parametr do metody](../sharepoint/how-to-add-a-parameter-to-a-method.md)
-- [Instrukcje: Określanie deskryptora typu parametru](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)
-- [Projektowanie modelu łączności danych biznesowych](../sharepoint/designing-a-business-data-connectivity-model.md)
-- [Integrowanie danych biznesowych programu SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)
+- [Instrukcje: dodawanie określonej metody wyszukiwania](../sharepoint/how-to-add-a-specific-finder-method.md)
+- [Instrukcje: Dodawanie parametru do metody](../sharepoint/how-to-add-a-parameter-to-a-method.md)
+- [Instrukcje: Definiowanie deskryptora typu dla parametru](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)
+- [Projektowanie modelu łączności danych firmy](../sharepoint/designing-a-business-data-connectivity-model.md)
+- [Integrowanie danych firmowych z programem SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)

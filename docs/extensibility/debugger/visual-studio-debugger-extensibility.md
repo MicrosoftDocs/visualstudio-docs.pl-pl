@@ -11,19 +11,19 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f8a1c2148f25a1e97cfd1369770e056d1cb907d
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 58bfec6fa09f6450afb8170d60acad39edacd590
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72568972"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72982456"
 ---
 # <a name="visual-studio-debugger-extensibility"></a>Rozszerzalność debugera programu Visual Studio
-Program Visual Studio zawiera w pełni interaktywny debuger kodu źródłowego, który zapewnia zaawansowane i łatwe w użyciu narzędzie do śledzenia błędów w programie. Debuger ma pełną obsługę Visual Basic, C#, C/C++i JavaScript. Jednak w przypadku [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], który jest dostępny w [Centrum pobierania Microsoft](http://go.microsoft.com/fwlink/?LinkId=214453), inne języki programowania mogą być obsługiwane w debugerze przy użyciu tych samych bogatych funkcji.
+Program Visual Studio zawiera w pełni interaktywny debuger kodu źródłowego, który zapewnia zaawansowane i łatwe w użyciu narzędzie do śledzenia błędów w programie. Debuger ma pełną obsługę Visual Basic, C#, C/C++i JavaScript. Jednak w przypadku [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], który jest dostępny w [Centrum pobierania Microsoft](https://www.microsoft.com/download/details.aspx?id=21835), inne języki programowania mogą być obsługiwane w debugerze przy użyciu tych samych bogatych funkcji.
 
  Debuger [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] jest typowym frontonem (czyli interfejsem użytkownika) do składników debugowania, które są z kolei charakterystyczne dla debugowanego języka. W przypadku nowych języków wszystkie te, które są niezbędne do obsługi przez debuger [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], to utworzenie niezbędnych składników zaplecza, takich jak aparat debugowania (Niemcy). Jest to miejsce, w którym znajduje się [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].
 
- @No__t_0 zawiera pełne odwołanie do wszystkich elementów [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] wymaganych do utworzenia nowego elementu DE. Ponadto istnieją przykłady i samouczki, które pomogą Ci rozpocząć pracę.
+ [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] zawiera pełne odwołanie do wszystkich elementów [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] wymaganych do utworzenia nowego elementu DE. Ponadto istnieją przykłady i samouczki, które pomogą Ci rozpocząć pracę.
 
  Aby uzyskać pełny przykład systemu projektu języka z obsługą debugowania, zobacz [przykład IronPython](https://www.microsoft.com/download/details.aspx?id=55984).
 
