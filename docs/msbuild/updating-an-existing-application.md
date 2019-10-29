@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf2b8669fe9b516f3150829612d6999895cc69f8
-ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
+ms.openlocfilehash: a891f6d18657bad65a1cf087da975849642b7aec
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72306254"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72912033"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>Aktualizowanie istniejącej aplikacji dla programu MSBuild 15
 
@@ -38,11 +38,11 @@ Mechanizm zmiany projektu, aby uniknąć ładowania MSBuild z centralnej lokaliz
 
 #### <a name="use-nuget-packages-preferred"></a>Użyj pakietów NuGet (preferowany)
 
-W tych instrukcjach przyjęto założenie, że używasz [odwołań NuGet w stylu PackageReference](https://docs.microsoft.com/nuget/consume-packages/package-references-in-project-files).
+W tych instrukcjach przyjęto założenie, że używasz [odwołań NuGet w stylu PackageReference](/nuget/consume-packages/package-references-in-project-files).
 
 Zmień pliki projektu, aby odwoływać się do zestawów MSBuild z ich pakietów NuGet. Określ `ExcludeAssets=runtime`, aby poinformować NuGet, że zestawy są konieczne tylko w czasie kompilacji, i nie powinny być kopiowane do katalogu wyjściowego.
 
-Wersja główna i pomocnicza pakietów MSBuild musi być mniejsza lub równa minimalnej wersji programu Visual Studio, która ma być obsługiwana. Jeśli na przykład chcesz obsługiwać program Visual Studio 2017 i jego nowsze wersje, wersja pakietu referencyjnego `15.1.548`.
+Wersja główna i pomocnicza pakietów MSBuild musi być mniejsza lub równa minimalnej wersji programu Visual Studio, która ma być obsługiwana. Jeśli na przykład chcesz obsługiwać program Visual Studio 2017 i jego nowsze wersje, `15.1.548`wersja pakietu referencyjnego.
 
 Na przykład można użyć tego kodu XML:
 
@@ -69,7 +69,7 @@ Odwołuje się do pakietu Microsoft. Build. Locator, aby upewnić się, że apli
 
 ### <a name="ensure-output-is-clean"></a>Upewnij się, że dane wyjściowe są czyste
 
-Kompilowanie projektu i Sprawdź katalog wyjściowy, aby upewnić się, że nie zawiera żadnego *Microsoft.Build.\* Biblioteka DLL* zestawów innych niż *Microsoft.Build.Locator.dll*dodano w następnym kroku.
+Skompiluj projekt i Sprawdź katalog wyjściowy, aby upewnić się, że nie zawiera on zestawów *Microsoft. Build.\*. dll* innych niż *Microsoft. Build. Locator. dll*, które dodano w następnym kroku.
 
 ### <a name="add-package-reference-for-microsoftbuildlocator"></a>Dodawanie odwołania do pakietu dla elementu Microsoft. Build. Locator
 
@@ -81,7 +81,7 @@ Dodaj odwołanie do pakietu NuGet dla elementu [Microsoft. Build. Locator](https
     </PackageReference>
 ```
 
-Nie należy określać `ExcludeAssets=runtime` dla pakietu Microsoft. Build. Locator.
+Nie określaj `ExcludeAssets=runtime` pakietu Microsoft. Build. Locator.
 
 ### <a name="register-instance-before-calling-msbuild"></a>Zarejestruj wystąpienie przed wywołaniem MSBuild
 
@@ -95,4 +95,4 @@ MSBuildLocator.RegisterDefaults();
 
 w kodzie uruchomienia aplikacji.
 
-Jeśli chcesz mieć precyzyjną kontrolę nad ładowaniem programu MSBuild, możesz wybrać wynik `MSBuildLocator.QueryVisualStudioInstances()` do przekazania do `MSBuildLocator.RegisterInstance()` ręcznie, ale zazwyczaj nie jest to konieczne.
+Jeśli chcesz mieć precyzyjną kontrolę nad ładowaniem MSBuild, możesz wybrać wynik `MSBuildLocator.QueryVisualStudioInstances()` do przekazania do `MSBuildLocator.RegisterInstance()` ręcznie, ale zazwyczaj nie jest to konieczne.
