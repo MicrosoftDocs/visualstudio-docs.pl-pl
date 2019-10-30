@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3f2537b5a56e2d3be9fd6129c3733e9a82c150e
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 6257ce96e139e173fca804221b495f7467fc6b20
+ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72910560"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73024652"
 ---
 # <a name="da0012-significant-amount-of-reflection"></a>DA0012: Znaczne odbicie
 
@@ -36,7 +36,7 @@ ms.locfileid: "72910560"
 ## <a name="rule-description"></a>Opis reguły
  Odbicie jest elastyczną funkcją .NET Framework, która może służyć do wykonywania późnego powiązania aplikacji z zależnym zestawem czasu wykonywania lub do tworzenia i dynamicznego wykonywania nowych typów w czasie wykonywania. Jednak te techniki mogą zmniejszyć wydajność, jeśli są używane często lub wywoływane w ścisłych pętlach.
 
- Aby uzyskać więcej informacji, zobacz sekcję [odbicie i późne wiązanie](/previous-versions/msp-n-p/ff647790(v=pandp.10)#scalenetchapt05_topic31) w rozdziale 5 — Poprawianie wydajności kodu zarządzanego w celu zwiększenia wydajności aplikacji .NET i skalowalności biblioteki wzorców i praktyk firmy Microsoft w witrynie MSDN.
+ Aby uzyskać więcej informacji, zobacz sekcję [odbicie i późne wiązanie](/previous-versions/msp-n-p/ff647790(v=pandp.10)#reflection-and-late-binding) w rozdziale 5 — Poprawianie wydajności kodu zarządzanego w celu zwiększenia wydajności aplikacji .NET i skalowalności biblioteki wzorców i praktyk firmy Microsoft w witrynie MSDN.
 
 ## <a name="how-to-investigate-a-warning"></a>Jak zbadać ostrzeżenie
  Kliknij dwukrotnie komunikat w oknie Lista błędów, aby przejść do [widoku Szczegóły funkcji](../profiling/function-details-view.md) danych profilowania. Sprawdź wywołania funkcji metody System. Type lub system. odbicie, aby znaleźć sekcje programu, które najczęściej wykorzystują interfejsy API odbicia programu .NET. Unikaj używania metod, które zwracają metadane. Gdy wydajność aplikacji jest krytyczna, może być konieczne uniknięcie używania późnego powiązania i tworzenia typów dynamicznie w czasie wykonywania.

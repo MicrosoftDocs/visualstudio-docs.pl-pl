@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da45af92a11cfe61d5027d0710304e57ad657e48
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f4b9f55f0dc7d2b0a9fb57fa6177cd8a250f6f62
+ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653848"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73024837"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Znajdowanie zmian w kodzie i innych elementów historii kodu za pomocą funkcji CodeLens
 
@@ -217,7 +217,7 @@ Możesz odnaleźć testy jednostkowe, które istnieją dla C# kodu lub Visual Ba
 
 1. Przejdź do kodu aplikacji, który ma skojarzony [kod testu jednostkowego](../test/unit-test-your-code.md).
 
-2. Jeśli jeszcze tego nie zrobiono, skompiluj aplikację w celu załadowania wskaźników testu CodeLens. Upewnij się [, że funkcja odnajdywania przez skompilowane zestawy](../test/test-explorer-faq.md#assembly-based-discovery) jest włączona.
+2. Jeśli jeszcze tego nie zrobiono, skompiluj aplikację w celu załadowania wskaźników testu CodeLens. 
 
 3. Przejrzyj testy dla kodu, naciskając klawisz **Alt** +**3**.
 
@@ -231,7 +231,7 @@ Możesz odnaleźć testy jednostkowe, które istnieją dla C# kodu lub Visual Ba
 
      ![CodeLens — przejdź do definicji testu jednostkowego](../ide/media/codelens-unit-test-definition.png)
 
-6. Aby przejrzeć wyniki testu, wybierz pozycję wskaźnik stanu testu (![test ikona niepowodzenia ](../ide/media/codelenstestfailedicon.png) lub ![test przekazaną ikonę ](../ide/media/codelenstestpassedicon.png)) lub naciśnij klawisz **Alt** +**1**.
+6. Aby przejrzeć wyniki testu, wybierz ikonę wskaźnik stanu testu (![nie powiodła się ikona](../ide/media/codelenstestfailedicon.png) lub ![zakończono test](../ide/media/codelenstestpassedicon.png)) lub naciśnij **kombinację klawiszy Alt**+**1**.
 
      ![CodeLens — Zobacz wyniki testu jednostkowego](../ide/media/codelens-unit-test-result.png)
 
@@ -322,7 +322,7 @@ Aby użyć klawiatury:
 
 ### <a name="q-can-i-move-the-codelens-heads-up-display"></a>Pyt.: Czy można przesunąć ekran projekcyjny CodeLens?
 
-Odp **.:** Tak, wybierz ![Dock ikonę ](../ide/media/codelensdockwindow.png), aby zadokować CodeLens jako okno.
+Odp **.:** Tak, wybierz ![ikonę dokowania](../ide/media/codelensdockwindow.png), aby zadokować CodeLens jako okno.
 
 ![Przycisk Dock w oknie wskaźnika CodeLens](../ide/media/codelensselectdockwindow.png)
 
@@ -352,8 +352,7 @@ Odp **.:** Opcję. Jeśli Twój kod znajduje się w programie TFS, użyj [polece
 
 ### <a name="q-my-codelens-test-indicators-no-longer-appear-in-my-file-when-i-first-open-my-solution-how-can-i-load-them"></a>P: moje CodeLens wskaźniki testowe nie pojawiają się już w moim pliku po pierwszym otwarciu rozwiązania. Jak można je załadować?
 
-Odp **.:** Skompiluj ponownie projekt, aby uzyskać CodeLens wskaźniki testów do załadowania pliku. Upewnij się [, że funkcja odnajdywania przez skompilowane zestawy](../test/test-explorer-faq.md#assembly-based-discovery
-) jest włączona. Aby zwiększyć wydajność, program Visual Studio nie pobiera więcej informacji o źródłach dla wskaźników testów podczas ładowania plików kodu. Wskaźniki testowe są ładowane po kompilacji lub po przejściu do testu przez dwukrotne kliknięcie go w **Eksploratorze testów**.
+Odp **.:** Skompiluj ponownie projekt, aby uzyskać CodeLens wskaźniki testów do załadowania pliku. Aby zwiększyć wydajność, program Visual Studio nie pobiera więcej informacji o źródłach dla wskaźników testów podczas ładowania plików kodu. Wskaźniki testowe są ładowane po kompilacji lub po przejściu do testu przez dwukrotne kliknięcie go w **Eksploratorze testów**.
 
 ## <a name="see-also"></a>Zobacz także
 

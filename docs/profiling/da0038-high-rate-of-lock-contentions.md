@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1143da15ca682e9c3b748fbc853bcfce78f72bb
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 43b4ddedf68d082c8de50a38f759c5db0a594d00
+ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72910185"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73024679"
 ---
 # <a name="da0038-high-rate-of-lock-contentions"></a>DA0038: wysoki współczynnik rywalizacji o blokadę
 
@@ -37,7 +37,7 @@ ms.locfileid: "72910185"
 ## <a name="rule-description"></a>Opis reguły
  Blokady są używane do ochrony krytycznych sekcji kodu, które muszą być wykonywane sekwencyjnie przez jeden wątek na raz w aplikacji wielowątkowej. Microsoft .NET Common Language Run-Time (CLR) zawiera pełny zestaw synchronizacji i blokowania elementów podstawowych. Na przykład C# język obsługuje instrukcję Lock (SyncLock w Visual Basic). Aplikacja zarządzana może wywołać monitor. w przestrzeni nazw System. Threading należy wprowadzać i monitorować metody. Exit, aby bezpośrednio uzyskać i zwolnić blokadę. .NET Framework obsługuje dodatkowe synchronizacje i blokowanie elementów pierwotnych, w tym klas, które obsługują muteksy, ReaderWriterLocks i semafory. Aby uzyskać więcej informacji, zobacz [Omówienie elementów pierwotnych synchronizacji](/dotnet/standard/threading/overview-of-synchronization-primitives) w podręczniku .NET Framework dewelopera w witrynie MSDN w sieci Web. Klasy .NET Framework są same warstwowo za pośrednictwem usług synchronizacji niższego poziomu wbudowanych w system operacyjny Windows. Obejmują one krytyczne obiekty sekcji i wiele różnych funkcji oczekiwania i sygnalizacji zdarzeń. Aby uzyskać więcej informacji, zobacz sekcję [Synchronizacja](/windows/win32/sync/synchronization) w temacie programowanie Win32 i com w bibliotece MSDN.
 
- Podstawową klasą .NET Framework i natywnych obiektów systemu Windows, które są używane na potrzeby synchronizacji i blokowania, są lokalizacje pamięci udostępnionej, które należy zmienić przy użyciu operacji zablokowanych. Operacje wykonywane w sposób nieblokowany wykorzystują instrukcje specyficzne dla sprzętu, które działają w lokalizacjach udostępnionych pamięci, aby zmienić ich stan przy użyciu operacji niepodzielnych. Operacje niepodzielne są gwarantowane dla wszystkich procesorów na komputerze. Blokady i elementy WaitHandle są obiektami .NET, które automatycznie używają operacji zablokowanych, gdy są one ustawione lub resetowane. W aplikacji mogą istnieć inne struktury danych pamięci współdzielonej, które wymagają, aby można było je aktualizować w sposób bezpieczny dla wątków. Aby uzyskać więcej informacji, zobacz sekcję [operacje zablokowane](/dotnet/api/system.threading.interlocked&view=netframework-4.8) w sekcji .NET Framework w bibliotece MSDN.
+ Podstawową klasą .NET Framework i natywnych obiektów systemu Windows, które są używane na potrzeby synchronizacji i blokowania, są lokalizacje pamięci udostępnionej, które należy zmienić przy użyciu operacji zablokowanych. Operacje wykonywane w sposób nieblokowany wykorzystują instrukcje specyficzne dla sprzętu, które działają w lokalizacjach udostępnionych pamięci, aby zmienić ich stan przy użyciu operacji niepodzielnych. Operacje niepodzielne są gwarantowane dla wszystkich procesorów na komputerze. Blokady i elementy WaitHandle są obiektami .NET, które automatycznie używają operacji zablokowanych, gdy są one ustawione lub resetowane. W aplikacji mogą istnieć inne struktury danych pamięci współdzielonej, które wymagają, aby można było je aktualizować w sposób bezpieczny dla wątków. Aby uzyskać więcej informacji, zobacz sekcję [operacje zablokowane](/dotnet/api/system.threading.interlocked) w sekcji .NET Framework w bibliotece MSDN.
 
  Synchronizacja i blokowanie to mechanizmy stosowane w celu zapewnienia poprawnego wykonywania aplikacji wielowątkowych. Każdy wątek aplikacji wielowątkowej jest niezależną jednostką wykonywania zaplanowaną niezależnie od systemu operacyjnego. Rywalizacja o blokady występuje zawsze, gdy wątek próbujący uzyskać blokadę jest opóźniony, ponieważ inny wątek utrzymuje blokadę.
 

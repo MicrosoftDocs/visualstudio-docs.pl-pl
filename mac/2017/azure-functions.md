@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: cf3fa0bf2c0e0ff112a176b10eb7e50e07f83d5a
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
+ms.openlocfilehash: 6755f6fd681dac87741b9de6a8d1fcd123a8ad9b
+ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70107885"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73024702"
 ---
 # <a name="introduction-to-azure-functions"></a>Wprowadzenie do usługi Azure Functions
 
@@ -21,7 +21,7 @@ Usługa Azure Functions to sposób tworzenia i uruchamiania fragmentów kodu opa
 
 Narzędzia usługi Azure Functions są zawarte w **Visual Studio dla komputerów Mac 7,5**.
 
-Aby tworzyć i wdrażać funkcje, należy również uzyskać subskrypcję platformy Azure, która jest dostępna [https://azure.com/free](https://azure.com/free)bezpłatnie z programu.
+Aby tworzyć i wdrażać funkcje, należy również uzyskać subskrypcję platformy Azure, która jest dostępna bezpłatnie z poziomu [https://azure.com/free](https://azure.com/free).
 
 ## <a name="creating-your-first-azure-functions-project"></a>Tworzenie pierwszego projektu Azure Functions
 
@@ -68,7 +68,7 @@ Dzięki obsłudze Azure Functions w Visual Studio dla komputerów Mac można tes
 
     Skopiuj adres URL z danych wyjściowych.
 
-3. Wklej adres URL żądania HTTP na pasku adresu przeglądarki. Dodaj ciąg `?name=<yourname>` zapytania na końcu adresu URL i wykonaj żądanie. Na poniższej ilustracji przedstawiono odpowiedź w przeglądarce do lokalnego żądania GET zwróconego przez funkcję:
+3. Wklej adres URL żądania HTTP na pasku adresu przeglądarki. Dodaj ciąg zapytania `?name=<yourname>` na końcu adresu URL i wykonaj żądanie. Na poniższej ilustracji przedstawiono odpowiedź w przeglądarce do lokalnego żądania GET zwróconego przez funkcję:
 
     ![żądanie HTTP w przeglądarce](media/azure-functions-httpreq.png)
 
@@ -90,20 +90,20 @@ Korzystając z powyższej procedury, można dodać więcej funkcji do projektu a
 
 ## <a name="publish-to-azure"></a>Publikowanie na platformie Azure
 
-1. Kliknij prawym przyciskiem myszy nazwę projektu i wybierz pozycję **publikuj > Opublikuj na platformie Azure**:  ![Opcja menu Publikuj w systemie Azure](media/azure-functions-image5.png)
+1. Kliknij prawym przyciskiem myszy nazwę projektu i wybierz opcję **publikuj > publikowanie na platformie Azure**: ![opcji Publikuj w usłudze azure menu](media/azure-functions-image5.png)
 2. Jeśli masz już połączenie z kontem platformy Azure w celu Visual Studio dla komputerów Mac zostanie wyświetlona lista dostępnych usług App Services. Jeśli użytkownik nie zalogował się, zostanie wyświetlony odpowiedni monit.
 3. W oknie dialogowym **Publikowanie w Azure App Service** możesz wybrać istniejącą usługę App Service lub utworzyć nową, klikając przycisk **Nowy**.
-4. W oknie dialogowym **Tworzenie nowego App Service** wprowadź ustawienia:  ![Opcja menu Publikuj w systemie Azure](media/azure-functions-image7.png)
+4. W oknie dialogowym **Tworzenie nowego App Service** wprowadź ustawienia: ![opcja Publikuj w usłudze azure menu](media/azure-functions-image7.png)
 
     |Ustawienie  |Opis  |
     |---------|---------|
     |**Nazwa App Service**|Globalnie unikatowa nazwa identyfikująca nową aplikację funkcji.|
-    |**Subskrypcja**|Subskrypcja platformy Azure do użycia.|
-    |**[Grupa zasobów](/azure/azure-resource-manager/resource-group-overview)**|Nazwa grupy zasobów, w której ma zostać utworzona aplikacja funkcji. Wybierz **+** opcję utworzenia nowej grupy zasobów.|
+    |**Ramach**|Subskrypcja platformy Azure do użycia.|
+    |**[Grupa zasobów](/azure/azure-resource-manager/resource-group-overview)**|Nazwa grupy zasobów, w której ma zostać utworzona aplikacja funkcji. Wybierz **+** , aby utworzyć nową grupę zasobów.|
     |**[Plan usługi](/azure/azure-functions/functions-scale)**|Wybierz istniejący plan lub Utwórz plan niestandardowy. Wybierz lokalizację w regionie blisko siebie lub w niemal innych usługach, do których dostęp ma funkcja.|
 
     > [!CAUTION]
-    > Istnieje usterka w wersji 7,6 Visual Studio dla komputerów Mac, która spowoduje niepowodzenie publikowania w przypadku wystąpienia błędu aprowizacji w przypadku próby utworzenia niestandardowego planu usługi z cennikiem ustawionym na **użycie**. Ten problem zostanie rozwiązany w następnej wersji usługi.
+    > Istnieje usterka w wersji 7,6 Visual Studio dla komputerów Mac, która spowoduje niepowodzenie publikowania w przypadku wystąpienia błędu aprowizacji w przypadku próby utworzenia niestandardowego planu usługi z **cennikiem** ustawionym na **użycie**. Ten problem zostanie rozwiązany w następnej wersji usługi.
 
 5. Kliknij przycisk **dalej** , aby utworzyć konto magazynu. Konto usługi Azure Storage jest wymagane przez środowisko uruchomieniowe funkcji. Kliknij pozycję **niestandardowy** , aby utworzyć konto magazynu ogólnego przeznaczenia, lub Użyj istniejącego:
 
@@ -116,13 +116,13 @@ Korzystając z powyższej procedury, można dodać więcej funkcji do projektu a
     ![Opcja menu Publikuj w systemie Azure](media/azure-functions-image12.png)
 
 > [!CAUTION]
-> Istnieje usterka w wersji 7,6 Visual Studio dla komputerów Mac, w której `FUNCTIONS_EXTENSION_VERSION` nie ustawiono prawidłowo "beta", co oznacza, że funkcja może nie działać. Aby rozwiązać ten problem, przejdź do [ustawień aplikacji funkcji](#function-app-settings) i ustaw `FUNCTIONS_EXTENSION_VERSION` wartość "-1" na "beta".
+> Istnieje usterka w wersji 7,6 Visual Studio dla komputerów Mac, w której `FUNCTIONS_EXTENSION_VERSION` nie został poprawnie ustawiony na wartość "beta", co oznacza, że funkcja może nie działać. Aby rozwiązać ten problem, przejdź do [ustawień aplikacji funkcji](#function-app-settings) i ustaw `FUNCTIONS_EXTENSION_VERSION` od "-1" na "beta".
 
 ## <a name="function-app-settings"></a>Ustawienia aplikacji funkcji
 
 Wszystkie ustawienia dodane w pliku Local. Settings. JSON należy również dodać do aplikacji funkcji na platformie Azure. Te ustawienia nie są przekazywane automatycznie po opublikowaniu projektu.
 
-Aby uzyskać dostęp do ustawień aplikacji, przejdź do witryny Azure Portal [https://ms.portal.azure.com/](https://ms.portal.azure.com/)pod adresem. W obszarze **aplikacje funkcje**wybierz pozycję **aplikacje funkcji** i wyróżnij nazwę funkcji:
+Aby uzyskać dostęp do ustawień aplikacji, przejdź do witryny Azure Portal pod adresem [https://ms.portal.azure.com/](https://ms.portal.azure.com/). W obszarze **aplikacje funkcje**wybierz pozycję **aplikacje funkcji** i wyróżnij nazwę funkcji:
 
 ![menu usługi Azure Functions](media/azure-functions-image9.png)
 
@@ -134,7 +134,7 @@ W tym miejscu możesz ustawić ustawienia aplikacji dla aplikacji funkcji, w kt�
 
 ![Obszar ustawień aplikacji w witrynie Azure Portal](media/azure-functions-image11.png)
 
-Jednym z ważnych ustawień może być konieczne ustawienie wartości `FUNCTIONS_EXTENSION_VERSION`. W przypadku publikowania z Visual Studio dla komputerów Mac należy ustawić wartość **beta**.
+Jednym z ważnych ustawień może być konieczne ustawienie `FUNCTIONS_EXTENSION_VERSION`. W przypadku publikowania z Visual Studio dla komputerów Mac należy ustawić wartość **beta**.
 
 ## <a name="available-function-templates"></a>Dostępne szablony funkcji
 
@@ -160,4 +160,4 @@ Jednym z ważnych ustawień może być konieczne ustawienie wartości `FUNCTIONS
 
 - Wskaźnik **rozmiaru obrazu** — ta funkcja tworzy obrazy o zmienionym rozmiarze za każdym razem, gdy obiekt BLOB zostanie dodany do kontenera. Szablon przyjmuje ścieżkę i parametry połączenia dla wyzwalacza, niewielką wartość wyjściową obrazu oraz średnią wartość wyjściową obrazu.
 
-- **Token sygnatury** dostępu współdzielonego — ta funkcja generuje token sygnatury dostępu współdzielonego dla danego kontenera usługi Azure Storage i nazwy obiektu BLOB. Oprócz nazwy funkcji ten szablon przyjmuje również właściwość Path i Connection. Właściwość Path jest ścieżką w ramach konta magazynu, który będzie monitorowany przez wyzwalacz. Konto połączenia to nazwa ustawienia aplikacji zawierającego parametry połączenia konta magazynu. Należy również ustawić **prawa dostępu** . Poziom autoryzacji kontroluje, czy funkcja wymaga klucza interfejsu API i klucza, który ma być używany; Funkcja używa klucza funkcji; Administrator używa klucza głównego. Aby uzyskać więcej informacji, zobacz [ C# funkcja platformy Azure do generowania](https://azure.microsoft.com/resources/samples/functions-dotnet-sas-token/) przykładu tokenów SAS.
+- **Token sygnatury dostępu współdzielonego** — ta funkcja generuje token sygnatury dostępu współdzielonego dla danego kontenera usługi Azure Storage i nazwy obiektu BLOB. Oprócz nazwy funkcji ten szablon przyjmuje również właściwość Path i Connection. Właściwość Path jest ścieżką w ramach konta magazynu, który będzie monitorowany przez wyzwalacz. Konto połączenia to nazwa ustawienia aplikacji zawierającego parametry połączenia konta magazynu. Należy również ustawić **prawa dostępu** . Poziom autoryzacji kontroluje, czy funkcja wymaga klucza interfejsu API i klucza, który ma być używany; Funkcja używa klucza funkcji; Administrator używa klucza głównego. Aby uzyskać więcej informacji, zobacz [ C# funkcja platformy Azure do generowania przykładu tokenów SAS](https://github.com/Azure-Samples/functions-dotnet-sas-token/) .
