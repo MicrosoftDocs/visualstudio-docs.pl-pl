@@ -1,5 +1,5 @@
 ---
-title: Sesja wydajności — omówienie | Dokumentacja firmy Microsoft
+title: Przegląd sesji wydajności | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,68 +11,68 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 350f6d6d087ebef07ff3113b081f1742db7012c2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 545a77791d7bc5318dc17d869c510fb4e8a0787f
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62798397"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189350"
 ---
 # <a name="performance-session-overview"></a>Sesja wydajności — omówienie
-W tym omówieniu przedstawiono podstawowe informacje profilowania. Zobaczą deweloperzy, którzy dopiero wydajności pracy sposób, w jaki [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profiling Tools może pomóc im szybko stać się wydajność i zwiększyć wydajność swój kod. Deweloperzy, którzy doświadczenie w profilowania można zapoznać się z określonych funkcji narzędzi profilowania i procesów.
+W tym omówieniu wyjaśniono podstawowe informacje dotyczące profilowania. Deweloperzy, którzy są nowością w pracy, zobaczą, jak narzędzia profilowania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] mogą pomóc im szybko i zwiększyć wydajność kodu. Deweloperzy znający profilowanie mogą uzyskać przegląd określonych funkcji i procesów narzędzia profilowania.
 
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Narzędzia profilowania pomagają zidentyfikować problemy z wydajnością w kodzie źródłowym i porównać wydajność możliwych rozwiązań. Profilowanie kreatorów narzędzia i ustawienia domyślne daje natychmiastowy wgląd w wiele problemów z wydajnością. Funkcje i opcje Profiling Tools zapewniają dokładną kontrolę nad procesem profilowania. Ten formant obejmuje dokładne wartości docelowej sekcji kodu, zbieranie informacji o czasie na poziomie bloku i włączenia dodatkowe dane dotyczące wydajności procesora i systemu w danych.
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia profilowania ułatwia identyfikowanie problemów z wydajnością w kodzie źródłowym i porównanie wydajności możliwych rozwiązań. Kreatory narzędzia profilowania i ustawienia domyślne mogą dać natychmiastowy wgląd w wiele problemów z wydajnością. Funkcje i opcje narzędzia profilowania zapewniają dokładną kontrolę nad procesem profilowania. Ta kontrolka obejmuje precyzyjne kierowanie sekcji kodu, zbieranie informacji o chronometrażu na poziomie bloku oraz uwzględnianie dodatkowych danych dotyczących procesora i wydajności systemu w danych.
 
- Poniższe kroki tworzą proces basic przy użyciu narzędzi profilowania:
+ Poniższe kroki składają się na podstawowy proces przy użyciu narzędzia profilowania:
 
-1. Konfigurowanie sesji wydajności, określając metod zbierania i dane, które mają być zbierane.
+1. Skonfiguruj sesję wydajności, określając metodę kolekcji i dane, które mają być zbierane.
 
-2. Zbieranie danych profilowania, uruchamiając aplikację w sesji wydajności.
+2. Zbieranie danych profilowania przez uruchomienie aplikacji w sesji wydajności.
 
-3. Analizowanie danych, aby zidentyfikować problem z wydajnością.
+3. Analizuj dane, aby zidentyfikować problem z wydajnością.
 
-4. Modyfikowanie kodu w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zintegrowanego środowiska programistycznego (IDE) do zwiększa wydajność aplikacji, kodu
+4. Zmodyfikuj kod w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zintegrowanego środowiska programistycznego (IDE), aby zwiększyć wydajność aplikacji w kodzie
 
-5. Zbieranie danych profilowania na zmiany kodu i porównywanie danych profilowania, oryginalnym i zmienionych danych.
+5. Zbierz dane profilowania dla zmienionego kodu i Porównaj dane profilowania oryginalnych i zmienionych danych.
 
-6. Generowanie raportu, która dokumentuje wzrost wydajności.
+6. Generowanie raportu, który dokumentuje wzrost wydajności.
 
-   Aby pracować z informacjami, które są dostarczane przez profilowanie, powinny mieć informacji o symbolach dostępna dla plików binarnych, które chcesz przeprowadzić profilowanie, jak i dla danych binarnych systemu operacyjnego Windows.
+   Aby można było korzystać z informacji dostarczanych przez profilowanie, należy uzyskać informacje o symbolach dla plików binarnych, które mają być profilowe, oraz dla plików binarnych systemu operacyjnego Windows.
 
 ## <a name="configure-the-performance-session"></a>Konfigurowanie sesji wydajności
- Aby skonfigurować sesję profilowania, wybierz metody profilowania, którego chcesz używać i dane, które mają być zbierane. Narzędzia profilowania **kreatora wydajności** mogą ukierunkować za pomocą konfiguracji podstawowej oraz na stronach właściwości sesji wydajności można użyć, aby dodać więcej opcji:
+ Aby skonfigurować sesję profilowania, wybierz metodę profilowania, która ma być używana, oraz dane, które mają być zbierane. **Kreator wydajności** narzędzia profilowania może przeprowadzić Cię przez konfigurację podstawową i można użyć stron właściwości sesji wydajności, aby dodać więcej opcji:
 
-- Metody profilowania to próbkowania, śledzenie i alokacji pamięci.
+- Metody profilowania obejmują próbkowanie, śledzenie i alokację pamięci.
 
-- Dane obejmują czas procesora i liczniki wydajności systemu operacyjnego i aplikacji zdarzenia, takie jak błędy stron i przejścia jądra.
+- Wartości danych obejmują licznik czasu, procesora i wydajności systemu operacyjnego oraz zdarzenia aplikacji, takie jak błędy stron i przejścia jądra.
 
-  Możesz skonfigurować sesję pomiaru wydajności w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu jako część rozwiązania projektu lub dowolne dane binarne, przy użyciu profilu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE. Można określić właściwości sesji na stronach właściwości sesji wydajności, lub można użyć Kreatora profilowania.
+  Sesję wydajności można skonfigurować w projekcie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] jako część rozwiązania projektu lub profilować dowolne pliki binarne za pomocą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE. Właściwości sesji można określić na stronie właściwości sesji wydajności. można też użyć Kreatora profilowania.
 
 ## <a name="collect-profiling-data"></a>Zbieranie danych profilowania
- Rozpocznij zbierania danych z profilowania **Eksplorator wydajności**. Można wstrzymać i wznowić profilowanie, aby ograniczyć ilość zbieranych danych. Można także dołączyć do procesu, który jest już uruchomiony.
+ Możesz rozpocząć zbieranie danych profilowania z **Eksplorator wydajności**. Można wstrzymywać i wznawiać profilowanie, aby ograniczyć ilość zbieranych danych. Możesz również dołączyć do procesu, który jest już uruchomiony.
 
- Zaraz po uruchomieniu aplikacji program **kontroli zbierania danych** okno pojawia się w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE. Z **kontroli zbierania danych** oknie określonych części aplikacji można profilować, wstrzymywanie i wznawianie procesu zbierania. Można również użyć **kontroli zbierania danych** okna i wstaw znaczniki w dane, które są zbierane. Znaczniki są punkty danych zdefiniowanych przez użytkownika, które są wyświetlane w widokach profilu i który może służyć do filtrowania danych profilowania.
+ Gdy tylko aplikacja zostanie uruchomiona, okno **Kontrola zbierania danych** zostanie wyświetlone w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE. Z okna **Kontrola zbierania danych** można profilować konkretne części aplikacji przez wstrzymywanie i wznawianie procesu kolekcjonowania. Możesz również użyć okna **Kontrola zbierania danych** , aby wstawić znaczniki do zbieranych danych. Znaczniki to zdefiniowane przez użytkownika punkty danych, które są wyświetlane w widokach profilów i mogą służyć do filtrowania danych profilowania.
 
- Podczas zamykania aplikacji docelowej, Profiling Tools generuje plik danych profilowania (*.vsp) i wyświetla widok raport z podsumowaniem w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE.
+ Gdy aplikacja docelowa zostanie ZAMKNIĘTA, narzędzia profilowania generuje plik danych profilowania (*. vsp) i wyświetla widok raportu podsumowania w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE.
 
-## <a name="analyze-the-data-and-identify-performance-issues"></a>Analizowanie danych i zidentyfikować problemy z wydajnością
- Po zakończeniu przebiegu profilowania te dane są analizowane i w narzędziach profilowania zostanie wyświetlone podsumowanie **raport dotyczący wydajności** wyświetlania systemu windows. Dane profilowania są zbierane dla stosu wywołań i poszczególnych funkcji w aplikacji docelowej. Raport widoków wyświetlanie analizy wydajności zakresy danych procesy, wątki, modułów, funkcji i wierszy kodu źródłowego aplikacji. Dane profilowania wartości dla funkcji są następujące:
+## <a name="analyze-the-data-and-identify-performance-issues"></a>Analizowanie danych i identyfikowanie problemów z wydajnością
+ Po zakończeniu przebiegu profilowania dane są analizowane, a podsumowanie jest wyświetlane w oknach widoku **raportu wydajności** narzędzia profilowania. Dane profilowania są zbierane dla stosu wywołań i poszczególnych funkcji aplikacji docelowej. Widoki raportów wyświetlają analizę wydajności dla zakresów danych procesów, wątków, modułów, funkcji i wierszy kodu źródłowego aplikacji. Profilowania wartości danych dla funkcji są następujące:
 
-- Całkowity czas spędzony w funkcji i funkcji podrzędnych, które zostały wywołane przez funkcję (wartości włącznie).
+- Całkowity czas spędzony w funkcji i w funkcjach podrzędnych, które zostały wywołane przez funkcję (wartości włącznie).
 
-- Czas, jaki był poświęcony na wykonywanie tylko kod w funkcji (wyłączne wartości).
+- Czas spędzony na wykonywaniu tylko kodu w funkcji (wartości wyłączne).
 
-  Ponad 12 różne widoki umożliwiają analizowanie danych profilowania w najbardziej efektywny sposób. Dostosowania widoków umożliwiają filtrowanie i sortowanie danych znajdują się funkcje, które mogą być przyczyną problemów z wydajnością. Filtrowanie gorącej ścieżki zawiera wyróżnienie najbardziej aktywnych ścieżek w widokach drzewo wywołań i moduł.
+  Ponad dwanaście różnych widoków umożliwia analizowanie danych profilowania w najbardziej efektywny sposób. Widok dostosowania umożliwia filtrowanie i sortowanie danych w celu znalezienia funkcji, które mogą powodować problemy z wydajnością. Filtrowanie ścieżek aktywnych umożliwia natychmiastowe wyróżnienie najbardziej aktywnych ścieżek w drzewie wywołań i w widokach modułów.
 
 ## <a name="modify-the-application-code"></a>Modyfikowanie kodu aplikacji
- Po izolowanych jeden lub więcej problemów z wydajnością istotne, można zmodyfikować kod za pomocą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE, a następnie zbieranie danych profilowania dla zmiany.
+ Po odizolowaniu jednego lub kilku odpowiednich problemów z wydajnością można zmodyfikować kod przy użyciu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE, a następnie zebrać dane profilowania dla zmian.
 
-## <a name="collect-profiling-data-again-and-compare-the-data-between-the-profiling-runs"></a>Ponownie zbierania danych profilowania i porównać dane między tras profilowania
- Porównanie narzędzi profilowania widoku raportu jest wyświetlana różnica w module, funkcji lub wiersza wydajności między dwoma wybranych plików danych profilowania. Można określić profilowania wartości danych, które mają być porównane, można przełączać się między widoku porównania i widoki pojedynczych plików.
+## <a name="collect-profiling-data-again-and-compare-the-data-between-the-profiling-runs"></a>Zbierz ponownie dane profilowania i Porównaj dane między uruchomieniami profilowania
+ Widok raportu porównania narzędzia profilowania przedstawia różnice w zakresie wydajności modułu, funkcji lub linii między dwoma wybranymi plikami danych profilowania. Możesz określić wartości danych profilowania, które chcesz porównać, i można przełączać się między widokiem porównania i widokami poszczególnych plików.
 
-## <a name="generate-a-report-of-the-results"></a>Generowanie raportu z wynikami
- Wiersze dowolny widok raportu wydajności można wkleić do wiadomości e-mail i arkuszy kalkulacyjnych i można generować raporty, które zawierają dane dla jednego lub wielu widoków.
+## <a name="generate-a-report-of-the-results"></a>Generowanie raportu dotyczącego wyników
+ Możesz wkleić wiersze dowolnego widoku raportu wydajności do wiadomości e-mail i arkuszy kalkulacyjnych, a także generować raporty zawierające dane dla jednego lub wielu widoków.
 
 ## <a name="see-also"></a>Zobacz także
 - [Omówienia](../profiling/overviews-performance-tools.md)
-- [Przewodnik: Identyfikowanie problemów z wydajnością](/visualstudio/profiling/beginners-guide-to-cpu-sampling)
+- [Przewodnik: identyfikowanie problemów z wydajnością](beginners-guide-to-cpu-sampling.md)

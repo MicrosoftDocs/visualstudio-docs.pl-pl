@@ -17,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 52235ab4770f5267de8507ff67fcda0aa1370392
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 12f66658cd8069f58355a96b2c3b3031a4cb6808
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72730551"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187563"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Debugowanie kodu HTML i CSS w aplikacjach platformy UWP w programie Visual Studio
 
@@ -30,7 +30,7 @@ W przypadku aplikacji JavaScript program Visual Studio oferuje kompleksowe środ
 
 Korzystając z interaktywnego modelu debugowania dostarczonego przez narzędzia do inspekcji DOM, można wyświetlać i modyfikować renderowane kod HTML i CSS. Wszystkie te czynności można wykonać bez zatrzymywania i ponownego uruchamiania debugera.
 
-Aby uzyskać informacje o innych funkcjach debugowania JavaScript, takich jak korzystanie z okna konsoli języka JavaScript i ustawianie punktów przerwania, zobacz [Szybki Start: debugowanie JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) i [debugowanie aplikacji w programie Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps).
+Aby uzyskać informacje o innych funkcjach debugowania JavaScript, takich jak korzystanie z okna konsoli języka JavaScript i ustawianie punktów przerwania, zobacz [Szybki Start: debugowanie JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) i [debugowanie aplikacji w programie Visual Studio](debugging-windows-store-and-windows-universal-apps.md).
 
 ## <a name="InspectingDOM"></a>Sprawdzanie aktywnego modelu DOM
 DOM Explorer przedstawia widok renderowanej strony i można użyć DOM Explorer, aby zmienić wartości i natychmiast zobaczyć wyniki. Dzięki temu można testować zmiany bez zatrzymywania i ponownego uruchamiania debugera. Kod źródłowy w projekcie nie zmienia się podczas pracy ze stroną przy użyciu tej metody, więc po znalezieniu żądanych korekt kodu wprowadzasz zmiany w kodzie źródłowym.
@@ -182,7 +182,7 @@ W poniższej procedurze przejdziemy do interaktywnego debugowania aplikacji przy
 14. W oknie głównym kliknij dwukrotnie `width: 100px;height: 100px;`, naciśnij klawisz **delete** , a następnie naciśnij klawisz **Enter**. Po naciśnięciu klawisza ENTER nowe wartości zostaną natychmiast odzwierciedlone w aplikacji, mimo że sesja debugowania nie została zatrzymana.
 
     > [!IMPORTANT]
-    > Jak można aktualizować atrybuty w oknie DOM Explorer, można także aktualizować wartości, które są wyświetlane na kartach **Style**, **obliczone**i **Układ** . Aby uzyskać więcej informacji, zobacz [debugowanie stylów CSS przy użyciu dom Explorer](../debugger/debug-css-styles-using-dom-explorer.md) i [układu debugowania przy użyciu dom Explorer](../debugger/debug-layout-using-dom-explorer.md).
+    > Jak można aktualizować atrybuty w oknie DOM Explorer, można także aktualizować wartości, które są wyświetlane na kartach **Style**, **obliczone**i **Układ** . Aby uzyskać więcej informacji, zobacz [debugowanie stylów CSS przy użyciu dom Explorer](../debugger/debug-css-styles-using-dom-explorer.md) i [układu debugowania przy użyciu dom Explorer](quickstart-debug-html-and-css.md).
 
 15. Przejdź do aplikacji, wybierając ją lub używając kombinacji klawiszy Alt + Tab.
 
@@ -255,7 +255,7 @@ W przypadku debugowania aplikacji można wybrać elementy DOM na trzy sposoby:
 > Wyróżnianie elementów przez umieszczenie ich nad nimi jest tylko częściowo obsługiwane w emulatorze Windows Phone.
 
 ## <a name="see-also"></a>Zobacz także
-- [Debugowanie aplikacji w programie Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
+- [Debugowanie aplikacji w programie Visual Studio](debugging-windows-store-and-windows-universal-apps.md)
 - [Odświeżanie aplikacji (JavaScript)](../debugger/refresh-an-app-javascript.md)
 - [Debugowanie kontrolki WebView](../debugger/debug-a-webview-control.md)
 - [Skróty klawiaturowe](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017)

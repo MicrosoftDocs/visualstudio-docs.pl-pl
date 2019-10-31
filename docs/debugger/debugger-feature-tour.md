@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40b7a097f0544459083b5217e6ad97f2b3f31bfa
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 8741d0815aa3e5478a7dcf93585fc0be6e266ae0
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911635"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188707"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Najpierw Spójrz na debuger programu Visual Studio
 
@@ -124,7 +124,7 @@ W większości języków obsługiwanych przez program Visual Studio można edyto
 
 Aby uzyskać więcej informacji na temat korzystania z funkcji i ograniczeń funkcji, zobacz [Edytuj i Kontynuuj](../debugger/edit-and-continue.md).
 
-Aby zmodyfikować kod XAML podczas sesji debugowania, zobacz [pisanie i debugowanie uruchomionego kodu XAML przy użyciu gorącego ponownego ładowania XAML](xaml-hot-reload.md).
+Aby zmodyfikować kod XAML podczas sesji debugowania, zobacz [pisanie i debugowanie uruchomionego kodu XAML przy użyciu gorącego ponownego ładowania XAML](../xaml-tools/xaml-hot-reload.md).
 
 ## <a name="inspect-variables-with-data-tips"></a>Sprawdzanie zmiennych ze wskazówkami dotyczącymi danych
 

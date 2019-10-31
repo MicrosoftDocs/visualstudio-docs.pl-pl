@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.topic: conceptual
 ms.date: 03/20/2019
 ms.technology: vs-azure
-ms.openlocfilehash: f05eb5d92c0cdaa1242f0d98c3d877eebae27bb1
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 0ae81ed19a7fa8a967a3f9c3fe83c9f0d9e3ae51
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253195"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188773"
 ---
 # <a name="how-to-configure-visual-studio-container-tools"></a>Jak skonfigurować narzędzia kontenera programu Visual Studio
 
@@ -23,7 +23,7 @@ Z menu głównego wybierz polecenie **narzędzia > opcje**i rozwiń węzeł **Na
 
 ::: moniker range="vs-2017"
 
-![Opcje narzędzi kontenera programu Visual Studio, pokazujące: Automatycznie pobieraj wymagane obrazy platformy Docker przy ładowaniu projektu, automatycznie uruchamiaj kontenery w tle, automatycznie Kasuj kontenery w rozwiązaniu, a nie Monituj o zaufanie certyfikatu SSL.](./media/overview/visual-studio-docker-tools-options.png)
+![Opcje narzędzi kontenera programu Visual Studio, pokazujące: Automatyczne ściąganie wymaganych obrazów platformy Docker podczas ładowania projektu, automatyczne uruchamianie kontenerów w tle, automatyczne zabicia kontenerów w ramach rozwiązania i Niemonitowanie o zaufanie certyfikatu SSL.](./media/overview/visual-studio-docker-tools-options.png)
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
@@ -34,7 +34,7 @@ Ustawienia **Ogólne** narzędzi kontenera:
 
 Opcje **pojedynczego projektu** i **Docker Compose** narzędzi kontenera:
 
-![Opcje narzędzi kontenera programu Visual Studio, pokazujące: Kasuj kontenery po zamknięciu projektu, ściągnij wymagane obrazy platformy Docker w projekcie otwartym i uruchom kontenery przy otwartym projekcie.](./media/configure-container-tools/tools-options-2.png)
+![Opcje narzędzi kontenera programu Visual Studio, pokazujące: zabicia kontenerów w zamknięciu projektu, ściąganie wymaganych obrazów platformy Docker w projekcie otwartym i uruchamianie kontenerów przy otwartym projekcie.](./media/configure-container-tools/tools-options-2.png)
 ::: moniker-end
 
 Poniższa tabela może pomóc określić, jak ustawić te opcje.
@@ -61,9 +61,9 @@ W poniższej tabeli opisano ustawienia **pojedynczego projektu** i **Docker Comp
 
 | Nazwa | Ustawienie domyślne | Dotyczy: | Opis |
 | -----|:---------------:|:----------:| ----------- |
-| Ściągnij wymagane obrazy platformy Docker w otwartym projekcie | Prawda | Pojedynczy projekt, Docker Compose | W celu zwiększenia wydajności podczas ładowania projektów program Visual Studio rozpocznie operację ściągania platformy Docker w tle, dzięki czemu gdy wszystko będzie gotowe do uruchomienia kodu, obraz jest już pobrany lub proces pobierania. Jeśli właśnie ładujesz projekty i przeglądasz kod, możesz ustawić **wartość false** , aby uniknąć pobierania niepotrzebnych obrazów kontenerów. |
-| Uruchom kontenery przy otwartym projekcie | Prawda | Pojedynczy projekt, Docker Compose | W celu zwiększenia wydajności program Visual Studio tworzy kontener przed chwilą, tak aby był gotowy do tworzenia i uruchamiania kontenera. Jeśli chcesz kontrolować czas tworzenia kontenera, ustaw **wartość false**. |
-| Zatrzymaj kontenery po zamknięciu projektu | Prawda | Pojedynczy projekt i Docker Compose | Ustaw **wartość false** , jeśli chcesz, aby kontenery dla rozwiązania nadal działały po zamknięciu rozwiązania lub zamknięciu programu Visual Studio. |
+| Ściągnij wymagane obrazy platformy Docker w otwartym projekcie | Oznacza | Pojedynczy projekt, Docker Compose | W celu zwiększenia wydajności podczas ładowania projektów program Visual Studio rozpocznie operację ściągania platformy Docker w tle, dzięki czemu gdy wszystko będzie gotowe do uruchomienia kodu, obraz jest już pobrany lub proces pobierania. Jeśli właśnie ładujesz projekty i przeglądasz kod, możesz ustawić **wartość false** , aby uniknąć pobierania niepotrzebnych obrazów kontenerów. |
+| Uruchom kontenery przy otwartym projekcie | Oznacza | Pojedynczy projekt, Docker Compose | W celu zwiększenia wydajności program Visual Studio tworzy kontener przed chwilą, tak aby był gotowy do tworzenia i uruchamiania kontenera. Jeśli chcesz kontrolować czas tworzenia kontenera, ustaw **wartość false**. |
+| Zatrzymaj kontenery po zamknięciu projektu | Oznacza | Pojedynczy projekt i Docker Compose | Ustaw **wartość false** , jeśli chcesz, aby kontenery dla rozwiązania nadal działały po zamknięciu rozwiązania lub zamknięciu programu Visual Studio. |
 
 ::: moniker-end
 > [!WARNING]
@@ -71,4 +71,4 @@ W poniższej tabeli opisano ustawienia **pojedynczego projektu** i **Docker Comp
 
 ## <a name="next-steps"></a>Następne kroki
 
-Więcej informacji na temat pracy z kontenerami w programie Visual Studio można znaleźć w tym [omówieniu](visual-studio-tools-for-docker.md).
+Więcej informacji na temat pracy z kontenerami w programie Visual Studio można znaleźć w tym [omówieniu](overview.md).

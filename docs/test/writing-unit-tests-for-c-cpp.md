@@ -8,12 +8,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 9d69c91af316c755b2dcf4f339d8f47d49096b6a
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 824b928c9f89b98f9026059b824fce84969bf69a
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72982911"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189103"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Zapisz testy jednostkowe dla CC++ /w Visual Studio
 
@@ -79,7 +79,7 @@ Aby umożliwić testowanie kodu w celu uzyskania dostępu do funkcji w projekcie
 
 ### <a name="link-to-object-or-library-files"></a>Połącz z obiektem lub plikami biblioteki
 
-Jeśli kod testu nie eksportuje funkcji, które mają zostać przetestowane, można dodać pliki Output. obj lub. lib do zależności projektu testowego. Zobacz, [Aby połączyć testy z plikami obiektu lub biblioteki](unit-testing-existing-cpp-applications-with-test-explorer.md).
+Jeśli kod testu nie eksportuje funkcji, które mają zostać przetestowane, można dodać pliki Output. obj lub. lib do zależności projektu testowego. Zobacz, [Aby połączyć testy z plikami obiektu lub biblioteki](how-to-use-microsoft-test-framework-for-cpp.md).
 
 ### <a name="add-include-directives-for-header-files"></a>Dodaj dyrektywy #include dla plików nagłówkowych
 

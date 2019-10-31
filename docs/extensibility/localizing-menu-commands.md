@@ -15,12 +15,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2b42143c2971bcbb172958b8da42a1e887e4699
-ms.sourcegitcommit: 3e94d9fb6dc56fa8b23fbacd5d11cf8d6e7e18f1
+ms.openlocfilehash: 94f71014440c55da0151d0ebd817aac9f5d2c7ed
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72252640"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73186277"
 ---
 # <a name="localize-menu-commands"></a>Lokalizowanie poleceń menu
 
@@ -126,7 +126,7 @@ Należy zmodyfikować plik *AssemblyInfo.cs* i plik projektu, aby uwzględnić z
 
 4. Otwórz plik projektu w edytorze.
 
-5. W elemencie głównym `Project` Dodaj element `PropertyGroup` z elementem `UICulture`, który jest zgodny z językiem domyślnym.
+5. W elemencie głównym `Project` Dodaj element `PropertyGroup` z elementem `UICulture`, który pasuje do języka domyślnego.
 
     ```xml
     <PropertyGroup>
@@ -136,9 +136,9 @@ Należy zmodyfikować plik *AssemblyInfo.cs* i plik projektu, aby uwzględnić z
 
      Powoduje to ustawienie angielskiej wersji językowej US jako domyślnej kultury interfejsu użytkownika dla formantów Windows Presentation Foundation (WPF).
 
-6. Znajdź element `ItemGroup`, który zawiera elementy `EmbeddedResource`.
+6. Znajdź `ItemGroup` element, który zawiera `EmbeddedResource` elementy.
 
-7. W elemencie `EmbeddedResource`, który wywołuje *pakietu VSPackage. pl-US. resx*, Zastąp element `ManifestResourceName` elementem `LogicalName`, który jest ustawiony na `VSPackage.en-US.Resources` w następujący sposób:
+7. W elemencie `EmbeddedResource`, który wywołuje *pakietu VSPackage. pl-US. resx*, Zastąp element `ManifestResourceName` elementem `LogicalName`, który jest ustawiony na `VSPackage.en-US.Resources`, w następujący sposób:
 
     ```xml
     <EmbeddedResource Include="VSPackage.en-US.resx">
@@ -147,9 +147,9 @@ Należy zmodyfikować plik *AssemblyInfo.cs* i plik projektu, aby uwzględnić z
     </EmbeddedResource>
     ```
 
-8. Dla każdego zlokalizowanego języka Skopiuj element `EmbeddedResource` dla `VsPackage.en-US`, a następnie ustaw atrybut **include** i **LogicalName** elementu kopii na ustawienia regionalne docelowej.
+8. Dla każdego zlokalizowanego języka Skopiuj element `EmbeddedResource` dla `VsPackage.en-US`i ustaw atrybut **include** i **LogicalName** elementu kopii na ustawienia regionalne docelowej.
 
-9. Dla każdego zlokalizowanego elementu `VSCTCompile` Dodaj element `ResourceName`, który wskazuje na `Menus.ctmenu`, jak pokazano w następującym przykładzie:
+9. Do każdego zlokalizowanego elementu `VSCTCompile`, Dodaj element `ResourceName`, który wskazuje na `Menus.ctmenu`, jak pokazano w następującym przykładzie:
 
     ```xml
     <ItemGroup>
@@ -166,6 +166,6 @@ Należy zmodyfikować plik *AssemblyInfo.cs* i plik projektu, aby uwzględnić z
      Spowoduje to utworzenie zestawu głównego i zestawów zasobów dla każdego języka. Aby uzyskać informacje na temat lokalizowania procesu wdrażania, zobacz [lokalizowanie pakietów VSIX](../extensibility/localizing-vsix-packages.md) .
 
 ## <a name="see-also"></a>Zobacz także
+
 - [Poszerzanie menu i poleceń](../extensibility/extending-menus-and-commands.md)
-- [MenuCommands a OleMenuCommands](../extensibility/menucommands-vs-olemenucommands.md)
 - [Globalizacja i lokalizowanie aplikacji](../ide/globalizing-and-localizing-applications.md)

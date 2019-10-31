@@ -16,18 +16,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27e551132e66ef0cb380b56441d19b1436d19df2
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 9a2c35befa92e72e08fe2e058afe10d19ac116e0
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911533"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188132"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a>Błąd: Monitor debugera zdalnego Microsoft Visual (MSVSMON.EXE) zdaje się nie być uruchomiony na komputerze zdalnym.
 Ten komunikat o błędzie oznacza, że program Visual Studio nie może znaleźć poprawnego wystąpienia Monitor zdalnego debugowania programu Visual Studio na komputerze zdalnym. Aby debugowanie zdalne działało, należy zainstalować Monitor zdalnego debugowania programu Visual Studio. Aby uzyskać informacje o pobieraniu i konfigurowaniu zdalnego debugera, zobacz [zdalne debugowanie](../debugger/remote-debugging.md).
 
 > [!IMPORTANT]
-> Jeśli uważasz, że ta wiadomość została odebrana z powodu błędu produktu, [Zgłoś ten problem w programie Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md). Jeśli potrzebujesz więcej pomocy, skontaktuj się [z nami](../ide/talk-to-us.md) , aby dowiedzieć się, jak skontaktować się z firmą Microsoft.
+> Jeśli uważasz, że ta wiadomość została odebrana z powodu błędu produktu, [Zgłoś ten problem w programie Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md). Jeśli potrzebujesz więcej pomocy, skontaktuj się [z nami](../ide/feedback-options.md) , aby dowiedzieć się, jak skontaktować się z firmą Microsoft.
 
 ## <a name="i-got-this-message-while-i-was-debugging-in-visual-studio-2010-or-earlier"></a>Ten komunikat został wyświetlony podczas debugowania w programie Visual Studio 2010 lub starszym
  Jeśli używana wersja programu Visual Studio jest w wersji Visual Studio 2010 lub starszej, można również otrzymać ten błąd, jeśli udostępnianie plików i drukarek nie jest włączone. Aby dowiedzieć się więcej o tym problemie, zapoznaj się z wersją programu Visual Studio 2010 w tej dokumentacji: [błąd: Microsoft Visual Studio Monitor zdalnego debugowania (msvsmon. EXE) prawdopodobnie nie jest uruchomiony na komputerze zdalnym. — Visual Studio 2010](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms164726(v=vs.100))

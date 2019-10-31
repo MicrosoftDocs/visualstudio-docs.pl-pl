@@ -18,12 +18,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 75faa3e4d38f961c38b23a95765d6466e008714f
-ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
+ms.openlocfilehash: 228785c218b1c55a1af817761821acbe11a51c8d
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72919048"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188961"
 ---
 # <a name="work-with-c-code-in-class-designer"></a>Pracuj z C++ kodem w Projektant klas
 
@@ -46,7 +46,7 @@ ms.locfileid: "72919048"
 - Własne
 
 > [!NOTE]
-> To nie jest taka sama jak Diagram klas UML, który można utworzyć w projekcie modelowania. Aby uzyskać więcej informacji, zobacz [diagramy klas UML: Reference](../../modeling/create-uml-modeling-projects-and-diagrams.md).
+> To nie jest taka sama jak Diagram klas UML, który można utworzyć w projekcie modelowania. Aby uzyskać więcej informacji, zobacz [diagramy klas UML: Reference](../../modeling/what-s-new-for-design-in-visual-studio.md).
 
 ## <a name="troubleshoot-type-resolution-and-display-issues"></a>Rozwiązywanie problemów z rozpoznawaniem i wyświetlaniem typów
 

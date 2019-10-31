@@ -1,6 +1,6 @@
 ---
 title: Narzędzia języka R dla programu Visual Studio
-description: Narzędzia R Tools for Visual Studio 2017 (RTVS) to bezpłatne, typu open source rozszerzenie, które udostępnia wiele funkcji języka, w tym funkcji IntelliSense, debugowania i zdalnych obszarów roboczych.
+description: R Tools for Visual Studio 2017 (RTVS) to bezpłatne rozszerzenie typu "open source", które zapewnia wiele funkcji języka, w tym IntelliSense, debugowanie i zdalne obszary robocze.
 ms.date: 11/13/2017
 ms.topic: overview
 author: kraigb
@@ -8,51 +8,51 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 385d58834aa96a3ad9e2002020dd1ce4fda3c87f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1132a7a0363e2d508d6eff1026192aad3407fca4
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000014"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189244"
 ---
-# <a name="work-with-r-in-visual-studio"></a>Praca z języka R w programie Visual Studio
+# <a name="work-with-r-in-visual-studio"></a>Współpraca z językiem R w programie Visual Studio
 
-R jest wysoce rozszerzalny język i środowisko na potrzeby obliczeń statystycznych i grafiki. Jego program jest dystrybuowany za darmo licencji GNU General Public License cieszy się silne wsparcie społeczności i jest znana z możliwości tworzenia publikacji jakości powierzchni symbole matematyczne i pochodnych w tym. Dowiedz się więcej na temat języka R w [r-project.org](https://www.r-project.org/about.html) i [wprowadzenie do języka R](https://cran.r-project.org/doc/manuals/r-release/R-intro.html).
+R to wysoce rozszerzalny język i środowisko do obliczeń statystycznych i graficznych. Jest ona dystrybuowana bezpłatnie na podstawie ogólnej publicznej licencji GNU, ma silne wsparcie społecznościowe i jest znana, aby można było tworzyć wykresy z jakością publikacji, w tym symbole matematyczne i wzory. Więcej informacji na temat języka R można znaleźć pod adresem [r-Project.org](https://www.r-project.org/about.html) i [wprowadzeniem do języka r](https://cran.r-project.org/doc/manuals/r-release/R-intro.html).
 
-Narzędzia R Tools for Visual Studio (RTVS) to bezpłatny, [typu open-source](https://github.com/microsoft/RTVS) rozszerzenie dla programu Visual Studio 2017 i Visual Studio 2015 Update 3 (lub nowszy), wydawane na mocy licencji MIT. (Drugi składnik typu open source o nazwie [RHost](https://github.com/microsoft/R-Host), jakie łącza do plików binarnych interpreter języka R, jest wydawane na mocy V2 licencji publicznej GNU.)
+R Tools for Visual Studio (RTVS) to bezpłatne rozszerzenie [typu open source](https://github.com/microsoft/RTVS) dla programu visual Studio 2017 i programu visual Studio 2015 Update 3 (lub nowszego), wydane w ramach licencji MIT. (Drugi składnik typu open source o nazwie [RHost](https://github.com/microsoft/R-Host), który łączy się z danymi binarnymi interpretera języka R, jest wydawany w ramach programu GNU Public License v2).
 
 > [!Note]
-> RTVS jest obecnie obsługiwany tylko w programie Visual Studio 2017 na Windows i nie Visual Studio dla komputerów Mac. Nie jest dostępna dla programu Visual Studio 2019 r.
+> RTVS jest obecnie obsługiwana tylko w programie Visual Studio 2017 w systemie Windows, a nie Visual Studio dla komputerów Mac. Nie jest on dostępny dla programu Visual Studio 2019.
 
-Aby wystąpić języka R w programie Visual Studio:
+Aby środowiska R w programie Visual Studio:
 
 - [Zainstaluj narzędzia języka R](installing-r-tools-for-visual-studio.md).
-- Postępuj zgodnie z [wprowadzenie](getting-started-with-r.md) przewodniku, jak również [przykłady](getting-started-samples.md) i [uzyskiwanie pomocy](getting-started-help.md) artykułów.
+- Skorzystaj z przewodnika [wprowadzającego](getting-started-with-r.md) , a także [przykładów](getting-started-samples.md) i [uzyskiwania artykułów pomocy](getting-started-help.md) .
 
-Następnie użyj linków poniżej, aby dowiedzieć się więcej o funkcjach języka R, a także ogólne możliwości programu Visual Studio.
+Następnie skorzystaj z poniższych linków, aby dowiedzieć się więcej na temat funkcji związanych z językiem R, a także ogólnych możliwości programu Visual Studio.
 
-| Funkcja | Opis | Dokumentacja usługi Visual Studio — ogólne |
+| Funkcja | Opis | Ogólna Dokumentacja programu Visual Studio |
 | --- | --- | --- |
-| [System projektu usługi Visual Studio](r-projects-in-visual-studio.md) | Organizowanie i zarządzanie plikami pokrewne wygodny struktury i korzystać z zalet przydatne szablony dla elementów, takich jak kod R, dokumentace R, R Markdown, zapytań SQL i procedur składowanych. Korzystaj również [Menedżera pakietów](r-package-manager-in-visual-studio.md) i [integracji z programem SQL Server](integrating-sql-server-with-r.md).  | [Rozwiązania i projekty w programie Visual Studio](../ide/solutions-and-projects-in-visual-studio.md) |
-| [Workspace](r-workspaces-in-visual-studio.md) | RTVS można powiązać z lokalnych i zdalnych obszarów roboczych, co pozwala tworzyć kod R lokalnie z mniejszych zestawów danych, a następnie łatwe uruchamianie kodu na bardziej zaawansowanych komputerów opartych na chmurze znacznie większych zestawów danych. | n/d |
-| [Opcje narzędzia języka R](options-for-r-tools-in-visual-studio.md) | Kontrolować różne aspekty RTVS. | [Okno dialogowe Opcje](../ide/reference/options-dialog-box-visual-studio.md) |
-| [Zaawansowane edytowanie, IntelliSense i fragmentów kodu](editing-r-code-in-visual-studio.md) | Obejmuje kolorowania, [IntelliSense](r-intellisense.md) we wszystkich Twojego kodu i bibliotek, formatowanie kodu, pomocy dotyczącej sygnatur, przejdź do definicji i Znajdź wszystkie odwołania [fragmenty kodu](code-snippets-for-r.md)i nie tylko. | [Funkcje edytora kodu](../ide/writing-code-in-the-code-and-text-editor.md) |
-| [Znaczniki R Markdown](rmarkdown-with-r-in-visual-studio.md) | Dokumenty R Markdown ułatwić udostępnianie wyników danych przy użyciu zintegrowanego kodu języka R wewnątrz bloków kodu w języku znaczników markdown. | n/d |
-| [Okno interaktywne](interactive-repl-for-r-in-visual-studio.md) | Zapewnia pełne środowisko REPL dla języka R, umożliwia łatwe uruchamianie kodu w pliku źródłowym, w oknie interaktywnym. | n/d |
-| [Wizualizowanie danych](visualizing-data-with-r-in-visual-studio.md) | Plotting jest integralną częścią środowiska języka R, a RTVS obsługuje wiele powierzchni niezależnie od systemu windows, każdy z własnych historii i możliwość przenoszenia drukuje między oknami. Wykresy można zapisać mapy bitowej i pliki PDF lub skopiowany do Schowka jako mapa bitowa lub metaplik.  | n/d |
-| [Eksplorator zmiennych](variable-explorer.md) | Sprawdź zmienne w zakresach globalnych lub specyficzne dla pakietu, z możliwością oglądania tabel można sortować i Eksportuj do pliku CSV. | n/d |
-| [Oferujący debugowania](debugging-r-in-visual-studio.md) | Obejmuje integrację z okna interaktywnego. | [Debugowanie w programie Visual Studio](/visualstudio/debugger/debugger-feature-tour) |
+| [System projektu programu Visual Studio](r-projects-in-visual-studio.md) | Organizuj powiązane pliki i zarządzaj nimi w wygodnej strukturze i korzystaj z przydatnych szablonów dla elementów, takich jak kod R, Dokumentacja języka R, R Markdown, zapytania SQL i procedury składowane. Ciesz się również [menedżerem pakietów](r-package-manager-in-visual-studio.md) i [integracją SQL Server](integrating-sql-server-with-r.md).  | [Rozwiązania i projekty w programie Visual Studio](../ide/solutions-and-projects-in-visual-studio.md) |
+| [Obszary](r-workspaces-in-visual-studio.md) | RTVS można powiązać z lokalnymi i zdalnymi obszarami roboczymi, co pozwala na tworzenie kodu R lokalnie przy użyciu mniejszych zestawów danych, a następnie uruchamianie kodu na bardziej zaawansowanych komputerach opartych na chmurze z znacznie większymi zestawami danych. | n/d |
+| [Opcje narzędzi języka R](options-for-r-tools-in-visual-studio.md) | Kontroluj różne aspekty RTVS. | [Opcje — okno dialogowe](../ide/reference/options-dialog-box-visual-studio.md) |
+| [Bogate edytowanie, IntelliSense i fragmenty kodu](editing-r-code-in-visual-studio.md) | Obejmuje kolorowanie składni, funkcję [IntelliSense](r-intellisense.md) we wszystkich kodzie i bibliotekach, formatowanie kodu, pomoc dotyczącą podpisu, przejdź do definicji, Znajdź wszystkie odwołania, [fragmenty kodu](code-snippets-for-r.md)i inne elementy. | [Funkcje edytora kodu](../ide/writing-code-in-the-code-and-text-editor.md) |
+| [Znaczniki R Markdown](rmarkdown-with-r-in-visual-studio.md) | R Markdown dokumenty ułatwiają udostępnianie wyników danych przy użyciu zintegrowanego kodu R w blokach kodu o promocji. | n/d |
+| [Okno interaktywne](interactive-repl-for-r-in-visual-studio.md) | Oferuje pełne środowisko REPL dla języka R z możliwością łatwego uruchamiania kodu w pliku źródłowym w oknie interaktywnym. | n/d |
+| [Wizualizowanie danych](visualizing-data-with-r-in-visual-studio.md) | Wykreślanie jest integralną częścią środowiska R, a RTVS obsługuje wiele niezależnych okien kreślenia, z których każdy ma własną historię i możliwość przenoszenia wykresów między oknami. Wykresy mogą być zapisane w plikach map bitowych i PDF albo kopiowane do Schowka jako mapa bitowa lub metaplik.  | n/d |
+| [Eksplorator zmiennych](variable-explorer.md) | Sprawdź zmienne w zakresach globalnych lub specyficznych dla pakietów, umożliwiając wyświetlanie tabel do sortowania i eksportowanie do pliku CSV. | n/d |
+| [W pełni funkcjonalne debugowanie](debugging-r-in-visual-studio.md) | Obejmuje integrację z oknem interaktywnym. | [Debugowanie w programie Visual Studio](../debugger/debugger-feature-tour.md) |
 
-Zobacz też [— często zadawane pytania](faq.md).
+Zobacz również [często zadawane pytania](faq.md).
 
 |   |   |
 |---|---|
-| ![Ikona aparatu film wideo](../install/media/video-icon.png "Obejrzyj klip wideo") | [Obejrzyj film wideo (w witrynie youtube.com)](https://www.youtube.com/watch?v=dll3IS1bfWQ) omówienie R Tools for Visual Studio (12 min 36s). Zobacz też [więcej wideo na temat narzędzia języka R](https://www.youtube.com/results?search_query=R+Tools+for+visual+studio). |
+| ![ikona aparatu filmu wideo](../install/media/video-icon.png "Obejrzyj wideo") | [Obejrzyj film wideo (YouTube.com)](https://www.youtube.com/watch?v=dll3IS1bfWQ) , aby zapoznać się z omówieniem R Tools for Visual Studio (12M 36s). Zobacz też [Więcej klipów wideo dotyczących narzędzi R Tools](https://www.youtube.com/results?search_query=R+Tools+for+visual+studio). |
 
-## <a name="send-us-your-feedback"></a>Wyślij nam swoją opinię!
+## <a name="send-us-your-feedback"></a>Wyślij nam swoją opinię.
 
-1. **Problemy usługi GitHub**: Najlepszym sposobem skontaktować się z zespołem RTVS jest [rejestrując problem w serwisie GitHub](https://github.com/Microsoft/RTVS/issues), lub za pomocą **R Tools** > **opinii** menu.
+1. **Problemy**z usługą GitHub: najlepszym sposobem osiągnięcia dostępu do zespołu RTVS jest [zgłoszenie problemu w usłudze GitHub](https://github.com/Microsoft/RTVS/issues)lub użycie menu **opinii** **narzędzi R Tools** > .
 
-1. **Wyślij uśmiech / łuk w dół**: **R Tools** > **opinii** menu jest szybkim sposobem wysyłania opinii i dołączenie plików dziennika RTVS, aby pomóc w diagnozowaniu problemu. (Dzienniki są zapisywane do *%temp%/RTVSlogs.zip* w przypadku, gdy chcesz wysyłać je oddzielnie.) Rejestrowanie jest wyłączona, jeśli został wyłączony, z telemetrii programu Visual Studio za pośrednictwem **pomocy** > **opinii** > **ustawienia** polecenie menu lub podczas instalacji.
+1. **Wyślij uśmiech/niezadowolenie**: menu **opinii** o **narzędziach R Tools** > jest szybkim sposobem na wysłanie opinii i dołączenie plików dziennika RTVS, aby pomóc w zdiagnozowaniu problemu. (Dzienniki są zapisywane w *katalogu% Temp%/RTVSlogs.zip* w przypadku, gdy chcesz je wysłać oddzielnie). Rejestrowanie jest wyłączone, jeśli wybrałeś **opcję dane telemetryczne programu Visual** Studio za pomocą polecenia menu **Ustawienia** >  > **informacji zwrotnych** , lub podczas instalacji.
 
-1. **adres e-mail**: Możesz wysłać bezpośrednich opinii do zespołu w *rtvsuserfeedback (adresem)*.
+1. **Adres e-mail**: możesz wysłać bezpośrednią opinię do zespołu pod adresem *rtvsuserfeedback (at) Microsoft.com*.

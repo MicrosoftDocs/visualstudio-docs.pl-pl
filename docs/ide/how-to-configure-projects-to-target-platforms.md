@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Skonfiguruj projekty na platformach docelowych'
+title: 'Instrukcje: Konfigurowanie projektów na platformach docelowych'
 ms.date: 08/16/2019
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -18,16 +18,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d31d3a4f2e42981df646f9c38e13ee9b5f21122
-ms.sourcegitcommit: 9e5e8b6e9a3b6614723e71cc23bb434fe4218c9c
+ms.openlocfilehash: 15799ff8b181ddcfff97f7fb7338897c6f23fee2
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69634922"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188951"
 ---
-# <a name="how-to-configure-projects-to-target-platforms"></a>Instrukcje: Skonfiguruj projekty na platformach docelowych
+# <a name="how-to-configure-projects-to-target-platforms"></a>Instrukcje: Konfigurowanie projektów na platformach docelowych
 
-Program Visual Studio umożliwia ustawianie aplikacji przeznaczonych dla różnych platform, w tym platform 64-bitowych. Aby uzyskać więcej informacji na temat obsługi platform 64-bitowych w programie Visual Studio, zobacz [aplikacji 64-bitowych](/dotnet/framework/64-bit-apps).
+Program Visual Studio umożliwia konfigurowanie aplikacji przeznaczonych dla różnych platform, w tym na platformach 64-bitowych. Aby uzyskać więcej informacji o obsłudze platformy 64-bitowego w programie Visual Studio, zobacz [64-bitowe aplikacje](/dotnet/framework/64-bit-apps).
 
 ## <a name="target-platforms-with-the-configuration-manager"></a>Docelowa platforma z Configuration Manager
 
@@ -35,7 +35,7 @@ Program Visual Studio umożliwia ustawianie aplikacji przeznaczonych dla różny
 
 ### <a name="to-configure-a-project-to-target-a-64-bit-platform"></a>Aby skonfigurować projekt jako docelowy dla platformy 64-bitowej
 
-1. Na pasku menu wybierz kolejno opcje **Kompiluj** > **Configuration Manager**.
+1. Na pasku menu wybierz kolejno opcje **kompiluj**  > **Configuration Manager**.
 
 2. Na liście **Active platformę rozwiązania** Wybierz platformę 64-bitową dla rozwiązania, które ma być celem, a następnie wybierz przycisk **Zamknij** .
 
@@ -58,19 +58,19 @@ Wszystkie projekty przeznaczone dla platformy 64-bitowej są aktualizowane, a na
 
 Wykonywanie tego zadania różni się w zależności od języka programowania, którego używasz. Aby uzyskać więcej informacji, zobacz następujące linki:
 
-- W [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] przypadku projektów należy zapoznać się z tematem [/platform (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/platform).
+- Aby uzyskać [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projekty, zobacz [/platform (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/platform).
 
-- W [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] przypadku projektów zobacz [stronę Kompilacja, Projektant projektu (C#)](../ide/reference/build-page-project-designer-csharp.md).
+- Aby uzyskać [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] projekty, zobacz [stronę Kompilacja, Projektant projektuC#()](../ide/reference/build-page-project-designer-csharp.md).
 
-- W [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] przypadku projektów zobacz [/CLR (Kompilacja środowiska uruchomieniowego języka wspólnego)](/cpp/build/reference/clr-common-language-runtime-compilation).
+- W przypadku projektów [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] zobacz [/CLR (Kompilacja środowiska uruchomieniowego języka wspólnego)](/cpp/build/reference/clr-common-language-runtime-compilation).
 
 ## <a name="manually-editing-the-project-file"></a>Ręczne edytowanie pliku projektu
 
 Czasami trzeba ręcznie edytować plik projektu dla pewnej konfiguracji niestandardowej. Przykładem jest to, że warunki, których nie można określić w IDE, takie jak odwołanie, które jest inne dla dwóch różnych platform, jak w poniższym przykładzie.
 
-### <a name="example-referencing-x86-and-x64-assemblies-and-dlls"></a>Przykład: Odwołania do zestawów i bibliotek DLL x86 i x64
+### <a name="example-referencing-x86-and-x64-assemblies-and-dlls"></a>Przykład: odwołanie do zestawów i bibliotek DLL x86 i x64
 
-Może istnieć zestaw lub biblioteka DLL platformy .NET, która ma zarówno wersje x86, jak i x64. Aby skonfigurować projekt do korzystania z tych odwołań, najpierw Dodaj odwołanie, a następnie otwórz plik projektu i zmodyfikuj go, aby dodać `ItemGroup` warunek, który odwołuje się zarówno do konfiguracji, jak i na platformie docelowej.  Załóżmy na przykład, że dane binarne, do których odwołuje się odwołanie, to ClassLibrary1, a istnieją różne ścieżki do konfiguracji debugowania i wydania, a także wersje x86 i x64.  Następnie użyj czterech `ItemGroup` elementów ze wszystkimi kombinacjami ustawień w następujący sposób:
+Może istnieć zestaw lub biblioteka DLL platformy .NET, która ma zarówno wersje x86, jak i x64. Aby skonfigurować projekt do korzystania z tych odwołań, najpierw Dodaj odwołanie, a następnie otwórz plik projektu i zmodyfikuj go, aby dodać `ItemGroup` z warunkiem odwołującym się do konfiguracji i platformy docelowej.  Załóżmy na przykład, że dane binarne, do których odwołuje się odwołanie, to ClassLibrary1, a istnieją różne ścieżki do konfiguracji debugowania i wydania, a także wersje x86 i x64.  Następnie użyj czterech `ItemGroup` elementów ze wszystkimi kombinacjami ustawień w następujący sposób:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -112,11 +112,11 @@ Może istnieć zestaw lub biblioteka DLL platformy .NET, która ma zarówno wers
 > W programie Visual Studio 2017 musisz zwolnić projekt, aby można było edytować plik projektu. Aby zwolnić projekt, kliknij prawym przyciskiem myszy węzeł projektu, a następnie wybierz polecenie **Zwolnij projekt**. Po zakończeniu edycji Zapisz zmiany i Załaduj ponownie projekt, klikając prawym przyciskiem myszy węzeł projektu i wybierając polecenie **Załaduj ponownie projekt**.
 ::: moniker-end
 
-Aby uzyskać więcej informacji na temat pliku projektu, zobacz [Dokumentacja schematu pliku projektu MSBuild](/visualstudio/msbuild/msbuild-project-file-schema-reference).
+Aby uzyskać więcej informacji na temat pliku projektu, zobacz [Dokumentacja schematu pliku projektu MSBuild](../msbuild/msbuild-project-file-schema-reference.md).
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Omówienie platformy kompilacji](../ide/understanding-build-platforms.md)
+- [Informacje o platformach kompilacji](../ide/understanding-build-platforms.md)
 - [/platform (C# opcje kompilatora)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option)
 - [64-bitowe aplikacje](/dotnet/framework/64-bit-apps)
 - [Obsługa programu Visual Studio IDE 64-bit](../ide/visual-studio-ide-64-bit-support.md)

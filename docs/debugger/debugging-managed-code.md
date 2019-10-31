@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f6dd305b55e1ff7dd11b46f023906a8422b5504f
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: 76b841d94aee93a1bc88f6d01161239828dee166
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72536050"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188412"
 ---
 # <a name="debug-managed-code-c-visual-basic-f-ccli"></a>Debuguj kod zarządzany (C#, Visual Basic, F#, C++/CLI)
 
@@ -48,7 +48,7 @@ Zawiera przykłady kodu, które umożliwiają debugowanie metody `OnStart` zarz�
 Omawia debugowanie aplikacji w trybie mieszanym. Oznacza to, że wszystkie aplikacje łączące kod natywny z kodem zarządzanym.
 
 [Błąd: debugowanie nie jest możliwe, ponieważ debuger jądra jest włączony w systemie](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md) \
-Opisuje komunikat o błędzie, który występuje w przypadku próby debugowania kodu zarządzanego na [!INCLUDE[win7](../debugger/includes/win7_md.md)], [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)], [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)], [!INCLUDE[Win2kFamily](../code-quality/includes/win2kfamily_md.md)] lub systemu Windows NT, który został uruchomiony w trybie debugowania.
+Opisuje komunikat o błędzie, który występuje w przypadku próby debugowania kodu zarządzanego na [!INCLUDE[win7](../debugger/includes/win7_md.md)], [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)], [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)], [!INCLUDE[Win2kFamily](../code-quality/includes/win2kfamily_md.md)]lub systemu Windows NT, który został uruchomiony w trybie debugowania.
 
 [Optymalizacja i debugowanie JIT](../debugger/jit-optimization-and-debugging.md) \
 Opisuje skutki optymalizacji JIT podczas debugowania.
@@ -76,7 +76,7 @@ Zawiera zagadnienia dotyczące debugowania aplikacji usługi systemu Windows, w 
 [Debugowanie i profilowanie](/dotnet/framework/debug-trace-profile/index) \
 W tym artykule omówiono debugowanie aplikacji .NET i wymagania dotyczące konfiguracji.
 
-[Debugowanie skryptów i aplikacji sieci Web](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications) \
+[Debugowanie skryptów i aplikacji sieci Web](how-to-enable-debugging-for-aspnet-applications.md) \
 Opisuje typowe problemy z debugowaniem i techniki, które można napotkać podczas debugowania skryptów i aplikacji sieci Web.
 
 ## <a name="see-also"></a>Zobacz także

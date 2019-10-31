@@ -8,12 +8,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a87efc24ef148600c31dbb07d7517f9235306102
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5cdea5b3cbf99ab8213c320acc82665816062dca
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650413"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189637"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project"></a>Instrukcje: Dodawanie nowego elementu do projektu przepływu pracy
 
@@ -26,7 +26,7 @@ W poniższej tabeli wymieniono elementy Windows Workflow Foundation (WF), które
 | Działanie | Działanie składające się z innych działań. Wybranie tego elementu powoduje dodanie tego samego pliku XAML do projektu, jak uzyskano podczas wybierania szablonu **biblioteki działań** dla nowego projektu. Aby uzyskać więcej informacji na temat tej procedury, zobacz [Tworzenie projektu przepływu pracy](creating-a-workflow-project.md). |
 | Projektant działań | Projektant umożliwiający dostosowanie środowiska czasu projektowania działania. Wybranie tego elementu powoduje dodanie do projektu tych samych plików jak w przypadku wybrania szablonu **biblioteki projektanta działań** dla nowego projektu. |
 | Działanie kodu | Działanie z logiką wykonywania zapisaną w kodzie. Plik kodu źródłowego z przesłonięciem metody <xref:System.Activities.CodeActivity.Execute%2A> jest już wygenerowany dla Ciebie. |
-| Usługa przepływu pracy WCF | Usługa [!INCLUDE[indigo2](../workflow-designer/includes/indigo2_md.md)] utworzona przy użyciu działań przepływu pracy. Wybranie tego elementu powoduje dodanie do projektu tych samych plików, co podczas wybierania szablonu **aplikacji usługi przepływu pracy WCF** dla nowego projektu. Aby uzyskać więcej informacji na temat tej procedury, zobacz [jak: Tworzenie aplikacji usługi przepływu pracy WCF](/visualstudio/workflow-designer/creating-a-workflow-project). |
+| Usługa przepływu pracy WCF | Usługa [!INCLUDE[indigo2](../workflow-designer/includes/indigo2_md.md)] utworzona przy użyciu działań przepływu pracy. Wybranie tego elementu powoduje dodanie do projektu tych samych plików, co podczas wybierania szablonu **aplikacji usługi przepływu pracy WCF** dla nowego projektu. Aby uzyskać więcej informacji na temat tej procedury, zobacz [jak: Tworzenie aplikacji usługi przepływu pracy WCF](creating-a-workflow-project.md). |
 
 ## <a name="to-add-a-new-item-to-a-workflow-project"></a>Aby dodać nowy element do projektu przepływu pracy
 

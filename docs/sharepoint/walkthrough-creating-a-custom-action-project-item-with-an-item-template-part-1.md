@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2a9370fbbd5c806bd3978e3c642da8a6dbd79fd1
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 4a114345363deb9c5ddd0f5a4141cd7d99f0ac1c
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984988"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189182"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>Przewodnik: Tworzenie niestandardowego elementu projektu akcji z szablonem elementu część 1
   Można zwiększyć system projektu programu SharePoint w programie Visual Studio, tworząc własne typy elementów projektu. W tym instruktażu utworzysz element projektu, który można dodać do projektu programu SharePoint, aby utworzyć akcję niestandardową w witrynie programu SharePoint. Akcja niestandardowa dodaje element menu do menu **Akcje witryny** w witrynie programu SharePoint.
@@ -218,7 +218,7 @@ ms.locfileid: "72984988"
     </VSTemplate>
     ```
 
-     Ten plik definiuje zawartość i zachowanie szablonu elementu. Aby uzyskać więcej informacji na temat zawartości tego pliku, zobacz [Dokumentacja schematu szablonu programu Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference).
+     Ten plik definiuje zawartość i zachowanie szablonu elementu. Aby uzyskać więcej informacji na temat zawartości tego pliku, zobacz [Dokumentacja schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md).
 
 4. W **Eksplorator rozwiązań**Otwórz menu skrótów dla projektu **ItemTemplate** , wybierz **Dodaj**, a następnie wybierz **nowy element**.
 
@@ -455,6 +455,6 @@ ms.locfileid: "72984988"
 - [Definiowanie niestandardowych typów elementów projektu SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [Tworzenie szablonów elementów i szablonów projektu dla elementów projektu SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)
 - [Korzystanie z usługi projektu SharePoint](../sharepoint/using-the-sharepoint-project-service.md)
-- [Odwołanie do schematu szablonu Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference)
+- [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Edytor obrazów dla ikon](/cpp/windows/image-editor-for-icons)
 - [Tworzenie ikony lub innego edytora obrazów &#40;obrazów dla ikon&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)

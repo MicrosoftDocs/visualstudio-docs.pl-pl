@@ -15,18 +15,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 872f7c594344af2c59ebe7f8d1fbd1a640dd2190
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: a2a3f4429341ecdba26dab2f95415332f9cb2eca
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72728826"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187265"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Nie można połączyć się z Monitorem debugera zdalnego programu Microsoft Visual Studio
 Ten komunikat może wystąpić, ponieważ Monitor zdalnego debugowania nie jest prawidłowo skonfigurowany na maszynie zdalnej lub maszyna zdalna jest niedostępna z powodu problemów z siecią lub obecności zapory.
 
 > [!IMPORTANT]
-> Jeśli uważasz, że ta wiadomość została odebrana z powodu błędu produktu, [Zgłoś ten problem](../ide/how-to-report-a-problem-with-visual-studio.md) w programie Visual Studio. Jeśli potrzebujesz więcej pomocy, skontaktuj się [z nami](../ide/talk-to-us.md) , aby dowiedzieć się, jak skontaktować się z firmą Microsoft.
+> Jeśli uważasz, że ta wiadomość została odebrana z powodu błędu produktu, [Zgłoś ten problem](../ide/how-to-report-a-problem-with-visual-studio.md) w programie Visual Studio. Jeśli potrzebujesz więcej pomocy, skontaktuj się [z nami](../ide/feedback-options.md) , aby dowiedzieć się, jak skontaktować się z firmą Microsoft.
 
 ## <a name="specificerrors"></a>Co to jest szczegółowy komunikat o błędzie?
 

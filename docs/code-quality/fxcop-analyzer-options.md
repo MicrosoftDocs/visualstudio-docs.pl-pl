@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 78967c93a990aaef0d5863446433c286bdcf46b7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 26435db42e3214bb19438226faba0db0e5ac0f4f
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649596"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188834"
 ---
 # <a name="rule-scope-options-for-fxcop-analyzers"></a>Opcje zakresu reguł dla analizatorów FxCop
 
@@ -21,9 +21,9 @@ Niektóre reguły analizatora FxCop umożliwiają udoskonalanie części bazy ko
 Te opcje konfiguracji są dostępne od wersji 2.6.3 pakietu NuGet [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) .
 
 > [!TIP]
-> Aby zapoznać się z pełną listą opcji dostępnych dla danej wersji pakietu FxCopAnalyzers, zapoznaj się z plikiem *analizatora Configuration.MD* w folderze *Dokumentacja* pakietu. Plik znajduje się w lokalizacji *% USERPROFILE% \\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers \\ \<version \> \documentation\analyzer Configuration.MD*. Ten plik dokumentacji konfiguracji jest dołączony do każdej wersji pakietu, począwszy od wersji 2.6.5. Oto przykład sposobu udokumentowania opcji w pliku *Configuration.MD analizatora* :
+> Aby zapoznać się z pełną listą opcji dostępnych dla danej wersji pakietu FxCopAnalyzers, zapoznaj się z plikiem *analizatora Configuration.MD* w folderze *Dokumentacja* pakietu. Plik znajduje się w lokalizacji *% USERPROFILE%\\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<wersja\>\documentation\Analyzer Configuration.MD*. Ten plik dokumentacji konfiguracji jest dołączony do każdej wersji pakietu, począwszy od wersji 2.6.5. Oto przykład sposobu udokumentowania opcji w pliku *Configuration.MD analizatora* :
 >
-> Nazwa opcji: `sufficient_IterationCount_for_weak_KDF_algorithm` \
+> Nazwa opcji: `sufficient_IterationCount_for_weak_KDF_algorithm`\
 > Wartości opcji: wartości całkowite \
 > Wartość domyślna: specyficzne dla każdej konfigurowalnej reguły ("100000" domyślnie dla większości reguł) \
 > Przykład: `dotnet_code_quality.CA5387.sufficient_IterationCount_for_weak_KDF_algorithm = 100000`
@@ -38,7 +38,7 @@ Te opcje konfiguracji są dostępne od wersji 2.6.3 pakietu NuGet [Microsoft. Co
 
 | Opis | Dozwolone wartości | Wartość domyślna | Konfigurowalne reguły |
 | - | - | - | - |
-| Czy ignorować metody asynchroniczne, które nie zwracają wartości | `true`<br/>`false` | `false` | [CA2007](ca2007-do-not-directly-await-task.md) |
+| Czy ignorować metody asynchroniczne, które nie zwracają wartości | `true`<br/>`false` | `false` | [CA2007](ca2007.md) |
 
 > [!NOTE]
 > W wersji 2.6.3 i wcześniejszej części pakietu analizatora ta opcja miała nazwę `skip_async_void_methods`.
@@ -56,4 +56,4 @@ Te opcje konfiguracji są dostępne od wersji 2.6.3 pakietu NuGet [Microsoft. Co
 
 | Opis | Dozwolone wartości | Wartość domyślna | Konfigurowalne reguły |
 | - | - | - | - |
-| Określa, że kod w projekcie, który generuje ten typ zestawu, powinien być analizowany | Co najmniej jedno pole wyliczenia <xref:Microsoft.CodeAnalysis.OutputKind><br/><br/>Rozdziel wiele wartości przecinkami (,) | Wszystkie rodzaje danych wyjściowych | [CA2007](ca2007-do-not-directly-await-task.md) |
+| Określa, że kod w projekcie, który generuje ten typ zestawu, powinien być analizowany | Co najmniej jedno pole wyliczenia <xref:Microsoft.CodeAnalysis.OutputKind><br/><br/>Rozdziel wiele wartości przecinkami (,) | Wszystkie rodzaje danych wyjściowych | [CA2007](ca2007.md) |

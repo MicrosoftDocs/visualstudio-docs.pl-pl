@@ -1,5 +1,5 @@
 ---
-title: Debugowanie aplikacji sieci web — Rozwiązywanie problemów z | Dokumentacja firmy Microsoft
+title: Debugowanie aplikacji sieci Web — Rozwiązywanie problemów | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -18,20 +18,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cf25518a5511c0da629c400adfe866789929ea2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6907ba5f0b48721646c57964012bf0aaa0838b60
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852362"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188317"
 ---
-# <a name="debugging-web-applications-troubleshooting"></a>Debugowanie aplikacji sieci Web: Rozwiązywanie problemów
-Ta sekcja zawiera typowe procedury, których można użyć, aby naprawić błędy.
+# <a name="debugging-web-applications-troubleshooting"></a>Debugowanie aplikacji internetowych: rozwiązywanie problemów
+Ta sekcja zawiera typowe procedury, których można użyć do rozwiązywania błędów.
 
 ## <a name="in-this-section"></a>W tej sekcji
- [Instrukcje: Weryfikacja właściwości ustawień IIS](../debugger/how-to-verify-iis-property-settings.md) wyjaśnia, jak poprawnie ustawić właściwości w usługach IIS, aby włączyć debugowanie.
+ [Instrukcje: weryfikowanie ustawień właściwości usług IIS](../debugger/how-to-verify-iis-property-settings.md) Wyjaśnia, jak poprawnie ustawić właściwości w usługach IIS w celu włączenia debugowania.
 
 ## <a name="related-sections"></a>Sekcje pokrewne
- [Debugowanie aplikacji internetowych: Błędy i rozwiązywanie problemów](../debugger/debugging-web-applications-errors-and-troubleshooting.md) opisano rozwiązywanie problemów i błędów rozpoznawania.
+ [Debugowanie aplikacji sieci Web: Błędy i rozwiązywanie problemów](../debugger/debugging-web-applications-errors-and-troubleshooting.md) Wyjaśnia Rozwiązywanie problemów i rozpoznawanie błędów.
 
- [Debugowanie aplikacji sieci Web i skryptu](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications) omówienie debugowanie aplikacji sieci Web, takich jak [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], usługi XML sieci Web i projekty biblioteki ATL z serwera.
+ [Debugowanie aplikacji sieci Web i skryptu](how-to-enable-debugging-for-aspnet-applications.md) Omówienie debugowania aplikacji sieci Web, takich jak [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], usługi sieci Web XML i projekty serwera ATL.

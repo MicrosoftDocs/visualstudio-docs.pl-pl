@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 875c2578d5f8cc1aa68cc624adc0a6e2a1713472
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: e69d88bb5764836d82232cec26606009eaf694d7
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911363"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187735"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Diagnostyka grafiki w programie Visual Studio
 Visual Studio*Diagnostyka grafiki* to zestaw narzędzi do nagrywania, a następnie analizowania problemów z renderowaniem i wydajnością w aplikacjach Direct3D. Diagnostyka grafiki można używać w aplikacjach, które są uruchamiane lokalnie na komputerze z systemem Windows, w emulatorze urządzenia z systemem Windows lub na komputerze zdalnym lub urządzeniu.
@@ -38,7 +38,7 @@ Visual Studio*Diagnostyka grafiki* to zestaw narzędzi do nagrywania, a następn
 
  [Przechwytywanie informacji graficznych](capturing-graphics-information.md) Aby użyć Diagnostyka grafiki do badania problemu renderowania w aplikacji, należy najpierw zarejestrować informacje o sposobie korzystania z programu DirectX przez aplikację. Podczas sesji rejestrowania, gdy aplikacja działa normalnie, należy *przechwycić* (czyli zaznaczyć) interesujące Cię ramki. Przechwytywanie zawiera szczegółowe informacje o sposobie renderowania ramek. Przechwycone informacje można zapisać jako dokument dziennika grafiki, aby przeanalizować go później lub udostępnić innym członkom zespołu.
 
- [Użycie procesora GPU](gpu-usage.md) Aby użyć Diagnostyka grafiki do profilowania aplikacji, użyj narzędzia użycie procesora GPU. Użycie procesora GPU może być używane w połączeniu z innymi narzędziami profilowania, takimi jak użycie procesora CPU, w celu skorelowania aktywności procesora i procesora GPU, które mogą przyczynić się do problemów z wydajnością w aplikacji.
+ [Użycie procesora GPU](../../profiling/gpu-usage.md) Aby użyć Diagnostyka grafiki do profilowania aplikacji, użyj narzędzia użycie procesora GPU. Użycie procesora GPU może być używane w połączeniu z innymi narzędziami profilowania, takimi jak użycie procesora CPU, w celu skorelowania aktywności procesora i procesora GPU, które mogą przyczynić się do problemów z wydajnością w aplikacji.
 
  [Dokument dziennika grafiki](graphics-log-document.md) Aby rozpocząć badanie zarejestrowanego dziennika grafiki, należy użyć okna dokumentu dziennika grafiki do wybrania przechwyconej ramki — lub nawet określonego piksela, aby można było szczegółowo przejrzeć *zdarzenia* (czyli wywołania interfejsu API programu DirectX), które mają na nie wpływ.
 
@@ -66,5 +66,5 @@ Visual Studio*Diagnostyka grafiki* to zestaw narzędzi do nagrywania, a następn
 
 | Tytuł | Opis |
 | - | - |
-| [Przewodnik po funkcjach debugera](/visualstudio/debugger/debugger-feature-tour) | Wprowadza funkcje debugowania w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. |
+| [Przewodnik po funkcjach debugera](../debugger-feature-tour.md) | Wprowadza funkcje debugowania w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. |
 | [Grafika i gry DirectX](/windows/win32/directx) | Zawiera artykuły, które omawiają technologie grafiki DirectX. |

@@ -1,5 +1,5 @@
 ---
-title: 'Samouczek: Wprowadzenie do Visual Basic'
+title: 'Samouczek: wprowadzenie do Visual Basic'
 description: Dowiedz się, jak tworzyć aplikacje konsolowe Visual Basic w programie Visual Studio, krok po kroku.
 ms.custom: seodec18, get-started
 ms.date: 09/11/2019
@@ -14,26 +14,26 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: eb0bbc0cdf7aff548053c813cdf1b29ed1fed080
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: 9606b02cb26e8e0ad37f490e330e7d81f3089e27
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913309"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189000"
 ---
-# <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Samouczek: Wprowadzenie do Visual Basic w programie Visual Studio
+# <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Samouczek: wprowadzenie do Visual Basic w programie Visual Studio
 
 W tym samouczku dla Visual Basic (VB) będziesz używać programu Visual Studio do tworzenia i uruchamiania kilku różnych aplikacji konsolowych oraz eksplorowania niektórych funkcji [zintegrowanego środowiska programistycznego (IDE) programu Visual Studio](visual-studio-ide.md) .
 
 ::: moniker range="vs-2017"
 
-Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) strony, aby zainstalować go za darmo.
+Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) , aby zainstalować ją bezpłatnie.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads) strony, aby zainstalować go za darmo.
+Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads) , aby zainstalować ją bezpłatnie.
 
 ::: moniker-end
 
@@ -45,7 +45,7 @@ Najpierw utworzymy projekt aplikacji Visual Basic. Typ projektu jest dostarczany
 
 1. Otwórz program Visual Studio 2017.
 
-2. Na górnym pasku menu wybierz pozycję **plik** > **Nowy** > **projekt**.
+2. Na górnym pasku menu wybierz kolejno pozycje **plik** > **Nowy** > **projekt**.
 
 3. W oknie dialogowym **Nowy projekt** w lewym okienku rozwiń węzeł **Visual Basic**, a następnie wybierz pozycję **.NET Core**. W środkowym okienku wybierz pozycję **aplikacja konsoli (.NET Core)** . Następnie nadaj nazwę projektowi *WhatIsYourName*.
 
@@ -55,30 +55,30 @@ Najpierw utworzymy projekt aplikacji Visual Basic. Typ projektu jest dostarczany
 
 Jeśli szablon projektu **Aplikacja konsolowa (.NET Core)** nie jest widoczny, można go uzyskać, dodając obciążenie **Międzyplatformowe platformy .NET Core** . Możesz dodać to obciążenie jeden z dwóch poniższych sposobów, w zależności od tego, które aktualizacje programu Visual Studio 2017 są zainstalowane na maszynie.
 
-#### <a name="option-1-use-the-new-project-dialog-box"></a>Option 1: Korzystanie z okna dialogowego Nowy projekt
+#### <a name="option-1-use-the-new-project-dialog-box"></a>Opcja 1: korzystanie z okna dialogowego Nowy projekt
 
 1. Kliknij link **otwórz Instalator programu Visual Studio** w lewym okienku okna dialogowego **Nowy projekt** .
 
    ![Kliknij link Otwórz Instalator programu Visual Studio w oknie dialogowym Nowy projekt](../media/vs-open-visual-studio-installer-generic.png)
 
-1. Uruchamia Instalatora programu Visual Studio. Wybierz obciążenie dla **wielu platform platformy .NET Core** , a następnie wybierz **Modyfikuj**.
+1. Zostanie uruchomiona Instalator programu Visual Studio. Wybierz obciążenie dla **wielu platform platformy .NET Core** , a następnie wybierz **Modyfikuj**.
 
    ![Obciążenie Międzyplatformowe dla platformy .NET Core w Instalator programu Visual Studio](../media/tutorial-aspnet-workload.png)
 
-#### <a name="option-2-use-the-tools-menu-bar"></a>Opcja 2: Korzystanie z paska menu narzędzi
+#### <a name="option-2-use-the-tools-menu-bar"></a>Opcja 2. Korzystanie z paska menu narzędzi
 
-1. Anuluj okno dialogowe **Nowy projekt** , a następnie z górnego paska menu wybierz kolejno opcje **Narzędzia** > **Pobierz narzędzia i funkcje**.
+1. Anuluj okno dialogowe **Nowy projekt** i z górnego paska menu, wybierz **Narzędzia** > **Pobierz narzędzia i funkcje**.
 
-1. Uruchamia Instalatora programu Visual Studio. Wybierz obciążenie dla **wielu platform platformy .NET Core** , a następnie wybierz **Modyfikuj**.
+1. Zostanie uruchomiona Instalator programu Visual Studio. Wybierz obciążenie dla **wielu platform platformy .NET Core** , a następnie wybierz **Modyfikuj**.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
 > [!NOTE]
-> Niektóre zrzuty ekranu w tym samouczku używają ciemnego motywu. Jeśli nie używasz motyw ciemny, ale aby zobaczyć [Personalizowanie programu Visual Studio IDE i edytorem](../../ide/quickstart-personalize-the-ide.md) strony, aby dowiedzieć się, jak.
+> Niektóre zrzuty ekranu w tym samouczku używają ciemnego motywu. Jeśli nie używasz ciemnego motywu, ale chcesz, zobacz stronę [personalizowanie środowiska IDE i edytora programu Visual Studio](../../ide/quickstart-personalize-the-ide.md) , aby dowiedzieć się, jak.
 
-1. Open Visual Studio 2019.
+1. Otwórz program Visual Studio 2019.
 
 1. W oknie uruchamiania wybierz pozycję **Utwórz nowy projekt**.
 
@@ -117,7 +117,7 @@ Utwórzmy aplikację, która wyświetli komunikat z prośbą o Twoją nazwę, a 
 
 1. Jeśli nie jest jeszcze otwarty, Otwórz projekt *WhatIsYourName* .
 
-1. Wprowadź następujący kod Visual Basic bezpośrednio po nawiasie otwierającym, który następuje `Sub Main(args As String())` po wierszu i `End Sub` przed wierszem:
+1. Wprowadź następujący kod Visual Basic bezpośrednio po nawiasie otwierającym, który następuje po wierszu `Sub Main(args As String())` i przed wierszem `End Sub`:
 
      ```vb
      Console.WriteLine(vbCrLf + "What is your name? ")
@@ -128,7 +128,7 @@ Utwórzmy aplikację, która wyświetli komunikat z prośbą o Twoją nazwę, a 
      Console.ReadKey(True)
     ```
 
-    Ten kod zastępuje istniejące <xref:System.Console.WriteLine%2A>instrukcje, <xref:System.Console.Write%2A>i. <xref:System.Console.ReadKey%2A>
+    Ten kod zastępuje istniejące instrukcje <xref:System.Console.WriteLine%2A>, <xref:System.Console.Write%2A>i <xref:System.Console.ReadKey%2A>.
 
    ![Okno kodu z informacjami o kodzie swojej nazwy](./media/vs-2019/vb-codewindow-what-name-dark.png)
 
@@ -142,18 +142,18 @@ Utwórzmy aplikację, która wyświetli komunikat z prośbą o Twoją nazwę, a 
 
 ::: moniker range="vs-2019"
 
-1. W projekcie *WhatIsYourName* wprowadź następujący kod Visual Basic bezpośrednio po nawiasie otwierającym, który następuje `Sub Main(args As String())` po `End Sub` wierszu i przed wierszem:
+1. W projekcie *WhatIsYourName* wprowadź następujący kod Visual Basic bezpośrednio po nawiasie otwierającym, który następuje po wierszu `Sub Main(args As String())` i przed wierszem `End Sub`:
 
      ```vb
      Console.WriteLine(vbCrLf + "What is your name? ")
      Dim name = Console.ReadLine()
      Dim currentDate = DateTime.Now
-     Console.WriteLine($"{vbCrLf}Hello, {name}, on {currentDate:d} at {currentDate:t}")
+     Console.WriteLine($"{vbCrLf}Hello, {name}, on {currentDate:d} at {currentDate:t}!")
      Console.Write(vbCrLf + "Press any key to exit... ")
      Console.ReadKey(True)
     ```
 
-    Ten kod zastępuje istniejące <xref:System.Console.WriteLine%2A>instrukcje, <xref:System.Console.Write%2A>i. <xref:System.Console.ReadKey%2A>
+    Ten kod zastępuje istniejące instrukcje <xref:System.Console.WriteLine%2A>, <xref:System.Console.Write%2A>i <xref:System.Console.ReadKey%2A>.
 
    ![Okno kodu z informacjami o kodzie swojej nazwy](./media/vs-2019/vb-codewindow-what-name-dark.png)
 
@@ -173,7 +173,7 @@ Utwórzmy aplikację, która wyświetli komunikat z prośbą o Twoją nazwę, a 
 
 1. W oknie dialogowym **Nowy projekt** w lewym okienku rozwiń węzeł **Visual Basic**, a następnie wybierz pozycję **.NET Core**. W środkowym okienku wybierz pozycję **aplikacja konsoli (.NET Core)** . Następnie Nazwij plik *CalculateThis*.
 
-1. Wprowadź następujący kod między `Module Program` wierszem a `End Module` wierszem:
+1. Wprowadź następujący kod między wierszem `Module Program` i wierszem `End Module`:
 
    ```vb
    Public num1 As Integer
@@ -208,9 +208,9 @@ Utwórzmy aplikację, która wyświetli komunikat z prośbą o Twoją nazwę, a 
 
 1. Po zastosowaniu filtrów języka i platformy wybierz szablon **Aplikacja konsolowa (.NET Core)** , a następnie wybierz przycisk **dalej**.
 
-   Następnie w oknie **Konfigurowanie nowego projektu** wpisz lub wprowadź *WhatIsYourName* w polu **Nazwa projektu** . Następnie wybierz pozycję **Utwórz**.
+   Następnie w oknie **Konfigurowanie nowego projektu** wpisz lub wprowadź *CalculateThis* w polu **Nazwa projektu** . Następnie wybierz pozycję **Utwórz**.
 
-1. Wprowadź następujący kod między `Module Program` wierszem a `End Module` wierszem:
+1. Wprowadź następujący kod między wierszem `Module Program` i wierszem `End Module`:
 
    ```vb
    Public num1 As Integer
@@ -259,7 +259,7 @@ Aplikacja konsolowa pobiera dane wejściowe i wyświetla dane wyjściowe w oknie
 
 ## <a name="next-steps"></a>Następne kroki
 
-Gratulujemy wykonanie kroków tego samouczka! Aby dowiedzieć się więcej, zobacz poniższy samouczek.
+Gratulujemy ukończenia tego samouczka. Aby dowiedzieć się więcej, zobacz poniższy samouczek.
 
 > [!div class="nextstepaction"]
 > [Kompilowanie biblioteki przy użyciu Visual Basic i zestaw .NET Core SDK w programie Visual Studio](/dotnet/core/tutorials/vb-library-with-visual-studio)

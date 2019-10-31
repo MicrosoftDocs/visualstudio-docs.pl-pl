@@ -28,12 +28,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 242daf82d405af4b3a1e529633fb82651aa6bdc9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 693e0d206455c2c430f8d723f131868fdf21eefc
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666624"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189558"
 ---
 # <a name="options-text-editor-xaml-miscellaneous"></a>Opcje, Edytor tekstu, XAML, różne
 
@@ -52,7 +52,7 @@ To ustawienie służy do określania, kiedy Tagi i cudzysłowy są generowane au
 
 ## <a name="errors-and-warnings"></a>Błędy i ostrzeżenia
 
-To ustawienie służy do kontrolowania, kiedy błędy i ostrzeżenia są generowane automatycznie. Aby uzyskać więcej informacji, zobacz [błędy i ostrzeżenia XAML](../../designers/xaml-errors-warnings.md).
+To ustawienie służy do kontrolowania, kiedy błędy i ostrzeżenia są generowane automatycznie. Aby uzyskać więcej informacji, zobacz [błędy i ostrzeżenia XAML](../../xaml-tools/xaml-errors-warnings.md).
 
 ## <a name="see-also"></a>Zobacz także
 

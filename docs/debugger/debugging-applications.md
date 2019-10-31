@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 159f641b1ae5d05233e997d8dc41513a484eae75
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: baa028029081ee1c9c88b75aac416b634632b21a
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018786"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188371"
 ---
 # <a name="debugging-applications"></a>Debugowanie aplikacji
 Poniższe sekcje dotyczą debugowania dla określonych typów aplikacji. Różne typy aplikacji i różne języki wymagają różnych ustawień i technik oraz stwarzają różne problemy, które muszą być debugowane.
@@ -31,7 +31,7 @@ Poniższe sekcje dotyczą debugowania dla określonych typów aplikacji. Różne
 |[Debugowanie kodu zarządzanego](../debugger/debugging-managed-code.md)|Opisuje sposób debugowania kodu zarządzanego (Visual C#, Visual Basic, F#i C++/CLI).|
 |[Debugowanie kodu natywnego](../debugger/debugging-native-code.md)|Opisuje sposób debugowania różnego rodzaju natywnych C++ aplikacji.|
 |[Debugowanie kodu GPU](../debugger/debugging-gpu-code.md)|Opisuje sposób debugowania C++ kodu, który jest URUCHAMIANY w procesorze GPU.|
-|[Diagnostyka grafiki (Debugowanie grafiki DirectX)](/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics)|Opisuje sposób debugowania grafiki DirectX.|
+|[Diagnostyka grafiki (Debugowanie grafiki DirectX)](graphics/visual-studio-graphics-diagnostics.md)|Opisuje sposób debugowania grafiki DirectX.|
 |[Debugowanie aplikacji ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)|Opisuje sposób debugowania aplikacji ASP.NET.|
 |[Debuguj kod w języku Python](../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md)|Opisuje sposób debugowania kodu w języku Python|
 |[Debugowanie aplikacji JavaScript i TypeScript](../javascript/debug-nodejs.md)|Opisuje sposób debugowania aplikacji JavaScript, TypeScript i Node. js|

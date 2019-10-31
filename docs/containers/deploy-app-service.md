@@ -8,18 +8,18 @@ ms.devlang: dotnet
 ms.topic: article
 ms.date: 03/08/2019
 ms.author: ghogen
-ms.openlocfilehash: 9431046c57851e31a3711b4785f9cce45acab45f
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 5d1f160435fd8c62a44d3e5d3192870143558de4
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70179876"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188792"
 ---
 # <a name="deploy-an-aspnet-core-container-to-azure-app-service-using-visual-studio"></a>Wdrażanie kontenera ASP.NET Core do Azure App Service przy użyciu programu Visual Studio
 
 Ten samouczek przeprowadzi Cię przez program Visual Studio w celu opublikowania ASP.NET Core aplikacji sieci Web w kontenerze [Azure App Service](/azure/app-service). Azure App Service to odpowiednia usługa dla aplikacji sieci Web o jednym kontenerze hostowanej na platformie Azure.
 
-Jeśli nie masz subskrypcji platformy Azure, przed rozpoczęciem utwórz [bezpłatne konto](https://azure.microsoft.com/free/dotnet/?utm_source=acr-publish-doc&utm_medium=docs&utm_campaign=docs).
+Jeśli nie masz subskrypcji platformy Azure, przed rozpoczęciem Utwórz [bezpłatne konto](https://azure.microsoft.com/free/dotnet/?utm_source=acr-publish-doc&utm_medium=docs&utm_campaign=docs) .
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
@@ -40,9 +40,9 @@ Poniższe kroki przeprowadzą Cię przez proces tworzenia podstawowej aplikacji 
 ::: moniker range="vs-2017"
 1. Z menu programu Visual Studio wybierz pozycję **plik > nowy > projekt**.
 2. W sekcji **Szablony** okna dialogowego **Nowy projekt** wybierz pozycję  **C# Visual > Web**.
-3. Wybierz **aplikacji sieci Web platformy ASP.NET Core**.
+3. Wybierz **ASP.NET Core aplikacji sieci Web**.
 4. Nadaj nowej aplikacji nazwę (lub wybierz ją domyślną), a następnie kliknij **przycisk OK**.
-5. Wybierz **aplikacji sieci Web**.
+5. Wybierz pozycję **aplikacja sieci Web**.
 6. Zaznacz pole wyboru **Włącz obsługę platformy Docker** .
 7. Wybierz typ kontenera systemu **Linux** i kliknij przycisk **OK**. Kontenery systemu Windows nie są obsługiwane do wdrażania w Azure App Service jako kontener.
 ::: moniker-end
@@ -81,9 +81,9 @@ Poniższe kroki przeprowadzą Cię przez proces tworzenia podstawowej aplikacji 
 1. Profil publikowania jest zapisywany ze wszystkimi wybranymi szczegółami, takimi jak grupa zasobów i rejestr kontenerów.
 1. Aby ponownie wykonać wdrożenie z tym samym profilem publikowania, użyj przycisku **Publikuj** , przycisku **Publikuj** w oknie **działanie publikowania w sieci Web** lub kliknij prawym przyciskiem myszy projekt w **Eksplorator rozwiązań** i wybierz polecenie **Publikuj** element w menu kontekstowe.
 
-## <a name="clean-up-resources"></a>Oczyszczanie zasobów
+## <a name="clean-up-resources"></a>Czyszczenie zasobów
 
-Aby usunąć wszystkie zasoby platformy Azure skojarzone z tym samouczkiem, Usuń grupę zasobów przy użyciu [Azure Portal](https://portal.azure.com). Aby znaleźć grupę zasobów skojarzoną z opublikowaną aplikacją sieci Web, wybierz opcję **Wyświetl** > inne**działanie publikowania w sieci Web** **systemu Windows** > , a następnie wybierz ikonę koła zębatego. Zostanie otwarta karta **Publikowanie** , która zawiera grupę zasobów.
+Aby usunąć wszystkie zasoby platformy Azure skojarzone z tym samouczkiem, Usuń grupę zasobów przy użyciu [Azure Portal](https://portal.azure.com). Aby znaleźć grupę zasobów skojarzoną z opublikowaną aplikacją sieci Web, wybierz pozycję **wyświetl** > inne **działanie publikowania w sieci Web** > **Windows** , a następnie wybierz ikonę koła zębatego. Zostanie otwarta karta **Publikowanie** , która zawiera grupę zasobów.
 
 W Azure Portal wybierz pozycję **grupy zasobów**, a następnie wybierz grupę zasobów, aby otworzyć jej stronę szczegółów. Sprawdź, czy jest to poprawna Grupa zasobów, a następnie wybierz pozycję **Usuń grupę zasobów**, wpisz nazwę i wybierz pozycję **Usuń**.
 
@@ -93,4 +93,4 @@ Skonfiguruj ciągłą integrację i dostarczanie (CI/CD) za pomocą [Azure Pipel
 
 ## <a name="see-also"></a>Zobacz także
 
-[Wdróż do Azure Container Registry](vs-azure-tools-docker-hosting-web-apps-in-docker.md)
+[Wdróż do Azure Container Registry](hosting-web-apps-in-docker.md)

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae62a380e4e0feb23a901a4fc6a2628fcd8c6a0c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 0bf8cbcc699f015cae954400744d9bd724d70c57
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72734924"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187915"
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Omówienie diagnostyki grafiki w programie Visual Studio
 Visual Studio *Diagnostyka grafiki* to zestaw narzędzi do nagrywania, a następnie analizowania problemów z renderowaniem i wydajnością w aplikacjach Direct3D. Diagnostyka grafiki można używać w aplikacjach, które są uruchamiane lokalnie na komputerze z systemem Windows lub na komputerze zdalnym lub urządzeniu.
@@ -21,7 +21,7 @@ Visual Studio *Diagnostyka grafiki* to zestaw narzędzi do nagrywania, a następ
 ## <a name="using-graphics-diagnostics-to-debug-rendering-problems"></a>Używanie Graphics Diagnostics do debugowania problemów z renderowaniem
  Debugowanie problemów z renderowaniem w aplikacji rozbudowanej graficznie nie jest tak proste, jak uruchomienie debugera i krokowe wykonywanie kodu. W każdej klatce są produkowane setki tysięcy unikatowych pikseli, każdy na podstawie złożonego zestawu stanu, danych, parametrów i kodu — możliwe, że tylko kilka z powyższych pikseli pokaże problem, który próbujesz zdiagnozować. Aby jeszcze bardziej skomplikować sprawy, kod, który generuje każdy piksel, jest wykonywany na wyspecjalizowanym sprzęcie, który przetwarza setki pikseli równolegle. Tradycyjne narzędzia i techniki debugowania, z których trudno się korzysta nawet w kodzie mało skomplikowanym pod względem wątków, są nieskuteczne w obliczu tak dużej ilości danych.
 
- Narzędzia Diagnostyka grafiki w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] są przeznaczone do ułatwienia lokalizowania problemów z renderowaniem, rozpoczynając od artefaktów wizualizacji, które wskazują na problem, a następnie śledzenia z powrotem do źródła problemu przez skoncentrowanie się tylko na odpowiednim kodzie programu do cieniowania, etapach potoku, Narysuj wywołania, zasoby i stan urządzenia — w kodzie źródłowym aplikacji.
+ Narzędzia Diagnostyka grafiki w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] są przeznaczone do ułatwienia lokalizowania problemów z renderowaniem, zaczynając od artefaktów wizualizacji, które wskazują na problem, a następnie śledzenia z powrotem do źródła problemu przez skoncentrowanie się tylko na odpowiednim kodzie programu do cieniowania, etapy potoku , narysuj wywołania, zasoby i stan urządzenia — w kodzie źródłowym aplikacji.
 
 ## <a name="directx-version-compatibility"></a>Zgodność wersji programu DirectX
  Diagnostyka grafiki obsługuje aplikacje korzystające z programu Direct3D 10 lub nowszego i oferuje ograniczoną obsługę aplikacji korzystających z Direct2D. Nie obsługuje aplikacji, które używają starszych wersji Direct3D, DirectDraw lub innych graficznych interfejsów API.
@@ -52,7 +52,7 @@ Visual Studio *Diagnostyka grafiki* to zestaw narzędzi do nagrywania, a następ
 ### <a name="gpu-usage"></a>Użycie procesora GPU
  Diagnostyka grafiki może również profilować wydajność aplikacji Direct3D. Ze względu na to, że dane profilowania byłyby pochylone przez zapisanie szczegółów zdarzeń graficznych, nie jest to oddzielone od przechwytywania ramek, które mają być używane, badane z analizatorem grafiki.
 
- Aby uzyskać więcej informacji, zobacz [użycie procesora GPU](/visualstudio/profiling/gpu-usage) .
+ Aby uzyskać więcej informacji, zobacz [użycie procesora GPU](../../profiling/gpu-usage.md) .
 
 ### <a name="directx-control-panel"></a>Panel sterowania DirectX
  Panel sterowania DirectX to składnik DirectX, którego można użyć, aby zmienić sposób zachowania DirectX — na przykład włączyć wersję składników wykonawczych DirectX przeznaczoną do debugowania, wybrać rodzaj komunikatów debugowania, które są raportowane, oraz uniemożliwić korzystanie z niektórych funkcji sprzętowych karty graficznej w celu emulacji mniej zaawansowanego sprzętu. Ten poziom kontroli nad DirectX może pomóc w debugowaniu i testowaniu aplikacji DirectX. Dostęp do panelu sterowania DirectX można uzyskać z Visual Studio.

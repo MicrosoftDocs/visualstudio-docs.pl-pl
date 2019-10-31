@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 13ede811cf2e9d900a0c78aca2214b43bd8438fe
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 6c8d4949bc8bbef0231986d2eeedfd36a2f678ea
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984698"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189171"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>Przewodnik: Tworzenie elementu projektu kolumny witryny z szablonem projektu, część 1
   Projekty programu SharePoint są kontenerami dla co najmniej jednego elementu projektu programu SharePoint. System projektu programu SharePoint w programie Visual Studio można rozłożyć przez utworzenie własnych typów elementów projektu programu SharePoint, a następnie skojarzenie ich z szablonem projektu. W tym instruktażu zdefiniujesz typ elementu projektu do tworzenia kolumny witryny, a następnie utworzysz szablon projektu, którego można użyć do utworzenia nowego projektu zawierającego element projektu kolumny witryny.
@@ -433,7 +433,7 @@ ms.locfileid: "72984698"
 
    - Używa przestrzeni nazw "<http://schemas.microsoft.com/developer/vstemplate/2005>". Inne pliki projektu w tym rozwiązaniu używają przestrzeni nazw "<http://schemas.microsoft.com/developer/msbuild/2003>". W związku z tym są generowane komunikaty ostrzegawcze schematu XML, ale można je zignorować w tym instruktażu.
 
-     Aby uzyskać więcej informacji na temat zawartości plików *. vstemplate* , zobacz [Dokumentacja schematu szablonu programu Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference).
+     Aby uzyskać więcej informacji na temat zawartości plików *. vstemplate* , zobacz [Dokumentacja schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md).
 
 2. Zapisz i zamknij plik.
 

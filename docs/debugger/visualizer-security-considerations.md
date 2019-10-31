@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d53df0bc83e2068488c8a7c919f8b76258ad827
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c1c18ec84a6a62da6cd564c69ef4b83ea76bcfd6
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72728380"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187146"
 ---
 # <a name="visualizer-security-considerations"></a>Zagadnienia dotyczące zabezpieczeń internetowych
 Pisanie wizualizatora wiąże się z potencjalnymi zagrożeniami bezpieczeństwa. Obecnie nie istnieją żadne znane luki w zabezpieczeniach dla tych potencjalnych zagrożeń, ale deweloperzy muszą znać je i podejmować odpowiednie środki ostrożności, jak opisano w tym miejscu, aby zabezpieczyć się przed przyszłymi programami wykorzystującymi te luki.
@@ -39,6 +39,6 @@ Pisanie wizualizatora wiąże się z potencjalnymi zagrożeniami bezpieczeństwa
 
 ## <a name="see-also"></a>Zobacz także
 - [Architektura wizualizatora](../debugger/visualizer-architecture.md)
-- [Instrukcje: pisanie wizualizatora](/visualstudio/debugger/create-custom-visualizers-of-data)
+- [Instrukcje: pisanie wizualizatora](create-custom-visualizers-of-data.md)
 - [Tworzenie niestandardowych wizualizatorów](../debugger/create-custom-visualizers-of-data.md)
 - [Wyświetlanie danych w debugerze](../debugger/viewing-data-in-the-debugger.md)

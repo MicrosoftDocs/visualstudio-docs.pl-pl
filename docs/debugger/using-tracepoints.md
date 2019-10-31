@@ -1,6 +1,6 @@
 ---
-title: Używanie punkty śledzenia w debugerze | Microsoft Docs
-ms.date: 9/17/2019
+title: Rejestruj informacje za pomocą punkty śledzenia | Microsoft Docs
+ms.date: 10/28/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - tracepoints, about tracepoints
@@ -9,16 +9,16 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 263657213f1720eaca7a0462bb31585adaacf9bb
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: fcc9f01315d3783af1a1f124785cd74fafb215bf
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72516394"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187300"
 ---
-# <a name="use-tracepoints-in-the-visual-studio-debugger"></a>Używanie punkty śledzenia w debugerze programu Visual Studio
+# <a name="log-info-to-the-output-window-using-tracepoints-in-visual-studio"></a>Rejestruj informacje w oknie danych wyjściowych za pomocą punkty śledzenia w programie Visual Studio
 
-Punkty śledzenia umożliwiają rejestrowanie informacji w oknie danych wyjściowych w ramach konfigurowalnych warunków bez modyfikowania lub zatrzymywania kodu. Ta funkcja jest obsługiwana dla kodu zarządzanego i natywnego, a także kilku języków, takich jak JavaScript C#i.
+Punkty śledzenia umożliwiają rejestrowanie informacji w oknie danych wyjściowych w ramach konfigurowalnych warunków bez modyfikowania lub zatrzymywania kodu. Ta funkcja jest obsługiwana w przypadku języków zarządzanych (C#, Visual Basic, F#) i kodu natywnego, a także języków, takich jak JavaScript i Python.
 
 ## <a name="let39s-take-an-example"></a>&#39;Zapoznaj się z przykładem
 
@@ -111,7 +111,7 @@ W polu liczba trafień można wybrać, aby wyprowadzić komunikat, gdy linia kod
 ![Liczba trafień wyrażenia warunkowego](../debugger/media/conditionalexpressionhitcount.png "Liczba trafień wyrażenia warunkowego")
 
 ### <a name="filter"></a>filtru
-Dla warunku filtru Określ, które urządzenia, procesy lub wątki będą wyświetlane.
+Dla warunku filtru Określ, które urządzenia, procesy lub dane wyjściowe wątków są wyświetlane.
 
 ![Filtr wyrażenia warunkowego](../debugger/media/conditionalexpressionfilter.png "Filtr wyrażenia warunkowego")
 
@@ -129,7 +129,7 @@ Ujmij ciągi (takie jak nazwy) w podwójnych cudzysłowach. Wartości można wpr
 
 Podczas gdy punkty śledzenia mają na celu debugowanie bardziej przejrzystego i płynniejszego środowiska, istnieją pewne kwestie, o których należy pamiętać, gdy chodzi o korzystanie z nich.
 
-Czasami, gdy sprawdzasz właściwość lub atrybut obiektu, jego wartość może się zmienić. Nie jest to błąd spowodowany przez samą funkcję punkt śledzenia, ale warto zauważyć, że użycie punkty śledzenia do sprawdzenia obiektów nie pozwala uniknąć tych przypadkowych modyfikacji.
+Czasami, gdy sprawdzasz właściwość lub atrybut obiektu, jego wartość może się zmienić. Jeśli wartość zmienia się podczas inspekcji, nie jest to błąd spowodowany przez samą funkcję punkt śledzenia. Jednak użycie punkty śledzenia do sprawdzenia obiektów nie pozwala uniknąć tych przypadkowych modyfikacji.
 
 Sposób, w jaki wyrażenia są oceniane w oknie komunikatu **akcji** , może być inny niż język aktualnie używany do programowania. Na przykład, aby wyprowadzić ciąg, nie trzeba zawijać komunikatu w cudzysłowie, nawet jeśli zwykle używa się `Debug.WriteLine()` lub `console.log()`. Ponadto składnia nawiasów klamrowych (`{ }`) do wyrażeń wyjściowych może być również inna niż Konwencja do wyprowadzania wartości w języku deweloperskim. Jednak zawartość w nawiasach klamrowych (`{ }`) powinna być nadal napisywana przy użyciu składni języka programowania.
 

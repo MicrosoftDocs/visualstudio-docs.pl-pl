@@ -1,7 +1,7 @@
 ---
 title: Tworzenie instalacji sieciowej
 description: Dowiedz się, jak utworzyć punkt instalacji sieci na potrzeby wdrażania programu Visual Studio w ramach przedsiębiorstwa.
-ms.date: 10/11/2019
+ms.date: 10/29/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: fcc4a3d3d99deab62971c40b26c9a4252367438f
-ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.openlocfilehash: ca393af528abc7f685ceca83ac4c59ebb75dedfe
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72516319"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189493"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Tworzenie instalacji sieciowej programu Visual Studio
 
@@ -88,8 +88,9 @@ Aby ukończyć ten krok, musisz mieć połączenie z Internetem. Aby utworzyć i
 
 ## <a name="modify-the-responsejson-file"></a>Modyfikowanie pliku Response. JSON
 
-Można zmodyfikować plik Response. JSON, aby ustawić wartości domyślne, które są używane podczas uruchamiania Instalatora.  Na przykład można skonfigurować plik `response.json`, aby wybrać określony zestaw obciążeń automatycznie.
-Aby uzyskać szczegółowe informacje [, zobacz Automatyzowanie instalacji programu Visual Studio z plikiem odpowiedzi](automated-installation-with-response-file.md) .
+Można zmodyfikować plik Response. JSON, aby ustawić wartości domyślne, które są używane podczas uruchamiania Instalatora.  Na przykład można skonfigurować plik `response.json`, aby wybrać określony zestaw obciążeń automatycznie. Aby uzyskać szczegółowe informacje [, zobacz Automatyzowanie instalacji programu Visual Studio z plikiem odpowiedzi](automated-installation-with-response-file.md) .
+
+W przypadku wystąpienia problemu z programem inicjującym programu Visual Studio, który zgłasza błąd podczas parowania z plikiem Response. JSON, zobacz "nie można przeanalizować identyfikatora z procesu nadrzędnego" w temacie [Rozwiązywanie problemów związanych z siecią podczas instalowania lub używania programu Visual ](troubleshooting-network-related-errors-in-visual-studio.md#error-failed-to-parse-id-from-parent-process)Na stronie Studio znajduje się więcej informacji o tym, co należy zrobić.
 
 ## <a name="copy-the-layout-to-a-network-share"></a>Kopiuj układ do udziału sieciowego
 
@@ -219,7 +220,7 @@ Administratorzy mogą wdrażać program Visual Studio na stacjach roboczych klie
 
 > [!IMPORTANT]
 > Aby zapobiec wystąpieniu błędu, upewnij się, że pełna ścieżka układu jest krótsza niż 80 znaków.
->
+
 > [!TIP]
 > Podczas wykonywania jako część pliku wsadowego, opcja `--wait` zapewnia, że proces `vs_enterprise.exe` czeka na zakończenie instalacji, zanim zwróci kod zakończenia.
 >
@@ -287,6 +288,7 @@ Dostępne są również inne opcje pomocy technicznej. Listę można znaleźć n
 
 - [Przewodnik administratora programu Visual Studio](visual-studio-administrator-guide.md)
 - [Aktualizowanie instalacji sieciowej programu Visual Studio](update-a-network-installation-of-visual-studio.md)
+- [Rozwiązywanie problemów związanych z siecią podczas instalowania programu Visual Studio lub korzystania z niego](troubleshooting-network-related-errors-in-visual-studio.md)
 - [Sterowanie aktualizacjami wdrożeń programu Visual Studio opartych na sieci](controlling-updates-to-visual-studio-deployments.md)
 - [Cykl życia produktu Visual Studio i obsługa](/visualstudio/releases/2019/servicing/)
 - [Aktualizowanie programu Visual Studio w punkcie odniesienia obsługi](update-servicing-baseline.md)

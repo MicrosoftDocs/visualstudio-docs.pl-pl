@@ -1,5 +1,5 @@
 ---
-title: 'Przewodnik: Profilowanie wiersza polecenia przy użyciu metody próbkowania | Dokumentacja firmy Microsoft'
+title: 'Przewodnik: Profilowanie wiersza polecenia przy użyciu próbkowania | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,45 +11,45 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c76fd1d18b41073bf92ed18dadeeeb3a90c9209
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 20804e6ada568828ea1850ae249d9bf0d24855e0
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433609"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189282"
 ---
-# <a name="walkthrough-command-line-profiling-using-sampling"></a>Przewodnik: Wiersza polecenia, profilowania przy użyciu metody próbkowania
+# <a name="walkthrough-command-line-profiling-using-sampling"></a>Przewodnik: Profilowanie wiersza polecenia przy użyciu próbkowania
 
-W tym instruktażu przedstawiono sposób profilować aplikację przy użyciu narzędzia wiersza polecenia i pobierania próbek, aby zidentyfikować problemy z wydajnością.
+W tym instruktażu pokazano, jak profilować aplikację przy użyciu narzędzi wiersza polecenia i próbkowania w celu identyfikowania problemów z wydajnością.
 
-W tym instruktażu będą kroków procesu profilowania aplikacji zarządzanej za pomocą narzędzia wiersza polecenia i użyj próbkowania, aby izolować i zidentyfikować problemy z wydajnością w aplikacji.
+W tym instruktażu krok po kroku proces profilowania aplikacji zarządzanej przy użyciu narzędzi wiersza polecenia jest używany do wyodrębniania i identyfikowania problemów z wydajnością w aplikacji.
 
-W tym instruktażu będą wykonaj następujące kroki:
+W tym instruktażu wykonasz następujące czynności:
 
-- Profil aplikacji przy użyciu narzędzia wiersza polecenia i pobierania próbek.
-- Analizuj próbkowanych wyniki profilowania, aby zlokalizować i rozwiązać problemy z wydajnością.
+- Profilowanie aplikacji przy użyciu narzędzi wiersza polecenia i próbkowania.
+- Analizuj przykładowe wyniki profilowania, aby zlokalizować i rozwiązać problemy z wydajnością.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-- Pośredni wiedzę na temat [!INCLUDE[csharp_current_short](../misc/includes/csharp_current_short_md.md)]
-- Pośredni, informacje o pracy z narzędzi wiersza polecenia
-- Kopię [peopletrax — przykład](/visualstudio/profiling/performance-explorer)
-- Aby pracować z danymi dostarczonych przez profilowanie, najlepiej jest mieć debugowania dostępnych informacji o symbolach.
+- Pośrednia interpretacja [!INCLUDE[csharp_current_short](../misc/includes/csharp_current_short_md.md)]
+- Pośrednia znajomość pracy z narzędziami wiersza polecenia
+- Kopia [przykładu PeopleTrax —](performance-explorer.md)
+- Aby można było korzystać z informacji dostarczonych przez profilowanie, najlepszym rozwiązaniem jest udostępnienie informacji o symbolach debugowania.
 
 ## <a name="command-line-profiling-using-the-sampling-method"></a>Profilowanie wiersza polecenia przy użyciu metody próbkowania
 
-Próbkowanie jest metodą profilowania za pomocą którego proces okresowo wysyłane do określenia funkcji active. Dane wynikowe zapewnia liczenie częstotliwość funkcja znajdowała się na szczycie stosu wywołań proces był wtedy próbkowany.
+Próbkowanie to metoda profilowania, za pomocą której konkretny proces jest okresowo sondowany, aby określić aktywną funkcję. Dane wynikowe zawierają liczbę, jak często funkcja była w szczycie stosu wywołań, gdy proces został próbkowany.
 
 > [!NOTE]
-> Aby uzyskać ścieżkę do narzędzi profilowania, zobacz [Określ ścieżkę do narzędzia wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Na komputerach 64-bitowym 64-bitowe i 32-bitowe wersje narzędzia są dostępne. Aby użyć narzędzi profilowania z wiersza polecenia, należy dodać ścieżkę narzędzi do zmiennej środowiskowej PATH okna wiersza polecenia lub dodać do niej samo polecenie.
+> Aby uzyskać ścieżkę do narzędzi profilowania, zobacz [Określanie ścieżki do narzędzi wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Na komputerach 64-bitowych są dostępne zarówno 64-bitowe, jak i 32-bitowe wersje narzędzi. Aby użyć narzędzi wiersza polecenia profilera, należy dodać ścieżkę narzędzi do zmiennej środowiskowej PATH okna wiersza polecenia lub dodać do samego polecenia.
 
-### <a name="to-profile-the-peopletrax-application-by-using-the-sampling-method"></a>Aplikacja ma być profilowana peopletrax — przy użyciu metody próbkowania
+### <a name="to-profile-the-peopletrax-application-by-using-the-sampling-method"></a>Aby profilować aplikację PeopleTrax — za pomocą metody próbkowania
 
-1. Przykładowa aplikacja peopletrax — Instalowanie i tworzenie wersji aplikacji.
+1. Zainstaluj przykładową aplikację PeopleTrax — i skompiluj wydaną wersję aplikacji.
 
-2. Otwórz okno wiersza polecenia i Dodaj katalog Profiling Tools do lokalnej zmiennej środowiskowej Path.
+2. Otwórz okno wiersza polecenia i Dodaj katalog narzędzia profilowania do zmiennej środowiskowej ścieżka lokalna.
 
-3. Zmień katalog roboczy na katalog, który zawiera pliki binarne peopletrax —.
+3. Zmień katalog roboczy na katalog zawierający pliki binarne PeopleTrax —.
 
 4. Wpisz następujące polecenie, aby ustawić odpowiednie zmienne środowiskowe:
 
@@ -57,21 +57,21 @@ Próbkowanie jest metodą profilowania za pomocą którego proces okresowo wysy�
     VSPerfCLREnv /sampleon
     ```
 
-5. Uruchom profilowanie, uruchamiając *VSPerfCmd.exe*, czyli narzędzie wiersza polecenia, który kontroluje profilera. Następujące polecenie uruchamia aplikację i profiler w trybie próbkowania:
+5. Uruchom profilowanie, uruchamiając program *VSPerfCmd. exe*, który jest narzędziem wiersza polecenia, które kontroluje Profiler. Następujące polecenie uruchamia aplikację i Profiler w trybie próbkowania:
 
     ```cmd
     VsPerfCmd /start:sample /output:PeopleTraxReport.vsp /launch:PeopleTrax.exe
     ```
 
-     Rozpoczyna się proces profilera i dołącza do *PeopleTrax.exe* procesu. Uruchamia proces profiler do zapisywania zebranych danych profilowania do pliku raportu.
+     Proces profilera zostanie uruchomiony i dołączy do procesu *PeopleTrax —. exe* . Proces profilera rozpocznie pisanie zebranych danych profilowania do pliku raportu.
 
-6. Kliknij przycisk **Pobierz osoby**.
+6. Kliknij pozycję **Pobierz osoby**.
 
-7. Kliknij przycisk **ExportData**.
+7. Kliknij pozycję **ExportData**.
 
-     Notatnik otwiera i wyświetla nowy plik, który zawiera wyeksportowane dane z **peopletrax —**.
+     Zostanie otwarty Notatnik i zostanie wyświetlony nowy plik zawierający wyeksportowane dane z **PeopleTrax —** .
 
-8. Zamknij Notatnik, a następnie Zamknij **peopletrax —** aplikacji.
+8. Zamknij Notatnik, a następnie zamknij aplikację **PeopleTrax —** .
 
 9. Zamknij program profilujący. Wpisz następujące polecenie:
 
@@ -85,13 +85,13 @@ Próbkowanie jest metodą profilowania za pomocą którego proces okresowo wysy�
     VSPerfCLREnv /sampleoff
     ```
 
-11. Profilowanie danych są przechowywane w. *vsp* pliku Analizuj wyniki za pomocą jednego z następujących metod:
+11. Dane profilowania są przechowywane w. plik *VSP* analizuje wyniki przy użyciu jednej z następujących metod:
 
-    - Otwórz. *vsp* pliku w programie Visual Studio IDE.
+    - Otwórz okno. plik *VSP* w środowisku IDE programu Visual Studio.
 
-         — lub —
+         oraz
 
-    - Generowanie wartości rozdzielanych przecinkami (. *CSV*) za pomocą narzędzia wiersza polecenia *VSPerfReport.exe*. Do generowania raportów dla użycia poza [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE, użyj następującego polecenia:
+    - Generuj wartość rozdzieloną przecinkami (. *CSV*) za pomocą narzędzia wiersza polecenia *VSPerfReport. exe*. Aby generować raporty do użycia poza [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE, użyj następującego polecenia:
 
         ```cmd
         VSPerfReport <dir> PeopleTraxReport.vsp /output:<dir> /summary:all
@@ -99,8 +99,8 @@ Próbkowanie jest metodą profilowania za pomocą którego proces okresowo wysy�
 
 ## <a name="see-also"></a>Zobacz także
 
-[Sesja wydajności — omówienie](../profiling/performance-session-overview.md)
+[Omówienie sesji wydajności](../profiling/performance-session-overview.md)
 [profilu z wiersza polecenia](../profiling/using-the-profiling-tools-from-the-command-line.md)
 [VSPerfCmd](../profiling/vsperfcmd.md)
-[zrozumieć dane próbkowania wartości](../profiling/understanding-sampling-data-values.md)
+[poznać wartości danych próbkowania](../profiling/understanding-sampling-data-values.md)
 [widoki raportu wydajności](../profiling/performance-report-views.md)

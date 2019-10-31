@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4667fc630d86691d95e9dc9cd205b29f7b0f525
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
+ms.openlocfilehash: 8467463b5a97c5bf7de1c3864ee6a5e5fc4681d1
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72349710"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188100"
 ---
 # <a name="find-your-debugging-task-in-visual-studio"></a>Znajdowanie zadania debugowania w programie Visual Studio
 
@@ -43,11 +43,15 @@ W przeciwnym razie C# dla F# i tylko można [śledzić identyfikator obiektu za 
 
 ### <a name="pause-code-inside-a-loop-at-a-certain-iteration"></a>Wstrzymywanie kodu wewnątrz pętli w określonej iteracji
 
-Ustaw punkt przerwania z użyciem **liczby trafień** jako warunku. Aby uzyskać więcej informacji, zobacz [liczba trafień](using-breakpoints.md#hit-count).
+Ustaw punkt przerwania z użyciem **liczby trafień** jako warunku. Aby uzyskać więcej informacji, zobacz [liczba trafień](using-breakpoints.md#set-a-hit-count-condition).
 
 ### <a name="pause-code-at-the-start-of-a-function-when-you-know-the-function-name-but-not-its-location"></a>Wstrzymaj kod na początku funkcji, jeśli znasz nazwę funkcji, ale nie jej lokalizację
 
 Można to zrobić za pomocą punktu przerwania funkcji. Aby uzyskać więcej informacji, zobacz [ustawianie punktów przerwania funkcji](using-breakpoints.md#BKMK_Set_a_breakpoint_in_a_source_file).
+
+### <a name="pause-code-at-the-start-of-multiple-functions-with-the-same-name"></a>Wstrzymaj kod na początku wielu funkcji o tej samej nazwie
+
+Jeśli masz wiele funkcji o tej samej nazwie (przeciążone funkcje lub funkcje w różnych projektach), możesz użyć [punktu przerwania funkcji](using-breakpoints.md#BKMK_Set_a_breakpoint_in_a_source_file).
 
 ### <a name="manage-and-keep-track-of-your-breakpoints"></a>Zarządzanie i śledzenie punktów przerwania
 
@@ -101,11 +105,15 @@ Aby skonfigurować opcje debugera i ustawienia projektu debugera, zobacz [Ustawi
 
 ### <a name="edit-code-during-a-debugging-session"></a>Edytuj kod podczas sesji debugowania
 
-Użyj [Edytuj i Kontynuuj](edit-and-continue.md). W przypadku języka XAML Użyj [gorącego ładowania XAML](xaml-hot-reload.md).
+Użyj [Edytuj i Kontynuuj](edit-and-continue.md). W przypadku języka XAML Użyj [gorącego ładowania XAML](../xaml-tools/xaml-hot-reload.md).
 
 ### <a name="send-messages-to-the-output-window-without-modifying-code"></a>Wysyłaj komunikaty do okna danych wyjściowych bez modyfikowania kodu
 
 Ustaw punkt śledzenia. Aby uzyskać więcej informacji, zobacz [using punkty śledzenia](using-tracepoints.md).
+
+## <a name="view-the-order-in-which-functions-are-called"></a>Wyświetlanie kolejności, w której są wywoływane funkcje
+
+Zobacz [, jak wyświetlić stos wywołań](how-to-use-the-call-stack-window.md).
 
 ### <a name="debug-on-remote-machines"></a>Debugowanie na maszynach zdalnych
 

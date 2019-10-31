@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c78c56d00f087bdef7733ee1ef2cbf90afd9638
-ms.sourcegitcommit: bdccab4c2dbd50ea8adaaf88c69c9ca32db88099
-ms.translationtype: HT
+ms.openlocfilehash: 9cc8ab1ac26f4aa01342d9949243772edd3de91f
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73144762"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189413"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Szybki Start: pierwsze spojrzenie na narzędzia profilowania
 
@@ -111,7 +111,7 @@ Aby uzyskać więcej informacji, zobacz [oś czasu aplikacji](../profiling/appli
 
 ## <a name="analyze-gpu-usage-direct3d"></a>Analizowanie użycia procesora GPU (Direct3D)
 
-W aplikacjach Direct3D (składniki Direct3D muszą znajdować C++się w programie) można sprawdzić aktywność procesora GPU i analizować problemy z wydajnością. Aby uzyskać więcej informacji, zobacz [użycie procesora GPU](../debugger/gpu-usage.md). Aby użyć narzędzia, wybierz pozycję **użycie procesora GPU** w profilerze wydajności, a następnie wybierz polecenie **Uruchom**. W aplikacji przejdź do scenariusza, który Cię interesuje, a następnie wybierz pozycję **Zatrzymaj zbieranie** , aby wygenerować raport.
+W aplikacjach Direct3D (składniki Direct3D muszą znajdować C++się w programie) można sprawdzić aktywność procesora GPU i analizować problemy z wydajnością. Aby uzyskać więcej informacji, zobacz [użycie procesora GPU](/visualstudio/debugger/graphics/gpu-usage). Aby użyć narzędzia, wybierz pozycję **użycie procesora GPU** w profilerze wydajności, a następnie wybierz polecenie **Uruchom**. W aplikacji przejdź do scenariusza, który Cię interesuje, a następnie wybierz pozycję **Zatrzymaj zbieranie** , aby wygenerować raport.
 
 Po wybraniu przedziału czasowego na wykresach i wybraniu opcji **Wyświetl szczegóły**w dolnym okienku pojawi się widok szczegółowy. W widoku szczegółowym można sprawdzić, jaka część działania odbywa się na każdym procesorze CPU i procesorze GPU. Wybierz pozycję zdarzenia w dolnym okienku, aby wyświetlić okna podręczne na osi czasu. Na przykład wybierz **istniejące** zdarzenie, aby wyświetlić **wyświetlane** okna podręczne wywołań. (Jasne szare linie pionie mogą służyć jako odwołanie, aby zrozumieć, czy niektóre **obecne** wywołania zostały pominięte pionie. Aby aplikacja mogła stale osiągnąć 60 FPS, musi istnieć jedno **istniejące** wywołanie między wszystkimi dwoma Vsyncs.
 
@@ -162,7 +162,7 @@ Poniżej znajduje się tabela zawierająca listę różnych narzędzi oferowanyc
 |----------------------|---------------------|-------------|-------------|
 |[Użycie procesora CPU](../profiling/cpu-usage.md)|opcję|opcję|opcję|
 |[Użycie pamięci](../profiling/memory-usage.md)|opcję|opcję|opcję|
-|[Użycie procesora GPU](../debugger/gpu-usage.md)|opcję|opcję|znaleziono|
+|[Użycie procesora GPU](/visualstudio/debugger/graphics/gpu-usage)|opcję|opcję|znaleziono|
 |[Oś czasu aplikacji](../profiling/application-timeline.md)|opcję|opcję|znaleziono|
 |[Wskazówki dotyczące wydajności](../profiling/perftips.md)|opcję|tak dla języka XAML, nie dla HTML|opcję|
 |[Eksplorator wydajności](../profiling/performance-explorer.md)|opcję|znaleziono|opcję|
@@ -174,7 +174,7 @@ Poniżej znajduje się tabela zawierająca listę różnych narzędzi oferowanyc
 |----------------------|---------------------|-------------|-------------|
 |[Użycie procesora CPU](../profiling/cpu-usage.md)|opcję|opcję|opcję|
 |[Użycie pamięci](../profiling/memory-usage.md)|opcję|opcję|opcję|
-|[Użycie procesora GPU](../debugger/gpu-usage.md)|opcję|opcję|znaleziono|
+|[Użycie procesora GPU](/visualstudio/debugger/graphics/gpu-usage)|opcję|opcję|znaleziono|
 |[Oś czasu aplikacji](../profiling/application-timeline.md)|opcję|opcję|znaleziono|
 |[Wskazówki dotyczące wydajności](../profiling/perftips.md)|opcję|tak dla języka XAML, nie dla HTML|opcję|
 |[Eksplorator wydajności](../profiling/performance-explorer.md)|opcję|znaleziono|opcję|
@@ -186,4 +186,4 @@ Poniżej znajduje się tabela zawierająca listę różnych narzędzi oferowanyc
 
 
 ## <a name="see-also"></a>Zobacz także
-- [Debugowanie w programie Visual Studio](/visualstudio/debugger/debugger-feature-tour)
+- [Debugowanie w programie Visual Studio](../debugger/debugger-feature-tour.md)

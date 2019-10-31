@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 196ba13b95245b8c42e6d946572665792f71346d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f5247a56667f5715d9f155c662eb333967878d71
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745639"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188650"
 ---
 # <a name="create-custom-views-of-managed-objects-c-visual-basic-f-ccli"></a>Tworzenie niestandardowych widoków obiektów zarządzanych (C#, Visual Basic, F#, C++/CLI)
 Możesz dostosować sposób, w jaki program Visual Studio Wyświetla typy danych w zmiennych debugera systemu Windows.
@@ -41,10 +41,10 @@ W kodzie .NET Framework 2,0 Visual Basic nie obsługuje atrybutu DebuggerBrowsab
 
 ## <a name="visualizers"></a>Wizualizatory
 
-Można napisać wizualizator do wyświetlania dowolnego zarządzanego typu danych. Aby uzyskać więcej informacji, zobacz [jak: napisać wizualizator](/visualstudio/debugger/create-custom-visualizers-of-data).
+Można napisać wizualizator do wyświetlania dowolnego zarządzanego typu danych. Aby uzyskać więcej informacji, zobacz [jak: napisać wizualizator](create-custom-visualizers-of-data.md).
 
 > [!NOTE]
-> W C++ przypadku kodu można dodać niestandardowe rozszerzenia typu danych za pomocą struktury Natvis, zgodnie z opisem w temacie [Tworzenie niestandardowych widoków C++ obiektów w debugerze](/visualstudio/debugger/create-custom-views-of-native-objects).
+> W C++ przypadku kodu można dodać niestandardowe rozszerzenia typu danych za pomocą struktury Natvis, zgodnie z opisem w temacie [Tworzenie niestandardowych widoków C++ obiektów w debugerze](create-custom-views-of-native-objects.md).
 
 ## <a name="see-also"></a>Zobacz także
 

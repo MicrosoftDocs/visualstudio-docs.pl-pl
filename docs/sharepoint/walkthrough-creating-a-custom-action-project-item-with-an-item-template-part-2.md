@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a873d00e1befc9126f4fe89b05a66a8331853ac2
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: ae9c686e46bf6a956d58ac22b823dcc36c2aacce
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984977"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189150"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Przewodnik: Tworzenie niestandardowego elementu projektu akcji z szablonem elementu część 2
   Po zdefiniowaniu niestandardowego typu elementu projektu programu SharePoint i skojarzeniu go z szablonem elementu w programie Visual Studio, można również udostępnić Kreator szablonu. Za pomocą kreatora można zbierać informacje od użytkowników, gdy używają one szablonu, aby dodać nowe wystąpienie elementu projektu do projektu. Zbierane informacje mogą służyć do inicjowania elementu projektu.
@@ -79,7 +79,7 @@ ms.locfileid: "72984977"
 
 2. W **projektancie projektu**upewnij się, że struktura docelowa jest ustawiona na .NET Framework 4,5.
 
-     W przypadku C# projektów wizualnych można ustawić tę wartość na karcie **aplikacja** . W przypadku projektów Visual Basic można ustawić tę wartość na karcie **Kompilowanie** . Aby uzyskać więcej informacji, zobacz [How to: Target of a wersja .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+     W przypadku C# projektów wizualnych można ustawić tę wartość na karcie **aplikacja** . W przypadku projektów Visual Basic można ustawić tę wartość na karcie **Kompilowanie** . Aby uzyskać więcej informacji, zobacz [How to: Target of a wersja .NET Framework](../ide/visual-studio-multi-targeting-overview.md).
 
 3. W projekcie **ItemTemplateWizard** Dodaj element **window (WPF)** do projektu, a następnie nadaj mu nazwę Item **WizardWindow**.
 
@@ -130,7 +130,7 @@ ms.locfileid: "72984977"
      [!code-xml[SPExtensibility.ProjectItem.CustomAction#9](../sharepoint/codesnippet/Xaml/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml#9)]
 
     > [!NOTE]
-    > Okno, które jest tworzone w tym języku XAML, pochodzi od klasy bazowej <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>. Po dodaniu niestandardowego okna dialogowego WPF do programu Visual Studio zalecamy, aby można było utworzyć okno dialogowe z tej klasy, aby mieć spójne style z innymi oknach dialogowych w programie Visual Studio i uniknąć problemów, które mogłyby wystąpić w innych oknach dialogowych modalnych. Aby uzyskać więcej informacji, zobacz [Tworzenie modalnych okien dialogowych i zarządzanie nimi](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes).
+    > Okno, które jest tworzone w tym języku XAML, pochodzi od klasy bazowej <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>. Po dodaniu niestandardowego okna dialogowego WPF do programu Visual Studio zalecamy, aby można było utworzyć okno dialogowe z tej klasy, aby mieć spójne style z innymi oknach dialogowych w programie Visual Studio i uniknąć problemów, które mogłyby wystąpić w innych oknach dialogowych modalnych. Aby uzyskać więcej informacji, zobacz [Tworzenie modalnych okien dialogowych i zarządzanie nimi](../extensibility/creating-and-managing-modal-dialog-boxes.md).
 
 3. Jeśli tworzysz projekt Visual Basic, Usuń przestrzeń nazw `ItemTemplateWizard` z nazwy klasy `WizardWindow` w atrybucie `x:Class` elementu `Window`. Ten element znajduje się w pierwszym wierszu XAML. Gdy skończysz, pierwszy wiersz powinien wyglądać podobnie do następującego kodu:
 
@@ -206,7 +206,7 @@ ms.locfileid: "72984977"
     </WizardExtension>
     ```
 
-     Aby uzyskać więcej informacji na temat `WizardExtension` elementu, zobacz [Szablony &#40;&#41;programu Visual Studio WizardExtension —](/visualstudio/extensibility/wizardextension-element-visual-studio-templates).
+     Aby uzyskać więcej informacji na temat `WizardExtension` elementu, zobacz [Szablony &#40;&#41;programu Visual Studio WizardExtension —](../extensibility/wizardextension-element-visual-studio-templates.md).
 
 3. Zapisz i zamknij plik.
 
@@ -345,6 +345,6 @@ ms.locfileid: "72984977"
 - [Przewodnik: Tworzenie niestandardowego elementu projektu akcji z szablonem elementu część 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)
 - [Definiowanie niestandardowych typów elementów projektu SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [Tworzenie szablonów elementów i szablonów projektu dla elementów projektu SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)
-- [Odwołanie do schematu szablonu Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference)
+- [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Instrukcje: korzystanie z kreatorów z szablonami projektu](../extensibility/how-to-use-wizards-with-project-templates.md)
 - [Domyślne lokalizacje i identyfikatory akcji niestandardowych](/previous-versions/office/developer/sharepoint-2010/bb802730(v=office.14))

@@ -8,14 +8,14 @@ ms.devlang: dotnet
 ms.topic: article
 ms.date: 07/23/2019
 ms.author: ghogen
-ms.openlocfilehash: 267e0c1ed1ac3911aad2161f186bf4a482f069b6
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: b033825bbe8facbeae3dcdee6a5b563461921522
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68886404"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188747"
 ---
-# <a name="deploy-to-docker-hub"></a>Wdróż w usłudze Docker Hub
+# <a name="deploy-to-docker-hub"></a>Wdrażanie w usłudze Docker Hub
 
 Usługa Docker Hub udostępnia wygodną usługę hostingu dla repozytoriów obrazów. Możesz łatwo wdrożyć usługę Docker Hub ręcznie z poziomu programu Visual Studio.
 
@@ -45,11 +45,11 @@ Jeśli nie masz repozytorium centrum platformy Docker, utwórz je za pomocą nar
 
 ## <a name="next-steps"></a>Następne kroki
 
-Opublikuj w [Azure Container Registry](/azure/container-registry/) , wykonując kroki opisane w sekcji [wdrażanie do Azure Container Registry](vs-azure-tools-docker-hosting-web-apps-in-docker.md).
+Opublikuj w [Azure Container Registry](/azure/container-registry/) , wykonując kroki opisane w sekcji [wdrażanie do Azure Container Registry](hosting-web-apps-in-docker.md).
 
 Skonfiguruj ciągłą integrację i dostarczanie (CI/CD) za pomocą [Azure Pipelines](/azure/devops/pipelines/?view=azure-devops).
 
 ## <a name="see-also"></a>Zobacz także
 
-[Wdróż, aby Azure App Service](deploy-app-service.md)
+[Wdróż program, aby Azure App Service](deploy-app-service.md)
 [Narzędzia kontenerów programu Visual Studio](/visualstudio/containers/).

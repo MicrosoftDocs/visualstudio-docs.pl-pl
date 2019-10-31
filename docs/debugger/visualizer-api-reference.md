@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: efcba8397ce766409715f24e184b3c77aad53eea
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: d8479343634ca8afc647edde61eb8b1106954c83
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72728652"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187210"
 ---
 # <a name="visualizer-api-reference"></a>Wizualizator API — Odwołanie
 
@@ -43,5 +43,5 @@ Interfejsy API wizualizatora są udostępniane dla użytkowników, którzy chcą
 ## <a name="see-also"></a>Zobacz także
 
 - [Przewodnik: pisanie wizualizatora w języku C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
-- [Instrukcje: pisanie wizualizatora](/visualstudio/debugger/create-custom-visualizers-of-data)
+- [Instrukcje: pisanie wizualizatora](create-custom-visualizers-of-data.md)
 - [Tworzenie niestandardowych wizualizatorów](../debugger/create-custom-visualizers-of-data.md)

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: d12c9848409f57b16c733b587edff193311bcfdd
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: da634246bfa9f800779c761458028f55b9317f6f
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72732278"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187630"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Jak wyzwolić wstrzymanie, wznowienie i zdarzenia w tle podczas debugowania aplikacji platformy UWP w programie Visual Studio
 
@@ -110,7 +110,7 @@ Aby uzyskać więcej informacji o zarządzaniu okresem istnienia procesu i zadan
 4. Wybierz dziennik **diagnostyczny** .
 
 ## <a name="see-also"></a>Zobacz także
-- [Testowanie aplikacji platformy UWP za pomocą programu Visual Studio](../test/testing-store-apps-with-visual-studio.md)
-- [Debugowanie aplikacji w programie Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
+- [Testowanie aplikacji platformy UWP za pomocą programu Visual Studio](/visualstudio/test/create-and-run-unit-tests-for-a-store-app-in-visual-studio)
+- [Debugowanie aplikacji w programie Visual Studio](debugging-windows-store-and-windows-universal-apps.md)
 - [Cykl życia aplikacji](/windows/uwp/launch-resume/app-lifecycle)
 - [Uruchamianie, wznawianie i wielozadania](/windows/uwp/launch-resume/index)

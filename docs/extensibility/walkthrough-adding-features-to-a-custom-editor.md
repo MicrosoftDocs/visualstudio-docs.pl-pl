@@ -1,5 +1,5 @@
 ---
-title: 'Przewodnik: Dodawanie funkcji do edytora niestandardowego | Dokumentacja firmy Microsoft'
+title: 'Przewodnik: Dodawanie funkcji do edytora niestandardowego | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,90 +10,90 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50565363f2fc88e40816bdfc4773e436e960ee06
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c5ea1c1bfa34399f4a2428aec2f51f97c9884216
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66312881"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189062"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>Przewodnik: Dodawanie funkcji do edytora niestandardowego
-Po utworzeniu niestandardowego edytora, możesz dodać więcej funkcji do niego.
+Po utworzeniu edytora niestandardowego można dodać do niego więcej funkcji.
 
-## <a name="to-create-an-editor-for-a-vspackage"></a>Aby utworzyć edytora dla pakietu VSPackage
+## <a name="to-create-an-editor-for-a-vspackage"></a>Aby utworzyć Edytor dla elementu pakietu VSPackage
 
-1. Tworzenie niestandardowego edytora za pomocą szablonu projektu pakietu Visual Studio.
+1. Utwórz niestandardowy Edytor przy użyciu szablonu projektu pakietu programu Visual Studio.
 
-     Aby uzyskać więcej informacji, zobacz [instruktażu: Tworzenie niestandardowego edytora](../extensibility/walkthrough-creating-a-custom-editor.md).
+     Aby uzyskać więcej informacji, zobacz [Przewodnik: Tworzenie niestandardowego edytora](../extensibility/walkthrough-creating-a-custom-editor.md).
 
-2. Zdecyduj, czy chcesz tego edytora, aby obsługiwać pojedynczy widok lub wielu widoków.
+2. Zdecyduj, czy edytor ma obsługiwać pojedynczy widok, czy wiele widoków.
 
-     Edytor który obsługuje **nowe okno** polecenia lub widok formularza i widoku kodu, wymaga obiekty danych oddzielny dokument i Widok dokumentu. W edytorze, który obsługuje tylko jeden widok można zaimplementować obiekt danych dokumentu i obiekt widoku dokumentu na tym samym obiekcie.
+     Edytor obsługujący nowe polecenie **okna** lub widok formularza i widok kodu wymaga oddzielnych obiektów danych dokumentu i obiektów widoku dokumentu. W edytorze, który obsługuje tylko jeden widok, obiekt danych dokumentu i obiekt widoku dokumentu można zaimplementować dla tego samego obiektu.
 
-     Na przykład wiele widoków, zobacz [obsługi wielu widoków dokumentu](../extensibility/supporting-multiple-document-views.md).
+     Przykład wielu widoków można znaleźć w temacie [Obsługa widoków wielu dokumentów](../extensibility/supporting-multiple-document-views.md).
 
-3. Implementowanie fabryki edytora, konfigurując <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> interfejsu.
+3. Zaimplementuj fabrykę edytora przez skonfigurowanie interfejsu <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>.
 
      Aby uzyskać więcej informacji, zobacz [fabryki edytora](../extensibility/editor-factories.md).
 
-4. Zdecydować, czy mają tego edytora, aby korzystać z aktywacji w miejscu, czy uproszczone osadzanie Zarządzanie okna dokumentu widok obiektu.
+4. Zdecyduj, czy edytor ma używać aktywacji w miejscu czy uproszczonego osadzania, aby zarządzać oknem obiektu widoku dokumentu.
 
-     Uproszczone osadzanie okno edytora hostuje widokiem żadnego standardowego dokumentu, gdy okno edytora aktywacji w miejscu obsługuje formant ActiveX lub innego aktywnego obiektu jako jego widok dokumentu. Aby uzyskać więcej informacji, zobacz [uproszczone osadzanie](../extensibility/simplified-embedding.md) i [Aktywacja w miejscu](../extensibility/in-place-activation.md).
+     Uproszczone okno edytora osadzania zawiera standardowy widok dokumentu, podczas gdy okno edytora aktywacji w miejscu obsługuje formant ActiveX lub inny aktywny obiekt jako widok dokumentu. Aby uzyskać więcej informacji, zobacz [uproszczone osadzanie](../extensibility/simplified-embedding.md) i [Aktywacja w miejscu](../extensibility/in-place-activation.md).
 
-5. Implementowanie <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejsu do obsługi poleceń.
+5. Zaimplementuj interfejs <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> w celu obsługi poleceń.
 
-6. Podaj trwałość dokumentu i odpowiedzi na zmiany plików zewnętrznych:
+6. Podaj trwałość dokumentu i odpowiedź na zmiany plików zewnętrznych:
 
-    1. Aby utrwalić pliku, należy zaimplementować <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> i <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> na obiekt danych dokumentu w edytorze.
+    1. Aby zachować plik, zaimplementuj <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> i <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> w obiekcie danych dokumentu edytora.
 
-    2. Aby reagować na zmiany pliku zewnętrznego, należy zaimplementować <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEx> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl> na obiekt danych dokumentu w edytorze.
+    2. Aby odpowiedzieć na zmiany w pliku zewnętrznym, zaimplementuj <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEx> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl> w obiekcie danych dokumentu edytora.
 
         > [!NOTE]
-        > Wywołaj `QueryService` na <xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx> uzyskać wskaźnik do `IVsFileChangeEx`.
+        > Wywołaj `QueryService` na <xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx>, aby uzyskać wskaźnik do `IVsFileChangeEx`.
 
-7. Koordynowanie zdarzeń edycji dokumentów kontroli kodu źródłowego. Wykonaj następujące kroki:
+7. Koordynuj zdarzenia edycji dokumentu z kontrolą kodu źródłowego. Wykonaj następujące kroki:
 
-    1. Pobierz wskaźnik do `IVsQueryEditQuerySave2` przez wywołanie metody `QueryService` na <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave>.
+    1. Pobierz wskaźnik do `IVsQueryEditQuerySave2`, wywołując `QueryService` w <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave>.
 
-    2. Gdy wystąpi pierwsze zdarzenie edycji, wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> metody.
+    2. Gdy wystąpi pierwsze zdarzenie edycji, wywołaj metodę <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>.
 
-         Ta metoda monituje użytkownika o wyewidencjonować pliku, jeśli jeszcze nie został wyewidencjonowany. Pamiętaj obsłużyć warunek "nie wyewidencjonować pliku" w celu uniknięcia błędów.
+         Ta metoda poprosi użytkownika o wyewidencjonowanie pliku, jeśli nie został jeszcze wyewidencjonowany. Pamiętaj, aby obsłużyć warunek "niewyewidencjonowany plik" w celu zapobieżenia błędom.
 
-    3. Podobnie, przed zapisaniem pliku, należy wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A> metody.
+    3. Podobnie przed zapisaniem pliku Wywołaj metodę <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A>.
 
-         Ta metoda monituje użytkownika o zapisanie pliku, jeśli nie został zapisany lub jego zmienione od ostatniego zapisu.
+         Ta metoda poprosi użytkownika o zapisanie pliku, jeśli nie został on zapisany lub zmieniono od ostatniego zapisu.
 
-8. Włącz **właściwości** okno, aby wyświetlić właściwości zaznaczonego w edytorze tekstu. Wykonaj następujące kroki:
+8. Włącz okno **Właściwości** , aby wyświetlić właściwości tekstu zaznaczonego w edytorze. Wykonaj następujące kroki:
 
-    1. Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> każdego zaznaczonego tekstu czasu zmiany zakończone powodzeniem w danej implementacji <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>.
+    1. Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> za każdym razem, gdy zmienia się wybór tekstu, przekazując w implementacji <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>.
 
-    2. Wywołaj `QueryService` na <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> usługę, aby uzyskać wskaźnik do <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>.
+    2. Wywołaj `QueryService` w usłudze <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection>, aby uzyskać wskaźnik do <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>.
 
-9. Umożliwianie użytkownikom przeciągać i upuszczać elementy między edytora i **przybornika**, lub między edytory zewnętrzne (na przykład program Microsoft Word) i **przybornika**. Wykonaj następujące kroki:
+9. Zezwól użytkownikom na przeciąganie i upuszczanie elementów między edytorem i **przybornikiem**albo między edytorami zewnętrznymi (takimi jak program Microsoft Word) i **przybornikiem**. Wykonaj następujące kroki:
 
-    1. Implementowanie `IDropTarget` w edytorze do wyzwalania alertu IDE, że edytora jest miejsca docelowego.
+    1. Zaimplementuj `IDropTarget` w edytorze, aby ostrzec IDE, że edytorem jest obiekt docelowy upuszczania.
 
-    2. Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxUser> interfejsu w widoku, więc w edytorze można włączać i wyłączać elementów w **przybornika**.
+    2. Zaimplementuj interfejs <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxUser> w widoku, aby Edytor mógł włączać i wyłączać elementy w **przyborniku**.
 
-    3. Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.ResetDefaults%2A> i wywołać `QueryService` na <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolbox> usługę, aby uzyskać wskaźnik do <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3> interfejsów.
+    3. Zaimplementuj <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.ResetDefaults%2A> i Wywołaj `QueryService` w usłudze <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolbox>, aby uzyskać wskaźnik do interfejsów <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3>.
 
-         Kroki te włączają Twojego pakietu VSPackage do dodawania nowych elementów do **przybornika**.
+         Te kroki umożliwiają pakietu VSPackage Dodawanie nowych elementów do **przybornika**.
 
-10. Zdecyduj, czy mają inne funkcje opcjonalne tego edytora.
+10. Zdecyduj, czy chcesz, aby wszystkie inne funkcje opcjonalne dla edytora.
 
-    - Jeśli chcesz, aby tego edytora, aby obsługiwać Znajdź i Zamień poleceń, zaimplementować <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget>.
+    - Jeśli chcesz, aby Edytor obsługiwał polecenia Znajdź i Zamień, zaimplementuj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget>.
 
-    - Jeśli chcesz użyć okno narzędzia tworzącego konspekt dokumentu w edytorze, zaimplementować `IVsDocOutlineProvider`.
+    - Jeśli chcesz użyć okna narzędzia konspektu dokumentu w edytorze, zaimplementuj `IVsDocOutlineProvider`.
 
-    - Jeśli chcesz użyć paska stanu w edytorze, zaimplementować <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> i wywołać `QueryService` dla <xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar> uzyskać wskaźnik do `IVsStatusBar`.
+    - Jeśli chcesz użyć paska stanu w edytorze, zaimplementuj <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> i Wywołaj `QueryService` <xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar>, aby uzyskać wskaźnik do `IVsStatusBar`.
 
-         Na przykład, edytor może wyświetlać wiersza / informacje o kolumnach, tryb wyboru (przesyłanie strumieniowe / polu) i tryb wstawiania (Wstaw / overstrike).
+         Na przykład, Edytor może wyświetlać informacje o wierszu/kolumnie, tryb wyboru (strumień/pole) i tryb wstawiania (Wstawianie/przekreślenie).
 
-    - Jeśli chcesz, aby tego edytora, aby obsługiwać `Undo` polecenia zalecaną metodą jest użycie modelu menedżera cofania OLE. Jako alternatywę, może mieć uchwyt edytora `Undo` polecenia bezpośrednio.
+    - Jeśli chcesz, aby Edytor obsługiwał polecenie `Undo`, zalecana metoda to użycie modelu Menedżera obiektów OLE Undo. Alternatywnie, możesz mieć Edytor bezpośrednio obsłużyć `Undo` polecenie.
 
-11. Tworzenie rejestru informacje, w tym identyfikatory GUID dla pakietu VSPackage, menu, edytora i inne funkcje.
+11. Utwórz informacje rejestru, w tym identyfikatory GUID dla pakietu VSPackage, menu, Edytor i inne funkcje.
 
-     Poniżej przedstawiono przykładowy kod, który możesz umieścić w swojej *.rgs* pliku skryptu pokazują, jak poprawnie zarejestrować edytora.
+     Poniżej przedstawiono ogólny przykład kodu, który można umieścić w skrypcie pliku *. RGS* , aby pokazać, jak prawidłowo zarejestrować Edytor.
 
     ```csharp
     NoRemove Editors
@@ -113,21 +113,21 @@ Po utworzeniu niestandardowego edytora, możesz dodać więcej funkcji do niego.
     }
     ```
 
-12. Implementowanie Obsługa pomocy kontekstowej.
+12. Zaimplementuj obsługę pomocy kontekstowej.
 
-     Ten krok pozwala do zapewnienia pomocy F1 i dynamiczna Pomoc okna obsługi dla elementów w edytorze. Aby uzyskać więcej informacji, zobacz [jak: Dostarczanie kontekstu edytory](../extensibility/how-to-provide-context-for-editors.md).
+     Ten krok pozwala udostępnić Pomoc F1 i dynamiczną obsługę okna pomocy dla elementów w edytorze. Aby uzyskać więcej informacji, zobacz [How to: zapewnianie kontekstu dla edytorów](/visualstudio/extensibility/how-to-provide-context-for-editors?view=vs-2015).
 
-13. Udostępnianie z edytorem modelu obiektu automatyzacji poprzez implementację `IDispatch` interfejsu.
+13. Uwidocznij model obiektów automatyzacji z edytora, implementując interfejs `IDispatch`.
 
-     Aby uzyskać więcej informacji, zobacz [Współtworzenie modelu automatyzacji](../extensibility/internals/contributing-to-the-automation-model.md).
+     Aby uzyskać więcej informacji, zobacz temat Tworzenie [modelu automatyzacji](../extensibility/internals/contributing-to-the-automation-model.md).
 
-## <a name="robust-programming"></a>Skuteczne programowanie
+## <a name="robust-programming"></a>Niezawodne programowanie
 
-- Tworzone jest wystąpienie edytora, gdy wywołuje IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> metody. Jeśli Edytor obsługuje wiele widoków, `CreateEditorInstance` tworzy zarówno dane dokumentu, jak i obiektów widoku dokumentu. Jeśli obiekt danych dokumentu jest już otworzyć, inną niż null `punkDocDataExisting` wartość jest przekazywana do `IVsEditorFactory::CreateEditorInstance`. Wdrożenie fabryki edytora należy określić, czy istniejący obiekt danych dokumentu jest zgodny, wykonywanie zapytań dotyczących odpowiednich interfejsów na nim. Aby uzyskać więcej informacji, zobacz [Obsługa wielu widoków dokumentu](../extensibility/supporting-multiple-document-views.md).
+- Wystąpienie edytora jest tworzone, gdy IDE wywołuje metodę <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>. Jeśli Edytor obsługuje wiele widoków, `CreateEditorInstance` tworzy zarówno dane dokumentu, jak i obiekty widoku dokumentu. Jeśli obiekt danych dokumentu jest już otwarty, do `IVsEditorFactory::CreateEditorInstance`jest przenoszona wartość `punkDocDataExisting` o wartości innej niż null. Implementacja fabryki edytora musi określać, czy istniejący obiekt danych dokumentu jest zgodny przez wykonywanie zapytań dotyczących odpowiednich interfejsów. Aby uzyskać więcej informacji, zobacz [Obsługa widoków wielu dokumentów](../extensibility/supporting-multiple-document-views.md).
 
-- Jeśli używasz uproszczone podejście osadzania, należy zaimplementować <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> interfejsu.
+- Jeśli używasz uproszczonego podejścia do osadzania, zaimplementuj interfejs <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>.
 
-- Jeśli zdecydujesz się używać aktywacji w miejscu, należy zaimplementować następujące interfejsy:
+- W przypadku podjęcia decyzji o użyciu aktywacji w miejscu należy zaimplementować następujące interfejsy:
 
    <xref:Microsoft.VisualStudio.OLE.Interop.IOleObject>
 
@@ -136,22 +136,22 @@ Po utworzeniu niestandardowego edytora, możesz dodać więcej funkcji do niego.
    <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent>
 
   > [!NOTE]
-  > `IOleInPlaceComponent` Interfejs jest używany w celu uniknięcia scalania menu OLE 2.
+  > Interfejs `IOleInPlaceComponent` jest używany, aby uniknąć scalania menu OLE 2.
 
-   Twoje `IOleCommandTarget` implementacja obsługuje poleceń, takich jak **Wytnij**, **kopiowania**, i **Wklej**. Podczas implementowania `IOleCommandTarget`, zdecyduj, czy edytor wymaga własnej *vsct* plik, aby zdefiniować własne polecenia menu struktury lub jeśli implementuje on standardowe polecenia definiowane przez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Zazwyczaj edytory użyć rozszerzenia menu środowiska IDE i zdefiniować własne paski narzędzi. Często jest jednak niezbędne dla edytora zdefiniować własne odpowiednie polecenia, oprócz używania zestaw standardowych poleceń środowiska IDE. Edytor musi zadeklarować standardowe polecenia używa, a następnie zdefiniować nowe polecenia, menu kontekstowe, najwyższego poziomu menu i paski narzędzi w *vsct* pliku. Jeśli aktywacja w miejscu utworzyć edytor, zaimplementować <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent> i zdefiniuj menu i paski narzędzi edytora w *vsct* zamiast za pomocą scalania menu OLE 2 pliku.
+   Implementacja `IOleCommandTarget` obsługuje polecenia, takie jak **wycinanie**, **Kopiowanie**i **wklejanie**. Podczas implementowania `IOleCommandTarget`Zdecyduj, czy Edytor wymaga własnego pliku *. vsct* , aby zdefiniować własną strukturę menu poleceń, czy też może zaimplementować standardowe polecenia zdefiniowane przez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Zazwyczaj edytory używają i zwiększają menu środowiska IDE oraz definiują własne paski narzędzi. Niemniej jednak często konieczne jest, aby Edytor mógł definiować własne poszczególne polecenia oprócz używania standardowego zestawu poleceń IDE. Edytor musi deklarować standardowe polecenia, z których korzysta, a następnie definiować nowe polecenia, menu kontekstowe, menu najwyższego poziomu i paski narzędzi w pliku *. vsct* . Jeśli tworzysz Edytor aktywacji w miejscu, zaimplementuj <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent> i zdefiniuj menu i paski narzędzi dla edytora w pliku *. vsct* , a nie za pomocą scalania menu OLE 2.
 
-- Aby zapobiec polecenia menu skupienia się w interfejsie użytkownika, należy używać istniejących poleceń w IDE przed inventing nowych poleceń. Udostępnione polecenia są zdefiniowane w *SharedCmdDef.vsct* i *ShellCmdDef.vsct*. Te pliki są instalowane domyślnie w podkatalogu VisualStudioIntegration\Common\Inc swoje [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] instalacji.
+- Aby zapobiec zapisywaniu poleceń menu w interfejsie użytkownika, należy użyć istniejących poleceń w IDE przed wyjęciem nowych poleceń. Polecenia udostępnione są zdefiniowane w *SharedCmdDef. vsct* i *ShellCmdDef. vsct*. Te pliki są instalowane domyślnie w podkatalogu VisualStudioIntegration\Common\Inc instalacji [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)].
 
-- `ISelectionContainer` można wyrazić zarówno pojedynczych i wielu opcji. Każdy wybrany obiekt jest implementowany jako `IDispatch` obiektu.
+- `ISelectionContainer` może wyrazić wybór pojedynczy i wielokrotny. Każdy wybrany obiekt jest implementowany jako obiekt `IDispatch`.
 
-- Implementuje IDE `IOleUndoManager` jako usługi dostępne z <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> lub jako obiekt, który może być utworzone za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A>. Implementuje Twojego edytora `IOleUndoUnit` interfejsu dla każdego `Undo` akcji.
+- IDE implementuje `IOleUndoManager` jako usługę dostępną z <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> lub jako obiekt, który można utworzyć przy użyciu <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A>. Edytor implementuje interfejs `IOleUndoUnit` dla każdej akcji `Undo`.
 
-- Istnieją dwa miejsca niestandardowy Edytor może narazić obiektów automatyzacji:
+- Istnieją dwa miejsca, w których Edytor niestandardowy może uwidaczniać obiekty automatyzacji:
 
   - `Document.Object`
 
   - `Window.Object`
 
 ## <a name="see-also"></a>Zobacz także
+
 - [Współtworzenie modelu automatyzacji](../extensibility/internals/contributing-to-the-automation-model.md)
-- [Instrukcje: Dostarczanie kontekstu edytorów](../extensibility/how-to-provide-context-for-editors.md)

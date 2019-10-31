@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4e8ccaaf877c04b3d58fc6d54bb658c2cef77b6f
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 046f3bbca7b66d14e9b6a3eae96b613492292be0
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985315"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189188"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>Rozwiązywanie problemów z rozwiązaniami programu SharePoint
   Podczas debugowania rozwiązań programu SharePoint za pomocą debugera [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] mogą wystąpić następujące problemy lub alerty. Aby uzyskać więcej informacji, zobacz [Debugowanie rozwiązań przepływu pracy programu SharePoint 2007](https://msdn.microsoft.com/3a5392f3-66f3-48be-956e-02de23fa6247).
@@ -281,4 +281,4 @@ ms.locfileid: "72985315"
 
 - [Rozwiązywanie problemów z pakietami i wdrażaniem programu SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)
 - [Kompilowanie i debugowanie rozwiązań SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)
-- [Debugowanie w programie Visual Studio](../debugger/debugging-in-visual-studio.md)
+- [Debugowanie w programie Visual Studio](../debugger/debugger-feature-tour.md)

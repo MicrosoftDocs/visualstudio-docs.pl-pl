@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6a4e3fde3d98b83f8b92ffe039e3bff5c8eae4f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 77f5ca5dcc1b886ec56b7177dd0d6aa62a8ce4f0
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738327"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188631"
 ---
 # <a name="debugger-project-settings"></a>Ustawienia projektu debugowania
 Niektóre ustawienia projektu wpływają również na Debugowanie. Te ustawienia określają takie elementy jak katalogi, na których znajduje się debuger, argumenty poleceń i poleceń służące do uruchamiania programu oraz typ informacji o debugowaniu utworzonych dla programu. Te ustawienia można zmienić w oknie dialogowym **strony właściwości** .
@@ -44,7 +44,7 @@ Niektóre ustawienia projektu wpływają również na Debugowanie. Te ustawienia
 ## <a name="related-sections"></a>Sekcje pokrewne
  [Określanie symboli (. pdb) i plików źródłowych](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) Opisuje, jak debuger używa plików symboli i plików źródłowych do wyświetlania informacji na potrzeby debugowania.
 
- [Debugowanie aplikacji w programie Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps) Opisuje sposób debugowania aplikacji platformy UWP. (Centrum deweloperów systemu Windows)
+ [Debugowanie aplikacji w programie Visual Studio](debugging-windows-store-and-windows-universal-apps.md) Opisuje sposób debugowania aplikacji platformy UWP. (Centrum deweloperów systemu Windows)
 
  [Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md) Opisuje ustawienia właściwości powiązane z debugerem i przygotowanie do debugowania programu przy użyciu debugera [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 

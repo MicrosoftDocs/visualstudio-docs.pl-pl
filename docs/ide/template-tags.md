@@ -1,6 +1,6 @@
 ---
-title: Dodawanie lub edytowanie tagów szablonów projektu
-description: Dowiedz się, jak dodać lub edytować znaczniki szablonów projektu w programie Visual Studio.
+title: Dodawanie lub edytowanie tagów w szablonach projektu
+description: Dowiedz się, jak dodawać i edytować Tagi szablonów projektów w programie Visual Studio.
 ms.date: 04/30/2019
 author: minsa110
 ms.author: somin
@@ -13,36 +13,36 @@ helpviewer_keywords:
 - updating templates [Visual Studio]
 - template tagging, updating
 - template tags, updating
-ms.openlocfilehash: 417b171a731224302e6dd2efa55b45d84455ca4b
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 37fa5449847eb4c093475df11a07decb31168f1f
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67891137"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189546"
 ---
 # <a name="add-tags-to-project-templates"></a>Dodawanie tagów do szablonów projektu
 
-Począwszy od [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) 16.1 w wersji 2 (wersja zapoznawcza), można dodać języka, platformy i tagi typu projektu do szablonów projektu. 
+Począwszy od [programu Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) w wersji 16,1 Preview 2, można dodać tagi language, platform i Type projektu do szablonów projektu. 
 
-Znaczniki są używane w dwóch miejscach w **nowy projekt** okno dialogowe:
+Tagi są używane w dwóch miejscach okna dialogowego **Nowy projekt** :
 
-- Tagi są wyświetlane w polu Opis szablonu.
+- Tagi są wyświetlane w opisie szablonu.
 
-   ![Szablon projektu przy użyciu tagów w oknie dialogowym Nowy projekt](media/npd-item-with-template-tags.png)
+   ![Szablon projektu ze znacznikami w oknie dialogowym Nowy projekt](media/npd-item-with-template-tags.png)
 
-- Tagi umożliwiają szablonu, przeszukiwanie i filtrowane.
+- Tagi umożliwiają przeszukiwanie i filtrowanie szablonu.
 
    ![Wyszukiwanie i filtrowanie w oknie dialogowym Nowy projekt](media/npd-search-and-filter.png)
 
-Możesz dodawać znaczniki, aktualizując *.vstemplate* pliku XML. Można użyć znaczników szablonu, które są wbudowane w program Visual Studio lub tworzyć tagi szablonu niestandardowego. Tagi szablonu są wyświetlane tylko w programie Visual Studio 2019 **nowy projekt** okno dialogowe. Znaczniki szablonu nie wpływają na to, jak szablon renderuje we wcześniejszych wersjach programu Visual Studio.
+Możesz dodać tagi, aktualizując plik XML *. vstemplate* . Możesz użyć tagów szablonów wbudowanych w program Visual Studio lub utworzyć niestandardowe znaczniki szablonów. Tagi szablonów są wyświetlane tylko w oknie dialogowym **Nowy projekt** programu Visual Studio 2019. Tagi szablonów nie wpływają na sposób renderowania szablonu we wcześniejszych wersjach programu Visual Studio.
 
 ## <a name="add-or-edit-tags"></a>Dodawanie lub edytowanie tagów
 
-Możesz chcieć dodać lub edytować znaczniki do szablonu projektu *.vstemplate* XML, gdy należy wykonać jedną z następujących czynności:
+Możesz chcieć dodać lub edytować Tagi w pliku XML szablonu projektu *. vstemplate* , gdy wykonaj jedną z następujących czynności:
 
-* [Utwórz nowy szablon projektu](/visualstudio/ide/how-to-create-project-templates) za pomocą Kreatora eksportowania szablonu.
-* [Aktualizowanie istniejącego szablonu projektu](/visualstudio/ide/how-to-update-existing-templates).
-* [Utwórz nowy szablon projektu VSIX](/visualstudio/extensibility/getting-started-with-the-vsix-project-template).
+* [Utwórz nowy szablon projektu](how-to-create-project-templates.md) przy użyciu Kreatora eksportu szablonów.
+* [Zaktualizuj istniejący szablon projektu](how-to-update-existing-templates.md).
+* [Utwórz nowy szablon projektu VSIX](../extensibility/getting-started-with-the-vsix-project-template.md).
 
 ## <a name="syntax"></a>Składnia
 
@@ -54,12 +54,12 @@ Możesz chcieć dodać lub edytować znaczniki do szablonu projektu *.vstemplate
 
 ## <a name="attributes"></a>Atrybuty
 
-Następujące atrybuty opcjonalne można użyć w scenariuszach zaawansowanych użytkowników:
+W zaawansowanych scenariuszach użytkownika można używać następujących opcjonalnych atrybutów:
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`Package`|Identyfikator GUID, który określa pakietu programu Visual Studio.|
-|`ID`|Określa identyfikator zasobu. w programie Visual Studio|
+|`Package`|Identyfikator GUID, który określa identyfikatora pakietu programu Visual Studio.|
+|`ID`|Określa identyfikator zasobu programu Visual Studio.|
 
 Składnia:
 
@@ -79,41 +79,41 @@ Brak.
 
 |Element|Opis|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|(Wymagane) Klasyfikuje szablon i definiuje sposób wyświetlania albo **nowy projekt** okno dialogowe lub **Dodaj nowy element** okno dialogowe.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Potrzeb Klasyfikuje szablon i definiuje sposób wyświetlania w oknie dialogowym **Nowy projekt** lub okno dialogowe **Dodaj nowy element** .|
 
 ## <a name="text-value"></a>Wartość tekstowa
 
-Wartość tekstowa jest wymagany, chyba że używasz `Package` i `ID` atrybutów.
+Wartość tekstowa jest wymagana, jeśli nie są używane atrybuty `Package` i `ID`.
 
 Tekst zawiera nazwę szablonu.
 
-## <a name="built-in-tags"></a>Wbudowane tagi
+## <a name="built-in-tags"></a>Wbudowane Tagi
 
-Program Visual Studio udostępnia listę wbudowanych tagów. Podczas dodawania tag wbudowany tag renderuje zlokalizowanych zasobów. 
+Program Visual Studio oferuje listę wbudowanych tagów. Po dodaniu wbudowanego znacznika tag renderuje zlokalizowany zasób. 
 
-Na poniższej liście przedstawiono wbudowane tagi, które są dostępne w programie Visual Studio. Odpowiadające im wartości są wyświetlane w nawiasach.
+Na poniższej liście przedstawiono wbudowane Tagi, które są dostępne w programie Visual Studio. Odpowiednie wartości są wyświetlane w nawiasach.
 
 | Język | Platforma | Typ projektu |
 | -- | -- | -- |
-| C++ (`cpp`) | Android (`android`) | Chmury (`cloud`) |
-| C# (`csharp`) | Azure (`azure`) | Konsola (`console`) |
-| F# (`fsharp`) | iOS (`ios`) | Pulpitu (`desktop`) |
+| C++(`cpp`) | Android (`android`) | Chmura (`cloud`) |
+| C#(`csharp`) | Azure (`azure`) | Konsola programu (`console`) |
+| F#(`fsharp`) | iOS (`ios`) | Pulpit (`desktop`) |
 | Java (`java`) | Linux (`linux`) | Rozszerzenia (`extension`) |
 | JavaScript (`javascript`) | macOS (`macos`) | Gry (`games`) |
-| Python (`python`) | tvOS (`tvos`) | IoT (`iot`) |
+| Python (`python`) | Systemu tvOS (`tvos`) | IoT (`iot`) |
 | Zapytanie Languate (`querylanguage`) | Windows (`windows`) | Biblioteka (`library`) |
-| TypeScript (`typescript`) | Xbox (`xbox`) | Uczenie maszynowe (`machinelearning`) |
+| TypeScript (`typescript`) | Konsola Xbox (`xbox`) | Machine Learning (`machinelearning`) |
 | Visual Basic (`visualbasic`) | | Mobile (`mobile`) |
 | | | Office (`office`) |
 | | | Inne (`other`) |
-| | | Usługi (`service`) |
+| | | Usługa (`service`) |
 | | | Test (`test`) |
-| | | UWP (`uwp`) |
-| | | W sieci Web (`web`) |
+| | | PLATFORMY UWP (`uwp`) |
+| | | Sieć Web (`web`) |
 
 ## <a name="example"></a>Przykład
 
-W poniższym przykładzie pokazano metadanych dla szablonu projektu dla wizualizacji C# aplikacji:
+W poniższym przykładzie przedstawiono metadane szablonu projektu dla aplikacji wizualnej C# :
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -147,7 +147,7 @@ W poniższym przykładzie pokazano metadanych dla szablonu projektu dla wizualiz
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Odwołanie do schematu szablonu Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference)
-- [Tworzenie szablonów projektów i elementów](/visualstudio/ide/creating-project-and-item-templates)
-- [Dostosowywanie szablonów projektów i elementów](/visualstudio/ide/customizing-project-and-item-templates)
-- [Rozpoczynanie pracy przy użyciu szablonu projektu VSIX](/visualstudio/extensibility/getting-started-with-the-vsix-project-template)
+- [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Tworzenie szablonów projektów i elementów](creating-project-and-item-templates.md)
+- [Dostosowywanie szablonów projektów i elementów](customizing-project-and-item-templates.md)
+- [Wprowadzenie do szablonu projektu VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)

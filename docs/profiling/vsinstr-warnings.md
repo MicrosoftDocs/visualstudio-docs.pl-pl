@@ -1,5 +1,5 @@
 ---
-title: Ostrzeżenia VSInstr | Dokumentacja firmy Microsoft
+title: Ostrzeżenia VSInstr | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,34 +14,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b03b1350b4125262bedfd7fa5284c13d6d38a2e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 259b4089e4a54dbde4cc8b30a3da2899ad37a85a
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822913"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189296"
 ---
 # <a name="vsinstr-warnings"></a>Ostrzeżenia VSInstr
-W poniższej tabeli wymieniono ostrzeżenia *VSInstr.exe* narzędzia. NOWARN — opcja wraz z numerów ostrzeżeń, które umożliwia Pomijaj wyświetlanie ostrzeżenia.
+Poniższa tabela zawiera listę ostrzeżeń wydawanych przez narzędzie *VSInstr. exe* . Można użyć opcji nowarn wraz z numerami ostrzegawczymi, aby pominąć wyświetlane ostrzeżenie.
 
 |Numer ostrzeżenia|Opis|
 |--------------------|-----------------|
-|**VSP1026**|Pokrycie nie jest obsługiwane w bibliotekach, które nie odwołują się do elementu MSCorLib. Jest to często zdarza się w przypadku bibliotek przenośnych.<br /><br />[/Enablecodecoverage](/visualstudio/test/vstest-console-options) opcja wiersza polecenia jest wymagana dla platformy .NET Core.|
+|**VSP1026**|Pokrycie nie jest obsługiwane w bibliotekach, które nie odwołują się do biblioteki MSCorLib. Jest to często przypadek dla bibliotek przenośnych.<br /><br />Opcja wiersza polecenia [/EnableCodeCoverage](../test/vstest-console-options.md) jest wymagana dla platformy .NET Core.|
 |**VSP2000**|Błąd wewnętrzny. Nie można pobrać nazwy pliku modułu dla tego pliku wykonywalnego.|
-|**VSP2001**|\<Nazwa zestawu > jest zestaw o silnej nazwie. Musi zostać ponownie podpisany przed mogą być wykonywane.<br /><br /> To ostrzeżenie występuje, gdy został zinstrumentowany na zestawu podpisanego za pomocą. Możesz użyć *sn.exe* narzędzie ponownie podpisać plik binarny lub tymczasowo wyłączyć wymaganie silnej nazwy. Aby uzyskać więcej informacji, zobacz [Sn.exe (narzędzie silnych nazw)](/dotnet/framework/tools/sn-exe-strong-name-tool).|
-|**VSP2002**|Nie można znaleźć funkcji \<funcname > w pliku \<nazwa pliku ><br /><br /> To ostrzeżenie występuje, jeśli funkcja nie może znajdować się w określonym pliku.|
-|**VSP2003**|Nie można znaleźć żadnych skrzyżowanych skoków do funkcji \<funcname > w pliku \<nazwa_pliku >.<br /><br /> To ostrzeżenie występuje, jeśli narzędzie VSInstr nie może zniweczyć przechodzi między. Skrzyżowany skok są używane do optymalizacji kodu.|
-|**VSP2004**|Funkcja \<funcname > została wykluczona przy użyciu przełącznika wiersza polecenia wykluczenia, ale była wymagana, ponieważ zawiera skok.<br /><br /> To ostrzeżenie występuje, jeśli funkcja został wykluczony, korzystając z opcji wykluczenia, ale jest wymagany w procesie instrumentacji. Program profilujący automatycznie uwzględnia wymaganej funkcji.|
-|**VSP2005**|Wewnętrzny błąd Instrumentacji \<tekst błędu ><br /><br /> To ostrzeżenie zostanie wyświetlone, jeśli nie można przeprowadzić instrumentacji. Przejrzyj tekst błędu, aby ustalić, czy mogą zostać poprawione.|
-|**VSP2006**|Nie można zlokalizować pliku PDB dla \<name ><br /><br /> To ostrzeżenie występuje, jeśli plik PDB nie istnieje w ścieżce wyszukiwania lub jest niezgodna z pliku binarnego.|
-|**VSP2007**|\<Nazwa pliku > nie zawiera kodu instrumentacji.<br /><br /> To ostrzeżenie zostanie wyświetlone, jeśli funkcje w pliku binarnym wszystkie wykluczone lub określony plik zawiera tylko zasoby.|
-|**VSP2008**|Nie można pobrać atrybutów zabezpieczeń z \<name >. Kod błędu: \<kod ><br /><br /> To ostrzeżenie występuje, jeśli użytkownik nie ma uprawnień READ_DAC. Podczas procesu Instrumentacji profilera próbuje zachować oryginalne DACL dla pliku binarnego. Ponieważ oryginalny plik binarny jest zastępowany odciskiem nowego pliku binarnego, DACL z oryginalny plik binarny należy skopiować i zastosowane do nowego pliku binarnego. Może zakończyć się niepowodzeniem, jeśli użytkownik nie ma dostępu READ_DAC na oryginalny plik binarny.|
-|**VSP2009**|Nie można ustawić atrybutów zabezpieczeń \<name >. Kod błędu: \<numer błędu ><br /><br /> To ostrzeżenie występuje, jeśli użytkownik nie ma uprawnień WRITE_DAC. Podczas procesu Instrumentacji profilera próbuje zachować oryginalne DACL dla pliku binarnego. Ponieważ oryginalny plik binarny jest zastępowany odciskiem nowego pliku binarnego, DACL z oryginalny plik binarny należy skopiować i zastosowane do nowego pliku binarnego. Może zakończyć się niepowodzeniem, jeśli użytkownik nie ma dostępu WRITE_DAC na nowe dane binarne.|
-|**VSP2010**|Żadne funkcje nie są specjalnie wybranych do Instrumentacji z powodu — OBEJMUJĄ opcje/WYKLUCZANIA|
-|**VSP2011**|Uwzględnianie/wykluczanie funcspec \<name > jest niezgodny z dowolnej funkcji|
-|**VSP2012**|Obraz, który nie zawiera kodu, który może być instrumentacji dla pokrycia kodu.<br /><br /> Profiler nie Instrumentacja następującego typu kodu:<br /><br /> — Statyczne funkcje CRT<br />-Zarządzanych metod z NonUserCodeAttribute<br />-Zarządzanych metod z DebuggerHiddenAttribute<br />-Bloki MASM<br /><br /> To ostrzeżenie jest generowany, jeśli po powyższym filtrowaniu nie ma kodu po lewej.|
-|**VSP2013**|Zinstrumentowanie tego obrazu wymagają, aby był uruchamiany jako proces 32-bitowy. Flagi nagłówka CLR zostały zaktualizowane w celu przedstawienia tej.<br /><br /> Program profilujący modyfikuje plik binarny, tak, aby otworzyć 32-bitowy proces 64-bitowych systemach operacyjnych w emulatorze WOW64. Dla bibliotek (dll) to może się nie powieść, jeśli są one załadowane w istniejących procesów 64-bitowych. To ostrzeżenie powiadamia użytkownika zależności.|
-|**VSP2014**|Wynikowy zinstrumentowany obraz wygląda na nieprawidłowy i może nie działać.<br /><br /> Ten komunikat występuje, gdy ostateczny zestaw instrumentowanych ma nieprawidłowy nagłówek PE.|
+|**VSP2001**|Nazwa zestawu \<> jest zestawem o silnej nazwie. Aby można było wykonać te zmiany, należy je wcześniej podpisać.<br /><br /> To ostrzeżenie występuje, gdy podpisany zestaw jest Instrumentacją. Możesz użyć narzędzia *SN. exe* , aby zrezygnować z pliku binarnego lub tymczasowo wyłączyć wymaganie silnej nazwy. Aby uzyskać więcej informacji, zobacz [SN. exe (Narzędzie silnej nazwy)](/dotnet/framework/tools/sn-exe-strong-name-tool).|
+|**VSP2002**|Nie można znaleźć funkcji \<FuncName > w pliku \<nazw ><br /><br /> To ostrzeżenie występuje, jeśli nie można zlokalizować funkcji w określonym pliku.|
+|**VSP2003**|Nie można znaleźć żadnych przeskoków krzyżowych do funkcji \<FuncName > w > pliku \<nazw.<br /><br /> To ostrzeżenie występuje, jeśli VSInstr nie zniesienia krzyżowe uskoków. Przeskoki krzyżowe są używane na potrzeby optymalizacji kodu.|
+|**VSP2004**|Funkcja \<FuncName > została wykluczona przy użyciu przełącznika wiersza polecenia EXCLUDE, ale była wymagana, ponieważ zawierała krzyżyk uskoku.<br /><br /> To ostrzeżenie występuje, jeśli funkcja została wykluczona przy użyciu opcji wykluczania, ale jest wymagana podczas procesu instrumentacji. Profiler automatycznie zawiera wymaganą funkcję.|
+|**VSP2005**|Wewnętrzny błąd Instrumentacji \<tekstowym błędów ><br /><br /> To ostrzeżenie jest generowane, jeśli nie można wykonać Instrumentacji. Przejrzyj tekst błędu, aby ustalić, czy można go poprawić.|
+|**VSP2006**|Nie można zlokalizować pliku PDB dla nazwy \<<br /><br /> To ostrzeżenie występuje, jeśli plik PDB nie istnieje w ścieżce wyszukiwania lub nie jest zgodny z plikiem binarnym.|
+|**VSP2007**|\<filename > nie zawiera kodu Instrumentacji.<br /><br /> To ostrzeżenie jest generowane, jeśli wszystkie funkcje w pliku binarnym zostały wykluczone lub jeśli określony plik zawiera tylko zasoby.|
+|**VSP2008**|Nie można pobrać atrybutów zabezpieczeń z nazwy \<>. Kod błędu \<kod ><br /><br /> To ostrzeżenie występuje, jeśli użytkownik nie ma uprawnienia READ_DAC. Podczas procesu instrumentacji profiler próbuje zachować oryginalną listę DACL dla pliku binarnego. Ponieważ oryginalny plik binarny jest zastępowany nowym plikiem binarnym, lista DACL z oryginalnego pliku binarnego musi zostać skopiowana i zastosowana do nowego pliku binarnego. Może to zakończyć się niepowodzeniem, jeśli użytkownik nie ma dostępu READ_DAC do oryginalnego pliku binarnego.|
+|**VSP2009**|Nie można ustawić atrybutów zabezpieczeń na \<nazw >. Kod błędu \<numer błędu ><br /><br /> To ostrzeżenie występuje, jeśli użytkownik nie ma uprawnienia WRITE_DAC. Podczas procesu instrumentacji profiler próbuje zachować oryginalną listę DACL dla pliku binarnego. Ponieważ oryginalny plik binarny jest zastępowany nowym plikiem binarnym, lista DACL z oryginalnego pliku binarnego musi zostać skopiowana i zastosowana do nowego pliku binarnego. Może to zakończyć się niepowodzeniem, jeśli użytkownik nie ma dostępu WRITE_DAC do nowego pliku binarnego.|
+|**VSP2010**|Nie wybrano żadnych funkcji dla Instrumentacji ze względu na opcje dołączania/wykluczania|
+|**VSP2011**|Nazwa dołączania/wykluczania funcspec \<> nie jest zgodna z żadną z funkcji|
+|**VSP2012**|Obraz nie zawiera żadnego kodu, który może być Instrumentacją dla pokrycia kodu.<br /><br /> Profiler nie ma Instrumentacji następującego typu kodu:<br /><br /> -Statyczne funkcje CRT<br />Metody zarządzane z atrybutem NonUserCodeAttribute<br />Metody zarządzane z atrybutem DebuggerHiddenAttribute<br />-MASM bloki<br /><br /> To ostrzeżenie jest generowane, jeśli po filtrowaniu nie ma pozostałego kodu.|
+|**VSP2013**|Instrumentacja tego obrazu wymaga uruchomienia go jako procesu 32-bitowego. Flagi nagłówka CLR zostały zaktualizowane w celu odzwierciedlenia tego.<br /><br /> Profiler modyfikuje plik binarny, dzięki czemu 64-bitowe systemy operacyjne mogą otworzyć proces 32-bitowy w emulatorze emulatora WOW64. W przypadku bibliotek (dll) może to się nie powieść, jeśli są ładowane w istniejącym procesie 64-bitowym. To ostrzeżenie powiadamia użytkownika o zależności.|
+|**VSP2014**|Utworzony obraz z instrumentacją wydaje się nieprawidłowy i może nie zostać uruchomiony.<br /><br /> Ten komunikat występuje, gdy końcowy zestaw Instrumentacji ma nieprawidłowy nagłówek PE.|
 
 ## <a name="see-also"></a>Zobacz także
 - [VSInstr](../profiling/vsinstr.md)

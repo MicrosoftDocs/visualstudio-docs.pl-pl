@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e6444f559902841c13a56265569a0bdc13a9ed26
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 7bcd11d7860e1d191479d4a2ea5f9fac78dcdfe2
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981719"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189225"
 ---
 # <a name="localize-sharepoint-solutions"></a>Lokalizowanie rozwiązań SharePoint
 
@@ -42,7 +42,7 @@ ms.locfileid: "72981719"
 |Niezależny od języka|Plik zasobów zawierający ciągi zlokalizowane dla języka, ale nie do określonej kultury. Na przykład "fr" dla języka francuskiego.|
 |Specyficzne dla języka|Plik zasobów zawierający ciągi zlokalizowane dla języka i kultury. Na przykład "fr-CA" dla francuskiego Kanady.|
 
- Aby uzyskać więcej informacji, zobacz [hierarchiczna organizacja zasobów do lokalizacji](../ide/hierarchical-organization-of-resources-for-localization.md).
+ Aby uzyskać więcej informacji, zobacz [hierarchiczna organizacja zasobów do lokalizacji](../ide/globalizing-and-localizing-applications.md).
 
  Aby określić domyślne pliki zasobów w projektach programu SharePoint, które tworzysz w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], wybierz opcję **Język niezmienny (kraj niezmienny)** na liście kultura okna dialogowego **Dodawanie zasobu** , gdy dodasz plik zasobów.
 

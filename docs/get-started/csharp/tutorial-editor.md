@@ -12,12 +12,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: f40111e59aa97180c98f0fc12d6b8eeb5d06ecec
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1b5fb79430b081986764f0ee1789f68471667498
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647871"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189080"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Dowiedz się, jak używać edytora kodu
 
@@ -171,7 +171,7 @@ Edytor programu Visual Studio ułatwia sprawdzanie definicji typu, metody itp. J
 
 Nikt nie pobiera kodu po raz pierwszy, a jedna z rzeczy, które trzeba zmienić, jest nazwą zmiennej lub metody. Wypróbujmy funkcję [refaktoryzacji](../../ide/refactoring-in-visual-studio.md) programu Visual Studio, aby zmienić nazwę zmiennej `_words` na `words`.
 
-1. Umieść kursor nad definicją zmiennej `_words` i wybierz polecenie **Zmień nazwę** w menu kontekstowym lub kliknij prawym przyciskiem myszy lub naciśnij klawisze **Ctrl** +**R**, **Ctrl** +**R**.
+1. Umieść kursor nad definicją zmiennej `_words` i wybierz polecenie **Zmień nazwę** w menu kontekstowym lub kliknij prawym przyciskiem myszy lub naciśnij klawisze **Ctrl**+**R**, **Ctrl**+**R**.
 
    Okno dialogowe **zmiana nazwy** zostanie wyświetlone w prawym górnym rogu edytora.
 
@@ -186,7 +186,7 @@ Nikt nie pobiera kodu po raz pierwszy, a jedna z rzeczy, które trzeba zmienić,
 ## <a name="next-steps"></a>Następne kroki
 
 > [!div class="nextstepaction"]
-> [Informacje o projektach i rozwiązaniach](tutorial-projects-solutions.md)
+> [Informacje o projektach i rozwiązaniach](../tutorial-projects-solutions.md)
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 017c28af68efa98507286e8acdc2b4d694353aa1
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 44f66ed25ab43db2d08db3cb93263bd61ac3a907
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747395"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189447"
 ---
 # <a name="understanding-the-dsl-code"></a>Znajomość kodu DSL
 
@@ -185,14 +185,14 @@ Naciśnij klawisz **F5** i Eksperymentuj, jeśli nie znasz tego szablonu rozwią
 
   Konfiguruje Przybornik, instalując prototypy grupy elementów w narzędziach elementów. Kopie tych prototypów są scalane z elementami docelowymi, gdy użytkownik uruchamia narzędzie.
 
-  @No__t_0 można przesłonić w celu zdefiniowania elementu przybornika, który tworzy grupę wielu obiektów. Można na przykład zdefiniować element reprezentujący obiekty, które mają podskładniki. Po zmianie kodu Zresetuj eksperymentalne wystąpienie programu Visual Studio, aby wyczyścić pamięć podręczną przybornika.
+  `CreateElementPrototype()` można przesłonić w celu zdefiniowania elementu przybornika, który tworzy grupę wielu obiektów. Można na przykład zdefiniować element reprezentujący obiekty, które mają podskładniki. Po zmianie kodu Zresetuj eksperymentalne wystąpienie programu Visual Studio, aby wyczyścić pamięć podręczną przybornika.
 
 ## <a name="generated-files-in-the-dslpackage-project"></a>Wygenerowane pliki w projekcie DslPackage
  DslPackage Couples model DSL do powłoki programu Visual Studio, zarządzania oknem, przybornikiem i poleceniami menu. Większość klas jest podwójnym pochodnym, dzięki czemu można przesłonić dowolną metodę.
 
  `CommandSet.cs`
 
- Kliknij prawym przyciskiem myszy polecenia menu, które są widoczne na diagramie. Możesz dostosować lub dodać do tego zestawu. Ten plik zawiera kod dla poleceń. Lokalizacja poleceń w menu jest określana przez plik Commands. vsct. Aby uzyskać więcej informacji, zobacz [pisanie poleceń i akcji użytkownika](../modeling/writing-user-commands-and-actions.md).
+ Kliknij prawym przyciskiem myszy polecenia menu, które są widoczne na diagramie. Możesz dostosować lub dodać do tego zestawu. Ten plik zawiera kod dla poleceń. Lokalizacja poleceń w menu jest określana przez plik Commands. vsct. Aby uzyskać więcej informacji, zobacz [pisanie poleceń i akcji użytkownika](how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
  `Constants.cs`
 
@@ -282,7 +282,7 @@ namespace Company.EmbedInForm
 
  `GeneratedVSCT.vsct`
 
- Lokalizuje standardowe polecenia menu w menu, takie jak diagram prawym przyciskiem myszy (kontekst), menu **Edycja** i tak dalej. Kod dla poleceń znajduje się w CommandSet.cs. Można zmienić lub zmodyfikować standardowe polecenia oraz dodać własne polecenia. Aby uzyskać więcej informacji, zobacz [pisanie poleceń i akcji użytkownika](../modeling/writing-user-commands-and-actions.md).
+ Lokalizuje standardowe polecenia menu w menu, takie jak diagram prawym przyciskiem myszy (kontekst), menu **Edycja** i tak dalej. Kod dla poleceń znajduje się w CommandSet.cs. Można zmienić lub zmodyfikować standardowe polecenia oraz dodać własne polecenia. Aby uzyskać więcej informacji, zobacz [pisanie poleceń i akcji użytkownika](how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
  `ModelExplorer.cs`
 

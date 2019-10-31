@@ -9,12 +9,12 @@ manager: jillfra
 ms.technology: vs-ide-debug
 ms.workload:
 - uwp
-ms.openlocfilehash: 0c785be0002a1e6d4fd1934e559743502611f5fb
-ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
+ms.openlocfilehash: 5d6f0e54c37c394fce464b07440daa99b4dd7d5e
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72924496"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188896"
 ---
 # <a name="debug-xaml-in-blend"></a>Debugowanie XAML w Blend
 
@@ -119,7 +119,7 @@ Po wykryciu błędów XAML na powierzchni projektowej zostanie wyświetlony aler
 
 Możesz otworzyć projekty programu Blend w programie Visual Studio, aby łatwiej debugować kod w aplikacji. Aby otworzyć projekt programu Blend w programie Visual Studio, kliknij prawym przyciskiem myszy projekt w panelu **projekty** , a następnie kliknij polecenie **Edytuj w programie Visual Studio**. Po zakończeniu sesji debugowania w programie Visual Studio naciśnij kombinację klawiszy Ctrl + Shift + S, aby zapisać wszystkie zmiany, a następnie wróć do programu Blend. Zostanie wyświetlony monit o ponowne załadowanie projektu. Kliknij przycisk **tak, aby** kontynuować pracę w programie Blend.
 
-Aby uzyskać więcej informacji na temat debugowania aplikacji, zobacz [debugowanie aplikacji platformy UWP w programie Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).
+Aby uzyskać więcej informacji na temat debugowania aplikacji, zobacz [debugowanie aplikacji platformy UWP w programie Visual Studio](../debugger/debugging-windows-store-and-windows-universal-apps.md).
 
 ## <a name="get-help"></a>Uzyskaj pomoc
 

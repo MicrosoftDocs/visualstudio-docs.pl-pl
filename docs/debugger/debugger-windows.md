@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91df84c92761ae75ce9f26bddefad57c6dc8bc2c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3c27d2b4436fc5defedcda44c4f7840760018ade
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738309"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188543"
 ---
 # <a name="inspect-data-using-debugger-windows-in-visual-studio"></a>Sprawdzanie danych przy użyciu okien debugera w programie Visual Studio
 
@@ -39,7 +39,7 @@ Większość okien debugera można otworzyć podczas debugowania programu. Aby w
 |Zadania|ROB: + SHIFT + D, K|[Korzystanie z okna zadań](../debugger/using-the-tasks-window.md)|
 |Debugowanie w języku Python — interaktywny|SHIFT + ALT + I|[Interaktywny REPL języka Python](../python/python-interactive-repl-in-visual-studio.md)|
 |Konsola JavaScript|CTRL + ALT + V, C|[Szybki start: debugowanie kodu JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|
-|Eksplorator DOM|CTRL + ALT + V, D|[Debugowanie układu przy użyciu eksploratora modelu DOM](/visualstudio/debugger/quickstart-debug-html-and-css)|
+|Eksplorator DOM|CTRL + ALT + V, D|[Debugowanie układu przy użyciu eksploratora modelu DOM](quickstart-debug-html-and-css.md)|
 |Dynamiczne drzewo wizualne|-|[Sprawdzanie właściwości XAML podczas debugowania](../xaml-tools/inspect-xaml-properties-while-debugging.md)|
 |Eksplorator właściwości na żywo|-|[Sprawdzanie właściwości XAML podczas debugowania](../xaml-tools/inspect-xaml-properties-while-debugging.md)|
 |Procesy|CTRL + ALT + Z|[Debugowanie wątków i procesów](../debugger/debug-threads-and-processes.md)|

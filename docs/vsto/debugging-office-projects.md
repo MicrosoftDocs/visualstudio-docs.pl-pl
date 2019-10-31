@@ -17,15 +17,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2a0bf47afe3937d0c5550286efd50c8055ae5f47
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 92cc0922a36d8c57b54b69ad984d18cf4742b823
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551651"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189700"
 ---
 # <a name="debug-office-projects"></a>Debugowanie projektów pakietu Office
-  Można debugować projekty pakietu Office przy użyciu tych samych narzędzi [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] firmy Microsoft, które są [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] używane w innych projektach. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]funkcje debugera, takie jak możliwość wstawiania punktów przerwania i wyświetlania zmiennych w oknie **lokalne** , są również dostępne podczas debugowania projektów pakietu Office. Aby uzyskać więcej informacji [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] na temat narzędzi debugowania, zobacz [debugowanie w programie Visual Studio](../debugger/debugging-in-visual-studio.md).
+  Można debugować projekty pakietu Office przy użyciu tych samych narzędzi firmy Microsoft [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] używanych przez inne [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projekty. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] funkcje debugera, takie jak możliwość wstawiania punktów przerwania i wyświetlania zmiennych w oknie **lokalne** , są również dostępne podczas debugowania projektów pakietu Office. Aby uzyskać więcej informacji na temat narzędzi debugowania [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], zobacz [debugowanie w programie Visual Studio](../debugger/debugger-feature-tour.md).
 
 > [!TIP]
 > Aby uprościć debugowanie, przed skompilowaniem i debugowaniem Zamknij wszystkie otwarte wystąpienia aplikacji pakietu Office.
@@ -35,7 +35,7 @@ ms.locfileid: "69551651"
 [!include[Add-ins note](includes/addinsnote.md)]
 
 ## <a name="start-and-stop-the-debugger"></a>Uruchamianie i zatrzymywanie debugera
- Możesz rozpocząć debugowanie projektu pakietu Office tak samo jak rozpoczęcie debugowania innych [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektów. na przykład możesz nacisnąć klawisz **F5** . Po rozpoczęciu debugowania projektu dodatku programu VSTO zostanie uruchomiony nowy proces dla aplikacji pakietu Office, który zostanie załadowany.
+ Możesz rozpocząć debugowanie projektu pakietu Office tak samo jak rozpoczęcie debugowania innych [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektów; na przykład możesz nacisnąć klawisz **F5** . Po rozpoczęciu debugowania projektu dodatku programu VSTO zostanie uruchomiony nowy proces dla aplikacji pakietu Office, który zostanie załadowany.
 
  Po rozpoczęciu debugowania projektu na poziomie dokumentu, dokument lub skoroszyt zostanie otwarty w nowym procesie programu Word lub Excel.
 
@@ -72,33 +72,33 @@ ms.locfileid: "69551651"
  Za każdym razem, gdy kompilujesz projekt, zestaw danych jest opróżniany i tworzony ponownie. Jeśli chcesz debugować buforowany zestaw danych, musisz otworzyć dokument poza programem Visual Studio, a następnie dołączyć debuger.
 
 ## <a name="debug-word-document-projects-based-on-the-word-97-2003-document-doc-format"></a>Debuguj projekty dokumentów programu Word na podstawie formatu dokumentu programu Word 97-2003 (*. doc)
- Aby debugować projekt dokumentu programu Word na podstawie formatu dokumentu programu Word */* 97-2003 (doc *), należy dodać folder projektu do listy zaufanych folderów. Aby uzyskać więcej informacji o tym, jak to zrobić, zobacz [Grant Trust to Documents](../vsto/granting-trust-to-documents.md).
+ Aby debugować projekt dokumentu programu Word na podstawie formatu dokumentu programu Word 97-2003 ( */* . doc *), należy dodać folder projektu do listy zaufanych folderów. Aby uzyskać więcej informacji o tym, jak to zrobić, zobacz [Grant Trust to Documents](../vsto/granting-trust-to-documents.md).
 
 ## <a name="debug-disabled-add-ins"></a>Debuguj wyłączone dodatki
- Aplikacje Microsoft Office mogą wyłączyć dodatki VSTO, które zachowywać się nieoczekiwanie. Aplikacja Microsoft Office wyłącza Dodatki VSTO, aby zapobiec ładowaniu problematycznego kodu przy każdym uruchomieniu aplikacji. Jest to jednak łatwe w obsłudze nieoczekiwane zachowanie podczas typowego debugowania. Aby uzyskać informacje o tym, jak ponownie włączyć dodatki narzędzi VSTO, zobacz [How to: Ponownie włącz dodatek narzędzi VSTO, który został wyłączony](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md).
+ Aplikacje Microsoft Office mogą wyłączyć dodatki VSTO, które zachowywać się nieoczekiwanie. Aplikacja Microsoft Office wyłącza Dodatki VSTO, aby zapobiec ładowaniu problematycznego kodu przy każdym uruchomieniu aplikacji. Jest to jednak łatwe w obsłudze nieoczekiwane zachowanie podczas typowego debugowania. Aby uzyskać informacje o tym, jak ponownie włączyć dodatki narzędzi VSTO, zobacz [How to: reenable The VSTO, który został wyłączony](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md).
 
  Istnieją dwa typy wyłączania, które są używane przez aplikacje Microsoft Office dla dodatków narzędzi VSTO: trwałe wyłączanie i wyłączanie.
 
 ### <a name="hard-disabling"></a>Stałe wyłączanie
- Twarde wyłączenie może wystąpić, gdy dodatek VSTO powoduje nieoczekiwane zamknięcie aplikacji. Może również wystąpić na komputerze deweloperskim, jeśli zostanie zatrzymany debuger podczas <xref:Microsoft.Office.Tools.AddIn.Startup> wykonywania programu obsługi zdarzeń w dodatku VSTO. Gdy dodatek narzędzi VSTO zostanie trwale wyłączony, pojawia się na liście **Wyłączone elementy** w aplikacji.
+ Twarde wyłączenie może wystąpić, gdy dodatek VSTO powoduje nieoczekiwane zamknięcie aplikacji. Może się również zdarzyć, że na komputerze deweloperskim zostanie zatrzymany debuger, gdy zostanie uruchomiony program obsługi zdarzeń <xref:Microsoft.Office.Tools.AddIn.Startup> w ramach dodatku VSTO. Gdy dodatek narzędzi VSTO zostanie trwale wyłączony, pojawia się na liście **Wyłączone elementy** w aplikacji.
 
  Jeśli aplikacja pakietu Office spowoduje wyłączenie dodatku VSTO utworzonego przy użyciu narzędzi programistycznych pakietu Office w programie Visual Studio, aplikacja wyłączy tylko dodatek narzędzi VSTO, który spowodował awarię. Inne dodatki VSTO utworzone przy użyciu narzędzi programistycznych pakietu Office w programie Visual Studio dla aplikacji pakietu Office będą nadal ładowane.
 
 ### <a name="soft-disabling"></a>Wyłączanie nietrwałe
- Wyłączenie nietrwałe może wystąpić, gdy dodatek VSTO generuje błąd, który nie powoduje nieoczekiwanego zamknięcia aplikacji. Na przykład aplikacja może uniemożliwić wyłączenie dodatku VSTO, jeśli zgłasza nieobsługiwany wyjątek podczas <xref:Microsoft.Office.Tools.AddIn.Startup> wykonywania programu obsługi zdarzeń. Gdy dodatek narzędzi VSTO jest wyłączony, pojawia się na liście **dodatków nieaktywnych aplikacji** w aplikacji, a aplikacja zmienia wartość wpisu rejestru **LOADBEHAVIOR** dla dodatku VSTO, aby wskazać, że jest on zwolniony. Aby uzyskać więcej informacji na temat wpisu rejestru **LoadBehavior** , zobacz [wpisy rejestru dla dodatków narzędzi VSTO](../vsto/registry-entries-for-vsto-add-ins.md).
+ Wyłączenie nietrwałe może wystąpić, gdy dodatek VSTO generuje błąd, który nie powoduje nieoczekiwanego zamknięcia aplikacji. Na przykład aplikacja może uniemożliwić wyłączenie dodatku VSTO, jeśli zgłasza nieobsługiwany wyjątek podczas wykonywania programu obsługi zdarzeń <xref:Microsoft.Office.Tools.AddIn.Startup>. Gdy dodatek narzędzi VSTO jest wyłączony, pojawia się na liście **dodatków nieaktywnych aplikacji** w aplikacji, a aplikacja zmienia wartość wpisu rejestru **LOADBEHAVIOR** dla dodatku VSTO, aby wskazać, że jest on zwolniony. Aby uzyskać więcej informacji na temat wpisu rejestru **LoadBehavior** , zobacz [wpisy rejestru dla dodatków narzędzi VSTO](../vsto/registry-entries-for-vsto-add-ins.md).
 
 ## <a name="troubleshoot-installation-errors-by-using-the-event-viewer"></a>Rozwiązywanie problemów z błędami instalacji przy użyciu Podgląd zdarzeń
- [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Zapisuje komunikaty do Podgląd zdarzeń w systemie Windows dla wszystkich wyjątków zgłaszanych podczas instalowania lub odinstalowywania rozwiązań pakietu Office. Te komunikaty umożliwiają rozwiązywanie problemów z instalacją i wdrażaniem.
+ [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] zapisuje komunikaty do Podgląd zdarzeń w systemie Windows dla wszystkich wyjątków zgłaszanych podczas instalowania lub odinstalowywania rozwiązań pakietu Office. Te komunikaty umożliwiają rozwiązywanie problemów z instalacją i wdrażaniem.
 
 ## <a name="troubleshoot-startup-errors-by-using-a-log-file-and-error-messages"></a>Rozwiązywanie problemów z błędami uruchamiania przy użyciu pliku dziennika i komunikatów o błędach
- [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Może zapisywać wszystkie błędy, które występują podczas uruchamiania do pliku dziennika lub wyświetlają każdy błąd w oknie komunikatu. Domyślnie te opcje są wyłączone. Możesz włączyć opcje, tworząc zmienne środowiskowe.
+ [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] może zapisywać wszystkie błędy występujące podczas uruchamiania do pliku dziennika lub wyświetlać każdy błąd w oknie komunikatu. Domyślnie te opcje są wyłączone. Możesz włączyć opcje, tworząc zmienne środowiskowe.
 
  Aby wyświetlić każdy błąd w oknie komunikatu, Utwórz zmienną środowiskową o nazwie `VSTO_SUPPRESSDISPLAYALERTS` i ustaw ją na 0 (zero). Możesz pominąć komunikaty, usuwając zmienną środowiskową lub ustawiając ją na 1 (jeden).
 
- Aby zapisać błędy w pliku dziennika, Utwórz zmienną środowiskową o nazwie `VSTO_LOGALERTS` i ustaw ją na 1 (jeden). [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Tworzy plik dziennika w folderze zawierającym manifest wdrożenia dla dodatku VSTO lub w folderze zawierającym dokument lub skoroszyt, który jest skojarzony z dostosowaniem. Jeśli to się nie powiedzie, program [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] tworzy plik dziennika w lokalnym folderze *% temp%* . W przypadku dodatków VSTO na poziomie aplikacji domyślna nazwa to *Nazwa dodatku*. VSTO. log. W przypadku projektów na poziomie dokumentu nazwa pliku dziennika jest nazwą *dokumentu*. *rozszerzenie*. log, takie jak ExcelWorkbook1. xlsx. log. Aby zatrzymać rejestrowanie błędów, Usuń zmienną środowiskową lub ustaw ją na 0 (zero).
+ Aby zapisać błędy w pliku dziennika, Utwórz zmienną środowiskową o nazwie `VSTO_LOGALERTS` i ustaw ją na 1 (jeden). [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] tworzy plik dziennika w folderze zawierającym manifest wdrożenia dla dodatku VSTO lub w folderze zawierającym dokument lub skoroszyt, który jest skojarzony z dostosowaniem. Jeśli to się nie powiedzie, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] tworzy plik dziennika w lokalnym folderze *% temp%* . W przypadku dodatków VSTO na poziomie aplikacji domyślna nazwa to *Nazwa dodatku*. VSTO. log. W przypadku projektów na poziomie dokumentu nazwa pliku dziennika jest nazwą *dokumentu*. *rozszerzenie*. log, takie jak ExcelWorkbook1. xlsx. log. Aby zatrzymać rejestrowanie błędów, Usuń zmienną środowiskową lub ustaw ją na 0 (zero).
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Tworzenie rozwiązań pakietu Office](../vsto/building-office-solutions.md)
-- [Instrukcje: Ponownie włącz dodatek narzędzi VSTO, który został wyłączony](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)
+- [Instrukcje: Ponowne włączanie dodatku VSTO, który został wyłączony](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)
 - [Dodatki narzędzi VSTO programu](../vsto/programming-vsto-add-ins.md)
