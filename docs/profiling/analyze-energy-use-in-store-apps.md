@@ -13,12 +13,13 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 1259f92b89fc6d83bb0b7296cc07844bf25df705
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+monikerRange: vs-2017
+ms.openlocfilehash: 0fc78a84d0c2f86e8db6c4703cc7404a32508d72
+ms.sourcegitcommit: bdccab4c2dbd50ea8adaaf88c69c9ca32db88099
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128322"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73144730"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Analizowanie zużycia energii w aplikacjach platformy UWP
 
@@ -54,12 +55,12 @@ Na przykład w pełni naładowana bateria w tablecie zawiera pewną ilość zmag
 
  **Dodaj znaczniki do C#, Visual Basic, C++ kod**
 
- Aby dodać znacznik użytkownika do C#, Visual Basic, C++ kod, <xref:Windows.Foundation.Diagnostics.LoggingChannel?displayProperty=fullName> najpierw Utwórz obiekt. Następnie Wstaw wywołania do <xref:Windows.Foundation.Diagnostics.LoggingChannel.LogMessage%2A?displayProperty=nameWithType> metod w punktach w kodzie, które chcesz oznaczyć. Użyj [LoggingLevel. informacje](xref:Windows.Foundation.Diagnostics.LoggingLevel) w wywołaniach.
+ Aby dodać znacznik użytkownika do C#, Visual Basic, C++ kod, najpierw Utwórz obiekt <xref:Windows.Foundation.Diagnostics.LoggingChannel?displayProperty=fullName>. Następnie Wstaw wywołania do <xref:Windows.Foundation.Diagnostics.LoggingChannel.LogMessage%2A?displayProperty=nameWithType> metod w punktach w kodzie, które chcesz oznaczyć. Użyj [LoggingLevel. informacje](xref:Windows.Foundation.Diagnostics.LoggingLevel) w wywołaniach.
 
  Gdy jest wykonywana metoda, znacznik użytkownika jest dodawany do danych profilowania wraz z komunikatem.
 
 > [!NOTE]
-> - <xref:Windows.Foundation.Diagnostics.LoggingChannel?displayProperty=nameWithType>implementuje interfejs (przewidywany <xref:System.IDisposable?displayProperty=nameWithType> w C# języku i VB). <xref:Windows.Foundation.IClosable?displayProperty=nameWithType> Aby uniknąć przecieków zasobów systemu operacyjnego, <xref:Windows.Foundation.Diagnostics.LoggingChannel.Close%2A?displayProperty=nameWithType> Wywołaj<xref:Windows.Foundation.Diagnostics.LoggingChannel.Dispose%2A?displayProperty=nameWithType> ( C# w i VB) po zakończeniu pracy z kanałem rejestrowania.
+> - <xref:Windows.Foundation.Diagnostics.LoggingChannel?displayProperty=nameWithType> implementuje interfejs <xref:Windows.Foundation.IClosable?displayProperty=nameWithType> (przewidywany jako <xref:System.IDisposable?displayProperty=nameWithType> w C# i VB). Aby uniknąć przecieków zasobów systemu operacyjnego, wywołaj <xref:Windows.Foundation.Diagnostics.LoggingChannel.Close%2A?displayProperty=nameWithType> (<xref:Windows.Foundation.Diagnostics.LoggingChannel.Dispose%2A?displayProperty=nameWithType> C# w i VB) po zakończeniu pracy z kanałem rejestrowania.
 > - Każdy otwarty kanał rejestrowania musi mieć unikatową nazwę. Jeśli podjęto próbę utworzenia nowego kanału rejestrowania o tej samej nazwie co niedysponowany kanał, zostanie zgłoszony wyjątek.
 
 Przykładowy kod można znaleźć w Windows SDK przykład [LoggingSession](https://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336)Sample.
@@ -95,7 +96,7 @@ if (performance && performance.mark) {
 2. Wybierz pozycję **zużycie energii** , a następnie wybierz polecenie **Uruchom**.
 
     > [!NOTE]
-    > Po uruchomieniu profilera **zużycia energii** może zostać wyświetlone okno **Kontrola konta użytkownika** z żądaniem uprawnienia do uruchomienia programu *programu VsEtwCollector. exe*. Wybierz **tak**.
+    > Po uruchomieniu profilera **zużycia energii** może zostać wyświetlone okno **Kontrola konta użytkownika** z żądaniem uprawnienia do uruchomienia programu *programu VsEtwCollector. exe*. Wybierz opcję **tak**.
 
 3. Zbadaj aplikację w celu zebrania danych.
 
@@ -158,4 +159,4 @@ if (performance && performance.mark) {
 ## <a name="see-also"></a>Zobacz także
 
 - [Profilowanie w programie Visual Studio](../profiling/index.yml)
-- [Pierwsze spojrzenie na narzędziach profilowania](../profiling/profiling-feature-tour.md)
+- [Pierwsze spojrzenie na narzędzia profilowania](../profiling/profiling-feature-tour.md)

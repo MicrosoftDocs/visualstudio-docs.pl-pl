@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92d1c327c168bfd2881ad014b7f9ab87f771b95d
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
-ms.translationtype: MT
+ms.openlocfilehash: 70276b8ba4efb08b0a6a57dc48716bd608f0429a
+ms.sourcegitcommit: bdccab4c2dbd50ea8adaaf88c69c9ca32db88099
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72536081"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73144746"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Poznaj porady dotyczące produktywności i wskazówki dotyczące debugera w programie Visual Studio
 
@@ -140,6 +140,7 @@ Jeśli konieczne jest debugowanie rodzajów problemów wspólnych dla aplikacji 
 
     Można również wyświetlić lokalizacje wątków w [oknie stosów równoległych](../debugger/get-started-debugging-multithreaded-apps.md).
 
+::: moniker range="vs-2017"
 ## <a name="examine-payloads-for-web-services-and-network-resources-uwp"></a>Sprawdzanie ładunków dla usług sieci Web i zasobów sieciowych (platformy UWP)
 
 W aplikacjach platformy UWP można analizować operacje sieciowe wykonywane przy użyciu interfejsu API `Windows.Web.Http`. Tego narzędzia można użyć do debugowania usług sieci Web i zasobów sieciowych. Aby użyć narzędzia, wybierz pozycję **debuguj > Narzędzie do oceny wydajności**. Wybierz pozycję **Sieć**, a następnie wybierz pozycję **Uruchom**. W aplikacji przejdź przez scenariusz, który używa `Windows.Web.Http`, a następnie wybierz polecenie **Zatrzymaj zbieranie** , aby wygenerować raport.
@@ -151,6 +152,7 @@ Wybierz operację w widoku Podsumowanie, aby wyświetlić więcej szczegółów.
 ![Szczegółowe informacje w narzędziu Użycie sieci](../profiling/media/prof-tour-network-usage-details.png "DetailedViewNetworkUsage")
 
 Aby uzyskać więcej informacji, zobacz temat [użycie sieci](../profiling/network-usage.md).
+::: moniker-end
 
 ## <a name="modules_window"></a>Uzyskaj więcej informacji na temat sposobu dołączania debugera do aplikacji (C#, C++Visual Basic, F#)
 

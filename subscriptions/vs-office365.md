@@ -6,16 +6,19 @@ manager: lank
 ms.date: 08/02/2019
 ms.topic: conceptual
 description: Poznaj korzyści wynikające z korzystania z pakietu Office 365 w niektórych subskrypcjach programu Visual Studio.
-ms.openlocfilehash: 65a071cbfcdc31ca2ef8a36ac5a779fc99467c17
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: 58bfed3de99e3a3fa0a46e084ea566ae0451c47f
+ms.sourcegitcommit: bdccab4c2dbd50ea8adaaf88c69c9ca32db88099
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816459"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73144708"
 ---
 # <a name="office-365-proplus-in-visual-studio-subscriptions"></a>Pakiet Office 365 ProPlus w subskrypcjach programu Visual Studio
 
 Utwórz najlepszą swoją służbę. Pracuj wszędzie z aplikacjami, które są zawsze aktualizowane. Pakiet Office 365 ProPlus to subskrypcja dostarczana z aplikacjami premium, takimi jak Word, Excel, PowerPoint, OneNote, Outlook, Wydawca i dostęp (Wydawca i dostęp jest dostępny tylko na komputerze). Aplikacje można instalować na wielu urządzeniach, w tym na komputerach PC, Mac, iPad, iPhone, tabletach z systemem Android i telefonach z systemem Android. Dzięki subskrypcji otrzymujesz najnowsze wersje aplikacji i automatycznie odbierają aktualizacje po ich zakończeniu.
+
+> [!NOTE]
+> Twoja subskrypcja programu Visual Studio uprawnia do korzystania z pakietu Office 365 do użycia w środowisku produkcyjnym.  
 
 ## <a name="getting-started-with-office-365-proplus"></a>Wprowadzenie do pakietu Office 365 ProPlus
 
@@ -42,10 +45,6 @@ Wykonaj następujące kroki, aby pobrać i aktywować pakiet Office 365 ProPlus:
    > ![Office 365 wprowadź klucz produktu](_img/vs-office365/vs-office365-enter-key.png)
 0. Kliknij ponownie przycisk **dalej** .
 0. Kliknij przycisk **Instaluj** , aby zainstalować aplikacje pakietu Office.
-
-## <a name="next-steps"></a>Następne kroki
-
-Jeśli planujesz opracowywać aplikacje dla pakietu Office, chcesz aktywować [subskrypcję dewelopera pakietu Office](vs-office-dev.md)
 
 ## <a name="eligibility"></a>Kryteria
 
@@ -75,4 +74,4 @@ Nie masz pewności, której subskrypcji używasz?  Połącz się z [https://my.v
 Pamiętaj, aby aktywować te doskonałe korzyści, aby zapewnić największą subskrypcję programu Visual Studio:
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
-- [Kredyty na korzystanie z usługi Azure DevTest](vs-azure.md)
+- Kredyty na korzystanie z [usługi Azure DevTest](vs-azure.md) Jeśli planujesz opracowywać aplikacje dla pakietu Office, chcesz aktywować [subskrypcję dewelopera pakietu Office](vs-office-dev.md)
