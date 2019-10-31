@@ -1,6 +1,6 @@
 ### YamlMime:Landing
-title: Mierzyć wydajność aplikacji w programie Visual Studio
-summary: Narzędzia profilowania i diagnostyki ułatwiają diagnozowanie użycie procesora CPU i pamięci oraz inne problemy z poziomu aplikacji. Za pomocą tych narzędzi można zbierać dane dotyczące wydajności podczas uruchamiania aplikacji.
+title: Mierzenie wydajności aplikacji w programie Visual Studio
+summary: Narzędzia profilowania i diagnostyki pomagają zdiagnozować użycie pamięci i procesora oraz inne problemy na poziomie aplikacji. Za pomocą tych narzędzi można zbierać dane dotyczące wydajności podczas uruchamiania aplikacji.
 metadata:
   title: Mierzenie wydajności w programie Visual Studio
   description: Dowiedz się, jak za pomocą programu Visual Studio mierzyć wydajność przy użyciu narzędzi profilowania.
@@ -9,12 +9,12 @@ metadata:
   ms.author: mikejo
   manager: jillfra
   ms.date: 09/17/2019
-  ms.openlocfilehash: fcb3e40870d6f916cf754368359a90215ce1b665
-  ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+  ms.openlocfilehash: b0fb7ff139ce91e981fa5fd5a9c43d1e335a1525
+  ms.sourcegitcommit: ab18c9d850192fc9ccec10961f1126e8b0cba8da
   ms.translationtype: MT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 09/19/2019
-  ms.locfileid: "71130642"
+  ms.lasthandoff: 10/30/2019
+  ms.locfileid: "73061110"
 landingContent:
 - title: Profilowanie — informacje
   linkLists:
@@ -41,7 +41,7 @@ landingContent:
     - text: Rozpocznij Analizowanie użycia procesora CPU
       url: beginners-guide-to-performance-profiling.md
     - text: Wprowadzenie pomiaru użycia pamięci
-      url: beginners-guide-to-performance-profiling.md
+      url: memory-usage.md
 - title: Więcej narzędzi wydajności
   linkLists:
   - linkListType: how-to-guide

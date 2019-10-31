@@ -1,6 +1,6 @@
 ---
-title: Krok 2. Tworzenie pierwszej aplikacji sieci Web platformy ASP.NET Core
-description: Utwórz swoją pierwszą aplikację sieci Web platformy ASP.NET Core z tego samouczka wideo, a instrukcje krok po kroku.
+title: Krok 2. Tworzenie pierwszej aplikacji sieci Web ASP.NET Core
+description: Utwórz swoją pierwszą aplikację internetową ASP.NET Core za pomocą tego samouczka wideo i instrukcji krok po kroku.
 ms.custom: get-started
 ms.date: 03/31/2019
 ms.technology: vs-ide-general
@@ -16,64 +16,67 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 740d6336ab4258d3111dd6708de859108e22365e
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: 21959c4a0cc2b961eca43ab9724369c7aea8444b
+ms.sourcegitcommit: ab18c9d850192fc9ccec10961f1126e8b0cba8da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402071"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73061127"
 ---
-# <a name="step-2-create-your-first-aspnet-core-web-app"></a>Krok 2. Tworzenie pierwszej aplikacji sieci web platformy ASP.NET Core
+# <a name="step-2-create-your-first-aspnet-core-web-app"></a>Krok 2. Tworzenie pierwszej aplikacji sieci Web ASP.NET Core
 
-Utwórz swoją pierwszą aplikację sieci Web platformy ASP.NET Core z tego samouczka wideo, a instrukcje krok po kroku.
+Utwórz swoją pierwszą aplikację internetową ASP.NET Core za pomocą tego samouczka wideo i instrukcji krok po kroku.
 
-_Obejrzyj ten film wideo i postępuj zgodnie z integracją programów, aby utworzyć swoją pierwszą aplikację ASP.NET Core._
+_Obejrzyj ten film wideo i postępuj zgodnie z instrukcjami, aby utworzyć swoją pierwszą aplikację ASP.NET Core._
 
 > [!VIDEO https://www.youtube.com/embed/-79RkpyFB6E]
 
-## <a name="start-visual-studio-2019-and-create-a-new-project"></a>Uruchom program Visual Studio 2019 r i Utwórz nowy projekt
+## <a name="start-visual-studio-2019-and-create-a-new-project"></a>Uruchom program Visual Studio 2019 i Utwórz nowy projekt
 
-Uruchom program Visual Studio 2019 r, a następnie kliknij przycisk **Tworzenie nowego projektu**. Wybierz **aplikacji sieci Web platformy ASP.NET Core**. Wybierz **aplikacji sieci Web** szablonu i zachowaj domyślne projektu, nazwę i lokalizację. Kliknij przycisk **Utwórz**. Aby uzyskać szczegółowe instrukcje, zobacz [poprzedniego wideo w tej serii samouczków](tutorial-aspnet-core-ef-step-01.md).
+Uruchom program Visual Studio 2019 i kliknij pozycję **Utwórz nowy projekt**. Wybierz **ASP.NET Core aplikacji sieci Web**. Wybierz szablon **aplikacja sieci Web** i Zachowaj domyślną nazwę projektu i lokalizację. Na liście rozwijanej z wersją ASP.NET Core wybierz **ASP.NET Core 2,1** lub **ASP.NET Core 2,2**. Kliknij przycisk **Utwórz**. Aby uzyskać bardziej szczegółowe instrukcje, zobacz [poprzednie wideo w tej serii samouczków](tutorial-aspnet-core-ef-step-01.md).
 
-![Visual Studio 2019 Choose ASP.NET Core Project Options](media/vs-2019/vs2019-choose-aspnetcore-project.png)
+![Visual Studio 2019 wybierz opcje projektu ASP.NET Core](media/vs-2019/vs2019-choose-aspnetcore-project.png)
 
-## <a name="explore-the-new-project"></a>Poznaj nowy projekt
+> [!WARNING]
+> Upewnij się, że wybrano opcję ASP .NET Core 2,1 lub ASP.NET Core 2,2. Ten samouczek nie jest zgodny z ASP.NET Core 3. x.
 
-W oknie Eksplorator rozwiązań po prawej stronie można wyświetlić zawartość nowego projektu. Są opisane w tym miejscu.
+## <a name="explore-the-new-project"></a>Eksploruj nowy projekt
 
-![Visual Studio 2019 ASP.NET Core Project](media/vs-2019/vs2019-solution-explorer.png)
+W oknie Eksploratora rozwiązań po prawej stronie można wyświetlić zawartość nowego projektu. Są one opisane tutaj.
+
+![Projekt programu Visual Studio 2019 ASP.NET Core](media/vs-2019/vs2019-solution-explorer.png)
 
 ### <a name="wwwroot"></a>wwwroot
 
-*Wwwroot* folder zawiera pliki statyczne, które będą znajdować się publicznie dostępny z poziomu aplikacji sieci web. Zawiera zazwyczaj arkusze stylów, pliki skryptów po stronie klienta i obrazy.
+Folder *wwwroot* zawiera pliki statyczne, które będą dostępne publicznie z aplikacji sieci Web. Zwykle zawiera arkusze stylów, pliki skryptów po stronie klienta i obrazy.
 
 ### <a name="pages"></a>Strony
 
-*Stron* folder zawiera witrynę stron Razor. Szablon domyślny zawiera kilka stron, w tym *Index.cshtml* strona aplikacji strony głównej, a także jak około, skontaktuj się z pomocą i tak dalej.
+Folder *strony* zawiera Razor Pages lokacji. Szablon domyślny zawiera kilka stron, w tym stronę *index. cshtml* , która jest stroną główną aplikacji, a także informacje o kontakcie i tak dalej.
 
-### <a name="appsettingsjson"></a>appsettings.json
+### <a name="appsettingsjson"></a>appSettings. JSON
 
-Ten plik zawiera ustawienia konfiguracji dla witryny, w formacie JSON.
+Ten plik zawiera ustawienia konfiguracji dla witryny w formacie JSON.
 
 ### <a name="programcs"></a>Program.cs
 
-Ten plik działa jako punkt wejścia dla aplikacji. Gdy aplikacja jest uruchamiana, jego metody Main jest pierwszą metodę, która działa i odpowiada za tworzenie hosta sieci Web, która będzie zawierała aplikację.
+Ten plik pełni rolę punktu wejścia dla aplikacji. Gdy aplikacja jest uruchomiona, jej główna Metoda to pierwsza metoda, która jest uruchamiana i jest odpowiedzialna za utworzenie hosta sieci Web, który będzie zawierać aplikację.
 
 ### <a name="startupcs"></a>Startup.cs
 
-Host sieci Web utworzone w *Program.cs* odwołuje się do klasy uruchamiania i wywołuje jego metod, aby skonfigurować aplikację. Metoda ConfigureServices jest odpowiedzialny za konfigurowanie wszystkie usługi, których aplikacja będzie używać. `Configure` Metoda Konfiguruje potok żądań HTTP w aplikacji. Każde żądanie przechodzi przez ten potok interakcji z każdego z nich *oprogramowania pośredniczącego* tak samo jak.
+Host sieci Web utworzony w *program.cs* odwołuje się do klasy uruchomieniowej i wywołuje jej metody w celu skonfigurowania aplikacji. Metoda ConfigureServices jest odpowiedzialna za konfigurowanie wszelkich usług, które będą używane przez aplikację. Metoda `Configure` konfiguruje potok żądania HTTP aplikacji. Każde żądanie przechodzi przez ten potok, współpracując z każdą częścią *oprogramowania pośredniczącego* .
 
-### <a name="indexcshtml"></a>Index.cshtml
+### <a name="indexcshtml"></a>Index. cshtml
 
-Strona główna witryny zawiera niektóre kod znaczników HTML i kodu Razor po stronie serwera. Użyto Razor do określenia modelu strony `IndexModel`, który znajduje się w skojarzonej *Index.cshtml.cs* pliku. Ustawia również tytuł strony, ustawiając wartość w ViewData. Ta wartość ViewData mogą być odczytywane w  *\_Layout.cshtml* pliku, znajdującego się w folderze współdzielona znajdujące się w folderze stron. Plik układu jest współużytkowany przez wiele stron Razor i udostępnia typowe wygląd i działanie aplikacji. Każda strona zawartości jest renderowany w języku HTML plik układu.
+Strona główna witryny zawiera część znaczników HTML i jakiś kod Razor po stronie serwera. Używa Razor do określenia modelu strony, `IndexModel`, który znajduje się w skojarzonym pliku *index.cshtml.cs* . Ustawia również tytuł strony przez ustawienie wartości w ViewData. Ta wartość ViewData jest odczytywana w pliku *\_Layout. cshtml* znajdującym się w folderze udostępnionym wewnątrz folderu strony. Plik układu jest współużytkowany przez wiele Razor Pages i zapewnia typowy wygląd i działanie aplikacji. Zawartość każdej strony jest renderowana w kodzie HTML pliku układu.
 
-## <a name="run-the-application"></a>Uruchamianie aplikacji
+## <a name="run-the-application"></a>Uruchom aplikację
 
-Teraz uruchom aplikację i wyświetlić je w przeglądarce. Można uruchomić aplikacji przy użyciu **Ctrl**+**F5** lub wybierając **debugowania** > **Rozpocznij bez debugowania**z menu programu Visual Studio.
+Teraz uruchom aplikację i wyświetl ją w przeglądarce. Możesz uruchomić aplikację przy użyciu **kombinacji klawiszy Ctrl**+**F5** lub wybierając **Debuguj** > **Uruchom bez debugowania** z menu programu Visual Studio.
 
 ## <a name="customize-the-application"></a>Dostosowywanie aplikacji
 
-Dodaj właściwość do *Index.cshtml.cs* pliku i ustawić jej wartość na bieżącą godzinę w `OnGet` procedury obsługi:
+Dodaj właściwość do pliku *index.cshtml.cs* i ustaw jej wartość na bieżącą godzinę w obsłudze `OnGet`:
 
 ```csharp
 public string Time { get; set; }
@@ -83,25 +86,25 @@ public void OnGet()
 }
 ```
 
-Zastąp `<div>` zawartość *Index.cshtml* o ten kod znaczników:
+Zastąp zawartość `<div>` w *index. cshtml* tym znacznikiem:
 
 ```cshtml
 <h2>It's @Model.Time right now on the server!</h2>
 ```
 
-Uruchom ponownie aplikację. Powinien zostać wyświetlony zostanie teraz wyświetlona strona bieżący czas, że zawsze oznacza północ! To nie jest odpowiednie.
+Uruchom aplikację ponownie. Powinna zostać wyświetlona strona, która wyświetla bieżącą godzinę, ale zawsze jest Północna! To nie jest właściwe.
 
-![Projektu programu Visual Studio 2019 platformy ASP.NET Core w przeglądarce](media/vs-2019/vs2019-app-in-browser.png)
+![Projekt programu Visual Studio 2019 ASP.NET Core w przeglądarce](media/vs-2019/vs2019-app-in-browser.png)
 
 ## <a name="debug-the-application"></a>Debugowanie aplikacji
 
-Dodaj punkt przerwania, aby `OnGet` metoda gdzie one przypisywanie wartości do `Time` i ten czas rozpoczęcia debugowania aplikacji.
+Dodaj punkt przerwania do metody `OnGet`, w której przypiszesz wartość do `Time` i ten czas rozpocznie debugowanie aplikacji.
 
-Zatrzymuje wykonywanie na wierszu, zobaczyć, że `DateTime.Today` zawiera datę, ale czas jest zawsze północy, ponieważ nie zawiera danych czasowych. 
+Wykonywanie jest zatrzymane w wierszu i można zobaczyć, że `DateTime.Today` obejmuje datę, ale czas jest zawsze północny, ponieważ nie obejmuje danych czasowych. 
 
-![Projektu programu Visual Studio 2019 platformy ASP.NET Core w przeglądarce](media/vs-2019/vs2019-breakpoint.png)
+![Projekt programu Visual Studio 2019 ASP.NET Core w przeglądarce](media/vs-2019/vs2019-breakpoint.png)
 
-Zmień go do korzystania ze `DateTime.Now` i kontynuuj wykonywanie. Nowy kod dla `OnGet` powinno być:
+Zmień go tak, aby używał `DateTime.Now` i kontynuować wykonywanie. Nowy kod dla `OnGet` powinien:
 
 ```csharp
 public void OnGet()
@@ -110,19 +113,19 @@ public void OnGet()
 }
 ```
 
-Powinna zostać wyświetlona godzina używanego serwera w przeglądarce po przejściu do aplikacji.
+Po przejściu do aplikacji powinien zostać wyświetlony rzeczywisty czas serwera w przeglądarce.
 
 > [!NOTE]
 > Dane wyjściowe mogą się różnić od obrazu, ponieważ format danych wyjściowych ToShortDateTimeString zależy od bieżącego ustawienia kultury. Zobacz <xref:System.DateTime.ToShortTimeString>.
 
-![Projektu programu Visual Studio 2019 platformy ASP.NET Core w przeglądarce](media/vs-2019/vs2019-app-fixed-in-browser.png)
+![Projekt programu Visual Studio 2019 ASP.NET Core w przeglądarce](media/vs-2019/vs2019-app-fixed-in-browser.png)
 
 ## <a name="next-steps"></a>Następne kroki
 
 W następnym filmie wideo dowiesz się, jak dodać obsługę danych do aplikacji.
 
-[Samouczek: Praca z danymi w aplikacji platformy ASP.NET Core](tutorial-aspnet-core-ef-step-03.md)
+[Samouczek: Praca z danymi w aplikacji ASP.NET Core](tutorial-aspnet-core-ef-step-03.md)
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Samouczek: Tworzenie aplikacji internetowej strony Razor za pomocą programu ASP.NET Core](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)
+- [Samouczek: Tworzenie aplikacji internetowej Razor Pages przy użyciu ASP.NET Core](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)

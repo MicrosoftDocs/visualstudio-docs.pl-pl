@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 53483979600093133c2b059d9ea921cdb8a08ab1
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: c38ff2fcc762ccc202e2a02ecd36e942db75ad3d
+ms.sourcegitcommit: ab18c9d850192fc9ccec10961f1126e8b0cba8da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911626"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73061078"
 ---
 # <a name="create-custom-views-of-c-objects-in-the-debugger-using-the-natvis-framework"></a>Tworzenie niestandardowych widoków C++ obiektów w debugerze przy użyciu struktury Natvis
 
@@ -319,6 +319,10 @@ W poniższym przykładzie Wizualizacja dotyczy tylko typu `DirectUI::Border` zna
   </Expand>
 </Type>
 ```
+
+Nie potrzebujesz jednocześnie `Min` i `Max`. Są to atrybuty opcjonalne. Nie są obsługiwane żadne symbole wieloznaczne.
+
+Atrybut `Name` ma format *filename. ext*, taki jak *Hello. exe* lub *plik. dll*. Nazwy ścieżek nie są dozwolone.
 
 ### <a name="BKMK_DisplayString"></a>DisplayString, element
 Element `DisplayString` określa ciąg, który ma być wyświetlany jako wartość zmiennej. Akceptuje dowolne ciągi zmieszane z wyrażeniami. Wszystkie elementy wewnątrz nawiasów klamrowych są interpretowane jako wyrażenie. Na przykład następujący wpis `DisplayString`:
