@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d001edcd281a0c21d244704f0a068850804b8762
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 4d3afc8ff48355c74544edf123689495bfde1302
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981159"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189122"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>Przewodnik: Profilowanie aplikacji SharePoint
   W tym instruktażu pokazano, jak za pomocą narzędzi profilowania w programie Visual Studio zoptymalizować wydajność aplikacji SharePoint. Przykładowa aplikacja jest odbiorcą zdarzeń funkcji programu SharePoint, który zawiera pętlę bezczynności, która obniża wydajność odbiorcy zdarzeń funkcji. Program Visual Studio profiler umożliwia znalezienie i wyeliminowanie najbardziej kosztownego (najwolniejszego wykonania) części projektu, zwanej również *ścieżką gorącą*.
@@ -197,7 +197,7 @@ ms.locfileid: "72981159"
 
 2. Na pierwszej stronie **Kreatora wydajności**pozostaw metodę profilowania jako **próbkowanie procesora** , a następnie wybierz przycisk **dalej** .
 
-     Inne metody profilowania mogą być używane w bardziej zaawansowanych sytuacjach profilowania. Aby uzyskać więcej informacji, zobacz [Omówienie metod zbierania danych o wydajności](/visualstudio/profiling/understanding-performance-collection-methods).
+     Inne metody profilowania mogą być używane w bardziej zaawansowanych sytuacjach profilowania. Aby uzyskać więcej informacji, zobacz [Omówienie metod zbierania danych o wydajności](../profiling/understanding-performance-collection-methods.md).
 
 3. Na stronie dwóch **Kreatora wydajności**pozostaw obiekt docelowy profilu jako **ProfileTest** , a następnie wybierz przycisk **dalej** .
 
@@ -273,7 +273,7 @@ ms.locfileid: "72981159"
      Funkcja powinna aktywować znacznie szybciej, gdy wywołanie do pętli bezczynności zostało wyeliminowane. Przykładowy raport profilowania powinien odzwierciedlać ten sposób.
 
 ## <a name="see-also"></a>Zobacz także
-- [Eksplorator wydajności](/visualstudio/profiling/performance-explorer)
-- [Sesja wydajności — omówienie](/visualstudio/profiling/performance-session-overview)
-- [Profilowanie wydajności — przewodnik dla początkujących](/visualstudio/profiling/beginners-guide-to-performance-profiling)
+- [Eksplorator wydajności](../profiling/performance-explorer.md)
+- [Sesja wydajności — omówienie](../profiling/performance-session-overview.md)
+- [Profilowanie wydajności — przewodnik dla początkujących](../profiling/beginners-guide-to-performance-profiling.md)
 - [Znajdowanie wąskich gardeł aplikacji za pomocą programu Visual Studio profiler](https://msdn.microsoft.com/magazine/cc337887.aspx)
