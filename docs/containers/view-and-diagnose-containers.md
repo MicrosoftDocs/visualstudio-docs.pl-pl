@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.date: 10/16/2019
 ms.technology: vs-azure
 monikerRange: vs-2019
-ms.openlocfilehash: a398adf047ebfe2e76ed91da72513eb7646c36c3
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: 355a08b2ff322226d347d999f4ec8a9ebb7ba5fc
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72535633"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188726"
 ---
 # <a name="how-to-view-and-diagnose-containers-and-images-in-visual-studio"></a>Jak wyświetlać i diagnozować kontenery oraz obrazy w programie Visual Studio
 
@@ -32,7 +32,7 @@ Okno **kontenery** jest otwierane automatycznie po uruchomieniu kontenera projek
 Po lewej stronie zostanie wyświetlona lista kontenerów na komputerze lokalnym. Kontenery skojarzone z rozwiązaniem są wyświetlane w obszarze **kontenery rozwiązań**. Po prawej stronie zobaczysz okienko z kartami dla **środowiska**, **portów**, **dzienników**i **plików**.
 
 > [!TIP]
-> Możesz łatwo dostosować lokalizację okna narzędzia **kontenerów** w programie Visual Studio. Zobacz [Dostosowywanie układów okien w programie Visual Studio](/visualstudio/ide/customizing-window-layouts-in-visual-studio). Domyślnie okno **kontenerów** jest zadokowane przy użyciu okna **czujki** , gdy debuger jest uruchomiony.
+> Możesz łatwo dostosować lokalizację okna narzędzia **kontenerów** w programie Visual Studio. Zobacz [Dostosowywanie układów okien w programie Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md). Domyślnie okno **kontenerów** jest zadokowane przy użyciu okna **czujki** , gdy debuger jest uruchomiony.
 
 ## <a name="view-environment-variables"></a>Wyświetl zmienne środowiskowe
 
@@ -88,7 +88,7 @@ W przypadku kontenerów systemu Windows zostanie otwarty wiersz polecenia system
 
 ![Zrzut ekranu okna bash](media/view-and-diagnose-containers/container-bash-window.png)
 
-Zwykle okno terminalu jest otwierane poza programem Visual Studio jako osobne okno. Jeśli chcesz, aby środowisko wiersza polecenia było zintegrowane z Visual Studio IDE jako okno narzędzi było dokować, możesz zainstalować [Terminal/Swagger/docs/v1./Swagger/docs/v1](https://marketplace.visualstudio.com/items?itemName=DanielGriffen.WhackWhackTerminal).
+Zwykle okno terminalu jest otwierane poza programem Visual Studio jako osobne okno. Jeśli chcesz, aby środowisko wiersza polecenia było zintegrowane z Visual Studio IDE jako okno narzędzi było dokować, możesz zainstalować [Terminal/Swagger/docs/v1./Swagger/docs/v1.](https://marketplace.visualstudio.com/items?itemName=DanielGriffen.WhackWhackTerminal).
 
 ## <a name="attach-the-debugger-to-a-process"></a>Dołącz debuger do procesu
 
