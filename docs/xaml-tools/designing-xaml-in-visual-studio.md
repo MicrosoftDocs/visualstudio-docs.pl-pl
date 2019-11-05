@@ -7,12 +7,12 @@ ms.assetid: 288e2415-9fcf-408e-bc35-9848315e14fd
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ec10ea271fad4c49402e75ad7f8b5a84ad287cea
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: d9cfa2d216baf89d4b7a886ff9d7b56b8b946b8b
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188878"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73569050"
 ---
 # <a name="design-xaml-in-visual-studio-and-blend-for-visual-studio"></a>Projektuj kod XAML w programie Visual Studio i Blend for Visual Studio
 
@@ -47,7 +47,7 @@ Aby zwiększyć produktywność, należy rozważyć użycie Blend for Visual Stu
 | **Projektowanie Stanów wizualnych** | Nie jest dostępne żadne narzędzie ułatwiające projektowanie Stanów wizualnych; należy je tworzyć programowo. | Narzędzia do projektowania umożliwiają zmianę wyglądu kontrolki na podstawie jej stanu. | [Stany wizualne](modify-the-style-of-objects-in-blend.md#visual-states) |
 | **Tworzenie animacji** |Nie istnieje narzędzie projektowania dla animacji; należy je tworzyć programowo. Wymaga to wiedzy na temat animacji i systemu chronometrażu w WPF i obszernej znajomości kodu.|Animacje można tworzyć wizualnie i wyświetlać je w Blend for Visual Studio. Jest to szybsze i bardziej dokładne niż Kompilowanie animacji w kodzie. Możesz dodać wyzwalacze do obsługi interakcji z użytkownikiem i można przełączyć się do kodu, aby dodać programy obsługi zdarzeń i inne funkcje.|[Animowanie obiektów](../xaml-tools/animate-objects-in-xaml-designer.md)|
 |**Przekształcanie kształtów i tekstu w ścieżki w celu ułatwienia manipulowania**|Nieobsługiwane.|Można wprowadzać delikatne lub znaczące zmiany w kształtach (takich jak prostokąty i wielokropki), konwertując je na ścieżki, co zapewnia lepszą kontrolę edycji. Można przekształcać i łączyć ścieżki oraz tworzyć ścieżki złożone z wielu kształtów.<br /><br />Możesz również skonwertować bloki tekstu na ścieżki, aby manipulować nimi w postaci obrazów wektorowych.|[Rysowanie kształtów i ścieżek](../xaml-tools/draw-shapes-and-paths.md)|
-|**Edytowanie kontrolek, szablonów i stylów**|Wymaga kodowania i znajomości stylów i szablonów WPF.|Przekształcenie dowolnego obrazu w kontrolkę.<br /><br />Za pomocą narzędzi do edycji szablonów można wprowadzać zmiany w kontrolkach, stylach i szablonach za pomocą zaledwie kilku kliknięć myszą.<br /><br />Na przykład możesz użyć zasobów stylów Blend for Visual Studio do implementowania wspólnych kontrolek WPF (takich jak przyciski, pola listy, paski przewijania, menu itp.), a także zmieniać kolory, style lub szablony bazowe bezpośrednio w Blend for Visual Studio. Następnie możesz przełączyć się do kodu, aby dokończył się w razie potrzeby.|[Modyfikowanie stylu obiektów](../designers/modify-the-style-of-objects-in-blend.md)|
+|**Edytowanie kontrolek, szablonów i stylów**|Wymaga kodowania i znajomości stylów i szablonów WPF.|Przekształcenie dowolnego obrazu w kontrolkę.<br /><br />Za pomocą narzędzi do edycji szablonów można wprowadzać zmiany w kontrolkach, stylach i szablonach za pomocą zaledwie kilku kliknięć myszą.<br /><br />Na przykład możesz użyć zasobów stylów Blend for Visual Studio do implementowania wspólnych kontrolek WPF (takich jak przyciski, pola listy, paski przewijania, menu itp.), a także zmieniać kolory, style lub szablony bazowe bezpośrednio w Blend for Visual Studio. Następnie możesz przełączyć się do kodu, aby dokończył się w razie potrzeby.|[Modyfikowanie stylu obiektów](modify-the-style-of-objects-in-blend.md)|
 |**Połącz interfejs użytkownika z danymi**|Można utworzyć źródło danych z zasobów, takich jak baza danych SQL Server, usług WCF lub sieci Web, obiektów lub listy programu SharePoint, a następnie powiązać źródło danych z kontrolkami interfejsu użytkownika.<br /><br />Dane czasu projektowania muszą być tworzone ręcznie dla interaktywnego środowiska projektowego.|W przypadku aplikacji .NET Framework można łatwo tworzyć przykładowe dane w celu tworzenia prototypów i testowania. Przejdź do danych na żywo, gdy wszystko będzie gotowe.<br /><br />Funkcje generacji danych Blend for Visual Studio są zaległe (można łatwo dodawać nazwy, cyfry, adresy URL i zdjęcia), a także zaoszczędzić dużo czasu.<br /><br />W przypadku danych na żywo można powiązać kontrolki interfejsu użytkownika z plikiem XML lub dowolnym źródłem danych CLR.|[Wyświetlanie danych](display-data-in-blend.md)|
 
 Aby uzyskać więcej informacji na temat zaawansowanego projektowania XAML, zobacz [Tworzenie interfejsu użytkownika przy użyciu Blend for Visual Studio](../xaml-tools/creating-a-ui-by-using-blend-for-visual-studio.md).

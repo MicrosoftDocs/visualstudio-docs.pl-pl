@@ -3,7 +3,7 @@ title: Pierwsze spojrzenie na debugera
 description: Rozpocznij debugowanie aplikacji za pomocą debugera programu Visual Studio
 ms.custom: ''
 ms.date: 04/08/2019
-ms.topic: conceptual
+ms.topic: tutorial
 helpviewer_keywords:
 - debugger
 ms.assetid: c763d706-3213-494f-b4d2-990b6e1ec456
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8741d0815aa3e5478a7dcf93585fc0be6e266ae0
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 89debcfdeec2c9d363c6935bd2cfdd1ebf403f76
+ms.sourcegitcommit: d55438841123aad56a524a65332a86ad67af386b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188707"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73599298"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Najpierw Spójrz na debuger programu Visual Studio
 

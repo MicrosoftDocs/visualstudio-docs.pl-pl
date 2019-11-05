@@ -1,7 +1,7 @@
 ---
 title: Debugowanie aplikacji JavaScript lub TypeScript
 description: Program Visual Studio zapewnia obsługę debugowania aplikacji JavaScript i TypeScript w programie Visual Studio
-ms.date: 12/03/2018
+ms.date: 11/01/2019
 ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ec2b93d212f9a9485f6e817d00b06cccfec47a93
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: 5fbaa25146c9e06f3a12b90ab2d6ae124fbbd189
+ms.sourcegitcommit: ee9c55616a22addc89cf1cf1942bf371d73e2e11
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888699"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73618101"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Debugowanie aplikacji JavaScript lub TypeScript w programie Visual Studio
 
@@ -43,74 +43,115 @@ Program Visual Studio umożliwia debugowanie kodu JavaScript i języka TypeScrip
 
 ## <a name="debug-client-side-script"></a>Debugowanie skryptu po stronie klienta
 
-Program Visual Studio zapewnia obsługę debugowania tylko dla przeglądarki Chrome i programu Internet Explorer. W niektórych scenariuszach debuger automatycznie trafi punkty przerwania w języku JavaScript i kodzie TypeScript oraz w osadzonych skryptach w plikach HTML.
+::: moniker range=">=vs-2019"
+Program Visual Studio zapewnia obsługę debugowania po stronie klienta dla przeglądarki Chrome i programu Microsoft Edge (chrom). W niektórych scenariuszach debuger automatycznie trafi punkty przerwania w języku JavaScript i kodzie TypeScript oraz w osadzonych skryptach w plikach HTML. Aby debugować skrypt po stronie klienta w aplikacjach ASP.NET, zobacz wpis w blogu [debugowanie JavaScript w przeglądarce Microsoft Edge](https://devblogs.microsoft.com/visualstudio/debug-javascript-in-microsoft-edge-from-visual-studio/) i ten [wpis dla Google Chrome](https://devblogs.microsoft.com/aspnet/client-side-debugging-of-asp-net-projects-in-google-chrome).
+::: moniker-end
+::: moniker range="vs-2017"
+Program Visual Studio zapewnia obsługę debugowania po stronie klienta dla przeglądarki Chrome i programu Internet Explorer. W niektórych scenariuszach debuger automatycznie trafi punkty przerwania w języku JavaScript i kodzie TypeScript oraz w osadzonych skryptach w plikach HTML. Debugowanie skryptu po stronie klienta w aplikacjach ASP.NET można znaleźć w blogu [debugowanie po stronie klienta projektów ASP.NET w Google Chrome](https://devblogs.microsoft.com/aspnet/client-side-debugging-of-asp-net-projects-in-google-chrome/).
+::: moniker-end
 
-Jeśli źródło jest zminimalizowanego lub utworzone przez transstertę, taką jak TypeScript lub Babel, do najlepszego środowiska debugowania jest wymagane użycie [map źródła](#generate_sourcemaps) . Bez map źródła można nadal dołączyć debuger do uruchomionego skryptu po stronie klienta. Można jednak tylko ustawiać i trafiać punkty przerwania w pliku zminimalizowanego lub z możliwością presterty, a nie z oryginalnego pliku źródłowego. Na przykład w aplikacji Vue. js skrypt zminimalizowanego jest przenoszona jako ciąg do instrukcji `eval` i nie ma sposobu na efektywne przechodzenie przez ten kod przy użyciu debugera programu Visual Studio, chyba że są używane mapy źródłowe. W niektórych złożonych scenariuszach debugowania można także użyć narzędzi Chrome Narzędzia deweloperskie lub F12 dla przeglądarki Microsoft Edge.
+Jeśli źródło jest zminimalizowanego lub utworzone przez transstertę, taką jak TypeScript lub Babel, do najlepszego środowiska debugowania jest wymagane użycie [map źródła](#generate_sourcemaps) . Bez map źródła można nadal dołączyć debuger do uruchomionego skryptu po stronie klienta. Można jednak tylko ustawiać i trafiać punkty przerwania w pliku zminimalizowanego lub z możliwością presterty, a nie z oryginalnego pliku źródłowego. Na przykład w aplikacji Vue. js skrypt zminimalizowanego jest przenoszona jako ciąg do instrukcji `eval` i nie ma sposobu na efektywne przechodzenie przez ten kod przy użyciu debugera programu Visual Studio, chyba że są używane mapy źródłowe. W złożonych scenariuszach debugowania można używać narzędzi Chrome Narzędzia deweloperskie lub F12 dla przeglądarki Microsoft Edge.
 
-W celu dołączenia debugera z programu Visual Studio i trafień punktów przerwania w kodzie po stronie klienta debuger zwykle potrzebuje pomocy, aby zidentyfikować właściwy proces. Oto jeden ze sposobów na włączenie tego przy użyciu programu Chrome.
+### <a name="attach-the-debugger-to-client-side-script"></a>Dołącz debuger do skryptu po stronie klienta
 
-### <a name="attach-the-debugger-to-client-side-script-using-chrome"></a>Dołącz debuger do skryptu po stronie klienta za pomocą programu Chrome
+Aby dołączyć debuger z programu Visual Studio i trafić punkty przerwania w kodzie po stronie klienta, debuger musi pomóc w zidentyfikowaniu prawidłowego procesu. Aby to umożliwić, należy wykonać jedną z tych metod.
 
-1. Zamknij wszystkie okna programu Chrome.
+::: moniker range=">=vs-2019"
+W tym scenariuszu należy użyć przeglądarki Microsoft Edge (chrom), obecnie o nazwie **Microsoft Edge beta** w środowisku IDE lub w przeglądarce Chrome.
+::: moniker-end
+::: moniker range="vs-2017"
+W tym scenariuszu należy użyć programu Chrome.
+::: moniker-end
 
-    Ta akcja jest wymagana, aby można było uruchomić program Chrome w trybie debugowania.
+1. Zamknij wszystkie okna dla przeglądarki docelowej.
+
+   Inne wystąpienia przeglądarki mogą uniemożliwiać otwarcie przeglądarki z włączonym debugowaniem. (Mogą być uruchomione rozszerzenia przeglądarki i uniemożliwiać tryb pełnego debugowania, więc może być konieczne otwarcie Menedżera zadań w celu znalezienia nieoczekiwanych wystąpień programu Chrome).
+
+   ::: moniker range=">=vs-2019"
+   Dla przeglądarki Microsoft Edge (chrom) Zamknij również wszystkie wystąpienia programu Chrome. Ponieważ obie przeglądarki używają bazy kodu chromu, daje to najlepsze wyniki.
+   ::: moniker-end
 
 2. Otwórz polecenie **Uruchom** z przycisku **Start** systemu Windows (kliknij prawym przyciskiem myszy i wybierz polecenie **Uruchom**), a następnie wprowadź następujące polecenie:
 
     `chrome.exe --remote-debugging-port=9222`
+    ::: moniker range=">=vs-2019"
+    lub `msedge --remote-debugging-port=9222`
+    ::: moniker-end
 
-    To polecenie uruchamia program Chrome z włączonym debugowaniem.
+    Spowoduje to uruchomienie przeglądarki z włączonym debugowaniem.
 
     ::: moniker range=">=vs-2019"
 
-    > [!NOTE]
-    > Możesz również ustawić flagę `--remote-debugging-port` podczas uruchamiania przeglądarki, wybierając pozycję **Przeglądaj za pomocą..** . > na pasku narzędzi **debugowania** , a następnie wybierając pozycję **Dodaj**, a następnie ustawiając flagę w polu **argumenty** . Użyj innej przyjaznej nazwy dla przeglądarki, takiej jak **Chrome z debugowaniem**. Aby uzyskać szczegółowe informacje, zobacz [Informacje o wersji](/visualstudio/releases/2019/release-notes-preview).
+    > [!TIP]
+    > Począwszy od programu Visual Studio 2019, można ustawić flagę `--remote-debugging-port` podczas uruchamiania przeglądarki, wybierając pozycję **Przeglądaj za pomocą..** . > na pasku narzędzi **debugowania** , a następnie wybierając pozycję **Dodaj**, a następnie ustawiając flagę w polu **argumenty** . Użyj innej przyjaznej nazwy dla przeglądarki, takiej jak **Edge z debugowaniem** lub **Chrome z debugowaniem**. Aby uzyskać szczegółowe informacje, zobacz [Informacje o wersji](/visualstudio/releases/2019/release-notes-v16.2).
+
+    ![Ustawianie otwarcia przeglądarki z włączonym debugowaniem](../javascript/media/tutorial-nodejs-react-edge-with-debugging.png)
 
     ::: moniker-end
 
-3. Przejdź do programu Visual Studio i ustaw punkt przerwania w kodzie źródłowym. (Ustaw punkt przerwania w wierszu kodu, który umożliwia używanie punktów przerwania, takich jak instrukcja `return` lub Deklaracja `var`).
+    Aplikacja nie jest jeszcze uruchomiona, dlatego możesz uzyskać pustą stronę przeglądarki.
+
+3. Przejdź do programu Visual Studio, a następnie ustaw punkt przerwania w kodzie źródłowym, który może być plikiem JavaScript, plikiem TypeScript lub plikiem JSX. (Ustaw punkt przerwania w wierszu kodu, który umożliwia używanie punktów przerwania, takich jak instrukcja return lub Deklaracja wariancji).
 
     ![Ustawianie punktu przerwania](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
-    Jeśli chcesz znaleźć konkretny kod w dużym, wygenerowanym pliku, użyj **klawiszy Ctrl** +**F** (**Edytuj**  > **Znajdź i Zastąp**  > **szybkie wyszukiwanie**).
+    Aby znaleźć konkretny kod w profilowanym pliku, użyj **klawiszy Ctrl**+**F** (**edytuj** > **Znajdź i Zamień** > **szybkie wyszukiwanie**).
 
-4. Gdy w programie Visual Studio wybrano element Chrome, naciśnij klawisz **Ctrl** +**F5** (**Debuguj**  > **Uruchom bez debugowania**), aby uruchomić aplikację w przeglądarce.
+    W przypadku kodu po stronie klienta, aby napotkać punkt przerwania w pliku TypeScript lub JSX, zwykle wymaga użycia [źródłowymi](#generate_sourcemaps). Mapy źródła musi być poprawnie skonfigurowana do obsługi debugowania w programie Visual Studio.
+
+4. (Tylko pakiet WebPack) Postępuj zgodnie z instrukcjami opisanymi w artykule [generowanie źródłowymi](#generate_sourcemaps).
+
+5. Wybierz docelową przeglądarkę jako element docelowy debugowania w programie Visual Studio, a następnie naciśnij klawisz **Ctrl**+**F5** (**Debuguj** > **Rozpocznij bez debugowania**), aby uruchomić aplikację w przeglądarce.
 
     Aplikacja zostanie otwarta na nowej karcie przeglądarki.
 
-    Jeśli program Chrome jest dostępny na komputerze, ale nie jest wyświetlany jako opcja, wybierz pozycję **Przeglądaj z** listy rozwijanej element docelowy debugowania, a następnie wybierz pozycję Chrome jako domyślny element docelowy przeglądarki (wybierz pozycję **Ustaw jako domyślny**).
+6. Wybierz  >  debugowania**dołączanie do procesu**.
 
-5. Wybierz  >  debugowania**dołączanie do procesu**.
+7. W oknie dialogowym **Dołącz do procesu** Pobierz przefiltrowaną listę wystąpień przeglądarki, do których można dołączać.
 
-6. W oknie dialogowym **Dołącz do procesu** wybierz pozycję **kod WebKit** w polu **Dołącz do** , wpisz **Chrome** w polu Filtr, aby odfiltrować wyniki wyszukiwania.
+    ::: moniker range=">=vs-2019"
+    W programie Visual Studio 2019 wybierz odpowiednią przeglądarkę docelową, **JavaScript (Chrome)** lub **JavaScript (Microsoft Edge-chrom)** w polu **Dołącz do** wpisz **Chrome** lub **Edge** w polu Filtr, aby odfiltrować wyniki wyszukiwania. Jeśli utworzono konfigurację przeglądarki z przyjazną nazwą, wybierz tę opcję.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    W programie Visual Studio 2017 wybierz pozycję **kod WebKit** w polu **Dołącz do** , wpisz **Chrome** w polu Filtr, aby odfiltrować wyniki wyszukiwania.
+    ::: moniker-end
 
-    **Kod WebKit** jest wartością wymaganą dla programu Chrome, która jest przeglądarką opartą na WebKit.
+8. Wybierz proces przeglądarki z właściwym portem hosta (localhost w tym przykładzie) i wybierz pozycję **Dołącz**.
 
-7. Wybierz proces Chrome z prawidłowym portem hosta (1337 na tej ilustracji) i wybierz pozycję **Dołącz**.
+    Port (na przykład 1337) może również pojawić się w polu **title** , aby ułatwić wybranie prawidłowego wystąpienia przeglądarki.
 
+    ::: moniker range=">=vs-2019"
+    Poniższy przykład pokazuje, jak wygląda wyszukiwanie w przeglądarce Microsoft Edge (chrom).
+
+    ![Dołącz do procesu](../javascript/media/tutorial-nodejs-react-attach-to-process-edge.png)
+    ::: moniker-end
+    ::: moniker range="vs-2017"
     ![Dołącz do procesu](../javascript/media/tutorial-nodejs-react-attach-to-process.png)
 
-    ::: moniker range="vs-2017"
     Wiadomo, że debuger został prawidłowo dołączony, gdy DOM Explorer i konsola JavaScript zostanie otwarta w programie Visual Studio. Te narzędzia debugowania są podobne do narzędzi Chrome Narzędzia deweloperskie i F12 dla przeglądarki Microsoft Edge.
     ::: moniker-end
 
-    > [!NOTE]
-    > Jeśli debuger nie zostanie dołączony i zostanie wyświetlony komunikat "nie można dołączyć do procesu. Operacja nie jest dozwolona w bieżącym stanie ", należy użyć Menedżera zadań, aby zamknąć wszystkie wystąpienia elementu Chrome przed uruchomieniem programu Chrome w trybie debugowania. Rozszerzenia programu Chrome mogą być uruchomione i uniemożliwiać tryb pełnego debugowania.
+    > [!TIP]
+    > Jeśli debuger nie zostanie dołączony i zostanie wyświetlony komunikat "nie można uruchomić adaptera debugowania" lub "nie można dołączyć do procesu. Operacja nie jest dozwolona w bieżącym stanie ". przed uruchomieniem przeglądarki w trybie debugowania należy zamknąć wszystkie wystąpienia przeglądarki docelowej za pomocą Menedżera zadań systemu Windows. Mogą działać rozszerzenia przeglądarki i uniemożliwiać tryb pełnego debugowania.
 
-8. Jeśli kod z punktem przerwania został już wykonany, Odśwież stronę przeglądarki, aby trafić punkt przerwania.
+9. Ponieważ kod z punktem przerwania mógł już zostać wykonany, Odśwież stronę przeglądarki. W razie potrzeby podejmij działanie, aby spowodować wykonanie kodu z punktem przerwania.
 
     W debugerze można przeanalizować stan aplikacji, umieszczając kursor nad zmiennymi i korzystając z okien debugera. Debuger można uzyskać, przechodząc przez kod (**F5**, **F10**i **F11**).
 
-    W przypadku zminimalizowanego lub z transstertą języka JavaScript można napotkać punkt przerwania w postaci kodu JavaScript lub jego zamapowanej lokalizacji w pliku TypeScript (przy użyciu map źródła), w zależności od środowiska i stanu przeglądarki. W obu przypadkach możesz przejść przez kod i przeanalizować zmienne.
+    Punkt przerwania można napotkać w pliku *. js* lub w pliku źródłowym, w zależności od tego, jakie kroki zostały wcześniej wykonane, wraz ze środowiskiem i przeglądarką. W obu przypadkach możesz przejść przez kod i przeanalizować zmienne.
 
-    * Jeśli musisz przerwać kod w pliku TypeScript i nie można go wykonać, użyj **dołączenia do procesu** , jak opisano w poprzednich krokach, aby dołączyć debuger. Następnie otwórz dynamicznie wygenerowany plik TypeScript z Eksplorator rozwiązań, otwierając **dokumenty skryptu**  > **filename. TSX**, ustaw punkt przerwania i Odśwież stronę w przeglądarce (Ustaw punkt przerwania w wierszu kodu, który umożliwia używanie punktów przerwania, takie jak instrukcja `return` lub Deklaracja `var`).
+   * Jeśli musisz przerwać kod w pliku źródłowym TypeScript lub JSX i nie można go wykonać, użyj **dołączenia do procesu** , jak opisano w poprzednich krokach, aby dołączyć debuger. Upewnij się, że środowisko zostało prawidłowo skonfigurowane:
 
-        Alternatywnie, jeśli konieczne jest przerwanie w kodzie w pliku TypeScript i nie można tego zrobić, spróbuj użyć instrukcji `debugger;` w pliku TypeScript lub ustaw punkty przerwania w Narzędzia deweloperskie Chrome.
+      * Zamknięto wszystkie wystąpienia przeglądarki, w tym rozszerzenia programu Chrome (przy użyciu Menedżera zadań), dzięki czemu można uruchomić przeglądarkę w trybie debugowania. Upewnij się, że przeglądarka została uruchomiona w trybie debugowania.
 
-    * Jeśli trzeba podzielić na kod w przekształconym pliku JavaScript (na przykład *App-Bundle. js*) i nie można go wykonać, usuń plik mapy źródłowej o *nazwie filename. js. map*.
+      * Upewnij się, że plik mapy źródła zawiera odwołanie do pliku źródłowego, który nie zawiera nieobsługiwanych prefiksów, takich jak *WebPack:///* , co uniemożliwia debugerowi programu Visual Studio lokalizowanie *aplikacji App. TSX*. Na przykład to odwołanie może zostać poprawione na *./app.TSX*. Można to zrobić ręcznie w pliku mapy źródła lub za pomocą niestandardowej modyfikacji kompilacji.
+
+       Alternatywnie, jeśli trzeba podzielić na kod w pliku źródłowym (na przykład * App. TSX) i nie można go wykonać, spróbuj użyć instrukcji `debugger;` w pliku źródłowym lub ustawić punkty przerwania w programie Chrome Narzędzia deweloperskie (lub F12 Tools for Microsoft Edge).
+
+   * Jeśli trzeba podzielić na kod w przekształconym pliku JavaScript (na przykład *App-Bundle. js*) i nie można go wykonać, usuń plik mapy źródła, *NazwaPliku. js. map*.
 
      > [!TIP]
-     > Po dołączeniu do procesu po raz pierwszy, wykonując poniższe kroki, można szybko ponownie dołączyć do tego samego procesu, wybierając **debuguj**  > **ponownie dołączyć do procesu**.
+     > Po dołączeniu do procesu po raz pierwszy, wykonując poniższe kroki, można szybko ponownie dołączyć do tego samego procesu w programie Visual Studio 2017, wybierając pozycję **debuguj**  > **ponownie dołączyć do procesu**.
 
 ## <a name="generate_sourcemaps"></a>Generuj mapy źródeł na potrzeby debugowania
 
@@ -121,9 +162,32 @@ Program Visual Studio oferuje możliwość używania i generowania map źródeł
 * W projekcie JavaScript musisz generować mapy źródłowe za pomocą pakietu, takiego jak WebPack, oraz kompilatora, takiego jak kompilator języka TypeScript (lub Babel), który można dodać do projektu. Dla kompilatora języka TypeScript należy również dodać plik *tsconfig. JSON* . Aby zapoznać się z przykładem, który pokazuje, jak to zrobić przy użyciu podstawowej konfiguracji pakietu WebPack, zobacz [Tworzenie aplikacji node. js z reagowaniem](../javascript/tutorial-nodejs-with-react-and-jsx.md).
 
 > [!NOTE]
-> Jeśli jesteś nowym mapowaniem źródeł, Przeczytaj [wprowadzenie do map źródłowych JavaScript](https://www.html5rocks.com/en/tutorials/developertools/sourcemaps/) przed kontynuowaniem.
+> Jeśli jesteś nowym mapowaniem źródeł, Przeczytaj [wprowadzenie do map źródłowych JavaScript](https://www.html5rocks.com/en/tutorials/developertools/sourcemaps/) przed kontynuowaniem. 
 
 Aby skonfigurować ustawienia zaawansowane dla map źródeł, Użyj ustawień *tsconfig. JSON* lub projektu w projekcie TypeScript, ale nie obu.
+
+Aby włączyć debugowanie przy użyciu programu Visual Studio, należy się upewnić, że odwołania do pliku źródłowego w wygenerowanym mapy źródła są poprawne. Na przykład jeśli używasz pakietu WebPack, odwołania w pliku mapy źródła zawierają prefiks *WebPack:///* , który uniemożliwia programowi Visual Studio znalezienie pliku źródłowego TYPESCRIPT lub JSX. W związku z tym, gdy poprawisz ten element do celów debugowania, odwołanie do pliku źródłowego (na przykład *App. TSX*) musi zostać zmienione z dowolnego elementu, takiego jak *WebPack:///./app.TSX* *./app.TSX*, co umożliwia debugowanie ( ścieżka jest względna dla pliku źródłowego. Poniższy przykład pokazuje, jak można poprawić źródłowymi z pakietem WebPack, który jest jednym z najczęściej używanych pakietów.
+
+(Tylko pakiet WebPack) Jeśli ustawiasz punkt przerwania w pliku JSX (a nie w pliku JavaScript), musisz zaktualizować konfigurację pakietu WebPack. Na przykład w *WebPack-config. js*może zajść potrzeba zastąpienia następującego kodu:
+
+```javascript
+  output: {
+    filename: "./app-bundle.js", // This is an example of the filename in your project
+  },
+```
+
+z tym kodem:
+
+```javascript
+  output: {
+    filename: "./app-bundle.js", // Replace with the filename in your project
+    devtoolModuleFilenameTemplate: '[resource-path]'  // Removes the webpack:/// prefix
+  },
+```
+
+Jest to ustawienie tylko do programowania, które umożliwia debugowanie kodu po stronie klienta w programie Visual Studio.
+
+W przypadku skomplikowanych scenariuszy narzędzia przeglądarki (**F12**) mogą najlepiej współpracować z debugowaniem.
 
 ### <a name="configure-source-maps-using-a-tsconfigjson-file"></a>Skonfiguruj mapy źródłowe przy użyciu pliku tsconfig. JSON
 
@@ -155,7 +219,7 @@ Jeśli dodasz plik *tsconfig. JSON* do projektu, program Visual Studio traktuje 
 
 Aby uzyskać więcej informacji na temat opcji kompilatora, zaznacz [Opcje kompilatora](https://www.typescriptlang.org/docs/handbook/compiler-options.html) strony w podręczniku języka TypeScript.
 
-### <a name="configure-source-maps-using-project-settings"></a>Skonfiguruj mapy źródłowe przy użyciu ustawień projektu
+### <a name="configure-source-maps-using-project-settings-typescript-project"></a>Skonfiguruj mapy źródłowe za pomocą ustawień projektu (projekt TypeScript)
 
 Możesz również skonfigurować ustawienia mapy źródłowej przy użyciu właściwości projektu, klikając prawym przyciskiem myszy projekt, a następnie wybierając pozycję **project > właściwości > > kompilacji języka TypeScript**.
 

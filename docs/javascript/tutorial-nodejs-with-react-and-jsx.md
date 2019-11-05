@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: dd34d0afa9f1b83a3795a9bccd0578d88c585ffa
-ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
+ms.openlocfilehash: c5f3c4a0a2acdf73aae96c5cb5629252e712da64
+ms.sourcegitcommit: ee9c55616a22addc89cf1cf1942bf371d73e2e11
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73569029"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73618124"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Samouczek: Tworzenie aplikacji node. js i reagowanie w programie Visual Studio
 
@@ -60,13 +60,13 @@ Pakiet WebPack służy do łączenia plików JavaScript, dzięki czemu mogą by�
 * Musisz mieć zainstalowany program Visual Studio i obciążenie programowaniem Node. js.
 
     ::: moniker range=">=vs-2019"
-    Jeśli program Visual Studio 2019 nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads/) , aby zainstalować ją bezpłatnie.
+    Jeśli program Visual Studio 2019 nie został jeszcze zainstalowany, przejdź do strony [pobierania programu Visual studio](https://visualstudio.microsoft.com/downloads/)  page, aby zainstalować go bezpłatnie.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Jeśli program Visual Studio 2017 nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads/) , aby zainstalować ją bezpłatnie.
+    Jeśli program Visual Studio 2017 nie został jeszcze zainstalowany, przejdź do strony [pobierania programu Visual studio](https://visualstudio.microsoft.com/downloads/)  page, aby zainstalować go bezpłatnie.
     ::: moniker-end
 
-    Jeśli musisz zainstalować obciążenie, ale masz już program Visual Studio, przejdź do pozycji **narzędzia** > **Pobierz narzędzia i funkcje..** ., co spowoduje otwarcie Instalator programu Visual Studio. Wybierz obciążenie **środowiska Node. js** , a następnie wybierz polecenie **Modyfikuj**.
+    Jeśli musisz zainstalować obciążenie, ale masz już program Visual Studio, przejdź do pozycji **narzędzia**  > **Pobierz narzędzia i funkcje..** ., co spowoduje otwarcie Instalator programu Visual Studio. Wybierz obciążenie **środowiska Node. js** , a następnie wybierz polecenie **Modyfikuj**.
 
     ![Obciążenie środowiska Node. js w Instalatorze programu VS](../ide/media/quickstart-nodejs-workload.png)
 
@@ -88,7 +88,7 @@ Najpierw utwórz projekt aplikacji sieci Web w języku Node. js.
     Naciśnij klawisz **ESC** , aby zamknąć okno uruchamiania. **Naciśnij klawisze CTRL + Q** , aby otworzyć pole wyszukiwania, wpisz **Node. js**, a następnie wybierz **pustą aplikację sieci Web Node. js** (JavaScript). W wyświetlonym oknie dialogowym wybierz pozycję **Utwórz**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Na górnym pasku menu wybierz kolejno pozycje **plik** > **Nowy** > **projekt**. W lewym okienku okna dialogowego **Nowy projekt** rozwiń węzeł **JavaScript**, a następnie wybierz polecenie **Node. js**. W środkowym okienku wybierz **pustą aplikację sieci Web Node. js**, wpisz nazwę **NodejsWebAppBlank**, a następnie wybierz **przycisk OK**.
+    Na górnym pasku menu wybierz kolejno pozycje **plik**  > **Nowy**  > **projekt**. W lewym okienku okna dialogowego **Nowy projekt** rozwiń węzeł **JavaScript**, a następnie wybierz polecenie **Node. js**. W środkowym okienku wybierz **pustą aplikację sieci Web Node. js**, wpisz nazwę **NodejsWebAppBlank**, a następnie wybierz **przycisk OK**.
     ::: moniker-end
     Jeśli nie widzisz szablonu projektu **pustej aplikacji sieci Web Node. js** , musisz dodać obciążenie **programowania Node. js** . Aby uzyskać szczegółowe instrukcje, zobacz [wymagania wstępne](#prerequisites).
 
@@ -172,7 +172,7 @@ W tych krokach dodasz cztery nowe pliki do projektu.
 
 W przypadku tej prostej aplikacji dodawane są nowe pliki projektu w katalogu głównym projektu. (W większości aplikacji zazwyczaj pliki są dodawane do podfolderów i dopasowują odpowiednio odwołania ścieżek względnych).
 
-1. W Eksplorator rozwiązań kliknij prawym przyciskiem myszy projekt **NodejsWebAppBlank** i wybierz polecenie **Dodaj** > **nowy element**.
+1. W Eksplorator rozwiązań kliknij prawym przyciskiem myszy projekt **NodejsWebAppBlank** i wybierz polecenie **Dodaj**  > **nowy element**.
 
 1. W oknie dialogowym **Dodaj nowy element** wybierz pozycję **plik JSX TypeScript**, wpisz nazwę *App. TSX*, a następnie wybierz pozycję **Dodaj** lub **przycisk OK**.
 
@@ -310,7 +310,7 @@ W poprzednich krokach dodano *WebPack-config. js* do projektu. Następnie należ
 
     Jeśli zobaczysz jakiekolwiek błędy zamiast powyższych danych wyjściowych, musisz je rozwiązać, zanim aplikacja będzie działała. Jeśli wersje pakietu npm są inne niż wersje przedstawione w tym samouczku, które mogą być źródłem błędów. Jednym ze sposobów na rozwiązanie błędów jest użycie dokładnych wersji przedstawionych w poprzednich krokach. Ponadto, jeśli co najmniej jedna z tych wersji pakietu była przestarzała i powoduje błąd, może być konieczne zainstalowanie nowszej wersji w celu rozwiązania błędów. Aby uzyskać informacje na temat używania pliku *Package. JSON* do sterowania wersjami pakietu npm, zobacz [Konfiguracja pliku Package. JSON](../javascript/configure-packages-with-package-json.md).
 
-1. W Eksplorator rozwiązań kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **dodaj** > **istniejący folder**, a następnie wybierz folder *ROZKŁ* i wybierz **pozycję Wybierz folder**.
+1. W Eksplorator rozwiązań kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **dodaj**  > **istniejący folder**, a następnie wybierz folder *ROZKŁ* i wybierz **pozycję Wybierz folder**.
 
     Program Visual Studio dodaje do projektu folder *ROZKŁ* zawierający *App-Bundle. js* i *App-Bundle. js. map*.
 
@@ -352,7 +352,7 @@ Począwszy od programu Visual Studio 2019, wymagany jest skrypt kompilacji. Zami
     Jeśli na maszynie jest dostępny program Chrome, ale nie jest on wyświetlany jako opcja, wybierz pozycję **przeglądarka sieci Web (BrowserName)** > **Google Chrome** z listy rozwijanej element docelowy debugowania, a następnie wybierz pozycję **Chrome** jako domyślny element docelowy przeglądarki.
     ::: moniker-end
 
-1. Aby uruchomić aplikację, naciśnij klawisz **F5** (**Debuguj** > **Rozpocznij debugowanie**) lub przycisk Zielona strzałka.
+1. Aby uruchomić aplikację, naciśnij klawisz **F5** (**Debuguj**  > **Rozpocznij debugowanie**) lub przycisk Zielona strzałka.
 
     Zostanie otwarte okno konsoli środowiska Node. js, w którym jest wyświetlany port, na którym debuger nasłuchuje.
 
@@ -372,7 +372,7 @@ Począwszy od programu Visual Studio 2019, wymagany jest skrypt kompilacji. Zami
 
     Punkty przerwania są najbardziej podstawową i istotną funkcją niezawodnego debugowania. Punkt przerwania wskazuje, gdzie program Visual Studio powinien zawiesić uruchomiony kod, aby można było przyjrzeć się wartościom zmiennych lub działaniu pamięci lub niezależnie od tego, czy gałąź kodu jest uruchamiana.
 
-1. Aby uruchomić aplikację, naciśnij klawisz **F5** (**Debuguj** > **Rozpocznij debugowanie**).
+1. Aby uruchomić aplikację, naciśnij klawisz **F5** (**Debuguj**  > **Rozpocznij debugowanie**).
 
     Debuger wstrzymuje się w ustawionym punkcie przerwania (Bieżąca instrukcja jest oznaczona kolorem żółtym). Teraz można sprawdzić stan aplikacji, umieszczając kursor na zmiennych, które znajdują się obecnie w zakresie, korzystając **z okien debugera** , takich jak **lokalne** i kontrolki okien.
 
@@ -395,7 +395,11 @@ W tym scenariuszu należy użyć programu Chrome.
 
 1. Zamknij wszystkie okna dla przeglądarki docelowej.
 
-   Inne wystąpienia przeglądarki mogą uniemożliwiać dołączenie debugera.
+   Inne wystąpienia przeglądarki mogą uniemożliwiać otwarcie przeglądarki z włączonym debugowaniem. (Mogą być uruchomione rozszerzenia przeglądarki i uniemożliwiać tryb pełnego debugowania, więc może być konieczne otwarcie Menedżera zadań w celu znalezienia nieoczekiwanych wystąpień programu Chrome).
+
+   ::: moniker range=">=vs-2019"
+   Dla przeglądarki Microsoft Edge (chrom) Zamknij również wszystkie wystąpienia programu Chrome. Ponieważ obie przeglądarki korzystają z bazy kodu chromu, daje to najlepsze wyniki.
+   ::: moniker-end
 
 2. Otwórz polecenie **Uruchom** z przycisku **Start** systemu Windows (kliknij prawym przyciskiem myszy i wybierz polecenie **Uruchom**), a następnie wprowadź następujące polecenie:
 
@@ -417,19 +421,44 @@ W tym scenariuszu należy użyć programu Chrome.
 
     Aplikacja nie jest jeszcze uruchomiona, dlatego możesz uzyskać pustą stronę przeglądarki.
 
-3. Przejdź do programu Visual Studio, a następnie ustaw punkt przerwania w kodzie *App-Bundle. js* w funkcji `render()`, jak pokazano na poniższej ilustracji:
+3. Przejdź do programu Visual Studio, a następnie ustaw punkt przerwania w kodzie źródłowym, *App-Bundle. js* lub *App. TSX*.
+
+    W przypadku *App-Bundle. js*Ustaw punkt przerwania w funkcji `render()`, jak pokazano na poniższej ilustracji:
 
     ![Ustawianie punktu przerwania](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
-    Aby znaleźć funkcję `render()` w *App-Bundle. js*, użyj **klawiszy CTRL**+**F** (**Edytuj** > **Znajdź i Zastąp** > **szybkie wyszukiwanie**).
+    Aby znaleźć funkcję `render()` w pliku *App-Bundle. js* , użyj **klawiszy CTRL**+**F** (**Edytuj** > **Znajdź i Zastąp** > **szybkie wyszukiwanie**).
 
-4. Wybierz docelową przeglądarkę jako element docelowy debugowania w programie Visual Studio, a następnie naciśnij klawisz **Ctrl**+**F5** (**Debuguj** > **Rozpocznij bez debugowania**), aby uruchomić aplikację w przeglądarce.
+    W przypadku *aplikacji App. TSX*Ustaw punkt przerwania w funkcji `render()` w instrukcji `return`.
+
+    ![Ustawianie punktu przerwania](../javascript/media/tutorial-nodejs-react-set-breakpoint-in-tsx-file.png)
+
+4. Jeśli ustawiasz punkt przerwania w pliku *TSX* (a nie *App-Bundle. js*), musisz zaktualizować *WebPack-config. js*. Zastąp następujący kod:
+
+    ```javascript
+    output: {
+        filename: "./app-bundle.js",
+    },
+    ```
+
+    z tym kodem:
+
+    ```javascript
+    output: {
+        filename: "./app-bundle.js",
+        devtoolModuleFilenameTemplate: '[resource-path]'  // removes the webpack:/// prefix
+    },
+    ```
+
+    Jest to ustawienie tylko do programowania, aby włączyć debugowanie w programie Visual Studio. To ustawienie umożliwia przesłonięcie wygenerowanych odwołań w pliku mapy źródła, *App-Bundle. js. map*podczas kompilowania aplikacji. Domyślnie odwołania do pakietu WebPack w pliku mapy źródła zawierają prefiks *WebPack:///* , który uniemożliwia programowi Visual Studio znalezienie pliku źródłowego, *App. TSX*. W przypadku wprowadzenia tej zmiany odwołanie do pliku źródłowego, *App. TSX*można zmienić z *WebPack:///./app.TSX* na *./app.TSX*, co umożliwia debugowanie.
+
+5. Wybierz docelową przeglądarkę jako element docelowy debugowania w programie Visual Studio, a następnie naciśnij klawisz **Ctrl**+**F5** (**Debuguj** > **Rozpocznij bez debugowania**), aby uruchomić aplikację w przeglądarce.
 
     Aplikacja zostanie otwarta na nowej karcie przeglądarki.
 
-5. Wybierz > debugowania **dołączanie do procesu**.
+6. Wybierz  >  debugowania**dołączanie do procesu**.
 
-6. W oknie dialogowym **Dołącz do procesu** Pobierz przefiltrowaną listę wystąpień przeglądarki, do których można dołączać.
+7. W oknie dialogowym **Dołącz do procesu** Pobierz przefiltrowaną listę wystąpień przeglądarki, do których można dołączać.
 
     ::: moniker range=">=vs-2019"
     W programie Visual Studio 2019 wybierz odpowiednią przeglądarkę docelową, **JavaScript (Chrome)** lub **JavaScript (Microsoft Edge-chrom)** w polu **Dołącz do** wpisz **Chrome** lub **Edge** w polu Filtr, aby odfiltrować wyniki wyszukiwania. Jeśli utworzono konfigurację przeglądarki z przyjazną nazwą, wybierz tę opcję.
@@ -438,7 +467,7 @@ W tym scenariuszu należy użyć programu Chrome.
     W programie Visual Studio 2017 wybierz pozycję **kod WebKit** w polu **Dołącz do** , wpisz **Chrome** w polu Filtr, aby odfiltrować wyniki wyszukiwania.
     ::: moniker-end
 
-7. Wybierz proces przeglądarki z właściwym portem hosta (localhost w tym przykładzie) i wybierz pozycję **Dołącz**.
+8. Wybierz proces przeglądarki z właściwym portem hosta (localhost w tym przykładzie) i wybierz pozycję **Dołącz**.
 
     Port (1337) może również pojawić się w polu **title** , aby ułatwić wybranie prawidłowego wystąpienia przeglądarki.
 
@@ -456,20 +485,24 @@ W tym scenariuszu należy użyć programu Chrome.
     > [!TIP]
     > Jeśli debuger nie zostanie dołączony i zostanie wyświetlony komunikat "nie można dołączyć do procesu. Operacja nie jest dozwolona w bieżącym stanie ". przed uruchomieniem przeglądarki w trybie debugowania należy zamknąć wszystkie wystąpienia przeglądarki docelowej za pomocą Menedżera zadań. Mogą działać rozszerzenia przeglądarki i uniemożliwiać tryb pełnego debugowania.
 
-8. Ponieważ kod z punktem przerwania został już wykonany, Odśwież stronę przeglądarki, aby trafić punkt przerwania.
+9. Ponieważ kod z punktem przerwania został już wykonany, Odśwież stronę przeglądarki, aby trafić punkt przerwania.
 
     W debugerze można przeanalizować stan aplikacji, umieszczając kursor nad zmiennymi i korzystając z okien debugera. Debuger można uzyskać, przechodząc przez kod (**F5**, **F10**i **F11**).
 
-    Punkt przerwania można napotkać w *App-Bundle. js* lub w mapowanej lokalizacji w *App. TSX*, w zależności od środowiska i stanu przeglądarki. W obu przypadkach możesz przejść przez kod i przeanalizować zmienne.
+    Punkt przerwania można napotkać w *App-Bundle. js* lub w mapowanej lokalizacji w *aplikacji App. TSX*, w zależności od tego, jakie kroki zostały wcześniej wykonane, wraz ze stanem środowiska i przeglądarki. W obu przypadkach możesz przejść przez kod i przeanalizować zmienne.
 
-   * Jeśli konieczne jest zabicie do kodu w *aplikacji App. TSX* i nie można tego zrobić, użyj **dołączenia do procesu** , jak opisano w poprzednich krokach, aby dołączyć debuger. Następnie otwórz dynamicznie wygenerowany plik *App. TSX* z Eksplorator rozwiązań, otwierając **dokumenty skryptu** > **App. TSX**, ustaw punkt przerwania i Odśwież stronę w przeglądarce (Ustaw punkt przerwania w wierszu kodu, który umożliwia punkty przerwania, takie jak instrukcja `return` lub `var` deklaracji).
+   * Jeśli konieczne jest zabicie do kodu w *aplikacji App. TSX* i nie można tego zrobić, użyj **dołączenia do procesu** , jak opisano w poprzednich krokach, aby dołączyć debuger. Upewnij się, że środowisko zostało prawidłowo skonfigurowane:
 
-       Alternatywnie, jeśli trzeba podzielić na kod w *aplikacji App. TSX* i nie można tego zrobić, spróbuj użyć instrukcji `debugger;` w *App. TSX*lub ustawić punkty przerwania w narzędzia deweloperskie (lub F12 Tools for Microsoft Edge). W przypadku plików mapy źródła generowanych przez pakiet WebPack narzędzia przeglądarki (**F12**) zwykle działają najlepiej do debugowania.
+      * Zamknięto wszystkie wystąpienia przeglądarki, w tym rozszerzenia programu Chrome (przy użyciu Menedżera zadań), dzięki czemu można uruchomić przeglądarkę w trybie debugowania. Upewnij się, że przeglądarka została uruchomiona w trybie debugowania.
+
+      * Upewnij się, że plik mapy źródła zawiera odwołanie do *./app.TSX* , a nie *WebPack:///./app.TSX*, co uniemożliwia debugerowi programu Visual Studio lokalizowanie *aplikacji. TSX*.
+
+       Alternatywnie, jeśli trzeba podzielić na kod w *aplikacji App. TSX* i nie można tego zrobić, spróbuj użyć instrukcji `debugger;` w *App. TSX*lub ustawić punkty przerwania w narzędzia deweloperskie (lub F12 Tools for Microsoft Edge).
 
    * Jeśli musisz przerwać wykonywanie kodu w *App-Bundle. js* i nie można tego zrobić, usuń plik mapy źródła *App-Bundle. js. map*.
 
      > [!TIP]
-     > Po dołączeniu do procesu po raz pierwszy, wykonując poniższe kroki, można szybko ponownie dołączyć do tego samego procesu w programie Visual Studio 2017, wybierając pozycję **debuguj** > **ponownie dołączyć do procesu**.
+     > Po dołączeniu do procesu po raz pierwszy, wykonując poniższe kroki, można szybko ponownie dołączyć do tego samego procesu w programie Visual Studio 2017, wybierając pozycję **debuguj**  > **ponownie dołączyć do procesu**.
 
 ## <a name="next-steps"></a>Następne kroki
 
