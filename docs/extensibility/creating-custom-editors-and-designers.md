@@ -11,12 +11,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08d9ee33d49985fed8e8c0180fa652aed39b25d9
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 7a6cb0d70566eaabb2ba37cb209041e03684c958
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73186807"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568893"
 ---
 # <a name="create-custom-editors-and-designers"></a>Tworzenie niestandardowych edytorów i projektantów
 
@@ -59,7 +59,7 @@ Aby uzyskać informacje na temat edytora podstawowego programu Visual Studio, zo
 
 - Czy Edytor musi hostować kontrolki ActiveX?
 
-   Jeśli Edytor obsługuje kontrolki ActiveX, zaimplementuj Edytor aktywacji w miejscu, jak opisano w [aktywacji w miejscu](../extensibility/in-place-activation.md). Jeśli nie obsługuje kontrolek ActiveX, należy użyć uproszczonego edytora osadzania lub dostosować [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] domyślnego edytora.
+   Jeśli Edytor obsługuje kontrolki ActiveX, zaimplementuj Edytor aktywacji w miejscu, jak opisano w [aktywacji w miejscu](/visualstudio/misc/in-place-activation?view=vs-2015). Jeśli nie obsługuje kontrolek ActiveX, należy użyć uproszczonego edytora osadzania lub dostosować [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] domyślnego edytora.
 
 - Czy Edytor będzie obsługiwał wiele widoków? Jeśli chcesz, aby widoki edytora były widoczne w tym samym czasie co domyślny edytor, musisz obsługiwać wiele widoków.
 

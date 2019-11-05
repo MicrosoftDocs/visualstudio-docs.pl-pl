@@ -14,12 +14,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 662b64f69b278c4cc815a742c5cba26592e000bd
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 73c14c61702ec978d8ffec896b13204c238762a2
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189087"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568834"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 Zestaw Visual Studio SDK ułatwia poszerzanie funkcji programu Visual Studio lub integrowanie nowych funkcji w programie Visual Studio. Rozszerzenia można dystrybuować do innych użytkowników, a także do Visual Studio Marketplace. Poniżej przedstawiono kilka sposobów, w których można rozciągnąć program Visual Studio:
@@ -77,7 +77,7 @@ Zestaw Visual Studio SDK ułatwia poszerzanie funkcji programu Visual Studio lub
 
 - [Tworzenie rozszerzenia za pomocą polecenia menu](../extensibility/creating-an-extension-with-a-menu-command.md)
 - [Instrukcje: Migrowanie projektów rozszerzalności do programu Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)
-- [Często zadawane pytania: konwertowanie dodatków na rozszerzenia pakietu VSPackage](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)
+- [Często zadawane pytania: konwertowanie dodatków na rozszerzenia pakietu VSPackage](/visualstudio/extensibility/faq-converting-add-ins-to-vspackage-extensions?view=vs-2015)
 - [Zarządzanie wieloma wątkami w kodzie zarządzanym](../extensibility/managing-multiple-threads-in-managed-code.md)
 - [Poszerzanie menu i poleceń](../extensibility/extending-menus-and-commands.md)
 - [Dodawanie poleceń do pasków narzędzi](../extensibility/adding-commands-to-toolbars.md)

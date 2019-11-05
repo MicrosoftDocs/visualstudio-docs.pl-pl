@@ -10,12 +10,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 571ba2a0c015d6d3a3c8757c25a0058d8e3ad8e1
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: a33286ffb678bf37cf684bb603d81ec8091e7405
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188817"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568814"
 ---
 # <a name="fxcop-rule-port-status"></a>Stan portu reguły FxCop
 
@@ -67,8 +67,8 @@ Identyfikator reguły | Tytuł
 [CA1063](ca1063-implement-idisposable-correctly.md) | Zaimplementuj poprawnie interfejs IDisposable
 [CA1064](ca1064-exceptions-should-be-public.md) | Wyjątki powinny być publiczne
 [CA1065](ca1065-do-not-raise-exceptions-in-unexpected-locations.md) | Nie wywołuj wyjątków w nieoczekiwanych lokalizacjach
-CA1066 | Typ {0} powinien implementować > \<T IEquatable, ponieważ zastępuje on wartość Equals
-CA1067 | Zastąp obiekt. Equals (Object) podczas implementowania \<T IEquatable >
+CA1066 | Typ {0} powinien implementować IEquatable\<T > ponieważ zastępuje on wartość Equals
+CA1067 | Zastąp obiekt. Equals (Object) podczas implementowania IEquatable\<T >
 [CA1068](ca1068.md) | Parametry CancellationToken muszą występować na końcu
 CA1200 | Unikaj używania tagów cref z prefiksem
 [CA1303](ca1303-do-not-pass-literals-as-localized-parameters.md) | Nie przekazuj literałów jako zlokalizowanych parametrów
@@ -286,7 +286,7 @@ Następujące reguły FxCop starszej wersji są przestarzałe i nie zostaną zai
 - [CA1406](ca1406-avoid-int64-arguments-for-visual-basic-6-clients.md)
 - [CA1504](ca1504-review-misleading-field-names.md)
 - [CA1701](ca1701-resource-string-compound-words-should-be-cased-correctly.md)
-- [CA1702](ca1702-compound-words-should-be-cased-correctly.md)
+- [CA1702](ca1702.md)
 - [CA1703](ca1703.md)
 - [CA1800](ca1800.md)
 - [CA1809](ca1809.md)

@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac04f7ef5d7ad445bec470b3d019418a3bec1f7b
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 4ceea00a3fa77a9c1106f24f28ac1d5890437b41
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188886"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568966"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Kolory i style dla programu Visual Studio
 
@@ -340,7 +340,7 @@ Czasami chcesz zezwolić użytkownikowi końcowemu na dostosowanie interfejsu u�
 
 Pakietu VSPackage może kontrolować czcionki i kolory za pomocą niestandardowych kategorii i wyświetlać elementy na stronie właściwości czcionki i kolory. W przypadku korzystania z tego mechanizmu pakietów VSPackage musi implementować interfejs [IVsFontAndColorDefaultsProvider](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider) i skojarzone z nim interfejsy.
 
-W zasadzie ten mechanizm może służyć do modyfikowania wszystkich istniejących elementów wyświetlanych i kategorii, które je zawierają. Nie należy jednak jej używać do modyfikowania kategorii edytora tekstu ani elementów wyświetlanych. Aby uzyskać więcej informacji na temat kategorii Edytor tekstu, zobacz [Omówienie czcionek i kolorów](../font-and-color-overview.md).
+W zasadzie ten mechanizm może służyć do modyfikowania wszystkich istniejących elementów wyświetlanych i kategorii, które je zawierają. Nie należy jednak jej używać do modyfikowania kategorii edytora tekstu ani elementów wyświetlanych. Aby uzyskać więcej informacji na temat kategorii Edytor tekstu, zobacz [Omówienie czcionek i kolorów](/visualstudio/extensibility/font-and-color-overview?view=vs-2015).
 
 Aby zaimplementować niestandardowe kategorie lub elementy wyświetlane, pakietu VSPackage musi:
 

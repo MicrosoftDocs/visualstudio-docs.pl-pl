@@ -11,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37f208421079f77cadaf85556e00a8f8548c6182
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 55f9904c95be45c7f293355340c814faafb5de2b
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188805"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568842"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Instrukcje: generowanie danych metryk kodu
 
@@ -24,7 +24,7 @@ Dane metryk kodu można generować na trzy sposoby:
 
 - Instalując [analizatory FxCop](#fxcop-analyzers-code-metrics-rules) i włączając cztery zawarte w niej reguły metryki kodu (łatwość konserwacji).
 
-- Wybierając polecenie [ **Analizuj**  > **Oblicz metryki kodu** ](#calculate-code-metrics-menu-command) w programie Visual Studio.
+- Wybierając polecenie [ **Analizuj** > **Oblicz metryki kodu** ](#calculate-code-metrics-menu-command) w programie Visual Studio.
 
 - Z [wiersza polecenia](#command-line-code-metrics) dla C# projektów i Visual Basic.
 
@@ -35,7 +35,7 @@ Dane metryk kodu można generować na trzy sposoby:
 - [CA1501](ca1501-avoid-excessive-inheritance.md)
 - [CA1502](ca1502.md)
 - [CA1505](ca1505-avoid-unmaintainable-code.md)
-- [CA1506](ca1506-avoid-excessive-class-coupling.md)
+- [CA1506](ca1506.md)
 
 Te reguły są domyślnie wyłączone, ale można je włączyć z poziomu [**Eksplorator rozwiązań**](use-roslyn-analyzers.md#set-rule-severity-from-solution-explorer) lub w pliku [zestawu reguł](using-rule-sets-to-group-code-analysis-rules.md) . Na przykład, aby włączyć CA1502 reguły jako ostrzeżenie, plik zestawu reguł będzie zawierać następujący wpis:
 
@@ -72,13 +72,13 @@ Można skonfigurować progi, w których reguły metryk kodu są wyzwalane przez 
 
 ## <a name="calculate-code-metrics-menu-command"></a>Polecenie Oblicz metryki kodu — menu
 
-Generuj metryki kodu dla jednego lub wszystkich otwartych projektów w środowisku IDE przy użyciu menu **analizuj**  > **Oblicz metryki kodu** .
+Generuj metryki kodu dla jednego lub wszystkich otwartych projektów w środowisku IDE przy użyciu menu **analizuj** > **Oblicz metryki kodu** .
 
 ### <a name="generate-code-metrics-results-for-an-entire-solution"></a>Generuj wyniki metryk kodu dla całego rozwiązania
 
 Można generować wyniki metryk kodu dla całego rozwiązania w dowolny z następujących sposobów:
 
-- Na pasku menu wybierz polecenie **analizuj**  > **Oblicz metryki kodu**  > **dla rozwiązania**.
+- Na pasku menu wybierz polecenie **analizuj** > **Oblicz metryki kodu** > **dla rozwiązania**.
 
 - W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy rozwiązanie, a następnie wybierz polecenie **Oblicz metryki kodu**.
 
@@ -90,7 +90,7 @@ Wyniki są generowane i zostanie wyświetlone okno **wyników metryk kodu** . Ab
 
 1. W **Eksplorator rozwiązań**wybierz co najmniej jeden projekt.
 
-1. Na pasku menu wybierz polecenie **analizuj**  > **Oblicz metryki kodu**  > **dla wybranych projektów**.
+1. Na pasku menu wybierz polecenie **analizuj** > **Oblicz metryki kodu** > **dla wybranych projektów**.
 
 Wyniki są generowane i zostanie wyświetlone okno **wyników metryk kodu** . Aby wyświetlić szczegóły wyników, rozwiń drzewo w **hierarchii**.
 

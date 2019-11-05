@@ -17,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 12f66658cd8069f58355a96b2c3b3031a4cb6808
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 75bdfe55d516deb34872007a9461a286b4d742e0
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73187563"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568919"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Debugowanie kodu HTML i CSS w aplikacjach platformy UWP w programie Visual Studio
 
@@ -49,7 +49,7 @@ DOM Explorer można użyć do:
   Podczas debugowania aplikacji często trzeba wybrać elementy w DOM Explorer. Po wybraniu elementu wartości, które pojawiają się na kartach po prawej stronie DOM Explorer są automatycznie aktualizowane w celu odzwierciedlenia zaznaczonego elementu w DOM Explorer. Oto karty: **Style**, **obliczone**, **Układ**. Aplikacje platformy UWP obsługują również karty **zdarzenia** i **zmiany** . Aby uzyskać więcej informacji na temat wybierania elementów, zobacz [Wybieranie elementów](#SelectingElements).
 
 > [!TIP]
-> Jeśli okno DOM Explorer jest zamknięte, wybierz **debuguj** >**Windows**  > **dom Explorer** , aby go ponownie otworzyć. Okno pojawia się tylko podczas sesji debugowania skryptu.
+> Jeśli okno DOM Explorer jest zamknięte, wybierz **debuguj**>**Windows** > **dom Explorer** , aby go ponownie otworzyć. Okno pojawia się tylko podczas sesji debugowania skryptu.
 
 W poniższej procedurze przejdziemy do interaktywnego debugowania aplikacji przy użyciu DOM Explorer. Utworzymy aplikację, która używa kontrolki `FlipView`, a następnie ją debuguje. Aplikacja zawiera kilka błędów.
 
@@ -58,9 +58,9 @@ W poniższej procedurze przejdziemy do interaktywnego debugowania aplikacji przy
 
 #### <a name="to-debug-by-inspecting-the-live-dom"></a>Aby debugować za pomocą inspekcji na żywo modelu DOM
 
-1. Utwórz nowe rozwiązanie w programie Visual Studio, wybierając kolejno pozycje **plik**  > **Nowy projekt**.
+1. Utwórz nowe rozwiązanie w programie Visual Studio, wybierając kolejno pozycje **plik** > **Nowy projekt**.
 
-2. Wybierz pozycję **JavaScript**  > **uniwersalnym systemu Windows**, a następnie wybierz pozycję **aplikacja WinJS**.
+2. Wybierz pozycję **JavaScript** > **uniwersalnym systemu Windows**, a następnie wybierz pozycję **aplikacja WinJS**.
 
 3. Wpisz nazwę projektu, na przykład `FlipViewApp`, a następnie wybierz **przycisk OK** , aby utworzyć aplikację.
 
@@ -149,7 +149,7 @@ W poniższej procedurze przejdziemy do interaktywnego debugowania aplikacji przy
 
     ![Wybierz listę obiektów docelowych debugowania](../debugger/media/js_select_target.png "JS_Select_Target")
 
-8. Wybierz **debuguj**  > **Rozpocznij debugowanie**lub naciśnij klawisz F5, aby uruchomić aplikację w trybie debugowania.
+8. Wybierz **debuguj** > **Rozpocznij debugowanie**lub naciśnij klawisz F5, aby uruchomić aplikację w trybie debugowania.
 
     Spowoduje to uruchomienie aplikacji, ale widzisz na większości pusty ekran, ponieważ styl zawiera kilka błędów. Pierwszy `FlipView` obraz pojawia się w małym kwadracie obok środka ekranu.
 
@@ -182,7 +182,7 @@ W poniższej procedurze przejdziemy do interaktywnego debugowania aplikacji przy
 14. W oknie głównym kliknij dwukrotnie `width: 100px;height: 100px;`, naciśnij klawisz **delete** , a następnie naciśnij klawisz **Enter**. Po naciśnięciu klawisza ENTER nowe wartości zostaną natychmiast odzwierciedlone w aplikacji, mimo że sesja debugowania nie została zatrzymana.
 
     > [!IMPORTANT]
-    > Jak można aktualizować atrybuty w oknie DOM Explorer, można także aktualizować wartości, które są wyświetlane na kartach **Style**, **obliczone**i **Układ** . Aby uzyskać więcej informacji, zobacz [debugowanie stylów CSS przy użyciu dom Explorer](../debugger/debug-css-styles-using-dom-explorer.md) i [układu debugowania przy użyciu dom Explorer](quickstart-debug-html-and-css.md).
+    > Jak można aktualizować atrybuty w oknie DOM Explorer, można także aktualizować wartości, które są wyświetlane na kartach **Style**, **obliczone**i **Układ** .
 
 15. Przejdź do aplikacji, wybierając ją lub używając kombinacji klawiszy Alt + Tab.
 
@@ -255,6 +255,7 @@ W przypadku debugowania aplikacji można wybrać elementy DOM na trzy sposoby:
 > Wyróżnianie elementów przez umieszczenie ich nad nimi jest tylko częściowo obsługiwane w emulatorze Windows Phone.
 
 ## <a name="see-also"></a>Zobacz także
+
 - [Debugowanie aplikacji w programie Visual Studio](debugging-windows-store-and-windows-universal-apps.md)
 - [Odświeżanie aplikacji (JavaScript)](../debugger/refresh-an-app-javascript.md)
 - [Debugowanie kontrolki WebView](../debugger/debug-a-webview-control.md)
