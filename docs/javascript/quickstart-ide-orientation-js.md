@@ -8,26 +8,26 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 677dddbde5e90117dc19acfaf54a941c304ae7f1
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 713e7319618b42e2cdc4b8c0951bd79c225ac1b6
+ms.sourcegitcommit: f9f389e72787de30eb869a55ef7725a10a4011f0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180056"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73636583"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>Pierwsze spojrzenie na środowisko IDE programu Visual Studio
 
-W ramach tego wprowadzenia do programu Visual Studio zintegrowane środowisko programistyczne (IDE) 5 – 10 minut przeniesiemy się części okna, menu i inne funkcje interfejsu użytkownika.
+W tym 5-10 minutowym wprowadzeniu do zintegrowanego środowiska programistycznego (IDE) programu Visual Studio zajmiemy się tworzeniem niektórych okien, menu i innych funkcji interfejsu użytkownika.
 
 ::: moniker range="vs-2017"
 
-Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) strony, aby zainstalować go za darmo.
+Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) , aby zainstalować ją bezpłatnie.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads) strony, aby zainstalować go za darmo.
+Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads) , aby zainstalować ją bezpłatnie.
 
 ::: moniker-end
 
@@ -37,11 +37,11 @@ Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [pro
 
 Pierwsze czynności, które zobaczysz po uruchomieniu programu Visual Studio jest oknem startowym. Okno Start zostało zaprojektowane z założeniami, aby ułatwić szybkie rozpoczęcie pracy z kodem. Dostępne są opcje zamykania lub wyewidencjonowywania kodu, otwierania istniejącego projektu lub rozwiązania, tworzenia nowego projektu lub po prostu otwierania folderu zawierającego niektóre pliki kodu.
 
-[![Okno uruchamiania w programie Visual Studio 2019](media/vs-2019/start-window.png)](media/vs-2019/start-window.png)
+[![okna uruchamiania w programie Visual Studio 2019](media/vs-2019/start-window.png)](media/vs-2019/start-window.png)
 
 Jeśli używasz programu Visual Studio po raz pierwszy, lista ostatnio używanych projektów będzie pusta.
 
-Jeśli pracujesz z bazami danych spoza programu MSBuild, użyj opcji **Otwórz folder lokalny** , aby otworzyć swój kod w programie Visual Studio. Aby uzyskać więcej informacji, zobacz [tworzenie kodu w programie Visual Studio bez projektów ani rozwiązań](develop-javascript-code-without-solutions-projects.md). W przeciwnym razie można utworzyć nowy projekt lub sklonować projekt od dostawcy źródłowego, takiego jak GitHub lub Azure DevOps.
+Jeśli pracujesz z bazami danych spoza programu MSBuild, użyj opcji **Otwórz folder lokalny** , aby otworzyć swój kod w programie Visual Studio. Aby uzyskać więcej informacji, zobacz [Programowanie kodu w programie Visual Studio bez projektów i rozwiązań](develop-javascript-code-without-solutions-projects.md). W przeciwnym razie można utworzyć nowy projekt lub sklonować projekt od dostawcy źródłowego, takiego jak GitHub lub Azure DevOps.
 
 Opcja **Kontynuuj bez kodu** po prostu otwiera środowisko programistyczne programu Visual Studio bez żadnego załadowanego projektu lub kodu. Możesz wybrać tę opcję, aby przyłączyć się do sesji [Live Share](/visualstudio/liveshare/) lub dołączyć do procesu debugowania. Możesz również nacisnąć klawisz **ESC** , aby zamknąć okno Start i otworzyć środowisko IDE.
 
@@ -51,25 +51,25 @@ Opcja **Kontynuuj bez kodu** po prostu otwiera środowisko programistyczne progr
 
 ## <a name="start-page"></a>Strona początkowa
 
-Pierwszą rzeczą, zostaną wyświetlone po uruchomieniu programu Visual Studio jest najprawdopodobniej **strona startowa**. **Strona startowa** został zaprojektowany jako "Centrum", aby pomóc Ci znaleźć polecenia i projektu pliki potrzebne Ci szybciej. **Ostatnie** sekcja wyświetla projektów i foldery pracuje ostatnio. W obszarze **nowy projekt**, możesz kliknąć link, aby wyświetlić **nowy projekt** okno dialogowe, lub w obszarze **Otwórz**, możesz otworzyć istniejący projekt kodu lub folderu. Po prawej stronie jest źródło danych z najnowszymi informacjami dla programistów.
+Pierwsze czynności, które zobaczysz po uruchomieniu programu Visual Studio, prawdopodobnie na **stronie początkowej**. **Strona startowa** jest zaprojektowana jako "centrum", aby pomóc w znalezieniu poleceń i plików projektu, które są potrzebne szybciej. W sekcji ostatnie są wyświetlane ostatnio **używane** projekty i foldery. W obszarze **Nowy projekt**można kliknąć link, aby wyświetlić okno dialogowe **Nowy projekt** lub w obszarze **Otwórz**, można otworzyć istniejący projekt lub folder kodu. Po prawej stronie znajduje się źródło najnowszych wiadomości dla deweloperów.
 
 ![Strona początkowa w programie Visual Studio](media/start-page.png)
 
-Jeśli zamkniesz **strona startowa** i chcesz zobaczyć ją ponownie, możesz uruchomić go z **pliku** menu.
+Jeśli zamkniesz **stronę początkową** i chcesz ją ponownie zobaczyć, możesz ją otworzyć z menu **plik** .
 
-![Menu Plik w programie Visual Studio](media/quickstart-IDE-file-menu-large.png)
+![Menu plik w programie Visual Studio](media/quickstart-IDE-file-menu-large.png)
 
 ::: moniker-end
 
 ## <a name="create-a-project"></a>Tworzenie projektu
 
-Aby kontynuować poznawanie funkcji programu Visual Studio, Utwórzmy nowy projekt.
+Aby kontynuować Eksplorowanie funkcji programu Visual Studio, Utwórz nowy projekt.
 
 ::: moniker range=">=vs-2019"
 
 1. W oknie uruchamiania wybierz pozycję **Utwórz nowy projekt**, a następnie w polu wyszukiwania wpisz **kod JavaScript** , aby odfiltrować listę typów projektu do tych, które zawierają ciąg "JavaScript" w nazwie lub w typie języka.
 
-   Program Visual Studio zawiera różne rodzaje szablony projektów, które ułatwiają rozpoczęcie pracy, szybko kodowania. (Alternatywnie, jeśli jesteś deweloperem języka TypeScript, możesz utworzyć projekt w tym języku. Interfejs użytkownika, które firma Microsoft będzie spojrzenie na jest podobny dla wszystkich języków programowania.)
+   Program Visual Studio oferuje różne rodzaje szablonów projektów, które ułatwiają szybkie rozpoczęcie tworzenia kodu. (Alternatywnie, jeśli jesteś deweloperem języka TypeScript, możesz utworzyć projekt w tym języku. Interfejs użytkownika, który sprawdzimy, jest podobny dla wszystkich języków programowania.)
 
    ![Wyszukaj szablony projektów w oknie uruchamiania programu Visual Studio](media/vs-2019/create-new-project.png)
 
@@ -83,81 +83,81 @@ Aby kontynuować poznawanie funkcji programu Visual Studio, Utwórzmy nowy proje
 
 1. Na **stronie Start**w polu wyszukiwania w obszarze **Nowy projekt**wpisz **JavaScript** , aby odfiltrować listę typów projektu do tych, które zawierają ciąg "JavaScript" w nazwie lub w typie języka.
 
-   ![Wyszukaj szablony projektów w programie Visual Studio strony początkowej](media/start-page-search-templates.png)
+   ![Wyszukaj szablony projektów na stronie startowej programu Visual Studio](media/start-page-search-templates.png)
 
-   Program Visual Studio zawiera różne rodzaje szablony projektów, które ułatwiają rozpoczęcie pracy, szybko kodowania. Wybierz pusty szablon projektu **aplikacji sieci Web w języku Node. js** . (Alternatywnie, jeśli jesteś deweloperem języka TypeScript, możesz utworzyć projekt w tym języku. Interfejs użytkownika, które firma Microsoft będzie spojrzenie na jest podobny dla wszystkich języków programowania.)
+   Program Visual Studio oferuje różne rodzaje szablonów projektów, które ułatwiają szybkie rozpoczęcie tworzenia kodu. Wybierz pusty szablon projektu **aplikacji sieci Web w języku Node. js** . (Alternatywnie, jeśli jesteś deweloperem języka TypeScript, możesz utworzyć projekt w tym języku. Interfejs użytkownika, który sprawdzimy, jest podobny dla wszystkich języków programowania.)
 
-1. W **nowy projekt** okno dialogowe, które zostanie wyświetlone, zaakceptuj domyślną nazwę projektu i wybierz polecenie **OK**.
+1. W wyświetlonym oknie dialogowym **Nowy projekt** zaakceptuj domyślną nazwę projektu i wybierz **przycisk OK**.
 ::: moniker-end
 
-   Projekt zostanie utworzony, a plik o nazwie *Server.cs* zostanie otwarty w oknie **edytora** . **Edytora** pokazuje zawartość plików, a to, gdzie wykonasz większość swojej pracy kodowania w programie Visual Studio.
+   Projekt zostanie utworzony, a plik o nazwie *Server. js* zostanie otwarty w oknie **edytora** . **Edytor** pokazuje zawartość plików i polega na tym, że większość pracy z kodowaniem będzie w programie Visual Studio.
 
-   ![Edytor programu Visual Studio](media/editor.png)
+   ![Edytor w programie Visual Studio](media/editor.png)
 
 ## <a name="solution-explorer"></a>Eksplorator rozwiązań
 
-**Eksplorator rozwiązań**, który jest zazwyczaj po prawej stronie programu Visual Studio, dowiesz się, graficzną reprezentację hierarchii plików i folderów w projekcie, rozwiązania lub katalogu z kodem. Możesz przeglądać hierarchii i przejdź do pliku w **Eksploratora rozwiązań**.
+**Eksplorator rozwiązań**, która zwykle znajduje się po prawej stronie programu Visual Studio, pokazuje graficzną reprezentację hierarchii plików i folderów w projekcie, rozwiązaniu lub folderze kodu. Możesz przeglądać hierarchię i przejść do pliku w **Eksplorator rozwiązań**.
 
 ![Eksplorator rozwiązań w programie Visual Studio](media/quickstart-IDE-solution-explorer.png)
 
 ## <a name="menus"></a>Menu
 
-Na pasku menu, wzdłuż górnej części programu Visual Studio grupy poleceń na kategorie. Na przykład **projektu** menu zawiera polecenia związane z projektem, w której pracujesz. Na **narzędzia** menu, można dostosować sposób działania programu Visual Studio, wybierając **opcje**, lub Dodaj funkcje do instalacji, wybierając **Pobierz narzędzia i funkcje**.
+Pasek menu wzdłuż górnej części poleceń programu Visual Studio grupuje do kategorii. Na przykład menu **projekt** zawiera polecenia związane z projektem, w którym pracujesz. W menu **Narzędzia** można dostosować sposób działania programu Visual Studio, wybierając **Opcje**lub dodając funkcje do instalacji, wybierając pozycję **Pobierz narzędzia i funkcje**.
 
 ![Pasek menu w programie Visual Studio](media/quickstart-IDE-menu-bar.png)
 
-Teraz Otwórz **lista błędów** okna, wybierając **widoku** menu, a następnie **lista błędów**.
+Otwórzmy okno **Lista błędów** , wybierając menu **Widok** , a następnie **Lista błędów**.
 
 ## <a name="error-list"></a>Lista błędów
 
-**Lista błędów** dowiesz się błędy, ostrzeżenia i komunikaty dotyczące bieżącego stanu w kodzie. Jeśli występują błędy (np. Brak nawiasu klamrowego lub średnika) w pliku lub dowolnego miejsca w projekcie, są one wymienione w tym miejscu.
+W **Lista błędów** przedstawiono błędy, ostrzeżenia i komunikaty dotyczące bieżącego stanu kodu. Jeśli w pliku występują błędy (takie jak brakujące nawiasy klamrowe lub średnik) lub gdziekolwiek w projekcie, są one wyświetlane w tym miejscu.
 
 ![Lista błędów w programie Visual Studio](media/quickstart-IDE-error-list.png)
 
 ## <a name="output-window"></a>Okno wyniku
 
-**Dane wyjściowe** Pokazuje okno danych wyjściowych wiadomości z kompilowania projektu i Twój dostawca kontroli źródła.
+W oknie **dane wyjściowe** są wyświetlane komunikaty wyjściowe z kompilowania projektu i od dostawcy kontroli źródła.
 
-Utwórzmy projekt, aby wyświetlić niektóre dane wyjściowe kompilacji. Z **kompilacji** menu, wybierz **Kompiluj rozwiązanie**. **Dane wyjściowe** okno uzyskuje fokus i automatycznie wyświetli komunikat pomyślnej kompilacji.
+Skompilujmy projekt, aby zobaczyć dane wyjściowe kompilacji. Z menu **kompilacja** wybierz polecenie **Kompiluj rozwiązanie**. Okno **dane wyjściowe** automatycznie uzyskuje fokus i wyświetla udany komunikat kompilacji.
 
 ![Okno danych wyjściowych w programie Visual Studio](media/build-output-minimal.png)
 
 ## <a name="search-box"></a>Pole wyszukiwania
 
-Pole wyszukiwania jest szybkim i łatwym sposobem wykonywania całkiem wielu elementów w programie Visual Studio. Można wprowadzić tekst powiązany co chcesz zrobić, a jego pokazano listę opcji, które odnoszą się do tekstu. Na przykład Wyobraź sobie, że chcesz zwiększyć szczegółowość dane wyjściowe kompilacji, aby wyświetlić dodatkowe informacje o tym, co dokładnie kompilacji robi. Poniżej przedstawiono, jak może to zrobić:
+Pole wyszukiwania jest szybkim i łatwym sposobem wykonywania całkiem wielu elementów w programie Visual Studio. Możesz wprowadzić tekst związany z tym, co chcesz zrobić, i wyświetlić listę opcji, które odnoszą się do tekstu. Załóżmy na przykład, że chcesz zwiększyć szczegółowość danych wyjściowych kompilacji, aby wyświetlić dodatkowe szczegóły dotyczące tego, co dokładnie kompiluje. Oto jak to zrobić:
 
-1. Wpisz **szczegółowość** w polu wyszukiwania. Z wyświetlane wyniki, wybierz **projekty i rozwiązania--> Kompilowanie i uruchamianie** w obszarze **opcje** kategorii.
+1. Wpisz **szczegółowość** w polu wyszukiwania. Z wyświetlanych wyników wybierz **projekty i rozwiązania — > kompilacja i uruchomienie** w kategorii **Opcje** .
 
    ![Pole wyszukiwania w programie Visual Studio](media/quickstart-IDE-quick-launch.png)
 
-   **Opcje** zostanie wyświetlone okno dialogowe **kompilowanie i uruchamianie** Strona opcji.
+   Okno dialogowe **Opcje** zostanie otwarte na stronie opcje **kompilacji i uruchomienia** .
 
-1. W obszarze **poziom szczegółowości danych wyjściowych kompilacji projektu programu MSBuild**, wybierz **normalny**, a następnie kliknij przycisk **OK**.
+1. W obszarze **dane wyjściowe kompilacji projektu MSBuild**, wybierz pozycję **normalny**, a następnie kliknij przycisk **OK**.
 
 1. Ponownie skompiluj projekt, klikając prawym przyciskiem myszy projekt **NodejsWebApp1** w **Eksplorator rozwiązań** i wybierając polecenie **Kompiluj ponownie** z menu kontekstowego.
 
-   Tym razem **dane wyjściowe** okno pokazuje pełniejsze rejestrowanie z procesu kompilacji, w tym pliki, które zostały skopiowane where.
+   Tym razem okno **dane wyjściowe** Wyświetla więcej informacji o pełnym rejestrowaniu z procesu kompilacji, w tym pliki, które zostały skopiowane.
 
-   ![Dane wyjściowe kompilacji pełne w programie Visual Studio](media/build-output-verbose.png)
+   ![Pełne dane wyjściowe kompilacji w programie Visual Studio](media/build-output-verbose.png)
 
-## <a name="send-feedback-menu"></a>Wyślij opinię menu
+## <a name="send-feedback-menu"></a>Menu Wyślij opinię
 
 Jeśli podczas korzystania z programu Visual Studio wystąpią jakiekolwiek problemy lub jeśli masz sugestie dotyczące ulepszania produktu, możesz użyć menu **Wyślij opinię** w górnej części okna programu Visual Studio.
 
-![Wyślij opinię menu w programie Visual Studio](../ide/media/quickstart-ide-send-feedback.png)
+![Menu Wyślij opinię w programie Visual Studio](../ide/media/quickstart-ide-send-feedback.png)
 
 ## <a name="next-steps"></a>Następne kroki
 
-Opisaliśmy kilka funkcji programu Visual Studio, aby korzystały z interfejsem użytkownika. Aby dokładniej:
+Oglądamy zaledwie kilka funkcji programu Visual Studio, aby zapoznać się z interfejsem użytkownika. Aby dowiedzieć się więcej:
 
 > [!div class="nextstepaction"]
-> [Dowiedz się więcej o Edytorze kodu](write-and-edit-code.md)
+> [Dowiedz się więcej o edytorze kodu](write-and-edit-code.md)
 
 > [!div class="nextstepaction"]
-> [Dowiedz się więcej o projekty i rozwiązania](../get-started/tutorial-projects-solutions.md)
+> [Informacje o projektach i rozwiązaniach](../get-started/tutorial-projects-solutions.md)
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Omówienie środowiska IDE programu Visual Studio](../get-started/visual-studio-ide.md)
+- [Przegląd środowiska IDE programu Visual Studio](../get-started/visual-studio-ide.md)
 - [Więcej funkcji programu Visual Studio 2017](../ide/advanced-feature-overview.md)
-- [Zmienianie motywu i kolory czcionek](../ide/quickstart-personalize-the-ide.md)
+- [Zmień kolory motywu i czcionki](../ide/quickstart-personalize-the-ide.md)

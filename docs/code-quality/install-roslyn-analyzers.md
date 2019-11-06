@@ -11,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b204d6824f06037341420d27083c120e6e4b2a95
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9013d7be60a8091f7ce4fc4fe92fa4acaef43720
+ms.sourcegitcommit: f9f389e72787de30eb869a55ef7725a10a4011f0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649300"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73636536"
 ---
 # <a name="install-net-compiler-platform-code-analyzers"></a>Zainstaluj .NET Compiler Platform analizatorów kodu
 
@@ -26,7 +26,7 @@ Program Visual Studio zawiera podstawowe zestawy .NET Compiler Platform (*Roslyn
 
 1. Znajdź pakiet analizatora, który chcesz zainstalować w systemie www.nuget.org.
 
-   Na przykład może być konieczne [zainstalowanie analizatorów FxCop firmy Microsoft](install-fxcop-analyzers.md#nuget-package) w celu sprawdzenia kodu pod kątem problemów z zabezpieczeniami i wydajnością, między innymi. Lub zainstaluj [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/) , aby wyszukać problemy z stylem w bazie kodu.
+   Na przykład może być konieczne [zainstalowanie analizatorów FxCop firmy Microsoft](install-fxcop-analyzers.md#nuget-package) w celu sprawdzenia kodu pod kątem problemów z zabezpieczeniami i wydajnością, między innymi. Lub zainstaluj [StyleCop. analizatory](https://www.nuget.org/packages/stylecop.analyzers/) , aby wyszukać problemy z stylem w bazie kodu.
 
 2. Zainstaluj pakiet w programie Visual Studio przy użyciu [konsoli Menedżera pakietów](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console) lub [interfejsu użytkownika Menedżera pakietów](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console).
 

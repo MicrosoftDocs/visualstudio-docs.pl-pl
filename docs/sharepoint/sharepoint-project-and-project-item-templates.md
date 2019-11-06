@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 825e985820ac7a4d72bf321133491e312adb0a0e
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 762fce80ad1e97f700af0768cdb68251a3ee8017
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981949"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661862"
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>Projekty programu SharePoint i szablony elementów projektu
   W poniższych sekcjach opisano dostępne projekty programu SharePoint i szablony elementów projektu oraz sposób ich użycia.
@@ -132,7 +132,7 @@ ms.locfileid: "72981949"
  *Przepływ pracy automatu Stanów* to zestaw Stanów, przejść i akcji logiki biznesowej. Kroki w przepływie pracy automatu stanów nie są wykonywane w kolejności; Zamiast tego są one wyzwalane przez akcje i Stany. Przepływy pracy automatu Stanów są skojarzone z elementami programu SharePoint, takimi jak listy i dokumenty, podobnie jak sekwencyjny przepływ pracy. Po ponownym uruchomieniu można tworzyć przepływy pracy na poziomie witryny (globalnym) lub na poziomie listy (lokalne). Możesz również wybrać, czy przepływ pracy jest uruchamiany automatycznie, czy ręcznie. Tego elementu projektu można używać tylko w rozwiązaniach farmy. Ten element projektu można dodać tylko do rozwiązań farmy. Aby uzyskać więcej informacji, zobacz [Tworzenie rozwiązań przepływu pracy programu SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md), [przepływów pracy w programie SharePoint Server 2010](/previous-versions/office/developer/sharepoint-2010/ms549489(v=office.14))i [nowości: usprawnienia przepływu pracy](/previous-versions/office/developer/sharepoint-2010/ee537015(v=office.14)).
 
 ### <a name="user-control-farm-solution-only"></a>Kontrolka użytkownika (tylko rozwiązanie farmy)
- *Kontrolka użytkownika* to niestandardowa kontrolka wielokrotnego użytku, do której można dodać inne kontrolki ASP.NET i kontrolki programu SharePoint. Kontrolkę użytkownika można dodać do stron aplikacji i składników Web Part, które są uruchamiane w programie SharePoint. Tego elementu projektu można używać tylko w rozwiązaniach farmy. Ten element projektu można dodać tylko do rozwiązań farmy. Aby uzyskać więcej informacji, zobacz [Tworzenie kontrolek wielokrotnego użytku dla składniki Web Part lub stron aplikacji](/visualstudio/sharepoint/creating-reusable-controls-for-web-parts-or-application-pages&view=vs-2019).
+ *Kontrolka użytkownika* to niestandardowa kontrolka wielokrotnego użytku, do której można dodać inne kontrolki ASP.NET i kontrolki programu SharePoint. Kontrolkę użytkownika można dodać do stron aplikacji i składników Web Part, które są uruchamiane w programie SharePoint. Tego elementu projektu można używać tylko w rozwiązaniach farmy. Ten element projektu można dodać tylko do rozwiązań farmy. Aby uzyskać więcej informacji, zobacz [Tworzenie kontrolek wielokrotnego użytku dla składniki Web Part lub stron aplikacji](/visualstudio/sharepoint/creating-reusable-controls-for-web-parts-or-application-pages).
 
 ### <a name="visual-web-part"></a>Wizualny składnik Web Part
  Element projektu *wizualnego składnika Web Part* zawiera plik definicji *elementów. XML* , element **części sieci Web** i element **kontrolki użytkownika** . Wygląd wizualnego składnika Web Part można zaprojektować, przeciągając lub kopiując kontrolki z przybornika programu Visual Studio na powierzchnię kontrolki użytkownika. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie składnika Web Part programu SharePoint przy użyciu projektanta](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md) i [bloku konstrukcyjnego: składniki Web Part](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14)).

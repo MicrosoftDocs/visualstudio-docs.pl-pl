@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 29ede9dd29952e87e7f1dd76875905973bada6a6
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: cf81dea230c2cfc33eb19ca001d8c9ed06b0489c
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986092"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661845"
 ---
 # <a name="excel-object-model-overview"></a>Model obiektów programu Excel — Omówienie
   Do tworzenia rozwiązań, które korzystają z programu Microsoft Office Excel, można korzystać z obiektów dostarczonych przez model obiektów programu Excel. W tym temacie przedstawiono najważniejsze obiekty:
@@ -103,7 +103,7 @@ ms.locfileid: "72986092"
  Aby uzyskać pełne informacje na temat modelu obiektów programu Excel, można odwołać się do odwołania do podstawowego zestawu międzyoperacyjnego (PIA) programu Excel i odwołania do modelu obiektów VBA.
 
 ### <a name="primary-interop-assembly-reference"></a>Odwołanie do podstawowego zestawu międzyoperacyjnego
- Dokumentacja zestawu PIA programu Excel zawiera opis typów w podstawowym zestawie międzyoperacyjnym dla programu Excel. Ta dokumentacja jest dostępna w następującej lokalizacji: [odwołanie do podstawowego zestawu międzyoperacyjnego programu Excel 2010](/visualstudio/vsto/office-primary-interop-assemblies&view=vs-2019).
+ Dokumentacja zestawu PIA programu Excel zawiera opis typów w podstawowym zestawie międzyoperacyjnym dla programu Excel. Ta dokumentacja jest dostępna w następującej lokalizacji: [odwołanie do podstawowego zestawu międzyoperacyjnego programu Excel 2010](/visualstudio/vsto/office-primary-interop-assemblies).
 
  Aby uzyskać więcej informacji o projektowaniu PIA programu Excel, takich jak różnice między klasami i interfejsami w PIAu i sposobie implementacji zdarzeń w PIA, zobacz [Omówienie klas i interfejsów w podstawowych zestawach międzyoperacyjnych pakietu Office](/previous-versions/office/office-12/ms247299(v=office.12)).
 

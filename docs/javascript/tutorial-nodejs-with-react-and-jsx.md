@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: c5f3c4a0a2acdf73aae96c5cb5629252e712da64
-ms.sourcegitcommit: ee9c55616a22addc89cf1cf1942bf371d73e2e11
+ms.openlocfilehash: 2f14a5f2255f7ba1b077ead60147a6df407970fc
+ms.sourcegitcommit: f9f389e72787de30eb869a55ef7725a10a4011f0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73618124"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73636556"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Samouczek: Tworzenie aplikacji node. js i reagowanie w programie Visual Studio
 
@@ -386,6 +386,8 @@ Począwszy od programu Visual Studio 2019, wymagany jest skrypt kompilacji. Zami
 
 W poprzedniej sekcji został dołączony debuger do kodu Node. js po stronie serwera. Aby dołączyć debuger z programu Visual Studio i trafiać punkty przerwania w kodzie reakcji po stronie klienta, debuger musi pomóc w zidentyfikowaniu prawidłowego procesu. Aby to umożliwić, należy wykonać jedną z tych metod.
 
+### <a name="prepare-the-browser-for-debugging"></a>Przygotowanie przeglądarki do debugowania
+
 ::: moniker range=">=vs-2019"
 W tym scenariuszu należy użyć przeglądarki Microsoft Edge (chrom), obecnie o nazwie **Microsoft Edge beta** w środowisku IDE lub w przeglądarce Chrome.
 ::: moniker-end
@@ -398,30 +400,38 @@ W tym scenariuszu należy użyć programu Chrome.
    Inne wystąpienia przeglądarki mogą uniemożliwiać otwarcie przeglądarki z włączonym debugowaniem. (Mogą być uruchomione rozszerzenia przeglądarki i uniemożliwiać tryb pełnego debugowania, więc może być konieczne otwarcie Menedżera zadań w celu znalezienia nieoczekiwanych wystąpień programu Chrome).
 
    ::: moniker range=">=vs-2019"
-   Dla przeglądarki Microsoft Edge (chrom) Zamknij również wszystkie wystąpienia programu Chrome. Ponieważ obie przeglądarki korzystają z bazy kodu chromu, daje to najlepsze wyniki.
+   Dla przeglądarki Microsoft Edge (chrom) Zamknij również wszystkie wystąpienia programu Chrome. Ponieważ obie przeglądarki używają bazy kodu chromu, daje to najlepsze wyniki.
    ::: moniker-end
 
-2. Otwórz polecenie **Uruchom** z przycisku **Start** systemu Windows (kliknij prawym przyciskiem myszy i wybierz polecenie **Uruchom**), a następnie wprowadź następujące polecenie:
+2. Uruchom przeglądarkę z włączonym debugowaniem.
+
+    ::: moniker range=">=vs-2019"
+    Począwszy od programu Visual Studio 2019, można ustawić flagę `--remote-debugging-port=9222` podczas uruchamiania przeglądarki, wybierając pozycję **Przeglądaj za pomocą..** . > na pasku narzędzi **debugowania** , a następnie wybierając pozycję **Dodaj**, a następnie ustawiając flagę w polu **argumenty** . Użyj innej przyjaznej nazwy dla przeglądarki, takiej jak **Edge z debugowaniem** lub **Chrome z debugowaniem**. Aby uzyskać szczegółowe informacje, zobacz [Informacje o wersji](/visualstudio/releases/2019/release-notes-v16.2).
+
+    ![Ustawianie otwarcia przeglądarki z włączonym debugowaniem](../javascript/media/tutorial-nodejs-react-edge-with-debugging.png)
+
+    Alternatywnie Otwórz polecenie **Uruchom** z przycisku **Start** systemu Windows (kliknij prawym przyciskiem myszy i wybierz polecenie **Uruchom**), a następnie wprowadź następujące polecenie:
+
+    `msedge --remote-debugging-port=9222`
+
+    Oraz
 
     `chrome.exe --remote-debugging-port=9222`
-    ::: moniker range=">=vs-2019"
-    lub `msedge --remote-debugging-port=9222`
+    ::: moniker-end
+
+    ::: moniker range="vs-2017"
+    Otwórz polecenie **Uruchom** z przycisku **Start** systemu Windows (kliknij prawym przyciskiem myszy i wybierz polecenie **Uruchom**), a następnie wprowadź następujące polecenie:
+
+    `chrome.exe --remote-debugging-port=9222`
     ::: moniker-end
 
     Spowoduje to uruchomienie przeglądarki z włączonym debugowaniem.
 
-    ::: moniker range=">=vs-2019"
-
-    > [!TIP]
-    > Począwszy od programu Visual Studio 2019, można ustawić flagę `--remote-debugging-port` podczas uruchamiania przeglądarki, wybierając pozycję **Przeglądaj za pomocą..** . > na pasku narzędzi **debugowania** , a następnie wybierając pozycję **Dodaj**, a następnie ustawiając flagę w polu **argumenty** . Użyj innej przyjaznej nazwy dla przeglądarki, takiej jak **Edge z debugowaniem** lub **Chrome z debugowaniem**. Aby uzyskać szczegółowe informacje, zobacz [Informacje o wersji](/visualstudio/releases/2019/release-notes-v16.2).
-
-    ![Ustawianie otwarcia przeglądarki z włączonym debugowaniem](../javascript/media/tutorial-nodejs-react-edge-with-debugging.png)
-
-    ::: moniker-end
-
     Aplikacja nie jest jeszcze uruchomiona, dlatego możesz uzyskać pustą stronę przeglądarki.
 
-3. Przejdź do programu Visual Studio, a następnie ustaw punkt przerwania w kodzie źródłowym, *App-Bundle. js* lub *App. TSX*.
+### <a name="attach-the-debugger-to-client-side-script"></a>Dołącz debuger do skryptu po stronie klienta
+
+1. Przejdź do programu Visual Studio, a następnie ustaw punkt przerwania w kodzie źródłowym, *App-Bundle. js* lub *App. TSX*.
 
     W przypadku *App-Bundle. js*Ustaw punkt przerwania w funkcji `render()`, jak pokazano na poniższej ilustracji:
 
@@ -433,7 +443,7 @@ W tym scenariuszu należy użyć programu Chrome.
 
     ![Ustawianie punktu przerwania](../javascript/media/tutorial-nodejs-react-set-breakpoint-in-tsx-file.png)
 
-4. Jeśli ustawiasz punkt przerwania w pliku *TSX* (a nie *App-Bundle. js*), musisz zaktualizować *WebPack-config. js*. Zastąp następujący kod:
+2. Jeśli ustawiasz punkt przerwania w pliku *TSX* (a nie *App-Bundle. js*), musisz zaktualizować *WebPack-config. js*. Zastąp następujący kod:
 
     ```javascript
     output: {
@@ -450,24 +460,31 @@ W tym scenariuszu należy użyć programu Chrome.
     },
     ```
 
-    Jest to ustawienie tylko do programowania, aby włączyć debugowanie w programie Visual Studio. To ustawienie umożliwia przesłonięcie wygenerowanych odwołań w pliku mapy źródła, *App-Bundle. js. map*podczas kompilowania aplikacji. Domyślnie odwołania do pakietu WebPack w pliku mapy źródła zawierają prefiks *WebPack:///* , który uniemożliwia programowi Visual Studio znalezienie pliku źródłowego, *App. TSX*. W przypadku wprowadzenia tej zmiany odwołanie do pliku źródłowego, *App. TSX*można zmienić z *WebPack:///./app.TSX* na *./app.TSX*, co umożliwia debugowanie.
+    Jest to ustawienie tylko do programowania, aby włączyć debugowanie w programie Visual Studio. To ustawienie umożliwia przesłonięcie wygenerowanych odwołań w pliku mapy źródłowej ( *App-Bundle. js. map*) podczas kompilowania aplikacji. Domyślnie odwołania do pakietu WebPack w pliku mapy źródłowej zawierają prefiks *WebPack:///* , który uniemożliwia programowi Visual Studio znalezienie pliku źródłowego, *App. TSX*. W przypadku wprowadzenia tej zmiany odwołanie do pliku źródłowego, *App. TSX*można zmienić z *WebPack:///./app.TSX* na *./app.TSX*, co umożliwia debugowanie.
 
-5. Wybierz docelową przeglądarkę jako element docelowy debugowania w programie Visual Studio, a następnie naciśnij klawisz **Ctrl**+**F5** (**Debuguj** > **Rozpocznij bez debugowania**), aby uruchomić aplikację w przeglądarce.
+3. Wybierz docelową przeglądarkę jako element docelowy debugowania w programie Visual Studio, a następnie naciśnij klawisz **Ctrl**+**F5** (**Debuguj** > **Rozpocznij bez debugowania**), aby uruchomić aplikację w przeglądarce.
+
+    ::: moniker range=">=vs-2019"
+    Jeśli utworzono konfigurację przeglądarki z przyjazną nazwą, wybierz ją jako element docelowy debugowania.
+    ::: moniker-end
 
     Aplikacja zostanie otwarta na nowej karcie przeglądarki.
 
-6. Wybierz  >  debugowania**dołączanie do procesu**.
+4. Wybierz  >  debugowania**dołączanie do procesu**.
 
-7. W oknie dialogowym **Dołącz do procesu** Pobierz przefiltrowaną listę wystąpień przeglądarki, do których można dołączać.
+    > [!TIP]
+    > Począwszy od programu Visual Studio 2017, po dołączeniu do procesu po raz pierwszy, wykonując poniższe kroki, można szybko ponownie dołączyć do tego samego procesu, wybierając **debuguj** > **ponownie dołączyć do procesu**.
+
+5. W oknie dialogowym **Dołącz do procesu** Pobierz przefiltrowaną listę wystąpień przeglądarki, do których można dołączać.
 
     ::: moniker range=">=vs-2019"
-    W programie Visual Studio 2019 wybierz odpowiednią przeglądarkę docelową, **JavaScript (Chrome)** lub **JavaScript (Microsoft Edge-chrom)** w polu **Dołącz do** wpisz **Chrome** lub **Edge** w polu Filtr, aby odfiltrować wyniki wyszukiwania. Jeśli utworzono konfigurację przeglądarki z przyjazną nazwą, wybierz tę opcję.
+    W programie Visual Studio 2019 wybierz poprawny debuger dla docelowej przeglądarki, **JavaScript (Chrome)** lub **JavaScript (Microsoft Edge-chrom)** w polu **Dołącz do** wpisz **Chrome** lub **Edge** w polu Filtr, aby odfiltrować Wyniki wyszukiwania.
     ::: moniker-end
     ::: moniker range="vs-2017"
     W programie Visual Studio 2017 wybierz pozycję **kod WebKit** w polu **Dołącz do** , wpisz **Chrome** w polu Filtr, aby odfiltrować wyniki wyszukiwania.
     ::: moniker-end
 
-8. Wybierz proces przeglądarki z właściwym portem hosta (localhost w tym przykładzie) i wybierz pozycję **Dołącz**.
+6. Wybierz proces przeglądarki z właściwym portem hosta (localhost w tym przykładzie) i wybierz pozycję **Dołącz**.
 
     Port (1337) może również pojawić się w polu **title** , aby ułatwić wybranie prawidłowego wystąpienia przeglądarki.
 
@@ -485,9 +502,9 @@ W tym scenariuszu należy użyć programu Chrome.
     > [!TIP]
     > Jeśli debuger nie zostanie dołączony i zostanie wyświetlony komunikat "nie można dołączyć do procesu. Operacja nie jest dozwolona w bieżącym stanie ". przed uruchomieniem przeglądarki w trybie debugowania należy zamknąć wszystkie wystąpienia przeglądarki docelowej za pomocą Menedżera zadań. Mogą działać rozszerzenia przeglądarki i uniemożliwiać tryb pełnego debugowania.
 
-9. Ponieważ kod z punktem przerwania został już wykonany, Odśwież stronę przeglądarki, aby trafić punkt przerwania.
+7. Ponieważ kod z punktem przerwania został już wykonany, Odśwież stronę przeglądarki, aby trafić punkt przerwania.
 
-    W debugerze można przeanalizować stan aplikacji, umieszczając kursor nad zmiennymi i korzystając z okien debugera. Debuger można uzyskać, przechodząc przez kod (**F5**, **F10**i **F11**).
+    W debugerze można przeanalizować stan aplikacji, umieszczając kursor nad zmiennymi i korzystając z okien debugera. Debuger można uzyskać, przechodząc przez kod (**F5**, **F10**i **F11**). Aby uzyskać więcej informacji na temat podstawowych funkcji debugowania, zobacz [pierwsze spojrzenie na debuger](../debugger/debugger-feature-tour.md).
 
     Punkt przerwania można napotkać w *App-Bundle. js* lub w mapowanej lokalizacji w *aplikacji App. TSX*, w zależności od tego, jakie kroki zostały wcześniej wykonane, wraz ze stanem środowiska i przeglądarki. W obu przypadkach możesz przejść przez kod i przeanalizować zmienne.
 
@@ -495,14 +512,11 @@ W tym scenariuszu należy użyć programu Chrome.
 
       * Zamknięto wszystkie wystąpienia przeglądarki, w tym rozszerzenia programu Chrome (przy użyciu Menedżera zadań), dzięki czemu można uruchomić przeglądarkę w trybie debugowania. Upewnij się, że przeglądarka została uruchomiona w trybie debugowania.
 
-      * Upewnij się, że plik mapy źródła zawiera odwołanie do *./app.TSX* , a nie *WebPack:///./app.TSX*, co uniemożliwia debugerowi programu Visual Studio lokalizowanie *aplikacji. TSX*.
+      * Upewnij się, że plik mapy źródłowej zawiera odwołanie do *./app.TSX* , a nie *WebPack:///./app.TSX*, co uniemożliwia debugerowi programu Visual Studio lokalizowanie *aplikacji App. TSX*.
 
        Alternatywnie, jeśli trzeba podzielić na kod w *aplikacji App. TSX* i nie można tego zrobić, spróbuj użyć instrukcji `debugger;` w *App. TSX*lub ustawić punkty przerwania w narzędzia deweloperskie (lub F12 Tools for Microsoft Edge).
 
-   * Jeśli musisz przerwać wykonywanie kodu w *App-Bundle. js* i nie można tego zrobić, usuń plik mapy źródła *App-Bundle. js. map*.
-
-     > [!TIP]
-     > Po dołączeniu do procesu po raz pierwszy, wykonując poniższe kroki, można szybko ponownie dołączyć do tego samego procesu w programie Visual Studio 2017, wybierając pozycję **debuguj**  > **ponownie dołączyć do procesu**.
+   * Jeśli konieczne jest zabicie do kodu w *App-Bundle. js* i nie można tego zrobić, usuń plik mapy źródłowej *App-Bundle. js. map*.
 
 ## <a name="next-steps"></a>Następne kroki
 

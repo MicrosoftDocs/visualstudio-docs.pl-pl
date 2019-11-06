@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 263759cc463bf21afa20877db320b4c83f1dc761
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: b7d68a23ffba12e9654ac047629bd64ecfae4bb6
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73187525"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661907"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>Uruchamianie aplikacji platformy UWP w symulatorze
 
@@ -88,7 +88,7 @@ Przycisk **Obróć emulacji dotykowej** ustawia tryb interakcji, aby obracał ge
  Orientację urządzenia można zmienić między pionową i poziomą, obracając symulatora o 90 stopni w dowolnym kierunku.
 
 > [!NOTE]
-> Symulator nie szanuje właściwości [DisplayProperties. AutoRotationPreferences](/uwp/api/Windows.Graphics.Display.DisplayProperties#Windows_Graphics_Display_DisplayProperties_AutoRotationPreferences) projektu. Na przykład jeśli projekt Ustawia orientację na `Landscape`, a następnie przeniesiesz symulator do orientacji pionowej, obraz ekranu wyświetlania symulatora zostanie również obrócony i zmieniony. Przetestuj te ustawienia na rzeczywistym urządzeniu.
+> Symulator nie szanuje właściwości [DisplayProperties. AutoRotationPreferences](/uwp/api/windows.graphics.display.displayproperties.autorotationpreferences) projektu. Na przykład jeśli projekt Ustawia orientację na `Landscape`, a następnie przeniesiesz symulator do orientacji pionowej, obraz ekranu wyświetlania symulatora zostanie również obrócony i zmieniony. Przetestuj te ustawienia na rzeczywistym urządzeniu.
 
 > [!NOTE]
 > W przypadku obrócenia symulatora tak, aby jedna krawędź symulatora była większa niż ekran, na którym jest wyświetlana, symulator zostanie automatycznie zmieniony w celu dopasowania do ekranu. Zmiany rozmiaru symulatora nie są zmieniane na oryginalny rozmiar, jeśli zostanie on ponownie obrócony.

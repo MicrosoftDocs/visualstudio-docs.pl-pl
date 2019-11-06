@@ -10,12 +10,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 564672e01eeffbdcb53bf1af08f329d2f6bf218f
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: dd7b8f7b88040c7b80dcc6c40dc168a51890d8d2
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985777"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661840"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>Poprawianie wydajności dodatku VSTO
   Możesz dać użytkownikom lepszy komfort, optymalizując dodatki narzędzi VSTO tworzone dla aplikacji pakietu Office, aby szybko uruchamiać, zamykać, otwierać elementy i wykonywać inne zadania. Jeśli dodatek VSTO jest przeznaczony dla programu Outlook, można również zmniejszyć prawdopodobieństwo wyłączenia dodatku VSTO z powodu niskiej wydajności. Możesz zwiększyć wydajność dodatku VSTO, implementując następujące strategie:
@@ -28,7 +28,7 @@ ms.locfileid: "72985777"
 
 - [Wykonywanie kosztownych operacji w osobnym wątku wykonania](#Perform).
 
-  Aby uzyskać więcej informacji na temat optymalizowania dodatku VSTO dla programu Outlook, zobacz [kryteria wydajności, które umożliwiają włączenie dodatków VSTO](/previous-versions/office/jj228679(v=office.15)#ol15WhatsNew_AddinDisabling).
+  Aby uzyskać więcej informacji na temat optymalizowania dodatku VSTO dla programu Outlook, zobacz [kryteria wydajności, które umożliwiają włączenie dodatków VSTO](/previous-versions/office/jj228679(v=office.15)#performance-criteria-for-keeping-add-ins-enabled).
 
 ## <a name="Load"></a>Załaduj Dodatki VSTO na żądanie
  Dodatek VSTO można skonfigurować do załadowania tylko w następujących okolicznościach:
