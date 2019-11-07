@@ -654,18 +654,8 @@
               href: javascript-console-commands.md
             - name: Skróty klawiaturowe (HTML i JavaScript)
               href: keyboard-shortcuts-html-and-javascript.md
-            - name: Skrypty po stronie klienta
-              items:
-                - name: Debugowanie skryptu po stronie klienta
-                  href: client-side-script-debugging.md
-                - name: Ograniczenia dotyczące debugowania skryptu
-                  href: limitations-on-script-debugging.md
-                - name: Dołączanie (skrypt)
-                  items:
-                    - name: Dołączanie do skryptu
-                      href: how-to-attach-to-script.md
-                    - name: 'Ostrzeżenie: Debugowanie skryptów wyłączone'
-                      href: warning-script-debugging-disabled.md
+            - name: 'Ostrzeżenie: Debugowanie skryptów wyłączone'
+              href: warning-script-debugging-disabled.md
         - name: Usługi WCF
           items:
             - name: Debugowanie usług WCF
