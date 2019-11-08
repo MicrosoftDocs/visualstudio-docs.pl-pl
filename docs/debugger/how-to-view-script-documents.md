@@ -1,6 +1,6 @@
 ---
 title: 'Instrukcje: wyświetlanie dokumentów skryptów | Microsoft Docs'
-ms.date: 01/08/2019
+ms.date: 11/05/2019
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,19 +15,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7696122cc9f0d431f310b8d6efb10819af995823
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 5e362e0504c4ed2584bbbbea687fe3c58fc79edb
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72731851"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73714440"
 ---
 # <a name="how-to-view-script-documents-javascript"></a>Instrukcje: wyświetlanie dokumentów skryptów (JavaScript)
 
 Pliki skryptów po stronie serwera są widoczne w Eksplorator rozwiązań. Pliki skryptów po stronie klienta są widoczne tylko wtedy, gdy jesteś w trybie debugowania lub w trybie przerwania. Pliki skryptów po stronie klienta są wyświetlane w węźle **dokumenty skryptu** .
 
+W przypadku niektórych typów aplikacji, które dynamicznie generują strony, łatwiej jest wejść w tryb przerwania i debugowanie, gdy ustawisz punkt przerwania na podstawie dokumentu skryptu, który jest ładowany w przeglądarce. Podobnie można dodać instrukcję `debugger` z załadowanego dokumentu skryptu w celu przejścia do trybu przerwania. W tym artykule przedstawiono sposób wyświetlania tych dokumentów.
+
 > [!NOTE]
-> Po powrocie do [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] pliki skryptów po stronie klienta generowane przez skrypt po stronie serwera pojawiły się w oknie Eksplorator skryptów.
+> Po powrocie do [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]pliki skryptów po stronie klienta generowane przez skrypt po stronie serwera pojawiły się w oknie Eksplorator skryptów.
 
 ### <a name="to-view-a-server-side-script-document"></a>Aby wyświetlić dokument skryptu po stronie serwera
 

@@ -6,12 +6,12 @@ author: therealjohn
 ms.author: johmil
 ms.date: 06/18/2019
 ms.assetid: DDC39599-8C5D-4CB9-8DA5-229E085384CA
-ms.openlocfilehash: 676193bc84b680c3c78f3b5ddff546a64e4767af
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
+ms.openlocfilehash: b4c5b460670a438b1aeaeb11cd8ae540b39cf9b7
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70108179"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73714406"
 ---
 # <a name="visual-studio-for-mac-workloads"></a>Visual Studio dla komputerów Mac obciążeń
 
@@ -27,11 +27,11 @@ Visual Studio dla komputerów Mac jest wstępnie zainstalowany z obciążeniami 
 
 Platforma [Xamarin](xamarin.md) umożliwia tworzenie wieloplatformowych aplikacji mobilnych za pomocą platformy .NET dla aplikacji dla systemów Android, iOS, systemu tvOS, systemu watchOS i Mac.
 
-Aby uzyskać informacje na temat korzystania z platformy Xamarin w Visual Studio dla komputerów Mac, zapoznaj się z [Centrum deweloperów](https://developer.xamarin.com/) platformy Xamarin [](https://github.com/Microsoft/vs4mac-labs/tree/master/Mobile/Getting-Started)i zapoznaj się z obsługą aplikacji mobilnych.
+Aby uzyskać informacje na temat korzystania z platformy Xamarin w Visual Studio dla komputerów Mac, zapoznaj się z [Centrum deweloperów platformy Xamarin](https://developer.xamarin.com/) i zapoznaj się [z obsługą aplikacji mobilnych](https://github.com/Microsoft/vs4mac-labs/tree/master/Mobile/Getting-Started).
 
 ## <a name="mac-desktop-applications"></a>Aplikacje klasyczne dla komputerów Mac
 
-Aplikacje dla komputerów Mac można tworzyć za pomocą platformy [Xamarin. Mac](https://docs.microsoft.com/xamarin/mac/) przy użyciu struktury interfejsu użytkownika kakao oraz zestawu [Xamarin. Forms na komputerach Mac](https://docs.microsoft.com/xamarin/xamarin-forms/platform/other/mac) w celu kompilowania aplikacji, które współużytkują kod i interfejs użytkownika z innymi platformami.
+Aplikacje dla komputerów Mac można tworzyć za pomocą platformy [Xamarin. Mac](/xamarin/mac/) przy użyciu struktury interfejsu użytkownika kakao oraz zestawu [Xamarin. Forms na komputerach Mac](/xamarin/xamarin-forms/platform/other/mac) w celu kompilowania aplikacji, które współużytkują kod i interfejs użytkownika z innymi platformami.
 
 ## <a name="net-core-applications"></a>Aplikacje platformy .NET Core
 

@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: f585a4ee58408e5f48c875602ba5531419dfd2ff
-ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
+ms.openlocfilehash: f1b928d04ae581b0df04ab74f3a756d359abc06f
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73661826"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713959"
 ---
 # <a name="troubleshoot-network-related-errors-when-you-install-or-use-visual-studio"></a>Rozwiązywanie problemów związanych z siecią podczas instalowania programu Visual Studio lub korzystania z niego
 
@@ -137,7 +137,7 @@ Włącz połączenia dla następujących adresów URL:
 
 Ten komunikat o błędzie może pojawić się podczas korzystania z programu inicjującego programu Visual Studio i pliku Response. JSON na dysku sieciowym. Źródłem błędu jest Kontrola konta użytkownika w systemie Windows.
 
-Przyczyny tego błędu mogą być następujące: zamapowany dysk sieciowy lub udział [UNC](/dotnet/standard/io/file-path-formats#unc-paths) jest połączony z tokenem dostępu użytkownika. Po włączeniu funkcji Kontrola konta użytkownika tworzone są dwa [tokeny dostępu](/windows/win32/secauthz/access-tokens) użytkowników: jeden *z* dostępem administratora i jeden *bez* dostępu administratora. Po utworzeniu dysku lub udziału sieciowego jest z nim połączony bieżący token dostępu użytkownika. Ponieważ program inicjujący musi być uruchomiony jako administrator, nie będzie mógł uzyskać dostępu do dysku sieciowego ani udziału, jeśli dysk lub udział nie są połączone z tokenem dostępu użytkownika, który ma dostęp administratora.
+Przyczyny tego błędu mogą być następujące: zamapowany dysk sieciowy lub udział [UNC](/dotnet/standard/io/file-path-formats#unc-paths) jest połączony z tokenem dostępu użytkownika. Po włączeniu funkcji Kontrola konta użytkownika tworzone są dwa [tokeny dostępu](/windows/win32/secauthz/access-tokens) użytkowników: jeden *z* dostępem administratora i jeden *bez* dostępu administratora. Po utworzeniu dysku sieciowego lub udziału jest z nim połączony bieżący token dostępu użytkownika. Ponieważ program inicjujący musi być uruchomiony jako administrator, nie będzie mógł uzyskać dostępu do dysku sieciowego ani udziału, jeśli dysk lub udział nie są połączone z tokenem dostępu użytkownika, który ma dostęp administratora.
 
 ### <a name="to-fix-this-error"></a>Aby naprawić ten błąd
 

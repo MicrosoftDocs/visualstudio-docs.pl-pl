@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 386a489faf859038cd0f529da74a0fbac07b7250
-ms.sourcegitcommit: f9f389e72787de30eb869a55ef7725a10a4011f0
+ms.openlocfilehash: 7bd03ead39d0b2b5013075de017954f0c0c30e8c
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73636543"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73714489"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Debugowanie aplikacji JavaScript lub TypeScript w programie Visual Studio
 
@@ -86,7 +86,7 @@ W tym scenariuszu należy użyć programu Chrome.
 
     `msedge --remote-debugging-port=9222`
 
-    Oraz
+    oraz
 
     `chrome.exe --remote-debugging-port=9222`
     ::: moniker-end
@@ -157,7 +157,7 @@ Aby dołączyć debuger z programu Visual Studio i trafić punkty przerwania w k
 
     W debugerze można przeanalizować stan aplikacji, umieszczając kursor nad zmiennymi i korzystając z okien debugera. Debuger można uzyskać, przechodząc przez kod (**F5**, **F10**i **F11**). Aby uzyskać więcej informacji na temat podstawowych funkcji debugowania, zobacz [pierwsze spojrzenie na debuger](../debugger/debugger-feature-tour.md).
 
-    Punkt przerwania można napotkać w pliku *. js* lub w pliku źródłowym, w zależności od tego, jakie kroki zostały wcześniej wykonane, wraz ze środowiskiem i przeglądarką. W obu przypadkach możesz przejść przez kod i przeanalizować zmienne.
+    Punkt przerwania może zostać trafiony w pliku *. js* lub pliku źródłowym, w zależności od typu aplikacji, które wykonane wcześniej, oraz innych czynników, takich jak stan przeglądarki. W obu przypadkach możesz przejść przez kod i przeanalizować zmienne.
 
    * Jeśli musisz przerwać kod w pliku źródłowym TypeScript, JSX lub *. Vue* i nie można tego zrobić, upewnij się, że środowisko jest prawidłowo skonfigurowane, zgodnie z opisem w sekcji [Rozwiązywanie problemów](#troubleshooting_source_maps) .
 
@@ -171,7 +171,7 @@ Jeśli musisz przerwać kod w pliku źródłowym TypeScript, JSX lub *Vue* i nie
       
 * Upewnij się [, że przeglądarka została uruchomiona w trybie debugowania](#prepare_the_browser_for_debugging).
 
-* Upewnij się, że plik mapy źródłowej zawiera poprawne odwołanie do pliku źródłowego i że nie zawiera nieobsługiwanych prefiksów, takich jak *WebPack:///* , co uniemożliwia debugerowi programu Visual Studio lokalizowanie pliku źródłowego. Na przykład odwołanie, takie jak *WebPack:///.app.TSX* , może zostać poprawione na *./app.TSX*. Można to zrobić ręcznie w pliku mapy źródłowej lub za pomocą niestandardowej konfiguracji kompilacji. Aby uzyskać więcej informacji, zobacz [Generuj mapy źródeł na potrzeby debugowania](#generate_source_maps).
+* Upewnij się, że plik mapy źródłowej zawiera poprawną ścieżkę względną do pliku źródłowego i że nie zawiera nieobsługiwanych prefiksów, takich jak *WebPack:///* , co uniemożliwia debugerowi programu Visual Studio lokalizowanie pliku źródłowego. Na przykład odwołanie, takie jak *WebPack:///.app.TSX* , może zostać poprawione na *./app.TSX*. Można to zrobić ręcznie w pliku mapy źródłowej (który jest przydatny do testowania) lub za pomocą niestandardowej konfiguracji kompilacji. Aby uzyskać więcej informacji, zobacz [Generuj mapy źródeł na potrzeby debugowania](#generate_source_maps).
 
 Alternatywnie, jeśli trzeba podzielić na kod w pliku źródłowym (na przykład *App. TSX*) i nie można go wykonać, spróbuj użyć instrukcji `debugger;` w pliku źródłowym lub ustawić punkty przerwania w narzędzia deweloperskie programu Chrome (lub F12 narzędzia dla przeglądarki Microsoft Edge).
 

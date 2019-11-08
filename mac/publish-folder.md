@@ -8,12 +8,12 @@ author: sayedihashimi
 ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac
-ms.openlocfilehash: 165cfc38b8289946e0966083785defd18ca87d77
-ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
+ms.openlocfilehash: 5dfee3999eddd8c4dacdd6180e18a4a50e6535dc
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71095418"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73715907"
 ---
 # <a name="publish-to-a-folder-using-visual-studio-for-mac"></a>Publikowanie w folderze przy użyciu Visual Studio dla komputerów Mac
 
@@ -22,7 +22,7 @@ Za pomocą narzędzia do publikowania można opublikować konsolę .NET Core lub
 ## <a name="prerequisites"></a>Wymagania wstępne
 
 - [Program Visual Studio 2019 for Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019) został zainstalowany z włączonym platformą .NET Core.
-- Konsola .NET Core lub projekt ASP.NET Core. Jeśli nie masz jeszcze projektu, możesz [utworzyć nowy](https://docs.microsoft.com/visualstudio/mac/create-new-projects?view=vsmac-2019).
+- Konsola .NET Core lub projekt ASP.NET Core. Jeśli nie masz jeszcze projektu, możesz [utworzyć nowy](/visualstudio/mac/create-new-projects?view=vsmac-2019).
 
 ## <a name="publish-to-folder"></a>Publikowanie w folderze
 
@@ -40,7 +40,7 @@ Za pomocą Visual Studio dla komputerów Mac można opublikować projekty platfo
 
  4. Zostanie wyświetlone okno dialogowe **Publikowanie do folderu** . W tym oknie dialogowym można dostosować folder, w którym projekt zostanie opublikowany. Możesz użyć przycisku **Przeglądaj** , aby to zrobić, lub wkleić ścieżkę.
 
- 5. Po kliknięciu przycisku **Publikuj** kilka rzeczy. Pierwszy tworzony jest profil publikowania. Profil publikowania to plik programu MSBuild, który jest importowany do projektu podczas procesu publikowania. Zawiera właściwości, które są używane podczas procesu publikowania. Te pliki są przechowywane w `Properties/PublishProfiles` i mają rozszerzenie. `.pubxml` Następnie proces publikowania zostanie uruchomiony. Postęp można monitorować, obserwując pasek stanu w Visual Studio dla komputerów Mac.
+ 5. Po kliknięciu przycisku **Publikuj** kilka rzeczy. Pierwszy tworzony jest profil publikowania. Profil publikowania to plik programu MSBuild, który jest importowany do projektu podczas procesu publikowania. Zawiera właściwości, które są używane podczas procesu publikowania. Te pliki są przechowywane w `Properties/PublishProfiles` i mają `.pubxml`rozszerzenia. Następnie proces publikowania zostanie uruchomiony. Postęp można monitorować, obserwując pasek stanu w Visual Studio dla komputerów Mac.
 
     ![Pasek stanu IDE ze stanem publikowania](media/publish-to-folder-status-bar.png)
 
@@ -54,6 +54,6 @@ Za pomocą Visual Studio dla komputerów Mac można opublikować projekty platfo
 
 Aby zmienić nazwę profilu publikacji (która jest wyświetlana w menu kontekstowym publikowania), Zmień nazwę pliku profilu publikacji. Upewnij się, że nie zmieniono rozszerzenia pliku (`.puxbml`).
 
-Aby zmienić ścieżkę folderu publikowania, Otwórz profil publikowania i edytuj `publishUrl` wartość.
+Aby zmienić ścieżkę folderu publikowania, Otwórz profil publikowania i Edytuj wartość `publishUrl`.
 
-Aby zmienić konfigurację kompilacji, która jest używana, Zmień `LastUsedBuildConfiguration` właściwość w profilu publikowania.
+Aby zmienić konfigurację kompilacji, która jest używana, Zmień właściwość `LastUsedBuildConfiguration` w profilu publikowania.

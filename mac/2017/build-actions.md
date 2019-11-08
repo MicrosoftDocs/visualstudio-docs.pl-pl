@@ -1,34 +1,34 @@
 ---
 title: Akcje kompilacji
-description: W tym artykule opisano różne akcje kompilacji, których można użyć dla projektów C#
+description: W tym artykule opisano różne akcje kompilacji, które mogą być używane C# w projektach
 author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 5399BCB1-E317-4C7B-87B1-C531E985DE6E
-ms.openlocfilehash: 16617f8de15fbef40941c4f9409497da142c9e8a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 97cabcacf276c6972a717e968656430ad32e37e3
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62932795"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73715852"
 ---
 # <a name="build-actions"></a>Akcje kompilacji
 
-Wszystkie pliki w programie Visual Studio dla komputerów Mac projektu mają akcji kompilacji. Kontroluje, co się dzieje z pliku podczas kompilacji. To zachowanie można ustawić, klikając prawym przyciskiem myszy dowolny plik i przechodząc do **Build Action**, jak pokazano poniżej:
+Wszystkie pliki w projekcie Visual Studio dla komputerów Mac mają akcję kompilacji. Kontroluje to, co się dzieje z plikiem podczas kompilacji. To zachowanie można ustawić, klikając prawym przyciskiem myszy dowolny plik i przechodząc do **akcji kompilacji**, jak pokazano poniżej:
 
-![Wybieranie akcji kompilacji w kompilacji za pomocą Eksploratora rozwiązań](media/projects-and-solutions-image1.png)
+![Wybieranie akcji Kompiluj kompilację z Eksploratora rozwiązań](media/projects-and-solutions-image1.png)
 
-Akcje niektóre typowe kompilacji dla projektów języka C#:
+Niektóre typowe akcje kompilacji dla C# projektów są następujące:
 
-* **Brak** — plik nie jest częścią kompilacji w jakikolwiek sposób — znajduje się w projekcie, aby mieć łatwy dostęp z poziomu środowiska IDE.
-* **Skompilować** — plik zostanie przekazany do kompilatora C# jako plik źródłowy.
-* **EmbeddedResource** — plik zostanie przekazany do kompilatora C# jako zasób do osadzenia w zestawie. [Assembly.GetManifestResourceStream](https://docs.microsoft.com/dotnet/api/system.reflection.assembly.getmanifestresourcestream), z `System.Reflection` przestrzeni nazw, można odczytać pliku z zestawu.
-* **Zawartość** — dla projektów platformy ASP.NET, te pliki będą dołączane jako część lokacji podczas jej wdrażania. Projekty Xamarin.iOS i Xamarin.Mac zostaną one uwzględnione w zbiorze aplikacji.
+* **Brak** — plik nie jest częścią kompilacji w żaden sposób — jest zawarty w projekcie w celu łatwego dostępu do środowiska IDE.
+* **Kompiluj** — plik zostanie przesłany do C# kompilatora jako plik źródłowy.
+* **EmbeddedResource** — plik zostanie przesłany do C# kompilatora jako zasób, który ma zostać osadzony w zestawie. [Zestawu. GetManifestResourceStream](/dotnet/api/system.reflection.assembly.getmanifestresourcestream)z przestrzeni nazw `System.Reflection` można następnie użyć do odczytania pliku z zestawu.
+* **Zawartość** — w przypadku projektów ASP.NET te pliki zostaną dołączone jako część lokacji podczas jej wdrażania. W przypadku projektów Xamarin. iOS i Xamarin. Mac zostaną one uwzględnione w zbiorze aplikacji.
 
-Użytkownik może wybrać więcej niż jeden plik w Eksploratorze rozwiązań, co pozwala ustawić akcji kompilacji do wielu plików jednocześnie.
+Istnieje możliwość wybrania więcej niż jednego pliku w Eksploratorze rozwiązań, co pozwala ustawić akcję kompilacji na wiele plików jednocześnie.
 
-Ponadto istnieją akcje kompilacji dla konkretnych projektów. Projekty Xamarin.iOS mają **BundleResource** tworzenie akcji, która doda go jako część pakietu aplikacji. Informacje o akcjach określonej kompilacji platformy Xamarin.Android znajdują się w [proces kompilacji](/xamarin/android/deploy-test/building-apps/build-process#Build_Actions) przewodnik.
+Istnieją także akcje kompilacji dla określonych projektów. Projekty Xamarin. iOS mają akcję kompilacji **BundleResource** , która spowoduje dodanie pliku jako części zbioru aplikacji. Informacje o określonych akcjach kompilacji platformy Xamarin. Android można znaleźć w przewodniku [procesu kompilacji](/xamarin/android/deploy-test/building-apps/build-process#Build_Actions) .
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Tworzenie akcji (Visual Studio Windows)](/visualstudio/ide/build-actions)
+- [Akcje kompilacji (Visual Studio w systemie Windows)](/visualstudio/ide/build-actions)

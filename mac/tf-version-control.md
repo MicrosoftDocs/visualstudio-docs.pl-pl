@@ -6,12 +6,12 @@ ms.author: jomatthi
 ms.date: 09/02/2019
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: fc300ccd37ade6418ef093306441afe4d10080e2
-ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
+ms.openlocfilehash: e56aec03aabe818731c65acb30eafcc18f170ac3
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70222754"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73714510"
 ---
 # <a name="does-visual-studio-for-mac-support-team-foundation-version-control"></a>Czy Visual Studio dla komputerów Mac obsługiwać Kontrola wersji serwera Team Foundation?
 
@@ -56,31 +56,31 @@ Najprostszym rozwiązaniem jest **Korzystanie**z programu oprogramowania homebre
 
 1. Uruchom aplikację terminala macOS.
 1. Zainstaluj program oprogramowania Homebrew przy użyciu terminalu i instrukcje na [stronie głównej oprogramowania Homebrew](https://brew.sh/).
-1. Po zainstalowaniu oprogramowania Homebrew Uruchom następujące polecenie z terminalu:`brew install tee-clc`
+1. Po zainstalowaniu oprogramowania Homebrew Uruchom następujące polecenie z terminalu: `brew install tee-clc`
 
 Aby **ręcznie skonfigurować tee-CLC**:
 
 1. [Pobierz najnowszą wersję tee-CLC](https://github.com/Microsoft/team-explorer-everywhere/releases) ze Team Explorer Everywhere strony wersji repozytorium GitHub (np. tee-CLC-14.134.0. zip w momencie pisania tego zapisu).
 1. Wyodrębnij zawartość pliku zip do folderu na dysku.
-1. Otwórz aplikację terminala macOS i Użyj `cd` polecenia, aby przełączyć się do folderu, który został użyty w poprzednim kroku.
-1. Z poziomu folderu Uruchom polecenie `./tf` , aby sprawdzić, czy można uruchomić klienta wiersza polecenia. może zostać wyświetlony monit o zainstalowanie języka Java lub innych zależności.
+1. Otwórz aplikację terminala macOS i użyj polecenia `cd`, aby przełączyć się do folderu, który został użyty w poprzednim kroku.
+1. Z poziomu folderu Uruchom polecenie `./tf`, aby sprawdzić, czy można uruchomić klienta wiersza polecenia, może pojawić się monit o zainstalowanie języka Java lub innych zależności.
 
-Po zainstalowaniu tee-CLC można uruchomić polecenie `tf eula` , aby wyświetlić i zaakceptować umowę licencyjną dla klienta.
+Po zainstalowaniu TEE-CLC można uruchomić polecenie `tf eula`, aby wyświetlić i zaakceptować umowę licencyjną dla klienta.
 
-Na koniec, aby uwierzytelnić się w środowisku DevOps TFS/Azure, musisz utworzyć osobisty token dostępu na serwerze. Dowiedz się więcej o [uwierzytelnianiu z osobistymi tokenami dostępu](https://docs.microsoft.com/azure/devops/integrate/get-started/authentication/pats?view=azure-devops). Podczas tworzenia osobistego tokenu dostępu do używania z usługą TFVC należy zapewnić pełen dostęp podczas konfigurowania tokenu.
+Na koniec, aby uwierzytelnić się w środowisku DevOps TFS/Azure, musisz utworzyć osobisty token dostępu na serwerze. Dowiedz się więcej o [uwierzytelnianiu z osobistymi tokenami dostępu](/azure/devops/integrate/get-started/authentication/pats?view=azure-devops). Podczas tworzenia osobistego tokenu dostępu do używania z usługą TFVC należy zapewnić pełen dostęp podczas konfigurowania tokenu.
 
 #### <a name="using-the-tee-clc-to-connect-to-your-repo"></a>Nawiązywanie połączenia z repozytorium przy użyciu TEE-CLC
 
-Aby nawiązać połączenie z kodem źródłowym, musisz najpierw utworzyć obszar roboczy przy użyciu `tf workspace` polecenia. Na przykład następujące polecenia nawiązują połączenie z organizacją w Azure DevOps Services o nazwie "Moja organizacja": 
+Aby nawiązać połączenie z kodem źródłowym, musisz najpierw utworzyć obszar roboczy przy użyciu polecenia `tf workspace`. Na przykład następujące polecenia nawiązują połączenie z organizacją w Azure DevOps Services o nazwie "Moja organizacja": 
 
 ```bash
 export TF_AUTO_SAVE_CREDENTIALS=1
 tf workspace -new MyWorkspace -collection:https://dev.azure.com/MyOrganization
 ```
 
-Ustawienie `TF_AUTO_SAVE_CREDENTIALS` środowisko służy do zapisywania poświadczeń, dlatego nie zostanie wyświetlony monit o wprowadzenie ich wiele razy. Po wyświetleniu monitu o podanie nazwy użytkownika Użyj osobistego tokenu dostępu utworzonego w poprzedniej sekcji i użyj pustego hasła.
+Ustawienie środowiska `TF_AUTO_SAVE_CREDENTIALS` służy do zapisywania poświadczeń, dlatego nie zostanie wyświetlony monit o wprowadzenie ich wiele razy. Po wyświetleniu monitu o podanie nazwy użytkownika Użyj osobistego tokenu dostępu utworzonego w poprzedniej sekcji i użyj pustego hasła.
 
-Aby utworzyć mapowanie plików źródłowych do folderu lokalnego, użyj `tf workfold` polecenia. Poniższy przykład mapuje folder o nazwie "WebApp. Services" z projektu TFVC "moje repozytorium" i skonfiguruje go do kopiowania do lokalnego folderu ~/Projects/(tj. folder "projects" w folderze głównym bieżącego użytkownika).
+Aby utworzyć mapowanie plików źródłowych do folderu lokalnego, użyj polecenia `tf workfold`. Poniższy przykład mapuje folder o nazwie "WebApp. Services" z projektu TFVC "moje repozytorium" i skonfiguruje go do kopiowania do lokalnego folderu ~/Projects/(tj. folder "projects" w folderze głównym bieżącego użytkownika).
 
 ```bash
 tf workfold -map $/MyRepository/WebApp.Services -workspace:MyWorkspace ~/Projects/
@@ -94,7 +94,7 @@ tf get
 
 #### <a name="committing-changes-using-the-tee-clc"></a>Zatwierdzanie zmian przy użyciu TEE-CLC
 
-Po wprowadzeniu zmian w plikach w Visual Studio dla komputerów Mac można wrócić do terminalu, aby zaewidencjonować zmiany. Polecenie służy do dodawania plików do listy oczekujących zmian do zaewidencjonowania `tf checkin` , a polecenie wykonuje rzeczywiste ewidencjonowanie na serwerze. `tf add` `checkin` Polecenie zawiera parametry służące do dodawania komentarza lub kojarzenia powiązanego elementu pracy. W poniższym fragmencie kodu wszystkie pliki w `WebApp.Services` folderze są dodawane cyklicznie do zaewidencjonowania. Następnie kod jest sprawdzany z komentarzem i skojarzony z elementem roboczym o IDENTYFIKATORze "42".
+Po wprowadzeniu zmian w plikach w Visual Studio dla komputerów Mac można wrócić do terminalu, aby zaewidencjonować zmiany. Polecenie `tf add` służy do dodawania plików do listy oczekujących zmian do zaewidencjonowania, a polecenie `tf checkin` wykonuje rzeczywiste ewidencjonowanie na serwerze. Polecenie `checkin` zawiera parametry służące do dodawania komentarza lub kojarzenia powiązanego elementu pracy. W poniższym fragmencie kodu wszystkie pliki w folderze `WebApp.Services` są dodawane cyklicznie do zaewidencjonowania. Następnie kod jest sprawdzany z komentarzem i skojarzony z elementem roboczym o IDENTYFIKATORze "42".
 
 ```bash
 cd WebApp.Services

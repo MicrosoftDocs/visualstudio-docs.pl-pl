@@ -5,12 +5,12 @@ author: therealjohn
 ms.author: johmil
 ms.date: 06/18/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
-ms.openlocfilehash: c8b6bddac92a9ec6b40ba08ebcdc3fe3577b0bc8
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 31fb7fa4c2a87820285809d24b98fe8e59a6be01
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211471"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73714479"
 ---
 # <a name="xamarin-mobile-app-development"></a>Programowanie aplikacji mobilnych dla platformy Xamarin
 
@@ -22,7 +22,7 @@ Hot reload języka XAML dla platformy Xamarin. Forms jest wbudowana w Visual Stu
 
 Można włączyć funkcję dynamicznego ponownego ładowania kodu XAML, zaznaczając pole wyboru **Włącz rozszerzenie Xamarin Hot reload** w **programie Visual Studio > Preferences > Projects > Xamarin Hot reload**.
 
-Aby uzyskać więcej informacji na temat ponownego ładowania, zobacz [Przewodnik po załadowaniu kodu XAML dla platformy Xamarin. Forms](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/xaml/hot-reload) w ramach dokumentacji.
+Aby uzyskać więcej informacji na temat ponownego ładowania, zobacz [Przewodnik po załadowaniu kodu XAML dla platformy Xamarin. Forms](/xamarin/xamarin-forms/xaml/hot-reload) w ramach dokumentacji.
 
 ## <a name="android"></a>Android
 
@@ -40,7 +40,7 @@ Program iOS Designer jest w pełni zintegrowany z Visual Studio dla komputerów 
 
 ![Projektant scenorysu systemu iOS](media/intro-image30.png)
 
-Aby uzyskać więcej informacji na temat korzystania z projektanta systemu iOS, zobacz Przewodniki [projektanta](https://docs.microsoft.com/xamarin/ios/user-interface/designer/?tabs=macos) .
+Aby uzyskać więcej informacji na temat korzystania z projektanta systemu iOS, zobacz Przewodniki [projektanta](/xamarin/ios/user-interface/designer/?tabs=macos) .
 
 ### <a name="mac"></a>Mac
 

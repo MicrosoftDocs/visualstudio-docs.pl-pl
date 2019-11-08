@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 06/25/2019
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: fa269285cf11df848f842524e0d3d496a67b7469
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
+ms.openlocfilehash: e45f80ab1a5aab4969b01a2fddcfd88d9dc4eff7
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70108233"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73716121"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Nawiązywanie połączenia z Kontrola wersji serwera Team Foundation
 
@@ -20,7 +20,7 @@ ms.locfileid: "70108233"
 >
 > Jeśli wcześniej była używana wersja zapoznawcza rozszerzenia TFVC dla Visual Studio dla komputerów Mac, nie jest już obsługiwana w przypadku uaktualniania do programu Visual Studio 2019 for Mac.
 
-Azure Repos oferuje dwa modele kontroli wersji: [Git](/azure/devops/repos/git/?view=azure-devops), rozproszony system kontroli wersji i [Kontrola wersji serwera Team Foundation](/azure/devops/repos/tfvc/index?view=azure-devops) (TFVC) — scentralizowany system kontroli wersji.
+Azure Repos oferuje dwa modele kontroli wersji: [git](/azure/devops/repos/git/?view=azure-devops), rozproszony system kontroli wersji i [Kontrola wersji serwera Team Foundation](/azure/devops/repos/tfvc/index?view=azure-devops) (TFVC), scentralizowany system kontroli wersji.
 
 Visual Studio dla komputerów Mac zapewnia pełną obsługę repozytoriów Git, ale wymaga zastosowania niektórych rozwiązań do pracy z usługą TFVC. Jeśli obecnie używasz usługi TFVC na potrzeby kontroli wersji, Oto kilka rozwiązań, których można użyć w celu uzyskania dostępu do kodu źródłowego hostowanego w TFVC:
 
@@ -57,31 +57,31 @@ Najprostszym rozwiązaniem jest **Korzystanie**z programu oprogramowania homebre
 
 1. Uruchom aplikację terminala macOS.
 1. Zainstaluj program oprogramowania Homebrew przy użyciu terminalu i instrukcje na [stronie głównej oprogramowania Homebrew](https://brew.sh/).
-1. Po zainstalowaniu oprogramowania Homebrew Uruchom następujące polecenie z terminalu:`brew install tee-clc`
+1. Po zainstalowaniu oprogramowania Homebrew Uruchom następujące polecenie z terminalu: `brew install tee-clc`
 
 Aby **ręcznie skonfigurować tee-CLC**:
 
 1. [Pobierz najnowszą wersję tee-CLC](https://github.com/Microsoft/team-explorer-everywhere/releases) ze Team Explorer Everywhere strony wersji repozytorium GitHub (np. tee-CLC-14.134.0. zip w momencie pisania tego zapisu).
 1. Wyodrębnij zawartość pliku zip do folderu na dysku.
-1. Otwórz aplikację terminala macOS i Użyj `cd` polecenia, aby przełączyć się do folderu, który został użyty w poprzednim kroku.
-1. Z poziomu folderu Uruchom polecenie `./tf` , aby sprawdzić, czy można uruchomić klienta wiersza polecenia. może zostać wyświetlony monit o zainstalowanie języka Java lub innych zależności.
+1. Otwórz aplikację terminala macOS i użyj polecenia `cd`, aby przełączyć się do folderu, który został użyty w poprzednim kroku.
+1. Z poziomu folderu Uruchom polecenie `./tf`, aby sprawdzić, czy można uruchomić klienta wiersza polecenia, może pojawić się monit o zainstalowanie języka Java lub innych zależności.
 
-Po zainstalowaniu tee-CLC można uruchomić polecenie `tf eula` , aby wyświetlić i zaakceptować umowę licencyjną dla klienta.
+Po zainstalowaniu TEE-CLC można uruchomić polecenie `tf eula`, aby wyświetlić i zaakceptować umowę licencyjną dla klienta.
 
-Na koniec, aby uwierzytelnić się w środowisku DevOps TFS/Azure, musisz utworzyć osobisty token dostępu na serwerze. Dowiedz się więcej o [uwierzytelnianiu z osobistymi tokenami dostępu](https://docs.microsoft.com/azure/devops/integrate/get-started/authentication/pats?view=azure-devops). Podczas tworzenia osobistego tokenu dostępu do używania z usługą TFVC należy zapewnić pełen dostęp podczas konfigurowania tokenu.
+Na koniec, aby uwierzytelnić się w środowisku DevOps TFS/Azure, musisz utworzyć osobisty token dostępu na serwerze. Dowiedz się więcej o [uwierzytelnianiu z osobistymi tokenami dostępu](/azure/devops/integrate/get-started/authentication/pats?view=azure-devops). Podczas tworzenia osobistego tokenu dostępu do używania z usługą TFVC należy zapewnić pełen dostęp podczas konfigurowania tokenu.
 
 ### <a name="using-the-tee-clc-to-connect-to-your-repo"></a>Nawiązywanie połączenia z repozytorium przy użyciu TEE-CLC
 
-Aby nawiązać połączenie z kodem źródłowym, musisz najpierw utworzyć obszar roboczy przy użyciu `tf workspace` polecenia. Na przykład następujące polecenia nawiązują połączenie z organizacją w Azure DevOps Services o nazwie "Moja organizacja": 
+Aby nawiązać połączenie z kodem źródłowym, musisz najpierw utworzyć obszar roboczy przy użyciu polecenia `tf workspace`. Na przykład następujące polecenia nawiązują połączenie z organizacją w Azure DevOps Services o nazwie "Moja organizacja": 
 
 ```bash
 export TF_AUTO_SAVE_CREDENTIALS=1
 tf workspace -new MyWorkspace -collection:https://dev.azure.com/MyOrganization
 ```
 
-Ustawienie `TF_AUTO_SAVE_CREDENTIALS` środowisko służy do zapisywania poświadczeń, dlatego nie zostanie wyświetlony monit o wprowadzenie ich wiele razy. Po wyświetleniu monitu o podanie nazwy użytkownika Użyj osobistego tokenu dostępu utworzonego w poprzedniej sekcji i użyj pustego hasła.
+Ustawienie środowiska `TF_AUTO_SAVE_CREDENTIALS` służy do zapisywania poświadczeń, dlatego nie zostanie wyświetlony monit o wprowadzenie ich wiele razy. Po wyświetleniu monitu o podanie nazwy użytkownika Użyj osobistego tokenu dostępu utworzonego w poprzedniej sekcji i użyj pustego hasła.
 
-Aby utworzyć mapowanie plików źródłowych do folderu lokalnego, użyj `tf workfold` polecenia. Poniższy przykład mapuje folder o nazwie "WebApp. Services" z projektu TFVC "moje repozytorium" i skonfiguruje go do kopiowania do lokalnego folderu ~/Projects/(tj. folder "projects" w folderze głównym bieżącego użytkownika).
+Aby utworzyć mapowanie plików źródłowych do folderu lokalnego, użyj polecenia `tf workfold`. Poniższy przykład mapuje folder o nazwie "WebApp. Services" z projektu TFVC "moje repozytorium" i skonfiguruje go do kopiowania do lokalnego folderu ~/Projects/(tj. folder "projects" w folderze głównym bieżącego użytkownika).
 
 ```bash
 tf workfold -map $/MyRepository/WebApp.Services -workspace:MyWorkspace ~/Projects/
@@ -95,7 +95,7 @@ tf get
 
 ### <a name="committing-changes-using-the-tee-clc"></a>Zatwierdzanie zmian przy użyciu TEE-CLC
 
-Po wprowadzeniu zmian w plikach w Visual Studio dla komputerów Mac można wrócić do terminalu, aby zaewidencjonować zmiany. Polecenie służy do dodawania plików do listy oczekujących zmian do zaewidencjonowania `tf checkin` , a polecenie wykonuje rzeczywiste ewidencjonowanie na serwerze. `tf add` `checkin` Polecenie zawiera parametry służące do dodawania komentarza lub kojarzenia powiązanego elementu pracy. W poniższym fragmencie kodu wszystkie pliki w `WebApp.Services` folderze są dodawane cyklicznie do zaewidencjonowania. Następnie kod jest sprawdzany z komentarzem i skojarzony z elementem roboczym o IDENTYFIKATORze "42".
+Po wprowadzeniu zmian w plikach w Visual Studio dla komputerów Mac można wrócić do terminalu, aby zaewidencjonować zmiany. Polecenie `tf add` służy do dodawania plików do listy oczekujących zmian do zaewidencjonowania, a polecenie `tf checkin` wykonuje rzeczywiste ewidencjonowanie na serwerze. Polecenie `checkin` zawiera parametry służące do dodawania komentarza lub kojarzenia powiązanego elementu pracy. W poniższym fragmencie kodu wszystkie pliki w folderze `WebApp.Services` są dodawane cyklicznie do zaewidencjonowania. Następnie kod jest sprawdzany z komentarzem i skojarzony z elementem roboczym o IDENTYFIKATORze "42".
 
 ```bash
 cd WebApp.Services
@@ -116,7 +116,7 @@ Aby dowiedzieć się więcej na temat poleceń wymienionych tutaj lub innych, mo
 
 W galerii rozszerzeń Visual Studio dla komputerów Mac istnieje rozszerzenie kontroli wersji programu Team Foundation, które oferuje ograniczoną obsługę połączenia z usługą TFVC. Rozszerzenie nie jest obsługiwane i zawiera kilka znanych problemów, dlatego środowisko może się różnić w przypadku korzystania z niego.
 
-Aby zainstalować rozszerzenie, uruchom Visual Studio dla komputerów Mac i wybierz menu **rozszerzenia Visual Studio >** . W **galerii** zaznacz **kontroli wersji > kontroli wersji Team Foundation dla TFS i usługi Azure DevOps** i kliknij przycisk **instalacji...** :
+Aby zainstalować rozszerzenie, uruchom Visual Studio dla komputerów Mac i wybierz menu **rozszerzenia Visual Studio >** . Na karcie **Galeria** wybierz pozycję **kontrola wersji > Kontrola wersji serwera Team Foundation dla TFS i Azure DevOps** , a następnie kliknij przycisk **Zainstaluj...** :
 
 ![Menedżer rozszerzeń](media/tfvc-install.png)
 
@@ -124,13 +124,13 @@ Postępuj zgodnie z monitami, aby zainstalować rozszerzenie. Po zainstalowaniu 
 
 ### <a name="updating-the-extension"></a>Aktualizowanie rozszerzenia
 
-Aktualizacje rozszerzenia TFVC są wykonywane okresowo. Dostęp do aktualizacji, wybierz **programu Visual Studio > rozszerzenia...** z menu i wybierzesz **aktualizacje** kartę. Wybierz rozszerzenie na liście i naciśnij przycisk **Aktualizuj** :
+Aktualizacje rozszerzenia TFVC są wykonywane okresowo. Aby uzyskać dostęp do aktualizacji, wybierz pozycję **rozszerzenia programu Visual Studio >...** z menu, a następnie wybierz kartę **aktualizacje** . Wybierz rozszerzenie na liście i naciśnij przycisk **Aktualizuj** :
 
 Naciśnij przycisk **Instaluj** w następnym oknie dialogowym, aby odinstalować stary pakiet i zainstalować nowy.
 
 ### <a name="using-the-extension"></a>Przy użyciu rozszerzenia
 
-Po zainstalowaniu rozszerzenia wybierz **kontroli wersji > DevOps programu TFS/platformy Azure > Otwórz ze zdalnego repozytorium...** elementu menu.
+Po zainstalowaniu rozszerzenia wybierz **kontrolę wersji > TFS/Azure DevOps > Otwórz z repozytorium zdalnego...** .
 
 ![Element menu, aby otworzyć rozszerzenie](media/tfvc-source-control-explorer-devops.png)
 

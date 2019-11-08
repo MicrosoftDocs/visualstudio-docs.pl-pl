@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54e65c411afe9815696112dfbcc99bcb9433c4db
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: e72b072ad2cabab643d64f149a31b1b8dbb2a054
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416865"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713943"
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>Instrukcje: Wykluczanie projektów z kompilacji
 
@@ -30,7 +30,7 @@ Aby uzyskać więcej informacji, zobacz [Omówienie konfiguracji kompilacji](../
 
 ## <a name="to-temporarily-remove-a-project-from-the-active-solution-configuration"></a>Aby tymczasowo usunąć projekt z aktywnej konfiguracji rozwiązania
 
-1. Na pasku menu wybierz kolejno opcje **Kompiluj** > **Configuration Manager**.
+1. Na pasku menu wybierz kolejno opcje **kompiluj**  > **Configuration Manager**.
 
 2. W tabeli **kontekstowe projektu** Znajdź projekt, który ma zostać wykluczony z kompilacji.
 
@@ -40,9 +40,9 @@ Aby uzyskać więcej informacji, zobacz [Omówienie konfiguracji kompilacji](../
 
 ## <a name="to-create-a-solution-configuration-that-excludes-a-project"></a>Aby utworzyć konfigurację rozwiązania, która wyklucza projekt
 
-1. Na pasku menu wybierz kolejno opcje **Kompiluj** > **Configuration Manager**.
+1. Na pasku menu wybierz kolejno opcje **kompiluj**  > **Configuration Manager**.
 
-2. Na liście **Konfiguracja aktywnego rozwiązania** wybierz pozycję  **\<nowe >** .
+2. Na liście **Konfiguracja aktywnego rozwiązania** wybierz pozycję **\<New >** .
 
 3. W polu **Nazwa** wprowadź nazwę konfiguracji rozwiązania.
 
@@ -52,10 +52,23 @@ Aby uzyskać więcej informacji, zobacz [Omówienie konfiguracji kompilacji](../
 
 6. Na pasku narzędzi **Standardowy** Sprawdź, czy nowa konfiguracja rozwiązania jest aktywna konfiguracja w polu **konfiguracje rozwiązania** .
 
-7. Na pasku menu wybierz **kompilacji** > **Kompiluj rozwiązanie**.
+7. Na pasku menu wybierz **kompilacja** > **Skompiluj ponownie rozwiązanie**.
+
+## <a name="skipped-projects"></a>Pominięte projekty
+
+Projekty można pominąć podczas kompilacji, ponieważ nie są aktualne lub są wykluczone z konfiguracji. Program Visual Studio używa programu MSBuild do kompilowania projektów. MSBuild kompiluje tylko element docelowy, jeśli dane wyjściowe są starsze niż dane wejściowe, zgodnie z sygnaturami czasowymi plików. Aby wymusić ponowną **kompilację** , użyj polecenia kompilacja > **Skompiluj ponownie rozwiązanie**.
+
+W okienku **kompilacja** okna **dane wyjściowe** program Visual Studio zgłasza liczbę projektów, które były aktualne, liczbę, która została utworzona pomyślnie, liczbę, która się nie powiodła, oraz liczbę, która została pominięta. Liczba pominiętych nie obejmuje projektów, które nie zostały skompilowane, ponieważ były aktualne. Gdy projekty są wykluczone z aktywnej konfiguracji, są pomijane podczas kompilacji. W danych wyjściowych kompilacji zobaczysz komunikat wskazujący, że projekt został pominięty:
+
+```output
+2>------ Skipped Build: Project: ConsoleApp2, Configuration: Debug x86 ------
+2>Project not selected to build for this solution configuration
+```
+
+Aby dowiedzieć się, dlaczego projekt został pominięty, zanotuj aktywną konfigurację (`Debug x86` w poprzednim przykładzie), a następnie wybierz pozycję **kompilacja** > **Configuration Manager**. Można wyświetlić lub zmienić, które projekty są pomijane dla każdej konfiguracji, zgodnie z opisem w tym artykule.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [O konfiguracjach kompilacji](../ide/understanding-build-configurations.md)
+- [Informacje o konfiguracjach kompilacji](../ide/understanding-build-configurations.md)
 - [Instrukcje: Tworzenie i edytowanie konfiguracji](../ide/how-to-create-and-edit-configurations.md)
-- [Instrukcje: Kompiluj jednocześnie wiele konfiguracji](../ide/how-to-build-multiple-configurations-simultaneously.md)
+- [Instrukcje: kompilowanie wielu konfiguracji jednocześnie](../ide/how-to-build-multiple-configurations-simultaneously.md)

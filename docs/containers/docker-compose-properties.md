@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 08/12/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 2178881c6ea0e597aef5e25074e3648162d3f6e9
-ms.sourcegitcommit: 6ae0a289f1654dec63b412bfa22035511a2ef5ad
+ms.openlocfilehash: 4ea1a936de215340cc13971e7a70a8d795d36cbb
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71950635"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713933"
 ---
 # <a name="docker-compose-build-properties"></a>Docker Compose właściwości kompilacji
 
@@ -19,7 +19,7 @@ Oprócz właściwości kontrolujących poszczególne projekty platformy Docker, 
 
 ## <a name="how-to-set-the-msbuild-properties"></a>Jak ustawić właściwości programu MSBuild
 
-Aby ustawić wartość właściwości, edytuj plik projektu. W przypadku właściwości Docker Compose ten plik projektu jest jednym z rozszerzeniem. dcproj, o ile nie wskazano inaczej w tabeli w następnej sekcji. Załóżmy na przykład, że chcesz określić uruchamianie przeglądarki po rozpoczęciu debugowania. Właściwość `DockerLaunchAction` w pliku projektu. dcproj można ustawić w następujący sposób.
+Aby ustawić wartość właściwości, edytuj plik projektu. W przypadku właściwości Docker Compose ten plik projektu jest jednym z rozszerzeniem. dcproj, o ile nie wskazano inaczej w tabeli w następnej sekcji. Załóżmy na przykład, że chcesz określić uruchamianie przeglądarki po rozpoczęciu debugowania. Właściwość `DockerLaunchAction` można ustawić w pliku projektu. dcproj w następujący sposób.
 
 ```xml
 <PropertyGroup>
@@ -33,12 +33,14 @@ Możesz dodać ustawienie właściwości do istniejącego elementu `PropertyGrou
 
 W poniższej tabeli przedstawiono właściwości programu MSBuild dostępne dla projektów Docker Compose.
 
-| Nazwa właściwości | Location | Opis | Wartość domyślna  |
+| Nazwa właściwości | Lokalizacja | Opis | Wartość domyślna  |
 |---------------|----------|-------------|----------------|
-|DockerComposeBuildArguments|dcproj|Określa dodatkowe parametry do przekazania do `docker-compose build` polecenia. Na przykład: `--parallel --pull` |
-|DockerComposeDownArguments|dcproj|Określa dodatkowe parametry do przekazania do `docker-compose down` polecenia. Na przykład: `--timeout 500`|-|  
+|AdditionalComposeFiles|dcproj|Określa dodatkowe pliki redagowania na liście rozdzielanej średnikami do wysłania do Docker-Compose. exe dla wszystkich poleceń. Ścieżki względne z pliku projektu platformy Docker (dcproj) są dozwolone.|-|
+|DockerComposeBaseFilePath|dcproj|Określa pierwszą część nazw plików w plikach do redagowania platformy Docker bez rozszerzenia *. yml* . Na przykład: <br>1. DockerComposeBaseFilePath = null/undefined: Użyj podstawowej ścieżki pliku *Docker-Zredaguj*, a pliki będą nazwane *Docker-Compose. yml* i *Docker-Compose. override. yml*<br>2. DockerComposeBaseFilePath = *mydockercompose*: pliki będą nazwane *mydockercompose. yml* i *mydockercompose. override. yml*<br> 3. DockerComposeBaseFilePath = *.. \mydockercompose*: pliki będą mieć jeden poziom. |Docker-Compose|
+|DockerComposeBuildArguments|dcproj|Określa dodatkowe parametry, które mają zostać przekazane do polecenia `docker-compose build`. Na przykład:`--parallel --pull` |
+|DockerComposeDownArguments|dcproj|Określa dodatkowe parametry, które mają zostać przekazane do polecenia `docker-compose down`. Na przykład:`--timeout 500`|-|  
 |DockerComposeProjectPath|CSPROJ lub vbproj|Ścieżka względna do pliku platformy Docker-redagowanie projektu (dcproj). Ustaw tę właściwość podczas publikowania projektu usługi, aby znaleźć skojarzone ustawienia kompilacji obrazu przechowywane w pliku Docker-Compose. yml.|-|
-|DockerComposeUpArguments|dcproj|Określa dodatkowe parametry do przekazania do `docker-compose up` polecenia. Na przykład: `--timeout 500`|-|
+|DockerComposeUpArguments|dcproj|Określa dodatkowe parametry, które mają zostać przekazane do polecenia `docker-compose up`. Na przykład:`--timeout 500`|-|
 |DockerLaunchAction| dcproj | Określa akcję uruchamiania do wykonania na F5 lub CTRL + F5.  Dozwolone wartości to None, LaunchBrowser i LaunchWCFTestClient|Brak|
 |DockerLaunchBrowser| dcproj | Wskazuje, czy ma zostać uruchomiona przeglądarka. Ignorowany, jeśli określono DockerLaunchAction. | False |
 |DockerServiceName| dcproj|Jeśli określono DockerLaunchAction lub DockerLaunchBrowser, DockerServiceName jest nazwą usługi, która powinna zostać uruchomiona.  Użyj tej właściwości, aby określić, który z potencjalnie wielu projektów, do których może się odwoływać plik platformy Docker, zostanie uruchomiony.|-|

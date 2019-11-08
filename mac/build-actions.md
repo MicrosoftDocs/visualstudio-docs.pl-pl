@@ -5,12 +5,12 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 09/18/2019
 ms.assetid: 5399BCB1-E317-4C7B-87B1-C531E985DE6E
-ms.openlocfilehash: 5a0d7c6646fac83ef70fbe2aa7384dcee992d726
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.openlocfilehash: d089f38bd91eda2565f215e8d15a74cc119b8767
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128439"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73714405"
 ---
 # <a name="build-actions"></a>Akcje kompilacji
 
@@ -33,10 +33,10 @@ Niektóre typowe akcje kompilacji dla projektów, które można kompilować w Vi
 
 |Akcja kompilacji | Typy projektów | Opis |
 |--|--|--|
-| **Opracowania** | Ile | Plik jest przesyłany do C# kompilatora jako plik źródłowy.|
-| **Zawartość** | .NET, Xamarin | W przypadku projektów ASP.NET te pliki są uwzględniane jako część lokacji podczas jej wdrażania. W przypadku projektów Xamarin. iOS i Xamarin. Mac zostaną one uwzględnione w zbiorze aplikacji.|
-| **Zasób osadzony** | .NET | Plik jest przesyłany do C# kompilatora jako zasób, który ma zostać osadzony w zestawie. [Zestawu. GetManifestResourceStream](https://docs.microsoft.com/dotnet/api/system.reflection.assembly.getmanifestresourcestream)z `System.Reflection` przestrzeni nazw można następnie użyć do odczytania pliku z zestawu.|
-| **Brak** | Ile | Plik nie jest częścią kompilacji i jest dołączany do projektu w celu łatwego dostępu do środowiska IDE. Ta wartość może być używana dla plików dokumentacji, takich jak pliki Readme, na przykład.|
+| **Opracowania** | ile | Plik jest przesyłany do C# kompilatora jako plik źródłowy.|
+| **Treści** | .NET, Xamarin | W przypadku projektów ASP.NET te pliki są uwzględniane jako część lokacji podczas jej wdrażania. W przypadku projektów Xamarin. iOS i Xamarin. Mac zostaną one uwzględnione w zbiorze aplikacji.|
+| **Zasób osadzony** | .NET | Plik jest przesyłany do C# kompilatora jako zasób, który ma zostać osadzony w zestawie. [Zestawu. GetManifestResourceStream](/dotnet/api/system.reflection.assembly.getmanifestresourcestream)z przestrzeni nazw `System.Reflection` można następnie użyć do odczytania pliku z zestawu.|
+| **Dawaj** | ile | Plik nie jest częścią kompilacji i jest dołączany do projektu w celu łatwego dostępu do środowiska IDE. Ta wartość może być używana dla plików dokumentacji, takich jak pliki Readme, na przykład.|
 
 > [!NOTE]
 > Dodatkowe akcje kompilacji mogą być definiowane przez dla określonych typów projektów, więc lista akcji kompilacji zależy od typu projektu i wartości, które nie znajdują się na liście.  

@@ -2,7 +2,7 @@
 title: Tworzenie aplikacji sieci Web ASP.NET Core w programieC#
 description: Dowiedz się, jak utworzyć prostą aplikację sieci Web Hello world w C# programie Visual Studio z programem i ASP.NET Core, krok po kroku.
 ms.custom: mvc,seodec18
-ms.date: 10/15/2019
+ms.date: 11/06/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: quickstart
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: e57a72262e9fdf3224b97d6d107e8547dc0a267e
-ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.openlocfilehash: c87fd68a68076ab0ccab2d86f758f2217e956e26
+ms.sourcegitcommit: 292ccebc601d465931fb94218a1c289c5cf77795
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72516896"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753952"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Szybki Start: Tworzenie ASP.NET Core pierwszej aplikacji sieci Web za pomocą programu Visual Studio
 
@@ -120,6 +120,8 @@ Wkrótce po program Visual Studio otworzy plik projektu.
 
 ## <a name="create-and-run-the-app"></a>Utwórz i uruchom aplikację
 
+::: moniker range="vs-2017"
+
 1. W **Eksplorator rozwiązań**rozwiń folder **strony** , a następnie wybierz pozycję **about. cshtml**.
 
    ![Wybierz plik about. cshtml z Eksplorator rozwiązań](../ide/media/csharp-aspnet-about-page-html-file.png)
@@ -168,6 +170,41 @@ Wyświetl poniższą animację, aby sprawdzić pracę zakończono w poprzedniej 
   ![Wyświetl animowany plik GIF, który pokazuje, jak utworzyć i uruchomić prostą C# aplikację sieci Web ASP.NET Core w programie Visual Studio](../ide/media/csharp-aspnet-animated-hello-world.gif)
 
 Gratulujemy zakończenia tego przewodnika Szybki Start! Mamy nadzieję C#, że uczysz się nieco z kilku rozwiązań, ASP.NET Core i środowiska IDE programu Visual Studio (zintegrowane środowisko programistyczne).
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. W **Eksplorator rozwiązań**rozwiń folder **strony** , a następnie wybierz polecenie **index. cshtml**.
+
+   ![Wybierz plik index. cshtml z Eksplorator rozwiązań](../ide/media/vs-2019/csharp-aspnet-index-page-cshtml-file.png)
+
+   Ten plik odpowiada stronie o nazwie **Home** w aplikacji sieci Web, która działa w przeglądarce sieci Web.
+
+   ![Strona informacje w aplikacji sieci Web](../ide/media/vs-2019/csharp-aspnet-index-page.png)
+
+   W edytorze zobaczysz kod HTML dla tekstu wyświetlanego na stronie **głównej** .
+
+   ![Kod HTML w pliku index. cshtml dla strony głównej w edytorze programu Visual Studio](../ide/media/vs-2019/csharp-aspnet-index-cshtml-page.png)
+
+1. Zmień tekst "Welcome", aby odczytał "**Hello World!** ".
+
+   ![W edytorze programu Visual Studio zmień domyślny kod HTML, który mówi, że Hello world zamiast tego.](../ide/media/vs-2019/csharp-aspnet-index-cshtml-page-hello-world.png)
+
+1. Wybierz **IIS Express** lub naciśnij klawisz **Ctrl** +**F5** , aby uruchomić aplikację i otworzyć ją w przeglądarce sieci Web.
+
+   ![Wybierz przycisk IIS Express w programie Visual Studio](../ide/media/vs-2019/csharp-aspnet-generic-iisbutton.png)
+
+   > [!NOTE]
+   > Jeśli zostanie wyświetlony komunikat o błędzie z informacją, że **nie można nawiązać połączenia z serwerem sieci Web "IIS Express"** lub komunikat o błędzie z informacją o certyfikacie SSL, Zamknij program Visual Studio. Następnie otwórz program Visual Studio przy użyciu opcji **Uruchom jako administrator** w menu kontekstowym po kliknięciu prawym przyciskiem myszy. Następnie ponownie uruchom aplikację.
+
+1. W przeglądarce sieci Web sprawdź, czy strona **główna** zawiera zaktualizowany tekst.
+
+   ![Wyświetlanie zaktualizowanej strony głównej zawierającej wprowadzone zmiany](../ide/media/vs-2019/csharp-aspnet-index-page-hello-world.png)
+
+1. Zamknij przeglądarkę sieci Web.
+
+::: moniker-end
 
 ## <a name="next-steps"></a>Następne kroki
 

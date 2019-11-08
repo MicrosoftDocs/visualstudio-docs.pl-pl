@@ -11,12 +11,12 @@ ms.prod: visual-studio-mac
 ms.custom: video
 ms.workload:
 - azure
-ms.openlocfilehash: 335f94ddbf0b06eb1a8de093baee98b0b3105369
-ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
+ms.openlocfilehash: 97964589b832b05f4d528a801a1899eeb8385883
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70222776"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73714461"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio-for-mac"></a>Publikowanie aplikacji sieci Web w celu Azure App Service przy użyciu Visual Studio dla komputerów Mac
 
@@ -26,7 +26,7 @@ Za pomocą narzędzia do publikowania można publikować ASP.NET Core aplikacje 
 
 - [Program Visual Studio 2017 dla komputerów Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2017) został zainstalowany z włączonym ASP.NET Core.
 - Subskrypcja platformy Azure. Jeśli nie masz jeszcze subskrypcji, [zarejestruj się bezpłatnie](https://azure.microsoft.com/free/dotnet/), co obejmuje $200 USD za 30 dni i 12 miesięcy za popularne bezpłatne usługi.
-- Projekt ASP.NET Core. Jeśli nie masz jeszcze projektu, możesz [utworzyć nowy](https://docs.microsoft.com/visualstudio/mac/create-new-projects?view=vsmac-2017).
+- Projekt ASP.NET Core. Jeśli nie masz jeszcze projektu, możesz [utworzyć nowy](/visualstudio/mac/create-new-projects?view=vsmac-2017).
 
 ## <a name="publish-to-azure-app-service"></a>Publikowanie w usłudze Azure App Service
 
@@ -56,7 +56,7 @@ Za pomocą narzędzia do publikowania można publikować ASP.NET Core aplikacje 
 
     Możesz zmienić subskrypcję, z którą zostanie skojarzona App Service za pomocą listy rozwijanej **subskrypcji** .
 
-    Możesz wybrać istniejącą **grupę zasobów** przy użyciu listy rozwijanej lub utworzyć nową z **+** przyciskiem.
+    Możesz wybrać istniejącą **grupę zasobów** za pomocą listy rozwijanej lub utworzyć nową z przyciskiem **+** .
 
     W przypadku planu App Service wybierz istniejący lub Utwórz nowy, wybierając przycisk radiowy **niestandardowe** .
 

@@ -7,12 +7,12 @@ ms.date: 09/18/2019
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: 3e4a41567b02807dce280426daf59e30ed1876eb
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 1ace600f9c4582e99c6fa324cb9dcc61593d3d97
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211467"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73716780"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Zainstaluj program Visual Studio 2019 dla komputerów Mac
 
@@ -28,14 +28,14 @@ Aby rozpocząć tworzenie natywnych aplikacji platformy .NET dla wielu platform 
 Do kompilowania aplikacji platformy Xamarin dla systemu iOS lub macOS potrzebne są również:
 
 - Xcode 10,0 lub nowszy. Zwykle zalecana jest najnowsza stabilna wersja.
-- Identyfikator Apple ID. Jeśli nie masz już identyfikatora Apple ID, możesz utworzyć nowy https://appleid.apple.com. Konieczne jest posiadanie identyfikatora Apple ID na potrzeby instalacji i logowania do usługi Xcode.
+- Identyfikator Apple ID. Jeśli nie masz już identyfikatora Apple ID, możesz utworzyć nowy, w https://appleid.apple.com. Konieczne jest posiadanie identyfikatora Apple ID na potrzeby instalacji i logowania do usługi Xcode.
 
 ## <a name="installation-instructions"></a>Instrukcje instalacji
 
 1. Pobierz instalatora ze [strony pobierania Visual Studio dla komputerów Mac](https://aka.ms/vsmac).
 2. Po zakończeniu pobierania kliknij plik **VisualStudioforMacInstaller. dmg** , aby zainstalować Instalatora, a następnie uruchom go, dwukrotnie klikając logo strzałki:
 
-    [![Kliknij dużą strzałkę, aby rozpocząć instalację.](media/install-installer-sml.png)](media/install-installer.png#lightbox)
+    [Aby rozpocząć instalację, ![kliknij dużą strzałkę](media/install-installer-sml.png)](media/install-installer.png#lightbox)
 
 3. Może zostać wyświetlone ostrzeżenie o aplikacji pobieranej z Internetu. Kliknij przycisk **Otwórz**.
 4. Zaczekaj, aż Instalator sprawdzi swój system:
@@ -44,16 +44,16 @@ Do kompilowania aplikacji platformy Xamarin dla systemu iOS lub macOS potrzebne 
 
 5. Zostanie wyświetlony alert z prośbą o potwierdzenie postanowień dotyczących prywatności i licencji. Postępuj zgodnie z linkami, aby je odczytać, a następnie naciśnij pozycję **Kontynuuj** , jeśli akceptujesz:
 
-    [![Postępuj zgodnie z linkami do prywatności i postanowień, a następnie Kontynuuj, jeśli zgadzasz się](media/install-privacy.png)](media/install-privacy.png#lightbox)
+    [![postępuj zgodnie z linkami do prywatności i postanowień, a następnie Kontynuuj, jeśli zgadzasz się](media/install-privacy.png)](media/install-privacy.png#lightbox)
 
 6. Zostanie wyświetlona lista dostępnych obciążeń. Wybierz składniki, których chcesz użyć:
 
-    [![Wybierz opcjonalne funkcje obciążenia, które chcesz zainstalować](media/install-selection.png)](media/install-selection.png#lightbox)
+    [![wybrać opcjonalne funkcje obciążenia, które chcesz zainstalować](media/install-selection.png)](media/install-selection.png#lightbox)
 
    Jeśli nie chcesz instalować wszystkich platform, Skorzystaj z poniższego przewodnika, aby ułatwić podjęcie decyzji o tym, które platformy instalować:
 
 
-|Typ aplikacji  |Cel  |Wybór  |Uwagi  |
+|Typ aplikacji  |Obiektów  |Wybór  |Uwagi  |
 |---------|---------|---------|---------|
 |**Aplikacje korzystające z platformy Xamarin**| Xamarin.Forms|Wybierz platformy **Android** i **iOS** |Konieczne będzie zainstalowanie [ **Xcode**](https://developer.apple.com/xcode/) |
 ||tylko system iOS|Wybierz platformę **iOS**|Konieczne będzie zainstalowanie [ **Xcode**](https://developer.apple.com/xcode/)|
@@ -68,17 +68,17 @@ Do kompilowania aplikacji platformy Xamarin dla systemu iOS lub macOS potrzebne 
 7. Po dokonaniu wyboru Naciśnij przycisk **Zainstaluj** .
 8. Instalator wyświetli postęp, gdy pobiera i instaluje Visual Studio dla komputerów Mac i wybrane obciążenia. Zostanie wyświetlony monit o wprowadzenie hasła w celu udzielenia uprawnień niezbędnych do instalacji.
 
-    [![Wybierz opcjonalne funkcje obciążenia, które chcesz zainstalować](media/installation-progress.png)](media/installation-progress.png#lightbox)
+    [![wybrać opcjonalne funkcje obciążenia, które chcesz zainstalować](media/installation-progress.png)](media/installation-progress.png#lightbox)
 
 9. Po zainstalowaniu programu Visual Studio dla komputerów Mac wyświetli monit o spersonalizowanie instalacji, logując się i wybierając kluczowe powiązania, których chcesz użyć:
 
-    [![Zaloguj się do środowiska IDE](media/ide-tour-2019-start-signin.png)](media/ide-tour-2019-start-signin.png#lightbox)
+    [![zalogować się do środowiska IDE](media/ide-tour-2019-start-signin.png)](media/ide-tour-2019-start-signin.png#lightbox)
 
-    [![Wybierz Skróty klawiaturowe, których chcesz użyć](media/ide-tour-2019-keyboard-shortcut.png)](media/ide-tour-2019-keyboard-shortcut.png#lightbox)
+    [![wybrać skróty klawiaturowe, których chcesz użyć](media/ide-tour-2019-keyboard-shortcut.png)](media/ide-tour-2019-keyboard-shortcut.png#lightbox)
 
-Jeśli podczas instalowania programu w środowisku firmowym występuje problem z siecią, zapoznaj się z instrukcjami dotyczącymi [instalacji za zaporą lub serwerem proxy](https://docs.microsoft.com/visualstudio/mac/installation#install-visual-studio-for-mac-behind-a-firewall-or-proxy-server) .
+Jeśli podczas instalowania programu w środowisku firmowym występuje problem z siecią, zapoznaj się z instrukcjami dotyczącymi [instalacji za zaporą lub serwerem proxy](/visualstudio/mac/installation#install-visual-studio-for-mac-behind-a-firewall-or-proxy-server) .
 
-Dowiedz się więcej o zmianach wprowadzonych w [informacjach o wersji](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes).
+Dowiedz się więcej o zmianach wprowadzonych w [informacjach o wersji](/visualstudio/releasenotes/vs2019-mac-relnotes).
 
 > [!NOTE]
 > W przypadku wybrania opcji nieinstalowania platformy lub narzędzia podczas instalacji początkowej (bez zaznaczania w kroku #6), należy ponownie uruchomić Instalatora, jeśli chcesz dodać składniki później.
@@ -98,7 +98,7 @@ Zainstalowanie Visual Studio dla komputerów Mac pozwala rozpocząć pisanie kod
 ### <a name="ios"></a>iOS
 
 1. [Witaj, iOS](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS/)
-2. [Inicjowanie obsługi urządzeń](https://developer.xamarin.com/guides/ios/getting_started/installation/device_provisioning) (Aby uruchomić aplikację na urządzeniu).
+2. [Inicjowanie obsługi administracyjnej urządzeń](https://developer.xamarin.com/guides/ios/getting_started/installation/device_provisioning)(do uruchamiania aplikacji na urządzeniu).
 
 ### <a name="android"></a>Android
 
