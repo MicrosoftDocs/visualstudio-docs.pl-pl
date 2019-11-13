@@ -1,5 +1,5 @@
 ---
-title: Używanie _Analysis_assume na potrzeby wskazówek dotyczących analizy kodu
+title: Użyj _Analysis_assume na potrzeby wskazówek dotyczących analizy kodu
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,14 +12,14 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 186ea6ac58736098720d60c644c30801073b7453
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 9933a013ed4f2df0978fb66e3aff87b4cdc024f9
+ms.sourcegitcommit: c6af923c1f485959d751b23ab3f03541013fc4a7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018721"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73925963"
 ---
-# <a name="how-to-specify-additional-code-information-by-using-_analysis_assume"></a>Instrukcje: Określanie dodatkowych informacji o kodzie za pomocą funkcji __Analysis_assume
+# <a name="how-to-specify-additional-code-information-by-using-_analysis_assume"></a>Instrukcje: Określanie dodatkowych informacji o kodzie przy użyciu _Analysis_assume
 
 Możesz dostarczyć wskazówki do narzędzia do analizy kodu dla języka C/C++ kodu, które ułatwią proces analizy i zmniejszają ostrzeżenia. Aby podać dodatkowe informacje, użyj następującej funkcji:
 
@@ -52,7 +52,7 @@ void test()
 {
     char pc = (char)malloc(5);
     FreeAndNull(&pc);
-    __analysis_assume(pc == NULL);
+    _Analysis_assume(pc == NULL);
     f(pc);
 }
 ```

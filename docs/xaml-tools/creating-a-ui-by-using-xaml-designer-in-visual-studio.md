@@ -1,5 +1,5 @@
 ---
-title: Przegląd projektant XAML
+title: Projektant XAML — omówienie
 ms.date: 07/31/2019
 ms.topic: conceptual
 f1_keywords:
@@ -12,24 +12,24 @@ ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0f43222e593b836f44a84e5f64642403f0263ca5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0facc87df720af8376561ae7599fe20afeab1a12
+ms.sourcegitcommit: c6af923c1f485959d751b23ab3f03541013fc4a7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649710"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73925967"
 ---
 # <a name="create-a-ui-by-using-xaml-designer"></a>Tworzenie interfejsu użytkownika przy użyciu projektanta XAML
 
 Projektant XAML w programie Visual Studio i Blend for Visual Studio udostępnia interfejs wizualny ułatwiający projektowanie aplikacji opartych na języku XAML, takich jak WPF, platformy UWP i Xamarin. Forms. Możesz tworzyć interfejsy użytkownika dla aplikacji, przeciągając kontrolki z okna przybornika (okna elementów zawartości w Blend for Visual Studio) i ustawiając właściwości w okno Właściwości. Możesz również edytować XAML bezpośrednio w widoku XAML.
 
-Użytkownicy zaawansowani mogą nawet [dostosowywać Projektant XAML](../extensibility/xaml-designer-extensibility-migration.md).
+Użytkownicy zaawansowani mogą nawet [dostosowywać Projektant XAML](https://github.com/microsoft/xaml-designer-extensibility/blob/master/documents/xaml-designer-extensibility-migration.md).
 
 ## <a name="xaml-designer-workspace"></a>projektant XAML obszar roboczy
 
 Obszar roboczy w projektant XAML składa się z kilku elementów interfejsu wizualizacji. Obejmują one *obszar kompozycji* (czyli powierzchnię projektowania wizualizacji), Edytor XAML, okno konspektu dokumentu (Obiekty i oś czasu okno Blend for Visual Studio) i okno właściwości. Aby otworzyć projektant XAML, kliknij prawym przyciskiem myszy plik XAML w **Eksplorator rozwiązań** i wybierz polecenie **Projektant widoków**.
 
-Projektant XAML udostępnia widok XAML i zsynchronizowaną widok Projekt renderowanego znacznika języka XAML aplikacji. Gdy plik XAML jest otwarty w programie Visual Studio lub Blend for Visual Studio, można przełączać się między widok Projekt i widokiem XAML przy użyciu kart **projektowanie** i **XAML** . Możesz użyć przycisku **Zamień okienka** ![Swap okienka w Projektant XAML ](media/swap-panes.PNG), aby przełączyć, które okno pojawia się na górze: obszar kompozycji lub Edytor XAML.
+Projektant XAML udostępnia widok XAML i zsynchronizowaną widok Projekt renderowanego znacznika języka XAML aplikacji. Gdy plik XAML jest otwarty w programie Visual Studio lub Blend for Visual Studio, można przełączać się między widok Projekt i widokiem XAML przy użyciu kart **projektowanie** i **XAML** . Możesz użyć przycisku **Zamień okienka** ![przycisk Zamień okienka w Projektant XAML](media/swap-panes.PNG), aby przełączyć, które okno pojawia się na górze: obszar kompozycji lub Edytor XAML.
 
 ### <a name="design-view"></a>widok Projekt
 
