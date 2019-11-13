@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0493e7d16a7c7ecb7a9cf7d414e3bd13cb9ad9a7
-ms.sourcegitcommit: f9f389e72787de30eb869a55ef7725a10a4011f0
+ms.openlocfilehash: cb759ba9571e16d0030f1fd6baf6d4feb03efb2e
+ms.sourcegitcommit: 510529f2f86a9897ed5767973e60c99c0d3a77a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73636576"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73956146"
 ---
 # <a name="common-msbuild-project-items"></a>Wspólne elementy projektu MSBuild
 W [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]element jest nazwanym odwołaniem do co najmniej jednego pliku. Elementy zawierają metadane, takie jak nazwy plików, ścieżki i numery wersji. Wszystkie typy projektów w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] mają kilka elementów wspólnych. Te elementy są zdefiniowane w pliku *Microsoft. Build. CommonTypes. xsd*.
@@ -141,13 +141,14 @@ W [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md
 
 > [!NOTE]
 > Dotyczy to projektów korzystających tylko z zestaw .NET Core SDK.
+
 ### <a name="baseapplicationmanifest"></a>BaseApplicationManifest
  Reprezentuje podstawowy manifest aplikacji dla kompilacji i zawiera [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] informacje o zabezpieczeniach wdrożenia.
 
 ### <a name="codeanalysisimport"></a>CodeAnalysisImport
  Reprezentuje projekt FxCop do zaimportowania.
 
-### <a name="import"></a>Zaimportować
+### <a name="import"></a>zaimportować
  Reprezentuje zestawy, których przestrzenie nazw powinny być importowane przez kompilator [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)].
 
 ## <a name="see-also"></a>Zobacz także
