@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/30/2019
 ms.topic: conceptual
 description: Dowiedz się, jak korzystać z usługi Azure DevOps jako subskrybenta programu Visual Studio.
-ms.openlocfilehash: 227ba1652c592a6fdf3f20bdb5052d9330f142a1
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
+ms.openlocfilehash: 9b4c616c870f0834b6974d59540035687b32fc12
+ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314159"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73983691"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Korzyści z platformy Azure DevOps dla subskrybentów programu Visual Studio
 Jako aktywną subskrypcję programu Visual Studio możesz korzystać z szeregu funkcji platformy Azure DevOps, które są dostępne w ramach subskrypcji jako korzyści. Będzie można korzystać z tych samych funkcji w każdej organizacji usługi Azure DevOps, w której jesteś członkiem, niezależnie od tego, czy została utworzona organizacja, czy dodana przez kogoś innego.
@@ -25,7 +25,9 @@ Gdy zalogujesz się do usługi Azure DevOps przy użyciu tożsamości użytej do
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Odnawialny?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (standardowa, miesięczna chmura)   | LICENCJONOWANie, Azure, sprzedaż detaliczna, wybrane NFR<sup>1</sup>  | Azure Boards & repozytoria (podstawowe), Azure Test Plans, Azure Pipelines (samodzielny)       |  Tak          |
-| Visual Studio Professional (standardowa, miesięczna chmura) | LICENCJONOWANie, Azure, sprzedaż detaliczna,                                        | Repozytoria & Azure Boards (podstawowa)                                                            |  Tak          |
+| Visual Studio Enterprise z usługą GitHub Enterprise   | Licencja| Azure Boards & repozytoria (podstawowe), Azure Test Plans, Azure Pipelines (samodzielny)       |  Tak          |
+| Visual Studio Professional (standardowa, miesięczna chmura) | LICENCJONOWANie, Azure, sprzedaż detaliczna                                        | Repozytoria & Azure Boards (podstawowa)                                                            |  Tak          |
+| Visual Studio Professional z usługą GitHub Enterprise | Licencja| Repozytoria & Azure Boards (podstawowa)                                                            |  Tak          |
 | Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Azure Boards & repozytoria (podstawowe), Azure Test Plans                                              |  Tak          |
 | Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | Azure Boards & repozytoria (podstawowe), Azure Test Plans                                              |  Tak          |
 ||
@@ -49,3 +51,5 @@ Dowiedz się więcej o funkcjach usługi Azure DevOps:
 - [Repozytoria & Azure Boards (podstawowa)](https://azure.microsoft.com/services/devops/compare-features/)
 - [Azure Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 - [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed)
+
+Dowiedz się, jak aktywować środki na korzystanie z [usługi Azure DevTest](vs-azure.md).

@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: Dowiedz się więcej na temat korzyści z pomocy technicznej dla społeczności platformy Azure zawartych w wybranych subskrypcjach programu Visual Studio.
-ms.openlocfilehash: 128147833baf450c0d161f39628a0928e9118412
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: 32a1c962e238bfc5ab8083ff643a99a77b699925
+ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816541"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73983748"
 ---
 # <a name="azure-community-support-forum-in-visual-studio-subscriptions"></a>Forum pomocy technicznej platformy Azure w ramach subskrypcji programu Visual Studio
 Uzyskaj pomoc bezpośrednio z zespołu platformy Azure w ramach wybranych forów pomocy technicznej za pośrednictwem społeczności platformy Azure.  Korzyść społeczność platformy Azure zapewnia dostęp do kolekcji forów skoncentrowanych na tematach związanych z platformą Azure.
@@ -50,7 +50,9 @@ Dostępność korzyści społeczności platformy Azure zależy od poziomu subskr
 |                                          Poziom subskrypcji                                           |     Kanały      |    Korzyść    | Odnawialny? |
 |-------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
 |                           Visual Studio Enterprise (standardowa)                           | LICENCJONOWANie, Azure, sprzedaż detaliczna |   Jeden rok    |    Tak     |
+|                           Visual Studio Enterprise z usługą GitHub Enterprise                           | LICENCJONOWANie, Azure, sprzedaż detaliczna |   Jeden rok    |    Tak     |
 |                          Visual Studio Professional (standardowa)                          | LICENCJONOWANie, Azure, sprzedaż detaliczna |   Jeden rok    |    Tak     |
+|                          Visual Studio Professional z usługą GitHub Enterprise                          | LICENCJONOWANie, Azure, sprzedaż detaliczna |   Jeden rok    |    Tak     |
 |                              Visual Studio Test Professional (standardowa)                               |    LICENCJONOWANie detaliczne     |   Jeden rok    |    Tak     |
 |                                       Platformy MSDN (standardowa)                                       |    LICENCJONOWANie detaliczne     |   Jeden rok    |    Tak     |
 | Visual Studio Enterprise (chmura miesięczna), Visual Studio Professional (chmura miesięczna), NFR<sup>1</sup> |        Wszystkie        | Niedostępne |     Nie     |

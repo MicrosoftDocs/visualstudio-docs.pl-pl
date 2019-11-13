@@ -15,18 +15,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 16fb3e4a0e1aed14e4a3f1b3178dc753f5dc10b4
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 6dc1449a40528670274ea5b275cca3f0a8d2f277
+ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984188"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73983774"
 ---
 # <a name="security-for-sharepoint-solutions"></a>Zabezpieczenia rozwiązań programu SharePoint
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] obejmuje następujące funkcje, aby zwiększyć bezpieczeństwo aplikacji programu SharePoint.
 
 ## <a name="safe-control-entries"></a>Bezpieczne wpisy kontroli
- Każdy element projektu programu SharePoint utworzony w [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] ma właściwość **wpisów bezpiecznego sterowania** , która reprezentuje kolekcję bezpiecznych kontrolek. **Bezpieczna** podwłaściwość umożliwia określenie formantów, które są uważane za bezpieczne. Aby uzyskać więcej informacji, zobacz [udostępnianie informacji o pakiecie i wdrożeniu w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) i [Określanie bezpiecznego składniki Web Part](/previous-versions/office/developer/sharepoint2003/dd583154(v=office.11)#sharepoint_northwindwebparts_topic19).
+ Każdy element projektu programu SharePoint utworzony w [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] ma właściwość **wpisów bezpiecznego sterowania** , która reprezentuje kolekcję bezpiecznych kontrolek. **Bezpieczna** podwłaściwość umożliwia określenie formantów, które są uważane za bezpieczne. Aby uzyskać więcej informacji, zobacz [udostępnianie informacji o pakiecie i wdrożeniu w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) i [Określanie bezpiecznego składniki Web Part](/previous-versions/office/developer/sharepoint2003/dd583154(v=office.11)#specifying-safe-web-parts).
 
 ## <a name="allowpartiallytrustedcallers-attribute"></a>AllowPartiallyTrustedCallers — atrybut
  Domyślnie tylko aplikacje, które są w pełni zaufane przez system w środowisku uruchomieniowym zabezpieczenia dostępu kodu (CAS), mogą uzyskać dostęp do udostępnionego zestawu kodu zarządzanego. Oznaczenie w pełni zaufanego zestawu przy użyciu atrybutu AllowPartiallyTrustedCallers umożliwia częściowo zaufanym zestawom dostęp do niego.
