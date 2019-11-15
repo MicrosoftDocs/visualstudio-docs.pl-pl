@@ -1,6 +1,6 @@
 ---
 title: Ogólne, debugowanie, Opcje — okno dialogowe | Microsoft Docs
-ms.date: 11/09/2018
+ms.date: 11/12/2019
 ms.topic: reference
 f1_keywords:
 - vs.debug.options.General
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbd99d260ba61d9e3ae9e877ecc1cefb1a22892e
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 528fa04b081937af69e647b01911ed00c1ec40c9
+ms.sourcegitcommit: 9801fc66a14c0f855b9ff601fb981a9e5321819e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72569065"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "74072713"
 ---
 # <a name="general-debugging-options"></a>Ogólne opcje debugowania
 
@@ -137,6 +137,12 @@ Aby zobaczyć, jakie symbole są dostępne w tabeli eksportu biblioteki DLL, uż
 - **Pokaż narzędzia środowiska uruchomieniowego w aplikacji**: pokazuje **dynamiczne polecenia drzewa wizualnego** na pasku narzędzi w oknie głównym debugowanej aplikacji XAML. Ta opcja została wprowadzona w programie Visual Studio 2015 Update 2.
 
 - **Włącz gorącą funkcję XAML**: umożliwia korzystanie z funkcji gorącego ładowania XAML w kodzie XAML, gdy aplikacja jest uruchomiona. (Ta funkcja była wcześniej nazywana "Edytuj i Kontynuuj" XAML ")
+
+::: moniker range=">= vs-2019" 
+- **Włącz opcję tylko mój kod XAML**: począwszy od programu Visual Studio 2019 w wersji 16,4, **dynamiczne drzewo wizualne** domyślnie pokazuje tylko kod XAML, który jest klasyfikowany do kodu użytkownika. Jeśli wyłączysz tę opcję, w narzędziu zostanie wyświetlony cały wygenerowany kod XAML.
+
+- Wyłącz **tryb zaznaczania, gdy element jest zaznaczony** Począwszy od programu Visual Studio 2019 w wersji 16,4, przycisk selektora elementu paska narzędzi w aplikacji (**Włącz wybór**) wyłącza się, gdy element jest zaznaczony. Wyłączenie tej opcji spowoduje, że zaznaczenie elementu zostanie włączone do momentu ponownego kliknięcia przycisku paska narzędzi w aplikacji.
+::: moniker-end
 
 **Włącz narzędzia diagnostyczne podczas debugowania**: okno **Narzędzia diagnostyczne** pojawia się podczas debugowania.
 

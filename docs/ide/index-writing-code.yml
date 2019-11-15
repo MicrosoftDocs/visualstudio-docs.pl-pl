@@ -1,6 +1,6 @@
 ### YamlMime:Landing
-title: Edytuj kod w programie Visual Studio
-summary: Dowiedz się więcej na temat edytowania zadań, takich jak otwieranie projektu, korzystanie z funkcji edytora kodu i obsługa spójnego stylu kodu.
+title: Organizowanie i edytowanie kodu w programie Visual Studio
+summary: Dowiedz się więcej o pracy z projektami kodu, przy użyciu funkcji edytora kodu i zachowaniu spójnego stylu kodu.
 metadata:
   title: Funkcje edytora kodu
   description: Dowiedz się więcej o funkcjach edytowania kodu w programie Visual Studio.
@@ -10,12 +10,12 @@ metadata:
   author: gewarren
   ms.author: gewarren
   ms.date: 10/15/2019
-  ms.openlocfilehash: 30345839ca1c5f4f07b3c36415f7aad277693069
-  ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+  ms.openlocfilehash: 8cecddb4c8b9a49d56a6f133b751be53302b4347
+  ms.sourcegitcommit: 20325d85cd74906f5f30668133bd11a40f229b0c
   ms.translationtype: MT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 10/17/2019
-  ms.locfileid: "72516828"
+  ms.lasthandoff: 11/14/2019
+  ms.locfileid: "74087252"
 landingContent:
 - title: Otwieranie lub tworzenie projektu
   linkLists:
