@@ -6,12 +6,12 @@ manager: lank
 ms.date: 08/02/2019
 ms.topic: conceptual
 description: Poznaj korzyści wynikające z korzystania z pakietu Office 365 w niektórych subskrypcjach programu Visual Studio.
-ms.openlocfilehash: 58bfed3de99e3a3fa0a46e084ea566ae0451c47f
-ms.sourcegitcommit: bdccab4c2dbd50ea8adaaf88c69c9ca32db88099
+ms.openlocfilehash: 2dde8489f15d8bd2e6a5d04045b99aea2245f73d
+ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73144708"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74099610"
 ---
 # <a name="office-365-proplus-in-visual-studio-subscriptions"></a>Pakiet Office 365 ProPlus w subskrypcjach programu Visual Studio
 
@@ -51,8 +51,10 @@ Wykonaj następujące kroki, aby pobrać i aktywować pakiet Office 365 ProPlus:
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Odnawialny?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (standardowa)   | LICENCJONOWANie, Azure, sprzedaż detaliczna| Dostępne       |  Tak          |
+| Visual Studio Enterprise z usługą GitHub Enterprise  | Licencja | Dostępne       |  Tak          |
 | Visual Studio Enterprise (standardowa)   | NFR<sup>1</sup> | Niedostępne       |  Brak          |
 | Visual Studio Professional (standardowa) | LICENCJONOWANie, Azure, sprzedaż detaliczna                                       | Niedostępne                                                            |  Brak          |
+| Visual Studio Professional z usługą GitHub Enterprise | Licencja | Niedostępne         |  Brak          |
 | Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Niedostępne                                             |  Brak          |
 | Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | Niedostępne                                              |  Brak          |
 | Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure | Niedostępne | Brak |

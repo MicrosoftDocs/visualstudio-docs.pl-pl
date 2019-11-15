@@ -3,15 +3,15 @@ title: Korzyść środowiska IDE programu Visual Studio w Visual Studio Subscrip
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 08/01/2019
+ms.date: 11/14/2019
 ms.topic: conceptual
 description: Dowiedz się, jak pobrać i zainstalować środowisko IDE programu Visual Studio zawarte w subskrypcji programu Visual Studio.
-ms.openlocfilehash: 5a5acda814739f907aaa36e9b3408527b5ece732
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: 74f7de0272130f88c683dcabefaecccf1554ab12
+ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816523"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74099631"
 ---
 # <a name="the-visual-studio-2019-benefit"></a>Korzyść dla programu Visual Studio 2019
 
@@ -62,7 +62,9 @@ Aby pobrać środowisko IDE:
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Odnawialny?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (standardowa, miesięczna chmura)   | LICENCJONOWANie, Azure, sprzedaż detaliczna, wybrane NFR<sup>1</sup> | Dostępne       |  Tak          |
+| Visual Studio Enterprise z usługą GitHub Enterprise   | Licencja | Dostępne       |  Tak          |
 | Visual Studio Professional (standardowa, miesięczna chmura) | LICENCJONOWANie, Azure, sprzedaż detaliczna                                       | Dostępne                                                            |  Tak          |
+| Visual Studio Professional z usługą GitHub Enterprise | Licencja   | Dostępne              |  Tak          |
 | Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Dostępne                                             |  Tak         |
 | Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | Niedostępne                                              |  Brak          |
 
@@ -82,5 +84,5 @@ Nie masz pewności, której subskrypcji używasz?  Połącz się z [https://my.v
 ## <a name="next-steps"></a>Następne kroki
 Po zainstalowaniu programu Visual Studio nie zapomnij uaktywnić tych innych ważnych korzyści:
 - [Azure DevOps](vs-azure-devops.md)
-- [Kredyty na korzystanie z usługi Azure DevTest](vs-azure.md)
+- [Indywidualne środki na korzystanie z usługi Azure DevTest](vs-azure.md)
 - [Konto dewelopera systemu Windows](vs-windows-dev.md)

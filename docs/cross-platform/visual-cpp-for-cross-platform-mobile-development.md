@@ -1,7 +1,7 @@
 ---
 title: Programowanie aplikacji mobilnych dla wielu platform C++ za pomocą programu | Microsoft Docs
 ms.custom: ''
-ms.date: 10/17/2019
+ms.date: 11/14/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +12,14 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 61bb3e17b104759995852959a7396d5a76927cfb
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: bc4164ec405aed2941e807934ee8d66b7ae72504
+ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72589045"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74098973"
 ---
-# <a name="cross-platform-mobile-development-with-c"></a>Programowanie aplikacji mobilnych na wiele platformC++
+# <a name="cross-platform-mobile-development-with-c"></a>Opracowywanie aplikacji mobilnych na wiele platform w języku C++
 
 Możesz tworzyć natywne C++ aplikacje dla urządzeń z systemami iOS, Android i Windows za pomocą międzyplatformowych narzędzi dostępnych w programie Visual Studio. **Programowanie aplikacji C++ mobilnych** w programie to obciążenie dostępne w Instalatorze programu Visual Studio. Instaluje zestawy SDK i narzędzia potrzebne do tworzenia międzyplatformowych bibliotek udostępnionych i aplikacji natywnych. Po zainstalowaniu programu możesz użyć C++ programu, aby utworzyć kod, który jest uruchamiany na urządzeniach z systemem iOS lub Android oraz na platformach, Windows, sklepie Windows i konsoli Xbox.
 
@@ -42,10 +42,6 @@ Programowanie aplikacji mobilnych C++ za pomocą programu to z możliwością in
 Jeśli korzystasz z programowania w systemie Android lub iOS, mamy doskonały materiał na temat rozpoczynania pracy. Program Visual Studio jest środowiskiem deweloperskim i obsługującym. Aby dowiedzieć się, jak z niej korzystać, wypróbuj [deweloperów systemu Android](/previous-versions/windows/apps/dn275875\(v=win.10\)) lub Rozpocznij [pracę dla deweloperów systemu iOS](/previous-versions/windows/apps/jj657966\(v=win.10\)). Te artykuły zawierają wprowadzenie do programu Visual Studio i koncepcje potrzebne do tworzenia aplikacji dla wielu platform dla systemu Windows i sklepu Windows. Aby rozpocząć tworzenie pierwszej aplikacji dla wielu platform dla systemów iOS i Android, zobacz [Tworzenie aplikacji OpenGL ES w systemach Android i iOS](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md).
 
 Tworzenie aplikacji mobilnych przy C++ użyciu obciążeń obejmuje kilka szablonów, które ułatwiają rozpoczęcie pracy z aplikacjami:
-
-- Aplikacja OpenGLs 2 (systemy Android, iOS, Universal Windows)
-
-  Tworzy rozwiązanie, które zawiera zestaw projektów do kompilowania aplikacji systemu Android Native Activity, aplikacji dla systemu iOS i uniwersalnej aplikacji systemu Windows wraz z udostępnioną C++ biblioteką kodu. Aplikacje te używają bibliotek specyficznych dla platformy utworzonych przy użyciu C++ wspólnego kodu OpenGL ES do rysowania tego samego obracającego się modułu w każdej aplikacji. Aby użyć tego szablonu, należy uwzględnić obciążenie **platformy uniwersalnej systemu Windows** podczas instalowania programu Visual Studio.
 
 - Aplikacja natywna (Android)
 
