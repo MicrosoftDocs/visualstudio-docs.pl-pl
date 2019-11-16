@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.topic: overview
 ms.date: 03/20/2019
 ms.technology: vs-azure
-ms.openlocfilehash: b60e5df4d94c290ca8aa7bf56471b5fed6c1879a
-ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
+ms.openlocfilehash: 312c827c3b748e10951b243070f43cce559e3a60
+ms.sourcegitcommit: bbff780cda82bb64862d77fe8f407f1803beb876
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73568906"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74127193"
 ---
 # <a name="container-tools-in-visual-studio"></a>Narzędzia kontenerów w programie Visual Studio
 
@@ -53,11 +53,13 @@ Obsługa platformy Docker jest dostępna dla projektów ASP.NET, projektów ASP.
 
 Obsługa platformy Docker w programie Visual Studio została zmieniona na wiele wydań w odpowiedzi na potrzeby klientów. Istnieją dwa poziomy obsługi platformy Docker, które można dodać do projektu, a obsługiwane opcje różnią się w zależności od typu projektu i wersji programu Visual Studio. W przypadku niektórych obsługiwanych typów projektów, jeśli chcesz tylko kontener dla pojedynczego projektu, bez korzystania z aranżacji, możesz to zrobić, dodając obsługę platformy Docker.  Następnym poziomem jest obsługa aranżacji kontenerów, która dodaje odpowiednie pliki obsługi dla wybranego koordynatora.  
 
-
 Za pomocą programu Visual Studio 2019 można używać Docker Compose, Kubernetes i Service Fabric jako usług aranżacji kontenerów.
 
 > [!NOTE]
 > W przypadku korzystania z szablonu projektu konsoli pełnej .NET Framework po dodaniu obsługi platformy Docker obsługa aranżacji przy użyciu Docker Compose jest dodawana automatycznie.
+
+W programie Visual Studio 2019 w wersji 16,4 i nowszych dostępne jest okno **kontenery** , które pozwala wyświetlać uruchomione kontenery, przeglądać dostępne obrazy, wyświetlać zmienne środowiskowe, dzienniki i mapowania portów, sprawdzać system plików, dołączać debuger lub otwierać okno terminalu w środowisku kontenera. Zobacz [Wyświetlanie i diagnozowanie kontenerów i obrazów w programie Visual Studio](view-and-diagnose-containers.md).
+
 ::: moniker-end
 
 ### <a name="adding-docker-support"></a>Dodawanie obsługi platformy Docker
