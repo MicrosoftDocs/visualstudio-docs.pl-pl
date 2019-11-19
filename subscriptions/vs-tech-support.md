@@ -3,15 +3,15 @@ title: Korzyść pomocy technicznej
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/29/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 description: Dowiedz się, jak aktywować korzyść pomocy technicznej w ramach subskrypcji programu Visual Studio.
-ms.openlocfilehash: 6d76fa3bdff63a31598fb9a977f6ed024d214af1
-ms.sourcegitcommit: ab18c9d850192fc9ccec10961f1126e8b0cba8da
+ms.openlocfilehash: f88cf221f47f2b8aa89a733a4794e424ac938261
+ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73061147"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74161972"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Aktywuj korzyść pomocy technicznej i korzystaj z niej w subskrypcjach programu Visual Studio
 Korzyść pomocy technicznej w ramach subskrypcji programu Visual Studio służy do rozwiązywania problemów z uszkodzeniem w **środowiskach nieprodukcyjnych** dla produktów, które są nadal w fazie wsparcia podstawowego dla [cyklu](https://support.microsoft.com/lifecycle/search)pomocy technicznej. Visual Studio Enterprise standardowa i roczna subskrypcja chmury otrzymuje cztery incydenty, podczas Visual Studio Professional standardowa i roczna subskrypcja chmury odbiera dwa zdarzenia, przez maksymalnie 1 rok od aktywacji korzyści. Aktywacja korzyści musi nastąpić, gdy subskrypcja jest aktualna.
@@ -112,7 +112,9 @@ Aby skorzystać z pomocy technicznej subskrypcji programu Visual Studio w przypa
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Odnawialny?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (standardowa)   | LICENCJONOWANie, Azure, sprzedaż detaliczna, wybrane NFR<sup>1</sup> | 4 zdarzenia       |  Tak|
+| Visual Studio Enterprise z usługą GitHub Enterprise | Licencja | 4 zdarzenia       |  Tak|
 | Visual Studio Professional (standardowa) | LICENCJONOWANie, Azure, sprzedaż detaliczna, wybrane NFR<sup>2</sup>                                        | 2 zdarzenia                                                          |Tak         |
+| Visual Studio Professional z usługą GitHub Enterprise | Licencja                                     | 2 zdarzenia                                                          |Tak         |
 | Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | 2 zdarzenia                                             |  Tak         |
 | Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | 2 zdarzenia                                               | Tak         |
 | Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure                                       | Niedostępne                                                           |POTRĄCON|
@@ -123,3 +125,9 @@ Aby skorzystać z pomocy technicznej subskrypcji programu Visual Studio w przypa
 <sup>2</sup> *zawiera: Wyobraź sobie Standard.*
 
 Nie masz pewności, której subskrypcji używasz?  Połącz się z [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) , aby wyświetlić wszystkie subskrypcje przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkich subskrypcji, być może masz co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby zobaczyć te subskrypcje.
+
+## <a name="next-steps"></a>Następne kroki
+Pamiętaj, aby aktywować te doskonałe korzyści, aby zapewnić największą subskrypcję programu Visual Studio:
+- [Visual Studio](vs-ide-benefit.md)
+- [Azure DevOps](vs-azure-devops.md)
+- [Indywidualne środki na korzystanie z usługi Azure DevTest](vs-azure.md)
