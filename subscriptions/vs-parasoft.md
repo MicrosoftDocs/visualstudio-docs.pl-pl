@@ -3,15 +3,15 @@ title: Parasoft Wirtualizacja/SOAtest Professional Desktop | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/31/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 description: Dowiedz się, jak aktywować subskrypcję Test Professional wirtualizacji/SOA Parasoft w ramach subskrypcji programu Visual Studio.
-ms.openlocfilehash: a1bd6525df65ee8cc0c9f3dd9dfd60673dbb6df1
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: 036b265f9ca1accc7027477abfc27ce4e66c4033
+ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816480"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74161929"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Parasoft wirtualizację/SOAtest Professional w subskrypcjach programu Visual Studio
 
@@ -40,7 +40,7 @@ Przetestuj się wcześniej i częściej.  Symuluj i Przetestuj zachowanie niedos
    > [!div class="mx-imgBorder"]
    > ![powitalnej poczty E-mail](_img/vs-parasoft/vs-parasoft-email.png)
 
-7. W zależności od używanej przeglądarki mogą pojawić się różne okna dialogowe z możliwością uruchomienia Instalatora.  Na przykład w programie Internet Explorer zostanie wyświetlona lista ostatnich pobrań z parasoft_soavirt_ 9.10.2 _win32_x86_64. exe w górnej części strony. Kliknij przycisk **Uruchom** , aby uruchomić Instalatora.
+7. W zależności od używanej przeglądarki mogą pojawić się różne okna dialogowe z możliwością uruchomienia Instalatora.  Na przykład w programie Internet Explorer zostanie wyświetlona lista ostatnio używanych plików do pobrania przy użyciu programu parasoft_soavirt_9 .10.2_win32_x86_64. exe znajdującego się u góry. Kliknij przycisk **Uruchom** , aby uruchomić Instalatora.
 
 8. Gdy zostanie otwarte okno dialogowe Kontrola konta użytkownika, kliknij przycisk **tak**.
 
@@ -73,7 +73,9 @@ Przetestuj się wcześniej i częściej.  Symuluj i Przetestuj zachowanie niedos
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Odnawialny?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (standardowa)   | LICENCJONOWANie, Azure, sprzedaż detaliczna, wybrane NFR<sup>1</sup> | 6 miesięcy       |  Tak       |
+| Visual Studio Enterprise z usługą GitHub Enterprise | Licencja | 6 miesięcy       |  Tak       |
 | Visual Studio Professional (standardowa) | LICENCJONOWANie, Azure, sprzedaż detaliczna                                       | Niedostępne                                                           |POTRĄCON         |
+| Visual Studio Professional z usługą GitHub Enterprise | Licencja                                      | Niedostępne                                                           |POTRĄCON         |
 | Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Niedostępne                                                           |POTRĄCON         |
 | Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | Niedostępne                                                           |POTRĄCON         |
 | Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure                                       | Niedostępne                                                           |POTRĄCON|
