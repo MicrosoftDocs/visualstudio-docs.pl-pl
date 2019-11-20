@@ -1,49 +1,52 @@
 ---
-title: Korzyść WhiteSource Microsoft Docs
+title: WhiteSource Bolt Benefit | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 08/01/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
-description: Dowiedz się, jak aktywować subskrypcję usługi WhiteSource w ramach subskrypcji programu Visual Studio.
-ms.openlocfilehash: 54248c0291fe54c2cb7db9155233d08e96991581
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+description: Learn how to activate the WhiteSource Bolt subscription included with your Visual Studio subscription.
+ms.openlocfilehash: fb403053d101cf2edf8677c7bcce494ae4e2d21e
+ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816411"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74174130"
 ---
-# <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>WhiteSource w subskrypcjach programu Visual Studio
+# <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>WhiteSource Bolt in Visual Studio subscriptions
 
-Znajdź i napraw luki w zabezpieczeniach typu "open source" i Generuj kompleksowe raporty spisu i licencji dla wszystkich składników typu "open source" w kompilacji. 
+Find and fix open source vulnerabilities and generate comprehensive inventory and license reports of all open source components in your build. 
 
-## <a name="activation-steps"></a>Kroki aktywacji
+## <a name="activation-steps"></a>Activation steps
 
-1. Aby aktywować korzyść WhiteSource, zaloguj się do [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) .
+1. To activate your WhiteSource Bolt benefit, sign in to [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) .
 
-2. Znajdź kafelek "WhiteSource" w sekcji Tools, a następnie kliknij link **Pobierz kod** w dolnej części kafelka korzyści.
+2. Locate the WhiteSource Bolt tile in the Tools section, and click on the **Get Code** link at the bottom of the benefit tile.
    > [!div class="mx-imgBorder"]
-   > Kafelek ![WhiteSource korzyść](_img/vs-whitesource/vs-whitesource-tile.png)
+   > ![WhiteSource Benefit Tile](_img/vs-whitesource/vs-whitesource-tile.png)
 
-3. Otrzymasz powiadomienie z informacją o kodzie aktywacji.  **Skopiuj kod do schowka**, a następnie kliknij przycisk **Aktywuj**.
+3. You’ll receive a notification displaying your activation code.  **Copy the code to your clipboard**, then click **Activate**.
    > [!div class="mx-imgBorder"]
-   > ![](_img/vs-whitesource/vs-whitesource-code.png) kodu korzyści WhiteSource
+   > ![WhiteSource Benefit Code ](_img/vs-whitesource/vs-whitesource-code.png)
 
-4. Na stronie **Aktywuj Twoje konto** kliknij link **instalacji** w kroku 1.
-5. Kliknij przycisk **Pobierz bezpłatnie** w Visual Studio Marketplace.
-6. Następnie wybierz organizację DevOps platformy Azure, której chcesz użyć, a następnie kliknij przycisk **Instaluj**.  (Jeśli jeszcze nie skonfigurowano Azure DevOps Services, odwiedź stronę [korzyści](https://my.visualstudio.com/benefits) i aktywuj korzyść Azure DevOps Services).
+4. On the **Activate your account** page, click the **install** link in step 1.
+5. Click **Get it free** in the Visual Studio Marketplace.
+6. Next, select the Azure DevOps organization you want to use and click **Install**.  (If you have not yet set up Azure DevOps Services, visit the [Benefits](https://my.visualstudio.com/benefits) page and activate your Azure DevOps Services benefit.)
 
-7. Kliknij przycisk **podejmij do organizacji**.
-8. Po pomyślnym zainstalowaniu WhiteSource, Wróć do [strony aktywacja](https://bolt.whitesourcesoftware.com/whitesource-bolt-azure-devops#activate)i Obejrzyj film wideo, aby zobaczyć, jak go skonfigurować. 
-9. Aby uzyskać więcej informacji, odwiedź [stronę często zadawanych pytań](https://bolt.whitesourcesoftware.com/azure/faq/)WhiteSource. 
+7. Click **Proceed to organization**.
+8. Once you've successfully installed WhiteSource Bolt, return to the [activate page](https://bolt.whitesourcesoftware.com/whitesource-bolt-azure-devops#activate), and view the video to see how to configure it. 
+9. For more information, visit the WhiteSource Bolt [FAQ page](https://bolt.whitesourcesoftware.com/azure/faq/). 
 
-## <a name="eligibility"></a>Kryteria
-WhiteSource jest teraz dostępna bezpłatnie w Visual Studio Marketplace. 
+## <a name="eligibility"></a>Eligibility
+[WhiteSource Bolt](https://marketplace.visualstudio.com/search?term=whitesource&target=AzureDevOps&category=All%20categories&sortBy=Relevance) is now available free in the [Visual Studio Marketplace. 
 
-## <a name="support-resources"></a>Zasoby pomocy technicznej
-- Potrzebujesz pomocy z WhiteSourceem?  Czat z WhiteSourceem na żywo w https://www.whitesourcesoftware.com/vse_whitesource_bolt/
-- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
-- Masz pytanie dotyczące środowiska IDE programu Visual Studio, Azure DevOps Services lub innych produktów lub usług Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
+## <a name="support-resources"></a>Support resources
+- Need help with WhiteSource Bolt?  Chat with a WhiteSource Bolt representative live at https://www.whitesourcesoftware.com/vse_whitesource_bolt/
+- For assistance with sales, subscriptions, accounts and billing for Visual Studio Subscriptions, contact Visual Studio [Subscriptions Support](https://visualstudio.microsoft.com/subscriptions/support/).
+- Have a question about Visual Studio IDE, Azure DevOps Services or other Visual Studio products or services?  Visit [Visual Studio Support](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Następne kroki
-Jako subskrybent programu Visual Studio możesz używać Microsoft Azure bez dodatkowych opłat.  W przypadku comiesięcznych środków na korzystanie z [platformy Azure DevTest](vs-azure.md), platforma Azure jest osobistą piaskownicą na potrzeby tworzenia i testowania.  Możesz udostępniać maszyny wirtualne, usługi w chmurze i inne zasoby platformy Azure.  Kwoty kredytowe różnią się w zależności od poziomu subskrypcji.
+Be sure to activate these great benefits to make the most of your Visual Studio subscription:
+- [Visual Studio](vs-ide-benefit.md)
+- [Azure DevOps](vs-azure-devops.md)
+- [Indywidualne środki na korzystanie z usługi Azure DevTest](vs-azure.md)

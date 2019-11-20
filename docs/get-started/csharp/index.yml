@@ -1,12 +1,12 @@
 ### YamlMime:Landing
-title: Samouczki programu Visual Studio |C#
-summary: Twórz C# aplikacje za pomocą programu Visual Studio.
+title: Visual Studio tutorials | C#
+summary: Create C# apps with Visual Studio.
 metadata:
-  title: C#Programowanie za pomocą programu Visual Studio
-  description: Twórz C# aplikacje za pomocą programu Visual Studio.
+  title: C# development with Visual Studio
+  description: Create C# apps by using Visual Studio.
   ms.custom: seodec18
   ms.topic: landing-page
-  ms.date: 09/27/2019
+  ms.date: 11/19/2019
   author: ghogen
   ms.author: ghogen
   manager: jillfra
@@ -14,48 +14,54 @@ metadata:
   ms.technology: vs-acquisition
   dev_langs:
   - CSharp
-  ms.openlocfilehash: 0e61a2b9d54fc4e40a84e7107ab653a2e90f52de
-  ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
+  ms.openlocfilehash: b364716f87999272030e48a88af5a06cbff012e4
+  ms.sourcegitcommit: 8530d15aa72fe058ee3a3b4714c36b8638f8b494
   ms.translationtype: MT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 10/04/2019
-  ms.locfileid: "71962860"
+  ms.lasthandoff: 11/19/2019
+  ms.locfileid: "74188637"
 landingContent:
-- title: Rozpoczęcie pracy
+- title: Wprowadzenie
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Instalacja programu Visual Studio
+    - text: Instalowanie programu Visual Studio
       url: ../../install/install-visual-studio.md
   - linkListType: get-started
     links:
-    - text: Rozpocznij Przewodnik
+    - text: Start a guided tour
       url: visual-studio-ide.md
-- title: Tworzenie C# aplikacji
+  - linkListType: quickstart
+    links:
+    - text: Create a "Hello World" console app
+      url: ../../ide/quickstart-csharp-console.md
+    - text: Create a "Hello World" web app
+      url: ../../ide/quickstart-aspnet-core.md
+- title: Create C# apps
   linkLists:
   - linkListType: tutorial
     links:
-    - text: Tworzenie aplikacji konsoli
+    - text: tworzenie aplikacji konsoli
       url: tutorial-console.md
-    - text: Tworzenie aplikacji sieci web
+    - text: tworzenie aplikacji internetowej
       url: tutorial-aspnet-core.md
-    - text: Tworzenie aplikacji platforma uniwersalna systemu Windows
+    - text: Create a Universal Windows Platform app
       url: tutorial-uwp.md
-    - text: Tworzenie aplikacji klasycznej systemu Windows
+    - text: Create a Windows Desktop app
       url: tutorial-wpf.md
     - text: Tworzenie aplikacji Windows Forms
       url: ../../ide/create-csharp-winform-visual-studio.md
-    - text: Dowiedz się C# więcej o języku
+    - text: Learn about the C# language
       url: /dotnet/csharp/tutorials/intro-to-csharp/
   - linkListType: video
     links:
-    - text: Tworzenie aplikacji ASP.NET Core
+    - text: Create an ASP.NET Core app
       url: tutorial-aspnet-core-ef-step-01.md
 - title: Poznawanie programu Visual Studio
   linkLists:
   - linkListType: tutorial
     links:
-    - text: Otwieranie kodu z repozytorium
+    - text: Open code from a repo
       url: ../tutorial-open-project-from-repo.md
     - text: Pisanie i edytowanie kodu
       url: tutorial-editor.md
@@ -63,7 +69,7 @@ landingContent:
       url: ../../ide/compiling-and-building-in-visual-studio.md
     - text: Debugowanie kodu
       url: ../csharp/tutorial-debugger.md
-    - text: Testowanie kodu
+    - text: Test your code
       url: ../../test/getting-started-with-unit-testing.md
   - linkListType: how-to-guide
     links:

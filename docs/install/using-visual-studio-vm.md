@@ -1,7 +1,7 @@
 ---
-title: Za pomocą programu Visual Studio na maszynie wirtualnej platformy Azure
+title: Using Visual Studio on an Azure Virtual Machine
 titleSuffix: ''
-description: Dowiedz się, jak używać programu Visual Studio na maszynie wirtualnej platformy Azure
+description: Learn how to use Visual Studio on an Azure Virtual Machine
 ms.date: 09/24/2019
 ms.custom: seodec18
 ms.topic: conceptual
@@ -17,47 +17,47 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 32446e40fa388e72fd12e32dad3a466c0b5823d5
-ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
+ms.openlocfilehash: 88e11bf7bd84fdac5d584c06042488c895b7aa09
+ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71273388"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74174139"
 ---
-# <a id="top"> </a> Obrazów programu Visual Studio w systemie Azure
+# <a id="top"> </a> Visual Studio images on Azure
 
-Przy użyciu programu Visual Studio w wstępnie skonfigurowanych maszyn wirtualnych (VM) to szybki i łatwy sposób skalują się od pozycji środowisko projektowe w górę i uruchomiona. Obrazy systemu z różnymi konfiguracjami programu Visual Studio są dostępne w [portalu Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/category/compute?filters=virtual-machine-images%3Bmicrosoft%3Bwindows&page=1&subcategories=application-infrastructure).
+Using Visual Studio in a preconfigured Azure virtual machine (VM) is a quick, easy way to go from nothing to an up-and-running development environment. System images with different Visual Studio configurations are available in the [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/category/compute?filters=virtual-machine-images%3Bmicrosoft%3Bwindows&page=1&subcategories=application-infrastructure).
 
-Jesteś nowym użytkownikiem platformy Azure? [Utwórz bezpłatne konto platformy Azure](https://azure.microsoft.com/free).
+New to Azure? [Create a free Azure account](https://azure.microsoft.com/free).
 
-## <a name="what-configurations-and-versions-are-available"></a>Jakie konfiguracje i wersje są dostępne?
+## <a name="what-configurations-and-versions-are-available"></a>What configurations and versions are available?
 
-Obrazy dla najnowszych wersji głównych, Visual Studio 2019, Visual Studio 2017 i Visual Studio 2015 można znaleźć w witrynie Azure Marketplace.  Dla każdej wydanej wersji głównej zostanie wyświetlona oryginalna wersja "wydana do sieci Web" (RTW) i najnowsze zaktualizowane wersje.  Każda z tych wersji oferuje wersje programu Visual Studio Community i program Visual Studio Enterprise.  Te obrazy są aktualizowane co miesiąc, obejmujący najnowsze aktualizacje programu Visual Studio i Windows.  Gdy nazwy obrazów pozostają takie same, każdy obraz w opisie wersję zainstalowanego produktu i "dzień" obraz.
+Images for the most recent major versions, Visual Studio 2019, Visual Studio 2017 and Visual Studio 2015, can be found in the Azure Marketplace.  For each released major version, you see the originally "released to web" (RTW) version and the latest updated versions.  Each of these versions offers the Visual Studio Enterprise and the Visual Studio Community editions.  These images are updated at least every month to include the latest Visual Studio and Windows updates.  While the names of the images remain the same, each image's description includes the installed product version and the image's "as of" date.
 
-| Wersja                                                                                                                                          | Wersje              |    Wersja produktu    |
+| Release version                                                                                                                                          | Wersje              |    Product version    |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------:|:---------------------:|:-----------------------:|
-| [Visual Studio 2019: Najnowsze (wersja 16,3)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019latest?tab=Overview) | Enterprise, Community | 16.3.0 wersja    |
-| [Visual Studio 2019: RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019?tab=Overview)                         | Enterprise            | 16.0.8 wersja    |
-| [Visual Studio 2017: Najnowsze (wersja 15,9)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)           | Enterprise, Community | 15.9.16 wersja   |
-| [Visual Studio 2017: RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)                             | Enterprise, Community | 15.0.27 wersja   |
-| [Visual Studio 2015: Najnowsze (Aktualizacja Update 3)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)               | Enterprise, Community | Wersja 14.0.25431.01 |
+| [Visual Studio 2019: Latest (Version 16.3)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019latest?tab=Overview) | Enterprise, Community | Version 16.3.9    |
+| [Visual Studio 2019: RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019?tab=Overview)                         | Enterprise            | Version 16.0.9    |
+| [Visual Studio 2017: Latest (Version 15.9)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)           | Enterprise, Community | Version 15.9.17   |
+| [Visual Studio 2017: RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)                             | Enterprise, Community | Version 15.0.27   |
+| [Visual Studio 2015: Latest (Update 3)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)               | Enterprise, Community | Version 14.0.25431.01 |
 
 > [!NOTE]
-> Zgodnie z zasady obsługi firmy Microsoft pierwotnie (RTW) wersji programu Visual Studio 2015 zakończył się okres obsługi. Visual Studio 2015 Update 3 jest jedynie wersja pozostałe oferowana w przypadku linii produktów Visual Studio 2015.
+> In accordance with Microsoft servicing policy, the originally released (RTW) version of Visual Studio 2015 has expired for servicing. Visual Studio 2015 Update 3 is the only remaining version offered for the Visual Studio 2015 product line.
 
-Aby uzyskać więcej informacji, zobacz [Visual Studio obsługi zasad](/visualstudio/productinfo/vs-servicing-vs).
+For more information, see the [Visual Studio Servicing Policy](/visualstudio/productinfo/vs-servicing-vs).
 
-## <a name="what-features-are-installed"></a>Jakie funkcje są zainstalowane?
+## <a name="what-features-are-installed"></a>What features are installed?
 
-Każdy obraz zawiera zalecane funkcji, ustaw dla tej wersji programu Visual Studio. Ogólnie rzecz biorąc instalacja obejmuje:
+Each image contains the recommended feature set for that Visual Studio edition. Generally, the installation includes:
 
-* Wszystkie dostępne obciążeń, w tym każde obciążenie zalecane składniki opcjonalne
-* .NET 4.6.2 i .NET 4.7 zestawów SDK i Targeting Pack, narzędzia dla deweloperów
+* All available workloads, including each workload’s recommended optional components
+* .NET 4.6.2 and .NET 4.7 SDKs, Targeting Packs, and Developer Tools
 * Visual F#
-* Rozszerzenie GitHub dla programu Visual Studio
+* GitHub Extension for Visual Studio
 * LINQ to SQL Tools
 
-Stosujemy następujące polecenie w wierszu instalacji programu Visual Studio, podczas tworzenia obrazów:
+We use the following command line to install Visual Studio when building the images:
 
 ```shell
     vs_enterprise.exe --allWorkloads --includeRecommended --passive ^
@@ -71,55 +71,55 @@ Stosujemy następujące polecenie w wierszu instalacji programu Visual Studio, p
        --add Microsoft.VisualStudio.Component.LinqToSql
 ```
 
-Jeśli obrazy nie obejmują funkcji programu Visual Studio, która jest wymagana, przekazują opinie za pośrednictwem narzędzia opinii, w prawym górnym rogu strony.
+If the images don't include a Visual Studio feature that you require, provide feedback through the feedback tool in the upper-right corner of the page.
 
-## <a name="what-size-vm-should-i-choose"></a>Rozmiar maszyny Wirtualnej należy wybrać?
+## <a name="what-size-vm-should-i-choose"></a>What size VM should I choose?
 
-Platforma Azure oferuje szeroką gamę rozmiarów maszyn wirtualnych. Ponieważ program Visual Studio jest zaawansowanym wielowątkowa aplikacja, ma rozmiar maszyny Wirtualnej, która zawiera co najmniej dwóch procesorów i 7 GB pamięci. Firma Microsoft zaleca następujących rozmiarów maszyn wirtualnych dla obrazów programu Visual Studio:
+Azure offers a full range of virtual machine sizes. Because Visual Studio is a powerful, multi-threaded application, you want a VM size that includes at least two processors and 7 GB of memory. We recommend the following VM sizes for the Visual Studio images:
 
-* Maszyna wirtualna Standard_D2_v3
+* Standard_D2_v3
 * Standard_D2s_v3
-* Maszyna wirtualna Standard_D4_v3
+* Standard_D4_v3
 * Standard_D4s_v3
-* Maszyna wirtualna Standard_D2_v2
+* Standard_D2_v2
 * Standard_D2S_v2
-* Maszyna wirtualna Standard_D3_v2
+* Standard_D3_v2
 
-Aby uzyskać więcej informacji na temat najnowszych rozmiarów maszyny, zobacz [rozmiary dla Windows maszyn wirtualnych na platformie Azure](/azure/virtual-machines/windows/sizes).
+For more information on the latest machine sizes, see [Sizes for Windows virtual machines in Azure](/azure/virtual-machines/windows/sizes).
 
-Za pomocą platformy Azure można ponownie zrównoważyć początkowy wybór, zmieniając rozmiar maszyny Wirtualnej. Możesz aprowizować nową maszynę Wirtualną o rozmiarze bardziej odpowiednie lub zmienić rozmiar istniejącej maszyny Wirtualnej na inny sprzęt w podstawowej. Aby uzyskać więcej informacji, zobacz [zmienić rozmiar maszyny Wirtualnej z systemem Windows](/azure/virtual-machines/windows/resize-vm).
+With Azure, you can rebalance your initial choice by resizing the VM. You can either provision a new VM with a more appropriate size, or resize your existing VM to different underlying hardware. For more information, see [Resize a Windows VM](/azure/virtual-machines/windows/resize-vm).
 
-## <a name="after-the-vm-is-running-whats-next"></a>Po uruchomieniu maszyny Wirtualnej, co przyniesie przyszłość?
+## <a name="after-the-vm-is-running-whats-next"></a>After the VM is running, what's next?
 
-Program Visual Studio następuje modelu "bring your own license" na platformie Azure. Podobnie jak w przypadku instalacji na sprzęcie, na jednym z pierwszych kroków jest licencjonowanie instalację programu Visual Studio. Aby odblokować programu Visual Studio, albo:
-- Zaloguj się przy użyciu konta Microsoft, która jest skojarzona z subskrypcji programu Visual Studio
-- Odblokuj programu Visual Studio za pomocą klucza produktu, dostarczone z Twojej początkowej kwoty zakupu
+Visual Studio follows the “bring your own license” model in Azure. As with an installation on proprietary hardware, one of the first steps is licensing your Visual Studio installation. To unlock Visual Studio, either:
+- Sign in with a Microsoft account that’s associated with a Visual Studio subscription
+- Unlock Visual Studio with the product key that came with your initial purchase
 
-Aby uzyskać więcej informacji, zobacz [Zaloguj się do programu Visual Studio](../ide/signing-in-to-visual-studio.md) i [jak odblokować program Visual Studio](../ide/how-to-unlock-visual-studio.md).
+For more information, see [Sign in to Visual Studio](../ide/signing-in-to-visual-studio.md) and [How to unlock Visual Studio](../ide/how-to-unlock-visual-studio.md).
 
-## <a name="how-do-i-save-the-development-vm-for-future-or-team-use"></a>Jak mogę zapisać deweloperskiej maszynie Wirtualnej w przyszłości lub zespołu używać?
+## <a name="how-do-i-save-the-development-vm-for-future-or-team-use"></a>How do I save the development VM for future or team use?
 
-Spektrum środowisk deweloperskich jest bardzo duży i jest prawdziwy koszt związany z kompilowania bardziej złożonych środowiskach. Niezależnie od konfiguracji w danym środowisku można zapisać lub przechwycenia maszyny Wirtualnej skonfigurowanej jako "obrazu podstawowego" do użycia w przyszłości lub dla innych członków zespołu. Następnie podczas rozruchu nową maszynę Wirtualną, możesz aprowizować je z obrazu podstawowego zamiast obrazu z witryny Azure Marketplace.
+The spectrum of development environments is huge, and there’s real cost associated with building out the more complex environments. Regardless of your environment’s configuration, you can save, or capture, your configured VM as a "base image" for future use or for other members of your team. Then, when booting a new VM, you provision it from the base image rather than the Azure Marketplace image.
 
-Krótkie podsumowanie: Użyj narzędzia przygotowywania systemu (Sysprep) i Zamknij uruchomioną maszynę wirtualną, a następnie Przechwyć *(rysunek 1)* maszynę wirtualną jako obraz za pomocą interfejsu użytkownika w Azure Portal. Zapisuje Azure `.vhd` pliku zawierającego obraz wybrane na koncie magazynu. Nowy obraz następnie wyświetlany jako zasób obrazu w Twojej subskrypcji listy zasobów.
+A quick summary: Use the System Preparation tool (Sysprep) and shut down the running VM, and then capture *(Figure 1)* the VM as an image through the UI in the Azure portal. Azure saves the `.vhd` file that contains the image in the storage account of your choosing. The new image then shows up as an Image resource in your subscription’s list of resources.
 
-![Przechwytywanie obrazu za pomocą interfejsu użytkownika Azure Portal](media/capture-vm.png)
+![Capture an image through the Azure portal’s UI](media/capture-vm.png)
 
-*(Rysunek 1) Przechwyć obraz za pomocą interfejsu użytkownika Azure Portal.*
+*(Figure 1) Capture an image through the Azure portal’s UI.*
 
-Aby uzyskać więcej informacji, zobacz [utworzenie obrazu zarządzanego uogólnionej maszyny wirtualnej na platformie Azure](/azure/virtual-machines/windows/capture-image-resource).
+For more information, see [Create a managed image of a generalized VM in Azure](/azure/virtual-machines/windows/capture-image-resource).
 
 > [!IMPORTANT]
-> Należy pamiętać przygotować maszynę Wirtualną przy użyciu narzędzia Sysprep. Jeśli pominiesz ten krok, Azure, nie można aprowizować Maszynę wirtualną z obrazu.
+> Don’t forget to use Sysprep to prepare the VM. If you miss that step, Azure can't provision a VM from the image.
 
 > [!NOTE]
-> Nadal naliczane pewien koszt związany z magazynu obrazów, ale rosnących kosztów można nieznaczące w porównaniu do kosztów ogólnych odbudować maszyny Wirtualnej od zera dla każdego członka zespołu, który musi mieć jeden. Na przykład koszty kilka dolarów, można utworzyć i zapisać obraz 127 GB na miesiąc, będącego wielokrotnego użytku przez całego zespołu. Jednak te koszty są nieistotne względem godzin, w których każdemu pracownikowi inwestuje do skompilowania i sprawdzanie poprawności pola dev prawidłowo skonfigurowane, do ich użytku osobistego.
+> You still incur some cost for storage of the images, but that incremental cost can be insignificant compared to the overhead costs to rebuild the VM from scratch for each team member who needs one. For instance, it costs a few dollars to create and store a 127-GB image for a month that's reusable by your entire team. However, these costs are insignificant compared to hours each employee invests to build out and validate a properly configured dev box for their individual use.
 
-Ponadto zadania rozwoju lub technologii potrzebować więcej skali, takie jak różne typy konfiguracji rozwoju i wielu konfiguracji maszyny. Azure DevTest Labs umożliwia tworzenie _przepisy_ , automatyzacja konstrukcji swoje "złotego obrazu." DevTest Labs umożliwia także zarządzanie zasadami dla Twojego zespołu działających maszyn wirtualnych. [Dla deweloperów przy użyciu usługi Azure DevTest Labs](/azure/devtest-lab/devtest-lab-developer-lab) jest najlepsze źródło, aby uzyskać więcej informacji na temat usługi DevTest Labs.
+Additionally, your development tasks or technologies might need more scale, like varieties of development configurations and multiple machine configurations. You can use Azure DevTest Labs to create _recipes_ that automate construction of your "golden image." You can also use DevTest Labs to manage policies for your team’s running VMs. [Using Azure DevTest Labs for developers](/azure/devtest-lab/devtest-lab-developer-lab) is the best source for more information on DevTest Labs.
 
 ## <a name="next-steps"></a>Następne kroki
 
-Teraz, gdy wiesz o wstępnie skonfigurowanych obrazów programu Visual Studio, następnym krokiem jest do utworzenia nowej maszyny Wirtualnej:
+Now that you know about the preconfigured Visual Studio images, the next step is to create a new VM:
 
-* [Utwórz Maszynę wirtualną za pośrednictwem witryny Azure portal](/azure/virtual-machines/windows/quick-create-portal)
-* [Omówienie maszyn wirtualnych Windows](/azure/virtual-machines/windows/overview)
+* [Create a VM through the Azure portal](/azure/virtual-machines/windows/quick-create-portal)
+* [Windows Virtual Machines overview](/azure/virtual-machines/windows/overview)

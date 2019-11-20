@@ -1,5 +1,5 @@
 ---
-title: 16bpp renderowania wariant formatu docelowego | Dokumentacja firmy Microsoft
+title: 16bpp Render Target Format Variant | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 24b22ad9-5ad0-4161-809a-9b518eb924bf
@@ -8,57 +8,57 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94775b717a3095d54d3fa52e3d2a5325dc3d21c5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8a63261a4ef8a6304bec8c2bdde1d9ec9113405e
+ms.sourcegitcommit: 8530d15aa72fe058ee3a3b4714c36b8638f8b494
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62896426"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74188590"
 ---
-# <a name="16-bpp-render-target-format-variant"></a>16 bpp renderowania wariant formatu docelowego
-Zestawy piksel formatu DXGI_FORMAT_B5G6R5_UNORM wszystkie elementy docelowe renderowania i Utwórz kopię buforów.
+# <a name="16-bpp-render-target-format-variant"></a>16 bpp Render Target Format Variant
+Sets the pixel format to DXGI_FORMAT_B5G6R5_UNORM for all render targets and back buffers.
 
-## <a name="interpretation"></a>Interpretacja
- Obiektu docelowego renderowania lub buforu zapasowego zwykle korzysta z formatu bpp 32 (32 bity na piksel), takie jak B8G8R8A8_UNORM. formaty 32 bpp może zużywać dużą ilość pamięci przepustowość. Ponieważ B5G6R5_UNORM format formacie 16 bpp, który jest połowa formatów 32 bpp, korzystania z niego można zwolnić wykorzystanie przepustowości pamięci, ale kosztem mniejsze koloru.
+## <a name="interpretation"></a>Interpretation
+ A render target or back buffer typically uses a 32 bpp (32 bits per pixel) format such as B8G8R8A8_UNORM. 32-bpp formats can consume a large amount of memory bandwidth. Because the B5G6R5_UNORM format is a 16-bpp format that's half the size of 32-bpp formats, using it can relieve pressure on memory bandwidth, but at the cost of reduced color fidelity.
 
- Jeśli ten wariant wykazuje duże są bardziej wydajne, prawdopodobnie oznacza to, że aplikacja zużywa zbyt dużej ilości pamięci przepustowość. Możesz uzyskać poprawy istotnie poprawiającą wydajność, szczególnie w przypadku ramek profilowanej była znacząca ilość overdraw lub używanie mieszania alfa.
+ If this variant shows a large performance gain, it likely indicates that your app consumes too much memory bandwidth. You can gain significant performance improvement, especially when the profiled frame had a significant amount of overdraw or alpha-blending.
 
-16-bpp formatu docelowego renderowania może zmniejszyć pasmo pamięci z użyciem, gdy Twoja aplikacja ma następujące warunki:
-- Nie wymaga odtwarzania o dużej wierności kolorów.
-- Nie wymaga kanału alfa.
-- Nie ofent ma gradientów smooth, (które są podatne na przedziały artefaktów w ograniczonym koloru).
+A 16-bpp render target format can reduce memory band with usage when your application has the following conditions:
+- Doesn't require high-fidelity color reproduction.
+- Doesn't require an alpha channel.
+- Doesn't often have smooth gradients (which are susceptible to banding artifacts under reduced color fidelity).
 
-Inne strategie w celu zmniejszenia obciążenia przepustowości pamięci obejmują:
-- Zmniejsz ilość overdraw lub używanie mieszania alfa.
-- Zmniejsz wymiary buforu ramki.
-- Zmniejsz wymiary zasobów tekstur.
-- Zmniejsz kompresji zasobów tekstur.
+Other strategies to reduce memory bandwidth include:
+- Reduce the amount of overdraw or alpha-blending.
+- Reduce the dimensions of the frame buffer.
+- Reduce dimensions of texture resources.
+- Reduce compressions of texture resources.
 
-W zwykły sposób należy wziąć pod uwagę obraz jakości wad i zalet, które pochodzą z dowolną z tych optymalizacjach.
+As usual, you have to consider the image quality trade-offs that come with any of these optimizations.
 
-Aplikacje, które są częścią łańcucha wymiany mają format buforu zapasowego (DXGI_FORMAT_B5G6R5_UNORM), który nie obsługuje 16 bpp. Te łańcuchy wymiany są tworzone za pomocą `D3D11CreateDeviceAndSwapChain` lub `IDXGIFactory::CreateSwapChain`. Aby obejść to ograniczenie, wykonaj następujące czynności:
-1. Tworzenie elementu docelowego renderowania format B5G6R5_UNORM przy użyciu `CreateTexture2D` i renderowania do obiektu docelowego.
-2. Kopiowanie obiektu docelowego renderowania na buforu zapasowego łańcucha wymiany w celu za pomocą rysowania cztery pełnego ekranu, za pomocą obiektu docelowego renderowania jako swoje źródła tekstury.
-3. Wywołują metody Present na swój łańcuch wymiany.
+Applications that are a part of a swap chain have a back buffer format (DXGI_FORMAT_B5G6R5_UNORM) that doesn't support 16 bpp. These swap chains are created by using `D3D11CreateDeviceAndSwapChain` or `IDXGIFactory::CreateSwapChain`. To work around this limitation, do the following steps:
+1. Create a B5G6R5_UNORM format render target by using `CreateTexture2D` and render to that target.
+2. Copy the render target onto the swap-chain backbuffer by drawing a full-screen quad with the render target as your source texture.
+3. Call Present on your swap chain.
 
-   Jeśli ta strategia zapisuje większą przepustowość niż jest wykorzystywane przez skopiowanie obiektu docelowego renderowania buforu zapasowego łańcucha wymiany w celu, jest lepsza wydajność renderowania.
+   If this strategy saves more bandwidth than is consumed by copying the render target to the swap-chain backbuffer, then rendering performance is improved.
 
-   Architektury procesora GPU, korzystające z techniki fragmentacji renderowania można zobaczyć korzystny wydajności przy użyciu formatu buforu ramki 16 bpp. To ulepszenie jest, ponieważ większą część buforu ramki mieści się w pamięci podręcznej buforu ramki lokalnego każdego kafelka. Renderowanie fragmentacji architektury czasami znajdują się w procesorach GPU znajdujących się w aparaty telefoniczne przenośnych i komputerów typu tablet. rzadko pojawiają się one poza tym niche.
+   GPU architectures that use tiled rendering techniques can see significant performance benefits by using a 16 bpp frame buffer format. This improvement is because a larger portion of the frame buffer can fit in each tile's local frame buffer cache. Tiled rendering architectures are sometimes found in GPUs in mobile handsets and tablet computers; they rarely appear outside of this niche.
 
 ## <a name="remarks"></a>Uwagi
- Format docelowy renderowania jest resetowana do DXGI_FORMAT_B5G6R5_UNORM na każde wywołanie `ID3D11Device::CreateTexture2D` tworząca docelowego renderowania. W szczególności format jest zastępowany podczas przekazany pDesc obiekt D3D11_TEXTURE2D_DESC opisuje cel renderowania; Czyli:
+ The render target format is reset to DXGI_FORMAT_B5G6R5_UNORM on every call to `ID3D11Device::CreateTexture2D` that creates a render target. Specifically, the format is overridden when the D3D11_TEXTURE2D_DESC object passed in pDesc describes a render target; that is:
 
-- Element członkowski BindFlags ma flagę D3D11_BIND_REDNER_TARGET zestawu.
+- The BindFlags member has the D3D11_BIND_REDNER_TARGET flag set.
 
-- Element członkowski BindFlags ma flagę D3D11_BIND_DEPTH_STENCIL wyczyszczone.
+- The BindFlags member has the D3D11_BIND_DEPTH_STENCIL flag cleared.
 
-- Użycie elementu członkowskiego jest równa D3D11_USAGE_DEFAULT.
+- The Usage member is set to D3D11_USAGE_DEFAULT.
 
-## <a name="restrictions-and-limitations"></a>Ograniczenia i ograniczenia
- Ponieważ B5G6R5 format nie ma kanału alfa, alfa zawartości nie są zachowywane przez ten typ variant. Jeśli renderowanie aplikacji wymaga kanał alfa w docelowych renderowania, po prostu nie można przełączyć do formatu B5G6R5.
+## <a name="restrictions-and-limitations"></a>Restrictions and limitations
+ Because the B5G6R5 format doesn't have an alpha channel, alpha content is not preserved by this variant. If your app's rendering requires an alpha channel in your render target, you can't just switch to the B5G6R5 format.
 
 ## <a name="example"></a>Przykład
- **16 bpp formatu docelowego renderowania** wariant można odtworzyć dla obiektów docelowych renderowania utworzone za pomocą `CreateTexture2D` przy użyciu kodu w następujący sposób:
+ The **16 bpp Render Target Format** variant can be reproduced for render targets created by using `CreateTexture2D` by using code like this:
 
 ```cpp
 D3D11_TEXTURE2D_DESC target_description;

@@ -1,66 +1,71 @@
 ---
-title: Korzyść konta dewelopera systemu Windows w subskrypcjach programu Visual Studio | Microsoft Docs
+title: Windows Developer Account Benefit in Visual Studio Subscriptions | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/31/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
-description: Dowiedz się więcej na temat konta dewelopera systemu Windows dołączonego do subskrypcji programu Visual Studio.
-ms.openlocfilehash: e7dc24fef7328dee38f9aca92f3676573b0143ef
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+description: Learn about the Windows Developer Account included with your Visual Studio subscription.
+ms.openlocfilehash: 662dc6d911903a4c0d2c0a77382647639bb25d07
+ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816429"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74174114"
 ---
-# <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Konto dewelopera systemu Windows w subskrypcjach programu Visual Studio
-Konto dewelopera systemu Windows, dołączone do wybranej subskrypcji programu Visual Studio, umożliwia przesyłanie bezpłatnych i płatnych aplikacji systemu Windows do sklepu Windows.
+# <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Windows Developer account in Visual Studio subscriptions
+Your Windows Developer Account, included with selected Visual Studio subscription, lets you submit free and paid Windows apps to the Windows Store.
 
-## <a name="activation-steps"></a>Kroki aktywacji
-Aby korzystać z konta dewelopera systemu Windows, musisz skonfigurować konto lub zalogować się przy użyciu istniejącego konta.
+## <a name="activation-steps"></a>Activation steps
+To use your Windows Developer Account, you’ll need to set up an account or sign in using an existing account.
 
-Zalecamy utworzenie "prywatnego" okna przeglądarki dla tego procesu.  Na przykład w przeglądarce Google Chrome Utwórz nowe okno "incongnito".  W programie Internet Explorer Utwórz nowe okno "InPrivate".
+We recommend that you create a "private" browser window for this process.  For example, in Google Chrome, create a new "incongnito" window.  In Internet Explorer, create a new "InPrivate" window.
 
-1. Zaloguj się do [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
-2. Znajdź kafelek konto dewelopera systemu Windows w sekcji Narzędzia i kliknij link **uzyskaj kod** w dolnej części kafelka korzyści.  Skopiuj kod do schowka, a następnie kliknij przycisk **Aktywuj**.
+1. Sign in to [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+2. Locate the Windows Developer Account tile in the Tools section and click on the **Get Code** link at the bottom of the benefit tile.  Copy the code to your clipboard, then click **Activate**.
    > [!div class="mx-imgBorder"]
-   > ![kafelka korzyści dla deweloperów systemu Windows](_img/vs-windows-dev/vs-windows-dev-tile.png)
-3. W witrynie [https://developer.microsoft.com](https://developer.microsoft.com) można rozpocząć proces rejestracji.  Kliknij przycisk **Utwórz konto** , aby kontynuować.
+   > ![Windows Developer Benefit Tile](_img/vs-windows-dev/vs-windows-dev-tile.png)
+3. On the [https://developer.microsoft.com](https://developer.microsoft.com) site you can begin the registration process.  Click **Sign up** to continue.
    > [!div class="mx-imgBorder"]
-   > ![](_img/vs-windows-dev/vs-windows-dev-register1-cropped.png) rejestracji korzyści dla deweloperów systemu Windows
-4. Zaloguj się do subskrypcji.  Jeśli masz wiele kont, wybierz konto skojarzone z subskrypcją przedsiębiorstwa.
-0. Wprowadź swój adres e-mail, wybierz preferowany język i kliknij przycisk **Zapisz**.
-5. Na następnej stronie Wybierz kraj lub region, w którym mieszkasz lub w którym znajduje się Twoja firma, a następnie kliknij przycisk **dalej**.
-6. Wybierz opcję **indywidualna** jako typ konta.
-7. Utwórz nazwę wyświetlaną wydawcy.  Będzie to unikatowa nazwa, którą klienci będą widzieli w przypadku aplikacji, dodatków i usług.
-8. Podaj informacje kontaktowe i preferowany język poczty e-mail, a następnie kliknij przycisk **dalej**.
-9. Może zostać wyświetlony monit o zweryfikowanie hasła.  Wprowadź ją i kliknij przycisk **Zaloguj**.
-10. Na stronie Rejestracja — płatność Wklej kod skopiowany wcześniej do pola kod promocyjny.  Strona zostanie zaktualizowana, aby pokazać, że *nie jest wymagana żadna Płatność*.  Kliknij przycisk **Dalej**.
-11. Przejrzyj informacje o koncie, przejrzyj umowę Developer App, a następnie kliknij pole wyboru, aby wskazać akceptację warunków i postanowień.  Następnie kliknij przycisk **Zakończ**.
-12. Kliknij pozycję **Przejdź do pulpitu nawigacyjnego** , aby rozpocząć korzystanie z konta dewelopera systemu Windows.
+   > ![Windows Developer Benefit Registration](_img/vs-windows-dev/vs-windows-dev-register1-cropped.png)
+4. Sign in to your subscription.  If you have multiple accounts, choose the one associated with your Enterprise subscription.
+0. Enter your email address, select your preferred language, and click **Save**.
+5. On the next page, select the country or region where you live or where your business is located, and then click **Next**.
+6. Select **Individual** as your account type.
+7. Create your publisher display name.  This will be the unique name your customers will see associated with your apps, add-ins, and services.
+8. Provide your contact information and preferred email language, then click **Next**.
+9. You may be asked to verify your password.  Enter it and click **Sign in**.
+10. On the Registration – Payment page, paste the code you copied earlier into the Promo Code field.  The page will update to show that *no payment is required*.  Kliknij przycisk **Dalej**.
+11. Review your account information, review the App Developer Agreement, and click the checkbox to indicate your acceptance of the terms and conditions.  Then click **Finish**.
+12. Click **Go to dashboard** to begin using your Windows Developer Account!
 
-## <a name="eligibility"></a>Kryteria
-| Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Odnawialny?    |
+## <a name="eligibility"></a>Eligibility
+| Subscription Level                                                 |     Kanały                                            | Korzyść                                                          | Renewable?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standardowa)   | LICENCJONOWANie, Azure, sprzedaż detaliczna, wybrane NFR<sup>1</sup> | Uwzględnione       |  Tak|
-| Visual Studio Professional (standardowa) | LICENCJONOWANie, Azure, sprzedaż detaliczna                                       | Uwzględnione                                                            |Tak|
-| Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Niedostępne                                            |  POTRĄCON|
-| Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              |  Niedostępne                                            |  POTRĄCON|
-| Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure                                       | Niedostępne                                                           |POTRĄCON|
+| Visual Studio Enterprise (Standard)   | VL, Azure, Retail,  selected NFR<sup>1</sup> | Included       |  Tak|
+| Visual Studio Enterprise with GitHub Enterprise   | VL  | Included       |  Tak|
+| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Included                                                            |Tak|
+| Visual Studio Professional with GitHub Enterprise | VL                                        | Included                                                            |Tak|
+| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Niedostępne                                            |  NA|
+| MSDN Platforms (Standard)                                          | VL, Retail                                              |  Niedostępne                                            |  NA|
+| Visual Studio Enterprise, Visual Studio Professional (monthly cloud) | Azure                                       | Niedostępne                                                           |NA|
 ||
 
-<sup>1</sup>  *obejmuje: nie dotyczy odsprzedaży (NFR), pełnego etatu, programu Visual Studio Industry partner (VSIP), BizSpark, MCT Software & Services developer. Wyklucza: Microsoft Partner Network (MPN), Wyobraź sobie, najbardziej cenne profesjonalne (MVP), regionalne dyrektora (RD), MCT Software & Services.*
+<sup>1</sup>  *Includes:  Not for Resale (NFR), FTE, Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services Developer. Excludes:  Microsoft Partner Network (MPN), Imagine, Most Valuable Professional (MVP), Regional Director (RD), MCT Software & Services.*
 
 > [!NOTE]
-> Firma Microsoft nie oferuje już Visual Studio Professional rocznych subskrypcji i Visual Studio Enterprise rocznych subskrypcji w ramach subskrypcji chmury. Istnieją zmiany w istniejących klientach i możliwość odnowienia, zwiększenia, zmniejszenia lub anulowania subskrypcji. Zachęcamy nowych klientów do przechodzenia do [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) , aby poznać różne opcje zakupu programu Visual Studio.
+> Microsoft no longer offers Visual Studio Professional Annual subscriptions and Visual Studio Enterprise Annual subscriptions in Cloud Subscriptions. There will be no change to existing customers experience and ability to renew, increase, decrease, or cancel their subscriptions. New customers are encouraged to go to [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) to explore different options to purchase Visual Studio.
 
-Nie masz pewności, której subskrypcji używasz?  Połącz się z [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) , aby wyświetlić wszystkie subskrypcje przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkich subskrypcji, być może masz co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby zobaczyć te subskrypcje.
+Not sure which subscription you're using?  Connect to [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) to see all the subscriptions assigned to your email address. If you don't see all your subscriptions, you may have one or more assigned to a different email address.  You'll need to sign in with that email address to see those subscriptions.
 
-## <a name="support-resources"></a>Zasoby pomocy technicznej
-- Potrzebujesz pomocy przy korzystaniu z konta dewelopera systemu Windows?  Zapoznaj się z zasobami [pomocy technicznej](https://developer.microsoft.com/windows/support) w [Centrum deweloperów systemu Windows](https://developer.microsoft.com/windows).
+## <a name="support-resources"></a>Support resources
+- Need help with using your Windows Developer account?  Check out the [support](https://developer.microsoft.com/windows/support) resources on the [Windows Dev Center](https://developer.microsoft.com/windows).
 - [Tworzenie aplikacji dla systemu Windows](/windows/)
-- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
-- Masz pytanie dotyczące środowiska IDE programu Visual Studio, Azure DevOps Services lub innych produktów lub usług Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
+- For assistance with sales, subscriptions, accounts and billing for Visual Studio Subscriptions, contact Visual Studio [Subscriptions Support](https://visualstudio.microsoft.com/subscriptions/support/).
+- Have a question about Visual Studio IDE, Azure DevOps Services or other Visual Studio products or services?  Visit [Visual Studio Support](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Następne kroki
-Platforma Azure to osobista piaskownica do celów deweloperskich i testowych.  Możesz udostępniać maszyny wirtualne, usługi w chmurze i inne zasoby platformy Azure. Pamiętaj, aby aktywować [korzyść platformy Azure](vs-azure.md) , aby rozpocząć korzystanie z funkcji Azure DevTest.
+Be sure to activate these great benefits to make the most of your Visual Studio subscription:
+- [Visual Studio](vs-ide-benefit.md)
+- [Azure DevOps](vs-azure-devops.md)
+- [Indywidualne środki na korzystanie z usługi Azure DevTest](vs-azure.md)
