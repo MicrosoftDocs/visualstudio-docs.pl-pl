@@ -12,12 +12,12 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5b22e120161a3fefb5688a71c8e4d7540b8bc66e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a23a8d28f336728789fe9cbbe38f965cc56763d7
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669688"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295509"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Programy obsługi zdarzeń propagujące zmiany poza modelem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -190,4 +190,4 @@ private static void AlbumTitleAdjuster(object sender,
 |TransactionRolledBack||
 
 ## <a name="see-also"></a>Zobacz też
- [Odpowiadanie na kod przykładowy i propagowanie zmian](../modeling/responding-to-and-propagating-changes.md) [: diagramy obwodów](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+ [Odpowiadanie na zmiany i propagowanie zmian](../modeling/responding-to-and-propagating-changes.md)

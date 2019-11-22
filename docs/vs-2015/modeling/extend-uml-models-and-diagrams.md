@@ -12,12 +12,12 @@ caps.latest.revision: 39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 69315b8a81c321d8a33583b02e9579f392d1dc65
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b8b154ccd18472d0b0bca502c78a6612aeccdda6
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669610"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301046"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>Rozszerzanie modeli i diagramów UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,13 +30,13 @@ Ten temat zawiera podsumowanie różnych sposobów, w których można rozłoży�
 
  Zespół narzędzi firmy Fabrikam wprowadza szereg ulepszeń, które ułatwiają zespołom programistycznym. W poniższych sekcjach opisano różne rodzaje rozszerzeń, które można zdefiniować. Niektóre z tych technik można połączyć w jedno rozszerzenie programu Visual Studio.
 
- Aby uzyskać więcej informacji, zobacz ten film wideo: ![link do filmu wideo](../data-tools/media/playvideo.gif "PlayVideo")[MSDN — jak to zrobić: narzędzia i rozszerzalność UML](http://go.microsoft.com/fwlink/?LinkId=214467).
+ Aby uzyskać więcej informacji, zobacz ten film wideo: ![link do filmu wideo](../data-tools/media/playvideo.gif "PlayVideo")[MSDN — jak to zrobić: narzędzia i rozszerzalność UML](https://go.microsoft.com/fwlink/?LinkId=214467).
 
-## <a name="Requirements"></a>Wymagania
+## <a name="Requirements"></a> Wymagania
 
 - [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
-- [Modeling SDK dla programu Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=48148).
+- [Modeling SDK dla programu Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=48148).
 
 ## <a name="profiles"></a>Profil
  Profile umożliwiają definiowanie stereotypów i dodatkowych właściwości elementów UML.
@@ -111,12 +111,12 @@ Ten temat zawiera podsumowanie różnych sposobów, w których można rozłoży�
 
 ## <a name="external-resources"></a>Zasoby zewnętrzne
 
-|**Kategorii**|**Linki**|
+|**Kategoria**|**Linki**|
 |------------------|---------------|
-|**Filmy wideo**|![link do wideo](../data-tools/media/playvideo.gif "PlayVideo") [MSDN: jak serie — narzędzia i rozszerzalność UML](http://go.microsoft.com/fwlink/?LinkId=214467)<br /><br /> ![link do kanału wideo](../data-tools/media/playvideo.gif "PlayVideo") [9: UML z programem Visual Studio](http://go.microsoft.com/fwlink/?LinkId=199957)|
-|**Dotyczące**|-   [Wizualizacja programu Visual Studio & narzędzia do modelowania](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [wizualizacji programu Visual Studio & Modeling SDK (narzędzia DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
-|**Blogi**|[Blog programu Visual Studio ALM + Team Foundation Server](http://go.microsoft.com/fwlink/?LinkID=201340)|
-|**Artykuły techniczne i dzienniki**|[Centrum architektury MSDN](http://go.microsoft.com/fwlink/?LinkId=201343)|
+|**Filmy wideo**|![link do wideo](../data-tools/media/playvideo.gif "PlayVideo") [MSDN: jak serie — narzędzia i rozszerzalność UML](https://go.microsoft.com/fwlink/?LinkId=214467)<br /><br /> ![link do kanału wideo](../data-tools/media/playvideo.gif "PlayVideo") [9: UML z programem Visual Studio](https://go.microsoft.com/fwlink/?LinkId=199957)|
+|**Dotyczące**|-   [Wizualizacja programu Visual Studio & narzędzia do modelowania](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [wizualizacji programu Visual Studio & Modeling SDK (narzędzia DSL)](https://go.microsoft.com/fwlink/?LinkId=184721)|
+|**Blogi**|[Blog programu Visual Studio ALM + Team Foundation Server](https://go.microsoft.com/fwlink/?LinkID=201340)|
+|**Artykuły techniczne i dzienniki**|[Centrum architektury MSDN](https://go.microsoft.com/fwlink/?LinkId=201343)|
 
 ## <a name="see-also"></a>Zobacz też
  [Utwórz modele dla](../modeling/create-models-for-your-app.md) [dokumentacji interfejsu API aplikacji dla ROZSZERZALNości modelowania UML](../modeling/api-reference-for-uml-modeling-extensibility.md)

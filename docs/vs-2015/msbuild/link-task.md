@@ -1,5 +1,5 @@
 ---
-title: Łączenie zadań | Dokumentacja firmy Microsoft
+title: Połącz zadanie | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -31,868 +31,868 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: efcdbb4f72d47a5044b287f1b40424f5611d6401
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 181c32017a84328037ea46d49698821fa3cb41ea
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65703431"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295883"
 ---
 # <a name="link-task"></a>Połącz — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Opakowuje narzędzia konsolidatora Visual C++ link.exe. Narzędzia konsolidatora łączy pliki obiektu Common Object File Format (COFF) i biblioteki, aby utworzyć plik wykonywalny (.exe) lub biblioteki dołączanej (dynamicznie DLL). Aby uzyskać więcej informacji, zobacz [opcje konsolidatora](https://msdn.microsoft.com/library/c1d51b8a-bd23-416d-81e4-900e02b2c129).  
+Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidatora łączy pliki i biblioteki obiektów Common Object Format (COFF), aby utworzyć plik wykonywalny (exe) lub bibliotekę dołączaną dynamicznie (DLL). Aby uzyskać więcej informacji, zobacz [Opcje konsolidatora](https://msdn.microsoft.com/library/c1d51b8a-bd23-416d-81e4-900e02b2c129).  
   
 ## <a name="parameters"></a>Parametry  
- W poniższej tabeli opisano parametry **łącze** zadania. Większość parametrów zadania oraz kilka zestawów parametrów, odpowiada opcji wiersza polecenia.  
+ W poniższej tabeli opisano parametry zadania **linku** . Większość parametrów zadań i kilku zestawów parametrów odpowiada opcji wiersza polecenia.  
   
 - **AdditionalDependencies**  
   
-   Opcjonalnie **String []** parametru.  
+   Opcjonalny parametr **String []** .  
   
-   Określa listę plików wejściowych, aby dodać do polecenia.  
+   Określa listę plików wejściowych do dodania do polecenia.  
   
-   Aby uzyskać więcej informacji, zobacz [plików wejściowych łącze](https://msdn.microsoft.com/library/bb26fcc5-509a-4620-bc3e-b6c6e603a412).  
+   Aby uzyskać więcej informacji, zobacz [łączenie plików wejściowych](https://msdn.microsoft.com/library/bb26fcc5-509a-4620-bc3e-b6c6e603a412).  
   
 - **AdditionalLibraryDirectories**  
   
-   Opcjonalnie **String []** parametru.  
+   Opcjonalny parametr **String []** .  
   
-   Zastępuje ścieżki biblioteki środowiska. Określ nazwę katalogu.  
+   Zastępuje ścieżkę biblioteki środowiska. Określ nazwę katalogu.  
   
-   Aby uzyskać więcej informacji, zobacz [/libpath — (dodatkowa Libpath)](https://msdn.microsoft.com/library/7240af0b-9a3d-4d53-8169-2a92cd6958ba).  
+   Aby uzyskać więcej informacji, zobacz [/LIBPATH (dodatkowa LIBPATH)](https://msdn.microsoft.com/library/7240af0b-9a3d-4d53-8169-2a92cd6958ba).  
   
 - **AdditionalManifestDependencies**  
   
-   Opcjonalnie **String []** parametru.  
+   Opcjonalny parametr **String []** .  
   
-   Określa atrybuty, które zostaną umieszczone w `dependency` części pliku manifestu.  
+   Określa atrybuty, które zostaną umieszczone w sekcji `dependency` pliku manifestu.  
   
-   Aby uzyskać więcej informacji, zobacz [/MANIFESTDEPENDENCY (Określ zależności manifestu)](https://msdn.microsoft.com/library/e4b68313-33a2-4c3e-908e-ac2b9f7d6a73). Zobacz też "Pliki konfiguracyjne wydawcy" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
+   Aby uzyskać więcej informacji, zobacz [/MANIFESTDEPENDENCY (Określ zależności manifestu)](https://msdn.microsoft.com/library/e4b68313-33a2-4c3e-908e-ac2b9f7d6a73). Zobacz również sekcję "pliki konfiguracji wydawcy" w witrynie [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) w sieci Web.  
   
 - **AdditionalOptions**  
   
-   Opcjonalnie **ciąg** parametru.  
+   Opcjonalny parametr **ciągu** .  
   
-   Lista opcji konsolidatora, jak określono w wierszu polecenia. Na przykład **"**_/option1 /option2 /option#_". Użyj tego parametru, aby określić opcje konsolidatora, które nie są reprezentowane przez inne **łącze** parametru zadania.  
+   Lista opcji konsolidatora określona w wierszu polecenia. Na przykład **"** _/option1/option2 Option #_ ". Użyj tego parametru, aby określić Opcje konsolidatora, które nie są reprezentowane przez żaden inny parametr zadania **linku** .  
   
-   Aby uzyskać więcej informacji, zobacz [opcje konsolidatora](https://msdn.microsoft.com/library/c1d51b8a-bd23-416d-81e4-900e02b2c129).  
+   Aby uzyskać więcej informacji, zobacz [Opcje konsolidatora](https://msdn.microsoft.com/library/c1d51b8a-bd23-416d-81e4-900e02b2c129).  
   
 - **AddModuleNamesToAssembly**  
   
-   Opcjonalnie **String []** parametru.  
+   Opcjonalny parametr **String []** .  
   
-   Dodaje odwołania modułu do zestawu.  
+   Dodaje odwołanie do modułu do zestawu.  
   
-   Aby uzyskać więcej informacji, zobacz [assemblymodule (Dodaj moduł MSIL do zestawu)](https://msdn.microsoft.com/library/67357da8-e4b6-49fd-932c-329a5777f143).  
+   Aby uzyskać więcej informacji, zobacz [/ASSEMBLYMODULE (Dodaj moduł MSIL do zestawu)](https://msdn.microsoft.com/library/67357da8-e4b6-49fd-932c-329a5777f143).  
   
 - **AllowIsolation**  
   
-   Opcjonalnie **logiczna** parametru.  
+   Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, powoduje, że system operacyjny do manifestu wyszukiwań i ładuje. Jeśli `false`, wskazuje, że biblioteki DLL są ładowane tak, jakby nie było żadnych manifestu.  
+   Jeśli `true`, powoduje, że system operacyjny przeszukiwanie i ładowanie manifestu. Jeśli `false`, wskazuje, że biblioteki DLL są ładowane tak, jakby nie było manifestu.  
   
-   Aby uzyskać więcej informacji, zobacz [/ALLOWISOLATION (wyszukiwanie Manifest)](https://msdn.microsoft.com/library/6d41851e-b3c1-4bdf-beaa-031773089d6f).  
+   Aby uzyskać więcej informacji, zobacz [/ALLOWISOLATION (odnośnik manifestu)](https://msdn.microsoft.com/library/6d41851e-b3c1-4bdf-beaa-031773089d6f).  
   
 - **AssemblyDebug**  
   
-   Opcjonalnie **logiczna** parametru.  
+   Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, emituje **DebuggableAttribute** atrybut wraz z debugowania informacji śledzenia i wyłącza optymalizacje JIT. Jeśli `false`, emituje **DebuggableAttribute** atrybut, ale powoduje wyłączenie śledzenia informacji o debugowaniu i włącza optymalizacje JIT.  
+   Jeśli `true`, emituje atrybut **DebuggableAttribute** wraz ze śledzeniem informacji debugowania i wyłącza optymalizacje JIT. Jeśli `false`, emituje atrybut **DebuggableAttribute** , ale wyłącza śledzenie informacji debugowania i włącza optymalizacje JIT.  
   
-   Aby uzyskać więcej informacji, zobacz [/assemblydebug (Dodaj DebuggableAttribute)](https://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982).  
+   Aby uzyskać więcej informacji, zobacz [/ASSEMBLYDEBUG (Add DebuggableAttribute)](https://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982).  
   
 - **AssemblyLinkResource**  
   
-   Opcjonalnie **String []** parametru.  
+   Opcjonalny parametr **String []** .  
   
-   Tworzy łącze do zasobów .NET Framework w pliku wyjściowym; plik zasobu nie zostanie umieszczony w pliku wyjściowym. Określ nazwę zasobu.  
+   Tworzy łącze do zasobu .NET Framework w pliku wyjściowym; plik zasobu nie jest umieszczany w pliku wyjściowym. Określ nazwę zasobu.  
   
-   Aby uzyskać więcej informacji, zobacz [assemblylinkresource (Link do zasobów .NET Framework)](https://msdn.microsoft.com/library/8b6ad184-1b33-47a4-8513-4803cf915b64).  
+   Aby uzyskać więcej informacji, zobacz [/ASSEMBLYLINKRESOURCE (link do zasobów .NET Framework)](https://msdn.microsoft.com/library/8b6ad184-1b33-47a4-8513-4803cf915b64).  
   
 - **AttributeFileTracking**  
   
-   Niejawne **logiczna** parametru.  
+   Niejawny parametr **logiczny** .  
   
-   Umożliwia bardziej plik śledzenia do przechwytywania zachowanie łącza przyrostowe firmy. Zawsze zwraca `true`.  
+   Umożliwia dokładniejsze śledzenie plików, aby przechwycić zachowanie przyrostu łącza. Zawsze zwraca `true`.  
   
 - **BaseAddress**  
   
-   Opcjonalnie **ciąg** parametru.  
+   Opcjonalny parametr **ciągu** .  
   
-   Ustawia adres bazowy programu lub biblioteka DLL jest kompilowana. Określ `{address[,size] | @filename,key}`.  
+   Ustawia adres podstawowy dla kompilowanego programu lub biblioteki DLL. Określ `{address[,size] | @filename,key}`.  
   
-   Aby uzyskać więcej informacji, zobacz [uwzględniają (adres podstawowy)](https://msdn.microsoft.com/library/00b9f6fe-0bd2-4772-a69c-7365eb199069).  
+   Aby uzyskać więcej informacji, zobacz [/Base (adres podstawowy)](https://msdn.microsoft.com/library/00b9f6fe-0bd2-4772-a69c-7365eb199069).  
   
 - **BuildingInIDE**  
   
-   Opcjonalnie **logiczna** parametru.  
+   Opcjonalny parametr **logiczny** .  
   
-   W przypadku opcji true wskazuje, że program MSBuild jest wywoływana z poziomu środowiska IDE. W przeciwnym razie wskazuje, że program MSBuild jest wywoływana z poziomu wiersza polecenia.  
+   Jeśli wartość jest równa true, wskazuje, że MSBuild jest wywoływany z IDE. W przeciwnym razie wskazuje, że MSBuild jest wywoływany z wiersza polecenia.  
   
-   Ten parametr nie ma żadnej opcji równoważne konsolidatora.  
+   Ten parametr nie ma równoważnej opcji konsolidatora.  
   
 - **CLRImageType**  
   
-   Opcjonalnie **ciąg** parametru.  
+   Opcjonalny parametr **ciągu** .  
   
-   Ustawia typ wspólnej obrazu od języka wspólnego (CLR).  
+   Ustawia typ obrazu środowiska uruchomieniowego języka wspólnego (CLR).  
   
    Określ jedną z następujących wartości, z których każdy odpowiada opcji konsolidatora.  
   
-  - **Domyślne** - *\<Brak >*  
+  - **Domyślne** -  *\<brak >*  
   
-  - **ForceIJWImage** - **/CLRIMAGETYPE:IJW**  
+  - **ForceIJWImage** -  **/CLRIMAGETYPE:IJW**  
   
-  - **ForcePureILImage** - **/CLRIMAGETYPE:PURE**  
+  - **ForcePureILImage** -  **/CLRIMAGETYPE: czysty**  
   
-  - **ForceSafeILImage** - **/CLRIMAGETYPE:SAFE**  
+  - **ForceSafeILImage** -  **/CLRIMAGETYPE:SAFE**  
   
-    Aby uzyskać więcej informacji, zobacz [/clrimagetype (określenie typu z obrazu CLR)](https://msdn.microsoft.com/library/04c60ee6-9dd7-4391-bc03-6926ad0fa116).  
+    Aby uzyskać więcej informacji, zobacz [/CLRIMAGETYPE (Określ typ obrazu CLR)](https://msdn.microsoft.com/library/04c60ee6-9dd7-4391-bc03-6926ad0fa116).  
   
 - **CLRSupportLastError**  
   
-   Opcjonalnie **ciąg** parametru.  
+   Opcjonalny parametr **ciągu** .  
   
-   Zachowuje kod ostatniego błędu funkcji wywołanych za pomocą mechanizmu P/Invoke.  
+   Zachowuje kod ostatniego błędu funkcji wywoływanych za pomocą mechanizmu P/Invoke.  
   
    Określ jedną z następujących wartości, z których każdy odpowiada opcji konsolidatora.  
   
-  - **Włączone** - **/CLRSupportLastError**  
+  - **Włączone** -  **/CLRSupportLastError**  
   
-  - **Wyłączone** - **/CLRSupportLastError:NO**  
+  - **Wyłączone** -  **/CLRSupportLastError: nie**  
   
-  - **SystemDlls** - **/CLRSupportLastError:SYSTEMDLL**  
+  - **SystemDlls** -  **/CLRSupportLastError:SYSTEMDLL**  
   
     Aby uzyskać więcej informacji, zobacz [/CLRSUPPORTLASTERROR (Zachowaj kod ostatniego błędu dla wywołań PInvoke)](https://msdn.microsoft.com/library/b7057990-4154-4b1d-9fc9-6236f7be7575).  
   
 - **CLRThreadAttribute**  
   
-   Opcjonalnie **ciąg** parametru.  
+   Opcjonalny parametr **ciągu** .  
   
-   Określa jawnie atrybut wątkowości dla punktu wejścia programu CLR.  
+   Jawnie określa atrybut wątkowości dla punktu wejścia programu CLR.  
   
    Określ jedną z następujących wartości, z których każdy odpowiada opcji konsolidatora.  
   
-  - **DefaultThreadingAttribute** - **/CLRTHREADATTRIBUTE: Brak**  
+  - **DefaultThreadingAttribute** -  **/CLRTHREADATTRIBUTE: brak**  
   
-  - **MTAThreadingAttribute** - **: MTA**  
+  - **MTAThreadingAttribute** -  **/CLRTHREADATTRIBUTE: MTA**  
   
-  - **STAThreadingAttribute** - **/CLRTHREADATTRIBUTE:STA**  
+  - **STAThreadingAttribute** -  **/CLRTHREADATTRIBUTE: sta**  
   
-    Aby uzyskać więcej informacji, zobacz [/CLRTHREADATTRIBUTE (Ustaw wątku atrybut CLR)](https://msdn.microsoft.com/library/4907e9ef-5031-446c-aecf-0a0b32fae1e8).  
+    Aby uzyskać więcej informacji, zobacz [/CLRTHREADATTRIBUTE (ustaw atrybut wątku CLR)](https://msdn.microsoft.com/library/4907e9ef-5031-446c-aecf-0a0b32fae1e8).  
   
 - **CLRUnmanagedCodeCheck**  
   
-   Opcjonalnie **logiczna** parametru.  
+   Opcjonalny parametr **logiczny** .  
   
-   Określa, czy konsolidator zastosuje **SuppressUnmanagedCodeSecurityAttribute** na generowanych przez konsolidator wywołania metody P/Invoke z kodu zarządzanego, do macierzystych bibliotek DLL.  
+   Określa, czy konsolidator będzie stosował **SuppressUnmanagedCodeSecurityAttribute** do wygenerowanych przez konsolidatora wywołań P/Invoke z kodu zarządzanego do natywnych bibliotek DLL.  
   
-   Aby uzyskać więcej informacji, zobacz [opcji/clrunmanagedcodecheck (Dodaj atrybut SuppressUnmanagedCodeSecurityAttribute)](https://msdn.microsoft.com/library/73abc426-dab0-45e2-be85-0f9a14206cc2).  
+   Aby uzyskać więcej informacji, zobacz [/CLRUNMANAGEDCODECHECK (Add SuppressUnmanagedCodeSecurityAttribute)](https://msdn.microsoft.com/library/73abc426-dab0-45e2-be85-0f9a14206cc2).  
   
 - **CreateHotPatchableImage**  
   
-   Opcjonalnie **ciąg** parametru.  
+   Opcjonalny parametr **ciągu** .  
   
-   Przygotowuje obraz do poprawki.  
+   Przygotowuje obraz do stosowania poprawek na gorąco.  
   
-   Określ jedną z następujących wartości, które odpowiada opcji konsolidatora.  
+   Określ jedną z następujących wartości, która odnosi się do opcji konsolidatora.  
   
-  - **Enabled** - **/FUNCTIONPADMIN**  
+  - **Enabled** -  **/FUNCTIONPADMIN**  
   
-  - **X86Image** - **/FUNCTIONPADMIN:5**  
+  - **X86Image** -  **/FUNCTIONPADMIN:5**  
   
-  - **X64Image** - **/FUNCTIONPADMIN:6**  
+  - **X64Image** -  **/FUNCTIONPADMIN:6**  
   
-  - **ItaniumImage** - **/FUNCTIONPADMIN:16**  
+  - **ItaniumImage** -  **/functionpadmin: 16**  
   
-    Aby uzyskać więcej informacji, zobacz [/FUNCTIONPADMIN (Utwórz obraz Hotpatchable)](https://msdn.microsoft.com/library/25b02c13-1add-4fbd-add9-fcb30eb2cae7).  
+    Aby uzyskać więcej informacji, zobacz [/functionpadmin (Create możliwy do poprawiania Image)](https://msdn.microsoft.com/library/25b02c13-1add-4fbd-add9-fcb30eb2cae7).  
   
 - **DataExecutionPrevention**  
   
-   Opcjonalnie **logiczna** parametru.  
+   Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, wskazuje, że plik wykonywalny został sprawdzony w celu uzyskania zgodności z funkcją zapobiegania wykonywaniu danych Windows.  
+   Jeśli `true`, wskazuje, że plik wykonywalny został przetestowany pod kątem zgodności z funkcją zapobiegania wykonywaniu danych systemu Windows.  
   
    Aby uzyskać więcej informacji, zobacz [/NXCOMPAT (zgodny z zapobieganiem wykonywaniu danych)](https://msdn.microsoft.com/library/5858e7ff-24d3-4ac3-9046-af2c9e220d9b).  
   
 - **DelayLoadDLLs**  
   
-   Opcjonalnie **String []** parametru.  
+   Opcjonalny parametr **String []** .  
   
-   Powoduje, że ten parametr *opóźnione ładowanie* bibliotek DLL. Określ nazwę biblioteki DLL w celu opóźnienia ładowania.  
+   Ten parametr powoduje *opóźnione ładowanie* bibliotek DLL. Określ nazwę pliku DLL, aby opóźnić ładowanie.  
   
-   Aby uzyskać więcej informacji, zobacz [/delayload (Opóźnij importowanie ładowania)](https://msdn.microsoft.com/library/39ea0f1e-5c01-450f-9c75-2d9761ff9b28).  
+   Aby uzyskać więcej informacji, zobacz [/DELAYLOAD (opóźnienie importowania ładowania)](https://msdn.microsoft.com/library/39ea0f1e-5c01-450f-9c75-2d9761ff9b28).  
   
 - **DelaySign**  
   
-   Opcjonalnie **logiczna** parametru.  
+   Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, częściowo podpisuje zestaw. Domyślna wartość to `false`.  
+   Jeśli `true`, częściowo podpisuje zestaw. Domyślnie wartość jest `false`.  
   
-   Aby uzyskać więcej informacji, zobacz [/DelaySign (częściowo podpisać zestaw)](https://msdn.microsoft.com/library/15244d30-3ecb-492f-a408-ffe81f38de20).  
+   Aby uzyskać więcej informacji, zobacz [/delaysign (częściowo podpisz zestaw)](https://msdn.microsoft.com/library/15244d30-3ecb-492f-a408-ffe81f38de20).  
   
 - **Sterownik**  
   
-   Opcjonalnie **ciąg** parametru.  
+   Opcjonalny parametr **ciągu** .  
   
-   Określenia tego parametru, aby zbudować sterownik trybu jądra Windows NT.  
+   Określ ten parametr, aby skompilować sterownik trybu jądra systemu Windows NT.  
   
    Określ jedną z następujących wartości, z których każdy odpowiada opcji konsolidatora.  
   
-  - **NotSet** - *\<none>*  
+  - **NotSet** -  *\<none>*  
   
-  - **Driver** - **/Driver**  
+  - **Driver** -  **/Driver**  
   
-  - **UpOnly** - **/DRIVER:UPONLY**  
+  - **UpOnly** -  **/DRIVER:UPONLY**  
   
-  - **WDM** - **/DRIVER:WDM**  
+  - **WDM** -  **/DRIVER:WDM**  
   
-    Aby uzyskać więcej informacji, zobacz [Driver/Driver (sterownik trybu jądra Windows NT)](https://msdn.microsoft.com/library/aeee8e28-5d97-40f5-ba16-9f370fe8a1b8).  
+    Aby uzyskać więcej informacji, zobacz [Sterownik systemu Windows NT — sterowniki trybu jądra](https://msdn.microsoft.com/library/aeee8e28-5d97-40f5-ba16-9f370fe8a1b8).  
   
 - **EmbedManagedResourceFile**  
   
-   Opcjonalnie **String []** parametru.  
+   Opcjonalny parametr **String []** .  
   
-   Osadza plik zasobów w zestawie. Określ nazwę pliku wymaganego zasobu. Opcjonalnie można określić nazwy logicznej, która jest używana do ładowania zasobu, a **PRYWATNEJ** opcja, która wskazuje w manifeście zestawu, czy plik zasobów jest prywatny.  
+   Osadza plik zasobów w zestawie. Określ wymaganą nazwę pliku zasobu. Opcjonalnie można określić nazwę logiczną, która jest używana do ładowania zasobu, oraz opcję **prywatną** wskazującą w manifeście zestawu, że plik zasobów jest prywatny.  
   
-   Aby uzyskać więcej informacji, zobacz [linkowany (Osadź zarządzany zasób)](https://msdn.microsoft.com/library/0ce6e1fb-921b-4b1b-a59c-d35388d789f2).  
+   Aby uzyskać więcej informacji, zobacz [/ASSEMBLYRESOURCE (osadzanie zarządzanego zasobu)](https://msdn.microsoft.com/library/0ce6e1fb-921b-4b1b-a59c-d35388d789f2).  
   
 - **EnableCOMDATFolding**  
   
-   Opcjonalnie **logiczna** parametru.  
+   Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, umożliwia identyczne składanie COMDAT.  
+   Jeśli `true`, włącza identyczne składanie COMDAT.  
   
-   Aby uzyskać więcej informacji, zobacz `ICF[= iterations]` argument [od (optymalizacje)](https://msdn.microsoft.com/library/8f229863-5f53-48a8-9478-243a647093ac).  
+   Aby uzyskać więcej informacji, zobacz `ICF[= iterations]` argument [/opt (optymalizacje)](https://msdn.microsoft.com/library/8f229863-5f53-48a8-9478-243a647093ac).  
   
 - **EnableUAC**  
   
-   Opcjonalnie **logiczna** parametru.  
+   Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, określa, czy informacje kontroli konta użytkownika (UAC) będą osadzone w manifeście programu.  
+   Jeśli `true`, określa, że informacje kontroli konta użytkownika (UAC) są osadzone w manifeście programu.  
   
-   Aby uzyskać więcej informacji, zobacz [/MANIFESTUAC (osadza informacje UAC w manifeście)](https://msdn.microsoft.com/library/2d243c39-fa13-493c-b56f-d0d972a1603a).  
+   Aby uzyskać więcej informacji, zobacz [/MANIFESTUAC (osadzanie informacji UAC w manifeście)](https://msdn.microsoft.com/library/2d243c39-fa13-493c-b56f-d0d972a1603a).  
   
 - **EntryPointSymbol**  
   
-   Opcjonalnie **ciąg** parametru.  
+   Opcjonalny parametr **ciągu** .  
   
-   Określa funkcję punktu wejścia jako adres początkowy dla pliku .exe lub DLL. Określ nazwę funkcji jako wartość parametru.  
+   Określa funkcję punktu wejścia jako adres początkowy dla pliku. exe lub DLL. Określ nazwę funkcji jako wartość parametru.  
   
-   Aby uzyskać więcej informacji, zobacz [/Entry (Symbol punktu wejścia)](https://msdn.microsoft.com/library/26c62ba2-4f52-4882-a7bd-7046a0abf445).  
+   Aby uzyskać więcej informacji, zobacz [/entry (symbol punktu wejścia)](https://msdn.microsoft.com/library/26c62ba2-4f52-4882-a7bd-7046a0abf445).  
   
 - **FixedBaseAddress**  
   
-   Opcjonalnie **logiczna** parametru.  
+   Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, tworzy program lub biblioteki DLL, który może zostać załadowany tylko pod swoim preferowanym adresem bazowym.  
+   W przypadku `true`tworzy program lub plik DLL, który można załadować tylko przy użyciu preferowanego adresu podstawowego.  
   
-   Aby uzyskać więcej informacji, zobacz [/Fixed (stały adres podstawowy)](https://msdn.microsoft.com/library/929bba5e-b7d8-40ed-943e-056aa3710fc5).  
+   Aby uzyskać więcej informacji, zobacz [/FIXED (stały adres podstawowy)](https://msdn.microsoft.com/library/929bba5e-b7d8-40ed-943e-056aa3710fc5).  
   
 - **ForceFileOutput**  
   
-   Opcjonalnie **ciąg** parametru.  
+   Opcjonalny parametr **ciągu** .  
   
-   Informuje konsolidator, aby utworzyć plik .exe prawidłowe lub biblioteki DLL nawet wtedy, gdy symbolu występują odwołania, ale nie zdefiniowane, lub należy pomnożyć zdefiniowane.  
+   Nakazuje konsolidatorowi utworzenie prawidłowego pliku. exe lub DLL, nawet jeśli istnieje odwołanie do symbolu, ale nie zdefiniowane lub jest zdefiniowane wielokrotnie.  
   
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
-  - **Włączone** -   **/FORCE**  
+  - **Włączono** -  **/Force**  
   
-  - **MultiplyDefinedSymbolOnly** - **/FORCE:MULTIPLE**  
+  - **MultiplyDefinedSymbolOnly** -  **/Force: wiele**  
   
-  - **UndefinedSymbolOnly** -   **/FORCE: NIEROZPOZNANA**  
+  - **UndefinedSymbolOnly** -  **/Force: nierozwiązane**  
   
-    Aby uzyskać więcej informacji, zobacz [/Force (Wymuszaj produkt wyjściowy pliku)](https://msdn.microsoft.com/library/b1e9a218-a5eb-4e60-a4a4-65b4be15e5da).  
+    Aby uzyskać więcej informacji, zobacz [/Force (Wymuś dane wyjściowe pliku)](https://msdn.microsoft.com/library/b1e9a218-a5eb-4e60-a4a4-65b4be15e5da).  
   
 - **ForceSymbolReferences**  
   
-   Opcjonalnie **String []** parametru.  
+   Opcjonalny parametr **String []** .  
   
-   Ten parametr informuje konsolidator, aby dodał określony symbol do tabeli symboli.  
+   Ten parametr nakazuje konsolidatorowi dodanie określonego symbolu do tabeli symboli.  
   
    Aby uzyskać więcej informacji, zobacz [/include (Wymuszaj odwołania do symboli)](https://msdn.microsoft.com/library/4a039677-360a-480f-bd0b-448e239b449c).  
   
 - **FunctionOrder**  
   
-   Opcjonalnie **ciąg** parametru.  
+   Opcjonalny parametr **ciągu** .  
   
-   Ten parametr optymalizuje program, umieszczając określonego funkcje pakowane (COMDATs) w obrazie w ustalonej kolejności.  
+   Ten parametr optymalizuje program przez umieszczenie określonych spakowanych funkcji (COMDAT) w obrazie w ustalonej kolejności.  
   
-   Aby uzyskać więcej informacji, zobacz [/order (umieścić funkcje w kolejności)](https://msdn.microsoft.com/library/ecf5eb3e-e404-4e86-9a91-4e5ec157261a).  
+   Aby uzyskać więcej informacji, zobacz [/Order (Put funkcje w kolejności)](https://msdn.microsoft.com/library/ecf5eb3e-e404-4e86-9a91-4e5ec157261a).  
   
 - **GenerateDebugInformation**  
   
-   Opcjonalnie **logiczna** parametru.  
+   Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, tworzenie informacji debugowania dla pliku .exe lub DLL.  
+   Jeśli `true`, program tworzy informacje debugowania dla pliku exe lub DLL.  
   
-   Aby uzyskać więcej informacji, zobacz [/Debug (generowanie informacji debugowania)](https://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103).  
+   Aby uzyskać więcej informacji, zobacz [/debug (generowanie informacji o debugowaniu)](https://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103).  
   
 - **GenerateManifest**  
   
-   Opcjonalnie **logiczna** parametru.  
+   Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, tworzy plik manifestu side-by-side.  
+   Jeśli `true`, program tworzy plik manifestu obok siebie.  
   
-   Aby uzyskać więcej informacji, zobacz [/MANIFEST (Side-by-Side tworzenie manifestu dla aplikacji)](https://msdn.microsoft.com/library/98c52e1e-712c-4f49-b149-4d0a3501b600).  
+   Aby uzyskać więcej informacji, zobacz [/manifest (Create Side-by-Side manifest zestawu)](https://msdn.microsoft.com/library/98c52e1e-712c-4f49-b149-4d0a3501b600).  
   
 - **GenerateMapFile**  
   
-   Opcjonalnie **logiczna** parametru.  
+   Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, tworzy *pliku mapy*. Rozszerzenie nazwy pliku mapy jest map.  
+   Jeśli `true`, program tworzy *plik mapy*. Rozszerzenie nazwy pliku mapy to. map.  
   
    Aby uzyskać więcej informacji, zobacz [/map (Generuj plik mapy)](https://msdn.microsoft.com/library/9ccce53d-4e36-43da-87b0-7603ddfdea63).  
   
 - **HeapCommitSize**  
   
-   Opcjonalnie **ciąg** parametru.  
+   Opcjonalny parametr **ciągu** .  
   
-   Określa ilość fizycznej pamięci na stosie, można przydzielić w danym momencie.  
+   Określa ilość pamięci fizycznej na stercie do przydzielenia w danym momencie.  
   
-   Aby uzyskać więcej informacji, zobacz `commit` argument [/HEAP (Ustaw rozmiar sterty)](https://msdn.microsoft.com/library/a3f71927-7f1d-492c-9fdb-dfccb1a043da). Zobacz też **HeapReserveSize** parametru.  
+   Aby uzyskać więcej informacji, zobacz argument `commit` w [/Heap (Ustawianie rozmiaru sterty)](https://msdn.microsoft.com/library/a3f71927-7f1d-492c-9fdb-dfccb1a043da). Zobacz również parametr **HeapReserveSize** .  
   
 - **HeapReserveSize**  
   
-   Opcjonalnie **ciąg** parametru.  
+   Opcjonalny parametr **ciągu** .  
   
-   Określa Alokacja sterty całkowitej pamięci wirtualnej.  
+   Określa całkowitą alokację sterty w pamięci wirtualnej.  
   
-   Aby uzyskać więcej informacji, zobacz `reserve` argument [/HEAP (Ustaw rozmiar sterty)](https://msdn.microsoft.com/library/a3f71927-7f1d-492c-9fdb-dfccb1a043da). Zobacz też **HeapCommitSize** parametru w tej tabeli.  
+   Aby uzyskać więcej informacji, zobacz argument `reserve` w [/Heap (Ustawianie rozmiaru sterty)](https://msdn.microsoft.com/library/a3f71927-7f1d-492c-9fdb-dfccb1a043da). Zobacz również parametr **HeapCommitSize** w tej tabeli.  
   
 - **IgnoreAllDefaultLibraries**  
   
-   Opcjonalnie **logiczna** parametru.  
+   Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, informuje konsolidator, aby usunąć jedną lub więcej bibliotek domyślnych z listy bibliotek wyszukiwania podczas rozpoznawania odwołań zewnętrznych.  
+   Jeśli `true`, nakazuje konsolidatorowi usunięcie co najmniej jednej biblioteki domyślnej z listy bibliotek, które przeszukuje, gdy rozwiązuje odwołania zewnętrzne.  
   
-   Aby uzyskać więcej informacji, zobacz [/nodefaultlib (Ignoruj biblioteki)](https://msdn.microsoft.com/library/7270b673-6711-468e-97a7-c2925ac2be6e).  
+   Aby uzyskać więcej informacji, zobacz [/NODEFAULTLIB (Ignoruj biblioteki)](https://msdn.microsoft.com/library/7270b673-6711-468e-97a7-c2925ac2be6e).  
   
 - **IgnoreEmbeddedIDL**  
   
-   Opcjonalnie **logiczna** parametru.  
+   Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, określa, że nie można przetworzyć jakiekolwiek atrybuty IDL w kodzie źródłowym do pliku .idl.  
+   Jeśli `true`, określa, że żadne atrybuty IDL w kodzie źródłowym nie powinny być przetwarzane do pliku. idl.  
   
-   Aby uzyskać więcej informacji, zobacz [/IGNOREIDL (nie atrybutów procesu w MIDL)](https://msdn.microsoft.com/library/29514098-6a1c-4317-af2f-1dc268972780).  
+   Aby uzyskać więcej informacji, zobacz [/IGNOREIDL (nie Przetwarzaj atrybutów w MIDL)](https://msdn.microsoft.com/library/29514098-6a1c-4317-af2f-1dc268972780).  
   
 - **IgnoreImportLibrary**  
   
-   Opcjonalnie **logiczna** parametru.  
+   Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, określa, że biblioteka importowana, generowana przez tą konfigurację nie będzie importowana do projektów zależnych.  
+   Jeśli `true`, określa, że biblioteka importowana, generowana przez tę konfigurację, nie powinna być importowana do projektów zależnych.  
   
-   Ten parametr nie odpowiada — opcja konsolidatora.  
+   Ten parametr nie odpowiada opcji konsolidatora.  
   
 - **IgnoreSpecificDefaultLibraries**  
   
-   Opcjonalnie **String []** parametru.  
+   Opcjonalny parametr **String []** .  
   
-   Określa jedną lub więcej nazw bibliotek domyślnych do zignorowania. Rozdzielaj wielokrotne biblioteki przy użyciu średników.  
+   Określa co najmniej jedną nazwę bibliotek domyślnych do zignorowania. Oddziel wiele bibliotek przy użyciu średników.  
   
-   Aby uzyskać więcej informacji, zobacz [/nodefaultlib (Ignoruj biblioteki)](https://msdn.microsoft.com/library/7270b673-6711-468e-97a7-c2925ac2be6e).  
+   Aby uzyskać więcej informacji, zobacz [/NODEFAULTLIB (Ignoruj biblioteki)](https://msdn.microsoft.com/library/7270b673-6711-468e-97a7-c2925ac2be6e).  
   
 - **ImageHasSafeExceptionHandlers**  
   
-   Opcjonalnie **logiczna** parametru.  
+   Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, konsolidator generuje obraz tylko wtedy, gdy może utworzyć również tabelę obsługi bezpiecznych wyjątków obrazu.  
+   Jeśli `true`, konsolidator tworzy obraz tylko wtedy, gdy może również generować tabelę obsługi wyjątków bezpiecznego obrazu.  
   
-   Aby uzyskać więcej informacji, zobacz [opcja/SAFESEH (obraz ma bezpieczną obsługę wyjątków)](https://msdn.microsoft.com/library/7722ff99-b833-4c65-a855-aaca902ffcb7).  
+   Aby uzyskać więcej informacji, zobacz [/SAFESEH (obraz ma bezpieczne procedury obsługi wyjątków)](https://msdn.microsoft.com/library/7722ff99-b833-4c65-a855-aaca902ffcb7).  
   
 - **ImportLibrary**  
   
-   Nazwa biblioteki importu określonych przez użytkownika, która zastępuje domyślną nazwę biblioteki.  
+   Nazwa biblioteki importu określona przez użytkownika, która zastępuje domyślną nazwę biblioteki.  
   
-   Aby uzyskać więcej informacji, zobacz [/IMPLIB (Nazwij bibliotekę importowaną)](https://msdn.microsoft.com/library/fe8f71ab-7055-41b5-8ef8-2b97cfa4a432).  
+   Aby uzyskać więcej informacji, zobacz [/IMPLIB (Name import Library)](https://msdn.microsoft.com/library/fe8f71ab-7055-41b5-8ef8-2b97cfa4a432).  
   
 - **KeyContainer**  
   
-   Opcjonalnie **ciąg** parametru.  
+   Opcjonalny parametr **ciągu** .  
   
-   Kontener, który zawiera klucz dla zestawu podpisem.  
+   Kontener, który zawiera klucz dla podpisanego zestawu.  
   
-   Aby uzyskać więcej informacji, zobacz [/KeyContainer (Określ kontener klucza, aby podpisać zestaw)](https://msdn.microsoft.com/library/94882d12-b77a-49c7-96d0-18a31aee001e). Zobacz też **KeyFile** parametru w tej tabeli.  
+   Aby uzyskać więcej informacji, zobacz [/KEYCONTAINER (Określ kontener klucza do podpisania zestawu)](https://msdn.microsoft.com/library/94882d12-b77a-49c7-96d0-18a31aee001e). Zobacz również parametr **KeyFile** w tej tabeli.  
   
 - **KeyFile**  
   
-   Opcjonalnie **ciąg** parametru.  
+   Opcjonalny parametr **ciągu** .  
   
-   Określa plik, który zawiera klucz dla zestawu podpisanego za pomocą.  
+   Określa plik, który zawiera klucz dla podpisanego zestawu.  
   
-   Aby uzyskać więcej informacji, zobacz [/KeyFile (Określ klucz lub parę klucz Aby podpisać zestaw)](https://msdn.microsoft.com/library/9b71f8c0-541c-4fe5-a0c7-9364f42ecb06). Zobacz też **KeyContainer** parametru.  
+   Aby uzyskać więcej informacji, zobacz [/keyfile (Określ klucz lub parę kluczy, aby podpisać zestaw)](https://msdn.microsoft.com/library/9b71f8c0-541c-4fe5-a0c7-9364f42ecb06). Należy również zapoznać się z parametrem **kontenera** .  
   
 - **LargeAddressAware**  
   
-   Opcjonalnie **logiczna** parametru.  
+   Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, aplikacja może obsługiwać adresy większe niż 2 gigabajty.  
+   Jeśli `true`, aplikacja może obsłużyć adresy większe niż 2 gigabajty.  
   
-   Aby uzyskać więcej informacji, zobacz [/largeaddressaware (Obsługa dużych adresów)](https://msdn.microsoft.com/library/a29756c8-e893-47a9-9750-1f0d25359385).  
+   Aby uzyskać więcej informacji, zobacz [/LARGEADDRESSAWARE (obsługa dużych adresów)](https://msdn.microsoft.com/library/a29756c8-e893-47a9-9750-1f0d25359385).  
   
 - **LinkDLL**  
   
-   Opcjonalnie **logiczna** parametru.  
+   Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, kompiluje bibliotekę DLL jako plik wyjściowy głównego.  
+   Jeśli `true`, program kompiluje bibliotekę DLL jako główny plik wyjściowy.  
   
-   Aby uzyskać więcej informacji, zobacz [/dll (kompilowanie biblioteki DLL)](https://msdn.microsoft.com/library/c7685aec-31d0-490f-9503-fb5171a23609).  
+   Aby uzyskać więcej informacji, zobacz [/dll (Kompilowanie biblioteki dll)](https://msdn.microsoft.com/library/c7685aec-31d0-490f-9503-fb5171a23609).  
   
 - **LinkErrorReporting**  
   
-   Opcjonalnie **ciąg** parametru.  
+   Opcjonalny parametr **ciągu** .  
   
-   Pozwala zapewnić wewnętrznych kompilatora-informacje o błędzie (ICE) bezpośrednio do firmy Microsoft.  
+   Umożliwia dostarczenie informacji o wewnętrznym błędzie kompilatora (lodem) bezpośrednio do firmy Microsoft.  
   
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
-  - **NoErrorReport** -   **/errorreport: Brak**  
+  - **NoErrorReport** -  **/errorReport: brak**  
   
-  - **PromptImmediately** - **/ERRORREPORT:PROMPT**  
+  - **Monituj bezzwłocznie** -  **/errorReport: Prompt**  
   
-  - **QueueForNextLogin** - **/ERRORREPORT:QUEUE**  
+  - **QueueForNextLogin** -  **/ERRORREPORT:QUEUE**  
   
-  - **SendErrorReport** - **/ERRORREPORT:SEND**  
+  - **SendErrorReport** -  **/errorReport: Send**  
   
     Aby uzyskać więcej informacji, zobacz [/errorreport (zgłaszaj wewnętrzne błędy konsolidatora)](https://msdn.microsoft.com/library/f5fab595-a2f1-4eb0-ab5c-1c0fbd3d8c28).  
   
 - **LinkIncremental**  
   
-   Opcjonalnie **logiczna** parametru.  
+   Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, włącza konsolidację przyrostową.  
+   Jeśli `true`, włącza łączenie przyrostowe.  
   
-   Aby uzyskać więcej informacji, zobacz [/incremental (Link przyrostowo)](https://msdn.microsoft.com/library/135656ff-94fa-4ad4-a613-22e1a2a5d16b).  
+   Aby uzyskać więcej informacji, zobacz [/Incremental (łączenie przyrostowe)](https://msdn.microsoft.com/library/135656ff-94fa-4ad4-a613-22e1a2a5d16b).  
   
 - **LinkLibraryDependencies**  
   
-   Opcjonalnie **logiczna** parametru.  
+   Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, określa, czy biblioteka wyników z odwoływanych projektów jest automatycznie konsolidowana.  
+   Jeśli `true`, określa, że dane wyjściowe biblioteki z zależności projektu są automatycznie dołączane.  
   
-   Ten parametr nie odpowiada — opcja konsolidatora.  
+   Ten parametr nie odpowiada opcji konsolidatora.  
   
 - **LinkStatus**  
   
-   Opcjonalnie **logiczna** parametru.  
+   Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, określa, że konsolidator jest wyświetlenie wskaźnika postępu, który pokazuje, jaki procent łącze zostało zakończone.  
+   Jeśli `true`, określa, że konsolidator ma wyświetlać wskaźnik postępu, który pokazuje, jaki procent łącza zostało zakończone.  
   
-   Aby uzyskać więcej informacji, zobacz `STATUS` argument [opcję/LTCG (Generowanie kodu Link-time)](https://msdn.microsoft.com/library/788c6f52-fdb8-40c2-90af-4026ea2cf2e2).  
+   Aby uzyskać więcej informacji, zobacz argument `STATUS` [/LTCG (generowanie kodu w czasie konsolidacji)](https://msdn.microsoft.com/library/788c6f52-fdb8-40c2-90af-4026ea2cf2e2).  
   
 - **LinkTimeCodeGeneration**  
   
-   Opcjonalnie **ciąg** parametru.  
+   Opcjonalny parametr **ciągu** .  
   
-   Określa opcje optymalizacji sterowanej profilem.  
+   Określa opcje optymalizacji profilowanej.  
   
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
-  - **Domyślne** - *\<Brak >*  
+  - **Domyślne** -  *\<brak >*  
   
-  - **UseLinkTimeCodeGeneration** - **/LTCG**  
+  - **UseLinkTimeCodeGeneration** -  **/LTCG**  
   
-  - **PGInstrument** - **/LTCG:PGInstrument**  
+  - **PGInstrument** -  **/LTCG:PGInstrument**  
   
-  - **PGOptimization** - **/LTCG:PGOptimize**  
+  - **PGOptimization** -  **/LTCG: PGOptimize**  
   
   - **PGUpdate**  
   
-     \- **/LTCG:PGUpdate**  
+     \- **/LTCG: PGUpdate**  
   
-    Aby uzyskać więcej informacji, zobacz [opcję/LTCG (Generowanie kodu Link-time)](https://msdn.microsoft.com/library/788c6f52-fdb8-40c2-90af-4026ea2cf2e2).  
+    Aby uzyskać więcej informacji, zobacz [/LTCG (generowanie kodu w czasie konsolidacji)](https://msdn.microsoft.com/library/788c6f52-fdb8-40c2-90af-4026ea2cf2e2).  
   
 - **ManifestFile**  
   
-   Opcjonalnie **ciąg** parametru.  
+   Opcjonalny parametr **ciągu** .  
   
-   Zmienia domyślna nazwa pliku manifestu do określonej nazwy pliku.  
+   Zmienia domyślną nazwę pliku manifestu na określoną nazwę pliku.  
   
-   Aby uzyskać więcej informacji, zobacz [/MANIFESTFILE (nazwa pliku manifestu)](https://msdn.microsoft.com/library/befa5ab2-a9cf-4c9b-969a-e7b4a930f08d).  
+   Aby uzyskać więcej informacji, zobacz [/MANIFESTFILE (Nazwij plik manifestu)](https://msdn.microsoft.com/library/befa5ab2-a9cf-4c9b-969a-e7b4a930f08d).  
   
 - **MapExports**  
   
-   Opcjonalnie **logiczna** parametru.  
+   Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, informuje konsolidator, aby dołączał eksportowane funkcje w pliku mapy.  
+   Jeśli `true`, nakazuje konsolidatorowi uwzględnienie wyeksportowanych funkcji w pliku mapy.  
   
-   Aby uzyskać więcej informacji, zobacz `EXPORTS` argument [/MapInfo (zawierają informacje o mapfile)](https://msdn.microsoft.com/library/533d2bce-f9b7-4fea-ae1c-0b4864c9d10b).  
+   Aby uzyskać więcej informacji, zobacz argument `EXPORTS` [/MapInfo (Dołącz informacje w mapfile)](https://msdn.microsoft.com/library/533d2bce-f9b7-4fea-ae1c-0b4864c9d10b).  
   
 - **MapFileName**  
   
-   Opcjonalnie **ciąg** parametru.  
+   Opcjonalny parametr **ciągu** .  
   
-   Zmienia domyślna nazwa pliku mapy z określoną nazwą pliku.  
+   Zmienia domyślną nazwę pliku mapy na określoną nazwę pliku.  
   
 - **MergedIDLBaseFileName**  
   
-   Opcjonalnie **ciąg** parametru.  
+   Opcjonalny parametr **ciągu** .  
   
-   Określa nazwę pliku i rozszerzenie pliku .idl.  
+   Określa nazwę pliku i rozszerzenie nazwy pliku IDL.  
   
-   Aby uzyskać więcej informacji, zobacz [/idlout (nazwa wyjściowe pliki MIDL)](https://msdn.microsoft.com/library/10d00a6a-85b4-4de1-8732-e422c6931509).  
+   Aby uzyskać więcej informacji, zobacz [/IDLOUT (Name MIDL Output Files)](https://msdn.microsoft.com/library/10d00a6a-85b4-4de1-8732-e422c6931509).  
   
 - **MergeSections**  
   
-   Opcjonalnie **ciąg** parametru.  
+   Opcjonalny parametr **ciągu** .  
   
    Łączy sekcje w obrazie. Określ `from-section=to-section`.  
   
-   Aby uzyskać więcej informacji, zobacz [/merge (Połącz sekcje)](https://msdn.microsoft.com/library/10fb20c2-0b3f-4c8d-98a8-f69aedf03d52).  
+   Aby uzyskać więcej informacji, zobacz [/merge (łączenie sekcji)](https://msdn.microsoft.com/library/10fb20c2-0b3f-4c8d-98a8-f69aedf03d52).  
   
 - **MidlCommandFile**  
   
-   Opcjonalnie **ciąg** parametru.  
+   Opcjonalny parametr **ciągu** .  
   
    Określ nazwę pliku, który zawiera opcje wiersza polecenia MIDL.  
   
-   Aby uzyskać więcej informacji, zobacz [/MIDL (Określ opcje ze wiersza polecenia w MIDL)](https://msdn.microsoft.com/library/22dc259e-b34c-4ed3-a380-4beb734482c1).  
+   Aby uzyskać więcej informacji, zobacz [/MIDL (Określ opcje wiersza polecenia MIDL)](https://msdn.microsoft.com/library/22dc259e-b34c-4ed3-a380-4beb734482c1).  
   
 - **MinimumRequiredVersion**  
   
-   Opcjonalnie **ciąg** parametru.  
+   Opcjonalny parametr **ciągu** .  
   
    Określa minimalną wymaganą wersję podsystemu. Argumenty są liczbami dziesiętnymi z zakresu od 0 do 65535.  
   
 - **ModuleDefinitionFile**  
   
-   Opcjonalnie **ciąg** parametru.  
+   Opcjonalny parametr **ciągu** .  
   
-   Określa nazwę [plik definicji modułu](https://msdn.microsoft.com/library/08c0bc28-c5d2-47aa-9624-7fc68bcaa4d8).  
+   Określa nazwę [pliku definicji modułu](https://msdn.microsoft.com/library/08c0bc28-c5d2-47aa-9624-7fc68bcaa4d8).  
   
    Aby uzyskać więcej informacji, zobacz [/DEF (Określ plik definicji modułu)](https://msdn.microsoft.com/library/6497fa68-65f0-48ca-8f66-b87166fc631a).  
   
 - **MSDOSStubFileName**  
   
-   Opcjonalnie **ciąg** parametru.  
+   Opcjonalny parametr **ciągu** .  
   
-   Dołącza określony program szczątkowy systemu MS-DOS do programu systemu Win32.  
+   Dołącza określony program zastępczy systemu MS-DOS do programu systemu Win32.  
   
-   Aby uzyskać więcej informacji, zobacz [/stub (nazwa pliku klasy zastępczej MS-DOS)](https://msdn.microsoft.com/library/65221ffe-4f9a-4a14-ac69-3cfb79b40b5f).  
+   Aby uzyskać więcej informacji, zobacz [/stub (nazwa pliku szczątkowego systemu MS-DOS)](https://msdn.microsoft.com/library/65221ffe-4f9a-4a14-ac69-3cfb79b40b5f).  
   
 - **NoEntryPoint**  
   
-   Opcjonalnie **logiczna** parametru.  
+   Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, określa bibliotekę DLL tylko do zasobów.  
+   Jeśli `true`, określa plik DLL z tylko zasobami.  
   
-   Aby uzyskać więcej informacji, zobacz [/noentry (Brak punktu wejścia)](https://msdn.microsoft.com/library/0214dd41-35ad-43ab-b892-e636e038621a).  
+   Aby uzyskać więcej informacji, zobacz [/NOENTRY (brak punktu wejścia)](https://msdn.microsoft.com/library/0214dd41-35ad-43ab-b892-e636e038621a).  
   
 - **ObjectFiles**  
   
-   Niejawne **String []** parametru.  
+   Parametr niejawnego **ciągu []** .  
   
    Określa pliki obiektów, które są połączone.  
   
 - **OptimizeReferences**  
   
-   Opcjonalnie **logiczna** parametru.  
+   Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, eliminuje funkcje i/lub dane, które nigdy nie są wywoływane.  
+   Jeśli `true`, eliminuje funkcje i/lub dane, które nigdy nie są przywoływane.  
   
-   Aby uzyskać więcej informacji, zobacz `REF` argument [od (optymalizacje)](https://msdn.microsoft.com/library/8f229863-5f53-48a8-9478-243a647093ac).  
+   Aby uzyskać więcej informacji, zobacz argument `REF` w [/opt (optymalizacje)](https://msdn.microsoft.com/library/8f229863-5f53-48a8-9478-243a647093ac).  
   
 - **OutputFile**  
   
-   Opcjonalnie **ciąg** parametru.  
+   Opcjonalny parametr **ciągu** .  
   
-   Przesłania domyślną nazwę i lokalizację programu tworzonego przez konsolidatora.  
+   Zastępuje domyślną nazwę i lokalizację programu tworzonego przez konsolidatora.  
   
-   Aby uzyskać więcej informacji, zobacz [/OUT (nazwa pliku wyjściowego)](https://msdn.microsoft.com/library/976210a4-e51f-4cfb-af5e-c16344455834).  
+   Aby uzyskać więcej informacji, zobacz [/out (nazwa pliku wyjściowego)](https://msdn.microsoft.com/library/976210a4-e51f-4cfb-af5e-c16344455834).  
   
 - **PerUserRedirection**  
   
-   Opcjonalnie **logiczna** parametru.  
+   Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true` i włączono rejestrowanie wyników rejestru wymusza zapisuje **HKEY_CLASSES_ROOT** do **HKEY_CURRENT_USER**.  
+   Jeśli `true` i rejestrowanie danych wyjściowych jest włączone, wymusza, aby zapisy rejestru **HKEY_CLASSES_ROOT** przekierowywać do **HKEY_CURRENT_USER**.  
   
 - **PreprocessOutput**  
   
-   Opcjonalnie `ITaskItem[]` parametru.  
+   Opcjonalny parametr `ITaskItem[]`.  
   
-   Określa tablicę elementów dane wyjściowe preprocesora, które może być używany i wyemitowane przez zadania.  
+   Definiuje tablicę elementów wyjściowych preprocesora, które mogą być używane i emitowane przez zadania.  
   
 - **PreventDllBinding**  
   
-   Opcjonalnie **logiczna** parametru.  
+   Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, wskazuje Bind.exe, obraz połączony nie powinny być powiązane.  
+   Jeśli `true`, wskazuje, że program bind. exe nie powinien być powiązany z połączonym obrazem.  
   
-   Aby uzyskać więcej informacji, zobacz [/ALLOWBIND (zapobieganie powiązanie biblioteki DLL)](https://msdn.microsoft.com/library/30e37e24-12e4-407e-988a-39d357403598).  
+   Aby uzyskać więcej informacji, zobacz [/ALLOWBIND (Zapobiegaj powiązaniu biblioteki dll)](https://msdn.microsoft.com/library/30e37e24-12e4-407e-988a-39d357403598).  
   
-- **Profil**  
+- **Profilu**  
   
-   Opcjonalnie **logiczna** parametru.  
+   Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, tworzy plik wyjściowy, który może być używany z **narzędzia do oceny wydajności** profilera.  
+   Jeśli `true`, tworzy plik wyjściowy, który może być używany z profilerem **narzędzi do oceny wydajności** .  
   
-   Aby uzyskać więcej informacji, zobacz [/profile (Profiler narzędzi wydajności)](https://msdn.microsoft.com/library/e676baa1-5063-47a3-a357-ba0d1f0d1699).  
+   Aby uzyskać więcej informacji, zobacz [/Profile (Profiler narzędzi do oceny wydajności)](https://msdn.microsoft.com/library/e676baa1-5063-47a3-a357-ba0d1f0d1699).  
   
 - **ProfileGuidedDatabase**  
   
-   Opcjonalnie **ciąg** parametru.  
+   Opcjonalny parametr **ciągu** .  
   
-   Określa nazwę pliku .pgd, która będzie służyć do przechowywania informacji na temat uruchomiony program  
+   Określa nazwę pliku. pgd, który będzie używany do przechowywania informacji o działającym programie  
   
-   Aby uzyskać więcej informacji, zobacz [/PGD (Określ bazę danych dla optymalizacji Profile-Guided)](https://msdn.microsoft.com/library/9f312498-493b-461f-886f-92652257e443).  
+   Aby uzyskać więcej informacji, zobacz [/PGD (Określ bazę danych dla optymalizacji](https://msdn.microsoft.com/library/9f312498-493b-461f-886f-92652257e443)profilowanej).  
   
 - **ProgramDatabaseFile**  
   
-   Opcjonalnie **ciąg** parametru.  
+   Opcjonalny parametr **ciągu** .  
   
-   Określa nazwę bazy danych programu (PDB) tworzonego przez konsolidatora.  
+   Określa nazwę bazy danych programu (PDB), którą tworzy konsolidator.  
   
-   Aby uzyskać więcej informacji, zobacz [/PDB (Użyj bazy danych programu)](https://msdn.microsoft.com/library/d23db0ce-10cb-427a-bc60-d6b2a852723d).  
+   Aby uzyskać więcej informacji, zobacz [/PDB (Korzystanie z bazy danych programu)](https://msdn.microsoft.com/library/d23db0ce-10cb-427a-bc60-d6b2a852723d).  
   
 - **RandomizedBaseAddress**  
   
-   Opcjonalnie **logiczna** parametru.  
+   Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, generuje obraz wykonywalny, który może być losowo przebazowanych w czasie ładowania przy użyciu *randomizacji układu przestrzeni adresów* (ASLR) funkcja systemu Windows.  
+   Jeśli `true`, program generuje obraz wykonywalny, który może być losowo zmieniany w czasie ładowania przy użyciu funkcji *losowego układu przestrzeni adresowej* (ASLR) systemu Windows.  
   
-   Aby uzyskać więcej informacji, zobacz [opcja/DynamicBase (randomizacji układu przestrzeni adresowej Użyj)](https://msdn.microsoft.com/library/6c0ced8e-fe9c-4b63-b956-eb8a55fbceb2).  
+   Aby uzyskać więcej informacji, zobacz [/DYNAMICBASE (Użyj losowości układu przestrzeni adresowej)](https://msdn.microsoft.com/library/6c0ced8e-fe9c-4b63-b956-eb8a55fbceb2).  
   
 - **RegisterOutput**  
   
-   Opcjonalnie **logiczna** parametru.  
+   Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, rejestruje główny wynik tej kompilacji.  
+   Jeśli `true`, rejestruje podstawowe dane wyjściowe tej kompilacji.  
   
-- **SectionAlignment**  
+- **Wyrównanie sekcji**  
   
-   Opcjonalnie **całkowitą** parametru.  
+   Opcjonalny parametr **liczby całkowitej** .  
   
-   Określa wyrównanie każdej sekcji w liniowej przestrzeni adresowej programu. Wartość tego parametru jest jednostka liczba bajtów i jest potęgą liczby dwa.  
+   Określa wyrównanie każdej sekcji w liniowej przestrzeni adresowej programu. Wartość parametru jest liczbą jednostek bajtów i jest potęgą liczby 2.  
   
    Aby uzyskać więcej informacji, zobacz [/align (wyrównanie sekcji)](https://msdn.microsoft.com/library/f2f8ac24-e90e-4bea-8205-f2960a3b1740).  
   
 - **SetChecksum**  
   
-   Opcjonalnie **logiczna** parametru.  
+   Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, ustawia sumę kontrolną w nagłówku pliku .exe.  
+   Jeśli `true`, ustawia sumę kontrolną w nagłówku pliku. exe.  
   
    Aby uzyskać więcej informacji, zobacz [/Release (Ustaw sumę kontrolną)](https://msdn.microsoft.com/library/93bcadf4-29ac-4824-914b-6997e3751d22).  
   
 - **ShowProgress**  
   
-   Opcjonalnie **ciąg** parametru.  
+   Opcjonalny parametr **ciągu** .  
   
-   Określa poziom szczegółowości raportów postępu dla operacji łączenia.  
+   Określa szczegółowość raportów postępu dla operacji łączenia.  
   
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
-  - **NotSet** - *\<none>*  
+  - **NotSet** -  *\<none>*  
   
-  - **LinkVerbose** - **/VERBOSE**  
+  - **LinkVerbose** -  **/VERBOSE**  
   
-  - **LinkVerboseLib** - **/VERBOSE:Lib**  
+  - **LinkVerboseLib** -  **/VERBOSE:Lib**  
   
-  - **LinkVerboseICF** - **/VERBOSE:ICF**  
+  - **LinkVerboseICF** -  **/VERBOSE:ICF**  
   
-  - **LinkVerboseREF** - **/VERBOSE:REF**  
+  - **LinkVerboseREF** -  **/VERBOSE:REF**  
   
-  - **LinkVerboseSAFESEH** - **/VERBOSE:SAFESEH**  
+  - **LinkVerboseSAFESEH** -  **/VERBOSE:SAFESEH**  
   
-  - **LinkVerboseCLR** - **/VERBOSE:CLR**  
+  - **LinkVerboseCLR** -  **/VERBOSE:CLR**  
   
-    Aby uzyskać więcej informacji, zobacz [opcjami/verbose (Drukuj komunikaty o postępie)](https://msdn.microsoft.com/library/9c347d98-4c37-4724-a39e-0983934693ab).  
+    Aby uzyskać więcej informacji, zobacz [/verbose (drukowanie komunikatów o postępie)](https://msdn.microsoft.com/library/9c347d98-4c37-4724-a39e-0983934693ab).  
   
-- **Źródła**  
+- **Źródeł**  
   
-   Wymagane `ITaskItem[]` parametru.  
+   Wymagany `ITaskItem[]` parametr.  
   
-   Określa tablicę elementów pliku źródłowego programu MSBuild, które mogą być używane i wyemitowane przez zadania.  
+   Definiuje tablicę elementów plików źródłowych MSBuild, które mogą być używane i emitowane przez zadania.  
   
 - **SpecifySectionAttributes**  
   
-   Opcjonalnie **ciąg** parametru.  
+   Opcjonalny parametr **ciągu** .  
   
-   Określa atrybuty sekcji. Ustawienie to zastępuje atrybuty, które zostały ustawione, gdy plik .obj sekcji został skompilowany.  
+   Określa atrybuty sekcji. Zastępuje to atrybuty, które zostały ustawione, gdy plik. obj sekcji został skompilowany.  
   
    Aby uzyskać więcej informacji, zobacz [/Section (Określ atrybuty sekcji)](https://msdn.microsoft.com/library/92b69d81-e421-462e-b46f-7d0dff9b9d16).  
   
 - **StackCommitSize**  
   
-   Opcjonalnie **ciąg** parametru.  
+   Opcjonalny parametr **ciągu** .  
   
-   Określa ilość pamięci fizycznej w każdej alokacji, gdy jest przydzielany dodatkowej pamięci.  
+   Określa ilość pamięci fizycznej w każdej alokacji po przydzieleniu dodatkowej pamięci.  
   
-   Aby uzyskać więcej informacji, zobacz `commit` argument [/STACK (twórz stos z alokacji)](https://msdn.microsoft.com/library/73283660-e4bd-47cc-b5ca-04c5d739034c).  
+   Aby uzyskać więcej informacji, zobacz argument `commit` [/Stack (alokacje stosu)](https://msdn.microsoft.com/library/73283660-e4bd-47cc-b5ca-04c5d739034c).  
   
 - **StackReserveSize**  
   
-   Opcjonalnie **ciąg** parametru.  
+   Opcjonalny parametr **ciągu** .  
   
    Określa całkowity rozmiar alokacji stosu w pamięci wirtualnej.  
   
-   Aby uzyskać więcej informacji, zobacz `reserve` argument [/STACK (twórz stos z alokacji)](https://msdn.microsoft.com/library/73283660-e4bd-47cc-b5ca-04c5d739034c).  
+   Aby uzyskać więcej informacji, zobacz argument `reserve` [/Stack (alokacje stosu)](https://msdn.microsoft.com/library/73283660-e4bd-47cc-b5ca-04c5d739034c).  
   
 - **StripPrivateSymbols**  
   
-   Opcjonalnie **ciąg** parametru.  
+   Opcjonalny parametr **ciągu** .  
   
-   Tworzy drugi plik bazy danych (PDB) programu, które pomija symbole, których nie chcesz dystrybuować swoim klientom. Określ nazwę drugiego pliku PDB.  
+   Tworzy drugi plik bazy danych programu (PDB), który pomija symbole, które nie mają być rozpowszechniane do klientów. Określ nazwę drugiego pliku PDB.  
   
-   Aby uzyskać więcej informacji, zobacz [/pdbstripped (Usuń symbole prywatne)](https://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55).  
+   Aby uzyskać więcej informacji, zobacz [/PDBSTRIPPED (symbole prywatne)](https://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55).  
   
 - **SubSystem**  
   
-   Opcjonalnie **ciąg** parametru.  
+   Opcjonalny parametr **ciągu** .  
   
    Określa środowisko dla pliku wykonywalnego.  
   
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
-  - **NotSet** - *\<none>*  
+  - **NotSet** -  *\<none>*  
   
-  - **Konsola** - **opcji**  
+  - **Konsola** -  **/SUBSYSTEM: Konsola**  
   
-  - **Windows** - **/SUBSYSTEM:WINDOWS**  
+  - **Windows** -  **/SUBSYSTEM:WINDOWS**  
   
-  - **Native** - **/SUBSYSTEM:NATIVE**  
+  - **Native** -  **/SUBSYSTEM:NATIVE**  
   
-  - **Aplikacja EFI** - **/SUBSYSTEM:EFI_APPLICATION**  
+  - **Aplikacja EFI** -  **/SUBSYSTEM: EFI_APPLICATION**  
   
-  - **Sterownik usługi rozruchu interfejsu EFI** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**  
+  - **Sterownik usługi rozruchu EFI** -  **/SUBSYSTEM: EFI_BOOT_SERVICE_DRIVER**  
   
-  - **EFI ROM** - **/SUBSYSTEM:EFI_ROM**  
+  - **Interfejs EFI ROM** -  **/SUBSYSTEM: EFI_ROM**  
   
-  - **EFI Runtime** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**  
+  - **EFI Runtime** -  **/SUBSYSTEM:EFI_RUNTIME_DRIVER**  
   
-  - **WindowsCE** - **/SUBSYSTEM:WINDOWSCE**  
+  - **WindowsCE** -  **/SUBSYSTEM:WINDOWSCE**  
   
-  - **POSIX** - **/SUBSYSTEM:POSIX**  
+  - **POSIX** -  **/SUBSYSTEM:POSIX**  
   
-    Aby uzyskać więcej informacji, zobacz [/Subsystem (Określ podsystem)](https://msdn.microsoft.com/library/d7b133cf-cf22-4da8-ab46-6552702c0b9b).  
+    Aby uzyskać więcej informacji, zobacz [/subsystem (Określanie podsystemu)](https://msdn.microsoft.com/library/d7b133cf-cf22-4da8-ab46-6552702c0b9b).  
   
 - **SupportNobindOfDelayLoadedDLL**  
   
-   Opcjonalnie **logiczna** parametru.  
+   Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, informuje konsolidator, nie można dołączyć powiązania tabeli adresów importowania (IAT) do obrazu końcowego.  
+   Jeśli `true`, nakazuje konsolidatorowi nieuwzględnienie tabeli adresów importu (IAT) w końcowym obrazie.  
   
-   Aby uzyskać więcej informacji, zobacz `NOBIND` argument [przełącznik/DELAY (ustawienia opóźnienia importowania ładowania)](https://msdn.microsoft.com/library/9334b332-cc58-4dae-b10f-a4c75972d50c).  
+   Aby uzyskać więcej informacji, zobacz argument `NOBIND` [/Delay (ustawienia opóźnienia importowania ładowania)](https://msdn.microsoft.com/library/9334b332-cc58-4dae-b10f-a4c75972d50c).  
   
 - **SupportUnloadOfDelayLoadedDLL**  
   
-   Opcjonalnie **logiczna** parametru.  
+   Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, informuje funkcję pomocnika obciążenia opóźnienia, aby wspierała jawne zwalnianie biblioteki DLL.  
+   Jeśli `true`, nakazuje funkcji pomocnika ładowania opóźnień, aby obsługiwała jawne wyładowywanie biblioteki DLL.  
   
-   Aby uzyskać więcej informacji, zobacz `UNLOAD` argument [przełącznik/DELAY (ustawienia opóźnienia importowania ładowania)](https://msdn.microsoft.com/library/9334b332-cc58-4dae-b10f-a4c75972d50c).  
+   Aby uzyskać więcej informacji, zobacz argument `UNLOAD` [/Delay (ustawienia opóźnienia importowania ładowania)](https://msdn.microsoft.com/library/9334b332-cc58-4dae-b10f-a4c75972d50c).  
   
 - **SuppressStartupBanner**  
   
-   Opcjonalnie **logiczna** parametru.  
+   Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, uniemożliwia wyświetlanie wiadomości praw autorskich i wersji, podczas uruchamiania zadania.  
+   Jeśli `true`, program zapobiega wyświetlaniu komunikatu o prawach autorskich i numerze wersji, gdy zadanie zostanie uruchomione.  
   
-   Aby uzyskać więcej informacji, zobacz [/nologo (Pomijaj transparent startowy) (konsolidator)](https://msdn.microsoft.com/library/3b20dddd-eca6-4545-a331-9f70bf720197).  
+   Aby uzyskać więcej informacji, zobacz [/nologo (Pomijanie transparentu startowego) (Konsolidator)](https://msdn.microsoft.com/library/3b20dddd-eca6-4545-a331-9f70bf720197).  
   
 - **SwapRunFromCD**  
   
-   Opcjonalnie **logiczna** parametru.  
+   Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, informuje system operacyjny, aby najpierw skopiować konsolidatora dane wyjściowe do pliku wymiany, a następnie uruchomił obraz stamtąd.  
+   W przypadku `true`program instruuje system operacyjny, aby najpierw skopiował dane wyjściowe konsolidatora do pliku wymiany, a następnie uruchomił obraz stamtąd.  
   
-   Aby uzyskać więcej informacji, zobacz `CD` argument [swaprun (Załaduj dane wyjściowe konsolidatora do pliku Swap)](https://msdn.microsoft.com/library/4a1e7f46-4399-4161-8dfc-d6a71beaf683). Zobacz też **SwapRunFromNET** parametru.  
+   Aby uzyskać więcej informacji, zobacz argument `CD` [/SWAPRUN (ładowanie danych wyjściowych konsolidatora do pliku wymiany)](https://msdn.microsoft.com/library/4a1e7f46-4399-4161-8dfc-d6a71beaf683). Zobacz również parametr **SwapRunFromNET** .  
   
 - **SwapRunFromNET**  
   
-   Opcjonalnie **logiczna** parametru.  
+   Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, informuje system operacyjny, aby najpierw skopiować konsolidatora dane wyjściowe do pliku wymiany, a następnie uruchomił obraz stamtąd.  
+   W przypadku `true`program instruuje system operacyjny, aby najpierw skopiował dane wyjściowe konsolidatora do pliku wymiany, a następnie uruchomił obraz stamtąd.  
   
-   Aby uzyskać więcej informacji, zobacz `NET` argument [swaprun (Załaduj dane wyjściowe konsolidatora do pliku Swap)](https://msdn.microsoft.com/library/4a1e7f46-4399-4161-8dfc-d6a71beaf683). Zobacz też **SwapRunFromCD** parametru w tej tabeli.  
+   Aby uzyskać więcej informacji, zobacz argument `NET` [/SWAPRUN (ładowanie danych wyjściowych konsolidatora do pliku wymiany)](https://msdn.microsoft.com/library/4a1e7f46-4399-4161-8dfc-d6a71beaf683). Zobacz również parametr **SwapRunFromCD** w tej tabeli.  
   
 - **TargetMachine**  
   
-   Opcjonalnie **ciąg** parametru.  
+   Opcjonalny parametr **ciągu** .  
   
-   Określa platformę docelową dla tego programu lub DLL.  
+   Określa platformę docelową dla programu lub biblioteki DLL.  
   
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
-  - **NotSet** - *\<none>*  
+  - **NotSet** -  *\<none>*  
   
-  - **MachineARM** - **/MACHINE:ARM**  
+  - **MachineARM** -  **/Machine: ARM**  
   
-  - **MachineEBC** - **/MACHINE:EBC**  
+  - **MachineEBC** -  **/MACHINE:EBC**  
   
-  - **MachineIA64** - **/MACHINE:IA64**  
+  - **MachineIA64** -  **/MACHINE:IA64**  
   
-  - **MachineMIPS** - **/MACHINE:MIPS**  
+  - **MachineMIPS** -  **/MACHINE:MIPS**  
   
-  - **MachineMIPS16** - **/MACHINE:MIPS16**  
+  - **MachineMIPS16** -  **/MACHINE:MIPS16**  
   
-  - **MachineMIPSFPU** - **/MACHINE:MIPSFPU**  
+  - **MachineMIPSFPU** -  **/MACHINE:MIPSFPU**  
   
-  - **MachineMIPSFPU16** - **/MACHINE:MIPSFPU16**  
+  - **MachineMIPSFPU16** -  **/MACHINE:MIPSFPU16**  
   
-  - **MachineSH4** - **/MACHINE:SH4**  
+  - **MachineSH4** -  **/MACHINE:SH4**  
   
-  - **MachineTHUMB** - **/MACHINE:THUMB**  
+  - **MachineTHUMB** -  **/Machine: kciuk**  
   
-  - **MachineX64** - **/MACHINE:X64**  
+  - **MachineX64** -  **/MACHINE:X64**  
   
-  - **MachineX86** - **/MACHINE:X86**  
+  - **MachineX86** -  **/MACHINE:X86**  
   
     Aby uzyskać więcej informacji, zobacz [/Machine (Określ platformę docelową)](https://msdn.microsoft.com/library/8d41bf4b-7e53-4ab9-9085-d852b08d31c2).  
   
 - **TerminalServerAware**  
   
-   Opcjonalnie **logiczna** parametru.  
+   Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, ustawia flagę w polu IMAGE_OPTIONAL_HEADER dllcharacteristics w opcjonalnym nagłówku obrazu programu. Gdy ta flaga jest ustawiona, serwera terminali nie wprowadzi pewnych zmian aplikacji.  
+   Jeśli `true`, ustawia flagę w polu IMAGE_OPTIONAL_HEADER DllCharacteristics w opcjonalnym nagłówku obrazu programu. Po ustawieniu tej flagi serwer terminali nie wprowadza pewnych zmian do aplikacji.  
   
-   Aby uzyskać więcej informacji, zobacz [/tsaware (Utwórz terminalu aplikację świadomą serwera)](https://msdn.microsoft.com/library/fe1c1846-de5b-4839-b562-93fbfe36cd29).  
+   Aby uzyskać więcej informacji, zobacz [/TSAWARE (Tworzenie aplikacji z obsługą serwera terminali)](https://msdn.microsoft.com/library/fe1c1846-de5b-4839-b562-93fbfe36cd29).  
   
-- **TrackerLogDirectory**  
+- **Katalog trackerlogdirectory**  
   
-   Opcjonalnie **ciąg** parametru.  
+   Opcjonalny parametr **ciągu** .  
   
    Określa katalog dziennika śledzenia.  
   
 - **TreatLinkerWarningAsErrors**  
   
-   Opcjonalnie **logiczna** parametru.  
+   Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, powoduje, że plik wyjściowy nie zostanie wygenerowany, jeśli konsolidator wygeneruje ostrzeżenie.  
+   Jeśli `true`, powoduje, że plik wyjściowy nie zostanie wygenerowany, jeśli konsolidator generuje ostrzeżenie.  
   
-   Aby uzyskać więcej informacji, zobacz [/WX (Traktuj ostrzeżenia konsolidatora jak błędy)](https://msdn.microsoft.com/library/e4ba97c7-93f7-43ae-a4bb-d866790926c9).  
+   Aby uzyskać więcej informacji, zobacz [/WX (Traktuj ostrzeżenia konsolidatora jako błędy)](https://msdn.microsoft.com/library/e4ba97c7-93f7-43ae-a4bb-d866790926c9).  
   
 - **TurnOffAssemblyGeneration**  
   
-   Opcjonalnie **logiczna** parametru.  
+   Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, tworzy obraz dla bieżącego pliku wyjściowego bez zestawu .NET Framework.  
+   Jeśli `true`, program tworzy obraz dla bieżącego pliku wyjściowego bez zestawu .NET Framework.  
   
-   Aby uzyskać więcej informacji, zobacz [/noassembly (Utwórz moduł MSIL)](https://msdn.microsoft.com/library/3cea4e70-f451-4395-a626-1930b1b127fe).  
+   Aby uzyskać więcej informacji, zobacz [/NOASSEMBLY (Create a module MSIL)](https://msdn.microsoft.com/library/3cea4e70-f451-4395-a626-1930b1b127fe).  
   
 - **TypeLibraryFile**  
   
-   Opcjonalnie **ciąg** parametru.  
+   Opcjonalny parametr **ciągu** .  
   
-   Określa nazwę pliku i rozszerzenie pliku .tlb. Określ nazwę pliku lub ścieżkę i nazwę pliku.  
+   Określa nazwę pliku i rozszerzenie nazwy pliku. tlb. Określ nazwę pliku lub ścieżkę i nazwę pliku.  
   
-   Aby uzyskać więcej informacji, zobacz  [ /tlbout (nazwa. Plik TLB)](https://msdn.microsoft.com/library/0df6d078-2e48-46c9-a1a5-02674d85dce8).  
+   Aby uzyskać więcej informacji, zobacz [/TLBOUT (Name. Plik TLB)](https://msdn.microsoft.com/library/0df6d078-2e48-46c9-a1a5-02674d85dce8).  
   
 - **TypeLibraryResourceID**  
   
-   Opcjonalnie **całkowitą** parametru.  
+   Opcjonalny parametr **liczby całkowitej** .  
   
-   Określa wartość określone przez użytkownika dla biblioteki typów, utworzone przez konsolidator. Określ wartość z zakresu od 1 do 65 535.  
+   Określa wartość określoną przez użytkownika dla biblioteki typów utworzonej przez konsolidator. Określ wartość od 1 do 65535.  
   
-   Aby uzyskać więcej informacji, zobacz [/TLBID (Określ identyfikator zasobu dla TypeLib)](https://msdn.microsoft.com/library/434b28a2-4656-4d52-ac82-8b18bf486fb2).  
+   Aby uzyskać więcej informacji, zobacz [/TLBID (Określ identyfikator zasobu dla biblioteki typów)](https://msdn.microsoft.com/library/434b28a2-4656-4d52-ac82-8b18bf486fb2).  
   
 - **UACExecutionLevel**  
   
-   Opcjonalnie **ciąg** parametru.  
+   Opcjonalny parametr **ciągu** .  
   
-   Określa wymagany poziom wykonywania dla aplikacji, gdy jest uruchamiana przy użyciu kontroli konta użytkownika.  
+   Określa żądany poziom wykonywania aplikacji, gdy jest uruchamiany w ramach kontroli konta użytkownika.  
   
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
@@ -902,27 +902,27 @@ Opakowuje narzędzia konsolidatora Visual C++ link.exe. Narzędzia konsolidatora
   
   - **RequireAdministrator** - `level='requireAdministrator'`  
   
-    Aby uzyskać więcej informacji, zobacz `level` argument [/MANIFESTUAC (osadza informacje UAC w manifeście)](https://msdn.microsoft.com/library/2d243c39-fa13-493c-b56f-d0d972a1603a).  
+    Aby uzyskać więcej informacji, zobacz argument `level` [/MANIFESTUAC (osadza informacje funkcji kontroli konta użytkownika w manifeście)](https://msdn.microsoft.com/library/2d243c39-fa13-493c-b56f-d0d972a1603a).  
   
 - **UACUIAccess**  
   
-   Opcjonalnie **logiczna** parametru.  
+   Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, aplikacja pomija poziomów ochrony interfejsu użytkownika i dyski danych wejściowych do wyższych uprawnień okien na pulpicie; w przeciwnym razie `false`.  
+   Jeśli `true`, aplikacja pomija poziomy ochrony interfejsu użytkownika i dyski wejściowe w oknach wyższych uprawnień na pulpicie; w przeciwnym razie `false`.  
   
-   Aby uzyskać więcej informacji, zobacz `uiAccess` argument [/MANIFESTUAC (osadza informacje UAC w manifeście)](https://msdn.microsoft.com/library/2d243c39-fa13-493c-b56f-d0d972a1603a).  
+   Aby uzyskać więcej informacji, zobacz argument `uiAccess` [/MANIFESTUAC (osadza informacje funkcji kontroli konta użytkownika w manifeście)](https://msdn.microsoft.com/library/2d243c39-fa13-493c-b56f-d0d972a1603a).  
   
 - **UseLibraryDependencyInputs**  
   
-   Opcjonalnie **logiczna** parametru.  
+   Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`i wejścia do narzędzia bibliotekarza są używane zamiast pliku biblioteki samego w sobie podczas produktów wyjściowych biblioteki zależności projektów są dołączane.  
+   Jeśli `true`, dane wejściowe narzędzia bibliotekarza są używane zamiast pliku biblioteki, gdy dane wyjściowe biblioteki są połączone w programie.  
   
 - **Wersja**  
   
-   Opcjonalnie **ciąg** parametru.  
+   Opcjonalny parametr **ciągu** .  
   
-   Umieszczenie numeru wersji w nagłówku pliku .exe lub .dll. Określ "`major[.minor]`". `major` i `minor` argumenty są liczbami dziesiętnymi z zakresu od 0 do 65 535.  
+   Umieść numer wersji w nagłówku pliku. exe lub. dll. Określ wartość "`major[.minor]`". Argumenty `major` i `minor` są liczbami dziesiętnymi od 0 do 65535.  
   
    Aby uzyskać więcej informacji, zobacz [/Version (informacje o wersji)](https://msdn.microsoft.com/library/b86d0e86-dca6-4316-aee2-d863ccb9f223).  
   

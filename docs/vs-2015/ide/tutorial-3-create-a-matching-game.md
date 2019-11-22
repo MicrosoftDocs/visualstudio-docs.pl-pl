@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1d67e81aa90faa59cf5320293aba9e7d82e3f625
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 30ee029fe231202c821c8448d3594192b5ebfdf8
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654732"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299854"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>Samouczek 3: Tworzenie gry w dopasowywanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,16 +35,14 @@ W tym samouczku stworzysz grę w dopasowywanie, gdzie gracz musi dopasować pary
 
   ![Gra utworzona w tym samouczku](../ide/media/express-finishedgame.png "Express_FinishedGame") Gra utworzona w tym samouczku
 
-  Aby pobrać kompletną wersję przykładu, zobacz [kompletny przykładowy samouczek gry](http://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba).
-
 > [!NOTE]
 > W tym samouczku omówiono zarówno Visual C#, jak i Visual Basic, więc skoncentruj się na informacjach specyficznych dla języka programowania, którego używasz.
 
- Jeśli masz problem lub pytania dotyczące programowania, spróbuj zadać pytanie na jednym z forów MSDN. Zobacz [forum Visual Basic](http://social.msdn.microsoft.com/Forums/home?forum=vbgeneral) i [forum C# wizualne](http://social.msdn.microsoft.com/Forums/home?forum=csharpgeneral). Dostępne są tam również wspaniałe, bezpłatne materiały szkoleniowe wideo. Aby dowiedzieć się więcej na temat programowania w Visual Basic, zobacz [Visual Basic podstawy: Programowanie dla bezwzględnych początkujących](http://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners). Aby dowiedzieć się więcej na temat C#programowania w wizualizacji, zobacz [ C# podstawy: Programowanie dla bezwzględnych początkujących](http://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners).
+ Jeśli masz problem lub pytania dotyczące programowania, spróbuj zadać pytanie na jednym z forów MSDN. Zobacz [forum Visual Basic](https://social.msdn.microsoft.com/Forums/en-US/home) i [forum C# wizualne](https://social.msdn.microsoft.com/Forums/en-US/home). Dostępne są tam również wspaniałe, bezpłatne materiały szkoleniowe wideo. Aby dowiedzieć się więcej na temat programowania w Visual Basic, zobacz [Visual Basic podstawy: Programowanie dla bezwzględnych początkujących](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners). Aby dowiedzieć się więcej na temat C#programowania w wizualizacji, zobacz [ C# podstawy: Programowanie dla bezwzględnych początkujących](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners).
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
-|Tytuł|Opis|
+|Stanowisko|Opis|
 |-----------|-----------------|
 |[Krok 1. Tworzenie projektu i dodawanie tabeli do formularza](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md)|Zacznij od utworzenia projektu i dodania kontrolki `TableLayoutPanel`, aby zachować poprawne wyrównywanie kontrolek.|
 |[Krok 2. Dodawanie obiektu Random i listy ikon](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)|Dodaj obiekt `Random` i obiekt `List`, aby utworzyć listę ikon.|

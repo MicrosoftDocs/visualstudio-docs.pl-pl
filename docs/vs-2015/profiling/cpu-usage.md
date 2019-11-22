@@ -1,5 +1,5 @@
 ---
-title: Użycie procesora CPU | Dokumentacja firmy Microsoft
+title: Użycie procesora | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,47 +9,47 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1a6160fb42ab3648eae9a7ea416e244b5cfabc99
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: f699666216d38c34583ebeb15e2bb6ba4953b671
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65700915"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300757"
 ---
-# <a name="cpu-usage"></a>Użycie procesora CPU
+# <a name="cpu-usage"></a>Użycie procesora
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Jeśli musisz zbadać problemy z wydajnością w aplikacji, dobrym miejscem do rozpoczęcia jest zrozumienie, sposobem użycia procesora CPU. **Użycie procesora CPU** narzędzie pokazuje, gdzie Procesor spędza czasu wykonywania Visual C++, Visual C# / Visual Basic oraz kodu JavaScript.  
+Jeśli musisz zbadać problemy z wydajnością w aplikacji, dobrym miejscem do rozpoczęcia jest zrozumienie, jak korzysta z procesora CPU. Narzędzie **użycie procesora CPU** pokazuje, gdzie procesor poświęca czas na wykonywanie kodu Visual C++, Visual C#/Visual Basic i JavaScript.  
   
- Począwszy od programu Visual Studio 2015 Update 1, możesz zobaczyć podział użycia procesora CPU dla poszczególnych funkcji bez opuszczania debugera. Włącz profilowanie procesora CPU włączać i wyłączać podczas debugowania i wyświetlania wyników, gdy wykonanie zostanie zatrzymana, na przykład w punkcie przerwania. Aby uzyskać więcej informacji, zobacz [profilowanie Procesora w debugerze programu Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/10/29/profile-your-cpu-in-the-debugger-in-visual-studio-2015.aspx).  
+ Począwszy od programu Visual Studio 2015 Update 1, można zobaczyć podział poszczególnych funkcji użycia procesora CPU bez opuszczania debugera. Można włączać i wyłączać profilowanie procesora CPU podczas debugowania, a także wyświetlać wyniki po zatrzymaniu wykonywania, na przykład w punkcie przerwania. Aby uzyskać więcej informacji, zobacz [profilowanie procesora CPU w debugerze w programie Visual Studio 2015](https://devblogs.microsoft.com/devops/profile-your-cpu-in-the-debugger-in-visual-studio-2015/).  
   
- Aby uzyskać wskazówki, które analizuje wydajność aplikacji Windows Store, zobacz [Analizowanie użycia procesora CPU w aplikacjach Store](https://msdn.microsoft.com/library/windows/apps/dn641982.aspx).  
+ Aby zapoznać się z przewodnikiem, który analizuje wydajność aplikacji ze sklepu Windows, zobacz [Analizowanie użycia procesora CPU w aplikacjach ze sklepu](https://msdn.microsoft.com/library/windows/apps/dn641982.aspx).  
   
- Centrum wydajności i diagnostyki oferuje wiele innych opcji do uruchamiania i zarządzania sesję diagnostyczną. Na przykład, można uruchomić **użycie procesora CPU** narzędzia na maszynach lokalnych lub zdalnych lub na w symulatorze lub w emulatorze. Można analizować wydajność Otwórz projekt w programie Visual Studio dołączony do uruchomionej aplikacji lub uruchomić aplikację, która jest instalowana z Store Windows. Aby uzyskać więcej informacji, zobacz [uruchamianie narzędzi profilowania bez debugowania](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
+ Centrum wydajności i diagnostyki oferuje wiele innych opcji uruchamiania sesji diagnostycznej i zarządzania nią. Na przykład można uruchomić narzędzie **użycie procesora CPU** na maszynach lokalnych lub zdalnych albo w symulatorze lub emulatorze. Można analizować wydajność otwartego projektu w programie Visual Studio, dołączyć do uruchomionej aplikacji lub uruchomić aplikację, która jest zainstalowana ze sklepu Windows. Aby uzyskać więcej informacji, zobacz [Uruchamianie narzędzi profilowania bez debugowania](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
   
-## <a name="BKMK_Collect_CPU_usage_data"></a> Zbieranie danych użycia procesora CPU  
+## <a name="BKMK_Collect_CPU_usage_data"></a>Zbieranie danych użycia procesora CPU  
   
-1. W programie Visual Studio, należy ustawić Konfiguracja rozwiązania **wersji** i wybierz cel wdrożenia.  
+1. W programie Visual Studio Ustaw konfigurację rozwiązania na **Zwolnij** i wybierz miejsce docelowe wdrożenia.  
   
-    ![Wybieranie wersji i komputer lokalny](../profiling/media/cpuuse-selectreleaselocalmachine.png "CPUUSE_SelectReleaseLocalMachine")  
+    ![Wybieranie wersji i komputera lokalnego](../profiling/media/cpuuse-selectreleaselocalmachine.png "CPUUSE_SelectReleaseLocalMachine")  
   
-   - Aplikacja uruchomiona w **wersji** tryb zapewnia lepsze widok rzeczywistej wydajności aplikacji.  
+   - Uruchomienie aplikacji w trybie **wydania** zapewnia lepszy widok rzeczywistej wydajności aplikacji.  
   
-   - Uruchamianie aplikacji na komputerze lokalnym, najlepiej replikuje wykonywanie zainstalowanych aplikacji.  
+   - Uruchomienie aplikacji na komputerze lokalnym najlepiej replikuje wykonywanie zainstalowanej aplikacji.  
   
-   - Jeśli dane są zbierane z urządzeniem zdalnym, uruchom aplikację bezpośrednio na urządzeniu, a nie za pomocą połączenia pulpitu zdalnego.  
+   - Jeśli zbierasz dane z urządzenia zdalnego, uruchom aplikację bezpośrednio na urządzeniu, a nie za pomocą Podłączanie pulpitu zdalnego.  
   
-   - W przypadku aplikacji Windows Phone, zbieranie danych bezpośrednio z **urządzenia** zapewnia najbardziej dokładnych danych.  
+   - W przypadku aplikacji Windows Phone zbieranie danych bezpośrednio z **urządzenia** zapewnia najbardziej dokładne dane.  
   
-2. Na **debugowania** menu, wybierz **Profiler wydajności...** .  
+2. W menu **debugowanie** wybierz pozycję **Profiler wydajności.** ...  
   
-3. Wybierz **użycie procesora CPU** , a następnie wybierz **Start**.  
+3. Wybierz pozycję **użycie procesora** , a następnie wybierz polecenie **Uruchom**.  
   
-    ![Wybierz opcję użycia procesora CPU](../profiling/media/cpuuse-lib-choosecpuusage.png "CPUUSE_LIB_ChooseCpuUsage")  
+    ![Wybierz użycie procesora CPU](../profiling/media/cpuuse-lib-choosecpuusage.png "CPUUSE_LIB_ChooseCpuUsage")  
   
-4. Po uruchomieniu aplikacji, kliknij przycisk **uzyskać maksymalna liczba**. Poczekaj około sekundy po wyświetleniu danych wyjściowych, a następnie wybierz **uzyskać maksymalny numer Async**. Oczekiwania między kliknięć przycisków sprawia, że ułatwiają izolowanie przycisk kliknij procedur w raport diagnostyczny.  
+4. Po uruchomieniu aplikacji kliknij pozycję **Pobierz maksymalną liczbę**. Odczekaj około sekundy po wyświetleniu danych wyjściowych, a następnie wybierz pozycję **Pobierz maksymalną liczbę asynchroniczną**. Oczekiwanie między kliknięciami przycisku ułatwia odizolowanie przycisku kliknij procedury w raporcie diagnostycznym.  
   
-5. Gdy zostanie wyświetlony drugi wiersz danych wyjściowych, wybierz **Zatrzymaj Kolekcjonowanie** w Centrum wydajności i diagnostyki.  
+5. Po wyświetleniu drugiego wiersza danych wyjściowych wybierz pozycję **Zatrzymaj zbieranie** w centrum wydajności i diagnostyki.  
   
    ![Zatrzymaj zbieranie danych CpuUsage](../profiling/media/cpu-use-wt-stopcollection.png "CPU_USE_WT_StopCollection")  
   
@@ -60,10 +60,10 @@ Jeśli musisz zbadać problemy z wydajnością w aplikacji, dobrym miejscem do r
 ## <a name="analyze-the-cpu-usage-report"></a>Analizowanie raportu użycia procesora CPU  
   
 ### <a name="BKMK_The_CPU_Usage_call_tree"></a> Użycie procesora CPU drzewo wywołań  
- Aby rozpocząć pracę, informacje o informacje na temat drzewa wywołań, wybierz ponownie `GetMaxNumberButton_Click` segmentu i spójrz na szczegóły drzewa wywołań.  
+ Aby rozpocząć zrozumienie informacji o drzewie wywołań, należy wybrać segment `GetMaxNumberButton_Click` i sprawdzić szczegóły drzewa wywołań.  
   
 #### <a name="BKMK_Call_tree_structure"></a> Struktura drzewa wywołań  
- ![GetMaxNumberButton&#95;kliknij wywołanie drzewa](../profiling/media/cpu-use-wt-getmaxnumbercalltree-annotated.png "CPU_USE_WT_GetMaxNumberCallTree_annotated")  
+ ![GetMaxNumberButton&#95;kliknij pozycję drzewo wywołań](../profiling/media/cpu-use-wt-getmaxnumbercalltree-annotated.png "CPU_USE_WT_GetMaxNumberCallTree_annotated")  
   
 |||  
 |-|-|  
@@ -72,44 +72,44 @@ Jeśli musisz zbadać problemy z wydajnością w aplikacji, dobrym miejscem do r
 |![Krok 3](../profiling/media/procguid-3.png "ProcGuid_3")|Elementy podrzędne węzła drugiego poziomu są asynchroniczne procedur, które są nazywane lub utworzonych przez system drugiego poziomu oraz kodu struktury i metody kod użytkownika.|  
 |![Krok 4](../profiling/media/procguid-4.png "ProcGuid_4")|Węzły podrzędne metody zawierają dane tylko w przypadku wywołania metody nadrzędnej. Gdy **Pokaż kod zewnętrzny** jest wyłączona, metody aplikacja może również zawierać **[kod zewnętrzny]** węzła.|  
   
-#### <a name="BKMK_External_Code"></a> Kod zewnętrzny  
- Kod zewnętrzny są funkcjami w składnikach systemu i framework napisanego wykonywanych przez kod. Kod zewnętrzny obejmują funkcje, które Uruchom i Zatrzymaj aplikację, narysuj interfejsu użytkownika, kontrolować wątki i podaj inne niskopoziomowe usługi dla aplikacji. W większości przypadków nie będzie zainteresowani kod zewnętrzny, a więc użycie procesora CPU wywołać drzewa zbiera informacje funkcji zewnętrznych metody użytkownika w jednym **[kod zewnętrzny]** węzła.  
+#### <a name="BKMK_External_Code"></a>Kod zewnętrzny  
+ Kod zewnętrzny to funkcje w składnikach system i Framework, które są wykonywane przez zapisanie kodu. Kod zewnętrzny obejmują funkcje, które Uruchom i Zatrzymaj aplikację, narysuj interfejsu użytkownika, kontrolować wątki i podaj inne niskopoziomowe usługi dla aplikacji. W większości przypadków nie jest interesujący kod zewnętrzny, dlatego drzewo wywołań użycia procesora zbiera funkcje zewnętrzne metody użytkownika w jednym węźle **[kod zewnętrzny]** .  
   
- Gdy chcesz wyświetlić ścieżki wywołanie kodu zewnętrznego, wybierz pozycję **Pokaż kod zewnętrzny** z **filtrowania widoku** listy, a następnie wybierz **Zastosuj**.  
+ Aby wyświetlić ścieżki wywołań kodu zewnętrznego, wybierz pozycję **Pokaż kod zewnętrzny** z listy **widok filtru** , a następnie wybierz pozycję **Zastosuj**.  
   
- ![Wybierz Widok filtrów, a następnie Pokaż kod zewnętrzny](../profiling/media/cpu-use-wt-filterview.png "CPU_USE_WT_FilterView")  
+ ![Wybierz widok filtru, a następnie Pokaż kod zewnętrzny](../profiling/media/cpu-use-wt-filterview.png "CPU_USE_WT_FilterView")  
   
- Należy pamiętać, że wiele łańcuchy wywołania kodu zewnętrznego głęboko zagnieżdżone, tak, aby szerokość kolumny nazwy funkcji może być dłuższa niż szerokość wyświetlanie wszystkich pól poza największych monitorów komputera. W takim wypadku nazwy funkcji są wyświetlane jako **[...]** :  
+ Należy pamiętać, że wiele łańcuchy wywołania kodu zewnętrznego głęboko zagnieżdżone, tak, aby szerokość kolumny nazwy funkcji może być dłuższa niż szerokość wyświetlanie wszystkich pól poza największych monitorów komputera. W takim przypadku nazwy funkcji są wyświetlane jako **[...]** :  
   
- ![Zagnieżdżony kod zewnętrzny, w drzewie wywołań](../profiling/media/cpu-use-wt-showexternalcodetoowide.png "CPU_USE_WT_ShowExternalCodeTooWide")  
+ ![Zagnieżdżony kod zewnętrzny w drzewie wywołań](../profiling/media/cpu-use-wt-showexternalcodetoowide.png "CPU_USE_WT_ShowExternalCodeTooWide")  
   
- Użyj pola wyszukiwania, aby odnaleźć węzła, którego szukasz, a następnie użyj poziomych pasków przewijania do przenoszenia danych do wyświetlenia:  
+ Użyj pola wyszukiwania, aby znaleźć węzeł, którego szukasz, a następnie użyj poziomego paska przewijania, aby przenieść dane do widoku:  
   
- ![Wyszukaj zagnieżdżonego kodu zewnętrznego](../profiling/media/cpu-use-wt-showexternalcodetoowide-found.png "CPU_USE_WT_ShowExternalCodeTooWide_Found")  
+ ![Wyszukaj zagnieżdżony kod zewnętrzny](../profiling/media/cpu-use-wt-showexternalcodetoowide-found.png "CPU_USE_WT_ShowExternalCodeTooWide_Found")  
   
-### <a name="BKMK_Call_tree_data_columns"></a> Kolumny danych drzewo wywołań  
+### <a name="BKMK_Call_tree_data_columns"></a>Zadzwoń do kolumn danych drzewa  
   
 |||  
 |-|-|  
-|**Łączny czas Procesora (%)**|![Łączna liczba % danych równania](../profiling/media/cpu-use-wt-totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> Procent aktywności procesora CPU przez aplikację w wybranym zakresie czasu użytego przez wywołania funkcji i funkcji wywoływanych przez funkcję. Należy pamiętać, że to różni się od **wykorzystanie procesora CPU** wykres osi czasu, który porównuje łączną aktywność aplikacji w zakres czasu, aby całkowita dostępna pojemność procesora CPU.|  
-|**Własny Procesora (%)**|![Równania własnym %](../profiling/media/cpu-use-wt-selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> Procent aktywności procesora CPU przez aplikację w wybranym zakresie czasu użytego przez wywołanie funkcji, z wyłączeniem aktywności funkcji wywołanych przez funkcję.|  
-|**Łączny czas Procesora (ms)**|Liczba milisekund spędzonych wykonywaniu w wywołaniach funkcji w wybranym zakresie czasu i funkcje, które zostały wywołane przez funkcję.|  
-|**Własny procesora CPU (ms)**|Liczba milisekund spędzonych wykonywaniu w wywołaniach funkcji w wybranym zakresie czasu i funkcje, które zostały wywołane przez funkcję.|  
+|**Łączny czas procesora (%)**|![Całkowite równanie (%)](../profiling/media/cpu-use-wt-totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> Wartość procentowa aktywności procesora aplikacji w wybranym zakresie czasu, która była używana przez wywołania funkcji i funkcji wywoływanych przez funkcję. Należy zauważyć, że różni się to od wykresu czasu **użycia procesora CPU** , który porównuje łączną aktywność aplikacji w zakresie czasu z całkowitą dostępną pojemnością procesora.|  
+|**Własny procesor CPU (%)**|![Równanie własne%](../profiling/media/cpu-use-wt-selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> Wartość procentowa aktywności procesora aplikacji w wybranym zakresie czasu, która była używana przez wywołania funkcji, z wyłączeniem działania funkcji wywoływanych przez funkcję.|  
+|**Łączny czas procesora (MS)**|Liczba milisekund spędzonych na wywołaniach funkcji w wybranym zakresie czasu oraz funkcji, które zostały wywołane przez funkcję.|  
+|**Procesor własny (MS)**|Liczba milisekund spędzonych na wywołaniach funkcji w wybranym zakresie czasu oraz funkcji, które zostały wywołane przez funkcję.|  
 |**Module**|Nazwa modułu zawierającego funkcję lub liczba modułów zawierających funkcje w węźle [kod zewnętrzny].|  
   
-### <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Funkcje asynchroniczne użycia procesora CPU w drzewie wywołań  
- Gdy kompilator napotka metody asynchronicznej, tworzy ukrytej klasy, aby kontrolować wykonywanie metody. Koncepcyjnie klasa jest automatu stanów, który zawiera listę generowanych przez kompilator funkcje asynchroniczne, wywoływanie operacji oryginalnej metody i wywołania zwrotne, harmonogram i Iteratory, trzeba je poprawnie. Oryginalnej metody wywołanego przez nadrzędne metodę środowiska uruchomieniowego usuwa metodę z kontekstu wykonania elementu nadrzędnego, a następnie uruchamia metody klasy ukryte w kontekście systemu i struktury kodu, który kontrolować wykonywanie aplikacji. Metody asynchroniczne są często, ale nie zawsze wykonywane w różnych wątkach co najmniej jeden. Ten kod jest wyświetlany w drzewie wywołań użycie procesora CPU jako elementy podrzędne **[kod zewnętrzny]** węzeł bezpośrednio pod górny węzeł drzewa.  
+### <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a>Funkcje asynchroniczne w drzewie wywołań użycia procesora CPU  
+ Gdy kompilator napotka metodę asynchroniczną, tworzy ukrytą klasę do kontrolowania wykonywania metody. Koncepcyjnie, Klasa jest maszyną stanu, która zawiera listę funkcji generowanych przez kompilator, które asynchronicznie wywołują operacje oryginalnej metody, a także wywołania zwrotne, harmonogram i Iteratory, które są wymagane prawidłowo. Gdy oryginalna Metoda jest wywoływana przez metodę nadrzędną, środowisko uruchomieniowe usuwa metodę z kontekstu wykonywania elementu nadrzędnego i uruchamia metody klasy ukrytej w kontekście kodu systemowego i struktury kontrolującego wykonywanie aplikacji. Metody asynchroniczne są często, ale nie zawsze wykonywane w różnych wątkach co najmniej jeden. Ten kod jest pokazywany w drzewie wywołań użycia procesora jako elementy podrzędne węzła **[kod zewnętrzny]** bezpośrednio poniżej górnego węzła drzewa.  
   
- Aby to zobaczyć, w tym przykładzie, wybierz ponownie `GetMaxNumberAsyncButton_Click` segment na osi czasu.  
+ Aby to sprawdzić w naszym przykładzie, należy wybrać ponowne roz`GetMaxNumberAsyncButton_Click` segmentu na osi czasu.  
   
- ![GetMaxNumberAsyncButton&#95;kliknij element raportu](../profiling/media/cpu-use-wt-getmaxnumberasync-selected.png "CPU_USE_WT_GetMaxNumberAsync_Selected")  
+ ![GetMaxNumberAsyncButton&#95;kliknij pozycję Raport zaznaczenie](../profiling/media/cpu-use-wt-getmaxnumberasync-selected.png "CPU_USE_WT_GetMaxNumberAsync_Selected")  
   
- Pierwsze dwa węzły w obszarze **[kod zewnętrzny]** są generowane przez kompilator metody klasy maszyny stanu. Trzeci to wywołanie do oryginalnej metody. Rozwijanie wygenerowane metody dowiesz się, co się dzieje.  
+ Pierwsze dwa węzły w obszarze **[kod zewnętrzny]** są metodami generowanymi przez kompilator klasy automatu Stanów. Trzecia jest wywołaniem metody oryginalnej. Rozszerzanie wygenerowanych metod pokazuje, co się dzieje.  
   
- ![Rozwinięte GetMaxNumberAsyncButton&#95;kliknij wywołanie drzewa](../profiling/media/cpu-use-wt-getmaxnumberasync-expandedcalltree.png "CPU_USE_WT_GetMaxNumberAsync_ExpandedCallTree")  
+ ![Rozwinięte&#95;GetMaxNumberAsyncButton kliknij drzewo wywołań](../profiling/media/cpu-use-wt-getmaxnumberasync-expandedcalltree.png "CPU_USE_WT_GetMaxNumberAsync_ExpandedCallTree")  
   
-- `MainPage::GetMaxNumberAsyncButton_Click` bardzo niewiele; jego zarządza listą wartości zadania, oblicza maksymalną liczbę wyników i wyświetla dane wyjściowe.  
+- `MainPage::GetMaxNumberAsyncButton_Click` działa bardzo mało; zarządza listą wartości zadania, oblicza maksymalną liczbę wyników i wyświetla dane wyjściowe.  
   
 - `MainPage+<GetMaxNumberAsyncButton_Click>d__3::MoveNext` Dowiesz się, działania wymagane do planowania i uruchamiania zadań 48, które opakować wywołanie `GetNumberAsync`.  
   
-- `MainPage::<GetNumberAsync>b__b` Dowiesz się, aktywności zadań, które wywołują `GetNumber`.
+- `MainPage::<GetNumberAsync>b__b` pokazuje aktywność zadań, które wywołują `GetNumber`.

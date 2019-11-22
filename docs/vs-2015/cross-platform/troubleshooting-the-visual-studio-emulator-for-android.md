@@ -8,12 +8,12 @@ ms.assetid: f3fb5df4-3aae-40e4-9450-bbe15b0c5af5
 caps.latest.revision: 25
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 4e9aa77848c3784b1df7a2c1f32651b8d00e5998
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 380de9206b2dc4e78c3719919dfd78720de28129
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263383"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297647"
 ---
 # <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Rozwiązywanie problemów z emulatorem programu Visual Studio dla systemu Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ Ten temat zawiera informacje pomocne podczas rozwiązywania problemów, które m
 ## <a name="NoInstall"></a> Emulator nie można zainstalować
  Jeśli masz zainstalowany w funkcji Hyper-V, zostanie wyświetlony następujący komunikat, gdy próbują zainstalować emulator. Konieczne jest posiadanie maszynie, która obsługuje funkcji Hyper-v i musi być włączona.
 
- ![Android&#95;Emu&#95;zainstalować&#95;problem](../cross-platform/media/android-emu-install-issue.png "Android_Emu_Install_Issue")
+ ![Problem&#95;z&#95;instalacją&#95;systemu Android UGW](../cross-platform/media/android-emu-install-issue.png "Android_Emu_Install_Issue")
 
 > [!NOTE]
 > Ten komunikat ma zastosowanie zarówno do programu Visual Studio Emulator for Android i Windows Phone Emulator. Windows 8.1 i Windows 10 obsługuje emulatora.
@@ -132,9 +132,9 @@ Ten temat zawiera informacje pomocne podczas rozwiązywania problemów, które m
 
 - W Menedżerze funkcji Hyper-V Otwórz Menedżera przełącznika wirtualnego i sprawdź, czy masz dwa przełączników sieciowych; Sprawdź, czy pierwsza z nich to przełącznik wewnętrzny, i drugą jest zewnętrzny.
 
-     ![Android&#95;Emu&#95;V&#95;Switch&#95;Man](../cross-platform/media/android-emu-v-switch-man.png "Android_Emu_V_Switch_Man")
+     ![Android&#95;—&#95;&#95;przełączanie z&#95;przełącznika euro](../cross-platform/media/android-emu-v-switch-man.png "Android_Emu_V_Switch_Man")
 
-     Jeśli konfiguracja jest nieprawidłowa w przypadku korzystania z systemu Windows 10, użytkownik może próbować [ponownej instalacji urządzeń sieciowych przy użyciu polecenia – d netcfg](http://windows.microsoft.com/windows-10/fix-network-connection-issues) (sekcja 6).
+     Jeśli konfiguracja jest nieprawidłowa w przypadku korzystania z systemu Windows 10, użytkownik może próbować [ponownej instalacji urządzeń sieciowych przy użyciu polecenia – d netcfg](https://support.microsoft.com/help/10741/windows-fix-network-connection-issues) (sekcja 6).
 
 - Jeśli te kroki nie rozwiązują problemu, zobacz [emulatora uruchomienie nie powiedzie się (pierwszym użyciu)](#NoStart) uzyskać informacji na temat 3 oprogramowania innych firm, które mogą powodować konflikt z emulatorem.
 
@@ -173,7 +173,7 @@ Ten temat zawiera informacje pomocne podczas rozwiązywania problemów, które m
 
      - Wyłącz zaufane wykonywanie
 
-       Aby uzyskać więcej informacji znajduje się w artykule: TechNet: Funkcja Hyper-V: Jak naprawić błędy systemu BIOS, włączenie funkcji Hyper-V
+       Aby uzyskać więcej informacji znajduje się w artykule: Technet: funkcja Hyper-V: jak można rozwiązać systemu BIOS błędy włączenie funkcji Hyper-V
 
   5. Upewnij się, że masz co najmniej 4 GB pamięci systemu i że jego jest nie są używane przez inne programy dużej ilości zasobów i procesów.
 
@@ -191,7 +191,7 @@ Ten temat zawiera informacje pomocne podczas rozwiązywania problemów, które m
 
    Ogólnie rzecz biorąc będzie ona do tych produktów deweloperom aktualizacji oprogramowania, aby był zgodny z systemem Windows 8 i funkcji Hyper-V.
 
-   Następujące produkty mogą wymagać uaktualnienia pod kątem zgodności z systemem Windows 8: VirtualBox, Virtual PC 7, VMWare, niektórzy klienci sieci VPN, zapór programowych, niektóre wersje klientów sieci VPN oprogramowania Cisco i innych systemów wirtualizacji. Praca z deweloper oprogramowania wirtualizacji wątpliwe zachęcania go do uaktualnienia oprogramowania, aby był zgodny z systemem Windows 8 i funkcji Hyper-V.
+   Następujące produkty mogą wymagać uaktualnienia pod kątem zgodności z systemem Windows 8: VirtualBox, Virtual PC 7, VMWare, niektórzy klienci sieci VPN oprogramowania zapory, niektóre wersje klientów sieci VPN oprogramowania Cisco i innych systemów wirtualizacji. Praca z deweloper oprogramowania wirtualizacji wątpliwe zachęcania go do uaktualnienia oprogramowania, aby był zgodny z systemem Windows 8 i funkcji Hyper-V.
 
    Jako **obejście**, można wyłączyć wszystkie sterowniki innych firm i aplikacje, które zakłócają sieci wirtualnej, używanego przez Emulator do komunikowania się z programem Visual Studio. Aplikacje te mogą obejmować:
 
@@ -209,11 +209,11 @@ Ten temat zawiera informacje pomocne podczas rozwiązywania problemów, które m
 
   2. Dla karty vEthernet (wewnętrzny Ethernet portu Windows Phone Emulator wewnętrznego przełącznika), wybierz **właściwości** z menu kontekstowego.
 
-      ![Wirtualną kartę sieciową, używane przez Hyper&#45;V](../cross-platform/media/android-emu-virtual-adapter.png "Android_Emu_Virtual_Adapter")
+      ![Karta wirtualna używana przez funkcję&#45;Hyper-V](../cross-platform/media/android-emu-virtual-adapter.png "Android_Emu_Virtual_Adapter")
 
       Właściwości karty są wyświetlane w tym miejscu.
 
-      ![Właściwości karty wirtualnego](../cross-platform/media/android-emu-virtual-adapter-properties.png "Android_Emu_Virtual_Adapter_Properties")
+      ![Właściwości karty wirtualnej](../cross-platform/media/android-emu-virtual-adapter-properties.png "Android_Emu_Virtual_Adapter_Properties")
 
   3. Dla tej karty, tylko elementy, które należy wybrać w obszarze **to połączenie wykorzystuje następujące elementy** powinny być następujące:
 
@@ -254,7 +254,7 @@ Ten temat zawiera informacje pomocne podczas rozwiązywania problemów, które m
 
   Aby rozwiązać ten problem, wyłącz USB3 w ustawieniach systemu BIOS płyty głównej, a następnie uruchom ponownie komputer. Sprawdź, czy gigabajt wydała aktualizacji dla systemu BIOS z płyty głównej.
 
-  Aby uzyskać więcej informacji zobacz następujący artykuł bazy wiedzy: [Rozruch awarii po zakończeniu instalacji roli funkcji Hyper-V w systemach gigabajt](https://support.microsoft.com/kb/2693144).
+  Aby uzyskać więcej informacji, zobacz następujący artykuł bazy wiedzy Knowledge Base: [rozruchu awarii po zakończeniu instalacji roli funkcji Hyper-V w systemach gigabajt](https://support.microsoft.com/kb/2693144).
 
 ## <a name="ADB"></a> Program Visual Studio zablokowania próby wdrożenia aplikacji w emulatorze lub emulator nie jest wyświetlany jako element docelowy debugowania w innych środowiskach IDE
  Jeśli emulator jest uruchomiona, ale nie ma się połączyć z ADB (Android Debug Bridge) lub pojawia się narzędzia systemu Android, które korzystają z ADB (na przykład programu Android Studio lub Eclipse), może być konieczne dostosowanie, gdy emulator szuka ADB. Emulator używa klucza rejestru do identyfikowania podstawowa Lokalizacja zestawu Android SDK i szuka pliku \platform-tools\adb.exe, w tym katalogu. Aby zmodyfikować ścieżkę zestawu Android SDK używany przez emulator:
@@ -268,7 +268,7 @@ Ten temat zawiera informacje pomocne podczas rozwiązywania problemów, które m
   Ponowne uruchomienie emulatora i powinno być teraz możliwe emulator połączone ADB i skojarzonych narzędzi dla systemu Android.
 
 ## <a name="XamarinPlayer"></a> Emulator zawiesza się, ponieważ nie można ustawić port UDP
- Może wystąpić problem związany z powodu niezgodności z odtwarzaczem Xamarin. Emulator zawiesi się lub jeśli zostanie wyświetlony ten komunikat o błędzie "emulator nie jest w stanie połączyć się z system operacyjny urządzenia: Nie można skonfigurować pod kątem portu UDP.  Niektóre funkcje mogą być wyłączone", być może wystąpił problem. Wykonaj następujące kroki.
+ Może wystąpić problem związany z powodu niezgodności z odtwarzaczem Xamarin. Emulator zawiesi się lub jeśli zostanie wyświetlony ten komunikat o błędzie "emulator nie jest w stanie połączyć się z system operacyjny urządzenia: nie można ustawić port UDP.  Niektóre funkcje mogą być wyłączone", być może wystąpił problem. Wykonaj następujące kroki.
 
 1. Odinstaluj program Xamarin Player.
 
@@ -311,6 +311,6 @@ Ten temat zawiera informacje pomocne podczas rozwiązywania problemów, które m
 ## <a name="Support"></a> Zasoby pomocy technicznej
  Jeśli komputer-host spełnia wymagania systemowe i wystąpi problem, nie są uwzględnione w tym przewodniku rozwiązywania problemów:
 
-- Zadaj pytanie na temat korzystania z StackOverflow [emulator systemu android](http://stackoverflow.com/questions/tagged/android-emulator) znacznikami visual studio.
+- Zadaj pytanie na temat korzystania z StackOverflow [emulator systemu android](https://stackoverflow.com/questions/tagged/android-emulator) znacznikami visual studio.
 
 - Zgłoś problem za pomocą Wyślij uśmiech narzędzia programu Visual Studio lub w Menedżerze emulatorów.

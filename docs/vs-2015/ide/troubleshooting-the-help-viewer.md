@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 490525cded11a4cddbbfb3f650d87c55b2fa196b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 01049d5ecf8710cd680278dbf95dbe70767cd5bf
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654775"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299890"
 ---
 # <a name="troubleshooting-the-help-viewer"></a>Rozwiązywanie problemów z Podglądem Pomocy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,9 +45,9 @@ W tym temacie omówiono problemy, które mogą wystąpić w programie Podgląd p
 ## <a name="additional-resources"></a>Dodatkowe zasoby
  Aby uzyskać więcej informacji i przekazać opinię na temat pomocy, możesz skorzystać z następujących zasobów:
 
-- Aby przekazać opinię, zobacz [Microsoft Connect](http://go.microsoft.com/fwlink/?linkid=243983) w witrynie internetowej firmy Microsoft lub Wyślij wiadomość e-mail do [hlpfdbk@microsoft.com](mailto:hlpfdbk@microsoft.com).
+- Aby przekazać opinię, zobacz [Microsoft Connect](https://go.microsoft.com/fwlink/?linkid=243983) w witrynie internetowej firmy Microsoft lub Wyślij wiadomość e-mail do [hlpfdbk@microsoft.com](mailto:hlpfdbk@microsoft.com).
 
-- Aby uzyskać więcej informacji, zapoznaj się z [dokumentacją dla deweloperów i forum systemu pomocy](http://go.microsoft.com/fwlink/?LinkId=232741) oraz blog [pomocy Guy](http://go.microsoft.com/fwlink/?LinkId=232743) .
+- Aby uzyskać więcej informacji, zapoznaj się z [dokumentacją dla deweloperów i forum systemu pomocy](https://go.microsoft.com/fwlink/?LinkId=232741) oraz blog [pomocy Guy](https://go.microsoft.com/fwlink/?LinkId=232743) .
 
 ## <a name="see-also"></a>Zobacz też
- [Podręcznik administratora programu Help Viewer 2,1](http://go.microsoft.com/fwlink/?LinkId=243985)
+ [Podręcznik administratora programu Help Viewer 2,1](https://go.microsoft.com/fwlink/?LinkId=243985)

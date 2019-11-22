@@ -18,12 +18,12 @@ caps.latest.revision: 44
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 421bd778b86aa223e1e7b3a96aa3943a86588174
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a3d1aab68e3dc9f33e0b3e9f9a5665d59f6f2ddc
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662515"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299413"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Powiązywanie kontrolek WPF z usługą danych programu WCF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera kontrolki powiązane
 
 - [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
 
-- Dostęp do uruchomionego wystąpienia SQL Server lub SQL Server Express z dołączoną przykładową bazą danych AdventureWorksLT. Bazę danych AdventureWorksLT można pobrać z [witryny sieci Web CodePlex](http://go.microsoft.com/fwlink/?linkid=87843).
+- Dostęp do uruchomionego wystąpienia SQL Server lub SQL Server Express z dołączoną przykładową bazą danych AdventureWorksLT. Bazę danych AdventureWorksLT można pobrać z [witryny sieci Web CodePlex](https://go.microsoft.com/fwlink/?linkid=87843).
 
   Wcześniejsza znajomość następujących pojęć jest również przydatna, ale nie jest wymagana do ukończenia przewodnika:
 
@@ -83,11 +83,11 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera kontrolki powiązane
 6. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **default. aspx** i wybierz pozycję **Usuń**. Ten plik nie jest konieczny w tym instruktażu.
 
 ## <a name="create-an-entity-data-model-for-the-service"></a>Tworzenie Entity Data Model dla usługi
- Aby udostępnić dane aplikacji przy użyciu [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)], należy zdefiniować model danych dla usługi. @No__t_0 obsługuje dwa typy modeli danych: modele danych jednostek i niestandardowe modele danych, które są zdefiniowane przy użyciu obiektów środowiska uruchomieniowego języka wspólnego (CLR), które implementują interfejs <xref:System.Linq.IQueryable%601>. W tym instruktażu utworzysz Entity Data Model dla modelu danych.
+ Aby udostępnić dane aplikacji przy użyciu [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)], należy zdefiniować model danych dla usługi. [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] obsługuje dwa typy modeli danych: modele danych jednostek i niestandardowe modele danych, które są zdefiniowane przy użyciu obiektów środowiska uruchomieniowego języka wspólnego (CLR), które implementują interfejs <xref:System.Linq.IQueryable%601>. W tym instruktażu utworzysz Entity Data Model dla modelu danych.
 
 #### <a name="to-create-an-entity-data-model"></a>Aby utworzyć Entity Data Model
 
-1. W menu **projekt** kliknij polecenie **Dodaj nowy element**.
+1. W menu **Projekt** kliknij opcję **Dodaj nowy element**.
 
 2. Na liście zainstalowane szablony kliknij pozycję **dane**, a następnie wybierz element projektu **ADO.NET Entity Data Model** .
 
@@ -147,11 +147,11 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera kontrolki powiązane
 
 3. Wybierz szablon projektu **aplikacji WPF** .
 
-4. W polu **Nazwa** wpisz `AdventureWorksSalesEditor` i kliknij przycisk **OK**.
+4. W polu **Nazwa** wpisz `AdventureWorksSalesEditor`i kliknij przycisk **OK**.
 
      Program Visual Studio dodaje projekt `AdventureWorksSalesEditor` do rozwiązania.
 
-5. W menu **dane** kliknij przycisk **Pokaż źródła danych**.
+5. Na **danych** menu, kliknij przycisk **Pokaż źródła danych**.
 
      Zostanie otwarte okno **źródła danych** .
 
@@ -323,4 +323,4 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera kontrolki powiązane
 - Dowiedz się, jak używać okna **źródła danych** w programie Visual Studio, aby wyświetlić powiązane dane (czyli dane w relacji nadrzędny-podrzędny) w kontrolkach WPF. Aby uzyskać więcej informacji, zobacz [Przewodnik: wyświetlanie powiązanych danych w aplikacji WPF](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md).
 
 ## <a name="see-also"></a>Zobacz też
- [Powiązywanie kontrolek WPF z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md) [POWIĄZYWANIE kontrolek WPF z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md) [Powiązywanie formantów wpf z omówieniem zestawu danych](../data-tools/bind-wpf-controls-to-a-dataset.md) [](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb) [Entity Framework](https://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0) Omówienie [WPF i Silverlight Designer —](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62) [dane omówienia Przegląd powiązań](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)
+ [Powiązywanie kontrolek WPF z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md) [POWIĄZYWANIE kontrolek WPF z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md) [Powiązywanie formantów WPF z zestawem danych](../data-tools/bind-wpf-controls-to-a-dataset.md) [Przegląd](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb) [Entity Framework](https://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0) Omówienie [WPF i Silverlight Designer przegląd](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62) [powiązań danych](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)

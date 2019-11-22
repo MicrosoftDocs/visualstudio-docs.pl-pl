@@ -1,5 +1,5 @@
 ---
-title: SETENV — zadanie | Dokumentacja firmy Microsoft
+title: SetEnv — zadanie | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -20,12 +20,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 49d25d49554c587bcaaba8ef09bac967d4b5599a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7dc9b15efb8fca12382fae94912d22c39b96bd4c
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68157375"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295969"
 ---
 # <a name="setenv-task"></a>SetEnv — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,15 +33,15 @@ ms.locfileid: "68157375"
 Ustawia lub usuwa wartość określonej zmiennej środowiskowej.  
   
 ## <a name="parameters"></a>Parametry  
- W poniższej tabeli opisano parametry **SetEnv** zadania.  
+ W poniższej tabeli opisano parametry zadania **setenv** .  
   
 |Parametr|Opis|  
 |---------------|-----------------|  
-|**Nazwa**|Wymagane **ciąg** parametru.<br /><br /> Nazwa zmiennej środowiskowej.|  
-|**OutputEnvironmentVariable**|Opcjonalnie **ciąg** parametr wyjściowy.<br /><br /> Zawiera wartość, która jest przypisana do zmiennej środowiskowej, który jest określony przez **nazwa** parametru.|  
-|**Prefiks**|Obowiązkowe `Boolean` parametru.<br /><br /> Jeśli `true`, łączy wartości **wartość** parametru przed wartością zmiennej środowiskowej, który jest określony przez **nazwa** parametru, a następnie przypisuje wynik do środowiska Zmienna. Jeśli `false`, przypisuje wartość elementu **wartość** parametr do zmiennej środowiskowej.|  
-|**Docelowy**|Opcjonalnie **ciąg** parametru.<br /><br /> Określa lokalizację przechowywania dla zmiennej środowiskowej. Określ "`User`"or"`Machine`".<br /><br /> Aby uzyskać więcej informacji, zobacz "EnvironmentVariableTarget Enumeration" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.|  
-|**Wartość**|Opcjonalnie **ciąg** parametru.<br /><br /> Wartość przypisana do zmiennej środowiskowej, który jest określony przez **nazwa** parametru. Jeśli **wartość** jest pusta i zmienna istnieje, zmienna zostanie usunięty. Jeśli zmienna nie istnieje, nie występuje błąd, mimo że nie można wykonać operacji.<br /><br /> Aby uzyskać więcej informacji, zobacz opis "Environment::SetEnvironmentVariable metody" [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.|  
+|**Nazwa**|Wymagany parametr **ciągu** .<br /><br /> Nazwa zmiennej środowiskowej.|  
+|**OutputEnvironmentVariable**|Opcjonalny parametr wyjściowy **ciągu** .<br /><br /> Zawiera wartość, która jest przypisana do zmiennej środowiskowej, która jest określona przez parametr **name** .|  
+|**Prefiks**|Obowiązkowy parametr `Boolean`.<br /><br /> Jeśli `true`, łączy wartość parametru **Value** przed wartością zmiennej środowiskowej, która jest określona przez parametr **name** , a następnie przypisuje wynik do zmiennej środowiskowej. Jeśli `false`, przypisuje tylko wartość parametru **Value** do zmiennej środowiskowej.|  
+|**Obiektów**|Opcjonalny parametr **ciągu** .<br /><br /> Określa lokalizację, w której jest przechowywana zmienna środowiskowa. Określ wartość "`User`" lub "`Machine`".<br /><br /> Aby uzyskać więcej informacji, zobacz "Wyliczenie EnvironmentVariableTarget" w witrynie [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) w sieci Web.|  
+|**Wartość**|Opcjonalny parametr **ciągu** .<br /><br /> Wartość przypisana do zmiennej środowiskowej, która jest określona przez parametr **name** . Jeśli **wartość** jest pusta, a zmienna istnieje, zmienna jest usuwana. Jeśli zmienna nie istnieje, żaden błąd nie występuje, mimo że nie można wykonać operacji.<br /><br /> Aby uzyskać więcej informacji, zobacz "Environment:: SetEnvironmentVariable nie zawiera Method" w witrynie [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) w sieci Web.|  
   
 ## <a name="remarks"></a>Uwagi  
   

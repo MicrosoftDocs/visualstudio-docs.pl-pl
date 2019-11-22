@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a5112ac6b0fc14d7a5bfc5066ae6fbabbc3c0bc3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b91e5f864bc15f1fbcab9400d0cd3a4a2e8224a9
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654750"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299860"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Samouczek 2: Utworzenie kwizu matematycznego z limitem czasu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,14 +33,12 @@ W tym samouczku utworzysz quiz, w którym powinieneś odpowiedzieć cztery losow
 
   ![Quiz matematyczny z czterema problemami](../ide/media/express-finishedquiz.png "Express_FinishedQuiz") Quiz utworzony w tym samouczku
 
-  Aby pobrać kompletną wersję quizu, zobacz [kompletny przykładowy samouczek quizu Matematycznego](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
-
 > [!NOTE]
 > Ten samouczek obejmuje wizualizacje C# i Visual Basic, dlatego należy skoncentrować się na informacjach specyficznych dla języka programowania, którego używasz.
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
-|Tytuł|Opis|
+|Stanowisko|Opis|
 |-----------|-----------------|
 |[Krok 1. Tworzenie projektu i dodawanie etykiet do formularza](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)|Zacznij od utworzenia projektu, zmiany właściwości i dodania formantów `Label`.|
 |[Krok 2. Tworzenie losowego problemu dodawania](../ide/step-2-create-a-random-addition-problem.md)|Utwórz problem z dodaniem i użyj klasy `Random`, aby wygenerować liczby losowe.|

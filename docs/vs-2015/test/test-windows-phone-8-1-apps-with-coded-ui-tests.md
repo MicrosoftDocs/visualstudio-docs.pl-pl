@@ -8,12 +8,12 @@ ms.assetid: 7b866776-f2d5-4823-8d15-919f889db26f
 caps.latest.revision: 31
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8e314b63490387b94c068e178f0d02db4822921f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1f2ac13b62dcc522626fde92b1b29cac9873edec
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72672168"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301840"
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>Testowanie aplikacji platformy UWP i 8.1 Phone systemu Windows za pomocą kodowanych testów interfejsu użytkownika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -312,7 +312,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 
 ```
 
-## <a name="q--a"></a>p & A
+## <a name="q--a"></a>Pytania i odpowiedzi
 
 ### <a name="q-do-i-have-to-deploy-the-windows-phone-app-in-the-emulator-in-order-to-map-ui-controls"></a>P: Czy muszę wdrożyć aplikację Windows Phone w emulatorze w celu zamapowania formantów interfejsu użytkownika?
  Odp **.: tak**, Konstruktor kodowanego testu interfejsu użytkownika wymaga uruchomienia emulatora i wdrożenia aplikacji. W przeciwnym razie zgłosi komunikat o błędzie informujący, że nie można odnaleźć działającego emulatora.
@@ -372,7 +372,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 ### <a name="q-what-are-the-differences-between-coded-ui-tests-for-xaml-based-windows-store-apps-and-windows-phone-apps"></a>P: Jakie są różnice między kodowanymi testami interfejsu użytkownika dla aplikacji ze sklepu Windows opartych na języku XAML i aplikacji Windows Phone?
  Odp **.: są to następujące**podstawowe różnice:
 
-|Funkcja|Aplikacje Windows Store|Aplikacje Windows Phone|
+|Cecha|Aplikacje Windows Store|Aplikacje Windows Phone|
 |-------------|------------------------|------------------------|
 |Cel dla uruchomionych testów|Komputer lokalny lub zdalny. Komputery zdalne można określić w przypadku używania zautomatyzowanego przypadku testowego do uruchamiania testów. Zobacz [Automatyzowanie przypadku testowego w Microsoft Test Manager](https://msdn.microsoft.com/library/4e02568b-9cde-47cc-b41c-82726c177e42).|Emulator lub urządzenie. Zobacz, [p: czy testy można wykonać tylko na emulatorze, czy też użyć urządzenia fizycznego?](#TestingPhoneAppsCodedUI_EmulatorDevice) w tym temacie.|
 |Wykonywanie z wiersza polecenia|Plik ustawień nie jest wymagany do określenia celu.|Plik runsettings jest wymagany do określenia celu.|
@@ -382,7 +382,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 |Testy oparte na danych|Zobacz [testy oparte na danych](../test/creating-a-data-driven-coded-ui-test.md) , aby uzyskać informacje na temat używania zewnętrznych źródeł danych i używania atrybutu DataSource w metodzie testowej.|Dane są określane jako wbudowane, przy użyciu atrybutu DataRow dla metody testowej. Zobacz [Używanie kodowanych testów interfejsu użytkownika opartych na danych w aplikacjach Windows Phone](#TestingPhoneAppsCodedUI_DataDriven) w tym temacie.|
 
 ## <a name="external-resources"></a>Zasoby zewnętrzne
- Blog dotyczący zarządzania cyklem życia aplikacji Microsoft Visual Studio: [Używanie kodowanego interfejsu użytkownika do testowania aplikacji Windows Phone opartych na języku XAML](http://blogs.msdn.com/b/visualstudioalm/archive/2014/04/05/using-coded-ui-to-test-xaml-based-windows-phone-apps.aspx?PageIndex=2#comments)
+ Blog dotyczący zarządzania cyklem życia aplikacji Microsoft Visual Studio: [Używanie kodowanego interfejsu użytkownika do testowania aplikacji Windows Phone opartych na języku XAML](https://devblogs.microsoft.com/devops/using-coded-ui-to-test-xaml-based-windows-phone-apps/#comments)
 
 ## <a name="see-also"></a>Zobacz też
  [Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)

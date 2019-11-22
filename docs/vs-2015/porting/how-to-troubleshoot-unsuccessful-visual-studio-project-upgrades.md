@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Rozwiązywanie problemów z uaktualnieniami niepomyślnych projektu | Dokumentacja firmy Microsoft'
+title: 'Porady: Rozwiązywanie problemów z uaktualnieniami niepomyślnych projektu | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -18,17 +18,17 @@ caps.latest.revision: 31
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 1fe975fedb8237762d7dadffceff22203dcb899e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 16232a72cd37f8d1d68760f032b6050e0bdf74c5
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696393"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300354"
 ---
-# <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>Instrukcje: Rozwiązywanie problemów z uaktualnieniami projektu powiodło się programu Visual Studio
+# <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>Porady: rozwiązywanie problemów z nieudanymi aktualizacjami projektu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Czasami program Visual Studio w pełni nie można przekonwertować projekt z wcześniejszej wersji programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Jeśli porady w poniższych sekcjach umożliwiają rozwiązania określonego problemu, można znaleźć więcej informacji na temat TechNet [witryny typu Wiki: Portal programowania](http://go.microsoft.com/fwlink/?LinkId=254808).
+Czasami program Visual Studio w pełni nie można przekonwertować projekt z wcześniejszej wersji programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Jeśli porady w poniższych sekcjach umożliwiają rozwiązania określonego problemu, można znaleźć więcej informacji na temat TechNet [witryny typu Wiki: Portal programowania](https://go.microsoft.com/fwlink/?LinkId=254808).
 
 ## <a name="the-project-does-not-run-because-files-are-not-found"></a>Projekt nie działa, ponieważ pliki nie zostaną znalezione
  Plik projektu zawiera ścieżki do plików ustalonych, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] używa, aby uruchomić projekt, po naciśnięciu klawisza F5. Te ścieżki mogą obejmować lokalizacja devenv.exe i inne wymagane pliki. W uaktualnionej wersji [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ścieżki te pliki zostały zmienione.

@@ -8,12 +8,12 @@ ms.assetid: c64aac80-a411-463f-b7bd-8b7607a52ece
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1d51474f2e242f764a84edaa9f2712418c859460
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6735f929f52387f4cb40406d6918894e72bb40d3
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408710"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299689"
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>Co&#39;nowego w Visual Studio 2015 SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ Począwszy od programu Visual Studio 2017, skanowanie w poszukiwaniu szablonów 
  Dla języka C++ Kreator pakietu VSPackage obsługuje polecenia menu, okien narzędzi i edytorach niestandardowych. Wyszukaj go w **nowy projekt** okna dialogowego w **Visual C++ / rozszerzalności**.
 
 ## <a name="vs-sdk-reference-assemblies-via-nuget"></a>Zestawów odwołań zestawu SDK programu VS, za pomocą narzędzia NuGet
- Zwiększyć możliwości przenoszenia i udostępniania projektów rozszerzeń można użyć wersji NuGet zestawów odwołań zestawu SDK programu VS.  Są one dostępne na [nuget.org](http://www.nuget.org) opublikowanych przez [VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility) i mogą być łatwo dodawane do projektu lub rozwiązania za pomocą programu Visual Studio **odwołuje się i zarządzanie nim NuGet Pakiety** okna dialogowego. Możesz dodać poszczególne odwołania do zestawów rozszerzalność specyficzna dla lub dodać zestawu SDK programu VS odwołuje się do zestawów na raz przy użyciu zestawu SDK dla programu [pakiet Meta](http://www.nuget.org/packages/VSSDK_Reference_Assemblies). Aby dowiedzieć się więcej na temat programu NuGet, zobacz [Przegląd NuGet](http://docs.nuget.org/) i [Zarządzanie NuGet pakietów przy użyciu okna dialogowego](http://docs.nuget.org/Consume/Package-Manager-Dialog).
+ Zwiększyć możliwości przenoszenia i udostępniania projektów rozszerzeń można użyć wersji NuGet zestawów odwołań zestawu SDK programu VS.  Są one dostępne na [nuget.org](https://www.nuget.org/) opublikowanych przez [VisualStudioExtensibility](https://www.nuget.org/profiles/VisualStudioExtensibility) i mogą być łatwo dodawane do projektu lub rozwiązania za pomocą programu Visual Studio **odwołuje się i zarządzanie nim NuGet Pakiety** okna dialogowego. Możesz dodać poszczególne odwołania do zestawów rozszerzalność specyficzna dla lub dodać zestawu SDK programu VS odwołuje się do zestawów na raz przy użyciu zestawu SDK dla programu [pakiet Meta](https://www.nuget.org/packages/VSSDK_Reference_Assemblies). Aby dowiedzieć się więcej na temat programu NuGet, zobacz [Przegląd NuGet](https://docs.microsoft.com/nuget/) i [Zarządzanie NuGet pakietów przy użyciu okna dialogowego](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-visual-studio).
 
  Gdy używasz wersji NuGet zestawów odwołań zestawu SDK programu VS, inny użytkownik nie musi zainstalować zestaw SDK programu VS, aby otworzyć i skompilować projekt.  NuGet zestawy referencyjne i narzędzia do kompilacji zestawu SDK automatycznie zostanie zainstalowana na komputerze dla tego projektu.
 
@@ -65,12 +65,12 @@ Począwszy od programu Visual Studio 2017, skanowanie w poszukiwaniu szablonów 
 > [!NOTE]
 > Można kontynuować używania zestawów referencyjnych zainstalowany zestaw SDK w PORÓWNANIU z projektami (znajdujący się w \<Visual Studio lokalizacja instalacji > \ VSSDK\VisualStudioIntegration\Common\Assemblies) i nie trzeba być istniejące projekty rozszerzalności uaktualniony do korzystania z pakietów NuGet.  Projekt **odwołuje się / Dodaj odwołanie** okna dialogowego w dalszym ciągu używać zestawów odwołań zainstalowany zestaw SDK programu VS.
 >
-> Jeśli chcesz zmodyfikować istniejących projektów można użyć NuGet, zobacz [jak: Migrowanie pakietów VSPackage do programu Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md) mającego sekcję na temat aktualizowania rozszerzalności projektów do pakietów NuGet.
+> Jeśli chcesz zmodyfikować istniejących projektów można użyć NuGet, zobacz [porady: Migracja pakietów VSPackage Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md) mającego sekcję na temat aktualizowania rozszerzalności projektów do pakietów NuGet.
 
 ## <a name="light-bulbs"></a>Żarówki
  Jedną z najbardziej atrakcyjnych nowych sposobów pisania kodu rozszerzenia jest zapewniana przez projekt Roslyn. Aby uzyskać więcej informacji, zobacz [Roslyn](https://github.com/dotnet/Roslyn).
 
- Ikony żarówek są nową funkcję, która jest dostarczana z VSSDK. Są one ikony stosowane przy w edytorze programu Visual Studio, które pozwalają wyświetlić zestaw akcji refaktoryzacji kodu lub poprawki dla problemów identyfikowane za pomocą analizatorów kodu wbudowanego. Aby uzyskać więcej informacji, zobacz [instruktażu: Wyświetlanie sugestie z żarówką](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).
+ Ikony żarówek są nową funkcję, która jest dostarczana z VSSDK. Są one ikony stosowane przy w edytorze programu Visual Studio, które pozwalają wyświetlić zestaw akcji refaktoryzacji kodu lub poprawki dla problemów identyfikowane za pomocą analizatorów kodu wbudowanego. Aby uzyskać więcej informacji, zobacz [wskazówki: wyświetlanie sugestie z żarówką](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).
 
 ## <a name="updated-user-experience-guidelines"></a>Wskazówki dotyczące interfejsu zaktualizowany użytkownik
  Projektowanie nowych rozszerzeń lub funkcje programu Visual Studio? Sprawdź zaktualizowane oraz rozszerzone [dotyczące środowiska użytkownika w usłudze Visual Studio](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).  Znajdziesz [kolor tokenów](../extensibility/ux-guidelines/shared-colors-for-visual-studio.md), [rozmiary czcionek](../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md), [specyfikacje układu okna dialogowego](../extensibility/ux-guidelines/layout-for-visual-studio.md)i inne wskazówki, musisz bezproblemowo integrują się nowy interfejs użytkownika z programu Visual Studio.

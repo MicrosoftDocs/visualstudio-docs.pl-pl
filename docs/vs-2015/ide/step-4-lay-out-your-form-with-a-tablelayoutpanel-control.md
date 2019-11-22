@@ -9,19 +9,19 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ab16750694e1bc8bb74afa7d22d899dc492d7c7d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 54e4713abef096d5a23cf1ebf74a9d90db0d6409
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671790"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295738"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Krok 4. Określenie układu formularza przy użyciu formantu TableLayoutPanel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W tym kroku dodasz kontrolkę `TableLayoutPanel` do formularza. TableLayoutPanel pomaga prawidłowo wyrównać kontrolki w formularzu, który zostanie później dodany.
 
- ![link do wideo](../data-tools/media/playvideo.gif "PlayVideo") Aby uzyskać wersję wideo tego tematu, zobacz [Samouczek 1: Tworzenie przeglądarki obrazów w Visual Basic — wideo 2](http://go.microsoft.com/fwlink/?LinkId=205211) lub [Samouczek 1: Tworzenie przeglądarki obrazów w C# pliku wideo 2](http://go.microsoft.com/fwlink/?LinkId=205200). Te filmy wideo korzystają ze starszej wersji programu Visual Studio, więc istnieją niewielkie różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednak koncepcje i procedury działają podobnie w bieżącej wersji programu Visual Studio.
+ ![link do wideo](../data-tools/media/playvideo.gif "PlayVideo") Aby uzyskać wersję wideo tego tematu, zobacz [Samouczek 1: Tworzenie przeglądarki obrazów w Visual Basic — wideo 2](https://go.microsoft.com/fwlink/?LinkId=205211) lub [Samouczek 1: Tworzenie przeglądarki obrazów w C# pliku wideo 2](https://go.microsoft.com/fwlink/?LinkId=205200). Te filmy wideo korzystają ze starszej wersji programu Visual Studio, więc istnieją niewielkie różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednak koncepcje i procedury działają podobnie w bieżącej wersji programu Visual Studio.
 
 ### <a name="to-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Aby określić układ formularza przy użyciu kontrolki TableLayoutPanel
 
@@ -75,7 +75,7 @@ W tym kroku dodasz kontrolkę `TableLayoutPanel` do formularza. TableLayoutPanel
 
 11. Z listy rozwijanej **Pokaż** w górnej części okna wybierz pozycję **wiersze**. Ustaw wartość **row1** na 90% i **Row2** na 10 procent.
 
-12. Wybierz przycisk **OK** . Obiekt TableLayoutPanel powinien teraz mieć duży górny wiersz, mały dolny wiersz, małą lewą kolumnę i dużą prawą kolumnę. Można zmienić rozmiar wierszy i kolumn w TableLayoutPanel, wybierając tableLayoutPanel1 w formularzu, a następnie przeciągając obramowania wierszy i kolumn.
+12. Wybierz **OK** przycisku. Obiekt TableLayoutPanel powinien teraz mieć duży górny wiersz, mały dolny wiersz, małą lewą kolumnę i dużą prawą kolumnę. Można zmienić rozmiar wierszy i kolumn w TableLayoutPanel, wybierając tableLayoutPanel1 w formularzu, a następnie przeciągając obramowania wierszy i kolumn.
 
      ![Formularz Form1 ze zmienionym rozmiarem TableLayoutPanel](../ide/media/vs-formafterlayoutpanel.png "VS_FormAfterLayoutPanel") Formularz Form1 ze zmienionym rozmiarem TableLayoutPanel
 

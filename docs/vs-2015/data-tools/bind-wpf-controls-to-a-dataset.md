@@ -18,12 +18,12 @@ caps.latest.revision: 35
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 70dfaa5671f589c02560a554a6d50611c5364c82
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f0ad4ea108cb0ec3b874c7f360be2e1f0e25ef45
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651184"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299427"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Powiązywanie kontrolek WPF z zestawem danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera kontrolki powiązane
 
 - [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
 
-- Dostęp do uruchomionego wystąpienia SQL Server lub SQL Server Express z dołączoną przykładową bazą danych AdventureWorksLT. Bazę danych AdventureWorksLT można pobrać z [witryny sieci Web CodePlex](http://go.microsoft.com/fwlink/?linkid=87843).
+- Dostęp do uruchomionego wystąpienia SQL Server lub SQL Server Express z dołączoną przykładową bazą danych AdventureWorksLT. Bazę danych AdventureWorksLT można pobrać z [witryny sieci Web CodePlex](https://go.microsoft.com/fwlink/?linkid=87843).
 
   Wcześniejsza znajomość następujących pojęć jest również przydatna, ale nie jest wymagana do ukończenia przewodnika:
 
@@ -79,7 +79,7 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera kontrolki powiązane
 
 #### <a name="to-create-a-dataset"></a>Aby utworzyć zestaw danych
 
-1. W menu **dane** kliknij przycisk **Pokaż źródła danych**.
+1. Na **danych** menu, kliknij przycisk **Pokaż źródła danych**.
 
      Zostanie otwarte okno **źródła danych** .
 
@@ -168,9 +168,9 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera kontrolki powiązane
 
     - ThumbnailPhotoFileName
 
-    - danej
+    - ROWGUID
 
-    - ModifiedDate
+    - Data modyfikacji
 
 4. Kliknij menu rozwijane obok węzła **ThumbNailPhoto** i wybierz pozycję **obraz**.
 
@@ -194,7 +194,7 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera kontrolki powiązane
 
      Program Visual Studio otwiera plik związany z kodem i tworzy nowy program obsługi zdarzeń `backButton_Click` dla zdarzenia <xref:System.Windows.Controls.Primitives.ButtonBase.Click>.
 
-2. Zmodyfikuj procedurę obsługi zdarzeń `Window_Loaded`, więc `ProductViewSource`, `AdventureWorksLTDataSet` i `AdventureWorksLTDataSetProductTableAdapter` znajdują się poza metodą i są dostępne dla całego formularza. Zadeklaruj tylko te, które mają być globalne dla formularza, i przypisz je w ramach procedury obsługi zdarzeń `Window_Loaded`, podobne do następujących:
+2. Zmodyfikuj procedurę obsługi zdarzeń `Window_Loaded`, więc `ProductViewSource`, `AdventureWorksLTDataSet`i `AdventureWorksLTDataSetProductTableAdapter` znajdują się poza metodą i są dostępne dla całego formularza. Zadeklaruj tylko te, które mają być globalne dla formularza, i przypisz je w ramach procedury obsługi zdarzeń `Window_Loaded`, podobne do następujących:
 
      [!code-csharp[Data_WPFDATASET#1](../snippets/csharp/VS_Snippets_ProTools/data_wpfdataset/cs/mainwindow.xaml.cs#1)]
      [!code-vb[Data_WPFDATASET#1](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfdataset/vb/mainwindow.xaml.vb#1)]

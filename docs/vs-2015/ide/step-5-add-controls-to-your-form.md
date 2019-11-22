@@ -9,19 +9,19 @@ caps.latest.revision: 22
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a8c261d903868df887d99c10182ed134c79c552b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 89ca4c02a1cbb1171619060b9478b5f2d3ccaa36
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671770"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295720"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>Krok 5. Dodawanie formantów do formularza
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W tym kroku dodasz kontrolki, takie jak kontrolka `PictureBox` i kontrolka `CheckBox` do formularza. Następnie Dodaj do formularza przyciski.
 
- ![link do wideo](../data-tools/media/playvideo.gif "PlayVideo") Aby uzyskać wersję wideo tego tematu, zobacz [Samouczek 1: Tworzenie przeglądarki obrazów w Visual Basic — wideo 2](http://go.microsoft.com/fwlink/?LinkId=205211) lub [Samouczek 1: Tworzenie przeglądarki obrazów w C# pliku wideo 2](http://go.microsoft.com/fwlink/?LinkId=205200). Te filmy wideo korzystają ze starszej wersji programu Visual Studio, więc istnieją niewielkie różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednak koncepcje i procedury działają podobnie w bieżącej wersji programu Visual Studio.
+ ![link do wideo](../data-tools/media/playvideo.gif "PlayVideo") Aby uzyskać wersję wideo tego tematu, zobacz [Samouczek 1: Tworzenie przeglądarki obrazów w Visual Basic — wideo 2](https://go.microsoft.com/fwlink/?LinkId=205211) lub [Samouczek 1: Tworzenie przeglądarki obrazów w C# pliku wideo 2](https://go.microsoft.com/fwlink/?LinkId=205200). Te filmy wideo korzystają ze starszej wersji programu Visual Studio, więc istnieją niewielkie różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednak koncepcje i procedury działają podobnie w bieżącej wersji programu Visual Studio.
 
 ### <a name="to-add-controls-to-your-form"></a>Aby dodać kontrolki do formularza
 
@@ -49,7 +49,7 @@ W tym kroku dodasz kontrolki, takie jak kontrolka `PictureBox` i kontrolka `Chec
 
      ![TextBox — formant z właściwością rozciągania](../ide/media/express-pictureviewercheckbox.png "Express_PictureViewerCheckbox") TextBox — formant z właściwością rozciągania
 
-8. Wybierz TableLayoutPanel w formularzu, a następnie przejdź do grupy **kontenery** w przyborniku (gdzie masz formant TableLayoutPanel), a następnie kliknij dwukrotnie element **FlowLayoutPanel** , aby dodać nową kontrolkę do ostatniej komórki elementu PictureBox (dół z prawej strony. Następnie zadokuj FlowLayoutPanel w elemencie TableLayoutPanel (wybierając pozycję **Dock w kontenerze nadrzędnym** na liście zadań na czarnym trójkącie FlowLayoutPanel) lub ustawiając właściwość **Dock** FlowLayoutPanel na **Fill**.
+8. Wybierz TableLayoutPanel w formularzu, a następnie przejdź do grupy **kontenery** w przyborniku (w którym znajduje się kontrolka TableLayoutPanel) i kliknij dwukrotnie element **FlowLayoutPanel** , aby dodać nową kontrolkę do ostatniej komórki w elemencie PictureBox (prawy dolny). Następnie zadokuj FlowLayoutPanel w elemencie TableLayoutPanel (wybierając pozycję **Dock w kontenerze nadrzędnym** na liście zadań na czarnym trójkącie FlowLayoutPanel) lub ustawiając właściwość **Dock** FlowLayoutPanel na **Fill**.
 
     > [!NOTE]
     > FlowLayoutPanel jest kontenerem, który rozmieszcza inne kontrolki w wierszach, w kolejności. W przypadku zmiany rozmiaru FlowLayoutPanel, jeśli ma miejsce na rozmieszczenie wszystkich formantów w pojedynczym wierszu, robi to. W przeciwnym razie Rozmieść je w wierszach, jeden na drugim. Będziesz używać FlowLayoutPanel do przechowywania czterech przycisków. Jeśli przyciski układają się po raz pierwszy po dodaniu, upewnij się, że wybrano FlowLayoutPanel przed dodaniem przycisków. Mimo że został wcześniej ustalony, że każda komórka może zawierać tylko jeden formant, Dolna prawa komórka TableLayoutPanel ma cztery kontrolki przycisku. Dzieje się tak, ponieważ w komórce, która zawiera inne kontrolki, można umieścić formant. Ten rodzaj kontrolki nosi nazwę kontenera, a FlowLayoutPanel jest kontenerem.

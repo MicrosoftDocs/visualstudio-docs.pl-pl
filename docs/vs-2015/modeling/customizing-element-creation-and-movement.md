@@ -13,12 +13,12 @@ caps.latest.revision: 38
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: aa377f657143ccc03a19d99bfc9620782bb916e7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8189330f5bc3ff5c9008b6f01ffc00af96162806
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655031"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301142"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Dostosowywanie tworzenia i przesuwania elementów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -110,7 +110,7 @@ Można zezwolić na przeciąganie elementu do innego, z przybornika lub operacji
 
       Możesz użyć narzędzia do nawigacji ścieżki, aby utworzyć każdą ścieżkę:
 
-   3. W obszarze **Scal proces przez utworzenie linków w ścieżkach**kliknij pozycję **\<add ścieżka >** .
+   3. W obszarze **Scal proces przez utworzenie linków w ścieżkach**kliknij pozycję **\<Dodaj ścieżkę >** .
 
    4. Kliknij strzałkę listy rozwijanej z prawej strony elementu listy. Zostanie wyświetlony widok drzewa.
 
@@ -304,7 +304,7 @@ Można zezwolić na przeciąganie elementu do innego, z przybornika lub operacji
 
      Nowa ścieżka powinna wyglądać następująco:
 
-     **Składnik elementu ComponentHasPorts. Component/!**
+     **ComponentHasPorts.Component/!Component**
 
 9. Zapisz rozwiązanie, a następnie Przekształć szablony, klikając przycisk z prawej na pasku narzędzi **Eksplorator rozwiązań** .
 
@@ -317,4 +317,4 @@ Można zezwolić na przeciąganie elementu do innego, z przybornika lub operacji
      Nie powinien być wyświetlany wskaźnik niedostępności i powinien być możliwe porzucenie nowego **portu wejściowego** na istniejącym. Wybierz nowy **port wejściowy** i przeciągnij go do innego punktu w **składniku**.
 
 ## <a name="see-also"></a>Zobacz też
- [Nawigowanie i aktualizowanie modelu w](../modeling/navigating-and-updating-a-model-in-program-code.md) [narzędziach do dostosowywania kodu programu i](../modeling/customizing-tools-and-the-toolbox.md) [diagramy obwodów](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8) przybornika — przykład DSL
+ [Nawigowanie i aktualizowanie modelu w](../modeling/navigating-and-updating-a-model-in-program-code.md) [narzędziach do dostosowywania kodu programu i przyborniku](../modeling/customizing-tools-and-the-toolbox.md)

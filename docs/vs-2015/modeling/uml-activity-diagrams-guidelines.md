@@ -15,17 +15,17 @@ caps.latest.revision: 50
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: abcc83a301553ee0c6141502c25903ef2153258b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 692859008891439e4af3d751306bfd3ee6d351e8
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658489"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298987"
 ---
 # <a name="uml-activity-diagrams-guidelines"></a>Diagramy aktywności UML: Zalecenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W programie Visual Studio możesz narysować diagram aktywności, aby opisać proces biznesowy lub algorytm oprogramowania jako przepływ pracy przez serię akcji. Te akcje mogą wykonać osoby, składniki oprogramowania lub urządzenia. Aby zapoznać się z pokazem wideo, zobacz: [przechwytywanie biznesowe przepływy pracy za pomocą diagramów aktywności](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-4-Capture-Business-Workflows/).
+W programie Visual Studio możesz narysować diagram aktywności, aby opisać proces biznesowy lub algorytm oprogramowania jako przepływ pracy przez serię akcji. Te akcje mogą wykonać osoby, składniki oprogramowania lub urządzenia. Aby zapoznać się z pokazem wideo, zobacz: [przechwytywanie biznesowe przepływy pracy za pomocą diagramów aktywności](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-4-capture-business-workflows).
 
  Aby sprawdzić, które wersje programu Visual Studio obsługują tę funkcję, zobacz [Obsługa wersji dla narzędzi architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -93,7 +93,7 @@ W programie Visual Studio możesz narysować diagram aktywności, aby opisać pr
 
 - W **Eksploratorze modelu UML**przeciągnij działanie do pakietu.
 
-     \- lub-
+     \- lub —
 
 - W **Eksploratorze modelu UML**, kliknij prawym przyciskiem myszy działanie, a następnie kliknij przycisk **Wytnij**. Następnie kliknij prawym przyciskiem myszy pakiet, a następnie kliknij przycisk **Wklej**.
 
@@ -398,7 +398,7 @@ W programie Visual Studio możesz narysować diagram aktywności, aby opisać pr
 
 - Dołącz komentarz do wejściowego lub wyjściowego numeru PIN.
 
-  - Aby odróżnić ten opis od komentarza ogólnego, można rozpocząć dodawanie komentarza \<**transformacji**> > lub **< \< <** >.
+  - Aby odróżnić ten opis od komentarza ogólnego, można rozpocząć dodawanie komentarza\<**transformacji**> > lub **<\<<** >.
 
 - Określ szczegóły transformacji lub wyboru w oddzielnym diagramie aktywności.
 
@@ -408,7 +408,7 @@ W programie Visual Studio możesz narysować diagram aktywności, aby opisać pr
 
 1. Utwórz nowy Diagram działania, w którym ma zostać opisany przepływ transformacji lub wyboru.
 
-   - W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt, wskaż polecenie **Dodaj**, kliknij pozycję **nowy element**, a następnie kliknij pozycję **Diagram aktywności**. Nadaj diagramowi odpowiednią nazwę dla przepływu transformacji lub zaznaczenia. Kliknij przycisk **Dodaj**.
+   - W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt, wskaż polecenie **Dodaj**, kliknij pozycję **nowy element**, a następnie kliknij pozycję **Diagram aktywności**. Nadaj diagramowi odpowiednią nazwę dla przepływu transformacji lub zaznaczenia. Kliknij pozycję **Add** (Dodaj).
 
 2. Na nowym diagramie:
 
@@ -427,4 +427,4 @@ W programie Visual Studio możesz narysować diagram aktywności, aby opisać pr
    Można również zdefiniować wybór dla węzła obiektu i dla poszczególnych pinów wejściowych i wyjściowych. Zdefiniuj działanie wyboru jako w poprzedniej procedurze, a następnie ustaw właściwość **zaznaczania** węzła obiektu lub wejściowy lub wyjściowy numer PIN.
 
 ## <a name="see-also"></a>Zobacz też
- [Edycja modeli UML i diagramów](../modeling/edit-uml-models-and-diagrams.md) [diagramów sekwencji UML: referencyjne](../modeling/uml-sequence-diagrams-reference.md) [diagramy składników UML](../modeling/uml-component-diagrams-reference.md) : referencyjne diagramy [przypadków użycia UML](../modeling/uml-use-case-diagrams-reference.md) : referencyjne diagramy [klas UML](../modeling/uml-class-diagrams-reference.md) : referencyjne [diagramy składników UML: odwołanie](../modeling/uml-component-diagrams-reference.md) [ Wideo: Przechwyć biznesowe przepływy pracy za pomocą diagramów aktywności](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-4-Capture-Business-Workflows/)
+ [Edycja modeli UML i diagramów](../modeling/edit-uml-models-and-diagrams.md) [diagramów sekwencji UML: referencyjne](../modeling/uml-sequence-diagrams-reference.md) [diagramy składników UML](../modeling/uml-component-diagrams-reference.md) : referencyjne diagramy [przypadków użycia UML](../modeling/uml-use-case-diagrams-reference.md) : referencyjne diagramy [klas UML: referencyjne](../modeling/uml-class-diagrams-reference.md) [diagramy składników UML](../modeling/uml-component-diagrams-reference.md) : [film wideo: Przechwytywanie biznesowe przepływy pracy za pomocą diagramów aktywności](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-4-capture-business-workflows)

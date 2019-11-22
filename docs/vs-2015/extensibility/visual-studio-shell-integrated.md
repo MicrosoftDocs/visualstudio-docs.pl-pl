@@ -1,5 +1,5 @@
 ---
-title: Program Visual Studio Shell (zintegrowany) | Dokumentacja firmy Microsoft
+title: Visual Studio Shell (zintegrowany) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,62 +11,62 @@ ms.assetid: 0b40d495-f17f-4bb9-ace8-b365a7172784
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 664363740737eb72213b4818b104aa14c3667a14
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 78ccba3ab8c2dda531614fa791eac3100813840a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65690927"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299702"
 ---
-# <a name="visual-studio-shell-integrated"></a>Program Visual Studio Shell (zintegrowany)
+# <a name="visual-studio-shell-integrated"></a>Visual Studio Shell (zintegrowany)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Powłoka programu Visual Studio obejmuje zintegrowanego środowiska programistycznego (IDE), debuger oraz integrację kontroli źródła. Nie język programowania jest dołączony. Jednak integrated shell zapewniają strukturę, która pozwala na dodawanie języków programowania.  
+Zintegrowana powłoka programu Visual Studio obejmuje zintegrowane środowisko programistyczne (IDE), debuger i integrację kontroli źródła. Nie dołączono żadnego języka programowania. Zintegrowana powłoka zapewnia jednak strukturę, która pozwala na dodawanie języków programowania.  
   
- Powłoka programu Visual Studio jest faktycznie kombinacji powłoki programu Visual Studio izolowane, a także dodatkowe instalacji, obejmujące określonych składników zintegrowane powłoki.  Shell zintegrowanych aplikacji powinien zawierać zarówno izolowanej powłoki pakietu redystrybucyjnego z [pakiet redystrybucyjny Microsoft Visual Studio Shell (Isolated)](http://go.microsoft.com/fwlink/?LinkId=616022) oraz pakiet redystrybucyjny zintegrowane shell z [programu Microsoft Visual Studio powłoki (Integrated) pakiet redystrybucyjny](http://go.microsoft.com/fwlink/?LinkId=616021).  
+ Zintegrowana powłoka programu Visual Studio jest w rzeczywistości kombinacją izolowanej powłoki programu Visual Studio oraz dodatkowej instalacji, która obejmuje zintegrowane składniki powłoki.  Zintegrowana aplikacja powłoki powinna obejmować zarówno pakiet redystrybucyjny izolowanej powłoki z [pakietu Microsoft Visual Studio Shell (izolowany) redystrybucyjny](https://go.microsoft.com/fwlink/?LinkId=616022) , jak i pakiet redystrybucyjny zintegrowanej powłoki z [Microsoft Visual Studio Shell (zintegrowany) pakietu redystrybucyjnego](https://go.microsoft.com/fwlink/?LinkId=616021).  
   
 > [!NOTE]
-> Aby uzyskać dostęp do pakietów redystrybucyjnych powłoki izolowanej i zintegrowanej, pojawi się prośba do wypełnienia ankiety klientów.  Po wypełnieniu ankiety, nastąpi przekierowanie do strony Visual Studio Connect zawierającej łącza pobierania pakietów redystrybucyjnych.  Łącza pobierania podczas kolejnych wizyt w witrynie Visual Studio Connect, w obszarze **programy &#124; VISUAL STUDIO 2015 ZINTEGROWANE i ISOLATED SHELL** kartę.  
+> Przed uzyskaniem dostępu do izolowanych i zintegrowanych pakietów redystrybucyjnych powłoki zostanie wyświetlony monit o wypełnienie krótkiej ankiety klienta.  Po wypełnieniu ankiety nastąpi przekierowanie do strony programu Visual Studio Connect z linkami pobierania pakietu redystrybucyjnego.  Linki do pobrania można znaleźć w kolejnych odwiedzinach w witrynie programu Visual Studio Connect w obszarze **programy &#124; Visual Studio 2015 Integrated i izolowana powłoka** .  
   
- Po zainstalowaniu aplikacji zintegrowanych powłoki na tym samym komputerze co pełną wersję programu Visual Studio, składniki aplikacji zostaną zintegrowane bezpośrednio do programu Visual Studio.  
+ W przypadku zainstalowania zintegrowanej aplikacji powłoki na tym samym komputerze co pełna wersja programu Visual Studio składniki aplikacji zostaną zintegrowane bezpośrednio z Visual Studio.  
   
-## <a name="features-in-the-integrated-shell"></a>Funkcje w Integrated Shell  
+## <a name="features-in-the-integrated-shell"></a>Funkcje w zintegrowanej powłoce  
   
 |||  
 |-|-|  
-|Obszar funkcji|Funkcja|  
+|Obszar funkcji|Cecha|  
 |Obsługa języków|-Brak|  
-|IDE|<ul><li>Ustawienia<br /><br /> <ul><li>Utwórz ustawienia</li><li>Import i eksport ustawień</li><li>Resetuj ustawienia</li></ul></li><li>**Przybornik** integracji</li><li>**Lista zadań** integracji</li><li>Pomoc w integracji</li><li>**Opcje** okno dialogowe</li><li>Zarządzanie czcionki i kolory</li><li>**Dane wyjściowe** okna</li><li>**Polecenie** okna</li><li>Zarządzanie oknem</li><li>Polecenia, menu i powiązań klawiszy</li><li>Środowisko uruchomieniowe języka specyficznego dla domeny (DSL)</li></ul>|  
-|System projektu i typów projektów|— Rozwiązania i foldery rozwiązania<br />— Menedżer konfiguracji rozwiązania<br />— Zarządzanie element<br />— Rozwiązania pojedynczego projektu i wielu projektów<br />— Projektant aplikacji (właściwości projektu uproszczony)<br />-Dodaj odwołanie sieci Web<br />-Dodaj odwołanie do usługi<br />Pojedynczego projektu<br />— Typy projektów witryny sieci Web<br />-Projektów aplikacji sieci web|  
-|Kompilacja|-Niestandardowych kroków kompilacji w środowisku IDE<br />-Wstępnej kompilacji dla ochrona własności intelektualnej (IP)<br />-Podpisywanie kodu<br />     MSBuild|  
-|Edytor|-Przeglądania narzędzia (ujednolicone wyszukiwanie, definicja źródła, dziedziczenie) kodu<br />-Nawigowanie po kodzie<br />— Technologia IntelliSense<br />-Tagi inteligentne<br />-Refaktoryzacji<br />-Pretty listy<br />— Filtrowanie IntelliSense<br />-   **Kod definicji** okna|  
-|Projektant|— Windows Presentation Foundation projektanta<br />— Windows Forms Designer<br />-Sieci web projektanta i edytora HTML|  
-|Dane|-   **Eksplorator serwera** (uproszczone: tylko dane). Patrz Uwaga 1.<br />-   **Źródła danych** okna<br />-Pełnego zestawu kontrolek danych<br />-Edytor XML<br />-Powiąż dane z lokalnego źródła danych (. MDF lub. MDB)<br />— Powiązanie danych obiekt<br />-Powiąż dane z usługi sieci Web<br />-Powiąż dane z lokalnej bazy danych serwera<br />— Powiązanie danych do zdalnego serwera bazy danych<br />— Narzędzia języka DDL dla danych zdalnych<br />-   **Eksplorator serwera** rozszerzalności ([!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] przykłady)|  
-|Debuger|— Debugowanie lokalne. Patrz Uwaga 2.<br />-Debugowania zarządzanego<br />— Debugowanie lokalne<br />— Dołącz do procesu lokalnego<br />— Dołącz do procesu zdalnego<br />-Delegat anonimowe<br />— Domeny aplikacji<br />— Debugowanie ASPX<br />— Atrybuty<br />-Break podczas Func eval<br />-Punktów przerwania<br />— Punkt przerwania ograniczenia<br />-Stosu wywołań<br />-   **Polecenie** okna<br />— Debugowanie międzywątkowe<br />— Porady dotyczące danych<br />— Wizualizator danych<br />-Obsługa debugera dla Asystentów zarządzanego debugowania (mda)<br />-Obsługa debugera dla typu usługi przesyłania dalej<br />-DTEEvents obsługę OTB<br />-JMC Stepper<br />-Test AppID debugera (DBGCLR)<br />— Profil debuger<br />-Debugera, narzędzia i opcje<br />— Iterator debugowania<br />-Obliczanie wyrażenia czasu projektowania<br />— Ewaluator wyrażeń C#<br />-Dezasemblacji<br />-Edytuj i Kontynuuj<br />-Expression evaluator windows (Czujka, zmienne lokalne, automatyczne)<br />— Pomocnik wyjątek<br />-Wyjątków<br />— Wykonywanie<br />-Ogólne<br />— Wprowadzenie prawo źródła<br />-HPC/debugowanie klastra<br />— Zintegrowane debugowanie wiele języków<br />— Debugowanie międzyoperacyjne<br />Debugowanie just-in time<br />— Debugowanie lokalne<br />-Debugowania zarządzanego<br />-Ręcznej kontroli (okno procesów)<br />-Pamięć<br />-Obsługa minizrzutu<br />— Moduły<br />-Debugowanie wielu procesów<br />-Debugowanie w trybie macierzystym<br />-New Obsługa aparatu debugowania<br />— Debugowanie zoptymalizowanego kodu<br />-Filtrowania systemu windows output<br />-Przetwarzanie hostingu do debugowania zarządzanego<br />-Procesy<br />-Quickwatch<br />-Rejestrów<br />-Rejestrów na stosie<br />-Zdalnego debugowania<br />— Zwracane wartości<br />-Debugowanie script<br />-Obsługa usługi source<br />— Zabezpieczenia<br />Side-by-side<br />-SQL<br />— Serwer symbol<br />-Punkty śledzenia<br />-Wątku<br />-Wizualizacji<br />-Extensible arkusza stylów języka przekształcenia (XSLT) debugera|  
-|Obsługa 64-bitowa|— 64-bitowych debugowania dla kodu zarządzanego i natywnego, wszystkie języki<br />— obsługuje x64 natywne|  
-|Kontrola kodu źródłowego (SCC)|-Podstawowa integracja SCC. Patrz Uwaga 3.<br />-Narzędzia i opcje weryfikacji|  
-|Rozszerzalność|-Korzystających ze składników pakietów VSPackage i MEF|  
+|IDE|<ul><li>Ustawienia<br /><br /> <ul><li>Utwórz ustawienia</li><li>Importowanie i eksportowanie ustawień</li><li>Resetuj ustawienia</li></ul></li><li>Integracja z **zestawem narzędzi**</li><li>Integracja **Lista zadań**</li><li>Pomoc dotycząca integracji</li><li>**Opcje** — okno dialogowe</li><li>Zarządzanie czcionkami i kolorami</li><li>Okno **danych wyjściowych**</li><li>Okno **polecenia**</li><li>Zarządzanie oknem</li><li>Polecenia, menu i powiązania klawiszy</li><li>Środowisko uruchomieniowe języka specyficznego dla domeny (DSL)</li></ul>|  
+|System projektu i typy projektów|— Rozwiązania i foldery rozwiązań<br />— Rozwiązanie Configuration Manager<br />-Zarządzanie elementami<br />— Rozwiązania z pojedynczym projektem i projektem<br />-Projektant aplikacji (uproszczone właściwości projektu)<br />-Dodaj odwołanie sieci Web<br />-Dodaj odwołanie do usługi<br />-Jeden projekt<br />— Typy projektów witryny sieci Web<br />— Projekty aplikacji sieci Web|  
+|Kompilacja|-Niestandardowe kroki kompilacji w środowisku IDE<br />— Wstępna kompilacja dla ochrony własności intelektualnej (IP)<br />-Podpisywanie kodu<br />     MSBuild|  
+|Edytor|-Narzędzia do przeglądania kodu (ujednolicone wyszukiwanie, definicja źródła, dziedziczenie)<br />-Nawigacja po kodzie<br />— Technologia IntelliSense<br />- SmartTags<br />— Refaktoryzacja<br />-Łatwa lista<br />— Filtrowanie funkcji IntelliSense<br />okno **definicji kodu** -   |  
+|Projektant|— Projektant Windows Presentation Foundation<br />-Projektant formularzy systemu Windows<br />— Projektant sieci Web i Edytor HTML|  
+|Dane|-   **Eksplorator serwera** (uproszczone: tylko dane). Patrz Uwaga 1.<br />okno **źródeł danych** -   <br />-Pełen zestaw kontrolek danych<br />— Edytor XML<br />— Powiązanie danych z lokalnym źródłem danych (. MDF lub. MDB<br />— Powiąż dane z obiektem<br />-Powiązanie danych z usługą sieci Web<br />-Powiązanie danych z lokalnym serwerem baz danych<br />-Powiązanie danych z serwerem zdalnej bazy danych<br />-DDL Tools dla danych zdalnych<br />-   **Eksplorator serwera** rozszerzalności (przykłady[!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)])|  
+|Debugger|— Debugowanie lokalne. Patrz Uwaga 2.<br />Debugowanie zarządzane<br />— Debugowanie lokalne<br />— Dołącz do procesu lokalnego<br />— Dołącz do procesu zdalnego<br />-Anonimowy delegat<br />-Domeny aplikacji<br />-Debugowanie ASPX<br />-Atrybuty<br />-Break podczas wykonywania funkcji Func-eval<br />-Punkty przerwania<br />-Ograniczenia punktów przerwania<br />-Stosu wywołań<br />okno **polecenia** -   <br />— Debugowanie między wątkami<br />— Porady dotyczące danych<br />-Wizualizator danych<br />— Obsługa debugera dla asystentów zarządzanego debugowania (MDA)<br />-Debuger obsługujący funkcję przesyłania dalej typów<br />-DTEEvents obsługa OTB<br />-JMC stepper<br />-Debuger AppID test (DBGCLR)<br />-Debuger — profil<br />— Narzędzia i opcje debugera<br />-Iterator debugowania<br />-Obliczanie wyrażenia czasu projektowania<br />- C# Ewaluatora wyrażeń<br />-Demontaż<br />-Edytuj i Kontynuuj<br />— Okna ewaluatora wyrażeń (czujka, zmienne lokalne, autouzupełniania)<br />-Pomocnik wyjątków<br />-Wyjątki<br />-Wykonywanie<br />-Typy ogólne<br />— Uzyskiwanie właściwego źródła<br />-HPC/Debugowanie klastra<br />-Zintegrowane debugowanie wielu języków<br />— Debugowanie międzyoperacyjności<br />Debugowanie just in Time<br />— Debugowanie lokalne<br />Debugowanie zarządzane<br />— Kontrola ręczna (okno procesów)<br />-Pamięć<br />— Obsługa minizrzutu<br />-Moduły<br />-Debugowanie wieloprocesowe<br />— Debugowanie natywne<br />-Nowa obsługa aparatu debugowania<br />Debugowanie kodu zoptymalizowane<br />-Wyjściowe filtrowanie systemu Windows<br />-Proces hostingu dla debugowania zarządzanego<br />-Procesy<br />-QuickWatch<br />-Rejestruje<br />-Rejestruje w stosie<br />-Debugowanie zdalne<br />-Wartości zwracane<br />-Debugowanie skryptu<br />-Obsługa usługi źródłowej<br />-Zabezpieczenia<br />Obok siebie<br />— SQL<br />— Serwer symboli<br />-Punkty śledzenia<br />-Thread<br />— Wizualizacje<br />-Extensible Stylesheet Language Transformations (XSLT) Debugger|  
+|64 — obsługa bitów|-64-bitowe debugowanie dla kodu zarządzanego i natywnego, wszystkie języki<br />-x64 Native support|  
+|Kontrola kodu źródłowego (SCC)|-Podstawowa integracja SCC. Patrz adnotacja 3.<br />— Weryfikacja narzędzi i opcji|  
+|Rozszerzalność|-Korzystanie ze składników pakietów VSPackage i MEF|  
   
 ## <a name="notes"></a>Uwagi  
   
-#### <a name="1-data-tools"></a>1. Narzędzia danych  
- Integrated shell obejmuje bazy danych narzędziami programistycznymi, takimi jak obsługa rozszerzalności danych i uproszczone **Eksploratora rozwiązań**. Jednakże programu SQL Server Express, SQL Reporting i Crystal Reports nie są objęte integrated shell.  
+#### <a name="1-data-tools"></a>1. narzędzia danych  
+ Zintegrowana powłoka obejmuje narzędzia do tworzenia baz danych, takie jak obsługa rozszerzalności danych i uproszczone **Eksplorator rozwiązań**. Jednak SQL Server Express, SQL Reporting i Crystal Reports nie znajdują się w zintegrowanej powłoce.  
   
-#### <a name="2-debugging-support"></a>2. Obsługa debugowania  
- Integrated shell obejmuje tego samego aparatu debugowania, który znajduje się w wersji Community programu Visual Studio. Aparatu debugowania zawiera typowe debuger dla kodu zarządzanego, a także powiązanych funkcji, takich jak uruchamianie, Dołącz, ustaw punkt przerwania, Edytuj i Kontynuuj oraz inne. Jednak aparat debugowania nie obsługuje debugowania bazy danych programu SQL Server.  
+#### <a name="2-debugging-support"></a>2. obsługa debugowania  
+ Zintegrowana powłoka obejmuje ten sam aparat debugowania, który jest dołączony do wersji społeczności programu Visual Studio. Aparat debugowania zawiera wspólny debuger dla kodu zarządzanego, a także powiązane funkcje, takie jak uruchamianie, dołączanie, Ustawianie punktu przerwania, Edycja i kontynuowanie oraz inne. Jednak aparat debugowania nie obsługuje debugowania bazy danych SQL Server.  
   
- Mimo że pomocy technicznej dla debugowanie natywne jest uwzględniony w pakiecie debugera podstawowych, nie można rozszerzyć jej do obsługiwania dodatkowych języków.  
+ Chociaż obsługa debugowania natywnego jest zawarta w podstawowym pakiecie debugera, nie można jej zwiększyć na potrzeby obsługi dodatkowych języków.  
   
-#### <a name="3-source-code-control-integration"></a>3. Integracji kontroli kodu źródłowego  
- Integrated shell udostępnia interfejsy API do wykonywania kontroli kodu źródłowego (SCC) i zapewniające składników integracji na podstawie MSSCCI do wspólnej kontroli źródła.  
+#### <a name="3-source-code-control-integration"></a>3. Integracja kontroli kodu źródłowego  
+ Zintegrowana powłoka udostępnia interfejsy API służące do implementowania kontroli kodu źródłowego (SCC) i udostępniania wspólnych składników integracji kontroli źródła opartych na MSSCCI.  
   
- Integracja SCC nie jest regularne funkcji wersji Pro Visual Studio, integracja SCC znajduje się w integrated shell.  
+ Chociaż integracja SCC nie jest regularną funkcją wersji Pro programu Visual Studio, integracja SCC jest dostępna w zintegrowanej powłoce.  
   
-#### <a name="4-build-support"></a>4. Obsługa narzędzia Build  
- Integrated shell oferuje obsługę kompilacji. Można znaleźć informacje o kompilacji w [odwołanie do MSBuild](../msbuild/msbuild-reference.md).  
+#### <a name="4-build-support"></a>4. Obsługa kompilacji  
+ Zintegrowana powłoka zapewnia obsługę kompilacji. Informacje o kompilacjach można znaleźć w [dokumentacji programu MSBuild](../msbuild/msbuild-reference.md).  
   
-## <a name="features-not-included-in-the-integrated-shell"></a>Funkcje, które nie są objęte Integrated Shell  
- Poniżej przedstawiono listę funkcji, które nie są uwzględnione w integrated shell:  
+## <a name="features-not-included-in-the-integrated-shell"></a>Funkcje nieuwzględnione w zintegrowanej powłoce  
+ Poniżej znajduje się lista funkcji, które nie są uwzględnione w zintegrowanej powłoce:  
   
 - Projektant klas  
   
@@ -76,7 +76,7 @@ Powłoka programu Visual Studio obejmuje zintegrowanego środowiska programistyc
   
 - VSHost  
   
-- Żadne języki Visual Studio lub ich szablony skojarzonego projektu lub szablony elementów projektu, są uwzględnione w integrated shell. Nie implementacji specyficznych dla języka innych funkcji, dla dołączono przykładowych fragmentów kodu języka Visual Basic.  
+- W zintegrowanej powłoce nie ma żadnych języków programu Visual Studio ani skojarzonych z nimi szablonów projektów ani szablonów elementów projektu. Nie są uwzględniane żadne implementacje innych funkcji, na przykład Visual Basic fragmenty kodu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Rozszerzanie programu Visual Studio — omówienie](https://msdn.microsoft.com/library/3e9078d7-2763-4cc4-8e20-fac69d747f59)

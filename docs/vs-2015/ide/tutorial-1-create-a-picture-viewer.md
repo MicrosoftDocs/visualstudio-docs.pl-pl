@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ad57a05e45b7e9acd3db455f0a8849166dc3c735
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9c56eb091e6d4efbe33dc8f05d5040272307c274
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654761"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299909"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Samouczek 1: Tworzenie podglądu obrazów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,9 +39,7 @@ W tym samouczku utworzysz program, który ładuje obraz z pliku i wyświetla go 
 
   ![Obraz utworzony w tym samouczku](../ide/media/express-pictureviewerdone.png "Express_PictureViewerDone") Obraz utworzony w tym samouczku
 
-  Aby pobrać kompletną wersję przykładu, zobacz [przykładowy samouczek dotyczący programu Picture Viewer](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).
-
-  ![link do wideo](../data-tools/media/playvideo.gif "PlayVideo") Aby uzyskać wersję wideo tego tematu, zobacz [How to: Create a Picture Viewer in Visual Basic?](http://go.microsoft.com/fwlink/?LinkId=205207) lub [How to: Create a Picture Viewer in C#?](http://go.microsoft.com/fwlink/?LinkId=205198).
+  ![link do wideo](../data-tools/media/playvideo.gif "PlayVideo") Aby uzyskać wersję wideo tego tematu, zobacz [How to: Create a Picture Viewer in Visual Basic?](https://go.microsoft.com/fwlink/?LinkId=205207) lub [How to: Create a Picture Viewer in C#?](https://go.microsoft.com/fwlink/?LinkId=205198).
 
 > [!NOTE]
 > Te filmy wideo korzystają ze starszej wersji programu Visual Studio, więc istnieją niewielkie różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednak koncepcje i procedury działają podobnie w bieżącej wersji programu Visual Studio. Wizualizacje C# i Visual Basic zostały omówione w tym samouczku, dlatego należy skoncentrować się na informacjach specyficznych dla języka programowania, którego używasz.
@@ -52,7 +50,7 @@ W tym samouczku utworzysz program, który ładuje obraz z pliku i wyświetla go 
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
-|Tytuł|Opis|
+|Stanowisko|Opis|
 |-----------|-----------------|
 |[Krok 1. Tworzenie projektu aplikacji Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md)|Zacznij od utworzenia projektu aplikacji Windows Forms.|
 |[Krok 2. Uruchamianie programu](../ide/step-2-run-your-program.md)|Uruchom program aplikacji Windows Forms, który został utworzony w poprzednim kroku.|

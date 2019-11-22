@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Aktualizacja projektów Visual C++ w Visual Studio 2015 | Dokumentacja firmy Microsoft'
+title: 'Porady: Aktualizacja projektów Visual C++ w Visual Studio 2015 | Dokumentacja firmy Microsoft'
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -12,14 +12,14 @@ caps.latest.revision: 26
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: c998433ca96c46f6a24b75aec5d3a2a95912b786
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: b33b1b47ad4c32aabe09aae5a66fe3f02aeb1487
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823295"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300383"
 ---
-# <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>Instrukcje: Uaktualnianie projektów programu Visual C++ do programu Visual Studio 2015
+# <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>Instrukcje: uaktualnianie projektów w języku Visual C++ do programu Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Dokumentacja Najpóźniejsza dla programu Visual Studio 2017, zobacz [przewodnik przenoszenia Visual C++ i uaktualniania](https://docs.microsoft.com/cpp/porting/visual-cpp-porting-and-upgrading-guide).
@@ -51,7 +51,7 @@ Przy pierwszym otwarciu projektu Visual C++, który został utworzony we wcześn
 - Aby uzyskać [!INCLUDE[cppcli](../includes/cppcli-md.md)] projektów, zmienia wartość TargetFrameworkVersion na .NET Framework 4.5.2.
 
 ## <a name="continuing-to-work-with-a-custom-platformtoolset"></a>Kontynuowanie pracy z niestandardowym PlatformToolset
- Jeśli chcesz kontynuować pracę z niestandardowym PlatformToolset w [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)], zestaw narzędzi musi znajdować się pod %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ na x86 komputerze lub % ProgramFiles (x86)%\MSBuild\ Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ na x64 maszyny. Aby uzyskać informacje o sposobie tworzenia niestandardowego zestawu narzędzi platformy, zobacz [C++ natywna Wielowersyjność](http://go.microsoft.com/fwlink/?LinkId=248587) na blogu zespołu Visual C++.
+ Jeśli chcesz kontynuować pracę z niestandardowym PlatformToolset w [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)], zestaw narzędzi musi znajdować się pod %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ na x86 komputerze lub % ProgramFiles (x86)%\MSBuild\ Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ na x64 maszyny. Aby uzyskać informacje o sposobie tworzenia niestandardowego zestawu narzędzi platformy, zobacz [C++ natywna Wielowersyjność](https://go.microsoft.com/fwlink/?LinkId=248587) na blogu zespołu Visual C++.
 
 ## <a name="see-also"></a>Zobacz też
  [Visual C++, przenoszenie i uaktualnianie przewodnik](https://msdn.microsoft.com/library/f5fbcc3d-aa72-41a6-ad9a-a706af2166fb) [przenoszenie, migrowanie i uaktualnianie projektów programu Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)

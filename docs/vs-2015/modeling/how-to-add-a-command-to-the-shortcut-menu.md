@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1d218f5f560a7ae2c95d7e7ae0e20002f922e257
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8d5373ae27797aa3bfe4627fb84ce393dce9e910
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72602078"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300891"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Porady: dodawanie polecenia do menu skrótów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Polecenia menu można dodać do języka specyficznego dla domeny (DSL), aby uży
 
 3. [Metody zapisu w klasie element CommandSet](#CommandSet) , aby wyświetlić polecenie i zdefiniować, co ma być wykonywane w poleceniu.
 
-   Aby zapoznać się z przykładami, zobacz [witrynę internetową zestawu SDK wizualizacji i modelowania](http://go.microsoft.com/fwlink/?LinkID=185579).
+   Aby zapoznać się z przykładami, zobacz [witrynę internetową zestawu SDK wizualizacji i modelowania](https://go.microsoft.com/fwlink/?LinkID=185579).
 
 > [!NOTE]
 > Możesz również zmodyfikować zachowanie niektórych istniejących poleceń, takich jak Wytnij, wklej, zaznacz wszystko i Drukuj przez zastępowanie metod w CommandSet.cs. Aby uzyskać więcej informacji, zobacz [How to: Modify a standardowe polecenie menu](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
@@ -225,7 +225,7 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
 
 - `this.CurrentSelection`., Kształt, który kliknięto prawym przyciskiem myszy, jest zawsze uwzględniony na tej liście. Jeśli użytkownik kliknie pustą część diagramu, diagram jest jedyną składową listy.
 
-- `this.IsDiagramSelected()`  -  `true`, jeśli użytkownik kliknął pustą część diagramu.
+- `this.IsDiagramSelected()` - `true`, jeśli użytkownik kliknął pustą część diagramu.
 
 - `this.IsCurrentDiagramEmpty()`
 
@@ -244,7 +244,7 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
 
  W przypadku wprowadzania zmian do elementów modelu należy to zrobić wewnątrz transakcji. Aby uzyskać więcej informacji, zobacz [How to: Modify a standardowe polecenie menu](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
- W tym przykładzie `ClassShape`, `ModelClass` i `Comment` są typami, które są zdefiniowane w DSL, które pochodzą z szablonu klasy diagramu DSL.
+ W tym przykładzie `ClassShape`, `ModelClass`i `Comment` są typami, które są zdefiniowane w DSL, które pochodzą z szablonu klasy diagramu DSL.
 
 ```
 private void OnMenuMyContextMenuCommand(object sender, EventArgs e)
@@ -335,7 +335,7 @@ protected override IList<MenuCommand> GetMenuCommands()
 ## <a name="troubleshooting"></a>Rozwiązywanie problemów
  **Polecenie nie jest wyświetlane w menu:**
 
-- Polecenie będzie wyświetlane tylko w przypadku debugowania wystąpień programu Visual Studio, dopóki nie zostanie zainstalowany pakiet DSL. Aby uzyskać więcej informacji, zobacz [wdrażanie rozwiązań językowych właściwych dla domeny](../modeling/deploying-domain-specific-language-solutions.md).
+- Polecenie będzie wyświetlane tylko w przypadku debugowania wystąpień programu Visual Studio, dopóki nie zostanie zainstalowany pakiet DSL. Aby uzyskać więcej informacji, zobacz [wdrażania rozwiązań języka dotyczącego określonej domeny](../modeling/deploying-domain-specific-language-solutions.md).
 
 - Upewnij się, że próbka eksperymentalna ma poprawne rozszerzenie nazwy pliku dla tego języka DSL. Aby sprawdzić rozszerzenie nazwy pliku, Otwórz DslDefinition. DSL w głównym wystąpieniu programu Visual Studio. Następnie w Eksploratorze DSL kliknij prawym przyciskiem myszy węzeł Edytor, a następnie kliknij polecenie Właściwości. W okno Właściwości, zapoznaj się z właściwością FileExtension.
 
@@ -360,4 +360,4 @@ protected override IList<MenuCommand> GetMenuCommands()
 - Upewnij się, że zostały odinstalowane wcześniejsze wersje pakietu.
 
 ## <a name="see-also"></a>Zobacz też
- [Pisanie kodu w celu dostosowywania języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md) [: modyfikowanie standardowego polecenia menu](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md) [wdrażanie rozwiązań językowych właściwych dla domeny](../modeling/deploying-domain-specific-language-solutions.md) [przykładowy kod: diagramy obwodów](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+ [Pisanie kodu w celu dostosowywania języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md) [: modyfikowanie standardowego polecenia menu](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md) [wdrażanie rozwiązań językowych właściwych dla domeny](../modeling/deploying-domain-specific-language-solutions.md)

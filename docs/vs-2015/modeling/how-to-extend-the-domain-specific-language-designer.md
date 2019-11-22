@@ -9,19 +9,19 @@ caps.latest.revision: 10
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c2c131032a97231dce0394065d78505e936e3e91
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 33a7f5a0f183030f9de021df328f8c5e50f5fd5a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72656022"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300901"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Porady: rozszerzanie projektanta języka specyficznego dla domeny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Aby edytować definicje DSL, można tworzyć rozszerzenia projektanta. Typy rozszerzeń, które można wykonać, obejmują dodawanie poleceń menu, Dodawanie programów obsługi dla gestów przeciągania i podwójnego kliknięcia oraz reguły wyzwalane po zmianie określonych typów wartości lub relacji. Rozszerzenia mogą być spakowane jako rozszerzenie integracji programu Visual Studio (VSIX) i dystrybuowane do innych użytkowników.
 
- Aby uzyskać przykładowy kod i więcej informacji na temat tej funkcji, zobacz [witrynę sieci Web Visual Studio Wizualizacja i Modeling SDK (VMSDK)](http://go.microsoft.com/fwlink/?LinkID=186128).
+ Aby uzyskać przykładowy kod i więcej informacji na temat tej funkcji, zobacz [witrynę sieci Web Visual Studio Wizualizacja i Modeling SDK (VMSDK)](https://go.microsoft.com/fwlink/?LinkID=186128).
 
 ## <a name="setting-up-the-solution"></a>Konfigurowanie rozwiązania
  Skonfiguruj projekt zawierający kod rozszerzenia oraz projekt VSIX, który eksportuje projekt. Twoje rozwiązanie może zawierać inne projekty, które są włączone do tego samego VSIX.
@@ -48,30 +48,30 @@ Aby edytować definicje DSL, można tworzyć rozszerzenia projektanta. Typy rozs
 
 7. W projekcie biblioteki klas Dodaj odwołania do następujących zestawów:
 
-     Microsoft. VisualStudio. CoreUtility
+     Microsoft.VisualStudio.CoreUtility
 
-     Microsoft. VisualStudio. Modeling. Sdk. 11.0
+     Microsoft.VisualStudio.Modeling.Sdk.11.0
 
-     Microsoft. VisualStudio. Modeling. Sdk. Diagrams. 11.0
+     Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0
 
-     Microsoft. VisualStudio. Modeling. Sdk. DslDefinition. 11.0
+     Microsoft.VisualStudio.Modeling.Sdk.DslDefinition.11.0
 
-     Microsoft. VisualStudio. Modeling. Sdk. Integration. 11.0
+     Microsoft.VisualStudio.Modeling.Sdk.Integration.11.0
 
-     System. ComponentModel. kompozycji
+     System.ComponentModel.Composition
 
-     System. Drawing
+     System.Drawing
 
-     System. Drawing. Design
+     System.Drawing.Design
 
-     System. Windows. Forms
+     System.Windows.Forms
 
 ## <a name="testing-and-deployment"></a>Testowanie i wdrażanie
  Aby przetestować dowolne rozszerzenia w tym temacie, skompiluj i uruchom rozwiązanie. Zostanie otwarte doświadczalne wystąpienie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. W tym przypadku należy otworzyć rozwiązanie DSL. Edytuj diagram DslDefinition. Można zobaczyć zachowanie rozszerzenia.
 
- Aby wdrożyć rozszerzenia w głównej [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] i na innych komputerach, wykonaj następujące kroki:
+ Aby wdrożyć rozszerzenia w głównej [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]i na innych komputerach, wykonaj następujące kroki:
 
-1. Znajdź plik instalacji VSIX w projekcie VSIX w \\ bin * \\ \*. vsix
+1. Znajdź plik VSIX instalacji w projekcie VSIX bin\\*\*\\\*.vsix
 
 2. Skopiuj ten plik na komputer docelowy, a następnie kliknij go dwukrotnie w Eksploratorze Windows (lub Eksploratorze plików).
 
@@ -79,7 +79,7 @@ Aby edytować definicje DSL, można tworzyć rozszerzenia projektanta. Typy rozs
 
    Aby odinstalować rozszerzenie, wykonaj następujące kroki:
 
-3. w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] w menu **Narzędzia** kliknij pozycję **Menedżer rozszerzeń**.
+3. w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]w menu **Narzędzia** kliknij pozycję **Menedżer rozszerzeń**.
 
 4. Wybierz rozszerzenie i usuń je.
 

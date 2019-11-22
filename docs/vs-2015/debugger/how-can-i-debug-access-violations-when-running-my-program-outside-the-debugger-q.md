@@ -20,12 +20,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7cfdf356d21558f2024cb83e00bdfc930284b1d8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ce5b21f92eecf2e8929c142bc1ee32e20d386335
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68164105"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299260"
 ---
 # <a name="how-can-i-debug-access-violations-when-running-my-program-outside-the-debugger"></a>W jaki sposób można debugować naruszenia zasad dostępu przy uruchamianiu programu poza debugerem?
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Opis problemu
 ## <a name="solution"></a>Rozwiązanie  
  Ustaw [Just-in-time debugging](../debugger/just-in-time-debugging-in-visual-studio.md) opcji, a następnie uruchom program autonomiczny, dopóki nie nastąpi naruszenie zasad dostępu. Następnie w **naruszenie zasad dostępu** okno dialogowe, możesz kliknąć pozycję **anulować** można uruchomić debugera.  
   
- Zobacz też artykuł bazy wiedzy Knowledge Base Q133174, "Jak do lokalizacji, w którym występuje ogólny błąd ochrony (GP)". Można znaleźć artykuły bazy wiedzy na dysku CD z biblioteki MSDN lub przeszukując [ http://support.microsoft.com/ ](http://support.microsoft.com/).  
+ Zobacz także artykuł z bazy wiedzy Q133174, "Jak zlokalizować miejsce wystąpienia błędu ochrony ogólnej (GP)". Artykuły bazy wiedzy można znaleźć na dysku CD biblioteki MSDN lub przeszukać [http://support.microsoft.com/](https://support.microsoft.com/).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie kodu natywnego — często zadawane pytania](../debugger/debugging-native-code-faqs.md)   

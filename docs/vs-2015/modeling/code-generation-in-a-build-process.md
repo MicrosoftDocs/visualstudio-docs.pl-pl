@@ -12,12 +12,12 @@ caps.latest.revision: 30
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 81c4160ca6d03d55d631cd4dad8c3bce01fa9722
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ae28c59f9c5f19e87b833c90e7dbc6bf3b7497ea
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667863"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297928"
 ---
 # <a name="code-generation-in-a-build-process"></a>Generowanie kodu w procesie kompilacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,25 +33,25 @@ Aby włączyć zadania kompilacji na komputerze deweloperskim, zainstaluj [zesta
 
 Jeśli [serwer kompilacji](https://msdn.microsoft.com/library/788443c3-0547-452e-959c-4805573813a9) działa na komputerze, na którym nie zainstalowano programu Visual Studio, Skopiuj następujące pliki do komputera kompilacji z komputera deweloperskiego. Zastąp najnowsze numery wersji dla "*".
 
-- $ (ProgramFiles) \MSBuild\Microsoft\VisualStudio\v *. 0 \ TextTemplating
+- $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating
 
-  - Microsoft. VisualStudio. TextTemplating. Sdk. host. *. 0. dll
+  - Microsoft.VisualStudio.TextTemplating.Sdk.Host.*.0.dll
 
   - Microsoft.TextTemplating.Build.Tasks.dll
 
   - Microsoft.TextTemplating.targets
 
-- $ (ProgramFiles) \Microsoft Visual Studio *. 0 \ VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
+- $(ProgramFiles)\Microsoft Visual Studio *.0\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
 
-  - Microsoft. VisualStudio. TextTemplating. *. 0. dll
+  - Microsoft.VisualStudio.TextTemplating.*.0.dll
 
   - Microsoft. VisualStudio. TextTemplating. Interfaces. *. 0. dll (kilka plików)
 
-  - Microsoft. VisualStudio. TextTemplating. VSHost. *. 0. dll
+  - Microsoft.VisualStudio.TextTemplating.VSHost.*.0.dll
 
 - $ (ProgramFiles) \Microsoft Visual Studio *. 0 \ Common7\IDE\PublicAssemblies\
 
-  - Microsoft. VisualStudio. TextTemplating. Modeling. *. 0. dll
+  - Microsoft.VisualStudio.TextTemplating.Modeling.*.0.dll
 
 ## <a name="to-edit-the-project-file"></a>Aby edytować plik projektu
 
@@ -67,7 +67,7 @@ W pliku .vbproj lub .csproj znajdź taki wiersz:
 
 `<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />`
 
-\- lub-
+\- lub —
 
 `<Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />`
 
@@ -155,7 +155,7 @@ Transformacja tekstu ma miejsce przed innymi zadaniami w procesie kompilacji. Mo
   </Target>
 ```
 
-W `AfterTransform` można odwoływać się do list plików:
+W `AfterTransform`można odwoływać się do list plików:
 
 - GeneratedFiles — lista plików zapisanych przez proces. Dla tych plików, które zastąpią istniejące pliki tylko do odczytu, %(GeneratedFiles.ReadOnlyFileOverwritten) będzie prawdziwe. Pliki te można wyewidencjonować z kontroli źródła.
 
@@ -263,7 +263,7 @@ Teraz możesz korzystać ze swojej właściwości projektu w dyrektywach zestawu
 
  Te dyrektywy pobierają wartości z T4parameterValues zarówno w hostach MSBuild, jak i Visual Studio.
 
-## <a name="q--a"></a>p & A
+## <a name="q--a"></a>Pytania i odpowiedzi
 
 **Dlaczego warto przetwarzać szablony na serwerze kompilacji? Zostały już przekształcone szablony w programie Visual Studio przed zapisaniem mojego kodu.**
 
@@ -284,5 +284,5 @@ Jeżeli zaktualizujesz dołączony plik lub inny plik odczytany przez szablon, V
 Dobrą wskazówkę znajdziesz w szablonie T4 MSbuild, $(VSToolsPath)\TextTemplating\Microsoft.TextTemplating.targets
 
 - [Pisanie szablonu tekstowego T4](../modeling/writing-a-t4-text-template.md)
-- [Visual Studio Wizualizacja i Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579)
+- [Visual Studio Wizualizacja i Modeling SDK](https://go.microsoft.com/fwlink/?LinkID=185579)
 - [Oleg Sych: zrozumienie aparatu T4: integracja z programem MSBuild](https://github.com/olegsych/T4Toolbox)

@@ -26,12 +26,12 @@ caps.latest.revision: 67
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 39c90a8550736c945f04467e9366a73039cfa2b1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e367ff6d6abbf40cdf7efebed04aee6fc74a384c
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670480"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300741"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ Technologia IntelliSense pomaga napisać kod szybciej i z mniejszą liczbą bł�
 
 - Kontrolki <xref:System.Web.UI.ScriptManager> i <xref:System.Web.UI.ScriptManagerProxy>, jeśli aplikacja sieci Web jest aplikacją ASP.NET z obsługą technologii AJAX.
 
-- @No__t_0, jeśli pracujesz w aplikacji sieci Web ASP.NET z obsługą technologii AJAX.
+- [!INCLUDE[atlaslib_current_ext](../includes/atlaslib-current-ext-md.md)], jeśli pracujesz w aplikacji sieci Web ASP.NET z obsługą technologii AJAX.
 
     > [!NOTE]
     > Funkcja IntelliSense nie jest obsługiwana dla skryptu, który jest w atrybutach programu obsługi zdarzeń w elementach HTML lub jest zdefiniowany w `href` atrybuty.
@@ -119,15 +119,15 @@ Technologia IntelliSense pomaga napisać kod szybciej i z mniejszą liczbą bł�
   Gdy IntelliSense nie jest w stanie określić typu obiektu, udostępnia opcje uzupełniania instrukcji przy użyciu identyfikatorów w aktywnym dokumencie. Aby uzyskać więcej informacji, zobacz [uzupełnianie instrukcji dla identyfikatorów](../ide/statement-completion-for-identifiers.md).
 
 ### <a name="HTMLDom"></a>Elementy DOM języka HTML
- Język JavaScript IntelliSense zawiera odwołania programistyczne dla elementów DOM w języku HTML (DHTML), takich jak `body`, `form` i `div`. Tylko elementy, które są zawarte w bieżącym dokumencie i na stronie głównej, są wyświetlane przez technologię IntelliSense. Funkcja JavaScript IntelliSense obsługuje również `window` i `document` obiektów i ich członków.
+ Język JavaScript IntelliSense zawiera odwołania programistyczne dla elementów DOM w języku HTML (DHTML), takich jak `body`, `form`i `div`. Tylko elementy, które są zawarte w bieżącym dokumencie i na stronie głównej, są wyświetlane przez technologię IntelliSense. Funkcja JavaScript IntelliSense obsługuje również `window` i `document` obiektów i ich członków.
 
 ### <a name="IntrinsicObjects"></a>Obiekty wewnętrzne
- Funkcja JavaScript IntelliSense udostępnia odwołania programistyczne dla obiektów wewnętrznych, takich jak `Array`, `String`, `Math`, `Date` i `Number`. Aby uzyskać więcej informacji na temat obiektów wewnętrznych, zobacz [standardowe obiekty wbudowane](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects).
+ Funkcja JavaScript IntelliSense udostępnia odwołania programistyczne dla obiektów wewnętrznych, takich jak `Array`, `String`, `Math`, `Date`i `Number`. Aby uzyskać więcej informacji na temat obiektów wewnętrznych, zobacz [standardowe obiekty wbudowane](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects).
 
 ### <a name="UserDefined"></a>Zdefiniowane przez użytkownika zmienne, funkcje i obiekty
  Gdy zmieniasz plik JavaScript, [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] skanuje otwarte i przywoływane dokumenty w celu określenia wszystkich dostępnych zasobów kodu. Obejmuje to zmienne, funkcje i obiekty, które zostały utworzone. Te zasoby będą dostępne dla JavaScript IntelliSense.
 
- Aby uzyskać więcej informacji o zmiennych, funkcjach i obiektach zdefiniowanych przez użytkownika, zobacz [Tworzenie własnych obiektów](http://go.microsoft.com/fwlink/?LinkId=108671) w witrynie MSDN w sieci Web.
+ Aby uzyskać więcej informacji o zmiennych, funkcjach i obiektach zdefiniowanych przez użytkownika, zobacz [Tworzenie własnych obiektów](https://go.microsoft.com/fwlink/?LinkId=108671) w witrynie MSDN w sieci Web.
 
 ### <a name="External"></a>Odwołania do pliku zewnętrznego
  Mogą zawierać różne typy odwołań do zewnętrznego pliku, aby uzyskać obsługę IntelliSense w kodzie. Odwołania do zewnętrznego pliku mogą być odwołaniami do skryptu, dyrektywami odwołań lub mogą być określone za pomocą grup odwołań.
@@ -137,7 +137,7 @@ Technologia IntelliSense pomaga napisać kod szybciej i z mniejszą liczbą bł�
 
  Jeśli nie pracujesz z ASP.NET stroną sieci Web z obsługą technologii AJAX, możesz odwoływać się do zewnętrznego pliku skryptu przy użyciu atrybutu `src` w tagu otwierającym elementu `script`. Atrybut `src` określa adres URL pliku zewnętrznego, który zawiera kod źródłowy lub dane.
 
- Poniższy przykład pokazuje znacznik, który używa atrybutu `src` w tagu < `script` >, aby odwołać się do pliku skryptu.
+ Poniższy przykład pokazuje znacznik, który używa atrybutu `src` w tagu <`script`>, aby odwołać się do pliku skryptu.
 
 ```html
 <script type="text/javascript" src="~/Scripts/JavaScript.js">
@@ -203,7 +203,7 @@ Technologia IntelliSense pomaga napisać kod szybciej i z mniejszą liczbą bł�
 
  Do dyrektywy `reference` są stosowane następujące reguły.
 
-- @No__t_0 komentarz XML musi być zadeklarowany przed jakimkolwiek skryptem.
+- `reference` komentarz XML musi być zadeklarowany przed jakimkolwiek skryptem.
 
 - Należy użyć składni komentarzy XML z trzema ukośnikami. Odniesienia przy użyciu składni standardowych komentarzy (dwa ukośniki) są ignorowane.
 
@@ -283,6 +283,6 @@ Technologia IntelliSense pomaga napisać kod szybciej i z mniejszą liczbą bł�
 - [Rozszerzanie funkcji IntelliSense języka JavaScript](../ide/extending-javascript-intellisense.md)
 - [Uzupełnianie instrukcji dla identyfikatorów](../ide/statement-completion-for-identifiers.md)
 - [Komentarze dokumentacji XML](../ide/xml-documentation-comments-javascript.md)
-- [Informacje o modelu obiektów DHTML](http://go.microsoft.com/fwlink/?LinkID=92344)
+- [Informacje o modelu obiektów DHTML](https://go.microsoft.com/fwlink/?LinkID=92344)
 - [Lista członków](https://msdn.microsoft.com/1b9cc469-9cd4-4d42-9999-1f9479635ff8)
-- [SRC atrybutu &#124; src — Właściwość](http://go.microsoft.com/fwlink/?LinkId=92345)
+- [SRC atrybutu &#124; src — Właściwość](https://go.microsoft.com/fwlink/?LinkId=92345)

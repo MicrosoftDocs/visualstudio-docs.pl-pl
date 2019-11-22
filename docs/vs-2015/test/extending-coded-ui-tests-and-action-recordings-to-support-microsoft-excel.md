@@ -8,19 +8,19 @@ ms.assetid: 6b0f72a4-70ca-4e55-b236-2ea1034fd8a7
 caps.latest.revision: 32
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a48c01203d2e951e917482de3c0d9c2bec29ae01
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4e8e167f42a2f00553f1462db058e1b4e6d81b0f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660572"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302566"
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>Rozszerzanie zakodowanych testów interfejsu użytkownika i nagrywanie akcji obsługujących program Microsoft Excel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Struktura testowania dla kodowanych testów interfejsu użytkownika i nagrań akcji nie obsługuje każdego możliwego interfejsu użytkownika. Może nie obsługiwać określonego interfejsu użytkownika, który ma zostać przetestowany. Na przykład nie można natychmiast utworzyć kodowanego testu interfejsu użytkownika lub rejestrowania akcji dla [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] arkusza kalkulacyjnego. Można jednak utworzyć własne rozszerzenie dla struktury kodowanego testu interfejsu użytkownika, która będzie obsługiwała konkretny interfejs użytkownika, wykorzystując rozszerzalność kodowanego środowiska testowania interfejsu użytkownika. Poniższy temat zawiera przykład sposobu rozszerzającej strukturę programu w celu obsługi tworzenia kodowanych testów interfejsu użytkownika i nagrań akcji dla [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)]. Aby uzyskać więcej informacji na temat obsługiwanych platform, zobacz [obsługiwane konfiguracje i platformy dla kodowanych testów interfejsu użytkownika i nagrań akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md).
 
- **Requirements**
+ **Wymagania**
 
 - Visual Studio Enterprise
 
@@ -39,7 +39,7 @@ Struktura testowania dla kodowanych testów interfejsu użytkownika i nagrań ak
 
 - SampleTestProject
 
-  Pobierz przykład z tego [wpisu w blogu](http://go.microsoft.com/fwlink/?LinkID=185592).
+  Pobierz przykład z tego [wpisu w blogu](https://go.microsoft.com/fwlink/?LinkID=185592).
 
 > [!NOTE]
 > Przykład jest przeznaczony do użycia z programem Microsoft Excel 2010. Przykład może współdziałać z innymi wersjami programu Microsoft Excel, ale nie jest obecnie obsługiwany.

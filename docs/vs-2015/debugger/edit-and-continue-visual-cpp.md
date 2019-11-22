@@ -1,5 +1,5 @@
 ---
-title: Edytuj i Kontynuuj (Visual C++) | Dokumentacja firmy Microsoft
+title: Edytuj i Kontynuuj (wizualizacja C++) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,64 +18,64 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 752454f9a52807766d6eef5b2563a7b70ca0f4dd
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: fef02f08ac635687eaaf071188ba0455c6389d9e
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65697383"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301058"
 ---
 # <a name="edit-and-continue-visual-c"></a>Edytuj i kontynuuj (Visual C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W projektach języka Visual C++ można użyć Edytuj i Kontynuuj. Zobacz [obsługiwane zmiany kodu (C++, Distributed File System)](../debugger/supported-code-changes-cpp.md) informacji o ograniczeniach operacji Edytuj i Kontynuuj.  
+Możesz użyć Edytuj i Kontynuuj w projektach wizualnych C++ . Zobacz [obsługiwane zmiany kodu (C++)](../debugger/supported-code-changes-cpp.md) , aby uzyskać informacje o ograniczeniach Edytuj i Kontynuuj.  
   
- Począwszy od programu Visual Studio 2015 Update 1, teraz można Edytuj i Kontynuuj w aplikacji Windows Store w języku C++ i aplikacji DirectX, ponieważ teraz obsługuje **/zi** przełącznika kompilatora z **/bigobj** przełącznika. Umożliwia także Edytuj i Kontynuuj przy użyciu plików binarnych skompilowanych przy użyciu **/FASTLINK** przełącznika.  
+ Począwszy od programu Visual Studio 2015 Update 1, można teraz używać opcji Edytuj i Kontynuuj w aplikacjach C++ ze sklepu Windows i aplikacji DirectX, ponieważ teraz obsługuje przełącznik kompilatora **/Zi** z przełącznikiem **/bigobj** . Można również użyć opcji Edytuj i Kontynuuj z plikami binarnymi skompilowanymi przy użyciu przełącznika **/Fastlink** .  
   
- Inne ulepszenia Update 1 obejmują okno dialogowe oczekiwania nowe, można anulować, i powiadomienia, gdy plik nie obsługuje funkcji Edytuj i Kontynuuj. Aby uzyskać więcej informacji na temat ulepszenia Update 1, zobacz [usprawnienia w zakresie języka C++, Edytuj i Kontynuuj w Visual Studio 2015 Update 1](http://blogs.msdn.com/b/vcblog/archive/2015/11/30/improvements-for-c-edit-and-continue-in-visual-studio-2015-update-1.aspx).  
+ Inne ulepszenia Update 1 obejmują nowe, anulowane okno dialogowe oczekiwania i powiadomienia, gdy plik nie obsługuje funkcji Edytuj i Kontynuuj. Aby uzyskać więcej informacji na temat ulepszeń Update 1, zobacz [udoskonalenia funkcji C++ Edytuj i Kontynuuj w programie Visual Studio 2015 Update 1](https://devblogs.microsoft.com/cppblog/improvements-for-c-edit-and-continue-in-visual-studio-2015-update-1/).  
   
- [/Zo (Rozszerzanie zoptymalizowane pod kątem debugowanie)](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) opcję kompilatora, która została wprowadzona w Visual Studio 2013 Update 3 dodaje dodatkowe informacje w plikach .pdb (symbol) dla danych binarnych skompilowany bez [/Od (Wyłącz (Debuguj)) ](https://msdn.microsoft.com/library/aafb762y.aspx) opcji.  
+ Opcja kompilatora [/zo (rozszerzanie zoptymalizowanego debugowania)](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) wprowadzona w Visual Studio 2013 Update 3 dodaje dodatkowe informacje do plików. pdb (symbol), które zostały skompilowane bez [/od (Disable (Debug))](https://msdn.microsoft.com/library/aafb762y.aspx) .  
   
- **/ZO** wyłącza Edytuj i Kontynuuj. Zobacz [jak: Debugowanie zoptymalizowanego kodu](../debugger/how-to-debug-optimized-code.md).  
+ **/Zo** wyłącza funkcję Edytuj i Kontynuuj. Zobacz [jak: debugowanie zoptymalizowanego kodu](../debugger/how-to-debug-optimized-code.md).  
   
-## <a name="BKMK_Enable_or_disable_automatic_invocation_of_Edit_and_Continue"></a> Włączanie lub wyłączanie funkcji Edytuj i Kontynuuj  
- Można wyłączyć automatycznego wywołania opcji Edytuj i Kontynuuj, jeśli jest wprowadzanie zmian do kodu, który ma zostać zastosowane podczas bieżącej sesji debugowania. Możesz też ponownie włączyć automatyczne Edytuj i Kontynuuj.  
+## <a name="BKMK_Enable_or_disable_automatic_invocation_of_Edit_and_Continue"></a>Włącz lub wyłącz opcję Edytuj i Kontynuuj  
+ Można wyłączyć automatyczne wywoływanie operacji Edytuj i Kontynuuj, jeśli wprowadzasz zmiany w kodzie, który nie ma być stosowany podczas bieżącej sesji debugowania. Możesz również ponownie włączyć automatyczne edytowanie i kontynuowanie.  
   
 1. Na **narzędzia** menu, wybierz **opcje**.  
   
-2. W **opcje** okno dialogowe, wybierz opcję **debugowanie / ogólne**.  
+2. W oknie dialogowym **Opcje** wybierz pozycję **debugowanie/ogólne**.  
   
-3. W **Edytuj i Kontynuuj** grupy, zaznacz lub wyczyść **Włączanie natywnego Edytuj i Kontynuuj** pole wyboru.  
+3. W grupie **Edytuj i Kontynuuj** zaznacz lub wyczyść pole wyboru **Włącz natywne edytowanie i kontynuowanie** .  
   
-   Zmieniając to ustawienie ma wpływ na wszystkie projekty, którą pracujesz. Nie trzeba ponownie skompiluj aplikację po zmianie tego ustawienia. To ustawienie można zmienić, nawet wtedy, gdy debugujesz. Jeśli kompilujesz aplikację z poziomu wiersza polecenia lub pliku reguł programu make, ale debugowanie w środowisku Visual Studio, nadal można Edytuj i Kontynuuj po ustawieniu **/zi** opcji.  
+   Zmiana tego ustawienia ma wpływ na wszystkie projekty, nad którymi pracujesz. Po zmianie tego ustawienia nie trzeba ponownie kompilować aplikacji. Można zmienić to ustawienie nawet podczas debugowania. W przypadku kompilowania aplikacji z poziomu wiersza polecenia lub pliku reguł programu make, ale w środowisku programu Visual Studio można nadal używać opcji Edytuj i Kontynuuj, jeśli ustawisz opcję **/Zi** .  
   
-## <a name="BKMK_How_to_apply_code_changes_explicitly"></a> Jak jawne stosowanie zmian kodu  
- W programie Visual C++ Edytuj i Kontynuuj można zastosować zmian w kodzie na dwa sposoby. Kod można zastosować zmian niejawnie, wybierając polecenie wykonania, lub jawnie przy użyciu **zastosowanie zmian kodu** polecenia.  
+## <a name="BKMK_How_to_apply_code_changes_explicitly"></a>Jak jawnie zastosować zmiany kodu  
+ W wizualizacji C++Edytuj i Kontynuuj mogą zastosować zmiany kodu na dwa sposoby. Zmiany kodu można zastosować niejawnie, po wybraniu polecenia wykonywania lub jawnie przy użyciu polecenia **Zastosuj zmiany kodu** .  
   
- Gdy jawne stosowanie zmian kodu programu pozostaje w trybie przerwania — nie jest wykonywany.  
+ W przypadku jawnego stosowania zmian kodu program pozostaje w trybie przerwania — żadne wykonanie nie jest wykonywane.  
   
-- Aby zastosować zmiany w kodzie jawnie, na **debugowania** menu, wybierz **zastosowanie zmian kodu**.  
+- Aby jawnie zastosować zmiany kodu, w menu **debugowanie** wybierz **Zastosuj zmiany kodu**.  
   
-## <a name="BKMK_How_to_stop_code_changes"></a> Jak zatrzymywanie zmian kodu  
- Gdy Edytuj i Kontynuuj Trwa stosowanie zmian kodu, można zatrzymać operacji.  
+## <a name="BKMK_How_to_stop_code_changes"></a>Jak zatrzymać zmiany kodu  
+ Podczas gdy Edytuj i Kontynuuj jest w trakcie stosowania zmian kodu, możesz zatrzymać operację.  
   
- Aby zatrzymać, stosowanie zmian kodu:  
+ Aby zatrzymać stosowanie zmian kodu:  
   
-- Na **debugowania** menu, wybierz **Zatrzymaj stosowanie zmian kodu**.  
+- Z menu **Debuguj** wybierz polecenie **Zatrzymaj stosowanie zmian kodu**.  
   
-  Ten element menu jest widoczny tylko wtedy, gdy zmiany kodu są stosowane.  
+  Ten element menu jest widoczny tylko w przypadku stosowania zmian kodu.  
   
-  Jeśli ta opcja jest wybrana, żadne zmiany kodu są zatwierdzone.  
+  W przypadku wybrania tej opcji nie są zatwierdzane żadne zmiany w kodzie.  
   
-## <a name="BKMK_How_to_reset_the_point_of_execution"></a> Jak zresetować punkty wykonywania  
- Niektóre zmiany kodu mogą spowodować punkt wykonywania, aby przejść do nowej lokalizacji, gdy Edytuj i Kontynuuj stosuje te zmiany. Edytuj i Kontynuuj umieszcza punkt wykonania jak to możliwe, ale wyniki mogą być niepoprawne we wszystkich przypadkach.  
+## <a name="BKMK_How_to_reset_the_point_of_execution"></a>Jak zresetować punkt wykonywania  
+ Niektóre zmiany w kodzie mogą spowodować przechodzenie do nowej lokalizacji w momencie, gdy Edycja i kontynuowanie stosuje zmiany. Polecenie Edytuj i Kontynuuj umieszcza punkt wykonania jak dokładnie tak, jak jest to możliwe, ale wyniki mogą nie być poprawne we wszystkich przypadkach.  
   
- W programie Visual C++ okno dialogowe informuje użytkownika, podczas zmiany punktów wykonywania. Należy sprawdzić czy lokalizacja jest poprawna, przed kontynuowaniem debugowania. Jeśli nie jest poprawny, należy użyć **Ustaw następną instrukcję** polecenia. Aby uzyskać więcej informacji, zobacz [Ustaw następną instrukcję do wykonania](https://msdn.microsoft.com/library/y740d9d3.aspx#BKMK_Set_the_next_statement_to_execute).  
+ W wizualizacji C++okno dialogowe informuje o wprowadzeniu zmian w punkcie wykonania. Przed kontynuowaniem debugowania należy sprawdzić, czy lokalizacja jest poprawna. Jeśli nie jest poprawna, użyj polecenia **Set Next instrukcji** . Aby uzyskać więcej informacji, zobacz [Ustawianie następnej instrukcji do wykonania](https://msdn.microsoft.com/library/y740d9d3.aspx#BKMK_Set_the_next_statement_to_execute).  
   
-## <a name="BKMK_How_to_work_with_stale_code"></a> Jak pracować z kodem nieodświeżonym  
- W niektórych przypadkach Edytuj i Kontynuuj nie można od razu zastosować zmiany kodu do pliku wykonywalnego, ale można zastosować zmian w kodzie później, jeśli będziesz kontynuować debugowanie. Dzieje się tak w przypadku edycji funkcji wywołującej bieżącą funkcję, lub jeśli dodasz więcej niż 64 bajtów zmiennych nowych funkcji w stosie wywołań  
+## <a name="BKMK_How_to_work_with_stale_code"></a>Jak korzystać z nieodświeżonego kodu  
+ W niektórych przypadkach polecenie Edytuj i Kontynuuj nie może natychmiast zastosować zmian kodu do pliku wykonywalnego, ale może być możliwe zastosowanie zmian kodu później w przypadku kontynuowania debugowania. Dzieje się tak, Jeśli edytujesz funkcję, która wywołuje bieżącą funkcję, lub jeśli dodasz więcej niż 64 bajtów nowych zmiennych do funkcji na stosie wywołań  
   
- W takich przypadkach Debuger kontynuuje wykonywanie oryginalny kod, dopóki nie można zastosować zmiany. Nieodświeżony kod jest wyświetlany jako okno pliku tymczasowego źródła, w oknie oddzielne źródło, z tytułem takich jak `enc25.tmp`. Źródło edytowanych w dalszym ciągu są wyświetlane w oknie oryginalnego źródła. Jeśli spróbujesz edytować nieodświeżonego kodu, zostanie wyświetlony komunikat ostrzegawczy.  
+ W takich przypadkach Debuger kontynuuje wykonywanie oryginalnego kodu do momentu zastosowania zmian. Nieodświeżony kod pojawia się jako tymczasowe okno pliku źródłowego w osobnym oknie źródłowym z tytułem, takim jak `enc25.tmp`. Edytowane Źródło nadal pojawia się w oryginalnym oknie źródłowym. Jeśli spróbujesz edytować nieodświeżony kod, zostanie wyświetlony komunikat ostrzegawczy.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Obsługiwane zmiany kodu (C++)](../debugger/supported-code-changes-cpp.md)

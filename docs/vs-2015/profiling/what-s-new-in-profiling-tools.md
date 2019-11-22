@@ -1,5 +1,5 @@
 ---
-title: Co&#39;nowego w narzędziach profilowania | Dokumentacja firmy Microsoft
+title: Co&#39;nowego w narzędzia profilowania | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,36 +12,36 @@ caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 46eb6585bffb96397d73a03f142bd7b6b4779f15
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: f9611170c7b23a9db72c27b9c3f69a39e21a4bdc
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261633"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300623"
 ---
-# <a name="what39s-new-in-profiling-tools"></a>Co&#39;nowego w narzędziach profilowania
+# <a name="what39s-new-in-profiling-tools"></a>Co&#39;nowego w narzędzia profilowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Aby uzyskać informacji o tym, co nowego w programie Visual Studio 2015 Update 1, debugowanie i Diagnostyka, zobacz [Visual Studio 2015 Update 1 informacje o wersji](https://www.visualstudio.com/news/vs2015-update1-vs#debug).  
   
- Aby uzyskać informacje o tym, co nowego w programie Visual Studio 2015, debugowanie i Diagnostyka, zobacz [Visual Studio 2015 informacje o wersji](https://www.visualstudio.com/news/vs2015-vs#Debug).  
+ Aby uzyskać informacje na temat wszystkiego nowego w programie Visual Studio 2015 debugowanie i diagnostyka, zobacz [Informacje o wersji programu Visual studio 2015](https://www.visualstudio.com/news/vs2015-vs#Debug).  
   
-## <a name="whats-new-in-update-1"></a>Co nowego w aktualizacji 1  
- Począwszy od programu Visual Studio 2015 Update 1, możesz zobaczyć podział użycia procesora CPU dla poszczególnych funkcji bez opuszczania debugera. Aby uzyskać więcej informacji, zobacz [profilowanie Procesora w debugerze programu Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/10/29/profile-your-cpu-in-the-debugger-in-visual-studio-2015.aspx).  
+## <a name="whats-new-in-update-1"></a>Co nowego w aktualizacji Update 1  
+ Począwszy od programu Visual Studio 2015 Update 1, można zobaczyć podział poszczególnych funkcji użycia procesora CPU bez opuszczania debugera. Aby uzyskać więcej informacji, zobacz [profilowanie procesora CPU w debugerze w programie Visual Studio 2015](https://devblogs.microsoft.com/devops/profile-your-cpu-in-the-debugger-in-visual-studio-2015/).  
   
- **Narzędzia diagnostyczne** okna dodano opcje wyszukiwania i filtrowania **zdarzenia** kartę. Aby uzyskać więcej informacji, zobacz [zintegrowane z debugerem profilowania](/visualstudio/profiling/running-profiling-tools-with-or-without-the-debugger) i [wyszukiwanie i filtrowanie na karcie zdarzenia w oknie narzędzia diagnostyczne](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx).  
+ W oknie **Narzędzia diagnostyczne** dodano opcje wyszukiwania i filtrowania do karty **zdarzenia** . Aby uzyskać więcej informacji, zobacz [profilowanie zintegrowane z debugerem](/visualstudio/profiling/running-profiling-tools-with-or-without-the-debugger) i [Wyszukiwanie i filtrowanie zdarzeń na karcie zdarzenia okna narzędzia diagnostyczne](https://devblogs.microsoft.com/devops/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/).  
   
-## <a name="diagnostics-with-debugging-ui-and-hotkey-changes"></a>Diagnostyka debugowanie zmian interfejsu użytkownika i klawiszy skrótu  
- Możesz teraz uruchomić narzędzia diagnostyczne podczas debugowania przy użyciu nowego **narzędzia diagnostyczne** okna. Okno zostanie wyświetlone automatycznie, ale można również otworzyć go za pomocą nowego elementu menu **Pokaż narzędzia diagnostyczne** (skrót klawiaturowy **Ctrl + Alt + F2**).  
+## <a name="diagnostics-with-debugging-ui-and-hotkey-changes"></a>Diagnostyka z debugowaniem — zmiany interfejsu użytkownika i klawisza skrótu  
+ Teraz można uruchamiać narzędzia diagnostyczne podczas debugowania przy użyciu nowego okna **Narzędzia diagnostyczne** . Okno jest wyświetlane automatycznie, ale można je również otworzyć przy użyciu nowego elementu menu **pokaż narzędzia diagnostyczne** (skrót klawiaturowy **Ctrl + Alt + F2**).  
   
-## <a name="diagnostics-without-debugging-ui-and-hotkey-changes"></a>Diagnostyczne bez debugowania interfejsu użytkownika i klawisz skrótu zmian  
- Aby uruchomić diagnostykę bez debugowania, przejdź do **debugowanie / Rozpocznij diagnostykę narzędzi bez debugowania** lub **debugowanie / Profiler / Profiler wydajności...** . W programie Visual Studio 2013 to został znaleziony w **analizy / wydajność i Diagnostyka** lub **debugowanie / wydajność i Diagnostyka**.  
+## <a name="diagnostics-without-debugging-ui-and-hotkey-changes"></a>Diagnostyka bez debugowania zmian interfejsu użytkownika i klawisza skrótu  
+ Aby uruchomić diagnostykę bez debugowania, przejdź do pozycji **Debuguj/Uruchom narzędzia diagnostyczne bez debugowania** lub **debugowania/profilera/narzędzia do oceny wydajności..** .. W Visual Studio 2013 został on odnaleziony w temacie **Analiza/wydajność i Diagnostyka** albo **debugowanie/wydajność i Diagnostyka**.  
   
- **Eksplorator wydajności** teraz znajdują się w **debugowanie / Profiler / Eksplorator wydajności**. W programie Visual Studio 2013 został znaleziony w **analizy / Profiler**.  
+ **Eksplorator wydajności** można teraz znaleźć w **Debuguj/Profiler/Eksplorator wydajności**. W Visual Studio 2013 został znaleziony w **Analizuj/Profiler**.  
   
- Skrót klawiaturowy **debugowanie / Stop kolekcji** polecenia (którego stosuje się podczas uruchamiania **diagnostyki narzędzia bez debugowania**) została zmieniona z **CTRL + ALT + F2** w programie Visual Studio 2013 do **CTRL + SHIFT + F2** w programie Visual Studio 2015.  
+ Skrót klawiaturowy dla polecenia **Debuguj/Zatrzymaj zbieranie** (który ma zastosowanie w przypadku uruchamiania **narzędzi diagnostycznych bez debugowania**) został zmieniony z **kombinacji klawiszy Ctrl + Alt + F2** w Visual Studio 2013 do **kombinacji klawiszy CTRL + SHIFT + F2** w programie Visual Studio 2015.  
   
- Narzędzia do analizy aplikacji Windows Phone są dostępne z **debugowanie / Profiler / Windows Phone narzędzia do analizy aplikacji** (lub **klawisze ALT + F1**).  
+ Narzędzia do analizy aplikacji Windows Phone są dostępne w **narzędziach do analizy aplikacji debugowania/profilera/Windows Phone** (lub **ALT + F1**).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Narzędzia profilowania](../profiling/profiling-tools.md)

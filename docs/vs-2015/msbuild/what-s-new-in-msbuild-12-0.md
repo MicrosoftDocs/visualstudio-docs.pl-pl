@@ -1,5 +1,5 @@
 ---
-title: Co&#39;s Nowość w programie MSBuild 12.0 | Dokumentacja firmy Microsoft
+title: Co&#39;nowego w programie MSBuild 12,0 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -9,37 +9,37 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9746b156d2ec959f2ffb5bbff41b3891516d130f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9d088844a3d8c1137b762b541b0393f939cdc194
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68193612"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301289"
 ---
-# <a name="what39s-new-in-msbuild-120"></a>Co&#39;s Nowość w programie MSBuild 12.0
+# <a name="what39s-new-in-msbuild-120"></a>Co&#39;nowego w programie MSBuild 12,0
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Program MSBuild jest teraz zainstalowany jako część pakietu Visual Studio, a nie jako część programu .NET Framework. Bieżący numer wersji MSBuild to 12.0. Jeśli chcesz zainstalować program MSBuild oddzielnie, Pobierz pakiet instalacyjny z [Pobierz MSBuild](http://go.microsoft.com/fwlink/?LinkId=309745).  
+Program MSBuild jest teraz instalowany jako część programu Visual Studio, a nie jako część .NET Framework. Bieżący numer wersji programu MSBuild to 12,0. Jeśli chcesz zainstalować program MSBuild oddzielnie, Pobierz pakiet instalacyjny z programu [MSBuild Download](https://go.microsoft.com/fwlink/?LinkId=309745).  
   
 ## <a name="changed-path"></a>Zmieniona ścieżka  
- Program MSBuild jest teraz zainstalowany bezpośrednio pod *% ProgramFiles %* — na przykład w C:\Program Files\MSBuild\\.  
+ Program MSBuild jest teraz instalowany bezpośrednio w folderze *% ProgramFiles%* — na przykład w folderze C:\Program Files\MSBuild\\.  
   
-## <a name="changed-properties"></a>Zmienionymi właściwościami  
- Następujące właściwości programu MSBuild zostały zmienione w wyniku nowy numer wersji:  
+## <a name="changed-properties"></a>Zmienione właściwości  
+ Następujące właściwości programu MSBuild są zmieniane w wyniku nowego numeru wersji:  
   
-- `MSBuildToolsVersion` dla tej wersji narzędzi to 12.0.  
+- `MSBuildToolsVersion` tej wersji narzędzi to 12,0.  
   
-- `MSBuildToolsPath` jest teraz %ProgramFiles%\MSBuild\12.0\bin na 32-bitowych systemach operacyjnych lub %ProgramFiles%\MSBuild\12.0\bin\amd64 na 64-bitowych systemach operacyjnych.  
+- `MSBuildToolsPath` jest teraz%ProgramFiles%\MSBuild\12.0\bin w 32-bitowych systemach operacyjnych lub%ProgramFiles%\MSBuild\12.0\bin\amd64 w systemach operacyjnych 64-bitowych.  
   
-- `ToolsVersion` wartości można znaleźć w HKLM\SOFTWARE\Microsoft\MSBuild\ToolsVersions\12.0 dla 32-bitowych systemach operacyjnych lub HKLM\SOFTWARE\Wow6432Node\Microsoft\MSBuild\ToolsVersions\12.0 dla 64-bitowych systemach operacyjnych.  
+- wartości `ToolsVersion` można znaleźć w HKLM\SOFTWARE\Microsoft\MSBuild\ToolsVersions\12.0 dla 32-bitowych systemów operacyjnych lub HKLM\SOFTWARE\Wow6432Node\Microsoft\MSBuild\ToolsVersions\12.0 dla systemów operacyjnych 64-bitowych.  
   
-- `SDK35ToolsPath` i `SDK40ToolsPath` właściwości wskaż .NET Framework SDK, który jest spakowany w tej wersji programu Visual Studio (na przykład 8.1a narzędzi 4.X).  
+- Właściwości `SDK35ToolsPath` i `SDK40ToolsPath` wskazują zestaw .NET Framework SDK, który jest opakowany z tą wersją programu Visual Studio (na przykład 8.1 A dla narzędzi 4. X).  
   
 ## <a name="new-properties"></a>Nowe właściwości  
   
-- `MSBuildFrameworkToolsPath` jest nową właściwość, która ma wartość %windir%\Microsoft.NET\Framework\v4.0.30319 na 32-bitowych systemach operacyjnych lub %windir%\Microsoft.NET\Framework64\v4.0.30319 na 64-bitowych systemach operacyjnych. Jest to zastępuje `MSBuildToolsPath` można wskaż opcję Narzędzia programu .NET Framework i programy narzędziowe.  
+- `MSBuildFrameworkToolsPath` to nowa właściwość, która ma wartość%windir%\Microsoft.NET\Framework\v4.0.30319 w 32-bitowych systemach operacyjnych lub%windir%\Microsoft.NET\Framework64\v4.0.30319 w systemach operacyjnych 64-bitowych. Jest to zamiennik dla `MSBuildToolsPath`, którego można użyć do wskazywania .NET Framework narzędzi i narzędzi.  
   
-- `MSBuildToolsPath` i `MSBuildFrameworkToolsPath` mają 32-bitowe odpowiedniki —`MSBuildToolsPath32` i `MSBuildFrameworkToolsPath32`— zawsze wskazujące na lokalizację 32-bitowych, niezależnie od tego, czy jest używana 32-bitową lub 64-bitowy MSBuild.
+- `MSBuildToolsPath` i `MSBuildFrameworkToolsPath` posiadają 32-bitowe odpowiedniki —`MSBuildToolsPath32` i `MSBuildFrameworkToolsPath32`— które zawsze wskazują na lokalizację 32-bitową, niezależnie od tego, czy jest używany program MSBuild 32-bit czy 64-bit.
 
 ## <a name="see-also"></a>Zobacz też
 [MSBuild](msbuild.md)

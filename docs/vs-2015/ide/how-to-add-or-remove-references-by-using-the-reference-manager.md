@@ -23,12 +23,12 @@ caps.latest.revision: 48
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 04b6573b6cd04b5a061a40025a9872d9972e35cb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1ed9a341e1b0f7247175e62aceafc6051f83e8f9
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645482"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300154"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Porady: dodawanie i usuwanie odwołań za pomocą Menedżera odwołań
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,11 +54,11 @@ Za pomocą okna dialogowego **Menedżer odwołań** można dodawać odwołania d
 - Przeglądaj z podgrupą Ostatnie.
 
 ## <a name="assemblies-tab"></a>Karta Zestawy
- Na karcie **zestawy** są wyświetlane wszystkie zestawy .NET Framework, które są dostępne do odwołania. Karta **zestawy** nie wyświetla żadnych zestawów z globalnej pamięci podręcznej zestawów (GAC), ponieważ zestawy w pamięci GAC są częścią środowiska wykonawczego. W przypadku wdrażania lub kopiowania aplikacji zawierającej odwołanie do zestawu, który jest zarejestrowany w GAC, zestaw nie zostanie wdrożony ani skopiowany z aplikacją, bez względu na wartość ustawienia Kopiuj lokalnie. Aby uzyskać więcej informacji, zobacz [odwołania do projektu](http://go.microsoft.com/fwlink/?LinkId=238512).
+ Na karcie **zestawy** są wyświetlane wszystkie zestawy .NET Framework, które są dostępne do odwołania. Karta **zestawy** nie wyświetla żadnych zestawów z globalnej pamięci podręcznej zestawów (GAC), ponieważ zestawy w pamięci GAC są częścią środowiska wykonawczego. W przypadku wdrażania lub kopiowania aplikacji zawierającej odwołanie do zestawu, który jest zarejestrowany w GAC, zestaw nie zostanie wdrożony ani skopiowany z aplikacją, bez względu na wartość ustawienia Kopiuj lokalnie. Aby uzyskać więcej informacji, zobacz [odwołania do projektu](https://go.microsoft.com/fwlink/?LinkId=238512).
 
  Podczas ręcznego dodawania odwołania do dowolnych przestrzeni nazw EnvDTE (EnvDTE, EnvDTE80, EnvDTE90, EnvDTE90a lub EnvDTE100), ustaw właściwość Osadź typy współdziałania na wartość False w oknie dialogowym Właściwości. Ustawienie tej właściwości na True może spowodować problemy z kompilacją ze względu na pewne właściwości EnvDTE, które nie mogą być osadzone.
 
- Wszystkie projekty pulpitu zawierają niejawne odwołanie do mscorlib. projekty [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] zawierają niejawne odwołanie do elementu Microsoft. VisualBasic. W [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] wszystkie projekty zawierają niejawne odwołanie do System. Core, nawet jeśli zostanie usunięte z listy odwołań.
+ Wszystkie projekty pulpitu zawierają niejawne odwołanie do mscorlib. projekty [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] zawierają niejawne odwołanie do elementu Microsoft. VisualBasic. W [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]wszystkie projekty zawierają niejawne odwołanie do System. Core, nawet jeśli zostanie usunięte z listy odwołań.
 
  Jeśli typ projektu nie obsługuje zestawów, karta nie pojawi się w oknie dialogowym **Menadżer odwołań** .
 
@@ -84,7 +84,7 @@ Za pomocą okna dialogowego **Menedżer odwołań** można dodawać odwołania d
        And older versions of the [Target Framework Identifier]
        ```
 
-        Na przykład jeśli projekt jest przeznaczony dla .NET Framework 4 na komputerze 32-bitowym, rozszerzenia będą wyliczać zestawy, które są zarejestrowane w obszarze \Microsoft \\. NETFramework\v4.0\AssemblyFoldersEx \\, \Microsoft \\. NETFramework\v3.5\ AssemblyFoldersEx \\, \Microsoft \\. NETFramework\v3.0\AssemblyFoldersEx \\ i \Microsoft \\. NETFramework\v2.0\AssemblyFoldersEx \\.
+        Na przykład, jeśli projekt jest przeznaczony dla .NET Framework 4 na komputerze 32-bitowym, rozszerzenia będą wyliczać zestawy, które są zarejestrowane w witrynie \Microsoft\\. NETFramework\v4.0\AssemblyFoldersEx\\, \Microsoft\\. NETFramework\v3.5\AssemblyFoldersEx\\, \Microsoft\\. NETFramework\v3.0\AssemblyFoldersEx\\i \Microsoft\\. NETFramework\v2.0\AssemblyFoldersEx\\.
 
    Niektóre składniki na liście mogą nie być wyświetlane, w zależności od wersji [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] projektu. Może się to zdarzyć w następujących warunkach:
 
@@ -109,25 +109,25 @@ Za pomocą okna dialogowego **Menedżer odwołań** można dodawać odwołania d
 
   - Inne katalogi projektu w tym samym rozwiązaniu. (Zestawy te można znaleźć za pomocą karty **projekty** ).
 
-    \- lub-
+    \- lub —
 
 - Ustaw klucz rejestru określający lokalizację zestawów do wyświetlenia:
 
    W przypadku 32-bitowego systemu operacyjnego należy dodać jeden z następujących kluczy rejestru.
 
-  - [HKEY_CURRENT_USER\SOFTWARE\Microsoft \\. NETFramework \\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies] @ = "*AssemblyLocation*"
+  - [HKEY_CURRENT_USER\SOFTWARE\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"
 
-  - [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft \\. NETFramework \\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies] @ = "*AssemblyLocation*"
+  - [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"
 
     W przypadku 64-bitowego systemu operacyjnego należy dodać jeden z następujących kluczy rejestru w gałęzi rejestru 32-bitowego.
 
-  - [HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft \\. NETFramework \\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies] @ = "*AssemblyLocation*"
+  - [HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"
 
-  - [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft \\. NETFramework \\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies] @ = "*AssemblyLocation*"
+  - [HKEY_LOCAL_MACHINE \SOFTWARE\Wow6432Node\Microsoft\\. NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies] @ = "*AssemblyLocation*"
 
     *VersionMinimum* to najniższa wersja .NET Framework, która ma zastosowanie. Jeśli *VersionMinimum* to v 3.0, foldery określone w AssemblyFoldersEx mają zastosowanie do projektów, które są przeznaczone dla .NET Framework 3,0 i nowszych.
 
-    *AssemblyLocation* jest katalogiem zestawów, które mają być wyświetlane w oknie dialogowym **Dodaj odwołanie** , na przykład C:\MyAssemblies \\.
+    *AssemblyLocation* jest katalogiem zestawów, które mają być wyświetlane w oknie dialogowym **Dodaj odwołanie** , na przykład C:\MyAssemblies\\.
 
     Utworzenie klucza rejestru w węźle HKEY_LOCAL_MACHINE umożliwia wszystkim użytkownikom wyświetlanie zestawów w określonej lokalizacji w oknie dialogowym **Dodawanie odwołania** . Tworzenie klucza rejestru w węźle HKEY_CURRENT_USER ma wpływ tylko na ustawienie bieżącego użytkownika.
 
@@ -154,7 +154,7 @@ Za pomocą okna dialogowego **Menedżer odwołań** można dodawać odwołania d
 
  Można wygenerować plik WinMD w Visual Studio na dwa sposoby:
 
-- **[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] projekty zarządzane przez aplikacje**: projekty aplikacji [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] mogą wyprowadzać pliki binarne winmd przez &#124; ustawienie właściwości projektu Type = plik WinMD. Nazwa pliku WinMD musi być nadzbiorem przestrzeni nazw wszystkich przestrzeni nazw, które w nim istnieją. Na przykład, jeżeli projekt składa się z przestrzeni nazw A.B i A.B.C, możliwe nazwy dla wygenerowanego WinMD to A.winmd i A.B.winmd. Jeśli użytkownik wprowadzi nazwę zestawu właściwości &#124; projektu lub wartość przestrzeni nazw właściwości &#124; projektu, która jest rozłączna z zestawu przestrzeni nazw w projekcie lub nie ma przestrzeni nazw nadzbiórka w projekcie, generowane jest ostrzeżenie kompilacji: "a. winmd" nie jest prawidłowa nazwa pliku winmd dla tego zestawu. Wszystkie typy w pliku metadanych systemu Windows musi istnieć w podrzędnej przestrzeni nazw nazwy pliku. Typy, które nie istnieją w podrzędnej przestrzeni nazw nazwy pliku, nie mogą być zlokalizowane w czasie wykonywania. W tym zestawie najmniejszą wspólną przestrzenią nazw jest „CSWSClassLibrary1”. Visual Basic pulpitu lub projekt wizualny C# może zużywać tylko winmd, które są generowane przy użyciu zestawów SDK [!INCLUDE[win8](../includes/win8-md.md)], które są znane jako WinMD w pierwszej kolejności, i nie mogą generować metadanych WinMD.
+- **[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] projekty zarządzane przez aplikacje**: projekty aplikacji [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] mogą wyprowadzać pliki binarne winmd przez &#124; ustawienie właściwości projektu Type = plik WinMD. Nazwa pliku WinMD musi być nadzbiorem przestrzeni nazw wszystkich przestrzeni nazw, które w nim istnieją. Na przykład, jeżeli projekt składa się z przestrzeni nazw A.B i A.B.C, możliwe nazwy dla wygenerowanego WinMD to A.winmd i A.B.winmd. Jeśli użytkownik wprowadzi nazwę zestawu właściwości &#124; projektu lub wartość przestrzeni nazw właściwości &#124; projektu, która została rozłączona od zestawu przestrzeni nazw w projekcie lub nie istnieje przestrzeń nazw nadzbiórka w projekcie, generowane jest ostrzeżenie kompilacji: "a. winmd" nie jest prawidłową nazwą pliku winmd dla tego zestawu. Wszystkie typy w pliku metadanych systemu Windows musi istnieć w podrzędnej przestrzeni nazw nazwy pliku. Typy, które nie istnieją w podrzędnej przestrzeni nazw nazwy pliku, nie mogą być zlokalizowane w czasie wykonywania. W tym zestawie najmniejszą wspólną przestrzenią nazw jest „CSWSClassLibrary1”. Visual Basic pulpitu lub projekt wizualny C# może zużywać tylko winmd, które są generowane przy użyciu zestawów SDK [!INCLUDE[win8](../includes/win8-md.md)], które są znane jako WinMD w pierwszej kolejności, i nie mogą generować metadanych WinMD.
 
 - **[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] natywnych projektów aplikacji**: natywny plik WinMD składa się tylko z metadanych. Jego realizacja istnieje w oddzielnym pliku DLL. Jeden może generować natywne dane binarne przez wybranie szablonu projektu składnika środowisko wykonawcze systemu Windows w oknie dialogowym **Nowy projekt** lub przez rozpoczęcie od pustego projektu i zmodyfikowanie właściwości projektu w celu wygenerowania pliku winmd. Jeżeli projekt zawiera rozłączne przestrzenie nazw, błąd kompilacji poinformuje użytkownika, że należy połączyć ich przestrzenie nazw lub uruchomić narzędzie MSMerge.
 
@@ -209,7 +209,7 @@ Za pomocą okna dialogowego **Menedżer odwołań** można dodawać odwołania d
     > [!NOTE]
     > Jeśli dodasz właściwość, kompilacja może być wolniejsza.
 
-## <a name="recent"></a>Ostatnie
+## <a name="recent"></a>Najnowsze
  Każda z kart Zestawy, COM, Windows i Przeglądaj obsługuje kartę Najnowsze, która wylicza listę składników ostatnio dodanych do projektów.
 
 ## <a name="search"></a>Wyszukaj

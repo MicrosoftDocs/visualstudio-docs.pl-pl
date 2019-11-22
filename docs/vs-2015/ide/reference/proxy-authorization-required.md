@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7456e60b42b18ad706b951ee58ca5c33f05cabc1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 848817691d7fae32f2240e3d6cac4451c4ce58c4
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665715"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297817"
 ---
 # <a name="proxy-authorization-required"></a>Wymagana autoryzacja serwera proxy
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -23,9 +23,9 @@ ms.locfileid: "72665715"
 
 Aby naprawić ten błąd, spróbuj wykonać co najmniej jedną z następujących czynności:
 
-- Uruchom ponownie program Visual Studio. Powinno zostać wyświetlone okno dialogowe uwierzytelnianie serwera proxy. Wprowadź swoje poświadczenia w oknie dialogowym.
+- Uruchom ponownie program Visual Studio. Powinna zostać wyświetlona okno dialogowe uwierzytelniania serwera proxy. Wprowadź swoje poświadczenia w oknie dialogowym.
 
-- Jeśli powyższy krok nie rozwiąże problemu, może to być spowodowane faktem, że serwer proxy nie monituje o podanie poświadczeń dla adresów http://go.microsoft.com, ale dla adresów *. visualStudio.com. W przypadku tych serwerów należy dodać następujące adresy URL do listy dozwolonych, aby odblokować wszystkie scenariusze logowania w programie Visual Studio:
+- Jeśli powyższy krok nie rozwiąże problemu, może to być spowodowane faktem, że serwer proxy nie monituje o podanie poświadczeń dla adresów https://go.microsoft.com, ale dla adresów *. visualStudio.com. W przypadku tych serwerów należy dodać następujące adresy URL do listy dozwolonych, aby odblokować wszystkie scenariusze logowania w programie Visual Studio:
 
   - *.windows.net
 
@@ -37,7 +37,7 @@ Aby naprawić ten błąd, spróbuj wykonać co najmniej jedną z następujących
 
   - *.live.com
 
-- Adres http://go.microsoft.com można usunąć z listy dozwolonych, tak aby w oknie dialogowym uwierzytelniania serwera proxy pojawia się zarówno adres http://go.microsoft.com, jak i punkty końcowe serwera po ponownym uruchomieniu programu Visual Studio.
+- Adres https://go.microsoft.com można usunąć z listy dozwolonych, tak aby w oknie dialogowym uwierzytelniania serwera proxy pojawia się zarówno adres https://go.microsoft.com, jak i punkty końcowe serwera po ponownym uruchomieniu programu Visual Studio.
 
 - Jeśli chcesz użyć domyślnych poświadczeń z serwerem proxy, wykonaj następujące czynności:
 
@@ -53,4 +53,4 @@ Aby naprawić ten błąd, spróbuj wykonać co najmniej jedną z następujących
 
       Wstaw poprawny adres serwera proxy dla sieci w `proxyaddress="<http://<yourproxy:port#>`.
 
-- Postępuj zgodnie z instrukcjami w [tym wpisie w blogu](http://blogs.msdn.com/b/rido/archive/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy.aspx) , aby dodać kod, który umożliwia korzystanie z serwera proxy.
+- Postępuj zgodnie z instrukcjami w [tym wpisie w blogu](https://blogs.msdn.microsoft.com/rido/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy/) , aby dodać kod, który umożliwia korzystanie z serwera proxy.

@@ -8,12 +8,12 @@ ms.assetid: 5ef1188f-89dc-413d-801d-0efdaf9b0427
 caps.latest.revision: 24
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 920dea4e81ca2ce0c562bb6d77582fd5e3753663
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 331dabfe8e219383fdc04187482b17b9048886a9
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660582"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302576"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Włącz testowanie kodowanego interfejsu użytkownika dla Twoich kontrolek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ Formant może być łatwiej przetestowany w przypadku zaimplementowania obsługi
 
 3. Zaimplementuj inny obiekt ułatwień dostępu dla kontrolki podrzędnej i Przesłoń Właściwość <xref:System.Windows.Forms.Control.AccessibilityObject%2A> kontrolki podrzędnej w celu zwrócenia tego obiektu ułatwień dostępu.
 
-4. Zastąp <xref:System.Windows.Forms.AccessibleObject.Bounds%2A>, <xref:System.Windows.Forms.AccessibleObject.Name%2A>, <xref:System.Windows.Forms.AccessibleObject.Parent%2A>, <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.Navigate%2A> i <xref:System.Windows.Forms.AccessibleObject.Select%2A> właściwości oraz metody dla obiektu ułatwienia dostępu formantu podrzędnego.
+4. Zastąp <xref:System.Windows.Forms.AccessibleObject.Bounds%2A>, <xref:System.Windows.Forms.AccessibleObject.Name%2A>, <xref:System.Windows.Forms.AccessibleObject.Parent%2A>, <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.Navigate%2A>i <xref:System.Windows.Forms.AccessibleObject.Select%2A> właściwości oraz metody dla obiektu ułatwienia dostępu formantu podrzędnego.
 
 > [!NOTE]
 > Ten temat rozpoczyna się od przykładu dostępności w <xref:System.Windows.Forms.AccessibleObject> w tej procedurze, a następnie kompiluje go w ramach pozostałych procedur. Jeśli chcesz utworzyć działającą wersję przykładu dostępności, Utwórz aplikację konsolową, a następnie zastąp kod w Program.cs z przykładowym kodem. Należy dodać odwołania do funkcji ułatwień dostępu, system. Drawing i system. Windows. Forms. Aby wyeliminować ostrzeżenie kompilacji, należy zmienić **typy międzyoperacyjności osadzania** dla ułatwienia dostępu na **wartość false** . Możesz zmienić typ danych wyjściowych projektu na z **aplikacji konsolowej** na **aplikację systemu Windows** , aby okno konsoli nie było wyświetlane podczas uruchamiania aplikacji.
@@ -536,7 +536,7 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
 ## <a name="external-resources"></a>Zasoby zewnętrzne
 
 ### <a name="guidance"></a>Wskazówki
- [Testowanie w celu ciągłego dostarczania za pomocą programu Visual Studio 2012 — Rozdział 2: testowanie jednostkowe: testowanie wewnątrz](http://go.microsoft.com/fwlink/?LinkID=255188)
+ [Testowanie w celu ciągłego dostarczania za pomocą programu Visual Studio 2012 — Rozdział 2: testowanie jednostkowe: testowanie wewnątrz](https://go.microsoft.com/fwlink/?LinkID=255188)
 
 ## <a name="see-also"></a>Zobacz także
 

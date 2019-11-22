@@ -1,5 +1,5 @@
 ---
-title: Okno dialogowe Zaawansowane ustawienia (Concurrency Visualizer) | Dokumentacja firmy Microsoft
+title: Okno dialogowe Ustawienia zaawansowane (Concurrency Visualizer) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -11,80 +11,80 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8710ed0a35b483601a166c4644112b1ba7e4feaf
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 8e1dbe50f3161ca80b4eabe63cbf9264210e9658
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65705763"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300313"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Okno dialogowe Zaawansowane ustawienia (Concurrency Visualizer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Za pomocą **Zaawansowane ustawienia** okno dialogowe w Wizualizatorze współbieżności można kontrolować, jak zbierane są dane śledzenia.  Okno dialogowe zawiera karty dla symboli, tylko mój kod, buforowanie, filtrowania, CLR zdarzenia, znaczniki, dostawców i plików.  
+Korzystając z okna dialogowego **Ustawienia zaawansowane** w wizualizatorze współbieżności, można kontrolować sposób zbierania śladów.  Okno dialogowe zawiera karty symboli, Tylko mój kod, buforowanie, filtrowanie, zdarzenia CLR, znaczniki, dostawcy i pliki.  
   
 ## <a name="symbols"></a>Symbole  
- Narzędzie Concurrency Visualizer używa tych samych ustawień symboli jako debugera programu Visual Studio. Wizualizator współbieżności używa ustawienia do rozpoznawania stosy wywołań, które są skojarzone z danymi wydajności.  Podczas przetwarzania śladów, Concurrency Visualizer uzyskuje dostęp do serwerów symboli, które są określone na stronie ustawień.  W przypadku tych danych jest dostępny za pośrednictwem sieci, śledzenia przetwarzania działa wolniej.  Aby zmniejszyć ilość czasu, które są wymagane do rozwiązania symboli, można buforować symbole lokalnie. Jeśli pobrano symbole, Visual Studio załaduje je z lokalnej pamięci podręcznej.  
+ Wizualizator współbieżności używa tych samych ustawień symboli co debuger programu Visual Studio. Wizualizator współbieżności używa ustawień do rozwiązywania stosów wywołań skojarzonych z danymi wydajności.  Podczas przetwarzania śladów, Wizualizator współbieżności uzyskuje dostęp do serwerów symboli, które są określone na stronie Ustawienia.  Gdy dostęp do tych danych odbywa się za pośrednictwem sieci, przetwarzanie śledzenia spowalnia się.  Aby skrócić czas wymagany do rozpoznawania symboli, można lokalnie buforować symbole. Jeśli symbole zostały pobrane, program Visual Studio załaduje je z lokalnej pamięci podręcznej.  
   
 ## <a name="just-my-code"></a>Tylko mój kod  
- Domyślnie tylko mój kod jest zbiór plików .exe i .dll, które są skojarzone z bieżącego rozwiązania w programie Visual Studio. Narzędzie Concurrency Visualizer ocenia to zbiór plików, gdy używasz funkcji tylko mój kod do filtrowania stosy wywołań. Na karcie tylko mój kod możesz dodać katalogi, które zawierają pliki .exe i .dll w lokalizacjach, które narzędzie Concurrency Visualizer używa tylko mój kod.  
+ Domyślnie Tylko mój kod jest zestawem plików exe i dll, które są skojarzone z bieżącym rozwiązaniem w programie Visual Studio. Wizualizator współbieżności szacuje ten zestaw plików przy użyciu funkcji Tylko mój kod do filtrowania stosów wywołań. Na karcie Tylko mój kod można dodać katalogi zawierające pliki. exe i. dll do lokalizacji, które są używane przez Wizualizator współbieżności dla Tylko mój kod.  
   
- Ścieżki plików .exe i .dll są przechowywane w pliku śledzenia podczas zbierania śladu.  Zmiana tego ustawienia nie wpływa na wszystkie wcześniej zebrane ślady.  
+ Ścieżki plików exe i dll są przechowywane w pliku śledzenia podczas zbierania śladu.  Zmiana tego ustawienia nie dotyczy żadnych wcześniej zebranych śladów.  
   
-## <a name="buffering"></a>buforowanie  
- Narzędzie Concurrency Visualizer używa śledzenie zdarzeń dla Windows (ETW), gdy zbiera śledzenia.  ETW używa różnych buforów przechowuje zdarzenia.  Domyślne ustawienia bufora ETW. może nie być optymalny we wszystkich przypadkach, a w niektórych przypadkach, może spowodować problemy, takie jak zdarzenia utracone.  Karta buforowanie można skonfigurować ustawienia bufora ETW. Aby uzyskać więcej informacji, zobacz [śledzenie zdarzeń](http://go.microsoft.com/fwlink/?LinkId=234579) i [struktury EVENT_TRACE_PROPERTIES](http://go.microsoft.com/fwlink/?LinkId=234580).  
+## <a name="buffering"></a>Buforowania  
+ Narzędzie Concurrency Visualizer używa śledzenia zdarzeń systemu Windows (ETW) podczas zbierania śladu.  Funkcja ETW używa różnych buforów, ponieważ przechowuje zdarzenia.  Domyślne ustawienia buforu ETW mogą nie być optymalne we wszystkich przypadkach, a w niektórych przypadkach mogą powodować problemy, takie jak utracone zdarzenia.  Karta buforowanie służy do konfigurowania ustawień buforu funkcji ETW. Aby uzyskać więcej informacji, zobacz [Śledzenie zdarzeń](https://go.microsoft.com/fwlink/?LinkId=234579) i [Struktura EVENT_TRACE_PROPERTIES](https://go.microsoft.com/fwlink/?LinkId=234580).  
   
 ## <a name="filter"></a>Filtr  
- Na karcie Filtr można wybrać zestaw zdarzeń, które zbiera dane narzędzia Concurrency Visualizer. Wybranie podzbioru zdarzeń ogranicza typy danych, które są wyświetlane w raportach, zmniejsza rozmiar każdego śledzenia i skraca czas wymagany do przetwarzania śladów.  
+ Na karcie filtr można wybrać zestaw zdarzeń zbieranych przez Wizualizator współbieżności. Wybranie podzestawu zdarzeń ogranicza typy danych, które są wyświetlane w raportach, zmniejsza rozmiar każdego śledzenia i skraca czas wymagany do przetworzenia śladów.  
   
 ### <a name="clr-events"></a>Zdarzenia CLR  
- Zdarzenia generowane przez środowisko uruchomieniowe języka wspólnego (CLR) Włącz Concurrency Visualizer rozwiązać zarządzane stosy wywołań.  Po wyłączeniu zbierania zdarzeń CLR zmniejszy rozmiar śledzenia, ale niektóre stosy wywołań nie zostanie rozwiązany.  W rezultacie niektóre aktywności wątku procesora CPU może niepoprawnie pogrupowane.  
+ Zdarzenia generowane przez środowisko uruchomieniowe języka wspólnego (CLR) umożliwiają Wizualizatorowi współbieżności rozpoznawanie zarządzanych stosów wywołań.  Jeśli wyłączysz kolekcję zdarzeń CLR, rozmiar śladu zostanie zmniejszony, ale niektóre stosy wywołań nie będą rozpoznawane.  W związku z tym niektóre działania wątków procesora mogą być nieprawidłowo klasyfikowane.  
   
-### <a name="collect-for-native-processes"></a>Zbierz dla natywnych procesów  
- Domyślnie zdarzenia CLR są zbierane tylko wtedy, gdy proces zarządzany jest profilowana, ponieważ są one zazwyczaj konieczne w przypadku natywnych procesów.  W niektórych przypadkach (na przykład, gdy macierzysty proces jest hostowany jest aparat CLR) może być służąca do gromadzenia zdarzeń CLR dla natywnych procesów.  Jeśli jest to możliwe, wybierz opcję **Zbierz dla natywnych procesów** pole wyboru.  
+### <a name="collect-for-native-processes"></a>Zbieranie dla procesów natywnych  
+ Domyślnie zdarzenia CLR są zbierane tylko wtedy, gdy zarządzany proces jest profilowany, ponieważ zwykle nie jest to wymagane w przypadku procesów natywnych.  W niektórych przypadkach (na przykład gdy natywny proces obsługuje środowisko CLR) może być konieczne zebranie zdarzeń CLR dla procesu macierzystego.  W takim przypadku zaznacz pole wyboru **Zbieraj dla procesów natywnych** .  
   
 ### <a name="disable-rundown-events"></a>Wyłącz zdarzenia uwalniania  
- Środowisko CLR generuje zdarzenia na podstawie dwóch dostawców: środowiska uruchomieniowego i podsumowania.  Jeśli chcesz zbierać zdarzenia środowiska uruchomieniowego CLR, ale chcemy uniknąć zbierania zdarzeń podsumowania, wybierz **wyłączyć zdarzenia podsumowania** pole wyboru.  Zmniejsza rozmiar pliku śledzenia, który jest generowany przez kolekcji, ale niektóre stosów może nie rozwiązać. Aby uzyskać więcej informacji, zobacz [dostawcy ETW CLR](https://msdn.microsoft.com/library/0beafad4-b2c8-47f4-b342-83411d57a51f)  
+ Środowisko CLR generuje zdarzenia od dwóch dostawców: środowisko uruchomieniowe i uwalnianie.  Jeśli chcesz zbierać zdarzenia środowiska uruchomieniowego CLR, ale chcesz uniknąć zbierania zdarzeń uwalniania, zaznacz pole wyboru **Wyłącz zdarzenia uwalniania** .  Zmniejsza to rozmiar pliku śledzenia, który jest generowany przez kolekcję, ale niektóre stosy mogą nie zostać rozpoznane. Aby uzyskać więcej informacji, zobacz [dostawcy CLR ETW Providers](https://msdn.microsoft.com/library/0beafad4-b2c8-47f4-b342-83411d57a51f)  
   
 ### <a name="sample-events"></a>Przykładowe zdarzenia  
- Zbieraj stosy wywołań, które są skojarzone z wykonywaniem wątków umożliwia próbkowane zdarzenia. Te zdarzenia są zbierane w około raz na milisekundę dla wątków, które są wykonywane w bieżącym procesie. Po wyłączeniu zbierania próbkowane zdarzenia zmniejszany jest rozmiar zbieranego śladu, ale nie można przeglądać wszystkie stosy wywołań, które są skojarzone z wykonywaniem wątków.  
+ Za pomocą przykładowych zdarzeń można zbierać stosy wywołań, które są skojarzone z wykonywaniem wątków. Te zdarzenia są zbierane około raz w milisekundach dla wątków, które są wykonywane w bieżącym procesie. Jeśli wyłączysz zbieranie przykładowych zdarzeń, rozmiar zebranych śladów zostanie zmniejszony, ale nie będzie można wyświetlić żadnych stosów wywołań skojarzonych z wykonywaniem wątku.  
   
 ### <a name="gpu-events"></a>Zdarzenia procesora GPU  
- Zdarzenia procesora GPU są zdarzeniami generowanymi przez DirectX. Jeśli wyłączysz zbieranie zdarzeń procesora GPU, zmniejszany jest rozmiar zbieranego śladu, ale nie można wyświetlić wszystkie aktywności procesora GPU w widok użycia lub aktywności aparatu DirectX w widoku wątków.  
+ Zdarzenia procesora GPU to zdarzenia generowane przez program DirectX. Jeśli wyłączysz kolekcję zdarzeń procesora GPU, rozmiar zebranego śledzenia zostanie zmniejszony, ale nie będzie można wyświetlić żadnej aktywności procesora GPU w widoku użycie ani działania aparatu DirectX w widoku wątki.  
   
-### <a name="file-io-events"></a>Zdarzenia We/Wy plików  
- Zdarzenia We/Wy pliku reprezentują uzyskuje dostęp do dysku w imieniu bieżącego procesu.  Po wyłączeniu zdarzenia We/Wy pliku zmniejszany jest rozmiar śledzenia, ale Widok wątków ani zgłaszać żadnych informacji o dysku kanałów lub operacje dyskowe.  
+### <a name="file-io-events"></a>Zdarzenia we/wy pliku  
+ Zdarzenia we/wy pliku reprezentują dostęp do dysku w imieniu bieżącego procesu.  Jeśli wyłączysz zdarzenia we/wy pliku, rozmiar śledzenia zostanie zmniejszony, ale widok wątki nie będzie zgłaszać żadnych informacji na temat kanałów dyskowych ani operacji dyskowych.  
   
-## <a name="markers"></a>Znaczniki  
- Na karcie znaczników można skonfigurować zbiór dostawcy ETW, które są wyświetlane jako znaczników w Wizualizatorze współbieżności.  Można również filtrować kolekcji znaczników na podstawie poziomu ważności i kategorii funkcji ETW.  Jeśli używasz [SDK narzędzia Concurrency Visualizer](../profiling/concurrency-visualizer-sdk.md) się przy użyciu własnego dostawcę znaczników narzędzia, możesz ją tutaj zarejestrować tak, aby była wyświetlana w widoku wątków.  
+## <a name="markers"></a>Wyświetla  
+ Na karcie Znaczniki można skonfigurować zestaw dostawców ETW, które są wyświetlane jako znaczniki w wizualizatorze współbieżności.  Można również filtrować kolekcję znaczników na podstawie poziomu ważności i kategorii ETW.  Jeśli używasz [zestawu SDK narzędzia Concurrency Visualizer](../profiling/concurrency-visualizer-sdk.md) i korzystasz z własnego dostawcy znaczników, możesz zarejestrować go w tym miejscu, aby pojawił się w widoku wątki.  
   
 ### <a name="adding-a-new-provider"></a>Dodawanie nowego dostawcy  
- Jeśli kod używa [SDK narzędzia Concurrency Visualizer](../profiling/concurrency-visualizer-sdk.md) lub generuje zdarzenia ETW, które należy wykonać <xref:System.Diagnostics.Tracing.EventSource> Konwencji, można wyświetlić te zdarzenia w Wizualizatorze współbieżności, rejestrując je w oknie dialogowym.  
+ Jeśli kod używa [zestawu SDK wizualizatora współbieżności](../profiling/concurrency-visualizer-sdk.md) lub GENERUJE zdarzenia ETW, które są zgodne z konwencją <xref:System.Diagnostics.Tracing.EventSource>, można wyświetlić te zdarzenia w wizualizatorze współbieżności, rejestrując je w tym oknie dialogowym.  
   
- W polu Nazwa wprowadź nazwę, która opisuje typy zdarzeń, które są generowane przez dostawcę.  Wprowadź identyfikator GUID, który jest skojarzony z tym dostawcą, w polu identyfikatora GUID. (Identyfikator GUID jest skojarzony z każdego dostawcy funkcji ETW).  
+ W polu Nazwa wprowadź nazwę opisującą typy zdarzeń generowanych przez dostawcę.  W polu GUID wprowadź identyfikator GUID, który jest skojarzony z tym dostawcą. (Identyfikator GUID jest skojarzony z każdym dostawcą ETW).  
   
- Opcjonalnie można określić, czy odfiltrowywać zdarzenia z tego dostawcy, w oparciu o kategorię lub poziom ważności.  Można użyć kategorii pola do filtrowania na podstawie SDK narzędzia Concurrency Visualizer kategorii.  Aby to zrobić, należy wprowadzić ciągów rozdzielanych przecinkami, kategorii lub zakresy kategorii.  To ustawienie określa kategorie zdarzeń w bieżącym dostawcy, aby pokazać.  W przypadku dodawania <xref:System.Diagnostics.Tracing.EventSource> dostawcy, można użyć pola kategorii do filtrowania według słów kluczowych funkcji ETW.  Ponieważ słowo kluczowe jest maską bitów, można użyć ciąg liczb całkowitych rozdzielonych przecinkami, aby określić, które bity maski są ustawione. Na przykład "1,2" ustawia bity pierwszego i drugiego, a przekłada się to 6 w zapisie dziesiętnym.  
+ Opcjonalnie można określić, czy zdarzenia mają być filtrowane z tego dostawcy, na podstawie kategorii lub poziomu ważności.  Możesz użyć pola Kategoria do filtrowania na podstawie kategorii zestawu SDK wizualizatora współbieżności.  W tym celu wprowadź rozdzielany przecinkami ciąg kategorii lub zakresów kategorii.  Określa kategorie zdarzeń w bieżącym dostawcy do wyświetlenia.  W przypadku dodawania dostawcy <xref:System.Diagnostics.Tracing.EventSource> można użyć pola Kategoria do filtrowania według słowa kluczowego ETW.  Ponieważ słowo kluczowe jest wektorem, można użyć rozdzielanego przecinkami ciągu liczb całkowitych, aby określić, które bity w masce są ustawione. Na przykład, "1, 2" ustawia pierwszy i drugi bity, a to jest tłumaczone na 6 w postaci dziesiętnej.  
   
- Lista poziom ważności można użyć do filtrowania zdarzeń, które mają znaczenie lub poziom funkcji ETW, która jest mniejsza niż określona wartość.  
+ Za pomocą listy poziomu ważności można odfiltrować zdarzenia, które mają poziom ważności lub ETW, który jest mniejszy niż określona wartość.  
   
 ### <a name="configuring-an-existing-provider"></a>Konfigurowanie istniejącego dostawcy  
- Aby edytować ustawienia, które są skojarzone z istniejącego dostawcy, wybierz z listy, a następnie wybierz **dostawcy edycji** przycisku.  Można zmienić nazwę, identyfikator GUID i ustawienia filtrowania.  
+ Aby edytować ustawienia, które są skojarzone z istniejącym dostawcą, wybierz go z listy, a następnie wybierz przycisk **Edytuj dostawcę** .  Można zmienić nazwę, identyfikator GUID i ustawienia filtrowania.  
   
-### <a name="filter-marker-data-out-of-concurrency-visualizer-reports"></a>Filtruj dane znacznika poza raporty wizualizatora współbieżności  
- Jeśli nie chcesz, aby dane dotyczące określonego dostawcy się pojawić w przyszłości śledzenia, wyczyść pole wyboru obok dostawcy, który chcesz usunąć.  
+### <a name="filter-marker-data-out-of-concurrency-visualizer-reports"></a>Filtruj dane znacznika z raportów wizualizatora współbieżności  
+ Jeśli nie chcesz, aby dane określonego dostawcy były wyświetlane w obszarze śledzenia w przyszłości, usuń zaznaczenie pola wyboru obok dostawcy, który ma zostać usunięty.  
   
 ## <a name="files"></a>Pliki  
- Na **pliki** karcie, można określić katalog, w obszarze śledzenia pliki są przechowywane każdorazowo śledzenia są zbierane.  Narzędzie Concurrency Visualizer generuje cztery pliki do każdego śledzenia, które są zbierane:  
+ Na karcie **pliki** można określić katalog, w którym pliki śledzenia są przechowywane przy każdym zbieraniu śladu.  Wizualizator współbieżności generuje cztery pliki dla każdego zebranego śledzenia:  
   
-- Plik dziennika (ETL) śledzenia zdarzeń w trybie jądra (*. kernel.etl)  
+- Plik dziennika śledzenia zdarzeń trybu jądra (ETL) (*. kernel. etl)  
   
-- Plik dziennika śledzenia zdarzeń tryb użytkownika (*. user.etl)  
+- Plik dziennika śledzenia zdarzeń trybu użytkownika (*. User. etl)  
   
-- Plik dane narzędzia Concurrency Visualizer (*. CVData)  
+- Plik danych wizualizatora współbieżności (*. CVData)  
   
-- Plik śladu wizualizatora współbieżności (*. CVTrace)  
+- Plik śledzenia Concurrency Visualizer (*. CVTrace  
   
-  Dwa pliki ETL przechowywanie danych pierwotnych śledzenia, a te dwa pliki narzędzia Concurrency Visualizer magazynowanie przetworzonych danych.  Nieprzetworzone pliki ETL zwykle nie są używane po przetworzeniu śledzenia.  Wybieranie **pliki usunąć zdarzenia śledzenia dziennika (ETL) po przeprowadzeniu analizy** pole wyboru pozwala na zmniejszenie ilości danych śledzenia, który jest przechowywany na dysku.  
+  Dwa pliki ETL przechowują pierwotne dane śledzenia, a dwa pliki wizualizatora współbieżności przechowują przetwarzane dane.  Nieprzetworzone pliki ETL zazwyczaj nie są używane po przetworzeniu śladu.  Zaznaczenie pola wyboru **Usuń pliki dziennika śledzenia zdarzeń (ETL) po analizie** zmniejsza ilość danych śledzenia przechowywanych na dysku.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Tylko mój kod](../profiling/just-my-code-threads-view.md)   

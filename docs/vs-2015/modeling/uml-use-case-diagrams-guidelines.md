@@ -15,19 +15,19 @@ caps.latest.revision: 38
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2d3434236908771cbc2149e766b841e7bcf4cb4e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7c9ccd5285f9a2744704c0ee13094a1dac31c53b
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667841"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302838"
 ---
 # <a name="uml-use-case-diagrams-guidelines"></a>Diagramy przypadków użycia UML: Zalecenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W programie Visual Studio możesz narysować *Diagram przypadków użycia* , aby podsumować, kto używa aplikacji lub systemu, i co można z nimi zrobić. Aby utworzyć diagram przypadków użycia UML, w menu **Architektura** kliknij **Nowy UML lub diagram warstwowy**.
 
- Aby zapoznać się z pokazem wideo, zobacz [organizowanie funkcji do przypadków użycia](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-2-Organizing-Features-Into-Use-Cases/).
+ Aby zapoznać się z pokazem wideo, zobacz [organizowanie funkcji do przypadków użycia](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-2-organizing-features-into-use-cases).
 
  Aby sprawdzić, które wersje programu Visual Studio obsługują tę funkcję, zobacz [Obsługa wersji dla narzędzi architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -170,7 +170,7 @@ W programie Visual Studio możesz narysować *Diagram przypadków użycia* , aby
 
  ![Przypadek użycia pokazujący wiele do wielu liczebności](../modeling/media/uml-ucguidemulti2.png "UML_UCGuideMulti2")
 
-- Aby określić, że kilka aktorów tej samej klasy może brać udział w pojedynczym wystąpieniu przypadku użycia, ustaw liczebność na końcu aktora skojarzenia na **1.. \*** .
+- Aby określić, że kilka aktorów tej samej klasy może brać udział w pojedynczym wystąpieniu przypadku użycia, ustaw liczebność na końcu aktora skojarzenia na **1..\*** .
 
    Na ilustracji co najmniej jedno Restauracje może wziąć udział w realizacji tej samej kolejności posiłków.
 
@@ -190,7 +190,7 @@ W programie Visual Studio możesz narysować *Diagram przypadków użycia* , aby
 
    - **1** w celu oznaczania, że dokładnie jedno wystąpienie tej roli uczestniczy w każdym łączu.
 
-   - **1.. \*** , aby mieć możliwość, że co najmniej jedno wystąpienie tej roli uczestniczy w każdym łączu.
+   - **1..\*** , aby mieć możliwość, że co najmniej jedno wystąpienie tej roli uczestniczy w każdym łączu.
 
    - **0.. 1** , aby podać, że uczestnictwo jest opcjonalne.
 
@@ -270,7 +270,7 @@ W programie Visual Studio możesz narysować *Diagram przypadków użycia* , aby
 
 #### <a name="to-link-to-a-shared-document-onenote-element-or-web-page"></a>Aby połączyć się z dokumentem udostępnionym, elementem programu OneNote lub stroną sieci Web
 
-1. Uzyskaj adres URL elementu udostępnionego. Może to być na przykład ścieżką pliku sieciowego rozpoczynającą się "\\ \\" lub stronę sieci Web lub adres URL programu SharePoint, zaczynając od "http://" lub link do sekcji programu OneNote, strony lub akapitu rozpoczynającego się "OneNote:".
+1. Uzyskaj adres URL elementu udostępnionego. Może to być na przykład ścieżką pliku sieciowego rozpoczynającą się "\\\\" lub stronę sieci Web lub adres URL programu SharePoint, zaczynając od "http://" lub link do sekcji programu OneNote, strony lub akapitu rozpoczynającego się "OneNote:".
 
 2. W przyborniku kliknij pozycję **artefakt** , a następnie kliknij pozycję na diagramie przypadku użycia.
 
@@ -420,7 +420,7 @@ W programie Visual Studio możesz narysować *Diagram przypadków użycia* , aby
 
 3. Przeciągnij istniejące przypadki użycia do podsystemu lub z niego, aby dostosować jego zawartość.
 
-   \- lub-
+   \- lub —
 
    Aby utworzyć nowy przypadek użycia bezpośrednio w podsystemie, kliknij pozycję **przypadek użycia** w przyborniku, a następnie kliknij wewnątrz podsystemu.
 
@@ -441,4 +441,4 @@ W programie Visual Studio możesz narysować *Diagram przypadków użycia* , aby
  ![Podsystemy pokazują różne wersje systemu](../modeling/media/uml-ucguidesystem.png "UML_UCGuideSystem")
 
 ## <a name="see-also"></a>Zobacz też
- [Wymagania modelu](../modeling/model-user-requirements.md) [UML diagramy sekwencji: wskazówki](../modeling/uml-sequence-diagrams-guidelines.md) [Edytuj modele UML i](../modeling/edit-uml-models-and-diagrams.md) diagramy diagramów [przypadków użycia UML: referencyjne](../modeling/uml-use-case-diagrams-reference.md) diagramy [klas UML:](../modeling/uml-class-diagrams-reference.md) Reference [diagramy składników UML: Reference](../modeling/uml-component-diagrams-reference.md) [UML Diagramy aktywności:](../modeling/uml-activity-diagrams-guidelines.md) [materiały wideo: porządkowanie funkcji do przypadków użycia](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-2-Organizing-Features-Into-Use-Cases/)
+ [Wymagania dotyczące modelu](../modeling/model-user-requirements.md) [UML diagramy sekwencji: wskazówki](../modeling/uml-sequence-diagrams-guidelines.md) [Edytowanie modeli UML i](../modeling/edit-uml-models-and-diagrams.md) diagramów [diagramów przypadków użycia UML: referencyjne](../modeling/uml-use-case-diagrams-reference.md) diagramy [klas UML: referencyjne](../modeling/uml-class-diagrams-reference.md) diagramy [składników UML:](../modeling/uml-component-diagrams-reference.md) referencyjne [diagramy działań UML: schematy](../modeling/uml-activity-diagrams-guidelines.md) [wideo: organizowanie funkcji w przypadku użycia](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-2-organizing-features-into-use-cases)

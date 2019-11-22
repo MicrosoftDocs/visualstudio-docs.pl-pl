@@ -12,17 +12,17 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0570dcc4b3cc79f2c882d5ddd4f10dc79a21332b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ab048fe69ca89086e9811e5277dccb86aeee6194
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664532"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300857"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Tworzenie i stosowanie zasobów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Style i szablony dla elementów w projektant XAML są przechowywane w jednostkach wielokrotnego użytku o nazwie Resources. Style umożliwiają ustawianie właściwości elementów i ponowne używanie tych ustawień w celu zapewnienia spójnego wyglądu w wielu elementach. [ControlTemplate](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.controltemplate.aspx) definiuje wygląd kontrolki i można go również zastosować jako zasób. Aby uzyskać więcej informacji, zobacz [Szybki Start: kontrolki stylów](http://go.microsoft.com/fwlink/?LinkID=248239) i [Szybki Start: sterowanie szablonami](http://go.microsoft.com/fwlink/?LinkID=247982).
+Style i szablony dla elementów w projektant XAML są przechowywane w jednostkach wielokrotnego użytku o nazwie Resources. Style umożliwiają ustawianie właściwości elementów i ponowne używanie tych ustawień w celu zapewnienia spójnego wyglądu w wielu elementach. [ControlTemplate](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.controltemplate.aspx) definiuje wygląd kontrolki i można go również zastosować jako zasób. Aby uzyskać więcej informacji, zobacz [Szybki Start: kontrolki stylów](https://go.microsoft.com/fwlink/?LinkID=248239) i [Szybki Start: sterowanie szablonami](https://go.microsoft.com/fwlink/?LinkID=247982).
 
  Za każdym razem, gdy tworzysz nowy zasób z istniejącej właściwości, [stylu](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.style.aspx)lub `ControlTemplate`, okno dialogowe **Tworzenie zasobu** umożliwia definiowanie zasobów na poziomie aplikacji, na poziomie dokumentu lub na poziomie elementu. Te poziomy określają, gdzie można użyć zasobu. Na przykład, jeśli zdefiniujesz zasób na poziomie elementu, zasób może być stosowany tylko do elementu, w którym został utworzony. Istnieje również możliwość przechowywania zasobu w słowniku zasobów, oddzielnym pliku, który można użyć ponownie w innym projekcie.
 

@@ -27,12 +27,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 23c570e9d29c2288da32469b524c5e4d9125b097
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: d4d4b02d512480d96c501758f4cf0f1313158942
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65694915"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300544"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Określanie plików symboli (.pdb) i plików źródłowych w debugerze programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,9 +63,9 @@ Plik bazy danych programu (.pdb), nazywany także plikiem symboli, mapuje identy
 
 1. W programie Visual Studio, otwórz **narzędzia / Opcje / Debugowanie / symbole** strony.
 
-    ![Narzędzia &#45; opcje &#45; debugowanie &#45; strony symbole](../debugger/media/dbg-tools-options-symbols.png "DBG_Tools_Options_Symbols")
+    ![Strona &#45; opcje &#45; narzędzi &#45; debugowania symboli](../debugger/media/dbg-tools-options-symbols.png "DBG_Tools_Options_Symbols")
 
-2. Wybierz folder ![narzędzia&#47; opcje&#47; debugowanie&#47;ikonę folderu symbole](../debugger/media/dbg-tools-options-foldersicon.png "DBG_Tools_Options_FoldersIcon") ikony. Tekst edytowalny pojawia się w **symboli (.pdb) lokalizacji** pole.
+2. Wybierz pozycję ![narzędzia&#47; folderów opcje&#47; debugowania&#47;ikona folderu symboli](../debugger/media/dbg-tools-options-foldersicon.png "DBG_Tools_Options_FoldersIcon") . Tekst edytowalny pojawia się w **symboli (.pdb) lokalizacji** pole.
 
 3. Wpisz adres URL lub ścieżkę katalogu serwera symboli lub lokalizację symboli. Uzupełnianie instrukcji pomaga w znalezieniu właściwego formatu.
 
@@ -135,7 +135,7 @@ Plik bazy danych programu (.pdb), nazywany także plikiem symboli, mapuje identy
 
    Gdy wystąpi jedno z tych zdarzeń, debuger wyświetla **Brak załadowanych symboli** strony, aby pomóc Ci znaleźć i załadować niezbędne symbole.
 
-   ![Strona nie załadowano symboli](../debugger/media/dbg-nosymbolsloaded.png "DBG_NoSymbolsLoaded")
+   ![Nie załadowano żadnych symboli na stronie](../debugger/media/dbg-nosymbolsloaded.png "DBG_NoSymbolsLoaded")
 
 - Aby zmienić ścieżki wyszukiwania, wybierz niezaznaczoną ścieżkę lub wybierz **New** i wprowadź nową ścieżkę. Wybierz **obciążenia** wyszukać ponownie ścieżki i załadować plik symbolu, jeśli zostanie znaleziony.
 
@@ -147,7 +147,7 @@ Plik bazy danych programu (.pdb), nazywany także plikiem symboli, mapuje identy
 
 - Aby zawsze pokazywać deasemblację, gdy nie znaleziono plików źródłowych lub symboli, wybierz opcję **okna dialogowego Opcje** link i zaznacz **Włącz debugowanie na poziomie adresów** i **Pokaż dezasemblację Jeśli źródło jest niedostępne**.
 
-   ![Opcje &#47; debugowanie &#47; Opcje ogólne dezasemblacji](../debugger/media/dbg-options-general-disassembly-checkbox.png "DBG_Options_General_disassembly_checkbox")
+   ![Opcje &#47; debugowania &#47; ogólnych opcji demontażu](../debugger/media/dbg-options-general-disassembly-checkbox.png "DBG_Options_General_disassembly_checkbox")
 
   **Zmień opcje symboli z menu skrótów**
 
@@ -214,7 +214,7 @@ Plik bazy danych programu (.pdb), nazywany także plikiem symboli, mapuje identy
 
 2. W obszarze **wspólne właściwości** węzła, wybierz **Debuguj pliki źródłowe**.
 
-3. Kliknij folder ![narzędzia&#47; opcje&#47; debugowanie&#47;ikonę folderu symbole](../debugger/media/dbg-tools-options-foldersicon.png "DBG_Tools_Options_FoldersIcon") ikony. Tekst edytowalny pojawia się w **katalogi zawierające kod źródłowy** listy.
+3. Kliknij przycisk ![narzędzia&#47; folderów opcje&#47; debugowania&#47;ikona folderu symboli](../debugger/media/dbg-tools-options-foldersicon.png "DBG_Tools_Options_FoldersIcon") . Tekst edytowalny pojawia się w **katalogi zawierające kod źródłowy** listy.
 
 4. Dodaj ścieżkę, którą chcesz przeszukać.
 
@@ -224,7 +224,7 @@ Plik bazy danych programu (.pdb), nazywany także plikiem symboli, mapuje identy
  Gdy na komputerze lokalnym nie ma kodu źródłowego lub plik .pdb nie pasuje do kodu źródłowego, możesz użyć Serwera źródłowego, aby pomóc w debugowaniu aplikacji. Serwer źródłowy przyjmuje żądania dotyczące plików i zwraca rzeczywiste pliki. Serwer źródłowy jest uruchamiany za pomocą pliku DLL, o nazwie srcsrv.dll. Serwer źródłowy odczytuje plik .pdb aplikacji, który zawiera wskazówki do repozytorium kodu źródłowego, a także polecenia używane do pobierania kodu źródłowego z repozytorium. Możesz ograniczyć, jakie polecenia mogą być wykonywane z pliku .pdb aplikacji, poprzez wymienienie dozwolonych poleceń wewnątrz pliku o nazwie srcsrv.ini, który musi być umieszczony w tym samym katalogu, co srcsrv.dll i devenv.exe.
 
 > [!IMPORTANT]
-> Dowolne polecenia mogą być osadzone w pliku .pdb aplikacji, więc upewnij się, że można umieścić tylko te, które chcesz wykonać w pliku srcsrv.ini. Każda próba wykonania polecenia nie w pliku srcsvr.ini spowoduje pojawienie się okna dialogowego potwierdzenia. Aby uzyskać więcej informacji, zobacz [ostrzeżenie o zabezpieczeniach: Debuger musi wykonać polecenie niezaufane](../debugger/security-warning-debugger-must-execute-untrusted-command.md). Nie jest sprawdzana poprawność parametrów poleceń, więc należy być ostrożnym z poleceniami zaufanymi. Na przykład, jeśli użytkownik zaufał narzędziu cmd.exe, złośliwy użytkownik może określić parametry, które czyniłyby polecenie niebezpiecznym.
+> Dowolne polecenia mogą być osadzone w pliku .pdb aplikacji, więc upewnij się, że można umieścić tylko te, które chcesz wykonać w pliku srcsrv.ini. Każda próba wykonania polecenia nie w pliku srcsvr.ini spowoduje pojawienie się okna dialogowego potwierdzenia. Aby uzyskać więcej informacji, zobacz [ostrzeżenie o zabezpieczeniach: debuger musi wykonać polecenie niezaufane](../debugger/security-warning-debugger-must-execute-untrusted-command.md). Nie jest sprawdzana poprawność parametrów poleceń, więc należy być ostrożnym z poleceniami zaufanymi. Na przykład, jeśli użytkownik zaufał narzędziu cmd.exe, złośliwy użytkownik może określić parametry, które czyniłyby polecenie niebezpiecznym.
 
  **Aby włączyć korzystanie z serwera źródłowego**
 
@@ -245,4 +245,4 @@ Plik bazy danych programu (.pdb), nazywany także plikiem symboli, mapuje identy
      Należy pamiętać, że oba **Zezwalaj na serwerze źródłowym na częściowo zaufane zestawy (tylko kod zarządzany)** i **zawsze uruchamiaj niezaufane polecenia serwera źródłowego bez monitowania użytkownika o** mogą zwiększyć zagrożenia dla bezpieczeństwa omówione powyżej.
 
 ## <a name="see-also"></a>Zobacz też
- [Zdalnym zmiany w programie Visual Studio 2012 i 2013 ładowaniu symboli .NET](http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013.aspx)
+ [Zdalnym zmiany w programie Visual Studio 2012 i 2013 ładowaniu symboli .NET](https://devblogs.microsoft.com/devops/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013/)

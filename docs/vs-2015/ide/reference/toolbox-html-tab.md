@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d3d6eafbafbf9b373028a7ba052ba9e8df62511c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b7ca3179d3e4883f8a2867e13cbdd5e874d60462
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661611"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297777"
 ---
 # <a name="toolbox-html-tab"></a>Przybornik, karta HTML
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ Karta **HTML** przybornika zawiera składniki, które są przydatne w przypadku 
 <input id="Button1" type="button" value="Button" name="Button1">
 ```
 
- Aby uzyskać więcej informacji, zobacz [kontrolki danych wejściowych HTML](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [HtmlInputButton Server Control — składnia deklaracyjne](https://msdn.microsoft.com/99ccf7fb-7e2a-4ba1-bcd9-981b619a16aa), [NIB: How to: Create scripts and Edit obsługi zdarzeń](https://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d), [Button Web Server controls Map zawartości](https://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf), <xref:System.Web.UI.HtmlControls.HtmlInputButton>, <xref:System.Web.UI.HtmlControls.HtmlButton> i @no_ _t_6.
+ Aby uzyskać więcej informacji, zobacz [kontrolki danych wejściowych HTML](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [HtmlInputButton Server Control — składnia deklaracyjne](https://msdn.microsoft.com/99ccf7fb-7e2a-4ba1-bcd9-981b619a16aa), [NIB: How to: Create scripts and Edit obsługi zdarzeń](https://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d), [Button Web Server controls Map zawartości](https://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf), <xref:System.Web.UI.HtmlControls.HtmlInputButton>, <xref:System.Web.UI.HtmlControls.HtmlButton>i <xref:System.Web.UI.WebControls.Button>.
 
  **Wejście (Reset)** — ![zrzut ekranu HTMLpageResetButton](../../ide/reference/media/vxreset.gif "vxReset")
 
@@ -64,7 +64,7 @@ Karta **HTML** przybornika zawiera składniki, które są przydatne w przypadku 
 <input id="Reset1" type="reset" value="Reset" name="Reset1">
 ```
 
- Aby uzyskać więcej informacji, zobacz [kontrolki danych wejściowych HTML](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [HtmlInputResetą składnię deklaratywną](https://msdn.microsoft.com/cfc1f1fb-d33a-464d-9bb5-204e66174979), <xref:System.Web.UI.HtmlControls.HtmlInputButton> i <xref:System.Web.UI.WebControls.Button>.
+ Aby uzyskać więcej informacji, zobacz [kontrolki danych wejściowych HTML](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [HtmlInputResetą składnię deklaratywną](https://msdn.microsoft.com/cfc1f1fb-d33a-464d-9bb5-204e66174979), <xref:System.Web.UI.HtmlControls.HtmlInputButton>i <xref:System.Web.UI.WebControls.Button>.
 
  ![Zrzut ekranu](../../ide/reference/media/vxsubmit.gif "vxSubmit") **danych wejściowych (submit)** HTMLpageToolbarSubmitButton
 
@@ -76,7 +76,7 @@ Karta **HTML** przybornika zawiera składniki, które są przydatne w przypadku 
 <input id="Submit1" type="submit" value="Submit" name="Submit1">
 ```
 
- Aby uzyskać więcej informacji, zobacz [kontrolki danych wejściowych HTML](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [HtmlInputSubmitą składnię deklaratywną](https://msdn.microsoft.com/eef2a157-f184-4ce9-b256-d1eacc7930f2), <xref:System.Web.UI.HtmlControls.HtmlInputButton> i <xref:System.Web.UI.WebControls.Button>.
+ Aby uzyskać więcej informacji, zobacz [kontrolki danych wejściowych HTML](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [HtmlInputSubmitą składnię deklaratywną](https://msdn.microsoft.com/eef2a157-f184-4ce9-b256-d1eacc7930f2), <xref:System.Web.UI.HtmlControls.HtmlInputButton>i <xref:System.Web.UI.WebControls.Button>.
 
  ![Zrzut ekranu](../../ide/reference/media/vxtextfield.gif "vxTextfield") **danych wejściowych (tekstowych)** HTMLpageToolbarTextField
 
@@ -88,7 +88,7 @@ Karta **HTML** przybornika zawiera składniki, które są przydatne w przypadku 
 <input id="Text1" TYPE="text" value="Text Field" name="Text1">
 ```
 
- Aby uzyskać więcej informacji, zobacz kontrolki [danych wejściowych HTML](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [HtmlInputText Server Control — składnia deklaratywna](https://msdn.microsoft.com/87060d90-a11c-434d-9fc9-b03a8487041e), [Omówienie kontrolki serwera sieci Web](https://msdn.microsoft.com/library/ab354bc1-f23a-48fc-93d8-d4d7c1b7396f), <xref:System.Web.UI.HtmlControls.HtmlInputText> i <xref:System.Web.UI.WebControls.TextBox>.
+ Aby uzyskać więcej informacji, zobacz kontrolki [danych wejściowych HTML](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [HtmlInputText Server Control — składnia deklaratywna](https://msdn.microsoft.com/87060d90-a11c-434d-9fc9-b03a8487041e), [Omówienie kontrolki serwera sieci Web](https://msdn.microsoft.com/library/ab354bc1-f23a-48fc-93d8-d4d7c1b7396f), <xref:System.Web.UI.HtmlControls.HtmlInputText>i <xref:System.Web.UI.WebControls.TextBox>.
 
 > [!IMPORTANT]
 > Zalecane jest zweryfikowanie wszystkich danych wejściowych użytkownika. Aby uzyskać więcej informacji, zobacz [Weryfikowanie danych wejściowych użytkownika na stronach sieci Web ASP.NET](https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).
@@ -121,7 +121,7 @@ Karta **HTML** przybornika zawiera składniki, które są przydatne w przypadku 
  Aby uzyskać więcej informacji, zobacz kontrolki [danych wejściowych HTML](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [HtmlInputPassword Server Control — składnia deklaratywna](https://msdn.microsoft.com/df703dd0-1624-4e5a-a547-c97f2f331b9f), [instrukcje: Ustawianie kontrolki serwera sieci Web dla wpisu hasła](https://msdn.microsoft.com/library/5b5069f3-64a1-435a-aee6-da263f4e6310)oraz [Przewodnik: sprawdzanie poprawności danych wejściowych użytkownika na stronie formularzy sieci Web](https://msdn.microsoft.com/library/7141d6ba-34f3-410b-b5cd-2102a24cb436).
 
 > [!IMPORTANT]
-> Jeśli aplikacja przesyła nazwy i hasła użytkowników, należy skonfigurować witrynę sieci Web tak, aby używała SSL (SSL) do szyfrowania transmisji. Aby uzyskać więcej informacji, zobacz "Zabezpieczanie połączeń przy użyciu protokołu SSL" w [Przewodniku obsługi usług IIS](http://go.microsoft.com/fwlink/?linkid=47856). Ponadto zaleca się zweryfikowanie wszystkich danych wejściowych użytkownika. Aby uzyskać więcej informacji, zobacz [Weryfikowanie danych wejściowych użytkownika na stronach sieci Web ASP.NET](https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).
+> Jeśli aplikacja przesyła nazwy i hasła użytkowników, należy skonfigurować witrynę sieci Web tak, aby używała SSL (SSL) do szyfrowania transmisji. Aby uzyskać więcej informacji, zobacz "Zabezpieczanie połączeń przy użyciu protokołu SSL" w [Przewodniku obsługi usług IIS](https://go.microsoft.com/fwlink/?linkid=47856). Ponadto zaleca się zweryfikowanie wszystkich danych wejściowych użytkownika. Aby uzyskać więcej informacji, zobacz [Weryfikowanie danych wejściowych użytkownika na stronach sieci Web ASP.NET](https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).
 
  **Wejściowy (pole wyboru)** pole ![wyboru przybornika strony HTML](../../ide/reference/media/vxcheckbox.gif "vxCheckbox")
 
@@ -133,7 +133,7 @@ Karta **HTML** przybornika zawiera składniki, które są przydatne w przypadku 
 <input id="Checkbox1" type="checkbox" name="Checkbox1">
 ```
 
- Aby uzyskać więcej informacji, zobacz kontrolki [danych wejściowych HTML](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [HtmlInputCheckBox Server — składnia deklaracyjne](https://msdn.microsoft.com/4a509586-89d8-4ccf-a0b8-b9160ce6e4a6), [CheckBox i formant CheckBoxList serwera sieci Web — Omówienie](https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf), <xref:System.Web.UI.HtmlControls.HtmlInputCheckBox> i <xref:System.Web.UI.WebControls.CheckBox>.
+ Aby uzyskać więcej informacji, zobacz kontrolki [danych wejściowych HTML](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [HtmlInputCheckBox Server — składnia deklaracyjne](https://msdn.microsoft.com/4a509586-89d8-4ccf-a0b8-b9160ce6e4a6), [CheckBox i formant CheckBoxList serwera sieci Web — Omówienie](https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf), <xref:System.Web.UI.HtmlControls.HtmlInputCheckBox>i <xref:System.Web.UI.WebControls.CheckBox>.
 
  ![Zrzut ekranu](../../ide/reference/media/vxradio.gif "vxRadio") **danych wejściowych (Radio)** VisualStudioHTMLpageRadioButton
 
@@ -145,7 +145,7 @@ Karta **HTML** przybornika zawiera składniki, które są przydatne w przypadku 
 <input id="Radio1" type="radio" name="Radio1">
 ```
 
- Aby uzyskać więcej informacji, zobacz kontrolki [danych wejściowych HTML](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [HtmlInputRadioButton Server — Składnia deklaratywna](https://msdn.microsoft.com/6e60ff63-cc57-46ef-bf96-e829e204ba33), element [RadioButton oraz kontrolki serwera sieci Web](https://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747), <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton> i <xref:System.Web.UI.WebControls.RadioButton>.
+ Aby uzyskać więcej informacji, zobacz kontrolki [danych wejściowych HTML](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [HtmlInputRadioButton Server — Składnia deklaratywna](https://msdn.microsoft.com/6e60ff63-cc57-46ef-bf96-e829e204ba33), element [RadioButton oraz kontrolki serwera sieci Web](https://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747), <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton>i <xref:System.Web.UI.WebControls.RadioButton>.
 
  Tekst **wejściowy (ukryty)** ![ukryty element strony HTML](../../ide/reference/media/vxhidden.gif "vxhidden")
 
@@ -169,7 +169,7 @@ Karta **HTML** przybornika zawiera składniki, które są przydatne w przypadku 
 <textarea id=" textarea 1 name=" textarea 1" rows=2 cols=20></textarea>
 ```
 
- Aby uzyskać więcej informacji, zobacz [HtmlTextArea Server — składnia deklaracyjne](https://msdn.microsoft.com/5a103ffa-235b-4452-ba2b-a4fb8ba8cb87), <xref:System.Web.UI.HtmlControls.HtmlTextArea> i <xref:System.Web.UI.WebControls.TextBox>.
+ Aby uzyskać więcej informacji, zobacz [HtmlTextArea Server — składnia deklaracyjne](https://msdn.microsoft.com/5a103ffa-235b-4452-ba2b-a4fb8ba8cb87), <xref:System.Web.UI.HtmlControls.HtmlTextArea>i <xref:System.Web.UI.WebControls.TextBox>.
 
 > [!IMPORTANT]
 > Zalecane jest zweryfikowanie wszystkich danych wejściowych użytkownika. Aby uzyskać więcej informacji, zobacz [Weryfikowanie danych wejściowych użytkownika na stronach sieci Web ASP.NET](https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).
@@ -184,7 +184,7 @@ Karta **HTML** przybornika zawiera składniki, które są przydatne w przypadku 
 <table cellspacing="1" width="75%" border=1> <tr><td></td></tr></table>
 ```
 
- Aby uzyskać więcej informacji, zobacz Przegląd [deklaratywnej składni](https://msdn.microsoft.com/625b06d8-0f69-4112-a1d4-8ef2a9fbcda9), [tabele, TableRow i TableCell serwera sieci Web](https://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a), <xref:System.Web.UI.HtmlControls.HtmlTable> i <xref:System.Web.UI.WebControls.Table>.
+ Aby uzyskać więcej informacji, zobacz Przegląd [deklaratywnej składni](https://msdn.microsoft.com/625b06d8-0f69-4112-a1d4-8ef2a9fbcda9), [tabele, TableRow i TableCell serwera sieci Web](https://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a), <xref:System.Web.UI.HtmlControls.HtmlTable>i <xref:System.Web.UI.WebControls.Table>.
 
  ![Element obrazu strony HTML](../../ide/reference/media/vximage.gif "vxImage") obrazu
 
@@ -196,7 +196,7 @@ Karta **HTML** przybornika zawiera składniki, które są przydatne w przypadku 
 <img alt="" src="">
 ```
 
- Aby uzyskać więcej informacji, zobacz [składnia deklaracyjnego sterowania serwerem HtmlImage](https://msdn.microsoft.com/528430e8-ced1-47d1-8db2-942e734a61f6), [Omówienie kontrolki serwera sieci Web obrazu](https://msdn.microsoft.com/library/096a8d8d-58ee-4ee8-ab82-6594a0f3a0a9), <xref:System.Web.UI.HtmlControls.HtmlImage>, <xref:System.Web.UI.HtmlControls.HtmlInputImage> i <xref:System.Web.UI.WebControls.Image>.
+ Aby uzyskać więcej informacji, zobacz [składnia deklaracyjnego sterowania serwerem HtmlImage](https://msdn.microsoft.com/528430e8-ced1-47d1-8db2-942e734a61f6), [Omówienie kontrolki serwera sieci Web obrazu](https://msdn.microsoft.com/library/096a8d8d-58ee-4ee8-ab82-6594a0f3a0a9), <xref:System.Web.UI.HtmlControls.HtmlImage>, <xref:System.Web.UI.HtmlControls.HtmlInputImage>i <xref:System.Web.UI.WebControls.Image>.
 
  **Wybierz** ![listę rozwijaną przybornika strony HTML](../../ide/reference/media/vxdropdown.gif "vxDropdown")
 
@@ -210,7 +210,7 @@ Karta **HTML** przybornika zawiera składniki, które są przydatne w przypadku 
 
  Można utworzyć wielowierszowy element `select` przez zwiększenie wartości właściwości size.
 
- Aby uzyskać więcej informacji, zobacz [HtmlSelect Server Control — składnia deklaratywna](https://msdn.microsoft.com/ee93bdec-b343-441a-a8ff-56ffcafe9ae5), [NIB: How to: Create scripts and Edit procedurs](https://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d)Controls, [reDropDownListing serwer sieci Web](https://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608), [omówienie kontrolki serwera sieci Web](https://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97), <xref:System.Web.UI.HtmlControls.HtmlSelect> i  <xref:System.Web.UI.WebControls.DropDownList>.
+ Aby uzyskać więcej informacji, zobacz [HtmlSelect Server Control — składnia deklaratywna](https://msdn.microsoft.com/ee93bdec-b343-441a-a8ff-56ffcafe9ae5), [NIB: How to: Create scripts and Edit procedurs](https://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d)Controls, [reDropDownListing serwer sieci Web](https://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608), [omówienie kontrolki serwera sieci Web](https://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97), <xref:System.Web.UI.HtmlControls.HtmlSelect>i <xref:System.Web.UI.WebControls.DropDownList>.
 
  **Linia pozioma** ![strona HTML dla reguły poziomej](../../ide/reference/media/vxhorizontal.gif "vxHorizontal")
 

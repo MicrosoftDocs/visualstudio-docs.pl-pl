@@ -9,19 +9,19 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 124fc1027e3b5eba537341c87ae2a80ce5c325bc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a2757201f482682b8fdf26275f510984629204f6
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666070"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300909"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Wprowadzenie do języków specyficznych dla domeny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W tym temacie objaśniono podstawowe pojęcia związane z definiowaniem i używaniem języka specyficznego dla domeny (DSL) utworzonego przy użyciu zestawu SDK modelowania dla programu Visual Studio.
 
- Jeśli dopiero zaczynasz korzystać z programu językami DSL, zalecamy przechodzenie przez **laboratorium narzędzi DSL**, które można znaleźć w tej witrynie: [Visualizaton i Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
+ Jeśli dopiero zaczynasz korzystać z programu językami DSL, zalecamy przechodzenie przez **laboratorium narzędzi DSL**, które można znaleźć w tej witrynie: [Visualizaton i Modeling SDK](https://go.microsoft.com/fwlink/?LinkID=186128)
 
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>Co można zrobić przy użyciu języka specyficznego dla domeny?
  Język specyficzny dla domeny jest zapisem, zwykle graficznym, który jest przeznaczony do użycia w konkretnym celu. Z kolei, języki takie jak UML są ogólnego przeznaczenia. W DSL można zdefiniować typy elementów modelu i ich relacji oraz sposób ich wyświetlania na ekranie.
@@ -37,12 +37,12 @@ W tym temacie objaśniono podstawowe pojęcia związane z definiowaniem i używa
  Pozostała część tego omówienia to przewodnik, w którym wprowadzono podstawowe operacje tworzenia i używania języka specyficznego dla domeny w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
 ## <a name="prerequisites"></a>Wymagania wstępne
- Aby zdefiniować DSL, należy zainstalować następujące składniki:
+ Aby zdefiniować DSL, musisz mieć zainstalowane następujące składniki:
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://go.microsoft.com/fwlink/?LinkId=185579)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://go.microsoft.com/fwlink/?LinkId=185580)|
 |Modeling SDK dla programu Visual Studio|[Pobierz MSDK](https://www.microsoft.com/download/details.aspx?id=48148)|
 
 ## <a name="creating-a-dsl-solution"></a>Tworzenie rozwiązania DSL
@@ -112,9 +112,9 @@ W tym temacie objaśniono podstawowe pojęcia związane z definiowaniem i używa
 
     Zostanie uruchomione doświadczalne wystąpienie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Eksperymentalne wystąpienie przyjmuje swoje ustawienia z oddzielnego poddrzewa rejestru, gdzie rozszerzenia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] są zarejestrowane do celów debugowania. Normalne wystąpienia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nie mają dostępu do rozszerzeń zarejestrowanych w tym miejscu.
 
-3. W eksperymentalnym wystąpieniu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Otwórz plik modelu o nazwie **test** z **Eksplorator rozwiązań**.
+3. W eksperymentalnym wystąpieniu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]Otwórz plik modelu o nazwie **test** z **Eksplorator rozwiązań**.
 
-    \- lub-
+    \- lub —
 
     Kliknij prawym przyciskiem myszy projekt debugowanie, wskaż polecenie **Dodaj**, a następnie kliknij pozycję **element**. W oknie dialogowym **Dodaj element** wybierz typ pliku DSL.
 
@@ -141,7 +141,7 @@ W tym temacie objaśniono podstawowe pojęcia związane z definiowaniem i używa
 
  Model można wyświetlić jako drzewo w widoku **Eksploratora** podczas edytowania modelu. Podczas dodawania kształtów do diagramu elementy modelu są również wyświetlane w Eksploratorze. Eksploratora można używać nawet wtedy, gdy nie ma diagramu.
 
- Jeśli Eksplorator nie jest widoczny w wystąpieniu debugowania [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], w menu **Widok** wskaż polecenie **inne okna**, a następnie kliknij polecenie *\<Your język >* **Explorer**.
+ Jeśli Eksplorator nie jest widoczny w wystąpieniu debugowania [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], w menu **Widok** wskaż polecenie **inne okna**, a następnie kliknij *\<>* **Explorer**.
 
 ### <a name="the-api-of-your-dsl"></a>Interfejs API DSL
  DSL generuje interfejs API, który umożliwia odczytywanie i aktualizowanie modeli, które są wystąpieniami DSL. Jedną z aplikacji interfejsu API jest generowanie plików tekstowych z modelu. Aby uzyskać więcej informacji, zobacz [generowanie kodu w czasie projektowania przy użyciu szablonów tekstowych T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
@@ -158,13 +158,13 @@ W tym temacie objaśniono podstawowe pojęcia związane z definiowaniem i używa
 
 ##### <a name="to-regenerate-text-files-after-you-change-the-model-file"></a>Aby ponownie wygenerować pliki tekstowe po zmianie pliku modelu
 
-1. W eksperymentalnym wystąpieniu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Zapisz plik modelu.
+1. W eksperymentalnym wystąpieniu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]Zapisz plik modelu.
 
 2. Upewnij się, że parametr Nazwa pliku w każdym pliku TT odwołuje się do pliku modelu, który jest używany do eksperymentów. Zapisz plik. tt.
 
 3. Kliknij pozycję **Przekształć wszystkie szablony** na pasku narzędzi **Eksplorator rozwiązań**.
 
-    \- lub-
+    \- lub —
 
     Kliknij prawym przyciskiem myszy szablony, które chcesz wygenerować ponownie, a następnie kliknij polecenie **Uruchom narzędzie niestandardowe**.
 
@@ -200,7 +200,7 @@ W tym temacie objaśniono podstawowe pojęcia związane z definiowaniem i używa
 
     2. Otwórz okno Właściwości i umieść go tak, aby można było zobaczyć w tym samym czasie Eksploratora i właściwości DSL.
 
-    3. W Eksploratorze DSL rozwiń węzeł **Edytor**, **karty PRZYBORNIK**, *\<your DSL >* , a następnie **Narzędzia**.
+    3. W Eksploratorze DSL rozwiń węzeł **Edytor**, **karty przybornika**, *\<> DSL*, a następnie **Narzędzia**.
 
     4. Kliknij przycisk **example**. Jest to element przybornika, który służy do tworzenia elementów.
 
@@ -218,7 +218,7 @@ W tym temacie objaśniono podstawowe pojęcia związane z definiowaniem i używa
 
     3. Naciśnij F5. Poczekaj na wyświetlenie eksperymentalnego wystąpienia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
-4. W rozwiązaniu debugowania w eksperymentalnym wystąpieniu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Otwórz plik modelu testowego. Przeciągnij elementy na nie z przybornika. Zauważ, że podpisy narzędzia i nazwy typów w Eksploratorze DSL zostały zmienione.
+4. W rozwiązaniu debugowania w eksperymentalnym wystąpieniu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]Otwórz plik modelu testowego. Przeciągnij elementy na nie z przybornika. Zauważ, że podpisy narzędzia i nazwy typów w Eksploratorze DSL zostały zmienione.
 
 5. Zapisz plik modelu.
 
@@ -324,7 +324,7 @@ W tym temacie objaśniono podstawowe pojęcia związane z definiowaniem i używa
 
     1. W **Eksploratorze DSL**rozwiń węzeł **Edytor** , a następnie **kartę Przybornik**.
 
-    2. Kliknij prawym przyciskiem myszy *\<your DSL >* a następnie kliknij polecenie **Dodaj nowy element**.
+    2. Kliknij prawym przyciskiem myszy *\<> DSL* , a następnie kliknij polecenie **Dodaj nowy element**.
 
     3. Ustaw właściwość **name** nowego narzędzia i ustaw jej właściwość **Class** na miejscowość.
 
@@ -332,7 +332,7 @@ W tym temacie objaśniono podstawowe pojęcia związane z definiowaniem i używa
 
 7. Utwórz narzędzie łącznika do tworzenia linku między miastami i osobami.
 
-    1. Kliknij prawym przyciskiem myszy *\<your DSL >* a następnie kliknij polecenie **Dodaj nowe łączniki**.
+    1. Kliknij prawym przyciskiem myszy *\<> DSL* , a następnie kliknij polecenie **Dodaj nowe łączniki**.
 
     2. Ustaw właściwość Name nowego narzędzia.
 
@@ -342,7 +342,7 @@ W tym temacie objaśniono podstawowe pojęcia związane z definiowaniem i używa
 
 8. Zapisz definicję DSL, kliknij pozycję **Przekształć wszystkie szablony**, a następnie naciśnij klawisz **F5**.
 
-9. W eksperymentalnym wystąpieniu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Otwórz plik modelu testowego. Użyj nowych narzędzi do tworzenia miast i linków między miastami i osobami. Należy zauważyć, że można tworzyć tylko linki między prawidłowymi typami elementu.
+9. W eksperymentalnym wystąpieniu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]Otwórz plik modelu testowego. Użyj nowych narzędzi do tworzenia miast i linków między miastami i osobami. Należy zauważyć, że można tworzyć tylko linki między prawidłowymi typami elementu.
 
 10. Utwórz kod, który wyświetla miasto, w którym mieszka każda osoba. Szablony tekstowe są jednym z miejsc, w których można uruchomić ten kod. Na przykład można zmodyfikować istniejący plik Sample.tt w rozwiązaniu debugowania, aby zawierał następujący kod:
 
@@ -383,7 +383,7 @@ W tym temacie objaśniono podstawowe pojęcia związane z definiowaniem i używa
 
  Możesz użyć tej samej procedury, aby zainstalować DSL na własnym komputerze, aby nie trzeba było korzystać z eksperymentalnego wystąpienia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
- Aby uzyskać więcej informacji, zobacz [wdrażanie rozwiązań językowych właściwych dla domeny](../modeling/deploying-domain-specific-language-solutions.md).
+ Aby uzyskać więcej informacji, zobacz [wdrażania rozwiązań języka dotyczącego określonej domeny](../modeling/deploying-domain-specific-language-solutions.md).
 
 ## <a name="Reset"></a>Usuwanie starej eksperymentalnej językami DSL
  Jeśli utworzono eksperymentalne językami DSL, które nie są już potrzebne, możesz je usunąć z komputera, resetowanie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wystąpienie eksperymentalne.
@@ -399,4 +399,4 @@ W tym temacie objaśniono podstawowe pojęcia związane z definiowaniem i używa
 2. Kompiluj wszystkie eksperymentalne językami DSL lub inne eksperymentalne rozszerzenia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], które nadal mają być używane.
 
 ## <a name="see-also"></a>Zobacz też
- [Opis modeli, klas i relacji](../modeling/understanding-models-classes-and-relationships.md) [dotyczących definiowania Visualizaton języka specyficznego dla domeny](../modeling/how-to-define-a-domain-specific-language.md) [i zestawu SDK modelowania](http://go.microsoft.com/fwlink/?LinkID=186128)
+ [Opis modeli, klas i relacji](../modeling/understanding-models-classes-and-relationships.md) [dotyczących definiowania Visualizaton języka specyficznego dla domeny](../modeling/how-to-define-a-domain-specific-language.md) [i zestawu SDK modelowania](https://go.microsoft.com/fwlink/?LinkID=186128)

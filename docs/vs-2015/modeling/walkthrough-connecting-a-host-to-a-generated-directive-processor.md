@@ -12,12 +12,12 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 41023f49f1897f3e3d26d7fc57807ea98fa35f24
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 10c9c6cfa1d8553c79b710239a99f8ea9e2438e5
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659297"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301272"
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>Wskazówki: łączenie hosta z generowanym procesorem dyrektywy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,13 +38,13 @@ Można napisać własnego hosta, który przetwarza szablony tekstowe. Podstawowy
 - Testowanie hosta niestandardowego z wygenerowanym procesorem dyrektywy.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
- Aby zdefiniować DSL, należy zainstalować następujące składniki:
+ Aby zdefiniować DSL, musisz mieć zainstalowane następujące składniki:
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|
-|Visual Studio Wizualizacja i Modeling SDK|[http://go.microsoft.com/fwlink/?LinkID=186128](http://go.microsoft.com/fwlink/?LinkID=186128)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://go.microsoft.com/fwlink/?LinkId=185579)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://go.microsoft.com/fwlink/?LinkId=185580)|
+|Visual Studio Visualisation i Modeling SDK|[http://go.microsoft.com/fwlink/?LinkID=186128](https://go.microsoft.com/fwlink/?LinkID=186128)|
 
  Ponadto musisz mieć niestandardowe przekształcenia szablonu tekstu utworzonego w [przewodniku: Tworzenie niestandardowego hosta szablonu tekstu](../modeling/walkthrough-creating-a-custom-text-template-host.md).
 
@@ -65,12 +65,12 @@ Można napisać własnego hosta, który przetwarza szablony tekstowe. Podstawowy
 
      Aby uzyskać więcej informacji na temat tworzenia rozwiązania dotyczącego języka specyficznego dla domeny, zobacz [How to: Create a specyficzne dla domeny rozwiązanie językowe](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
-2. W menu **kompilacja** kliknij pozycję **Kompiluj rozwiązanie**.
+2. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
 
    > [!IMPORTANT]
    > Ten krok powoduje wygenerowanie procesora dyrektywy i dodanie klucza do niego w rejestrze.
 
-3. W menu **debugowanie** kliknij **Rozpocznij debugowanie**.
+3. Na **debugowania** menu, kliknij przycisk **Rozpocznij debugowanie**.
 
     Zostanie otwarte drugie wystąpienie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
@@ -95,17 +95,17 @@ Można napisać własnego hosta, który przetwarza szablony tekstowe. Podstawowy
 
 3. Dodaj następujące odwołania:
 
-    - Microsoft. VisualStudio. Modeling. Sdk. 11.0
+    - Microsoft.VisualStudio.Modeling.Sdk.11.0
 
-    - Microsoft. VisualStudio. Modeling. Sdk. Diagrams. 11.0
+    - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0
 
-    - Microsoft. VisualStudio. TextTemplating. 11.0
+    - Microsoft.VisualStudio.TextTemplating.11.0
 
-    - Microsoft. VisualStudio. TextTemplating. Interfaces. 11.0
+    - Microsoft.VisualStudio.TextTemplating.Interfaces.11.0
 
-    - Microsoft. VisualStudio. TextTemplating. Modeling. 11.0
+    - Microsoft.VisualStudio.TextTemplating.Modeling.11.0
 
-    - Microsoft. VisualStudio. TextTemplating. VSHost. 11.0
+    - Microsoft.VisualStudio.TextTemplating.VSHost.11.0
 
 4. W górnej części Program.cs lub Module1. vb Dodaj następujący wiersz kodu:
 
@@ -117,7 +117,7 @@ Można napisać własnego hosta, który przetwarza szablony tekstowe. Podstawowy
     Imports Microsoft.Win32
     ```
 
-5. Znajdź kod właściwości `StandardAssemblyReferences` i zastąp go następującym kodem:
+5. Znajdź kod właściwości `StandardAssemblyReferences`i zastąp go następującym kodem:
 
     > [!NOTE]
     > W tym kroku dodasz odwołania do zestawów, które są wymagane przez wygenerowany procesor dyrektywy, który będzie obsługiwany przez hosta.
@@ -153,7 +153,7 @@ Można napisać własnego hosta, który przetwarza szablony tekstowe. Podstawowy
     }
     ```
 
-6. Znajdź kod dla funkcji `ResolveDirectiveProcessor` i zastąp go następującym kodem:
+6. Znajdź kod dla funkcji `ResolveDirectiveProcessor`i zastąp go następującym kodem:
 
     > [!IMPORTANT]
     > Ten kod zawiera zakodowane odwołania do nazwy wygenerowanego procesora dyrektywy, z którym chcesz się połączyć. Można to łatwo zrobić, a w tym przypadku sprawdza wszystkie procesory dyrektywy wymienione w rejestrze i próbuje znaleźć dopasowanie. W takim przypadku host będzie działał z dowolnym wygenerowanym procesorem dyrektywy.
@@ -227,9 +227,9 @@ Można napisać własnego hosta, który przetwarza szablony tekstowe. Podstawowy
             }
     ```
 
-7. W menu **plik** kliknij polecenie **Zapisz wszystko**.
+7. Na **pliku** menu, kliknij przycisk **Zapisz wszystko**.
 
-8. W menu **kompilacja** kliknij pozycję **Kompiluj rozwiązanie**.
+8. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
 
 ## <a name="testing-the-custom-host-with-the-directive-processor"></a>Testowanie hosta niestandardowego z procesorem dyrektywy
  Aby przetestować hosta niestandardowego tekstu, najpierw należy napisać szablon tekstu, który wywołuje wygenerowany procesor dyrektywy. Następnie uruchom hosta niestandardowego, przekaż go do nazwy szablonu tekstu i sprawdź, czy dyrektywa została przetworzona prawidłowo.
@@ -310,7 +310,7 @@ Można napisać własnego hosta, który przetwarza szablony tekstowe. Podstawowy
     #>
     ```
 
-3. W kodzie Zastąp \<YOUR PATH > ścieżką pliku Sample. min w języku specyficznym dla projektu, który został utworzony w pierwszej procedurze.
+3. W kodzie Zastąp \<ścieżkę > ścieżką pliku Sample. min z języka specyficznego dla projektu utworzonego w pierwszej procedurze.
 
 4. Zapisz i zamknij plik.
 

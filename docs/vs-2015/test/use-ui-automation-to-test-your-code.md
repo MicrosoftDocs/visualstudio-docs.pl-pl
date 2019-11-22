@@ -17,12 +17,12 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: 87
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 070a9bedd5e01e6c39d55d784559d4458e35d72f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2eb0a4ee7c69ebe2bf753d4bbde63160b6e0043e
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657290"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297987"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Używanie automatyzacji interfejsu użytkownika do testowania kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Testy automatyczne, które obsługują aplikację za poorednictwem interfejsu u�
 
  Wyspecjalizowany Konstruktor i Edytor testów CUIT ułatwiają tworzenie i edytowanie kodowanych testów interfejsu użytkownika, nawet jeśli główne umiejętności są skoncentrowane na testowaniu zamiast kodowania. Ale jeśli jesteś deweloperem i chcesz przetworzyć test w bardziej zaawansowany sposób, kod jest strukturalny, dzięki czemu będzie on prosty do kopiowania i dostosowywania. Na przykład możesz zarejestrować test, aby kupić coś w witrynie sieci Web, a następnie edytować wygenerowany kod, aby dodać pętlę, która kupuje wiele elementów.
 
- **Requirements**
+ **Wymagania**
 
 - Visual Studio Enterprise
 
@@ -144,7 +144,7 @@ Testy automatyczne, które obsługują aplikację za poorednictwem interfejsu u�
 
     Otwórz UIMap. UITest. Ten plik zostanie otwarty w edytorze kodowanego testu interfejsu użytkownika, w którym można edytować dowolną sekwencję zarejestrowanych akcji, a także edytować potwierdzenia.
 
-    ![Edytor kodowanego testu interfejsu użytkownika](../test/media/cuit-editor-edit.png "CUIT_Editor_edit")
+    ![Edytor testu kodowanego interfejsu użytkownika](../test/media/cuit-editor-edit.png "CUIT_Editor_edit")
 
     Aby uzyskać więcej informacji, zobacz [Edytowanie kodowanych testów interfejsu użytkownika za pomocą edytora kodowanego testu interfejsu użytkownika](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
 
@@ -161,7 +161,7 @@ Testy automatyczne, które obsługują aplikację za poorednictwem interfejsu u�
 
 - ![Prerequsite](../test/media/prereq.png "Ignoruj") Jeśli nie chcesz rejestrować akcji do uruchamiania testowanej aplikacji, musisz uruchomić aplikację przed wybraniem ikony **rekordu** .
 
-- ![Prerequsite](../test/media/prereq.png "Ignoruj") Na końcu testu proces, w którym są kończone przebiegi testowe. Jeśli aplikacja została uruchomiona w teście, aplikacja zwykle zostanie zamknięta.  Jeśli nie chcesz, aby test zamykał aplikację po jej zakończeniu, musisz dodać plik. runsettings do rozwiązania i użyć opcji `KeepExecutorAliveAfterLegacyRun`. Aby uzyskać więcej informacji, zobacz [Konfigurowanie testów jednostkowych przy użyciu pliku. runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).
+- ![Prerequsite](../test/media/prereq.png "Ignoruj") Na końcu testu proces, w którym są kończone przebiegi testowe. Jeśli aplikacja została uruchomiona w teście, aplikacja zwykle zostanie zamknięta.  Jeśli nie chcesz, aby test zamykał aplikację po jej zakończeniu, musisz dodać plik. runsettings do rozwiązania i użyć opcji `KeepExecutorAliveAfterLegacyRun`. Aby uzyskać więcej informacji, zobacz [Konfigurowanie testów jednostkowych przy użyciu pliku runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).
 
 - ![Prerequsite](../test/media/prereq.png "Ignoruj") Można dodać metodę inicjowania testu, identyfikowaną przez atrybut [TestInitialize], który uruchamia kod na początku każdej metody testowej. Na przykład można uruchomić aplikację z metody TestInitialize.
 
@@ -388,7 +388,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - Pierwsza część składa się z akcji, które można wykonać na kontrolkach testu interfejsu użytkownika. Na przykład kodowane testy interfejsu użytkownika mogą symulować kliknięcia myszą w kontrolce testu interfejsu użytkownika lub symulować klucze wpisane na klawiaturze, aby mieć wpływ na kontrolę testu interfejsu użytkownika.
 
-- Druga część obejmuje umożliwienie pobierania i ustawiania właściwości kontrolki testu interfejsu użytkownika. Na przykład kodowane testy interfejsu użytkownika mogą pobierać liczbę elementów w `ListBox` lub ustawiać `CheckBox` do wybranego stanu.
+- Druga część obejmuje umożliwienie pobierania i ustawiania właściwości kontrolki testu interfejsu użytkownika. Na przykład kodowane testy interfejsu użytkownika mogą pobierać liczbę elementów w `ListBox`lub ustawiać `CheckBox` do wybranego stanu.
 
   **Uzyskiwanie dostępu do akcji kontroli testu interfejsu użytkownika**
 
@@ -443,7 +443,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
  Kodowane testy interfejsu użytkownika można analizować za pomocą dzienników kodowanego testu interfejsu użytkownika. Dzienniki kodowanych testów interfejsu użytkownika filtru i rejestrowania ważnych informacji o kodowanych przebiegach testów interfejsu użytkownika. Format dzienników pozwala szybko debugować problemy. Aby uzyskać więcej informacji, zobacz [Analizowanie kodowanych testów interfejsu użytkownika za pomocą dzienników kodowanych testów interfejsu użytkownika](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md).
 
 ## <a name="VerifyCodeUsingCUITWhatsNext"></a>Co dalej?
- **Dodatkowe opcje uruchamiania kodowanych testów interfejsu użytkownika:** Kodowane testy interfejsu użytkownika można uruchomić bezpośrednio z programu Visual Studio, zgodnie z opisem we wcześniejszej części tego tematu. Dodatkowo można uruchamiać zautomatyzowane testy interfejsu użytkownika z [!INCLUDE[TCMext](../includes/tcmext-md.md)] lub z [!INCLUDE[esprbuild](../includes/esprbuild-md.md)]. Gdy kodowane testy interfejsu użytkownika są zautomatyzowane, muszą one współdziałać z pulpitem podczas jego uruchamiania, w przeciwieństwie do innych automatycznych testów.
+ **Dodatkowe opcje uruchamiania kodowanych testów interfejsu użytkownika:** Kodowane testy interfejsu użytkownika można uruchomić bezpośrednio z programu Visual Studio, zgodnie z opisem we wcześniejszej części tego tematu. Dodatkowo można uruchamiać zautomatyzowane testy interfejsu użytkownika z [!INCLUDE[TCMext](../includes/tcmext-md.md)]lub z [!INCLUDE[esprbuild](../includes/esprbuild-md.md)]. Gdy kodowane testy interfejsu użytkownika są zautomatyzowane, muszą one współdziałać z pulpitem podczas jego uruchamiania, w przeciwieństwie do innych automatycznych testów.
 
 - [Instrukcje: uruchamianie testów z Microsoft Visual Studio](https://msdn.microsoft.com/library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)
 
@@ -465,22 +465,22 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - [Rozszerzanie kodowanych testów interfejsu użytkownika i rejestrowanie akcji obsługujących program Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
 
-  Kodowane testy interfejsu użytkownika są często używane do automatyzowania ręcznych testów. Aby uzyskać dodatkowe wskazówki, zobacz [testowanie ciągłego dostarczania przy użyciu programu Visual Studio 2012 — Rozdział 5: Automatyzowanie testów systemu](http://go.microsoft.com/fwlink/?LinkID=255196). Aby uzyskać więcej informacji na temat testów ręcznych, zobacz [ &#91;&#93; wycofywanie tworzenia ręcznych przypadków testowych przy użyciu Microsoft Test Manager](https://msdn.microsoft.com/library/9989e184-c8e4-444b-998d-a1a5ec94461e). Aby uzyskać więcej informacji na temat zautomatyzowanych testów systemowych, zobacz [Tworzenie testów automatycznych przy użyciu Microsoft Test Manager](https://msdn.microsoft.com/7b5075ee-ddfe-411d-b1d4-94283550a5d0).
+  Kodowane testy interfejsu użytkownika są często używane do automatyzowania ręcznych testów. Aby uzyskać dodatkowe wskazówki, zobacz [testowanie ciągłego dostarczania przy użyciu programu Visual Studio 2012 — Rozdział 5: Automatyzowanie testów systemu](https://go.microsoft.com/fwlink/?LinkID=255196). Aby uzyskać więcej informacji na temat testów ręcznych, zobacz [ &#91;&#93; wycofywanie tworzenia ręcznych przypadków testowych przy użyciu Microsoft Test Manager](https://msdn.microsoft.com/library/9989e184-c8e4-444b-998d-a1a5ec94461e). Aby uzyskać więcej informacji na temat zautomatyzowanych testów systemowych, zobacz [Tworzenie testów automatycznych przy użyciu Microsoft Test Manager](https://msdn.microsoft.com/7b5075ee-ddfe-411d-b1d4-94283550a5d0).
 
 ## <a name="external-resources"></a>Zasoby zewnętrzne
 
 ### <a name="guidance"></a>Wskazówki
-- [Testowanie w celu ciągłego dostarczania za pomocą programu Visual Studio 2012 — Rozdział 2: testowanie jednostkowe: testowanie wewnątrz](http://go.microsoft.com/fwlink/?LinkID=255188)
+- [Testowanie w celu ciągłego dostarczania za pomocą programu Visual Studio 2012 — Rozdział 2: testowanie jednostkowe: testowanie wewnątrz](https://go.microsoft.com/fwlink/?LinkID=255188)
 
-- [Testowanie w celu ciągłego dostarczania za pomocą programu Visual Studio 2012 — Rozdział 5: Automatyzowanie testów systemowych](http://go.microsoft.com/fwlink/?LinkID=255196)
+- [Testowanie w celu ciągłego dostarczania za pomocą programu Visual Studio 2012 — Rozdział 5: Automatyzowanie testów systemowych](https://go.microsoft.com/fwlink/?LinkID=255196)
 
 ### <a name="faq"></a>Najczęściej zadawane pytania
-- [Kodowane testy interfejsu użytkownika — często zadawane pytania — 1](http://go.microsoft.com/fwlink/?LinkID=230576)
+- [Kodowane testy interfejsu użytkownika — często zadawane pytania — 1](https://go.microsoft.com/fwlink/?LinkID=230576)
 
-- [Kodowane testy interfejsu użytkownika — często zadawane pytania — 2](http://go.microsoft.com/fwlink/?LinkID=230578)
+- [Kodowane testy interfejsu użytkownika — często zadawane pytania — 2](https://go.microsoft.com/fwlink/?LinkID=230578)
 
 ### <a name="forum"></a>Forum
-- [Testowanie automatyzacji interfejsu użytkownika programu Visual Studio (w tym CodedUI)](http://go.microsoft.com/fwlink/?LinkID=224497)
+- [Testowanie automatyzacji interfejsu użytkownika programu Visual Studio (w tym CodedUI)](https://go.microsoft.com/fwlink/?LinkID=224497)
 
 ## <a name="see-also"></a>Zobacz także
 

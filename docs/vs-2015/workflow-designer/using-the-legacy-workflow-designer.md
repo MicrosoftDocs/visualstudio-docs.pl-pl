@@ -11,23 +11,23 @@ caps.latest.revision: 10
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c09c4588bb1fcd0aa7487a6896d2fc286253e198
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2fa11cd0b29f3b8ee6008b8c0b3369b16812f0e5
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72606777"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302784"
 ---
 # <a name="using-the-legacy-workflow-designer"></a>Używanie starszej wersji Projektanta przepływu pracy
 Starsze [!INCLUDE[wfd2](../includes/wfd2-md.md)] dostarczone przez [!INCLUDE[vs2010](../includes/vs2010-md.md)] mogą służyć jako element docelowy [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
  Dostęp do niego można uzyskać, wybierając opcję **.NET Framework 3,0** lub opcję **.NET Framework 3,5** na liście rozwijanej w górnej części okna **Nowy projekt** . Opcja domyślna w [!INCLUDE[vs2010](../includes/vs2010-md.md)] jest **.NET Framework 4** , który służy do tworzenia aplikacji [!INCLUDE[wf](../includes/wf-md.md)] przeznaczonych dla [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)].
 
- @No__t_0 zapewnia sposób graficznego tworzenia aplikacji [!INCLUDE[wf](../includes/wf-md.md)] przy użyciu znanego [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] interfejsu użytkownika. [!INCLUDE[wf](../includes/wf-md.md)] aplikacje składają się z kroków procesu przepływu pracy o nazwie Activities. Aby utworzyć przepływ pracy, Zredaguj działania na powierzchni projektowej, przeciągając odpowiednie Projektanci działań z **przybornika** na powierzchnię projektu.
+ [!INCLUDE[wfd2](../includes/wfd2-md.md)] zapewnia sposób graficznego tworzenia aplikacji [!INCLUDE[wf](../includes/wf-md.md)] przy użyciu znanego [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] interfejsu użytkownika. [!INCLUDE[wf](../includes/wf-md.md)] aplikacje składają się z kroków procesu przepływu pracy o nazwie Activities. Aby utworzyć przepływ pracy, Zredaguj działania na powierzchni projektowej, przeciągając odpowiednie Projektanci działań z **przybornika** na powierzchnię projektu.
 
  W poniższej tabeli wymieniono najważniejsze funkcje [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Windows Workflow Foundation.
 
-|Funkcja|Opis|
+|Cecha|Opis|
 |-------------|-----------------|
 |Przeciąganie i upuszczanie działania|Przeciągnij działania z **przybornika** na powierzchnię projektu, aby utworzyć przepływ pracy.|
 |Przeglądarka właściwości|Standardowe okno **Właściwości** w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] służy do konfigurowania właściwości działania.|
@@ -54,4 +54,4 @@ Starsze [!INCLUDE[wfd2](../includes/wfd2-md.md)] dostarczone przez [!INCLUDE[vs2
  [Starsza wersja projektanta pomocy interfejsu użytkownika programu Windows Workflow Foundation](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)
 
 ## <a name="see-also"></a>Zobacz też
- [Opracowywanie przepływów pracy](http://go.microsoft.com/fwlink?LinkID=65010)
+ [Opracowywanie przepływów pracy](https://go.microsoft.com/fwlink?LinkID=65010)

@@ -8,12 +8,12 @@ caps.latest.revision: 9
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 83132da4b6687db74920015df0ad817eb75673db
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ce48f9dee90e33782a92116ee4ec298e53770489
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669048"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300471"
 ---
 # <a name="ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader"></a>CA3077: Niezabezpieczone przetwarzanie w elemencie Design interfejsu API, dokumencie XML i czytniku tekstu dla kodu XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,9 +29,9 @@ ms.locfileid: "72669048"
  Podczas projektowania interfejsu API pochodnego od XmlDocument i XMLTextReader należy mieć na uwadze <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>.  Używanie niezabezpieczonych wystąpień DTDProcessing w przypadku odwoływania się do lub rozpoznawania zewnętrznych źródeł jednostek lub ustawiania niezabezpieczonych wartości w kodzie XML może prowadzić do ujawnienia informacji.
 
 ## <a name="rule-description"></a>Opis reguły
- [Definicja typu dokumentu (DTD)](https://msdn.microsoft.com/library/aa468547.aspx) to jeden z dwóch sposobów, przez który parser XML może ustalić ważność dokumentu, zgodnie z definicją [organizacja World Wide Web Consortium (W3C) XML (XML) 1,0](http://www.w3.org/TR/2008/REC-xml-20081126/). Ta reguła umożliwia wyszukiwanie właściwości i wystąpień, w przypadku których niezaufane dane są akceptowane, aby ostrzec deweloperów o potencjalnych zagrożeniach związanych z [ujawnianiem informacji](https://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) , co może prowadzić do ataków [typu "odmowa usługi" (DOS)](https://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) . Ta zasada wyzwala następujące wyzwalacze:
+ [Definicja typu dokumentu (DTD)](https://msdn.microsoft.com/library/aa468547.aspx) to jeden z dwóch sposobów, przez który parser XML może ustalić ważność dokumentu, zgodnie z definicją [organizacja World Wide Web Consortium (W3C) XML (XML) 1,0](https://www.w3.org/TR/2008/REC-xml-20081126/). Ta reguła umożliwia wyszukiwanie właściwości i wystąpień, w przypadku których niezaufane dane są akceptowane, aby ostrzec deweloperów o potencjalnych zagrożeniach związanych z [ujawnianiem informacji](https://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) , co może prowadzić do ataków [typu "odmowa usługi" (DOS)](https://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) . Ta zasada wyzwala następujące wyzwalacze:
 
-- klasy <xref:System.Xml.XmlDocument> lub <xref:System.Xml.XmlTextReader> używają domyślnych wartości programu rozpoznawania nazw do przetwarzania DTD.
+- klasy <xref:System.Xml.XmlDocument> lub <xref:System.Xml.XmlTextReader> używają domyślnych wartości programu rozpoznawania nazw dla przetwarzania DTD.
 
 - Nie zdefiniowano konstruktora dla klas pochodnych XmlDocument lub XmlTextReader lub nie jest używana bezpieczna wartość dla <xref:System.Xml.XmlResolver>.
 
@@ -39,7 +39,7 @@ ms.locfileid: "72669048"
 
 - Należy prawidłowo przechwycić i przetworzyć wszystkie wyjątki XmlTextReader, aby uniknąć ujawnienia informacji o ścieżce.
 
-- Użyj  <xref:System.Xml.XmlSecureResolver>instead XmlResolver, aby ograniczyć zasoby, do których XmlTextReader może uzyskać dostęp.
+- Użyj <xref:System.Xml.XmlSecureResolver>zamiast XmlResolver, aby ograniczyć zasoby, do których XmlTextReader może uzyskać dostęp.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Jeśli nie masz pewności, że dane wejściowe są znane z zaufanego źródła, nie pomijaj reguły z tego ostrzeżenia.

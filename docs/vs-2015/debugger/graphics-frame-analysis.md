@@ -1,5 +1,5 @@
 ---
-title: Analiza klatek grafiki | Dokumentacja firmy Microsoft
+title: analiza klatek grafiki | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -11,194 +11,194 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bc11af7d259f252d7659f559be15b85f4af90149
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 331722df4749ca59241259e13c3b387d8303b69f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437940"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300508"
 ---
 # <a name="graphics-frame-analysis"></a>Analiza ramek grafiki
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Użyj analizy klatek grafiki w analizatora grafiki programu Visual Studio do analizowania i zoptymalizować wydajność renderowania Direct3D grach i aplikacjach.  
+Użyj analiza klatek grafiki w analizator grafiki programu Visual Studio, aby przeanalizować i zoptymalizować wydajność renderowania gry lub aplikacji Direct3D.  
   
 > [!IMPORTANT]
-> Analizator grafiki programu obsługuje analizy klatek aplikacji, które używają programu Direct3D 11 na obsługiwanych platformach, w tym Windows 10. Analiza klatek nie jest obecnie obsługiwane w przypadku aplikacji korzystających z programu Direct3D 12.  
+> Analizator grafiki obsługuje analizę klatek dla aplikacji korzystających z programu Direct3D 11 na obsługiwanych platformach, w tym w systemie Windows 10. Analiza klatek nie jest obecnie obsługiwana w przypadku aplikacji korzystających z programu Direct3D 12.  
   
 ## <a name="frame-analysis"></a>Analiza klatek  
- Analiza klatek używa informacje, które są przechwytywane w pliku dziennika grafiki do celów diagnostycznych, ale używa go do podsumowania wydajność renderowania w zamian. Informacje o wydajności nie jest rejestrowane w dzienniku podczas przechwytywania. Zamiast tego informacje o wydajności jest generowany później, podczas analizy klatek przez zdarzenia czasowe i zbieranie statystyk jak odtworzyć ramki. Takie podejście ma kilka zalet w stosunku do rejestrowania informacji o wydajności podczas przechwytywania:  
+ Analiza klatek używa tych samych informacji, które są przechwytywane w pliku dziennika grafiki do celów diagnostycznych, ale używa ich do podsumowywania wydajności renderowania. Informacje o wydajności nie są rejestrowane w dzienniku podczas przechwytywania; Zamiast tego informacje o wydajności są generowane później, podczas analizy klatek przez zdarzenia chronometrażu i zbieranie danych statystycznych w miarę odtwarzania ramki. Takie podejście ma kilka korzyści w porównaniu z rejestrowaniem informacji o wydajności podczas przechwytywania:  
   
-- Analiza klatek można średnie wyniki z poszczególnymi wielu odtworzeniami tego samego ramki upewnij się, że wydajność podsumowania statystycznie dźwięku.  
+- Analiza klatek może obliczyć średnią wyniki z wielu oddziałań tej samej ramki, aby upewnić się, że podsumowanie wydajności jest statystycznym dźwiękiem.  
   
-- Analiza klatek może generować informacji o wydajności, konfiguracji sprzętu i urządzeń, niż to, gdzie informacje zostały przechwycone.  
+- Analiza klatek może generować informacje o wydajności dla konfiguracji sprzętu i urządzeń innych niż te, w których przechwycono informacje.  
   
-- Analiza klatek może generować nowe podsumowania wydajności z wcześniej przechwycone informacje — na przykład, gdy sterowniki procesora GPU są zoptymalizowane pod kątem lub udostępnienia dodatkowych funkcji debugowania.  
+- Analiza klatek może generować nowe podsumowania wydajności z wcześniej przechwyconych informacji — na przykład gdy sterowniki procesora GPU są zoptymalizowane lub uwidaczniają dodatkowe funkcje debugowania.  
   
-  Oprócz tych korzyści analizy klatek można również zmienić sposób renderowania ramki podczas odtwarzania, aby jest obecny, aby dowiedzieć się, jak te zmiany mogą mieć wpływ na wydajność renderowania aplikacji. Te informacje służy do określania między strategii optymalizacji w potencjalne bez konieczności zaimplementować je wszystkie i następnie przechwytywanie i porównaj wszystkie wyniki samodzielnie.  
+  Oprócz tych zalet analiza klatek może również wprowadzać zmiany w sposobie renderowania ramki podczas odtwarzania, aby można było przedstawić informacje o tym, jak te zmiany mogą mieć wpływ na wydajność renderowania aplikacji. Korzystając z tych informacji, można podjąć decyzje dotyczące potencjalnych strategii optymalizacji bez konieczności ich wdrażania, a następnie przechwycić i porównać wszystkie wyniki.  
   
-  Mimo że funkcja analizy klatek jest przeznaczona głównie do pomagają zwiększyć wydajność renderowania, może równie pomóc Ci osiągnąć lepszą jakość wizualną dla elementu docelowego wydajności danego lub ograniczyć zużycie energii procesora GPU.  
+  Chociaż analiza klatek jest przeznaczona głównie do zapewnienia szybszego renderowania wydajności, może być równie pomocna w osiągnięciu lepszej jakości wizualnej dla danego celu wydajności lub zmniejszenia zużycia mocy procesora GPU.  
   
-  Aby wyświetlić pokaz działania analizy klatek czynności dla aplikacji, możesz obejrzeć [analiza klatek grafiki programu Visual Studio](http://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) wideo w witrynie Channel 9.  
+  Aby zapoznać się z pokazem analizy klatek dla aplikacji, możesz obejrzeć film wideo z [programu Visual Studio analiza klatek grafiki](https://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) w witrynie Channel 9.  
   
-## <a name="using-frame-analysis"></a>Za pomocą analizy klatek  
- Zanim będzie możliwe użycie analizy klatek, należy przechwytywać informacje graficzne z aplikacji po jej uruchomieniu, tak samo jak przy użyciu jednej z innych narzędzi Analizator grafiki programu. Następnie w oknie grafiki (.vsglog) dokumentu dziennika wybierz **analizy klatek** kartę.  
+## <a name="using-frame-analysis"></a>Korzystanie z analizy klatek  
+ Przed rozpoczęciem korzystania z analizy klatek należy przechwycić informacje graficzne z aplikacji podczas jej działania tak samo jak w przypadku korzystania z innych narzędzi analizatora grafiki. Następnie w oknie dokumentu dziennika grafiki (. vsglog) wybierz kartę **Analiza klatek** .  
   
- ![Wybierz kartę analizy klatek.](../debugger/media/pix-frame-analysis-select-tab.png "pix_frame_analysis_select_tab")  
+ ![Wybierz kartę Analiza klatek.](../debugger/media/pix-frame-analysis-select-tab.png "pix_frame_analysis_select_tab")  
   
- Po zakończeniu analizy, wyniki są wyświetlane. W górnej części kartę analizy klatek przedstawia oś czasu i tabelę podsumowania. W dolnej części Wyświetla tabele szczegółowe informacje. Jeśli błędy lub ostrzeżenia zostały wygenerowane podczas odtwarzania, ich podsumowanie znajduje się powyżej osi czasu; z tego miejsca możesz wykonać łącza, aby dowiedzieć się więcej na temat błędów i ostrzeżeń.  
+ Po zakończeniu analizy wyniki są wyświetlane. W górnej części karty analiza klatek zostanie wyświetlona oś czasu i tabela podsumowania. Dolna część wyświetla tabele szczegóły. Jeśli błędy lub ostrzeżenia zostały wygenerowane podczas odtwarzania, są one podsumowywane powyżej osi czasu; z tego miejsca możesz skorzystać z linków, aby dowiedzieć się więcej o błędach i ostrzeżeniach.  
   
 ### <a name="interpreting-results"></a>Interpretowanie wyników  
- Interpretując wyniki każdego wariantu, można wywnioskować, że przydatne informacje na temat aplikacji przez renderowanie, wydajności i zachowań. Aby uzyskać więcej informacji na temat renderowanie wariantów zobacz [wariantów](#Variants) w dalszej części tego artykułu.  
+ Interpretując wyniki poszczególnych wariantów, można wywnioskować przydatne informacje o wydajności i zachowaniu aplikacji. Aby uzyskać więcej informacji na temat renderowania wariantów, zobacz [warianty](#Variants) w dalszej części tego artykułu.  
   
- Niektóre wyniki wskazują bezpośrednio, jak wariant wpływa na wydajność renderowania:  
+ Niektóre wyniki bezpośrednio wskazują, w jaki sposób wariant ma wpływ na wydajność renderowania:  
   
-- Jeśli wariant warianty punktowego filtrowania tekstur wykazało, że wzrost wydajności, wówczas używanie tekstury warianty punktowego filtrowania w aplikacji zostaną wyświetlone podobne wzrost wydajności.  
+- Jeśli wariant filtru tekstury wieloliniowej wykazał zyski z wydajności, użycie funkcji filtrowania tekstury liniowej w aplikacji będzie zawierać podobne zyski wydajności.  
   
-- Jeśli wariantu 1 x 1 okienka ekranu wykazało, że wzrost wydajności, następnie zmniejszenie rozmiaru elementów docelowych renderowania w aplikacji będą zwiększyć jej wydajność renderowania.  
+- Jeśli wariant okienka ekranu 1x1 wykazał zyski wydajności, zmniejszenie rozmiaru elementów docelowych renderowania w aplikacji poprawi jego wydajność renderowania.  
   
-- Jeśli wariant kompresji tekstury BC wykazało, że wzrost wydajności, następnie w aplikacji przy użyciu kompresji tekstury BC zostaną wyświetlone podobne wzrost wydajności.  
+- Jeśli wariant kompresji tekstury BC wykazał zyski z wydajności, a następnie użycie kompresji tekstury BC w aplikacji będzie zawierać podobne zyski wydajności.  
   
-- Jeśli wariant 2xMSAA ma prawie ta sama wydajność co wariant 0xMSAA, można włączyć 2xMSAA w swojej aplikacji, aby poprawiać jego jakość renderowanie, bez ponoszenia kosztów w wydajności.  
+- Jeśli wariant 2xMSAA ma prawie taką samą wydajność jak wariant 0xMSAA, możesz włączyć 2xMSAA w aplikacji, aby zwiększyć jakość renderowania bez kosztu wydajności.  
   
-  Inne wyniki może sugerować głębiej, bardziej subtelne wpływ na wydajność Twojej aplikacji:  
+  Inne wyniki mogą sugerować dokładniejsze i bardziej subtelne konsekwencje dla wydajności aplikacji:  
   
-- Jeśli wariantu 1 x 1 okienka ekranu przedstawia bardzo dużych wzrostów wydajności, aplikacja prawdopodobnie zużywa fillrate więcej niż jest dostępne. Jeśli ten wariant wskazuje nie wzrost wydajności, aplikacja jest prawdopodobnie przetwarzania zbyt wielu wierzchołków.  
+- Jeśli odmiana wziernika 1x1 zawiera bardzo duże zyski wydajności, aplikacja prawdopodobnie zużywa więcej Fillrate niż jest dostępna. Jeśli ten wariant nie zawiera żadnych korzyści z wydajności, aplikacja prawdopodobnie przetwarza zbyt wiele wierzchołków.  
   
-- Jeśli wariant formatu docelowego renderowania 16bpp wskazuje znaczący wzrost wydajności, aplikacja prawdopodobnie zużywa zbyt dużej ilości pamięci przepustowość.  
+- Jeśli wariant formatu docelowego renderowania 16bpp pokazuje znaczący wzrost wydajności, prawdopodobnie zużywa zbyt dużo przepustowości pamięci.  
   
-- Jeśli wariant wymiarów tekstury Half/Quarter pokazuje znaczący wzrost wydajności, Twoje tekstury prawdopodobnie zajmować dużo pamięci, używać zbyt dużej ilości przepustowości lub nieefektywnie Użyj pamięci podręcznej tekstury. Jeśli ten wariant wskazuje bez zmian, wydajność, prawdopodobnie można tekstury większych i bardziej szczegółowy bez konieczności płacenia spadek wydajności.  
+- Jeśli wariant wymiarów tekstury połówkowej/kwartału pokazuje znaczący wzrost wydajności, tekstury prawdopodobnie zajmują zbyt dużo pamięci, zużywają zbyt dużo przepustowości lub niewydajne użycie pamięci podręcznej tekstury. Jeśli ten wariant nie wskazuje zmiany wydajności, prawdopodobnie możesz użyć większych, bardziej szczegółowych tekstur bez ponoszenia kosztów wydajności.  
   
-  Gdy będzie dostępnych liczników sprzętowych umożliwia ich zbierania bardzo szczegółowe informacje na temat dlaczego może cierpiących wydajność renderowania Twojej aplikacji. I przez urządzenia do 9.2 lub nowszy poziom funkcji obsługi zapytań zamknięcia głębokość (**pikseli zamknięte** licznika) i sygnatury czasowe. Innych liczników sprzętowych mogą być dostępne, w zależności od tego, czy producent procesora GPU ma zaimplementowany liczników sprzętowych i udostępniane im w jej sterownika. Te liczniki można użyć, aby potwierdzić przyczynę dokładne wyniki wyświetlane w tabeli podsumowania — na przykład można określić, czy overdraw jest czynnikiem, sprawdzając wartość procentowa piksele, które zostały zamknięte przez test głębi.  
+  Gdy liczniki sprzętu są dostępne, można je wykorzystać do zebrania bardzo szczegółowych informacji o tym, dlaczego wydajność renderowania aplikacji może mieć wpływ. Wszystkie urządzenia o 9,2 i wyższych poziomach obsługują szczegółowe zapytania zamknięcia (**zamknięte licznik pikseli** ) i sygnatury czasowe. Inne liczniki sprzętu mogą być dostępne w zależności od tego, czy producent procesora GPU zaimplementował liczniki sprzętowe i uwidacznia je w jego sterowniku. Za pomocą tych liczników można potwierdzić dokładną przyczynę wyników przedstawionych w tabeli podsumowującej — na przykład można określić, czy przeciągnięcie jest czynnikiem, sprawdzając procent pikseli, które były zamknięte przez test głębokości.  
   
-### <a name="timeline-and-summary-table"></a>Oś czasu i tabelę podsumowania  
- Domyślnie oś czasu i tabeli podsumowania są wyświetlane, a pozostałe sekcje są zwinięte.  
+### <a name="timeline-and-summary-table"></a>Oś czasu i tabela podsumowania  
+ Domyślnie zostanie wyświetlona oś czasu i tabela podsumowania, a pozostałe sekcje są zwinięte.  
   
 #### <a name="timeline"></a>Oś czasu  
- Oś czasu przedstawia omówienie czasów wywołanie rysowania względem siebie nawzajem. Ponieważ większych paski odpowiadają wydłużenie czasu rysowania, umożliwia on szybko znaleźć najbardziej kosztowne wywołania rysowania w ramce. Gdy przechwyconej ramki zawiera bardzo dużej liczby wywołań rysowania, wiele rysowania który wywołania są połączone w jeden pasek którego długość jest sumą tych narysuj wywołania.  
+ Oś czasu zawiera przegląd chronometrażu rysowania połączeń względem siebie. Ponieważ większe słupki odnoszą się do dłuższego czasu rysowania, można użyć jej do szybkiego zlokalizowania najbardziej kosztownych wywołań rysowania w ramce. Gdy przechwycone ramki zawiera bardzo dużą liczbę wywołań rysowania, wielokrotne wywołania rysowania są łączone na jeden pasek, którego długość jest sumą tych wywołań rysowania.  
   
- ![Oś czasu pokazuje rysowania&#45;wywołać kosztów. ](../debugger/media/pix-frame-analysis-timeline.png "pix_frame_analysis_timeline")  
+ ![Oś czasu pokazuje koszty&#45;połączeń.](../debugger/media/pix-frame-analysis-timeline.png "pix_frame_analysis_timeline")  
   
- Wskaźnik na pasku, aby zobaczyć, które zdarzenie wywołania rysowania pasku odpowiada. Wybierając słupek powoduje, że lista zdarzeń, które mają być synchronizowane tego zdarzenia.  
+ Możesz obsłużyć wskaźnik na pasku, aby zobaczyć, które zdarzenie rysowania, do którego odnosi się pasek. Wybranie paska powoduje synchronizację listy zdarzeń z tym zdarzeniem.  
   
-#### <a name="table"></a>tabela  
- W tabeli liczb poniżej osi czasu przedstawiono względną wydajność każdego wariantu renderowania dla każdego wywołania rysowania w odniesieniu do aplikacji domyślne renderowanie. Każda kolumna Wyświetla typ variant renderowania różnią i każdy wiersz reprezentuje wywołanie rysowania różnych, która jest identyfikowana w skrajnej lewej kolumnie; w tym miejscu możesz wykonać łącze do zdarzenia w oknie Lista zdarzeń grafiki.  
+#### <a name="table"></a>Tabela  
+ Tabela liczb poniżej osi czasu pokazuje względną wydajność poszczególnych wariantów renderowania dla każdego wywołania rysowania w odniesieniu do domyślnego renderowania aplikacji. Każda kolumna wyświetla różne warianty renderowania i każdy wiersz reprezentuje inne wywołanie rysowania, które jest identyfikowane w kolumnie z lewej strony. w tym miejscu możesz użyć linku do zdarzenia w oknie Lista zdarzeń grafiki.  
   
- ![Podsumowanie tabeli przedstawiono różne varients. ](../debugger/media/pix-frame-analysis-summary.png "pix_frame_analysis_summary")  
+ ![W tabeli podsumowującej są wyświetlane różne varients.](../debugger/media/pix-frame-analysis-summary.png "pix_frame_analysis_summary")  
   
- W drugiej kolumnie tabeli podsumowania skrajnie po lewej wyświetla czasu renderowania linii bazowej Twojej aplikacji — oznacza to, że czas potrzebny aplikacji domyślne renderowanie do ukończenia wywołania rysowania. Pozostałe kolumny Pokaż względną wydajność każdego wariantu renderowania jako wartość procentowa linii bazowej, tak, aby łatwiej zobaczyć, czy można zwiększyć wydajność. Przekracza 100 procent wartości procentowych trwało dłużej niż linii bazowej — czyli wydajności zakończył działanie — i mniejsze niż 100 procent zajęło mniej czasu na wartości procentowe — wydajności zmieniał.  
+ Druga lewa kolumna w tabeli podsumowującej zawiera czas renderowania linii bazowej aplikacji, czyli czas potrzebny na przeprowadzenie wywołania przez domyślne renderowanie przez aplikację. Pozostałe kolumny przedstawiają względną wydajność poszczególnych wariantów renderowania jako procent linii bazowej, dzięki czemu łatwiej jest sprawdzić, czy wydajność jest ulepszona. Wartości procentowe większe niż 100 procent trwały dłużej niż wartość bazowa — to znaczy, że wydajność spadła — a wartości procentowe mniejsze niż 100 procent trwały krócej — wydajność spadła.  
   
- Wartości bezwzględne chronometraż linii bazowej i względnego chronometrażu wariantów renderowania są faktycznie mean średnie wielu przebiegów — 5 domyślnie. Średnia wartość ta pomaga, upewnij się, że dane chronometrażu niezawodnych i spójnych. Umieszczeniu wskaźnika myszy na każdej komórki w tabeli, aby zbadać minimalna, maksymalna, średnia i wartości mediana czasu, które zaobserwowano wyniki w tym rysowania wywołania i renderowanie wariantów zostały wygenerowane. Czas punktu odniesienia jest również wyświetlany.  
+ Wartości zarówno bezwzględny czas odniesienia, jak i względny czas dla wariantów renderowania są rzeczywistą średnią orednią wielu przebiegów — domyślnie 5. Ta uśrednianie pomaga zagwarantować, że dane chronometrażu są niezawodne i spójne. Możesz obsłużyć wskaźnik dla każdej komórki w tabeli, aby przeanalizować wartości minimalne, maksymalne, średnie i średniego czasu, które zostały zaobserwowane podczas generowania wyników dla tego wywołania rysowania i wariantu renderowania. Zostanie również wyświetlony chronometraż punktu odniesienia.  
   
-#### <a name="hot-draw-calls"></a>"Problematyczna" Rysuj wywołania  
- Aby zwrócić uwagę na rysowanie wywołania, które zużywają więcej ogólną czasu renderowania lub które mogą być niezwykle powolne dla powody, dla których można uniknąć, wiersz, który zawiera te wywołania rysowania "gorącymi" jest przyciemnione czerwony, gdy terminy odniesienia jest więcej niż jeden Odchylenie standardowe jest dłuższa niż średniego czasu linii bazowej dla wszystkich wywołań rysowania w ramce.  
+#### <a name="hot-draw-calls"></a>Wywołania rysowania "gorąca"  
+ Aby zwrócić uwagę na łączenie wywołań, które zużywają większą część całkowitego czasu renderowania lub które mogą być nietypowo powolne z przyczyn, które można uniknąć, wiersz zawierający te wywołania rysowania "gorąca" ma kolor czerwony, gdy jego własny chronometraż jest większy niż jeden odchylenie standardowe dłużej niż średni czas trwania wszystkich wywołań rysowania w ramce.  
   
- ![To wywołanie DrawIndexed ma varients gorące i zimne. ](../debugger/media/pix-frame-analysis-hot-calls.png "pix_frame_analysis_hot_calls")  
+ ![To wywołanie DrawIndexed ma gorącą i zimną varients.](../debugger/media/pix-frame-analysis-hot-calls.png "pix_frame_analysis_hot_calls")  
   
-#### <a name="statistical-significance"></a>Obserwowane  
- Aby zwrócić uwagę na renderowanie zmian, które mają największą zgodność, analiza klatek określa statystyczne znaczenie każdego wariantu renderowania i wyświetla te znaczące jak pogrubienie. Wyświetla te, które zwiększają wydajność co w kolorze zielonym i te, które obniżenie wydajności w kolorze czerwonym. Wyświetla wyniki, które nie są statystycznie istotne jako normalnych typów.  
+#### <a name="statistical-significance"></a>Znaczenie statystyczne  
+ Aby zwrócić uwagę na renderowanie wariacji o najwyższej istotności, analiza klatek określa statystyczne znaczenie poszczególnych wariantów renderowania i wyświetla znaczące wartości jako pogrubione. Są w nim wyświetlane te, które zwiększają wydajność w kolorze zielonym i zmniejszają wydajność na czerwono. Wyświetla wyniki, które nie są statystycznie znaczące jako typ normalny.  
   
- ![Statystyczne przydatność wariant wywołanie rysowania](../debugger/media/pix-frame-analysis-summary-stats.png "pix_frame_analysis_summary_stats")  
+ ![Statystyczne znaczenie wariantu wywołania rysowania](../debugger/media/pix-frame-analysis-summary-stats.png "pix_frame_analysis_summary_stats")  
   
- Aby ustalić istotność statystycznych, analiza klatek używa [t Studenta](http://www.wikipedia.org/wiki/Student%27s_t-test).  
+ Aby określić znaczenie statystyczne, analiza klatek używa [testu t-Studenta](https://en.wikipedia.org/wiki/Student's_t-test).  
   
 ### <a name="details-table"></a>Tabela szczegółów  
- Poniżej podsumowania jest tabela szczegółów, która domyślnie jest zwinięta. Zawartość tabeli Szczegóły, zależy od platformy sprzętowej maszyny odtwarzania. Aby uzyskać informacje o platformach obsługiwanego sprzętu, zobacz [pomoc techniczna dotycząca sprzętu](#HardwareSupport).  
+ Poniżej tabeli podsumowania jest tabela szczegółów, która jest domyślnie zwinięta. Zawartość tabeli szczegółów zależy od platformy sprzętowej maszyny odtwarzania. Aby uzyskać informacje o obsługiwanych platformach sprzętowych, zobacz temat [Obsługa sprzętu](#HardwareSupport).  
   
-#### <a name="platforms-that-do-not-support-hardware-counters"></a>Platformy, które nie obsługują liczników sprzętowych  
- Większość platform nie obsługują w pełni liczniki procesora GPU sprzętu — dotyczy to wszystkich procesorach GPU znajdujących się obecnie oferowane przez firmy Intel, AMD i firmy nVidia. Jeśli nie ma żadnych liczników sprzętowych, aby zbierać, jest wyświetlana tylko jedna tabela szczegółów i zawiera średni bezwzględny czas wszystkich wariantów.  
+#### <a name="platforms-that-do-not-support-hardware-counters"></a>Platformy, które nie obsługują liczników sprzętu  
+ Większość platform nie obsługuje w pełni sprzętowych liczników procesora GPU — obejmują wszystkie procesory GPU aktualnie oferowane przez firmę Intel, AMD i nVidia. Jeśli nie ma żadnych liczników sprzętowych do zebrania, zostanie wyświetlona tylko jedna tabela szczegółów i zawiera ona średni czas bezwzględny wszystkich wariantów.  
   
- ![Tabela szczegółów i niektóre varients odtwarzania. ](../debugger/media/pix-frame-analysis-details.png "pix_frame_analysis_details")  
+ ![Tabela szczegółów i varients odtwarzania.](../debugger/media/pix-frame-analysis-details.png "pix_frame_analysis_details")  
   
-#### <a name="platforms-that-support-hardware-counters"></a>Temat platform obsługujących liczników sprzętowych  
- Dla platform, które obsługują liczniki procesora GPU sprzęt — na przykład procesory GPU nVidia T40 SOC i wszystkie Soc Qualcomm — kilka tabel szczegóły są wyświetlane, jeden dla każdego wariantu. Każdego licznika sprzętu są zbierane dla każdego wariantu renderowania i wyświetlane w tabeli Szczegóły.  
+#### <a name="platforms-that-support-hardware-counters"></a>Platformy obsługujące liczniki sprzętu  
+ W przypadku platform obsługujących liczniki procesora GPU sprzętu — na przykład nVidia T40 SOC i wszystkie Qualcomm SOC — wyświetlane są kilka tabel szczegółów, jeden dla każdego wariantu. Każdy dostępny licznik sprzętu jest zbierany dla każdego wariantu renderowania i wyświetlany w jego własnej tabeli szczegółów.  
   
- ![Liczniki sprzętu są wyświetlane, jeśli są obsługiwane. ](../debugger/media/pix-frame.png "pix_frame")  
+ ![Liczniki sprzętu są wyświetlane, jeśli są obsługiwane.](../debugger/media/pix-frame.png "pix_frame")  
   
- Informacje o liczniku sprzętu zawiera bardzo szczegółowe widok zachowań określonych platforma sprzętowa dla każdego wywołania rysowania, które mogą pomóc Ci przyczynie wąskich gardeł wydajności bardzo dokładnie.  
+ Informacje o liczniku sprzętu udostępniają bardzo szczegółowy widok określonych zachowań dla platformy dla każdego wywołania rysowania, które mogą ułatwić identyfikację przyczyny wąskich gardeł wydajności.  
   
 > [!NOTE]
-> Platformy sprzętowe obsługują różne liczniki; nie istnieje standard. Liczniki i ich znaczenie są określane wyłącznie przez każdego producenta procesora GPU.  
+> Różne platformy sprzętowe obsługują różne liczniki; nie istnieje standardowy. Liczniki i ich znaczenie są określane wyłącznie przez każdego producenta procesora GPU.  
   
-### <a name="marker-regions-and-events"></a>Znacznik regionów i zdarzenia  
- Analiza klatek obsługuje znaczniki zdarzenie zdefiniowane przez użytkownika i grupy zdarzeń. Są one wyświetlane w tabeli podsumowania, a w tabelach szczegółów.  
+### <a name="marker-regions-and-events"></a>Regiony i zdarzenia znacznika  
+ Analiza klatek obsługuje zdefiniowane przez użytkownika znaczniki zdarzeń i grupy zdarzeń. Są one wyświetlane w tabeli podsumowującej i w tabelach szczegółów.  
   
- Interfejsy API ID3DUserDefinedAnnotation lub starszej wersji rodziny D3DPERF_ interfejsów API umożliwia tworzenie znaczniki i grup. Korzystając z rodziny D3DPERF_ interfejsu API, można przypisać każdego znacznika i grupy kolor, który jest analiza klatek jest wyświetlany jako kolorowy poza pasmem w wierszach, które zawierają znacznik zdarzenia lub znaczników rozpoczęcia/zakończenia grupy zdarzeń i ich zawartość. Ta funkcja może pomóc szybko zidentyfikować ważne renderowania zdarzeń lub grup zdarzeń.  
+ Do tworzenia znaczników i grup można użyć interfejsów API ID3DUserDefinedAnnotation lub starszej rodziny D3DPERF_. W przypadku korzystania z rodziny interfejsów API D3DPERF_ można przypisać każdemu znacznikowi i zgrupować kolor, który jest wyświetlany jako kolorowy pasek w wierszach zawierających znacznik zdarzenia lub znaczniki początku/końca grupy zdarzeń i ich zawartość. Ta funkcja ułatwia szybkie identyfikowanie ważnych zdarzeń renderowania lub grup zdarzeń.  
   
 ### <a name="warnings-and-errors"></a>Ostrzeżenia i błędy  
- Analiza klatek czasami kończy się ostrzeżenia lub błędy, które są podsumowane powyżej osi czasu i szczegółowe u dołu kartę analizy klatek.  
+ Analiza klatek sporadycznie kończy się z ostrzeżeniami lub błędami, które są podsumowywane powyżej osi czasu, i szczegółowo w dolnej części karty analiza klatek.  
   
- Zwykle ostrzeżenia i błędy służą tylko do celów informacyjnych i nie wymaga żadnej interwencji.  
+ Zazwyczaj ostrzeżenia i błędy są przeznaczone tylko do celów informacyjnych i nie wymagają żadnej interwencji.  
   
- Ostrzeżenia zazwyczaj oznacza, że pomoc techniczna dotycząca sprzętu Brak, ale możesz pracować nad całym, nie można zebrać liczników sprzętowych lub niektóre dane dotyczące wydajności może nie być wiarygodne — na przykład, gdy obejście negatywny wpływ na jej.  
+ Ostrzeżenia zwykle wskazują na brak obsługi sprzętu, ale mogą być używane, nie można zbierać liczników sprzętu lub niektóre dane dotyczące wydajności mogą nie być niezawodne — na przykład wtedy, gdy obejście negatywnie wpłynie na ten problem.  
   
- Błędy zazwyczaj wskazują, że implementacji analizy klatek ma usterek, sterownik ma usterek, pomoc techniczna dotycząca sprzętu braku i nie może odbywać się w całym lub aplikacja próbuje coś, co nie jest obsługiwana przez odtwarzanie.  
+ Błędy zwykle wskazują, że implementacja analizy klatek zawiera błędy, sterownik ma błędy, Obsługa sprzętu jest niedostępna i nie można jej obejść lub aplikacja próbuje coś, co nie jest obsługiwane przez odtwarzanie.  
   
-### <a name="retries"></a>Ponowne próby  
- Jeśli procesora GPU podlega przejściu stanu zasilania podczas analizy klatek, dotyczy analizy przejście musi zostać powtórzone, ponieważ szybkość zegara procesora GPU zmienione, a tym samym unieważnione wyniki względnego chronometrażu.  
+### <a name="retries"></a>Ponownych prób  
+ Jeśli procesor GPU przejdzie do przejścia stanu potęgowego podczas analizy klatek, należy ponowić próbę przeprowadzenia analizy, ponieważ Clockspeed procesora GPU i w związku z tym unieważnione wyniki względnego chronometrażu.  
   
- Analiza klatek ogranicza liczbę ponownych prób do 10. Jeśli platformą zarządzania energią agresywne lub uzyskania bramowego zegara, może spowodować analizy klatek zakończyć się niepowodzeniem i zgłoś błąd, ponieważ przekroczyła limit ponownych prób. Może być w stanie rozwiązać ten problem, resetując używanej platformy zarządzania energią i zegara, szybkość ograniczania jako łagodniej, umożliwia platformie.  
+ Analiza klatek ogranicza liczbę ponownych prób do 10. Jeśli platforma ma agresywne zarządzanie zużyciem lub kontroli zegarem, może to spowodować niepowodzenie analizy klatek i zgłosić błąd, ponieważ Przekroczono limit ponownych prób. Może być możliwe uniknięcie tego problemu przez zresetowanie funkcji zarządzania zasilaczami i szybkości zegara, aby było mniej agresywne, jeśli ta platforma zostanie włączona.  
   
-## <a name="HardwareSupport"></a> Pomoc techniczna dotycząca sprzętu  
+## <a name="HardwareSupport"></a>Obsługa sprzętu  
   
-### <a name="timestamps-and-occlusion-queries"></a>Zapytania sygnatury czasowe i zamknięcia.  
- Sygnatury czasowe są obsługiwane na wszystkich platformach, które obsługują analizy klatek. Głębokość zamknięcia zapytania — wymagana dla licznika zamknięte pikseli — są obsługiwane na platformach, które obsługują poziom funkcji 9.2 lub nowszej.  
+### <a name="timestamps-and-occlusion-queries"></a>Sygnatury czasowe i zapytania zamknięcia  
+ Sygnatury czasowe są obsługiwane na wszystkich platformach, które obsługują analizę klatek. Głębokości zapytania zamknięcia — wymagane dla pikseli zamknięte licznik — są obsługiwane na platformach, które obsługują funkcję Level 9,2 lub wyższą.  
   
 > [!NOTE]
-> Choć sygnatur czasowych są obsługiwane na wszystkich platformach, które obsługują analizy klatek, dokładność i spójność sygnatury czasowe różni się w zależności od platformy.  
+> Mimo że sygnatury czasowe są obsługiwane na wszystkich platformach obsługujących analizę klatek, dokładność i spójność znaczników czasu różni się od platformy do platformy.  
   
 ### <a name="gpu-counters"></a>Liczniki procesora GPU  
- Pomoc dotycząca liczników sprzętowych procesora GPU jest zależna od sprzętu.  
+ Obsługa liczników sprzętu procesora GPU jest zależna od sprzętu.  
   
- Ponieważ żaden komputer GPU obecnie oferowane przez firmy Intel, AMD lub nVidia obsługuje liczników sprzętowych procesora GPU niezawodne, analiza klatek nie zbiera liczniki z nich. Jednak funkcja analizy klatek zbierania liczników sprzętowych z tych procesorów GPU, które w niezawodny sposób będą obsługiwać takiej osoby:  
+ Ponieważ żaden procesor GPU nie jest obecnie oferowany przez procesor Intel, AMD lub nVidia, nie obsługuje zbyt niezawodnego liczników sprzętowych procesora GPU. Analiza klatek nie zbiera z nich liczników. Jednak analiza klatek zbiera liczniki sprzętowe z tych procesorów GPU, które w niezawodny sposób obsługują:  
   
-- SOC Qualcomm, (wszystkie obsługującego Windows Phone)  
+- Qualcomm SOC (dowolna obsługa Windows Phone)  
   
 - nVidia T40 (Tegra4).  
   
-  Żadna inna platforma, która obsługuje analizy klatek zbiera dane liczników sprzętowych procesora GPU.  
+  Żadna inna platforma, która nie obsługuje analizy klatek, zbiera liczniki sprzętowe procesora GPU.  
   
 > [!NOTE]
-> Ponieważ liczników sprzętowych procesora GPU zasobów sprzętowych, może upłynąć wielu przebiegów, aby zebrać pełny zestaw liczników sprzętowych dla poszczególnych wariantu renderowania. W rezultacie kolejność, w którym procesor GPU zbieranymi licznikami jest nieokreślona.  
+> Ponieważ liczniki sprzętowe procesora GPU są zasobami sprzętowymi, może to potrwać wiele przebiegów w celu zebrania kompletnego zestawu liczników sprzętu dla każdego wariantu renderowania. W związku z tym nie określono kolejności, w której zbierane są liczniki GPU.  
   
-### <a name="windows-phone"></a>Windows phone  
- Sygnatury czasowe, zamknięcia zapytania i liczników sprzętowych procesora GPU są obsługiwane tylko w aparaty telefoniczne Windows Phone, które dostarczonych z systemem Windows Phone 8.1. Analiza klatek wymaga je w celu odtwarzania, że plik dziennika grafiki. Aparaty telefoniczne Windows Phone, dostarczonych pierwotnie wraz z programem Windows Phone 8 nie obsługują analizy ramek, nawet w przypadku aparaty telefoniczne, które zostały zaktualizowane do wersji Windows Phone 8.1.  
+### <a name="windows-phone"></a>System Windows Phone  
+ Sygnatury czasowe, zapytania zamknięcia i liczniki sprzętu procesora GPU są obsługiwane tylko w Windows Phone słuchawki, które pierwotnie zostały dostarczone z Windows Phone 8,1. Analiza klatek wymaga, aby odtworzyć plik dziennika grafiki. Windows Phone słuchawki, które zostały pierwotnie dostarczone z Windows Phone 8 nie obsługują analizy ramek, nawet w przypadku słuchawek, które zostały zaktualizowane do Windows Phone 8,1.  
   
 ## <a name="unsupported-scenarios"></a>Nieobsługiwane scenariusze  
- Niektóre sposoby korzystania z analizy klatek nie są obsługiwane lub są dobrym pomysłem.  
+ Niektóre sposoby używania analizy klatek są nieobsługiwane lub są tylko niewłaściwymi pomysłami.  
   
-### <a name="warp"></a>WARP  
- Analiza klatek jest przeznaczona do użycia na potrzeby profilowania i poprawić wydajność renderowania na sprzęt rzeczywisty. Uruchomiona analiza klatek na urządzenia WARP nie uniemożliwia — emulator Windows Phone, który jest uruchamiany na WARP — ale nie jest zazwyczaj zwiększonej wykonywania, ponieważ WARP systemem wysokiej klasy procesora CPU jest mniejsza niż nawet zdolne do najmniejszej nowoczesnych procesorów GPU i WARP wydajność może się zmieniać znacznie w zależności od określonego Procesora działa on.  
+### <a name="warp"></a>ZNIEKSZTAŁCENI  
+ Analiza klatek ma służyć do profilowania i ulepszania wydajności renderowania na rzeczywistym sprzęcie. Uruchamianie analizy klatek na urządzeniach wypaczania nie jest blokowane — Windows Phone Emulator jest uruchamiany przy wypaczeniu — ale nie jest to zwykle wartościowa, ponieważ Wypaczenie działające na wysokim poziomie procesora jest wolniejsze niż nawet najbardziej obsługujące Nowoczesne procesory GPU i ponieważ wydajność ZNIEKSZTAŁCAnia może się różnić znacznie w zależności od konkretnego procesora, na którym jest uruchomiony.  
   
-### <a name="playback-of-high-feature-level-captures-on-down-level-devices"></a>Odtwarzanie wysokiej funkcji poziomu przechwycone dane urządzenia niskiego poziomu  
- W analizatorze grafiki podczas odtwarzania pliku dziennika grafiki, która używa wyższy poziom funkcji nie obsługuje maszynę odtwarzającą, jego automatycznie powraca do WARP. Analiza klatek go jawnie nie wracały do WARP i generuje błąd, — WARP jest przydatne, sprawdzając poprawność aplikacja Direct3D, ale nie sprawdzenie jego wydajności.  
-  
-> [!NOTE]
-> Chociaż jest to ważne, aby pamiętać, poziom funkcji problemów, można przechwytywać i odtwarzać że dziennika grafiki plików na urządzeniach i różne konfiguracje sprzętu. Na przykład można przechwytywać informacje graficzne na Windows Phone i odtwarzać je z powrotem na komputerze stacjonarnym i odwrotnie jest również obsługiwany. W obu przypadkach dziennik grafiki można odtwarzać ponownie tak długo, jak w pliku dziennika nie zawiera interfejsów API lub użyć poziomów funkcji, które nie są obsługiwane na maszynie odtwarzającej.  
-  
-### <a name="direct3d-10-and-lower"></a>Direct3D 10 i niższy  
- Analiza klatek jest obsługiwana tylko dla interfejsu API programu Direct3D 11. Jeśli aplikacja wymaga interfejsu API Direct3D 10, analiza klatek nie rozpoznaje lub ich profil, nawet jeśli ich rozpoznawany i używany przez inne narzędzia Analizator grafiki programu. Jeśli aplikacja używa Direct3D11 i interfejsów API Direct3D 10, są profilowane tylko wywołania Direct3D 11.  
+### <a name="playback-of-high-feature-level-captures-on-down-level-devices"></a>Odtwarzanie przechwytywania wysokiej klasy na urządzeniach niższego poziomu  
+ W analizatorze grafiki podczas odtwarzania pliku dziennika grafiki, który korzysta z wyższego poziomu funkcji niż obsługiwana przez maszynę odtwarzania, automatycznie wraca do wypaczenia. W analizie klatek jawnie nie wraca do OSNOWy i generuje błąd — Wypaczenie jest przydatne do sprawdzania poprawności aplikacji Direct3D, ale nie do badania jej wydajności.  
   
 > [!NOTE]
-> Dotyczy to tylko do wywołań interfejsu API Direct3D, których używasz, nie poziomów funkcji. Tak długo, jak długo używasz Direct3D 11, Direct3D 11.1 i Direct3D 11.2 API, można użyć dowolnego poziomu funkcji, które chcesz i analiza klatek tylko będą działać.  
+> Chociaż warto pamiętać o problemach na poziomie funkcji, można przechwytywać i odtwarzać pliki dzienników grafiki na różnych konfiguracjach sprzętu i urządzeniach. Na przykład można przechwycić informacje graficzne na Windows Phone i odtworzyć je na komputerze stacjonarnym, a także włączyć opcję odwrotną. W obu przypadkach dziennik grafiki może być odtwarzany, o ile plik dziennika nie zawiera interfejsów API lub nie obsługuje poziomów funkcji, które nie są obsługiwane przez maszynę odtwarzania.  
   
-## <a name="Variants"></a> Wariantów  
- Każda zmiana, który sprawia, że funkcja analizy klatek sposób renderowania ramki podczas odtwarzania jest znany jako *wariant*. Warianty, które sprawdza, czy analiza klatek odnoszą się do wspólnego, stosunkowo łatwa zmiany, które można wprowadzić ulepszenia wydajności renderowania i jakość wizualną aplikacji — na przykład, zmniejszenie rozmiaru tekstury, przy użyciu kompresji tekstury lub włączenie różne rodzaje wygładzanie. Warianty zastąpić kontekstu zwykle renderowania i parametrów w aplikacji. Poniżej przedstawiono podsumowanie:  
+### <a name="direct3d-10-and-lower"></a>Direct3D 10 i Lower  
+ Analiza klatek jest obsługiwana tylko w przypadku interfejsu API programu Direct3D 11. Jeśli aplikacja wywołuje interfejs API Direct3D 10, analiza klatek nie rozpoznaje ani nie profiluje, nawet jeśli są one rozpoznawane i używane przez inne narzędzia analizatora grafiki. Jeśli aplikacja używa zarówno Direct3D11, jak i interfejsów API programu Direct3D 10, tylko wywołania programu Direct3D 11 są profilowane.  
   
-|Variant|Opis|  
+> [!NOTE]
+> Dotyczy to tylko wywołań interfejsu API Direct3D, które są używane, a nie poziomów funkcji. O ile korzystasz z interfejsu API Direct3D 11, Direct3D 11,1 lub Direct3D 11,2, możesz użyć dowolnego poziomu funkcji, który chcesz, a analiza klatek będzie działać.  
+  
+## <a name="Variants"></a>Variant  
+ Każda zmiana, którą analiza klatek wprowadza do sposobu renderowania ramki podczas odtwarzania, jest znana jako *wariant*. Warianty, które analizuje analiza klatek, odpowiadają wspólnym, stosunkowo łatwym zmianom, które można zwiększyć w celu poprawy wydajności renderowania lub jakości wizualnej aplikacji — na przykład zmniejszenie rozmiaru tekstury, użycie kompresji tekstury lub włączenie różne rodzaje wygładzania. Warianty przesłaniają zwykły kontekst renderowania i parametry aplikacji. Oto podsumowanie:  
+  
+|Typu|Opis|  
 |-------------|-----------------|  
-|**Rozmiaru 1 x 1 okienka ekranu**|Maksymalne wymiary okienka ekranu na wszystkie elementy docelowe renderowania na 1 x 1 pikseli.<br /><br /> Aby uzyskać więcej informacji, zobacz [wariant rozmiaru okienka ekranu 1 x 1](../debugger/1x1-viewport-size-variant.md)|  
-|**0x MSAA**|Wyłącza wielu przykładowe Wygładzanie (MSAA) na wszystkie elementy docelowe renderowania.<br /><br /> Aby uzyskać więcej informacji, zobacz [0 x / 2 x / 4 x MSAA wariantów](../debugger/0x-2x-4x-msaa-variants.md)|  
-|**2x MSAA**|Umożliwia 2 x wielu przykładowe Wygładzanie (MSAA) dla wszystkich elementów docelowych renderowania.<br /><br /> Aby uzyskać więcej informacji, zobacz [0 x / 2 x / 4 x MSAA wariantów](../debugger/0x-2x-4x-msaa-variants.md)|  
-|**4x MSAA**|Umożliwia 4 x wielu przykładowe Wygładzanie (MSAA) dla wszystkich elementów docelowych renderowania.<br /><br /> Aby uzyskać więcej informacji, zobacz [0 x / 2 x / 4 x MSAA wariantów](../debugger/0x-2x-4x-msaa-variants.md)|  
-|**Filtrowanie punktów tekstury**|Ustawia tryb filtrowania `DXD11_FILTER_MIN_MAG_MIP_POINT` (punkt filtrowania tekstur) dla wszystkich przykładów odpowiednie tekstury.<br /><br /> Aby uzyskać więcej informacji, zobacz [punkt dwuliniowa Trilinear i wariantów Anizotropowego filtrowania tekstur](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
-|**Filtrowanie warianty punktowego tekstury**|Ustawia tryb filtrowania `DXD11_FILTER_MIN_MAG_LINEAR_MIP_POINT` (warianty punktowego tekstury filtrowanie) dla wszystkich przykładów odpowiednie tekstury.<br /><br /> Aby uzyskać więcej informacji, zobacz [punkt dwuliniowa Trilinear i wariantów Anizotropowego filtrowania tekstur](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
-|**Filtrowanie trójliniowego tekstury**|Ustawia tryb filtrowania `DXD11_FILTER_MIN_MAG_MIP_LINEAR` (trójliniowego tekstury filtrowanie) dla wszystkich przykładów odpowiednie tekstury.<br /><br /> Aby uzyskać więcej informacji, zobacz [punkt dwuliniowa Trilinear i wariantów Anizotropowego filtrowania tekstur](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
-|**Filtrowanie anizotropowe tekstury**|Ustawia tryb filtrowania `DXD11_FILTER_ANISOTROPIC` i `MaxAnisotropy` do `16` (16 x filtrowanie anizotropowe tekstury) dla wszystkich przykładów odpowiednie tekstury.<br /><br /> Aby uzyskać więcej informacji, zobacz [punkt dwuliniowa Trilinear i wariantów Anizotropowego filtrowania tekstur](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
-|**Formatu docelowego renderowania 16bpp**|Ustawia format pikseli `DXGI_FORMAT_B5G6R5_UNORM` (16bpp 565 formacie) dla wszystkich renderowania obiektów docelowych i backbuffers.<br /><br /> Aby uzyskać więcej informacji, zobacz [16bpp renderowania docelowy Format typu Variant](../debugger/16bpp-render-target-format-variant.md)|  
-|**Generacji mipmapy**|Umożliwia mapy mip na wszystkie tekstury, które nie są renderowane elementów docelowych.<br /><br /> Aby uzyskać więcej informacji, zobacz [wariant generowania mipmapy](../debugger/mip-map-generation-variant.md).|  
-|**Wymiary tekstury w wysokości równej połowie**|Maksymalne wymiary tekstury na wszystkie tekstury, które nie są elementy docelowe renderowania, do połowy ich oryginalnego rozmiaru każdego wymiaru. Na przykład tekstury 256 x 128 jest ograniczone do tekseli 128 x 64.<br /><br /> Aby uzyskać więcej informacji, zobacz [wariant wymiarów tekstury Half/Quarter](../debugger/half-quarter-texture-dimensions-variant.md).|  
-|**Wymiary tekstury kwartał**|Maksymalne wymiary tekstury na wszystkie tekstury, które nie są renderowane obiekty docelowe do czwartej ich oryginalnego rozmiaru każdego wymiaru. Na przykład tekstury 256 x 128 jest ograniczone do 64 x 32 tekseli.<br /><br /> Aby uzyskać więcej informacji, zobacz [wariant wymiarów tekstury Half/Quarter](../debugger/half-quarter-texture-dimensions-variant.md).|  
-|**Kompresji tekstury BC**|Umożliwia zablokowanie kompresji dla wszystkich tekstury, które mają B8G8R8X8, B8G8R8A8 lub R8G8B8A8 wariant format pikseli. Warianty format B8G8R8X8 są kompresowane przy użyciu formantów BC1; B8G8R8A8 i wariantów format R8G8B8A8 są kompresowane przy użyciu BC3.<br /><br /> Aby uzyskać więcej informacji, zobacz [wariant kompresji tekstury BC](../debugger/bc-texture-compression-variant.md).|  
+|**Rozmiar okienka ekranu 1x1**|Zmniejsza wymiary okienka ekranu dla wszystkich obiektów docelowych renderowania do 1x1 pikseli.<br /><br /> Aby uzyskać więcej informacji, zobacz [1x1a rozmiaru okienka ekranu](../debugger/1x1-viewport-size-variant.md)|  
+|**0x MSAA**|Wyłącza wiele próbkowania wygładzania (MSAA) na wszystkich celach renderowania.<br /><br /> Aby uzyskać więcej informacji, zobacz odmiany w liczbie [0x/2x/4X MSAA](../debugger/0x-2x-4x-msaa-variants.md)|  
+|**2x MSAA**|Włącza 2. wygładzanie wielobajtowe (MSAA) na wszystkich celach renderowania.<br /><br /> Aby uzyskać więcej informacji, zobacz odmiany w liczbie [0x/2x/4X MSAA](../debugger/0x-2x-4x-msaa-variants.md)|  
+|**4x MSAA**|Włącza 4x dla wielobajtowego połączenia (MSAA) dla wszystkich obiektów docelowych renderowania.<br /><br /> Aby uzyskać więcej informacji, zobacz odmiany w liczbie [0x/2x/4X MSAA](../debugger/0x-2x-4x-msaa-variants.md)|  
+|**Filtrowanie tekstury punktów**|Ustawia tryb filtrowania na `DXD11_FILTER_MIN_MAG_MIP_POINT` (filtr tekstury punktów) dla wszystkich odpowiednich próbek tekstury.<br /><br /> Aby uzyskać więcej informacji, zobacz [trójliniowego i różne warianty filtrowania tekstury anizotropowego](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
+|**Filtrowanie tekstury liniowej**|Ustawia tryb filtrowania na `DXD11_FILTER_MIN_MAG_LINEAR_MIP_POINT` (filtrowanie tekstury liniowej) dla wszystkich odpowiednich próbek tekstury.<br /><br /> Aby uzyskać więcej informacji, zobacz [trójliniowego i różne warianty filtrowania tekstury anizotropowego](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
+|**Filtrowanie tekstury trójliniowego**|Ustawia tryb filtrowania na `DXD11_FILTER_MIN_MAG_MIP_LINEAR` (filtrowanie tekstury trójliniowego) dla wszystkich odpowiednich próbek tekstury.<br /><br /> Aby uzyskać więcej informacji, zobacz [trójliniowego i różne warianty filtrowania tekstury anizotropowego](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
+|**Filtrowanie tekstury anizotropowego**|Ustawia tryb filtrowania na `DXD11_FILTER_ANISOTROPIC` i `MaxAnisotropy` do `16` (filtr "16x anizotropowego Texture Filter") dla wszystkich odpowiednich próbek tekstury.<br /><br /> Aby uzyskać więcej informacji, zobacz [trójliniowego i różne warianty filtrowania tekstury anizotropowego](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
+|**Format docelowy renderowania 16bpp**|Ustawia format pikseli na `DXGI_FORMAT_B5G6R5_UNORM` (format 565) dla wszystkich obiektów docelowych renderowania i buforów.<br /><br /> Aby uzyskać więcej informacji, zobacz [16Bpp format docelowy renderowania](../debugger/16bpp-render-target-format-variant.md)|  
+|**MCI — Generowanie mapy**|Włączenie MCI — odwzorowuje wszystkie tekstury, które nie są obiektami docelowymi.<br /><br /> Aby uzyskać więcej informacji, zobacz [wariant generowania mapy MIP](../debugger/mip-map-generation-variant.md).|  
+|**Wymiary pół tekstury**|Zmniejsza wymiary tekstury dla wszystkich tekstur, które nie renderują obiektów docelowych do połowy rozmiaru oryginalnego w każdym wymiarze. Na przykład tekstura 256x128 jest zredukowana do 128x64 tekseli.<br /><br /> Aby uzyskać więcej informacji, zobacz [wymiar tekstury połówkowej/kwartalnej](../debugger/half-quarter-texture-dimensions-variant.md).|  
+|**Wymiary tekstury kwartału**|Zmniejsza wymiary tekstury dla wszystkich tekstur, które nie renderują obiektów docelowych do kwartału oryginalnego rozmiaru w każdym wymiarze. Na przykład tekstura 256x128 jest zredukowana do 64x32 tekseli.<br /><br /> Aby uzyskać więcej informacji, zobacz [wymiar tekstury połówkowej/kwartalnej](../debugger/half-quarter-texture-dimensions-variant.md).|  
+|**Kompresja tekstury BC**|Włącza kompresję blokową dla wszystkich tekstur, które mają wariant formatu B8G8R8X8, B8G8R8A8 lub R8G8B8A8 pikseli. Warianty formatu B8G8R8X8 są kompresowane przy użyciu BC1; Warianty formatu B8G8R8A8 i R8G8B8A8 są kompresowane przy użyciu BC3.<br /><br /> Aby uzyskać więcej informacji, zobacz [wariant tekstury kompresji BC](../debugger/bc-texture-compression-variant.md).|  
   
- Większość wariantów powstaje przetestowanego rozwiązania ze szczegółami: "25 procent szybciej jest zmniejszenie rozmiaru tekstura o połowę" lub "Włączanie 2 x MSAA jest tylko 2% wolniej". Inne odmiany może wymagać interpretacji więcej — na przykład, jeśli wariant, który zmienia rozmiary okienka ekranu do 1 x 1 wykazuje duże są bardziej wydajne, może to wskazywać, że renderowanie jest bottlenecked przez współczynnik wypełnienia niski; Alternatywnie Jeśli nie ma żadnych istotnych zmian w wydajności, może to wskazywać, renderowanie jest bottlenecked przez przetwarzanie wierzchołka.
+ Wyniki dla większości wariantów są następujące: "zmniejszenie rozmiaru tekstury o połowę jest szybsze o 25%" lub "włączenie dwuprocentowej technologii MSAA". Inne warianty mogą wymagać większej interpretacji — na przykład, jeśli wariant, który zmienia wymiary okienka ekranu na 1x1 pokazuje duży wzrost wydajności, może wskazywać, że renderowanie jest wąskie przez niską szybkość wypełniania; Alternatywnie, jeśli nie ma znaczącej zmiany wydajności, może to wskazywać, że renderowanie jest wąskie przez przetwarzanie wierzchołków.

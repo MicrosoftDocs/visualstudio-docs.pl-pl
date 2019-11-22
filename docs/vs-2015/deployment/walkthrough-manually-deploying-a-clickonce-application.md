@@ -1,5 +1,5 @@
 ---
-title: 'Przewodnik: Ręczne wdrażanie aplikacji ClickOnce | Dokumentacja firmy Microsoft'
+title: 'Przewodnik: ręczne wdrażanie aplikacji ClickOnce | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -21,97 +21,97 @@ caps.latest.revision: 51
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 239fdcea9b8b9613bcdaa2419aba211c2a2a98f4
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 1e1099eaf8d766088612abbb399bdf004e6378e4
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65686323"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74294675"
 ---
-# <a name="walkthrough-manually-deploying-a-clickonce-application"></a>Przewodnik: Ręczne wdrażanie aplikacji ClickOnce
+# <a name="walkthrough-manually-deploying-a-clickonce-application"></a>Wskazówki: ręczne wdrażanie aplikacji ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Jeśli nie możesz użyć programu Visual Studio, aby wdrożyć swoje [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji lub jeśli trzeba korzystać z zaawansowanego wdrożenia funkcji, takich jak wdrażanie zaufanych aplikacji należy używać narzędzia wiersza polecenia Mage.exe, aby utworzyć swoje [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifestów. W tym przewodniku opisano sposób tworzenia [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] wdrożenia przy użyciu (Mage.exe) w wersji wiersza polecenia lub graficznego wersji (MageUI.exe) Manifest Generation i narzędzia do edytowania.  
+Jeśli nie możesz użyć programu Visual Studio do wdrożenia aplikacji [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] lub musisz użyć zaawansowanych funkcji wdrażania, takich jak wdrażanie aplikacji zaufanej, użyj narzędzia wiersza polecenia programu Mage. exe, aby utworzyć manifesty [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]. W tym przewodniku opisano sposób tworzenia wdrożenia [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] przy użyciu wersji wiersza polecenia (Mage. exe) lub wersji graficznej (MageUI. exe) Narzędzie tworzenia i edycji manifestów.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
- Ten przewodnik zawiera niektórych wymaganiach wstępnych oraz opcjach, które musisz wybrać przed kompilacją wdrożenia.  
+ W tym instruktażu zawarto pewne wymagania wstępne i opcje, które należy wybrać przed skompilowaniem wdrożenia.  
   
-- Zainstaluj Mage.exe i MageUI.exe.  
+- Zainstaluj program Mage. exe i MageUI. exe.  
   
-     Mage.exe i MageUI.exe są częścią [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Musisz mieć [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] zainstalowane lub wersję [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] dołączone do programu Visual Studio. Aby uzyskać więcej informacji, zobacz [zestawu Windows SDK](http://go.microsoft.com/fwlink/?LinkId=158044) w witrynie MSDN.  
+     Program Mage. exe i MageUI. exe jest częścią [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Musisz mieć zainstalowany [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] lub wersję [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] dołączonej do programu Visual Studio. Aby uzyskać więcej informacji, zobacz [Windows SDK](https://go.microsoft.com/fwlink/?LinkId=158044) w witrynie MSDN.  
   
-- Podaj umożliwia wdrażanie aplikacji.  
+- Podaj aplikację do wdrożenia.  
   
-     W tym przewodniku przyjęto założenie, iż aplikacji Windows, który można przystąpić do wdrażania. Ta aplikacja zostanie określone jako AppToDeploy.  
+     W tym przewodniku przyjęto założenie, że masz aplikację systemu Windows, która jest gotowa do wdrożenia. Ta aplikacja będzie określana jako AppToDeploy.  
   
-- Określ sposób dystrybucji wdrożenia.  
+- Określ sposób dystrybuowania wdrożenia.  
   
-     Dostępne są następujące opcje dystrybucji: W sieci Web, udziału plików lub dysku CD. Aby uzyskać więcej informacji, zobacz [wdrażania i zabezpieczeń ClickOnce](../deployment/clickonce-security-and-deployment.md).  
+     Opcje dystrybucji obejmują: sieć Web, udział plików lub dysk CD. Aby uzyskać więcej informacji, zobacz [zabezpieczenia i wdrażanie technologii ClickOnce](../deployment/clickonce-security-and-deployment.md).  
   
 - Ustal, czy aplikacja wymaga podwyższonego poziomu zaufania.  
   
-     Jeśli aplikacja wymaga pełnego zaufania — na przykład pełny dostęp do systemu użytkownika — możesz użyć `-TrustLevel` Ustaw tę opcję programu Mage.exe. Jeśli użytkownik chce zdefiniować niestandardowe uprawnienia ustawione dla aplikacji, skopiuj sekcji uprawnień w Internecie lub intranecie z innego manifestu, zmodyfikuj go do własnych potrzeb, a dodać go do manifestu aplikacji za pomocą edytora tekstu lub MageUI.exe. Aby uzyskać więcej informacji, zobacz [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
+     Jeśli aplikacja wymaga pełnego zaufania — na przykład pełny dostęp do systemu użytkownika — możesz użyć opcji `-TrustLevel` programu Mage. exe, aby to zrobić. Jeśli chcesz zdefiniować niestandardowy zestaw uprawnień dla aplikacji, możesz skopiować sekcję uprawnienia internetowe lub intranetowe z innego manifestu, zmodyfikować ją zgodnie z potrzebami, a następnie dodać do manifestu aplikacji przy użyciu edytora tekstu lub MageUI. exe. Aby uzyskać więcej informacji, zobacz [Omówienie wdrażania zaufanych aplikacji](../deployment/trusted-application-deployment-overview.md).  
   
-- Uzyskiwanie certyfikatu Authenticode.  
+- Uzyskaj certyfikat Authenticode.  
   
-     Utwórz wdrożenie za pomocą certyfikatu Authenticode. Można wygenerować certyfikatu testowego przy użyciu narzędzi programu Visual Studio i MageUI.exe, lub MakeCert.exe Pvk2Pfx.exe lub certyfikat można uzyskać z urząd certyfikacji (CA). Wybranie opcji użycia zaufanego wdrożenia aplikacji, należy również wykonać jednorazowe Instalacja certyfikatu na wszystkich komputerach klienckich. Aby uzyskać więcej informacji, zobacz [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
+     Należy podpisać wdrożenie przy użyciu certyfikatu Authenticode. Certyfikat testowy można wygenerować za pomocą programu Visual Studio, MageUI. exe lub MakeCert. exe i Pvk2Pfx. exe. można też uzyskać certyfikat z urzędu certyfikacji. Jeśli zdecydujesz się użyć wdrożenia zaufanej aplikacji, musisz także wykonać jednorazową instalację certyfikatu na wszystkich komputerach klienckich. Aby uzyskać więcej informacji, zobacz [Omówienie wdrażania zaufanych aplikacji](../deployment/trusted-application-deployment-overview.md).  
   
     > [!NOTE]
-    > Możesz też zarejestrować wdrożenia przy użyciu certyfikatów CNG, który można uzyskać od urzędu certyfikacji.  
+    > Możesz również podpisać wdrożenie z certyfikatem CNG, który można uzyskać od urzędu certyfikacji.  
   
-- Upewnij się, czy aplikacja nie ma manifestu za pomocą informacji o funkcji Kontrola konta użytkownika.  
+- Upewnij się, że aplikacja nie ma manifestu z informacjami o funkcji Kontrola konta użytkownika.  
   
-     Należy określić, czy aplikacja zawiera manifestu kontroli konta użytkownika (UAC) informacje, takie jak `<dependentAssembly>` elementu. Aby zbadać manifest aplikacji, należy użyć narzędzi Windows Sysinternals [Sigcheck](http://go.microsoft.com/fwlink/?LinkId=158035) narzędzia.  
+     Należy określić, czy aplikacja zawiera manifest z informacjami o kontroli konta użytkownika (UAC), takimi jak `<dependentAssembly>` elementu. Aby przejrzeć manifest aplikacji, można użyć narzędzia Windows Sysinternals [sigcheck](https://go.microsoft.com/fwlink/?LinkId=158035) .  
   
-     Jeśli aplikacja zawiera manifest ze szczegółowymi informacjami kontroli konta użytkownika, należy go utworzyć ponownie bez informacji o funkcji Kontrola konta użytkownika. Projekt C# w programie Visual Studio Otwórz właściwości projektu, a następnie wybierz kartę aplikacji. W **manifestu** listy rozwijanej wybierz **tworzenie aplikacji bez manifestu**. Dla projektów języka Visual Basic w programie Visual Studio, otwórz właściwości projektu, wybierz kartę aplikacji, a następnie kliknij przycisk **ustawienia funkcji Kontrola konta użytkownika widoku**. W otwarty plik manifestu, należy usunąć wszystkie elementy w ramach pojedynczej precyzji `<asmv1:assembly>` elementu.  
+     Jeśli aplikacja zawiera manifest ze szczegółami funkcji Kontrola konta użytkownika, należy ją ponownie skompilować bez informacji o kontroli konta użytkownika. W przypadku C# projektu w programie Visual Studio Otwórz właściwości projektu i wybierz kartę aplikacja. Z listy rozwijanej **manifest** wybierz pozycję **Utwórz aplikację bez manifestu**. W przypadku projektu Visual Basic w programie Visual Studio Otwórz właściwości projektu, wybierz kartę aplikacja, a następnie kliknij pozycję **Wyświetl ustawienia kontroli konta użytkownika**. W otwartym pliku manifestu Usuń wszystkie elementy w ramach jednego `<asmv1:assembly>` elementu.  
   
 - Ustal, czy aplikacja wymaga wymagań wstępnych na komputerze klienckim.  
   
-     [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacje wdrożone za pomocą programu Visual Studio mogą obejmować instalacja warunku wstępnego program inicjujący (setup.exe) z wdrożeniem. Ten poradnik tworzy dwa manifesty wymagane dla [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] wdrożenia. Program inicjujący wymagań wstępnych można utworzyć za pomocą [generatebootstrapper — zadanie](../msbuild/generatebootstrapper-task.md).  
+     [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacje wdrożone z programu Visual Studio mogą obejmować program inicjujący instalacji wymagań wstępnych (Setup. exe) wraz z wdrożeniem. W tym instruktażu są tworzone dwa manifesty wymagane do wdrożenia [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]. Program inicjujący wymaganie wstępne można utworzyć przy użyciu [zadania GenerateBootstrapper —](../msbuild/generatebootstrapper-task.md).  
   
-### <a name="to-deploy-an-application-with-the-mageexe-command-line-tool"></a>Aby wdrożyć aplikację za pomocą narzędzia wiersza polecenia Mage.exe  
+### <a name="to-deploy-an-application-with-the-mageexe-command-line-tool"></a>Aby wdrożyć aplikację za pomocą narzędzia wiersza polecenia programu Mage. exe  
   
-1. Utwórz katalog, w którym będą przechowywane Twoje [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] pliki wdrożenia.  
+1. Utwórz katalog, w którym będą przechowywane pliki wdrożenia [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].  
   
-2. W katalogu wdrażania, który został utworzony Utwórz podkatalog wersji. Jeśli po raz pierwszy, aplikacja jest wdrażana, nazwę podkatalogu wersji **1.0.0.0**.  
+2. W utworzonym katalogu wdrożenia Utwórz podkatalog wersji. Jeśli aplikacja jest wdrażana po raz pierwszy, nadaj jej nazwę podkatalogu **1.0.0.0**.  
   
     > [!NOTE]
-    > Wersja wdrożenie może się różnić od wersji aplikacji.  
+    > Wersja wdrożenia może być odrębna od wersji aplikacji.  
   
-3. Skopiuj wszystkie pliki aplikacji do podkatalogu wersji, w tym pliki wykonywalne, zestawy, zasobów i plików danych. Jeśli to konieczne, możesz utworzyć dodatkowe podkatalogów, które zawierają dodatkowe pliki.  
+3. Skopiuj wszystkie pliki aplikacji do podkatalogu wersji, w tym plików wykonywalnych, zestawów, zasobów i plików danych. W razie potrzeby można utworzyć dodatkowe podkatalogi zawierające dodatkowe pliki.  
   
-4. Otwórz [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] lub polecenia programu Visual Studio Monituj i zmienić podkatalog wersji.  
+4. Otwórz wiersz polecenia [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] lub Visual Studio i przejdź do podkatalogu wersji.  
   
-5. Utwórz manifest aplikacji przy użyciu wywołania programu Mage.exe. Poniższa instrukcja umożliwia utworzenie manifest aplikacji dla kodu skompilowane do uruchamiania na procesorze Intel x86.  
+5. Utwórz manifest aplikacji z wywołaniem programu Mage. exe. Poniższa instrukcja tworzy manifest aplikacji dla kodu skompilowanego do uruchamiania na procesorze Intel x86.  
   
     ```  
     mage -New Application -Processor x86 -ToFile AppToDeploy.exe.manifest -name "My App" -Version 1.0.0.0 -FromDirectory .   
     ```  
   
     > [!NOTE]
-    > Pamiętaj uwzględnić znaku kropki (.) po `-FromDirectory` opcja, która wskazuje bieżący katalog. Jeśli nie zostanie uwzględniony kropki (.), należy określić ścieżkę do plików aplikacji.  
+    > Upewnij się, że po opcji `-FromDirectory` zostanie uwzględniona kropka (.), która wskazuje bieżący katalog. Jeśli kropka nie zostanie uwzględniona, należy określić ścieżkę do plików aplikacji.  
   
-6. Zaloguj się w manifeście aplikacji za pomocą certyfikatu Authenticode. Zastąp *mycert.pfx* ze ścieżką do pliku certyfikatu. Zastąp *haseł* przy użyciu hasła dla pliku certyfikatu.  
+6. Podpisz manifest aplikacji przy użyciu certyfikatu Authenticode. Zastąp plik *webcert. pfx* ścieżką do pliku certyfikatu. Zastąp ciąg *passwd* hasłem dla pliku certyfikatu.  
   
     ```  
     mage -Sign AppToDeploy.exe.manifest -CertFile mycert.pfx -Password passwd  
     ```  
   
-     Aby utworzyć manifest aplikacji przy użyciu certyfikatów CNG, należy użyć następującego polecenia. Zastąp *cngCert.pfx* ze ścieżką do pliku certyfikatu.  
+     Aby podpisać manifest aplikacji z certyfikatem CNG, należy użyć poniższego. Zastąp plik *cngCert. pfx* ścieżką do pliku certyfikatu.  
   
     ```  
     mage -Sign AppToDeploy.exe.manifest -CertFile cngCert.pfx  
     ```  
   
-7. Przejdź do katalogu głównego katalogu wdrażania.  
+7. Zmień na katalog główny katalogu wdrożenia.  
   
-8. Generowanie manifestu wdrażania za pomocą wywołania programu Mage.exe. Domyślnie program Mage.exe spowoduje oznaczenie Twojego [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] wdrożenia jako zainstalowanych aplikacji, tak że można uruchomić zarówno online i offline. Aby udostępnić aplikację, tylko wtedy, gdy użytkownik jest w trybie online, należy użyć `-Install` opcji z wartością `false`. Jeśli użytkownik korzysta z domyślnych, a użytkownicy będą instalować aplikację z witryny sieci Web lub udziału plików, upewnij się, że wartość `-ProviderUrl` opcja wskazuje lokalizację aplikacji manifestu na serwerze sieci Web lub udziału.  
+8. Wygeneruj manifest wdrożenia z wywołaniem programu Mage. exe. Domyślnie program Mage. exe oznaczy wdrożenie [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] jako zainstalowaną aplikację, aby można było uruchomić je zarówno w trybie online, jak i offline. Aby aplikacja była dostępna tylko wtedy, gdy użytkownik jest w trybie online, użyj opcji `-Install` z wartością `false`. Jeśli używasz wartości domyślnej, a użytkownicy zainstalują aplikację z witryny sieci Web lub udziału plików, upewnij się, że wartość `-ProviderUrl` wskazuje lokalizację manifestu aplikacji na serwerze sieci Web lub udziale.  
   
     ```  
     mage -New Deployment -Processor x86 -Install true -Publisher "My Co." -ProviderUrl "\\myServer\myShare\AppToDeploy.application" -AppManifest 1.0.0.0\AppToDeploy.exe.manifest -ToFile AppToDeploy.application  
     ```  
   
-9. Podpisać manifest wdrażania za pomocą certyfikatu Authenticode lub CNG.  
+9. Podpisz manifest wdrożenia przy użyciu certyfikatu Authenticode lub CNG.  
   
     ```  
     mage -Sign AppToDeploy.application -CertFile mycert.pfx -Password passwd  
@@ -123,91 +123,91 @@ Jeśli nie możesz użyć programu Visual Studio, aby wdrożyć swoje [!INCLUDE[
     mage -Sign AppToDeploy.exe.manifest -CertFile cngCert.pfx  
     ```  
   
-10. Skopiuj wszystkie pliki w katalogu wdrożenia do wdrożenia docelowego lub nośnika. Może to być folderem na witryny sieci Web lub witryny FTP, udziału plików lub dysku CD.  
+10. Skopiuj wszystkie pliki z katalogu wdrożenia do lokalizacji docelowej lub nośnika wdrożenia. Może to być folder w witrynie sieci Web lub w witrynie FTP, udziale plików lub dysku CD-ROM.  
   
-11. Zapewnić użytkownikom za pomocą adresu URL, UNC lub nośnik fizyczny wymagane do zainstalowania aplikacji. Jeśli podasz adres URL lub UNC, należy zapewnić użytkownikom pełną ścieżkę do pliku manifestu wdrożenia. Na przykład, jeśli jest wdrażana AppToDeploy http://webserver01/ w katalogu AppToDeploy Pełna ścieżka adresu URL byłaby http://webserver01/AppToDeploy/AppToDeploy.application.  
+11. Zapewnij użytkownikom adresy URL, UNC lub nośniki fizyczne wymagane do zainstalowania aplikacji. Jeśli podano adres URL lub UNC, należy nadać użytkownikom pełną ścieżkę do manifestu wdrożenia. Na przykład jeśli AppToDeploy został wdrożony w http://webserver01/ w katalogu AppToDeploy, pełna ścieżka adresu URL zostanie http://webserver01/AppToDeploy/AppToDeploy.applicationa.  
   
-### <a name="to-deploy-an-application-with-the-mageuiexe-graphical-tool"></a>Aby wdrożyć aplikację za pomocą graficznego narzędzia MageUI.exe  
+### <a name="to-deploy-an-application-with-the-mageuiexe-graphical-tool"></a>Aby wdrożyć aplikację za pomocą narzędzia graficznego MageUI. exe  
   
-1. Utwórz katalog, w którym będą przechowywane Twoje [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] pliki wdrożenia.  
+1. Utwórz katalog, w którym będą przechowywane pliki wdrożenia [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].  
   
-2. W katalogu wdrażania, który został utworzony Utwórz podkatalog wersji. Jeśli po raz pierwszy, aplikacja jest wdrażana, nazwę podkatalogu wersji **1.0.0.0**.  
+2. W utworzonym katalogu wdrożenia Utwórz podkatalog wersji. Jeśli aplikacja jest wdrażana po raz pierwszy, nadaj jej nazwę podkatalogu **1.0.0.0**.  
   
     > [!NOTE]
     > Wersja wdrożenia prawdopodobnie różni się od wersji aplikacji.  
   
-3. Skopiuj wszystkie pliki aplikacji do podkatalogu wersji, w tym pliki wykonywalne, zestawy, zasobów i plików danych. Jeśli to konieczne, możesz utworzyć dodatkowe podkatalogów, które zawierają dodatkowe pliki.  
+3. Skopiuj wszystkie pliki aplikacji do podkatalogu wersji, w tym plików wykonywalnych, zestawów, zasobów i plików danych. W razie potrzeby można utworzyć dodatkowe podkatalogi zawierające dodatkowe pliki.  
   
-4. Rozpocznij graficznego narzędzia MageUI.exe.  
+4. Uruchom narzędzie graficzne MageUI. exe.  
   
     ```  
     MageUI.exe  
     ```  
   
-5. Utwórz nowy manifest aplikacji przez wybranie **pliku**, **New**, **Manifest aplikacji** z menu.  
+5. Utwórz nowy manifest aplikacji, wybierając kolejno opcje **plik**, **Nowy**, **manifest aplikacji** .  
   
-6. Domyślny **nazwa** karty, wpisz nazwę oraz numer wersji tego wdrożenia. Również określić **procesora** stworzonemu aplikacji, takich jak x86.  
+6. Na karcie **Nazwa** domyślna wpisz nazwę i numer wersji tego wdrożenia. Określ również **procesor** , dla którego aplikacja została skompilowana, taka jak x86.  
   
-7. Wybierz **pliki** kartę, a następnie kliknij przycisk wielokropka (**...** ) znajdujący się obok **katalogu aplikacji** pola tekstowego. Zostanie wyświetlone okno dialogowe Przeglądanie w poszukiwaniu folderu.  
+7. Wybierz kartę **pliki** , a następnie kliknij przycisk wielokropka ( **...** ) obok pola tekstowego **katalog aplikacji** . Zostanie wyświetlone okno dialogowe Przeglądanie w poszukiwaniu folderu.  
   
-8. Wybierz podkatalogu wersji zawierającym pliki aplikacji, a następnie kliknij przycisk **OK**.  
+8. Wybierz podkatalog wersji zawierający pliki aplikacji, a następnie kliknij przycisk **OK**.  
   
-9. Jeśli zostanie wdrożony z Internet Information Services (IIS), wybierz **podczas wypełniania Dodaj rozszerzenie .deploy do każdego pliku, który nie ma** pole wyboru.  
+9. W przypadku wdrażania z programu Internet Information Services (IIS) zaznacz pole wyboru **podczas wypełniania Dodaj rozszerzenie. deploy do dowolnego pliku, który go nie ma** .  
   
-10. Kliknij przycisk **wypełniania** przycisk, aby dodać pliki aplikacji do listy plików. Jeśli aplikacja zawiera więcej niż jeden plik wykonywalny, oznacz głównego pliku wykonywalnego dla tego wdrożenia, co aplikacja uruchamiania, wybierając **punktu wejścia** z **typ pliku** listy rozwijanej. (Jeśli aplikacja zawiera tylko jeden plik wykonywalny, MageUI.exe oznaczy go dla Ciebie.)  
+10. Kliknij przycisk **Wypełnij** , aby dodać do listy plików wszystkie pliki aplikacji. Jeśli aplikacja zawiera więcej niż jeden plik wykonywalny, Oznacz główny plik wykonywalny dla tego wdrożenia jako aplikację startową, wybierając pozycję **punkt wejścia** z listy rozwijanej **Typ pliku** . (Jeśli aplikacja zawiera tylko jeden plik wykonywalny, program MageUI. exe oznaczy go jako ty).  
   
-11. Wybierz **wymagane są uprawnienia** kartę, a następnie wybierz poziom zaufania, należy dodać aplikację do potwierdzenia. Wartość domyślna to **FullTrust**, który będzie odpowiedni dla większości aplikacji.  
+11. Wybierz kartę **wymagane uprawnienia** i wybierz poziom zaufania, który ma być używany przez aplikację. Wartość domyślna to **FullTrust**, która będzie odpowiednia dla większości aplikacji.  
   
-12. Wybierz **pliku**, **Zapisz jako** z menu. Pojawi się okno dialogowe Opcje podpisywania, prośbą do podpisania manifestu aplikacji.  
+12. Wybierz pozycję **plik**, **Zapisz jako** z menu. Zostanie wyświetlone okno dialogowe Opcje podpisywania z monitem o podpisanie manifestu aplikacji.  
   
-13. Jeśli masz certyfikat przechowywany jako plik w systemie plików, użyj **logowania przy użyciu pliku certyfikatu** opcji, a następnie wybierz certyfikat z systemu plików przy użyciu wielokropka (**...** ) przycisku. Następnie wpisz hasło do certyfikatu.  
-  
-     —lub—  
-  
-     Jeżeli certyfikat znajduje się w magazynie certyfikatów dostępny z komputera, wybierz **logowania przechowywanym certyfikatem** opcji, a następnie wybierz certyfikat z podanej listy.  
-  
-14. Kliknij przycisk **OK** Aby podpisać manifest aplikacji. Zostanie wyświetlone okno dialogowe Zapisz jako.  
-  
-15. W oknie dialogowym Zapisz jako, należy określić katalog wersji, a następnie kliknij **Zapisz**.  
-  
-16. Wybierz **pliku**, **New**, **manifestu wdrażania** z menu, aby utworzyć manifest wdrożenia.  
-  
-17. Na **nazwa** karcie, określ nazwę oraz numer wersji dla tego wdrożenia (**1.0.0.0** w tym przykładzie). Również określić **procesora** stworzonemu aplikacji, takich jak x86.  
-  
-18. Wybierz **opis** kartę, a następnie określ wartości dla **wydawcy** i **produktu**. (**Produktu** jest nazwa nadana do aplikacji w menu Windows Start, gdy Twoja aplikacja jest instalowana na komputerze klienckim w trybie offline.)  
-  
-19. Wybierz **opcje wdrażania** kartę, a następnie w **lokalizacja początkowa** tekstu określ lokalizację w manifeście aplikacji na serwerze sieci Web lub udziału. Na przykład \\\myServer\myShare\AppToDeploy.application.  
-  
-20. Jeśli rozszerzenie jest automatycznie usuwane dodane w poprzednim kroku, również wybrać **rozszerzenie nazwy pliku .deploy** tutaj.  
-  
-21. Wybierz **opcje aktualizacji** kartę, a następnie określ, jak często chcesz tej aplikacji do zaktualizowania. Jeśli aplikacja używa <xref:System.Deployment.Application.UpdateCheckInfo> pod kątem aktualizacji samego, wyczyść **ta aplikacja ma sprawdzać dostępność aktualizacji** pole wyboru.  
-  
-22. Wybierz **odwołania aplikacji** kartę, a następnie kliknij przycisk **wybierz manifestu** przycisku. Pojawi się okno dialogowe Otwieranie.  
-  
-23. Wybierz manifest aplikacji, która została utworzona wcześniej, a następnie kliknij przycisk **Otwórz**.  
-  
-24. Wybierz **pliku**, **Zapisz jako** z menu. Pojawi się okno dialogowe Opcje podpisywania, prośbą do podpisania manifestu wdrażania.  
-  
-25. Jeśli masz certyfikat przechowywany jako plik w systemie plików, użyj **logowania przy użyciu pliku certyfikatu** opcji, a następnie wybierz certyfikat z systemu plików przy użyciu wielokropka (**...** ) przycisku. Następnie wpisz hasło do certyfikatu.  
+13. Jeśli masz certyfikat przechowywany jako plik w systemie plików, użyj opcji **Podpisz przy użyciu pliku certyfikatu** , a następnie wybierz certyfikat z systemu plików przy użyciu przycisku wielokropka ( **...** ). Następnie wpisz hasło certyfikatu.  
   
      —lub—  
   
-     Jeżeli certyfikat znajduje się w magazynie certyfikatów dostępny z komputera, wybierz **logowania przechowywanym certyfikatem** opcji, a następnie wybierz certyfikat z podanej listy.  
+     Jeśli certyfikat jest przechowywany w magazynie certyfikatów dostępnym z komputera, wybierz opcję **Podpisz z przechowywanym certyfikatem** i wybierz certyfikat z podanej listy.  
   
-26. Kliknij przycisk **OK** Aby podpisać manifest wdrożenia. Zostanie wyświetlone okno dialogowe Zapisz jako.  
+14. Kliknij przycisk **OK** , aby podpisać manifest aplikacji. Zostanie wyświetlone okno dialogowe Zapisywanie jako.  
   
-27. W **Zapisz jako** okno dialogowe, Przenieś w górę jednego katalogu głównym Twojego wdrożenia, a następnie kliknij przycisk **Zapisz**.  
+15. W oknie dialogowym Zapisz jako określ katalog wersji, a następnie kliknij przycisk **Zapisz**.  
   
-28. Skopiuj wszystkie pliki w katalogu wdrożenia do wdrożenia docelowego lub nośnika. Może to być folderem na witryny sieci Web lub witryny FTP, udziału plików lub dysku CD.  
+16. Wybierz pozycję **plik**, **Nowy**, **manifest wdrożenia** z menu, aby utworzyć manifest wdrożenia.  
   
-29. Zapewnić użytkownikom za pomocą adresu URL, UNC lub nośnik fizyczny wymagane do zainstalowania aplikacji. Jeśli podasz adres URL lub UNC, należy zapewnić użytkownikom pełną ścieżkę manifestu wdrażania. Na przykład, jeśli jest wdrażana AppToDeploy http://webserver01/ w katalogu AppToDeploy Pełna ścieżka adresu URL byłaby http://webserver01/AppToDeploy/AppToDeploy.application.  
+17. Na karcie **Nazwa** Określ nazwę i numer wersji dla tego wdrożenia (**1.0.0.0** w tym przykładzie). Określ również **procesor** , dla którego aplikacja została skompilowana, taka jak x86.  
+  
+18. Wybierz kartę **Opis** i określ wartości dla **wydawcy** i **produktu**. (**Produkt** to nazwa nadana aplikacji w menu Start systemu Windows, gdy aplikacja jest instalowana na komputerze klienckim w celu użycia w trybie offline).  
+  
+19. Wybierz kartę **Opcje wdrażania** , a następnie w polu tekstowym **Lokalizacja początkowa** Określ lokalizację manifestu aplikacji na serwerze sieci Web lub udziale. Na przykład \\\myServer\myShare\AppToDeploy.application.  
+  
+20. Jeśli dodano rozszerzenie. deploy w poprzednim kroku, w tym miejscu należy również wybrać opcję **Użyj. Wdróż rozszerzenie nazwy pliku** .  
+  
+21. Wybierz kartę **Opcje aktualizacji** i określ, jak często chcesz aktualizować tę aplikację. Jeśli aplikacja używa <xref:System.Deployment.Application.UpdateCheckInfo>, aby sprawdzać dostępność aktualizacji, wyczyść pole wyboru **Ta aplikacja powinna sprawdzać dostępność aktualizacji** .  
+  
+22. Wybierz kartę **odwołanie do aplikacji** , a następnie kliknij przycisk **Wybierz manifest** . Zostanie wyświetlone okno dialogowe Otwórz.  
+  
+23. Wybierz utworzony wcześniej manifest aplikacji, a następnie kliknij przycisk **Otwórz**.  
+  
+24. Wybierz pozycję **plik**, **Zapisz jako** z menu. Zostanie wyświetlone okno dialogowe Opcje podpisywania z monitem o podpisanie manifestu wdrożenia.  
+  
+25. Jeśli masz certyfikat przechowywany jako plik w systemie plików, użyj opcji **Podpisz przy użyciu pliku certyfikatu** , a następnie wybierz certyfikat z systemu plików przy użyciu przycisku wielokropka ( **...** ). Następnie wpisz hasło certyfikatu.  
+  
+     —lub—  
+  
+     Jeśli certyfikat jest przechowywany w magazynie certyfikatów dostępnym z komputera, wybierz opcję **Podpisz z przechowywanym certyfikatem** i wybierz certyfikat z podanej listy.  
+  
+26. Kliknij przycisk **OK** , aby podpisać manifest wdrożenia. Zostanie wyświetlone okno dialogowe Zapisywanie jako.  
+  
+27. W oknie dialogowym **Zapisywanie jako** Przenieś jeden katalog do katalogu głównego wdrożenia, a następnie kliknij przycisk **Zapisz**.  
+  
+28. Skopiuj wszystkie pliki z katalogu wdrożenia do lokalizacji docelowej lub nośnika wdrożenia. Może to być folder w witrynie sieci Web lub w witrynie FTP, udziale plików lub dysku CD-ROM.  
+  
+29. Zapewnij użytkownikom adresy URL, UNC lub nośniki fizyczne wymagane do zainstalowania aplikacji. W przypadku podania adresu URL lub UNC należy nadać użytkownikom pełną ścieżkę manifestu wdrożenia. Na przykład jeśli AppToDeploy został wdrożony w http://webserver01/ w katalogu AppToDeploy, pełna ścieżka adresu URL zostanie http://webserver01/AppToDeploy/AppToDeploy.applicationa.  
   
 ## <a name="next-steps"></a>Następne kroki  
- Gdy zajdzie potrzeba wdrożenia nowej wersji aplikacji, Utwórz nowy katalog o nazwie po nowej wersji — na przykład 1.0.0.1—and Skopiuj nowe pliki aplikacji do nowego katalogu. Następnie należy wykonać poprzednie kroki, aby utworzyć i zarejestrować nowy manifest aplikacji i aktualizacji i podpisać manifest wdrożenia. Uważaj określić tę samą wersję wyższe w obu Mage.exe `-New` i `–Update` wywołań, jako [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aktualizuje tylko nowsze wersje z najbardziej znaczących całkowitą najdalej po lewej stronie. Jeśli używasz MageUI.exe, możesz zaktualizować manifest wdrożenia, otwierając go, wybierając **odwołania aplikacji** kartę, klikając **wybierz manifestu** przycisk, a następnie wybierając aktualizację manifest aplikacji.  
+ Jeśli musisz wdrożyć nową wersję aplikacji, Utwórz nowy katalog o nazwie po nowej wersji — na przykład 1.0.0.1 — i skopiuj nowe pliki aplikacji do nowego katalogu. Następnie należy wykonać kroki opisane w poprzednich krokach, aby utworzyć i podpisać nowy manifest aplikacji oraz zaktualizować i podpisać manifest wdrożenia. Należy zachować ostrożność, aby określić tę samą nowszą wersję w ramach wywołań programu Mage. exe `-New` i `–Update`, ponieważ [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] tylko aktualizacje wyższej wersji z największą liczbą całkowitą z lewej strony. Jeśli użyto MageUI. exe, możesz zaktualizować manifest wdrożenia, otwierając go, wybierając kartę **odwołanie do aplikacji** , klikając przycisk **Wybierz manifest** , a następnie wybierając zaktualizowany manifest aplikacji.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Mage.exe (manifestu narzędzie generowania i edytowania)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
- [MageUI.exe (Manifest narzędzie generowania i edytowania, graficzny klient)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)   
+ Program [Mage. exe (narzędzie tworzenia i edycji manifestów)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
+ [MageUI. exe (narzędzie tworzenia i edycji manifestów, klient graficzny)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)   
  [Publikowanie aplikacji ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Manifest wdrażania ClickOnce](../deployment/clickonce-deployment-manifest.md)   
+   [manifestu wdrażania ClickOnce](../deployment/clickonce-deployment-manifest.md)  
  [Manifest aplikacji ClickOnce](../deployment/clickonce-application-manifest.md)

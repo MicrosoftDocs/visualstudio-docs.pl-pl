@@ -1,5 +1,5 @@
 ---
-title: Użycie sieci | Dokumentacja firmy Microsoft
+title: Użycie sieci | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,37 +9,37 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d85b71c2ed54a8ab8bc85c93ce61e3ed274d86e0
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: eed389a3847145a0f37eb3141526a38e4374d368
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65673822"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297908"
 ---
 # <a name="network-usage"></a>Użycie sieci
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio **sieci** narzędzie diagnostyczne zbiera dane dotyczące operacje sieciowe, wykonywane przy użyciu [Windows.Web.Http API](https://msdn.microsoft.com/library/windows/apps/windows.web.http.aspx). Analizowanie danych może pomóc rozwiązać problemy, takie jak problemy dostępu i uwierzytelniania, nieprawidłowe użycie pamięci podręcznej i wyświetlania jest niska i pobrać wydajności.  
   
- Narzędzie do sieci obsługuje tylko platformy Universal Windows apps. Inne platformy nie są obsługiwane w tej chwili.  
+ Narzędzie sieciowe obsługuje tylko aplikacje platformy uniwersalnej systemu Windows. Inne platformy nie są obsługiwane w tej chwili.  
   
 > [!NOTE]
-> Aby uzyskać bardziej szczegółowy opis narzędzie do sieci, zobacz [wprowadzenie do programu Visual Studio narzędzie sieci](http://blogs.msdn.com/b/visualstudio/archive/2015/05/04/introducing-visual-studio-s-network-tool.aspx).  
+> Aby zapoznać się z bardziej szczegółowym opisem narzędzia sieci, zobacz [wprowadzenie do narzędzia sieci programu Visual Studio](https://devblogs.microsoft.com/visualstudio/?m=20155).  
   
-## <a name="collecting-network-tool-data"></a>Zbieranie danych z narzędzia do sieci  
+## <a name="collecting-network-tool-data"></a>Zbieranie danych narzędzia sieciowego  
  Należy uruchomić **sieci** narzędzie z otwartym projekcie programu Visual Studio na komputerze programu Visual Studio.  
   
 1. Otwórz projekt w programie Visual Studio.  
   
-2. W menu, kliknij polecenie **debugowanie / Profiler wydajności...** . Wybierz **sieci**, a następnie wybierz **Start**.  
+2. W menu kliknij pozycję **Debuguj/Performance Profiler..** .. Wybierz pozycję **Sieć**, a następnie wybierz pozycję **Uruchom**.  
   
-3. Narzędzie sieci rozpoczyna zbieranie ruch HTTP Twojej aplikacji.  
+3. Narzędzie sieciowe rozpocznie zbieranie ruchu HTTP aplikacji.  
   
     Podczas uruchamiania aplikacji widok podsumowania w okienku po lewej stronie automatycznie wyświetla listę przechwyconych operacji HTTP. Wybierz element w widoku podsumowania, aby uzyskać więcej informacji, w okienku szczegółów w okienku po prawej stronie.  
   
 4. Wybierz **zatrzymać** aby zamknąć aplikację.  
   
-   W oknie Raport powinien wyglądać mniej więcej tak:  
+   Okno raportu powinno wyglądać następująco:  
   
    ![Okno sieci](../profiling/media/network-fullwindow.png "NETWORK_FullWindow")  
   
@@ -52,7 +52,7 @@ Visual Studio **sieci** narzędzie diagnostyczne zbiera dane dotyczące operacje
   
  **Sieci** widoków szczegółów zawiera więcej informacji na temat operacji sieciowej w widoku podsumowania.  
   
- ![Okienko szczegółów narzędzie sieci](../profiling/media/network-detailsviewpane.png "NETWORK_DetailsViewPane")  
+ ![Okienko szczegółów narzędzia sieciowego](../profiling/media/network-detailsviewpane.png "NETWORK_DetailsViewPane")  
   
 |||  
 |-|-|  
@@ -65,15 +65,15 @@ Visual Studio **sieci** narzędzie diagnostyczne zbiera dane dotyczące operacje
  Sieć **podsumowania** pasek pokazuje liczbę operacji sieciowych, które są wyświetlane na dowolnym etapie, ile danych zostało przeniesione, ile czasu zajęło Pobierz je oraz ile błędy (liczba żądań z odpowiedziami 4xx lub 5xx) widoczne.  
   
 ### <a name="analysis-tips"></a>Wskazówki dotyczące analizy  
- Najważniejsze funkcje to narzędzie, które niektóre obszary, które mogą być przydatne, gdy uruchamiasz sieci powiązane analizy:  
+ To narzędzie wyróżnia pewne obszary, które mogą być przydatne w przypadku uruchamiania analizy związanej z siecią:  
   
 1. Żądania, które są w pełni obsługiwane z pamięci podręcznej są wyświetlane jako **(z pamięci podręcznej)** w **odebrane** kolumny. To może pomóc w określeniu, czy używasz pamięci podręcznej skutecznie aby oszczędzić przepustowość użytkownika lub tego, czy buforowanie odpowiedzi przez pomyłkę i podając użytkowników końcowych w aplikacji za pomocą nieaktualne dane.  
   
-2. W odpowiedzi na błędy (4xx lub 5xx) są wyświetlane w **wyniki** kolumny z czerwonym oznaczeniem stanu kodu i są również wyróżnione na pasku podsumowania. Dzięki temu ułatwiają błędów między wiele potencjalnych żądań w swojej aplikacji.  
+2. Odpowiedzi na błędy (4xx lub 5xx) są wyświetlane w kolumnie **wyniki** z czerwonym kodem stanu i są również wyróżnione na pasku podsumowania. Dzięki temu ułatwiają błędów między wiele potencjalnych żądań w swojej aplikacji.  
   
-3. Przycisk Drukowanie pretty odpowiedzi (wewnątrz karta Treść) może pomóc w przeanalizować za pomocą formatu JSON, XML, HTML, CSS, JavaScript i TypeScript ładunków odpowiedzi przez zwiększenie czytelności zawartości.  
+3. Przycisk "Łatwa drukowanie" odpowiedzi (na karcie Body) może pomóc w analizie danych w postaci JSON, XML, HTML, CSS, JavaScript i języka TypeScript, zwiększając czytelność zawartości.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Uruchamianie narzędzi profilowania bez debugowania](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
- [Visual Studio blog: Wprowadzenie do programu Visual Studio, inspektor sieci](http://go.microsoft.com/fwlink/?LinkId=535022)   
- [Wideo Channel 9: Narzędzia diagnostyczne VS — nowy Profiler sieci](http://channel9.msdn.com/Series/ConnectOn-Demand/206)
+ [Uruchom narzędzia profilowania bez debugowania](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
+ [Blog programu Visual Studio: wprowadzenie do Inspektora sieci programu Visual studio](https://go.microsoft.com/fwlink/?LinkId=535022)   
+ [Wideo Channel 9: narzędzia diagnostyczne VS — Nowy Profiler sieci](https://channel9.msdn.com/Series/ConnectOn-Demand/206)

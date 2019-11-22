@@ -1,5 +1,5 @@
 ---
-title: MIDL — zadanie | Dokumentacja firmy Microsoft
+title: MIDL — zadanie | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -27,144 +27,144 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c1404ae5fce31eb59d2bb484ce1d97956f4cfefc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7e007830a91f0450f6c26c6c175196db308e3a43
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68191558"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300211"
 ---
 # <a name="midl-task"></a>MIDL — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Opakowuje narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL) midl.exe. Aby uzyskać więcej informacji, zobacz "Odwołanie do wiersza polecenia MIDL" w [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
+Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), MIDL. exe. Aby uzyskać więcej informacji, zobacz sekcję "MIDL Command-Line Reference" w witrynie [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) w sieci Web.  
   
 ## <a name="parameters"></a>Parametry  
- W poniższej tabeli opisano parametry **MIDL** zadania. Większość parametrów zadania oraz kilka zestawów parametrów, odpowiada opcji wiersza polecenia.  
+ W poniższej tabeli opisano parametry zadania **MIDL** . Większość parametrów zadań i kilku zestawów parametrów odpowiada opcji wiersza polecenia.  
   
 - **AdditionalIncludeDirectories**  
   
-     Opcjonalnie **String []** parametru.  
+     Opcjonalny parametr **String []** .  
   
-     Dodaje katalog do listy katalogów przeszukiwanych w poszukiwaniu zaimportowane pliki IDL, pliki nagłówkowe dołączone i pliki konfiguracyjne aplikacji (ACF).  
+     Dodaje katalog do listy katalogów przeszukiwanych pod kątem importowanych plików IDL, dołączonych plików nagłówkowych i plików konfiguracji aplikacji (ACF).  
   
-     Aby uzyskać więcej informacji, zobacz **/I** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
+     Aby uzyskać więcej informacji, zobacz **/i** opcji w "MIDL wiersza polecenia" w witrynie [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) w sieci Web.  
   
 - **AdditionalOptions**  
   
-     Opcjonalnie **ciąg** parametru.  
+     Opcjonalny parametr **ciągu** .  
   
-     Listę opcji wiersza polecenia. Na przykład **"** _/option1 /option2 /option#_ ". Użyj tego parametru, aby określić opcje wiersza polecenia, które nie są reprezentowane przez inne parametry zadania MIDL.  
+     Lista opcji wiersza polecenia. Na przykład **"** _/option1/option2 Option #_ ". Użyj tego parametru, aby określić opcje wiersza polecenia, które nie są reprezentowane przez żaden inny parametr zadania MIDL.  
   
-     Aby uzyskać więcej informacji, zobacz "Odwołanie do wiersza polecenia MIDL" w [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
+     Aby uzyskać więcej informacji, zobacz sekcję "MIDL Command-Line Reference" w witrynie [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) w sieci Web.  
   
 - **ApplicationConfigurationMode**  
   
-     Opcjonalnie **logiczna** parametru.  
+     Opcjonalny parametr **logiczny** .  
   
-     Jeśli `true`, umożliwia korzystanie z niektórych słów kluczowych ACF w pliku IDL.  
+     Jeśli `true`, program pozwala używać niektórych słów kluczowych ACF w pliku IDL.  
   
-     Aby uzyskać więcej informacji, zobacz **/app_config** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
+     Aby uzyskać więcej informacji, zobacz opcję **/app_config** w artykule "informacje w wierszu polecenia MIDL" w witrynie [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) w sieci Web.  
   
 - **ClientStubFile**  
   
-     Opcjonalnie **ciąg** parametru.  
+     Opcjonalny parametr **ciągu** .  
   
-     Określa nazwę plik szczątkowy klienta dla interfejsu RPC.  
+     Określa nazwę pliku szczątkowego klienta dla interfejsu RPC.  
   
-     Aby uzyskać więcej informacji, zobacz **/cstub** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web. Zobacz też **ServerStubFile** parametru w tej tabeli.  
+     Aby uzyskać więcej informacji, zobacz **/cstub** Option in "MIDL Command-Line Reference" w witrynie [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) w sieci Web. Zobacz również parametr **ServerStubFile** w tej tabeli.  
   
 - **CPreprocessOptions**  
   
-     Opcjonalnie **ciąg** parametru.  
+     Opcjonalny parametr **ciągu** .  
   
-     Określa opcje do przekazania do C/C++ preprocessor. Określ rozdzieloną spacjami listę opcje preprocesora.  
+     Określa opcje do przekazania do języka C/C++ preprocesora. Określ rozdzielaną spacją listę opcji preprocesora.  
   
-     Aby uzyskać więcej informacji, zobacz **/cpp_opt** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
+     Aby uzyskać więcej informacji, zobacz opcję **/cpp_opt** w artykule "informacje w wierszu polecenia MIDL" w witrynie [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) w sieci Web.  
   
 - **DefaultCharType**  
   
-     Opcjonalnie **ciąg** parametru.  
+     Opcjonalny parametr **ciągu** .  
   
-     Określa domyślny typ znakowy kompilatora C użyje do kompilowania wygenerowanego kodu.  
+     Określa domyślny typ znaku, który kompilator języka C będzie używał do kompilowania wygenerowanego kodu.  
   
      Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
     |Wartość|Opcja wiersza polecenia|  
     |-----------|--------------------------|  
-    |**Podpisany**|**podpisana /char**|  
-    |**Bez znaku**|**/CHAR bez znaku**|  
-    |**Ascii**|**/CHAR ascii7**|  
+    |**Opatrzon**|**/char podpisany**|  
+    |**Bajt**|**/char bez znaku**|  
+    |**Ascii**|**/char ascii7**|  
   
-     Aby uzyskać więcej informacji, zobacz **/char** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
+     Aby uzyskać więcej informacji, zobacz **/char** Option in "MIDL Command-Line Reference" w witrynie [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) w sieci Web.  
   
 - **DllDataFileName**  
   
-     Opcjonalnie **ciąg** parametru.  
+     Opcjonalny parametr **ciągu** .  
   
-     Określa nazwę pliku dla wygenerowanej *dlldata* pliku biblioteki DLL serwera proxy.  
+     Określa nazwę pliku dla wygenerowanego pliku *dlldata* dla biblioteki DLL proxy.  
   
-     Aby uzyskać więcej informacji, zobacz **/dlldata** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
+     Aby uzyskać więcej informacji, zobacz **/dlldata** Option in "MIDL Command-Line Reference" w witrynie [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) w sieci Web.  
   
 - **EnableErrorChecks**  
   
-     Opcjonalnie **ciąg** parametru.  
+     Opcjonalny parametr **ciągu** .  
   
-     Określa typ błąd podczas sprawdzania, czy wygenerowane klasy zastępcze będzie wykonywać w czasie wykonywania.  
+     Określa typ błędu podczas sprawdzania, czy generowane wycinki będą wykonywane w czasie wykonywania.  
   
      Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
     |Wartość|Opcja wiersza polecenia|  
     |-----------|--------------------------|  
-    |**Brak**|**/ Error none**|  
-    |**EnableCustom**|**/ Error**|  
-    |**Wszystkie**|**wszystkie/Error**|  
+    |**Brak**|**/Error brak**|  
+    |**EnableCustom**|**/Error**|  
+    |**Całą**|**/Error wszystko**|  
   
-     Aby uzyskać więcej informacji, zobacz **/Error** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
+     Aby uzyskać więcej informacji, zobacz **/Error** Option in "MIDL Command-Line Reference" w witrynie [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) w sieci Web.  
   
 - **ErrorCheckAllocations**  
   
-     Opcjonalnie **logiczna** parametru.  
+     Opcjonalny parametr **logiczny** .  
   
-     Jeśli `true`, sprawdź, czy błędy braku pamięci.  
+     Jeśli `true`, sprawdź, czy nie występują błędy braku pamięci.  
   
-     Aby uzyskać więcej informacji, zobacz **alokacji/Error** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
+     Aby uzyskać więcej informacji, zobacz opcja **alokacji/Error** w sekcji "Dokumentacja wiersza polecenia MIDL" w witrynie [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) w sieci Web.  
   
 - **ErrorCheckBounds**  
   
-     Opcjonalnie **logiczna** parametru.  
+     Opcjonalny parametr **logiczny** .  
   
-     Jeśli `true`, sprawdza, czy rozmiar o różnym poziomie zgodności i różnicując tablic względem Specyfikacja długości transmisji.  
+     Jeśli `true`, sprawdza rozmiar zgodnych i zróżnicowanych tablic względem specyfikacji długości transmisji.  
   
-     Aby uzyskać więcej informacji, zobacz **/Error bounds_check** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
+     Aby uzyskać więcej informacji, zobacz **/error bounds_check** opcja w "MIDL wiersza polecenia" w witrynie [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) w sieci Web.  
   
 - **ErrorCheckEnumRange**  
   
-     Opcjonalnie **logiczna** parametru.  
+     Opcjonalny parametr **logiczny** .  
   
      Jeśli `true`, sprawdza, czy wartości wyliczeniowe są w dopuszczalnym zakresie.  
   
-     Aby uzyskać więcej informacji, zobacz **/Error enum** opcji w wierszu polecenia Pomoc ( **/?** ) dla midl.exe.  
+     Aby uzyskać więcej informacji, zobacz **/Error enum** w pomocy wiersza polecenia ( **/?** ) dla MIDL. exe.  
   
 - **ErrorCheckRefPointers**  
   
-     Opcjonalnie **logiczna** parametru.  
+     Opcjonalny parametr **logiczny** .  
   
-     Jeśli `true`, upewnij się, że żadnych wskaźników odwołanie o wartości null są przekazywane do wycinków klienta.  
+     Jeśli `true`, sprawdź, czy do wycinków klientów nie są przenoszone żadne wskaźniki odwołań o wartości null.  
   
-     Aby uzyskać więcej informacji, zobacz **/Error ref** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
+     Aby uzyskać więcej informacji, zobacz **/Error ref** Option in "MIDL Command-Line Reference" w witrynie [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) w sieci Web.  
   
 - **ErrorCheckStubData**  
   
-     Opcjonalnie **logiczna** parametru.  
+     Opcjonalny parametr **logiczny** .  
   
-     Jeśli `true`, wygeneruje odcinek, który przechwytuje unmarshaling wyjątki po stronie serwera i propaguje je do klienta.  
+     Jeśli `true`, generuje procedurę pośredniczącą, która przechwytuje wyjątki po stronie serwera i propaguje je z powrotem do klienta.  
   
-     Aby uzyskać więcej informacji, zobacz **/Error stub_data** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
+     Aby uzyskać więcej informacji, zobacz **/error stub_data** opcja w "MIDL wiersza polecenia" w witrynie [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) w sieci Web.  
   
 - **GenerateClientFiles**  
   
-     Opcjonalnie **ciąg** parametru.  
+     Opcjonalny parametr **ciągu** .  
   
      Określa, czy kompilator generuje pliki źródłowe C po stronie klienta dla interfejsu RPC.  
   
@@ -172,14 +172,14 @@ Opakowuje narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL) m
   
     |Wartość|Opcja wiersza polecenia|  
     |-----------|--------------------------|  
-    |**Brak**|**/ Client none**|  
-    |**Stub**|**klasy zastępczej/Client**|  
+    |**Brak**|**/Client brak**|  
+    |**Stub**|**/Client**|  
   
-     Aby uzyskać więcej informacji, zobacz **/Client** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
+     Aby uzyskać więcej informacji, zobacz **/Client** Option in "MIDL Command-Line Reference" w witrynie [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) w sieci Web.  
   
 - **GenerateServerFiles**  
   
-     Opcjonalnie **ciąg** parametru.  
+     Opcjonalny parametr **ciągu** .  
   
      Określa, czy kompilator generuje pliki źródłowe C po stronie serwera dla interfejsu RPC.  
   
@@ -187,173 +187,173 @@ Opakowuje narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL) m
   
     |Wartość|Opcja wiersza polecenia|  
     |-----------|--------------------------|  
-    |**Brak**|**/ Server none**|  
-    |**Stub**|**klasy zastępczej/Server**|  
+    |**Brak**|**/Server brak**|  
+    |**Stub**|**/Server — stub**|  
   
-     Aby uzyskać więcej informacji, zobacz **/Server** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
+     Aby uzyskać więcej informacji, zobacz opcja **/Server** w artykule "MIDL w wierszu polecenia" w witrynie [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) w sieci Web.  
   
 - **GenerateStublessProxies**  
   
-     Opcjonalnie **logiczna** parametru.  
+     Opcjonalny parametr **logiczny** .  
   
-     Jeśli `true`, generuje w pełni interpretowane klasy zastępcze oraz proxy bez klas zastępczych dla interfejsów obiektów.  
+     W przypadku `true`program generuje w pełni interpretowane klasy zastępcze z niepośredniczącymi serwerami proxy dla interfejsów obiektów.  
   
-     Aby uzyskać więcej informacji, zobacz **/Oicf** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
+     Aby uzyskać więcej informacji, zobacz **/Oicf** Option in "MIDL Command-Line Reference" w witrynie [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) w sieci Web.  
   
 - **GenerateTypeLibrary**  
   
-     Opcjonalnie **logiczna** parametru.  
+     Opcjonalny parametr **logiczny** .  
   
-     Jeśli `true`, typu pliku biblioteki (.tlb) nie jest generowany.  
+     Jeśli `true`, plik biblioteki typów (TLB) nie zostanie wygenerowany.  
   
-     Aby uzyskać więcej informacji, zobacz **notlb** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
+     Aby uzyskać więcej informacji, zobacz **/notlb** Option in "MIDL Command-Line Reference" w witrynie [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) w sieci Web.  
   
 - **HeaderFileName**  
   
-     Opcjonalnie **ciąg** parametru.  
+     Opcjonalny parametr **ciągu** .  
   
-     Określa nazwę wygenerowanego pliku nagłówka.  
+     Określa nazwę wygenerowanego pliku nagłówkowego.  
   
-     Aby uzyskać więcej informacji, zobacz **/h** lub **/header** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
+     Aby uzyskać więcej informacji, zobacz opcję **/h** lub **/header** w sekcji "Dokumentacja wiersza polecenia MIDL" w witrynie [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) w sieci Web.  
   
 - **IgnoreStandardIncludePath**  
   
-     Opcjonalnie **logiczna** parametru.  
+     Opcjonalny parametr **logiczny** .  
   
-     Jeśli `true`, MIDL — zadanie przeszukuje katalogi określone za pomocą **AdditionalIncludeDirectories** przełącznik, a pomija bieżącego katalogu i katalogi określone przez zmienną środowiskową INCLUDE.  
+     Jeśli `true`, zadanie MIDL przeszukuje tylko katalogi określone za pomocą przełącznika **AdditionalIncludeDirectories** i ignoruje bieżący katalog i katalogi określone przez zmienną środowiskową INCLUDE.  
   
-     Aby uzyskać więcej informacji, zobacz **/no_def_idir** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
+     Aby uzyskać więcej informacji, zobacz opcję **/no_def_idir** w artykule "informacje w wierszu polecenia MIDL" w witrynie [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) w sieci Web.  
   
 - **InterfaceIdentifierFileName**  
   
-     Opcjonalnie **ciąg** parametru.  
+     Opcjonalny parametr **ciągu** .  
   
-     Określa nazwę *pliku identyfikatora interfejsu* interfejsu COM. Przesłania domyślną nazwę uzyskaną przez dodanie "_i.c" do nazwy pliku IDL.  
+     Określa nazwę *pliku identyfikatora interfejsu* dla interfejsu com. Zastępuje domyślną nazwę uzyskaną przez dodanie "_i. c" do nazwy pliku IDL.  
   
-     Aby uzyskać więcej informacji, zobacz **/iid** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
+     Aby uzyskać więcej informacji, zobacz **/IID** Option in "MIDL Command-Line Reference" w witrynie [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) w sieci Web.  
   
-- **Identyfikator ustawień regionalnych**  
+- **LocaleID**  
   
-     Opcjonalnie **int** parametru.  
+     Opcjonalny parametr **int** .  
   
-     Określa *identyfikator ustawień regionalnych* , który umożliwia korzystanie z znaki międzynarodowe w plików wejściowych, nazw plików i ścieżek katalogów. Określ identyfikator ustawień regionalnych dziesiętną.  
+     Określa *identyfikator ustawień regionalnych* , który umożliwia używanie znaków międzynarodowych w plikach wejściowych, nazwach plików i ścieżkach katalogów. Określ identyfikator ustawień regionalnych dziesiętnych.  
   
-     Aby uzyskać więcej informacji, zobacz **/LCID** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web. Zobacz też "Ustawienia regionalne identyfikatory przypisane przez Microsoft" w witrynie MSDN.  
+     Aby uzyskać więcej informacji, zobacz **/LCID** Option in "MIDL Command-Line Reference" w witrynie [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) w sieci Web. Zobacz też sekcję "identyfikatory ustawień regionalnych przypisanych przez firmę Microsoft" w witrynie MSDN.  
   
 - **MkTypLibCompatible**  
   
-     Opcjonalnie **logiczna** parametru.  
+     Opcjonalny parametr **logiczny** .  
   
-     Jeśli `true`, wymaga formatu pliku wejściowego, aby był zgodny z mktyplib.exe w wersji 2.03.  
+     Jeśli `true`, program wymaga, aby format pliku wejściowego był zgodny z MkTypLib. exe w wersji 2,03.  
   
-     Aby uzyskać więcej informacji, zobacz **/mktyplib203** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web. Zobacz też "ODL składni pliku" w witrynie MSDN w sieci Web.  
+     Aby uzyskać więcej informacji, zobacz **/mktyplib203** Option in "MIDL Command-Line Reference" w witrynie [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) w sieci Web. Zobacz również sekcję "ODL File Syntax" w witrynie MSDN w sieci Web.  
   
 - **OutputDirectory**  
   
-     Opcjonalnie **ciąg** parametru.  
+     Opcjonalny parametr **ciągu** .  
   
      Określa domyślny katalog, w którym zadanie MIDL zapisuje pliki wyjściowe.  
   
-     Aby uzyskać więcej informacji, zobacz **/out** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
+     Aby uzyskać więcej informacji, zobacz opcję **/out** w artykule "MIDL w wierszu polecenia" w witrynie [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) w sieci Web.  
   
 - **PreprocessorDefinitions**  
   
-     Opcjonalnie **String []** parametru.  
+     Opcjonalny parametr **String []** .  
   
-     Określa co najmniej jeden *definiuje*; oznacza to, nazwę i wartość do przekazania do preprocesora C jako opcjonalną Jeśli przez `#define` dyrektywy. Formularz każdego Definiuj jest, *nazwa [= value]* .  
+     Określa co najmniej jedną *definicję*; oznacza to, że nazwa i wartość opcjonalna, które mają zostać przesłane do preprocesora C, tak jak w przypadku dyrektywy `#define`. Każdy z nich definiuje, *nazwa [= wartość]* .  
   
-     Aby uzyskać więcej informacji, zobacz **/D** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web. Zobacz też **UndefinePreprocessorDefinitions** parametru w tej tabeli.  
+     Aby uzyskać więcej informacji, zobacz **/d** Option w "MIDL Command-Line Reference" w witrynie [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) w sieci Web. Zobacz również parametr **UndefinePreprocessorDefinitions** w tej tabeli.  
   
 - **ProxyFileName**  
   
-     Opcjonalnie **ciąg** parametru.  
+     Opcjonalny parametr **ciągu** .  
   
-     Określa nazwę pliku proxy interfejsu dla interfejsu COM.  
+     Określa nazwę pliku serwera proxy interfejsu dla interfejsu COM.  
   
-     Aby uzyskać więcej informacji, zobacz **/proxy** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
+     Aby uzyskać więcej informacji, zobacz **/proxy** Option in "MIDL Command-Line Reference" w witrynie [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) w sieci Web.  
   
 - **RedirectOutputAndErrors**  
   
-     Opcjonalnie **ciąg** parametru.  
+     Opcjonalny parametr **ciągu** .  
   
-     Przekierowuje dane wyjściowe, takie jak komunikaty o błędach i ostrzeżenia, standardowe dane wyjściowe do określonego pliku.  
+     Przekierowuje dane wyjściowe, takie jak komunikaty o błędach i ostrzeżenia, ze standardowego wyjścia do określonego pliku.  
   
-     Aby uzyskać więcej informacji, zobacz **/o** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
+     Aby uzyskać więcej informacji, zobacz **/o** opcja w "MIDL wiersza polecenia" w witrynie [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) w sieci Web.  
   
 - **ServerStubFile**  
   
-     Opcjonalnie **ciąg** parametru.  
+     Opcjonalny parametr **ciągu** .  
   
-     Określa nazwę plik szczątkowy serwera dla interfejsu RPC.  
+     Określa nazwę pliku szczątkowego serwera dla interfejsu RPC.  
   
-     Aby uzyskać więcej informacji, zobacz **/sstub** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web. Zobacz też **ClientStubFile** parametru w tej tabeli.  
+     Aby uzyskać więcej informacji, zobacz **/sstub** Option in "MIDL Command-Line Reference" w witrynie [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) w sieci Web. Zobacz również parametr **ClientStubFile** w tej tabeli.  
   
-- **Element źródłowy**  
+- **Obiekt źródłowy**  
   
-     Wymagane `ITaskItem[]` parametru.  
+     Wymagany `ITaskItem[]` parametr.  
   
-     Określa listę plików źródłowych, rozdzielone spacjami.  
+     Określa listę plików źródłowych rozdzielonych spacjami.  
   
 - **StructMemberAlignment**  
   
-     Opcjonalnie **ciąg** parametru.  
+     Opcjonalny parametr **ciągu** .  
   
-     Określa wyrównanie (*pakowania poziom*) struktur w systemie docelowym.  
+     Określa wyrównanie (*poziom pakowania*) struktur w systemie docelowym.  
   
      Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
     |Wartość|Opcja wiersza polecenia|  
     |-----------|--------------------------|  
-    |**NotSet**|*\<Brak >*|  
+    |**NotSet**|*\<brak >*|  
     |**1**|**/Zp1**|  
     |**2**|**/Zp2**|  
     |**4**|**/Zp4**|  
     |**8**|**/Zp8**|  
   
-     Aby uzyskać więcej informacji, zobacz **/ZP** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web. **/ZP** opcja jest równoznaczna z **/pakiet** opcja i starszej wersji **/ align** opcji.  
+     Aby uzyskać więcej informacji, zobacz **/ZP** Option in "MIDL Command-Line Reference" w witrynie [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) w sieci Web. Opcja **/ZP** jest równoważna z opcją **/Pack** i starszą opcją **/align** .  
   
 - **SuppressCompilerWarnings**  
   
-     Opcjonalnie **logiczna** parametru.  
+     Opcjonalny parametr **logiczny** .  
   
-     Jeśli `true`, pomija komunikaty ostrzegawcze z zadania MIDL.  
+     Jeśli `true`, program pomija komunikaty ostrzegawcze z zadania MIDL.  
   
-     Aby uzyskać więcej informacji, zobacz **/no_warn** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
+     Aby uzyskać więcej informacji, zobacz opcję **/no_warn** w artykule "informacje w wierszu polecenia MIDL" w witrynie [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) w sieci Web.  
   
 - **SuppressStartupBanner**  
   
-     Opcjonalnie `Boolean` parametru.  
+     Opcjonalny parametr `Boolean`.  
   
-     Jeśli `true`, uniemożliwia wyświetlanie wiadomości praw autorskich i wersji, podczas uruchamiania zadania.  
+     Jeśli `true`, program zapobiega wyświetlaniu komunikatu o prawach autorskich i numerze wersji, gdy zadanie zostanie uruchomione.  
   
-     Aby uzyskać więcej informacji, zobacz **/nologo** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
+     Aby uzyskać więcej informacji, zobacz **/nologo** Option in "MIDL Command-Line Reference" w witrynie [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) w sieci Web.  
   
 - **TargetEnvironment**  
   
-     Opcjonalnie **ciąg** parametru.  
+     Opcjonalny parametr **ciągu** .  
   
-     Określa środowisko, w którym jest uruchomiona aplikacja.  
+     Określa środowisko, w którym jest uruchamiana aplikacja.  
   
      Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
     |Wartość|Opcja wiersza polecenia|  
     |-----------|--------------------------|  
-    |**NotSet**|*\<Brak >*|  
-    |**Win32**|**/ ENV win32**|  
-    |**Itanium**|**/ ENV ia64**|  
-    |**X64**|**/ ENV x64**|  
+    |**NotSet**|*\<brak >*|  
+    |**Win32**|**/ENV Win32**|  
+    |**Itanium**|**/ENV ia64**|  
+    |**X64**|**/ENV x64**|  
   
-     Aby uzyskać więcej informacji, zobacz **/ENV** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
+     Aby uzyskać więcej informacji, zobacz **/ENV** Option in "MIDL Command-Line Reference" w witrynie [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) w sieci Web.  
   
-- **Katalog TrackerLogDirectory**  
+- **Katalog trackerlogdirectory**  
   
-     Opcjonalnie `String` parametru.  
+     Opcjonalny parametr `String`.  
   
      Określa katalog pośredni, w którym są przechowywane dzienniki śledzenia dla tego zadania.  
   
 - **TypeLibFormat**  
   
-     Opcjonalnie **ciąg** parametru.  
+     Opcjonalny parametr **ciągu** .  
   
      Określa format pliku biblioteki typów.  
   
@@ -364,47 +364,47 @@ Opakowuje narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL) m
     |**NewFormat**|**/newtlb**|  
     |**OldFormat**|**/oldtlb**|  
   
-     Aby uzyskać więcej informacji, zobacz **/newtlb** i **/oldtlb** opcji na liście "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
+     Aby uzyskać więcej informacji, zobacz Opcje **/newtlb** i **/oldtlb** w sekcji "Dokumentacja wiersza polecenia MIDL" w witrynie [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) w sieci Web.  
   
 - **TypeLibraryName**  
   
-     Opcjonalnie **ciąg** parametru.  
+     Opcjonalny parametr **ciągu** .  
   
      Określa nazwę pliku biblioteki typów.  
   
-     Aby uzyskać więcej informacji, zobacz **/TLB** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
+     Aby uzyskać więcej informacji, zobacz **/TLB** Option in "MIDL Command-Line Reference" w witrynie [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) w sieci Web.  
   
 - **UndefinePreprocessorDefinitions**  
   
-     Opcjonalnie **String []** parametru.  
+     Opcjonalny parametr **String []** .  
   
-     Usuwa wszystkie poprzednią definicję nazwy przez przekazanie nazwy preprocesora C jako Jeśli przez `#undefine` dyrektywy. Określ jedną lub więcej nazw uprzednio zdefiniowany.  
+     Usuwa wszystkie poprzednie definicje nazw, przekazując nazwę do preprocesora C, tak jak w przypadku dyrektywy `#undefine`. Określ co najmniej jedną wcześniej zdefiniowaną nazwę.  
   
-     Aby uzyskać więcej informacji, zobacz **/U** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web. Zobacz też **PreprocessorDefinitions** parametru w tej tabeli.  
+     Aby uzyskać więcej informacji, zobacz sekcję **/u** opcji w artykule "MIDL Command-Line Reference" w witrynie [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) w sieci Web. Zobacz również parametr **PreprocessorDefinitions** w tej tabeli.  
   
 - **ValidateAllParameters**  
   
-     Opcjonalnie `Boolean` parametru.  
+     Opcjonalny parametr `Boolean`.  
   
-     Jeśli `true`, generuje dodatkowe informacje sprawdzanie błędów, który jest używany do wykonywania sprawdzania integralności w czasie wykonywania. Jeśli `false`, sprawdzanie błędów informacje nie są generowane.  
+     Jeśli `true`, program generuje dodatkowe informacje o sprawdzaniu błędów, które są używane do przeprowadzania sprawdzania integralności w czasie wykonywania. W przypadku `false`nie są generowane informacje o sprawdzaniu błędów.  
   
-     Aby uzyskać więcej informacji, zobacz **/ robust** i **/no_robust** opcji na liście "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
+     Aby uzyskać więcej informacji, zobacz Opcje **/Robust** i **/no_robust** w sekcji "Dokumentacja wiersza polecenia MIDL" w witrynie [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) w sieci Web.  
   
 - **Warnaserror —**  
   
-     Opcjonalnie `Boolean` parametru.  
+     Opcjonalny parametr `Boolean`.  
   
      Jeśli `true`, traktuje wszystkie ostrzeżenia jako błędy.  
   
-     Jeśli **Poziom_ostrzeżeń** MIDL zadań parametr nie jest określony, ostrzeżenia na poziomie domyślnym poziomie 1, są traktowane jako błędy.  
+     Jeśli parametr zadania **WarningLevel** MIDL nie zostanie określony, ostrzeżenia na poziomie domyślnym na poziomie 1 są traktowane jako błędy.  
   
-     Aby uzyskać więcej informacji, zobacz **/WX** opcji na liście "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web. Zobacz też **Poziom_ostrzeżeń** parametru w tej tabeli.  
+     Aby uzyskać więcej informacji, zobacz Opcje **/WX** w sekcji "Dokumentacja wiersza polecenia MIDL" w witrynie [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) w sieci Web. Zobacz również parametr **WarningLevel** w tej tabeli.  
   
-- **Poziom_ostrzeżeń**  
+- **WarningLevel**  
   
-     Opcjonalnie **ciąg** parametru.  
+     Opcjonalny parametr **ciągu** .  
   
-     Określa ważność (*poziom ostrzeżeń*) ostrzeżeń do emitowania. Ostrzeżenie nie jest emitowane na wartość 0. W przeciwnym razie jest emitowane ostrzeżenie, jeśli jego poziom ostrzeżeń jest wartość liczbowa mniejsza lub równa określonej wartości.  
+     Określa ważność (*poziom ostrzeżenia*) ostrzeżeń do emisji. Żadne ostrzeżenie nie jest emitowane dla wartości 0. W przeciwnym razie jest emitowane ostrzeżenie, jeśli jego poziom ostrzeżeń jest numerycznie mniejszy lub równy podanej wartości.  
   
      Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
@@ -416,7 +416,7 @@ Opakowuje narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL) m
     |**3**|**/W3**|  
     |**4**|**/W4**|  
   
-     Aby uzyskać więcej informacji, zobacz **Wn** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web. Zobacz też **WarnAsError** parametru w tej tabeli.  
+     Aby uzyskać więcej informacji, zobacz " **/w** " w artykule "MIDL Command-Line Reference" w witrynie [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) w sieci Web. Zobacz również parametr **warnaserror —** w tej tabeli.  
   
 ## <a name="remarks"></a>Uwagi  
   

@@ -8,12 +8,12 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 7cf9da2f295d94ac68c74039458f4cdbfda3ae5c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2ce5390ce8d649ab2c57eccde34506d6831b8193
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661623"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300996"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075: Niezabezpieczone przetwarzanie definicji DTD
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "72661623"
  W przypadku używania niezabezpieczonych wystąpień <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> lub odwołań do zewnętrznych źródeł jednostek Analizator może akceptować niezaufane dane wejściowe i ujawniać poufne informacje osobom atakującym.
 
 ## <a name="rule-description"></a>Opis reguły
- [Definicja typu dokumentu (DTD)](https://msdn.microsoft.com/library/aa468547.aspx) to jeden z dwóch sposobów, przez który parser XML może ustalić ważność dokumentu, zgodnie z definicją [organizacja World Wide Web Consortium (W3C) XML (XML) 1,0](http://www.w3.org/TR/2008/REC-xml-20081126/). Ta reguła umożliwia wyszukiwanie właściwości i wystąpień, w przypadku których niezaufane dane są akceptowane, aby ostrzec deweloperów o potencjalnych zagrożeniach związanych z [ujawnianiem informacji](https://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) , co może prowadzić do ataków [typu "odmowa usługi" (DOS)](https://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) . Ta zasada wyzwala następujące wyzwalacze:
+ [Definicja typu dokumentu (DTD)](https://msdn.microsoft.com/library/aa468547.aspx) to jeden z dwóch sposobów, przez który parser XML może ustalić ważność dokumentu, zgodnie z definicją [organizacja World Wide Web Consortium (W3C) XML (XML) 1,0](https://www.w3.org/TR/2008/REC-xml-20081126/). Ta reguła umożliwia wyszukiwanie właściwości i wystąpień, w przypadku których niezaufane dane są akceptowane, aby ostrzec deweloperów o potencjalnych zagrożeniach związanych z [ujawnianiem informacji](https://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) , co może prowadzić do ataków [typu "odmowa usługi" (DOS)](https://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) . Ta zasada wyzwala następujące wyzwalacze:
 
 - DtdProcessing jest włączona w wystąpieniu <xref:System.Xml.XmlReader>, które rozpoznaje zewnętrzne jednostki XML przy użyciu <xref:System.Xml.XmlUrlResolver>.
 
@@ -39,7 +39,7 @@ ms.locfileid: "72661623"
 
 - Niezaufane dane wejściowe są przetwarzane przy użyciu <xref:System.Xml.XmlResolver>, a nie <xref:System.Xml.XmlSecureResolver>.
 
-- Element XmlReader. <xref:System.Xml.XmlReader.Create%2A> Metoda jest wywoływana z niezabezpieczonym wystąpieniem <xref:System.Xml.XmlReaderSettings> lub w ogóle nie ma żadnego wystąpienia.
+- Element XmlReader.<xref:System.Xml.XmlReader.Create%2A> Metoda jest wywoływana z niezabezpieczonym wystąpieniem <xref:System.Xml.XmlReaderSettings> lub w ogóle nie ma żadnego wystąpienia.
 
 - <xref:System.Xml.XmlReader> jest tworzony z niezabezpieczonymi domyślnymi ustawieniami lub wartościami.
 
@@ -49,15 +49,15 @@ ms.locfileid: "72661623"
 
 - Należy prawidłowo przechwycić i przetworzyć wszystkie wyjątki XmlTextReader, aby uniknąć ujawnienia informacji o ścieżce.
 
-- Użyj  <xref:System.Xml.XmlSecureResolver>, aby ograniczyć zasoby, do których XmlTextReader może uzyskać dostęp.
+- Użyj <xref:System.Xml.XmlSecureResolver>, aby ograniczyć zasoby, do których XmlTextReader może uzyskać dostęp.
 
-- Nie Zezwalaj  <xref:System.Xml.XmlReader> na otwieranie dowolnych zasobów zewnętrznych przez ustawienie właściwości <xref:System.Xml.XmlResolver> na **wartość null**.
+- Nie Zezwalaj <xref:System.Xml.XmlReader> na otwieranie dowolnych zasobów zewnętrznych przez ustawienie właściwości <xref:System.Xml.XmlResolver> na **wartość null**.
 
 - Upewnij się, że właściwość <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A> <xref:System.Data.DataViewManager> jest przypisana z zaufanego źródła.
 
   .NET 3,5 i starsze
 
-- Wyłącz przetwarzanie DTD w przypadku postępowania z niezaufanymi źródłami, ustawiając właściwość  <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> na **wartość true** .
+- Wyłącz przetwarzanie DTD w przypadku postępowania z niezaufanymi źródłami, ustawiając właściwość <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> na **wartość true** .
 
 - Klasa XmlTextReader ma pełne żądanie dziedziczenia zaufania. Aby uzyskać więcej informacji, zobacz [wymagania dotyczące dziedziczenia](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) .
 

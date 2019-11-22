@@ -1,5 +1,5 @@
 ---
-title: Tworzenie pakietów programu inicjującego | Dokumentacja firmy Microsoft
+title: Tworzenie pakietów programu inicjującego | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -21,30 +21,30 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ac304d695c13fde2b69aafbb903493ad9865bf87
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f90344c156ea6c012c6ac086ffa40bf30e78a682
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68187806"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300728"
 ---
 # <a name="creating-bootstrapper-packages"></a>Tworzenie pakietów programu inicjującego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Setup program jest generycznym Instalatorem, który można skonfigurować, aby wykrywać i instalować składników pakietu redystrybucyjnego, takie jak pliki Instalatora Windows (msi) i programy wykonywalne. Instalator jest również znany jako program inicjujący. Jest programowane za pomocą zestawu manifestów XML, które określają metadane w celu zarządzania instalacją składnika.  
+Program instalacyjny jest instalatorem ogólnym, który można skonfigurować w celu wykrywania i instalowania składników redystrybucyjnych, takich jak pliki Instalator Windows (msi) i programy wykonywalne. Instalator jest również znany jako program inicjujący. Jest on zaprogramowany przez zestaw manifestów XML, które określają metadane do zarządzania instalacją składnika.  
   
- Program inicjujący najpierw wykrywa, czy dowolny z wymagań wstępnych są już zainstalowane. Jeśli wymagania wstępne nie są zainstalowane, najpierw program inicjujący wyświetli umów licencyjnych. Po drugie, po użytkownik końcowy akceptuje umów licencyjnych, rozpocznie się instalacja dla wymagań wstępnych. W przeciwnym razie jeśli zostaną wykryte wszystkie wymagania wstępne, program inicjujący tylko uruchamia Instalatora aplikacji.  
+ Program inicjujący najpierw wykrywa, czy którykolwiek z wymagań wstępnych jest już zainstalowany. Jeśli wymagania wstępne nie są zainstalowane, program inicjujący wyświetli umowy licencyjne. Po drugie, po zaakceptowaniu umów licencyjnych przez użytkownika końcowego instalacja rozpocznie się z myślą o wymaganiach wstępnych. W przeciwnym razie, jeśli zostaną wykryte wszystkie wymagania wstępne, program inicjujący rozpocznie pracę Instalatora aplikacji.  
   
 ## <a name="creating-custom-packages"></a>Tworzenie pakietów niestandardowych  
- Można wygenerować manifestów za pomocą edytora XML w programie Visual Studio. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie manifestu pakietu](../deployment/how-to-create-a-package-manifest.md) i [jak: Tworzenie manifestu produktu](../deployment/how-to-create-a-product-manifest.md). Aby zobaczyć przykład utworzenia pakietu bootstrapper, zobacz [instruktażu: Tworzenie niestandardowego programu inicjującego wyświetlającego monit zasad ochrony prywatności](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).  
+ Można generować manifesty za pomocą edytora XML w programie Visual Studio. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie manifestu pakietu](../deployment/how-to-create-a-package-manifest.md) i [instrukcje: Tworzenie manifestu produktu](../deployment/how-to-create-a-product-manifest.md). Aby zapoznać się z przykładem tworzenia pakietu programu inicjującego, zobacz [Przewodnik: Tworzenie niestandardowego programu inicjującego w celu wyświetlenia monitu o prywatność](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).  
   
- Aby utworzyć pakiet bootstrapper, musisz dostarczyć redystrybucyjne w formie file.to pliku EXE lub MSI do generatora manifestu Bootstrapper. Następnie Manifest generatora Bootstrapper tworzy następujące pliki:  
+ Aby utworzyć pakiet programu inicjującego, należy podać redystrybucyjny w postaci pliku EXE lub MSI file.to Generator manifestu programu inicjującego. Następnie Generator manifestu programu inicjującego tworzy następujące pliki:  
   
-- Manifest produktu, product.xml, który zawiera wszystkie metadane niezależny od języka dla pakietu. Zawiera to metadane wspólne dla wszystkich lokalizowanych wersji komponentu do redystrybucji.  
+- Manifest produktu, Product. XML, który zawiera metadane niezależne od języka dla pakietu. Zawiera metadane wspólne dla wszystkich zlokalizowanych wersji składnika redystrybucyjnego.  
   
-- Manifest pakietu, package.xml, który zawiera metadane specyficzne dla języka; typowo zawiera lokalizowane komunikaty o błędzie. Składnik musi mieć co najmniej jeden manifest pakietu dla każdej zlokalizowanej wersji tego składnika.  
+- Manifest pakietu, Package. XML, który zawiera metadane specyficzne dla języka; zwykle zawiera zlokalizowane komunikaty o błędach. Składnik musi mieć co najmniej jeden manifest pakietu dla każdej zlokalizowanej wersji tego składnika.  
   
-  Po utworzeniu tych plików, należy umieścić plik manifestu produktu w folderze o nazwie niestandardowy program inicjujący. Plik manifestu pakietu przechodzi do folderu nazwanego na podstawie lokalizacji. Na przykład w przypadku pliku manifestu pakietu do redystrybucji w języku angielskim, należy umieścić plik w folderze o nazwie en. Powtórz ten proces dla poszczególnych ustawień regionalnych, takich jak ja w języku japońskim i "de" dla języka niemieckiego. Końcowe niestandardowy pakiet programu inicjującego może mieć następującą strukturę folderów.  
+  Po utworzeniu tych plików Umieść plik manifestu produktu w folderze o nazwie niestandardowego programu inicjującego. Plik manifestu pakietu przechodzi do folderu o nazwie dla ustawień regionalnych. Jeśli na przykład plik manifestu pakietu jest przeznaczony do redystrybucji w języku angielskim, należy umieścić go w folderze o nazwie en. Powtórz ten proces dla każdego ustawienia regionalnego, takiego jak ja dla języka japońskiego i Cofnij dla języka niemieckiego. Ostatni niestandardowy pakiet programu inicjującego może mieć następującą strukturę folderów.  
   
   `CustomBootstrapperPackage`  
   
@@ -70,7 +70,7 @@ Setup program jest generycznym Instalatorem, który można skonfigurować, aby w
   
   `package.xml`  
   
-  Na koniec skopiuj przeznaczone do redystrybucji pliki do folderu programu inicjującego. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie zlokalizowanego pakietu programu inicjującego](../deployment/how-to-create-a-localized-bootstrapper-package.md).  
+  Na koniec skopiuj pliki redystrybucyjne do lokalizacji folderu programu inicjującego. Aby uzyskać więcej informacji, zobacz [How to: Create a zlokalizowany pakiet programu inicjującego](../deployment/how-to-create-a-localized-bootstrapper-package.md).  
   
 ```  
 \Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages  
@@ -82,40 +82,40 @@ Setup program jest generycznym Instalatorem, który można skonfigurować, aby w
 \Program Files (x86)\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages  
 ```  
   
- Możesz również określić lokalizacje folderu Bootstrapper z **ścieżki** wartość w następującym kluczu rejestru:  
+ Można również określić lokalizację folderu programu inicjującego na podstawie wartości **Path** w następującym kluczu rejestru:  
   
 ```  
 HKLM\Software\Microsoft\GenericBootstrapper\11.0  
 ```  
   
- W systemach 64-bitowy należy użyć następującego klucza rejestru:  
+ W systemach 64 bitowych należy użyć następującego klucza rejestru:  
   
 ```  
 HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0  
 ```  
   
- Każdy składnik redystrybucyjny jest wyświetlany w podfolderze katalogu pakietów. Produkt plików manifestu i redystrybucyjne są umieszczane w tym podfolderze. Zlokalizowane wersje składników i wykazu manifestów są umieszczane w podfolderach nazwanych zgodnie z nazwami kultur.  
+ Każdy składnik redystrybucyjny pojawia się w osobnym podfolderze katalogu Packages. Manifest produktu i pliki redystrybucyjne są umieszczane w tym podfolderze. Zlokalizowane wersje składników i manifestów pakietów są umieszczane w podfolderach o nazwach zgodnych z nazwą kultury.  
   
- Po te pliki są kopiowane do folderu Program inicjujący, pakiet inicjujący automatycznie pojawia się w oknie dialogowym wstępnie wymagane składniki programu Visual Studio. Jeśli pakiet niestandardowego programu inicjującego nie jest widoczny, zamknij i ponownie otwórz okno dialogowe wymagań wstępnych. Aby uzyskać więcej informacji, zobacz [wstępnie wymagane składniki, okno dialogowe](../ide/reference/prerequisites-dialog-box.md).  
+ Po skopiowaniu tych plików do folderu programu inicjującego pakiet programu inicjującego automatycznie pojawia się w oknie dialogowym wymagania wstępne programu Visual Studio. Jeśli niestandardowy pakiet programu inicjującego nie jest wyświetlany, Zamknij i ponownie otwórz okno dialogowe wymagania wstępne. Aby uzyskać więcej informacji, zobacz [okno dialogowe wymagania wstępne](../ide/reference/prerequisites-dialog-box.md).  
   
- W poniższej tabeli przedstawiono właściwości, które są wypełniane automatycznie przez program inicjujący.  
+ W poniższej tabeli przedstawiono właściwości, które są automatycznie wypełniane przez program inicjujący.  
   
 |Właściwość|Opis|  
 |--------------|-----------------|  
 |ApplicationName|Nazwa aplikacji.|  
-|ProcessorArchitecture|Procesor i bity na słowo platformy docelowej przez plik wykonywalny. Następujące wartości:<br /><br /> -Firmy Intel<br />-IA64<br />-AMD64|  
-|[Version9x](https://msdn.microsoft.com/library/aa372490\(v=vs.140\).aspx)|Numer wersji systemów operacyjnych Microsoft Windows 95, Windows 98 lub Windows ME. Składnia wersji to Major.Minor.ServicePack.|  
-|[VersionNT](/windows/desktop/Msi/versionnt)|Numer wersji dla systemów operacyjnych Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 lub Windows 7. Składnia wersji to Major.Minor.ServicePack.|  
-|[VersionMSI](https://msdn.microsoft.com/library/aa372493\(v=vs.140\).aspx)|Wersja zestawu Instalatora Windows (msi.dll) uruchomiona podczas instalacji.|  
-|[AdminUser](https://msdn.microsoft.com/library/aa367545\(v=vs.140\).aspx)|Ta właściwość jest ustawiona, jeśli użytkownik ma uprawnienia administratora. Wartości są prawdziwe lub fałszywe.|  
-|Tryb instalacji|Tryb instalacji wskazuje, gdzie mają zostać zainstalowane z składnika. Następujące wartości:<br /><br /> -HomeSite - wstępnie wymagane składniki są instalowane z witryny sieci Web dostawcy.<br />-SpecificSite — wymagania wstępne są instalowane z wybranej lokalizacji.<br />-SameSite — wymagania wstępne są instalowane z tej samej lokalizacji co aplikacja.|  
+|ProcessorArchitecture|Procesor i bity dla poszczególnych wyrazów platformy, do których odnoszą się pliki wykonywalne. Dostępne są następujące wartości:<br /><br /> — Intel<br />— IA64<br />-AMD64|  
+|[Version9x](https://msdn.microsoft.com/library/aa372490\(v=vs.140\).aspx)|Numer wersji dla systemów operacyjnych Microsoft Windows 95, Windows 98 lub Windows ME. Składnia wersji to główna. pomocnicza. dodatek Service Pack.|  
+|[VersionNT](/windows/desktop/Msi/versionnt)|Numer wersji dla systemów operacyjnych Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 lub Windows 7. Składnia wersji to główna. pomocnicza. dodatek Service Pack.|  
+|[VersionMSI](https://msdn.microsoft.com/library/aa372493\(v=vs.140\).aspx)|Wersja zestawu Instalator Windows (msi. dll) jest uruchamiana podczas instalacji.|  
+|[AdminUser](https://msdn.microsoft.com/library/aa367545\(v=vs.140\).aspx)|Ta właściwość jest ustawiona, jeśli użytkownik ma uprawnienia administratora. Wartości mają wartość true lub false.|  
+|Installmode|Tryb instalacji wskazuje, gdzie należy zainstalować składnik. Dostępne są następujące wartości:<br /><br /> -HomeSite — wymagania wstępne są instalowane z witryny sieci Web dostawcy.<br />-SpecificSite — wymagania wstępne są instalowane z wybranej lokalizacji.<br />-SameSite — wymagania wstępne są instalowane z tej samej lokalizacji, w której znajduje się aplikacja.|  
   
-## <a name="separating-redistributables-from-application-installations"></a>Oddzielenie pakietów redystrybucyjnych od instalacji aplikacji  
- Aby uniemożliwić Twoich plików redystrybucyjnych w projektach konfiguracji wdrożenia. Aby to zrobić, Utwórz redystrybucyjną listę w folderze RedistList w katalogu .NET Framework:  
+## <a name="separating-redistributables-from-application-installations"></a>Oddzielanie redystrybucyjnych od instalacji aplikacji  
+ Można zapobiec wdrażaniu plików redystrybucyjnych w projektach instalacyjnych. W tym celu Utwórz listę redystrybucyjną w folderze RedistList w katalogu .NET Framework:  
   
  `%ProgramFiles%\Microsoft.NET\RedistList`  
   
- Redystrybucyjna lista jest plikiem XML, należy nadać nazwę w następującym formacie: *Nazwa firmy*. *Nazwa składnika*. RedistList.xml. Tak na przykład, jeśli składnik ten jest wywoływany przez Acme Datawidgets, użyj Acme.DataWidgets.RedistList.xml. Przykład zawartości listy do dystrybucji może wyglądać następująco:  
+ Lista redystrybucyjna to plik XML, który należy nazwać, używając następującego formatu: *Nazwa firmy*. *Nazwa składnika*. RedistList. XML. Tak więc, na przykład, jeśli składnik jest wywoływany przez Acme, użyj Acme. DataWidgets. RedistList. XML. Przykład zawartości listy redystrybucyjnej może wyglądać następująco:  
   
 ```  
 <?xml version="1.0" encoding="UTF-8"?>  
@@ -125,7 +125,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Instrukcje: Instalowanie wymagań wstępnych przy użyciu aplikacji ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
- [Wymagania wstępne, okno dialogowe](../ide/reference/prerequisites-dialog-box.md)   
- [Produkt i pakiet — dokumentacja schematu](../deployment/product-and-package-schema-reference.md)   
- [Użyj programu Visual Studio 2005 Bootstrapper, aby uruchomić instalację](http://go.microsoft.com/fwlink/?LinkId=107537)
+ [Instrukcje: instalowanie wstępnie wymaganych składników za pomocą aplikacji ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
+ Okno [dialogowe wymagania wstępne](../ide/reference/prerequisites-dialog-box.md)   
+ [Odwołanie do schematu produktu i pakietu](../deployment/product-and-package-schema-reference.md)   
+ [Aby rozpocząć instalację, użyj programu inicjującego Visual Studio 2005](https://go.microsoft.com/fwlink/?LinkId=107537)

@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d4c6176caee5551b860029ac98b19d52fcb7b51f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d3a17275730cd093f8f9fa433aa28c7f9ca86e80
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658551"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298147"
 ---
 # <a name="t4-template-directive"></a>Dyrektywa T4 dotycząca szablonu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -211,7 +211,7 @@ This is the common footer.
 
  Dla szablonu tekstu czasu projektowania można określić dowolną klasę bazową, która jest pochodną <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>. Użyj dyrektywy `<#@assembly#>` do załadowania zestawu lub projektu, który zawiera klasę bazową.
 
- Aby uzyskać więcej informacji, zobacz ["dziedziczenie w szablonach tekstowych" w blogu Gareth Nowak](http://go.microsoft.com/fwlink/?LinkId=208373).
+ Aby uzyskać więcej informacji, zobacz ["dziedziczenie w szablonach tekstowych" w blogu Gareth Nowak](https://go.microsoft.com/fwlink/?LinkId=208373).
 
 ## <a name="linepragmas-attribute"></a>Atrybut LinePragmas
  Przykład: `linePragmas="false"`

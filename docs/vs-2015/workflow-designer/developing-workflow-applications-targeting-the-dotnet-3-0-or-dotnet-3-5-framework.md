@@ -11,12 +11,12 @@ caps.latest.revision: 8
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7d5049a24b7457adb5ae126a75816814e1295b73
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a80aef71271df0a1353dfd73898dbe8fcd7007c4
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72656814"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300929"
 ---
 # <a name="developing-workflow-applications-targeting-the-net-30-or-net-35-framework"></a>Opracowywanie aplikacji przepływu pracy przeznaczonych dla platformy .NET 3.0 lub .NET 3.5
 [!INCLUDE[vs2010](../includes/vs2010-md.md)] zapewnia [!INCLUDE[wfd1](../includes/wfd1-md.md)] do tworzenia aplikacji [!INCLUDE[wf](../includes/wf-md.md)] przeznaczonych dla [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)]. Projektant używa znanego interfejsu użytkownika [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] do tworzenia graficznego i debugowania aplikacji przepływu pracy.
@@ -29,4 +29,4 @@ ms.locfileid: "72656814"
  [Debugowanie starszych wersji przepływów pracy](../workflow-designer/debugging-legacy-workflows.md)
 
 ## <a name="related-sections"></a>Sekcje pokrewne
- [Przewodnik programowania Windows Workflow Foundation](http://go.microsoft.com/fwlink?LinkID=65012)
+ [Przewodnik programowania Windows Workflow Foundation](https://go.microsoft.com/fwlink?LinkID=65012)

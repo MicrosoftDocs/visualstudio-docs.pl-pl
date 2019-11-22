@@ -19,12 +19,12 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: c44b949daabf587dbca5d8a5d1d932afca2c1f9c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 787be52eeb546d2ab184a172464862d10cb43288
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72602468"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299580"
 ---
 # <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>Wskazówki: wyświetlanie powiązanych danych w aplikacji WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ W tym instruktażu utworzysz aplikację WPF, która będzie wyświetlać dane z 
 
 - [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].,
 
-- Dostęp do uruchomionego wystąpienia SQL Server lub SQL Server Express z dołączoną przykładową bazą danych AdventureWorksLT. Bazę danych AdventureWorksLT można pobrać z [witryny sieci Web CodePlex](http://go.microsoft.com/fwlink/?linkid=87843).
+- Dostęp do uruchomionego wystąpienia SQL Server lub SQL Server Express z dołączoną przykładową bazą danych AdventureWorksLT. Bazę danych AdventureWorksLT można pobrać z [witryny sieci Web CodePlex](https://go.microsoft.com/fwlink/?linkid=87843).
 
   Wcześniejsza znajomość następujących pojęć jest również przydatna, ale nie jest wymagana do ukończenia przewodnika:
 
@@ -198,7 +198,7 @@ W tym instruktażu utworzysz aplikację WPF, która będzie wyświetlać dane z 
 
     - Pole kombi **Identyfikator zamówienia sprzedaży** zawiera **71774**. Jest to pierwszy identyfikator zamówienia w jednostce.
 
-    - Dla każdego zamówienia wybieranego w polu kombi **Identyfikator zamówienia sprzedaży** w <xref:System.Windows.Controls.DataGrid> są wyświetlane szczegółowe informacje o kolejności.
+    - Dla każdego zamówienia wybieranego w polu kombi **Identyfikator zamówienia sprzedaży** w <xref:System.Windows.Controls.DataGrid>są wyświetlane szczegółowe informacje o kolejności.
 
 2. Zamknij aplikację.
 

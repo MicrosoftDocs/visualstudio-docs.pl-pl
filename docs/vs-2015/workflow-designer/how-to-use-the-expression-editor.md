@@ -11,17 +11,17 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6157646526a2d634ff5034d98eb497c00585c067
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7d40cefc3dd47f7f4ad7e8255d8bdc06bc5f1651
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659101"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300939"
 ---
 # <a name="how-to-use-the-expression-editor"></a>Instrukcje: korzystanie z edytora wyrażeń
 Edytor wyrażeń jest formantem [!INCLUDE[wfd1](../includes/wfd1-md.md)], który jest używany w wielu działaniach przepływu pracy jako sposób wprowadzania i oceniania tych wyrażeń. Edytor wyrażeń zawiera dopracowane środowisko edycji środowiska IDE, w tym funkcje IntelliSense, kolorowanie, ParamInfo, zygzaki błędów, między innymi. Kompilator sprawdza poprawność wyrażenia po jego wprowadzeniu. Jeśli wyrażenie jest nieprawidłowe, zostanie wyświetlona ikona błędu. Edytor można także otworzyć jako okno dialogowe **Edytor wyrażeń** .
 
- Wyrażenia są wartościami literałów lub [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] kodzie związanym z argumentami lub właściwościami. Zawierają one elementy wartości (np. zmienne, stałe, literały, właściwości), które są łączone z operacjami w celu uzyskania nowej wartości. Wyrażenia są zapisywane przy użyciu składni VB.NET, nawet jeśli aplikacja znajduje się w programie C#przy użyciu. Oznacza to, że nie ma znaczenia, porównanie jest wykonywane przy użyciu pojedynczego znaku równości ("="), a nie ("= ="), operatory logiczne to słowa "i" i "lub" zamiast symboli "& &" i "&#124;&#124;", a **niczego nie** są używane zamiast **wartości null**. Aby uzyskać więcej informacji na temat wyrażeń i operatorów w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] i dla niektórych przykładów, zobacz [Operatory i wyrażenia w Visual Basic](http://go.microsoft.com/fwlink/?LinkId=186818).
+ Wyrażenia są wartościami literałów lub [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] kodzie związanym z argumentami lub właściwościami. Zawierają one elementy wartości (np. zmienne, stałe, literały, właściwości), które są łączone z operacjami w celu uzyskania nowej wartości. Wyrażenia są zapisywane przy użyciu składni VB.NET, nawet jeśli aplikacja znajduje się w programie C#przy użyciu. Oznacza to, że nie ma znaczenia, porównanie jest wykonywane przy użyciu pojedynczego znaku równości ("=") zamiast ("= ="), operatory logiczne to słowa "i" i "lub" zamiast symboli "& &"&#124;&#124;i "", a **niczego** nie są używane zamiast **wartości null**. Aby uzyskać więcej informacji na temat wyrażeń i operatorów w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] i dla niektórych przykładów, zobacz [Operatory i wyrażenia w Visual Basic](https://go.microsoft.com/fwlink/?LinkId=186818).
 
  **Edytor wyrażeń** zachowuje się w następujący sposób:
 
@@ -36,7 +36,7 @@ Edytor wyrażeń jest formantem [!INCLUDE[wfd1](../includes/wfd1-md.md)], który
 
 ### <a name="using-the-expression-editor"></a>Korzystanie z edytora wyrażeń
 
-1. W [!INCLUDE[vs2010](../includes/vs2010-md.md)] Otwórz nowy lub istniejący projekt przepływu pracy.
+1. W [!INCLUDE[vs2010](../includes/vs2010-md.md)]Otwórz nowy lub istniejący projekt przepływu pracy.
 
 2. Dodaj na przykład działanie <xref:System.Activities.Statements.Assign> do przepływu pracy.
 
@@ -45,7 +45,7 @@ Edytor wyrażeń jest formantem [!INCLUDE[wfd1](../includes/wfd1-md.md)], który
 
 3. Kliknij Edytor wyrażeń lewy w projektancie działań dla działania <xref:System.Activities.Statements.Assign>.
 
-     Ciągi szarego znaku wodnego **\<To >** i **\<Enter wyrażeniem VB >** są domyślnymi ciągami tekstowymi dla edytorów wyrażeń w działaniu <xref:System.Activities.Statements.Assign>.
+     Ciągi szarego znaku wodnego **\<do >** i **\<wprowadzić wyrażenie VB >** są domyślnymi ciągami tekstowymi dla edytorów wyrażeń w działaniu <xref:System.Activities.Statements.Assign>.
 
 4. Wprowadź wyrażenie. Jeśli wprowadzisz ciąg, upewnij się, że zostały umieszczone cudzysłowy wokół ciągu. Jeśli wybierzesz powiązanie argumentu wyrażenia z zmienną, pozostaw cudzysłowy.
 

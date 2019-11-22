@@ -8,12 +8,12 @@ ms.assetid: 73519dd9-f3d5-49b6-a634-38881b459ea4
 caps.latest.revision: 19
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a230b55149152ba1d195f487951323eda855b8b2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9f2e62766f919c9f3379d59c4528a32739ef73ac
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657155"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301393"
 ---
 # <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Stosowanie wycinków kodu do izolowania od siebie poszczególnych części aplikacji w celu przeprowadzania testów jednostkowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,14 +30,14 @@ Typy szczątkowe * są jedną z dwóch technologii, które zapewnia platforma sz
 
  Wycinki opierają się w ten sposób na swoich możliwościach bycia strukturą kodu, dlatego zwykle są one używane w celu wyizolowania jednej strony aplikacji z innej. Aby odłączyć je od innych zestawów niebędących pod kontrolą, takich jak System.dll, normalnie zostałyby użyte podkładki. Zobacz [Używanie podkładki do izolowania aplikacji od innych zestawów w celu przeprowadzania testów jednostkowych](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).
 
- **Requirements**
+ **Wymagania**
 
 - Visual Studio Enterprise
 
 ## <a name="How"></a>Jak korzystać z wycinków
 
 ### <a name="Dependency"></a>Projektowanie dla iniekcji zależności
- Aby korzystać z wycinków, aplikacja musi być tak zaprojektowana, aby różne składniki nie były zależne od siebie, ale tylko od definicji interfejsu. Zamiast być połączone w czasie kompilacji, składniki są połączone w czasie wykonywania. Ten wzór pomaga stworzyć oprogramowanie, które będzie niezawodne i łatwe do zaktualizowania, ponieważ zmiany zwykle nie są propagowane przez granice składnika. Zalecamy następujące działanie, nawet jeśli użytkownik nie używa wycinków. Jeśli piszesz nowy kod, możesz łatwo postępować zgodnie z wzorcem [iniekcji zależności](http://en.wikipedia.org/wiki/Dependency_injection) . Jeśli piszesz testy dla istniejącego oprogramowania, możliwe, że trzeba będzie je refraktoryzować. Jeżeli byłoby to niepraktyczne, można rozważyć użycie zamiast niego podkładki.
+ Aby korzystać z wycinków, aplikacja musi być tak zaprojektowana, aby różne składniki nie były zależne od siebie, ale tylko od definicji interfejsu. Zamiast być połączone w czasie kompilacji, składniki są połączone w czasie wykonywania. Ten wzór pomaga stworzyć oprogramowanie, które będzie niezawodne i łatwe do zaktualizowania, ponieważ zmiany zwykle nie są propagowane przez granice składnika. Zalecamy następujące działanie, nawet jeśli użytkownik nie używa wycinków. Jeśli piszesz nowy kod, możesz łatwo postępować zgodnie z wzorcem [iniekcji zależności](https://en.wikipedia.org/wiki/Dependency_injection) . Jeśli piszesz testy dla istniejącego oprogramowania, możliwe, że trzeba będzie je refraktoryzować. Jeżeli byłoby to niepraktyczne, można rozważyć użycie zamiast niego podkładki.
 
  Zacznijmy tę dyskusję od motywującego przykładu, takiego jak ten na diagramie. Klasa, którą odczytuje StockAnalyzer, udostępnia ceny i generuje interesujące wyniki. Obejmuje ona niektóre metody publiczne, które chcemy sprawdzić. Aby zachować ich prostotę, po prostu przyjrzyjmy się jednej z tych metod — bardzo prostej — która zgłasza aktualną cenę udziału. Chcemy napisać test jednostkowy tej metody. Oto pierwszy projekt testu:
 
@@ -90,7 +90,7 @@ End Function
 
  Wstrzyknięcie interfejsu wykorzystuje następującą regułę:
 
-- Kod dowolnego składnika aplikacji nigdy nie powinien jawnie odwoływać się do klasy w innym składniku, w deklaracji lub w instrukcji `new`. Zamiast tego zmienne i parametry powinny być zadeklarowane razem z interfejsami. Wystąpienia składnika powinny być tworzone tylko przez kontener składnika.
+- Kod jakiegokolwiek składnika aplikacji nigdy w sposób jawny powinni zapoznać się z klasą w innym składniku, deklaracji lub w `new` instrukcji. Zamiast tego zmienne i parametry powinny być zadeklarowane razem z interfejsami. Wystąpienia składnika powinny być tworzone tylko przez kontener składnika.
 
    Przez „składnik” w tym przypadku rozumie się klasę lub grupę klas, które można dopracowywać i aktualizować łącznie. Składnikiem jest zazwyczaj kod w jednym projekcie programu Visual Studio. Rozdzielenie klas w obrębie jednego składnika nie jest zbyt ważne, ponieważ są one aktualizowane w tym samym czasie.
 
@@ -159,7 +159,7 @@ analyzer = new StockAnalyzer(new StockFeed())
 
 2. Wybierz zestaw zawierający definicje interfejsu, dla których chcesz utworzyć wycinki.
 
-3. W menu skrótów wybierz polecenie **Dodaj**elementy sztuczne.
+3. W menu skrótów wybierz **Dodaj zestawy Substytuowane**.
 
 ### <a name="WriteTest"></a>Napisz test z wycinkami
 
@@ -219,7 +219,7 @@ End Class
 
 ```
 
- Szczególna część Magic jest klasą `StubIStockFeed`. Dla każdego typu publicznego w zestawie, do którego istnieje odwołanie, mechanizm Microsoft Fakes generuje klasę wycinków. Nazwa klasy zastępczej jest pochodną od nazwy interfejsu, z "`Fakes.Stub`" jako prefiksem i dołączonymi nazwami typu parametru.
+ Specjalną funkcję PE łni tutaj jest klasą `StubIStockFeed`. Dla każdego typu publicznego w zestawie, do którego istnieje odwołanie, mechanizm Microsoft Fakes generuje klasę wycinków. Nazwa klasy wycinka jest tworzona od nazwy interfejsu, z "`Fakes.Stub`" jako prefiksem i dołączonymi nazwami typu parametru.
 
  Wycinki kodu są generowane także dla metod pobierających i ustawiających właściwości, dla zdarzeń i metod ogólnych.
 
@@ -304,7 +304,7 @@ End Class
 ## <a name="BKMK_Stub_basics"></a>Wycinki dla różnych rodzajów elementów członkowskich typu
 
 ### <a name="BKMK_Methods"></a>Form
- Jak opisano w przykładzie, metody można dzielić na wycinki, dołączając delegata do instancji klasy wycinka. Nazwa typu wycinka pochodzi od nazwy metody i parametrów. Na przykład uwzględniając następujące `IMyInterface` interfejsu i metody `MyMethod`:
+ Jak opisano w przykładzie, metody można dzielić na wycinki, dołączając delegata do instancji klasy wycinka. Nazwa typu wycinka pochodzi od nazwy metody i parametrów. Na przykład, biorąc pod uwagę następujące `IMyInterface` interfejsu i metoda `MyMethod`:
 
 ```csharp
 // application under test
@@ -314,7 +314,7 @@ interface IMyInterface
 }
 ```
 
- Dołączymy skrót do `MyMethod`, który zawsze zwraca 1:
+ Dołączamy odcinek do `MyMethod` zawsze zwraca 1:
 
 ```csharp
 // unit test code
@@ -323,10 +323,10 @@ interface IMyInterface
 
 ```
 
- Jeśli nie podano wycinka dla funkcji, środowisko Fakes wygeneruje funkcję zwracającą wartość domyślną typu zwracanego. W przypadku liczb wartość domyślna to 0, a dla typów klas jest `null` (C#) lub `Nothing` (Visual Basic).
+ Jeśli nie podano wycinka dla funkcji, środowisko Fakes wygeneruje funkcję zwracającą wartość domyślną typu zwracanego. W przypadku liczb, wartością domyślną jest 0, a dla typów klasy jest `null` (C#) lub `Nothing` (Visual Basic).
 
 ### <a name="BKMK_Properties"></a>Aœciwoœci
- Metody pobierające i ustawiające są widoczne jako oddzielne delegaty i mogą tworzyć poszczególne wycinki. Rozważmy na przykład `Value` Właściwość `IMyInterface`:
+ Metody pobierające i ustawiające są widoczne jako oddzielne delegaty i mogą tworzyć poszczególne wycinki. Na przykład, rozważmy `Value` właściwość `IMyInterface`:
 
 ```csharp
 // code under test
@@ -337,7 +337,7 @@ interface IMyInterface
 
 ```
 
- Dołączymy delegatów do metody pobierającej i ustawiającej `Value`, aby symulować Właściwość autoproperty:
+ Dołączyć delegaty do metod pobierających i ustawiających `Value` aby symulować auto właściwości:
 
 ```csharp
 // unit test code
@@ -361,7 +361,7 @@ interface IWithEvents
 }
 ```
 
- Aby zgłosić zdarzenie `Changed`, po prostu wywołajmy delegata zapasowego:
+ Aby podnieść `Changed` zdarzenie, po prostu wywołać pomocniczego delegata:
 
 ```csharp
 // unit test code
@@ -397,7 +397,7 @@ public void TestGetValue()
 }
 ```
 
- Jeśli kod był wywoływany `GetValue<T>` z jakimkolwiek innym wystąpieniem, po prostu wywołuje zachowanie.
+ Jeśli w kodzie nastąpi wywołanie `GetValue<T>` z jakimkolwiek innym wystąpieniem wycinka po prostu wywoła dane zachowanie.
 
 ### <a name="BKMK_Partial_stubs"></a>Reklasy klas wirtualnych
  W poprzednich przykładach wycinki zostały wygenerowane z interfejsów. Można również wygenerować wycinki z klasy, która ma składowe virtual lub abstract. Na przykład:
@@ -424,7 +424,7 @@ public void TestGetValue()
 
 ```
 
- Jeśli nie podasz delegata dla metody wirtualnej, środowisko Fakes może zapewnić zachowanie domyślne albo wywoływać metodę w klasie bazowej. Aby mieć metodę podstawową, należy ustawić właściwość `CallBase`:
+ Jeśli nie podasz delegata dla metody wirtualnej, środowisko Fakes może zapewnić zachowanie domyślne albo wywoływać metodę w klasie bazowej. Aby mieć podstawowej metody nazwanej, należy ustawić `CallBase` właściwości:
 
 ```csharp
 // unit test code
@@ -448,9 +448,9 @@ Assert.AreEqual(43,stub.DoVirtual(1));
 2. Zapieczętowane klasy lub metody statyczne nie mogą zostać przekształcone na wycinki, ponieważ typy wycinka opierają się na wysyłaniu wirtualnej metody. W takich przypadkach należy użyć typów podkładki zgodnie z opisem w temacie [Używanie podkładki do izolowania aplikacji od innych zestawów do testowania jednostkowego](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)
 
 ## <a name="BKMK_Changing_the_default_behavior_of_stubs"></a>Zmiana domyślnego zachowania wycinków
- Każdy wygenerowany typ klasy zastępczej przechowuje wystąpienie interfejsu `IStubBehavior` (za pomocą właściwości `IStub.InstanceBehavior`). Zachowanie jest wywoływane za każdym razem, gdy klient wywołuje element członkowski, który nie ma dołączonego niestandardowego delegata. Jeśli zachowanie nie zostało ustawione, będzie używać wystąpienia zwróconego przez właściwość `StubsBehaviors.Current`. Domyślnie ta właściwość zwraca zachowanie, które zgłasza wyjątek `NotImplementedException`.
+ Każdy wygenerowany typ wycinka posiada wystąpienie `IStubBehavior` interfejsu (za pośrednictwem `IStub.InstanceBehavior` właściwości). Zachowanie jest wywoływane za każdym razem, gdy klient wywołuje element członkowski, który nie ma dołączonego niestandardowego delegata. Jeśli nie ustawiono zachowania, zostanie użyty wystąpienie zwrócone przez `StubsBehaviors.Current` właściwości. Domyślnie właściwość ta zwraca zachowanie, które zgłasza `NotImplementedException` wyjątku.
 
- Zachowanie można zmienić w dowolnym momencie, ustawiając właściwość `InstanceBehavior` w dowolnym wystąpieniu klasy zastępczej. Na przykład poniższy fragment kodu zmienia zachowanie, które wykonuje Nothing lub zwraca wartość domyślną zwracanego typu: `default(T)`:
+ To zachowanie można zmienić w dowolnym momencie przez ustawienie `InstanceBehavior` właściwości na dowolnym wystąpieniu wycinka. Na przykład poniższa Wstawka kodu zmienia zachowanie, które nie działa lub zwraca wartość domyślną typu zwracanego: `default(T)`:
 
 ```csharp
 // unit test code
@@ -459,7 +459,7 @@ var stub = new StubIFileSystem();
 stub.InstanceBehavior = StubsBehaviors.DefaultValue;
 ```
 
- Zachowanie można także zmienić globalnie dla wszystkich obiektów zastępczych, dla których zachowanie nie zostało ustawione przez ustawienie właściwości `StubsBehaviors.Current`:
+ To zachowanie można także zmienić globalnie dla wszystkich obiektów, dla których zachowanie nie zostało ustawione przez ustawienie zastąpić klasą zastępczą `StubsBehaviors.Current` właściwości:
 
 ```csharp
 // unit test code
@@ -472,7 +472,7 @@ StubBehaviors.Current =
 ## <a name="external-resources"></a>Zasoby zewnętrzne
 
 ### <a name="guidance"></a>Wskazówki
- [Testowanie w celu ciągłego dostarczania za pomocą programu Visual Studio 2012 — Rozdział 2: testowanie jednostkowe: testowanie wewnątrz](http://go.microsoft.com/fwlink/?LinkID=255188)
+ [Testowanie w celu ciągłego dostarczania za pomocą programu Visual Studio 2012 — Rozdział 2: testowanie jednostkowe: testowanie wewnątrz](https://go.microsoft.com/fwlink/?LinkID=255188)
 
 ## <a name="see-also"></a>Zobacz też
  [Izolowanie testowanego kodu za pomocą struktury Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)

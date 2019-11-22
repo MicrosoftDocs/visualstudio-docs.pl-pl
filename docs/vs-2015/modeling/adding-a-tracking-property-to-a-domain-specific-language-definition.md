@@ -13,12 +13,12 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6e6664f78123864073d605b59c7f43e5b2db36cc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 19d673d9d09ce95580e25033966e1a901255fd90
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72609248"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74292649"
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Dodawanie właściwości śledzenia do definicji języka specyficznego dla domeny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,9 +50,9 @@ W tym instruktażu pokazano, jak dodać właściwość śledzenia do modelu dome
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580)|
-|[!INCLUDE[dsl](../includes/dsl-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185581](http://go.microsoft.com/fwlink/?LinkID=185581)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](https://go.microsoft.com/fwlink/?LinkID=185579)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](https://go.microsoft.com/fwlink/?LinkID=185580)|
+|[!INCLUDE[dsl](../includes/dsl-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185581](https://go.microsoft.com/fwlink/?LinkID=185581)|
 
 ## <a name="creating-the-dsl-project"></a>Tworzenie projektu DSL
  Utwórz projekt dla języka specyficznego dla domeny.
@@ -98,7 +98,7 @@ W tym instruktażu pokazano, jak dodać właściwość śledzenia do modelu dome
 
     1. Nazwij nową właściwość `DefaultNamespace`.
 
-    2. W oknie **Właściwości** nowej właściwości, ustaw **wartość domyślną** na `DefaultNamespace` i ustaw dla opcji **Typ** **ciąg**.
+    2. W oknie **Właściwości** nowej właściwości, ustaw **wartość domyślną** na `DefaultNamespace`i ustaw dla opcji **Typ** **ciąg**.
 
 2. Do klasy domeny **ExampleModel** Dodaj właściwość domeny o nazwie `CustomElements`.
 
@@ -110,7 +110,7 @@ W tym instruktażu pokazano, jak dodać właściwość śledzenia do modelu dome
 
 4. Na **przykład** klasy domeny, Dodaj właściwość domeny o nazwie `IsNamespaceTracking`.
 
-     W oknie **Właściwości** dla nowej właściwości ustaw wartość **umożliwia przeglądania** na **false**, ustawienie **wartości domyślnej** na `true` i ustawienie **Typ** na **wartość logiczna**.
+     W oknie **Właściwości** dla nowej właściwości ustaw wartość **umożliwia przeglądania** na **false**, ustawienie **wartości domyślnej** na `true`i ustawienie **Typ** na **wartość logiczna**.
 
 #### <a name="to-update-the-diagram-elements-and-dsl-details"></a>Aby zaktualizować elementy diagramu i szczegóły języka DSL
 
@@ -160,7 +160,7 @@ W tym instruktażu pokazano, jak dodać właściwość śledzenia do modelu dome
 
      Plik NamespaceTrackingProperty.cs jest tworzony i otwierany do edycji.
 
-4. W folderze Utwórz następujące pliki kodu: `ExampleModel.cs,``HelperClasses.cs`, `Serialization.cs` i `TypeDescriptor.cs`.
+4. W folderze Utwórz następujące pliki kodu: `ExampleModel.cs,``HelperClasses.cs`, `Serialization.cs`i `TypeDescriptor.cs`.
 
 5. W projekcie **DslPackage** , Utwórz również folder `CustomCode` i Dodaj do niego plik `Package.cs` kodu.
 
@@ -348,7 +348,7 @@ W tym instruktażu pokazano, jak dodać właściwość śledzenia do modelu dome
 
  Zdefiniowanie metody `GetCustomElementsValue` udostępnia logikę dla właściwości obliczeniowej CustomElements `ExampleModel`. Ta metoda zlicza `ExampleElement` klas domen, które mają właściwość śledzenia przestrzeni nazw, która ma wartość zaktualizowaną przez użytkownika, i zwraca ciąg, który reprezentuje tę liczbę jako część łącznej liczby elementów w modelu.
 
- Dodatkowo Dodaj metodę `OnDefaultNamespaceChanged` do `ExampleModel` i Zastąp metodę `OnValueChanged` `DefaultNamespacePropertyHandler` zagnieżdżonej klasy `ExampleModel`, aby wywołać `OnDefaultNamespaceChanged`.
+ Dodatkowo Dodaj metodę `OnDefaultNamespaceChanged` do `ExampleModel`i Zastąp metodę `OnValueChanged` `DefaultNamespacePropertyHandler` zagnieżdżonej klasy `ExampleModel`, aby wywołać `OnDefaultNamespaceChanged`.
 
  Ponieważ właściwość DefaultNamespace jest używana do obliczania właściwości śledzenia przestrzeni nazw, `ExampleModel` musi powiadomić wszystkie `ExampleElement` klasy domeny o zmianie wartości DefaultNamespace.
 
@@ -722,9 +722,9 @@ W tym instruktażu pokazano, jak dodać właściwość śledzenia do modelu dome
 
 #### <a name="to-exercise-the-language"></a>Aby skorzystać z języka
 
-1. W menu **kompilacja** kliknij polecenie **Kompiluj ponownie rozwiązanie**.
+1. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
 
-2. W menu **debugowanie** kliknij **Rozpocznij debugowanie**.
+2. Na **debugowania** menu, kliknij przycisk **Rozpocznij debugowanie**.
 
      Eksperymentalna kompilacja [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] otwiera rozwiązanie **debugowania** , które zawiera pusty plik testowy.
 

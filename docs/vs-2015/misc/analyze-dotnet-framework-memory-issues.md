@@ -1,5 +1,5 @@
 ---
-title: Analizowanie problemów pamięci .NET Framework | Dokumentacja firmy Microsoft
+title: Analizuj problemy związane z pamięcią .NET Framework | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -10,180 +10,180 @@ ms.assetid: 43341928-9930-48cf-a57f-ddcc3984b787
 caps.latest.revision: 9
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 885f96a4e1e43fe422c6fd9cfaa414fe5871bce1
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: e94edbeac381ac634171507766126ab954153eb1
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65688574"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295892"
 ---
 # <a name="analyze-net-framework-memory-issues"></a>Analiza problemów pamięci .NET Framework
-Wyszukiwanie przecieków pamięci i pamięci nieefektywne, użyj w kodzie .NET Framework za pomocą programu Visual Studio zarządzany analizator pamięci. Minimalna wersja systemu .NET Framework kod docelowy jest .NET Framework 4.5.  
+Znajdowanie przecieków pamięci i niewydajne użycie pamięci w .NET Framework kodzie przy użyciu analizatora pamięci zarządzanej przez program Visual Studio. Minimalna .NET Framework wersja kodu docelowego to .NET Framework 4,5.  
   
- Narzędzia analizy pamięci analizuje informacje zawarte w *pliki zrzutu ze danych sterty* , kopia obiektów w pamięci aplikacji. Możesz zbierać pliki zrzutu (.dmp) z programu Visual Studio IDE lub przy użyciu innych narzędzi systemu.  
+ Narzędzie do analizy pamięci analizuje informacje w *plikach zrzutów z danymi sterty* , które są kopią obiektów w pamięci aplikacji. Pliki zrzutu (. dmp) można zbierać z poziomu środowiska IDE programu Visual Studio lub za pomocą innych narzędzi systemu.  
   
 - Możesz analizować pojedynczej migawki zrozumieć konsekwencje typów obiektów na wykorzystanie pamięci i znaleźć kod w swojej aplikacji, która używa pamięci nieefektywne.  
   
-- Można również porównać (*diff*) Użyj dwóch migawki znajdowanie obszarów w kodzie aplikacji, które powodują pamięci, aby zwiększyć wraz z upływem czasu.  
+- Możesz również porównać (*diff*) dwie migawki aplikacji, aby znaleźć w kodzie obszary, które powodują zwiększenie ilości pamięci w czasie.  
   
-  Aby zapoznać się z przewodnikiem zarządzany analizator pamięci, zobacz [przy użyciu programu Visual Studio 2013 do diagnozowania problemów pamięci .NET w środowisku produkcyjnym](http://blogs.msdn.com/b/visualstudioalm/archive/2013/06/20/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production.aspx) w Visual Studio ALM + Team Foundation Server blog.  
+  Przewodnik dotyczący analizatora pamięci zarządzanej znajduje się w temacie [używanie Visual Studio 2013 do diagnozowania problemów z pamięcią .NET w środowisku produkcyjnym](https://devblogs.microsoft.com/devops/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production/) na blogu programu Visual Studio ALM + Team Foundation Server.  
   
-## <a name="BKMK_Contents"></a> Zawartość  
- [Wykorzystanie pamięci w aplikacjach .NET Framework](#BKMK_Memory_use_in__NET_Framework_apps)  
+## <a name="BKMK_Contents"></a>Contents  
+ [Użycie pamięci w aplikacjach .NET Framework](#BKMK_Memory_use_in__NET_Framework_apps)  
   
- [Zidentyfikuj problem pamięci w aplikacji](#BKMK_Identify_a_memory_issue_in_an_app)  
+ [Identyfikowanie problemu z pamięcią w aplikacji](#BKMK_Identify_a_memory_issue_in_an_app)  
   
- [Zbieraj migawki pamięci](#BKMK_Collect_memory_snapshots)  
+ [Zbieranie migawek pamięci](#BKMK_Collect_memory_snapshots)  
   
- [Analiza użycia pamięci](#BKMK_Analyze_memory_use)  
+ [Analizowanie użycia pamięci](#BKMK_Analyze_memory_use)  
   
-## <a name="BKMK_Memory_use_in__NET_Framework_apps"></a> Wykorzystanie pamięci w aplikacjach .NET Framework  
- .NET Framework jest jesdnostką zbierającą śmieci środowiska uruchomieniowego, aby w przypadku większości aplikacji, wykorzystanie pamięci nie jest problemem. Jednak w długo działających aplikacji, takich jak usługi sieci web i aplikacje, a na urządzeniach, które mają ograniczoną ilość pamięci, gromadzenie obiektów w pamięci może mieć wpływ na wydajność aplikacji i urządzeń, która działa na. Użycie zbyt dużej ilości pamięci może zablokować aplikację i maszynę zasobów, jeśli moduł odśmiecania pamięci jest uruchamiany zbyt często, czy system operacyjny jest zmuszony do przenoszeniu ich do pamięci RAM i dysku. W najgorszym przypadku aplikacja może ulec awarii z powodu wyjątku "za mało pamięci".  
+## <a name="BKMK_Memory_use_in__NET_Framework_apps"></a>Użycie pamięci w aplikacjach .NET Framework  
+ .NET Framework to środowisko uruchomieniowe środowiska wykonawczego, więc w większości aplikacji użycie pamięci nie jest problemem. Jednak w długotrwałych aplikacjach, takich jak usługi sieci Web i aplikacje, a w przypadku urządzeń z ograniczoną ilością pamięci, nagromadzenie obiektów w pamięci może mieć wpływ na wydajność aplikacji i urządzenie, na którym działa. Nadmierne wykorzystanie pamięci może zablokować dostęp aplikację i maszynę zasobów, jeśli moduł wyrzucania elementów bezużytecznych jest uruchomiony zbyt często lub jeśli system operacyjny jest zmuszony do przenoszenia pamięci między pamięcią RAM a dyskiem. W najgorszym przypadku aplikacja może ulec awarii z wyjątkiem wyjątku "Brak pamięci".  
   
- .NET *sterty zarządzanej* to region pamięci wirtualnej, gdzie są przechowywane odwołania obiekty utworzone przez aplikację. Okres istnienia obiektów są zarządzane przez wyrzucanie elementów bezużytecznych (GC). Moduł zbierający elementy bezużyteczne używa odwołania do śledzenia obiektów, które zajmują bloki pamięci. Odwołanie jest tworzony, gdy obiekt zostanie utworzone i przypisane do zmiennej. Pojedynczy obiekt może mieć wiele odwołań. Na przykład dodatkowe informacje do obiektu może można utworzyć, dodając obiekt do klasy, kolekcji lub innymi struktura danych lub przez przypisanie obiektu do drugiego zmiennej. Mniej oczywistych sposobem tworzenia odwołanie jest jeden obiekt, dodając procedurę obsługi zdarzeń innego obiektu. W tym przypadku drugi obiekt przechowuje odwołanie do pierwszego obiektu, dopóki program obsługi jest jawnie usuwany lub drugi obiekt zostanie zniszczony.  
+ *Sterta zarządzana* przez platformę .NET to region pamięci wirtualnej, w którym są przechowywane obiekty referencyjne utworzone przez aplikację. Okres istnienia obiektów jest zarządzany przez moduł wyrzucania elementów bezużytecznych (GC). Moduł zbierający elementy bezużyteczne używa odwołań do śledzenia obiektów, które zajmują bloki pamięci. Odwołanie jest tworzone podczas tworzenia obiektu i przypisywania go do zmiennej. Pojedynczy obiekt może mieć wiele odwołań. Na przykład dodatkowe odwołania do obiektu można utworzyć przez dodanie obiektu do klasy, kolekcji lub innej struktury danych lub przez przypisanie obiektu do drugiej zmiennej. Mniej oczywisty sposób tworzenia odwołania polega na tym, że jeden obiekt dodaje procedurę obsługi do zdarzenia innego obiektu. W takim przypadku drugi obiekt przechowuje odwołanie do pierwszego obiektu do momentu usunięcia jawnie procedury obsługi lub zerwania drugiego obiektu.  
   
- Dla każdej aplikacji GC zachowuje drzewa odwołania, służącą do śledzenia obiektów, odwołuje się aplikacja. *Drzewa odwołanie* ma zbiór obiektów głównych, w tym obiektów globalnych i statycznych, a także stosy skojarzony wątek i dynamicznie utworzyć wystąpienia obiektów. Obiekt jest ścieżką, jeśli obiekt ma co najmniej jeden obiekt nadrzędny, który zawiera odwołanie do niego. Wykaz Globalny mógł odzyskać pamięć obiektu, tylko wtedy, gdy żaden obiekt lub zmienna w aplikacji ma odwołanie do niej.  
+ Dla każdej aplikacji, wykaz globalny utrzymuje drzewo odwołań, które śledzą obiekty, do których odwołuje się aplikacja. *Drzewo odwołań* zawiera zestaw katalogów głównych, które obejmują obiekty globalne i statyczne, a także skojarzone stosy wątków i dynamicznie tworzone obiekty. Obiekt jest odblokowany, jeśli obiekt ma co najmniej jeden obiekt nadrzędny, który zawiera odwołanie do niego. Wykaz globalny może odzyskiwać pamięć obiektu tylko wtedy, gdy żaden inny obiekt lub zmienna w aplikacji nie ma odwołania do niego.  
   
- ![Powrót do początku](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [zawartość](#BKMK_Contents)  
+ ![Z powrotem do najwyższej](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [zawartości](#BKMK_Contents)  
   
-## <a name="BKMK_Identify_a_memory_issue_in_an_app"></a> Zidentyfikuj problem pamięci w aplikacji  
- Najbardziej widoczne objawem problemów z pamięcią jest wydajności aplikacji, szczególnie w przypadku spadku wydajności wraz z upływem czasu. Obniżenie wydajności innych aplikacji, podczas gdy Twoja aplikacja działa również może wskazywać problem z pamięci. Jeśli podejrzewasz problem pamięci, skorzystaj z narzędzia, takie jak Menedżer zadań lub [Windows Performance Monitor](https://technet.microsoft.com/library/cc749249.aspx) zmuszony do dalszego badania. Na przykład wyszukaj wzrost całkowity rozmiar pamięci, która nie może wyjaśniać potencjalnym źródłem przecieki pamięci:  
+## <a name="BKMK_Identify_a_memory_issue_in_an_app"></a>Identyfikowanie problemu z pamięcią w aplikacji  
+ Najbardziej widocznym objawem problemów z pamięcią jest wydajność aplikacji, szczególnie w przypadku obniżenia wydajności w czasie. Spadek wydajności innych aplikacji, gdy aplikacja jest uruchomiona, może również oznaczać problem z pamięcią. Jeśli podejrzewasz problem z pamięcią, użyj narzędzia, takiego jak Menedżer zadań lub [Monitor wydajności systemu Windows](https://technet.microsoft.com/library/cc749249.aspx) , aby dokładniej zbadać. Na przykład poszukaj wzrostu w łącznym rozmiarze pamięci, której nie można wyjaśnić jako możliwego źródła przecieków pamięci:  
   
- ![Zgodne pamięci wzrost Monitor zasobów](../misc/media/mngdmem-resourcemanagerconsistentgrowth.png "MNGDMEM_ResourceManagerConsistentGrowth")  
+ ![Spójny wzrost ilości pamięci w Monitor zasobów](../misc/media/mngdmem-resourcemanagerconsistentgrowth.png "MNGDMEM_ResourceManagerConsistentGrowth")  
   
- Może także zauważyć, że wartości graniczne pamięci, które są większe niż moglibyśmy swojej wiedzy na temat kod, który może wskazywać nieefektywnego wykorzystania pamięci w procedurze:  
+ Można również zauważyć, że maksymalne ilości pamięci, które są większe niż wiedza o kodzie, sugerują się, co może wskazywać na niewydajne użycie pamięci w procedurze:  
   
- ![Wartości graniczne pamięci w usłudze Resource Manager](../misc/media/mngdmem-resourcemanagerspikes.png "MNGDMEM_ResourceManagerSpikes")  
+ ![Maksymalne ilości pamięci w Menedżer zasobów](../misc/media/mngdmem-resourcemanagerspikes.png "MNGDMEM_ResourceManagerSpikes")  
   
-## <a name="BKMK_Collect_memory_snapshots"></a> Zbieraj migawki pamięci  
- Narzędzia analizy pamięci analizuje informacje zawarte w *pliki zrzutu* zawierających informacje o stercie. Można tworzyć pliki zrzutu w programie Visual Studio lub można użyć narzędzia, takiego jak [ProcDump](https://technet.microsoft.com/sysinternals/dd996900.aspx) z [Windows Sysinternals](https://technet.microsoft.com/sysinternals). Zobacz [co to jest zrzut, i jak mogę utworzyć jeden?](http://blogs.msdn.com/b/debugger/archive/2009/12/30/what-is-a-dump-and-how-do-i-create-one.aspx) na blogu zespołu debugera Visual Studio.  
+## <a name="BKMK_Collect_memory_snapshots"></a>Zbieranie migawek pamięci  
+ Narzędzie do analizy pamięci analizuje informacje w *plikach zrzutu* , które zawierają informacje o stercie. Pliki zrzutu można tworzyć w programie Visual Studio lub za pomocą narzędzia, takiego jak [ProcDump](https://technet.microsoft.com/sysinternals/dd996900.aspx) z [Windows Sysinternals](https://technet.microsoft.com/sysinternals). Zobacz artykuł [co to jest zrzut i jak go utworzyć?](https://blogs.msdn.microsoft.com/debugger/2009/12/30/what-is-a-dump-and-how-do-i-create-one/) na blogu zespołu debugera programu Visual Studio.  
   
 > [!NOTE]
-> Większość narzędzi może zbierać informacji zrzutu z lub bez niego dane pamięci sterty ukończone. Analizator pamięci programu Visual Studio wymaga informacji pełnego stosu.  
+> Większość narzędzi może zbierać informacje zrzutu z pełnymi danymi pamięci sterty lub bez nich. Analizator pamięci programu Visual Studio wymaga pełnych informacji o stercie.  
   
- **Aby zebrać zrzut z programu Visual Studio**  
+ **Aby zebrać Zrzut z programu Visual Studio**  
   
-1. Można utworzyć pliku zrzutu dla procesu, który został uruchomiony z projektu programu Visual Studio, lub można dołączyć debuger do działającego procesu. Zobacz [dołączanie do uruchomionego procesu](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
+1. Można utworzyć plik zrzutu dla procesu, który został uruchomiony z projektu programu Visual Studio, lub dołączyć debuger do uruchomionego procesu. Zobacz [dołączanie do uruchomionych procesów](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   
-2. Zatrzymaj wykonywanie. Debuger zatrzymuje się po wybraniu **Przerwij wszystko** na **debugowania** menu lub w sytuacji wyjątku lub w punkcie przerwania  
+2. Zatrzymaj wykonywanie. Debuger zostaje zatrzymany w przypadku wybrania opcji **Przerwij wszystko** w menu **debugowanie** lub na wyjątek lub w punkcie przerwania  
   
-3. Na **debugowania** menu, wybierz **Zapisz zrzut jako**. W **Zapisz zrzut jako** okna dialogowego pole, określ lokalizację i upewnij się, że **minizrzutu ze stertą** (ustawienie domyślne) jest zaznaczona w **Zapisz jako typ** listy.  
+3. W menu **debugowanie** wybierz polecenie **Zapisz zrzut jako**. W oknie dialogowym **Zapisz zrzut jako** Określ lokalizację i upewnij się, że na liście **Zapisz jako typ** jest wybrana wartość **minizrzutu z stertą** (domyślnie).  
   
-   **Porównanie dwóch migawek pamięci**  
+   **Aby porównać dwie migawki pamięci**  
   
-   Aby analizować wzrost użycia pamięci aplikacji, należy zebrać dwa pliki zrzutu z pojedynczego wystąpienia aplikacji.  
+   Aby przeanalizować wzrost wykorzystania pamięci aplikacji, Zbierz dwa pliki zrzutu z jednego wystąpienia aplikacji.  
   
-   ![Powrót do początku](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [zawartość](#BKMK_Contents)  
+   ![Z powrotem do najwyższej](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [zawartości](#BKMK_Contents)  
   
-## <a name="BKMK_Analyze_memory_use"></a> Analiza użycia pamięci  
- [Filtruj listę obiektów](#BKMK_Filter_the_list_of_objects) **&#124;** [analizy danych pamięci z jednego migawki](#BKMK_Analyze_memory_data_in_from_a_single_snapshot) **&#124;** [porównanie dwóch pamięci migawki](#BKMK_Compare_two_memory_snapshots)  
+## <a name="BKMK_Analyze_memory_use"></a>Analizowanie użycia pamięci  
+ [Filtrowanie listy obiektów](#BKMK_Filter_the_list_of_objects) **&#124;** [Analizowanie danych pamięci z jednej migawki](#BKMK_Analyze_memory_data_in_from_a_single_snapshot) **&#124;** [porównanie dwóch migawek pamięci](#BKMK_Compare_two_memory_snapshots)  
   
- Do analizowania pliku zrzutu pamięci Użyj problemy:  
+ Aby przeanalizować plik zrzutu pod kątem problemów z użyciem pamięci:  
   
-1. W programie Visual Studio, wybierz **pliku**, **Otwórz** i określ plik zrzutu.  
+1. W programie Visual Studio wybierz **plik**, **Otwórz** i określ plik zrzutu.  
   
-2. Na **Podsumowanie pliku minizrzutu** wybierz **Debuguj pamięć zarządzaną**.  
+2. Na stronie **Podsumowanie pliku minizrzutu** wybierz polecenie **Debuguj pamięć zarządzaną**.  
   
     ![Strona podsumowania pliku zrzutu](../misc/media/mngdmem-dumpfilesummary.png "MNGDMEM_DumpFileSummary")  
   
-   Analizator pamięci uruchamia sesję debugowania do analizowania pliku i wyświetla wyniki na stronie widok sterty:  
+   Analizator pamięci uruchamia sesję debugowania, aby przeanalizować plik i wyświetlał wyniki na stronie widoku sterty:  
   
-   ![Powrót do początku](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [zawartość](#BKMK_Contents)  
+   ![Z powrotem do najwyższej](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [zawartości](#BKMK_Contents)  
   
-### <a name="BKMK_Filter_the_list_of_objects"></a> Filtruj listę obiektów  
- Domyślnie analizator pamięci filtruje listę obiektów w migawce pamięci, aby wyświetlić tylko typy i wystąpienia, które są kod użytkownika, a także aby pokazać tylko te typy, których łączny rozmiar włącznie przekracza wartość progową odsetek całkowity rozmiar sterty. Można zmienić tych opcji w **ustawienia widoku** listy:  
+### <a name="BKMK_Filter_the_list_of_objects"></a>Filtrowanie listy obiektów  
+ Domyślnie Analizator pamięci filtruje listę obiektów w migawce pamięci, aby wyświetlić tylko typy i wystąpienia, które są kodem użytkownika, i wyświetlić tylko te typy, których łączny rozmiar włącznie przekracza próg procentowy całkowitego rozmiaru sterty. Te opcje można zmienić na liście **Wyświetl ustawienia** :  
   
 |||  
 |-|-|  
-|**Włącz opcję tylko mój kod**|Tylko mój kod ukrywa najbardziej typowe obiekty systemowe, tak aby tylko typy, które tworzysz są wyświetlane na liście.<br /><br /> Możesz również ustawić opcję tylko mój kod w programie Visual Studio **opcje** okno dialogowe. Na **debugowania** menu, wybierz **opcje i ustawienia**. W **debugowanie**/**ogólne** karty, wybierz lub wyczyść **tylko mój kod**.|  
-|**Zwiń małe obiekty**|**Zwiń małe obiekty** ukrywa wszystkie typy, których łączny rozmiar (włącznie) jest mniejsza niż 0,5 procent całkowity rozmiar sterty.|  
+|**Włącz Tylko mój kod**|Tylko mój kod ukrywa najpopularniejsze obiekty systemowe, tak aby na liście były wyświetlane tylko utworzone typy.<br /><br /> Możesz również ustawić opcję Tylko mój kod w oknie dialogowym **Opcje** programu Visual Studio. W menu **debugowanie** wybierz **Opcje i ustawienia**. Na karcie **debugowanie**/**Ogólne** wybierz lub wyczyść **tylko mój kod**.|  
+|**Zwiń małe obiekty**|**Zwiń małe obiekty** ukrywa wszystkie typy, których łączny rozmiar łącznie jest mniejszy niż 0,5 procent całkowitego rozmiaru sterty.|  
   
- Lista typów można również filtrować, wprowadzając ciąg w **wyszukiwania** pole. Na liście zostaną wyświetlone tylko te typy, których nazwy zawierają ciąg.  
+ Możesz również filtrować listę typów, wprowadzając ciąg w polu **wyszukiwania** . Na liście są wyświetlane tylko te typy, których nazwy zawierają ciąg.  
   
- ![Powrót do początku](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [zawartość](#BKMK_Contents)  
+ ![Z powrotem do najwyższej](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [zawartości](#BKMK_Contents)  
   
-### <a name="BKMK_Analyze_memory_data_in_from_a_single_snapshot"></a> Analizowanie danych pamięci z jednego migawki  
- Visual Studio uruchamia nową sesję debugowania, analizowanie pliku i wyświetla dane w pamięci w oknie Widok sterty.  
+### <a name="BKMK_Analyze_memory_data_in_from_a_single_snapshot"></a>Analizowanie danych pamięci z pojedynczej migawki  
+ Program Visual Studio uruchamia nową sesję debugowania, aby przeanalizować plik i wyświetlał dane pamięci w oknie widoku sterty.  
   
- ![The Object Type list](../misc/media/dbg-mma-objecttypelist.png "DBG_MMA_ObjectTypeList")  
+ ![Lista typów obiektów](../misc/media/dbg-mma-objecttypelist.png "DBG_MMA_ObjectTypeList")  
   
- ![Powrót do początku](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [zawartość](#BKMK_Contents)  
+ ![Z powrotem do najwyższej](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [zawartości](#BKMK_Contents)  
   
 #### <a name="object-type-table"></a>Tabela typów obiektów  
- W górnym tabeli wymieniono typy obiektów, które są przechowywane w pamięci.  
+ W górnej tabeli wymieniono typy obiektów, które są przechowywane w pamięci.  
   
-- **Liczba** pokazuje liczbę wystąpień typu w migawce.  
+- **Liczba** wskazuje liczbę wystąpień typu w migawce.  
   
-- **Rozmiar (w bajtach)** to rozmiar wszystkich wystąpień tego typu, z wyłączeniem rozmiar przechowuje odwołania do obiektów. Program  
+- **Rozmiar (w bajtach)** to rozmiar wszystkich wystąpień typu, z wyłączeniem rozmiaru obiektów, do których są przechowywane odwołania. Program  
   
-- **Całkowity rozmiar (w bajtach)** zawiera rozmiary obiektów, do którego istnieje odwołanie.  
+- **Rozmiar włącznie (w bajtach)** obejmuje rozmiary obiektów, do których istnieją odwołania.  
   
-  Możesz wybrać ikonę wystąpienia (![ikonę wystąpienia, w kolumnie Typ obiektu](../misc/media/dbg-mma-instancesicon.png "DBG_MMA_InstancesIcon")) w **typu obiektu** kolumny, aby wyświetlić listę wystąpień Typ.  
+  Można wybrać ikonę wystąpienia (![ikona wystąpienia w kolumnie Typ obiektu](../misc/media/dbg-mma-instancesicon.png "DBG_MMA_InstancesIcon")) w kolumnie **Typ obiektu** , aby wyświetlić listę wystąpień tego typu.  
   
-#### <a name="instance-table"></a>Tabela wystąpienia  
- ![Instances table](../misc/media/dbg-mma-instancestable.png "DBG_MMA_InstancesTable")  
+#### <a name="instance-table"></a>Tabela wystąpień  
+ ![Tabela wystąpień](../misc/media/dbg-mma-instancestable.png "DBG_MMA_InstancesTable")  
   
-- **Wystąpienie** jest lokalizację obiektu, który służy jako identyfikator obiektu obiektu w pamięci  
+- **Wystąpienie** jest lokalizacją pamięci obiektu, który służy jako identyfikator obiektu  
   
-- **Wartość** pokazuje rzeczywistej wartości typów wartości. Możesz umieścić kursor nazwę typu odwołania, aby wyświetlić jej wartości danych w oknie z poradami danych.  
+- **Wartość** przedstawia rzeczywistą wartość typów wartości. Możesz umieścić kursor na nazwie typu odwołania, aby wyświetlić jego wartości danych w etykietce danych.  
   
-   ![Wystąpienie wartości w oknie z poradami danych](../misc/media/dbg-mma-instancevaluesindatatip.png "DBG_MMA_InstanceValuesInDataTip")  
+   ![Wartości wystąpień w etykietce danych](../misc/media/dbg-mma-instancevaluesindatatip.png "DBG_MMA_InstanceValuesInDataTip")  
   
-- **Rozmiar (w bajtach)** to rozmiar obiektu, z wyłączeniem rozmiar przechowuje odwołania do obiektów. Program  
+- **Rozmiar (w bajtach)** jest rozmiarem obiektu, bez względu na rozmiar obiektów, do których są przechowywane odwołania. Program  
   
-- **Całkowity rozmiar (w bajtach)** zawiera rozmiary obiektów, do którego istnieje odwołanie.  
+- **Rozmiar włącznie (w bajtach)** obejmuje rozmiary obiektów, do których istnieją odwołania.  
   
-  Domyślnie, typy i wystąpienia są sortowane według **całkowity rozmiar (w bajtach)**. Wybierz nagłówek kolumny na liście, aby zmienić kolejność sortowania.  
+  Domyślnie typy i wystąpienia są sortowane według **rozmiaru włącznie (w bajtach)** . Wybierz nagłówek kolumny na liście, aby zmienić kolejność sortowania.  
   
-#### <a name="paths-to-root"></a>Ścieżki do obiektu głównego  
+#### <a name="paths-to-root"></a>Ścieżki do katalogu głównego  
   
-- Dla typu wybrana w zaufanym **typu obiektu** tabeli **ścieżki do obiektu głównego** tabeli przedstawiono hierarchie typu unikatowego, które zachęcają do obiektów głównych dla wszystkich obiektów wraz z liczbą odwołania do typu Typ, który znajduje się nad nim w hierarchii.  
+- W przypadku typu wybranego z tabeli **typu obiektu** **ścieżki do tabeli głównej** przedstawiają unikatowe hierarchie typów, które prowadzą do obiektów głównych dla wszystkich obiektów typu, wraz z liczbą odwołań do typu znajdującego się powyżej w hierarchii.  
   
-- Dla obiektu wybranego w wystąpieniu typu **ścieżki do obiektu głównego** przedstawia wykres rzeczywistych obiektów, które zawierają odwołania do wystąpienia. Możesz umieścić kursor nazwę obiektu, aby wyświetlić jej wartości danych w oknie z poradami danych.  
+- Dla obiektu wybranego z wystąpienia typu, **ścieżki do katalogu głównego** pokazuje Graf rzeczywistych obiektów, które zawierają odwołanie do wystąpienia. Możesz umieścić kursor na nazwie obiektu, aby wyświetlić jego wartości danych w etykietce danych.  
   
-#### <a name="referenced-types--referenced-objects"></a>Przywoływane typy / przywoływane obiekty  
+#### <a name="referenced-types--referenced-objects"></a>Odwołania do typów/przywoływanych obiektów  
   
-- Dla typu wybrana w zaufanym **typu obiektu** tabeli **przywoływane typy** karta przedstawia rozmiaru i liczby dla wskazanych typów posiadanych przez wszystkich obiektów wybranego typu.  
+- Dla typu wybranego z tabeli **Typ obiektu** na karcie typy, do **których istnieją odwołania** , wyświetlany jest rozmiar i liczba przywoływanych typów, które są przechowywane przez wszystkie obiekty wybranego typu.  
   
-- Dla wybranego wystąpienia typu **przywoływane obiekty** zawiera obiekty, które są przechowywane w wybranym wystąpieniu. Możesz umieścić kursor nazwę aby wyświetlić jej wartości danych w oknie z poradami danych.  
+- W przypadku wybranego wystąpienia typu **obiekty, do których istnieją odwołania** , są wyświetlane obiekty, które są przechowywane w wybranym wystąpieniu. Możesz umieścić wskaźnik myszy nad nazwą, aby wyświetlić jej wartości danych w etykietce danych.  
   
   **Odwołania cykliczne**  
   
-  Drugi obiekt, który bezpośrednio lub pośrednio zawiera odwołanie do pierwszego obiektu można odwoływać się do obiektu. Analizator pamięci napotka tę sytuację, zatrzyma rozszerzanie ścieżki odwołania i dodaje **[wykryto cykl]** adnotację do tej listy pierwszego obiektu i zatrzymuje.  
+  Obiekt może odwoływać się do drugiego obiektu, który bezpośrednio lub pośrednio zawiera odwołanie do pierwszego obiektu. Gdy Analizator pamięci napotka tę sytuację, kończy rozszerzanie ścieżki odniesienia i dodaje adnotację **[wykryto cykl]** do listy pierwszego obiektu i kończy.  
   
-  **Typy głównego**  
+  **Typy główne**  
   
-  Analizator pamięci dodaje adnotacje do obiektów głównych, które opisuje typ odwołania, który jest zablokowany:  
+  Analizator pamięci dodaje adnotacje do obiektów głównych, które opisują rodzaj posiadanego odwołania:  
   
 |Adnotacja|Opis|  
 |----------------|-----------------|  
 |**Zmienna statyczna** `VariableName`|Zmienna statyczna. `VariableName` to nazwa zmiennej.|  
-|**Dojście finalizacji**|Odwołanie z; kolejka finalizatorów|  
+|**Uchwyt finalizacji**|Odwołanie z kolejki finalizatora|  
 |**Zmienna lokalna**|Zmienna lokalna.|  
-|**Silne dojście**|Dojście do silne odwołanie z tabeli uchwyt obiektu.|  
-|**Asynchroniczne. Przypięte dojście**|Asynchroniczny obiekt przypięte z tabelę uchwytów obiektu.|  
-|**Dojście zależne**|Obiekt zależny od tabeli uchwyt obiektu.|  
-|**Przypięte dojście**|Przypięte silne odwołanie z tabeli uchwyt obiektu.|  
-|**Dojście RefCount**|Obiekt zliczonych odwołań z tabeli uchwyt obiektu.|  
-|**Dojście SizedRef**|Silne dojście, który utrzymuje Przybliżony rozmiar zbiorowe zamknięcia wszystkich obiektów i korzenie obiektów w czasie kolekcji wyrzucania elementów.|  
-|**Przypięta zmienna lokalna**|Przypiętej zmiennej lokalnej.|  
+|**Silne dojście**|Dojście do silnego odwołania z tabeli uchwytów obiektów.|  
+|**Asynchroniczne. Przypięty uchwyt**|Asynchroniczny obiekt przypięty z tabeli uchwytów obiektu.|  
+|**Dojście zależne**|Obiekt zależny z tabeli uchwytów obiektów.|  
+|**Przypięty uchwyt**|Przypięte silne odwołanie z tabeli uchwytów obiektów.|  
+|**Dojście dojście Refcount**|Obiekt liczony jako odwołanie z tabeli uchwytów obiektów.|  
+|**Dojście dojście SizedRef**|Silne dojście, które utrzymuje przybliżony rozmiar całego rozłącznego zamykania wszystkich obiektów i katalogów głównych obiektów w czasie odzyskiwania pamięci.|  
+|**Przypięta zmienna lokalna**|Przypięta zmienna lokalna.|  
   
-### <a name="BKMK_Compare_two_memory_snapshots"></a> Porównanie dwóch migawek pamięci  
- Możesz porównać dwa pliki zrzutu procesu do znajdowania obiektów, które mogą być przyczyną przecieków pamięci. Interwał między zbiór pierwszy (wcześniej) i drugi plik (później) powinien być wystarczająco duży, że wzrost liczby obiektów ujawnione jest jasne, łatwo. Aby porównać dwa pliki:  
+### <a name="BKMK_Compare_two_memory_snapshots"></a>Porównanie dwóch migawek pamięci  
+ Można porównać dwa pliki zrzutu procesu, aby znaleźć obiekty, które mogą być przyczyną przecieków pamięci. Interwał między kolekcją pierwszego (wcześniejszego) i drugiego (nowszego) pliku powinien być wystarczająco duży, aby wzrost liczby przecieków obiektów był łatwo widoczny. Aby porównać te dwa pliki:  
   
-1. Otwieranie pliku zrzutu drugiej, a następnie wybierz **Debuguj pamięć zarządzaną** na **Podsumowanie pliku minizrzutu** strony.  
+1. Otwórz drugi plik zrzutu, a następnie wybierz polecenie **Debuguj pamięć zarządzaną** na stronie **podsumowania pliku minizrzutu** .  
   
-2. Na stronie raportu analizy pamięci, należy otworzyć **wybierz linii bazowej** , a następnie wybierz **Przeglądaj** Aby określić pierwszy plik zrzutu.  
+2. Na stronie Raport analizy pamięci Otwórz listę **Wybierz linię bazową** , a następnie wybierz pozycję **Przeglądaj** , aby określić pierwszy plik zrzutu.  
   
-   Analizator dodaje kolumn do górnego okienka raportu, wyświetlające różnica między **liczba**, **rozmiar**, i **rozmiarze włącznie** typów do tych wartości w wcześniej migawkę.  
+   Analizator dodaje kolumny do górnego okienka raportu, w którym jest wyświetlana różnica między **liczbą**, **rozmiarem**i **rozmiarem włącznie** typów do tych wartości we wcześniejszej migawce.  
   
-   ![Diff kolumn na liście typów](../misc/media/mngdmem-diffcolumns.png "MNGDMEM_DiffColumns")  
+   ![Kolumny różnic na liście typów](../misc/media/mngdmem-diffcolumns.png "MNGDMEM_DiffColumns")  
   
-   A **różnicy licznika odwołań** kolumny jest także dodawane do **ścieżki do obiektu głównego** tabeli.  
+   Kolumna **różnic w liczbie odwołań** jest również dodawana do tabeli **głównej** .  
   
-   ![Powrót do początku](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [zawartość](#BKMK_Contents)  
+   ![Z powrotem do najwyższej](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [zawartości](#BKMK_Contents)  
   
 ## <a name="see-also"></a>Zobacz też  
- [Blog dotyczący programu VS ALM w programie TFS: Za pomocą programu Visual Studio 2013 do diagnozowania problemów z pamięcią .NET w środowisku produkcyjnym](http://blogs.msdn.com/b/visualstudioalm/archive/2013/06/20/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production.aspx)   
- [Channel 9 &#124; Visual Studio TV &#124; Managed Memory Analysis](http://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Managed-Memory-Analysis)   
- [Channel 9 &#124; Visual Studio Toolbox &#124; Managed Memory Analysis in Visual Studio 2013](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Managed-Memory-Analysis-in-Visual-Studio-2013)
+ [Blog programu VS ALM TFS: używanie Visual Studio 2013 do diagnozowania problemów z pamięcią .NET w środowisku produkcyjnym](https://devblogs.microsoft.com/devops/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production/)   
+ [Analiza pamięci &#124; zarządzanego programu Visual &#124; Studio TV w kanale 9](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Managed-Memory-Analysis)   
+ [Analiza pamięci &#124; zarządzanego zestawu narzędzi &#124; kanału 9 programu Visual Studio w Visual Studio 2013](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Managed-Memory-Analysis-in-Visual-Studio-2013)

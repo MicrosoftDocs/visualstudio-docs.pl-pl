@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e6084daea11d981477bbee6f210e1faf718b58d8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ded65e85a2ae11e96c21fdd852ea12daa4bbcdf4
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646923"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299984"
 ---
 # <a name="step-8-customize-the-quiz"></a>Krok 8: Dostosowywanie kwizu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,8 +28,6 @@ W ostatniej części samouczka zapoznajesz się z innymi sposobami dostosowywani
 - Nadaj quizowi wskazówkę, odtwarzając dźwięk, gdy prawidłowa odpowiedź zostanie wprowadzona do formantu NumericUpDown. (Należy napisać procedurę obsługi zdarzeń dla każdego zdarzenia `ValueChanged()` kontrolki, które jest wyzwalane za każdym razem, gdy osoba zażąda zmiany wartości kontrolki.)
 
 ### <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
-
-- Aby pobrać kompletną wersję quizu, zobacz [kompletny przykładowy samouczek quizu Matematycznego](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 - Aby przejść do następnego samouczka, zobacz [samouczek 3: Tworzenie gry w dopasowywanie](../ide/tutorial-3-create-a-matching-game.md).
 

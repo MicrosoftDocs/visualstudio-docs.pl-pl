@@ -1,5 +1,5 @@
 ---
-title: 'DA0022: Duża częstotliwość odzyskiwania pamięci Gen 2 | Dokumentacja firmy Microsoft'
+title: 'DA0022: wysoka szybkość wyrzucania elementów bezużytecznych generacji 2 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,41 +13,41 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 820d74a9dced29dc237c4bf182419abcb7d503b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 067544e6b97e2709ed217ae0232771e833800e52
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68194922"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300118"
 ---
-# <a name="da0022-high-rate-of-gen-2-garbage-collections"></a>DA0022: Duża częstotliwość odzyskiwania pamięci 2. generacji
+# <a name="da0022-high-rate-of-gen-2-garbage-collections"></a>DA0022: Wysoki stopień wyrzucania elementów bezużytecznych Gen 2
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Identyfikator reguły | DA0022 |  
 |Category|.NET Framework Usage|  
 | Metoda profilowania | Wszystkie |  
-| Komunikat | Istnieje stosunkowo wysoki stopień Gen 2 wyrzucania elementów bezużytecznych występuje. Jeśli zgodnie z projektem, większość struktur danych programu są przydzielane i utrwalane na dłuższy czas, to nie jest zazwyczaj problem. Jednak w przypadku niezamierzonego to zachowanie aplikacji może być przypinanie obiektów. Jeśli nie masz pewności, można gromadzić .NET pamięć alokacji danych i obiekt informacji o czasie życia poznać wzorce przydzielania pamięci, które Twoja aplikacja używa. |  
+| Komunikat | Występuje dość duża liczba wyrzucania elementów bezużytecznych generacji 2. W przypadku, gdy konstrukcja większość struktur danych programu jest alokowana i utrwalana przez dłuższy czas, nie jest to problem. Jeśli jednak takie zachowanie jest niezamierzone, aplikacja może przypinać obiekty. Jeśli nie masz pewności, możesz zebrać dane alokacji pamięci .NET i informacje o okresie istnienia obiektu, aby zrozumieć wzorzec alokacji pamięci używanej przez aplikację. |  
 | Typ reguły | Ostrzeżenie |  
   
- Podczas profilowania za pomocą próbkowania pamięci platformy .NET i metod rywalizacji zasobów musi zebrać co najmniej 10 próbek do wyzwolenia tej reguły.  
+ Podczas profilowania przy użyciu metod pobierania próbek, pamięci .NET lub rywalizacji o zasoby należy zebrać co najmniej 10 próbek, aby wyzwolić tę regułę.  
   
 ## <a name="cause"></a>Przyczyna  
- Dane o wydajności systemu, które zostały zebrane podczas profilowania wskazuje, że znaczna część obiekty struktury for.NET pamięci zostało odzyskane w generacji 2, wyrzucanie elementów bezużytecznych w porównaniu do generacji 0 i 1 wyrzucania generacji.  
+ Dane wydajności systemu, które zostały zebrane podczas profilowania wskazują, że znacząca część obiektów for.NET pamięci programu Memory została odbrana w ramach generacji 2 wyrzucania elementów bezużytecznych w porównaniu do generacji 0 i wyrzucania elementów bezużytecznych generacji 1.  
   
 ## <a name="rule-description"></a>Opis reguły  
- Microsoft .NET wspólnego języka środowiska wykonawczego (języka wspólnego CLR) zapewnia mechanizm zarządzania pamięcią automatyczną, który używa modułu odśmiecania pamięci, aby odzyskać pamięci z obiektów, które aplikacja już używa. Moduł odśmiecania pamięci jest zorientowana na generowanie na podstawie założenia, że wiele alokacje są krótkotrwałe. Na przykład, zmienne lokalne, powinny być krótkotrwały. Nowo utworzonych obiektach Uruchom w generacji 0 (gen 0), a następnie przejść do generacji 1, po ich przetrwać wyrzucania elementów bezużytecznych, uruchom, a na koniec przejścia do generacji 2, jeśli aplikacja nadal korzysta z nich.  
+ Microsoft .NET Common Language Time (CLR) zapewnia automatyczny mechanizm zarządzania pamięcią, który używa modułu wyrzucania elementów bezużytecznych do odzyskiwania pamięci z obiektów, które nie są już używane przez aplikację. Moduł wyrzucania elementów bezużytecznych jest oparty na generacji, w oparciu o założenie, że wiele alokacji jest krótkoterminowych. Zmienne lokalne, na przykład, powinny być krótkotrwałe. Nowo utworzone obiekty rozpoczynają się w generacji 0 (Gen 0), a następnie postępować w generacji 1, gdy zajmują się uruchomieniem odzyskiwania pamięci, a wreszcie przechodzą do generacji 2, jeśli aplikacja nadal używa tych danych.  
   
- Obiekty w generacji 0 są zbierane, często i zazwyczaj bardzo wydajny sposób. Obiekty w generacji 1 są zbierane rzadziej i mniej skuteczne. Na koniec długotrwałe obiekty w generacji 2 powinny być zbierane nawet rzadziej. Kolekcji generacji 2, która znajduje się pełne wyrzucanie elementów bezużytecznych, uruchamianie, jest również najbardziej kosztowną operacją.  
+ Obiekty w generacji 0 są zbierane często i zwykle bardzo wydajnie. Obiekty w generacji 1 są zbierane rzadziej i mniej wydajne. Na koniec obiekty długotrwałe w generacji 2 powinny być zbierane nawet rzadziej. Kolekcja 2 generacji, która jest pełnym przebiegiem odzyskiwania pamięci, jest również najtańszą operacją.  
   
- Ta reguła jest uruchamiana podczas proporcjonalnie za dużo występują 2 wyrzucania elementów bezużytecznych generacji. Dobrze działające aplikacje programu .NET Framework ma więcej niż 5 razy więcej generacji 1 wyrzucania elementów bezużytecznych, jak kolekcje geenracji 2. (Prawdopodobnie idealnym rozwiązaniem jest współczynnik 10 x).  
+ Ta reguła jest wyzwalana, gdy występuje zbyt wiele wyrzucania elementów bezużytecznych generacji 2. Dobrze działające .NET Framework aplikacje będą mieć więcej niż 5 razy więcej niż raz w przypadku kolekcji generacji 2. (Współczynnik 10X jest prawdopodobnie idealny).  
   
-## <a name="how-to-investigate-a-warning"></a>Jak badać ostrzeżenie  
- Kliknij dwukrotnie komunikat w oknie Lista błędów, aby przejść do [widoku znaczniki](../profiling/marks-view.md) danych profilowania. Znajdź **pamięć .NET CLR\\# pokolenia 0** i **pamięć .NET CLR\\# zbierania obiektów pokolenia 1** kolumn. Określa, czy określone faz wykonywania programu gdzie wyrzucania elementów bezużytecznych występuje częściej. Porównanie tych wartości, aby **czas działania modułu GC (%)** kolumny, aby zobaczyć, jeśli wzorzec alokacje pamięci zarządzanej powoduje narzutu związanego z zarządzaniem zbyt dużej ilości pamięci.  
+## <a name="how-to-investigate-a-warning"></a>Jak zbadać ostrzeżenie  
+ Kliknij dwukrotnie komunikat w oknie Lista błędów, aby przejść do [widoku znaczniki](../profiling/marks-view.md) danych profilowania. Znajdź **pamięć środowiska .NET clr\\liczba kolekcji gen 0** i\\liczba kolumn **kolekcji generacji 1 środowiska CLR** . Ustal, czy istnieją konkretne etapy wykonywania programu, w których wyrzucanie elementów bezużytecznych występuje częściej. Porównaj te wartości w kolumnie **% Time w usłudze GC** , aby sprawdzić, czy wzorzec alokacji pamięci zarządzanej powoduje nadmierne obciążenie zarządzania pamięcią.  
   
- Dużą część 2. generacji wyrzucania elementów bezużytecznych nie zawsze jest problemem. Może to być zgodne z projektem. Aplikacja, która przydziela struktury dużych ilości danych, które muszą pozostać aktywne przez długi czas podczas wykonywania może wywołać tę regułę. Po takiej aplikacji występuje duże wykorzystanie pamięci, mogą być zmuszeni do wykonywania częstych wyrzucania elementów bezużytecznych. Jeśli mniej kosztowne generacji 0 i 1 generacji wyrzucania elementów bezużytecznych może odzyskać pamięci małą ilością zarządzane, zostanie zaplanowane częściej bezużytecznych generacji 2.  
+ W przypadku dużej części wyrzucania elementów bezużytecznych generacji 2 nie zawsze występuje problem. Może być zaprojektowana. Aplikacja, która alokuje duże struktury danych, które muszą pozostawać aktywne przez długie okresy podczas wykonywania, może wyzwolić tę regułę. Gdy taka aplikacja korzysta z pamięci, może być wymuszone wykonywanie częstych wyrzucania elementów bezużytecznych. Jeśli wyrzucanie elementów bezużytecznych generacji 0 i generacja 1 może odistnieć tylko niewielką ilość pamięci zarządzanej, planowane jest przetworzenie częściowej generacji 2 wyrzucania elementów bezużytecznych.  
   
- Istnieją dodatkowe kolumny pamięć .NET CLR w widoku znaczniki, które mogą pomóc w identyfikowaniu problemów kolekcji wyrzucania elementów. **Czas działania modułu GC (%)** kolumny pomaga zrozumieć, występuje narzutu związanego z zarządzaniem ilości pamięci. Jeśli aplikacja używa zwykle stosunkowo niewielkiej liczby dużych, ale trwałe obiekty, następnie częste kolekcji generacji 2 nie może przekroczyć nadmiernej ilości czasu procesora CPU. Jeśli aplikacja jest duże wykorzystanie pamięci, ponieważ więcej pamięci fizycznej (RAM) jest wymagane, powiązane reguły, które oceny **Pamięć\Strony/s** wartości w kolumnie mogą również wyzwalać.  
+ W widoku znaczniki znajdują się dodatkowe kolumny pamięci CLR platformy .NET, które mogą pomóc identyfikować problemy z wyrzucaniem elementów bezużytecznych. **Czas (%) w kolumnie GC** pomaga zrozumieć, ile miejsca jest związane z zarządzaniem pamięcią. Jeśli aplikacja zwykle używa dość małej liczby dużych, ale trwałych obiektów, to częste kolekcje 2 generacji nie powinny zużywać nadmiernych ilości czasu procesora CPU. Jeśli aplikacja działa w pamięci, ponieważ jest wymagana większa ilość pamięci fizycznej (RAM), powiązane reguły, które ocenią wartości kolumny **pamięć \ strony/s** , mogą również być uruchamiane.  
   
- Aby poznać wzorzec użycia pamięci zarządzanej aplikacji, będzie ponownie działać profilu alokacji pamięci obfuskatorem profilu, a następnie wybierz profilowania opcję okres istnienia obiektu.  
+ Aby zrozumieć wzorzec zastosowania pamięci zarządzanej, należy go ponownie uruchomić przy użyciu profilu alokacji pamięci a.NET i wybrać opcję profilowania okresu istnienia obiektu.  
   
- Aby dowiedzieć się, jak poprawić wydajność odzyskiwania pamięci zbierania danych, zobacz [podstawy modułu odśmiecania pamięci i wskazówki dotyczące wydajności](http://go.microsoft.com/fwlink/?LinkId=148226) w witrynie sieci Web firmy Microsoft. Aby uzyskać informacje na temat obciążenie automatyczne wyrzucanie elementów bezużytecznych, zobacz [duży obiekt sterty Niepokryty](http://go.microsoft.com/fwlink/?LinkId=177836).
+ Aby uzyskać informacje na temat zwiększania wydajności odzyskiwania pamięci, zobacz [podstawy modułu zbierającego elementy bezużyteczne i wskazówki dotyczące wydajności](https://go.microsoft.com/fwlink/?LinkId=148226) w witrynie sieci Web firmy Microsoft. Aby uzyskać informacje o obciążeniu automatycznego odzyskiwania pamięci, zapoznaj się z [pokrytym stertą dużego obiektu](https://go.microsoft.com/fwlink/?LinkId=177836).

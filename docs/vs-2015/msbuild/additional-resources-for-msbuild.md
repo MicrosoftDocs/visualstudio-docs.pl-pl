@@ -1,5 +1,5 @@
 ---
-title: Dodatkowe zasoby narzędzia MSBuild | Dokumentacja firmy Microsoft
+title: Dodatkowe zasoby dla programu MSBuild | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -16,31 +16,31 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4ea89855a83cdf01255cacc7c8c639c6fcfe1cc4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1d82531bcde6e0a03485ac6bf77965b5c5744f23
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68187066"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300440"
 ---
 # <a name="additional-resources-for-msbuild"></a>Dodatkowe zasoby narzędzia MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Następujące witryny sieci Web i forów mogą pomóc w znalezieniu odpowiedzi na często zadawane pytania podczas pracy z [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
+Poniższe witryny sieci Web i fora mogą pomóc w znalezieniu odpowiedzi na często zadawane pytania podczas pracy z [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
 ## <a name="microsoft-resources"></a>Zasoby firmy Microsoft  
   
 ### <a name="on-the-web"></a>W sieci Web  
- [Witryny sieci Web programu MSBuild Channel 9](http://go.microsoft.com/fwlink/?LinkId=243092)  
- Zawiera informacje dotyczące [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] i łącza do innych [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] witryn w sieci Web.  
+ [Witryna sieci Web programu MSBuild Channel 9](https://go.microsoft.com/fwlink/?LinkId=243092)  
+ Zawiera informacje na temat [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] i linki do innych witryn [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] w sieci Web.  
   
- [Blog zespołu programu MSBuild](http://go.microsoft.com/fwlink/?LinkId=65846)  
- Zawiera informacje, łącza i aktualizacji zapisywanych przez [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] zespół pracujący nad produktem.  
+ [Blog zespołu programu MSBuild](https://go.microsoft.com/fwlink/?LinkId=65846)  
+ Zawiera informacje, linki i aktualizacje zapisywane przez zespół produktu [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
- [Visual Studio MSBuild Forum](http://go.microsoft.com/fwlink/?LinkId=48931)  
- Forum społeczności dedykowane [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
+ [Visual Studio MSBuild Forum](https://go.microsoft.com/fwlink/?LinkId=48931)  
+ Forum społeczności przeznaczone do [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
 ## <a name="see-also"></a>Zobacz też  
- [Program MSBuild](msbuild.md)   
+   [MSBuild](msbuild.md)  
  [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)   
  [Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)
