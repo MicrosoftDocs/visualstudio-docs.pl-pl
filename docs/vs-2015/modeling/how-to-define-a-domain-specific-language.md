@@ -18,28 +18,28 @@ caps.latest.revision: 45
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bf25f5e0239eafd5594c38f7f3701114558b55cc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b4bcd1f1f023c9e439fb870c9e31f07aa5be215d
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671684"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299553"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Porady: definiowanie języka właściwego dla domeny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Aby zdefiniować język specyficzny dla domeny (DSL), należy utworzyć rozwiązanie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] na podstawie szablonu. Kluczową częścią rozwiązania jest diagram definicji DSL, który jest przechowywany w DslDefinition. DSL. Definicja DSL definiuje klasy i kształty DSL. Po zmodyfikowaniu i dodaniu tych elementów możesz dodać kod programu, aby dostosować DSL w bardziej szczegółowy sposób.
 
- Jeśli dopiero zaczynasz korzystać z programu językami DSL, zalecamy przechodzenie przez **laboratorium narzędzi DSL**, które można znaleźć w tej witrynie: [Visualizaton i Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
+ Jeśli dopiero zaczynasz korzystać z programu językami DSL, zalecamy przechodzenie przez **laboratorium narzędzi DSL**, które można znaleźć w tej witrynie: [Visualizaton i Modeling SDK](https://go.microsoft.com/fwlink/?LinkID=186128)
 
 ## <a name="templates"></a>Wybieranie rozwiązania szablonu
- Aby zdefiniować DSL, należy zainstalować następujące składniki:
+ Aby zdefiniować DSL, musisz mieć zainstalowane następujące składniki:
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|
-|Visual Studio Wizualizacja i Modeling SDK|[http://go.microsoft.com/fwlink/?LinkID=186128](http://go.microsoft.com/fwlink/?LinkID=186128)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://go.microsoft.com/fwlink/?LinkId=185579)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://go.microsoft.com/fwlink/?LinkId=185580)|
+|Visual Studio Visualisation i Modeling SDK|[http://go.microsoft.com/fwlink/?LinkID=186128](https://go.microsoft.com/fwlink/?LinkID=186128)|
 
  Aby utworzyć nowy język specyficzny dla domeny, należy utworzyć nowe rozwiązanie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] przy użyciu szablonu projektu języka specyficznego dla domeny.
 
@@ -105,7 +105,7 @@ Aby zdefiniować język specyficzny dla domeny (DSL), należy utworzyć rozwiąz
 
  Eksperymentuj z narzędziami. Utwórz elementy i połącz je.
 
- Zamknij eksperymentalne wystąpienie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+ Zamknij wystąpienie doświadczalne programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
 > [!NOTE]
 > Po zmodyfikowaniu DSL nie będzie już można zobaczyć kształtów w przykładowym pliku testowym. Jednak będzie można tworzyć nowe elementy.
@@ -170,7 +170,7 @@ Aby zdefiniować język specyficzny dla domeny (DSL), należy utworzyć rozwiąz
 
 |Sposób wyświetlania elementu|Klasa nadrzędna (osadzania)|Przykład w szablonie rozwiązania DSL|
 |------------------------------|--------------------------------|--------------------------------------|
-|Kształt na diagramie.<br /><br /> Toru.|Klasa główna DSL.|Minimalny język.<br /><br /> Przepływ zadań: Klasa aktora.|
+|Kształt na diagramie.<br /><br /> Swimlane.|Klasa główna DSL.|Minimalny język.<br /><br /> Przepływ zadań: Klasa aktora.|
 |Kształt w tor.|Klasa domeny elementów, które są wyświetlane jako ścieżki.|Przepływ zadań: Klasa zadań.|
 |Element na liście w kształcie, gdzie element jest usuwany po usunięciu kontenera.<br /><br /> Port na krawędzi kształtu.|Klasa domeny, która jest mapowana na kształt kontenera.|Diagram klas: Klasa atrybutu.<br /><br /> Diagram składników: Klasa portu.|
 |Element na liście, nie został usunięty, jeśli kontener został usunięty.|Klasa główna DSL.<br /><br /> Na liście są wyświetlane linki odwołań.||
@@ -216,7 +216,7 @@ Aby zdefiniować język specyficzny dla domeny (DSL), należy utworzyć rozwiąz
 
 1. **Kliknij pozycję Przekształć wszystkie szablony** na pasku narzędzi Eksplorator rozwiązań, aby wygenerować kod projektanta DSL. Możesz zautomatyzować ten krok. Aby uzyskać więcej informacji, zobacz [jak zautomatyzować transformację wszystkie szablony](https://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).
 
-2. **Kompiluj i uruchamiaj DSL.** Naciśnij klawisz F5 lub CTRL + F5, aby uruchomić nowe wystąpienie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] w trybie eksperymentalnym. W eksperymentalnym wystąpieniu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Otwórz lub Utwórz plik, który ma rozszerzenie nazwy pliku DSL.
+2. **Kompiluj i uruchamiaj DSL.** Naciśnij klawisz F5 lub CTRL + F5, aby uruchomić nowe wystąpienie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] w trybie eksperymentalnym. W eksperymentalnym wystąpieniu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]Otwórz lub Utwórz plik, który ma rozszerzenie nazwy pliku DSL.
 
 3. **Otwórz Eksploratora.** Po stronie diagramu jest oknem Eksploratora języka, które jest zwykle nazywane *YourLanguage* Explorer. Jeśli to okno nie jest widoczne, może ono znajdować się na karcie poniżej Eksplorator rozwiązań. Jeśli nie można go znaleźć, w menu **Widok** wskaż polecenie **inne okna**, a następnie kliknij pozycję Eksplorator _YourLanguage_.
 
@@ -314,7 +314,7 @@ Aby zdefiniować język specyficzny dla domeny (DSL), należy utworzyć rozwiąz
 
 1. **Kliknij pozycję Przekształć wszystkie szablony** na pasku narzędzi Eksplorator rozwiązań, aby wygenerować kod projektanta DSL.
 
-2. **Kompiluj i uruchamiaj DSL.** Naciśnij klawisz F5 lub CTRL + F5, aby uruchomić nowe wystąpienie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] w trybie eksperymentalnym. W eksperymentalnym wystąpieniu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Otwórz lub Utwórz plik, który ma rozszerzenie nazwy pliku DSL.
+2. **Kompiluj i uruchamiaj DSL.** Naciśnij klawisz F5 lub CTRL + F5, aby uruchomić nowe wystąpienie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] w trybie eksperymentalnym. W eksperymentalnym wystąpieniu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]Otwórz lub Utwórz plik, który ma rozszerzenie nazwy pliku DSL.
 
 3. **Sprawdź, czy narzędzia elementów są widoczne w przyborniku.**
 
@@ -390,7 +390,7 @@ Aby zdefiniować język specyficzny dla domeny (DSL), należy utworzyć rozwiąz
 
 1. **Kliknij pozycję Przekształć wszystkie szablony** na pasku narzędzi Eksplorator rozwiązań, aby wygenerować kod projektanta DSL.
 
-2. **Kompiluj i uruchamiaj DSL.** Naciśnij klawisz F5 lub CTRL + F5, aby uruchomić nowe wystąpienie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] w trybie eksperymentalnym. W eksperymentalnym wystąpieniu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Otwórz lub Utwórz plik, który ma rozszerzenie nazwy pliku DSL.
+2. **Kompiluj i uruchamiaj DSL.** Naciśnij klawisz F5 lub CTRL + F5, aby uruchomić nowe wystąpienie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] w trybie eksperymentalnym. W eksperymentalnym wystąpieniu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]Otwórz lub Utwórz plik, który ma rozszerzenie nazwy pliku DSL.
 
 3. **Sprawdź, czy narzędzie połączenia jest wyświetlane w przyborniku.**
 
@@ -491,7 +491,7 @@ Aby zdefiniować język specyficzny dla domeny (DSL), należy utworzyć rozwiąz
 
 1. **Kliknij pozycję Przekształć wszystkie szablony** na pasku narzędzi Eksplorator rozwiązań, aby wygenerować kod projektanta DSL.
 
-2. **Kompiluj i uruchamiaj DSL.** Naciśnij klawisz F5 lub CTRL + F5, aby uruchomić nowe wystąpienie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] w trybie eksperymentalnym. W eksperymentalnym wystąpieniu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Otwórz lub Utwórz plik, który ma rozszerzenie nazwy pliku DSL.
+2. **Kompiluj i uruchamiaj DSL.** Naciśnij klawisz F5 lub CTRL + F5, aby uruchomić nowe wystąpienie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] w trybie eksperymentalnym. W eksperymentalnym wystąpieniu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]Otwórz lub Utwórz plik, który ma rozszerzenie nazwy pliku DSL.
 
 3. **Sprawdź, czy narzędzie jest wyświetlane w przyborniku.**
 
@@ -609,9 +609,9 @@ Aby zdefiniować język specyficzny dla domeny (DSL), należy utworzyć rozwiąz
  Zobacz również [: zmienianie przestrzeni nazw języka specyficznego dla domeny](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).
 
 ## <a name="trouble"></a>Rozwiązywanie problemów z
- W poniższej tabeli wymieniono najbardziej typowe problemy, które można napotkać podczas projektowania DSL, wraz z sugestiami dotyczącymi rozwiązania. Więcej porad można znaleźć na [forum narzędzi wizualizacji Extensibililty](http://go.microsoft.com/fwlink/?LinkId=186074).
+ W poniższej tabeli wymieniono najbardziej typowe problemy, które można napotkać podczas projektowania DSL, wraz z sugestiami dotyczącymi rozwiązania. Więcej porad można znaleźć na [forum narzędzi wizualizacji Extensibililty](https://go.microsoft.com/fwlink/?LinkId=186074).
 
-|Związane|Sugestia|
+|Problem|Sugestia|
 |-------------|----------------|
 |Zmiany wprowadzone w pliku definicji DSL nie mają żadnego wpływu.|Kliknij pozycję **Przekształć wszystkie szablony** na pasku narzędzi powyżej Eksplorator rozwiązań, a następnie Skompiluj ponownie rozwiązanie.|
 |Kształty zawierają nazwę dekoratora zamiast wartości właściwości.|Skonfiguruj mapowanie dekoratora. Na diagramie definicji DSL kliknij mapę elementu diagramu, która jest szarą linią między klasą domeny a klasą Shape.<br /><br /> Otwórz okno **Szczegóły DSL** . Jeśli nie widzisz go, w menu Widok wskaż polecenie **inne okna**, a następnie kliknij pozycję **Szczegóły DSL**.<br /><br /> Kliknij kartę **mapy dekoratora** . Wybierz nazwę dekoratora. Upewnij się, że pole obok niego jest zaznaczone. W obszarze **Właściwość wyświetlania**wybierz nazwę właściwości domeny.<br /><br /> Aby uzyskać więcej informacji, zobacz [kształty na diagramie](#shapes).|

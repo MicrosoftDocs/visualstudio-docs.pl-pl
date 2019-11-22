@@ -1,5 +1,5 @@
 ---
-title: 'Przewodnik: Programowe przechwytywanie informacji graficznych | Dokumentacja firmy Microsoft'
+title: 'Przewodnik: programowe Przechwytywanie informacji graficznych | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,46 +9,46 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1eaa3547733432715c5362b20030fe3d4a886900
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 54097420fd212ec9057f4a968e2c6d5de199e56e
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444331"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296904"
 ---
-# <a name="walkthrough-capturing-graphics-information-programmatically"></a>Przewodnik: programowe przechwytywanie informacji graficznych
+# <a name="walkthrough-capturing-graphics-information-programmatically"></a>Wskazówki: programowe przechwytywanie informacji graficznych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Możesz użyć [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] diagnostyki grafiki, aby programowo przechwytywać informacje graficzne z aplikacji Direct3D.  
+Możesz użyć Diagnostyka grafiki [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], aby programowo przechwycić informacje graficzne z aplikacji Direct3D.  
   
  Przechwytywanie programistyczne jest przydatne w scenariuszach takich jak:  
   
-- Po grafiki nie korzysta z swapchain obecny, takie jak po renderowaniu produktu do tekstury programowo rozpocząć przechwytywania.  
+- Zacznij przechwycić program programowo, gdy aplikacja graficzna nie używa swapchain, na przykład podczas renderowania do tekstury.  
   
-- Po aplikacji nie renderuje, takie jak kiedy używa DirectCompute do wykonywania obliczeń programistycznie rozpocząć przechwytywania.  
+- Rozpocznij przechwytywanie programowo, gdy aplikacja nie jest w ogóle renderowana, na przykład gdy używa DirectCompute do wykonywania obliczeń.  
   
-- Wywołaj `CaptureCurrentFrame`po z problemem renderowania jest trudny do przewidywania i przechwytywania podczas testowania ręcznego, ale można przewidzieć programowo przy użyciu informacji o stanie aplikacji w czasie wykonywania.  
+- Wywołaj `CaptureCurrentFrame`, gdy problem z renderowaniem jest trudny do przewidzenia i przechwycenia w testowaniu ręcznym, ale można go przewidzieć programowo przy użyciu informacji o stanie aplikacji w czasie wykonywania.  
   
-## <a name="CaptureDX11_2"></a> Przechwytywanie programistyczne w Windows 8.1  
- Tej części instruktażu pokazano Przechwytywanie programistyczne w aplikacjach korzystających z interfejsu API programu DirectX 11.2 na Windows 8.1, która używa metody przechwytywania niezawodne. Aby uzyskać informacje o sposobie używania Przechwytywanie programistyczne w aplikacjach korzystających z wcześniejszych wersji programu DirectX na Windows 8.0, zobacz [Przechwytywanie programistyczne w Windows 8.0 i starszych](#CaptureDX11_1) później w tym przewodniku.  
+## <a name="CaptureDX11_2"></a>Przechwycenie programowe w Windows 8.1  
+ W tej części przewodnika przedstawiono funkcję przechwytywania programowego w aplikacjach korzystających z interfejsu API DirectX 11,2 na Windows 8.1, który korzysta z niezawodnej metody przechwytywania. Informacje o sposobach używania funkcji przechwytywania programowego w aplikacjach korzystających z wcześniejszych wersji programu DirectX w systemie Windows 8,0 znajdują się w temacie programowe [przechwytywanie w systemie windows 8,0 i wcześniejszym](#CaptureDX11_1) w dalszej części tego przewodnika.  
   
- W tej sekcji przedstawiono sposób wykonywania tych zadań:  
+ W tej sekcji przedstawiono sposób wykonywania następujących zadań:  
   
-- Przygotowywanie aplikacji do użycia przechwycenie programowe  
+- Przygotowywanie aplikacji do korzystania z funkcji przechwytywania programistycznego  
   
 - Pobieranie interfejsu IDXGraphicsAnalysis  
   
 - Przechwytywanie informacji graficznych  
   
 > [!NOTE]
-> Poprzednich implementacjach funkcji Przechwytywanie programistyczne polegać Remote Tools for [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] umożliwiają korzystanie z funkcji przechwytywania, Windows 8.1 obsługuje przechwytywanie bezpośrednio za pomocą Direct3D 11.2. W rezultacie masz już zainstalował Remote Tools for Przechwytywanie programistyczne na Windows 8.1.  
+> Poprzednie implementacje funkcji przechwytywania programistycznego korzystające z zdalnych narzędzi do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] w celu zapewnienia funkcji przechwytywania Windows 8.1 obsługują przechwytywanie bezpośrednio za poorednictwem programu Direct3D 11,2. W związku z tym nie trzeba już instalować zdalnych narzędzi do przechwytywania programowego na Windows 8.1.  
   
-### <a name="preparing-your-app-to-use-programmatic-capture"></a>Przygotowywanie aplikacji do użycia przechwycenie programowe  
- Aby użyć Przechwytywanie programistyczne w swojej aplikacji, musi on zawierać niezbędne nagłówki. Tych nagłówków są częścią zestawu SDK Windows 8.1.  
+### <a name="preparing-your-app-to-use-programmatic-capture"></a>Przygotowywanie aplikacji do korzystania z funkcji przechwytywania programistycznego  
+ Aby użyć funkcji przechwytywania programistycznego w aplikacji, musi ona zawierać niezbędne nagłówki. Te nagłówki są częścią zestawu SDK Windows 8.1.  
   
-##### <a name="to-include-programmatic-capture-headers"></a>Aby uwzględnić nagłówki przechwycenie programowe  
+##### <a name="to-include-programmatic-capture-headers"></a>Aby dołączyć nagłówki przechwytywania programistycznego  
   
-- Obejmują tych nagłówków w pliku źródłowym, w którym będą definiować interfejsu IDXGraphicsAnalysis:  
+- Dołącz te nagłówki do pliku źródłowego, w którym określisz interfejs IDXGraphicsAnalysis:  
   
     ```  
     #include <DXGItype.h>  
@@ -58,17 +58,17 @@ Możesz użyć [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] diagnostyki grafiki,
     ```  
   
     > [!IMPORTANT]
-    > Nie dołączaj nagłówka pliku vsgcapture.h—which obsługuje przechwytywanie programistyczne w Windows 8.0 i wcześniej — przeprowadzić Przechwytywanie programistyczne w aplikacjach Windows 8.1. Tego pliku nagłówkowego jest niezgodna z DirectX 11.2. Jeśli ten plik jest po nagłówku d3d11_2.h jest dołączony, kompilator generuje ostrzeżenie. Jeśli vsgcapture.h znajduje się przed d3d11_2.h, aplikacja nie zostanie uruchomiona.  
+    > Nie dołączaj pliku nagłówkowego vsgcapture. h — który obsługuje funkcję przechwytywania programowego w systemie Windows 8,0 i starszych wersjach, aby przeprowadzić funkcję przechwytywania programistycznego w aplikacjach Windows 8.1. Ten nagłówek jest niezgodny z DirectX 11,2. Jeśli ten plik zostanie uwzględniony po dołączeniu nagłówka d3d11_2. h, kompilator generuje ostrzeżenie. Jeśli vsgcapture. h jest dołączony przed d3d11_2. h, aplikacja nie zostanie uruchomiona.  
   
     > [!NOTE]
-    > Jeśli czerwca 2010 DirectX SDK jest zainstalowany na komputerze i zawiera ścieżki dołączania projektu `%DXSDK_DIR%includex86`, przenieś go do końca ścieżki include. Zrób to samo dla Twojej ścieżki biblioteki.  
+    > Jeśli na maszynie jest zainstalowany zestaw SDK programu DirectX 2010 dla czerwca, a ścieżka dołączania projektu zawiera `%DXSDK_DIR%includex86`, przenieś ją na koniec ścieżki dołączania. Wykonaj te same czynności dla ścieżki biblioteki.  
   
 #### <a name="windows-phone-81"></a>Windows Phone 8,1  
- Ponieważ zestaw Windows Phone 8.1 SDK nie zawiera nagłówka DXProgrammableCapture.h, musisz zdefiniować `IDXGraphicsAnalysis` interfejs samodzielnie, tak aby można było używać `BeginCapture()` i `EndCapture()` metody. Obejmują innych nagłówków, zgodnie z opisem w poprzedniej sekcji.  
+ Ponieważ zestaw Windows Phone 8,1 SDK nie zawiera nagłówka DXProgrammableCapture. h, należy najpierw zdefiniować interfejs `IDXGraphicsAnalysis`, aby można było użyć metod `BeginCapture()` i `EndCapture()`. Dołącz inne nagłówki zgodnie z opisem w poprzedniej sekcji.  
   
 ###### <a name="to-define-the-idxgraphicsanalysis-interface"></a>Aby zdefiniować interfejs IDXGraphicsAnalysis  
   
-- Zdefiniuj interfejs IDXGraphicsAnalysis, w tym samym pliku, w której są uwzględniane pliki nagłówkowe.  
+- Zdefiniuj interfejs IDXGraphicsAnalysis w tym samym pliku, w którym znajdują się pliki nagłówkowe.  
   
   ```  
   interface DECLSPEC_UUID("9f251514-9d4d-4902-9d60-18988ab7d4b5") DECLSPEC_NOVTABLE  
@@ -79,24 +79,24 @@ Możesz użyć [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] diagnostyki grafiki,
   };  
   ```  
   
-  Dla wygody można wykonać te kroki w nowym pliku nagłówka, a następnie dołącz ją w razie potrzeby w swojej aplikacji.  
+  Dla wygody można wykonać te kroki w nowym pliku nagłówkowym, a następnie dołączyć go do potrzeb aplikacji.  
   
 ### <a name="getting-the-idxgraphicsanalysis-interface"></a>Pobieranie interfejsu IDXGraphicsAnalysis  
- Zanim będzie można przechwytywać informacje graficzne z DirectX 11.2, musisz uzyskać DXGI interfejsu debugowania.  
+ Aby można było przechwycić informacje graficzne z programu DirectX 11,2, należy uzyskać interfejs debugowania infrastruktury DXGI.  
   
 > [!IMPORTANT]
-> Korzystając z Przechwytywanie programistyczne, nadal należy uruchomić aplikację pod nadzorem diagnostyki grafiki (Alt + F5 w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]) lub w obszarze [narzędzia wiersza polecenia do przechwytywania](../debugger/command-line-capture-tool.md).  
+> W przypadku korzystania z funkcji przechwytywania programistycznego należy nadal uruchamiać aplikację w obszarze Diagnostyka grafiki (Alt + F5 w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]) lub w [narzędziu do przechwytywania wiersza polecenia](../debugger/command-line-capture-tool.md).  
   
 ##### <a name="to-get-the-idxgraphicsanalysis-interface"></a>Aby uzyskać interfejs IDXGraphicsAnalysis  
   
-- Użyj poniższego kodu, można dołączyć interfejsu IDXGraphicsAnalysis do interfejsu debugowania DXGI.  
+- Użyj poniższego kodu, aby podłączyć interfejs IDXGraphicsAnalysis do interfejsu debugowania infrastruktury DXGI.  
   
     ```  
     IDXGraphicsAnalysis* pGraphicsAnalysis;  
     HRESULT getAnalysis = DXGIGetDebugInterface1(0, __uuidof(pGraphicsAnalysis), reinterpret_cast<void**>(&pGraphicsAnalysis));  
     ```  
   
-     Należy koniecznie sprawdzić `HRESULT` zwrócone przez `DXGIGetDebugInterface1` aby upewnić się, Uzyskaj prawidłowy interfejs przed jego użyciem:  
+     Upewnij się, że `HRESULT` zwrócone przez `DXGIGetDebugInterface1`, aby uzyskać prawidłowy interfejs przed jego użyciem:  
   
     ```  
     if (FAILED(getAnalysis))  
@@ -106,14 +106,14 @@ Możesz użyć [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] diagnostyki grafiki,
     ```  
   
     > [!NOTE]
-    > Jeśli `DXGIGetDebugInterface1` zwraca `E_NOINTERFACE` (`error: E_NOINTERFACE No such interface supported`), upewnij się, że aplikacja jest uruchomiona w ramach diagnostyki grafiki (Alt + F5 w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]).  
+    > Jeśli `DXGIGetDebugInterface1` zwraca `E_NOINTERFACE` (`error: E_NOINTERFACE No such interface supported`), upewnij się, że aplikacja działa w ramach diagnostyki grafiki (Alt + F5 w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]).  
   
 ### <a name="capturing-graphics-information"></a>Przechwytywanie informacji graficznych  
- Teraz, gdy masz prawidłową `IDXGraphicsAnalysis` interfejsu, można użyć `BeginCapture` i `EndCapture` do przechwytywania informacji graficznych.  
+ Teraz, gdy masz prawidłowy interfejs `IDXGraphicsAnalysis`, możesz użyć `BeginCapture` i `EndCapture` do przechwytywania informacji graficznych.  
   
-##### <a name="to-capture-graphics-information"></a>Do przechwytywania informacji graficznych  
+##### <a name="to-capture-graphics-information"></a>Aby przechwycić informacje graficzne  
   
-- Aby rozpocząć, przechwytywanie informacji graficznych, użyj `BeginCapture`:  
+- Aby rozpocząć przechwytywanie informacji graficznych, użyj `BeginCapture`:  
   
     ```  
     ...  
@@ -121,7 +121,7 @@ Możesz użyć [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] diagnostyki grafiki,
     ...  
     ```  
   
-     Przechwytywania rozpocznie się natychmiast po `BeginCapture` jest wywoływana funkcja nie czeka następnej ramki rozpocząć. Przechwytywanie zatrzymuje umieszczeniem bieżącej ramki, lub gdy wywołujesz `EndCapture`:  
+     Przechwytywanie rozpocznie się natychmiast po wywołaniu `BeginCapture`; nie czeka na rozpoczęcie kolejnej ramki. Przechwytywanie jest zatrzymywane po wyświetleniu bieżącej ramki lub podczas wywoływania `EndCapture`:  
   
     ```  
     ...  
@@ -129,74 +129,74 @@ Możesz użyć [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] diagnostyki grafiki,
     ...  
     ```  
   
-## <a name="CaptureDX11_1"></a> Przechwytywanie programistyczne w Windows 8.0 i starszych  
- Tej części instruktażu pokazano Przechwytywanie programistyczne w aplikacjach dla Windows 8.0 i starszych, korzystających z technologii DirectX 11.1 interfejsu API, który używa metody przechwytywania starszej wersji. Aby uzyskać informacje o sposobie używania Przechwytywanie programistyczne w aplikacjach korzystających z technologii DirectX 11.2 na Windows 8.1, zobacz [Programmatic przechwytywania w Windows 8.1](#CaptureDX11_2) wcześniej w tym przewodniku.  
+## <a name="CaptureDX11_1"></a>Przechwycenie programowe w systemie Windows 8,0 i starszych  
+ Ta część przewodnika przedstawia programowe przechwytywanie w aplikacjach dla systemu Windows 8,0 i starszych, które używają interfejsu API programu DirectX 11,1, który używa starszej metody przechwytywania. Aby uzyskać informacje dotyczące sposobu korzystania z funkcji przechwytywania programowego w aplikacjach korzystających z programu DirectX 11,2 na Windows 8.1, zobacz Funkcja [przechwytywania programowa w programie Windows 8.1](#CaptureDX11_2) wcześniej w tym instruktażu.  
   
  Ta część zawiera następujące zadania:  
   
-- Trwa przygotowywanie komputera do użycia przechwycenie programowe  
+- Przygotowywanie komputera do korzystania z funkcji przechwytywania programistycznego  
   
-- Przygotowywanie aplikacji do użycia przechwycenie programowe  
+- Przygotowywanie aplikacji do korzystania z funkcji przechwytywania programistycznego  
   
-- Konfigurowanie nazwę i lokalizację pliku dziennika grafiki  
+- Konfigurowanie nazwy i lokalizacji pliku dziennika grafiki  
   
-- Za pomocą `CaptureCurrentFrame` interfejsu API  
+- Korzystanie z interfejsu API `CaptureCurrentFrame`  
   
-### <a name="preparing-your-computer-to-use-programmatic-capture"></a>Trwa przygotowywanie komputera do użycia przechwycenie programowe  
- Przechwytywanie programistyczne interfejsu API używa Remote Tools for [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] umożliwiają korzystanie z funkcji przechwytywania. Na komputerze, gdzie aplikacja będzie uruchamiana musi być remote tools, które są zainstalowane, nawet wtedy, gdy używasz Przechwytywanie programistyczne na komputerze lokalnym. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nie musi być uruchomiona, gdy wykonujesz Przechwytywanie programistyczne na komputerze lokalnym.  
+### <a name="preparing-your-computer-to-use-programmatic-capture"></a>Przygotowywanie komputera do korzystania z funkcji przechwytywania programistycznego  
+ Interfejs API przechwycenia programistycznego używa zdalnych narzędzi do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], aby zapewnić funkcje przechwytywania. Na komputerze, na którym zostanie uruchomiona aplikacja, muszą być zainstalowane narzędzia zdalne, nawet jeśli używasz funkcji przechwytywania programowego na komputerze lokalnym. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nie musi być uruchomiona podczas przeprowadzania funkcji przechwytywania programowego na komputerze lokalnym.  
   
- Aby używać zdalnego przechwytywania interfejsów API w aplikacji, która jest uruchomiona na komputerze, najpierw musisz zainstalować Remote Tools for [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] na tym komputerze. Różne wersje narzędzia zdalnej obsługi innych platform sprzętowych. Aby uzyskać informacje o sposobie instalowania narzędzi remote tools, zobacz [stronę pobierania narzędzia zdalnej](http://go.microsoft.com/fwlink/p/?LinkId=246691) w programie Microsoft pobierania witryny sieci Web.  
+ Aby korzystać z interfejsów API przechwytywania zdalnego w aplikacji uruchomionej na komputerze, należy najpierw zainstalować na tym komputerze zdalne narzędzia dla [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Różne wersje narzędzi zdalnych obsługują różne platformy sprzętowe. Aby uzyskać informacje na temat sposobu instalowania narzędzi zdalnych, zobacz [stronę pobierania narzędzi zdalnych](https://go.microsoft.com/fwlink/p/?LinkId=246691) w witrynie internetowej pobierania firmy Microsoft.  
   
- Alternatywnie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] instaluje składniki niezbędne do przeprowadzenia zdalnego przechwytywania aplikacji 32-bitowych.  
+ Alternatywnie, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] instaluje składniki niezbędne do przeprowadzenia zdalnego przechwytywania dla aplikacji 32-bitowych.  
   
 > [!NOTE]
-> Ponieważ większość aplikacji komputerowych Windows — w tym [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]— nie są obsługiwane w [!INCLUDE[win8](../includes/win8-md.md)] dla urządzeń ARM przy użyciu Remote Tools for [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wraz z Przechwytywanie programistyczne interfejs API jest jedynym sposobem, aby przechwycić diagnostyki grafiki na urządzeniach ARM.  
+> Ze względu na to, że większość aplikacji klasycznych systemu Windows — w tym [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]— nie jest obsługiwana na [!INCLUDE[win8](../includes/win8-md.md)] dla urządzeń ARM, używanie zdalnych narzędzi dla [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] razem z interfejsem API przechwytywania programowego jest jedynym sposobem przechwytywania diagnostyki grafiki na urządzeniach ARM.  
   
-### <a name="preparing-your-app-to-use-programmatic-capture"></a>Przygotowywanie aplikacji do użycia przechwycenie programowe  
- Aby korzystać z narzędzi programu Graphics Diagnostics, najpierw musisz przechwytywanie informacji graficznych, która opiera się na. Informacje można programowo Przechwyć, używając `CaptureCurrentFrame` interfejsu API.  
+### <a name="preparing-your-app-to-use-programmatic-capture"></a>Przygotowywanie aplikacji do korzystania z funkcji przechwytywania programistycznego  
+ Aby skorzystać z narzędzi Diagnostyka grafiki, musisz najpierw przechwycić informacje o grafice, na których bazują. Można programowo przechwycić informacje za pomocą interfejsu API `CaptureCurrentFrame`.  
   
-##### <a name="to-prepare-your-app-to-capture-graphics-information-programmatically"></a>Aby przygotować aplikację do programowe przechwytywanie informacji graficznych  
+##### <a name="to-prepare-your-app-to-capture-graphics-information-programmatically"></a>Aby przygotować aplikację do programistycznego przechwytywania informacji graficznych  
   
-1. Upewnij się, że `vsgcapture.h` nagłówka znajduje się w kodzie źródłowym aplikacji. Może on być uwzględniony w tylko jednej lokalizacji — na przykład w pliku kodu źródłowego, na którym będzie wywoływać programowych Przechwytywanie interfejsu API — lub w pliku wstępnie skompilowanego nagłówka do wywołania interfejsu API z wielu plików kodu.  
+1. Upewnij się, że nagłówek `vsgcapture.h` jest zawarty w kodzie źródłowym aplikacji. Może być zawarta w tylko jednej lokalizacji — na przykład w pliku kodu źródłowego, w którym będzie wywoływany interfejs API przechwytywania programowego — lub w pliku prekompilowanego nagłówka do wywołania interfejsu API z wielu plików kodu źródłowego.  
   
-2. W kodzie źródłowym aplikacji, w każdym przypadku, gdy mają być przechwytywane w pozostałej części bieżącej ramki, wywołaj `g_pVsgDbg->CaptureCurrentFrame()`. Ta metoda nie przyjmuje żadnych parametrów i nie zwraca wartości.  
+2. W kodzie źródłowym aplikacji, za każdym razem, gdy chcesz przechwycić resztę bieżącej ramki, wywołaj `g_pVsgDbg->CaptureCurrentFrame()`. Ta metoda nie przyjmuje parametrów i nie zwraca wartości.  
   
-### <a name="configuring-the-name-and-location-of-the-graphics-log-file"></a>Konfigurowanie nazwę i lokalizację pliku dziennika grafiki  
- Dziennik grafiki jest tworzony w lokalizacji, który jest definiowany przez `DONT_SAVE_VSGLOG_TO_TEMP` i `VSG_DEFAULT_RUN_FILENAME` makra.  
+### <a name="configuring-the-name-and-location-of-the-graphics-log-file"></a>Konfigurowanie nazwy i lokalizacji pliku dziennika grafiki  
+ Dziennik grafiki jest tworzony w lokalizacji zdefiniowanej przez `DONT_SAVE_VSGLOG_TO_TEMP` i `VSG_DEFAULT_RUN_FILENAME` makra.  
   
 ##### <a name="to-configure-the-name-and-location-of-the-graphics-log-file"></a>Aby skonfigurować nazwę i lokalizację pliku dziennika grafiki  
   
-- Aby zapobiec przed zapisaniem do katalogu tymczasowego dziennika grafiki `#include <vsgcapture.h>` wiersz, dodaj to:  
+- Aby uniemożliwić zapisanie dziennika grafiki w katalogu tymczasowym przed wierszem `#include <vsgcapture.h>`, Dodaj następujące polecenie:  
   
   ```  
   #define DONT_SAVE_VSGLOG_TO_TEMP  
   ```  
   
-   Można zdefiniować tę wartość, aby zapisać w dzienniku grafiki do lokalizacji, która jest określana względem katalogu roboczego lub do ścieżki bezwzględnej Jeśli definicja `VSG_DEFAULT_RUN_FILENAME` jest ścieżką bezwzględną.  
+   Można zdefiniować tę wartość, aby napisać dziennik grafiki do lokalizacji względnej dla katalogu roboczego lub ścieżki bezwzględnej, jeśli definicja `VSG_DEFAULT_RUN_FILENAME` jest ścieżką bezwzględną.  
   
-- Aby zapisać dziennik grafiki do innej lokalizacji, lub nadać mu inną nazwę pliku, zanim `#include <vsgcapture.h>` wiersz, dodaj to:  
+- Aby zapisać dziennik grafiki w innej lokalizacji lub nadać mu inną nazwę pliku, przed wierszem `#include <vsgcapture.h>` Dodaj następujące polecenie:  
   
   ```  
   #define VSG_DEFAULT_RUN_FILENAME <filename>  
   ```  
   
-   Jeśli nie możesz wykonać ten krok, nazwa pliku jest default.vsglog. Jeżeli nie zdefiniujesz `DONT_SAVE_VSGLOG_TO_TEMP`, następnie lokalizacja pliku jest względną dla katalogu temp; w przeciwnym, jest względem katalogu roboczego lub w innej lokalizacji, jeśli określono bezwzględnej nazwy pliku.  
+   Jeśli ten krok nie jest wykonywany, nazwa pliku to default. vsglog. Jeśli nie zdefiniowano `DONT_SAVE_VSGLOG_TO_TEMP`, lokalizacja pliku jest określana względem katalogu Temp; w przeciwnym razie odnoszą się do katalogu roboczego lub w innej lokalizacji, jeśli określono bezwzględną nazwę pliku.  
   
-  Aby uzyskać [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikacji, lokalizację katalogu temp jest przeznaczony dla każdego użytkownika i aplikacji i zwykle znajduje się w lokalizacji takiej jak C:\users\\*username*\AppData\Local\Packages\\ *nazwy rodziny pakietów*\TempState\\. Dla aplikacji komputerowych, lokalizację katalogu temp jest specyficzne dla poszczególnych użytkowników i zwykle znajduje się w lokalizacji takiej jak C:\Users\\*username*\AppData\Local\Temp\\.  
+  W przypadku aplikacji [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] Lokalizacja katalogu tymczasowego jest specyficzna dla każdego użytkownika i aplikacji. zwykle znajduje się w lokalizacji takiej jak C:\Users\\*username*\AppData\Local\Packages\\*Nazwa rodziny pakietów*\TempState\\. W przypadku aplikacji klasycznych Lokalizacja katalogu tymczasowego jest specyficzna dla każdego użytkownika i zwykle znajduje się w lokalizacji takiej jak C:\Users\\*username*\AppData\Local\Temp\\.  
   
 > [!NOTE]
-> Aby zapisać w określonej lokalizacji, musi mieć uprawnienia do zapisu w tej lokalizacji; w przeciwnym razie wystąpi błąd. Należy pamiętać, że [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikacje są bardziej ograniczone niż aplikacje komputerowe, o których one mogła zapisywać dane i mogą wymagać dodatkowej konfiguracji do zapisu w określonych lokalizacjach.  
+> Aby zapisać w określonej lokalizacji, musisz mieć uprawnienia do zapisu w tej lokalizacji. w przeciwnym razie wystąpi błąd. Należy pamiętać, że aplikacje [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] są bardziej ograniczone niż aplikacje klasyczne, w których mogą zapisywać dane, i mogą wymagać dodatkowej konfiguracji do zapisu w określonych lokalizacjach.  
   
 ### <a name="capturing-the-graphics-information"></a>Przechwytywanie informacji graficznych  
- Po przygotowanie aplikacji do Przechwytywanie programistyczne i opcjonalnie skonfigurować lokalizację i nazwę grafiki pliku dziennika, tworzenie aplikacji i następnie uruchamiania lub debugowania go do przechwycenia danych. nie należy uruchamiać narzędzie Diagnostyka grafiki z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zastosowania Przechwytywanie programistyczne interfejsu API. Dziennik grafiki jest zapisywany do określonej lokalizacji. Jeśli chcesz zachować tę wersję dziennika, przenieś go do innej lokalizacji. w przeciwnym razie zostanie zastąpiony, gdy ponownie uruchom aplikację.  
+ Po przygotowaniu aplikacji do przechwycenia programistycznego i opcjonalnie skonfigurowania lokalizacji i nazwy pliku dziennika grafiki należy skompilować aplikację, a następnie uruchomić lub debugować ją w celu przechwycenia danych. nie uruchamiaj diagnostyki grafiki z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], gdy używasz interfejsu API przechwytywania programowego. Dziennik grafiki zostanie zapisany w określonej lokalizacji. Jeśli chcesz zachować tę wersję dziennika, przenieś ją do innej lokalizacji. w przeciwnym razie zostanie nadpisany po ponownym uruchomieniu aplikacji.  
   
 > [!TIP]
-> Możesz nadal przechwytywać informacje graficzne ręcznie podczas korzystania z przechwycenie programowe — za pomocą aplikacji w trybie koncentracji uwagi, wystarczy nacisnąć klawisz **klawisza Print Screen**. Ta metoda służy do przechwytywania informacji graficznych dodatkowe, które nie są przechwytywane przez Przechwytywanie programistyczne interfejsu API.  
+> Nadal można przechwytywać informacje graficzne ręcznie podczas korzystania z funkcji przechwytywania programowego — w przypadku aplikacji w fokusie wystarczy nacisnąć przycisk **Drukuj ekran**. Ta technika służy do przechwytywania dodatkowych informacji graficznych, które nie są przechwytywane przez interfejs API przechwytywania programowego.  
   
 ## <a name="next-steps"></a>Następne kroki  
- W tym instruktażu zademonstrowano programowe przechwytywanie informacji graficznych. Kolejnym krokiem Rozważ użycie tej opcji:  
+ W tym instruktażu przedstawiono sposób programistycznego przechwytywania informacji graficznych. W następnym kroku należy wziąć pod uwagę tę opcję:  
   
-- Dowiedz się, jak analizować przechwycone informacje graficzne, przy użyciu narzędzi programu Graphics Diagnostics. Zobacz [Przegląd](../debugger/overview-of-visual-studio-graphics-diagnostics.md).  
+- Dowiedz się, jak analizować przechwycone informacje graficzne przy użyciu narzędzi Diagnostyka grafiki. Zobacz [Omówienie](../debugger/overview-of-visual-studio-graphics-diagnostics.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Przewodnik: Przechwytywanie informacji graficznych](../debugger/walkthrough-capturing-graphics-information.md)   

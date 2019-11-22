@@ -23,19 +23,19 @@ caps.latest.revision: 55
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 88c72ecaf44855badfd42456d9818f2ba9168a49
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8c5906084fc7db96ddf304e8362bf7692dac62d5
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661725"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297146"
 ---
 # <a name="uml-sequence-diagrams-guidelines"></a>Diagramy sekwencyjne UML: Zalecenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W programie Visual Studio możesz narysować *Diagram sekwencji* , aby wyświetlić interakcję. Interakcja to sekwencja komunikatów między typowymi wystąpieniami klas, składników, podsystemów lub aktorów.
 
- Diagramy sekwencji UML są częścią modelu UML i istnieją tylko w projektach modelowania UML. Aby utworzyć diagram sekwencji UML, w menu **Architektura** kliknij **Nowy UML lub diagram warstwowy**. Więcej informacji na temat [elementów diagramu sekwencji UML](../modeling/uml-sequence-diagrams-reference.md) lub [diagramów modelowania UML](../modeling/edit-uml-models-and-diagrams.md) znajduje się ogólnie. Aby zapoznać się z prezentacją, zobacz [Szkicowanie interakcji przy użyciu diagramów sekwencyjnych (2010)](http://channel9.msdn.com/Blogs/clinted/UML-with-VS-2010-Part-7-Sketching-Interactions-with-Sequence-Diagrams).
+ Diagramy sekwencji UML są częścią modelu UML i istnieją tylko w projektach modelowania UML. Aby utworzyć diagram sekwencji UML, w menu **Architektura** kliknij **Nowy UML lub diagram warstwowy**. Więcej informacji na temat [elementów diagramu sekwencji UML](../modeling/uml-sequence-diagrams-reference.md) lub [diagramów modelowania UML](../modeling/edit-uml-models-and-diagrams.md) znajduje się ogólnie. Aby zapoznać się z prezentacją, zobacz [Szkicowanie interakcji przy użyciu diagramów sekwencyjnych (2010)](https://channel9.msdn.com/Blogs/clinted/UML-with-VS-2010-Part-7-Sketching-Interactions-with-Sequence-Diagrams).
 
  Aby sprawdzić, które wersje programu Visual Studio obsługują tę funkcję, zobacz [Obsługa wersji dla narzędzi architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -115,7 +115,7 @@ W programie Visual Studio możesz narysować *Diagram sekwencji* , aby wyświetl
 3. Aby wyświetlić komunikat pochodzący z nieznanego źródła zdarzeń (9) lub emisji do nieznanych odbiorców (10), narysuj komunikat asynchroniczny z lub do pustego miejsca na diagramie. Komunikaty te są nazywane *komunikatami znalezionymi* (9) i *utraconymi komunikatami* (10).
 
     > [!NOTE]
-    > Aby przenieść grupę linii życia z utraconymi lub znalezionymi komunikatami, wykonaj następujące kroki, aby wybrać linie życia przed ich przeniesieniem: Narysuj prostokąt wokół tych linii życia lub naciśnij i przytrzymaj klawisz **Ctrl** podczas klikania każdej linii życia. W przypadku użycia **opcji Zaznacz wszystko** lub **Ctrl** +**a** , aby zaznaczyć wszystkie linie życia, a następnie przenieść wszystkie utracone lub znalezione komunikaty dołączone do tych linii życia nie będą przenoszone. Jeśli wystąpi taka sytuacja, te wiadomości można przenosić oddzielnie.
+    > Aby przenieść grupę linii życia z utraconymi lub znalezionymi komunikatami, wykonaj następujące kroki, aby wybrać linie życia przed ich przeniesieniem: Narysuj prostokąt wokół tych linii życia lub naciśnij i przytrzymaj klawisz **Ctrl** podczas klikania każdej linii życia. W przypadku użycia **opcji Zaznacz wszystko** lub **Ctrl**+**a** , aby zaznaczyć wszystkie linie życia, a następnie przenieść wszystkie utracone lub znalezione komunikaty dołączone do tych linii życia nie będą przenoszone. Jeśli wystąpi taka sytuacja, te wiadomości można przenosić oddzielnie.
 
 4. Rysuj diagramy sekwencji dla każdej istotnej wiadomości do tego samego składnika lub systemu.
 
@@ -123,7 +123,7 @@ W programie Visual Studio możesz narysować *Diagram sekwencji* , aby wyświetl
 
 - Przeciągnij komunikat w górę lub w dół w jego linii życia. Można przeciągać je do innych komunikatów lub do lub z bloku wykonywania.
 
-     \- lub-
+     \- lub —
 
 - Kliknij komunikat i użyj klawiszy Strzałka w **górę** i **Strzałka w dół** , aby dostosować położenie wiadomości. Aby zmienić kolejność komunikatów, użyj **klawiszy Shift + Strzałka w górę** i **Shift + Strzałka w dół** .
 
@@ -165,7 +165,7 @@ W programie Visual Studio możesz narysować *Diagram sekwencji* , aby wyświetl
 
 2. Przeciągnij interakcję do pakietu.
 
-     \- lub-
+     \- lub —
 
      Kliknij prawym przyciskiem myszy interakcję, a następnie kliknij pozycję **Wytnij**. Kliknij prawym przyciskiem myszy pakiet, a następnie kliknij przycisk **Wklej**.
 
@@ -179,7 +179,7 @@ W programie Visual Studio możesz narysować *Diagram sekwencji* , aby wyświetl
 
 - Za pomocą narzędzia **synchronicznego** opisz interakcję, w której nadawca ma zwrócić odpowiedź (3).
 
-     **@No__t_1 \<return > >** zostanie pokazana na końcu wystąpienia wykonania. Oznacza to powrót kontroli do nadawcy.
+     **<\<zwracać > >** pojawia się na końcu wystąpienia wykonania. Oznacza to powrót kontroli do nadawcy.
 
 - Narzędzie **asynchroniczne** służy do opisywania interakcji, w której nadawca może natychmiast kontynuować bez oczekiwania na odbiornik (4).
 
@@ -261,7 +261,7 @@ W programie Visual Studio możesz narysować *Diagram sekwencji* , aby wyświetl
 
 |**W tym celu**|**Użyj tego formatu**|
 |--------------------------|-------------------------|
-|Anonimowe wystąpienie typu.<br /><br /> Użyj tego, jeśli masz tylko jedną linię życia dla każdego typu.|*Nazwa*|
+|Anonimowe wystąpienie typu.<br /><br /> Użyj tego, jeśli masz tylko jedną linię życia dla każdego typu.|*typeName*|
 |Nazwane wystąpienie typu.<br /><br /> Użyj tego, jeśli chcesz wyświetlić sekwencję obejmującą więcej niż jedno wystąpienie tego samego typu.|*ObjectName*:*TypeName*|
 
 ### <a name="creating-lifelines-from-types"></a>Tworzenie linii życia z typów
@@ -274,7 +274,7 @@ W programie Visual Studio możesz narysować *Diagram sekwencji* , aby wyświetl
 
 - Przeciągnij klasę, składnik lub interfejs z Eksploratora modelu UML na diagram sekwencji.
 
-   \- lub-
+   \- lub —
 
   1. Kliknij prawym przyciskiem myszy klasę, składnik lub interfejs na odpowiednim diagramie, a następnie kliknij polecenie **Utwórz linię życia**.
 
@@ -323,7 +323,7 @@ W programie Visual Studio możesz narysować *Diagram sekwencji* , aby wyświetl
 
          Klasa lub interfejs pojawia się na diagramie klas.
 
-         \- lub-
+         \- lub —
 
     3. Przeciągnij nowy interfejs z **Eksploratora modelu UML** na składnik lub port na diagramie składników.
 
@@ -349,7 +349,7 @@ W programie Visual Studio możesz narysować *Diagram sekwencji* , aby wyświetl
 
 3. Kliknij dwukrotnie nazwę przy użyciu interakcji i zmień jej nazwę, aby opisać efekt sekwencji wielokrotnego użytku na tym diagramie.
 
-     \- lub-
+     \- lub —
 
      Napisz nazwę, taką jak wywołanie funkcji, z parametrami.
 
@@ -357,7 +357,7 @@ W programie Visual Studio możesz narysować *Diagram sekwencji* , aby wyświetl
 
      Kliknij przycisk **Utwórz nową sekwencję** , aby utworzyć nowy diagram sekwencji
 
-     \- lub-
+     \- lub —
 
      Kliknij pozycję **Połącz z sekwencją** , aby połączyć się z istniejącym diagramem.
 
@@ -384,7 +384,7 @@ W programie Visual Studio możesz narysować *Diagram sekwencji* , aby wyświetl
 
 - Kliknij dwukrotnie użycie interakcji.
 
-     \- lub-
+     \- lub —
 
      Kliknij prawym przyciskiem myszy użycie interakcji, a następnie kliknij pozycję **Przejdź do sekwencji**.
 
@@ -443,4 +443,4 @@ W programie Visual Studio możesz narysować *Diagram sekwencji* , aby wyświetl
 5. Aby dodać nowe wiadomości do fragmentu, użyj narzędzi komunikatów lub skopiuj i wklej.
 
 ## <a name="see-also"></a>Zobacz też
- [Diagramy sekwencji UML: informacje referencyjne](../modeling/uml-sequence-diagrams-reference.md) [Edycja modeli UML i diagramów](../modeling/edit-uml-models-and-diagrams.md) [diagramów przypadków użycia UML: referencyjne](../modeling/uml-use-case-diagrams-reference.md) [diagramy klas UML:](../modeling/uml-class-diagrams-reference.md) [referencyjne](../modeling/uml-component-diagrams-reference.md) diagramy składników UML: referencyjne [diagramy składników UML: odwołanie](../modeling/uml-component-diagrams-reference.md) [ Wideo: Szkicowanie interakcji przy użyciu diagramów sekwencji](http://go.microsoft.com/fwlink/?LinkId=201113)
+ [Diagramy sekwencji UML: informacje referencyjne](../modeling/uml-sequence-diagrams-reference.md) [Edycja modeli UML i diagramy](../modeling/edit-uml-models-and-diagrams.md) diagramów [przypadków użycia UML: referencyjne](../modeling/uml-use-case-diagrams-reference.md) diagramy [klas UML:](../modeling/uml-class-diagrams-reference.md) referencyjne diagramy składników UML: [referencyjne](../modeling/uml-component-diagrams-reference.md) [diagramy składników UML](../modeling/uml-component-diagrams-reference.md) : [film wideo: Szkicowanie interakcji przy użyciu diagramów sekwencyjnych](https://go.microsoft.com/fwlink/?LinkId=201113)

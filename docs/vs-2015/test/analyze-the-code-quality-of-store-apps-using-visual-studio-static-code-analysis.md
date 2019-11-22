@@ -1,5 +1,5 @@
 ---
-title: Analizowanie jakości kodu aplikacji ze sklepu przy użyciu statycznej analizy kodu
+title: Analizowanie jakości kodu aplikacji Store przy użyciu statycznej analizy kodu
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -9,31 +9,31 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: fcaa8424e1b60375ec62bde31c5e22f3706641d0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4633b32c1d59a59c91848f72403571955263472f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660756"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297543"
 ---
-# <a name="analyze-the-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Analizowanie jakości kodu aplikacji ze sklepu przy użyciu statycznej analizy kodu programu Visual Studio
+# <a name="analyze-the-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Analizowanie jakości kodu aplikacji Store przy użyciu programu Visual Studio statycznej analizy kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Narzędzie do analizy kodu w programie Visual Studio bada swój kod w celu uzyskania zestawu typowych wad i naruszeń dobrych rozwiązań programistycznych. Ostrzeżenia analizy kodu różnią się od błędów i ostrzeżeń kompilatora, ponieważ Narzędzie analizy kodu wyszukuje określone wzorce kodu, które są prawidłowe, ale mogą nadal tworzyć problemy dla Ciebie lub innych osób korzystających z Twojego kodu. Analiza kodu może również znaleźć wady w kodzie, które trudno wykryć poprzez testowanie. Uruchamianie narzędzia do analizy kodu w regularnych odstępach czasu w procesie tworzenia oprogramowania może zwiększyć jakość ukończonej aplikacji.
+Narzędzie do analizy kodu w programie Visual Studio sprawdza swój kod pod kątem zestaw wspólne wady i naruszeń dobrą praktykę programistyczną. Ostrzeżenia analizy kodu różnią się od błędów i ostrzeżeń, ponieważ narzędzie do analizy kodu szuka wzorców konkretnego kodu, które są prawidłowe, ale nadal można tworzyć problemy dla Ciebie lub innych osób używających Twojego kodu. Analiza kodu, można także znaleźć defektów w kodzie, które są trudne do odnajdywania za pomocą testowania. Podczas procesu opracowywania uruchomione narzędzie do analizy kodu w regularnych odstępach czasu może zwiększyć jakość ukończonej aplikacji.
 
 > [!NOTE]
-> Analiza kodu nie jest dostępna dla kodu JavaScript.
+> Analiza kodu jest niedostępna dla kodu w języku JavaScript.
 
 ## <a name="in-this-section"></a>W tej sekcji
 
 |||
 |-|-|
-|[Analizowanie jakości kodu języków Visual Basic i C#](../test/analyze-visual-basic-and-csharp-code-quality-in-store-apps-using-visual-studio-static-code-analysis.md)|Użyj analizy kodu w Visual Basic i C# projektach.|
-|[Analizowanie jakości kodu języka C++](../test/analyze-cpp-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md)|Użyj analizy kodu w C++ projektach.|
+|[Analizowanie jakości kodu języków Visual Basic i C#](../test/analyze-visual-basic-and-csharp-code-quality-in-store-apps-using-visual-studio-static-code-analysis.md)|Użyj analizy kodu w projektach Visual Basic i C#.|
+|[Analizowanie jakości kodu języka C++](../test/analyze-cpp-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md)|Użyj analizy kodu w projektach C++.|
 
-## <a name="more-code-analysis-info"></a>Więcej informacji o analizie kodu
+## <a name="more-code-analysis-info"></a>Więcej informacji o analizy kodu
 
 |||
 |-|-|
-|[Analiza kodu w bibliotece MSDN](http://go.microsoft.com/fwlink/?LinkID=227580)|Więcej informacji na temat korzystania z analizy kodu można znaleźć w Visual Studio Ultimate, Visual Studio Premium i Visual Studio Professional.|
-|[Blog zespołu ds. analizy kodu MSDN](http://go.microsoft.com/fwlink/?LinkId=227200)|Więcej informacji, w tym dokumenty techniczne i przykłady, znajdziesz w blogu zespołu ds. analizy kodu.|
+|[Analiza kodu w bibliotece MSDN](https://go.microsoft.com/fwlink/?LinkID=227580)|Znajdź więcej informacji o używaniu analizy kodu w programie Visual Studio Ultimate, Visual Studio Premium i Visual Studio Professional.|
+|[Blog zespołu analizy kodu MSDN](https://go.microsoft.com/fwlink/?LinkId=227200)|Znajdź więcej informacji, w tym dokumentów technicznych i przykładów na blogu zespołu analizy kodu.|

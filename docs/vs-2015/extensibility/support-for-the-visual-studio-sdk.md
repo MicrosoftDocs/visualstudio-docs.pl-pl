@@ -1,5 +1,5 @@
 ---
-title: Obsługa programu Visual Studio SDK | Dokumentacja firmy Microsoft
+title: Obsługa zestawu SDK programu Visual Studio | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,56 +14,56 @@ ms.assetid: d9011f5a-cb53-418f-9d8f-74b15b9fc5f5
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1bfb2a7e30542977906fd71e168652aa661fcc8d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: e404d569776eef1cd2146ed636177be30151aaab
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65688731"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299730"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Obsługa zestawu Visual Studio SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Kilka opcji pomocy technicznej są dostępne dla klientów, którzy pytań na temat sposobu rozszerzenia programu Visual Studio zintegrowane środowisko programistyczne (IDE).  
+Dostępne są różne opcje pomocy technicznej dla klientów z pytaniami dotyczącymi sposobu rozwinięcia zintegrowanego środowiska programistycznego (IDE) programu Visual Studio.  
   
 ## <a name="free-support"></a>Bezpłatna pomoc techniczna  
   
-### <a name="msdn-development-center"></a>Centrum deweloperów sieci MSDN  
- [Centrum deweloperów programu Visual Studio Extensibility](http://go.microsoft.com/fwlink/?LinkID=84381) w witrynie MSDN zawiera zasoby, które pomagają Odpowiedz na pytania o sposobie rozszerzania programu Visual Studio. Na przykład istnieją linki do blogów dewelopera VSIP.  
+### <a name="msdn-development-center"></a>Centrum deweloperskie MSDN  
+ [Centrum deweloperów rozszerzeń programu Visual Studio](https://go.microsoft.com/fwlink/?LinkID=84381) w witrynie MSDN zawiera zasoby, które pomagają odpowiedzieć na pytania dotyczące sposobu rozszerzania programu Visual Studio. Na przykład istnieje kilka linków do blogów dla deweloperów VSIP.  
   
 ### <a name="microsoft-newsgroups"></a>Grupy dyskusyjne firmy Microsoft  
- Członkowie zespołu programistycznego programu Visual Studio i innych deweloperów, którzy często Rozszerz program Visual Studio uczestniczyć w grupie dyskusyjnej microsoft.public.vstudio.extensibility. Ta grupa dyskusyjna jest zarządzane grupy dyskusyjnej. Jeśli Universal subskrybentem MSDN, upewnij się, rejestrowania alias chroniący przed spamem, aby umożliwić firmy Microsoft, aby odpowiadać.  
+ Członkowie zespołu deweloperów programu Visual Studio i inni deweloperzy, którzy rozszerzają program Visual Studio często uczestniczą w grupie dyskusyjnej Microsoft. Public. vstudio. rozszerzalności. Ta grupa dyskusyjna jest zarządzaną grupą dyskusyjną. Jeśli jesteś uniwersalnym subskrybentem MSDN, upewnij się, że rejestrujesz alias bez spamu, aby umożliwić firmie Microsoft odpowiadanie.  
   
 ### <a name="msdn-forums"></a>Fora MSDN  
- [Fora MSDN](http://go.microsoft.com/fwlink/?LinkID=76632) zapewniają Porozmawiaj z elementami równorzędnymi oraz ekspertami w inny sposób. Graficzny interfejs użytkownika (UI) z forów zaprojektowaną do podejmowania ich łatwiejszy w obsłudze niż grup dyskusyjnych. [Forum poświęcone programowi Visual Studio Extensibility](http://go.microsoft.com/fwlink/?LinkID=121964) jest dobrym miejscem do rozpoczęcia wyszukiwania odpowiedzi na pytania dotyczące rozszerzalności. Wyszukaj zawsze przed Zadaj pytanie, ponieważ ktoś inny może już mieć o to samo.  
+ [Fora MSDN](https://go.microsoft.com/fwlink/?LinkID=76632) zapewniają inny sposób rozmowy z użytkownikami i ekspertami. Graficzny interfejs użytkownika (UI) forów jest zaprojektowany, aby ułatwić korzystanie z nich poza grupami dyskusyjnymi. [Forum rozszerzalności programu Visual Studio](https://go.microsoft.com/fwlink/?LinkID=121964) jest dobrym miejscem umożliwiającym rozpoczęcie wyszukiwania odpowiedzi na pytania dotyczące rozszerzalności. Zawsze wyszukuj przed zapytaniem pytania, ponieważ ktoś inny mógł już zadać to pytanie.  
   
 ### <a name="visual-studio-marketplace"></a>Visual Studio Marketplace  
- [Visual Studio Marketplace](https://marketplace.visualstudio.com/) to miejsce rozszerzeń oraz przykładowy kod. Narzędzia, które zwiększają produktywność i użytkownika środowisko z programem Visual Studio, przykładowych aplikacji, które pokazują, jak użyć pakietów VSPackage i Managed Extensibility Framework (MEF) oraz inne rodzaje przykłady można znaleźć.  
+ [Visual Studio Marketplace](https://marketplace.visualstudio.com/) jest miejscem, w którym są rozszerzenia i przykładowy kod. Możesz znaleźć narzędzia, które zwiększają produktywność i środowisko użytkownika w programie Visual Studio, przykładowe aplikacje, które pokazują, jak używać pakietów VSPackage oraz Managed Extensibility Framework (MEF) i innych rodzajów przykładów.  
   
 ### <a name="codeplex"></a>Codeplex  
- [CodePlex](http://go.microsoft.com/fwlink/?LinkId=76627) typu open source firmy Microsoft obsługujący projektu witryny sieci Web. Tworzenie i udostępnianie nowych projektów, przyczyniają się do istniejących projektów lub korzystać z aplikacji w witrynie i wyrażanie opinii, można użyć portalu CodePlex. Wszystkie PowerToys (i ich dokumentacji), które zostały zawarte w starszych wersjach programu [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] są teraz dostępne w witrynie CodePlex.  
+ [CodePlex](https://go.microsoft.com/fwlink/?LinkId=76627) to witryna sieci Web programu Microsoft Open Source do obsługi projektów. Możesz użyć CodePlex, aby tworzyć i udostępniać nowe projekty, współtworzyć istniejące projekty lub korzystać z aplikacji w witrynie oraz dostarczać Opinie. Wszystkie PowerToys (i ich dokumentacja), które zostały dołączone do wcześniejszych wersji [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)], są teraz dostępne w witrynie CodePlex.  
   
-## <a name="included-support"></a>Uwzględnione pomocy technicznej  
+## <a name="included-support"></a>Uwzględniona pomoc techniczna  
   
-### <a name="visual-studio-product-support"></a>Pomoc techniczna programu Visual Studio  
- Niektóre pomoc techniczna jest dołączone do zakupu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] produktów. Aby uzyskać więcej informacji, zobacz [pomoc techniczna dla programu Visual Studio](https://msdn.microsoft.com/vstudio/cc136615.aspx). Firma Microsoft udostępnia zespół pomocy technicznej dedykowanych odpowiedzi na pytania dotyczące [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozszerzalności.  
+### <a name="visual-studio-product-support"></a>Pomoc techniczna dla programu Visual Studio  
+ Część pomocy technicznej jest dołączona do zakupu produktów [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Aby uzyskać więcej informacji, zobacz [Pomoc techniczna programu Visual Studio](https://msdn.microsoft.com/vstudio/cc136615.aspx). Firma Microsoft obsługuje dedykowanego zespołu pomocy technicznej, aby odpowiedzieć na pytania dotyczące rozszerzalności [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-### <a name="msdn-subscription-support"></a>Pomoc techniczna dla subskrypcji MSDN  
- Pakiety subskrypcji MSDN mogą również obejmować niektórych pomocy technicznej. Aby uzyskać więcej informacji, zobacz [pomocy technicznej subskrybenta MSDN](https://msdn.microsoft.com/subscriptions/aa718661.aspx).  
+### <a name="msdn-subscription-support"></a>Obsługa subskrypcji MSDN  
+ Pakiety subskrypcji MSDN mogą również zawierać niektóre wsparcie. Aby uzyskać więcej informacji, zobacz [Pomoc techniczna dla subskrybentów MSDN](https://msdn.microsoft.com/subscriptions/aa718661.aspx).  
   
-## <a name="paid-support"></a>Płatnej pomocy technicznej  
+## <a name="paid-support"></a>Płatna pomoc techniczna  
   
-### <a name="developer-tools-support"></a>Obsługa narzędzi dla deweloperów  
- Można także nabyć w pomocy technicznej. Różnych ofert pomocy technicznej są dostępne w obszarze narzędzi dla deweloperów w [Microsoft Help i centrach obsługi technicznej](https://support.microsoft.com/supportforbusiness/productselection?fltadd=sps-business-1&sapId=4fd4947b-15ea-ce01-080f-97f2ca3c76e8).  
+### <a name="developer-tools-support"></a>Obsługa Narzędzia deweloperskie  
+ Można także zakupić pomoc techniczną. Różne oferty pomocy technicznej są dostępne w kategorii Narzędzia deweloperskie w [centrum pomocy i obsługi technicznej firmy Microsoft](https://support.microsoft.com/supportforbusiness/productselection?fltadd=sps-business-1&sapId=4fd4947b-15ea-ce01-080f-97f2ca3c76e8).  
   
- Klienci, którzy chcą korzystać [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] do tworzenia złożonych pakietów można rozważyć zakup planu pomocy technicznej Premier umowy z firmą Microsoft. Aby uzyskać więcej informacji, zobacz [pomocy technicznej Microsoft Premier](https://support.microsoft.com/premier). Dla małych firm [zaawansowaną pomoc techniczną dla partnerów](https://partner.microsoft.com/support/advanced-cloud-support) może być atrakcyjną alternatywą do tradycyjnych pomocy technicznej Premier.  
+ Klienci, którzy chcą używać [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] do tworzenia złożonych pakietów, mogą rozważyć zakup kontraktu pomoc techniczna Premier z firmą Microsoft. Aby uzyskać więcej informacji, zobacz [Microsoft Pomoc techniczna Premier](https://support.microsoft.com/premier). W przypadku małych firm [zaawansowana pomoc techniczna dla partnerów](https://partner.microsoft.com/support/advanced-cloud-support) może być atrakcyjną alternatywą dla tradycyjnej oferty pomoc techniczna Premier.  
   
 > [!NOTE]
-> Nie można użyć pomocy technicznej Standard, konsultacji lub uzyskać porady.  
+> Nie można używać pomocy standardowej na potrzeby konsultacji ani uzyskania porady.  
   
- Pytania na temat ofert pomocy technicznej Premier, w połączeniu z programem VSIP mogą być wysyłane do [ vsipsvs@microsoft.com ](mailto:vsipsvs@microsoft.com). Pytania dotyczące nowego programu korzyści partnera mogą być wysyłane do [ advantg@microsoft.com ](mailto:advantg@microsoft.com).  
+ Pytania dotyczące ofert pomoc techniczna Premier w połączeniu z programem VSIP można wysyłać do [vsipsvs@microsoft.com](mailto:vsipsvs@microsoft.com). Pytania dotyczące nowego programu wykorzystującego zalety partnerów mogą być wysyłane do [advantg@microsoft.com](mailto:advantg@microsoft.com).  
   
- Informacje dotyczące obsługi poszczególnych żądań znajduje się w temacie [poszczególnych żądań pomocy technicznej](http://go.microsoft.com/fwlink/?LinkID=82385).  
+ Informacje o poszczególnych żądaniach pomocy technicznej można znaleźć w [poszczególnych żądaniach pomocy technicznej](https://go.microsoft.com/fwlink/?LinkID=82385).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Porozmawiaj z nami](../ide/talk-to-us.md)

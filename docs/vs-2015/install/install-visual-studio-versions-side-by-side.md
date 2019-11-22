@@ -13,17 +13,17 @@ caps.latest.revision: 48
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: d040353aadbc448b6608cd11fc78a134872fdafa
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: a146872561c4be5fe48016c17eb64ad6f854106a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65693563"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298024"
 ---
-# <a name="install-visual-studio-versions-side-by-side"></a>Instalowanie programu Visual Studio wersje Side-by-Side
+# <a name="install-visual-studio-versions-side-by-side"></a>Instalowanie obok siebie różnych wersji programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Ta wersja programu Visual Studio można zainstalować na komputerze, na którym jest już zainstalowana starsza wersja. Jeśli wystąpi błąd instalacji, możesz użyć [narzędzie do zbierania dzienników](http://go.microsoft.com/fwlink/?LinkId=262077) do zbierania informacji o awarii, dzięki czemu użytkownik może samodzielnie zdebugować problemy.
+Ta wersja programu Visual Studio można zainstalować na komputerze, na którym jest już zainstalowana starsza wersja. Jeśli wystąpi błąd instalacji, możesz użyć [narzędzie do zbierania dzienników](https://go.microsoft.com/fwlink/?LinkId=262077) do zbierania informacji o awarii, dzięki czemu użytkownik może samodzielnie zdebugować problemy.
 
 > [!NOTE]
 > Zaleca się zainstalowanie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wersje w kolejności, w której zostały wydane. Na przykład należy zainstalować program Visual Studio 2013, przed zainstalowaniem programu Visual Studio 2015.
@@ -36,7 +36,7 @@ Ta wersja programu Visual Studio można zainstalować na komputerze, na którym 
 
 - Jeśli odinstalujesz daną wersję programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] na komputerze, który ma więcej niż jedna wersja zainstalowana, skojarzenia plików dla [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] są usuwane dla wszystkich wersji. Możesz ponownie zamapować te skojarzenia plików za pomocą **Przywróć skojarzenia plików** znajdujący się na **środowiska**, **ogólne** stronie [opcje](../ide/reference/general-environment-options-dialog-box.md) okno dialogowe.
 
-- Program Visual Studio nie aktualizuje automatycznie rozszerzeń, ponieważ nie wszystkie rozszerzenia są zgodne. Należy ponownie zainstalować rozszerzenia z [Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkId=178891) lub od wydawcy oprogramowania.
+- Program Visual Studio nie aktualizuje automatycznie rozszerzeń, ponieważ nie wszystkie rozszerzenia są zgodne. Należy ponownie zainstalować rozszerzenia z [Visual Studio Marketplace](https://go.microsoft.com/fwlink/?LinkId=178891) lub od wydawcy oprogramowania.
 
 ## <a name="net-framework-versions-and-side-by-side-installations"></a>Wersje programu .NET framework i instalacje Side-by-Side
 

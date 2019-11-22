@@ -12,12 +12,12 @@ caps.latest.revision: 27
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: e4c234d7b13b5c2211c833ee843ea80649c231a4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 13f943baef21560132f2f9b9ba98c0325540fbf2
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667644"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301082"
 ---
 # <a name="enhancing-code-quality-with-team-project-check-in-policies"></a>Udoskonalanie jakości kodu z zasadami ewidencjowania projektu zespołowego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,4 +56,4 @@ Korzystając z Kontrola wersji serwera Team Foundation (TFVC), można utworzyć 
 ## <a name="external-resources"></a>Zasoby zewnętrzne
 
 ### <a name="guidance"></a>Wskazówki
- [Testowanie w celu ciągłego dostarczania za pomocą programu Visual Studio 2012 — Rozdział 2: testowanie jednostkowe: testowanie wewnątrz](http://go.microsoft.com/fwlink/?LinkID=255188)
+ [Testowanie w celu ciągłego dostarczania za pomocą programu Visual Studio 2012 — Rozdział 2: testowanie jednostkowe: testowanie wewnątrz](https://go.microsoft.com/fwlink/?LinkID=255188)

@@ -1,5 +1,5 @@
 ---
-title: InstallShield Limited Edition | Dokumentacja firmy Microsoft
+title: InstallShield Limited Edition | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -9,27 +9,27 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ab2f063f684407c89cd3ec73cd256d0219805b66
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2e56618138fccf6ac431741769b1d4b5ebe7bad4
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63409428"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295123"
 ---
 # <a name="installshield-limited-edition"></a>InstallShield Limited Edition
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Za pomocą programu InstallShield Limited Edition, można utworzyć pliku Instalatora i rozpowszechniać ją wśród użytkowników tak, aby mogą zainstalować aplikację lub składnik bez połączenia z siecią. InstallShield Limited Edition jest bezpłatne dla użytkowników wersji programu Visual Studio Professional i Enterprise. Zastępuje ona technologii Instalatora Windows, która nie obsługuje programu Visual Studio. Alternatywnie można rozpowszechniać aplikacje i składniki przy użyciu technologii ClickOnce, która wymaga połączenia sieciowego. Zobacz [wdrażania i zabezpieczeń ClickOnce](../deployment/clickonce-security-and-deployment.md).  
+Korzystając z programu InstallShield Limited Edition, można utworzyć plik instalacyjny i przekazać go do użytkowników, aby mogli zainstalować aplikację lub składnik pulpitu bez połączenia z siecią. InstallShield Limited Edition jest bezpłatna dla użytkowników Visual Studio Professional i Enterprise Edition. Zastępuje on technologię Instalator Windows, która nie jest już obsługiwana przez program Visual Studio. Alternatywnie można dystrybuować aplikacje i składniki przy użyciu technologii ClickOnce, która wymaga łączności sieciowej. Zobacz [zabezpieczenia i wdrażanie technologii ClickOnce](../deployment/clickonce-security-and-deployment.md).  
   
 > [!NOTE]
-> Możesz kontynuować korzystanie z Instalatora Windows projekty utworzone we wcześniejszych wersjach programu Visual Studio po zainstalowaniu rozszerzenia projektów Instalatora Visual Studio. Zobacz [Instalatora programu Visual Studio projektów rozszerzenia](http://blogs.msdn.com/b/visualstudio/archive/2014/04/17/visual-studio-installer-projects-extension.aspx).  
+> Można nadal używać projektów Instalator Windows utworzonych we wcześniejszych wersjach programu Visual Studio, instalując rozszerzenie projekty Instalator programu Visual Studio. Zobacz [Instalator programu Visual Studio rozszerzenia projektów](https://devblogs.microsoft.com/visualstudio/visual-studio-installer-projects-extension/).  
   
-### <a name="to-enable-installshield-limited-edition"></a>Aby włączyć InstallShield Limited Edition  
+### <a name="to-enable-installshield-limited-edition"></a>Aby włączyć program InstallShield Limited Edition  
   
 1. Na pasku menu wybierz **pliku**, **New**, **projektu**.  
   
-2. W **nowy projekt** okna dialogowego rozwiń **inne typy projektów** węzła, a następnie wybierz **instalacja i wdrożenie** węzła.  
+2. W oknie dialogowym **Nowy projekt** rozwiń węzeł **Inne typy projektów** , a następnie wybierz węzeł **Instalacja i wdrożenie** .  
   
-3. Na liście szablonów wybierz **Włącz InstallShield Limited Edition**, a następnie wybierz **OK** przycisku.  
+3. Na liście szablon wybierz opcję **Włącz InstallShield Limited Edition**, a następnie wybierz przycisk **OK** .  
   
-4. W oknie przeglądarki, zapoznaj się z instrukcjami, a następnie wybierz **przejdź do witryny sieci web pobierania** łącza.
+4. W otwartym oknie przeglądarki zapoznaj się z instrukcjami, a następnie wybierz łącze **Przejdź do witryny pobierania sieci Web** .

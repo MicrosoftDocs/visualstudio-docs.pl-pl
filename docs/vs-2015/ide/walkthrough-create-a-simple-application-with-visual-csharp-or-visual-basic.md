@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bf06151265c1647de29725917624c5984577bf6a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d5e41dbf3422374add68e351da1e4b703772a3a4
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658601"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296861"
 ---
 # <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>Wskazówki: Tworzenie prostej aplikacji z użyciem Visual C# lub Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,21 +23,21 @@ Wykonując polecenia tego instruktażu, zapoznasz się z wieloma narzędziami, o
 
  Ten temat zawiera następujące sekcje:
 
- [Konfigurowanie środowiska IDE](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md#BKMK_ConfigureIDE)
+ {1&gt;Konfigurowanie IDE&lt;1}
 
  [Tworzenie prostej aplikacji](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md#BKMK_CreateApp)
 
  [Debugowanie i testowanie aplikacji](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md#BKMK_DebugTest)
 
 > [!NOTE]
-> Ten instruktaż jest oparty na programie Visual Studio Professional. Oferuje on szablon aplikacji WPF, na którym będziesz tworzył projekt z tego instruktażu. Wersja Visual Studio Express for Windows Desktop również oferuje ten szablon, ale wersje Visual Studio Express for Windows i Visual Studio Express for Web go nie mają. Aby uzyskać informacje wprowadzające dotyczące korzystania z Visual Studio Express dla systemu Windows, zobacz [Centrum deweloperów dla aplikacji do sklepu Windows](https://msdn.microsoft.com/windows/apps/br229519). Informacje wprowadzające dotyczące korzystania z Visual Studio Express dla sieci Web znajdują się w temacie [Rozpoczynanie pracy z usługą ASP.NET](http://www.asp.net/get-started). Ponadto, wersja programu Visual Studio i ustawienia, których używasz, określają nazwy i lokalizacje niektórych elementów interfejsu użytkownika. Zobacz [Dostosowywanie ustawień programistycznych w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Ten instruktaż jest oparty na programie Visual Studio Professional. Oferuje on szablon aplikacji WPF, na którym będziesz tworzył projekt z tego instruktażu. Wersja Visual Studio Express for Windows Desktop również oferuje ten szablon, ale wersje Visual Studio Express for Windows i Visual Studio Express for Web go nie mają. Aby uzyskać informacje wprowadzające dotyczące korzystania z Visual Studio Express dla systemu Windows, zobacz [Centrum deweloperów dla aplikacji do sklepu Windows](https://msdn.microsoft.com/windows/apps/br229519). Informacje wprowadzające dotyczące korzystania z Visual Studio Express dla sieci Web znajdują się w temacie [Rozpoczynanie pracy z usługą ASP.NET](https://dotnet.microsoft.com/learn/aspnet/hello-world-tutorial/intro). Ponadto, wersja programu Visual Studio i ustawienia, których używasz, określają nazwy i lokalizacje niektórych elementów interfejsu użytkownika. Zobacz [Dostosowywanie ustawień środowiska deweloperskiego w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="BKMK_ConfigureIDE"></a>Konfigurowanie środowiska IDE
- Po uruchomieniu programu Visual Studio po raz pierwszy w programie Visual Studio zostanie wyświetlony komunikat z prośbą o zalogowanie się przy użyciu konta usługi firmy Microsoft (MSA), [Zaloguj się do programu Visual Studio](http://blogs.msdn.com/b/visualstudio/archive/2013/06/28/welcome-sign-in-to-visual-studio.aspx). Nie musisz się zalogować i możesz zrobić to później.
+ Po uruchomieniu programu Visual Studio po raz pierwszy w programie Visual Studio zostanie wyświetlony komunikat z prośbą o zalogowanie się przy użyciu konta usługi firmy Microsoft (MSA), [Zaloguj się do programu Visual Studio](https://devblogs.microsoft.com/visualstudio/welcome-sign-in-to-visual-studio/). Nie musisz się zalogować i możesz zrobić to później.
 
  W przypadku uruchamiania programu Visual Studio należy wybrać kombinację ustawień, która stosuje zestaw wstępnie zdefiniowanych dostosowań do IDE. Każda kombinacja ustawień została zaprojektowana w celu ułatwienia tworzenia aplikacji.
 
- W tym instruktażu przyjęto założenie, że zastosowano **Ogólne ustawienia programowania**, które stosuje najmniej dostosowanie do IDE. Jeśli wybrano już C# lub Visual Basic (obie opcje są dobrane), nie trzeba zmieniać ustawień.  Jeśli chcesz zmienić ustawienia, możesz użyć **Kreatora importowania i eksportowania ustawień**. Zobacz [Dostosowywanie ustawień programistycznych w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+ W tym instruktażu przyjęto założenie, że zastosowano **Ogólne ustawienia programowania**, które stosuje najmniej dostosowanie do IDE. Jeśli wybrano już C# lub Visual Basic (obie opcje są dobrane), nie trzeba zmieniać ustawień.  Jeśli chcesz zmienić ustawienia, możesz użyć **Kreatora importowania i eksportowania ustawień**. Zobacz [Dostosowywanie ustawień środowiska deweloperskiego w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
  Po otwarciu programu Visual Studio widzisz okna narzędzi, menu i paski narzędzi oraz przestrzeń głównego okna. Okna narzędzi są zadokowane po lewej i prawej stronie okna aplikacji, z **szybkim uruchamianiem**, paskiem menu i standardowym paskiem narzędzi u góry. Na środku okna aplikacji znajduje się **Strona Start**. Podczas ładowania rozwiązania lub projektu, Edytory i projektanci pojawiają się w miejscu, w którym znajduje się **Strona początkowa** . Podczas opracowywania aplikacji spędzisz większość czasu w tym środkowym obszarze.
 
@@ -69,7 +69,7 @@ Wykonując polecenia tego instruktażu, zapoznasz się z wieloma narzędziami, o
 
    Motyw kolorów używany do obrazów w pozostałej części tego instruktażu jest motywem jasnym. Aby uzyskać więcej informacji na temat dostosowywania środowiska IDE, zobacz [Dostosowywanie ustawień deweloperskich w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
-## <a name="BKMK_CreateApp"></a>Tworzenie prostej aplikacji
+## <a name="BKMK_CreateApp"></a> Tworzenie prostej aplikacji
 
 ### <a name="create-the-project"></a>Utwórz projekt
  Podczas tworzenia aplikacji w programie Visual Studio, należy najpierw utworzyć projekt i rozwiązanie. Na potrzeby tego przykładu utworzysz projekt Windows Presentation Foundation (WPF).
@@ -92,7 +92,7 @@ Wykonując polecenia tego instruktażu, zapoznasz się z wieloma narzędziami, o
 
     ![Tworzenie projektu WPF języka&#35; Visual C, HelloWPFApp](../ide/media/exploreide-newprojectcsharp.png "ExploreIDE-NewProjectcsharp")
 
-   Program Visual Studio tworzy projekt i rozwiązanie HelloWPFApp, a **Eksplorator rozwiązań** wyświetla różne pliki. Projektant WPF przedstawia widok projektu i widok XAML MainWindow. XAML w widoku złożonym. Można przesuwać rozdzielacz, aby pokazać więcej lub mniej jednego widoku.  Możesz zobaczyć tylko widok wizualizacji lub tylko widok XAML. (Aby uzyskać więcej informacji, zobacz [WPF Designer dla Windows Forms deweloperów](https://msdn.microsoft.com/47ad0909-e89b-4996-b4ac-874d929f94ca)). Następujące elementy są wyświetlane w **Eksplorator rozwiązań**:
+   Program Visual Studio tworzy projekt i rozwiązanie HelloWPFApp, a **Eksplorator rozwiązań** wyświetla różne pliki. Projektant WPF przedstawia widok projektu i widok XAML MainWindow. XAML w widoku złożonym. Można przesuwać rozdzielacz, aby pokazać więcej lub mniej jednego widoku.  Możesz zobaczyć tylko widok wizualizacji lub tylko widok XAML. (Aby uzyskać więcej informacji, zobacz [WPF Designer dla Windows Forms deweloperów](https://msdn.microsoft.com/47ad0909-e89b-4996-b4ac-874d929f94ca)). Następujące elementy są wyświetlane w **Eksploratora rozwiązań**:
 
    Rysunek 5: Elementy projektu
 
@@ -106,7 +106,7 @@ Wykonując polecenia tego instruktażu, zapoznasz się z wieloma narzędziami, o
 
     ![okno Właściwości z wyróżnioną nazwą pliku](../ide/media/exploreide-filenameinpropertieswindow.png "ExploreIDE-FilenameinPropertiesWindow")
 
-    **Eksplorator rozwiązań** pokazuje, że nazwa pliku to teraz Greetings. XAML, a po rozwinięciu węzła MainWindow. XAML (poprzez umieszczenie fokusu w węźle i naciśnięcie klawisza rightarrow), zobaczysz nazwę MainWindow. XAML. vb lub MainWindow.XAML.cs jest teraz Greetings. XAML. vb lub Greetings.xaml.cs. Ten plik kodu jest zagnieżdżony w węźle pliku. XAML, aby pokazać, że są one ściśle powiązane ze sobą.
+    **Eksplorator rozwiązań** pokazuje, że nazwa pliku to teraz Greetings. XAML, a po rozwinięciu węzła MainWindow. XAML (poprzez umieszczenie fokusu w węźle i naciśnięcie klawisza rightarrow), zobaczysz nazwę MainWindow. XAML. vb lub MainWindow.XAML.cs jest teraz Greetings. XAML. vb lub Greetings.XAML.cs. Ten plik kodu jest zagnieżdżony w węźle pliku. XAML, aby pokazać, że są one ściśle powiązane ze sobą.
 
    > [!WARNING]
    > Ta zmiana powoduje wystąpienie błędu. Na dalszym etapie dowiesz się, jak go debugować i naprawiać.
@@ -329,7 +329,7 @@ Wykonując polecenia tego instruktażu, zapoznasz się z wieloma narzędziami, o
 
     ![Kompiluj polecenie rozwiązania w menu Kompilacja](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
 
-   Gratulujemy zakończenia instruktażu! Można znaleźć plik. exe, który został utworzony w ramach rozwiązania i katalogu projektu (..\HelloWPFApp\HelloWPFApp\bin\Release \\). Jeśli chcesz poznać więcej przykładów, zobacz [Visual Studio Samples](../ide/visual-studio-samples.md).
+   Gratulujemy zakończenia instruktażu! Można znaleźć plik. exe, który został utworzony w ramach rozwiązania i katalogu projektu (..\HelloWPFApp\HelloWPFApp\bin\Release\\). Jeśli chcesz poznać więcej przykładów, zobacz [Visual Studio Samples](../ide/visual-studio-samples.md).
 
 ## <a name="see-also"></a>Zobacz też
  [Co nowego w programie Visual studio 2015](../what-s-new-in-visual-studio-2015.md) [wprowadzenie do programowania przy użyciu](../ide/get-started-developing-with-visual-studio.md) [porad dotyczących produktywności](../ide/productivity-tips-for-visual-studio.md) programu Visual Studio

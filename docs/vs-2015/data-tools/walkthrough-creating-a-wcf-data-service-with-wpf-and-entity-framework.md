@@ -14,12 +14,12 @@ caps.latest.revision: 28
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f26d81c3ac80b889f90e2a729545f0db0e52fa1a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5abbb647f93c991d2de626a84e82f47e03f6f71e
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660234"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299615"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Przewodnik: Tworzenie usługi danych programu WCF przy użyciu WPF i Entity Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ W tym instruktażu pokazano, jak utworzyć prostą [!INCLUDE[ss_data_service](..
 
 - Przykładowa bazy danych Northwind.
 
-     Jeśli nie masz tej bazy danych na komputerze deweloperskim, możesz ją pobrać z [Centrum pobierania Microsoft](http://go.microsoft.com/fwlink/?LinkID=98088). Aby uzyskać instrukcje, zobacz [Pobieranie przykładowych baz danych](https://msdn.microsoft.com/library/ef9d69a1-9461-43fe-94bb-7c836754bcb5).
+     Jeśli nie masz tej bazy danych na komputerze deweloperskim, możesz ją pobrać z [Centrum pobierania Microsoft](https://go.microsoft.com/fwlink/?LinkID=98088). Aby uzyskać instrukcje, zobacz [Pobieranie przykładowych baz danych](https://msdn.microsoft.com/library/ef9d69a1-9461-43fe-94bb-7c836754bcb5).
 
 ## <a name="creating-the-service"></a>Tworzenie usługi
  Aby utworzyć [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)], należy dodać projekt sieci Web, utworzyć [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)], a następnie utworzyć usługę z modelu.
@@ -94,7 +94,7 @@ W tym instruktażu pokazano, jak utworzyć prostą [!INCLUDE[ss_data_service](..
 7. Na stronie **Wybierz wersję** wybierz przycisk opcji **Entity Framework 5,0** , a następnie wybierz przycisk **dalej** .
 
    > [!NOTE]
-   > Aby można było użyć najnowszej wersji Entity Framework 6 z usługami WCF, należy zainstalować pakiet NuGet dostawcy Usługi danych programu WCF Entity Framework. Zobacz [używanie usługi danych programu WCF 5.6.0 z Entity Framework 6 +](http://blogs.msdn.com/b/odatateam/archive/2013/10/02/using-wcf-data-services-5-6-0-with-entity-framework-6.aspx).
+   > Aby można było użyć najnowszej wersji Entity Framework 6 z usługami WCF, należy zainstalować pakiet NuGet dostawcy Usługi danych programu WCF Entity Framework. Zobacz [używanie usługi danych programu WCF 5.6.0 z Entity Framework 6 +](https://devblogs.microsoft.com/odata/using-wcf-data-services-5-6-0-with-entity-framework-6/).
 
 8. Na stronie **Wybierz obiekty bazy danych** rozwiń węzeł **tabele** , zaznacz pole wyboru **klienci** , a następnie wybierz przycisk **Zakończ** .
 

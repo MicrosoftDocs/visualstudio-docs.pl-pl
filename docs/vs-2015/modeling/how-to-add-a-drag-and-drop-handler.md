@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 244bfeb48a0c0a572cc58e2544cfb0f4336441c8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6ca68005f71d642650a2d9b024a16883de5eaddf
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671662"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298942"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Porady: dodawanie obsługi przeciągania i upuszczania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Można dodać programy obsługi dla zdarzeń przeciągania i upuszczania do DSL,
 
 - Pierwsze dwie sekcje opisują alternatywne metody definiowania procedury obsługi gestu:
 
-  - [Definiowanie obsługi gestów przez zastępowanie metod ShapeElement](#overrideShapeElement). `OnDragDrop`, `OnDoubleClick`, `OnDragOver` i innych metod można przesłonić.
+  - [Definiowanie obsługi gestów przez zastępowanie metod ShapeElement](#overrideShapeElement). `OnDragDrop`, `OnDoubleClick`, `OnDragOver`i innych metod można przesłonić.
 
   - [Definiowanie obsługi gestów przy użyciu MEF](#MEF). Użyj tej metody, jeśli chcesz, aby deweloperzy innych firm mogli definiować własne programy obsługi na potrzeby języka DSL. Użytkownicy mogą zdecydować się na zainstalowanie rozszerzeń innych firm po zainstalowaniu DSL.
 
@@ -48,7 +48,7 @@ using System.Linq;
 
  W nowym pliku Zdefiniuj klasę częściową klasy kształtu lub diagramu, która powinna reagować na operację przeciągania. Zastąp następujące metody:
 
-- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragOver%2A> — ta metoda jest wywoływana, gdy wskaźnik myszy zostanie przesunięty do kształtu podczas operacji przeciągania. Metoda powinna sprawdzić element, który użytkownik przeciągnieł, i ustawić właściwość efekt, aby wskazać, czy użytkownik może upuścić element w tym kształcie. Właściwość Effect określa wygląd kursora nad tym kształtem, a także określa, czy `OnDragDrop()` będzie wywoływana, gdy użytkownik zwolni przycisk myszy.
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragOver%2A>— ta metoda jest wywoływana, gdy wskaźnik myszy zostanie przesunięty do kształtu podczas operacji przeciągania. Metoda powinna sprawdzić element, który użytkownik przeciągnieł, i ustawić właściwość efekt, aby wskazać, czy użytkownik może upuścić element w tym kształcie. Właściwość Effect określa wygląd kursora nad tym kształtem, a także określa, czy `OnDragDrop()` będzie wywoływana, gdy użytkownik zwolni przycisk myszy.
 
   ```csharp
   partial class MyShape // MyShape generated from DSL Definition.
@@ -136,7 +136,7 @@ using System.Linq;
 
  Aby poznać formaty, w których dostępne są informacje źródłowe przeciągania, uruchom kod w trybie debugowania, ustawiając punkt przerwania w pozycji do `OnDragOver()` lub `CanDragDrop()`. Sprawdź wartości parametru `DiagramDragEventArgs`. Informacje są dostępne w dwóch formach:
 
-- <xref:System.Windows.Forms.IDataObject> `Data` — ta właściwość przenosi serializowane wersje obiektów źródłowych, zwykle w więcej niż jednym formacie. Najbardziej przydatne funkcje to:
+- <xref:System.Windows.Forms.IDataObject>`Data` — ta właściwość przenosi serializowane wersje obiektów źródłowych, zwykle w więcej niż jednym formacie. Najbardziej przydatne funkcje to:
 
   - diagramEventArgs. Data. GetDataFormats () — wyświetla listę formatów, w których można zdekodować przeciągany obiekt. Na przykład jeśli użytkownik przeciągnie plik z pulpitu, dostępne są następujące formaty: nazwa pliku ("`FileNameW`").
 
@@ -170,9 +170,9 @@ using System.Linq;
 
 1. Udostępnienie źródłowej magistrali DSL przez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Model Bus:
 
-    1. Pobierz i zainstaluj rozszerzenie magistrali modelu programu Visual Studio, jeśli nie jest jeszcze zainstalowane. Aby uzyskać więcej informacji, zobacz temat [Wizualizacja i Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579).
+    1. Pobierz i zainstaluj rozszerzenie magistrali modelu programu Visual Studio, jeśli nie jest jeszcze zainstalowane. Aby uzyskać więcej informacji, zobacz [wizualizacji i modelowania SDK](https://go.microsoft.com/fwlink/?LinkID=185579).
 
-    2. Otwórz plik definicji DSL źródła DSL w projektant DSL. Kliknij prawym przyciskiem myszy powierzchnię projektu, a następnie kliknij pozycję **Włącz ModelBus**. W oknie dialogowym wybierz jedną lub obie opcje.  Kliknij przycisk **OK**. Do rozwiązania DSL zostanie dodany nowy projekt "ModelBus".
+    2. Otwórz plik definicji DSL źródła DSL w projektant DSL. Kliknij prawym przyciskiem myszy powierzchnię projektu, a następnie kliknij przycisk **Włącz Modelbus**. W oknie dialogowym wybierz jedną lub obie opcje.  Kliknij przycisk **OK**. Do rozwiązania DSL zostanie dodany nowy projekt "ModelBus".
 
     3. Kliknij kolejno pozycje **Przekształć wszystkie szablony** i Skompiluj ponownie rozwiązanie.
 

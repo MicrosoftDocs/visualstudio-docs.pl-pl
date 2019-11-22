@@ -18,12 +18,12 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 47083fe3f496cb855a7fb7101a886290e53cfbce
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 03ecd3fcc253f255afc59c2d6412f3864fe253b8
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72619132"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300598"
 ---
 # <a name="creating-solutions-and-projects"></a>Tworzenie rozwiązań i projektów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,29 +31,29 @@ ms.locfileid: "72619132"
 Projekty to logiczne kontenery dla wszystkich elementów, które są potrzebne do skompilowania aplikacji. Podczas tworzenia projektu, wybierając pozycję  **&#124; plik nowy &#124; projekt** z menu głównego, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] tworzy rozwiązanie, które je zawiera. W razie potrzeby możesz dodać nowe lub istniejące projekty do rozwiązania. Można tworzyć projekty z istniejących plików kodu, a także tworzyć projekty tymczasowe (tylko platforma .NET), które zostaną usunięte po wykonaniu tych czynności.
 
 > [!NOTE]
-> Opisy w tym temacie są oparte na programie Visual Studio Community Edition. Okna dialogowe i polecenia menu mogą się różnić od opisanych tutaj, w zależności od ustawień lub wersji programu Visual Studio. Aby zmienić ustawienia, wybierz **Importuj i Eksportuj ustawienia** w menu **Narzędzia** . Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień deweloperskich w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Opisy w tym temacie są oparte na wersji programu Visual Studio Community. Polecenia menu i okien dialogowych mogą różnić się od tych opisanych w tym miejscu, w zależności od ustawień lub wersji programu Visual Studio. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="create-a-project-from-an-installed-project-template"></a>Tworzenie projektu na podstawie zainstalowanego szablonu projektu
  **Plik &#124; nowy &#124; projekt** z menu głównego, aby wyświetlić okno dialogowe Nowy projekt. W okienku po lewej stronie w obszarze  **&#124; szablony z niewyższym** wybieraniem języka programowania i platformy lub technologii, a następnie wybierz spośród dostępnych szablonów w środkowym okienku.
 
  W oknie dialogowym **Nowy projekt** lista rozwijana **rozwiązanie** umożliwia utworzenie nowego projektu w nowym lub istniejącym rozwiązaniu lub w nowym wystąpieniu programu Visual Studio.
 
-## <a name="create-a-project-from-existing-code-files"></a>Tworzenie projektu na podstawie istniejących plików kodu
+## <a name="create-a-project-from-existing-code-files"></a>Tworzenie projektu z istniejących plików kodu
  Jeśli masz kolekcję luźnych plików źródłowych, możesz łatwo utworzyć projekt, który go zawiera. Wybierz **pozycję &#124; plik &#124;nowy projekt z istniejącego kodu** , aby uruchomić **Kreatora tworzenia projektu z istniejących plików z kodem** i postępuj zgodnie z monitami.
 
 > [!TIP]
 > Ta opcja działa najlepiej w przypadku stosunkowo prostych kolekcji plików.
 
-## <a name="create-a-temporary-project-c-and-visual-basic"></a>Tworzenie projektu tymczasowego (C# i Visual Basic)
+## <a name="create-a-temporary-project-c-and-visual-basic"></a>Utwórz projekt tymczasowy (C# i Visual Basic)
  Pracując z projektami tymczasowymi, można tworzyć i eksperymentować z projektem .NET bez określania lokalizacji dysku. Podczas tworzenia projektu, wystarczy wybrać typ projektu i szablon i określić nazwę w oknie dialogowym **Nowy projekt** . W dowolnym momencie podczas pracy z projektem tymczasowym można go zapisać lub można go odrzucić.
 
-## <a name="create-a-net-project-that-targets-a-specific-version-of-the-net-framework"></a>Utwórz projekt platformy .NET, który jest przeznaczony dla określonej wersji .NET Framework
+## <a name="create-a-net-project-that-targets-a-specific-version-of-the-net-framework"></a>Tworzenie projektu platformy .NET, który jest przeznaczony dla określonej wersji programu .NET Framework
  Można utworzyć projekt, który ma być przeznaczony dla wcześniejszych wersji .NET Framework przy użyciu menu rozwijanego wersja **.NET Framework** w górnej części okna dialogowego **Nowy projekt** . Ustaw tę wartość przed wybraniem szablonu projektu, ponieważ na liście pojawią się tylko szablony zgodne z tą .NET Framework wersją.
 
  Aby uzyskać dostęp do wersji Framework wcześniejszych niż 4,0, w systemie musi być zainstalowany .NET Framework 3,5.
 
 ## <a name="downloading-sample-solutions"></a>Pobieranie przykładowych rozwiązań
- Możesz użyć programu Visual Studio do pobrania i zainstalowania przykładowych rozwiązań z [galerii kodu MSDN](http://go.microsoft.com/fwlink/?LinkId=254185).
+ Możesz użyć programu Visual Studio do pobrania i zainstalowania przykładowych rozwiązań z [galerii kodu MSDN](https://go.microsoft.com/fwlink/?LinkId=254185).
 
  Możesz pobrać przykłady osobno lub pobrać pakiet przykładowy zawierający powiązane przykłady, które udostępniają technologię lub temat. Otrzymasz powiadomienie, gdy zostaną opublikowane zmiany kodu źródłowego dla pobranych próbek.
 
@@ -89,7 +89,7 @@ Projekty to logiczne kontenery dla wszystkich elementów, które są potrzebne d
 
 1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy rozwiązanie, które chcesz usunąć, a następnie wybierz polecenie **Otwórz folder w Eksploratorze plików**.
 
-2. W Eksploratorze plików przejdź do góry o jeden poziom.
+2. W Eksploratorze plików Przejdź jeden poziom w górę.
 
 3. Wybierz katalog zawierający rozwiązanie i naciśnij klawisz Delete.
 

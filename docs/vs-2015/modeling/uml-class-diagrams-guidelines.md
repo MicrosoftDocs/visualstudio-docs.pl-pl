@@ -17,12 +17,12 @@ caps.latest.revision: 56
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 804678985ae30d833b57fe7589f0903cf1edb291
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c170827825d772f4d97cd22f0b5754232e8d2257
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652275"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297286"
 ---
 # <a name="uml-class-diagrams-guidelines"></a>Diagramy klas UML: Zalecenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ W programie Visual Studio można użyć *diagramu klas UML* do opisywania typów
  Aby sprawdzić, które wersje programu Visual Studio obsługują tę funkcję, zobacz [Obsługa wersji dla narzędzi architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 > [!NOTE]
-> Ten temat dotyczy diagramów klas UML. Istnieje inny rodzaj diagramów klas, które można tworzyć i używać w celu wizualizacji kodu programu. Zobacz [projektowanie i wyświetlanie klas i typów](http://go.microsoft.com/fwlink/?LinkId=142231).
+> Ten temat dotyczy diagramów klas UML. Istnieje inny rodzaj diagramów klas, które można tworzyć i używać w celu wizualizacji kodu programu. Zobacz [projektowanie i wyświetlanie klas i typów](https://go.microsoft.com/fwlink/?LinkId=142231).
 
 ## <a name="Using"></a>Korzystanie z diagramów klas UML
  Można używać diagramu klas UML do różnych celów:
@@ -180,7 +180,7 @@ W programie Visual Studio można użyć *diagramu klas UML* do opisywania typów
 
 - Typem zdefiniowanym w modelu.
 
-- Wartość sparametryzowanego typu szablonu, \<Parameter zapisany szablon >. Zobacz [typy szablonów](#Templates).
+- Wartość sparametryzowanego typu szablonu, zapisaną\<parametru szablonu >. Zobacz [typy szablonów](#Templates).
 
   Możesz także wpisać nazwę typu, który nie został jeszcze zdefiniowany w modelu. Nazwa zostanie wyświetlona w obszarze **nieokreślone typy** w EKSPLORATORZE modelu UML.
 
@@ -256,7 +256,7 @@ W programie Visual Studio można użyć *diagramu klas UML* do opisywania typów
 visibility attribute-name : Type
 ```
 
- \- lub-
+ \- lub —
 
 ```
 visibility operation-name (parameter1 : Type1, ...) : Type
@@ -346,12 +346,12 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
 - **Agregacja**. Pojawia się jako kształt rombu na jednym końcu łącznika. Można jej używać do wskazania, że wystąpienia w roli agregacji posiadają lub zawierają wystąpienia innych.
 
-- **Jest nawigować**. Jeśli ma wartość true dla tylko jednej roli, pojawia się strzałka w kierunku, dla którego nawigacja jest możliwa. Służy to do wskazania możliwości nawigacji dla łączy i relacji bazodanowych w oprogramowaniu.
+- {1&gt;Jest nawigowalna&lt;1}. Jeśli ma wartość true dla tylko jednej roli, pojawia się strzałka w kierunku, dla którego nawigacja jest możliwa. Służy to do wskazania możliwości nawigacji dla łączy i relacji bazodanowych w oprogramowaniu.
 
   Aby uzyskać szczegółowe informacje o tych i innych właściwościach, zobacz [Właściwości skojarzeń na diagramach klas UML](../modeling/properties-of-associations-on-uml-class-diagrams.md).
 
 ### <a name="navigability"></a>Możliwość nawigacji
- Podczas rysowania asocjacji, ma ona strzałkę na jednym końcu, oznaczającą, że nawigacja jest możliwa w tym kierunku. Jest to przydatne, jeśli diagram klas reprezentuje klasy w oprogramowaniu, a asocjacje reprezentują wskaźniki lub odwołania. Ale kiedy diagram klas służy do reprezentacji obiektów i relacji lub koncepcji biznesowych, reprezentacja możliwości nawigacji jest mniej znacząca. W takim przypadku można preferować rysowanie asocjacji bez strzałek. Można to zrobić, ustawiając właściwość **is nawigacji** na obu końcach skojarzenia na wartość true. Aby to ułatwić, można pobrać przykładowy kod [modelowanie domeny UML](http://code.msdn.microsoft.com/UML-Domain-Modeling-6df6f7f4).
+ Podczas rysowania asocjacji, ma ona strzałkę na jednym końcu, oznaczającą, że nawigacja jest możliwa w tym kierunku. Jest to przydatne, jeśli diagram klas reprezentuje klasy w oprogramowaniu, a asocjacje reprezentują wskaźniki lub odwołania. Ale kiedy diagram klas służy do reprezentacji obiektów i relacji lub koncepcji biznesowych, reprezentacja możliwości nawigacji jest mniej znacząca. W takim przypadku można preferować rysowanie asocjacji bez strzałek. Można to zrobić, ustawiając właściwość **is nawigacji** na obu końcach skojarzenia na wartość true.
 
 ### <a name="attributes-and-associations"></a>Atrybuty i asocjacje
  Asocjacja jest obrazowym sposobem przedstawiania atrybutu. Na przykład, zamiast tworzenia klasy Restauracja z atrybutem typu Menu można narysować asocjację z Restauracji do Menu.
@@ -367,7 +367,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
 - Relacja *generalizacji* między typem wyspecjalizowanym a typem ogólnym
 
-   \- lub-
+   \- lub —
 
 - Relacja *realizacji* między klasą i interfejsem, który implementuje.
 
@@ -422,7 +422,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
     Zostanie wyświetlone okno dialogowe **Edytor kolekcji parametrów szablonu** .
 
-4. Wybierz pozycję **Dodaj**.
+4. Wybierz **Dodaj**.
 
 5. Ustaw właściwość Nazwa na nazwę parametru dla typu szablonu, na przykład `Key`.
 
@@ -473,4 +473,4 @@ visibility operation-name (parameter1 : Type1, ...) : Type
      Aby uzyskać więcej informacji na temat sposobu ustawiania tych właściwości i dostosowywania podanych szablonów, zobacz [generowanie kodu na podstawie diagramów klas UML](../modeling/generate-code-from-uml-class-diagrams.md).
 
 ## <a name="see-also"></a>Zobacz też
- [Edytuj modele UML i diagramy](../modeling/edit-uml-models-and-diagrams.md) [UML klas diagramy:](../modeling/uml-class-diagrams-reference.md) [wymagania użytkownika model](../modeling/model-user-requirements.md) referencyjny [diagramy składników UML](../modeling/uml-component-diagrams-reference.md) : referencyjne diagramy [sekwencji UML](../modeling/uml-sequence-diagrams-reference.md) : referencyjne diagramy [przypadków użycia UML: odwołanie](../modeling/uml-use-case-diagrams-reference.md) [UML Diagramy składników: odwołanie](../modeling/uml-component-diagrams-reference.md)
+ [Edycja modeli UML i diagramów](../modeling/edit-uml-models-and-diagrams.md) [diagramów klas UML: Model referencyjny](../modeling/uml-class-diagrams-reference.md) [wymagania użytkownika](../modeling/model-user-requirements.md) [diagramy składników UML](../modeling/uml-component-diagrams-reference.md) : odniesienia diagramy [sekwencji UML](../modeling/uml-sequence-diagrams-reference.md) : referencyjne diagramy [przypadków użycia UML](../modeling/uml-use-case-diagrams-reference.md) : referencyjne diagramy [składników UML: odwołanie](../modeling/uml-component-diagrams-reference.md)

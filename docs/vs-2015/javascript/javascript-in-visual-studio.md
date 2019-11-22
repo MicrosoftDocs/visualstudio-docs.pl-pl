@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 700417e0cf6bb93c96c0826a7d49d4d0deb7395f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 175cb6f6a8a3f240c244e139406841b0546209cc
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65705786"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295909"
 ---
 # <a name="javascript-in-visual-studio"></a>Język JavaScript w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,13 +25,13 @@ JavaScript jest językiem pierwszej klasy w programie Visual Studio. Podczas pis
 
  Określonych wersji programu Visual Studio lub określone rozszerzenia programu Visual Studio, może być konieczne opracowanie typów określonej aplikacji i usług przy użyciu języków HTML i JavaScript. Poniższa lista zawiera linki do dodatkowych informacji.
 
-- Aby utworzyć aplikacje dla wielu platform przy użyciu Apache Cordova [pobieranie programu Visual Studio Tools for Apache Cordova](http://go.microsoft.com/fwlink/p/?LinkId=397606).
+- Aby utworzyć aplikacje dla wielu platform przy użyciu Apache Cordova [pobieranie programu Visual Studio Tools for Apache Cordova](https://go.microsoft.com/fwlink/p/?LinkId=397606).
 
-- Aby utworzyć [Windows Store](http://dev.windows.com/develop), [Windows Phone](http://dev.windows.com/develop)oraz aplikacje uniwersalne (obsługujących obu platform) [Pobierz narzędzia](https://developer.microsoft.com/windows/downloads).
+- Aby utworzyć [Windows Store](https://developer.microsoft.com/), [Windows Phone](https://developer.microsoft.com/)oraz aplikacje uniwersalne (obsługujących obu platform) [Pobierz narzędzia](https://developer.microsoft.com/windows/downloads).
 
 - Aby utworzyć usług w chmurze, zobacz [witryny Microsoft Azure](https://azure.microsoft.com/documentation/).
 
-- Do tworzenia witryn sieci web i aplikacji sieci web, [można znaleźć w witrynie ASP.NET](http://www.asp.net/get-started/websites).
+- Do tworzenia witryn sieci web i aplikacji sieci web, [można znaleźć w witrynie ASP.NET](https://dotnet.microsoft.com/apps/aspnet/web-apps).
 
   > [!NOTE]
   > Można tworzyć pusta witryna sieci Web platformy ASP.Net i użyć jej do programowania HTML, CSS i JavaScript. Plik Webconfig dostarczanego przez platformę ASP.NET, który powoduje włączenie debugowania w programie Visual Studio (lub po uruchomieniu aplikacji, można użyć narzędzia F12).
@@ -41,11 +41,11 @@ JavaScript jest językiem pierwszej klasy w programie Visual Studio. Podczas pis
 ## <a name="whats-new-in-javascript"></a>Co nowego w języku JavaScript
  W poniższej tabeli wymieniono nowe funkcje języka JavaScript.
 
-|Funkcja|Opis|
+|Cecha|Opis|
 |-------------|-----------------|
 |Klasy|Nowa składnia obsługuje deklaracje [klasy](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/class).|
 |Obietnic|[Obietnic](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise) umożliwia łatwiejsze i czyszcząca asynchronicznego programowania. Promise konstruktory są obsługiwane, wraz z `all` i `race` metody narzędziowe.|
-|Iteratory|Teraz można wykonać iterację za pośrednictwem iterable obiektów (w tym tablice, tablicy obiektów i Iteratory), wywołując zaczepienia iteracji niestandardowych za pomocą instrukcji do wykonania dla wartości każdej różne właściwości. Aby uzyskać więcej informacji, zobacz [Iteratory i generatory kodu](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Iterators_and_Generators). **Uwaga:**  Generatory nie są jeszcze obsługiwane.|
+|Iteratory|Teraz można wykonać iterację za pośrednictwem iterable obiektów (w tym tablice, tablicy obiektów i Iteratory), wywołując zaczepienia iteracji niestandardowych za pomocą instrukcji do wykonania dla wartości każdej różne właściwości. Aby uzyskać więcej informacji, zobacz [Iteratory i generatory kodu](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Iterators_and_Generators). **Uwaga:** generatory nie są jeszcze obsługiwane.|
 |Funkcje|W funkcji strzałkowej (= >) udostępnia skróconej składni `function` — słowo kluczowe, które funkcje leksykalne `this` powiązania.|
 |Nowe metody dla wbudowanych obiektów|[Obiekt Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array), [Math — obiekt](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math), [numer obiektu](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number), [obiektu obiektu](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object), i [ciągu obiektu](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) wbudowane obiekty zawierają wiele nowych funkcji narzędzia i właściwości do manipulowania i inspekcji danych.|
 |Ulepszenia literału obiektu|Obiekty obsługują obecnie obliczone właściwości, metody zwięzłe definicje i oczekiwaliśmy składni skrótu dla właściwości, której wartość jest inicjowany do zmiennej o tej samej nazwie. Aby uzyskać więcej informacji, zobacz [tworzenia obiektów](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object).|

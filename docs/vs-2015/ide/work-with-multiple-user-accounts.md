@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9aa08d68da53f54491439da8e35c28db90f4c508
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2f68328fb243c00c43c8ef454f10ad94c7d004a4
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662657"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296787"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Praca z wieloma kontami użytkowników
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ Jeśli masz wiele kont Microsoft i/lub kont służbowych, możesz dodać je wszy
 
  Po dodaniu wielu kont na jednej maszynie ten zbiór kont zostanie przemobilny, jeśli zalogujesz się do programu Visual Studio na innym komputerze. Należy pamiętać, że chociaż nazwy kont są przenoszone, poświadczenia nie są przekazywane. W związku z tym podczas pierwszej próby użycia zasobów na nowym komputerze zostanie wyświetlony monit o podanie poświadczeń dla tych kont.
 
- W tym instruktażu pokazano, jak dodać wiele kont do programu Visual Studio i jak zobaczyć, że zasoby dostępne z tych kont są odzwierciedlone w miejscach, takich jak okno dialogowe **Dodawanie podłączonej usługi** , **Eksplorator serwera**i **Team Explorer** .
+ W tym instruktażu pokazano, jak dodać wiele kont do programu Visual Studio i jak sprawdzić, czy zasoby dostępne z tych kont są odzwierciedlone w miejscach, takich jak okno dialogowe **Dodawanie podłączonej usługi** , **Eksplorator serwera**i **Team Explorer**.
 
 #### <a name="sign-in-to-visual-studio"></a>Logowanie do programu Visual Studio
 
@@ -56,7 +56,7 @@ Jeśli masz wiele kont Microsoft i/lub kont służbowych, możesz dodać je wszy
 
  ![Okno dialogowe Zmienianie uwierzytelniania dla ASP.NET](../ide/media/vs2015-change-authentication.png "VS2015_change_authentication")
 
- Aby uzyskać więcej informacji na temat różnych rodzajów uwierzytelniania w programie ASP.NET, zobacz [Tworzenie projektów sieci Web ASP.NET w Visual Studio 2013](http://www.asp.net/visual-studio/overview/2013/creating-web-projects-in-visual-studio#orgauth) (informacje o uwierzytelnianiu są nadal istotne dla programu Visual Studio 2015).
+ Aby uzyskać więcej informacji na temat różnych rodzajów uwierzytelniania w programie ASP.NET, zobacz [Tworzenie projektów sieci Web ASP.NET w Visual Studio 2013](https://docs.microsoft.com/aspnet/visual-studio/overview/2013/creating-web-projects-in-visual-studio#orgauth) (informacje o uwierzytelnianiu są nadal istotne dla programu Visual Studio 2015).
 
 ### <a name="access-your-visual-studio-team-services-account"></a>Uzyskaj dostęp do konta Visual Studio Team Services
  Z menu głównego wybierz kolejno pozycje **zespół > Połącz z Team Foundation Server** , aby wyświetlić okno **Team Explorer** . Kliknij pozycję **Wybierz projekty zespołowe**, a następnie w polu listy w obszarze **Wybierz Team Foundation Server**powinien zostać wyświetlony adres URL konta Visual Studio Team Services. Po wybraniu adresu URL, który zostanie zalogowany, bez konieczności ponownego wprowadzania poświadczeń.

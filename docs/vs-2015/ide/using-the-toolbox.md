@@ -27,17 +27,17 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 49f5d1d0cef7ec4d5a6f8ab61c785ea01f77d24b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ba8a37ac9e049455ffe19314dee0e228c3c14c97
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652667"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295608"
 ---
 # <a name="using-the-toolbox"></a>Korzystanie z Przybornika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Za pomocą przybornika można dodawać kontrolki i inne elementy do projektu. Możesz przeciągać i upuszczać różne kontrolki na powierzchnię projektanta, którego używasz, i zmieniać rozmiar i położenie formantów.
+Za pomocą przybornika można dodawać kontrolki i inne elementy do projektu. Możesz przeciągać i upuszczać inne kontrolki na powierzchnię projektanta jest używany i zmień rozmiar i położenie kontrolki.
 
  Przybornik pojawia się w połączeniu z widokami projektanta, takimi jak widok projektanta pliku XAML. W przyborniku są wyświetlane tylko te kontrolki, które mogą być używane w bieżącym projektancie.
 
@@ -50,21 +50,21 @@ Za pomocą przybornika można dodawać kontrolki i inne elementy do projektu. Mo
 
 - **Zmień nazwę elementu** — zmienia nazwę wybranego elementu.
 
-- **Pokaż wszystko** — pokazuje wszystkie możliwe kontrolki (nie tylko te, które mają zastosowanie do bieżącego projektanta).
+- **Pokaż wszystkie** — pokazuje wszystkie możliwe kontrole (nie tylko tych, które są stosowane do bieżącego projektanta).
 
-- **Widok listy** — pokazuje kontrolki na liście pionowej. W przypadku usunięcia zaznaczenia kontrolki są wyświetlane w poziomie.
+- **Widok listy** — zawiera kontrolki w pionie listy. Jeśli nie jest zaznaczone, formanty są wyświetlane w poziomie.
 
-- **Wybierz elementy** — otwiera okno dialogowe **Wybierz elementy przybornika** , aby można było określić elementy, które są wyświetlane w **przyborniku**. Możesz pokazać lub ukryć element, zaznaczając lub usuwając zaznaczenie pola wyboru.
+- **Wybierz elementy** -otwiera **wybierz elementy przybornika** okno dialogowe, aby określić elementy, które pojawiają się w **przybornika**. Możesz pokazać lub ukryć element, zaznaczając lub usuwając zaznaczenie pola wyboru.
 
-- **Sortuj elementy alfabetycznie** — sortuje elementy według nazwy.
+- **Sortowanie elementów alfabetycznie** — Sortuje elementy według nazwy.
 
 - **Resetuj pasek narzędzi** — przywraca domyślne ustawienia i elementy przybornika.
 
 - **Dodaj kartę** — dodaje nową kartę przybornika.
 
-- **Przenieś w górę** — przenosi zaznaczony element w górę.
+- **Przenieś w górę** -Przesuwa wybrany element w górę.
 
-- **Przenieś w dół** — przenosi zaznaczony element w dół.
+- **Przenieś w dół** -Przenosi zaznaczony element w dół.
 
 ## <a name="creating-and-distributing-custom-toolbox-controls"></a>Tworzenie i dystrybuowanie niestandardowych formantów przybornika
- Możesz utworzyć niestandardową kontrolkę przybornika w Visual Basic lub C#wizualizacji, a następnie można rozpocząć od szablonu projektu opartego na [Windows Presentation Foundation](../extensibility/creating-a-wpf-toolbox-control.md) lub [Windows Forms](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md). Następnie można rozesłać swój formant do członków zespołu lub opublikować go w sieci Web za pomocą [Instalatora formantów przybornika](http://download.microsoft.com/download/8/3/6/836657BD-9CCB-4ED4-B9D2-FB769473B284/TCI_whitepaper.docx).
+ Możesz utworzyć niestandardową kontrolkę przybornika w Visual Basic lub C#wizualizacji, a następnie można rozpocząć od szablonu projektu opartego na [Windows Presentation Foundation](../extensibility/creating-a-wpf-toolbox-control.md) lub [Windows Forms](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md). Następnie można rozesłać swój formant do członków zespołu lub opublikować go w sieci Web za pomocą [Instalatora formantów przybornika](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf).

@@ -1,5 +1,5 @@
 ---
-title: Uruchamianie narzędzi profilowania z debugerem lub bez debugera | Dokumentacja firmy Microsoft
+title: Uruchamianie narzędzia profilowania z debugerem lub bez niego | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,134 +9,134 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 806eeba9b3dfee8dc45c90f0a6d2f99ed0772ec7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b242bd0eec4f7faa3f7a27923de289c494ccf798
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68191672"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298209"
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>Uruchamianie narzędzi profilowania z debugerem lub bez debugera
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Program Visual Studio teraz oferuje możliwość wyboru wydajności narzędzia, z których niektóre (na przykład **użycie procesora CPU** i **użycie pamięci**) można uruchamiać z lub bez debugera. Narzędzia do oceny wydajności bez debugera są przeznaczone do uruchamiania na konfiguracje wydania, podczas gdy narzędzia zintegrowane z debugerem są przeznaczone do uruchamiania w konfiguracji debugowania.  
+Program Visual Studio oferuje teraz możliwość wyboru narzędzi do oceny wydajności, a niektóre z nich (na przykład **użycie procesora CPU** i **użycie pamięci**) można uruchomić z debugerem lub bez niego. Narzędzia do oceny wydajności, które nie są debugerem, są przeznaczone do uruchamiania w konfiguracjach wydań, natomiast narzędzia zintegrowane z debugerem są przeznaczone do uruchamiania w konfiguracjach debugowania.  
   
-## <a name="should-i-run-the-tool-with-or-without-the-debugger"></a>Narzędzie należy uruchomić z lub bez debugera?  
- Narzędzia do oceny wydajności zintegrowane z debugerem pozwalają zrobić wiele rzeczy, które nie narzędzi bez debugera, na przykład ustawić punkty przerwania i sprawdzić wartości zmiennych. Narzędzia bez debugera zapewniają środowiska, który jest bliżej co zobaczą użytkownicy wydawanej aplikacji.  
+## <a name="should-i-run-the-tool-with-or-without-the-debugger"></a>Czy należy uruchomić narzędzie z debugerem lub bez niego?  
+ Narzędzia do oceny wydajności zintegrowane z debugerem pozwalają wykonywać wiele narzędzi, które nie są debugerem, nie mogą na przykład ustawiać punktów przerwania i sprawdzać wartości zmiennych. Narzędzia, które nie są debugerem, zapewniają środowisko, które będzie widoczne dla użytkowników wydanej aplikacji.  
   
- Poniżej zamieszczono kilka pytań, które mogą pomóc w podjęciu decyzji, którego rodzaju narzędzie jest odpowiednia do własnych celów:  
+ Poniżej przedstawiono kilka pytań, które mogą pomóc w wyborze odpowiedniego rodzaju narzędzia do celów:  
   
-1. Problem podczas aplikacji został on opracowany czy był znaleziono w wydanej wersji?  
+1. Czy wystąpił problem podczas opracowania aplikacji lub czy został on odnaleziony w wydanej wersji?  
   
-     Jeśli ten problem, który masz do czynienia z został znaleziony podczas programowania, prawdopodobnie nie potrzebujesz do uruchamiania narzędzi do oceny wydajności w kompilacji wydania. Jeśli został znaleziony w wersji, należy odtworzyć problem z konfiguracją wydania i zdecyduj, czy debuger może pomóc w celu bliższego zbadania problemu.  
+     Jeśli problem, który jest rozważany, został znaleziony podczas opracowywania, prawdopodobnie nie musisz uruchamiać narzędzi wydajności w kompilacji wydania. Jeśli została znaleziona w wersji wydanej, należy odtworzyć problem z konfiguracją wydania, a następnie zdecydować, czy debuger może pomóc w dalszej analizie.  
   
-2. Przetwarza problem spowodowany przez użycie Procesora CPU  
+2. Czy przyczyną problemu jest przetwarzanie intensywnie obciążające procesor?  
   
-     Wiele problemów są spowodowane przez problemy z wydajnością zewnętrznych, takich jak We/Wy pliku lub czas odpowiedzi sieci, dzięki czemu nie należy podejmować różnica, czy uruchamianie narzędzi do oceny wydajności z lub bez debugera. Jeśli problem wynika z wywołania mocy procesora CPU, różnica między Zwolnij i Debuguj konfiguracje mogą być znaczące i prawdopodobnie należy sprawdź, czy ten problem, istnieje w kompilacji wydania, przed rozpoczęciem korzystania z narzędzia zintegrowane z debugerem  
+     Wiele problemów jest spowodowanych zewnętrznymi problemami z wydajnością, takimi jak operacja we/wy plików lub czas odpowiedzi sieci, dlatego nie należy znacznie różnicować, czy narzędzia wydajności są uruchamiane z debugerem, czy bez niego. Jeśli problem wynika z wywołań intensywnie korzystających z procesora CPU, różnica między konfiguracją wersji i debugowania może być znaczna i należy sprawdzić, czy problem występuje w kompilacji wydania przed użyciem narzędzi zintegrowanych z debugerem  
   
-3. Muszą dokładnie pomiaru wydajności, czy jest dopuszczalne przybliżona liczba?  
+3. Czy konieczne jest dokładne zmierzenie wydajności lub czy jest to Przybliżona liczba akceptowalna?  
   
-     Debugowania braku kompilacje niektóre optymalizacje, które zapewniają kompilacji wydania, na przykład wbudowanie wywołania funkcji i stałe, nieużywane oczyszczania kodu ścieżek i zapisywanie zmienne w sposób, który nie może być używany przez debuger. Sam debuger zmienia czas wydajności, ponieważ wykonuje niektóre operacje, które są niezbędne do debugowania (na przykład przechwytuje wyjątek i zdarzenia ładowanie modułu). Dlatego liczby wydajność w narzędziach zintegrowane z debugerem są tylko z dokładnością dziesiątki milisekund. Numery wersji konfiguracji za pomocą narzędzi bez debugera wydajności są znacznie bardziej precyzyjne.  
+     Kompilacje debugowania nie mają pewnych optymalizacji udostępnianych przez kompilacje wydań, na przykład wywołania funkcji defragmentowania i stałe, oczyszczanie nieużywanych ścieżek kodu i przechowywanie zmiennych w sposób, który nie może być używany przez debuger. Debuger zmienia czasy wydajności, ponieważ wykonuje pewne operacje, które są niezbędne do debugowania (na przykład przechwytując zdarzenia wyjątku i ładowania modułu). Dlatego numery wydajności w narzędziach zintegrowanych z debugerem są dokładne tylko w ciągu dziesiątek milisekund. Numery wydajności dla konfiguracji wydań z narzędziami niebędącymi debugerem są znacznie dokładniejsze.  
   
-## <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Zbieranie danych profilowania podczas debugowania  
- Poniższa sekcja dotyczy debugowania lokalnego. Możesz dowiedzieć się o debugowaniu na urządzeniu lub zdalnego debugowania w kolejnych sekcjach.  
+## <a name="BKMK_Quick_start__Collect_diagnostic_data"></a>Zbieraj dane profilowania podczas debugowania  
+ Poniższa sekcja dotyczy debugowania lokalnie. Informacje na temat debugowania na urządzeniu lub w odniesieniu do zdalnego debugowania można znaleźć w kolejnych sekcjach.  
   
-1. Otwórz projekt, który chcesz debugować, następnie kliknij przycisk **debugowania / uruchamiania debugowania** (lub **Start** na pasku narzędzi lub **F5**).  
+1. Otwórz projekt, który chcesz debugować, a następnie kliknij pozycję **Debuguj/Rozpocznij debugowanie** (lub **Rozpocznij** na pasku narzędzi lub **F5**).  
   
-2. **Narzędzia diagnostyczne** okno pojawia się automatycznie, o ile nie została ona wyłączona. Aby wyświetlić okno ponownie, kliknij przycisk **debugowanie / Windows / Pokaż narzędzia diagnostyczne**.  
+2. **Narzędzia diagnostyczne** okno pojawia się automatycznie, o ile nie została ona wyłączona. Aby ponownie wyświetlić okno, kliknij pozycję **Debuguj/Windows/pokaż narzędzia diagnostyczne**.  
   
-3. Uruchamianie scenariuszy, które mają być zbierane dane.  
+3. Uruchom scenariusze, dla których chcesz zbierać dane.  
   
-    Podczas uruchamiania sesji możesz sprawdzić informacje dotyczące zdarzenia, pamięć procesu i użycie procesora CPU.  
+    Podczas uruchamiania sesji można wyświetlić informacje o zdarzeniach, pamięci procesu i użycia procesora CPU.  
   
-    Pokazano grafiki **narzędzia diagnostyczne** okna w Visual Studio 2015 Update 1:  
+    Na poniższej ilustracji przedstawiono okno **Narzędzia diagnostyczne** w programie Visual Studio 2015 Update 1:  
   
-    ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
+    ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools — Update1")  
   
-4. Można wybrać, czy wyświetlane są **użycie pamięci** lub **użycie procesora CPU** (lub obie) za pomocą **wybierz narzędzia** ustawienie na pasku narzędzi. Jeśli używasz programu Visual Studio Enterprise można włączyć lub wyłączyć IntelliTrace w **narzędzia / Opcje / IntelliTrace**.  
+4. Można wybrać, czy ma być wyświetlane **użycie pamięci** lub **użycie procesora CPU** (lub oba) z ustawieniem **Wybierz Narzędzia** na pasku narzędzi. Jeśli używasz Visual Studio Enterprise, możesz włączyć lub wyłączyć IntelliTrace w oknie **Narzędzia/Opcje/IntelliTrace**.  
   
-5. Sesja diagnostyczna kończy się po zatrzymaniu debugowania.  
+5. Sesja diagnostyczna zostanie zakończona po zatrzymaniu debugowania.  
   
-   W programie Visual Studio 2015 Update 1 **narzędzia diagnostyczne** okna ułatwia dla możesz skoncentrować się na zdarzenia Cię interesuje.   Nazwy zdarzeń są teraz wyświetlane z prefiksami kategorii (**gestu**, **dane wyjściowe programu**, **punktu przerwania**, **pliku** itp.), dzięki czemu można szybko Przejrzyj listę w danej kategorii lub pominąć kategorie, które nie interesują.  
+   W programie Visual Studio 2015 Update 1 okno **Narzędzia diagnostyczne** ułatwia skoncentrowanie się na interesujących Cię wydarzeniach.   Nazwy zdarzeń są teraz wyświetlane z prefiksami kategorii (**gest**, **dane wyjściowe programu**, **punkty przerwania**, **plik** itp.), dzięki czemu można szybko przeskanować listę dla danej kategorii lub pominąć kategorie, które nie są potrzebne.  
   
-   Okno ma teraz pole wyszukiwania, aby mógł znaleźć określony ciąg, w dowolnym miejscu listy zdarzeń. Na przykład na poniższym rysunku przedstawiono wyniki wyszukiwania dla ciągu "Zainstaluj" który jest zgodny z czterech zdarzenia:  
+   Okno ma teraz pole wyszukiwania, dzięki czemu można znaleźć konkretny ciąg w dowolnym miejscu na liście zdarzeń. Na przykład poniższa ilustracja przedstawia wyniki wyszukiwania ciągu "Install", które pasują do czterech zdarzeń:  
   
    ![DiagnosticsEventSearch](../profiling/media/diagnosticseventsearch.png "DiagnosticsEventSearch")  
   
-   Można również filtrować zdarzenia z widoku w oknie. W **filtru** listy rozwijanej można zaznacz lub wyczyść konkretne kategorie zdarzeń:. Nazwy kategorii są takie same jak nazwy prefiksu.  
+   Możesz również filtrować zdarzenia z i z widoku w oknie. Na liście rozwijanej **Filtr** można sprawdzić lub usunąć zaznaczenie określonych kategorii zdarzeń:. Nazwy kategorii są takie same jak nazwy prefiksów.  
   
    ![DiagnosticEventFilter](../profiling/media/diagnosticeventfilter.png "DiagnosticEventFilter")  
   
-   Aby uzyskać więcej informacji, zobacz [wyszukiwanie i filtrowanie na karcie zdarzenia w oknie narzędzia diagnostyczne](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx).  
+   Aby uzyskać więcej informacji, zobacz [Wyszukiwanie i filtrowanie zdarzeń na karcie zdarzenia okna narzędzia diagnostyczne](https://devblogs.microsoft.com/devops/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/).  
   
 ## <a name="collect-profiling-data-without-debugging"></a>Zbieranie danych profilowania bez debugowania  
- Niektóre narzędzia profilowania wymagają uprawnień administratora do uruchomienia. Możesz uruchomić program Visual Studio jako administrator lub użytkownik może uruchomić narzędzia jako administrator, podczas uruchamiania sesji diagnostycznej.  
+ Niektóre narzędzia profilowania wymagają uprawnień administratora do uruchomienia. Program Visual Studio można uruchomić jako administrator. Możesz też wybrać opcję uruchamiania narzędzi jako administrator podczas uruchamiania sesji diagnostycznej.  
   
 1. Otwórz projekt w programie Visual Studio.  
   
-2. Na **debugowania** menu, wybierz **Profiler wydajności...** (Klawisz skrótu: ALT + F2).  
+2. W menu **debugowanie** wybierz pozycję **Profiler wydajności...** (klawisz skrótu: Alt + F2).  
   
-3. Na stronie diagnostyki uruchamiania wybierz co najmniej jedno narzędzie do uruchamiania w sesji. Wyświetlane są tylko narzędzia, które mają zastosowanie do typu projektu, systemu operacyjnego i język programowania. Po wybraniu narzędziem diagnostycznym, opcje narzędzi, których nie można uruchomić w tej samej sesji diagnostycznej są wyłączone. Poniżej przedstawiono wybrane opcje może wyglądać dla aplikacji w języku C# Windows Universal:  
+3. Na stronie Uruchamianie diagnostyczne wybierz co najmniej jedno narzędzie do uruchomienia w sesji. Wyświetlane są tylko narzędzia, które mają zastosowanie do typu projektu, systemu operacyjnego i języka programowania. Po wybraniu narzędzia diagnostycznego wybory dla narzędzi, które nie mogą zostać uruchomione w tej samej sesji diagnostycznej, są wyłączone. Oto, C# jak wybrane opcje mogą szukać aplikacji uniwersalnej systemu Windows:  
   
-    ![Wybierz narzędzia diagnostyczne](../profiling/media/diag-selecttool.png "DIAG_SelectTool")  
+    ![Wybierz Narzędzia diagnostyczne](../profiling/media/diag-selecttool.png "DIAG_SelectTool")  
   
-4. Aby uruchomić sesji diagnostycznej, kliknij przycisk **Start**.  
+4. Aby rozpocząć sesję diagnostyczną, kliknij przycisk **Uruchom**.  
   
-5. Uruchamianie scenariuszy, w których mają być zbierane dane.  
+5. Uruchom scenariusze, dla których chcesz zebrać dane.  
   
-    Podczas uruchamiania sesji niektóre narzędzia wyświetlanie wykresów danych w czasie rzeczywistym na stronie uruchamiania narzędzia diagnostyczne.  
+    Podczas uruchamiania sesji niektóre narzędzia wyświetlają wykresy danych w czasie rzeczywistym na stronie uruchamiania narzędzi diagnostycznych.  
   
-    ![Zbieranie danych o wydajności i diagnostyki strona początkowa](../profiling/media/pdhub-collectdata.png "PDHUB_CollectData")  
+    ![Zbieranie danych dotyczących wydajności i diagnostyki strona](../profiling/media/pdhub-collectdata.png "PDHUB_CollectData")  
   
-6. Aby zakończyć sesji diagnostycznej, kliknij przycisk **Zatrzymaj Kolekcjonowanie**.  
+6. Aby zakończyć sesję diagnostyczną, kliknij przycisk **Zatrzymaj zbieranie danych**.  
   
-   Po zatrzymaniu zbierania danych w sesji diagnostyki, dane są analizowane, a raport jest wyświetlany na stronie diagnostyki.  
+   Po zatrzymaniu zbierania danych w sesji diagnostycznej dane są analizowane i raport zostanie wyświetlony na stronie diagnostyki.  
   
-   Można również otworzyć sesji .diagnostic zapisane pliki z listy ostatnio otwieranych na narzędzia diagnostyczne uruchomić stronę.  
+   Zapisane pliki sesji diagnostycznej można także otworzyć z ostatnio otwartej listy na stronie uruchamiania narzędzi diagnostycznych.  
   
-   ![Otwórz plik sesji diagnostyki zapisane](../profiling/media/pdhub-openexistingdiagsession.png "PDHUB_OpenExistingDiagSession")  
+   ![Otwórz zapisany plik sesji diagnostyki](../profiling/media/pdhub-openexistingdiagsession.png "PDHUB_OpenExistingDiagSession")  
   
 ## <a name="the-profiling-report"></a>Raport profilowania  
- ![Raport narzędzia diagnostyczne](../profiling/media/diag-report.png "DIAG_Report")  
+ ![Raport dotyczący narzędzi diagnostycznych](../profiling/media/diag-report.png "DIAG_Report")  
   
 |||  
 |-|-|  
 |![Krok 1](../profiling/media/procguid-1.png "ProcGuid_1")|Na osi czasu są widoczne długość sesji profilowania, zdarzenia aktywacji cyklu życia aplikacji i znaczniki użytkownika.|  
 |![Krok 2](../profiling/media/procguid-2.png "ProcGuid_2")|Raport można ograniczyć do części osi czasu, przeciągając niebieskie paski w celu wybrania regionu na osi czasu.|  
-|![Krok 3](../profiling/media/procguid-3.png "ProcGuid_3")|Narzędzie wyświetla co najmniej jeden główny wykresów. Jeśli Twoja sesja diagnostyczna została utworzona za pomocą wielu narzędzi, zostaną wyświetlone wszystkie wzorca wykresów.|  
-|![Krok 4](../profiling/media/procguid-4.png "ProcGuid_4")|Można zwijać i rozwijać poszczególnych wykresów.|  
-|![Krok 5](../profiling/media/procguid-6.png "ProcGuid_6")|Gdy dane zawierają informacje z wielu narzędzi, szczegółowe informacje o narzędziu są zbierane na kartach.|  
-|![Krok 6](../profiling/media/procguid-6a.png "ProcGuid_6a")|To narzędzie może mieć jeden lub więcej widoków szczegółów. Widok jest filtrowany według wybranego regionu na osi czasu.|  
+|![Krok 3](../profiling/media/procguid-3.png "ProcGuid_3")|Narzędzie wyświetla jeden lub więcej grafów głównych. Jeśli sesja diagnostyczna jest tworzona z użyciem wielu narzędzi, wyświetlane są wszystkie wykresy główne.|  
+|![Krok 4](../profiling/media/procguid-4.png "ProcGuid_4")|Możesz zwijać i rozwijać poszczególne wykresy.|  
+|![Krok 5](../profiling/media/procguid-6.png "ProcGuid_6")|Gdy dane zawierają informacje z wielu narzędzi, w obszarze karty są zbierane szczegóły dotyczące narzędzia.|  
+|![Krok 6](../profiling/media/procguid-6a.png "ProcGuid_6a")|Narzędzie może mieć co najmniej jeden widok szczegółów. Widok jest filtrowany według wybranego regionu osi czasu.|  
   
-## <a name="setting-the-analysis-target-to-another-device"></a>Ustawiając cel analizy na innym urządzeniu  
- Oprócz uruchamianie aplikacji z projektu programu Visual Studio, można również uruchomić sesje diagnostyki na alternatywnych obiektów docelowych. Na przykład możesz chcieć diagnozować problemy z wydajnością na wersję aplikacji, która została zainstalowana z Windows Store App.  
+## <a name="setting-the-analysis-target-to-another-device"></a>Ustawianie celu analizy na inne urządzenie  
+ Oprócz uruchamiania aplikacji z projektu programu Visual Studio, można również uruchamiać sesje diagnostyczne na alternatywnych celach. Na przykład może być konieczne zdiagnozowanie problemów z wydajnością w wersji aplikacji zainstalowanej ze sklepu Windows App Store.  
   
- ![Wybierz cel analizy narzędzia diagnostyczne](../profiling/media/pdhub-chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")  
+ ![Wybierz element docelowy analizy narzędzi diagnostycznych](../profiling/media/pdhub-chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")  
   
- Można uruchomić aplikacji, które są już zainstalowane na urządzeniu lub narzędzia diagnostyczne można dołączyć do niektórych aplikacji, które zostały już uruchomione. Po wybraniu **uruchamiania aplikacji** lub **zainstalowana aplikacja**, wybierz aplikację z listy, która umożliwia odnalezienie aplikacji w miejscu docelowym określonym wdrożeniu.  
+ Można uruchamiać aplikacje, które są już zainstalowane na urządzeniu, lub dołączać narzędzia diagnostyczne do niektórych aplikacji, które są już uruchomione. Po wybraniu opcji **uruchomiona aplikacja** lub **zainstalowana aplikacja**wybierz aplikację z listy, która odnajduje aplikacje w określonym miejscu docelowym wdrożenia.  
   
- ![Wybór uruchomionej lub zainstalowanych aplikacji diagnostyki](../profiling/media/pdhub-selectrunningapp.png "PDHUB_SelectRunningApp")  
+ ![Wybierz uruchomioną lub zainstalowaną aplikację do diagnostyki](../profiling/media/pdhub-selectrunningapp.png "PDHUB_SelectRunningApp")  
   
- Po wybraniu **programu Internet Explorer**, podaj adres URL i możesz zmienić cel wdrożenia telefonu.  
+ Po wybraniu programu **Internet Explorer**należy określić adres URL i można zmienić cel wdrożenia telefonu.  
   
- ![Podaj adres url do wyświetlania w przeglądarce Internet Explorer](../profiling/media/pdhub-choosephoneanalysistarget.png "PDHUB_ChoosePhoneAnalysisTarget")  
+ ![Określ adres URL, który ma być wyświetlany w programie Internet Explorer](../profiling/media/pdhub-choosephoneanalysistarget.png "PDHUB_ChoosePhoneAnalysisTarget")  
   
 ## <a name="remote-debugging"></a>Debugowanie zdalne  
- Uruchamianie sesji diagnostycznej na zdalnym komputerze lub tablecie wymaga narzędzia zdalne programu Visual Studio zainstalowane i działają w zdalnym elemencie docelowym. Dla aplikacji komputerowych, zobacz [zdalne debugowanie](../debugger/remote-debugging.md).  Dla aplikacji Windows Universal apps, zobacz [Uruchom Windows Store apps na komputerze zdalnym](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
+ Uruchomienie sesji diagnostycznej na komputerze zdalnym lub tablecie wymaga, aby narzędzia zdalne programu Visual Studio zostały zainstalowane i uruchomione na zdalnym miejscu docelowym. W przypadku aplikacji klasycznych zobacz [debugowanie zdalne](../debugger/remote-debugging.md).  W przypadku aplikacji uniwersalnych systemu Windows Zobacz [Uruchamianie aplikacji ze sklepu Windows na maszynie zdalnej](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
   
-## <a name="blog-posts-and-msdn-articles-from-the-diagnostics-development-team"></a>Blogi i artykuły w witrynie MSDN z zespołu programistycznego diagnostyki  
- [Magazyn MSDN: Analizowanie wydajności podczas debugowania w programie Visual Studio 2015](https://msdn.microsoft.com/magazine/dn973013.aspx)  
+## <a name="blog-posts-and-msdn-articles-from-the-diagnostics-development-team"></a>Wpisy w blogu i artykuły MSDN z zespołu ds. rozwoju diagnostyki  
+ [Magazyn MSDN: analizowanie wydajności podczas debugowania w programie Visual Studio 2015](https://msdn.microsoft.com/magazine/dn973013.aspx)  
   
- [Magazyn MSDN: Użyj funkcji IntelliTrace, aby szybciej diagnozować problemy](https://msdn.microsoft.com/magazine/dn973014.aspx)  
+ [Magazyn MSDN: Użyj IntelliTrace do szybszego zdiagnozowania problemów](https://msdn.microsoft.com/magazine/dn973014.aspx)  
   
- [Wpis w blogu: Diagnozowanie przecieków procedury obsługi zdarzeń za pomocą narzędzia użycie pamięci w programie Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/04/29/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015.aspx)  
+ [Wpis w blogu: diagnozowanie przecieków programu obsługi zdarzeń za pomocą narzędzia użycie pamięci w programie Visual Studio 2015](https://devblogs.microsoft.com/devops/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015/)  
   
- [Wideo: Debugowanie historyczne za pomocą IntelliTrace w programie Microsoft Visual Studio Ultimate 2015](https://channel9.msdn.com/Events/Ignite/2015/BRK3716)  
+ [Wideo: debugowanie historyczne z IntelliTrace w Microsoft Visual Studio Ultimate 2015](https://channel9.msdn.com/Events/Ignite/2015/BRK3716)  
   
- [Wideo: Debugowanie problemów z wydajnością za pomocą programu Visual Studio 2015](https://channel9.msdn.com/Events/Build/2015/3-731)  
+ [Wideo: Debugowanie problemów z wydajnością przy użyciu programu Visual Studio 2015](https://channel9.msdn.com/Events/Build/2015/3-731)  
   
- [Perftip: Wydajność informacji o skrócie podczas debugowania przy użyciu programu Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)  
+ [Funkcja PerfTip: informacje o wydajności w skrócie podczas debugowania w programie Visual Studio](https://devblogs.microsoft.com/devops/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/)  
   
- [Okno debugera narzędzia diagnostyczne w programie Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015.aspx)  
+ [Okno debugera narzędzia diagnostyczne w programie Visual Studio 2015](https://devblogs.microsoft.com/devops/diagnostic-tools-debugger-window-in-visual-studio-2015/)  
   
- [Funkcja IntelliTrace w Visual Studio Enterprise 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/intellitrace-in-visual-studio-ultimate-2015.aspx)
+ [IntelliTrace w Visual Studio Enterprise 2015](https://devblogs.microsoft.com/devops/intellitrace-in-visual-studio-ultimate-2015/)

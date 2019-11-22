@@ -1,6 +1,6 @@
 ---
-title: Konfigurowanie projektu platformy Azure przy użyciu wielu konfiguracji usługi | Dokumentacja firmy Microsoft
-description: Dowiedz się, jak skonfigurować projekt usługi w chmurze platformy Azure, zmieniając plików ServiceDefinition.csdef, ServiceConfiguration.Local.cscfg i ServiceConfiguration.Cloud.cscfg.
+title: Konfigurowanie projektu platformy Azure przy użyciu wielu konfiguracji usługi | Microsoft Docs
+description: Dowiedz się, jak skonfigurować projekt usługi w chmurze platformy Azure, zmieniając pliki ServiceDefinition. csdef, ServiceConfiguration. local. cscfg i ServiceConfiguration. Cloud. cscfg.
 author: ghogen
 manager: jillfra
 assetId: a4fb79ed-384f-4183-9f74-5cac257206b9
@@ -11,98 +11,98 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 3dfea05e38930cc4613335fa5b5bccbe228b71fe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 70217cc4c83a1f281e8a2fdebec404fa9757bf01
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62422738"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299020"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Konfigurowanie projektu platformy Azure w programie Visual Studio w celu używania wielu konfiguracji usługi
 
-Projekt usługi w chmurze platformy Azure w programie Visual Studio zawiera trzy pliki konfiguracji: `ServiceDefinition.csdef`, `ServiceConfiguration.Local.cscfg`, i `ServiceConfiguration.Cloud.cscfg`:
+Projekt usługi w chmurze platformy Azure w programie Visual Studio zawiera trzy pliki konfiguracji: `ServiceDefinition.csdef`, `ServiceConfiguration.Local.cscfg`i `ServiceConfiguration.Cloud.cscfg`:
 
-- `ServiceDefinition.csdef` jest wdrażana na platformie Azure opisują wymagania dotyczące usługi w chmurze i jego role i skonfiguruj ustawienia, które są stosowane do wszystkich wystąpień. Ustawienia mogą być odczytywane w czasie wykonywania za pomocą usług obsługującego środowisko uruchomieniowe interfejsu API usługi Azure. Ten plik może zostać zaktualizowana na platformie Azure, tylko wtedy, gdy zatrzymaniu usługi w chmurze.
-- `ServiceConfiguration.Local.cscfg` i `ServiceConfiguration.Cloud.cscfg` Podaj wartości dla ustawień w definicji plik i określ liczbę wystąpień do uruchamiania dla każdej roli. Plik "Local" zawiera wartości używane w debugowania lokalnego. Plik "Chmura" jest wdrożony na platformie Azure jako `ServiceConfiguration.cscfg` i udostępnia ustawienia w środowisku serwera. Ten plik może zostać zaktualizowana po uruchomieniu usługi w chmurze na platformie Azure.
+- `ServiceDefinition.csdef` został wdrożony na platformie Azure, aby opisać wymagania usługi w chmurze i jej ról oraz podać ustawienia, które mają zastosowanie do wszystkich wystąpień. Ustawienia można odczytać w czasie wykonywania za pomocą interfejsu API środowiska uruchomieniowego hostingu usług platformy Azure. Ten plik można zaktualizować na platformie Azure tylko wtedy, gdy usługa w chmurze jest zatrzymana.
+- `ServiceConfiguration.Local.cscfg` i `ServiceConfiguration.Cloud.cscfg` podaj wartości ustawień w pliku definicji i określ liczbę wystąpień do uruchomienia dla każdej roli. Plik "Local" zawiera wartości używane w debugowaniu lokalnym; plik "Cloud" został wdrożony na platformie Azure jako `ServiceConfiguration.cscfg` i zawiera ustawienia dla środowiska serwera. Ten plik można zaktualizować, gdy usługa w chmurze jest uruchomiona na platformie Azure.
 
-Ustawienia konfiguracji są zarządzane i modyfikowane w programie Visual Studio za pomocą stron właściwości dla odpowiednich ról (kliknij prawym przyciskiem myszy rolę, a następnie wybierz pozycję **właściwości**, lub kliknij dwukrotnie roli). Zakres zmian niezależnie od konfiguracji jest wybierany w **konfiguracji usługi** listy rozwijanej. Właściwości dla ról sieć web i proces roboczy są podobne, z wyjątkiem w przypadku, gdy opisane w poniższych sekcjach.
+Ustawienia konfiguracji są zarządzane i modyfikowane w programie Visual Studio przy użyciu stron właściwości dla odpowiedniej roli (kliknij prawym przyciskiem myszy rolę i wybierz pozycję **Właściwości**lub kliknij dwukrotnie rolę). Zmiany mogą być ograniczone do zakresu konfiguracji wybranej na liście rozwijanej **Konfiguracja usługi** . Właściwości ról Sieć Web i proces roboczy są podobne, z wyjątkiem przypadków opisanych w poniższych sekcjach.
 
 ![VS_Solution_Explorer_Roles_Properties](./media/vs-azure-tools-multiple-services-project-configurations/IC784076.png)
 
-Aby uzyskać informacji na temat podstawowych schematów dla definicji usługi i pliki konfiguracji usługi, zobacz [schemat XML .csdef](/azure/cloud-services/schema-csdef-file) i [schemat XML .cscfg](/azure/cloud-services/schema-cscfg-file) artykułów. Aby uzyskać więcej informacji na temat konfigurowania usługi zobacz [jak skonfigurować usługi w chmurze](/azure/cloud-services/cloud-services-how-to-configure-portal).
+Aby uzyskać informacje na temat podstawowych schematów dla plików definicji usługi i konfiguracji usługi, zobacz artykuł [. CSDEF XML](/azure/cloud-services/schema-csdef-file) schematu i [. cscfg — artykuły schematu XML](/azure/cloud-services/schema-cscfg-file) . Aby uzyskać więcej informacji na temat konfiguracji usługi, zobacz [jak skonfigurować Cloud Services](/azure/cloud-services/cloud-services-how-to-configure-portal).
 
 ## <a name="configuration-page"></a>Strona konfiguracji
 
 ### <a name="service-configuration"></a>Konfiguracja usługi
 
-Wybieranie, które `ServiceConfiguration.*.cscfg` pliku mają wpływ zmiany. Domyślnie są lokalne, jak i chmury, a następnie można użyć **Zarządzaj...**  polecenie, aby skopiować, zmiana nazwy i usuwanie plików konfiguracyjnych. Te pliki są dodawane do projektu usługi w chmurze i są wyświetlane w **Eksploratora rozwiązań**. Jednak zmiana nazwy lub usuwanie konfiguracji może odbywać się tylko z tego formantu.
+Wybiera, do których plików `ServiceConfiguration.*.cscfg` mają wpływ zmiany. Domyślnie istnieją zarówno odmiany lokalne, jak i w chmurze, a także można użyć polecenia **Zarządzaj...** , aby skopiować, zmienić nazwę i usunąć pliki konfiguracji. Te pliki są dodawane do projektu usługi w chmurze i pojawiają się w **Eksplorator rozwiązań**. Zmiany nazw lub usuwania konfiguracji można jednak wykonać tylko z tego formantu.
 
 ### <a name="instances"></a>Wystąpienia
 
-Ustaw **wystąpienia** policzyć liczbę wystąpień usługi, należy uruchomić dla tej roli.
+Ustaw właściwość liczba **wystąpień** na liczbę wystąpień, które usługa powinna uruchomić dla tej roli.
 
-Ustaw **rozmiar maszyny Wirtualnej** właściwości **wystąpieniom bardzo małe**, **małych**, **średni**, **duże**, lub **Bardzo duże**.  Aby uzyskać więcej informacji, zobacz [rozmiary usług Cloud Services](/azure/cloud-services/cloud-services-sizes-specs).
+Ustaw właściwość **rozmiar maszyny wirtualnej** na **bardzo małe**, **małe**, **średnie**, **duże**lub **bardzo duże**.  Aby uzyskać więcej informacji, zobacz [rozmiary dla Cloud Services](/azure/cloud-services/cloud-services-sizes-specs).
 
-### <a name="startup-action-web-role-only"></a>Uruchamianie akcji (tylko w przypadku roli sieci Web)
+### <a name="startup-action-web-role-only"></a>Akcja uruchamiania (tylko rola sieci Web)
 
-Ustaw tę właściwość, aby określić, czy programu Visual Studio należy uruchomić przeglądarkę internetową punktów końcowych HTTP lub punktów końcowych HTTPS, czy oba rodzaje podczas uruchamiania debugowania.
+Ustaw tę właściwość, aby określić, że program Visual Studio ma uruchamiać przeglądarkę internetową dla punktów końcowych HTTP lub punktów końcowych HTTPS, albo podczas uruchamiania debugowania.
 
-**Punktu końcowego HTTPS** opcja jest dostępna tylko wtedy, gdy już zdefiniowano punktu końcowego HTTPS dla roli użytkownika. Można zdefiniować punkt końcowy HTTPS **punktów końcowych** stronę właściwości.
+Opcja **punktu końcowego HTTPS** jest dostępna tylko wtedy, gdy masz już zdefiniowany punkt końcowy HTTPS dla roli. Punkt końcowy HTTPS można zdefiniować na stronie właściwości **punkty końcowe** .
 
-Jeśli masz już dodany punkt końcowy HTTPS, opcji punktu końcowego HTTPS jest domyślnie włączona, i Visual Studio otworzy w przeglądarce dla tego punktu końcowego podczas uruchamiania debugowania, oprócz przeglądarki dla punktu końcowego HTTP, przy założeniu, że obie opcje uruchamiania są włączone.
+Jeśli dodano już punkt końcowy HTTPS, opcja punktu końcowego HTTPS jest domyślnie włączona, a program Visual Studio uruchamia przeglądarkę dla tego punktu końcowego po rozpoczęciu debugowania, poza przeglądarką punktu końcowego HTTP, przy założeniu, że oba opcje uruchamiania są włączone.
 
 ### <a name="diagnostics"></a>Diagnostyka
 
-Domyślnie diagnostyki są włączone dla roli sieci Web. Konta projektu i magazynu usługi platformy Azure w chmurze są skonfigurowane do korzystania z emulatora magazynu lokalnego. Gdy wszystko jest gotowe do wdrożenia na platformie Azure, możesz wybrać przycisk konstruktora (**...** ) zamiast tego użyć usługi Azure storage. Dane diagnostyczne mogą przesyłać do konta magazynu, na żądanie lub automatycznie zaplanowanych odstępach czasu. Aby uzyskać więcej informacji na temat usługi Diagnostyka Azure, zobacz [Włączanie diagnostyki w usługach Azure Cloud Services i Virtual Machines](/azure/cloud-services/cloud-services-dotnet-diagnostics).
+Domyślnie Diagnostyka jest włączona dla roli sieci Web. Projekt usługi w chmurze platformy Azure i konto magazynu są ustawione tak, aby używały lokalnego emulatora magazynu. Gdy wszystko będzie gotowe do wdrożenia na platformie Azure, możesz wybrać przycisk konstruktora ( **...** ), aby użyć usługi Azure Storage. Dane diagnostyczne można transferować do konta magazynu na żądanie lub w automatycznie zaplanowanych odstępach czasu. Aby uzyskać więcej informacji na temat diagnostyki platformy Azure, zobacz [Włączanie diagnostyki na platformie azure Cloud Services i Virtual Machines](/azure/cloud-services/cloud-services-dotnet-diagnostics).
 
 ## <a name="settings-page"></a>Strona Ustawienia
 
-Na **ustawienia** stronie ustawień konfiguracji, której można dodać jako pary nazwa wartość. Kod uruchomiony w roli można odczytać wartości ustawień konfiguracji w czasie wykonywania przy użyciu klas dostarczonych przez [biblioteki usługi Azure Managed](http://go.microsoft.com/fwlink?LinkID=171026), w szczególności [GetConfigurationSettingValue](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleenvironment.getconfigurationsettingvalue.aspx) metody.
+Na stronie **Ustawienia** można dodać ustawienia do konfiguracji jako pary nazwa-wartość. Kod uruchomiony w roli może odczytywać wartości ustawień konfiguracji w czasie wykonywania przy użyciu klas dostarczonych przez [bibliotekę zarządzaną platformy Azure](https://go.microsoft.com/fwlink?LinkID=171026), w tym metodę [GetConfigurationSettingValue](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleenvironment.getconfigurationsettingvalue.aspx) .
 
 ### <a name="configuring-a-connection-string-for-a-storage-account"></a>Konfigurowanie parametrów połączenia dla konta magazynu
 
-Parametry połączenia to ustawienie, które zapewnia połączenia i informacje dotyczące uwierzytelniania dla emulatora magazynu lub konta usługi Azure storage. Zawsze, gdy kod w roli uzyskuje dostęp do usługi Azure storage (obiekty BLOB, kolejki lub tabeli), wymaga parametrów połączenia.
+Parametry połączenia to ustawienie, które zapewnia informacje o połączeniu i uwierzytelnianiu dla emulatora magazynu lub dla konta usługi Azure Storage. Za każdym razem, gdy kod w roli uzyskuje dostęp do usługi Azure Storage (obiektów blob, kolejek lub tabel), potrzebuje parametrów połączenia.
 
 > [!Note]
-> Ciąg połączenia dla konta magazynu platformy Azure musi mieć zdefiniowany format (zobacz [skonfigurować parametry połączenia magazynu Azure](/azure/storage/common/storage-configure-connection-string)).
+> Parametry połączenia dla konta usługi Azure Storage muszą mieć zdefiniowany format (zobacz [Konfigurowanie parametrów połączenia usługi Azure Storage](/azure/storage/common/storage-configure-connection-string)).
 
-Można ustawić parametry połączenia do korzystania z magazynów lokalnych, zgodnie z potrzebami, a następnie ustaw na konto magazynu platformy Azure, w przypadku wdrażania aplikacji usługi w chmurze. Nie można poprawnie ustawić parametrów połączenia może spowodować Twojej roli nie można uruchomić lub przechodzić między Stanami inicjowanie, zajęta i zatrzymywanie.
+Możesz ustawić parametry połączenia tak, aby używały magazynu lokalnego, a następnie ustawić konto usługi Azure Storage podczas wdrażania aplikacji w usłudze w chmurze. Nie można prawidłowo ustawić parametrów połączenia, które mogą spowodować, że nie można uruchomić roli lub aby przejść przez Stany inicjowania, zajętości i zatrzymywania.
 
-Aby utworzyć parametry połączenia, wybierz **Dodaj ustawienie** i ustaw **typu** ciągowi"połączenia".
+Aby utworzyć parametry połączenia, wybierz opcję **Dodaj ustawienie** i ustaw **typ** na "parametry połączenia".
 
-Dla parametrów połączenia w nowym lub istniejącym, wybierz **...** * po prawej stronie **wartość** pole, aby otworzyć **utworzyć parametry połączenia magazynu** okno dialogowe:
+W przypadku nowych lub istniejących parametrów połączenia wybierz pozycję **...** * po prawej stronie pola **wartość** , aby otworzyć okno dialogowe **Tworzenie parametrów połączenia magazynu** :
 
-1. W obszarze **nawiązywanie połączenia przy użyciu**, wybierz **subskrypcji** opcję, aby wybrać konto magazynu z subskrypcji. Program Visual Studio następnie uzyskuje poświadczeń konta magazynu, który automatycznie z `.publishsettings` pliku.
-1. Wybieranie **ręcznie wprowadzić poświadczenia** pozwala określić nazwę konta i klucza bezpośrednio przy użyciu informacji z witryny Azure portal. Aby skopiować klucz konta:
-    1. Przejdź do konta magazynu w witrynie Azure portal i wybierz **zarządzanie kluczami**.
-    1. Aby skopiować klucz konta, przejdź do konta magazynu w witrynie Azure portal, wybierz opcję **Ustawienia > klucze dostępu**, następnie użyj przycisku kopiowania, aby skopiuj podstawowy klucz dostępu do Schowka.
-1. Wybierz jedną z opcji połączenia. **Określ niestandardowe punkty końcowe** prosi o określenie określonych adresów URL dla obiektów blob, tabele i kolejki. Niestandardowe punkty końcowe umożliwiają używanie [domen niestandardowych](/azure/storage/blobs/storage-custom-domain-name) i kontrolować dostęp do bardziej dokładnie. Zobacz [Konfigurowanie parametrów połączenia usługi Azure Storage](/azure/storage/common/storage-configure-connection-string).
-1. Wybierz **OK**, następnie **Plik > Zapisz** można zaktualizować konfiguracji za pomocą nowych parametrów połączenia.
+1. W obszarze **Połącz przy użyciu**wybierz opcję **subskrypcja** , aby wybrać konto magazynu z subskrypcji. Program Visual Studio następnie automatycznie uzyskuje poświadczenia konta magazynu z pliku `.publishsettings`.
+1. Wybranie pozycji **Ręczne wprowadzanie poświadczeń** pozwala określić nazwę konta i klucz bezpośrednio przy użyciu informacji z Azure Portal. Aby skopiować klucz konta:
+    1. Przejdź do konta magazynu na Azure Portal a następnie wybierz pozycję **Zarządzaj kluczami**.
+    1. Aby skopiować klucz konta, przejdź do konta magazynu w Azure Portal, wybierz pozycję **ustawienia > klucze dostępu**, a następnie użyj przycisku kopiowania, aby skopiować podstawowy klucz dostępu do Schowka.
+1. Wybierz jedną z opcji połączenia. **Określ niestandardowe punkty końcowe** z prośbą o określenie określonych adresów URL dla obiektów blob, tabel i kolejek. Niestandardowe punkty końcowe umożliwiają korzystanie z [domen niestandardowych](/azure/storage/blobs/storage-custom-domain-name) i precyzyjne kontrolowanie dostępu. Zobacz [Konfigurowanie parametrów połączenia usługi Azure Storage](/azure/storage/common/storage-configure-connection-string).
+1. Wybierz przycisk **OK**, a następnie **plik > Zapisz** , aby zaktualizować konfigurację przy użyciu nowych parametrów połączenia.
 
-Ponownie podczas publikowania aplikacji na platformie Azure, wybierz pozycję konfiguracji usługi, która zawiera konta usługi Azure storage dla parametrów połączenia. Po opublikowaniu aplikacji, sprawdź, czy aplikacja działa zgodnie z oczekiwaniami w odniesieniu do usług Azure storage.
+Po opublikowaniu aplikacji na platformie Azure wybierz konfigurację usługi, która zawiera konto usługi Azure Storage dla parametrów połączenia. Po opublikowaniu aplikacji Sprawdź, czy aplikacja działa zgodnie z oczekiwaniami w odniesieniu do usług Azure Storage.
 
-Aby uzyskać więcej informacji o sposobie aktualizowania konfiguracji usługi, zobacz sekcję [Zarządzanie parametry połączenia dla konta magazynu](vs-azure-tools-configure-roles-for-cloud-service.md#manage-connection-strings-for-storage-accounts).
+Więcej informacji o sposobach aktualizowania konfiguracji usługi znajduje się w sekcji [Zarządzanie ciągami połączenia dla kont magazynu](vs-azure-tools-configure-roles-for-cloud-service.md#manage-connection-strings-for-storage-accounts).
 
 ## <a name="endpoints-page"></a>Strona punkty końcowe
 
-Rola internetowa zazwyczaj ma jeden punkt końcowy HTTP na porcie 80. Z drugiej strony, rolę procesu roboczego może mieć dowolną liczbę punktów końcowych HTTP, HTTPS lub TCP. Punkty końcowe można wejściowych punktów końcowych, które są dostępne dla klientów zewnętrznych, lub wewnętrznych punktów końcowych, które są dostępne dla innych ról, które działają w usłudze.
+Rola sieci Web zazwyczaj ma jeden punkt końcowy HTTP na porcie 80. Rola procesu roboczego, z drugiej strony, może mieć dowolną liczbę punktów końcowych HTTP, HTTPS lub TCP. Punkty końcowe mogą być wejściowymi punktami końcowymi, które są dostępne dla klientów zewnętrznych lub wewnętrznych punktów końcowych, które są dostępne dla innych ról uruchomionych w usłudze.
 
-- Aby udostępnić punkt końcowy HTTP do klientów zewnętrznych i przeglądarki sieci Web, Zmień typ punktu końcowego na dane wejściowe, a następnie określ nazwę i numeru portu publicznego.
-- Aby udostępnić punkt końcowy HTTPS do klientów zewnętrznych i przeglądarki sieci Web, należy zmienić typ punktu końcowego na **danych wejściowych**, a następnie określ nazwę, numeru portu publicznego i nazwa certyfikatu zarządzania. Należy także zdefiniować certyfikat na **certyfikaty** strony właściwości można było określić certyfikat zarządzania.
-- Aby udostępnić punkt końcowy wewnętrznego dostępu przez inne role w usłudze w chmurze, Zmień typ punktu końcowego wewnętrznego i określ nazwę i możliwe prywatnej portów dla tego punktu końcowego.
+- Aby udostępnić punkt końcowy HTTP klientom zewnętrznym i przeglądarkom sieci Web, Zmień typ punktu końcowego na wejściowy, a następnie podaj nazwę i numer portu publicznego.
+- Aby udostępnić punkt końcowy HTTPS klientom zewnętrznym i przeglądarkom sieci Web, Zmień typ punktu końcowego na **wejściowy**, a następnie określ nazwę, numer portu publicznego i nazwę certyfikatu zarządzania. Należy również zdefiniować certyfikat na stronie właściwości **Certyfikaty** , aby można było określić certyfikat zarządzania.
+- Aby udostępnić punkt końcowy dla dostępu wewnętrznego przez inne role w usłudze w chmurze, Zmień typ punktu końcowego na wewnętrzny i określ nazwę i możliwe porty prywatne dla tego punktu końcowego.
 
 ## <a name="local-storage-page"></a>Strona magazynu lokalnego
 
-Możesz użyć **Magazyn lokalny** stronę właściwości do rezerwowania co najmniej jeden zasób magazynu lokalnego dla roli. Zasób magazynu lokalnego jest zastrzeżony katalogu w systemie plików z maszyny wirtualnej platformy Azure, w którym jest uruchomione wystąpienie roli.
+Korzystając ze strony właściwości **magazynu lokalnego** , można zarezerwować jeden lub więcej zasobów magazynu lokalnego dla roli. Lokalny zasób magazynu jest katalogiem zastrzeżonym w systemie plików maszyny wirtualnej platformy Azure, w którym jest uruchomiona wystąpienie roli.
 
 ## <a name="certificates-page"></a>Strona certyfikaty
 
-**Certyfikaty** strona właściwości dodaje informacje o certyfikatach do konfiguracji usługi. Należy pamiętać, że certyfikaty nie są w pakiecie przy użyciu usługi; należy przekazać certyfikaty oddzielnie na platformie Azure za pośrednictwem [witryny Azure portal](http://portal.azure.com).
+Strona właściwości **Certyfikaty** umożliwia dodanie informacji o certyfikatach do konfiguracji usługi. Należy pamiętać, że certyfikaty nie są pakowane z usługą; certyfikaty należy przekazać osobno na platformę Azure za pomocą [Azure Portal](https://portal.azure.com).
 
-Dodawanie certyfikatu w tym miejscu dodaje informacje o certyfikatach do konfiguracji usługi. Certyfikaty nie są opakowane w usłudze; należy przekazać certyfikaty oddzielnie za pośrednictwem witryny Azure portal.
+Dodanie tutaj certyfikatu powoduje dodanie informacji o certyfikatach do konfiguracji usługi. Certyfikaty nie są pakowane z usługą; certyfikaty należy przekazać oddzielnie za pomocą Azure Portal.
 
-Aby skojarzyć certyfikat z roli użytkownika, podaj nazwę dla certyfikatu. Nazwa ta będzie używana do odwoływania się do certyfikatu podczas konfigurowania punktu końcowego HTTPS w **punktów końcowych** strony. Następnie określ, czy magazyn certyfikatów znajduje się **komputera lokalnego** lub **bieżącego użytkownika** i nazwę magazynu. Na koniec wprowadź odcisk palca certyfikatu. Jeśli certyfikat znajduje się w bieżącym User\Personal magazynie (użytkownika), można wprowadzić odcisk palca certyfikatu, wybierając certyfikat z lista jest pusta. Jeśli znajduje się on w dowolnej innej lokalizacji, należy ręcznie wprowadzić wartość odcisku palca.
+Aby skojarzyć certyfikat z rolą, podaj nazwę certyfikatu. Ta nazwa jest używana do odwoływania się do certyfikatu podczas konfigurowania punktu końcowego HTTPS na stronie **punkty końcowe** . Następnie określ, czy magazyn certyfikatów jest **komputerem lokalnym** , czy **bieżącym użytkownikiem** i nazwą magazynu. Na koniec wprowadź odcisk palca certyfikatu. Jeśli certyfikat znajduje się w bieżącym magazynie User\Personal (my), możesz wprowadzić odcisk palca certyfikatu, wybierając certyfikat z wypełnionej listy. Jeśli znajduje się w innej lokalizacji, wprowadź wartość odcisku palca ręcznie.
 
-Po dodaniu certyfikatu z magazynu certyfikatów, wszystkie certyfikaty pośrednie są automatycznie dodawane do ustawień konfiguracji. Ponadto te certyfikaty pośrednie muszą być przesłane do platformy Azure, aby poprawnie skonfigurować usługę dla protokołu SSL.
+Po dodaniu certyfikatu z magazynu certyfikatów wszystkie certyfikaty pośrednie są automatycznie dodawane do ustawień konfiguracji. Ponadto te certyfikaty pośrednie muszą zostać przekazane do platformy Azure w celu poprawnego skonfigurowania usługi na potrzeby protokołu SSL.
 
-Wszystkie certyfikaty zarządzania, które kojarzą przy użyciu usługi mają zastosowanie do usługi, tylko wtedy, gdy jest uruchomiona w chmurze. Gdy usługa jest uruchomiona w lokalne Środowisko deweloperskie, używa to standardowy certyfikat, który jest zarządzany przez emulator obliczeń.
+Wszystkie certyfikaty zarządzania powiązane z usługą mają zastosowanie tylko w przypadku, gdy jest uruchomiona w chmurze. Gdy usługa jest uruchomiona w lokalnym środowisku programistycznym, korzysta z standardowego certyfikatu zarządzanego przez emulator obliczeń.

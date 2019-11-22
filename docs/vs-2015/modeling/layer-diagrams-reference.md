@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a8a0654936ac102891981ecbee43430172487628
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: dd2b2d19e55cbaf9af63ddeafdbdf9f6d677c5bc
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646123"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301616"
 ---
 # <a name="layer-diagrams-reference"></a>Diagramy warstw: Odwołanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ W programie Visual Studio można użyć *diagramu warstwowego* w celu wizualizow
 
 - Zapoznaj się z zamierzoną architekturą podczas opracowywania i konserwowania kodu przez uwzględnienie walidacji operacji ewidencjonowania i kompilowania.
 
-  W tym temacie opisano elementy, których można użyć na diagramie warstwowym. Aby uzyskać szczegółowe informacje na temat tworzenia i rysowania diagramów warstwowych, zobacz [diagramy warstwowe: wytyczne](../modeling/layer-diagrams-guidelines.md). Aby uzyskać więcej informacji na temat wzorców warstwowych, odwiedź [witrynę wzorców & Practices](http://go.microsoft.com/fwlink/?LinkId=145794).
+  W tym temacie opisano elementy, których można użyć na diagramie warstwowym. Aby uzyskać szczegółowe informacje na temat tworzenia i rysowania diagramów warstwowych, zobacz [diagramy warstwowe: wytyczne](../modeling/layer-diagrams-guidelines.md). Aby uzyskać więcej informacji na temat wzorców warstwowych, odwiedź [witrynę wzorców & Practices](https://go.microsoft.com/fwlink/?LinkId=145794).
 
 ## <a name="reading-layer-diagrams"></a>Odczytywanie diagramów warstwy
  ![Elementy na diagramach warstw](../modeling/media/uml-layerrefreading.png "UML_LayerRefReading")
@@ -58,8 +58,8 @@ W programie Visual Studio można użyć *diagramu warstwowego* w celu wizualizow
 |**Przekształca**|**Element**|**Opis**|
 |---------------|-----------------|---------------------|
 |1|**Warstwy**|Logiczna Grupa artefaktów fizycznych w systemie. Te artefakty mogą być przestrzeniami nazw, projektami, klasami, metodami i tak dalej.<br /><br /> Aby wyświetlić artefakty, które są połączone z warstwą, otwórz menu skrótów dla warstwy, a następnie wybierz polecenie **Wyświetl linki** , aby otworzyć **Eksploratora warstw**.<br /><br /> Aby uzyskać więcej informacji, zobacz [Eksplorator warstw](#Explorer).<br /><br /> -   **zabronionych zależności przestrzeni nazw** — określa, że artefakty skojarzone z tą warstwą nie mogą zależeć od określonych przestrzeni nazw.<br />-   **zabronionych przestrzenie nazw** — określa, że artefakty skojarzone z tą warstwą nie mogą należeć do określonych przestrzeni nazw.<br />-   **wymagane przestrzenie nazw** — określa, że artefakty skojarzone z tą warstwą muszą należeć do jednej z określonych przestrzeni nazw.|
-|2|**Zależności**|Wskazuje, że jedna warstwa może korzystać z funkcjonalności w innej warstwie, ale nie odwrotnie.<br /><br /> **kierunek** -    — określa kierunek zależności.|
-|3|**Zależność dwukierunkowa**|Wskazuje, że jedna warstwa może korzystać z funkcjonalności w innej warstwie i na odwrót.<br /><br /> **kierunek** -    — określa kierunek zależności.|
+|2|**Zależności**|Wskazuje, że jedna warstwa może korzystać z funkcjonalności w innej warstwie, ale nie odwrotnie.<br /><br /> **kierunek** -   — określa kierunek zależności.|
+|3|**Zależność dwukierunkowa**|Wskazuje, że jedna warstwa może korzystać z funkcjonalności w innej warstwie i na odwrót.<br /><br /> **kierunek** -   — określa kierunek zależności.|
 |4|**Komentarz**|Służy do dodawania ogólnych notatek do diagramu lub elementów na diagramie.|
 |5|**Link komentarza**|Służy do łączenia komentarzy do elementów na diagramie.|
 

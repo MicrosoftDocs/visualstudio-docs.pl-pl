@@ -16,20 +16,20 @@ caps.latest.revision: 30
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 37bbdfd00778575755379fc442dfa9be3f90eeb7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: de27d99d6bccab46734399e524f70a731a36aa1b
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651300"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297886"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Porady: używanie wyłącznie klawiatury
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] oferuje wiele domyślnych kombinacji klawiszy skrótów, które ułatwiają nawigowanie i wykonywanie kodu w zintegrowanym środowisku programistycznym (IDE). Aby zapoznać się z pełną listą klawiszy skrótów używanych w programie Visual Studio, zobacz [domyślne skróty klawiaturowe](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Aby uzyskać informacje na temat skrótów klawiaturowych dostępnych dla innych produktów firmy Microsoft, zobacz [http://www.microsoft.com/enable/products/keyboard.aspx](http://go.microsoft.com/fwlink/?LinkID=40400).
+[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] oferuje wiele domyślnych kombinacji klawiszy skrótów, które ułatwiają nawigowanie i wykonywanie kodu w zintegrowanym środowisku programistycznym (IDE). Aby zapoznać się z pełną listą klawiszy skrótów używanych w programie Visual Studio, zobacz [domyślne skróty klawiaturowe](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Aby uzyskać informacje na temat skrótów klawiaturowych dostępnych dla innych produktów firmy Microsoft, zobacz [http://www.microsoft.com/enable/products/keyboard.aspx](https://go.microsoft.com/fwlink/?LinkID=40400).
 
 > [!NOTE]
-> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, wybierz **Importuj i Eksportuj ustawienia** w menu **Narzędzia** . Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień deweloperskich w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="toolbox-controls"></a>Kontrolki przybornika
  Kontrolkę można dodać do zestawu narzędzi do formularza lub projektanta przy użyciu klawiatury.
@@ -59,11 +59,11 @@ ms.locfileid: "72651300"
 
     - W przypadku pól wyboru Użyj **spacji** , aby zaznaczyć lub usunąć zaznaczenie.
 
-    - Dla list rozwijanych Użyj **kombinacji ALT**  + **strzałka** , aby wyświetlić elementy, a następnie użyj **strzałek** i **strzałka** , aby zmienić wybrany element.
+    - Dla list rozwijanych Użyj **kombinacji ALT** + **strzałka** , aby wyświetlić elementy, a następnie użyj **strzałek** i **strzałka** , aby zmienić wybrany element.
 
     - Naciśnij klawisz **Enter** , aby wywołać przyciski.
 
-    - W przypadku siatek Użyj klawiszy strzałek, aby nawigować po stronie. W przypadku list rozwijanych w siatkach Użyj **klawiszy SHIFT**  + **Alt**  + **strzałka** , aby wyświetlić elementy, a następnie użyj **strzałek** i **strzałka** , aby zmienić wybrany element.
+    - W przypadku siatek Użyj klawiszy strzałek, aby nawigować po stronie. W przypadku list rozwijanych w siatkach Użyj **klawiszy SHIFT** + **Alt** + **strzałka** , aby wyświetlić elementy, a następnie użyj **strzałek** i **strzałka** , aby zmienić wybrany element.
 
 ## <a name="window-and-file-navigation"></a>Nawigowanie po oknach i plikach
  Środowisko IDE oferuje kilka sposobów poruszania się między otwartymi oknami narzędzi i dokumentów przy użyciu klawiatury. Możesz również przenosić i dokować okna narzędzi w różnych miejscach przy użyciu klawiatury.
@@ -80,7 +80,7 @@ ms.locfileid: "72651300"
 
 2. W menu **okno** kliknij pozycję **było dokować**.
 
-3. Naciśnij klawisz **ALT**  + **miejsce** , a następnie wybierz pozycję **Przenieś**.
+3. Naciśnij klawisz **ALT** + **miejsce** , a następnie wybierz pozycję **Przenieś**.
 
      Zostanie wyświetlony romb przewodnika dokowania.
 

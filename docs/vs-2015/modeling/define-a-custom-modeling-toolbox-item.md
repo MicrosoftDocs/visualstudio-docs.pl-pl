@@ -11,12 +11,12 @@ caps.latest.revision: 33
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 27692c31c2c0f1c52ab026fb2d55e5d240839ff3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ac299f18e544ef4f3215707abbdc3d9e8d266de6
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654901"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299288"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>Definiowanie niestandardowego elementu przybornika modelowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -113,7 +113,7 @@ Aby ułatwić tworzenie elementu lub grupy elementów zgodnie ze wzorcem, który
 
 - Jak pokazano w przykładzie, `<bmp fileName="…"/>` dla ikony przybornika i `<value>string</value>` dla innych elementów.
 
-  \- lub-
+  \- lub —
 
 - `<resource fileName="Resources.dll"`
 
@@ -127,11 +127,11 @@ Aby ułatwić tworzenie elementu lub grupy elementów zgodnie ze wzorcem, który
 
 |Nazwa węzła|definiuje|
 |---------------|-------------|
-|Nazwa|Nazwa elementu przybornika.|
+|displayName|Nazwa elementu przybornika.|
 |tabName|Karta przybornika, w której element powinien zostać wyświetlony. Możesz określić nazwę zwykłej karty dla tego typu diagramu lub oddzielną nazwę.|
-|obraz|Lokalizacja pliku mapy bitowej ( **. bmp**), która musi mieć wysokość i szerokość 16 oraz głębi koloru 24 bity.|
+|image|Lokalizacja pliku mapy bitowej ( **. bmp**), która musi mieć wysokość i szerokość 16 oraz głębi koloru 24 bity.|
 |f1Keyword|Słowo kluczowe, które lokalizuje temat pomocy.|
-|Wyowietlon|Etykieta narzędzia dla tego narzędzia.|
+|wyowietlon|Etykieta narzędzia dla tego narzędzia.|
 
  Plik mapy bitowej można edytować w programie Visual Studio i ustawić jego wysokość i szerokość na 16 w okno Właściwości.
 
@@ -139,7 +139,7 @@ Aby ułatwić tworzenie elementu lub grupy elementów zgodnie ze wzorcem, który
 > Jeśli zaczniesz korzystać z pliku. tbxinfo po eksperymentie przy użyciu plików diagramu, może się okazać, że Przybornik zawiera zarówno starą, jak i nową wersję elementu przybornika. Może to również wystąpić, jeśli nazwa pliku diagramu została wpisana w pliku tbxinfo. W takim przypadku w menu skrótów przybornika wybierz pozycję **Zresetuj Przybornik**. Niestandardowe elementy przybornika znikną. Uruchom ponownie program Visual Studio, a zostaną wyświetlone poprawne elementy niestandardowe.
 
 ## <a name="Extension"></a>Jak dystrybuować elementy przybornika w rozszerzeniu programu Visual Studio
- Elementy przybornika można dystrybuować do innych [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] użytkowników, pakując je do rozszerzenia programu Visual Studio (VSIX). Można spakować polecenia, profile i inne rozszerzenia do tego samego pliku VSIX. Aby uzyskać więcej informacji, zobacz [Wdrażanie rozszerzeń programu Visual Studio](http://go.microsoft.com/fwlink/?LinkId=160780).
+ Elementy przybornika można dystrybuować do innych [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] użytkowników, pakując je do rozszerzenia programu Visual Studio (VSIX). Można spakować polecenia, profile i inne rozszerzenia do tego samego pliku VSIX. Aby uzyskać więcej informacji, zobacz [Wdrażanie rozszerzeń programu Visual Studio](https://go.microsoft.com/fwlink/?LinkId=160780).
 
  Typowym sposobem tworzenia rozszerzenia programu Visual Studio jest użycie szablonu projektu VSIX. Aby to zrobić, musisz mieć zainstalowany [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)].
 
@@ -151,7 +151,7 @@ Aby ułatwić tworzenie elementu lub grupy elementów zgodnie ze wzorcem, który
 
 3. Otwórz istniejący projekt rozszerzenia programu Visual Studio.
 
-     \- lub-
+     \- lub —
 
      Zdefiniuj nowy projekt rozszerzenia programu Visual Studio.
 
@@ -168,11 +168,11 @@ Aby ułatwić tworzenie elementu lub grupy elementów zgodnie ze wzorcem, który
 
 5. Ustaw następujące właściwości wszystkich plików, które zostały właśnie dodane. Można ustawić właściwości w tym samym czasie, wybierając je wszystkie w Eksplorator rozwiązań. Należy zachować ostrożność, aby nie zmieniać właściwości innych plików w projekcie.
 
-     **Kopiuj do katalogu wyjściowego**  = **Kopiuj zawsze**
+     **Kopiuj do katalogu wyjściowego** = **Kopiuj zawsze**
 
-     **Akcja kompilacji**  = **zawartość**
+     **Akcja kompilacji** = **zawartość**
 
-     **Uwzględnij w VSIX**  = **true**
+     **Uwzględnij w VSIX** = **true**
 
 6. Open **source. Extension. vsixmanifest**. Zostanie on otwarty w edytorze manifestu rozszerzenia.
 
@@ -180,14 +180,14 @@ Aby ułatwić tworzenie elementu lub grupy elementów zgodnie ze wzorcem, który
 
      W obszarze **zasoby**wybierz pozycję **Nowy** , a następnie ustaw pola w oknie dialogowym w następujący sposób:
 
-    - **Typ** **niestandardowego typu rozszerzenia**  = 
+    - **Typ** **niestandardowego typu rozszerzenia** = 
 
     - Typ = `Microsoft.VisualStudio.ArchitectureTools.CustomToolboxItems`
 
         > [!NOTE]
         > Nie jest to jedna z opcji na liście rozwijanej. Musisz go wprowadzić przy użyciu klawiatury.
 
-    - Plik  =  **źródłowego** **w systemie plików**.
+    - Plik = **źródłowego** **w systemie plików**.
 
     - **Path** = plik **. tbxinfo** , na przykład **Narzędzia. tbxinfo**
 
@@ -214,13 +214,13 @@ Aby ułatwić tworzenie elementu lub grupy elementów zgodnie ze wzorcem, który
 
 1. Utwórz projekt rozszerzenia programu Visual Studio, który zawiera co najmniej jeden niestandardowy narzędzi.
 
-    W pliku **. tbxinfo** Użyj metody pliku zasobów, aby zdefiniować `displayName` narzędzia, Przybornik `tabName` i etykietkę narzędzia. Utwórz plik zasobów, w którym są zdefiniowane te ciągi, skompiluj go w zestawie i odwołaj się do niego z pliku tbxinfo.
+    W pliku **. tbxinfo** Użyj metody pliku zasobów, aby zdefiniować `displayName`narzędzia, Przybornik `tabName`i etykietkę narzędzia. Utwórz plik zasobów, w którym są zdefiniowane te ciągi, skompiluj go w zestawie i odwołaj się do niego z pliku tbxinfo.
 
 2. Utwórz dodatkowe zestawy zawierające pliki zasobów z ciągami w innych językach.
 
 3. Umieść każdy dodatkowy zestaw w folderze, którego nazwa jest kodem kultury dla danego języka. Na przykład Umieść wersję francuską zestawu w folderze o nazwie **fr**.
 
-4. Należy używać neutralnego kodu kulturowego, zwykle dwóch liter, a nie określonej kultury, takiej jak `fr-CA`. Aby uzyskać więcej informacji na temat kodów kultur, zobacz [Metoda CultureInfo. GetCultures](http://go.microsoft.com/fwlink/?LinkId=160782), która zawiera kompletną listę kodów kultur.
+4. Należy używać neutralnego kodu kulturowego, zwykle dwóch liter, a nie określonej kultury, takiej jak `fr-CA`. Aby uzyskać więcej informacji na temat kodów kultur, zobacz [Metoda CultureInfo. GetCultures](https://go.microsoft.com/fwlink/?LinkId=160782), która zawiera kompletną listę kodów kultur.
 
 5. Kompiluj rozszerzenie programu Visual Studio i Rozpowszechnij go.
 
@@ -229,7 +229,7 @@ Aby ułatwić tworzenie elementu lub grupy elementów zgodnie ze wzorcem, który
    Nie można użyć tej metody, aby zainstalować różne wersje diagramu prototypowego. Nazwy elementów i łączników będą takie same w każdej instalacji.
 
 ## <a name="other-toolbox-operations"></a>Inne operacje przybornika
- Zwykle w [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] można personalizować Przybornik, zmieniając nazwy narzędzi, przenosząc je do różnych kart przybornika i usuwając je. Jednak te zmiany nie są utrwalane w przypadku niestandardowych narzędzi modelowania utworzonych za pomocą procedur opisanych w tym temacie. Po ponownym uruchomieniu [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] narzędzia niestandardowe pojawią się ponownie wraz ze zdefiniowanymi nazwami i lokalizacjami przybornika.
+ Zwykle w [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]można personalizować Przybornik, zmieniając nazwy narzędzi, przenosząc je do różnych kart przybornika i usuwając je. Jednak te zmiany nie są utrwalane w przypadku niestandardowych narzędzi modelowania utworzonych za pomocą procedur opisanych w tym temacie. Po ponownym uruchomieniu [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]narzędzia niestandardowe pojawią się ponownie wraz ze zdefiniowanymi nazwami i lokalizacjami przybornika.
 
  Ponadto narzędzia niestandardowe znikną po wykonaniu polecenia **Zresetuj Przybornik** . Jednak zostaną one wyświetlone ponownie po ponownym uruchomieniu [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].
 

@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 53542ec2a5270aec6836864fa3108d5f84da2df9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5acbb4d2966e89f7913fa1479b882fad5c9650f7
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669879"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295813"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definiowanie zasad blokowania na potrzeby tworzenia segmentów tylko do odczytu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Interfejs [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] API niezmienności wizual
 > [!NOTE]
 > Zasady blokowania można obejść przy użyciu odbicia. Zapewnia jasne ograniczenie dla deweloperów innych firm, ale nie zapewnia silnych zabezpieczeń.
 
- Więcej informacji i przykładów można znaleźć w witrynie internetowej [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [wizualizacji i modelowania SDK](http://go.microsoft.com/fwlink/?LinkId=186128) .
+ Więcej informacji i przykładów można znaleźć w witrynie internetowej [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [wizualizacji i modelowania SDK](https://go.microsoft.com/fwlink/?LinkId=186128) .
 
 ## <a name="setting-and-getting-locks"></a>Ustawianie i pobieranie blokad
  Można ustawić blokadę dla magazynu, partycji lub pojedynczego elementu. Na przykład ta instrukcja uniemożliwi usunięcie elementu modelu i uniemożliwi zmianę jego właściwości:

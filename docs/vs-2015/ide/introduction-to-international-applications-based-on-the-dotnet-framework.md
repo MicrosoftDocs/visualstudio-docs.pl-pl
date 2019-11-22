@@ -26,21 +26,21 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8243b2f735fb15f5c4e2fe841721696b87590997
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f394cca9a248b5304a165f68a60b966d8e3684b2
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670437"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74291375"
 ---
 # <a name="introduction-to-international-applications-based-on-the-net-framework"></a>Wprowadzenie do aplikacji międzynarodowych na podstawie .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] istnieją dwie części do tworzenia aplikacji gotowej do użycia na całym świecie: globalizacja, proces projektowania aplikacji, które można dostosować do różnych kultur i lokalizacji, proces tłumaczenia zasobów dla określonej kultury. Aby uzyskać ogólne informacje na temat projektowania aplikacji dla odbiorców międzynarodowych, zobacz [najlepsze rozwiązania dotyczące tworzenia aplikacji gotowych do użytku](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c).
+W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]istnieją dwie części do tworzenia aplikacji gotowej do użycia na całym świecie: globalizacja, proces projektowania aplikacji, które można dostosować do różnych kultur i lokalizacji, proces tłumaczenia zasobów dla określonej kultury. Aby uzyskać ogólne informacje na temat projektowania aplikacji dla odbiorców międzynarodowych, zobacz [najlepsze rozwiązania dotyczące tworzenia aplikacji gotowych do użytku](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c).
 
- @No__t_0 model lokalizacji składa się z głównego zestawu, który zawiera zarówno kod aplikacji, jak i zasoby rezerwowe — ciągi, obrazy i inne obiekty w języku, w którym aplikacja została pierwotnie opracowana. Każda zlokalizowana aplikacja będzie miała zestawy satelickie lub zestawy, które zawierają tylko zlokalizowane zasoby. Ponieważ główny zestaw zawsze zawiera zasoby rezerwowe, jeśli zasób nie zostanie znaleziony w zlokalizowanym zestawie satelickim, <xref:System.Resources.ResourceManager> podejmie próbę załadowania go w sposób hierarchiczny, ostatecznie powracając do zasobu w zestawie głównym. System rezerwowy zasobów został szczegółowo wyjaśniony w [hierarchicznej organizacji zasobów na potrzeby lokalizacji](../ide/hierarchical-organization-of-resources-for-localization.md).
+ [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] model lokalizacji składa się z głównego zestawu, który zawiera zarówno kod aplikacji, jak i zasoby rezerwowe — ciągi, obrazy i inne obiekty w języku, w którym aplikacja została pierwotnie opracowana. Każda zlokalizowana aplikacja będzie miała zestawy satelickie lub zestawy, które zawierają tylko zlokalizowane zasoby. Ponieważ główny zestaw zawsze zawiera zasoby rezerwowe, jeśli zasób nie zostanie znaleziony w zlokalizowanym zestawie satelickim, <xref:System.Resources.ResourceManager> podejmie próbę załadowania go w sposób hierarchiczny, ostatecznie powracając do zasobu w zestawie głównym. System rezerwowy zasobów został szczegółowo wyjaśniony w [hierarchicznej organizacji zasobów na potrzeby lokalizacji](../ide/hierarchical-organization-of-resources-for-localization.md).
 
- Jednym z zasobów lokalizacji, które należy wziąć pod uwagę przy użyciu, jest słownik dla wszystkich zlokalizowanych produktów firmy Microsoft. Ten plik CSV zawiera ponad 12 000 terminów w języku angielskim oraz tłumaczenia warunków w maksymalnie 59 różnych językach. Słownik jest dostępny do pobrania na stronie internetowej [Tłumaczenia terminologii firmy Microsoft](http://go.microsoft.com/fwlink/?LinkId=128146) .
+ Jednym z zasobów lokalizacji, które należy wziąć pod uwagę przy użyciu, jest słownik dla wszystkich zlokalizowanych produktów firmy Microsoft. Ten plik CSV zawiera ponad 12 000 terminów w języku angielskim oraz tłumaczenia warunków w maksymalnie 59 różnych językach. Słownik jest dostępny do pobrania na stronie internetowej [Tłumaczenia terminologii firmy Microsoft](https://go.microsoft.com/fwlink/?LinkId=128146) .
 
  System projektu dla aplikacji Windows Forms może generować pliki zasobów zarówno dla rezerwy, jak i każdej żądanej dodatkowej kultury interfejsu użytkownika. Rezerwowy plik zasobów jest wbudowany w zestaw główny, a pliki zasobów specyficzne dla kultury są następnie wbudowane w zestawy satelickie, po jednym dla każdej kultury interfejsu użytkownika. Podczas kompilowania projektu pliki zasobów są kompilowane z formatu XML programu Visual Studio (. resx) do pośredniego formatu binarnego (Resources), które są następnie osadzone w zestawach satelickich.
 

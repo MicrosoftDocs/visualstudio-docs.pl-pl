@@ -1,5 +1,5 @@
 ---
-title: 'DA0024: Nadmierne zużycie czasu Procesora | Dokumentacja firmy Microsoft'
+title: 'DA0024: nadmierny czas procesora (GC) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,38 +13,38 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d40377c28e0987ac902ab8aa5cf778715eb899cd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e0414e8bc4b5789f08751749b52f870c7c5e5167
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435848"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300089"
 ---
-# <a name="da0024-excessive-gc-cpu-time"></a>DA0024: Nadmierne zużycie czasu procesora przez odzyskiwanie pamięci
+# <a name="da0024-excessive-gc-cpu-time"></a>DA0024: Nadmierne wykorzystanie czasu GC CPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Rule Id|DA0024|  
+Identyfikator reguły | DA0024 |  
 |Category|.NET Framework Usage|  
 | Metoda profilowania | Wszystkie |  
-| Komunikat | czas działania modułu GC (%) jest bardzo duża. Brak nadmiernej liczby wyrzucania elementów bezużytecznych. |  
+| Komunikat |% czasu w usłudze GC jest bardzo wysoki. Występuje nadmierna ilość wyrzucania elementów bezużytecznych. |  
 | Typ reguły | Ostrzeżenie |  
   
- Podczas profilowania za pomocą próbkowania pamięci platformy .NET i metod rywalizacji zasobów musi zebrać co najmniej 10 próbek do wyzwolenia tej reguły.  
+ Podczas profilowania przy użyciu metod pobierania próbek, pamięci .NET lub rywalizacji o zasoby należy zebrać co najmniej 10 próbek, aby wyzwolić tę regułę.  
   
 ## <a name="cause"></a>Przyczyna  
- Dane o wydajności systemu, które zostały zebrane podczas profilowania wskazuje, że czas poświęcony na wyrzucanie elementów bezużytecznych jest zbyt wysoka w porównaniu z czasem przetwarzania kompletnej aplikacji.  
+ Dane wydajności systemu zebrane podczas profilowania wskazują, że czas spędzony na wyrzucaniu elementów bezużytecznych jest zbyt duży w porównaniu z całkowitym czasem przetwarzania aplikacji.  
   
 ## <a name="rule-description"></a>Opis reguły  
- Microsoft .NET wspólnego języka środowiska wykonawczego (języka wspólnego CLR) zapewnia mechanizm zarządzania pamięcią automatyczną, który używa modułu odśmiecania pamięci, aby odzyskać pamięci z obiektów, które aplikacja już używa. Moduł odśmiecania pamięci jest zorientowana na generowanie na podstawie założenia, że wiele alokacje są krótkotrwałe. Na przykład, zmienne lokalne, powinny być krótkotrwały. Nowo utworzonych obiektach Uruchom w generacji 0 (gen 0), a następnie przejść do generacji 1, po ich przetrwać wyrzucania elementów bezużytecznych, uruchom, a na koniec przejścia do generacji 2, jeśli aplikacja nadal korzysta z nich.  
+ Microsoft .NET Common Language Time (CLR) zapewnia automatyczny mechanizm zarządzania pamięcią, który używa modułu wyrzucania elementów bezużytecznych do odzyskiwania pamięci z obiektów, które nie są już używane przez aplikację. Moduł wyrzucania elementów bezużytecznych jest oparty na generacji, w oparciu o założenie, że wiele alokacji jest krótkoterminowych. Zmienne lokalne, na przykład, powinny być krótkotrwałe. Nowo utworzone obiekty rozpoczynają się w generacji 0 (Gen 0), a następnie postępować w generacji 1, gdy zajmują się uruchomieniem odzyskiwania pamięci, a wreszcie przechodzą do generacji 2, jeśli aplikacja nadal używa tych danych.  
   
- Obiekty w generacji 0 są zbierane, często i zazwyczaj bardzo wydajny sposób. Obiekty w generacji 1 są zbierane rzadziej i mniej skuteczne. Na koniec długotrwałe obiekty w generacji 2 powinny być zbierane nawet rzadziej. Kolekcji generacji 2, która znajduje się pełne wyrzucanie elementów bezużytecznych, uruchamianie, jest również najbardziej kosztowną operacją.  
+ Obiekty w generacji 0 są zbierane często i zwykle bardzo wydajnie. Obiekty w generacji 1 są zbierane rzadziej i mniej wydajne. Na koniec obiekty długotrwałe w generacji 2 powinny być zbierane nawet rzadziej. Kolekcja 2 generacji, która jest pełnym przebiegiem odzyskiwania pamięci, jest również najtańszą operacją.  
   
- Ta reguła jest uruchamiana, gdy czas poświęcony na wyrzucanie elementów bezużytecznych jest zbyt wysoka w porównaniu z czasem przetwarzania kompletnej aplikacji.  
+ Ta zasada jest wyzwalana, gdy ilość czasu poświęcanego na wyrzucanie elementów bezużytecznych jest zbyt wysoka w porównaniu z całkowitym czasem przetwarzania aplikacji.  
   
 > [!NOTE]
-> Gdy część czasu spędzonego w wyrzucania elementów bezużytecznych jest ważna, ale nie nadmierne w porównaniu z czasem przetwarzania kompletnej aplikacji [DA0023: Wysokie wykorzystanie czasu GC CPU](../profiling/da0023-high-gc-cpu-time.md) generowane ostrzeżenie zamiast tej reguły.  
+> Gdy czas spędzony na wyrzucaniu elementów bezużytecznych jest znaczący, ale nie jest zbyt duży w porównaniu z całkowitym czasem przetwarzania aplikacji, wyzwalane jest ostrzeżenie [o wysokim czasie procesora (DA0023](../profiling/da0023-high-gc-cpu-time.md) ), a nie ta reguła.  
   
-## <a name="how-to-investigate-a-warning"></a>Jak badać ostrzeżenie  
- Kliknij dwukrotnie komunikat w oknie Lista błędów, aby przejść do [widoku znaczniki](../profiling/marks-view.md) danych profilowania. Znajdź **pamięć .NET CLR\\czas działania modułu GC (%)** kolumny. Określa, czy określone faz wykonywania programu gdzie obciążenie pamięci zarządzanej wyrzucania elementów bezużytecznych jest większe niż pozostałych faz. Porównaj wartości czas działania modułu GC (%) wartość ma zostać współczynnik operacji wyrzucania elementów bezużytecznych zgłoszone w **# pokolenia 0**, **# zbierania obiektów pokolenia 1**, **# zbierania obiektów pokolenia 2** wartości .  
+## <a name="how-to-investigate-a-warning"></a>Jak zbadać ostrzeżenie  
+ Kliknij dwukrotnie komunikat w oknie Lista błędów, aby przejść do [widoku znaczniki](../profiling/marks-view.md) danych profilowania. Znajdź **pamięć środowiska CLR\\% Time w kolumnie GC** . Ustal, czy istnieją określone fazy wykonywania programu, w których narzuty wyrzucania elementów bezużytecznych pamięci zarządzanej są większe niż inne fazy. Porównaj wartości parametru% Time w usłudze GC z szybkością wyrzucania elementów bezużytecznych raportowaną w liczbie kolekcji **generacji 0**, kolekcjach **generacji 1**, liczbach **kolekcji generacji 2** .  
   
- Czas w wartości GC (%) próbuje ilość czasu, że aplikacja zużywa wykonywania wyrzucania elementów bezużytecznych proporcjonalna do sumy przetwarzania raportu. Należy pamiętać, że istnieją okoliczności, gdy czas w wartości GC (%) może zgłaszać bardzo wysoka wartość, ale nie jest się z powodu nadmiernego wyrzucania elementów bezużytecznych. Aby uzyskać więcej informacji na temat sposobu, czas w wartości GC (%) jest obliczana, zobacz [różnica między wydajności — dane zgłaszane przez różnych narzędzi — 4](http://go.microsoft.com/fwlink/?LinkId=177863) wpisu **Weblog firmy Maoni** w witrynie MSDN. Jeśli występują błędy stron lub aplikacja są zastępowane przez inne prace wyższy priorytet, na maszynie podczas wyrzucania elementów bezużytecznych, czas licznika GC (%) zostanie naliczona te dodatkowe opóźnienia.
+ Wartość% Time w usłudze GC próbuje zgłosić ilość czasu, przez który aplikacja spędza wykonywanie wyrzucania elementów bezużytecznych proporcjonalnie do całkowitej ilości przetwarzania. Należy pamiętać, że istnieją sytuacje, w których wartość% Time w usłudze GC może zgłosić bardzo wysoką wartość, ale nie jest ze względu na nadmierne wyrzucanie elementów bezużytecznych. Aby uzyskać więcej informacji na temat sposobu, w jaki wartość% Time w usłudze GC jest obliczana, zobacz [różnicę między danymi wydajności zgłaszanymi przez różne narzędzia — 4 wprowadzanie danych](https://go.microsoft.com/fwlink/?LinkId=177863) w witrynie sieci **Web Maoni** w MSDN. Jeśli wystąpią błędy stron lub aplikacja jest zastosowana przez inne zadania o wyższym priorytecie podczas wyrzucania elementów bezużytecznych, czas (%) w liczniku GC będzie odzwierciedlał te dodatkowe opóźnienia.

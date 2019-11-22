@@ -1,5 +1,5 @@
 ---
-title: Diagnostyka grafiki programu Visual Studio | Dokumentacja firmy Microsoft
+title: Diagnostyka grafiki programu Visual Studio | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -11,21 +11,21 @@ caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cb55508c705013c3ad604c3ceeb52d7af6bb4445
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 29ca6b2110038a427c76622d50f769321cda9ff9
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68158451"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296894"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Diagnostyka grafiki w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Program Visual Studio*Graphics Diagnostics* to zestaw narzędzi do rejestrowania i następnie analizowania problemów renderowania i wydajności w aplikacjach Direct3D. Diagnostyka grafiki może służyć w aplikacjach, które działają lokalnie na komputerze z systemem Windows, w emulatorze urządzenia Windows lub na zdalnym komputerze lub urządzeniu.  
   
- Diagnostyka grafiki przepływu pracy rozpoczyna się od przechwytywania rekordu w jaki sposób aplikacja używa technologii Direct3D — na żywo, podczas jego wykonywania — tak, aby od razu można analizować swoje zachowanie, udostępnione lub zapisywane do użycia w dalszej części. Sesji przechwytywania, które mogą być zainicjowane i kontrolowane ręcznie z poziomu programu Visual Studio lub za pomocą narzędzia wiersza polecenia do przechwytywania **dxcap.exe**. Można również inicjowane sesji przechwytywania i kontrolowany programowo za pomocą Graphics Diagnostics przechwytywania interfejsów API.  
+ Diagnostyka grafiki przepływu pracy rozpoczyna się od przechwytywania rekordu w jaki sposób aplikacja używa technologii Direct3D — na żywo, podczas jego wykonywania — tak, aby od razu można analizować swoje zachowanie, udostępnione lub zapisywane do użycia w dalszej części. Sesje przechwytywania można inicjować i kontrolować ręcznie z poziomu programu Visual Studio lub za pomocą narzędzia do przechwytywania wiersza polecenia **DXCap. exe**. Sesje przechwytywania można także inicjować i kontrolować programowo przy użyciu interfejsów API przechwytywania Diagnostyka grafiki.  
   
- Po sesji przechwytywania zarejestrowano jego zawartość może zostać odtworzony przez program Visual Studio *analizatora grafiki* w dowolnym momencie i ponowne utworzenie przechwycone ramki przy użyciu dokładnie tych samych zasobów i renderowanie poleceń, aplikacja używana. Następnie przy użyciu narzędzi dostępnych w okno analizator grafiki, dowolny przechwycone ramki mogą być analizowane szczegółowo. Te narzędzia można zbadać każde wywołanie interfejsu API Direct3D, zasobów, obiekt stanu potoku, etap potoku lub nawet pełną historię dowolny piksel w przechwyconej ramce. Za pomocą tych narzędzi z optymalizacją, problem z renderowaniem, można eksplorować tylko intuicyjnie, począwszy od sposobu jej wyświetlania w przechwyconej ramce i wyświetlających jego głównej przyczyny problemu w aplikacji źródła kodu, programów do cieniowania lub grafiki zasoby.  
+ Po sesji przechwytywania zarejestrowano jego zawartość może zostać odtworzony przez program Visual Studio *analizatora grafiki* w dowolnym momencie i ponowne utworzenie przechwycone ramki przy użyciu dokładnie tych samych zasobów i renderowanie poleceń, aplikacja używana. Następnie przy użyciu narzędzi dostępnych w oknie Analizator grafiki można analizować wszystkie przechwycone ramki. Te narzędzia można zbadać każde wywołanie interfejsu API Direct3D, zasobów, obiekt stanu potoku, etap potoku lub nawet pełną historię dowolny piksel w przechwyconej ramce. Za pomocą tych narzędzi z optymalizacją, problem z renderowaniem, można eksplorować tylko intuicyjnie, począwszy od sposobu jej wyświetlania w przechwyconej ramce i wyświetlających jego głównej przyczyny problemu w aplikacji źródła kodu, programów do cieniowania lub grafiki zasoby.  
   
  Aby zdiagnozować problemy z wydajnością, przechwyconej ramki mogą być analizowane za pomocą *analizy klatek* narzędzia. To narzędzie analizuje potencjalnych optymalizacji wydajności, automatycznie zmienia sposób aplikacja używa technologii Direct3D i testów porównawczych wszystkie odmiany dla Ciebie. W przeszłości, może zostały wprowadzone i ręcznie po prostu badany w tego rodzaju zmian można znaleźć poza te, które wprowadzone różnica. Za pomocą analizy ramek wystarczy wprowadzić zmiany, które już znasz, będzie spłacenie.  
   
@@ -81,7 +81,7 @@ Program Visual Studio*Graphics Diagnostics* to zestaw narzędzi do rejestrowania
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
   
-|Tytuł|Opis|  
+|Stanowisko|Opis|  
 |-----------|-----------------|  
 |[Debugowanie w programie Visual Studio](../debugger/debugging-in-visual-studio.md)|Wprowadza funkcji debugowania w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
-|[DirectX Graphics i gry](http://go.microsoft.com/fwlink/?LinkId=256498)|Zawiera artykuły na temat technologii grafiki DirectX.|
+|[DirectX Graphics i gry](https://go.microsoft.com/fwlink/?LinkId=256498)|Zawiera artykuły na temat technologii grafiki DirectX.|

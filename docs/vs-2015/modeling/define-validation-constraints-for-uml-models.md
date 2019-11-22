@@ -11,17 +11,17 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2f279216d06972578f5173e57375c89542c71e3f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3dd76deb3b72d3b12d3b5892c2e5664273425c4c
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669897"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295840"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>Definiowanie ograniczeń walidacji dla modeli UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Można zdefiniować ograniczenia walidacji, które sprawdzają, czy model spełnia określony warunek. Na przykład można zdefiniować ograniczenie, aby upewnić się, że użytkownik nie tworzy pętli relacji dziedziczenia. To ograniczenie jest wywoływane, gdy użytkownik próbuje otworzyć lub zapisać model i może być również wywoływana ręcznie. Jeśli ograniczenie nie powiedzie się, zostanie dodany komunikat o błędzie do okna błędu. Można spakować te ograniczenia do rozszerzenia integracji programu Visual Studio ([VSIX](http://go.microsoft.com/fwlink/?LinkId=160780)) i rozpowszechnić je innym użytkownikom programu Visual Studio.
+Można zdefiniować ograniczenia walidacji, które sprawdzają, czy model spełnia określony warunek. Na przykład można zdefiniować ograniczenie, aby upewnić się, że użytkownik nie tworzy pętli relacji dziedziczenia. To ograniczenie jest wywoływane, gdy użytkownik próbuje otworzyć lub zapisać model i może być również wywoływana ręcznie. Jeśli ograniczenie nie powiedzie się, zostanie dodany komunikat o błędzie do okna błędu. Można spakować te ograniczenia do rozszerzenia integracji programu Visual Studio ([VSIX](https://go.microsoft.com/fwlink/?LinkId=160780)) i rozpowszechnić je innym użytkownikom programu Visual Studio.
 
  Można także definiować ograniczenia, które weryfikują model względem zasobów zewnętrznych, takich jak bazy danych. Jeśli chcesz sprawdzić poprawność kodu programu na diagramie warstwowym, zobacz [Dodawanie niestandardowej weryfikacji architektury do diagramów warstwowych](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).
 
@@ -63,7 +63,7 @@ Można zdefiniować ograniczenia walidacji, które sprawdzają, czy model spełn
 
 4. Przetestuj ograniczenia, naciskając klawisz F5. Aby uzyskać więcej informacji, zobacz [wykonywanie ograniczenia walidacji](#Executing).
 
-5. Zainstaluj polecenie menu na innym komputerze przez skopiowanie pliku **bin \\ \* \\ \*. vsix** skompilowanego przez projekt. Aby uzyskać więcej informacji, zobacz [Instalowanie i odinstalowywanie rozszerzenia](#Installing).
+5. Zainstaluj polecenie menu na innym komputerze przez skopiowanie pliku **bin\\\*\\\*. vsix** skompilowanego przez projekt. Aby uzyskać więcej informacji, zobacz [Instalowanie i odinstalowywanie rozszerzenia](#Installing).
 
    Po dodaniu innych plików **CS** zwykle wymagane są następujące instrukcje `using`:
 
@@ -105,11 +105,11 @@ using Microsoft.VisualStudio.Uml.Classes;
 
     3. Na karcie **zasoby** wybierz pozycję **Nowy**, a następnie w oknie dialogowym Ustaw wartość:
 
-         **Typ**  = **składnik MEF**
+         **Typ** = **składnik MEF**
 
-         **Źródło**  = **projektu w bieżącym rozwiązaniu**
+         **Źródło** = **projektu w bieżącym rozwiązaniu**
 
-         **Projekt**  = *projektu biblioteki klas*
+         **Projekt** = *projektu biblioteki klas*
 
 #### <a name="to-define-the-validation-class"></a>Aby zdefiniować klasę walidacji
 
@@ -195,7 +195,7 @@ using Microsoft.VisualStudio.Uml.Classes;
 
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`
 
-2. W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] eksperymentalnym Otwórz lub Utwórz projekt modelowania, a następnie otwórz lub Utwórz diagram modelowania.
+2. W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]eksperymentalnym Otwórz lub Utwórz projekt modelowania, a następnie otwórz lub Utwórz diagram modelowania.
 
 3. Aby skonfigurować test dla ograniczenia przykładowego podanym w poprzedniej sekcji:
 
@@ -284,7 +284,7 @@ public void ValidateSomething
 
  Hierarchia typów jest podsumowywana w [typach elementów modelu UML](../modeling/uml-model-element-types.md).
 
- Możesz również uzyskać dostęp do elementów przez następujące relacje. Na przykład w przypadku zdefiniowania metody sprawdzania poprawności na `IClass` można zapętlić się swoimi właściwościami:
+ Możesz również uzyskać dostęp do elementów przez następujące relacje. Na przykład w przypadku zdefiniowania metody sprawdzania poprawności na `IClass`można zapętlić się swoimi właściwościami:
 
 ```
 public void ValidateTypeName(ValidationContext context, IClass c)
@@ -372,7 +372,7 @@ context.LogError(... , usecase);
 
     1. W **Eksplorator rozwiązań**, w menu skrótów projektu VSIX, wybierz polecenie **Otwórz folder w Eksploratorze Windows**.
 
-    2. Zlokalizuj plik **bin \\ \* \\** _YourProject_ **. vsix**
+    2. Zlokalizuj plik **bin\\\*\\** _YourProject_ **. vsix**
 
 2. Skopiuj plik **. vsix** do komputera docelowego, na którym chcesz zainstalować rozszerzenie. Może to być własny komputer lub inny.
 
@@ -392,9 +392,9 @@ context.LogError(... , usecase);
 
 3. Wybierz rozszerzenie, a następnie wybierz **Odinstaluj**.
 
-   Rzadko błędne rozszerzenie nie zostanie załadowane i tworzy raport w oknie błędu, ale nie jest wyświetlany w Menedżerze rozszerzeń. W takim przypadku można usunąć rozszerzenie, usuwając plik z następującej lokalizacji, gdzie *% LocalAppData%* jest zazwyczaj *dysk*: \Users \\*username*\AppData\Local:
+   Rzadko błędne rozszerzenie nie zostanie załadowane i tworzy raport w oknie błędu, ale nie jest wyświetlany w Menedżerze rozszerzeń. W takim przypadku można usunąć rozszerzenie, usuwając plik z następującej lokalizacji, gdzie *% LocalAppData%* jest zazwyczaj *dysk*: \Users\\*username*\AppData\Local:
 
-   *% LocalAppData%* **\Microsoft\VisualStudio \\ [wersja] \Extensions**
+   *% LocalAppData%* **\Microsoft\VisualStudio\\[wersja] \Extensions**
 
 ## <a name="Example"></a>Przyklad
  Ten przykład odnajduje pętle w relacji zależności między elementami.

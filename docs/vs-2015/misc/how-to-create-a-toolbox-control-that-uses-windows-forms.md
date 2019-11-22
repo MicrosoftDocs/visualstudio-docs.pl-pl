@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Tworzenie kontrolki przybornika, który używa formularzy Windows | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Tworzenie kontrolki przybornika korzystającej z Windows Forms | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -11,83 +11,83 @@ helpviewer_keywords:
 ms.assetid: abbd3c3c-3a6e-4539-bd6c-a5891dead234
 caps.latest.revision: 12
 manager: jillfra
-ms.openlocfilehash: 33b4d8f1932429838f701df1f6ffaaceef321c4e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8436b8eee0193715e4ae886db18f91f7148dcb3b
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442919"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300433"
 ---
 # <a name="how-to-create-a-toolbox-control-that-uses-windows-forms"></a>Instrukcje: Tworzenie kontrolki przybornika korzystającej z Windows Forms
-Szablon kontrolki formularzy Windows Forms przybornika, który znajduje się w [!INCLUDE[vssdk_dev11_long](../includes/vssdk-dev11-long-md.md)] umożliwia tworzenie formantów Windows Forms, które są automatycznie dodawane do **przybornika** po zainstalowaniu rozszerzenia. W tym temacie pokazano, jak używać szablonu do tworzenia **przybornika** formant, który można rozdystrybuować innym użytkownikom...  
+Szablon kontrolki przybornika Windows Forms, który jest zawarty w [!INCLUDE[vssdk_dev11_long](../includes/vssdk-dev11-long-md.md)] umożliwia tworzenie formantów Windows Forms, które są automatycznie dodawane do **przybornika** po zainstalowaniu rozszerzenia. W tym temacie pokazano, jak za pomocą szablonu utworzyć formant **przybornika** , który można dystrybuować do innych użytkowników.  
   
 > [!NOTE]
-> Aby dowiedzieć się, jak pobrać zestawu SDK programu Visual Studio, zobacz [Centrum deweloperów programu Visual Studio Extensibility](http://go.microsoft.com/fwlink/?linkid=121964) w witrynie MSDN w sieci Web.  
+> Aby dowiedzieć się, jak pobrać zestaw Visual Studio SDK, zobacz [Centrum deweloperów rozszerzeń programu Visual Studio](https://go.microsoft.com/fwlink/?linkid=121964) w witrynie MSDN w sieci Web.  
   
 ## <a name="creating-a-toolbox-control"></a>Tworzenie kontrolki przybornika  
- Użyj szablonu kontrolki Przybornika formularzy Windows, aby utworzyć projekt, a następnie utworzyć interfejs użytkownika (UI), w projektancie.  
+ Użyj szablonu kontrolki przybornika Windows Forms, aby utworzyć projekt, a następnie Skompiluj interfejs użytkownika w projektancie.  
   
-#### <a name="to-create-a-windows-forms-toolbox-control-project"></a>Aby utworzyć projekt kontrolki formularzy Windows Forms przybornika  
+#### <a name="to-create-a-windows-forms-toolbox-control-project"></a>Aby utworzyć projekt kontrolki przybornika Windows Forms  
   
-1. Na **pliku** menu, kliknij przycisk **New**, a następnie kliknij przycisk **projektu**.  
+1. W menu **plik** kliknij pozycję **Nowy**, a następnie kliknij pozycję **projekt**.  
   
-2. W **nowy projekt** dialogowego **zainstalowane szablony**, kliknij węzeł preferowanego języka programowania, a następnie kliknij przycisk **rozszerzalności**. Na liście typów projektów wybierz **kontrolki formularzy Windows Forms przybornika**.  
+2. W oknie dialogowym **Nowy projekt** w obszarze **zainstalowane szablony**kliknij węzeł preferowanego języka programowania, a następnie kliknij pozycję **rozszerzalność**. Na liście typów projektów wybierz pozycję **formant przybornika Windows Forms**.  
   
-3. W **nazwa** wpisz nazwę, którego chcesz użyć dla projektu. Kliknij przycisk **OK**.  
+3. W polu **Nazwa** wpisz nazwę, której chcesz użyć dla projektu. Kliknij przycisk **OK**.  
   
-     Program Visual Studio tworzy rozwiązanie, które zawiera kontrolkę użytkownika, atrybut należy umieścić formant w **przybornika**, i VSIX manifestu wdrożenia.  
+     Program Visual Studio tworzy rozwiązanie, które zawiera kontrolkę użytkownika, atrybut służący do umieszczania kontrolki w **przyborniku**i manifest VSIX dla wdrożenia.  
   
-#### <a name="to-build-the-control-ui"></a>Tworzenie kontrolki interfejsu użytkownika  
+#### <a name="to-build-the-control-ui"></a>Aby skompilować interfejs użytkownika kontrolki  
   
-1. W **Eksploratora rozwiązań**, kliknij dwukrotnie ToolboxControl.cs, aby otworzyć go w projektancie.  
+1. W **Eksplorator rozwiązań**kliknij dwukrotnie pozycję ToolboxControl.cs, aby otworzyć ją w projektancie.  
   
-2. Z **przybornika**, przeciągnij formanty mają powierzchnię projektową i rozmieść je zgodnie z projektem.  
+2. Z **przybornika**przeciągnij wszystkie kontrolki do powierzchni projektowej i rozmieść je zgodnie z projektem.  
   
-3. W **właściwości** oknie ustawienie właściwości publiczne w kontrolce użytkownika, a w elemencie podrzędnym kontroli.  
+3. W oknie **Właściwości** ustaw właściwości publiczne na kontrolce użytkownika i w kontrolkach podrzędnych.  
   
-## <a name="coding-the-control"></a>Kodowanie kontrolki  
- Domyślnie formant pojawi się w **przybornika** jako **ToolboxControl1** w **przybornika** grupy elementów, który ma taką samą nazwę jak rozwiązania. Możesz zmienić te nazwy w pliku ToolboxControl.cs.  
+## <a name="coding-the-control"></a>Kodowanie formantu  
+ Domyślnie kontrolka będzie wyświetlana w **przyborniku** jako **ToolboxControl1** w grupie elementów **przybornika** , która ma taką samą nazwę jak rozwiązanie. Te nazwy można zmienić w pliku ToolboxControl.cs.  
   
-#### <a name="to-code-the-control"></a>Do kodu kontrolki  
+#### <a name="to-code-the-control"></a>Aby zakodować formant  
   
-1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy ToolboxControl.cs, a następnie kliknij przycisk **Wyświetl kod** aby otworzyć go w widoku kodu.  
+1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję ToolboxControl.cs, a następnie kliknij pozycję **Wyświetl kod** , aby otworzyć plik w widoku kodu.  
   
-2. W definicji klasy częściowej, który implementuje kontrolkę, kliknij prawym przyciskiem myszy nazwę klasy, kliknij przycisk **Refaktoryzuj**, a następnie kliknij przycisk **Zmień nazwę**. Zmień nazwę klasy na nazwę, która ma być wyświetlana w **przybornika** , gdy kontrolka jest zainstalowany.  
+2. W definicji klasy częściowej, która implementuje formant, kliknij prawym przyciskiem myszy nazwę klasy, kliknij pozycję **Refaktoryzacja**, a następnie kliknij polecenie **Zmień nazwę**. Zmień nazwę klasy na nazwę, która ma być wyświetlana w **przyborniku** , gdy kontrolka jest zainstalowana.  
   
-3. Bezpośrednio nad definicji klasy w `ProvideToolboxControl` atrybutu deklaracji, zmień wartość pierwszego parametru do nazwy grupy elementów, który będzie obsługiwać formant w **przybornika**.  
+3. Bezpośrednio powyżej definicji klasy, w deklaracji atrybutu `ProvideToolboxControl`, Zmień wartość pierwszego parametru na nazwę grupy elementów, która będzie hostować formant w **przyborniku**.  
   
-     W poniższym przykładzie przedstawiono `ProvideToolboxControl` atrybut i definicję klasy skorygowany kontrolki o nazwie `Counter` w `General` grupy elementów.  
+     Poniższy przykład pokazuje atrybut `ProvideToolboxControl` i dostosowaną definicję klasy dla kontrolki o nazwie `Counter` w grupie `General` elementów.  
   
      [!code-csharp[ToolboxControlWinForms#07](../snippets/csharp/VS_Snippets_VSSDK/toolboxcontrolwinforms/cs/toolboxcontrol.cs#07)]  
   
-4. Implementuje właściwości, metod i zdarzeń dla formantu.  
+4. Zaimplementuj właściwości, metody i zdarzenia dla kontrolki.  
   
-## <a name="building-testing-and-deployment"></a>Tworzenie, testowanie i wdrażanie  
- Naciśnięcie klawisza F5 kompilacji projektu, który zawiera plik .vsix wdrożenia i otwiera drugie wystąpienie programu Visual Studio ma kontrolę zainstalowane w **przybornika**.  
+## <a name="building-testing-and-deployment"></a>Kompilowanie, testowanie i wdrażanie  
+ Naciśnięcie klawisza F5 kompiluje projekt, który obejmuje plik wdrożenia. vsix, i otwiera drugie wystąpienie programu Visual Studio, które ma kontrolkę zainstalowaną w **przyborniku**.  
   
-#### <a name="to-build-and-test-the-control"></a>Aby skompilować i przetestować formant  
+#### <a name="to-build-and-test-the-control"></a>Aby skompilować i przetestować kontrolkę  
   
 1. Naciśnij F5.  
   
-2. W wystąpieniu programu Visual Studio Utwórz projekt Windows Forms aplikacji.  
+2. W nowym wystąpieniu programu Visual Studio Utwórz projekt aplikacji Windows Forms.  
   
-3. Znajdź formant w **przybornika** i przeciągnij go do powierzchni projektowej.  
+3. Znajdź swój formant w **przyborniku** i przeciągnij go na powierzchnię projektu.  
   
-4. W **właściwości** okna, sprawdź, czy właściwości są wyświetlane zgodnie z oczekiwaniami.  
+4. W oknie **Właściwości** Sprawdź, czy właściwości są wyświetlane zgodnie z oczekiwaniami.  
   
-5. Dodaj kod lub dodatkowe formanty, które są wymagane do przetestowania Twojej metody i zdarzenia.  
+5. Dodaj dowolny kod lub dodatkowe kontrolki, które są wymagane do testowania metod i zdarzeń.  
   
 6. Naciśnij klawisz F5, aby otworzyć aplikację Windows Forms.  
   
-7. Upewnij się, że właściwości, metod i zdarzeń formantu zachowują się zgodnie z oczekiwaniami.  
+7. Sprawdź, czy właściwości, metody i zdarzenia kontrolki działają zgodnie z oczekiwaniami.  
   
-#### <a name="to-deploy-the-control"></a>Aby wdrożyć kontrolki  
+#### <a name="to-deploy-the-control"></a>Aby wdrożyć formant  
   
-1. Po skompilowaniu projektu przetestowane, otwórz folder \bin\debug\ projektu w Eksploratorze plików, a następnie zlokalizuj plik .vsix.  
+1. Po skompilowaniu przetestowanego projektu Otwórz folder \bin\debug\ projektu w Eksploratorze plików i Znajdź plik. VSIX.  
   
-2. Przekaż plik .vsix, z siecią lub do witryny sieci Web.  
+2. Przekaż plik VSIX do sieci lub witryny sieci Web.  
   
-     Jeśli załadujesz plik [Visual Studio Marketplace](https://marketplace.visualstudio.com/) witryny sieci Web, można użyć w innym użytkownikom **Menedżera rozszerzeń** w programie Visual Studio można znaleźć formantu i zainstaluj go.  
+     W przypadku przekazania pliku do witryny sieci Web [Visual Studio Marketplace](https://marketplace.visualstudio.com/) inni użytkownicy mogą użyć **Menedżera rozszerzeń** w programie Visual Studio, aby znaleźć formant i zainstalować go.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Tworzenie kontrolki przybornika WPF](../extensibility/creating-a-wpf-toolbox-control.md)

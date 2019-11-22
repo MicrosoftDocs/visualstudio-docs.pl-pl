@@ -1,5 +1,5 @@
 ---
-title: RC — zadanie | Dokumentacja firmy Microsoft
+title: RC — zadanie | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -23,35 +23,35 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9bc8b770e654442f14e693fda35d7cf6f5edbd12
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ea44b7b98cce9bcb634217f504ea1f0529a2cf15
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68158255"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298966"
 ---
 # <a name="rc-task"></a>RC — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Opakowuje narzędzie kompilatora zasobów systemu Microsoft Windows rc.exe. **RC** zadań kompiluje zasoby, takie jak kursorów, ikony, mapy bitowe, okna dialogowe i czcionek, w pliku zasobów (.res). Aby uzyskać więcej informacji, zobacz "Kompilator zasobów" w [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
+Zawija narzędzie kompilatora zasobów systemu Microsoft Windows, RC. exe. Zadanie **RC** kompiluje zasoby, takie jak kursory, ikony, mapy bitowe, okna dialogowe i czcionki, do pliku zasobów (. res). Aby uzyskać więcej informacji, zobacz "kompilator zasobów" w witrynie [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) w sieci Web.  
   
 ## <a name="parameters"></a>Parametry  
- W poniższej tabeli opisano parametry RCtask. Większość parametrów zadania oraz kilka zestawów parametrów, odpowiada opcji wiersza polecenia.  
+ W poniższej tabeli opisano parametry RCtask. Większość parametrów zadań i kilku zestawów parametrów odpowiada opcji wiersza polecenia.  
   
 |Parametr|Opis|  
 |---------------|-----------------|  
-|**AdditionalIncludeDirectories**|Opcjonalnie **String []** parametru.<br /><br /> Dodaje katalog do listy katalogów przeszukiwanych w poszukiwaniu plików dołączanych.<br /><br /> Aby uzyskać więcej informacji, zobacz **/I** opcji [przy użyciu RC (wiersz polecenia RC)](http://go.microsoft.com/fwlink/?LinkId=155730) w witrynie MSDN w sieci Web.|  
-|**AdditionalOptions**|Opcjonalnie **ciąg** parametru.<br /><br /> Lista przykład wiersza polecenia optionsor **"** _/option1 /option2 /option#_ ". Użyj tego parametru, aby określić opcje wiersza polecenia, które nie są reprezentowane przez inne **RC** parametru zadania.<br /><br /> Aby uzyskać więcej informacji, zobacz Opcje w [przy użyciu RC (wiersz polecenia RC)](http://go.microsoft.com/fwlink/?LinkId=155730) w witrynie MSDN w sieci Web.|  
-|**Kultury**|Opcjonalnie **ciąg** parametru.<br /><br /> Określa identyfikator ustawień regionalnych, który reprezentuje kulturę używaną w zasobach.<br /><br /> Aby uzyskać więcej informacji, zobacz **/l** opcji [przy użyciu RC (wiersz polecenia RC)](http://go.microsoft.com/fwlink/?LinkId=155730) w witrynie MSDN w sieci Web.|  
-|**IgnoreStandardIncludePath**|Opcjonalnie **logiczna** parametru.<br /><br /> Jeśli `true`, uniemożliwia sprawdzanie zmienną środowiskową INCLUDE podczas wyszukiwania plików nagłówkowych lub plików zasobów przez kompilator zasobów.<br /><br /> Aby uzyskać więcej informacji, zobacz **/x** opcji [przy użyciu RC (wiersz polecenia RC)](http://go.microsoft.com/fwlink/?LinkId=155730) w witrynie MSDN w sieci Web.|  
-|**NullTerminateStrings**|Opcjonalnie **logiczna** parametru.<br /><br /> Jeśli `true`, wartość null kończy wszystkie ciągi w tablicy ciągów.<br /><br /> Aby uzyskać więcej informacji, zobacz **/n** opcji [przy użyciu RC (wiersz polecenia RC)](http://go.microsoft.com/fwlink/?LinkId=155730) w witrynie MSDN w sieci Web.|  
-|**PreprocessorDefinitions**|Opcjonalnie **String []** parametru.<br /><br /> Należy zdefiniować co najmniej jeden symboli preprocesora kompilatora zasobów. Określ listę symbole makra.<br /><br /> Aby uzyskać więcej informacji, zobacz **/d** opcji [przy użyciu RC (wiersz polecenia RC)](http://go.microsoft.com/fwlink/?LinkId=155730) w witrynie MSDN w sieci Web. Zobacz też **UndefinePreprocessorDefinitions** w tej tabeli.|  
-|**ResourceOutputFileName**|Opcjonalnie **ciąg** parametru.<br /><br /> Określa nazwę pliku zasobów. Określ nazwę pliku zasobu.<br /><br /> Aby uzyskać więcej informacji, zobacz **/fo** opcji [przy użyciu RC (wiersz polecenia RC)](http://go.microsoft.com/fwlink/?LinkId=155730) w witrynie MSDN w sieci Web.|  
-|**ShowProgress**|Opcjonalnie **logiczna** parametru.<br /><br /> Jeśli `true`, wyświetla komunikaty, które składać sprawozdania z postępów kompilatora.<br /><br /> Aby uzyskać więcej informacji, zobacz **/v** opcji [przy użyciu RC (wiersz polecenia RC)](http://go.microsoft.com/fwlink/?LinkId=155730) w witrynie MSDN w sieci Web.|  
-|**Element źródłowy**|Wymagane `ITaskItem[]` parametru.<br /><br /> Określa tablicę elementów pliku źródłowego programu MSBuild, które mogą być używane i wyemitowane przez zadania.|  
-|**SuppressStartupBanner**|Opcjonalnie **logiczna** parametru.<br /><br /> Jeśli `true`, uniemożliwia wyświetlanie wiadomości praw autorskich i wersji, podczas uruchamiania zadania.<br /><br /> Aby uzyskać więcej informacji, wpisz **/?** Opcja wiersza polecenia, a następnie zobacz **/nologo** opcji.|  
-|**Katalog TrackerLogDirectory**|Opcjonalnie **ciąg** parametru.<br /><br /> Określa katalog dziennika śledzenia.|  
-|**UndefinePreprocessorDefinitions**|Usuń definicje symboli preprocesora.<br /><br /> Aby uzyskać więcej informacji, zobacz **/u** opcji [przy użyciu RC (wiersz polecenia RC)](http://go.microsoft.com/fwlink/?LinkId=155730) w witrynie MSDN w sieci Web. Zobacz też **PreprocessorDefinitions** w tej tabeli.|  
+|**AdditionalIncludeDirectories**|Opcjonalny parametr **String []** .<br /><br /> Dodaje katalog do listy katalogów, które są przeszukiwane w poszukiwaniu plików dołączanych.<br /><br /> Aby uzyskać więcej informacji, zobacz **/i** opcji w artykule [using RC (wiersz polecenia RC)](https://go.microsoft.com/fwlink/?LinkId=155730) w witrynie MSDN w sieci Web.|  
+|**AdditionalOptions**|Opcjonalny parametr **ciągu** .<br /><br /> Lista przykładowych opcji wiersza polecenia **"** _/option1/option2 Option #_ ". Użyj tego parametru, aby określić opcje wiersza polecenia, które nie są reprezentowane przez żaden inny parametr zadania **RC** .<br /><br /> Aby uzyskać więcej informacji, zobacz Opcje w temacie [using RC (wiersz polecenia RC)](https://go.microsoft.com/fwlink/?LinkId=155730) w witrynie MSDN w sieci Web.|  
+|**Dziedzinie**|Opcjonalny parametr **ciągu** .<br /><br /> Określa identyfikator ustawień regionalnych, który reprezentuje kulturę używaną w zasobach.<br /><br /> Aby uzyskać więcej informacji, zobacz **/l** opcji w artykule [using RC (wiersz polecenia RC)](https://go.microsoft.com/fwlink/?LinkId=155730) w witrynie MSDN w sieci Web.|  
+|**IgnoreStandardIncludePath**|Opcjonalny parametr **logiczny** .<br /><br /> Jeśli `true`, program zapobiega sprawdzaniu przez kompilator zasobów zmiennej środowiskowej INCLUDE podczas wyszukiwania plików nagłówkowych lub plików zasobów.<br /><br /> Aby uzyskać więcej informacji, zobacz **/x** Option in [using RC (wiersz polecenia RC)](https://go.microsoft.com/fwlink/?LinkId=155730) w witrynie MSDN w sieci Web.|  
+|**NullTerminateStrings**|Opcjonalny parametr **logiczny** .<br /><br /> Jeśli `true`, null-kończy wszystkie ciągi w tabeli ciągów.<br /><br /> Aby uzyskać więcej informacji, zobacz **/n** opcji w artykule [using RC (wiersz polecenia RC)](https://go.microsoft.com/fwlink/?LinkId=155730) w witrynie MSDN w sieci Web.|  
+|**PreprocessorDefinitions**|Opcjonalny parametr **String []** .<br /><br /> Zdefiniuj jeden lub więcej symboli preprocesora dla kompilatora zasobów. Określ listę symboli makr.<br /><br /> Aby uzyskać więcej informacji, zobacz **/d** Option in [using RC (wiersz polecenia RC)](https://go.microsoft.com/fwlink/?LinkId=155730) w witrynie MSDN w sieci Web. Zobacz też **UndefinePreprocessorDefinitions** w tej tabeli.|  
+|**ResourceOutputFileName**|Opcjonalny parametr **ciągu** .<br /><br /> Określa nazwę pliku zasobów. Określ nazwę pliku zasobu.<br /><br /> Aby uzyskać więcej informacji, zobacz **/fo** Option in [using RC (wiersz polecenia RC)](https://go.microsoft.com/fwlink/?LinkId=155730) w witrynie MSDN w sieci Web.|  
+|**ShowProgress**|Opcjonalny parametr **logiczny** .<br /><br /> Jeśli `true`, wyświetla komunikaty, które są raportowane na postęp kompilatora.<br /><br /> Aby uzyskać więcej informacji, zobacz **/v** opcja w artykule [using RC (wiersz polecenia RC)](https://go.microsoft.com/fwlink/?LinkId=155730) w witrynie MSDN w sieci Web.|  
+|**Obiekt źródłowy**|Wymagany `ITaskItem[]` parametr.<br /><br /> Definiuje tablicę elementów plików źródłowych MSBuild, które mogą być używane i emitowane przez zadania.|  
+|**SuppressStartupBanner**|Opcjonalny parametr **logiczny** .<br /><br /> Jeśli `true`, program zapobiega wyświetlaniu komunikatu o prawach autorskich i numerze wersji, gdy zadanie zostanie uruchomione.<br /><br /> Aby uzyskać więcej informacji, wpisz **/?** Opcja wiersza polecenia, a następnie zobacz opcję **/nologo** .|  
+|**Katalog trackerlogdirectory**|Opcjonalny parametr **ciągu** .<br /><br /> Określa katalog dziennika śledzenia.|  
+|**UndefinePreprocessorDefinitions**|Usuń definicję symbolu preprocesora.<br /><br /> Aby uzyskać więcej informacji, zobacz **/u** opcji w artykule [using RC (wiersz polecenia RC)](https://go.microsoft.com/fwlink/?LinkId=155730) w witrynie MSDN w sieci Web. Zobacz też **PreprocessorDefinitions** w tej tabeli.|  
   
 ## <a name="remarks"></a>Uwagi  
   

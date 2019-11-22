@@ -1,6 +1,6 @@
 ---
-title: Publikowanie WebApplicationWebSite (skrypt programu Windows PowerShell) | Dokumentacja firmy Microsoft
-description: Dowiedz się, jak opublikować projekt sieci web do witryny sieci Web platformy Azure. Ten skrypt tworzy wymagane zasoby w subskrypcji platformy Azure, jeśli nie istnieją.
+title: Publish-WebApplicationWebSite (skrypt programu Windows PowerShell) | Microsoft Docs
+description: Dowiedz się, jak opublikować projekt sieci Web w witrynie sieci Web platformy Azure. Ten skrypt tworzy wymagane zasoby w subskrypcji platformy Azure, jeśli nie istnieją.
 author: ghogen
 manager: jillfra
 assetId: 63cfaa2d-f04d-40dc-8677-345385c278d5
@@ -11,16 +11,16 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: dba4e9143c02a76763372a12153b2e22f612959c
-ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
+ms.openlocfilehash: 6c9c2e281ace3b483d1f37552fba0cc6f490978a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67624436"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298124"
 ---
 # <a name="publish-webapplicationwebsite-windows-powershell-script"></a>Publish-WebApplicationWebSite (skrypt programu Windows PowerShell)
 ## <a name="syntax"></a>Składnia
-Publikuje projektu sieci web do witryny sieci Web platformy Azure. Skrypt tworzy wymagane zasoby w subskrypcji platformy Azure, jeśli nie istnieją.
+Publikuje projekt sieci Web w witrynie sieci Web platformy Azure. Skrypt tworzy wymagane zasoby w subskrypcji platformy Azure, jeśli nie istnieją.
 
 ```
 Publish-WebApplicationWebSite
@@ -33,7 +33,7 @@ Publish-WebApplicationWebSite
 ```
 
 ## <a name="configuration"></a>Konfiguracja
-Ścieżka do pliku konfiguracji JSON opisujące szczegóły wdrożenia.
+Ścieżka do pliku konfiguracji JSON opisującego Szczegóły wdrożenia.
 
 | Parametr | Wartość domyślna |
 | --- | --- |
@@ -41,11 +41,11 @@ Publish-WebApplicationWebSite
 | Wymagany? |true |
 | Pozycja |nazwane |
 | Wartość domyślna |brak |
-| Akceptować wejście potokowe? |false |
+| Akceptujesz dane wejściowe potoku? |false |
 | Akceptować symbole wieloznaczne? |false |
 
 ## <a name="subscriptionname"></a>SubscriptionName
-Nazwa subskrypcji platformy Azure, który chcesz utworzyć witrynę sieci Web w.
+Nazwa subskrypcji platformy Azure, w której chcesz utworzyć witrynę sieci Web.
 
 | Parametr | Wartość domyślna |
 | --- | --- |
@@ -53,11 +53,11 @@ Nazwa subskrypcji platformy Azure, który chcesz utworzyć witrynę sieci Web w.
 | Wymagany? |false |
 | Pozycja |nazwane |
 | Wartość domyślna |brak |
-| Akceptować wejście potokowe? |false |
+| Akceptujesz dane wejściowe potoku? |false |
 | Akceptować symbole wieloznaczne? |false |
 
 ## <a name="webdeploypackage"></a>WebDeployPackage
-Ścieżka do pakietu wdrożeniowego sieci web, aby opublikować w witrynie sieci Web. Ten pakiet jest tworzony za pomocą kreatora Publikowanie w sieci Web w programie Visual Studio. Aby uzyskać więcej informacji, zobacz [rozpoczęcie korzystania z usług Azure Cloud Services i platformy ASP.NET](http://go.microsoft.com/fwlink/p/?LinkID=623089).
+Ścieżka do pakietu wdrożeniowego sieci Web do opublikowania w witrynie sieci Web. Ten pakiet można utworzyć przy użyciu Kreatora publikacji w sieci Web w programie Visual Studio. Aby uzyskać więcej informacji, zobacz Rozpoczynanie [pracy z usługą Azure Cloud Services i ASP.NET](https://go.microsoft.com/fwlink/p/?LinkID=623089).
 
 | Parametr | Wartość domyślna |
 | --- | --- |
@@ -65,11 +65,11 @@ Nazwa subskrypcji platformy Azure, który chcesz utworzyć witrynę sieci Web w.
 | Wymagany? |false |
 | Pozycja |nazwane |
 | Wartość domyślna |brak |
-| Akceptować wejście potokowe? |false |
+| Akceptujesz dane wejściowe potoku? |false |
 | Akceptować symbole wieloznaczne? |false |
 
 ## <a name="databaseserverpassword"></a>DatabaseServerPassword
-Nazwa użytkownika i hasło dla bazy danych SQL na platformie Azure.
+Nazwa użytkownika i hasło do bazy danych SQL na platformie Azure.
 
 | Parametr | Wartość domyślna |
 | --- | --- |
@@ -77,11 +77,11 @@ Nazwa użytkownika i hasło dla bazy danych SQL na platformie Azure.
 | Wymagany? |false |
 | Pozycja |nazwane |
 | Wartość domyślna |brak |
-| Akceptować wejście potokowe? |false |
+| Akceptujesz dane wejściowe potoku? |false |
 | Akceptować symbole wieloznaczne? |false |
 
 ## <a name="sendhostmessagestooutput"></a>SendHostMessagesToOutput
-W przypadku opcji true drukowania komunikatów ze skryptu do strumienia wyjściowego.
+Jeśli wartość jest równa true, Wydrukuj komunikaty ze skryptu do strumienia wyjściowego.
 
 | Parametr | Wartość domyślna |
 | --- | --- |
@@ -89,13 +89,13 @@ W przypadku opcji true drukowania komunikatów ze skryptu do strumienia wyjścio
 | Wymagany? |false |
 | Pozycja |nazwane |
 | Wartość domyślna |false |
-| Akceptować wejście potokowe? |false |
+| Akceptujesz dane wejściowe potoku? |false |
 | Akceptować symbole wieloznaczne? |false |
 
 ## <a name="remarks"></a>Uwagi
-Aby uzyskać pełne wyjaśnienie sposobu użyć skryptu, aby utworzyć środowiska deweloperskie i testowe, zobacz [za pomocą skryptów programu PowerShell Windows Publikuj deweloperskim i testowym](vs-azure-tools-publishing-using-powershell-scripts.md).
+Aby uzyskać pełne wyjaśnienie, jak używać skryptu do tworzenia środowisk deweloperskich i testowych, zobacz [Używanie skryptów programu Windows PowerShell do publikowania w środowiskach deweloperskich i testowych](vs-azure-tools-publishing-using-powershell-scripts.md).
 
-Plik konfiguracji JSON określa szczegóły co ma zostać wdrożony. Zawiera informacje, określone podczas tworzenia projektu, takie jak nazwa i nazwa użytkownika dla witryny sieci Web. Obejmuje również bazę danych do aprowizacji, jeśli istnieje. Poniższy kod przedstawia przykładowy plik konfiguracji JSON:
+Plik konfiguracji JSON określa szczegóły dotyczące tego, co ma zostać wdrożone. Zawiera informacje, które zostały określone podczas tworzenia projektu, takie jak nazwa i username witryny sieci Web. Zawiera również bazę danych, która ma zostać zainicjowana, jeśli istnieje. Poniższy kod przedstawia przykładowy plik konfiguracji JSON:
 
 ```json
 {
@@ -121,7 +121,7 @@ Plik konfiguracji JSON określa szczegóły co ma zostać wdrożony. Zawiera inf
 }
 ```
 
-Można edytować plik JSON konfiguracji do zmiany, co jest wdrażana. Sekcja witryny sieci Web jest wymagana, ale sekcja bazy danych jest opcjonalna.
+Plik konfiguracji JSON można edytować w celu zmiany wdrożenia. Sekcja witryny sieci Web jest wymagana, ale sekcja bazy danych jest opcjonalna.
 
 ## <a name="next-steps"></a>Następne kroki
-Aby uzyskać więcej informacji, zobacz [Publish-WebApplicationVM (skrypt programu Windows PowerShell)](vs-azure-tools-publish-webapplicationvm.md)
+Aby uzyskać więcej informacji, zobacz [Publish-WebApplicationVM (skrypt programu Windows PowerShell).](vs-azure-tools-publish-webapplicationvm.md)

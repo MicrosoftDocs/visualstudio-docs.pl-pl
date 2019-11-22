@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f96909d3051e18fe3992e68b44b2948d1e23ebd6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f2d9b958dacfb35877abc9ad1e83a349e43a7af0
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670120"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296869"
 ---
 # <a name="walkthrough-building-an-application"></a>Wskazówki: kompilowanie aplikacji
 
@@ -24,7 +24,7 @@ Po zakończeniu tego instruktażu zobaczysz więcej opcji, które można skonfig
 
 Ten temat zawiera następujące sekcje:
 
-[Instalowanie przykładowej aplikacji](../ide/walkthrough-building-an-application.md#BKMK_installapp)
+[Instalowanie przykładowej aplikacji](../ide/walkthrough-building-an-application.md)
 
 [Utwórz niestandardową konfigurację kompilacji](../ide/walkthrough-building-an-application.md#BKMK_CreateBuildConfig)
 
@@ -34,11 +34,7 @@ Ten temat zawiera następujące sekcje:
 
 [Wyświetl dodatkowe szczegóły kompilacji w Okno Dane wyjściowe](../ide/walkthrough-building-an-application.md#BKMK_outputdetails)
 
-[Utwórz kompilację wydania](../ide/walkthrough-building-an-application.md#BKMK_releasebuild)
-
-## <a name="BKMK_installapp"></a>Instalowanie przykładowej aplikacji
-
-Użyjesz okna dialogowego **rozszerzenia i aktualizacje** , aby znaleźć i zainstalować [wprowadzenie do kompilowania aplikacji WPF](http://code.msdn.microsoft.com/Introduction-to-Building-b8d16419?SRC=VSIDE) przykład z galerii przykładów w witrynie sieci Web firmy Microsoft. Galeria przykładów zawiera różne przykładowe projekty i kod, które można pobrać i przejrzeć podczas planowania i opracowywania aplikacji.
+[Utwórz kompilację wydania](../ide/walkthrough-building-an-application.md)
 
 #### <a name="to-install-the-sample-application"></a>Aby zainstalować przykładową aplikację
 
@@ -74,7 +70,7 @@ Użyjesz okna dialogowego **rozszerzenia i aktualizacje** , aby znaleźć i zain
 
      ![Okno dialogowe Nowy projekt, Visual Basic przykład](../ide/media/buildwalk-newprojectdlgintrotowpfsamplevb.png "BuildWalk_NewProjectdlgIntrotoWPFsampleVB")
 
-4. Wybierz przycisk **OK** .
+4. Wybierz **OK** przycisku.
 
 ## <a name="BKMK_CreateBuildConfig"></a>Utwórz niestandardową konfigurację kompilacji
 
@@ -100,7 +96,7 @@ Ustawienia konfiguracji i platformy można zmienić lub utworzyć przy użyciu o
 
     ![Okno dialogowe Nowa platforma rozwiązania](../ide/media/buildwalk-newsolutionplatform.png "BuildWalk_NewSolutionPlatform")
 
-6. Wybierz przycisk **OK** .
+6. Wybierz **OK** przycisku.
 
    Aktywna Konfiguracja rozwiązania została zmieniona na test z aktywną platformą rozwiązania ustawioną na x64.
 
@@ -206,7 +202,7 @@ W oknie **dane wyjściowe** można zmienić ilość informacji o procesie kompil
 
    Aby uzyskać więcej informacji, zobacz [jak: wyświetlanie, zapisywanie i konfigurowanie plików dziennika kompilacji](../ide/how-to-view-save-and-configure-build-log-files.md).
 
-## <a name="BKMK_releasebuild"></a>Utwórz kompilację wydania
+## <a name="create-a-release-build"></a>Utwórz kompilację wydania
 
 Możesz utworzyć wersję przykładowej aplikacji, która została zoptymalizowana pod kątem wysyłania. W przypadku kompilacji wydania należy określić, że plik wykonywalny jest kopiowany do udziału sieciowego przed rozpoczęciem kompilacji.
 
@@ -226,7 +222,7 @@ Aby uzyskać więcej informacji, zobacz [How to: zmiana katalogu wyjściowego ko
 
 5. W polu **Ścieżka wyjściowa kompilacji** określ ścieżkę sieciową.
 
-     Na przykład można określić \\ \myserver\builds.
+     Na przykład można określić \\\myserver\builds.
 
     > [!IMPORTANT]
     > Może pojawić się okno komunikatu z ostrzeżeniem, że określony udział sieciowy może nie być zaufaną lokalizacją. Jeśli ufasz określonej lokalizacji, wybierz przycisk **OK** w oknie komunikatu.
@@ -235,13 +231,13 @@ Aby uzyskać więcej informacji, zobacz [How to: zmiana katalogu wyjściowego ko
 
      ![Kompiluj polecenie rozwiązania w menu Kompilacja](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
 
-#### <a name="to-specify-a-release-build-for-visual-c"></a>Aby określić kompilację wydania dla Visual C \#
+#### <a name="to-specify-a-release-build-for-visual-c"></a>Aby określić kompilację wydania dla Visual C\#
 
 1. Otwórz **projektanta projektu**.
 
     ![Menu Widok, polecenie strony właściwości](../ide/media/buildwalk-viewpropertypages.png "BuildWalk_ViewPropertyPages")
 
-2. Wybierz stronę **kompilacja** .
+2. Wybierz **kompilacji** strony.
 
 3. Na liście **Konfiguracja** wybierz pozycję **Zwolnij**.
 
@@ -249,7 +245,7 @@ Aby uzyskać więcej informacji, zobacz [How to: zmiana katalogu wyjściowego ko
 
 5. W polu **Ścieżka wyjściowa** określ ścieżkę sieciową.
 
-    Na przykład można określić \\ \myserver\builds.
+    Na przykład można określić \\\myserver\builds.
 
    > [!IMPORTANT]
    > Może pojawić się okno komunikatu z ostrzeżeniem, że określony udział sieciowy może nie być zaufaną lokalizacją. Jeśli ufasz określonej lokalizacji, wybierz przycisk **OK** w oknie komunikatu.
@@ -258,7 +254,7 @@ Aby uzyskać więcej informacji, zobacz [How to: zmiana katalogu wyjściowego ko
 
     ![Kompiluj polecenie rozwiązania w menu Kompilacja](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
 
-   Plik wykonywalny jest kopiowany do określonej ścieżki sieciowej. Jego ścieżką będzie \\ \myserver\builds \\*filename*. exe.
+   Plik wykonywalny jest kopiowany do określonej ścieżki sieciowej. Jego ścieżką będzie \\\myserver\builds\\*filename*. exe.
 
    Gratulacje: Przewodnik został pomyślnie ukończony.
 

@@ -1,5 +1,5 @@
 ---
-title: Debugowanie układu przy użyciu narzędzia DOM Explorer | Dokumentacja firmy Microsoft
+title: Debugowanie układu przy użyciu DOM Explorer | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,33 +18,33 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8b9d0d2a3250785e5ff60d65a6bf1264892c6f98
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5dd40381b8f5ba4807e95cfcf5e5b7d54afd77e2
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434123"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298389"
 ---
 # <a name="debug-layout-using-dom-explorer"></a>Debugowanie układu przy użyciu eksploratora modelu DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
- **Układ** karta Narzędzia DOM Explorer pokazuje [modelu pudełkowego CSS](http://go.microsoft.com/fwlink/?LinkID=238778) dla wybranego elementu w [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] app, aplikacji Windows Phone Store lub aplikacja utworzona za pomocą programu Visual Studio Tools for Apache Cordova. Ta wizualnej reprezentacji modelu pudełkowego służy do identyfikowania i zmodyfikuj wartości związane z układem, które wpływają na wygląd elementów.  
+ Na karcie **układ** dom Explorer jest wyświetlany [model pola CSS](https://go.microsoft.com/fwlink/?LinkID=238778) dla wybranego elementu w aplikacji [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], aplikacja do sklepu Windows Phone lub aplikacja utworzona przy użyciu Visual Studio Tools dla Apache Cordova. Ta reprezentacja wizualna modelu Box służy do identyfikowania i modyfikowania wartości związanych z układem, które wpływają na wygląd elementów.  
   
 > [!TIP]
-> Zmiany wprowadzone w oknie **układ** karty nie są trwałe. Można wprowadzić trwałe zmiany do kodu źródłowego, a następnie Odśwież aplikację za pomocą **aplikacji Windows Odśwież** przycisku (tylko aplikacje Windows Store i Windows Phone Store) na pasku narzędzi debugowania. Dzięki temu można uniknąć ponownego uruchamiania debugera.  
+> Zmiany wprowadzane na karcie **Układ** nie są trwałe. Możesz wprowadzać trwałe zmiany w kodzie źródłowym, a następnie odświeżyć aplikację przy użyciu przycisku **Odśwież aplikację systemu** Windows (tylko aplikacje Sklepu windows i Windows Phone sklepu) na pasku narzędzi Debugowanie. W ten sposób można uniknąć ponownego uruchomienia debugera.  
   
- Aby użyć narzędzia DOM Explorer, aby zmodyfikować aspektów układu, które nie są wyświetlane w modelu pudełkowego, zobacz [Szybki Start: Debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md) i [stylów CSS debugowania przy użyciu narzędzia DOM Explorer](../debugger/debug-css-styles-using-dom-explorer.md).  
+ Aby użyć DOM Explorer do modyfikowania aspektów układu, które nie są wyświetlane w modelu Box, zobacz [Szybki Start: Debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md) oraz [debugowanie stylów css przy użyciu dom Explorer](../debugger/debug-css-styles-using-dom-explorer.md).  
   
-## <a name="example-of-fixing-a-layout-issue"></a>Przykład poprawiania problem układu  
- W tym przykładzie pokazano, jak wybierz element listy w szablonie Centrum/obrotu, interpretowania wartości modelu pola, znajdujące się na **układ** kartę, a następnie zmień jedną z wartości właściwości, aby rozwiązać problem układu.  
+## <a name="example-of-fixing-a-layout-issue"></a>Przykład rozwiązywania problemu z układem  
+ Ten przykład pokazuje, jak wybrać element listy w szablonie Hub/Pivot, interpretując wartości modelu Box, które znajdują się na karcie **Układ** , a następnie zmienić jedną z wartości właściwości w celu rozwiązania problemu układu.  
   
-#### <a name="to-fix-the-layout-issue"></a>Aby rozwiązać ten problem, układ  
+#### <a name="to-fix-the-layout-issue"></a>Aby rozwiązać problem z układem  
   
-1. W programie Visual Studio Utwórz nową aplikację Store, który używa szablonu projektu Centrum/obrotu.  
+1. W programie Visual Studio Utwórz nową aplikację ze sklepu, która używa szablonu projektu Hub/Pivot.  
   
-2. W folderze udostępnionym pages\hub Otwórz hub.css.  
+2. W folderze Shared pages\hub Otwórz plik Hub. css.  
   
 3. Zamień następujący kod CSS:  
   
@@ -55,7 +55,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
     }  
     ```  
   
-     kod CSS:  
+     z tym kodem CSS:  
   
     ```css  
     .hubpage .hub .section4 .sub-image-row img {  
@@ -65,68 +65,68 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
     }  
     ```  
   
-4. Wybierz projekt appName.WindowsPhone lub projektu appName.Windows w Eksploratorze rozwiązań, a następnie wybierz **Ustaw jako projekt startowy** z menu skrótów dla projektu.  
+4. Wybierz projekt nazwa_aplikacji. WindowsPhone lub projekt nazwa_aplikacji. Windows w Eksplorator rozwiązań, a następnie wybierz pozycję **Ustaw jako projekt startowy** z menu skrótów dla projektu.  
   
-5. W zależności od Twój projekt startowy wybierają **Emulator 8.1 WVGA 4 cala 512 MB** lub **symulator** na liście rozwijanej na pasku narzędzi debugowania (**komputera lokalnego** jest wartością domyślną wartość).  
+5. W zależności od projektu startowego wybierz pozycję **Emulator 8,1 WVGA (4 cala 512 MB** lub **symulatora** na liście rozwijanej na pasku narzędzi debugowania (wartość domyślna to**komputer lokalny** ).  
   
-     ![Wybieranie obiektu docelowego debugowania](../debugger/media/js-dom-debug-target-emu.png "JS_DOM_Debug_Target_Emu")  
+     ![Wybieranie elementu docelowego debugowania](../debugger/media/js-dom-debug-target-emu.png "JS_DOM_Debug_Target_Emu")  
   
 6. Naciśnij klawisz F5, aby uruchomić aplikację w trybie debugowania.  
   
-7. Otwórz przewijania lub flicking sekcja 4.  
+7. Otwórz sekcję 4 przez przewijanie lub szybkie przesuwanie.  
   
     > [!TIP]
-    > Pozycja prawo emulatora telefonu lub symulatora obok okna programu Visual Studio, dzięki czemu można natychmiast zobaczyć wyniki wyborów i zmiany wprowadzone w stylach CSS.  
+    > Umieść emulator telefonu lub symulatora bezpośrednio obok okna programu Visual Studio, dzięki czemu możesz natychmiast zobaczyć wyniki wybranych opcji i zmian w stylach CSS.  
   
-     Po załadowaniu sekcji 4, zobaczysz niższe obrazy wyglądają niewłaściwie. Każdy element pojawi się wycinania połowę (z lewej połowie brakujący).  
+     Gdy sekcja 4 ładuje, można zobaczyć, że dolne obrazy nie wyglądają w prawo. Każdy obraz elementu jest obcinany w połowie (z brakującą połową).  
   
-8. Przejdź do programu Visual Studio i wybierz **zaznacz Element** w Eksploratorze DOM (albo naciśnij klawisze Ctrl + B). Spowoduje to zmianę trybu zaznaczania, dzięki czemu będzie można zaznaczyć element, klikając go, i przenieść aplikację na pierwszy plan. Jednym kliknięciem można powrócić do poprzedniego trybu.  
+8. Przejdź do programu Visual Studio i wybierz **pozycję Wybierz element** w Dom Explorer (lub naciśnij klawisze CTRL + B). Spowoduje to zmianę trybu zaznaczania, dzięki czemu będzie można zaznaczyć element, klikając go, i przenieść aplikację na pierwszy plan. Jednym kliknięciem można powrócić do poprzedniego trybu.  
   
     > [!TIP]
-    > Aby wybrać elementy HTML bezpośrednio w Eksploratorze DOM, można użyć klawiszy strzałek lub innych metod. Aby uzyskać więcej informacji dotyczących zaznaczania elementów, zobacz [Szybki Start: Debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md).  
+    > Możesz również użyć klawiszy strzałek lub innych metod do zaznaczania elementów HTML bezpośrednio w DOM Explorer. Aby uzyskać więcej informacji na temat wybierania elementów, zobacz [Szybki Start: Debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md).  
   
-9. W emulatorze telefonu lub symulator wybierz szary prawej połowie ekranu jeden z obrazów, które są skrócił się o połowę. Wyróżnianie pojawia się wokół wybranego elementu, jak pokazano w Emulator Windows Phone:  
+9. W emulatorze lub symulatorze telefonu zaznacz szarą prawą połowę jednego z obrazów, które są obcinane w połowie. Wyróżnianie pojawia się wokół zaznaczonego elementu, jak pokazano poniżej w emulatorze Windows Phone:  
   
      ![Wybieranie elementu DOM](../debugger/media/js-css-layout-select.png "JS_CSS_Layout_Select")  
   
     > [!TIP]
-    > Symulator obsługuje, przenosząc kursor myszy nad elementy, aby pokazać pole wyróżnienie wokół elementów DOM, można wybrać. Emulator Windows Phone nie obsługuje tego.  
+    > Symulator obsługuje przesuwanie nad elementami, aby pokazać wyróżnianie pól wokół elementów DOM przed wybraniem jednego. Emulator Windows Phone nie obsługuje tej funkcji.  
   
-     Po wybraniu elementu DOM, Eksplorator DOM automatycznie zaznaczy odpowiedni element IMG w programie Visual Studio. Elementu zaznaczonego w Eksploratorze DOM wygląda następująco:  
+     Po wybraniu elementu DOM DOM Explorer automatycznie wybiera odpowiedni element IMG w programie Visual Studio. Element wybrany w DOM Explorer wygląda następująco:  
   
     ```html  
     <img src="ms-appx://guid/images/gray.png>   
     </img>  
     ```  
   
-10. Kliknij przycisk **układ** kartę. Ta karta przedstawia model pola wybranego elementu, jak pokazano w Emulator Windows Phone.  
+10. Kliknij kartę **Układ** . Na tej karcie jest wyświetlany model Box wybranego elementu, jak pokazano poniżej w emulatorze Windows Phone.  
   
-     ![Układ karcie Eksploratora DOM](../debugger/media/js-css-layout.png "JS_CSS_Layout")  
+     ![Karta układ DOM Explorer](../debugger/media/js-css-layout.png "JS_CSS_Layout")  
   
-     Ten widok zawiera pewne przydatne informacje dotyczące elementu:  
+     Ten widok udostępnia przydatne informacje dotyczące elementu:  
   
-    - Kolory odpowiadają wyróżnienia pola, który pojawia się w symulatorze, po najechaniu kursorem na elementy. Reprezentuje kolor niebieski \<img > wymiarów elementu. Tan kolor reprezentuje wartości marginesów.  
+    - Kolory odpowiadają wyróżnieniu pola, które pojawia się w symulatorze, gdy przesuwa się nad elementami. Niebieski kolor reprezentuje \<IMG > wymiarów elementu. Kolor Tan reprezentuje wartości marginesu.  
   
-    - Lewy margines (lewym marginesie) jest ustawiona, który wskazówki na przyczynę problemu, ponieważ pasuje objawów (czarne po lewej stronie obrazów).  
+    - Zostanie ustawiony lewy margines (margines lewy), który wskazuje na przyczynę problemu, ponieważ pasuje do objawu (czarny po lewej stronie obrazów).  
   
-    - Pola, które wyświetla wartości 0 pikseli (na przykład obramowanie i dopełnienie) sugeruje, że prawdopodobnie nie są ustawione odpowiednie właściwości CSS.  
+    - Pola pokazujące wartości 0 pikseli (na przykład obramowanie i uzupełnienie) sugerują, że odpowiednie właściwości CSS prawdopodobnie nie są ustawione.  
   
-11. Aby zobaczyć sposób zastosowania reguły lewy margines, wybierz **obliczane** kartę i sprawdź w obszarze reguła lewy margines. Widać, że ta zasada została ustawiona za pomocą wartości 5em obliczoną wartością jest jednak 66.66px lub 146.66px, w zależności od urządzenia docelowego.  
+11. Aby zobaczyć, jak jest stosowana reguła z lewej strony, wybierz kartę **obliczoną** i poszukaj w obszarze reguła lewej krawędzi. Można zobaczyć, że ta reguła jest ustawiona z wartością 5em, ale obliczoną wartością jest 66.66 px lub 146.66 pikseli, w zależności od urządzenia docelowego.  
   
     > [!TIP]
-    > **Obliczane** karta pokazuje, że reguła lewy margines jest ustawiony w `..hubpage .hub. section4 .sub-image-row img` selektora CSS, znaleziono w hub.css. W tej wersji demonstracyjnej aplikacji to, gdzie musisz wprowadzić poprawkę.  
+    > Karta **obliczona** pokazuje, że w selektorze css jest `..hubpage .hub. section4 .sub-image-row img` ustawiona lewa strona z lewej strony, która znajduje się w pliku Hub. css. W tej aplikacji demonstracyjnej, w której należy wprowadzić poprawkę.  
   
-     Można również użyć **układ** kartę, aby przetestować modyfikacje wartościom układu.  
+     Możesz również użyć karty **Układ** do testowania modyfikacji wartości układu.  
   
-12. W **układ** karty, wybierz opcję **66.66** lub **146.66**, który pojawia się w **margines** pole po lewej stronie pola.  
+12. Na karcie **Układ** wybierz pozycję **66,66** lub **146,66**, która zostanie wyświetlona w polu **margines** po lewej stronie pola.  
   
-13. Typ `0` i naciśnij klawisz Enter. (Umożliwia także klawiszy Strzałka w górę i Strzałka w dół na zmianę wartości.)  
+13. Wpisz `0` i naciśnij klawisz ENTER. (Możesz również zmienić wartość za pomocą klawiszy Strzałka w górę i Strzałka w dół).  
   
-14. Wybierz inny \<img > elementów w Eksploratorze DOM i zmień ich lewy margines wartości na 0.  
+14. Wybierz inne \<IMG > elementy w DOM Explorer i zmień wartości marginesów z lewej strony na 0.  
   
-15. Przełącz się do emulatora telefonu lub symulatora. Zaktualizowane wartości lewy margines zostały zastosowane do obrazów sekcja 4. Te wartości są aktualizowane w **obliczane** kartę w obszarze reguła lewy margines.  
+15. Przejdź do emulatora telefonu lub symulatora. Zaktualizowane lewe marginesy zostały zastosowane do obrazów sekcji 4. Te wartości są również aktualizowane na karcie **obliczonej** w ramach reguły lewej marginesu.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Szybki start: Debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md)   
- [Debugowanie stylów CSS przy użyciu Eksploratora modelu DOM](../debugger/debug-css-styles-using-dom-explorer.md)   
+ [Szybki Start: Debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md)   
+ [Debuguj Style CSS przy użyciu DOM Explorer](../debugger/debug-css-styles-using-dom-explorer.md)   
  [Wyświetlanie odbiorników zdarzeń DOM](../debugger/view-dom-event-listeners.md)

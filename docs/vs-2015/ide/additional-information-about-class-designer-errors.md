@@ -29,12 +29,12 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7500782a1d935c08ae95e26764c9476c63f36660
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 10eb94783abbd63ca152fbf73a544665199ba137
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72620388"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300286"
 ---
 # <a name="additional-information-about-class-designer-errors"></a>Dodatkowe informacje na temat błędów w Projektancie klas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Projektant klas nie śledzi lokalizacji plików źródłowych, dlatego zmodyfiko
 
  [Praca z kodem C++ wizualizacji (Projektant klas)](../ide/working-with-visual-cpp-code-class-designer.md) zawiera informacje dotyczące rozwiązywania problemów z wyświetlaniem C++ na diagramie klas.
 
- [Forum Projektant klas programu Visual Studio](http://go.microsoft.com/fwlink/?LinkId=160754) Zawiera forum z pytaniami dotyczącymi Projektant klas.
+ [Forum Projektant klas programu Visual Studio](https://go.microsoft.com/fwlink/?LinkId=160754) Zawiera forum z pytaniami dotyczącymi Projektant klas.
 
 ## <a name="see-also"></a>Zobacz też
  [Projektowanie i wyświetlanie klas i typów](../ide/designing-and-viewing-classes-and-types.md)

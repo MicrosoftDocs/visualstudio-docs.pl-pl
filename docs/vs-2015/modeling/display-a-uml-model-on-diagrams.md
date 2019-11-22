@@ -11,12 +11,12 @@ caps.latest.revision: 25
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4c8365f045618b92b4b34935bf5024c2ff781650
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 67eb1a6ce55292415da4a5c4e363941a4285d8b7
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669752"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296004"
 ---
 # <a name="display-a-uml-model-on-diagrams"></a>Wyświetlanie modelu UML na diagramach
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,13 +39,13 @@ W tym temacie:
 ## <a name="Display"></a>Aby wyświetlić element na diagramie
  Podczas tworzenia elementu, takiego jak przypadek użycia lub Akcja, użytkownik może zobaczyć go w Eksploratorze modelu UML, ale nie zawsze jest automatycznie wyświetlany na diagramie. W niektórych przypadkach należy napisać kod, aby go wyświetlić. W poniższej tabeli zestawiono alternatywy.
 
-|Typ elementu|Na przykład|Aby wyświetlić ten kod, należy|
+|Typ elementu|Na przykład:|Aby wyświetlić ten kod, należy|
 |---------------------|-----------------|-------------------------------------|
 |Klasyfikator|`Class`<br /><br /> `Component`<br /><br /> `Actor`<br /><br /> `Use Case`|Utwórz skojarzone kształty na określonych diagramach. Dla każdego klasyfikatora można utworzyć dowolną liczbę kształtów.<br /><br /> `diagram.Display<modelElementType>`<br /><br /> `(modelElement, parentShape,`<br /><br /> `xPosition , yPosition);`<br /><br /> Ustaw `parentShape` na `null` dla kształtu na najwyższym poziomie diagramu.<br /><br /> Aby wyświetlić jeden kształt w innym:<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `useCaseDiagram.Display`<br /><br /> `(useCase,`<br /><br /> `subsystemShape,`<br /><br /> `subsystemShape.XPosition + 5,`<br /><br /> `subsystemShape.YPosition + 5);` **Uwaga:** w przypadku przeprowadzania wyświetlania wewnątrz transakcji **ILinkedUndo** metoda czasami nie zwraca `IShape`. Ale kształt jest prawidłowo tworzony i jest dostępny przy użyciu `IElement.Shapes().`|
 |Element podrzędny klasyfikatora|Atrybut, operacja,<br /><br /> Część, port|Automatyczny — żaden kod nie jest wymagany.<br /><br /> Jest on wyświetlany jako część elementu nadrzędnego.|
 |Zachowanie|Interakcja (sekwencja),<br /><br /> Działanie|Powiąż zachowanie z odpowiednim diagramem.<br /><br /> Każde zachowanie może być powiązane z co najwyżej jednym diagramem naraz.<br /><br /> Na przykład:<br /><br /> `sequenceDiagram.Bind(interaction);`<br /><br /> `activityDiagram.Bind(activity);`|
 |Element podrzędny zachowania|Linie życia, komunikaty, akcje, węzły obiektów|Automatyczny — żaden kod nie jest wymagany.<br /><br /> Jest wyświetlana, jeśli element nadrzędny jest powiązany z diagramem.|
-|Relacje|Skojarzenie, Generalizacja, przepływ, zależność|Automatyczny — żaden kod nie jest wymagany.<br /><br /> Jest on wyświetlany na każdym diagramie, na którym są wyświetlane oba punkty końcowe.|
+|Relacja|Skojarzenie, Generalizacja, przepływ, zależność|Automatyczny — żaden kod nie jest wymagany.<br /><br /> Jest on wyświetlany na każdym diagramie, na którym są wyświetlane oba punkty końcowe.|
 
 ## <a name="GetShapes"></a>Uzyskiwanie dostępu do kształtów reprezentujących element
  Kształt reprezentujący element należy do typów:
@@ -60,12 +60,12 @@ W tym temacie:
 |-|-|
 |`anElement.Shapes ()`|Wszystkie `IShapes` reprezentujące ten element w otwartych diagramach.|
 |`anElement.Shapes(aDiagram)`|Wszystkie `IShapes` reprezentujące ten element na określonym diagramie.|
-|`anIShape.GetElement()`|@No__t_0, który reprezentuje kształt. Zwykle należy rzutować go do podklasy IElement.|
-|`anIShape.Diagram`|@No__t_0, który zawiera kształt.|
+|`anIShape.GetElement()`|`IElement`, który reprezentuje kształt. Zwykle należy rzutować go do podklasy IElement.|
+|`anIShape.Diagram`|`IDiagram`, który zawiera kształt.|
 |`anIShape.ParentShape`|Kształt zawierający `anIShape`. Na przykład kształt portu jest zawarty w obrębie kształtu składnika.|
 |`anIShape.ChildShapes`|Kształty zawarte w `IShape` lub `IDiagram`.|
 |`anIShape.GetChildShapes<IUseCase>()`|Kształty zawarte w `IShape` lub `IDiagram`, które reprezentują elementy określonego typu, takie jak `IUseCase`.|
-|`IShape iShape = ...;`<br /><br /> `IShape<IClass> classShape = iShape.ToIShape<IClass>();`<br /><br /> `IClass aClass = classShape.Element;`|Rzutowanie ogólnego `IShape` na `IShape<IElement>` o jednoznacznie określonym typie.|
+|`IShape iShape = ...;`<br /><br /> `IShape<IClass> classShape = iShape.ToIShape<IClass>();`<br /><br /> `IClass aClass = classShape.Element;`|Rzutowanie ogólnego `IShape` na `IShape<IElement>`o jednoznacznie określonym typie.|
 |`IShape<IClassifier> classifierShape;`<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `classifierShape.ToIShape<IUseCase>();`|Rzutowanie kształtu z jednego sparametryzowanego typu kształtu na inny.|
 
 ## <a name="Moving"></a>Przesuwanie i zmiana rozmiarów kształtów
@@ -379,4 +379,4 @@ namespace AlignCommand
 ```
 
 ## <a name="see-also"></a>Zobacz też
- [Rozszerzając modele UML i diagramy](../modeling/extend-uml-models-and-diagrams.md) [, przejdź do przykładowego modelu UML](../modeling/navigate-the-uml-model.md) [: Wyrównaj kształty na diagramie przykład polecenia](http://go.microsoft.com/fwlink/?LinkId=213809) [: Tworzenie elementów, kształtów i stereotypów](http://go.microsoft.com/fwlink/?LinkId=213811)
+ [Rozszerzając modele UML i diagramy](../modeling/extend-uml-models-and-diagrams.md) [, przejdź do przykładowego modelu UML](../modeling/navigate-the-uml-model.md) [: Wyrównaj kształty na diagramie przykład polecenia](https://go.microsoft.com/fwlink/?LinkId=213809) [: Tworzenie elementów, kształtów i stereotypów](https://go.microsoft.com/fwlink/?LinkId=213811)

@@ -1,5 +1,5 @@
 ---
-title: Debugowanie XAML w programie Blend | Dokumentacja firmy Microsoft
+title: Debuguj kod XAML w programie Blend | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,60 +14,60 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: beea8cd3ad6ac12bef284e0d5fda9e995a8613c5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d90e495ba64018479758e4fa38de0035601a8f0d
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434098"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298321"
 ---
 # <a name="debug-xaml-in-blend"></a>Debugowanie XAML w Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Możesz użyć narzędzi dostępnych w [!INCLUDE[blend_first](../includes/blend-first-md.md)] debugowanie XAML w swojej aplikacji. Podczas kompilowania projektu wszystkie błędy są wyświetlane w **wyniki** panelu. Kliknij dwukrotnie błąd do zlokalizowania znaczników związane z błędem. Jeśli potrzebujesz więcej miejsca do pracy, można ukryć **wyniki** panelu, naciskając klawisz F12.  
+Korzystając z narzędzi dostępnych w [!INCLUDE[blend_first](../includes/blend-first-md.md)], można debugować kod XAML w aplikacji. Podczas kompilowania projektu wszystkie błędy są wyświetlane w panelu **wyników** . Kliknij dwukrotnie błąd, aby zlokalizować znacznik związany z błędem. Jeśli potrzebujesz więcej miejsca do pracy, możesz ukryć panel **wyników** , naciskając klawisz F12.  
   
 ## <a name="syntax-errors"></a>Błędy składniowe  
- Błędy składni występują, jeśli pliki związane z kodem lub XAML nie wykonuj reguły formatowania języka. Opis błędu może pomóc Ci zrozumieć, jak go naprawić. Listy określa także nazwę pliku i numer wiersza, w którym występuje błąd. Błędy XAML są wyświetlane na **znaczników** karcie **wyniki** panelu.  
+ Występują błędy składniowe, jeśli kod XAML lub plik związany z kodem nie są zgodne z regułami formatowania języka. Opis błędu może pomóc zrozumieć, jak go naprawić. Lista określa również nazwę pliku i numer wiersza, w którym występuje błąd. Błędy XAML są wyświetlane na karcie **znaczniki** w panelu **wyniki** .  
   
 > [!TIP]
-> XAML jest językiem znaczników oparty na składni XML i regułom składni XML.  
+> XAML jest językiem znaczników opartym na języku XML i jest zgodna z regułami składni XML.  
   
- Niektóre typowe przyczyny są błędy składni XAML:  
+ Niektóre typowe przyczyny błędów składni XAML to:  
   
-- Błędnie napisane słowa kluczowego lub wielkość liter jest nieprawidłowy.  
+- Słowo kluczowe zostało źle napisane lub kapitalizacja jest nieprawidłowe.  
   
-- Znaki cudzysłowu są ujęta atrybutów lub ciągów tekstowych.  
+- Brak znaków cudzysłowu wokół atrybutów lub ciągów tekstowych.  
   
-- Brak tagu zamykającego elementu XAML.  
+- Element XAML nie zawiera taga zamykającego.  
   
-- XAML element istnieje w lokalizacji, w którym nie jest dozwolone.  
+- Element XAML istnieje w lokalizacji, w której jest niedozwolony.  
   
-  Aby uzyskać więcej informacji na temat typowej składni XAML, zobacz [Przewodnik po składni XAML podstawowe](http://go.microsoft.com/fwlink/?LinkId=329942).  
+  Aby uzyskać więcej informacji na temat typowej składni języka XAML, zobacz [podstawowy przewodnik po SKŁADNI XAML](https://go.microsoft.com/fwlink/?LinkId=329942).  
   
-  Można również zidentyfikować i rozwiązać błędy składniowe proste związanym z kodem, błędy kompilacji i błędów czasu wykonywania w [!INCLUDE[blend_subs](../includes/blend-subs-md.md)]. Jednak błędy związane z kodem, może być łatwiejsze do zidentyfikowania i rozwiązania w programie Visual Studio.  
+  Można również identyfikować i rozwiązywać proste błędy składni związane z kodem, błędy kompilacji i błędy czasu wykonywania w [!INCLUDE[blend_subs](../includes/blend-subs-md.md)]. Błędy związane z kodem mogą jednak ułatwić identyfikowanie i rozwiązywanie problemów w programie Visual Studio.  
   
 ### <a name="debugging-sample-xaml-code"></a>Debugowanie przykładowego kodu XAML  
- Poniższy przykład umożliwia przeprowadzenie proste XAML, w sesji debugowania w [!INCLUDE[blend_subs](../includes/blend-subs-md.md)].  
+ Poniższy przykład przeprowadzi Cię przez prostą sesję debugowania XAML w [!INCLUDE[blend_subs](../includes/blend-subs-md.md)].  
   
 ##### <a name="to-create-a-project"></a>Aby utworzyć projekt  
   
-1. W [!INCLUDE[blend_subs](../includes/blend-subs-md.md)], otwórz **pliku** menu, a następnie kliknij przycisk **nowy projekt**.  
+1. W [!INCLUDE[blend_subs](../includes/blend-subs-md.md)]Otwórz menu **plik** , a następnie kliknij pozycję **Nowy projekt**.  
   
-    W **nowy projekt** okno dialogowe po lewej stronie zostanie wyświetlona lista typów projektów. Po kliknięciu typów projektów, szablony projektów, które są skojarzone z nim są wyświetlane po prawej stronie.  
+    W oknie dialogowym **Nowy projekt** lista typów projektów pojawia się po lewej stronie. Po kliknięciu typu projektu skojarzone z nim szablony projektu pojawiają się po prawej stronie.  
   
-2. Na liście typów projektów, kliknij **XAML (Windows Store)**.  
+2. Na liście typów projektów kliknij pozycję **XAML (Sklep Windows)** .  
   
-3. Na liście szablonów projektu kliknij **pusta aplikacja**.  
+3. Na liście szablonów projektu kliknij pozycję **pusta aplikacja**.  
   
-4. W **nazwa** polu tekstowym `DebuggingSample`.  
+4. W polu tekstowym **Nazwa** wpisz `DebuggingSample`.  
   
-5. W **lokalizacji** tekstu upewnij się, lokalizację projektu.  
+5. W polu tekstowym **Lokalizacja** Sprawdź lokalizację projektu.  
   
-6. W **języka** kliknij **Visual C#**, a następnie kliknij przycisk **OK** do tworzenia projektu.  
+6. Na liście **Język** kliknij pozycję **Wizualizacja C#** , a następnie kliknij przycisk **OK** , aby utworzyć projekt.  
   
-7. Kliknij prawym przyciskiem myszy na powierzchni projektowej, a następnie kliknij przycisk **Wyświetl źródło** Aby przełączyć się do **podziału** widoku.  
+7. Kliknij prawym przyciskiem myszy powierzchnię projektową, a następnie kliknij pozycję **Wyświetl źródło** , aby przełączyć się do widoku **podzielonego** .  
   
-8. Skopiuj poniższy kod, klikając **kopiowania** linku w prawym górnym rogu kodu.  
+8. Skopiuj następujący kod, klikając link **Kopiuj** w prawym górnym rogu kodu.  
   
    ```  
    <Grid HorizontalAlignment="Left" Height="222" VerticalAlignment="Top>  
@@ -80,7 +80,7 @@ Możesz użyć narzędzi dostępnych w [!INCLUDE[blend_first](../includes/blend-
   
    ```  
   
-9. Znajdź wartość domyślna **siatki**i Wklej kod między otwierającym i zamykającym **siatki** tagów. Po zakończeniu, kod powinien wyglądać następująco:  
+9. Znajdź domyślną **siatkę**i wklej kod między otwierającym i zamykającym tagiem **siatki** . Po zakończeniu kod powinien wyglądać następująco:  
   
     ```  
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">  
@@ -95,35 +95,35 @@ Możesz użyć narzędzi dostępnych w [!INCLUDE[blend_first](../includes/blend-
   
     ```  
   
-10. Naciśnij klawisze Ctrl + Shift + B, aby skompilować projekt.  
+10. Naciśnij kombinację klawiszy Ctrl + Shift + B, aby skompilować projekt.  
   
-    Wyświetlony komunikat o błędzie informujący, że nie można utworzyć projektu, a **wyniki** panelu zawierającego listę błędów, pojawi się w dolnej części aplikacji.  
+    Zostanie wyświetlony komunikat o błędzie informujący o tym, że nie można skompilować projektu, a panel **wyników** wyświetla błędy w dolnej części aplikacji.  
   
-    ![Debugowanie XAML w Blend for Visual Studio](../debugger/media/blend-debugxaml-xaml.png "blend_debugXAML_XAML")  
+    ![Debugowanie kodu XAML w narzędziu Blend for Visual Studio](../debugger/media/blend-debugxaml-xaml.png "blend_debugXAML_XAML")  
   
 ### <a name="resolving-xaml-errors"></a>Rozwiązywanie błędów XAML  
- Po wykryciu błędów XAML na powierzchnię projektową wyświetla alert, że projekt zawiera nieprawidłowe znaczniki. Jako Rozwiąż, listę błędów w **wyniki** panel zostanie zaktualizowany. Po rozwiązaniu wszystkich błędów na powierzchnię projektową jest włączona, a Twoja aplikacja jest wyświetlana na powierzchni projektowej.  
+ Po wykryciu błędów XAML na powierzchni projektowej zostanie wyświetlony alert informujący, że projekt zawiera nieprawidłowe oznaczenie. Po rozwiązaniu błędów Lista błędów w panelu **wyników** zostanie zaktualizowana. Po rozwiązaniu wszystkich błędów powierzchnia projektowa jest włączona, a aplikacja zostanie wyświetlona na powierzchni projektowej.  
   
-##### <a name="to-resolve-the-xaml-errors"></a>Aby naprawić błędy XAML  
+##### <a name="to-resolve-the-xaml-errors"></a>Aby rozwiązać Błędy XAML  
   
-1. Kliknij dwukrotnie pierwszy błąd na liście. Długość opisu jest "wartość" < "jest nieprawidłowa w atrybucie." Gdy klikniesz dwukrotnie błąd, wskaźnik znajdzie odpowiedniej lokalizacji w kodzie. `<` Poprzedniego `Button` jest prawidłowy i nie jest atrybutem zgodnie z sugestią podaną w komunikacie o błędzie. Jeśli spojrzysz na poprzedni wiersz kodu, można zauważyć, że cudzysłowu zamykającego oznacza dla atrybutu `Top` brakuje. Wpisz znaki cudzysłowu zamykającego. Należy zauważyć, że listę błędów w **wyniki** panelu aktualizacji w celu odzwierciedlenia zmian.  
+1. Kliknij dwukrotnie pierwszy błąd na liście. Opis to "wartość <" jest nieprawidłowa w atrybucie "". Po dwukrotnym kliknięciu błędu wskaźnik znajdzie odpowiednią lokalizację w kodzie. `<` poprzedzający `Button` jest prawidłowy, a nie atrybut zgodnie z sugestią w komunikacie o błędzie. Jeśli zobaczysz poprzedni wiersz kodu, Zauważ, że brakuje cudzysłowu zamykającego dla atrybutu `Top`. Wpisz cudzysłów zamykający. Zwróć uwagę, że lista błędów w panelu **wyników** jest aktualizowana w celu odzwierciedlenia zmian.  
   
-2. Kliknij dwukrotnie opis "'0' jest nieprawidłowy na początku nazwy." `Margin="0,149,0,0"` wydaje się być poprawnie sformułowana. Jednak należy zauważyć, że kodowanie kolorami `Margin` jest niezgodny z innymi wystąpieniami `Margin` w kodzie. Ponieważ znaki cudzysłowu zamykającego są nieobecne poprzedniego pary nazwa/wartość (`VerticalAlignment="Top`), `Margin="` jest do odczytu jako część wartości atrybutu poprzedniego i 0 jest do odczytu jako początek pary nazwa/wartość. Wpisz znaki cudzysłowu zamykającego dla `Top`. Lista błędów w **wyniki** panelu aktualizacji w celu odzwierciedlenia zmian.  
+2. Kliknij dwukrotnie opis "0" jest nieprawidłowy na początku nazwy "". `Margin="0,149,0,0"` wydaje się być poprawnie sformułowane. Należy jednak zauważyć, że Kodowanie koloru `Margin` nie jest zgodne z innymi wystąpieniami `Margin` w kodzie. Ponieważ brakuje cudzysłowu zamykającego w poprzedniej parze nazwa/wartość (`VerticalAlignment="Top`), `Margin="` jest odczytywany jako część wartości poprzedniego atrybutu, a wartość 0 jest odczytywana jako początek pary nazwa/wartość. Wpisz znaki cudzysłowu zamykającego dla `Top`. Lista błędów w panelu **wyników** jest aktualizowana w celu odzwierciedlenia zmian.  
   
-3. Kliknij dwukrotnie błąd, "zamykający tag XML"Button"jest niezgodny." Wskaźnik myszy znajduje się w zamykającym **siatki** tag (`</Grid>`), sugerujące, że błąd znajduje się wewnątrz `Grid` obiektu. Należy zauważyć, że drugi `Button` obiektu brakuje tagu zamykającego. Po dodaniu zamykającym `/`, **wyniki** panelu lista jest aktualizowana. Teraz, gdy zostały rozwiązane błędy te początkowej dwa dodatkowe błędy zostały zidentyfikowane.  
+3. Kliknij dwukrotnie pozostały błąd, "przycisk zamykający tag XML" jest niezgodny. " Wskaźnik znajduje się w znaczniku zamykającej **siatki** (`</Grid>`), sugerując, że błąd znajduje się wewnątrz obiektu `Grid`. Zwróć uwagę, że w drugim obiekcie `Button` brakuje taga zamykającego. Po dodaniu `/`zamknięcia lista paneli **wyników** zostanie zaktualizowana. Teraz, gdy te początkowe błędy zostały rozwiązane, zidentyfikowano dwa dodatkowe błędy.  
   
-4. Kliknij dwukrotnie ikonę "elementu członkowskiego"content"nie jest rozpoznawany lub jest niedostępny." `c` w `content` powinny być wielkie litery. Zamień małe "c" wielkie litery "c".  
+4. Kliknij dwukrotnie "zawartość elementu członkowskiego nie została rozpoznana lub jest niedostępna". `c` w `content` powinna być wielką literą. Zamień małe litery "c" na wielkie litery "c".  
   
-5. Kliknij dwukrotnie pozycję "właściwości"Mame"nie istnieje w"<http://schemas.microsoft.com/winfx/2006/xaml>"przestrzeni nazw." "M" w "Mame" powinien być "y". Zastąp "M" z "y". Teraz, można przeanalizować XAML, aplikacja jest wyświetlana na powierzchni projektowej.  
+5. Kliknij dwukrotnie "Właściwość Mame" nie istnieje w przestrzeni nazw "<https://schemas.microsoft.com/winfx/2006/xaml>". "M" w "Mame" musi być "N". Zamień literę "M" na "N". Teraz, gdy można analizować kod XAML, aplikacja zostanie wyświetlona na powierzchni projektowej.  
   
-    ![Debugowanie XAML w Blend for Visual Studio](../debugger/media/blend-debugartboard-xaml.png "blend_debugArtboard_XAML")  
+    ![Debugowanie kodu XAML w Blend for Visual Studio](../debugger/media/blend-debugartboard-xaml.png "blend_debugArtboard_XAML")  
   
-    Naciśnij klawisze Ctrl + Shift + B, aby skompilować projekt i upewnij się, że nie istnieją żadne pozostałe błędy.  
+    Naciśnij kombinację klawiszy Ctrl + Shift + B, aby skompilować projekt i potwierdzić, że nie występują żadne pozostałe błędy.  
   
 ## <a name="debugging-in-visual-studio"></a>Debugowanie w Visual Studio  
- Możesz otworzyć [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] projektów w programie Visual Studio, aby łatwo debugować kodu w aplikacji. Aby otworzyć [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] projektu w programie Visual Studio, kliknij prawym przyciskiem myszy projekt w **projektów** panelu, a następnie kliknij przycisk **Edytuj w programie Visual Studio**. Po zakończeniu sesji debugowania w programie Visual Studio, naciśnij klawisze Ctrl + Shift + S, aby zapisać wszystkie zmiany i przejdź z powrotem do [!INCLUDE[blend_subs](../includes/blend-subs-md.md)]. Zostanie wyświetlony monit ponownie Załaduj projekt. Kliknij przycisk **tak na wszystko** kontynuowanie pracy w [!INCLUDE[blend_subs](../includes/blend-subs-md.md)].  
+ Możesz otworzyć [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] projekty w programie Visual Studio, aby łatwiej debugować kod w aplikacji. Aby otworzyć projekt [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] w programie Visual Studio, kliknij prawym przyciskiem myszy projekt w panelu **projekty** , a następnie kliknij polecenie **Edytuj w programie Visual Studio**. Po zakończeniu sesji debugowania w programie Visual Studio naciśnij kombinację klawiszy Ctrl + Shift + S, aby zapisać wszystkie zmiany, a następnie przełącz się z powrotem do [!INCLUDE[blend_subs](../includes/blend-subs-md.md)]. Zostanie wyświetlony monit o ponowne załadowanie projektu. Kliknij przycisk **tak, aby** kontynuować pracę w [!INCLUDE[blend_subs](../includes/blend-subs-md.md)].  
   
- Aby uzyskać więcej informacji o debugowaniu aplikacji, zobacz [debugowania Windows Store apps w programie Visual Studio](http://go.microsoft.com/fwlink/?LinkId=329944).  
+ Aby uzyskać więcej informacji na temat debugowania aplikacji, zobacz [debugowanie aplikacji ze sklepu Windows w programie Visual Studio](https://go.microsoft.com/fwlink/?LinkId=329944).  
   
 ## <a name="getting-help"></a>Uzyskiwanie pomocy  
- Jeśli potrzebujesz więcej debugowania pomocy usługi [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] aplikacji, możesz wyszukać [forum użytkowników aplikacji Windows Store](http://go.microsoft.com/fwlink/?LinkId=280308) dla wpisów z problemu związanego z lub zadać pytanie.
+ Jeśli potrzebujesz więcej pomocy w debugowaniu aplikacji [!INCLUDE[blend_subs](../includes/blend-subs-md.md)], możesz przeszukać [fora społecznościowe aplikacji ze sklepu Windows](https://go.microsoft.com/fwlink/?LinkId=280308) pod kątem ogłoszeń związanych z Twoim problemem lub zamieszczania pytania.

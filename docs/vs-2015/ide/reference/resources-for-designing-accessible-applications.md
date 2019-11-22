@@ -14,19 +14,19 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5cc95418f392e3c771350428e26e1447dae3bcf5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: af300bca2b1e679eae58a92962067fcd50fea78f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665561"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297795"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Zasoby do projektowania dostępnych aplikacji
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Skorzystaj z poniższych linków, aby uzyskać informacje o technologiach, które obsługują dostępny projekt, a także porady i przykłady dotyczące tworzenia dostępnych aplikacji i witryn sieci Web systemu Windows. Ogólne informacje dotyczące ułatwień dostępu można znaleźć w witrynie online w [http://www.microsoft.com/enable/](http://www.microsoft.com/enable/).
+Skorzystaj z poniższych linków, aby uzyskać informacje o technologiach, które obsługują dostępny projekt, a także porady i przykłady dotyczące tworzenia dostępnych aplikacji i witryn sieci Web systemu Windows. Ogólne informacje dotyczące ułatwień dostępu można znaleźć w witrynie online w [http://www.microsoft.com/enable/](https://www.microsoft.com/accessibility/).
 
-## <a name="technologies"></a>Informacyjn
+## <a name="technologies"></a>Technologies
 
 - **Microsoft Active Accessibility** Technologia oparta na modelu COM, która ulepsza sposób, w jaki ułatwienia dostępu ułatwiają współpracę z aplikacjami uruchomionymi w systemie Microsoft Windows. Zawiera biblioteki dołączane dynamicznie, które są włączone do systemu operacyjnego, a także interfejsy COM i aplikacje programowania aplikacji, które zapewniają niezawodne metody ujawniania informacji o elementach interfejsu użytkownika. Aby uzyskać więcej informacji, zobacz [https://msdn.microsoft.com/library/windows/desktop/dd373592(v=vs.85).aspx](https://msdn.microsoft.com/library/windows/desktop/dd373592\(v=vs.85\).aspx).
 
@@ -54,7 +54,7 @@ Skorzystaj z poniższych linków, aby uzyskać informacje o technologiach, któr
 
 ### <a name="third-party-resources"></a>Zasoby innych firm
 
-- **Inicjatywy Web Accessibility organizacja World Wide Web Consortium (W3C)** Ta witryna sieci Web zawiera wskazówki i techniki dostępne dla tworzenia witryn sieci Web. Aby uzyskać więcej informacji, zobacz [http://www.w3.org/WAI/GL/](http://www.w3.org/WAI/GL/).
+- **Inicjatywy Web Accessibility organizacja World Wide Web Consortium (W3C)** Ta witryna sieci Web zawiera wskazówki i techniki dostępne dla tworzenia witryn sieci Web. Aby uzyskać więcej informacji, zobacz [http://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/).
 
 ## <a name="see-also"></a>Zobacz też
  [Ułatwienia dostępu w Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)

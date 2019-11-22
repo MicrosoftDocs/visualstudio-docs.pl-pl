@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 5c5cea89b337f4da586ba4ca1954e49b96c84638
-ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
+ms.openlocfilehash: 21e724e585f2a5bf0e1fe2a6b70f89c1bd5f5eec
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70154947"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298195"
 ---
 # <a name="getting-started-with-python"></a>Wprowadzenie do języka Python
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Język programowania to:
 
 Aby dowiedzieć się więcej o języku, Zacznij od języka [Python dla początkujących](https://www.python.org/about/gettingstarted/) w witrynie Python.org.
 
-Aby zainstalować język Python, odwiedź [https://www.python.org/download/](https://www.python.org/download/)stronę.
+Aby zainstalować język Python, odwiedź stronę [https://www.python.org/download/](https://www.python.org/download/).
 
 ## <a name="python-tools-for-visual-studio"></a>Narzędzia języka Python dla programu Visual Studio
   
@@ -63,11 +63,11 @@ Następujące zasoby pomogą Ci rozpocząć pracę:
 - (Instalacja i funkcje wersji demonstracyjnej (27 min)](https://www.youtube.com/watch?v=JNNAOypc6Ek)  
 - [Dokumentacja](https://github.com/Microsoft/PTVS/wiki)  
 
-Należy pamiętać, że program Visual Studio nie udostępnia teraz metody tworzenia autonomicznego pliku wykonywalnego przy użyciu języka Python, który zasadniczo oznacza program z osadzonym interpreterem języka Python. Jednak w ramach społeczności języka Python istnieją różne metody, które zostały opisane w artykule [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython obsługuje również osadzanie w aplikacji natywnej, zgodnie z opisem w wpisie w blogu, [przy użyciu pliku zip](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/)z możliwością osadzenia CPython.
+Należy pamiętać, że program Visual Studio nie udostępnia teraz metody tworzenia autonomicznego pliku wykonywalnego przy użyciu języka Python, który zasadniczo oznacza program z osadzonym interpreterem języka Python. Jednak w ramach społeczności języka Python istnieją różne metody, które zostały opisane w artykule [StackOverflow](https://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython obsługuje również osadzanie w aplikacji natywnej, zgodnie z opisem w wpisie w blogu, [przy użyciu pliku zip](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/)z możliwością osadzenia CPython.
   
 ## <a name="building-ui-with-python"></a>Tworzenie interfejsu użytkownika przy użyciu języka Python  
 
-Główną ofertą kompilowania interfejsu użytkownika przy użyciu języka Python jest [projekt QT](https://www.qt.io/qt-for-application-development/)z powiązaniami dla języka Python znanego jako [pyside (oficjalnego powiązania)](http://wiki.qt.io/PySide) (Zobacz też [pliki do pobrania pyside](https://download.qt.io/official_releases/pyside/.)) i [PyQt](https://wiki.python.org/moin/PyQt). W chwili obecnej Obsługa w języku Python w programie Visual Studio nie ma żadnych określone narzędzia do tworzenia interfejsu użytkownika.
+Główną ofertą kompilowania interfejsu użytkownika przy użyciu języka Python jest [projekt QT](https://www.qt.io/qt-for-application-development/)z powiązaniami dla języka Python znanego jako [pyside (oficjalnego powiązania)](https://wiki.qt.io/PySide) (Zobacz też [pliki do pobrania pyside](https://download.qt.io/official_releases/pyside/.)) i [PyQt](https://wiki.python.org/moin/PyQt). W chwili obecnej Obsługa w języku Python w programie Visual Studio nie ma żadnych określone narzędzia do tworzenia interfejsu użytkownika.
 
 ## <a name="azure-sdk-for-python"></a>Zestaw Azure SDK dla języka Python
   
@@ -87,13 +87,13 @@ Zestaw Azure SDK dla języka Python, który obsługuje systemy Windows, Mac i Li
 
 Oprócz wszystkich bibliotek danych w języku Python, Python Tools for Visual Studio obsługuje notesy IPython i IPython, które mogą być hostowane na platformie Azure.
 
-Zalecamy uzyskanie bibliotek IPython i naukowych obliczeniowych (matplotlib, scipy, numpy itp.) z [University of Kalifornii, Irvine](http://www.lfd.uci.edu/~gohlke/pythonlibs/#scipy-stack).  
+Zalecamy uzyskanie bibliotek IPython i naukowych obliczeniowych (matplotlib, scipy, numpy itp.) z [University of Kalifornii, Irvine](https://www.lfd.uci.edu/~gohlke/pythonlibs/#scipy-stack).  
   
 ## <a name="see-also"></a>Zobacz też  
 
-[PTVS — wprowadzenie: Konfigurowanie wprowadzenie programu Visual](../python/getting-started-with-ptvs-setting-up-visual-studio.md)Studio
-[za pomocą PTVS: Rozpocznij kodowanie (projekty)](../python/getting-started-with-ptvs-start-coding-projects.md)
-[wprowadzenie z PTVS: Edytowanie wprowadzenie](../python/getting-started-with-ptvs-editing-code.md)kodu
-zapomocąPTVS[: Debugowanie](../python/getting-started-with-ptvs-debugging.md)wprowadzeniezapomocą[PTVS:
- Interaktywna](../python/getting-started-with-ptvs-interactive-python.md)wprowadzenie Python
-[z PTVS: tworzenie witryny internetowej na platformie Azure](../python/getting-started-with-ptvs-building-a-website-in-azure.md)
+[Wprowadzenie z PTVS: Konfigurowanie programu Visual Studio](../python/getting-started-with-ptvs-setting-up-visual-studio.md)
+[wprowadzenie z PTVS: Rozpocznij kodowanie (projekty)](../python/getting-started-with-ptvs-start-coding-projects.md)
+[wprowadzenie z PTVS: edytowanie kodu](../python/getting-started-with-ptvs-editing-code.md)
+[wprowadzenie z PTVS: debugowanie](../python/getting-started-with-ptvs-debugging.md)
+[wprowadzenie z PTVS: Interactive Python](../python/getting-started-with-ptvs-interactive-python.md)
+wprowadzenie [z PTVS: Tworzenie witryny sieci Web na platformie Azure](../python/getting-started-with-ptvs-building-a-website-in-azure.md)

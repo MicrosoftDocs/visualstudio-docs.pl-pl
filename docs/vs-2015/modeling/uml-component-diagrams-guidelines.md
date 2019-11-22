@@ -15,17 +15,17 @@ caps.latest.revision: 37
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7abc869ebebf4ca2ae8aa1776eaae75f1543176b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 99f2b67d264edcaab5272d0224d4450ee2e8a6f6
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652263"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297158"
 ---
 # <a name="uml-component-diagrams-guidelines"></a>Diagramy składników UML: Zalecenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W programie Visual Studio można narysować *diagram składników* , aby pokazać strukturę systemu oprogramowania. Aby zapoznać się z pokazem wideo, zobacz [Projektowanie struktury fizycznej za pomocą diagramów składników](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-6-Designing-a-Projects-Physical-Structure/).
+W programie Visual Studio można narysować *diagram składników* , aby pokazać strukturę systemu oprogramowania. Aby zapoznać się z pokazem wideo, zobacz [Projektowanie struktury fizycznej za pomocą diagramów składników](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-6-designing-a-projects-physical-structure).
 
  Aby sprawdzić, które wersje programu Visual Studio obsługują tę funkcję, zobacz [Obsługa wersji dla narzędzi architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -82,7 +82,7 @@ W programie Visual Studio można narysować *diagram składników* , aby pokaza�
 
 1. Kliknij pozycję **składnik** w przyborniku, a następnie kliknij pustą część diagramu.
 
-     \- lub-
+     \- lub —
 
      Skopiuj i wklej istniejący składnik.
 
@@ -188,13 +188,13 @@ W programie Visual Studio można narysować *diagram składników* , aby pokaza�
 
          Nowy składnik jest tworzony w **Eksploratorze modelu UML**. Jest to typ nowej części.
 
-         \- lub-
+         \- lub —
 
          Przeciągnij istniejący składnik z Eksploratora modelu UML na składnik nadrzędny.
 
          Nowa część (3) pojawia się wewnątrz składnika nadrzędnego. Jego typem jest składnik przeciągnięty z Eksploratora modelu UML.
 
-         \- lub-
+         \- lub —
 
          Kliknij prawym przyciskiem myszy składnik, w diagramie lub w Eksploratorze modelu UML, a następnie kliknij polecenie **Kopiuj**.
 
@@ -206,7 +206,7 @@ W programie Visual Studio można narysować *diagram składników* , aby pokaza�
 
     3. Do nowej części możesz dodać interfejsy dostarczany i wymagany (4, 5). Kliknij wybrany **interfejs** lub narzędzie **interfejsu wymagane** , a następnie kliknij w części.
 
-         \- lub-
+         \- lub —
 
          Przeciągnij istniejący interfejs z **Eksploratora modelu UML** na część.
 
@@ -333,4 +333,4 @@ W programie Visual Studio można narysować *diagram składników* , aby pokaza�
   Możesz użyć nazwy strzałki zależności do oznaczenia szczególnego rodzaju użycia. Aby ustawić nazwę, kliknij prawym przyciskiem myszy strzałkę, a następnie kliknij pozycję **Właściwości**, a następnie ustaw pole **Nazwa** w oknie właściwości.
 
 ## <a name="see-also"></a>Zobacz też
- [Edytuj modele UML i diagramy](../modeling/edit-uml-models-and-diagrams.md) [składników UML diagramy: odniesienia](../modeling/uml-component-diagrams-reference.md) diagramy [sekwencji UML](../modeling/uml-sequence-diagrams-reference.md) : referencyjne diagramy [przypadków użycia UML](../modeling/uml-use-case-diagrams-reference.md) : referencyjne diagramy [klas UML:](../modeling/uml-class-diagrams-reference.md) referencyjne [diagramy składników UML: odwołanie](../modeling/uml-component-diagrams-reference.md) [ Wideo: Projektowanie struktury fizycznej za pomocą diagramów składników](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-6-Designing-a-Projects-Physical-Structure/)
+ [Edytuj modele UML i diagramy](../modeling/edit-uml-models-and-diagrams.md) [składników UML diagramy: odniesienia](../modeling/uml-component-diagrams-reference.md) diagramy [sekwencji UML](../modeling/uml-sequence-diagrams-reference.md) : referencyjne diagramy [przypadków użycia UML](../modeling/uml-use-case-diagrams-reference.md) : referencyjne diagramy [klas UML: referencyjne](../modeling/uml-class-diagrams-reference.md) [diagramy składników UML: film referencyjny](../modeling/uml-component-diagrams-reference.md) [: Projektowanie struktury fizycznej za pomocą diagramów składników](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-6-designing-a-projects-physical-structure)

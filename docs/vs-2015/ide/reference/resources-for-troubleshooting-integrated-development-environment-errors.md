@@ -94,12 +94,12 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5198c541deb4680d19e2b15ae0e672b831dbb13e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3d3048d16da507d9d63ea9d3df77b4e88d5a5e59
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665548"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297760"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Zasoby dla rozwiązywania problemów z błędami związanymi ze zintegrowanym środowiskiem deweloperskim
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -107,7 +107,7 @@ ms.locfileid: "72665548"
 Nie wszystkie komunikaty o błędach mają określony skojarzony temat pomocy. Jeśli informacje w komunikacie o błędzie nie pomogą rozwiązać problemu, możesz zapoznać się z innymi zasobami, takimi jak artykuły z bazy wiedzy, społeczność deweloperów lub pomoc techniczna.
 
 ## <a name="knowledge-base-articles"></a>Artykuły bazy wiedzy
- Możesz wyszukać artykuły w bazie wiedzy (KB) w trybie online, aby zapoznać się z artykułami dotyczącymi problemów produktów. Nie wszystkie problemy mają odpowiadające im artykuły z bazy wiedzy, ale zazwyczaj udokumentowano błędy napotykane przez znaczną liczbę klientów. Dostęp do artykułów bazy wiedzy można uzyskać w witrynie [Pomoc techniczna firmy Microsoft](http://go.microsoft.com/fwlink/?linkid=1782) Web.
+ Możesz wyszukać artykuły w bazie wiedzy (KB) w trybie online, aby zapoznać się z artykułami dotyczącymi problemów produktów. Nie wszystkie problemy mają odpowiadające im artykuły z bazy wiedzy, ale zazwyczaj udokumentowano błędy napotykane przez znaczną liczbę klientów. Dostęp do artykułów bazy wiedzy można uzyskać w witrynie [Pomoc techniczna firmy Microsoft](https://go.microsoft.com/fwlink/?linkid=1782) Web.
 
 ## <a name="the-developer-community"></a>Społeczność deweloperów
  Fora umożliwiają współpracę z innymi deweloperami, a także pracowników firmy Microsoft. Jeśli wystąpi błąd, którego nie można znaleźć, możesz ogłosić pytania dotyczące problemu na forum. Możesz również przeszukać grupy dyskusyjne, aby sprawdzić, czy inne osoby opublikowały ten sam problem.
@@ -115,4 +115,4 @@ Nie wszystkie komunikaty o błędach mają określony skojarzony temat pomocy. J
  Dostęp do forów, blogów, rozmów i innych zasobów można uzyskać w witrynie sieci Web [społeczności firmy Microsoft](https://techcommunity.microsoft.com/) .
 
 ## <a name="product-support"></a>Pomoc techniczna
- Jeśli nadal masz pytania po wypróbie innych zasobów, możesz skontaktować się z pomocą techniczną firmy Microsoft, odwiedzając witrynę sieci Web [Pomoc techniczna firmy Microsoft](http://go.microsoft.com/fwlink/?linkid=1782) . Aby uzyskać informacje o pomocy technicznej dotyczącej produktów dostępnych w Twoim regionie, zobacz [rozmowy z nami](../../ide/talk-to-us.md).
+ Jeśli nadal masz pytania po wypróbie innych zasobów, możesz skontaktować się z pomocą techniczną firmy Microsoft, odwiedzając witrynę sieci Web [Pomoc techniczna firmy Microsoft](https://go.microsoft.com/fwlink/?linkid=1782) . Aby uzyskać informacje o pomocy technicznej dotyczącej produktów dostępnych w Twoim regionie, zobacz [rozmowy z nami](../../ide/talk-to-us.md).

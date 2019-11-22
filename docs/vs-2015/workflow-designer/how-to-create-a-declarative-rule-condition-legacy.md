@@ -13,12 +13,12 @@ caps.latest.revision: 5
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d3a15aad987e46edb58da3560828c70571df2227
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2dc63fc58b22792e566df91bd86cac40e3fd2e65
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663414"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297490"
 ---
 # <a name="how-to-create-a-declarative-rule-condition-legacy"></a>Instrukcje: Tworzenie warunku reguły deklaratywnej (starsza wersja)
 W tym temacie opisano, jak zadeklarować warunek reguły przy użyciu starszej [!INCLUDE[wfd1](../includes/wfd1-md.md)], która jest przeznaczona dla [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
@@ -27,17 +27,17 @@ W tym temacie opisano, jak zadeklarować warunek reguły przy użyciu starszej [
 
  Warunki reguły deklaracyjnej są używane w następujących Windows Workflow Foundation działaniach poza ramką:
 
-- [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)
+- [ConditionedActivityGroup](https://go.microsoft.com/fwlink?LinkID=65017)
 
-- [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)
+- [IfElseBranchActivity](https://go.microsoft.com/fwlink?LinkID=65034)
 
-- [Działanie ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)
+- [Działanie ReplicatorActivity](https://go.microsoft.com/fwlink?LinkID=65039)
 
-- [While](http://go.microsoft.com/fwlink?LinkID=65049)
+- [WhileActivity](https://go.microsoft.com/fwlink?LinkID=65049)
 
-- [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040)
+- [SequentialWorkflowActivity](https://go.microsoft.com/fwlink?LinkID=65040)
 
-- [StateMachineWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65045)
+- [StateMachineWorkflowActivity](https://go.microsoft.com/fwlink?LinkID=65045)
 
 ### <a name="to-create-a-declarative-rule-condition-using-the-rule-condition-editor"></a>Aby utworzyć warunek reguły deklaracyjnej przy użyciu edytora warunków reguły
 
@@ -64,4 +64,4 @@ W tym temacie opisano, jak zadeklarować warunek reguły przy użyciu starszej [
      Aby uzyskać informacje o sposobach korzystania z okna dialogowego **Wybierz warunek** , zobacz [okno dialogowe Wybieranie warunku (starsza wersja)](../workflow-designer/select-condition-dialog-box-legacy.md).
 
 ## <a name="see-also"></a>Zobacz też
- [Działania ze starszych przepływów pracy](../workflow-designer/legacy-workflow-activities.md) [przy użyciu ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65066) [przy użyciu działania IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65075) [przy użyciu działania Replikator](http://go.microsoft.com/fwlink?LinkID=65080) [przy użyciu](http://go.microsoft.com/fwlink?LinkID=65091) [okna dialogowego Edytor warunku reguły działania (starsza wersja) ](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) [Okno dialogowe Wybieranie warunku (starsza wersja)](../workflow-designer/select-condition-dialog-box-legacy.md) [przy użyciu warunków w przepływach pracy](http://go.microsoft.com/fwlink?LinkID=65009)
+ [Działania ze starszych przepływów pracy](../workflow-designer/legacy-workflow-activities.md) [przy użyciu ConditionedActivityGroup](https://go.microsoft.com/fwlink?LinkID=65066) [przy użyciu działania IfElseBranchActivity](https://go.microsoft.com/fwlink?LinkID=65075) [przy użyciu działania Replikator](https://go.microsoft.com/fwlink?LinkID=65080) [przy użyciu](https://go.microsoft.com/fwlink?LinkID=65091) okna [dialogowego Edytor warunku reguły działania okno dialogowe (starsze)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) okno dialogowe [Wybieranie warunku (starsze)](../workflow-designer/select-condition-dialog-box-legacy.md) [użycie warunków w przepływach pracy](https://go.microsoft.com/fwlink?LinkID=65009)

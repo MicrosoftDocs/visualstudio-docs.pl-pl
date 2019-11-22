@@ -1,5 +1,5 @@
 ---
-title: Wdrażanie aplikacji, usług i składników | Dokumentacja firmy Microsoft
+title: Wdrażanie aplikacji, usług i składników | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8ed493089ed215faaddc1009328ec6f8b906534f
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 5ca4d6a4097848021073bb77323fd0456f3dddc1
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260685"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74289812"
 ---
 # <a name="deploying-applications-services-and-components"></a>Wdrażanie aplikacji, usług i składników
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,18 +40,18 @@ Wdrażanie aplikacji, usług i składników to rozpowszechnianie ich w celu inst
   
 |Scenariusz wdrażania|Zawartość pomocnicza|  
 |-------------------------|------------------------|  
-|**Publikowanie w chmurze:** Można udostępnić aplikacji, usług i danych z dowolnego miejsca, używając Visual Studio mają one zostać wdrożone w systemie Microsoft Azure.|[Publikowanie aplikacji na platformie Microsoft Azure](/visualstudio/deployment/quickstart-deploy-to-azure)|  
-|**Publikowanie aplikacji Windows Store:** Można łatwo tworzyć, przesyłania i sprzedawaj swoje aplikacje z Store Windows klientom na całym świecie.|[Pakowanie, wdrażanie i kwerendy aplikacji Windows Store](https://msdn.microsoft.com/library/hh446593\(v=vs.85\).aspx)|  
-|**Windows Phone publikowania aplikacji:** Możesz przesłać nową aplikację lub aktualizację istniejącej aplikacji w celu certyfikacji w Centrum deweloperów Windows Phone.|[Opublikuj aplikację Windows Phone](http://dev.windowsphone.com/publish)|  
-|**Wdrażanie aplikacji ASP.NET lub usługi:** Aplikacje ASP.NET i usługi można wdrożyć na wiele różnych sposobów.|[Wdrażanie aplikacji sieci web ASP.NET i usług](http://www.asp.net/aspnet/overview/deployment)|  
-|**Wdrażanie aplikacji LightSwitch lub usługi:** Po utworzeniu aplikacji i usług OData za pomocą LightSwitch, można wdrożyć je na serwerze sieci web lub w systemie Microsoft Azure.|[Wdrażanie aplikacji LightSwitch](https://msdn.microsoft.com/library/4818d933-295c-4ecc-9148-7ad9ca28dcdb)|  
-|**Publikowanie aplikacji dla programu SharePoint:** Możesz opublikować aplikację dla programu SharePoint do Store pakietu Office lub w katalogu aplikacji dla organizacji wewnętrznej.|[Publikowanie aplikacji dla programu SharePoint przy użyciu programu Visual Studio](https://msdn.microsoft.com/library/office/jj220044\(v=office.15\).aspx)|  
-|**Publikowanie aplikacji dla pakietu Office:** Możesz opublikować aplikację dla pakietu Office do Store pakietu Office lub w katalogu aplikacji dla organizacji wewnętrznej.|[Publikowanie aplikacji dla pakietu Office](https://msdn.microsoft.com/library/office/fp123515.aspx)|  
-|**Wdrażanie usługi WCF:** Inne aplikacje mogą używać usług WCF RIA, które są wdrażane na serwerze sieci web.|[Wdrażanie usługi WCF RIA Services — rozwiązania](https://msdn.microsoft.com/library/ff426912\(v=vs.91\).aspx)|  
-|**Wdrażanie usługi OData:** Inne aplikacje mogą używać usług OData, które są wdrażane na serwerze sieci web.|[Wdrażanie usługi OData](https://msdn.microsoft.com/library/hh973447.aspx)|  
-|**Wdrażanie aplikacji komputerowej:** Za pomocą wdrażania ClickOnce, możesz opublikować aplikację komputerową na serwerze sieci web lub w sieciowym udziale plików. Użytkownicy mogą następnie zainstalować aplikację za pomocą jednego kliknięcia.|[Wskazówki dotyczące wdrażania i zabezpieczeń ClickOnce](../deployment/clickonce-security-and-deployment.md)|  
-|**Utwórz program instalacyjny:** Program instalacyjny można utworzyć za pomocą programu InstallShield Limited Edition, które jest bezpłatne.|[InstallShield Limited Edition](../deployment/installshield-limited-edition.md)|  
-|**Obsługa istniejących programów instalacyjnych:** Kontynuuj korzystanie z programu instalacyjnego utworzone we wcześniejszej wersji programu Visual Studio po zainstalowaniu rozszerzenia projektów Instalatora Visual Studio.|[Rozszerzenie projektów Instalatora Visual Studio](http://blogs.msdn.com/b/visualstudio/archive/2014/04/17/visual-studio-installer-projects-extension.aspx)<br /><br /> Dokumentacja dla projektów Instalatora jest dostępna tutaj: [Wdrażanie za pomocą Instalatora programu Visual Studio](https://msdn.microsoft.com/library/2kt85ked\(v=vs.100\).aspx)|  
-|**Wdrażanie aplikacji Visual C++:** Środowisko wykonawcze Visual C++ za pomocą aplikacji można wdrożyć przy użyciu wdrażania centralnego, wdrażania lokalnego lub łączenia statycznego.|[Wdrażanie natywnych aplikacji komputerowych (Visual C++)](/cpp/windows/deploying-native-desktop-applications-visual-cpp)|  
-|**Wdrażanie aplikacji do testowania:** Aby umożliwić bardziej wyrafinowane projektowanie i testowanie przez wdrożenie aplikacji w środowiskach wirtualnych.|[Testowanie w środowisku laboratoryjnym](https://msdn.microsoft.com/library/14ba54c8-a158-4a6e-b00a-b00ae960feb8)|  
-|**Instalowanie wymagań wstępnych:** Można zainstalować wstępnie wymagane składniki aplikacji komputerowych, konfigurując Instalator ogólny, który jest znany jako program inicjujący.|[Wstępnie wymagane składniki wdrażania aplikacji](../deployment/application-deployment-prerequisites.md)|
+|**Publikuj w chmurze:** Aplikacje, usługi i dane można udostępniać z dowolnego miejsca przy użyciu programu Visual Studio, aby wdrożyć je w Microsoft Azure.|[Publikowanie aplikacji w Microsoft Azure](/visualstudio/deployment/quickstart-deploy-to-azure)|  
+|**Publikowanie aplikacji ze sklepu Windows:** Możesz łatwo tworzyć, przesyłać i sprzedawać swoje aplikacje ze sklepu Windows do klientów na całym świecie.|[Pakowanie, wdrażanie i zapytania aplikacji ze sklepu Windows](https://msdn.microsoft.com/library/hh446593\(v=vs.85\).aspx)|  
+|**Publikowanie aplikacji Windows Phone:** W centrum deweloperów Windows Phone można przesłać nową aplikację lub aktualizację istniejącej aplikacji w celu certyfikacji.|[Publikowanie aplikacji Windows Phone](https://developer.microsoft.com/)|  
+|**Wdróż aplikację lub usługę ASP.NET:** Aplikacje i usługi ASP.NET można wdrożyć na wiele różnych sposobów.|[Wdrażanie aplikacji i usług sieci Web ASP.NET](https://docs.microsoft.com/aspnet/mvc/overview/deployment/)|  
+|**Wdróż aplikację lub usługę LightSwitch:** Po utworzeniu aplikacji i usług OData przy użyciu programu LightSwitch można wdrożyć je na serwerze sieci Web lub w Microsoft Azure.|[Wdrażanie aplikacji LightSwitch](https://msdn.microsoft.com/library/4818d933-295c-4ecc-9148-7ad9ca28dcdb)|  
+|**Publikowanie aplikacji dla programu SharePoint:** Możesz opublikować aplikację dla programu SharePoint w sklepie Office lub w katalogu aplikacji dla organizacji wewnętrznej.|[Publikowanie aplikacji dla programu SharePoint przy użyciu programu Visual Studio](https://msdn.microsoft.com/library/office/jj220044\(v=office.15\).aspx)|  
+|**Publikowanie aplikacji dla pakietu Office:** Możesz opublikować aplikację dla pakietu Office w sklepie Office lub w katalogu aplikacji dla organizacji wewnętrznej.|[Publikowanie aplikacji dla pakietu Office](https://msdn.microsoft.com/library/office/fp123515.aspx)|  
+|{1&gt;Wdrażanie usługi WCF:&lt;1} inne aplikacje mogą używać usług WCF RIA wdrożonych na serwerze sieci Web.|[Wdrażanie rozwiązań usług WCF RIA](https://msdn.microsoft.com/library/ff426912\(v=vs.91\).aspx)|  
+|{1&gt;Wdrażanie usługi OData:&lt;1} inne aplikacje mogą używać usług OData wdrożonych na serwerze sieci Web.|[Wdrażanie usługi OData](https://msdn.microsoft.com/library/hh973447.aspx)|  
+|**Wdróż aplikację klasyczną:** Przy użyciu wdrażania ClickOnce można opublikować aplikację pulpitu na serwerze sieci Web lub sieciowym udziale plików. Użytkownicy mogą następnie zainstalować aplikację za pomocą jednego kliknięcia.|[Wskazówki dotyczące wdrażania i zabezpieczeń ClickOnce](../deployment/clickonce-security-and-deployment.md)|  
+|{1&gt;Tworzenie programu instalacyjnego:&lt;1} program instalacyjny możesz utworzyć przy użyciu bezpłatnego programu InstallShield Limited Edition.|[InstallShield Limited Edition](../deployment/installshield-limited-edition.md)|  
+|**Obsługuj istniejący program instalacyjny:** Kontynuuj korzystanie z programu instalacyjnego utworzonego w starszej wersji programu Visual Studio, instalując rozszerzenie projekty Instalator programu Visual Studio.|[Rozszerzenie projektów Instalator programu Visual Studio](https://devblogs.microsoft.com/visualstudio/visual-studio-installer-projects-extension/)<br /><br /> Dokumentacja projektów Instalatora jest dostępna tutaj: [wdrażanie Instalator programu Visual Studio](https://msdn.microsoft.com/library/2kt85ked\(v=vs.100\).aspx)|  
+|**Wdróż aplikację wizualną C++ :** środowisko uruchomieniowe Visual C++ można wdrożyć z aplikacją przy użyciu wdrożenia centralnego, lokalnego wdrożenia lub konsolidacji statycznej.|[Wdrażanie natywnych aplikacji komputerowych (Visual C++)](/cpp/windows/deploying-native-desktop-applications-visual-cpp)|  
+|**Wdróż aplikację do testowania:** Możesz włączyć bardziej zaawansowane programowanie i testowanie, wdrażając aplikacje w środowiskach wirtualnych.|[Testowanie w środowisku laboratoryjnym](https://msdn.microsoft.com/library/14ba54c8-a158-4a6e-b00a-b00ae960feb8)|  
+|{1&gt;Instalowanie wstępnie wymaganych składników:&lt;1} możesz instalować wstępnie wymagane składniki aplikacji komputerowych, konfigurując instalator ogólny, który jest znany jako program inicjujący (bootstraper).|[Wstępnie wymagane składniki wdrażania aplikacji](../deployment/application-deployment-prerequisites.md)|

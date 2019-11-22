@@ -1,5 +1,5 @@
 ---
-title: 'Błąd: Serwer sieci web nie jest poprawnie skonfigurowany. | Dokumentacja firmy Microsoft'
+title: 'Błąd: serwer sieci Web nie jest prawidłowo skonfigurowany | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,23 +18,23 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 643be465aab889b1f31e8fa75dba68261444bc31
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2f5df9fb04849fce94d1a82748f2fc88f9577667
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68203196"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297440"
 ---
-# <a name="error-the-web-server-is-not-configured-correctly"></a>Błąd: Serwer internetowy nie został poprawnie skonfigurowany
+# <a name="error-the-web-server-is-not-configured-correctly"></a>Błąd: Serwer sieci Web nie jest prawidłowo skonfigurowany
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Możliwe przyczyny tego błędu:  
+Możliwe przyczyny tego błędu to:  
   
-- Podczas próby debugowania aplikacji sieci Web platformy .NET, który został skopiowany do innej maszyny, ręcznie zmieniono jego nazwę lub przenieść.  
+- Podjęto próbę debugowania aplikacji sieci Web platformy .NET, która została skopiowana na inny komputer, została zmieniona ręcznie lub przeniesiona.  
   
-- Nie ma wystarczającej liczby połączeń usług IIS. Aby uzyskać więcej informacji na temat wdrażania witryny sieci web usług IIS, zobacz [Utwórz witrynę sieci Web](http://www.iis.net/learn/get-started/getting-started-with-iis/create-a-web-site).  
+- Brak wystarczającej liczby połączeń IIS. Aby uzyskać więcej informacji na temat wdrażania witryny sieci Web w usługach IIS, zobacz [Tworzenie witryny sieci Web](https://docs.microsoft.com/iis/get-started/getting-started-with-iis/create-a-web-site).  
   
-- Jeśli próbujesz debugowania aplikacji ASP.NET, zobacz [publikowania w usługach IIS](https://docs.asp.net/en/latest/publishing/iis.html) instrukcje dotyczące wdrażania na komputerze zdalnym, uruchomione usługi IIS 8 lub nowszy, lub [zdalnego programu na komputerze zdalnym w wersji 7.5 usług IISdebugowanieASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md) instrukcje dotyczące wdrażania do komputera zdalnego z programem IIS 7.5.  
+- Jeśli próbujesz debugować aplikację ASP.NET, zobacz [Publikowanie w usługach IIS](https://docs.asp.net/en/latest/publishing/iis.html) , aby uzyskać instrukcje dotyczące wdrażania na komputerze zdalnym z programem IIS 8 lub nowszym albo [zdalne debugowanie ASP.NET na zdalnym komputerze z usługami IIS 7,5](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md) , aby uzyskać instrukcje dotyczące wdrażania na komputerze zdalnym, na którym działa program IIS 7,5.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Debugowanie aplikacji internetowych: Błędy i rozwiązywanie problemów](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+ [Debugowanie aplikacji internetowych: błędy i rozwiązywanie problemów](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

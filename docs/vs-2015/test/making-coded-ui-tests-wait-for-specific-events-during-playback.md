@@ -8,26 +8,26 @@ ms.assetid: 41981ad6-673e-492e-b739-9863b14157b1
 caps.latest.revision: 26
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0e86364641b477c7b4d8d919cb78afb925f7c27e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 266c4fd418b71c61391ac3b9b20ac93e5c77428c
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660503"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302555"
 ---
 # <a name="making-coded-ui-tests-wait-for-specific-events-during-playback"></a>Wstrzymywanie kodowanych testów użytkownika dla określonych zdarzeń podczas odtwarzania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W przypadku odtwarzania kodowanego testu interfejsu użytkownika można nakazać testowi zaczekać na wystąpienie niektórych zdarzeń, takich jak okno, które ma zostać wyświetlone, pasek postępu, który ma być znikany itd. W tym celu należy użyć odpowiedniej metody UITestControl. WaitForControlXXX (), zgodnie z opisem w poniższej tabeli. Przykład kodowanego testu interfejsu użytkownika, który czeka na włączenie formantu przy użyciu metody <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>, zobacz [Przewodnik: Tworzenie, edytowanie i obsługa kodowanego testu interfejsu użytkownika](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
 
- **Requirements**
+ **Wymagania**
 
  Visual Studio Enterprise
 
 > [!TIP]
 > Możesz również dodać opóźnienia przed akcjami przy użyciu edytora kodowanego testu interfejsu użytkownika. Aby uzyskać więcej informacji, zobacz [jak: Wstawianie opóźnienia przed akcją interfejsu użytkownika przy użyciu edytora kodowanego testu interfejsu użytkownika](https://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0).
 
- **Metody UITestControl. WaitForControlXXX ()**
+ **UITestControl.WaitForControlXXX() Methods**
 
  <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlReady%2A>
 
@@ -98,9 +98,9 @@ UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText
 
  Metody mają Przeciążenie w milisekundach, aby uzyskać jawny limit czasu. Jednak gdy operacja oczekiwania powoduje niejawne wyszukiwanie formantu lub, gdy aplikacja jest zajęta, rzeczywisty czas oczekiwania może być większy niż określony limit czasu.
 
- Poprzednie funkcje są zaawansowane i elastyczne i powinny spełniać niemal wszystkie warunki. Jednak w przypadku, gdy te metody nie spełnią Twoich potrzeb i należy zakodować <xref:Microsoft.VisualStudio.TestTools.UITesting.Playback.Wait%2A> lub <xref:System.Threading.Thread.Sleep%2A> w kodzie, zaleca się używanie odtwarzania. czekaj () zamiast wątku. uśpienia (). Przyczyny tego są następujące:
+ Poprzednie funkcje są zaawansowane i elastyczne i powinny spełniać niemal wszystkie warunki. Jednak w przypadku, gdy te metody nie spełnią Twoich potrzeb i należy zakodować <xref:Microsoft.VisualStudio.TestTools.UITesting.Playback.Wait%2A>lub <xref:System.Threading.Thread.Sleep%2A> w kodzie, zaleca się używanie odtwarzania. czekaj () zamiast wątku. uśpienia (). Przyczyny tego są następujące:
 
- Za pomocą <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.ThinkTimeMultiplier%2A>property można modyfikować czas uśpienia. Domyślnie ta zmienna ma wartość 1, ale można ją zwiększyć lub zmniejszyć, aby zmienić czas oczekiwania na cały kod. Na przykład w przypadku testowania za pośrednictwem wolnej sieci lub innego przypadku niska wydajność można zmienić tę zmienną w jednym miejscu (lub nawet w pliku konfiguracji) na 1,5, aby dodać 50% dodatkowego oczekiwania we wszystkich miejscach.
+ Aby zmodyfikować czas uśpienia, można użyć właściwości <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.ThinkTimeMultiplier%2A>. Domyślnie ta zmienna ma wartość 1, ale można ją zwiększyć lub zmniejszyć, aby zmienić czas oczekiwania na cały kod. Na przykład w przypadku testowania za pośrednictwem wolnej sieci lub innego przypadku niska wydajność można zmienić tę zmienną w jednym miejscu (lub nawet w pliku konfiguracji) na 1,5, aby dodać 50% dodatkowego oczekiwania we wszystkich miejscach.
 
  Odtwarzanie. czekaj () wewnętrznie wywołuje wątek. uśpienia () (po wyższym obliczaniu) w mniejszych fragmentach w pętli for podczas sprawdzania, czy operacja cancel\break użytkownika. Innymi słowy odtwarzanie. czekaj () umożliwia anulowanie odtwarzania przed końcem oczekiwania, gdy uśpienie może nie być lub zgłosić wyjątek.
 
@@ -109,7 +109,7 @@ UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText
 
  **Wskazówki**
 
- Aby uzyskać dodatkowe informacje, zobacz [testowanie ciągłego dostarczania przy użyciu programu Visual Studio 2012 — Rozdział 5: Automatyzowanie testów systemowych](http://go.microsoft.com/fwlink/?LinkID=255196)
+ Aby uzyskać dodatkowe informacje, zobacz [testowanie ciągłego dostarczania przy użyciu programu Visual Studio 2012 — Rozdział 5: Automatyzowanie testów systemowych](https://go.microsoft.com/fwlink/?LinkID=255196)
 
 ## <a name="see-also"></a>Zobacz też
- [Korzystanie z automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md) [Tworzenie KODOWANYCH testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) [Przewodnik: Tworzenie, edytowanie i obsługa kodowanego testu interfejsu użytkownika,](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md) [](../test/anatomy-of-a-coded-ui-test.md) [obsługiwane konfiguracje i platformy dla kodowanych testów interfejsu użytkownika Nagrania](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) [: Wstawianie opóźnienia przed AKCJą interfejsu użytkownika przy użyciu edytora kodowanego testu interfejsu użytkownika](https://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0)
+ [Korzystanie z automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md) [Tworzenie KODOWANYCH testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) [Przewodnik: Tworzenie, edytowanie i konserwowanie kodowanego testu interfejsu użytkownika](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md) w przypadku kodowanych [testów interfejsu użytkownika](../test/anatomy-of-a-coded-ui-test.md) [obsługiwane konfiguracje i platformy dla kodowanych testów interfejsu użytkownika i nagrań akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) [: Wstawianie opóźnienia przed akcją interfejsu użytkownika przy użyciu edytora kodowanego testu](https://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0)

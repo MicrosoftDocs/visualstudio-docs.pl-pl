@@ -15,17 +15,17 @@ caps.latest.revision: 26
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: c0b46c8efb681a067d5a9e74369ed73c43f1568f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8b85bbad909a05bacab361a49cc7e029482ad606
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671107"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74291204"
 ---
 # <a name="analyzing-application-quality-by-using-code-analysis-tools"></a>Analiza jakości aplikacji za pomocą narzędzi analizy kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W tej sekcji [Analiza zarządzanego](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md) kodu programu Visual Studio Code Analysis dla kodu zarządzanego zawiera informacje dotyczące zestawów zarządzanych, takich jak naruszenia reguł programowania i projektowania, które zostały określone w projekcie Microsoft .NET Framework Wiele. Komunikaty ostrzegawcze identyfikują wszelkie istotne problemy związane z programowaniem i projektowaniem oraz, gdy jest to możliwe, dostarczają informacji na temat sposobu rozwiązania problemu.
+W tej sekcji [Analiza zarządzanego](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md) kodu programu Visual Studio Code Analysis dla kodu zarządzanego zawiera informacje dotyczące zestawów zarządzanych, takich jak naruszenia reguł programowania i projektowania, które zostały określone w wytycznych dotyczących projektowania Microsoft .NET Framework. Komunikaty ostrzegawcze identyfikują wszelkie istotne problemy związane z programowaniem i projektowaniem oraz, gdy jest to możliwe, dostarczają informacji na temat sposobu rozwiązania problemu.
 
  [Analizowanie jakości językaC++ c/kodu przy użyciu analizy kodu](../code-quality/analyzing-c-cpp-code-quality-by-using-code-analysis.md) Narzędzie analizyC++ C/Code zawiera informacje dla deweloperów o możliwych defektach w kodzie źródłowymC++ c/. Typowe błędy kodowania zgłoszone przez narzędzie obejmują przepełnienia buforów, niezainicjowaną pamięć, odwołania wskaźnika NULL oraz przecieki pamięci i zasobów.
 
@@ -40,7 +40,7 @@ W tej sekcji [Analiza zarządzanego](../code-quality/analyzing-managed-code-qual
 
  [Analizowanie jakości sterowników przy użyciu narzędzi do analizy kodu](/windows-hardware/drivers/devtest/tools-for-verifying-drivers) Analiza kodu dla sterowników to narzędzie do weryfikacji statycznej w czasie kompilacji, które wykrywa podstawowe błędy kodowania w C++ języku C i programy oraz zawiera wyspecjalizowany moduł, który jest przeznaczony do wykrywania błędów w (przede wszystkim) kodu sterownika trybu jądra. Analizator sterownika statycznego (SDV) to statyczne narzędzie weryfikacyjne, które systematycznie analizuje kod źródłowy sterowników trybu jądra systemu Windows. SDV określa, czy sterownik prawidłowo współdziała z jądrem systemu operacyjnego Windows.
 
- [Analiza kodu dla ostrzeżeń dotyczących sterowników](http://go.microsoft.com/fwlink/?LinkId=225920) Opisuje ostrzeżenia, które są raportowane przez analizę kodu dla sterowników, gdy wykryje możliwy błąd w kodzie sterownika.
+ [Analiza kodu dla ostrzeżeń dotyczących sterowników](https://go.microsoft.com/fwlink/?LinkId=225920) Opisuje ostrzeżenia, które są raportowane przez analizę kodu dla sterowników, gdy wykryje możliwy błąd w kodzie sterownika.
 
 ## <a name="related-tasks"></a>Powiązane zadania
  [Mierzenie złożoności i łatwość utrzymania w kodzie zarządzanym](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md) Tutaj Wstaw opis.

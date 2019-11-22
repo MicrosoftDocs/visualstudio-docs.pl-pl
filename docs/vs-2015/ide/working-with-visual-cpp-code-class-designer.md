@@ -19,12 +19,12 @@ caps.latest.revision: 27
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5a543e7a1e2aca4590df320261aef2c653a55132
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cb2b5a55f778b8025ea9da25713eca903f9cbf74
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662604"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296216"
 ---
 # <a name="working-with-visual-c-code-class-designer"></a>Praca z kodem Visual C++ (Projektant klas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,13 +65,13 @@ Projektant klas wyświetla wizualną powierzchnię projektową o nazwie *Diagram
 
 - Typ znajduje się w projekcie lub zestawie, do którego nie odwołuje się projekt, który zawiera Diagram klas. Aby naprawić ten błąd, Dodaj odwołanie do projektu lub zestawu, który zawiera typ. Aby uzyskać więcej informacji, zobacz [NIB How to: Dodawanie lub usuwanie odwołań za pomocą okna dialogowego Dodawanie odwołania](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
 
-- Typ nie znajduje się w poprawnym zakresie, więc nie można go zlokalizować Projektant klas. Upewnij się, że w kodzie nie brakuje instrukcji `using`, `imports` lub `#include`. Upewnij się również, że typ (lub powiązany Typ) nie został przeniesiony poza przestrzeń nazw, w której pierwotnie znajdowały się.
+- Typ nie znajduje się w poprawnym zakresie, więc nie można go zlokalizować Projektant klas. Upewnij się, że w kodzie nie brakuje instrukcji `using`, `imports`lub `#include`. Upewnij się również, że typ (lub powiązany Typ) nie został przeniesiony poza przestrzeń nazw, w której pierwotnie znajdowały się.
 
 - Typ nie istnieje (lub został oznaczony jako komentarz). Aby naprawić ten błąd, upewnij się, że nie ma komentarza lub nie został usunięty.
 
 - Typ znajduje się w bibliotece, do której odwołuje się dyrektywa #import. Możliwe obejście to ręczne dodanie wygenerowanego kodu (plik. tlh) do dyrektywy #include do pliku nagłówkowego.
 
-  Błąd, który najprawdopodobniej widzisz w przypadku problemu z rozpoznawaniem typów, **nie można znaleźć kodu dla co najmniej jednego kształtu na diagramie klas "\<element >"** . Ten komunikat o błędzie nie musi wskazywać, że kod jest w błędzie. Wskazuje tylko, że Projektant klas nie może wyświetlić Twojego kodu. Wypróbuj następujące miary.
+  Błąd, który najprawdopodobniej widzisz w przypadku problemu z rozpoznawaniem typów, **nie można znaleźć kodu dla co najmniej jednego kształtu na diagramie klas "\<elementu >"** . Ten komunikat o błędzie nie musi wskazywać, że kod jest w błędzie. Wskazuje tylko, że Projektant klas nie może wyświetlić Twojego kodu. Wypróbuj następujące miary.
 
 - Upewnij się, że typ istnieje. Upewnij się, że nie przypadkowo usunięto komentarz do kodu źródłowego lub został on usunięty.
 
@@ -79,10 +79,10 @@ Projektant klas wyświetla wizualną powierzchnię projektową o nazwie *Diagram
 
 - Spróbuj rozpoznać typ. Typ może należeć do projektu lub zestawu, który nie jest przywoływany z projektu, który zawiera Diagram klas. Aby naprawić ten błąd, Dodaj odwołanie do projektu lub zestawu, który zawiera typ. Aby uzyskać więcej informacji, zobacz [NIB How to: Dodawanie lub usuwanie odwołań za pomocą okna dialogowego Dodawanie odwołania](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
 
-- Upewnij się, że typ znajduje się w poprawnym zakresie, aby można było go zlokalizować Projektant klas. Upewnij się, że w kodzie nie brakuje instrukcji `using`, `imports` lub `#include`. Upewnij się również, że typ (lub powiązany Typ) nie został przeniesiony poza przestrzeń nazw, w której pierwotnie znajdowały się.
+- Upewnij się, że typ znajduje się w poprawnym zakresie, aby można było go zlokalizować Projektant klas. Upewnij się, że w kodzie nie brakuje instrukcji `using`, `imports`lub `#include`. Upewnij się również, że typ (lub powiązany Typ) nie został przeniesiony poza przestrzeń nazw, w której pierwotnie znajdowały się.
 
 ### <a name="troubleshooting-other-error-messages"></a>Rozwiązywanie problemów z innymi komunikatami o błędach
- Pomoc dotyczącą rozwiązywania problemów i ostrzeżeń można znaleźć w publicznych forach Microsoft Developer Network (MSDN). Zobacz [Forum programu Visual Studio Projektant klas](http://go.microsoft.com/fwlink/?linkid=160754).
+ Pomoc dotyczącą rozwiązywania problemów i ostrzeżeń można znaleźć w publicznych forach Microsoft Developer Network (MSDN). Zobacz [Forum programu Visual Studio Projektant klas](https://go.microsoft.com/fwlink/?linkid=160754).
 
 ## <a name="limitations"></a>Ograniczenia dotyczące C++ elementów kodu
 
@@ -107,4 +107,4 @@ Projektant klas wyświetla wizualną powierzchnię projektową o nazwie *Diagram
 - Projektant klas nie może wyświetlić typów, które są puste lub które pochodzą od typu void.
 
 ## <a name="see-also"></a>Zobacz też
- [Projektowanie i wyświetlanie klas i typów](../ide/designing-and-viewing-classes-and-types.md) [pracujących z klasami i innymi typami (Projektant klas)](../ide/working-with-classes-and-other-types-class-designer.md) [pracy z diagramami klas (Projektant klas)](../ide/working-with-class-diagrams-class-designer.md) [projektowanie klas i typów (Projektant klas)](../ide/designing-classes-and-types-class-designer.md) [dodatkowe informacje na temat Projektant klas błędów](../ide/additional-information-about-class-designer-errors.md) [klas C++ wizualnych w Projektant klas](../ide/visual-cpp-classes-in-class-designer.md) [strukturach wizualnych C++ w Projektant klas](../ide/visual-cpp-structures-in-class-designer.md) [wyliczeniach wizualizacji C++ w Projektant klas](../ide/visual-cpp-enumerations-in-class-designer.md) [Visual C++ Typedefs w Projektant klas](../ide/visual-cpp-typedefs-in-class-designer.md)
+ [Projektowanie i wyświetlanie klas i typów](../ide/designing-and-viewing-classes-and-types.md) [pracujących z klasami i innymi typami (Projektant klas)](../ide/working-with-classes-and-other-types-class-designer.md) [pracujących z diagramami klas (Projektant klas)](../ide/working-with-class-diagrams-class-designer.md) [projektowanie klas i typów (Projektant klas)](../ide/designing-classes-and-types-class-designer.md) [dodatkowe informacje na temat błędów Projektant klas](../ide/additional-information-about-class-designer-errors.md) [ C++ klas wizualnych w](../ide/visual-cpp-classes-in-class-designer.md) Projektant klas [ C++ strukturach](../ide/visual-cpp-structures-in-class-designer.md) [ C++ ](../ide/visual-cpp-enumerations-in-class-designer.md) wizualizacji w programie Projektant klas [Visual C++ Typedefs](../ide/visual-cpp-typedefs-in-class-designer.md) w Projektant klas

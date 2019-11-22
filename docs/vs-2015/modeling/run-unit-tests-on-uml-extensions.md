@@ -9,17 +9,17 @@ caps.latest.revision: 9
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3fdedf3fd9463b25e2c825a0a2d43b069049a2cb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f634f028dafea3260a69537893513f13cc0ebe83
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671235"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74292543"
 ---
 # <a name="run-unit-tests-on-uml-extensions"></a>Uruchamianie testów jednostek dla rozszerzeń UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aby zapewnić stabilny kod przy użyciu kolejnych zmian, zalecamy napisać testy jednostkowe i wykonać je w ramach regularnego procesu kompilacji. Aby uzyskać więcej informacji, zobacz [Unit Testing Code](../test/unit-test-your-code.md). Aby skonfigurować testy dla rozszerzeń modelowania programu Visual Studio, potrzebne są pewne informacje. Podsumowanie:
+Aby zapewnić stabilny kod przy użyciu kolejnych zmian, zalecamy napisać testy jednostkowe i wykonać je w ramach regularnego procesu kompilacji. Aby uzyskać więcej informacji, zobacz [swój kod testu jednostkowego](../test/unit-test-your-code.md). Aby skonfigurować testy dla rozszerzeń modelowania programu Visual Studio, potrzebne są pewne informacje. Podsumowanie:
 
 - [Konfigurowanie testu jednostkowego dla rozszerzeń VSIX](#Host)
 
@@ -43,8 +43,6 @@ Aby zapewnić stabilny kod przy użyciu kolejnych zmian, zalecamy napisać testy
 
   Te punkty są rozbudowane w poniższych sekcjach.
 
-  Przykład przetestowanego przez jednostkę rozszerzenia UML można znaleźć w galerii przykładów kodu na [UML — szybkie wprowadzanie przy użyciu tekstu](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a).
-
 ## <a name="requirements"></a>Wymagania
  Zobacz [wymagania](../modeling/extend-uml-models-and-diagrams.md#Requirements).
 
@@ -59,7 +57,7 @@ Aby zapewnić stabilny kod przy użyciu kolejnych zmian, zalecamy napisać testy
 
     1. **Projekt rozszerzenia UML.** Zwykle jest to tworzone przy użyciu poleceń, gestów lub szablonów projektu walidacji. Na przykład zobacz [Definiowanie polecenia menu na diagramie modelowania](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
 
-    2. **Projekt testu jednostkowego.** Aby uzyskać więcej informacji, zobacz [Unit Testing Code](../test/unit-test-your-code.md).
+    2. **Projekt testu jednostkowego.** Aby uzyskać więcej informacji, zobacz [swój kod testu jednostkowego](../test/unit-test-your-code.md).
 
 2. Utwórz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozwiązanie, które zawiera projekt modelowania UML. To rozwiązanie będzie używane jako początkowy stan testów. Powinna być oddzielona od rozwiązania, w którym piszesz rozszerzenie UML i jego testy jednostkowe. Aby uzyskać więcej informacji, zobacz [Tworzenie projektów i diagramów modelowania UML](../modeling/create-uml-modeling-projects-and-diagrams.md).
 
@@ -82,17 +80,17 @@ Aby zapewnić stabilny kod przy użyciu kolejnych zmian, zalecamy napisać testy
 
     - *Projekt rozszerzenia UML*
 
-    - **EnvDTE. dll**
+    - **EnvDTE.dll**
 
-    - **Microsoft. VisualStudio. ArchitectureTools. rozszerzalność. dll**
+    - **Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll**
 
-    - **Microsoft. VisualStudio. ComponentModelHost. dll**
+    - **Microsoft.VisualStudio.ComponentModelHost.dll**
 
-    - **Microsoft. VisualStudio. QualityTools. UnitTestFramework. dll**
+    - **Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll**
 
-    - **Microsoft. VisualStudio. UML. Interfaces. dll**
+    - **Microsoft.VisualStudio.Uml.Interfaces.dll**
 
-    - **Microsoft. VSSDK. TestHostFramework. dll**
+    - **Microsoft.VSSDK.TestHostFramework.dll**
 
 6. Oznacz atrybut `[HostType("VS IDE")]` do każdej metody testowej, w tym metod inicjacji.
 
@@ -379,4 +377,4 @@ Assert.AreEqual("hello", testInstance.privateField1_Accessor);
  Definiowanie metod dostępu przy użyciu odbicia jest tak, jak zalecamy. Starsze wersje [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zapewniały narzędzie, które automatycznie utworzyło metodę dostępu dla każdej metody prywatnej. Chociaż jest to wygodne, nasze środowisko zasugeruje, że w efekcie testy jednostkowe są bardzo silnie powiązane ze strukturą wewnętrzną testowanej aplikacji. Powoduje to dodatkową pracę w przypadku zmiany wymagań lub architektury, ponieważ testy należy zmienić wraz z implementacją. Ponadto wszelkie błędne założenia w projekcie implementacji są również wbudowane w testy, aby testy nie znalazły błędów.
 
 ## <a name="see-also"></a>Zobacz też
- [Anatomia testu jednostkowego](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144) [Definiowanie polecenia menu na diagramie modelowania](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [UML — szybkie wprowadzanie przy użyciu tekstu](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a)
+ [Anatomia testu jednostkowego](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144) [Definiowanie polecenia menu na diagramie modelowania](../modeling/define-a-menu-command-on-a-modeling-diagram.md)

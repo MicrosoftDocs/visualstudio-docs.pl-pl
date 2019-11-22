@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: edf9eaee512eda7439d1beea7303cd0e74b27178
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 83606b56e6509f1db77b590ec44d991ef97cf82e
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661040"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298168"
 ---
 # <a name="structure-your-modeling-solution"></a>Tworzenie struktury rozwiązania modelowania
 
@@ -34,7 +34,7 @@ W średnim lub dużym projekcie struktura zespołu opiera się na strukturze apl
 
 #### <a name="to-divide-an-application-into-layers"></a>Aby podzielić aplikację na warstwy
 
-1. Podstawowe struktury rozwiązań na podstawie struktury aplikacji, takiej jak aplikacja sieci Web, aplikacja usługi lub aplikacja klasyczna. Wiele typowych architektur omówiono w temacie [Application Archetypes w przewodniku po architekturze aplikacji firmy Microsoft](http://go.microsoft.com/fwlink/?LinkId=196681).
+1. Podstawowe struktury rozwiązań na podstawie struktury aplikacji, takiej jak aplikacja sieci Web, aplikacja usługi lub aplikacja klasyczna. Wiele typowych architektur omówiono w temacie [Application Archetypes w przewodniku po architekturze aplikacji firmy Microsoft](https://go.microsoft.com/fwlink/?LinkId=196681).
 
 2. Utwórz rozwiązanie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], które wywoła rozwiązanie architektury. To rozwiązanie zostanie użyte do utworzenia ogólnego projektu systemu. Będzie zawierać modele, ale nie kod.
 
@@ -100,7 +100,7 @@ Jeśli na przykład często używasz rozwiązań z warstwami prezentacji, firmow
 
 #### <a name="to-create-a-solution-template"></a>Aby utworzyć szablon rozwiązania
 
-1. [Pobierz i zainstaluj Kreatora eksportu szablonów](http://go.microsoft.com/fwlink/?LinkId=196686), jeśli jeszcze tego nie zrobiono.
+1. [Pobierz i zainstaluj Kreatora eksportu szablonów](https://go.microsoft.com/fwlink/?LinkId=196686), jeśli jeszcze tego nie zrobiono.
 
 2. Utwórz strukturę rozwiązania, która ma być używana jako punkt wyjścia dla przyszłych projektów.
 
@@ -109,15 +109,15 @@ Jeśli na przykład często używasz rozwiązań z warstwami prezentacji, firmow
 4. Postępując zgodnie z instrukcjami wyświetlanymi w kreatorze, wybierz projekty, które chcesz uwzględnić w szablonie, podaj nazwę i opis szablonu, a następnie określ lokalizację wyjściową.
 
 > [!NOTE]
-> Materiał przedstawiony w tym temacie jest abstrakcyjny i paraphrased ze wskazówkami dotyczącymi narzędzi architektury programu Visual Studio, które są napisywane przez zakresy ALM programu Visual Studio, które są współdziałaniem między profesjonalistami (MVP), usługami firmy Microsoft i programem Visual Studio zespół produktu i autorzy. [Kliknij tutaj, aby pobrać kompletny pakiet wskazówek.](http://go.microsoft.com/fwlink/?LinkID=191984)
+> Materiał przedstawiony w tym temacie jest abstrakcyjny i paraphrased ze wskazówkami dotyczącymi narzędzi architektury programu Visual Studio, które są napisywane przez zakresy ALM programu Visual Studio, które są współdziałaniem między profesjonalistami (MVP), usługami firmy Microsoft i programem Visual Studio zespół produktu i autorzy. [Kliknij tutaj, aby pobrać kompletny pakiet wskazówek.](https://go.microsoft.com/fwlink/?LinkID=191984)
 
 ## <a name="related-materials"></a>Powiązane materiały
 
-Organizowanie modeli — wideo według Clint Edmondson [i zarządzanie nimi](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-9-Organizing-and-Managing-Your-Models/) .
+Organizowanie modeli — wideo według Clint Edmondson [i zarządzanie nimi](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-9-organizing-and-managing-your-models) .
 
 [Wskazówki dotyczące narzędzi architektury programu Visual Studio](../modeling/visual-studio-architecture-tooling-guidance.md) — dalsze wskazówki dotyczące zarządzania modelami w zespole
 
 ## <a name="see-also"></a>Zobacz też
 
-[Zarządzanie modelami i diagramami w ramach kontroli wersji](../modeling/manage-models-and-diagrams-under-version-control.md) 
+[Zarządzanie modelami i diagramami w ramach kontroli wersji](../modeling/manage-models-and-diagrams-under-version-control.md)
 [używać modeli w procesie programistycznym](../modeling/use-models-in-your-development-process.md)

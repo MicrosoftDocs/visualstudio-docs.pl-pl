@@ -9,12 +9,12 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7fc6f29246f90c47a4c59a5ae6bb1999ceac72bf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 744b5f3c62ac2c5636ed2499653986d3b669fce3
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646907"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299969"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Krok 9. Przejrzenie, komentowanie i testowanie kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Następnie Dodaj komentarz do kodu. Komentarz to Uwaga, która nie zmienia sposo
 
    Instrukcje sprawiają, że programy działają w programie. W wizualizacji C#, instrukcja zawsze jest zakończona średnikiem. Na Visual Basic końcem wiersza jest koniec instrukcji. (Nie jest wymagany średnik w Visual Basic). Poprzednia instrukcja nakazuje formantowi `PictureBox` załadować plik, który użytkownik wybrał ze składnika **OpenFileDialog** .
 
-  ![link do wideo](../data-tools/media/playvideo.gif "PlayVideo") Aby uzyskać wersję wideo tego tematu, zobacz [Samouczek 1: Tworzenie przeglądarki obrazów w Visual Basic — wideo 5](http://go.microsoft.com/fwlink/?LinkId=205216) lub [Samouczek 1: Tworzenie przeglądarki obrazów w C# pliku wideo 5](http://go.microsoft.com/fwlink/?LinkId=205206). Te filmy wideo korzystają ze starszej wersji programu Visual Studio, więc istnieją niewielkie różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednak koncepcje i procedury działają podobnie w bieżącej wersji programu Visual Studio.
+  ![link do wideo](../data-tools/media/playvideo.gif "PlayVideo") Aby uzyskać wersję wideo tego tematu, zobacz [Samouczek 1: Tworzenie przeglądarki obrazów w Visual Basic — wideo 5](https://go.microsoft.com/fwlink/?LinkId=205216) lub [Samouczek 1: Tworzenie przeglądarki obrazów w C# pliku wideo 5](https://go.microsoft.com/fwlink/?LinkId=205206). Te filmy wideo korzystają ze starszej wersji programu Visual Studio, więc istnieją niewielkie różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednak koncepcje i procedury działają podobnie w bieżącej wersji programu Visual Studio.
 
 ### <a name="to-add-comments"></a>Aby dodać komentarze
 
@@ -81,7 +81,7 @@ Następnie Dodaj komentarz do kodu. Komentarz to Uwaga, która nie zmienia sposo
 2. Wybierz przycisk **Pokaż obraz** , aby uruchomić właśnie napisany kod. Po pierwsze program otwiera okno dialogowe **Otwórz plik** . Sprawdź, czy Twoje filtry są wyświetlane na liście rozwijanej **Pliki typu** u dołu okna dialogowego. Następnie przejdź do obrazu i otwórz go. Zwykle można znaleźć przykładowe obrazy dostarczane z systemem operacyjnym Windows w folderze **Moje dokumenty** w folderze **Moje obrazy Pictures\Sample** .
 
     > [!NOTE]
-    > Jeśli nie widzisz żadnych obrazów w oknie dialogowym **Wybierz plik obrazu** , upewnij się, że "wszystkie pliki (*. \*) "filtr jest zaznaczony na liście rozwijanej po prawej stronie okna dialogowego.
+    > Jeśli nie widzisz żadnych obrazów w oknie dialogowym **Wybierz plik obrazu** , upewnij się, że "wszystkie pliki (*.\*) "filtr jest zaznaczony na liście rozwijanej po prawej stronie okna dialogowego.
 
 3. Załaduj obraz i pojawia się w elemencie PictureBox. Następnie spróbuj zmienić rozmiar formularza, przeciągając jego obramowania. Ponieważ element PictureBox jest zadokowany wewnątrz elementu TableLayoutPanel, który sam jest zadokowany w formularzu, obszar obrazu zmieni się w taki sposób, aby był tak szeroki jak formularz, i wypełni górne 90 procent formularza. To dlatego, że użyto kontenerów TableLayoutPanel i FlowLayoutPanel: zachowują rozmiar formularza poprawnie, gdy użytkownik zmienia jego rozmiary.
 

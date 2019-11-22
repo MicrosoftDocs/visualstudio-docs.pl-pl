@@ -1,5 +1,5 @@
 ---
-title: Zarządzane klasy Framework pakietu | Dokumentacja firmy Microsoft
+title: Zarządzane klasy struktury pakietów | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -12,33 +12,33 @@ helpviewer_keywords:
 ms.assetid: 15aedcc3-c79a-460b-b620-43223f1ae81e
 caps.latest.revision: 24
 manager: jillfra
-ms.openlocfilehash: 75f7cb153a976614ff790095141a820af80b5834
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2e9fe1abb82d3d64232e3e5e2a6d117c1068aa1c
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422754"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297701"
 ---
-# <a name="managed-package-framework-classes"></a>Zarządzane klasy Framework pakietu
-Pakiet zarządzanych klas framework (MPF) może służyć do tworzenia pakietów VSPackage przy użyciu kodu zarządzanego. Zapewniają one domyślnej implementacji dla wielu interfejsów pakietu VSPackage. Ukrywając szczegółów implementacji i złożoności MPF pozwala na tworzenie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integracji produktów za pomocą minimalnej ilości kodu.  
+# <a name="managed-package-framework-classes"></a>Zarządzane klasy struktury pakietów
+Klasy Managed Package Framework (MPF) mogą służyć do tworzenia pakietów VSPackage przy użyciu kodu zarządzanego. Zapewniają one domyślne implementacje dla wielu interfejsów pakietu VSPackage. Ukrywając szczegóły i złożoność implementacji, MPF umożliwia tworzenie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] produktów integracyjnych o minimalnej ilości kodu.  
   
 > [!WARNING]
-> Większość zestawów zawierających klasy środowiska pakietu zarządzanego są dostarczane za pomocą programu Visual Studio SDK. Możesz pobrać kod źródłowy dla zarządzanych w pakiecie struktury dla projektów w [zarządzanego środowiska pakietu dla projektów](http://mpfproj11.codeplex.com/).  
+> Większość zestawów zawierających zarządzane klasy struktury pakietów jest dostarczana z zestawem SDK programu Visual Studio. Możesz pobrać kod źródłowy zarządzanej platformy dla projektów w [strukturze pakietów zarządzanych dla projektów](https://archive.codeplex.com/?p=mpfproj11).  
   
 ## <a name="mpf-namespaces"></a>Przestrzenie nazw MPF  
- W poniższej tabeli wymieniono MPF przestrzenie nazw, dostarczone przez [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)].  
+ W poniższej tabeli wymieniono przestrzenie nazw MPF udostępniane przez [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)].  
   
-|Przestrzeń nazw|Spis treści|  
+|Przestrzeń nazw|Zawartość|  
 |----------------|--------------|  
-|<xref:Microsoft.VisualStudio>|Zawiera przydatne klasy obsługi błędów COM [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] stałe i Win32 dla systemu windows.|  
-|<xref:Microsoft.VisualStudio.Package>|Zawiera kod zarządzany otok dla [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektów, edytory i MSBuild.|  
-|<xref:Microsoft.VisualStudio.Shell>|Zawiera klasy bazowe MPF, z których mogą pochodzić implementację wielu obiektów programu Visual Studio.|  
-|<xref:Microsoft.VisualStudio.Shell.Design>|Zawiera [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozszerzenia projektanta.|  
-|<xref:Microsoft.VisualStudio.Shell.Design.Serialization>|Zawiera [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozszerzenia projektanta serializacji.|  
-|<xref:Microsoft.VisualStudio.Shell.Design.Serialization.CodeDom>|Zawiera [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozszerzenia projektanta CodeDom.|  
-|<xref:Microsoft.VisualStudio.Shell.Flavor>|Obsługuje projektu podtypy (znany także jako "odmian").|  
+|<xref:Microsoft.VisualStudio>|Zawiera użyteczne klasy do obsługi błędów COM, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] stałych i Win32 systemu Windows.|  
+|<xref:Microsoft.VisualStudio.Package>|Obejmuje otoki kodu zarządzanego dla [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektów, edytorów i programu MSBuild.|  
+|<xref:Microsoft.VisualStudio.Shell>|Zawiera klasy bazowe MPF, z których można utworzyć wiele popularnych obiektów programu Visual Studio.|  
+|<xref:Microsoft.VisualStudio.Shell.Design>|Zawiera rozszerzenia projektanta [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
+|<xref:Microsoft.VisualStudio.Shell.Design.Serialization>|Zawiera rozszerzenia projektanta serializacji [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
+|<xref:Microsoft.VisualStudio.Shell.Design.Serialization.CodeDom>|Zawiera [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozszerzeń projektanta CodeDom.|  
+|<xref:Microsoft.VisualStudio.Shell.Flavor>|Obsługuje podtypy projektu (nazywane również "wersjami").|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Pakietów VSPackage i środowiska pakietu zarządzanego](../misc/vspackages-and-the-managed-package-framework.md)   
- [Przy użyciu zestawów międzyoperacyjnych programu Visual Studio](../extensibility/internals/using-visual-studio-interop-assemblies.md)   
- [Pakietów VSPackage i środowiska pakietu zarządzanego](../misc/vspackages-and-the-managed-package-framework.md)
+ [Pakietów VSPackage i struktura pakietów zarządzanych](../misc/vspackages-and-the-managed-package-framework.md)   
+ [Używanie zestawów międzyoperacyjnych programu Visual Studio](../extensibility/internals/using-visual-studio-interop-assemblies.md)   
+ [Pakietów VSPackage i struktura pakietu zarządzanego](../misc/vspackages-and-the-managed-package-framework.md)

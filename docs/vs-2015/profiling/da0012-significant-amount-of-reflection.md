@@ -1,5 +1,5 @@
 ---
-title: 'DA0012: Znacząca ilość odbicia | Dokumentacja firmy Microsoft'
+title: 'DA0012: znaczna ilość odbicia | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,29 +14,29 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ae0f361d4bbfe48b3133e50c360f66387d555814
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: deb6d8f759080caf1933c75f1f3f05428d3cff9d
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68187866"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300308"
 ---
 # <a name="da0012-significant-amount-of-reflection"></a>DA0012: Znaczne odbicie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Identyfikator reguły | DA0012 |  
 |Category|.NET Framework Usage|  
-| Profilowanie metody | Próbkowanie |  
-| Komunikat | Użytkownik może być nadmiernie używasz odbicia. Jest kosztowną operacją. |  
+| Metody profilowania | Próbkowanie |  
+| Komunikat | Może być używane nadmierne odbicie. Jest to kosztowna operacja. |  
 | Typ reguły | Ostrzeżenie |  
   
 ## <a name="cause"></a>Przyczyna  
- Wywołania do metody System.Reflection, takie jak element InvokeMember i GetMember lub typ metod, takich jak MemberInvoke są znaczna część danych profilowania. Jeśli to możliwe, należy wziąć pod uwagę zastąpienie tych metod wczesne powiązania do metod zestawów zależnych.  
+ Wywołania metody System. odbicia, takie jak InvokeMember i GetMember albo metody Type, takie jak MemberInvoke, są znaczną częścią danych profilowania. Jeśli to możliwe, rozważ zastąpienie tych metod wczesnym wiązaniem do metod zestawów zależnych.  
   
 ## <a name="rule-description"></a>Opis reguły  
- Odbicie jest elastyczne możliwości programu .NET Framework, który może służyć do wykonywania późne powiązania aplikacji zależnego zestawu środowiska wykonawczego, albo do tworzenia i dynamicznie wykonywanie nowych typów w czasie wykonywania. Jednak te techniki może obniżyć wydajność, jeśli są one często używane lub o nazwie w ścisłą pętli.  
+ Odbicie jest elastyczną funkcją .NET Framework, która może służyć do wykonywania późnego powiązania aplikacji z zależnym zestawem czasu wykonywania lub do tworzenia i dynamicznego wykonywania nowych typów w czasie wykonywania. Jednak te techniki mogą zmniejszyć wydajność, jeśli są używane często lub wywoływane w ścisłych pętlach.  
   
- Aby uzyskać więcej informacji, zobacz [odbicia, a późne wiązanie](http://go.microsoft.com/fwlink/?LinkId=177826) sekcji rozdział 5 — poprawianie zarządzane działania kodu, zbiorczo poprawy wydajności aplikacji platformy .NET i skalowalność Microsoft Patterns and Practices Biblioteka w witrynie MSDN.  
+ Aby uzyskać więcej informacji, zobacz sekcję [odbicie i późne wiązanie](https://go.microsoft.com/fwlink/?LinkId=177826) w rozdziale 5 — Poprawianie wydajności kodu zarządzanego w celu zwiększenia wydajności aplikacji .NET i skalowalności biblioteki wzorców i praktyk firmy Microsoft w witrynie MSDN.  
   
-## <a name="how-to-investigate-a-warning"></a>Jak badać ostrzeżenie  
- Kliknij dwukrotnie komunikat w oknie Lista błędów, aby przejść do [widok szczegółów funkcji](../profiling/function-details-view.md) danych profilowania. Zbadaj funkcje wywoływania metody System.Type lub System.Reflection można odnaleźć sekcji programów Najczęściej korzystanie z interfejsów API odbicia platformy .NET. Należy unikać używania metod, które zwracają metadanych. Wydajność aplikacji ma kluczowe znaczenie, należy unikać używania i późne wiązanie dynamiczne tworzenie typów w czasie wykonywania.
+## <a name="how-to-investigate-a-warning"></a>Jak zbadać ostrzeżenie  
+ Kliknij dwukrotnie komunikat w oknie Lista błędów, aby przejść do [widoku Szczegóły funkcji](../profiling/function-details-view.md) danych profilowania. Sprawdź wywołania funkcji metody System. Type lub system. odbicie, aby znaleźć sekcje programu, które najczęściej wykorzystują interfejsy API odbicia programu .NET. Unikaj używania metod, które zwracają metadane. Gdy wydajność aplikacji jest krytyczna, może być konieczne uniknięcie używania późnego powiązania i tworzenia typów dynamicznie w czasie wykonywania.

@@ -15,17 +15,17 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 77220ef55871d59bf8c8810547fccae5399869ce
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2439f280ee590f1b13e339b69c6f3f147bb1ea39
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665677"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297801"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Szybkie uruchamianie, środowisko, opcje — okno dialogowe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Funkcja **szybkiego uruchamiania** umożliwia szybkie wyszukiwanie i wykonywanie akcji dla zasobów IDE, takich jak opcje, szablony i menu. Nie można użyć **szybkiego uruchamiania** do wyszukiwania kodu i symboli. Pole wyszukiwania **szybkiego uruchamiania** znajduje się w prawym górnym rogu paska menu i jest dostępne po wybraniu klawiszy CTRL + Q. Wystarczy wprowadzić ciąg wyszukiwania w polu. Aby wyszukać ciągi zawierające ciąg @, użyj znaku "@ @".
+Funkcja **szybkiego uruchamiania** umożliwia szybkie wyszukiwanie i wykonywanie akcji dla zasobów IDE, takich jak opcje, szablony i menu. Nie można użyć **szybkiego uruchamiania** do wyszukiwania kodu i symboli. Pole wyszukiwania **szybkiego uruchamiania** znajduje się w prawym górnym rogu paska menu i jest dostępne po wybraniu klawiszy CTRL + Q. Wystarczy wprowadzić ciąg wyszukiwania w polu. Do wyszukiwania ciągów zawierających @, użyj ”@@”.
 
  **Szybkie uruchamianie** jest domyślnie włączone podczas instalowania programu Visual Studio. Na pasku menu można pokazać lub ukryć pasek **Szybkie uruchamianie** , wybierając pozycję **Narzędzia**, **Opcje**. Rozwiń węzeł **środowiska** , a następnie wybierz polecenie **Szybkie uruchamianie**. Zaznacz lub wyczyść pole wyboru **Włącz szybkie uruchamianie** . Możesz również włączyć lub wyłączyć kategorie wyszukiwania na tej stronie.
 
@@ -36,10 +36,10 @@ Funkcja **szybkiego uruchamiania** umożliwia szybkie wyszukiwanie i wykonywanie
 
 |Kategoria|Skrót|Opis skrótu|
 |--------------|--------------|--------------------------|
-|Ostatnio używane|@mru<br /><br /> Na przykład:`@mru font`|Wyświetla maksymalnie pięć elementów, które były **ostatnio używane**.|
-|Menu|@menu<br /><br /> Na przykład:`@menu font`|Ogranicza wyszukiwanie do elementów menu.|
-|Opcje|@opt<br /><br /> Na przykład:`@opt font`|Ogranicza wyszukiwanie do ustawień w oknie dialogowym **Opcje** .|
-|Dokumenty|@doc<br /><br /> Na przykład:`@doc font`|Ogranicza wyszukiwanie do nazw plików i ścieżek otwartych dokumentów dla kryteriów wyszukiwania, ale nie przeszukuje tekstu wewnątrz samych plików.|
+|Ostatnio używane|@mru<br /><br /> Na przykład: `@mru font`|Wyświetla maksymalnie pięć elementów, które były **ostatnio używane**.|
+|Menu|@menu<br /><br /> Na przykład: `@menu font`|Ogranicza wyszukiwanie do elementów menu.|
+|Opcje|@opt<br /><br /> Na przykład: `@opt font`|Ogranicza wyszukiwanie do ustawień w oknie dialogowym **Opcje** .|
+|Dokumenty|@doc<br /><br /> Na przykład: `@doc font`|Ogranicza wyszukiwanie do nazw plików i ścieżek otwartych dokumentów dla kryteriów wyszukiwania, ale nie przeszukuje tekstu wewnątrz samych plików.|
 
 > [!NOTE]
 > Można zmienić klawisze skrótów na stronie **Ogólne**, **Klawiatura** w oknie dialogowym **Opcje** .
@@ -47,7 +47,7 @@ Funkcja **szybkiego uruchamiania** umożliwia szybkie wyszukiwanie i wykonywanie
 ## <a name="show-previous-results"></a>Pokaż poprzednie wyniki
  Wprowadzony termin wyszukiwania nie jest domyślnie utrwalany między sesjami wyszukiwania. Ciąg wyszukiwania jest wyczyszczony, jeśli szukasz terminu, Przenieś kursor poza obszar **szybkiego uruchamiania** , a następnie wróć. Aby zachować wyniki wyszukiwania, przejdź do okna dialogowego **Opcje** , wybierz pozycję **Szybkie uruchamianie**, a następnie wybierz pozycję **Pokaż wyniki wyszukiwania z poprzedniego wyszukiwania, gdy szybkie uruchamianie jest aktywowane.** pole wyboru. Przy następnym przeszukiwaniu pozostaw obszar szybkie uruchamianie i Wróć, szybkie uruchamianie spowoduje zachowanie ostatniego użytego terminu wyszukiwania, a także wyświetlenie wyników wyszukiwania.
 
- Najnowsze porady i wskazówki dotyczące korzystania z funkcji **szybkiego uruchamiania**można znaleźć [na blogu programu Visual Studio](http://go.microsoft.com/fwlink/?LinkId=236054).
+ Najnowsze porady i wskazówki dotyczące korzystania z funkcji **szybkiego uruchamiania**można znaleźć [na blogu programu Visual Studio](https://go.microsoft.com/fwlink/?LinkId=236054).
 
 ## <a name="see-also"></a>Zobacz też
  [Ogólne elementy interfejsu użytkownika (Visual Studio)](../../ide/reference/general-user-interface-elements-visual-studio.md) — okno [dialogowe Opcje środowiska](../../ide/reference/environment-options-dialog-box.md)

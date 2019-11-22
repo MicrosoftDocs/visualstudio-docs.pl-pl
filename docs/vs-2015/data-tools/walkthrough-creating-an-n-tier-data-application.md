@@ -17,12 +17,12 @@ caps.latest.revision: 51
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 720f50fe486c0e625fcd67191f43897eba466698
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bd77006eda03b716e3c54c0b5b52ac633a383377
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660159"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299587"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Wskazówki: tworzenie aplikacji warstwowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,10 +53,10 @@ N-warstwowa * aplikacje danych to aplikacje, które uzyskują dostęp do danych 
 
 - Napisz kod, aby wypełnić tabele danych.
 
-  ![link do wideo](../data-tools/media/playvideo.gif "PlayVideo") Aby uzyskać wersję wideo tego tematu, zobacz [wideo How to: Tworzenie wielowarstwowej aplikacji do obsługi danych](http://go.microsoft.com/fwlink/?LinkId=115188).
+  ![link do wideo](../data-tools/media/playvideo.gif "PlayVideo") Aby uzyskać wersję wideo tego tematu, zobacz [wideo How to: Tworzenie wielowarstwowej aplikacji do obsługi danych](https://go.microsoft.com/fwlink/?LinkId=115188).
 
 ## <a name="prerequisites"></a>Wymagania wstępne
- Aby ukończyć ten przewodnik, musisz wykonać następujące czynności:
+ Aby ukończyć ten przewodnik, potrzebne są:
 
 - Dostęp do przykładowej bazy danych Northwind.
 
@@ -99,7 +99,7 @@ N-warstwowa * aplikacje danych to aplikacje, które uzyskują dostęp do danych 
      Projekt DataAccessTier jest tworzony i dodawany do rozwiązania NTierWalkthrough.
 
 ## <a name="creating-the-dataset"></a>Tworzenie zestawu danych
- Następnym krokiem jest utworzenie określonego zestawu danych. Typy zestawów danych są tworzone z klasą DataSet (łącznie z klasami DataTables) i klasami `TableAdapter` w pojedynczym projekcie. (Wszystkie klasy są generowane w jednym pliku). Po oddzieleniu zestawu danych i `TableAdapter`s do różnych projektów jest to klasa DataSet, która jest przenoszona do innego projektu, pozostawiając klasy `TableAdapter` w oryginalnym projekcie. W związku z tym należy utworzyć zestaw danych w projekcie, który ostatecznie będzie zawierać `TableAdapter`s (projekt DataAccessTier). Zestaw danych zostanie utworzony za pomocą **Kreatora konfiguracji źródła danych**.
+ Następnym krokiem jest utworzenie określonego zestawu danych. Typy zestawów danych są tworzone z klasą DataSet (łącznie z klasami DataTables) i klasami `TableAdapter` w pojedynczym projekcie. (Wszystkie klasy są generowane w jednym pliku). Po oddzieleniu zestawu danych i `TableAdapter`do różnych projektów jest to Klasa zestawu danych, która jest przenoszona do innego projektu, pozostawiając klasy `TableAdapter` w oryginalnym projekcie. W związku z tym należy utworzyć zestaw danych w projekcie, który ostatecznie będzie zawierać `TableAdapter`s (projekt DataAccessTier). Zestaw danych zostanie utworzony za pomocą **Kreatora konfiguracji źródła danych**.
 
 > [!NOTE]
 > Aby utworzyć połączenie, musisz mieć dostęp do przykładowej bazy danych Northwind.
@@ -108,7 +108,7 @@ N-warstwowa * aplikacje danych to aplikacje, które uzyskują dostęp do danych 
 
 1. Kliknij pozycję DataAccessTier w **Eksplorator rozwiązań**.
 
-2. W menu **dane** kliknij przycisk **Pokaż źródła danych**.
+2. Na **danych** menu, kliknij przycisk **Pokaż źródła danych**.
 
 3. W oknie **źródła danych** kliknij przycisk **Dodaj nowe źródło danych** , aby uruchomić **Kreatora konfiguracji źródła danych**.
 
@@ -148,7 +148,7 @@ N-warstwowa * aplikacje danych to aplikacje, które uzyskują dostęp do danych 
 
 4. Na liście **projekt zestawu danych** kliknij pozycję **DataEntityTier**.
 
-5. W menu **kompilacja** kliknij pozycję **Kompiluj rozwiązanie**.
+5. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
 
    Zestaw danych i TableAdapters są rozdzielone na dwa projekty biblioteki klas. Projekt, który pierwotnie zawierał cały zestaw danych (DataAccessTier), zawiera teraz tylko TableAdapters. Projekt określony we właściwości **projektu DataSet** (DataEntityTier) zawiera zestaw danych o określonym typie: NorthwindDataSet. DataSet. Designer. vb (lub NorthwindDataSet.DataSet.Designer.cs).
 
@@ -201,7 +201,7 @@ N-warstwowa * aplikacje danych to aplikacje, które uzyskują dostęp do danych 
 
 6. Kliknij przycisk **Zakończ**.
 
-7. W menu **kompilacja** kliknij pozycję **Kompiluj rozwiązanie**.
+7. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
 
 ## <a name="adding-a-reference-to-the-data-entity-and-data-access-tiers-to-the-data-service"></a>Dodawanie odwołania do jednostek danych i warstw dostępu do danych do usługi danych
  Ponieważ usługa danych wymaga informacji z zestawu danych i TableAdapters, Dodaj odwołania do projektów DataEntityTier i DataAccessTier.
@@ -280,7 +280,7 @@ N-warstwowa * aplikacje danych to aplikacje, które uzyskują dostęp do danych 
     }
     ```
 
-5. W menu **kompilacja** kliknij pozycję **Kompiluj rozwiązanie**.
+5. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
 
 ## <a name="creating-a-presentation-tier-to-display-data-from-the-data-service"></a>Tworzenie warstwy prezentacji do wyświetlania danych z usługi danych
  Teraz, gdy rozwiązanie zawiera usługę danych, która ma metody, które wywołują do warstwy dostępu do danych, należy utworzyć kolejny projekt, który będzie wywoływał usługę danych i przedstawić dane użytkownikom. W tym instruktażu Utwórz aplikację Windows Formsową. to jest warstwa prezentacji aplikacji n-warstwowej.

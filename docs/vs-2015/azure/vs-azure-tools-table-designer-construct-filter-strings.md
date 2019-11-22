@@ -1,6 +1,6 @@
 ---
-title: Konstruowanie ciągi filtrów dla projektanta tabel | Dokumentacja firmy Microsoft
-description: Konstruowanie ciągi filtrów dla projektanta tabel
+title: Konstruowanie ciągów filtru dla projektanta tabel | Microsoft Docs
+description: Konstruowanie ciągów filtru dla projektanta tabel
 author: ghogen
 manager: jillfra
 assetId: a1a10ea1-687a-4ee1-a952-6b24c2fe1a22
@@ -11,101 +11,101 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: 50e9093ded8aafaed93f6a5063631108cb2a9a89
-ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
+ms.openlocfilehash: f1cf5634985683fc86a738d93a6cfa352b52bd24
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67624164"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74290994"
 ---
 # <a name="constructing-filter-strings-for-the-table-designer"></a>Konstruowanie ciągów filtrów dla projektanta tabel
 ## <a name="overview"></a>Omówienie
-Aby filtrować dane w tabeli platformy Azure, która jest wyświetlana w programie Visual Studio **projektanta tabel**, utworzyć ciągu filtru i wprowadzić go w polu filtru. Składnia ciągu filtru jest definiowany przez usługi danych WCF i przypomina klauzulę WHERE języka SQL, ale są wysyłane do usługi tabeli za pomocą żądania HTTP. **Projektanta tabel** obsługuje poprawne kodowanie, więc aby odfiltrować wartość żądanej właściwości, należy podać tylko nazwę właściwości, operator porównania, wartości kryteriów i opcjonalnie, wartość logiczna operatora w polu filtru. Nie muszą zawierać opcję zapytania $filter, jak gdyby były konstruuje adres URL do wykonywania zapytań w tabeli za pomocą [dokumentacja interfejsu API REST usług Storage](http://go.microsoft.com/fwlink/p/?LinkId=400447).
+Aby filtrować dane w tabeli platformy Azure, która jest wyświetlana w **Projektancie tabel**programu Visual Studio, należy utworzyć ciąg filtru i wprowadzić go w polu filtru. Składnia ciągu filtru jest definiowana przez Usługi danych programu WCF i jest podobna do klauzuli SQL WHERE, ale jest wysyłana do Table service za pośrednictwem żądania HTTP. **Projektant tabel** obsługuje odpowiednie kodowanie, dlatego w celu filtrowania według żądanej wartości właściwości należy wprowadzić tylko nazwę właściwości, operator porównania, wartość kryteriów i opcjonalnie operator logiczny w polu filtru. Nie trzeba dołączać opcji zapytania $filter tak samo, jak w przypadku konstruowania adresu URL w celu zbadania tabeli za pośrednictwem [dokumentacji interfejsu API REST usług Storage](https://go.microsoft.com/fwlink/p/?LinkId=400447).
 
-Usługi danych WCF opierają się na [Open Data Protocol](http://go.microsoft.com/fwlink/p/?LinkId=214805) (OData). Aby uzyskać szczegółowe informacje na temat opcję zapytania filtra systemu ( **$filter**), zobacz [specyfikacji Konwencji identyfikatora URI OData](http://go.microsoft.com/fwlink/p/?LinkId=214806).
+Usługi danych programu WCF opierają się na [protokole Open Data Protocol](https://go.microsoft.com/fwlink/p/?LinkId=214805) (OData). Aby uzyskać szczegółowe informacje na temat opcji filtrowania systemu kwerend ( **$Filter**), zobacz [specyfikację identyfikatorów URI usługi OData](https://go.microsoft.com/fwlink/p/?LinkId=214806).
 
 ## <a name="comparison-operators"></a>Operatory porównania
 Następujące operatory logiczne są obsługiwane dla wszystkich typów właściwości:
 
-| Operator logiczny | Opis | Przykład ciągu filtru |
+| Operator logiczny | Opis | Przykładowy ciąg filtru |
 | --- | --- | --- |
-| eq |Równa się |Miasto eq "Redmond" |
+| eq |Równa się |Miasto EQ "Redmond" |
 | gt |Większe niż |Cena gt 20 |
-| GE |Większe niż lub równe |Cena ge 10 |
+| stron |Większe niż lub równe |Cena GE 10 |
 | lt |Mniejsze niż |Cena lt 20 |
-| le |Mniejsze niż lub równe |Cena le 100 |
-| ne |Nie równa się |Ne City "Londyn" |
-| and |Oraz |Cena le 200 i cena gt 3.5 |
-| lub |Lub |Cena le 3.5 lub gt Cena 200 |
-| not |nie |nie isAvailable |
+| urządzeń |Mniejsze niż lub równe |Cena Le 100 |
+| ne |Nie równa się |Miasto (Londyn) |
+| and |Oraz |Cena Le 200 i cena gt 3,5 |
+| lub |Lub |Cena Le 3,5 lub cena gt 200 |
+| not |nie |nie IsAvailable |
 
-Podczas tworzenia ciągu filtru, następujące reguły są ważne:
+Podczas konstruowania ciągu filtru ważne są następujące reguły:
 
-* Użyj operatorów logicznych, aby porównać właściwość z wartością. Należy pamiętać, że nie jest możliwe porównać właściwość z wartością dynamiczną; po jednej stronie wyrażenia musi być stałą.
-* Wszystkie części ciągu filtru jest rozróżniana wielkość liter.
-* Wartość stała muszą być tego samego typu danych co właściwość Aby filtr zwracał prawidłowe wyniki. Aby uzyskać więcej informacji na temat obsługiwanych typów właściwości, zobacz [opis modelu danych usługi Table Service](http://go.microsoft.com/fwlink/p/?LinkId=400448).
+* Operatory logiczne służą do porównywania właściwości z wartością. Należy pamiętać, że nie można porównać właściwości z wartością dynamiczną; jedna ze stron wyrażenia musi być stałą.
+* W przypadku wszystkich części ciągu filtru rozróżniana jest wielkość liter.
+* Wartość stała musi być tego samego typu danych co właściwość, aby filtr zwracał prawidłowe wyniki. Aby uzyskać więcej informacji na temat obsługiwanych typów właściwości, zobacz [Opis modelu danych usługi Table Service](https://go.microsoft.com/fwlink/p/?LinkId=400448).
 
-## <a name="filtering-on-string-properties"></a>Filtrowanie według właściwości ciągu
-Podczas filtrowania właściwości ciągu stała typu string należy ją ująć w znaki pojedynczego cudzysłowu.
+## <a name="filtering-on-string-properties"></a>Filtrowanie właściwości ciągu
+W przypadku filtrowania według właściwości ciągu ujmij ciąg w znaki pojedynczego cudzysłowu.
 
-Poniższy przykład filtr **PartitionKey** i **RowKey** właściwości; dodatkowe niekluczowych również można dodawać właściwości ciągu filtru:
+Poniższe przykładowe filtry we właściwościach **PartitionKey** i **RowKey** ; do ciągu filtru można również dodać dodatkowe właściwości niebędące kluczami:
 
 ```
 PartitionKey eq 'Partition1' and RowKey eq '00001'
 ```
 
-Każde wyrażenie filtru można ująć w nawiasach, chociaż nie jest wymagane:
+Każde wyrażenie filtru można ująć w nawiasy, chociaż nie jest to wymagane:
 
 ```
 (PartitionKey eq 'Partition1') and (RowKey eq '00001')
 ```
 
-Pamiętaj, że usługa Table service nie obsługuje symboli wieloznacznych zapytania nie są obsługiwane w Projektancie tabel albo. Można jednak wykonać Dopasowywanie przy użyciu operatorów porównania na żądaną prefiks prefiksów. Poniższy przykład zwraca jednostki z LastName właściwość rozpoczynająca się od litery "A":
+Należy zauważyć, że Table service nie obsługuje zapytań wieloznacznych i nie są obsługiwane w Projektancie tabel. Można jednak wykonać dopasowanie prefiksu przy użyciu operatorów porównania na żądanym prefiksie. Poniższy przykład zwraca jednostki z właściwością LastName rozpoczynającą się literą "A":
 
 ```
 LastName ge 'A' and LastName lt 'B'
 ```
 
-## <a name="filtering-on-numeric-properties"></a>Filtrowanie według właściwości liczbowych
-Aby filtrować liczbą całkowitą lub zmiennoprzecinkową, określ liczbę bez znaku cudzysłowu.
+## <a name="filtering-on-numeric-properties"></a>Filtrowanie na właściwościach liczbowych
+Aby odfiltrować liczbę całkowitą lub zmiennoprzecinkową, określ liczbę bez znaków cudzysłowu.
 
-W tym przykładzie zwraca wszystkie jednostki z właściwością wiek, którego wartość jest większa niż 30:
+Ten przykład zwraca wszystkie jednostki z właściwością wieku, której wartość jest większa niż 30:
 
 ```
 Age gt 30
 ```
 
-W tym przykładzie zwraca wszystkie jednostki z właściwością AmountDue, którego wartość jest mniejsza niż lub równe 100.25:
+Ten przykład zwraca wszystkie jednostki z właściwością AmountDue, której wartość jest mniejsza lub równa 100,25:
 
 ```
 AmountDue le 100.25
 ```
 
-## <a name="filtering-on-boolean-properties"></a>Filtrowanie według właściwości logiczne
-Aby odfiltrować wartość logiczną, określ **true** lub **false** bez znaków cudzysłowu.
+## <a name="filtering-on-boolean-properties"></a>Filtrowanie właściwości logicznych
+Aby odfiltrować wartość logiczną, należy określić **wartość PRAWDA** lub **Fałsz** bez znaków cudzysłowu.
 
-Poniższy przykład zwraca wszystkie jednostki, w których ustawiono właściwość IsActive **true**:
+Poniższy przykład zwraca wszystkie jednostki, w których właściwość IsActive jest ustawiona na **wartość true**:
 
 ```
 IsActive eq true
 ```
 
-Można także napisać to wyrażenie filtru, bez operatora logicznego. W poniższym przykładzie Usługa Table service zwróci wszystkich jednostek w przypadku IsActive **true**:
+Możesz również napisać wyrażenie filtru bez operatora logicznego. W poniższym przykładzie Table service zwróci również wszystkie jednostki, gdzie IsActive jest **prawdziwe**:
 
 ```
 IsActive
 ```
 
-Aby zwrócić wszystkie jednostki, której IsActive ma wartość false, należy użyć not — operator:
+Aby zwrócić wszystkie jednostki, w których IsActive ma wartość false, można użyć operatora not:
 
 ```
 not IsActive
 ```
 
-## <a name="filtering-on-datetime-properties"></a>Filtrowanie według właściwości daty/godziny
-Aby filtrować wartości daty/godziny, należy określić **daty/godziny** — słowo kluczowe, następuje Stała daty/godziny w znaki pojedynczego cudzysłowu. Stała daty/godziny musi być w formacie UTC połączone, zgodnie z opisem w [formatowanie wartości daty/godziny](http://go.microsoft.com/fwlink/p/?LinkId=400449).
+## <a name="filtering-on-datetime-properties"></a>Filtrowanie właściwości DateTime
+Aby odfiltrować wartość daty i godziny, określ słowo kluczowe **DateTime** , po którym następuje stała Data/godzina w pojedynczym cudzysłowie. Stała Data/godzina musi być w formacie połączonym UTC, zgodnie z opisem w temacie [Formatowanie wartości właściwości DateTime](https://go.microsoft.com/fwlink/p/?LinkId=400449).
 
-Poniższy przykład zwraca jednostki, w którym właściwość CustomerSince jest równa 10 lipca 2008:
+Poniższy przykład zwraca jednostki, w których właściwość CustomerSince jest równa 10 lipca 2008:
 
 ```
 CustomerSince eq datetime'2008-07-10T00:00:00Z'

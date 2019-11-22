@@ -11,12 +11,12 @@ ms.date: 11/11/2016
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
-ms.openlocfilehash: ec67549131b4c200da2b6b317e91d1ca67cdfbb0
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 2185641d5e3f9facf416e6ea999a1e8dcec0b37b
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67891012"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74294206"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Debugowanie usługi w chmurze platformy Azure lub maszynie wirtualnej w programie Visual Studio
 
@@ -26,7 +26,7 @@ Program Visual Studio zapewnia różne opcje debugowania usług Azure cloud serv
 
 Możesz zaoszczędzić czas i pieniądze za pomocą usługi Azure compute emulatora do debugowania na maszynie lokalnej usługi w chmurze. Debugowanie usługi lokalnie przed przystąpieniem do wdrażania, może zwiększyć niezawodność i wydajność bez konieczności płacenia za czas obliczeń. Jednak niektóre mogą wystąpić błędy, tylko po uruchomieniu usługi w chmurze na platformie Azure sam. Te błędy można debugować po włączeniu zdalnego debugowania, gdy Opublikuj usługę i następnie dołączyć debuger do wystąpienia roli.
 
-Emulator usługi Azure Compute symuluje i jest uruchamiana w środowisku lokalnym, tak aby umożliwić testowanie i debugowanie usługi w chmurze, przed przystąpieniem do wdrażania. Emulator obsługuje cyklu życia wystąpienia ról użytkownika i zapewnia dostęp do zasobów symulowane, takich jak magazyn lokalny. Podczas debugowania i uruchamiania usługi za pomocą programu Visual Studio automatycznie uruchomienie emulatora, jako tło aplikacji, a następnie wdraża usługi w emulatorze. Emulator można użyć, aby wyświetlić usługi, po uruchomieniu w środowisku lokalnym. Możesz uruchomić pełną wersję lub wersja ekspresowa emulatora. (Począwszy od 2.3 do platformy Azure, wersja ekspresowa emulatora jest wartość domyślna). Zobacz [uruchamianie i debugowanie usługi w chmurze lokalnie za pomocą Emulator Express](vs-azure-tools-emulator-express-debug-run.md).
+Emulator usługi Azure Compute symuluje i jest uruchamiana w środowisku lokalnym, tak aby umożliwić testowanie i debugowanie usługi w chmurze, przed przystąpieniem do wdrażania. Emulator obsługuje cyklu życia wystąpienia ról użytkownika i zapewnia dostęp do zasobów symulowane, takich jak magazyn lokalny. Podczas debugowania i uruchamiania usługi za pomocą programu Visual Studio automatycznie uruchomienie emulatora, jako tło aplikacji, a następnie wdraża usługi w emulatorze. Emulator można użyć, aby wyświetlić usługi, po uruchomieniu w środowisku lokalnym. Możesz uruchomić pełną wersję lub wersja ekspresowa emulatora. (Począwszy od platformy Azure 2,3, wersja Express emulatora jest domyślna). Zobacz [Używanie emulatora Express do lokalnego uruchamiania i debugowania usługi w chmurze](vs-azure-tools-emulator-express-debug-run.md).
 
 ### <a name="to-debug-your-cloud-service-on-your-local-computer"></a>Debugowanie usługi w chmurze na komputerze lokalnym
 
@@ -41,7 +41,7 @@ Emulator usługi Azure Compute symuluje i jest uruchamiana w środowisku lokalny
 3. Krok za pośrednictwem aplikacji, wybierając polecenia na **debugowania** menu i ustawiania punktów przerwania w kodzie. Podczas wykonywania kroków za pomocą aplikacji w debugerze okienka zostaną zaktualizowane o bieżący stan aplikacji. Gdy zatrzymasz debugowanie, wdrażanie aplikacji zostaną usunięte. Jeśli aplikacja zawiera rolę sieci web i ustawiono właściwość akcji uruchamiania do uruchomienia przeglądarki sieci web, programu Visual Studio uruchamia aplikację sieci web w przeglądarce. Jeśli zmienisz liczbę wystąpień roli w konfiguracji usługi, należy zatrzymać usługi w chmurze i ponownie uruchom debugowanie tak, aby można było debugować te nowe wystąpienia roli.
 
     > [!NOTE]
-    > Po zatrzymaniu działania lub debugowania usługi emulatora obliczeń lokalnych i emulatora magazynu nie są zatrzymane. Należy zatrzymać je jawnie przy użyciu obszaru powiadomień.
+    > Po zatrzymaniu lub debugowaniu usługi lokalny emulator obliczeniowy i emulator magazynu nie zostaną zatrzymane. Należy zatrzymać je jawnie przy użyciu obszaru powiadomień.
 
 ## <a name="debug-a-cloud-service-in-azure"></a>Debugowanie usługi w chmurze na platformie Azure
 
@@ -50,7 +50,7 @@ Aby debugować usługę w chmurze z komputera zdalnego, należy włączyć tę f
 Po włączeniu funkcji debugowania zdalnego dla usługi w chmurze, go nie wykazują pogorszenie wydajności lub naliczone dodatkowe opłaty za. Nie należy używać zdalnego debugowania na usługę produkcyjną, ponieważ klienci, którzy korzystają z usługi może to mieć niekorzystny wpływ.
 
 > [!NOTE]
-> Podczas publikowania usługi w chmurze w programie Visual Studio, aby umożliwić **IntelliTrace** wszystkich ról w tej usłudze, których platformą docelową jest program .NET Framework 4 lub .NET Framework 4.5. Za pomocą **IntelliTrace**, można zbadać zdarzenia, które wystąpiły w wystąpieniu roli w przeszłości i odtworzenia kontekstu po tym czasie. Zobacz [debugowanie opublikowanych usług w chmurze za pomocą IntelliTrace i Visual Studio](http://go.microsoft.com/fwlink/?LinkID=623016) i [przy użyciu funkcji IntelliTrace](https://msdn.microsoft.com/library/dd264915.aspx).
+> Podczas publikowania usługi w chmurze w programie Visual Studio, aby umożliwić **IntelliTrace** wszystkich ról w tej usłudze, których platformą docelową jest program .NET Framework 4 lub .NET Framework 4.5. Za pomocą **IntelliTrace**, można zbadać zdarzenia, które wystąpiły w wystąpieniu roli w przeszłości i odtworzenia kontekstu po tym czasie. Zobacz [debugowanie opublikowanych usług w chmurze za pomocą IntelliTrace i Visual Studio](https://go.microsoft.com/fwlink/?LinkID=623016) i [przy użyciu funkcji IntelliTrace](https://msdn.microsoft.com/library/dd264915.aspx).
 
 ### <a name="to-enable-remote-debugging-for-a-cloud-service"></a>Aby włączyć zdalne debugowanie dla usługi w chmurze
 
@@ -76,7 +76,7 @@ Po włączeniu funkcji debugowania zdalnego dla usługi w chmurze, go nie wykazu
 
     ![Dołącz debuger](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746719.gif)
 
-3. Po dołącza debuger do wystąpienia, debugowanie w zwykły sposób. Debuger automatycznie dołącza do procesu odpowiedniego hosta dla roli użytkownika. W zależności od roli debuger dołącza do w3wp.exe, WaWorkerHost.exe lub WaIISHost.exe. Aby sprawdzić, czy Proces, do której jest dołączony debuger, rozwiń węzeł wystąpienia w Eksploratorze serwera. Zobacz [architektura ról platformy](http://blogs.msdn.com/b/kwill/archive/2011/05/05/windows-azure-role-architecture.aspx) Aby uzyskać więcej informacji na temat przetwarzanych przez platformę Azure.
+3. Po dołącza debuger do wystąpienia, debugowanie w zwykły sposób. Debuger automatycznie dołącza do procesu odpowiedniego hosta dla roli użytkownika. W zależności od roli debuger dołącza do w3wp.exe, WaWorkerHost.exe lub WaIISHost.exe. Aby sprawdzić, czy Proces, do której jest dołączony debuger, rozwiń węzeł wystąpienia w Eksploratorze serwera. Zobacz [architektura ról platformy](https://blogs.msdn.microsoft.com/kwill/2011/05/05/windows-azure-role-architecture/) Aby uzyskać więcej informacji na temat przetwarzanych przez platformę Azure.
 
     ![Wybieranie typu kodu — okno dialogowe](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
@@ -129,7 +129,7 @@ Umożliwia debugowanie programów uruchamianych na maszynach wirtualnych platfor
 
     ![Wybieranie typu kodu — okno dialogowe](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
-5. Wybierz procesy, aby debugować na maszynie wirtualnej, a następnie wybierz pozycję **Dołącz**. Na przykład wybierz proces w3wp.exe, jeśli chcesz debugować aplikację sieci web na maszynie wirtualnej. Zobacz [debugować jeden lub więcej procesów w programie Visual Studio](https://msdn.microsoft.com/library/jj919165.aspx) i [architektura ról platformy](http://blogs.msdn.com/b/kwill/archive/2011/05/05/windows-azure-role-architecture.aspx) Aby uzyskać więcej informacji.
+5. Wybierz procesy, aby debugować na maszynie wirtualnej, a następnie wybierz pozycję **Dołącz**. Na przykład wybierz proces w3wp.exe, jeśli chcesz debugować aplikację sieci web na maszynie wirtualnej. Zobacz [debugować jeden lub więcej procesów w programie Visual Studio](https://msdn.microsoft.com/library/jj919165.aspx) i [architektura ról platformy](https://blogs.msdn.microsoft.com/kwill/2011/05/05/windows-azure-role-architecture/) Aby uzyskać więcej informacji.
 
 ## <a name="create-a-web-project-and-a-virtual-machine-for-debugging"></a>Tworzenie projektu sieci web i maszyny wirtualnej do debugowania
 
@@ -148,9 +148,9 @@ Projekty języka Visual Studio ASP.NET oferuje opcję, aby utworzyć maszynę wi
     ![Utwórz okno dialogowe projektu sieci web platformy ASP.NET](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746723.png)
 
     > [!NOTE]
-    > Zostanie wyświetlony monit do logowania się do konta platformy Azure, jeśli jeszcze nie zostało to zrobione.
+    > Użytkownik zostanie poproszony o zalogowanie się do konta platformy Azure, jeśli jeszcze nie jest zalogowany.
 
-3. Wybierz różne ustawienia dla maszyny wirtualnej, a następnie wybierz pozycję **OK**. Zobacz [maszyn wirtualnych](http://go.microsoft.com/fwlink/?LinkId=623033) Aby uzyskać więcej informacji.
+3. Wybierz różne ustawienia dla maszyny wirtualnej, a następnie wybierz pozycję **OK**. Zobacz [maszyn wirtualnych](https://go.microsoft.com/fwlink/?LinkId=623033) Aby uzyskać więcej informacji.
 
     Nazwa wprowadzona dla nazwy DNS będzie nazwa maszyny wirtualnej.
 
@@ -168,7 +168,7 @@ Projekty języka Visual Studio ASP.NET oferuje opcję, aby utworzyć maszynę wi
 
     ![Dziennik aktywności platformy Azure](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746721.png)
 
-6. Publikowanie projektu, co zostało opisane w [jak: Wdrażanie sieci Web projektu za pomocą jednego kliknięcia publikowania w programie Visual Studio](https://msdn.microsoft.com/library/dd465337.aspx). Aby można było debugować na maszynie wirtualnej na **ustawienia** strony **publikowanie w sieci Web** kreatora wybierz pozycję **debugowania** jako konfiguracji. Dzięki temu kod symbole są dostępne podczas debugowania.
+6. Publikowanie projektu, co zostało opisane w [jak: wdrożyć publikowania projektu sieci Web za pomocą jednego kliknięcia w programie Visual Studio](https://msdn.microsoft.com/library/dd465337.aspx). Aby można było debugować na maszynie wirtualnej na **ustawienia** strony **publikowanie w sieci Web** kreatora wybierz pozycję **debugowania** jako konfiguracji. Dzięki temu kod symbole są dostępne podczas debugowania.
 
     ![Ustawienia publikowania](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718349.png)
 
@@ -188,6 +188,6 @@ Projekty języka Visual Studio ASP.NET oferuje opcję, aby utworzyć maszynę wi
 
 ## <a name="next-steps"></a>Następne kroki
 
-* Użyj **IntelliTrace** zebrać dziennik wywołania i zdarzenia z wersji serwera. Zobacz [debugowanie opublikowanych usług w chmurze za pomocą IntelliTrace i programu Visual Studio](http://go.microsoft.com/fwlink/?LinkID=623016).
+* Użyj **IntelliTrace** , aby zebrać dziennik wywołań i zdarzeń z serwera wersji. Zobacz [debugowanie opublikowanych usług w chmurze za pomocą IntelliTrace i programu Visual Studio](https://go.microsoft.com/fwlink/?LinkID=623016).
 
-* Użyj **diagnostyki Azure** się szczegółowe informacje na uruchamianie kodu w ramach ról, czy role są uruchomione w środowisku deweloperskim lub na platformie Azure. Zobacz [zbieranie danych rejestrowania przy użyciu usługi Azure Diagnostics](http://go.microsoft.com/fwlink/p/?LinkId=400450).
+* Użyj **diagnostyki Azure** się szczegółowe informacje na uruchamianie kodu w ramach ról, czy role są uruchomione w środowisku deweloperskim lub na platformie Azure. Zobacz [zbieranie danych rejestrowania przy użyciu usługi Azure Diagnostics](https://go.microsoft.com/fwlink/p/?LinkId=400450).

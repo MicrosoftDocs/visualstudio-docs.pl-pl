@@ -8,24 +8,24 @@ ms.assetid: 51b53778-469c-4cc9-854c-4e4992d6389b
 caps.latest.revision: 32
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2f9df50094676eea5694a29362772c9c44fa456b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 73dd0e406e8e0a00260d922e38dee70135c3645d
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660383"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298017"
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>Testowanie aplikacji SharePoint 2010 za pomocą kodowanych testów interfejsu użytkownika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Dołączenie kodowanych testów interfejsu użytkownika w aplikacji SharePoint umożliwia sprawdzenie, czy cała aplikacja, w tym jej kontrolki interfejsu użytkownika, działa poprawnie. Kodowane testy interfejsu użytkownika mogą również sprawdzać wartości i logikę w interfejsie użytkowników.
 
- **Requirements**
+ **Wymagania**
 
 - Visual Studio Enterprise
 
 ## <a name="what-else-should-i-know-about-coded-ui-tests"></a>Co jeszcze muszę wiedzieć o kodowanych testach interfejsu użytkownika?
- Aby dowiedzieć się więcej o zaletach korzystania z kodowanych testów interfejsu użytkownika, zobacz [Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md) i [testowania ciągłego dostarczania w programie Visual Studio 2012 — Rozdział 5 Automatyzowanie testów systemu](http://go.microsoft.com/fwlink/?LinkID=255196).
+ Aby dowiedzieć się więcej o zaletach korzystania z kodowanych testów interfejsu użytkownika, zobacz [Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md) i [testowania ciągłego dostarczania w programie Visual Studio 2012 — Rozdział 5 Automatyzowanie testów systemu](https://go.microsoft.com/fwlink/?LinkID=255196).
 
  **Uwagi**
 
@@ -60,7 +60,7 @@ Mouse.DoubliClick(uiItemCell,new Point(31,14));
 uiGridKeyboardInputEdit.Text=value;
 ```
 
- Jeśli rejestrujesz akcje w niepustej komórce, nagranie pobiera nieco bardziej skomplikowane, ponieważ chwilę dodasz tekst do komórki, nowy formant \<div > zostanie dodany jako element podrzędny komórki. Nowa kontrolka > \<div zawiera tekst, który właśnie został wprowadzony. Rejestrator musi rejestrować akcje na nowej kontrolce > \<div. jednak nie jest to możliwe, ponieważ Nowa kontrolka > \<div nie istnieje, dopóki nie zostanie wprowadzony test. Aby obsłużyć ten problem, należy ręcznie wprowadzić następujące zmiany w kodzie.
+ Jeśli rejestrujesz akcje w niepustej komórce, nagranie pobiera nieco bardziej skomplikowane, ponieważ po dodaniu tekstu do komórki Nowa kontrolka \<div > zostanie dodana jako element podrzędny komórki. Nowy \<blok > DIV zawiera tekst, który właśnie został wprowadzony. Rejestrator musi rejestrować akcje na nowej \<div > Control; nie jest to jednak możliwe, ponieważ nowy formant \<div > nie istnieje, dopóki nie zostanie wprowadzony test. Aby obsłużyć ten problem, należy ręcznie wprowadzić następujące zmiany w kodzie.
 
 1. Przejdź do inicjowania komórki i ustaw `RowIndex` i `ColumnIndex` właściwości podstawowe:
 
@@ -104,7 +104,7 @@ uiGridKeyboardInputEdit.Text=value;
 
 1. Upewnij się, że masz zainstalowany program Visual Studio 2012,1 lub nowszy.
 
-2. Zainstaluj [wtyczkę testową interfejsu użytkownika Microsoft Visual Studio dla programu Silverlight](http://visualstudiogallery.msdn.microsoft.com/28312a61-9451-451a-990c-c9929b751eb4).
+2. Zainstaluj [wtyczkę testową interfejsu użytkownika Microsoft Visual Studio dla programu Silverlight](https://marketplace.visualstudio.com/items?itemName=PrachiBoraMSFT.MicrosoftVisualStudioUITestPluginforSilverlight).
 
 3. Zainstaluj [programu Fiddler](http://www.fiddler2.com/fiddler2/). Jest to po prostu narzędzie, które przechwytuje i rejestruje ruch HTTP.
 
@@ -124,24 +124,24 @@ uiGridKeyboardInputEdit.Text=value;
 
 5. Należy upewnić się, że wygenerowany kod odwołuje się do pliku Microsoft. VisualStudio. TestTools. UITest. Extension. Silverlight. dll.
 
-     Aby uzyskać więcej informacji, zobacz [testowanie interfejsu użytkownika SharePoint 2010 przy użyciu programu Visual Studio 2012](http://blogs.msdn.com/b/visualstudioalm/archive/2012/11/01/ui-testing-sharepoint-2010-with-visual-studio-2012.aspx)
+     Aby uzyskać więcej informacji, zobacz [testowanie interfejsu użytkownika SharePoint 2010 przy użyciu programu Visual Studio 2012](https://devblogs.microsoft.com/devops/ui-testing-sharepoint-2010-with-visual-studio-2012/)
 
 ## <a name="external-resources"></a>Zasoby zewnętrzne
 
 ### <a name="blogs"></a>Blogi
- [Testowanie interfejsu użytkownika programu SharePoint 2010 z programem Visual Studio 2012](http://blogs.msdn.com/b/visualstudioalm/archive/2012/11/01/ui-testing-sharepoint-2010-with-visual-studio-2012.aspx)
+ [Testowanie interfejsu użytkownika programu SharePoint 2010 z programem Visual Studio 2012](https://devblogs.microsoft.com/devops/ui-testing-sharepoint-2010-with-visual-studio-2012/)
 
- [Informacje o logice wyszukiwania dla formantów Silverlight w kodowanym teście interfejsu użytkownika](http://blogs.msdn.com/b/tapas_sahoos_blog/archive/2010/11/16/understanding-the-search-logic-for-silverlight-controls-in-coded-ui-test.aspx)
+ [Informacje o logice wyszukiwania dla formantów Silverlight w kodowanym teście interfejsu użytkownika](https://tapas-techsnips.blogspot.com/)
 
- [Pobieranie właściwości kontrolki Silverlight](http://blogs.msdn.com/b/tapas_sahoos_blog/archive/2010/11/16/fetching-property-of-a-silverlight-control.aspx)
+ [Pobieranie właściwości kontrolki Silverlight](https://tapas-techsnips.blogspot.com/)
 
- [Indeks zawartości dla kodowanego testu interfejsu użytkownika](http://blogs.msdn.com/b/mathew_aniyan/archive/2010/02/11/content-index-for-coded-ui-test.aspx)
+ [Indeks zawartości dla kodowanego testu interfejsu użytkownika](https://blogs.msdn.microsoft.com/mathew_aniyan/2013/02/18/content-index-for-coded-ui-test/)
 
 ### <a name="guidance"></a>Wskazówki
- [Testowanie w celu ciągłego dostarczania przy użyciu programu Visual Studio 2012 — Rozdział 5 Automatyzowanie testów systemu](http://go.microsoft.com/fwlink/?LinkID=255196)
+ [Testowanie w celu ciągłego dostarczania przy użyciu programu Visual Studio 2012 — Rozdział 5 Automatyzowanie testów systemu](https://go.microsoft.com/fwlink/?LinkID=255196)
 
 ### <a name="forum"></a>Forum
- [Blog programu Visual Studio ALM + Team Foundation Server](http://go.microsoft.com/fwlink/?LinkID=254496)
+ [Blog programu Visual Studio ALM + Team Foundation Server](https://go.microsoft.com/fwlink/?LinkID=254496)
 
 ## <a name="see-also"></a>Zobacz też
- [Korzystanie z automatyzacji interfejsu użytkownika do testowania](../test/use-ui-automation-to-test-your-code.md) [wydajności sieci Web i testów obciążenia w kodzie programu sharepoint 2010 i 2013](https://msdn.microsoft.com/library/20c2e469-0e4e-4296-a739-c0e8fff36e54) [Tworzenie rozwiązań SharePoint](https://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631) [Sprawdzanie i debugowanie kodu programu](https://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c) SharePoint [Tworzenie i debugowanie programu SharePoint Rozwiązania](https://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae) [profilowania wydajności aplikacji programu SharePoint](https://msdn.microsoft.com/library/61ae02e7-3f37-4230-bae1-54a498c2fae8)
+ [Korzystanie z automatyzacji interfejsu użytkownika do testowania](../test/use-ui-automation-to-test-your-code.md) [wydajności sieci Web i testów obciążenia w kodzie programu sharepoint 2010 i 2013](https://msdn.microsoft.com/library/20c2e469-0e4e-4296-a739-c0e8fff36e54) [Tworzenie rozwiązań SharePoint](https://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631) [Sprawdzanie i debugowanie kodu programu](https://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c) SharePoint [Tworzenie i debugowanie rozwiązań SharePoint](https://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae) [profilowanie wydajności aplikacji programu SharePoint](https://msdn.microsoft.com/library/61ae02e7-3f37-4230-bae1-54a498c2fae8)

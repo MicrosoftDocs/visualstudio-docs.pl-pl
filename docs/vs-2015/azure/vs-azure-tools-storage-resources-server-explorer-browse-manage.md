@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: 1f2199907ab6a59e329624046079436ca7cd08dd
-ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
+ms.openlocfilehash: 36b2691525eb66bf946317c1bb5254796d5cd639
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67624157"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74291224"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Przeglądanie zasobów magazynu i zarządzanie nimi za pomocą Eksploratora serwera
 
@@ -122,7 +122,7 @@ Domyślnie obiekt blob jest pobierany do katalogu tymczasowego. Aby pobrać obie
 
 Do przekazania obiektów blob, wybierz **przekazywanie obiektu Blob** przycisku, gdy kontener jest otwarte na potrzeby wyświetlania w widoku do kontenera obiektów blob.
 
-Można wybrać jeden lub więcej plików do przekazania, a następnie możesz przekazać pliki dowolnego typu. **Dziennika aktywności platformy Azure** okno pokazuje postęp przekazywania. Aby uzyskać więcej informacji o tym, jak pracować z danymi obiektów blob, zobacz [jak używać usługi Azure Blob storage na platformie .NET](http://go.microsoft.com/fwlink/p/?LinkId=267911).
+Można wybrać jeden lub więcej plików do przekazania, a następnie możesz przekazać pliki dowolnego typu. **Dziennika aktywności platformy Azure** okno pokazuje postęp przekazywania. Aby uzyskać więcej informacji o tym, jak pracować z danymi obiektów blob, zobacz [jak używać usługi Azure Blob storage na platformie .NET](https://go.microsoft.com/fwlink/p/?LinkId=267911).
 
 ### <a name="to-view-logs-transferred-to-blobs"></a>Aby wyświetlić dzienniki przekazywane do obiektów blob
 
@@ -157,7 +157,7 @@ Na poniższej ilustracji przedstawiono kolejkę, która zawiera dwa komunikaty:
 
 ![Wyświetlanie kolejki](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC651470.png)
 
-Aby uzyskać więcej informacji na temat magazynu usług kolejek, zobacz [Rozpoczynanie pracy z usługą Azure Queue storage przy użyciu platformy .NET](http://go.microsoft.com/fwlink/?LinkID=264702). Uzyskać informacji na temat usługi sieci web dla magazynu usług kolejek, zobacz [pojęcia dotyczące usługi kolejki](http://go.microsoft.com/fwlink/?LinkId=264788). Aby uzyskać informacje o sposobie wysyłania komunikatów do kolejki usługi storage przy użyciu programu Visual Studio, zobacz [wysyłanie komunikatów do kolejki usługi Storage](/azure/visual-studio/vs-storage-cloud-services-getting-started-queues).
+Aby uzyskać więcej informacji na temat magazynu usług kolejek, zobacz [Rozpoczynanie pracy z usługą Azure Queue storage przy użyciu platformy .NET](https://go.microsoft.com/fwlink/?LinkID=264702). Uzyskać informacji na temat usługi sieci web dla magazynu usług kolejek, zobacz [pojęcia dotyczące usługi kolejki](https://go.microsoft.com/fwlink/?LinkId=264788). Aby uzyskać informacje o sposobie wysyłania komunikatów do kolejki usługi storage przy użyciu programu Visual Studio, zobacz [wysyłanie komunikatów do kolejki usługi Storage](/azure/visual-studio/vs-storage-cloud-services-getting-started-queues).
 
 > [!NOTE]
 > Kolejki usługi magazynu różnią się od kolejek usługi Azure Service Bus. Aby uzyskać więcej informacji na temat usługi Service Bus, zobacz [kolejek usługi Service Bus, tematy i subskrypcje](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions).
@@ -185,7 +185,7 @@ Tabela są zorganizowane według jednostek (pokazane w wierszach) i właściwoś
 
 W Projektancie tabel, otwórz menu skrótów dla jednostki (pojedynczy wiersz) lub właściwości (jedną komórkę), a następnie wybierz **Edytuj**.
 
-![Dodaj lub Edytuj jednostkę tabeli](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC656238.png)
+![Dodawanie lub edytowanie jednostki tabeli](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC656238.png)
 
 Jednostki w jednej tabeli nie są wymagane do tego samego zestawu właściwości (kolumny). Mieć na uwadze następujące ograniczenia na wyświetlanie i edytowanie danych w tabeli:
 
@@ -227,7 +227,7 @@ Poniższa ilustracja przedstawia przykład ciągu prawidłowego filtru:
 
 ## <a name="refresh-storage-data"></a>Odświeżanie magazynu danych
 
-Gdy Eksplorator serwera łączy się lub pobiera dane z konta magazynu, operacja może potrwać do minuty na zakończenie. Jeśli nie można nawiązać połączenia z Eksploratora serwera, operacja może upłynąć limit czasu. Gdy dane są pobierane, możesz kontynuować pracę w innych częściach programu Visual Studio. Aby anulować operację, jeśli trwa zbyt długo, wybierz pozycję **Zatrzymaj odświeżanie** przycisk na pasku narzędzi Eksploratora serwera.
+Gdy Eksplorator serwera łączy się lub pobiera dane z konta magazynu, operacja może potrwać do minuty na zakończenie. Jeśli nie można nawiązać połączenia Eksplorator serwera, operacja może przekroczyć limit czasu. Podczas pobierania danych można nadal korzystać z innych części programu Visual Studio. Aby anulować operację, jeśli trwa zbyt długo, wybierz pozycję **Zatrzymaj odświeżanie** przycisk na pasku narzędzi Eksploratora serwera.
 
 ### <a name="to-refresh-blob-container-data"></a>Aby odświeżyć dane w kontenerze obiektów blob
 
@@ -295,4 +295,4 @@ Jeśli usuniesz konto magazynu z poziomu Eksploratora serwera nie ma wpływu na,
 
 ## <a name="next-steps"></a>Następne kroki
 
-Aby dowiedzieć się więcej o sposobie używania usługi Azure storage, zobacz [wprowadzenie do usługi Azure Storage](/azure/storage/common/storage-introduction).
+Aby dowiedzieć się więcej na temat korzystania z usług Azure Storage, zobacz [wprowadzenie do usługi Azure Storage](/azure/storage/common/storage-introduction).

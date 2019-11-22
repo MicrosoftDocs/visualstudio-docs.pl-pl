@@ -13,17 +13,17 @@ caps.latest.revision: 30
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 165214dff519e7db94d5ee8f3a1a6d86856cd4a1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f27fede436ea6cabe0aab6480cd4841299c42293
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72609665"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302796"
 ---
 # <a name="model-user-requirements"></a>Wymagania modelu użytkownika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Program Visual Studio pomaga zrozumieć, omówić i komunikować się z potrzebami użytkowników, rysując diagramy związane z ich działaniami i część, która jest odtwarzana przez system w celu ułatwienia im osiągnięcia celów. Model wymagań to zbiór tych diagramów, z których każdy koncentruje się na różnych aspektach potrzeb użytkowników. Aby zapoznać się z prezentacją, zobacz: [modelowanie domeny biznesowej](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/).
+Program Visual Studio pomaga zrozumieć, omówić i komunikować się z potrzebami użytkowników, rysując diagramy związane z ich działaniami i część, która jest odtwarzana przez system w celu ułatwienia im osiągnięcia celów. Model wymagań to zbiór tych diagramów, z których każdy koncentruje się na różnych aspektach potrzeb użytkowników. Aby zapoznać się z prezentacją, zobacz: [modelowanie domeny biznesowej](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain).
 
  Aby sprawdzić, które wersje programu Visual Studio obsługują każdy typ modelu, zobacz [Obsługa wersji dla narzędzi architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -51,7 +51,7 @@ Program Visual Studio pomaga zrozumieć, omówić i komunikować się z potrzeba
 ## <a name="common-tasks"></a>Typowe zadania
  Można utworzyć kilka różnych widoków wymagań użytkowników.  Każdy widok zawiera informacje określonego typu.  Podczas tworzenia tych widoków najlepiej jest przebiegać często od jednego do drugiego. Możesz rozpocząć od dowolnego widoku.
 
-|Diagram lub dokument|Co opisano w modelu wymagań|Paragraf|
+|Diagram lub dokument|Co opisano w modelu wymagań|Sekcja|
 |-------------------------|-----------------------------------------------|-------------|
 |Diagramów przypadków użycia|Kto używa systemu i co robi z nim.|[Opis sposobu użycia systemu](#UseCases)|
 |Diagram klasy koncepcyjnej|Słownik typów, które są używane do opisywania wymagań; typy widoczne w interfejsie systemu.|[Definiowanie terminów używanych do opisywania wymagań](#RequirementsClasses)|
@@ -138,7 +138,7 @@ Program Visual Studio pomaga zrozumieć, omówić i komunikować się z potrzeba
 |Elementy na diagramie klasy koncepcyjnej|[Diagramy klas UML: informacje](../modeling/uml-class-diagrams-reference.md)|
 |Jak opracowywać kod z klas koncepcyjnych|[Modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md)|
 
- Na diagramie klasy koncepcyjnej zazwyczaj nie jest przydatne umieszczenie strzałek na skojarzeniach, aby reprezentować kierunek nawigacji. Dzieje się tak, ponieważ diagram nie reprezentuje implementacji. Skojarzenia reprezentują relacje między obiektami rzeczywistymi. Następujące [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozszerzają strzałki niekierunkowe domyślnie: [przykład: funkcje modelowania domeny UML](http://go.microsoft.com/fwlink/?LinkId=213849).
+ Na diagramie klasy koncepcyjnej zazwyczaj nie jest przydatne umieszczenie strzałek na skojarzeniach, aby reprezentować kierunek nawigacji. Dzieje się tak, ponieważ diagram nie reprezentuje implementacji. Skojarzenia reprezentują relacje między obiektami rzeczywistymi. Następujące [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozszerzają strzałki niekierunkowe domyślnie: [przykład: funkcje modelowania domeny UML](https://go.microsoft.com/fwlink/?LinkId=213849).
 
 ## <a name="BusinessRules"></a>Wyświetlanie reguł firmy
  Reguła biznesowa jest wymagana, która nie jest skojarzona z konkretnym przypadkiem użycia i powinna być zastosowana w całym systemie.
@@ -168,7 +168,7 @@ Program Visual Studio pomaga zrozumieć, omówić i komunikować się z potrzeba
 
 - Zabezpieczenia
 
-- Wykorzystania
+- Użyteczność
 
 - Niezawodność
 
@@ -239,4 +239,4 @@ Program Visual Studio pomaga zrozumieć, omówić i komunikować się z potrzeba
   Sprawdzając relacje między widokami, które udostępniają różne diagramy, możesz szybko zrozumieć główne koncepcje, z którymi pracują użytkownicy, i pomóc im zrozumieć, czego potrzebują z systemu. Możesz również lepiej zrozumieć, jakie wymagania uczestnicy projektu są na nich określone. Można zaplanować tworzenie tych funkcji, co najmniej w uproszczonej formie, na wczesnym etapie projektu, dzięki czemu użytkownicy mogą eksperymentować z nimi.
 
 ## <a name="see-also"></a>Zobacz też
- [Edytowanie modeli i diagramów UML](../modeling/edit-uml-models-and-diagrams.md) [Tworzenie testów z modelu korzystanie z](../modeling/develop-tests-from-a-model.md) [modeli w modelu procesów programistycznych](../modeling/use-models-in-your-development-process.md) [](../modeling/model-your-app-s-architecture.md) [Przykładowa aplikacja VS Extension: funkcje modelowania domeny UML](http://go.microsoft.com/fwlink/?LinkId=213849) [przykład rozszerzenia vs: kolor UML Elementy według przykładowego elementu Stereotype](http://go.microsoft.com/fwlink/?LinkID=213841) [program vs Extension: łączenie elementów UML z diagramami, plikami i innymi elementami](http://go.microsoft.com/fwlink/?LinkID=213813) [przykładowe rozszerzenie vs: wyrównywanie kształtów na diagramie UML](http://go.microsoft.com/fwlink/?LinkID=213809) [wideo: Modelowanie domeny biznesowej](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/)
+ [Edytowanie modeli i diagramów UML](../modeling/edit-uml-models-and-diagrams.md) [Tworzenie testów z modelu korzystanie z](../modeling/develop-tests-from-a-model.md) [modeli w modelu procesów PROGRAMISTYCZNych](../modeling/use-models-in-your-development-process.md) [](../modeling/model-your-app-s-architecture.md) [PRZYKŁADowa aplikacja VS Extension: funkcje modelowania domeny UML](https://go.microsoft.com/fwlink/?LinkId=213849) przykład [rozszerzenia vs: Koloruj elementy UML według](https://go.microsoft.com/fwlink/?LinkID=213841) [przykładowego rozszerzenia programu vs: Dołączanie elementów UML do diagramów, plików i innych elementów](https://go.microsoft.com/fwlink/?LinkID=213813) [przykładowe rozszerzenie programu vs Extension: wyrównywanie kształtów na diagramie UML](https://go.microsoft.com/fwlink/?LinkID=213809) [: Modelowanie domeny biznesowej](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain)

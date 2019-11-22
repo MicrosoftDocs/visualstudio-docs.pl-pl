@@ -29,12 +29,12 @@ caps.latest.revision: 245
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1352da002b16c736ce20a9fbaf7cdc26b258b718
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b25d23b7c65742ffddadbe178d7550dc1794414a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657616"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296333"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Zależności mapy w ramach rozwiązań
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,11 +45,11 @@ Aby zrozumieć zależności w kodzie, wizualizuj je poprzez tworzenie map kodu. 
 
  **Oto kilka filmów wideo**:
 
-- [Poznanie zależności kodu za poorednictwem wizualizacji](http://go.microsoft.com/fwlink/?LinkID=252065)
+- [Poznanie zależności kodu za poorednictwem wizualizacji](https://go.microsoft.com/fwlink/?LinkID=252065)
 
-- [Wizualizuj wpływ zmiany](http://go.microsoft.com/fwlink/?LinkID=252068)
+- [Wizualizuj wpływ zmiany](https://go.microsoft.com/fwlink/?LinkID=252068)
 
-- [Zrozumienie złożonego kodu za pomocą map kodu](http://go.microsoft.com/fwlink/?LinkID=259869)
+- [Zrozumienie złożonego kodu za pomocą map kodu](https://go.microsoft.com/fwlink/?LinkID=259869)
 
 ## <a name="GetStarted"></a>Wprowadzenie do map kodu
  **Aby korzystać z map kodu, musisz wykonać**następujące:
@@ -105,7 +105,7 @@ Aby zrozumieć zależności w kodzie, wizualizuj je poprzez tworzenie map kodu. 
 
 1. Otwórz menu **Architektura** i wybierz pozycję **Nowa mapa kodu**.
 
-     \- lub-
+     \- lub —
 
 2. Otwórz menu **plik** i wybierz polecenie **Nowy** , a następnie wybierz **plik**.
 
@@ -307,16 +307,16 @@ Aby zrozumieć zależności w kodzie, wizualizuj je poprzez tworzenie map kodu. 
 
   Te problemy mogą wystąpić podczas tworzenia map kodu dla języka C i C++ kodu:
 
-|**Wykonaj**|**Możliwa przyczyna**|**Tłumaczenia**|
+|**Wykonaj**|**Możliwa przyczyna**|**Rozdzielczość**|
 |---------------|------------------------|--------------------|
 |Nie można wygenerować mapy kodu.|Żadne projekty w rozwiązaniu nie zostały pomyślnie skompilowane.|Napraw błędy kompilacji, które wystąpiły, a następnie ponownie Wygeneruj mapę.|
 |[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] przestaje odpowiadać przy próbie wygenerowania mapy kodu z menu **architektury** .|Plik bazy danych programu (.pdb) może być uszkodzony.<br /><br /> Plik .pdb przechowuje informacje debugowania, takie jak typ, metoda i informacje o pliku źródłowym.|Kompiluj rozwiązanie ponownie, a następnie spróbuj jeszcze raz.|
-|Niektóre ustawienia dla bazy danych przeglądania IntelliSense są wyłączone.|Niektóre ustawienia IntelliSense można wyłączyć w oknie dialogowym**opcje** [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|Włącz te ustawienia.<br /><br /> Zobacz [Opcje, Edytor tekstu, C/C++, zaawansowane](../ide/reference/options-text-editor-c-cpp-advanced.md).|
+|Niektóre ustawienia dla bazy danych przeglądania IntelliSense są wyłączone.|Niektóre ustawienia IntelliSense można wyłączyć w oknie dialogowym **opcje** [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|Włącz te ustawienia.<br /><br /> Zobacz [Opcje, Edytor tekstu, C/C++, zaawansowane](../ide/reference/options-text-editor-c-cpp-advanced.md).|
 |Komunikat **nieznane metody** pojawi się w węźle metody.<br /><br /> Ten problem występuje, ponieważ nie można rozpoznać nazwy metody.|Plik binarny może nie mieć podstawowej tabeli relokacji.|Włącz opcję **/FIXED: No** w konsolidatorze.<br /><br /> Zobacz [/FIXED (stały adres podstawowy)](https://msdn.microsoft.com/library/929bba5e-b7d8-40ed-943e-056aa3710fc5).|
 ||Plik bazy danych programu (.pdb) może nie być skompilowany.<br /><br /> Plik .pdb przechowuje informacje debugowania, takie jak typ, metoda i informacje o pliku źródłowym.|Włącz opcję **/Debug** w konsolidatorze.<br /><br /> Zobacz [/debug (generowanie informacji o debugowaniu)](https://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103).|
 ||Nie można otworzyć lub znaleźć pliku .pdb w oczekiwanych lokalizacjach.|Upewnij się, że plik .pdb istnieje w oczekiwanych lokalizacjach.|
 ||Informacje o debugowaniu pochodzą z pliku .pdb.|Jeśli w konsolidatorze użyto opcji **/PDBSTRIPPED** , Dołącz do niej kompletny plik. pdb.<br /><br /> Zobacz [/PDBSTRIPPED (symbole prywatne)](https://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55).|
-||Obiekt wywołujący nie jest funkcją i jest albo osadzony w pliku binarnym, albo stanowi wskaźnik w sekcji danych.|Gdy obiekt wywołujący jest thunk, spróbuj użyć `_declspec(dllimport)`, aby uniknąć thunk.<br /><br /> Zobacz:<br /><br /> -   [ogólne reguły i ograniczenia](https://msdn.microsoft.com/library/6c48902d-4259-4761-95d4-e421d69aa050)<br />-   [importowania wywołań funkcji przy użyciu atrybutu __declspec (dllimport)](https://msdn.microsoft.com/library/6b53c616-0c6d-419a-8e2a-d2fff20510b3)<br />-   [dllexport, dllimport](https://msdn.microsoft.com/library/ff95b645-ef55-4e72-b848-df44657b3208)|
+||Obiekt wywołujący nie jest funkcją i jest albo osadzony w pliku binarnym, albo stanowi wskaźnik w sekcji danych.|Gdy obiekt wywołujący jest thunk, spróbuj użyć `_declspec(dllimport)`, aby uniknąć thunk.<br /><br /> Zobacz:<br /><br /> -   [ogólne reguły i ograniczenia](https://msdn.microsoft.com/library/6c48902d-4259-4761-95d4-e421d69aa050)<br />-   [importowania wywołań funkcji przy użyciu __declspec (dllimport)](https://msdn.microsoft.com/library/6b53c616-0c6d-419a-8e2a-d2fff20510b3)<br />-   [dllexport, dllimport](https://msdn.microsoft.com/library/ff95b645-ef55-4e72-b848-df44657b3208)|
 
 ## <a name="RenderMoreQuickly"></a>Szybsze renderowanie map kodu
  Po wygenerowaniu mapy po raz pierwszy, program Visual Studio indeksuje wszystkie zależności, które znajdzie. Ten proces może zająć trochę czasu, szczególnie w przypadku dużych rozwiązań, ale poprawi wydajność później. Jeśli kod ulegnie zmianie, program Visual Studio ponownie indeksuje tylko zaktualizowany kod. Aby zminimalizować czas potrzebny na zakończenie renderowania mapy, należy wziąć pod uwagę następujące kwestie:
@@ -329,7 +329,7 @@ Aby zrozumieć zależności w kodzie, wizualizuj je poprzez tworzenie map kodu. 
 
 - Wyłącz automatyczne dodawanie elementów nadrzędnych za pomocą przycisku **Dołącz rodziców** na pasku narzędzi mapy kodu.
 
-- Edytuj plik mapy kodu bezpośrednio, aby usunąć węzły i linki, które nie są potrzebne. Zmiana mapy nie ma wpływu na kod źródłowy. Aby dowiedzieć [się, jak dostosować mapy kodu, edytuj pliki DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
+- Edytuj plik mapy kodu bezpośrednio, aby usunąć węzły i linki, które nie są potrzebne. Zmiana mapy nie ma wpływu na kod źródłowy. Zobacz [Dostosowanie map kodu przez edycję plików DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
   ![Pomiń kompilację i Dołącz przyciski nadrzędne](../modeling/media/codemapsfilterskipbuildicons.png "CodeMapsFilterSkipBuildIcons")
 
@@ -346,7 +346,7 @@ Aby zrozumieć zależności w kodzie, wizualizuj je poprzez tworzenie map kodu. 
 
  —lub—
 
- Aby zapisać mapę jako część określonego projektu, na pasku narzędzi Mapa wybierz pozycję **Udostępnij**, **przenieś** \<*CodeMapName* > **. dgml do**, a następnie wybierz projekt, w którym chcesz zapisać mapę.
+ Aby zapisać mapę jako część określonego projektu, na pasku narzędzi Mapa wybierz pozycję **Udostępnij**, **przenieś** \<*CodeMapName*> **. dgml do**, a następnie wybierz projekt, w którym chcesz zapisać mapę.
 
  ![Przenoszenie mapy do innego projektu](../modeling/media/codemapsmovemapmenu.png "CodeMapsMoveMapMenu")
 

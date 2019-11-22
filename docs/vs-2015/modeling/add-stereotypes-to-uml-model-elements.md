@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 838f2d4d01372cf99d898c4e0d6584bb838c4f9b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 67d489b1446e7205d72b53e160a8c7ca87f216d7
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655276"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74292333"
 ---
 # <a name="add-stereotypes-to-uml-model-elements"></a>Dodawanie stereotypów do elementów modelu UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,15 +63,15 @@ Można dodać stereotyp do elementu modelu UML, aby dodawać do niego adnotacje 
 
     - Na diagramie klasy UML kliknij narzędzie dla elementu, a następnie kliknij wewnątrz pakietu na diagramie.
 
-         \- lub-
+         \- lub —
 
     - W Eksploratorze modelu UML, kliknij prawym przyciskiem myszy pakiet, wskaż polecenie **Dodaj**, a następnie kliknij typ elementu.
 
-         \- lub-
+         \- lub —
 
     - W Eksploratorze modelu UML przeciągnij istniejący element do pakietu.
 
-         \- lub-
+         \- lub —
 
     - Połącz diagram z pakietem, a następnie utwórz elementy na diagramie.
 
@@ -82,4 +82,5 @@ Można dodać stereotyp do elementu modelu UML, aby dodawać do niego adnotacje 
          Można to zrobić tylko w przypadku niektórych typów diagramów.
 
 ## <a name="see-also"></a>Zobacz też
- [Zdefiniuj profil, aby zwiększyć UML](../modeling/define-a-profile-to-extend-uml.md) [Dostosowywanie modelu za pomocą profilów i stereotypów](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [Definiowanie pakietów i przestrzeni nazw](../modeling/define-packages-and-namespaces.md) [kolor klasy UML według stereotypu](http://code.msdn.microsoft.com/UML-Color-Classes-by-07de2b70)
+ [Zdefiniuj profil, aby zwiększyć UML](../modeling/define-a-profile-to-extend-uml.md) [Dostosowywanie modelu za pomocą profilów i stereotypów](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [Definiowanie pakietów i przestrzeni nazw](../modeling/define-packages-and-namespaces.md)
+

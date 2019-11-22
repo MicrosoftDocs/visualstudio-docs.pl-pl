@@ -8,19 +8,19 @@ ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: 25
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 31ca0fdbecf7ea3742fef60f99f2a0a25220f9cf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d9c86125d934c5165e3e8111fdd06631844ad1a6
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657216"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297959"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>Korzystanie z różnych przeglądarek sieci Web do przeprowadzania kodowanych testów interfejsu użytkownika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Zakodowane testy interfejsu użytkownika mogą zautomatyzować testowanie aplikacji internetowych przez rejestrowanie testów przy użyciu przeglądarki Internet Explorer. Następnie można dostosować swoje badania i odtwarzać je za pomocą Internet Explorer lub innego typu przeglądarki dla tych aplikacji internetowych.
 
- **Requirements**
+ **Wymagania**
 
 - Visual Studio Enterprise
 
@@ -28,7 +28,7 @@ Zakodowane testy interfejsu użytkownika mogą zautomatyzować testowanie aplika
 
   - Microsoft Windows 7
 
-  - System Microsoft Windows 8
+  - Microsoft Windows 8
 
   - Microsoft Windows Server 2008 R2 SP1
 
@@ -38,19 +38,19 @@ Zakodowane testy interfejsu użytkownika mogą zautomatyzować testowanie aplika
 
   - Windows Internet Explorer 10
 
-  - Aby zapoznać się z obsługiwanymi wersjami przeglądarki Mozilla Firefox i Google Chrome, przejdź [tutaj](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/)
+  - Aby zapoznać się z obsługiwanymi wersjami przeglądarki Mozilla Firefox i Google Chrome, przejdź [tutaj](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting)
 
-- Zainstaluj [składniki selenu do kodowanego testowania wielu przeglądarek interfejsu użytkownika](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).
+- Zainstaluj [składniki selenu do kodowanego testowania wielu przeglądarek interfejsu użytkownika](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting).
 
   **Co jest obsługiwane we wszystkich przeglądarkach sieci Web?**
 
-- [Dodaj niestandardowy kod służący do sterowania funkcjami](http://blogs.msdn.com/b/visualstudioalm/archive/2012/12/10/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer.aspx) , takimi jak właściwości, wyszukiwanie i odczekania odtwarzania.
+- [Dodaj niestandardowy kod służący do sterowania funkcjami](https://devblogs.microsoft.com/devops/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/) , takimi jak właściwości, wyszukiwanie i odczekania odtwarzania.
 
 - Wyskakujące okienka i okna dialogowe
 
-- [Wykonaj podstawowe skrypty JavaScript bez zwracanego typu](http://blogs.msdn.com/b/visualstudioalm/archive/2013/01/18/introducing-jscript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test.aspx)
+- [Wykonaj podstawowe skrypty JavaScript bez zwracanego typu](https://devblogs.microsoft.com/devops/introducing-javascript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test/)
 
-- Odporność wyszukiwania (przy użyciu inteligentnych odpowiedników) i [ulepszenia wydajności](http://blogs.msdn.com/b/visualstudioalm/archive/2012/02/01/guidelines-on-improving-performance-of-coded-ui-test-playback.aspx)
+- Odporność wyszukiwania (przy użyciu inteligentnych odpowiedników) i [ulepszenia wydajności](https://devblogs.microsoft.com/devops/guidelines-on-improving-performance-of-coded-ui-test-playback/)
 
 ## <a name="why-should-i-use-coded-ui-tests-across-multiple-web-browser-types"></a>Dlaczego należy używać zakodowanych testów interfejsu użytkownika w kilku przeglądarkach sieci Web?
  Testując aplikację internetową za pomocą przeglądarek internetowych różnego typu, można lepiej emulować doświadczenia z interfejsem użytkowników korzystających z różnych przeglądarek. Na przykład aplikacja może zawierać formant lub kod w Internet Explorer, który nie jest zgodny z innymi przeglądarkami sieci Web. Uruchamianie kodowanych testów interfejsu użytkownika w różnych przeglądarkach pozwoli wykryć i naprawić wszelkie problemy, zanim wpłyną one na doświadczenia klientów.
@@ -76,7 +76,7 @@ Zakodowane testy interfejsu użytkownika mogą zautomatyzować testowanie aplika
 3. Zaznacz rozszerzenie i wybierz pozycję **Pobierz**.
 
    > [!TIP]
-   > Możesz również pobrać składniki selenu dla kodowanego testowania międzyprzeglądarki interfejsu użytkownika z tego [miejsca](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).
+   > Możesz również pobrać składniki selenu dla kodowanego testowania międzyprzeglądarki interfejsu użytkownika z tego [miejsca](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting).
 
    Aby uzyskać więcej informacji na temat tworzenia i używania kodowanych testów interfejsu użytkownika, zobacz [Tworzenie kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).
 
@@ -113,7 +113,7 @@ Zakodowane testy interfejsu użytkownika mogą zautomatyzować testowanie aplika
 
 - ![Porada](../test/media/tip.png "Porada") Dane wyjściowe można skonfigurować tak, aby obejmowały zrzuty ekranu w kodowanych dziennikach interfejsu użytkownika. Aby to zrobić, należy zmienić kilka ustawień konfiguracji w pliku QTAgent32.exe.config. Domyślnie ten plik jest instalowany w następującej lokalizacji:
 
-   **C:\Program Files (x86) \Microsoft Visual Studio 11.0 \ Common7\IDE**
+   **C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE**
 
    Ustaw następujące wartości:
 
@@ -139,17 +139,17 @@ Zakodowane testy interfejsu użytkownika mogą zautomatyzować testowanie aplika
  [Rozwiązywanie problemów z niepowodzeniem testów między przeglądarkami](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!182&authkey=!AEpS48i295B49FI)
 
 ### <a name="guidance"></a>Wskazówki
- [Testowanie w celu ciągłego dostarczania za pomocą programu Visual Studio 2012 — Rozdział 2: testowanie jednostkowe: testowanie wewnątrz](http://go.microsoft.com/fwlink/?LinkID=255188)
+ [Testowanie w celu ciągłego dostarczania za pomocą programu Visual Studio 2012 — Rozdział 2: testowanie jednostkowe: testowanie wewnątrz](https://go.microsoft.com/fwlink/?LinkID=255188)
 
- [Testowanie w celu ciągłego dostarczania za pomocą programu Visual Studio 2012 — Rozdział 5: Automatyzowanie testów systemowych](http://go.microsoft.com/fwlink/?LinkID=255196)
+ [Testowanie w celu ciągłego dostarczania za pomocą programu Visual Studio 2012 — Rozdział 5: Automatyzowanie testów systemowych](https://go.microsoft.com/fwlink/?LinkID=255196)
 
 ### <a name="faq"></a>Najczęściej zadawane pytania
- [Kodowane testy interfejsu użytkownika — często zadawane pytania — 1](http://go.microsoft.com/fwlink/?LinkID=230576)
+ [Kodowane testy interfejsu użytkownika — często zadawane pytania — 1](https://go.microsoft.com/fwlink/?LinkID=230576)
 
- [Kodowane testy interfejsu użytkownika — często zadawane pytania — 2](http://go.microsoft.com/fwlink/?LinkID=230578)
+ [Kodowane testy interfejsu użytkownika — często zadawane pytania — 2](https://go.microsoft.com/fwlink/?LinkID=230578)
 
 ### <a name="forum"></a>Forum
- [Testowanie automatyzacji interfejsu użytkownika programu Visual Studio (w tym kodowany interfejs użytkownika)](http://go.microsoft.com/fwlink/?LinkID=224497)
+ [Testowanie automatyzacji interfejsu użytkownika programu Visual Studio (w tym kodowany interfejs użytkownika)](https://go.microsoft.com/fwlink/?LinkID=224497)
 
 ## <a name="see-also"></a>Zobacz też
  [Używanie automatyzacji interfejsu użytkownika do testowania](../test/use-ui-automation-to-test-your-code.md) [konfiguracji i platform obsługiwanych przez kod dla KODOWANYCH testów interfejsu użytkownika oraz nagrań akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) [Analizowanie kodowanych testów interfejsu użytkownika za pomocą dzienników kodowanych](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md) testów interfejsu użytkownika

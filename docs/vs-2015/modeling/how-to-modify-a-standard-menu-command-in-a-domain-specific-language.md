@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6a821899eb660fb8448b541f9c1be082351dacc6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 989367d395abb56e4f57c4aa2694b5f4ef17fb6e
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662580"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300878"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Porady: modyfikowanie standardowego polecenia menu w języku specyficznym dla domeny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -138,7 +138,7 @@ protected override void ProcessOnMenuDeleteCommand()
 
 - `this.CurrentSelection`., Kształt kliknięty prawym przyciskiem myszy jest zawsze uwzględniony na liście kształtów i łączników. Jeśli użytkownik kliknie pustą część diagramu, diagram jest jedyną składową listy.
 
-- `this.IsDiagramSelected()`  -  `true`, jeśli użytkownik kliknął pustą część diagramu.
+- `this.IsDiagramSelected()` - `true`, jeśli użytkownik kliknął pustą część diagramu.
 
 - `this.IsCurrentDiagramEmpty()`
 
@@ -151,4 +151,4 @@ protected override void ProcessOnMenuDeleteCommand()
   Aby uzyskać więcej informacji na temat nawigowania z elementu do elementu i sposobu tworzenia obiektów i linków, zobacz [nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
 ## <a name="see-also"></a>Zobacz też
- <xref:System.ComponentModel.Design.MenuCommand> [pisania kodu w celu dostosowywania języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md) [: Dodaj polecenie do przewodnika po menu skrótów](../modeling/how-to-add-a-command-to-the-shortcut-menu.md) [: pobieranie informacji z wybranego linku](../misc/walkthrough-getting-information-from-a-selected-link.md) [jak pakietów VSPackage Dodawanie elementów interfejsu użytkownika](../extensibility/internals/how-vspackages-add-user-interface-elements.md) [Visual Studio Tabela poleceń (. Vsct) pliki](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md) [vsct schematu XML dokumentacja](../extensibility/vsct-xml-schema-reference.md) [VMSDK — diagramy obwodów. Obszerny](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8) [kod przykładowego dostosowania DSL: diagramy obwodów](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+ <xref:System.ComponentModel.Design.MenuCommand> [pisania kodu w celu dostosowywania języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md) [: Dodaj polecenie do przewodnika po menu skrótów](../modeling/how-to-add-a-command-to-the-shortcut-menu.md) [: pobieranie informacji z wybranego linku](../misc/walkthrough-getting-information-from-a-selected-link.md) [jak pakietów VSPackage Dodawanie elementów interfejsu użytkownika](../extensibility/internals/how-vspackages-add-user-interface-elements.md) [tabela poleceń programu Visual Studio (. Vsct) pliki](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md) [vsct dokumentacja schematu XML](../extensibility/vsct-xml-schema-reference.md)

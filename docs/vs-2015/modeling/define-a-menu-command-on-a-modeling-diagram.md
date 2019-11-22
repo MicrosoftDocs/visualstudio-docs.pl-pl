@@ -11,17 +11,17 @@ caps.latest.revision: 63
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 87acbb53fd8fe5eae744aa4ef72c808da8eb6642
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 23ba1a6900559d7ee13639bb1da696127e47e536
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663481"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299266"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>Definiowanie polecenia menu w diagramie modelowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W programie Visual Studio można zdefiniować dodatkowe elementy menu w menu skrótów diagramu UML. Można kontrolować, czy polecenie menu pojawia się i jest włączone w menu skrótów dowolnego elementu na diagramie, i można napisać kod, który jest uruchamiany, gdy użytkownik wybierze element menu. Można spakować te rozszerzenia w rozszerzeniu integracji programu Visual Studio ([VSIX](http://go.microsoft.com/fwlink/?LinkId=160780)) i przekazać je do innych użytkowników programu Visual Studio.
+W programie Visual Studio można zdefiniować dodatkowe elementy menu w menu skrótów diagramu UML. Można kontrolować, czy polecenie menu pojawia się i jest włączone w menu skrótów dowolnego elementu na diagramie, i można napisać kod, który jest uruchamiany, gdy użytkownik wybierze element menu. Można spakować te rozszerzenia w rozszerzeniu integracji programu Visual Studio ([VSIX](https://go.microsoft.com/fwlink/?LinkId=160780)) i przekazać je do innych użytkowników programu Visual Studio.
 
 ## <a name="requirements"></a>Wymagania
  Zobacz [wymagania](../modeling/extend-uml-models-and-diagrams.md#Requirements).
@@ -47,7 +47,7 @@ W programie Visual Studio można zdefiniować dodatkowe elementy menu w menu skr
 
 4. Przetestuj polecenie menu, naciskając klawisz F5. Aby uzyskać więcej informacji, zobacz [wykonywanie polecenia menu](#Executing).
 
-5. Zainstaluj polecenie menu na innym komputerze przez skopiowanie pliku **bin \\ \* \\ \*. vsix** skompilowanego przez projekt. Aby uzyskać więcej informacji, zobacz [Instalowanie i odinstalowywanie rozszerzenia](#Installing).
+5. Zainstaluj polecenie menu na innym komputerze przez skopiowanie pliku **bin\\\*\\\*. vsix** skompilowanego przez projekt. Aby uzyskać więcej informacji, zobacz [Instalowanie i odinstalowywanie rozszerzenia](#Installing).
 
    Oto alternatywna procedura:
 
@@ -67,11 +67,11 @@ W programie Visual Studio można zdefiniować dodatkowe elementy menu w menu skr
 
    |                                                                                                    Tematy pomocy                                                                                                    |                                                                                                  Co można zrobić                                                                                                  |
    |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-   |                                                                                        System. ComponentModel. kompozycji                                                                                        |                                         Zdefiniuj składniki za pomocą [Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).                                          |
-   |                                                                                      Microsoft. VisualStudio. UML. Interfaces                                                                                      |                                                                                        Odczytywanie i zmiana właściwości elementów modelu.                                                                                         |
-   |                                                                             Microsoft. VisualStudio. ArchitectureTools. rozszerzalność                                                                              |                                                                                      Utwórz elementy modelu, Modyfikuj kształty na diagramach.                                                                                       |
-   |                                                                                  Microsoft. VisualStudio. Modeling. Sdk. nowszym                                                                                  | Zdefiniuj procedury obsługi zdarzeń modelu.<br /><br /> Hermetyzuj serię zmian w modelu. Aby uzyskać więcej informacji, zobacz [łączenie aktualizacji modelu UML przy użyciu transakcji](../modeling/link-uml-model-updates-by-using-transactions.md). |
-   |                                                            Microsoft. VisualStudio. Modeling. Sdk. diagramy. nowszym<br /><br /> (nie zawsze wymagane)                                                             |                                                                                   Dostęp do dodatkowych elementów diagramu dla programów obsługi gestów.                                                                                   |
+   |                                                                                        System.ComponentModel.Composition                                                                                        |                                         Zdefiniuj składniki za pomocą [Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).                                          |
+   |                                                                                      Microsoft.VisualStudio.Uml.Interfaces                                                                                      |                                                                                        Odczytywanie i zmiana właściwości elementów modelu.                                                                                         |
+   |                                                                             Microsoft.VisualStudio.ArchitectureTools.Extensibility                                                                              |                                                                                      Utwórz elementy modelu, Modyfikuj kształty na diagramach.                                                                                       |
+   |                                                                                  Microsoft.VisualStudio.Modeling.Sdk.[version]                                                                                  | Zdefiniuj procedury obsługi zdarzeń modelu.<br /><br /> Hermetyzuj serię zmian w modelu. Aby uzyskać więcej informacji, zobacz [łączenie aktualizacji modelu UML przy użyciu transakcji](../modeling/link-uml-model-updates-by-using-transactions.md). |
+   |                                                            Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]<br /><br /> (nie zawsze wymagane)                                                             |                                                                                   Dostęp do dodatkowych elementów diagramu dla programów obsługi gestów.                                                                                   |
    | Microsoft. VisualStudio. ArchitectureTools. rozszerzalność. warstwa<br /><br /> Wymagane tylko dla poleceń na diagramach warstwowych. Aby uzyskać więcej informacji, zobacz sekcję [rozszerzając diagramy warstwowe](../modeling/extend-layer-diagrams.md). |                                                                                             Zdefiniuj polecenia na diagramie warstwowym.                                                                                              |
 
 3. Dodaj plik klasy do projektu i ustaw jego zawartość na następujący kod.
@@ -160,11 +160,11 @@ W programie Visual Studio można zdefiniować dodatkowe elementy menu w menu skr
 
     3. Na karcie **zasoby** wybierz pozycję **Nowy**, a następnie w oknie dialogowym Ustaw wartość:
 
-         **Typ**  = **składnik MEF**
+         **Typ** = **składnik MEF**
 
-         **Źródło**  = **projektu w bieżącym rozwiązaniu**
+         **Źródło** = **projektu w bieżącym rozwiązaniu**
 
-         **Projekt**  = *projektu biblioteki klas*
+         **Projekt** = *projektu biblioteki klas*
 
 ## <a name="Implementing"></a>Implementowanie polecenia menu
  Klasa poleceń menu implementuje wymagane metody dla <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension>.
@@ -172,7 +172,7 @@ W programie Visual Studio można zdefiniować dodatkowe elementy menu w menu skr
 |||
 |-|-|
 |`string Text { get; }`|Zwraca etykietę elementu menu.|
-|`void QueryStatus(IMenuCommand command);`|Wywoływana, gdy użytkownik kliknie prawym przyciskiem myszy na diagramie.<br /><br /> Ta metoda nie powinna zmieniać modelu.<br /><br /> Użyj `DiagramContext.CurrentDiagram.SelectedShapes`, aby określić, czy polecenie ma być wyświetlane i włączone.<br /><br /> Zbiór<br /><br /> -    `command.Visible` do `true`, jeśli polecenie musi pojawić się w menu, gdy użytkownik kliknie prawym przyciskiem myszy na diagramie<br />-    `command.Enabled` do `true`, jeśli użytkownik może kliknąć polecenie w menu<br />-    `command.Text`, aby dynamicznie ustawić etykietę menu|
+|`void QueryStatus(IMenuCommand command);`|Wywoływana, gdy użytkownik kliknie prawym przyciskiem myszy na diagramie.<br /><br /> Ta metoda nie powinna zmieniać modelu.<br /><br /> Użyj `DiagramContext.CurrentDiagram.SelectedShapes`, aby określić, czy polecenie ma być wyświetlane i włączone.<br /><br /> Zbiór<br /><br /> -   `command.Visible` do `true`, jeśli polecenie musi pojawić się w menu, gdy użytkownik kliknie prawym przyciskiem myszy na diagramie<br />-   `command.Enabled` do `true`, jeśli użytkownik może kliknąć polecenie w menu<br />-   `command.Text`, aby dynamicznie ustawić etykietę menu|
 |`void Execute (IMenuCommand command);`|Wywoływana, gdy użytkownik kliknie element menu, jeśli jest widoczny i włączony.|
 
 ### <a name="accessing-the-model-in-code"></a>Uzyskiwanie dostępu do modelu w kodzie
@@ -182,7 +182,7 @@ W programie Visual Studio można zdefiniować dodatkowe elementy menu w menu skr
 [Import] public IDiagramContext DiagramContext { get; set; }
 ```
 
- ...
+ Przyciski ...
 
  Deklaracja `IDiagramContext` umożliwia pisanie kodu w metodach, które uzyskują dostęp do diagramu, bieżącego wyboru i modelu:
 
@@ -226,7 +226,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`
 
-2. W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] eksperymentalnym Otwórz lub Utwórz projekt modelowania, a następnie otwórz lub Utwórz diagram modelowania. Użyj diagramu, który należy do jednego z typów wymienionych w atrybucie klasy poleceń menu.
+2. W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]eksperymentalnym Otwórz lub Utwórz projekt modelowania, a następnie otwórz lub Utwórz diagram modelowania. Użyj diagramu, który należy do jednego z typów wymienionych w atrybucie klasy poleceń menu.
 
 3. Otwórz menu skrótów w dowolnym miejscu na diagramie. Polecenie powinno pojawić się w menu.
 
@@ -236,7 +236,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
     - Parametry `Import` i `Export` atrybuty są prawidłowe.
 
-    - Metoda `QueryStatus` nie ustawia `command`. `Enabled` lub `Visible` pola do `false`.
+    - Metoda `QueryStatus` nie ustawia `command`.`Enabled` lub `Visible` pola do `false`.
 
     - Typ diagramu modelu, którego używasz (Klasa UML, sekwencja i tak dalej) jest wymieniony jako jeden z atrybutów klas poleceń menu `[ClassDesignerExtension]`, `[SequenceDesignerExtension]` i tak dalej.
 
@@ -249,7 +249,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
     1. W **Eksplorator rozwiązań**, w menu skrótów projektu VSIX, wybierz polecenie **Otwórz folder w Eksploratorze Windows**.
 
-    2. Zlokalizuj plik **bin \\ \* \\** _YourProject_ **. vsix**
+    2. Zlokalizuj plik **bin\\\*\\** _YourProject_ **. vsix**
 
 2. Skopiuj plik **. vsix** do komputera docelowego, na którym chcesz zainstalować rozszerzenie. Może to być własny komputer lub inny.
 
@@ -271,7 +271,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
    Rzadko błędne rozszerzenie nie zostanie załadowane i tworzy raport w oknie błędu, ale nie jest wyświetlany w Menedżerze rozszerzeń. W takim przypadku można usunąć rozszerzenie, usuwając plik z:
 
-   *% LocalAppData%* **\Local\Microsoft\VisualStudio \\ [wersja] \Extensions**
+   *% LocalAppData%* **\Local\Microsoft\VisualStudio\\[wersja] \Extensions**
 
 ## <a name="MenuExample"></a>Przyklad
  Poniższy przykład pokazuje kod polecenia menu, które spowoduje wymianę nazw dwóch elementów na diagramie klas. Ten kod musi być skompilowany w projekcie rozszerzenia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] i instalowany zgodnie z opisem w poprzednich sekcjach.
@@ -363,4 +363,4 @@ namespace SwapClassNames
 ```
 
 ## <a name="see-also"></a>Zobacz też
- [Definiowanie i Instalowanie rozszerzenia modelowania](../modeling/define-and-install-a-modeling-extension.md) [Rozszerzanie modeli UML i diagramów](../modeling/extend-uml-models-and-diagrams.md) [Definiowanie procedury obsługi gestów na diagramie modelowania](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) [Definiowanie niestandardowego elementu przybornika modelowania](../modeling/define-a-custom-modeling-toolbox-item.md) [Definiowanie ograniczeń walidacji dla modeli UML](../modeling/define-validation-constraints-for-uml-models.md) [Edytuj Diagramy sekwencji UML przy użyciu programowania interfejsu API UML](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md) [z przykładowym interfejsem API UML](../modeling/programming-with-the-uml-api.md) [: polecenie do wyrównywania kształtów na diagramie UML](http://go.microsoft.com/fwlink/?LinkID=213809)
+ [Definiowanie i Instalowanie rozszerzenia modelowania](../modeling/define-and-install-a-modeling-extension.md) [Rozszerzanie modeli UML i diagramów](../modeling/extend-uml-models-and-diagrams.md) [Definiowanie obsługi gestów na diagramie modelowania](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) [Definiowanie niestandardowego elementu przybornika modelowania](../modeling/define-a-custom-modeling-toolbox-item.md) [Definiowanie ograniczeń WALIDACJi dla modeli UML](../modeling/define-validation-constraints-for-uml-models.md) [Edytowanie diagramów sekwencji UML przy użyciu programowania interfejsu API](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md) UML z przykładowym [interfejsem API UML](../modeling/programming-with-the-uml-api.md) [: polecenie do wyrównywania kształtów na diagramie UML](https://go.microsoft.com/fwlink/?LinkID=213809)

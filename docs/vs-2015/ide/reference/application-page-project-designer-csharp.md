@@ -15,12 +15,12 @@ caps.latest.revision: 61
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 792034d913bc7e3ca897f4f8e12736d4d78797cf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: dcd9b9d5e336bfa0595ddd6d70032f7ba7fe780a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651706"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299393"
 ---
 # <a name="application-page-project-designer-c"></a>Strona aplikacji, Projektant projektu (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Użyj strony **aplikacji** **projektanta projektu** , aby określić ustawienia 
 
  Dla projektu aplikacji sieci Web należy określić **bibliotekę klas**.
 
- W przypadku określenia opcji **pliku winmd** typy mogą być rzutowane na dowolny język programowania środowisko wykonawcze systemu Windows. Przez pakowanie danych wyjściowych projektu jako pliku WinMD, można zakodować aplikację w wielu językach i współdziałać z kodem, tak jakby były one napisane w tym samym języku. Tę opcję można określić dla rozwiązań przeznaczonych dla bibliotek środowisko wykonawcze systemu Windows, w tym [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] aplikacji. Aby uzyskać więcej informacji, zobacz [Tworzenie składników Środowisko wykonawcze systemu Windows C# w i Visual Basic](http://go.microsoft.com/fwlink/?LinkId=231895).
+ W przypadku określenia opcji **pliku winmd** typy mogą być rzutowane na dowolny język programowania środowisko wykonawcze systemu Windows. Przez pakowanie danych wyjściowych projektu jako pliku WinMD, można zakodować aplikację w wielu językach i współdziałać z kodem, tak jakby były one napisane w tym samym języku. Tę opcję można określić dla rozwiązań przeznaczonych dla bibliotek środowisko wykonawcze systemu Windows, w tym [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] aplikacji. Aby uzyskać więcej informacji, zobacz [Tworzenie składników Środowisko wykonawcze systemu Windows C# w i Visual Basic](https://go.microsoft.com/fwlink/?LinkId=231895).
 
 > [!NOTE]
 > Środowisko wykonawcze systemu Windows można projektować typów, tak aby były one widoczne jako obiekty natywne w zależności od używanego języka. Na przykład aplikacje JavaScript, które współpracują z środowisko wykonawcze systemu Windows używają go jako zestawu obiektów JavaScript, a C# aplikacje używają biblioteki jako kolekcji obiektów .NET. Przez pakowanie danych wyjściowych projektu jako pliku WinMD można skorzystać z tej samej technologii, która środowisko wykonawcze systemu Windows używa.

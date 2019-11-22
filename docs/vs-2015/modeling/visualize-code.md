@@ -13,12 +13,12 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 51b546e953cae80b7a1871b72a1f0b0613c77342
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 955103b6d28e90321fb45c23825f0c2a25362208
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659336"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301318"
 ---
 # <a name="visualize-code"></a>Tworzenie wizualizacji kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,11 +48,11 @@ Narzędzia do wizualizacji i modelowania w programie Visual Studio ułatwiają z
 
 ## <a name="external-resources"></a>Zasoby zewnętrzne
 
-|**Kategorii**|**Linki**|
+|**Kategoria**|**Linki**|
 |------------------|---------------|
-|**Dotyczące**|-   [Wizualizacja programu Visual Studio & narzędzia do modelowania](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [wizualizacji programu Visual Studio & Modeling SDK (narzędzia DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
-|**Blogi**|[Blog programu Visual Studio ALM + Team Foundation Server](http://go.microsoft.com/fwlink/?LinkID=201340)|
-|**Artykuły techniczne i dzienniki**|[Forum architektury MSDN](http://go.microsoft.com/fwlink/?LinkId=201343)|
+|**Dotyczące**|-   [Wizualizacja programu Visual Studio & narzędzia do modelowania](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [wizualizacji programu Visual Studio & Modeling SDK (narzędzia DSL)](https://go.microsoft.com/fwlink/?LinkId=184721)|
+|**Blogi**|[Blog programu Visual Studio ALM + Team Foundation Server](https://go.microsoft.com/fwlink/?LinkID=201340)|
+|**Artykuły techniczne i dzienniki**|[Forum architektury MSDN](https://go.microsoft.com/fwlink/?LinkId=201343)|
 
 ## <a name="see-also"></a>Zobacz też
- [Scenariusz: zmiana projektu przy użyciu wizualizacji i modelowania](../modeling/scenario-change-your-design-using-visualization-and-modeling.md) modelowanie [i architektura](../modeling/analyze-and-model-your-architecture.md) modelowanie [Tworzenie modeli dla](../modeling/create-models-for-your-app.md) modelu [wymagań użytkowników](../modeling/model-user-requirements.md) modelu aplikacji [Architektura aplikacji](../modeling/model-your-app-s-architecture.md) [korzysta z modeli w proces opracowywania](../modeling/use-models-in-your-development-process.md)
+ [Scenariusz: zmiana projektu przy użyciu wizualizacji i modelowania](../modeling/scenario-change-your-design-using-visualization-and-modeling.md) modelowanie [i architektura](../modeling/analyze-and-model-your-architecture.md) modelowanie [Tworzenie modeli dla](../modeling/create-models-for-your-app.md) modelu [wymagań użytkowników](../modeling/model-user-requirements.md) modelu aplikacji [Używanie modeli w procesie tworzenia](../modeling/use-models-in-your-development-process.md) [aplikacji](../modeling/model-your-app-s-architecture.md)

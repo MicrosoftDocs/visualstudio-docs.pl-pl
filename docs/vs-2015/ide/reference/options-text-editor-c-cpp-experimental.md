@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7e9d1464481b33bc5fbf5e73bc09a6da4eb082c7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5979363f16f2e9d78a2f50ffbb6511d03146caaa
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662346"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297854"
 ---
 # <a name="options-text-editor-cc-experimental"></a>Opcje, Edytor tekstów, C/C++, eksperymentalne
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Zmieniając te opcje, można zmienić zachowanie związane z technologią Intell
  Te funkcje są dostępne w instalacji programu Visual Studio 2015 Update 1 RC.
 
 > [!NOTE]
-> Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Zobacz [Dostosowywanie ustawień programistycznych w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Zobacz [Dostosowywanie ustawień środowiska deweloperskiego w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="browsingnavigation"></a>Przeglądanie/Nawigacja
  **Włącz nowy aparat bazy danych** Powinno to spowodować automatyczną przyspieszenie wypełniania bazy danych i szybsze wykonywanie wszystkich operacji w bazie danych (bez dokładności) dla operacji takich jak **Przejdź do definicji** i **Znajdź wszystkie odwołania**. (Po prostu Zamknij i ponownie otwórz rozwiązanie, aby zastosować zmiany; nie musisz ponownie uruchamiać programu Visual Studio).
@@ -46,7 +46,7 @@ Zmieniając te opcje, można zmienić zachowanie związane z technologią Intell
 
  **Włącz pierwszeństwo rozwijania** Jeśli ta funkcja jest włączona, można ująć zaznaczony tekst za pomocą nawiasów, wpisując znak "(" w edytorze tekstu.
 
- Aby uzyskać dodatkowe funkcje edytora tekstu w galerii programu Visual Studio, zapoznaj się z listą [tutaj](http://go.microsoft.com/fwlink/?LinkId=692016). Przykładem są [ C++ szybkie poprawki](https://visualstudiogallery.msdn.microsoft.com/be91feef-8dc3-4f7a-ac9f-f34e7ca5918f), które obsługują następujące rozwiązania:
+ Aby uzyskać dodatkowe funkcje edytora tekstu w galerii programu Visual Studio, zapoznaj się z listą [tutaj](https://go.microsoft.com/fwlink/?LinkId=692016). Przykładem są [ C++ szybkie poprawki](https://visualstudiogallery.msdn.microsoft.com/be91feef-8dc3-4f7a-ac9f-f34e7ca5918f), które obsługują następujące rozwiązania:
 
 - **Dodaj brakujące #include** -proponuje odpowiednie #include dla nieznanych symboli w kodzie
 
@@ -59,4 +59,4 @@ Zmieniając te opcje, można zmienić zachowanie związane z technologią Intell
   Możesz umieścić kursor na zygzaku, aby uzyskać żarówkę, lub użyć domyślnego skrótu klawiaturowego Ctrl + kropka (Ctrl +.). Należy pamiętać, że w przypadku skrótu klawiaturowego karetka nie musi być umieszczona w określonym błędzie lub tokenie; Możesz po prostu znajdować się w tym samym wierszu, w którym wystąpił błąd, aby wywoływać sugestie dla wszystkiego w tym wierszu.
 
 ## <a name="see-also"></a>Zobacz też
- [Ustawienie refaktoryzacji opcji edytora specyficznych dla języka](../../ide/reference/setting-language-specific-editor-options.md) [ C++ (blog VC)](http://blogs.msdn.com/b/vcblog/archive/2014/11/14/all-about-c-refactoring-in-visual-studio-2015-preview.aspx)
+ [Ustawienie refaktoryzacji opcji edytora specyficznych dla języka](../../ide/reference/setting-language-specific-editor-options.md) [ C++ (blog VC)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/)

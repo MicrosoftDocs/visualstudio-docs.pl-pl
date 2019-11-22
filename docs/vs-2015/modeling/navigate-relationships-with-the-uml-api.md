@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5c0067e213fdff2bde09c290d9fcaa9b4f52b9ab
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f19208e886eb499c825b119ad4ade7e8b52ab88f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668532"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300231"
 ---
 # <a name="navigate-relationships-with-the-uml-api"></a>Nawigowanie po relacjach za pomocą interfejsu API UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -152,7 +152,7 @@ IEnumerable<IUseCase>GetIncludingCases(this IUseCase usecase);
 ```
 
 ## <a name="enumerating-relationships"></a>Wyliczanie relacji
- Wszystkie właściwości modelu UML, które zwracają wiele wartości, są zgodne z interfejsem IEnumerable < >. Oznacza to, że można używać [wyrażeń zapytań LINQ](http://go.microsoft.com/fwlink/?LinkId=168834) oraz metod rozszerzających zdefiniowanych w przestrzeni nazw **System. LINQ** .
+ Wszystkie właściwości modelu UML, które zwracają wiele wartości, są zgodne z interfejsem IEnumerable < >. Oznacza to, że można używać [wyrażeń zapytań LINQ](https://go.microsoft.com/fwlink/?LinkId=168834) oraz metod rozszerzających zdefiniowanych w przestrzeni nazw **System. LINQ** .
 
  Na przykład:
 

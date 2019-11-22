@@ -1,5 +1,5 @@
 ---
-title: Funkcje ułatwień dostępu | Microsoft Docs
+title: Funkcje ułatwień dostępu | Dokumentacja firmy Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -12,30 +12,30 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: fbf7c539c8bf1290aff92edf876ac4c437fd1c68
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ff7d0e7a26c9e8fa6abe984353d3368ca1f6a36a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670295"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296097"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Ułatwienia dostępu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Oprócz funkcji i narzędzi ułatwień dostępu w systemie Windows następujące funkcje sprawiają, że Visual Studio 2013 bardziej dostępne dla osób niepełnosprawnych:
+Oprócz funkcji ułatwień dostępu i narzędzi w Windows następujące funkcje ułatwiają programu Visual Studio 2013 dostęp dla osób niepełnosprawnych:
 
-- Przycisk paska narzędzi i rozszerzenie tekstu
+- Rozszerzenia narzędzi przycisk i tekst
 
 - Opcje rozmiaru tekstu w edytorach
 
-- Dostosowanie koloru w edytorach
+- Dostosowywanie kolorów w edytorach
 
-- Dostosowywanie skrótu klawiaturowego
+- Dostosowywanie skrótów klawiatury
 
-- Autouzupełnianie dla metod i parametrów
+- Automatyczne uzupełnianie metody i parametrów
 
 > [!IMPORTANT]
-> Informacje przedstawione w tej sekcji dotyczą tylko użytkowników, którzy chcą uzyskać licencję na produkty firmy Microsoft w Stany Zjednoczone. Jeśli ten produkt został uzyskany poza Stany Zjednoczone, możesz użyć karty z informacjami pomocniczymi, która została dostarczona z pakietem oprogramowania, lub odwiedź [stronę skontaktuj się z nami, aby uzyskać pomoc techniczna firmy Microsoft](http://support.microsoft.com/ContactUs) i kliknąć pozycję **Zlokalizuj biura firmy Microsoft na całym świecie.** link (w dolnej części strony). Ta strona zawiera listę numerów telefonów i adresów dla usług pomocy technicznej firmy Microsoft. Możesz skontaktować się z działem pomocy technicznej, aby dowiedzieć się, czy typy produktów i usług, które są opisane w tej sekcji, są dostępne w Twoim regionie. Informacje o ułatwieniach dostępu są dostępne również w innych językach, między innymi w japońskim i francuskim.
+> Informacje przedstawione w tej sekcji dotyczy tylko użytkowników licencjonujących produkty firmy Microsoft w Stanach Zjednoczonych. Jeśli użytkownik uzyskał produkt poza Stanami Zjednoczonymi, można użyć karty informacji zależnej od firmy Microsoft, dołączonej do pakietu oprogramowania lub mogą odwiedzić [skontaktuj się z nami stronę Microsoft Support](https://support.microsoft.com/contactus/) i kliknij przycisk  **Znajdź oddziałów firmy Microsoft na całym świecie** łącza (w pobliżu dolnej części strony). Ta strona zawiera listę numerów telefonów i adresów dla firmy Microsoft pomoc techniczną. Możesz skontaktować się z oddziałem, aby dowiedzieć się, czy typy produktów i usług, które są opisane w tej sekcji są dostępne w Twojej okolicy. Informacje o ułatwieniach dostępu są dostępne również w innych językach, między innymi w japońskim i francuskim.
 
  Więcej informacji znajduje się w następujących tematach:
 

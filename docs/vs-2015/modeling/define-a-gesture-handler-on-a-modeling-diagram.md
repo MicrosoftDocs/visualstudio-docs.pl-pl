@@ -12,17 +12,17 @@ caps.latest.revision: 36
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: fbf111dbf8297994994f10b9b867e03321268679
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bf749d1073faf4cf22febafce716af36b47c6484
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654872"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299300"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Definiowanie procedury obsługi gestów na diagramie modelowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W programie Visual Studio można definiować polecenia, które są wykonywane, gdy użytkownik kliknie dwukrotnie lub przeciągnie elementy na diagram UML. Można spakować te rozszerzenia w rozszerzeniu integracji programu Visual Studio ([VSIX](http://go.microsoft.com/fwlink/?LinkId=160780)) i przekazać je do innych użytkowników programu Visual Studio.
+W programie Visual Studio można definiować polecenia, które są wykonywane, gdy użytkownik kliknie dwukrotnie lub przeciągnie elementy na diagram UML. Można spakować te rozszerzenia w rozszerzeniu integracji programu Visual Studio ([VSIX](https://go.microsoft.com/fwlink/?LinkId=160780)) i przekazać je do innych użytkowników programu Visual Studio.
 
  Jeśli istnieje już wbudowane zachowanie dla typu diagramu i typu elementu, który chcesz przeciągnąć, możesz nie być w stanie dodać lub zastąpić to zachowanie.
 
@@ -48,7 +48,7 @@ W programie Visual Studio można definiować polecenia, które są wykonywane, g
 
 3. Przetestuj procedurę obsługi gestu, naciskając klawisz F5. Aby uzyskać więcej informacji, zobacz [wykonywanie procedury obsługi gestu](#Executing).
 
-4. Zainstaluj procedurę obsługi gestu na innym komputerze przez skopiowanie pliku **bin \\ \* \\ \*. vsix** skompilowanego przez projekt. Aby uzyskać więcej informacji, zobacz [Instalowanie i odinstalowywanie rozszerzenia](#Installing).
+4. Zainstaluj procedurę obsługi gestu na innym komputerze przez skopiowanie pliku **bin\\\*\\\*. vsix** skompilowanego przez projekt. Aby uzyskać więcej informacji, zobacz [Instalowanie i odinstalowywanie rozszerzenia](#Installing).
 
    Oto alternatywna procedura:
 
@@ -224,11 +224,11 @@ W programie Visual Studio można definiować polecenia, które są wykonywane, g
 
     3. Na karcie **zasoby** wybierz pozycję **Nowy**, a następnie w oknie dialogowym Ustaw wartość:
 
-         **Typ**  = **składnik MEF**
+         **Typ** = **składnik MEF**
 
-         **Źródło**  = **projektu w bieżącym rozwiązaniu**
+         **Źródło** = **projektu w bieżącym rozwiązaniu**
 
-         **Projekt**  = *projektu biblioteki klas*
+         **Projekt** = *projektu biblioteki klas*
 
 ## <a name="Executing"></a>Wykonywanie procedury obsługi gestu
  W celach testowych wykonaj procedurę obsługi gestu w trybie debugowania.
@@ -247,7 +247,7 @@ W programie Visual Studio można definiować polecenia, które są wykonywane, g
 
         `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`
 
-2. W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] eksperymentalnym Otwórz lub Utwórz projekt modelowania, a następnie otwórz lub Utwórz diagram modelowania. Użyj diagramu, który należy do jednego z typów wymienionych w atrybucie klasy procedury obsługi gestu.
+2. W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]eksperymentalnym Otwórz lub Utwórz projekt modelowania, a następnie otwórz lub Utwórz diagram modelowania. Użyj diagramu, który należy do jednego z typów wymienionych w atrybucie klasy procedury obsługi gestu.
 
 3. Kliknij dwukrotnie dowolne miejsce na diagramie. Procedura obsługi dwukrotnego kliknięcia powinna być wywoływana.
 
@@ -317,7 +317,7 @@ W programie Visual Studio można definiować polecenia, które są wykonywane, g
     System.Windows.Forms.IDataObject data = eventArgs.Data;
     ```
 
-     Można przeciągać elementy wielu różnych rodzajów na diagram, z różnych części [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] lub z pulpitu systemu Windows. Różne typy elementów są zakodowane na różne sposoby w `IDataObject`. Aby wyodrębnić elementy z niej, zapoznaj się z dokumentacją odpowiedniego typu obiektu.
+     Można przeciągać elementy wielu różnych rodzajów na diagram, z różnych części [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]lub z pulpitu systemu Windows. Różne typy elementów są zakodowane na różne sposoby w `IDataObject`. Aby wyodrębnić elementy z niej, zapoznaj się z dokumentacją odpowiedniego typu obiektu.
 
      Jeśli obiekt źródłowy jest elementem UML przeciąganym z Eksploratora modelu UML lub z innego diagramu UML, zapoznaj się z tematem [Pobieranie elementów modelu UML z IDataObject](../modeling/get-uml-model-elements-from-idataobject.md).
 
@@ -357,7 +357,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
 
     1. W **Eksplorator rozwiązań**, w menu skrótów projektu VSIX, wybierz polecenie **Otwórz folder w Eksploratorze Windows**.
 
-    2. Zlokalizuj plik **bin \\ \* \\** _YourProject_ **. vsix**
+    2. Zlokalizuj plik **bin\\\*\\** _YourProject_ **. vsix**
 
 2. Skopiuj plik **. vsix** do komputera docelowego, na którym chcesz zainstalować rozszerzenie. Może to być własny komputer lub inny.
 
@@ -379,7 +379,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
 
    Rzadko błędne rozszerzenie nie zostanie załadowane i tworzy raport w oknie błędu, ale nie jest wyświetlany w Menedżerze rozszerzeń. W takim przypadku można usunąć rozszerzenie, usuwając plik z:
 
-   *% LocalAppData%* **\Local\Microsoft\VisualStudio \\ [wersja] \Extensions**
+   *% LocalAppData%* **\Local\Microsoft\VisualStudio\\[wersja] \Extensions**
 
 ## <a name="DragExample"></a>Przyklad
  Poniższy przykład pokazuje, jak utworzyć linie życia w diagramie sekwencji na podstawie części i portów składnika przeciąganych z diagramu składników.

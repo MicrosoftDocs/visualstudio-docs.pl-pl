@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 26065ac7d9b92a8d9bc12f8f7843d8a0fb93f7ac
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 16a51c7fc05d51b551884f70dc514e8939962818
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669763"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296041"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>Dokumentacja języka DGML (Directed Graph Markup Language)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Program Direct Graph Markup Language (DGML) opisuje informacje używane do wizua
  Należy pamiętać, że niektóre wersje programu Visual Studio obsługują tylko podzbiór funkcji DGML, zobacz [Obsługa wersji dla narzędzi architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 > [!NOTE]
-> Podczas edycji pliku .dgml technologia IntelliSense pomaga identyfikować atrybuty, które są dostępne dla każdego elementu i ich wartości. Aby określić kolor w atrybucie, użyj nazw dla pospolitych kolorów, takich jak „Niebieski” lub wartości szesnastkowych ARGB, takich jak „#ffa0b1c3”. DGML używa małego podzbioru formatów definicji koloru Windows Presentation Foundation (WPF). Aby uzyskać więcej informacji, zobacz [klasy Colors](http://go.microsoft.com/fwlink/?LinkId=182345).
+> Podczas edycji pliku .dgml technologia IntelliSense pomaga identyfikować atrybuty, które są dostępne dla każdego elementu i ich wartości. Aby określić kolor w atrybucie, użyj nazw dla pospolitych kolorów, takich jak „Niebieski” lub wartości szesnastkowych ARGB, takich jak „#ffa0b1c3”. DGML używa małego podzbioru formatów definicji koloru Windows Presentation Foundation (WPF). Aby uzyskać więcej informacji, zobacz [klasy Colors](https://go.microsoft.com/fwlink/?LinkId=182345).
 
 ## <a name="DGML"></a>Składnia DGML
  W poniższej tabeli opisano rodzaje elementów, które są używane w DGML:
@@ -39,7 +39,7 @@ Program Direct Graph Markup Language (DGML) opisuje informacje używane do wizua
 
    `BackgroundImage` — lokalizacja pliku obrazu do użycia jako tło w formie mapy.
 
-   `GraphDirection` — gdy mapa jest ustawiona na układ drzewa (`Sugiyama`), Rozmieść węzły tak, aby większość przepływów linków w określonym kierunku: `TopToBottom`, `BottomToTop`, `LeftToRight` lub `RightToLeft`. Zobacz [Zmiana układu mapy](../modeling/browse-and-rearrange-code-maps.md#Selecting).
+   `GraphDirection` — gdy mapa jest ustawiona na układ drzewa (`Sugiyama`), Rozmieść węzły tak, aby większość przepływów linków w określonym kierunku: `TopToBottom`, `BottomToTop`, `LeftToRight`lub `RightToLeft`. Zobacz [Zmiana układu mapy](../modeling/browse-and-rearrange-code-maps.md#Selecting).
 
    `Layout` — Ustaw mapę dla następujących układów: `None`, `Sugiyama` (układ drzewa), `ForceDirected` (szybkie klastry) lub `DependencyMatrix`. Zobacz [Zmiana układu mapy](../modeling/browse-and-rearrange-code-maps.md#Selecting).
 
@@ -98,7 +98,7 @@ Program Direct Graph Markup Language (DGML) opisuje informacje używane do wizua
 
    `Label` — nazwa wyświetlana węzła.
 
-   Atrybuty stylu. Aby dowiedzieć [się, jak dostosować mapy kodu, edytuj pliki DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
+   Atrybuty stylu. Zobacz [Dostosowanie map kodu przez edycję plików DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
    `Category` — nazwa kategorii, która identyfikuje elementy, które współużytkują ten atrybut. Aby uzyskać więcej informacji, zobacz `<Category/>` elementu.
 
@@ -106,7 +106,7 @@ Program Direct Graph Markup Language (DGML) opisuje informacje używane do wizua
 
    `Group` — Jeśli węzeł zawiera inne węzły, ustaw ten atrybut na `Expanded` lub `Collapsed`, aby pokazać lub ukryć jego zawartość. Musi istnieć element `<Link/>`, który zawiera atrybut `Category="Contains"` i określa węzeł nadrzędny jako węzeł źródłowy i węzeł podrzędny jako węzeł docelowy. Zobacz [elementy kodu grupy](../modeling/customize-code-maps-by-editing-the-dgml-files.md#OrganizeNodes).
 
-   `Visibility` — Ustaw ten atrybut na `Visible`, `Hidden` lub `Collapsed`. Używa `System.Windows.Visibility`. Zobacz [ukrywanie lub pokazywanie węzłów i linków](../modeling/browse-and-rearrange-code-maps.md#HidingShowing).
+   `Visibility` — Ustaw ten atrybut na `Visible`, `Hidden`lub `Collapsed`. Używa `System.Windows.Visibility`. Zobacz [ukrywanie lub pokazywanie węzłów i linków](../modeling/browse-and-rearrange-code-maps.md#HidingShowing).
 
    `Reference` — Ustaw ten atrybut na link do dokumentu lub adresu URL. Zobacz [łączenie dokumentów lub adresów URL z elementami kodu i łączami](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AddReferences).
 
@@ -163,7 +163,7 @@ Program Direct Graph Markup Language (DGML) opisuje informacje używane do wizua
 
    `Label` — wyświetlana nazwa linku
 
-   Atrybuty stylu. Aby dowiedzieć [się, jak dostosować mapy kodu, edytuj pliki DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
+   Atrybuty stylu. Zobacz [Dostosowanie map kodu przez edycję plików DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
    `Category` — nazwa kategorii, która identyfikuje elementy, które współużytkują ten atrybut. Aby uzyskać więcej informacji, zobacz `<Category/>` elementu.
 
@@ -220,7 +220,7 @@ Program Direct Graph Markup Language (DGML) opisuje informacje używane do wizua
 
    W przykładzie dla tego elementu Kategoria `FailedTest` dziedziczy atrybut `Stroke` z kategorii `PassedTest`. Zobacz "aby utworzyć kategorie hierarchiczne" w temacie [Dostosowywanie map kodu przez edycję plików DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
-   Kategorie zapewniają również podstawowe zachowanie szablonów, które kontroluje wygląd węzłów i łączy, gdy są wyświetlane na mapie. Aby dowiedzieć [się, jak dostosować mapy kodu, edytuj pliki DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
+   Kategorie zapewniają również podstawowe zachowanie szablonów, które kontroluje wygląd węzłów i łączy, gdy są wyświetlane na mapie. Zobacz [Dostosowanie map kodu przez edycję plików DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
    Przykład:
 

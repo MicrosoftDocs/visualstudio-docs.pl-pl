@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 29a455194e64ee30186941cb67b014170426cce0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c2a86689fd41b7c0233db0df544082ef22c4931a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659252"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295506"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>Wskazówki: generowanie kodu przy użyciu szablonów tekstowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Generowanie kodu pozwala utworzyć kod programu, który jest silnie określony, 
  W tym przykładowym projekcie szablon odczytuje przykładowy plik XML i generuje klasy odpowiadające każdemu typowi węzła. W kodzie ręcznym można użyć tych klas do nawigowania w pliku XML. Możesz również uruchomić aplikację na innych plikach, które używają tych samych typów węzłów. Przykładowy plik XML ma dostarczyć przykłady wszystkich typów węzłów, z którymi aplikacja ma się zająć.
 
 > [!NOTE]
-> Aplikacja [XSD. exe](http://go.microsoft.com/fwlink/?LinkId=178765), która jest dołączona do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], może generować klasy z jednoznacznie określonymi typami z plików XML. Szablon przedstawiony tutaj jest podany jako przykład.
+> Aplikacja [XSD. exe](https://go.microsoft.com/fwlink/?LinkId=178765), która jest dołączona do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], może generować klasy z jednoznacznie określonymi typami z plików XML. Szablon przedstawiony tutaj jest podany jako przykład.
 
  Oto przykładowy plik:
 
@@ -418,7 +418,7 @@ namespace MyProject
   W tym instruktażu kod programu jest faktycznie generowany na podstawie wystąpienia modelu, reprezentatywnego przykładu plików XML, które aplikacja będzie przetwarzać. W bardziej formalnym podejściu schemat XML będzie danymi wejściowymi szablonu w postaci pliku XSD lub definicji języka specyficznego dla domeny. Takie podejście ułatwia szablonowi określenie właściwości, takich jak liczebność relacji.
 
 ## <a name="troubleshooting-the-text-template"></a>Rozwiązywanie problemów z szablonem tekstu
- Jeśli widzisz błędy transformacji szablonu lub kompilacji w **Lista błędów**lub jeśli plik wyjściowy nie został prawidłowo wygenerowany, możesz rozwiązać problem z szablonem tekstu przy użyciu technik opisanych w temacie [generowanie plików przy użyciu TextTransform Narzędzie](../modeling/generating-files-with-the-texttransform-utility.md).
+ Jeśli widzisz błędy transformacji szablonu lub kompilacji w **Lista błędów**lub jeśli plik wyjściowy nie został prawidłowo wygenerowany, możesz rozwiązać problem z szablonem tekstu przy użyciu technik opisanych w temacie [generowanie plików za pomocą narzędzia TextTransform](../modeling/generating-files-with-the-texttransform-utility.md).
 
 ## <a name="see-also"></a>Zobacz też
  [Generowanie kodu w czasie projektowania przy użyciu szablonów tekstowych T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md) [pisanie szablonu tekstowego T4](../modeling/writing-a-t4-text-template.md)

@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b58f76dc5137ac0e281f109ee78f3ed43f907400
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f734c818265d32f6895c09ab01fd2468e0f5a247
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646961"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295685"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>Krok 7. Dodawanie składników okna dialogowego do formularza
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ Aby umożliwić programowi otwieranie plików obrazów i Wybieranie koloru tła,
 
  Składnik jest jak kontrolka na kilka sposobów. Za pomocą przybornika dodasz składnik do formularza i ustawisz jego właściwości przy użyciu okna **Właściwości** . Ale w przeciwieństwie do kontrolki Dodawanie składnika do formularza nie powoduje dodania widocznego elementu, który użytkownik może zobaczyć w formularzu. Zamiast tego zapewnia pewne zachowania, które można wyzwolić przy użyciu kodu. Jest to składnik, który otwiera okno dialogowe **Otwórz plik** .
 
- ![link do wideo](../data-tools/media/playvideo.gif "PlayVideo") Aby uzyskać wersję wideo tego tematu, zobacz [Samouczek 1: Tworzenie przeglądarki obrazów w Visual Basic — wideo 3](http://go.microsoft.com/fwlink/?LinkId=205213) lub [Samouczek 1: Tworzenie przeglądarki obrazów w C# wideo 3](http://go.microsoft.com/fwlink/?LinkId=205202). Te filmy wideo korzystają ze starszej wersji programu Visual Studio, więc istnieją niewielkie różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednak koncepcje i procedury działają podobnie w bieżącej wersji programu Visual Studio.
+ ![link do wideo](../data-tools/media/playvideo.gif "PlayVideo") Aby uzyskać wersję wideo tego tematu, zobacz [Samouczek 1: Tworzenie przeglądarki obrazów w Visual Basic — wideo 3](https://go.microsoft.com/fwlink/?LinkId=205213) lub [Samouczek 1: Tworzenie przeglądarki obrazów w C# wideo 3](https://go.microsoft.com/fwlink/?LinkId=205202). Te filmy wideo korzystają ze starszej wersji programu Visual Studio, więc istnieją niewielkie różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednak koncepcje i procedury działają podobnie w bieżącej wersji programu Visual Studio.
 
 ### <a name="to-add-dialog-components-to-your-form"></a>Aby dodać składniki okna dialogowego do formularza
 

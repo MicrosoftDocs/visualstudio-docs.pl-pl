@@ -1,5 +1,5 @@
 ---
-title: Program Visual Studio Isolated Shell | Dokumentacja firmy Microsoft
+title: Powłoka izolowana programu Visual Studio | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,54 +14,54 @@ ms.assetid: d2620e71-be9e-44c9-b5b7-03a4c8d9cf0b
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0309019cc36e9f81596061dbbede0f84b0b78a05
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 36491d9d590a45256e297654f71652ab5de5cd98
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403586"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299718"
 ---
-# <a name="visual-studio-isolated-shell"></a>Program Visual Studio Isolated Shell
+# <a name="visual-studio-isolated-shell"></a>Visual Studio Shell (izolowany)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Powłoka programu Visual Studio, izolowany umożliwia tworzenie autonomicznych aplikacji, które można uruchomić side-by-side z innymi wersjami programu Visual Studio. Jest używany przede wszystkim do hostowania specjalistycznych narzędzi, które mogą używać usług Visual Studio, ale również mieć z dostosowanego wyglądu znakowania. Funkcje programu Visual Studio i grupami polecenia menu mogą być łatwo włączać i wyłączać. Tytuły aplikacji, ikony aplikacji i ekrany powitalne są w pełni konfigurowalne. Aby uzyskać listę funkcji można dostosowywać, zobacz [Dostosowywanie programu Isolated Shell](../extensibility/customizing-the-isolated-shell.md).  
+Izolowana powłoka programu Visual Studio umożliwia tworzenie autonomicznych aplikacji, które mogą być uruchamiane równolegle z innymi wersjami programu Visual Studio. Jest ona używana głównie do hostowania wyspecjalizowanych narzędzi, które mogą korzystać z usług Visual Studio, ale również mieć dostosowany wygląd i markę. Funkcje programu Visual Studio i grupy poleceń menu można łatwo włączać i wyłączać. Tytuły aplikacji, ikony aplikacji i ekrany powitalne są w pełni dostosowywane. Listę dostosowywalnych funkcji można znaleźć w temacie [Dostosowywanie powłoki izolowanej](../extensibility/customizing-the-isolated-shell.md).  
   
- Aby pracować z projektu programu shell w trybie izolowanym, należy zainstalować zestawu SDK programu Visual Studio. Począwszy od programu Visual Studio 2015, możesz nie należy instalować programu Visual Studio SDK z Centrum pobierania. Jest dołączony jako opcjonalna funkcja w Instalatorze programu Visual Studio. Możesz także zainstalować zestaw SDK programu VS później. Aby uzyskać więcej informacji, zobacz [instalowania programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+ Aby można było korzystać z odizolowanego projektu powłoki, należy zainstalować Visual Studio SDK. Począwszy od programu Visual Studio 2015, możesz nie należy instalować programu Visual Studio SDK z Centrum pobierania. Jest dołączony jako opcjonalna funkcja w Instalatorze programu Visual Studio. Możesz także zainstalować zestaw SDK programu VS później. Aby uzyskać więcej informacji, zobacz [instalowania programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
- Do tworzenia aplikacji isolated shell, Rozpocznij od projektu programu Visual Studio Shell izolowanym. Ten projekt zawiera wszystko, czego potrzebujesz do tworzenia i testowania aplikacji izolowanej powłoki. Gdy jesteś gotowy do zapisu w programu instalacyjnego, która wdraża aplikację, należy pobrać pakiet redystrybucyjny programu shell w trybie izolowanym z [pakiet redystrybucyjny Microsoft Visual Studio Shell (Isolated)](http://go.microsoft.com/fwlink/?LinkId=616022).  
-  
-> [!NOTE]
-> Aby korzystać z pakietu redystrybucyjnego programu shell w trybie izolowanym, poprosimy Cię o ankiety klientów.  Po wypełnieniu ankiety, nastąpi przekierowanie do strony Visual Studio Connect zawierającej łącza pobierania pakietów redystrybucyjnych.  Łącza pobierania podczas kolejnych wizyt w witrynie Visual Studio Connect, w obszarze **programy &#124; VISUAL STUDIO 2015 ZINTEGROWANE i ISOLATED SHELL** kartę.  
+ Aby utworzyć izolowaną aplikację powłoki, Zacznij od projektu programu Visual Studio Shell izolowanego. Ten projekt zawiera wszystko, czego potrzebujesz do opracowania i przetestowania własnej aplikacji powłoki izolowanej. Gdy wszystko jest gotowe do napisania programu instalacyjnego, który wdraża aplikację, należy uzyskać pakiet redystrybucyjny izolowanej powłoki z [Microsoft Visual Studio Shell (izolowany) pakietu redystrybucyjnego](https://go.microsoft.com/fwlink/?LinkId=616022).  
   
 > [!NOTE]
-> Aby uzyskać więcej informacji o sposobie wdrażania aplikacji opartych na powłoce izolowanej zobacz [instruktażu: Tworzenie prostej Isolated Shell aplikacji](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+> Przed uzyskaniem dostępu do pakietu redystrybucyjnego izolowanej powłoki zostanie wyświetlony monit o wypełnienie krótkiej ankiety klienta.  Po wypełnieniu ankiety nastąpi przekierowanie do strony programu Visual Studio Connect z linkami pobierania pakietu redystrybucyjnego.  Linki do pobrania można znaleźć w kolejnych odwiedzinach w witrynie programu Visual Studio Connect w obszarze **programy &#124; Visual Studio 2015 Integrated i izolowana powłoka** .  
   
-## <a name="working-with-the-isolated-shell"></a>Praca z programu isolated shell  
- Aplikacji powłoki programu Visual Studio, izolowany ma pełny dostęp do usług Visual Studio i obsługuje specjalnego dostosowania, znakowania. Istnieje kilka sposobów, które można dostosować aplikacji isolated shell:  
+> [!NOTE]
+> Aby uzyskać więcej informacji o sposobie wdrażania izolowanej aplikacji opartej na powłokach, zobacz [Przewodnik: Tworzenie podstawowej aplikacji powłoki izolowanej](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
-- Składniki pakietów VSPackage a Managed Extensibility Framework (MEF) umożliwia rozszerzanie aplikacji isolated shell, tak samo, jak mogłaby być używana w inne rozszerzenia programu Visual Studio. Aby uzyskać więcej informacji, zobacz [Rozszerzanie programu Isolated Shell](../extensibility/extending-the-isolated-shell.md).  
+## <a name="working-with-the-isolated-shell"></a>Praca z powłoką izolowaną  
+ Aplikacja powłoki izolowanej programu Visual Studio ma pełny dostęp do usług Visual Studio i obsługuje specjalne Dostosowywanie i znakowanie. Istnieje kilka sposobów dostosowywania izolowanej aplikacji powłoki:  
   
-- Aby funkcje programu Visual Studio i grup poleceń menu dostępne lub niedostępne, należy zaktualizować pliku vsct w projekcie interfejsu użytkownika aplikacji.  
+- Można użyć części składników pakietów VSPackage i Managed Extensibility Framework (MEF), aby rozszerzać izolowaną aplikację powłoki tak samo jak w przypadku innych rozszerzeń programu Visual Studio. Aby uzyskać więcej informacji, zobacz [rozszerzanie izolowanej powłoki](../extensibility/extending-the-isolated-shell.md).  
   
-- Aby usunąć **opcje** stron lub innych składników powłoki programu Visual Studio z poziomu aplikacji, należy zaktualizować pliku pkgundef aplikacji.  
+- Aby umożliwić dostęp do funkcji i grup poleceń menu programu Visual Studio, zaktualizuj plik vsct w projekcie interfejsu użytkownika aplikacji.  
   
-- Aby zmodyfikować inne aspekty wygląd lub zachowanie powłoki, należy zaktualizować plik .pkgdef aplikacji.  
+- Aby usunąć strony **opcji** lub inne składniki programu Visual Studio Shell z aplikacji, zaktualizuj plik. pkgundef aplikacji.  
   
-- Niektóre aspekty powłoki można również określić po uruchomieniu aplikacji. Aby to zrobić, zaktualizuj parametry w wywołaniu punkt wejścia Start appenvstub.dll.  
+- Aby zmodyfikować inne aspekty wyglądu lub zachowania powłoki, zaktualizuj plik. pkgdef aplikacji.  
   
-  Aby uzyskać więcej informacji na temat różnych elementów, które można dostosować, zobacz [elementy programu Isolated Shell](../extensibility/elements-of-the-isolated-shell.md).  
+- Niektóre aspekty powłoki można także określić, gdy aplikacja jest uruchomiona. W tym celu należy zaktualizować parametry w wywołaniu punktu wejścia startowego Appenvstub. dll.  
   
-## <a name="standard-features-of-the-isolated-shell"></a>Standardowe funkcje programu Isolated Shell  
- Następujące funkcje są standardowe dla wszystkich edycji programu Visual Studio.  
+  Aby uzyskać więcej informacji na temat różnych elementów, które można dostosować, zobacz [elementy powłoki izolowanej](../extensibility/elements-of-the-isolated-shell.md).  
   
-|Kategoria funkcji|Funkcja|  
+## <a name="standard-features-of-the-isolated-shell"></a>Standardowe funkcje powłoki izolowanej  
+ Poniższe funkcje są standardowe dla wszystkich wersji programu Visual Studio.  
+  
+|Kategoria funkcji|Cecha|  
 |----------------------|-------------|  
-|Funkcje środowiska IDE|Ustawienia importu/eksportu<br /><br /> Instalator kontrolki przybornika<br /><br /> Lista zadań & Lista błędów<br /><br /> Okno wyniku<br /><br /> Strona początkowa<br /><br /> Okno Właściwości<br /><br /> Przybornik<br /><br /> Eksplorator rozwiązań<br /><br /> Okno zakładek<br /><br /> Widok klas<br /><br /> Przeglądarka obiektów<br /><br /> Okno polecenia<br /><br /> Konspekt dokumentu<br /><br /> Widok zasobów<br /><br /> Narzędzie zewnętrzne<br /><br /> Windows Communication Foundation (WCF) Dodaj odwołanie do usługi<br /><br /> Language Integrated Query (LINQ) pomocy technicznej|  
-|Projektant/Edytor|Kod przeglądający narzędzia (ujednolicone wyszukiwanie, definicja źródła, dziedziczenie)<br /><br /> IntelliSense<br /><br /> SmartTags<br /><br /> Menedżer fragmentów kodu<br /><br /> Wstawki kodu<br /><br /> Refaktoryzacja<br /><br /> Lista pretty<br /><br /> Filtrowanie IntelliSense<br /><br /> Okno definicji kodu<br /><br /> Projektant aplikacji<br /><br /> Projektant Windows Forms<br /><br /> Projektant programu Windows Presentation Foundation (WPF)|  
-|Debugowanie|Ewaluator wyrażeń C#<br /><br /> Debugowanie lokalne<br /><br /> Zarządzanie debugowaniem<br /><br /> Edytuj i kontynuuj<br /><br /> Debugowanie między wątkami<br /><br /> wizualizacje<br /><br /> DataTips<br /><br /> Debugowanie w trybie macierzystym<br /><br /> Debugowanie skryptów<br /><br /> Debugowania międzyoperacyjnego<br /><br /> Debugowanie just-in-time (JIT)<br /><br /> Debugowanie wielu procesów<br /><br /> Debugowanie kodu XSLT<br /><br /> Dołącz do procesu lokalnego<br /><br /> Punkty śledzenia<br /><br /> Ograniczenia punktu przerwania|  
-|Dane|Eksplorator serwera (uproszczony — tylko dane)<br /><br /> Powiązanie danych z danymi lokalnymi (. MDF lub. MDB)<br /><br /> Powiązanie danych z obiektu<br /><br /> Powiązanie danych z usługi sieci Web<br /><br /> Pełny zestaw formantów danych<br /><br /> Edytor XML<br /><br /> Powiąż dane z lokalnej bazy danych serwera<br /><br /> Data Sources — Okno|  
+|Funkcje środowiska IDE|Ustawienia importu/eksportu<br /><br /> Instalator kontrolki przybornika<br /><br /> Lista zadań & Lista błędów<br /><br /> Okno wyniku<br /><br /> Strona początkowa<br /><br /> Okno Właściwości<br /><br /> Przybornik<br /><br /> Eksplorator rozwiązań<br /><br /> Okno zakładek<br /><br /> Widok klas<br /><br /> Przeglądarka obiektów<br /><br /> Okno polecenia<br /><br /> Konspekt dokumentu<br /><br /> Widok zasobów<br /><br /> Narzędzie zewnętrzne<br /><br /> Dodaj odwołanie do usługi Windows Communication Foundation (WCF)<br /><br /> Obsługa zapytań języka Integrated Language (LINQ)|  
+|Edytor/Projektant|Narzędzia do przeglądania kodu (ujednolicone Znajdowanie, definicja źródła, dziedziczenie)<br /><br /> IntelliSense<br /><br /> SmartTags<br /><br /> Menedżer fragmentów kodu<br /><br /> Wstawki kodu<br /><br /> Refaktoryzacja<br /><br /> Łatwa lista<br /><br /> Filtrowanie IntelliSense<br /><br /> Okno definicji kodu<br /><br /> projektant aplikacji<br /><br /> Projektant Windows Forms<br /><br /> Projektant Windows Presentation Foundation (WPF)|  
+|Debugowanie|C#Ewaluatora wyrażeń<br /><br /> Debugowanie lokalne<br /><br /> Debugowanie zarządzane<br /><br /> Edytuj i kontynuuj<br /><br /> Debugowanie między wątkami<br /><br /> Wizualizacje<br /><br /> DataTips<br /><br /> Debugowanie natywne<br /><br /> Debugowanie skryptów<br /><br /> Debugowanie międzyoperacyjności<br /><br /> Debugowanie just-in-Time (JIT)<br /><br /> Debugowanie wieloprocesowe<br /><br /> Debugowanie kodu XSLT<br /><br /> Dołącz do procesu lokalnego<br /><br /> Punkty śledzenia<br /><br /> Ograniczenia punktów przerwania|  
+|Dane|Eksplorator serwera (tylko dane uproszczone)<br /><br /> Dane są powiązane z danymi lokalnymi (. MDF lub. MDB<br /><br /> Powiązanie danych z obiektem<br /><br /> Powiązanie danych z usługą sieci Web<br /><br /> Pełny zestaw kontrolek danych<br /><br /> Edytor XML<br /><br /> Powiązanie danych z lokalnym serwerem baz danych<br /><br /> Data Sources — Okno|  
 |sieć Web|Edytor HTML<br /><br /> Przeglądarki sieci Web<br /><br /> Projektant formularzy sieci Web<br /><br /> Projekt witryny sieci Web<br /><br /> Projekt aplikacji sieci Web|  
-|Rozszerzalność|Wykorzystuje składniki pakietów VSPackage i MEF|  
+|Rozszerzalność|Używa składników pakietów VSPackage i MEF|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Shell (Isolated lub Integrated)](../extensibility/shell-isolated-or-integrated.md)

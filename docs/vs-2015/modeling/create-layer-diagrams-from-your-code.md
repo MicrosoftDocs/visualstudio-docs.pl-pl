@@ -14,12 +14,12 @@ caps.latest.revision: 64
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 138f818eab34b0b1860c7daa85f1b6814888fc9b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3e6cd77e785adb59fc8b2cf3b28724ed0efe1ae3
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652847"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300271"
 ---
 # <a name="create-layer-diagrams-from-your-code"></a>Tworzenie diagramów warstw z kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ Aby wizualizować architekturę logiczną wysokiego poziomu systemu oprogramowan
 
  Aby sprawdzić, czy połączony element obsługuje walidację, Otwórz **Eksploratora warstw** i sprawdź Właściwość **obsługuje walidację** elementu. Zobacz [Zarządzanie łączami do artefaktów](#Managing).
 
-|**Do**|**Wykonaj następujące kroki**|
+|**To**|**Wykonaj następujące kroki**|
 |------------|----------------------------|
 |Utworzyć warstwę dla pojedynczego artefakt|<ol><li>Przeciągnij element na diagram warstwy z następujących źródeł:<br /><br /> <ul><li>**Eksplorator rozwiązań**<br /><br />         Możesz na przykład przeciągać pliki lub projekty.</li><li>Mapy kodu<br /><br />         Zapoznaj się z [zależnościami mapy w swoich rozwiązaniach](../modeling/map-dependencies-across-your-solutions.md) i [korzystaj z map kodu do debugowania aplikacji](../modeling/use-code-maps-to-debug-your-applications.md).</li><li>**Widok klasy** lub **Przeglądarka obiektów**</li></ul><br />     Warstwy jest wyświetlana na diagramie i jest połączona z artefaktem.</li><li>Zmień nazwę warstwy, aby odzwierciedlała obowiązki skojarzonego kodu lub artefaktów.</li></ol> **Ważne:**  Przeciąganie plików binarnych do diagramu warstwowego nie powoduje automatycznego dodania odwołań do projektu modelowania. Musisz ręcznie dodać do projektu modelowania pliki binarne, które chcesz walidować. **Aby dodać pliki binarne do projektu modelowania** <ol><li>W **Eksplorator rozwiązań**Otwórz menu skrótów dla projektu modelowania, a następnie wybierz **Dodaj istniejący element**.</li><li>W oknie dialogowym **Dodaj istniejący element** przejdź do plików binarnych, zaznacz je, a następnie wybierz **przycisk OK**.     Pliki binarne pojawią się w projekcie modelowania.</li><li>W **Eksplorator rozwiązań**wybierz plik binarny, który został dodany, a następnie naciśnij klawisz **F4** , aby otworzyć okno **Właściwości** .</li><li>Dla każdego pliku binarnego ustaw właściwość **Akcja kompilacji** na **Sprawdź poprawność**.</li></ol>|
 |Utwórz jedną warstwę dla wszystkich zaznaczonych artefaktów|Przeciągnij wszystkie artefakty do diagramu warstwowego w tym samym czasie.<br /><br /> Warstw pojawi się na diagramie i będzie połączona z artefaktami.|
@@ -94,7 +94,7 @@ Aby wizualizować architekturę logiczną wysokiego poziomu systemu oprogramowan
 
 2. Wykonaj następujące zadania, aby zarządzać tymi łączami:
 
-|**Do**|**W Eksploratorze warstwy**|
+|**To**|**W Eksploratorze warstwy**|
 |------------|---------------------------|
 |Usuwanie łącza między warstwą i artefaktem|Otwórz menu skrótów dla łącza artefaktu, a następnie wybierz polecenie **Usuń**.|
 |Przenoszenie łącza z jednej warstwy na drugą|Przeciągnij łącze artefaktu do istniejącej warstwy na diagramie.<br /><br /> oraz<br /><br /> 1. Otwórz menu skrótów dla łącza artefaktu, a następnie wybierz polecenie **Wytnij**.<br />2. na diagramie warstwowym Otwórz menu skrótów dla warstwy, a następnie wybierz **Wklej**.|
@@ -115,7 +115,7 @@ Aby wizualizować architekturę logiczną wysokiego poziomu systemu oprogramowan
 ## <a name="EditDependencies"></a>Edycja warstw i zależności w celu pokazania zamierzonego projektu
  Do opisania zmian, które planujesz wprowadzić do systemu lub zamierzonej architektury, przeprowadź edycję diagramu warstwowego:
 
-|**Do**|**Wykonaj następujące kroki**|
+|**To**|**Wykonaj następujące kroki**|
 |------------|-----------------------------|
 |Zmień lub ogranicz kierunek zależności|Ustaw jej właściwość **Direction** .|
 |Tworzenie nowych zależności|Użyj **zależności** i **dwukierunkowych narzędzi zależności** .<br /><br /> Aby narysować wiele zależności, kliknij dwukrotnie narzędzie. Gdy skończysz, wybierz narzędzie **wskaźnik** lub naciśnij klawisz **ESC** .|
@@ -136,4 +136,4 @@ Aby wizualizować architekturę logiczną wysokiego poziomu systemu oprogramowan
 - [Wyszukiwanie potencjalnych problemów za pomocą analizatorów mapy kodu](../modeling/find-potential-problems-using-code-map-analyzers.md)
 
 ## <a name="see-also"></a>Zobacz też
- [Wideo Channel 9: projektowanie i weryfikowanie architektury przy użyciu](http://go.microsoft.com/fwlink/?LinkID=252073) diagramów warstwowych diagramy: Diagramy warstw [referencyjnych](../modeling/layer-diagrams-reference.md) [: wskazówki](../modeling/layer-diagrams-guidelines.md) [Weryfikuj kod przy użyciu diagramów warstw](../modeling/validate-code-with-layer-diagrams.md) [Wizualizacja kodu](../modeling/visualize-code.md)
+ [Wideo Channel 9: projektowanie i weryfikowanie architektury przy użyciu](https://go.microsoft.com/fwlink/?LinkID=252073) diagramów warstwowych diagramy: Diagramy warstw [referencyjnych](../modeling/layer-diagrams-reference.md) [: wskazówki](../modeling/layer-diagrams-guidelines.md) [Weryfikuj kod przy użyciu diagramów warstw](../modeling/validate-code-with-layer-diagrams.md) [Wizualizacja kodu](../modeling/visualize-code.md)

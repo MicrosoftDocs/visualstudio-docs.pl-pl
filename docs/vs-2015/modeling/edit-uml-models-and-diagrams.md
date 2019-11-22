@@ -21,12 +21,12 @@ caps.latest.revision: 86
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6585fbfa7c16e710633e81841b4c8eb380f9f564
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 00ac30cc7e9ee3aff0dd64f015a4b4954972c09a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669722"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295525"
 ---
 # <a name="edit-uml-models-and-diagrams"></a>Edytowanie modeli i diagramów UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -140,7 +140,7 @@ Możesz tworzyć i edytować model UML za pomocą widoków udostępnianych przez
 
    - Naciśnij klawisz **Ctrl** i Przenieś koniec.
 
-     \- lub-
+     \- lub —
 
    - Kliknij prawym przyciskiem myszy łącznik, a następnie kliknij polecenie **Połącz ponownie**.
 
@@ -158,11 +158,11 @@ Możesz tworzyć i edytować model UML za pomocą widoków udostępnianych przez
 
 - Naciśnij i przytrzymaj klawisz **Ctrl** podczas obracania kółka myszy.
 
-     \- lub-
+     \- lub —
 
 - Naciśnij i przytrzymaj **klawisze Ctrl + Shift**, a następnie kliknij lewy lub prawy przycisk myszy.
 
-     \- lub-
+     \- lub —
 
 - Na pasku narzędzi **projektanci architektury** kliknij znak plusa ( **+** ) lub znak minus ( **-** ) lub wybierz poziom powiększenia.
 
@@ -173,7 +173,7 @@ Możesz tworzyć i edytować model UML za pomocą widoków udostępnianych przez
 
 1. Naciśnij **klawisze CTRL + F**.
 
-     \- lub-
+     \- lub —
 
      W menu **Edycja** wskaż polecenie **Znajdź i Zamień**, a następnie kliknij polecenie **szybkie znajdowanie**.
 
@@ -282,7 +282,7 @@ Możesz tworzyć i edytować model UML za pomocą widoków udostępnianych przez
 
 - Kliknij prawym przyciskiem myszy element na diagramie, a następnie kliknij polecenie **Usuń z diagramu**.
 
-  \- lub-
+  \- lub —
 
 - Kliknij element na diagramie, a następnie naciśnij klawisz **delete** .
 
@@ -320,23 +320,11 @@ Możesz tworzyć i edytować model UML za pomocą widoków udostępnianych przez
 
 - Aby dodać uwagi i wyjaśnienia do elementów modelu, można utworzyć komentarze, a następnie połączyć je z elementami.
 
-- Aby starannie wyrównać kształty kolumn lub wierszy na diagramie, można zainstalować polecenie Wyrównaj kształty. Jest to możliwe jako przykładowe rozszerzenie UML: [UML: polecenie do wyrównywania kształtów](http://code.msdn.microsoft.com/UML-command-to-Align-4139c0d7)
-
 ### <a name="to-export-a-diagram-as-an-image"></a>Aby wyeksportować diagram jako obraz
  Aby uzyskać więcej informacji, zobacz [Eksportowanie diagramów jako obrazów](../modeling/export-diagrams-as-images.md).
 
 ## <a name="extensions"></a>Rozszerzanie projektantów UML
  Możesz dodać nowe funkcje do narzędzi UML i dostosować do własnych potrzeb notację diagramu. Aby uzyskać więcej informacji, zobacz [rozszerzając modele UML i diagramy](../modeling/extend-uml-models-and-diagrams.md).
-
- Dostępne są kilka przykładowych rozszerzeń. Można je zainstalować i używać lub użyć ich kodu źródłowego jako podstawy własnych rozszerzeń. Przykłady obejmują:
-
-|||
-|-|-|
-|[Wyrównaj kształty](http://code.msdn.microsoft.com/UML-command-to-Align-4139c0d7)|Polecenie menu, które ułatwia uporządkowanego diagramu.|
-|[Link do witryny docs](http://code.msdn.microsoft.com/Link-UML-elements-to-0adbf5a8)|Połącz dowolny element UML z nagłówkami programu Word, slajdami programu PowerPoint, plikami dowolnego typu, diagramów UML lub innymi elementami UML. Łącze można wykonać po prostu przeciągając. Później można kliknąć dwukrotnie element, aby wyświetlić połączony element. Można na przykład połączyć przypadki użycia z specyfikacjami programu Word lub szczegółowymi diagramami aktywności oraz akcjami na slajdach scenorysu.|
-|[Szybkie wprowadzanie](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a)|Szybko Utwórz model przy użyciu wpisu tekstu. Przydatne do przechwytywania pomysłów w spotkaniach.|
-|[Kolor według stereotypu](http://code.msdn.microsoft.com/UML-Color-Classes-by-07de2b70)|Klasy kolorów według stereotypu. Możesz łatwo zwiększyć kod, aby działał na własnych stereotypach.|
-|[Modelowanie domen](http://code.msdn.microsoft.com/UML-Domain-Modeling-6df6f7f4)|Wygodne wartości domyślne dla modeli firmy. Skojarzenia są wyświetlane bez strzałek domyślnie, a operacje nie są wyświetlane w klasach.|
 
 ## <a name="see-also"></a>Zobacz też
  [Tworzenie projektów modelowania UML i diagramów](../modeling/create-uml-modeling-projects-and-diagrams.md) [analizowanie i architektura](../modeling/analyze-and-model-your-architecture.md) [Tworzenie modeli dla aplikacji](../modeling/create-models-for-your-app.md)

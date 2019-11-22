@@ -12,12 +12,12 @@ ms.technology: vs-azure
 ms.custom: vs-azure
 ms.date: 12/16/2015
 ms.author: mlearned
-ms.openlocfilehash: 4bfda342952820b4472a1f826273a7b9075faa9a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4f84970daea03904d4642317cf6097beb07be7f1
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963992"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300187"
 ---
 # <a name="adding-mobile-services-by-using-visual-studio-connected-services"></a>Dodawanie usługi Mobile Services za pomocą programu Visual Studio podłączone usługi
 Za pomocą programu Visual Studio 2015, możesz nawiązać połączenie przy użyciu usług Azure Mobile Services **Dodaj podłączoną usługę** okna dialogowego. Możesz połączyć się z dowolnej aplikacji klienckiej języka C#, dowolnej aplikacji JavaScript lub aplikacji Cordova dla wielu platform. Po nawiązaniu połączenia, można utworzyć i uzyskać dostęp do danych, tworzenie niestandardowych interfejsów API i zaplanowane zadania lub dodawać obsługę powiadomień wypychanych.  Operacja usług połączonych dodaje wszystkie odpowiednie odwołania i kod połączenia. Możesz również korzystać z zalet wbudowanej obsługi uwierzytelniania przy użyciu różnych popularnych schematów tożsamości, takiego jak Azure AD, Facebook, Twitter i Accounts firmy Microsoft.
@@ -35,7 +35,7 @@ Nawiązać połączenia z usług Azure Mobile Services w poniższych typów proj
 * Projekty utworzone za pomocą programu Visual Studio Tools for Apache Cordova
 
 ## <a name="connect-to-azure-mobile-services-using-the-add-connected-services-dialog"></a>Łączenie usług Azure Mobile Services za pomocą okna dialogowego Dodawanie podłączonych usług
-1. Upewnij się, że masz konto platformy Azure. Jeśli nie masz konta platformy Azure, możesz zarejestrować się w celu [bezpłatna wersja próbna](http://go.microsoft.com/fwlink/?LinkId=518146).
+1. Upewnij się, że masz konto platformy Azure. Jeśli nie masz konta platformy Azure, możesz zarejestrować się w celu [bezpłatna wersja próbna](https://go.microsoft.com/fwlink/?LinkId=518146).
 2. Otwórz **Dodaj usługi połączone** okno dialogowe.
 
    * W przypadku aplikacji .NET Otwórz projekt w programie Visual Studio, otwórz menu kontekstowe dla **odwołania** węzła w Eksploratorze rozwiązań, a następnie wybierz **Dodaj podłączoną usługę**
@@ -49,7 +49,7 @@ Nawiązać połączenia z usług Azure Mobile Services w poniższych typów proj
 
     Aby utworzyć nowe konto usługi mobilnej:
 
-   1. Wybierz **żądania utworzenia usługi** widocznego u dołu okna dialogowego.
+   1. Wybierz łącze **Utwórz usługę** u dołu okna dialogowego.
        ![Dodawanie nowej połączonej usługi mobilnej](./media/vs-azure-tools-connected-services-add-mobile-services/IC797637.png)
    2. Na **Tworzenie usługi mobilnej** okno dialogowe, można wybrać usługi mobilnej zaplecza JavaScript lub usługi mobilnej zaplecza platformy .NET z **środowiska uruchomieniowego** listy rozwijanej.
 
@@ -65,7 +65,7 @@ Nawiązać połączenia z usług Azure Mobile Services w poniższych typów proj
 6. Używając przykładów kodu jako wskazówki, zacznij pisanie kodu w celu uzyskania dostępu do usługi mobilnej!
 
 ## <a name="how-your-project-is-modified"></a>Jak jest modyfikowana projektu
-Jak program Visual Studio modyfikuje projekt zależy od typu projektu. Dla języka C# w aplikacjach klienckich, zobacz [co się stało — projekty języka C#](http://go.microsoft.com/fwlink/p/?LinkId=513119). Dla aplikacji klienckich dla języka JavaScript, zobacz [co się stało — projekty języka JavaScript](http://go.microsoft.com/fwlink/p/?LinkId=513120). W przypadku aplikacji Cordova zobacz [co się stało — projektów Cordova](http://go.microsoft.com/fwlink/p/?LinkId=513116).
+Jak program Visual Studio modyfikuje projekt zależy od typu projektu. Dla języka C# w aplikacjach klienckich, zobacz [co się stało — projekty języka C#](https://go.microsoft.com/fwlink/p/?LinkId=513119). Dla aplikacji klienckich dla języka JavaScript, zobacz [co się stało — projekty języka JavaScript](https://go.microsoft.com/fwlink/p/?LinkId=513120). W przypadku aplikacji Cordova zobacz [co się stało — projektów Cordova](https://go.microsoft.com/fwlink/p/?LinkId=513116).
 
 ## <a name="next-steps"></a>Następne kroki
 Zadawanie pytań i uzyskiwanie pomocy:

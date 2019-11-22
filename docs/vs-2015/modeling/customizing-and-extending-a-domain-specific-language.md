@@ -11,12 +11,12 @@ caps.latest.revision: 50
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b02b1e5bac7f39bcabb9cdc9b5c3acabe169827b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8de964bebb59507da06bb4444ffd6067ffc43b63
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655088"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299347"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Dostosowywanie i rozszerzanie języka specyficznego dla domeny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,8 +45,8 @@ Zestaw SDK programu Visual Studio Modeling and wizualizacji (VMSDK) udostępnia 
 |Ikona zmiany kształtu wskazująca stan.|Ustaw widoczność mapowania dekoratora w oknie Szczegóły DSL. Znajdź kilka dekoratory obrazów w tym samym położeniu. Zobacz [Aktualizowanie kształtów i łączników, aby odzwierciedlały model](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md).<br /><br /> Lub Zastąp `ImageField.GetDisplayImage()`. Zobacz przykład w <xref:Microsoft.VisualStudio.Modeling.Diagrams.ImageField>.|
 |Ustaw obraz tła na dowolnym kształcie|Zastąp InitializeInstanceResources (), aby dodać kotwicę ImageField. Zobacz [Dostosowywanie prezentacji na diagramie](../modeling/customizing-presentation-on-the-diagram.md).|
 |Zagnieżdżanie kształtów do dowolnej głębokości|Skonfiguruj cykliczne drzewo osadzania. Zdefiniuj BoundsRules — tak, aby zawierały kształty. Zobacz [Dostosowywanie prezentacji na diagramie](../modeling/customizing-presentation-on-the-diagram.md).|
-|Dołącz łączniki dla stałych punktów na granicy elementu.|Zdefiniuj osadzone elementy terminalu reprezentowane przez małe porty na diagramie. Użyj BoundsRules —, aby naprawić porty w miejscu. Zobacz przykład diagramu obwodowego w temacie [Wizualizacja i modelowanie SDK](http://go.microsoft.com/fwlink/?LinkID=186128).|
-|Pole tekstowe wyświetla wartość pochodną od innych wartości.|Zamapuj tekst dekoratora na Właściwość obliczeniową lub niestandardową domeny magazynu. Aby uzyskać więcej informacji, zobacz [właściwości magazynu obliczeniowego i niestandardowego](../modeling/calculated-and-custom-storage-properties.md).|
+|Dołącz łączniki dla stałych punktów na granicy elementu.|Zdefiniuj osadzone elementy terminalu reprezentowane przez małe porty na diagramie. Użyj BoundsRules —, aby naprawić porty w miejscu. Zobacz przykład diagramu obwodowego w temacie [Wizualizacja i modelowanie SDK](https://go.microsoft.com/fwlink/?LinkID=186128).|
+|Pole tekstowe wyświetla wartość pochodną od innych wartości.|Zamapuj tekst dekoratora na Właściwość obliczeniową lub niestandardową domeny magazynu. Aby uzyskać więcej informacji, zobacz [obliczeniowe i niestandardowe właściwości przechowywania](../modeling/calculated-and-custom-storage-properties.md).|
 |Propagowanie zmian między elementami modelu lub między kształtami|Zobacz [Walidacja w języku specyficznym dla domeny](../modeling/validation-in-a-domain-specific-language.md).|
 |Propaguj zmiany do zasobów, takich jak inne rozszerzenia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] poza magazynem.|Zobacz [programy obsługi zdarzeń propagują zmiany poza modelem](../modeling/event-handlers-propagate-changes-outside-the-model.md).|
 |W oknie właściwości są wyświetlane właściwości powiązanego elementu.|Skonfiguruj przekazywanie właściwości. Zobacz [Dostosowywanie okna właściwości](../modeling/customizing-the-properties-window.md).|
@@ -58,7 +58,7 @@ Zestaw SDK programu Visual Studio Modeling and wizualizacji (VMSDK) udostępnia 
 |Usuń, Zmień element nadrzędny lub Połącz ponownie powiązane elementy po usunięciu elementu.|Ustaw wartość opcji **Usuń propagacje** roli relacji. W przypadku bardziej złożonych efektów Zastąp metody `ShouldVisitRelationship` i `ShouldVisitRolePlayer` w klasie `MyDslDeleteClosure`, zdefiniowane w **DomainModel.cs**<br /><br /> Zobacz [Dostosowywanie zachowania usuwania](../modeling/customizing-deletion-behavior.md)|
 |Zachowanie układu kształtu i wyglądu przy kopiowaniu i przeciąganiu.|Dodaj kształty i łączniki do skopiowanego `ElementGroupPrototype`. Najbardziej wygodną metodą przesłonięcia jest `ElementOperations.CreateElementGroupPrototype()`<br /><br /> Zobacz [Dostosowywanie zachowania kopiowania](../modeling/customizing-copy-behavior.md).|
 |Wklej kształty w wybranej lokalizacji, na przykład w bieżącym położeniu kursora.|Zastąp `ClipboardCommandSet.ProcessOnCopy()`, aby użyć wersji `ElementOperations.Merge().` określonej dla lokalizacji, zobacz [Dostosowywanie zachowania kopiowania](../modeling/customizing-copy-behavior.md).|
-|Utwórz dodatkowe linki przy wklejaniu|Zastąp ClipboardCommandSet. ProcessOnPasteCommand ()|
+|Utwórz dodatkowe linki przy wklejaniu|Override ClipboardCommandSet.ProcessOnPasteCommand()|
 |Włącz przeciąganie i upuszczanie z tego diagramu, innych diagramów językami DSL lub UML i elementów systemu Windows|Zobacz [jak: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-to-add-a-drag-and-drop-handler.md)|
 |Umożliwia przeciągnięcie kształtu lub narzędzia do kształtu podrzędnego, takiego jak port, tak jakby był przeciągany do elementu nadrzędnego.|Zdefiniuj dyrektywę scalania elementów w klasie obiektu docelowego, aby przesłać do przodu usunięty obiekt do elementu nadrzędnego. Zobacz [Dostosowywanie tworzenia i przenoszenia elementów](../modeling/customizing-element-creation-and-movement.md).|
 |Umożliwia przeciągnięcie kształtu lub narzędzia do kształtu i dodanie dodatkowych linków lub obiektów. Na przykład, aby zezwolić na porzucenie komentarza do elementu, do którego ma być ono połączone.|Zdefiniuj dyrektywę scalenia elementów w klasie domeny docelowej i zdefiniuj linki do wygenerowania. W złożonych przypadkach można dodać kod niestandardowy. Zobacz [Dostosowywanie tworzenia i przenoszenia elementów](../modeling/customizing-element-creation-and-movement.md).|

@@ -9,19 +9,19 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b683e2d266e065ce9fcf7caa1943cd44d1bd9be6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8eb2d4f5b025be6f68860c18d1c14da017aaf3fe
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664725"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74294324"
 ---
 # <a name="draw-shapes-and-paths"></a>Rysowanie kształtów i ścieżek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W projektant XAML *kształt* jest dokładnie to, czego oczekujesz. Na przykład: prostokąt, okrąg lub Elipsa. *Ścieżka* jest bardziej elastyczną wersją kształtu. Można wykonywać inne czynności, takie jak zmiana kształtu lub łączenie ich ze sobą w celu utworzenia nowych kształtów.
 
- Kształty i ścieżki używają grafiki wektorowej, dzięki czemu są skalowane do wyświetlania o wysokiej rozdzielczości. Jeśli chcesz dowiedzieć się więcej na temat grafiki wektorowej, zobacz [co to jest grafika wektorowa](https://www.youtube.com/watch?v=MoCSwF0n-io) lub [grafika wektorowa](http://www.webopedia.com/TERM/V/vector_graphics.html).
+ Kształty i ścieżki używają grafiki wektorowej, dzięki czemu są skalowane do wyświetlania o wysokiej rozdzielczości. Jeśli chcesz dowiedzieć się więcej na temat grafiki wektorowej, zobacz [co to jest grafika wektorowa](https://www.youtube.com/watch?v=MoCSwF0n-io) lub [grafika wektorowa](https://www.webopedia.com/TERM/V/vector_graphics.html).
 
  **W tym temacie:**
 

@@ -1,5 +1,5 @@
 ---
-title: Perftip | Dokumentacja firmy Microsoft
+title: Funkcja PerfTip | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,50 +9,50 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aac7068fae27e2f0ba699f404374859ef7b91d1a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: fa56b6731e359db486a111194a710069d41a2f1b
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65675315"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295868"
 ---
-# <a name="perftips"></a>Perftip
+# <a name="perftips"></a>Wskazówki dotyczące wydajności
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Debuger programu Visual Studio *Perftip* i zintegrowane z debugerem **narzędzia diagnostyczne** ułatwiają monitorowanie i analizowanie wydajności aplikacji podczas debugowania.  
+Debuger programu Visual Studio *Funkcja PerfTip* i zintegrowany z debugerem **Narzędzia diagnostyczne** ułatwia monitorowanie i analizowanie wydajności aplikacji podczas debugowania.  
   
- Mimo że narzędzia diagnostyczne zintegrowane z debugerem to doskonały sposób stać się znane problemy z wydajnością podczas opracowywania, debuger może mieć znaczący wpływ na wydajność aplikacji. Aby zbierać dokładniejsze dane dotyczące wydajności, należy rozważyć użycie narzędzia diagnostyczne Visual Studio, działających poza debugerem zbyt jako dodatkową część swoje badania wydajności. Zobacz [uruchamianie narzędzi profilowania bez debugowania](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01).  
+ Chociaż narzędzia diagnostyczne zintegrowane z debugerem są doskonałym sposobem, aby poznać problemy z wydajnością podczas opracowywania, debuger może mieć znaczący wpływ na wydajność aplikacji. Aby zebrać dokładniejsze dane dotyczące wydajności, należy rozważyć użycie narzędzi diagnostycznych programu Visual Studio, które są uruchamiane poza debugerem, jako dodatkową częścią dochodzeń związanych z wydajnością. Zobacz [Uruchamianie narzędzi profilowania bez debugowania](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01).  
   
-## <a name="perftips"></a>Perftip  
- Gdy debuger zatrzymuje wykonywanie w punkcie przerwania lub operacji przechodzenia krok po kroku, czas, jaki upłynął od przerwania i poprzedniego punktu przerwania pojawia się jako wskazówkę w oknie edytora. Aby uzyskać więcej informacji, zobacz [Perftip: Wydajność informacji o skrócie podczas debugowania przy użyciu programu Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx).  
+## <a name="perftips"></a>Wskazówki dotyczące wydajności  
+ Gdy debuger przerywa wykonywanie w punkcie przerwania lub operacji krokowej, czas między przerwaniem a poprzednim punktem przerwania pojawia się jako Porada w oknie edytora. Aby uzyskać więcej informacji, zobacz [Funkcja PerfTip: informacje o wydajności w skrócie, podczas debugowania w programie Visual Studio](https://devblogs.microsoft.com/devops/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/).  
   
- ![PerfTip](../profiling/media/dbgdiag-perf-perftip.png "DBGDIAG_PERF_PerfTip")  
+ ![Element PerfTip dla](../profiling/media/dbgdiag-perf-perftip.png "DBGDIAG_PERF_PerfTip")  
   
-## <a name="diagnostics-tools-window"></a>Okno narzędzia diagnostyczne  
- Punkty przerwania i skojarzone chronometrażu danych o chronometrażu są rejestrowane w oknie narzędzia diagnostyczne  
+## <a name="diagnostics-tools-window"></a>Okno narzędzi diagnostycznych  
+ Punkty przerwania i powiązane dane chronometrażu danych chronometrażu są rejestrowane w oknie narzędzia diagnostyczne  
   
- Poniższa ilustracja przedstawia okno narzędzia diagnostyczne w Visual Studio 2015 Update 1:  
+ Na poniższej ilustracji przedstawiono okno narzędzia diagnostyczne w programie Visual Studio 2015 Update 1:  
   
- ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
+ ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools — Update1")  
   
-- **Zdarzenia przerwania** osi czasu Oznacz punkty przerwania, które zostały trafień w sesji debugowania. Kliknij zdarzenie, aby go zaznaczyć **debugera** listy szczegóły.  
+- Oś czasu dla **zdarzeń przerwania** oznacza punkty przerwania, które zostały trafione w sesji debugowania. Kliknij zdarzenie, aby wybrać je na liście szczegóły **debugera** .  
   
-- **Wykorzystanie procesora CPU** wykres przedstawia zmiany w użyciu procesora CPU dla wszystkich rdzeni procesora w sesji debugowania.  
+- Wykres **użycia procesora CPU** przedstawia zmianę użycia procesora CPU we wszystkich rdzeniach procesora w sesji debugowania.  
   
-- **Zdarzenia** listę **debugera** w okienku szczegółów obejmują elementy, dla każdego zdarzenia przerwania.  
+- Lista **zdarzeń** w okienku szczegółów **debugera** zawiera elementy dla każdego zdarzenia przerwania.  
   
-- **Czas trwania** kolumny zdarzeniu przerwania przedstawia czas, jaki upłynął od zdarzenia i poprzedniego punktu przerwania.  
+- Kolumna **Duration** zdarzenia Break Wyświetla czas, który upłynął między zdarzeniem a poprzednim punktem przerwania.  
   
-## <a name="turn-perftips-on-or-off"></a>Włączanie funkcji PerfTips i wyłączanie  
- Aby włączyć lub wyłączyć Perftip:  
+## <a name="turn-perftips-on-or-off"></a>Włącz lub Wyłącz funkcja PerfTip  
+ Aby włączyć lub wyłączyć funkcja PerfTip:  
   
-1. Na **debugowania** menu, wybierz **opcje**.  
+1. W menu **debugowanie** wybierz **Opcje**.  
   
-2. Zaznacz lub wyczyść **Pokaż upłynęło PerfTip podczas debugowania**.  
+2. Zaznacz lub wyczyść **Widok element PerfTip dla, który upłynął podczas debugowania**.  
   
-## <a name="turn-the-diagnostic-tools-window-on-or-off"></a>Włącz okno narzędzia diagnostyczne lub wyłącz  
- Aby włączyć lub wyłączyć w oknie narzędzia diagnostyczne:  
+## <a name="turn-the-diagnostic-tools-window-on-or-off"></a>Włącz lub Wyłącz okno narzędzia diagnostyczne  
+ Aby włączyć lub wyłączyć okno narzędzia diagnostyczne:  
   
-1. Na **debugowania** menu, wybierz **opcje**.  
+1. W menu **debugowanie** wybierz **Opcje**.  
   
-2. Zaznacz lub wyczyść **Włącz narzędzia diagnostyczne podczas debugowania**.
+2. Zaznacz lub wyczyść **opcję Włącz narzędzia diagnostyczne podczas debugowania**.

@@ -1,5 +1,5 @@
 ---
-title: Tworzenie własnych strony początkowej | Dokumentacja firmy Microsoft
+title: Tworzenie własnej strony początkowej | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -11,52 +11,52 @@ helpviewer_keywords:
 ms.assetid: a0df5b9c-0932-4e54-86f0-28530ad9d684
 caps.latest.revision: 22
 manager: jillfra
-ms.openlocfilehash: cc465ca5bc9474aaba51042d453a57ee7ec124ec
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ceb78d3310f37a58850199b11fb2b2fed86f6799
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432299"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299321"
 ---
-# <a name="creating-your-own-start-page"></a>Tworzenie własną stronę początkową
-Za pomocą szablonu projektu strony Start lub tworząc pustą stronę początkową, można utworzyć niestandardowej strony początkowej.  
+# <a name="creating-your-own-start-page"></a>Tworzenie własnej strony początkowej
+Możesz utworzyć niestandardową stronę początkową przy użyciu szablonu projektu strony początkowej lub przez utworzenie pustej strony początkowej.  
   
- Projektant XAML nie mogą zawierać pełni dokładne wizualnej reprezentacji niestandardowych stron Start ze względu na zależności w modelu aplikacji Visual Studio.  
+ Projektant XAML może nie zapewniać w pełni precyzyjnej wizualizacji niestandardowych stron początkowych ze względu na zależności w modelu aplikacji programu Visual Studio.  
   
-## <a name="using-the-project-template"></a>Przy użyciu szablonu projektu  
- Szablon projektu strona początkowa tworzy projekt strony początkowej, który to kompletna kopia programu Visual Studio strony początkowej. Następnie można edytować strony początkowej do specyfikacji.  
+## <a name="using-the-project-template"></a>Korzystanie z szablonu projektu  
+ Szablon projektu strony początkowej tworzy projekt strony startowej, który jest kompletną kopią strony początkowej programu Visual Studio. Następnie można edytować stronę początkową w swoich specyfikacjach.  
   
-#### <a name="to-create-a-custom-start-page-by-using-the-start-page-project-template"></a>Do utworzenia niestandardowej strony początkowej za pomocą szablonu projektu strona startowa  
+#### <a name="to-create-a-custom-start-page-by-using-the-start-page-project-template"></a>Aby utworzyć niestandardową stronę początkową przy użyciu szablonu projektu Strona początkowa  
   
-1. Pobierz i zainstaluj [szablonu projektu strona startowa](http://go.microsoft.com/fwlink/?LinkId=186204) z galerii Visual Studio.  
+1. Pobierz i zainstaluj [szablon projektu strony początkowej](https://go.microsoft.com/fwlink/?LinkId=186204) z galerii programu Visual Studio.  
   
     > [!WARNING]
-    > W tej chwili nie został uaktualniony szablon projektu Visual Studio 2010 strony początkowej. Aby uzyskać informacje o sposobie uaktualniania tego szablonu, zobacz [jak: Uaktualnienie programu Visual Studio niestandardową stronę początkową](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).  
+    > W tym momencie szablon projektu strony początkowej programu Visual Studio 2010 nie został uaktualniony. Informacje o sposobie uaktualniania tego szablonu znajdują się w temacie [How to: Upgrade the Custom Start niestandardowej strony programu Visual Studio](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).  
   
-2. Po zainstalowaniu szablonu, należy utworzyć nowy projekt strony start z nim.  
+2. Po zainstalowaniu szablonu Utwórz nowy projekt strony początkowej z nim.  
   
-3. W lewym okienku okna dialogowego Nowy projekt w obszarze **zainstalowane szablony**, rozwiń węzeł **inne typy projektów** węzłem, a następnie kliknij przycisk **rozszerzalności**.  
+3. W lewym okienku okna dialogowego Nowy projekt w obszarze **zainstalowane szablony**rozwiń węzeł **Inne typy projektów** , a następnie kliknij pozycję **rozszerzalność**.  
   
-4. W środkowym okienku kliknij **niestandardowy strona startowa**, a następnie nazwij swój projekt i kliknij **OK**.  
+4. W środkowym okienku kliknij pozycję **niestandardowa strona początkowa**, a następnie nazwij projekt i kliknij przycisk **OK**.  
   
-     Program Visual Studio tworzy projekt strony początkowej, który jest pełną kopię programu Visual Studio strony początkowej.  
+     Program Visual Studio tworzy projekt strony startowej, który jest kompletną kopią strony początkowej programu Visual Studio.  
   
-5. Z **Eksploratora rozwiązań**, otwórz **StartPage.xaml**.  
+5. W obszarze **Eksplorator rozwiązań**Otwórz pozycję **Startpage. XAML**.  
   
-6. Edytuj StartPage.xaml.  
+6. Edytuj StartPage. XAML.  
   
-     Możesz wyświetlić swoją pracę, naciskając klawisz F5, aby otworzyć doświadczalne wystąpienie programu Visual Studio za pomocą niestandardowej strony początkowej zainstalowane.  
+     Możesz wyświetlić swoją pracę, naciskając klawisz F5, aby otworzyć eksperymentalne wystąpienie programu Visual Studio z zainstalowaną niestandardową stroną startową.  
   
-## <a name="creating-a-blank-start-page"></a>Tworzenie strony początkowej puste  
- Najprostszym sposobem utworzenia pusta strona początkowa jest użycie szablonu projektu strony początkowej, a następnie usuń zawartość.  
+## <a name="creating-a-blank-start-page"></a>Tworzenie pustej strony początkowej  
+ Najprostszym sposobem tworzenia pustej strony początkowej jest użycie szablonu projektu Strona początkowa, a następnie usunięcie zawartości.  
   
-#### <a name="to-create-a-blank-start-page-by-using-the-start-page-project-template"></a>Aby utworzyć pustą stronę początkową za pomocą szablonu projektu strona startowa  
+#### <a name="to-create-a-blank-start-page-by-using-the-start-page-project-template"></a>Aby utworzyć pustą stronę początkową przy użyciu szablonu projektu Strona początkowa  
   
-1. Utwórz projekt strony początkowej za pomocą szablonu projektu strony początkowej, zgodnie z opisem w poprzedniej procedurze.  
+1. Utwórz projekt strony początkowej przy użyciu szablonu projektu Strona początkowa zgodnie z opisem w poprzedniej procedurze.  
   
-2. Otwórz StartPage.xaml.  
+2. Otwórz StartPage. XAML.  
   
-3. Usuń całą zawartość strony, pozostawiając pouze prvky xml zewnętrznego i zawierający siatki <xref:System.Windows.Controls.Grid> elementu, tak, aby plik .xaml przypomina poniższy przykład.  
+3. Usuń całą zawartość strony, pozostawiając tylko zewnętrzne elementy XML i zawierający siatkę <xref:System.Windows.Controls.Grid>, aby plik. XAML wyglądał podobnie do poniższego przykładu.  
   
    ```xaml
       <Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -74,31 +74,31 @@ Za pomocą szablonu projektu strony Start lub tworząc pustą stronę początkow
    </Grid>
    ```
       
-4. Usuń wszelkie pliki pomocnicze, które będą używane.  
+4. Usuń wszystkie pliki pomocnicze, których nie zamierzasz używać.  
   
-    Należy zachować plików .vsix i .pkgdef do celów wdrożenia.  
+    Należy zachować pliki VSIX i pkgdef na potrzeby wdrożenia.  
   
-   Alternatywnie można utworzyć pustą stronę początkową przez utworzenie pliku XAML, ze strukturą poprawny tag, aby zostały rozpoznane przez program Visual Studio. Następnie można dodać znaczniki i kodem, aby uzyskać żądany wygląd i działanie. Aby uzyskać więcej informacji, zobacz [tworzenie niestandardowe strony początkowej](../extensibility/creating-a-custom-start-page.md).  
+   Alternatywnie można utworzyć pustą stronę początkową, tworząc plik XAML o prawidłowej strukturze tagów, który zostanie rozpoznany przez program Visual Studio. Następnie można dodać znaczniki i kod w celu uzyskania odpowiedniego wyglądu i funkcjonalności. Aby uzyskać więcej informacji, zobacz [Tworzenie niestandardowej strony początkowej](../extensibility/creating-a-custom-start-page.md).  
   
-## <a name="testing-and-applying-the-custom-start-page"></a>Testowanie i stosowanie niestandardowy strona początkowa  
- Nie należy ustawiać podstawowe wystąpienie, aby uruchomić niestandardowej strony początkowej do momentu upewnieniu się, że nie powoduje awarii. Po przetestowaniu niestandardowej strony początkowej, można go zastosować do systemu, powtarzając ostatnie trzy kroki tej procedury w podstawowego wystąpienia programu Visual Studio.  
+## <a name="testing-and-applying-the-custom-start-page"></a>Testowanie i stosowanie niestandardowej strony początkowej  
+ Nie ustawiaj wystąpienia podstawowego na uruchamianie niestandardowej strony początkowej do momentu sprawdzenia, czy nie ulegnie awarii. Po przetestowaniu niestandardowej strony początkowej można zastosować ją do systemu przez powtórzenie ostatnich trzech kroków tej procedury w podstawowym wystąpieniu programu Visual Studio.  
   
-#### <a name="to-test-a-custom-start-page"></a>Aby przetestować niestandardowej strony początkowej  
+#### <a name="to-test-a-custom-start-page"></a>Aby przetestować niestandardową stronę początkową  
   
 1. Naciśnij F5.  
   
-    Nowa strona startowa zainstalowany, ale nie wybrano doświadczalnym wystąpieniu programu Visual Studio zostanie otwarty.  
+    Eksperymentalne wystąpienie programu Visual Studio otwiera się z zainstalowaną nową stroną startową, ale nie wybraną.  
   
-2. W doświadczalnym wystąpieniu programu Visual Studio na **narzędzia** menu, kliknij przycisk **opcje**.  
+2. W eksperymentalnym wystąpieniu programu Visual Studio, w menu **Narzędzia** kliknij polecenie **Opcje**.  
   
-3. W **opcje** dialogowego **środowiska**, wybierz opcję **uruchamiania**. Następnie na **Dostosuj stronę początkową** listy, wybierz swój plik .xaml, a następnie kliknij przycisk **OK**.  
+3. W oknie dialogowym **Opcje** w obszarze **środowisko**wybierz pozycję **Uruchamianie**. Następnie na liście **Dostosuj stronę początkową** wybierz plik XAML, a następnie kliknij przycisk **OK**.  
   
-4. Na **widoku** menu, kliknij przycisk **strona startowa**.  
+4. W menu **Widok** kliknij pozycję **Strona początkowa**.  
   
-    Praca, wyświetlania strony początkowej. Należy Zamknij wystąpienie doświadczalne, ponownego skopiowania zmienionych plików, a następnie ponownie otwórz wystąpienie doświadczalne, aby zobaczyć nowe zmiany.  
+    Zostanie wyświetlona strona Rozpoczynanie pracy. Należy zamknąć wystąpienie eksperymentalne, ponownie skopiować wszystkie zmienione pliki, a następnie ponownie otworzyć wystąpienie eksperymentalne, aby zobaczyć nowe zmiany.  
   
-   Możesz udostępnić niestandardowej strony początkowej, przekazując plik .vsix z katalogu bin\debug [Visual Studio Marketplace](https://marketplace.visualstudio.com/) witrynę sieci Web lub do innej witryny sieci Web lub intranet udostępniania. Aby uzyskać więcej informacji, zobacz [wdrażanie niestandardowych stron Start](../extensibility/deploying-custom-start-pages.md).  
+   Możesz udostępnić niestandardową stronę początkową, przekazując plik. vsix z katalogu bin\Debug do witryny sieci Web [Visual Studio Marketplace](https://marketplace.visualstudio.com/) lub do innej witryny sieci Web lub udziału intranetowego. Aby uzyskać więcej informacji, zobacz [wdrażanie niestandardowych stron początkowych](../extensibility/deploying-custom-start-pages.md).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Dostosowanie strony początkowej](../ide/customizing-the-start-page-for-visual-studio.md)   
+ [Dostosowywanie  strony początkowej](../ide/customizing-the-start-page-for-visual-studio.md)  
  [Przewodnik: dodawanie niestandardowych elementów XAML do strony początkowej](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)
