@@ -16,12 +16,12 @@ caps.latest.revision: 22
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 008199331778a1e7d780a6aac7591ca2285d683e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: dfff199d49bcb801b85452b37c4282ff53d01fe4
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651411"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74294229"
 ---
 # <a name="maintaining-security"></a>Obsługiwanie zabezpieczeń
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Często mówi się, że ceną bezpieczeństwa jest nieprzerwana czujność. Pomi
 
  Ponadto, musisz zachowywać czujność nie tylko, jeśli chodzi o swoją własną aplikację. Musisz też być na bieżąco ze wszystkimi zagrożeniami bezpieczeństwa i błędami dotyczącymi platformy, na której działa aplikacja, i innych produktów, od których zależy aplikacja.
 
- [Zabezpieczenia, prywatność i konta](http://go.microsoft.com/fwlink/?LinkId=72881) Uzyskaj pomoc dotyczącą zabezpieczeń, ochrony prywatności i kont użytkowników, w tym informacji o wirusach, hasłach, kontrolach rodzicielskich, zaporach i szyfrowaniu dysków.
+ [Zabezpieczenia, prywatność i konta](https://go.microsoft.com/fwlink/?LinkId=72881) Uzyskaj pomoc dotyczącą zabezpieczeń, ochrony prywatności i kont użytkowników, w tym informacji o wirusach, hasłach, kontrolach rodzicielskich, zaporach i szyfrowaniu dysków.
 
  [Wyszukiwanie biuletynu zabezpieczeń firmy Microsoft](/security-updates/) Ta strona ułatwia znalezienie wcześniej wydanych biuletynów. Biuletyny bezpieczeństwa, przeznaczone dla specjalistów IT, zawierają szczegółowe informacje dotyczące aktualizacji zabezpieczeń.
 
