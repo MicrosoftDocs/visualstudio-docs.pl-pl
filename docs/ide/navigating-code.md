@@ -1,6 +1,6 @@
 ---
-title: Polecenia nawigacji kodu
-ms.date: 08/14/2018
+title: Code navigation commands
+ms.date: 11/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - code editor, navigation
@@ -13,148 +13,157 @@ helpviewer_keywords:
 - peek definition
 - go to line
 - go to
-author: jillre
-ms.author: jillfra
-manager: jillfra
+author: mikadumont
+ms.author: midumont
+manager: tglee
 ms.workload:
 - multiple
-ms.openlocfilehash: f1fcfd69e2de9a174c708da1c4f5eaedd397722e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f5348fc0c36435e5760f3967a7e6c9be2aecb1b7
+ms.sourcegitcommit: b04c603ce73b993d042ebdf7f3722cf4fe2ef7f4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667014"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74316464"
 ---
-# <a name="navigate-code"></a>Nawiguj po kodzie
+# <a name="navigate-code"></a>Navigate code
 
-Program Visual Studio zapewnia wiele sposobów nawigowania po kodzie w edytorze. Ten temat zawiera podsumowanie różnych sposobów nawigowania po kodzie i zawiera linki do tematów, które zawierają bardziej szczegółowe informacje.
+Visual Studio provides numerous ways to navigate code in the editor. This topic summarizes the different ways you can navigate your code, and provides links to topics that go into more detail.
 
-## <a name="navigate-backward-and-navigate-forward-commands"></a>Przejdź wstecz i Nawiguj do przodu poleceń
+## <a name="navigate-backward-and-navigate-forward-commands"></a>Navigate Backward and Navigate Forward commands
 
-Możesz użyć przycisku **Nawiguj wstecz** (**Ctrl** + **-** ) i **przejdź do przodu** (**Ctrl** +**SHIFT** + **1**) na pasku narzędzi, aby przenieść punkt wstawiania do poprzedniego lokalizacje lub aby powrócić do nowszej lokalizacji z poprzedniej lokalizacji. Przyciski te zachowują ostatnie 20 lokalizacji punktu wstawiania. Te polecenia są również dostępne w menu **Widok** , w obszarze **Nawigacja wstecz** i **Przejdź do przodu**.
+You can use the **Navigate Backward** (**Ctrl**+ **-** ) and **Navigate Forward** (**Ctrl**+**Shift**+ **-** ) buttons on the toolbar to move the insertion point to previous locations, or to return to a more recent location from a previous location. These buttons retain the last 20 locations of the insertion point. These commands are also available on the **View** menu, under **Navigate Backward** and **Navigate Forward**.
 
-![Przyciski nawigacji do przodu i do tyłu](../ide/media/vs2017_nav_buttons.png)
+![Forward and back navigation buttons](../ide/media/vs2017_nav_buttons.png)
 
-## <a name="navigation-bar"></a>Pasek nawigacyjny
+## <a name="navigation-bar"></a>Navigation bar
 
-Możesz użyć **paska nawigacyjnego** (pola rozwijane w górnej części okna kod), aby przejść do kodu w kodzie bazowym. Możesz wybrać typ lub element członkowski, aby przejść bezpośrednio do niego. Pasek nawigacyjny pojawia się, gdy edytujesz kod w Visual Basic C#lub C++ w bazie kodu. W klasie częściowej, elementy członkowskie zdefiniowane poza bieżącym plikiem kodu mogą być wyłączone (są wyświetlane w kolorze szarym).
+You can use the **navigation bar** (the drop-down boxes at the top of the code window) to navigate to code in a codebase. You can choose a type or member to go directly to it. The navigation bar appears when you edit code in a Visual Basic, C#, or C++ code base. In a partial class, members defined outside the current code file may be disabled (they appear in gray).
 
-![Pasek nawigacyjny kodu](../ide/media/vside_navigation_bar.png)
+![Code navigation bar](../ide/media/vside_navigation_bar.png)
 
-Możesz nawigować wokół pól rozwijanych w następujący sposób:
+You can navigate around the drop-down boxes as follows:
 
-- Aby przejść do innego projektu, do którego należy bieżący plik, wybierz go na liście rozwijanej po lewej stronie.
+- To navigate to another project that the current file belongs to, choose it in the left drop-down.
 
-- Aby przejść do klasy lub typu, wybierz ją z listy rozwijanej Środkowo.
+- To navigate to a class or type, choose it in the middle drop-down.
 
-- Aby przejść bezpośrednio do procedury lub innego elementu członkowskiego klasy, wybierz ją z listy rozwijanej po prawej stronie.
+- To navigate directly to a procedure or other member of a class, choose it in the right drop-down.
 
-- Aby przenieść fokus z okna kod na pasek nawigacyjny, naciśnij kombinację klawiszy skrótu **Ctrl** +**F2**.
+- To shift focus from the code window to the navigation bar, press the shortcut key combination **Ctrl**+**F2**.
 
-- Aby przenieść fokus z pola do pola na pasku nawigacyjnym, naciśnij klawisz **Tab** .
+- To shift focus from box to box on the navigation bar, press the **Tab** key.
 
-- Aby wybrać element paska nawigacyjnego, który ma fokus i powrócić do okna kod, naciśnij klawisz **Enter** .
+- To select the navigation bar item that has focus and return to the code window, press the **Enter** key.
 
-- Aby zwrócić fokus z paska nawigacyjnego do kodu bez zaznaczania niczego, naciśnij klawisz **ESC** .
+- To return focus from the navigation bar to the code  without selecting anything, press the **Esc** key.
 
-Aby ukryć pasek nawigacyjny, należy zmienić **opcję Pasek nawigacyjny** w **ustawieniach Edytor tekstu wszystkie języki** (**Narzędzia**  > **Opcje**  > **edytorze tekstów**  > **wszystkie języki**) lub można zmienić ustawienia dla poszczególnych języków.
+To hide the navigation bar, change the **Navigation bar** option in the **Text Editor All Languages** settings (**Tools** > **Options** > **Text Editor** > **All Languages**), or you can change the settings for individual languages.
 
-## <a name="find-all-references"></a>Znajdź wszystkie odwołania
+## <a name="find-all-references"></a>Find all references
 
-Znajduje wszystkie odwołania do wybranego elementu w rozwiązaniu. Można go użyć do sprawdzenia możliwych efektów ubocznych dużego refaktoryzacji lub do zweryfikowania "martwego" kodu. Naciśnij klawisz **F8** , aby przeskoczyć między wynikami. Aby uzyskać więcej informacji, zobacz [Znajdowanie odwołań w kodzie](finding-references.md).
-
-Dane wejściowe | Funkcja
------------- | ---
-**Klawiatury** | Umieść kursor tekstowy w miejscu wewnątrz nazwy typu, a następnie naciśnij klawisz **Shift** +**F12**
-**Wskaźnik** | Wybierz pozycję **Znajdź wszystkie odwołania z menu dostępnego** po kliknięciu prawym przyciskiem myszy
-
-## <a name="reference-highlighting"></a>Wyróżnianie odwołań
-
-Gdy klikniesz symbol w kodzie źródłowym, wszystkie wystąpienia tego symbolu zostaną wyróżnione w dokumencie. Wyróżnione symbole mogą zawierać deklaracje i odwołania, a wiele innych symboli, które będą zwracać **wszystkie odwołania** . Obejmują one nazwy klas, obiektów, zmiennych, metod i właściwości. W kodzie Visual Basic są również wyróżnione słowa kluczowe dla wielu struktur kontroli. Aby przejść do następnego lub poprzedniego wyróżnionego symbolu, naciśnij klawisz **Ctrl** +**SHIFT** +**strzałkę w dół** lub **Ctrl** +**SHIFT** +**strzałkę w górę**. Kolor podświetlania można zmienić w obszarze **narzędzia**  > **opcje**  > **środowisku**  > **czcionki i kolory**  > **wyróżnione odwołanie**.
-
-## <a name="go-to-commands"></a>Przejdź do poleceń
-
-Polecenie Przejdź do zawiera następujące polecenia, które są dostępne w menu **Edytuj** w sekcji **Przejdź do**:
-
-- **Przejdź do wiersza** (**Ctrl** +**G**): przenosi do określonego numeru wiersza w aktywnym dokumencie.
-
-- **Przejdź do wszystkich** (**Ctrl** +**t** lub **Ctrl** + **,** ): Przenieś do określonego wiersza, typu, pliku, elementu członkowskiego lub symbolu.
-
-- **Przejdź do pliku** (**Ctrl** +**1**, **Ctrl** +**F**): Przenieś do określonego pliku w rozwiązaniu.
-
-- **Przejdź do ostatniego pliku** (**Ctrl** +**1**, **Ctrl** +**R**): Przejdź do określonego, ostatnio odwiedzonego pliku w rozwiązaniu.
-
-- **Przejdź do typu** (**Ctrl** +**1**, **Ctrl** +**t**): Przenieś do określonego typu w rozwiązaniu.
-
-- **Przejdź do elementu członkowskiego** (**Ctrl** +**1**, **Ctrl** +**M**): Przenieś do określonego elementu członkowskiego w rozwiązaniu.
-
-- **Przejdź do symbolu** (**Ctrl** +**1**, **Ctrl** +**S**): Przenieś do określonego symbolu w rozwiązaniu.
-
-W programie Visual Studio 2017 w wersji 15,8 i nowszych dostępne są również następujące **polecenia nawigacyjne** :
-
-- **Przejdź do następnego problemu w pliku** (**Alt** +**PgDn**) i **Przejdź do poprzedniego problemu w pliku** (**Alt** +**PgUp**)
-
-- **Przejdź do ostatniej edycji lokalizacji** (**Ctrl** +**SHIFT** +**Backspace**)
-
-Więcej informacji na temat tych poleceń można znaleźć w temacie [Find Code using go to Commands](../ide/go-to.md) .
-
-## <a name="go-to-definition"></a>Przejdź do definicji
-
-Przejdź do definicji przeprowadzi Cię do definicji wybranego elementu. Aby uzyskać więcej informacji, zobacz [Przejdź do definicji i wglądu definicji](../ide/go-to-and-peek-definition.md).
+Finds all the references to the selected element in the solution. You can use this to check possible side-effects of a large refactoring, or to verify "dead" code. Press **F8** to jump between results. For more information, see [Find references in your code](finding-references.md).
 
 Dane wejściowe | Funkcja
 ------------ | ---
-**Klawiatury** | Umieść kursor tekstowy w miejscu wewnątrz nazwy typu, a następnie naciśnij klawisz **F12**
-**Wskaźnik** | Kliknij prawym przyciskiem myszy nazwę typu i wybierz pozycję **Przejdź do definicji** lub naciśnij klawisz **Ctrl** i kliknij nazwę typu
+**Keyboard** | Place your text cursor somewhere inside the type name, and press **Shift**+**F12**
+**Mouse** | Select **Find All References** from the right-click menu
 
-## <a name="peek-definition"></a>Definicja wglądu
+## <a name="reference-highlighting"></a>Reference highlighting
 
-Funkcja wglądu definicja wyświetla definicję wybranego elementu w oknie bez nawigowania do bieżącej lokalizacji w edytorze kodu. Aby uzyskać więcej informacji, zobacz [How to: wyświetlanie i edytowanie kodu za pomocą definicji wglądu](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md) i [Przejdź do definicji i wglądu do definicji](../ide/go-to-and-peek-definition.md).
+When you click a symbol in the source code, all instances of that symbol are highlighted in the document. The highlighted symbols may include declarations and references, and many other symbols that **Find All References** would return. These include the names of classes, objects, variables, methods, and properties. In Visual Basic code, keywords for many control structures are also highlighted. To move to the next or the previous highlighted symbol, press **Ctrl**+**Shift**+**Down Arrow** or **Ctrl**+**Shift**+**Up Arrow**. You can change the highlighting color in **Tools** > **Options** > **Environment** > **Fonts and Colors** > **Highlighted Reference**.
+
+## <a name="go-to-commands"></a>Go To commands
+
+Go To has the following commands, which are available in the **Edit** menu under **Go To**:
+
+- **Go To Line** (**Ctrl**+**G**): Move to the specified line number in the active document.
+
+- **Go To All** (**Ctrl**+**T** or **Ctrl**+ **,** ): Move to the specified line, type, file, member, or symbol.
+
+- **Go To File** (**Ctrl**+**1**, **Ctrl**+**F**): Move to the specified file in the solution.
+
+- **Go To Recent File** (**Ctrl**+**1**, **Ctrl**+**R**): Move to the specified, recently visited file in the solution.
+
+- **Go To Type** (**Ctrl**+**1**, **Ctrl**+**T**): Move to the specified type in the solution.
+
+- **Go To Member** (**Ctrl**+**1**, **Ctrl**+**M**): Move to the specified member in the solution.
+
+- **Go To Symbol** (**Ctrl**+**1**, **Ctrl**+**S**): Move to the specified symbol in the solution.
+
+In Visual Studio 2017 version 15.8 and later, the following **Go To** navigation commands are also available:
+
+- **Go To Next Issue in File** (**Alt**+**PgDn**) and **Go To Previous Issue in File** (**Alt**+**PgUp**)
+
+- **Go To Last Edit Location** (**Ctrl**+**Shift**+**Backspace**)
+
+See more about these commands in the [Find code using Go To commands](../ide/go-to.md) topic.
+
+## <a name="go-to-definition"></a>Go To Definition
+
+Go To Definition takes you to the definition of the selected element. For more information, see [Go To Definition and Peek Definition](../ide/go-to-and-peek-definition.md).
 
 Dane wejściowe | Funkcja
 ------------ | ---
-**Klawiatury** | Umieść kursor tekstowy w miejscu wewnątrz nazwy typu, a następnie naciśnij klawisz **Alt** +**F12**
-**Wskaźnik** | Kliknij prawym przyciskiem myszy nazwę typu i wybierz opcję **wgląd do definicji** lub naciśnij klawisz **Ctrl** i kliknij nazwę typu (Jeśli zaznaczono opcję **Otwórz definicję w widoku wglądu** )
+**Keyboard** | Place your text cursor somewhere inside the type name, and press **F12**
+**Mouse** | Right-click on the type name and select **Go To Definition**  OR  press **Ctrl** and click on the type name
 
-## <a name="go-to-implementation"></a>Przejdź do implementacji
+## <a name="peek-definition"></a>Peek Definition
 
-Korzystając z funkcji przejdź do implementacji, można nawigować z klasy bazowej lub typu do ich implementacji. Jeśli istnieje wiele implementacji, zostaną one wyświetlone w oknie **Wyszukiwanie wyników symboli** :
+Peek Definition displays the definition of the selected element in a window without navigating away from your current location in the code editor. For more information, see [How to: View and edit code by using Peek Definition](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md) and [Go To Definition and Peek Definition](../ide/go-to-and-peek-definition.md).
 
 Dane wejściowe | Funkcja
 ------------ | ---
-**Klawiatury** | Umieść kursor tekstowy w miejscu wewnątrz nazwy typu, a następnie naciśnij klawisz **Ctrl** +**F12**
-**Wskaźnik** | Kliknij prawym przyciskiem myszy nazwę typu i wybierz pozycję **Przejdź do implementacji**
+**Keyboard** | Place your text cursor somewhere inside the type name, and press **Alt**+**F12**
+**Mouse** | Right-click on the type name and select **Peek Definition** OR press **Ctrl** and click on the type name (if you have the **Open definition in peek view** option checked)
+
+## <a name="go-to-implementation"></a>Go To Implementation
+
+Using Go To Implementation, you can navigate from a base class or type to its implementations. If there are multiple implementations, you will see them listed in the **Find Symbol Results** window:
+
+Dane wejściowe | Funkcja
+------------ | ---
+**Keyboard** | Place your text cursor somewhere inside the type name, and press **Ctrl**+**F12**
+**Mouse** | Right-click on the type name and select **Go To Implementation**
+
+## <a name="go-to-base"></a>Go To Base
+
+Using Go To Base, you can navigate up the inheritance chain of the selected element. If there are multiple results, you will see them listed in the **Go To Base** window:
+
+Dane wejściowe | Funkcja
+------------ | ---
+**Keyboard** | Place your text cursor somewhere inside the type name, and press **Alt**+**Home**
+**Mouse** | Right-click on the type name and select **Go To Base**
 
 ## <a name="call-hierarchy"></a>Hierarchia wywołań
 
-Można wyświetlić wywołania do i z metody w [oknie hierarchia wywołań](../ide/reference/call-hierarchy.md):
+You can view calls to and from a method in the [Call Hierarchy window](../ide/reference/call-hierarchy.md):
 
 Dane wejściowe | Funkcja
 ------------ | ---
-**Klawiatury** | Umieść kursor tekstowy w miejscu wewnątrz nazwy typu, a następnie naciśnij **klawisze ctrl** +**K**, **Ctrl** +**t**
-**Wskaźnik** | Kliknij prawym przyciskiem myszy nazwę elementu członkowskiego i wybierz pozycję **Wyświetl hierarchię wywołań**
+**Keyboard** | Place your text cursor somewhere inside the type name, and press **Ctrl**+**K**, **Ctrl**+**T**
+**Mouse** | Right-click on the member name and select **View Call Hierarchy**
 
-## <a name="next-method-and-previous-method-commands-visual-basic"></a>Polecenia Next i Previous metody (Visual Basic)
+## <a name="next-method-and-previous-method-commands-visual-basic"></a>Next Method and Previous Method commands (Visual Basic)
 
-W Visual Basic pliki kodu Użyj tych poleceń, aby przenieść punkt wstawiania do różnych metod. Wybierz pozycję **edytuj**  > **Następna metoda** lub **Edytuj**  > **poprzednią metodę**.
+In Visual Basic code files, use these commands to move the insertion point to different methods. Choose **Edit** > **Next Method** or **Edit** > **Previous Method**.
 
-## <a name="structure-visualizer"></a>Wizualizator struktury
+## <a name="structure-visualizer"></a>Structure Visualizer
 
-Funkcja wizualizator struktury w edytorze kodu pokazuje *linie prowadnic struktury* — pionowe linie kreskowane wskazujące pasujące nawiasy klamrowe w bazie kodu. Ułatwia to sprawdzenie, gdzie bloki logiczne zaczynają się i kończą.
+The Structure Visualizer feature in the code editor shows *structure guide lines* - vertical dashed lines that indicate matching curly braces in your codebase. This makes it easier to see where logical blocks begin and end.
 
-![Wizualizator struktury](../ide/media/vside_structure_visualizer.png)
+![Structure Visualizer](../ide/media/vside_structure_visualizer.png)
 
-Aby wyłączyć linie prowadnic struktury, przejdź do pozycji **narzędzia**  > **Opcje**  > **Edytor tekstów**  > **Ogólne** i wyczyść pole wyboru **Pokaż linie prowadnicy struktury** .
+To disable structure guide lines, go to **Tools** > **Options** > **Text Editor** > **General** and clear the **Show structure guide lines** box.
 
-## <a name="enhanced-scroll-bar"></a>Udoskonalony pasek przewijania
+## <a name="enhanced-scroll-bar"></a>Enhanced scroll bar
 
-Możesz użyć rozszerzonego paska przewijania w oknie kodu, aby uzyskać wgląd w swój kod w oczy. W trybie mapy można zobaczyć podgląd kodu po przesunięciu kursora w górę i w dół paska przewijania. Aby uzyskać więcej informacji, zobacz [jak: śledzić kod przez dostosowanie paska przewijania](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md).
+You can use the enhanced scroll bar in a code window to get a bird's-eye view of your code. In map mode, you can see previews of the code when you move the cursor up and down the scroll bar. For more information, see [How to: Track your code by customizing the scroll bar](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md).
 
-## <a name="codelens-information"></a>Informacje CodeLens
+## <a name="codelens-information"></a>CodeLens information
 
-W edytorze kodu można znaleźć informacje o konkretnym kodzie, takie jak zmiany i osoby, które wprowadziły te zmiany, odwołania, błędy, elementy robocze, przeglądy kodu i stan testu jednostkowego. CodeLens działa jak w przypadku wyświetlania głowic w przypadku używania Visual Studio Enterprise z Team Foundation Server. Zobacz [Znajdowanie zmian w kodzie i innych historii](../ide/find-code-changes-and-other-history-with-codelens.md).
+You can find info about specific code, like changes and who made those changes, references, bugs, work items, code reviews, and unit test status when you use CodeLens in the code editor. CodeLens works like a heads-up display when you use Visual Studio Enterprise with Team Foundation Server. See [Find code changes and other history](../ide/find-code-changes-and-other-history-with-codelens.md).
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Funkcje edytora kodu](../ide/writing-code-in-the-code-and-text-editor.md)
-- [Wyświetl hierarchię wywołań](../ide/reference/call-hierarchy.md)
+- [Features of the code editor](../ide/writing-code-in-the-code-and-text-editor.md)
+- [View call hierarchy](../ide/reference/call-hierarchy.md)

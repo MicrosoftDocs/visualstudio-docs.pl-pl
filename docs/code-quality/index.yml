@@ -1,37 +1,37 @@
 ### YamlMime:Landing
-title: Analiza kodu w programie Visual Studio
-summary: Program Visual Studio oferuje kilka różnych narzędzi do analizowania i poprawiania jakości kodu.
+title: Code analysis in Visual Studio
+summary: Visual Studio provides several different tools to analyze and improve code quality.
 metadata:
-  title: Analizatory kodu
-  description: Dowiedz się, jak program Visual Studio może pomóc w analizie jakości kodu.
+  title: Code analyzers
+  description: Learn how Visual Studio can help you analyze code quality.
   ms.prod: visual-studio-windows
   ms.technology: vs-ide-general
   ms.topic: landing-page
-  author: gewarren
-  ms.author: gewarren
+  author: jillre
+  ms.author: jillfra
   ms.date: 10/15/2019
-  ms.openlocfilehash: eb7be803a8c9751550f46880cfd485dac2850527
-  ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+  ms.openlocfilehash: 45be3779e7ed8a625d9029c8eb03a69374c43ae8
+  ms.sourcegitcommit: b04c603ce73b993d042ebdf7f3722cf4fe2ef7f4
   ms.translationtype: MT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 10/16/2019
-  ms.locfileid: "72450722"
+  ms.lasthandoff: 11/22/2019
+  ms.locfileid: "74316361"
 landingContent:
-- title: Analizowanie C i C++ Code
+- title: Analyze C and C++ code
   linkLists:
   - linkListType: overview
     links:
-    - text: Analizowanie C i C++ Code
+    - text: Analyze C and C++ code
       url: code-analysis-for-c-cpp-overview.md
   - linkListType: reference
     links:
-    - text: C++Ostrzeżenia analizy kodu
+    - text: C++ code analysis warnings
       url: code-analysis-for-c-cpp-warnings.md
-- title: Analizowanie jakości kodu zarządzanego
+- title: Analyze managed code quality
   linkLists:
   - linkListType: overview
     links:
-    - text: Analiza źródła
+    - text: Source analysis
       url: roslyn-analyzers-overview.md
     - text: Analiza w starszej wersji
       url: static-code-analysis-for-managed-code-overview.md
@@ -45,15 +45,15 @@ landingContent:
       url: install-fxcop-analyzers.md
   - linkListType: reference
     links:
-    - text: Ostrzeżenia analizy kodu zarządzanego
+    - text: Managed code analysis warnings
       url: code-analysis-for-managed-code-warnings.md
-- title: Analizowanie stylu kodu zarządzanego
+- title: Analyze managed code style
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Analizowanie stylu kodu
+    - text: Analyze code style
       url: ../ide/create-portable-custom-editor-options.md
-- title: Mierzenie złożoności kodu
+- title: Measure code complexity
   linkLists:
   - linkListType: concept
     links:
