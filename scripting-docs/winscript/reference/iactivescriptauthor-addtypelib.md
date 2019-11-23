@@ -51,10 +51,10 @@ HRESULT AddTypeLib(
  `dwFlags`  
  podczas Nieużywane.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
@@ -62,6 +62,6 @@ HRESULT AddTypeLib(
  Ta metoda wywołuje `LoadTypeLib`, aby załadować bibliotekę typów. Po pomyślnym wykonaniu tej metody wywołania `IActiveScriptAuthor::AddNamedItem` w celu dodania informacji o typie.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IActiveScriptAuthor   interfejsu](../../winscript/reference/iactivescriptauthor-interface.md)  
- [IActiveScriptAuthor:: AddNamedItem](../../winscript/reference/iactivescriptauthor-addnameditem.md)    
+ [IActiveScriptAuthor  interfejsu](../../winscript/reference/iactivescriptauthor-interface.md)  
+ [IActiveScriptAuthor::AddNamedItem](../../winscript/reference/iactivescriptauthor-addnameditem.md)   
  [LoadTypeLib](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-loadtypelib)

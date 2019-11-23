@@ -47,10 +47,10 @@ HRESULT GetPropertyInfo (
  `pPropertyInfo`  
  określoną Zwraca strukturę `DebugPropertyInfo` opisującą właściwość.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Zwraca prawidłowy `HRESULT`, zazwyczaj `S_OK`.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IDebugProperty   interfejsu](../../winscript/reference/idebugproperty-interface.md)  
- [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)    
+ [IDebugProperty  interfejsu](../../winscript/reference/idebugproperty-interface.md)  
+ [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)   
  [DebugPropertyInfo, struktura](../../winscript/reference/debugpropertyinfo-structure.md)

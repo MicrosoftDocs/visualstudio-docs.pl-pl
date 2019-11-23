@@ -43,10 +43,10 @@ HRESULT FireDebuggerEvent(
  `punk`  
  podczas Obiekt zdarzenia do przekazania do debugera.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
 |`E_NOTIMPL`|Metoda nie jest obecnie zaimplementowana.|  
@@ -59,5 +59,5 @@ HRESULT FireDebuggerEvent(
  Ta metoda powoduje wywoływanie `IApplicationDebugger::onDebuggerEvent`.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IDebugApplication   interfejsu](../../winscript/reference/idebugapplication-interface.md)  
+ [IDebugApplication  interfejsu](../../winscript/reference/idebugapplication-interface.md)  
  [IApplicationDebugger::onDebuggerEvent](../../winscript/reference/iapplicationdebugger-ondebuggerevent.md)

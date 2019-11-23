@@ -37,8 +37,8 @@ Podjęto próbę użycia zmiennej kompilacji warunkowej bez wcześniejszego wł�
     ```  
   
 ## <a name="see-also"></a>Zobacz także  
- @No__t_1 [kompilacji warunkowej](../../javascript/advanced/conditional-compilation-javascript.md)  
- [Zmienne kompilacji warunkowej](../../javascript/advanced/conditional-compilation-variables-javascript.md)    
-   [instrukcji @cc_on](../../javascript/reference/at-cc-on-statement-javascript.md)  
-   [instrukcji @if](../../javascript/reference/at-if-statement-javascript.md)  
+   [kompilacji warunkowej](../../javascript/advanced/conditional-compilation-javascript.md)  
+ [Zmienne kompilacji warunkowej](../../javascript/advanced/conditional-compilation-variables-javascript.md)   
+   [instrukcji@cc_on](../../javascript/reference/at-cc-on-statement-javascript.md)  
+   [instrukcji@if](../../javascript/reference/at-if-statement-javascript.md)  
  [@set, instrukcja](../../javascript/reference/at-set-statement-javascript.md)

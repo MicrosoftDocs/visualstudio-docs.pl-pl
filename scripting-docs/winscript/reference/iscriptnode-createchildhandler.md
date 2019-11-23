@@ -79,10 +79,10 @@ HRESULT CreateChildHandler(
  `ppse`  
  określoną Adres zmiennej, która otrzymuje wskaźnik do interfejsu `IScriptEntry` wystąpienia podrzędnego.  
   
-## <a name="return-value"></a>Wartość zwracana  
- @No__t_0. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+## <a name="return-value"></a>Wartość zwrócona  
+ `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
@@ -90,5 +90,5 @@ HRESULT CreateChildHandler(
  Scriptlet określa procedurę obsługi zdarzeń. Ta metoda tworzy element Scriptlet, jeśli jest wywoływany przez obiekt `IScriptNode`, który reprezentuje stronę sieci Web. Ta metoda nie powiedzie się, jeśli jest wywoływana przez inne interfejsy.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IScriptNode   interfejsu](../../winscript/reference/iscriptnode-interface.md)  
+ [IScriptNode  interfejsu](../../winscript/reference/iscriptnode-interface.md)  
  [IScriptEntry, interfejs](../../winscript/reference/iscriptentry-interface.md)

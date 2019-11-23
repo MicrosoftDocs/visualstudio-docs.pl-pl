@@ -29,5 +29,5 @@ Warunek `while` nie został uwzględniony w pętli `do...while`. Instrukcja **do
 - Uwzględnij instrukcję testową `while` po zamykającym nawiasie klamrowym.  
   
 ## <a name="see-also"></a>Zobacz także  
- [while](../../javascript/reference/while-statement-javascript.md) ,   instrukcji  
+ [while](../../javascript/reference/while-statement-javascript.md) ,  instrukcji  
  [Sterowanie przepływem programu](../../javascript/controlling-program-flow-javascript.md)

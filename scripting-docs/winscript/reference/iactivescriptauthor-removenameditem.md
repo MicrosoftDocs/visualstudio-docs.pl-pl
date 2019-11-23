@@ -39,10 +39,10 @@ HRESULT RemoveNamedItem(
  `pszName`  
  podczas Adres buforu identyfikujący obiekt `NamedItem`, który ma zostać usunięty.  
   
-## <a name="return-value"></a>Wartość zwracana  
- @No__t_0. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+## <a name="return-value"></a>Wartość zwrócona  
+ `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
 |`S_FALSE`|Obiekt `NamedItem` nie występuje w przestrzeni nazw aparatu tworzenia skryptów.|  
@@ -51,5 +51,5 @@ HRESULT RemoveNamedItem(
  [IActiveScript:: AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) służy do iniekcji obiektu `NamedItem` do przestrzeni nazw aparatu tworzenia skryptów.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IActiveScriptAuthor   interfejsu](../../winscript/reference/iactivescriptauthor-interface.md)  
+ [IActiveScriptAuthor  interfejsu](../../winscript/reference/iactivescriptauthor-interface.md)  
  [IActiveScriptAuthor::AddNamedItem](../../winscript/reference/iactivescriptauthor-addnameditem.md)

@@ -47,10 +47,10 @@ HRESULT Next(
  `pceltFetched`  
  określoną Rzeczywista liczba segmentów pobranych przez moduł wyliczający.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
@@ -58,5 +58,5 @@ HRESULT Next(
  Ta metoda pobiera określoną liczbę segmentów w sekwencji wyliczenia.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IEnumDebugStackFrames   interfejsu](../../winscript/reference/ienumdebugstackframes-interface.md)  
+ [IEnumDebugStackFrames  interfejsu](../../winscript/reference/ienumdebugstackframes-interface.md)  
  [DebugStackFrameDescriptor, struktura](../../winscript/reference/debugstackframedescriptor-structure.md)

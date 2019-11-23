@@ -33,6 +33,6 @@ Dołączono instrukcję `throw` w kodzie, ale nie została ona zawarta w bloku *
 - Jeśli wyjątek jest ponownie zgłaszany, upewnij się, że istnieje inna odpowiadająca instrukcja catch.  
   
 ## <a name="see-also"></a>Zobacz także  
- [Błąd   obiektu](../../javascript/reference/error-object-javascript.md)  
- [zgłoś   instrukcji](../../javascript/reference/throw-statement-javascript.md)  
+ [Błąd  obiektu](../../javascript/reference/error-object-javascript.md)  
+ [zgłoś  instrukcji](../../javascript/reference/throw-statement-javascript.md)  
  [Try...Catch...Finally, instrukcja](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)

@@ -43,10 +43,10 @@ HRESULT onInsertText(
  `cNumToInsert`  
  podczas Liczba wstawionych znaków.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
@@ -54,5 +54,5 @@ HRESULT onInsertText(
  Ta metoda jest zazwyczaj wywoływana przez hosta, który stopniowo ładuje zawartość, taką jak przeglądarka sieci Web.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IDebugDocumentTextEvents   interfejsu](../../winscript/reference/idebugdocumenttextevents-interface.md)  
+ [IDebugDocumentTextEvents  interfejsu](../../winscript/reference/idebugdocumenttextevents-interface.md)  
  [IDebugDocumentTextEvents::onRemoveText](../../winscript/reference/idebugdocumenttextevents-onremovetext.md)

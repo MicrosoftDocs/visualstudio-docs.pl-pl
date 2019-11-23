@@ -36,10 +36,10 @@ HRESULT Abort();
 #### <a name="parameters"></a>Parametry  
  Ta metoda nie przyjmuje żadnych parametrów.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |S_OK|Wykonanie metody powiodło się.|  
 |E_NOTIMPL|Nie można anulować operacji.|  
@@ -48,6 +48,6 @@ HRESULT Abort();
  Ta metoda jest zwykle wywoływana z poziomu wątku debugera, aby anulować operację, która nie odpowiada. Ta metoda powoduje wywoływanie metody `InProgressAbort` w obiekcie `IDebugSyncOperation`.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IDebugAsyncOperation   interfejsu](../../winscript/reference/idebugasyncoperation-interface.md)  
- [IDebugAsyncOperation:: Start](../../winscript/reference/idebugasyncoperation-start.md)    
+ [IDebugAsyncOperation  interfejsu](../../winscript/reference/idebugasyncoperation-interface.md)  
+ [IDebugAsyncOperation:: Start](../../winscript/reference/idebugasyncoperation-start.md)   
  [IDebugSyncOperation::InProgressAbort](../../winscript/reference/idebugsyncoperation-inprogressabort.md)

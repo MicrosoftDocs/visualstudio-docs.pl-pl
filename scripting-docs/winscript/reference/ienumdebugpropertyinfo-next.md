@@ -39,7 +39,7 @@ HRESULT Next (
   
 #### <a name="parameters"></a>Parametry  
  `celt`  
- podczas Liczba `DebugPropertyInfo`structures do pobrania.  
+ podczas Liczba struktur `DebugPropertyInfo`do pobrania.  
   
  `rgelt`  
  określoną Pobrano tablicę struktur `DebugPropertyInfo`.  
@@ -47,9 +47,9 @@ HRESULT Next (
  `pceltFetched`  
  określoną Zwraca liczbę struktur `DebugPropertyInfo` rzeczywiście pobranych.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Zwraca prawidłowy `HRESULT`, zazwyczaj `S_OK`.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IEnumDebugPropertyInfo   interfejsu](../../winscript/reference/ienumdebugpropertyinfo-interface.md)  
+ [IEnumDebugPropertyInfo  interfejsu](../../winscript/reference/ienumdebugpropertyinfo-interface.md)  
  [DebugPropertyInfo, struktura](../../winscript/reference/debugpropertyinfo-structure.md)

@@ -39,10 +39,10 @@ HRESULT onUpdateDocumentAttributes(
  `textdocattr`  
  podczas Atrybuty nowego dokumentu.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
@@ -50,5 +50,5 @@ HRESULT onUpdateDocumentAttributes(
  Ta metoda wskazuje, że atrybuty dokumentu zostały zmienione.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IDebugDocumentTextEvents   interfejsu](../../winscript/reference/idebugdocumenttextevents-interface.md)  
+ [IDebugDocumentTextEvents  interfejsu](../../winscript/reference/idebugdocumenttextevents-interface.md)  
  [TEXT_DOC_ATTR, stałe](../../winscript/reference/text-doc-attr-constants.md)

@@ -39,10 +39,10 @@ HRESULT GetApplication(
  `ppda`  
  określoną Wskaźnik do obiektu aplikacji debugowania skojarzonego z witryną skryptu.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
 |`E_NOTIMPL`|Host nie obsługuje bezpośrednio debugowania.|  
@@ -51,5 +51,5 @@ HRESULT GetApplication(
  Metoda `GetApplication` umożliwia inteligentnemu hostowi zdefiniowanie obiektu aplikacji, do którego należy każdy skrypt. Aparaty skryptów powinni próbować wywołać tę metodę, aby dokończyć aplikacje i `IProcessDebugManager::GetDefaultApplication`, jeśli to się nie powiedzie.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IActiveScriptSiteDebug   interfejsu](../../winscript/reference/iactivescriptsitedebug-interface.md)  
+ [IActiveScriptSiteDebug  interfejsu](../../winscript/reference/iactivescriptsitedebug-interface.md)  
  [IProcessDebugManager::GetDefaultApplication](../../winscript/reference/iprocessdebugmanager-getdefaultapplication.md)

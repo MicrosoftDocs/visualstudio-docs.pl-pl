@@ -39,10 +39,10 @@ HRESULT SetDocumentAttr(
  `pszAttributes`  
  podczas Atrybuty, które mają zostać zastosowane do dokumentu.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
@@ -50,5 +50,5 @@ HRESULT SetDocumentAttr(
  Ta metoda ustawia atrybuty dla tego dokumentu.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IDebugDocumentHelper   interfejsu](../../winscript/reference/idebugdocumenthelper-interface.md)  
+ [IDebugDocumentHelper  interfejsu](../../winscript/reference/idebugdocumenthelper-interface.md)  
  [TEXT_DOC_ATTR, stałe](../../winscript/reference/text-doc-attr-constants.md)

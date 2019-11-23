@@ -24,7 +24,7 @@ Program Visual Studio obsługuje dwie platformy testowania dla języków Python,
 * Dla struktury **testu jednostkowego** , główny katalog projektu służy do odnajdywania testów. Ta lokalizacja, a także wzorzec tekstu służący do identyfikowania testów, można zmodyfikować na karcie **test** do wartości określonych przez użytkownika.
 * Dla środowiska **pytest** Framework opcje testowania, takie jak lokalizacja testu i wzorce nazwy pliku, są określane przy użyciu standardowego pliku konfiguracji pytest. ini. Aby uzyskać więcej informacji, zobacz [dokumentację referencyjną pytest](https://docs.pytest.org/en/latest/reference.html#ini-options-ref) .
 
-Po zapisaniu wyboru platformy i ustawień, odnajdywanie testów jest inicjowane w Eksploratorze testów. Jeśli okno Eksplorator testów nie jest jeszcze otwarte, przejdź do paska narzędzi i wybierz polecenie **testuj** > **Eksplorator testów**.
+Po zapisaniu wyboru platformy i ustawień, odnajdywanie testów jest inicjowane w Eksploratorze testów. Jeśli okno Eksplorator testów nie jest jeszcze otwarte, przejdź do paska narzędzi i wybierz polecenie **testuj** > **Test Explorer**.
 
 ## <a name="configure-testing-for-python-without-a-project"></a>Konfigurowanie testowania dla języka Python bez projektu
 Program Visual Studio umożliwia uruchamianie i testowanie istniejącego kodu języka Python bez projektu, [otwierając folder](../../quickstart-05-python-visual-studio-open-folder.md) z kodem języka Python. W tych okolicznościach należy użyć pliku **PythonSettings. JSON** w celu skonfigurowania testowania. 
@@ -74,11 +74,11 @@ Domyślnie program Visual Studio identyfikuje testy **testu jednostkowego** i **
 
 1. Po załadowaniu projektu w programie Visual Studio, kliknij prawym przyciskiem myszy projekt w Eksplorator rozwiązań i wybierz strukturę **testu jednostkowego** lub **Pytest** z karty **testowanie** właściwości.
    > [!Note]
-   > W przypadku korzystania z platformy pytest można określić wzorce lokalizacji i nazw plików przy użyciu standardowego pliku konfiguracji pytest. ini. Domyślnie używany jest folder obszar roboczy/projekt z wzorcem `test_*py` i `*_test.py`. Aby uzyskać więcej informacji, zobacz [dokumentację referencyjną pytest](https://docs.pytest.org/en/latest/reference.html#ini-options-ref) .
+   > W przypadku korzystania z platformy pytest można określić wzorce lokalizacji i nazw plików przy użyciu standardowego pliku konfiguracji pytest. ini. Domyślnie używany jest folder obszar roboczy/projekt ze wzorcem `test_*py` i `*_test.py`. Aby uzyskać więcej informacji, zobacz [dokumentację referencyjną pytest](https://docs.pytest.org/en/latest/reference.html#ini-options-ref) .
 
-1. Po wybraniu struktury kliknij prawym przyciskiem myszy projekt ponownie i wybierz pozycję **dodaj** > **nowy element**, a następnie wybierz pozycję **test jednostkowy** w języku Python, a następnie **Dodaj**.
+1. Po wybraniu struktury kliknij prawym przyciskiem myszy projekt ponownie i wybierz polecenie **dodaj** > **nowy element**, a następnie wybierz pozycję **test jednostkowy języka Python** , a następnie **Dodaj**.
 
-1. Ta akcja tworzy plik *test_1. PR* z kodem, który importuje standardowy moduł `unittest`, dziedziczy klasę testową z `unittest.TestCase` i wywołuje `unittest.main()`, jeśli skrypt zostanie uruchomiony bezpośrednio:
+1. Ta akcja tworzy plik *test_1. PR* z kodem, który importuje standardowy moduł `unittest`, dziedziczy klasę testową z `unittest.TestCase`i wywołuje `unittest.main()`, jeśli skrypt zostanie uruchomiony bezpośrednio:
 
     ```python
     import unittest
@@ -91,7 +91,7 @@ Domyślnie program Visual Studio identyfikuje testy **testu jednostkowego** i **
         unittest.main()
     ```
 
-1. Zapisz plik w razie potrzeby, a następnie otwórz **Eksploratora testów** z poleceniem menu **test** >  Test**Explorer** .
+1. Zapisz plik w razie potrzeby, a następnie otwórz **Eksploratora testów** z poleceniem menu **Testuj** > test **Explorer** .
 
 1. **Eksplorator testów** wyszukuje projektu dla testów, a następnie wyświetli je, jak pokazano poniżej. Dwukrotne kliknięcie testu spowoduje otwarcie pliku źródłowego.
 
@@ -130,7 +130,7 @@ Testy uruchamiania w tle i **Eksploratora testów** aktualizuje stan każdego te
 Ponieważ testy jednostkowe są fragmenty kodu, jest zależna od błędów, podobnie jak każdy inny kod, a od czasu do czasu należy uruchomić w debugerze. W debugerze można ustawić punktów przerwania, Sprawdź zmienne i przejść przez kod. Visual Studio udostępnia również narzędzia diagnostyczne dla testów jednostkowych.
 
 > [!Note]
-> Domyślnie debugowanie testowe używa debugera ptvsd 4. Jeśli zamiast tego chcesz użyć ptvsd 3, możesz wybrać opcję **Użyj starszego debugera** w obszarze **Narzędzia** > **Opcje** >  środowisko**Python**@no__t **-6.** 
+> Domyślnie debugowanie testowe używa debugera ptvsd 4. Jeśli zamiast tego chcesz użyć ptvsd 3, możesz wybrać opcję **Użyj starszego debugera** w obszarze **narzędzia** > **Opcje** > Debuguj >  **debugowanie**. 
 
 Aby rozpocząć debugowanie, ustaw początkowy punkt przerwania w kodzie, a następnie kliknij prawym przyciskiem myszy test (lub zaznaczenie) **Eksploratora testów** i wybierz **Debuguj wybrane testy**. Program Visual Studio uruchamia debugera języka Python, jak dla kodu aplikacji.
 

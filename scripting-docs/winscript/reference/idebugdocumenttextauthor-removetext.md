@@ -43,10 +43,10 @@ HRESULT RemoveText(
  `cNumToRemove`  
  podczas Liczba znaków do usunięcia.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
@@ -54,5 +54,5 @@ HRESULT RemoveText(
  Ta metoda usuwa tekst z dokumentu.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IDebugDocumentTextAuthor   interfejsu](../../winscript/reference/idebugdocumenttextauthor-interface.md)  
+ [IDebugDocumentTextAuthor  interfejsu](../../winscript/reference/idebugdocumenttextauthor-interface.md)  
  [IDebugDocumentTextAuthor::InsertText](../../winscript/reference/idebugdocumenttextauthor-inserttext.md)

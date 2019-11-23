@@ -1,5 +1,5 @@
 ---
-title: 'IActiveScriptProfilerCallback2:: OnFunctionExitByName | Microsoft Docs'
+title: IActiveScriptProfilerCallback2::OnFunctionExitByName | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -37,14 +37,14 @@ HRESULT OnFunctionExitByName(
  podczas Nazwa funkcji, która zakończyła działanie aparatu skryptów.  
   
  `scriptType`  
- podczas Typ funkcji. Aby uzyskać opisy prawidłowych wartości, zobacz [Wyliczenie PROFILER_SCRIPT_TYPE](../../winscript/reference/profiler-script-type-enumeration.md).  
+ podczas Typ funkcji. Opisy prawidłowych wartości można znaleźć w temacie [PROFILER_SCRIPT_TYPE Enumeration](../../winscript/reference/profiler-script-type-enumeration.md).  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Zwracana wartość tej metody jest ignorowana przez aparat wykonywania skryptów.  
   
 ## <a name="remarks"></a>Uwagi  
  W przypadku wywołań modelu DOM aparat skryptów wywołuje tę metodę zamiast wywoływania [IActiveScriptProfilerCallback:: OnFunctionExit](../../winscript/reference/iactivescriptprofilercallback-onfunctionexit.md). Wynika to z dużej liczby unikatowych metod i właściwości w modelu DOM.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IActiveScriptProfilerCallback2:: OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md)    
+ [IActiveScriptProfilerCallback2::OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md)   
  [IActiveScriptProfilerCallback2, interfejs](../../winscript/reference/iactivescriptprofilercallback2-interface.md)

@@ -31,7 +31,7 @@ Zostało wykonane odwołanie do etykiety, która nie istnieje. Etykiety mogą s�
 - Upewnij się, że wszystkie odwołania do etykiet są wprowadzane do oznakowań, które zostały zdefiniowane w bieżącym zakresie (obejmuje to definicje do przodu).  
   
 ## <a name="see-also"></a>Zobacz także  
- @No__t_1 [instrukcji z etykietą](../../javascript/reference/labeled-statement-javascript.md)  
- [przełączanie instrukcji](../../javascript/reference/switch-statement-javascript.md)    
- [instrukcja break](../../javascript/reference/break-statement-javascript.md)    
+   [instrukcji z etykietą](../../javascript/reference/labeled-statement-javascript.md)  
+ [przełączanie instrukcji](../../javascript/reference/switch-statement-javascript.md)   
+ [instrukcja break](../../javascript/reference/break-statement-javascript.md)   
  [continue, instrukcja](../../javascript/reference/continue-statement-javascript.md)

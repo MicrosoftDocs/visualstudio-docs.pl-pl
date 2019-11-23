@@ -1,5 +1,5 @@
 ---
-title: 'IActiveScriptProfilerCallback:: OnFunctionExit | Microsoft Docs'
+title: IActiveScriptProfilerCallback::OnFunctionExit | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -40,12 +40,12 @@ HRESULT OnFunctionExit(
  `functionId`  
  podczas Unikatowy identyfikator funkcji. Ten identyfikator jest przypisywany przez aparat obsługi skryptów.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Zwracana wartość tej metody jest ignorowana przez aparat wykonywania skryptów.  
   
 ## <a name="remarks"></a>Uwagi  
  W przypadku wywołań modelu DOM aparat skryptów wywołuje [IActiveScriptProfilerCallback2:: OnFunctionExitByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionexitbyname.md) , a nie `IActiveScriptProfilerCallback::OnFunctionExit`. Wynika to z dużej liczby unikatowych metod i właściwości w modelu DOM.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IActiveScriptProfilerCallback:: OnFunctionEnter](../../winscript/reference/iactivescriptprofilercallback-onfunctionenter.md)    
+ [IActiveScriptProfilerCallback::OnFunctionEnter](../../winscript/reference/iactivescriptprofilercallback-onfunctionenter.md)   
  [IActiveScriptProfilerCallback, interfejs](../../winscript/reference/iactivescriptprofilercallback-interface.md)

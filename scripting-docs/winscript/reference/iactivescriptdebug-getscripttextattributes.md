@@ -52,19 +52,19 @@ HRESULT GetScriptTextAttributes(
  `dwFlags`  
  podczas Flagi skojarzone z blokiem skryptu. Może być kombinacją następujących wartości:  
   
-|Stała|Wartość|Opis|  
+|Stała|Value|Opis|  
 |--------------|-----------|-----------------|  
 |GETATTRTYPE_DEPSCAN|0x0001|Wskazuje, że identyfikatory i operatory kropek powinny być identyfikowane odpowiednio flagami SOURCETEXT_ATTR_IDENTIFIER i SOURCETEXT_ATTR_MEMBERLOOKUP.|  
 |GETATTRFLAG_THIS|0x0100|Wskazuje, że identyfikator dla bieżącego obiektu powinien być zidentyfikowany przy użyciu flagi SOURCETEXT_ATTR_THIS.|  
-|GETATTRFLAG_HUMANTEXT|0x8000|Wskazuje, że zawartość ciągu i tekst komentarza powinny być identyfikowane przy użyciu flagi SOURCETEXT_ATTR_HUMANTEXT.|  
+|GETATTRFLAG_HUMANTEXT|0x8000|Wskazuje, że zawartość ciągu i tekst komentarza powinny być identyfikowane za pomocą flagi SOURCETEXT_ATTR_HUMANTEXT.|  
   
  `pattr`  
  [in. out] Bufor zawierający zwrócone atrybuty.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
@@ -74,8 +74,8 @@ HRESULT GetScriptTextAttributes(
  Ta metoda dla bloków skryptu; Metoda `GetScriptletTextAttributes` jest dla skryptlety.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IActiveScriptDebug   interfejsu](../../winscript/reference/iactivescriptdebug-interface.md)  
- [IActiveScriptDebug:: GetScriptletTextAttributes](../../winscript/reference/iactivescriptdebug-getscriptlettextattributes.md)    
- [IDebugDocumentText   interfejsu](../../winscript/reference/idebugdocumenttext-interface.md)  
- [IDebugDocumentText:: gettext](../../winscript/reference/idebugdocumenttext-gettext.md)    
+ [IActiveScriptDebug  interfejsu](../../winscript/reference/iactivescriptdebug-interface.md)  
+ [IActiveScriptDebug::GetScriptletTextAttributes](../../winscript/reference/iactivescriptdebug-getscriptlettextattributes.md)   
+ [IDebugDocumentText  interfejsu](../../winscript/reference/idebugdocumenttext-interface.md)  
+ [IDebugDocumentText:: gettext](../../winscript/reference/idebugdocumenttext-gettext.md)   
  [SOURCE_TEXT_ATTR, wyliczenie](../../winscript/reference/source-text-attr-enumeration.md)

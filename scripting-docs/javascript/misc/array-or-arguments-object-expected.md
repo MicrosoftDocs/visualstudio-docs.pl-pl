@@ -29,6 +29,6 @@ Nie podano tablicy jako argumentu. Ten błąd dotyczy tylko metody **Function. p
 - Określ `Array` lub obiekt **arguments** jako drugi argument.  
   
 ## <a name="see-also"></a>Zobacz także  
- [Używanie tablic](../../javascript/advanced/using-arrays-javascript.md)    
- [apply — Metoda (funkcja)](../../javascript/reference/apply-method-function-javascript.md)    
+ [Używanie tablic](../../javascript/advanced/using-arrays-javascript.md)   
+ [apply — Metoda (funkcja)](../../javascript/reference/apply-method-function-javascript.md)   
  [Funkcje](../../javascript/functions-javascript.md)

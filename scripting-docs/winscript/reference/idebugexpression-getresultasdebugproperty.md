@@ -43,19 +43,19 @@ HRESULT GetResultAsDebugProperty(
  `ppdp`  
  określoną Właściwość Debug dla wyrażenia.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
 |`E_PENDING`|Operacja jest nadal w stanie oczekiwania.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda zwraca wynik oceny wyrażenia jako `IDebugProperty` i `HRESULT` operacji.  
+ Ta metoda zwraca wynik oceny wyrażenia jako `IDebugProperty` i `HRESULT`operacji.  
   
  Ta metoda zwraca `S_OK` i `phrResult` zwraca `E_ABORT` Jeśli `Abort` przerywa operację.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IDebugExpression   interfejsu](../../winscript/reference/idebugexpression-interface.md)  
+ [IDebugExpression  interfejsu](../../winscript/reference/idebugexpression-interface.md)  
  [IDebugExpression::Abort](../../winscript/reference/idebugexpression-abort.md)

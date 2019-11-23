@@ -51,11 +51,11 @@ HRESULT EnumMembers (
  `ppEnum`  
  określoną Zwraca interfejs `IEnumDebugPropertyInfo`, który wylicza właściwości elementu członkowskiego.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Zwraca prawidłowy `HRESULT`, zazwyczaj `S_OK`.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IDebugProperty   interfejsu](../../winscript/reference/idebugproperty-interface.md)  
- [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)    
- [IDebugPropertyEnumType_All   interfejsu](../../winscript/reference/idebugpropertyenumtype-all-interface.md)  
+ [IDebugProperty  interfejsu](../../winscript/reference/idebugproperty-interface.md)  
+ [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)   
+   [IDebugPropertyEnumType_All interfejsu](../../winscript/reference/idebugpropertyenumtype-all-interface.md)  
  [IEnumDebugPropertyInfo, interfejs](../../winscript/reference/ienumdebugpropertyinfo-interface.md)

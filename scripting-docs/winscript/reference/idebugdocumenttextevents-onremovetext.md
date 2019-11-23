@@ -43,10 +43,10 @@ HRESULT onRemoveText(
  `cNumToRemove`  
  podczas Liczba usuniętych znaków.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
@@ -54,5 +54,5 @@ HRESULT onRemoveText(
  Ta metoda wskazuje, że tekst został usunięty z dokumentu.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IDebugDocumentTextEvents   interfejsu](../../winscript/reference/idebugdocumenttextevents-interface.md)  
+ [IDebugDocumentTextEvents  interfejsu](../../winscript/reference/idebugdocumenttextevents-interface.md)  
  [IDebugDocumentTextEvents::onInsertText](../../winscript/reference/idebugdocumenttextevents-oninserttext.md)

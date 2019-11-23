@@ -36,10 +36,10 @@ HRESULT onComplete();
 #### <a name="parameters"></a>Parametry  
  Ta metoda nie przyjmuje żadnych parametrów.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
@@ -47,5 +47,5 @@ HRESULT onComplete();
  Ta metoda sygnalizuje, że wynik jest dostępny z obiektu `IDebugAsyncOperation`. Zdarzenie jest wyzwalane w wątku debugera.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IDebugAsyncOperationCallBack   interfejsu](../../winscript/reference/idebugasyncoperationcallback-interface.md)  
+ [IDebugAsyncOperationCallBack  interfejsu](../../winscript/reference/idebugasyncoperationcallback-interface.md)  
  [IDebugAsyncOperation, interfejs](../../winscript/reference/idebugasyncoperation-interface.md)

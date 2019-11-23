@@ -39,9 +39,9 @@ HRESULT Skip(
  `celt`  
  podczas Liczba struktur `ExtendedDebugPropertyInfo` w sekwencji wyliczenia do pominięcia.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Zwraca prawidłowy `HRESULT`, zazwyczaj `S_OK`. Zwraca `S_FALSE` i ustawia bieżący wskaźnik elementu na koniec wyliczenia, jeśli `celt` jest większa niż liczba elementów pozostawionych w module wyliczającym.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IEnumDebugExtendedPropertyInfo   interfejsu](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)  
+ [IEnumDebugExtendedPropertyInfo  interfejsu](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)  
  [ExtendedDebugPropertyInfo, struktura](../../winscript/reference/extendeddebugpropertyinfo-structure.md)

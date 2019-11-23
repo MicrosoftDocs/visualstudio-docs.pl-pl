@@ -27,7 +27,7 @@ Podobnie jak interfejs `IMachineDebugManager`, interfejs `IMachineDebugManagerCo
   
  Debuger skryptów wywołuje metodę `IDebugCookie::SetDebugCookie` w Menedżerze debugowania procesów (PDM). Następnie PDM wysyła ten plik cookie wraz z dowolnym żądaniem dodania lub usunięcia aplikacji skryptowej do lub z Menedżera debugowania maszyn (MDM) przy użyciu metod interfejsu `IMachineDebugManagerCookie`. Usługa MDM powiadamia następnie każdy debuger zmiany, z wyjątkiem tego, który ma ten plik cookie.  
   
- Oprócz metod dziedziczonych z `IUnknown` interfejs `IMachineDebugManagerCookie` udostępnia następujące metody.  
+ Oprócz metod dziedziczonych z `IUnknown`interfejs `IMachineDebugManagerCookie` udostępnia następujące metody.  
   
 ## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych  
   
@@ -38,5 +38,5 @@ Podobnie jak interfejs `IMachineDebugManager`, interfejs `IMachineDebugManagerCo
 |[IMachineDebugManagerCookie::RemoveApplication](../../winscript/reference/imachinedebugmanagercookie-removeapplication.md)|Usuwa aplikację z listy uruchomionych aplikacji.|  
   
 ## <a name="see-also"></a>Zobacz także  
- [IMachineDebugManager   interfejsu](../../winscript/reference/imachinedebugmanager-interface.md)  
+ [IMachineDebugManager  interfejsu](../../winscript/reference/imachinedebugmanager-interface.md)  
  [IDebugCookie, interfejs](../../winscript/reference/idebugcookie-interface.md)

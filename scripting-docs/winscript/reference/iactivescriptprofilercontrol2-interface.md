@@ -31,5 +31,5 @@ Zapewnia metody, które umożliwiają uruchamianie lub zatrzymywanie profilowani
 |[IActiveScriptProfilerControl2::PrepareProfilerStop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md)|Powiadamia program profilujący o zatrzymaniu profilowania dla wszystkich odpowiednich aparatów skryptów. Dzięki temu można uzyskać kompletny stos wywołań, jeśli [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] jest uruchomiony po zatrzymaniu profilowania.|  
   
 ## <a name="see-also"></a>Zobacz także  
- [IActiveScriptProfilerControl   interfejsu](../../winscript/reference/iactivescriptprofilercontrol-interface.md)  
+ [IActiveScriptProfilerControl  interfejsu](../../winscript/reference/iactivescriptprofilercontrol-interface.md)  
  [Interfejsy profilera aktywnego skryptu](../../winscript/reference/active-script-profiler-interfaces.md)

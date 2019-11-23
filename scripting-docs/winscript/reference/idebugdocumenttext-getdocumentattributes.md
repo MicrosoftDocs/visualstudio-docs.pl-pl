@@ -39,10 +39,10 @@ HRESULT GetDocumentAttributes(
  `ptextdocattr`  
  określoną Atrybuty tekstu dokumentu.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
@@ -50,5 +50,5 @@ HRESULT GetDocumentAttributes(
  Ta metoda zwraca atrybuty dokumentu.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IDebugDocumentText   interfejsu](../../winscript/reference/idebugdocumenttext-interface.md)  
+ [IDebugDocumentText  interfejsu](../../winscript/reference/idebugdocumenttext-interface.md)  
  [TEXT_DOC_ATTR, stałe](../../winscript/reference/text-doc-attr-constants.md)

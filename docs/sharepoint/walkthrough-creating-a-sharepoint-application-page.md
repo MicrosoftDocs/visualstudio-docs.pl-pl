@@ -61,7 +61,7 @@ Aby utworzyć stronę aplikacji, Dodaj element **strony aplikacji** do projektu.
 
 1. W **Eksplorator rozwiązań**wybierz projekt **MyShareProject** .
 
-2. Na pasku menu wybierz **projekt**  > **Dodaj nowy element**.
+2. Na pasku menu wybierz **projektu** > **Dodaj nowy element**.
 
 3. W oknie dialogowym **Dodaj nowy element** wybierz **stronę aplikacji (szablon tylko rozwiązanie farmy** ).
 
@@ -73,7 +73,7 @@ Aby utworzyć stronę aplikacji, Dodaj element **strony aplikacji** do projektu.
 
 Element Strona aplikacji umożliwia dodawanie formantów ASP.NET do strony aplikacji przy użyciu projektanta. Ten Projektant jest tym samym projektantem, który jest używany w Visual Web Developer. Dodaj etykietę, listę przycisków radiowych i tabelę do widoku **źródła** projektanta, a następnie ustaw właściwości tak samo jak podczas projektowania dowolnej standardowej strony ASP.NET.
 
-1. Na pasku menu wybierz **widok**  > **Przybornik**.
+1. Na pasku menu wybierz **widok** > **Przybornik**.
 
 2. W węźle standardowy **przybornika**wykonaj jedną z następujących czynności:
 
@@ -154,4 +154,4 @@ Aby dowiedzieć się więcej na temat projektowania zawartości strony programu 
 ## <a name="see-also"></a>Zobacz także
 
 [Instrukcje: Tworzenie strony aplikacji](../sharepoint/how-to-create-an-application-page.md)
-[Typ strony za_layouts aplikacji](/previous-versions/office/aa979604(v=office.14))
+[aplikacji _layouts typ strony](/previous-versions/office/aa979604(v=office.14))

@@ -43,10 +43,10 @@ HRESULT Advise(
  `pdwCookie`  
  określoną Wskaźnik do zwróconego tokenu, który jednoznacznie identyfikuje to połączenie. Obiekt wywołujący używa tego tokenu później do usunięcia połączenia przez przekazanie go do metody `ISimpleConnectionPoint::Unadvise`. Jeśli połączenie nie zostało pomyślnie ustanowione, ta wartość jest równa zero.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
@@ -54,5 +54,5 @@ HRESULT Advise(
  Ta metoda ustanawia połączenie między obiektem prostego punktu połączenia i ujściam klienta.  
   
 ## <a name="see-also"></a>Zobacz także  
- [ISimpleConnectionPoint   interfejsu](../../winscript/reference/isimpleconnectionpoint-interface.md)  
+ [ISimpleConnectionPoint  interfejsu](../../winscript/reference/isimpleconnectionpoint-interface.md)  
  [ISimpleConnectionPoint::Unadvise](../../winscript/reference/isimpleconnectionpoint-unadvise.md)

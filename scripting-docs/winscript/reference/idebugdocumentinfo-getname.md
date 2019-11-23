@@ -43,10 +43,10 @@ HRESULT GetName(
  `pbstrName`  
  określoną Ciąg zawierający nazwę.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
 |`E_FAIL`|Określona nazwa dokumentu jest nieznana.|  
@@ -55,5 +55,5 @@ HRESULT GetName(
  Ta metoda zwraca określoną nazwę dokumentu.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IDebugDocumentInfo   interfejsu](../../winscript/reference/idebugdocumentinfo-interface.md)  
+ [IDebugDocumentInfo  interfejsu](../../winscript/reference/idebugdocumentinfo-interface.md)  
  [DOCUMENTNAMETYPE, wyliczenie](../../winscript/reference/documentnametype-enumeration.md)

@@ -29,5 +29,5 @@ Podjęto próbę wywołania metody **Number. prototype. ToString** lub **Number.
 - Wywołaj metody **Number. prototype. ToString** lub **Number. prototype. valueOf** dla obiektów typu **Number**.  
   
 ## <a name="see-also"></a>Zobacz także  
- [Liczba   obiektu](../../javascript/reference/number-object-javascript.md)  
+ [Liczba  obiektu](../../javascript/reference/number-object-javascript.md)  
  [number, właściwość (Error)](../../javascript/reference/number-property-error-javascript.md)

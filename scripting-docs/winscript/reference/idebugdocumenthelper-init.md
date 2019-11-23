@@ -51,10 +51,10 @@ HRESULT Init(
  `docAttr`  
  podczas Określa atrybuty dokumentu tekstowego.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
@@ -64,6 +64,6 @@ HRESULT Init(
  Ten dokument nie jest wyświetlany w drzewie do momentu wywołania `IDebugDocumentHelper::Attach`.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IDebugDocumentHelper:: Attach](../../winscript/reference/idebugdocumenthelper-attach.md)    
- [IDebugDocumentHelper   interfejsu](../../winscript/reference/idebugdocumenthelper-interface.md)  
+ [IDebugDocumentHelper:: Attach](../../winscript/reference/idebugdocumenthelper-attach.md)   
+ [IDebugDocumentHelper  interfejsu](../../winscript/reference/idebugdocumenthelper-interface.md)  
  [TEXT_DOC_ATTR, stałe](../../winscript/reference/text-doc-attr-constants.md)

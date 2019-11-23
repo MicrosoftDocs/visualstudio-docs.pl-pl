@@ -55,10 +55,10 @@ HRESULT GetDeferredText(
  `cMaxChars`  
  podczas Maksymalna liczba znaków do zwrócenia.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
 |`E_NOTIMPL`|Metoda nie jest zaimplementowana.|  
@@ -70,6 +70,6 @@ HRESULT GetDeferredText(
 > Ta metoda zwraca tekst z oryginalnego dokumentu. Host nie śledzi edycji ani innych zmian w dokumencie.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IDebugDocumentHost   interfejsu](../../winscript/reference/idebugdocumenthost-interface.md)  
- [IDebugDocumentHelper:: AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)    
+ [IDebugDocumentHost  interfejsu](../../winscript/reference/idebugdocumenthost-interface.md)  
+ [IDebugDocumentHelper:: AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)   
  [SOURCE_TEXT_ATTR, wyliczenie](../../winscript/reference/source-text-attr-enumeration.md)

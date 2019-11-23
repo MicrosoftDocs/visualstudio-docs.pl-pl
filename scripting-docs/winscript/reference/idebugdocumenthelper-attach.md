@@ -39,10 +39,10 @@ HRESULT Attach(
  `pddhParent`  
  podczas Drzewo dokumentu, do którego zostanie dodany ten dokument. Może mieć wartość NULL.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
@@ -50,5 +50,5 @@ HRESULT Attach(
  Ta metoda dodaje ten dokument do drzewa dokumentów przy użyciu `pddhParent` jako elementu nadrzędnego. Jeśli `pddhParent` jest `NULL`, dokument ten będzie dokumentem najwyższego poziomu.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IDebugDocumentHelper::D etach](../../winscript/reference/idebugdocumenthelper-detach.md)    
+ [IDebugDocumentHelper::D etach](../../winscript/reference/idebugdocumenthelper-detach.md)   
  [IDebugDocumentHelper, interfejs](../../winscript/reference/idebugdocumenthelper-interface.md)

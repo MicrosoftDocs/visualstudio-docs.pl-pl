@@ -39,16 +39,16 @@ HRESULT SetDefaultTextAttr(
  `staTextAttr`  
  Domyślne atrybuty tekstu źródłowego.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- O ile domyślne atrybuty nie są zmieniane przez tę metodę, atrybuty domyślne dla tekstu spoza bloku skryptu to SOURCETEXT_ATTR_NONSOURCE. Interfejs użytkownika może używać tych informacji do oznaczania tekstu poza blokami skryptów jako tylko do odczytu.  
+ O ile domyślne atrybuty nie są zmieniane przez tę metodę, atrybuty domyślne dla tekstu spoza bloku skryptu są SOURCETEXT_ATTR_NONSOURCE. Interfejs użytkownika może używać tych informacji do oznaczania tekstu poza blokami skryptów jako tylko do odczytu.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IDebugDocumentHelper   interfejsu](../../winscript/reference/idebugdocumenthelper-interface.md)  
+ [IDebugDocumentHelper  interfejsu](../../winscript/reference/idebugdocumenthelper-interface.md)  
  [SOURCE_TEXT_ATTR, wyliczenie](../../winscript/reference/source-text-attr-enumeration.md)

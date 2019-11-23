@@ -47,7 +47,7 @@ Najpierw utworzysz projekt aplikacji w języku Visual Basic. Typ projektu zawier
 
 1. Otwórz program Visual Studio 2017.
 
-1. Na górnym pasku menu wybierz pozycję **plik** > **Nowy** > **projekt**.
+1. Na górnym pasku menu wybierz kolejno pozycje **plik** > **Nowy** > **projekt**.
 
 1. W **nowy projekt** okno dialogowe w okienku po lewej stronie rozwiń **języka Visual Basic**, a następnie wybierz **pulpitu Windows**. W środkowym okienku wybierz **aplikacji programu Windows Forms (.NET Framework)** . Następnie Nazwij plik `HelloWorld`.
 
@@ -100,7 +100,7 @@ Po wybraniu szablonu projektu języka Visual Basic i nazwę pliku, programu Visu
 
      ![Kliknij przycisk przybornika, aby otworzyć okno przybornika](../ide/media/vb-toolbox-toolwindow.png)
 
-     (Jeśli nie widzisz **przybornika** staną się opcji, możesz go otworzyć z paska menu. Aby to zrobić, **Wyświetl** **Przybornik** > . Lub naciśnij **Ctrl**+**Alt**+**X**.)
+     (Jeśli nie widzisz **przybornika** staną się opcji, możesz go otworzyć z paska menu. Aby to zrobić, **wyświetl** > **Przybornik**. Lub naciśnij **Ctrl**+**Alt**+**X**.)
 
 1. Kliknij przycisk **numeru Pin** ikonę, aby zadokować **przybornika** okna.
 
@@ -137,7 +137,7 @@ Teraz, po dodaniu kontrolki przycisku, aby utworzyć akcję, możemy dodać kont
 
       (Ewentualnie możesz rozwinąć **Form1.vb** w **Eksploratora rozwiązań**, a następnie kliknij przycisk **Form1**.)
 
-1. W oknie **Form1. vb** między liniami podrzędnymi **podrzędnymi** i **końcowymi** wpisz lub wprowadź `lblHelloWorld.Text = "Hello World!"`, jak pokazano na poniższym zrzucie ekranu:
+1. W oknie **Form1. vb** między liniami podrzędnymi **podrzędnymi** i **końcowymi** wpisz lub wprowadź `lblHelloWorld.Text = "Hello World!"` jak pokazano na poniższym zrzucie ekranu:
 
      ![Dodaj kod do formularza](../ide/media/vb-add-code-to-the-form.png)
 
@@ -160,7 +160,7 @@ Teraz, po dodaniu kontrolki przycisku, aby utworzyć akcję, możemy dodać kont
 Aby dowiedzieć się więcej, przejdź do następującego samouczka:
 
 > [!div class="nextstepaction"]
-> [Samouczek: Tworzenie podglądu obrazów @ no__t-0
+> [Samouczek: Tworzenie przeglądarki obrazów](tutorial-1-create-a-picture-viewer.md)
 
 ## <a name="see-also"></a>Zobacz także
 

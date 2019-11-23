@@ -21,7 +21,7 @@ ms.contentlocale: pl-PL
 ms.lasthandoff: 08/30/2019
 ms.locfileid: "70179808"
 ---
-# <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Samouczek: Dowiedz się C++ , jak debugować kod przy użyciu programu Visual Studio
+# <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Samouczek: Dowiedz się debugować kod C++ przy użyciu programu Visual Studio
 
 W tym artykule przedstawiono funkcje debugera programu Visual Studio w przewodnik krok po kroku. Jeśli potrzebujesz widoku wyższego poziomu funkcji debugera, zobacz [pierwsze spojrzenie na debuger](../debugger/debugger-feature-tour.md). Gdy użytkownik *debugowanie aplikacji*, zwykle oznacza to, że aplikacja jest uruchamiana w debugerze. Gdy to zrobisz, debuger zapewnia wiele sposobów, aby zobaczyć, co kod robi podczas jego uruchamiania. Można przejść przez kod i przyjrzyj się wartości przechowywane w zmiennych, można ustawić zegarki dla zmiennych, aby zobaczyć, kiedy zmienić wartości, można zbadać ścieżki wykonywania kodu, czy gałąź kodu nie jest uruchomiona, i tak dalej. Jeśli po raz pierwszy, próbujących przeprowadzić debugowania kodu, warto przeczytać [debugowania dla początkujących](../debugger/debugging-absolute-beginners.md) przed przejściem w tym artykule.
 
@@ -37,7 +37,7 @@ W tym samouczku wykonasz następujące czynności:
 
 ::: moniker range=">=vs-2019"
 
-Musisz mieć zainstalowany program Visual Studio 2019 i  **C++ Programowanie dla komputerów stacjonarnych** .
+Musisz mieć zainstalowany program Visual Studio 2019 i **programowanie C++ dla komputerów stacjonarnych** .
 
 ::: moniker-end
 ::: moniker range="vs-2017"
@@ -48,7 +48,7 @@ Konieczne jest posiadanie programu Visual Studio 2017 i **programowanie aplikacj
 
 Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads) strony, aby zainstalować go za darmo.
 
-Jeśli musisz zainstalować obciążenie, ale masz już program Visual Studio, przejdź do pozycji **Narzędzia** > **Pobierz narzędzia i funkcje..** ., co spowoduje otwarcie Instalator programu Visual Studio. Uruchamia Instalatora programu Visual Studio. Wybierz **programowanie aplikacji klasycznych w języku C++** obciążenia, wybierz **Modyfikuj**.
+Jeśli musisz zainstalować obciążenie, ale masz już program Visual Studio, przejdź do pozycji **narzędzia** > **Pobierz narzędzia i funkcje..** ., co spowoduje otwarcie Instalator programu Visual Studio. Uruchamia Instalatora programu Visual Studio. Wybierz **programowanie aplikacji klasycznych w języku C++** obciążenia, wybierz **Modyfikuj**.
 
 ## <a name="create-a-project"></a>Tworzenie projektu
 
@@ -58,7 +58,7 @@ Jeśli musisz zainstalować obciążenie, ale masz już program Visual Studio, p
     Naciśnij klawisz **ESC** , aby zamknąć okno uruchamiania. **Naciśnij klawisze CTRL + Q** , aby otworzyć pole wyszukiwania, **wpisz c++** , wybierz pozycję **Szablony**, a następnie wybierz pozycję **Utwórz nowy projekt aplikacji konsolowej**. W wyświetlonym oknie dialogowym wpisz nazwę, taką jak **Get-Started-Debug**, a następnie wybierz pozycję **Utwórz**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Na pasku menu u góry wybierz **pliku** > **New** > **projektu**. W lewym okienku okna dialogowego **Nowy projekt** w obszarze **C++Wizualizacja**wybierz pozycję **Windows Desktop**, a następnie w środkowym okienku wybierz pozycję **Aplikacja konsolowa systemu Windows**. Następnie wpisz nazwę, na przykład **MyDbgApp** , i kliknij przycisk **OK**.
+    Na pasku menu u góry wybierz **pliku** > **New** > **projektu**. W lewym okienku okna dialogowego **Nowy projekt** w obszarze **Wizualizacja C++** wybierz pozycję **Windows Desktop**, a następnie w środkowym okienku wybierz pozycję **Aplikacja konsolowa systemu Windows**. Następnie wpisz nazwę, na przykład **MyDbgApp** , i kliknij przycisk **OK**.
     ::: moniker-end
 
     Jeśli szablon projektu **aplikacji konsolowej systemu Windows** nie jest widoczny, przejdź do pozycji **Narzędzia** > **Pobierz narzędzia i funkcje**, co spowoduje otwarcie Instalator programu Visual Studio. Uruchamia Instalatora programu Visual Studio. Wybierz **programowanie aplikacji klasycznych w języku C++** obciążenia, wybierz **Modyfikuj**.
@@ -215,7 +215,7 @@ Przede wszystkim, używamy skróty klawiaturowe w tym miejscu, ponieważ jest to
 
      ![Użyj F11, aby kod Step Into](../debugger/media/get-started-f11-cpp.png "F11 Step Into")
 
-     Jest F11 **Step Into** poleceń i prowadzi aplikacji wykonanie jednej instrukcji w danym momencie. F11 jest dobrym sposobem na zbadanie przepływ wykonania w najbardziej szczegółowy. (Aby poruszać się szybciej za pomocą kodu, firma Microsoft dowiesz się także inne opcje również.) Domyślnie debuger pomija nad kodem niezwiązanych z użytkownikiem (Jeśli chcesz, aby uzyskać więcej informacji, zobacz [tylko mój kod](../debugger/just-my-code.md)).
+     Jest F11 **Step Into** poleceń i prowadzi aplikacji wykonanie jednej instrukcji w danym momencie. F11 jest dobrym sposobem na zbadanie przepływ wykonania w najbardziej szczegółowy. (Aby szybciej przejść przez kod, pokazujemy inne opcje.) Domyślnie debuger pomija kod niebędący użytkownikiem (Aby uzyskać więcej szczegółów, zobacz [tylko mój kod](../debugger/just-my-code.md)).
 
 2. Naciśnij klawisz **F10** (lub wybierz **Debuguj > Step Over**) kilka razy dopóki debuger zatrzymuje się na `Shape::Draw` wywołania metody, a następnie klawisz **F10** jeszcze raz.
 
@@ -230,7 +230,7 @@ Przede wszystkim, używamy skróty klawiaturowe w tym miejscu, ponieważ jest to
      ![Użyj Uruchom do kliknięcia funkcji](../debugger/media/get-started-run-to-click-cpp.png "uruchamianie do kliknięcia")
 
    > [!NOTE]
-   > Przycisk **Uruchom do kliknięcia** jest dostępny w programie [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]. Jeśli nie widzisz przycisku zieloną strzałkę, użyj **F11** w tym przykładzie zamiast Aby awansować debugera we właściwym miejscu.
+   > Przycisk **Uruchom do kliknięcia** jest dostępny w [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]. Jeśli nie widzisz przycisku zieloną strzałkę, użyj **F11** w tym przykładzie zamiast Aby awansować debugera we właściwym miejscu.
 
 2. Kliknij przycisk **uruchamianie do kliknięcia** przycisk ![uruchamianie do kliknięcia](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
 
@@ -320,7 +320,7 @@ Funkcje, które pozwalają na sprawdzanie zmiennych są jednymi z najbardziej pr
 
     Możesz kliknąć dwukrotnie wiersz kodu, aby przyjrzeć się kodu źródłowego i zmienia także bieżący zakres kontrolowanym przez debuger. Ta akcja nie wcześniejsze debugera.
 
-    Można również użyć menu kliknij prawym przyciskiem myszy **stos wywołań** okna, aby wykonywać inne czynności. Na przykład, wstawianie punktów przerwania do określonych funkcji, przejdź do debugera przy użyciu **Uruchom do kursora**i przejdź zbadanie kodu źródłowego. Aby uzyskać więcej informacji, zobacz [jak: Zapoznaj się ze](../debugger/how-to-use-the-call-stack-window.md)stosem wywołań.
+    Można również użyć menu kliknij prawym przyciskiem myszy **stos wywołań** okna, aby wykonywać inne czynności. Na przykład, wstawianie punktów przerwania do określonych funkcji, przejdź do debugera przy użyciu **Uruchom do kursora**i przejdź zbadanie kodu źródłowego. Aby uzyskać więcej informacji, zobacz [jak: Sprawdź stos wywołań](../debugger/how-to-use-the-call-stack-window.md).
 
 ## <a name="change-the-execution-flow"></a>Zmień przepływ wykonania
 

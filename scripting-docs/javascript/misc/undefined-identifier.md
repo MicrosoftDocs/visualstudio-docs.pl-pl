@@ -35,5 +35,5 @@ Podjęto próbę użycia identyfikatora, którego kompilator [!INCLUDE[javascrip
 - Zadeklaruj zmienną za pomocą instrukcji **var** (jak w `var` x;).  
   
 ## <a name="see-also"></a>Zobacz także  
- [Zmienne](../../javascript/variables-javascript.md)    
+ [Zmienne](../../javascript/variables-javascript.md)   
  [Zakres zmiennej](../../javascript/advanced/variable-scope-javascript.md)

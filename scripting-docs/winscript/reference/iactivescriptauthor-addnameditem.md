@@ -44,7 +44,7 @@ HRESULT AddNamedItem(
  `dwFlags`  
  podczas Flagi, które są skojarzone z nazwanym elementem. Może być kombinacją następujących wartości:  
   
-|Stała|Wartość|Opis|  
+|Stała|Value|Opis|  
 |--------------|-----------|-----------------|  
 |SCRIPTITEM_ISVISIBLE|0x00000002|Wskazuje, że nazwa elementu jest dostępna w przestrzeni nazw skryptu. Pozwala to na dostęp do właściwości, metod i zdarzeń elementu.<br /><br /> Zgodnie z Konwencją właściwości elementu zawierają podrzędne elementy członkowskie elementu. W związku z tym wszystkie właściwości i metody obiektu podrzędnego (i ich elementy podrzędne, cyklicznie) są dostępne.|  
 |SCRIPTITEM_ISSOURCE|0x00000004|Wskazuje zdarzenia źródła elementu, które skrypt może mieć procedury obsługi zdarzeń skryptu.|  
@@ -54,17 +54,17 @@ HRESULT AddNamedItem(
 |SCRIPTITEM_NOCODE|0x00000400|Wskazuje, że nazwany element jest tylko dodawaną nazwą i nie ma nic do autora.|  
   
  `pdisp`  
- podczas @No__t_0 obiektu `NamedItem`, który jest używany do zbierania metod, właściwości lub źródła zdarzenia.  
+ podczas `IDispatch` obiektu `NamedItem`, który jest używany do zbierania metod, właściwości lub źródła zdarzenia.  
   
-## <a name="return-value"></a>Wartość zwracana  
- @No__t_0. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+## <a name="return-value"></a>Wartość zwrócona  
+ `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
   
 ## <a name="see-also"></a>Zobacz także  
- [IActiveScriptAuthor   interfejsu](../../winscript/reference/iactivescriptauthor-interface.md)  
+ [IActiveScriptAuthor  interfejsu](../../winscript/reference/iactivescriptauthor-interface.md)  
  [IActiveScriptAuthor::RemoveNamedItem](../../winscript/reference/iactivescriptauthor-removenameditem.md)

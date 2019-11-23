@@ -44,7 +44,7 @@ HRESULT GetMemberProperties(
  `grfdexFetch`  
  Określa, które właściwości mają być pobierane. Może to być kombinacja wartości wymienionych w obszarze `pgrfdex` i/lub kombinacji następujących wartości:  
   
-|Wartość|Znaczenie|  
+|Value|Znaczenie|  
 |-----------|-------------|  
 |grfdexPropCanAll|Łączy fdexPropCanGet, fdexPropCanPut, fdexPropCanPutRef, fdexPropCanCall, fdexPropCanConstruct i fdexPropCanSourceEvents.|  
 |grfdexPropCannotAll|Łączy fdexPropCannotGet, fdexPropCannotPut, fdexPropCannotPutRef, fdexPropCannotCall, fdexPropCannotConstruct i fdexPropCannotSourceEvents.|  
@@ -54,14 +54,14 @@ HRESULT GetMemberProperties(
  `pgrfdex`  
  Adres `DWORD`, który odbiera żądane właściwości. Może to być kombinacja następujących wartości:  
   
-|Wartość|Znaczenie|  
+|Value|Znaczenie|  
 |-----------|-------------|  
-|fdexPropCanGet|Element członkowski można uzyskać za pomocą DISPATCH_PROPERTYGET.|  
+|fdexPropCanGet|Element członkowski można uzyskać przy użyciu DISPATCH_PROPERTYGET.|  
 |fdexPropCannotGet|Nie można uzyskać elementu członkowskiego przy użyciu DISPATCH_PROPERTYGET.|  
-|fdexPropCanPut|Element członkowski można ustawić za pomocą DISPATCH_PROPERTYPUT.|  
-|fdexPropCannotPut|Nie można ustawić elementu członkowskiego za pomocą DISPATCH_PROPERTYPUT.|  
-|fdexPropCanPutRef|Element członkowski można ustawić za pomocą DISPATCH_PROPERTYPUTREF.|  
-|fdexPropCannotPutRef|Nie można ustawić elementu członkowskiego za pomocą DISPATCH_PROPERTYPUTREF.|  
+|fdexPropCanPut|Element członkowski można ustawić przy użyciu DISPATCH_PROPERTYPUT.|  
+|fdexPropCannotPut|Nie można ustawić elementu członkowskiego przy użyciu DISPATCH_PROPERTYPUT.|  
+|fdexPropCanPutRef|Element członkowski można ustawić przy użyciu DISPATCH_PROPERTYPUTREF.|  
+|fdexPropCannotPutRef|Nie można ustawić elementu członkowskiego przy użyciu DISPATCH_PROPERTYPUTREF.|  
 |fdexPropNoSideEffects|Element członkowski nie ma żadnych efektów ubocznych. Na przykład debuger może bezpiecznie pobrać/ustawić/wywołać tego elementu członkowskiego bez zmiany stanu debugowanego skryptu.|  
 |fdexPropDynamicType|Element członkowski jest dynamiczny i może ulec zmianie w okresie istnienia obiektu.|  
 |fdexPropCanCall|Element członkowski może być wywoływany jako metoda przy użyciu DISPATCH_METHOD.|  
@@ -71,7 +71,7 @@ HRESULT GetMemberProperties(
 |fdexPropCanSourceEvents|Element członkowski może uruchamiać zdarzenia.|  
 |fdexPropCannotSourceEvents|Składowa nie może wyzwalać zdarzeń.|  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Zwraca jedną z następujących wartości:  
   
 |||  
@@ -97,6 +97,6 @@ BSTR bstrName;
 ```  
   
 ## <a name="see-also"></a>Zobacz także  
- [IDispatchEx   interfejsu](../../winscript/reference/idispatchex-interface.md)  
- [IDispatchEx:: getdispid](../../winscript/reference/idispatchex-getdispid.md)    
+ [IDispatchEx  interfejsu](../../winscript/reference/idispatchex-interface.md)  
+ [IDispatchEx:: getdispid](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

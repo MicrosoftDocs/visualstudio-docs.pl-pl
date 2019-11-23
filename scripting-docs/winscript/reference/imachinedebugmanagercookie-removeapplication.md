@@ -43,10 +43,10 @@ HRESULT RemoveApplication(
  `dwAppCookie`  
  podczas Plik cookie podany, gdy aplikacja została dodana do listy aplikacji.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
@@ -54,6 +54,6 @@ HRESULT RemoveApplication(
  Ta metoda jest wywoływana przez Menedżera debugowania procesów za każdym razem, gdy `IProcessDebugManager::RemoveApplication` jest wywoływana.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IMachineDebugManagerCookie:: addapplication](../../winscript/reference/imachinedebugmanagercookie-addapplication.md)    
- [IMachineDebugManagerCookie   interfejsu](../../winscript/reference/imachinedebugmanagercookie-interface.md)  
+ [IMachineDebugManagerCookie::AddApplication](../../winscript/reference/imachinedebugmanagercookie-addapplication.md)   
+ [IMachineDebugManagerCookie  interfejsu](../../winscript/reference/imachinedebugmanagercookie-interface.md)  
  [IProcessDebugManager::RemoveApplication](../../winscript/reference/iprocessdebugmanager-removeapplication.md)

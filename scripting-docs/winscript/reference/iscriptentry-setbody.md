@@ -43,15 +43,15 @@ HRESULT SetBody(
   
  Dla obiektu `IScriptScriptlet` (który pochodzi z `IScriptEntry`), `psz` jest tekstem skryptu Scriptlet.  
   
-## <a name="return-value"></a>Wartość zwracana  
- @No__t_0. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+## <a name="return-value"></a>Wartość zwrócona  
+ `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
   
 ## <a name="see-also"></a>Zobacz także  
- [IScriptEntry   interfejsu](../../winscript/reference/iscriptentry-interface.md)  
+ [IScriptEntry  interfejsu](../../winscript/reference/iscriptentry-interface.md)  
  [IScriptEntry::GetBody](../../winscript/reference/iscriptentry-getbody.md)

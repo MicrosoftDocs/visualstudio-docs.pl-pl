@@ -1,5 +1,5 @@
 ---
-title: Interfejs IActiveScriptProfilerCallback3 | Microsoft Docs
+title: IActiveScriptProfilerCallback3 Interface | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -34,5 +34,5 @@ interface IActiveScriptProfilerCallback3 : IActiveScriptProfilerCallback2
 |[IActiveScriptProfilerCallback3::SetWebWorkerId, metoda](../../winscript/reference/iactivescriptprofilercallback3-setwebworkerid-method.md)|Powiadamia profiler o IDENTYFIKATORze procesu roboczego, który ma być używany dla tej sesji profilowania.|  
   
 ## <a name="see-also"></a>Zobacz także  
- [IActiveScriptProfilerCallback   interfejsu](../../winscript/reference/iactivescriptprofilercallback-interface.md)  
+ [IActiveScriptProfilerCallback Interface](../../winscript/reference/iactivescriptprofilercallback-interface.md)   
  [IActiveScriptProfilerCallback2, interfejs](../../winscript/reference/iactivescriptprofilercallback2-interface.md)

@@ -29,6 +29,6 @@ Próbowano użyć instrukcji **default** więcej niż raz w instrukcji switch. D
 - Usuń wszelkie dodatkowe **domyślne** instrukcje Case z instrukcji `switch` (Użyj co najwyżej jednej domyślnej instrukcji case w instrukcji switch).  
   
 ## <a name="see-also"></a>Zobacz także  
- [przełączanie instrukcji](../../javascript/reference/switch-statement-javascript.md)    
- [Sterowanie przepływem programu](../../javascript/controlling-program-flow-javascript.md)    
+ [przełączanie instrukcji](../../javascript/reference/switch-statement-javascript.md)   
+ [Sterowanie przepływem programu](../../javascript/controlling-program-flow-javascript.md)   
  [Słowa zastrzeżone JavaScript](../../javascript/reference/javascript-reserved-words.md)

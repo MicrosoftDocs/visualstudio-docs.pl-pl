@@ -33,6 +33,6 @@ Podjęto próbę utworzenia zmiennej, która będzie używana z instrukcją komp
     ```  
   
 ## <a name="see-also"></a>Zobacz także  
-   [instrukcji @set](../../javascript/reference/at-set-statement-javascript.md)  
- @No__t_1 [kompilacji warunkowej](../../javascript/advanced/conditional-compilation-javascript.md)  
+   [instrukcji@set](../../javascript/reference/at-set-statement-javascript.md)  
+   [kompilacji warunkowej](../../javascript/advanced/conditional-compilation-javascript.md)  
  [Zmienne kompilacji warunkowej](../../javascript/advanced/conditional-compilation-variables-javascript.md)

@@ -39,10 +39,10 @@ HRESULT onAddChild(
  `prddpChild`  
  podczas Podrzędny węzeł aplikacji debugowania, który został dodany.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
@@ -52,6 +52,6 @@ HRESULT onAddChild(
  Realizatory interfejsu `IDebugApplicationNode` powodują podnoszenie tego zdarzenia  
   
 ## <a name="see-also"></a>Zobacz także  
- [IDebugApplicationNodeEvents   interfejsu](../../winscript/reference/idebugapplicationnodeevents-interface.md)  
- [IDebugApplicationNodeEvents:: onRemoveChild](../../winscript/reference/idebugapplicationnodeevents-onremovechild.md)    
+ [IDebugApplicationNodeEvents  interfejsu](../../winscript/reference/idebugapplicationnodeevents-interface.md)  
+ [IDebugApplicationNodeEvents::onRemoveChild](../../winscript/reference/idebugapplicationnodeevents-onremovechild.md)   
  [IDebugApplicationNode, interfejs](../../winscript/reference/idebugapplicationnode-interface.md)

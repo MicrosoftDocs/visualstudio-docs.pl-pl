@@ -43,10 +43,10 @@ HRESULT onRemoveApplication(
  `dwAppCookie`  
  podczas Plik cookie podany podczas dodawania aplikacji z listy aplikacji.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
@@ -54,5 +54,5 @@ HRESULT onRemoveApplication(
  Ta metoda oznacza, że aplikacja została usunięta z listy uruchomionych aplikacji.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IMachineDebugManagerEvents   interfejsu](../../winscript/reference/imachinedebugmanagerevents-interface.md)  
+ [IMachineDebugManagerEvents  interfejsu](../../winscript/reference/imachinedebugmanagerevents-interface.md)  
  [IMachineDebugManagerEvents::onAddApplication](../../winscript/reference/imachinedebugmanagerevents-onaddapplication.md)

@@ -36,10 +36,10 @@ HRESULT Abort();
 #### <a name="parameters"></a>Parametry  
  Ta metoda nie przyjmuje żadnych parametrów.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
@@ -47,5 +47,5 @@ HRESULT Abort();
  Ta metoda przerywa Obliczanie wyrażenia w najkrótszej okazji.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IDebugExpression   interfejsu](../../winscript/reference/idebugexpression-interface.md)  
+ [IDebugExpression  interfejsu](../../winscript/reference/idebugexpression-interface.md)  
  [IDebugExpression::Start](../../winscript/reference/idebugexpression-start.md)

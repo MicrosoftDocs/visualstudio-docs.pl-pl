@@ -35,6 +35,6 @@ Identyfikator jest tworzony przy użyciu znaku (lub znaków), który nie został
 - Unikaj używania znaków, które nie są częścią definicji języka [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
 ## <a name="see-also"></a>Zobacz także  
- [Zmienne](../../javascript/variables-javascript.md)    
- [Znaki specjalne](../../javascript/advanced/special-characters-javascript.md)    
+ [Zmienne](../../javascript/variables-javascript.md)   
+ [Znaki specjalne](../../javascript/advanced/special-characters-javascript.md)   
  [Typy danych](../../javascript/data-types-javascript.md)

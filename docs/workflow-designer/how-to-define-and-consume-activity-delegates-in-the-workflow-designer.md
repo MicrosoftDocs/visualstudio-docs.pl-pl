@@ -26,7 +26,7 @@ ms.locfileid: "72650334"
    > [!NOTE]
    > Jeśli szablony projektów **przepływu pracy** nie są widoczne, najpierw zainstaluj składnik **Windows Workflow Foundation** programu Visual Studio. Aby uzyskać szczegółowe instrukcje, zobacz [Install Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
-3. Kliknij prawym przyciskiem myszy projekt w **Eksplorator rozwiązań** a następnie wybierz pozycję **Dodaj**  > **nowy element**. Wybierz kategorię **przepływu pracy** , a następnie wybierz szablon elementu **działania** . Nadaj nowemu działaniu wartość **foreach. XAML** , a następnie wybierz przycisk **OK**.
+3. Kliknij prawym przyciskiem myszy projekt w **Eksplorator rozwiązań** a następnie wybierz pozycję **Dodaj** > **nowy element**. Wybierz kategorię **przepływu pracy** , a następnie wybierz szablon elementu **działania** . Nadaj nowemu działaniu wartość **foreach. XAML** , a następnie wybierz przycisk **OK**.
 
    Działanie zostanie otwarte w Projektancie przepływu pracy.
 
@@ -42,7 +42,7 @@ ms.locfileid: "72650334"
 
 9. W kolumnie Typ argumentu wybierz pozycję **Przeglądaj w poszukiwaniu typów**
 
-10. W przeglądarce typu wpisz **ActivityAction** w polu **Nazwa typu** . W widoku drzewa wybierz pozycję **ActivityAction \<T >** . Na liście rozwijanej wybierz **obiekt** , który zostanie wyświetlony, aby przypisać do argumentu typ **ActivityAction \<Object >** .
+10. W przeglądarce typu wpisz **ActivityAction** w polu **Nazwa typu** . Wybierz pozycję **ActivityAction\<t >** w widoku drzewa. Na liście rozwijanej wybierz **obiekt** , który zostanie wyświetlony, aby przypisać do argumentu typ **ActivityAction\<> obiektu** .
 
 11. Przeciągnij działanie <xref:System.Activities.Statements.While> z sekcji **przepływ sterowania** w przyborniku do powierzchni projektanta.
 
@@ -70,7 +70,7 @@ ms.locfileid: "72650334"
 
 ## <a name="use-the-custom-activity-in-a-workflow"></a>Korzystanie z niestandardowego działania w przepływie pracy
 
-1. Skompiluj projekt, naciskając klawisz **Ctrl** +**SHIFT** +**B**.
+1. Skompiluj projekt, naciskając klawisz **Ctrl**+**SHIFT**+**B**.
 
 2. W **Eksplorator rozwiązań**Otwórz **Workflow1. XAML** w projektancie.
 
@@ -84,5 +84,5 @@ ms.locfileid: "72650334"
 
 Gdy przepływ pracy jest wykonywany, w konsoli programu zostaną wyświetlone następujące dane wyjściowe:
 
-**1** 
-**ABC**
+**1**
+**abc**

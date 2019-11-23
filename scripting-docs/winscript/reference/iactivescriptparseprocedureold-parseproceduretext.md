@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptParseProcedureOld::P arseProcedureText | Microsoft Docs
+title: IActiveScriptParseProcedureOld::ParseProcedureText | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -68,7 +68,7 @@ HRESULT ParseProcedureText(
  `dwFlags`  
  podczas Flagi skojarzone z procedurą. Może być kombinacją tych wartości.  
   
-|Stała|Wartość|Znaczenie|  
+|Stała|Value|Znaczenie|  
 |--------------|-----------|-------------|  
 |SCRIPTPROC_ISEXPRESSION|0x00000020|Wskazuje, że kod w `pstrCode` jest wyrażeniem, które reprezentuje wartość zwracaną przez procedurę.|  
 |SCRIPTPROC_IMPLICIT_THIS|0x00000100|Wskazuje, że w zakresie procedury znajduje się wskaźnik `this`.|  
@@ -77,10 +77,10 @@ HRESULT ParseProcedureText(
  `ppdisp`  
  określoną Zwraca otokę wysyłania, w której metoda domyślna jest procedurą przeanalizowana przez tę metodę.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
 |`E_INVALIDARG`|Nieprawidłowy argument.|  
@@ -88,7 +88,7 @@ HRESULT ParseProcedureText(
 |`E_NOTIMPL`|Ta metoda nie jest obsługiwana. Aparat skryptów nie obsługuje dodawania procedur do przestrzeni nazw w czasie wykonywania.|  
 |`E_UNEXPECTED`|Wywołanie nie było oczekiwane (na przykład aparat skryptów jest w stanie niezainicjowanym lub zamkniętym).|  
 |`OLESCRIPT_E_SYNTAX`|W procedurze Wystąpił nieokreślony błąd składniowy.|  
-|`S_FALSE`|Aparat skryptów nie obsługuje obiektu wysyłania; `ppdisp`parameter jest ustawiona na `NULL`.|  
+|`S_FALSE`|Aparat skryptów nie obsługuje obiektu wysyłania; parametr `ppdisp`jest ustawiony na `NULL`.|  
   
 ## <a name="remarks"></a>Uwagi  
  Kod skryptu nie jest oceniany podczas tego wywołania; Zamiast tego procedura została skompilowana do metody na `ppdisp`, gdzie może być wywoływana przez skrypt później.  
@@ -96,5 +96,5 @@ HRESULT ParseProcedureText(
  Ten interfejs jest przestarzały na korzyść interfejsu `IActiveScriptParseProcedure`. Metoda `IActiveScriptParseProcedure::ParseProcedureText` jest podobna do tej metody, ale umożliwia określenie nazwy procedury. We wszystkich okolicznościach należy używać `IActiveScriptParseProcedure::ParseProcedureText`.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IActiveScriptParseProcedureOld   interfejsu](../../winscript/reference/iactivescriptparseprocedureold-interface.md)  
+ [IActiveScriptParseProcedureOld  interfejsu](../../winscript/reference/iactivescriptparseprocedureold-interface.md)  
  [IActiveScriptParseProcedure::ParseProcedureText](../../winscript/reference/iactivescriptparseprocedure-parseproceduretext.md)

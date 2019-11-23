@@ -34,11 +34,11 @@ HRESULT SetDebuggerOptions(        [in] enum SCRIPT_DEBUGGER_OPTIONS mask,      
   
 #### <a name="parameters"></a>Parametry  
  `mask`  
- Maska [wyliczenia SCRIPT_DEBUGGER_OPTIONS](../../winscript/reference/script-debugger-options-enumeration.md) .  
+ SCRIPT_DEBUGGER_OPTIONS maskę [wyliczenia](../../winscript/reference/script-debugger-options-enumeration.md) .  
   
  `value`  
  Wartość [wyliczenia SCRIPT_DEBUGGER_OPTIONS](../../winscript/reference/script-debugger-options-enumeration.md) .  
   
 ## <a name="see-also"></a>Zobacz także  
- [IRemoteDebugApplication   interfejsu](../../winscript/reference/iremotedebugapplication-interface.md)  
+ [IRemoteDebugApplication  interfejsu](../../winscript/reference/iremotedebugapplication-interface.md)  
  [IRemoteDebugApplication110, interfejs](../../winscript/reference/iremotedebugapplication110-interface.md)

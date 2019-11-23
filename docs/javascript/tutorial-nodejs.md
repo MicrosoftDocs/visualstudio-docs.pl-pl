@@ -24,13 +24,13 @@ W tym samouczku dla programowania programu Visual Studio przy użyciu oprogramow
 
 ::: moniker range="vs-2017"
 
-Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) , aby zainstalować ją bezpłatnie.
+Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) strony, aby zainstalować go za darmo.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads) , aby zainstalować ją bezpłatnie.
+Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads) strony, aby zainstalować go za darmo.
 
 ::: moniker-end
 
@@ -63,19 +63,19 @@ Express to struktura aplikacji sieci Web, używana jako struktura serwera dla ś
 * Musisz mieć zainstalowany program Visual Studio i obciążenie programowaniem Node. js.
 
     ::: moniker range=">=vs-2019"
-    Jeśli program Visual Studio 2019 nie został jeszcze zainstalowany, przejdź do strony [pobierania programu Visual studio](https://visualstudio.microsoft.com/downloads/)  page, aby zainstalować go bezpłatnie.
+    Jeśli program Visual Studio 2019 nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads/) , aby zainstalować ją bezpłatnie.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Jeśli program Visual Studio 2017 nie został jeszcze zainstalowany, przejdź do strony [pobierania programu Visual studio](https://visualstudio.microsoft.com/downloads/)  page, aby zainstalować go bezpłatnie.
+    Jeśli program Visual Studio 2017 nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads/) , aby zainstalować ją bezpłatnie.
     ::: moniker-end
 
-    Jeśli musisz zainstalować obciążenie, ale masz już program Visual Studio, przejdź do pozycji **narzędzia**  > **Pobierz narzędzia i funkcje..** ., co spowoduje otwarcie Instalator programu Visual Studio. Wybierz obciążenie **środowiska Node. js** , a następnie wybierz polecenie **Modyfikuj**.
+    Jeśli musisz zainstalować obciążenie, ale masz już program Visual Studio, przejdź do pozycji **narzędzia** > **Pobierz narzędzia i funkcje..** ., co spowoduje otwarcie Instalator programu Visual Studio. Wybierz **programowania Node.js** obciążenia, wybierz **Modyfikuj**.
 
-    ![Obciążenie środowiska Node. js w Instalatorze programu VS](../ide/media/quickstart-nodejs-workload.png)
+    ![Obciążenie node.js w Instalatorze programu VS](../ide/media/quickstart-nodejs-workload.png)
 
-* Musisz mieć zainstalowane środowisko uruchomieniowe Node. js.
+* Konieczne jest posiadanie zainstalowanego środowiska uruchomieniowego Node.js.
 
-    Jeśli go nie zainstalowano, Zainstaluj wersję LTS z witryny sieci Web [Node. js](https://nodejs.org/en/download/) . Ogólnie rzecz biorąc, program Visual Studio automatycznie wykrywa zainstalowane środowisko uruchomieniowe Node. js. Jeśli nie wykryje zainstalowanego środowiska uruchomieniowego, można skonfigurować projekt do odwoływania się do zainstalowanego środowiska uruchomieniowego na stronie właściwości (po utworzeniu projektu kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Właściwości**).
+    Jeśli nie jest ona zainstalowana, zainstaluj wersję LTS z [Node.js](https://nodejs.org/en/download/) witryny sieci Web. Ogólnie rzecz biorąc program Visual Studio automatycznie wykrywa zainstalowane środowisko uruchomieniowe Node.js. Jeśli nie zostanie wykryta zainstalowanego środowiska uruchomieniowego, można skonfigurować projekt, aby odwoływać się do zainstalowanego środowiska uruchomieniowego na stronie właściwości (po utworzeniu projektu, kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **właściwości**).
 
     Ten samouczek został przetestowany przy użyciu środowiska Node. js 8.10.0.
 
@@ -93,7 +93,7 @@ W tym samouczku zaczniesz od prostego projektu zawierającego kod dla aplikacji 
     Naciśnij klawisz **ESC** , aby zamknąć okno uruchamiania. **Naciśnij klawisze CTRL + Q** , aby otworzyć pole wyszukiwania, wpisz **Node. js**, a następnie wybierz pozycję **Utwórz nową podstawową aplikację Azure Node. js Express 4** (JavaScript). W wyświetlonym oknie dialogowym wybierz pozycję **Utwórz**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Na górnym pasku menu wybierz kolejno pozycje **plik**  > **Nowy**  > **projekt**. W lewym okienku okna dialogowego **Nowy projekt** rozwiń węzeł **JavaScript**, a następnie wybierz polecenie **Node. js**. W środkowym okienku wybierz **podstawową aplikację Azure Node. js Express 4**, a następnie wybierz **przycisk OK**.
+    Na pasku menu u góry wybierz **pliku** > **New** > **projektu**. W lewym okienku okna dialogowego **Nowy projekt** rozwiń węzeł **JavaScript**, a następnie wybierz polecenie **Node. js**. W środkowym okienku wybierz **podstawową aplikację Azure Node. js Express 4**, a następnie wybierz **przycisk OK**.
     ::: moniker-end
     Jeśli nie widzisz szablonu projektu **podstawowego programu Azure Node. js Express 4** , musisz dodać obciążenie **programowania Node. js** . Aby uzyskać szczegółowe instrukcje, zobacz [wymagania wstępne](#prerequisites).
 
@@ -103,7 +103,7 @@ W tym samouczku zaczniesz od prostego projektu zawierającego kod dla aplikacji 
 
     (1) wyróżnione **czcionką pogrubioną** jest projektem, przy użyciu nazwy podanych w oknie dialogowym **Nowy projekt** . W systemie plików ten projekt jest reprezentowany przez plik *. njsproj* w folderze projektu. Aby ustawić właściwości i zmienne środowiskowe skojarzone z projektem, kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Właściwości**. Możesz wykonywać czynności okrężne przy użyciu innych narzędzi programistycznych, ponieważ plik projektu nie wprowadza niestandardowych zmian w źródle projektu Node. js.
 
-    (2) na najwyższym poziomie jest rozwiązaniem, które domyślnie ma taką samą nazwę jak projekt. Rozwiązanie reprezentowane przez plik *. sln* na dysku jest kontenerem dla co najmniej jednego powiązanego projektu.
+    (2) na najwyższym poziomie jest rozwiązaniem, które domyślnie ma taką samą nazwę jak projekt. To rozwiązanie, reprezentowane przez *.sln* plików na dysku, to kontener dla jednego lub kilku powiązanych projektów.
 
     (3) węzeł npm pokazuje wszystkie zainstalowane pakiety npm. Możesz kliknąć prawym przyciskiem myszy węzeł npm, aby wyszukać i zainstalować pakiety npm przy użyciu okna dialogowego lub zainstalować i zaktualizować pakiety przy użyciu ustawień w pliku *Package. JSON* , a następnie kliknąć prawym przyciskiem myszy opcje w węźle npm.
 
@@ -113,7 +113,7 @@ W tym samouczku zaczniesz od prostego projektu zawierającego kod dla aplikacji 
 
 1. Otwórz węzeł **npm** i upewnij się, że wszystkie wymagane pakiety npm są obecne.
 
-    Jeśli brakuje któregoś z pakietów (ikona wykrzyknika), możesz kliknąć prawym przyciskiem myszy węzeł **npm** i wybrać polecenie **Zainstaluj brakujące pakiety npm**.
+    Jeśli wszystkie pakiety brakuje (ikona wykrzyknika), możesz kliknąć prawym przyciskiem myszy **npm** węzeł i wybierz polecenie **Zainstaluj brakujące pakiety npm**.
 
 ## <a name="add-some-code"></a>Dodaj kod
 
@@ -210,11 +210,11 @@ Następnie uruchomisz aplikację z dołączonym debugerem programu Visual Studio
 
     `res.render('index', { title: 'Express', "data": getData() });`
 
-    Punkty przerwania są najbardziej podstawową i istotną funkcją niezawodnego debugowania. Punkt przerwania wskazuje, gdzie program Visual Studio powinien zawiesić uruchomiony kod, aby można było przyjrzeć się wartościom zmiennych lub działaniu pamięci lub niezależnie od tego, czy gałąź kodu jest uruchamiana.
+    Punkty przerwania są najbardziej podstawowa i podstawowych funkcji niezawodne debugowanie. Punkt przerwania wskazuje, gdzie programu Visual Studio powinny zawiesić uruchamianie kodu, dzięki czemu możesz zapoznaj się z wartości zmiennych lub zachowanie pamięci lub czy gałąź kodu wprowadzenie uruchomieniu.
 
     ![Ustawianie punktu przerwania](../javascript/media/tutorial-nodejs-set-breakpoint.png)
 
-## <a name="run-the-application"></a>Uruchom aplikację
+## <a name="run-the-application"></a>Uruchamianie aplikacji
 
 1. Wybierz element docelowy debugowania na pasku narzędzi debugowania, np. Microsoft Edge lub Chrome.
 
@@ -245,7 +245,7 @@ Następnie uruchomisz aplikację z dołączonym debugerem programu Visual Studio
 
     ![Aplikacja uruchomiona w przeglądarce](../javascript/media/tutorial-nodejs-running-in-browser.png)
 
-1. Zamknij przeglądarkę sieci Web.
+1. Zamknij przeglądarkę sieci web.
 
 ## <a name="optional-publish-to-azure-app-service"></a>Obowiązkowe Publikuj w Azure App Service
 
@@ -265,9 +265,9 @@ Następnie uruchomisz aplikację z dołączonym debugerem programu Visual Studio
 
    ![Aplikacja działająca w Azure App Service](../javascript/media/tutorial-nodejs-running-in-azure.png)
 
-Gratulujemy ukończenia tego samouczka.
+Gratulujemy wykonanie kroków tego samouczka!
 
 ## <a name="next-steps"></a>Następne kroki
 
 > [!div class="nextstepaction"]
-> [Wdrażanie aplikacji w systemie Linux App Service](../javascript/publish-nodejs-app-azure.md)
+> [Wdrażanie aplikacji do usługi App Service w systemie Linux](../javascript/publish-nodejs-app-azure.md)

@@ -51,10 +51,10 @@ HRESULT EnumCodeContextsOfPosition(
  `ppescc`  
  określoną Moduł wyliczający kontekstów kodu w określonym zakresie.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
@@ -62,5 +62,5 @@ HRESULT EnumCodeContextsOfPosition(
  Hosty inteligentne używają tej metody do delegowania metody `IDebugDocumentContext::EnumCodeContexts`.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IActiveScriptDebug   interfejsu](../../winscript/reference/iactivescriptdebug-interface.md)  
+ [IActiveScriptDebug  interfejsu](../../winscript/reference/iactivescriptdebug-interface.md)  
  [IDebugDocumentContext::EnumCodeContexts](../../winscript/reference/idebugdocumentcontext-enumcodecontexts.md)

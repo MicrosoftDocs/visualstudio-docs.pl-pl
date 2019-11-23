@@ -39,10 +39,10 @@ HRESULT Start(
  `padocb`  
  Interfejs wywołania zwrotnego, który odbiera zdarzenia stanu z tej operacji.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
 |`E_UNEXPECTED`|Operacja jest już w stanie oczekiwania.|  
@@ -51,7 +51,7 @@ HRESULT Start(
  Ta metoda powoduje, że `IDebugSyncOperation::Execute` być wywoływana asynchronicznie w wątku uzyskanym z `IDebugSyncOperation::GetTargetThread`. Ta metoda powinna być wywoływana tylko z poziomu wątku debugera; w przeciwnym razie nie będzie zwracana do momentu ukończenia operacji.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IDebugAsyncOperation:: Abort](../../winscript/reference/idebugasyncoperation-abort.md)    
- [IDebugAsyncOperation   interfejsu](../../winscript/reference/idebugasyncoperation-interface.md)  
- [IDebugSyncOperation:: Execute](../../winscript/reference/idebugsyncoperation-execute.md)    
+ [IDebugAsyncOperation:: Abort](../../winscript/reference/idebugasyncoperation-abort.md)   
+ [IDebugAsyncOperation  interfejsu](../../winscript/reference/idebugasyncoperation-interface.md)  
+ [IDebugSyncOperation:: Execute](../../winscript/reference/idebugsyncoperation-execute.md)   
  [IDebugSyncOperation::GetTargetThread](../../winscript/reference/idebugsyncoperation-gettargetthread.md)

@@ -35,6 +35,6 @@ break labelname;
 - Upewnij się, że słowo kluczowe **Break** pojawia się wewnątrz otaczającej pętli lub instrukcji switch.  
   
 ## <a name="see-also"></a>Zobacz także  
- [instrukcja break](../../javascript/reference/break-statement-javascript.md)    
- [Sterowanie przepływem programu](../../javascript/controlling-program-flow-javascript.md)    
+ [instrukcja break](../../javascript/reference/break-statement-javascript.md)   
+ [Sterowanie przepływem programu](../../javascript/controlling-program-flow-javascript.md)   
  [Rozwiązywanie problemów ze skryptami](../../javascript/advanced/troubleshooting-your-scripts-javascript.md)

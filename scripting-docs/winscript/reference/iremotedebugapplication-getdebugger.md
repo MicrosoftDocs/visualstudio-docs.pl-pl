@@ -39,10 +39,10 @@ HRESULT GetDebugger(
  `pad`  
  określoną Bieżący debuger połączony z aplikacją.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
@@ -50,5 +50,5 @@ HRESULT GetDebugger(
  Ta metoda zwraca bieżący debuger połączony z aplikacją.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IRemoteDebugApplication:: ConnectDebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md)    
+ [IRemoteDebugApplication:: ConnectDebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md)   
  [IRemoteDebugApplication, interfejs](../../winscript/reference/iremotedebugapplication-interface.md)

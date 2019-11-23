@@ -26,7 +26,7 @@ ms.locfileid: "71481958"
 # <a name="special-characters-to-escape"></a>Znaki specjalne do wyjścia
 Znaki specjalne muszą być wyprowadzane tylko wtedy, gdy mają specjalne znaczenie w kontekście, w którym są używane. Na przykład gwiazdka (*) jest znakiem specjalnym tylko w atrybutach "include" i "exclude" definicji elementu lub w wywołaniu <xref:Microsoft.Build.Tasks.CreateItem>. We wszystkich innych przypadkach gwiazdka jest traktowana jako literał gwiazdki. Mimo że nie ma potrzeby ucieczki gwiazdek w plikach projektu, nie jest to szkodliwe.
 
- Użyj notacji% \<XX > zamiast znaku specjalnego, gdzie \<XX > reprezentuje wartość szesnastkową znaku ASCII. Na przykład, aby użyć gwiazdki (*) jako znaku literału, użyj wartości `%2A`.
+ Użyj notacji%\<XX > zamiast znaku specjalnego, gdzie \<XX > reprezentuje wartość szesnastkową znaku ASCII. Na przykład, aby użyć gwiazdki (*) jako znaku literału, użyj wartości `%2A`.
 
  Pełna lista znaków specjalnych do wyjścia w następujący sposób:
 
@@ -36,7 +36,7 @@ Znaki specjalne muszą być wyprowadzane tylko wtedy, gdy mają specjalne znacze
 |$|Znak dolara używany do odwoływania się do właściwości.|
 |@|Znak używany do odwoływania się do list elementów.|
 |(|Otwórz nawias, używany na listach.|
-|)|Nawias zamykający używany na listach.|
+|).|Nawias zamykający używany na listach.|
 |;|Średnik, separator listy.|
 |?|Znak zapytania, symbol wieloznaczny podczas opisywania specyfikacji pliku w sekcji dołączania/wykluczania elementu.|
 |*|Gwiazdka, symbol wieloznaczny podczas opisywania specyfikacji pliku w sekcji dołączania/wykluczania elementu.|
@@ -45,5 +45,5 @@ Znaki specjalne muszą być wyprowadzane tylko wtedy, gdy mają specjalne znacze
 > W niektórych scenariuszach może zajść potrzeba ucieczki znaków podwójnego cudzysłowu ("), na przykład podczas korzystania z zadania `Exec`.
 
 ## <a name="see-also"></a>Zobacz także
-- [Instrukcje: Znaki specjalne ucieczki w MSBuild @ no__t-0
+- [Instrukcje: znaki specjalne ucieczki w MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md)
 - [Dokumentacja programu MSBuild](../msbuild/msbuild-reference.md)

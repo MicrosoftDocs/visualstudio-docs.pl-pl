@@ -32,7 +32,7 @@ HRESULT PrepareProfilerStop();
 #### <a name="parameters"></a>Parametry  
  Metoda nie przyjmuje żadnych parametrów.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Zwraca wartość HRESULT. Dopuszczalne są następujące wartości:  
   
 |Wartość zwracana|Znaczenie|  
@@ -46,5 +46,5 @@ HRESULT PrepareProfilerStop();
  Wywołanie `IActiveScriptProfilerControl2::PrepareProfilerStop` zapewnia, że zdarzenia dla funkcji w stosie wywołań są wysyłane. Ta metoda musi być wywoływana przed zatrzymaniem profilowania na dowolnym aparacie skryptów, który znajduje się na bieżącej karcie. Metodę można wywołać dla dowolnego aparatu skryptów.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IActiveScriptProfilerControl2:: CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md)    
+ [IActiveScriptProfilerControl2::CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md)   
  [IActiveScriptProfilerControl2, interfejs](../../winscript/reference/iactivescriptprofilercontrol2-interface.md)

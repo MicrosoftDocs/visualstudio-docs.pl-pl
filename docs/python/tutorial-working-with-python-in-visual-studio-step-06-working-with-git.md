@@ -18,9 +18,9 @@ ms.contentlocale: pl-PL
 ms.lasthandoff: 10/12/2019
 ms.locfileid: "72289718"
 ---
-# <a name="step-6-work-with-git"></a>Krok 6. Pracuj z usługą git
+# <a name="step-6-work-with-git"></a>Krok 6: Pracy z usługą Git
 
-@no__t — krok 0Previous: [Instalowanie pakietów i zarządzanie środowiskiem Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)**
+**Poprzedni krok: [zainstalować pakiety i zarządzać środowiskiem Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)**
 
 Visual Studio zapewnia bezpośrednią integrację z usługą lokalne repozytoria Git i repozytoria zdalne w usługach, takich jak GitHub i repozytoriów platformy Azure. Integracja obejmuje klonowanie repozytorium, zatwierdzanie zmian i zarządzania gałęzi.
 
@@ -32,7 +32,7 @@ Ten artykuł zawiera ogólne omówienie tworzenia lokalnego repozytorium Git dla
 
     ![Dodatkowe informacje są wyświetlane po umieszczeniu wskaźnika myszy nad formantem Git w oknie programu Visual Studio](media/working-with-git-01.png)
 
-1. Podczas tworzenia nowego repozytorium, lub wybierz dowolny z formantów Git, Visual Studio otwiera **Team Explorer** okna. (Okno można otworzyć w dowolnym momencie za pomocą **widoku** > **Team Explorer** polecenia menu.) Okno ma trzy okienka głównych, których możesz przełączać się między za pomocą listy rozwijanej na **Team Explorer** nagłówka. **Synchronizacji** okienko, które udostępnia operacje publikacji, pojawia się również, po wybraniu **wypychania** kontroli (ikonę strzałki w górę):
+1. Podczas tworzenia nowego repozytorium, lub wybierz dowolny z formantów Git, Visual Studio otwiera **Team Explorer** okna. (Okno można otworzyć w dowolnym momencie za pomocą polecenia > **widoku** **Team Explorer** menu). Okno ma trzy główne okienka, które można przełączać między przy użyciu listy rozwijanej w nagłówku **Team Explorer** . **Synchronizacji** okienko, które udostępnia operacje publikacji, pojawia się również, po wybraniu **wypychania** kontroli (ikonę strzałki w górę):
 
     ![Team Explorer w programie Visual Studio po utworzeniu repozytorium lokalnego](media/working-with-git-02.png)
 
@@ -54,7 +54,7 @@ Ten artykuł zawiera ogólne omówienie tworzenia lokalnego repozytorium Git dla
 
 ## <a name="go-deeper"></a>Przejdź dalej
 
-Aby uzyskać krótki przewodnik tworzenia projektu na podstawie zdalnego repozytorium git, zobacz [Quickstart: Klonowanie repozytorium kodu Python w programie Visual Studio @ no__t-0.
+Aby uzyskać krótki przewodnik tworzenia projektu ze zdalnego repozytorium Git, zobacz [Szybki Start: klonowanie repozytorium kodu w języku Python w programie Visual Studio](quickstart-03-python-in-visual-studio-project-from-repository.md).
 
 Samouczek znacznie bardziej złożone, w tym obsługa konfliktów scalania, przeglądanie kodu za pomocą żądań ściągnięcia, zmienianie bazy i selekcjonowanie zmiany między gałęziami, zobacz [Rozpoczynanie pracy z usługą Git i repozytoriów platformy Azure](/azure/devops/repos/git/gitquickstart).
 

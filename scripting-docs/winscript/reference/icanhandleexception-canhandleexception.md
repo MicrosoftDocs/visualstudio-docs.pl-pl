@@ -43,17 +43,17 @@ HRESULT CanHandleException(
  `pvar`  
  podczas Wartość skojarzona z wyjątkiem, taka jak wartość zwrócona przez instrukcję `throw`. Ten parametr może być `NULL`.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Obiekt wywołujący może obsłużyć wyjątek|  
 |`E_FAIL`|Obiekt wywołujący nie może obsłużyć wyjątku.|  
   
 ## <a name="remarks"></a>Uwagi  
- Jeśli wywołanie `IDispatchEx::InvokeEx` lub podobnej metody, powoduje wyjątek, aparat skryptów sprawdza obiekt wywołujący w łańcuchu wywołującym skryptu, który obsługuje interfejs `ICanHandleException` i wskazuje, że może obsłużyć wyjątek. Jeśli obiekt wywołujący nie może obsłużyć wyjątku, aparat skryptu zostanie zatrzymany.  
+ Jeśli wywołanie `IDispatchEx::InvokeEx`lub podobnej metody, powoduje wyjątek, aparat skryptów sprawdza obiekt wywołujący w łańcuchu wywołującym skryptu, który obsługuje interfejs `ICanHandleException` i wskazuje, że może obsłużyć wyjątek. Jeśli obiekt wywołujący nie może obsłużyć wyjątku, aparat skryptu zostanie zatrzymany.  
   
 ## <a name="see-also"></a>Zobacz także  
- [ICanHandleException   interfejsu](../../winscript/reference/icanhandleexception-interface.md)  
+ [ICanHandleException  interfejsu](../../winscript/reference/icanhandleexception-interface.md)  
  [IDispatchEx::InvokeEx](../../winscript/reference/idispatchex-invokeex.md)

@@ -39,10 +39,10 @@ HRESULT SetScriptState(
  `ss`  
  podczas Ustawia aparat wykonywania skryptów dla danego stanu. Może być jedną z wartości zdefiniowanych w wyliczeniu [wyliczenia SCRIPTSTATE](../../winscript/reference/scriptstate-enumeration.md) .  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Zwraca jedną z następujących wartości:  
   
-|Wartość zwracana|Znaczenie|  
+|Wartość zwrócona|Znaczenie|  
 |------------------|-------------|  
 |`S_OK`|Prawnego.|  
 |`E_FAIL`|Aparat skryptów nie obsługuje przejścia z powrotem do stanu zainicjowania. Host musi odrzucić ten aparat skryptów i utworzyć, zainicjować i załadować nowy aparat obsługi skryptów, aby osiągnąć ten sam efekt.|  
@@ -54,8 +54,8 @@ HRESULT SetScriptState(
  Więcej informacji o Stanach aparatu skryptów znajduje się w sekcji Stany aparatu skryptów w [aparatach skryptów systemu Windows](../../winscript/windows-script-engines.md) .  
   
 ## <a name="see-also"></a>Zobacz także  
- [IActiveScript:: Clone](../../winscript/reference/iactivescript-clone.md)    
- [IActiveScript:: GetScriptDispatch](../../winscript/reference/iactivescript-getscriptdispatch.md)    
- [IActiveScript:: InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)    
- [IActiveScriptParse::P arsescripttext](../../winscript/reference/iactivescriptparse-parsescripttext.md)    
+ [IActiveScript:: Clone](../../winscript/reference/iactivescript-clone.md)   
+ [IActiveScript::GetScriptDispatch](../../winscript/reference/iactivescript-getscriptdispatch.md)   
+ [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)   
+ [IActiveScriptParse::ParseScriptText](../../winscript/reference/iactivescriptparse-parsescripttext.md)   
  [IActiveScriptSite::GetItemInfo](../../winscript/reference/iactivescriptsite-getiteminfo.md)

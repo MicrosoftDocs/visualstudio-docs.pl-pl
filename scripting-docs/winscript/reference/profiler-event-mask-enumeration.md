@@ -1,5 +1,5 @@
 ---
-title: PROFILER_EVENT_MASK, Wyliczenie | Microsoft Docs
+title: Wyliczenie PROFILER_EVENT_MASK | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -40,7 +40,7 @@ typedef enum {
 } PROFILER_EVENT_MASK;  
 ```  
   
-## <a name="members"></a>Elementy członkowskie  
+## <a name="members"></a>Members  
   
 |Element członkowski|Opis|  
 |------------|-----------------|  
@@ -51,6 +51,6 @@ typedef enum {
 |PROFILER_EVENT_MASK_TRACE_ALL_WITH_DOM|Profile wszystkie funkcje, w tym wywołania do modelu DOM.|  
   
 ## <a name="see-also"></a>Zobacz także  
- [Stałe, wyliczenia i struktury profilera aktywnego skryptu](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)    
- [IActiveScriptProfilerControl:: SetProfilerEventMask](../../winscript/reference/iactivescriptprofilercontrol-setprofilereventmask.md)    
+ [Stałe, wyliczenia i struktury profilera aktywnego skryptu](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)   
+ [IActiveScriptProfilerControl::SetProfilerEventMask](../../winscript/reference/iactivescriptprofilercontrol-setprofilereventmask.md)   
  [IActiveScriptProfilerControl::StartProfiling](../../winscript/reference/iactivescriptprofilercontrol-startprofiling.md)

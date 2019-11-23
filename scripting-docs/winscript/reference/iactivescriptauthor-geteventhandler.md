@@ -55,15 +55,15 @@ HRESULT GetEventHandler(
  `ppse`  
  określoną Adres zmiennej, która otrzymuje wskaźnik do interfejsu `IScriptEntry` Scriptlet, który ma określone atrybuty.  
   
-## <a name="return-value"></a>Wartość zwracana  
- @No__t_0. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+## <a name="return-value"></a>Wartość zwrócona  
+ `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
   
 ## <a name="see-also"></a>Zobacz także  
- [IActiveScriptAuthor   interfejsu](../../winscript/reference/iactivescriptauthor-interface.md)  
+ [IActiveScriptAuthor  interfejsu](../../winscript/reference/iactivescriptauthor-interface.md)  
  [IScriptEntry, interfejs](../../winscript/reference/iscriptentry-interface.md)

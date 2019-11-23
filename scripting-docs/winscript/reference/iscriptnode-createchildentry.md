@@ -63,10 +63,10 @@ HRESULT CreateChildEntry(
   
  W przypadku obiektów `IScriptScriptlet` ta metoda kończy się niepowodzeniem.  
   
-## <a name="return-value"></a>Wartość zwracana  
- @No__t_0. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+## <a name="return-value"></a>Wartość zwrócona  
+ `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
@@ -74,5 +74,5 @@ HRESULT CreateChildEntry(
  Interfejs `IScriptNode` reprezentuje stronę sieci Web lub jej elementy. Interfejs `IScriptEntry` (pochodzący z `IScriptNode`) reprezentuje blok skryptu lub obiekt funkcji. Interfejs `IScriptScriptlet` (pochodzący z `IScriptEntry`) reprezentuje procedurę obsługi zdarzeń.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IScriptNode   interfejsu](../../winscript/reference/iscriptnode-interface.md)  
+ [IScriptNode  interfejsu](../../winscript/reference/iscriptnode-interface.md)  
  [IScriptEntry, interfejs](../../winscript/reference/iscriptentry-interface.md)

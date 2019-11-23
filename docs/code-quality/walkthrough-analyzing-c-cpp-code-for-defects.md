@@ -1,5 +1,5 @@
 ---
-title: 'Przewodnik: Analizowanie kodu C/C++ pod kątem błędów'
+title: 'Wskazówki: analizowanie kodu C++ pod względem wad'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -19,7 +19,7 @@ ms.contentlocale: pl-PL
 ms.lasthandoff: 10/07/2019
 ms.locfileid: "72018341"
 ---
-# <a name="walkthrough-analyzing-cc-code-for-defects"></a>Przewodnik: Analizowanie kodu C/C++ pod kątem błędów
+# <a name="walkthrough-analyzing-cc-code-for-defects"></a>Wskazówki: analizowanie kodu C++ pod względem wad
 
 W tym instruktażu pokazano, jak analizowaćC++ kod c/Code pod kątem potencjalnych wad kodu za pomocą narzędzia do analizyC++ kodu dla języka C/Code.
 
@@ -61,13 +61,13 @@ W tym instruktażu pokazano, jak analizowaćC++ kod c/Code pod kątem potencjaln
 
 1. W menu **Widok** kliknij **Lista błędów**.
 
-     W zależności od profilu dewelopera wybranego w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] może zajść potrzeba wskaż **inne okna** w menu **Widok** , a następnie kliknij pozycję **Lista błędów**.
+     W zależności od profilu dewelopera wybranego w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], może być konieczne wskazanie **innych okien** w menu **Widok** , a następnie kliknięcie przycisku **Lista błędów**.
 
 2. W **Lista błędów**kliknij dwukrotnie następujące ostrzeżenie:
 
-     Ostrzeżenie C6230: Niejawne rzutowanie między różnymi semantycznie typami: użycie HRESULT w kontekście Boolean.
+     Ostrzeżenie C6230: niejawne rzutowanie między różnymi semantycznie typami: użycie HRESULT w kontekście Boolean.
 
-     W edytorze kodu jest wyświetlana linia, która spowodowała ostrzeżenie w funkcji `bool ProcessDomain()`. To ostrzeżenie wskazuje, że wynik HRESULT jest używany w instrukcji "If", gdzie oczekiwano wyniku logicznego.
+     W edytorze kodu jest wyświetlany wiersz, który spowodował ostrzeżenie w `bool ProcessDomain()`funkcji. To ostrzeżenie wskazuje, że wynik HRESULT jest używany w instrukcji "If", gdzie oczekiwano wyniku logicznego.
 
 3. Popraw to ostrzeżenie przy użyciu pomyślnego makra. Kod powinien wyglądać podobnie do następującego kodu:
 
@@ -77,7 +77,7 @@ W tym instruktażu pokazano, jak analizowaćC++ kod c/Code pod kątem potencjaln
 
 4. W **Lista błędów**kliknij dwukrotnie następujące ostrzeżenie:
 
-     Ostrzeżenie C6282: Nieprawidłowy operator: przypisanie do stałej w kontekście testu. Czy = = zamierzony?
+     Warning C6282: nieprawidłowy operator: przypisanie do stałej w kontekście testu. Czy = = zamierzony?
 
 5. Popraw to ostrzeżenie, sprawdzając pod kątem równości. Kod powinien wyglądać podobnie do następującego kodu:
 
@@ -97,7 +97,7 @@ W tym instruktażu pokazano, jak analizowaćC++ kod c/Code pod kątem potencjaln
 
      W **Lista błędów**, C6001 teraz pojawia się jako błąd.
 
-3. Popraw pozostałe dwa błędy C6001 w **Lista błędów** , inicjując `i` i `j` do 0.
+3. Popraw pozostałe dwa błędy C6001 w **Lista błędów** przez zainicjowanie `i` i `j` na 0.
 
 4. Skompiluj ponownie projekt CodeDefects.
 
@@ -119,7 +119,7 @@ W tym instruktażu pokazano, jak analizowaćC++ kod c/Code pod kątem potencjaln
 
 6. W **Lista błędów**kliknij dwukrotnie następujące ostrzeżenie:
 
-     Ostrzeżenie C6011: Wyłuskanie wskaźnika o wartości NULL "newNode".
+     Ostrzeżenie C6011: wyłuskanie wskaźnika o wartości NULL "newNode".
 
      To ostrzeżenie wskazuje, że obiekt wywołujący nie może sprawdzić zwracanej wartości. W takim przypadku wywołanie **AllocateNode** może zwrócić wartość null (zobacz plik nagłówkowy Annotations. h dla deklaracji funkcji dla AllocateNode).
 
@@ -156,7 +156,7 @@ W tym instruktażu pokazano, jak analizowaćC++ kod c/Code pod kątem potencjaln
 
 3. W **Lista błędów**kliknij dwukrotnie następujące ostrzeżenie:
 
-     Ostrzeżenie C6011: Odwołuje się do PUSTEgo wskaźnika "Node".
+     Ostrzeżenie C6011: wyłuskanie "Node" wskaźnika o wartości NULL.
 
      To ostrzeżenie wskazuje, że węzeł przekazano do funkcji może mieć wartość null i wskazuje numer wiersza, w którym zostało zgłoszone ostrzeżenie.
 
@@ -178,4 +178,5 @@ W tym instruktażu pokazano, jak analizowaćC++ kod c/Code pod kątem potencjaln
 
 ## <a name="see-also"></a>Zobacz także
 
-[Przewodnik: Analizowanie kodu zarządzanego dla wad kodu @ no__t-0 @ no__t-1[Analiza kodu dla C/C++ ](../code-quality/code-analysis-for-c-cpp-overview.md)
+[Przewodnik: Analizowanie kodu zarządzanego pod kątem wad kodu](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
+[analizy kodu dla językaC++ C/](../code-quality/code-analysis-for-c-cpp-overview.md)

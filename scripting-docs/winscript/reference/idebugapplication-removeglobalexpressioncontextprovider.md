@@ -39,10 +39,10 @@ HRESULT RemoveGlobalExpressionContextProvider(
  `dwCookie`  
  podczas Plik cookie zwrócony przez metodę `AddGlobalExpressionContextProvider` po dodaniu globalnego dostawcy kontekstu.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
@@ -50,5 +50,5 @@ HRESULT RemoveGlobalExpressionContextProvider(
  Metoda `RemoveGlobalExpressionContextProvider` Usuwa dostawcę kontekstu wyrażenia globalnego z tej aplikacji.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IDebugApplication:: AddGlobalExpressionContextProvider](../../winscript/reference/idebugapplication-addglobalexpressioncontextprovider.md)    
+ [IDebugApplication::AddGlobalExpressionContextProvider](../../winscript/reference/idebugapplication-addglobalexpressioncontextprovider.md)   
  [IDebugApplication, interfejs](../../winscript/reference/idebugapplication-interface.md)

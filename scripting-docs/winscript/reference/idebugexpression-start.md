@@ -39,10 +39,10 @@ HRESULT Start(
  `pdecb`  
  podczas Wywołanie zwrotne wskazujące, kiedy szacowanie wyrażeń zostało zakończone. Jeśli ten parametr jest `NULL`, żadne zdarzenia nie są uruchamiane i klient musi sondować stan wyrażenia przy użyciu `QueryIsComplete`.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
@@ -50,5 +50,5 @@ HRESULT Start(
  Ta metoda rozpoczyna Obliczanie wyrażenia.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IDebugExpression:: Abort](../../winscript/reference/idebugexpression-abort.md)    
+ [IDebugExpression:: Abort](../../winscript/reference/idebugexpression-abort.md)   
  [IDebugExpression, interfejs](../../winscript/reference/idebugexpression-interface.md)

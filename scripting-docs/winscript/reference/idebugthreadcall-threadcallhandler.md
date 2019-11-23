@@ -47,10 +47,10 @@ HRESULT ThreadCallHandler(
  `dwParam3`  
  podczas Trzeci parametr.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
@@ -58,6 +58,6 @@ HRESULT ThreadCallHandler(
  Ta metoda obsługuje wywołania do uruchamiania kodu w wątku debugera.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IDebugThreadCall   interfejsu](../../winscript/reference/idebugthreadcall-interface.md)  
- [IDebugApplication:: SynchronousCallInDebuggerThread](../../winscript/reference/idebugapplication-synchronouscallindebuggerthread.md)    
+ [IDebugThreadCall  interfejsu](../../winscript/reference/idebugthreadcall-interface.md)  
+ [IDebugApplication::SynchronousCallInDebuggerThread](../../winscript/reference/idebugapplication-synchronouscallindebuggerthread.md)   
  [IDebugApplicationThread::SynchronousCallIntoThread](../../winscript/reference/idebugapplicationthread-synchronouscallintothread.md)

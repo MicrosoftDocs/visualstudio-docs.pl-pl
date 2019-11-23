@@ -53,7 +53,7 @@ ms.locfileid: "72666009"
  Wyłączenie ostrzeżenia z tej reguły jest zdecydowanie odradzane. Niemal nie występują żadne scenariusze, w których zawartość pola tylko do odczytu nie jest ważna. W takim przypadku w scenariuszu Usuń modyfikator `readonly` zamiast wykluczania komunikatu.
 
 ## <a name="example"></a>Przykład
- Ten przykład pokazuje zagrożenie naruszenia tej reguły. Pierwsza część pokazuje przykładową bibliotekę z typem, `MyClassWithReadOnlyArrayField`, która zawiera dwa pola (`grades` i `privateGrades`), które nie są bezpieczne. Pole `grades` jest publiczne i dlatego jest narażone na dowolnego wywołującego. Pole `privateGrades` jest prywatne, ale jest nadal podatne na ataki, ponieważ jest zwracane do wywoływania przez metodę `GetPrivateGrades`. Pole `securePrivateGrades` jest prezentowane w bezpieczny sposób przez metodę `GetSecurePrivateGrades`. Jest on zadeklarowany jako prywatny do przestrzegania dobrych praktyk projektowania. Druga część pokazuje kod, który zmienia wartości przechowywane w elementach członkowskich `grades` i `privateGrades`.
+ Ten przykład pokazuje zagrożenie naruszenia tej reguły. Pierwsza część pokazuje przykładową bibliotekę o typie `MyClassWithReadOnlyArrayField`, która zawiera dwa pola (`grades` i `privateGrades`), które nie są bezpieczne. Pole `grades` jest publiczne i dlatego jest narażone na dowolnego wywołującego. Pole `privateGrades` jest prywatne, ale jest nadal podatne na ataki, ponieważ jest zwracane do wywoływania przez metodę `GetPrivateGrades`. Pole `securePrivateGrades` zostało ujawnione w bezpieczny sposób za pomocą metody `GetSecurePrivateGrades`. Jest on zadeklarowany jako prywatny do przestrzegania dobrych praktyk projektowania. Druga część pokazuje kod, który zmienia wartości przechowywane w `grades` i `privateGrades` elementów członkowskich.
 
  Przykładowa Biblioteka klas zostanie wyświetlona w poniższym przykładzie.
 
@@ -66,7 +66,7 @@ ms.locfileid: "72666009"
 
  Dane wyjściowe z tego przykładu to:
 
- **Przed manipulacją: klasy: 90, 90, 90 prywatne klasy: 90, 90, 90 Secure reklasy, 90, 90, 90** 
+ **Przed manipulacją: klasy: 90, 90, 90 prywatne klasy: 90, 90, 90 Secure reklasy, 90, 90, 90**
 **po manipulowaniu: klasy: 90, 555, 90 prywatne klasy: 90, 555, 90 Secure klasy, 90, 90, 90**
 ## <a name="see-also"></a>Zobacz też
  <xref:System.Array?displayProperty=fullName><xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>

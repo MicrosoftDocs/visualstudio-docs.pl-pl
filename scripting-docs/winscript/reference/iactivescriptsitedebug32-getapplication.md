@@ -17,7 +17,7 @@ ms.contentlocale: pl-PL
 ms.lasthandoff: 10/18/2019
 ms.locfileid: "72572198"
 ---
-# <a name="iactivescriptsitedebug32getapplication"></a>IActiveScriptSiteDebug32:: GetApplication
+# <a name="iactivescriptsitedebug32getapplication"></a>IActiveScriptSiteDebug32::GetApplication
 Zwraca obiekt aplikacji debugowania skojarzony z tą lokacją skryptu.  
   
 ## <a name="syntax"></a>Składnia  
@@ -32,10 +32,10 @@ HRESULT GetApplication(
  `ppda`  
  określoną Wskaźnik do obiektu aplikacji debugowania skojarzonego z witryną skryptu.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
 |`E_NOTIMPL`|Host nie obsługuje bezpośrednio debugowania.|  
@@ -44,5 +44,5 @@ HRESULT GetApplication(
  Metoda `GetApplication` umożliwia inteligentnemu hostowi zdefiniowanie obiektu aplikacji, do którego należy każdy skrypt. Aparaty skryptów powinni próbować wywołać tę metodę, aby dokończyć aplikacje i `IProcessDebugManager::GetDefaultApplication`, jeśli to się nie powiedzie.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IActiveScriptSiteDebug32   interfejsu](../../winscript/reference/iactivescriptsitedebug32-interface.md)  
+ [IActiveScriptSiteDebug32 Interface](../../winscript/reference/iactivescriptsitedebug32-interface.md)   
  [IProcessDebugManager::GetDefaultApplication](../../winscript/reference/iprocessdebugmanager-getdefaultapplication.md)

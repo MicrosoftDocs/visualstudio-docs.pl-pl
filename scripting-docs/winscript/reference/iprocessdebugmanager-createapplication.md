@@ -39,10 +39,10 @@ HRESULT CreateApplication(
  `ppda`  
  określoną Obiekt aplikacji debugowania dla tej aplikacji.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
@@ -50,5 +50,5 @@ HRESULT CreateApplication(
  Obiekt utworzony przez tę metodę nie ma nazwy i nie został dodany do listy uruchomionych aplikacji. Użyj `IProcessDebugManager::AddApplication`, aby dodać aplikację debugowania do listy aplikacji.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IProcessDebugManager   interfejsu](../../winscript/reference/iprocessdebugmanager-interface.md)  
+ [IProcessDebugManager  interfejsu](../../winscript/reference/iprocessdebugmanager-interface.md)  
  [IProcessDebugManager::AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)

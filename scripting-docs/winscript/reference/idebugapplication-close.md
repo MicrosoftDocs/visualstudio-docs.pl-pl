@@ -36,10 +36,10 @@ HRESULT Close();
 #### <a name="parameters"></a>Parametry  
  Ta metoda nie przyjmuje żadnych parametrów.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
@@ -49,5 +49,5 @@ HRESULT Close();
  Ta metoda powoduje wywoływanie `IApplicationDebugger::onClose`.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IDebugApplication   interfejsu](../../winscript/reference/idebugapplication-interface.md)  
+ [IDebugApplication  interfejsu](../../winscript/reference/idebugapplication-interface.md)  
  [IApplicationDebugger::onClose](../../winscript/reference/iapplicationdebugger-onclose.md)

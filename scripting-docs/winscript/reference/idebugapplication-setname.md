@@ -39,10 +39,10 @@ HRESULT SetName(
  `pstrName`  
  podczas Nazwa aplikacji.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
@@ -52,5 +52,5 @@ HRESULT SetName(
  Ta metoda powinna być wywoływana przed wywołaniem metody `IProcessDebugManager::AddApplication`.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IDebugApplication   interfejsu](../../winscript/reference/idebugapplication-interface.md)  
+ [IDebugApplication  interfejsu](../../winscript/reference/idebugapplication-interface.md)  
  [IProcessDebugManager::AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)

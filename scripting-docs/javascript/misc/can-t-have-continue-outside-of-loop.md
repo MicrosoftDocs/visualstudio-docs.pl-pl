@@ -45,6 +45,6 @@ Podjęto próbę użycia instrukcji **Continue** poza pętlą. Instrukcji **Cont
   - Pętla **for/in** .  
   
 ## <a name="see-also"></a>Zobacz także  
- [kontynuuj   instrukcji](../../javascript/reference/continue-statement-javascript.md)  
- [Sterowanie przepływem programu](../../javascript/controlling-program-flow-javascript.md)    
+ [kontynuuj  instrukcji](../../javascript/reference/continue-statement-javascript.md)  
+ [Sterowanie przepływem programu](../../javascript/controlling-program-flow-javascript.md)   
  [Rozwiązywanie problemów ze skryptami](../../javascript/advanced/troubleshooting-your-scripts-javascript.md)

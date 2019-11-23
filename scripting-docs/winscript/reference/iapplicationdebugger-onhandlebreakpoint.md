@@ -45,12 +45,12 @@ HRESULT onHandleBreakPoint(
  podczas Przyczyna punktu przerwania.  
   
  `pError`  
- podczas Informacje o błędzie środowiska uruchomieniowego, pod warunkiem, że wartość `br` to BREAKREASON_ERROR.  
+ podczas Informacje o błędzie środowiska uruchomieniowego, pod warunkiem, że wartość `br` jest BREAKREASON_ERROR.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
@@ -60,7 +60,7 @@ HRESULT onHandleBreakPoint(
  Aplikacja pozostanie zawieszona do momentu wywołania środowiska IDE debugera `IRemoteDebugApplication::ResumeFromBreakPoint`.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IApplicationDebugger   interfejsu](../../winscript/reference/iapplicationdebugger-interface.md)  
- [IDebugApplication:: HandleBreakPoint](../../winscript/reference/idebugapplication-handlebreakpoint.md)    
- [IRemoteDebugApplication:: ResumeFromBreakPoint](../../winscript/reference/iremotedebugapplication-resumefrombreakpoint.md)    
+ [IApplicationDebugger  interfejsu](../../winscript/reference/iapplicationdebugger-interface.md)  
+ [IDebugApplication::HandleBreakPoint](../../winscript/reference/idebugapplication-handlebreakpoint.md)   
+ [IRemoteDebugApplication::ResumeFromBreakPoint](../../winscript/reference/iremotedebugapplication-resumefrombreakpoint.md)   
  [BREAKREASON, wyliczenie](../../winscript/reference/breakreason-enumeration.md)

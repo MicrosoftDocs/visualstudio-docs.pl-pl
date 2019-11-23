@@ -39,10 +39,10 @@ HRESULT SetItemName(
  `psz`  
  podczas Adres buforu, który zawiera nazwę elementu. Nazwa elementu jest używana przez hosta do identyfikowania wpisu.  
   
-## <a name="return-value"></a>Wartość zwracana  
- @No__t_0. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+## <a name="return-value"></a>Wartość zwrócona  
+ `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
 |`E_FAIL`|Metoda nie powiodła się.|  
@@ -53,5 +53,5 @@ HRESULT SetItemName(
  W przypadku obiektów `IScriptScriptlet` (które pochodzą z `IScriptEntry`) Metoda ta zwraca `E_FAIL`. Dla `IScriptScriptlet` obiektów nazwa elementu jest ustawiana przez [IActiveScriptAuthor:: AddScriptlet](../../winscript/reference/iactivescriptauthor-addscriptlet.md) i nie można jej zmienić.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IScriptEntry   interfejsu](../../winscript/reference/iscriptentry-interface.md)  
+ [IScriptEntry  interfejsu](../../winscript/reference/iscriptentry-interface.md)  
  [IScriptEntry::GetItemName](../../winscript/reference/iscriptentry-getitemname.md)

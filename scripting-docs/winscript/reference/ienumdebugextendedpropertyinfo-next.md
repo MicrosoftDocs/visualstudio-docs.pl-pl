@@ -25,7 +25,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72574259"
 ---
 # <a name="ienumdebugextendedpropertyinfonext"></a>IEnumDebugExtendedPropertyInfo::Next
-Pobiera określoną liczbę struktur `ExtendedDebugPropertyInfo` w sekwencji wyliczenia.  
+Pobiera określoną liczbę struktur`ExtendedDebugPropertyInfo` w sekwencji wyliczenia.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -39,7 +39,7 @@ HRESULT Next (
   
 #### <a name="parameters"></a>Parametry  
  `celt`  
- podczas Liczba `ExtendedDebugPropertyInfo`structures do pobrania.  
+ podczas Liczba struktur `ExtendedDebugPropertyInfo`do pobrania.  
   
  `rgelt`  
  określoną Pobrano tablicę struktur `ExtendedDebugPropertyInfo`.  
@@ -47,9 +47,9 @@ HRESULT Next (
  `pceltFetched`  
  określoną Liczba aktualnie pobranych struktur `ExtendedDebugPropertyInfo`.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Zwraca prawidłowy `HRESULT`, zazwyczaj `S_OK`.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IEnumDebugExtendedPropertyInfo   interfejsu](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)  
+ [IEnumDebugExtendedPropertyInfo  interfejsu](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)  
  [ExtendedDebugPropertyInfo, struktura](../../winscript/reference/extendeddebugpropertyinfo-structure.md)

@@ -19,7 +19,7 @@ Deweloperzy potrzebują ważnych szczegółowych informacji na temat oprogramowa
 Subskrybenci Visual Studio Enterprise mogą uzyskać bezpłatną i pełną subskrypcję jednomiesięczną, aby wyróżnić do pięciu aplikacji na subskrybenta.
 
 ## <a name="activation-steps"></a>Kroki aktywacji
-1. Zaloguj się do [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1. Zaloguj się do witryny [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Znajdź kafelek korzyści wyróżniania RZUTowania w kategorii narzędzia, a następnie kliknij pozycję **Pobierz kod**.
 
@@ -77,12 +77,12 @@ Po zatwierdzeniu żądania otrzymasz drugą wiadomość e-mail z potwierdzeniem 
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (standardowa)   | LICENCJONOWANie, Azure, sprzedaż detaliczna, | Ocenianie 5 aplikacji przez 30 dni|  Nie.  Dostępne tylko dla nowych subskrybentów          |
 | Visual Studio Enterprise z usługą GitHub Enterprise  | Licencja | Ocenianie 5 aplikacji przez 30 dni|  Nie.  Dostępne tylko dla nowych subskrybentów          |
-| Visual Studio Professional (standardowa) | LICENCJONOWANie, Azure, sprzedaż detaliczna                                       | Niedostępne                                                             |  Brak          |
-| Visual Studio Professional z usługą GitHub Enterprise | Licencja                                       | Niedostępne                                                             |  Brak          |
-| Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Niedostępne                                             |  Brak           |
-| Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | Niedostępne                                              |  Brak          |
-| Visual Studio Enterprise (standardowa)  | NFR<sup>1</sup> |Niedostępne  | Brak |
-| Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure | Niedostępne | Brak |
+| Visual Studio Professional (standardowa) | VL, Azure, Retail                                       | Niedostępne                                                             |  N/D          |
+| Visual Studio Professional z usługą GitHub Enterprise | Licencja                                       | Niedostępne                                                             |  N/D          |
+| Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Niedostępne                                             |  N/D           |
+| Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | Niedostępne                                              |  N/D          |
+| Visual Studio Enterprise (standardowa)  | NFR<sup>1</sup> |Niedostępne  | N/D |
+| Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure | Niedostępne | N/D |
 
 <sup>1</sup>  *obejmuje: nie do odsprzedaży (NFR), ekwiwalentu, najbardziej cennych profesjonalistów (MVP), regionalnego dyrektora (RD), Microsoft Partner Network (MPN), Visual Studio Industry partner (VSIP), Microsoft Certified Trainer, BizSpark, Wyobraź sobie*
 

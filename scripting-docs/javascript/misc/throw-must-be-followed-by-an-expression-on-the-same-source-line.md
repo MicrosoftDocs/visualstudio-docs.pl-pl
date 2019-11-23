@@ -37,6 +37,6 @@ if (denominator == 0) {
 - Upewnij się, że słowo kluczowe `throw` i wyrażenie do wyrzucania pojawiają się w tym samym wierszu.  
   
 ## <a name="see-also"></a>Zobacz także  
- [Błąd   obiektu](../../javascript/reference/error-object-javascript.md)  
- [zgłoś   instrukcji](../../javascript/reference/throw-statement-javascript.md)  
+ [Błąd  obiektu](../../javascript/reference/error-object-javascript.md)  
+ [zgłoś  instrukcji](../../javascript/reference/throw-statement-javascript.md)  
  [Try...Catch...Finally, instrukcja](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)

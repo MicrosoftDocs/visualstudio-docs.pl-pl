@@ -22,7 +22,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72573734"
 ---
 # <a name="object-expected"></a>Oczekiwany obiekt
-Podjęto próbę wywołania metody lub właściwości obiektu typu innego niż `Object` lub przekazano argument typu innego niż `Object`, gdy `Object` była wymagana.  
+Podjęto próbę wywołania metody lub właściwości obiektu typu innego niż `Object`lub przekazano argument typu innego niż `Object`, gdy `Object` była wymagana.  
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
@@ -47,5 +47,5 @@ Podjęto próbę wywołania metody lub właściwości obiektu typu innego niż `
     ```  
   
 ## <a name="see-also"></a>Zobacz także  
- [Obiekt obiektu  ](../../javascript/reference/object-object-javascript.md)  
+ [Obiekt obiektu ](../../javascript/reference/object-object-javascript.md)  
  [Obiekty i tablice](../../javascript/objects-and-arrays-javascript.md)

@@ -31,7 +31,7 @@ Następujące nowe funkcje obsługi opracowywania aplikacji Vue.js w programie V
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-* Wymagany jest program Visual Studio 2017 w wersji 15,8 lub nowszej oraz obciążenie programowaniem **Node. js** .
+* Wymagany jest program Visual Studio 2017 w wersji 15,8 lub nowszej oraz obciążenie **programowaniem Node. js** .
 
     > [!IMPORTANT]
     > Ten artykuł wymaga funkcji, które są dostępne tylko w programie Visual Studio 2017 w wersji 15,8.
@@ -43,7 +43,7 @@ Następujące nowe funkcje obsługi opracowywania aplikacji Vue.js w programie V
     Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) strony, aby zainstalować go za darmo.
     ::: moniker-end
 
-    Jeśli musisz zainstalować obciążenie, ale masz już program Visual Studio, przejdź do pozycji **Narzędzia** > **Pobierz narzędzia i funkcje..** ., co spowoduje otwarcie Instalator programu Visual Studio. Wybierz **programowania Node.js** obciążenia, wybierz **Modyfikuj**.
+    Jeśli musisz zainstalować obciążenie, ale masz już program Visual Studio, przejdź do pozycji **narzędzia** > **Pobierz narzędzia i funkcje..** ., co spowoduje otwarcie Instalator programu Visual Studio. Wybierz **programowania Node.js** obciążenia, wybierz **Modyfikuj**.
 
 * Aby utworzyć projekt platformy ASP.NET Core, konieczne jest posiadanie programu ASP.NET i tworzenie aplikacji sieci web oraz zainstalowanych obciążeń programowanie dla wielu platform .NET Core.
 
@@ -103,11 +103,11 @@ Aby zainstalować moduł npm vue — interfejs wiersza polecenia, otwórz wiersz
 1. Typ `vue init webpack client-app` i wykonaj kroki po wyświetleniu monitu o odpowiedzieć dodatkowe pytania.
 
     > [!NOTE]
-    > W przypadku plików *. Vue* należy użyć programu WebPack lub podobnej struktury z modułem ładującym w celu wykonania konwersji. Programy TypeScript i Visual Studio nie wiedzą, jak kompilować pliki *. Vue* . Ta sama wartość dotyczy grupowania; Język TypeScript nie wie, jak konwertować moduły ES2015 (to jest `import` i `export` instrukcje) na jeden końcowy plik *. js* do załadowania w przeglądarce. Teraz pakiet WebPack jest najlepszym wyborem. Aby uzyskać ten proces z poziomu programu Visual Studio przy użyciu programu MSBuild, należy zacząć od szablonu programu Visual Studio. Obecnie nie istnieje szablon ASP.NET do tworzenia aplikacji Vue. js.
+    > W przypadku plików *. Vue* należy użyć programu WebPack lub podobnej struktury z modułem ładującym w celu wykonania konwersji. Programy TypeScript i Visual Studio nie wiedzą, jak kompilować pliki *. Vue* . Ta sama wartość dotyczy grupowania; Język TypeScript nie wie, jak konwertować moduły ES2015 (czyli `import` i `export`) na jeden końcowy plik *. js* do załadowania w przeglądarce. Teraz pakiet WebPack jest najlepszym wyborem. Aby uzyskać ten proces z poziomu programu Visual Studio przy użyciu programu MSBuild, należy zacząć od szablonu programu Visual Studio. Obecnie nie istnieje szablon ASP.NET do tworzenia aplikacji Vue. js.
 
 #### <a name="modify-the-webpack-configuration-to-output-the-built-files-to-wwwroot"></a>Modyfikowanie konfiguracji webpack do utworzonych plików wyjściowych do wwwroot
 
-* Otwórz plik *./Client-App/config/index.js*i Zmień `build.index` ścieżkę i `build.assetsRoot` do pliku wwwroot:
+* Otwórz plik *./Client-App/config/index.js*, a następnie zmień `build.index` i `build.assetsRoot` na ścieżkę wwwroot:
 
     ```js
     // Template for index.html
@@ -169,7 +169,7 @@ Te kroki wymagają vue-cli 3.0, która jest obecnie dostępna w wersji beta.
 
 #### <a name="build-with-vue-cli-30"></a>Tworzenie za pomocą vue-cli 3.0
 
-Nieznany problem z Vue-CLI 3,0 może uniemożliwić automatyzację procesu kompilacji. Za każdym razem, gdy próbujesz odświeżyć folder wwwroot, należy uruchomić polecenie `npm run build` w folderze klient-aplikacja.
+Nieznany problem z Vue-CLI 3,0 może uniemożliwić automatyzację procesu kompilacji. Za każdym razem, gdy próbujesz odświeżyć folder wwwroot, musisz uruchomić polecenie `npm run build` w folderze klient-aplikacja.
 
 Alternatywnie można skompilować projekt Vue-CLI 3,0 jako zdarzenie sprzed kompilacji przy użyciu właściwości projektu ASP.NET. Kliknij prawym przyciskiem myszy projekt, wybierz polecenie **Właściwości**i Dołącz następujące polecenia na karcie **kompilacja** w polu tekstowym **wiersz polecenia zdarzenia przed kompilacją** .
 

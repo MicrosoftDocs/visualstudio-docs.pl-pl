@@ -47,10 +47,10 @@ HRESULT ResumeFromBreakPoint(
  `era`  
  podczas Akcja, która ma zostać podjęta w przypadku, gdy aplikacja została zatrzymana z powodu błędu.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
@@ -58,6 +58,6 @@ HRESULT ResumeFromBreakPoint(
  Ta metoda kontynuuje aplikację, która jest obecnie w punkcie przerwania.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IRemoteDebugApplication   interfejsu](../../winscript/reference/iremotedebugapplication-interface.md)  
- @No__t_1 [Wyliczenie BREAKRESUMEACTION](../../winscript/reference/breakresumeaction-enumeration.md)  
+ [IRemoteDebugApplication  interfejsu](../../winscript/reference/iremotedebugapplication-interface.md)  
+   [Wyliczenie BREAKRESUMEACTION](../../winscript/reference/breakresumeaction-enumeration.md)  
  [ERRORRESUMEACTION, wyliczenie](../../winscript/reference/errorresumeaction-enumeration.md)

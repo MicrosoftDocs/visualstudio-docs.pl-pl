@@ -39,9 +39,9 @@ HRESULT GetCount (
  `pcelt`  
  określoną Zwraca liczbę struktur `DebugPropertyInfo` w module wyliczającym.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Zwraca prawidłowy `HRESULT`, zazwyczaj `S_OK`.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IEnumDebugPropertyInfo   interfejsu](../../winscript/reference/ienumdebugpropertyinfo-interface.md)  
+ [IEnumDebugPropertyInfo  interfejsu](../../winscript/reference/ienumdebugpropertyinfo-interface.md)  
  [DebugPropertyInfo, struktura](../../winscript/reference/debugpropertyinfo-structure.md)

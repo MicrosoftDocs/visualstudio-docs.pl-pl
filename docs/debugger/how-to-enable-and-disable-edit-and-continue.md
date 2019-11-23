@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Włączanie i wyłączanie Edytuj i Kontynuuj | Microsoft Docs'
+title: 'Porady: Włączanie i wyłączanie funkcji Edytuj i Kontynuuj | Dokumentacja firmy Microsoft'
 ms.custom: seodec18
 ms.date: 10/04/2018
 ms.topic: conceptual
@@ -33,28 +33,28 @@ ms.contentlocale: pl-PL
 ms.lasthandoff: 10/16/2019
 ms.locfileid: "72430533"
 ---
-# <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>Instrukcje: Włączanie i wyłączanie Edytuj i Kontynuuj (C#, VB,) C++
+# <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>Porady: Włączanie i wyłączanie funkcji Edytuj i Kontynuuj (C#, VB, C++)
 
-Można wyłączyć lub włączyć opcję **Edytuj i Kontynuuj** w oknie dialogowym **Opcje** programu Visual Studio w czasie projektowania. Polecenie **Edytuj i Kontynuuj** działa tylko w kompilacjach debugowania. Aby uzyskać więcej informacji, zobacz [Edytuj i Kontynuuj](../debugger/edit-and-continue.md).
+Można wyłączyć lub włączyć **Edytuj i Kontynuuj** w programie Visual Studio **opcje** okno dialogowe, w czasie projektowania. **Edytuj i Kontynuuj** kompilacje działa tylko podczas debugowania. Aby uzyskać więcej informacji, zobacz [Edytuj i Kontynuuj](../debugger/edit-and-continue.md).
 
-W przypadku C++aplikacji natywnych opcja **Edytuj i Kontynuuj** wymaga użycia opcji `/INCREMENTAL`. Aby uzyskać więcej informacji na temat wymagań C++funkcji w programie, zobacz ten [wpis w blogu](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/) i [Edytuj iC++Kontynuuj ()](../debugger/edit-and-continue-visual-cpp.md).
+Dla natywnych języka C++ **Edytuj i Kontynuuj** wymaga użycia `/INCREMENTAL` opcji. Aby uzyskać więcej informacji na temat wymagań C++funkcji w programie, zobacz ten [wpis w blogu](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/) i [Edytuj iC++Kontynuuj ()](../debugger/edit-and-continue-visual-cpp.md).
 
-**Aby włączyć lub wyłączyć funkcję Edytuj i Kontynuuj:**
+**Aby włączyć lub wyłączyć Edytuj i Kontynuuj:**
 
-1. Jeśli jesteś w sesji debugowania, Zatrzymaj debugowanie (**debuguj** > **Zatrzymaj debugowanie** lub **SHIFT**+**F5**).
+1. Jeśli pracujesz w sesji debugowania, Zatrzymaj debugowanie (**debugowania** > **Zatrzymaj debugowanie** lub **Shift**+**F5**) .
 
-1. W obszarze **narzędzia**@no__t-**1 opcje** > (lub **Debuguj** > **Opcje**) > **debugowanie** > **Ogólne**, wybierz opcję **Edytuj i Kontynuuj** w okienku po prawej stronie.
+1. W **narzędzia** > **opcje** > (lub **debugowania** > **opcje**) > **debugowania**  >  **Ogólne**, wybierz opcję **Edytuj i Kontynuuj** w okienku po prawej stronie.
 
     > [!NOTE]
-    > Jeśli IntelliTrace jest włączona i zbierasz zarówno zdarzenia IntelliTrace, jak i informacje o wywołaniu, funkcja Edytuj i Kontynuuj jest wyłączona. Aby uzyskać więcej informacji, zobacz [IntelliTrace](../debugger/intellitrace.md).
+    > Jeśli zbieranie zdarzeń IntelliTrace i informacje o wywołaniach funkcji IntelliTrace jest włączony, Edytuj i Kontynuuj jest wyłączona. Aby uzyskać więcej informacji, zobacz [IntelliTrace](../debugger/intellitrace.md).
 
-1. W C++ przypadku kodu upewnij się, że jest zaznaczona opcja **Włącz natywne edytowanie i kontynuowanie** , a następnie ustaw opcje dodatkowe:
-    - **Zastosuj zmiany przy kontynuowaniu (tylko kod natywny)**
+1. Dla kodu C++, upewnij się, **Włączanie natywnego Edytuj i Kontynuuj** jest zaznaczone, a także określ dodatkowe opcje:
+    - **Zastosuj zmiany przy kontynuowaniu (tylko natywne)**
 
-      W przypadku wybrania tej możliwości program Visual Studio automatycznie kompiluje i stosuje zmiany kodu w przypadku kontynuowania debugowania ze stanu przerwania. W przeciwnym razie można wybrać opcję zastosowania zmian przy użyciu @no__t **debugowania**-1.**Zastosuj zmiany kodu**.
+      Jeśli zaznaczone, Visual Studio automatycznie kompiluje i ma zastosowanie zmian w kodzie, jeśli będziesz kontynuować debugowanie od teraz w stanie przerwania. W przeciwnym razie użytkownik może zastosować zmiany, przy użyciu **debugowania** > **zastosowanie zmian kodu**.
 
-    - **Ostrzegaj o nieodświeżonym kodzie (tylko kod natywny)**
+    - **Ostrzeżenie o nieodświeżonym kodzie (tylko natywne)**
 
-      W przypadku wybrania tej informacji program wyświetla ostrzeżenia o nieodświeżonym kodzie.
+      Jeśli zaznaczone, umożliwia ostrzeżenia o nieodświeżonym kodzie.
 
 1. Kliknij przycisk **OK**.

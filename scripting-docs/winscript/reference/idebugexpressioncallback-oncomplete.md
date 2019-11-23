@@ -36,10 +36,10 @@ HRESULT onComplete();
 #### <a name="parameters"></a>Parametry  
  Ta metoda nie przyjmuje żadnych parametrów.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
@@ -47,5 +47,5 @@ HRESULT onComplete();
  Ta metoda jest wywoływana po zakończeniu obliczania wyrażenia. Metodę `IDebugExpression::GetResultAsString` można wywołać z poziomu tej procedury obsługi zdarzeń.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IDebugExpressionCallBack   interfejsu](../../winscript/reference/idebugexpressioncallback-interface.md)  
+ [IDebugExpressionCallBack Interface](../../winscript/reference/idebugexpressioncallback-interface.md)   
  [IDebugExpression::GetResultAsString](../../winscript/reference/idebugexpression-getresultasstring.md)

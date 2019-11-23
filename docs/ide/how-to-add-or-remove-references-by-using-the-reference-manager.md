@@ -50,7 +50,7 @@ W oknie dialogowym Menedżer odwołań są wyświetlane różne kategorie po lew
 
 ## <a name="add-a-reference"></a>Dodaj odwołanie
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł **odwołania** lub **zależności** i wybierz polecenie **Dodaj odwołanie**. Możesz również kliknąć prawym przyciskiem myszy węzeł projektu i wybrać polecenie **dodaj**  > **odwołanie**.
+1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł **odwołania** lub **zależności** i wybierz polecenie **Dodaj odwołanie**. Możesz również kliknąć prawym przyciskiem myszy węzeł projektu i wybrać polecenie **dodaj** > **odwołanie**.
 
    Zostanie otwarty **Menedżer odwołań** i zostanie wyświetlona lista dostępnych odwołań według grupy.
 
@@ -60,7 +60,7 @@ W oknie dialogowym Menedżer odwołań są wyświetlane różne kategorie po lew
 
 Na karcie **zestawy** są wyświetlane wszystkie zestawy .NET, które są dostępne do odwołania. Karta **zestawy** nie wyświetla żadnych zestawów z globalnej pamięci podręcznej zestawów (GAC), ponieważ zestawy w pamięci GAC są częścią środowiska wykonawczego. W przypadku wdrażania lub kopiowania aplikacji zawierającej odwołanie do zestawu, który jest zarejestrowany w pamięci podręcznej GAC, zestaw nie zostanie wdrożony ani skopiowany z aplikacją, niezależnie od ustawienia **kopiowania lokalnego** . Aby uzyskać więcej informacji, zobacz [Zarządzanie odwołaniami w projekcie](../ide/managing-references-in-a-project.md).
 
-Po ręcznym dodaniu odwołania do dowolnych przestrzeni nazw EnvDTE (<xref:EnvDTE>, <xref:EnvDTE80>, <xref:EnvDTE90>, <xref:EnvDTE90a> lub <xref:EnvDTE100>) ustaw właściwość **Osadź typy** współdziałania z odwołaniem na **wartość false** w oknie **Właściwości** . Ustawienie tej właściwości na **wartość true** może spowodować problemy z kompilacją ze względu na pewne właściwości EnvDTE, które nie mogą być osadzone.
+Po ręcznym dodaniu odwołania do dowolnych przestrzeni nazw EnvDTE (<xref:EnvDTE>, <xref:EnvDTE80>, <xref:EnvDTE90>, <xref:EnvDTE90a>lub <xref:EnvDTE100>) ustaw właściwość **Osadź typy** współdziałania z odwołaniem na **wartość false** w oknie **Właściwości** . Ustawienie tej właściwości na **wartość true** może spowodować problemy z kompilacją ze względu na pewne właściwości EnvDTE, które nie mogą być osadzone.
 
 Wszystkie projekty pulpitu zawierają niejawne odwołanie do **biblioteki mscorlib**. Projekty Visual Basic zawierają niejawne odwołanie do <xref:Microsoft.VisualBasic>. Wszystkie projekty zawierają niejawne odwołanie do **System. Core**, nawet jeśli zostanie usunięte z listy odwołań.
 
@@ -88,7 +88,7 @@ Karta **zestawy** składa się z dwóch podkart:
 
    I starsze wersje [docelowego identyfikatora platformy]
 
-   Na przykład jeśli projekt jest ukierunkowany na .NET Framework 4 na komputerze 32-bitowym, **rozszerzenia** wyliczają zestawy, które są zarejestrowane w obszarze *\Microsoft \.NETFramework \v4.0\assemblyfoldersex*, *\Microsoft \.NETFramework \v3.5\ AssemblyFoldersEx*, *\Microsoft \.NETFramework \V3.0\assemblyfoldersex*i *\Microsoft \.NETFramework \v2.0\assemblyfoldersex*.
+   Na przykład jeśli projekt jest ukierunkowany na .NET Framework 4 na komputerze 32-bitowym, **rozszerzenia** wyliczają zestawy, które są zarejestrowane w obszarze *\Microsoft\.NETFramework\v4.0\AssemblyFoldersEx*, *\microsoft\.NETFramework\v3.5\AssemblyFoldersEx*, *\Microsoft\.NETFramework\v3.0\AssemblyFoldersEx*i *\Microsoft\.NETFramework\v2.0\AssemblyFoldersEx*.
 
 Niektóre składniki na liście mogą nie być wyświetlane, w zależności od wersji platformy projektu. Może się to zdarzyć w następujących warunkach:
 
@@ -111,7 +111,7 @@ Należy unikać dodawania odwołań do plików do danych wyjściowych innego pro
 
   - Inne katalogi projektu w tym samym rozwiązaniu. (Zestawy te można znaleźć za pomocą karty **projekty** ).
 
-  \- lub-
+  \- lub —
 
 - Ustaw klucz rejestru określający lokalizację zestawów do wyświetlenia:
 
@@ -127,9 +127,9 @@ Należy unikać dodawania odwołań do plików do danych wyjściowych innego pro
 
   - `[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
 
-  *\<VersionMinimum \>* to najniższa wersja platformy, która ma zastosowanie. Jeśli *\<VersionMinimum \>* to v 3.0, foldery określone w *AssemblyFoldersEx* mają zastosowanie do projektów przeznaczonych dla .NET Framework 3,0 i nowszych.
+  *\<VersionMinimum\>* to najniższa wersja platformy, która ma zastosowanie. Jeśli *\<VersionMinimum\>* to v 3.0, foldery określone w *AssemblyFoldersEx* mają zastosowanie do projektów przeznaczonych dla .NET Framework 3,0 i nowszych.
 
-  *\<AssemblyLocation \>* jest katalogiem zestawów, które mają być wyświetlane w oknie dialogowym **Dodawanie odwołania** , na przykład *C:\MyAssemblies*.
+  *\<AssemblyLocation\>* jest katalogiem zestawów, które mają być wyświetlane w oknie dialogowym **Dodaj odwołanie** , na przykład *C:\MyAssemblies*.
 
   Utworzenie klucza rejestru w węźle `HKEY_LOCAL_MACHINE` umożliwia wszystkim użytkownikom wyświetlanie zestawów w określonej lokalizacji w oknie dialogowym **Dodawanie odwołania** . Tworzenie klucza rejestru w węźle `HKEY_CURRENT_USER` ma wpływ tylko na ustawienie bieżącego użytkownika.
 
@@ -186,11 +186,11 @@ Należy unikać dodawania odwołań do plików do danych wyjściowych innego pro
 
 Nie można przejść do zestawu SDK i dodać go do projektu. Możesz tylko przeglądać do pliku (na przykład zestawu lub *winmd*) i dodać go do projektu.
 
-W przypadku odwoływania się do pliku WinMD, oczekiwany układ polega na tym, że *\<FileName >. winmd*, *\<FileName >. dll*, a *\<FileName >. pri* są umieszczone obok siebie. Jeśli odwołujesz się do WinMD w następujących scenariuszach, niepełny zestaw plików zostanie skopiowany do katalogu wyjściowego projektu i, w związku z tym, wystąpią błędy kompilacji i czasu wykonywania.
+W przypadku odwoływania się do pliku WinMD, oczekiwany układ polega na tym, że *\<filename >. winmd*, *\<filename >. dll*i *\<filename >. pliki PRI* są umieszczone obok siebie. Jeśli odwołujesz się do WinMD w następujących scenariuszach, niepełny zestaw plików zostanie skopiowany do katalogu wyjściowego projektu i, w związku z tym, wystąpią błędy kompilacji i czasu wykonywania.
 
-- **Składnik macierzysty**: projekt natywny utworzy jeden winmd dla każdego rozłączonego zestawu nazw i jedną bibliotekę DLL, która składa się z implementacji. Pliki WinMD będą miały odmienne nazwy. W przypadku odwoływania się do tego pliku składnika macierzystego MSBuild nie rozpoznaje, że niepodobne nazwy WinMD tworzą jeden składnik. W związku z tym tylko identyczne nazwy *\<FileName >. dll* i *\<FileName >. winmd* zostaną skopiowane, a błędy środowiska uruchomieniowego zostaną wykonane. Aby obejść ten problem, Utwórz zestaw SDK rozszerzenia. Aby uzyskać więcej informacji, zobacz [Tworzenie zestawu Software Development Kit](../extensibility/creating-a-software-development-kit.md).
+- **Składnik macierzysty**: projekt natywny utworzy jeden winmd dla każdego rozłączonego zestawu nazw i jedną bibliotekę DLL, która składa się z implementacji. Pliki WinMD będą miały odmienne nazwy. W przypadku odwoływania się do tego pliku składnika macierzystego MSBuild nie rozpoznaje, że niepodobne nazwy WinMD tworzą jeden składnik. W związku z tym tylko nazwy *\<filename >. dll* i *\<filename >. winmd* zostaną skopiowane, a błędy środowiska uruchomieniowego zostaną wykonane. Aby obejść ten problem, Utwórz zestaw SDK rozszerzenia. Aby uzyskać więcej informacji, zobacz [Tworzenie zestawu Software Development Kit](../extensibility/creating-a-software-development-kit.md).
 
-- **Używanie formantów**: co najmniej kontrolka XAML składa się z *\<FileName >. winmd*, *\<FileName >. dll*, *\<FileName >. pri*, *\<XamlName >. XAML*i *@no__t_ 10ImageName >. jpg*. Po skompilowaniu projektu pliki zasobów, które są skojarzone z odwołaniem do pliku, nie zostaną skopiowane do katalogu wyjściowego projektu i tylko *\<FileName >. winmd*, *\<FileName >. dll* i \<FileName > *. pri* zostanie skopiowany. Zarejestrowano błąd kompilacji w celu powiadomienia użytkownika o tym, że zasoby *\<XamlName >. XAML* i *\<ImageName >. jpg* . Aby kompilacja się powiodła, trzeba ręcznie skopiować te pliki zasobów do katalogu wyjściowego projektu dla kompilacji i debugowania/czasu wykonywania. Aby obejść ten problem, Utwórz zestaw SDK rozszerzeń, wykonując kroki opisane w temacie [Tworzenie zestawu SDK oprogramowania](../extensibility/creating-a-software-development-kit.md) lub edytuj plik projektu, aby dodać następującą właściwość:
+- Korzystanie z **formantów**: co najmniej kontrolka XAML składa się z *\<pliku >. winmd*, *\<filename >. dll*, *\<filename >. pri*, *\<xamlname >. XAML*i *\<ImageName >. jpg*. Po skompilowaniu projektu pliki zasobów, które są skojarzone z odwołaniem do pliku, nie zostaną skopiowane do katalogu wyjściowego projektu i tylko *\<filename >. winmd*, *\<filename >. dll* i *\<filename >. pri* zostaną skopiowane. Zarejestrowano błąd kompilacji, aby poinformować użytkownika, że brakuje zasobów *\<xamlname >. XAML* i *\<ImageName >. jpg* . Aby kompilacja się powiodła, trzeba ręcznie skopiować te pliki zasobów do katalogu wyjściowego projektu dla kompilacji i debugowania/czasu wykonywania. Aby obejść ten problem, Utwórz zestaw SDK rozszerzeń, wykonując kroki opisane w temacie [Tworzenie zestawu SDK oprogramowania](../extensibility/creating-a-software-development-kit.md) lub edytuj plik projektu, aby dodać następującą właściwość:
 
     ```xml
     <PropertyGroup>
@@ -201,7 +201,7 @@ W przypadku odwoływania się do pliku WinMD, oczekiwany układ polega na tym, �
     > [!NOTE]
     > Jeśli dodasz właściwość, kompilacja może być wolniejsza.
 
-## <a name="recent"></a>Ostatnie
+## <a name="recent"></a>Najnowsze
 
 **Zespoły**, **com**, **Windows**i **Przeglądaj** każdy obsługują **ostatnią** kartę, która wylicza listę składników, które zostały ostatnio dodane do projektów.
 

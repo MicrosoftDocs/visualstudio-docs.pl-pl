@@ -54,7 +54,7 @@ DBGPROP_ATTRIB_NO_ATTRIB  =0x00000000,
   
 ```  
   
-## <a name="members"></a>Elementy członkowskie  
+## <a name="members"></a>Members  
  DBGPROP_ATTRIB_NO_ATTRIB  
  Nie wskazuje żadnych atrybutów.  
   
@@ -110,5 +110,5 @@ DBGPROP_ATTRIB_NO_ATTRIB  =0x00000000,
  Te flagi są również używane do filtrowania elementów podrzędnych obiektu. Wartości mogą być połączone z bitowym lub.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IDebugProperty   interfejsu](../../winscript/reference/idebugproperty-interface.md)  
+ [IDebugProperty  interfejsu](../../winscript/reference/idebugproperty-interface.md)  
  [DebugPropertyInfo, struktura](../../winscript/reference/debugpropertyinfo-structure.md)

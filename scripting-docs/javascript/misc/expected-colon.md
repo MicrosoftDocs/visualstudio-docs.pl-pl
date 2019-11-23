@@ -29,5 +29,5 @@ Podjęto próbę utworzenia wyrażenia za pomocą operatora warunkowego Trzyelem
 - Wstaw dwukropek między drugim i trzecim argumentem operacji.  
   
 ## <a name="see-also"></a>Zobacz także  
- [Operator warunkowy (Trzyelementowy) (?:)](../../javascript/reference/conditional-ternary-operator-decrement-javascript.md)    
+ [Operator warunkowy (Trzyelementowy) (?:)](../../javascript/reference/conditional-ternary-operator-decrement-javascript.md)   
  [Operatory](../../javascript/operators-javascript.md)

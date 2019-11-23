@@ -21,7 +21,7 @@ ms.locfileid: "72603853"
 
 ### <a name="define-an-activity-delegate"></a>Zdefiniuj delegata działania
 
-1. W [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] wybierz pozycję **plik**, **Nowy**, **projekt**. Wybierz węzeł **przepływ pracy** po lewej stronie i szablon **aplikacji konsoli przepływu pracy** po prawej stronie. Nazwij projekt (jeśli to konieczne), a następnie kliknij przycisk **OK**.
+1. W [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]wybierz pozycję **plik**, **Nowy**, **projekt**. Wybierz węzeł **przepływ pracy** po lewej stronie i szablon **aplikacji konsoli przepływu pracy** po prawej stronie. Nazwij projekt (jeśli to konieczne), a następnie kliknij przycisk **OK**.
 
 2. Kliknij prawym przyciskiem myszy projekt w **Eksplorator rozwiązań** i wybierz polecenie **Dodaj**, **nowy element.** ... Wybierz węzeł **przepływ pracy** po lewej stronie i szablon **działania** po prawej stronie. Nadaj nowemu działaniu wartość **foreach. XAML** , a następnie kliknij przycisk **OK**. Działanie zostanie otwarte w Projektancie przepływu pracy.
 
@@ -37,7 +37,7 @@ ms.locfileid: "72603853"
 
 8. W kolumnie Typ argumentu wybierz pozycję **Przeglądaj w poszukiwaniu typów...**
 
-9. W przeglądarce typu wpisz **ActivityAction** w polu **Nazwa typu** . W widoku drzewa wybierz pozycję **ActivityAction \<T >** . Na liście rozwijanej wybierz **obiekt** , który zostanie wyświetlony, aby przypisać do argumentu typ **ActivityAction \<Object >** .
+9. W przeglądarce typu wpisz **ActivityAction** w polu **Nazwa typu** . Wybierz pozycję **ActivityAction\<t >** w widoku drzewa. Na liście rozwijanej wybierz **obiekt** , który zostanie wyświetlony, aby przypisać do argumentu typ **ActivityAction\<> obiektu** .
 
 10. Przeciągnij działanie <xref:System.Activities.Statements.While> z sekcji **przepływ sterowania** w przyborniku do powierzchni projektanta.
 
@@ -79,5 +79,5 @@ ms.locfileid: "72603853"
 
    Gdy przepływ pracy jest wykonywany, w konsoli programu zostaną wyświetlone następujące elementy:
 
-   **1** 
-   **ABC**
+   **1**
+   **abc**

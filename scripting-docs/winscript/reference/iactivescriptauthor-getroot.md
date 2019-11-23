@@ -39,15 +39,15 @@ HRESULT GetRoot(
  `ppsp`  
  określoną Adres zmiennej, która otrzymuje wskaźnik do interfejsu `IScriptNode` węzła głównego.  
   
-## <a name="return-value"></a>Wartość zwracana  
- @No__t_0. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+## <a name="return-value"></a>Wartość zwrócona  
+ `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
   
 ## <a name="see-also"></a>Zobacz także  
- [IActiveScriptAuthor   interfejsu](../../winscript/reference/iactivescriptauthor-interface.md)  
+ [IActiveScriptAuthor  interfejsu](../../winscript/reference/iactivescriptauthor-interface.md)  
  [IScriptNode, interfejs](../../winscript/reference/iscriptnode-interface.md)

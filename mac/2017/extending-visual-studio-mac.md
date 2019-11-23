@@ -157,7 +157,7 @@ Aby uzyskać informacje na temat zakresu obszarów, które są dostępne do opra
 * Zaplecze OBWODu
 * Refaktoryzacja
 * Programy obsługi wykonywania
-* Podświetlanie składni
+* Wyróżnianie składni
 
 ## <a name="additional-information"></a>Dodatkowe informacje
 

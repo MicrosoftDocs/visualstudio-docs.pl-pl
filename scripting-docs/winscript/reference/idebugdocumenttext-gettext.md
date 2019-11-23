@@ -55,10 +55,10 @@ HRESULT GetText(
  `cMaxChars`  
  podczas Liczba znaków w zakresie pozycji znaku. Określa również maksymalną liczbę znaków do zwrócenia.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
@@ -66,5 +66,5 @@ HRESULT GetText(
  Ta metoda pobiera znaki i/lub atrybuty znaków skojarzone z zakresem pozycji znaku. Zakres pozycji znaku jest określany na podstawie pozycji znaku i liczby znaków.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IDebugDocumentText   interfejsu](../../winscript/reference/idebugdocumenttext-interface.md)  
+ [IDebugDocumentText  interfejsu](../../winscript/reference/idebugdocumenttext-interface.md)  
  [SOURCE_TEXT_ATTR, wyliczenie](../../winscript/reference/source-text-attr-enumeration.md)

@@ -52,25 +52,25 @@ HRESULT GetScriptletTextAttributes(
  `dwFlags`  
  podczas Flagi, które są skojarzone z atrybutami tekstu Scriptlet. Może być kombinacją następujących wartości.  
   
-|Stała|Wartość|Opis|  
+|Stała|Value|Opis|  
 |--------------|-----------|-----------------|  
 |GETATTRTYPE_DEPSCAN|0x0001|Zidentyfikuj identyfikatory, które mają atrybut SOURCETEXT_ATTR_IDENTIFIER i Identyfikuj operatory punktów, które mają atrybut SOURCETEXT_ATTR_MEMBERLOOKUP.|  
 |GETATTRFLAG_THIS|0x0100|Zidentyfikuj bieżący obiekt, który ma atrybut SOURCETEXT_ATTR_THIS.|  
 |GETATTRFLAG_HUMANTEXT|0x8000|Zidentyfikuj zawartość ciągu i tekst komentarza, który ma atrybut SOURCETEXT_ATTR_HUMANTEXT.|  
   
  `pattr`  
- [in, out, size_is (`cch`)] Informacje o kolorze dla kodu Scriptlet.  
+ [in. out, size_is (`cch`)] Informacje o kolorze dla kodu Scriptlet.  
   
-## <a name="return-value"></a>Wartość zwracana  
- @No__t_0. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+## <a name="return-value"></a>Wartość zwrócona  
+ `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
   
 ## <a name="see-also"></a>Zobacz także  
- [IActiveScriptAuthor   interfejsu](../../winscript/reference/iactivescriptauthor-interface.md)  
- [IActiveScriptAuthor:: GetScriptTextAttributes](../../winscript/reference/iactivescriptauthor-getscripttextattributes.md)    
+ [IActiveScriptAuthor  interfejsu](../../winscript/reference/iactivescriptauthor-interface.md)  
+ [IActiveScriptAuthor::GetScriptTextAttributes](../../winscript/reference/iactivescriptauthor-getscripttextattributes.md)   
  [SOURCE_TEXT_ATTR, wyliczenie](../../winscript/reference/source-text-attr-enumeration.md)

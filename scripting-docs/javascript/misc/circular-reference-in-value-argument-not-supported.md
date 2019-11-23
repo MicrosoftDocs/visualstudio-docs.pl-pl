@@ -23,7 +23,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72572337"
 ---
 # <a name="circular-reference-in-value-argument-not-supported"></a>Odwołanie cykliczne w argumencie wartości nie jest obsługiwane
-Podjęto próbę wywołania `JSON.stringify` z nieprawidłową wartością. @No__t_0 argument, tablica lub obiekt, zawiera odwołanie cykliczne.  
+Podjęto próbę wywołania `JSON.stringify` z nieprawidłową wartością. `value` argument, tablica lub obiekt, zawiera odwołanie cykliczne.  
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
@@ -43,6 +43,6 @@ var error = JSON.stringify(john);
 ```  
   
 ## <a name="see-also"></a>Zobacz także  
- @No__t_1 [obiektu JSON](../../javascript/reference/json-object-javascript.md)  
- [Funkcja JSON. parse](../../javascript/reference/json-parse-function-javascript.md)    
+   [obiektu JSON](../../javascript/reference/json-object-javascript.md)  
+ [Funkcja JSON. parse](../../javascript/reference/json-parse-function-javascript.md)   
  [Błędy czasu wykonania JavaScript](../../javascript/reference/javascript-run-time-errors.md)

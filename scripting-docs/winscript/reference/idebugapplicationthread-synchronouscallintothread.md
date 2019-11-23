@@ -51,10 +51,10 @@ HRESULT SynchronousCallIntoThread(
  `dwParam3`  
  podczas Trzeci parametr do przekazania do metody `IDebugThreadCall::ThreadCallHandler`.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
@@ -62,5 +62,5 @@ HRESULT SynchronousCallIntoThread(
  Ta metoda zapewnia mechanizm wywołujący do uruchamiania kodu w wątku debugera. Aparaty i hosty języka zwykle używają tej metody do implementowania obiektów wolnych wątków na podstawie ich wielowątkowych implementacji.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IDebugApplicationThread   interfejsu](../../winscript/reference/idebugapplicationthread-interface.md)  
+ [IDebugApplicationThread  interfejsu](../../winscript/reference/idebugapplicationthread-interface.md)  
  [IDebugThreadCall, interfejs](../../winscript/reference/idebugthreadcall-interface.md)

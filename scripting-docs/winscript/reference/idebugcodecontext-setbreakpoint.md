@@ -39,10 +39,10 @@ HRESULT SetBreakPoint(
  `bps`  
  podczas Określa stan punktu przerwania dla tego kontekstu kodu.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
@@ -50,5 +50,5 @@ HRESULT SetBreakPoint(
  Ta metoda ustawia lub czyści punkt przerwania w tym kontekście kodu.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IDebugCodeContext   interfejsu](../../winscript/reference/idebugcodecontext-interface.md)  
+ [IDebugCodeContext  interfejsu](../../winscript/reference/idebugcodecontext-interface.md)  
  [BREAKPOINT_STATE, wyliczenie](../../winscript/reference/breakpoint-state-enumeration.md)

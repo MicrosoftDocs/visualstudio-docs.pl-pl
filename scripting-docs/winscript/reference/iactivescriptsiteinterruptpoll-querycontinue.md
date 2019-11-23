@@ -1,5 +1,5 @@
 ---
-title: 'IActiveScriptSiteInterruptPoll:: QueryContinue | Microsoft Docs'
+title: IActiveScriptSiteInterruptPoll::QueryContinue | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -36,10 +36,10 @@ HRESULT QueryContinue();
 #### <a name="parameters"></a>Parametry  
  Ta metoda nie przyjmuje żadnych parametrów.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wywołanie zakończyło się pomyślnie, a host zezwala na kontynuowanie działania skryptu.|  
 |`S_FALSE`|Wywołanie zakończyło się pomyślnie, a host zażądał przerwania działania skryptu.|  
@@ -50,5 +50,5 @@ HRESULT QueryContinue();
  Host wielowątkowy może użyć metody `IActiveScript::InterruptScriptThread`, aby przerwać skrypt.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IActiveScriptSiteInterruptPoll   interfejsu](../../winscript/reference/iactivescriptsiteinterruptpoll-interface.md)  
+ [IActiveScriptSiteInterruptPoll  interfejsu](../../winscript/reference/iactivescriptsiteinterruptpoll-interface.md)  
  [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)

@@ -39,10 +39,10 @@ HRESULT ConnectDebugger(
  `pad`  
  podczas Debuger do dołączenia do tej aplikacji.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
 |`E_FAIL`|Debuger jest już połączony z tą aplikacją.|  
@@ -51,5 +51,5 @@ HRESULT ConnectDebugger(
  Aplikacja może mieć tylko jeden debuger połączony w danym momencie. Ta metoda kończy się niepowodzeniem, Jeśli debuger jest już połączony.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IRemoteDebugApplication:: getdebugger](../../winscript/reference/iremotedebugapplication-getdebugger.md)    
+ [IRemoteDebugApplication::GetDebugger](../../winscript/reference/iremotedebugapplication-getdebugger.md)   
  [IRemoteDebugApplication, interfejs](../../winscript/reference/iremotedebugapplication-interface.md)

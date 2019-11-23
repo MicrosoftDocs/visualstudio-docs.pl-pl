@@ -55,10 +55,10 @@ HRESULT HandleRuntimeError(
  `pfCallOnScriptError`  
  określoną Flaga, która jest `TRUE`, jeśli aparat powinien wywołać metodę `IActiveScriptSite::OnScriptError`.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
@@ -69,8 +69,8 @@ HRESULT HandleRuntimeError(
 > Podczas gdy błąd czasu wykonywania, Aparat języka może być wywoływany przez wątek w celu wykonywania takich zadań jak Wyliczenie ramek stosu lub obliczenia wyrażeń.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IDebugApplication   interfejsu](../../winscript/reference/idebugapplication-interface.md)  
- [IActiveScriptErrorDebug   interfejsu](../../winscript/reference/iactivescripterrordebug-interface.md)  
- [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)    
- @No__t_1 [Wyliczenie BREAKRESUMEACTION](../../winscript/reference/breakresumeaction-enumeration.md)  
+ [IDebugApplication  interfejsu](../../winscript/reference/idebugapplication-interface.md)  
+ [IActiveScriptErrorDebug  interfejsu](../../winscript/reference/iactivescripterrordebug-interface.md)  
+ [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)   
+   [Wyliczenie BREAKRESUMEACTION](../../winscript/reference/breakresumeaction-enumeration.md)  
  [ERRORRESUMEACTION, wyliczenie](../../winscript/reference/errorresumeaction-enumeration.md)

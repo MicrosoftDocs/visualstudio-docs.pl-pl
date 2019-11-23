@@ -23,11 +23,11 @@ ms.locfileid: "68180417"
 # <a name="nesting-projects"></a>Zagnieżdżanie projektów
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Deweloperzy aplikacji korporacyjnych korzystających z pakietu programu vs mogą wygodnie grupować podobne typy projektów [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] w programie przy użyciu *zagnieżdżania projektów*. Na przykład projekt szablon przedsiębiorstwa używa zagnieżdżonych projektów do grupowania projektów w kategorii. Projekty fasady biznesowej, projekty interfejsu użytkownika sieci Web i tak dalej są pogrupowane w jednej kategorii.  
+Deweloperzy aplikacji korporacyjnych korzystających z pakietu programu VS mogą wygodnie grupować podobne typy projektów w [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] przy użyciu *zagnieżdżania projektu*. Na przykład projekt szablon przedsiębiorstwa używa zagnieżdżonych projektów do grupowania projektów w kategorii. Projekty fasady biznesowej, projekty interfejsu użytkownika sieci Web i tak dalej są pogrupowane w jednej kategorii.  
   
  W tym scenariuszu nie ma żadnego limitu liczby projektów, które deweloper może zagnieżdżać w każdym projekcie nadrzędnym, Chociaż deweloper może programowo wprowadzić limity. Ten typ grupowania może również spowodować cykliczność, w takim przypadku projekty tego samego typu co projekt podrzędny mogą być zagnieżdżane w elemencie podrzędnym, aby stał się podprojektem elementu podrzędnego, który jest podprojektem elementu nadrzędnego.  
   
- Zagnieżdżanie projektu nie jest częścią [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]wewnętrzną. Należy napisać kod w celu włączenia zagnieżdżania i zagnieżdżania projektu w ramach projektów podrzędnych. Projekt nadrzędny jest specjalnym pakietu VSPackage lub typem projektu, utworzonym i zarejestrowanym przy użyciu własnego identyfikatora GUID, który zawiera kod, który jest wymagany do wdrożenia zagnieżdżania projektu.  
+ Zagnieżdżanie projektu nie jest wewnętrzną częścią [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Należy napisać kod w celu włączenia zagnieżdżania i zagnieżdżania projektu w ramach projektów podrzędnych. Projekt nadrzędny jest specjalnym pakietu VSPackage lub typem projektu, utworzonym i zarejestrowanym przy użyciu własnego identyfikatora GUID, który zawiera kod, który jest wymagany do wdrożenia zagnieżdżania projektu.  
   
  Przykład zagnieżdżonych projektów można znaleźć w C# przykładowym projekcie zagnieżdżonym.  
   
@@ -36,12 +36,12 @@ Deweloperzy aplikacji korporacyjnych korzystających z pakietu programu vs mogą
 Przykład zagnieżdżonych projektów  
   
 ## <a name="see-also"></a>Zobacz też  
- [Instrukcje: Implementowanie projektów zagnieżdżonych](../../extensibility/internals/how-to-implement-nested-projects.md)   
+ [Instrukcje: implementowanie projektów zagnieżdżonych](../../extensibility/internals/how-to-implement-nested-projects.md)   
  [Zagadnienia dotyczące zwalniania i ponownego ładowania zagnieżdżonych projektów](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)   
  [Obsługa kreatora dla zagnieżdżonych projektów](../../extensibility/internals/wizard-support-for-nested-projects.md)   
- [Rejestrowanie szablonów projektu i elementu](../../extensibility/internals/registering-project-and-item-templates.md)   
+ [Rejestrowanie szablonów projektu i elementów](../../extensibility/internals/registering-project-and-item-templates.md)   
  [Implementowanie obsługi poleceń dla zagnieżdżonych projektów](../../extensibility/internals/implementing-command-handling-for-nested-projects.md)   
  [Filtrowanie okna dialogowego AddItem dla zagnieżdżonych projektów](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)   
- [Lista kontrolna: Tworzenie nowych typów projektów](../../extensibility/internals/checklist-creating-new-project-types.md)   
+ [Lista kontrolna: tworzenie nowych typów projektów](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Parametry kontekstu](../../extensibility/internals/context-parameters.md)   
  [Kreator (plik Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)

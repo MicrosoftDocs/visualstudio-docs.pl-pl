@@ -32,7 +32,7 @@ HRESULT CompleteProfilerStart();
 #### <a name="parameters"></a>Parametry  
  Metoda nie przyjmuje żadnych parametrów.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Zwraca wartość HRESULT. Dopuszczalne są następujące wartości:  
   
 |Wartość zwracana|Znaczenie|  
@@ -47,5 +47,5 @@ HRESULT CompleteProfilerStart();
  Wywołanie `IActiveScriptProfilerControl2::CompleteProfilerStart` gwarantuje, że zdarzenia dla funkcji znajdujących się już w stosie wywołań są wysyłane. Ta metoda musi być wywoływana po uruchomieniu profilowania na dowolnym aparacie skryptów, który znajduje się na bieżącej karcie. Metodę można wywołać dla dowolnego aparatu skryptów.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IActiveScriptProfilerControl2::P repareprofilerstop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md)    
+ [IActiveScriptProfilerControl2::PrepareProfilerStop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md)   
  [IActiveScriptProfilerControl2, interfejs](../../winscript/reference/iactivescriptprofilercontrol2-interface.md)

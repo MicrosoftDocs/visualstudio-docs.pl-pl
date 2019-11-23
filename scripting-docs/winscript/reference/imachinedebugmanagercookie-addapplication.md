@@ -47,10 +47,10 @@ HRESULT AddApplication(
  `pdwAppCookie`  
  określoną Plik cookie służący do usuwania aplikacji z Menedżera debugowania maszyny.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
@@ -58,6 +58,6 @@ HRESULT AddApplication(
  Ta metoda jest wywoływana przez Menedżera debugowania procesów za każdym razem, gdy `IProcessDebugManager::AddApplication` jest wywoływana.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IMachineDebugManagerCookie   interfejsu](../../winscript/reference/imachinedebugmanagercookie-interface.md)  
- [IMachineDebugManagerCookie:: RemoveApplication](../../winscript/reference/imachinedebugmanagercookie-removeapplication.md)    
+ [IMachineDebugManagerCookie  interfejsu](../../winscript/reference/imachinedebugmanagercookie-interface.md)  
+ [IMachineDebugManagerCookie::RemoveApplication](../../winscript/reference/imachinedebugmanagercookie-removeapplication.md)   
  [IProcessDebugManager::AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)

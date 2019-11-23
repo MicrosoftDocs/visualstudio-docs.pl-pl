@@ -39,10 +39,10 @@ HRESULT StartDebugSession(
  `pda`  
  podczas Określa aplikację do debugowania.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
@@ -50,5 +50,5 @@ HRESULT StartDebugSession(
  Ta metoda inicjuje sesję debugowania z określoną aplikacją. Debuger powinien wywołać `IRemoteDebugApplication::ConnectDebugger` przed powrotem z tego wywołania.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IDebugSessionProvider   interfejsu](../../winscript/reference/idebugsessionprovider-interface.md)  
+ [IDebugSessionProvider  interfejsu](../../winscript/reference/idebugsessionprovider-interface.md)  
  [IRemoteDebugApplication::ConnectDebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md)

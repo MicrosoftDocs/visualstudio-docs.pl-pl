@@ -43,10 +43,10 @@ HRESULT CreateSimpleConnectionPoint(
  `ppscp`  
  określoną Interfejs zdarzenia, który zawija `pdisp`.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
@@ -54,5 +54,5 @@ HRESULT CreateSimpleConnectionPoint(
  Zwraca interfejs zdarzenia, który otacza daną `IDispatch` (zobacz [interfejs ISimpleConnectionPoint](../../winscript/reference/isimpleconnectionpoint-interface.md)).  
   
 ## <a name="see-also"></a>Zobacz także  
- [IDebugHelper   interfejsu](../../winscript/reference/idebughelper-interface.md)  
+ [IDebugHelper  interfejsu](../../winscript/reference/idebughelper-interface.md)  
  [ISimpleConnectionPoint, interfejs](../../winscript/reference/isimpleconnectionpoint-interface.md)

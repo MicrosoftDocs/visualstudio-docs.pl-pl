@@ -33,5 +33,5 @@ Określono właściwość lub metodę, która nie istnieje dla tego obiektu. Nie
 - Aby uzyskać więcej informacji, zobacz dokumentację obiektu.  
   
 ## <a name="see-also"></a>Zobacz także  
- [Obiekt obiektu  ](../../javascript/reference/object-object-javascript.md)  
+ [Obiekt obiektu ](../../javascript/reference/object-object-javascript.md)  
  [JavaScript — obiekty](../../javascript/reference/javascript-objects.md)

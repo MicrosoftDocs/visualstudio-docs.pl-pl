@@ -46,7 +46,7 @@ typedef struct ExtendedDebugPropertyInfo{
 };  
 ```  
   
-## <a name="members"></a>Elementy członkowskie  
+## <a name="members"></a>Members  
  `dwValidFields`  
  Wyliczany typ danych służący do określania, które pola są inicjowane.  
   
@@ -84,8 +84,8 @@ typedef struct ExtendedDebugPropertyInfo{
  `IDebugExtendedProperty` obiekt odpowiadający tej `ExtendedDebugPropertyInfo`.  
   
 ## <a name="see-also"></a>Zobacz także  
- @No__t_1 [struktury DebugPropertyInfo](../../winscript/reference/debugpropertyinfo-structure.md)  
- [IDebugProperty   interfejsu](../../winscript/reference/idebugproperty-interface.md)  
- [IDebugExtendedProperty   interfejsu](../../winscript/reference/idebugextendedproperty-interface.md)  
- [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)    
+   [struktury DebugPropertyInfo](../../winscript/reference/debugpropertyinfo-structure.md)  
+ [IDebugProperty  interfejsu](../../winscript/reference/idebugproperty-interface.md)  
+ [IDebugExtendedProperty  interfejsu](../../winscript/reference/idebugextendedproperty-interface.md)  
+ [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)   
  [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)

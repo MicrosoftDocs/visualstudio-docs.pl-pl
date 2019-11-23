@@ -1,5 +1,5 @@
 ---
-title: 'IRemoteDebugApplicationEvents:: OnBreakFlagChange | Microsoft Docs'
+title: IRemoteDebugApplicationEvents::OnBreakFlagChange | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -43,10 +43,10 @@ HRESULT OnBreakFlagChange(
  `prdatSteppingThread`  
  podczas Aktualnie uruchomiony wątek.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
@@ -54,5 +54,5 @@ HRESULT OnBreakFlagChange(
  Ta metoda obsługuje zdarzenie po zmianie flagi Break.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IRemoteDebugApplicationEvents   interfejsu](../../winscript/reference/iremotedebugapplicationevents-interface.md)  
+ [IRemoteDebugApplicationEvents  interfejsu](../../winscript/reference/iremotedebugapplicationevents-interface.md)  
  [APPBREAKFLAGS, wyliczenie](../../winscript/reference/appbreakflags-enumeration.md)

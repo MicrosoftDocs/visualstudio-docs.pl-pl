@@ -35,6 +35,6 @@ o.f();
 - Wywołaj metody **Date. prototype. ToString** lub **Date. prototype. valueOf** na obiektach typu `Date`.  
   
 ## <a name="see-also"></a>Zobacz także  
- @No__t_1 [obiektu Date](../../javascript/reference/date-object-javascript.md)  
- [getDate, Metoda (Date)](../../javascript/reference/getdate-method-date-javascript.md)    
+   [obiektu Date](../../javascript/reference/date-object-javascript.md)  
+ [getDate, Metoda (Date)](../../javascript/reference/getdate-method-date-javascript.md)   
  [Obiekty wewnętrzne](../../javascript/intrinsic-objects-javascript.md)

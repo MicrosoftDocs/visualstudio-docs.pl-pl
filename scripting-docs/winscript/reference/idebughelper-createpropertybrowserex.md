@@ -55,10 +55,10 @@ HRESULT CreatePropertyBrowserEx(
  `ppdob`  
  określoną Przeglądarka właściwości.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
@@ -66,6 +66,6 @@ HRESULT CreatePropertyBrowserEx(
  Ta metoda zwraca przeglądarkę właściwości, która otacza wariant i pozwala na konwersję niestandardową wartości wariantów lub typów VARTYPE na ciągi.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IDebugHelper:: CreatePropertyBrowser](../../winscript/reference/idebughelper-createpropertybrowser.md)    
- [IDebugHelper   interfejsu](../../winscript/reference/idebughelper-interface.md)  
+ [IDebugHelper:: CreatePropertyBrowser](../../winscript/reference/idebughelper-createpropertybrowser.md)   
+ [IDebugHelper  interfejsu](../../winscript/reference/idebughelper-interface.md)  
  [IDebugProperty, interfejs](../../winscript/reference/idebugproperty-interface.md)

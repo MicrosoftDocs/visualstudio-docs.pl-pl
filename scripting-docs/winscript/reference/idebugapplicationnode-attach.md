@@ -39,10 +39,10 @@ HRESULT Attach(
  `pdanParent`  
  podczas Drzewo projektu, do którego ma zostać dodany ten węzeł aplikacji.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
@@ -50,5 +50,5 @@ HRESULT Attach(
  Ta metoda dodaje ten węzeł aplikacji do drzewa projektu przy użyciu `pdanParent` jako elementu nadrzędnego. Jeśli `pdanParent` jest `NULL`, ten węzeł aplikacji będzie węzłem najwyższego poziomu.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IDebugApplicationNode::D etach](../../winscript/reference/idebugapplicationnode-detach.md)    
+ [IDebugApplicationNode::Detach](../../winscript/reference/idebugapplicationnode-detach.md)   
  [IDebugApplicationNode, interfejs](../../winscript/reference/idebugapplicationnode-interface.md)

@@ -55,10 +55,10 @@ HRESULT DefineScriptBlock(
  `pdwSourceContext`  
  określoną Kontekst źródłowy bloku skryptu.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
@@ -70,6 +70,6 @@ HRESULT DefineScriptBlock(
  Metoda `DefineScriptBlock` powinna być wywoływana po dodaniu tekstu (na przykład przy użyciu metody `IDebugDocumentHelper::AddDBCSText`), ale przed przeanalizą bloku skryptu (na przykład przy użyciu metody `IActiveScriptParse ::ParseScriptText`).  
   
 ## <a name="see-also"></a>Zobacz także  
- [IDebugDocumentHelper   interfejsu](../../winscript/reference/idebugdocumenthelper-interface.md)  
- [IDebugDocumentHelper:: AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)    
+ [IDebugDocumentHelper  interfejsu](../../winscript/reference/idebugdocumenthelper-interface.md)  
+ [IDebugDocumentHelper::AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)   
  [IDebugDocumentHelper::AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)

@@ -39,10 +39,10 @@ HRESULT AddUnicodeText(
  `pszText`  
  podczas Wskaźnik na ciąg zakończony znakiem null zawierający tekst.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
 |`E_FAIL`|Metoda nie mogła dodać znaków.|  
@@ -54,6 +54,6 @@ HRESULT AddUnicodeText(
 > Jeśli ta metoda jest wywoływana po wywołaniu `AddDeferredText`, zwracany jest `E_FAIL`.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IDebugDocumentHelper   interfejsu](../../winscript/reference/idebugdocumenthelper-interface.md)  
- [IDebugDocumentHelper:: AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)    
+ [IDebugDocumentHelper  interfejsu](../../winscript/reference/idebugdocumenthelper-interface.md)  
+ [IDebugDocumentHelper:: AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)   
  [IDebugDocumentTextEvents, interfejs](../../winscript/reference/idebugdocumenttextevents-interface.md)

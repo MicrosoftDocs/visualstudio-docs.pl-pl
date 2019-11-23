@@ -43,10 +43,10 @@ HRESULT onDebuggerEvent(
  `punk`  
  podczas Obiekt zdarzenia, który implementuje interfejs zdefiniowany przez `riid`.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
 |`E_NOTIMPL`|Metoda nie jest obecnie zaimplementowana.|  
@@ -59,5 +59,5 @@ HRESULT onDebuggerEvent(
  Ta metoda jest wywoływana, gdy zostanie wywołana `IDebugApplication::FireDebuggerEvent`.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IApplicationDebugger   interfejsu](../../winscript/reference/iapplicationdebugger-interface.md)  
+ [IApplicationDebugger  interfejsu](../../winscript/reference/iapplicationdebugger-interface.md)  
  [IDebugApplication::FireDebuggerEvent](../../winscript/reference/idebugapplication-firedebuggerevent.md)

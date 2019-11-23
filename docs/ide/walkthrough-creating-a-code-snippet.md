@@ -26,7 +26,7 @@ ms.locfileid: "72647117"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>Przewodnik: tworzenie fragmentu kodu
 
-Można utworzyć fragment kodu zawierający tylko kilka kroków. Wystarczy utworzyć plik XML, wypełnić odpowiednie elementy i dodać do niego swój kod. Opcjonalnie możesz użyć parametrów zastępczych i odwołań do projektu. Zaimportuj fragment kodu do instalacji programu Visual Studio za pomocą przycisku **Importuj** w programie **Code wstaweks manager** (**Tools**  > **Manager fragmenty kodu**).
+Można utworzyć fragment kodu zawierający tylko kilka kroków. Wystarczy utworzyć plik XML, wypełnić odpowiednie elementy i dodać do niego swój kod. Opcjonalnie możesz użyć parametrów zastępczych i odwołań do projektu. Zaimportuj fragment kodu do instalacji programu Visual Studio za pomocą przycisku **Importuj** w programie **Code wstaweks manager** (**Tools** > **Manager fragmenty kodu**).
 
 ## <a name="snippet-template"></a>Szablon fragmentu kodu
 
@@ -84,9 +84,9 @@ Poniższy kod XML jest podstawowym szablonem fragmentu kodu:
 
 ## <a name="import-a-code-snippet"></a>Importowanie fragmentu kodu
 
-1. Można zaimportować fragment kodu do instalacji programu Visual Studio za pomocą **Menedżera fragmentów kodów**. Otwórz ją, wybierając pozycję **narzędzia**  > **Menedżer fragmentów kodu**.
+1. Można zaimportować fragment kodu do instalacji programu Visual Studio za pomocą **Menedżera fragmentów kodów**. Otwórz ją, wybierając pozycję **narzędzia** > **Menedżer fragmentów kodu**.
 
-2. Kliknij przycisk **Importuj** .
+2. Kliknij przycisk **Importuj**.
 
 3. Przejdź do lokalizacji, w której zapisano fragment kodu w poprzedniej procedurze, zaznacz go, a następnie kliknij przycisk **Otwórz**.
 
@@ -96,19 +96,19 @@ Poniższy kod XML jest podstawowym szablonem fragmentu kodu:
 
    ::: moniker range="vs-2017"
 
-   *%USERPROFILE%\Documents\Visual Studio 2017 \ Code Snippets\Visual C#\moje fragmenty kodu* 
+   *%USERPROFILE%\Documents\Visual Studio 2017 \ Code Snippets\Visual C#\moje fragmenty kodu*
     *%USERPROFILE%\Documents\Visual Studio 2017 \ Code Snippets\Visual Basic\My fragmenty kodu*
 
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-   *%USERPROFILE%\Documents\Visual Studio 2019 \ Code Snippets\Visual C#\moje fragmenty kodu* 
+   *%USERPROFILE%\Documents\Visual Studio 2019 \ Code Snippets\Visual C#\moje fragmenty kodu*
     *%USERPROFILE%\Documents\Visual Studio 2019 \ Code Snippets\Visual Basic\My fragmenty kodu*
 
    ::: moniker-end
 
-6. Przetestuj fragment kodu, otwierając projekt C# lub Visual Basic. Po otwarciu pliku z kodem w **Edytorze wybierz** wstawki  > **Wstaw fragment** z menu rozwijanego Powinien pojawić się fragment kodu o nazwie **pierwiastek kwadratowy**. Kliknij go dwukrotnie.
+6. Przetestuj fragment kodu, otwierając projekt C# lub Visual Basic. Po otwarciu pliku z kodem w **Edytorze wybierz** wstawki > **Wstaw fragment** z menu rozwijanego Powinien pojawić się fragment kodu o nazwie **pierwiastek kwadratowy**. Kliknij go dwukrotnie.
 
    Kod fragmentu kodu zostanie wstawiony do pliku kodu.
 
@@ -116,13 +116,13 @@ Poniższy kod XML jest podstawowym szablonem fragmentu kodu:
 
 ::: moniker range="vs-2017"
 
-1. Pola opisu zawierają więcej informacji na temat fragmentu kodu wyświetlanego w Menedżerze fragmentów kodu. Skrót to tag, który użytkownicy mogą wpisać w celu wstawienia fragmentu kodu. Edytuj dodany fragment, otwierając plik *%USERPROFILE%\Documents\Visual Studio 2017 \ fragmenty kodu \\ [Visual C# lub Visual Basic] \Moje Code Snippet\SquareRoot.snippet*.
+1. Pola opisu zawierają więcej informacji na temat fragmentu kodu wyświetlanego w Menedżerze fragmentów kodu. Skrót to tag, który użytkownicy mogą wpisać w celu wstawienia fragmentu kodu. Edytuj dodany fragment, otwierając plik *%USERPROFILE%\Documents\Visual Studio 2017 \ fragmenty kodu\\[Visual C# lub Visual Basic] \Moje Code Snippet\SquareRoot.snippet*.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. Pola opisu zawierają więcej informacji na temat fragmentu kodu wyświetlanego w Menedżerze fragmentów kodu. Skrót to tag, który użytkownicy mogą wpisać w celu wstawienia fragmentu kodu. Edytuj dodany fragment, otwierając plik *%USERPROFILE%\Documents\Visual Studio 2019 \ fragmenty kodu \\ [Visual C# lub Visual Basic] \Moje Code Snippet\SquareRoot.snippet*.
+1. Pola opisu zawierają więcej informacji na temat fragmentu kodu wyświetlanego w Menedżerze fragmentów kodu. Skrót to tag, który użytkownicy mogą wpisać w celu wstawienia fragmentu kodu. Edytuj dodany fragment, otwierając plik *%USERPROFILE%\Documents\Visual Studio 2019 \ fragmenty kodu\\[Visual C# lub Visual Basic] \Moje Code Snippet\SquareRoot.snippet*.
 
 ::: moniker-end
 

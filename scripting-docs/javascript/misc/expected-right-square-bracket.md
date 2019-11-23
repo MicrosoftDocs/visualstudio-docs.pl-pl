@@ -29,5 +29,5 @@ Wykonano odwołanie do elementu tablicy, ale nie zawiera on prawego nawiasu. Ka�
 - Dodaj prawy nawias do wyrażenia odwołującego się do elementu tablicy.  
   
 ## <a name="see-also"></a>Zobacz także  
- [Używanie tablic](../../javascript/advanced/using-arrays-javascript.md)    
+ [Używanie tablic](../../javascript/advanced/using-arrays-javascript.md)   
  [Array, obiekt](../../javascript/reference/array-object-javascript.md)

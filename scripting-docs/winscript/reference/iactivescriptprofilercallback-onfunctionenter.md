@@ -40,12 +40,12 @@ HRESULT OnFunctionEnter(
  `functionId`  
  podczas Unikatowy identyfikator funkcji. Ten identyfikator jest przypisywany przez aparat obsługi skryptów.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Zwracana wartość tej metody jest ignorowana przez aparat wykonywania skryptów.  
   
 ## <a name="remarks"></a>Uwagi  
  W przypadku wywołań modelu DOM aparat skryptów wywołuje [IActiveScriptProfilerCallback2:: OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md) , a nie `IActiveScriptProfilerCallback::OnFunctionEnter`. Wynika to z dużej liczby unikatowych metod i właściwości w modelu DOM.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IActiveScriptProfilerCallback:: OnFunctionExit](../../winscript/reference/iactivescriptprofilercallback-onfunctionexit.md)    
+ [IActiveScriptProfilerCallback::OnFunctionExit](../../winscript/reference/iactivescriptprofilercallback-onfunctionexit.md)   
  [IActiveScriptProfilerCallback, interfejs](../../winscript/reference/iactivescriptprofilercallback-interface.md)

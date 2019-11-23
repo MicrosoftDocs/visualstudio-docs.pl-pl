@@ -39,10 +39,10 @@ HRESULT DebugOutput(
  `pstr`  
  podczas Ciąg, który ma być wyświetlany w debugerze.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
@@ -52,5 +52,5 @@ HRESULT DebugOutput(
  Ta metoda powoduje wywoływanie `IApplicationDebugger::onDebugOutput`.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IDebugApplication   interfejsu](../../winscript/reference/idebugapplication-interface.md)  
+ [IDebugApplication  interfejsu](../../winscript/reference/idebugapplication-interface.md)  
  [IApplicationDebugger::onDebugOutput](../../winscript/reference/iapplicationdebugger-ondebugoutput.md)

@@ -29,5 +29,5 @@ Podjęto próbę wykonania operacji na elemencie członkowskim danych obiektu, a
 - Upewnij się, że nazwa elementu członkowskiego danych została wpisana poprawnie.  
   
 ## <a name="see-also"></a>Zobacz także  
- [Obiekt obiektu  ](../../javascript/reference/object-object-javascript.md)  
+ [Obiekt obiektu ](../../javascript/reference/object-object-javascript.md)  
  [Obiekty i tablice](../../javascript/objects-and-arrays-javascript.md)

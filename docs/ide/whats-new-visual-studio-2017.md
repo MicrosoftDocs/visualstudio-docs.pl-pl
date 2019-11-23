@@ -27,7 +27,7 @@ ms.locfileid: "73189599"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Co nowego w programie Visual Studio 2017
 
-**Zaktualizowano w [wersji 15,9](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)**
+**Zaktualizowano do programu [wersji 15.9](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)**
 
 Chcesz uaktualnić poprzednią wersję programu Visual Studio? Oto, co może być oferowane przez program Visual Studio 2017: Niezrównana wydajność dla każdego dewelopera, każdej aplikacji i dowolnej platformy. Użyj programu Visual Studio 2017 do tworzenia aplikacji dla systemów Android, iOS, Windows, Linux, sieci Web i chmury. Szybko twórz kod, z łatwością debuguj i diagnozuj, często testuj i swobodnie wydawaj. Możesz również rozszerzać funkcjonalność programu Visual Studio oraz go dostosowywać, tworząc własne rozszerzenia. Używaj kontroli wersji, być Agile i wydajnie Współpracuj z tą wersją.
 
@@ -42,7 +42,7 @@ Oto ogólny podsumowanie zmian wprowadzonych od czasu poprzedniej wersji program
 * **[Programowanie aplikacji systemu Windows](#windows-app-development)** . Użyj szablonów platformy UWP w programie Visual Studio 2017, aby utworzyć pojedynczy projekt dla wszystkich urządzeń z systemem Windows 10 &ndash; komputerem, tabletem, telefonem, konsolą Xbox, urządzeniem HoloLens, Surface Hub i nie tylko.
 * **[Opracowywanie aplikacji mobilnych](#mobile-app-development)** . Wprowadzaj innowacje i uzyskuj wyniki szybko przy użyciu platformy Xamarin, która łączy wymagania dotyczące wielu platform dla urządzeń przenośnych do jednej podstawowej bazy kodu i zestawu umiejętności.
 * **[Programowanie dla wielu platform](#cross-platform-development)** . Bezproblemowo dostarcza oprogramowanie do dowolnej platformy dostosowanej. Rozszerzając DevOps procesy, aby SQL Server za pośrednictwem narzędzi Redgate Data Tools i bezpiecznie automatyzować wdrożenia baz danych z programu Visual Studio. Można też używać platformy .NET Core do zapisywania aplikacji i bibliotek, które są uruchamiane niemodyfikowane w systemach operacyjnych Windows, Linux i macOS.
-* **[Opracowywanie gier](#games-development)** . Za pomocą Visual Studio Tools for Unity (rozszerzenia VSTU) można używać programu Visual Studio do zapisywania skryptów gier i edytorów C# w programie, a następnie używać swojego zaawansowanego debugera do znajdowania i naprawiania błędów.
+* **[Opracowywanie gier](#games-development)** . Program Visual Studio Tools for Unity (VSTU) można użyć programu Visual Studio tworzyć gry i Edytor skrypty w języku C#, a następnie użyć jej zaawansowany debuger, można znaleźć i naprawić błędy.
 * **[Programowanie AI](#ai-development)** . Za pomocą Visual Studio Tools for AI można korzystać z funkcji produktywności programu Visual Studio w celu przyspieszenia innowacji AI. Kompiluj, Testuj i wdrażaj rozwiązania głębokiego uczenia/AI, które bezproblemowo integrują się z Azure Machine Learning w celu zapewnienia niezawodnej obsługi eksperymentów.
 
 > [!NOTE]
@@ -78,7 +78,7 @@ Aby uzyskać więcej informacji, zobacz wpisy w blogu dotyczące [ulepszeń uła
 
 ## <a name="performance-and-productivity"></a>Wydajność i produktywność
 
-### <a name="sign-in-across-multiple-accounts"></a>Logowanie się na wielu kontach
+### <a name="sign-in-across-multiple-accounts"></a>Zaloguj się na wielu kontach
 
 W programie Visual Studio wprowadziliśmy nową usługę tożsamości, która umożliwia udostępnianie kont użytkowników w ramach Team Explorer, narzędzi platformy Azure, Microsoft Store publikowania i nie tylko.
 
@@ -218,7 +218,7 @@ Aby uzyskać więcej informacji, zobacz wpis w blogu [Korzystanie z nowego pomoc
 
 #### <a name="snapshots-and-intellitrace-step-back"></a>Migawki i IntelliTrace krok po kroku
 
-**Nowość w 15,5**: IntelliTrace Step-back automatycznie wykonuje migawkę aplikacji przy każdym punkcie przerwania i zdarzeniu debugera. Zapisane migawki umożliwiają powrót do poprzednich punktów przerwania lub kroków oraz wyświetlanie stanu aplikacji w przeszłości. IntelliTrace krokowo umożliwia zaoszczędzenie czasu, gdy chcesz zobaczyć poprzedni stan aplikacji, ale nie chcesz ponownie uruchomić debugowania ani odtworzyć żądanego stanu aplikacji.
+**Nowość w 15,5**: IntelliTrace Step-back automatycznie wykonuje migawkę aplikacji przy każdym punkcie przerwania i zdarzeniu debugera. Zarejestrowane migawek umożliwiają wrócić do poprzednich punktów przerwania lub kroków i wyświetlić stan aplikacji, tak jak w przeszłości. IntelliTrace krok do tyłu pozwalają zaoszczędzić czas podczas mają być wyświetlane poprzedni stan aplikacji, ale nie chcesz ponownie uruchomić debugowanie lub Utwórz ponownie stan żądaną aplikację.
 
 Możesz nawigować i przeglądać migawki przy użyciu przycisków **krok wstecz** i **dalej** na pasku narzędzi **debugowania** . Te przyciski służą do przechodzenia do zdarzeń, które pojawiają się na karcie **zdarzenia** w oknie **Narzędzia diagnostyczne** . Przechodzenie do tyłu lub w przód do zdarzenia automatycznie aktywuje debugowanie historyczne na wybranym zdarzeniu.
 
@@ -226,7 +226,7 @@ Możesz nawigować i przeglądać migawki przy użyciu przycisków **krok wstecz
 
 Aby uzyskać więcej informacji, zobacz stronę [Wyświetlanie migawek przy użyciu IntelliTrace kroku-back](../debugger/view-historical-application-state.md) .
 
-### <a name="containerization"></a>Kontenerach
+### <a name="containerization"></a>Przechowywanie w kontenerach
 
 Kontenery zapewniają zwiększoną gęstość aplikacji i niższe koszty wdrożenia oraz zwiększają produktywność i elastyczność DevOps.
 
@@ -247,12 +247,12 @@ Aby uzyskać więcej informacji, zobacz stronę [Azure Functions Tools for Visua
 
 ### <a name="debug-live-aspnet-apps-using-snappoints-and-logpoints-in-live-azure-applications"></a>Debuguj aplikacje Live ASP.NET za pomocą punkty przyciągania i punkty rejestrowania w aplikacjach na żywo platformy Azure
 
-**Nowość w 15,5**: Snapshot Debugger wykonuje migawkę aplikacji w środowisku produkcyjnym, gdy interesujący kod jest wykonywany. Aby polecić debugerowi wykonanie migawki, należy ustawić punkty przyciągania i punkty rejestrowania w kodzie. Debuger pozwala zobaczyć dokładnie, co poszło źle, bez wpływu na ruch aplikacji produkcyjnej. Snapshot Debugger może pomóc znacząco skrócić czas potrzebny do rozwiązania problemów występujących w środowiskach produkcyjnych.
+**Nowość w 15,5**: Snapshot Debugger wykonuje migawkę aplikacji w środowisku produkcyjnym, gdy interesujący kod jest wykonywany. Aby nakazać debugera, aby utworzyć migawkę, należy ustawić punkty przyciągania i punkty rejestrowania w kodzie. Debuger pozwala zobaczyć dokładnie tego, co poszło, bez wywierania wpływu na ruch z aplikacji produkcyjnej. Rozszerzenie Snapshot Debugger może pomóc w znacznie skrócić czas potrzebny do rozwiązywania problemów występujących w środowiskach produkcyjnych.
 
-Kolekcja migawek jest dostępna dla następujących aplikacji sieci Web działających w Azure App Service:
+Zbieranie migawek jest dostępna dla następujących aplikacji sieci web działające w usłudze Azure App Service:
 
-* ASP.NET aplikacje działające w .NET Framework 4.6.1 lub nowszych.
-* ASP.NET Core aplikacje działające na platformie .NET Core 2,0 lub nowszej w systemie Windows.
+* Aplikacji ASP.NET uruchomionych w programie .NET Framework 4.6.1 lub nowszej.
+* Aplikacje platformy ASP.NET Core uruchomiony w programie .NET Core 2.0 lub nowszych na Windows.
 
 Aby uzyskać więcej informacji, zobacz [debugowanie live ASP.NET Apps przy użyciu punkty przyciągania i punkty rejestrowania](../debugger/debug-live-azure-applications.md).
 
@@ -264,7 +264,7 @@ Platforma uniwersalna systemu Windows (platformy UWP) to platforma aplikacji dla
 
 ![Platforma uniwersalna systemu Windows](../cross-platform/media/uwp_coreextensions.png)
 
-Wybierz preferowany język deweloperski&mdash;od C#, Visual Basic, C++lub JavaScript @ no__t_3_, aby utworzyć aplikację platforma uniwersalna systemu Windows dla urządzeń z systemem Windows 10. Program Visual Studio 2017 udostępnia szablon aplikacji platformy UWP dla każdego języka, który umożliwia tworzenie pojedynczego projektu dla wszystkich urządzeń. Po zakończeniu pracy możesz utworzyć pakiet aplikacji i przesłać go do Microsoft Store z poziomu programu Visual Studio, aby uzyskać dostęp do aplikacji klientom na dowolnym urządzeniu z systemem Windows 10.
+Wybierz preferowany język deweloperski&mdash;od C#, Visual Basic, C++lub&mdash;JavaScript, aby utworzyć aplikację platforma uniwersalna systemu Windows dla urządzeń z systemem Windows 10. Program Visual Studio 2017 udostępnia szablon aplikacji platformy UWP dla każdego języka, który umożliwia tworzenie pojedynczego projektu dla wszystkich urządzeń. Po zakończeniu pracy możesz utworzyć pakiet aplikacji i przesłać go do Microsoft Store z poziomu programu Visual Studio, aby uzyskać dostęp do aplikacji klientom na dowolnym urządzeniu z systemem Windows 10.
 
 **Nowość w 15,5**: program Visual Studio 2017 w wersji 15,5 zapewnia najlepszą obsługę zestawu SDK aktualizacji systemu Windows 10 dla twórców (10.0.16299.0). Aktualizacja systemu Windows 10 dla twórców oferuje także wiele ulepszeń dla deweloperów platformy UWP. Poniżej przedstawiono niektóre największe zmiany: 
 
@@ -309,7 +309,7 @@ Aby uzyskać więcej informacji, zobacz [przyspieszanie sprzętowe dla wydajnoś
 
 ### <a name="visual-studio-app-center"></a>Visual Studio App Center
 
-**Nowość w 15,5**: Visual Studio App Center&mdash;, która jest teraz ogólnie dostępna dla aplikacji dla systemów Android, iOS, MacOS i Windows&mdash;ma wszystko, czego potrzebujesz, aby zarządzać cyklem życia aplikacji, w tym zautomatyzowanymi kompilacjami, testowaniem na rzeczywistych urządzeniach w ramach Chmura, dystrybucja do testerów wersji beta i sklepów z aplikacjami oraz monitorowanie rzeczywistego użycia za poorednictwem danych o awarii i analizie. Aplikacje, które są zapisywane w języku "zamierzenia C#-C", Swift, Java, Xamarin i reagują natywnie, są obsługiwane we wszystkich funkcjach.
+**Nowość w 15,5**: Visual Studio App Center&mdash;, która jest teraz ogólnie dostępna dla aplikacji dla systemów Android, iOS, MacOS i Windows&mdash;ma wszystko, czego potrzebujesz, aby zarządzać cyklem życia aplikacji, w tym zautomatyzowanymi kompilacjami, testowaniem rzeczywistych urządzeń w chmurze, dystrybucją do testerów wersji beta i sklepów z aplikacjami oraz monitorować rzeczywiste użycie za pomocą danych o awarii i analizie. Aplikacje, które są zapisywane w języku "zamierzenia C#-C", Swift, Java, Xamarin i reagują natywnie, są obsługiwane we wszystkich funkcjach.
 
   ![Środowisko testowe Visual Studio App Center](media/app-center-test-env.png)
 
@@ -367,7 +367,7 @@ Aby uzyskać więcej informacji, zobacz stronę [Visual Studio Tools for AI](../
 Często aktualizujemy program Visual Studio 2017 dzięki nowym funkcjom, które mogą usprawnić pracę programistyczną. Oto podsumowanie niektórych z naszych najbardziej istotnych aktualizacji, które są w wersji eksperymentalnej:
 
 * **[Live Share](https://visualstudio.microsoft.com/services/live-share/)** , nowe narzędzie, które umożliwia udostępnianie bazy kodu i jej kontekstu członkom zespołu i szybkie współpracę dwukierunkową bezpośrednio z poziomu programu Visual Studio. Za pomocą Live Share, członkowie zespołu mogą odczytywać, nawigować, edytować i debugować projekt, który został Ci udostępniony, a tym samym bezproblemowo i bezpieczniej.<br><br>Aby uzyskać więcej informacji, zobacz [Live Share często zadawanych pytań](/visualstudio/liveshare/faq).<br><br>
-* **[Rozszerzenia intellicode](https://visualstudio.microsoft.com/services/intellicode/)** , Nowa funkcja, która rozszerza programowanie oprogramowania przy użyciu systemu AI, aby zapewnić lepsze uzupełnianie kodu z obsługą kontekstu, przewodniki deweloperów do kodu wzorców i stylów ich zespołu, znajdowanie trudnych do przechwycenia problemów z kodem i skupienie się na kodzie Przeglądy dotyczące obszarów, które naprawdę ważne. <br><br>Aby uzyskać więcej informacji, zobacz [często zadawane pytania](/visualstudio/intellicode/faq)dotyczące usługi rozszerzenia intellicode.
+* **[Rozszerzenia intellicode](https://visualstudio.microsoft.com/services/intellicode/)** , Nowa funkcja, która zwiększa rozwój oprogramowania przy użyciu systemu AI, aby zapewnić lepsze uzupełnianie kodu z obsługą kontekstu, ułatwić deweloperom wykonywanie kodu wzorców i stylów ich zespołu, znajdowanie trudnych do przechwycenia problemów z kodem i skupienie się na przeglądach kodu na obszarach, które naprawdę ważne. <br><br>Aby uzyskać więcej informacji, zobacz [często zadawane pytania](/visualstudio/intellicode/faq)dotyczące usługi rozszerzenia intellicode.
 
 Chcesz dowiedzieć się więcej na temat tego, co jeszcze znajduje się w programie Works dla programu Visual Studio 2017? Zobacz stronę z [planem programu Visual Studio](/visualstudio/productinfo/vs2018-roadmap) .
 
@@ -375,7 +375,7 @@ Nie zapomnij zaewidencjonować naszej najnowszej wersji [programu Visual Studio 
 
 ## <a name="contact-us"></a>Skontaktuj się z nami
 
-Dlaczego warto wysłać opinię do zespołu programu Visual Studio? Ze względu na to, że potraktujemy Opinie klientów. To wszystko, co robimy.
+Dlaczego warto wysłać opinię do zespołu usługi Visual Studio? Ponieważ traktujemy opinie naszych użytkowników bardzo poważnie. To wszystko, co robimy.
 
 Jeśli chcesz dowiedzieć się, jak możemy ulepszyć program Visual Studio, lub Dowiedz się więcej o opcjach pomocy technicznej, zobacz stronę [Prześlij nam opinię](feedback-options.md) .
 

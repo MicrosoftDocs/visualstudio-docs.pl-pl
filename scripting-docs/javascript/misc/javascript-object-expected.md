@@ -22,12 +22,12 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72573791"
 ---
 # <a name="javascript-object-expected"></a>JavaScript oczekiwany obiekt
-Podjęto próbę przekazania obiektu innego niż [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] do wbudowanej funkcji, która oczekuje obiektu [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]. Różne funkcje wbudowane wymagają obiektów zdefiniowanych w [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] (w przeciwieństwie do obiektów zdefiniowanych przez hosta lub składnika zewnętrznego, takiego jak kontrolka).  
+Podjęto próbę przekazania obiektu innego niż[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] do wbudowanej funkcji, która oczekuje obiektu [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]. Różne funkcje wbudowane wymagają obiektów zdefiniowanych w [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] (w przeciwieństwie do obiektów zdefiniowanych przez hosta lub składnika zewnętrznego, takiego jak kontrolka).  
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
 - Upewnij się, że obiekt, który jest przekazywany jako parametr, jest poprawnego typu.  
   
 ## <a name="see-also"></a>Zobacz także  
- [Obiekty i tablice](../../javascript/objects-and-arrays-javascript.md)    
+ [Obiekty i tablice](../../javascript/objects-and-arrays-javascript.md)   
  [Używanie tablic](../../javascript/advanced/using-arrays-javascript.md)

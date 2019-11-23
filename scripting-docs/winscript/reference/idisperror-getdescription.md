@@ -39,10 +39,10 @@ HRESULT GetDescription(
  `pbstrDescription`  
  określoną Ciąg zawierający krótki opis błędu.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
@@ -53,5 +53,5 @@ HRESULT GetDescription(
 > Ta metoda nie jest zaimplementowana.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IDispError   interfejsu](../../winscript/reference/idisperror-interface.md)  
+ [IDispError  interfejsu](../../winscript/reference/idisperror-interface.md)  
  [IDispatchEx::InvokeEx](../../winscript/reference/idispatchex-invokeex.md)

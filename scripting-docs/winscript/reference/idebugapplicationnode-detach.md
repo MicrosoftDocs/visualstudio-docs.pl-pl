@@ -36,10 +36,10 @@ HRESULT Detach();
 #### <a name="parameters"></a>Parametry  
  Ta metoda nie przyjmuje żadnych parametrów.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
@@ -47,5 +47,5 @@ HRESULT Detach();
  Ta metoda usuwa ten węzeł aplikacji z drzewa projektu.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IDebugApplicationNode:: Attach](../../winscript/reference/idebugapplicationnode-attach.md)    
+ [IDebugApplicationNode:: Attach](../../winscript/reference/idebugapplicationnode-attach.md)   
  [IDebugApplicationNode, interfejs](../../winscript/reference/idebugapplicationnode-interface.md)

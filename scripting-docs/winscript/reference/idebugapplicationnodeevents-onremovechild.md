@@ -39,10 +39,10 @@ HRESULT onRemoveChild(
  `prddpChild`  
  podczas Węzeł aplikacji podrzędnej, który został usunięty.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
@@ -52,6 +52,6 @@ HRESULT onRemoveChild(
  Realizatory interfejsu `IDebugApplicationNode` powodują podnoszenie tego zdarzenia.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IDebugApplicationNodeEvents   interfejsu](../../winscript/reference/idebugapplicationnodeevents-interface.md)  
- [IDebugApplicationNodeEvents:: onAddChild](../../winscript/reference/idebugapplicationnodeevents-onaddchild.md)    
+ [IDebugApplicationNodeEvents  interfejsu](../../winscript/reference/idebugapplicationnodeevents-interface.md)  
+ [IDebugApplicationNodeEvents::onAddChild](../../winscript/reference/idebugapplicationnodeevents-onaddchild.md)   
  [IDebugApplicationNode, interfejs](../../winscript/reference/idebugapplicationnode-interface.md)

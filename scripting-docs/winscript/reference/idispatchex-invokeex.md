@@ -46,7 +46,7 @@ HRESULT InvokeEx(
  Określa element członkowski. Używa `GetDispID` lub `GetNextDispID` do uzyskania identyfikatora wysyłania.  
   
  `lcid`  
- Ustawienia regionalne kontekstu, w którym można interpretować argumenty. @No__t_0 jest przenoszona do `InvokeEx`, aby umożliwić obiektowi interpretowanie argumentów specyficznych dla ustawień regionalnych.  
+ Ustawienia regionalne kontekstu, w którym można interpretować argumenty. `lcid` jest przenoszona do `InvokeEx`, aby umożliwić obiektowi interpretowanie argumentów specyficznych dla ustawień regionalnych.  
   
  `wFlags`  
  Wartości prawne dla `wFlags` są następujące:  
@@ -55,7 +55,7 @@ HRESULT InvokeEx(
   
  Flagi opisujące kontekst wywołania `InvokeEx`:  
   
-|Wartość|Znaczenie|  
+|Value|Znaczenie|  
 |-----------|-------------|  
 |DISPATCH_METHOD|Element członkowski jest wywoływany jako metoda. Jeśli właściwość ma taką samą nazwę, można ustawić zarówno tę, jak i flagę DISPATCH_PROPERTYGET (zdefiniowaną przez `IDispatch`).|  
 |DISPATCH_PROPERTYGET|Element członkowski zostanie pobrany jako właściwość lub element członkowski danych (zdefiniowany przez `IDispatch`).|  
@@ -80,7 +80,7 @@ HRESULT InvokeEx(
 |||  
 |-|-|  
 |DISPATCH_CONSTRUCT|Wskazuje, że element jest używany jako Konstruktor.|  
-|`pspCaller`|@No__t_0 umożliwia dostęp obiektu do usług udostępnianych przez obiekt wywołujący. Określone usługi mogą być obsługiwane przez samego wywołującego lub delegowane do wywoływania w celu dalszej realizacji łańcucha wywołań. Na przykład jeśli aparat skryptu wewnątrz przeglądarki tworzy `InvokeEx` wywołanie do obiektu zewnętrznego, obiekt może następować przy użyciu łańcucha `pspCaller` w celu uzyskania usług z aparatu skryptu lub przeglądarki. (Należy zauważyć, że łańcuch wywołań nie jest taki sam jak łańcuch tworzenia — znany również jako łańcuch kontenerów lub łańcuch witryn. Łańcuch tworzenia może być dostępny za pomocą innego mechanizmu, takiego jak `IObjectWithSite`.)|  
+|`pspCaller`|`pspCaller` umożliwia dostęp obiektu do usług udostępnianych przez obiekt wywołujący. Określone usługi mogą być obsługiwane przez samego wywołującego lub delegowane do wywoływania w celu dalszej realizacji łańcucha wywołań. Na przykład jeśli aparat skryptu wewnątrz przeglądarki tworzy `InvokeEx` wywołanie do obiektu zewnętrznego, obiekt może następować przy użyciu łańcucha `pspCaller` w celu uzyskania usług z aparatu skryptu lub przeglądarki. (Należy zauważyć, że łańcuch wywołań nie jest taki sam jak łańcuch tworzenia — znany również jako łańcuch kontenerów lub łańcuch witryn. Łańcuch tworzenia może być dostępny za pomocą innego mechanizmu, takiego jak `IObjectWithSite`.)|  
 |`this` wskaźnik|Gdy DISPATCH_METHOD jest ustawiony w `wFlags`, może istnieć "nazwany parametr" dla wartości "This". Identyfikator DISPID zostanie DISPID_THIS i musi być pierwszym nazwanym parametrem.|  
   
  Nieużywany parametr `riid` w `IDispatch::Invoke` został usunięty.  
@@ -101,7 +101,7 @@ HRESULT InvokeEx(
   
  "Zwracanie błędów"  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Zwraca jedną z następujących wartości:  
   
 |||  
@@ -137,6 +137,6 @@ VARIANT var;
 ```  
   
 ## <a name="see-also"></a>Zobacz także  
- [IDispatchEx   interfejsu](../../winscript/reference/idispatchex-interface.md)  
- [IDispatchEx:: getdispid](../../winscript/reference/idispatchex-getdispid.md)    
+ [IDispatchEx  interfejsu](../../winscript/reference/idispatchex-interface.md)  
+ [IDispatchEx:: getdispid](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

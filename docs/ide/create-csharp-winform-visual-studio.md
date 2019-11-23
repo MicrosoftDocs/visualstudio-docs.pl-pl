@@ -47,7 +47,7 @@ Najpierw utworzysz projekt C# aplikacji. Typ projektu zawiera wszystkie pliki sz
 
 1. Otwórz program Visual Studio 2017.
 
-1. Na górnym pasku menu wybierz pozycję **plik** > **Nowy** > **projekt**.
+1. Na górnym pasku menu wybierz kolejno pozycje **plik** > **Nowy** > **projekt**.
 
 1. W oknie dialogowym **Nowy projekt** w okienku po lewej stronie rozwiń pozycję **Wizualizacja C#** , a następnie wybierz pozycję **Windows Desktop**. W środkowym okienku wybierz **aplikacji programu Windows Forms (.NET Framework)** . Następnie Nazwij plik `HelloWorld`.
 
@@ -100,7 +100,7 @@ Po wybraniu szablonu C# projektu i Nazwij swój plik, program Visual Studio otwo
 
      ![Wybierz Przybornik, aby otworzyć okno przybornika](../ide/media/csharp-toolbox-toolwindow.png)
 
-     (Jeśli nie widzisz **przybornika** staną się opcji, możesz go otworzyć z paska menu. Aby to zrobić, **Wyświetl** **Przybornik** > . Lub naciśnij **Ctrl**+**Alt**+**X**.)
+     (Jeśli nie widzisz **przybornika** staną się opcji, możesz go otworzyć z paska menu. Aby to zrobić, **wyświetl** > **Przybornik**. Lub naciśnij **Ctrl**+**Alt**+**X**.)
 
 1. Wybierz ikonę **pinezki** , aby zadokować okno **Przybornik** .
 
@@ -160,7 +160,7 @@ Teraz, po dodaniu kontrolki przycisku, aby utworzyć akcję, możemy dodać kont
 Aby dowiedzieć się więcej, przejdź do następującego samouczka:
 
 > [!div class="nextstepaction"]
-> [Samouczek: Tworzenie podglądu obrazów @ no__t-0
+> [Samouczek: Tworzenie przeglądarki obrazów](tutorial-1-create-a-picture-viewer.md)
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -35,17 +35,17 @@ typedef DWORD SCRIPTTHREADID;
   
 ## <a name="constants"></a>Stałe  
   
-|Stała|Wartość|Znaczenie|  
+|Stała|Value|Znaczenie|  
 |--------------|-----------|-------------|  
 |SCRIPTTHREADID_CURRENT|0xFFFFFFFD|Aktualnie wykonywany wątek.|  
 |SCRIPTTHREADID_BASE|0xFFFFFFFE|Wątek podstawowy; oznacza to, że wątek, w którym utworzono wystąpienie aparatu skryptów.|  
 |SCRIPTTHREADID_ALL|0xFFFFFFFF|Wszystkie wątki.|  
   
 ## <a name="remarks"></a>Uwagi  
- Typ `SCRIPTTHREADID` jest używany przez `IActiveScript::GetCurrentScriptThreadID`, `IActiveScript::GetScriptThreadID`, `IActiveScript::GetScriptThreadState` i `IActiveScript::InterruptScriptThread`, ale stałe mogą być używane tylko przez `IActiveScript::GetScriptThreadState` i `IActiveScript::InterruptScriptThread`.  
+ Typ `SCRIPTTHREADID` jest używany przez `IActiveScript::GetCurrentScriptThreadID`, `IActiveScript::GetScriptThreadID`, `IActiveScript::GetScriptThreadState`i `IActiveScript::InterruptScriptThread`, ale stałe mogą być używane tylko przez `IActiveScript::GetScriptThreadState` i `IActiveScript::InterruptScriptThread`.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IActiveScript:: GetCurrentScriptThreadID](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md)    
- [IActiveScript:: GetScriptThreadID](../../winscript/reference/iactivescript-getscriptthreadid.md)    
- [IActiveScript:: GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md)    
+ [IActiveScript::GetCurrentScriptThreadID](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md)   
+ [IActiveScript::GetScriptThreadID](../../winscript/reference/iactivescript-getscriptthreadid.md)   
+ [IActiveScript::GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md)   
  [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)

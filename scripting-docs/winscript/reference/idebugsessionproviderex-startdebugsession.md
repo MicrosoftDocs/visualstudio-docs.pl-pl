@@ -41,10 +41,10 @@ HRESULT StartDebugSession(
  `fQuery`  
  podczas Wartość true wskazuje zapytanie.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
@@ -52,5 +52,5 @@ HRESULT StartDebugSession(
  Ta metoda inicjuje sesję debugowania z określoną aplikacją. Debuger powinien wywołać `IRemoteDebugApplication::ConnectDebugger` przed powrotem z tego wywołania.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IDebugSessionProviderEx   interfejsu](../../winscript/reference/idebugsessionproviderex-interface.md)  
+ [IDebugSessionProviderEx  interfejsu](../../winscript/reference/idebugsessionproviderex-interface.md)  
  [IRemoteDebugApplication::ConnectDebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md)

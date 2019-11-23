@@ -43,6 +43,6 @@ myFunction() = 42;  // Attempting to assign the value 42 to the result of the fu
     ```  
   
 ## <a name="see-also"></a>Zobacz także  
- @No__t_1 [obiektu funkcji](../../javascript/reference/function-object-javascript.md)  
- [Pisanie kodu JavaScript](../../javascript/writing-javascript-code.md)    
+   [obiektu funkcji](../../javascript/reference/function-object-javascript.md)  
+ [Pisanie kodu JavaScript](../../javascript/writing-javascript-code.md)   
  [Funkcje](../../javascript/functions-javascript.md)

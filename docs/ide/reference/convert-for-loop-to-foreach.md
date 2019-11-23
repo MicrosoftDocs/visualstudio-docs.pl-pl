@@ -24,7 +24,7 @@ W tym artykule opisano refaktoryzacje akcji, które są konwertowane między dwi
 
 Jeśli masz pętlę [for](/dotnet/csharp/language-reference/keywords/for) w kodzie, możesz użyć tej refaktoryzacji do przekonwertowania jej do instrukcji [foreach](/dotnet/csharp/language-reference/keywords/foreach-in) .
 
-To Refaktoryzacja dotyczy:
+Ta Refaktoryzacja mają zastosowanie do:
 
 - C#
 
@@ -43,7 +43,7 @@ Powody, dla których warto skonwertować pętlę [for](/dotnet/csharp/language-r
 
 1. Umieść karetkę w `for` słowie kluczowym.
 
-1. Naciśnij klawisz **Ctrl** + **.** lub kliknij ikonę śrubokrętu ![Screwdriver ikonę ](../media/screwdriver-icon.png) na marginesie pliku kodu.
+1. Naciśnij klawisz **Ctrl**+ **.** lub kliknij ikonę śrubokrętu ![ikonę śrubokrętu](../media/screwdriver-icon.png) na marginesie pliku kodu.
 
    ![Konwertuj na menu foreach](media/convert-to-foreach.png)
 
@@ -53,7 +53,7 @@ Powody, dla których warto skonwertować pętlę [for](/dotnet/csharp/language-r
 
 Jeśli masz element [foreach (C#)](/dotnet/csharp/language-reference/keywords/foreach-in) lub [for each... Next (Visual Basic)](/dotnet/visual-basic/language-reference/statements/for-each-next-statement) w kodzie, można użyć tego refaktoryzacji, aby przekonwertować go na pętlę [for](/dotnet/csharp/language-reference/keywords/for) .
 
-To Refaktoryzacja dotyczy:
+Ta Refaktoryzacja mają zastosowanie do:
 
 - C#
 
@@ -71,7 +71,7 @@ Powody, dla których warto skonwertować instrukcję [foreach](/dotnet/csharp/la
 
 1. Umieść karetkę w `foreach` lub `For Each` słowa kluczowego.
 
-1. Naciśnij klawisz **Ctrl** + **.** lub kliknij ikonę śrubokrętu ![Screwdriver ikonę ](../media/screwdriver-icon.png) na marginesie pliku kodu.
+1. Naciśnij klawisz **Ctrl**+ **.** lub kliknij ikonę śrubokrętu ![ikonę śrubokrętu](../media/screwdriver-icon.png) na marginesie pliku kodu.
 
    ![Konwertuj na menu dla](media/convert-to-for.png)
 
@@ -80,7 +80,7 @@ Powody, dla których warto skonwertować instrukcję [foreach](/dotnet/csharp/la
 1. Ponieważ Refaktoryzacja wprowadza nową zmienną liczby iteracji, pole **Zmień nazwę** pojawia się w prawym górnym rogu edytora. Jeśli chcesz wybrać inną nazwę dla zmiennej, wpisz ją w, a następnie naciśnij klawisz **Enter** lub wybierz pozycję **Zastosuj** w polu **Zmień nazwę** . Jeśli nie chcesz wybierać nowej nazwy, naciśnij klawisz **ESC** lub wybierz pozycję **Zastosuj** , aby odrzucić pole **Zmień nazwę** .
 
 > [!NOTE]
-> W C#przypadku, kod generowany przez te refaktoryzacji używa typu jawnego lub [var](/dotnet/csharp/language-reference/keywords/var) dla typu elementów w kolekcji. Typ w wygenerowanym kodzie, jawny lub niejawny, zależy od ustawień stylu kodu, które znajdują się w zakresie. Te ustawienia stylu kodu są konfigurowane na poziomie komputera w obszarze **narzędzia**  > **Opcje**  > **edytorze tekstów**  > **C#**  > **stylu kodu** 0**Ogólne** 2 **@no__t_ 14var '** lub na poziomie rozwiązania w pliku [EditorConfig](../../ide/editorconfig-language-conventions.md#implicit-and-explicit-types) . Jeśli zmienisz ustawienie stylu kodu w **opcjach**, ponownie otwórz plik kodu, aby zmiany zaczęły obowiązywać.
+> W C#przypadku, kod generowany przez te refaktoryzacji używa typu jawnego lub [var](/dotnet/csharp/language-reference/keywords/var) dla typu elementów w kolekcji. Typ w wygenerowanym kodzie, jawny lub niejawny, zależy od ustawień stylu kodu, które znajdują się w zakresie. Te ustawienia stylu kodu są konfigurowane na poziomie komputera w obszarze **narzędzia** > **Opcje** > **edytorze tekstów** > **C#**  > **stylu kodu** > **Ogólne** >  **\'var "Preferences"** lub na poziomie rozwiązania w pliku [EditorConfig](../../ide/editorconfig-language-conventions.md#implicit-and-explicit-types) . Jeśli zmienisz ustawienie stylu kodu w **opcjach**, ponownie otwórz plik kodu, aby zmiany zaczęły obowiązywać.
 
 ## <a name="see-also"></a>Zobacz także
 

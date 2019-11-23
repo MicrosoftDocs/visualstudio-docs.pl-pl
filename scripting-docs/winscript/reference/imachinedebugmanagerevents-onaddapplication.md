@@ -43,10 +43,10 @@ HRESULT onAddApplication(
  `dwAppCookie`  
  podczas Plik cookie podany, gdy aplikacja została dodana do listy aplikacji.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
@@ -54,5 +54,5 @@ HRESULT onAddApplication(
  Ta metoda wskazuje, że aplikacja została dodana do listy uruchomionych aplikacji.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IMachineDebugManagerEvents   interfejsu](../../winscript/reference/imachinedebugmanagerevents-interface.md)  
+ [IMachineDebugManagerEvents  interfejsu](../../winscript/reference/imachinedebugmanagerevents-interface.md)  
  [IMachineDebugManagerEvents::onRemoveApplication](../../winscript/reference/imachinedebugmanagerevents-onremoveapplication.md)

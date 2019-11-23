@@ -45,24 +45,24 @@ HRESULT SetProperty(
  Wartość właściwości do ustawienia.  
   
  `pvarIndex`  
- Nie używany.  
+ Nie jest używany.  
   
  `pvarValue`  
  Wartość właściwości.  
   
  Wartości dozwolone dla `dwProperty` są opisane w poniższej tabeli.  
   
-|Stała|Wartość|Znaczenie|  
+|Stała|Value|Znaczenie|  
 |--------------|-----------|-------------|  
 |SCRIPTPROP_INTEGERMODE|0x00003000|Wymusza podział aparatu skryptów w tryb liczby całkowitej zamiast trybu zmiennoprzecinkowego. Wartość domyślna to `False`.|  
 |SCRIPTPROP_STRINGCOMPAREINSTANCE|0x00003001|Umożliwia zamianę funkcji porównywania ciągów aparatu skryptów.|  
 |SCRIPTPROP_ABBREVIATE_GLOBALNAME_RESOLUTION|0x70000002|Informuje aparat skryptów, że nie istnieją żadne inne aparaty skryptów do współtworzenia obiektu globalnego.|  
 |SCRIPTPROP_INVOKEVERSIONING|0x00004000|Wymusza, aby aparat skryptów [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] mógł wybrać zestaw funkcji języka, które mają być obsługiwane. Domyślny zestaw funkcji językowych obsługiwanych przez aparat skryptów [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] jest odpowiednikiem zestawu funkcji języka, który pojawił się w wersji 5,7 aparatu obsługi skryptów [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].|  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Zwraca jedną z następujących wartości:  
   
-|Wartość zwracana|Znaczenie|  
+|Wartość zwrócona|Znaczenie|  
 |------------------|-------------|  
 |`S_OK`|Prawnego.|  
 |`E_INVALIDARG`|Argument jest nieprawidłowy.|  
@@ -73,10 +73,10 @@ HRESULT SetProperty(
   
  Aby włączyć lub wyłączyć Porównywanie ciągów niestandardowych, wywołaj `SetProperty` i przekaż wartość `Object`. Obiekt, który przekazujesz, musi implementować interfejs [IActiveScriptStringCompare](../../winscript/reference/iactivescriptstringcompare-interface.md)interfejsu. Metoda [StrComp](../../winscript/reference/iactivescriptstringcompare-strcomp.md) interfejsu [interfejsu IActiveScriptStringCompare](../../winscript/reference/iactivescriptstringcompare-interface.md) jest wywoływana za każdym razem, gdy jest wykonywana funkcja porównywania ciągów.  
   
- Aby wybrać zestaw funkcji języka, które mają być obsługiwane po zainicjowaniu aparatu skryptów [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)], wywołaj `SetProperty` i przekaż wartość odpowiadającą funkcji języka ustawionej dla SCRIPTPROP_INVOKEVERSIONING. Jeśli ta właściwość ma wartość 1 (SCRIPTLANGUAGEVERSION_5_7), dostępne funkcje języka są takie same jak te, które pojawiły się w wersji 5,7 aparatu skryptów [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]. Jeśli jest ustawiona na 2 (SCRIPTLANGUAGEVERSION_5_8), dostępne funkcje języka są te, które pojawiły się w wersji 5,7, oprócz nowych funkcji, które zostały dodane w wersji 5,8. Domyślnie właściwość ta ma wartość 0 (SCRIPTLANGUAGEVERSION_DEFAULT), która jest równoważna z zestawem funkcji języka, który pojawił się w wersji 5,7, chyba że host obsługuje inne zachowanie domyślne. Na przykład program Internet Explorer 8 zażąda funkcji języka [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)], które są obsługiwane przez aparat obsługi skryptów w wersji 5,8 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] domyślnie, gdy domyślny tryb dokumentu programu Internet Explorer 8 jest trybem "Standardy programu Internet Explorer 8". Przełączenie trybu dokumentu programu Internet Explorer 8 do standardów programu Internet Explorer 7 lub tryb osobliwości resetuje aparat skryptów [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)], aby obsługiwał tylko zestaw funkcji języka, który istniał w wersji 5,7 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] aparatu obsługi skryptów.  
+ Aby wybrać zestaw funkcji języka, które mają być obsługiwane po zainicjowaniu aparatu skryptów [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)], wywołaj `SetProperty` i przekaż wartość odpowiadającą zestawowi funkcji języka, który ma być włączony dla SCRIPTPROP_INVOKEVERSIONING. Jeśli ta właściwość ma wartość 1 (SCRIPTLANGUAGEVERSION_5_7), dostępne funkcje języka są takie same jak te, które pojawiły się w wersji 5,7 aparatu skryptów [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]. Jeśli jest ustawiona na 2 (SCRIPTLANGUAGEVERSION_5_8), dostępne funkcje języka to te, które pojawiły się w wersji 5,7, a także nowe funkcje, które zostały dodane w wersji 5,8. Domyślnie właściwość ta ma wartość 0 (SCRIPTLANGUAGEVERSION_DEFAULT), która jest równoważna z zestawem funkcji języka, który pojawił się w wersji 5,7, chyba że host obsługuje inne zachowanie domyślne. Na przykład program Internet Explorer 8 zażąda funkcji języka [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)], które są obsługiwane przez aparat obsługi skryptów w wersji 5,8 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] domyślnie, gdy domyślny tryb dokumentu programu Internet Explorer 8 jest trybem "Standardy programu Internet Explorer 8". Przełączenie trybu dokumentu programu Internet Explorer 8 do standardów programu Internet Explorer 7 lub tryb osobliwości resetuje aparat skryptów [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)], aby obsługiwał tylko zestaw funkcji języka, który istniał w wersji 5,7 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] aparatu obsługi skryptów.  
   
 > [!NOTE]
-> SCRIPTPROP_INVOKEVERSIONING należy ustawić tylko wtedy, gdy jest inicjowany aparat skryptów [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
+> SCRIPTPROP_INVOKEVERSIONING powinna być ustawiona tylko wtedy, gdy jest inicjowany aparat skryptów [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
 ## <a name="example"></a>Przykład  
  Poniższy przykład pokazuje, jak wymusić użycie przez aparat skryptów dzielenia liczb całkowitych i sposobu zezwalania na Przeciążenie funkcji porównywania.  
@@ -101,6 +101,6 @@ scriptProperties.SetProperty(SCRIPTPROP_STRCOMPINST,
 ```  
   
 ## <a name="see-also"></a>Zobacz także  
- [Definiowanie   zgodności dokumentów](https://docs.microsoft.com/previous-versions/windows/internet-explorer/ie-developer/compatibility/cc288325(v=vs.85))  
- [IActiveScriptProperty](../../winscript/reference/iactivescriptproperty.md)    
+ [Definiowanie  zgodności dokumentów](https://docs.microsoft.com/previous-versions/windows/internet-explorer/ie-developer/compatibility/cc288325(v=vs.85))  
+ [IActiveScriptProperty](../../winscript/reference/iactivescriptproperty.md)   
  [Informacje o wersji](../../javascript/reference/javascript-version-information.md)

@@ -47,10 +47,10 @@ HRESULT InsertText(
  `pcharText[]`  
  podczas Bufor zawierający znaki do wstawienia.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
@@ -58,5 +58,5 @@ HRESULT InsertText(
  Ta metoda wstawia nowy tekst do dokumentu.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IDebugDocumentTextAuthor   interfejsu](../../winscript/reference/idebugdocumenttextauthor-interface.md)  
+ [IDebugDocumentTextAuthor  interfejsu](../../winscript/reference/idebugdocumenttextauthor-interface.md)  
  [IDebugDocumentTextAuthor::RemoveText](../../winscript/reference/idebugdocumenttextauthor-removetext.md)

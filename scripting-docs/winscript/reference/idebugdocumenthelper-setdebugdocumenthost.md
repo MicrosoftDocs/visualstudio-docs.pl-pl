@@ -39,10 +39,10 @@ HRESULT SetDebugDocumentHost(
  `pddh`  
  podczas Host dokumentu debugowania.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
@@ -50,5 +50,5 @@ HRESULT SetDebugDocumentHost(
  Interfejs `IDebugDocumentHost` służy do kolorowania składni inteligentnego hosta, pobierania odroczonego tekstu i zwracania obiektów kontrolujących nowo utworzonych kontekstów dokumentów.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IDebugDocumentHelper   interfejsu](../../winscript/reference/idebugdocumenthelper-interface.md)  
+ [IDebugDocumentHelper  interfejsu](../../winscript/reference/idebugdocumenthelper-interface.md)  
  [IDebugDocumentHost, interfejs](../../winscript/reference/idebugdocumenthost-interface.md)

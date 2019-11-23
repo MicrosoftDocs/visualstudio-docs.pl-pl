@@ -39,7 +39,7 @@ HRESULT DeleteMemberByDispID(
  `id`  
  Identyfikator elementu członkowskiego. Używa `GetDispID` lub `GetNextDispID` do uzyskania identyfikatora wysyłania.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Zwraca jedną z następujących wartości:  
   
 |||  
@@ -65,6 +65,6 @@ if (SUCCEEDED(pdex->GetDispID(bstrName, fdexNameCaseSensitive, &dispid)))
 ```  
   
 ## <a name="see-also"></a>Zobacz także  
- [IDispatchEx   interfejsu](../../winscript/reference/idispatchex-interface.md)  
- [IDispatchEx:: getdispid](../../winscript/reference/idispatchex-getdispid.md)    
+ [IDispatchEx  interfejsu](../../winscript/reference/idispatchex-interface.md)  
+ [IDispatchEx:: getdispid](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

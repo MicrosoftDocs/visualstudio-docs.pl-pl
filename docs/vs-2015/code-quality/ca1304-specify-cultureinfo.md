@@ -72,7 +72,7 @@ ms.locfileid: "72661467"
 
  Ten przykład generuje następujące dane wyjściowe.
 
- **6/4/1900 12:15:12 PM** 
+ **6/4/1900 12:15:12 PM**
 **06/04/1900 12:15:12**
 ## <a name="related-rules"></a>Powiązane reguły
  [CA1305: Określ interfejs IFormatProvider](../code-quality/ca1305-specify-iformatprovider.md)

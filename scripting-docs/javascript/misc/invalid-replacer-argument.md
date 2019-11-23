@@ -45,6 +45,6 @@ var jsontext = JSON.stringify(contact, memberfilter, "\t");
 ```  
   
 ## <a name="see-also"></a>Zobacz także  
- @No__t_1 [obiektu JSON](../../javascript/reference/json-object-javascript.md)  
- [Funkcja JSON. parse](../../javascript/reference/json-parse-function-javascript.md)    
+   [obiektu JSON](../../javascript/reference/json-object-javascript.md)  
+ [Funkcja JSON. parse](../../javascript/reference/json-parse-function-javascript.md)   
  [Błędy czasu wykonania JavaScript](../../javascript/reference/javascript-run-time-errors.md)

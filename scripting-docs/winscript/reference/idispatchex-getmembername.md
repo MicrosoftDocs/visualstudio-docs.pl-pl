@@ -43,7 +43,7 @@ HRESULT GetMemberName(
  `pbstrName`  
  Adres `BSTR`, który otrzymuje nazwę elementu członkowskiego. Aplikacja wywołująca jest odpowiedzialna za zwolnienie tej wartości.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Zwraca jedną z następujących wartości:  
   
 |||  
@@ -75,6 +75,6 @@ HRESULT hr;
 ```  
   
 ## <a name="see-also"></a>Zobacz także  
- [IDispatchEx   interfejsu](../../winscript/reference/idispatchex-interface.md)  
- [IDispatchEx:: getdispid](../../winscript/reference/idispatchex-getdispid.md)    
+ [IDispatchEx  interfejsu](../../winscript/reference/idispatchex-interface.md)  
+ [IDispatchEx:: getdispid](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

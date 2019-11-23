@@ -57,7 +57,7 @@ HRESULT GetInfoFromContext(
  `dwListTypesRequested`  
  podczas Żądane typy list. Może być kombinacją następujących wartości:  
   
-|Stała|Wartość|Opis|  
+|Stała|Value|Opis|  
 |--------------|-----------|-----------------|  
 |SCRIPT_CMPL_NOLIST|0x0000|Brak listy.|  
 |SCRIPT_CMPL_MEMBERLIST|0x0001|Lista elementów członkowskich.|  
@@ -65,7 +65,7 @@ HRESULT GetInfoFromContext(
 |SCRIPT_CMPL_PARAMLIST|0x0004|Lista parametrów metody wywołania.|  
 |SCRIPT_CMPL_GLOBALLIST|0x0008|Globalna lista.|  
   
- Typ SCRIPT_CMPL_GLOBALLIST jest traktowany jako domyślny element uzupełniający, który można łączyć za pomocą operatora OR z innymi elementami ukończenia. Aparat tworzenia skryptów najpierw próbuje wypełnić informacje o typie dla innych elementów listy uzupełniania. Jeśli to się nie powiedzie, aparat wypełnia dla SCRIPT_CMPL_GLOBALLIST.  
+ Typ SCRIPT_CMPL_GLOBALLIST jest traktowany jako domyślny element uzupełniający, który można łączyć za pomocą operatora OR z innymi elementami ukończenia. Aparat tworzenia skryptów najpierw próbuje wypełnić informacje o typie dla innych elementów listy uzupełniania. Jeśli to się nie powiedzie, aparat wypełni SCRIPT_CMPL_GLOBALLIST.  
   
  `pdwListTypesProvided`  
  określoną Typ podanej listy.  
@@ -93,15 +93,15 @@ HRESULT GetInfoFromContext(
  `ppunk`  
  Informacje o typie, które są dostępne w formie obiektu `IProvideMultipleClassInfo`.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
   
 ## <a name="see-also"></a>Zobacz także  
- [IProvideMultipleClassInfo   interfejsu](/dotnet/api/microsoft.visualstudio.ole.interop.iprovidemultipleclassinfo)  
+ [IProvideMultipleClassInfo Interface](/dotnet/api/microsoft.visualstudio.ole.interop.iprovidemultipleclassinfo)   
  [IActiveScriptAuthor, interfejs](../../winscript/reference/iactivescriptauthor-interface.md)

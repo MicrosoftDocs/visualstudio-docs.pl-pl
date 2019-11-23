@@ -37,7 +37,7 @@ ms.locfileid: "72578056"
 Możesz dostosować sposób, w jaki program Visual Studio Wyświetla typy danych w zmiennych debugera systemu Windows.  
   
 ## <a name="attributes"></a>Atrybuty  
- W C# i Visual Basic można dodawać rozszerzenia dla danych niestandardowych przy użyciu <xref:System.Diagnostics.DebuggerTypeProxyAttribute>, <xref:System.Diagnostics.DebuggerDisplayAttribute> i <xref:System.Diagnostics.DebuggerBrowsableAttribute>.  
+ W C# i Visual Basic można dodawać rozszerzenia dla danych niestandardowych przy użyciu <xref:System.Diagnostics.DebuggerTypeProxyAttribute>, <xref:System.Diagnostics.DebuggerDisplayAttribute>i <xref:System.Diagnostics.DebuggerBrowsableAttribute>.  
   
  W [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] kodzie Visual Basic nie obsługuje atrybutu DebuggerBrowsable. To ograniczenie jest usuwane w nowszych wersjach .NET Framework.  
   
@@ -53,7 +53,7 @@ Możesz dostosować sposób, w jaki program Visual Studio Wyświetla typy danych
  Widoki typu natywnego można także dostosować, pisząc dodatek Expression ewaluatora. Aby uzyskać więcej informacji, zobacz [EEAddIn Sample: Debug Expression ewaluatora Add-in](https://msdn.microsoft.com/d4f6b068-c812-45bc-9ec0-7e0363c4bb9e).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Używanie   atrybutu DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)  
- [Używanie atrybutu DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)    
- [Obejrzyj i QuickWatch Windows](../debugger/watch-and-quickwatch-windows.md)    
+ [Używanie  atrybutu DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)  
+ [Używanie atrybutu DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)   
+ [Wyrażenie kontrolne i QuickWatch Windows](../debugger/watch-and-quickwatch-windows.md)   
  [Udoskonalanie debugowania za pomocą atrybutów wyświetlania debugera](https://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)

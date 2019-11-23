@@ -25,7 +25,7 @@ ms.contentlocale: pl-PL
 ms.lasthandoff: 10/18/2019
 ms.locfileid: "72574626"
 ---
-# <a name="prerequisites-for-remote-debugging-web-applications"></a>Wymagania wstępne dotyczące zdalnego debugowania aplikacji sieci Web
+# <a name="prerequisites-for-remote-debugging-web-applications"></a>Wstępne wymagania debugowania zdalnego aplikacji internetowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Debuger [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] umożliwia debugowanie aplikacji sieci Web w sposób przezroczysty na komputerze lokalnym lub serwerze zdalnym. Oznacza to, że debuger działa tak samo, jak i umożliwia korzystanie z tych samych funkcji na dowolnym komputerze. Aby debugowanie zdalne działało prawidłowo, należy jednak spełnić pewne wymagania wstępne.  
@@ -35,5 +35,5 @@ Debuger [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] umożliwia debugowanie apli
 - Domyślnie proces roboczy [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] jest uruchamiany jako proces użytkownika ASPNET. W związku z tym należy mieć uprawnienia administratora na komputerze, na którym uruchomiono [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] do jego debugowania. Nazwa procesu roboczego [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] zależy od scenariusza debugowania i wersji usług IIS. Aby uzyskać więcej informacji, zobacz [How to: find a Name the ASP.NET Process](../debugger/how-to-find-the-name-of-the-aspnet-process.md).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Debugowanie aplikacji ASP.NET i AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)    
+ [Debugowanie aplikacji ASP.NET i AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)   
  [Wymagania systemowe](../debugger/aspnet-debugging-system-requirements.md)

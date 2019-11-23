@@ -52,19 +52,19 @@ HRESULT GetScriptTextAttributes(
  `dwFlags`  
  podczas Flagi skojarzone z blokiem skryptu. Może być kombinacją następujących wartości:  
   
-|Stała|Wartość|Opis|  
+|Stała|Value|Opis|  
 |--------------|-----------|-----------------|  
 |GETATTRTYPE_DEPSCAN|0x0001|Wskazuje, że identyfikatory i operatory kropek powinny być identyfikowane odpowiednio flagami SOURCETEXT_ATTR_IDENTIFIER i SOURCETEXT_ATTR_MEMBERLOOKUP.|  
 |GETATTRFLAG_THIS|0x0100|Wskazuje, że identyfikator dla bieżącego obiektu powinien być zidentyfikowany przy użyciu flagi SOURCETEXT_ATTR_THIS.|  
-|GETATTRFLAG_HUMANTEXT|0x8000|Wskazuje, że zawartość ciągu i tekst komentarza powinny być identyfikowane przy użyciu flagi SOURCETEXT_ATTR_HUMANTEXT.|  
+|GETATTRFLAG_HUMANTEXT|0x8000|Wskazuje, że zawartość ciągu i tekst komentarza powinny być identyfikowane za pomocą flagi SOURCETEXT_ATTR_HUMANTEXT.|  
   
  `pattr`  
  [in. out] Bufor zawierający zwrócone atrybuty.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
 |`E_NOTIMPL`|Host używa tylko atrybutów domyślnych.|  
@@ -73,5 +73,5 @@ HRESULT GetScriptTextAttributes(
  Ta metoda zwraca atrybuty tekstu dla dowolnego bloku tekstu dokumentu. W takim przypadku hosty mogą zwrócić `E_NOTIMPL`, w którym to przypadku są używane domyślne atrybuty.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IDebugDocumentHost   interfejsu](../../winscript/reference/idebugdocumenthost-interface.md)  
+ [IDebugDocumentHost  interfejsu](../../winscript/reference/idebugdocumenthost-interface.md)  
  [SOURCE_TEXT_ATTR, wyliczenie](../../winscript/reference/source-text-attr-enumeration.md)

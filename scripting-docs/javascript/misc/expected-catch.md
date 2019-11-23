@@ -31,5 +31,5 @@ Użyto bloku **try** obsługi wyjątków, ale nie zapisał skojarzonej instrukcj
 - Spróbuj użyć bloku **finally** zamiast bloku **catch** .  
   
 ## <a name="see-also"></a>Zobacz także  
- [spróbuj... catch... finally   instrukcji](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)  
+ [spróbuj... catch... finally  instrukcji](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)  
  [Error, obiekt](../../javascript/reference/error-object-javascript.md)

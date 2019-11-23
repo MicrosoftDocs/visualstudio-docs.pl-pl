@@ -35,83 +35,83 @@ Każda osoba mająca [właściciela](https://docs.microsoft.com/azure/role-based
 
 3. Wybierz subskrypcję platformy Azure, która ma być używana na potrzeby rozliczeń. Jeśli go nie masz, możesz utworzyć nową subskrypcję platformy Azure.
     > [!div class="mx-imgBorder"]
-    > ![Select subskrypcję platformy Azure na potrzeby rozliczeń @ no__t-1
+    > ![wybierz subskrypcję platformy Azure na potrzeby rozliczeń](_img/buy-vs-subscriptions/buy-vs-sub-Azure-sub.png)
 
 4. Wybierz liczbę subskrypcji do zakupu.
     > [!div class="mx-imgBorder"]
-    > ![Select liczbę subskrypcji @ no__t-1
+    > ![wybierz liczbę subskrypcji](_img/buy-vs-subscriptions/buy-vs-sub-users.png)
 
     Jeśli nie chcesz, aby subskrypcje zostały przypisane do siebie, usuń zaznaczenie pola wyboru **Przypisz tę subskrypcję do mnie**.
 
 5. Potwierdź i Zakończ zakupy. Jeśli masz przypisaną subskrypcję do siebie, możesz odwiedzić [Portal subskrybenta programu Visual Studio](https://my.visualstudio.com) , aby rozpocząć pobieranie oprogramowania i korzystać z innych korzyści dla subskrybentów.
 
 > [!div class="mx-imgBorder"]
-> @no__t — zakup 0Finish pomyślnie @ no__t-1
+> ![zakończenie zakupu zakończyło się pomyślnie](_img/buy-vs-subscriptions/buy-vs-sub-success.png)
 
 > [!div class="mx-imgBorder"]
-> ![Go do portalu subskrybentów programu Visual Studio @ no__t-1
+> ![przejdź do portalu subskrybentów programu Visual Studio](_img/buy-vs-subscriptions/view-subscription-benefits-subscriptions-portal.png)
 
 Jeśli zakupiono więcej niż jedną subskrypcję, należy przejoć do [portalu administratora subskrypcji programu Visual Studio](https://manage.visualstudio.com) , aby przypisać subskrypcje do innych użytkowników.
 
 > [!div class="mx-imgBorder"]
-> ![Assign subskrypcje do innych użytkowników @ no__t-1
+> ![przypisać subskrypcje do innych](_img/buy-vs-subscriptions/buy-vs-sub-success-many.png)
 
 > [!div class="mx-imgBorder"]
-> ![View subskrypcje @ no__t-1
+> ![Wyświetl subskrypcje](_img/buy-vs-subscriptions/assign-subscriptions.png)
 
 ## <a name="manage-subscriptions"></a>Anuluj odnowienia zakupionych subskrypcji w chmurze
 
 * Aby zmienić liczbę zakupionych subskrypcji:
 
 > [!div class="mx-imgBorder"]
-> ![Change subskrypcje @ no__t-1
+> ![zmienić subskrypcje](_img/buy-vs-subscriptions/manage-subscriptions.png)
 
 * Aby anulować te subskrypcje, zmniejsz liczbę subskrypcji na zero (0). Nie będą odnawiane na początku następnego okresu rozliczeniowego (pierwszy miesiąc w przypadku miesięcznych subskrypcji w chmurze; 12 miesięcy później w przypadku rocznych subskrypcji w chmurze).
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
 
 ### <a name="for-new-customers"></a>Dla nowych klientów:
-#### <a name="q--i-was-considering-the-annual-cloud-subscription-and-now-i-cant-find-it-what-should-i-do"></a>PYTANIA  Rozważam roczną subskrypcję chmury i teraz nie mogę jej znaleźć.  Co mam zrobić?
+#### <a name="q--i-was-considering-the-annual-cloud-subscription-and-now-i-cant-find-it-what-should-i-do"></a>P: rozważałem roczną subskrypcję chmury i teraz nie mogę jej znaleźć.  Co mam zrobić?
 Odp.: Przejdź do [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) , aby uzyskać inne opcje zakupu.
 
-#### <a name="q-what-purchasing-options-are-available-to-me"></a>PYTANIA Jakie opcje zakupu są dostępne dla mnie?
-Odp.:  Firma Microsoft udostępnia miesięczne subskrypcje i standardowe subskrypcje w naszych kanałach sprzedaży bezpośredniej. Aby uzyskać więcej informacji, zapoznaj się z [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).
-Istnieje również wiele opcji dostępnych w ramach programu licencjonowania zbiorowego. Opcje i ceny można zbadać [https://www.microsoft.com/en-us/licensing/how-to-buy/how-to-buy](https://www.microsoft.com/en-us/licensing/how-to-buy/how-to-buy).
+#### <a name="q-what-purchasing-options-are-available-to-me"></a>P: Jakie opcje zakupu są dostępne dla mnie?
+Odp.: udostępniamy miesięczne subskrypcje i standardowe subskrypcje w naszych kanałach sprzedaży bezpośredniej. Aby uzyskać więcej informacji, zapoznaj się z [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).
+Istnieje również wiele opcji dostępnych w ramach programu licencjonowania zbiorowego. Opcje i ceny można zbadać w [https://www.microsoft.com/en-us/licensing/how-to-buy/how-to-buy](https://www.microsoft.com/en-us/licensing/how-to-buy/how-to-buy).
 
-#### <a name="q-the-price-for-a-retail-subscription-is-higher-what-additional-benefits-am-i-receiving"></a>PYTANIA Cena subskrypcji detalicznej jest wyższa. Jakie dodatkowe korzyści mogę otrzymywać?
-Odp.:  Licencje na środowisko IDE programu Visual Studio, które zostały dołączone do subskrypcji, zostaną odebrane jako bezterminowe. Gdy termin odnowienia jest naliczany, opłata jest naliczana tylko za cenę programu Software Assurance, która jest znacznie mniejsza.
+#### <a name="q-the-price-for-a-retail-subscription-is-higher-what-additional-benefits-am-i-receiving"></a>P: cena subskrypcji detalicznej jest wyższa. Jakie dodatkowe korzyści mogę otrzymywać?
+Odp.: otrzymasz bezterminowe prawa licencji dla środowiska IDE programu Visual Studio dołączonego do subskrypcji. Gdy termin odnowienia jest naliczany, opłata jest naliczana tylko za cenę programu Software Assurance, która jest znacznie mniejsza.
 
 ### <a name="for-existing-annual-cloud-subscribers"></a>Dla istniejących rocznych subskrybentów chmury
-#### <a name="q--how-will-this-change-impact-me"></a>PYTANIA  Jak ta zmiana wpłynie na mnie?
-Odp.:  Ta zmiana nie wpłynie na istniejących subskrybentów.
+#### <a name="q--how-will-this-change-impact-me"></a>P: w jaki sposób ta zmiana wpłynie na mnie?
+Odp.: Ta zmiana nie wpłynie na istniejących subskrybentów.
 
-#### <a name="q--do-i-need-to-do-anything-as-a-result-of-these-changes"></a>PYTANIA  Czy muszę zrobić coś w wyniku tych zmian?
-Odp.:  Nie.  Twoje subskrypcje pozostaną na miejscu i będziesz mieć możliwość zarządzania nimi jak dzisiaj.
+#### <a name="q--do-i-need-to-do-anything-as-a-result-of-these-changes"></a>P: Czy muszę zrobić coś w wyniku tych zmian?
+Odp.: nie.  Twoje subskrypcje pozostaną na miejscu i będziesz mieć możliwość zarządzania nimi jak dzisiaj.
 
-#### <a name="q-what-if-i-want-to-increase-the-number-of-subscriptions-for-my-customers"></a>PYTANIA Co zrobić, jeśli chcę zwiększyć liczbę subskrypcji dla moich klientów?
-Odp.: Roczne subskrypcje, które zostały zakupione w danym miesiącu, są rozliczane natychmiast przez cały rok i są ważne przez cały rok. Z tego powodu można modyfikować liczbę licencji tylko w bieżącym miesiącu zakupu (opłata będzie ważna przez rok i naliczana za jeden rok). Nie jest już możliwe zwiększenie liczby subskrypcji poza miesiącem zakupu.
+#### <a name="q-what-if-i-want-to-increase-the-number-of-subscriptions-for-my-customers"></a>P: co zrobić, jeśli chcę zwiększyć liczbę subskrypcji dla moich klientów?
+Odp.: roczne subskrypcje, które zostały zakupione w danym miesiącu, są rozliczane natychmiast przez cały rok i są ważne przez cały rok. Z tego powodu można modyfikować liczbę licencji tylko w bieżącym miesiącu zakupu (opłata będzie ważna przez rok i naliczana za jeden rok). Nie jest już możliwe zwiększenie liczby subskrypcji poza miesiącem zakupu.
 
-#### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-for-my-customers"></a>PYTANIA Co zrobić, jeśli chcę zmniejszyć liczbę subskrypcji dla moich klientów?
+#### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-for-my-customers"></a>P: co zrobić, jeśli chcę zmniejszyć liczbę subskrypcji dla moich klientów?
 Odp.: Administrator może nadal zmniejszyć liczbę subskrypcji, odwiedzając https://manage.visualstudio.com i postępując zgodnie z instrukcjami w tym artykule, aby zmniejszyć liczbę subskrypcji. System *nie* będzie generował środków proporcjonalnie do naliczania opłat. Aby uzyskać zwrot pieniędzy, należy skontaktować się z zespołem ds. rozliczeń platformy Azure.
 
-#### <a name="q-if-i-cancel-my-subscription-will-i-be-able-to-buy-another-annual-cloud-subscription-later"></a>PYTANIA Jeśli anuluję moją subskrypcję, czy mogę zakupić kolejną roczną subskrypcję w chmurze później?
-Odp.:  Chociaż nie będziesz mieć możliwości kupowania kolejnej rocznej subskrypcji w chmurze, istnieje wiele opcji zakupu subskrypcji programu Visual Studio.  Dowiedz się więcej o [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).
+#### <a name="q-if-i-cancel-my-subscription-will-i-be-able-to-buy-another-annual-cloud-subscription-later"></a>P: jeśli anuluję moją subskrypcję, czy mogę zakupić kolejną roczną subskrypcję w chmurze później?
+Odp.: Chociaż nie będziesz mieć możliwości kupowania kolejnej rocznej subskrypcji w chmurze, istnieje wiele opcji zakupu subskrypcji programu Visual Studio.  Więcej informacji znajduje się w [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).
 
 ### <a name="for-cloud-solution-providers-csp"></a>Dla dostawców rozwiązań w chmurze (CSP)
-#### <a name="q-how-will-this-change-impact-my-customers"></a>PYTANIA Jak ta zmiana wpłynie na moich klientów?
-Odp.:  Klienci nie będą mogli kupować nowych subskrypcji rocznych w chmurze programu Visual Studio.
+#### <a name="q-how-will-this-change-impact-my-customers"></a>P: w jaki sposób ta zmiana wpłynie na moich klientów?
+Odp.: klienci nie będą mogli kupować nowych subskrypcji rocznych w chmurze programu Visual Studio.
 
-#### <a name="q-do-my-customers-need-to-do-anything-because-of-these-changes"></a>PYTANIA Czy klienci muszą wykonać jakieś czynności ze względu na te zmiany?
-Odp.:  Nie będzie to miało wpływu na istniejących klientów. Nowi klienci będą musieli zdecydować, czy chcą zakupić miesięczne subskrypcje programu Visual Studio, czy przejść do innego kanału, takiego jak Licencjonowanie zbiorowe, aby zakupić subskrypcje programu Visual Studio.
+#### <a name="q-do-my-customers-need-to-do-anything-because-of-these-changes"></a>P: Czy moi klienci muszą wykonać jakieś czynności ze względu na te zmiany?
+Odp.: nie wpłynie to na istniejących klientów. Nowi klienci będą musieli zdecydować, czy chcą zakupić miesięczne subskrypcje programu Visual Studio, czy przejść do innego kanału, takiego jak Licencjonowanie zbiorowe, aby zakupić subskrypcje programu Visual Studio.
 
-#### <a name="q-what-if-i-want-to-increase-the-number-of-subscriptions-for-my-customers"></a>PYTANIA Co zrobić, jeśli chcę zwiększyć liczbę subskrypcji dla moich klientów?
-Odp.: Roczne subskrypcje zakupione w danym miesiącu są rozliczone natychmiast przez cały rok i są ważne przez cały rok. Z tego powodu administrator może modyfikować tylko liczbę licencji w bieżącym miesiącu zakupu (opłata będzie ważna przez 1 rok i naliczona za 1 rok). Poza miesiącem zakupu nie jest już możliwe zwiększenie liczby subskrypcji.
+#### <a name="q-what-if-i-want-to-increase-the-number-of-subscriptions-for-my-customers"></a>P: co zrobić, jeśli chcę zwiększyć liczbę subskrypcji dla moich klientów?
+Odp.: roczne subskrypcje zakupione w danym miesiącu są rozliczone natychmiast przez cały rok i są ważne przez cały rok. Z tego powodu administrator może modyfikować tylko liczbę licencji w bieżącym miesiącu zakupu (opłata będzie ważna przez 1 rok i naliczona za 1 rok). Poza miesiącem zakupu nie jest już możliwe zwiększenie liczby subskrypcji.
 
-#### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-for-my-customers"></a>PYTANIA Co zrobić, jeśli chcę zmniejszyć liczbę subskrypcji dla moich klientów?
-Odp.:  Administrator może nadal zmniejszyć liczbę subskrypcji, odwiedzając [https://manage.visualstudio.com](https://manage.visualstudio.com) i postępując zgodnie z instrukcjami w tym artykule, aby zmniejszyć liczbę subskrypcji. System **nie** będzie generował środków proporcjonalnie do naliczania opłat. Aby uzyskać zwrot pieniędzy, należy skontaktować się z zespołem ds. rozliczeń platformy Azure.
+#### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-for-my-customers"></a>P: co zrobić, jeśli chcę zmniejszyć liczbę subskrypcji dla moich klientów?
+Odp.: Administrator może nadal zmniejszyć liczbę subskrypcji, odwiedzając [https://manage.visualstudio.com](https://manage.visualstudio.com) i postępując zgodnie z instrukcjami w tym artykule, aby zmniejszyć liczbę subskrypcji. System **nie** będzie generował środków proporcjonalnie do naliczania opłat. Aby uzyskać zwrot pieniędzy, należy skontaktować się z zespołem ds. rozliczeń platformy Azure.
 
-#### <a name="q-if-my-customers-cancel-their-subscriptions-will-they-be-able-to-buy-more-annual-cloud-subscriptions-later"></a>PYTANIA Czy klienci będą mogli kupować w przyszłości więcej rocznych subskrypcji w chmurze?
-Odp.:  Chociaż nie będą mogli kupować innej rocznej subskrypcji w chmurze, istnieje wiele opcji zakupu subskrypcji programu Visual Studio.  Dowiedz się więcej o [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).
+#### <a name="q-if-my-customers-cancel-their-subscriptions-will-they-be-able-to-buy-more-annual-cloud-subscriptions-later"></a>P: jeśli moi klienci anulują swoje subskrypcje, będą mogli zakupić więcej rocznych subskrypcji w chmurze później?
+Odp.: Chociaż nie będą mogli kupić innej rocznej subskrypcji w chmurze, istnieje wiele opcji zakupu subskrypcji programu Visual Studio.  Więcej informacji znajduje się w [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).
 
 ## <a name="related-resources"></a>Powiązane zasoby
 - [Portal administracyjny subskrypcji programu Visual Studio](https://manage.visualstudio.com/)

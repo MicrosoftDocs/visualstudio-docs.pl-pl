@@ -29,7 +29,7 @@ Utworzono nową etykietę, ale nadała ona nazwę istniejącej etykiety. Etykiet
 - Upewnij się, że wszystkie etykiety używane w programach są unikatowe w obrębie odpowiednich zakresów.  
   
 ## <a name="see-also"></a>Zobacz także  
- @No__t_1 [instrukcji z etykietą](../../javascript/reference/labeled-statement-javascript.md)  
- [przełączanie instrukcji](../../javascript/reference/switch-statement-javascript.md)    
- [instrukcja break](../../javascript/reference/break-statement-javascript.md)    
+   [instrukcji z etykietą](../../javascript/reference/labeled-statement-javascript.md)  
+ [przełączanie instrukcji](../../javascript/reference/switch-statement-javascript.md)   
+ [instrukcja break](../../javascript/reference/break-statement-javascript.md)   
  [continue, instrukcja](../../javascript/reference/continue-statement-javascript.md)

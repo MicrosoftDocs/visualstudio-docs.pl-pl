@@ -43,10 +43,10 @@ HRESULT GetResult(
  `ppunkResult`  
  określoną Jeśli operacja zostanie zakończona, `ppunkResult` jest parametrem obiektu zwróconym przez operację.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
 |`E_PENDING`|Operacja nie została ukończona.|  
@@ -55,5 +55,5 @@ HRESULT GetResult(
  Jeśli operacja została ukończona, metoda zwraca `HRESULT` i parametr obiektu z `IDebugSyncOperation::Execute`.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IDebugAsyncOperation   interfejsu](../../winscript/reference/idebugasyncoperation-interface.md)  
+ [IDebugAsyncOperation  interfejsu](../../winscript/reference/idebugasyncoperation-interface.md)  
  [IDebugSyncOperation::Execute](../../winscript/reference/idebugsyncoperation-execute.md)

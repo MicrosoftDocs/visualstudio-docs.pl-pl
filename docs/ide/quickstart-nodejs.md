@@ -1,5 +1,5 @@
 ---
-title: 'Szybki start: Tworzenie pierwszej aplikacji node. js przy użyciu programu Visual Studio'
+title: 'Szybki Start: Tworzenie pierwszej aplikacji node. js przy użyciu programu Visual Studio'
 description: W tym przewodniku szybki start utworzysz aplikację Node. js w programie Visual Studio
 ms.date: 06/27/2018
 ms.technology: vs-javascript
@@ -20,7 +20,7 @@ ms.contentlocale: pl-PL
 ms.lasthandoff: 08/30/2019
 ms.locfileid: "70180328"
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>Szybki start: Tworzenie pierwszej aplikacji node. js przy użyciu programu Visual Studio
+# <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>Szybki Start: Tworzenie pierwszej aplikacji node. js przy użyciu programu Visual Studio
 
 W tym 5-10 minutowym wprowadzeniu do zintegrowanego środowiska programistycznego (IDE) programu Visual Studio utworzysz prostą aplikację sieci Web Node. js.
 
@@ -29,13 +29,13 @@ W tym 5-10 minutowym wprowadzeniu do zintegrowanego środowiska programistyczneg
 * Musisz mieć zainstalowany program Visual Studio i obciążenie programowaniem Node. js.
 
     ::: moniker range=">=vs-2019"
-    Jeśli program Visual Studio 2019 nie został jeszcze zainstalowany, przejdź do strony  [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads), aby zainstalować ją bezpłatnie.
+    Jeśli program Visual Studio 2019 nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads) , aby zainstalować ją bezpłatnie.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Jeśli program Visual Studio 2017 nie został jeszcze zainstalowany, przejdź do strony  [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download), aby zainstalować ją bezpłatnie.
+    Jeśli program Visual Studio 2017 nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) , aby zainstalować ją bezpłatnie.
     ::: moniker-end
 
-    Jeśli musisz zainstalować obciążenie, ale masz już program Visual Studio, przejdź do pozycji **Narzędzia** > **Pobierz narzędzia i funkcje..** ., co spowoduje otwarcie Instalator programu Visual Studio. Wybierz **programowania Node.js** obciążenia, wybierz **Modyfikuj**.
+    Jeśli musisz zainstalować obciążenie, ale masz już program Visual Studio, przejdź do pozycji **narzędzia** > **Pobierz narzędzia i funkcje..** ., co spowoduje otwarcie Instalator programu Visual Studio. Wybierz **programowania Node.js** obciążenia, wybierz **Modyfikuj**.
 
     ![Obciążenie node.js w Instalatorze programu VS](../ide/media/quickstart-nodejs-workload.png)
 
@@ -81,19 +81,19 @@ Najpierw utworzysz projekt aplikacji sieci Web środowiska Node. js.
 
    ![Wiersz polecenia środowiska Node. js](../ide/media/quickstart-nodejs-command-prompt.png)
 
-1. W pliku *Server. js* w edytorze (po lewej stronie), wybierz `http.createServer` , a następnie naciśnij klawisz **F12** lub wybierz **Przejdź do definicji** z menu kontekstowego (kliknij prawym przyciskiem myszy). To polecenie umożliwia przejście do definicji `createServer` funkcji w indeksie *. d. TS*.
+1. W pliku *Server. js* w edytorze (po lewej stronie) wybierz `http.createServer` a następnie naciśnij klawisz **F12** lub wybierz **Przejdź do definicji** z menu kontekstowego (kliknij prawym przyciskiem myszy). To polecenie umożliwia przejście do definicji funkcji `createServer` w *indeksie. d. TS*.
 
    ![Menu kontekstowe przejdź do definicji](../ide/media/quickstart-nodejs-gotodefinition.png)
 
-1. Odwróć do *serwera Server. js*, a następnie umieść kursor na końcu ciągu w tym wierszu kodu `res.end('Hello World\n');`i zmodyfikuj go tak, aby wyglądał następująco:
+1. Odwróć do *serwera Server. js*, a następnie umieść kursor na końcu ciągu w tym wierszu kodu, `res.end('Hello World\n');`i zmodyfikuj go tak, aby wyglądał następująco:
 
     `res.end('Hello World\n' + res.connection.`
 
-    Gdy wpiszesz `connection.`, technologia IntelliSense udostępnia opcje do autouzupełniania wpisu kodu.
+    W przypadku wpisywania `connection.`technologia IntelliSense udostępnia opcje Autouzupełniania wpisu kodu.
 
    ![Funkcja IntelliSense — Autouzupełnianie](../ide/media/quickstart-nodejs-intellisense.png)
 
-1. Wybierz pozycję **localport**, a następnie `);` wpisz, aby zakończyć instrukcję, tak aby wyglądała następująco:
+1. Wybierz pozycję **localport**, a następnie wpisz `);`, aby zakończyć instrukcję, tak aby wyglądała następująco:
 
     `res.end('Hello World\n' + res.connection.localPort);`
 

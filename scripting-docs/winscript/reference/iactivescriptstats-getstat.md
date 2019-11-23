@@ -41,7 +41,7 @@ HRESULT GetStat(
  `stid`  
  podczas Określa, która Statystyka ma zostać zwrócona. Musi być wartością:  
   
-|Stała|Wartość|Opis|  
+|Stała|Value|Opis|  
 |--------------|-----------|-----------------|  
 |SCRIPTSTAT_STATEMENT_COUNT|1|Zwróć liczbę instrukcji wykonanych od momentu uruchomienia skryptu lub wartości statystycznych, które zostały zresetowane.|  
   
@@ -51,10 +51,10 @@ HRESULT GetStat(
  `pluLo`  
  określoną Niska 32 bitów z 64-bitową liczbą całkowitą bez znaku reprezentującą statystykę.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Możliwe wartości obejmują, ale nie są ograniczone do wartości w poniższej tabeli.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
@@ -62,5 +62,5 @@ HRESULT GetStat(
  Ta metoda zwraca jedną z statystyk standardowego skryptu.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IActiveScriptStats:: GetStatEx](../../winscript/reference/iactivescriptstats-getstatex.md)    
+ [IActiveScriptStats::GetStatEx](../../winscript/reference/iactivescriptstats-getstatex.md)   
  [IActiveScriptStats, interfejs](../../winscript/reference/iactivescriptstats-interface.md)

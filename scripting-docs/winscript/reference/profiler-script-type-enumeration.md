@@ -1,5 +1,5 @@
 ---
-title: PROFILER_SCRIPT_TYPE, Wyliczenie | Microsoft Docs
+title: Wyliczenie PROFILER_SCRIPT_TYPE | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -36,7 +36,7 @@ typedef enum {
 } PROFILER_SCRIPT_TYPE;  
 ```  
   
-## <a name="members"></a>Elementy członkowskie  
+## <a name="members"></a>Members  
   
 |Element członkowski|Opis|  
 |------------|-----------------|  
@@ -46,7 +46,7 @@ typedef enum {
 |PROFILER_SCRIPT_TYPE_DOM|Określa wywołanie do Document Object Model (DOM) programu Internet Explorer, na przykład wywołanie metody `document.getElementById`.|  
   
 ## <a name="see-also"></a>Zobacz także  
- [Stałe, wyliczenia i struktury profilera aktywnego skryptu](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)    
- [IActiveScriptProfilerCallback:: ScriptCompiled](../../winscript/reference/iactivescriptprofilercallback-scriptcompiled.md)    
- [IActiveScriptProfilerCallback2:: OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md)    
+ [Stałe, wyliczenia i struktury profilera aktywnego skryptu](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)   
+ [IActiveScriptProfilerCallback::ScriptCompiled](../../winscript/reference/iactivescriptprofilercallback-scriptcompiled.md)   
+ [IActiveScriptProfilerCallback2::OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md)   
  [IActiveScriptProfilerCallback2::OnFunctionExitByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionexitbyname.md)

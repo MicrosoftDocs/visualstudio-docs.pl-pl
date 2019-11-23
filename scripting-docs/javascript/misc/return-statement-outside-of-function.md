@@ -42,6 +42,6 @@ return [ expression ];
 - Usuń instrukcję `return` z głównej treści kodu (zakres globalny).  
   
 ## <a name="see-also"></a>Zobacz także  
- [Return — instrukcja](../../javascript/reference/return-statement-javascript.md)    
- @No__t_1 [obiektu funkcji](../../javascript/reference/function-object-javascript.md)  
+ [Return — instrukcja](../../javascript/reference/return-statement-javascript.md)   
+   [obiektu funkcji](../../javascript/reference/function-object-javascript.md)  
  [caller, właściwość (Function)](../../javascript/reference/caller-property-function-javascript.md)

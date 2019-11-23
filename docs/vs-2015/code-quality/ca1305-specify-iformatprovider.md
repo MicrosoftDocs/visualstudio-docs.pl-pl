@@ -33,7 +33,7 @@ ms.locfileid: "72661444"
 |Zmiana kluczowa|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
- Metoda lub Konstruktor wywołuje jeden lub więcej elementów członkowskich, które mają przeciążenia, które akceptują <xref:System.IFormatProvider?displayProperty=fullName> parametru, a metoda lub Konstruktor nie wywołuje przeciążenia, które pobiera parametr <xref:System.IFormatProvider>. Ta reguła ignoruje wywołania [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] metod, które są udokumentowane jako ignorowanie parametru <xref:System.IFormatProvider> i dodatkowo następujące metody:
+ Metoda lub Konstruktor wywołuje jeden lub więcej elementów członkowskich, które mają przeciążenia, które akceptują parametr <xref:System.IFormatProvider?displayProperty=fullName>, a metoda lub Konstruktor nie wywołuje przeciążenia, które przyjmuje parametr <xref:System.IFormatProvider>. Ta reguła ignoruje wywołania [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] metod, które są udokumentowane jako ignorowanie parametru <xref:System.IFormatProvider> i dodatkowo następujące metody:
 
 - <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>
 
@@ -61,7 +61,7 @@ ms.locfileid: "72661444"
  Istnieje możliwość bezpiecznego pomijania ostrzeżenia z tej reguły, gdy jest to pewne, że domyślna wartość w obszarze domyślny język kultury/format jest poprawna, a łatwość utrzymania kodu nie jest ważnym priorytetem programistycznym.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie `BadMethod` powoduje dwa naruszenia tej reguły. `GoodMethod` koryguje pierwsze naruszenie, przekazując niezmienną kulturę do <xref:System.String.Compare%2A> i koryguje drugie naruszenie, przekazując bieżącą kulturę do <xref:System.String.ToLower%2A>, ponieważ `string3` jest wyświetlana użytkownikowi.
+ W poniższym przykładzie `BadMethod` powoduje dwa naruszenia tej reguły. `GoodMethod` koryguje pierwsze naruszenie, przekazując niezmienną kulturę do <xref:System.String.Compare%2A>i koryguje drugie naruszenie, przekazując bieżącą kulturę do <xref:System.String.ToLower%2A>, ponieważ `string3` jest wyświetlana użytkownikowi.
 
  [!code-csharp[FxCop.Globalization.CultureInfo#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Globalization.CultureInfo/cs/FxCop.Globalization.CultureInfo.cs#1)]
 
@@ -72,7 +72,7 @@ ms.locfileid: "72661444"
 
  Ten przykład generuje następujące dane wyjściowe.
 
- **6/4/1900 12:15:12 PM** 
+ **6/4/1900 12:15:12 PM**
 **06/04/1900 12:15:12**
 ## <a name="related-rules"></a>Powiązane reguły
  [CA1304: Określ klasę CultureInfo](../code-quality/ca1304-specify-cultureinfo.md)

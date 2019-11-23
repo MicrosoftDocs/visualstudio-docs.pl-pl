@@ -41,7 +41,7 @@ typedef struct DebugPropertyInfo{
 };  
 ```  
   
-## <a name="members"></a>Elementy członkowskie  
+## <a name="members"></a>Members  
  dwValidFields  
  Wyliczany typ danych służący do określania, które pola są inicjowane.  
   
@@ -61,9 +61,9 @@ typedef struct DebugPropertyInfo{
  Wyliczenie określające flagi dla atrybutów właściwości debugowania.  
   
  pDebugProp  
- @No__t_0 opisany przez informacje zawarte w tej strukturze `DebugPropertyInfo`.  
+ `IDebugProperty` opisany przez informacje zawarte w tej strukturze `DebugPropertyInfo`.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IDebugProperty   interfejsu](../../winscript/reference/idebugproperty-interface.md)  
- [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)    
+ [IDebugProperty  interfejsu](../../winscript/reference/idebugproperty-interface.md)  
+ [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)   
  [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)

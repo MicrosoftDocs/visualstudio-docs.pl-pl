@@ -29,6 +29,6 @@ Struktura ciągu wyszukiwania narusza co najmniej jedną regułę gramatyczną [
 - Upewnij się, że struktura ciągu wyszukiwania wyrażenia regularnego jest zgodna z składnią wyrażenia regularnego [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
 ## <a name="see-also"></a>Zobacz także  
- @No__t_1 [obiektu wyrażenia regularnego](../../javascript/reference/regular-expression-object-javascript.md)  
- [Składnia wyrażeń regularnych (JavaScript)](https://msdn.microsoft.com/library/1400241x)    
+   [obiektu wyrażenia regularnego](../../javascript/reference/regular-expression-object-javascript.md)  
+ [Składnia wyrażeń regularnych (JavaScript)](https://msdn.microsoft.com/library/1400241x)   
  [compile, metoda (Regular Expression)](../../javascript/reference/compile-method-regular-expression-javascript.md)
