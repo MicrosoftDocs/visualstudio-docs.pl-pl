@@ -21,7 +21,7 @@ ms.lasthandoff: 10/28/2019
 ms.locfileid: "72985285"
 ---
 # <a name="iremotedebugapplication110getmainthread"></a>IRemoteDebugApplication110::GetMainThread
-Zwraca główny wątek dla hostów wywołujących metodę [SetSite](/windows/win32/api/ocidl/nf-ocidl-iobjectwithsite-setsite); w przeciwnym razie zwraca wartość E_FAIL.  
+Zwraca główny wątek dla hostów, które wywołują metodę [SetSite](/windows/win32/api/ocidl/nf-ocidl-iobjectwithsite-setsite), w przeciwnym razie zwraca E_FAIL.  
   
 > [!IMPORTANT]
 > [Interfejs IRemoteDebugApplication](../../winscript/reference/iremotedebugapplication-interface.md) jest implementowany przez PDM v 11.0 i nowsze. Znajduje się w zestawie activdbg100.h.  
@@ -37,5 +37,5 @@ HRESULT GetMainThread([out] IRemoteDebugApplicationThread **ppThread);
  określoną Główny [interfejs IRemoteDebugApplicationThread](../../winscript/reference/iremotedebugapplicationthread-interface.md).  
   
 ## <a name="see-also"></a>Zobacz także  
- [IRemoteDebugApplication   interfejsu](../../winscript/reference/iremotedebugapplication-interface.md)  
+ [IRemoteDebugApplication  interfejsu](../../winscript/reference/iremotedebugapplication-interface.md)  
  [IRemoteDebugApplication110, interfejs](../../winscript/reference/iremotedebugapplication110-interface.md)

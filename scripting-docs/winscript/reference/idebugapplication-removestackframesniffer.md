@@ -39,10 +39,10 @@ HRESULT RemoveStackFrameSniffer(
  `dwCookie`  
  podczas Plik cookie zwrócony przez metodę `AddStackFrameSniffer`, gdy został dodany dostawca modułu wyliczającego ramki stosu.  
   
-## <a name="return-value"></a>Wartość zwracana  
+## <a name="return-value"></a>Wartość zwrócona  
  Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
-|Wartość|Opis|  
+|Value|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
@@ -50,6 +50,6 @@ HRESULT RemoveStackFrameSniffer(
  Metoda `RemoveStackFrameSniffer` Usuwa dostawcę modułu wyliczającego ramki stosu z tej aplikacji.  
   
 ## <a name="see-also"></a>Zobacz także  
- [IDebugApplication:: AddStackFrameSniffer](../../winscript/reference/idebugapplication-addstackframesniffer.md)    
- [IDebugApplication   interfejsu](../../winscript/reference/idebugapplication-interface.md)  
+ [IDebugApplication::AddStackFrameSniffer](../../winscript/reference/idebugapplication-addstackframesniffer.md)   
+ [IDebugApplication  interfejsu](../../winscript/reference/idebugapplication-interface.md)  
  [IDebugStackFrameSniffer, interfejs](../../winscript/reference/idebugstackframesniffer-interface.md)
