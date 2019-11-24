@@ -24,73 +24,73 @@ ms.contentlocale: pl-PL
 ms.lasthandoff: 10/19/2019
 ms.locfileid: "72645831"
 ---
-# <a name="how-to-move-around-in-the-visual-studio-ide"></a>Instrukcje: poruszanie się w środowisku IDE programu Visual Studio
+# <a name="how-to-move-around-in-the-visual-studio-ide"></a>Porady: poruszanie się w środowisku IDE programu Visual Studio
 
-Zintegrowane środowisko programistyczne (IDE) zostało zaprojektowane z myślą o umożliwieniu przejścia z okna do okna i pliku do pliku na kilka różnych sposobów, w zależności od wymagań związanych z preferencjami lub projektem. Możesz wybrać przechodzenie między otwartymi plikami w edytorze lub przełączać się między wszystkimi aktywnymi oknami narzędzi w IDE. Możesz również przełączyć się bezpośrednio do dowolnego pliku otwartego w edytorze, niezależnie od kolejności, w której ostatnio uzyskano dostęp. Te funkcje mogą pomóc zwiększyć produktywność podczas pracy w środowisku IDE.
+Zintegrowanego środowiska programistycznego (IDE) został zaprojektowany umożliwia przenoszenie okna okna i plikami na kilka różnych sposobów, w zależności od wymagań preferencji lub projektu. Można przełączać się między otwartych plików w edytorze lub przechodzić przez wszystkie aktywne okna narzędzi w IDE. Możesz również przełączyć bezpośrednio do dowolnego otwartego pliku w edytorze, niezależnie od kolejności, w którym ostatniego dostępu. Te funkcje może pomóc zwiększyć produktywność podczas pracy w środowisku IDE.
 
 > [!NOTE]
-> Opcje dostępne w oknach dialogowych oraz nazwy i lokalizacje poleceń menu, które są widoczne, mogą się różnić od tego, co zostało opisane w tym artykule, w zależności od ustawień aktywnych lub wydania. Ten artykuł został zapisany z uwzględnieniem ustawień **ogólnych** . Aby zmienić ustawienia, na przykład **Ogólne** lub ustawienia **wizualizacji C++**  , wybierz pozycję **Narzędzia** > **Ustawienia importu i eksportu**, a następnie wybierz pozycję **Zresetuj wszystkie ustawienia**.
+> Dostępne opcje w oknach dialogowych i nazwy i lokalizacje poleceń menu, który zostanie wyświetlony, mogą różnić się z tym, co opisano w tym artykule, w zależności od ustawień aktywnych lub wersji. W tym artykule został napisany z **ogólne** ustawień na uwadze. Aby zmienić swoje ustawienia, na przykład aby **ogólne** lub **Visual C++** ustawienia, wybierz **narzędzia** > **Import i eksport ustawień**, a następnie wybierz **Resetuj wszystkie ustawienia**.
 
 ## <a name="keyboard-shortcuts"></a>Skróty klawiaturowe
 
-Niemal każde polecenie menu w programie Visual Studio ma skrót klawiaturowy. Możesz również utworzyć własne skróty niestandardowe. Aby uzyskać więcej informacji, zobacz [Identyfikowanie i Dostosowywanie skrótów klawiaturowych](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
+Prawie wszystkie polecenia menu w programie Visual Studio ma skrót klawiaturowy. Można również utworzyć własne skróty niestandardowe. Aby uzyskać więcej informacji, zobacz [identyfikowanie i dostosowywanie skrótów klawiaturowych](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
 
-## <a name="navigate-among-files-in-the-editor"></a>Nawigowanie między plikami w edytorze
+## <a name="navigate-among-files-in-the-editor"></a>Nawigowanie między pliki w edytorze
 
-Do przechodzenia między plikami otwartymi w edytorze można używać kilku metod. Można przechodzić między plikami w zależności od kolejności, w której uzyskuje się do nich dostęp, za pomocą Nawigatora IDE można szybko znaleźć dowolny plik, który jest aktualnie otwarty, lub przypinać Ulubione pliki do karty, aby były zawsze widoczne.
+Aby przeglądać pliki otwarte w edytorze, można użyć kilku metod. Możesz poruszać się między pliki w kolejności, w której możesz uzyskiwać do nich dostęp, użyj nawigatora środowiska IDE, aby szybko znaleźć żadnych plików, które są aktualnie otwarte lub numeru pin ulubionych plików do karty, również tak, że są one zawsze widoczne.
 
-Przejdź wstecz i przejdź do następnego cyklu, korzystając z otwartych plików w edytorze, na podstawie kolejności, w której były dostępne, podobnie jak wstecz i w przód — dla historii wyświetlania w programie Microsoft Internet Explorer.
+Przejdź wstecz i nawigować do przodu cyklu otwarte pliki w edytorze, na podstawie kolejności, w jakiej były używane, wiele kopii, takich jak i do przodu wobec Twojej historii przeglądania w programie Internet Explorer.
 
-### <a name="to-move-through-open-files-in-order-of-use"></a>Aby przejść przez otwarte pliki w kolejności użycia
+### <a name="to-move-through-open-files-in-order-of-use"></a>Aby przeglądać otwarte pliki w kolejności użycia
 
-- Aby uaktywnić otwarte dokumenty w kolejności, w której zostały ostatnio zmienione, naciśnij **klawisze Ctrl**+ **-** (łącznik).
+- Aby uaktywnić otwarte dokumenty w kolejności, w której zostały ostatnio zmienione, naciśnij klawisz **Ctrl**+ **-** (łącznik).
 
 - Aby uaktywnić otwarte dokumenty w kolejności odwrotnej, naciśnij **klawisze Ctrl**+**SHIFT**+ **-** (łącznik).
 
     > [!NOTE]
-    > **Przejdź do tyłu** i **Przejdź do przodu** w menu **Widok** .
+    > **Przejdź wstecz** i **Nawiguj do przodu** również znajduje się na **widoku** menu.
 
-Możesz również przełączyć się do określonego pliku otwartego w edytorze, niezależnie od tego, kiedy ostatnio uzyskano dostęp do pliku przy użyciu **Nawigatora IDE**, listy **aktywne pliki** w edytorze lub okna dialogowego **systemu Windows** .
+Możesz również przełączyć się do określonego pliku, Otwórz w edytorze, niezależnie od tego, kiedy ostatniego dostępu do pliku, przy użyciu **Nawigator IDE**, **aktywnych plików** listy w edytorze lub **Windows** okno dialogowe.
 
-**Nawigator IDE** działa podobnie jak przełącznik aplikacji systemu Windows. Nie jest on dostępny w menu i można uzyskać do niego dostęp tylko przy użyciu klawiszy skrótów. Możesz użyć jednego z dwóch poleceń, aby uzyskać dostęp do **Nawigatora IDE** (pokazanego poniżej) w celu przechodzenia przez pliki w zależności od kolejności, w której chcesz przeprowadzić cykl.
+**Nawigator IDE** działa podobnie do przełącznika aplikacji Windows. Nie jest dostępne z menu i jest możliwy tylko za pomocą klawiszy skrótów. Jedno z dwóch poleceń uzyskiwać dostęp do **Nawigator IDE** (pokazana poniżej), aby przechodzić między plików, w zależności od kolejności, w której chcesz przechodzić między.
 
-![Nawigator środowiska IDE programu Visual Studio](../ide/media/vs2015_ide_navigator.png)
+![Nawigator IDE programu Visual Studio](../ide/media/vs2015_ide_navigator.png)
 
-`Window.PreviousDocumentWindowNav` umożliwia przechodzenie do ostatniego dostępu do pliku, a `Window.NextDocumentWindowNav` umożliwia przechodzenie w odwrotnej kolejności. **Ogólne ustawienia programowania** przypisuje **SHIFT**+**Alt**+**f7** do `Window.PreviousDocumentWindowNav` i **Alt**+**F7** do 0.
+`Window.PreviousDocumentWindowNav` Umożliwia przeniesienie do pliku, który został ostatnio używane i `Window.NextDocumentWindowNav` umożliwia przeniesienie w odwrotnej kolejności. **Ogólnych ustawieniach projektowych** przypisuje **Shift**+**Alt**+**F7** do `Window.PreviousDocumentWindowNav` i **Alt**  + **F7** do `Window.NextDocumentWindowNav`.
 
 > [!NOTE]
-> Jeśli używana kombinacja ustawień nie ma już kombinacji klawiszy skrótu przypisanych do tego polecenia, możesz przypisać własne polecenie niestandardowe przy użyciu strony **Klawiatura** okna dialogowego **Opcje** . Aby uzyskać więcej informacji, zobacz [Identyfikowanie i Dostosowywanie skrótów klawiaturowych](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
+> Kombinację ustawień, którego używasz nie ma jeszcze kombinacji klawiszy skrótów, przypisany do tego polecenia, można przypisać własne niestandardowe polecenie wartości za pomocą **klawiatury** strony **opcje** okna dialogowego pole. Aby uzyskać więcej informacji, zobacz [identyfikowanie i dostosowywanie skrótów klawiaturowych](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
 
 ### <a name="to-switch-to-specific-files-in-the-editor"></a>Aby przełączyć się do określonych plików w edytorze
 
-- Naciśnij klawisz **Ctrl** +**kartę** , aby wyświetlić **Nawigator IDE**. Przytrzymaj wciśnięty klawisz **Ctrl** i naciskaj klawisz **Tab** do momentu wybrania pliku, do którego chcesz się przełączyć.
+- Naciśnij klawisz **Ctrl**+**kartę** do wyświetlenia **Nawigator IDE**. Naciśnij i przytrzymaj **Ctrl** klucz, a następnie naciśnij klawisz **kartę** aż do momentu, gdy wybierz plik, który chcesz przełączyć się do.
 
     > [!TIP]
-    > Aby odwrócić kolejność, w której można przejść przez listę **aktywnych plików** , przytrzymaj wciśnięty klawisz **Ctrl**+**SHIFT** i naciśnij klawisz **Tab**.
+    > Aby odwrócić kolejność, w którym można przejść przez **aktywnych plików** listy, naciśnij i przytrzymaj **Ctrl**+**Shift** kluczy, a następnie naciśnij klawisz **kartę**.
 
-    \- lub-
+    \- lub —
 
-- W prawym górnym rogu edytora wybierz przycisk **aktywne pliki** , a następnie wybierz plik z listy, aby przełączyć się na.
+- W prawym górnym rogu edytora wybierz **aktywnych plików** przycisk, a następnie wybierz plik z listy, aby przełączyć się do.
 
-    \- lub-
+    \- lub —
 
-- Na pasku menu wybierz **okno** > **Windows**.
+- Na pasku menu wybierz **okna** > **Windows**.
 
-- Z listy wybierz plik, który chcesz wyświetlić, a następnie wybierz pozycję **Aktywuj**.
+- Na liście, wybierz plik, który chcesz wyświetlić, a następnie wybierz **Aktywuj**.
 
-## <a name="navigate-among-tool-windows-in-the-ide"></a>Nawigowanie między oknami narzędzi w środowisku IDE
+## <a name="navigate-among-tool-windows-in-the-ide"></a>Przechodzenie między oknami narzędzi w IDE
 
-**Nawigator IDE** umożliwia również przechodzenie przez okna narzędzi, które zostały otwarte w środowisku IDE. Możesz użyć jednego z dwóch poleceń, aby uzyskać dostęp do **Nawigatora IDE** w celu przechodzenia przez okna narzędzi, w zależności od kolejności, w której chcesz przeprowadzić cykl. `Window.PreviousToolWindowNav` umożliwia przechodzenie do ostatniego dostępu do pliku, a `Window.NextToolWindowNav` umożliwia przechodzenie w odwrotnej kolejności. **Ogólne ustawienia programowania** przypisuje **SHIFT**+**Alt**+**f7** do `Window.PreviousDocumentWindowNav` i **Alt**+**F7** do 0.
+**Nawigator IDE** również otworzyć pozwala przechodzić do okna narzędzi, masz w środowisku IDE. Jedno z dwóch poleceń uzyskiwać dostęp do **Nawigator IDE** umożliwia przechodzenie między okien narzędzi w zależności od kolejności, w której chcesz przechodzić między. `Window.PreviousToolWindowNav` Umożliwia przeniesienie do pliku, który został ostatnio używane i `Window.NextToolWindowNav` umożliwia przeniesienie w odwrotnej kolejności. **Ogólnych ustawieniach projektowych** przypisuje **Shift**+**Alt**+**F7** do `Window.PreviousDocumentWindowNav` i **Alt**  + **F7** do `Window.NextDocumentWindowNav`.
 
 > [!NOTE]
-> Jeśli używana kombinacja ustawień nie ma już kombinacji klawiszy skrótu przypisanych do tego polecenia, możesz przypisać własne polecenie niestandardowe przy użyciu strony **Klawiatura** okna dialogowego **Opcje** . Aby uzyskać więcej informacji, zobacz [Identyfikowanie i Dostosowywanie skrótów klawiaturowych](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
+> Kombinację ustawień, którego używasz nie ma jeszcze kombinacji klawiszy skrótów, przypisany do tego polecenia, można przypisać własne niestandardowe polecenie wartości za pomocą **klawiatury** strony **opcje** okna dialogowego pole. Aby uzyskać więcej informacji, zobacz [identyfikowanie i dostosowywanie skrótów klawiaturowych](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
 
-### <a name="to-switch-to-a-specific-tool-window-in-the-ide"></a>Aby przełączyć się do określonego okna narzędzia w środowisku IDE
+### <a name="to-switch-to-a-specific-tool-window-in-the-ide"></a>Aby przełączyć się do okna narzędzi określonych w środowisku IDE
 
-- Naciśnij klawisz **Alt**+**F7** , aby wyświetlić **Nawigatora IDE**. Przytrzymaj klawisz **Alt** i naciśnij kilkakrotnie klawisz **F7** do momentu wybrania okna, do którego chcesz się przełączyć.
+- Naciśnij klawisz **Alt**+**F7** do wyświetlenia **Nawigator IDE**. Naciśnij i przytrzymaj **Alt** klucz, a następnie naciśnij klawisz **F7** aż do momentu, gdy wybierz okno, o których chcesz przełączyć się do.
 
     > [!TIP]
-    > Aby odwrócić kolejność, w której można przejść przez **aktywną listę okien narzędzi** , przytrzymaj wciśnięty klawisz **SHIFT**+**Alt** i naciśnij klawisz **F7**.
+    > Aby odwrócić kolejność, w którym można przejść przez **Active narzędzie Windows** listy, naciśnij i przytrzymaj **Shift**+**Alt** kluczy, a następnie naciśnij klawisz **F7**.
 
 ## <a name="see-also"></a>Zobacz także
 

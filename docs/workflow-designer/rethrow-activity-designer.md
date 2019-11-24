@@ -33,9 +33,9 @@ Dostęp do programu **Rethrow** Designer w kategorii **Obsługa błędów** w **
 
 W poniższej tabeli przedstawiono właściwości <xref:System.Activities.Statements.Rethrow> i opisano, jak są one używane w projektancie:
 
-|Nazwa właściwości|Wymagane|Użycie|
+|Nazwa właściwości|Wymagane|Sposób użycia|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Określa opcjonalną przyjazną nazwę działania <xref:System.Activities.Statements.Rethrow>. Wartość domyślna to Rethrow.|
+|<xref:System.Activities.Activity.DisplayName%2A>|Fałsz|Określa opcjonalną przyjazną nazwę działania <xref:System.Activities.Statements.Rethrow>. Wartość domyślna to Rethrow.|
 
 ## <a name="see-also"></a>Zobacz także
 

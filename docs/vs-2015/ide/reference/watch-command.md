@@ -24,7 +24,7 @@ ms.locfileid: "72604834"
 # <a name="watch-command"></a>Czujka — Polecenie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Tworzy i otwiera określone wystąpienie okna **czujka** . Można użyć okna **czujki** do obliczenia wartości zmiennych, wyrażeń i rejestrów, aby edytować te wartości i zapisać wyniki.
+Tworzy i otwiera określone wystąpienie **Obejrzyj** okna. Można użyć okna **czujki** do obliczenia wartości zmiennych, wyrażeń i rejestrów, aby edytować te wartości i zapisać wyniki.
 
 ## <a name="syntax"></a>Składnia
 
@@ -36,7 +36,7 @@ Debug.Watch[index]
  Wymagane `index`. Numer wystąpienia okna Czujka.
 
 ## <a name="remarks"></a>Uwagi
- @No__t_0 musi być liczbą całkowitą. Prawidłowe wartości to 1, 2, 3 lub 4.
+ `index` musi być liczbą całkowitą. Prawidłowe wartości to 1, 2, 3 lub 4.
 
 ## <a name="example"></a>Przykład
 

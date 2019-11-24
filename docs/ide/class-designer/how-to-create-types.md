@@ -34,13 +34,13 @@ Aby zaprojektować nowe C# typy dla projektów i Visual Basic, utwórz je na dia
 
     - **Klasa** lub **Klasa abstrakcyjna**
 
-    - **Podstawowe**
+    - **Enum**
 
-    - **Interfejsu**
+    - **Interface**
 
     - **Structure** (VB) lub **struct** (C#)
 
-    - **Wierz**
+    - **Delegate**
 
     - **Moduł** (tylko w języku VB)
 
