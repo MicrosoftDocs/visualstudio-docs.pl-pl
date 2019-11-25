@@ -1,44 +1,44 @@
 ### YamlMime:Hub
 title: Dokumentacja programu Visual Studio
-summary: Dowiedz się, jak używać programu Visual Studio do tworzenia aplikacji, usług i narzędzi w wybranym przez Ciebie języku dla platform i urządzeń.
+summary: Learn how to use Visual Studio to develop applications, services, and tools in the language of your choice, for your platforms and devices.
 brand: visual-studio
 metadata:
-  title: Dokumentacja programu Visual Studio | Microsoft Docs
+  title: Visual Studio documentation | Microsoft Docs
   titleSuffix: ''
-  description: Dowiedz się, jak używać programu Visual Studio do tworzenia aplikacji, usług i narzędzi w wybranym języku dla dowolnej platformy lub urządzenia.
+  description: Learn how to use Visual Studio to develop applications, services, and tools in the language of your choice, for any platform or device.
   ms.topic: hub-page
   monikerRange: '>=vs-2017'
   f1_keywords:
   - MSDNSTART
-  ms.openlocfilehash: 905fd0b3f9ad37125ae8cccd5dab30f0517d16a1
-  ms.sourcegitcommit: 890ae10c8ea3bff8306ed25b06256578dee08397
+  ms.openlocfilehash: 2b2fffb32ba16111449c2876769e70d9c687b976
+  ms.sourcegitcommit: e825d1223579b44ee2deb62baf4de0153f99242a
   ms.translationtype: MT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 11/15/2019
-  ms.locfileid: "74119731"
+  ms.lasthandoff: 11/25/2019
+  ms.locfileid: "74474004"
 highlightedContent:
   items:
-  - title: Instalacja i instalacja
+  - title: Setup and installation
     itemType: download
     url: /visualstudio/install/install-visual-studio
-  - title: Środowisko IDE programu Visual Studio — zapraszamy!
+  - title: Welcome to the Visual Studio IDE
     itemType: overview
     url: /visualstudio/ide/visual-studio-ide
   - title: Co nowego w programie Visual Studio 2019
     itemType: get-started
     url: /visualstudio/ide/whats-new-visual-studio-2019
-  - title: Popraw swoje umiejętności programistyczne
+  - title: Improve your development skills
     itemType: learn
     url: /learn/
 conceptualContent:
   title: Wprowadzenie
   items:
-  - title: Dowiedz się, jak używać programu Visual Studio
+  - title: Learn how to use Visual Studio
     links:
-    - text: Rozpocznij Przewodnik
+    - text: Start a guided tour
       url: ../ide/visual-studio-ide.md
       itemType: overview
-    - text: Otwieranie kodu z repozytorium
+    - text: Open code from a repo
       url: ../get-started/tutorial-open-project-from-repo.md
       itemType: tutorial
     - text: Pisanie i edytowanie kodu
@@ -50,10 +50,10 @@ conceptualContent:
     - text: Debugowanie kodu
       itemType: tutorial
       url: ../debugger/debugger-feature-tour.md
-    - text: Testowanie kodu
+    - text: Test your code
       itemType: tutorial
       url: ../test/getting-started-with-unit-testing.md
-    - text: Dostęp do danych lokalnie lub w chmurze
+    - text: Access data locally or in the cloud
       itemType: tutorial
       url: ../data-tools/create-a-sql-database-by-using-a-designer.md
   - title: Postępuj zgodnie z samouczkiem
@@ -78,19 +78,19 @@ conceptualContent:
       itemType: get-started
   - title: Tworzenie aplikacji
     links:
-    - text: Aplikacja klasyczna systemu Windows
+    - text: Windows desktop app
       itemType: tutorial
       url: /visualstudio/ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic
-    - text: Aplikacja uniwersalna systemu Windows
+    - text: Universal Windows app
       itemType: tutorial
       url: /visualstudio/get-started/csharp/tutorial-uwp
-    - text: Aplikacja mobilna
+    - text: Mobile app
       itemType: overview
       url: /visualstudio/cross-platform/cross-platform-mobile-development-in-visual-studio
-    - text: Gra Unity
+    - text: Unity game
       itemType: tutorial
       url: /visualstudio/cross-platform/getting-started-with-visual-studio-tools-for-unity
-    - text: Aplikacja internetowa z ASP.NET Core
+    - text: Web app with ASP.NET Core
       itemType: quickstart
       url: /aspnet/core/tutorials/razor-pages/razor-pages-start
 tools:
@@ -125,48 +125,48 @@ additionalContent:
   - title: Zadania
     items:
     - title: Programowanie
-      summary: Pisanie kodu i zarządzanie nim za pomocą edytora kodu.
+      summary: Write and manage your code using the code editor.
       url: ../ide/index-writing-code.yml
     - title: Kompilacja
-      summary: Kompiluj i Kompiluj kod źródłowy.
+      summary: Compile and build your source code.
       url: ../ide/compiling-and-building-in-visual-studio.md
     - title: Debugowanie
-      summary: Zbadaj i napraw usterki w kodzie.
+      summary: Investigate and fix bugs in your code.
       url: ../debugger/index.yml
     - title: Test
-      summary: Uruchom testy w projektach.
+      summary: Run tests on your projects.
       url: ../test/improve-code-quality.md
     - title: Deploy
-      summary: Udostępniaj swoje aplikacje i kod przy użyciu Web Deploy, InstallShield, NuGet, ciągłej integracji i nie tylko.
+      summary: Share your apps and code by using Web Deploy, InstallShield, NuGet, Continuous Integration, and more.
       url: ../deployment/index.yml
     - title: Kontrola wersji
       summary: Udostępniaj kod przy użyciu technologii kontroli wersji, takich jak Git i TFVC.
       url: /azure/devops/repos/index
     - title: DevOps
-      summary: Ciągle Kompiluj i zwalniaj aplikacje w chmurze i wdrażaj praktyki Agile przy użyciu Azure DevOps Services.
+      summary: Continuously build and release your apps in the cloud, and implement Agile practices with Azure DevOps Services.
       url: /azure/devops
-    - title: Mierzenie wydajności
-      summary: Identyfikowanie wąskich gardeł i Optymalizowanie wydajności kodu przy użyciu narzędzi diagnostycznych.
+    - title: Measure performance
+      summary: Identify bottlenecks and optimize code performance by using diagnostic tools.
       url: ../profiling/index.yml
-    - title: Sunąć
-      summary: Dodaj własne funkcje do środowiska IDE programu Visual Studio, aby ulepszyć środowisko programistyczne.
+    - title: Extend
+      summary: Add your own functionality to the Visual Studio IDE to improve your development experience.
       url: ../extensibility/index.md
     - title: Dane
-      summary: Twórz aplikacje do obsługi danych, które łączą się z dowolną bazą danych lub usługą, i w dowolnym miejscu — lokalnie lub w chmurze.
+      summary: Create data apps that connect to any database or service, and anywhere—local or cloud.
       url: ../data-tools/accessing-data-in-visual-studio.md
     - title: Współpraca
-      summary: Udostępnianie, edytowanie i debugowanie kodu w środowisku współpracy w czasie rzeczywistym.
+      summary: Share, edit, and debug code in a collaborative, real-time environment.
       url: /visualstudio/liveshare/
-    - title: Programowanie przy użyciu kontenerów
-      summary: Użyj kontenerów, aby wyizolować składniki modularne i zwiększyć skalowalność.
+    - title: Develop with Docker containers
+      summary: Use Docker containers to isolate modular components and improve scalability.
       url: ../containers/index.yml
   - title: Pakiety robocze
     items:
-    - title: Sieć Web i chmura
+    - title: Web and cloud
       links:
-      - text: Programowanie dla sieci Web
+      - text: Web development
         url: /aspnet/
-      - text: Projektowanie i zarządzanie na platformie Azure
+      - text: Azure development and management
         url: /visualstudio/azure
       - text: Python
         url: /visualstudio/python
@@ -174,37 +174,37 @@ additionalContent:
         url: /visualstudio/javascript
       - text: Magazynowanie i przetwarzanie danych
         url: ../data-tools/index.md
-      - text: Analiza danych
+      - text: Data science
         url: ../python/data-science-and-analytical-applications-workload.md
-      - text: Programowanie Office/SharePoint
+      - text: Office/Sharepoint development
         url: https://developer.microsoft.com/office/docs
     - title: Windows
       links:
-      - text: Programowanie aplikacji klasycznych dla platformy .NET
+      - text: .NET Desktop development
         url: /dotnet/framework/develop-client-apps
-      - text: Programowanie dla platformy uniwersalnej systemu Windows
+      - text: Universal Windows platform development
         url: ../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md
-      - text: Programowanie dla systemu Windows za pomocąC++
+      - text: Windows development with C++
         url: /cpp/windows/desktop-applications-visual-cpp
-    - title: Urządzenia przenośne i gry
+    - title: Mobile and gaming
       links:
-      - text: Programowanie aplikacji mobilnych przy użyciu platformy .NET (Xamarin)
+      - text: Mobile development with .NET (Xamarin)
         url: /xamarin/
-      - text: Programowanie gier za pomocą aparatu Unity
+      - text: Game development with Unity
         url: ../cross-platform/visual-studio-tools-for-unity.md
-      - text: Programowanie aplikacji mobilnych za pomocą języka JavaScript
+      - text: Mobile development with JavaScript
         url: /visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017
-        note: (Tylko programy Visual Studio 2017 i 2015)
-      - text: Programowanie aplikacji mobilnych za pomocąC++
+        note: (Visual Studio 2017 and 2015 only)
+      - text: Mobile development with C++
         url: /visualstudio/cross-platform/
-      - text: Programowanie gier za pomocąC++
+      - text: Game development with C++
         url: /windows/uwp/gaming/e2e
-    - title: Inne zestawy narzędzi
+    - title: Other toolsets
       links:
       - text: Programowanie rozszerzeń programu Visual Studio
         url: ../extensibility/index.md
-      - text: Programowanie dla systemu Linux za pomocąC++
+      - text: Linux development with C++
         url: /cpp/linux/
-      - text: Programowanie dla wielu platform w środowisku .NET Core
+      - text: .NET Core cross-platform development
         url: /dotnet/core/
-  footer: '[Blogi](https://devblogs.microsoft.com/visualstudio/) - [Twitter](https://twitter.com/VisualStudio) - [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-studio) - [wystaw zgłoszenie](../ide/talk-to-us.md) - [społeczność deweloperów](https://developercommunity.visualstudio.com/spaces/8/index.html)'
+  footer: '[Blogs](https://devblogs.microsoft.com/visualstudio/) - [Twitter](https://twitter.com/VisualStudio) - [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-studio) - [Issue Reporting](../ide/talk-to-us.md) - [Developer Community](https://developercommunity.visualstudio.com/spaces/8/index.html)'
