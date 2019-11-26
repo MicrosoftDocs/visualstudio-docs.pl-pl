@@ -98,7 +98,7 @@ ms.locfileid: "74295948"
 
 - <xref:System.Object.GetHashCode%2A>
 
-- [M:IEqualityComparer.GetHashCode(T)](https://go.microsoft.com/fwlink/?LinkId=113477)
+- [M:IEqualityComparer.GetHashCode (T)](https://go.microsoft.com/fwlink/?LinkId=113477)
 
   **GetHashCode** zawsze powinna zwracać wartość. W przeciwnym razie można utracić elementy w tabeli skrótów.
 

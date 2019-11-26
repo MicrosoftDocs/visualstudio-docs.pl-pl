@@ -48,7 +48,7 @@ Narzędzia do wizualizacji i modelowania w programie Visual Studio ułatwiają z
 
 ## <a name="external-resources"></a>Zasoby zewnętrzne
 
-|**Kategoria**|**Linki**|
+|**Kategorii**|**Linki**|
 |------------------|---------------|
 |**Dotyczące**|-   [Wizualizacja programu Visual Studio & narzędzia do modelowania](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [wizualizacji programu Visual Studio & Modeling SDK (narzędzia DSL)](https://go.microsoft.com/fwlink/?LinkId=184721)|
 |**Blogi**|[Blog programu Visual Studio ALM + Team Foundation Server](https://go.microsoft.com/fwlink/?LinkID=201340)|

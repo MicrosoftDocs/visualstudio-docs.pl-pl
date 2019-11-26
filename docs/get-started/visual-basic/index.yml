@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Visual Studio tutorials | Visual Basic
-summary: Create Visual Basic apps with Visual Studio.
+title: Samouczki programu Visual Studio | Visual Basic
+summary: Twórz aplikacje Visual Basic przy użyciu programu Visual Studio.
 metadata:
-  title: Visual Basic development with Visual Studio
-  description: Create Visual Basic apps by using Visual Studio.
+  title: Programowanie Visual Basic przy użyciu programu Visual Studio
+  description: Twórz aplikacje Visual Basic przy użyciu programu Visual Studio.
   ms.custom: seodec18
   ms.topic: landing-page
   ms.date: 11/19/2019
@@ -16,42 +16,42 @@ metadata:
   - VB
   ms.openlocfilehash: 3462f85ea571e163617c6c5f315a28c98342acab
   ms.sourcegitcommit: 8530d15aa72fe058ee3a3b4714c36b8638f8b494
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: pl-PL
   ms.lasthandoff: 11/19/2019
   ms.locfileid: "74188618"
 landingContent:
-- title: Wprowadzenie
+- title: Rozpoczęcie pracy
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Instalowanie programu Visual Studio
+    - text: Instalacja programu Visual Studio
       url: ../../install/install-visual-studio.md
   - linkListType: get-started
     links:
-    - text: Start a guided tour
+    - text: Rozpocznij Przewodnik
       url: visual-studio-ide.md
   - linkListType: quickstart
     links:
-    - text: Create a "Hello World" console app
+    - text: Tworzenie aplikacji konsolowej "Hello world"
       url: ../../ide/quickstart-visual-basic-console.md
-- title: Create Visual Basic apps
+- title: Tworzenie aplikacji Visual Basic
   linkLists:
   - linkListType: tutorial
     links:
-    - text: tworzenie aplikacji konsoli
+    - text: Tworzenie aplikacji konsoli
       url: tutorial-console.md
-    - text: Create a Windows Desktop app
+    - text: Tworzenie aplikacji klasycznej systemu Windows
       url: tutorial-wpf.md
     - text: Tworzenie aplikacji Windows Forms
       url: ../../ide/create-a-visual-basic-winform-in-visual-studio.md
-    - text: Learn about the Visual Basic language
+    - text: Dowiedz się więcej o języku Visual Basic
       url: /dotnet/visual-basic/developing-apps/programming/
-- title: Poznawanie programu Visual Studio
+- title: Poznaj program Visual Studio
   linkLists:
   - linkListType: tutorial
     links:
-    - text: Open code from a repo
+    - text: Otwieranie kodu z repozytorium
       url: ../tutorial-open-project-from-repo.md
     - text: Pisanie i edytowanie kodu
       url: tutorial-editor.md
@@ -59,7 +59,7 @@ landingContent:
       url: ../../ide/compiling-and-building-in-visual-studio.md
     - text: Debugowanie kodu
       url: ../csharp/tutorial-debugger.md
-    - text: Test your code
+    - text: Testowanie kodu
       url: ../../test/getting-started-with-unit-testing.md
   - linkListType: how-to-guide
     links:

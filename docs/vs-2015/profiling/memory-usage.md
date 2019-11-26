@@ -19,7 +19,7 @@ ms.locfileid: "74298367"
 # <a name="memory-usage"></a>Użycie pamięci
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Znajdowanie przecieków pamięci i niewydajnej pamięci podczas debugowania za pomocą narzędzia diagnostycznego **dotyczącego użycia pamięci** zintegrowanej z debugerem. Narzędzie umożliwia wykorzystanie pamięci, zapoznasz się z co najmniej jeden *migawek* sterty pamięci zarządzanego i natywnego. Można zbierać migawki .NET, Tryb natywny lub mieszany (.NET i natywny) aplikacji.  
+Znajdowanie przecieków pamięci i niewydajnej pamięci podczas debugowania za pomocą narzędzia diagnostycznego **dotyczącego użycia pamięci** zintegrowanej z debugerem. Narzędzie użycie pamięci umożliwia wykonanie co najmniej jednej *migawki* zarządzanego i natywnego sterty pamięci. Można zbierać migawki .NET, Tryb natywny lub mieszany (.NET i natywny) aplikacji.  
   
 - Możesz analizować pojedynczej migawki zrozumieć konsekwencje typów obiektów na wykorzystanie pamięci i znaleźć kod w swojej aplikacji, która używa pamięci nieefektywne.  
   
@@ -29,12 +29,12 @@ Znajdowanie przecieków pamięci i niewydajnej pamięci podczas debugowania za p
   
   ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools — Update1")  
   
-  Mimo że można zbierać migawki pamięci w dowolnym momencie **użycie pamięci** narzędzie debugera programu Visual Studio można użyć do kontrolowania, jak aplikacja wykonuje podczas badania problemów z wydajnością. Ustawianie punktów przerwania, przechodzenie krok po kroku, Przerwij wszystko i inne akcje debuger może pomóc w skoncentrowaniu swoje badania wydajności ścieżki kodu, które są najbardziej odpowiednie. Wykonywanie tych akcji, gdy aplikacja jest uruchomiona, może wyeliminować hałas z kodu, który nie jest interesujący, i może znacząco skrócić czas, w którym można zdiagnozować problem.  
+  Chociaż w dowolnym momencie można zbierać migawki pamięci w narzędziu **użycie pamięci** , można użyć debugera programu Visual Studio, aby kontrolować sposób wykonywania aplikacji podczas badania problemów z wydajnością. Ustawianie punktów przerwania, przechodzenie krok po kroku, Przerwij wszystko i inne akcje debuger może pomóc w skoncentrowaniu swoje badania wydajności ścieżki kodu, które są najbardziej odpowiednie. Wykonywanie tych akcji, gdy aplikacja jest uruchomiona, może wyeliminować hałas z kodu, który nie jest interesujący, i może znacząco skrócić czas, w którym można zdiagnozować problem.  
   
   Można również użyć narzędzia pamięci poza debugerem. Zobacz [użycie pamięci bez debugowania](https://msdn.microsoft.com/library/8883bc5f-df86-4f84-aa2b-a21150f499b0).  
   
 > [!NOTE]
-> **Niestandardowe obsługi alokatora** profiler pamięci natywnej polega na zbieraniu alokacji [ETW](https://msdn.microsoft.com/library/windows/desktop/bb968803\(v=vs.85\).aspx) dane zdarzenia wyemitowane przez w czasie wykonywania.  Puli buforów w CRT i zestaw Windows SDK ma została oznaczona na poziomie źródła przechwycić swoje dane alokacji.  Jeśli piszesz własne przydziały, niż wszystkie funkcje, które zwracają wskaźnik do nowo przydzieloną pamięci sterty, mogą mieć [__declspec](https://msdn.microsoft.com/library/832db681-e8e1-41ca-b78c-cd9d265cdb87)(Alokator), jak pokazano w tym przykładzie dla elementu malloc:  
+> **Obsługa alokatora niestandardowego** Profiler pamięci natywnej działa przez zbieranie danych zdarzeń [ETW](https://msdn.microsoft.com/library/windows/desktop/bb968803\(v=vs.85\).aspx) alokacji emitowanych przez środowisko uruchomieniowe.  Puli buforów w CRT i zestaw Windows SDK ma została oznaczona na poziomie źródła przechwycić swoje dane alokacji.  Jeśli piszesz własne przydziały, niż wszystkie funkcje, które zwracają wskaźnik do nowo przydzieloną pamięci sterty, mogą mieć [__declspec](https://msdn.microsoft.com/library/832db681-e8e1-41ca-b78c-cd9d265cdb87)(Alokator), jak pokazano w tym przykładzie dla elementu malloc:  
 >   
 > `__declspec(allocator) void* myMalloc(size_t size)`  
   
@@ -83,11 +83,11 @@ Znajdowanie przecieków pamięci i niewydajnej pamięci podczas debugowania za p
   
  ![Debugowanie ścieżki raportów &#45; typów zarządzanych do katalogu głównego](../profiling/media/dbgdiag-mem-managedtypesreport-pathstoroot.png "DBGDIAG_MEM_ManagedTypesReport_PathsToRoot")  
   
- Górne okienko pokazuje liczbę i rozmiar typów w migawce, takich jak rozmiar wszystkich obiektów, które są przywoływane przez typ (**rozmiarze włącznie**).  
+ Górne okienko pokazuje liczbę i rozmiar typów w migawce, w tym rozmiar wszystkich obiektów, do których odwołuje się typ (**rozmiar włącznie**).  
   
- **Ścieżki do obiektu głównego** drzewa w dolnym okienku Wyświetla obiekty odwołujące się do typu wybranego w górnym okienku. Moduł zbierający elementy bezużyteczne .NET Framework Czyści pamięć dla obiektu, tylko wtedy, gdy ostatni typ, który odwołuje się do niej po udostępnieniu.  
+ **Ścieżki do drzewa głównego** w dolnym okienku wyświetla obiekty odwołujące się do typu wybranego w górnym okienku. Moduł zbierający elementy bezużyteczne .NET Framework Czyści pamięć dla obiektu, tylko wtedy, gdy ostatni typ, który odwołuje się do niej po udostępnieniu.  
   
- **Przywoływane typy** drzewa Wyświetla odwołania, które są przechowywane w wybranego w górnym okienku typu.  
+ Drzewo **typów, do których** istnieją odwołania, zawiera odwołania, które są przechowywane przez typ wybrany w górnym okienku.  
   
  ![Widok raportu typów zarządzanych eferenced](../profiling/media/dbgdiag-mem-managedtypesreport-referencedtypes.png "DBGDIAG_MEM_ManagedTypesReport_ReferencedTypes")  
   
@@ -95,36 +95,36 @@ Znajdowanie przecieków pamięci i niewydajnej pamięci podczas debugowania za p
   
  ![Widok wystąpień](../profiling/media/dbgdiag-mem-managedtypesreport-instances.png "DBGDIAG_MEM_ManagedTypesReport_Instances")  
   
- **Wystąpień** widoku wystąpienia wybranego obiektu są wyświetlane w migawce w górnym okienku. Okienko ścieżki do katalogu głównego i przywoływanych obiektów wyświetla obiekty odwołujące się do wybranego wystąpienia i typy, do których odwołuje się wybrane wystąpienie. Gdy debuger zostanie zatrzymany w punkcie, w którym zrobiono migawkę, możesz umieścić wskaźnik myszy nad komórką wartości, aby wyświetlić wartości obiektu w etykietce narzędzia.  
+ Widok **wystąpienia** wyświetla wystąpienia wybranego obiektu w migawce w górnym okienku. Okienko ścieżki do katalogu głównego i przywoływanych obiektów wyświetla obiekty odwołujące się do wybranego wystąpienia i typy, do których odwołuje się wybrane wystąpienie. Gdy debuger zostanie zatrzymany w punkcie, w którym zrobiono migawkę, możesz umieścić wskaźnik myszy nad komórką wartości, aby wyświetlić wartości obiektu w etykietce narzędzia.  
   
 ### <a name="native-type-reports"></a>Raporty w typie natywnym  
  Wybierz bieżące łącze **natywnej** lub natywnej komórki **rozmiaru sterty** w tabeli podsumowania użycia pamięci okna **Narzędzia diagnostyczne** .  
   
  ![Widok typu natywnego](../profiling/media/dbgdiag-mem-native-typesview.png "DBGDIAG_MEM_Native_TypesView")  
   
- **Widok typów** Wyświetla liczbę i rozmiar typów w migawce.  
+ **Widok typy** wyświetla liczbę i rozmiar typów w migawce.  
   
 - Wybierz ikonę wystąpienia (![ikona wystąpienia w kolumnie Typ obiektu](../misc/media/dbg-mma-instancesicon.png "DBG_MMA_InstancesIcon")) wybranego typu, aby wyświetlić informacje o obiektach wybranego typu w migawce.  
   
-     **Wystąpień** widok zawiera każde wystąpienie wybranego typu. Wybranie wystąpienia przedstawia stos wywołań, które spowodowało utworzenie wystąpienia w **stos wywołań alokacji** okienka.  
+     Widok **wystąpienia** wyświetla każde wystąpienie wybranego typu. Wybranie wystąpienia powoduje wyświetlenie stosu wywołań, który spowodowało utworzenie wystąpienia w okienku **stosu wywołań alokacji** .  
   
      ![Widok wystąpień](../profiling/media/dbgdiag-mem-native-instances.png "DBGDIAG_MEM_Native_Instances")  
   
-- Wybierz **widok stosów** w **tryb widoku** listy w celu wyświetlenia alokacji stosu dla wybranego typu.  
+- Wybierz **Widok stosów** na liście **tryb wyświetlania** , aby wyświetlić stos alokacji dla wybranego typu.  
   
      ![Widok stosów](../profiling/media/dbgdiag-mem-native-stacksview.png "DBGDIAG_MEM_Native_StacksView")  
   
 ### <a name="change-diff-reports"></a>Zmiany raportów (różnica)  
   
-- Wybierz łącze zmian w komórce tabeli podsumowania **użycie pamięci** karcie **narzędzia diagnostyczne** okna.  
+- Wybierz łącze Zmień w komórce tabeli podsumowującej karty **użycie pamięci** w oknie **Narzędzia diagnostyczne** .  
   
    ![Wybieranie zmiany &#40;w raporcie&#41;DIF f](../profiling/media/dbgdiag-mem-choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")  
   
-- Wybierz migawkę w **Porównaj z** raport zarządzane lub natywne listy.  
+- Wybierz migawkę na liście **Porównaj z** w raporcie zarządzanym lub natywnym.  
   
    ![Wybierz migawkę z listy Porównaj z](../profiling/media/dbgdiag-mem-choosecompareto.png "DBGDIAG_MEM_ChooseCompareTo")  
   
-  Raport zmiana dodaje kolumn (oznaczone **(różnica)** ) do podstawowej raport, który wyświetlenie różnicy między wartością podstawowy, migawki i migawki porównania. Oto jak wygląda raport różnicowy widoku typu natywnego:  
+  Raport zmiana dodaje kolumny (oznaczone atrybutem **(diff)** ) do raportu podstawowego, który pokazuje różnicę między podstawową wartością migawki a migawką porównania. Oto jak wygląda raport różnicowy widoku typu natywnego:  
   
   ![Typy natywne diff veiw](../profiling/media/dbgdiag-mem-native-typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")  
   

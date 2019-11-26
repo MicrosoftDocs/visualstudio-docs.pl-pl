@@ -41,7 +41,7 @@ Możesz użyć Edytuj i Kontynuuj w projektach wizualnych C++ . Zobacz [obsługi
 ## <a name="BKMK_Enable_or_disable_automatic_invocation_of_Edit_and_Continue"></a>Włącz lub wyłącz opcję Edytuj i Kontynuuj  
  Można wyłączyć automatyczne wywoływanie operacji Edytuj i Kontynuuj, jeśli wprowadzasz zmiany w kodzie, który nie ma być stosowany podczas bieżącej sesji debugowania. Możesz również ponownie włączyć automatyczne edytowanie i kontynuowanie.  
   
-1. Na **narzędzia** menu, wybierz **opcje**.  
+1. W menu **Narzędzia** wybierz polecenie **Opcje**.  
   
 2. W oknie dialogowym **Opcje** wybierz pozycję **debugowanie/ogólne**.  
   

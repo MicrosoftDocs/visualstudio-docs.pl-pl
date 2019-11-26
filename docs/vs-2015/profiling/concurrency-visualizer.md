@@ -43,7 +43,7 @@ UWAGA]
   
 ## <a name="related-topics"></a>Tematy pokrewne  
   
-|Stanowisko|Opis|  
+|Tytuł|Opis|  
 |-----------|-----------------|  
 |[Widok wykorzystania](../profiling/utilization-view.md)|Opisuje sposób wyświetlania i analizowania aktywności systemu na wszystkich procesorach.|  
 |[Widok wątków](../profiling/threads-view-parallel-performance.md)|Opisuje sposób analizowania interakcji między wątkami w programie.|  

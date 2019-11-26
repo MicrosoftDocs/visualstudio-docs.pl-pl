@@ -162,13 +162,13 @@ Program Visual Studio pomaga zrozumieć, omówić i komunikować się z potrzeba
 |Jak opracowywać kod zgodny z regułami biznesowymi|[Modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md)|
 
 ## <a name="QoSRequirements"></a>Opisywanie wymagań Quality of Service
- Istnieje kilka kategorii wymagań dotyczących jakości usług. Należą do nich następujące elementy:
+ Istnieje kilka kategorii wymagań dotyczących jakości usług. Są to następujące nazwy:
 
 - Wydajność
 
 - Zabezpieczenia
 
-- Użyteczność
+- Łatwość obsługi
 
 - Niezawodność
 

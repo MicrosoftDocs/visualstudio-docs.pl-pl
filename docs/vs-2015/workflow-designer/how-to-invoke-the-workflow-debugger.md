@@ -21,7 +21,7 @@ Ogólnie rzecz biorąc, można debugować przepływy pracy, podobnie jak debugow
 
 - Wybierz opcję **Dołącz do procesu** w menu **Debuguj** , aby wybrać uruchomiony proces hosta dla wystąpienia przepływu pracy. Ta procedura jest taka sama jak dołączanie do procesu hosta w kodzie zarządzanym.
 
-- Naciśnij klawisz **F5** uruchomione wystąpienie przepływu pracy lub będą nadal działać po został trafiony punkt przerwania.
+- Naciśnij klawisz **F5** , aby rozpocząć Uruchamianie wystąpienia przepływu pracy lub kontynuować działanie po trafieniu punktu przerwania.
 
 - Używaj zdalnego debugowania. Aby uzyskać informacje na temat korzystania z debugowania zdalnego, zobacz [How to: Enable Remote Debug](https://go.microsoft.com/fwlink/?LinkId=196257).
 
@@ -30,11 +30,11 @@ Ogólnie rzecz biorąc, można debugować przepływy pracy, podobnie jak debugow
 
 ### <a name="stepping-through-code"></a>Krokowe przechodzenie przez kod
 
-- **Wkrocz**: możesz wejść do czynności za pomocą **F11**. Debuger nie wchodzi do dowolnej procedury obsługi, który jest zdefiniowany. Jeśli żadna procedura obsługi nie jest zdefiniowany, Przekrocz działania lub za pomocą złożonych działań, które zawierają inne działania, wkroczenia do pierwszego działania wykonywania.
+- **Krok w**: możesz przejść do działania przy użyciu klawisza **F11**. Debuger nie wchodzi do dowolnej procedury obsługi, który jest zdefiniowany. Jeśli żadna procedura obsługi nie jest zdefiniowany, Przekrocz działania lub za pomocą złożonych działań, które zawierają inne działania, wkroczenia do pierwszego działania wykonywania.
 
 - **Wyjdź:** Możesz przejść do działania przy użyciu **klawisza Shift-F11**. Przechodzenie krok po kroku, poza działanie uruchamia bieżące działanie i jego element równorzędny działania ukończone. Debuger jest następnie przerywa w nadrzędnego bieżącego działania. Przy przechodzeniu od obsługi kodu, debuger przerywa na działaniu, z którą jest skojarzony program obsługi.
 
-- **Step Over**: użytkownik może przechodzić przez działanie przy użyciu **F10**. Podczas wykonywania stopniowego działania złożonego debuger przerwie się w pierwszym pliku podrzędnym działania złożonego. Podczas wykonywania stopniowego wstawiania niezłożonego, takiego jak działanie <xref:System.Activities.Statements.Assign>, debuger wykonuje działanie i skojarzone z nim procedury obsługi oraz przerwie w następnym działaniu. Jeśli wykonywane działanie jest ostatnim działaniem podrzędnym działania złożonego, po wykonaniu debuger przerwie w działaniu nadrzędnym.
+- **Przekroczenie: możesz**przekroczyć działanie, używając klawisza **F10**. Podczas wykonywania stopniowego działania złożonego debuger przerwie się w pierwszym pliku podrzędnym działania złożonego. Podczas wykonywania stopniowego wstawiania niezłożonego, takiego jak działanie <xref:System.Activities.Statements.Assign>, debuger wykonuje działanie i skojarzone z nim procedury obsługi oraz przerwie w następnym działaniu. Jeśli wykonywane działanie jest ostatnim działaniem podrzędnym działania złożonego, po wykonaniu debuger przerwie w działaniu nadrzędnym.
 
 ### <a name="debugging-with-f5"></a>Debugowanie za pomocą F5
 

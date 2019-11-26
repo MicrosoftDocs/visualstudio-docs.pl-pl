@@ -19,7 +19,7 @@ ms.locfileid: "74299854"
 # <a name="tutorial-3-create-a-matching-game"></a>Samouczek 3: Tworzenie gry w dopasowywanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W tym samouczku stworzysz grę w dopasowywanie, gdzie gracz musi dopasować pary ukrytych ikon. Dowiesz się, jak:
+W tym samouczku stworzysz grę w dopasowywanie, gdzie gracz musi dopasować pary ukrytych ikon. Omawiane kwestie:
 
 - Przechowywanie obiektów, takich jak ikony, w obiekcie `List`.
 
@@ -42,7 +42,7 @@ W tym samouczku stworzysz grę w dopasowywanie, gdzie gracz musi dopasować pary
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
-|Stanowisko|Opis|
+|Tytuł|Opis|
 |-----------|-----------------|
 |[Krok 1. Tworzenie projektu i dodawanie tabeli do formularza](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md)|Zacznij od utworzenia projektu i dodania kontrolki `TableLayoutPanel`, aby zachować poprawne wyrównywanie kontrolek.|
 |[Krok 2. Dodawanie obiektu Random i listy ikon](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)|Dodaj obiekt `Random` i obiekt `List`, aby utworzyć listę ikon.|

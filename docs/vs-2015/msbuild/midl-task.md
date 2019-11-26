@@ -94,7 +94,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), MI
     |-----------|--------------------------|  
     |**Opatrzon**|**/char podpisany**|  
     |**Bajt**|**/char bez znaku**|  
-    |**Ascii**|**/char ascii7**|  
+    |**ASCII**|**/char ascii7**|  
   
      Aby uzyskać więcej informacji, zobacz **/char** Option in "MIDL Command-Line Reference" w witrynie [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) w sieci Web.  
   
@@ -116,7 +116,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), MI
   
     |Wartość|Opcja wiersza polecenia|  
     |-----------|--------------------------|  
-    |**Brak**|**/Error brak**|  
+    |**Dawaj**|**/Error brak**|  
     |**EnableCustom**|**/Error**|  
     |**Całą**|**/Error wszystko**|  
   
@@ -172,8 +172,8 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), MI
   
     |Wartość|Opcja wiersza polecenia|  
     |-----------|--------------------------|  
-    |**Brak**|**/Client brak**|  
-    |**Stub**|**/Client**|  
+    |**Dawaj**|**/Client brak**|  
+    |**Szkieletu**|**/Client**|  
   
      Aby uzyskać więcej informacji, zobacz **/Client** Option in "MIDL Command-Line Reference" w witrynie [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) w sieci Web.  
   
@@ -187,8 +187,8 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), MI
   
     |Wartość|Opcja wiersza polecenia|  
     |-----------|--------------------------|  
-    |**Brak**|**/Server brak**|  
-    |**Stub**|**/Server — stub**|  
+    |**Dawaj**|**/Server brak**|  
+    |**Szkieletu**|**/Server — stub**|  
   
      Aby uzyskać więcej informacji, zobacz opcja **/Server** w artykule "MIDL w wierszu polecenia" w witrynie [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) w sieci Web.  
   
@@ -288,7 +288,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), MI
   
      Aby uzyskać więcej informacji, zobacz **/sstub** Option in "MIDL Command-Line Reference" w witrynie [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) w sieci Web. Zobacz również parametr **ClientStubFile** w tej tabeli.  
   
-- **Obiekt źródłowy**  
+- **Zewnętrz**  
   
      Wymagany `ITaskItem[]` parametr.  
   
@@ -305,10 +305,10 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), MI
     |Wartość|Opcja wiersza polecenia|  
     |-----------|--------------------------|  
     |**NotSet**|*\<brak >*|  
-    |**1**|**/Zp1**|  
-    |**2**|**/Zp2**|  
-    |**4**|**/Zp4**|  
-    |**8**|**/Zp8**|  
+    |**jedno**|**/ZP1**|  
+    |**dwóch**|**/Zp2**|  
+    |**czwart**|**/Zp4**|  
+    |**0,8**|**/ZP8**|  
   
      Aby uzyskać więcej informacji, zobacz **/ZP** Option in "MIDL Command-Line Reference" w witrynie [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) w sieci Web. Opcja **/ZP** jest równoważna z opcją **/Pack** i starszą opcją **/align** .  
   
@@ -339,9 +339,9 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), MI
     |Wartość|Opcja wiersza polecenia|  
     |-----------|--------------------------|  
     |**NotSet**|*\<brak >*|  
-    |**Win32**|**/ENV Win32**|  
+    |**System**|**/ENV Win32**|  
     |**Itanium**|**/ENV ia64**|  
-    |**X64**|**/ENV x64**|  
+    |**Procesorów**|**/ENV x64**|  
   
      Aby uzyskać więcej informacji, zobacz **/ENV** Option in "MIDL Command-Line Reference" w witrynie [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) w sieci Web.  
   
@@ -411,10 +411,10 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), MI
     |Wartość|Opcja wiersza polecenia|  
     |-----------|--------------------------|  
     |**0**|**/W0**|  
-    |**1**|**/W1**|  
-    |**2**|**/W2**|  
-    |**3**|**/W3**|  
-    |**4**|**/W4**|  
+    |**jedno**|**/W1**|  
+    |**dwóch**|**/W2**|  
+    |**r.3**|**/W3**|  
+    |**czwart**|**/W4**|  
   
      Aby uzyskać więcej informacji, zobacz " **/w** " w artykule "MIDL Command-Line Reference" w witrynie [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) w sieci Web. Zobacz również parametr **warnaserror —** w tej tabeli.  
   

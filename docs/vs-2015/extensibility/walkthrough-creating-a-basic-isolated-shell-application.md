@@ -25,7 +25,7 @@ ms.locfileid: "74291265"
 W tym instruktażu pokazano, jak utworzyć rozwiązanie izolowanej powłoki, dostosować okno Pomoc na temat narzędzia i utworzyć program instalacyjny, który zainstaluje izolowaną powłokę.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
- Aby skorzystać z tego przewodnika, należy zainstalować program Visual Studio SDK. Aby uzyskać więcej informacji, zobacz [programu Visual Studio SDK](../extensibility/visual-studio-sdk.md). Aby wdrożyć powłokę izolowaną, należy również użyć pakietu redystrybucyjnego programu Visual Studio Shell (izolowany).  
+ Aby skorzystać z tego przewodnika, należy zainstalować program Visual Studio SDK. Aby uzyskać więcej informacji, zobacz [Visual Studio SDK](../extensibility/visual-studio-sdk.md). Aby wdrożyć powłokę izolowaną, należy również użyć pakietu redystrybucyjnego programu Visual Studio Shell (izolowany).  
   
 ## <a name="creating-an-isolated-shell-solution"></a>Tworzenie rozwiązania izolowanej powłoki  
  W tej sekcji pokazano, jak utworzyć rozizolowane rozwiązanie powłoki przy użyciu szablonu projektu izolowanego programu Visual Studio Shell. Rozwiązanie zawiera następujące projekty:  

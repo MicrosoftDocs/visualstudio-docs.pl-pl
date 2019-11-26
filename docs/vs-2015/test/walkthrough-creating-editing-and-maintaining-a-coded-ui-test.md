@@ -29,7 +29,7 @@ Podręcznik pozwala utworzyć prostą aplikację Windows Presentation Foundation
 
 1. W menu **plik** wskaż polecenie **Nowy**, a następnie wybierz pozycję **projekt**.
 
-     **Nowy projekt** pojawi się okno dialogowe.
+     Pojawi się okno dialogowe **Nowy projekt** .
 
 2. W okienku **zainstalowane** rozwiń pozycję **Wizualizacja C#** , a następnie wybierz pozycję **pulpit systemu Windows**.
 
@@ -41,7 +41,7 @@ Podręcznik pozwala utworzyć prostą aplikację Windows Presentation Foundation
 
 6. Wybierz folder, w którym zapiszesz projekt. W polu tekstowym **Lokalizacja** wpisz nazwę folderu.
 
-7. Wybierz **OK**.
+7. Wybierz **przycisk OK**.
 
      Zostanie otwarty program The WPF Designer for Visual Studio i pojawi się główne okno projektu.
 
@@ -133,7 +133,7 @@ Podręcznik pozwala utworzyć prostą aplikację Windows Presentation Foundation
 
 5. W środkowym okienku wybierz szablon **projektu kodowanego testu interfejsu użytkownika** .
 
-6. Wybierz **OK**.
+6. Wybierz **przycisk OK**.
 
      W Eksplorator rozwiązań nowy projekt kodowanego testu interfejsu użytkownika o nazwie **CodedUITestProject1** jest dodawany do rozwiązania.
 
@@ -215,7 +215,7 @@ Podręcznik pozwala utworzyć prostą aplikację Windows Presentation Foundation
 
 7. Wybierz przycisk **Przenieś kod** na pasku narzędzi edytora kodowanego testu interfejsu użytkownika.
 
-8. Pojawi się okno dialogowe programu Microsoft Visual Studio. Zawiera ono ostrzeżenie, że metoda ta ma zostać przeniesiona z pliku UIMap.uitest do pliku UIMap.cs i nie będzie już można edytować metody za pomocą Edytora kodowanego testu interfejsu użytkownika. Wybierz **tak**.
+8. Pojawi się okno dialogowe programu Microsoft Visual Studio. Zawiera ono ostrzeżenie, że metoda ta ma zostać przeniesiona z pliku UIMap.uitest do pliku UIMap.cs i nie będzie już można edytować metody za pomocą Edytora kodowanego testu interfejsu użytkownika. Wybierz opcję **tak**.
 
      Metoda testu jest usuwana z pliku UIMap.uitest i nie jest już wyświetlana w okienku Akcje interfejsu użytkownika. Aby edytować przeniesiony plik testowy, otwórz plik UIMap.cs w Eksploratorze rozwiązań.
 
@@ -378,7 +378,7 @@ Podręcznik pozwala utworzyć prostą aplikację Windows Presentation Foundation
 ### <a name="hands-on-lab"></a>Ćwiczenia praktyczne
  [MSDN Virtual Lab: wprowadzenie do tworzenia kodowanych testów interfejsu użytkownika w programie Visual Studio 2010](https://go.microsoft.com/fwlink/?LinkID=22508)
 
-### <a name="faq"></a>Najczęściej zadawane pytania
+### <a name="faq"></a>Często zadawane pytania
  [Kodowane testy interfejsu użytkownika — często zadawane pytania — 1](https://go.microsoft.com/fwlink/?LinkID=230576)
 
  [Kodowane testy interfejsu użytkownika — często zadawane pytania — 2](https://go.microsoft.com/fwlink/?LinkID=230578)

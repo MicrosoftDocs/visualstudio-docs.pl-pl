@@ -25,7 +25,7 @@ Podczas tworzenia przeglądarki obrazów pierwszym krokiem jest utworzenie proje
 
 ### <a name="to-create-a-windows-forms-application-project"></a>Aby utworzyć projekt aplikacji Windows Forms
 
-1. Na pasku menu wybierz **pliku**, **New**, **projektu**. Okno dialogowe powinno wyglądać następująco.
+1. Na pasku menu wybierz **plik**, **Nowy**, **projekt**. Okno dialogowe powinno wyglądać następująco.
 
      ![Okno dialogowe Nowy projekt](../ide/media/newprojectdialogcallouts.png "NewProjectDialogCallouts") Nowy projekt — okno dialogowe
 

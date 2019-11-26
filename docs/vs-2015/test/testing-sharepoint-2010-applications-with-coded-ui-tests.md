@@ -20,7 +20,7 @@ ms.locfileid: "74298017"
 
 Dołączenie kodowanych testów interfejsu użytkownika w aplikacji SharePoint umożliwia sprawdzenie, czy cała aplikacja, w tym jej kontrolki interfejsu użytkownika, działa poprawnie. Kodowane testy interfejsu użytkownika mogą również sprawdzać wartości i logikę w interfejsie użytkowników.
 
- **Wymagania**
+ **Requirements**
 
 - Visual Studio Enterprise
 

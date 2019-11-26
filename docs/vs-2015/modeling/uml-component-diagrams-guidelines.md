@@ -82,7 +82,7 @@ W programie Visual Studio można narysować *diagram składników* , aby pokaza�
 
 1. Kliknij pozycję **składnik** w przyborniku, a następnie kliknij pustą część diagramu.
 
-     \- lub —
+     \- lub-
 
      Skopiuj i wklej istniejący składnik.
 
@@ -146,7 +146,7 @@ W programie Visual Studio można narysować *diagram składników* , aby pokaza�
 
 - Znajdź interfejs w **Eksploratorze modelu UML** , a następnie przeciągnij go z tego miejsca na składnik.
 
-     —lub—
+     lub
 
 - Skopiuj i wklej odwołanie do interfejsu z diagramu.
 
@@ -188,13 +188,13 @@ W programie Visual Studio można narysować *diagram składników* , aby pokaza�
 
          Nowy składnik jest tworzony w **Eksploratorze modelu UML**. Jest to typ nowej części.
 
-         \- lub —
+         \- lub-
 
          Przeciągnij istniejący składnik z Eksploratora modelu UML na składnik nadrzędny.
 
          Nowa część (3) pojawia się wewnątrz składnika nadrzędnego. Jego typem jest składnik przeciągnięty z Eksploratora modelu UML.
 
-         \- lub —
+         \- lub-
 
          Kliknij prawym przyciskiem myszy składnik, w diagramie lub w Eksploratorze modelu UML, a następnie kliknij polecenie **Kopiuj**.
 
@@ -206,7 +206,7 @@ W programie Visual Studio można narysować *diagram składników* , aby pokaza�
 
     3. Do nowej części możesz dodać interfejsy dostarczany i wymagany (4, 5). Kliknij wybrany **interfejs** lub narzędzie **interfejsu wymagane** , a następnie kliknij w części.
 
-         \- lub —
+         \- lub-
 
          Przeciągnij istniejący interfejs z **Eksploratora modelu UML** na część.
 

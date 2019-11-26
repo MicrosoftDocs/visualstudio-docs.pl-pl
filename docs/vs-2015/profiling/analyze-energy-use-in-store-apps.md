@@ -92,7 +92,7 @@ if (performance && performance.mark) {
 2. Wybierz pozycję **zużycie energii** , a następnie wybierz polecenie **Uruchom**.  
   
     > [!NOTE]
-    > Po uruchomieniu profilera **zużycia energii** może zostać wyświetlone okno **Kontrola konta użytkownika** z żądaniem uprawnienia do uruchomienia programu programu VsEtwCollector. exe. Wybierz **tak**.  
+    > Po uruchomieniu profilera **zużycia energii** może zostać wyświetlone okno **Kontrola konta użytkownika** z żądaniem uprawnienia do uruchomienia programu programu VsEtwCollector. exe. Wybierz opcję **tak**.  
   
 3. Zbadaj aplikację w celu zebrania danych.  
   

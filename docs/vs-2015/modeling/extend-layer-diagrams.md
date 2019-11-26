@@ -34,14 +34,14 @@ Można napisać kod, aby utworzyć i zaktualizować Diagramy warstw oraz sprawdz
 
 - [Weryfikacja kodu przy użyciu diagramów warstw](../modeling/validate-code-with-layer-diagrams.md)
 
-## <a name="prereqs"></a> Wymagania
+## <a name="prereqs"></a>Wymagania
  Na komputerze, na którym chcesz opracowywać rozszerzenia warstwy, muszą być zainstalowane następujące elementy:
 
-- Visual Studio
+- {1&gt;Visual Studio&lt;1}
 
 - [Visual Studio SDK](../extensibility/visual-studio-sdk.md)
 
-- [Modeling SDK for Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=48148)
+- [Modeling SDK dla programu Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=48148)
 
   Na komputerze, na którym chcesz uruchomić rozszerzenia warstwy, musi być zainstalowana odpowiednia wersja programu Visual Studio. Aby uzyskać więcej informacji, zobacz [Wdrażanie modelu warstwy](../modeling/deploy-a-layer-model-extension.md).
 

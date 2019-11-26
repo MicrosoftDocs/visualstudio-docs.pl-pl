@@ -114,7 +114,7 @@ W tym temacie objaśniono podstawowe pojęcia związane z definiowaniem i używa
 
 3. W eksperymentalnym wystąpieniu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]Otwórz plik modelu o nazwie **test** z **Eksplorator rozwiązań**.
 
-    \- lub —
+    \- lub-
 
     Kliknij prawym przyciskiem myszy projekt debugowanie, wskaż polecenie **Dodaj**, a następnie kliknij pozycję **element**. W oknie dialogowym **Dodaj element** wybierz typ pliku DSL.
 
@@ -164,7 +164,7 @@ W tym temacie objaśniono podstawowe pojęcia związane z definiowaniem i używa
 
 3. Kliknij pozycję **Przekształć wszystkie szablony** na pasku narzędzi **Eksplorator rozwiązań**.
 
-    \- lub —
+    \- lub-
 
     Kliknij prawym przyciskiem myszy szablony, które chcesz wygenerować ponownie, a następnie kliknij polecenie **Uruchom narzędzie niestandardowe**.
 
@@ -383,7 +383,7 @@ W tym temacie objaśniono podstawowe pojęcia związane z definiowaniem i używa
 
  Możesz użyć tej samej procedury, aby zainstalować DSL na własnym komputerze, aby nie trzeba było korzystać z eksperymentalnego wystąpienia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
- Aby uzyskać więcej informacji, zobacz [wdrażania rozwiązań języka dotyczącego określonej domeny](../modeling/deploying-domain-specific-language-solutions.md).
+ Aby uzyskać więcej informacji, zobacz [wdrażanie rozwiązań językowych właściwych dla domeny](../modeling/deploying-domain-specific-language-solutions.md).
 
 ## <a name="Reset"></a>Usuwanie starej eksperymentalnej językami DSL
  Jeśli utworzono eksperymentalne językami DSL, które nie są już potrzebne, możesz je usunąć z komputera, resetowanie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wystąpienie eksperymentalne.

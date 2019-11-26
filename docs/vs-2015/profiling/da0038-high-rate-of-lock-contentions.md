@@ -27,7 +27,7 @@ Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [DA0038: wy
   
 |||  
 |-|-|  
-|Identyfikator reguły|DA0038|  
+|Identyfikator zasady|DA0038|  
 |Kategoria|Użycie .NET Framework|  
 |Metoda profilowania|Sond<br /><br /> Oprzyrządowanie<br /><br /> Pamięć platformy .NET|  
 |Komunikat|Występuje wysoki współczynnik rywalizacji o blokadę platformy .NET. Sprawdź przyczynę rywalizacji o blokadę, uruchamiając profil współbieżności.|  

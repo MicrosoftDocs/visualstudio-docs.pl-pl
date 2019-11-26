@@ -140,7 +140,7 @@ Możesz tworzyć i edytować model UML za pomocą widoków udostępnianych przez
 
    - Naciśnij klawisz **Ctrl** i Przenieś koniec.
 
-     \- lub —
+     \- lub-
 
    - Kliknij prawym przyciskiem myszy łącznik, a następnie kliknij polecenie **Połącz ponownie**.
 
@@ -158,11 +158,11 @@ Możesz tworzyć i edytować model UML za pomocą widoków udostępnianych przez
 
 - Naciśnij i przytrzymaj klawisz **Ctrl** podczas obracania kółka myszy.
 
-     \- lub —
+     \- lub-
 
 - Naciśnij i przytrzymaj **klawisze Ctrl + Shift**, a następnie kliknij lewy lub prawy przycisk myszy.
 
-     \- lub —
+     \- lub-
 
 - Na pasku narzędzi **projektanci architektury** kliknij znak plusa ( **+** ) lub znak minus ( **-** ) lub wybierz poziom powiększenia.
 
@@ -173,7 +173,7 @@ Możesz tworzyć i edytować model UML za pomocą widoków udostępnianych przez
 
 1. Naciśnij **klawisze CTRL + F**.
 
-     \- lub —
+     \- lub-
 
      W menu **Edycja** wskaż polecenie **Znajdź i Zamień**, a następnie kliknij polecenie **szybkie znajdowanie**.
 
@@ -282,7 +282,7 @@ Możesz tworzyć i edytować model UML za pomocą widoków udostępnianych przez
 
 - Kliknij prawym przyciskiem myszy element na diagramie, a następnie kliknij polecenie **Usuń z diagramu**.
 
-  \- lub —
+  \- lub-
 
 - Kliknij element na diagramie, a następnie naciśnij klawisz **delete** .
 

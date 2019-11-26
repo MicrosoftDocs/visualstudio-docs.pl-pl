@@ -19,7 +19,7 @@ ms.locfileid: "74292543"
 # <a name="run-unit-tests-on-uml-extensions"></a>Uruchamianie testów jednostek dla rozszerzeń UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aby zapewnić stabilny kod przy użyciu kolejnych zmian, zalecamy napisać testy jednostkowe i wykonać je w ramach regularnego procesu kompilacji. Aby uzyskać więcej informacji, zobacz [swój kod testu jednostkowego](../test/unit-test-your-code.md). Aby skonfigurować testy dla rozszerzeń modelowania programu Visual Studio, potrzebne są pewne informacje. Podsumowanie:
+Aby zapewnić stabilny kod przy użyciu kolejnych zmian, zalecamy napisać testy jednostkowe i wykonać je w ramach regularnego procesu kompilacji. Aby uzyskać więcej informacji, zobacz [Unit Testing Code](../test/unit-test-your-code.md). Aby skonfigurować testy dla rozszerzeń modelowania programu Visual Studio, potrzebne są pewne informacje. Podsumowanie:
 
 - [Konfigurowanie testu jednostkowego dla rozszerzeń VSIX](#Host)
 
@@ -57,7 +57,7 @@ Aby zapewnić stabilny kod przy użyciu kolejnych zmian, zalecamy napisać testy
 
     1. **Projekt rozszerzenia UML.** Zwykle jest to tworzone przy użyciu poleceń, gestów lub szablonów projektu walidacji. Na przykład zobacz [Definiowanie polecenia menu na diagramie modelowania](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
 
-    2. **Projekt testu jednostkowego.** Aby uzyskać więcej informacji, zobacz [swój kod testu jednostkowego](../test/unit-test-your-code.md).
+    2. **Projekt testu jednostkowego.** Aby uzyskać więcej informacji, zobacz [Unit Testing Code](../test/unit-test-your-code.md).
 
 2. Utwórz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozwiązanie, które zawiera projekt modelowania UML. To rozwiązanie będzie używane jako początkowy stan testów. Powinna być oddzielona od rozwiązania, w którym piszesz rozszerzenie UML i jego testy jednostkowe. Aby uzyskać więcej informacji, zobacz [Tworzenie projektów i diagramów modelowania UML](../modeling/create-uml-modeling-projects-and-diagrams.md).
 
@@ -80,17 +80,17 @@ Aby zapewnić stabilny kod przy użyciu kolejnych zmian, zalecamy napisać testy
 
     - *Projekt rozszerzenia UML*
 
-    - **EnvDTE.dll**
+    - **EnvDTE. dll**
 
-    - **Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll**
+    - **Microsoft. VisualStudio. ArchitectureTools. rozszerzalność. dll**
 
-    - **Microsoft.VisualStudio.ComponentModelHost.dll**
+    - **Microsoft. VisualStudio. ComponentModelHost. dll**
 
-    - **Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll**
+    - **Microsoft. VisualStudio. QualityTools. UnitTestFramework. dll**
 
-    - **Microsoft.VisualStudio.Uml.Interfaces.dll**
+    - **Microsoft. VisualStudio. UML. Interfaces. dll**
 
-    - **Microsoft.VSSDK.TestHostFramework.dll**
+    - **Microsoft. VSSDK. TestHostFramework. dll**
 
 6. Oznacz atrybut `[HostType("VS IDE")]` do każdej metody testowej, w tym metod inicjacji.
 

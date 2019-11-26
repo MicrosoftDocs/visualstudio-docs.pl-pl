@@ -43,9 +43,9 @@ Aby upewnić się, że kod nie powoduje konfliktu z projektem, zweryfikuj swój 
 
    Znajdowanie kodu lub zależności, które wymagają pracy przy przenoszeniu kodu do innej architektury.
 
-  **Wymagania**
+  **Requirements**
 
-- Visual Studio
+- {1&gt;Visual Studio&lt;1}
 
 - Program Visual Studio na serwerze Team Foundation Build umożliwia automatyczne sprawdzanie poprawności kodu za pomocą Team Foundation Build
 
@@ -153,7 +153,7 @@ Aby upewnić się, że kod nie powoduje konfliktu z projektem, zweryfikuj swój 
 
   Te zadania umożliwiają zarządzanie błędami walidacji w oknie **Lista błędów** :
 
-|**To**|**Wykonaj następujące kroki**|
+|**Do**|**Wykonaj następujące kroki**|
 |------------|----------------------------|
 |Pomijanie wybranych błędów podczas walidacji|Kliknij prawym przyciskiem myszy jeden lub wiele wybranych błędów, wskaż **zarządzanie błędami walidacji**, a następnie kliknij przycisk **Pomiń błędy**.<br /><br /> Pominięte błędy są wyświetlane jako przekreślone. Przy następnym uruchomieniu walidacji te błędy nie pojawią się.<br /><br /> Pominięte błędy są śledzone w pliku .suppressions związanym z odpowiadającym im plikiem diagramu warstwowego.|
 |Zaprzestanie pomijania wybranych błędów|Kliknij prawym przyciskiem myszy wybrany pominięty błąd lub błędy, wskaż polecenie **Zarządzaj błędami walidacji**, a następnie kliknij przycisk **Zatrzymaj pomijanie błędów**.<br /><br /> Wybrane pominięte błędy pojawią się przy następnym uruchomieniu walidacji.|
@@ -171,7 +171,7 @@ Aby upewnić się, że kod nie powoduje konfliktu z projektem, zweryfikuj swój 
 <ValidateArchitecture>true</ValidateArchitecture>
 ```
 
- \- lub —
+ \- lub-
 
 1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt modelowania zawierający diagram lub diagram warstwy, a następnie kliknij polecenie **Właściwości**.
 
@@ -197,7 +197,7 @@ Aby upewnić się, że kod nie powoduje konfliktu z projektem, zweryfikuj swój 
 
    Aby uzyskać więcej informacji o błędach walidacji, zobacz [Omówienie i rozwiązywanie błędów walidacji warstwy](#UnderstandingValidationErrors). Aby uzyskać więcej informacji na temat [!INCLUDE[esprbuild](../includes/esprbuild-md.md)], zobacz:
 
-- [Kompiluj aplikację](/azure/devops/pipelines/index)
+- [Kompilowanie aplikacji](/azure/devops/pipelines/index)
 
 - [Użyj szablonu domyślnego dla procesu kompilacji](https://msdn.microsoft.com/library/43930b12-c21b-4599-a980-2995e3d16e31)
 
@@ -210,7 +210,7 @@ Aby upewnić się, że kod nie powoduje konfliktu z projektem, zweryfikuj swój 
 ## <a name="TroubleshootingValidation"></a>Rozwiązywanie problemów z walidacją warstwy
  W poniższej tabeli opisano problemy związane z walidacją warstwy i ich rozwiązania. Problemy te różnią się od błędów, które wynikają z konfliktów między kodem i projektem. Aby uzyskać więcej informacji o tych błędach, zobacz [Omówienie i rozwiązywanie błędów walidacji warstwy](#UnderstandingValidationErrors).
 
-|**Wykonaj**|**Możliwa przyczyna**|**Rozdzielczość**|
+|**Wykonaj**|**Możliwa przyczyna**|**Tłumaczenia**|
 |---------------|------------------------|--------------------|
 |Błędy walidacji nie występują w oczekiwany sposób.|Walidacja nie działa na diagramach warstwowych, które są kopiowane z innych diagramów warstwowych w Eksploratorze rozwiązań i które są w tym samym projekcie modelowania. Diagramy warstwowe kopiowane w ten sposób zawierają te same odwołania, co oryginalny diagram warstwowe.|Dodaj nowy diagram warstwowy do projektu modelowania.<br /><br /> Skopiuj elementy ze źródłowego diagramu warstwowego do nowego diagramu.|
 
@@ -225,7 +225,7 @@ Aby upewnić się, że kod nie powoduje konfliktu z projektem, zweryfikuj swój 
 
   W poniższej sekcji opisano składnię, która jest używana w tych błędach, wyjaśniono znaczenie tych błędów i zasugerowano, co można zrobić, aby je rozwiązać lub zarządzać nimi.
 
-|**Składnia**|**Opis**|
+|**Obowiązuje**|**Opis**|
 |----------------|---------------------|
 |*ArtifactN*(*ArtifactTypeN*)|*ArtifactN* to artefakt, który jest skojarzony z warstwą na diagramie warstwowym.<br /><br /> *ArtifactTypeN* jest typem *ArtifactN*, takim jak **Klasa** lub **Metoda**, na przykład:<br /><br /> MySolution.MyProject.MyClass.MyMethod(Metoda)|
 |*NamespaceNameN*|Nazwa przestrzeni nazw.|

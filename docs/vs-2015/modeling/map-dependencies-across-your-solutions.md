@@ -105,7 +105,7 @@ Aby zrozumieć zależności w kodzie, wizualizuj je poprzez tworzenie map kodu. 
 
 1. Otwórz menu **Architektura** i wybierz pozycję **Nowa mapa kodu**.
 
-     \- lub —
+     \- lub-
 
 2. Otwórz menu **plik** i wybierz polecenie **Nowy** , a następnie wybierz **plik**.
 
@@ -286,7 +286,7 @@ Aby zrozumieć zależności w kodzie, wizualizuj je poprzez tworzenie map kodu. 
 ## <a name="SeeSourceHeader"></a>Zobacz zależności między plikami C C++ i Source a plikami nagłówkowymi
  Jeśli chcesz utworzyć dokładniejsze mapy dla C++ projektów, ustaw dla tych projektów opcję **/fr**(przeglądanie informacji kompilatora). Zobacz [/fr,/fr (Create. Plik SBR)](https://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896). W przeciwnym razie pojawi się komunikat i monit o ustawienie tej opcji. Jeśli wybierzesz **OK**, spowoduje to ustawienie opcji tylko dla bieżącej mapy. Możesz wybrać opcję ukrycia komunikatu dla wszystkich późniejszych map. Jeśli ten komunikat zostanie ukryty, można go ponownie wyświetlić. Ustaw następujący klucz rejestru, aby `0` lub usunąć klucz:
 
- **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider : AutoEnableSbr**
+ **HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\14.0\NativeProvider: AutoEnableSbr**
 
  Po otwarciu rozwiązania, które zawiera projekty Visual C++, aktualizacja bazy danych w technologii IntelliSense może zająć trochę czasu. W tym czasie może nie być możliwe utworzenie map kodu dla plików nagłówkowych (. h lub `#include`), dopóki nie zakończy się aktualizowanie bazy danych IntelliSense. Można monitorować postęp uaktualnienia na pasku stanu programu Visual Studio. Aby rozwiązać problemy lub komunikaty wyświetlane z powodu wyłączenia niektórych ustawień IntelliSense, zobacz artykuł [Rozwiązywanie problemów z mapami C++ dla języka C i kodu](#Troubleshooting).
 
@@ -307,7 +307,7 @@ Aby zrozumieć zależności w kodzie, wizualizuj je poprzez tworzenie map kodu. 
 
   Te problemy mogą wystąpić podczas tworzenia map kodu dla języka C i C++ kodu:
 
-|**Wykonaj**|**Możliwa przyczyna**|**Rozdzielczość**|
+|**Wykonaj**|**Możliwa przyczyna**|**Tłumaczenia**|
 |---------------|------------------------|--------------------|
 |Nie można wygenerować mapy kodu.|Żadne projekty w rozwiązaniu nie zostały pomyślnie skompilowane.|Napraw błędy kompilacji, które wystąpiły, a następnie ponownie Wygeneruj mapę.|
 |[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] przestaje odpowiadać przy próbie wygenerowania mapy kodu z menu **architektury** .|Plik bazy danych programu (.pdb) może być uszkodzony.<br /><br /> Plik .pdb przechowuje informacje debugowania, takie jak typ, metoda i informacje o pliku źródłowym.|Kompiluj rozwiązanie ponownie, a następnie spróbuj jeszcze raz.|
@@ -329,7 +329,7 @@ Aby zrozumieć zależności w kodzie, wizualizuj je poprzez tworzenie map kodu. 
 
 - Wyłącz automatyczne dodawanie elementów nadrzędnych za pomocą przycisku **Dołącz rodziców** na pasku narzędzi mapy kodu.
 
-- Edytuj plik mapy kodu bezpośrednio, aby usunąć węzły i linki, które nie są potrzebne. Zmiana mapy nie ma wpływu na kod źródłowy. Zobacz [Dostosowanie map kodu przez edycję plików DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
+- Edytuj plik mapy kodu bezpośrednio, aby usunąć węzły i linki, które nie są potrzebne. Zmiana mapy nie ma wpływu na kod źródłowy. Aby dowiedzieć [się, jak dostosować mapy kodu, edytuj pliki DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
   ![Pomiń kompilację i Dołącz przyciski nadrzędne](../modeling/media/codemapsfilterskipbuildicons.png "CodeMapsFilterSkipBuildIcons")
 
@@ -344,7 +344,7 @@ Aby zrozumieć zależności w kodzie, wizualizuj je poprzez tworzenie map kodu. 
 ### <a name="share-the-map-with-other-visual-studio-users"></a>Udostępnianie mapy innym użytkownikom programu Visual Studio
  Użyj menu **plik** , aby zapisać mapę.
 
- —lub—
+ lub
 
  Aby zapisać mapę jako część określonego projektu, na pasku narzędzi Mapa wybierz pozycję **Udostępnij**, **przenieś** \<*CodeMapName*> **. dgml do**, a następnie wybierz projekt, w którym chcesz zapisać mapę.
 

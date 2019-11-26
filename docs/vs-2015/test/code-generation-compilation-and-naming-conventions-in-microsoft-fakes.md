@@ -20,11 +20,11 @@ ms.locfileid: "74300393"
 
 W tym temacie omówiono opcje i problemy związane z generowaniem kodu i kompilacjami oraz opisano konwencje nazewnictwa dla wygenerowanych typów, elementów członkowskich i parametrów.
 
- **Wymagania**
+ **Requirements**
 
 - Visual Studio Enterprise
 
-## <a name="BKMK_In_this_topic"></a> W tym temacie
+## <a name="BKMK_In_this_topic"></a>W tym temacie
  [Generowanie i kompilowanie kodu](#BKMK_Code_generation_and_compilation)
 
 - [Konfigurowanie generowania kodu dla wycinków](#BKMK_Configuring_code_generation_of_stubs) • [Filtrowanie typów](#BKMK_Type_filtering) • [zastępowanie klasami zastępczymi konkretne klasy i metody wirtualne](#BKMK_Stubbing_concrete_classes_and_virtual_methods) • [typy wewnętrzne](#BKMK_Internal_types) • [Optymalizacja czasów kompilacji](#BKMK_Optimizing_build_times) • [unikanie kolizji nazw zestawów](#BKMK_Avoiding_assembly_name_clashing)
@@ -74,23 +74,23 @@ W tym temacie omówiono opcje i problemy związane z generowaniem kodu i kompila
 
 - Filtry domyślnie wielkość liter; filtry dopasowują podciąg:
 
-     `el` pasuje do "hello"
+     `el` pasuje do "Hello"
 
 - Dodanie `!` na koniec filtru sprawia, że jest to precyzyjne dopasowanie uwzględniające wielkość liter:
 
-     `el!` nie pasuje do "hello"
+     `el!` nie pasuje do "Hello"
 
-     `hello!` pasuje do "hello"
+     `hello!` pasuje do "Hello"
 
 - Dodanie `*` na koniec filtru spowoduje, że pasuje do prefiksu ciągu:
 
-     `el*` nie pasuje do "hello"
+     `el*` nie pasuje do "Hello"
 
-     `he*` pasuje do "hello"
+     `he*` pasuje do "Hello"
 
 - Wiele filtrów na rozdzielonej średnikami liście zostanie połączonych jako alternatywa:
 
-     `el;wo` pasuje do "hello" i "world"
+     `el;wo` pasuje do "Hello" i "World"
 
 ### <a name="BKMK_Stubbing_concrete_classes_and_virtual_methods"></a>Zastępowanie klasami zastępczymi konkretne klasy i metody wirtualne
  Domyślnie typy namiastki są generowane dla wszystkich niezamkniętych klas. Istnieje możliwość ograniczenia typów zastępczych do klas abstrakcyjnych za pomocą pliku konfiguracji elementów sztucznych:
@@ -110,7 +110,7 @@ W tym temacie omówiono opcje i problemy związane z generowaniem kodu i kompila
 ```
 
 ### <a name="BKMK_Internal_types"></a>Typy wewnętrzne
- Generator kodu sztucznego będzie generować typy podkładek i typy zastępcze dla typów, które są widoczne dla wygenerowanego zestawu elementów sztucznych. Aby typy wewnętrzne zestawu typu shim były widoczne dla elementów sztucznych i zestaw testowy, należy dodać <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> atrybuty do kodu zestawu typu shim, który zwiększa widoczność w wygenerowanych zestawach fakes i zestawu testowego. Oto przykład:
+ Generator kodu sztucznego będzie generować typy podkładek i typy zastępcze dla typów, które są widoczne dla wygenerowanego zestawu elementów sztucznych. Aby zapewnić, że typy wewnętrzne zestawu zastąpionym podkładką były widoczne dla elementów sztucznych i zestawu testowego, Dodaj <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> atrybuty do kodu zestawu zastąpionym podkładką, który zapewnia widoczność wygenerowanego zestawu elementów sztucznych i zestawu testowego. Oto przykład:
 
 ```csharp
 // FileSystem\AssemblyInfo.cs
@@ -118,7 +118,7 @@ W tym temacie omówiono opcje i problemy związane z generowaniem kodu i kompila
 [assembly: InternalsVisibleTo("FileSystem.Tests")]
 ```
 
- **Typy wewnętrzne w zestawach o silnej nazwie**
+ **Typy wewnętrzne w zestawach silnie nazwanych**
 
  Jeśli zestaw zastąpionym podkładką ma silną nazwę i chcesz uzyskać dostęp do wewnętrznych typów zestawu:
 
@@ -136,13 +136,13 @@ W tym temacie omówiono opcje i problemy związane z generowaniem kodu i kompila
 
   Jeśli zestaw zastąpionym podkładką ma silną nazwę, struktura sztuczna będzie automatycznie silnie podpisywać wygenerowanego zestawu elementów sztucznych. Masz silny podpis zestawu testowego. Zobacz [Tworzenie i używanie zestawów o silnych nazwach](https://msdn.microsoft.com/library/ffbf6d9e-4a88-4a8a-9645-4ce0ee1ee5f9).
 
-  Struktura Fakes używa tego samego klucza do podpisywania wszystkich generowanych zestawów, więc ten fragment kodu jako punktu wyjścia służy do dodawania **InternalsVisibleTo** atrybutu zestawu pozorowanego w kodzie zestawu typu shim.
+  Struktura elementów sztucznych używa tego samego klucza do podpisywania wszystkich wygenerowanych zestawów, dlatego można użyć tego fragmentu jako punktu wyjścia do dodania atrybutu **InternalsVisibleTo** dla zestawu elementów sztucznych do kodu zestawu zastąpionym podkładką.
 
 ```csharp
 [assembly: InternalsVisibleTo("FileSystem.Fakes, PublicKey=0024000004800000940000000602000000240000525341310004000001000100e92decb949446f688ab9f6973436c535bf50acd1fd580495aae3f875aa4e4f663ca77908c63b7f0996977cb98fcfdb35e05aa2c842002703cad835473caac5ef14107e3a7fae01120a96558785f48319f66daabc862872b2c53f5ac11fa335c0165e202b4c011334c7bc8f4c4e570cf255190f4e3e2cbc9137ca57cb687947bc")]
 ```
 
- Można określić inny klucz publiczny zestawu Pozorowanego, taki jak klucz utworzony dla zestawu typu shim, podając pełną ścieżkę do **.snk** pliku, który zawiera klucz alternatywny jako `KeyFile` wartość atrybutu `Fakes` \\ `Compilation` elementu **.fakes** pliku. Na przykład:
+ Możesz określić inny klucz publiczny dla zestawu elementów sztucznych, taki jak klucz utworzony dla zestawu zastąpionym podkładką, określając pełną ścieżkę do pliku **. snk** , który zawiera klucz alternatywny jako wartość atrybutu `KeyFile` w `Fakes`\\`Compilation` elementu **.** Na przykład:
 
 ```xml
 <-- FileSystem.Fakes.fakes -->
@@ -152,7 +152,7 @@ W tym temacie omówiono opcje i problemy związane z generowaniem kodu i kompila
 
 ```
 
- Następnie trzeba użyć klucza publicznego alternatywna **.snk** pliku jako drugiego parametru atrybutu InternalVisibleTo do zestawu Pozorowanego w kodzie zestawu shimmed:
+ Następnie należy użyć klucza publicznego alternatywnego pliku **SNK** jako drugiego parametru atrybutu InternalVisibleTo dla zestawu elementów sztucznych w kodzie zestawu zastąpionym podkładką:
 
 ```csharp
 // FileSystem\AssemblyInfo.cs
@@ -162,7 +162,7 @@ W tym temacie omówiono opcje i problemy związane z generowaniem kodu i kompila
     PublicKey=<Test_assembly_public_key>)]
 ```
 
- W przykładzie powyżej wartości `Alternate_public_key` i `Test_assembly_public_key` może być taki sam.
+ W powyższym przykładzie wartości `Alternate_public_key` i `Test_assembly_public_key` mogą być takie same.
 
 ### <a name="BKMK_Optimizing_build_times"></a>Optymalizowanie czasów kompilacji
  Kompilacja zestawów pozornych może znacznie zwiększyć czas kompilacji. Generując zestawy pozorne dla zestawów .NET System i zestawów innych firm w osobnym scentralizowanym projekcie, można zminimalizować czas kompilacji. Ponieważ takie zestawy rzadko się zmieniają, można użyć ponownie wygenerowanych zestawów pozornych w innych projektach.
@@ -204,11 +204,11 @@ attribute of the Assembly element in the .fakes:
 ## <a name="BKMK_Fakes_naming_conventions"></a>Konwencje nazewnictwa elementów sztucznych
 
 ### <a name="BKMK_Shim_type_and_stub_type_naming_conventions"></a>Konwencje nazewnictwa typów i typów podkładki
- {1&gt;Przestrzenie nazw&lt;1}
+ **Przestrzenie nazw**
 
 - . Substytuty sufiks jest dodawany do przestrzeni nazw.
 
-   Na przykład `System.Fakes` przestrzeń nazw zawiera typy zastępcze z przestrzeni nazw System.
+   Na przykład `System.Fakes` przestrzeń nazw zawiera typy podkładki przestrzeni nazw System.
 
 - Global.Fakes zawiera typ pustej przestrzeni nazw.
 
@@ -222,41 +222,41 @@ attribute of the Assembly element in the .fakes:
 
    Na przykład StubIExample jest typem wycinka typu IExample.
 
-  **Argumenty typu i struktury typu zagnieżdżonego**
+  **Argumenty typu i struktury typów zagnieżdżonych**
 
 - Argumenty typu ogólnego są kopiowane.
 
 - Struktura typów zagnieżdżonych jest kopiowana dla typów zastępczych.
 
 ### <a name="BKMK_Shim_delegate_property_or_stub_delegate_field_naming_conventions"></a>Właściwość delegata podkładki lub konwencje nazewnictwa pól delegata
- **Podstawowe zasady** dla nazewnictwa pól, zaczynając od pustej nazwy:
+ **Podstawowe reguły** nazewnictwa pól, rozpoczynając od pustej nazwy:
 
 - Nazwa metody jest dołączana.
 
 - Jeśli nazwa metody jest jawną implementacją interfejsu, kropki są usuwane.
 
-- Jeśli metoda jest ogólna, `Of` *n* jest dołączana w przypadku gdy *n* jest to liczba argumentów metody ogólnej.
+- Jeśli metoda jest ogólna, dołączany jest `Of`*n* , gdzie *n* jest liczbą argumentów metody ogólnej.
 
   **Specjalne nazwy metod** , takie jak metody pobierającej właściwości lub Setters, są traktowane jak opisano w poniższej tabeli.
 
 |Jeśli metoda to...|Przykład|Dołączona nazwa metody|
 |-------------------|-------------|--------------------------|
-|A **konstruktora**|`.ctor`|`Constructor`|
-|Statyczna **konstruktora**|`.cctor`|`StaticConstructor`|
-|**Akcesor** przy użyciu metody nazwą składającą się z dwóch części oddzielonych "_" (np. metody pobierające właściwości)|*kind_name* (common wielkość liter, ale nie wymuszona przez ECMA)|*NameKind*, gdzie obie części zostały napisane wielkimi literami i zamienione|
-||Metoda pobierająca właściwości `Prop`|`PropGet`|
-||Metoda ustawiająca właściwości `Prop`|`PropSet`|
+|**Konstruktor**|`.ctor`|`Constructor`|
+|Statyczny **Konstruktor**|`.cctor`|`StaticConstructor`|
+|Metoda **dostępu** o nazwie metody składająca się z dwóch części oddzielonych znakami "_" (takich jak metody pobierające właściwości)|*kind_name* (przypadek typowy, ale nie wymuszony przez ECMA)|*NameKind*, gdzie obie części są pisane wielkimi literami i wymieniane|
+||Metoda pobierająca `Prop` właściwości|`PropGet`|
+||Metoda ustawiająca `Prop` właściwości|`PropSet`|
 ||Akcesor dodający zdarzenie|`Add`|
 ||Akcesor usuwający zdarzenie|`Remove`|
-|**Operator** składa się z dwóch części|`op_name`|`NameOp`|
+|**Operator** składający się z dwóch części|`op_name`|`NameOp`|
 |Na przykład: + — operator|`op_Add`|`AddOp`|
-|Aby uzyskać **operatora konwersji**, dołączany jest typ zwracany.|`T op_Implicit`|`ImplicitOpT`|
+|Dla **operatora konwersji**dołączany jest typ zwracany.|`T op_Implicit`|`ImplicitOpT`|
 
  **Uwagi**
 
-- **Gettery i settery indeksatorów** traktuje się podobnie do właściwości. Domyślna nazwa indeksatora to `Item`.
+- **Metody pobierające i metody ustawiające indeksatory** są traktowane podobnie do właściwości. Domyślna nazwa indeksatora jest `Item`.
 
-- **Typ parametru** nazwy są przekształcane i łączone.
+- Nazwy **typów parametrów** są przekształcane i łączone.
 
 - **Zwracany typ** jest ignorowany, chyba że istnieje niejednoznaczność przeciążenia. W takim przypadku zwracany typ jest dołączany na końcu nazwy
 
@@ -264,16 +264,16 @@ attribute of the Assembly element in the .fakes:
 
 |Biorąc pod uwagę|Dołączony ciąg to...|
 |-----------|-------------------------|
-|A **typu**`T`|T<br /><br /> Przestrzeń nazw, struktura zagnieżdżona i tiki ogólne, są opuszczane.|
-|**Parametr wyjściowy**`out T`|`TOut`|
-|A **parametr ref** `ref T`|`TRef`|
-|**Typu tablicy**`T[]`|`TArray`|
-|A **tablicy wielowymiarowej** typu `T[ , , ]`|`T3`|
-|A **wskaźnik** typu `T*`|`TPtr`|
-|A **typu ogólnego**`T<R1, …>`|`TOfR1`|
-|A **argument typu ogólnego** `!i` typu `C<TType>`|`Ti`|
-|A **argument metody ogólnej** `!!i` metody `M<MMethod>`|`Mi`|
-|A **zagnieżdżony typ**`N.T`|`N` jest dołączany, następnie `T`|
+|**Typ**`T`|T<br /><br /> Przestrzeń nazw, struktura zagnieżdżona i tiki ogólne, są opuszczane.|
+|`out T` **parametru out**|`TOut`|
+|**Parametr ref** `ref T`|`TRef`|
+|**Typ tablicy**`T[]`|`TArray`|
+|Typ **tablicy wielowymiarowej** `T[ , , ]`|`T3`|
+|Typ **wskaźnika** `T*`|`TPtr`|
+|**Typ ogólny**`T<R1, …>`|`TOfR1`|
+|**Argument typu ogólnego**`!i` typu `C<TType>`|`Ti`|
+|**Argument metody ogólnej**`!!i` metody `M<MMethod>`|`Mi`|
+|**Zagnieżdżony typ**`N.T`|`N` jest dołączany, a następnie `T`|
 
 ### <a name="BKMK_Recursive_rules"></a>Reguły cykliczne
  Następujące reguły są stosowane cyklicznie:

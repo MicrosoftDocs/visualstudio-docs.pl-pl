@@ -19,7 +19,7 @@ ms.locfileid: "74299909"
 # <a name="tutorial-1-create-a-picture-viewer"></a>Samouczek 1: Tworzenie podglądu obrazów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W tym samouczku utworzysz program, który ładuje obraz z pliku i wyświetla go w oknie. Dowiesz się, jak przeciągać formanty, takie jak przyciski i pola obrazu w formularzu, ustawiać ich właściwości i bezproblemowo zmieniać rozmiar formularza za pomocą kontenerów. Zacznij również pisać kod. Dowiesz się, jak:
+W tym samouczku utworzysz program, który ładuje obraz z pliku i wyświetla go w oknie. Dowiesz się, jak przeciągać formanty, takie jak przyciski i pola obrazu w formularzu, ustawiać ich właściwości i bezproblemowo zmieniać rozmiar formularza za pomocą kontenerów. Zacznij również pisać kod. Omawiane kwestie:
 
 - Utwórz nowy projekt.
 
@@ -50,7 +50,7 @@ W tym samouczku utworzysz program, który ładuje obraz z pliku i wyświetla go 
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
-|Stanowisko|Opis|
+|Tytuł|Opis|
 |-----------|-----------------|
 |[Krok 1. Tworzenie projektu aplikacji Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md)|Zacznij od utworzenia projektu aplikacji Windows Forms.|
 |[Krok 2. Uruchamianie programu](../ide/step-2-run-your-program.md)|Uruchom program aplikacji Windows Forms, który został utworzony w poprzednim kroku.|

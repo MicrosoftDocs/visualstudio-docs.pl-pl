@@ -55,7 +55,7 @@ Ustaw właściwość **propagowania kopii** roli w celu **propagowania kopii do 
  **Szybkie duplikowanie elementów przez kopiowanie i wklejanie.** Normalnie skopiowany element jest nadal zaznaczony i nie można wkleić tego samego typu elementu.
 Dodaj dyrektywę scalenia elementów do klasy domeny i ustaw ją na przekazanie do niej scalenia z klasą nadrzędną. Będzie to miało ten sam wpływ na operacje przeciągania. Aby uzyskać więcej informacji, zobacz [Dostosowywanie tworzenia i przenoszenia elementów](../modeling/customizing-element-creation-and-movement.md).
 
- \- lub —
+ \- lub-
 
  Przed wklejeniem elementów wybierz diagram, zastępując `ClipboardCommandSet.ProcessOnPasteCommand()`. Dodaj ten kod do pliku niestandardowego w projekcie DslPackage:
 
@@ -80,7 +80,7 @@ partial class MyDslClipboardCommandSet
  **Utwórz dodatkowe linki, gdy użytkownik wklei się w wybranym miejscu docelowym.** Na przykład po wklejeniu pola komentarza do elementu zostanie nawiązane połączenie między nimi.
 Dodaj dyrektywę scalenia elementów do klasy domena docelowa i ustaw ją, aby przetworzyć Scalanie przez dodanie linków. Będzie to miało ten sam wpływ na operacje przeciągania. Aby uzyskać więcej informacji, zobacz [Dostosowywanie tworzenia i przenoszenia elementów](../modeling/customizing-element-creation-and-movement.md).
 
- \- lub —
+ \- lub-
 
  Przesłoń `ClipboardCommandSet.ProcessOnPasteCommand()`, aby utworzyć dodatkowe linki po wywołaniu metody podstawowej.
 

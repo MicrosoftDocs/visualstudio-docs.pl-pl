@@ -722,9 +722,9 @@ W tym instruktażu pokazano, jak dodać właściwość śledzenia do modelu dome
 
 #### <a name="to-exercise-the-language"></a>Aby skorzystać z języka
 
-1. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
+1. W menu **kompilacja** kliknij polecenie **Kompiluj ponownie rozwiązanie**.
 
-2. Na **debugowania** menu, kliknij przycisk **Rozpocznij debugowanie**.
+2. W menu **debugowanie** kliknij **Rozpocznij debugowanie**.
 
      Eksperymentalna kompilacja [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] otwiera rozwiązanie **debugowania** , które zawiera pusty plik testowy.
 

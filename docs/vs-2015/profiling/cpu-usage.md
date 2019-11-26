@@ -59,18 +59,18 @@ Jeśli musisz zbadać problemy z wydajnością w aplikacji, dobrym miejscem do r
   
 ## <a name="analyze-the-cpu-usage-report"></a>Analizowanie raportu użycia procesora CPU  
   
-### <a name="BKMK_The_CPU_Usage_call_tree"></a> Użycie procesora CPU drzewo wywołań  
+### <a name="BKMK_The_CPU_Usage_call_tree"></a>Drzewo wywołań użycia procesora CPU  
  Aby rozpocząć zrozumienie informacji o drzewie wywołań, należy wybrać segment `GetMaxNumberButton_Click` i sprawdzić szczegóły drzewa wywołań.  
   
-#### <a name="BKMK_Call_tree_structure"></a> Struktura drzewa wywołań  
+#### <a name="BKMK_Call_tree_structure"></a>Struktura drzewa wywołań  
  ![GetMaxNumberButton&#95;kliknij pozycję drzewo wywołań](../profiling/media/cpu-use-wt-getmaxnumbercalltree-annotated.png "CPU_USE_WT_GetMaxNumberCallTree_annotated")  
   
 |||  
 |-|-|  
 |![Krok 1](../profiling/media/procguid-1.png "ProcGuid_1")|Węzeł najwyższego poziomu w drzewach wywołanie użycie procesora CPU jest pseudo-węzłem|  
-|![Krok 2](../profiling/media/procguid-2.png "ProcGuid_2")|W przypadku większości aplikacji gdy **Pokaż kod zewnętrzny** opcja jest wyłączona, węzeł drugiego poziomu, który jest **[kod zewnętrzny]** węzeł zawierający system i platforma kod, który uruchamia i zatrzymuje aplikację, rysuje interfejsu użytkownika kontroluje planowanie wątków i zapewnia inne niskopoziomowe usługi dla aplikacji.|  
+|![Krok 2](../profiling/media/procguid-2.png "ProcGuid_2")|W większości aplikacji, gdy opcja **Pokaż zewnętrzny kod** jest wyłączona, węzeł drugiego poziomu jest węzłem **[zewnętrzny kod]** zawierającym kod systemowy i program, który rozpoczyna i kończy działanie aplikacji, rysuje interfejs użytkownika, kontroluje planowanie wątków i udostępnia inne usługi niskiego poziomu aplikacji.|  
 |![Krok 3](../profiling/media/procguid-3.png "ProcGuid_3")|Elementy podrzędne węzła drugiego poziomu są asynchroniczne procedur, które są nazywane lub utworzonych przez system drugiego poziomu oraz kodu struktury i metody kod użytkownika.|  
-|![Krok 4](../profiling/media/procguid-4.png "ProcGuid_4")|Węzły podrzędne metody zawierają dane tylko w przypadku wywołania metody nadrzędnej. Gdy **Pokaż kod zewnętrzny** jest wyłączona, metody aplikacja może również zawierać **[kod zewnętrzny]** węzła.|  
+|![Krok 4](../profiling/media/procguid-4.png "ProcGuid_4")|Węzły podrzędne metody zawierają dane tylko w przypadku wywołania metody nadrzędnej. Gdy **Pokaż zewnętrzny kod** jest wyłączony, metody aplikacji mogą również zawierać węzeł **[kod zewnętrzny]** .|  
   
 #### <a name="BKMK_External_Code"></a>Kod zewnętrzny  
  Kod zewnętrzny to funkcje w składnikach system i Framework, które są wykonywane przez zapisanie kodu. Kod zewnętrzny obejmują funkcje, które Uruchom i Zatrzymaj aplikację, narysuj interfejsu użytkownika, kontrolować wątki i podaj inne niskopoziomowe usługi dla aplikacji. W większości przypadków nie jest interesujący kod zewnętrzny, dlatego drzewo wywołań użycia procesora zbiera funkcje zewnętrzne metody użytkownika w jednym węźle **[kod zewnętrzny]** .  
@@ -110,6 +110,6 @@ Jeśli musisz zbadać problemy z wydajnością w aplikacji, dobrym miejscem do r
   
 - `MainPage::GetMaxNumberAsyncButton_Click` działa bardzo mało; zarządza listą wartości zadania, oblicza maksymalną liczbę wyników i wyświetla dane wyjściowe.  
   
-- `MainPage+<GetMaxNumberAsyncButton_Click>d__3::MoveNext` Dowiesz się, działania wymagane do planowania i uruchamiania zadań 48, które opakować wywołanie `GetNumberAsync`.  
+- `MainPage+<GetMaxNumberAsyncButton_Click>d__3::MoveNext` przedstawia działanie wymagane do zaplanowania i uruchomienia zadań 48, które zawijają wywołanie do `GetNumberAsync`.  
   
 - `MainPage::<GetNumberAsync>b__b` pokazuje aktywność zadań, które wywołują `GetNumber`.

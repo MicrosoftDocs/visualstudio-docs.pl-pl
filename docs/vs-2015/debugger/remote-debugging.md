@@ -62,15 +62,15 @@ Jeśli próbujesz skopiować zdalny debuger (msvsmon. exe) do komputera zdalnego
 
 Zdalny debuger (**msvsmon. exe**) można znaleźć na komputerze, na którym jest już zainstalowany program Visual Studio 2015 Community, Professional lub Enterprise. W wielu scenariuszach Najprostszym sposobem skonfigurowania zdalnego debugowania jest uruchomienie zdalnego debugera (msvsmon. exe) z udziału plików. Aby uzyskać ograniczenia dotyczące użycia, zobacz stronę pomocy zdalnego debugera (**Pomoc/użycie** w debugerze zdalnym).
 
-1. Znajdź **msvsmon.exe** w katalogu, zgodny z używaną wersją programu Visual Studio. For Visual Studio 2015:
+1. Znajdź **msvsmon. exe** w katalogu pasującym do używanej wersji programu Visual Studio. For Visual Studio 2015:
 
       **Program Files\Microsoft Visual Studio 14.0 \ Common7\IDE\Remote Debugger\x86\msvsmon.exe**
       
       **Program Files\Microsoft Visual Studio 14.0 \ Common7\IDE\Remote Debugger\x64\msvsmon.exe**
 
-2. Udostępnij **zdalny debuger** folderu na komputerze programu Visual Studio.
+2. Udostępnij folder **debugera zdalnego** na komputerze z Visual Studio.
 
-3. Na komputerze zdalnym uruchom program **msvsmon. exe**. Postępuj zgodnie z [instrukcje instalacji](#bkmk_setup).
+3. Na komputerze zdalnym uruchom program **msvsmon. exe**. Postępuj zgodnie z [instrukcjami instalacji](#bkmk_setup).
 
 > [!TIP] 
 > Aby uzyskać informacje dotyczące instalacji wiersza polecenia i wiersza polecenia, zobacz stronę pomocy programu **msvsmon. exe** , wpisując ``msvsmon.exe /?`` w wierszu polecenia na komputerze z zainstalowanym programem Visual Studio (lub przejdź do okna **Pomoc/użycie** w debugerze zdalnym).
@@ -138,33 +138,33 @@ Zdalny debuger (**msvsmon. exe**) można znaleźć na komputerze, na którym jes
   > [!IMPORTANT]
   > Można uruchomić debugera zdalnego przy użyciu konta użytkownika, który różni się z konta użytkownika, którego używasz na komputerze programu Visual Studio, ale należy dodać konta innego użytkownika do zdalnego debugera uprawnień. 
 
-   Alternatywnie można uruchomić zdalnego debugera z wiersza polecenia za pomocą **/ allow \<username >** parametru: **msvsmon / allow \< username@computer>** .
+   Alternatywnie można uruchomić zdalny debuger z wiersza polecenia z **/allow \<username >** parametr: **msvsmon/allow \<username@computer>** .
   
 - Aby zmienić tryb uwierzytelniania lub numer portu lub określić wartość limitu czasu dla narzędzi zdalnych: Wybierz **Narzędzia/Opcje**.  
   
-   Lista numerów portów, używany domyślnie znajduje się [zdalnego przypisania portów debugera](../debugger/remote-debugger-port-assignments.md).  
+   Aby uzyskać listę numerów portów używanych domyślnie, zobacz [zdalne przydziały portów zdalnego debugera](../debugger/remote-debugger-port-assignments.md).  
   
    > [!WARNING]
   > Istnieje możliwość uruchomienia narzędzi zdalnych w trybie Bez uwierzytelnienia, ale używanie tego trybu jest zdecydowanie odradzane. Po uruchomieniu w tym trybie nie ma zabezpieczeń sieci. Wybierz tryb bez uwierzytelniania tylko wtedy, gdy masz pewność, że sieć nie jest zagrożone przez złośliwe lub wrogie działania.
 
-## <a name="bkmk_configureService"></a> (Opcjonalnie) Konfigurowanie debugera zdalnego jako usługi
+## <a name="bkmk_configureService"></a>Obowiązkowe Konfigurowanie zdalnego debugera jako usługi
  Do debugowania na platformie ASP.NET i innych środowisk serwera, należy uruchomić zdalny debuger jako Administrator lub, będzie zawsze działać, należy uruchomić debugera zdalnego jako usługi.
   
  Jeśli chcesz skonfigurować debugera zdalnego jako usługę, wykonaj następujące kroki.  
   
-1. Znajdź **Kreator konfiguracji zdalnego debugera** (rdbgwiz.exe). (Jest to oddzielna aplikacja ze zdalnego debugera). Jest ona dostępna tylko podczas instalowania narzędzi zdalnych. Nie zainstalowano programu Visual Studio.  
+1. Znajdź **Kreatora konfiguracji debugera zdalnego** (rdbgwiz. exe). (Jest to oddzielna aplikacja ze zdalnego debugera). Jest ona dostępna tylko podczas instalowania narzędzi zdalnych. Nie zainstalowano programu Visual Studio.  
   
-2. Uruchom Kreatora konfiguracji. Gdy pierwsza strona, kliknij przycisk **dalej**.  
+2. Uruchom Kreatora konfiguracji. Gdy pierwsza strona zostanie wystawiona, kliknij przycisk **dalej**.  
   
-3. Sprawdź **uruchomić debugera programu Visual Studio 2015 zdalne jako usługę** pola wyboru.  
+3. Zaznacz pole wyboru **Uruchom Debuger zdalny programu Visual Studio 2015 jako usługę** .  
   
 4. Dodaj nazwę konta użytkownika i hasła.  
   
-    Może być konieczne dodanie uprawnienia **Zaloguj się jako użytkownik usługi** do tego konta. (Znajdź **zasady zabezpieczeń lokalnych** (secpol. msc) na stronie **startowej** lub w oknie (lub wpisz **secpol** w wierszu polecenia). Gdy pojawi się okno, kliknij dwukrotnie **Przypisywanie praw użytkownika**, następnie znajdź **Zaloguj się jako usługa** w okienku po prawej stronie. Kliknij go dwukrotnie. Dodaj konto użytkownika do okna **Właściwości** , a następnie kliknij przycisk **OK**. Kliknij przycisk **dalej**.  
+    Może być konieczne dodanie uprawnienia **Zaloguj się jako użytkownik usługi** do tego konta. (Znajdź **zasady zabezpieczeń lokalnych** (secpol. msc) na stronie **startowej** lub w oknie (lub wpisz **secpol** w wierszu polecenia). Po wyświetleniu okna kliknij dwukrotnie pozycję **Przypisywanie praw użytkownika**, a następnie znajdź opcję **Zaloguj się jako usługa** w okienku po prawej stronie. Kliknij go dwukrotnie. Dodaj konto użytkownika do okna **Właściwości** , a następnie kliknij przycisk **OK**. Kliknij przycisk **dalej**.  
   
 5. Wybierz typ sieci, z którą komunikować narzędzia zdalne. Należy wybrać co najmniej jeden typ sieci. Jeśli komputery są połączone za pośrednictwem domeny, wybierz pierwszy element. Jeśli komputery są połączone za pośrednictwem grupy roboczej lub grupa domowa, należy wybrać elementy drugiego i trzeciego. Kliknij przycisk **Dalej**.  
   
-6. Jeśli usługa może zostać uruchomiona, zostanie wyświetlony **została pomyślnie ukończona Visual Studio Kreator konfiguracji debugera zdalnego**. Jeśli nie można uruchomić usługi, zostanie wyświetlony **nie można ukończyć Visual Studio Kreator konfiguracji debugera zdalnego**. Strona zawiera także kilka wskazówek dotyczących wykonać, aby usługa zostanie uruchomiona.  
+6. Jeśli usługa może zostać uruchomiona, zostanie wyświetlony **Kreator konfiguracji zdalny debuger programu Visual Studio, który pomyślnie ukończył**pracę. Jeśli nie można uruchomić usługi, **nie można ukończyć pracy Kreatora konfiguracji zdalny debuger programu Visual Studio**. Strona zawiera także kilka wskazówek dotyczących wykonać, aby usługa zostanie uruchomiona.  
   
 7. Kliknij przycisk **Zakończ**.  
   
@@ -216,39 +216,39 @@ Zdalny debuger (**msvsmon. exe**) można znaleźć na komputerze, na którym jes
   
 10. Po wyświetleniu monitu wprowadź poświadczenia sieci, aby nawiązać połączenie z komputerem zdalnym.  
   
-     Wymagane poświadczenia są specyficzne dla konfiguracji zabezpieczeń sieci. Na przykład na komputerze domeny można wybrać certyfikat zabezpieczeń lub podać nazwę domeny i hasło. Na komputerze nienależących do domeny, wprowadzić nazwę komputera i prawidłową nazwę konta użytkownika, takie jak <strong>MJO-DL\name@something.com</strong>, oraz prawidłowe hasło.  
+     Wymagane poświadczenia są specyficzne dla konfiguracji zabezpieczeń sieci. Na przykład na komputerze domeny można wybrać certyfikat zabezpieczeń lub podać nazwę domeny i hasło. Na komputerze niebędącym domeną możesz wprowadzić nazwę komputera i prawidłową nazwę konta użytkownika, taką jak <strong>MJO-DL\name@something.com</strong>, wraz z prawidłowym hasłem.  
   
 11. Na komputerze z Visual Studio powinno być widoczne, że wykonywanie zostało zatrzymane w punkcie przerwania.  
   
     > [!TIP]
     > Alternatywnie można wdrożyć pliki w osobnym kroku. W Eksplorator rozwiązań kliknij prawym przyciskiem myszy węzeł **MyMfc** **,** a następnie wybierz polecenie **Wdróż**.  
   
-    Jeśli masz pliki niebędące kodem, które muszą być używane przez aplikację, musisz je uwzględnić w projekcie programu Visual Studio. Utwórz folder projektu dla dodatkowych plików (w **Eksplorator rozwiązań**kliknij pozycję **Dodaj/nowy folder**). Następnie Dodaj pliki do folderu (w **Eksplorator rozwiązań**kliknij pozycję **Dodaj/istniejący element**, a następnie wybierz pliki). Na **właściwości** strony dla każdego pliku, należy ustawić **Kopiuj do katalogu wyjściowego** do **zawsze Kopiuj**.  
+    Jeśli masz pliki niebędące kodem, które muszą być używane przez aplikację, musisz je uwzględnić w projekcie programu Visual Studio. Utwórz folder projektu dla dodatkowych plików (w **Eksplorator rozwiązań**kliknij pozycję **Dodaj/nowy folder**). Następnie Dodaj pliki do folderu (w **Eksplorator rozwiązań**kliknij pozycję **Dodaj/istniejący element**, a następnie wybierz pliki). Na stronie **Właściwości** każdego pliku ustaw opcję **Kopiuj do katalogu wyjściowego** na wartość **Kopiuj zawsze**.  
   
 ## <a name="remote-debug-a-visual-c-or-visual-basic-project"></a>Debugowanie zdalne projektu wizualizacji C# lub Visual Basic  
  Debuger nie można wdrożyć aplikacje klasyczne Visual C# lub Visual Basic do maszyny zdalnej, ale możesz nadal możesz debugować je zdalnie, w następujący sposób. W poniższej procedurze przyjęto założenie, że chcesz debugować ją na komputerze o nazwie **MJO-DL**, jak pokazano na poprzedniej ilustracji.
   
-1. Utwórz projekt WPF, o nazwie **MyWpf**.  
+1. Utwórz projekt WPF o nazwie **MyWpf**.  
   
 2. Ustaw punkt przerwania w jakimś miejscu w kodzie, który łatwo zostanie osiągnięty.  
   
     Na przykład można ustawić punkt przerwania w obsłudze przycisku. Aby to zrobić, otwórz MainWindow.xaml, Dodaj kontrolkę przycisk z przybornika, a następnie kliknij dwukrotnie przycisk aby otworzyć jego obsługi.
   
-3. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy projekt i wybierz polecenie **właściwości**.  
+3. W Eksplorator rozwiązań kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Właściwości**.  
   
-4. Na **właściwości** wybierz **debugowania** kartę.  
+4. Na stronie **Właściwości** wybierz kartę **debugowanie** .  
   
     ![RemoteDebuggerCSharp](../debugger/media/remotedebuggercsharp.png "RemoteDebuggerCSharp")  
   
-5. Upewnij się, że **katalog roboczy** pole tekstowe jest puste.  
+5. Upewnij się, że pole tekstowe **katalog roboczy** jest puste.  
   
 6. Wybierz opcję **Użyj maszyny zdalnej**i wpisz **MJO-DL: 4020** w polu tekstowym. (4020 to numer portu wyświetlany w oknie Debuger zdalny).  
   
-7. Upewnij się, że **Włącz debugowanie kodu natywnego** nie jest zaznaczone.  
+7. Upewnij się, że nie wybrano **debugowania kodu natywnego** .  
   
 8. Skompiluj projekt.  
   
-9. Utwórz folder na komputerze zdalnym, który jest taka sama ścieżka jak **debugowania** folderu na komputerze programu Visual Studio:  **\<ścieżki źródłowej > \MyWPF\MyWPF\bin\Debug**.  
+9. Utwórz folder na komputerze zdalnym, który jest tą samą ścieżką jak folder **debugowania** na komputerze programu Visual Studio: **\<ścieżka źródłowa > \MyWPF\MyWPF\bin\Debug**.  
   
 10. Skopiuj plik wykonywalny, który właśnie zbudowany z komputera programu Visual Studio do nowo utworzonego folderu na komputerze zdalnym.
   
@@ -265,7 +265,7 @@ Zdalny debuger (**msvsmon. exe**) można znaleźć na komputerze, na którym jes
   
 13. Po wyświetleniu monitu wprowadź poświadczenia sieci, aby nawiązać połączenie z komputerem zdalnym.  
   
-     Wymagane poświadczenia różnią się w zależności od konfiguracji zabezpieczeń w sieci. Na przykład na komputerze domeny można wprowadzić nazwę domeny i hasła. Na komputerze nienależących do domeny, wprowadzić nazwę komputera i prawidłową nazwę konta użytkownika, takie jak <strong>MJO-DL\name@something.com</strong>, oraz prawidłowe hasło.
+     Wymagane poświadczenia różnią się w zależności od konfiguracji zabezpieczeń w sieci. Na przykład na komputerze domeny można wprowadzić nazwę domeny i hasła. Na komputerze niebędącym domeną możesz wprowadzić nazwę komputera i prawidłową nazwę konta użytkownika, taką jak <strong>MJO-DL\name@something.com</strong>, wraz z prawidłowym hasłem.
 
      Powinno zostać wyświetlone okno główne aplikacji WPF na komputerze zdalnym.
   
@@ -273,7 +273,7 @@ Zdalny debuger (**msvsmon. exe**) można znaleźć na komputerze, na którym jes
   
 15. Na komputerze programu Visual Studio powinien zostać wyświetlony, że wykonywanie zostało zatrzymane w punkcie przerwania.
   
-    Jeśli masz pliki niebędące kodem, które muszą być używane przez aplikację, musisz je uwzględnić w projekcie programu Visual Studio. Utwórz folder projektu dla dodatkowych plików (w **Eksplorator rozwiązań**kliknij pozycję **Dodaj/nowy folder**). Następnie Dodaj pliki do folderu (w **Eksplorator rozwiązań**kliknij pozycję **Dodaj/istniejący element**, a następnie wybierz pliki). Na **właściwości** strony dla każdego pliku, należy ustawić **Kopiuj do katalogu wyjściowego** do **zawsze Kopiuj**.
+    Jeśli masz pliki niebędące kodem, które muszą być używane przez aplikację, musisz je uwzględnić w projekcie programu Visual Studio. Utwórz folder projektu dla dodatkowych plików (w **Eksplorator rozwiązań**kliknij pozycję **Dodaj/nowy folder**). Następnie Dodaj pliki do folderu (w **Eksplorator rozwiązań**kliknij pozycję **Dodaj/istniejący element**, a następnie wybierz pliki). Na stronie **Właściwości** każdego pliku ustaw opcję **Kopiuj do katalogu wyjściowego** na wartość **Kopiuj zawsze**.
   
 ## <a name="set-up-debugging-with-remote-symbols"></a>Konfigurowanie debugowania przy użyciu zdalnego symboli  
  Powinno być możliwe debugowanie kodu przy użyciu symboli generowanych na komputerze z programem Visual Studio. Wydajność zdalnego debugera jest znacznie lepsza w przypadku używania symboli lokalnych.  Jeśli musisz użyć symboli zdalnych, musisz poinformować Monitor debugowania zdalnego, aby szukać symboli na maszynie zdalnej.  
@@ -295,7 +295,7 @@ Zdalny debuger (**msvsmon. exe**) można znaleźć na komputerze, na którym jes
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie w programie Visual Studio](../debugger/debugging-in-visual-studio.md)   
- [Skonfiguruj zaporę Windows do zdalnego debugowania](../debugger/configure-the-windows-firewall-for-remote-debugging.md)   
- [Przypisania portów debugera zdalnego](../debugger/remote-debugger-port-assignments.md)   
+ [Konfigurowanie zapory systemu Windows pod kątem zdalnego debugowania](../debugger/configure-the-windows-firewall-for-remote-debugging.md)   
+ [Przypisania portów zdalnego debugera](../debugger/remote-debugger-port-assignments.md)   
  [Zdalne debugowanie platformy ASP.NET na komputerze zdalnym usług IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)  
  [Błędy związane z debugowaniem zdalnym i rozwiązywanie problemów](../debugger/remote-debugging-errors-and-troubleshooting.md)

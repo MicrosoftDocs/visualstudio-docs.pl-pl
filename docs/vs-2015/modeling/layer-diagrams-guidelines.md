@@ -96,7 +96,7 @@ Opisz architekturę aplikacji na wysokim poziomie, tworząc *diagramy warstwowe*
 ## <a name="EditArchitecture"></a>Edycja warstw i zależności w celu pokazania zamierzonego projektu
  Aby opisać zmiany, które planujesz wprowadzić do systemu lub zamierzonej architektury, wykonaj następujące kroki, aby edytować diagram warstwy. Można również rozważyć wprowadzenie zmian refaktoryzacji w celu poprawy struktury kodu przed jego rozszerzeniem. Zobacz [ulepszanie struktury kodu](#Improving).
 
-|**To**|**Wykonaj następujące kroki**|
+|**Do**|**Wykonaj następujące kroki**|
 |------------|-----------------------------|
 |Usuń zależność, która nie powinna istnieć|Kliknij zależność, a następnie naciśnij klawisz **delete**.|
 |Zmień lub ogranicz kierunek zależności|Ustaw jej właściwość **Direction** .|

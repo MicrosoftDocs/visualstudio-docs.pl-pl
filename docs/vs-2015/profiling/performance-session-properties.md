@@ -25,7 +25,7 @@ ms.locfileid: "74290113"
 
 **Sesja wydajności** umożliwia skonfigurowanie ustawień, które określają, w jaki sposób aplikacja jest profilowana. Przechowuje również raporty, które są generowane dla sesji profilowania.  
   
- **Wymagania**  
+ **Requirements**  
   
 - [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
@@ -66,7 +66,7 @@ ms.locfileid: "74290113"
   
   Aby uzyskać więcej informacji, zobacz [How to: Wybieranie zdarzeń próbkowania](../profiling/how-to-choose-sampling-events.md)  
   
-## <a name="binary"></a>plików binarnych  
+## <a name="binary"></a>Binarny  
  Te ustawienia umożliwiają określenie, czy chcesz przenieść plik binarny instrumentacji do innej lokalizacji. Na przykład, jeśli profiluje moją bibliotekę DLL i nie można przenieść pliku binarnego z instrumentacją, tworzona jest kopia zapasowa my. dll o nazwie My. orig. dll. Następnie plik my. DLL jest modyfikowany przez wstawianie sond do zbierania danych. Jeśli zdecydujesz się przenieść plik binarny z instrumentacją, oryginalny plik binarny nie jest zmieniany, a plik binarny Instrumentacji jest kopiowany do określonej lokalizacji do użycia podczas Instrumentacji.  
   
  Aby uzyskać więcej informacji, zobacz [How to: Określ plik binarny do uruchomienia](../profiling/how-to-specify-the-binary-to-start.md)  

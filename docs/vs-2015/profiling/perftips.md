@@ -16,14 +16,14 @@ ms.contentlocale: pl-PL
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74295868"
 ---
-# <a name="perftips"></a>Wskazówki dotyczące wydajności
+# <a name="perftips"></a>Perftip
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Debuger programu Visual Studio *Funkcja PerfTip* i zintegrowany z debugerem **Narzędzia diagnostyczne** ułatwia monitorowanie i analizowanie wydajności aplikacji podczas debugowania.  
   
  Chociaż narzędzia diagnostyczne zintegrowane z debugerem są doskonałym sposobem, aby poznać problemy z wydajnością podczas opracowywania, debuger może mieć znaczący wpływ na wydajność aplikacji. Aby zebrać dokładniejsze dane dotyczące wydajności, należy rozważyć użycie narzędzi diagnostycznych programu Visual Studio, które są uruchamiane poza debugerem, jako dodatkową częścią dochodzeń związanych z wydajnością. Zobacz [Uruchamianie narzędzi profilowania bez debugowania](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01).  
   
-## <a name="perftips"></a>Wskazówki dotyczące wydajności  
+## <a name="perftips"></a>Perftip  
  Gdy debuger przerywa wykonywanie w punkcie przerwania lub operacji krokowej, czas między przerwaniem a poprzednim punktem przerwania pojawia się jako Porada w oknie edytora. Aby uzyskać więcej informacji, zobacz [Funkcja PerfTip: informacje o wydajności w skrócie, podczas debugowania w programie Visual Studio](https://devblogs.microsoft.com/devops/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/).  
   
  ![Element PerfTip dla](../profiling/media/dbgdiag-perf-perftip.png "DBGDIAG_PERF_PerfTip")  

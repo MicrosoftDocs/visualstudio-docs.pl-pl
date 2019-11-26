@@ -21,7 +21,7 @@ ms.lasthandoff: 11/21/2019
 ms.locfileid: "74302753"
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>Edytor zestawu reguł, okno dialogowe (starsza wersja)
-W tym temacie opisano sposób użycia okna dialogowego **Edytor zestawu reguł** w starszej [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Użyj starszego [!INCLUDE[wfd2](../includes/wfd2-md.md)] konieczność docelowy: [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+W tym temacie opisano sposób użycia okna dialogowego **Edytor zestawu reguł** w starszej [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Użyj starszej [!INCLUDE[wfd2](../includes/wfd2-md.md)], jeśli chcesz wskazać [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
  Okno dialogowe **Edytor zestawu reguł** służy do tworzenia i modyfikowania zestawów reguł [zasad zasady](https://go.microsoft.com/fwlink?LinkID=65019) , które są serializowane do pliku reguł.
 
@@ -38,7 +38,7 @@ W tym temacie opisano sposób użycia okna dialogowego **Edytor zestawu reguł**
 |Element interfejsu użytkownika|Opis|
 |----------------|-----------------|
 |**Dodaj regułę**|Dodaje nową definicję reguły do zestawu reguł.|
-|**Delete**|Usuwa wybraną regułę z zestawu reguł.|
+|**Usuwanie**|Usuwa wybraną regułę z zestawu reguł.|
 |**Łańcucha**|Określa typ łańcucha do przesyłania dalej do użycia z zestawem reguł. Dostępne opcje to:<br /><br /> -   **pełnego łańcucha**, który określa, że należy używać wszystkich mechanizmów łańcucha do przesyłania dalej: niejawne, przypisywane metody i jawne przy użyciu funkcji **aktualizacji** .<br />-   **sekwencyjne**, które określa, że nie należy używać żadnego łańcucha do przesyłania dalej.<br />-   **tylko jawna aktualizacja**, która określa, że w ramach akcji **aktualizacji** będzie wykonywane tylko łączenie w przód.<br /><br /> Aby uzyskać więcej informacji na temat tworzenia łańcucha do przodu, zobacz [Używanie działania Policy](https://go.microsoft.com/fwlink?LinkID=65004).|
 |**Nazwa**|Nagłówek kolumny listy zestawu reguł. Kliknij, aby posortować listę reguł według nazwy.|
 |**Priorytet**|Nagłówek kolumny listy zestawu reguł. Kliknij, aby posortować listę reguł według priorytetu.|
@@ -51,7 +51,7 @@ W tym temacie opisano sposób użycia okna dialogowego **Edytor zestawu reguł**
 |**Rozgrzewa**|Wprowadź wyrażenie dla warunku reguły. Aby uzyskać informacje na temat składni wyrażeń, zobacz sekcję "wprowadzanie warunku i wyrażeń akcji" na tej stronie.|
 |**Następnie akcje:**|Wprowadź wyrażenie dla akcji. Aby uzyskać informacje na temat składni wyrażeń, zobacz sekcję "wprowadzanie warunku i wyrażeń akcji" na tej stronie.|
 |**Akcje else:**|Wprowadź wyrażenie dla akcji else. Aby uzyskać informacje na temat składni wyrażeń, zobacz sekcję "wprowadzanie warunku i wyrażeń akcji" na tej stronie.|
-|**OK**|Kliknij, aby zapisać regułę jako plik. rules.|
+|**Ok**|Kliknij, aby zapisać regułę jako plik. rules.|
 
  Aby uzyskać więcej informacji na temat zestawów reguł, zobacz [Używanie działania Policy](https://go.microsoft.com/fwlink?LinkID=65004).
 

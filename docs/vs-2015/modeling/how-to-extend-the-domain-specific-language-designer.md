@@ -71,7 +71,7 @@ Aby edytować definicje DSL, można tworzyć rozszerzenia projektanta. Typy rozs
 
  Aby wdrożyć rozszerzenia w głównej [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]i na innych komputerach, wykonaj następujące kroki:
 
-1. Znajdź plik VSIX instalacji w projekcie VSIX bin\\*\*\\\*.vsix
+1. Znajdź plik instalacji VSIX w projekcie VSIX w\\bin *\\\*. vsix
 
 2. Skopiuj ten plik na komputer docelowy, a następnie kliknij go dwukrotnie w Eksploratorze Windows (lub Eksploratorze plików).
 

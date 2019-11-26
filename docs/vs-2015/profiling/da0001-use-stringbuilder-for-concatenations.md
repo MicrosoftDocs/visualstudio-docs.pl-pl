@@ -28,7 +28,7 @@ Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [DA0001: us
   
 |||  
 |-|-|  
-|Identyfikator reguły|DA0001|  
+|Identyfikator zasady|DA0001|  
 |Kategoria|Użycie .NET Framework|  
 |Metody profilowania|Sond<br /><br /> Oprzyrządowanie|  
 |Komunikat|Rozważ użycie StringBuilder dla łączenia ciągów|  

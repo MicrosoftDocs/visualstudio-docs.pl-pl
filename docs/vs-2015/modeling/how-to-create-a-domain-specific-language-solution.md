@@ -44,7 +44,7 @@ Język specyficzny dla domeny (DSL) jest tworzony przy użyciu wyspecjalizowaneg
 
    1. W menu **plik** wskaż polecenie **Nowy**, a następnie kliknij pozycję **projekt**.
 
-   2. **Nowy projekt** pojawi się okno dialogowe.
+   2. Pojawi się okno dialogowe **Nowy projekt** .
 
    3. W obszarze **typy projektów**rozwiń węzeł **Inne typy projektów** , a następnie kliknij pozycję **rozszerzalność**.
 
@@ -100,11 +100,11 @@ Wpisz nowe rozszerzenie pliku.
 
 - Wpisz inne rozszerzenie pliku.
 
-     \- lub —
+     \- lub-
 
 - Zresetuj [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wystąpienie eksperymentalne. Spowoduje to Wyrejestrowanie wszystkich utworzonych wcześniej językami DSL. W menu **Start** kliknij pozycję **wszystkie programy**, **Microsoft Visual Studio zestaw SDK 2010**, **Narzędzia**, a następnie **Zresetuj wystąpienie eksperymentalne Microsoft Visual Studio 2010**. Możesz ponownie skompilować wszystkie inne językami DSL, których chcesz użyć.
 
-     \- lub —
+     \- lub-
 
 - Jeśli rozszerzenie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], które używa tego rozszerzenia pliku, zostało w pełni zainstalowane na komputerze, odinstaluj je. W menu **Narzędzia** kliknij pozycję **Menedżer rozszerzeń**.
 

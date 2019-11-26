@@ -51,7 +51,7 @@ Pakiet VSIX to plik. vsix, który zawiera co najmniej jedno rozszerzenie program
   
  Aby uwzględnić satelitarne biblioteki DLL z przywoływanych zestawów w pakiecie VSIX, Dodaj `SatelliteDllsProjectOutputGroup` do **grup wyjściowych zawartych we właściwości VSIX** .  
   
-## <a name="installation-location"></a>Lokalizacja instalacji  
+## <a name="installation-location"></a>Miejsce instalacji  
  Podczas instalacji **rozszerzenia i aktualizacje** wyszukują zawartość pakietu VSIX w folderze w obszarze%LocalAppData%\Microsoft\VisualStudio\14.0\Extensions.  
   
  Domyślnie instalacja ma zastosowanie tylko do bieżącego użytkownika, ponieważ% LocalAppData% jest katalogiem specyficznym dla użytkownika. Jeśli jednak ustawisz element [ALLUSERS](https://msdn.microsoft.com/ac817f50-3276-4ddb-b467-8bbb1432455b) manifestu na `True`, rozszerzenie zostanie zainstalowane w obszarze..\\*VisualStudioInstallationFolder*\Common7\IDE\Extensions i będzie dostępny dla wszystkich użytkowników komputera.  

@@ -256,7 +256,7 @@ W programie Visual Studio można użyć *diagramu klas UML* do opisywania typów
 visibility attribute-name : Type
 ```
 
- \- lub —
+ \- lub-
 
 ```
 visibility operation-name (parameter1 : Type1, ...) : Type
@@ -346,7 +346,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
 - **Agregacja**. Pojawia się jako kształt rombu na jednym końcu łącznika. Można jej używać do wskazania, że wystąpienia w roli agregacji posiadają lub zawierają wystąpienia innych.
 
-- {1&gt;Jest nawigowalna&lt;1}. Jeśli ma wartość true dla tylko jednej roli, pojawia się strzałka w kierunku, dla którego nawigacja jest możliwa. Służy to do wskazania możliwości nawigacji dla łączy i relacji bazodanowych w oprogramowaniu.
+- **Jest nawigować**. Jeśli ma wartość true dla tylko jednej roli, pojawia się strzałka w kierunku, dla którego nawigacja jest możliwa. Służy to do wskazania możliwości nawigacji dla łączy i relacji bazodanowych w oprogramowaniu.
 
   Aby uzyskać szczegółowe informacje o tych i innych właściwościach, zobacz [Właściwości skojarzeń na diagramach klas UML](../modeling/properties-of-associations-on-uml-class-diagrams.md).
 
@@ -367,7 +367,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
 - Relacja *generalizacji* między typem wyspecjalizowanym a typem ogólnym
 
-   \- lub —
+   \- lub-
 
 - Relacja *realizacji* między klasą i interfejsem, który implementuje.
 
@@ -422,7 +422,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
     Zostanie wyświetlone okno dialogowe **Edytor kolekcji parametrów szablonu** .
 
-4. Wybierz **Dodaj**.
+4. Wybierz pozycję **Dodaj**.
 
 5. Ustaw właściwość Nazwa na nazwę parametru dla typu szablonu, na przykład `Key`.
 

@@ -108,7 +108,7 @@ N-warstwowa * aplikacje danych to aplikacje, które uzyskują dostęp do danych 
 
 1. Kliknij pozycję DataAccessTier w **Eksplorator rozwiązań**.
 
-2. Na **danych** menu, kliknij przycisk **Pokaż źródła danych**.
+2. W menu **dane** kliknij przycisk **Pokaż źródła danych**.
 
 3. W oknie **źródła danych** kliknij przycisk **Dodaj nowe źródło danych** , aby uruchomić **Kreatora konfiguracji źródła danych**.
 
@@ -148,7 +148,7 @@ N-warstwowa * aplikacje danych to aplikacje, które uzyskują dostęp do danych 
 
 4. Na liście **projekt zestawu danych** kliknij pozycję **DataEntityTier**.
 
-5. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
+5. W menu **kompilacja** kliknij pozycję **Kompiluj rozwiązanie**.
 
    Zestaw danych i TableAdapters są rozdzielone na dwa projekty biblioteki klas. Projekt, który pierwotnie zawierał cały zestaw danych (DataAccessTier), zawiera teraz tylko TableAdapters. Projekt określony we właściwości **projektu DataSet** (DataEntityTier) zawiera zestaw danych o określonym typie: NorthwindDataSet. DataSet. Designer. vb (lub NorthwindDataSet.DataSet.Designer.cs).
 
@@ -201,7 +201,7 @@ N-warstwowa * aplikacje danych to aplikacje, które uzyskują dostęp do danych 
 
 6. Kliknij przycisk **Zakończ**.
 
-7. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
+7. W menu **kompilacja** kliknij pozycję **Kompiluj rozwiązanie**.
 
 ## <a name="adding-a-reference-to-the-data-entity-and-data-access-tiers-to-the-data-service"></a>Dodawanie odwołania do jednostek danych i warstw dostępu do danych do usługi danych
  Ponieważ usługa danych wymaga informacji z zestawu danych i TableAdapters, Dodaj odwołania do projektów DataEntityTier i DataAccessTier.
@@ -280,7 +280,7 @@ N-warstwowa * aplikacje danych to aplikacje, które uzyskują dostęp do danych 
     }
     ```
 
-5. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
+5. W menu **kompilacja** kliknij pozycję **Kompiluj rozwiązanie**.
 
 ## <a name="creating-a-presentation-tier-to-display-data-from-the-data-service"></a>Tworzenie warstwy prezentacji do wyświetlania danych z usługi danych
  Teraz, gdy rozwiązanie zawiera usługę danych, która ma metody, które wywołują do warstwy dostępu do danych, należy utworzyć kolejny projekt, który będzie wywoływał usługę danych i przedstawić dane użytkownikom. W tym instruktażu Utwórz aplikację Windows Formsową. to jest warstwa prezentacji aplikacji n-warstwowej.
@@ -361,7 +361,7 @@ N-warstwowa * aplikacje danych to aplikacje, które uzyskują dostęp do danych 
  Ponieważ usługa zwraca dane z tabel klienci i zamówienia, wartość domyślna parametru maxReceivedMessageSize nie jest wystarczająco duża, aby można było przechowywać dane i musi być zwiększona. W tym instruktażu zmienisz wartość na 6553600. Wartość zostanie zmieniona na kliencie. spowoduje to automatyczne zaktualizowanie odwołania do usługi.
 
 > [!NOTE]
-> Dolny rozmiar domyślny jest przeznaczony do ograniczania narażenia na ataki typu "odmowa usługi" (DoS). Aby uzyskać więcej informacji, zobacz <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>.
+> Dolny rozmiar domyślny jest przeznaczony do ograniczania narażenia na ataki typu "odmowa usługi" (DoS). Aby uzyskać więcej informacji, zobacz temat <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>.
 
 #### <a name="to-increase-the-maxreceivedmessagesize-value"></a>Aby zwiększyć wartość maxReceivedMessageSize
 

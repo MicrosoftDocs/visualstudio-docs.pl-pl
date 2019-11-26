@@ -36,4 +36,4 @@ Narzędzie do analizy kodu w programie Visual Studio sprawdza swój kod pod kąt
 |||
 |-|-|
 |[Analiza kodu w bibliotece MSDN](https://go.microsoft.com/fwlink/?LinkID=227580)|Znajdź więcej informacji o używaniu analizy kodu w programie Visual Studio Ultimate, Visual Studio Premium i Visual Studio Professional.|
-|[Blog zespołu analizy kodu MSDN](https://go.microsoft.com/fwlink/?LinkId=227200)|Znajdź więcej informacji, w tym dokumentów technicznych i przykładów na blogu zespołu analizy kodu.|
+|[Blog zespołu ds. analizy kodu MSDN](https://go.microsoft.com/fwlink/?LinkId=227200)|Znajdź więcej informacji, w tym dokumentów technicznych i przykładów na blogu zespołu analizy kodu.|

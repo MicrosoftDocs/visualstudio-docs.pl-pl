@@ -37,7 +37,7 @@ Poniższe witryny sieci Web i fora mogą pomóc w znalezieniu odpowiedzi na czę
  [Blog zespołu programu MSBuild](https://go.microsoft.com/fwlink/?LinkId=65846)  
  Zawiera informacje, linki i aktualizacje zapisywane przez zespół produktu [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
- [Visual Studio MSBuild Forum](https://go.microsoft.com/fwlink/?LinkId=48931)  
+ [Forum programu Visual Studio MSBuild](https://go.microsoft.com/fwlink/?LinkId=48931)  
  Forum społeczności przeznaczone do [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
 ## <a name="see-also"></a>Zobacz też  

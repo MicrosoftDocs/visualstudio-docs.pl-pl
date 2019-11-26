@@ -63,15 +63,15 @@ Można dodać stereotyp do elementu modelu UML, aby dodawać do niego adnotacje 
 
     - Na diagramie klasy UML kliknij narzędzie dla elementu, a następnie kliknij wewnątrz pakietu na diagramie.
 
-         \- lub —
+         \- lub-
 
     - W Eksploratorze modelu UML, kliknij prawym przyciskiem myszy pakiet, wskaż polecenie **Dodaj**, a następnie kliknij typ elementu.
 
-         \- lub —
+         \- lub-
 
     - W Eksploratorze modelu UML przeciągnij istniejący element do pakietu.
 
-         \- lub —
+         \- lub-
 
     - Połącz diagram z pakietem, a następnie utwórz elementy na diagramie.
 

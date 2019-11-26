@@ -75,7 +75,7 @@ W tym kroku dodasz kontrolkę `TableLayoutPanel` do formularza. TableLayoutPanel
 
 11. Z listy rozwijanej **Pokaż** w górnej części okna wybierz pozycję **wiersze**. Ustaw wartość **row1** na 90% i **Row2** na 10 procent.
 
-12. Wybierz **OK** przycisku. Obiekt TableLayoutPanel powinien teraz mieć duży górny wiersz, mały dolny wiersz, małą lewą kolumnę i dużą prawą kolumnę. Można zmienić rozmiar wierszy i kolumn w TableLayoutPanel, wybierając tableLayoutPanel1 w formularzu, a następnie przeciągając obramowania wierszy i kolumn.
+12. Wybierz przycisk **OK** . Obiekt TableLayoutPanel powinien teraz mieć duży górny wiersz, mały dolny wiersz, małą lewą kolumnę i dużą prawą kolumnę. Można zmienić rozmiar wierszy i kolumn w TableLayoutPanel, wybierając tableLayoutPanel1 w formularzu, a następnie przeciągając obramowania wierszy i kolumn.
 
      ![Formularz Form1 ze zmienionym rozmiarem TableLayoutPanel](../ide/media/vs-formafterlayoutpanel.png "VS_FormAfterLayoutPanel") Formularz Form1 ze zmienionym rozmiarem TableLayoutPanel
 

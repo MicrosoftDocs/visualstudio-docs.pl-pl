@@ -54,7 +54,7 @@ Identyfikator reguły | DA0018 |
   
 - Optymalizowanie użycia zasobów pamięci zarządzanej przez aplikację  
   
-   —lub—  
+   lub  
   
 - podejmowanie kroków w celu zwolnienia ograniczeń architektury dla maksymalnego rozmiaru pamięci wirtualnej dla procesu 32-bitowego  
   

@@ -65,12 +65,12 @@ Można napisać własnego hosta, który przetwarza szablony tekstowe. Podstawowy
 
      Aby uzyskać więcej informacji na temat tworzenia rozwiązania dotyczącego języka specyficznego dla domeny, zobacz [How to: Create a specyficzne dla domeny rozwiązanie językowe](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
-2. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
+2. W menu **kompilacja** kliknij pozycję **Kompiluj rozwiązanie**.
 
    > [!IMPORTANT]
    > Ten krok powoduje wygenerowanie procesora dyrektywy i dodanie klucza do niego w rejestrze.
 
-3. Na **debugowania** menu, kliknij przycisk **Rozpocznij debugowanie**.
+3. W menu **debugowanie** kliknij **Rozpocznij debugowanie**.
 
     Zostanie otwarte drugie wystąpienie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
@@ -227,9 +227,9 @@ Można napisać własnego hosta, który przetwarza szablony tekstowe. Podstawowy
             }
     ```
 
-7. Na **pliku** menu, kliknij przycisk **Zapisz wszystko**.
+7. W menu **plik** kliknij polecenie **Zapisz wszystko**.
 
-8. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
+8. W menu **kompilacja** kliknij pozycję **Kompiluj rozwiązanie**.
 
 ## <a name="testing-the-custom-host-with-the-directive-processor"></a>Testowanie hosta niestandardowego z procesorem dyrektywy
  Aby przetestować hosta niestandardowego tekstu, najpierw należy napisać szablon tekstu, który wywołuje wygenerowany procesor dyrektywy. Następnie uruchom hosta niestandardowego, przekaż go do nazwy szablonu tekstu i sprawdź, czy dyrektywa została przetworzona prawidłowo.

@@ -21,7 +21,7 @@ ms.locfileid: "74300585"
 
 Możesz szybko rozpocząć tworzenie witryny sieci Web w języku Python na platformie Azure.  
   
- Możesz obserwować te instrukcje w bardzo krótkim [wideo usługi youtube](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6).  
+ Możesz obejrzeć te instrukcje w bardzo krótkim [filmie wideo](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6)w serwisie YouTube.  
   
  Rozpocznij od nowego projektu... w oknie dialogowym i w obszarze projekty języka Python wybierz projekt sieci Web z butelką.  Ten szablon [butelek](http://bottlepy.org/docs/dev/index.html) jest lokacją startową opartą na [strukturze Bootstrap](https://getbootstrap.com/).  Podczas tworzenia projektu program Visual Studio poprosi o zainstalowanie zależności (butelk w tym przypadku) w środowisku wirtualnym.  Ponieważ wdrażasz w witrynie sieci Web platformy Azure, musisz dodać zależności do środowiska wirtualnego, aby wdrożyć niezbędne bity dla operacji witryny.  Konieczne jest również oparcie środowiska w języku Python 2,7 lub 3,4 32-bit.  Po utworzeniu projektu naciśnij klawisz F5, aby rozpocząć Uruchamianie lokacji lokalnie.  
   
@@ -31,8 +31,8 @@ Możesz szybko rozpocząć tworzenie witryny sieci Web w języku Python na platf
   
  Proste witryny sieci Web są proste, ale aby uzyskać informacje na temat bardziej znaczących aplikacji sieci Web na platformie Azure, zobacz [głębokie wideo szczegółowe](https://www.youtube.com/watch?v=WG3pGmoo8nE&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=10) , a także inne w tym kanale (link w prawym górnym rogu strony pobieranie lub głębokie szczegółowe wideo), jak również poniżej.  
   
- Możesz obserwować te instrukcje w bardzo krótkim [wideo usługi youtube](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6).  
+ Możesz obejrzeć te instrukcje w bardzo krótkim [filmie wideo](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6)w serwisie YouTube.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Dokumentacja typu Wiki](https://github.com/Microsoft/PTVS/wiki/Web-Project)   
- [Wprowadzenie rozpoczęcie pracy i Deep Dive wideo narzędzi PTVS](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)
+ [PTVS Wprowadzenie i głębokie wideo szczegółowe](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)

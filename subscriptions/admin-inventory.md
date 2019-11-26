@@ -6,17 +6,17 @@ manager: lank
 ms.date: 07/23/2019
 ms.topic: conceptual
 description: Informacje o responsibilty administratorów dotyczące przeprowadzania spisów przedprodukcyjnych
-ms.openlocfilehash: d400e216d81601583dc08f66f1a6a185cbe41b91
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 97a7a95354cd4d5d85581830830705bc328f2311
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68423095"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491712"
 ---
 # <a name="inventory-of-pre-production-environment"></a>Spis środowiska przedprodukcyjnego
 Subskrypcje programu Visual Studio upraszczają zarządzanie zasobami przez zliczanie użytkowników, a nie urządzeń.
 
-Administratorzy programu Visual Studio muszą przypisywać subskrypcje programu Visual Studio do **określonych, nazwanych użytkowników**. Konwencje nazewnictwa, takie jak Dev1, Dev2 lub użycie nazw zespołów, takich jak "FeatureTeam" , są niedozwolone.
+Administratorzy programu Visual Studio muszą przypisywać subskrypcje programu Visual Studio do **określonych, nazwanych użytkowników**. Konwencje nazewnictwa, takie jak Dev1, Dev2 lub użycie nazw zespołów, takich jak "FeatureTeam", są **niedozwolone**.
 
 Oto kilka sposobów, aby uprościć tworzenie spisu środowiska przedprodukcyjnego:
 - Przejrzyj przypisania użytkownika. Firma Microsoft udostępnia witrynę internetową o nazwie [Portal administracyjny programu Visual Studio](https://manage.visualstudio.com/) ułatwiającą śledzenie przypisań subskrypcji programu Visual Studio.
@@ -25,13 +25,13 @@ Oto kilka sposobów, aby uprościć tworzenie spisu środowiska przedprodukcyjne
 - Uzyskaj pomoc dotyczącą ręcznego uzgadniania. Zarejestruj personel, aby pomóc w uzgadnianiu użytkowników programistycznych i testowych w środowisku deweloperskim i testowym.
 
 ## <a name="resources"></a>Zasoby
-- [Oficjalny dokument dotyczący licencjonowania programu Visual Studio](https://aka.ms/vslicensing)
+- [Oficjalny dokument dotyczący licencjonowana programu Visual Studio](https://aka.ms/vslicensing)
 - [Pomoc techniczna dotycząca subskrypcji programu Visual Studio i administrowania nim](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [Postanowienia dotyczące licencjonowania zbiorowego](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
-## <a name="next-steps"></a>Następne kroki
+## <a name="next-steps"></a>Kolejne kroki
 Dowiedz się więcej o odpowiedzialności dla administratorów:
 - [Obowiązki administratora](admin-responsibilities.md)
-- [Zarządzaj dużymi zespołami i zewnętrznymi wykonawcami](manage-teams.md)
-- [Śledzenie przypisań użytkowników i zamówień procesów](assignments-orders.md)
+- [Zarządzanie dużymi zespołami i zleceniobiorcami zewnętrznymi](manage-teams.md)
+- [Śledzenie przypisań użytkowników i przetwarzanie zamówień](assignments-orders.md)
 - Używanie [maksymalnego użycia](maximum-usage.md) do śledzenia zobowiązań zakupu

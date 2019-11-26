@@ -41,7 +41,7 @@ Projektant klas wyświetla wizualną powierzchnię projektową o nazwie *Diagram
 
 - Struct
 
-- Wyliczenie
+- Enum
 
 - Makro (wyświetla widok po przetworzeniu makra)
 

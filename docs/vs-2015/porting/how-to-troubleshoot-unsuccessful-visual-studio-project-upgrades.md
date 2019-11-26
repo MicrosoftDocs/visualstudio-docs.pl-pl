@@ -28,23 +28,23 @@ ms.locfileid: "74300354"
 # <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>Porady: rozwiązywanie problemów z nieudanymi aktualizacjami projektu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Czasami program Visual Studio w pełni nie można przekonwertować projekt z wcześniejszej wersji programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Jeśli porady w poniższych sekcjach umożliwiają rozwiązania określonego problemu, można znaleźć więcej informacji na temat TechNet [witryny typu Wiki: Portal programowania](https://go.microsoft.com/fwlink/?LinkId=254808).
+Czasami program Visual Studio nie może w pełni skonwertować projektu ze starszej wersji [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Jeśli porady w poniższych sekcjach nie rozwiązują określonego problemu, może być możliwe znalezienie dodatkowych informacji na stronie TechNet [wiki: Portal dla deweloperów](https://go.microsoft.com/fwlink/?LinkId=254808).
 
 ## <a name="the-project-does-not-run-because-files-are-not-found"></a>Projekt nie działa, ponieważ pliki nie zostaną znalezione
- Plik projektu zawiera ścieżki do plików ustalonych, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] używa, aby uruchomić projekt, po naciśnięciu klawisza F5. Te ścieżki mogą obejmować lokalizacja devenv.exe i inne wymagane pliki. W uaktualnionej wersji [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ścieżki te pliki zostały zmienione.
+ Plik projektu zawiera zakodowane ścieżki plików, których [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] używa do uruchamiania projektu po naciśnięciu klawisza F5. Te ścieżki mogą obejmować lokalizacja devenv.exe i inne wymagane pliki. W uaktualnionej wersji [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ścieżki tych plików mogły zostać zmienione.
 
 #### <a name="to-resolve-incorrect-file-paths"></a>Aby rozwiązać niepoprawny plik ścieżki
 
 1. Otwórz plik projektu w edytorze tekstów.
 
-2. Skanuj w poszukiwaniu ścieżki plików, które mogą być niepoprawne, zwłaszcza tych, które zawierają [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] numer wersji.
+2. Skanuj w poszukiwaniu ścieżek plików, które mogą być nieprawidłowe, zwłaszcza tych, które zawierają [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] numer wersji.
 
 3. Tak, aby wskazać nowe obiekty docelowe, należy zmodyfikować ścieżki niepoprawny plik.
 
 ## <a name="the-project-does-not-build-because-references-are-not-valid"></a>Projekt nie kompiluje się, ponieważ odwołania są nieprawidłowe
- Po uaktualnieniu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], może również być uaktualniania [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] wersji. Jeśli projekt zawiera odwołania, które są anulowane w nowszego [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] wersji, ich mogą nie być rozpoznawane poprawnie. Jest to bardzo prawdopodobne, odwołań, które zawierają numery wersji, na przykład `Microsoft.VisualStudio.Shell.Interop.8.0`.
+ W przypadku uaktualniania [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]można również uaktualnić wersję [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Jeśli projekt zawiera odwołania, które są wycofane w nowszej wersji [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], mogą one nie zostać poprawnie rozwiązane. Jest to szczególnie przydatne w przypadku odwołań zawierających numery wersji, na przykład `Microsoft.VisualStudio.Shell.Interop.8.0`.
 
- Jeśli kod ma wiele nieprawidłowe odwołania, najprostszym rozwiązaniu może być funkcja wielowersyjności [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pod kątem starszej wersji [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
+ Jeśli kod zawiera wiele nieprawidłowych odwołań, najprostszym rozwiązaniem może być użycie funkcji wielowartościowego [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], aby docelowa była wcześniejsza wersja [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
 
 #### <a name="to-resolve-incorrect-references"></a>Aby rozwiązać niepoprawne odwołania
 
@@ -52,9 +52,9 @@ Czasami program Visual Studio w pełni nie można przekonwertować projekt z wcz
 
 2. Otwórz właściwości projektu.
 
-3. Wybierz poprawnego **platformę docelową** wartość. Alternatywnie, można zmodyfikować wartości `<TargetFrameworkVersion>` elementu bezpośrednio w pliku projektu.
+3. Wybierz poprawną wartość **platformy docelowej** . Alternatywnie można zmodyfikować wartość `<TargetFrameworkVersion>` elementu bezpośrednio w pliku projektu.
 
-   Jeśli chcesz, aby projekt do uruchamiania w uaktualnionego [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] wersji, należy zaktualizować odwołania do projektu, a także aktualizacji `Imports` lub `Using` instrukcji, które wywołują odwołania. Jeśli projekt ładuje się w środowisku IDE, można zaktualizować odwołania przy użyciu **Eksploratora rozwiązań** lub **Menadżer odwołań** okno dialogowe.
+   Jeśli chcesz, aby projekt był uruchamiany w uaktualnionej wersji [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], musisz zaktualizować odwołania do projektu, a także zaktualizować wszelkie instrukcje `Imports` lub `Using`, które wywołują odwołania. Jeśli projekt jest ładowany w IDE, można zaktualizować odwołania przy użyciu **Eksplorator rozwiązań** lub okna dialogowego **Menedżer odwołań** .
 
 ## <a name="see-also"></a>Zobacz też
- [/ Upgrade (devenv.exe)](../ide/reference/upgrade-devenv-exe.md) [konwertowanie na platformie ASP.NET 4](https://msdn.microsoft.com/library/790147c6-36c1-41b5-a52d-30b9ccd2bd10)
+ [/Upgrade (devenv. exe)](../ide/reference/upgrade-devenv-exe.md) [konwertowanie na ASP.NET 4](https://msdn.microsoft.com/library/790147c6-36c1-41b5-a52d-30b9ccd2bd10)

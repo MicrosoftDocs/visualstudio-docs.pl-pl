@@ -22,7 +22,7 @@ ms.locfileid: "74300623"
 # <a name="what39s-new-in-profiling-tools"></a>Co&#39;nowego w narzędzia profilowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aby uzyskać informacji o tym, co nowego w programie Visual Studio 2015 Update 1, debugowanie i Diagnostyka, zobacz [Visual Studio 2015 Update 1 informacje o wersji](https://www.visualstudio.com/news/vs2015-update1-vs#debug).  
+Aby uzyskać informacje na temat wszystkiego nowego w programie Visual Studio 2015 Update 1 — debugowanie i diagnostyka, zobacz [Informacje o wersji programu Visual studio 2015 Update 1](https://www.visualstudio.com/news/vs2015-update1-vs#debug).  
   
  Aby uzyskać informacje na temat wszystkiego nowego w programie Visual Studio 2015 debugowanie i diagnostyka, zobacz [Informacje o wersji programu Visual studio 2015](https://www.visualstudio.com/news/vs2015-vs#Debug).  
   

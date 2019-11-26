@@ -18,13 +18,13 @@ ms.locfileid: "74293374"
 Można uaktualnić program Visual Studio 2010 lub Visual Studio 2012 niestandardowe początek strony Visual Studio 2015 wykonując kroki wymienione poniżej.
 
 > [!WARNING]
-> Niestandardową stronę początkową uaktualnione w ramach tej procedury jest ten, który został utworzony za pomocą [niestandardowej strony początkowej](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.CustomStartPageProjectTemplate) szablonu galerii Visual Studio. Swoją stronę początkową mogą mieć inne funkcje, które muszą zostać uaktualniony.
+> Niestandardowa strona początkowa uaktualniona w tej procedurze jest tą utworzoną przy użyciu szablonu [niestandardowego strony początkowej](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.CustomStartPageProjectTemplate) w galerii programu Visual Studio. Swoją stronę początkową mogą mieć inne funkcje, które muszą zostać uaktualniony.
 
 ### <a name="to-upgrade-a-custom-start-page-to-visual-studio-2015"></a>Aby uaktualnić niestandardową stronę początkową do programu Visual Studio 2015
 
-1. Upewnij się, że zainstalowany program Visual Studio 2015 i Visual Studio 2015 SDK. Możesz pobrać VSSDK z [programu Microsoft Visual Studio 2013 SDK](https://my.visualstudio.com/Downloads?pid=1436).
+1. Upewnij się, że zainstalowany program Visual Studio 2015 i Visual Studio 2015 SDK. Możesz pobrać VSSDK z [zestawu Microsoft Visual Studio 2013 SDK](https://my.visualstudio.com/Downloads?pid=1436).
 
-2. Otwórz swój projekt szablonu niestandardowego. Zostanie wyświetlony komunikat informujący, że projekt jest uaktualniany. Kliknij przycisk **OK** i poczekaj na uaktualnienie zakończyć.
+2. Otwórz swój projekt szablonu niestandardowego. Zostanie wyświetlony komunikat informujący, że projekt jest uaktualniany. Kliknij przycisk **OK** i poczekaj na zakończenie uaktualniania.
 
 3. We właściwościach projektu dla projektu strona uruchamiania i projektu kontroli upewnij się, że platforma docelowa jest co najmniej programu .NET Framework 4.5.
 
@@ -52,4 +52,4 @@ Można uaktualnić program Visual Studio 2010 lub Visual Studio 2012 niestandard
         xmlns:vsfx="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.14.0"
         ```
 
-7. Otwórz MyControl.xaml i zmienić odwołanie do przestrzeni nazw `xmlns:vs="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.11.0"` do `xmlns:vs="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.14.0"` .
+7. Otwórz formant. XAML i Zmień `xmlns:vs="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.11.0"` odwołania do przestrzeni nazw, aby `xmlns:vs="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.14.0"`.

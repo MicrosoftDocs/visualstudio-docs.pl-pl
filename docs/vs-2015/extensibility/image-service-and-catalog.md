@@ -151,7 +151,7 @@ Ten Cookbook zawiera wskazówki i najlepsze rozwiązania dotyczące wdrażania u
 |ID|Potrzeb Część identyfikatora monikera obrazu|  
 |AllowColorInversion|[Opcjonalne, wartość domyślna true] Wskazuje, czy obraz może być programowo odwrócony, gdy jest używany na ciemnym tle.|  
 
- **Obiekt źródłowy**  
+ **Zewnętrz**  
 
  Element > Source \<definiuje pojedynczy zasób źródłowy obrazu (XAML i PNG).  
 
@@ -164,7 +164,7 @@ Ten Cookbook zawiera wskazówki i najlepsze rozwiązania dotyczące wdrażania u
 |               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Atrybut** |                                                                                                                                                                                                                                                                                                                                                                                                                                                                            **Definicja**                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-|      adresu      |                                                                                                                                                                                                                                                                                                               Potrzeb Identyfikator URI, który definiuje miejsce, z którego można załadować obraz. Może to być jedna z następujących czynności:<br /><br /> - [Identyfikator URI pakietu](https://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) przy użyciu urzędu Application:///<br />-Bezwzględne odwołanie do zasobu składnika<br />-Ścieżka do pliku zawierającego zasób natywny                                                                                                                                                                                                                                                                                                               |
+|      URI      |                                                                                                                                                                                                                                                                                                               Potrzeb Identyfikator URI, który definiuje miejsce, z którego można załadować obraz. Może to być jedna z następujących czynności:<br /><br /> - [Identyfikator URI pakietu](https://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) przy użyciu urzędu Application:///<br />-Bezwzględne odwołanie do zasobu składnika<br />-Ścieżka do pliku zawierającego zasób natywny                                                                                                                                                                                                                                                                                                               |
 |  Tło   | Obowiązkowe Wskazuje, jaki rodzaj tła ma być używany.<br /><br /> Może to być jedna z następujących czynności:<br /><br /> *Jasne:* Źródło może być używane na jasnym tle.<br /><br /> <em>Ciemny:</em> Źródło może być używane w ciemnym tle.<br /><br /> *HighContrast:* Źródło może być używane na dowolnym tle w trybie duży kontrast.<br /><br /> *HighContrastLight:* Źródło może być używane na jasnym tle w trybie duży kontrast.<br /><br /> *HighContrastDark:* Źródło może być używane na ciemnym tle w trybie duży kontrast.<br /><br /> Jeśli atrybut Background zostanie pominięty, źródło może być używane w dowolnym tle.<br /><br /> Jeśli tło jest *jasne*, *ciemne*, *HighContrastLight*lub *HighContrastDark*, kolory źródła nigdy nie są odwracane. Jeśli tło zostanie pominięte lub ustawiona na *HighContrast*, inwersja kolorów źródła jest kontrolowana przez atrybut **AllowColorInversion** obrazu. |
 |               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 
@@ -187,10 +187,10 @@ Ten Cookbook zawiera wskazówki i najlepsze rozwiązania dotyczące wdrażania u
 |||  
 |-|-|  
 |**Atrybut**|**Definicja**|  
-|Typ|Potrzeb Typ zasobu natywnego, XAML lub PNG|  
+|Type|Potrzeb Typ zasobu natywnego, XAML lub PNG|  
 |ID|Potrzeb Część identyfikatora całkowitego zasobu natywnego|  
 
- **ImageList**  
+ **Obrazów**  
 
  \<ImageList > element definiuje kolekcję obrazów, które mogą być zwracane w jednym pasku. Pasek jest zbudowany na żądanie, zgodnie z potrzebami.  
 
@@ -206,7 +206,7 @@ Ten Cookbook zawiera wskazówki i najlepsze rozwiązania dotyczące wdrażania u
 |**Atrybut**|**Definicja**|  
 |Identyfikator GUID|Potrzeb Część identyfikatora GUID obrazu monikera|  
 |ID|Potrzeb Część identyfikatora monikera obrazu|  
-|Zewnętrzne|[Opcjonalne, wartość domyślna to false] Wskazuje, czy moniker obrazu odwołuje się do obrazu w bieżącym manifeście.|  
+|Zewnętrzna|[Opcjonalne, wartość domyślna to false] Wskazuje, czy moniker obrazu odwołuje się do obrazu w bieżącym manifeście.|  
 
  Moniker zawartego obrazu nie musi odwoływać się do obrazu zdefiniowanego w bieżącym manifeście. Jeśli w bibliotece obrazów nie można znaleźć zawartego obrazu, w jego miejscu zostanie użyty pusty obraz zastępczy.  
 
@@ -215,27 +215,27 @@ Ten Cookbook zawiera wskazówki i najlepsze rozwiązania dotyczące wdrażania u
 ### <a name="first-steps-managed"></a>Pierwsze kroki (zarządzane)  
  Aby korzystać z usługi Image Service, należy dodać do projektu odwołania do niektórych lub wszystkich następujących zestawów:  
 
-- **Microsoft.VisualStudio.ImageCatalog.dll**  
+- **Microsoft. VisualStudio. ImageCatalog. dll**  
 
   - Wymagane w przypadku korzystania z wbudowanego wykazu obrazów KnownMonikers  
 
-- **Microsoft.VisualStudio.Imaging.dll**  
+- **Microsoft. VisualStudio. Imaging. dll**  
 
   - Wymagane, jeśli używasz **CrispImage** i **ImageThemingUtilities** w interfejsie użytkownika WPF  
 
-- **Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll**  
+- **Microsoft. VisualStudio. Imaging. Interop. 14.0. DesignTime. dll**  
 
   - Wymagane, jeśli używane są typy **ImageMoniker** i **structsize**  
 
   - **EmbedInteropTypes** powinna być ustawiona na wartość true  
 
-- **Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime**  
+- **Microsoft. VisualStudio. Shell. Interop. 14.0. DesignTime**  
 
   - Wymagane w przypadku użycia typu **IVsImageService2**  
 
   - **EmbedInteropTypes** powinna być ustawiona na wartość true  
 
-- **Microsoft.VisualStudio.Utilities.dll**  
+- **Microsoft. VisualStudio. Utilities. dll**  
 
   - Wymagane w przypadku użycia **BrushToColorConverter** dla ImageThemingUtilities. **ImageBackgroundColor** w interfejsie użytkownika WPF  
 
@@ -243,7 +243,7 @@ Ten Cookbook zawiera wskazówki i najlepsze rozwiązania dotyczące wdrażania u
 
   - Wymagane w przypadku użycia typu **IVsUIObject**  
 
-- **Microsoft.VisualStudio.Shell.Interop.10.0.dll**  
+- **Microsoft. VisualStudio. Shell. Interop. 10.0. dll**  
 
   - Wymagane w przypadku korzystania z pomocników interfejsu użytkownika powiązanych z WinFormami  
 
@@ -252,15 +252,15 @@ Ten Cookbook zawiera wskazówki i najlepsze rozwiązania dotyczące wdrażania u
 ### <a name="first-steps-native"></a>Pierwsze kroki (natywne)  
  Aby korzystać z usługi Image Service, należy uwzględnić niektóre lub wszystkie z następujących nagłówków w projekcie:  
 
-- **KnownImageIds.h**  
+- **KnownImageIds. h**  
 
   - Wymagane, jeśli używasz wbudowanego **KnownMonikers**wykazu obrazów, ale nie można użyć typu **ImageMoniker** , takiego jak podczas zwracania wartości z **IVsHierarchy GetGuidProperty** lub **GetProperty** wywołania.  
 
-- **KnownMonikers.h**  
+- **KnownMonikers. h**  
 
   - Wymagane, jeśli używasz wbudowanego wykazu **KnownMonikers**.  
 
-- **ImageParameters140.h**  
+- **ImageParameters140. h**  
 
   - Wymagane, jeśli używane są typy **ImageMoniker** i **structsize** .  
 
@@ -274,7 +274,7 @@ Ten Cookbook zawiera wskazówki i najlepsze rozwiązania dotyczące wdrażania u
 
   - Nie należy używać tego nagłówka, jeśli usługa obrazów może obsłużyć wykonywanie przez nich obrazów.  
 
-- **VSUIDPIHelper.h**  
+- **VSUIDPIHelper. h**  
 
   - Wymagane, jeśli używasz pomocników DPI do uzyskania bieżącej wartości DPI.  
 
@@ -674,7 +674,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
  Narzędzie do przeglądania bibliotek obrazów może ładować manifesty obrazów i umożliwia użytkownikowi manipulowanie nimi w taki sam sposób, w jaki program Visual Studio może upewnić się, że manifest został poprawnie utworzony. Użytkownik może zmienić ustawienia tła, rozmiarów, ustawienia DPI, duży kontrast i innych ustawień. Wyświetla również informacje o ładowaniu, aby znaleźć błędy w manifestach i wyświetlić informacje źródłowe dla każdego obrazu w manifeście.  
 
-## <a name="faq"></a>Najczęściej zadawane pytania  
+## <a name="faq"></a>Często zadawane pytania  
 
 - Czy istnieją zależności, które należy uwzględnić podczas ładowania \<odwołanie = "Microsoft. VisualStudio. *. Międzyoperacyjności. 14.0. DesignTime "/>?  
 
@@ -962,10 +962,10 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
     |GlyphKeyword||IntellisenseKeyword|  
     |GlyphInformation||StatusInformation|  
     |GlyphReference||ClassMethodReference|  
-    |GlyphRecursion||Rekursja|  
+    |GlyphRecursion||{1&gt;Rekursja&lt;1}|  
     |GlyphXmlItem||Tag|  
     |GlyphJSharpProject||Elementu documentcollection|  
-    |GlyphJSharpDocument||dokument|  
+    |GlyphJSharpDocument||Dokument|  
     |GlyphForwardType||GoToNext|  
     |GlyphCallersGraph||CallTo|  
     |GlyphCallGraph||CallFrom|  

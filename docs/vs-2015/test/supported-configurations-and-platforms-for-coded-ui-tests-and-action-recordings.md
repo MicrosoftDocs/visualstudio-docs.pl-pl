@@ -25,7 +25,7 @@ Obsługiwane konfiguracje i platformy dla kodowanych testów interfejsu użytkow
 > [!NOTE]
 > Proces kodowanego testu interfejsu użytkownika musi mieć takie same uprawnienia, jak aplikacja poddawana testom.
 
- **Wymagania**
+ **Requirements**
 
 - Visual Studio Enterprise
 
@@ -41,7 +41,7 @@ Obsługiwane konfiguracje i platformy dla kodowanych testów interfejsu użytkow
 > [!NOTE]
 > *Synchronizacja interfejsu użytkownika* to funkcja, w której odtwarzanie jest weryfikowane w kolejce wiadomości każdej kontrolki. Jeśli formant nie odpowiedział na zdarzenie, które zostało do niego wysłane, zdarzenie jest wysyłane ponownie.
 
-## <a name="platform-support"></a>Obsługa platformy
+## <a name="platform-support"></a>Obsługa platform
 
 |Platforma|Poziom wsparcia|
 |--------------|----------------------|

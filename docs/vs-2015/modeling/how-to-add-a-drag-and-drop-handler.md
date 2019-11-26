@@ -23,7 +23,7 @@ Można dodać programy obsługi dla zdarzeń przeciągania i upuszczania do DSL,
 
  W tym temacie omówiono gesty przeciągania i upuszczania, które pochodzą z innych diagramów. Dla zdarzeń przenoszenia i kopiowania w ramach jednego diagramu należy rozważyć alternatywę definiowania podklasy `ElementOperations`. Aby uzyskać więcej informacji, zobacz [Dostosowywanie zachowania kopiowania](../modeling/customizing-copy-behavior.md). Możliwe jest również dostosowanie definicji DSL.
 
-## <a name="in-this-topic"></a>W tym temacie:
+## <a name="in-this-topic"></a>W tym temacie
 
 - Pierwsze dwie sekcje opisują alternatywne metody definiowania procedury obsługi gestu:
 
@@ -170,9 +170,9 @@ using System.Linq;
 
 1. Udostępnienie źródłowej magistrali DSL przez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Model Bus:
 
-    1. Pobierz i zainstaluj rozszerzenie magistrali modelu programu Visual Studio, jeśli nie jest jeszcze zainstalowane. Aby uzyskać więcej informacji, zobacz [wizualizacji i modelowania SDK](https://go.microsoft.com/fwlink/?LinkID=185579).
+    1. Pobierz i zainstaluj rozszerzenie magistrali modelu programu Visual Studio, jeśli nie jest jeszcze zainstalowane. Aby uzyskać więcej informacji, zobacz temat [Wizualizacja i Modeling SDK](https://go.microsoft.com/fwlink/?LinkID=185579).
 
-    2. Otwórz plik definicji DSL źródła DSL w projektant DSL. Kliknij prawym przyciskiem myszy powierzchnię projektu, a następnie kliknij przycisk **Włącz Modelbus**. W oknie dialogowym wybierz jedną lub obie opcje.  Kliknij przycisk **OK**. Do rozwiązania DSL zostanie dodany nowy projekt "ModelBus".
+    2. Otwórz plik definicji DSL źródła DSL w projektant DSL. Kliknij prawym przyciskiem myszy powierzchnię projektu, a następnie kliknij pozycję **Włącz ModelBus**. W oknie dialogowym wybierz jedną lub obie opcje.  Kliknij przycisk **OK**. Do rozwiązania DSL zostanie dodany nowy projekt "ModelBus".
 
     3. Kliknij kolejno pozycje **Przekształć wszystkie szablony** i Skompiluj ponownie rozwiązanie.
 

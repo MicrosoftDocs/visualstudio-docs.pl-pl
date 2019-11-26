@@ -65,7 +65,7 @@ W tym temacie opisano sposób izolowania problemów z wydajnością aplikacji pr
   
 3. Z **dostępnych narzędzi**wybierz pozycję **czas odpowiedzi interfejsu użytkownika HTML**, a następnie wybierz polecenie **Uruchom**.  
   
-4. Po uruchomieniu profilera czas odpowiedzi interfejsu użytkownika okno kontroli konta użytkowników może zażądać uprawnień do uruchomienia programu Visual Studio ETW collector. exe. Wybierz **tak**.  
+4. Po uruchomieniu profilera czas odpowiedzi interfejsu użytkownika okno kontroli konta użytkowników może zażądać uprawnień do uruchomienia programu Visual Studio ETW collector. exe. Wybierz opcję **tak**.  
   
      W celu przetestowania odpowiedniego scenariusza wydajności należy korzystać z aplikacji. Aby uzyskać szczegółowy przepływ pracy, zobacz [izolowanie problemu czasu odpowiedzi interfejsu użytkownika](#Workflow) i [izolowanie problemu dotyczącego przepływności wizualnej](#IsolateVisualThroughput).  
   
@@ -316,7 +316,7 @@ if (performance.mark && performance.measure) {
   
 - **Wykonywania.** Wskazuje czas spędzony na analizie i uruchamianiu języka JavaScript. Obejmuje to zdarzenia DOM, czasomierze, ocenę skryptu i działanie ramki animacji. Obejmuje zarówno kod użytkownika, jak i kod biblioteki.  
   
-- **GC.** Wskazuje czas spędzony na wyrzucaniu elementów bezużytecznych.  
+- **Globalnego.** Wskazuje czas spędzony na wyrzucaniu elementów bezużytecznych.  
   
 - **Stylów.** Wskazuje czas spędzony na analizie CSS i obliczaniu prezentacji i układu elementu.  
   
@@ -330,29 +330,29 @@ if (performance.mark && performance.measure) {
   
   W tej tabeli przedstawiono zdarzenia i ich opisy:  
   
-|Wydarzenie|Kategoria zdarzenia|Występuje, gdy|  
+|Zdarzenie|Kategoria zdarzenia|Występuje, gdy|  
 |-----------|--------------------|-----------------|  
 |Analizowanie kodu CSS|Ładowaniu|Napotkano nową zawartość CSS i podjęto próbę przeanalizowania zawartości CSS.|  
 |Analiza kodu HTML|Ładowaniu|Napotkano nową zawartość HTML i podjęto próbę przeanalizowania zawartości w węzłach i wstawienia zawartości do drzewa modelu DOM.|  
 |Żądanie HTTP|Ładowaniu|Znaleziono zasób zdalny w modelu DOM lub utworzono element XMLHttpRequest, który spowodowało żądanie HTTP.|  
 |Pobieranie spekulacyjne|Ładowaniu|Zawartość HTML strony przeszukał wymagane zasoby, aby kolejne żądania HTTP dotyczące zasobów mogły być zaplanowane szybko.|  
-|Funkcja wywołania zwrotnego ramki animacji|Wykonywanie skryptów|Przeglądarka przerenderuje kolejną ramkę i wywołała funkcję wywołania zwrotnego podaną przez aplikację.|  
-|Wydarzenie DOM|Wykonywanie skryptów|Wystąpiło zdarzenie DOM i zostało wykonane.<br /><br /> Właściwość `context` dla zdarzenia DOM, taka jak `DOMContentLoaded` lub `click`, jest pokazywana w nawiasach.|  
-|Odbiornik zdarzeń|Wykonywanie skryptów|Odbiornik zdarzeń został wywołany i wykonany.|  
-|Odbiornik zapytań o multimedia|Wykonywanie skryptów|Zarejestrowane zapytanie o multimedia zostało unieważnione, co spowodowało wykonanie skojarzonych z nim odbiorników.|  
-|Obserwator mutacji|Wykonywanie skryptów|Co najmniej jeden z obserwowanych elementów DOM został zmodyfikowany, co spowodowało wykonanie wywołania zwrotnego skojarzonego z MutationObserver.|  
-|Obliczanie skryptu|Wykonywanie skryptów|W modelu DOM znaleziono nowy element skryptu i podjęto próbę przeanalizowania i wykonania skryptu.|  
-|Czasomierz|Wykonywanie skryptów|Upłynął zaplanowany czasomierz, który spowodował wykonanie skojarzonej funkcji wywołania zwrotnego.|  
-|środowisko wykonawcze systemu Windows asynchronicznej funkcji wywołania zwrotnego|Wykonywanie skryptów|Operacja asynchroniczna, która wyzwoliła `Promise` funkcję wywołania zwrotnego została wykonana przez obiekt środowisko wykonawcze systemu Windows.|  
-|Zdarzenie środowisko wykonawcze systemu Windows|Wykonywanie skryptów|Zdarzenie, które wystąpiło w obiekcie środowisko wykonawcze systemu Windows wyzwolił zarejestrowany odbiornik.|  
+|Funkcja wywołania zwrotnego ramki animacji|Obsługa skryptów|Przeglądarka przerenderuje kolejną ramkę i wywołała funkcję wywołania zwrotnego podaną przez aplikację.|  
+|Wydarzenie DOM|Obsługa skryptów|Wystąpiło zdarzenie DOM i zostało wykonane.<br /><br /> Właściwość `context` dla zdarzenia DOM, taka jak `DOMContentLoaded` lub `click`, jest pokazywana w nawiasach.|  
+|Odbiornik zdarzeń|Obsługa skryptów|Odbiornik zdarzeń został wywołany i wykonany.|  
+|Odbiornik zapytań o multimedia|Obsługa skryptów|Zarejestrowane zapytanie o multimedia zostało unieważnione, co spowodowało wykonanie skojarzonych z nim odbiorników.|  
+|Obserwator mutacji|Obsługa skryptów|Co najmniej jeden z obserwowanych elementów DOM został zmodyfikowany, co spowodowało wykonanie wywołania zwrotnego skojarzonego z MutationObserver.|  
+|Obliczanie skryptu|Obsługa skryptów|W modelu DOM znaleziono nowy element skryptu i podjęto próbę przeanalizowania i wykonania skryptu.|  
+|Czasomierz|Obsługa skryptów|Upłynął zaplanowany czasomierz, który spowodował wykonanie skojarzonej funkcji wywołania zwrotnego.|  
+|środowisko wykonawcze systemu Windows asynchronicznej funkcji wywołania zwrotnego|Obsługa skryptów|Operacja asynchroniczna, która wyzwoliła `Promise` funkcję wywołania zwrotnego została wykonana przez obiekt środowisko wykonawcze systemu Windows.|  
+|Zdarzenie środowisko wykonawcze systemu Windows|Obsługa skryptów|Zdarzenie, które wystąpiło w obiekcie środowisko wykonawcze systemu Windows wyzwolił zarejestrowany odbiornik.|  
 |Wyrzucanie elementów bezużytecznych|GC|Czas poświęcony na zbieranie pamięci dla obiektów, które nie były już używane.|  
 |Obliczenia CSS|Style|Wprowadzono zmiany w modelu DOM, które wymagały ponownego obliczenia właściwości stylu wszystkich elementów, których dotyczy.|  
 |Układ|Style|Wprowadzono zmiany w modelu DOM, które wymagały ponownego obliczenia rozmiaru i/lub pozycji wszystkich elementów, których dotyczy.|  
 |Obrazu|Renderowanie|Wprowadzono zmiany wizualne w modelu DOM i podjęto próbę ponownego renderowania części strony.|  
 |Warstwa renderowania|Renderowanie|Wprowadzono zmiany wizualne do niezależnie renderowanego fragmentu modelu DOM (zwanego warstwą) i zmiany wymagały renderowania części strony.|  
 |Dekodowanie obrazu|Dekodowanie obrazu|Obraz został dołączony do modelu DOM i podjęto próbę dekompresowania i zdekodowania obrazu z oryginalnego formatu do mapy bitowej.|  
-|Klatka|Brak|Wprowadzono zmiany wizualne w modelu DOM, które wymagały narysowania wszystkich części strony, których dotyczą. Jest to zdarzenie generowane przez narzędzie używane do grupowania.|  
-|Miara użytkownika|Brak|Scenariusz specyficzny dla aplikacji został zmierzony przy użyciu metody `performance.measure`. Jest to zdarzenie generowane przez narzędzie służące do analizowania kodu.|  
+|Klatka|N/D|Wprowadzono zmiany wizualne w modelu DOM, które wymagały narysowania wszystkich części strony, których dotyczą. Jest to zdarzenie generowane przez narzędzie używane do grupowania.|  
+|Miara użytkownika|N/D|Scenariusz specyficzny dla aplikacji został zmierzony przy użyciu metody `performance.measure`. Jest to zdarzenie generowane przez narzędzie służące do analizowania kodu.|  
   
 ## <a name="Tips"></a>Dodatkowe informacje  
   

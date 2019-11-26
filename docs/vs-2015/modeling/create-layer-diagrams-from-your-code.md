@@ -48,7 +48,7 @@ Aby wizualizować architekturę logiczną wysokiego poziomu systemu oprogramowan
 
 4. W obszarze **Dodaj do projektu modelowania**przejdź do i wybierz istniejący projekt modelowania w rozwiązaniu.
 
-     —lub—
+     lub
 
      Wybierz pozycję **Utwórz nowy projekt modelowania** , aby dodać nowy projekt modelowania do rozwiązania.
 
@@ -64,7 +64,7 @@ Aby wizualizować architekturę logiczną wysokiego poziomu systemu oprogramowan
 
  Aby sprawdzić, czy połączony element obsługuje walidację, Otwórz **Eksploratora warstw** i sprawdź Właściwość **obsługuje walidację** elementu. Zobacz [Zarządzanie łączami do artefaktów](#Managing).
 
-|**To**|**Wykonaj następujące kroki**|
+|**Do**|**Wykonaj następujące kroki**|
 |------------|----------------------------|
 |Utworzyć warstwę dla pojedynczego artefakt|<ol><li>Przeciągnij element na diagram warstwy z następujących źródeł:<br /><br /> <ul><li>**Eksplorator rozwiązań**<br /><br />         Możesz na przykład przeciągać pliki lub projekty.</li><li>Mapy kodu<br /><br />         Zapoznaj się z [zależnościami mapy w swoich rozwiązaniach](../modeling/map-dependencies-across-your-solutions.md) i [korzystaj z map kodu do debugowania aplikacji](../modeling/use-code-maps-to-debug-your-applications.md).</li><li>**Widok klasy** lub **Przeglądarka obiektów**</li></ul><br />     Warstwy jest wyświetlana na diagramie i jest połączona z artefaktem.</li><li>Zmień nazwę warstwy, aby odzwierciedlała obowiązki skojarzonego kodu lub artefaktów.</li></ol> **Ważne:**  Przeciąganie plików binarnych do diagramu warstwowego nie powoduje automatycznego dodania odwołań do projektu modelowania. Musisz ręcznie dodać do projektu modelowania pliki binarne, które chcesz walidować. **Aby dodać pliki binarne do projektu modelowania** <ol><li>W **Eksplorator rozwiązań**Otwórz menu skrótów dla projektu modelowania, a następnie wybierz **Dodaj istniejący element**.</li><li>W oknie dialogowym **Dodaj istniejący element** przejdź do plików binarnych, zaznacz je, a następnie wybierz **przycisk OK**.     Pliki binarne pojawią się w projekcie modelowania.</li><li>W **Eksplorator rozwiązań**wybierz plik binarny, który został dodany, a następnie naciśnij klawisz **F4** , aby otworzyć okno **Właściwości** .</li><li>Dla każdego pliku binarnego ustaw właściwość **Akcja kompilacji** na **Sprawdź poprawność**.</li></ol>|
 |Utwórz jedną warstwę dla wszystkich zaznaczonych artefaktów|Przeciągnij wszystkie artefakty do diagramu warstwowego w tym samym czasie.<br /><br /> Warstw pojawi się na diagramie i będzie połączona z artefaktami.|
@@ -94,7 +94,7 @@ Aby wizualizować architekturę logiczną wysokiego poziomu systemu oprogramowan
 
 2. Wykonaj następujące zadania, aby zarządzać tymi łączami:
 
-|**To**|**W Eksploratorze warstwy**|
+|**Do**|**W Eksploratorze warstwy**|
 |------------|---------------------------|
 |Usuwanie łącza między warstwą i artefaktem|Otwórz menu skrótów dla łącza artefaktu, a następnie wybierz polecenie **Usuń**.|
 |Przenoszenie łącza z jednej warstwy na drugą|Przeciągnij łącze artefaktu do istniejącej warstwy na diagramie.<br /><br /> oraz<br /><br /> 1. Otwórz menu skrótów dla łącza artefaktu, a następnie wybierz polecenie **Wytnij**.<br />2. na diagramie warstwowym Otwórz menu skrótów dla warstwy, a następnie wybierz **Wklej**.|
@@ -115,7 +115,7 @@ Aby wizualizować architekturę logiczną wysokiego poziomu systemu oprogramowan
 ## <a name="EditDependencies"></a>Edycja warstw i zależności w celu pokazania zamierzonego projektu
  Do opisania zmian, które planujesz wprowadzić do systemu lub zamierzonej architektury, przeprowadź edycję diagramu warstwowego:
 
-|**To**|**Wykonaj następujące kroki**|
+|**Do**|**Wykonaj następujące kroki**|
 |------------|-----------------------------|
 |Zmień lub ogranicz kierunek zależności|Ustaw jej właściwość **Direction** .|
 |Tworzenie nowych zależności|Użyj **zależności** i **dwukierunkowych narzędzi zależności** .<br /><br /> Aby narysować wiele zależności, kliknij dwukrotnie narzędzie. Gdy skończysz, wybierz narzędzie **wskaźnik** lub naciśnij klawisz **ESC** .|

@@ -21,7 +21,7 @@ ms.lasthandoff: 11/21/2019
 ms.locfileid: "74301022"
 ---
 # <a name="bind-to-an-activity39s-property-dialog-box-legacy"></a>Powiąż z oknem&#39;dialogowym właściwości działania (starsza wersja)
-W tym temacie opisano sposób użycia okna dialogowego **Powiązywanie z właściwością działania** w starszej [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Użyj starszego [!INCLUDE[wfd2](../includes/wfd2-md.md)] konieczność docelowy: [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+W tym temacie opisano sposób użycia okna dialogowego **Powiązywanie z właściwością działania** w starszej [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Użyj starszej [!INCLUDE[wfd2](../includes/wfd2-md.md)], jeśli chcesz wskazać [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
  Typ wystąpienia właściwości zależności można powiązać z publiczną właściwością lub zdarzeniem innego działania. Aby uzyskać więcej informacji na temat powiązania działań, zobacz [Używanie właściwości zależności](https://go.microsoft.com/fwlink?LinkID=65007).
 

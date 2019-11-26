@@ -42,7 +42,7 @@ Podczas tworzenia nowego projektu przepływu pracy automatu stanów w [!INCLUDE[
 
 |Nazwa przybornika|Działanie|Opis|
 |------------------|--------------|-----------------|
-|**State**|[Działanie StateActivity](https://go.microsoft.com/fwlink?LinkID=65042)|Reprezentuje stan na komputerze stanu; może zawierać dodatkowe działania **działanie StateActivity** . Aby uzyskać więcej informacji, zobacz [Korzystanie z działania działanie StateActivity](https://go.microsoft.com/fwlink?LinkID=65083).|
+|**Stan**|[Działanie StateActivity](https://go.microsoft.com/fwlink?LinkID=65042)|Reprezentuje stan na komputerze stanu; może zawierać dodatkowe działania **działanie StateActivity** . Aby uzyskać więcej informacji, zobacz [Korzystanie z działania działanie StateActivity](https://go.microsoft.com/fwlink?LinkID=65083).|
 |**Metoda setstate**|[SetStateActivity](https://go.microsoft.com/fwlink?LinkID=65041)|Określa przejście do nowego stanu. Aby uzyskać więcej informacji, zobacz [Korzystanie z działania SetStateActivity](https://go.microsoft.com/fwlink?LinkID=65082).|
 |**StateInitialization**|[StateInitializationActivity](https://go.microsoft.com/fwlink?LinkID=65044)|Wykonuje się po wprowadzeniu stanu; może zawierać inne działania. Aby uzyskać więcej informacji, zobacz [Korzystanie z działania StateInitialization](https://go.microsoft.com/fwlink?LinkID=65006).|
 |**StateFinalization**|[StateFinalizationActivity](https://go.microsoft.com/fwlink?LinkID=65043)|Wykonuje zawarte działania przy opuszczaniu działania [działanie StateActivity](https://go.microsoft.com/fwlink?LinkID=65042) . Aby uzyskać więcej informacji, zobacz [Korzystanie z działania StateFinalizationActivity](https://go.microsoft.com/fwlink?LinkID=65008).|

@@ -21,27 +21,27 @@ ms.locfileid: "74298061"
 
 Wstępna wersja programu Visual Studio możesz ocenić 14 dni bez rejestracji produktu. Po zarejestrowaniu, logując się przy użyciu konta Microsoft, aż do daty bomba czasu jest prawidłowy licencji wersji wstępnej.
 
- Oceń wersji wersje Professional i Enterprise programu Visual Studio przez 30 dni, rozpoczynając od instalacji produktu. [Logowanie do programu Visual Studio](../ide/signing-in-to-visual-studio.md) dodaje 60 dni do okresu próbnego, w sumie 90 dni. Jeżeli nie zarejestrujesz wersji próbnej Visual Studio w ciągu 30 dni, okres próbny wygaśnie 30 dni po zainstalowaniu produktu.
+ Oceń wersji wersje Professional i Enterprise programu Visual Studio przez 30 dni, rozpoczynając od instalacji produktu. [Zalogowanie się do programu Visual Studio](../ide/signing-in-to-visual-studio.md) powoduje dodanie 60 dni do okresu próbnego, przez co łączną liczbę dni równą 90. Jeżeli nie zarejestrujesz wersji próbnej Visual Studio w ciągu 30 dni, okres próbny wygaśnie 30 dni po zainstalowaniu produktu.
 
- Na przykład, jeśli pobieranie i używanie [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] dla 10 dni, a następnie zarejestrujesz, możesz używać go do przez dodatkowych 80 dni. Aby dalej używać produktu po 90 dniach, musisz podać prawidłowy klucz produktu lub zaloguj się do programu Visual Studio za pomocą konta Microsoft lub konta organizacyjnego, który jest skojarzony z subskrypcją MSDN lub subskrypcji programu Visual Studio Online. Aby uzyskać informacje o tym, jak zlokalizować lub uzyskać klucz produktu, zobacz [jak: Znajdź Visual Studio Product Key](../install/how-to-locate-the-visual-studio-product-key.md) i [jak kupić program Visual Studio](https://visualstudio.microsoft.com/vs/pricing/).
+ Jeśli na przykład pobierzesz i używasz [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] przez 10 dni, a następnie zarejestrujesz go, możesz użyć go przez dodatkowe 80 dni. Aby dalej używać produktu po 90 dniach, musisz podać prawidłowy klucz produktu lub zaloguj się do programu Visual Studio za pomocą konta Microsoft lub konta organizacyjnego, który jest skojarzony z subskrypcją MSDN lub subskrypcji programu Visual Studio Online. Aby uzyskać informacje dotyczące sposobu lokalizowania lub uzyskiwania klucza produktu, zobacz [How to: Zlokalizuj klucz produktu Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) i [Jak kupić program Visual Studio](https://visualstudio.microsoft.com/vs/pricing/).
 
 > [!IMPORTANT]
 > Okres próbny wersji w wersjach Express programu Visual Studio to również 30 dni. Aby rozszerzyć na czas nieokreślony okres próbny edycji Express programu Visual Studio, zarejestruj się w Visual Studio lub zarejestruj produkt.
 
- Przed rozpoczęciem uaktualnienia jest zalecamy, aby pobrać i przejrzeć [programu Visual Studio i MSDN licencjonowania białej księgi](https://www.microsoft.com/download/details.aspx?id=13350) z witryny sieci Web firmy Microsoft. Aby uzyskać dodatkową pomoc, zobacz [pomocy technicznej dla programu Visual Studio](https://support.microsoft.com/ph/1117/en-us).
+ Przed uaktualnieniem należy pobrać i przejrzeć [oficjalny dokument dotyczący licencjonowania programu Visual Studio i MSDN](https://www.microsoft.com/download/details.aspx?id=13350) z witryny sieci Web firmy Microsoft. Aby uzyskać dodatkową pomoc, zobacz [Pomoc techniczna dla programu Visual Studio](https://support.microsoft.com/ph/1117/en-us).
 
 ### <a name="to-upgrade-from-a-trial-edition-of-visual-studio-professional-or-enterprise"></a>Aby uaktualnić z edycji próbnej Visual Studio Professional lub Enterprise
 
-1. Uruchom program Visual Studio **Uruchom jako Administrator** trybu.
+1. Uruchom program Visual Studio w trybie **Uruchom jako administrator** .
 
-2. Na pasku menu wybierz **pomocy**, **Zarejestruj produkt**.
+2. Na pasku menu wybierz **Pomoc**, **zarejestruj produkt**.
 
-3. Wybierz **Zmień moją licencję produktu** łącza.
+3. Wybierz łącze **Zmień moją licencję na produkt** .
 
-4. Wprowadź prawidłowy klucz produktu, a następnie wybierz **Zastosuj** przycisku.
+4. Wprowadź prawidłowy klucz produktu, a następnie wybierz przycisk **Zastosuj** .
 
     > [!NOTE]
     > Dostęp do Internetu jest wymagany, aby zarejestrować i odblokować dowolną wersję programu Visual Studio. Po zarejestrowaniu programu Visual Studio połączenie z Internetem jest opcjonalne.
 
 ## <a name="see-also"></a>Zobacz też
- [Zainstaluj program Visual Studio](../install/install-visual-studio-2015.md) [logowanie do programu Visual Studio](../ide/signing-in-to-visual-studio.md) [jak: Locate the Visual Studio Product Key](../install/how-to-locate-the-visual-studio-product-key.md) [Locate or Change the Product Key for Team Foundation Server](https://msdn.microsoft.com/library/64f29927-b520-4c9f-b633-bcb527e562cd) [Dostosowywanie ustawień środowiska deweloperskiego w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
+ [Instalowanie programu Visual Studio](../install/install-visual-studio-2015.md) [Logowanie do programu Visual Studio](../ide/signing-in-to-visual-studio.md) [instrukcje: Lokalizowanie klucza produktu Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) [lokalizowanie lub zmiana klucza produktu w celu Team Foundation Server](https://msdn.microsoft.com/library/64f29927-b520-4c9f-b633-bcb527e562cd) [dostosowywania ustawień programistycznych w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)

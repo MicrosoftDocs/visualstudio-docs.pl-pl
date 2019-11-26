@@ -19,7 +19,7 @@ ms.locfileid: "74299860"
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Samouczek 2: Utworzenie kwizu matematycznego z limitem czasu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W tym samouczku utworzysz quiz, w którym powinieneś odpowiedzieć cztery losowe problemy arytmetyczne w określonym czasie. Dowiesz się, jak:
+W tym samouczku utworzysz quiz, w którym powinieneś odpowiedzieć cztery losowe problemy arytmetyczne w określonym czasie. Omawiane kwestie:
 
 - Generuj liczby losowe przy użyciu klasy `Random`.
 
@@ -38,7 +38,7 @@ W tym samouczku utworzysz quiz, w którym powinieneś odpowiedzieć cztery losow
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
-|Stanowisko|Opis|
+|Tytuł|Opis|
 |-----------|-----------------|
 |[Krok 1. Tworzenie projektu i dodawanie etykiet do formularza](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)|Zacznij od utworzenia projektu, zmiany właściwości i dodania formantów `Label`.|
 |[Krok 2. Tworzenie losowego problemu dodawania](../ide/step-2-create-a-random-addition-problem.md)|Utwórz problem z dodaniem i użyj klasy `Random`, aby wygenerować liczby losowe.|

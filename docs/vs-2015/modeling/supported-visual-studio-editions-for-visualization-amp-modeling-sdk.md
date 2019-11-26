@@ -21,7 +21,7 @@ ms.locfileid: "74298150"
 # <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>Obsługiwane wersje programu Visual Studio dla zestawu Visualization &amp; Modeling SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Poniżej przedstawiono listę wersji programu Visual Studio, które są obsługiwane w przypadku [!INCLUDE[dsl](../includes/dsl-md.md)] w środowiskach tworzenia i wdrażania. Aby uzyskać więcej informacji o tych wersjach, zobacz firmy Microsoft [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [Centrum deweloperów](https://go.microsoft.com/fwlink/?LinkId=75628).
+Poniżej przedstawiono listę wersji programu Visual Studio, które są obsługiwane przez program [!INCLUDE[dsl](../includes/dsl-md.md)] w środowiskach tworzenia i wdrażania. Aby uzyskać więcej informacji na temat tych wersji, zobacz [Centrum deweloperów](https://go.microsoft.com/fwlink/?LinkId=75628)Microsoft [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
 ## <a name="authoring-edition"></a>Tworzenie wersji
  Aby zdefiniować DSL, musisz mieć zainstalowane następujące składniki:
@@ -33,7 +33,7 @@ Poniżej przedstawiono listę wersji programu Visual Studio, które są obsługi
 |Visual Studio Visualisation i Modeling SDK|[http://go.microsoft.com/fwlink/?LinkID=186128](https://go.microsoft.com/fwlink/?LinkID=186128)|
 
 ## <a name="deployment-editions"></a>Wersje wdrożenia
- [!INCLUDE[dsl](../includes/dsl-md.md)] Wdrażanie języki specyficzne dla domeny, które tworzysz obsługuje następujące konfiguracje:
+ [!INCLUDE[dsl](../includes/dsl-md.md)] obsługuje następujące konfiguracje wdrażania utworzonych języków specyficznych dla domeny:
 
 - Visual Studio Enterprise
 
@@ -44,7 +44,7 @@ Poniżej przedstawiono listę wersji programu Visual Studio, które są obsługi
 - Studio Shell (tryb izolowany) pakiet redystrybucyjny pakiet redystrybucyjny programu Visual
 
 > [!NOTE]
-> Aby było uruchomić produkt powłoki języka DSL, należy ustawić **obsługiwanych wersji programu VS** pole manifestu rozszerzenia. Aby uzyskać więcej informacji, zobacz [wdrażania rozwiązań języka dotyczącego określonej domeny](../modeling/deploying-domain-specific-language-solutions.md).
+> Aby można było uruchomić interfejs DSL w produkcie powłoki, należy ustawić pole **obsługiwanego programu vs Edition** w manifeście rozszerzenia. Aby uzyskać więcej informacji, zobacz [wdrażanie rozwiązań językowych właściwych dla domeny](../modeling/deploying-domain-specific-language-solutions.md).
 
 ## <a name="see-also"></a>Zobacz też
- [Słownik narzędzi języka specyficznego dla domeny](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [narzędzia języka specyficznego dla domeny słownik](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

@@ -40,7 +40,7 @@ Uniwersalnej platformy Windows i naszych jednego rdzenia Windows umożliwia uruc
 
 - [Windows 10](https://windows.microsoft.com/windows/downloads)
 
-- [Visual Studio 2015](https://go.microsoft.com/fwlink/p/?LinkId=526725). Upewnij się, że na liście funkcje opcjonalne są wybrane narzędzia programistyczne dla aplikacji uniwersalnych systemu Windows. Bez tych narzędzi nie będziesz mieć możliwości tworzenia aplikacji uniwersalnych.
+- [Program Visual Studio 2015](https://go.microsoft.com/fwlink/p/?LinkId=526725). Upewnij się, że na liście funkcje opcjonalne są wybrane narzędzia programistyczne dla aplikacji uniwersalnych systemu Windows. Bez tych narzędzi nie będziesz mieć możliwości tworzenia aplikacji uniwersalnych.
 
   Po zainstalowaniu tego oprogramowania musisz [włączyć urządzenie z systemem Windows 10](https://msdn.microsoft.com/library/windows/apps/xaml/dn706236.aspx) na potrzeby programowania. (W przypadku każdego urządzenia z systemem Windows 10 nie jest już wymagana licencja dewelopera).
 

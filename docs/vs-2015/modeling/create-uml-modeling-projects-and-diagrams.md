@@ -59,7 +59,7 @@ Modele UML pomagają zrozumieć, omówić i projektować systemy oprogramowania.
 
    - Wybierz projekt modelowania, który już istnieje w rozwiązaniu, a następnie kliknij przycisk **OK**.
 
-     \- lub —
+     \- lub-
 
    1. Wybierz pozycję **Utwórz nowy projekt modelowania**, a następnie kliknij przycisk **OK**.
 
@@ -78,7 +78,7 @@ Modele UML pomagają zrozumieć, omówić i projektować systemy oprogramowania.
     > [!NOTE]
     > Projekt modelowania zawiera folder definicji modelu o nazwie **ModelDefinition**.
 
-2. W menu **Projekt** kliknij opcję **Dodaj nowy element**.
+2. W menu **projekt** kliknij polecenie **Dodaj nowy element**.
 
 3. W oknie dialogowym **Dodaj nowy element —** *\<nazwa projektu >* w obszarze **Szablony**kliknij typ diagramu modelowania, na przykład **diagram składników UML**.
 
@@ -143,14 +143,14 @@ Modele UML pomagają zrozumieć, omówić i projektować systemy oprogramowania.
 
 - Diagramy klas, które są tworzone jako widoki kodu źródłowego. Nie są one powiązane z diagramami klas UML. Aby uzyskać więcej informacji, zobacz [projektowanie i wyświetlanie klas i typów](../ide/designing-and-viewing-classes-and-types.md).
 
-- Mapy kodu. Zobacz [mapowanie zależności w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md).
+- Mapy kodu. Zobacz [zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md).
 
 - Diagramy, które nie są diagramami UML ani diagramami warstw, takich jak języki specyficzne dla domeny.
 
 ## <a name="TroubleshootingModelingProjects"></a>Rozwiązywanie problemów z projektami i diagramami modelowania
  W poniższej tabeli opisano problemy, które mogą wystąpić w przypadku modelowania projektów lub diagramów oraz sposoby ich rozwiązywania:
 
-|**Wykonaj**|**Dodatek**|**Rozdzielczość**|
+|**Wykonaj**|**Dodatek**|**Tłumaczenia**|
 |---------------|----------------|--------------------|
 |Projekt modelowania nie może zostać otwarty ani załadowany do rozwiązania.<br /><br /> Zostanie wyświetlony następujący komunikat:<br /><br /> "Co najmniej jeden projekt w rozwiązaniu nie został poprawnie załadowany. Aby uzyskać szczegółowe informacje, zobacz Okno Dane wyjściowe ".<br /><br /> W oknie dane wyjściowe zostanie wyświetlony następujący komunikat:<br /><br /> "*ModelingProjectFilenameAndPath*. modelproj: błąd: nierozpoznany format identyfikatora GUID".|Projekt modelowania zawiera odwołania do projektów, które mają taką samą nazwę i znajdują się w tym samym rozwiązaniu.<br /><br /> Na przykład warstwa jest połączona z projektami o tej samej nazwie i znajdują się w tym samym rozwiązaniu.|Za pomocą edytora tekstów Otwórz plik projektu modelowania, Usuń odwołania, a następnie spróbuj ponownie otworzyć projekt modelowania.<br /><br /> Aby uniknąć tego problemu, nie należy dodawać odwołań do projektów, które mają taką samą nazwę. Upewnij się, że projekty mają unikatowe nazwy.|
 |Brak elementów w diagramach, które są dodawane, kopiowane lub przeciągnięte do innych projektów modelowania lub do innych lokalizacji w rozwiązaniu.<br /><br /> oraz<br /><br /> Podczas próby otwarcia diagramu wyświetlane są następujące komunikaty:<br /><br /> -Brak niektórych kształtów lub łączników na diagramie, ponieważ ich definicje nie istnieją w tym projekcie. Definicje zostały usunięte z modelu, podczas gdy diagram został zamknięty lub diagram został skopiowany do innego projektu, który nie zawiera tych definicji. "<br /><br /> oraz<br /><br /> -"Ten dokument jest otwarty przez inny projekt".|Plik diagramu został dodany, przeciągnięty lub skopiowany z projektu modelowania do innego projektu modelowania lub do innej lokalizacji w rozwiązaniu.|Aby skopiować plik diagramu, Utwórz nowy diagram, a następnie skopiuj elementy z diagramu źródłowego do nowego diagramu.|

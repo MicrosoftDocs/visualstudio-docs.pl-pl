@@ -104,7 +104,7 @@ W C#języku Visual Basic i innym zarządzanym kodzie Użyj domyślnego dostawcy,
 
 #### <a name="to-use-a-marker-series-in-a-c-project"></a>Aby użyć serii znaczników w C++ projekcie
 
-1. Tworzy obiekt `marker_series`.  Można generować zdarzenia z tej nowej serii.
+1. Utwórz obiekt `marker_series`.  Można generować zdarzenia z tej nowej serii.
 
     ```scr
     marker_series series;
@@ -123,7 +123,7 @@ W C#języku Visual Basic i innym zarządzanym kodzie Użyj domyślnego dostawcy,
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
-|Stanowisko|Opis|
+|Tytuł|Opis|
 |-----------|-----------------|
 |[Odwołanie do biblioteki języka C++](../profiling/cpp-library-reference.md)|Opisuje interfejs API wizualizatora współbieżności C++dla programu.|
 |[Odwołanie do biblioteki języka C](../profiling/c-library-reference.md)|Opisuje interfejs API wizualizatora współbieżności dla języka C.|

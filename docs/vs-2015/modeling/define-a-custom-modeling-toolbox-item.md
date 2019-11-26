@@ -113,7 +113,7 @@ Aby ułatwić tworzenie elementu lub grupy elementów zgodnie ze wzorcem, który
 
 - Jak pokazano w przykładzie, `<bmp fileName="…"/>` dla ikony przybornika i `<value>string</value>` dla innych elementów.
 
-  \- lub —
+  \- lub-
 
 - `<resource fileName="Resources.dll"`
 
@@ -151,7 +151,7 @@ Aby ułatwić tworzenie elementu lub grupy elementów zgodnie ze wzorcem, który
 
 3. Otwórz istniejący projekt rozszerzenia programu Visual Studio.
 
-     \- lub —
+     \- lub-
 
      Zdefiniuj nowy projekt rozszerzenia programu Visual Studio.
 

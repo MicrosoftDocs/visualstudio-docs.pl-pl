@@ -58,7 +58,7 @@ W programie Visual Studio projekty są kontenerami używanymi przez deweloperów
 - Zaimplementuj Podstawienie parametru podstawowego szablonu.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
- Począwszy od programu Visual Studio 2015, możesz nie należy instalować programu Visual Studio SDK z Centrum pobierania. Jest dołączony jako opcjonalna funkcja w Instalatorze programu Visual Studio. Możesz także zainstalować zestaw SDK programu VS później. Aby uzyskać więcej informacji, zobacz [instalowania programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+ Począwszy od programu Visual Studio 2015, możesz nie należy instalować programu Visual Studio SDK z Centrum pobierania. Jest dołączony jako opcjonalna funkcja w Instalatorze programu Visual Studio. Możesz także zainstalować zestaw SDK programu VS później. Aby uzyskać więcej informacji, zobacz [Instalowanie zestawu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
  Należy również pobrać kod źródłowy dla [struktury zarządzanego pakietu dla projektów](https://archive.codeplex.com/?p=mpfproj12). Wyodrębnij plik do lokalizacji dostępnej dla rozwiązania, które chcesz utworzyć.  
   

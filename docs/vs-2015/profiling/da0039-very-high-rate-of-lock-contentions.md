@@ -27,7 +27,7 @@ Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [DA0039: ba
   
 |||  
 |-|-|  
-|Identyfikator reguły|DA0039|  
+|Identyfikator zasady|DA0039|  
 |Kategoria|Użycie .NET Framework|  
 |Metody profilowania|Sond<br /><br /> Oprzyrządowanie<br /><br /> Pamięć platformy .NET|  
 |Komunikat|Występuje bardzo wysoki współczynnik rywalizacji o blokadę platformy .NET. Sprawdź przyczynę rywalizacji o blokadę, uruchamiając profil współbieżności.|  

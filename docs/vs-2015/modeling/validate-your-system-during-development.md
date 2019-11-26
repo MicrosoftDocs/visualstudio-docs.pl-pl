@@ -36,7 +36,7 @@ Program Visual Studio może pomóc zapewnić zgodność oprogramowania z wymagan
 
 ## <a name="external-resources"></a>Zasoby zewnętrzne
 
-|**Kategoria**|**Linki**|
+|**Kategorii**|**Linki**|
 |------------------|---------------|
 |**Filmy wideo**|![link do kanału wideo](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: Doug siedem: zrozumienie kodu i projekt systemu przy użyciu programu Visual Studio 2010](https://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![link do kanału wideo](../data-tools/media/playvideo.gif "PlayVideo") [9: projektowanie aplikacji przy użyciu diagramu warstwowego](https://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![link do wideo](../data-tools/media/playvideo.gif "PlayVideo") [MSDN: jak to zrobić, w jaki sposób można sprawdzić poprawność kodu przy użyciu diagramów warstw](https://go.microsoft.com/fwlink/?LinkID=214405)|
 |**Dotyczące**|-   [Wizualizacja programu Visual Studio & narzędzia do modelowania](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [wizualizacji programu Visual Studio & Modeling SDK (narzędzia DSL)](https://go.microsoft.com/fwlink/?LinkId=184721)|

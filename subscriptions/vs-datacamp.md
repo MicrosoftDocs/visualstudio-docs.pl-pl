@@ -1,11 +1,11 @@
 ---
-title: Enhance your data science skills today with the DataCamp benefit in selected Visual Studio subscriptions. | Microsoft Docs
+title: Jeszcze dziś zwiększ swoje umiejętności nauki dotyczące danych dzięki korzyściom z używania datacamp w wybranych subskrypcjach programu Visual Studio. | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
 ms.date: 11/13/2019
 ms.topic: conceptual
-description: Learn about the DataCamp training subscription included with selected Visual Studio subscriptions.
+description: Dowiedz się więcej o subskrypcji szkoleniowej usługi datacamp dołączonej do wybranych subskrypcji programu Visual Studio.
 ms.openlocfilehash: ea889814373fa7c970e905bb4a845d5ca67c92e7
 ms.sourcegitcommit: 6f25855de9db455e6d38bc105057d2ed1e7454b9
 ms.translationtype: MT
@@ -13,79 +13,79 @@ ms.contentlocale: pl-PL
 ms.lasthandoff: 11/20/2019
 ms.locfileid: "74199882"
 ---
-# <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>The DataCamp training benefit in Visual Studio subscriptions
-Eligible Visual Studio subscriptions include subscriptions to DataCamp.  With DataCamp, you can learn all the data science skills you need from the comfort of your browser. You get to choose when and what you learn. With no software to install and no special hardware requirements, learning data science is easier than ever.
+# <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Korzyść szkoleniowa datacamp w subskrypcjach programu Visual Studio
+Kwalifikujące się subskrypcje programu Visual Studio obejmują subskrypcje do datacamp.  W przypadku usługi datacamp możesz poznać wszystkie potrzebne umiejętności analizy danych. Możesz wybrać, kiedy i w jaki sposób uczysz. W przypadku braku oprogramowania do zainstalowania i braku specjalnych wymagań sprzętowych nauka uczenia danych jest łatwiejsze niż kiedykolwiek.
 
-## <a name="activation-steps"></a>Activation steps
-1. Sign in to [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+## <a name="activation-steps"></a>Kroki aktywacji
+1. Zaloguj się do [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2. Locate the DataCamp benefit tile in the "Professional Development" category, and click on **Activate**.
+2. Znajdź kafelek korzyści z korzystania z programu datacamp w kategorii "Programowanie profesjonalne" i kliknij pozycję **Aktywuj**.
    > [!div class="mx-imgBorder"]
-   > ![DataCamp Benefit Tile](_img/vs-datacamp/vs-datacamp-tile-2.png)
+   > Kafelek korzyści ![datacamp](_img/vs-datacamp/vs-datacamp-tile-2.png)
 
-3. On the DataCamp page, you can create a new account.  You can choose to enter an email address and password, or sign in using existing accounts from Facebook, LinkedIn, or Google.  Once you've provided your sign-in information, click **Get Started**.
+3. Na stronie datacamp można utworzyć nowe konto.  Możesz wprowadzić adres e-mail i hasło lub zalogować się przy użyciu istniejących kont w serwisie Facebook, LinkedIn lub Google.  Po udostępnieniu informacji dotyczących logowania kliknij pozycję **Rozpocznij**.
 
    > [!NOTE]
-   > When you begin creating your account, you may receive the following error message: "OOPS!  Your promo code is invalid or expired."  This happens because when your promo code is created, it expires after a few minutes.  If you receive this message, simply return to the [Benefits](https://my.visualstudio.com/benefits) page and click on the **Activate** link on the DataCamp benefit tile.
+   > Po rozpoczęciu tworzenia konta może zostać wyświetlony następujący komunikat o błędzie: "Niestety!  Kod promocyjny jest nieprawidłowy lub wygasł.  Dzieje się tak, ponieważ podczas tworzenia kodu promocyjnego wygasa on po kilku minutach.  Jeśli zostanie wyświetlony ten komunikat, po prostu Wróć do strony [korzyści](https://my.visualstudio.com/benefits) i kliknij link **Aktywuj** na kafelku korzyści datacamp.
 
-4. Once your account has been created, you can choose a learning path.  Options include:
-    - Learning R for Data Science
-    - Start Learning Python for Data Science
-    - Develop your Data Science Skillset
+4. Po utworzeniu konta możesz wybrać ścieżkę szkoleniową.  Dostępne opcje:
+    - Uczenie języka R na potrzeby nauki o danych
+    - Rozpocznij naukę języka Python w celu nauki o danych
+    - Opracowywanie analizy danych zestawu umiejętności
 
-   Just click on your chosen path to get started.
+   Po prostu kliknij wybraną ścieżkę, aby rozpocząć pracę.
    > [!div class="mx-imgBorder"]
-   > ![DataCamp Choose Path](_img/vs-datacamp/vs-datacamp-choose-path.png)
+   > ![wybierz ścieżkę](_img/vs-datacamp/vs-datacamp-choose-path.png)
 
-5. After you have selected your path, you can further refine your learning path by selecting a goal.  For example, if you chose the "Develop your Data Science Skillset" path, you will see the following options. Choose an option, or click **I am not sure.  Show me all career paths** to create a broader path.
+5. Po wybraniu ścieżki możesz dokładniej udoskonalić ścieżkę szkoleniową, wybierając cel.  Na przykład w przypadku wybrania ścieżki "opracowywanie analizy danych zestawu umiejętności" zostaną wyświetlone następujące opcje. Wybierz opcję lub kliknij **nie mam pewności.  Pokaż wszystkie ścieżki kariery** , aby utworzyć szersze ścieżki.
    > [!div class="mx-imgBorder"]
-   > ![DataCamp Data Science Skillset](_img/vs-datacamp/vs-datacamp-datascience.png)
+   > ![naukę zestawu umiejętności danych datacamp](_img/vs-datacamp/vs-datacamp-datascience.png)
 
-6. Based on the path and options you have selected, you'll see a selection of Career Tracks.  Click on the **Enroll** button for the track of your choice.
+6. W zależności od wybranej ścieżki i opcji zobaczysz wybór ścieżek kariery.  Kliknij przycisk **zarejestruj** , aby wybrać wybraną ścieżkę.
    > [!div class="mx-imgBorder"]
-   > ![DataCamp Career Track](_img/vs-datacamp/vs-datacamp-all-tracks.png)
+   > ![śledzenie kariery w usłudze datacamp,](_img/vs-datacamp/vs-datacamp-all-tracks.png)
 
-7. Once you have enrolled in your track, the first course in that track will open.  You'll see a tutorial explaining how to interact with the course, including navigation and completing the course exercises.
+7. Po zarejestrowaniu się na ścieżce zostanie otwarty pierwszy kurs z tej ścieżki.  Zobaczysz samouczek wyjaśniający, jak korzystać z kursu, w tym nawigacją i wykonywaniem ćwiczeń kursowych.
 
    > [!div class="mx-imgBorder"]
-   > ![DataCamp Getting Started](_img/vs-datacamp/vs-datacamp-getting-started.png)
+   > ![Wprowadzenie datacamp](_img/vs-datacamp/vs-datacamp-getting-started.png)
 
-You can stop at any point, and resume your training in your next session.  Just visit [http://www.datacamp.com](http://www.datacamp.com), and sign in.  You'll see your dashboard and can resume your training right where you paused. Simply click **Continue Track**.
+Możesz zatrzymać w dowolnym momencie i wznowić szkolenia w następnej sesji.  Po prostu odwiedź [http://www.datacamp.com](http://www.datacamp.com)i zaloguj się.  Zobaczysz pulpit nawigacyjny i będzie można wznowić szkolenia w miejscu, w którym zostało wstrzymane. Po prostu kliknij pozycję **Kontynuuj śledzenie**.
 
 > [!div class="mx-imgBorder"]
-> ![DataCamp Continue Training](_img/vs-datacamp/vs-datacamp-continue-training.png)
+> ![szkolenia z zakresu kontynuacji datacamp](_img/vs-datacamp/vs-datacamp-continue-training.png)
 
-## <a name="eligibility"></a>Eligibility
-| Subscription Level                                                 |     Kanały                                            | Korzyść                                                          | Renewable?    |
+## <a name="eligibility"></a>Kryteria
+| Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Odnawialny?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, Retail, | 3-months       |  Nie.  Available to new subscribers only          |
-| Visual Studio Enterprise with GitHub Enterprise   | VL | 3-months       |  Nie.  Available to new subscribers only          |
-| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | 3-months                                                            |  Nie.  Available to new subscribers only           |
-| Visual Studio Professional with GitHub Enterprise| VL | 3-months                                                            |  Nie.  Available to new subscribers only           |
-| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | 3-months                                             |  Nie.  Available to new subscribers only           |
-| MSDN Platforms (Standard)                                          | VL, Retail                                              | 3-months                                              |  Nie.  Available to new subscribers only           |
-| Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Niedostępne  | Brak |
-| Visual Studio Enterprise, Visual Studio Professional (monthly cloud) | Azure | Niedostępne | Brak |
+| Visual Studio Enterprise (standardowa)   | LICENCJONOWANie, Azure, sprzedaż detaliczna, | 3 miesiące       |  Nie.  Dostępne tylko dla nowych subskrybentów          |
+| Visual Studio Enterprise z usługą GitHub Enterprise   | Licencja | 3 miesiące       |  Nie.  Dostępne tylko dla nowych subskrybentów          |
+| Visual Studio Professional (standardowa) | VL, Azure, Retail                                       | 3 miesiące                                                            |  Nie.  Dostępne tylko dla nowych subskrybentów           |
+| Visual Studio Professional z usługą GitHub Enterprise| Licencja | 3 miesiące                                                            |  Nie.  Dostępne tylko dla nowych subskrybentów           |
+| Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | 3 miesiące                                             |  Nie.  Dostępne tylko dla nowych subskrybentów           |
+| Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | 3 miesiące                                              |  Nie.  Dostępne tylko dla nowych subskrybentów           |
+| Visual Studio Enterprise (standardowa)  | NFR<sup>1</sup> |Niedostępne  | N/D |
+| Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure | Niedostępne | N/D |
 
-<sup>1</sup>  *Includes:  Not for Resale (NFR), FTE, Most Valuable Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
+<sup>1</sup>  *obejmuje: nie do odsprzedaży (NFR), ekwiwalentu, najbardziej cennych profesjonalistów (MVP), regionalnego dyrektora (RD), Microsoft Partner Network (MPN), Visual Studio Industry partner (VSIP), Microsoft Certified Trainer, BizSpark, Wyobraź sobie*
 
 > [!NOTE]
-> Microsoft no longer offers Visual Studio Professional Annual subscriptions and Visual Studio Enterprise Annual subscriptions in Cloud Subscriptions. There will be no change to existing customers experience and ability to renew, increase, decrease, or cancel their subscriptions. New customers are encouraged to go to [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) to explore different options to purchase Visual Studio.
+> Firma Microsoft nie oferuje już Visual Studio Professional rocznych subskrypcji i Visual Studio Enterprise rocznych subskrypcji w ramach subskrypcji chmury. Istnieją zmiany w istniejących klientach i możliwość odnowienia, zwiększenia, zmniejszenia lub anulowania subskrypcji. Zachęcamy nowych klientów do przechodzenia do [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) , aby poznać różne opcje zakupu programu Visual Studio.
 
-Not sure which subscription you're using?  Connect to [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) to see all the subscriptions assigned to your email address. If you don't see all your subscriptions, you may have one or more assigned to a different email address.  You'll need to sign in with that email address to see those subscriptions.
+Nie masz pewności, której subskrypcji używasz?  Połącz się z [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) , aby wyświetlić wszystkie subskrypcje przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkich subskrypcji, być może masz co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby zobaczyć te subskrypcje.
 
-## <a name="support-resources"></a>Support resources
-- Need help with using DataCamp?  Check out these resources:
-  - [DataCamp Community](https://www.datacamp.com/community/tutorials), featuring forums and tutorials.
-  - [DataCamp Help Center](https://support.datacamp.com/hc), where search support topics and see request user questions.
-  - [Submit a support request](https://support.datacamp.com/hc/requests/new)
-- For assistance with sales, subscriptions, accounts and billing for Visual Studio Subscriptions, contact Visual Studio [Subscriptions Support](https://visualstudio.microsoft.com/subscriptions/support/).
-- Have a question about Visual Studio IDE, Azure DevOps Services or other Visual Studio products or services?  Visit [Visual Studio Support](https://visualstudio.microsoft.com/support/).
+## <a name="support-resources"></a>Zasoby pomocy technicznej
+- Potrzebujesz pomocy przy korzystaniu z usługi datacamp?  Zapoznaj się z następującymi zasobami:
+  - [Społeczność datacamp](https://www.datacamp.com/community/tutorials), z forów i samouczków.
+  - [Centrum pomocy programu datacamp](https://support.datacamp.com/hc), w którym tematy pomocy technicznej dotyczące wyszukiwania i zobacz prośby o zażądanie użytkownika.
+  - [Prześlij żądanie pomocy technicznej](https://support.datacamp.com/hc/requests/new)
+- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
+- Masz pytanie dotyczące środowiska IDE programu Visual Studio, Azure DevOps Services lub innych produktów lub usług Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="next-steps"></a>Następne kroki
-Check out more professional development opportunities in your subscription:
+## <a name="next-steps"></a>Kolejne kroki
+Zapoznaj się z bardziej profesjonalnymi możliwościami deweloperskimi w ramach subskrypcji:
 - [Pluralsight](vs-pluralsight.md)
 - [LinkedIn Learning](vs-linkedin-learning.md)
 
 
-If you haven't already activated the Azure DevTest individual credit benefit that comes with your subscription, visit [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) and click on the Azure tile in the Tools category to set up your Azure subscription and redeem your Azure DevTest individual credit.
+Jeśli nie aktywowano jeszcze korzyści z korzystania z usługi Azure DevTest, która jest oferowana w ramach subskrypcji, odwiedź stronę [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) i kliknij kafelek platformy Azure w kategorii narzędzia, aby skonfigurować subskrypcję platformy Azure i wykorzystać swoje środki na korzystanie z platformy Azure DevTest.

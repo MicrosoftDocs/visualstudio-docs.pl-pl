@@ -98,7 +98,7 @@ Analizator pamięci języka JavaScript jest dostępny w programie Visual Studio,
   
 4. Z **dostępnych narzędzi**, zaznacz pole wyboru **pamięć JavaScript** , a następnie wybierz **Uruchom**.  
   
-5. Po uruchomieniu analizatora pamięci okno Kontrola konta użytkownika może zażądać uprawnień do uruchomienia programu Visual Studio ETW collector. exe. Wybierz **tak**.  
+5. Po uruchomieniu analizatora pamięci okno Kontrola konta użytkownika może zażądać uprawnień do uruchomienia programu Visual Studio ETW collector. exe. Wybierz opcję **tak**.  
   
      Korzystając z aplikacji, przetestuj odpowiednie scenariusze użycia pamięci i Wyświetl wykres pamięci, zgodnie z opisem w poniższych sekcjach.  
   

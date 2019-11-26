@@ -50,21 +50,21 @@ Za pomocą przybornika można dodawać kontrolki i inne elementy do projektu. Mo
 
 - **Zmień nazwę elementu** — zmienia nazwę wybranego elementu.
 
-- **Pokaż wszystkie** — pokazuje wszystkie możliwe kontrole (nie tylko tych, które są stosowane do bieżącego projektanta).
+- **Pokaż wszystko** — pokazuje wszystkie możliwe kontrolki (nie tylko te, które mają zastosowanie do bieżącego projektanta).
 
-- **Widok listy** — zawiera kontrolki w pionie listy. Jeśli nie jest zaznaczone, formanty są wyświetlane w poziomie.
+- **Widok listy** — pokazuje kontrolki na liście pionowej. Jeśli nie jest zaznaczone, formanty są wyświetlane w poziomie.
 
-- **Wybierz elementy** -otwiera **wybierz elementy przybornika** okno dialogowe, aby określić elementy, które pojawiają się w **przybornika**. Możesz pokazać lub ukryć element, zaznaczając lub usuwając zaznaczenie pola wyboru.
+- **Wybierz elementy** — otwiera okno dialogowe **Wybierz elementy przybornika** , aby można było określić elementy, które są wyświetlane w **przyborniku**. Możesz pokazać lub ukryć element, zaznaczając lub usuwając zaznaczenie pola wyboru.
 
-- **Sortowanie elementów alfabetycznie** — Sortuje elementy według nazwy.
+- **Sortuj elementy alfabetycznie** — sortuje elementy według nazwy.
 
 - **Resetuj pasek narzędzi** — przywraca domyślne ustawienia i elementy przybornika.
 
 - **Dodaj kartę** — dodaje nową kartę przybornika.
 
-- **Przenieś w górę** -Przesuwa wybrany element w górę.
+- **Przenieś w górę** — przenosi zaznaczony element w górę.
 
-- **Przenieś w dół** -Przenosi zaznaczony element w dół.
+- **Przenieś w dół** — przenosi zaznaczony element w dół.
 
 ## <a name="creating-and-distributing-custom-toolbox-controls"></a>Tworzenie i dystrybuowanie niestandardowych formantów przybornika
  Możesz utworzyć niestandardową kontrolkę przybornika w Visual Basic lub C#wizualizacji, a następnie można rozpocząć od szablonu projektu opartego na [Windows Presentation Foundation](../extensibility/creating-a-wpf-toolbox-control.md) lub [Windows Forms](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md). Następnie można rozesłać swój formant do członków zespołu lub opublikować go w sieci Web za pomocą [Instalatora formantów przybornika](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf).

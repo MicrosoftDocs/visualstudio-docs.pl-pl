@@ -134,7 +134,7 @@ Użyj analiza klatek grafiki w analizator grafiki programu Visual Studio, aby pr
   
  Błędy zwykle wskazują, że implementacja analizy klatek zawiera błędy, sterownik ma błędy, Obsługa sprzętu jest niedostępna i nie można jej obejść lub aplikacja próbuje coś, co nie jest obsługiwane przez odtwarzanie.  
   
-### <a name="retries"></a>Ponownych prób  
+### <a name="retries"></a>Ponowne próby  
  Jeśli procesor GPU przejdzie do przejścia stanu potęgowego podczas analizy klatek, należy ponowić próbę przeprowadzenia analizy, ponieważ Clockspeed procesora GPU i w związku z tym unieważnione wyniki względnego chronometrażu.  
   
  Analiza klatek ogranicza liczbę ponownych prób do 10. Jeśli platforma ma agresywne zarządzanie zużyciem lub kontroli zegarem, może to spowodować niepowodzenie analizy klatek i zgłosić błąd, ponieważ Przekroczono limit ponownych prób. Może być możliwe uniknięcie tego problemu przez zresetowanie funkcji zarządzania zasilaczami i szybkości zegara, aby było mniej agresywne, jeśli ta platforma zostanie włączona.  
@@ -189,8 +189,8 @@ Użyj analiza klatek grafiki w analizator grafiki programu Visual Studio, aby pr
 |-------------|-----------------|  
 |**Rozmiar okienka ekranu 1x1**|Zmniejsza wymiary okienka ekranu dla wszystkich obiektów docelowych renderowania do 1x1 pikseli.<br /><br /> Aby uzyskać więcej informacji, zobacz [1x1a rozmiaru okienka ekranu](../debugger/1x1-viewport-size-variant.md)|  
 |**0x MSAA**|Wyłącza wiele próbkowania wygładzania (MSAA) na wszystkich celach renderowania.<br /><br /> Aby uzyskać więcej informacji, zobacz odmiany w liczbie [0x/2x/4X MSAA](../debugger/0x-2x-4x-msaa-variants.md)|  
-|**2x MSAA**|Włącza 2. wygładzanie wielobajtowe (MSAA) na wszystkich celach renderowania.<br /><br /> Aby uzyskać więcej informacji, zobacz odmiany w liczbie [0x/2x/4X MSAA](../debugger/0x-2x-4x-msaa-variants.md)|  
-|**4x MSAA**|Włącza 4x dla wielobajtowego połączenia (MSAA) dla wszystkich obiektów docelowych renderowania.<br /><br /> Aby uzyskać więcej informacji, zobacz odmiany w liczbie [0x/2x/4X MSAA](../debugger/0x-2x-4x-msaa-variants.md)|  
+|**2. MSAA**|Włącza 2. wygładzanie wielobajtowe (MSAA) na wszystkich celach renderowania.<br /><br /> Aby uzyskać więcej informacji, zobacz odmiany w liczbie [0x/2x/4X MSAA](../debugger/0x-2x-4x-msaa-variants.md)|  
+|**MSAA 4x**|Włącza 4x dla wielobajtowego połączenia (MSAA) dla wszystkich obiektów docelowych renderowania.<br /><br /> Aby uzyskać więcej informacji, zobacz odmiany w liczbie [0x/2x/4X MSAA](../debugger/0x-2x-4x-msaa-variants.md)|  
 |**Filtrowanie tekstury punktów**|Ustawia tryb filtrowania na `DXD11_FILTER_MIN_MAG_MIP_POINT` (filtr tekstury punktów) dla wszystkich odpowiednich próbek tekstury.<br /><br /> Aby uzyskać więcej informacji, zobacz [trójliniowego i różne warianty filtrowania tekstury anizotropowego](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
 |**Filtrowanie tekstury liniowej**|Ustawia tryb filtrowania na `DXD11_FILTER_MIN_MAG_LINEAR_MIP_POINT` (filtrowanie tekstury liniowej) dla wszystkich odpowiednich próbek tekstury.<br /><br /> Aby uzyskać więcej informacji, zobacz [trójliniowego i różne warianty filtrowania tekstury anizotropowego](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
 |**Filtrowanie tekstury trójliniowego**|Ustawia tryb filtrowania na `DXD11_FILTER_MIN_MAG_MIP_LINEAR` (filtrowanie tekstury trójliniowego) dla wszystkich odpowiednich próbek tekstury.<br /><br /> Aby uzyskać więcej informacji, zobacz [trójliniowego i różne warianty filtrowania tekstury anizotropowego](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  

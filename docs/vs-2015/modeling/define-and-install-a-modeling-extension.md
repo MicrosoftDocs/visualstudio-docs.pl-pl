@@ -130,7 +130,7 @@ W programie Visual Studio można definiować rozszerzenia do diagramów modelowa
 
 #### <a name="to-uninstall-an-extension"></a>Aby odinstalować rozszerzenie
 
-1. Na **narzędzia** menu, kliknij przycisk **rozszerzenia i aktualizacje**.
+1. W menu **Narzędzia** kliknij pozycję **rozszerzenia i aktualizacje**.
 
 2. Rozwiń **zainstalowane rozszerzenia**.
 

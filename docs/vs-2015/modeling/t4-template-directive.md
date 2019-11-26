@@ -45,7 +45,7 @@ Szablon tekstu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] T4 zazwyczaj rozpocz
 
  Prawidłowe wartości: "", niezmienna kultura, która jest wartością domyślną.
 
- Kultura jest wyrażona jako ciąg w postaci xx-XX. Na przykład en-US, ja-JP, de-CH, de-DE. Aby uzyskać więcej informacji, zobacz <xref:System.Globalization.CultureInfo?displayProperty=fullName>.
+ Kultura jest wyrażona jako ciąg w postaci xx-XX. Na przykład en-US, ja-JP, de-CH, de-DE. Aby uzyskać więcej informacji, zobacz temat <xref:System.Globalization.CultureInfo?displayProperty=fullName>.
 
  Atrybut culture określa kulturę, jaka ma zostać użyta w przypadku konwersji bloku wyrażenia na tekst.
 

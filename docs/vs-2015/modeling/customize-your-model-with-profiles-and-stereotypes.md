@@ -38,7 +38,7 @@ W programie Visual Studio można dostosować standardowe elementy modelu UML, ta
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
-|Stanowisko|Opis|
+|Tytuł|Opis|
 |-----------|-----------------|
 |[Dodawanie stereotypów do elementów modelu UML](../modeling/add-stereotypes-to-uml-model-elements.md)|Umieszczanie elementu modelu w pakiecie, łączenie pakietu z profilem i stosowanie stereotypu do elementu.|
 |[Standardowe stereotypy dla modeli UML](../modeling/standard-stereotypes-for-uml-models.md)|Standardowe profile UML L2 i L3 są instalowane z programem Visual Studio, a każdy model jest domyślnie połączony z nimi. Zapewniają stereotypy, których można użyć do dodawania adnotacji do modeli.<br /><br /> Na przykład można zastosować stereotyp "Specyfikacja»" do klasy, aby wskazać, że jest on przeznaczony tylko do definiowania widocznego zewnętrznie zachowania jego wystąpień,|

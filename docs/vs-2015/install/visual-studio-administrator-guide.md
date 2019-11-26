@@ -44,9 +44,9 @@ Program Visual Studio 2015 można wdrożyć w sieci, o ile każdy komputer docel
 |------------------|--------------------------|----------------------|-----------------|  
 |Powodzenie|0x00000000 [0]|0x00000bc2 [3010]|Instalacja powiodła się.|  
 |Blokuj|0x80044000 [-2147205120]|0x8004C000 [-2147172352]|Jeśli jedyny blok do zgłoszenia to "Oczekiwanie na ponowne uruchomienie," zwrócona wartość to wymagana wartość nieukończonego ponownego rozruchu (0x80048bc7).|  
-|Anuluj|0x00000642 [1602]|0x80048642 [-2147187134]|Gdy zostanie zwrócona wartość ponownego uruchomienia, kod powrotny to 1602.|  
-|Niekompletne — wymagane ponowne uruchomienie komputera|Brak|0x80048bc7 [-2147185721]|Przed kontynuowaniem instalacji wymagane jest ponowne uruchomienie.|  
-|Spraw|0x00000643 [1603]|0x80048643 [-2147187133]|Gdy zostanie zwrócona wartość ponownego uruchomienia, kod powrotny to 1603.|  
+|Cancel|0x00000642 [1602]|0x80048642 [-2147187134]|Gdy zostanie zwrócona wartość ponownego uruchomienia, kod powrotny to 1602.|  
+|Niekompletne — wymagane ponowne uruchomienie komputera|N/D|0x80048bc7 [-2147185721]|Przed kontynuowaniem instalacji wymagane jest ponowne uruchomienie.|  
+|Niepowodzenie|0x00000643 [1603]|0x80048643 [-2147187133]|Gdy zostanie zwrócona wartość ponownego uruchomienia, kod powrotny to 1603.|  
   
 ## <a name="interactive-administrator-installer"></a>Instalator administratora interakcyjnego  
  Jeśli tworzysz Instalator interaktywny na bazie instalacji programu Visual Studio, możesz wyświetlić postęp z Instalatora programu Visual Studio. Instalator programu Visual Studio 2015 jest oparty na technologii łańcucha WiX (Open Instalator Windows Source) w sieci, znanej także pod nazwą "wypalanie". Technologia nagrywania obsługuje dwa protokoły komunikacyjne: nagrywanie i netfx4. Zwięzłe odwołanie można znaleźć w opisie atrybutu Protocol w dokumentacji elementu ExePackage w [wixtoolset.org](https://wixtoolset.org/). Przegląd implementacji WiX Open Source tego atrybutu protokołu może być wymagany do integracji.  
@@ -60,8 +60,8 @@ Program Visual Studio 2015 można wdrożyć w sieci, o ile każdy komputer docel
 
 Domyślnie instalacja programu Visual Studio umożliwia opinii klientów. Można skonfigurować program Visual Studio, aby wyłączyć Opinie klientów na poszczególnych komputerach, zmieniając wartość następującego klucza rejestru na ciąg "0":  
   
-**HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SQM**  
-**OptIn**  
+**HKEY_LOCAL_MACHINE \SOFTWARE\Policies\Microsoft\VisualStudio\SQM**  
+**OptIn powoduje**  
   
 (Na przykład zmień go na HKEY_LOCAL_MACHINE \SOFTWARE\Policies\Microsoft\VisualStudio\SQM OptIn powoduje = "0")  
   

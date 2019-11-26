@@ -30,7 +30,7 @@ VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]
 ```  
   
 #### <a name="parameters"></a>Parametry  
- **On**&#124;**Off**  
+ &#124;**Wyłączone**  
  Uruchamia lub kończy zbieranie danych zdarzeń.  
   
  `Guid`  
@@ -50,16 +50,16 @@ VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]
  **Podstawowych**  
  Zdarzenia procesu  
   
- **Wątek**  
+ **Nici**  
  Zdarzenia wątku  
   
  **Obraz**  
  Ładowanie i zwalnianie obrazów  
   
- **Dysk**  
+ **3,5**  
  Zdarzenia we/wy dysku  
   
- **Plik**  
+ **Rozszerzeniem**  
  Zdarzenia we/wy pliku  
   
  **Hardfault**  
@@ -68,10 +68,10 @@ VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]
  **Pagefault**  
  Słabe błędy stron  
   
- **Sieci**  
+ **NFS**  
  Zdarzenia sieciowe  
   
- **Registry**  
+ **Secret**  
  Zdarzenia dostępu do rejestru  
   
  Należy pamiętać, że dostawca jądra może być tylko włączony. Nie można go wyłączyć ani zmienić jego flag, dopóki monitor nie zostanie zamknięty.  

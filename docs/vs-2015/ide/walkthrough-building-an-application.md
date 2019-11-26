@@ -70,7 +70,7 @@ Ten temat zawiera następujące sekcje:
 
      ![Okno dialogowe Nowy projekt, Visual Basic przykład](../ide/media/buildwalk-newprojectdlgintrotowpfsamplevb.png "BuildWalk_NewProjectdlgIntrotoWPFsampleVB")
 
-4. Wybierz **OK** przycisku.
+4. Wybierz przycisk **OK** .
 
 ## <a name="BKMK_CreateBuildConfig"></a>Utwórz niestandardową konfigurację kompilacji
 
@@ -96,7 +96,7 @@ Ustawienia konfiguracji i platformy można zmienić lub utworzyć przy użyciu o
 
     ![Okno dialogowe Nowa platforma rozwiązania](../ide/media/buildwalk-newsolutionplatform.png "BuildWalk_NewSolutionPlatform")
 
-6. Wybierz **OK** przycisku.
+6. Wybierz przycisk **OK** .
 
    Aktywna Konfiguracja rozwiązania została zmieniona na test z aktywną platformą rozwiązania ustawioną na x64.
 
@@ -237,7 +237,7 @@ Aby uzyskać więcej informacji, zobacz [How to: zmiana katalogu wyjściowego ko
 
     ![Menu Widok, polecenie strony właściwości](../ide/media/buildwalk-viewpropertypages.png "BuildWalk_ViewPropertyPages")
 
-2. Wybierz **kompilacji** strony.
+2. Wybierz stronę **kompilacja** .
 
 3. Na liście **Konfiguracja** wybierz pozycję **Zwolnij**.
 

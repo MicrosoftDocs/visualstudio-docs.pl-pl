@@ -420,7 +420,7 @@ W programie Visual Studio możesz narysować *Diagram przypadków użycia* , aby
 
 3. Przeciągnij istniejące przypadki użycia do podsystemu lub z niego, aby dostosować jego zawartość.
 
-   \- lub —
+   \- lub-
 
    Aby utworzyć nowy przypadek użycia bezpośrednio w podsystemie, kliknij pozycję **przypadek użycia** w przyborniku, a następnie kliknij wewnątrz podsystemu.
 

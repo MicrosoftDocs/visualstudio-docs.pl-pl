@@ -20,7 +20,7 @@ ms.locfileid: "74302566"
 
 Struktura testowania dla kodowanych testów interfejsu użytkownika i nagrań akcji nie obsługuje każdego możliwego interfejsu użytkownika. Może nie obsługiwać określonego interfejsu użytkownika, który ma zostać przetestowany. Na przykład nie można natychmiast utworzyć kodowanego testu interfejsu użytkownika lub rejestrowania akcji dla [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] arkusza kalkulacyjnego. Można jednak utworzyć własne rozszerzenie dla struktury kodowanego testu interfejsu użytkownika, która będzie obsługiwała konkretny interfejs użytkownika, wykorzystując rozszerzalność kodowanego środowiska testowania interfejsu użytkownika. Poniższy temat zawiera przykład sposobu rozszerzającej strukturę programu w celu obsługi tworzenia kodowanych testów interfejsu użytkownika i nagrań akcji dla [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)]. Aby uzyskać więcej informacji na temat obsługiwanych platform, zobacz [obsługiwane konfiguracje i platformy dla kodowanych testów interfejsu użytkownika i nagrań akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md).
 
- **Wymagania**
+ **Requirements**
 
 - Visual Studio Enterprise
 

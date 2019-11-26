@@ -24,7 +24,7 @@ ms.locfileid: "74302643"
 
 Edytor kodowanego testu interfejsu użytkownika pozwala łatwo modyfikować kodowane testy interfejsu użytkownika. Za pomocą edytora kodowanego testu interfejsu użytkownika można lokalizować, wyświetlać i edytować właściwości metod testowych i akcji interfejsu użytkownika. Ponadto można użyć mapy formantów interfejsu użytkownika do wyświetlania i edytowania odpowiednich kontrolek.
 
- **Wymagania**
+ **Requirements**
 
 - Visual Studio Enterprise
 
@@ -87,15 +87,15 @@ Może być używana wersja Visual Studio Enterprise wcześniejsza niż 2012. Edy
  *Co jeszcze mam wiedzieć?*
  **Pomoc**
 
-- ![Porada](../test/media/tip.png "Porada") Jeśli okno Właściwości nie jest wyświetlana, naciśnij i przytrzymaj klawisz **Alt** podczas naciskania klawisza **Enter**lub naciśnij klawisz **F4**.
+- ![Porada](../test/media/tip.png "{1&gt;Porada&lt;1}") Jeśli okno Właściwości nie jest wyświetlana, naciśnij i przytrzymaj klawisz **Alt** podczas naciskania klawisza **Enter**lub naciśnij klawisz **F4**.
 
-- ![Porada](../test/media/tip.png "Porada") Aby cofnąć wprowadzone zmiany właściwości, wybierz polecenie **Cofnij** z menu **Edycja** lub naciśnij klawisze Ctrl + Z.
+- ![Porada](../test/media/tip.png "{1&gt;Porada&lt;1}") Aby cofnąć wprowadzone zmiany właściwości, wybierz polecenie **Cofnij** z menu **Edycja** lub naciśnij klawisze Ctrl + Z.
 
-- ![Porada](../test/media/tip.png "Porada") Aby otworzyć narzędzie Znajdź i Zamień w programie Visual Studio, można użyć przycisku **Znajdź** na pasku narzędzi edytora kodowanego testu interfejsu użytkownika. Następnie można użyć kontrolki Znajdź, aby zlokalizować akcję interfejsu użytkownika w edytorze kodowanego testu interfejsu użytkownika. Na przykład możesz spróbować znaleźć przycisk "kliknij" Login' ". Może to być przydatne w przypadku dużych testów. Należy pamiętać, że nie można użyć funkcji Replace w narzędziu Znajdź i Zamień w edytorze kodowanego testu interfejsu użytkownika. Aby uzyskać więcej informacji, zobacz Znajdowanie formantu przy [znajdowaniu i zamienianiu tekstu](../ide/finding-and-replacing-text.md).
+- ![Porada](../test/media/tip.png "{1&gt;Porada&lt;1}") Aby otworzyć narzędzie Znajdź i Zamień w programie Visual Studio, można użyć przycisku **Znajdź** na pasku narzędzi edytora kodowanego testu interfejsu użytkownika. Następnie można użyć kontrolki Znajdź, aby zlokalizować akcję interfejsu użytkownika w edytorze kodowanego testu interfejsu użytkownika. Na przykład możesz spróbować znaleźć przycisk "kliknij" Login' ". Może to być przydatne w przypadku dużych testów. Należy pamiętać, że nie można użyć funkcji Replace w narzędziu Znajdź i Zamień w edytorze kodowanego testu interfejsu użytkownika. Aby uzyskać więcej informacji, zobacz Znajdowanie formantu przy [znajdowaniu i zamienianiu tekstu](../ide/finding-and-replacing-text.md).
 
-- ![Porada](../test/media/tip.png "Porada") Czasami może być trudne Wizualizacja, gdzie kontrolki znajdują się w interfejsie użytkownika testowanej aplikacji. Jedną z możliwości edytora kodowanego testu interfejsu użytkownika jest możliwość wybrania kontrolki wymienionej na mapie formantów interfejsu użytkownika i wyświetlenia jej lokalizacji w testowanej aplikacji. [!INCLUDE[crdefault](../includes/crdefault-md.md)][lokalizowanie kontrolki interfejsu użytkownika w testowanej aplikacji](#CodedUITestEditor_LocateUIControl) znajdującej się w dalszej części tego tematu.
+- ![Porada](../test/media/tip.png "{1&gt;Porada&lt;1}") Czasami może być trudne Wizualizacja, gdzie kontrolki znajdują się w interfejsie użytkownika testowanej aplikacji. Jedną z możliwości edytora kodowanego testu interfejsu użytkownika jest możliwość wybrania kontrolki wymienionej na mapie formantów interfejsu użytkownika i wyświetlenia jej lokalizacji w testowanej aplikacji. [!INCLUDE[crdefault](../includes/crdefault-md.md)][lokalizowanie kontrolki interfejsu użytkownika w testowanej aplikacji](#CodedUITestEditor_LocateUIControl) znajdującej się w dalszej części tego tematu.
 
-- ![Porada](../test/media/tip.png "Porada") Może być konieczne rozszerzenie kontrolki kontenera zawierającej kontrolkę, którą chcesz edytować. [!INCLUDE[crdefault](../includes/crdefault-md.md)][lokalizowanie kontrolki i jej elementów podrzędnych](#CodedUITestEditor_LocateDecendants) znajdujących się w dalszej części tego tematu.
+- ![Porada](../test/media/tip.png "{1&gt;Porada&lt;1}") Może być konieczne rozszerzenie kontrolki kontenera zawierającej kontrolkę, którą chcesz edytować. [!INCLUDE[crdefault](../includes/crdefault-md.md)][lokalizowanie kontrolki i jej elementów podrzędnych](#CodedUITestEditor_LocateDecendants) znajdujących się w dalszej części tego tematu.
 
 ## <a name="CodedUITestEditor_DeleteUIActions"></a>Usuń niepożądane akcje interfejsu użytkownika
  Można łatwo usunąć niepożądane akcje interfejsu użytkownika w kodowanym teście interfejsu użytkownika.
@@ -118,19 +118,19 @@ Może być używana wersja Visual Studio Enterprise wcześniejsza niż 2012. Edy
  *Co jeszcze mam wiedzieć?*
  **Ważne problemy**
 
-- Ostrzeżenie ![ikony](../test/media/caution.gif "Ostrzeżenie") **ostrzeżenia:** w przypadku podziału metody należy zmodyfikować każdy kod, który wywołuje istniejącą metodę, aby również wywołać nową metodę, która ma zostać utworzona, jeśli nadal chcesz, aby te akcje interfejsu użytkownika zostały uwzględnione. Podczas dzielenia metody zostanie wyświetlone okno dialogowe Microsoft Visual Studio. Ostrzega o tym, że musisz zmodyfikować każdy kod, który wywołuje istniejącą metodę, aby również wywołać nową metodę, którą chcesz utworzyć. Wybierz **tak**.
+- Ostrzeżenie ![ikony](../test/media/caution.gif "Ostrzeżenie") **ostrzeżenia:** w przypadku podziału metody należy zmodyfikować każdy kod, który wywołuje istniejącą metodę, aby również wywołać nową metodę, która ma zostać utworzona, jeśli nadal chcesz, aby te akcje interfejsu użytkownika zostały uwzględnione. Podczas dzielenia metody zostanie wyświetlone okno dialogowe Microsoft Visual Studio. Ostrzega o tym, że musisz zmodyfikować każdy kod, który wywołuje istniejącą metodę, aby również wywołać nową metodę, którą chcesz utworzyć. Wybierz opcję **tak**.
 
   **Pomoc**
 
-- ![Porada](../test/media/tip.png "Porada") Aby cofnąć podział, wybierz polecenie **Cofnij** z menu **Edycja** lub naciśnij klawisze Ctrl + Z.
+- ![Porada](../test/media/tip.png "{1&gt;Porada&lt;1}") Aby cofnąć podział, wybierz polecenie **Cofnij** z menu **Edycja** lub naciśnij klawisze Ctrl + Z.
 
-- ![Porada](../test/media/tip.png "Porada") Nową metodę można zmienić. Wybierz go w okienku Akcje interfejsu użytkownika i wybierz przycisk **Zmień nazwę** na pasku narzędzi edytora kodowanego testu interfejsu użytkownika.
+- ![Porada](../test/media/tip.png "{1&gt;Porada&lt;1}") Nową metodę można zmienić. Wybierz go w okienku Akcje interfejsu użytkownika i wybierz przycisk **Zmień nazwę** na pasku narzędzi edytora kodowanego testu interfejsu użytkownika.
 
-   —lub—
+   lub
 
    Otwórz menu skrótów dla nowej metody testowej i wybierz polecenie **Zmień nazwę**.
 
-   Pojawi się okno dialogowe programu Microsoft Visual Studio. Ostrzega o tym, że należy zmodyfikować kod odwołujący się do tej metody. Wybierz **tak**.
+   Pojawi się okno dialogowe programu Microsoft Visual Studio. Ostrzega o tym, że należy zmodyfikować kod odwołujący się do tej metody. Wybierz opcję **tak**.
 
 ## <a name="CodedUITestEditor_MoveMethods"></a>Przenieś metodę testową do pliku UIMap, aby ułatwić dostosowanie
  Jeśli określisz, że jedna z metod testowych w kodowanym teście interfejsu użytkownika wymaga kodu niestandardowego, musisz przenieść ją do pliku UIMap.cs lub UIMap. vb. W przeciwnym razie kod zostanie nadpisany po każdym ponownym skompilowaniu kodowanego testu interfejsu użytkownika. Jeśli nie przeniesiesz metody, kod niestandardowy zostanie nadpisany za każdym razem, gdy test zostanie ponownie skompilowany.
@@ -142,11 +142,11 @@ Może być używana wersja Visual Studio Enterprise wcześniejsza niż 2012. Edy
  *Co jeszcze mam wiedzieć?*
  **Ważne problemy**
 
-- Ostrzeżenie ![ikony](../test/media/caution.gif "Ostrzeżenie") **ostrzeżenia:** po przeniesieniu metody nie można już edytować jej przy użyciu edytora kodowanego testu interfejsu użytkownika. Należy dodać niestandardowy kod i obsługiwać go za pomocą Edytora kodu. Podczas przenoszenia metody wyświetlane jest okno dialogowe Microsoft Visual Studio. Ostrzega o tym, że metoda zostanie przeniesiona z pliku UIMap. UITest do pliku UIMap.cs lub UIMap. vb i nie będzie już można edytować metody przy użyciu edytora kodowanego testu interfejsu użytkownika. Wybierz **tak**.
+- Ostrzeżenie ![ikony](../test/media/caution.gif "Ostrzeżenie") **ostrzeżenia:** po przeniesieniu metody nie można już edytować jej przy użyciu edytora kodowanego testu interfejsu użytkownika. Należy dodać niestandardowy kod i obsługiwać go za pomocą Edytora kodu. Podczas przenoszenia metody wyświetlane jest okno dialogowe Microsoft Visual Studio. Ostrzega o tym, że metoda zostanie przeniesiona z pliku UIMap. UITest do pliku UIMap.cs lub UIMap. vb i nie będzie już można edytować metody przy użyciu edytora kodowanego testu interfejsu użytkownika. Wybierz opcję **tak**.
 
   **Pomoc**
 
-- ![Porada](../test/media/tip.png "Porada") Aby cofnąć przeniesienie, wybierz polecenie **Cofnij** z menu **Edycja** lub naciśnij klawisze Ctrl + Z. Należy jednak ręcznie usunąć kod z pliku UIMap.cs lub UIMap. vb.
+- ![Porada](../test/media/tip.png "{1&gt;Porada&lt;1}") Aby cofnąć przeniesienie, wybierz polecenie **Cofnij** z menu **Edycja** lub naciśnij klawisze Ctrl + Z. Należy jednak ręcznie usunąć kod z pliku UIMap.cs lub UIMap. vb.
 
 ## <a name="CodedUITestEditor_LocateUIControl"></a>Lokalizowanie kontrolki interfejsu użytkownika w testowanej aplikacji
  Czasami może być trudne Wizualizacja, gdzie kontrolki znajdują się w interfejsie użytkownika testowanej aplikacji. Jedną z możliwości edytora kodowanego testu interfejsu użytkownika jest możliwość wybrania kontrolki wymienionej na mapie formantów interfejsu użytkownika i wyświetlenia jej lokalizacji w testowanej aplikacji. Za pomocą funkcji **lokalizowania kontrolki interfejsu użytkownika** w testowanej aplikacji można także sprawdzić modyfikacje właściwości wyszukiwania dokonane w formancie.
@@ -164,7 +164,7 @@ Może być używana wersja Visual Studio Enterprise wcześniejsza niż 2012. Edy
 
   **Pomoc**
 
-- ![Porada](../test/media/tip.png "Porada") Alternatywnie możesz użyć opcji **Znajdź wszystko** , aby sprawdzić, czy wszystkie kontrolki w kontenerze mogą być prawidłowo zlokalizowane. Ta opcja jest opisana w następnej sekcji.
+- ![Porada](../test/media/tip.png "{1&gt;Porada&lt;1}") Alternatywnie możesz użyć opcji **Znajdź wszystko** , aby sprawdzić, czy wszystkie kontrolki w kontenerze mogą być prawidłowo zlokalizowane. Ta opcja jest opisana w następnej sekcji.
 
 ## <a name="CodedUITestEditor_LocateDecendants"></a>Lokalizowanie formantu i jego elementów podrzędnych
  Można sprawdzić, czy wszystkie kontrolki w kontenerze mogą być prawidłowo zlokalizowane w interfejsie użytkownika testowanej aplikacji. Może to pomóc w sprawdzeniu zmian właściwości wyszukiwania, które mogły zostać wprowadzone w kontenerze. Ponadto, jeśli wprowadzono znaczące zmiany w interfejsie użytkownika testowanej aplikacji, można sprawdzić, czy istniejące właściwości wyszukiwania kontrolki są nadal poprawne.
@@ -198,14 +198,14 @@ Może być używana wersja Visual Studio Enterprise wcześniejsza niż 2012. Edy
 
   **Pomoc**
 
-- ![Porada](../test/media/tip.png "Porada") Jeśli okno Właściwości nie jest wyświetlana, naciśnij i przytrzymaj klawisz Alt podczas naciskania klawisza Enter lub alternatywnie naciśnij klawisz F4.
+- ![Porada](../test/media/tip.png "{1&gt;Porada&lt;1}") Jeśli okno Właściwości nie jest wyświetlana, naciśnij i przytrzymaj klawisz Alt podczas naciskania klawisza Enter lub alternatywnie naciśnij klawisz F4.
 
 ## <a name="external-resources"></a>Zasoby zewnętrzne
 
 ### <a name="guidance"></a>Wskazówki
  [Testowanie w celu ciągłego dostarczania za pomocą programu Visual Studio 2012 — Rozdział 2: testowanie jednostkowe: testowanie wewnątrz](https://go.microsoft.com/fwlink/?LinkID=255188)
 
-### <a name="faq"></a>Najczęściej zadawane pytania
+### <a name="faq"></a>Często zadawane pytania
  [Kodowane testy interfejsu użytkownika — często zadawane pytania — 1](https://go.microsoft.com/fwlink/?LinkID=230576)
 
  [Kodowane testy interfejsu użytkownika — często zadawane pytania — 2](https://go.microsoft.com/fwlink/?LinkID=230578)

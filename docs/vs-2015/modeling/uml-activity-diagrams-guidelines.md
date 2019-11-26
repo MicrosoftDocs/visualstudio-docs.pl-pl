@@ -93,7 +93,7 @@ W programie Visual Studio możesz narysować diagram aktywności, aby opisać pr
 
 - W **Eksploratorze modelu UML**przeciągnij działanie do pakietu.
 
-     \- lub —
+     \- lub-
 
 - W **Eksploratorze modelu UML**, kliknij prawym przyciskiem myszy działanie, a następnie kliknij przycisk **Wytnij**. Następnie kliknij prawym przyciskiem myszy pakiet, a następnie kliknij przycisk **Wklej**.
 
@@ -408,7 +408,7 @@ W programie Visual Studio możesz narysować diagram aktywności, aby opisać pr
 
 1. Utwórz nowy Diagram działania, w którym ma zostać opisany przepływ transformacji lub wyboru.
 
-   - W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt, wskaż polecenie **Dodaj**, kliknij pozycję **nowy element**, a następnie kliknij pozycję **Diagram aktywności**. Nadaj diagramowi odpowiednią nazwę dla przepływu transformacji lub zaznaczenia. Kliknij pozycję **Add** (Dodaj).
+   - W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt, wskaż polecenie **Dodaj**, kliknij pozycję **nowy element**, a następnie kliknij pozycję **Diagram aktywności**. Nadaj diagramowi odpowiednią nazwę dla przepływu transformacji lub zaznaczenia. Kliknij przycisk **Dodaj**.
 
 2. Na nowym diagramie:
 

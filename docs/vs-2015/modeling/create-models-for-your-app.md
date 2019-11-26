@@ -53,7 +53,7 @@ Diagramy modelowania ułatwiają zrozumienie, wyjaśnienie i komunikowanie pomys
 
  W tej wersji można utworzyć następujące diagramy UML:
 
-|**Diagram**|**Pokazując**|
+|**4b**|**Pokazując**|
 |-----------------|---------------|
 |[Diagramy aktywności UML: informacje](../modeling/uml-activity-diagrams-reference.md)|Przepływ pracy między działaniami i uczestnikami w procesie biznesowym|
 |[Diagramy składników UML: informacje](../modeling/uml-component-diagrams-reference.md)|Składniki systemu, ich interfejsy, porty i relacje|
@@ -65,7 +65,7 @@ Diagramy modelowania ułatwiają zrozumienie, wyjaśnienie i komunikowanie pomys
 
  Aby wizualizować architekturę systemu lub istniejącego kodu, Utwórz następujące diagramy:
 
-|**Diagram**|**Pokazując**|
+|**4b**|**Pokazując**|
 |-----------------|---------------|
 |[Diagramy warstw: wskazówki](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Diagramy warstw: informacje](../modeling/layer-diagrams-reference.md)|Architektura wysokiego poziomu systemu|
 |Mapy kodu<br /><br /> [Zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [Wyszukiwanie potencjalnych problemów za pomocą analizatorów mapy kodu](../modeling/find-potential-problems-using-code-map-analyzers.md)|Zależności i inne relacje w istniejącym kodzie|
@@ -73,7 +73,7 @@ Diagramy modelowania ułatwiają zrozumienie, wyjaśnienie i komunikowanie pomys
 
 ## <a name="common-tasks"></a>Typowe zadania
 
-|**Temat**|**Zadanie**|
+|**Rozdziału**|**Zadaniem**|
 |---------------|--------------|
 |[Tworzenie projektów i diagramów modelowania UML](../modeling/create-uml-modeling-projects-and-diagrams.md)|**Tworzenie modeli** i Dodawanie diagramów.|
 |[Edytowanie modeli i diagramów UML](../modeling/edit-uml-models-and-diagrams.md)|**Rysuj diagramy** , aby edytować model.|
@@ -85,7 +85,7 @@ Diagramy modelowania ułatwiają zrozumienie, wyjaśnienie i komunikowanie pomys
 
 ## <a name="related-tasks"></a>Powiązane zadania
 
-|**Temat**|**Zadanie**|
+|**Rozdziału**|**Zadaniem**|
 |---------------|--------------|
 |[Tworzenie wizualizacji kodu](../modeling/visualize-code.md)|Tworzenie map kodu i diagramów warstwowych w celu lepszego zrozumienia nieznanego kodu.|
 |[Wymagania modelu użytkownika](../modeling/model-user-requirements.md)|Używaj modeli, aby wyjaśnić potrzeby użytkowników.|
@@ -96,6 +96,6 @@ Diagramy modelowania ułatwiają zrozumienie, wyjaśnienie i komunikowanie pomys
 
 ## <a name="external-resources"></a>Zasoby zewnętrzne
 
-|**Kategoria**|**Linki**|
+|**Kategorii**|**Linki**|
 |------------------|---------------|
 |**Dotyczące**|-   [Wizualizacja programu Visual Studio & narzędzia do modelowania](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [wizualizacji programu Visual Studio & Modeling SDK (narzędzia DSL)](https://go.microsoft.com/fwlink/?LinkId=184721)|

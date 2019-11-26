@@ -20,15 +20,15 @@ ms.locfileid: "74299918"
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Możesz się przemieszczać w programie Visual Studio łatwiej za pomocą skrótów klawiaturowych w tym temacie. Aby uzyskać więcej informacji, zobacz [skróty klawiaturowe w programie Visual Studio](default-keyboard-shortcuts-in-visual-studio.md). Aby uzyskać informacji na temat optymalizowania programu Visual Studio dla ułatwień dostępu, zobacz [i porady dotyczące ułatwień dostępu](../ide/reference/accessibility-tips-and-tricks.md).
+Możesz się przemieszczać w programie Visual Studio łatwiej za pomocą skrótów klawiaturowych w tym temacie. Aby uzyskać więcej ogólnych informacji, zobacz [skróty klawiaturowe w programie Visual Studio](default-keyboard-shortcuts-in-visual-studio.md). Aby uzyskać informacje o sposobach optymalizacji programu Visual Studio pod kątem ułatwień dostępu, zobacz [porady i wskazówki dotyczące ułatwień dostępu](../ide/reference/accessibility-tips-and-tricks.md).
 
 - [Zarządzanie oknem](../ide/tips-and-tricks-for-visual-studio.md#BKMK_WindowMgmt)
 
 - [Skróty okna](../ide/tips-and-tricks-for-visual-studio.md#BKMK_WindowShortcuts)
 
-- [Wyszukiwania usługi Visual Studio](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Search)
+- [Wyszukiwanie w programie Visual Studio](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Search)
 
-- [Znajdowanie w edytorze](../ide/tips-and-tricks-for-visual-studio.md#BKMK_EditorFind)
+- [Znajdź Edytor](../ide/tips-and-tricks-for-visual-studio.md#BKMK_EditorFind)
 
 - [Edytor kodu](../ide/tips-and-tricks-for-visual-studio.md#BKMK_CodeEditor)
 
@@ -38,7 +38,7 @@ Możesz się przemieszczać w programie Visual Studio łatwiej za pomocą skrót
 
 - [Zarządzanie cyklem życia aplikacji](../ide/tips-and-tricks-for-visual-studio.md#BKMK_ALM)
 
-## <a name="BKMK_WindowMgmt"></a> Zarządzanie oknem
+## <a name="BKMK_WindowMgmt"></a>Zarządzanie oknem
 
 |||
 |-|-|
@@ -49,7 +49,7 @@ Możesz się przemieszczać w programie Visual Studio łatwiej za pomocą skrót
 |Pokazywanie listy otwartych plików|Ctrl+Alt+Down|
 |Pokaż wszystkie Windows liczb zmiennoprzecinkowych|Ctrl+Shift+M|
 
-## <a name="BKMK_WindowShortcuts"></a> Skróty okna
+## <a name="BKMK_WindowShortcuts"></a>Skróty okna
 
 |||
 |-|-|
@@ -59,17 +59,17 @@ Możesz się przemieszczać w programie Visual Studio łatwiej za pomocą skrót
 |Uruchom nowe wystąpienie|Win+Shift+n|
 |Przełączanie między Windows|Win+n|
 
-## <a name="BKMK_Search"></a> Wyszukiwania usługi Visual Studio
+## <a name="BKMK_Search"></a>Wyszukiwanie w programie Visual Studio
 
 |||
 |-|-|
 |Wyszukaj w Eksploratorze rozwiązań|Ctrl+;|
 |Umieść fokus w polu wyszukiwania w dowolnym oknie Narzędzie|ALT +' kiedy okno narzędzia ma fokus|
 |Szybkie uruchamianie|Ctrl+Q|
-|Wyniki zakresu pasek Szybkie uruchamianie|- @opt Opcje<br />- @cmd Poleceń<br />- @mru Ostatnio używane<br />- @doc Otwartych dokumentach|
+|Wyniki zakresu pasek Szybkie uruchamianie|-Opcje @opt<br />-@cmd polecenia<br />-@mru ostatnio używane<br />-@doc otwarte dokumenty|
 |Wyszukiwanie w opcjach narzędzi|Ctrl+E|
 
-## <a name="BKMK_EditorFind"></a> Znajdowanie w edytorze
+## <a name="BKMK_EditorFind"></a>Znajdź Edytor
 
 |||
 |-|-|
@@ -84,7 +84,7 @@ Możesz się przemieszczać w programie Visual Studio łatwiej za pomocą skrót
 |Znajdź w plikach|Ctrl+Shift+F|
 |Zastąp w plikach|Ctrl+Shift+H|
 
-## <a name="BKMK_CodeEditor"></a> Edytor kodu
+## <a name="BKMK_CodeEditor"></a>Edytor kodu
 
 |||
 |-|-|
@@ -100,7 +100,7 @@ Możesz się przemieszczać w programie Visual Studio łatwiej za pomocą skrót
 |Przejdź do stosu definicji|Ctrl + Shift + 8 (tył), Ctrl + Shift + 7 (przód)|
 |Przejdź do wyróżnionych odwołań|Ctrl + Shift + Up (wstecz), Ctrl + Shift + Strzałka w dół (dalej)|
 |Powiększenie w edytorze|Ctrl+Shift+> (In), Ctrl+Shift+< (Out)|
-|Zaznaczenie blokowe|Przytrzymaj klawisz Alt i przeciągnij mysz, Shift + Alt + klawisze strzałek|
+|Zablokuj zaznaczenie|Przytrzymaj klawisz Alt i przeciągnij mysz, Shift + Alt + klawisze strzałek|
 |Przenieś linię w górę/w dół|Alt + Strzałka w górę / Alt + Strzałka w dół|
 |Zobacz definicję|Alt+F12|
 |Zamknij okno definicji wglądu|Esc|
@@ -109,7 +109,7 @@ Możesz się przemieszczać w programie Visual Studio łatwiej za pomocą skrót
 |Przechodzenie między wieloma wynikami wyglądu|F8 i Shift + F8|
 |Przełączanie się między oknem edytora kodu i okna Zobacz definicję|Shift + Esc|
 
-## <a name="BKMK_Toolbars"></a> Paski narzędzi
+## <a name="BKMK_Toolbars"></a>Paski narzędzi
 
 |||
 |-|-|
@@ -137,12 +137,12 @@ Możesz się przemieszczać w programie Visual Studio łatwiej za pomocą skrót
 |Bufor czyszczenia okna bezpośredniego|> ze specyfikacją cls|
 |Wartość do druku w oknie bezpośrednim|? nazwa_zmiennej|
 
-## <a name="BKMK_ALM"></a> Zarządzanie cyklem życia aplikacji
+## <a name="BKMK_ALM"></a>Zarządzanie cyklem życia aplikacji
 
-Zobacz [skróty klawiaturowe: Visual Studio Online, TFS i sieci web portal, programu Team Explorer](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts).
+Zobacz [skróty klawiaturowe: Visual Studio Online, portal sieci Web TFS i Team Explorer](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts).
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Visual Studio Blog](https://devblogs.microsoft.com/visualstudio/)
-- [Program Visual Studio — porady i wskazówki Blog](https://blogs.msdn.microsoft.com/zainnab/)
-- [Visual Studio Toolbox w witrynie Channel 9](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox)
+- [Blog programu Visual Studio](https://devblogs.microsoft.com/visualstudio/)
+- [Blog Porady i wskazówki dotyczące programu Visual Studio](https://blogs.msdn.microsoft.com/zainnab/)
+- [Przybornik programu Visual Studio w witrynie Channel 9](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox)

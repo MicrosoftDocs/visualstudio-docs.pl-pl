@@ -75,7 +75,7 @@ Można utworzyć fragment kodu zawierający tylko kilka kroków. Wystarczy utwor
 
 1. Możesz dodać własne fragmenty kodu do instalacji programu Visual Studio za pomocą Menedżera fragmentów kodów. Otwórz Menedżera fragmentów kodu (**Tools/Code wstaweks Manager**).
 
-2. Kliknij przycisk **Importuj** .
+2. Kliknij przycisk **Importuj**.
 
 3. Przejdź do lokalizacji, w której zapisano fragment kodu w poprzedniej procedurze, zaznacz go, a następnie kliknij przycisk **Otwórz**.
 

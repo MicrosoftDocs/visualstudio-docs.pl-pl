@@ -114,7 +114,7 @@ Znajdowanie przecieków pamięci i niewydajne użycie pamięci w .NET Framework 
   
 - **Liczba** wskazuje liczbę wystąpień typu w migawce.  
   
-- **Rozmiar (w bajtach)** to rozmiar wszystkich wystąpień typu, z wyłączeniem rozmiaru obiektów, do których są przechowywane odwołania. Program  
+- **Rozmiar (w bajtach)** to rozmiar wszystkich wystąpień typu, z wyłączeniem rozmiaru obiektów, do których są przechowywane odwołania. Microsoft®  
   
 - **Rozmiar włącznie (w bajtach)** obejmuje rozmiary obiektów, do których istnieją odwołania.  
   
@@ -129,7 +129,7 @@ Znajdowanie przecieków pamięci i niewydajne użycie pamięci w .NET Framework 
   
    ![Wartości wystąpień w etykietce danych](../misc/media/dbg-mma-instancevaluesindatatip.png "DBG_MMA_InstanceValuesInDataTip")  
   
-- **Rozmiar (w bajtach)** jest rozmiarem obiektu, bez względu na rozmiar obiektów, do których są przechowywane odwołania. Program  
+- **Rozmiar (w bajtach)** jest rozmiarem obiektu, bez względu na rozmiar obiektów, do których są przechowywane odwołania. Microsoft®  
   
 - **Rozmiar włącznie (w bajtach)** obejmuje rozmiary obiektów, do których istnieją odwołania.  
   

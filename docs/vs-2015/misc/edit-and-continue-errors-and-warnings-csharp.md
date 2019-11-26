@@ -81,7 +81,7 @@ Dokonano edycji w sekcji kodu, która nie jest dozwolona w programie Visual C# E
   
 1. W menu **Debuguj** wybierz polecenie **Cofnij** , aby cofnąć zmianę.  
   
-     —lub—  
+     lub  
   
 2. Zatrzymaj sesję debugowania, wprowadź zmiany i Rozpocznij nową sesję debugowania.  
   

@@ -40,11 +40,11 @@ W tym temacie opisano sposób tworzenia zestawu reguł działania zasad przy uż
 
     - Kliknij wielokropek **RuleSetReference** **[...]** , a następnie wybierz istniejący zestaw reguł w oknie [dialogowym Wybieranie zestawu reguł (starsza wersja)](../workflow-designer/select-rule-set-dialog-box-legacy.md). Następnie przejdź do kroku 10.
 
-         —lub—
+         lub
 
     - Wpisz nazwę zestawu reguł. Kliknij wielokropek **RuleSetReference** **[...]** , a następnie wybierz pozycję **Edytuj** w [oknie dialogowym Wybieranie zestawu reguł (starsza wersja)](../workflow-designer/select-rule-set-dialog-box-legacy.md).
 
-         —lub—
+         lub
 
     - Wpisz nazwę zestawu reguł. Rozwiń Właściwość **RuleSetReference** i wybierz wielokropek **[...]** we właściwości definicji zestawu **reguł** .
 

@@ -20,7 +20,7 @@ ms.locfileid: "74297959"
 
 Zakodowane testy interfejsu użytkownika mogą zautomatyzować testowanie aplikacji internetowych przez rejestrowanie testów przy użyciu przeglądarki Internet Explorer. Następnie można dostosować swoje badania i odtwarzać je za pomocą Internet Explorer lub innego typu przeglądarki dla tych aplikacji internetowych.
 
- **Wymagania**
+ **Requirements**
 
 - Visual Studio Enterprise
 
@@ -111,9 +111,9 @@ Zakodowane testy interfejsu użytkownika mogą zautomatyzować testowanie aplika
 
   **Pomoc**
 
-- ![Porada](../test/media/tip.png "Porada") Dane wyjściowe można skonfigurować tak, aby obejmowały zrzuty ekranu w kodowanych dziennikach interfejsu użytkownika. Aby to zrobić, należy zmienić kilka ustawień konfiguracji w pliku QTAgent32.exe.config. Domyślnie ten plik jest instalowany w następującej lokalizacji:
+- ![Porada](../test/media/tip.png "{1&gt;Porada&lt;1}") Dane wyjściowe można skonfigurować tak, aby obejmowały zrzuty ekranu w kodowanych dziennikach interfejsu użytkownika. Aby to zrobić, należy zmienić kilka ustawień konfiguracji w pliku QTAgent32.exe.config. Domyślnie ten plik jest instalowany w następującej lokalizacji:
 
-   **C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE**
+   **C:\Program Files (x86) \Microsoft Visual Studio 11.0 \ Common7\IDE**
 
    Ustaw następujące wartości:
 
@@ -143,7 +143,7 @@ Zakodowane testy interfejsu użytkownika mogą zautomatyzować testowanie aplika
 
  [Testowanie w celu ciągłego dostarczania za pomocą programu Visual Studio 2012 — Rozdział 5: Automatyzowanie testów systemowych](https://go.microsoft.com/fwlink/?LinkID=255196)
 
-### <a name="faq"></a>Najczęściej zadawane pytania
+### <a name="faq"></a>Często zadawane pytania
  [Kodowane testy interfejsu użytkownika — często zadawane pytania — 1](https://go.microsoft.com/fwlink/?LinkID=230576)
 
  [Kodowane testy interfejsu użytkownika — często zadawane pytania — 2](https://go.microsoft.com/fwlink/?LinkID=230578)

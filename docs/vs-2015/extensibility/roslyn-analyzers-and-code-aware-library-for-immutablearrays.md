@@ -102,7 +102,7 @@ Aby analizator został odpowiednio wyświetlony w interfejsie użytkownika progr
 internal const string Category = "Naming";
 ```
 
-Zmiana `"Naming"` do `"API Guidance"`.
+Zmień `"Naming"`, aby `"API Guidance"`.
 
 Następnie Znajdź i Otwórz plik resources. resx w projekcie przy użyciu **Eksplorator rozwiązań**. Możesz umieścić w opisie analizatora, tytuł itd. Możesz zmienić wartość dla wszystkich tych elementów, aby `“Don’t use ImmutableArray<T> constructor”` teraz. Argumenty formatowania ciągu można umieścić w ciągu ({0}, {1}itp.), a następnie po wywołaniu `Diagnostic.Create()`można podać tablicę parametrów, które mają być przekazane.
 

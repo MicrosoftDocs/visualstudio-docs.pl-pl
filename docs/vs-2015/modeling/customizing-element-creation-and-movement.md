@@ -304,7 +304,7 @@ Można zezwolić na przeciąganie elementu do innego, z przybornika lub operacji
 
      Nowa ścieżka powinna wyglądać następująco:
 
-     **ComponentHasPorts.Component/!Component**
+     **Składnik elementu ComponentHasPorts. Component/!**
 
 9. Zapisz rozwiązanie, a następnie Przekształć szablony, klikając przycisk z prawej na pasku narzędzi **Eksplorator rozwiązań** .
 

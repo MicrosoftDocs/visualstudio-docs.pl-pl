@@ -110,7 +110,7 @@ W projektant XAML *kształt* jest dokładnie to, czego oczekujesz. Na przykład:
 |-|-|-|-|
 |![](../designers/media/b1-1.png "B1_1")|Dwa kształty przed połączeniem|![](../designers/media/b1-4.png "B1_4")|Wspólnej|
 |![](../designers/media/b1-2.png "B1_2")|Jednostka|![](../designers/media/b1-5.png "B1_5")|Wyklucz nakładanie|
-|![](../designers/media/b1-3.png "B1_3")|Mieszczon|![](../designers/media/b1-6.png "B1_6")|Odjęt|
+|![](../designers/media/b1-3.png "B1_3")|Mieszczon|![](../designers/media/b1-6.png "B1_6")|Odejmij|
 
  **Obejrzyj krótkie wideo:** ![Skonfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [pracujące z ścieżkami: Połącz ścieżki](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).
 

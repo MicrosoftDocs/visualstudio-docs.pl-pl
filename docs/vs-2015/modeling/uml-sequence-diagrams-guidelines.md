@@ -39,7 +39,7 @@ W programie Visual Studio możesz narysować *Diagram sekwencji* , aby wyświetl
 
  Aby sprawdzić, które wersje programu Visual Studio obsługują tę funkcję, zobacz [Obsługa wersji dla narzędzi architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-## <a name="in-this-topic"></a>W tym temacie:
+## <a name="in-this-topic"></a>W tym temacie
  [Korzystanie z diagramów sekwencji UML](#Using)
 
  [Podstawowe kroki dotyczące rysowania diagramów sekwencji](#BasicSteps)
@@ -123,7 +123,7 @@ W programie Visual Studio możesz narysować *Diagram sekwencji* , aby wyświetl
 
 - Przeciągnij komunikat w górę lub w dół w jego linii życia. Można przeciągać je do innych komunikatów lub do lub z bloku wykonywania.
 
-     \- lub —
+     \- lub-
 
 - Kliknij komunikat i użyj klawiszy Strzałka w **górę** i **Strzałka w dół** , aby dostosować położenie wiadomości. Aby zmienić kolejność komunikatów, użyj **klawiszy Shift + Strzałka w górę** i **Shift + Strzałka w dół** .
 
@@ -144,7 +144,7 @@ W programie Visual Studio możesz narysować *Diagram sekwencji* , aby wyświetl
 
   - Kliknij prawym przyciskiem myszy linię życia, a następnie wybierz polecenie **Utwórz klasę**.
 
-     —lub—
+     lub
 
   - Wybierz linię życia, naciśnij klawisz **F4**, a następnie w oknie **Właściwości** ustaw właściwość **Typ** na istniejący typ lub określ nazwę nowego typu. Kliknij prawym przyciskiem myszy etykietę komunikat, a następnie wybierz polecenie **Utwórz operację**.
 
@@ -165,7 +165,7 @@ W programie Visual Studio możesz narysować *Diagram sekwencji* , aby wyświetl
 
 2. Przeciągnij interakcję do pakietu.
 
-     \- lub —
+     \- lub-
 
      Kliknij prawym przyciskiem myszy interakcję, a następnie kliknij pozycję **Wytnij**. Kliknij prawym przyciskiem myszy pakiet, a następnie kliknij przycisk **Wklej**.
 
@@ -261,7 +261,7 @@ W programie Visual Studio możesz narysować *Diagram sekwencji* , aby wyświetl
 
 |**W tym celu**|**Użyj tego formatu**|
 |--------------------------|-------------------------|
-|Anonimowe wystąpienie typu.<br /><br /> Użyj tego, jeśli masz tylko jedną linię życia dla każdego typu.|*typeName*|
+|Anonimowe wystąpienie typu.<br /><br /> Użyj tego, jeśli masz tylko jedną linię życia dla każdego typu.|*Nazwa*|
 |Nazwane wystąpienie typu.<br /><br /> Użyj tego, jeśli chcesz wyświetlić sekwencję obejmującą więcej niż jedno wystąpienie tego samego typu.|*ObjectName*:*TypeName*|
 
 ### <a name="creating-lifelines-from-types"></a>Tworzenie linii życia z typów
@@ -274,7 +274,7 @@ W programie Visual Studio możesz narysować *Diagram sekwencji* , aby wyświetl
 
 - Przeciągnij klasę, składnik lub interfejs z Eksploratora modelu UML na diagram sekwencji.
 
-   \- lub —
+   \- lub-
 
   1. Kliknij prawym przyciskiem myszy klasę, składnik lub interfejs na odpowiednim diagramie, a następnie kliknij polecenie **Utwórz linię życia**.
 
@@ -323,7 +323,7 @@ W programie Visual Studio możesz narysować *Diagram sekwencji* , aby wyświetl
 
          Klasa lub interfejs pojawia się na diagramie klas.
 
-         \- lub —
+         \- lub-
 
     3. Przeciągnij nowy interfejs z **Eksploratora modelu UML** na składnik lub port na diagramie składników.
 
@@ -349,7 +349,7 @@ W programie Visual Studio możesz narysować *Diagram sekwencji* , aby wyświetl
 
 3. Kliknij dwukrotnie nazwę przy użyciu interakcji i zmień jej nazwę, aby opisać efekt sekwencji wielokrotnego użytku na tym diagramie.
 
-     \- lub —
+     \- lub-
 
      Napisz nazwę, taką jak wywołanie funkcji, z parametrami.
 
@@ -357,7 +357,7 @@ W programie Visual Studio możesz narysować *Diagram sekwencji* , aby wyświetl
 
      Kliknij przycisk **Utwórz nową sekwencję** , aby utworzyć nowy diagram sekwencji
 
-     \- lub —
+     \- lub-
 
      Kliknij pozycję **Połącz z sekwencją** , aby połączyć się z istniejącym diagramem.
 
@@ -384,7 +384,7 @@ W programie Visual Studio możesz narysować *Diagram sekwencji* , aby wyświetl
 
 - Kliknij dwukrotnie użycie interakcji.
 
-     \- lub —
+     \- lub-
 
      Kliknij prawym przyciskiem myszy użycie interakcji, a następnie kliknij pozycję **Przejdź do sekwencji**.
 

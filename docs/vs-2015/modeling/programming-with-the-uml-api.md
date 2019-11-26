@@ -51,9 +51,9 @@ Interfejs API UML programu Visual Studio umożliwia pisanie kodu umożliwiające
 ## <a name="the-api-assemblies"></a>Zestawy interfejsów API
  Ta tabela zawiera podsumowanie zestawów, które zapewniają rozszerzalność narzędzi UML i przestrzenie nazw, których należy użyć.
 
-|Zestaw|Namespaces|Zapewnia dostęp do:|
+|Zestaw|{1&gt;Przestrzenie nazw&lt;1}|Zapewnia dostęp do:|
 |--------------|----------------|-------------------------|
-|Microsoft.VisualStudio.Uml.Interfaces|Całą|Typy UML.|
+|Microsoft.VisualStudio.Uml.Interfaces|(Wszystkie)|Typy UML.|
 |Microsoft.VisualStudio.ArchitectureTools.Extensibility|Microsoft. VisualStudio. ArchitectureTools. rozszerzalność. UML|[Metody tworzenia](../modeling/create-elements-and-relationships-in-uml-models.md)|
 ||Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation|[Diagramy i kształty](../modeling/display-a-uml-model-on-diagrams.md)|
 ||Microsoft.VisualStudio.ArchitectureTools.Extensibility|[Projekt modelowania](../modeling/read-a-uml-model-in-program-code.md)|

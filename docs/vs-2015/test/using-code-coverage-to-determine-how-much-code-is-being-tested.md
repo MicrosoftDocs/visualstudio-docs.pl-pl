@@ -28,7 +28,7 @@ Aby określić, jaka część kodu projektu jest faktycznie testowana przez zako
 
  ![Wyniki pokrycia kodu z kolorami](../test/media/codecoverage1.png "CodeCoverage1")
 
- **Wymagania**
+ **Requirements**
 
 - Visual Studio Enterprise
 
@@ -223,7 +223,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
  `ExcludeFromCodeCoverage(` *wykluczenianame* `, L"` *funkcjaname* `");`
 
- `ExcludeSourceFromCodeCoverage(` *ExclusionName* `, L"` *SourceFilePath* `");`
+ `ExcludeSourceFromCodeCoverage(` *wykluczenia* `, L"` *sourcefilepath* `");`
 
 - *Wykluczname* jest dowolną unikatową nazwą.
 

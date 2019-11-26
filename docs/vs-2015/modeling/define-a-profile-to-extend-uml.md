@@ -105,7 +105,7 @@ Można zdefiniować *profil UML* , aby dostosować standardowe elementy modelu d
 
 5. Na stronie **zasoby** Dodaj wiersz opisujący profil:
 
-   - Kliknij przycisk **Nowy**. Ustaw pola w oknie dialogowym **Dodaj nowe zasoby** w następujący sposób.
+   - Kliknij pozycję **Nowy**. Ustaw pola w oknie dialogowym **Dodaj nowe zasoby** w następujący sposób.
 
    - Ustaw **Typ** na `Microsoft.VisualStudio.UmlProfile`
 
@@ -349,7 +349,7 @@ Musisz wybrać swój profil w pakiecie lub modelu. Stereotypy będą wyświetlan
 
 3. Upewnij się, że składnia jest opisana tutaj, i jak pokazano na _dysku_ **: \Program Files\Microsoft Visual Studio [wersja] \Common7\IDE\Extensions\Microsoft\Architecture Tools\UmlProfiles\\** .
 
-4. Odinstaluj błędne rozszerzenie. Na **narzędzia** menu, kliknij przycisk **rozszerzenia i aktualizacje**.
+4. Odinstaluj błędne rozszerzenie. W menu **Narzędzia** kliknij pozycję **rozszerzenia i aktualizacje**.
 
    - Jeśli rozszerzenie nie pojawia się, zobacz następny element.
 

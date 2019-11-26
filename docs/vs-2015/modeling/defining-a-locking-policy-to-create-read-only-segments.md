@@ -83,7 +83,7 @@ partition.SetLocks(Locks.Delete);
 |Właściwość|Nie można zmienić właściwości domeny elementów. Nie dotyczy to właściwości, które są generowane przez rolę klasy domeny w relacji.|
 |Dodaj|Nie można utworzyć nowych elementów i linków w partycji lub magazynie.<br /><br /> Nie ma zastosowania do `ModelElement`.|
 |Przenieś|Nie można przenieść elementu między partycjami, jeśli `element.IsLocked(Move)` ma wartość true lub jeśli `targetPartition.IsLocked(Move)` ma wartość true.|
-|Usuwanie|Nie można usunąć elementu, jeśli ta blokada została ustawiona w samym elemencie lub na dowolnym z elementów, do których zostanie ono propagowane, takich jak osadzone elementy i kształty.<br /><br /> Za pomocą `element.CanDelete()` można stwierdzić, czy element może zostać usunięty.|
+|Usuń|Nie można usunąć elementu, jeśli ta blokada została ustawiona w samym elemencie lub na dowolnym z elementów, do których zostanie ono propagowane, takich jak osadzone elementy i kształty.<br /><br /> Za pomocą `element.CanDelete()` można stwierdzić, czy element może zostać usunięty.|
 |Zmienić kolejność|Nie można zmienić kolejności linków w RolePlayer.|
 |RolePlayer|Nie można zmienić zestawu linków, które są źródłem w tym elemencie. Na przykład nowe elementy nie mogą być osadzone w tym elemencie. Nie ma to wpływu na linki, dla których ten element jest elementem docelowym.<br /><br /> Jeśli ten element jest łączem, jego źródło i cel nie są modyfikowane.|
 |Wszystkie|Wartości bitowe lub inne.|

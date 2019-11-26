@@ -45,7 +45,7 @@ W tym artykule opisano, jak można użyć [!INCLUDE[vsprvs](../includes/vsprvs-m
     |Modele 3-D|**MeshContentTask (. targets,. props)**|
     |Programy do cieniowania|**ShaderGraphContentTask (. targets,. props)**|
 
-3. Wybierz **OK** przycisku.
+3. Wybierz przycisk **OK** .
 
 ## <a name="including-assets-in-your-build"></a>Uwzględnianie zasobów w kompilacji
  Teraz, gdy Twój projekt wie o różnych typach zasobów 3-D, których chcesz użyć, następnym krokiem jest poinformowanie o tym, które pliki są zasobami 3-D i jakie są ich zasoby.
@@ -61,7 +61,7 @@ W tym artykule opisano, jak można użyć [!INCLUDE[vsprvs](../includes/vsprvs-m
    > [!IMPORTANT]
    > Domyślnie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zakłada, że wiele rodzajów plików obrazów należy klasyfikować przy użyciu typu elementu **obrazu** wbudowanego w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. W związku z tym należy zmienić właściwość **typu elementu** dla każdego obrazu, który ma być przetwarzany przez potok zawartości obrazu. Inne typy plików źródłowych potoku zawartości dla modeli trójwymiarowych i grafiki programu Visual Shader są domyślne dla poprawnego **typu elementu**.
 
-4. Wybierz **OK** przycisku.
+4. Wybierz przycisk **OK** .
 
    Oto trzy typy elementów potoku zawartości i skojarzone z nimi typy plików źródłowych i wyjściowych.
 
@@ -82,7 +82,7 @@ W tym artykule opisano, jak można użyć [!INCLUDE[vsprvs](../includes/vsprvs-m
 
 3. W obszarze **Właściwości konfiguracji**wybierz węzeł potoku zawartości — na przykład **potok zawartości obrazu** dla tekstury i zasobów obrazu — a następnie w siatce właściwości ustaw odpowiednie wartości właściwości. Na przykład, aby wygenerować mipmapy dla elementu zawartości tekstury w czasie kompilacji, należy ustawić właściwość **Generuj MIPS** na **wartość tak**.
 
-4. Wybierz **OK** przycisku.
+4. Wybierz przycisk **OK** .
 
 ### <a name="image-content-pipeline-configuration"></a>Konfiguracja potoku zawartości obrazu
  Korzystając z narzędzia potoku zawartości obrazów do tworzenia zasobów tekstury, można skompresować teksturę na różne sposoby, wskazać, czy poziomy MIP mają być generowane w czasie kompilacji, i zmienić nazwę pliku wyjściowego.

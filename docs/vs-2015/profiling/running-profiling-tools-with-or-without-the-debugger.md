@@ -43,7 +43,7 @@ Program Visual Studio oferuje teraz możliwość wyboru narzędzi do oceny wydaj
   
 1. Otwórz projekt, który chcesz debugować, a następnie kliknij pozycję **Debuguj/Rozpocznij debugowanie** (lub **Rozpocznij** na pasku narzędzi lub **F5**).  
   
-2. **Narzędzia diagnostyczne** okno pojawia się automatycznie, o ile nie została ona wyłączona. Aby ponownie wyświetlić okno, kliknij pozycję **Debuguj/Windows/pokaż narzędzia diagnostyczne**.  
+2. Okno **Narzędzia diagnostyczne** jest automatycznie wyświetlane, chyba że zostało wyłączone. Aby ponownie wyświetlić okno, kliknij pozycję **Debuguj/Windows/pokaż narzędzia diagnostyczne**.  
   
 3. Uruchom scenariusze, dla których chcesz zbierać dane.  
   

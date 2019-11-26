@@ -21,7 +21,7 @@ ms.lasthandoff: 11/21/2019
 ms.locfileid: "74302844"
 ---
 # <a name="rule-condition-editor-dialog-box-legacy"></a>Edytor warunku reguły, okno dialogowe (starsza wersja)
-W tym temacie opisano sposób użycia okna dialogowego **Edytor warunku reguły** w starszej [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Użyj starszego [!INCLUDE[wfd2](../includes/wfd2-md.md)] konieczność docelowy: [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+W tym temacie opisano sposób użycia okna dialogowego **Edytor warunku reguły** w starszej [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Użyj starszej [!INCLUDE[wfd2](../includes/wfd2-md.md)], jeśli chcesz wskazać [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
  Można tworzyć i modyfikować warunki reguły deklaracyjnej przy użyciu okna dialogowego **Edytor warunku reguły** . Te warunki reguły są udostępniane jako właściwości w następujących Windows Workflow Foundation działaniach gotowych:
 
@@ -31,7 +31,7 @@ W tym temacie opisano sposób użycia okna dialogowego **Edytor warunku reguły*
 
 - [Działanie ReplicatorActivity](https://go.microsoft.com/fwlink?LinkID=65039)
 
-- [WhileActivity](https://go.microsoft.com/fwlink?LinkID=65049)
+- [While](https://go.microsoft.com/fwlink?LinkID=65049)
 
 - [SequentialWorkflowActivity](https://go.microsoft.com/fwlink?LinkID=65040)
 
@@ -44,7 +44,7 @@ W tym temacie opisano sposób użycia okna dialogowego **Edytor warunku reguły*
 |Element interfejsu użytkownika|Opis|
 |----------------|-----------------|
 |**Rozgrzewa**|Wprowadź wyrażenie dla warunku reguły.|
-|**OK**|Kliknij, aby zapisać warunek reguły.|
+|**Ok**|Kliknij, aby zapisać warunek reguły.|
 
 ## <a name="entering-condition-expressions"></a>Wprowadzanie wyrażeń warunku
  Wyrażenia warunku są wprowadzane jako tekst. Możesz to wpisać **.** do edytora, aby odwoływać się do pól, właściwości i metod używanych w przepływie pracy przy użyciu menu IntelliSense. Lub można wpisać bezpośrednio nazwę elementu członkowskiego przepływu pracy. Można dodać operatory logiczne do warunku, takie jak i, lub, i nie. Można również dodać predykaty. Predykat jest operatorem binarnym i dwoma operandami. Obsługiwane operatory binarne to **==** , **>** , **\<** , **>=** i **<=** . Obsługiwane argumenty operacji to stała wartość, funkcja arytmetyczna i publiczne elementy członkowskie z zakresem.

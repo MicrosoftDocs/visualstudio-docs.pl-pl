@@ -7,14 +7,14 @@ ms.date: 02/01/2019
 ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 7eae92f7c65208dfeda9cd19e14eaa627e12a22a
-ms.sourcegitcommit: bbff780cda82bb64862d77fe8f407f1803beb876
+ms.openlocfilehash: 0232b37d08901bcc04c9d66facfe6850a9852e88
+ms.sourcegitcommit: e825d1223579b44ee2deb62baf4de0153f99242a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74142210"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74485469"
 ---
-Program Visual Studio umożliwia łatwe tworzenie, debugowanie i uruchamianie kontenerów ASP.NET Core aplikacji oraz publikowanie ich w usłudze Azure Container Registry (ACR), Docker Hub, Azure App Service lub własnym rejestrze kontenerów. W tym artykule opublikujemy ACR.
+Za pomocą programu Visual Studio można łatwo kompilować, debugować i uruchamiać kontenery .NET, ASP.NET i ASP.NET Core aplikacje oraz publikować je w Azure Container Registry (ACR), Docker Hub, Azure App Service lub własnym rejestrze kontenerów. W tym artykule opublikujemy aplikację ASP.NET Core w ACR.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
@@ -73,26 +73,6 @@ Wybierz pozycję **Docker** z listy rozwijanej Debuguj na pasku narzędzi i Rozp
 
 Opcja **Narzędzia kontenera** w oknie **danych wyjściowych** pokazuje, jakie akcje są wykonywane.
 
-Otwórz **konsolę Menedżera pakietów** (PMC) z menu **Narzędzia**, > Menedżer pakietów NuGet, **konsola Menedżera pakietów**.
-
-Utworzony obraz platformy Docker aplikacji jest otagowany jako *dev*. Obraz jest oparty na tagu *2,2-aspnetcore-Runtime* obrazu podstawowego *Microsoft/dotnet* . Uruchom `docker images` polecenie w oknie **konsola Menedżera pakietów** (PMC). Wyświetlane są obrazy na komputerze:
-
-```console
-REPOSITORY        TAG                     IMAGE ID      CREATED         SIZE
-hellodockertools  dev                     d72ce0f1dfe7  30 seconds ago  255MB
-microsoft/dotnet  2.2-aspnetcore-runtime  fcc3887985bb  6 days ago      255MB
-```
-
-> [!NOTE]
-> Obraz **deweloperski** nie zawiera plików binarnych aplikacji i innych zawartości, ponieważ konfiguracje **debugowania** używają funkcji instalacji woluminu, aby zapewnić iteracyjne edytowanie i debugowanie. Aby utworzyć obraz produkcyjny zawierający całą zawartość, użyj konfiguracji **wydania** .
-
-Uruchom `docker ps` polecenie w kryterium PMC. Zauważ, że aplikacja jest uruchomiona przy użyciu kontenera:
-
-```console
-CONTAINER ID        IMAGE                  COMMAND               CREATED             STATUS              PORTS                                           NAMES
-cf5d2ef5f19a        hellodockertools:dev   "tail -f /dev/null"   2 minutes ago       Up 2 minutes        0.0.0.0:52036->80/tcp, 0.0.0.0:44342->443/tcp   priceless_cartwright
-```
-
 ## <a name="containers-window"></a>Okno kontenerów
 
 Jeśli masz program Visual Studio 2019 w wersji 16,4 lub nowszej, możesz użyć okna **kontenery** do wyświetlania uruchomionych kontenerów na swoim komputerze, a także dostępnych obrazów.
@@ -102,6 +82,8 @@ Otwórz okno **kontenery** przy użyciu pola wyszukiwania w IDE (naciśnij klawi
 Możesz zainstalować okno **kontenery** w wygodnym miejscu, takim jak poniżej edytora, przenosząc je wokół i postępując zgodnie z przewodnikiem umieszczania okna.
 
 W oknie Znajdź kontener i przejdź na każdą kartę, aby wyświetlić zmienne środowiskowe, mapowania portów, dzienniki i system plików.
+
+![Zrzut ekranu okna kontenerów](../../media/overview/vs-2019/container-tools-window.png)
 
 Aby uzyskać więcej informacji, zobacz [Wyświetlanie i diagnozowanie kontenerów i obrazów w programie Visual Studio](../../view-and-diagnose-containers.md).
 
@@ -120,7 +102,7 @@ Po zakończeniu cyklu opracowywania i debugowania aplikacji można utworzyć obr
     | **Prefiks DNS** | Globalnie unikatowa nazwa | Nazwa, która jednoznacznie identyfikuje rejestr kontenerów. |
     | **Ramach** | Wybierz subskrypcję | Subskrypcja platformy Azure do użycia. |
     | **[Grupa zasobów](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Nazwa grupy zasobów, w której ma zostać utworzony rejestr kontenerów. Wybierz pozycję **Nowy** , aby utworzyć nową grupę zasobów.|
-    | **[Magazyn](https://docs.microsoft.com/azure/container-registry/container-registry-skus)** | Standardowa | Warstwa usług w rejestrze kontenerów  |
+    | **[Magazyn](https://docs.microsoft.com/azure/container-registry/container-registry-skus)** | Standardowa (Standard) | Warstwa usług w rejestrze kontenerów  |
     | **Lokalizacja rejestru** | Lokalizacja blisko Ciebie | Wybierz lokalizację w [regionie](https://azure.microsoft.com/regions/) blisko siebie lub w najbliższej innej usłudze, która będzie korzystać z rejestru kontenerów. |
 
     ![Okno dialogowe tworzenia Azure Container Registry programu Visual Studio][0]

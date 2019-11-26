@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Visual Studio tutorials | C#
-summary: Create C# apps with Visual Studio.
+title: Samouczki programu Visual Studio |C#
+summary: Twórz C# aplikacje za pomocą programu Visual Studio.
 metadata:
-  title: C# development with Visual Studio
-  description: Create C# apps by using Visual Studio.
+  title: C#Programowanie za pomocą programu Visual Studio
+  description: Twórz C# aplikacje za pomocą programu Visual Studio.
   ms.custom: seodec18
   ms.topic: landing-page
   ms.date: 11/19/2019
@@ -16,52 +16,52 @@ metadata:
   - CSharp
   ms.openlocfilehash: b364716f87999272030e48a88af5a06cbff012e4
   ms.sourcegitcommit: 8530d15aa72fe058ee3a3b4714c36b8638f8b494
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: pl-PL
   ms.lasthandoff: 11/19/2019
   ms.locfileid: "74188637"
 landingContent:
-- title: Wprowadzenie
+- title: Rozpoczęcie pracy
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Instalowanie programu Visual Studio
+    - text: Instalacja programu Visual Studio
       url: ../../install/install-visual-studio.md
   - linkListType: get-started
     links:
-    - text: Start a guided tour
+    - text: Rozpocznij Przewodnik
       url: visual-studio-ide.md
   - linkListType: quickstart
     links:
-    - text: Create a "Hello World" console app
+    - text: Tworzenie aplikacji konsolowej "Hello world"
       url: ../../ide/quickstart-csharp-console.md
-    - text: Create a "Hello World" web app
+    - text: Tworzenie aplikacji sieci Web "Hello world"
       url: ../../ide/quickstart-aspnet-core.md
-- title: Create C# apps
+- title: Tworzenie C# aplikacji
   linkLists:
   - linkListType: tutorial
     links:
-    - text: tworzenie aplikacji konsoli
+    - text: Tworzenie aplikacji konsoli
       url: tutorial-console.md
-    - text: tworzenie aplikacji internetowej
+    - text: Tworzenie aplikacji sieci web
       url: tutorial-aspnet-core.md
-    - text: Create a Universal Windows Platform app
+    - text: Tworzenie aplikacji platforma uniwersalna systemu Windows
       url: tutorial-uwp.md
-    - text: Create a Windows Desktop app
+    - text: Tworzenie aplikacji klasycznej systemu Windows
       url: tutorial-wpf.md
     - text: Tworzenie aplikacji Windows Forms
       url: ../../ide/create-csharp-winform-visual-studio.md
-    - text: Learn about the C# language
+    - text: Dowiedz się C# więcej o języku
       url: /dotnet/csharp/tutorials/intro-to-csharp/
   - linkListType: video
     links:
-    - text: Create an ASP.NET Core app
+    - text: Tworzenie aplikacji ASP.NET Core
       url: tutorial-aspnet-core-ef-step-01.md
-- title: Poznawanie programu Visual Studio
+- title: Poznaj program Visual Studio
   linkLists:
   - linkListType: tutorial
     links:
-    - text: Open code from a repo
+    - text: Otwieranie kodu z repozytorium
       url: ../tutorial-open-project-from-repo.md
     - text: Pisanie i edytowanie kodu
       url: tutorial-editor.md
@@ -69,7 +69,7 @@ landingContent:
       url: ../../ide/compiling-and-building-in-visual-studio.md
     - text: Debugowanie kodu
       url: ../csharp/tutorial-debugger.md
-    - text: Test your code
+    - text: Testowanie kodu
       url: ../../test/getting-started-with-unit-testing.md
   - linkListType: how-to-guide
     links:

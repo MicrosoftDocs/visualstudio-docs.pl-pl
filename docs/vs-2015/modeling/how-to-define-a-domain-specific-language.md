@@ -105,7 +105,7 @@ Aby zdefiniować język specyficzny dla domeny (DSL), należy utworzyć rozwiąz
 
  Eksperymentuj z narzędziami. Utwórz elementy i połącz je.
 
- Zamknij wystąpienie doświadczalne programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+ Zamknij eksperymentalne wystąpienie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
 > [!NOTE]
 > Po zmodyfikowaniu DSL nie będzie już można zobaczyć kształtów w przykładowym pliku testowym. Jednak będzie można tworzyć nowe elementy.

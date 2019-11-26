@@ -27,7 +27,7 @@ Starsze [!INCLUDE[wfd2](../includes/wfd2-md.md)] dostarczone przez [!INCLUDE[vs2
 
  W poniższej tabeli wymieniono najważniejsze funkcje [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Windows Workflow Foundation.
 
-|Cecha|Opis|
+|Funkcja|Opis|
 |-------------|-----------------|
 |Przeciąganie i upuszczanie działania|Przeciągnij działania z **przybornika** na powierzchnię projektu, aby utworzyć przepływ pracy.|
 |Przeglądarka właściwości|Standardowe okno **Właściwości** w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] służy do konfigurowania właściwości działania.|

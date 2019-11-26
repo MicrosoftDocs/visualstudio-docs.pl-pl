@@ -24,7 +24,7 @@ Ulepszone funkcje zabezpieczeń w systemach Windows 8 i Windows Server 2012 wyma
 > [!NOTE]
 > Narzędzia do oceny wydajności dla innych obsługiwanych wersji systemu Windows (Windows 7, Windows Server 2008 R2) nie zostały zmienione.  
   
-## <a name="BKMK_In_this_topic"></a> W tym temacie  
+## <a name="BKMK_In_this_topic"></a>W tym temacie  
  [Zbieranie danych w aplikacjach ze sklepu Windows z programu Visual Studio IDE](#BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE)  
   
  [Zbieranie danych w aplikacjach uruchamianych na pulpicie systemu Windows 8 lub w systemie Windows Server 2012 z programu Visual Studio IDE](#BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE)  
@@ -118,7 +118,7 @@ Ulepszone funkcje zabezpieczeń w systemach Windows 8 i Windows Server 2012 wyma
 ## <a name="BKMK_Collecting_tier_interaction__TIP__data"></a>Zbieranie danych o interakcji warstwy (TIP)  
  Profilowanie interakcji między warstwami zawiera dodatkowe informacje o czasach wykonywania funkcji aplikacji wielowarstwowych, które komunikują się z bazami danych za pomocą usług ADO.NET Services. Dane są zbierane tylko dla wywołań funkcji synchronicznych.  
   
- **Visual Studio editions**  
+ **Wersje programu Visual Studio**  
   
  Dane profilowania interakcji między warstwami można zbierać przy użyciu [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]lub [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)]. Jednak dane profilowania interakcji między warstwami mogą być wyświetlane tylko w [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] i [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
   

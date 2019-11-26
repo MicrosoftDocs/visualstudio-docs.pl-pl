@@ -42,7 +42,7 @@ W tym temacie omówiono problemy, które mogą wystąpić w programie Podgląd p
 
 5. Wybierz usługę roli wyszukiwania systemu Windows.
 
-## <a name="additional-resources"></a>Dodatkowe zasoby
+## <a name="additional-resources"></a>Dodatkowe materiały
  Aby uzyskać więcej informacji i przekazać opinię na temat pomocy, możesz skorzystać z następujących zasobów:
 
 - Aby przekazać opinię, zobacz [Microsoft Connect](https://go.microsoft.com/fwlink/?linkid=243983) w witrynie internetowej firmy Microsoft lub Wyślij wiadomość e-mail do [hlpfdbk@microsoft.com](mailto:hlpfdbk@microsoft.com).

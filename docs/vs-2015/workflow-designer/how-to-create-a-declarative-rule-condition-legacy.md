@@ -33,7 +33,7 @@ W tym temacie opisano, jak zadeklarować warunek reguły przy użyciu starszej [
 
 - [Działanie ReplicatorActivity](https://go.microsoft.com/fwlink?LinkID=65039)
 
-- [WhileActivity](https://go.microsoft.com/fwlink?LinkID=65049)
+- [While](https://go.microsoft.com/fwlink?LinkID=65049)
 
 - [SequentialWorkflowActivity](https://go.microsoft.com/fwlink?LinkID=65040)
 

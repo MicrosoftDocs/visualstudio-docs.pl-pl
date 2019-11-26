@@ -32,7 +32,7 @@ Ten temat zawiera podsumowanie różnych sposobów, w których można rozłoży�
 
  Aby uzyskać więcej informacji, zobacz ten film wideo: ![link do filmu wideo](../data-tools/media/playvideo.gif "PlayVideo")[MSDN — jak to zrobić: narzędzia i rozszerzalność UML](https://go.microsoft.com/fwlink/?LinkId=214467).
 
-## <a name="Requirements"></a> Wymagania
+## <a name="Requirements"></a>Wymagania
 
 - [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
@@ -111,7 +111,7 @@ Ten temat zawiera podsumowanie różnych sposobów, w których można rozłoży�
 
 ## <a name="external-resources"></a>Zasoby zewnętrzne
 
-|**Kategoria**|**Linki**|
+|**Kategorii**|**Linki**|
 |------------------|---------------|
 |**Filmy wideo**|![link do wideo](../data-tools/media/playvideo.gif "PlayVideo") [MSDN: jak serie — narzędzia i rozszerzalność UML](https://go.microsoft.com/fwlink/?LinkId=214467)<br /><br /> ![link do kanału wideo](../data-tools/media/playvideo.gif "PlayVideo") [9: UML z programem Visual Studio](https://go.microsoft.com/fwlink/?LinkId=199957)|
 |**Dotyczące**|-   [Wizualizacja programu Visual Studio & narzędzia do modelowania](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [wizualizacji programu Visual Studio & Modeling SDK (narzędzia DSL)](https://go.microsoft.com/fwlink/?LinkId=184721)|
