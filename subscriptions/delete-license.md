@@ -23,7 +23,7 @@ Gdy Subskrybenci nie wymagają już subskrypcji programu Visual Studio, na przyk
    > [!div class="mx-imgBorder"]
    > ![usuwać subskrybentów](_img/delete-license/delete-subscribers.png)
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 - Chcesz zmienić subskrypcję bez jej usuwania?  Dowiedz się, jak [edytować subskrypcje](edit-license.md)
 - Aby uzyskać pomoc dotyczącą znajdowania określonej subskrypcji, zapoznaj się z tematem [Wyszukiwanie w ramach subskrypcji](search-license.md).
 - Chcesz utworzyć listę wszystkich Twoich subskrypcji?  Zapoznaj się z tematem [Eksportowanie subskrypcji](exporting-subscriptions.md).

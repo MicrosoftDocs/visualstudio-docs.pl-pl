@@ -28,12 +28,12 @@ Każda organizacja jest różna, ale typową listą zespołów zajmujących się
 ## <a name="external-contractors-and-partners"></a>Zewnętrzni wykonawcy i partnerzy
 Zewnętrzni wykonawcy mogą przystąpić licencje do środowiska z licencjonowanym programem Visual Studio. Certyfikowani partnerzy firmy Microsoft mogą otrzymać kilka bezpłatnych subskrypcji programu Visual Studio do użytku wewnętrznego. Jednak te subskrypcje nie obejmują działań generujących przychody, takich jak opracowywanie oprogramowania niestandardowego dla klienta. Poproszenie partnerów o przesłanie certyfikatu z certyfikatem, który objaśnia, jakie licencje są udostępniane, i które wymagają od Ciebie zakupu.
 
-## <a name="resources"></a>Zasoby
+## <a name="resources"></a>Resources
 - [Oficjalny dokument dotyczący licencjonowana programu Visual Studio](https://aka.ms/vslicensing)
 - [Pomoc techniczna dotycząca subskrypcji programu Visual Studio i administrowania nim](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [Postanowienia dotyczące licencjonowania zbiorowego](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 Dowiedz się więcej o odpowiedzialności dla administratorów:
 - [Obowiązki administratora](admin-responsibilities.md)
 - [Spis środowiska przedprodukcyjnego](admin-inventory.md)

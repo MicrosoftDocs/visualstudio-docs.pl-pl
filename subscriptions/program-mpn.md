@@ -69,12 +69,12 @@ To wewnętrzne ograniczenie tylko do użycia polega na tym, że partnerzy nie mo
 
 W przypadku subskrypcji programu Visual Studio oferowanych za pośrednictwem usługi MPN licencjonowany użytkownik musi zalogować się do programu Visual Studio przy użyciu tej samej tożsamości/nazwy logowania, która została użyta w celu aktywowania subskrypcji programu Visual Studio. Klucze produktów nie są oferowane w celu odblokowania produktu. Logowanie jest jedyną opcją dla uruchamiania programu Visual Studio. Subskrybenci programu Visual Studio mogą działać w trybie offline przez maksymalnie 30 dni, zanim program Visual Studio przestanie działać. Podczas pracy w trybie online program Visual Studio dyskretnie odświeża stan licencji użytkownika, aby upewnić się, że subskrypcja jest nadal ważna.
 
-## <a name="resources"></a>Zasoby
+## <a name="resources"></a>Resources
 
 - [Podręcznik administratora programu MPN](https://assets.microsoft.com/en-us/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits_1.pdf) — zawiera instrukcje dotyczące sposobu przypisywania subskrypcji programu Visual Studio do pracowników MPN.
 - [Przypisywanie subskrypcji programu Visual Studio do pracowników MPN](manage-mpn-subscriptions.md)
 - [Warunki użytkowania](https://www.microsoft.com/useterms/) — subskrypcje programu Visual Studio oferowane za pośrednictwem usługi MPN podlegają subskrypcji programu Visual Studio nieprzeznaczonej do odsprzedaży (NFR).
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 
 Dowiedz się, jak [zarządzać subskrypcjami programu Visual Studio](manage-mpn-subscriptions.md) oferowanymi za pomocą Microsoft Partner Network.

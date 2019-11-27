@@ -41,7 +41,7 @@ Aby pobrać środowisko IDE:
    > [!div class="mx-imgBorder"]
    > ![Dostosowywanie Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-customize-install-cropped.png)
 
-10. Kliknij polecenie **Zainstaluj**.
+10. Kliknij przycisk **Instaluj**.
 
 11. Po zakończeniu instalacji będzie dostępna opcja modyfikowania instalacji lub uruchamiania programu Visual Studio.  Kliknij przycisk **Uruchom** , aby rozpocząć.  Jeśli zainstalowano wiele wersji, zostaną one wyświetlone na liście.
     > [!div class="mx-imgBorder"]
@@ -63,10 +63,10 @@ Aby pobrać środowisko IDE:
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (standardowa, miesięczna chmura)   | LICENCJONOWANie, Azure, sprzedaż detaliczna, wybrane NFR<sup>1</sup> | Dostępne       |  Tak          |
 | Visual Studio Enterprise z usługą GitHub Enterprise   | Licencja | Dostępne       |  Tak          |
-| Visual Studio Professional (standardowa, miesięczna chmura) | VL, Azure, Retail                                       | Dostępne                                                            |  Tak          |
+| Visual Studio Professional (standardowa, miesięczna chmura) | LICENCJONOWANie, Azure, sprzedaż detaliczna                                       | Dostępne                                                            |  Tak          |
 | Visual Studio Professional z usługą GitHub Enterprise | Licencja   | Dostępne              |  Tak          |
 | Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Dostępne                                             |  Tak         |
-| Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | Niedostępne                                              |  Brak          |
+| Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | Niedostępne                                              |  N/D          |
 
 <sup>1</sup>  *obejmuje: nie do odsprzedaży (NFR), program Visual Studio Industry partner (VSIP), Microsoft Partner Network (MPN), równoważnik, MCT Software & Services Developer, BizSpark, Wyobraź sobie, najbardziej cenny specjalista (MVP), dyrektor regionalny (RD).  Wyklucza: MCT oprogramowania & Services.*
 
@@ -81,7 +81,7 @@ Nie masz pewności, której subskrypcji używasz?  Połącz się z [https://my.v
   - [Dokumentacja](/visualstudio/)
 - Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 Po zainstalowaniu programu Visual Studio nie zapomnij uaktywnić tych innych ważnych korzyści:
 - [Azure DevOps](vs-azure-devops.md)
 - [Indywidualne środki na korzystanie z usługi Azure DevTest](vs-azure.md)

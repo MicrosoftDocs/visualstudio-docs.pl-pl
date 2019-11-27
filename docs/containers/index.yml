@@ -1,8 +1,8 @@
 ## YamlMime:Landing
 title: Narzędzia kontenerów w programie Visual Studio
 metadata:
-  title: Dokumentacja narzędzi tworzenia kontenera platformy docker
-  description: 'Dowiedz się, jak tworzyć i zarządzać nimi opartych na kontenerach aplikacjami i usługami. Pobierz dokumentację, przykładowy kod, samouczki i inne materiały.'
+  title: Dokumentacja narzędzi programistycznych kontenera platformy Docker
+  description: 'Dowiedz się, jak tworzyć i zarządzać aplikacjami i usługami opartymi na kontenerach. Pobierz dokumentację, przykładowy kod, samouczki i inne materiały.'
   author: ghogen
   manager: jillfra
   ms.prod: visual-studio-windows
@@ -17,7 +17,7 @@ landingContent:
         links:
           - text: Narzędzia kontenerów w programie Visual Studio
             url: overview.md
-  - title: Rozpoczęcie pracy
+  - title: Wprowadzenie
     linkLists:
       - linkListType: quickstart
         links:

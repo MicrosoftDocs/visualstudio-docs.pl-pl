@@ -31,10 +31,10 @@ Mając na uwadze rozmiar i złożoność wielu organizacji, użytkownik może ni
 > [!NOTE]
 > **Administratorzy:**  Aby ustawić adres e-mail, na który są wysyłane żądania "Skontaktuj się z administratorem", określ ten adres w [preferencjach umowy](admin-prefs.md#contact-email-address).
 
-## <a name="resources"></a>Zasoby
+## <a name="resources"></a>Resources
 - [Pomoc techniczna dotycząca subskrypcji programu Visual Studio i administrowania nim](https://visualstudio.microsoft.com/support/support-overview-vs)
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 Jeśli jeszcze tego nie zrobiono, Zalecamy aktywowanie tych korzyści, aby maksymalnie wykorzystać subskrypcję programu Visual Studio:
 - [Visual Studio IDE](vs-ide-benefit.md)
 - [Azure](vs-azure.md)

@@ -24,10 +24,10 @@ Po zalogowaniu użytkownik zostanie automatycznie skonfigurowany jako administra
 
 Dotyczy to wszystkich typów umów licencjonowania zbiorowego, w tym m.in. umów Enterprise Agreement, Enterprise subscriptions, SELECT, Select Plus, Open, Open License, Govt. i akademickich umów. 
 
-## <a name="resources"></a>Zasoby
+## <a name="resources"></a>Resources
 - [Pomoc techniczna dotycząca subskrypcji programu Visual Studio i administrowania nim](https://visualstudio.microsoft.com/support/support-overview-vs)
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 - Dowiedz się, jak [przypisywać subskrypcje](assign-license.md)
 - Dowiedz się więcej na temat pełnego zakresu [korzyści z subskrypcji](https://visualstudio.microsoft.com/vs/benefits/)
 - [Ustawianie preferencji umowy](admin-prefs.md) 

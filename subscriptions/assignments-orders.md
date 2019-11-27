@@ -36,7 +36,7 @@ Możesz przypisywać subskrypcje za pomocą programu, takiego jak Microsoft Clou
 ## <a name="enterprise-mpsa-and-select-agreements"></a>Umowy Enterprise, MPSA i Select
 Umowy Microsoft Enterprise Agreement (EA), MPSA i Select Plus Agreement zapewniają elastyczność w zakresie używania i licencjonowania oprogramowania Visual Studio z upływem czasu. Administratorzy programu Visual Studio muszą dokonać rocznej realizacji w celu przeprowadzenia licencji na oprogramowanie do górnego limitu użycia ustalonego w okresie obowiązywania umowy.
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 Dowiedz się więcej o odpowiedzialności dla administratorów:
 - [Obowiązki administratora](admin-responsibilities.md)
 - [Spis środowiska przedprodukcyjnego](admin-inventory.md)

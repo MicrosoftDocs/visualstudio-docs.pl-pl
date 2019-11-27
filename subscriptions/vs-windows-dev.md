@@ -42,13 +42,13 @@ Zalecamy utworzenie "prywatnego" okna przeglądarki dla tego procesu.  Na przyk�
 ## <a name="eligibility"></a>Kryteria
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Odnawialny?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standardowa)   | LICENCJONOWANie, Azure, sprzedaż detaliczna, wybrane NFR<sup>1</sup> | Dołączono       |  Tak|
-| Visual Studio Enterprise z usługą GitHub Enterprise   | Licencja  | Dołączono       |  Tak|
-| Visual Studio Professional (standardowa) | VL, Azure, Retail                                       | Dołączono                                                            |Tak|
-| Visual Studio Professional z usługą GitHub Enterprise | Licencja                                        | Dołączono                                                            |Tak|
-| Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Niedostępne                                            |  Nie dotyczy|
-| Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              |  Niedostępne                                            |  Nie dotyczy|
-| Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure                                       | Niedostępne                                                           |Nie dotyczy|
+| Visual Studio Enterprise (standardowa)   | LICENCJONOWANie, Azure, sprzedaż detaliczna, wybrane NFR<sup>1</sup> | Uwzględnione       |  Tak|
+| Visual Studio Enterprise z usługą GitHub Enterprise   | Licencja  | Uwzględnione       |  Tak|
+| Visual Studio Professional (standardowa) | LICENCJONOWANie, Azure, sprzedaż detaliczna                                       | Uwzględnione                                                            |Tak|
+| Visual Studio Professional z usługą GitHub Enterprise | Licencja                                        | Uwzględnione                                                            |Tak|
+| Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Niedostępne                                            |  POTRĄCON|
+| Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              |  Niedostępne                                            |  POTRĄCON|
+| Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure                                       | Niedostępne                                                           |POTRĄCON|
 ||
 
 <sup>1</sup>  *obejmuje: nie dotyczy odsprzedaży (NFR), pełnego etatu, programu Visual Studio Industry partner (VSIP), BizSpark, MCT Software & Services developer. Wyklucza: Microsoft Partner Network (MPN), Wyobraź sobie, najbardziej cenne profesjonalne (MVP), regionalne dyrektora (RD), MCT Software & Services.*
@@ -64,7 +64,7 @@ Nie masz pewności, której subskrypcji używasz?  Połącz się z [https://my.v
 - Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
 - Masz pytanie dotyczące środowiska IDE programu Visual Studio, Azure DevOps Services lub innych produktów lub usług Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 Pamiętaj, aby aktywować te doskonałe korzyści, aby zapewnić największą subskrypcję programu Visual Studio:
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)

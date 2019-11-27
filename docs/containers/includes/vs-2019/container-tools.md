@@ -102,7 +102,7 @@ Po zakończeniu cyklu opracowywania i debugowania aplikacji można utworzyć obr
     | **Prefiks DNS** | Globalnie unikatowa nazwa | Nazwa, która jednoznacznie identyfikuje rejestr kontenerów. |
     | **Ramach** | Wybierz subskrypcję | Subskrypcja platformy Azure do użycia. |
     | **[Grupa zasobów](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Nazwa grupy zasobów, w której ma zostać utworzony rejestr kontenerów. Wybierz pozycję **Nowy** , aby utworzyć nową grupę zasobów.|
-    | **[Magazyn](https://docs.microsoft.com/azure/container-registry/container-registry-skus)** | Standardowa (Standard) | Warstwa usług w rejestrze kontenerów  |
+    | **[Magazyn](https://docs.microsoft.com/azure/container-registry/container-registry-skus)** | Standardowy | Warstwa usług w rejestrze kontenerów  |
     | **Lokalizacja rejestru** | Lokalizacja blisko Ciebie | Wybierz lokalizację w [regionie](https://azure.microsoft.com/regions/) blisko siebie lub w najbliższej innej usłudze, która będzie korzystać z rejestru kontenerów. |
 
     ![Okno dialogowe tworzenia Azure Container Registry programu Visual Studio][0]

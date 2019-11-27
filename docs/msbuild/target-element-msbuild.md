@@ -53,7 +53,7 @@ Zawiera zestaw zadań, które mają być wykonywane sekwencyjnie przez [!INCLUDE
 ## <a name="attributes-and-elements"></a>Atrybuty i elementy
  W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzędne.
 
-### <a name="attributes"></a>Atrybuty
+### <a name="attributes"></a>{1&gt;{2&gt;Atrybuty&lt;2}&lt;1}
 
 |Atrybut|Opis|
 |---------------|-----------------|
@@ -62,7 +62,7 @@ Zawiera zestaw zadań, które mają być wykonywane sekwencyjnie przez [!INCLUDE
 |`Inputs`|Atrybut opcjonalny.<br /><br /> Pliki, które tworzą dane wejściowe w tym miejscu docelowym. Wiele plików jest oddzielonych średnikami. Sygnatury czasowe plików będą porównywane z sygnaturami czasowymi plików w `Outputs`, aby określić, czy `Target` jest aktualna. Aby uzyskać więcej informacji, zobacz [Kompilacje przyrostowe](../msbuild/incremental-builds.md), [instrukcje: kompilowanie przyrostowe](../msbuild/how-to-build-incrementally.md)i [transformacje](../msbuild/msbuild-transforms.md).|
 |`Outputs`|Atrybut opcjonalny.<br /><br /> Pliki, które tworzą dane wyjściowe w tym miejscu docelowym. Wiele plików jest oddzielonych średnikami. Sygnatury czasowe plików będą porównywane z sygnaturami czasowymi plików w `Inputs`, aby określić, czy `Target` jest aktualna. Aby uzyskać więcej informacji, zobacz [Kompilacje przyrostowe](../msbuild/incremental-builds.md), [instrukcje: kompilowanie przyrostowe](../msbuild/how-to-build-incrementally.md)i [transformacje](../msbuild/msbuild-transforms.md).|
 |`Returns`|Atrybut opcjonalny.<br /><br /> Zestaw elementów, które zostaną udostępnione dla zadań, które wywołują ten element docelowy, na przykład zadania programu MSBuild. Wiele obiektów docelowych jest oddzielonych średnikami. Jeśli obiekty docelowe w pliku nie mają atrybutów `Returns`, zamiast tego są używane atrybuty danych wyjściowych.|
-|`KeepDuplicateOutputs`|Opcjonalny logiczny atrybut.<br /><br /> Jeśli `true`, rejestrowane są wiele odwołań do tego samego elementu w zwracanych wartościach docelowych.  Domyślnie ten atrybut jest `false`.|
+|`KeepDuplicateOutputs`|Opcjonalny atrybut Boolean.<br /><br /> Jeśli `true`, rejestrowane są wiele odwołań do tego samego elementu w zwracanych wartościach docelowych.  Domyślnie ten atrybut jest `false`.|
 |`BeforeTargets`|Atrybut opcjonalny.<br /><br /> Rozdzielana średnikami lista nazw docelowych.  Gdy ta wartość jest określona, wskazuje, że ten element docelowy powinien zostać uruchomiony przed określonym elementem docelowym lub celem. Pozwala to autorowi projektu na rozszerać istniejący zestaw elementów docelowych bez konieczności ich bezpośredniego modyfikowania. Aby uzyskać więcej informacji, zobacz [Target Order Build](../msbuild/target-build-order.md).|
 |`AfterTargets`|Atrybut opcjonalny.<br /><br /> Rozdzielana średnikami lista nazw docelowych. Jeśli ta wartość jest określona, wskazuje, że ten element docelowy powinien zostać uruchomiony po określonym elemencie docelowym lub Target. Pozwala to autorowi projektu na rozszerać istniejący zestaw elementów docelowych bez konieczności ich bezpośredniego modyfikowania. Aby uzyskać więcej informacji, zobacz [Target Order Build](../msbuild/target-build-order.md).|
 |`DependsOnTargets`|Atrybut opcjonalny.<br /><br /> Elementy docelowe, które muszą zostać wykonane, zanim będzie można wykonać tę wartość docelową lub mogą wystąpić analizy zależności najwyższego poziomu. Wiele obiektów docelowych jest oddzielonych średnikami.|

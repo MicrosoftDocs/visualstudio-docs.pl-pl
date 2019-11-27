@@ -56,14 +56,14 @@ W poniższej tabeli szczegółowo opisano, jakie korzyści z subskrypcji Plurals
 
 |                          Poziom subskrypcji                          |     Kanały      |    Korzyść    |   Odnawialny?   |
 |----------------------------------------------------------------------|-------------------|---------------|----------------|
-|          Visual Studio Enterprise (standardowa)           | VL, Azure, Retail |   6 miesięcy    | Tak<sup>2</sup> |
+|          Visual Studio Enterprise (standardowa)           | LICENCJONOWANie, Azure, sprzedaż detaliczna |   6 miesięcy    | Tak<sup>2</sup> |
 |          Visual Studio Enterprise z usługą GitHub Enterprise          | Licencja  |   6 miesięcy    | Tak<sup>2</sup> |
-|         Visual Studio Professional (standardowa)          | VL, Azure, Retail |   3 miesiące    | Tak<sup>2</sup> |
+|         Visual Studio Professional (standardowa)          | LICENCJONOWANie, Azure, sprzedaż detaliczna |   3 miesiące    | Tak<sup>2</sup> |
 |         Visual Studio Professional z usługą GitHub Enterprise          | Licencja  |   3 miesiące    | Tak<sup>2</sup> |
 |              Visual Studio Test Professional (standardowa)              |    LICENCJONOWANie detaliczne     |   3 miesiące    | Tak<sup>2</sup>  |
 |                      Platformy MSDN (standardowa)                       |    LICENCJONOWANie detaliczne     |   3 miesiące    | Tak<sup>2</sup>  |
-| Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) |       Azure       | Niedostępne |       Nie dotyczy       |
-|             Visual Studio Enterprise (NFR<sup>1</sup> )              |      Program      | Niedostępne |       Nie dotyczy       |
+| Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) |       Azure       | Niedostępne |       POTRĄCON       |
+|             Visual Studio Enterprise (NFR<sup>1</sup> )              |      Program      | Niedostępne |       POTRĄCON       |
 ||
 
 <sup>1</sup>  *obejmuje: nie dotyczy odsprzedaży (NFR), programu Visual Studio Industry partner (VSIP), BizSpark, MCT Software & Services Developer, MCT Software & Service, najbardziej cennych profesjonalistów (MVP), kierownika Regionalnego (RD), Microsoft Partner Network (MPN), pełnego etatu.*
@@ -97,7 +97,7 @@ Odp.: na koniec bezpłatnej subskrypcji usługi Pluralsight możesz zakupić sub
 - Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
 - Masz pytanie dotyczące środowiska IDE programu Visual Studio, Azure DevOps Services lub innych produktów lub usług Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 Po utworzeniu konta możesz zacząć uczenie się.  Odwiedź witrynę [https://www.pluralsight.com](http://www.pluralsight.com) i naciśnij pozycję **Zaloguj** się w prawym górnym rogu strony, aby rozpocząć nowy kurs, lub Wróć do kursu, który jest już w toku.
 
 Skorzystaj z własnej piaskownicy programistycznej, aktywując swoje środki na korzystanie z [platformy Azure DevTest](vs-azure.md). 

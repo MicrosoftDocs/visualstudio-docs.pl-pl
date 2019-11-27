@@ -97,7 +97,7 @@ Ten temat jest przeznaczony dla deweloperów pracujących głównie na komputerz
   
 4. Sprawdź poprawność debugowania w symulatorze systemu iOS za pomocą [debugowania w dokumentacji symulatora](https://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/#Debugging_on_the_Simulator) (Xamarin.com).  
   
-### <a name="visual-studio"></a>Visual Studio  
+### <a name="visual-studio"></a>{1&gt;Visual Studio&lt;1}  
  Po pierwsze upewnij się, że po przejściu do podanych linków zostanie wybrany **program Visual Studio** w prawym górnym rogu, aby zobaczyć poprawną wersję dokumentacji platformy Xamarin:  
   
  ![Wybieranie programu Visual Studio w celu wyświetlenia odpowiedniej dokumentacji w witrynie Xamarin.com](../cross-platform/media/crossplat-xamarin-mac-2.png "CrossPlat Xamarin Mac 2")  

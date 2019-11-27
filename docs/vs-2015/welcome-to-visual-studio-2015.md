@@ -1,5 +1,5 @@
 ---
-title: Witamy w programie Visual Studio 2015 | Dokumentacja firmy Microsoft
+title: Witamy w programie Visual Studio 2015 | Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -23,36 +23,36 @@ ms.locfileid: "74537959"
 # <a name="welcome-to-visual-studio-2015"></a>Visual Studio 2015 — Zapraszamy!
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
 
-Witamy w programie Visual Studio! Mamy wszystko, czego potrzebujesz do tworzenia atrakcyjnych aplikacji dla urządzeń lub aplikacji komputerowych, sieci Web i w chmurze. Pisanie kodu dla systemów iOS, Android i Windows w jednym środowisku IDE. Uzyskaj wspaniałych technologii IntelliSense, nawigowanie po kodzie łatwe, szybkie kompilacje i szybkiego wdrożenia. Visual Studio zwiększa produktywność i można łatwo wykonywać swoją pracę, samodzielnie lub jako część większy zespół.
+Witamy w programie Visual Studio! Mamy wszystko, czego potrzebujesz, aby tworzyć wspaniałe aplikacje dla urządzeń lub aplikacji klasycznych dla sieci Web i w chmurze. Napisz kod dla systemów iOS, Android i Windows w jednym środowisku IDE. Zyskaj wspaniałe funkcje IntelliSense, łatwe nawigowanie po kodzie, szybkie kompilacje i szybkie wdrażanie. Program Visual Studio zwiększa produktywność i ułatwia samodzielne wykonywanie pracy lub w ramach większego zespołu.
 
 > [!NOTE]
 > Kliknij tutaj, aby uzyskać informacje o wersji dla [programu Visual Studio 2015 Update 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs).
 >
 > Kliknij tutaj, aby uzyskać informacje o wersji dla [programu Visual Studio 2017](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes).
 
- Pobierz bezpłatnie [program Visual Studio Community](https://go.microsoft.com/fwlink/?LinkId=517106) , aby zacząć od razu rozpocząć kodowanie. Jeśli chcesz zrobić wieloplatformowego opracowywania aplikacji, upewnij się, że należy zainstalować pakiety opcjonalne. (Możesz uzyskać więcej funkcji z [innymi wersjami programu Visual Studio](https://visualstudio.microsoft.com/vs/compare/)).
+ Pobierz bezpłatnie [program Visual Studio Community](https://go.microsoft.com/fwlink/?LinkId=517106) , aby zacząć od razu rozpocząć kodowanie. Jeśli chcesz przeprowadzić Programowanie na wielu platformach, upewnij się, że zainstalowano opcjonalne pakiety. (Możesz uzyskać więcej funkcji z [innymi wersjami programu Visual Studio](https://visualstudio.microsoft.com/vs/compare/)).
 
- Razu, Utwórz nowy projekt i zacznij pisać swój kod. Wybierz typ aplikacji, którą chcesz utworzyć. [Możesz też zapoznać się](./ide/visual-studio-ide.md) z narzędziami w środowisku IDE programu Visual Studio.
+ Przeskocz do prawej w, Utwórz nowy projekt i Rozpocznij pisanie kodu. Wybierz typ aplikacji, którą chcesz utworzyć. [Możesz też zapoznać się](./ide/visual-studio-ide.md) z narzędziami w środowisku IDE programu Visual Studio.
 
  Nie zapomnij poznać naszej [galerii kodu](https://code.msdn.microsoft.com/) , aby znaleźć przykłady ułatwiające szybkie pisanie aplikacji!
 
  Program Visual Studio 2015 można zainstalować, pobierając go z [plików do pobrania w programie Visual Studio](https://www.visualstudio.com/downloads/download-visual-studio-vs.aspx). Aby dowiedzieć się więcej na temat procesu instalacji, zobacz [Instalowanie programu Visual Studio 2015](./install/install-visual-studio-2015.md).
 
 ## <a name="extend-visual-studio"></a>Rozszerzanie funkcjonalności programu Visual Studio
- Dodać własne rozszerzenia programu Visual Studio, aby dołączyć narzędzia lub skryptu, które są często używane podczas kodowania. Możesz utworzyć niestandardowe elementy menu i okien narzędzi do integracji własnych narzędzi w środowisku IDE programu Visual Studio. Możesz rozszerzyć Edytor programu Visual Studio do analizowania i naprawianie kodu lub dodać nowy typ projektu w celu uwzględnienia tylko potrzebnych składników.
+ Dodaj własne rozszerzenie programu Visual Studio, aby dołączyć narzędzie lub skrypt, który jest często używany podczas kodowania. Możesz tworzyć niestandardowe elementy menu i okna narzędzi, aby zintegrować własne narzędzia z Visual Studio IDE. Możesz rozwinąć Edytor programu Visual Studio, aby analizować i naprawić kod lub dodać nowy typ projektu, aby dołączać tylko to, czego potrzebujesz.
 
  Aby znaleźć najnowszą wersję Visual Studio Extensibility Tools (VS SDK), zobacz [Visual Studio SDK](./extensibility/visual-studio-sdk.md).
 
- Platforma kompilatora .NET (Roslyn) służy do pisania własnych analizatorów kodu i generatorów kodu. Znajdź wszystko, czego potrzebujesz, w witrynie [Roslyn](https://github.com/dotnet/Roslyn).
+ Za pomocą .NET Compiler Platform (Roslyn) można napisać własne analizatory kodu i generatory kodu. Znajdź wszystko, czego potrzebujesz, w witrynie [Roslyn](https://github.com/dotnet/Roslyn).
 
  Znajdź [istniejące rozszerzenia dla środowiska IDE vs](https://visualstudiogallery.msdn.microsoft.com/) utworzonego przez deweloperów firmy Microsoft, a także naszej społeczności deweloperskiej.
 
-## <a name="build-apps-for-android-ios-and-windows"></a>Twórz aplikacje dla systemów Android, iOS i Windows
- Za pomocą programu Visual Studio do tworzenia aplikacji dla urządzeń z systemem Android, iOS i Windows. Dowiedz się więcej na temat [tworzenia aplikacji mobilnych na wiele platform](./cross-platform/cross-platform-mobile-development-in-visual-studio.md).
+## <a name="build-apps-for-android-ios-and-windows"></a>Tworzenie aplikacji dla systemów Android, iOS i Windows
+ Możesz użyć programu Visual Studio do tworzenia aplikacji dla urządzeń z systemami Android, iOS i Windows. Dowiedz się więcej na temat [tworzenia aplikacji mobilnych na wiele platform](./cross-platform/cross-platform-mobile-development-in-visual-studio.md).
 
  Aby uzyskać informacje o uniwersalnych aplikacjach systemu Windows (platformy UWP), zobacz [aplikacje uniwersalne systemu Windows](https://dev.windows.com/windows-apps).
 
- Wybierz potrzebne narzędzia na podstawie wymagań dotyczących aplikacji i język, którego chcesz użyć.
+ Wybierz potrzebne narzędzia w zależności od wymagań aplikacji i języka, którego chcesz użyć.
 
 1. [Xamarin for Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md): wspólny kod podstawowy w C# dla wszystkich urządzeń
 
@@ -64,33 +64,33 @@ Witamy w programie Visual Studio! Mamy wszystko, czego potrzebujesz do tworzenia
 
 5. [Visual Studio Emulator for Android](./cross-platform/visual-studio-emulator-for-android.md): Visual Studio Emulator for Android: debugowanie i testowanie aplikacji systemu Android niezależnie od środowiska IDE
 
-## <a name="connect-your-apps-to-services"></a>Połącz swoje aplikacje z usług
- Można połączyć się z tymi usługami gotowych (przy założeniu, że masz konto usługi dla poszczególnych usług):
+## <a name="connect-your-apps-to-services"></a>Łączenie aplikacji z usługami
+ Możesz połączyć się z tymi usługami (przy założeniu, że masz konto dla każdej usługi):
 
 - [Mobile Services platformy Azure](https://azure.microsoft.com/documentation/services/mobile-services/)
 
 - [Azure Storage](https://azure.microsoft.com/documentation/services/storage/)
 
-- Integrowanie interfejsów API REST usługi Office 365 do własnej aplikacji, aby nawiązać połączenie — dane przechowywane w chmurze. Aby uzyskać więcej informacji, zobacz [te przykłady](https://github.com/OfficeDev/?utf8=%E2%9C%93&query=o365).
+- Zintegruj interfejsy API REST pakietu Office 365 w swojej aplikacji, aby połączyć się z danymi przechowywanymi w chmurze. Aby uzyskać więcej informacji, zobacz [te przykłady](https://github.com/OfficeDev/?utf8=%E2%9C%93&query=o365).
 
-## <a name="write-great-web-apps-with-aspnet"></a>Zapis wspaniałych aplikacji sieci Web ASP.NET
- [ASP.NET 5](https://docs.microsoft.com/aspnet/core/?view=aspnetcore-3.0) to ważna aktualizacja do MVC, WebAPI i sygnalizująca, która działa w systemach Windows, Mac i Linux.  Program ASP.NET 5 ma został zaprojektowany od podstaw zapewnienie, że stosu z odchudzona i konfigurowalna platformy .NET do tworzenia nowoczesnej sieci web, które są oparte na chmurze aplikacje i usługi.
+## <a name="write-great-web-apps-with-aspnet"></a>Zapisuj wspaniałe aplikacje sieci Web za pomocą ASP.NET
+ [ASP.NET 5](https://docs.microsoft.com/aspnet/core/?view=aspnetcore-3.0) to ważna aktualizacja do MVC, WebAPI i sygnalizująca, która działa w systemach Windows, Mac i Linux.  Program ASP.NET 5 został zaprojektowany od podstaw w celu zapewnienia do tworzenia nowoczesnych aplikacji i usług sieci Web opartych na chmurze.
 
-## <a name="build-test-and-manage-your-code"></a>Tworzenia, testowania i zarządzać kodem
+## <a name="build-test-and-manage-your-code"></a>Kompilowanie, testowanie i Zarządzanie kodem
 
-### <a name="check-in-your-code"></a>Sprawdź w kodzie
- Jeśli pracujesz w zespole, musisz udostępnić zbyt najnowsze wersje kodu, dzięki czemu wszyscy członkowie zespołu używa tej samej bazy kodu. Program Visual Studio bezproblemowo integruje się z usługą Visual Studio Team Services lub Team Foundation Server, aby zapewnić kontrolę wersji Git lub TFVC (Team Foundation Version Control). Visual Studio Team Services umożliwia przechowywanie kodu w chmurze przy użyciu żadnej konserwacji serwera lokalnego. Jeśli chcesz mieć na serwerze lokalnym, należy użyć programu Team Foundation Server. Za każdym razem, gdy tworzysz projekt kodu, masz opcję, aby dodać go do kontroli wersji. Dowiedz się, który system kontroli wersji najlepiej odpowiada Twoim wymaganiom: [Użyj kontroli wersji](https://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314).
+### <a name="check-in-your-code"></a>Zaewidencjonuj kod
+ Jeśli pracujesz nad zespołem, musisz udostępnić najnowsze wersje kodu, tak aby wszyscy w zespole używali tej samej bazy kodu. Program Visual Studio bezproblemowo integruje się z Visual Studio Team Services lub Team Foundation Server w celu zapewnienia kontroli wersji za pomocą usługi Git lub TFVC (Kontrola wersji serwera Team Foundation). Użyj Visual Studio Team Services, aby przechowywać kod w chmurze bez konieczności konserwacji serwera lokalnego. Użyj Team Foundation Server, jeśli chcesz mieć serwer lokalny. Za każdym razem, gdy tworzysz projekt kodu, możesz dodać go do kontroli wersji. Dowiedz się, który system kontroli wersji najlepiej odpowiada Twoim wymaganiom: [Użyj kontroli wersji](https://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314).
 
-### <a name="build-your-app"></a>Tworzenie aplikacji
- Aplikację można [skompilować lokalnie](./ide/compiling-and-building-in-visual-studio.md) i upewnić się, że działa prawidłowo. Następnie należy użyć [narzędzi debugowania](./debugger/debugging-in-visual-studio.md) do rozwiązania problemów z aplikacją. Lub można kompilować projekty na udostępnionych serwerach kompilacji lub w chmurze. Automatyzowanie procesu kompilacji do tworzenia kodu, który deweloperzy w zespole sprawdzeniu w ramach kontroli wersji. Można na przykład skompilować jeden lub więcej projektów w nocy lub za każdym razem, kiedy kod jest zaewidencjonowany.
+### <a name="build-your-app"></a>Kompilowanie aplikacji
+ Aplikację można [skompilować lokalnie](./ide/compiling-and-building-in-visual-studio.md) i upewnić się, że działa prawidłowo. Następnie należy użyć [narzędzi debugowania](./debugger/debugging-in-visual-studio.md) do rozwiązania problemów z aplikacją. Można też tworzyć projekty na udostępnionych serwerach kompilacji lub w chmurze. Automatyzuj proces kompilacji, aby skompilować kod, który deweloperzy w zespole zaewidencjonuje kontrolę wersji. Można na przykład skompilować jeden lub więcej projektów w nocy lub za każdym razem, kiedy kod jest zaewidencjonowany.
 
 ### <a name="test-your-app"></a>Testowanie aplikacji
- [Utwórz testy jednostkowe](./test/unit-test-your-code.md) , aby poprawić jakość aplikacji. Te testy mogą być uruchamiane, ilekroć ewidencjonujesz w, a także jako część kompilacji.
+ [Utwórz testy jednostkowe](./test/unit-test-your-code.md) , aby poprawić jakość aplikacji. Te testy można uruchamiać przy każdym zaewidencjonowaniu i w ramach kompilacji.
 
- Planowanie, tworzenie i uruchamianie ręcznych i automatycznych testów dla aplikacji. Plany testów, zestawy, przypadki testowe i wyniki testów są przechowywane w chmurze przy użyciu programu Visual Studio Team Services lub lokalnie z programem Team Foundation Server. Dowiedz się więcej o [testowaniu aplikacji](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945).
+ Planuj, twórz i uruchamiaj ręczne i zautomatyzowane testy dla aplikacji. Plany testów, zestawy, przypadki testowe i wyniki testów są przechowywane w chmurze przy użyciu Visual Studio Team Services lub lokalnego z Team Foundation Server. Dowiedz się więcej o [testowaniu aplikacji](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945).
 
 ### <a name="deliver-your-teams-code-faster"></a>Szybsze dostarczanie kodu zespołu
- Usuwanie barier między członkami zespołu i udoskonalenie współpracy. Użyteczność i Automatyzuj wersji Twojej aplikacji na każdym etapie programowania aż do środowiska produkcyjnego. Monitoruj wydajność i dostępność w trakcie na żywo Twojej aplikacji. Zbieranie danych użycia w czasie rzeczywistym dotyczących klientów faktycznie korzystania z aplikacji. Aby uzyskać więcej informacji [, zobacz DevOps i zarządzanie cyklem życia aplikacji](https://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6) .
+ Usuń bariery między członkami zespołu i popraw współpracę. Przejdź do dalszych i automatyzuj wydanie aplikacji na każdym etapie opracowywania w środowisku produkcyjnym. Monitoruj wydajność i dostępność aplikacji na żywo. Zbieraj dane użycia w czasie rzeczywistym dotyczące sposobu, w jaki klienci rzeczywiście korzystają z Twojej aplikacji. Aby uzyskać więcej informacji [, zobacz DevOps i zarządzanie cyklem życia aplikacji](https://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6) .
 
 ## <a name="whats-new"></a>Co nowego?
 

@@ -1,5 +1,5 @@
 ---
-title: Dokumentacja programu Team Explorer
+title: Dokumentacja wtyczki Team Explorer
 ms.date: 12/04/2018
 ms.topic: reference
 ms.author: kaelli
@@ -12,11 +12,11 @@ ms.contentlocale: pl-PL
 ms.lasthandoff: 11/26/2019
 ms.locfileid: "74538575"
 ---
-# <a name="team-explorer-reference"></a>Dokumentacja programu Team Explorer
+# <a name="team-explorer-reference"></a>Dokumentacja wtyczki Team Explorer
 
 Ten artykuł zawiera linki do artykułów DevOps platformy Azure dotyczących różnych funkcji w programie **Team Explorer**.
 
-Użyj okna narzędzia **Team Explorer** , aby koordynować wysiłki kodu z innymi członkami zespołu, aby opracować projekt i zarządzać pracą przypisaną do Ciebie, Twojego zespołu lub Twoich projektów. **Team Explorer** łączy program Visual Studio z repozytoriami git i GitHub, repozytoriami wersji Team Foundation Version Control (TFVC) i projektami obsługiwanymi w [Azure DevOps Services](/azure/devops/user-guide/what-is-azure-devops-services) lub [Azure DevOps Server](/azure/devops/index-all) lokalnymi (wcześniej znanym jako TFS). Można zarządzać kodem źródłowym, elementami roboczymi i kompilacjami.
+Użyj okna narzędzia **Team Explorer** , aby koordynować wysiłki kodu z innymi członkami zespołu, aby opracować projekt i zarządzać pracą przypisaną do Ciebie, Twojego zespołu lub Twoich projektów. **Team Explorer** łączy program Visual Studio z repozytoriami git i GitHub, repozytoriami wersji Team Foundation Version Control (TFVC) i projektami obsługiwanymi w [Azure DevOps Services](/azure/devops/user-guide/what-is-azure-devops-services) lub [Azure DevOps Server](/azure/devops/index-all) lokalnymi (wcześniej znanym jako TFS). Możesz zarządzać kodem źródłowym, elementami roboczymi i kompilacjami.
 
 ## <a name="home-page"></a>Strona główna
 
@@ -33,37 +33,37 @@ Strona **główna** ma różne funkcje w zależności od tego, czy masz połącz
 
 | Strona **główna** z usługą git | Strona **główna** z TFVC |
 | - | - |
-| ![Strony głównej programu Team Explorer przy użyciu narzędzia Git w programie Visual Studio 2019 r.](media/team-explorer-reference/team-explorer-git.png) | ![Strona główna Team Explorer z TFVC w programie Visual Studio](media/team-explorer-reference/team-explorer-tfvc.png) |
+| ![Strona główna Team Explorer z usługą Git w programie Visual Studio 2019](media/team-explorer-reference/team-explorer-git.png) | ![Strona główna Team Explorer z TFVC w programie Visual Studio](media/team-explorer-reference/team-explorer-tfvc.png) |
 
-## <a name="changes-page-git"></a>Strony zmiany (Git)
+## <a name="changes-page-git"></a>Strona zmiany (Git)
 
 Zobacz [zapisywanie pracy z zatwierdzeniami](/azure/devops/repos/git/commits).
 
-## <a name="branches-page-git"></a>Strony gałęzi (Git)
+## <a name="branches-page-git"></a>Strona gałęzi (Git)
 
 Zobacz [Tworzenie pracy w gałęziach](/azure/devops/repos/git/branches).
 
-## <a name="pull-requests-page-git"></a>Strony żądania ściągnięcia (Git)
+## <a name="pull-requests-page-git"></a>Strona żądania ściągnięcia (Git)
 
 Zobacz sekcję [Przegląd kodu z żądaniami ściągnięcia](/azure/devops/repos/git/pullrequest).
 
-## <a name="sync-page-git"></a>Strony synchronizacji (Git)
+## <a name="sync-page-git"></a>Strona synchronizacji (Git)
 
 Zobacz [Aktualizacja kodu za pomocą pobierania i ściągania](/azure/devops/repos/git/pulling).
 
-## <a name="tags-page-git"></a>Strona tagi (Git)
+## <a name="tags-page-git"></a>Strona tagów (Git)
 
 Zobacz artykuł [Pracuj z tagami usługi git](/azure/devops/repos/git/git-tags).
 
-## <a name="my-work-page-tfvc"></a>Strony Moja praca (TFVC)
+## <a name="my-work-page-tfvc"></a>Strona Moja służbowa (TFVC)
 
 Zobacz [zadania zawieszania/wznawiania](/azure/devops/repos/tfvc/suspend-your-work-manage-your-shelvesets) oraz [Przegląd kodu](/azure/devops/repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review).
 
-## <a name="pending-changes-page-tfvc"></a>Strony oczekujących zmian (TFVC)
+## <a name="pending-changes-page-tfvc"></a>Strona oczekujące zmiany (TFVC)
 
 Zobacz [zarządzanie oczekującymi zmianami](/azure/devops/repos/tfvc/develop-code-manage-pending-changes), [Znajdowanie zestawów odłożonych](/azure/devops/repos/tfvc/suspend-your-work-manage-your-shelvesets)i [Rozwiązywanie konfliktów](/azure/devops/repos/tfvc/resolve-team-foundation-version-control-conflicts).
 
-## <a name="source-control-explorer-page-tfvc"></a>Strona Eksploratora kontroli źródła (TFVC)
+## <a name="source-control-explorer-page-tfvc"></a>Strona Eksploator kontroli źródła (TFVC)
 
 Zobacz [Dodawanie/wyświetlanie plików i folderów](/azure/devops/repos/tfvc/add-files-server).
 
@@ -86,7 +86,7 @@ Strona **elementy robocze** pozwala zobaczyć zapytania o elementy [robocze](/az
 
 ::: moniker-end
 
-## <a name="builds-page"></a>Strona kompilacji
+## <a name="builds-page"></a>Strona kompilacje
 
 Strona **kompilacje** umożliwia wyświetlenie definicji kompilacji dla projektu.
 
@@ -102,7 +102,7 @@ Zobacz:
 
 Strona **Ustawienia** umożliwia skonfigurowanie funkcji administracyjnych dla projektu lub kolekcji projektów. Zobacz następujące artykuły:
 
-| Projekt | Kolekcja projektów | Inne |
+| {1&gt;Projekt&lt;1} | Kolekcja projektów | Inne |
 | - | - | - |
 | [Zabezpieczenia, członkostwo w grupie](/azure/devops/organizations/security/set-project-collection-level-permissions)<br/>[Zabezpieczenia, kontrola źródła (TFVC)](/azure/devops/organizations/security/set-git-tfvc-repository-permissions)<br/>[Obszary elementu pracy](/azure/devops/organizations/settings/set-area-paths)<br/>[Iteracje elementu pracy](/azure/devops/organizations/settings/set-iteration-paths-sprints)<br/>[Ustawienia portalu](/azure/devops/report/sharepoint-dashboards/configure-or-add-a-project-portal)<br/>[Alerty projektu](/azure/devops/notifications/howto-manage-team-notifications) | [Zabezpieczenia, członkostwo w grupie](/azure/devops/organizations/security/set-project-collection-level-permissions)<br/>[Kontrola źródła (TFVC)](/azure/devops/repos/tfvc/decide-between-using-local-server-workspace)<br/>[Menedżer szablonu procesu](/azure/devops/boards/work-items/guidance/manage-process-templates) | [Ustawienia globalne git](/azure/devops/repos/git/git-config)<br/>[Ustawienia repozytorium git](/azure/devops/repos/git/git-config) |
 

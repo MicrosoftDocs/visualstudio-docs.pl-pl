@@ -41,11 +41,11 @@ Na przykład w powyższej tabeli można zobaczyć, że w dniu 12/13/2018 wystąp
 ### <a name="q-how-is-the-information-in-the-maximum-usage-different-from-the-assignment-information-available-in-the-overview-section-on-the-left-side-of-the-portal"></a>P: jak informacje o maksymalnym użyciu różnią się od informacji o przypisaniu dostępnych w sekcji "przegląd" po lewej stronie portalu?
 Odp.: informacje w omówieniu przedstawiają *bieżące* przypisania i dostępne subskrypcje dla poszczególnych poziomów subskrypcji.  Może to być bardzo różne od maksymalnej liczby subskrypcji przypisanych do umowy w bieżącym roku lub w okresie obowiązywania umowy.  Funkcja maksymalnego użycia pozwala zobaczyć, kiedy zostały osiągnięte maksymalne poziomy przypisania i jakie są poziomy.  Jest to ważne rozróżnienie, ponieważ opłaty za subskrypcje są naliczane na podstawie maksymalnej liczby subskrypcji przypisanych w dowolnym momencie w roku. 
 
-## <a name="resources"></a>Zasoby
+## <a name="resources"></a>Resources
 - [Oficjalny dokument dotyczący licencjonowana programu Visual Studio](https://aka.ms/vslicensing)
 - [Pomoc techniczna dotycząca subskrypcji programu Visual Studio i administrowania nim](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [Postanowienia dotyczące licencjonowania zbiorowego](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 - Jeśli masz jakieś pytania dotyczące przypisań subskrypcji lub innych aspektów portalu administracyjnego, skontaktuj się z pomocą techniczną, aby uzyskać pomoc w https://visualstudio.microsoft.com/subscriptions/support/. 
 - Dowiedz się więcej o tym, co należy zrobić, Jeśli przypiszesz więcej zakupionych subskrypcji, nazywanych [nadmiernymi alokacjami](handle-overclaimed-license.md).

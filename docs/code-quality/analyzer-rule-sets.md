@@ -33,12 +33,12 @@ Pakiet NuGet analizatora FxCop zawiera wstępnie zdefiniowane zestawy reguł i p
 - Globalizacja
 - Współdziałanie
 - Łatwość utrzymania
-- Nadawanie nazw
+- Nadać
 - Wydajność
 - Przewoźny z FxCop
 - Niezawodność
-- Bezpieczeństwo
-- Sposób użycia
+- Zabezpieczenia
+- Pomiar
 
 Każda z tych kategorii reguł ma plik EditorConfig lub zestawu reguł, aby:
 

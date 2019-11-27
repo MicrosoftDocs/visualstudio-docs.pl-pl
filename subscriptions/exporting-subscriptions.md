@@ -30,7 +30,7 @@ Aby przeprowadzić eksport:
 > [!div class="mx-imgBorder"]
 > ![eksportowanie subskrybentów](_img/exporting-subscriptions/exporting-subscriptions.png)
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 - Aby uzyskać więcej informacji na temat zarządzania subskrypcjami, zobacz te pomocne tematy:
     - [Wygasłe subskrypcje](handle-expired-license.md)
     - [Nadmierne alokacje](handle-overclaimed-license.md)

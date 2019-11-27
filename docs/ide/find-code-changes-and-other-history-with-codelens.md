@@ -120,7 +120,7 @@ Znajdź zmiany dla całego pliku w wskaźnikach poziomu plików w dolnej częśc
 
 Aby uzyskać więcej szczegółowych informacji na temat zmiany, kliknij prawym przyciskiem myszy ten element. W zależności od tego, czy korzystasz z usługi TFVC, czy git, dostępne są opcje porównywania wersji pliku, wyświetlania szczegółów i śledzenia zestawu zmian, pobierania wybranej wersji pliku i wysyłania wiadomości e-mail do autora tej zmiany. Niektóre z tych szczegółów są wyświetlane w **Team Explorer**.
 
-Możesz również zobaczyć, kto zmienił swój kod w czasie. Może to pomóc Ci znaleźć wzorce w zmiany swojego zespołu i ocena ich skutków.
+Możesz również zobaczyć, kto zmienił swój kod w czasie. Może to pomóc znaleźć wzorce w zmianach zespołu i ocenić ich wpływ.
 
 ![CodeLens: Zobacz historię zmian kodu jako Graf](../ide/media/codelens.png)
 
@@ -246,7 +246,7 @@ Aby wybrać wskaźniki przy użyciu klawiatury, naciśnij i przytrzymaj klawisz 
 > [!NOTE]
 > Aby wybrać wskaźnik **przeglądów** , przytrzymaj wciśnięty klawisz **Alt** przy użyciu klawiszy strzałek w lewo i w prawo, aby przejść.
 
-## <a name="q--a"></a>Pytania i odpowiedzi
+## <a name="q--a"></a>p & A
 
 ### <a name="q-how-do-i-turn-codelens-off-or-on-or-choose-which-indicators-to-see"></a>P: Jak mogę wyłączyć lub włączyć CodeLens lub wybrać wskaźniki, które mają być wyświetlane?
 

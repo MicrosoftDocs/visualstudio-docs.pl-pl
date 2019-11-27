@@ -57,7 +57,7 @@ Poniżej przedstawiono popularne skróty programu Visual Studio:
 | **Ctrl**+**F5** | Uruchom bez debugowania | Uruchamianie aplikacji lokalnie bez debugowania |
 | **Ctrl**+**K**,**D** (profil domyślny) lub **Ctrl**+**E**,**d** (C# profil) | Formatuj dokument | Czyści naruszenia formatowania pliku na podstawie nowego wiersza, odstępów i ustawień wcięć |
 | **Ctrl**+ **\\** ,**Ctrl**+**E** (profil domyślny) lub **Ctrl**+**w**,**E** (C# profil) | Wyświetl Lista błędów | Zobacz wszystkie błędy w dokumencie, projekcie lub rozwiązaniu |
-| **Alt** + **PgUp/PgDn** | Przejdź do następnego/poprzedniego wydania | Przejdź do poprzedniego/następnego błędu, ostrzeżenia i sugestii w dokumencie (dostępne w programie **Visual Studio 2017 w wersji 15,8** lub nowszej) |
+| **Alt** + **PgUp/PgDn** | Przejdź do następnego/poprzedniego problemu | Przejdź do poprzedniego/następnego błędu, ostrzeżenia i sugestii w dokumencie (dostępne w programie **Visual Studio 2017 w wersji 15,8** lub nowszej) |
 | **Ctrl**+**K**, **/** | Przełącz Komentarz jednowierszowy/Usuń komentarz | To polecenie dodaje lub usuwa Komentarz jednowierszowy w zależności od tego, czy zaznaczenie jest już komentarzem |
 | **Ctrl**+**SHIFT**+ **/** | Przełącz komentarz bloku/Usuń komentarz | To polecenie dodaje lub usuwa komentarze bloku w zależności od wybranych elementów |
 
@@ -125,7 +125,7 @@ Program Visual Studio zawiera wiele refaktoryzacji, akcji generowania kodu i pop
 
 Popularne szybkie poprawki i refaktoryzacje obejmują:
 
-- Zmiana nazwy
+- Zmień nazwę
 - Wyodrębnij metodę
 - Zmień sygnaturę metody
 - Generuj Konstruktor
@@ -159,7 +159,7 @@ Program Visual Studio ma wiele funkcji ułatwiających wyszukiwanie i [nawigowan
 | Znajdź wszystkie odwołania | **Shift**+**F12**| Wyniki są kolorowe i mogą być pogrupowane według projektu, definicji i typu referencyjnego, takich jak Odczyt lub zapis. Możesz również "zablokować" wyniki. |
 | Przejdź do implementacji | **Ctrl**+**F12** | Aby przejść do przesłoniętego elementu członkowskiego, można użyć słowa kluczowego przejdź do definicji `override`. |
 | Przejdź do definicji | Naciśnij **klawisz F12** lub **Ctrl**+**kliknij**| Naciśnij klawisz **Ctrl** podczas klikania, aby przejść do definicji |
-| Zobacz definicję | **Alt**+**F12** | Wbudowany widok definicji |
+| Definicja wglądu | **Alt**+**F12** | Wbudowany widok definicji |
 | Wizualizator struktury | Szare, kropkowane linie między nawiasami klamrowymi | Umieść wskaźnik myszy, aby zobaczyć strukturę kodu |
 | Nawigacja do dekompilowanych zestawów | Naciśnij **klawisz F12** lub **Ctrl**+**kliknij** | Przejdź do zewnętrznego źródła (dekompilowanego za pomocą ILSpy), włączając funkcję: **narzędzia** > **Opcje** > **edytorze tekstów** > **C#**  > **Advanced** > **Włącz nawigację do dekompilowanych źródeł**. |
 
@@ -181,7 +181,7 @@ Począwszy od programu Visual Studio 2017, wprowadzono liczne ulepszenia środow
 
 - [Testowanie jednostkowe na żywo](../test/live-unit-testing.md) w sposób ciągły uruchamia testy, na które wpływa zmiana kodu i aktualizuje ikony edytora wbudowanego, aby poinformować o stanie testów. Dołącz lub Wyklucz określone testy lub projekty testowe z zestawu testów na żywo. (Tylko wersja Visual Studio Enterprise).
 
-## <a name="debugging"></a>Debugowanie
+## <a name="debugging"></a>debugowanie
 
 Niektóre funkcje debugowania programu Visual Studio obejmują:
 

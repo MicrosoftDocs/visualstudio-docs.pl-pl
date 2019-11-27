@@ -50,11 +50,11 @@ Po zakończeniu zamówienia subskrypcji zobaczysz stronę potwierdzenia zawieraj
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (standardowa)   | LICENCJONOWANie, Azure, sprzedaż detaliczna, wybrane NFR<sup>1</sup> | Dostępne       |  Nie          |
 | Visual Studio Enterprise z usługą GitHub Enterprise   | Licencja| Dostępne       |  Nie          |
-| Visual Studio Professional (standardowa) | VL, Azure, Retail                                       | Dostępne                                                            |  Nie          |
+| Visual Studio Professional (standardowa) | LICENCJONOWANie, Azure, sprzedaż detaliczna                                       | Dostępne                                                            |  Nie          |
 | Visual Studio Professional z usługą GitHub Enterprise | Licencja                                      | Dostępne                                                            |  Nie          |
 | Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Dostępne                                             |  Nie          |
 | Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | Dostępne                                              |  Nie          |
-| Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure | Niedostępne | Brak |
+| Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure | Niedostępne | N/D |
 
 <sup>1</sup>  *obejmuje: nie do odsprzedaży (NFR), Visual Studio Industry partner (VSIP), równoważnik, BizSpark, wyobraźc Premium.  Wyklucza: Microsoft Partner Network (MPN), najbardziej cenny specjalista (MVP), kierownik regionalny (RD), MCT Software & Services Developer, MCT Software & Services.*
 
@@ -75,7 +75,7 @@ Odp.: Magazyn kodu zbiera swój adres, bez względu na to, czy subskrypcja dotyc
 - Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
 - Masz pytanie dotyczące środowiska IDE programu Visual Studio, Azure DevOps Services lub innych produktów lub usług Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 Zapoznaj się z pozostałymi korzyściami z subskrypcji. Odwiedź [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 Jeśli nie aktywowano jeszcze korzyści z korzystania z usługi Azure DevTest, która jest oferowana w ramach subskrypcji, odwiedź stronę [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) i kliknij kafelek platformy Azure w kategorii narzędzia, aby skonfigurować subskrypcję platformy Azure i wykorzystać swoje środki na korzystanie z platformy Azure DevTest.

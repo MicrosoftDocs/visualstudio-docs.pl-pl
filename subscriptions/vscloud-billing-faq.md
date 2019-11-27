@@ -18,7 +18,7 @@ ms.locfileid: "74491263"
 
 ## <a name="general-purchasing-questions"></a>Ogólne pytania dotyczące zakupu
 ### <a name="q-can-i-buy-visual-studio-cloud-subscriptions-using-a-purchase-order"></a>P: Czy mogę kupić subskrypcje programu Visual Studio w chmurze przy użyciu zamówienia zakupu?
-Odpowiedź: nie. Wszystkie subskrypcje programu Visual Studio w chmurze muszą zostać zakupione przy użyciu subskrypcji platformy Azure. (Pomyśl, że jest to konto rozliczeniowe platformy Azure).
+Odp.: Nie. Wszystkie subskrypcje programu Visual Studio w chmurze muszą zostać zakupione przy użyciu subskrypcji platformy Azure. (Pomyśl, że jest to konto rozliczeniowe platformy Azure).
 
 ### <a name="q-what-types-of-azure-subscriptions-can-be-used-to-buy-visual-studio-cloud-subscriptions"></a>P: jakich typów subskrypcji platformy Azure można używać do kupowania subskrypcji w chmurze programu Visual Studio?
 Odp.: można używać większości subskrypcji platformy Azure — obsługujemy subskrypcje platformy Azure połączone z [Umowa Enterprise (EA)](https://azure.microsoft.com/pricing/enterprise-agreement/), subskrypcje platformy Azure skonfigurowane przez dostawców rozwiązań w chmurze (CSP), subskrypcje platformy Azure skonfigurowane w ramach odsprzedawcaów licencji Open firmy Microsoft oraz subskrypcje platformy Azure z płatność zgodnie z rzeczywistym użyciem.
@@ -66,7 +66,7 @@ Odp.: otrzymujesz 5% rabatu na szóste i wszystkie kolejne subskrypcje *w ramach
 * Visual Studio Professional miesięcznie
 * Visual Studio Professional rocznie
 * Visual Studio Enterprise miesięcznie
-* Visual Studio Enterprise annual
+* Visual Studio Enterprise rocznie
 
 Jeśli na przykład kupisz 6 Visual Studio Professional subskrypcje miesięczne i 5 Visual Studio Enterprise miesięcznych subskrypcji, będziesz mieć zwykłą cenę za 5 Professional, uzyskaj 5% rabat w szóstym Professional i płatność Zwykła cena za wszystkie 5 przedsiębiorstw opłaty.
 
@@ -95,7 +95,7 @@ Odp.: tak, możesz, jeśli odsprzedawca uczestniczy w programie w programie Clou
 - [Obsługa subskrypcji programu Visual Studio](https://visualstudio.microsoft.com/vs/support/)
 - [Kupowanie subskrypcji w chmurze programu Visual Studio dla dostawców CSP](vscloud-csp.md)
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 Kup teraz subskrypcje chmury
 - [Visual Studio Professional miesięcznie](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-monthly)
 - [Visual Studio Enterprise miesięcznie](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-monthly)
