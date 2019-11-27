@@ -26,7 +26,7 @@ Korzystając z programu InstallShield Limited Edition, można utworzyć plik ins
   
 ### <a name="to-enable-installshield-limited-edition"></a>Aby włączyć program InstallShield Limited Edition  
   
-1. Na pasku menu wybierz **pliku**, **New**, **projektu**.  
+1. Na pasku menu wybierz **plik**, **Nowy**, **projekt**.  
   
 2. W oknie dialogowym **Nowy projekt** rozwiń węzeł **Inne typy projektów** , a następnie wybierz węzeł **Instalacja i wdrożenie** .  
   

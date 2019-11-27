@@ -30,7 +30,7 @@ W poniższej tabeli wymieniono numery kompilacji i daty wydania dla programu Vis
 | **Wersja**| **Channel** | **Data wydania** | **Wersja kompilacji** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
 | 16.4.0 | Wersja zapoznawcza 6 | 21 listopada 2019 | 16.4.29519.161 |
-| 16.3.10 | Wydanie | 20 listopada 2019 | 16.3.29519.87 |
+| 16.3.10 | Wydanie | 20 listopada 2019 r. | 16.3.29519.87 |
 | 16.4.0 | Wersja zapoznawcza 5 | 14 listopada 2019 | 16.4.29512.175 |
 | 16.3.9 | Wydanie | 12 listopada 2019 r. | 16.3.29509.3 |
 | 16.4.0 | Wersja zapoznawcza 4 | 6 listopada 2019 | 16.4.29505.145 |
@@ -192,7 +192,7 @@ W poniższej tabeli wymieniono daty liczb i wersji kompilacji dla programu Visua
 | 15.0.11 | Wydanie | 13 marca 2018 r. | 15.0.26228.29 |
 | 15.6.1 | Wydanie | 8 marca 2018 r. | 15.6.27428.2002 |
 | 15.6.1 Podgląd 1 | Wersja zapoznawcza | 8 marca 2018 r. | 15.6.27428.2002 |
-| 15.6.0 | Wydanie | 5 marca 2018 r. | 15.6.27428.1 |
+| 15.6.0 | Wydanie | 5 marca 2018 r. | 15.6.27428.1 |
 | 15.6.0 Podgląd 7 | Wersja zapoznawcza | 2 marca 2018 r. | 15.6.27428.1 |
 | 15.6.0 w wersji zapoznawczej 6 | Wersja zapoznawcza | 23 lutego 2018 r. | 15.6.27421.1 |
 | 15.0.10 | Wydanie | 21 lutego 2018 r. | 15.0.26228.28 |
@@ -257,8 +257,8 @@ W poniższej tabeli wymieniono daty liczb i wersji kompilacji dla programu Visua
 | 15.0.4  | Wydanie | 23 maja 2017 r. | 15.0.26228.13 |
 | 15.2.1  | Wydanie | 12 maja 2017 r. | 15.0.26430.6 |
 | 15.3 (wersja zapoznawcza) 1.1 | Wersja zapoznawcza | 11 maja 2017 r. | 15.0.26510.0 |
-| 15.3 Podgląd 1 | Wersja zapoznawcza | 10 maja 2017 | 15.0.26507.0 |
-| 15.2.0 | Wydanie | 10 maja 2017 | 15.0.26430.4 |
+| 15.3 Podgląd 1 | Wersja zapoznawcza | 10 maja 2017 r. | 15.0.26507.0 |
+| 15.2.0 | Wydanie | 10 maja 2017 r. | 15.0.26430.4 |
 | 15.2 w wersji zapoznawczej 4 | Wersja zapoznawcza | 3 maja 2017 r. | 15.0.26430.1 |
 | 15.2 Podgląd 3 | Wersja zapoznawcza | 26 kwietnia 2017 r. | 15.0.26424.2 |
 | 15.2 preview 2 | Wersja zapoznawcza | 20 kwietnia 2017 r. | 15.0.26419.1 |
@@ -284,6 +284,6 @@ W poniższej tabeli wymieniono daty liczb i wersji kompilacji dla programu Visua
 ## <a name="see-also"></a>Zobacz także
 
 * [Rytm wydawania programu Visual Studio](/visualstudio/productinfo/release-rhythm/)
-* [Podręcznik administratora w usłudze Visual Studio](visual-studio-administrator-guide.md)
+* [Przewodnik administratora programu Visual Studio](visual-studio-administrator-guide.md)
 * [Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Narzędzia do wykrywania wystąpień programu Visual Studio i zarządzania nimi](tools-for-managing-visual-studio-instances.md)

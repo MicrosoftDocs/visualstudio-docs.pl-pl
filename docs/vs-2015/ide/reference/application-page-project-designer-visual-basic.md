@@ -75,7 +75,7 @@ Użyj strony **aplikacji** projektanta projektu, aby określić ustawienia i wł
 
  Jeśli wybrano opcję **Włącz platformę aplikacji** (domyślnie), ta lista jest zatytułowana **formularz startowy** i pokazuje tylko formularze, ponieważ struktura aplikacji obsługuje tylko formularze uruchamiania, a nie obiekty.
 
- Jeśli projekt jest aplikacją przeglądarki WPF, na liście jest **uruchamiany początkowy identyfikator URI**, a wartością domyślną jest **Strona1. XAML**. Lista **początkowy identyfikator URI** umożliwia określenie zasobu interfejsu użytkownika (elementu XAML), który będzie wyświetlany podczas uruchamiania aplikacji. Aby uzyskać więcej informacji, zobacz <xref:System.Windows.Application.StartupUri%2A>.
+ Jeśli projekt jest aplikacją przeglądarki WPF, na liście jest **uruchamiany początkowy identyfikator URI**, a wartością domyślną jest **Strona1. XAML**. Lista **początkowy identyfikator URI** umożliwia określenie zasobu interfejsu użytkownika (elementu XAML), który będzie wyświetlany podczas uruchamiania aplikacji. Aby uzyskać więcej informacji, zobacz temat <xref:System.Windows.Application.StartupUri%2A>.
 
  Jeśli opcja **Włącz platformę aplikacji** jest wyczyszczona, ta lista będzie **obiektem startowym** i pokazuje formularze oraz klasy lub moduły z `Sub Main`.
 

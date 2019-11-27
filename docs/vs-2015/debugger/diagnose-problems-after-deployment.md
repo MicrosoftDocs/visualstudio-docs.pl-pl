@@ -60,7 +60,7 @@ Aby zdiagnozować problemy w aplikacji sieci Web ASP.NET po wdrożeniu przy uży
   
 4. Dodaj ten argument MSBuild, aby uwzględnić lokalizacje TFS i symboli w pliku manifestu kompilacji:  
   
-    **/p:IncludeServerNameInBuildInfo=True**  
+    **/p: IncludeServerNameInBuildInfo = true**  
   
     Każdy użytkownik, który ma dostęp do serwera sieci Web, może zobaczyć te lokalizacje w manifeście kompilacji. Upewnij się, że serwer źródłowy jest bezpieczny.  
   
@@ -93,13 +93,13 @@ Aby zdiagnozować problemy w aplikacji sieci Web ASP.NET po wdrożeniu przy uży
   
 3. Dodaj następujące argumenty MSBuild do swojej definicji kompilacji:  
   
-   - **/p:VisualStudioVersion=12.0**  
+   - **/p: VisualStudioVersion = 12**  
   
    - **/p: MSBuildAssemblyVersion = 12**  
   
    - **/TV: 12**  
   
-   - **/p:IncludeServerNameInBuildInfo=True**  
+   - **/p: IncludeServerNameInBuildInfo = true**  
   
    - **/p: BuildSymbolStorePath =** \<*ścieżka do symboli*>  
   
@@ -137,9 +137,9 @@ Aby zdiagnozować problemy w aplikacji sieci Web ASP.NET po wdrożeniu przy uży
 ### <a name="MSBuild"></a>Utwórz manifest kompilacji dla kompilacji ręcznej przy użyciu programu MSBuild. exe  
  Dodaj te argumenty kompilacji podczas uruchamiania kompilacji:  
   
- **/p:GenerateBuildInfoConfigFile=True**  
+ **/p: GenerateBuildInfoConfigFile = true**  
   
- **/p:IncludeServerNameInBuildInfo=True**  
+ **/p: IncludeServerNameInBuildInfo = true**  
   
  **/p: BuildSymbolStorePath =** \<*ścieżka do symboli*>  
   
@@ -230,7 +230,7 @@ Aby zdiagnozować problemy w aplikacji sieci Web ASP.NET po wdrożeniu przy uży
   
      ![Mapuj stos wywołań podczas debugowania](../debugger/media/ffr-itsummarypageperformancedebuggermap.png "FFR_ITSummaryPagePerformanceDebuggerMap")  
   
-### <a name="FAQ"></a> PYTANIA I ODPOWIEDZI  
+### <a name="FAQ"></a>p & A  
   
 #### <a name="WhyInclude"></a>P: Dlaczego należy uwzględnić informacje o moim projekcie, kontroli źródła, kompilacji i symbolach w mojej wersji?  
  Program Visual Studio używa tych informacji, aby znaleźć pasujące rozwiązanie i źródło dla wersji, którą próbujesz debugować. Po otwarciu dziennika IntelliTrace i wybraniu zdarzenia w celu rozpoczęcia debugowania program Visual Studio używa symboli do znajdowania i wyświetlania kodu, w którym wystąpiło zdarzenie. Następnie można przyjrzeć się wartościom, które zostały zarejestrowane i przenieść do przodu lub do tyłu przez wykonanie kodu.  
@@ -278,7 +278,7 @@ Aby zdiagnozować problemy w aplikacji sieci Web ASP.NET po wdrożeniu przy uży
     </SourceControl>  
     ```  
   
-  - **Usługa Git**  
+  - **Narzędzia**  
   
     - **GitSourceControl**: Lokalizacja schematu **GitSourceControl**  
   
@@ -300,7 +300,7 @@ Aby zdiagnozować problemy w aplikacji sieci Web ASP.NET po wdrożeniu przy uży
     </SourceControl>  
     ```  
   
-- {1&gt;Kompilacja&lt;1}  
+- **Kompilacja**  
   
    Informacje o systemie kompilacji, `"TeamBuild"` lub `"MSBuild"`i te wymagane właściwości:  
   
@@ -330,7 +330,7 @@ Aby zdiagnozować problemy w aplikacji sieci Web ASP.NET po wdrożeniu przy uży
     </Build>  
     ```  
   
-  - **Usługa Git**  
+  - **Narzędzia**  
   
     ```  
     <Build type="MSBuild">   

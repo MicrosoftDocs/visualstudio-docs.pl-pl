@@ -52,7 +52,7 @@ Jeśli używasz programu Internet Information Services (IIS) w systemie Windows 
 ## <a name="clickonce-and-proxy-authentication"></a>Uwierzytelnianie ClickOnce i serwer proxy  
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] zapewnia obsługę uwierzytelniania zintegrowanego serwera proxy systemu Windows, począwszy od .NET Framework 3,5. Nie są wymagane żadne określone dyrektywy Machine. config. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] nie zapewnia obsługi innych protokołów uwierzytelniania, takich jak Basic lub Digest.  
   
- Aby włączyć tę funkcję, można również zastosować poprawkę do .NET Framework 2,0. Aby uzyskać więcej informacji, zobacz https://go.microsoft.com/fwlink/?LinkId=158730.  
+ Aby włączyć tę funkcję, można również zastosować poprawkę do .NET Framework 2,0. Aby uzyskać więcej informacji, zobacz temat https://go.microsoft.com/fwlink/?LinkId=158730.  
   
  Aby uzyskać więcej informacji, zobacz [\<defaultProxy > elementu (Ustawienia sieci)](https://msdn.microsoft.com/library/9d663c4b-07b4-4f6f-9b12-efbd3630354f).  
   

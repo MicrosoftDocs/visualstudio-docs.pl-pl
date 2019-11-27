@@ -40,7 +40,7 @@ Można debugować C++ kod, który jest uruchomiony w procesorze GPU. Obsługa de
 - W **Eksplorator rozwiązań**, w menu skrótów dla projektu, wybierz **Właściwości**. W oknie dialogowym **strony właściwości** wybierz pozycję **debugowanie**, a następnie na liście **Typ debugera** wybierz pozycję **GPU** .  
   
 ## <a name="launching-and-attaching-to-applications"></a>Uruchamianie i dołączanie do aplikacji  
- Możesz użyć poleceń debugowania programu Visual Studio, aby uruchomić i zatrzymać debugowanie procesora GPU. Aby uzyskać więcej informacji, zobacz [nawigowanie po kodzie za pomocą debugera za](../debugger/navigating-through-code-with-the-debugger.md). Debuger GPU można także dołączyć do uruchomionego procesu, ale tylko wtedy, gdy ten proces wykonuje kod procesora GPU. Aby uzyskać więcej informacji, zobacz [dołączenia do uruchamiania procesów](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
+ Możesz użyć poleceń debugowania programu Visual Studio, aby uruchomić i zatrzymać debugowanie procesora GPU. Aby uzyskać więcej informacji, zobacz [nawigowanie po kodzie za pomocą debugera](../debugger/navigating-through-code-with-the-debugger.md). Debuger GPU można także dołączyć do uruchomionego procesu, ale tylko wtedy, gdy ten proces wykonuje kod procesora GPU. Aby uzyskać więcej informacji, zobacz [dołączanie do uruchomionych procesów](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   
 ## <a name="run-current-tile-to-cursor-and-run-to-cursor"></a>Uruchom bieżący kafelek do kursora i uruchom do kursora  
  Podczas debugowania na procesorze GPU dostępne są dwie opcje uruchamiania do lokalizacji kursora. Polecenia dla obu opcji są dostępne w menu skrótów edytora kodu.  
@@ -74,7 +74,7 @@ Można debugować C++ kod, który jest uruchomiony w procesorze GPU. Obsługa de
  Warunkowe punkty przerwania w kodzie GPU są obsługiwane, ale nie każde wyrażenie może być oceniane na urządzeniu. Gdy nie można obliczyć wyrażenia na urządzeniu, jest ono oceniane w debugerze. Debuger może działać wolniej niż urządzenie.  
   
 ### <a name="error-there-is-a-configuration-issue-with-the-selected-debugging-accelerator-type"></a>Błąd: Wystąpił problem z konfiguracją z wybranym typem akceleratora debugowania.  
- Ten błąd występuje w przypadku niespójności między ustawieniami projektu i konfiguracją komputera, na którym odbywa się debugowanie. Aby uzyskać więcej informacji, zobacz [ustawienia projektu dla konfiguracji debugowania języka C++](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
+ Ten błąd występuje w przypadku niespójności między ustawieniami projektu i konfiguracją komputera, na którym odbywa się debugowanie. Aby uzyskać więcej informacji, zobacz [Ustawienia projektu dla C++ konfiguracji debugowania](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
   
 ### <a name="error-the-debug-driver-for-the-selected-debugging-accelerator-type-is-not-installed-on-the-target-machine"></a>Błąd: Sterownik debugowania dla wybranego typu akceleratora debugowania nie jest zainstalowany na maszynie docelowej.  
  Ten błąd występuje w przypadku debugowania na komputerze zdalnym. Debuger nie może ustalić czasu uruchomienia sterowników na komputerze zdalnym. Sterowniki są dostępne od producenta karty graficznej.  
@@ -84,5 +84,5 @@ Można debugować C++ kod, który jest uruchomiony w procesorze GPU. Obsługa de
   
 ## <a name="see-also"></a>Zobacz też  
  [Przewodnik: debugowanie aplikacji C++ amp](https://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)   
- [Ustawienia projektu dla konfiguracji debugowania języka C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
+ [Ustawienia projektu dla konfiguracji C++ debugowania](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
  [Rozpocznij debugowanie procesora GPU w programie Visual Studio](https://go.microsoft.com/fwlink/p/?LinkId=255381)

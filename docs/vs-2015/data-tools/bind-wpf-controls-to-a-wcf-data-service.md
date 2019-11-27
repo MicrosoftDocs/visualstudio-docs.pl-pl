@@ -87,7 +87,7 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera kontrolki powiązane
 
 #### <a name="to-create-an-entity-data-model"></a>Aby utworzyć Entity Data Model
 
-1. W menu **Projekt** kliknij opcję **Dodaj nowy element**.
+1. W menu **projekt** kliknij polecenie **Dodaj nowy element**.
 
 2. Na liście zainstalowane szablony kliknij pozycję **dane**, a następnie wybierz element projektu **ADO.NET Entity Data Model** .
 
@@ -151,7 +151,7 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera kontrolki powiązane
 
      Program Visual Studio dodaje projekt `AdventureWorksSalesEditor` do rozwiązania.
 
-5. Na **danych** menu, kliknij przycisk **Pokaż źródła danych**.
+5. W menu **dane** kliknij przycisk **Pokaż źródła danych**.
 
      Zostanie otwarte okno **źródła danych** .
 

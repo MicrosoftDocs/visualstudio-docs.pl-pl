@@ -19,7 +19,7 @@ ms.lasthandoff: 11/21/2019
 ms.locfileid: "74300170"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>Dodawanie usługi Azure storage przy użyciu programu Visual Studio podłączone usługi
-Za pomocą programu Visual Studio, można nawiązać żadnego z następujących usługi Azure Storage za pomocą **Dodaj usługi połączone** okno dialogowe:
+Za pomocą programu Visual Studio można połączyć dowolne z następujących elementów w usłudze Azure Storage przy użyciu okna dialogowego **Dodawanie połączonych usług** :
 
 - Usługa w chmurze języka C#
 - Usługi mobilnej zaplecza platformy .NET
@@ -29,20 +29,20 @@ Za pomocą programu Visual Studio, można nawiązać żadnego z następujących 
 
 Funkcje usługi połączonej dodaje wymagane odwołania i kod połączenia do projektu i odpowiednio modyfikuje pliki konfiguracji.
 
-Po zakończeniu **Dodaj usługi połączone** okna dialogowego automatycznie wyświetla dokumentacji szczegółowych informacji na temat kroków wymaganych do rozpoczęcia pracy z magazynem obiektów blob, kolejek i tabel.
+Po zakończeniu okno dialogowe **Dodawanie połączonych usług** automatycznie wyświetli dokumentację opisującą kroki wymagane do rozpoczęcia pracy z magazynem obiektów blob, kolejkami i tabelami.
 
 ## <a name="connect-to-azure-storage-using-the-connected-services-dialog"></a>Łączenie się z magazynem platformy Azure za pomocą okna dialogowego podłączone usługi
 1. Otwórz projekt w programie Visual Studio
 
-1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **podłączone usługi** węzeł i z menu kontekstowe i wybierz **Dodaj podłączoną usługę**.
+1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł **usługi połączone** , a następnie z menu kontekstowego wybierz polecenie **Dodaj podłączoną usługę**.
 
     ![Dodaj Azure usługa połączona](./media/vs-azure-tools-connected-services-storage/IC796702.png)
 
-1. W **podłączone usługi** wybierz opcję **magazynu w chmurze z usługą Azure Storage**.
+1. Na stronie **usługi połączone** wybierz pozycję **Magazyn w chmurze z usługą Azure Storage**.
 
     ![Dodawanie usługi Azure Storage](./media/vs-azure-tools-connected-services-storage/add-azure-storage.png)
 
-1. W **usługi Azure Storage** okno dialogowe, wybierz istniejące konto magazynu i wybierz **Dodaj**.
+1. W oknie dialogowym **Azure Storage** Wybierz istniejące konto magazynu i wybierz pozycję **Dodaj**.
 
     Jeśli musisz utworzyć konto magazynu, przejdź do następnego kroku. W przeciwnym razie przejdź do kroku 6.
 
@@ -50,25 +50,25 @@ Po zakończeniu **Dodaj usługi połączone** okna dialogowego automatycznie wy�
 
 1. Aby utworzyć konto magazynu:
 
-   1. Wybierz **Utwórz nowe konto magazynu** w dolnej części okna dialogowego.
+   1. Wybierz pozycję **Utwórz nowe konto magazynu** w dolnej części okna dialogowego.
 
-   1. Wypełnij **Utwórz konto magazynu** okna dialogowego, a następnie wybierz **Utwórz**.
+   1. Wypełnij okno dialogowe **Tworzenie konta magazynu** , a następnie wybierz pozycję **Utwórz**.
 
        ![Nowe konto usługi Azure storage](./media/vs-azure-tools-connected-services-storage/create-storage-account.png)
 
-   1. Gdy **usługi Azure Storage** zostanie wyświetlone okno dialogowe, nowe konto magazynu jest wyświetlana na liście. Wybierz nowe konto magazynu na liście, a następnie wybierz pozycję **Dodaj**.
+   1. Po wyświetleniu okna dialogowego **usługi Azure Storage** nowe konto magazynu zostanie wyświetlone na liście. Wybierz nowe konto magazynu z listy, a następnie wybierz pozycję **Dodaj**.
 
-1. Magazyn usługi połączonej jest wyświetlany w obszarze **odwołania do usług** węzła projektu.
+1. Usługa połączona do magazynu jest wyświetlana w węźle **odwołania do usługi** projektu.
 
 ## <a name="how-your-project-is-modified"></a>Jak jest modyfikowana projektu
 Po zakończeniu okna dialogowego programu Visual Studio dodaje odwołania i modyfikuje niektórych plików konfiguracyjnych. Konkretne zmiany są zależne od typu projektu:
 
-- Projekt platformy ASP.NET — [co się stało — projektów platformy ASP.NET](https://go.microsoft.com/fwlink/p/?LinkId=513126)
-- Projekt platformy ASP.NET Core — [co się stało — projektów programu ASP.NET 5](https://go.microsoft.com/fwlink/p/?LinkId=513124)
-- Projekt usługi w chmurze (role sieć web i ról procesów roboczych) - [co się stało — projektów usług w chmurze](https://go.microsoft.com/fwlink/p/?LinkId=516965)
-- Projekt zadania WebJob — [co się stało — projekty zadań WebJob](/azure/visual-studio/vs-storage-webjobs-what-happened)
+- Projekt ASP.NET — [co się stało — projekty ASP.NET](https://go.microsoft.com/fwlink/p/?LinkId=513126)
+- ASP.NET Core Project — [co się stało — projekty ASP.NET 5](https://go.microsoft.com/fwlink/p/?LinkId=513124)
+- Projekt usługi w chmurze (role sieci Web i proces roboczy) — [co się stało — projekty usług w chmurze](https://go.microsoft.com/fwlink/p/?LinkId=516965)
+- Projekt Zadania WebJob — [co się stało z projektami zadań WebJob](/azure/visual-studio/vs-storage-webjobs-what-happened)
 
-## <a name="next-steps"></a>Następne kroki
-- [MSDN Forum: Usługa Azure Storage](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
-- [Blog zespołu usługi Microsoft Azure Storage](https://blogs.msdn.microsoft.com/windowsazurestorage/)
+## <a name="next-steps"></a>Kolejne kroki
+- [Forum MSDN: Azure Storage](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
+- [Blog zespołu Microsoft Azure Storage](https://blogs.msdn.microsoft.com/windowsazurestorage/)
 - [Dokumentacja usługi Azure Storage](https://docs.microsoft.com/azure/storage/)

@@ -29,7 +29,7 @@ ms.locfileid: "74297886"
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] oferuje wiele domyślnych kombinacji klawiszy skrótów, które ułatwiają nawigowanie i wykonywanie kodu w zintegrowanym środowisku programistycznym (IDE). Aby zapoznać się z pełną listą klawiszy skrótów używanych w programie Visual Studio, zobacz [domyślne skróty klawiaturowe](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Aby uzyskać informacje na temat skrótów klawiaturowych dostępnych dla innych produktów firmy Microsoft, zobacz [http://www.microsoft.com/enable/products/keyboard.aspx](https://go.microsoft.com/fwlink/?LinkID=40400).
 
 > [!NOTE]
-> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, wybierz **Importuj i Eksportuj ustawienia** w menu **Narzędzia** . Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień deweloperskich w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="toolbox-controls"></a>Kontrolki przybornika
  Kontrolkę można dodać do zestawu narzędzi do formularza lub projektanta przy użyciu klawiatury.

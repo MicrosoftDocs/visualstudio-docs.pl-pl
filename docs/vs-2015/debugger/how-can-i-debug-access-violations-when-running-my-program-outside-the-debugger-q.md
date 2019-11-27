@@ -34,10 +34,10 @@ Opis problemu
  Program działa poprawnie w środowisku Visual Studio, ale gdy uruchamiam go autonomicznego w systemie operacyjnym Windows, generuje naruszenie zasad dostępu. W jaki sposób można debugować ten problem?  
   
 ## <a name="solution"></a>Rozwiązanie  
- Ustaw [Just-in-time debugging](../debugger/just-in-time-debugging-in-visual-studio.md) opcji, a następnie uruchom program autonomiczny, dopóki nie nastąpi naruszenie zasad dostępu. Następnie w **naruszenie zasad dostępu** okno dialogowe, możesz kliknąć pozycję **anulować** można uruchomić debugera.  
+ Ustaw opcję [debugowanie just in Time](../debugger/just-in-time-debugging-in-visual-studio.md) i uruchom program autonomicznie do momentu wystąpienia naruszenia zasad dostępu. Następnie w oknie dialogowym **naruszenie zasad dostępu** można kliknąć przycisk **Anuluj** , aby uruchomić debuger.  
   
  Zobacz także artykuł z bazy wiedzy Q133174, "Jak zlokalizować miejsce wystąpienia błędu ochrony ogólnej (GP)". Artykuły bazy wiedzy można znaleźć na dysku CD biblioteki MSDN lub przeszukać [http://support.microsoft.com/](https://support.microsoft.com/).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Debugowanie kodu natywnego — często zadawane pytania](../debugger/debugging-native-code-faqs.md)   
+ [Debugowanie często zadawanych pytań dotyczących kodu natywnego](../debugger/debugging-native-code-faqs.md)   
  [Debugowanie kodu natywnego](../debugger/debugging-native-code.md)

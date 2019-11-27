@@ -1,5 +1,5 @@
 ---
-title: 'How to: Build Incrementally | Microsoft Docs'
+title: 'Instrukcje: kompilowanie przyrostowe | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -19,15 +19,15 @@ ms.contentlocale: pl-PL
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74316480"
 ---
-# <a name="how-to-build-incrementally"></a>How to: Build incrementally
-When you build a large project, it is important that previously built components that are still up-to-date are not rebuilt. If all targets are built every time, each build will take a long time to complete. To enable incremental builds (builds in which only those targets that have not been built before or targets that are out of date, are rebuilt), the [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) can compare the timestamps of the input files with the timestamps of the output files and determine whether to skip, build, or partially rebuild a target. However, there must be a one-to-one mapping between inputs and outputs. You can use transforms to enable targets to identify this direct mapping. For more information on transforms, see [Transforms](../msbuild/msbuild-transforms.md).
+# <a name="how-to-build-incrementally"></a>Instrukcje: kompilowanie przyrostowe
+Podczas kompilowania dużego projektu ważne jest, aby wcześniej skompilowane składniki, które są nadal aktualne, nie zostały odbudowane. Jeśli wszystkie elementy docelowe są tworzone za każdym razem, ukończenie każdej kompilacji potrwa dużo czasu. Aby włączyć Kompilacje przyrostowe (kompilacje, w których tylko te elementy docelowe, które nie zostały skompilowane przed lub celem, które są nieaktualne, są ponownie kompilowane), [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) mogą porównać sygnatury czasowe plików wejściowych z sygnaturami czasowymi plików wyjściowych i określić, czy pominąć, skompilować lub częściowo ponownie skompilować element docelowy. Jednak musi istnieć mapowanie jeden do jednego między danymi wejściowymi i wyjściowymi. Można użyć transformacji, aby umożliwić obiektom docelowym zidentyfikowanie tego bezpośredniego mapowania. Aby uzyskać więcej informacji na temat transformacji, zobacz [transformacje](../msbuild/msbuild-transforms.md).
 
-## <a name="specify-inputs-and-outputs"></a>Specify inputs and outputs
-A target can be built incrementally if the inputs and outputs are specified in the project file.
+## <a name="specify-inputs-and-outputs"></a>Określanie danych wejściowych i wyjściowych
+Element docelowy można skompilować przyrostowo, jeśli dane wejściowe i wyjściowe są określone w pliku projektu.
 
-#### <a name="to-specify-inputs-and-outputs-for-a-target"></a>To specify inputs and outputs for a target
+#### <a name="to-specify-inputs-and-outputs-for-a-target"></a>Aby określić dane wejściowe i wyjściowe dla elementu docelowego
 
-- Use the `Inputs` and `Outputs` attributes of the `Target` element. Na przykład:
+- Użyj `Inputs` i `Outputs` atrybutów elementu `Target`. Na przykład:
 
   ```xml
   <Target Name="Build"
@@ -35,7 +35,7 @@ A target can be built incrementally if the inputs and outputs are specified in t
       Outputs="hello.exe">
   ```
 
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] can compare the timestamps of the input files with the timestamps of the output files and determine whether to skip, build, or partially rebuild a target. In the following example, if any file in the `@(CSFile)` item list is newer than the *hello.exe* file, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] will run the target; otherwise it will be skipped:
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] można porównać sygnatury czasowe plików wejściowych z sygnaturami czasowymi plików wyjściowych i określić, czy pominąć, skompilować lub częściowo ponownie skompilować element docelowy. W poniższym przykładzie, jeśli dowolny plik na liście elementów `@(CSFile)` jest nowszy niż plik *Hello. exe* , [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] uruchomi obiekt docelowy; w przeciwnym razie zostanie pominięty:
 
 ```xml
 <Target Name="Build"
@@ -48,26 +48,26 @@ A target can be built incrementally if the inputs and outputs are specified in t
 </Target>
 ```
 
-When inputs and outputs are specified in a target, either each output can map to only one input or there can be no direct mapping between the outputs and inputs. In the previous [Csc task](../msbuild/csc-task.md), for example, the output, *hello.exe*, cannot be mapped to any single input - it depends on all of them.
+Gdy dane wejściowe i wyjściowe są określone w elemencie docelowym, wszystkie dane wyjściowe można mapować tylko na jedną wartość wejściową lub nie może istnieć bezpośrednie mapowanie między wyjściem i danymi wejściowymi. W poprzednim [zadaniu CSC](../msbuild/csc-task.md), na przykład danych wyjściowych, *Hello. exe*, nie można zamapować na żadne pojedyncze dane wejściowe — zależy to od wszystkich z nich.
 
 > [!NOTE]
-> A target in which there is no direct mapping between the inputs and outputs will always build more often than a target in which each output can map to only one input because [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] cannot determine which outputs need to be rebuilt if some of the inputs have changed.
+> Obiekt docelowy, w którym nie istnieje bezpośrednie mapowanie między danymi wejściowymi i wyjściowymi, zawsze kompiluje się częściej niż obiekt docelowy, w którym każde dane wyjściowe można mapować tylko na jedno wejście, ponieważ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] nie może określić, które wyjścia muszą zostać odbudowane, jeśli niektóre dane wejściowe uległy zmianie.
 
-Tasks in which you can identify a direct mapping between the outputs and inputs, such as the [LC task](../msbuild/lc-task.md), are most suitable for incremental builds, unlike tasks such as [Csc](../msbuild/csc-task.md) and [Vbc](../msbuild/vbc-task.md), which produce one output assembly from a number of inputs.
+Zadania, w których można zidentyfikować bezpośrednie mapowanie między wynikami i danymi wejściowymi, takie jak [zadanie LC](../msbuild/lc-task.md), są najbardziej odpowiednie dla kompilacji przyrostowych, w przeciwieństwie do zadań, takich jak [CSC](../msbuild/csc-task.md) i [VBC](../msbuild/vbc-task.md), które tworzą jeden zestaw wyjściowy z wielu danych wejściowych.
 
 ## <a name="example"></a>Przykład
-The following example uses a project that builds Help files for a hypothetical Help system. The project works by converting source *.txt* files into intermediate *.content* files, which then are combined with XML metadata files to produce the final *.help* file used by the Help system. The project uses the following hypothetical tasks:
+W poniższym przykładzie używa się projektu, który kompiluje pliki pomocy dla hipotetycznego systemu pomocy. Projekt działa przez konwertowanie źródłowych plików *txt* na pośrednie pliki *zawartości* , które następnie są łączone z plikami metadanych XML w celu utworzenia końcowego pliku *pomocy* używanego przez system pomocy. Projekt używa następujących hipotetycznych zadań:
 
-- `GenerateContentFiles`: Converts *.txt* files into *.content* files.
+- `GenerateContentFiles`: konwertuje pliki *txt* na pliki *. Content* .
 
-- `BuildHelp`: Combines *.content* files and XML metadata files to build the final *.help* file.
+- `BuildHelp`: łączy pliki *zawartości* i pliki metadanych XML, aby skompilować końcowy plik *pomocy* .
 
-The project uses transforms to create a one-to-one mapping between inputs and outputs in the `GenerateContentFiles` task. For more information, see [Transforms](../msbuild/msbuild-transforms.md). Also, the `Output` element is set to automatically use the outputs from the `GenerateContentFiles` task as the inputs for the `BuildHelp` task.
+Projekt używa transformacji, aby utworzyć mapowanie jeden do jednego między danymi wejściowymi i wyjściowymi w ramach zadania `GenerateContentFiles`. Aby uzyskać więcej informacji, zobacz [transformacje](../msbuild/msbuild-transforms.md). Ponadto element `Output` jest ustawiony tak, aby automatycznie używał danych wyjściowych z zadania `GenerateContentFiles` jako dane wejściowe dla zadania `BuildHelp`.
 
-This project file contains both the `Convert` and `Build` targets. The `GenerateContentFiles` and `BuildHelp` tasks are placed in the `Convert` and `Build` targets respectively so that each target can be built incrementally. By using the `Output` element, the outputs of the `GenerateContentFiles` task are placed in the `ContentFile` item list, where they can be used as inputs for the `BuildHelp` task. Using the `Output` element in this way automatically provides the outputs from one task as the inputs for another task so that you do not have to list the individual items or item lists manually in each task.
+Ten plik projektu zawiera zarówno elementy docelowe `Convert`, jak i `Build`. `GenerateContentFiles` i `BuildHelp` zadania są umieszczane odpowiednio w `Convert` i `Build` elementów docelowych, dzięki czemu każdy obiekt docelowy może być zbudowany przyrostowo. Za pomocą elementu `Output` dane wyjściowe zadania `GenerateContentFiles` są umieszczane na liście `ContentFile` elementów, gdzie mogą być używane jako dane wejściowe dla zadania `BuildHelp`. Użycie elementu `Output` w ten sposób automatycznie udostępnia dane wyjściowe z jednego zadania jako dane wejściowe dla innego zadania, dzięki czemu nie trzeba ręcznie wyświetlać poszczególnych elementów lub list elementów w każdym zadaniu.
 
 > [!NOTE]
-> Although the `GenerateContentFiles` target can build incrementally, all outputs from that target always are required as inputs for the `BuildHelp` target. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] automatically provides all the outputs from one target as inputs for another target when you use the `Output` element.
+> Chociaż element docelowy `GenerateContentFiles` może kompilować przyrostowo, wszystkie dane wyjściowe z tego obiektu docelowego zawsze są wymagane jako wejścia dla elementu docelowego `BuildHelp`. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] automatycznie udostępnia wszystkie dane wyjściowe z jednego obiektu docelowego jako dane wejściowe dla innego obiektu docelowego przy użyciu elementu `Output`.
 
 ```xml
 <Project DefaultTargets="Build"
@@ -103,7 +103,7 @@ This project file contains both the `Convert` and `Build` targets. The `Generate
 
 ## <a name="see-also"></a>Zobacz także
 - [Docelowe elementy](../msbuild/msbuild-targets.md)
-- [Target element (MSBuild)](../msbuild/target-element-msbuild.md)
+- [Target — element (MSBuild)](../msbuild/target-element-msbuild.md)
 - [Przekształcenia](../msbuild/msbuild-transforms.md)
-- [Csc task](../msbuild/csc-task.md)
-- [Vbc task](../msbuild/vbc-task.md)
+- [CSC — zadanie](../msbuild/csc-task.md)
+- [VBC, zadanie](../msbuild/vbc-task.md)

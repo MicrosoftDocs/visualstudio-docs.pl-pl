@@ -178,8 +178,8 @@ Aby zainstalować aplikację powłoki, należy wykonać następujące czynności
   
     |*ProjectName*. reg|ApplicationRegisty.wxs|  
     |-----------------------|----------------------------|  
-    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}]<br /><br /> @ = "PhotoStudio DTE"|\<RegistryKey ID = "DteClsidRegKey" root = "HKCR" Key = "$ (var. DteClsidRegKey) "Action =" createAndRemoveOnUninstall "><br /><br /> \<RegistryValue Type = "String" name = "@" value = "$ (var. ShortProductName) obiekt DTE "/><br /><br /> \</RegistryKey >|  
-    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}\LocalServer32]<br /><br /> @ = "$RootFolder $ \PhotoStudio.exe"|\<RegistryKey Id='DteLocSrv32RegKey' Root='HKCR' Key='$(var.DteClsidRegKey)\LocalServer32' Action='createAndRemoveOnUninstall'><br /><br /> \<RegistryValue Type = "String" name = "@" value = "[INSTALLDIR] $ (var. ShortProductName). exe "/><br /><br /> \</RegistryKey >|  
+    |[HKEY_CLASSES_ROOT \CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}]<br /><br /> @ = "PhotoStudio DTE"|\<RegistryKey ID = "DteClsidRegKey" root = "HKCR" Key = "$ (var. DteClsidRegKey) "Action =" createAndRemoveOnUninstall "><br /><br /> \<RegistryValue Type = "String" name = "@" value = "$ (var. ShortProductName) obiekt DTE "/><br /><br /> \</RegistryKey >|  
+    |[HKEY_CLASSES_ROOT \CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6} \LocalServer32]<br /><br /> @ = "$RootFolder $ \PhotoStudio.exe"|\<RegistryKey ID = "DteLocSrv32RegKey" root = "HKCR" Key = "$ (var. DteClsidRegKey) \LocalServer32 "Action =" createAndRemoveOnUninstall "><br /><br /> \<RegistryValue Type = "String" name = "@" value = "[INSTALLDIR] $ (var. ShortProductName). exe "/><br /><br /> \</RegistryKey >|  
   
      W tym przykładzie var. DteClsidRegKey jest rozpoznawany jako klucz rejestru w górnym wierszu. Var. ShortProductName jest rozpoznawana jako `PhotoStudio`.  
   

@@ -33,7 +33,7 @@ Platforma Xamarin umożliwia tworzenie wieloplatformowych aplikacji mobilnych pr
   
  Komentarz ogólny: wszystkie funkcje planowania i śledzenia są niezależne od typu projektu i języków kodowania.  
   
-|Cecha|Obsługiwane przez platformę Xamarin|Dodatkowe komentarze|  
+|Funkcja|Obsługiwane przez platformę Xamarin|Dodatkowe komentarze|  
 |-------------|----------------------------|-------------------------|  
 |Zarządzanie zaległościami i przebiegami|Tak||  
 |Śledzenie pracy|Tak||  
@@ -46,7 +46,7 @@ Platforma Xamarin umożliwia tworzenie wieloplatformowych aplikacji mobilnych pr
   
  Funkcje projektowania są niezależne od języka kodowania lub działają w językach .NET, takich C#jak. Zobacz [role architektury i diagramy modelowania w opracowywaniu oprogramowania,](../modeling/scenario-change-your-design-using-visualization-and-modeling.md#ModelingDiagramsTools) aby poznać aspekty związane z kodem.  
   
-|Cecha|Obsługiwane przez platformę Xamarin|Dodatkowe komentarze|  
+|Funkcja|Obsługiwane przez platformę Xamarin|Dodatkowe komentarze|  
 |-------------|----------------------------|-------------------------|  
 |Diagramy sekwencji|Tak||  
 |Wykresy zależności|Tak||  
@@ -59,7 +59,7 @@ Platforma Xamarin umożliwia tworzenie wieloplatformowych aplikacji mobilnych pr
   
 ## <a name="code"></a>Kod  
   
-|Cecha|Obsługiwane przez platformę Xamarin|Dodatkowe komentarze|  
+|Funkcja|Obsługiwane przez platformę Xamarin|Dodatkowe komentarze|  
 |-------------|----------------------------|-------------------------|  
 |[Użyj Kontrola wersji serwera Team Foundation](https://msdn.microsoft.com/library/1d629052-c65d-4c5d-81eb-eaa4413fe285) lub Visual Studio Team Services|Tak||  
 |[Wprowadzenie do usługi Git w usłudze Team Services](https://msdn.microsoft.com/library/32f46ecd-1b03-4ef0-a9c4-8a120da2b03f)|Tak||  
@@ -70,7 +70,7 @@ Platforma Xamarin umożliwia tworzenie wieloplatformowych aplikacji mobilnych pr
 ## <a name="build"></a>Kompilacja  
  Link odwołania:  **[kompilacja](/azure/devops/pipelines/index)**  
   
-|Cecha|Obsługiwane przez platformę Xamarin|Dodatkowe komentarze|  
+|Funkcja|Obsługiwane przez platformę Xamarin|Dodatkowe komentarze|  
 |-------------|----------------------------|-------------------------|  
 |Lokalny serwer TFS|Tak|Maszyny kompilacji muszą mieć zainstalowany program Xamarin i mogą być połączone z komputerem OSX w celu kompilowania aplikacji dla systemu iOS. Zobacz [Konfigurowanie programu TFS dla platformy Xamarin](https://docs.microsoft.com/azure/devops/repos/tfvc/overview?view=azure-devops) (witryna sieci Web platformy Xamarin)|  
 |Lokalny serwer kompilacji połączony z Visual Studio Team Services|Tak|Aby uzyskać instrukcje, zobacz [serwer kompilacji](https://msdn.microsoft.com/library/2d258a0a-f178-4e93-9da1-eba61151af3c) .|  
@@ -81,19 +81,19 @@ Platforma Xamarin umożliwia tworzenie wieloplatformowych aplikacji mobilnych pr
 ## <a name="testing"></a>Testowanie  
  Link do odwołania:  **[testowanie aplikacji](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)**  
   
-|Cecha|Obsługiwane przez platformę Xamarin|Dodatkowe komentarze|  
+|Funkcja|Obsługiwane przez platformę Xamarin|Dodatkowe komentarze|  
 |-------------|----------------------------|-------------------------|  
 |Planowanie testów, tworzenie przypadków testowych i organizowanie zestawów testów|Tak||  
 |Testowanie ręczne|Tak||  
 |Test Manager (testy rejestrowania i odtwarzania)|Tak|Urządzenia z systemem Windows i emulatory systemu Android tylko z programu Visual Studio. Nagrywanie dla wszystkich urządzeń jest możliwe przy użyciu [rejestratora testów platformy Xamarin](https://www.xamarin.com/test-cloud/recorder).|  
-|Pokrycie kodu|n/d||  
+|Pokrycie kodu|Nie dotyczy||  
 |[Testowanie jednostek kodu](../test/unit-test-your-code.md)|Tak|W przypadku urządzeń docelowych z systemami Windows i Android można używać wbudowanych narzędzi MSTest. Aby uruchomić testy jednostkowe w systemach Windows, Android i iOS, zalecamy NUnit. Zobacz [Konfigurowanie programu TFS dla platformy Xamarin](https://docs.microsoft.com/azure/devops/repos/tfvc/overview?view=azure-devops) (witryna sieci Web platformy Xamarin).|  
 |[Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)|Tylko Windows|Rejestrator testu interfejsu użytkownika programu Visual Studio jest tylko w systemie Windows. Dla wszystkich platform zobacz [Xamarin test Recorder](https://www.xamarin.com/test-cloud/recorder).|  
   
 ## <a name="improve-code-quality"></a>Poprawianie jakości kodu  
  Link odwołania:  **[poprawianie jakości kodu](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
   
-|Cecha|Obsługiwane przez platformę Xamarin|Dodatkowe komentarze|  
+|Funkcja|Obsługiwane przez platformę Xamarin|Dodatkowe komentarze|  
 |-------------|----------------------------|-------------------------|  
 |[Analiza jakości zarządzanego kodu](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|Tak||  
 |[Znajdowanie duplikatu kodu przy użyciu funkcji wykrywania klonowania kodu](https://msdn.microsoft.com/library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|Tak||  
@@ -104,7 +104,7 @@ Platforma Xamarin umożliwia tworzenie wieloplatformowych aplikacji mobilnych pr
 ## <a name="release-management"></a>Program Release management  
  Link odwołania:  **[Automatyzowanie wdrożeń przy użyciu Release Management](https://msdn.microsoft.com/library/vs/alm/release/overview)**  
   
-|Cecha|Obsługiwane przez platformę Xamarin|Dodatkowe komentarze|  
+|Funkcja|Obsługiwane przez platformę Xamarin|Dodatkowe komentarze|  
 |-------------|----------------------------|-------------------------|  
 |Zarządzanie procesami wydania|Tak||  
 |Wdrażanie na serwerach do ładowania bezpośredniego za pośrednictwem skryptów|Tak||  
@@ -113,6 +113,6 @@ Platforma Xamarin umożliwia tworzenie wieloplatformowych aplikacji mobilnych pr
 ## <a name="monitor-with-hockeyapp"></a>Monitoruj przy użyciu HockeyApp  
  Link odwołania:  **[monitor z HockeyApp](https://www.hockeyapp.net/features/)**  
   
-|Cecha|Obsługiwane przez platformę Xamarin|Dodatkowe komentarze|  
+|Funkcja|Obsługiwane przez platformę Xamarin|Dodatkowe komentarze|  
 |-------------|----------------------------|-------------------------|  
 |Rozkład awarii, dane telemetryczne i dystrybucja wersji beta|Tak||

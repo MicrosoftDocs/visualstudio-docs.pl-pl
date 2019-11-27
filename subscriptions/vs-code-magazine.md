@@ -6,12 +6,12 @@ manager: lank
 ms.date: 10/13/2019
 ms.topic: conceptual
 description: Dowiedz się więcej na temat korzyści z usługi CODE Magazine dostępnych w ramach subskrypcji programu Visual Studio.
-ms.openlocfilehash: 6f120bae88a7d613873a9d350e411842904e700e
-ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
+ms.openlocfilehash: 341e21d3411afdd8402d223b455f60bcf39a4a40
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099591"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491652"
 ---
 # <a name="code-magazine-included-in-visual-studio-subscriptions"></a>Magazyn kodu uwzględniony w subskrypcjach programu Visual Studio
 
@@ -39,7 +39,7 @@ Proces konfigurowania subskrypcji magazynu kodu jest prosty.  Wykonaj następuj�
       > ![Szczegóły subskrypcji magazynu kodu](_img/vs-code-magazine/vs-code-magazine-details.png "Szczegóły i cena subskrypcji")
 6. Następnie musisz podać informacje o subskrybencie i adresie dostawy.  (Adres dostawy jest wymagany nawet w przypadku subskrypcji cyfrowych, ponieważ obsługuje ona realizację, wybór oferty i procesy dostępu cyfrowego).
 7. Jeśli masz na żywo poza Stany Zjednoczone i wybierzesz opcję otrzymania wydrukowanej subskrypcji magazynu, może zostać wyświetlony monit o podanie adresu rozliczeniowego i informacji o płatności w celu pokrycia kosztów wysyłki. 
-8. Możesz wyrazić zgodę na kod HTML newletter, klikając pole wyboru.
+8. Możesz wyrazić zgodę na kod biuletynu HTML, klikając pole wyboru.
    > [!div class="mx-imgBorder"]
    > ![Informacje o subskrybencie magazynu kodu](_img/vs-code-magazine/vs-code-magazine-subscriber-info.png "Informacje o subskrybencie i adres dostawy")
 9. Kliknij pozycję **Umieść zamówienie** , aby zakończyć swoją subskrypcję.  
@@ -50,7 +50,7 @@ Po zakończeniu zamówienia subskrypcji zobaczysz stronę potwierdzenia zawieraj
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (standardowa)   | LICENCJONOWANie, Azure, sprzedaż detaliczna, wybrane NFR<sup>1</sup> | Dostępne       |  Nie          |
 | Visual Studio Enterprise z usługą GitHub Enterprise   | Licencja| Dostępne       |  Nie          |
-| Visual Studio Professional (standardowa) | LICENCJONOWANie, Azure, sprzedaż detaliczna                                       | Dostępne                                                            |  Nie          |
+| Visual Studio Professional (standardowa) | VL, Azure, Retail                                       | Dostępne                                                            |  Nie          |
 | Visual Studio Professional z usługą GitHub Enterprise | Licencja                                      | Dostępne                                                            |  Nie          |
 | Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Dostępne                                             |  Nie          |
 | Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | Dostępne                                              |  Nie          |
@@ -75,7 +75,7 @@ Odp.: Magazyn kodu zbiera swój adres, bez względu na to, czy subskrypcja dotyc
 - Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
 - Masz pytanie dotyczące środowiska IDE programu Visual Studio, Azure DevOps Services lub innych produktów lub usług Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="next-steps"></a>Następne kroki
+## <a name="next-steps"></a>Kolejne kroki
 Zapoznaj się z pozostałymi korzyściami z subskrypcji. Odwiedź [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 Jeśli nie aktywowano jeszcze korzyści z korzystania z usługi Azure DevTest, która jest oferowana w ramach subskrypcji, odwiedź stronę [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) i kliknij kafelek platformy Azure w kategorii narzędzia, aby skonfigurować subskrypcję platformy Azure i wykorzystać swoje środki na korzystanie z platformy Azure DevTest.

@@ -32,7 +32,7 @@ Publish-WebApplicationWebSite
 -Verbose
 ```
 
-## <a name="configuration"></a>Konfiguracja
+## <a name="configuration"></a>Konfigurowanie
 Ścieżka do pliku konfiguracji JSON opisującego Szczegóły wdrożenia.
 
 | Parametr | Wartość domyślna |
@@ -123,5 +123,5 @@ Plik konfiguracji JSON określa szczegóły dotyczące tego, co ma zostać wdro�
 
 Plik konfiguracji JSON można edytować w celu zmiany wdrożenia. Sekcja witryny sieci Web jest wymagana, ale sekcja bazy danych jest opcjonalna.
 
-## <a name="next-steps"></a>Następne kroki
+## <a name="next-steps"></a>Kolejne kroki
 Aby uzyskać więcej informacji, zobacz [Publish-WebApplicationVM (skrypt programu Windows PowerShell).](vs-azure-tools-publish-webapplicationvm.md)

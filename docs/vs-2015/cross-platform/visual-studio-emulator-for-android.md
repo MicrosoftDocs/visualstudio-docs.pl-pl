@@ -103,7 +103,7 @@ Visual Studio Emulator for Android to aplikacja klasyczna, która emuluje urząd
   
 - Jasność. Zmiana poziomu jasności emulatora nie wpłynie wizualnie na wygląd urządzenia na ekranie.  
   
-## <a name="Support"></a> Zasoby pomocy technicznej  
+## <a name="Support"></a>Zasoby pomocy technicznej  
  Jeśli komputer-host spełnia wymagania systemowe i wystąpi problem, nie są uwzględnione w tym przewodniku rozwiązywania problemów:  
   
 - Zadawaj pytanie dotyczące StackOverflow przy użyciu [emulatora systemu Android](https://stackoverflow.com/questions/tagged/android-emulator) i programu Visual Studio.  

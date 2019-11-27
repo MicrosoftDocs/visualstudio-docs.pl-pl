@@ -61,7 +61,7 @@ Błąd uwierzytelniania uniemożliwił uwierzytelnienie użytkownika, który za�
   
 10. Kliknij przycisk **OK** , aby zamknąć okno dialogowe **metody uwierzytelniania** .  
   
-11. Kliknij przycisk **OK** , aby zamknąć okno dialogowe **Właściwości** .  
+11. Kliknij przycisk **OK**, aby zamknąć okno dialogowe **Właściwości**.  
   
 12. Zamknij okno **Internet Information Services** .  
   

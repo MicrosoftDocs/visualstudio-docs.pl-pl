@@ -19,7 +19,7 @@ ms.lasthandoff: 11/21/2019
 ms.locfileid: "74290994"
 ---
 # <a name="constructing-filter-strings-for-the-table-designer"></a>Konstruowanie ciągów filtrów dla projektanta tabel
-## <a name="overview"></a>Omówienie
+## <a name="overview"></a>Przegląd
 Aby filtrować dane w tabeli platformy Azure, która jest wyświetlana w **Projektancie tabel**programu Visual Studio, należy utworzyć ciąg filtru i wprowadzić go w polu filtru. Składnia ciągu filtru jest definiowana przez Usługi danych programu WCF i jest podobna do klauzuli SQL WHERE, ale jest wysyłana do Table service za pośrednictwem żądania HTTP. **Projektant tabel** obsługuje odpowiednie kodowanie, dlatego w celu filtrowania według żądanej wartości właściwości należy wprowadzić tylko nazwę właściwości, operator porównania, wartość kryteriów i opcjonalnie operator logiczny w polu filtru. Nie trzeba dołączać opcji zapytania $filter tak samo, jak w przypadku konstruowania adresu URL w celu zbadania tabeli za pośrednictwem [dokumentacji interfejsu API REST usług Storage](https://go.microsoft.com/fwlink/p/?LinkId=400447).
 
 Usługi danych programu WCF opierają się na [protokole Open Data Protocol](https://go.microsoft.com/fwlink/p/?LinkId=214805) (OData). Aby uzyskać szczegółowe informacje na temat opcji filtrowania systemu kwerend ( **$Filter**), zobacz [specyfikację identyfikatorów URI usługi OData](https://go.microsoft.com/fwlink/p/?LinkId=214806).
@@ -35,7 +35,7 @@ Następujące operatory logiczne są obsługiwane dla wszystkich typów właści
 | lt |Mniejsze niż |Cena lt 20 |
 | urządzeń |Mniejsze niż lub równe |Cena Le 100 |
 | ne |Nie równa się |Miasto (Londyn) |
-| and |Oraz |Cena Le 200 i cena gt 3,5 |
+| i |Oraz |Cena Le 200 i cena gt 3,5 |
 | lub |Lub |Cena Le 3,5 lub cena gt 200 |
 | not |nie |nie IsAvailable |
 

@@ -28,7 +28,7 @@ Zmieniając te opcje, można zmienić zachowanie związane z technologią Intell
  Te funkcje są dostępne w instalacji programu Visual Studio 2015 Update 1 RC.
 
 > [!NOTE]
-> Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Zobacz [Dostosowywanie ustawień środowiska deweloperskiego w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Zobacz [Dostosowywanie ustawień programistycznych w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="browsingnavigation"></a>Przeglądanie/Nawigacja
  **Włącz nowy aparat bazy danych** Powinno to spowodować automatyczną przyspieszenie wypełniania bazy danych i szybsze wykonywanie wszystkich operacji w bazie danych (bez dokładności) dla operacji takich jak **Przejdź do definicji** i **Znajdź wszystkie odwołania**. (Po prostu Zamknij i ponownie otwórz rozwiązanie, aby zastosować zmiany; nie musisz ponownie uruchamiać programu Visual Studio).

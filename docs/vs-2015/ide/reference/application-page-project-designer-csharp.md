@@ -70,7 +70,7 @@ Użyj strony **aplikacji** **projektanta projektu** , aby określić ustawienia 
 
  Aby uzyskać więcej informacji, zobacz [/Main (C# opcje kompilatora)](https://msdn.microsoft.com/library/975cf4d5-36ac-4530-826c-4aad0c7f2049) . Aby programowo uzyskać dostęp do tej właściwości, zobacz <xref:VSLangProj.ProjectProperties.StartupObject%2A>.
 
-## <a name="resources"></a>Resources
+## <a name="resources"></a>Zasoby
  Poniższe opcje umożliwiają skonfigurowanie ustawień ogólnych dla aplikacji.
 
  **Ikona i manifest** Domyślnie ten przycisk radiowy jest zaznaczony, a **ikona** i opcje **manifestu** są włączone. Dzięki temu można wybrać własną ikonę lub wybrać różne opcje generowania manifestu. Ten przycisk radiowy należy pozostawić, chyba że podajesz plik zasobów dla projektu.

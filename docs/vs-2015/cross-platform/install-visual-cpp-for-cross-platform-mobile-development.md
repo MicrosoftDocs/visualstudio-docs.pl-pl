@@ -29,7 +29,7 @@ Wizualizacja C++ dla wieloplatformowego opracowywania aplikacji mobilnych (https
  [Zainstaluj narzędzia dla systemu iOS](#InstallForiOS)   
  [Ręczne instalowanie lub aktualizowanie zależności](#ThirdParty)  
   
-## <a name="Requirements"></a> Wymagania  
+## <a name="Requirements"></a>Wymagania  
   
 - Wymagania dotyczące instalacji znajdują się w temacie [wymagania systemowe programu Visual Studio 2015](https://www.visualstudio.com/visual-studio-2015-system-requirements-vs).  
   

@@ -25,7 +25,7 @@ Podczas tworzenia projektu platformy Azure w zestawie Azure SDK 2,3 lub nowszym 
 
 1. Utwórz lub Otwórz projekt usługi w chmurze platformy Azure w programie Visual Studio.
 
-1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt i wybierz z menu kontekstowego **właściwości**.
+1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt, a następnie z menu kontekstowego wybierz polecenie **Właściwości**.
 
 1. Na stronie właściwości projektu wybierz kartę **Sieć Web** .
 
@@ -49,5 +49,5 @@ Następujące problemy są znanymi ograniczeniami emulatora Express:
 - Nie można uzyskać dostępu do numerów portów poniżej 1000. Jeśli używasz dostawcy uwierzytelniania, który zwykle korzysta z portu poniżej 1000, może zajść potrzeba zmiany tej wartości na numer portu, który znajduje się powyżej 1000.
 - Wszelkie ograniczenia dotyczące emulatora obliczeń platformy Azure mają zastosowanie również do emulatora Express. Na przykład nie można mieć więcej niż 50 wystąpień ról na wdrożenie. Aby uzyskać więcej informacji na temat emulatora obliczeń platformy Azure, zobacz [Uruchamianie aplikacji platformy Azure w emulatorze obliczeniowym](https://go.microsoft.com/fwlink/p/?LinkId=623050).
 
-## <a name="next-steps"></a>Następne kroki
+## <a name="next-steps"></a>Kolejne kroki
 [Debugowanie usług Azure Cloud Services](vs-azure-tools-debugging-cloud-services-overview.md)

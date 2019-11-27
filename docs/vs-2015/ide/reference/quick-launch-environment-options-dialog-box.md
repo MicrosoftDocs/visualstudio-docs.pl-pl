@@ -36,16 +36,16 @@ Funkcja **szybkiego uruchamiania** umożliwia szybkie wyszukiwanie i wykonywanie
 
 |Kategoria|Skrót|Opis skrótu|
 |--------------|--------------|--------------------------|
-|Ostatnio używane|@mru<br /><br /> Na przykład: `@mru font`|Wyświetla maksymalnie pięć elementów, które były **ostatnio używane**.|
-|Menu|@menu<br /><br /> Na przykład: `@menu font`|Ogranicza wyszukiwanie do elementów menu.|
-|Opcje|@opt<br /><br /> Na przykład: `@opt font`|Ogranicza wyszukiwanie do ustawień w oknie dialogowym **Opcje** .|
-|Dokumenty|@doc<br /><br /> Na przykład: `@doc font`|Ogranicza wyszukiwanie do nazw plików i ścieżek otwartych dokumentów dla kryteriów wyszukiwania, ale nie przeszukuje tekstu wewnątrz samych plików.|
+|Ostatnio używane|@mru<br /><br /> Na przykład:`@mru font`|Wyświetla maksymalnie pięć elementów, które były **ostatnio używane**.|
+|Menu|@menu<br /><br /> Na przykład:`@menu font`|Ogranicza wyszukiwanie do elementów menu.|
+|Opcje|@opt<br /><br /> Na przykład:`@opt font`|Ogranicza wyszukiwanie do ustawień w oknie dialogowym **Opcje** .|
+|Dokumenty|@doc<br /><br /> Na przykład:`@doc font`|Ogranicza wyszukiwanie do nazw plików i ścieżek otwartych dokumentów dla kryteriów wyszukiwania, ale nie przeszukuje tekstu wewnątrz samych plików.|
 
 > [!NOTE]
 > Można zmienić klawisze skrótów na stronie **Ogólne**, **Klawiatura** w oknie dialogowym **Opcje** .
 
 ## <a name="show-previous-results"></a>Pokaż poprzednie wyniki
- Wprowadzony termin wyszukiwania nie jest domyślnie utrwalany między sesjami wyszukiwania. Ciąg wyszukiwania jest wyczyszczony, jeśli szukasz terminu, Przenieś kursor poza obszar **szybkiego uruchamiania** , a następnie wróć. Aby zachować wyniki wyszukiwania, przejdź do okna dialogowego **Opcje** , wybierz pozycję **Szybkie uruchamianie**, a następnie wybierz pozycję **Pokaż wyniki wyszukiwania z poprzedniego wyszukiwania, gdy szybkie uruchamianie jest aktywowane.** pole wyboru. Przy następnym przeszukiwaniu pozostaw obszar szybkie uruchamianie i Wróć, szybkie uruchamianie spowoduje zachowanie ostatniego użytego terminu wyszukiwania, a także wyświetlenie wyników wyszukiwania.
+ Wprowadzony termin wyszukiwania nie jest domyślnie utrwalany między sesjami wyszukiwania. Ciąg wyszukiwania jest wyczyszczony, jeśli szukasz terminu, Przenieś kursor poza obszar **szybkiego uruchamiania** , a następnie wróć. Aby zachować wyniki wyszukiwania, przejdź do okna dialogowego **Opcje** , wybierz pozycję **Szybkie uruchamianie**, a następnie wybierz pozycję **Pokaż wyniki wyszukiwania z poprzedniego wyszukiwania, gdy szybkie uruchamianie jest aktywowane.** . Przy następnym przeszukiwaniu pozostaw obszar szybkie uruchamianie i Wróć, szybkie uruchamianie spowoduje zachowanie ostatniego użytego terminu wyszukiwania, a także wyświetlenie wyników wyszukiwania.
 
  Najnowsze porady i wskazówki dotyczące korzystania z funkcji **szybkiego uruchamiania**można znaleźć [na blogu programu Visual Studio](https://go.microsoft.com/fwlink/?LinkId=236054).
 

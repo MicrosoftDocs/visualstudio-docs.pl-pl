@@ -57,7 +57,7 @@ Możesz poświęcać mniej czasu na Debugowanie aplikacji, gdy używasz IntelliT
   
 |||  
 |-|-|  
-|**Obsługiwane**|-Visual Basic i aplikacje C# wizualne używające .NET Framework 2,0 lub nowszych wersji.<br />     Można debugować większość aplikacji, w tym ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 i 64-bitowe aplikacje.<br />     Aby debugować aplikacje programu SharePoint za pomocą IntelliTrace, zobacz [Przewodnik: debugowanie aplikacji SharePoint przy użyciu IntelliTrace](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4).<br />     Aby debugować Microsoft Azure aplikacje za pomocą IntelliTrace, zobacz [debugowanie opublikowanej usługi w chmurze za pomocą usługi IntelliTrace i programu Visual Studio](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md).|  
+|**Obsługiwał**|-Visual Basic i aplikacje C# wizualne używające .NET Framework 2,0 lub nowszych wersji.<br />     Można debugować większość aplikacji, w tym ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 i 64-bitowe aplikacje.<br />     Aby debugować aplikacje programu SharePoint za pomocą IntelliTrace, zobacz [Przewodnik: debugowanie aplikacji SharePoint przy użyciu IntelliTrace](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4).<br />     Aby debugować Microsoft Azure aplikacje za pomocą IntelliTrace, zobacz [debugowanie opublikowanej usługi w chmurze za pomocą usługi IntelliTrace i programu Visual Studio](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md).|  
 |**Ograniczona pomoc techniczna**|- F# aplikacje na zasadzie eksperymentalnej<br />— Aplikacje ze sklepu Windows obsługiwane tylko dla zdarzeń|  
 |**Nieobsługiwane**|- C++, inne języki i skrypt<br />— Usługi systemu Windows, Silverlight, Xbox lub [!INCLUDE[winmobile](../includes/winmobile-md.md)] aplikacje|  
   
@@ -95,7 +95,7 @@ Możesz poświęcać mniej czasu na Debugowanie aplikacji, gdy używasz IntelliT
   
 - Wystąpił błąd lub awaria w wdrożonej aplikacji.  
   
-   W przypadku aplikacji opartych na Microsoft Azure można skonfigurować zbieranie danych IntelliTrace przed opublikowaniem aplikacji. Gdy aplikacja jest uruchomiona, IntelliTrace zapisuje dane w pliku. iTrace. Zobacz [debugowanie opublikowanych usług w chmurze za pomocą IntelliTrace i programu Visual Studio](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md).  
+   W przypadku aplikacji opartych na Microsoft Azure można skonfigurować zbieranie danych IntelliTrace przed opublikowaniem aplikacji. Gdy aplikacja jest uruchomiona, IntelliTrace zapisuje dane w pliku. iTrace. Zobacz [debugowanie opublikowanej usługi w chmurze za pomocą IntelliTrace i programu Visual Studio](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md).  
   
    W przypadku aplikacji internetowych ASP.NET obsługiwanych przez usługi IIS 7.0, 7.5 i 8.0 oraz aplikacji SharePoint 2010 lub SharePoint 2013 możesz używać programu Microsoft Monitoring Agent, samego lub w połączeniu z System Center 2012, aby zapisywać dane IntelliTrace w pliku iTrace.  
   
@@ -186,7 +186,7 @@ Możesz poświęcać mniej czasu na Debugowanie aplikacji, gdy używasz IntelliT
  [Korzystanie z zapisanych danych funkcji IntelliTrace](../debugger/using-saved-intellitrace-data.md)  
   
 ### <a name="blogs"></a>Blogi  
- [Visual Studio ALM + Team Foundation Server](https://go.microsoft.com/fwlink/?LinkID=201340)  
+ [Visual Studio ALM i Team Foundation Server](https://go.microsoft.com/fwlink/?LinkID=201340)  
   
 ### <a name="forums"></a>Fora  
  [Diagnostyka programu Visual Studio](https://go.microsoft.com/fwlink/?LinkId=262263)

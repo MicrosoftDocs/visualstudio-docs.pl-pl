@@ -41,5 +41,5 @@ Jeśli masz maszyny wirtualne hostowane przez platformę Azure, możesz uzyskać
    | --- | --- |
    | Nazwa |Identyfikator punktu końcowego. |
    | Port prywatny |Port wewnętrznego dostępu do sieci dla aplikacji. |
-   | Protocol |Protokół, który jest stosowany przez warstwę transportu dla tego punktu końcowego, TCP lub UDP. |
+   | Protokół |Protokół, który jest stosowany przez warstwę transportu dla tego punktu końcowego, TCP lub UDP. |
    | Port publiczny |Port używany do publicznego dostępu do aplikacji. |

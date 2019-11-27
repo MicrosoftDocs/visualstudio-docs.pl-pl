@@ -69,7 +69,7 @@ W programie Visual Studio można zbierać dane diagnostyczne dla ról działają
 ### <a name="to-turn-on-diagnostics-in-visual-studio-before-deployment"></a>Aby włączyć diagnostykę w programie Visual Studio przed wdrożeniem
 
 1. W menu skrótów dla roli wybierz pozycję **Właściwości**. W oknie dialogowym **Właściwości** roli wybierz kartę **Konfiguracja** .
-2. W **diagnostyki** sekcji, upewnij się, że **Włącz diagnostykę** pole wyboru jest zaznaczone.
+2. W sekcji **Diagnostyka** upewnij się, że zaznaczone jest pole wyboru **Włącz diagnostykę** .
 
     ![Dostęp do opcji Włącz diagnostykę](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796660.png)
 3. Aby określić konto magazynu dla danych diagnostycznych, wybierz przycisk wielokropka (...).
@@ -218,7 +218,7 @@ Po zebraniu danych diagnostycznych dla usługi w chmurze lub maszyny wirtualnej 
     W programie Cloud Explorer lub Eksplorator serwera Otwórz konto magazynu skojarzone ze wdrożeniem.
 3. Otwórz tabele diagnostyki w przeglądarce tabel, a następnie przejrzyj zebrane dane. W przypadku dzienników usług IIS i dzienników niestandardowych można otworzyć kontener obiektów BLOB. W poniższej tabeli wymieniono tabele lub kontenery obiektów blob zawierające dane dla różnych plików dziennika. Oprócz danych dla tego pliku dziennika, wpisy tabeli zawierają **EventTickCount**, **DeploymentId**, **role**i **RoleInstance**, aby ułatwić identyfikację, która maszyna wirtualna i rola wygenerowała dane oraz kiedy.
 
-   | Dane diagnostyczne | Opis | Lokalizacja |
+   | Dane diagnostyczne | Opis | Location |
    | --- | --- | --- |
    | Dzienniki aplikacji |Rejestruje kod generowany przez wywołanie metod klasy **System. Diagnostics. Trace** . |WADLogsTable |
    | Dzienniki zdarzeń |Dane z dzienników zdarzeń systemu Windows na maszynach wirtualnych. System Windows przechowuje informacje w tych dziennikach, ale aplikacje i usługi również używają dzienników do raportowania błędów lub informacji dziennika. |WADWindowsEventLogsTable |
@@ -303,5 +303,5 @@ Metody **RoleEntryPoint** są wywoływane w kontekście WAIISHost. exe, a nie w 
 
 W oknie **Właściwości** ustaw wartość właściwości **Kopiuj do katalogu wyjściowego** na **zawsze Kopiuj**.
 
-## <a name="next-steps"></a>Następne kroki
+## <a name="next-steps"></a>Kolejne kroki
 Aby dowiedzieć się więcej o rejestrowaniu diagnostyki na platformie Azure, zobacz [Włączanie diagnostyki na platformie azure Cloud Services i maszynach wirtualnych](/azure/cloud-services/cloud-services-dotnet-diagnostics) oraz [Włączanie rejestrowania diagnostyki dla Web Apps w Azure App Service](/azure/app-service/web-sites-enable-diagnostic-log).

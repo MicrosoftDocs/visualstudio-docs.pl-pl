@@ -110,7 +110,7 @@ Za pomocą IntelliTrace można rejestrować zdarzenia i metody wywołania aplika
  [IntelliTrace autonomiczny moduł zbierający i pule aplikacji działające w ramach kont Active Directory](https://devblogs.microsoft.com/devops/intellitrace-standalone-collector-and-application-pools-running-under-active-directory-accounts/)  
   
 ## <a name="forums"></a>Fora  
- [Visual Studio Debugger](https://go.microsoft.com/fwlink/?LinkId=262263)  
+ [Debuger programu Visual Studio](https://go.microsoft.com/fwlink/?LinkId=262263)  
   
 ## <a name="videos"></a>Wideo  
  [Środowisko IntelliTrace](https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/IntelliTrace-Experience)  

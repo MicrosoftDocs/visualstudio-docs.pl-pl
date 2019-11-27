@@ -57,7 +57,7 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera kontrolki powiązane
 
 - Powiązanie danych WPF. Aby uzyskać więcej informacji, zobacz temat [powiązanie danych — omówienie](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).
 
-## <a name="create-the-project"></a>Utwórz projekt
+## <a name="create-the-project"></a>Tworzenie projektu
  Utwórz nowy projekt WPF. Projekt będzie wyświetlał rekordy produktów.
 
 #### <a name="to-create-the-project"></a>Aby utworzyć projekt
@@ -79,7 +79,7 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera kontrolki powiązane
 
 #### <a name="to-create-a-dataset"></a>Aby utworzyć zestaw danych
 
-1. Na **danych** menu, kliknij przycisk **Pokaż źródła danych**.
+1. W menu **dane** kliknij przycisk **Pokaż źródła danych**.
 
      Zostanie otwarte okno **źródła danych** .
 

@@ -39,7 +39,7 @@ Testy automatyczne, które obsługują aplikację za poorednictwem interfejsu u�
 
  Wyspecjalizowany Konstruktor i Edytor testów CUIT ułatwiają tworzenie i edytowanie kodowanych testów interfejsu użytkownika, nawet jeśli główne umiejętności są skoncentrowane na testowaniu zamiast kodowania. Ale jeśli jesteś deweloperem i chcesz przetworzyć test w bardziej zaawansowany sposób, kod jest strukturalny, dzięki czemu będzie on prosty do kopiowania i dostosowywania. Na przykład możesz zarejestrować test, aby kupić coś w witrynie sieci Web, a następnie edytować wygenerowany kod, aby dodać pętlę, która kupuje wiele elementów.
 
- **Wymagania**
+ **Requirements**
 
 - Visual Studio Enterprise
 
@@ -144,7 +144,7 @@ Testy automatyczne, które obsługują aplikację za poorednictwem interfejsu u�
 
     Otwórz UIMap. UITest. Ten plik zostanie otwarty w edytorze kodowanego testu interfejsu użytkownika, w którym można edytować dowolną sekwencję zarejestrowanych akcji, a także edytować potwierdzenia.
 
-    ![Edytor testu kodowanego interfejsu użytkownika](../test/media/cuit-editor-edit.png "CUIT_Editor_edit")
+    ![Edytor kodowanego testu interfejsu użytkownika](../test/media/cuit-editor-edit.png "CUIT_Editor_edit")
 
     Aby uzyskać więcej informacji, zobacz [Edytowanie kodowanych testów interfejsu użytkownika za pomocą edytora kodowanego testu interfejsu użytkownika](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
 
@@ -161,7 +161,7 @@ Testy automatyczne, które obsługują aplikację za poorednictwem interfejsu u�
 
 - ![Prerequsite](../test/media/prereq.png "Ignoruj") Jeśli nie chcesz rejestrować akcji do uruchamiania testowanej aplikacji, musisz uruchomić aplikację przed wybraniem ikony **rekordu** .
 
-- ![Prerequsite](../test/media/prereq.png "Ignoruj") Na końcu testu proces, w którym są kończone przebiegi testowe. Jeśli aplikacja została uruchomiona w teście, aplikacja zwykle zostanie zamknięta.  Jeśli nie chcesz, aby test zamykał aplikację po jej zakończeniu, musisz dodać plik. runsettings do rozwiązania i użyć opcji `KeepExecutorAliveAfterLegacyRun`. Aby uzyskać więcej informacji, zobacz [Konfigurowanie testów jednostkowych przy użyciu pliku runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).
+- ![Prerequsite](../test/media/prereq.png "Ignoruj") Na końcu testu proces, w którym są kończone przebiegi testowe. Jeśli aplikacja została uruchomiona w teście, aplikacja zwykle zostanie zamknięta.  Jeśli nie chcesz, aby test zamykał aplikację po jej zakończeniu, musisz dodać plik. runsettings do rozwiązania i użyć opcji `KeepExecutorAliveAfterLegacyRun`. Aby uzyskać więcej informacji, zobacz [Konfigurowanie testów jednostkowych przy użyciu pliku. runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).
 
 - ![Prerequsite](../test/media/prereq.png "Ignoruj") Można dodać metodę inicjowania testu, identyfikowaną przez atrybut [TestInitialize], który uruchamia kod na początku każdej metody testowej. Na przykład można uruchomić aplikację z metody TestInitialize.
 
@@ -474,7 +474,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - [Testowanie w celu ciągłego dostarczania za pomocą programu Visual Studio 2012 — Rozdział 5: Automatyzowanie testów systemowych](https://go.microsoft.com/fwlink/?LinkID=255196)
 
-### <a name="faq"></a>Najczęściej zadawane pytania
+### <a name="faq"></a>Często zadawane pytania
 - [Kodowane testy interfejsu użytkownika — często zadawane pytania — 1](https://go.microsoft.com/fwlink/?LinkID=230576)
 
 - [Kodowane testy interfejsu użytkownika — często zadawane pytania — 2](https://go.microsoft.com/fwlink/?LinkID=230578)

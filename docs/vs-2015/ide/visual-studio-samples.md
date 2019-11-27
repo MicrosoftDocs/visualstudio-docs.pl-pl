@@ -21,24 +21,24 @@ ms.locfileid: "74296850"
 # <a name="visual-studio-samples"></a>Visual Studio — przykłady
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Przykłady Visual Studio można znaleźć na [galerii kodu MSDN](https://go.microsoft.com/fwlink/?LinkID=127810) witryny sieci Web.
+Przykłady programu Visual Studio można znaleźć w witrynie sieci Web [galerii kodu MSDN](https://go.microsoft.com/fwlink/?LinkID=127810) .
 
- Możesz użyć **nowy projekt** okno dialogowe, aby przeglądać w poszukiwaniu przykładów. (Aby otworzyć okno dialogowe, na pasku menu wybierz **pliku**, **New**, **projektu**.)
+ Możesz użyć okna dialogowego **Nowy projekt** , aby przeglądać w poszukiwaniu przykładów. (Aby otworzyć okno dialogowe, na pasku menu wybierz **plik**, **Nowy**, **projekt**).
 
 ## <a name="finding-samples"></a>Znajdowanie przykładów
  Oto niektóre miejsca, możesz szukać przykładów.
 
 |Obszar|Opis|
 |----------|-----------------|
-|[Przykłady Windows Developer Center](https://go.microsoft.com/fwlink/?LinkID=255278)|Pokazuje, jak opracować [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikacji.|
-|[Przykłady dla platformy .NET framework](https://msdn.microsoft.com/177055f8-4a1f-43e7-aee6-995c196079b1)|Przedstawia różne aspekty [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] w języku C# i Visual Basic.|
-|[Przykłady w języku C#](https://docs.microsoft.com/samples/browse/?languages=csharp)|Pokazuje, jak używać różnych funkcji języka C#.|
+|[Przykłady Centrum deweloperów systemu Windows](https://go.microsoft.com/fwlink/?LinkID=255278)|Pokazuje, jak opracowywać aplikacje [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)].|
+|[Przykłady .NET Framework](https://msdn.microsoft.com/177055f8-4a1f-43e7-aee6-995c196079b1)|Pokazuje różne aspekty [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] w C# i Visual Basic.|
+|[C#Badan](https://docs.microsoft.com/samples/browse/?languages=csharp)|Pokazuje, jak używać różnych funkcji języka C#.|
 |[Przykłady Visual Basic](https://docs.microsoft.com/samples/browse/?languages=vb)|Pokazuje, jak używać różnych funkcji programu Visual Basic.|
 |[Przykłady języka F#](https://docs.microsoft.com/samples/browse/?languages=fsharp)|Pokazuje, jak używać różnych funkcji F#.|
-|[Przykładowe skrypty JavaScript](https://docs.microsoft.com/samples/browse/?languages=javascript)|Pokazuje, jak używać różnych funkcji w języku JavaScript.|
-|[Przykłady w języku C++](https://docs.microsoft.com/samples/browse/?languages=cpp)|Pokazuje, jak używać różnych funkcji w języku C++.|
-|[Próbki DirectX](https://docs.microsoft.com/samples/browse/?products=xbox)|Przedstawiono sposób korzystania z programu DirectX.|
-|[Office Development — przykłady](https://docs.microsoft.com/samples/browse/?products=office)|Pokazuje, jak używać narzędzi programistycznych pakietu Office w programie Visual Studio. Aby poznać aktualne przykłady, zobacz [Przykłady dewelopera sieci MSDN: Poznaj kod](https://go.microsoft.com/fwlink/?LinkID=248199).|
+|[Przykłady kodu JavaScript](https://docs.microsoft.com/samples/browse/?languages=javascript)|Pokazuje, jak używać różnych funkcji w języku JavaScript.|
+|[C++Badan](https://docs.microsoft.com/samples/browse/?languages=cpp)|Pokazuje, jak używać różnych funkcji w języku C++.|
+|[Przykłady dla DirectX](https://docs.microsoft.com/samples/browse/?products=xbox)|Przedstawiono sposób korzystania z programu DirectX.|
+|[Office Development — przykłady](https://docs.microsoft.com/samples/browse/?products=office)|Pokazuje, jak używać narzędzi programistycznych pakietu Office w programie Visual Studio. Aby zapoznać się z najnowszymi przykładami, zobacz [przykłady dla deweloperów MSDN: uczenie się za pomocą kodu](https://go.microsoft.com/fwlink/?LinkID=248199).|
 |[Przykłady VSSDK](https://aka.ms/vs2015sdksamples)|Pokazuje, jak rozszerzenie programu Visual Studio.|
 
 ## <a name="see-also"></a>Zobacz też

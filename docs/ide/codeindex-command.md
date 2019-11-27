@@ -12,12 +12,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 378a5965f8ca9e9cc2d1c7214180e99f080d7873
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bec6c997a73d0b163ec0857ddd3a3380f26793bf
+ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72630958"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74538529"
 ---
 # <a name="codeindex-command"></a>CodeIndex — polecenie
 
@@ -52,15 +52,15 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 |**/listLargeFiles [/filecount:** `FileCount` **/MinSize:** `MinSize`]|Pokazuje określoną liczbę plików, które przekraczają określony rozmiar w KB. Następnie można użyć opcji **/Ignorelist** , aby wykluczyć te pliki z indeksowania.|
 |**/reindexAll**|Wyczyść poprzednio indeksowane dane i uruchom ponownie indeksowanie.|
 |**/destroyCodeIndex [/noPrompt]**|Usuń indeks kodu i Usuń wszystkie indeksowane dane. Nie wymaga potwierdzenia w przypadku użycia opcji **/noprompt** .|
-|**/temporaryDataSizeLimit**: [view &#124; < `SizeInGBs` > &#124; disable]|Kontrolowanie ilości danych tymczasowych tworzonych przez CodeLens podczas przetwarzania grup zmian. Domyślny limit wynosi 2 GB.<br /><br /> **widok**-   : Pokaż limit bieżącego rozmiaru.<br />-    `SizeInGBs`: Zmień limit rozmiaru.<br />-   **wyłączyć**: Usuń limit rozmiaru.<br /><br /> Ten limit jest sprawdzany przed CodeLens przetwarzania nowej grupy zmian. Jeśli dane tymczasowe przekraczają ten limit, CodeLens zatrzyma przetwarzanie poprzednich zestawów zmian, a nie nowych. CodeLens uruchomi ponownie przetwarzanie po wyczyszczeniu danych i spadnie poniżej tego limitu. Czyszczenie jest uruchamiane automatycznie raz dziennie. Oznacza to, że dane tymczasowe mogą przekroczyć ten limit, dopóki czyszczenie zacznie działać.|
-|**/indexHistoryPeriod**: [wyświetl &#124; wszystkie &#124; < `NumberOfMonths` >]|Kontroluj, jak długo ma być indeksowana historia zmian. Ma to wpływ na liczbę CodeLens historii. Domyślny limit to 12 miesięcy. Oznacza to, że CodeLens pokazuje historię zmian tylko w ciągu ostatnich 12 miesięcy.<br /><br /> **widok**-   : Pokaż bieżącą liczbę miesięcy.<br />-   **wszystkie**: Indeksuj całą historię zmian.<br />-    `NumberOfMonths`: Zmień liczbę miesięcy używanych do indeksowania historii zmian.|
+|**/temporaryDataSizeLimit**: [view &#124; <`SizeInGBs`> &#124; disable]|Kontrolowanie ilości danych tymczasowych tworzonych przez CodeLens podczas przetwarzania grup zmian. Domyślny limit wynosi 2 GB.<br /><br /> **widok**-   : Pokaż limit bieżącego rozmiaru.<br />-   `SizeInGBs`: Zmień limit rozmiaru.<br />-   **wyłączyć**: Usuń limit rozmiaru.<br /><br /> Ten limit jest sprawdzany przed CodeLens przetwarzania nowej grupy zmian. Jeśli dane tymczasowe przekraczają ten limit, CodeLens zatrzyma przetwarzanie poprzednich zestawów zmian, a nie nowych. CodeLens uruchomi ponownie przetwarzanie po wyczyszczeniu danych i spadnie poniżej tego limitu. Czyszczenie jest uruchamiane automatycznie raz dziennie. Oznacza to, że dane tymczasowe mogą przekroczyć ten limit, dopóki czyszczenie zacznie działać.|
+|**/indexHistoryPeriod**: [wyświetl &#124; wszystkie &#124; <`NumberOfMonths`>]|Kontroluj, jak długo ma być indeksowana historia zmian. Ma to wpływ na liczbę CodeLens historii. Domyślny limit to 12 miesięcy. Oznacza to, że CodeLens pokazuje historię zmian tylko w ciągu ostatnich 12 miesięcy.<br /><br /> **widok**-   : Pokaż bieżącą liczbę miesięcy.<br />-   **wszystkie**: Indeksuj całą historię zmian.<br />-   `NumberOfMonths`: Zmień liczbę miesięcy używanych do indeksowania historii zmian.|
 |**/CollectionName:** `CollectionName`|Określa nazwę kolekcji projektu, na której ma zostać uruchomione polecenie **CodeIndex** . Wymagane, jeśli nie używasz **/CollectionID**.|
 |**/collectionId:** `CollectionId`|Określa numer identyfikacyjny kolekcji projektów, na której ma zostać uruchomione polecenie **CodeIndex** . Wymagane, jeśli nie używasz **/CollectionName**.|
 
 ## <a name="examples"></a>Przykłady
 
 > [!NOTE]
-> Przykładowe firmy, organizacje, produkty, nazwy domen, adresy e-mail, logo, osoby, miejsca i zdarzenia wymienione w tym dokumencie są fikcyjne.  Żadne powiązania z rzeczywistymi firmami, organizacjami, produktami, nazwami domen, adresami e-mail, logo, osobami, miejscami lub zdarzeniami nie są zamierzone ani wywnioskowane.
+> Przedstawione tu przykładowe firmy, organizacje, produkty, nazwy domen, adresy e-mail, logo, osoby, miejsca i zdarzenia są fikcyjne.  Żadne powiązania z rzeczywistymi firmami, organizacjami, produktami, nazwami domen, adresami e-mail, logo, osobami, miejscami lub zdarzeniami nie są zamierzone ani wywnioskowane.
 
 Aby wyświetlić stan i konfigurację indeksowania kodu:
 
@@ -125,4 +125,4 @@ TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Website"
 ## <a name="see-also"></a>Zobacz także
 
 - [Znajdowanie zmian w kodzie i innych elementów historii za pomocą wskaźników CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md)
-- [Zarządzanie konfiguracją serwera za pomocą polecenia TFSConfig](/tfs/server/ref/command-line/tfsconfig-cmd)
+- [Zarządzanie konfiguracją serwera za pomocą polecenia TFSConfig](/azure/devops/server/command-line/tfsconfig-cmd)

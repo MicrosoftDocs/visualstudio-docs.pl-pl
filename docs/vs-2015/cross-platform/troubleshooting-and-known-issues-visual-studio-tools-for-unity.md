@@ -60,9 +60,9 @@ W tej sekcji możesz znaleźć rozwiązania typowych problemów z narzędziami V
   
 1. Otwórz nowe wystąpienie programu Visual Studio.  
   
-2. Otwórz dialogowym Dołącz do procesu. W wystąpieniu programu Visual Studio, w menu głównym wybierz **debugowania**, **dołączyć do procesu**.  
+2. Otwórz dialogowym Dołącz do procesu. W nowym wystąpieniu programu Visual Studio, w menu głównym, wybierz **Debuguj**, **Dołącz do procesu**.  
   
-3. Dołącz debuger do zamrożone wystąpieniu programu Visual Studio. W **dołączyć do procesu** okno dialogowe, wybierz zamrożone wystąpienie programu Visual Studio z **dostępne procesy** tabeli, a następnie wybierz **Dołącz** przycisku.  
+3. Dołącz debuger do zamrożone wystąpieniu programu Visual Studio. W oknie dialogowym **Dołącz do procesu** wybierz zamrożone wystąpienie programu Visual Studio z tabeli **dostępne procesy** , a następnie wybierz przycisk **Dołącz** .  
   
 4. Zatrzymaj debuger. W nowym wystąpieniu programu Visual Studio, w menu głównym, wybierz **Debuguj**, **Przerwij wszystko** lub po prostu naciśnij **kombinację klawiszy CTRL + ALT + BREAK**.  
   
@@ -72,6 +72,6 @@ W tej sekcji możesz znaleźć rozwiązania typowych problemów z narzędziami V
    Debug.ListCallStack /AllThreads /ShowExternalCode  
    ```  
   
-    Konieczne może być **polecenia** okna pierwszy widoczne. W programie Visual Studio, w menu głównym wybierz **widoku**, **Windows inne**, **okna polecenia**.  
+    Może być konieczne, aby okno **polecenia** było widoczne jako pierwsze. W programie Visual Studio, w menu głównym, wybierz **Widok**, **inne**okna, **okno poleceń**.  
   
-6. Na koniec Wyślij zrzutu wątku do [ vstusp@microsoft.com ](mailto:vstusp@microsoft.com), wraz z opisem czynności wykonywanych podczas zamrożone stało się programu Visual Studio.
+6. Na koniec Wyślij zrzut wątku do [vstusp@microsoft.com](mailto:vstusp@microsoft.com)wraz z opisem tego, co zostało wykonywane, gdy program Visual Studio został zablokowany.

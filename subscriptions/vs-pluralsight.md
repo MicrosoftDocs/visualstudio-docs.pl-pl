@@ -6,12 +6,12 @@ manager: lank
 ms.date: 11/18/2019
 ms.topic: conceptual
 description: Dowiedz się więcej na temat subskrypcji szkoleniowej Pluralsight dołączonej do wybranych subskrypcji programu Visual Studio.
-ms.openlocfilehash: 7db7858b95ca0b78ea54cebc394c3d57de53305a
-ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
+ms.openlocfilehash: 26e9227fbd3852e4e9115e06e2882fe6358831a3
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74161959"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491287"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Korzyści z szkolenia Pluralsight w subskrypcjach programu Visual Studio
 
@@ -56,14 +56,14 @@ W poniższej tabeli szczegółowo opisano, jakie korzyści z subskrypcji Plurals
 
 |                          Poziom subskrypcji                          |     Kanały      |    Korzyść    |   Odnawialny?   |
 |----------------------------------------------------------------------|-------------------|---------------|----------------|
-|          Visual Studio Enterprise (standardowa)           | LICENCJONOWANie, Azure, sprzedaż detaliczna |   6 miesięcy    | Tak<sup>2</sup> |
+|          Visual Studio Enterprise (standardowa)           | VL, Azure, Retail |   6 miesięcy    | Tak<sup>2</sup> |
 |          Visual Studio Enterprise z usługą GitHub Enterprise          | Licencja  |   6 miesięcy    | Tak<sup>2</sup> |
-|         Visual Studio Professional (standardowa)          | LICENCJONOWANie, Azure, sprzedaż detaliczna |   3 miesiące    | Tak<sup>2</sup> |
+|         Visual Studio Professional (standardowa)          | VL, Azure, Retail |   3 miesiące    | Tak<sup>2</sup> |
 |         Visual Studio Professional z usługą GitHub Enterprise          | Licencja  |   3 miesiące    | Tak<sup>2</sup> |
 |              Visual Studio Test Professional (standardowa)              |    LICENCJONOWANie detaliczne     |   3 miesiące    | Tak<sup>2</sup>  |
 |                      Platformy MSDN (standardowa)                       |    LICENCJONOWANie detaliczne     |   3 miesiące    | Tak<sup>2</sup>  |
-| Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) |       Azure       | Niedostępne |       POTRĄCON       |
-|             Visual Studio Enterprise (NFR<sup>1</sup> )              |      Program      | Niedostępne |       POTRĄCON       |
+| Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) |       Azure       | Niedostępne |       Nie dotyczy       |
+|             Visual Studio Enterprise (NFR<sup>1</sup> )              |      Program      | Niedostępne |       Nie dotyczy       |
 ||
 
 <sup>1</sup>  *obejmuje: nie dotyczy odsprzedaży (NFR), programu Visual Studio Industry partner (VSIP), BizSpark, MCT Software & Services Developer, MCT Software & Service, najbardziej cennych profesjonalistów (MVP), kierownika Regionalnego (RD), Microsoft Partner Network (MPN), pełnego etatu.*
@@ -78,7 +78,7 @@ Nie masz pewności, której subskrypcji używasz?  Połącz się z [https://my.v
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
 
 ### <a name="q-i-have-a-visual-studio-enterprise-subscription-but-i-dont-see-the-pluralsight-tile-on-the-benefits-page-whats-wrong"></a>P: mam subskrypcję Visual Studio Enterprise, ale nie widzę kafelka Pluralsight na stronie korzyści. Co jest nie tak?
-Odp.: nie wszystkie subskrypcje Visual Studio Enterprise obejmują korzyść Pluralsight.  Sprawdź tabelę [kryteriów kwalifikowania](#eligibility) , aby dowiedzieć się, czy Twoja subskrypcja kwalifikuje się do korzystania z niej.
+Odp.: nie wszystkie subskrypcje Visual Studio Enterprise obejmują korzyść Pluralsight.  Sprawdź [tabelę kwalifikowania](#eligibility) , aby sprawdzić, czy Twoja subskrypcja kwalifikuje się do korzystania z niej.
 
 ### <a name="q-do-i-have-access-to-any-customized-learning--playlists-or-channels"></a>P: czy mam dostęp do dowolnych dostosowanych list odtwarzania lub kanałów szkoleniowych?
 Odp.: tak, jako subskrybent programu Visual Studio uzyskujesz dostęp do kanałów ekspertów w ramach korzyści z szkolenia Pluralsight. Te kanały zostały specjalnie nadzorowane przez ekspertów firmy Microsoft i są przeznaczone do uczenia się w obszarach platformy .NET, platformy Azure, DevOps i mobilności. Aktywuj korzyść usługi Pluralsight za poorednictwem portalu subskrypcji programu Visual Studio [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) , aby uzyskać dostęp do tych kanałów na stronie docelowej Pluralsight —
@@ -97,7 +97,7 @@ Odp.: na koniec bezpłatnej subskrypcji usługi Pluralsight możesz zakupić sub
 - Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
 - Masz pytanie dotyczące środowiska IDE programu Visual Studio, Azure DevOps Services lub innych produktów lub usług Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="next-steps"></a>Następne kroki
+## <a name="next-steps"></a>Kolejne kroki
 Po utworzeniu konta możesz zacząć uczenie się.  Odwiedź witrynę [https://www.pluralsight.com](http://www.pluralsight.com) i naciśnij pozycję **Zaloguj** się w prawym górnym rogu strony, aby rozpocząć nowy kurs, lub Wróć do kursu, który jest już w toku.
 
 Skorzystaj z własnej piaskownicy programistycznej, aktywując swoje środki na korzystanie z [platformy Azure DevTest](vs-azure.md). 

@@ -32,7 +32,7 @@ Autonomiczny **moduł zbierający IntelliTrace** umożliwia zbieranie danych dia
 >
 > Zdarzenia związane z wydajnością można zbierać w danych IntelliTrace, uruchamiając agenta w trybie **monitora** . Tryb **monitora** ma mniej wpływu na wydajność niż tryb **śledzenia** lub autonomiczny **moduł zbierający IntelliTrace**. Microsoft Monitoring Agent zmienia środowisko systemu docelowego podczas instalacji. Zobacz [używanie Microsoft Monitoring Agent](../debugger/using-the-microsoft-monitoring-agent.md).
 
- **Wymagania**
+ **Requirements**
 
 - .NET Framework 3,5, 4 lub 4,5
 
@@ -81,7 +81,7 @@ Autonomiczny **moduł zbierający IntelliTrace** umożliwia zbieranie danych dia
 
 1. Na serwerze swojej aplikacji Utwórz katalog modułu zbierającego, na przykład: **C:\IntelliTraceCollector**
 
-2. Pobierz moduł zbierający z centrum pobierania Microsoft lub z folderu instalacyjnego programu Visual Studio 2103 Update 3. [IntelliTrace Collector for Visual Studio 2013 Update 4](https://www.microsoft.com/download/details.aspx?id=44909)::
+2. Pobierz moduł zbierający z centrum pobierania Microsoft lub z folderu instalacyjnego programu Visual Studio 2103 Update 3. [IntelliTrace Collector for Visual Studio 2013 Update 4](https://www.microsoft.com/download/details.aspx?id=44909):
 
    - **Centrum pobierania Microsoft**:
 
@@ -91,13 +91,13 @@ Autonomiczny **moduł zbierający IntelliTrace** umożliwia zbieranie danych dia
 
      3. Run IntelliTraceCollector.exe. Spowoduje to wyodrębnienie pliku IntelliTraceCollection. cab.
 
-        \- lub —
+        \- lub-
 
    - **Folder instalacyjny programu Visual Studio**:
 
      1. Skopiuj plik IntelliTraceCollection. cab z następującego folderu:
 
-          **..\Microsoft Visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**
+          **.. \Microsoft Visual Studio 12 \ Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**
 
      2. Umieść plik IntelliTraceCollection. cab w katalogu modułu zbierającego, na przykład: **C:\IntelliTraceCollector**
 
@@ -206,7 +206,7 @@ Autonomiczny **moduł zbierający IntelliTrace** umożliwia zbieranie danych dia
 
      5. W polu **Wprowadź nazwy obiektów do wybrania** Dodaj pulę aplikacji aplikacji sieci Web lub aplikacji programu SharePoint.
 
-     6. Wybierz **Sprawdź nazwy** , aby rozpoznać nazwę. Wybierz **OK**.
+     6. Wybierz **Sprawdź nazwy** , aby rozpoznać nazwę. Wybierz **przycisk OK**.
 
      7. Upewnij się, że Pula aplikacji ma **pełną kontrolę**.
 
@@ -214,7 +214,7 @@ Autonomiczny **moduł zbierający IntelliTrace** umożliwia zbieranie danych dia
 
 1. Aby rozpocząć zbieranie danych, Otwórz okno polecenia programu PowerShell jako administrator, a następnie uruchom następujące polecenie:
 
-     `Start-IntelliTraceCollection` `"` *\<ApplicationPool>* `"` *\<PathToCollectionPlan>* *\<FullPathToITraceFileDirectory>*
+     `Start-IntelliTraceCollection` `"` *\<ApplicationPool >* `"` *\<PathToCollectionPlan >* *\<FullPathToITraceFileDirectory >*
 
     > [!IMPORTANT]
     > Po uruchomieniu tego polecenia, wpisz **Y** , aby potwierdzić, że chcesz rozpocząć zbieranie danych.
@@ -237,7 +237,7 @@ Autonomiczny **moduł zbierający IntelliTrace** umożliwia zbieranie danych dia
 
 3. Aby wykonać migawkę pliku iTrace, użyj następującej składni:
 
-     `Checkpoint-IntelliTraceCollection` `"` *\<ApplicationPool>* `"`
+     `Checkpoint-IntelliTraceCollection` `"` *\<ApplicationPool >* `"`
 
 4. Aby sprawdzić stan kolekcji, użyj następującej składni:
 
@@ -245,7 +245,7 @@ Autonomiczny **moduł zbierający IntelliTrace** umożliwia zbieranie danych dia
 
 5. Aby zatrzymać zbieranie danych, należy użyć następującej składni:
 
-     `Stop-IntelliTraceCollection` `"` *\<ApplicationPool>* `"`
+     `Stop-IntelliTraceCollection` `"` *\<ApplicationPool >* `"`
 
     > [!IMPORTANT]
     > Po uruchomieniu tego polecenia, wpisz **Y** , aby potwierdzić, że chcesz zatrzymać zbieranie danych. W przeciwnym razie moduł zbierający może kontynuować zbieranie danych, plik iTrace pozostanie zablokowany lub plik może nie zawierać żadnych użytecznych danych.
@@ -256,7 +256,7 @@ Autonomiczny **moduł zbierający IntelliTrace** umożliwia zbieranie danych dia
 
 1. Aby uruchomić aplikację i zebrać dane w tym samym czasie, użyj następującej składni:
 
-     *\<FullPathToIntelliTraceCollectorExecutable>* `\IntelliTraceSC.exe launch /cp:` *\<PathToCollectionPlan>* `/f:` *\<FullPathToITraceFileDirectoryAndFileName>* *\<PathToAppExecutableFileAndFileName>*
+     *\<FullPathToIntelliTraceCollectorExecutable >* `\IntelliTraceSC.exe launch /cp:` *\<PathToCollectionPlan >* `/f:` *\<FullPathToITraceFileDirectoryAndFileName >* *\<PathToAppExecutableFileAndFileName >*
 
      Na przykład, aby zbierać dane z aplikacji o nazwie **MojaApl**:
 
@@ -400,7 +400,7 @@ Autonomiczny **moduł zbierający IntelliTrace** umożliwia zbieranie danych dia
  [Blog programu Visual Studio ALM + TFS](https://go.microsoft.com/fwlink/?LinkID=201340)
 
 ### <a name="forums"></a>Fora
- [Visual Studio Debugger](https://go.microsoft.com/fwlink/?LinkId=262263)
+ [Debuger programu Visual Studio](https://go.microsoft.com/fwlink/?LinkId=262263)
 
 ### <a name="videos"></a>Wideo
  [Wideo Channel 9: zbieranie i analizowanie danych IntelliTrace](https://go.microsoft.com/fwlink/?LinkID=251851)

@@ -6,12 +6,12 @@ manager: lank
 ms.date: 11/14/2019
 ms.topic: conceptual
 description: Dowiedz się, jak pobrać i zainstalować środowisko IDE programu Visual Studio zawarte w subskrypcji programu Visual Studio.
-ms.openlocfilehash: 74f7de0272130f88c683dcabefaecccf1554ab12
-ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
+ms.openlocfilehash: fd140dfe1853e6799a960fd8e251a566954bf143
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099631"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491588"
 ---
 # <a name="the-visual-studio-2019-benefit"></a>Korzyść dla programu Visual Studio 2019
 
@@ -41,7 +41,7 @@ Aby pobrać środowisko IDE:
    > [!div class="mx-imgBorder"]
    > ![Dostosowywanie Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-customize-install-cropped.png)
 
-10. Kliknij przycisk **Instaluj**.
+10. Kliknij polecenie **Zainstaluj**.
 
 11. Po zakończeniu instalacji będzie dostępna opcja modyfikowania instalacji lub uruchamiania programu Visual Studio.  Kliknij przycisk **Uruchom** , aby rozpocząć.  Jeśli zainstalowano wiele wersji, zostaną one wyświetlone na liście.
     > [!div class="mx-imgBorder"]
@@ -63,7 +63,7 @@ Aby pobrać środowisko IDE:
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (standardowa, miesięczna chmura)   | LICENCJONOWANie, Azure, sprzedaż detaliczna, wybrane NFR<sup>1</sup> | Dostępne       |  Tak          |
 | Visual Studio Enterprise z usługą GitHub Enterprise   | Licencja | Dostępne       |  Tak          |
-| Visual Studio Professional (standardowa, miesięczna chmura) | LICENCJONOWANie, Azure, sprzedaż detaliczna                                       | Dostępne                                                            |  Tak          |
+| Visual Studio Professional (standardowa, miesięczna chmura) | VL, Azure, Retail                                       | Dostępne                                                            |  Tak          |
 | Visual Studio Professional z usługą GitHub Enterprise | Licencja   | Dostępne              |  Tak          |
 | Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Dostępne                                             |  Tak         |
 | Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | Niedostępne                                              |  Brak          |
@@ -81,7 +81,7 @@ Nie masz pewności, której subskrypcji używasz?  Połącz się z [https://my.v
   - [Dokumentacja](/visualstudio/)
 - Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
 
-## <a name="next-steps"></a>Następne kroki
+## <a name="next-steps"></a>Kolejne kroki
 Po zainstalowaniu programu Visual Studio nie zapomnij uaktywnić tych innych ważnych korzyści:
 - [Azure DevOps](vs-azure-devops.md)
 - [Indywidualne środki na korzystanie z usługi Azure DevTest](vs-azure.md)

@@ -29,7 +29,7 @@ W tej sekcji dowiesz się, jak zainstalować Visual Studio Tools for Unity i sko
   
 - Wersja programu **Visual Studio** , która obsługuje rozszerzenia, takie jak Visual Studio Community, Professional, Premium lub Enterprise. Program Visual Studio Community można pobrać bezpłatnie.  
   
-     {2&gt;Pobierz program Visual Studio Community&lt;2}  
+     [Pobierz program Visual Studio Community](https://www.visualstudio.com/downloads/download-visual-studio-vs)  
   
 - Aparat **Unity** w wersji 4.0.0 lub nowszej; W wersji 5.2.0 lub nowszej w celu skorzystania z wbudowanej obsługi Visual Studio Tools for Unity **w wersji 2,1** lub nowszej.  
   
@@ -108,7 +108,7 @@ W tej sekcji dowiesz się, jak zainstalować Visual Studio Tools for Unity i sko
   
  ![Otwórz projekt środowiska Unity w programie Visual Studio.](../cross-platform/media/vstu-configure-open-in-visual-studio.png "vstu_configure_open_in_visual_studio")  
   
-## <a name="next-steps"></a>Następne kroki  
+## <a name="next-steps"></a>Kolejne kroki  
  Aby dowiedzieć się, jak korzystać z i debugować projekt Unity w programie Visual Studio, zobacz [Using Visual Studio Tools for Unity](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md).  
   
 ## <a name="see-also"></a>Zobacz też  

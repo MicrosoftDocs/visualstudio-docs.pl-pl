@@ -93,11 +93,11 @@ int main()
 **1 > CoreCheckExample. vcxproj-> C:\Users\username\documents\visual Studio 2015 \ P**  
 **rojects\CoreCheckExample\Debug\CoreCheckExample.exe**  
 **1 > CoreCheckExample. vcxproj-> C:\Users\username\documents\visual Studio 2015 \ P**  
-**rojects\CoreCheckExample\Debug\CoreCheckExample.pdb (Full PDB)**  
+**rojects\CoreCheckExample\Debug\CoreCheckExample.pdb (pełny plik PDB)**  
 **c:\users\username\documents\visual Studio 2015 \ projects\corecheckexample\coreche**  
 **ckexample\corecheckexample.cpp (6): ostrzeżenie C26494: zmienna "ARR" jest uninitializ**  
 **Ed. zawsze Inicjuj obiekt. (Type. 5: https://go.microsoft.com/fwlink/p/?Link**  
-**ID=620421)**  
+**ID = 620421)**  
 **c:\users\username\documents\visual Studio 2015 \ projects\corecheckexample\coreche**  
 **ckexample\corecheckexample.cpp (7): ostrzeżenie C26485: wyrażenie "ARR": brak tablicy do**  
 **zanik wskaźnika. (bounds. 3: https://go.microsoft.com/fwlink/p/?LinkID=620415)**  

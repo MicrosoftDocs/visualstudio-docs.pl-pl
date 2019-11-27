@@ -93,9 +93,9 @@ Użyj narzędzia użycie procesora GPU w centrum wydajności i diagnostyki progr
 |Kontrolka filtru|Opis|  
 |--------------------|-----------------|  
 |**Podstawowych**|Nazwa żądanego procesu. Wszystkie procesy, które używały procesora GPU podczas sesji diagnostycznej, znajdują się na liście rozwijanej. Kolor skojarzony z procesem w tym menu rozwijanym jest kolorem działania wątku na osiach czasu poniżej.|  
-|**Wątek**|Identyfikator wątku, który Cię interesuje. W aplikacji wielowątkowej może to pomóc w wyodrębnieniu określonych wątków należących do procesu, który Cię interesuje. Zdarzenia skojarzone z wybranym wątkiem są wyróżnione na każdej osi czasu.|  
+|**Nici**|Identyfikator wątku, który Cię interesuje. W aplikacji wielowątkowej może to pomóc w wyodrębnieniu określonych wątków należących do procesu, który Cię interesuje. Zdarzenia skojarzone z wybranym wątkiem są wyróżnione na każdej osi czasu.|  
 |**Wyświetlany**|Liczba wyświetleń, których częstotliwość odświeżania jest wyświetlana **Uwaga:** niektóre sterowniki można skonfigurować w taki sposób, aby przedstawić wiele fizycznych wyświetlaczy jako pojedynczy, duży ekran wirtualny. Może pojawić się tylko jeden ekran na liście, nawet jeśli na komputerze jest dołączonych wiele ekranów.|  
-|**Filtr**|Słowa kluczowe, które Cię interesują. Zdarzenia w dolnej części raportu będą zawierać tylko te, które pasują do słowa kluczowego w całości lub w części. Można określić wiele słów kluczowych, rozdzielając je średnikami (;).|  
+|**Filtru**|Słowa kluczowe, które Cię interesują. Zdarzenia w dolnej części raportu będą zawierać tylko te, które pasują do słowa kluczowego w całości lub w części. Można określić wiele słów kluczowych, rozdzielając je średnikami (;).|  
 |**Sortowanie hierarchii**|Pole wyboru wskazujące, czy hierarchie zdarzeń — zdefiniowane za pomocą znaczników użytkownika — są zachowywane lub ignorowane.|  
   
  Lista zdarzeń w dolnej części raportu użycia procesora GPU zawiera szczegóły każdego zdarzenia.  
