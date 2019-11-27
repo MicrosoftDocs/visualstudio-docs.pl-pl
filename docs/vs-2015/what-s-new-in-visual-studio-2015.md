@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 036ad2171c3b117049635247a980cd0f8411d887
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
-ms.translationtype: HT
+ms.openlocfilehash: ce064209ca96abda1f9e44825fa869c2ba250a32
+ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297560"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74538987"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Co&#39;s Nowość w programie Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Witamy w programie Visual Studio 2015, zintegrowany pakiet narzędzi zwiększaj�
 
 Ta strona opisano niektóre najważniejsze funkcje, które są nowy od czasu Visual Studio 2013 RTM, łącznie z funkcjami, które zostały najpierw wprowadzone w jednej z aktualizacji programu Visual Studio 2013. Aby zapoznać się z pełną listą nowości w programie Visual Studio 2015, zobacz [Informacje o wersji](https://www.visualstudio.com/news/vs2015-vs).
 
-Aby dowiedzieć się więcej na temat wielu ulepszeń i nowych funkcji w programie Visual Studio ALM, zobacz [co nowego w programie TFS 2015](/tfs/server/whats-new?view=vsts#tfs-2015-rtm).
+Aby dowiedzieć się więcej na temat wielu ulepszeń i nowych funkcji w programie Visual Studio ALM, zobacz [co nowego w programie TFS 2015](/azure/devops/server/whats-new#tfs-2015).
 
 ## <a name="a-new-setup-experience"></a>Nowe środowisko instalacji
  [!INCLUDE[downloadvs](./includes/downloadvs-md.md)]

@@ -13,12 +13,12 @@ ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7eeb6b0ac3322090cf85e26ac6388aac76890d44
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
-ms.translationtype: HT
+ms.openlocfilehash: d7d488581aefee150b1a186eaba48576f0b8146d
+ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297576"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74537959"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Visual Studio 2015 — Zapraszamy!
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -96,7 +96,7 @@ Witamy w programie Visual Studio! Mamy wszystko, czego potrzebujesz do tworzenia
 
 |||||
 |-|-|-|-|
-|[Co nowego w programie Visual Studio 2015](./what-s-new-in-visual-studio-2015.md)|[Co nowego w wizualizacjiC#](https://msdn.microsoft.com/library/9f18dc26-27fa-4603-a639-b573f07a117b)|[Co nowego w .NET Framework 4,6](https://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)|[Co nowego w ALM](https://msdn.microsoft.com/54b98a53-6083-4303-869a-8063d8fae938)|
+|[Co nowego w programie Visual Studio 2015](./what-s-new-in-visual-studio-2015.md)|[Co nowego w wizualizacjiC#](https://msdn.microsoft.com/library/9f18dc26-27fa-4603-a639-b573f07a117b)|[Co nowego w .NET Framework 4,6](https://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)|[Co nowego w ALM](/azure/devops/server/whats-new)|
 |[Co nowego w programieC++](https://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)|[Co nowego w języku Visual Basic](https://msdn.microsoft.com/library/d7e97396-7f42-4873-a81c-4ebcc4b6ca02)|[Co nowego w języku JavaScript](javascript/javascript-in-visual-studio.md#whats-new-in-javascript)||
 |[Python](./python/getting-started-with-python.md)||||
 
