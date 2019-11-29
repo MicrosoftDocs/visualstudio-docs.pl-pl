@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 11/20/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 6b96f23bc7bcd7e6d970025b23f89f572d07daf1
-ms.sourcegitcommit: e825d1223579b44ee2deb62baf4de0153f99242a
+ms.openlocfilehash: a2f837ba264a12391786f584cf2698e19250fb2e
+ms.sourcegitcommit: 6336c387388707da94a91060dc3f34d4cfdc0a7b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74473988"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74549956"
 ---
 # <a name="build-and-debug-containerized-apps-using-visual-studio-or-the-command-line"></a>Kompilowanie i debugowanie aplikacji kontenerowych przy użyciu programu Visual Studio lub wiersza polecenia
 
@@ -60,27 +60,9 @@ ENTRYPOINT ["dotnet", "WebApplication43.dll"]
 
 Końcowy etap zostanie uruchomiony ponownie z `base`i zawiera `COPY --from=publish` do skopiowania opublikowanych danych wyjściowych do obrazu końcowego. Dzięki temu obraz końcowy może być dużo mniejszy, ponieważ nie musi zawierać wszystkich narzędzi kompilacji, które znajdowały się w `sdk` obrazie.
 
-## <a name="faster-builds-for-the-debug-configuration"></a>Szybsze kompilacje dla konfiguracji debugowania
-
-Istnieje kilka optymalizacji, które program Visual Studio pomaga zwiększyć wydajność procesu kompilacji dla projektów kontenerowych. Proces kompilacji dla aplikacji kontenerowych nie jest tak prosty jak po kroku opisanym w pliku dockerfile. Kompilowanie w kontenerze jest znacznie wolniejsze niż kompilowanie na komputerze lokalnym.  Dlatego podczas kompilowania w konfiguracji **debugowania** program Visual Studio rzeczywiście kompiluje projekty na komputerze lokalnym, a następnie udostępnia folder wyjściowy do kontenera przy użyciu funkcji montowania woluminu. Kompilacja z włączoną opcją optymalizacji jest nazywana kompilacją trybu *szybkiego* .
-
-W trybie **szybkim** program Visual Studio wywołuje `docker build` z argumentem, który instruuje platformę Docker, aby kompiluje tylko `base` etap.  Program Visual Studio obsługuje resztę procesu bez względu na zawartość pliku dockerfile. Dlatego w przypadku zmodyfikowania pliku dockerfile, na przykład w celu dostosowania środowiska kontenera lub zainstalowania dodatkowych zależności, należy wprowadzić modyfikacje w pierwszym etapie.  Wszystkie kroki niestandardowe umieszczone w `build`, `publish`lub `final` etapach nie będą wykonywane.
-
-Ta optymalizacja wydajności występuje tylko w przypadku kompilowania w konfiguracji **debugowania** . W konfiguracji **wydania** kompilacja odbywa się w kontenerze określonym w pliku dockerfile.
-
-Jeśli chcesz wyłączyć optymalizację wydajności i kompilację jako pliku dockerfile, ustaw właściwość **ContainerDevelopmentMode** na **Regular** w pliku projektu w następujący sposób:
-
-```xml
-<PropertyGroup>
-   <ContainerDevelopmentMode>Regular</ContainerDevelopmentMode>
-</PropertyGroup>
-```
-
-Aby przywrócić optymalizację wydajności, Usuń właściwość z pliku projektu.
-
 ## <a name="building-from-the-command-line"></a>Kompilowanie z wiersza polecenia
 
-Do kompilowania z wiersza polecenia można użyć `docker build` lub `MSBuild`.
+Jeśli chcesz skompilować poza programem Visual Studio, możesz użyć `docker build` lub `MSBuild` do kompilowania z poziomu wiersza polecenia.
 
 ### <a name="docker-build"></a>Kompilacja platformy Docker
 
@@ -100,7 +82,7 @@ Aby utworzyć obraz dla pojedynczego projektu kontenera platformy Docker, można
 MSBuild MyProject.csproj /t:ContainerBuild /p:Configuration=Release
 ```
 
-Dane wyjściowe będą wyglądać podobnie jak w oknie **danych wyjściowych** podczas kompilowania rozwiązania z poziomu środowiska IDE programu Visual Studio. Zawsze używaj `/p:Configuration=Release`, ponieważ w przypadkach, gdy program Visual Studio używa optymalizacji kompilacji potokach wieloetapowych, wyniki podczas kompilowania konfiguracji **debugowania** mogą nie być zgodne z oczekiwaniami.
+Dane wyjściowe będą wyglądać podobnie jak w oknie **danych wyjściowych** podczas kompilowania rozwiązania z poziomu środowiska IDE programu Visual Studio. Zawsze używaj `/p:Configuration=Release`, ponieważ w przypadkach, gdy program Visual Studio używa optymalizacji kompilacji potokach wieloetapowych, wyniki podczas kompilowania konfiguracji **debugowania** mogą nie być zgodne z oczekiwaniami. Zobacz [debugowanie](#debugging).
 
 Jeśli używasz projektu Docker Compose, użyj polecenia, aby skompilować obrazy:
 
@@ -110,7 +92,7 @@ msbuild /p:SolutionPath=<solution-name>.sln /p:Configuration=Release docker-comp
 
 ## <a name="project-warmup"></a>Rozgrzewania projektu
 
-Są to sekwencje kroków, które są wykonywane, gdy zostanie wybrany profil platformy Docker dla projektu (to znaczy, gdy projekt jest ładowany lub dodano obsługę platformy Docker), aby zwiększyć wydajność kolejnego przebiegu (**F5** lub **Ctrl**+**F5**). Można to skonfigurować w obszarze **narzędzia** > **Opcje** > **Narzędzia kontenerów**. Poniżej przedstawiono zadania, które są uruchamiane w tle:
+*Projekt rozgrzewania* odnosi się do serii kroków, które są wykonywane, gdy wybrano profil platformy Docker dla projektu (to znaczy, gdy projekt jest ładowany lub dodano obsługę platformy Docker), aby zwiększyć wydajność kolejnych uruchomień (**f5** lub **Ctrl**+**F5**). Można to skonfigurować w obszarze **narzędzia** > **Opcje** > **Narzędzia kontenerów**. Poniżej przedstawiono zadania, które są uruchamiane w tle:
 
 - Sprawdź, czy program Docker Desktop jest zainstalowany i uruchomiony.
 - Upewnij się, że na pulpicie platformy Docker jest ustawiony ten sam system operacyjny co projekt.
@@ -160,7 +142,23 @@ ASP.NET Core szuka certyfikatu zgodnego z nazwą zestawu w folderze *https* , co
 
 Aby uzyskać więcej informacji na temat używania protokołu SSL z aplikacjami ASP.NET Core w kontenerach, zobacz [hostowanie ASP.NET Core obrazów przy użyciu platformy Docker za pośrednictwem protokołu HTTPS](https://docs.microsoft.com/aspnet/core/security/docker-https).
 
-## <a name="debugging"></a>Debugowanie
+## <a name="debugging"></a>debugowanie
+
+Podczas kompilowania w konfiguracji **debugowania** istnieje kilka optymalizacji, które program Visual Studio pomaga w wydajności procesu kompilacji dla projektów kontenerowych. Proces kompilacji dla aplikacji kontenerowych nie jest tak prosty jak po kroku opisanym w pliku dockerfile. Kompilowanie w kontenerze jest znacznie wolniejsze niż kompilowanie na komputerze lokalnym.  Dlatego podczas kompilowania w konfiguracji **debugowania** program Visual Studio rzeczywiście kompiluje projekty na komputerze lokalnym, a następnie udostępnia folder wyjściowy do kontenera przy użyciu funkcji montowania woluminu. Kompilacja z włączoną opcją optymalizacji jest nazywana kompilacją trybu *szybkiego* .
+
+W trybie **szybkim** program Visual Studio wywołuje `docker build` z argumentem, który instruuje platformę Docker, aby kompiluje tylko `base` etap.  Program Visual Studio obsługuje resztę procesu bez względu na zawartość pliku dockerfile. Dlatego w przypadku zmodyfikowania pliku dockerfile, na przykład w celu dostosowania środowiska kontenera lub zainstalowania dodatkowych zależności, należy wprowadzić modyfikacje w pierwszym etapie.  Wszystkie kroki niestandardowe umieszczone w `build`, `publish`lub `final` etapach nie będą wykonywane.
+
+Ta optymalizacja wydajności występuje tylko w przypadku kompilowania w konfiguracji **debugowania** . W konfiguracji **wydania** kompilacja odbywa się w kontenerze określonym w pliku dockerfile.
+
+Jeśli chcesz wyłączyć optymalizację wydajności i kompilację jako pliku dockerfile, ustaw właściwość **ContainerDevelopmentMode** na **Regular** w pliku projektu w następujący sposób:
+
+```xml
+<PropertyGroup>
+   <ContainerDevelopmentMode>Regular</ContainerDevelopmentMode>
+</PropertyGroup>
+```
+
+Aby przywrócić optymalizację wydajności, Usuń właściwość z pliku projektu.
 
  Po rozpoczęciu debugowania (**F5**) poprzednio uruchomiony kontener jest ponownie używany, jeśli jest to możliwe. Jeśli nie chcesz ponownie używać poprzedniego kontenera, możesz użyć polecenia **Kompiluj** lub **Wyczyść** w programie Visual Studio, aby wymusić użycie przez program Visual Studio nowego kontenera.
 
@@ -182,11 +180,10 @@ Program Visual Studio używa niestandardowego punktu wejścia kontenera w zależ
 |-|-|
 | **Kontenery systemu Linux** | Punkt wejścia to `tail -f /dev/null`, co jest nieskończone oczekiwanie na utrzymanie kontenera. Gdy aplikacja jest uruchamiana za pomocą debugera, jest to debuger, który jest odpowiedzialny za uruchamianie aplikacji (czyli `dotnet webapp.dll`). W przypadku uruchomienia bez debugowania narzędzie uruchamia `docker exec -i {containerId} dotnet webapp.dll`, aby uruchomić aplikację.|
 | **Kontenery systemu Windows**| Punkt wejścia jest podobny do `C:\remote_debugger\x64\msvsmon.exe /noauth /anyuser /silent /nostatus`, w którym działa debuger, więc nasłuchuje połączeń. Ta sama zasada dotyczy, że debuger uruchamia aplikację, a `docker exec` polecenie podczas uruchamiania bez debugowania. W przypadku .NET Framework aplikacji sieci Web punkt wejścia jest nieco inny, gdzie `ServiceMonitor` jest dodawany do polecenia.|
-  
-> [!NOTE]
-> Punkt wejścia kontenera można modyfikować tylko w projektach platformy Docker, a nie w projektach z pojedynczym kontenerem.
 
-## <a name="next-steps"></a>Kolejne kroki
+Punkt wejścia kontenera można modyfikować tylko w projektach platformy Docker, a nie w projektach z pojedynczym kontenerem.
+
+## <a name="next-steps"></a>Następne kroki
 
 Dowiedz się, jak dodatkowo dostosować kompilacje przez ustawienie dodatkowych właściwości programu MSBuild w plikach projektu. Zobacz [Właściwości programu MSBuild dla projektów kontenerów](container-msbuild-properties.md).
 
