@@ -1,5 +1,5 @@
 ---
-title: Tworzenie pierwszego dostosowania na poziomie dokumentu dla programu Word
+title: Utwórz swoje pierwsze dostosowanie na poziomie dokumentu dla programu Word
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,15 +14,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8662e5d08c420d1204e9fd5159be810397d4bbe1
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: c07c3257b8df0e671941ae08bc3738350e017a8a
+ms.sourcegitcommit: 3ba2968a4b44643482aadad4d50e1a55bb36b136
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328275"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "74567007"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>Przewodnik: Tworzenie pierwszego dostosowania na poziomie dokumentu dla programu Word
-  Ten Przewodnik wprowadzający dowiesz się, jak utworzyć dostosowywania poziomie dokumentu dla programu Microsoft Office Word. Funkcje, które tworzysz w tego rodzaju rozwiązania są dostępne tylko wtedy, gdy określony dokument jest otwarty. Nie możesz użyć dostosowywania poziomie dokumentu do zmiany całej aplikacji, na przykład wyświetlanie Nowa karta wstążki, gdy dowolny dokument jest otwarty.
+
+  W tym instruktażu wprowadzającym pokazano, jak utworzyć dostosowanie na poziomie dokumentu dla programu Microsoft Office Word. Funkcje utworzone w tym rodzaju rozwiązaniu są dostępne tylko wtedy, gdy określony dokument jest otwarty. Nie można użyć dostosowania na poziomie dokumentu w celu wprowadzania zmian w całej aplikacji, na przykład wyświetlania nowej karty wstążki, gdy dowolny dokument jest otwarty.
 
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]
 
@@ -30,17 +31,18 @@ ms.locfileid: "67328275"
 
 - Tworzenie projektu dokumentu programu Word.
 
-- Dodawanie tekstu do dokumentu, który znajduje się w Projektancie Visual Studio.
+- Dodawanie tekstu do dokumentu, który jest hostowany w projektancie programu Visual Studio.
 
-- Pisanie kodu, który używa modelu obiektów programu Word do dodawania tekstu dostosowany dokument po jego otwarciu.
+- Pisanie kodu, który używa modelu obiektów programu Word w celu dodania tekstu do niestandardowego dokumentu po jego otwarciu.
 
-- Tworzenie i uruchamianie projektu, aby ją przetestować.
+- Kompilowanie i uruchamianie projektu w celu jego przetestowania.
 
-- Czyszczenie projektu, aby usunąć z komputera dewelopera kompilacji niepotrzebne pliki i ustawienia zabezpieczeń.
+- Czyszczenie projektu w celu usunięcia niepotrzebnych plików kompilacji i ustawień zabezpieczeń z komputera deweloperskiego.
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>Wymagania wstępne
+
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
@@ -53,114 +55,129 @@ ms.locfileid: "67328275"
 
 1. Rozpocznij [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2. Na **pliku** menu wskaż **New**, a następnie kliknij przycisk **projektu**.
+2. W menu **plik** wskaż polecenie **Nowy**, a następnie kliknij pozycję **projekt**.
+::: moniker range="vs-2017"
+3. W okienku szablony rozwiń pozycję **Wizualizacja C#**  lub **Visual Basic**, a następnie rozwiń węzeł **Office/SharePoint**.
 
-3. W okienku szablonów, rozwiń **Visual C#** lub **języka Visual Basic**, a następnie rozwiń węzeł **Office/SharePoint**.
+4. W rozwiniętym węźle **Office/SharePoint** wybierz węzeł **dodatki narzędzi VSTO** .
 
-4. W rozwiniętym okienku **Office/SharePoint** węzeł **dodatków pakietu Office** węzła.
+5. Na liście szablonów projektu wybierz projekt dokumentu VSTO programu Word.
 
-5. Na liście szablonów projektu wybierz projekt dokument VSTO programu Word.
-
-6. W **nazwa** wpisz **FirstDocumentCustomization**.
+6. W polu **Nazwa** wpisz **FirstDocumentCustomization**.
 
 7. Kliknij przycisk **OK**.
 
-     **Visual Studio Tools dla pakietu Office, Kreator projektu** zostanie otwarty.
+8. Wybierz pozycję **Utwórz nowy dokument** w **Kreatorze programu Visual Studio Tools dla pakietu Office**, a następnie kliknij przycisk **OK**.
+::: moniker-end
+::: moniker range=">=vs-2019"
+3. W oknie dialogowym **Utwórz nowy projekt** wybierz projekt **dokument programu Word VSTO** .
 
-8. Wybierz **Utwórz nowy dokument**i kliknij przycisk **OK**.
+     [!INCLUDE[new-project-dialog-search](../vsto/includes/new-project-dialog-search-md.md)]
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Tworzy **FirstDocumentCustomization** projektu i dodaje **FirstDocumentCustomization** ThisDocument plik kodu do projektu i dokumentów. **FirstDocumentCustomization** automatycznie otworzyć dokumentu w projektancie.
+4. Kliknij przycisk **Dalej**.
 
-## <a name="close-and-reopen-the-document-in-the-designer"></a>Zamknij i otwórz ponownie dokument w Projektancie
- Jeśli celowo lub przypadkowo zamknięto dokumentu w Projektancie podczas tworzenia projektu, można otworzyć go ponownie.
+5. Wpisz **FirstWorkbookCustomization** w polu **Nazwa** w oknie dialogowym **Konfigurowanie nowego projektu** , a następnie kliknij przycisk **Utwórz**.
 
-### <a name="to-close-and-reopen-the-document-in-the-designer"></a>Aby zamknąć i ponownie otworzyć dokument w Projektancie
+6. Wybierz pozycję **Utwórz nowy dokument** w **Kreatorze programu Visual Studio Tools dla pakietu Office**, a następnie kliknij przycisk **OK**.
+::: moniker-end
+   - [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] tworzy projekt **FirstDocumentCustomization** i dodaje dokument **FirstDocumentCustomization** i plik kodu ThisDocument do projektu. Dokument **FirstDocumentCustomization** zostanie automatycznie otwarty w projektancie.
 
-1. Zamknij dokument, klikając przycisk **Zamknij** przycisku (X) dla okna projektanta.
+## <a name="close-and-reopen-the-document-in-the-designer"></a>Zamknij i ponownie otwórz dokument w projektancie
 
-2. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **ThisDocument** plik kodu, a następnie kliknij przycisk **Projektant widoków**.
+ Jeśli zamierzasz celowo lub przypadkowo zamknąć dokument w Projektancie podczas tworzenia projektu, możesz go otworzyć ponownie.
 
-     \- lub —
+### <a name="to-close-and-reopen-the-document-in-the-designer"></a>Aby zamknąć i ponownie otworzyć dokument w projektancie
 
-     W **Eksploratora rozwiązań**, kliknij dwukrotnie **ThisDocument** pliku kodu.
+1. Zamknij dokument, klikając przycisk **Zamknij** (X) dla okna projektanta.
 
-## <a name="add-text-to-the-document-in-the-designer"></a>Dodawanie tekstu do dokumentu w Projektancie
- Interfejs użytkownika (UI) można zaprojektować swoje dostosowania, modyfikując dokument, który jest otwarty w projektancie. Na przykład można dodać tekst, tabele lub formanty programu Word. Aby uzyskać więcej informacji o sposobie korzystania z projektanta, zobacz [projekty pakietu Office w środowisku Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md).
+2. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy plik kodu **ThisDocument** , a następnie kliknij pozycję **Projektant widoków**.
 
-### <a name="to-add-text-to-your-document-by-using-the-designer"></a>Aby dodać tekst w dokumencie przy użyciu narzędzia Projektant
+     \- lub-
 
-1. W dokumencie, który jest otwarty w Projektancie wpisz następujący tekst.
+     W **Eksplorator rozwiązań**kliknij dwukrotnie plik kodu **ThisDocument** .
+
+## <a name="add-text-to-the-document-in-the-designer"></a>Dodawanie tekstu do dokumentu w projektancie
+
+ Interfejs użytkownika można zaprojektować, modyfikując dokument, który jest otwarty w projektancie. Na przykład możesz dodać kontrolki tekstu, tabel lub wyrazów. Aby uzyskać więcej informacji o sposobach korzystania z projektanta, zobacz [projekty pakietu Office w środowisku programu Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md).
+
+### <a name="to-add-text-to-your-document-by-using-the-designer"></a>Aby dodać tekst do dokumentu przy użyciu narzędzia Projektant
+
+1. W dokumencie otwartym w projektancie wpisz następujący tekst.
 
      **Ten tekst został dodany za pomocą projektanta.**
 
-## <a name="add-text-to-the-document-programmatically"></a>Programowe Dodawanie tekstu do dokumentu
- Następnie dodaj kod do pliku kodu ThisDocument. Nowy kod używa modelu obiektów programu Word, można dodać drugi akapit tekstu do dokumentu. Domyślnie plik kodu ThisDocument zawiera następujące wygenerowanego kodu:
+## <a name="add-text-to-the-document-programmatically"></a>Programistyczne Dodawanie tekstu do dokumentu
 
-- Częściową definicję `ThisDocument` klasy, która reprezentuje model programowania dokumentu i zapewnia dostęp do modelu obiektów programu Word. Aby uzyskać więcej informacji, zobacz [element hosta dokumentu](../vsto/document-host-item.md) i [model obiektu Word — omówienie](../vsto/word-object-model-overview.md). W pozostałej części `ThisDocument` klasa jest zdefiniowana w pliku ukryty kod, który nie należy modyfikować.
+ Następnie Dodaj kod do pliku kodu ThisDocument. Nowy kod używa modelu obiektów programu Word w celu dodania drugiego akapitu tekstu do dokumentu. Domyślnie plik kodu ThisDocument zawiera następujący wygenerowany kod:
 
-- `ThisDocument_Startup` i `ThisDocument_Shutdown` procedury obsługi zdarzeń. Te procedury obsługi zdarzeń są wywoływane, gdy dokument jest otwarte i zamknięte. Użyj tych programów obsługi zdarzeń, zainicjować swoje dostosowania po otwarciu dokumentu, a także aby wyczyścić zasoby używane przez dostosowanie, gdy dokument zostanie zamknięty. Aby uzyskać więcej informacji, zobacz [zdarzenia w projektach pakietu Office](../vsto/events-in-office-projects.md).
+- Częściowa definicja klasy `ThisDocument`, która reprezentuje model programowania dokumentu i zapewnia dostęp do modelu obiektów programu Word. Aby uzyskać więcej informacji, zobacz dokument dotyczący [elementów hosta](../vsto/document-host-item.md) i [modelu obiektów programu Word](../vsto/word-object-model-overview.md). Pozostała część klasy `ThisDocument` jest zdefiniowana w ukrytym pliku kodu, który nie powinien być modyfikowany.
 
-### <a name="to-add-a-second-paragraph-of-text-to-the-document-by-using-code"></a>Aby dodać drugi akapit w dokumencie przy użyciu kodu
+- Programy obsługi zdarzeń `ThisDocument_Startup` i `ThisDocument_Shutdown`. Te programy obsługi zdarzeń są wywoływane, gdy dokument zostanie otwarty i zamknięty. Te programy obsługi zdarzeń umożliwiają zainicjowanie dostosowania podczas otwierania dokumentu oraz czyszczenie zasobów używanych przez dostosowanie po zamknięciu dokumentu. Aby uzyskać więcej informacji, zobacz [zdarzenia w projektach pakietu Office](../vsto/events-in-office-projects.md).
 
-1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **ThisDocument**, a następnie kliknij przycisk **Wyświetl kod**.
+### <a name="to-add-a-second-paragraph-of-text-to-the-document-by-using-code"></a>Aby dodać drugi akapit tekstu do dokumentu przy użyciu kodu
 
-     Otwiera plik kodu w programie Visual Studio.
+1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **ThisDocument**, a następnie kliknij pozycję **Wyświetl kod**.
 
-2. Zastąp `ThisDocument_Startup` programu obsługi zdarzeń z następującym kodem. Po otwarciu dokumentu, ten kod dodaje drugi akapit tekstu do dokumentu.
+     Plik kodu zostanie otwarty w programie Visual Studio.
+
+2. Zastąp procedurę obsługi zdarzeń `ThisDocument_Startup` poniższym kodem. Gdy dokument zostanie otwarty, ten kod dodaje drugi akapit tekstu do dokumentu.
 
      [!code-vb[Trin_WordDocumentTutorial#1](../vsto/codesnippet/VisualBasic/FirstDocumentCustomization/ThisDocument.vb#1)]
      [!code-csharp[Trin_WordDocumentTutorial#1](../vsto/codesnippet/CSharp/FirstDocumentCustomization/ThisDocument.cs#1)]
 
     > [!NOTE]
-    > Ten kod używa wartości indeksu 1, aby dostęp do pierwszego akapitu w <xref:Microsoft.Office.Tools.Word.Document.Paragraphs%2A> właściwości. Chociaż Visual Basic i Visual C# należy używać tablic oparty na 0, niższe granice tablicy w większości kolekcji w modelu obiektów programu Word to 1. Aby uzyskać więcej informacji, zobacz [pisanie kodu w rozwiązaniach pakietu Office](../vsto/writing-code-in-office-solutions.md).
+    > Ten kod używa wartości indeksu 1 w celu uzyskania dostępu do pierwszego akapitu we właściwości <xref:Microsoft.Office.Tools.Word.Document.Paragraphs%2A>. Chociaż Visual Basic i wizualizacje C# używają tablic 0, Dolna granica tablicy większości kolekcji w modelu obiektów programu Word to 1. Aby uzyskać więcej informacji, zobacz [pisanie kodu w rozwiązaniach pakietu Office](../vsto/writing-code-in-office-solutions.md).
 
-## <a name="test-the-project"></a>Projekt testowy
+## <a name="test-the-project"></a>Testowanie projektu
 
-### <a name="to-test-your-document"></a>Aby przetestować dokumentu
+### <a name="to-test-your-document"></a>Aby przetestować dokument
 
-1. Naciśnij klawisz **F5** Aby skompilować i uruchomić projekt.
+1. Naciśnij klawisz **F5** , aby skompilować i uruchomić projekt.
 
-     Gdy tworzysz projekt, kod jest kompilowany do zestawu, który jest skojarzony z dokumentem. Program Visual Studio umieszcza kopię dokumentu i zestawu w folderze danych wyjściowych kompilacji dla projektu i konfiguruje ustawienia zabezpieczeń na komputerze deweloperskim, aby włączyć dostosowywanie do uruchomienia. Aby uzyskać więcej informacji, zobacz [rozwiązań kompilacji pakietu Office](../vsto/building-office-solutions.md).
+     Podczas kompilowania projektu, kod jest kompilowany do zestawu, który jest skojarzony z dokumentem. Program Visual Studio umieszcza kopię dokumentu i zestaw w folderze danych wyjściowych kompilacji dla projektu i konfiguruje ustawienia zabezpieczeń na komputerze deweloperskim w celu umożliwienia uruchomienia dostosowania. Aby uzyskać więcej informacji, zobacz [Tworzenie rozwiązań pakietu Office](../vsto/building-office-solutions.md).
 
-2. W tym dokumencie Sprawdź, czy zostanie wyświetlony następujący tekst.
+2. W dokumencie Sprawdź, czy widzisz następujący tekst.
 
      **Ten tekst został dodany za pomocą projektanta.**
 
-     **Ten tekst został dodany przy użyciu kodu.**
+     **Ten tekst został dodany za pomocą kodu.**
 
 3. Zamknij dokument.
 
-## <a name="clean-up-the-project"></a>Czyszczenie projektu
- Po zakończeniu tworzenia projektu, należy usunąć pliki w folderze wyjściowym kompilacji i ustawienia zabezpieczeń utworzone w procesie kompilacji.
+## <a name="clean-up-the-project"></a>Wyczyść projekt
 
-### <a name="to-clean-up-the-completed-project-on-your-development-computer"></a>Aby wyczyścić ukończone projektu na komputerze deweloperskim
+ Po zakończeniu opracowywania projektu należy usunąć pliki z folderu danych wyjściowych kompilacji oraz ustawienia zabezpieczeń utworzone przez proces kompilacji.
 
-1. W programie Visual Studio na **kompilacji** menu, kliknij przycisk **czyste rozwiązanie**.
+### <a name="to-clean-up-the-completed-project-on-your-development-computer"></a>Aby wyczyścić ukończony projekt na komputerze deweloperskim
+
+1. W programie Visual Studio w menu **kompilacja** kliknij pozycję **czyste rozwiązanie**.
 
 ## <a name="next-steps"></a>Następne kroki
- Teraz, po utworzeniu podstawowego dostosowywania poziomie dokumentu dla programu Word, można dowiedzieć się więcej o sposobie tworzenia dostosowań w tych tematach:
 
-- Ogólne zadania programowania, które można wykonywać w dostosowaniach na poziomie dokumentu: [Program dostosowań poziomu dokumentu](../vsto/programming-document-level-customizations.md).
+ Teraz, gdy utworzono podstawowe dostosowanie na poziomie dokumentu dla programu Word, możesz dowiedzieć się więcej na temat sposobu opracowywania dostosowań z tych tematów:
 
-- Zadania związane z programowaniem, które są specyficzne dla dostosowywania poziomie dokumentu dla programu Word: [Word rozwiązania](../vsto/word-solutions.md).
+- Ogólne zadania programistyczne, które można wykonać w dostosowaniu na poziomie dokumentu: [dostosowania na poziomie dokumentu programu](../vsto/programming-document-level-customizations.md).
 
-- Za pomocą modelu obiektów programu Word: [Word — omówienie modelu obiektu](../vsto/word-object-model-overview.md).
+- Zadania programistyczne, które są specyficzne dla dostosowań na poziomie dokumentu dla programu Word: [Word Solutions](../vsto/word-solutions.md).
 
-- Dostosowywanie interfejsu użytkownika programu Word, na przykład dodawania niestandardowej karty do Wstążki lub tworząc własne okienko akcji: [Dostosowywanie interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md).
+- Za pomocą modelu obiektów programu Word: [Omówienie modelu obiektów programu](../vsto/word-object-model-overview.md)Word.
 
-- Do wykonywania zadań, która nie jest możliwa za pomocą modelu obiektów programu Word (na przykład hostingu zarządzane formanty w dokumentach i powiązanie formanty programu Word z danymi przy użyciu danych Windows Forms przy użyciu rozszerzonych obiektów programu Word, dostarczone przez rozwiązań pakietu Office w Visual Studio Powiązanie modelu): [Automatyzowanie programu Word za pomocą obiektów rozszerzonych](../vsto/automating-word-by-using-extended-objects.md).
+- Dostosowywanie interfejsu użytkownika programu Word, na przykład przez dodanie karty niestandardowej do wstążki lub utworzenie własnego okienka akcji: [Dostosowywanie interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md).
 
-- Kompilowanie i debugowanie dostosowań poziomu dokumentu dla programu Word: [Tworzenie rozwiązań pakietu Office](../vsto/building-office-solutions.md).
+- Używanie obiektów rozszerzonego programu Word dostarczonych przez rozwiązania pakietu Office w programie Visual Studio do wykonywania zadań, które nie są możliwe przy użyciu modelu obiektów programu Word (na przykład hostowanie formantów zarządzanych w dokumentach i Powiązywanie formantów Word z danymi przy użyciu modelu powiązań danych Windows Forms): [automatyzuje program Word za pomocą obiektów rozszerzonych](../vsto/automating-word-by-using-extended-objects.md).
 
-- Wdrażanie dostosowań poziomu dokumentu dla programu Word: [Wdrażanie rozwiązania do pakietu Office](../vsto/deploying-an-office-solution.md).
+- Kompilowanie i debugowanie dostosowań na poziomie dokumentu dla programu Word: [Tworzenie rozwiązań pakietu Office](../vsto/building-office-solutions.md).
+
+- Wdrażanie dostosowań na poziomie dokumentu dla programu Word: [Wdróż rozwiązanie pakietu Office](../vsto/deploying-an-office-solution.md).
 
 ## <a name="see-also"></a>Zobacz także
-- [Rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+
+- [Programowanie rozwiązań pakietu Office &#40;— Omówienie&#41;](../vsto/office-solutions-development-overview-vsto.md)
 - [Rozwiązania programu Word](../vsto/word-solutions.md)
-- [Program dostosowań na poziomie dokumentu](../vsto/programming-document-level-customizations.md)
-- [Model obiektu Word — omówienie](../vsto/word-object-model-overview.md)
+- [Dostosowywanie na poziomie dokumentu programu](../vsto/programming-document-level-customizations.md)
+- [Model obiektów programu Word — omówienie](../vsto/word-object-model-overview.md)
 - [Automatyzowanie programu Word za pomocą obiektów rozszerzonych](../vsto/automating-word-by-using-extended-objects.md)
 - [Dostosowywanie interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md)
 - [Tworzenie rozwiązań pakietu Office](../vsto/building-office-solutions.md)
-- [Wdrażanie rozwiązania do pakietu Office](../vsto/deploying-an-office-solution.md)
-- [Omówienie szablonów projektu pakietu Office](../vsto/office-project-templates-overview.md)
+- [Wdróż rozwiązanie pakietu Office](../vsto/deploying-an-office-solution.md)
+- [Szablony projektów pakietu Office — omówienie](../vsto/office-project-templates-overview.md)
