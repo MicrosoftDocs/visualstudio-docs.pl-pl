@@ -8,12 +8,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 824b928c9f89b98f9026059b824fce84969bf69a
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 69b4f38ae43bacd5324b30a3970047b39c32fe99
+ms.sourcegitcommit: 669fc9e397476d7a1d2cda5999710d415f7d6e4f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189103"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74688858"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Zapisz testy jednostkowe dla CC++ /w Visual Studio
 
@@ -79,7 +79,7 @@ Aby umożliwić testowanie kodu w celu uzyskania dostępu do funkcji w projekcie
 
 ### <a name="link-to-object-or-library-files"></a>Połącz z obiektem lub plikami biblioteki
 
-Jeśli kod testu nie eksportuje funkcji, które mają zostać przetestowane, można dodać pliki Output. obj lub. lib do zależności projektu testowego. Zobacz, [Aby połączyć testy z plikami obiektu lub biblioteki](how-to-use-microsoft-test-framework-for-cpp.md).
+Jeśli kod testu nie eksportuje funkcji, które mają zostać przetestowane, można dodać pliki Output. obj lub. lib do zależności projektu testowego. Zobacz, [Aby połączyć testy z plikami obiektu lub biblioteki](/visualstudio/test/how-to-use-microsoft-test-framework-for-cpp#same_project).
 
 ### <a name="add-include-directives-for-header-files"></a>Dodaj dyrektywy #include dla plików nagłówkowych
 
@@ -87,7 +87,7 @@ Następnie w pliku *. cpp* testu jednostkowego dodaj dyrektywę `#include` dla w
 
 ![Dodaj dyrektywy include](media/cpp-add-includes-test-project.png)
 
-Aby uniknąć konieczności wpisywania pełnej ścieżki w każdej instrukcji include w pliku źródłowym, można dodać wymagane foldery we **właściwościach** > **projektu** > **CC++ /**  > **Ogólne** > **dodatkowe Katalogi**.
+Aby uniknąć konieczności wpisywania pełnej ścieżki w każdej instrukcji include w pliku źródłowym, można dodać wymagane foldery we **właściwościach** > **projektu** > **CC++ /**  > **Ogólne** > **Dodatkowe katalogi dołączane**.
 
 ### <a name="write-test-methods"></a>Pisanie metod testowych
 
@@ -100,7 +100,7 @@ Plik *. cpp* w projekcie testowym ma klasę zastępczą i metodę zdefiniowaną 
 
 TEST_CLASS i TEST_METHOD są częścią [natywnego środowiska testowego firmy Microsoft](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). **Eksplorator testów** odnajduje metody testowe w innych obsługiwanych platformach w podobny sposób.
 
-Element TEST_METHOD zwraca wartość void. Aby utworzyć wynik testu, użyj metod statycznych w klasie `Assert`, aby przetestować rzeczywiste wyniki względem tego, co jest oczekiwane. W poniższym przykładzie Załóżmy, że `MyClass` ma konstruktora, który przyjmuje `std::string`. Możemy sprawdzić, czy Konstruktor inicjuje klasę zgodnie z oczekiwaniami, tak jak to zrobić:
+TEST_METHOD zwraca wartość void. Aby utworzyć wynik testu, użyj metod statycznych w klasie `Assert`, aby przetestować rzeczywiste wyniki względem tego, co jest oczekiwane. W poniższym przykładzie Załóżmy, że `MyClass` ma konstruktora, który przyjmuje `std::string`. Możemy sprawdzić, czy Konstruktor inicjuje klasę zgodnie z oczekiwaniami, tak jak to zrobić:
 
 ```cpp
 TEST_METHOD(TestClassInit)
