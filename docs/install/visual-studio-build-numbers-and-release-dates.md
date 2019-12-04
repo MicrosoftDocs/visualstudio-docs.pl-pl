@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: e6bcfc5501ace51b0d4c15c991633a83701982d2
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: 1520f5f74ea28850d615b93f37278c4cda090988
+ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74777962"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74797230"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numery wersji i daty wydania programu Visual Studio
 
@@ -29,6 +29,7 @@ W poniższej tabeli wymieniono numery kompilacji i daty wydania dla programu Vis
 
 | **Wersja**| **Channel** | **Data wydania** | **Wersja kompilacji** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.5.0 | Wersja zapoznawcza 1 | 3 grudnia 2019 | 16.5.29521.150 |
 | 16.4.0 | Wydanie | 3 grudnia 2019 | 16.4.29519.181 |
 | 16.4.0 | Wersja zapoznawcza 6 | 21 listopada 2019 | 16.4.29519.161 |
 | 16.3.10 | Wydanie | 20 listopada 2019 r. | 16.3.29519.87 |
